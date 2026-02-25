@@ -11,6 +11,7 @@ export interface Movie {
 	poster: string;
 	screenshots?: string[];
 	trailerYoutubeId: string;
+	releasePlatform?: string;
 	verdict: MovieVerdict;
 	verdictLabel?: string;
 	review: string;

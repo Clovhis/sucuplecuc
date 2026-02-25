@@ -56,6 +56,7 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 				<div class="movie-detail__meta">
 					<span>{movie.year}</span>
 					<span class={`badge badge--${movie.verdict}`}>{getVerdictLabel(movie)}</span>
+					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
 				</div>
 				<p class="movie-detail__review review-clamp">{movie.review}</p>
 

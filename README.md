@@ -24,6 +24,7 @@ Schema:
 	"poster": "https://... o /posters/local.svg",
 	"screenshots": ["https://.../shot-1.jpg", "https://.../shot-2.jpg"],
 	"trailerYoutubeId": "abc123",
+	"releasePlatform": "Cine|Netflix|HBO Max|Disney+",
 	"verdict": "recomendada|zafa|no_recomendada|basura_atomica",
 	"verdictLabel": "Opcional para override de etiqueta visible",
 	"review": "Resena corta (max 5 lineas aprox)"
@@ -34,6 +35,7 @@ Notas:
 
 - Solo se guarda `trailerYoutubeId` para YouTube.
 - Si `trailerYoutubeId` esta vacio, el detalle muestra "Trailer no disponible".
+- `releasePlatform` muestra donde verla (ejemplo: Cine, Netflix, HBO Max, Disney+).
 - Si `poster` esta vacio, se usa un poster fallback.
 - `screenshots` es opcional. Si tiene al menos 2 URLs, el detalle usa galeria (2 capturas).
 - Si no hay `screenshots`, el detalle usa poster fallback.
@@ -89,7 +91,7 @@ Que hace:
 - Valida anio
 - Frena si detecta slug duplicado
 
-Luego editas el JSON generado para completar `poster`, `trailerYoutubeId`, `verdict` y `review`.
+Luego editas el JSON generado para completar `poster`, `trailerYoutubeId`, `releasePlatform`, `verdict` y `review`.
 
 ### Opcion B: template manual
 

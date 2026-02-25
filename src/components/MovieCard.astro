@@ -23,7 +23,10 @@ const verdictLabel = getVerdictLabel(movie);
 				<h2>{movie.title}</h2>
 				<span class={`badge badge--${movie.verdict}`}>{verdictLabel}</span>
 			</div>
-			<p class="movie-card__year">{movie.year}</p>
+			<div class="movie-card__meta">
+				<p class="movie-card__year">{movie.year}</p>
+				{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
+			</div>
 			<p class="movie-card__cta">Ver ficha</p>
 		</div>
 	</a>
