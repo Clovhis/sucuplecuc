@@ -109,10 +109,18 @@ Find trustworthy metadata:
 - `title`
 - `year`
 - `poster`
-- official YouTube trailer id (store only `trailerYoutubeId`)
+- official YouTube trailer id in original language (store only `trailerYoutubeId`)
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
-Do not invent data. If unavailable, leave empty string and report pending fields.
+Trailer policy is strict:
+
+- Always set `trailerYoutubeId` for the movie entry.
+- Prefer official trailer in original language.
+- If user provides a YouTube URL, extract and use that video id directly.
+- If no reliable official trailer is found, stop and ask user for a trailer link before commit.
+- Do not finalize an entry with empty `trailerYoutubeId` unless user explicitly authorizes that exception.
+
+Do not invent data.
 Do not store full YouTube URL when schema uses id.
 
 ## Content schema
@@ -240,7 +248,8 @@ Return all of the following:
 - [ ] Exactly one new movie file added (unless user explicitly authorized otherwise)
 - [ ] No modified files outside allowlist
 - [ ] Review <= 5 lines, no spoilers, based only on user feedback
-- [ ] Poster/trailer fields only from trustworthy sources (or left empty)
+- [ ] Poster/trailer fields from trustworthy sources
+- [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
 - [ ] `npm run build` passed
 - [ ] Diff shown before commit
 - [ ] Commit and push done on feature branch
