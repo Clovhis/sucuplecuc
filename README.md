@@ -36,7 +36,8 @@ Live production URL:
 │  ├─ layouts/
 │  │  └─ BaseLayout.astro
 │  ├─ lib/
-│  │  └─ movies.ts
+│  │  ├─ movies.ts
+│  │  └─ supabaseClient.ts
 │  ├─ pages/
 │  │  ├─ index.astro
 │  │  └─ peliculas/[slug].astro
@@ -86,13 +87,19 @@ Current schema:
 
 ## Community rating system (Supabase)
 
-The detail page includes a "Puntuacion de la gente" block with:
+The detail page includes a "Que opina la tribuna" block with:
 
 - global average (1..5)
 - total votes count
 - user vote status
 - 5 clickable stars
 - upsert behavior (user can change vote)
+
+### Client bundling note
+
+- `@supabase/supabase-js` is imported only from `src/lib/supabaseClient.ts`.
+- `MovieRating.astro` imports that local module in a processed client script (not `is:inline`).
+- This ensures Vite bundles dependencies correctly for browser runtime.
 
 ### How anti-duplicate works (no login)
 
@@ -243,6 +250,15 @@ Check:
 
 - `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY` are set locally
 - GitHub Actions secrets are configured for production builds
+
+### Browser error: Failed to resolve module specifier "@supabase/supabase-js"
+
+If you see this in DevTools:
+
+- verify `@supabase/supabase-js` exists in `dependencies` (not `devDependencies`)
+- do not import `@supabase/supabase-js` from an inline Astro script
+- import from `src/lib/supabaseClient.ts` instead
+- restart dev server (`npm run dev`) after changes
 
 ### Build fails
 
