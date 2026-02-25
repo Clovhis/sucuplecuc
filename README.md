@@ -22,6 +22,7 @@ Schema:
 	"title": "Nombre de la pelicula",
 	"year": 2026,
 	"poster": "https://... o /posters/local.svg",
+	"screenshots": ["https://.../shot-1.jpg", "https://.../shot-2.jpg"],
 	"trailerYoutubeId": "abc123",
 	"verdict": "recomendada|zafa|no_recomendada|basura_atomica",
 	"verdictLabel": "Opcional para override de etiqueta visible",
@@ -34,6 +35,8 @@ Notas:
 - Solo se guarda `trailerYoutubeId` para YouTube.
 - Si `trailerYoutubeId` esta vacio, el detalle muestra "Trailer no disponible".
 - Si `poster` esta vacio, se usa un poster fallback.
+- `screenshots` es opcional. Si tiene al menos 2 URLs, el detalle usa galeria (2 capturas).
+- Si no hay `screenshots`, el detalle usa poster fallback.
 - `verdictLabel` es opcional y pisa la etiqueta por defecto del badge.
 
 ## Peliculas de ejemplo cargadas

@@ -9,6 +9,7 @@ export interface Movie {
 	title: string;
 	year: number;
 	poster: string;
+	screenshots?: string[];
 	trailerYoutubeId: string;
 	verdict: MovieVerdict;
 	verdictLabel?: string;

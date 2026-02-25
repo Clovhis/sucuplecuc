@@ -199,7 +199,36 @@ img {
 	border-radius: 14px;
 	border: 1px solid var(--line);
 	overflow: hidden;
-	background: #050608;
+	background: #0c1018;
+	aspect-ratio: 2 / 3;
+	max-height: 560px;
+}
+
+.movie-detail__poster img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.movie-detail__gallery {
+	display: grid;
+	grid-template-rows: repeat(2, minmax(0, 1fr));
+	gap: 0.75rem;
+	min-height: 560px;
+}
+
+.movie-detail__shot-wrap {
+	border-radius: 14px;
+	border: 1px solid var(--line);
+	overflow: hidden;
+	background: #0c1018;
+}
+
+.movie-detail__shot {
+	width: 100%;
+	height: 100%;
+	min-height: 0;
+	object-fit: cover;
 }
 
 .movie-detail__panel {
@@ -271,7 +300,13 @@ img {
 		grid-template-columns: 1fr;
 	}
 
-	.movie-detail__poster {
+	.movie-detail__poster,
+	.movie-detail__gallery {
 		max-width: 320px;
+		min-height: unset;
+	}
+
+	.movie-detail__shot {
+		min-height: 170px;
 	}
 }
