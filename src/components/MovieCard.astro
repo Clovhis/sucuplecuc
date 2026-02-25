@@ -1,0 +1,31 @@
+---
+import { getMoviePath, getPosterUrl, getVerdictLabel } from '../lib/movies';
+import type { Movie } from '../types/movie';
+
+interface Props {
+	movie: Movie;
+	index: number;
+}
+
+const { movie, index } = Astro.props as Props;
+const movieUrl = getMoviePath(movie.slug);
+const posterUrl = getPosterUrl(movie.poster);
+const verdictLabel = getVerdictLabel(movie.verdict);
+---
+
+<article class="movie-card fade-up" style={`--item-delay: ${index * 80}ms;`}>
+	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
+		<div class="movie-card__poster-wrap">
+			<img class="movie-card__poster" src={posterUrl} alt={`Poster de ${movie.title}`} loading="lazy" />
+		</div>
+		<div class="movie-card__body">
+			<div class="movie-card__header">
+				<h2>{movie.title}</h2>
+				<span class={`badge badge--${movie.verdict}`}>{verdictLabel}</span>
+			</div>
+			<p class="movie-card__year">{movie.year}</p>
+			<p class="movie-card__review review-clamp">{movie.review}</p>
+		</div>
+	</a>
+</article>
+

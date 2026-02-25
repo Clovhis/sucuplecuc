@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MovieCard from '../components/MovieCard.astro';
+import { getMovies } from '../lib/movies';
+
+const movies = getMovies();
+const pageTitle = 'La posta cine | Resenas cortas sin humo';
+const pageDescription =
+	'Resenas cortas de peliculas en castellano rioplatense. Directo, honesto y curado manualmente.';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<header class="site-header container">
+		<p class="site-header__kicker">La posta cine</p>
+		<h1 class="site-header__title">Resenas cortas de peliculas, sin ads y sin chamuyo</h1>
+		<p class="site-header__description">
+			Entradas curadas a mano. Cada ficha muestra poster, trailer (si existe) y una resena corta en
+			castellano rioplatense.
+		</p>
+	</header>
+
+	<main class="container">
+		{
+			movies.length > 0 ? (
+				<section class="movie-grid" aria-label="Peliculas publicadas">
+					{movies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
+				</section>
+			) : (
+				<p class="message-box">Todavia no hay peliculas cargadas. Agrega la primera entrada manual.</p>
+			)
+		}
+	</main>
+</BaseLayout>
