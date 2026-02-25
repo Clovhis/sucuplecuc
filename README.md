@@ -1,135 +1,237 @@
 # La posta cine
 
-Sitio estatico de resenas cortas de peliculas, en castellano rioplatense, sin ads y sin automatismos de contenido.
+Minimal static movie review site built with Astro and published on GitHub Pages.
 
-## Stack
+Live URL:
 
-- Astro (sitio 100% estatico)
-- Contenido desacoplado en `src/data/movies/*.json`
-- Deploy automatico a GitHub Pages por GitHub Actions
+- `https://clovhis.github.io/sucuplecuc/`
 
-## Estructura de contenido
+## What this project is
 
-Cada pelicula vive en un archivo JSON dentro de:
+La posta cine is a manually curated movie catalog.  
+Each movie has:
 
-`src/data/movies/`
+- poster (or visual fallback)
+- YouTube trailer embed (by `trailerYoutubeId`)
+- short review in Rioplatense Spanish
+- verdict badge
+- viewing platform label (Cinema / Netflix / etc.)
 
-Schema:
+There is no automatic scraping pipeline for reviews or opinions. Editorial tone and verdicts come from user feedback.
+
+## Tech stack
+
+- Astro (static output)
+- Plain CSS (no heavy UI framework)
+- JSON content files under `src/data/movies/`
+- GitHub Actions for build + deploy to Pages
+
+## Project structure
+
+```text
+.
+├─ src/
+│  ├─ components/
+│  │  └─ MovieCard.astro
+│  ├─ data/
+│  │  └─ movies/
+│  ├─ layouts/
+│  │  └─ BaseLayout.astro
+│  ├─ lib/
+│  │  └─ movies.ts
+│  ├─ pages/
+│  │  ├─ index.astro
+│  │  └─ peliculas/[slug].astro
+│  ├─ styles/
+│  │  └─ global.css
+│  └─ types/
+│     └─ movie.ts
+├─ templates/
+│  └─ movie.template.json
+├─ scripts/
+│  └─ new-movie.mjs
+└─ .github/workflows/
+   └─ deploy.yml
+```
+
+## Content model
+
+Movies are file-based JSON entries in:
+
+- `src/data/movies/*.json`
+
+Current schema:
 
 ```json
 {
-	"slug": "nombre-pelicula-2026",
-	"title": "Nombre de la pelicula",
+	"slug": "movie-title-2026",
+	"title": "Movie Title",
 	"year": 2026,
-	"poster": "https://... o /posters/local.svg",
+	"poster": "https://... or /posters/local.svg",
 	"screenshots": ["https://.../shot-1.jpg", "https://.../shot-2.jpg"],
 	"trailerYoutubeId": "abc123",
-	"releasePlatform": "Cine|Netflix|HBO Max|Disney+",
+	"releasePlatform": "Cinema|Netflix|HBO Max|Disney+",
 	"verdict": "recomendada|zafa|no_recomendada|basura_atomica",
-	"verdictLabel": "Opcional para override de etiqueta visible",
-	"review": "Resena corta (max 5 lineas aprox)"
+	"verdictLabel": "Optional display override",
+	"review": "Short review (max ~5 lines)"
 }
 ```
 
-Notas:
+Notes:
 
-- Solo se guarda `trailerYoutubeId` para YouTube.
-- Si `trailerYoutubeId` esta vacio, el detalle muestra "Trailer no disponible".
-- `releasePlatform` muestra donde verla (ejemplo: Cine, Netflix, HBO Max, Disney+).
-- Si `poster` esta vacio, se usa un poster fallback.
-- `screenshots` es opcional. Si tiene al menos 2 URLs, el detalle usa galeria (2 capturas).
-- Si no hay `screenshots`, el detalle usa poster fallback.
-- `verdictLabel` es opcional y pisa la etiqueta por defecto del badge.
+- `trailerYoutubeId` stores only the YouTube video id, not the full URL.
+- `screenshots` is optional:
+  - if at least 2 screenshots are available, detail page shows a 2-shot gallery (left column)
+  - otherwise poster is used as fallback
+- `releasePlatform` is optional but recommended to indicate where to watch.
+- `verdictLabel` is optional and overrides the default display label.
 
-## Peliculas de ejemplo cargadas
+## Verdict visual logic
 
-- `28 YEARS LATER` (obligatoria, con primera impresion)
-- `Noche en la Ruta` (ficticia)
-- `El Club del Ultimo Jueves` (ficticia)
+Badge color strategy:
 
-## Correr localmente
+- green: good (`recomendada`)
+- yellow: mixed/mediocre (`zafa`, or any label containing "mediocre")
+- red: bad (`no_recomendada`)
 
-1. Instalar dependencias:
+This allows entries like:
+
+- internal verdict: `no_recomendada`
+- display label: `MEDIOCRE`
+- visual color: yellow
+
+## Current catalog
+
+At the moment this branch includes:
+
+- Cumbres Borrascosas (Cinema)
+- AVATAR: FUEGO Y CENIZAS (Cinema)
+- El Botin (The Rip) (Netflix)
+
+## Local development
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Levantar servidor de desarrollo:
+Run dev server:
 
 ```bash
 npm run dev
 ```
 
-3. Build de produccion:
+Build production output:
 
 ```bash
 npm run build
 ```
 
-4. Preview del build:
+Preview built site:
 
 ```bash
 npm run preview
 ```
 
-## Crear una nueva pelicula manualmente
+## Add a new movie entry
 
-### Opcion A (recomendada): script
-
-Comando:
+### Option A (recommended): helper script
 
 ```bash
-npm run new-movie -- --slug "mi-pelicula-2026" --title "Mi Pelicula" --year 2026
+npm run new-movie -- --slug "my-movie-2026" --title "My Movie" --year 2026
 ```
 
-Que hace:
+What it does:
 
-- Crea `src/data/movies/mi-pelicula-2026.json`
-- Usa `templates/movie.template.json`
-- Valida formato de slug
-- Valida anio
-- Frena si detecta slug duplicado
+- creates `src/data/movies/my-movie-2026.json`
+- checks slug format
+- validates year range
+- prevents duplicate slug
 
-Luego editas el JSON generado para completar `poster`, `trailerYoutubeId`, `releasePlatform`, `verdict` y `review`.
+Then manually complete:
 
-### Opcion B: template manual
+- `poster`
+- `screenshots`
+- `trailerYoutubeId`
+- `releasePlatform`
+- `verdict` / `verdictLabel`
+- `review`
 
-Usa:
+### Option B: template copy
 
-`templates/movie.template.json`
+Use:
 
-y copialo dentro de `src/data/movies/` con el nombre `<slug>.json`.
+- `templates/movie.template.json`
 
-## Publicar en GitHub Pages
+Copy it to `src/data/movies/<slug>.json` and fill values manually.
 
-El repo ya incluye:
+## Editorial workflow
 
-`/.github/workflows/deploy.yml`
+This project follows manual editorial curation:
 
-Pasos:
+- no auto-generated final opinions
+- reviews must reflect user feedback
+- short format, no spoilers
+- colloquial Rioplatense tone
 
-1. En GitHub, entrar al repo `Clovhis/sucuplecuc`.
-2. Ir a `Settings > Pages`.
-3. En `Build and deployment`, elegir `Source: GitHub Actions`.
-4. Hacer push a `main`.
-5. Esperar el workflow `Deploy Astro to GitHub Pages`.
+## GitHub Pages deployment
 
-URL esperada:
+Deployment is handled by:
 
-`https://clovhis.github.io/sucuplecuc/`
+- `.github/workflows/deploy.yml`
 
-## Config importante para Pages
+Repository setup required:
 
-`astro.config.mjs` esta seteado con:
+1. GitHub repository settings
+2. `Settings > Pages`
+3. Source: `GitHub Actions`
+
+Every push to `main` triggers build and deployment.
+
+## Astro Pages configuration
+
+`astro.config.mjs` should match repository host/path:
 
 - `site: "https://clovhis.github.io"`
 - `base: "/sucuplecuc"`
 
-Si cambia nombre de usuario o repo, actualizar esos dos valores.
+If owner/repo changes, update both values.
 
-## Edicion editorial (manual, sin automatizar)
+## Troubleshooting
 
-- Las peliculas no se agregan solas.
-- Las resenas no se inventan automaticamente.
-- Flujo sugerido: pedir "crear entrada para X pelicula" y completar la resena con feedback humano.
+### Card click opens 404 on Pages
+
+Most common cause: wrong base-path URL composition.  
+Verify links are generated under `/sucuplecuc/...` and not `/sucuplecuc...` (missing slash).
+
+### Trailer not showing
+
+Check:
+
+- `trailerYoutubeId` exists
+- id is valid and embeddable
+- the video is not region/age/embed restricted
+
+### Build fails
+
+Run:
+
+```bash
+npm run build
+```
+
+Inspect content JSON for:
+
+- invalid JSON syntax
+- unsupported field types
+- malformed URLs or missing required fields
+
+## Optional skill-based workflow
+
+The repo also contains a custom skill:
+
+- `la-posta-cine-add-movie`
+
+It can automate safe movie-entry creation with branch/diff/build checks and editorial guardrails.
+

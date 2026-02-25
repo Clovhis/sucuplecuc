@@ -34,6 +34,22 @@ export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel'>):
 	return VERDICT_LABELS[movie.verdict] ?? 'Sin definir';
 }
 
+function normalizeText(value: string): string {
+	return value
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.trim();
+}
+
+export function getVerdictBadgeClass(movie: Pick<Movie, 'verdict' | 'verdictLabel'>): string {
+	const normalizedLabel = normalizeText(getVerdictLabel(movie));
+	if (normalizedLabel.includes('mediocre')) {
+		return 'badge--zafa';
+	}
+	return `badge--${movie.verdict}`;
+}
+
 export function getPosterUrl(poster: string): string {
 	if (!poster) {
 		return joinWithBase('posters/poster-no-disponible.svg');

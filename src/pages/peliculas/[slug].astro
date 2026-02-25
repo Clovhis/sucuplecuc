@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getMovies, getPosterUrl, getVerdictLabel } from '../../lib/movies';
+import { getMovies, getPosterUrl, getVerdictBadgeClass, getVerdictLabel } from '../../lib/movies';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -15,6 +15,7 @@ const { movie } = Astro.props as { movie: Movie };
 const pageTitle = `${movie.title} (${movie.year}) | La posta cine`;
 const pageDescription = movie.review;
 const posterUrl = getPosterUrl(movie.poster);
+const verdictClass = getVerdictBadgeClass(movie);
 const screenshotUrls = (movie.screenshots ?? [])
 	.filter((value) => typeof value === 'string' && value.trim().length > 0)
 	.slice(0, 2)
@@ -55,7 +56,7 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 				<h1 class="movie-detail__title">{movie.title}</h1>
 				<div class="movie-detail__meta">
 					<span>{movie.year}</span>
-					<span class={`badge badge--${movie.verdict}`}>{getVerdictLabel(movie)}</span>
+					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
 					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
 				</div>
 				<p class="movie-detail__review review-clamp">{movie.review}</p>

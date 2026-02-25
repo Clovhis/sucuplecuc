@@ -1,5 +1,5 @@
 ---
-import { getMoviePath, getPosterUrl, getVerdictLabel } from '../lib/movies';
+import { getMoviePath, getPosterUrl, getVerdictBadgeClass, getVerdictLabel } from '../lib/movies';
 import type { Movie } from '../types/movie';
 
 interface Props {
@@ -11,6 +11,7 @@ const { movie, index } = Astro.props as Props;
 const movieUrl = getMoviePath(movie.slug);
 const posterUrl = getPosterUrl(movie.poster);
 const verdictLabel = getVerdictLabel(movie);
+const verdictClass = getVerdictBadgeClass(movie);
 ---
 
 <article class="movie-card fade-up" style={`--item-delay: ${index * 80}ms;`}>
@@ -21,7 +22,7 @@ const verdictLabel = getVerdictLabel(movie);
 		<div class="movie-card__body">
 			<div class="movie-card__header">
 				<h2>{movie.title}</h2>
-				<span class={`badge badge--${movie.verdict}`}>{verdictLabel}</span>
+				<span class={`badge ${verdictClass}`}>{verdictLabel}</span>
 			</div>
 			<div class="movie-card__meta">
 				<p class="movie-card__year">{movie.year}</p>
