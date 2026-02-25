@@ -24,6 +24,7 @@ Schema:
 	"poster": "https://... o /posters/local.svg",
 	"trailerYoutubeId": "abc123",
 	"verdict": "recomendada|zafa|no_recomendada|basura_atomica",
+	"verdictLabel": "Opcional para override de etiqueta visible",
 	"review": "Resena corta (max 5 lineas aprox)"
 }
 ```
@@ -33,6 +34,7 @@ Notas:
 - Solo se guarda `trailerYoutubeId` para YouTube.
 - Si `trailerYoutubeId` esta vacio, el detalle muestra "Trailer no disponible".
 - Si `poster` esta vacio, se usa un poster fallback.
+- `verdictLabel` es opcional y pisa la etiqueta por defecto del badge.
 
 ## Peliculas de ejemplo cargadas
 

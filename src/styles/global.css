@@ -53,29 +53,29 @@ img {
 }
 
 .site-header {
-	padding: 2.5rem 0 2rem;
+	padding: 2.1rem 0 1.6rem;
 }
 
-.site-header__title {
-	margin: 0;
-	font-size: clamp(2rem, 4vw, 2.8rem);
-	line-height: 1.1;
-	letter-spacing: -0.02em;
+.site-header__line {
+	display: flex;
+	align-items: baseline;
+	gap: 0.75rem;
+	flex-wrap: wrap;
 }
 
 .site-header__kicker {
-	margin: 0 0 0.5rem;
+	margin: 0;
 	font-family: 'IBM Plex Mono', monospace;
 	color: var(--accent-soft);
-	font-size: 0.86rem;
+	font-size: 0.88rem;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 }
 
-.site-header__description {
-	margin: 0.8rem 0 0;
-	max-width: 60ch;
+.site-header__tagline {
+	margin: 0;
 	color: var(--muted);
+	font-size: 0.92rem;
 }
 
 .movie-grid {
@@ -139,10 +139,12 @@ img {
 	font-size: 0.92rem;
 }
 
-.movie-card__review {
-	margin: 0;
-	color: #d6d9e0;
-	font-size: 0.95rem;
+.movie-card__cta {
+	margin: 0.15rem 0 0;
+	color: var(--muted);
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 }
 
 .badge {
@@ -273,4 +275,3 @@ img {
 		max-width: 320px;
 	}
 }
-

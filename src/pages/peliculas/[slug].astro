@@ -33,7 +33,7 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 				<h1 class="movie-detail__title">{movie.title}</h1>
 				<div class="movie-detail__meta">
 					<span>{movie.year}</span>
-					<span class={`badge badge--${movie.verdict}`}>{getVerdictLabel(movie.verdict)}</span>
+					<span class={`badge badge--${movie.verdict}`}>{getVerdictLabel(movie)}</span>
 				</div>
 				<p class="movie-detail__review review-clamp">{movie.review}</p>
 
@@ -47,7 +47,7 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 						allowfullscreen
 					/>
 				) : (
-					<p class="message-box">Trailer no disponible por ahora. Falta completar este campo.</p>
+					<p class="message-box">Trailer no disponible.</p>
 				)}
 			</div>
 		</section>

@@ -11,6 +11,6 @@ export interface Movie {
 	poster: string;
 	trailerYoutubeId: string;
 	verdict: MovieVerdict;
+	verdictLabel?: string;
 	review: string;
 }
-

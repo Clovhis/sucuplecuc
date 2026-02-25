@@ -10,7 +10,7 @@ interface Props {
 const { movie, index } = Astro.props as Props;
 const movieUrl = getMoviePath(movie.slug);
 const posterUrl = getPosterUrl(movie.poster);
-const verdictLabel = getVerdictLabel(movie.verdict);
+const verdictLabel = getVerdictLabel(movie);
 ---
 
 <article class="movie-card fade-up" style={`--item-delay: ${index * 80}ms;`}>
@@ -24,8 +24,7 @@ const verdictLabel = getVerdictLabel(movie.verdict);
 				<span class={`badge badge--${movie.verdict}`}>{verdictLabel}</span>
 			</div>
 			<p class="movie-card__year">{movie.year}</p>
-			<p class="movie-card__review review-clamp">{movie.review}</p>
+			<p class="movie-card__cta">Ver ficha</p>
 		</div>
 	</a>
 </article>
-
