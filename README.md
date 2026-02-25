@@ -1,38 +1,36 @@
 # La posta cine
 
-Minimal static movie review site built with Astro and published on GitHub Pages.
+La posta cine is a minimal Astro + GitHub Pages movie review site focused on short, honest, manually curated reviews.
 
-Live URL:
+Live production URL:
 
 - `https://clovhis.github.io/sucuplecuc/`
 
-## What this project is
+## Features
 
-La posta cine is a manually curated movie catalog.  
-Each movie has:
-
-- poster (or visual fallback)
-- YouTube trailer embed (by `trailerYoutubeId`)
-- short review in Rioplatense Spanish
-- verdict badge
-- viewing platform label (Cinema / Netflix / etc.)
-
-There is no automatic scraping pipeline for reviews or opinions. Editorial tone and verdicts come from user feedback.
+- Static movie catalog (JSON-based content, no CMS required)
+- Movie detail pages by slug (`/peliculas/<slug>/`)
+- Embedded YouTube trailer (via `trailerYoutubeId`)
+- Verdict badges + optional colloquial `verdictLabel`
+- Platform label (`releasePlatform`: Cinema, Netflix, etc.)
+- Optional screenshot gallery (2 images in detail page left column)
+- Community star rating (1..5) backed by Supabase, no login
 
 ## Tech stack
 
 - Astro (static output)
-- Plain CSS (no heavy UI framework)
-- JSON content files under `src/data/movies/`
-- GitHub Actions for build + deploy to Pages
+- Plain CSS
+- Supabase (database for movie star ratings)
+- GitHub Actions + GitHub Pages
 
-## Project structure
+## Repository structure
 
 ```text
 .
 ├─ src/
 │  ├─ components/
-│  │  └─ MovieCard.astro
+│  │  ├─ MovieCard.astro
+│  │  └─ MovieRating.astro
 │  ├─ data/
 │  │  └─ movies/
 │  ├─ layouts/
@@ -46,19 +44,19 @@ There is no automatic scraping pipeline for reviews or opinions. Editorial tone 
 │  │  └─ global.css
 │  └─ types/
 │     └─ movie.ts
-├─ templates/
-│  └─ movie.template.json
 ├─ scripts/
 │  └─ new-movie.mjs
+├─ templates/
+│  └─ movie.template.json
+├─ supabase/
+│  └─ sql/movie_ratings.sql
 └─ .github/workflows/
    └─ deploy.yml
 ```
 
-## Content model
+## Movie content model
 
-Movies are file-based JSON entries in:
-
-- `src/data/movies/*.json`
+Movie entries live in `src/data/movies/*.json`.
 
 Current schema:
 
@@ -77,141 +75,138 @@ Current schema:
 }
 ```
 
-Notes:
+### Content notes
 
-- `trailerYoutubeId` stores only the YouTube video id, not the full URL.
+- `slug` is the routing key and also the Supabase rating key (`movie_slug`).
+- `trailerYoutubeId` stores only the YouTube ID, never full URLs.
 - `screenshots` is optional:
-  - if at least 2 screenshots are available, detail page shows a 2-shot gallery (left column)
-  - otherwise poster is used as fallback
-- `releasePlatform` is optional but recommended to indicate where to watch.
-- `verdictLabel` is optional and overrides the default display label.
+  - if at least 2 URLs exist, detail page shows a two-shot gallery
+  - otherwise poster fallback is used
+- `releasePlatform` is optional but recommended.
 
-## Verdict visual logic
+## Community rating system (Supabase)
 
-Badge color strategy:
+The detail page includes a "Puntuacion de la gente" block with:
 
-- green: good (`recomendada`)
-- yellow: mixed/mediocre (`zafa`, or any label containing "mediocre")
-- red: bad (`no_recomendada`)
+- global average (1..5)
+- total votes count
+- user vote status
+- 5 clickable stars
+- upsert behavior (user can change vote)
 
-This allows entries like:
+### How anti-duplicate works (no login)
 
-- internal verdict: `no_recomendada`
-- display label: `MEDIOCRE`
-- visual color: yellow
+- Each browser gets a local `visitor_token` in `localStorage`.
+- Votes are unique per `movie_slug + visitor_token`.
+- This is basic anti-spam only (not bot-proof).
 
-## Current catalog
+## Supabase setup
 
-At the moment this branch includes:
+### 1) Environment variables
 
-- Cumbres Borrascosas (Cinema)
-- AVATAR: FUEGO Y CENIZAS (Cinema)
-- El Botin (The Rip) (Netflix)
+Create local `.env` from `.env.example`:
+
+```bash
+PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
+PUBLIC_SUPABASE_ANON_KEY=your-public-anon-key
+```
+
+Do not commit real secrets to git.
+
+### 2) SQL setup
+
+Run this SQL file in Supabase SQL Editor:
+
+- `supabase/sql/movie_ratings.sql`
+
+It creates:
+
+- `public.movie_ratings` table
+- unique constraint (`movie_slug`, `visitor_token`)
+- indexes
+- `updated_at` trigger
+- RLS + anon/authenticated SELECT/INSERT/UPDATE policies
+- `public.movie_rating_stats` view (avg + vote count)
+
+### 3) GitHub Pages build secrets
+
+In repository settings (`Settings > Secrets and variables > Actions`), define:
+
+- `PUBLIC_SUPABASE_URL`
+- `PUBLIC_SUPABASE_ANON_KEY`
+
+The workflow injects these at build time so the static site can call Supabase in production.
 
 ## Local development
 
-Install dependencies:
+Install:
 
 ```bash
 npm install
 ```
 
-Run dev server:
+Run dev:
 
 ```bash
 npm run dev
 ```
 
-Build production output:
+Build:
 
 ```bash
 npm run build
 ```
 
-Preview built site:
+Preview:
 
 ```bash
 npm run preview
 ```
 
-## Add a new movie entry
+## Add a new movie
 
-### Option A (recommended): helper script
+Recommended helper:
 
 ```bash
 npm run new-movie -- --slug "my-movie-2026" --title "My Movie" --year 2026
 ```
 
-What it does:
+Then edit generated JSON fields manually.
 
-- creates `src/data/movies/my-movie-2026.json`
-- checks slug format
-- validates year range
-- prevents duplicate slug
+Alternative: copy `templates/movie.template.json`.
 
-Then manually complete:
+## Deployment
 
-- `poster`
-- `screenshots`
-- `trailerYoutubeId`
-- `releasePlatform`
-- `verdict` / `verdictLabel`
-- `review`
-
-### Option B: template copy
-
-Use:
-
-- `templates/movie.template.json`
-
-Copy it to `src/data/movies/<slug>.json` and fill values manually.
-
-## Editorial workflow
-
-This project follows manual editorial curation:
-
-- no auto-generated final opinions
-- reviews must reflect user feedback
-- short format, no spoilers
-- colloquial Rioplatense tone
-
-## GitHub Pages deployment
-
-Deployment is handled by:
+GitHub Pages deploy workflow:
 
 - `.github/workflows/deploy.yml`
 
-Repository setup required:
+Requirements:
 
-1. GitHub repository settings
-2. `Settings > Pages`
-3. Source: `GitHub Actions`
+1. Pages source set to `GitHub Actions`
+2. Push to `main`
 
-Every push to `main` triggers build and deployment.
-
-## Astro Pages configuration
-
-`astro.config.mjs` should match repository host/path:
+Astro base config (`astro.config.mjs`) is set for this repository path:
 
 - `site: "https://clovhis.github.io"`
 - `base: "/sucuplecuc"`
 
-If owner/repo changes, update both values.
-
 ## Troubleshooting
 
-### Card click opens 404 on Pages
-
-Most common cause: wrong base-path URL composition.  
-Verify links are generated under `/sucuplecuc/...` and not `/sucuplecuc...` (missing slash).
-
-### Trailer not showing
+### Trailer is missing
 
 Check:
 
 - `trailerYoutubeId` exists
-- id is valid and embeddable
-- the video is not region/age/embed restricted
+- YouTube video is embeddable
+- no region/embed restrictions
+
+### Rating block shows config error
+
+Check:
+
+- `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY` are set locally
+- GitHub Actions secrets are configured for production builds
 
 ### Build fails
 
@@ -221,17 +216,15 @@ Run:
 npm run build
 ```
 
-Inspect content JSON for:
+Common causes:
 
-- invalid JSON syntax
-- unsupported field types
-- malformed URLs or missing required fields
+- invalid JSON movie file
+- malformed field types
+- accidental syntax issues in content/components
 
-## Optional skill-based workflow
+## Security notes (rating)
 
-The repo also contains a custom skill:
-
-- `la-posta-cine-add-movie`
-
-It can automate safe movie-entry creation with branch/diff/build checks and editorial guardrails.
+- No service-role key is used in frontend.
+- Frontend uses only Supabase anon/public key.
+- Without login, anti-abuse is intentionally basic.
 

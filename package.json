@@ -10,6 +10,7 @@
     "new-movie": "node ./scripts/new-movie.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.97.0",
     "astro": "^5.17.1"
   }
 }

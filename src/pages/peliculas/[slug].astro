@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getMovies, getPosterUrl, getVerdictBadgeClass, getVerdictLabel } from '../../lib/movies';
+import MovieRating from '../../components/MovieRating.astro';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -60,6 +61,7 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
 				</div>
 				<p class="movie-detail__review review-clamp">{movie.review}</p>
+				<MovieRating movieSlug={movie.slug} />
 
 				{trailerEmbedUrl ? (
 					<iframe

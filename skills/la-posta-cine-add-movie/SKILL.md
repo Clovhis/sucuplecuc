@@ -147,6 +147,18 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
 If optional fields are not used by current project schema, keep only supported fields.
 If `screenshots` are not confirmed, keep `[]`.
 
+## Rating compatibility by slug (mandatory)
+
+La posta cine now has a global 1..5 star rating widget powered by Supabase.
+Every new movie entry must be automatically compatible through its `slug`.
+
+Rules:
+
+- Always provide a stable `slug` (do not change slug after publishing).
+- Keep slug unique across all movies.
+- Do not add special rating fields to movie content files.
+- The site binds ratings by `movie_slug`, so normal content creation is enough when slug is correct.
+
 ## Duplicate protection (mandatory)
 
 Before writing, scan movie files and abort if duplicate by:
@@ -250,6 +262,7 @@ Return all of the following:
 - [ ] Review <= 5 lines, no spoilers, based only on user feedback
 - [ ] Poster/trailer fields from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
+- [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `npm run build` passed
 - [ ] Diff shown before commit
 - [ ] Commit and push done on feature branch

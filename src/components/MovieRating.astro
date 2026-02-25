@@ -1,0 +1,210 @@
+---
+interface Props {
+	movieSlug: string;
+}
+
+const { movieSlug } = Astro.props as Props;
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL ?? '';
+const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY ?? '';
+---
+
+<section
+	class="rating-card"
+	data-rating-widget
+	data-movie-slug={movieSlug}
+	data-supabase-url={supabaseUrl}
+	data-supabase-anon-key={supabaseAnonKey}
+>
+	<div class="rating-card__top">
+		<p class="rating-card__title">Puntuacion de la gente</p>
+		<p class="rating-card__summary">
+			<span data-rating-average>-/-</span>
+			<span aria-hidden="true">|</span>
+			<span data-rating-count>Sin votos</span>
+		</p>
+	</div>
+	<div class="rating-stars" role="group" aria-label="Calificar pelicula de 1 a 5 estrellas">
+		<button type="button" data-star-value="1" aria-label="1 estrella">★</button>
+		<button type="button" data-star-value="2" aria-label="2 estrellas">★</button>
+		<button type="button" data-star-value="3" aria-label="3 estrellas">★</button>
+		<button type="button" data-star-value="4" aria-label="4 estrellas">★</button>
+		<button type="button" data-star-value="5" aria-label="5 estrellas">★</button>
+	</div>
+	<p class="rating-card__status" data-rating-status>Cargando puntuacion...</p>
+</section>
+
+<script type="module" is:inline>
+	import { createClient } from '@supabase/supabase-js';
+
+	const widgets = Array.from(document.querySelectorAll('[data-rating-widget]')).filter((element) => {
+		if (!(element instanceof HTMLElement)) return false;
+		if (element.dataset.ratingInitialized === 'true') return false;
+		element.dataset.ratingInitialized = 'true';
+		return true;
+	});
+
+	for (const widget of widgets) {
+		void setupRatingWidget(widget);
+	}
+
+	function getVisitorToken() {
+		const storageKey = 'la-posta-cine-visitor-token';
+		const currentToken = localStorage.getItem(storageKey);
+		if (currentToken) return currentToken;
+		const nextToken =
+			typeof crypto !== 'undefined' && crypto.randomUUID
+				? crypto.randomUUID()
+				: `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+		localStorage.setItem(storageKey, nextToken);
+		return nextToken;
+	}
+
+	function formatAverage(value) {
+		if (typeof value !== 'number' || Number.isNaN(value)) return '-/-';
+		return `${value.toFixed(1)}/5`;
+	}
+
+	async function setupRatingWidget(widget) {
+		const movieSlug = widget.dataset.movieSlug ?? '';
+		const supabaseUrl = widget.dataset.supabaseUrl ?? '';
+		const supabaseAnonKey = widget.dataset.supabaseAnonKey ?? '';
+
+		const averageNode = widget.querySelector('[data-rating-average]');
+		const countNode = widget.querySelector('[data-rating-count]');
+		const statusNode = widget.querySelector('[data-rating-status]');
+		const stars = Array.from(widget.querySelectorAll('[data-star-value]'));
+
+		if (
+			!movieSlug ||
+			!(averageNode instanceof HTMLElement) ||
+			!(countNode instanceof HTMLElement) ||
+			!(statusNode instanceof HTMLElement)
+		) {
+			return;
+		}
+
+		if (!supabaseUrl || !supabaseAnonKey) {
+			statusNode.textContent = 'Rating no configurado (faltan variables Supabase).';
+			return;
+		}
+
+		const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+			auth: {
+				autoRefreshToken: false,
+				persistSession: false,
+				detectSessionInUrl: false,
+			},
+		});
+
+		const visitorToken = getVisitorToken();
+		let currentVote = 0;
+		let isSubmitting = false;
+
+		function paintStars(activeValue) {
+			for (const star of stars) {
+				const starValue = Number(star.getAttribute('data-star-value') ?? '0');
+				star.classList.toggle('is-active', starValue <= activeValue);
+			}
+		}
+
+		function setDisabled(nextState) {
+			for (const star of stars) {
+				if (star instanceof HTMLButtonElement) {
+					star.disabled = nextState;
+				}
+			}
+		}
+
+		async function loadStatsAndVote() {
+			statusNode.textContent = 'Cargando puntuacion...';
+
+			const [statsResponse, voteResponse] = await Promise.all([
+				supabase
+					.from('movie_rating_stats')
+					.select('avg_rating,vote_count')
+					.eq('movie_slug', movieSlug)
+					.maybeSingle(),
+				supabase
+					.from('movie_ratings')
+					.select('rating')
+					.eq('movie_slug', movieSlug)
+					.eq('visitor_token', visitorToken)
+					.maybeSingle(),
+			]);
+
+			if (statsResponse.error || voteResponse.error) {
+				statusNode.textContent = 'No se pudo cargar el rating ahora.';
+				return;
+			}
+
+			const voteCount = statsResponse.data?.vote_count ?? 0;
+			averageNode.textContent = formatAverage(statsResponse.data?.avg_rating ?? NaN);
+			countNode.textContent = voteCount === 1 ? '1 voto' : `${voteCount} votos`;
+
+			currentVote = Number(voteResponse.data?.rating ?? 0);
+			paintStars(currentVote);
+
+			statusNode.textContent =
+				currentVote > 0 ? `Tu voto: ${currentVote}/5` : 'Todavia no votaste esta peli.';
+		}
+
+		async function submitVote(nextVote) {
+			if (isSubmitting) return;
+			isSubmitting = true;
+			setDisabled(true);
+			statusNode.textContent = 'Guardando voto...';
+
+			const { error } = await supabase.from('movie_ratings').upsert(
+				{
+					movie_slug: movieSlug,
+					visitor_token: visitorToken,
+					rating: nextVote,
+				},
+				{ onConflict: 'movie_slug,visitor_token' },
+			);
+
+			if (error) {
+				statusNode.textContent = 'No se pudo guardar tu voto.';
+				setDisabled(false);
+				isSubmitting = false;
+				paintStars(currentVote);
+				return;
+			}
+
+			currentVote = nextVote;
+			paintStars(currentVote);
+			statusNode.textContent = `Gracias por votar. Tu voto: ${currentVote}/5`;
+			await loadStatsAndVote();
+			setDisabled(false);
+			isSubmitting = false;
+		}
+
+		for (const star of stars) {
+			if (!(star instanceof HTMLButtonElement)) continue;
+			const value = Number(star.dataset.starValue ?? '0');
+
+			star.addEventListener('mouseenter', () => {
+				if (!isSubmitting) paintStars(value);
+			});
+
+			star.addEventListener('focus', () => {
+				if (!isSubmitting) paintStars(value);
+			});
+
+			star.addEventListener('click', () => {
+				if (value >= 1 && value <= 5) {
+					void submitVote(value);
+				}
+			});
+		}
+
+		const starsWrap = widget.querySelector('.rating-stars');
+		if (starsWrap instanceof HTMLElement) {
+			starsWrap.addEventListener('mouseleave', () => {
+				if (!isSubmitting) paintStars(currentVote);
+			});
+		}
+
+		await loadStatsAndVote();
+	}
+</script>

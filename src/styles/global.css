@@ -279,6 +279,75 @@ img {
 	font-size: 1rem;
 }
 
+.rating-card {
+	border: 1px solid var(--line);
+	border-radius: 12px;
+	padding: 0.95rem;
+	background: rgba(255, 255, 255, 0.02);
+	display: grid;
+	gap: 0.7rem;
+}
+
+.rating-card__top {
+	display: grid;
+	gap: 0.2rem;
+}
+
+.rating-card__title {
+	margin: 0;
+	font-size: 0.88rem;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+
+.rating-card__summary {
+	margin: 0;
+	font-size: 0.95rem;
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: #dde3ef;
+}
+
+.rating-stars {
+	display: flex;
+	gap: 0.2rem;
+}
+
+.rating-stars button {
+	border: 0;
+	background: transparent;
+	color: #5d6576;
+	font-size: 1.45rem;
+	line-height: 1;
+	padding: 0.1rem;
+	cursor: pointer;
+	transition: transform 0.16s ease, color 0.16s ease;
+}
+
+.rating-stars button:hover,
+.rating-stars button:focus-visible {
+	color: #f9c45a;
+	transform: translateY(-1px);
+	outline: none;
+}
+
+.rating-stars button.is-active {
+	color: #f9c45a;
+}
+
+.rating-stars button:disabled {
+	opacity: 0.65;
+	cursor: wait;
+}
+
+.rating-card__status {
+	margin: 0;
+	font-size: 0.88rem;
+	color: var(--muted);
+}
+
 .trailer-frame {
 	width: 100%;
 	border: 0;
