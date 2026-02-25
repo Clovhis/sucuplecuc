@@ -113,9 +113,35 @@ PUBLIC_SUPABASE_ANON_KEY=your-public-anon-key
 
 Do not commit real secrets to git.
 
+### 1.1) Autonomous MCP mode (Codex + VSCode)
+
+To let Codex execute SQL automatically (without asking each time), configure the Supabase MCP server in local Codex config:
+
+- File: `C:\Users\<your-user>\.codex\config.toml`
+- Add:
+
+```toml
+[mcp_servers.supabase]
+command = "npx"
+args = ["-y", "@supabase/mcp-server-supabase", "--project-ref", "<your-project-ref>"]
+startup_timeout_sec = 60
+tool_timeout_sec = 180
+```
+
+Then set a local user environment variable (not in the repo):
+
+```powershell
+setx SUPABASE_ACCESS_TOKEN "<your-supabase-personal-access-token>"
+```
+
+Important:
+
+- Restart VSCode/Codex session after changing MCP config or environment variables.
+- Never store PAT/service-role keys in tracked files.
+
 ### 2) SQL setup
 
-Run this SQL file in Supabase SQL Editor:
+Run this SQL file (via SQL Editor, MCP, or management API):
 
 - `supabase/sql/movie_ratings.sql`
 
@@ -127,6 +153,16 @@ It creates:
 - `updated_at` trigger
 - RLS + anon/authenticated SELECT/INSERT/UPDATE policies
 - `public.movie_rating_stats` view (avg + vote count)
+
+### 2.1) SQL automation endpoint (admin)
+
+If you have a Supabase Personal Access Token (PAT), SQL can also be executed non-interactively against the project admin API:
+
+- Endpoint: `POST https://api.supabase.com/v1/projects/<project-ref>/database/query`
+- Header: `Authorization: Bearer <PAT>`
+- Body: `{ "query": "<sql>" }`
+
+This is useful for agent automation and CI-like administrative tasks.
 
 ### 3) GitHub Pages build secrets
 
@@ -222,9 +258,26 @@ Common causes:
 - malformed field types
 - accidental syntax issues in content/components
 
+### MCP server does not appear in Codex
+
+Check:
+
+- `@supabase/mcp-server-supabase` is installed (or resolvable via `npx`)
+- `mcp_servers.supabase` exists in `~/.codex/config.toml`
+- `SUPABASE_ACCESS_TOKEN` is set in your OS user env
+- VSCode/Codex was restarted after configuration changes
+
+### Quick rating backend check
+
+Minimal verification after SQL setup:
+
+1. Confirm table and view exist in Supabase (`movie_ratings`, `movie_rating_stats`)
+2. Insert one test vote through REST with anon key
+3. Read `movie_rating_stats` for the same `movie_slug`
+4. Remove the test vote
+
 ## Security notes (rating)
 
 - No service-role key is used in frontend.
 - Frontend uses only Supabase anon/public key.
 - Without login, anti-abuse is intentionally basic.
-
