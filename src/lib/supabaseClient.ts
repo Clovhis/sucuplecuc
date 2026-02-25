@@ -1,20 +1,27 @@
 import { createClient } from '@supabase/supabase-js';
 
+export const DEFAULT_SUPABASE_URL = 'https://bftcrexcwktyiqsermni.supabase.co';
+export const DEFAULT_SUPABASE_ANON_KEY = 'sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM';
+
 // Fallbacks keep rating working even if GitHub Actions PUBLIC_* env vars are missing.
 // The anon key is publishable by design and intended for frontend use.
 const supabaseUrl =
-	import.meta.env.PUBLIC_SUPABASE_URL || 'https://bftcrexcwktyiqsermni.supabase.co';
+	import.meta.env.PUBLIC_SUPABASE_URL || DEFAULT_SUPABASE_URL;
 const supabaseAnonKey =
-	import.meta.env.PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM';
+	import.meta.env.PUBLIC_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY;
 
 export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
 
+export function createSupabaseBrowserClient(url: string, anonKey: string) {
+	return createClient(url, anonKey, {
+		auth: {
+			autoRefreshToken: false,
+			persistSession: false,
+			detectSessionInUrl: false,
+		},
+	});
+}
+
 export const supabase = isSupabaseConfigured
-	? createClient(supabaseUrl, supabaseAnonKey, {
-			auth: {
-				autoRefreshToken: false,
-				persistSession: false,
-				detectSessionInUrl: false,
-			},
-		})
+	? createSupabaseBrowserClient(supabaseUrl, supabaseAnonKey)
 	: null;

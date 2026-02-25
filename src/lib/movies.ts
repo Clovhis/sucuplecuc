@@ -21,10 +21,34 @@ function joinWithBase(pathPart: string): string {
 	return `${base}${pathPart.replace(/^\/+/, '')}`;
 }
 
+function validateMovies(movies: Movie[]): void {
+	const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+	const seen = new Set<string>();
+
+	for (const movie of movies) {
+		const slug = movie.slug?.trim();
+		if (!slug) {
+			throw new Error(`Movie entry "${movie.title}" is missing a slug.`);
+		}
+		if (!slugPattern.test(slug)) {
+			throw new Error(
+				`Movie slug "${slug}" is invalid. Use lowercase letters, numbers, and dashes only.`,
+			);
+		}
+		if (seen.has(slug)) {
+			throw new Error(`Duplicate movie slug detected: "${slug}".`);
+		}
+		seen.add(slug);
+	}
+}
+
 export function getMovies(): Movie[] {
-	return Object.values(movieModules)
+	const movies = Object.values(movieModules)
 		.map((moduleItem) => moduleItem.default)
 		.sort((a, b) => b.year - a.year || a.title.localeCompare(b.title, 'es'));
+
+	validateMovies(movies);
+	return movies;
 }
 
 export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel'>): string {
