@@ -128,6 +128,16 @@ Trailer policy is strict:
 Do not invent data.
 Do not store full YouTube URL when schema uses id.
 
+Platform policy for Argentina (mandatory):
+
+- Always resolve `releasePlatform` for Argentine audience (`AR`) using trustworthy availability sources (prefer JustWatch `ar` pages and/or official platform pages).
+- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`.
+- If AR has subscription streaming (`FLATRATE`) in one of those allowed labels, use that exact allowed label.
+- If AR has streaming on a platform outside that allowlist (for example `MUBI` or others), force `releasePlatform: "Stremio"`.
+- If AR availability is cinema-only, set `releasePlatform: "Cine"`.
+- If there is no confirmed AR availability, or only foreign/off-region offers, set `releasePlatform: "Stremio"` as fallback.
+- Never leave `releasePlatform` empty.
+
 ## Content schema
 
 Create one JSON file in `src/data/movies/<slug>.json` using project schema:
@@ -150,7 +160,7 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "review": "Resena breve en castellano rioplatense",
   "isPremiere": false,
   "premiereLabel": "",
-  "releasePlatform": ""
+  "releasePlatform": "Stremio"
 }
 ```
 
@@ -209,13 +219,13 @@ Set premiere fields only when requested or confidently confirmed:
 
 - `isPremiere: true`
 - `premiereLabel: "ESTRENO"`
-- `releasePlatform`: `Cine`, `Netflix`, etc only if reliable
+- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`) when reliable for AR
 
 If not confirmed, keep:
 
 - `isPremiere: false`
 - `premiereLabel: ""`
-- `releasePlatform: ""`
+- `releasePlatform: "Stremio"`
 
 ## Validation and commit gate
 

@@ -103,6 +103,14 @@ img {
 	font-size: 0.92rem;
 }
 
+.site-header__rotating-copy {
+	margin: 0;
+	margin-top: 0.22rem;
+	color: #d5dbe7;
+	font-size: 0.88rem;
+	max-width: 70ch;
+}
+
 .movie-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

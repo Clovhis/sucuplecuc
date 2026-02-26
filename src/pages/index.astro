@@ -28,7 +28,10 @@ const pageDescription =
 				Invitá un cafecito
 			</a>
 		</div>
-		<p class="site-header__tagline">Reseñas cortas y honestas</p>
+		<p class="site-header__tagline">Reseñas super cortas y honestas</p>
+		<p class="site-header__rotating-copy" data-rotating-copy>
+			Sin humo, sin metaforas raras, sin chamuyo.
+		</p>
 	</header>
 
 	<main class="container">
@@ -41,7 +44,7 @@ const pageDescription =
 							id="movie-search-input"
 							class="movie-search__input"
 							type="search"
-							placeholder="Título, año o plataforma…"
+							placeholder="Titulo, año, plataforma o rating..."
 							autocomplete="off"
 							data-movie-search-input
 						/>
@@ -94,6 +97,113 @@ const pageDescription =
 			};
 
 			input.addEventListener('input', runFilter);
+		}
+	}
+</script>
+
+<script>
+	const rotatingCopyElement = document.querySelector('[data-rotating-copy]');
+
+	const rotatingCopies = [
+		'Sin humo, sin metaforas raras, sin chamuyo.',
+		'En castellano normal. No en "critiques".',
+		'No te vendo una experiencia sensorial: te digo si zafa o no.',
+		'Directo a lo importante. Sin vueltas.',
+		'Es cine, no un parcial. Te la hago facil.',
+		'Lo bueno, lo flojo y listo. En dos renglones.',
+		'Si esta buena, te lo digo. Si no, tambien.',
+		'Sin verso academico. Con criterio.',
+		'Opinion corta, clara y sin maquillaje.',
+		'No hay humo: hay veredicto.',
+		'Poca vuelta, mucha data util.',
+		'Resena breve para decidir rapido.',
+		'Te ahorramos el chamuyo de festival.',
+		'Un vistazo y ya sabes si va con vos.',
+		'Corta y al pie, como debe ser.',
+		'Si no suma, no la vendemos.',
+		'Mas criterio, menos poesia rara.',
+		'No la estiramos: te contamos lo esencial.',
+		'Para elegir peli sin perder media hora.',
+		'Sin adjetivos inflados, con opinion real.',
+		'Te lo explicamos simple: rinde o no rinde.',
+		'No hay misterio: aca se puntua de frente.',
+		'Resena corta para gente ocupada.',
+		'Hablamos normal, como en la vereda.',
+		'Sin solemnidad: solo cine y criterio.',
+		'Resumen rapido, decision facil.',
+		'Una leida y ya estas.',
+		'Cero humo critico, cero spoiler.',
+		'Te decimos lo que importa, no relleno.',
+		'Opinion honesta, formato express.',
+		'Si esta inflada, aca baja a tierra.',
+		'Analisis corto, utilidad larga.',
+		'Nada de vueltas: veredicto claro.',
+		'Resenas para decidir, no para confundirte.',
+		'No la intelectualizamos al pedo.',
+		'Lo justo y necesario para elegir.',
+		'Mas claridad, menos pirueta.',
+		'Aca no hay firuletes, hay criterio.',
+		'Texto corto, señal clara.',
+		'Si no convence, se dice.',
+		'Si la rompe, tambien se dice.',
+		'Pensado para leer en un minuto.',
+		'Simple, directo y sin venderte nada.',
+		'No hacemos tesis: hacemos resenas utiles.',
+		'Lo esencial, en criollo.',
+		'Sin tecnicismos innecesarios.',
+		'Una mirada honesta y al hueso.',
+		'Te evitamos la decepcion con pocas palabras.',
+		'Sin humo de marketing, con opinion real.',
+		'Resena corta, decision inteligente.'
+	];
+
+	const shuffleOrder = (length) => {
+		const order = Array.from({ length }, (_, index) => index);
+		for (let index = order.length - 1; index > 0; index -= 1) {
+			const randomIndex = Math.floor(Math.random() * (index + 1));
+			[order[index], order[randomIndex]] = [order[randomIndex], order[index]];
+		}
+		return order;
+	};
+
+	const isValidState = (state, length) => {
+		if (!state || typeof state !== 'object') return false;
+		if (!Array.isArray(state.order) || state.order.length !== length) return false;
+		if (!Number.isInteger(state.next) || state.next < 0 || state.next >= length) return false;
+		const unique = new Set(state.order);
+		if (unique.size !== length) return false;
+		return state.order.every((value) => Number.isInteger(value) && value >= 0 && value < length);
+	};
+
+	if (rotatingCopyElement instanceof HTMLElement && rotatingCopies.length > 0) {
+		const storageKey = 'cineposta:rotating-copy-state:v1';
+		let state = null;
+
+		try {
+			const rawState = localStorage.getItem(storageKey);
+			if (rawState) {
+				state = JSON.parse(rawState);
+			}
+		} catch {
+			state = null;
+		}
+
+		if (!isValidState(state, rotatingCopies.length)) {
+			state = { order: shuffleOrder(rotatingCopies.length), next: 0 };
+		}
+
+		const selected = state.order[state.next];
+		rotatingCopyElement.textContent = rotatingCopies[selected];
+
+		state.next += 1;
+		if (state.next >= rotatingCopies.length) {
+			state = { order: shuffleOrder(rotatingCopies.length), next: 0 };
+		}
+
+		try {
+			localStorage.setItem(storageKey, JSON.stringify(state));
+		} catch {
+			// Ignore storage errors (private mode, blocked storage, etc.).
 		}
 	}
 </script>
