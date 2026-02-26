@@ -258,29 +258,22 @@ img {
 	stroke-linejoin: round;
 }
 
-.movie-card__glyph--hook,
 .movie-card__glyph--thumbs-up {
 	border-color: rgba(49, 179, 109, 0.5);
 	background: rgba(49, 179, 109, 0.12);
 	color: #7fe2ae;
 }
 
-.movie-card__glyph--meh {
+.movie-card__glyph--sad {
 	border-color: rgba(243, 188, 63, 0.52);
 	background: rgba(243, 188, 63, 0.14);
 	color: #f7d481;
 }
 
-.movie-card__glyph--sad {
+.movie-card__glyph--thumbs-down {
 	border-color: rgba(236, 110, 89, 0.5);
 	background: rgba(236, 110, 89, 0.12);
 	color: #f0a295;
-}
-
-.movie-card__glyph--trash {
-	border-color: rgba(168, 85, 247, 0.54);
-	background: rgba(168, 85, 247, 0.14);
-	color: #cda3f7;
 }
 
 .badge {
