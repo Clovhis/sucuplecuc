@@ -13,7 +13,7 @@ export function getStaticPaths() {
 }
 
 const { movie } = Astro.props as { movie: Movie };
-const pageTitle = `${movie.title} (${movie.year}) | La posta cine`;
+const pageTitle = `${movie.title} (${movie.year}) | Cine Posta`;
 const pageDescription = movie.review;
 const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);

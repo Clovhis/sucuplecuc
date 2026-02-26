@@ -85,6 +85,42 @@ img {
 	padding-bottom: 3rem;
 }
 
+.movie-search {
+	display: grid;
+	gap: 0.45rem;
+	margin-bottom: 1rem;
+}
+
+.movie-search__label {
+	font-size: 0.85rem;
+	color: var(--muted);
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.movie-search__input {
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid var(--line);
+	background: rgba(255, 255, 255, 0.03);
+	color: var(--text);
+	padding: 0.62rem 0.8rem;
+	font: inherit;
+}
+
+.movie-search__input::placeholder {
+	color: #8f97a7;
+}
+
+.movie-search__input:focus {
+	outline: 1px solid rgba(255, 143, 91, 0.45);
+	border-color: rgba(255, 143, 91, 0.55);
+}
+
+.movie-search__empty {
+	margin-top: 0.25rem;
+}
+
 .movie-card {
 	background: linear-gradient(180deg, var(--surface-strong) 0%, var(--surface) 100%);
 	border: 1px solid var(--line);

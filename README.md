@@ -1,10 +1,6 @@
-# La posta cine
+# Cine Posta
 
-La posta cine is a minimal Astro + GitHub Pages movie review site focused on short, honest, manually curated reviews.
-
-Live production URL:
-
-- `https://clovhis.github.io/sucuplecuc/`
+Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short, honest, manually curated reviews.
 
 ## Features
 
@@ -229,10 +225,10 @@ Requirements:
 1. Pages source set to `GitHub Actions`
 2. Push to `main`
 
-Astro base config (`astro.config.mjs`) is set for this repository path:
+Astro base config (`astro.config.mjs`) should match your actual deployment:
 
-- `site: "https://clovhis.github.io"`
-- `base: "/sucuplecuc"`
+- `site: "https://your-domain.example"`
+- `base: "/"`
 
 ## Troubleshooting
 

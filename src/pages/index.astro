@@ -4,7 +4,7 @@ import MovieCard from '../components/MovieCard.astro';
 import { getMovies } from '../lib/movies';
 
 const movies = getMovies();
-const pageTitle = 'La posta cine | Resenas cortas sin humo';
+const pageTitle = 'Cine Posta | Resenas cortas sin humo';
 const pageDescription =
 	'Resenas cortas de peliculas en castellano rioplatense. Directo, honesto y curado manualmente.';
 ---
@@ -12,7 +12,7 @@ const pageDescription =
 <BaseLayout title={pageTitle} description={pageDescription}>
 	<header class="site-header container">
 		<div class="site-header__line">
-			<p class="site-header__kicker">La posta cine</p>
+			<p class="site-header__kicker">Cine Posta</p>
 			<p class="site-header__tagline">Reseñas cortas y honestas</p>
 		</div>
 	</header>
@@ -20,12 +20,66 @@ const pageDescription =
 	<main class="container">
 		{
 			movies.length > 0 ? (
-				<section class="movie-grid" aria-label="Peliculas publicadas">
-					{movies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
-				</section>
+				<>
+					<section class="movie-search" data-movie-search-root>
+						<label for="movie-search-input" class="movie-search__label">Buscar pelicula</label>
+						<input
+							id="movie-search-input"
+							class="movie-search__input"
+							type="search"
+							placeholder="Titulo, anio, plataforma o slug..."
+							autocomplete="off"
+							data-movie-search-input
+						/>
+						<p class="message-box movie-search__empty" data-movie-search-empty hidden>
+							No encontramos peliculas con ese criterio.
+						</p>
+					</section>
+
+					<section class="movie-grid" aria-label="Peliculas publicadas" data-movie-search-grid>
+						{movies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
+					</section>
+				</>
 			) : (
 				<p class="message-box">Todavia no hay peliculas cargadas. Agrega la primera entrada manual.</p>
 			)
 		}
 	</main>
 </BaseLayout>
+
+<script>
+	const searchRoot = document.querySelector('[data-movie-search-root]');
+	if (searchRoot instanceof HTMLElement) {
+		const input = searchRoot.querySelector('[data-movie-search-input]');
+		const emptyState = searchRoot.querySelector('[data-movie-search-empty]');
+		const cards = Array.from(document.querySelectorAll('[data-movie-card]'));
+
+		if (input instanceof HTMLInputElement) {
+			const normalize = (value) =>
+				value
+					.toLowerCase()
+					.normalize('NFD')
+					.replace(/[\u0300-\u036f]/g, '')
+					.trim();
+
+			const runFilter = () => {
+				const query = normalize(input.value);
+				let visibleCount = 0;
+
+				for (const card of cards) {
+					if (!(card instanceof HTMLElement)) continue;
+					const searchable = normalize(card.dataset.movieSearch ?? '');
+					const show = query.length === 0 || searchable.includes(query);
+					card.hidden = !show;
+					if (show) visibleCount += 1;
+				}
+
+				if (emptyState instanceof HTMLElement) {
+					emptyState.hidden = visibleCount > 0;
+				}
+			};
+
+			input.addEventListener('input', runFilter);
+		}
+	}
+</script>

@@ -12,9 +12,21 @@ const movieUrl = getMoviePath(movie.slug);
 const posterUrl = getPosterUrl(movie.poster);
 const verdictLabel = getVerdictLabel(movie);
 const verdictClass = getVerdictBadgeClass(movie);
+const searchableText = [
+	movie.title,
+	String(movie.year),
+	movie.releasePlatform ?? '',
+	verdictLabel,
+	movie.slug,
+].join(' ');
 ---
 
-<article class="movie-card fade-up" style={`--item-delay: ${index * 80}ms;`}>
+<article
+	class="movie-card fade-up"
+	style={`--item-delay: ${index * 80}ms;`}
+	data-movie-card
+	data-movie-search={searchableText}
+>
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">
 			<img class="movie-card__poster" src={posterUrl} alt={`Poster de ${movie.title}`} loading="lazy" />
