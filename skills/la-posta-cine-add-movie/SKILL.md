@@ -292,6 +292,25 @@ If not available, provide compare URL:
 
 `https://github.com/Clovhis/sucuplecuc/compare/main...feature/movie-<slug>?expand=1`
 
+## Publish verification (mandatory when user asks "push a main/publica")
+
+When the user explicitly asks to merge/push to `main` and publish, do not stop at "deploy triggered".
+
+Required flow:
+
+1. Merge branch into `main` and push.
+2. Poll GitHub Actions runs for the pushed `head_sha` until terminal status:
+   - `completed + success` -> continue
+   - `completed + failure/cancelled/timed_out` -> report failure with run URL
+3. Fetch `https://www.cineposta.com.ar/` and verify the expected slug(s) from this change exist in HTML.
+4. Only then send final success message.
+
+Minimum evidence to include in final response:
+
+- Actions run URL
+- Actions conclusion (`success` required)
+- Web verification result (slug present on live site)
+
 ## Example usage: Cumbres Borrascosas
 
 User input example:
