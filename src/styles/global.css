@@ -135,7 +135,8 @@ img {
 }
 
 .movie-card__link {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 }
 
@@ -152,8 +153,10 @@ img {
 
 .movie-card__body {
 	padding: 1rem;
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	gap: 0.55rem;
+	flex: 1;
 }
 
 .movie-card__header {
@@ -182,8 +185,14 @@ img {
 	flex-wrap: wrap;
 }
 
+.movie-card__footer {
+	margin-top: auto;
+	display: grid;
+	gap: 0.45rem;
+}
+
 .movie-card__cta {
-	margin: 0.15rem 0 0;
+	margin: 0;
 	color: var(--muted);
 	font-size: 0.8rem;
 	letter-spacing: 0.04em;

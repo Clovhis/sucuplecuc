@@ -41,11 +41,13 @@ const searchableText = [
 				<h2>{movie.title}</h2>
 				<span class={`badge ${verdictClass}`}>{verdictLabel}</span>
 			</div>
-			<div class="movie-card__meta">
-				<p class="movie-card__year">{movie.year}</p>
-				{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
+			<div class="movie-card__footer">
+				<div class="movie-card__meta">
+					<p class="movie-card__year">{movie.year}</p>
+					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
+				</div>
+				<p class="movie-card__cta">Ver ficha</p>
 			</div>
-			<p class="movie-card__cta">Ver ficha</p>
 		</div>
 	</a>
 </article>
