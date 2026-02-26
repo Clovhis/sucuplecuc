@@ -16,6 +16,9 @@ const searchableText = [
 	movie.title,
 	String(movie.year),
 	movie.releasePlatform ?? '',
+	movie.director,
+	movie.productionCompany,
+	...(movie.mainCast ?? []),
 	verdictLabel,
 	movie.slug,
 ].join(' ');

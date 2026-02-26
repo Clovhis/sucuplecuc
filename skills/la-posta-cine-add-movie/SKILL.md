@@ -110,6 +110,9 @@ Find trustworthy metadata:
 - `year`
 - `poster`
 - official YouTube trailer id in original language (store only `trailerYoutubeId`)
+- `director`
+- `mainCast` (at least 2-3 principal actors)
+- `productionCompany`
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
 Trailer policy is strict:
@@ -135,6 +138,9 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "poster": "",
   "screenshots": [],
   "trailerYoutubeId": "",
+  "director": "",
+  "mainCast": [],
+  "productionCompany": "",
   "verdict": "zafa",
   "verdictLabel": "ZAFA",
   "review": "Resena breve en castellano rioplatense",
@@ -248,7 +254,7 @@ Return all of the following:
 
 1. Branch created
 2. New file path
-3. Field summary (`title/year/poster/trailer/verdict/review/isPremiere`)
+3. Field summary (`title/year/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere`)
 4. `npm run build` result
 5. `git diff --name-only` output
 6. Explicit confirmation: `No se modifico ningun archivo fuera del contenido de peliculas`
@@ -261,6 +267,7 @@ Return all of the following:
 - [ ] No modified files outside allowlist
 - [ ] Review <= 5 lines, no spoilers, based only on user feedback
 - [ ] Poster/trailer fields from trustworthy sources
+- [ ] Director/main cast/production company from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `npm run build` passed

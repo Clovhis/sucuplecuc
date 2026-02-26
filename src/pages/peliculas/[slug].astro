@@ -60,6 +60,20 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
 					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
 				</div>
+				<dl class="movie-detail__credits">
+					<div class="movie-detail__credit-item">
+						<dt>Director</dt>
+						<dd>{movie.director}</dd>
+					</div>
+					<div class="movie-detail__credit-item">
+						<dt>Actores principales</dt>
+						<dd>{movie.mainCast.join(', ')}</dd>
+					</div>
+					<div class="movie-detail__credit-item">
+						<dt>Productora</dt>
+						<dd>{movie.productionCompany}</dd>
+					</div>
+				</dl>
 				<p class="movie-detail__review review-clamp">{movie.review}</p>
 				<MovieRating movieSlug={movie.slug} />
 

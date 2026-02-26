@@ -12,6 +12,9 @@ export interface Movie {
 	screenshots?: string[];
 	trailerYoutubeId: string;
 	releasePlatform?: string;
+	director: string;
+	mainCast: string[];
+	productionCompany: string;
 	verdict: MovieVerdict;
 	verdictLabel?: string;
 	review: string;
