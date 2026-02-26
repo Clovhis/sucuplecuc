@@ -12,26 +12,33 @@ const pageDescription =
 <BaseLayout title={pageTitle} description={pageDescription}>
 	<header class="site-header container">
 		<div class="site-header__line">
-			<a class="site-header__brand" href={import.meta.env.BASE_URL} aria-label="Ir al inicio">
-				<img
-					class="site-header__logo"
-					src={`${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`}
-					alt="Cine Posta"
-				/>
-			</a>
-			<a
-				class="site-header__donate"
-				href="https://cafecito.app/cineposta"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Invitá un cafecito
-			</a>
+			<div class="site-header__brand-column">
+				<a class="site-header__brand" href={import.meta.env.BASE_URL} aria-label="Ir al inicio">
+					<img
+						class="site-header__logo"
+						src={`${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`}
+						alt="Cine Posta"
+					/>
+				</a>
+				<div class="site-header__copy">
+					<p class="site-header__tagline">Reseñas super cortas y honestas</p>
+					<p class="site-header__rotating-copy" data-rotating-copy>
+						Sin humo, sin metaforas raras, sin chamuyo.
+					</p>
+				</div>
+			</div>
+			<div class="site-header__support">
+				<a
+					class="site-header__donate"
+					href="https://cafecito.app/cineposta"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Invitá un cafecito
+				</a>
+				<p class="site-header__donate-copy" data-donate-copy>No seas raton.</p>
+			</div>
 		</div>
-		<p class="site-header__tagline">Reseñas super cortas y honestas</p>
-		<p class="site-header__rotating-copy" data-rotating-copy>
-			Sin humo, sin metaforas raras, sin chamuyo.
-		</p>
 	</header>
 
 	<main class="container">
@@ -103,6 +110,7 @@ const pageDescription =
 
 <script>
 	const rotatingCopyElement = document.querySelector('[data-rotating-copy]');
+	const donateCopyElement = document.querySelector('[data-donate-copy]');
 
 	const rotatingCopies = [
 		'Sin humo, sin metaforas raras, sin chamuyo.',
@@ -157,6 +165,59 @@ const pageDescription =
 		'Resena corta, decision inteligente.'
 	];
 
+	const donateCopies = [
+		'No seas raton.',
+		'Asi pago el hosting.',
+		'Un cafecito y sale otra resena.',
+		'Con esto mantenemos el motor prendido.',
+		'Una monedita y seguimos meta cine.',
+		'Donar tambien cuenta como acto artistico.',
+		'Un cafecito y no lloro mirando la factura.',
+		'Si te sirvio, tiranos una ficha.',
+		'La web no se paga con aplausos.',
+		'Un cafecito y seguimos sin publicidad falopa.',
+		'Apoya el proyecto y ganale al algoritmo.',
+		'Con tu ayuda no cerramos por balance.',
+		'Pone uno y te lo agradece todo el equipo (yo).',
+		'Un cafecito y seguimos full servicio.',
+		'No te digo socio, pero casi.',
+		'Tu cafecito financia criterio.',
+		'Acá no vendemos humo, pero si aceptamos cafes.',
+		'Un aporte y seguimos spoileando menos.',
+		'Pone un cafecito, dale, no duele.',
+		'Esto funciona gracias a gente piola como vos.',
+		'Un cafecito = una sonrisa del admin.',
+		'Cada aporte evita una crisis existencial.',
+		'Apoya el caos organizado de este sitio.',
+		'Con un cafecito se vuelve mas rapida la critica.',
+		'Tu ayuda mantiene viva la data posta.',
+		'No seas timido, se recibe carino en pesos.',
+		'Un cafecito y prometemos seguir sinceros.',
+		'Invita uno y desbloqueas karma cinefilo.',
+		'Ayuda minima, alegria maxima.',
+		'Donar hoy, reseñas manana.',
+		'Tu aporte va directo al bien comun cinefilo.',
+		'Un cafecito para que no nos gane la inflacion.',
+		'Si te ahorramos una mala peli, se festeja con cafe.',
+		'Pone un cafecito y seguimos en linea.',
+		'Con tu aporte no cobramos entrada.',
+		'Un cafecito y seguimos bancando el proyecto.',
+		'No pedimos mucho, solo un empujoncito.',
+		'Donar es opcional, pero queda fachero.',
+		'Apoya esta noble causa anti chamuyo.',
+		'Con un cafecito hacemos magia humilde.',
+		'Gracias por bancar este rincon cinéfilo.',
+		'Invita un cafe y te queremos un poquito mas.',
+		'Tu aporte paga bytes y paciencia.',
+		'Un cafecito para que no se caiga nada.',
+		'Colabora y seguimos recomendando joyitas.',
+		'Sin tu ayuda, el server se pone dramatico.',
+		'Un cafecito y cerramos trato.',
+		'Pone uno y quedamos a mano con el universo.',
+		'Tu cafe sostiene el aguante digital.',
+		'Dona tranquilo: no mordemos.'
+	];
+
 	const shuffleOrder = (length) => {
 		const order = Array.from({ length }, (_, index) => index);
 		for (let index = order.length - 1; index > 0; index -= 1) {
@@ -175,8 +236,9 @@ const pageDescription =
 		return state.order.every((value) => Number.isInteger(value) && value >= 0 && value < length);
 	};
 
-	if (rotatingCopyElement instanceof HTMLElement && rotatingCopies.length > 0) {
-		const storageKey = 'cineposta:rotating-copy-state:v1';
+	const applyRotatingCopy = (element, copies, storageKey) => {
+		if (!(element instanceof HTMLElement) || copies.length === 0) return;
+
 		let state = null;
 
 		try {
@@ -188,16 +250,16 @@ const pageDescription =
 			state = null;
 		}
 
-		if (!isValidState(state, rotatingCopies.length)) {
-			state = { order: shuffleOrder(rotatingCopies.length), next: 0 };
+		if (!isValidState(state, copies.length)) {
+			state = { order: shuffleOrder(copies.length), next: 0 };
 		}
 
 		const selected = state.order[state.next];
-		rotatingCopyElement.textContent = rotatingCopies[selected];
+		element.textContent = copies[selected];
 
 		state.next += 1;
-		if (state.next >= rotatingCopies.length) {
-			state = { order: shuffleOrder(rotatingCopies.length), next: 0 };
+		if (state.next >= copies.length) {
+			state = { order: shuffleOrder(copies.length), next: 0 };
 		}
 
 		try {
@@ -205,5 +267,8 @@ const pageDescription =
 		} catch {
 			// Ignore storage errors (private mode, blocked storage, etc.).
 		}
-	}
+	};
+
+	applyRotatingCopy(rotatingCopyElement, rotatingCopies, 'cineposta:rotating-copy-state:v1');
+	applyRotatingCopy(donateCopyElement, donateCopies, 'cineposta:donate-copy-state:v1');
 </script>
