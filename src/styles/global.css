@@ -318,10 +318,32 @@ img {
 	line-height: 1.2;
 }
 
+.movie-detail__review-card {
+	display: grid;
+	gap: 0.45rem;
+	padding: 0.9rem 1rem;
+	border: 1px solid rgba(255, 143, 91, 0.35);
+	border-left: 4px solid var(--accent-soft);
+	border-radius: 12px;
+	background:
+		linear-gradient(180deg, rgba(255, 143, 91, 0.08), rgba(255, 143, 91, 0.02)),
+		rgba(255, 255, 255, 0.02);
+}
+
+.movie-detail__review-kicker {
+	margin: 0;
+	font-size: 0.78rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--accent-soft);
+	font-family: 'IBM Plex Mono', monospace;
+}
+
 .movie-detail__review {
 	margin: 0;
-	color: #d8dce3;
-	font-size: 1rem;
+	color: #eef2f8;
+	font-size: 1.04rem;
+	line-height: 1.55;
 }
 
 .movie-detail__credits {

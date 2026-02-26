@@ -82,7 +82,10 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 						<dd>{movie.productionCompany}</dd>
 					</div>
 				</dl>
-				<p class="movie-detail__review review-clamp">{movie.review}</p>
+				<section class="movie-detail__review-card" aria-label="Reseña honesta">
+					<p class="movie-detail__review-kicker">Reseña honesta</p>
+					<p class="movie-detail__review">{movie.review}</p>
+				</section>
 				<MovieRating movieSlug={movie.slug} />
 
 				{trailerEmbedUrl ? (
