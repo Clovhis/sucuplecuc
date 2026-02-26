@@ -506,8 +506,20 @@ img {
 
 @media (max-width: 900px) {
 	.site-header__line {
-		align-items: flex-start;
-		flex-direction: column;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.65rem;
+	}
+
+	.site-header__logo {
+		width: clamp(145px, 46vw, 230px);
+	}
+
+	.site-header__donate {
+		padding: 0.38rem 0.62rem;
+		font-size: 0.68rem;
+		letter-spacing: 0.02em;
 	}
 
 	.movie-detail {
