@@ -12,9 +12,23 @@ const pageDescription =
 <BaseLayout title={pageTitle} description={pageDescription}>
 	<header class="site-header container">
 		<div class="site-header__line">
-			<p class="site-header__kicker">Cine Posta</p>
-			<p class="site-header__tagline">Reseñas cortas y honestas</p>
+			<a class="site-header__brand" href={import.meta.env.BASE_URL} aria-label="Ir al inicio">
+				<img
+					class="site-header__logo"
+					src={`${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`}
+					alt="Cine Posta"
+				/>
+			</a>
+			<a
+				class="site-header__donate"
+				href="https://cafecito.app/cineposta"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Invitá un cafecito
+			</a>
 		</div>
+		<p class="site-header__tagline">Reseñas cortas y honestas</p>
 	</header>
 
 	<main class="container">
