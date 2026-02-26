@@ -221,7 +221,9 @@ img {
 .movie-card__footer {
 	margin-top: auto;
 	display: grid;
-	gap: 0.45rem;
+	grid-template-columns: minmax(0, 1fr) auto;
+	grid-template-rows: auto auto;
+	gap: 0.45rem 0.7rem;
 }
 
 .movie-card__cta {
@@ -230,6 +232,55 @@ img {
 	font-size: 0.8rem;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
+}
+
+.movie-card__glyph {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	width: 54px;
+	height: 54px;
+	border-radius: 12px;
+	border: 1px solid rgba(147, 160, 184, 0.4);
+	background: rgba(147, 160, 184, 0.08);
+	color: #9ea9bf;
+	display: grid;
+	place-items: center;
+	align-self: end;
+}
+
+.movie-card__glyph svg {
+	width: 34px;
+	height: 34px;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.9;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.movie-card__glyph--hook,
+.movie-card__glyph--thumbs-up {
+	border-color: rgba(49, 179, 109, 0.5);
+	background: rgba(49, 179, 109, 0.12);
+	color: #7fe2ae;
+}
+
+.movie-card__glyph--meh {
+	border-color: rgba(243, 188, 63, 0.52);
+	background: rgba(243, 188, 63, 0.14);
+	color: #f7d481;
+}
+
+.movie-card__glyph--sad {
+	border-color: rgba(236, 110, 89, 0.5);
+	background: rgba(236, 110, 89, 0.12);
+	color: #f0a295;
+}
+
+.movie-card__glyph--trash {
+	border-color: rgba(168, 85, 247, 0.54);
+	background: rgba(168, 85, 247, 0.14);
+	color: #cda3f7;
 }
 
 .badge {
