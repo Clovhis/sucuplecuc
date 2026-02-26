@@ -13,14 +13,14 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictLabel = getVerdictLabel(movie);
 const verdictClass = getVerdictBadgeClass(movie);
 
-type VerdictGlyph = 'thumbs-up' | 'sad' | 'thumbs-down';
+type VerdictGlyph = 'thumbs-up' | 'meh' | 'thumbs-down';
 
 function getVerdictGlyph(badgeClass: string): VerdictGlyph {
 	if (badgeClass === 'badge--recomendada') {
 		return 'thumbs-up';
 	}
 	if (badgeClass === 'badge--zafa') {
-		return 'sad';
+		return 'meh';
 	}
 	return 'thumbs-down';
 }
@@ -72,13 +72,11 @@ const searchableText = [
 						)
 					}
 					{
-						verdictGlyph === 'sad' && (
+						verdictGlyph === 'meh' && (
 							<svg viewBox="0 0 24 24" role="presentation">
-								<circle cx="12" cy="6.4" r="2.4" />
-								<path d="M12 8.8v5.4" />
-								<path d="M8.2 12.4l3.8 2.1 3.8-2.1" />
-								<path d="M9 20v-3.1a3 3 0 0 1 6 0V20" />
-								<path d="M7 9.4l-1.1.8" />
+								<circle cx="12" cy="12" r="8.5" />
+								<path d="M9 10h.01M15 10h.01" />
+								<path d="M9 15h6" />
 							</svg>
 						)
 					}
