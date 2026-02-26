@@ -9,7 +9,7 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 - Embedded YouTube trailer (via `trailerYoutubeId`)
 - Verdict badges + optional colloquial `verdictLabel`
 - Platform label (`releasePlatform`: Cinema, Netflix, etc.)
-- Technical credits in detail page (`director`, `mainCast`, `productionCompany`)
+- Technical metadata in detail page (`originalTitle`, `category`, `director`, `mainCast`, `productionCompany`)
 - Optional screenshot gallery (2 images in detail page left column)
 - Community star rating (1..5) backed by Supabase, no login
 
@@ -62,7 +62,9 @@ Current schema:
 {
 	"slug": "movie-title-2026",
 	"title": "Movie Title",
+	"originalTitle": "Original title",
 	"year": 2026,
+	"category": "Action|Romance|Drama|Terror|Thriller|Sci-Fi",
 	"poster": "https://... or /posters/local.svg",
 	"screenshots": ["https://.../shot-1.jpg", "https://.../shot-2.jpg"],
 	"trailerYoutubeId": "abc123",
@@ -84,7 +86,7 @@ Current schema:
   - if at least 2 URLs exist, detail page shows a two-shot gallery
   - otherwise poster fallback is used
 - `releasePlatform` is optional but recommended.
-- `director`, `mainCast`, and `productionCompany` are required for publishing.
+- `originalTitle`, `category`, `director`, `mainCast`, and `productionCompany` are required for publishing.
 
 ## Community rating system (Supabase)
 

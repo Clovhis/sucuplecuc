@@ -14,7 +14,9 @@ const verdictLabel = getVerdictLabel(movie);
 const verdictClass = getVerdictBadgeClass(movie);
 const searchableText = [
 	movie.title,
+	movie.originalTitle,
 	String(movie.year),
+	movie.category,
 	movie.releasePlatform ?? '',
 	movie.director,
 	movie.productionCompany,

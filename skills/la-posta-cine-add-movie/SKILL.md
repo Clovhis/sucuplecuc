@@ -107,7 +107,9 @@ git push -u origin feature/movie-<slug>
 Find trustworthy metadata:
 
 - `title`
+- `originalTitle`
 - `year`
+- `category`
 - `poster`
 - official YouTube trailer id in original language (store only `trailerYoutubeId`)
 - `director`
@@ -134,7 +136,9 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
 {
   "slug": "movie-slug-2026",
   "title": "Movie Title",
+  "originalTitle": "Original title",
   "year": 2026,
+  "category": "Drama",
   "poster": "",
   "screenshots": [],
   "trailerYoutubeId": "",
@@ -191,7 +195,7 @@ If user feedback is too short, keep review concise and explicit (for example `Pr
 
 Map user language to internal verdict:
 
-- `zafa`, `safa`, `esta ok` -> `verdict: zafa`, `verdictLabel: ZAFA`
+- `zafa`, `safa`, `esta ok`, `zafarola` -> `verdict: zafa`, `verdictLabel: ZAFA` (or `ZAFAROLA` if user uses that exact wording)
 - `recomendada`, `muy buena`, `me encanto` -> `verdict: recomendada`, `verdictLabel: RECOMENDADA`
 - `malisima`, `una verga`, `es una poronga`, `no la recomiendo` ->
   `verdict: no_recomendada`, `verdictLabel`: user phrase if clear, else default `MALISIMA`
@@ -254,7 +258,7 @@ Return all of the following:
 
 1. Branch created
 2. New file path
-3. Field summary (`title/year/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere`)
+3. Field summary (`title/originalTitle/year/category/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere`)
 4. `npm run build` result
 5. `git diff --name-only` output
 6. Explicit confirmation: `No se modifico ningun archivo fuera del contenido de peliculas`
@@ -267,6 +271,7 @@ Return all of the following:
 - [ ] No modified files outside allowlist
 - [ ] Review <= 5 lines, no spoilers, based only on user feedback
 - [ ] Poster/trailer fields from trustworthy sources
+- [ ] Original title and category from trustworthy sources
 - [ ] Director/main cast/production company from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
