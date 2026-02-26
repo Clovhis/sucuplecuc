@@ -315,6 +315,34 @@ img {
 	font-size: 1rem;
 }
 
+.movie-detail__credits {
+	margin: 0;
+	display: grid;
+	gap: 0.65rem;
+	padding: 0.85rem;
+	border: 1px solid var(--line);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.movie-detail__credit-item {
+	display: grid;
+	gap: 0.2rem;
+}
+
+.movie-detail__credit-item dt {
+	margin: 0;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--muted);
+}
+
+.movie-detail__credit-item dd {
+	margin: 0;
+	color: #dde3ef;
+}
+
 .rating-card {
 	border: 1px solid var(--line);
 	border-radius: 12px;

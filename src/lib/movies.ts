@@ -39,6 +39,23 @@ function validateMovies(movies: Movie[]): void {
 			throw new Error(`Duplicate movie slug detected: "${slug}".`);
 		}
 		seen.add(slug);
+
+		if (!movie.director?.trim()) {
+			throw new Error(`Movie "${slug}" is missing director.`);
+		}
+		if (!movie.productionCompany?.trim()) {
+			throw new Error(`Movie "${slug}" is missing productionCompany.`);
+		}
+		if (!Array.isArray(movie.mainCast)) {
+			throw new Error(`Movie "${slug}" has invalid mainCast.`);
+		}
+
+		const castMembers = movie.mainCast
+			.map((actor) => (typeof actor === 'string' ? actor.trim() : ''))
+			.filter(Boolean);
+		if (castMembers.length === 0) {
+			throw new Error(`Movie "${slug}" is missing mainCast entries.`);
+		}
 	}
 }
 
