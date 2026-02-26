@@ -7,7 +7,9 @@ export type MovieVerdict =
 export interface Movie {
 	slug: string;
 	title: string;
+	originalTitle: string;
 	year: number;
+	category: string;
 	poster: string;
 	screenshots?: string[];
 	trailerYoutubeId: string;

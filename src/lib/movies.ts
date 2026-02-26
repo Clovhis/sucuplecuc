@@ -40,6 +40,12 @@ function validateMovies(movies: Movie[]): void {
 		}
 		seen.add(slug);
 
+		if (!movie.originalTitle?.trim()) {
+			throw new Error(`Movie "${slug}" is missing originalTitle.`);
+		}
+		if (!movie.category?.trim()) {
+			throw new Error(`Movie "${slug}" is missing category.`);
+		}
 		if (!movie.director?.trim()) {
 			throw new Error(`Movie "${slug}" is missing director.`);
 		}
