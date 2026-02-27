@@ -125,7 +125,9 @@ External review enrichment policy (mandatory):
   1. `Variety`, `The Hollywood Reporter`, `IndieWire`, `RogerEbert.com`
   2. `Rotten Tomatoes` (critics consensus/review snippets) or `Metacritic` (critic excerpts/scores)
   3. `IMDb` (user/critic rating and/or review snippets) as fallback when no formal critic review is available
-- Extract only verifiable points (for example: general reception, pacing comments, acting comments, critic/audience score).
+- Extract only verifiable points (for example: general reception, pacing comments, acting comments, critics consensus).
+- Use scores/signals as internal support, but write them in natural language for the review.
+- Do not dump raw numeric strings in the review body (examples to avoid: `59/100`, `6.8/10`, `Numeros: ...`) unless the user explicitly asks for numeric detail.
 - Do not fabricate criticism details that are not present in the consulted source.
 - If no source from the list can be verified, stop and ask the user for a reference link before committing.
 Trailer policy is strict:
@@ -206,12 +208,18 @@ Write `review` by combining user feedback + external review enrichment:
 
 - Castellano rioplatense
 - Honest, colloquial tone
-- Max 5 lines
+- Max 5 lines when user provides clear feedback
+- If user provides little/no feedback, you may expand to 6-8 lines to add useful context from verified sources
 - No spoilers
 - No invented opinions
-- Include at least one concrete detail grounded in the external source (for example score/reception cue) when available.
+- Include at least one concrete detail grounded in the external source (for example reception cue, critic consensus, repeated strengths/weaknesses).
+- Translate critic reception into rioplatense wording (for example: `funciona muy bien`, `quedo medio pelo`, `la destrozaron bastante`) instead of exposing raw score formats.
+- Never start the review with labels like `Numeros:` or any score dump template.
+- Every movie review must be unique in wording and structure.
+- Avoid repeated openings across a batch (for example reusing `En la critica especializada...` in multiple entries).
+- In multi-movie batches, vary sentence rhythm and vocabulary so entries do not read like a template.
 
-If user feedback is too short, keep review concise and explicit, using the external source as factual support instead of inventing details.
+If user feedback is too short, prioritize clear rioplatense interpretation of verified critic reception over listing metrics.
 
 ## Verdict mapping
 
@@ -292,7 +300,8 @@ Return all of the following:
 - [ ] Branch created from updated `main`
 - [ ] Exactly one new movie file added (unless user explicitly authorized otherwise)
 - [ ] No modified files outside allowlist
-- [ ] Review <= 5 lines, no spoilers, based only on user feedback
+- [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
+- [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
 - [ ] Poster/trailer fields from trustworthy sources
 - [ ] Original title and category from trustworthy sources
 - [ ] Director/main cast/production company from trustworthy sources
@@ -346,7 +355,7 @@ Expected behavior summary:
 1. Create branch `feature/movie-cumbres-borrascosas-1939`
 2. Fetch metadata from trustworthy sources
 3. Create `src/data/movies/cumbres-borrascosas-1939.json`
-4. Write rioplatense review (<=5 lines) based only on that feedback
+4. Write rioplatense review (<=5 lines if user feedback is clear), translating critic reception to words (no raw score dump)
 5. Set `verdict: zafa`, `verdictLabel: ZAFA`
 6. Run `npm run build`, show `git diff --name-only`, commit, push
 7. Return pending fields if poster/trailer cannot be confirmed reliably
