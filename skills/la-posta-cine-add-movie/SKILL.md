@@ -230,6 +230,9 @@ Write `review` by combining user feedback + external review enrichment:
 - Every movie review must be unique in wording and structure.
 - Avoid repeated openings across a batch (for example reusing `En la critica especializada...` in multiple entries).
 - In multi-movie batches, vary sentence rhythm and vocabulary so entries do not read like a template.
+- Do not reuse stock closing lines across different movies in the same batch (for example repeating `Queda en ese punto medio que no molesta.`).
+- In batch mode, run a final anti-duplication pass at sentence level: no full sentence may appear verbatim in more than one review.
+- If a review sounds too generic, rewrite it with movie-specific angle (tone, pacing, performances, direction, genre execution) without spoilers.
 - Enforce proper Spanish orthography in review text: use `ñ` and accent marks when applicable (for example `reseñas`, not `resenas`).
 - Do not degrade Spanish words to ASCII-only variants in user-facing review copy.
 
