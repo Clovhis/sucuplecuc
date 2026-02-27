@@ -218,6 +218,8 @@ Write `review` by combining user feedback + external review enrichment:
 - Every movie review must be unique in wording and structure.
 - Avoid repeated openings across a batch (for example reusing `En la critica especializada...` in multiple entries).
 - In multi-movie batches, vary sentence rhythm and vocabulary so entries do not read like a template.
+- Enforce proper Spanish orthography in review text: use `ñ` and accent marks when applicable (for example `reseñas`, not `resenas`).
+- Do not degrade Spanish words to ASCII-only variants in user-facing review copy.
 
 If user feedback is too short, prioritize clear rioplatense interpretation of verified critic reception over listing metrics.
 
@@ -225,13 +227,26 @@ If user feedback is too short, prioritize clear rioplatense interpretation of ve
 
 Map user language to internal verdict:
 
-- `zafa`, `safa`, `esta ok`, `zafarola` -> `verdict: zafa`, `verdictLabel: ZAFA` (or `ZAFAROLA` if user uses that exact wording)
-- `recomendada`, `muy buena`, `me encanto`, `entretenida` -> `verdict: recomendada`, `verdictLabel: RECOMENDADA` (si el usuario dice `entretenida`, usar `verdictLabel: ENTRETENIDA`)
+- `zafa`, `safa`, `esta ok`, `zafarola` -> `verdict: zafa`
+- `recomendada`, `muy buena`, `me encanto`, `entretenida` -> `verdict: recomendada`
 - `malisima`, `una verga`, `es una poronga`, `no la recomiendo` ->
-  `verdict: no_recomendada`, `verdictLabel`: user phrase if clear, else default `MALISIMA`
+  `verdict: no_recomendada`
 
 Keep internal `verdict` stable.
 Use `verdictLabel` for colloquial display override.
+
+`verdictLabel` style policy (mandatory):
+
+- Do not lock labels to a single default per verdict (avoid always using only `RECOMENDADA`, `ZAFA`, `MALISIMA`).
+- If user provides an explicit label/phrase, preserve it as `verdictLabel` (normalized only for casing/spacing).
+- If user does not provide label, infer one from critic reception intensity and tone.
+- Rotate labels across multi-movie batches so they do not repeat mechanically.
+- Keep labels consistent with `verdict`:
+  - `recomendada`: examples `ESTA MUY BIEN`, `BRILLANTE`, `ASOMBROSA`, `MUY BUENA`, `PELICULON`, `SÓLIDA`
+  - `zafa`: examples `CUMPLE`, `PASABLE`, `MEDIA PELO`, `ZAFA TRANQUI`, `ENTRETENIDA`
+  - `no_recomendada`: examples `UNA VERGA`, `ABURRIDA`, `PLOMAZO`, `FLOJISIMA`, `NO VA`
+- Prefer uppercase display labels unless user explicitly asks for another style.
+- Never assign a positive-sounding label to `no_recomendada` (or vice versa).
 
 ## Premiere badge rules
 
