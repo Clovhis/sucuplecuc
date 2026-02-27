@@ -206,7 +206,7 @@ If user feedback is too short, keep review concise and explicit (for example `Pr
 Map user language to internal verdict:
 
 - `zafa`, `safa`, `esta ok`, `zafarola` -> `verdict: zafa`, `verdictLabel: ZAFA` (or `ZAFAROLA` if user uses that exact wording)
-- `recomendada`, `muy buena`, `me encanto` -> `verdict: recomendada`, `verdictLabel: RECOMENDADA`
+- `recomendada`, `muy buena`, `me encanto`, `entretenida` -> `verdict: recomendada`, `verdictLabel: RECOMENDADA` (si el usuario dice `entretenida`, usar `verdictLabel: ENTRETENIDA`)
 - `malisima`, `una verga`, `es una poronga`, `no la recomiendo` ->
   `verdict: no_recomendada`, `verdictLabel`: user phrase if clear, else default `MALISIMA`
 
