@@ -145,10 +145,22 @@ Platform policy for Argentina (mandatory):
 
 - Always resolve `releasePlatform` for Argentine audience (`AR`) using trustworthy availability sources (prefer JustWatch `ar` pages and/or official platform pages).
 - Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`.
-- If AR has subscription streaming (`FLATRATE`) in one of those allowed labels, use that exact allowed label.
-- If AR has streaming on a platform outside that allowlist (for example `MUBI` or others), force `releasePlatform: "Stremio"`.
-- If AR availability is cinema-only, set `releasePlatform: "Cine"`.
-- If there is no confirmed AR availability, or only foreign/off-region offers, set `releasePlatform: "Stremio"` as fallback.
+- Mandatory resolver flow (do not skip):
+  1. Search availability for exact movie + year in AR.
+  2. Read only AR offers and identify `FLATRATE` subscription availability first.
+  3. Map provider name to allowed labels:
+     - `Max` or `HBO Max` -> `HBO Max`
+     - `Disney Plus` or `Disney+` -> `Disney Plus`
+     - `Amazon Prime Video` or `Prime Video` -> `Prime Video`
+     - `Apple TV Plus` or `Apple TV+` -> `Apple TV`
+     - `Netflix` -> `Netflix`
+  4. If at least one mapped `FLATRATE` provider exists, use that mapped label (never `Stremio` in this case).
+  5. If there is no mapped `FLATRATE` but AR indicates cinema-only availability, set `releasePlatform: "Cine"`.
+  6. If AR availability exists only in providers outside allowlist, or AR has no confirmed availability, set `releasePlatform: "Stremio"`.
+- Forbidden shortcuts:
+  - Do not assign `Stremio` by default without AR lookup attempt.
+  - Do not copy platform from another movie without validating title/year.
+  - Do not use non-AR market data to override AR result.
 - Never leave `releasePlatform` empty.
 
 ## Content schema
@@ -309,6 +321,7 @@ Return all of the following:
 6. Explicit confirmation: `No se modifico ningun archivo fuera del contenido de peliculas`
 7. Optional PR link or exact command to open PR
 8. External review source used (site + URL) and what was extracted from it
+9. Platform source used for AR (site + URL) and why chosen `releasePlatform` matches resolver flow
 
 ## Validation checklist
 
@@ -322,6 +335,7 @@ Return all of the following:
 - [ ] Director/main cast/production company from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
 - [ ] External review enrichment from specialized North American source (or explicit fallback/user-provided link)
+- [ ] `releasePlatform` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `npm run build` passed
 - [ ] Diff shown before commit
