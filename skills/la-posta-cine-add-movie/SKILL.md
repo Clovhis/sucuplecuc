@@ -117,6 +117,17 @@ Find trustworthy metadata:
 - `productionCompany`
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
+
+External review enrichment policy (mandatory):
+
+- For every new movie, fetch at least one opinion/review signal from a specialized North American movie site.
+- Preferred sources order:
+  1. `Variety`, `The Hollywood Reporter`, `IndieWire`, `RogerEbert.com`
+  2. `Rotten Tomatoes` (critics consensus/review snippets) or `Metacritic` (critic excerpts/scores)
+  3. `IMDb` (user/critic rating and/or review snippets) as fallback when no formal critic review is available
+- Extract only verifiable points (for example: general reception, pacing comments, acting comments, critic/audience score).
+- Do not fabricate criticism details that are not present in the consulted source.
+- If no source from the list can be verified, stop and ask the user for a reference link before committing.
 Trailer policy is strict:
 
 - Always set `trailerYoutubeId` for the movie entry.
@@ -191,15 +202,16 @@ Do not overwrite existing entries without explicit user authorization.
 
 ## Editorial rules (mandatory)
 
-Write `review` from user feedback only:
+Write `review` by combining user feedback + external review enrichment:
 
 - Castellano rioplatense
 - Honest, colloquial tone
 - Max 5 lines
 - No spoilers
 - No invented opinions
+- Include at least one concrete detail grounded in the external source (for example score/reception cue) when available.
 
-If user feedback is too short, keep review concise and explicit (for example `Primera impresion`) instead of inventing details.
+If user feedback is too short, keep review concise and explicit, using the external source as factual support instead of inventing details.
 
 ## Verdict mapping
 
@@ -273,6 +285,7 @@ Return all of the following:
 5. `git diff --name-only` output
 6. Explicit confirmation: `No se modifico ningun archivo fuera del contenido de peliculas`
 7. Optional PR link or exact command to open PR
+8. External review source used (site + URL) and what was extracted from it
 
 ## Validation checklist
 
@@ -284,6 +297,7 @@ Return all of the following:
 - [ ] Original title and category from trustworthy sources
 - [ ] Director/main cast/production company from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
+- [ ] External review enrichment from specialized North American source (or explicit fallback/user-provided link)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `npm run build` passed
 - [ ] Diff shown before commit
