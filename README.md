@@ -10,6 +10,7 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 - Verdict badges + optional colloquial `verdictLabel`
 - Platform label (`releasePlatform`: Cine, Netflix, HBO Max, Apple TV, Prime Video, Disney Plus, Stremio)
 - Technical metadata in detail page (`originalTitle`, `category`, `director`, `mainCast`, `productionCompany`)
+- Awards section in detail page (Oscar / Grammy / Cannes winners with category + recipient)
 - Optional screenshot gallery (2 images in detail page left column)
 - Community star rating (1..5) backed by Supabase, no login
 
@@ -74,6 +75,16 @@ Current schema:
 	"productionCompany": "Studio / Production Company",
 	"verdict": "recomendada|zafa|no_recomendada|basura_atomica",
 	"verdictLabel": "Optional display override",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar|grammy|cannes",
+				"category": "Mejor película",
+				"recipient": "Winner name / team / country",
+				"year": 2025
+			}
+		]
+	},
 	"review": "Short review (max ~5 lines)"
 }
 ```
@@ -85,6 +96,9 @@ Current schema:
 - `screenshots` is optional:
   - if at least 2 URLs exist, detail page shows a two-shot gallery
   - otherwise poster fallback is used
+- `awards` is optional:
+  - if at least 1 win exists, detail page renders the awards block
+  - if no wins exist, omit `awards` from the JSON entry
 - `releasePlatform` is optional but recommended.
 - `originalTitle`, `category`, `director`, `mainCast`, and `productionCompany` are required for publishing.
 
