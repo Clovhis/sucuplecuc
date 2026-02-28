@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-02-28. Fuente: src/data/movies/*.json
 
-Total de peliculas: 139
+Total de peliculas: 145
 
 | Año | Titulo | Slug | Plataforma |
 | --- | --- | --- | --- |
@@ -80,6 +80,7 @@ Total de peliculas: 139
 | 2024 | Twisters | twisters-2024 | Netflix |
 | 2024 | Wicked | wicked-2024 | HBO Max |
 | 2024 | Wolfs | wolfs-2024 | Apple TV |
+| 2023 | Air | air-2023 | Prime Video |
 | 2023 | Ant-Man and the Wasp: Quantumania | ant-man-and-the-wasp-quantumania-2023 | Disney Plus |
 | 2023 | Aquaman and the Lost Kingdom | aquaman-and-the-lost-kingdom-2023 | Netflix |
 | 2023 | Barbie | barbie-2023 | HBO Max |
@@ -87,17 +88,22 @@ Total de peliculas: 139
 | 2023 | Indiana Jones and the Dial of Destiny | indiana-jones-and-the-dial-of-destiny-2023 | Disney Plus |
 | 2023 | John Wick: Chapter 4 | john-wick-chapter-4-2023 | Stremio |
 | 2023 | Killers of the Flower Moon | killers-of-the-flower-moon-2023 | Apple TV |
+| 2023 | Maestro | maestro-2023 | Netflix |
 | 2023 | Mission: Impossible - Dead Reckoning Part One | mission-impossible-dead-reckoning-part-one-2023 | Stremio |
 | 2023 | Napoleon | napoleon-2023 | Apple TV |
 | 2023 | Oppenheimer | oppenheimer-2023 | Netflix |
 | 2023 | Poor Things | poor-things-2023 | Prime Video |
+| 2023 | Saltburn | saltburn-2023 | Prime Video |
 | 2023 | Spider-Man: Across the Spider-Verse | spider-man-across-the-spider-verse-2023 | Stremio |
+| 2023 | Tetris | tetris-2023 | Apple TV |
 | 2023 | The Flash | the-flash-2023 | HBO Max |
 | 2023 | The Holdovers | the-holdovers-2023 | Prime Video |
+| 2023 | The Killer | the-killer-2023 | Netflix |
 | 2023 | The Marvels | the-marvels-2023 | Disney Plus |
 | 2023 | The Super Mario Bros. Movie | the-super-mario-bros-movie-2023 | Netflix |
 | 2023 | The Zone of Interest | the-zone-of-interest-2023 | Prime Video |
 | 2023 | Wish | wish-2023 | Disney Plus |
+| 2023 | Wonka | wonka-2023 | HBO Max |
 | 2022 | All Quiet on the Western Front | all-quiet-on-the-western-front-2022 | Netflix |
 | 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Disney Plus |
 | 2022 | Black Adam | black-adam-2022 | HBO Max |
