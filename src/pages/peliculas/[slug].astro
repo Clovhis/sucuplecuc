@@ -25,6 +25,41 @@ const hasScreenshotGallery = screenshotUrls.length >= 2;
 const trailerEmbedUrl = movie.trailerYoutubeId
 	? `https://www.youtube.com/embed/${movie.trailerYoutubeId}`
 	: '';
+const awardMeta = {
+	oscar: { label: 'Oscar', icon: '🏆' },
+	grammy: { label: 'Grammy', icon: '🎵' },
+	cannes: { label: 'Cannes', icon: '🌴' },
+} as const;
+
+const groupedAwards = (['oscar', 'grammy', 'cannes'] as const)
+	.map((awardType) => {
+		const wins = (movie.awards?.wins ?? []).filter((win) => win.award === awardType);
+		return {
+			awardType,
+			wins,
+			count: wins.length,
+			label: awardMeta[awardType].label,
+			icon: awardMeta[awardType].icon,
+		};
+	})
+	.filter((group) => group.count > 0);
+
+const awardCategories = groupedAwards.flatMap((group) =>
+	group.wins.map((win) => ({
+		awardType: group.awardType,
+		label: group.label,
+		category: win.category,
+		recipient: win.recipient,
+		isBestPicture:
+			group.awardType === 'oscar' &&
+			win.category
+				.normalize('NFD')
+				.replace(/[\u0300-\u036f]/g, '')
+				.toLowerCase()
+				.trim() === 'mejor pelicula',
+		year: win.year,
+	})),
+);
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} image={posterUrl}>
@@ -82,6 +117,50 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 						<dd>{movie.productionCompany}</dd>
 					</div>
 				</dl>
+				{
+					groupedAwards.length > 0 && (
+						<section class="movie-detail__awards-card" aria-label="Premios y galardones">
+							<p class="movie-detail__awards-kicker">Premios y galardones</p>
+							<div class="movie-detail__awards-groups">
+								{groupedAwards.map((group) => (
+									<div class="movie-detail__awards-group">
+										<p class="movie-detail__awards-group-title">{group.label}</p>
+										<div
+											class="movie-detail__awards-icons"
+											aria-label={`${group.count} premio${group.count === 1 ? '' : 's'} ${group.label}`}
+										>
+											{Array.from({ length: group.count }).map(() => (
+												<span class={`movie-detail__award-icon movie-detail__award-icon--${group.awardType}`}>
+													{group.icon}
+												</span>
+											))}
+										</div>
+										<p class="movie-detail__awards-group-count">
+											{group.count} premio{group.count === 1 ? '' : 's'}
+										</p>
+									</div>
+								))}
+							</div>
+							<ul class="movie-detail__awards-list">
+								{awardCategories.map((award) => (
+									<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
+										<span class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}>
+											{award.label}
+										</span>
+										<span>{award.category}</span>
+										{award.recipient && (
+											<span class="movie-detail__award-recipient">· {award.recipient}</span>
+										)}
+										{award.year && <span class="movie-detail__award-year">({award.year})</span>}
+										{award.isBestPicture && (
+											<span class="movie-detail__award-highlight">Premio mayor</span>
+										)}
+									</li>
+								))}
+							</ul>
+						</section>
+					)
+				}
 				<section class="movie-detail__review-card" aria-label="Reseña honesta">
 					<p class="movie-detail__review-kicker">Reseña honesta</p>
 					<p class="movie-detail__review">{movie.review}</p>

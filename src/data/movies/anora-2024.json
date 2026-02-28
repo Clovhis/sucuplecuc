@@ -17,5 +17,45 @@
 	"productionCompany": "FilmNation Entertainment",
 	"verdict": "recomendada",
 	"verdictLabel": "GOLAZO",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película",
+				"year": 2025,
+				"recipient": "Sean Baker, Alex Coco, Samantha Quan"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor dirección",
+				"year": 2025,
+				"recipient": "Sean Baker"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor actriz",
+				"year": 2025,
+				"recipient": "Mikey Madison"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor guion original",
+				"year": 2025,
+				"recipient": "Sean Baker"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor montaje",
+				"year": 2025,
+				"recipient": "Sean Baker"
+			},
+			{
+				"award": "cannes",
+				"category": "Palma de Oro",
+				"year": 2024,
+				"recipient": "Sean Baker"
+			}
+		]
+	},
 	"review": "Fue de las mejor recibidas por la crítica especializada y quedó arriba entre las más destacadas del año. Acá entra recomendada fuerte."
 }

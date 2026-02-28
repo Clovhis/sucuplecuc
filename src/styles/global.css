@@ -449,6 +449,165 @@ img {
 	line-height: 1.55;
 }
 
+.movie-detail__awards-card {
+	display: grid;
+	gap: 0.8rem;
+	padding: 0.9rem 1rem;
+	border: 1px solid rgba(117, 153, 255, 0.4);
+	border-left: 4px solid #7a9cff;
+	border-radius: 12px;
+	background:
+		linear-gradient(180deg, rgba(117, 153, 255, 0.12), rgba(117, 153, 255, 0.03)),
+		rgba(255, 255, 255, 0.02);
+}
+
+.movie-detail__awards-kicker {
+	margin: 0;
+	font-size: 0.78rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #b9c9ff;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.movie-detail__awards-groups {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	gap: 0.65rem;
+}
+
+.movie-detail__awards-group {
+	display: grid;
+	gap: 0.33rem;
+	padding: 0.62rem 0.68rem;
+	border: 1px solid rgba(124, 145, 191, 0.35);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.movie-detail__awards-group-title {
+	margin: 0;
+	font-size: 0.78rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #c9d5f7;
+}
+
+.movie-detail__awards-icons {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.22rem;
+}
+
+.movie-detail__award-icon {
+	display: inline-grid;
+	place-items: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 999px;
+	font-size: 0.85rem;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.movie-detail__award-icon--oscar {
+	background: rgba(243, 188, 63, 0.18);
+	border-color: rgba(243, 188, 63, 0.45);
+}
+
+.movie-detail__award-icon--grammy {
+	background: rgba(49, 179, 109, 0.18);
+	border-color: rgba(49, 179, 109, 0.45);
+}
+
+.movie-detail__award-icon--cannes {
+	background: rgba(117, 153, 255, 0.18);
+	border-color: rgba(117, 153, 255, 0.45);
+}
+
+.movie-detail__awards-group-count {
+	margin: 0;
+	font-size: 0.78rem;
+	color: #d6def1;
+}
+
+.movie-detail__awards-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 0.42rem;
+}
+
+.movie-detail__awards-list li {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.45rem;
+	align-items: center;
+	color: #e8edf8;
+	font-size: 0.93rem;
+}
+
+.movie-detail__award-item--top {
+	padding: 0.35rem 0.45rem;
+	border-radius: 8px;
+	border: 1px solid rgba(243, 188, 63, 0.45);
+	background: rgba(243, 188, 63, 0.12);
+}
+
+.movie-detail__award-tag {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.15rem 0.46rem;
+	border-radius: 999px;
+	font-size: 0.65rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	border: 1px solid transparent;
+}
+
+.movie-detail__award-tag--oscar {
+	background: rgba(243, 188, 63, 0.16);
+	border-color: rgba(243, 188, 63, 0.45);
+	color: #ffdd8d;
+}
+
+.movie-detail__award-tag--grammy {
+	background: rgba(49, 179, 109, 0.16);
+	border-color: rgba(49, 179, 109, 0.45);
+	color: #96e9c0;
+}
+
+.movie-detail__award-tag--cannes {
+	background: rgba(117, 153, 255, 0.16);
+	border-color: rgba(117, 153, 255, 0.45);
+	color: #c7d5ff;
+}
+
+.movie-detail__award-recipient {
+	color: #f1f4fa;
+	font-weight: 600;
+}
+
+.movie-detail__award-year {
+	color: var(--muted);
+	font-size: 0.84rem;
+}
+
+.movie-detail__award-highlight {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.12rem 0.42rem;
+	border-radius: 999px;
+	font-size: 0.62rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #111318;
+	background: #f3bc3f;
+	border: 1px solid rgba(243, 188, 63, 0.75);
+}
+
 .movie-detail__credits {
 	margin: 0;
 	display: grid;

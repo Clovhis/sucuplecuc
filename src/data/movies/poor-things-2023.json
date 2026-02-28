@@ -17,5 +17,33 @@
 	"productionCompany": "Film4 Productions",
 	"verdict": "recomendada",
 	"verdictLabel": "SÓLIDA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor actriz",
+				"year": 2024,
+				"recipient": "Emma Stone"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor diseño de producción",
+				"year": 2024,
+				"recipient": "James Price, Shona Heath, Zsuzsa Mihalek"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor vestuario",
+				"year": 2024,
+				"recipient": "Holly Waddington"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor maquillaje y peinado",
+				"year": 2024,
+				"recipient": "Nadia Stacey, Mark Coulier, Josh Weston"
+			}
+		]
+	},
 	"review": "Rarísima y arriesgada, pero con una identidad que la hace destacar. Aunque dividió un poco, el balance terminó claramente a favor."
 }

@@ -17,5 +17,57 @@
 	"productionCompany": "Universal Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "BRILLANTE",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película",
+				"year": 2024,
+				"recipient": "Emma Thomas, Charles Roven, Christopher Nolan"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor dirección",
+				"year": 2024,
+				"recipient": "Christopher Nolan"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor actor",
+				"year": 2024,
+				"recipient": "Cillian Murphy"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor actor de reparto",
+				"year": 2024,
+				"recipient": "Robert Downey Jr."
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor fotografía",
+				"year": 2024,
+				"recipient": "Hoyte van Hoytema"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor montaje",
+				"year": 2024,
+				"recipient": "Jennifer Lame"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor banda sonora original",
+				"year": 2024,
+				"recipient": "Ludwig Göransson"
+			},
+			{
+				"award": "grammy",
+				"category": "Mejor banda sonora para medios visuales",
+				"year": 2025,
+				"recipient": "Ludwig Göransson"
+			}
+		]
+	},
 	"review": "Intensa, ambiciosa y con actuaciones tremendas de punta a punta. Quedó entre lo más fuerte del batch sin discusión."
 }

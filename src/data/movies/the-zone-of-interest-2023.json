@@ -17,5 +17,27 @@
 	"productionCompany": "Access Industries",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película internacional",
+				"year": 2024,
+				"recipient": "Reino Unido"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor sonido",
+				"year": 2024,
+				"recipient": "Tarn Willers, Johnnie Burn"
+			},
+			{
+				"award": "cannes",
+				"category": "Grand Prix del Festival de Cannes",
+				"year": 2023,
+				"recipient": "Jonathan Glazer"
+			}
+		]
+	},
 	"review": "Fría e incómoda a propósito, pero justamente ahí está su fuerza. Te deja helado sin necesidad de subrayar nada."
 }

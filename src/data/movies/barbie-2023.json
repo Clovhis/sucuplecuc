@@ -17,5 +17,27 @@
 	"productionCompany": "Heyday Films",
 	"verdict": "zafa",
 	"verdictLabel": "ZAFAROLA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor canción original",
+				"year": 2024,
+				"recipient": "Billie Eilish, Finneas O'Connell"
+			},
+			{
+				"award": "grammy",
+				"category": "Canción del año",
+				"year": 2024,
+				"recipient": "Billie Eilish, Finneas O'Connell"
+			},
+			{
+				"award": "grammy",
+				"category": "Mejor canción para medios visuales",
+				"year": 2024,
+				"recipient": "Billie Eilish, Finneas O'Connell"
+			}
+		]
+	},
 	"review": "Divierte y tiene momentos filosos, pero también generó rechazo en una parte del público. La nota la ubica en zafa: ni clavo ni fenómeno."
 }

@@ -17,5 +17,33 @@
 	"productionCompany": "Amusement Park Films",
 	"verdict": "recomendada",
 	"verdictLabel": "ASOMBROSA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película internacional",
+				"year": 2023,
+				"recipient": "Alemania"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor fotografía",
+				"year": 2023,
+				"recipient": "James Friend"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor diseño de producción",
+				"year": 2023,
+				"recipient": "Christian M. Goldbeck, Ernestine Hipper"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor banda sonora original",
+				"year": 2023,
+				"recipient": "Volker Bertelmann"
+			}
+		]
+	},
 	"review": "Pegó fuerte por lo cruda y por cómo te deja sin aire en varios momentos. Con este puntaje alto queda entre las más bancadas del batch."
 }

@@ -130,6 +130,18 @@ External review enrichment policy (mandatory):
 - Do not dump raw numeric strings in the review body (examples to avoid: `59/100`, `6.8/10`, `Numeros: ...`) unless the user explicitly asks for numeric detail.
 - Do not fabricate criticism details that are not present in the consulted source.
 - If no source from the list can be verified, stop and ask the user for a reference link before committing.
+
+Awards enrichment policy (mandatory):
+
+- Evaluate whether the movie has wins in: `Oscar`, `Grammy`, and/or `Festival de Cannes`.
+- If there are verified wins, include them in `awards.wins` with:
+  - `award`: `oscar` | `grammy` | `cannes`
+  - `category`: exact category/prize name in Spanish
+  - `recipient`: person/team/pais/produccion ganadora cuando aplique (por ejemplo actor, directora, productores, etc.)
+  - `year`: ceremony year
+- For `Oscar` category `Mejor película`, always include `recipient` and mark it as top priority in UI output logic.
+- If there are no verified wins in those three awards, omit `awards` from the entry.
+- Never invent award wins or categories.
 Trailer policy is strict:
 
 - Always set `trailerYoutubeId` for the movie entry.
@@ -182,6 +194,11 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "productionCompany": "",
   "verdict": "zafa",
   "verdictLabel": "ZAFA",
+  "awards": {
+    "wins": [
+      { "award": "oscar", "category": "Mejor película", "recipient": "Productores ganadores", "year": 2025 }
+    ]
+  },
   "review": "Resena breve en castellano rioplatense",
   "isPremiere": false,
   "premiereLabel": "",
@@ -334,6 +351,7 @@ Return all of the following:
 7. Optional PR link or exact command to open PR
 8. External review source used (site + URL) and what was extracted from it
 9. Platform source used for AR (site + URL) and why chosen `releasePlatform` matches resolver flow
+10. Awards source used (site + URL) and exact `awards.wins` entries added (or explicit confirmation that there are no verified Oscar/Grammy/Cannes wins)
 
 ## Validation checklist
 
@@ -347,6 +365,7 @@ Return all of the following:
 - [ ] Director/main cast/production company from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
 - [ ] External review enrichment from specialized North American source (or explicit fallback/user-provided link)
+- [ ] Awards enrichment completed: verified Oscar/Grammy/Cannes wins loaded into `awards.wins` (or omitted with explicit no-wins confirmation)
 - [ ] `releasePlatform` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `npm run build` passed

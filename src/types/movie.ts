@@ -4,6 +4,19 @@ export type MovieVerdict =
 	| 'no_recomendada'
 	| 'basura_atomica';
 
+export type MovieAwardType = 'oscar' | 'grammy' | 'cannes';
+
+export interface MovieAwardWin {
+	award: MovieAwardType;
+	category: string;
+	recipient?: string;
+	year?: number;
+}
+
+export interface MovieAwards {
+	wins: MovieAwardWin[];
+}
+
 export interface Movie {
 	slug: string;
 	title: string;
@@ -19,5 +32,6 @@ export interface Movie {
 	productionCompany: string;
 	verdict: MovieVerdict;
 	verdictLabel?: string;
+	awards?: MovieAwards;
 	review: string;
 }

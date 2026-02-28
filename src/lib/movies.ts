@@ -62,6 +62,37 @@ function validateMovies(movies: Movie[]): void {
 		if (castMembers.length === 0) {
 			throw new Error(`Movie "${slug}" is missing mainCast entries.`);
 		}
+
+		if (movie.awards !== undefined) {
+			if (!movie.awards || !Array.isArray(movie.awards.wins)) {
+				throw new Error(`Movie "${slug}" has invalid awards format.`);
+			}
+
+			for (const win of movie.awards.wins) {
+				if (!win || typeof win !== 'object') {
+					throw new Error(`Movie "${slug}" has an invalid award entry.`);
+				}
+
+				if (!['oscar', 'grammy', 'cannes'].includes(win.award)) {
+					throw new Error(`Movie "${slug}" has unsupported award type "${String(win.award)}".`);
+				}
+
+				if (typeof win.category !== 'string' || win.category.trim().length === 0) {
+					throw new Error(`Movie "${slug}" has an award without category.`);
+				}
+
+				if (
+					win.recipient !== undefined &&
+					(typeof win.recipient !== 'string' || win.recipient.trim().length === 0)
+				) {
+					throw new Error(`Movie "${slug}" has an award with invalid recipient.`);
+				}
+
+				if (win.year !== undefined && (!Number.isInteger(win.year) || win.year < 1900)) {
+					throw new Error(`Movie "${slug}" has invalid award year "${String(win.year)}".`);
+				}
+			}
+		}
 	}
 }
 
