@@ -45,6 +45,8 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 │     └─ movie.ts
 ├─ scripts/
 │  └─ new-movie.mjs
+├─ docs/
+│  └─ movie-catalog-reference.md
 ├─ templates/
 │  └─ movie.template.json
 ├─ supabase/
@@ -234,6 +236,23 @@ npm run new-movie -- --slug "my-movie-2026" --title "My Movie" --year 2026
 Then edit generated JSON fields manually.
 
 Alternative: copy `templates/movie.template.json`.
+
+## Catalog reference for future bulks
+
+The repository includes a snapshot catalog at:
+
+- `docs/movie-catalog-reference.md`
+
+Use it as a quick reference to:
+
+- see all loaded movies (title/year/slug/platform)
+- detect probable gaps before a bulk load
+- avoid obvious duplicates in planning stage
+
+Important:
+
+- source of truth remains `src/data/movies/*.json`
+- after bulk additions, update `docs/movie-catalog-reference.md` so future runs start from an up-to-date inventory
 
 ## Deployment
 
