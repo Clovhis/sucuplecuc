@@ -37,6 +37,7 @@ Conditionally allowed only with explicit user approval in the same request:
 
 - `templates/movie.template.json`
 - `README.md`
+- `docs/movie-catalog-reference.md`
 
 Forbidden paths:
 
@@ -101,6 +102,17 @@ git add src/data/movies/<slug>.json
 git commit -m "Add movie entry: <title> (<year>)"
 git push -u origin feature/movie-<slug>
 ```
+
+## Catalog reference file (mandatory)
+
+Use `docs/movie-catalog-reference.md` as the first quick inventory reference before any add/bulk task.
+
+Rules:
+
+- Read `docs/movie-catalog-reference.md` first to identify already loaded movies and current gaps by year/platform.
+- Do not trust the catalog blindly: always confirm duplicates against real files in `src/data/movies/*.json`.
+- In bulk operations (or when user explicitly asks), update the catalog snapshot after creating movie files.
+- Keep the catalog sorted and include at least: `year`, `title`, `slug`, `releasePlatform`.
 
 ## Metadata lookup rules
 
@@ -227,6 +239,11 @@ Before writing, scan movie files and abort if duplicate by:
 
 - same `slug`, or
 - same normalized `title` + `year`
+
+Suggested order:
+
+1. Quick pre-check in `docs/movie-catalog-reference.md`
+2. Mandatory final check in `src/data/movies/*.json` (source of truth)
 
 On duplicate, stop and report: `La pelicula ya existe`.
 Do not overwrite existing entries without explicit user authorization.
@@ -368,6 +385,8 @@ Return all of the following:
 - [ ] Awards enrichment completed: verified Oscar/Grammy/Cannes wins loaded into `awards.wins` (or omitted with explicit no-wins confirmation)
 - [ ] `releasePlatform` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
+- [ ] `docs/movie-catalog-reference.md` consulted before adding movies
+- [ ] In bulk mode, `docs/movie-catalog-reference.md` updated to include new entries
 - [ ] `npm run build` passed
 - [ ] Diff shown before commit
 - [ ] Commit and push done on feature branch
