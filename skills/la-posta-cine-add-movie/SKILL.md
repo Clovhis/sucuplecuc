@@ -230,6 +230,9 @@ Write `review` by combining user feedback + external review enrichment:
 - Every movie review must be unique in wording and structure.
 - Avoid repeated openings across a batch (for example reusing `En la critica especializada...` in multiple entries).
 - In multi-movie batches, vary sentence rhythm and vocabulary so entries do not read like a template.
+- Do not reuse stock closing lines across different movies in the same batch (for example repeating `Queda en ese punto medio que no molesta.`).
+- In batch mode, run a final anti-duplication pass at sentence level: no full sentence may appear verbatim in more than one review.
+- If a review sounds too generic, rewrite it with movie-specific angle (tone, pacing, performances, direction, genre execution) without spoilers.
 - Enforce proper Spanish orthography in review text: use `ñ` and accent marks when applicable (for example `reseñas`, not `resenas`).
 - Do not degrade Spanish words to ASCII-only variants in user-facing review copy.
 
@@ -247,6 +250,15 @@ Map user language to internal verdict:
 Keep internal `verdict` stable.
 Use `verdictLabel` for colloquial display override.
 
+Score-driven mapping policy (mandatory when a numeric reception score is used in batch updates):
+
+- Normalize external reception score to a `0..10` scale.
+- If score is `>= 6.0`, force `verdict: recomendada` (green / buena).
+- If score is `>= 5.0` and `< 6.0`, use `verdict: zafa`.
+- If score is `< 5.0`, use `verdict: no_recomendada`.
+- Do not place a movie with score `>= 6.0` in `zafa` or `no_recomendada`.
+- Example guardrail: a movie with `6.3` must be `recomendada`.
+
 `verdictLabel` style policy (mandatory):
 
 - Do not lock labels to a single default per verdict (avoid always using only `RECOMENDADA`, `ZAFA`, `MALISIMA`).
@@ -255,7 +267,7 @@ Use `verdictLabel` for colloquial display override.
 - Rotate labels across multi-movie batches so they do not repeat mechanically.
 - Keep labels consistent with `verdict`:
   - `recomendada`: examples `ESTA MUY BIEN`, `BRILLANTE`, `ASOMBROSA`, `MUY BUENA`, `PELICULON`, `SÓLIDA`
-  - `zafa`: examples `CUMPLE`, `PASABLE`, `MEDIA PELO`, `ZAFA TRANQUI`, `ENTRETENIDA`
+  - `zafa`: examples `MEH`, `MASOMENO`, `ZAFETTI`, `ZAFA`, `ZAFAROLA`, `PASABLE`
   - `no_recomendada`: examples `UNA VERGA`, `ABURRIDA`, `PLOMAZO`, `FLOJISIMA`, `NO VA`
 - Prefer uppercase display labels unless user explicitly asks for another style.
 - Never assign a positive-sounding label to `no_recomendada` (or vice versa).
