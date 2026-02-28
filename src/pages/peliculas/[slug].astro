@@ -29,7 +29,7 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 
 <BaseLayout title={pageTitle} description={pageDescription} image={posterUrl}>
 	<main class="container">
-		<a class="back-link" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		<a class="back-link" href={import.meta.env.BASE_URL} data-back-home>Volver al listado</a>
 
 		<section class="movie-detail">
 			{
@@ -104,3 +104,25 @@ const trailerEmbedUrl = movie.trailerYoutubeId
 		</section>
 	</main>
 </BaseLayout>
+
+<script>
+	const backLink = document.querySelector('[data-back-home]');
+	if (backLink instanceof HTMLAnchorElement) {
+		backLink.addEventListener('click', (event) => {
+			let canUseHistoryBack = false;
+			try {
+				if (document.referrer) {
+					const referrerUrl = new URL(document.referrer);
+					canUseHistoryBack = referrerUrl.origin === window.location.origin;
+				}
+			} catch {
+				canUseHistoryBack = false;
+			}
+
+			if (canUseHistoryBack && window.history.length > 1) {
+				event.preventDefault();
+				window.history.back();
+			}
+		});
+	}
+</script>

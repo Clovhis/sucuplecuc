@@ -77,6 +77,7 @@ const pageDescription =
 		const input = searchRoot.querySelector('[data-movie-search-input]');
 		const emptyState = searchRoot.querySelector('[data-movie-search-empty]');
 		const cards = Array.from(document.querySelectorAll('[data-movie-card]'));
+		const homeStateKey = 'cineposta:home-list-state:v1';
 
 		if (input instanceof HTMLInputElement) {
 			const normalize = (value) =>
@@ -85,6 +86,19 @@ const pageDescription =
 					.normalize('NFD')
 					.replace(/[\u0300-\u036f]/g, '')
 					.trim();
+
+			const persistHomeState = () => {
+				try {
+					const payload = {
+						query: input.value,
+						scrollY: Math.max(0, Math.round(window.scrollY)),
+						ts: Date.now(),
+					};
+					sessionStorage.setItem(homeStateKey, JSON.stringify(payload));
+				} catch {
+					// Ignore storage errors.
+				}
+			};
 
 			const runFilter = () => {
 				const query = normalize(input.value);
@@ -103,7 +117,55 @@ const pageDescription =
 				}
 			};
 
-			input.addEventListener('input', runFilter);
+			const restoreHomeState = () => {
+				let parsed = null;
+				try {
+					const raw = sessionStorage.getItem(homeStateKey);
+					if (raw) {
+						parsed = JSON.parse(raw);
+					}
+				} catch {
+					parsed = null;
+				}
+
+				if (!parsed || typeof parsed !== 'object') return;
+
+				const ageMs = Date.now() - Number(parsed.ts ?? 0);
+				if (!Number.isFinite(ageMs) || ageMs > 1000 * 60 * 30) {
+					sessionStorage.removeItem(homeStateKey);
+					return;
+				}
+
+				if (typeof parsed.query === 'string') {
+					input.value = parsed.query;
+				}
+
+				runFilter();
+
+				const savedScrollY = Number(parsed.scrollY);
+				if (Number.isFinite(savedScrollY) && savedScrollY > 0) {
+					window.requestAnimationFrame(() => {
+						window.scrollTo(0, savedScrollY);
+					});
+				}
+
+				sessionStorage.removeItem(homeStateKey);
+			};
+
+			const cardLinks = cards
+				.map((card) => (card instanceof HTMLElement ? card.querySelector('a') : null))
+				.filter((link) => link instanceof HTMLAnchorElement);
+
+			for (const link of cardLinks) {
+				link.addEventListener('click', persistHomeState, { passive: true });
+			}
+
+			input.addEventListener('input', () => {
+				runFilter();
+				persistHomeState();
+			});
+			window.addEventListener('pagehide', persistHomeState);
+			restoreHomeState();
 		}
 	}
 </script>
