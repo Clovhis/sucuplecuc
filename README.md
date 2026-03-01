@@ -245,7 +245,7 @@ The repository includes a snapshot catalog at:
 
 Use it as a quick reference to:
 
-- see all loaded movies (title/year/slug/platform)
+- see all loaded movies (title/year/slug/category/platform)
 - detect probable gaps before a bulk load
 - avoid obvious duplicates in planning stage
 
