@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-02-28. Fuente: src/data/movies/*.json
 
-Total de peliculas: 145
+Total de peliculas: 152
 
 | Año | Titulo | Slug | Plataforma |
 | --- | --- | --- | --- |
@@ -24,6 +24,7 @@ Total de peliculas: 145
 | 2025 | Frankenstein | frankenstein-2025 | Netflix |
 | 2025 | G20 | g20-2025 | Prime Video |
 | 2025 | Hamnet | hamnet-2025 | Cine |
+| 2025 | Homo Argentum | homo-argentum-2025 | Disney Plus |
 | 2025 | How to Train Your Dragon | how-to-train-your-dragon-2025 | HBO Max |
 | 2025 | Jurassic World Rebirth | jurassic-world-rebirth-2025 | HBO Max |
 | 2025 | Karate Kid: Legends | karate-kid-legends-2025 | HBO Max |
@@ -60,6 +61,7 @@ Total de peliculas: 145
 | 2024 | Civil War | civil-war-2024 | Netflix |
 | 2024 | Deadpool & Wolverine | deadpool-and-wolverine-2024 | Disney Plus |
 | 2024 | Dune: Part Two | dune-part-two-2024 | Netflix |
+| 2024 | El Jockey | el-jockey-2024 | Disney Plus |
 | 2024 | Furiosa: A Mad Max Saga | furiosa-a-mad-max-saga-2024 | Netflix |
 | 2024 | Gladiator II | gladiator-ii-2024 | Netflix |
 | 2024 | Godzilla x Kong: The New Empire | godzilla-x-kong-the-new-empire-2024 | Netflix |
@@ -84,10 +86,12 @@ Total de peliculas: 145
 | 2023 | Ant-Man and the Wasp: Quantumania | ant-man-and-the-wasp-quantumania-2023 | Disney Plus |
 | 2023 | Aquaman and the Lost Kingdom | aquaman-and-the-lost-kingdom-2023 | Netflix |
 | 2023 | Barbie | barbie-2023 | HBO Max |
+| 2023 | Cuando acecha la maldad | cuando-acecha-la-maldad-2023 | Netflix |
 | 2023 | Guardians of the Galaxy Vol. 3 | guardians-of-the-galaxy-vol-3-2023 | Disney Plus |
 | 2023 | Indiana Jones and the Dial of Destiny | indiana-jones-and-the-dial-of-destiny-2023 | Disney Plus |
 | 2023 | John Wick: Chapter 4 | john-wick-chapter-4-2023 | Stremio |
 | 2023 | Killers of the Flower Moon | killers-of-the-flower-moon-2023 | Apple TV |
+| 2023 | Los delincuentes | los-delincuentes-2023 | HBO Max |
 | 2023 | Maestro | maestro-2023 | Netflix |
 | 2023 | Mission: Impossible - Dead Reckoning Part One | mission-impossible-dead-reckoning-part-one-2023 | Stremio |
 | 2023 | Napoleon | napoleon-2023 | Apple TV |
@@ -105,6 +109,7 @@ Total de peliculas: 145
 | 2023 | Wish | wish-2023 | Disney Plus |
 | 2023 | Wonka | wonka-2023 | HBO Max |
 | 2022 | All Quiet on the Western Front | all-quiet-on-the-western-front-2022 | Netflix |
+| 2022 | Argentina, 1985 | argentina-1985-2022 | Prime Video |
 | 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Disney Plus |
 | 2022 | Black Adam | black-adam-2022 | HBO Max |
 | 2022 | Black Panther: Wakanda Forever | black-panther-wakanda-forever-2022 | Disney Plus |
@@ -127,9 +132,11 @@ Total de peliculas: 145
 | 2021 | Belfast | belfast-2021 | Stremio |
 | 2021 | Black Widow | black-widow-2021 | Disney Plus |
 | 2021 | CODA | coda-2021 | Prime Video |
+| 2021 | Competencia oficial | competencia-oficial-2021 | Disney Plus |
 | 2021 | Cruella | cruella-2021 | Disney Plus |
 | 2021 | Don't Look Up | dont-look-up-2021 | Netflix |
 | 2021 | Dune: Part One | dune-2021 | HBO Max |
+| 2021 | El perro que no calla | el-perro-que-no-calla-2021 | Cine |
 | 2021 | Encanto | encanto-2021 | Disney Plus |
 | 2021 | Eternals | eternals-2021 | Disney Plus |
 | 2021 | F9: The Fast Saga | f9-the-fast-saga-2021 | Stremio |
