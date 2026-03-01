@@ -60,7 +60,7 @@ const searchableText = [
 					<p class="movie-card__year">{movie.year}</p>
 					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
 				</div>
-				<p class="movie-card__cta">Ver ficha</p>
+				<p class="movie-card__cta">{movie.category}</p>
 				<div class={`movie-card__glyph movie-card__glyph--${verdictGlyph}`} aria-hidden="true">
 					{
 						verdictGlyph === 'thumbs-up' && (
