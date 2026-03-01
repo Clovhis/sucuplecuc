@@ -109,10 +109,10 @@ Use `docs/movie-catalog-reference.md` as the first quick inventory reference bef
 
 Rules:
 
-- Read `docs/movie-catalog-reference.md` first to identify already loaded movies and current gaps by year/platform.
+- Read `docs/movie-catalog-reference.md` first to identify already loaded movies and current gaps by year/platform/category.
 - Do not trust the catalog blindly: always confirm duplicates against real files in `src/data/movies/*.json`.
 - In bulk operations (or when user explicitly asks), update the catalog snapshot after creating movie files.
-- Keep the catalog sorted and include at least: `year`, `title`, `slug`, `releasePlatform`.
+- Keep the catalog sorted and include at least: `year`, `title`, `slug`, `category`, `releasePlatform`.
 
 ## Metadata lookup rules
 
