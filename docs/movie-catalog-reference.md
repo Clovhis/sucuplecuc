@@ -1,15 +1,17 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-02-28. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-04. Fuente: src/data/movies/*.json
 
-Total de peliculas: 152
+Total de peliculas: 163
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
+| 2026 | A New Dawn | a-new-dawn-2026 | Anime | Cine |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
+| 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Cine |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Cine |
@@ -17,6 +19,8 @@ Total de peliculas: 152
 | 2025 | Ballerina | ballerina-2025 | Accion | Prime Video |
 | 2025 | Belén | belen-2025 | Drama | Prime Video |
 | 2025 | Captain America: Brave New World | captain-america-brave-new-world-2025 | Accion | Disney Plus |
+| 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Cine |
+| 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Cine |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus |
 | 2025 | F1: The Movie | f1-the-movie-2025 | Drama | Apple TV |
@@ -37,6 +41,7 @@ Total de peliculas: 152
 | 2025 | Mountainhead | mountainhead-2025 | Drama | HBO Max |
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max |
 | 2025 | Otro viernes de locos | otro-viernes-de-locos-2025 | Comedia | Disney Plus |
+| 2025 | Scarlet | scarlet-2025 | Anime | Cine |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus |
 | 2025 | Superman | superman-2025 | Accion | HBO Max |
@@ -65,13 +70,16 @@ Total de peliculas: 152
 | 2024 | Furiosa: A Mad Max Saga | furiosa-a-mad-max-saga-2024 | Accion | Netflix |
 | 2024 | Gladiator II | gladiator-ii-2024 | Accion | Netflix |
 | 2024 | Godzilla x Kong: The New Empire | godzilla-x-kong-the-new-empire-2024 | Accion | Netflix |
+| 2024 | Haikyu!! The Dumpster Battle | haikyu-the-dumpster-battle-2024 | Anime | Crunchyroll |
 | 2024 | Inside Out 2 | inside-out-2-2024 | Animacion | Disney Plus |
 | 2024 | Joker: Folie à Deux | joker-folie-a-deux-2024 | Drama | HBO Max |
 | 2024 | Kingdom of the Planet of the Apes | kingdom-of-the-planet-of-the-apes-2024 | Accion | Disney Plus |
 | 2024 | Kraven the Hunter | kraven-the-hunter-2024 | Accion | HBO Max |
+| 2024 | Look Back | look-back-2024 | Anime | Stremio |
 | 2024 | Madame Web | madame-web-2024 | Accion | Prime Video |
 | 2024 | Megalopolis | megalopolis-2024 | Drama | Stremio |
 | 2024 | Moana 2 | moana-2-2024 | Animacion | Disney Plus |
+| 2024 | My Hero Academia: You're Next | my-hero-academia-youre-next-2024 | Anime | Crunchyroll |
 | 2024 | Nosferatu | nosferatu-2024 | Fantasia | HBO Max |
 | 2024 | Road House | road-house-2024 | Accion | Prime Video |
 | 2024 | The Fall Guy | the-fall-guy-2024 | Accion | Prime Video |
@@ -97,9 +105,12 @@ Total de peliculas: 152
 | 2023 | Napoleon | napoleon-2023 | Accion | Apple TV |
 | 2023 | Oppenheimer | oppenheimer-2023 | Drama | Netflix |
 | 2023 | Poor Things | poor-things-2023 | Comedia | Prime Video |
+| 2023 | Rascal Does Not Dream of a Sister Venturing Out | rascal-does-not-dream-of-a-sister-venturing-out-2023 | Anime | Crunchyroll |
 | 2023 | Saltburn | saltburn-2023 | Drama | Prime Video |
 | 2023 | Spider-Man: Across the Spider-Verse | spider-man-across-the-spider-verse-2023 | Animacion | Stremio |
+| 2023 | Spy x Family Code: White | spy-x-family-code-white-2023 | Anime | Crunchyroll |
 | 2023 | Tetris | tetris-2023 | Drama | Apple TV |
+| 2023 | The Boy and the Heron | the-boy-and-the-heron-2023 | Anime | Stremio |
 | 2023 | The Flash | the-flash-2023 | Accion | HBO Max |
 | 2023 | The Holdovers | the-holdovers-2023 | Comedia | Prime Video |
 | 2023 | The Killer | the-killer-2023 | Accion | Netflix |

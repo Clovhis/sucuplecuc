@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MovieCard from '../components/MovieCard.astro';
-import { getMovies } from '../lib/movies';
+import { getMovies, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
 
 const movies = getMovies();
 const pageTitle = 'Cine Posta | Reseñas cortas sin humo';
@@ -46,6 +46,24 @@ const pageDescription =
 			movies.length > 0 ? (
 				<>
 					<section class="movie-search" data-movie-search-root>
+						<div class="home-genre-filter" data-home-genre-filter>
+							<p class="home-genre-filter__label">Elegí género</p>
+							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+								{
+									RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+										<button
+											type="button"
+											class="home-genre-filter__chip"
+											data-home-genre-chip
+											data-home-genre-id={genre.id}
+											aria-pressed="false"
+										>
+											{genre.label}
+										</button>
+									))
+								}
+							</div>
+						</div>
 						<label for="movie-search-input" class="movie-search__label">BUSCAR PELÍCULA</label>
 						<input
 							id="movie-search-input"
@@ -77,7 +95,9 @@ const pageDescription =
 		const input = searchRoot.querySelector('[data-movie-search-input]');
 		const emptyState = searchRoot.querySelector('[data-movie-search-empty]');
 		const cards = Array.from(document.querySelectorAll('[data-movie-card]'));
+		const genreChips = Array.from(searchRoot.querySelectorAll('[data-home-genre-chip]'));
 		const homeStateKey = 'cineposta:home-list-state:v1';
+		let activeGenre = null;
 
 		if (input instanceof HTMLInputElement) {
 			const normalize = (value) =>
@@ -91,6 +111,7 @@ const pageDescription =
 				try {
 					const payload = {
 						query: input.value,
+						genre: activeGenre,
 						scrollY: Math.max(0, Math.round(window.scrollY)),
 						ts: Date.now(),
 					};
@@ -107,7 +128,13 @@ const pageDescription =
 				for (const card of cards) {
 					if (!(card instanceof HTMLElement)) continue;
 					const searchable = normalize(card.dataset.movieSearch ?? '');
-					const show = query.length === 0 || searchable.includes(query);
+					const movieGenres = (card.dataset.movieGenres ?? '')
+						.split(',')
+						.map((value) => value.trim())
+						.filter(Boolean);
+					const genreMatch = !activeGenre || movieGenres.includes(activeGenre);
+					const queryMatch = query.length === 0 || searchable.includes(query);
+					const show = genreMatch && queryMatch;
 					card.hidden = !show;
 					if (show) visibleCount += 1;
 				}
@@ -139,6 +166,10 @@ const pageDescription =
 				if (typeof parsed.query === 'string') {
 					input.value = parsed.query;
 				}
+				if (typeof parsed.genre === 'string' && parsed.genre.length > 0) {
+					activeGenre = parsed.genre;
+					applyGenreUI();
+				}
 
 				runFilter();
 
@@ -160,6 +191,28 @@ const pageDescription =
 				link.addEventListener('click', persistHomeState, { passive: true });
 			}
 
+			const applyGenreUI = () => {
+				for (const chip of genreChips) {
+					if (!(chip instanceof HTMLButtonElement)) continue;
+					const chipGenre = chip.dataset.homeGenreId;
+					const isActive = Boolean(chipGenre && chipGenre === activeGenre);
+					chip.classList.toggle('is-active', isActive);
+					chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+				}
+			};
+
+			for (const chip of genreChips) {
+				if (!(chip instanceof HTMLButtonElement)) continue;
+				chip.addEventListener('click', () => {
+					const nextGenre = chip.dataset.homeGenreId ?? null;
+					activeGenre = activeGenre === nextGenre ? null : nextGenre;
+					applyGenreUI();
+					runFilter();
+					persistHomeState();
+				});
+			}
+
+			applyGenreUI();
 			input.addEventListener('input', () => {
 				runFilter();
 				persistHomeState();

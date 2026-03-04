@@ -12,6 +12,52 @@ const VERDICT_LABELS: Record<MovieVerdict, string> = {
 	basura_atomica: 'Basura atomica',
 };
 
+export type RecommendationGenreId =
+	| 'accion'
+	| 'comedia'
+	| 'terror'
+	| 'drama'
+	| 'thriller'
+	| 'sci-fi'
+	| 'animacion'
+	| 'anime'
+	| 'romance'
+	| 'crimen'
+	| 'aventura'
+	| 'pelicula-nacional';
+
+export interface RecommendationGenreOption {
+	id: RecommendationGenreId;
+	label: string;
+}
+
+export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
+	{ id: 'accion', label: 'Acción' },
+	{ id: 'comedia', label: 'Comedia' },
+	{ id: 'terror', label: 'Terror' },
+	{ id: 'drama', label: 'Drama' },
+	{ id: 'thriller', label: 'Thriller' },
+	{ id: 'sci-fi', label: 'Sci-Fi' },
+	{ id: 'animacion', label: 'Animación' },
+	{ id: 'anime', label: 'Anime' },
+	{ id: 'romance', label: 'Romance' },
+	{ id: 'crimen', label: 'Crimen' },
+	{ id: 'aventura', label: 'Aventura' },
+	{ id: 'pelicula-nacional', label: 'Pelicula Nacional' },
+];
+
+export interface RecommendationMovie {
+	slug: string;
+	title: string;
+	year: number;
+	posterUrl: string;
+	screenshotUrls: string[];
+	verdictLabel: string;
+	verdictClass: string;
+	url: string;
+	genres: RecommendationGenreId[];
+}
+
 function withTrailingSlash(value: string): string {
 	return value.endsWith('/') ? value : `${value}/`;
 }
@@ -54,6 +100,23 @@ function validateMovies(movies: Movie[]): void {
 		}
 		if (!Array.isArray(movie.mainCast)) {
 			throw new Error(`Movie "${slug}" has invalid mainCast.`);
+		}
+		if (movie.genres !== undefined) {
+			if (!Array.isArray(movie.genres)) {
+				throw new Error(`Movie "${slug}" has invalid genres format.`);
+			}
+			const genres = movie.genres
+				.map((genre) => (typeof genre === 'string' ? genre.trim() : ''))
+				.filter(Boolean);
+			if (genres.length !== movie.genres.length) {
+				throw new Error(`Movie "${slug}" has empty or invalid genres entries.`);
+			}
+		}
+		if (movie.country !== undefined && (!movie.country || movie.country.trim().length < 2)) {
+			throw new Error(`Movie "${slug}" has invalid country.`);
+		}
+		if (movie.isArgentinian !== undefined && typeof movie.isArgentinian !== 'boolean') {
+			throw new Error(`Movie "${slug}" has invalid isArgentinian flag.`);
 		}
 
 		const castMembers = movie.mainCast
@@ -120,6 +183,106 @@ function normalizeText(value: string): string {
 		.trim();
 }
 
+function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void {
+	const normalized = normalizeText(token).replace(/\s+/g, ' ');
+	if (!normalized) return;
+
+	if (normalized.includes('accion') || normalized === 'action') {
+		target.add('accion');
+	}
+	if (normalized.includes('comedia')) {
+		target.add('comedia');
+	}
+	if (normalized.includes('terror') || normalized.includes('horror')) {
+		target.add('terror');
+	}
+	if (normalized.includes('drama') || normalized.includes('biografic')) {
+		target.add('drama');
+	}
+	if (normalized.includes('thriller') || normalized.includes('suspenso')) {
+		target.add('thriller');
+	}
+	if (
+		normalized.includes('ciencia ficcion') ||
+		normalized.includes('science fiction') ||
+		normalized.includes('sci fi') ||
+		normalized.includes('scifi') ||
+		normalized.includes('sci-fi')
+	) {
+		target.add('sci-fi');
+	}
+	if (normalized.includes('animacion') || normalized.includes('animation')) {
+		target.add('animacion');
+	}
+	if (
+		normalized.includes('romance') ||
+		normalized.includes('romantica') ||
+		normalized.includes('romantic')
+	) {
+		target.add('romance');
+	}
+	if (normalized.includes('crimen') || normalized.includes('crime') || normalized.includes('policial')) {
+		target.add('crimen');
+	}
+	if (
+		normalized.includes('aventura') ||
+		normalized.includes('adventure') ||
+		normalized.includes('fantasia') ||
+		normalized.includes('fantasy')
+	) {
+		target.add('aventura');
+	}
+}
+
+export function isArgentinianMovie(movie: Pick<Movie, 'country' | 'isArgentinian'>): boolean {
+	if (movie.isArgentinian === true) {
+		return true;
+	}
+	return movie.country?.trim().toUpperCase() === 'AR';
+}
+
+export function getRecommendationGenres(
+	movie: Pick<Movie, 'category' | 'genres' | 'country' | 'isArgentinian'>,
+): RecommendationGenreId[] {
+	const genreSet = new Set<RecommendationGenreId>();
+	let hasAnimeToken = false;
+	const sourceGenres = Array.isArray(movie.genres) && movie.genres.length > 0 ? movie.genres : [];
+
+	const normalizedCategory = normalizeText(movie.category ?? '');
+	if (normalizedCategory.includes('anime')) {
+		hasAnimeToken = true;
+	}
+	mapGenreToken(movie.category ?? '', genreSet);
+	for (const sourceGenre of sourceGenres) {
+		const normalizedGenre = normalizeText(sourceGenre);
+		if (normalizedGenre.includes('anime')) {
+			hasAnimeToken = true;
+		}
+		mapGenreToken(sourceGenre, genreSet);
+		for (const chunk of sourceGenre.split(/[,/|]/g)) {
+			const normalizedChunk = normalizeText(chunk);
+			if (normalizedChunk.includes('anime')) {
+				hasAnimeToken = true;
+			}
+			mapGenreToken(chunk, genreSet);
+		}
+	}
+
+	if (hasAnimeToken && movie.country?.trim().toUpperCase() === 'JP') {
+		// Keep Japanese anime separate from generic animation in UI filters.
+		genreSet.delete('animacion');
+		genreSet.add('anime');
+	}
+
+	if (isArgentinianMovie(movie)) {
+		genreSet.add('pelicula-nacional');
+	}
+
+	return RECOMMENDATION_GENRE_OPTIONS.map((option) => option.id).filter((genreId) =>
+		genreSet.has(genreId),
+	);
+}
+
 export function getVerdictBadgeClass(movie: Pick<Movie, 'verdict' | 'verdictLabel'>): string {
 	const normalizedLabel = normalizeText(getVerdictLabel(movie));
 	if (normalizedLabel.includes('mediocre')) {
@@ -140,4 +303,20 @@ export function getPosterUrl(poster: string): string {
 
 export function getMoviePath(slug: string): string {
 	return joinWithBase(`peliculas/${slug}/`);
+}
+
+export function getRecommendationMovies(): RecommendationMovie[] {
+	return getMovies().map((movie) => ({
+		slug: movie.slug,
+		title: movie.title,
+		year: movie.year,
+		posterUrl: getPosterUrl(movie.poster),
+		screenshotUrls: (movie.screenshots ?? [])
+			.filter((shot) => typeof shot === 'string' && shot.trim().length > 0)
+			.map((shot) => getPosterUrl(shot)),
+		verdictLabel: getVerdictLabel(movie),
+		verdictClass: getVerdictBadgeClass(movie),
+		url: getMoviePath(movie.slug),
+		genres: getRecommendationGenres(movie),
+	}));
 }

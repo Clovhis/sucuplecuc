@@ -1,5 +1,11 @@
 ---
-import { getMoviePath, getPosterUrl, getVerdictBadgeClass, getVerdictLabel } from '../lib/movies';
+import {
+	getMoviePath,
+	getPosterUrl,
+	getRecommendationGenres,
+	getVerdictBadgeClass,
+	getVerdictLabel,
+} from '../lib/movies';
 import type { Movie } from '../types/movie';
 
 interface Props {
@@ -12,6 +18,7 @@ const movieUrl = getMoviePath(movie.slug);
 const posterUrl = getPosterUrl(movie.poster);
 const verdictLabel = getVerdictLabel(movie);
 const verdictClass = getVerdictBadgeClass(movie);
+const recommendationGenres = getRecommendationGenres(movie).join(',');
 
 type VerdictGlyph = 'thumbs-up' | 'meh' | 'thumbs-down';
 
@@ -45,6 +52,7 @@ const searchableText = [
 	style={`--item-delay: ${index * 80}ms;`}
 	data-movie-card
 	data-movie-search={searchableText}
+	data-movie-genres={recommendationGenres}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">

@@ -1,0 +1,485 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+	getRecommendationMovies,
+	RECOMMENDATION_GENRE_OPTIONS,
+} from '../lib/movies';
+
+const movies = getRecommendationMovies();
+const phrases = [
+	'Hoy te toca bancarla.',
+	'Elegida por el algoritmo mas falopa del pais.',
+	'No me putees si sale una poronga.',
+	'No hay excusas: dale play.',
+	'Si zafa, festejamos. Si no, a otra cosa.',
+	'Esto es lo que hay, campeon.',
+	'Te toco esta. Despues no digas que no te avise.',
+	'En una de esas te sorprende... o no.',
+	'Dale, no seas cobarde.',
+	'Si es mala, la culpa es del destino.',
+	'Si no te gusta, le echamos la culpa al azar.',
+	'Con fe, que por ahi sale una joyita.',
+	'Planazo o papelon: hoy lo decide el boton.',
+];
+const payload = JSON.stringify({
+	movies,
+	phrases,
+	fallbackPosterUrl: `${import.meta.env.BASE_URL}posters/poster-no-disponible.svg`,
+});
+const pageTitle = '¿Qué querés ver hoy? | Cine Posta';
+const pageDescription =
+	'Mini juego para descubrir peliculas por genero y elegir al azar sin perder tiempo.';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<header class="site-header container site-header--compact">
+		<div class="site-header__line">
+			<div class="site-header__brand-column">
+				<a class="site-header__brand" href={import.meta.env.BASE_URL} aria-label="Ir al inicio">
+					<img
+						class="site-header__logo"
+						src={`${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`}
+						alt="Cine Posta"
+					/>
+				</a>
+				<div class="site-header__copy">
+					<p class="site-header__tagline">Modo azar activado</p>
+					<p class="site-header__rotating-copy">
+						Filtra, mezclá y deja que el botón te tire una peli.
+					</p>
+				</div>
+			</div>
+			<div class="site-header__support">
+				<div class="site-header__actions">
+					<a class="site-header__play site-header__play--active" href={`${import.meta.env.BASE_URL}que-ver-hoy/`}>
+						¿Qué ver hoy?
+					</a>
+					<a
+						class="site-header__donate"
+						href="https://cafecito.app/cineposta"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Invitá un cafecito
+					</a>
+				</div>
+				<a class="site-header__back-home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="container que-ver-hoy" data-que-ver-hoy-root>
+		<section class="que-ver-hoy__top">
+			<h1 class="que-ver-hoy__title">¿Qué querés ver hoy?</h1>
+			<p class="que-ver-hoy__intro">
+				Elegí un género, apretá random y que el destino decida.
+			</p>
+
+			<div class="que-ver-hoy__chips" data-genre-chips role="group" aria-label="Filtros por género">
+				{
+					RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+						<button
+							type="button"
+							class="que-ver-hoy__chip"
+							data-genre-chip
+							data-genre-id={genre.id}
+							aria-pressed="false"
+						>
+							{genre.label}
+						</button>
+					))
+				}
+			</div>
+
+			<div class="que-ver-hoy__actions-row">
+				<button type="button" class="que-ver-hoy__button que-ver-hoy__button--random" data-random-button>
+					Random
+				</button>
+				<button type="button" class="que-ver-hoy__button" data-mix-button>Mezclar</button>
+				<button type="button" class="que-ver-hoy__button" data-reset-button>Reset</button>
+			</div>
+		</section>
+
+		<section class="que-ver-hoy__spotlight" data-random-spotlight>
+			<div class="que-ver-hoy__carousel" data-carousel>
+				<div class="que-ver-hoy__carousel-track" data-carousel-track></div>
+			</div>
+			<div class="que-ver-hoy__spotlight-media">
+				<img
+					class="que-ver-hoy__spotlight-image"
+					data-random-image
+					src={`${import.meta.env.BASE_URL}posters/poster-no-disponible.svg`}
+					alt="Poster sugerido"
+					loading="lazy"
+				/>
+			</div>
+			<div class="que-ver-hoy__spotlight-body">
+				<p class="que-ver-hoy__spotlight-kicker">Selección random</p>
+				<p class="que-ver-hoy__spotlight-phrase" data-random-phrase>
+					El botón está listo. Mandale cuando quieras.
+				</p>
+				<h2 class="que-ver-hoy__spotlight-title" data-random-title>Sin elección todavía</h2>
+				<div class="que-ver-hoy__spotlight-meta">
+					<span class="badge" data-random-verdict hidden>Sin definir</span>
+				</div>
+				<a class="que-ver-hoy__spotlight-link" href={import.meta.env.BASE_URL} data-random-link hidden>
+					Ver ficha
+				</a>
+			</div>
+		</section>
+
+		<section class="que-ver-hoy__results" aria-live="polite">
+			<div class="que-ver-hoy__results-head">
+				<h2>Para seguir jugando</h2>
+				<p data-results-count>Mostrando 12 opciones para jugar.</p>
+			</div>
+			<p class="message-box" data-results-empty hidden>
+				No encontré nada con esos filtros. Probá sacando alguno.
+			</p>
+			<div class="que-ver-hoy__grid" data-results-grid></div>
+		</section>
+	</main>
+</BaseLayout>
+
+<script id="que-ver-hoy-data" type="application/json">{payload}</script>
+
+<script>
+	const root = document.querySelector('[data-que-ver-hoy-root]');
+	const rawDataNode = document.getElementById('que-ver-hoy-data');
+
+	if (root instanceof HTMLElement && rawDataNode instanceof HTMLScriptElement) {
+		let parsedData = null;
+		try {
+			parsedData = JSON.parse(rawDataNode.textContent || '{}');
+		} catch {
+			parsedData = null;
+		}
+
+		const movies = Array.isArray(parsedData?.movies) ? parsedData.movies : [];
+		const phrases = Array.isArray(parsedData?.phrases) ? parsedData.phrases : [];
+		const fallbackPosterUrl =
+			typeof parsedData?.fallbackPosterUrl === 'string' && parsedData.fallbackPosterUrl
+				? parsedData.fallbackPosterUrl
+				: '/posters/poster-no-disponible.svg';
+		let selectedGenre = null;
+
+		const chips = Array.from(root.querySelectorAll('[data-genre-chip]'));
+		const randomButton = root.querySelector('[data-random-button]');
+		const mixButton = root.querySelector('[data-mix-button]');
+		const resetButton = root.querySelector('[data-reset-button]');
+		const spotlight = root.querySelector('[data-random-spotlight]');
+		const carousel = root.querySelector('[data-carousel]');
+		const carouselTrack = root.querySelector('[data-carousel-track]');
+		const randomImage = root.querySelector('[data-random-image]');
+		const randomPhrase = root.querySelector('[data-random-phrase]');
+		const randomTitle = root.querySelector('[data-random-title]');
+		const randomVerdict = root.querySelector('[data-random-verdict]');
+		const randomLink = root.querySelector('[data-random-link]');
+		const resultsGrid = root.querySelector('[data-results-grid]');
+		const resultsEmpty = root.querySelector('[data-results-empty]');
+		const resultsCount = root.querySelector('[data-results-count]');
+
+		const sampleLimit = 12;
+		let filteredPool = movies.slice();
+		let renderedResults = [];
+		let spinTimeout = null;
+		let spinEndHandler = null;
+
+		const stopSpin = () => {
+			if (spinTimeout) {
+				window.clearTimeout(spinTimeout);
+				spinTimeout = null;
+			}
+			if (
+				spinEndHandler &&
+				carouselTrack instanceof HTMLElement
+			) {
+				carouselTrack.removeEventListener('transitionend', spinEndHandler);
+				spinEndHandler = null;
+			}
+			if (carouselTrack instanceof HTMLElement) {
+				carouselTrack.style.transition = 'none';
+			}
+			if (randomButton instanceof HTMLButtonElement) {
+				randomButton.disabled = false;
+			}
+			if (spotlight instanceof HTMLElement) {
+				spotlight.classList.remove('is-spinning');
+			}
+		};
+
+		const shuffle = (items) => {
+			const clone = items.slice();
+			for (let index = clone.length - 1; index > 0; index -= 1) {
+				const randomIndex = Math.floor(Math.random() * (index + 1));
+				[clone[index], clone[randomIndex]] = [clone[randomIndex], clone[index]];
+			}
+			return clone;
+		};
+
+		const pickRandom = (items) => {
+			if (!Array.isArray(items) || items.length === 0) return null;
+			return items[Math.floor(Math.random() * items.length)];
+		};
+
+		const escapeHtml = (value) =>
+			String(value ?? '').replace(/[&<>"']/g, (char) => {
+				if (char === '&') return '&amp;';
+				if (char === '<') return '&lt;';
+				if (char === '>') return '&gt;';
+				if (char === '"') return '&quot;';
+				return '&#39;';
+			});
+
+		const getDisplayPoster = (movie) => movie.screenshotUrls?.[0] || movie.posterUrl;
+
+		const setSpotlightMovie = (movie, options = {}) => {
+			const { isSpinning = false } = options;
+			if (!(randomImage instanceof HTMLImageElement)) return;
+			if (!(randomPhrase instanceof HTMLElement)) return;
+			if (!(randomTitle instanceof HTMLElement)) return;
+			if (!(randomVerdict instanceof HTMLElement)) return;
+			if (!(randomLink instanceof HTMLAnchorElement)) return;
+			if (!(spotlight instanceof HTMLElement)) return;
+
+			if (!movie) {
+				spotlight.classList.remove('is-spinning');
+				randomImage.src = fallbackPosterUrl;
+				randomTitle.textContent = 'Sin elección todavía';
+				randomPhrase.textContent =
+					filteredPool.length > 0
+						? 'El botón está listo. Mandale cuando quieras.'
+						: 'No hay resultados con esos filtros.';
+				randomVerdict.hidden = true;
+				randomVerdict.className = 'badge';
+				randomLink.hidden = true;
+				return;
+			}
+
+			randomImage.src = getDisplayPoster(movie);
+			randomImage.alt = `Poster de ${movie.title}`;
+			randomTitle.textContent = movie.title;
+
+			if (isSpinning) {
+				randomPhrase.textContent = 'Girando la ruleta...';
+				randomVerdict.hidden = true;
+				randomLink.hidden = true;
+				spotlight.classList.add('is-spinning');
+				return;
+			}
+
+			spotlight.classList.remove('is-spinning');
+			randomPhrase.textContent = pickRandom(phrases) || 'No hay excusas: dale play.';
+			randomVerdict.textContent = movie.verdictLabel;
+			randomVerdict.className = `badge ${movie.verdictClass}`;
+			randomVerdict.hidden = false;
+			randomLink.href = movie.url;
+			randomLink.hidden = false;
+		};
+
+		const renderCarouselItems = (items, winningIndex = null) => {
+			if (!(carouselTrack instanceof HTMLElement)) return;
+			if (!Array.isArray(items) || items.length === 0) {
+				carouselTrack.innerHTML = `
+					<div class="que-ver-hoy__carousel-item">
+						<img src="${fallbackPosterUrl}" alt="Sin posters cargados" loading="lazy" />
+					</div>
+				`;
+				return;
+			}
+
+			carouselTrack.innerHTML = items
+				.map((movie, index) => {
+					const isWinning = winningIndex === index;
+					const poster = escapeHtml(getDisplayPoster(movie) || fallbackPosterUrl);
+					const title = escapeHtml(movie.title);
+					return `
+						<div class="que-ver-hoy__carousel-item ${isWinning ? 'is-winning' : ''}">
+							<img src="${poster}" alt="Poster de ${title}" loading="lazy" />
+						</div>
+					`;
+				})
+				.join('');
+			carouselTrack.style.transform = 'translateX(0px)';
+		};
+
+		const buildSpinSequence = (pool, finalMovie) => {
+			const sequence = [finalMovie];
+			const slots = Math.min(28, Math.max(14, pool.length + 8));
+			for (let index = 0; index < slots; index += 1) {
+				sequence.push(pickRandom(pool) || finalMovie);
+			}
+			return sequence;
+		};
+
+		const renderCarouselPreview = () => {
+			const previewSource = filteredPool.length > 0 ? filteredPool : movies;
+			renderCarouselItems(previewSource.slice(0, Math.min(previewSource.length, 16)));
+		};
+
+		const renderResults = () => {
+			if (!(resultsGrid instanceof HTMLElement)) return;
+			if (!(resultsEmpty instanceof HTMLElement)) return;
+			if (!(resultsCount instanceof HTMLElement)) return;
+
+			const hasFilters = Boolean(selectedGenre);
+			const hasResults = renderedResults.length > 0;
+
+			resultsEmpty.hidden = hasResults;
+			resultsGrid.hidden = !hasResults;
+
+			if (!hasResults) {
+				resultsCount.textContent = hasFilters
+					? '0 resultados con filtros activos.'
+					: 'No hay peliculas cargadas.';
+				resultsGrid.innerHTML = '';
+				return;
+			}
+
+			resultsCount.textContent = hasFilters
+				? `${filteredPool.length} resultado${filteredPool.length === 1 ? '' : 's'} con filtros activos.`
+				: `Mostrando ${renderedResults.length} opciones para jugar.`;
+
+			resultsGrid.innerHTML = renderedResults
+				.map((movie) => {
+					const posterUrl = escapeHtml(getDisplayPoster(movie));
+					const title = escapeHtml(movie.title);
+					const verdict = escapeHtml(movie.verdictLabel);
+					const verdictClass = escapeHtml(movie.verdictClass);
+					const movieUrl = escapeHtml(movie.url);
+					const year = escapeHtml(movie.year);
+					return `
+						<article class="que-ver-hoy__card">
+							<a class="que-ver-hoy__card-link" href="${movieUrl}">
+								<div class="que-ver-hoy__card-poster-wrap">
+									<img class="que-ver-hoy__card-poster" src="${posterUrl}" alt="Poster de ${title}" loading="lazy" />
+								</div>
+								<div class="que-ver-hoy__card-body">
+									<div class="que-ver-hoy__card-top">
+										<h3>${title}</h3>
+										<span class="badge ${verdictClass}">${verdict}</span>
+									</div>
+									<p class="que-ver-hoy__card-year">${year}</p>
+								</div>
+							</a>
+						</article>
+					`;
+				})
+				.join('');
+		};
+
+		const refreshPool = () => {
+			const hasFilters = Boolean(selectedGenre);
+			if (!hasFilters) {
+				filteredPool = movies.slice();
+				renderedResults = filteredPool.slice(0, sampleLimit);
+				renderResults();
+				renderCarouselPreview();
+				return;
+			}
+
+			filteredPool = movies.filter((movie) => {
+				if (!Array.isArray(movie.genres) || movie.genres.length === 0) return false;
+				return movie.genres.includes(selectedGenre);
+			});
+			renderedResults = filteredPool.slice();
+			renderResults();
+			renderCarouselPreview();
+		};
+
+		const applyChipState = () => {
+			for (const chip of chips) {
+				if (!(chip instanceof HTMLButtonElement)) continue;
+				const genreId = chip.dataset.genreId;
+				const active = Boolean(genreId && genreId === selectedGenre);
+				chip.setAttribute('aria-pressed', active ? 'true' : 'false');
+				chip.classList.toggle('is-active', active);
+			}
+		};
+
+		const spinAndPickMovie = (pool) => {
+			const finalMovie = pickRandom(pool);
+			if (!finalMovie) {
+				stopSpin();
+				setSpotlightMovie(null);
+				return;
+			}
+
+			if (!(carousel instanceof HTMLElement) || !(carouselTrack instanceof HTMLElement)) {
+				setSpotlightMovie(finalMovie);
+				return;
+			}
+
+			stopSpin();
+
+			if (randomButton instanceof HTMLButtonElement) {
+				randomButton.disabled = true;
+			}
+
+			const sequence = buildSpinSequence(pool, finalMovie);
+			renderCarouselItems(sequence);
+			setSpotlightMovie(finalMovie, { isSpinning: true });
+
+			const startOffset = Math.max(carouselTrack.scrollWidth - carousel.clientWidth, 0);
+			carouselTrack.style.transition = 'none';
+			carouselTrack.style.transform = `translateX(${-startOffset}px)`;
+			void carouselTrack.offsetWidth;
+
+			const finishSpin = () => {
+				stopSpin();
+				renderCarouselItems(sequence, 0);
+				setSpotlightMovie(finalMovie);
+			};
+
+			spinEndHandler = finishSpin;
+			carouselTrack.addEventListener('transitionend', finishSpin, { once: true });
+			carouselTrack.style.transition = 'transform 1.7s cubic-bezier(0.16, 0.84, 0.22, 1)';
+			carouselTrack.style.transform = 'translateX(0px)';
+
+			spinTimeout = window.setTimeout(() => {
+				finishSpin();
+			}, 2200);
+		};
+
+		for (const chip of chips) {
+			if (!(chip instanceof HTMLButtonElement)) continue;
+			chip.addEventListener('click', () => {
+				const genreId = chip.dataset.genreId;
+				if (!genreId) return;
+				selectedGenre = selectedGenre === genreId ? null : genreId;
+				stopSpin();
+				applyChipState();
+				refreshPool();
+				setSpotlightMovie(null);
+			});
+		}
+
+		if (randomButton instanceof HTMLButtonElement) {
+			randomButton.addEventListener('click', () => {
+				const pool = selectedGenre ? filteredPool : movies;
+				spinAndPickMovie(pool);
+			});
+		}
+
+		if (mixButton instanceof HTMLButtonElement) {
+			mixButton.addEventListener('click', () => {
+				if (renderedResults.length < 2) return;
+				renderedResults = shuffle(renderedResults);
+				renderResults();
+			});
+		}
+
+		if (resetButton instanceof HTMLButtonElement) {
+			resetButton.addEventListener('click', () => {
+				selectedGenre = null;
+				stopSpin();
+				applyChipState();
+				refreshPool();
+				setSpotlightMovie(null);
+			});
+		}
+
+		applyChipState();
+		refreshPool();
+	}
+</script>

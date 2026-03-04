@@ -168,7 +168,7 @@ Do not store full YouTube URL when schema uses id.
 Platform policy for Argentina (mandatory):
 
 - Always resolve `releasePlatform` for Argentine audience (`AR`) using trustworthy availability sources (prefer JustWatch `ar` pages and/or official platform pages).
-- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`.
+- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`, `Crunchyroll`.
 - Mandatory resolver flow (do not skip):
   1. Search availability for exact movie + year in AR.
   2. Read only AR offers and identify `FLATRATE` subscription availability first.
@@ -178,6 +178,7 @@ Platform policy for Argentina (mandatory):
      - `Amazon Prime Video` or `Prime Video` -> `Prime Video`
      - `Apple TV Plus` or `Apple TV+` -> `Apple TV`
      - `Netflix` -> `Netflix`
+     - `Crunchyroll` -> `Crunchyroll`
   4. If at least one mapped `FLATRATE` provider exists, use that mapped label (never `Stremio` in this case).
   5. If there is no mapped `FLATRATE` but AR indicates cinema-only availability, set `releasePlatform: "Cine"`.
   6. If AR availability exists only in providers outside allowlist, or AR has no confirmed availability, set `releasePlatform: "Stremio"`.
@@ -312,7 +313,7 @@ Set premiere fields only when requested or confidently confirmed:
 
 - `isPremiere: true`
 - `premiereLabel: "ESTRENO"`
-- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`) when reliable for AR
+- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`, `Crunchyroll`) when reliable for AR
 
 If not confirmed, keep:
 

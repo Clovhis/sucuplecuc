@@ -23,6 +23,9 @@ export interface Movie {
 	originalTitle: string;
 	year: number;
 	category: string;
+	genres?: string[];
+	country?: string;
+	isArgentinian?: boolean;
 	poster: string;
 	screenshots?: string[];
 	trailerYoutubeId: string;
