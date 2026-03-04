@@ -67,6 +67,7 @@ Current schema:
 	"title": "Movie Title",
 	"originalTitle": "Original title",
 	"year": 2026,
+	"releaseDate": "2026-03-14",
 	"category": "Action|Romance|Drama|Terror|Thriller|Sci-Fi",
 	"poster": "https://... or /posters/local.svg",
 	"screenshots": ["https://.../shot-1.jpg", "https://.../shot-2.jpg"],
@@ -94,6 +95,8 @@ Current schema:
 ### Content notes
 
 - `slug` is the routing key and also the Supabase rating key (`movie_slug`).
+- `releaseDate` is optional (`YYYY-MM-DD`). If present, the site uses it to decide if the movie is already released.
+- If `releaseDate` is missing, the site treats the movie as released only when `year` is less than the current year.
 - `trailerYoutubeId` stores only the YouTube ID, never full URLs.
 - `screenshots` is optional:
   - if at least 2 URLs exist, detail page shows a two-shot gallery

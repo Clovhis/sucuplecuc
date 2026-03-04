@@ -98,6 +98,11 @@ function validateMovies(movies: Movie[]): void {
 		if (!movie.productionCompany?.trim()) {
 			throw new Error(`Movie "${slug}" is missing productionCompany.`);
 		}
+		if (movie.releaseDate !== undefined) {
+			if (!/^\d{4}-\d{2}-\d{2}$/.test(movie.releaseDate)) {
+				throw new Error(`Movie "${slug}" has invalid releaseDate format. Use YYYY-MM-DD.`);
+			}
+		}
 		if (!Array.isArray(movie.mainCast)) {
 			throw new Error(`Movie "${slug}" has invalid mainCast.`);
 		}
@@ -159,9 +164,25 @@ function validateMovies(movies: Movie[]): void {
 	}
 }
 
+function isReleased(movie: Pick<Movie, 'year' | 'releaseDate'>): boolean {
+	const now = new Date();
+	const currentYear = now.getUTCFullYear();
+
+	if (movie.releaseDate) {
+		const releaseDate = new Date(`${movie.releaseDate}T00:00:00Z`);
+		if (Number.isNaN(releaseDate.getTime())) {
+			return false;
+		}
+		return releaseDate.getTime() <= now.getTime();
+	}
+
+	return movie.year < currentYear;
+}
+
 export function getMovies(): Movie[] {
 	const movies = Object.values(movieModules)
 		.map((moduleItem) => moduleItem.default)
+		.filter((movie) => isReleased(movie))
 		.sort((a, b) => b.year - a.year || a.title.localeCompare(b.title, 'es'));
 
 	validateMovies(movies);

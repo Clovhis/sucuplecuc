@@ -22,6 +22,7 @@ export interface Movie {
 	title: string;
 	originalTitle: string;
 	year: number;
+	releaseDate?: string;
 	category: string;
 	genres?: string[];
 	country?: string;
