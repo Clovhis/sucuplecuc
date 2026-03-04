@@ -2,10 +2,14 @@
 
 Generado automaticamente el 2026-03-04. Fuente: src/data/movies/*.json
 
-Total de peliculas: 157
+Total de peliculas: 161
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
+| 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
+| 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
+| 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
+| 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Cine |
