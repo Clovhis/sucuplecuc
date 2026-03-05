@@ -1,16 +1,23 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-04. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-05. Fuente: src/data/movies/*.json
 
-Total de peliculas: 192
+Total de peliculas: 199
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
+| 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Cine |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Cine |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
+| 2026 | Crime 101 | crime-101-2026 | Crimen | Cine |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
+| 2026 | GOAT | goat-2026 | Animacion | Cine |
+| 2026 | Iron Lung | iron-lung-2026 | Terror | Cine |
+| 2026 | Mercy | mercy-2026 | Accion | Cine |
+| 2026 | Scream 7 | scream-7-2026 | Terror | Cine |
+| 2026 | Send Help | send-help-2026 | Thriller | Cine |
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Cine |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max |
