@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-05. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-04. Fuente: src/data/movies/*.json
 
-Total de peliculas: 177
+Total de peliculas: 192
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -70,6 +70,7 @@ Total de peliculas: 177
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Cine |
 | 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Stremio |
+| 2024 | A Real Pain | a-real-pain-2024 | Comedia | Disney Plus |
 | 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus |
 | 2024 | Am I OK? | am-i-ok-2024 | Comedia | HBO Max |
 | 2024 | Anora | anora-2024 | Comedia | HBO Max |
@@ -78,6 +79,7 @@ Total de peliculas: 177
 | 2024 | Carry-On | carry-on-2024 | Accion | Netflix |
 | 2024 | Challengers | challengers-2024 | Comedia | Stremio |
 | 2024 | Civil War | civil-war-2024 | Accion | Netflix |
+| 2024 | Conclave | conclave-2024 | Thriller | Prime Video |
 | 2024 | Deadpool & Wolverine | deadpool-and-wolverine-2024 | Accion | Disney Plus |
 | 2024 | Dune: Part Two | dune-part-two-2024 | Accion | Netflix |
 | 2024 | El Jockey | el-jockey-2024 | Crimen | Disney Plus |
@@ -85,20 +87,33 @@ Total de peliculas: 177
 | 2024 | Gladiator II | gladiator-ii-2024 | Accion | Netflix |
 | 2024 | Godzilla x Kong: The New Empire | godzilla-x-kong-the-new-empire-2024 | Accion | Netflix |
 | 2024 | Haikyu!! The Dumpster Battle | haikyu-the-dumpster-battle-2024 | Anime | Crunchyroll |
+| 2024 | Heretic | heretic-2024 | Thriller | Prime Video |
+| 2024 | Hit Man | hit-man-2024 | Comedia | Prime Video |
+| 2024 | I Saw the TV Glow | i-saw-the-tv-glow-2024 | Drama | HBO Max |
+| 2024 | Immaculate | immaculate-2024 | Terror | Stremio |
 | 2024 | Inside Out 2 | inside-out-2-2024 | Animacion | Disney Plus |
 | 2024 | Joker: Folie à Deux | joker-folie-a-deux-2024 | Drama | HBO Max |
 | 2024 | Kingdom of the Planet of the Apes | kingdom-of-the-planet-of-the-apes-2024 | Accion | Disney Plus |
 | 2024 | Kraven the Hunter | kraven-the-hunter-2024 | Accion | HBO Max |
+| 2024 | Longlegs | longlegs-2024 | Terror | Prime Video |
 | 2024 | Look Back | look-back-2024 | Anime | Stremio |
+| 2024 | Love Lies Bleeding | love-lies-bleeding-2024 | Thriller | HBO Max |
 | 2024 | Madame Web | madame-web-2024 | Accion | Prime Video |
 | 2024 | Megalopolis | megalopolis-2024 | Drama | Stremio |
 | 2024 | Moana 2 | moana-2-2024 | Animacion | Disney Plus |
+| 2024 | Monkey Man | monkey-man-2024 | Accion | Prime Video |
 | 2024 | My Hero Academia: You're Next | my-hero-academia-youre-next-2024 | Anime | Crunchyroll |
 | 2024 | Nosferatu | nosferatu-2024 | Fantasia | HBO Max |
 | 2024 | Road House | road-house-2024 | Accion | Prime Video |
+| 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video |
+| 2024 | Smile 2 | smile-2-2024 | Terror | Netflix |
+| 2024 | The Beekeeper | the-beekeeper-2024 | Accion | Prime Video |
+| 2024 | The Brutalist | the-brutalist-2024 | Drama | HBO Max |
 | 2024 | The Fall Guy | the-fall-guy-2024 | Accion | Prime Video |
+| 2024 | The First Omen | the-first-omen-2024 | Terror | Disney Plus |
 | 2024 | The Idea of You | the-idea-of-you-2024 | Romance | Prime Video |
 | 2024 | The Instigators | the-instigators-2024 | Comedia | Apple TV |
+| 2024 | The Substance | the-substance-2024 | Terror | HBO Max |
 | 2024 | The Wild Robot | the-wild-robot-2024 | Animacion | HBO Max |
 | 2024 | Turtles All the Way Down | turtles-all-the-way-down-2024 | Drama | HBO Max |
 | 2024 | Twisters | twisters-2024 | Accion | Netflix |
