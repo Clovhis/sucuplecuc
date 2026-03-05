@@ -1,31 +1,39 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-04. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-05. Fuente: src/data/movies/*.json
 
-Total de peliculas: 161
+Total de peliculas: 177
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
+| 2026 | A New Dawn | a-new-dawn-2026 | Anime | Cine |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
+| 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Cine |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Cine |
 | 2025 | Back in Action | back-in-action-2025 | Accion | Netflix |
 | 2025 | Ballerina | ballerina-2025 | Accion | Prime Video |
 | 2025 | Belén | belen-2025 | Drama | Prime Video |
+| 2025 | Black Bag | black-bag-2025 | Thriller | HBO Max |
 | 2025 | Captain America: Brave New World | captain-america-brave-new-world-2025 | Accion | Disney Plus |
 | 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Cine |
+| 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Cine |
+| 2025 | Drop | drop-2025 | Thriller | HBO Max |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus |
 | 2025 | F1: The Movie | f1-the-movie-2025 | Drama | Apple TV |
+| 2025 | Fear Street: Prom Queen | fear-street-prom-queen-2025 | Terror | Netflix |
 | 2025 | Final Destination: Bloodlines | final-destination-bloodlines-2025 | Terror | HBO Max |
 | 2025 | Frankenstein | frankenstein-2025 | Terror | Netflix |
 | 2025 | G20 | g20-2025 | Accion | Prime Video |
 | 2025 | Hamnet | hamnet-2025 | Drama | Cine |
+| 2025 | Havoc | havoc-2025 | Accion | Netflix |
+| 2025 | Heart Eyes | heart-eyes-2025 | Terror | Netflix |
 | 2025 | Homo Argentum | homo-argentum-2025 | Comedia | Disney Plus |
 | 2025 | How to Train Your Dragon | how-to-train-your-dragon-2025 | Aventura | HBO Max |
 | 2025 | Jurassic World Rebirth | jurassic-world-rebirth-2025 | Accion | HBO Max |
@@ -37,21 +45,29 @@ Total de peliculas: 161
 | 2025 | Mickey 17 | mickey-17-2025 | Aventura | HBO Max |
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Stremio |
 | 2025 | Mountainhead | mountainhead-2025 | Drama | HBO Max |
+| 2025 | Novocaine | novocaine-2025 | Accion | Netflix |
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max |
+| 2025 | Opus | opus-2025 | Thriller | HBO Max |
 | 2025 | Otro viernes de locos | otro-viernes-de-locos-2025 | Comedia | Disney Plus |
 | 2025 | Scarlet | scarlet-2025 | Anime | Cine |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus |
 | 2025 | Superman | superman-2025 | Accion | HBO Max |
+| 2025 | The Accountant 2 | the-accountant-2-2025 | Accion | Prime Video |
+| 2025 | The Amateur | the-amateur-2025 | Thriller | Disney Plus |
 | 2025 | The Electric State | the-electric-state-2025 | Ciencia ficcion | Netflix |
 | 2025 | The Fantastic Four: First Steps | the-fantastic-four-first-steps-2025 | Accion | Disney Plus |
 | 2025 | The Gorge | the-gorge-2025 | Ciencia ficcion | Apple TV |
 | 2025 | The Housemaid (La empleada) | the-housemaid-2025 | Thriller | Cine |
+| 2025 | The Monkey | the-monkey-2025 | Terror | Prime Video |
+| 2025 | The Woman in the Yard | the-woman-in-the-yard-2025 | Terror | HBO Max |
 | 2025 | Thunderbolts* | thunderbolts-2025 | Accion | Disney Plus |
 | 2025 | Together: Juntos Hasta La Muerte | together-juntos-hasta-la-muerte-2025 | Terror | Prime Video |
 | 2025 | Tron: Ares | tron-ares-2025 | Ciencia ficcion | Disney Plus |
+| 2025 | Until Dawn | until-dawn-2025 | Terror | HBO Max |
 | 2025 | Valor sentimental | valor-sentimental-2025 | Drama | Stremio |
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Stremio |
+| 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Cine |
 | 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Stremio |
 | 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus |
