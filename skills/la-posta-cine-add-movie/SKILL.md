@@ -145,14 +145,18 @@ External review enrichment policy (mandatory):
 
 Awards enrichment policy (mandatory):
 
-- Evaluate whether the movie has wins in: `Oscar`, `Grammy`, and/or `Festival de Cannes`.
-- If there are verified wins, include them in `awards.wins` with:
+- Always verify premios/galardones for every movie before commit.
+- Always include `awards` in movie JSON, even when no wins are found:
+  - if wins exist -> populate `awards.wins`
+  - if no wins exist -> set `awards.wins: []`
+- Evaluate verified wins in: `Oscar`, `Grammy`, and/or `Festival de Cannes`.
+- If there are verified wins in those awards, include them in `awards.wins` with:
   - `award`: `oscar` | `grammy` | `cannes`
   - `category`: exact category/prize name in Spanish
   - `recipient`: person/team/pais/produccion ganadora cuando aplique (por ejemplo actor, directora, productores, etc.)
   - `year`: ceremony year
 - For `Oscar` category `Mejor película`, always include `recipient` and mark it as top priority in UI output logic.
-- If there are no verified wins in those three awards, omit `awards` from the entry.
+- If there are verified galardones outside those three awards, report them in output evidence and/or review context, but do not invent unsupported `award` types.
 - Never invent award wins or categories.
 Trailer policy is strict:
 
@@ -208,9 +212,7 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "verdict": "zafa",
   "verdictLabel": "ZAFA",
   "awards": {
-    "wins": [
-      { "award": "oscar", "category": "Mejor película", "recipient": "Productores ganadores", "year": 2025 }
-    ]
+    "wins": []
   },
   "review": "Resena breve en castellano rioplatense",
   "isPremiere": false,
@@ -369,7 +371,7 @@ Return all of the following:
 7. Optional PR link or exact command to open PR
 8. External review source used (site + URL) and what was extracted from it
 9. Platform source used for AR (site + URL) and why chosen `releasePlatform` matches resolver flow
-10. Awards source used (site + URL) and exact `awards.wins` entries added (or explicit confirmation that there are no verified Oscar/Grammy/Cannes wins)
+10. Awards source used (site + URL), verified premios/galardones found, and exact final `awards.wins` content (including empty array when no wins apply)
 
 ## Validation checklist
 
@@ -383,7 +385,7 @@ Return all of the following:
 - [ ] Director/main cast/production company from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
 - [ ] External review enrichment from specialized North American source (or explicit fallback/user-provided link)
-- [ ] Awards enrichment completed: verified Oscar/Grammy/Cannes wins loaded into `awards.wins` (or omitted with explicit no-wins confirmation)
+- [ ] Awards enrichment completed: premios/galardones verified and `awards.wins` always present (wins list or `[]`)
 - [ ] `releasePlatform` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
