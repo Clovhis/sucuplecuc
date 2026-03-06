@@ -17,5 +17,33 @@
 	"productionCompany": "Why Not Productions",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor actriz de reparto",
+				"year": 2025,
+				"recipient": "Zoe Saldaña"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor canción original",
+				"year": 2025,
+				"recipient": "\"El Mal\" (Clément Ducol, Camille y Jacques Audiard)"
+			},
+			{
+				"award": "cannes",
+				"category": "Premio del Jurado",
+				"year": 2024,
+				"recipient": "Jacques Audiard"
+			},
+			{
+				"award": "cannes",
+				"category": "Mejor actriz",
+				"year": 2024,
+				"recipient": "Karla Sofía Gascón, Selena Gomez, Adriana Paz y Zoe Saldaña"
+			}
+		]
+	},
 	"review": "En crítica quedó en terreno favorable (70 en Metacritic) y se discutió mucho por su mezcla de musical, thriller y melodrama. Es de esas que dividen, pero propone algo distinto y con personalidad."
 }
