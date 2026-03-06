@@ -5,6 +5,7 @@ import {
 	getRecommendationGenres,
 	getVerdictBadgeClass,
 	getVerdictLabel,
+	normalizeSearchText,
 } from '../lib/movies';
 import type { Movie } from '../types/movie';
 
@@ -45,13 +46,14 @@ const searchableText = [
 	verdictLabel,
 	movie.slug,
 ].join(' ');
+const searchableTextNormalized = normalizeSearchText(searchableText);
 ---
 
 <article
 	class="movie-card fade-up"
 	style={`--item-delay: ${index * 80}ms;`}
 	data-movie-card
-	data-movie-search={searchableText}
+	data-movie-search={searchableTextNormalized}
 	data-movie-genres={recommendationGenres}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>

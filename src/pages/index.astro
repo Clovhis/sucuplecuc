@@ -100,12 +100,32 @@ const pageDescription =
 		let activeGenre = null;
 
 		if (input instanceof HTMLInputElement) {
+			const movieIndex = cards.flatMap((card) => {
+				if (!(card instanceof HTMLElement)) return [];
+				return [
+					{
+						element: card,
+						searchable: card.dataset.movieSearch ?? '',
+						genres: new Set(
+							(card.dataset.movieGenres ?? '')
+								.split(',')
+								.map((value) => value.trim())
+								.filter(Boolean),
+						),
+					},
+				];
+			});
+
 			const normalize = (value) =>
 				value
 					.toLowerCase()
 					.normalize('NFD')
 					.replace(/[\u0300-\u036f]/g, '')
 					.trim();
+			let lastAppliedQuery = '';
+			let lastAppliedGenre = '';
+			let filterTimer = 0;
+			let filterFrame = 0;
 
 			const persistHomeState = () => {
 				try {
@@ -123,25 +143,39 @@ const pageDescription =
 
 			const runFilter = () => {
 				const query = normalize(input.value);
+				const genreKey = activeGenre ?? '';
+				if (query === lastAppliedQuery && genreKey === lastAppliedGenre) {
+					return;
+				}
+
+				lastAppliedQuery = query;
+				lastAppliedGenre = genreKey;
 				let visibleCount = 0;
 
-				for (const card of cards) {
-					if (!(card instanceof HTMLElement)) continue;
-					const searchable = normalize(card.dataset.movieSearch ?? '');
-					const movieGenres = (card.dataset.movieGenres ?? '')
-						.split(',')
-						.map((value) => value.trim())
-						.filter(Boolean);
-					const genreMatch = !activeGenre || movieGenres.includes(activeGenre);
-					const queryMatch = query.length === 0 || searchable.includes(query);
+				for (const entry of movieIndex) {
+					const genreMatch = !activeGenre || entry.genres.has(activeGenre);
+					const queryMatch = query.length === 0 || entry.searchable.includes(query);
 					const show = genreMatch && queryMatch;
-					card.hidden = !show;
+					if (entry.element.hidden === show) {
+						entry.element.hidden = !show;
+					}
 					if (show) visibleCount += 1;
 				}
 
 				if (emptyState instanceof HTMLElement) {
 					emptyState.hidden = visibleCount > 0;
 				}
+			};
+
+			const scheduleFilter = () => {
+				window.clearTimeout(filterTimer);
+				filterTimer = window.setTimeout(() => {
+					window.cancelAnimationFrame(filterFrame);
+					filterFrame = window.requestAnimationFrame(() => {
+						runFilter();
+						persistHomeState();
+					});
+				}, 120);
 			};
 
 			const restoreHomeState = () => {
@@ -171,6 +205,8 @@ const pageDescription =
 					applyGenreUI();
 				}
 
+				lastAppliedQuery = '';
+				lastAppliedGenre = '';
 				runFilter();
 
 				const savedScrollY = Number(parsed.scrollY);
@@ -183,8 +219,8 @@ const pageDescription =
 				sessionStorage.removeItem(homeStateKey);
 			};
 
-			const cardLinks = cards
-				.map((card) => (card instanceof HTMLElement ? card.querySelector('a') : null))
+			const cardLinks = movieIndex
+				.map((entry) => entry.element.querySelector('a'))
 				.filter((link) => link instanceof HTMLAnchorElement);
 
 			for (const link of cardLinks) {
@@ -207,6 +243,8 @@ const pageDescription =
 					const nextGenre = chip.dataset.homeGenreId ?? null;
 					activeGenre = activeGenre === nextGenre ? null : nextGenre;
 					applyGenreUI();
+					lastAppliedQuery = '';
+					lastAppliedGenre = '';
 					runFilter();
 					persistHomeState();
 				});
@@ -214,8 +252,7 @@ const pageDescription =
 
 			applyGenreUI();
 			input.addEventListener('input', () => {
-				runFilter();
-				persistHomeState();
+				scheduleFilter();
 			});
 			window.addEventListener('pagehide', persistHomeState);
 			restoreHomeState();

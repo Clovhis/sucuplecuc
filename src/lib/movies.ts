@@ -196,7 +196,7 @@ export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel'>):
 	return VERDICT_LABELS[movie.verdict] ?? 'Sin definir';
 }
 
-function normalizeText(value: string): string {
+export function normalizeSearchText(value: string): string {
 	return value
 		.normalize('NFD')
 		.replace(/[\u0300-\u036f]/g, '')
@@ -205,7 +205,7 @@ function normalizeText(value: string): string {
 }
 
 function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void {
-	const normalized = normalizeText(token).replace(/\s+/g, ' ');
+	const normalized = normalizeSearchText(token).replace(/\s+/g, ' ');
 	if (!normalized) return;
 
 	if (normalized.includes('accion') || normalized === 'action') {
@@ -269,19 +269,19 @@ export function getRecommendationGenres(
 	let hasAnimeToken = false;
 	const sourceGenres = Array.isArray(movie.genres) && movie.genres.length > 0 ? movie.genres : [];
 
-	const normalizedCategory = normalizeText(movie.category ?? '');
+	const normalizedCategory = normalizeSearchText(movie.category ?? '');
 	if (normalizedCategory.includes('anime')) {
 		hasAnimeToken = true;
 	}
 	mapGenreToken(movie.category ?? '', genreSet);
 	for (const sourceGenre of sourceGenres) {
-		const normalizedGenre = normalizeText(sourceGenre);
+		const normalizedGenre = normalizeSearchText(sourceGenre);
 		if (normalizedGenre.includes('anime')) {
 			hasAnimeToken = true;
 		}
 		mapGenreToken(sourceGenre, genreSet);
 		for (const chunk of sourceGenre.split(/[,/|]/g)) {
-			const normalizedChunk = normalizeText(chunk);
+			const normalizedChunk = normalizeSearchText(chunk);
 			if (normalizedChunk.includes('anime')) {
 				hasAnimeToken = true;
 			}
@@ -305,7 +305,7 @@ export function getRecommendationGenres(
 }
 
 export function getVerdictBadgeClass(movie: Pick<Movie, 'verdict' | 'verdictLabel'>): string {
-	const normalizedLabel = normalizeText(getVerdictLabel(movie));
+	const normalizedLabel = normalizeSearchText(getVerdictLabel(movie));
 	if (normalizedLabel.includes('mediocre')) {
 		return 'badge--zafa';
 	}
