@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-06. Fuente: src/data/movies/*.json
 
-Total de peliculas: 267
+Total de peliculas: 299
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -138,6 +138,7 @@ Total de peliculas: 267
 | 2023 | Ant-Man and the Wasp: Quantumania | ant-man-and-the-wasp-quantumania-2023 | Accion | Disney Plus |
 | 2023 | Aquaman and the Lost Kingdom | aquaman-and-the-lost-kingdom-2023 | Accion | Netflix |
 | 2023 | Barbie | barbie-2023 | Aventura | HBO Max |
+| 2023 | Blue Beetle | blue-beetle-2023 | Accion | HBO Max |
 | 2023 | Cuando acecha la maldad | cuando-acecha-la-maldad-2023 | Terror | Netflix |
 | 2023 | Guardians of the Galaxy Vol. 3 | guardians-of-the-galaxy-vol-3-2023 | Accion | Disney Plus |
 | 2023 | Indiana Jones and the Dial of Destiny | indiana-jones-and-the-dial-of-destiny-2023 | Accion | Disney Plus |
@@ -151,6 +152,7 @@ Total de peliculas: 267
 | 2023 | Poor Things | poor-things-2023 | Comedia | Prime Video |
 | 2023 | Rascal Does Not Dream of a Sister Venturing Out | rascal-does-not-dream-of-a-sister-venturing-out-2023 | Anime | Crunchyroll |
 | 2023 | Saltburn | saltburn-2023 | Drama | Prime Video |
+| 2023 | Shazam! Fury of the Gods | shazam-fury-of-the-gods-2023 | Accion | Stremio |
 | 2023 | Spider-Man: Across the Spider-Verse | spider-man-across-the-spider-verse-2023 | Animacion | Stremio |
 | 2023 | Spy x Family Code: White | spy-x-family-code-white-2023 | Anime | Crunchyroll |
 | 2023 | Tetris | tetris-2023 | Drama | Apple TV |
@@ -213,24 +215,34 @@ Total de peliculas: 267
 | 2021 | Thunder Force | thunder-force-2021 | Acción | Netflix |
 | 2021 | Venom: Let There Be Carnage | venom-let-there-be-carnage-2021 | Acción | Stremio |
 | 2021 | West Side Story | west-side-story-2021 | Crimen | Disney Plus |
+| 2021 | Zack Snyder's Justice League | zack-snyder-s-justice-league-2021 | Fantasia | HBO Max |
+| 2020 | Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) | birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn-2020 | Crimen | Stremio |
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus |
+| 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max |
 | 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus |
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus |
+| 2019 | Joker | joker-2019 | Drama | Stremio |
+| 2019 | Shazam! | shazam-2019 | Accion | Netflix |
 | 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix |
 | 2018 | Ant-Man and the Wasp | ant-man-and-the-wasp-2018 | Accion | Disney Plus |
+| 2018 | Aquaman | aquaman-2018 | Accion | HBO Max |
 | 2018 | Avengers: Infinity War | avengers-infinity-war-2018 | Accion | Disney Plus |
 | 2018 | Black Panther | black-panther-2018 | Accion | Disney Plus |
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
 | 2018 | Venom | venom-2018 | Accion | Netflix |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
+| 2017 | Justice League | justice-league-2017 | Accion | Stremio |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus |
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
+| 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | Stremio |
+| 2016 | Batman v Superman: Dawn of Justice | batman-v-superman-dawn-of-justice-2016 | Accion | Stremio |
 | 2016 | Captain America: Civil War | captain-america-civil-war-2016 | Accion | Disney Plus |
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus |
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus |
+| 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio |
 | 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus |
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus |
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus |
@@ -241,26 +253,36 @@ Total de peliculas: 267
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus |
+| 2013 | Man of Steel | man-of-steel-2013 | Accion | Stremio |
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video |
 | 2012 | The Avengers | the-avengers-2012 | Accion | Disney Plus |
+| 2012 | The Dark Knight Rises | the-dark-knight-rises-2012 | Accion | Stremio |
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus |
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video |
+| 2011 | Green Lantern | green-lantern-2011 | Accion | Stremio |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
+| 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
+| 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Stremio |
+| 2008 | The Dark Knight | the-dark-knight-2008 | Thriller | Stremio |
 | 2008 | The Incredible Hulk | the-incredible-hulk-2008 | Accion | Disney Plus |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Stremio |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video |
+| 2006 | Superman Returns | superman-returns-2006 | Accion | HBO Max |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus |
+| 2005 | Batman Begins | batman-begins-2005 | Drama | Netflix |
+| 2005 | Constantine | constantine-2005 | Terror | HBO Max |
 | 2005 | Elektra | elektra-2005 | Accion | Disney Plus |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video |
+| 2004 | Catwoman | catwoman-2004 | Accion | Netflix |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
@@ -270,6 +292,16 @@ Total de peliculas: 267
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
+| 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
+| 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix |
+| 1992 | Batman Returns | batman-returns-1992 | Accion | Stremio |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
+| 1989 | Batman | batman-1989 | Fantasia | Stremio |
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
+| 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
+| 1984 | Supergirl | supergirl-1984 | Accion | HBO Max |
+| 1983 | Superman III | superman-iii-1983 | Accion | Stremio |
+| 1980 | Superman II | superman-ii-1980 | Ciencia ficcion | HBO Max |
+| 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max |
+| 1966 | Batman | batman-1966 | Comedia | Stremio |
