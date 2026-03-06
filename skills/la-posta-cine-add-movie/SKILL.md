@@ -32,12 +32,12 @@ Allowed paths:
 
 - `src/data/movies/**`
 - `content/movies/**` (only if this repo variant uses it)
+- `docs/movie-catalog-reference.md`
 
 Conditionally allowed only with explicit user approval in the same request:
 
 - `templates/movie.template.json`
 - `README.md`
-- `docs/movie-catalog-reference.md`
 
 Forbidden paths:
 
@@ -110,8 +110,10 @@ Use `docs/movie-catalog-reference.md` as the first quick inventory reference bef
 Rules:
 
 - Read `docs/movie-catalog-reference.md` first to identify already loaded movies and current gaps by year/platform/category.
-- Do not trust the catalog blindly: always confirm duplicates against real files in `src/data/movies/*.json`.
-- In bulk operations (or when user explicitly asks), update the catalog snapshot after creating movie files.
+- Treat this catalog as the default planning source to reduce token usage. Do not start by reading many files from `src/data/movies`.
+- If candidate `slug` or normalized `title + year` already appears in the catalog, stop and report duplicate before doing deeper checks.
+- Do not trust the catalog blindly: perform a final targeted duplicate verification in `src/data/movies` (exact slug/title-year check) before writing.
+- After creating or updating movie entries (single or bulk), always refresh `docs/movie-catalog-reference.md` in the same change set.
 - Keep the catalog sorted and include at least: `year`, `title`, `slug`, `category`, `releasePlatform`.
 
 ## Metadata lookup rules
@@ -238,15 +240,16 @@ Rules:
 
 ## Duplicate protection (mandatory)
 
-Before writing, scan movie files and abort if duplicate by:
+Before writing, abort if duplicate by:
 
 - same `slug`, or
 - same normalized `title` + `year`
 
 Suggested order:
 
-1. Quick pre-check in `docs/movie-catalog-reference.md`
-2. Mandatory final check in `src/data/movies/*.json` (source of truth)
+1. Mandatory first pass in `docs/movie-catalog-reference.md` (primary, token-saving)
+2. Mandatory targeted final check in `src/data/movies/*.json` (source of truth) for the same `slug` and normalized `title + year`
+3. Full scan of all movie files only if catalog is missing/stale/corrupt
 
 On duplicate, stop and report: `La pelicula ya existe`.
 Do not overwrite existing entries without explicit user authorization.
@@ -350,10 +353,16 @@ If any forbidden path appears, abort and report conflicting files.
 git diff -- src/data/movies/<slug>.json
 ```
 
+If catalog was refreshed:
+
+```bash
+git diff -- docs/movie-catalog-reference.md
+```
+
 Only then commit and push:
 
 ```bash
-git add src/data/movies/<slug>.json
+git add src/data/movies/<slug>.json docs/movie-catalog-reference.md
 git commit -m "Add movie entry: <title> (<year>)"
 git push -u origin feature/movie-<slug>
 ```
@@ -367,16 +376,18 @@ Return all of the following:
 3. Field summary (`title/originalTitle/year/category/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere`)
 4. `npm run build` result
 5. `git diff --name-only` output
-6. Explicit confirmation: `No se modifico ningun archivo fuera del contenido de peliculas`
+6. Explicit confirmation: `No se modifico ningun archivo fuera de peliculas y catalogo`
 7. Optional PR link or exact command to open PR
 8. External review source used (site + URL) and what was extracted from it
 9. Platform source used for AR (site + URL) and why chosen `releasePlatform` matches resolver flow
 10. Awards source used (site + URL), verified premios/galardones found, and exact final `awards.wins` content (including empty array when no wins apply)
+11. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
 
 ## Validation checklist
 
 - [ ] Branch created from updated `main`
 - [ ] Exactly one new movie file added (unless user explicitly authorized otherwise)
+- [ ] `docs/movie-catalog-reference.md` refreshed and includes new movie slug(s)
 - [ ] No modified files outside allowlist
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
@@ -389,7 +400,7 @@ Return all of the following:
 - [ ] `releasePlatform` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
-- [ ] In bulk mode, `docs/movie-catalog-reference.md` updated to include new entries
+- [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)
 - [ ] `npm run build` passed
 - [ ] Diff shown before commit
 - [ ] Commit and push done on feature branch

@@ -241,13 +241,13 @@ Then edit generated JSON fields manually.
 
 Alternative: copy `templates/movie.template.json`.
 
-## Catalog reference for future bulks
+## Catalog-first workflow (mandatory)
 
 The repository includes a snapshot catalog at:
 
 - `docs/movie-catalog-reference.md`
 
-Use it as a quick reference to:
+Use it as the first source in movie add/bulk workflows to:
 
 - see all loaded movies (title/year/slug/category/platform)
 - detect probable gaps before a bulk load
@@ -255,8 +255,10 @@ Use it as a quick reference to:
 
 Important:
 
-- source of truth remains `src/data/movies/*.json`
-- after bulk additions, update `docs/movie-catalog-reference.md` so future runs start from an up-to-date inventory
+- always consult `docs/movie-catalog-reference.md` before inspecting movie JSON files directly
+- source of truth remains `src/data/movies/*.json`, but final duplicate verification should be targeted (same slug or normalized title+year), not an indiscriminate full read
+- after every movie addition (single or bulk), update `docs/movie-catalog-reference.md` in the same commit so the catalog stays current
+- this catalog-first approach is preferred to reduce unnecessary token usage during agent runs
 
 ## Deployment
 
