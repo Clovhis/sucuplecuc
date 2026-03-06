@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-06. Fuente: src/data/movies/*.json
 
-Total de peliculas: 206
+Total de peliculas: 267
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -131,6 +131,7 @@ Total de peliculas: 206
 | 2024 | Transformers Uno | transformers-one-2024 | Acción | Netflix |
 | 2024 | Turtles All the Way Down | turtles-all-the-way-down-2024 | Drama | HBO Max |
 | 2024 | Twisters | twisters-2024 | Accion | Netflix |
+| 2024 | Venom: The Last Dance | venom-the-last-dance-2024 | Accion | HBO Max |
 | 2024 | Wicked | wicked-2024 | Fantasia | HBO Max |
 | 2024 | Wolfs | wolfs-2024 | Comedia | Apple TV |
 | 2023 | Air | air-2023 | Drama | Prime Video |
@@ -212,3 +213,63 @@ Total de peliculas: 206
 | 2021 | Thunder Force | thunder-force-2021 | Acción | Netflix |
 | 2021 | Venom: Let There Be Carnage | venom-let-there-be-carnage-2021 | Acción | Stremio |
 | 2021 | West Side Story | west-side-story-2021 | Crimen | Disney Plus |
+| 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus |
+| 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus |
+| 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus |
+| 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus |
+| 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix |
+| 2018 | Ant-Man and the Wasp | ant-man-and-the-wasp-2018 | Accion | Disney Plus |
+| 2018 | Avengers: Infinity War | avengers-infinity-war-2018 | Accion | Disney Plus |
+| 2018 | Black Panther | black-panther-2018 | Accion | Disney Plus |
+| 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus |
+| 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
+| 2018 | Venom | venom-2018 | Accion | Netflix |
+| 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
+| 2017 | Logan | logan-2017 | Accion | Disney Plus |
+| 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max |
+| 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
+| 2016 | Captain America: Civil War | captain-america-civil-war-2016 | Accion | Disney Plus |
+| 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus |
+| 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus |
+| 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus |
+| 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus |
+| 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus |
+| 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus |
+| 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus |
+| 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus |
+| 2014 | Guardians of the Galaxy | guardians-of-the-galaxy-2014 | Accion | Disney Plus |
+| 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus |
+| 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus |
+| 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus |
+| 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus |
+| 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus |
+| 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video |
+| 2012 | The Avengers | the-avengers-2012 | Accion | Disney Plus |
+| 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus |
+| 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video |
+| 2011 | Thor | thor-2011 | Accion | Disney Plus |
+| 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus |
+| 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
+| 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
+| 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
+| 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Stremio |
+| 2008 | The Incredible Hulk | the-incredible-hulk-2008 | Accion | Disney Plus |
+| 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus |
+| 2007 | Ghost Rider | ghost-rider-2007 | Accion | Stremio |
+| 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video |
+| 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus |
+| 2005 | Elektra | elektra-2005 | Accion | Disney Plus |
+| 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus |
+| 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video |
+| 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio |
+| 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max |
+| 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
+| 2003 | Hulk | hulk-2003 | Accion | Prime Video |
+| 2003 | X2 | x2-2003 | Accion | Disney Plus |
+| 2002 | Blade II | blade-ii-2002 | Accion | Prime Video |
+| 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
+| 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
+| 1998 | Blade | blade-1998 | Accion | HBO Max |
+| 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
+| 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
+| 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
