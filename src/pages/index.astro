@@ -108,6 +108,7 @@ const pageDescription =
 <script>
 	const searchRoot = document.querySelector('[data-movie-search-root]');
 	if (searchRoot instanceof HTMLElement) {
+		const homeBrandLink = document.querySelector('.site-header__brand');
 		const input = searchRoot.querySelector('[data-movie-search-input]');
 		const emptyState = searchRoot.querySelector('[data-movie-search-empty]');
 		const statusBox = searchRoot.querySelector('[data-movie-search-status]');
@@ -119,7 +120,7 @@ const pageDescription =
 		const catalogLoadingPhrases = [
 			'Bancá que carga el videoclub...',
 			'Estamos acomodando los posters.',
-			'GitHub Pages va a su ritmo, pero ya sale.',
+			'Le estamos soplando el polvo a la videoteca.',
 			'Estamos prendiendo todas las pantallas.',
 			'Un segundo, que el catálogo es grandote.',
 		];
@@ -127,7 +128,7 @@ const pageDescription =
 			'Bancá, estamos buscando esa peli.',
 			'Revolviendo el videoclub...',
 			'Estamos filtrando títulos y posters.',
-			'A ver si aparece entre tanto estreno.',
+			'A ver si aparece entre tanto quilombo.',
 			'No te vayas, ya salen los resultados.',
 		];
 		let activeGenre = null;
@@ -164,6 +165,7 @@ const pageDescription =
 			let statusRotateTimer = 0;
 			let statusHideTimer = 0;
 			let statusToken = 0;
+			let skipPersistOnPageHide = false;
 			let activeStatusPhrases = [];
 			let activeStatusIndex = 0;
 
@@ -292,10 +294,15 @@ const pageDescription =
 				}
 			};
 
-			const runFilter = () => {
+			const toggleGenre = (genreId) => {
+				activeGenre = activeGenre === genreId ? null : genreId;
+				return activeGenre;
+			};
+
+			const runFilter = (force = false) => {
 				const query = normalize(input.value);
 				const genreKey = activeGenre ?? '';
-				if (query === lastAppliedQuery && genreKey === lastAppliedGenre) {
+				if (!force && query === lastAppliedQuery && genreKey === lastAppliedGenre) {
 					const visibleCount = getVisibleEntries().length;
 					updateSummary(visibleCount);
 					return visibleCount;
@@ -320,6 +327,16 @@ const pageDescription =
 				}
 
 				updateSummary(visibleCount);
+				return visibleCount;
+			};
+
+			const resetCatalog = (mode = 'catalog') => {
+				activeGenre = null;
+				input.value = '';
+				applyGenreUI();
+				sessionStorage.removeItem(homeStateKey);
+				const visibleCount = runFilter(true);
+				syncStatusWithVisiblePosters(mode, visibleCount);
 				return visibleCount;
 			};
 
@@ -348,7 +365,7 @@ const pageDescription =
 				}
 
 				if (!parsed || typeof parsed !== 'object') {
-					const visibleCount = runFilter();
+					const visibleCount = runFilter(true);
 					syncStatusWithVisiblePosters('catalog', visibleCount);
 					return;
 				}
@@ -356,7 +373,7 @@ const pageDescription =
 				const ageMs = Date.now() - Number(parsed.ts ?? 0);
 				if (!Number.isFinite(ageMs) || ageMs > 1000 * 60 * 30) {
 					sessionStorage.removeItem(homeStateKey);
-					const visibleCount = runFilter();
+					const visibleCount = runFilter(true);
 					syncStatusWithVisiblePosters('catalog', visibleCount);
 					return;
 				}
@@ -376,7 +393,7 @@ const pageDescription =
 						Boolean(activeGenre))
 					? 'search'
 					: 'catalog';
-				const visibleCount = runFilter();
+				const visibleCount = runFilter(true);
 				syncStatusWithVisiblePosters(mode, visibleCount);
 
 				const savedScrollY = Number(parsed.scrollY);
@@ -411,12 +428,14 @@ const pageDescription =
 				if (!(chip instanceof HTMLButtonElement)) continue;
 				chip.addEventListener('click', () => {
 					const nextGenre = chip.dataset.homeGenreId ?? null;
-					activeGenre = activeGenre === nextGenre ? null : nextGenre;
+					const isResetInteraction = activeGenre === nextGenre;
+					toggleGenre(nextGenre);
+					if (isResetInteraction) {
+						input.value = '';
+					}
 					applyGenreUI();
-					lastAppliedQuery = '';
-					lastAppliedGenre = '';
 					showStatus(searchLoadingPhrases);
-					const visibleCount = runFilter();
+					const visibleCount = runFilter(true);
 					syncStatusWithVisiblePosters('search', visibleCount);
 					persistHomeState();
 				});
@@ -426,7 +445,24 @@ const pageDescription =
 			input.addEventListener('input', () => {
 				scheduleFilter();
 			});
-			window.addEventListener('pagehide', persistHomeState);
+			if (homeBrandLink instanceof HTMLAnchorElement) {
+				homeBrandLink.addEventListener('click', (event) => {
+					event.preventDefault();
+					skipPersistOnPageHide = true;
+					showStatus(catalogLoadingPhrases);
+					resetCatalog('catalog');
+					window.requestAnimationFrame(() => {
+						window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+					});
+				});
+			}
+			window.addEventListener('pagehide', () => {
+				if (skipPersistOnPageHide) {
+					skipPersistOnPageHide = false;
+					return;
+				}
+				persistHomeState();
+			});
 			showStatus(catalogLoadingPhrases);
 			restoreHomeState();
 		}

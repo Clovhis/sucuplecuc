@@ -185,6 +185,11 @@ const pageDescription =
 		let spinTimeout = null;
 		let spinEndHandler = null;
 
+		const toggleGenre = (genreId) => {
+			selectedGenre = selectedGenre === genreId ? null : genreId;
+			return selectedGenre;
+		};
+
 		const stopSpin = () => {
 			if (spinTimeout) {
 				window.clearTimeout(spinTimeout);
@@ -446,7 +451,7 @@ const pageDescription =
 			chip.addEventListener('click', () => {
 				const genreId = chip.dataset.genreId;
 				if (!genreId) return;
-				selectedGenre = selectedGenre === genreId ? null : genreId;
+				toggleGenre(genreId);
 				stopSpin();
 				applyChipState();
 				refreshPool();

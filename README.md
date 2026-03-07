@@ -237,6 +237,8 @@ npm run preview
 
 - The home page renders all released movies statically and filters them client-side.
 - Search matches normalized text from title, original title, year, category, platform, director, production company, cast, verdict label, and slug.
+- Clicking an active genre chip again resets the home catalog back to the full list.
+- Clicking the `Cine Posta` logo in the header also clears the current home search/filter state.
 - The UI shows a loading/search status message while visible posters finish loading, so slow GitHub Pages image delivery does not look like an empty result set.
 - First visible posters are prioritized more aggressively than off-screen cards to improve perceived speed on large catalogs.
 
