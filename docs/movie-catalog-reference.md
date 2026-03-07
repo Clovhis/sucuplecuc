@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-06. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-07. Fuente: src/data/movies/*.json
 
-Total de peliculas: 299
+Total de peliculas: 319
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -223,6 +223,7 @@ Total de peliculas: 299
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus |
 | 2019 | Joker | joker-2019 | Drama | Stremio |
+| 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix |
 | 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix |
 | 2018 | Ant-Man and the Wasp | ant-man-and-the-wasp-2018 | Accion | Disney Plus |
@@ -230,6 +231,8 @@ Total de peliculas: 299
 | 2018 | Avengers: Infinity War | avengers-infinity-war-2018 | Accion | Disney Plus |
 | 2018 | Black Panther | black-panther-2018 | Accion | Disney Plus |
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus |
+| 2018 | El Ángel | el-angel-2018 | Crimen | Stremio |
+| 2018 | Rojo | rojo-2018 | Thriller | HBO Max |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
 | 2018 | Venom | venom-2018 | Accion | Netflix |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
@@ -238,18 +241,23 @@ Total de peliculas: 299
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | Stremio |
+| 2017 | Zama | zama-2017 | Drama | Stremio |
 | 2016 | Batman v Superman: Dawn of Justice | batman-v-superman-dawn-of-justice-2016 | Accion | Stremio |
 | 2016 | Captain America: Civil War | captain-america-civil-war-2016 | Accion | Disney Plus |
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus |
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus |
+| 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio |
 | 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus |
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus |
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus |
+| 2015 | El clan | el-clan-2015 | Crimen | Disney Plus |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus |
+| 2015 | Truman | truman-2015 | Drama | Disney Plus |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus |
 | 2014 | Guardians of the Galaxy | guardians-of-the-galaxy-2014 | Accion | Disney Plus |
+| 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus |
@@ -262,13 +270,18 @@ Total de peliculas: 299
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus |
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video |
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Stremio |
+| 2011 | Medianeras | medianeras-2011 | Comedia romántica | Stremio |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus |
+| 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus |
+| 2010 | Carancho | carancho-2010 | Crimen | Disney Plus |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
+| 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
+| 2008 | Leonera | leonera-2008 | Drama | Netflix |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Stremio |
 | 2008 | The Dark Knight | the-dark-knight-2008 | Thriller | Stremio |
 | 2008 | The Incredible Hulk | the-incredible-hulk-2008 | Accion | Disney Plus |
@@ -279,6 +292,7 @@ Total de peliculas: 299
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus |
 | 2005 | Batman Begins | batman-begins-2005 | Drama | Netflix |
 | 2005 | Constantine | constantine-2005 | Terror | HBO Max |
+| 2005 | El aura | el-aura-2005 | Thriller | HBO Max |
 | 2005 | Elektra | elektra-2005 | Accion | Disney Plus |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video |
@@ -289,7 +303,11 @@ Total de peliculas: 299
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video |
+| 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
+| 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max |
+| 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
+| 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
@@ -300,6 +318,8 @@ Total de peliculas: 299
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
+| 1985 | Esperando la carroza | esperando-la-carroza-1985 | Comedia | Prime Video |
+| 1984 | Camila | camila-1984 | Romance | Prime Video |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max |
 | 1983 | Superman III | superman-iii-1983 | Accion | Stremio |
 | 1980 | Superman II | superman-ii-1980 | Ciencia ficcion | HBO Max |

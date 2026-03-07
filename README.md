@@ -51,6 +51,13 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 │  └─ new-movie.mjs
 ├─ docs/
 │  └─ movie-catalog-reference.md
+├─ skills/
+│  ├─ la-posta-cine-add-movie/
+│  │  └─ SKILL.md
+│  └─ la-posta-cine-auditor/
+│     ├─ SKILL.md
+│     ├─ agents/openai.yaml
+│     └─ scripts/audit_recent_movies.cjs
 ├─ templates/
 │  └─ movie.template.json
 ├─ supabase/
@@ -254,6 +261,74 @@ Then edit generated JSON fields manually.
 
 Alternative: copy `templates/movie.template.json`.
 
+## Agent movie workflows
+
+The repo includes two Codex skills for movie-content operations:
+
+- `skills/la-posta-cine-add-movie/`
+- `skills/la-posta-cine-auditor/`
+
+### `la-posta-cine-add-movie`
+
+Use this skill when adding a single movie or a curated backfill batch.
+
+Responsibilities:
+
+- create a feature branch from `main`
+- consult `docs/movie-catalog-reference.md` first
+- avoid duplicates by `slug` or normalized `title + year`
+- gather trustworthy metadata, AR platform availability, trailer, review support, and awards
+- write only movie JSON files (plus catalog refresh when needed)
+- run editorial review audit
+- run `npm run build`
+- push the feature branch
+
+Example trigger prompts:
+
+- `Agrega Terminator 7, es malisima`
+- `Agrega las mejores peliculas nacionales que existan`
+
+### `la-posta-cine-auditor`
+
+Use this skill after a recent add/backfill run to audit the new batch before or after merging.
+
+Default command:
+
+```bash
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref main --recent
+```
+
+Explicit batch command:
+
+```bash
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs \
+  --candidate src/data/movies/foo-2024.json \
+  --candidate src/data/movies/bar-2025.json
+```
+
+What it checks:
+
+- candidate detection from `git diff main...HEAD`
+- required JSON fields and basic schema
+- `awards.wins` structure and supported award types
+- allowed `releasePlatform` labels
+- trailer presence, ID format, and YouTube oEmbed reachability
+- review quality red flags (including numeric score leakage)
+- catalog sync against `docs/movie-catalog-reference.md`
+- editorial duplication by delegating to `review_audit.js`
+
+Output model:
+
+- `PASS` when no errors are found
+- `FAIL` with `ERROR` and `WARN` findings when something needs review
+
+Safe fix scope for the auditor:
+
+- `src/data/movies/**`
+- `docs/movie-catalog-reference.md`
+
+It must not auto-fix site code.
+
 ## Catalog-first workflow (mandatory)
 
 The repository includes a snapshot catalog at:
@@ -272,6 +347,21 @@ Important:
 - source of truth remains `src/data/movies/*.json`, but final duplicate verification should be targeted (same slug or normalized title+year), not an indiscriminate full read
 - after every movie addition (single or bulk), update `docs/movie-catalog-reference.md` in the same commit so the catalog stays current
 - this catalog-first approach is preferred to reduce unnecessary token usage during agent runs
+
+## Recent curated batch
+
+The repository now includes a curated Argentine canon backfill added through the movie workflow, including titles such as:
+
+- `Camila`
+- `Esperando la carroza`
+- `Nueve reinas`
+- `La ciénaga`
+- `El aura`
+- `El secreto de sus ojos`
+- `Relatos salvajes`
+- `Zama`
+
+Use the catalog snapshot as the quick reference for the complete loaded list and current totals.
 
 ## Deployment
 
@@ -328,6 +418,22 @@ Common causes:
 - invalid JSON movie file
 - malformed field types
 - accidental syntax issues in content/components
+
+### Skill validator fails with `ModuleNotFoundError: yaml`
+
+The official skill validator from the Codex `skill-creator` tool requires `PyYAML` in the local Python used by `python`.
+
+Install:
+
+```bash
+python -m pip install PyYAML
+```
+
+Then validate:
+
+```bash
+python C:\Users\<your-user>\.codex\skills\.system\skill-creator\scripts\quick_validate.py skills\la-posta-cine-auditor
+```
 
 ### MCP server does not appear in Codex
 
