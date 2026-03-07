@@ -19,6 +19,7 @@ export type RecommendationGenreId =
 	| 'drama'
 	| 'thriller'
 	| 'sci-fi'
+	| 'superheroes'
 	| 'animacion'
 	| 'anime'
 	| 'romance'
@@ -38,6 +39,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'drama', label: 'Drama' },
 	{ id: 'thriller', label: 'Thriller' },
 	{ id: 'sci-fi', label: 'Sci-Fi' },
+	{ id: 'superheroes', label: 'Superheroes' },
 	{ id: 'animacion', label: 'Animación' },
 	{ id: 'anime', label: 'Anime' },
 	{ id: 'romance', label: 'Romance' },
@@ -262,8 +264,108 @@ export function isArgentinianMovie(movie: Pick<Movie, 'country' | 'isArgentinian
 	return movie.country?.trim().toUpperCase() === 'AR';
 }
 
+const SUPERHERO_INCLUDE_TOKENS = [
+	'ant-man',
+	'aquaman',
+	'avengers',
+	'batman',
+	'batgirl',
+	'batman v superman',
+	'birds of prey',
+	'black adam',
+	'black panther',
+	'black widow',
+	'blade',
+	'blue beetle',
+	'captain america',
+	'captain marvel',
+	'daredevil',
+	'deadpool',
+	'doctor strange',
+	'elektra',
+	'eternals',
+	'fantastic four',
+	'ghost rider',
+	'green lantern',
+	'guardians of the galaxy',
+	'howard the duck',
+	'hulk',
+	'iron man',
+	'justice league',
+	'kraven',
+	'madame web',
+	'man of steel',
+	'morbius',
+	'punisher',
+	'shang-chi',
+	'shazam',
+	'spider-man',
+	'suicide squad',
+	'supergirl',
+	'superman',
+	'the avengers',
+	'the flash',
+	'the incredible hulk',
+	'the marvels',
+	'thunderbolts',
+	'thor',
+	'venom',
+	'watchmen',
+	'wolverine',
+	'wonder woman',
+	'x-men',
+	'zack snyders justice league',
+];
+
+const SUPERHERO_EXCLUDE_TOKENS = [
+	'big hero 6',
+	'into the spider-verse',
+	'across the spider-verse',
+	'spider-verse',
+	'mario',
+];
+
+const SUPERHERO_INCLUDED_SLUGS = new Set([
+	'catwoman-2004',
+	'dark-phoenix-2019',
+	'logan-2017',
+	'the-new-mutants-2020',
+]);
+
+function hasAnyToken(haystack: string, tokens: string[]): boolean {
+	return tokens.some((token) => haystack.includes(token));
+}
+
+function isAnimationOrAnimeMovie(movie: Pick<Movie, 'category' | 'genres'>): boolean {
+	const genreText = normalizeSearchText([movie.category ?? '', ...(movie.genres ?? [])].join(' '));
+	return (
+		genreText.includes('animacion') ||
+		genreText.includes('animation') ||
+		genreText.includes('anime')
+	);
+}
+
+function isMarvelOrDcSuperheroMovie(
+	movie: Pick<Movie, 'slug' | 'title' | 'originalTitle' | 'category' | 'genres'>,
+): boolean {
+	if (isAnimationOrAnimeMovie(movie)) {
+		return false;
+	}
+
+	if (SUPERHERO_INCLUDED_SLUGS.has(movie.slug)) {
+		return true;
+	}
+
+	const heroText = normalizeSearchText([movie.slug, movie.title, movie.originalTitle].join(' '));
+	if (hasAnyToken(heroText, SUPERHERO_EXCLUDE_TOKENS)) {
+		return false;
+	}
+
+	return hasAnyToken(heroText, SUPERHERO_INCLUDE_TOKENS);
+}
+
 export function getRecommendationGenres(
-	movie: Pick<Movie, 'category' | 'genres' | 'country' | 'isArgentinian'>,
+	movie: Pick<Movie, 'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'country' | 'isArgentinian'>,
 ): RecommendationGenreId[] {
 	const genreSet = new Set<RecommendationGenreId>();
 	let hasAnimeToken = false;
@@ -297,6 +399,10 @@ export function getRecommendationGenres(
 
 	if (isArgentinianMovie(movie)) {
 		genreSet.add('pelicula-nacional');
+	}
+
+	if (isMarvelOrDcSuperheroMovie(movie)) {
+		genreSet.add('superheroes');
 	}
 
 	return RECOMMENDATION_GENRE_OPTIONS.map((option) => option.id).filter((genreId) =>

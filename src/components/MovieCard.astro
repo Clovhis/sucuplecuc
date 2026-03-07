@@ -20,6 +20,9 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictLabel = getVerdictLabel(movie);
 const verdictClass = getVerdictBadgeClass(movie);
 const recommendationGenres = getRecommendationGenres(movie).join(',');
+const entryDelayMs = `${Math.min(index, 11) * 32}ms`;
+const posterLoading = index < 8 ? 'eager' : 'lazy';
+const posterFetchPriority = index < 4 ? 'high' : 'auto';
 
 type VerdictGlyph = 'thumbs-up' | 'meh' | 'thumbs-down';
 
@@ -51,14 +54,22 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 
 <article
 	class="movie-card fade-up"
-	style={`--item-delay: ${index * 80}ms;`}
+	style={`--item-delay: ${entryDelayMs};`}
 	data-movie-card
 	data-movie-search={searchableTextNormalized}
 	data-movie-genres={recommendationGenres}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">
-			<img class="movie-card__poster" src={posterUrl} alt={`Poster de ${movie.title}`} loading="lazy" />
+			<img
+				class="movie-card__poster"
+				src={posterUrl}
+				alt={`Poster de ${movie.title}`}
+				loading={posterLoading}
+				decoding="async"
+				fetchpriority={posterFetchPriority}
+				data-movie-poster
+			/>
 		</div>
 		<div class="movie-card__body">
 			<div class="movie-card__header">

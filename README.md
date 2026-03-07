@@ -5,6 +5,10 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 ## Features
 
 - Static movie catalog (JSON-based content, no CMS required)
+- Home catalog with client-side search by title/year/platform/rating
+- Genre chips on home, including `Superheroes` (Marvel/DC live-action only)
+- Visible loading/search status in home while posters and filtered results settle
+- Faster initial catalog paint via poster prioritization + lighter card rendering
 - Movie detail pages by slug (`/peliculas/<slug>/`)
 - Embedded YouTube trailer (via `trailerYoutubeId`)
 - Verdict badges + optional colloquial `verdictLabel`
@@ -228,6 +232,13 @@ Preview:
 ```bash
 npm run preview
 ```
+
+### Home catalog behavior
+
+- The home page renders all released movies statically and filters them client-side.
+- Search matches normalized text from title, original title, year, category, platform, director, production company, cast, verdict label, and slug.
+- The UI shows a loading/search status message while visible posters finish loading, so slow GitHub Pages image delivery does not look like an empty result set.
+- First visible posters are prioritized more aggressively than off-screen cards to improve perceived speed on large catalogs.
 
 ## Add a new movie
 
