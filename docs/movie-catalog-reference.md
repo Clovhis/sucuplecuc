@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-07. Fuente: src/data/movies/*.json
 
-Total de peliculas: 334
+Total de peliculas: 344
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -225,6 +225,7 @@ Total de peliculas: 334
 | 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Stremio |
 | 2019 | Joker | joker-2019 | Drama | Stremio |
 | 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus |
+| 2019 | Once Upon a Time in Hollywood | once-upon-a-time-in-hollywood-2019 | Drama | Netflix |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix |
 | 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix |
 | 2018 | Ant-Man and the Wasp | ant-man-and-the-wasp-2018 | Accion | Disney Plus |
@@ -256,6 +257,7 @@ Total de peliculas: 334
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus |
+| 2015 | The Hateful Eight | the-hateful-eight-2015 | Thriller | Prime Video |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus |
 | 2014 | Betibú | betibu-2014 | Thriller | Stremio |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus |
@@ -271,6 +273,7 @@ Total de peliculas: 334
 | 2013 | Tesis sobre un homicidio | tesis-sobre-un-homicidio-2013 | Thriller | HBO Max |
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus |
+| 2012 | Django Unchained | django-unchained-2012 | Drama | Prime Video |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video |
 | 2012 | The Avengers | the-avengers-2012 | Accion | Disney Plus |
 | 2012 | The Dark Knight Rises | the-dark-knight-rises-2012 | Accion | Stremio |
@@ -286,6 +289,7 @@ Total de peliculas: 334
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix |
+| 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
@@ -293,6 +297,7 @@ Total de peliculas: 334
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Stremio |
 | 2008 | The Dark Knight | the-dark-knight-2008 | Thriller | Stremio |
 | 2008 | The Incredible Hulk | the-incredible-hulk-2008 | Accion | Disney Plus |
+| 2007 | Death Proof | death-proof-2007 | Thriller | Stremio |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Stremio |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video |
@@ -306,11 +311,13 @@ Total de peliculas: 334
 | 2005 | Tiempo de valientes | tiempo-de-valientes-2005 | Comedia | Stremio |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video |
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix |
+| 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix |
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video |
+| 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video |
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix |
@@ -323,10 +330,13 @@ Total de peliculas: 334
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
+| 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio |
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio |
+| 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Stremio |
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Stremio |
+| 1992 | Reservoir Dogs | reservoir-dogs-1992 | Crimen | Stremio |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
 | 1989 | Batman | batman-1989 | Fantasia | Stremio |
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
