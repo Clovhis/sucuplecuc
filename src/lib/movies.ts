@@ -25,6 +25,7 @@ export type RecommendationGenreId =
 	| 'romance'
 	| 'crimen'
 	| 'aventura'
+	| 'oscar-mejor-pelicula'
 	| 'pelicula-nacional';
 
 export interface RecommendationGenreOption {
@@ -45,7 +46,8 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'romance', label: 'Romance' },
 	{ id: 'crimen', label: 'Crimen' },
 	{ id: 'aventura', label: 'Aventura' },
-	{ id: 'pelicula-nacional', label: 'Pelicula Nacional' },
+	{ id: 'oscar-mejor-pelicula', label: 'Ganadoras del Oscar' },
+	{ id: 'pelicula-nacional', label: 'Cine nacional' },
 ];
 
 function withTrailingSlash(value: string): string {
@@ -252,6 +254,21 @@ export function isArgentinianMovie(movie: Pick<Movie, 'country' | 'isArgentinian
 	return movie.country?.trim().toUpperCase() === 'AR';
 }
 
+function isOscarBestPictureWinner(movie: Pick<Movie, 'awards'>): boolean {
+	return (movie.awards?.wins ?? []).some((win) => {
+		if (win.award !== 'oscar') {
+			return false;
+		}
+
+		const normalizedCategory = normalizeSearchText(win.category);
+		return (
+			normalizedCategory.includes('mejor pelicula') ||
+			normalizedCategory.includes('best picture') ||
+			normalizedCategory.includes('outstanding picture')
+		);
+	});
+}
+
 const SUPERHERO_INCLUDE_TOKENS = [
 	'ant-man',
 	'aquaman',
@@ -353,7 +370,10 @@ function isMarvelOrDcSuperheroMovie(
 }
 
 export function getRecommendationGenres(
-	movie: Pick<Movie, 'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'country' | 'isArgentinian'>,
+	movie: Pick<
+		Movie,
+		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'country' | 'isArgentinian' | 'awards'
+	>,
 ): RecommendationGenreId[] {
 	const genreSet = new Set<RecommendationGenreId>();
 	let hasAnimeToken = false;
@@ -387,6 +407,10 @@ export function getRecommendationGenres(
 
 	if (isArgentinianMovie(movie)) {
 		genreSet.add('pelicula-nacional');
+	}
+
+	if (isOscarBestPictureWinner(movie)) {
+		genreSet.add('oscar-mejor-pelicula');
 	}
 
 	if (isMarvelOrDcSuperheroMovie(movie)) {
