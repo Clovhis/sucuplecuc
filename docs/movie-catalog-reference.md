@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-07. Fuente: src/data/movies/*.json
 
-Total de peliculas: 319
+Total de peliculas: 334
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -222,6 +222,7 @@ Total de peliculas: 319
 | 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus |
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus |
+| 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Stremio |
 | 2019 | Joker | joker-2019 | Drama | Stremio |
 | 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix |
@@ -232,11 +233,13 @@ Total de peliculas: 319
 | 2018 | Black Panther | black-panther-2018 | Accion | Disney Plus |
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus |
 | 2018 | El Ángel | el-angel-2018 | Crimen | Stremio |
+| 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus |
 | 2018 | Rojo | rojo-2018 | Thriller | HBO Max |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
 | 2018 | Venom | venom-2018 | Accion | Netflix |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
 | 2017 | Justice League | justice-league-2017 | Accion | Stremio |
+| 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus |
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
@@ -254,14 +257,18 @@ Total de peliculas: 319
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus |
+| 2014 | Betibú | betibu-2014 | Thriller | Stremio |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus |
 | 2014 | Guardians of the Galaxy | guardians-of-the-galaxy-2014 | Accion | Disney Plus |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus |
+| 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Stremio |
+| 2013 | Séptimo | septimo-2013 | Thriller | HBO Max |
+| 2013 | Tesis sobre un homicidio | tesis-sobre-un-homicidio-2013 | Thriller | HBO Max |
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video |
@@ -277,6 +284,7 @@ Total de peliculas: 319
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
+| 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
@@ -295,8 +303,10 @@ Total de peliculas: 319
 | 2005 | El aura | el-aura-2005 | Thriller | HBO Max |
 | 2005 | Elektra | elektra-2005 | Accion | Disney Plus |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus |
+| 2005 | Tiempo de valientes | tiempo-de-valientes-2005 | Comedia | Stremio |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video |
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix |
+| 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
@@ -306,12 +316,16 @@ Total de peliculas: 319
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
 | 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max |
+| 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
 | 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus |
+| 2000 | Plata quemada | plata-quemada-2000 | Crimen | Stremio |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix |
+| 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio |
+| 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Stremio |
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Stremio |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
 | 1989 | Batman | batman-1989 | Fantasia | Stremio |
@@ -319,6 +333,7 @@ Total de peliculas: 319
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
 | 1985 | Esperando la carroza | esperando-la-carroza-1985 | Comedia | Prime Video |
+| 1985 | La historia oficial | la-historia-oficial-1985 | Drama | Stremio |
 | 1984 | Camila | camila-1984 | Romance | Prime Video |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max |
 | 1983 | Superman III | superman-iii-1983 | Accion | Stremio |
