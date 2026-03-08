@@ -56,10 +56,12 @@ The bundled script checks:
 
 - recent candidate detection from `git diff <base>...HEAD`
 - required fields and JSON shape
+- raw HTML entities or scrape artifacts accidentally persisted into JSON fields
 - `awards.wins` structure and supported award types
+- `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
 - platform labels against the site allowlist
 - catalog sync in `docs/movie-catalog-reference.md`
-- trailer format and YouTube oEmbed reachability
+- trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
 - raw numeric score leakage in reviews
 - editorial duplication by delegating to `skills/la-posta-cine-add-movie/scripts/review_audit.js`
 

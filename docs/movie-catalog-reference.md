@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-07. Fuente: src/data/movies/*.json
 
-Total de peliculas: 344
+Total de peliculas: 437
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -12,8 +12,8 @@ Total de peliculas: 344
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Cine |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
-| 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
 | 2026 | GOAT | goat-2026 | Animacion | Cine |
+| 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Cine |
 | 2026 | Mercy | mercy-2026 | Accion | Cine |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Cine |
@@ -90,8 +90,8 @@ Total de peliculas: 344
 | 2024 | Conclave | conclave-2024 | Thriller | Prime Video |
 | 2024 | Deadpool & Wolverine | deadpool-and-wolverine-2024 | Accion | Disney Plus |
 | 2024 | Dune: Part Two | dune-part-two-2024 | Accion | Netflix |
-| 2024 | El Jockey | el-jockey-2024 | Crimen | Disney Plus |
 | 2024 | EMILIA PÉREZ | emilia-perez-2024 | Drama | Stremio |
+| 2024 | El Jockey | el-jockey-2024 | Crimen | Disney Plus |
 | 2024 | Furiosa: A Mad Max Saga | furiosa-a-mad-max-saga-2024 | Accion | Netflix |
 | 2024 | Gladiator II | gladiator-ii-2024 | Accion | Netflix |
 | 2024 | Godzilla x Kong: The New Empire | godzilla-x-kong-the-new-empire-2024 | Accion | Netflix |
@@ -178,13 +178,13 @@ Total de peliculas: 344
 | 2022 | Jurassic World: Dominion | jurassic-world-dominion-2022 | Accion | Stremio |
 | 2022 | Morbius | morbius-2022 | Accion | Netflix |
 | 2022 | Nope | nope-2022 | Terror | Stremio |
-| 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | The Banshees of Inisherin | the-banshees-of-inisherin-2022 | Comedia | Disney Plus |
 | 2022 | The Batman | the-batman-2022 | Accion | HBO Max |
 | 2022 | The Fabelmans | the-fabelmans-2022 | Drama | Stremio |
 | 2022 | The Whale | the-whale-2022 | Drama | Netflix |
 | 2022 | Thor: Love and Thunder | thor-love-and-thunder-2022 | Accion | Disney Plus |
 | 2022 | Top Gun: Maverick | top-gun-maverick-2022 | Accion | Stremio |
+| 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | Uncharted | uncharted-2022 | Accion | Stremio |
 | 2021 | Belfast | belfast-2021 | Biográfica | Stremio |
 | 2021 | Black Widow | black-widow-2021 | Acción | Disney Plus |
@@ -217,6 +217,7 @@ Total de peliculas: 344
 | 2021 | West Side Story | west-side-story-2021 | Crimen | Disney Plus |
 | 2021 | Zack Snyder's Justice League | zack-snyder-s-justice-league-2021 | Fantasia | HBO Max |
 | 2020 | Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) | birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn-2020 | Crimen | Stremio |
+| 2020 | Nomadland | nomadland-2020 | Drama | Disney Plus |
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus |
 | 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max |
 | 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus |
@@ -226,6 +227,7 @@ Total de peliculas: 344
 | 2019 | Joker | joker-2019 | Drama | Stremio |
 | 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus |
 | 2019 | Once Upon a Time in Hollywood | once-upon-a-time-in-hollywood-2019 | Drama | Netflix |
+| 2019 | Parasite | parasite-2019 | Comedia | Netflix |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix |
 | 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix |
 | 2018 | Ant-Man and the Wasp | ant-man-and-the-wasp-2018 | Accion | Disney Plus |
@@ -234,6 +236,7 @@ Total de peliculas: 344
 | 2018 | Black Panther | black-panther-2018 | Accion | Disney Plus |
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus |
 | 2018 | El Ángel | el-angel-2018 | Crimen | Stremio |
+| 2018 | Green Book | green-book-2018 | Drama | Prime Video |
 | 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus |
 | 2018 | Rojo | rojo-2018 | Thriller | HBO Max |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
@@ -243,6 +246,7 @@ Total de peliculas: 344
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus |
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max |
+| 2017 | The Shape of Water | the-shape-of-water-2017 | Drama | Disney Plus |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | Stremio |
 | 2017 | Zama | zama-2017 | Drama | Stremio |
@@ -251,21 +255,25 @@ Total de peliculas: 344
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus |
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus |
+| 2016 | Moonlight | moonlight-2016 | Drama | Prime Video |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio |
 | 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus |
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus |
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus |
+| 2015 | Spotlight | spotlight-2015 | Drama | Netflix |
 | 2015 | The Hateful Eight | the-hateful-eight-2015 | Thriller | Prime Video |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus |
 | 2014 | Betibú | betibu-2014 | Thriller | Stremio |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus |
+| 2014 | Birdman or (The Unexpected Virtue of Ignorance) | birdman-or-the-unexpected-virtue-of-ignorance-2014 | Drama | Disney Plus |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus |
 | 2014 | Guardians of the Galaxy | guardians-of-the-galaxy-2014 | Accion | Disney Plus |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus |
+| 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Stremio |
@@ -273,6 +281,7 @@ Total de peliculas: 344
 | 2013 | Tesis sobre un homicidio | tesis-sobre-un-homicidio-2013 | Thriller | HBO Max |
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus |
+| 2012 | Argo | argo-2012 | Thriller | Netflix |
 | 2012 | Django Unchained | django-unchained-2012 | Drama | Prime Video |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video |
 | 2012 | The Avengers | the-avengers-2012 | Accion | Disney Plus |
@@ -281,12 +290,14 @@ Total de peliculas: 344
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video |
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Stremio |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Stremio |
+| 2011 | The Artist | the-artist-2011 | Comedia | Stremio |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
+| 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Stremio |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix |
@@ -295,16 +306,21 @@ Total de peliculas: 344
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
 | 2008 | Leonera | leonera-2008 | Drama | Netflix |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Stremio |
+| 2008 | Slumdog Millionaire | slumdog-millionaire-2008 | Drama | Prime Video |
 | 2008 | The Dark Knight | the-dark-knight-2008 | Thriller | Stremio |
+| 2008 | The Hurt Locker | the-hurt-locker-2008 | Drama | Prime Video |
 | 2008 | The Incredible Hulk | the-incredible-hulk-2008 | Accion | Disney Plus |
 | 2007 | Death Proof | death-proof-2007 | Thriller | Stremio |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Stremio |
+| 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Stremio |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video |
 | 2006 | Superman Returns | superman-returns-2006 | Accion | HBO Max |
+| 2006 | The Departed | the-departed-2006 | Thriller | HBO Max |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus |
 | 2005 | Batman Begins | batman-begins-2005 | Drama | Netflix |
 | 2005 | Constantine | constantine-2005 | Terror | HBO Max |
+| 2005 | Crash | crash-2005 | Drama | Prime Video |
 | 2005 | El aura | el-aura-2005 | Thriller | HBO Max |
 | 2005 | Elektra | elektra-2005 | Accion | Disney Plus |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus |
@@ -313,40 +329,117 @@ Total de peliculas: 344
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix |
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix |
+| 2004 | Million Dollar Baby | million-dollar-baby-2004 | Drama | Prime Video |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video |
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix |
+| 2003 | The Lord of the Rings: The Return of the King | the-lord-of-the-rings-the-return-of-the-king-2003 | Drama | Prime Video |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video |
+| 2002 | Chicago | chicago-2002 | Comedia | Stremio |
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
 | 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max |
+| 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Stremio |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
+| 2000 | Gladiator | gladiator-2000 | Drama | Stremio |
 | 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus |
 | 2000 | Plata quemada | plata-quemada-2000 | Crimen | Stremio |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
+| 1999 | American Beauty | american-beauty-1999 | Drama | Stremio |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
+| 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio |
+| 1997 | Titanic | titanic-1997 | Drama | Disney Plus |
+| 1996 | The English Patient | the-english-patient-1996 | Drama | Stremio |
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix |
+| 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio |
+| 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Stremio |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix |
+| 1993 | Schindler's List | schindler-s-list-1993 | Drama | HBO Max |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Stremio |
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Stremio |
 | 1992 | Reservoir Dogs | reservoir-dogs-1992 | Crimen | Stremio |
+| 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max |
+| 1991 | The Silence of the Lambs | the-silence-of-the-lambs-1991 | Crimen | Stremio |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
+| 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Stremio |
 | 1989 | Batman | batman-1989 | Fantasia | Stremio |
+| 1989 | Driving Miss Daisy | driving-miss-daisy-1989 | Drama | Stremio |
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
+| 1988 | Rain Man | rain-man-1988 | Drama | Prime Video |
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio |
+| 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Stremio |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
+| 1986 | Platoon | platoon-1986 | Drama | Stremio |
 | 1985 | Esperando la carroza | esperando-la-carroza-1985 | Comedia | Prime Video |
 | 1985 | La historia oficial | la-historia-oficial-1985 | Drama | Stremio |
+| 1985 | Out of Africa | out-of-africa-1985 | Drama | Stremio |
+| 1984 | Amadeus | amadeus-1984 | Drama | Stremio |
 | 1984 | Camila | camila-1984 | Romance | Prime Video |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max |
 | 1983 | Superman III | superman-iii-1983 | Accion | Stremio |
+| 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Stremio |
+| 1982 | Gandhi | gandhi-1982 | Drama | Stremio |
+| 1981 | Chariots of Fire | chariots-of-fire-1981 | Drama | Disney Plus |
+| 1980 | Ordinary People | ordinary-people-1980 | Drama | Stremio |
 | 1980 | Superman II | superman-ii-1980 | Ciencia ficcion | HBO Max |
+| 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max |
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max |
+| 1978 | The Deer Hunter | the-deer-hunter-1978 | Drama | Stremio |
+| 1977 | Annie Hall | annie-hall-1977 | Comedia | Stremio |
+| 1976 | Rocky | rocky-1976 | Drama | Stremio |
+| 1975 | One Flew Over the Cuckoo's Nest | one-flew-over-the-cuckoo-s-nest-1975 | Drama | HBO Max |
+| 1974 | The Godfather Part II | the-godfather-part-ii-1974 | Drama | Netflix |
+| 1973 | The Sting | the-sting-1973 | Crimen | Stremio |
+| 1972 | The Godfather | the-godfather-1972 | Drama | Netflix |
+| 1971 | The French Connection | the-french-connection-1971 | Crimen | Disney Plus |
+| 1970 | Patton | patton-1970 | Drama | Disney Plus |
+| 1969 | Midnight Cowboy | midnight-cowboy-1969 | Drama | Stremio |
+| 1968 | Oliver! | oliver-1968 | Drama | Stremio |
+| 1967 | In the Heat of the Night | in-the-heat-of-the-night-1967 | Drama | Prime Video |
+| 1966 | A Man for All Seasons | a-man-for-all-seasons-1966 | Historia | Stremio |
 | 1966 | Batman | batman-1966 | Comedia | Stremio |
+| 1965 | The Sound of Music | the-sound-of-music-1965 | Drama | Disney Plus |
+| 1964 | My Fair Lady | my-fair-lady-1964 | Comedia | Stremio |
+| 1963 | Tom Jones | tom-jones-1963 | Comedia | HBO Max |
+| 1962 | Lawrence of Arabia | lawrence-of-arabia-1962 | Historia | Netflix |
+| 1961 | West Side Story | west-side-story-1961 | Drama | Stremio |
+| 1960 | The Apartment | the-apartment-1960 | Drama | Stremio |
+| 1959 | Ben-Hur | ben-hur-1959 | Drama | Stremio |
+| 1958 | Gigi | gigi-1958 | Comedia | Stremio |
+| 1957 | The Bridge on the River Kwai | the-bridge-on-the-river-kwai-1957 | Drama | Stremio |
+| 1956 | Around the World in 80 Days | around-the-world-in-80-days-1956 | Comedia | Stremio |
+| 1955 | Marty | marty-1955 | Drama | Prime Video |
+| 1954 | On the Waterfront | on-the-waterfront-1954 | Drama | Stremio |
+| 1953 | From Here to Eternity | from-here-to-eternity-1953 | Romance | Stremio |
+| 1952 | The Greatest Show on Earth | the-greatest-show-on-earth-1952 | Romance | Stremio |
+| 1951 | An American in Paris | an-american-in-paris-1951 | Musical | Stremio |
+| 1950 | All About Eve | all-about-eve-1950 | Drama | Stremio |
+| 1949 | All the King's Men | all-the-king-s-men-1949 | Drama | Stremio |
+| 1948 | Hamlet | hamlet-1948 | Drama | Stremio |
+| 1947 | Gentleman's Agreement | gentleman-s-agreement-1947 | Drama | Disney Plus |
+| 1946 | The Best Years of Our Lives | the-best-years-of-our-lives-1946 | Drama | Stremio |
+| 1945 | The Lost Weekend | the-lost-weekend-1945 | Drama | HBO Max |
+| 1944 | Going My Way | going-my-way-1944 | Drama | Stremio |
+| 1943 | Casablanca | casablanca-1943 | Drama | HBO Max |
+| 1942 | Mrs. Miniver | mrs-miniver-1942 | Drama | Stremio |
+| 1941 | How Green Was My Valley | how-green-was-my-valley-1941 | Drama | Disney Plus |
+| 1940 | Rebecca | rebecca-1940 | Thriller | Stremio |
+| 1939 | Gone with the Wind | gone-with-the-wind-1939 | Drama | HBO Max |
+| 1938 | You Can't Take It with You | you-can-t-take-it-with-you-1938 | Romance | Stremio |
+| 1937 | The Life of Emile Zola | the-life-of-emile-zola-1937 | Drama | Stremio |
+| 1936 | The Great Ziegfeld | the-great-ziegfeld-1936 | Musical | Stremio |
+| 1935 | Mutiny on the Bounty | mutiny-on-the-bounty-1935 | Drama | Stremio |
+| 1934 | It Happened One Night | it-happened-one-night-1934 | Comedia | Stremio |
+| 1933 | Cavalcade | cavalcade-1933 | Drama | Stremio |
+| 1932 | Grand Hotel | grand-hotel-1932 | Drama | Stremio |
+| 1931 | Cimarron | cimarron-1931 | Western | Prime Video |
+| 1930 | All Quiet on the Western Front | all-quiet-on-the-western-front-1930 | Drama | Stremio |
+| 1929 | The Broadway Melody | the-broadway-melody-1929 | Drama | Stremio |
+| 1927 | Wings | wings-1927 | Drama | Stremio |

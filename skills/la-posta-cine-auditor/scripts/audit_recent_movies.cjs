@@ -19,6 +19,8 @@ const ALLOWED_PLATFORMS = new Set([
 ]);
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
+const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
+const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
 
 function parseArgs(argv) {
 	const args = {
@@ -133,6 +135,26 @@ function addFinding(findings, severity, code, file, message) {
 	findings.push({ severity, code, file, message });
 }
 
+function collectStringFields(value, currentPath, output) {
+	if (typeof value === 'string') {
+		output.push({ path: currentPath, value });
+		return;
+	}
+
+	if (Array.isArray(value)) {
+		for (const [index, entry] of value.entries()) {
+			collectStringFields(entry, `${currentPath}[${index}]`, output);
+		}
+		return;
+	}
+
+	if (value && typeof value === 'object') {
+		for (const [key, entry] of Object.entries(value)) {
+			collectStringFields(entry, currentPath ? `${currentPath}.${key}` : key, output);
+		}
+	}
+}
+
 function validateMovieShape(movie, candidatePath, catalogText, findings) {
 	const requiredStrings = [
 		'slug',
@@ -200,6 +222,26 @@ function validateMovieShape(movie, candidatePath, catalogText, findings) {
 		addFinding(findings, 'error', 'invalid-verdict', candidatePath, `Unsupported verdict "${String(movie.verdict)}".`);
 	}
 
+	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
+	const normalizedMovieTitle = normalizeText(movie.title);
+	const recommendedLabelPatterns = ['muy buena', 'recomendada', 'vale la pena', 'clasico', 'imperdible'];
+	if (/\b(19|20)\d{2}\b/.test(movie.verdictLabel) || movie.verdictLabel.length > 24) {
+		addFinding(findings, 'warn', 'verdict-label-noisy', candidatePath, 'verdictLabel should read like a short user-facing quality signal, not metadata.');
+	}
+
+	if (
+		normalizedMovieTitle &&
+		normalizedMovieTitle
+			.split(' ')
+			.some((token) => token.length >= 4 && normalizedVerdictLabel.includes(token))
+	) {
+		addFinding(findings, 'warn', 'verdict-label-title-leak', candidatePath, 'verdictLabel should not repeat the movie title.');
+	}
+
+	if (movie.verdict === 'recomendada' && !recommendedLabelPatterns.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
+		addFinding(findings, 'warn', 'verdict-label-tone', candidatePath, 'recomendada entries should use a clearly positive verdictLabel.');
+	}
+
 	if (!ALLOWED_PLATFORMS.has(movie.releasePlatform)) {
 		addFinding(findings, 'error', 'invalid-platform', candidatePath, `Unsupported releasePlatform "${String(movie.releasePlatform)}".`);
 	}
@@ -236,6 +278,18 @@ function validateMovieShape(movie, candidatePath, catalogText, findings) {
 	if (!catalogText.includes(`| ${movie.year} | ${movie.title} | ${movie.slug} |`)) {
 		addFinding(findings, 'warn', 'catalog-sync', candidatePath, 'Movie row was not found in docs/movie-catalog-reference.md.');
 	}
+
+	const stringFields = [];
+	collectStringFields(movie, '', stringFields);
+	for (const field of stringFields) {
+		if (HTML_ENTITY_PATTERN.test(field.value)) {
+			addFinding(findings, 'error', 'html-entity-artifact', candidatePath, `Field "${field.path}" still contains HTML entities.`);
+		}
+
+		if (SCRAPE_ARTIFACT_PATTERN.test(field.value)) {
+			addFinding(findings, 'error', 'scrape-artifact', candidatePath, `Field "${field.path}" still contains citation or scrape artifacts.`);
+		}
+	}
 }
 
 function validateTrailerId(movie, candidatePath, findings) {
@@ -253,9 +307,82 @@ function validateTrailerId(movie, candidatePath, findings) {
 	return value;
 }
 
-function checkYoutubeOEmbed(videoId, movieTitle) {
-	const url = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
+function fetchText(url, redirectsLeft = 3) {
+	return new Promise((resolve) => {
+		const request = https.get(
+			url,
+			{
+				headers: {
+					'User-Agent': 'Mozilla/5.0 (compatible; la-posta-cine-auditor/1.0)',
+				},
+			},
+			(response) => {
+				let body = '';
+				if (
+					response.statusCode >= 300 &&
+					response.statusCode < 400 &&
+					response.headers.location &&
+					redirectsLeft > 0
+				) {
+					response.resume();
+					resolve(fetchText(response.headers.location, redirectsLeft - 1));
+					return;
+				}
+
+				response.on('data', (chunk) => {
+					body += chunk;
+				});
+				response.on('end', () => {
+					resolve({
+						ok: response.statusCode === 200,
+						statusCode: response.statusCode,
+						body,
+					});
+				});
+			},
+		);
+
+		request.setTimeout(8000, () => {
+			request.destroy(new Error('timeout'));
+		});
+
+		request.on('error', (error) => {
+			resolve({
+				ok: false,
+				reason: error.message,
+				body: '',
+			});
+		});
+	});
+}
+
+function extractYoutubeResultIds(html) {
+	return [...new Set((html.match(/watch\?v=([A-Za-z0-9_-]{11})/g) || []).map((match) => match.slice(8)))];
+}
+
+function analyzeYoutubeTitle(movieTitle, movieYear, embedTitle) {
 	const expectedTitle = normalizeText(movieTitle);
+	const normalizedEmbedTitle = normalizeText(embedTitle);
+	const expectedTokens = expectedTitle.split(' ').filter(Boolean);
+	const titlePhraseMatch = expectedTitle.length > 0 && normalizedEmbedTitle.includes(expectedTitle);
+	const longTokenMatch = expectedTokens.some((token) => token.length >= 5 && normalizedEmbedTitle.includes(token));
+	const mentionedYears = [...String(embedTitle || '').matchAll(/\b(19|20)\d{2}\b/g)].map((match) => Number(match[0]));
+	const yearMentioned = mentionedYears.length > 0;
+	const yearMatches = mentionedYears.includes(movieYear);
+	const isShortOrAmbiguousTitle = expectedTokens.length <= 2 || expectedTitle.length <= 12;
+
+	return {
+		titlePhraseMatch,
+		longTokenMatch,
+		yearMentioned,
+		yearMatches,
+		isShortOrAmbiguousTitle,
+		titleLooksRelated: titlePhraseMatch || (!isShortOrAmbiguousTitle && longTokenMatch),
+	};
+}
+
+function checkYoutubeOEmbed(videoId) {
+	const url = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
 
 	return new Promise((resolve) => {
 		const request = https.get(url, (response) => {
@@ -275,17 +402,10 @@ function checkYoutubeOEmbed(videoId, movieTitle) {
 
 				try {
 					const data = JSON.parse(body);
-					const normalizedEmbedTitle = normalizeText(data.title || '');
-					const titleLooksRelated =
-						expectedTitle.length === 0 ||
-						normalizedEmbedTitle.includes(expectedTitle) ||
-						expectedTitle.split(' ').some((token) => token.length >= 5 && normalizedEmbedTitle.includes(token));
-
 					resolve({
 						ok: true,
 						title: data.title || '',
 						authorName: data.author_name || '',
-						titleLooksRelated,
 					});
 				} catch (error) {
 					resolve({
@@ -307,6 +427,23 @@ function checkYoutubeOEmbed(videoId, movieTitle) {
 			});
 		});
 	});
+}
+
+async function searchYoutubeResults(movieTitle, movieYear) {
+	const query = encodeURIComponent(`${movieTitle} ${movieYear} trailer`);
+	const result = await fetchText(`https://www.youtube.com/results?search_query=${query}`);
+	if (!result.ok) {
+		return {
+			ok: false,
+			reason: result.reason || `YouTube search returned HTTP ${result.statusCode}.`,
+			videoIds: [],
+		};
+	}
+
+	return {
+		ok: true,
+		videoIds: extractYoutubeResultIds(result.body).slice(0, 10),
+	};
 }
 
 function runEditorialAudit(rootDir, candidates) {
@@ -396,11 +533,47 @@ async function auditCandidates(args) {
 		const trailerId = validateTrailerId(movie, candidate, findings);
 
 		if (trailerId && !args.skipYoutube) {
-			const trailerResult = await checkYoutubeOEmbed(trailerId, movie.title);
+			const trailerResult = await checkYoutubeOEmbed(trailerId);
 			if (!trailerResult.ok) {
 				addFinding(findings, 'error', 'youtube-oembed', candidate, trailerResult.reason);
-			} else if (!trailerResult.titleLooksRelated) {
-				addFinding(findings, 'warn', 'youtube-title-mismatch', candidate, `YouTube title "${trailerResult.title}" does not look obviously related to "${movie.title}".`);
+				continue;
+			}
+
+			const trailerTitleAnalysis = analyzeYoutubeTitle(movie.title, movie.year, trailerResult.title);
+			let youtubeSearch = null;
+			if (trailerTitleAnalysis.isShortOrAmbiguousTitle || !trailerTitleAnalysis.titleLooksRelated || !trailerTitleAnalysis.yearMentioned) {
+				youtubeSearch = await searchYoutubeResults(movie.title, movie.year);
+				if (!youtubeSearch.ok) {
+					addFinding(findings, 'warn', 'youtube-search-unavailable', candidate, youtubeSearch.reason);
+				}
+			}
+
+			if (trailerTitleAnalysis.yearMentioned && !trailerTitleAnalysis.yearMatches) {
+				addFinding(findings, 'error', 'youtube-year-mismatch', candidate, `YouTube title "${trailerResult.title}" mentions a different year than ${movie.year}.`);
+			}
+
+			if (!trailerTitleAnalysis.titleLooksRelated) {
+				if (youtubeSearch?.ok && youtubeSearch.videoIds.includes(trailerId)) {
+					addFinding(findings, 'warn', 'youtube-title-mismatch', candidate, `YouTube title "${trailerResult.title}" does not text-match "${movie.title}", but the video does appear in YouTube search results for the movie.`);
+				} else {
+					addFinding(
+						findings,
+						'error',
+						'youtube-title-mismatch',
+						candidate,
+						`YouTube title "${trailerResult.title}" does not look related enough to "${movie.title}".`,
+					);
+				}
+			}
+
+			if ((trailerTitleAnalysis.isShortOrAmbiguousTitle || !trailerTitleAnalysis.yearMentioned) && youtubeSearch?.ok && !youtubeSearch.videoIds.includes(trailerId)) {
+				addFinding(
+					findings,
+					'error',
+					'youtube-search-mismatch',
+					candidate,
+					`trailerYoutubeId "${trailerId}" was not found in YouTube search results for "${movie.title} ${movie.year} trailer".`,
+				);
 			}
 		}
 	}
