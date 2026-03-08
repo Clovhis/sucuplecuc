@@ -48,18 +48,6 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'pelicula-nacional', label: 'Pelicula Nacional' },
 ];
 
-export interface RecommendationMovie {
-	slug: string;
-	title: string;
-	year: number;
-	posterUrl: string;
-	screenshotUrls: string[];
-	verdictLabel: string;
-	verdictClass: string;
-	url: string;
-	genres: RecommendationGenreId[];
-}
-
 function withTrailingSlash(value: string): string {
 	return value.endsWith('/') ? value : `${value}/`;
 }
@@ -430,20 +418,4 @@ export function getPosterUrl(poster: string): string {
 
 export function getMoviePath(slug: string): string {
 	return joinWithBase(`peliculas/${slug}/`);
-}
-
-export function getRecommendationMovies(): RecommendationMovie[] {
-	return getMovies().map((movie) => ({
-		slug: movie.slug,
-		title: movie.title,
-		year: movie.year,
-		posterUrl: getPosterUrl(movie.poster),
-		screenshotUrls: (movie.screenshots ?? [])
-			.filter((shot) => typeof shot === 'string' && shot.trim().length > 0)
-			.map((shot) => getPosterUrl(shot)),
-		verdictLabel: getVerdictLabel(movie),
-		verdictClass: getVerdictBadgeClass(movie),
-		url: getMoviePath(movie.slug),
-		genres: getRecommendationGenres(movie),
-	}));
 }

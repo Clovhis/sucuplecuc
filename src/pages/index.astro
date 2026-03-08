@@ -28,70 +28,88 @@ const pageDescription =
 				</div>
 			</div>
 			<div class="site-header__support">
-				<a
-					class="site-header__donate"
-					href="https://cafecito.app/cineposta"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Invitá un cafecito
-				</a>
-				<p class="site-header__donate-copy" data-donate-copy>No seas raton.</p>
+				<div class="site-header__actions">
+					<a
+						class="site-header__donate"
+						href="https://cafecito.app/cineposta"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Invitá un cafecito
+					</a>
+				</div>
+				<p class="site-header__donate-copy" data-donate-copy>Tu ayuda mantiene viva la data posta.</p>
 			</div>
 		</div>
 	</header>
 
-	<main class="container">
+	<main id="main-content" class="container home-catalog">
 		{
 			movies.length > 0 ? (
 				<>
-					<section class="movie-search" data-movie-search-root>
-						<div class="home-genre-filter" data-home-genre-filter>
-							<p class="home-genre-filter__label">Elegí género</p>
-							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-								{
-									RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-										<button
-											type="button"
-											class="home-genre-filter__chip"
-											data-home-genre-chip
-											data-home-genre-id={genre.id}
-											aria-pressed="false"
-										>
-											{genre.label}
-										</button>
-									))
-								}
-							</div>
-						</div>
-						<label for="movie-search-input" class="movie-search__label">BUSCAR PELÍCULA</label>
-						<input
-							id="movie-search-input"
-							class="movie-search__input"
-							type="search"
-							placeholder="Titulo, año, plataforma o rating..."
-							autocomplete="off"
-							data-movie-search-input
-						/>
-						<div
-							class="movie-search__status"
-							data-movie-search-status
-							role="status"
-							aria-live="polite"
-							aria-atomic="true"
-							hidden
-						>
-							<span class="movie-search__status-spinner" aria-hidden="true"></span>
-							<p class="movie-search__status-copy" data-movie-search-status-copy>
-								Bancá que carga el videoclub...
+					<section class="catalog-shell fade-up" style="--item-delay: 0ms;">
+						<div class="catalog-shell__intro">
+							<p class="catalog-shell__kicker">Explorá el catálogo</p>
+							<p class="catalog-shell__copy">
+								Usá filtros o escribí directo. Lo importante es decidir rápido qué ver.
 							</p>
 						</div>
-						<p class="movie-search__summary" data-movie-search-summary>
-							{movies.length} títulos publicados.
-						</p>
-						<p class="message-box movie-search__empty" data-movie-search-empty hidden>
-							No encontramos peliculas con ese criterio.
-						</p>
+						<section class="movie-search" data-movie-search-root>
+							<div class="home-genre-filter" data-home-genre-filter>
+								<p class="home-genre-filter__label">Elegí género</p>
+								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+									{
+										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+											<button
+												type="button"
+												class="home-genre-filter__chip"
+												data-home-genre-chip
+												data-home-genre-id={genre.id}
+												aria-pressed="false"
+											>
+												{genre.label}
+											</button>
+										))
+									}
+								</div>
+							</div>
+							<label for="movie-search-input" class="movie-search__label">Buscar película</label>
+							<div class="movie-search__input-wrap">
+								<span class="movie-search__input-icon" aria-hidden="true">
+									<svg viewBox="0 0 24 24" role="presentation">
+										<circle cx="11" cy="11" r="6.5"></circle>
+										<path d="M16 16l4 4"></path>
+									</svg>
+								</span>
+								<input
+									id="movie-search-input"
+									class="movie-search__input"
+									type="search"
+									placeholder="Título, año, plataforma o rating..."
+									autocomplete="off"
+									data-movie-search-input
+								/>
+							</div>
+							<div
+								class="movie-search__status"
+								data-movie-search-status
+								role="status"
+								aria-live="polite"
+								aria-atomic="true"
+								hidden
+							>
+								<span class="movie-search__status-spinner" aria-hidden="true"></span>
+								<p class="movie-search__status-copy" data-movie-search-status-copy>
+									Bancá que carga el videoclub...
+								</p>
+							</div>
+							<p class="movie-search__summary" data-movie-search-summary>
+								{movies.length} títulos publicados.
+							</p>
+							<p class="message-box movie-search__empty" data-movie-search-empty hidden>
+								No encontramos peliculas con ese criterio.
+							</p>
+						</section>
 					</section>
 
 					<section class="movie-grid" aria-label="Peliculas publicadas" data-movie-search-grid>
