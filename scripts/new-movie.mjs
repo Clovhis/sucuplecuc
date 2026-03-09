@@ -71,6 +71,12 @@ async function main() {
 	const template = await loadTemplate();
 	const movieData = {
 		...template,
+		editorial: {
+			idealFor: [],
+			becauseYouLiked: [],
+			related: [],
+			...(template.editorial ?? {}),
+		},
 		slug: args.slug,
 		title: args.title,
 		year,
@@ -78,10 +84,12 @@ async function main() {
 
 	await writeFile(outputPath, `${JSON.stringify(movieData, null, '\t')}\n`, 'utf8');
 	console.log(`Entrada creada en ${outputPath}`);
+	console.log(
+		'Antes de publicar completa, como minimo, editorial.becauseYouLiked (1-2 slugs) y editorial.related (3-4 slugs).',
+	);
 }
 
 main().catch((error) => {
 	console.error(error.message);
 	process.exit(1);
 });
-

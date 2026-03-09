@@ -70,8 +70,7 @@ const awardCategories = groupedAwards.flatMap((group) =>
 );
 const hasEditorialTopGrid =
 	Boolean(editorialSummary.runtime) || editorialSummary.idealFor.length > 0;
-const bridgeIntro = editorialSummary.bridge.length > 1 ? 'Si te gustaron ' : 'Si te gustó ';
-const bridgeOutro = ', también puede gustarte esta.';
+const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} image={posterUrl}>
@@ -112,6 +111,27 @@ const bridgeOutro = ', también puede gustarte esta.';
 					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
 					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
 				</div>
+				{
+					editorialSummary.bridge.length > 0 && (
+						<section class="movie-detail__editorial-card movie-detail__editorial-card--bridge">
+							<p class="movie-detail__editorial-copy">
+								Te puede gustar si venís de{' '}
+								{editorialSummary.bridge.map((recommendation, index) => (
+									<>
+										<a class="movie-detail__text-link" href={recommendation.url}>
+											{recommendation.title}
+										</a>
+										{index < editorialSummary.bridge.length - 2
+											? ', '
+											: index === editorialSummary.bridge.length - 2
+												? ' o '
+												: ''}
+									</>
+								))}
+							</p>
+						</section>
+					)
+				}
 				<dl class="movie-detail__credits">
 					<div class="movie-detail__credit-item">
 						<dt>Titulo original</dt>
@@ -208,34 +228,11 @@ const bridgeOutro = ', también puede gustarte esta.';
 					<p class="movie-detail__review-kicker">Reseña honesta</p>
 					<p class="movie-detail__review">{movie.review}</p>
 				</section>
-				{
-					editorialSummary.bridge.length > 0 && (
-						<section class="movie-detail__editorial-card movie-detail__editorial-card--bridge">
-							<p class="movie-detail__editorial-copy">
-								{bridgeIntro}
-								{editorialSummary.bridge.map((recommendation, index) => (
-									<>
-										<a class="movie-detail__text-link" href={recommendation.url}>
-											{recommendation.title}
-										</a>
-										{index < editorialSummary.bridge.length - 2
-											? ', '
-											: index === editorialSummary.bridge.length - 2
-												? ' o '
-												: ''}
-									</>
-								))}
-								{bridgeOutro}
-							</p>
-						</section>
-					)
-				}
+				<MovieRating movieSlug={movie.slug} />
 				{
 					editorialSummary.related.length > 0 && (
 						<section class="movie-detail__editorial-card movie-detail__editorial-card--related">
-							<p class="movie-detail__editorial-copy">
-								Si ya la viste y te gustó, probá con alguna de estas.
-							</p>
+							<p class="movie-detail__editorial-copy">{relatedIntro}</p>
 							<div class="movie-detail__related-list">
 								{editorialSummary.related.map((recommendation) => (
 									<a class="movie-detail__related-link" href={recommendation.url}>
@@ -247,7 +244,6 @@ const bridgeOutro = ', también puede gustarte esta.';
 						</section>
 					)
 				}
-				<MovieRating movieSlug={movie.slug} />
 
 				{trailerEmbedUrl ? (
 					<iframe

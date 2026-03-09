@@ -19,6 +19,7 @@ const ALLOWED_PLATFORMS = new Set([
 ]);
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
+const ALLOWED_IDEAL_FOR_TAGS = new Set(['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche']);
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
 
@@ -155,7 +156,60 @@ function collectStringFields(value, currentPath, output) {
 	}
 }
 
-function validateMovieShape(movie, candidatePath, catalogText, findings) {
+function validateEditorialSlugList({
+	movieSlug,
+	candidatePath,
+	fieldName,
+	value,
+	findings,
+	knownMovieSlugs,
+	requiredMinimum,
+	recommendedMaximum,
+}) {
+	if (!Array.isArray(value) || value.length < requiredMinimum) {
+		addFinding(
+			findings,
+			'error',
+			fieldName === 'becauseYouLiked' ? 'missing-editorial-bridge' : 'missing-editorial-related',
+			candidatePath,
+			`editorial.${fieldName} must include at least ${requiredMinimum} existing movie slug${requiredMinimum === 1 ? '' : 's'}.`,
+		);
+		return;
+	}
+
+	if (value.length > recommendedMaximum) {
+		addFinding(
+			findings,
+			'warn',
+			'editorial-list-too-long',
+			candidatePath,
+			`editorial.${fieldName} has ${value.length} entries, but the UI only uses up to ${recommendedMaximum}.`,
+		);
+	}
+
+	const seen = new Set();
+	for (const [index, item] of value.entries()) {
+		if (typeof item !== 'string' || item.trim().length === 0) {
+			addFinding(findings, 'error', 'invalid-editorial-slug', candidatePath, `editorial.${fieldName}[${index}] must be a non-empty slug string.`);
+			continue;
+		}
+
+		const slug = item.trim();
+		if (slug === movieSlug) {
+			addFinding(findings, 'error', 'self-editorial-slug', candidatePath, `editorial.${fieldName}[${index}] points back to the same movie.`);
+		}
+		if (seen.has(slug)) {
+			addFinding(findings, 'error', 'duplicate-editorial-slug', candidatePath, `editorial.${fieldName} repeats slug "${slug}".`);
+		}
+		seen.add(slug);
+
+		if (!knownMovieSlugs.has(slug)) {
+			addFinding(findings, 'error', 'unknown-editorial-slug', candidatePath, `editorial.${fieldName}[${index}] references unknown slug "${slug}".`);
+		}
+	}
+}
+
+function validateMovieShape(movie, candidatePath, catalogText, findings, knownMovieSlugs) {
 	const requiredStrings = [
 		'slug',
 		'title',
@@ -186,6 +240,47 @@ function validateMovieShape(movie, candidatePath, catalogText, findings) {
 
 	if (!Array.isArray(movie.screenshots)) {
 		addFinding(findings, 'error', 'invalid-screenshots', candidatePath, 'screenshots must be an array.');
+	}
+
+	if (movie.editorial === undefined || movie.editorial === null || typeof movie.editorial !== 'object' || Array.isArray(movie.editorial)) {
+		addFinding(findings, 'error', 'missing-editorial', candidatePath, 'editorial must exist as an object so the recommendation blocks can render with curated links.');
+	} else {
+		if (
+			movie.editorial.idealFor !== undefined &&
+			(!Array.isArray(movie.editorial.idealFor) ||
+				movie.editorial.idealFor.some((tag) => typeof tag !== 'string' || !ALLOWED_IDEAL_FOR_TAGS.has(tag)))
+		) {
+			addFinding(findings, 'error', 'invalid-ideal-for', candidatePath, 'editorial.idealFor contains unsupported tags.');
+		}
+
+		validateEditorialSlugList({
+			movieSlug: String(movie.slug || ''),
+			candidatePath,
+			fieldName: 'becauseYouLiked',
+			value: movie.editorial.becauseYouLiked,
+			findings,
+			knownMovieSlugs,
+			requiredMinimum: 1,
+			recommendedMaximum: 2,
+		});
+
+		validateEditorialSlugList({
+			movieSlug: String(movie.slug || ''),
+			candidatePath,
+			fieldName: 'related',
+			value: movie.editorial.related,
+			findings,
+			knownMovieSlugs,
+			requiredMinimum: 3,
+			recommendedMaximum: 4,
+		});
+
+		if (Array.isArray(movie.editorial.becauseYouLiked) && Array.isArray(movie.editorial.related)) {
+			const overlap = movie.editorial.becauseYouLiked.filter((slug) => movie.editorial.related.includes(slug));
+			if (overlap.length > 0) {
+				addFinding(findings, 'warn', 'editorial-overlap', candidatePath, `editorial.becauseYouLiked and editorial.related repeat: ${overlap.join(', ')}.`);
+			}
+		}
 	}
 
 	if (!movie.awards || !Array.isArray(movie.awards.wins)) {
@@ -482,6 +577,26 @@ function runEditorialAudit(rootDir, candidates) {
 	};
 }
 
+function loadKnownMovieSlugs(rootDir) {
+	const knownMovieSlugs = new Set();
+	for (const entry of fs.readdirSync(rootDir, { withFileTypes: true })) {
+		if (!entry.isFile() || !entry.name.endsWith('.json')) {
+			continue;
+		}
+
+		try {
+			const movie = readJson(path.join(rootDir, entry.name));
+			if (typeof movie.slug === 'string' && movie.slug.trim().length > 0) {
+				knownMovieSlugs.add(movie.slug.trim());
+			}
+		} catch {
+			// Ignore malformed files here; they are handled later when audited directly.
+		}
+	}
+
+	return knownMovieSlugs;
+}
+
 async function auditCandidates(args) {
 	const rootDir = path.resolve(args.root);
 	if (!fs.existsSync(rootDir)) {
@@ -498,6 +613,7 @@ async function auditCandidates(args) {
 
 	const catalogPath = path.resolve('docs/movie-catalog-reference.md');
 	const catalogText = fs.existsSync(catalogPath) ? fs.readFileSync(catalogPath, 'utf8') : '';
+	const knownMovieSlugs = loadKnownMovieSlugs(rootDir);
 	const findings = [];
 
 	const committedChanges = listCommittedChanges(args.baseRef);
@@ -529,7 +645,7 @@ async function auditCandidates(args) {
 			continue;
 		}
 
-		validateMovieShape(movie, candidate, catalogText, findings);
+		validateMovieShape(movie, candidate, catalogText, findings, knownMovieSlugs);
 		const trailerId = validateTrailerId(movie, candidate, findings);
 
 		if (trailerId && !args.skipYoutube) {

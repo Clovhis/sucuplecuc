@@ -1,4 +1,4 @@
 interface:
   display_name: "La Posta Cine Auditor"
   short_description: "Audita peliculas cargadas recientemente"
-  default_prompt: "Audita las peliculas recien agregadas en La Posta Cine, detecta problemas de trailer, review, premios, plataforma y schema, y corrige solo los casos seguros antes de revalidar."
+  default_prompt: "Audita las peliculas recien agregadas en La Posta Cine, detecta problemas de trailer, review, premios, plataforma, schema y bloques editoriales de recomendaciones, y corrige solo los casos seguros antes de revalidar."

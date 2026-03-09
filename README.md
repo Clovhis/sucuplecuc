@@ -14,6 +14,7 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 - Verdict badges + optional colloquial `verdictLabel`
 - Platform label (`releasePlatform`: Cine, Netflix, HBO Max, Apple TV, Prime Video, Disney Plus, Crunchyroll, Stremio)
 - Technical metadata in detail page (`originalTitle`, `category`, `director`, `mainCast`, `productionCompany`)
+- Editorial helper blocks in detail page (`runtimeMinutes`, `idealFor`, bridge recommendations, related suggestions)
 - Awards section in detail page (always present as `awards.wins`, including empty list when no wins apply)
 - Optional screenshot gallery (2 images in detail page left column)
 - Community star rating (1..5) backed by Supabase, no login
@@ -89,6 +90,12 @@ Current schema:
 	"productionCompany": "Studio / Production Company",
 	"verdict": "recomendada|zafa|no_recomendada|basura_atomica",
 	"verdictLabel": "Optional display override",
+	"runtimeMinutes": 118,
+	"editorial": {
+		"idealFor": ["solo", "domingo"],
+		"becauseYouLiked": ["relatos-salvajes-2014", "parasite-2019"],
+		"related": ["nueve-reinas-2000", "truman-2015", "el-clan-2015"]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -116,6 +123,10 @@ Current schema:
   - always include `awards.wins` in JSON
   - if at least 1 Oscar/Grammy/Cannes win exists, include detailed entries
   - if no wins exist, keep `awards.wins` as an empty array (`[]`)
+- `runtimeMinutes` is optional in schema but strongly recommended for every new movie entry.
+- `editorial.becauseYouLiked` should point to 1-2 existing movie slugs and powers the `Si te gustó/gustaron...` block.
+- `editorial.related` should point to 3-4 existing movie slugs and powers the `Si ya la viste...` block.
+- `editorial` recommendations must reference existing movie slugs, must not point back to the same movie, and should be curated instead of left to auto-pick defaults.
 - `releasePlatform` is optional but recommended.
 - `originalTitle`, `category`, `director`, `mainCast`, and `productionCompany` are required for publishing.
 
@@ -278,6 +289,7 @@ Responsibilities:
 - consult `docs/movie-catalog-reference.md` first
 - avoid duplicates by `slug` or normalized `title + year`
 - gather trustworthy metadata, AR platform availability, trailer, review support, and awards
+- curate the editorial recommendation slugs for `Si te gustó/gustaron...` and `Si ya la viste...`
 - write only movie JSON files (plus catalog refresh when needed)
 - run editorial review audit
 - run `npm run build`
@@ -312,6 +324,7 @@ What it checks:
 - required JSON fields and basic schema
 - `awards.wins` structure and supported award types
 - allowed `releasePlatform` labels
+- editorial bridge/related recommendations presence and valid linked slugs
 - trailer presence, ID format, and YouTube oEmbed reachability
 - review quality red flags (including numeric score leakage)
 - catalog sync against `docs/movie-catalog-reference.md`

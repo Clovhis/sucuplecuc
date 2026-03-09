@@ -56,6 +56,8 @@ The bundled script checks:
 
 - recent candidate detection from `git diff <base>...HEAD`
 - required fields and JSON shape
+- editorial recommendation completeness for `becauseYouLiked` and `related`
+- editorial recommendation slugs that resolve to real movie entries
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
 - `awards.wins` structure and supported award types
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
