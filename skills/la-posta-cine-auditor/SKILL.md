@@ -7,6 +7,8 @@ description: Audit recently added La Posta Cine movie entries after `la-posta-ci
 
 Audit a recent movie batch without touching site code.
 
+This skill must always execute the bundled audit script. Manual eyeballing is not enough, even if the only requested check is verdict labels or score/badge tone.
+
 ## Scope
 
 Use this skill after a movie add/backfill workflow, especially when the branch contains new files under `src/data/movies`.
@@ -62,6 +64,7 @@ The bundled script checks:
 - `awards.wins` structure and supported award types
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
 - `verdictLabel` hard cap of `21` visible characters so the card badge never clips
+- mandatory batch-level `verdictLabel` diversity so generic badge families like `SE CAE`, `GARPA`, or `ZAFA` do not get overused across the same load
 - platform labels against the site allowlist
 - catalog sync in `docs/movie-catalog-reference.md`
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
@@ -72,6 +75,12 @@ The bundled script checks:
 
 - `ERROR`: fix before considering the batch valid
 - `WARN`: inspect and fix if confidence is high
+
+The `verdictLabel` batch-diversity check is mandatory:
+
+- if the script reports repeated generic score/badge families across the batch, treat it as a hard stop
+- do not waive it just because the JSON schema is otherwise valid
+- rotate labels until the batch stops reading like a template
 
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:
 
@@ -86,7 +95,7 @@ Do not invent trailers, awards, or platform data.
 If the script reports fixable issues:
 
 1. Edit only affected movie JSON files and, if needed, `docs/movie-catalog-reference.md`
-2. Re-run the auditor
+2. Re-run the auditor without skipping the mandatory batch score/badge check
 3. Run `npm run build`
 4. Confirm no forbidden path changed
 

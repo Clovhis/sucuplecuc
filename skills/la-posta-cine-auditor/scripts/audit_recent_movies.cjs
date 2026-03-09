@@ -23,6 +23,28 @@ const ALLOWED_IDEAL_FOR_TAGS = new Set(['solo', 'en pareja', 'con amigos', 'domi
 const MAX_VERDICT_LABEL_LENGTH = 21;
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
+const RECOMMENDED_LABEL_PATTERNS = [
+	'garpa',
+	'muy buena',
+	'vale la pena',
+	'clasico',
+	'clasicazo',
+	'imperdible',
+	'filosa',
+	'picante',
+	'top',
+	'fuerte',
+	'onda',
+	'buena',
+	'afilada',
+	'slasherazo',
+	'digna',
+];
+const VERDICT_LABEL_FAMILY_PATTERNS = {
+	recomendada: ['garpa', 'clasic', 'top', 'filosa', 'picante', 'fuerte', 'onda', 'buena', 'afilada', 'slasherazo'],
+	zafa: ['zafa', 'meh', 'pasable', 'cumplidora', 'con onda', 'tibiona', 'livianita', 'media maquina', 'zafarola'],
+	no_recomendada: ['se cae', 'un garron', 'plomazo', 'mamarracho', 'papelon', 'no pega una', 'no rema', 'todo ruido', 'delirio feo', 'apagadisima'],
+};
 
 function parseArgs(argv) {
 	const args = {
@@ -135,6 +157,17 @@ function readJson(filePath) {
 
 function addFinding(findings, severity, code, file, message) {
 	findings.push({ severity, code, file, message });
+}
+
+function detectVerdictLabelFamily(verdict, verdictLabel) {
+	const normalizedLabel = normalizeText(verdictLabel);
+	const patterns = VERDICT_LABEL_FAMILY_PATTERNS[verdict] || [];
+	for (const pattern of patterns) {
+		if (normalizedLabel.includes(pattern)) {
+			return pattern;
+		}
+	}
+	return normalizedLabel;
 }
 
 function collectStringFields(value, currentPath, output) {
@@ -320,7 +353,6 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 
 	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
 	const normalizedMovieTitle = normalizeText(movie.title);
-	const recommendedLabelPatterns = ['muy buena', 'recomendada', 'vale la pena', 'clasico', 'imperdible'];
 	if (movie.verdictLabel.trim().length > MAX_VERDICT_LABEL_LENGTH) {
 		addFinding(
 			findings,
@@ -344,7 +376,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		addFinding(findings, 'warn', 'verdict-label-title-leak', candidatePath, 'verdictLabel should not repeat the movie title.');
 	}
 
-	if (movie.verdict === 'recomendada' && !recommendedLabelPatterns.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
+	if (movie.verdict === 'recomendada' && !RECOMMENDED_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
 		addFinding(findings, 'warn', 'verdict-label-tone', candidatePath, 'recomendada entries should use a clearly positive verdictLabel.');
 	}
 
@@ -608,6 +640,68 @@ function loadKnownMovieSlugs(rootDir) {
 	return knownMovieSlugs;
 }
 
+function validateBatchVerdictLabels(candidateMovies, findings) {
+	const normalizedLabelMap = new Map();
+	const verdictGroups = new Map();
+
+	for (const candidate of candidateMovies) {
+		const normalizedLabel = normalizeText(candidate.movie.verdictLabel);
+		if (!normalizedLabelMap.has(normalizedLabel)) {
+			normalizedLabelMap.set(normalizedLabel, []);
+		}
+		normalizedLabelMap.get(normalizedLabel).push(candidate.filePath);
+
+		const verdict = candidate.movie.verdict;
+		if (!verdictGroups.has(verdict)) {
+			verdictGroups.set(verdict, []);
+		}
+		verdictGroups.get(verdict).push({
+			filePath: candidate.filePath,
+			label: candidate.movie.verdictLabel,
+			family: detectVerdictLabelFamily(verdict, candidate.movie.verdictLabel),
+		});
+	}
+
+	for (const [normalizedLabel, files] of normalizedLabelMap.entries()) {
+		if (normalizedLabel && files.length > 1) {
+			addFinding(
+				findings,
+				'error',
+				'duplicate-verdict-label',
+				'batch',
+				`The batch reuses the same verdictLabel in multiple files: ${files.join(', ')}.`,
+			);
+		}
+	}
+
+	for (const [verdict, entries] of verdictGroups.entries()) {
+		if (entries.length < 4) {
+			continue;
+		}
+
+		const familyMap = new Map();
+		for (const entry of entries) {
+			if (!familyMap.has(entry.family)) {
+				familyMap.set(entry.family, []);
+			}
+			familyMap.get(entry.family).push(entry.filePath);
+		}
+
+		const repetitionThreshold = Math.max(3, Math.ceil(entries.length * 0.5));
+		for (const [family, files] of familyMap.entries()) {
+			if (files.length >= repetitionThreshold) {
+				addFinding(
+					findings,
+					'error',
+					'verdict-label-family-repetition',
+					'batch',
+					`Too many "${verdict}" entries reuse the same generic verdictLabel family "${family}" (${files.length}/${entries.length}): ${files.join(', ')}.`,
+				);
+			}
+		}
+	}
+}
+
 async function auditCandidates(args) {
 	const rootDir = path.resolve(args.root);
 	if (!fs.existsSync(rootDir)) {
@@ -626,6 +720,7 @@ async function auditCandidates(args) {
 	const catalogText = fs.existsSync(catalogPath) ? fs.readFileSync(catalogPath, 'utf8') : '';
 	const knownMovieSlugs = loadKnownMovieSlugs(rootDir);
 	const findings = [];
+	const candidateMovies = [];
 
 	const committedChanges = listCommittedChanges(args.baseRef);
 	const normalizedRoot = args.root.replace(/\\/g, '/').replace(/\/+$/, '');
@@ -655,6 +750,11 @@ async function auditCandidates(args) {
 			addFinding(findings, 'error', 'invalid-json', candidate, `Failed to parse JSON: ${error.message}`);
 			continue;
 		}
+
+		candidateMovies.push({
+			filePath: candidate,
+			movie,
+		});
 
 		validateMovieShape(movie, candidate, catalogText, findings, knownMovieSlugs);
 		const trailerId = validateTrailerId(movie, candidate, findings);
@@ -704,6 +804,8 @@ async function auditCandidates(args) {
 			}
 		}
 	}
+
+	validateBatchVerdictLabels(candidateMovies, findings);
 
 	const editorialAudit = runEditorialAudit(args.root, candidatePaths);
 	if (editorialAudit.status === 'error') {
