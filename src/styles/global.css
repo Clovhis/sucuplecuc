@@ -782,10 +782,6 @@ img {
 		rgba(255, 255, 255, 0.02);
 }
 
-.movie-detail__editorial-card--bridge {
-	border-color: rgba(117, 153, 255, 0.34);
-}
-
 .movie-detail__editorial-card--related {
 	gap: 0.75rem;
 }
@@ -840,20 +836,6 @@ img {
 	color: #eaf0fb;
 	font-size: 1rem;
 	line-height: 1.55;
-}
-
-.movie-detail__text-link {
-	color: #ffd3bf;
-	text-decoration: underline;
-	text-decoration-color: rgba(255, 176, 137, 0.48);
-	text-underline-offset: 0.18em;
-	font-weight: 600;
-}
-
-.movie-detail__text-link:hover,
-.movie-detail__text-link:focus-visible {
-	color: #fff0e6;
-	text-decoration-color: rgba(255, 176, 137, 0.8);
 }
 
 .movie-detail__related-list {
