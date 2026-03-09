@@ -5,7 +5,11 @@
 	"year": 2026,
 	"releaseDate": "2026-01-16",
 	"category": "Terror",
-	"genres": ["Terror", "Sci-Fi", "Thriller"],
+	"genres": [
+		"Terror",
+		"Sci-Fi",
+		"Thriller"
+	],
 	"country": "GB",
 	"isArgentinian": false,
 	"poster": "https://m.media-amazon.com/images/M/MV5BZGU2M2Y1YTItMWYxNS00NDYxLThhOTYtNjNhOWUzNjA3MTYwXkEyXkFqcGc@._V1_SX300.jpg",
@@ -13,9 +17,14 @@
 	"trailerYoutubeId": "rl_DJZCyEH4",
 	"releasePlatform": "Cine",
 	"director": "Nia DaCosta",
-	"mainCast": ["Jack O'Connell", "Alfie Williams", "Connor Newall"],
+	"mainCast": [
+		"Jack O'Connell",
+		"Alfie Williams",
+		"Connor Newall"
+	],
 	"productionCompany": "Columbia Pictures y DNA Films",
 	"verdict": "recomendada",
 	"verdictLabel": "BRAVA",
+	"runtimeMinutes": 109,
 	"review": "Secuela con nervio, violencia medida y una dirección que mantiene la presión casi constante. La crítica la recibió muy bien por cómo expande el mundo sin perder el tono sucio de la saga. Tiene clima, tiene ideas y pega visualmente. Para fans del universo 28, es de las fuertes."
 }

@@ -113,11 +113,17 @@ img {
 	border: 1px solid rgba(255, 176, 137, 0.5);
 	background: rgba(13, 18, 28, 0.95);
 	color: #fff3ec;
-	transform: translateY(-140%);
-	transition: transform 0.18s ease;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(calc(-100% - 1rem));
+	transition:
+		transform 0.18s ease,
+		opacity 0.18s ease;
 }
 
 .skip-link:focus {
+	opacity: 1;
+	pointer-events: auto;
 	transform: translateY(0);
 }
 
@@ -734,6 +740,140 @@ img {
 	box-shadow: var(--shadow-panel);
 }
 
+.movie-detail__editorial-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 0.8rem;
+}
+
+.movie-detail__editorial-card {
+	display: grid;
+	gap: 0.55rem;
+	padding: 0.9rem 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+		rgba(255, 255, 255, 0.02);
+	box-shadow: var(--shadow-card);
+}
+
+.movie-detail__editorial-card--duration {
+	border-color: rgba(255, 176, 137, 0.3);
+	background:
+		linear-gradient(180deg, rgba(255, 125, 59, 0.12), rgba(255, 125, 59, 0.04)),
+		rgba(255, 255, 255, 0.02);
+}
+
+.movie-detail__editorial-card--bridge {
+	border-color: rgba(117, 153, 255, 0.34);
+}
+
+.movie-detail__editorial-card--related {
+	gap: 0.75rem;
+}
+
+.movie-detail__editorial-kicker {
+	margin: 0;
+	font-size: 0.78rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #d9e2f3;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.movie-detail__runtime-value {
+	margin: 0;
+	font-size: clamp(1.35rem, 3vw, 1.75rem);
+	font-weight: 700;
+	line-height: 1;
+	color: #fff3eb;
+}
+
+.movie-detail__runtime-note {
+	margin: 0;
+	color: #f4d0bc;
+	font-size: 0.98rem;
+	line-height: 1.45;
+	max-width: 26ch;
+}
+
+.movie-detail__tag-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.movie-detail__tag {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.4rem 0.72rem;
+	border-radius: 999px;
+	border: 1px solid rgba(117, 153, 255, 0.32);
+	background: rgba(117, 153, 255, 0.12);
+	color: #deebff;
+	font-size: 0.84rem;
+}
+
+.movie-detail__editorial-copy {
+	margin: 0;
+	color: #eaf0fb;
+	font-size: 1rem;
+	line-height: 1.55;
+}
+
+.movie-detail__text-link {
+	color: #ffd3bf;
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 176, 137, 0.48);
+	text-underline-offset: 0.18em;
+	font-weight: 600;
+}
+
+.movie-detail__text-link:hover,
+.movie-detail__text-link:focus-visible {
+	color: #fff0e6;
+	text-decoration-color: rgba(255, 176, 137, 0.8);
+}
+
+.movie-detail__related-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 0.65rem;
+}
+
+.movie-detail__related-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.85rem;
+	padding: 0.72rem 0.84rem;
+	border-radius: 10px;
+	border: 1px solid rgba(117, 153, 255, 0.22);
+	background: rgba(117, 153, 255, 0.08);
+	color: #eef3ff;
+	transition:
+		transform 0.18s ease,
+		border-color 0.18s ease,
+		background-color 0.18s ease;
+}
+
+.movie-detail__related-link:hover,
+.movie-detail__related-link:focus-visible {
+	transform: translateY(-2px);
+	border-color: rgba(255, 176, 137, 0.45);
+	background: rgba(255, 176, 137, 0.12);
+}
+
+.movie-detail__related-link span:last-child {
+	flex: 0 0 auto;
+	color: #b8c4db;
+	font-size: 0.82rem;
+}
+
 .movie-detail__meta {
 	display: flex;
 	align-items: center;
@@ -1048,16 +1188,44 @@ img {
 	color: var(--muted);
 }
 
-.back-link {
+.page-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.7rem;
+	margin: 1.2rem 0 2rem;
+}
+
+.page-action {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.4rem;
-	margin: 1.2rem 0 2rem;
-	color: var(--accent-soft);
 	padding: 0.48rem 0.72rem;
 	border-radius: 999px;
 	border: 1px solid rgba(255, 176, 137, 0.28);
 	background: rgba(255, 255, 255, 0.03);
+	color: var(--accent-soft);
+	transition:
+		transform 0.18s ease,
+		border-color 0.18s ease,
+		background-color 0.18s ease;
+}
+
+.page-action:hover,
+.page-action:focus-visible {
+	transform: translateY(-1px);
+	border-color: rgba(255, 176, 137, 0.52);
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.page-action--home {
+	border-color: rgba(117, 153, 255, 0.28);
+	color: #dce6ff;
+}
+
+.page-action--home:hover,
+.page-action--home:focus-visible {
+	border-color: rgba(117, 153, 255, 0.52);
+	background: rgba(117, 153, 255, 0.1);
 }
 
 .fade-up {

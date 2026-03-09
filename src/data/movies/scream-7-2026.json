@@ -5,7 +5,10 @@
 	"year": 2026,
 	"releaseDate": "2026-02-27",
 	"category": "Terror",
-	"genres": ["Terror", "Misterio"],
+	"genres": [
+		"Terror",
+		"Misterio"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "https://m.media-amazon.com/images/M/MV5BMzk2YzRjYmItNTA5Mi00ODczLTljYzUtOWE1ZDFkODhlZWJlXkEyXkFqcGc@._V1_SX300.jpg",
@@ -13,9 +16,14 @@
 	"trailerYoutubeId": "UJrghaPJ0RY",
 	"releasePlatform": "Cine",
 	"director": "Kevin Williamson",
-	"mainCast": ["Neve Campbell", "Courteney Cox", "Isabel May"],
+	"mainCast": [
+		"Neve Campbell",
+		"Courteney Cox",
+		"Isabel May"
+	],
 	"productionCompany": "Spyglass Media Group",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
+	"runtimeMinutes": 114,
 	"review": "Vuelve al slasher clásico pero sin sentirse vieja. La crítica la marcó como una secuela sólida, con buen ritmo y una Sidney que vuelve a pesar de verdad. No reinventa todo, pero mantiene tensión y remates filosos. Si te gusta la saga, esta cumple fuerte."
 }

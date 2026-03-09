@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getMovies, getPosterUrl, getVerdictBadgeClass, getVerdictLabel } from '../../lib/movies';
+import {
+	getMovieEditorialSummary,
+	getMovies,
+	getPosterUrl,
+	getVerdictBadgeClass,
+	getVerdictLabel,
+} from '../../lib/movies';
 import MovieRating from '../../components/MovieRating.astro';
 import type { Movie } from '../../types/movie';
 
@@ -13,10 +19,12 @@ export function getStaticPaths() {
 }
 
 const { movie } = Astro.props as { movie: Movie };
+const allMovies = getMovies();
 const pageTitle = `${movie.title} (${movie.year}) | Cine Posta`;
 const pageDescription = movie.review;
 const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
+const editorialSummary = getMovieEditorialSummary(movie, allMovies);
 const screenshotUrls = (movie.screenshots ?? [])
 	.filter((value) => typeof value === 'string' && value.trim().length > 0)
 	.slice(0, 2)
@@ -60,11 +68,20 @@ const awardCategories = groupedAwards.flatMap((group) =>
 		year: win.year,
 	})),
 );
+const hasEditorialTopGrid =
+	Boolean(editorialSummary.runtime) || editorialSummary.idealFor.length > 0;
+const bridgeIntro = editorialSummary.bridge.length > 1 ? 'Si te gustaron ' : 'Si te gustó ';
+const bridgeOutro = ', también puede gustarte esta.';
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} image={posterUrl}>
-	<main class="container">
-		<a class="back-link" href={import.meta.env.BASE_URL} data-back-home>Volver al listado</a>
+	<main id="main-content" class="container">
+		<div class="page-actions">
+			<a class="page-action page-action--history" href={import.meta.env.BASE_URL} data-history-back>
+				Volver
+			</a>
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Ir al listado</a>
+		</div>
 
 		<section class="movie-detail">
 			{
@@ -118,6 +135,32 @@ const awardCategories = groupedAwards.flatMap((group) =>
 					</div>
 				</dl>
 				{
+					hasEditorialTopGrid && (
+						<div class="movie-detail__editorial-grid" aria-label="Datos utiles para decidir rapido">
+							{
+								editorialSummary.runtime && (
+									<section class="movie-detail__editorial-card movie-detail__editorial-card--duration">
+										<p class="movie-detail__editorial-kicker">Duración</p>
+										<p class="movie-detail__runtime-value">{editorialSummary.runtime.formatted}</p>
+									</section>
+								)
+							}
+							{
+								editorialSummary.idealFor.length > 0 && (
+									<section class="movie-detail__editorial-card">
+										<p class="movie-detail__editorial-kicker">Ideal para</p>
+										<ul class="movie-detail__tag-list" aria-label="Ideal para">
+											{editorialSummary.idealFor.map((tag) => (
+												<li class="movie-detail__tag">{tag}</li>
+											))}
+										</ul>
+									</section>
+								)
+							}
+						</div>
+					)
+				}
+				{
 					groupedAwards.length > 0 && (
 						<section class="movie-detail__awards-card" aria-label="Premios y galardones">
 							<p class="movie-detail__awards-kicker">Premios y galardones</p>
@@ -165,6 +208,45 @@ const awardCategories = groupedAwards.flatMap((group) =>
 					<p class="movie-detail__review-kicker">Reseña honesta</p>
 					<p class="movie-detail__review">{movie.review}</p>
 				</section>
+				{
+					editorialSummary.bridge.length > 0 && (
+						<section class="movie-detail__editorial-card movie-detail__editorial-card--bridge">
+							<p class="movie-detail__editorial-copy">
+								{bridgeIntro}
+								{editorialSummary.bridge.map((recommendation, index) => (
+									<>
+										<a class="movie-detail__text-link" href={recommendation.url}>
+											{recommendation.title}
+										</a>
+										{index < editorialSummary.bridge.length - 2
+											? ', '
+											: index === editorialSummary.bridge.length - 2
+												? ' o '
+												: ''}
+									</>
+								))}
+								{bridgeOutro}
+							</p>
+						</section>
+					)
+				}
+				{
+					editorialSummary.related.length > 0 && (
+						<section class="movie-detail__editorial-card movie-detail__editorial-card--related">
+							<p class="movie-detail__editorial-copy">
+								Si ya la viste y te gustó, probá con alguna de estas.
+							</p>
+							<div class="movie-detail__related-list">
+								{editorialSummary.related.map((recommendation) => (
+									<a class="movie-detail__related-link" href={recommendation.url}>
+										<span>{recommendation.title}</span>
+										<span>{recommendation.year}</span>
+									</a>
+								))}
+							</div>
+						</section>
+					)
+				}
 				<MovieRating movieSlug={movie.slug} />
 
 				{trailerEmbedUrl ? (
@@ -185,7 +267,7 @@ const awardCategories = groupedAwards.flatMap((group) =>
 </BaseLayout>
 
 <script>
-	const backLink = document.querySelector('[data-back-home]');
+	const backLink = document.querySelector('[data-history-back]');
 	if (backLink instanceof HTMLAnchorElement) {
 		backLink.addEventListener('click', (event) => {
 			let canUseHistoryBack = false;

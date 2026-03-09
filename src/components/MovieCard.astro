@@ -53,7 +53,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 ---
 
 <article
-	class="movie-card fade-up"
+	class={`movie-card movie-card--${verdictGlyph} fade-up`}
 	style={`--item-delay: ${entryDelayMs};`}
 	data-movie-card
 	data-movie-search={searchableTextNormalized}

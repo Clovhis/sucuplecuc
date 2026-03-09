@@ -17,6 +17,15 @@ export interface MovieAwards {
 	wins: MovieAwardWin[];
 }
 
+export type MovieIdealForTag = 'solo' | 'en pareja' | 'con amigos' | 'domingo' | 'trasnoche';
+
+export interface MovieEditorial {
+	runtimeComment?: string;
+	idealFor?: MovieIdealForTag[];
+	becauseYouLiked?: string[];
+	related?: string[];
+}
+
 export interface Movie {
 	slug: string;
 	title: string;
@@ -37,5 +46,7 @@ export interface Movie {
 	verdict: MovieVerdict;
 	verdictLabel?: string;
 	awards?: MovieAwards;
+	runtimeMinutes?: number;
+	editorial?: MovieEditorial;
 	review: string;
 }
