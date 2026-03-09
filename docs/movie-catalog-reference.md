@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-09. Fuente: src/data/movies/*.json
 
-Total de peliculas: 509
+Total de peliculas: 556
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -152,6 +152,7 @@ Total de peliculas: 509
 | 2023 | Poor Things | poor-things-2023 | Comedia | Prime Video |
 | 2023 | Rascal Does Not Dream of a Sister Venturing Out | rascal-does-not-dream-of-a-sister-venturing-out-2023 | Anime | Crunchyroll |
 | 2023 | Saltburn | saltburn-2023 | Drama | Prime Video |
+| 2023 | Scream 6 | scream-vi-2023 | Terror | Stremio |
 | 2023 | Shazam! Fury of the Gods | shazam-fury-of-the-gods-2023 | Accion | Stremio |
 | 2023 | Spider-Man: Across the Spider-Verse | spider-man-across-the-spider-verse-2023 | Animacion | Stremio |
 | 2023 | Spy x Family Code: White | spy-x-family-code-white-2023 | Anime | Crunchyroll |
@@ -176,9 +177,11 @@ Total de peliculas: 509
 | 2022 | Everything Everywhere All at Once | everything-everywhere-all-at-once-2022 | Accion | HBO Max |
 | 2022 | Fantastic Beasts: The Secrets of Dumbledore | fantastic-beasts-the-secrets-of-dumbledore-2022 | Aventura | HBO Max |
 | 2022 | Glass Onion: A Knives Out Mystery | glass-onion-a-knives-out-mystery-2022 | Comedia | Netflix |
+| 2022 | Halloween: El final | halloween-ends-2022 | Terror | Stremio |
 | 2022 | Jurassic World: Dominion | jurassic-world-dominion-2022 | Accion | Stremio |
 | 2022 | Morbius | morbius-2022 | Accion | Netflix |
 | 2022 | Nope | nope-2022 | Terror | Stremio |
+| 2022 | Scream | scream-2022 | Terror | Stremio |
 | 2022 | Suzume | suzume-2022 | Anime | Crunchyroll |
 | 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | The Banshees of Inisherin | the-banshees-of-inisherin-2022 | Comedia | Disney Plus |
@@ -203,6 +206,7 @@ Total de peliculas: 509
 | 2021 | F9: The Fast Saga | f9-the-fast-saga-2021 | Acción | Stremio |
 | 2021 | Free Guy | free-guy-2021 | Acción | Disney Plus |
 | 2021 | Godzilla vs. Kong | godzilla-vs-kong-2021 | Acción | Netflix |
+| 2021 | Halloween Kills: La noche aún no termina | halloween-kills-2021 | Terror | Stremio |
 | 2021 | Home Sweet Home Alone | home-sweet-home-alone-2021 | Comedia | Disney Plus |
 | 2021 | Jungle Cruise | jungle-cruise-2021 | Acción | Disney Plus |
 | 2021 | King Richard | king-richard-2021 | Biográfica | HBO Max |
@@ -232,6 +236,7 @@ Total de peliculas: 509
 | 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Stremio |
 | 2019 | Joker | joker-2019 | Drama | Stremio |
 | 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus |
+| 2019 | Muñeco diabólico | child-s-play-2019 | Terror | Stremio |
 | 2019 | Once Upon a Time in Hollywood | once-upon-a-time-in-hollywood-2019 | Drama | Netflix |
 | 2019 | Parasite | parasite-2019 | Comedia | Netflix |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix |
@@ -246,12 +251,14 @@ Total de peliculas: 509
 | 2018 | El Ángel | el-angel-2018 | Crimen | Stremio |
 | 2018 | Green Book | green-book-2018 | Drama | Prime Video |
 | 2018 | Jurassic World: Fallen Kingdom | jurassic-world-fallen-kingdom-2018 | Aventura | Prime Video |
+| 2018 | La noche de Halloween | halloween-2018 | Terror | Netflix |
 | 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus |
 | 2018 | Mission: Impossible - Fallout | mission-impossible-fallout-2018 | Accion | Stremio |
 | 2018 | Rojo | rojo-2018 | Thriller | HBO Max |
 | 2018 | Solo: A Star Wars Story | solo-a-star-wars-story-2018 | Ciencia ficcion | Disney Plus |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
 | 2018 | Venom | venom-2018 | Accion | Netflix |
+| 2017 | El culto de Chucky | cult-of-chucky-2017 | Terror | Stremio |
 | 2017 | Fireworks | fireworks-2017 | Anime | Stremio |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
 | 2017 | Justice League | justice-league-2017 | Accion | Stremio |
@@ -297,6 +304,7 @@ Total de peliculas: 509
 | 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus |
+| 2013 | La maldición de Chucky | curse-of-chucky-2013 | Terror | HBO Max |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Stremio |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max |
 | 2013 | Tesis sobre un homicidio | tesis-sobre-un-homicidio-2013 | Thriller | HBO Max |
@@ -316,6 +324,7 @@ Total de peliculas: 509
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Stremio |
 | 2011 | Mission: Impossible - Ghost Protocol | mission-impossible-ghost-protocol-2011 | Accion | Disney Plus |
 | 2011 | Pirates of the Caribbean: On Stranger Tides | pirates-of-the-caribbean-on-stranger-tides-2011 | Aventura | Disney Plus |
+| 2011 | Scream 4: grita de nuevo | scream-4-2011 | Terror | Prime Video |
 | 2011 | The Artist | the-artist-2011 | Comedia | Stremio |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus |
@@ -324,12 +333,15 @@ Total de peliculas: 509
 | 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
+| 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Stremio |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix |
+| 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix |
 | 2009 | Terminator Salvation | terminator-salvation-2009 | Accion | Netflix |
+| 2009 | Viernes 13 | friday-the-13th-2009 | Terror | Stremio |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
@@ -342,6 +354,7 @@ Total de peliculas: 509
 | 2007 | Death Proof | death-proof-2007 | Thriller | Stremio |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Stremio |
+| 2007 | Halloween | halloween-2007 | Terror | Stremio |
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max |
 | 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Stremio |
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus |
@@ -368,11 +381,13 @@ Total de peliculas: 509
 | 2004 | Harry Potter and the Prisoner of Azkaban | harry-potter-and-the-prisoner-of-azkaban-2004 | Aventura | HBO Max |
 | 2004 | Howl's Moving Castle | howls-moving-castle-2004 | Anime | Netflix |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix |
+| 2004 | La semilla de Chucky | seed-of-chucky-2004 | Terror | Stremio |
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix |
 | 2004 | Million Dollar Baby | million-dollar-baby-2004 | Drama | Prime Video |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
+| 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | Stremio |
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video |
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix |
 | 2003 | Pirates of the Caribbean: The Curse of the Black Pearl | pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003 | Aventura | Disney Plus |
@@ -384,6 +399,7 @@ Total de peliculas: 509
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video |
 | 2002 | Chicago | chicago-2002 | Comedia | Stremio |
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix |
+| 2002 | Halloween: Resurrection | halloween-resurrection-2002 | Terror | Stremio |
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
 | 2002 | Star Wars: Episode II - Attack of the Clones | star-wars-episode-ii-attack-of-the-clones-2002 | Ciencia ficcion | Disney Plus |
@@ -391,6 +407,7 @@ Total de peliculas: 509
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Stremio |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus |
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max |
+| 2001 | Jason X: Martes 13, parte X | jason-x-2001 | Terror | Stremio |
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
 | 2001 | Millennium Actress | millennium-actress-2001 | Anime | Stremio |
@@ -399,68 +416,98 @@ Total de peliculas: 509
 | 2000 | Mission: Impossible II | mission-impossible-ii-2000 | Accion | Stremio |
 | 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus |
 | 2000 | Plata quemada | plata-quemada-2000 | Crimen | Stremio |
+| 2000 | Scream 3 | scream-3-2000 | Terror | Stremio |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
 | 1999 | American Beauty | american-beauty-1999 | Drama | Stremio |
 | 1999 | Star Wars: Episode I - The Phantom Menace | star-wars-episode-i-the-phantom-menace-1999 | Ciencia ficcion | Disney Plus |
 | 1999 | The Matrix | the-matrix-1999 | Ciencia ficcion | Netflix |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
+| 1998 | Halloween: H20. Veinte años después | halloween-h20-20-years-later-1998 | Terror | Stremio |
+| 1998 | La novia de Chucky | bride-of-chucky-1998 | Terror | Prime Video |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio |
 | 1997 | Perfect Blue | perfect-blue-1997 | Anime | HBO Max |
 | 1997 | Princess Mononoke | princess-mononoke-1997 | Anime | Netflix |
+| 1997 | Scream 2 | scream-2-1997 | Terror | Stremio |
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus |
 | 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Stremio |
+| 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Stremio |
 | 1996 | The English Patient | the-english-patient-1996 | Drama | Stremio |
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix |
 | 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio |
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix |
+| 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Stremio |
 | 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Stremio |
+| 1994 | La nueva pesadilla de Wes Craven | wes-craven-s-new-nightmare-1994 | Terror | Stremio |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix |
 | 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video |
 | 1993 | Schindler's List | schindler-s-list-1993 | Drama | HBO Max |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Stremio |
+| 1993 | Viernes 13 - Parte 9: Jason se va al Infierno | jason-goes-to-hell-the-final-friday-1993 | Terror | Stremio |
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Stremio |
 | 1992 | Reservoir Dogs | reservoir-dogs-1992 | Crimen | Stremio |
 | 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max |
+| 1991 | Muñeco diabólico 3 | child-s-play-3-1991 | Terror | Stremio |
+| 1991 | Pesadilla final: La muerte de Freddy | freddy-s-dead-the-final-nightmare-1991 | Terror | Stremio |
 | 1991 | Terminator 2: Judgment Day | terminator-2-judgment-day-1991 | Accion | Stremio |
 | 1991 | The Silence of the Lambs | the-silence-of-the-lambs-1991 | Crimen | Stremio |
 | 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Stremio |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Stremio |
+| 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Stremio |
 | 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video |
 | 1989 | Batman | batman-1989 | Fantasia | Stremio |
 | 1989 | Driving Miss Daisy | driving-miss-daisy-1989 | Drama | Stremio |
+| 1989 | Halloween 5: La venganza de Michael Myers | halloween-5-the-revenge-of-michael-myers-1989 | Terror | Stremio |
+| 1989 | Pesadilla en Elm Street 5: El niño de los sueños | a-nightmare-on-elm-street-5-the-dream-child-1989 | Terror | Stremio |
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
+| 1989 | Viernes 13. Parte VIII: Jason vuelve... para siempre | friday-the-13th-part-viii-jason-takes-manhattan-1989 | Terror | Stremio |
 | 1988 | Akira | akira-1988 | Anime | Netflix |
 | 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix |
+| 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Stremio |
+| 1988 | Muñeco diabólico | child-s-play-1988 | Terror | Stremio |
 | 1988 | My Neighbor Totoro | my-neighbor-totoro-1988 | Anime | Netflix |
+| 1988 | Pesadilla en Elm Street 4 El amo del sueño | a-nightmare-on-elm-street-4-the-dream-master-1988 | Terror | Stremio |
 | 1988 | Rain Man | rain-man-1988 | Drama | Prime Video |
+| 1988 | Viernes 13. 7ª parte: Sangre nueva | friday-the-13th-part-vii-the-new-blood-1988 | Terror | Stremio |
+| 1987 | A Nightmare on Elm Street 3: Dream Warriors | a-nightmare-on-elm-street-3-dream-warriors-1987 | Terror | Stremio |
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio |
 | 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Stremio |
 | 1986 | Castle in the Sky | castle-in-the-sky-1986 | Anime | Netflix |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
 | 1986 | Platoon | platoon-1986 | Drama | Stremio |
+| 1986 | Viernes 13. 6ª parte: Jason vive | friday-the-13th-part-vi-jason-lives-1986 | Terror | Stremio |
+| 1985 | A Nightmare on Elm Street 2: Freddy's Revenge | a-nightmare-on-elm-street-2-freddy-s-revenge-1985 | Terror | Stremio |
 | 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video |
 | 1985 | Esperando la carroza | esperando-la-carroza-1985 | Comedia | Prime Video |
 | 1985 | La historia oficial | la-historia-oficial-1985 | Drama | Stremio |
 | 1985 | Out of Africa | out-of-africa-1985 | Drama | Stremio |
+| 1985 | Viernes 13. Parte V: Un nuevo comienzo | friday-the-13th-a-new-beginning-1985 | Terror | Stremio |
 | 1984 | Amadeus | amadeus-1984 | Drama | Stremio |
 | 1984 | Camila | camila-1984 | Romance | Prime Video |
 | 1984 | Nausicaa of the Valley of the Wind | nausicaa-of-the-valley-of-the-wind-1984 | Anime | Netflix |
+| 1984 | Pesadilla en Elm Street | a-nightmare-on-elm-street-1984 | Terror | HBO Max |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max |
 | 1984 | The Terminator | the-terminator-1984 | Accion | Stremio |
+| 1984 | Viernes 13. Último capítulo | friday-the-13th-the-final-chapter-1984 | Terror | Stremio |
 | 1983 | Star Wars: Episode VI - Return of the Jedi | star-wars-episode-vi-return-of-the-jedi-1983 | Ciencia ficcion | Disney Plus |
 | 1983 | Superman III | superman-iii-1983 | Accion | Stremio |
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Stremio |
 | 1982 | Gandhi | gandhi-1982 | Drama | Stremio |
+| 1982 | Halloween III: El día de la bruja | halloween-iii-season-of-the-witch-1982 | Terror | Stremio |
+| 1982 | Viernes 13, parte III | friday-the-13th-part-iii-1982 | Terror | Stremio |
 | 1981 | Chariots of Fire | chariots-of-fire-1981 | Drama | Disney Plus |
+| 1981 | Halloween II: Sanguinario | halloween-ii-1981 | Terror | Stremio |
+| 1981 | Viernes 13, 2ª parte | friday-the-13th-part-2-1981 | Terror | Stremio |
 | 1980 | Ordinary People | ordinary-people-1980 | Drama | Stremio |
 | 1980 | Star Wars: Episode V - The Empire Strikes Back | star-wars-episode-v-the-empire-strikes-back-1980 | Ciencia ficcion | Disney Plus |
 | 1980 | Superman II | superman-ii-1980 | Ciencia ficcion | HBO Max |
+| 1980 | Viernes 13 | friday-the-13th-1980 | Terror | HBO Max |
 | 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max |
+| 1978 | La noche de Halloween | halloween-1978 | Terror | Stremio |
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max |
 | 1978 | The Deer Hunter | the-deer-hunter-1978 | Drama | Stremio |
 | 1977 | Annie Hall | annie-hall-1977 | Comedia | Stremio |
