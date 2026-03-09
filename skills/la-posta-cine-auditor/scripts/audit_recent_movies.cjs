@@ -20,6 +20,7 @@ const ALLOWED_PLATFORMS = new Set([
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
 const ALLOWED_IDEAL_FOR_TAGS = new Set(['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche']);
+const MAX_VERDICT_LABEL_LENGTH = 21;
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
 
@@ -320,7 +321,17 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
 	const normalizedMovieTitle = normalizeText(movie.title);
 	const recommendedLabelPatterns = ['muy buena', 'recomendada', 'vale la pena', 'clasico', 'imperdible'];
-	if (/\b(19|20)\d{2}\b/.test(movie.verdictLabel) || movie.verdictLabel.length > 24) {
+	if (movie.verdictLabel.trim().length > MAX_VERDICT_LABEL_LENGTH) {
+		addFinding(
+			findings,
+			'error',
+			'verdict-label-too-long',
+			candidatePath,
+			`verdictLabel must stay within ${String(MAX_VERDICT_LABEL_LENGTH)} visible characters so the card badge does not clip.`,
+		);
+	}
+
+	if (/\b(19|20)\d{2}\b/.test(movie.verdictLabel)) {
 		addFinding(findings, 'warn', 'verdict-label-noisy', candidatePath, 'verdictLabel should read like a short user-facing quality signal, not metadata.');
 	}
 

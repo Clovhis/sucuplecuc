@@ -330,6 +330,7 @@ Score-driven mapping policy (mandatory when a numeric reception score is used in
 - If user provides an explicit label/phrase, preserve it as `verdictLabel` (normalized only for casing/spacing).
 - If user does not provide label, infer one from critic reception intensity and tone.
 - Rotate labels across multi-movie batches so they do not repeat mechanically.
+- Hard cap: `verdictLabel` must be `<= 21` visible characters, including spaces, so the movie card badge never clips.
 - Keep labels consistent with `verdict`:
   - `recomendada`: examples `ESTA MUY BIEN`, `BRILLANTE`, `ASOMBROSA`, `MUY BUENA`, `PELICULON`, `SÓLIDA`
   - `zafa`: examples `MEH`, `MASOMENO`, `ZAFETTI`, `ZAFA`, `ZAFAROLA`, `PASABLE`

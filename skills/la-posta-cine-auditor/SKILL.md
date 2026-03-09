@@ -61,6 +61,7 @@ The bundled script checks:
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
 - `awards.wins` structure and supported award types
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
+- `verdictLabel` hard cap of `21` visible characters so the card badge never clips
 - platform labels against the site allowlist
 - catalog sync in `docs/movie-catalog-reference.md`
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles

@@ -71,6 +71,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 ];
 
 const IDEAL_FOR_TAGS: MovieIdealForTag[] = ['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche'];
+const MAX_VERDICT_LABEL_LENGTH = 21;
 
 const TITLE_TOKEN_STOP_WORDS = new Set([
 	'a',
@@ -169,6 +170,14 @@ function validateMovies(movies: Movie[]): void {
 		}
 		if (!movie.productionCompany?.trim()) {
 			throw new Error(`Movie "${slug}" is missing productionCompany.`);
+		}
+		if (!movie.verdictLabel?.trim()) {
+			throw new Error(`Movie "${slug}" is missing verdictLabel.`);
+		}
+		if (movie.verdictLabel.trim().length > MAX_VERDICT_LABEL_LENGTH) {
+			throw new Error(
+				`Movie "${slug}" has verdictLabel longer than ${String(MAX_VERDICT_LABEL_LENGTH)} characters.`,
+			);
 		}
 		if (movie.releaseDate !== undefined) {
 			if (!/^\d{4}-\d{2}-\d{2}$/.test(movie.releaseDate)) {

@@ -70,11 +70,11 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 				fetchpriority={posterFetchPriority}
 				data-movie-poster
 			/>
+			<span class={`badge movie-card__badge ${verdictClass}`}>{verdictLabel}</span>
 		</div>
 		<div class="movie-card__body">
 			<div class="movie-card__header">
 				<h2>{movie.title}</h2>
-				<span class={`badge ${verdictClass}`}>{verdictLabel}</span>
 			</div>
 			<div class="movie-card__footer">
 				<div class="movie-card__meta">
