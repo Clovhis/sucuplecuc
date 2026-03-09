@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-09. Fuente: src/data/movies/*.json
 
-Total de peliculas: 484
+Total de peliculas: 509
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -170,6 +170,7 @@ Total de peliculas: 484
 | 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Animacion | Disney Plus |
 | 2022 | Black Adam | black-adam-2022 | Accion | HBO Max |
 | 2022 | Black Panther: Wakanda Forever | black-panther-wakanda-forever-2022 | Accion | Disney Plus |
+| 2022 | Bubble | bubble-2022 | Anime | Netflix |
 | 2022 | Doctor Strange in the Multiverse of Madness | doctor-strange-in-the-multiverse-of-madness-2022 | Accion | Disney Plus |
 | 2022 | Elvis | elvis-2022 | Drama | Netflix |
 | 2022 | Everything Everywhere All at Once | everything-everywhere-all-at-once-2022 | Accion | HBO Max |
@@ -178,15 +179,18 @@ Total de peliculas: 484
 | 2022 | Jurassic World: Dominion | jurassic-world-dominion-2022 | Accion | Stremio |
 | 2022 | Morbius | morbius-2022 | Accion | Netflix |
 | 2022 | Nope | nope-2022 | Terror | Stremio |
+| 2022 | Suzume | suzume-2022 | Anime | Crunchyroll |
 | 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | The Banshees of Inisherin | the-banshees-of-inisherin-2022 | Comedia | Disney Plus |
 | 2022 | The Batman | the-batman-2022 | Accion | HBO Max |
 | 2022 | The Fabelmans | the-fabelmans-2022 | Drama | Stremio |
+| 2022 | The First Slam Dunk | the-first-slam-dunk-2022 | Anime | Netflix |
 | 2022 | The Whale | the-whale-2022 | Drama | Netflix |
 | 2022 | Thor: Love and Thunder | thor-love-and-thunder-2022 | Accion | Disney Plus |
 | 2022 | Top Gun: Maverick | top-gun-maverick-2022 | Accion | Stremio |
 | 2022 | Uncharted | uncharted-2022 | Accion | Stremio |
 | 2021 | Belfast | belfast-2021 | Biográfica | Stremio |
+| 2021 | Belle | belle-2021 | Anime | Disney Plus |
 | 2021 | Black Widow | black-widow-2021 | Acción | Disney Plus |
 | 2021 | CODA | coda-2021 | Comedia | Prime Video |
 | 2021 | Competencia oficial | competencia-oficial-2021 | Comedia | Disney Plus |
@@ -217,6 +221,8 @@ Total de peliculas: 484
 | 2021 | West Side Story | west-side-story-2021 | Crimen | Disney Plus |
 | 2021 | Zack Snyder's Justice League | zack-snyder-s-justice-league-2021 | Fantasia | HBO Max |
 | 2020 | Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) | birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn-2020 | Crimen | Stremio |
+| 2020 | Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train | demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020 | Anime | Crunchyroll |
+| 2020 | Earwig and the Witch | earwig-and-the-witch-2020 | Anime | Netflix |
 | 2020 | Nomadland | nomadland-2020 | Drama | Disney Plus |
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus |
 | 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max |
@@ -246,6 +252,7 @@ Total de peliculas: 484
 | 2018 | Solo: A Star Wars Story | solo-a-star-wars-story-2018 | Ciencia ficcion | Disney Plus |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
 | 2018 | Venom | venom-2018 | Accion | Netflix |
+| 2017 | Fireworks | fireworks-2017 | Anime | Stremio |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
 | 2017 | Justice League | justice-league-2017 | Accion | Stremio |
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max |
@@ -257,6 +264,7 @@ Total de peliculas: 484
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | Stremio |
 | 2017 | Zama | zama-2017 | Drama | Stremio |
+| 2016 | A Silent Voice | a-silent-voice-2016 | Anime | Prime Video |
 | 2016 | Batman v Superman: Dawn of Justice | batman-v-superman-dawn-of-justice-2016 | Accion | Stremio |
 | 2016 | Captain America: Civil War | captain-america-civil-war-2016 | Accion | Disney Plus |
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus |
@@ -266,6 +274,7 @@ Total de peliculas: 484
 | 2016 | Rogue One: A Star Wars Story | rogue-one-a-star-wars-story-2016 | Ciencia ficcion | Disney Plus |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio |
 | 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus |
+| 2016 | Your Name. | your-name-2016 | Anime | Stremio |
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus |
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus |
@@ -291,6 +300,7 @@ Total de peliculas: 484
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Stremio |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max |
 | 2013 | Tesis sobre un homicidio | tesis-sobre-un-homicidio-2013 | Thriller | HBO Max |
+| 2013 | The Tale of the Princess Kaguya | the-tale-of-the-princess-kaguya-2013 | Anime | Netflix |
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus |
 | 2012 | Argo | argo-2012 | Thriller | Netflix |
@@ -298,6 +308,7 @@ Total de peliculas: 484
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video |
 | 2012 | The Avengers | the-avengers-2012 | Accion | Disney Plus |
 | 2012 | The Dark Knight Rises | the-dark-knight-rises-2012 | Accion | Stremio |
+| 2012 | Wolf Children | wolf-children-2012 | Anime | HBO Max |
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus |
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video |
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Stremio |
@@ -336,9 +347,12 @@ Total de peliculas: 484
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video |
 | 2006 | Mission: Impossible III | mission-impossible-iii-2006 | Accion | Disney Plus |
+| 2006 | Paprika | paprika-2006 | Anime | Stremio |
 | 2006 | Pirates of the Caribbean: Dead Man's Chest | pirates-of-the-caribbean-dead-mans-chest-2006 | Aventura | Disney Plus |
 | 2006 | Superman Returns | superman-returns-2006 | Accion | HBO Max |
+| 2006 | Tales from Earthsea | tales-from-earthsea-2006 | Anime | Netflix |
 | 2006 | The Departed | the-departed-2006 | Thriller | HBO Max |
+| 2006 | The Girl Who Leapt Through Time | the-girl-who-leapt-through-time-2006 | Anime | Stremio |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus |
 | 2005 | Batman Begins | batman-begins-2005 | Drama | Netflix |
 | 2005 | Constantine | constantine-2005 | Terror | HBO Max |
@@ -352,6 +366,7 @@ Total de peliculas: 484
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video |
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix |
 | 2004 | Harry Potter and the Prisoner of Azkaban | harry-potter-and-the-prisoner-of-azkaban-2004 | Aventura | HBO Max |
+| 2004 | Howl's Moving Castle | howls-moving-castle-2004 | Anime | Netflix |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix |
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix |
 | 2004 | Million Dollar Baby | million-dollar-baby-2004 | Drama | Prime Video |
@@ -378,6 +393,8 @@ Total de peliculas: 484
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max |
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
+| 2001 | Millennium Actress | millennium-actress-2001 | Anime | Stremio |
+| 2001 | Spirited Away | spirited-away-2001 | Anime | Netflix |
 | 2000 | Gladiator | gladiator-2000 | Drama | Stremio |
 | 2000 | Mission: Impossible II | mission-impossible-ii-2000 | Accion | Stremio |
 | 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus |
@@ -390,6 +407,8 @@ Total de peliculas: 484
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio |
+| 1997 | Perfect Blue | perfect-blue-1997 | Anime | HBO Max |
+| 1997 | Princess Mononoke | princess-mononoke-1997 | Anime | Netflix |
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus |
 | 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Stremio |
@@ -397,6 +416,7 @@ Total de peliculas: 484
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix |
 | 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio |
+| 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix |
 | 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Stremio |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix |
 | 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video |
@@ -414,9 +434,13 @@ Total de peliculas: 484
 | 1989 | Batman | batman-1989 | Fantasia | Stremio |
 | 1989 | Driving Miss Daisy | driving-miss-daisy-1989 | Drama | Stremio |
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
+| 1988 | Akira | akira-1988 | Anime | Netflix |
+| 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix |
+| 1988 | My Neighbor Totoro | my-neighbor-totoro-1988 | Anime | Netflix |
 | 1988 | Rain Man | rain-man-1988 | Drama | Prime Video |
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio |
 | 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Stremio |
+| 1986 | Castle in the Sky | castle-in-the-sky-1986 | Anime | Netflix |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
 | 1986 | Platoon | platoon-1986 | Drama | Stremio |
 | 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video |
@@ -425,6 +449,7 @@ Total de peliculas: 484
 | 1985 | Out of Africa | out-of-africa-1985 | Drama | Stremio |
 | 1984 | Amadeus | amadeus-1984 | Drama | Stremio |
 | 1984 | Camila | camila-1984 | Romance | Prime Video |
+| 1984 | Nausicaa of the Valley of the Wind | nausicaa-of-the-valley-of-the-wind-1984 | Anime | Netflix |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max |
 | 1984 | The Terminator | the-terminator-1984 | Accion | Stremio |
 | 1983 | Star Wars: Episode VI - Return of the Jedi | star-wars-episode-vi-return-of-the-jedi-1983 | Ciencia ficcion | Disney Plus |
