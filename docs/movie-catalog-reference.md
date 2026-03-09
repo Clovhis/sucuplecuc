@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-07. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-09. Fuente: src/data/movies/*.json
 
-Total de peliculas: 437
+Total de peliculas: 444
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -12,8 +12,8 @@ Total de peliculas: 437
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Cine |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
-| 2026 | GOAT | goat-2026 | Animacion | Cine |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
+| 2026 | GOAT | goat-2026 | Animacion | Cine |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Cine |
 | 2026 | Mercy | mercy-2026 | Accion | Cine |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Cine |
@@ -90,8 +90,8 @@ Total de peliculas: 437
 | 2024 | Conclave | conclave-2024 | Thriller | Prime Video |
 | 2024 | Deadpool & Wolverine | deadpool-and-wolverine-2024 | Accion | Disney Plus |
 | 2024 | Dune: Part Two | dune-part-two-2024 | Accion | Netflix |
-| 2024 | EMILIA PÉREZ | emilia-perez-2024 | Drama | Stremio |
 | 2024 | El Jockey | el-jockey-2024 | Crimen | Disney Plus |
+| 2024 | EMILIA PÉREZ | emilia-perez-2024 | Drama | Stremio |
 | 2024 | Furiosa: A Mad Max Saga | furiosa-a-mad-max-saga-2024 | Accion | Netflix |
 | 2024 | Gladiator II | gladiator-ii-2024 | Accion | Netflix |
 | 2024 | Godzilla x Kong: The New Empire | godzilla-x-kong-the-new-empire-2024 | Accion | Netflix |
@@ -178,13 +178,13 @@ Total de peliculas: 437
 | 2022 | Jurassic World: Dominion | jurassic-world-dominion-2022 | Accion | Stremio |
 | 2022 | Morbius | morbius-2022 | Accion | Netflix |
 | 2022 | Nope | nope-2022 | Terror | Stremio |
+| 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | The Banshees of Inisherin | the-banshees-of-inisherin-2022 | Comedia | Disney Plus |
 | 2022 | The Batman | the-batman-2022 | Accion | HBO Max |
 | 2022 | The Fabelmans | the-fabelmans-2022 | Drama | Stremio |
 | 2022 | The Whale | the-whale-2022 | Drama | Netflix |
 | 2022 | Thor: Love and Thunder | thor-love-and-thunder-2022 | Accion | Disney Plus |
 | 2022 | Top Gun: Maverick | top-gun-maverick-2022 | Accion | Stremio |
-| 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | Uncharted | uncharted-2022 | Accion | Stremio |
 | 2021 | Belfast | belfast-2021 | Biográfica | Stremio |
 | 2021 | Black Widow | black-widow-2021 | Acción | Disney Plus |
@@ -335,6 +335,7 @@ Total de peliculas: 437
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video |
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix |
+| 2003 | Pirates of the Caribbean: The Curse of the Black Pearl | pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003 | Aventura | Disney Plus |
 | 2003 | The Lord of the Rings: The Return of the King | the-lord-of-the-rings-the-return-of-the-king-2003 | Drama | Prime Video |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video |
@@ -344,12 +345,14 @@ Total de peliculas: 437
 | 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max |
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Stremio |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus |
+| 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
 | 2000 | Gladiator | gladiator-2000 | Drama | Stremio |
 | 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus |
 | 2000 | Plata quemada | plata-quemada-2000 | Crimen | Stremio |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
 | 1999 | American Beauty | american-beauty-1999 | Drama | Stremio |
+| 1999 | The Matrix | the-matrix-1999 | Ciencia ficcion | Netflix |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
@@ -361,11 +364,13 @@ Total de peliculas: 437
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio |
 | 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Stremio |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix |
+| 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video |
 | 1993 | Schindler's List | schindler-s-list-1993 | Drama | HBO Max |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Stremio |
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Stremio |
 | 1992 | Reservoir Dogs | reservoir-dogs-1992 | Crimen | Stremio |
 | 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max |
+| 1991 | Terminator 2: Judgment Day | terminator-2-judgment-day-1991 | Accion | Stremio |
 | 1991 | The Silence of the Lambs | the-silence-of-the-lambs-1991 | Crimen | Stremio |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Stremio |
@@ -377,6 +382,7 @@ Total de peliculas: 437
 | 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Stremio |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Stremio |
 | 1986 | Platoon | platoon-1986 | Drama | Stremio |
+| 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video |
 | 1985 | Esperando la carroza | esperando-la-carroza-1985 | Comedia | Prime Video |
 | 1985 | La historia oficial | la-historia-oficial-1985 | Drama | Stremio |
 | 1985 | Out of Africa | out-of-africa-1985 | Drama | Stremio |
@@ -393,6 +399,7 @@ Total de peliculas: 437
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max |
 | 1978 | The Deer Hunter | the-deer-hunter-1978 | Drama | Stremio |
 | 1977 | Annie Hall | annie-hall-1977 | Comedia | Stremio |
+| 1977 | Star Wars: Episode IV - A New Hope | star-wars-episode-iv-a-new-hope-1977 | Ciencia ficcion | Disney Plus |
 | 1976 | Rocky | rocky-1976 | Drama | Stremio |
 | 1975 | One Flew Over the Cuckoo's Nest | one-flew-over-the-cuckoo-s-nest-1975 | Drama | HBO Max |
 | 1974 | The Godfather Part II | the-godfather-part-ii-1974 | Drama | Netflix |
