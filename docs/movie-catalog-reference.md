@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-03-09. Fuente: src/data/movies/*.json
 
-Total de peliculas: 444
+Total de peliculas: 484
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -230,6 +230,8 @@ Total de peliculas: 444
 | 2019 | Parasite | parasite-2019 | Comedia | Netflix |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix |
 | 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix |
+| 2019 | Star Wars: The Rise of Skywalker | star-wars-episode-ix-the-rise-of-skywalker-2019 | Ciencia ficcion | Disney Plus |
+| 2019 | Terminator: Dark Fate | terminator-dark-fate-2019 | Accion | Disney Plus |
 | 2018 | Ant-Man and the Wasp | ant-man-and-the-wasp-2018 | Accion | Disney Plus |
 | 2018 | Aquaman | aquaman-2018 | Accion | HBO Max |
 | 2018 | Avengers: Infinity War | avengers-infinity-war-2018 | Accion | Disney Plus |
@@ -237,15 +239,20 @@ Total de peliculas: 444
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus |
 | 2018 | El Ángel | el-angel-2018 | Crimen | Stremio |
 | 2018 | Green Book | green-book-2018 | Drama | Prime Video |
+| 2018 | Jurassic World: Fallen Kingdom | jurassic-world-fallen-kingdom-2018 | Aventura | Prime Video |
 | 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus |
+| 2018 | Mission: Impossible - Fallout | mission-impossible-fallout-2018 | Accion | Stremio |
 | 2018 | Rojo | rojo-2018 | Thriller | HBO Max |
+| 2018 | Solo: A Star Wars Story | solo-a-star-wars-story-2018 | Ciencia ficcion | Disney Plus |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video |
 | 2018 | Venom | venom-2018 | Accion | Netflix |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
 | 2017 | Justice League | justice-league-2017 | Accion | Stremio |
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus |
+| 2017 | Pirates of the Caribbean: Dead Men Tell No Tales | pirates-of-the-caribbean-dead-men-tell-no-tales-2017 | Aventura | Disney Plus |
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max |
+| 2017 | Star Wars: The Last Jedi | star-wars-episode-viii-the-last-jedi-2017 | Ciencia ficcion | Disney Plus |
 | 2017 | The Shape of Water | the-shape-of-water-2017 | Drama | Disney Plus |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | Stremio |
@@ -256,13 +263,18 @@ Total de peliculas: 444
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus |
 | 2016 | Moonlight | moonlight-2016 | Drama | Prime Video |
+| 2016 | Rogue One: A Star Wars Story | rogue-one-a-star-wars-story-2016 | Ciencia ficcion | Disney Plus |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio |
 | 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus |
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus |
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus |
+| 2015 | Jurassic World | jurassic-world-2015 | Aventura | Prime Video |
+| 2015 | Mission: Impossible - Rogue Nation | mission-impossible-rogue-nation-2015 | Accion | Disney Plus |
 | 2015 | Spotlight | spotlight-2015 | Drama | Netflix |
+| 2015 | Star Wars: The Force Awakens | star-wars-episode-vii-the-force-awakens-2015 | Ciencia ficcion | Disney Plus |
+| 2015 | Terminator Genisys | terminator-genisys-2015 | Accion | Stremio |
 | 2015 | The Hateful Eight | the-hateful-eight-2015 | Thriller | Prime Video |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus |
 | 2014 | Betibú | betibu-2014 | Thriller | Stremio |
@@ -289,18 +301,24 @@ Total de peliculas: 444
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus |
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video |
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Stremio |
+| 2011 | Harry Potter and the Deathly Hallows: Part 2 | harry-potter-and-the-deathly-hallows-part-2-2011 | Aventura | HBO Max |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Stremio |
+| 2011 | Mission: Impossible - Ghost Protocol | mission-impossible-ghost-protocol-2011 | Accion | Disney Plus |
+| 2011 | Pirates of the Caribbean: On Stranger Tides | pirates-of-the-caribbean-on-stranger-tides-2011 | Aventura | Disney Plus |
 | 2011 | The Artist | the-artist-2011 | Comedia | Stremio |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus |
+| 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Stremio |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix |
+| 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix |
+| 2009 | Terminator Salvation | terminator-salvation-2009 | Accion | Netflix |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
@@ -313,8 +331,12 @@ Total de peliculas: 444
 | 2007 | Death Proof | death-proof-2007 | Thriller | Stremio |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Stremio |
+| 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max |
 | 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Stremio |
+| 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video |
+| 2006 | Mission: Impossible III | mission-impossible-iii-2006 | Accion | Disney Plus |
+| 2006 | Pirates of the Caribbean: Dead Man's Chest | pirates-of-the-caribbean-dead-mans-chest-2006 | Aventura | Disney Plus |
 | 2006 | Superman Returns | superman-returns-2006 | Accion | HBO Max |
 | 2006 | The Departed | the-departed-2006 | Thriller | HBO Max |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus |
@@ -324,9 +346,12 @@ Total de peliculas: 444
 | 2005 | El aura | el-aura-2005 | Thriller | HBO Max |
 | 2005 | Elektra | elektra-2005 | Accion | Disney Plus |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus |
+| 2005 | Harry Potter and the Goblet of Fire | harry-potter-and-the-goblet-of-fire-2005 | Aventura | HBO Max |
+| 2005 | Star Wars: Episode III - Revenge of the Sith | star-wars-episode-iii-revenge-of-the-sith-2005 | Ciencia ficcion | Disney Plus |
 | 2005 | Tiempo de valientes | tiempo-de-valientes-2005 | Comedia | Stremio |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video |
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix |
+| 2004 | Harry Potter and the Prisoner of Azkaban | harry-potter-and-the-prisoner-of-azkaban-2004 | Aventura | HBO Max |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix |
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix |
 | 2004 | Million Dollar Baby | million-dollar-baby-2004 | Drama | Prime Video |
@@ -336,28 +361,38 @@ Total de peliculas: 444
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video |
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix |
 | 2003 | Pirates of the Caribbean: The Curse of the Black Pearl | pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003 | Aventura | Disney Plus |
+| 2003 | Terminator 3: Rise of the Machines | terminator-3-rise-of-the-machines-2003 | Accion | Stremio |
 | 2003 | The Lord of the Rings: The Return of the King | the-lord-of-the-rings-the-return-of-the-king-2003 | Drama | Prime Video |
+| 2003 | The Matrix Reloaded | matrix-reloaded-2003 | Ciencia ficcion | HBO Max |
+| 2003 | The Matrix Revolutions | matrix-revolutions-2003 | Ciencia ficcion | Netflix |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video |
 | 2002 | Chicago | chicago-2002 | Comedia | Stremio |
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix |
+| 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
+| 2002 | Star Wars: Episode II - Attack of the Clones | star-wars-episode-ii-attack-of-the-clones-2002 | Ciencia ficcion | Disney Plus |
 | 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max |
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Stremio |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus |
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max |
+| 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
 | 2000 | Gladiator | gladiator-2000 | Drama | Stremio |
+| 2000 | Mission: Impossible II | mission-impossible-ii-2000 | Accion | Stremio |
 | 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus |
 | 2000 | Plata quemada | plata-quemada-2000 | Crimen | Stremio |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus |
 | 1999 | American Beauty | american-beauty-1999 | Drama | Stremio |
+| 1999 | Star Wars: Episode I - The Phantom Menace | star-wars-episode-i-the-phantom-menace-1999 | Ciencia ficcion | Disney Plus |
 | 1999 | The Matrix | the-matrix-1999 | Ciencia ficcion | Netflix |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio |
+| 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus |
+| 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Stremio |
 | 1996 | The English Patient | the-english-patient-1996 | Drama | Stremio |
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix |
 | 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus |
@@ -372,8 +407,10 @@ Total de peliculas: 444
 | 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max |
 | 1991 | Terminator 2: Judgment Day | terminator-2-judgment-day-1991 | Accion | Stremio |
 | 1991 | The Silence of the Lambs | the-silence-of-the-lambs-1991 | Crimen | Stremio |
+| 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Stremio |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Stremio |
+| 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video |
 | 1989 | Batman | batman-1989 | Fantasia | Stremio |
 | 1989 | Driving Miss Daisy | driving-miss-daisy-1989 | Drama | Stremio |
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus |
@@ -389,11 +426,14 @@ Total de peliculas: 444
 | 1984 | Amadeus | amadeus-1984 | Drama | Stremio |
 | 1984 | Camila | camila-1984 | Romance | Prime Video |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max |
+| 1984 | The Terminator | the-terminator-1984 | Accion | Stremio |
+| 1983 | Star Wars: Episode VI - Return of the Jedi | star-wars-episode-vi-return-of-the-jedi-1983 | Ciencia ficcion | Disney Plus |
 | 1983 | Superman III | superman-iii-1983 | Accion | Stremio |
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Stremio |
 | 1982 | Gandhi | gandhi-1982 | Drama | Stremio |
 | 1981 | Chariots of Fire | chariots-of-fire-1981 | Drama | Disney Plus |
 | 1980 | Ordinary People | ordinary-people-1980 | Drama | Stremio |
+| 1980 | Star Wars: Episode V - The Empire Strikes Back | star-wars-episode-v-the-empire-strikes-back-1980 | Ciencia ficcion | Disney Plus |
 | 1980 | Superman II | superman-ii-1980 | Ciencia ficcion | HBO Max |
 | 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max |
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max |
