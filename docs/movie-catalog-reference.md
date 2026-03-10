@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-09. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-10. Fuente: src/data/movies/*.json
 
-Total de peliculas: 556
+Total de peliculas: 566
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -424,6 +424,7 @@ Total de peliculas: 556
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
 | 1998 | Halloween: H20. Veinte años después | halloween-h20-20-years-later-1998 | Terror | Stremio |
 | 1998 | La novia de Chucky | bride-of-chucky-1998 | Terror | Prime Video |
+| 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio |
@@ -440,9 +441,12 @@ Total de peliculas: 556
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio |
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix |
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Stremio |
+| 1995 | Toy Story | toy-story-1995 | Animacion | Disney Plus |
 | 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Stremio |
 | 1994 | La nueva pesadilla de Wes Craven | wes-craven-s-new-nightmare-1994 | Terror | Stremio |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix |
+| 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus |
+| 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max |
 | 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video |
 | 1993 | Schindler's List | schindler-s-list-1993 | Drama | HBO Max |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Stremio |
@@ -496,6 +500,8 @@ Total de peliculas: 556
 | 1983 | Star Wars: Episode VI - Return of the Jedi | star-wars-episode-vi-return-of-the-jedi-1983 | Ciencia ficcion | Disney Plus |
 | 1983 | Superman III | superman-iii-1983 | Accion | Stremio |
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Stremio |
+| 1982 | Blade Runner | blade-runner-1982 | Ciencia ficcion | Prime Video |
+| 1982 | E.T. the Extra-Terrestrial | e-t-the-extra-terrestrial-1982 | Ciencia ficcion | HBO Max |
 | 1982 | Gandhi | gandhi-1982 | Drama | Stremio |
 | 1982 | Halloween III: El día de la bruja | halloween-iii-season-of-the-witch-1982 | Terror | Stremio |
 | 1982 | Viernes 13, parte III | friday-the-13th-part-iii-1982 | Terror | Stremio |
@@ -505,7 +511,9 @@ Total de peliculas: 556
 | 1980 | Ordinary People | ordinary-people-1980 | Drama | Stremio |
 | 1980 | Star Wars: Episode V - The Empire Strikes Back | star-wars-episode-v-the-empire-strikes-back-1980 | Ciencia ficcion | Disney Plus |
 | 1980 | Superman II | superman-ii-1980 | Ciencia ficcion | HBO Max |
+| 1980 | The Shining | the-shining-1980 | Terror | HBO Max |
 | 1980 | Viernes 13 | friday-the-13th-1980 | Terror | HBO Max |
+| 1979 | Alien | alien-1979 | Ciencia ficcion | Disney Plus |
 | 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max |
 | 1978 | La noche de Halloween | halloween-1978 | Terror | Stremio |
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max |
@@ -520,6 +528,7 @@ Total de peliculas: 556
 | 1971 | The French Connection | the-french-connection-1971 | Crimen | Disney Plus |
 | 1970 | Patton | patton-1970 | Drama | Disney Plus |
 | 1969 | Midnight Cowboy | midnight-cowboy-1969 | Drama | Stremio |
+| 1968 | 2001: A Space Odyssey | 2001-a-space-odyssey-1968 | Ciencia ficcion | HBO Max |
 | 1968 | Oliver! | oliver-1968 | Drama | Stremio |
 | 1967 | In the Heat of the Night | in-the-heat-of-the-night-1967 | Drama | Prime Video |
 | 1966 | A Man for All Seasons | a-man-for-all-seasons-1966 | Historia | Stremio |
@@ -529,6 +538,7 @@ Total de peliculas: 556
 | 1963 | Tom Jones | tom-jones-1963 | Comedia | HBO Max |
 | 1962 | Lawrence of Arabia | lawrence-of-arabia-1962 | Historia | Netflix |
 | 1961 | West Side Story | west-side-story-1961 | Drama | Stremio |
+| 1960 | Psycho | psycho-1960 | Terror | HBO Max |
 | 1960 | The Apartment | the-apartment-1960 | Drama | Stremio |
 | 1959 | Ben-Hur | ben-hur-1959 | Drama | Stremio |
 | 1958 | Gigi | gigi-1958 | Comedia | Stremio |
