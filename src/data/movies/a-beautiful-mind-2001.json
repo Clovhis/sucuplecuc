@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Imagine Entertainment",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Romance"
 	],
 	"runtimeMinutes": 135,
-	"review": "A Beautiful Mind te compra por la actuación de Russell Crowe y por la emoción clásica bien administrada. Es biopic de alto impacto, hecha para conectar."
+	"review": "A Beautiful Mind te compra por la actuación de Russell Crowe y por la emoción clásica bien administrada. Es biopic de alto impacto, hecha para conectar.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"el-hijo-de-la-novia-2001",
+			"the-english-patient-1996"
+		],
+		"related": [
+			"caballos-salvajes-1995",
+			"gladiator-2000",
+			"luna-de-avellaneda-2004",
+			"titanic-1997"
+		]
+	}
 }

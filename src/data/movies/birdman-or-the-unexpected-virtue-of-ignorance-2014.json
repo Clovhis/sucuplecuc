@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Regency Enterprises, New Regency, M Productions, Le Grisbi Productions, Worldview Entertainment",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Comedia"
 	],
 	"runtimeMinutes": 119,
-	"review": "Birdman vive de la ansiedad, el ego y esa cámara que parece no darte respiro. Cuando entra en trance, es bravísima."
+	"review": "Birdman vive de la ansiedad, el ego y esa cámara que parece no darte respiro. Cuando entra en trance, es bravísima.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"truman-2015",
+			"el-hombre-de-al-lado-2009"
+		],
+		"related": [
+			"django-unchained-2012",
+			"green-book-2018",
+			"once-upon-a-time-in-hollywood-2019",
+			"spotlight-2015"
+		]
+	}
 }

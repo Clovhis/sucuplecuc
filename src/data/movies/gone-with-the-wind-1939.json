@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Selznick International Pictures, Metro-Goldwyn-Mayer",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Guerra"
 	],
 	"runtimeMinutes": 238,
-	"review": "Gone with the Wind es gigantesca, excesiva y totalmente consciente de su propio mito. Más allá de todo lo discutible, como maquinaria de cine clásico sigue siendo descomunal."
+	"review": "Gone with the Wind es gigantesca, excesiva y totalmente consciente de su propio mito. Más allá de todo lo discutible, como maquinaria de cine clásico sigue siendo descomunal.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"casablanca-1943",
+			"mrs-miniver-1942"
+		],
+		"related": [
+			"the-best-years-of-our-lives-1946",
+			"the-english-patient-1996",
+			"grand-hotel-1932",
+			"gentleman-s-agreement-1947"
+		]
+	}
 }

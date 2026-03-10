@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "DreamWorks Pictures, Jinks/Cohen Company",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -32,5 +32,21 @@
 		"Drama"
 	],
 	"runtimeMinutes": 121,
-	"review": "American Beauty mira el suburbio con ironía venenosa y bastante incomodidad moral. Tiene imágenes y climas que todavía se recuerdan al instante."
+	"review": "American Beauty mira el suburbio con ironía venenosa y bastante incomodidad moral. Tiene imágenes y climás que todavía se recuerdan al instante.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"gladiator-2000",
+			"a-beautiful-mind-2001"
+		],
+		"related": [
+			"the-english-patient-1996",
+			"caballos-salvajes-1995",
+			"el-hijo-de-la-novia-2001",
+			"la-cienaga-2001"
+		]
+	}
 }

@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Hemdale Film Corporation",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Guerra"
 	],
 	"runtimeMinutes": 115,
-	"review": "Platoon te mete en el barro moral de la guerra sin glamour ni heroísmo plástico. La tensión entre los soldados la mantiene viva todo el tiempo."
+	"review": "Platoon te mete en el barro moral de la guerra sin glamour ni heroísmo plástico. La tensión entre los soldados la mantiene viva todo el tiempo.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"the-english-patient-1996",
+			"the-deer-hunter-1978"
+		],
+		"related": [
+			"schindler-s-list-1993",
+			"braveheart-1995",
+			"patton-1970",
+			"la-historia-oficial-1985"
+		]
+	}
 }

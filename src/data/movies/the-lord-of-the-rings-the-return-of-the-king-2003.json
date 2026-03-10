@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "WingNut Films, New Line Cinema",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Drama"
 	],
 	"runtimeMinutes": 200,
-	"review": "The Lord of the Rings: The Return of the King juega a todo o nada y casi siempre le sale. Cierra la trilogía con una épica emocional que arrasa."
+	"review": "The Lord of the Rings: The Return of the King juega a todo o nada y casi siempre le sale. Cierra la trilogía con una épica emocional que arrasa.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"gladiator-2000",
+			"braveheart-1995"
+		],
+		"related": [
+			"ben-hur-1959",
+			"mutiny-on-the-bounty-1935",
+			"wings-1927",
+			"the-shape-of-water-2017"
+		]
+	}
 }

@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "A24",
 	"verdict": "recomendada",
-	"verdictLabel": "PELICULON",
+	"verdictLabel": "ESTA BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		]
 	},
 	"runtimeMinutes": 215,
-	"review": "Metacritic la ubicó en la cima del año con recepción crítica ampliamente favorable. Es ambiciosa en forma y fondo, y exige atención, pero devuelve una experiencia grande."
+	"review": "La crítica la ubicó en la cima del año con recepción crítica ampliamente favorable. Es ambiciosa en forma y fondo, y exige atención, pero devuelve una experiencia grande.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"i-saw-the-tv-glow-2024",
+			"joker-folie-a-deux-2024"
+		],
+		"related": [
+			"turtles-all-the-way-down-2024",
+			"mountainhead-2025",
+			"a-quiet-place-day-one-2024",
+			"emilia-perez-2024"
+		]
+	}
 }

@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Música"
 	],
 	"runtimeMinutes": 130,
-	"review": "Going My Way es de esas películas amables que funcionan por la calidez y por el carisma de Bing Crosby. Debajo del tono liviano hay bastante corazón."
+	"review": "Going My Way es de esas películas amables que funcionan por la calidez y por el carisma de Bing Crosby. Debajo del tono liviano hay bastante corazón.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"green-book-2018",
+			"the-apartment-1960"
+		],
+		"related": [
+			"the-sound-of-music-1965",
+			"terms-of-endearment-1983",
+			"amadeus-1984",
+			"driving-miss-daisy-1989"
+		]
+	}
 }

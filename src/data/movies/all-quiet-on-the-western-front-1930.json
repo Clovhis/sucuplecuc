@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Universal Studios",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "ESTA BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Drama"
 	],
 	"runtimeMinutes": 136,
-	"review": "All Quiet on the Western Front pega por la mugre, el cansancio y la mirada antibélica sin maquillaje. Aun vieja, sigue teniendo un nervio brutal."
+	"review": "All Quiet on the Western Front pega por la mugre, el cansancio y la mirada antibélica sin maquillaje. Aun vieja, sigue teniendo un nervio brutal.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"wings-1927",
+			"mrs-miniver-1942"
+		],
+		"related": [
+			"gone-with-the-wind-1939",
+			"the-best-years-of-our-lives-1946",
+			"casablanca-1943",
+			"the-broadway-melody-1929"
+		]
+	}
 }

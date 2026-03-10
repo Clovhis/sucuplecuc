@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "The Tisch Company",
 	"verdict": "recomendada",
-	"verdictLabel": "VALE LA PENA",
+	"verdictLabel": "IMPERDIBLE",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Romance"
 	],
 	"runtimeMinutes": 142,
-	"review": "Forrest Gump mezcla candidez, melancolía y show histórico con una soltura increíble. Puede tener detractores, pero es imposible negar lo bien contada que está."
+	"review": "Forrest Gump mezcla candidez, melancolía y show histórico con una soltura increíble. Puede tener detractores, pero es imposible negar lo bien contada que está.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"annie-hall-1977",
+			"the-artist-2011"
+		],
+		"related": [
+			"corazon-de-leon-2013",
+			"my-fair-lady-1964",
+			"chicago-2002",
+			"medianeras-2011"
+		]
+	}
 }

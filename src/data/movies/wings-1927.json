@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Paramount Famous Lasky Corporation",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "MUY BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Drama",
 		"Acción & Aventura",
 		"Guerra"
-	]
+	],
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"braveheart-1995",
+			"mutiny-on-the-bounty-1935"
+		],
+		"related": [
+			"ben-hur-1959",
+			"gladiator-2000",
+			"all-quiet-on-the-western-front-1930",
+			"the-lord-of-the-rings-the-return-of-the-king-2003"
+		]
+	}
 }

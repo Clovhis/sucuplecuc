@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "The Zanuck Company",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "ESTA BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Comedia"
 	],
 	"runtimeMinutes": 99,
-	"review": "Driving Miss Daisy se apoya mucho en la química entre Jessica Tandy y Morgan Freeman, y con eso le alcanza para tocar fibra. Tiene modales clásicos, pero no cae seca."
+	"review": "Driving Miss Daisy se apoya mucho en la química entre Jessica Tandy y Morgan Freeman, y con eso le alcanza para tocar fibra. Tiene modales clásicos, pero no cae seca.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"terms-of-endearment-1983",
+			"el-hijo-de-la-novia-2001"
+		],
+		"related": [
+			"luna-de-avellaneda-2004",
+			"el-hombre-de-al-lado-2009",
+			"dances-with-wolves-1990",
+			"million-dollar-baby-2004"
+		]
+	}
 }

@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -32,5 +32,21 @@
 		"Drama"
 	],
 	"runtimeMinutes": 101,
-	"review": "The Lost Weekend baja al pozo con una honestidad áspera que todavía incomoda. Wilder no la adorna y por eso duele más."
+	"review": "The Lost Weekend baja al pozo con una honestidad áspera que todavía incomoda. Wilder no la adorna y por eso duele más.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"the-apartment-1960",
+			"casablanca-1943"
+		],
+		"related": [
+			"going-my-way-1944",
+			"the-best-years-of-our-lives-1946",
+			"gentleman-s-agreement-1947",
+			"gone-with-the-wind-1939"
+		]
+	}
 }

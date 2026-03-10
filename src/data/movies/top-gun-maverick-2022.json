@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "ASOMBROSA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -28,5 +28,21 @@
 		]
 	},
 	"runtimeMinutes": 130,
-	"review": "Espectáculo clásico, pulso firme y acción muy bien filmada. Pegó fuerte tanto en fans viejos como en público nuevo."
+	"review": "Espectáculo clásico, pulso firme y acción muy bien filmada. Pegó fuerte tanto en fans viejos como en público nuevo.",
+	"editorial": {
+		"idealFor": [
+			"con amigos",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"mission-impossible-dead-reckoning-part-one-2023",
+			"mission-impossible-the-final-reckoning-2025"
+		],
+		"related": [
+			"mission-impossible-fallout-2018",
+			"fantastic-four-2015",
+			"mission-impossible-rogue-nation-2015",
+			"mission-impossible-ghost-protocol-2011"
+		]
+	}
 }

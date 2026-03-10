@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Stanley Jaffe Productions",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "ESTA MUY BIEN",
 	"awards": {
 		"wins": [
 			{
@@ -32,5 +32,21 @@
 		"Drama"
 	],
 	"runtimeMinutes": 100,
-	"review": "Kramer vs. Kramer pega porque baja el drama familiar a gestos mínimos y discusiones muy concretas. No necesita gritar para hacer daño."
+	"review": "Kramer vs. Kramer pega porque baja el drama familiar a gestos mínimos y discusiones muy concretas. No necesita gritar para hacer daño.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"out-of-africa-1985",
+			"rain-man-1988"
+		],
+		"related": [
+			"midnight-cowboy-1969",
+			"one-flew-over-the-cuckoo-s-nest-1975",
+			"ordinary-people-1980",
+			"the-deer-hunter-1978"
+		]
+	}
 }

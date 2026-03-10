@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "20th Century-Fox",
 	"verdict": "recomendada",
-	"verdictLabel": "VALE LA PENA",
+	"verdictLabel": "MUY BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -28,5 +28,21 @@
 		]
 	},
 	"runtimeMinutes": 138,
-	"review": "All About Eve destila veneno con una elegancia espectacular y diálogos que cortan como vidrio. Bette Davis la juega enorme y la película no afloja nunca."
+	"review": "All About Eve destila veneno con una elegancia espectacular y diálogos que cortan como vidrio. Bette Davis la juega enorme y la película no afloja nunca.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"all-the-king-s-men-1949",
+			"hamlet-1948"
+		],
+		"related": [
+			"on-the-waterfront-1954",
+			"the-best-years-of-our-lives-1946",
+			"going-my-way-1944",
+			"gentleman-s-agreement-1947"
+		]
+	}
 }

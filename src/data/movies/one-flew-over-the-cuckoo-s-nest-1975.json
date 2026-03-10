@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Fantasy Films",
 	"verdict": "recomendada",
-	"verdictLabel": "OBRA TOTAL",
+	"verdictLabel": "IMPERDIBLE",
 	"awards": {
 		"wins": [
 			{
@@ -32,5 +32,21 @@
 		"Drama"
 	],
 	"runtimeMinutes": 133,
-	"review": "One Flew Over the Cuckoo's Nest tiene rebeldía, dolor y un pulso que no se domestica nunca. Nicholson incendia la pantalla, pero la película es mucho más que eso."
+	"review": "One Flew Over the Cuckoo's Nest tiene rebeldía, dolor y un pulso que no se domestica nunca. Nicholson incendia la pantalla, pero la película es mucho más que eso.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"amadeus-1984",
+			"terms-of-endearment-1983"
+		],
+		"related": [
+			"kramer-vs-kramer-1979",
+			"rocky-1976",
+			"the-godfather-part-ii-1974",
+			"the-deer-hunter-1978"
+		]
+	}
 }

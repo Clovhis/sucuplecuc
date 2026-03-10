@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Woodfall Film Productions",
 	"verdict": "recomendada",
-	"verdictLabel": "RECOMENDADA",
+	"verdictLabel": "MUY BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Historia"
 	],
 	"runtimeMinutes": 128,
-	"review": "Tom Jones tiene picardía, hambre y una energía medio desfachatada que la diferencia del clasicismo más prolijo. Se siente viva todo el tiempo."
+	"review": "Tom Jones tiene picardía, hambre y una energía medio desfachatada que la diferencia del clasicismo más prolijo. Se siente viva todo el tiempo.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"my-fair-lady-1964",
+			"gigi-1958"
+		],
+		"related": [
+			"annie-hall-1977",
+			"corazon-de-leon-2013",
+			"it-happened-one-night-1934",
+			"forrest-gump-1994"
+		]
+	}
 }

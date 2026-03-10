@@ -33,5 +33,21 @@
 		"Crimen"
 	],
 	"runtimeMinutes": 175,
-	"review": "The Godfather es de esas películas que parecen más grandes cada vez que se vuelven a ver. Tiene poder, duelo familiar y una oscuridad que nunca se gasta."
+	"review": "The Godfather es de esas películas que parecen más grandes cada vez que se vuelven a ver. Tiene poder, duelo familiar y una oscuridad que nunca se gasta.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"the-godfather-part-ii-1974",
+			"on-the-waterfront-1954"
+		],
+		"related": [
+			"in-the-heat-of-the-night-1967",
+			"west-side-story-1961",
+			"megalopolis-2024",
+			"leonera-2008"
+		]
+	}
 }

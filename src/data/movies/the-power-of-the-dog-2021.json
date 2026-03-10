@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "See-Saw Films",
 	"verdict": "recomendada",
-	"verdictLabel": "SÓLIDA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -28,5 +28,21 @@
 		]
 	},
 	"runtimeMinutes": 126,
-	"review": "Drama seco, incómodo y con actuaciones muy finas, de los que cocinan a fuego lento. Fue muy respetada por su dirección y por cómo trabaja la tensión."
+	"review": "Drama seco, incómodo y con actuaciones muy finas, de los que cocinan a fuego lento. Fue muy respetada por su dirección y por cómo trabaja la tensión.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"all-quiet-on-the-western-front-2022",
+			"elvis-2022"
+		],
+		"related": [
+			"the-whale-2022",
+			"maestro-2023",
+			"once-upon-a-time-in-hollywood-2019",
+			"oppenheimer-2023"
+		]
+	}
 }

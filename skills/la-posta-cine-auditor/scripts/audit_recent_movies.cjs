@@ -24,27 +24,107 @@ const MAX_VERDICT_LABEL_LENGTH = 21;
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
 const RECOMMENDED_LABEL_PATTERNS = [
-	'garpa',
+	'recomendada',
+	'esta buena',
 	'muy buena',
-	'vale la pena',
-	'clasico',
-	'clasicazo',
 	'imperdible',
-	'filosa',
-	'picante',
-	'top',
-	'fuerte',
-	'onda',
+	'esta muy bien',
+	'buenisima',
+	'garpa',
 	'buena',
-	'afilada',
-	'slasherazo',
-	'digna',
+	'legendaria',
+	'obra maestra',
+	'clasico total',
 ];
-const VERDICT_LABEL_FAMILY_PATTERNS = {
-	recomendada: ['garpa', 'clasic', 'top', 'filosa', 'picante', 'fuerte', 'onda', 'buena', 'afilada', 'slasherazo'],
-	zafa: ['zafa', 'meh', 'pasable', 'cumplidora', 'con onda', 'tibiona', 'livianita', 'media maquina', 'zafarola'],
-	no_recomendada: ['se cae', 'un garron', 'plomazo', 'mamarracho', 'papelon', 'no pega una', 'no rema', 'todo ruido', 'delirio feo', 'apagadisima'],
-};
+const PASSABLE_LABEL_PATTERNS = [
+	'pasable',
+	'zafa',
+	'esta ok',
+	'se deja ver',
+	'cumple',
+	'mas o menos',
+];
+const NEGATIVE_LABEL_PATTERNS = [
+	'no la mires',
+	'mala',
+	'malisima',
+	'es una verga',
+	'un garron',
+	'flojisima',
+	'no va',
+	'plomazo',
+	'aburrida',
+	'muy floja',
+	'se cae',
+	'basura total',
+	'ni la pongas',
+	'horrible',
+	'desastre',
+	'todo mal',
+];
+const FORBIDDEN_REVIEW_SITE_REFERENCES = [
+	'rotten tomatoes',
+	'rotten',
+	'metacritic',
+	'imdb',
+	'letterboxd',
+	'filmaffinity',
+	'sensacine',
+	'tomatazos',
+];
+const OPAQUE_VERDICT_LABEL_TOKENS = [
+	'seca',
+	'calida',
+	'visceral',
+	'noble',
+	'turbia',
+	'suelta',
+	'pura',
+	'moderna',
+	'clasica',
+	'noir',
+	'epica',
+	'oscura',
+	'de autor',
+	'de culto',
+	'de peso',
+	'de pulso',
+	'de golpe',
+	'de riesgo',
+	'de viaje',
+	'de trauma',
+	'luminosa',
+	'juguetona',
+	'salvaje',
+	'retorcida',
+	'directa',
+	'macabra',
+	'brava',
+	'mental',
+	'argenta',
+	'japo',
+	'noventera',
+	'ochentosa',
+	'dosmilera',
+	'actual',
+];
+const LEGENDARY_MOVIE_SLUGS = new Set([
+	'the-godfather-1972',
+	'the-godfather-part-ii-1974',
+	'casablanca-1943',
+	'schindler-s-list-1993',
+	'the-lord-of-the-rings-the-return-of-the-king-2003',
+	'spirited-away-2001',
+	'the-dark-knight-2008',
+	'pulp-fiction-1994',
+	'parasite-2019',
+	'back-to-the-future-1985',
+	'terminator-2-judgment-day-1991',
+	'the-silence-of-the-lambs-1991',
+	'star-wars-episode-v-the-empire-strikes-back-1980',
+	'the-matrix-1999',
+]);
+const LEGENDARY_LABEL_PATTERNS = ['legendaria', 'obra maestra', 'clasico total'];
 
 function parseArgs(argv) {
 	const args = {
@@ -70,6 +150,8 @@ function parseArgs(argv) {
 			args.format = argv[++index];
 		} else if (arg === '--skip-youtube') {
 			args.skipYoutube = true;
+		} else if (arg === '--all') {
+			args.all = true;
 		} else if (arg === '--help' || arg === '-h') {
 			args.help = true;
 		} else {
@@ -92,6 +174,7 @@ function usage() {
 			'  --base-ref <ref>     Git base ref for recent diff. Default: main',
 			'  --candidate <path>   Explicit candidate movie file. Repeat for batch mode.',
 			'  --recent             Audit files added/modified in <base-ref>...HEAD under movie root.',
+			'  --all                Audit every movie JSON file under the root directory.',
 			'  --format <type>      text | json. Default: text',
 			'  --skip-youtube       Skip YouTube oEmbed checks.',
 		].join('\n'),
@@ -151,23 +234,24 @@ function listCommittedChanges(baseRef) {
 		.filter(Boolean);
 }
 
+function isLegendaryMovie(movie) {
+	return LEGENDARY_MOVIE_SLUGS.has(String(movie.slug || ''));
+}
+
+function listAllCandidates(rootDir) {
+	return fs
+		.readdirSync(rootDir, { withFileTypes: true })
+		.filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
+		.map((entry) => path.join(rootDir, entry.name))
+		.sort((left, right) => left.localeCompare(right));
+}
+
 function readJson(filePath) {
 	return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
 function addFinding(findings, severity, code, file, message) {
 	findings.push({ severity, code, file, message });
-}
-
-function detectVerdictLabelFamily(verdict, verdictLabel) {
-	const normalizedLabel = normalizeText(verdictLabel);
-	const patterns = VERDICT_LABEL_FAMILY_PATTERNS[verdict] || [];
-	for (const pattern of patterns) {
-		if (normalizedLabel.includes(pattern)) {
-			return pattern;
-		}
-	}
-	return normalizedLabel;
 }
 
 function collectStringFields(value, currentPath, output) {
@@ -380,6 +464,22 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		addFinding(findings, 'warn', 'verdict-label-tone', candidatePath, 'recomendada entries should use a clearly positive verdictLabel.');
 	}
 
+	if (isLegendaryMovie(movie) && !LEGENDARY_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
+		addFinding(findings, 'error', 'legendary-verdict-label', candidatePath, 'legendary movies should use a verdictLabel that explicitly recognizes their status, like LEGENDARIA or OBRA MAESTRA.');
+	}
+
+	if (movie.verdict === 'zafa' && !PASSABLE_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
+		addFinding(findings, 'error', 'verdict-label-tone', candidatePath, 'zafa entries should use a clearly passable verdictLabel.');
+	}
+
+	if ((movie.verdict === 'no_recomendada' || movie.verdict === 'basura_atomica') && !NEGATIVE_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
+		addFinding(findings, 'error', 'verdict-label-tone', candidatePath, 'negative entries should use a clearly negative verdictLabel.');
+	}
+
+	if (OPAQUE_VERDICT_LABEL_TOKENS.some((token) => normalizedVerdictLabel.includes(token))) {
+		addFinding(findings, 'error', 'opaque-verdict-label', candidatePath, 'verdictLabel should be direct and easy to understand, not a cryptic adjective mashup.');
+	}
+
 	if (!ALLOWED_PLATFORMS.has(movie.releasePlatform)) {
 		addFinding(findings, 'error', 'invalid-platform', candidatePath, `Unsupported releasePlatform "${String(movie.releasePlatform)}".`);
 	}
@@ -411,6 +511,19 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 
 	if (/\b\d+(?:[.,]\d+)?\s*\/\s*(?:10|100)\b/.test(movie.review) || /\b\d{1,3}\s*%\b/.test(movie.review)) {
 		addFinding(findings, 'warn', 'numeric-score-review', candidatePath, 'review leaks raw numeric score(s).');
+	}
+
+	const normalizedReview = normalizeText(movie.review);
+	for (const forbiddenReference of FORBIDDEN_REVIEW_SITE_REFERENCES) {
+		if (normalizedReview.includes(forbiddenReference)) {
+			addFinding(
+				findings,
+				'error',
+				'review-third-party-reference',
+				candidatePath,
+				`review must not mention third-party sites or brands like "${forbiddenReference}" in user-facing copy.`,
+			);
+		}
 	}
 
 	if (!catalogText.includes(`| ${movie.year} | ${movie.title} | ${movie.slug} |`)) {
@@ -586,7 +699,9 @@ async function searchYoutubeResults(movieTitle, movieYear) {
 
 function runEditorialAudit(rootDir, candidates) {
 	const fallbackPaths = [
+		path.resolve(__dirname, '../../la-posta-cine-add-movie/scripts/review_audit.cjs'),
 		path.resolve(__dirname, '../../la-posta-cine-add-movie/scripts/review_audit.js'),
+		path.resolve(process.env.USERPROFILE || '', '.codex/skills/la-posta-cine-add-movie/scripts/review_audit.cjs'),
 		path.resolve(process.env.USERPROFILE || '', '.codex/skills/la-posta-cine-add-movie/scripts/review_audit.js'),
 	];
 	const reviewAuditPath = fallbackPaths.find((candidatePath) => candidatePath && fs.existsSync(candidatePath));
@@ -598,8 +713,11 @@ function runEditorialAudit(rootDir, candidates) {
 	}
 
 	const args = [reviewAuditPath, '--root', rootDir];
-	for (const candidate of candidates) {
-		args.push('--candidate', candidate);
+	// Windows command-line limits make full-catalog candidate lists brittle.
+	if (candidates.length > 0 && candidates.length <= 120) {
+		for (const candidate of candidates) {
+			args.push('--candidate', candidate);
+		}
 	}
 
 	const result = spawnSync(process.execPath, args, {
@@ -640,68 +758,6 @@ function loadKnownMovieSlugs(rootDir) {
 	return knownMovieSlugs;
 }
 
-function validateBatchVerdictLabels(candidateMovies, findings) {
-	const normalizedLabelMap = new Map();
-	const verdictGroups = new Map();
-
-	for (const candidate of candidateMovies) {
-		const normalizedLabel = normalizeText(candidate.movie.verdictLabel);
-		if (!normalizedLabelMap.has(normalizedLabel)) {
-			normalizedLabelMap.set(normalizedLabel, []);
-		}
-		normalizedLabelMap.get(normalizedLabel).push(candidate.filePath);
-
-		const verdict = candidate.movie.verdict;
-		if (!verdictGroups.has(verdict)) {
-			verdictGroups.set(verdict, []);
-		}
-		verdictGroups.get(verdict).push({
-			filePath: candidate.filePath,
-			label: candidate.movie.verdictLabel,
-			family: detectVerdictLabelFamily(verdict, candidate.movie.verdictLabel),
-		});
-	}
-
-	for (const [normalizedLabel, files] of normalizedLabelMap.entries()) {
-		if (normalizedLabel && files.length > 1) {
-			addFinding(
-				findings,
-				'error',
-				'duplicate-verdict-label',
-				'batch',
-				`The batch reuses the same verdictLabel in multiple files: ${files.join(', ')}.`,
-			);
-		}
-	}
-
-	for (const [verdict, entries] of verdictGroups.entries()) {
-		if (entries.length < 4) {
-			continue;
-		}
-
-		const familyMap = new Map();
-		for (const entry of entries) {
-			if (!familyMap.has(entry.family)) {
-				familyMap.set(entry.family, []);
-			}
-			familyMap.get(entry.family).push(entry.filePath);
-		}
-
-		const repetitionThreshold = Math.max(3, Math.ceil(entries.length * 0.5));
-		for (const [family, files] of familyMap.entries()) {
-			if (files.length >= repetitionThreshold) {
-				addFinding(
-					findings,
-					'error',
-					'verdict-label-family-repetition',
-					'batch',
-					`Too many "${verdict}" entries reuse the same generic verdictLabel family "${family}" (${files.length}/${entries.length}): ${files.join(', ')}.`,
-				);
-			}
-		}
-	}
-}
-
 async function auditCandidates(args) {
 	const rootDir = path.resolve(args.root);
 	if (!fs.existsSync(rootDir)) {
@@ -710,7 +766,9 @@ async function auditCandidates(args) {
 
 	const candidatePaths = args.candidates.length > 0
 		? args.candidates
-		: listRecentCandidates(args.root, args.baseRef);
+		: args.all
+			? listAllCandidates(rootDir)
+			: listRecentCandidates(args.root, args.baseRef);
 
 	if (candidatePaths.length === 0) {
 		throw new Error('No candidate movie files found to audit.');
@@ -805,8 +863,6 @@ async function auditCandidates(args) {
 		}
 	}
 
-	validateBatchVerdictLabels(candidateMovies, findings);
-
 	const editorialAudit = runEditorialAudit(args.root, candidatePaths);
 	if (editorialAudit.status === 'error') {
 		addFinding(findings, 'error', 'review-audit', 'batch', editorialAudit.message);
@@ -856,7 +912,7 @@ async function main() {
 		process.exit(0);
 	}
 
-	if (!args.recent && args.candidates.length === 0) {
+	if (!args.recent && !args.all && args.candidates.length === 0) {
 		args.recent = true;
 	}
 

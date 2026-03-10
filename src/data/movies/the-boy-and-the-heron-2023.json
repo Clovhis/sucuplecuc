@@ -25,7 +25,25 @@
 	],
 	"productionCompany": "Studio Ghibli",
 	"verdict": "recomendada",
-	"verdictLabel": "OBRA MAYOR",
-	"review": "Miyazaki vuelve con una película personalísima, visualmente tremenda y con muchísimo para interpretar. No busca ser fácil, pero cuando conecta te deja pensando varios días."
+	"verdictLabel": "BUENISIMA",
+	"review": "Miyazaki vuelve con una película personalísima, visualmente tremenda y con muchísimo para interpretar. No busca ser fácil, pero cuando conecta te deja pensando varios días.",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"princess-mononoke-1997",
+			"howls-moving-castle-2004"
+		],
+		"related": [
+			"spirited-away-2001",
+			"castle-in-the-sky-1986",
+			"nausicaa-of-the-valley-of-the-wind-1984",
+			"suzume-2022"
+		]
+	}
 }
-

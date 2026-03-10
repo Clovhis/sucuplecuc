@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "EMI Films",
 	"verdict": "recomendada",
-	"verdictLabel": "RECOMENDADA",
+	"verdictLabel": "IMPERDIBLE",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Guerra"
 	],
 	"runtimeMinutes": 182,
-	"review": "The Deer Hunter arranca desde lo íntimo y termina convertido en una herida larguísima. Tiene escenas que quedan clavadas y una tristeza pesada."
+	"review": "The Deer Hunter arranca desde lo íntimo y termina convertido en una herida larguísima. Tiene escenas que quedan clavadas y una tristeza pesada.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"platoon-1986",
+			"patton-1970"
+		],
+		"related": [
+			"the-english-patient-1996",
+			"schindler-s-list-1993",
+			"braveheart-1995",
+			"the-bridge-on-the-river-kwai-1957"
+		]
+	}
 }

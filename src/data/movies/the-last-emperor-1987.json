@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Hemdale Film Corporation, Recorded Picture Company, Yanco Films, TAO Film, Acteurs Auteurs Associés",
 	"verdict": "recomendada",
-	"verdictLabel": "VALE LA PENA",
+	"verdictLabel": "BUENISIMA",
 	"awards": {
 		"wins": [
 			{
@@ -28,5 +28,21 @@
 		]
 	},
 	"runtimeMinutes": 165,
-	"review": "The Last Emperor deslumbra por imagen, escala y sensación de mundo perdido. Debajo de lo lujoso hay bastante tristeza."
+	"review": "The Last Emperor deslumbra por imagen, escala y sensación de mundo perdido. Debajo de lo lujoso hay bastante tristeza.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"platoon-1986",
+			"driving-miss-daisy-1989"
+		],
+		"related": [
+			"la-historia-oficial-1985",
+			"out-of-africa-1985",
+			"amadeus-1984",
+			"dances-with-wolves-1990"
+		]
+	}
 }

@@ -16,7 +16,26 @@
 	],
 	"productionCompany": "Netflix",
 	"verdict": "recomendada",
-	"verdictLabel": "ENTRETENIDA",
+	"verdictLabel": "MUY BUENA",
 	"runtimeMinutes": 118,
-	"review": "Es puro carisma de estrellas, chistes rápidos y giros de manual para mirar sin pensar demasiado. Rinde como entretenimiento fácil, aunque no deja mucho después."
+	"review": "Es puro carisma de estrellas, chistes rápidos y giros de manual para mirar sin pensar demasiado. Rinde como entretenimiento fácil, aunque no deja mucho después.",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"idealFor": [
+			"con amigos",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"free-guy-2021",
+			"jungle-cruise-2021"
+		],
+		"related": [
+			"black-adam-2022",
+			"wonder-woman-1984-2020",
+			"deadpool-2-2018",
+			"deadpool-and-wolverine-2024"
+		]
+	}
 }

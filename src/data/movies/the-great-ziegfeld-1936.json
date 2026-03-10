@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"verdict": "recomendada",
-	"verdictLabel": "IMPERDIBLE",
+	"verdictLabel": "MUY BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Romance"
 	],
 	"runtimeMinutes": 176,
-	"review": "The Great Ziegfeld va por el espectáculo total y no le tiembla el pulso para llenar la pantalla de brillo. Es aparatosa, sí, pero también tiene esa desmesura que justifica el premio."
+	"review": "The Great Ziegfeld va por el espectáculo total y no le tiembla el pulso para llenar la pantalla de brillo. Es aparatosa, sí, pero también tiene esa desmesura que justifica el premio.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"an-american-in-paris-1951",
+			"tango-feroz-la-leyenda-de-tanguito-1993"
+		],
+		"related": [
+			"you-can-t-take-it-with-you-1938",
+			"grand-hotel-1932",
+			"rebecca-1940",
+			"mrs-miniver-1942"
+		]
+	}
 }

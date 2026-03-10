@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Fox Film Corporation",
 	"verdict": "recomendada",
-	"verdictLabel": "RECOMENDADA",
+	"verdictLabel": "IMPERDIBLE",
 	"awards": {
 		"wins": [
 			{
@@ -28,5 +28,21 @@
 		]
 	},
 	"runtimeMinutes": 110,
-	"review": "Cavalcade mira a una familia para contar una época entera, con pompa británica y bastante melancolía. Hoy puede sentirse solemne, pero la ambición está clarísima."
+	"review": "Cavalcade mira a una familia para contar una época entera, con pompa británica y bastante melancolía. Hoy puede sentirse solemne, pero la ambición está clarísima.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"mutiny-on-the-bounty-1935",
+			"grand-hotel-1932"
+		],
+		"related": [
+			"all-quiet-on-the-western-front-1930",
+			"the-broadway-melody-1929",
+			"the-life-of-emile-zola-1937",
+			"wings-1927"
+		]
+	}
 }

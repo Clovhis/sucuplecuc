@@ -20,7 +20,7 @@
 	],
 	"productionCompany": "A Band Apart, The Weinstein Company, Universal Pictures y Zehnte Babelsberg Film",
 	"verdict": "recomendada",
-	"verdictLabel": "GUERRA SEGUN QT",
+	"verdictLabel": "IMPERDIBLE",
 	"awards": {
 		"wins": [
 			{
@@ -32,5 +32,21 @@
 		]
 	},
 	"runtimeMinutes": 153,
-	"review": "Inglourious Basterds agarra la guerra, la vuelve cuento de hadas sangriento y la reescribe con una maldad deliciosa. Tarantino filma dialogos como duelos a muerte y Christoph Waltz hace una de esas actuaciones que se te quedan viviendo en la cabeza. Es provocadora, elegante y recontra divertida."
+	"review": "Inglourious Basterds agarra la guerra, la vuelve cuento de hadas sangriento y la reescribe con una maldad deliciosa. Tarantino filma dialogos como duelos a muerte y Christoph Waltz hace una de esas actuaciones que se te quedan viviendo en la cabeza. Es provocadora, elegante y recontra divertida.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"django-unchained-2012",
+			"once-upon-a-time-in-hollywood-2019"
+		],
+		"related": [
+			"the-hurt-locker-2008",
+			"the-english-patient-1996",
+			"braveheart-1995",
+			"schindler-s-list-1993"
+		]
+	}
 }

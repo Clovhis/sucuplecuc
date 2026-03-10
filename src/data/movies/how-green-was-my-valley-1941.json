@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "20th Century-Fox",
 	"verdict": "recomendada",
-	"verdictLabel": "RECOMENDADA",
+	"verdictLabel": "IMPERDIBLE",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Familia"
 	],
 	"runtimeMinutes": 118,
-	"review": "How Green Was My Valley mira el trabajo, la familia y la pérdida con una calidez que termina pegando fuerte. Ford encuentra belleza incluso cuando todo se viene abajo."
+	"review": "How Green Was My Valley mira el trabajo, la familia y la pérdida con una calidez que termina pegando fuerte. Ford encuentra belleza incluso cuando todo se viene abajo.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"mrs-miniver-1942",
+			"the-sound-of-music-1965"
+		],
+		"related": [
+			"oliver-1968",
+			"casablanca-1943",
+			"gone-with-the-wind-1939",
+			"gentleman-s-agreement-1947"
+		]
+	}
 }

@@ -5,7 +5,11 @@
 	"year": 2026,
 	"releaseDate": "2026-02-13",
 	"category": "Animacion",
-	"genres": ["Animación", "Acción", "Aventura"],
+	"genres": [
+		"Animación",
+		"Acción",
+		"Aventura"
+	],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "https://m.media-amazon.com/images/M/MV5BYzE5OTJkOGMtYWFiNi00NTlkLWE3ZWItY2ZlNjkyOWVhMjMyXkEyXkFqcGc@._V1_SX300.jpg",
@@ -13,9 +17,32 @@
 	"trailerYoutubeId": "ggZA2oi8S5s",
 	"releasePlatform": "Cine",
 	"director": "Tyree Dillihay y Adam Rosette",
-	"mainCast": ["Caleb McLaughlin", "Gabrielle Union", "Stephen Curry"],
+	"mainCast": [
+		"Caleb McLaughlin",
+		"Gabrielle Union",
+		"Stephen Curry"
+	],
 	"productionCompany": "Sony Pictures Animation",
 	"verdict": "recomendada",
-	"verdictLabel": "DIVERTIDA",
-	"review": "Animación deportiva bien arriba, con energía de sobra y humor que entra fácil. En reseñas quedó como una propuesta simpática, más corazón que pretensión. No busca ser profunda, pero tiene carisma y personajes queribles. Para ver en plan liviano, va muy bien."
+	"verdictLabel": "RECOMENDADA",
+	"review": "Animación deportiva bien arriba, con energía de sobra y humor que entra fácil. En reseñas quedó como una propuesta simpática, más corazón que pretensión. No busca ser profunda, pero tiene carisma y personajes queribles. Para ver en plan liviano, va muy bien.",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"idealFor": [
+			"domingo",
+			"con amigos"
+		],
+		"becauseYouLiked": [
+			"that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026",
+			"demon-slayer-kimetsu-no-yaiba-infinity-castle-2025"
+		],
+		"related": [
+			"zootopia-2-2025",
+			"my-hero-academia-youre-next-2024",
+			"elio-2025",
+			"spy-x-family-code-white-2023"
+		]
+	}
 }

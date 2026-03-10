@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Romance"
 	],
 	"runtimeMinutes": 110,
-	"review": "The Broadway Melody respira camerino, rivalidad y números grandes con una frescura medio ingenua pero simpática. Se nota la época, sí, aunque ahí mismo también está su encanto."
+	"review": "The Broadway Melody respira camerino, rivalidad y números grandes con una frescura medio ingenua pero simpática. Se nota la época, sí, aunque ahí mismo también está su encanto.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"grand-hotel-1932",
+			"mrs-miniver-1942"
+		],
+		"related": [
+			"gone-with-the-wind-1939",
+			"the-best-years-of-our-lives-1946",
+			"casablanca-1943",
+			"gentleman-s-agreement-1947"
+		]
+	}
 }

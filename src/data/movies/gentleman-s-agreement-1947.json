@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "British & Dominions Film Corporation",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "ESTA MUY BIEN",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Romance"
 	],
 	"runtimeMinutes": 118,
-	"review": "Gentleman's Agreement encara el antisemitismo de frente y sin demasiados rodeos elegantes. Puede sonar discursiva por momentos, pero la incomodidad que busca sigue funcionando."
+	"review": "Gentleman's Agreement encara el antisemitismo de frente y sin demasiados rodeos elegantes. Puede sonar discursiva por momentos, pero la incomodidad que busca sigue funcionando.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"on-the-waterfront-1954",
+			"the-best-years-of-our-lives-1946"
+		],
+		"related": [
+			"casablanca-1943",
+			"mrs-miniver-1942",
+			"gone-with-the-wind-1939",
+			"marty-1955"
+		]
+	}
 }

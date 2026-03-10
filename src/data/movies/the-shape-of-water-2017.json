@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Fox Searchlight Pictures, Double Dare You Productions",
 	"verdict": "recomendada",
-	"verdictLabel": "VALE LA PENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Romance"
 	],
 	"runtimeMinutes": 123,
-	"review": "The Shape of Water abraza el cuento extraño sin vergüenza y lo vuelve romántico, político y medio monstruoso a la vez. Del Toro la llena de textura."
+	"review": "The Shape of Water abraza el cuento extraño sin vergüenza y lo vuelve romántico, político y medio monstruoso a la vez. Del Toro la llena de textura.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"slumdog-millionaire-2008",
+			"el-hijo-de-la-novia-2001"
+		],
+		"related": [
+			"luna-de-avellaneda-2004",
+			"the-lord-of-the-rings-the-return-of-the-king-2003",
+			"a-beautiful-mind-2001",
+			"titanic-1997"
+		]
+	}
 }

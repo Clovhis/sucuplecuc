@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Europeas"
 	],
 	"runtimeMinutes": 119,
-	"review": "Gigi tiene brillo, música y una ligereza elegante que la vuelve muy fácil de querer. Cuando se deja llevar por el encanto, entra redonda."
+	"review": "Gigi tiene brillo, música y una ligereza elegante que la vuelve muy fácil de querer. Cuando se deja llevar por el encanto, entra redonda.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"an-american-in-paris-1951",
+			"my-fair-lady-1964"
+		],
+		"related": [
+			"tom-jones-1963",
+			"annie-hall-1977",
+			"it-happened-one-night-1934",
+			"forrest-gump-1994"
+		]
+	}
 }

@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Producciones Cinematográficas Amílcar",
 	"verdict": "recomendada",
-	"verdictLabel": "RECOMENDADA",
+	"verdictLabel": "MUY BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Romance"
 	],
 	"runtimeMinutes": 91,
-	"review": "Marty gana por lo simple: gente común, ternura genuina y una tristeza chiquita que cualquiera entiende. No necesita grandilocuencia para pegar."
+	"review": "Marty gana por lo simple: gente común, ternura genuina y una tristeza chiquita que cualquiera entiende. No necesita grandilocuencia para pegar.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"the-apartment-1960",
+			"west-side-story-1961"
+		],
+		"related": [
+			"gentleman-s-agreement-1947",
+			"the-best-years-of-our-lives-1946",
+			"casablanca-1943",
+			"mrs-miniver-1942"
+		]
+	}
 }

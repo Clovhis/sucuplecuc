@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "La Petite Reine, Studio 37, La Classe Américaine, JD Prod, France 3 Cinéma, Jouror Productions, uFilm",
 	"verdict": "recomendada",
-	"verdictLabel": "VALE LA PENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Drama"
 	],
 	"runtimeMinutes": 100,
-	"review": "The Artist juega al cine mudo con cariño, timing y bastante picardía. Podría ser puro truco nostálgico, pero tiene corazón."
+	"review": "The Artist juega al cine mudo con cariño, timing y bastante picardía. Podría ser puro truco nostálgico, pero tiene corazón.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"corazon-de-leon-2013",
+			"forrest-gump-1994"
+		],
+		"related": [
+			"medianeras-2011",
+			"annie-hall-1977",
+			"my-fair-lady-1964",
+			"un-cuento-chino-2011"
+		]
+	}
 }

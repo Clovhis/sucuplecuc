@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "MUY BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Acción & Aventura"
 	],
 	"runtimeMinutes": 222,
-	"review": "Ben-Hur juega en tamaño leyenda y encima tiene secuencias que todavía parten al medio. Su épica no es puro decorado: también tiene peso emocional."
+	"review": "Ben-Hur juega en tamaño leyenda y encima tiene secuencias que todavía parten al medio. Su épica no es puro decorado: también tiene peso emocional.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"mutiny-on-the-bounty-1935",
+			"the-best-years-of-our-lives-1946"
+		],
+		"related": [
+			"mrs-miniver-1942",
+			"wings-1927",
+			"gladiator-2000",
+			"braveheart-1995"
+		]
+	}
 }

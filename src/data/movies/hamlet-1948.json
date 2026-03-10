@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Two Cities",
 	"verdict": "recomendada",
-	"verdictLabel": "VALE LA PENA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -28,5 +28,21 @@
 		]
 	},
 	"runtimeMinutes": 150,
-	"review": "Hamlet abraza lo teatral, lo oscuro y la voz grave sin pedir disculpas. Cuando compra ese tono, la tragedia entra con peso real."
+	"review": "Hamlet abraza lo teatral, lo oscuro y la voz grave sin pedir disculpas. Cuando compra ese tono, la tragedia entra con peso real.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"all-the-king-s-men-1949",
+			"all-about-eve-1950"
+		],
+		"related": [
+			"the-best-years-of-our-lives-1946",
+			"going-my-way-1944",
+			"gentleman-s-agreement-1947",
+			"mrs-miniver-1942"
+		]
+	}
 }

@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Argyle Enterprises",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "ESTA BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Música"
 	],
 	"runtimeMinutes": 174,
-	"review": "The Sound of Music avanza con una alegría contagiosa y una puesta musical enorme. Julie Andrews la sostiene con una gracia que ordena todo."
+	"review": "The Sound of Music avanza con una alegría contagiosa y una puesta musical enorme. Julie Andrews la sostiene con una gracia que ordena todo.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"west-side-story-1961",
+			"oliver-1968"
+		],
+		"related": [
+			"amadeus-1984",
+			"how-green-was-my-valley-1941",
+			"going-my-way-1944",
+			"patton-1970"
+		]
+	}
 }

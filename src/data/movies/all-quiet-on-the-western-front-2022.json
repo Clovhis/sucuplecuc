@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Amusement Park Films",
 	"verdict": "recomendada",
-	"verdictLabel": "ASOMBROSA",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -45,5 +45,21 @@
 			}
 		]
 	},
-	"review": "Pegó fuerte por lo cruda y por cómo te deja sin aire en varios momentos. Con este puntaje alto queda entre las más bancadas del batch."
+	"review": "Pegó fuerte por lo cruda y por cómo te deja sin aire en varios momentos. Con este puntaje alto queda entre las más bancadas del batch.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"elvis-2022",
+			"the-whale-2022"
+		],
+		"related": [
+			"maestro-2023",
+			"oppenheimer-2023",
+			"the-power-of-the-dog-2021",
+			"once-upon-a-time-in-hollywood-2019"
+		]
+	}
 }

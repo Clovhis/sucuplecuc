@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Paramount Pictures, The Coppola Company",
 	"verdict": "recomendada",
-	"verdictLabel": "MONUMENTAL",
+	"verdictLabel": "CLASICO TOTAL",
 	"awards": {
 		"wins": [
 			{
@@ -33,5 +33,21 @@
 		"Crimen"
 	],
 	"runtimeMinutes": 202,
-	"review": "The Godfather Part II agranda el mundo de la primera sin perder intimidad ni veneno. Lo más fuerte es cómo mezcla expansión y derrumbe."
+	"review": "The Godfather Part II agranda el mundo de la primera sin perder intimidad ni veneno. Lo más fuerte es cómo mezcla expansión y derrumbe.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"the-godfather-1972",
+			"in-the-heat-of-the-night-1967"
+		],
+		"related": [
+			"west-side-story-1961",
+			"megalopolis-2024",
+			"on-the-waterfront-1954",
+			"caballos-salvajes-1995"
+		]
+	}
 }

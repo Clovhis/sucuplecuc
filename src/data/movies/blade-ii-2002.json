@@ -16,10 +16,26 @@
 	],
 	"productionCompany": "New Line Cinema",
 	"verdict": "zafa",
-	"verdictLabel": "MEDIO PASADA",
+	"verdictLabel": "ESTA OK",
 	"awards": {
 		"wins": []
 	},
 	"runtimeMinutes": 117,
-	"review": "La respuesta crítica fue tirando a mixta. La destacaron sobre todo por la historia. Tiene ideas o momentos que suman, pero no siempre los acomoda del todo bien. Se deja ver, aunque no queda entre las mejores."
+	"review": "La respuesta crítica fue tirando a mixta. La destacaron sobre todo por la historia. Tiene ideas o momentos que suman, pero no siempre los acomoda del todo bien. Se deja ver, aunque no queda entre las mejores.",
+	"editorial": {
+		"idealFor": [
+			"con amigos",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"blade-trinity-2004",
+			"blade-1998"
+		],
+		"related": [
+			"hulk-2003",
+			"spider-man-2002",
+			"daredevil-2003",
+			"kill-bill-vol-1-2003"
+		]
+	}
 }

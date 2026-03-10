@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "The Bedford Falls Company",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "ESTA BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Comedia"
 	],
 	"runtimeMinutes": 123,
-	"review": "Shakespeare in Love tiene ligereza, ingenio y una forma muy canchera de jugar con el teatro y el deseo. Entra casi bailando."
+	"review": "Shakespeare in Love tiene ligereza, ingenio y una forma muy canchera de jugar con el teatro y el deseo. Entra casi bailando.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"you-can-t-take-it-with-you-1938",
+			"camila-1984"
+		],
+		"related": [
+			"from-here-to-eternity-1953",
+			"the-greatest-show-on-earth-1952",
+			"forrest-gump-1994",
+			"tom-jones-1963"
+		]
+	}
 }

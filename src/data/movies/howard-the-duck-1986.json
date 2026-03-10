@@ -16,10 +16,26 @@
 	],
 	"productionCompany": "Lucasfilm",
 	"verdict": "no_recomendada",
-	"verdictLabel": "DELIRIO FEO",
+	"verdictLabel": "NO LA MIRES",
 	"awards": {
 		"wins": []
 	},
 	"runtimeMinutes": 110,
-	"review": "Es un accidente de estudio fascinante: rara, incomoda y con decisiones que hoy parecen de otro planeta. No funciona bien ni como comedia ni como aventura, pero tampoco se parece a nada mas. Vale por lo insolita, no por buena."
+	"review": "Es un accidente de estudio fascinante: rara, incomoda y con decisiones que hoy parecen de otro planeta. No funciona bien ni como comedia ni como aventura, pero tampoco se parece a nada más. Vale por lo insolita, no por buena.",
+	"editorial": {
+		"idealFor": [
+			"con amigos",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"superman-iv-the-quest-for-peace-1987",
+			"the-terminator-1984"
+		],
+		"related": [
+			"superman-iii-1983",
+			"terminator-2-judgment-day-1991",
+			"supergirl-1984",
+			"batman-returns-1992"
+		]
+	}
 }

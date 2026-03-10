@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Allied Stars Ltd, Enigma Productions",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO FIRME",
+	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Deporte"
 	],
 	"runtimeMinutes": 118,
-	"review": "Chariots of Fire corre con solemnidad, sí, pero también con una convicción emocional muy limpia. La música y la competencia la empujan fuerte."
+	"review": "Chariots of Fire corre con solemnidad, sí, pero también con una convicción emocional muy limpia. La música y la competencia la empujan fuerte.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"gandhi-1982",
+			"la-historia-oficial-1985"
+		],
+		"related": [
+			"rocky-1976",
+			"schindler-s-list-1993",
+			"ben-hur-1959",
+			"million-dollar-baby-2004"
+		]
+	}
 }

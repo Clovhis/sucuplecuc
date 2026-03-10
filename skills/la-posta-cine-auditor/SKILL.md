@@ -44,6 +44,12 @@ Default audit command:
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref main --recent
 ```
 
+Full catalog command:
+
+```bash
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --all
+```
+
 Explicit batch command:
 
 ```bash
@@ -64,11 +70,12 @@ The bundled script checks:
 - `awards.wins` structure and supported award types
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
 - `verdictLabel` hard cap of `21` visible characters so the card badge never clips
-- mandatory batch-level `verdictLabel` diversity so generic badge families like `SE CAE`, `GARPA`, or `ZAFA` do not get overused across the same load
+- `verdictLabel` readability so the badge says clearly if the movie is buena, pasable o mala
 - platform labels against the site allowlist
 - catalog sync in `docs/movie-catalog-reference.md`
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
 - raw numeric score leakage in reviews
+- forbidden third-party site mentions inside reviews (`Rotten`, `Metacritic`, `IMDb`, etc.)
 - editorial duplication by delegating to `skills/la-posta-cine-add-movie/scripts/review_audit.js`
 
 ### 3. Interpret findings
@@ -76,11 +83,18 @@ The bundled script checks:
 - `ERROR`: fix before considering the batch valid
 - `WARN`: inspect and fix if confidence is high
 
-The `verdictLabel` batch-diversity check is mandatory:
+The `verdictLabel` readability check is mandatory:
 
-- if the script reports repeated generic score/badge families across the batch, treat it as a hard stop
-- do not waive it just because the JSON schema is otherwise valid
-- rotate labels until the batch stops reading like a template
+- treat confusing or cryptic labels as a hard stop
+- repetition is allowed when the wording is clear and useful
+- prefer short direct labels like `RECOMENDADA`, `ESTA BUENA`, `PASABLE`, `NO LA MIRES`, `MALA`, `MALISIMA`, `BASURA TOTAL`
+- legendary all-timer movies should be recognized with labels like `LEGENDARIA`, `OBRA MAESTRA` or `CLASICO TOTAL`, not downgraded to a generic `ESTA BUENA`
+
+The third-party mention check is also mandatory:
+
+- treat any explicit site/brand mention inside `review` as a hard error
+- rewrite the sentence into generic editorial language (`la crítica`, `la recepción`, `el consenso`) instead of naming the source
+- sources may still be cited in the audit report/output evidence, but never inside the published review copy
 
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:
 

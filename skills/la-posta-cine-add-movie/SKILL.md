@@ -141,6 +141,7 @@ External review enrichment policy (mandatory):
   3. `IMDb` (user/critic rating and/or review snippets) as fallback when no formal critic review is available
 - Extract only verifiable points (for example: general reception, pacing comments, acting comments, critics consensus).
 - Use scores/signals as internal support, but write them in natural language for the review.
+- External sources are support material only. Never mention or name third-party sites/brands inside the user-facing `review` text (`Rotten`, `Metacritic`, `IMDb`, etc.).
 - Do not dump raw numeric strings in the review body (examples to avoid: `59/100`, `6.8/10`, `Numeros: ...`) unless the user explicitly asks for numeric detail.
 - Do not fabricate criticism details that are not present in the consulted source.
 - If no source from the list can be verified, stop and ask the user for a reference link before committing.
@@ -291,6 +292,7 @@ Write `review` by combining user feedback + external review enrichment:
 - No invented opinions
 - Include at least one concrete detail grounded in the external source (for example reception cue, critic consensus, repeated strengths/weaknesses).
 - Translate critic reception into rioplatense wording (for example: `funciona muy bien`, `quedo medio pelo`, `la destrozaron bastante`) instead of exposing raw score formats.
+- Never write phrases like `en Rotten`, `segun Metacritic`, `IMDb la dejo...` or any other explicit third-party attribution inside the review.
 - Never start the review with labels like `Numeros:` or any score dump template.
 - Every movie review must be unique in wording and structure.
 - Avoid repeated openings across a batch (for example reusing `En la critica especializada...` in multiple entries).
@@ -326,17 +328,22 @@ Score-driven mapping policy (mandatory when a numeric reception score is used in
 
 `verdictLabel` style policy (mandatory):
 
-- Do not lock labels to a single default per verdict (avoid always using only `RECOMENDADA`, `ZAFA`, `MALISIMA`).
+- Clarity beats creativity: the label must tell the user at a glance if the movie is good, passable, or bad.
+- Repetition is allowed. Do not force artificial variety if the alternative sounds confusing.
 - If user provides an explicit label/phrase, preserve it as `verdictLabel` (normalized only for casing/spacing).
-- If user does not provide label, infer one from critic reception intensity and tone.
-- Rotate labels across multi-movie batches so they do not repeat mechanically.
+- If user does not provide label, infer one with plain colloquial wording that reads instantly on the card.
 - Hard cap: `verdictLabel` must be `<= 21` visible characters, including spaces, so the movie card badge never clips.
 - Keep labels consistent with `verdict`:
-  - `recomendada`: examples `ESTA MUY BIEN`, `BRILLANTE`, `ASOMBROSA`, `MUY BUENA`, `PELICULON`, `SÓLIDA`
-  - `zafa`: examples `MEH`, `MASOMENO`, `ZAFETTI`, `ZAFA`, `ZAFAROLA`, `PASABLE`
-  - `no_recomendada`: examples `UNA VERGA`, `ABURRIDA`, `PLOMAZO`, `FLOJISIMA`, `NO VA`
+  - `recomendada`: examples `RECOMENDADA`, `ESTA BUENA`, `MUY BUENA`, `IMPERDIBLE`, `ESTA MUY BIEN`, `BUENISIMA`
+  - `zafa`: examples `PASABLE`, `ZAFA`, `ESTA OK`, `SE DEJA VER`, `CUMPLE`, `MAS O MENOS`
+  - `no_recomendada`: examples `NO LA MIRES`, `MALA`, `MALISIMA`, `ES UNA VERGA`, `UN GARRON`, `MUY FLOJA`
+  - `basura_atomica`: examples `BASURA TOTAL`, `NI LA PONGAS`, `HORRIBLE`, `DESASTRE`, `TODO MAL`
+- If the movie is a universally recognized all-timer or canonical classic, prefer a legendary-style `verdictLabel`.
+  Examples: `LEGENDARIA`, `OBRA MAESTRA`, `CLASICO TOTAL`.
+  This applies to cases like `The Godfather`, `The Godfather Part II`, `Casablanca`, `Schindler's List`, `The Lord of the Rings: The Return of the King`, `Spirited Away`, and similar consensus classics.
 - Prefer uppercase display labels unless user explicitly asks for another style.
 - Never assign a positive-sounding label to `no_recomendada` (or vice versa).
+- Do not invent cryptic combinations like `NO VA SALVAJE`, `PAPELON NOBLE`, `PASABLE SUELTA` or any badge that needs interpretation.
 
 ## Premiere badge rules
 

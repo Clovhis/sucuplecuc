@@ -16,7 +16,7 @@
 	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"verdict": "recomendada",
-	"verdictLabel": "VALE LA PENA",
+	"verdictLabel": "ESTA BUENA",
 	"awards": {
 		"wins": [
 			{
@@ -34,5 +34,21 @@
 		"Europeas"
 	],
 	"runtimeMinutes": 113,
-	"review": "Grand Hotel vive del choque de estrellas y del placer de ver cómo se cruzan miserias, glamour y deseo en un mismo pasillo. Como película coral clásica, entra fácil."
+	"review": "Grand Hotel vive del choque de estrellas y del placer de ver cómo se cruzan miserias, glamour y deseo en un mismo pasillo. Como película coral clásica, entra fácil.",
+	"editorial": {
+		"idealFor": [
+			"solo",
+			"domingo"
+		],
+		"becauseYouLiked": [
+			"the-broadway-melody-1929",
+			"mrs-miniver-1942"
+		],
+		"related": [
+			"gone-with-the-wind-1939",
+			"the-best-years-of-our-lives-1946",
+			"casablanca-1943",
+			"gentleman-s-agreement-1947"
+		]
+	}
 }
