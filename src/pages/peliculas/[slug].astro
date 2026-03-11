@@ -8,6 +8,7 @@ import {
 	getVerdictLabel,
 } from '../../lib/movies';
 import MovieRating from '../../components/MovieRating.astro';
+import { createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -71,9 +72,16 @@ const awardCategories = groupedAwards.flatMap((group) =>
 const hasEditorialTopGrid =
 	Boolean(editorialSummary.runtime) || editorialSummary.idealFor.length > 0;
 const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
+const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} image={posterUrl}>
+<BaseLayout
+	title={pageTitle}
+	description={pageDescription}
+	image={posterUrl}
+	openGraphType="article"
+	structuredData={structuredData}
+>
 	<main id="main-content" class="container">
 		<div class="page-actions">
 			<a class="page-action page-action--history" href={import.meta.env.BASE_URL} data-history-back>

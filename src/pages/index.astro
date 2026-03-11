@@ -2,14 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MovieCard from '../components/MovieCard.astro';
 import { getMovies, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
+import { ABOUT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const movies = getMovies();
-const pageTitle = 'Cine Posta | Reseñas cortas sin humo';
-const pageDescription =
-	'Reseñas cortas de peliculas. Directo, honesto y al grano.';
+const pageTitle = 'Cine Posta | Reseñas cortas y honestas de películas';
+const pageDescription = SITE_DESCRIPTION;
+const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription}>
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<header class="site-header container">
 		<div class="site-header__line">
 			<div class="site-header__brand-column">
@@ -21,7 +22,7 @@ const pageDescription =
 					/>
 				</a>
 				<div class="site-header__copy">
-					<p class="site-header__tagline">Reseñas super cortas y honestas</p>
+					<h1 class="site-header__tagline">{SITE_NAME}: reseñas super cortas y honestas de películas</h1>
 					<p class="site-header__rotating-copy" data-rotating-copy>
 						Sin humo, sin metaforas raras, sin chamuyo.
 					</p>
@@ -55,6 +56,9 @@ const pageDescription =
 					>
 						Contacto / Prensa
 					</a>
+					<a class="site-header__contact-link" href={ABOUT_PATH} aria-label="Ir a la página Sobre Cine Posta">
+						Sobre Cine Posta
+					</a>
 				</div>
 			</div>
 		</div>
@@ -68,10 +72,10 @@ const pageDescription =
 						<div class="catalog-shell__intro">
 							<p class="catalog-shell__kicker">Explorá el catálogo</p>
 							<p class="catalog-shell__copy">
-								Usá filtros o escribí directo. Lo importante es decidir rápido qué ver.
+								Cine Posta es un sitio argentino con reseñas cortas, honestas y directas para decidir rápido qué ver.
 							</p>
 							<p class="catalog-shell__copy">
-								Y dentro de cada ficha vas a encontrar recomendaciones para seguir por ese mismo lado.
+								Usá filtros o escribí directo. Y dentro de cada ficha vas a encontrar recomendaciones para seguir por ese mismo lado.
 							</p>
 						</div>
 						<section class="movie-search" data-movie-search-root>

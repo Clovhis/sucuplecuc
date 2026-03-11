@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONTACT_EMAIL, SITE_DESCRIPTION, SITE_NAME, createAboutPageStructuredData } from '../lib/seo';
+
+const pageTitle = `Sobre ${SITE_NAME} | Qué es y cómo funciona`;
+const pageDescription =
+	'Sobre Cine Posta: qué es el sitio, cómo reseña películas y cómo contactar por prensa o colaboraciones.';
+const structuredData = createAboutPageStructuredData(pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container about-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Marca y proyecto editorial</p>
+			<h1 class="about-page__title">{SITE_NAME}</h1>
+			<p class="about-page__lead">{SITE_DESCRIPTION}</p>
+		</section>
+
+		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
+				<h2>Qué es Cine Posta</h2>
+				<p>
+					{SITE_NAME} es un sitio argentino de reseñas de películas pensado para gente que quiere una señal clara
+					antes de elegir qué ver.
+				</p>
+				<p>
+					La propuesta es simple: textos cortos, honestos, sin humo crítico ni vueltas raras. La idea es bajar la
+					decisión a tierra y decir si una peli rinde o no rinde.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
+				<h2>Cómo funcionan las reseñas</h2>
+				<p>
+					Cada ficha mezcla datos básicos de la película con una reseña breve, recomendaciones relacionadas y un
+					veredicto editorial claro.
+				</p>
+				<p>
+					El catálogo se actualiza de forma manual para mantener criterio, tono consistente y foco en cine que valga
+					la pena comentar.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 180ms;">
+				<h2>Contacto y prensa</h2>
+				<p>
+					Para consultas, prensa o colaboraciones, escribí a
+					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Contacto%20y%20Prensa`}>{CONTACT_EMAIL}</a>.
+				</p>
+				<p>
+					Si querés apoyar el proyecto, también podés hacerlo desde
+					<a href="https://cafecito.app/cineposta" target="_blank" rel="noopener noreferrer"> Cafecito</a>.
+				</p>
+			</article>
+		</section>
+	</main>
+</BaseLayout>
