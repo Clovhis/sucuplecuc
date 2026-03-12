@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-11. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-12. Fuente: src/data/movies/*.json
 
-Total de peliculas: 604
+Total de peliculas: 619
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -11,14 +11,28 @@ Total de peliculas: 604
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Cine |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
+| 2026 | Dracula | dracula-2026 | Terror | Cine |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
 | 2026 | GOAT | goat-2026 | Animacion | Cine |
+| 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Cine |
+| 2026 | Hoppers | hoppers-2026 | Animacion | Cine |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Cine |
 | 2026 | Mercy | mercy-2026 | Accion | Cine |
+| 2026 | Othello | othello-2026 | Drama | Cine |
+| 2026 | Primate | primate-2026 | Terror | Cine |
+| 2026 | Protector | protector-2026 | Accion | Cine |
+| 2026 | Psycho Killer | psycho-killer-2026 | Terror | Cine |
+| 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Cine |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Cine |
 | 2026 | Send Help | send-help-2026 | Thriller | Cine |
+| 2026 | Shelter | shelter-2026 | Thriller | Cine |
+| 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Cine |
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Cine |
+| 2026 | The Bride! | the-bride-2026 | Fantasia | Cine |
+| 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Cine |
+| 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Cine |
+| 2026 | Whistle | whistle-2026 | Terror | Cine |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Cine |
@@ -67,6 +81,7 @@ Total de peliculas: 604
 | 2025 | The Gorge | the-gorge-2025 | Ciencia ficcion | Apple TV |
 | 2025 | The Housemaid (La empleada) | the-housemaid-2025 | Thriller | Cine |
 | 2025 | The Monkey | the-monkey-2025 | Terror | Prime Video |
+| 2025 | The Plague | the-plague-2025 | Thriller | Cine |
 | 2025 | The Woman in the Yard | the-woman-in-the-yard-2025 | Terror | HBO Max |
 | 2025 | Thunderbolts* | thunderbolts-2025 | Accion | Disney Plus |
 | 2025 | Together: Juntos Hasta La Muerte | together-juntos-hasta-la-muerte-2025 | Terror | Prime Video |
@@ -184,6 +199,7 @@ Total de peliculas: 604
 | 2022 | Nope | nope-2022 | Terror | Stremio |
 | 2022 | Scream | scream-2022 | Terror | Stremio |
 | 2022 | Suzume | suzume-2022 | Anime | Crunchyroll |
+| 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | The Banshees of Inisherin | the-banshees-of-inisherin-2022 | Comedia | Disney Plus |
 | 2022 | The Batman | the-batman-2022 | Accion | HBO Max |
 | 2022 | The Fabelmans | the-fabelmans-2022 | Drama | Stremio |
@@ -191,7 +207,6 @@ Total de peliculas: 604
 | 2022 | The Whale | the-whale-2022 | Drama | Netflix |
 | 2022 | Thor: Love and Thunder | thor-love-and-thunder-2022 | Accion | Disney Plus |
 | 2022 | Top Gun: Maverick | top-gun-maverick-2022 | Accion | Stremio |
-| 2022 | Tár | tar-2022 | Drama | Stremio |
 | 2022 | Uncharted | uncharted-2022 | Accion | Stremio |
 | 2021 | Belfast | belfast-2021 | Biográfica | Stremio |
 | 2021 | Belle | belle-2021 | Anime | Disney Plus |
