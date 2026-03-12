@@ -151,7 +151,6 @@ export function createMovieStructuredData(
 		| 'genres'
 		| 'poster'
 		| 'screenshots'
-		| 'trailerYoutubeId'
 		| 'director'
 		| 'mainCast'
 		| 'productionCompany'
@@ -190,10 +189,14 @@ export function createMovieStructuredData(
 		review: {
 			'@type': 'Review',
 			author: {
+				'@type': 'Organization',
 				'@id': getOrganizationId(),
+				name: SITE_NAME,
 			},
 			publisher: {
+				'@type': 'Organization',
 				'@id': getOrganizationId(),
+				name: SITE_NAME,
 			},
 			inLanguage: SITE_LANGUAGE,
 			name: `${movie.title} (${movie.year})`,
@@ -207,15 +210,6 @@ export function createMovieStructuredData(
 
 	if (movie.releaseDate) {
 		movieSchema.datePublished = movie.releaseDate;
-	}
-
-	if (movie.trailerYoutubeId) {
-		movieSchema.trailer = {
-			'@type': 'VideoObject',
-			name: `Trailer de ${movie.title}`,
-			embedUrl: `https://www.youtube.com/embed/${movie.trailerYoutubeId}`,
-			url: `https://www.youtube.com/watch?v=${movie.trailerYoutubeId}`,
-		};
 	}
 
 	return [
