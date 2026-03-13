@@ -5,6 +5,10 @@
 	"year": 2026,
 	"releaseDate": "2026-02-06",
 	"category": "Drama",
+	"genres": [
+		"Drama",
+		"Romance"
+	],
 	"poster": "https://upload.wikimedia.org/wikipedia/en/f/f9/Wuthering_Heights_%282026_film%29_poster.png",
 	"screenshots": [],
 	"trailerYoutubeId": "nyQCVvWqlCo",
@@ -28,14 +32,14 @@
 			"domingo"
 		],
 		"becauseYouLiked": [
-			"saltburn-2023",
-			"once-upon-a-time-in-hollywood-2019"
+			"rebecca-1940",
+			"gone-with-the-wind-1939"
 		],
 		"related": [
 			"hamnet-2025",
-			"belen-2025",
-			"echo-valley-2025",
-			"f1-the-movie-2025"
+			"the-english-patient-1996",
+			"casablanca-1943",
+			"titanic-1997"
 		]
 	}
 }
