@@ -9,7 +9,8 @@ export const SITE_LANGUAGE = 'es-AR';
 export const CONTACT_EMAIL = 'yosoyvargas@hotmail.com';
 export const SITE_DESCRIPTION =
 	'Cine Posta es un sitio argentino de reseñas cortas, honestas y directas sobre películas, con veredictos claros para decidir rápido qué ver.';
-export const SITE_LOGO_PATH = '/brand/cineposta-logo-full.png';
+export const SITE_LOGO_PATH = '/brand/cineposta-logo-mark.png';
+export const SITE_IMAGE_PATH = '/brand/cineposta-logo-full.png';
 export const ABOUT_PATH = '/sobre-cine-posta/';
 
 type StructuredDataValue = Record<string, unknown>;
@@ -43,7 +44,10 @@ function createOrganizationSchema(): StructuredDataValue {
 		logo: {
 			'@type': 'ImageObject',
 			url: asAbsoluteUrl(SITE_LOGO_PATH),
+			width: 512,
+			height: 512,
 		},
+		image: asAbsoluteUrl(SITE_IMAGE_PATH),
 		sameAs: ['https://cafecito.app/cineposta'],
 	};
 }
