@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-12. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-13. Fuente: src/data/movies/*.json
 
-Total de peliculas: 619
+Total de peliculas: 657
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -251,6 +251,7 @@ Total de peliculas: 619
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus |
 | 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Stremio |
+| 2019 | How to Train Your Dragon: The Hidden World | how-to-train-your-dragon-the-hidden-world-2019 | Animacion | Stremio |
 | 2019 | John Wick: Chapter 3 - Parabellum | john-wick-chapter-3-parabellum-2019 | Accion | Stremio |
 | 2019 | Joker | joker-2019 | Drama | Stremio |
 | 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus |
@@ -268,6 +269,7 @@ Total de peliculas: 619
 | 2018 | Creed II | creed-ii-2018 | Drama | Stremio |
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus |
 | 2018 | El Ángel | el-angel-2018 | Crimen | Stremio |
+| 2018 | Fantastic Beasts: The Crimes of Grindelwald | fantastic-beasts-the-crimes-of-grindelwald-2018 | Fantasia | HBO Max |
 | 2018 | Green Book | green-book-2018 | Drama | Prime Video |
 | 2018 | Jurassic World: Fallen Kingdom | jurassic-world-fallen-kingdom-2018 | Aventura | Prime Video |
 | 2018 | La noche de Halloween | halloween-2018 | Terror | Netflix |
@@ -279,6 +281,7 @@ Total de peliculas: 619
 | 2018 | Venom | venom-2018 | Accion | Netflix |
 | 2017 | Alien: Covenant | alien-covenant-2017 | Ciencia ficcion | Disney Plus |
 | 2017 | Blade Runner 2049 | blade-runner-2049-2017 | Ciencia ficcion | Stremio |
+| 2017 | Coco | coco-2017 | Animacion | Disney Plus |
 | 2017 | Dunkirk | dunkirk-2017 | Drama | Stremio |
 | 2017 | El culto de Chucky | cult-of-chucky-2017 | Terror | Stremio |
 | 2017 | Fireworks | fireworks-2017 | Anime | Stremio |
@@ -292,6 +295,7 @@ Total de peliculas: 619
 | 2017 | Star Wars: The Last Jedi | star-wars-episode-viii-the-last-jedi-2017 | Ciencia ficcion | Disney Plus |
 | 2017 | The Shape of Water | the-shape-of-water-2017 | Drama | Disney Plus |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus |
+| 2017 | War for the Planet of the Apes | war-for-the-planet-of-the-apes-2017 | Accion | Disney Plus |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | Stremio |
 | 2017 | Zama | zama-2017 | Drama | Stremio |
 | 2016 | A Silent Voice | a-silent-voice-2016 | Anime | Prime Video |
@@ -300,6 +304,7 @@ Total de peliculas: 619
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus |
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus |
+| 2016 | Fantastic Beasts and Where to Find Them | fantastic-beasts-and-where-to-find-them-2016 | Fantasia | HBO Max |
 | 2016 | Moonlight | moonlight-2016 | Drama | Prime Video |
 | 2016 | Rogue One: A Star Wars Story | rogue-one-a-star-wars-story-2016 | Ciencia ficcion | Disney Plus |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio |
@@ -310,6 +315,7 @@ Total de peliculas: 619
 | 2015 | Creed | creed-2015 | Drama | Stremio |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus |
+| 2015 | Furious 7 | furious-7-2015 | Accion | Stremio |
 | 2015 | Jurassic World | jurassic-world-2015 | Aventura | Prime Video |
 | 2015 | Mad Max: Fury Road | mad-max-fury-road-2015 | Accion | Netflix |
 | 2015 | Mission: Impossible - Rogue Nation | mission-impossible-rogue-nation-2015 | Accion | Disney Plus |
@@ -323,14 +329,18 @@ Total de peliculas: 619
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus |
 | 2014 | Birdman or (The Unexpected Virtue of Ignorance) | birdman-or-the-unexpected-virtue-of-ignorance-2014 | Drama | Disney Plus |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus |
+| 2014 | Dawn of the Planet of the Apes | dawn-of-the-planet-of-the-apes-2014 | Accion | Disney Plus |
 | 2014 | Guardians of the Galaxy | guardians-of-the-galaxy-2014 | Accion | Disney Plus |
+| 2014 | How to Train Your Dragon 2 | how-to-train-your-dragon-2-2014 | Animacion | Stremio |
 | 2014 | Interstellar | interstellar-2014 | Ciencia ficcion | Prime Video |
 | 2014 | John Wick | john-wick-2014 | Accion | Stremio |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus |
+| 2014 | Whiplash | whiplash-2014 | Drama | Stremio |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus |
 | 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max |
+| 2013 | Frozen | frozen-2013 | Animacion | Disney Plus |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus |
 | 2013 | La maldición de Chucky | curse-of-chucky-2013 | Terror | HBO Max |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Stremio |
@@ -348,12 +358,15 @@ Total de peliculas: 619
 | 2012 | The Dark Knight Rises | the-dark-knight-rises-2012 | Accion | Stremio |
 | 2012 | Wolf Children | wolf-children-2012 | Anime | HBO Max |
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus |
+| 2011 | Fast Five | fast-five-2011 | Accion | Stremio |
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video |
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Stremio |
 | 2011 | Harry Potter and the Deathly Hallows: Part 2 | harry-potter-and-the-deathly-hallows-part-2-2011 | Aventura | HBO Max |
+| 2011 | Kung Fu Panda 2 | kung-fu-panda-2-2011 | Animacion | Stremio |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Stremio |
 | 2011 | Mission: Impossible - Ghost Protocol | mission-impossible-ghost-protocol-2011 | Accion | Disney Plus |
 | 2011 | Pirates of the Caribbean: On Stranger Tides | pirates-of-the-caribbean-on-stranger-tides-2011 | Aventura | Disney Plus |
+| 2011 | Rise of the Planet of the Apes | rise-of-the-planet-of-the-apes-2011 | Accion | Disney Plus |
 | 2011 | Scream 4: grita de nuevo | scream-4-2011 | Terror | Prime Video |
 | 2011 | The Artist | the-artist-2011 | Comedia | Stremio |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus |
@@ -361,22 +374,26 @@ Total de peliculas: 619
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus |
 | 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max |
+| 2010 | How to Train Your Dragon | how-to-train-your-dragon-2010 | Animacion | Stremio |
 | 2010 | Inception | inception-2010 | Ciencia ficcion | HBO Max |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max |
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Stremio |
+| 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix |
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix |
 | 2009 | Terminator Salvation | terminator-salvation-2009 | Accion | Netflix |
+| 2009 | Up | up-2009 | Animacion | Disney Plus |
 | 2009 | Viernes 13 | friday-the-13th-2009 | Terror | Stremio |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus |
 | 2008 | Indiana Jones and the Kingdom of the Crystal Skull | indiana-jones-and-the-kingdom-of-the-crystal-skull-2008 | Aventura | Stremio |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus |
+| 2008 | Kung Fu Panda | kung-fu-panda-2008 | Animacion | Stremio |
 | 2008 | Leonera | leonera-2008 | Drama | Netflix |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Stremio |
 | 2008 | Quantum of Solace | quantum-of-solace-2008 | Accion | Netflix |
@@ -384,6 +401,7 @@ Total de peliculas: 619
 | 2008 | The Dark Knight | the-dark-knight-2008 | Thriller | Stremio |
 | 2008 | The Hurt Locker | the-hurt-locker-2008 | Drama | Prime Video |
 | 2008 | The Incredible Hulk | the-incredible-hulk-2008 | Accion | Disney Plus |
+| 2008 | WALL-E | wall-e-2008 | Animacion | Disney Plus |
 | 2007 | Death Proof | death-proof-2007 | Thriller | Stremio |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Stremio |
@@ -391,6 +409,7 @@ Total de peliculas: 619
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max |
 | 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Stremio |
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus |
+| 2007 | Ratatouille | ratatouille-2007 | Animacion | Disney Plus |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video |
 | 2006 | Casino Royale | casino-royale-2006 | Accion | Netflix |
 | 2006 | Mission: Impossible III | mission-impossible-iii-2006 | Accion | Disney Plus |
@@ -421,11 +440,14 @@ Total de peliculas: 619
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix |
 | 2004 | Million Dollar Baby | million-dollar-baby-2004 | Drama | Prime Video |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio |
+| 2004 | The Incredibles | the-incredibles-2004 | Animacion | Disney Plus |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus |
+| 2003 | Finding Nemo | finding-nemo-2003 | Animacion | Disney Plus |
 | 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | Stremio |
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video |
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix |
+| 2003 | Oldboy | oldboy-2003 | Thriller | Stremio |
 | 2003 | Pirates of the Caribbean: The Curse of the Black Pearl | pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003 | Aventura | Disney Plus |
 | 2003 | Terminator 3: Rise of the Machines | terminator-3-rise-of-the-machines-2003 | Accion | Stremio |
 | 2003 | The Lord of the Rings: The Return of the King | the-lord-of-the-rings-the-return-of-the-king-2003 | Drama | Prime Video |
@@ -439,6 +461,7 @@ Total de peliculas: 619
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio |
 | 2002 | Star Wars: Episode II - Attack of the Clones | star-wars-episode-ii-attack-of-the-clones-2002 | Ciencia ficcion | Disney Plus |
+| 2002 | The Lord of the Rings: The Two Towers | the-lord-of-the-rings-the-two-towers-2002 | Aventura | Stremio |
 | 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max |
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Stremio |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus |
@@ -447,7 +470,11 @@ Total de peliculas: 619
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video |
 | 2001 | Millennium Actress | millennium-actress-2001 | Anime | Stremio |
+| 2001 | Monsters, Inc. | monsters-inc-2001 | Animacion | Disney Plus |
+| 2001 | Shrek | shrek-2001 | Animacion | Stremio |
 | 2001 | Spirited Away | spirited-away-2001 | Anime | Netflix |
+| 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Stremio |
+| 2001 | The Lord of the Rings: The Fellowship of the Ring | the-lord-of-the-rings-the-fellowship-of-the-ring-2001 | Aventura | Stremio |
 | 2000 | Gladiator | gladiator-2000 | Drama | Stremio |
 | 2000 | Memento | memento-2000 | Thriller | Stremio |
 | 2000 | Mission: Impossible II | mission-impossible-ii-2000 | Accion | Stremio |
@@ -459,13 +486,16 @@ Total de peliculas: 619
 | 1999 | Fight Club | fight-club-1999 | Drama | Prime Video |
 | 1999 | Star Wars: Episode I - The Phantom Menace | star-wars-episode-i-the-phantom-menace-1999 | Ciencia ficcion | Disney Plus |
 | 1999 | The Matrix | the-matrix-1999 | Ciencia ficcion | Netflix |
+| 1999 | The Sixth Sense | the-sixth-sense-1999 | Thriller | Stremio |
 | 1998 | Blade | blade-1998 | Accion | HBO Max |
 | 1998 | Halloween: H20. Veinte años después | halloween-h20-20-years-later-1998 | Terror | Stremio |
 | 1998 | La novia de Chucky | bride-of-chucky-1998 | Terror | Prime Video |
 | 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio |
+| 1998 | The Truman Show | the-truman-show-1998 | Drama | Stremio |
 | 1997 | Alien Resurrection | alien-resurrection-1997 | Ciencia ficcion | Disney Plus |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video |
+| 1997 | Good Will Hunting | good-will-hunting-1997 | Drama | Stremio |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio |
 | 1997 | Perfect Blue | perfect-blue-1997 | Anime | HBO Max |
 | 1997 | Princess Mononoke | princess-mononoke-1997 | Anime | Netflix |
@@ -503,6 +533,7 @@ Total de peliculas: 619
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Stremio |
 | 1990 | Goodfellas | goodfellas-1990 | Crimen | Netflix |
+| 1990 | Home Alone | home-alone-1990 | Comedia | Disney Plus |
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Stremio |
 | 1990 | Rocky V | rocky-v-1990 | Drama | Stremio |
 | 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video |
@@ -565,6 +596,7 @@ Total de peliculas: 619
 | 1980 | The Shining | the-shining-1980 | Terror | HBO Max |
 | 1980 | Viernes 13 | friday-the-13th-1980 | Terror | HBO Max |
 | 1979 | Alien | alien-1979 | Ciencia ficcion | Disney Plus |
+| 1979 | Apocalypse Now | apocalypse-now-1979 | Drama | Stremio |
 | 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max |
 | 1979 | Mad Max | mad-max-1979 | Accion | HBO Max |
 | 1979 | Rocky II | rocky-ii-1979 | Drama | Stremio |
@@ -574,8 +606,11 @@ Total de peliculas: 619
 | 1977 | Annie Hall | annie-hall-1977 | Comedia | Stremio |
 | 1977 | Star Wars: Episode IV - A New Hope | star-wars-episode-iv-a-new-hope-1977 | Ciencia ficcion | Disney Plus |
 | 1976 | Rocky | rocky-1976 | Drama | Stremio |
+| 1976 | Taxi Driver | taxi-driver-1976 | Thriller | Stremio |
+| 1975 | Jaws | jaws-1975 | Terror | Stremio |
 | 1975 | One Flew Over the Cuckoo's Nest | one-flew-over-the-cuckoo-s-nest-1975 | Drama | HBO Max |
 | 1974 | The Godfather Part II | the-godfather-part-ii-1974 | Drama | Netflix |
+| 1973 | The Exorcist | the-exorcist-1973 | Terror | Stremio |
 | 1973 | The Sting | the-sting-1973 | Crimen | Stremio |
 | 1972 | The Godfather | the-godfather-1972 | Drama | Netflix |
 | 1971 | The French Connection | the-french-connection-1971 | Crimen | Disney Plus |
@@ -599,6 +634,7 @@ Total de peliculas: 619
 | 1956 | Around the World in 80 Days | around-the-world-in-80-days-1956 | Comedia | Stremio |
 | 1955 | Marty | marty-1955 | Drama | Prime Video |
 | 1954 | On the Waterfront | on-the-waterfront-1954 | Drama | Stremio |
+| 1954 | Seven Samurai | seven-samurai-1954 | Drama | Stremio |
 | 1953 | From Here to Eternity | from-here-to-eternity-1953 | Romance | Stremio |
 | 1952 | The Greatest Show on Earth | the-greatest-show-on-earth-1952 | Romance | Stremio |
 | 1951 | An American in Paris | an-american-in-paris-1951 | Musical | Stremio |
@@ -611,9 +647,11 @@ Total de peliculas: 619
 | 1944 | Going My Way | going-my-way-1944 | Drama | Stremio |
 | 1943 | Casablanca | casablanca-1943 | Drama | HBO Max |
 | 1942 | Mrs. Miniver | mrs-miniver-1942 | Drama | Stremio |
+| 1941 | Citizen Kane | citizen-kane-1941 | Drama | Stremio |
 | 1941 | How Green Was My Valley | how-green-was-my-valley-1941 | Drama | Disney Plus |
 | 1940 | Rebecca | rebecca-1940 | Thriller | Stremio |
 | 1939 | Gone with the Wind | gone-with-the-wind-1939 | Drama | HBO Max |
+| 1939 | The Wizard of Oz | the-wizard-of-oz-1939 | Fantasia | Stremio |
 | 1938 | You Can't Take It with You | you-can-t-take-it-with-you-1938 | Romance | Stremio |
 | 1937 | The Life of Emile Zola | the-life-of-emile-zola-1937 | Drama | Stremio |
 | 1936 | The Great Ziegfeld | the-great-ziegfeld-1936 | Musical | Stremio |
