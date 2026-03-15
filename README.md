@@ -14,6 +14,7 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 - Verdict badges + optional colloquial `verdictLabel`
 - Platform label (`releasePlatform`: Cine, Netflix, HBO Max, Apple TV, Prime Video, Disney Plus, Crunchyroll, Stremio)
 - Technical metadata in detail page (`originalTitle`, `category`, `director`, `mainCast`, `productionCompany`)
+- People panel backed by `src/data/people.json`, with birth date/age when available and initials fallback when no trustworthy portrait exists
 - Editorial helper blocks in detail page (`runtimeMinutes`, `idealFor`, bridge recommendations, related suggestions)
 - Awards section in detail page (always present as `awards.wins`, including empty list when no wins apply)
 - Optional screenshot gallery (2 images in detail page left column)
@@ -116,6 +117,7 @@ Current schema:
 - `releaseDate` is optional (`YYYY-MM-DD`). If present, the site uses it to decide if the movie is already released.
 - If `releaseDate` is missing, the site treats the movie as released only when `year` is less than the current year.
 - `trailerYoutubeId` stores only the YouTube ID, never full URLs.
+- For anime and other non-Latin originals, prefer the official native-script `originalTitle` when it is verifiable from official material.
 - `screenshots` is optional:
   - if at least 2 URLs exist, detail page shows a two-shot gallery
   - otherwise poster fallback is used
@@ -129,6 +131,16 @@ Current schema:
 - `editorial` recommendations must reference existing movie slugs, must not point back to the same movie, and should be curated instead of left to auto-pick defaults.
 - `releasePlatform` is optional but recommended.
 - `originalTitle`, `category`, `director`, `mainCast`, and `productionCompany` are required for publishing.
+
+## People catalog model
+
+People metadata lives in `src/data/people.json` and powers the director/cast cards shown in each movie page.
+
+- Prefer `birthDate` when an exact public date exists; otherwise keep `birthYear`.
+- `image` must point to a trusted local cache under `public/people/` only when the file is a real portrait of the credited person.
+- If no trustworthy portrait exists, leave `image` empty and let the UI fall back to initials.
+- If IMDb does not exist, keep another traceable source in `referenceUrls` instead of inventing an IMDb profile.
+- For anime/animation entries, `mainCast` should contain the principal original voice cast, not dub actors and not character names.
 
 ## Community rating system (Supabase)
 

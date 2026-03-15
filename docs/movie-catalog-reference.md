@@ -624,7 +624,7 @@ Total de peliculas: 660
 | 1967 | In the Heat of the Night | in-the-heat-of-the-night-1967 | Drama | Prime Video |
 | 1966 | A Man for All Seasons | a-man-for-all-seasons-1966 | Historia | Stremio |
 | 1966 | Batman | batman-1966 | Comedia | Stremio |
-| 1965 | The Sound of Music | the-sound-of-music-1965 | Drama | Disney Plus |
+| 1965 | La novicia rebelde | the-sound-of-music-1965 | Drama | Disney Plus |
 | 1964 | My Fair Lady | my-fair-lady-1964 | Comedia | Stremio |
 | 1963 | Tom Jones | tom-jones-1963 | Comedia | HBO Max |
 | 1962 | Lawrence of Arabia | lawrence-of-arabia-1962 | Historia | Netflix |

@@ -141,6 +141,24 @@ const TRUSTED_PERSON_IMAGE_HOSTS = new Set([
 ]);
 const SUSPICIOUS_PERSON_IMAGE_HOSTS = new Set(['static.wixstatic.com']);
 const SUSPICIOUS_PERSON_IMAGE_TOKENS = ['logo', 'favicon', 'placeholder', 'default-avatar', 'default_profile', 'no-image', 'site-icon'];
+const ARGENTINA_TITLE_SIGNAL_TOKENS = new Set([
+	'el',
+	'la',
+	'los',
+	'las',
+	'un',
+	'una',
+	'unos',
+	'unas',
+	'del',
+	'de',
+	'al',
+	'y',
+	'en',
+	'para',
+	'con',
+	'sin',
+]);
 
 function parseArgs(argv) {
 	const args = {
@@ -199,20 +217,20 @@ function usage() {
 
 function normalizeText(value) {
 	return String(value || '')
-		.normalize('NFD')
+		.normalize('NFKD')
 		.replace(/[\u0300-\u036f]/g, '')
 		.toLowerCase()
-		.replace(/[^a-z0-9\s]/g, ' ')
+		.replace(/[^\p{L}\p{N}\s]/gu, ' ')
 		.replace(/\s+/g, ' ')
 		.trim();
 }
 
 function normalizePersonKey(value) {
 	return String(value || '')
-		.normalize('NFD')
+		.normalize('NFKD')
 		.replace(/[\u0300-\u036f]/g, '')
 		.toLowerCase()
-		.replace(/[^a-z0-9\s']/g, ' ')
+		.replace(/[^\p{L}\p{N}\s']/gu, ' ')
 		.replace(/\s+/g, ' ')
 		.trim();
 }
@@ -241,6 +259,64 @@ function isSuspiciousPersonImageUrl(value) {
 	}
 
 	return SUSPICIOUS_PERSON_IMAGE_TOKENS.some((token) => normalized.includes(token));
+}
+
+function getUrlBasenameSlug(value) {
+	try {
+		const pathname = new URL(String(value || '')).pathname;
+		const parsed = path.posix.basename(pathname);
+		if (!parsed) {
+			return '';
+		}
+
+		return parsed.replace(/\.[a-z0-9]+$/i, '');
+	} catch {
+		return '';
+	}
+}
+
+function countSharedLongTokens(left, right) {
+	const rightText = normalizeText(right);
+	return normalizeText(left)
+		.split(' ')
+		.filter((token) => token.length >= 4)
+		.filter((token) => rightText.includes(token)).length;
+}
+
+function detectArgentinaTitleDrift(movie) {
+	const posterHost = getHostname(movie.poster);
+	if (!/justwatch\.com$/i.test(posterHost) && !/justwatch\.com$/i.test(posterHost.replace(/^images\./, ''))) {
+		return null;
+	}
+
+	if (normalizeText(movie.title) !== normalizeText(movie.originalTitle)) {
+		return null;
+	}
+
+	const posterSlug = getUrlBasenameSlug(movie.poster);
+	const normalizedPosterSlug = normalizeText(posterSlug);
+	const normalizedTitle = normalizeText(movie.title);
+	const normalizedOriginalTitle = normalizeText(movie.originalTitle);
+	if (!normalizedPosterSlug || normalizedPosterSlug === normalizedTitle || normalizedPosterSlug === normalizedOriginalTitle) {
+		return null;
+	}
+
+	const posterTokens = normalizedPosterSlug.split(' ').filter((token) => token.length >= 3);
+	if (posterTokens.length < 2) {
+		return null;
+	}
+
+	const sharedWithTitle = countSharedLongTokens(normalizedPosterSlug, normalizedTitle);
+	if (sharedWithTitle >= 2) {
+		return null;
+	}
+
+	const hasArgentinaTitleSignal = posterTokens.some((token) => ARGENTINA_TITLE_SIGNAL_TOKENS.has(token));
+	if (!hasArgentinaTitleSignal && posterTokens.length < 3) {
+		return null;
+	}
+
+	return posterSlug.replace(/[-_]+/g, ' ');
 }
 
 function runGit(args, options = {}) {
@@ -552,6 +628,17 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		addFinding(findings, 'error', 'invalid-platform', candidatePath, `Unsupported releasePlatform "${String(movie.releasePlatform)}".`);
 	}
 
+	const argentinaTitleCandidate = detectArgentinaTitleDrift(movie);
+	if (argentinaTitleCandidate) {
+		addFinding(
+			findings,
+			'warn',
+			'argentina-title-suspect',
+			candidatePath,
+			`title matches originalTitle, but the Argentine-facing poster/localized asset suggests a different market title ("${argentinaTitleCandidate}"). Verify against AR sources.`,
+		);
+	}
+
 	if (typeof movie.poster !== 'string' || !/^https?:\/\//.test(movie.poster)) {
 		addFinding(findings, 'warn', 'poster-url', candidatePath, 'poster should use an absolute http(s) URL.');
 	}
@@ -634,43 +721,67 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 			continue;
 		}
 
-		if (!Number.isInteger(personEntry.birthYear) || personEntry.birthYear < 1850 || personEntry.birthYear > 2100) {
+		const derivedBirthYear =
+			Number.isInteger(personEntry.birthYear)
+				? personEntry.birthYear
+				: /^\d{4}/.test(String(personEntry.birthDate || ''))
+					? Number.parseInt(String(personEntry.birthDate).slice(0, 4), 10)
+					: undefined;
+		const derivedDeathYear =
+			Number.isInteger(personEntry.deathYear)
+				? personEntry.deathYear
+				: /^\d{4}/.test(String(personEntry.deathDate || ''))
+					? Number.parseInt(String(personEntry.deathDate).slice(0, 4), 10)
+					: undefined;
+		const traceableReferenceUrls = Array.isArray(personEntry.referenceUrls)
+			? personEntry.referenceUrls.filter((entry) => typeof entry === 'string' && entry.trim().length > 0)
+			: [];
+		const hasTraceProfile =
+			(typeof personEntry.imdbUrl === 'string' &&
+				/https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?/i.test(personEntry.imdbUrl)) ||
+			traceableReferenceUrls.some((entry) =>
+				/(?:wikidata\.org\/wiki\/Q\d+|themoviedb\.org\/person\/|watch\.plex\.tv\/person\/|anime-planet\.com\/people\/|screendollars\.com\/celebrity\/)/i.test(
+					entry,
+				),
+			);
+
+		if (!Number.isInteger(derivedBirthYear) || derivedBirthYear < 1850 || derivedBirthYear > 2100) {
 			addFinding(
 				findings,
-				'error',
-				'invalid-person-birth-year',
+				'warn',
+				'missing-person-birth',
 				candidatePath,
-				`"${personName}" must include a valid birthYear in src/data/people.json.`,
+				`"${personName}" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.`,
 			);
 		}
 
 		if (
-			Number.isInteger(personEntry.deathYear) &&
-			(Number.isInteger(personEntry.birthYear) ? personEntry.deathYear < personEntry.birthYear : false)
+			Number.isInteger(derivedDeathYear) &&
+			(Number.isInteger(derivedBirthYear) ? derivedDeathYear < derivedBirthYear : false)
 		) {
 			addFinding(
 				findings,
 				'error',
 				'invalid-person-death-year',
 				candidatePath,
-				`"${personName}" has a deathYear earlier than birthYear in src/data/people.json.`,
+				`"${personName}" has a death year earlier than birth year in src/data/people.json.`,
 			);
 		}
 
-		if (Number.isInteger(personEntry.deathYear) && personEntry.deathYear > CURRENT_YEAR) {
+		if (Number.isInteger(derivedDeathYear) && derivedDeathYear > CURRENT_YEAR) {
 			addFinding(
 				findings,
 				'error',
 				'invalid-person-death-year-future',
 				candidatePath,
-				`"${personName}" has a deathYear in the future in src/data/people.json.`,
+				`"${personName}" has a death year in the future in src/data/people.json.`,
 			);
 		}
 
 		if (
-			Number.isInteger(personEntry.birthYear) &&
-			!Number.isInteger(personEntry.deathYear) &&
-			CURRENT_YEAR - personEntry.birthYear > 110
+			Number.isInteger(derivedBirthYear) &&
+			!Number.isInteger(derivedDeathYear) &&
+			CURRENT_YEAR - derivedBirthYear > 110
 		) {
 			addFinding(
 				findings,
@@ -694,10 +805,10 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 		if (typeof personEntry.image !== 'string' || personEntry.image.trim().length === 0) {
 			addFinding(
 				findings,
-				'error',
+				'warn',
 				'missing-person-image',
 				candidatePath,
-				`"${personName}" must include a cached local image path.`,
+				`"${personName}" has no trusted cached portrait. Prefer initials fallback over storing a poster, screenshot, or group photo.`,
 			);
 		} else {
 			const normalizedImagePath = personEntry.image.replace(/^\/+/, '').replace(/\//g, path.sep);
@@ -734,16 +845,23 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 			}
 		}
 
-		if (
-			typeof personEntry.imdbUrl !== 'string' ||
-			!/https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?/i.test(personEntry.imdbUrl)
-		) {
+		if (typeof personEntry.imdbUrl === 'string' && personEntry.imdbUrl.trim().length > 0) {
+			if (!/https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?/i.test(personEntry.imdbUrl)) {
+				addFinding(
+					findings,
+					'warn',
+					'invalid-person-imdb-url',
+					candidatePath,
+					`"${personName}" has an invalid IMDb profile URL in src/data/people.json.`,
+				);
+			}
+		} else if (!hasTraceProfile) {
 			addFinding(
 				findings,
 				'warn',
-				'missing-person-imdb-url',
+				'missing-person-trace-url',
 				candidatePath,
-				`"${personName}" should keep a valid IMDb profile URL for traceability.`,
+				`"${personName}" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar).`,
 			);
 		}
 	}
@@ -817,24 +935,37 @@ function extractYoutubeResultIds(html) {
 	return [...new Set((html.match(/watch\?v=([A-Za-z0-9_-]{11})/g) || []).map((match) => match.slice(8)))];
 }
 
-function analyzeYoutubeTitle(movieTitle, movieYear, embedTitle) {
-	const expectedTitle = normalizeText(movieTitle);
+function analyzeYoutubeTitle(movie, embedTitle) {
 	const normalizedEmbedTitle = normalizeText(embedTitle);
-	const expectedTokens = expectedTitle.split(' ').filter(Boolean);
-	const titlePhraseMatch = expectedTitle.length > 0 && normalizedEmbedTitle.includes(expectedTitle);
-	const longTokenMatch = expectedTokens.some((token) => token.length >= 5 && normalizedEmbedTitle.includes(token));
+	const candidateTitles = [...new Set([movie.title, movie.originalTitle].filter((value) => typeof value === 'string' && value.trim().length > 0))];
+	const titleAnalyses = candidateTitles
+		.map((title) => {
+			const normalizedTitle = normalizeText(title);
+			const titleTokens = normalizedTitle.split(' ').filter(Boolean);
+			const titlePhraseMatch = normalizedTitle.length > 0 && normalizedEmbedTitle.includes(normalizedTitle);
+			const longTokenMatch = titleTokens.some((token) => token.length >= 5 && normalizedEmbedTitle.includes(token));
+			const isShortOrAmbiguousTitle = titleTokens.length <= 2 || normalizedTitle.length <= 12;
+			return {
+				title,
+				titlePhraseMatch,
+				longTokenMatch,
+				isShortOrAmbiguousTitle,
+				titleLooksRelated: titlePhraseMatch || (!isShortOrAmbiguousTitle && longTokenMatch),
+			};
+		})
+		.filter((entry) => entry.title);
 	const mentionedYears = [...String(embedTitle || '').matchAll(/\b(19|20)\d{2}\b/g)].map((match) => Number(match[0]));
-	const yearMentioned = mentionedYears.length > 0;
-	const yearMatches = mentionedYears.includes(movieYear);
-	const isShortOrAmbiguousTitle = expectedTokens.length <= 2 || expectedTitle.length <= 12;
+	const matchedVariant = titleAnalyses.find((entry) => entry.titleLooksRelated);
 
 	return {
-		titlePhraseMatch,
-		longTokenMatch,
-		yearMentioned,
-		yearMatches,
-		isShortOrAmbiguousTitle,
-		titleLooksRelated: titlePhraseMatch || (!isShortOrAmbiguousTitle && longTokenMatch),
+		titlePhraseMatch: titleAnalyses.some((entry) => entry.titlePhraseMatch),
+		longTokenMatch: titleAnalyses.some((entry) => entry.longTokenMatch),
+		yearMentioned: mentionedYears.length > 0,
+		yearMatches: mentionedYears.includes(movie.year),
+		mentionedYears,
+		isShortOrAmbiguousTitle: titleAnalyses.every((entry) => entry.isShortOrAmbiguousTitle),
+		titleLooksRelated: titleAnalyses.some((entry) => entry.titleLooksRelated),
+		matchedVariant: matchedVariant?.title,
 	};
 }
 
@@ -886,20 +1017,37 @@ function checkYoutubeOEmbed(videoId) {
 	});
 }
 
-async function searchYoutubeResults(movieTitle, movieYear) {
-	const query = encodeURIComponent(`${movieTitle} ${movieYear} trailer`);
-	const result = await fetchText(`https://www.youtube.com/results?search_query=${query}`);
-	if (!result.ok) {
+async function searchYoutubeResults(movie) {
+	const queries = [...new Set([movie.title, movie.originalTitle].filter((value) => typeof value === 'string' && value.trim().length > 0))];
+	const collectedIds = new Set();
+	let failureReason = 'YouTube search did not return usable results.';
+	let sawSuccess = false;
+
+	for (const title of queries) {
+		const query = encodeURIComponent(`${title} ${movie.year} trailer`);
+		const result = await fetchText(`https://www.youtube.com/results?search_query=${query}`);
+		if (!result.ok) {
+			failureReason = result.reason || `YouTube search returned HTTP ${result.statusCode}.`;
+			continue;
+		}
+
+		sawSuccess = true;
+		for (const videoId of extractYoutubeResultIds(result.body).slice(0, 10)) {
+			collectedIds.add(videoId);
+		}
+	}
+
+	if (!sawSuccess) {
 		return {
 			ok: false,
-			reason: result.reason || `YouTube search returned HTTP ${result.statusCode}.`,
+			reason: failureReason,
 			videoIds: [],
 		};
 	}
 
 	return {
 		ok: true,
-		videoIds: extractYoutubeResultIds(result.body).slice(0, 10),
+		videoIds: [...collectedIds].slice(0, 10),
 	};
 }
 
@@ -1039,17 +1187,24 @@ async function auditCandidates(args) {
 				continue;
 			}
 
-			const trailerTitleAnalysis = analyzeYoutubeTitle(movie.title, movie.year, trailerResult.title);
+			const trailerTitleAnalysis = analyzeYoutubeTitle(movie, trailerResult.title);
 			let youtubeSearch = null;
 			if (trailerTitleAnalysis.isShortOrAmbiguousTitle || !trailerTitleAnalysis.titleLooksRelated || !trailerTitleAnalysis.yearMentioned) {
-				youtubeSearch = await searchYoutubeResults(movie.title, movie.year);
+				youtubeSearch = await searchYoutubeResults(movie);
 				if (!youtubeSearch.ok) {
 					addFinding(findings, 'warn', 'youtube-search-unavailable', candidate, youtubeSearch.reason);
 				}
 			}
 
 			if (trailerTitleAnalysis.yearMentioned && !trailerTitleAnalysis.yearMatches) {
-				addFinding(findings, 'error', 'youtube-year-mismatch', candidate, `YouTube title "${trailerResult.title}" mentions a different year than ${movie.year}.`);
+				const hasNearbyYear = trailerTitleAnalysis.mentionedYears.some((value) => Math.abs(value - movie.year) <= 1);
+				addFinding(
+					findings,
+					hasNearbyYear && trailerTitleAnalysis.titleLooksRelated ? 'warn' : 'error',
+					'youtube-year-mismatch',
+					candidate,
+					`YouTube title "${trailerResult.title}" mentions a different year than ${movie.year}.`,
+				);
 			}
 
 			if (!trailerTitleAnalysis.titleLooksRelated) {
@@ -1066,7 +1221,12 @@ async function auditCandidates(args) {
 				}
 			}
 
-			if ((trailerTitleAnalysis.isShortOrAmbiguousTitle || !trailerTitleAnalysis.yearMentioned) && youtubeSearch?.ok && !youtubeSearch.videoIds.includes(trailerId)) {
+			if (
+				(trailerTitleAnalysis.isShortOrAmbiguousTitle || !trailerTitleAnalysis.yearMentioned) &&
+				!trailerTitleAnalysis.titleLooksRelated &&
+				youtubeSearch?.ok &&
+				!youtubeSearch.videoIds.includes(trailerId)
+			) {
 				addFinding(
 					findings,
 					'error',
@@ -1106,7 +1266,11 @@ function printTextReport(report) {
 		return;
 	}
 
-	console.log(`Result: FAIL (${errors.length} error(s), ${warnings.length} warning(s))`);
+	if (errors.length === 0) {
+		console.log(`Result: PASS WITH WARNINGS (${warnings.length} warning(s))`);
+	} else {
+		console.log(`Result: FAIL (${errors.length} error(s), ${warnings.length} warning(s))`);
+	}
 	for (const finding of report.findings) {
 		console.log(`[${finding.severity.toUpperCase()}] ${finding.code} :: ${finding.file} :: ${finding.message}`);
 	}

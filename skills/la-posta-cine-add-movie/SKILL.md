@@ -141,6 +141,19 @@ Find trustworthy metadata:
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
 
+Argentine title policy (mandatory):
+
+- `title` must always be the name used for Argentine audiences, not the raw original title by default.
+- `originalTitle` must keep the source-language/original-market title.
+- Verify `title` against Argentine-facing sources in this order when available:
+  1. Argentine platform page (`Disney Plus AR`, `Netflix AR`, `HBO Max AR`, `Prime Video AR`, etc.)
+  2. `JustWatch AR`
+  3. `IMDb` release info for `Argentina`
+  4. local distributor/exhibitor material for Argentina
+- If AR sources consistently keep the original title in English or another language, keep it.
+- If Spain/LatAm marketing disagrees with Argentina, prefer Argentina.
+- Never copy a Spain-only title into `title` just because the poster or one indexer uses it.
+
 External review enrichment policy (mandatory):
 
 - For every new movie, fetch at least one opinion/review signal from a specialized North American movie site.
@@ -174,6 +187,7 @@ Trailer policy is strict:
 
 - Always set `trailerYoutubeId` for the movie entry.
 - Prefer official trailer in original language.
+- For anime and other non-Latin originals, prefer the official native-script `originalTitle` when it is clearly available in official marketing/trailers. Do not downgrade it to pure romaji if that breaks traceability.
 - If user provides a YouTube URL, extract and use that video id directly.
 - If no reliable official trailer is found, stop and ask user for a trailer link before commit.
 - Do not finalize an entry with empty `trailerYoutubeId` unless user explicitly authorizes that exception.
@@ -188,18 +202,20 @@ People pool policy (mandatory):
 - Before searching the internet, consult `src/data/people.json` first and reuse any existing person entry/image/info cache already present.
 - Only enrich missing or stale person fields. Do not redownload portraits or rewrite entries that are already complete without a reason.
 - Each credited director and each actor in `mainCast` must end with:
-  - `birthYear`
+  - `birthDate` when an exact public date exists, or `birthYear` when only the year is verifiable
   - `deathYear` when applicable
   - `nationalityPrimary` written in Spanish as a short demonym/identity label ready for UI display (for example `Argentino`, `Estadounidense`, `Espanola`)
-  - `image` pointing to a local cached file under `public/people/`
-  - `imdbUrl`
+  - `image` pointing to a local cached file under `public/people/` only when you can verify it is a real individual portrait
+  - `imdbUrl` when IMDb exists, or another traceable profile inside `referenceUrls`
 - For titles whose `category` is `Anime`, `Animacion`, or `Animación`, `mainCast` must list the principal original voice cast, not dub/localized voice actors and not character names.
+- If a trustworthy portrait cannot be verified, leave `image` empty and allow initials fallback in UI. Never use posters, screenshots, logos, group photos, or character art as a fake portrait.
+- If a birth date/year or IMDb profile cannot be verified from trustworthy sources, do not invent it. Keep `referenceUrls` and a short `notes` explanation instead.
 - Preferred flow:
   1. write the movie JSON
   2. consult `src/data/people.json` and keep any already-complete records untouched
   3. run `npm run enrich-people -- --movie <slug>`
   4. inspect unresolved names manually only if the script misses someone
-- Do not leave a new movie with unresolved people metadata.
+- Do not leave a new movie with unresolved people provenance. Missing portrait or birth date is acceptable only when the entry is still traceable and the gap is explicitly documented.
 - Do not publish animation/anime entries with ambiguous cast provenance; if you cannot verify the original voice cast, stop and verify before commit.
 
 Platform policy for Argentina (mandatory):

@@ -28,7 +28,25 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
 const peopleGroups = getMoviePeopleGroups(movie);
-const currentYear = new Date().getUTCFullYear();
+const currentDate = new Date();
+const currentYear = currentDate.getUTCFullYear();
+const currentDateParts = {
+	year: currentDate.getUTCFullYear(),
+	month: currentDate.getUTCMonth() + 1,
+	day: currentDate.getUTCDate(),
+	precision: 3,
+};
+const personDateFormatter = new Intl.DateTimeFormat('es-AR', {
+	day: 'numeric',
+	month: 'short',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
+const personMonthFormatter = new Intl.DateTimeFormat('es-AR', {
+	month: 'short',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
 const normalizedCategory = String(movie.category || '')
 	.normalize('NFD')
 	.replace(/[\u0300-\u036f]/g, '')
@@ -85,33 +103,120 @@ const hasEditorialTopGrid =
 const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
 
-function getAgeAtDeath(birthYear?: number, deathYear?: number): number | undefined {
-	if (!birthYear || !deathYear || deathYear < birthYear) {
+function parsePersonDate(value?: string) {
+	if (!value) {
 		return undefined;
 	}
 
-	return deathYear - birthYear;
-}
-
-function getDeathSummary(birthYear?: number, deathYear?: number): string | undefined {
-	if (!deathYear) {
+	const match = String(value).match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/);
+	if (!match) {
 		return undefined;
 	}
 
-	const ageAtDeath = getAgeAtDeath(birthYear, deathYear);
-	if (ageAtDeath) {
-		return `Falleció en ${deathYear} a los ${ageAtDeath} años de edad`;
+	const year = Number.parseInt(match[1], 10);
+	const month = match[2] ? Number.parseInt(match[2], 10) : undefined;
+	const day = match[3] ? Number.parseInt(match[3], 10) : undefined;
+	const precision = day ? 3 : month ? 2 : 1;
+
+	if (!Number.isInteger(year)) {
+		return undefined;
 	}
 
-	return `Falleció en ${deathYear}`;
+	return { year, month, day, precision };
 }
 
-function shouldHideLivingAge(birthYear?: number, deathYear?: number): boolean {
-	if (!birthYear || deathYear) {
+function getPersonAge(person: {
+	birthDate?: string;
+	birthYear?: number;
+	deathDate?: string;
+	deathYear?: number;
+}): number | undefined {
+	const birthParts =
+		parsePersonDate(person.birthDate) ??
+		(person.birthYear ? { year: person.birthYear, precision: 1 } : undefined);
+	const endParts =
+		parsePersonDate(person.deathDate) ??
+		(person.deathYear ? { year: person.deathYear, precision: 1 } : currentDateParts);
+
+	if (!birthParts || !endParts || endParts.year < birthParts.year) {
+		return undefined;
+	}
+
+	let age = endParts.year - birthParts.year;
+	if (birthParts.precision >= 2 && endParts.precision >= 2 && endParts.month < birthParts.month) {
+		age -= 1;
+	} else if (
+		birthParts.precision >= 3 &&
+		endParts.precision >= 3 &&
+		endParts.month === birthParts.month &&
+		endParts.day < birthParts.day
+	) {
+		age -= 1;
+	}
+
+	return age >= 0 ? age : undefined;
+}
+
+function formatPersonDate(value?: string): string | undefined {
+	const parts = parsePersonDate(value);
+	if (!parts) {
+		return undefined;
+	}
+
+	if (parts.precision >= 3) {
+		return personDateFormatter.format(new Date(Date.UTC(parts.year, (parts.month ?? 1) - 1, parts.day ?? 1)));
+	}
+
+	if (parts.precision === 2) {
+		return personMonthFormatter.format(new Date(Date.UTC(parts.year, (parts.month ?? 1) - 1, 1)));
+	}
+
+	return String(parts.year);
+}
+
+function getBirthSummary(person: { birthDate?: string; birthYear?: number }): string | undefined {
+	const formattedDate = formatPersonDate(person.birthDate);
+	if (formattedDate) {
+		return `Nació el ${formattedDate}`;
+	}
+
+	if (person.birthYear) {
+		return `Nació en ${person.birthYear}`;
+	}
+
+	return undefined;
+}
+
+function getDeathSummary(person: {
+	birthDate?: string;
+	birthYear?: number;
+	deathDate?: string;
+	deathYear?: number;
+}): string | undefined {
+	if (!person.deathDate && !person.deathYear) {
+		return undefined;
+	}
+
+	const formattedDate = formatPersonDate(person.deathDate) ?? (person.deathYear ? String(person.deathYear) : undefined);
+	if (!formattedDate) {
+		return undefined;
+	}
+
+	const ageAtDeath = getPersonAge(person);
+	if (ageAtDeath !== undefined) {
+		return `Falleció el ${formattedDate} a los ${ageAtDeath} años`;
+	}
+
+	return `Falleció el ${formattedDate}`;
+}
+
+function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; deathDate?: string; deathYear?: number }): boolean {
+	if (person.deathDate || person.deathYear) {
 		return false;
 	}
 
-	return currentYear - birthYear > 110;
+	const age = getPersonAge(person);
+	return age !== undefined && age > 110;
 }
 ---
 
@@ -201,30 +306,27 @@ function shouldHideLivingAge(birthYear?: number, deathYear?: number): boolean {
 															<p class="movie-detail__person-role">Dirección</p>
 															<p class="movie-detail__person-name">{person.creditedName}</p>
 															<p class="movie-detail__person-meta">
-																{person.birthYear ? (
+																{getBirthSummary(person) ? (
 																	<>
-																		<span>Nac. {person.birthYear}</span>
-																		{person.deathYear ? (
-																			<span class="movie-detail__person-death">
-																				{getDeathSummary(person.birthYear, person.deathYear)}
-																			</span>
-																		) : shouldHideLivingAge(person.birthYear, person.deathYear) ? (
+																		<span>{getBirthSummary(person)}</span>
+																		{person.deathDate || person.deathYear ? (
+																			<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																		) : shouldHideLivingAge(person) ? (
 																			<span>Edad no confirmada</span>
 																		) : (
 																			<span
 																				class="movie-detail__person-age"
+																				data-birth-date={person.birthDate}
 																				data-birth-year={person.birthYear}
 																			>
-																				Edad {currentYear - person.birthYear}
+																				{getPersonAge(person)} años
 																			</span>
 																		)}
 																	</>
-																) : person.deathYear ? (
-																	<span class="movie-detail__person-death">
-																		{getDeathSummary(person.birthYear, person.deathYear)}
-																	</span>
+																) : person.deathDate || person.deathYear ? (
+																	<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
 																) : (
-																	<span>Edad no disponible</span>
+																	<span>Fecha de nacimiento no disponible</span>
 																)}
 															</p>
 															<p class="movie-detail__person-origin">
@@ -261,30 +363,27 @@ function shouldHideLivingAge(birthYear?: number, deathYear?: number): boolean {
 															<p class="movie-detail__person-role">{castRoleLabel}</p>
 															<p class="movie-detail__person-name">{person.creditedName}</p>
 															<p class="movie-detail__person-meta">
-																{person.birthYear ? (
+																{getBirthSummary(person) ? (
 																	<>
-																		<span>Nac. {person.birthYear}</span>
-																		{person.deathYear ? (
-																			<span class="movie-detail__person-death">
-																				{getDeathSummary(person.birthYear, person.deathYear)}
-																			</span>
-																		) : shouldHideLivingAge(person.birthYear, person.deathYear) ? (
+																		<span>{getBirthSummary(person)}</span>
+																		{person.deathDate || person.deathYear ? (
+																			<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																		) : shouldHideLivingAge(person) ? (
 																			<span>Edad no confirmada</span>
 																		) : (
 																			<span
 																				class="movie-detail__person-age"
+																				data-birth-date={person.birthDate}
 																				data-birth-year={person.birthYear}
 																			>
-																				Edad {currentYear - person.birthYear}
+																				{getPersonAge(person)} años
 																			</span>
 																		)}
 																	</>
-																) : person.deathYear ? (
-																	<span class="movie-detail__person-death">
-																		{getDeathSummary(person.birthYear, person.deathYear)}
-																	</span>
+																) : person.deathDate || person.deathYear ? (
+																	<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
 																) : (
-																	<span>Edad no disponible</span>
+																	<span>Fecha de nacimiento no disponible</span>
 																)}
 															</p>
 															<p class="movie-detail__person-origin">
@@ -430,20 +529,58 @@ function shouldHideLivingAge(birthYear?: number, deathYear?: number): boolean {
 		});
 	}
 
-	document.querySelectorAll('[data-birth-year]').forEach((node) => {
+	const parsePersonDate = (value) => {
+		if (typeof value !== 'string' || value.trim().length === 0) {
+			return null;
+		}
+
+		const match = value.match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/);
+		if (!match) {
+			return null;
+		}
+
+		return {
+			year: Number.parseInt(match[1], 10),
+			month: match[2] ? Number.parseInt(match[2], 10) : null,
+			day: match[3] ? Number.parseInt(match[3], 10) : null,
+		};
+	};
+
+	document.querySelectorAll('[data-birth-year], [data-birth-date]').forEach((node) => {
 		if (!(node instanceof HTMLElement)) {
 			return;
 		}
 
-		const birthYear = Number.parseInt(node.dataset.birthYear ?? '', 10);
-		if (!Number.isInteger(birthYear)) {
+		const birthDate = parsePersonDate(node.dataset.birthDate ?? '');
+		const fallbackBirthYear = Number.parseInt(node.dataset.birthYear ?? '', 10);
+		const now = new Date();
+		const today = {
+			year: now.getUTCFullYear(),
+			month: now.getUTCMonth() + 1,
+			day: now.getUTCDate(),
+		};
+
+		let age;
+		if (birthDate?.year) {
+			age = today.year - birthDate.year;
+			if (birthDate.month && today.month < birthDate.month) {
+				age -= 1;
+			} else if (
+				birthDate.month &&
+				birthDate.day &&
+				today.month === birthDate.month &&
+				today.day < birthDate.day
+			) {
+				age -= 1;
+			}
+		} else if (Number.isInteger(fallbackBirthYear)) {
+			age = today.year - fallbackBirthYear;
+		}
+
+		if (!Number.isInteger(age) || age <= 0) {
 			return;
 		}
 
-		const currentYear = new Date().getUTCFullYear();
-		const age = currentYear - birthYear;
-		if (age > 0) {
-			node.textContent = `${age} años`;
-		}
+		node.textContent = `${age} años`;
 	});
 </script>

@@ -14,6 +14,30 @@ const VERIFIED_DATE = new Date().toISOString().slice(0, 10);
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const FEMALE_GENDER_ENTITY_ID = 'Q6581072';
 const MALE_GENDER_ENTITY_ID = 'Q6581097';
+const HUMAN_ENTITY_ID = 'Q5';
+const ENTERTAINMENT_DESCRIPTION_TOKENS = [
+	'actor',
+	'actress',
+	'director',
+	'filmmaker',
+	'screenwriter',
+	'producer',
+	'voice actor',
+	'voice actress',
+	'animator',
+	'writer',
+	'comedian',
+	'seiyuu',
+];
+const SUSPICIOUS_PORTRAIT_TOKENS = [
+	'screenshot',
+	'spy x family',
+	'despicable me',
+	'aff 8 brothers',
+	'ryan fleck anne boden',
+	'scottbeck',
+];
+const SUSPICIOUS_PORTRAIT_SOURCE_TOKENS = ['group cache'];
 const NATIONALITY_BY_COUNTRY_ID = {
 	Q16: { male: 'Canadiense', female: 'Canadiense', neutral: 'Canadiense' },
 	Q17: { male: 'Japonés', female: 'Japonesa', neutral: 'Japonés' },
@@ -310,38 +334,65 @@ function getEntityIdsFromClaims(entity, propertyId) {
 
 function getMovieYear(entity) {
 	for (const claim of getClaimValues(entity, 'P577')) {
-		const timeValue = claim?.mainsnak?.datavalue?.value?.time;
-		if (typeof timeValue !== 'string' || timeValue.length < 5) continue;
-		const year = Number.parseInt(timeValue.slice(1, 5), 10);
+		const year = getYearFromTimeValue(claim?.mainsnak?.datavalue?.value?.time);
 		if (Number.isInteger(year)) {
 			return year;
 		}
 	}
+	return null;
+}
+
+function getYearFromTimeValue(timeValue) {
+	if (typeof timeValue !== 'string' || timeValue.length < 6) {
+		return null;
+	}
+
+	const match = timeValue.match(/^([+-]?\d+)-(\d{2})-(\d{2})T/);
+	if (!match) {
+		return null;
+	}
+
+	const year = Number.parseInt(match[1], 10);
+	return Number.isInteger(year) ? year : null;
+}
+
+function getIsoDateClaim(entity, propertyId) {
+	for (const claim of getClaimValues(entity, propertyId)) {
+		const timeValue = claim?.mainsnak?.datavalue?.value?.time;
+		const precision = claim?.mainsnak?.datavalue?.value?.precision;
+		const match = typeof timeValue === 'string' ? timeValue.match(/^([+-]?\d+)-(\d{2})-(\d{2})T/) : null;
+		if (!match) {
+			continue;
+		}
+
+		const year = Number.parseInt(match[1], 10);
+		if (!Number.isInteger(year) || year <= 0) {
+			continue;
+		}
+
+		const normalizedYear = String(year).padStart(4, '0');
+		if (precision >= 11) {
+			return `${normalizedYear}-${match[2]}-${match[3]}`;
+		}
+		if (precision === 10) {
+			return `${normalizedYear}-${match[2]}`;
+		}
+		if (precision === 9) {
+			return normalizedYear;
+		}
+	}
+
 	return null;
 }
 
 function getBirthYear(entity) {
-	for (const claim of getClaimValues(entity, 'P569')) {
-		const timeValue = claim?.mainsnak?.datavalue?.value?.time;
-		if (typeof timeValue !== 'string' || timeValue.length < 5) continue;
-		const year = Number.parseInt(timeValue.slice(1, 5), 10);
-		if (Number.isInteger(year)) {
-			return year;
-		}
-	}
-	return null;
+	const birthDate = getIsoDateClaim(entity, 'P569');
+	return birthDate ? Number.parseInt(birthDate.slice(0, 4), 10) : null;
 }
 
 function getDeathYear(entity) {
-	for (const claim of getClaimValues(entity, 'P570')) {
-		const timeValue = claim?.mainsnak?.datavalue?.value?.time;
-		if (typeof timeValue !== 'string' || timeValue.length < 5) continue;
-		const year = Number.parseInt(timeValue.slice(1, 5), 10);
-		if (Number.isInteger(year)) {
-			return year;
-		}
-	}
-	return null;
+	const deathDate = getIsoDateClaim(entity, 'P570');
+	return deathDate ? Number.parseInt(deathDate.slice(0, 4), 10) : null;
 }
 
 function getGenderEntityId(entity) {
@@ -469,6 +520,22 @@ function getStringClaim(entity, propertyId) {
 	return null;
 }
 
+function getWikidataEntityIdFromReferenceUrls(referenceUrls = []) {
+	let matchId = null;
+	for (const url of referenceUrls) {
+		const match = String(url).match(/wikidata\.org\/wiki\/(Q\d+)/i);
+		if (match) {
+			matchId = match[1];
+		}
+	}
+
+	return matchId;
+}
+
+function isHumanEntity(entity) {
+	return getEntityIdsFromClaims(entity, 'P31').includes(HUMAN_ENTITY_ID);
+}
+
 function isFilmEntity(entity) {
 	const instanceIds = new Set(getEntityIdsFromClaims(entity, 'P31'));
 	return instanceIds.has('Q11424') || instanceIds.has('Q24869') || instanceIds.has('Q202866');
@@ -548,7 +615,67 @@ function getEntityNameKeys(entity) {
 	return nameKeys;
 }
 
-async function resolvePersonByName(name) {
+function isLikelyEntertainmentSearchResult(result) {
+	const description = normalizeKey(result?.description ?? '');
+	if (!description) {
+		return false;
+	}
+
+	return ENTERTAINMENT_DESCRIPTION_TOKENS.some((token) => description.includes(token));
+}
+
+function hasImplausibleLifeData(person) {
+	if (!person?.birthYear) {
+		return false;
+	}
+
+	if (person.deathYear && person.deathYear < person.birthYear) {
+		return true;
+	}
+
+	if (!person.deathYear && CURRENT_YEAR - person.birthYear > 105) {
+		return true;
+	}
+
+	return person.birthYear < 1850;
+}
+
+function isSuspiciousRemoteImageUrl(remoteImageUrl) {
+	const normalizedUrl = normalizeKey(remoteImageUrl ?? '');
+	return SUSPICIOUS_PORTRAIT_TOKENS.some((token) => normalizedUrl.includes(token));
+}
+
+function hasSuspiciousPortrait(person) {
+	const source = normalizeKey(person?.source ?? '');
+
+	if (SUSPICIOUS_PORTRAIT_SOURCE_TOKENS.some((token) => source.includes(token))) {
+		return true;
+	}
+
+	return isSuspiciousRemoteImageUrl(person?.remoteImageUrl);
+}
+
+function hasTraceableProfile(person) {
+	if (typeof person?.imdbUrl === 'string' && /https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?/i.test(person.imdbUrl)) {
+		return true;
+	}
+
+	if (!Array.isArray(person?.referenceUrls)) {
+		return false;
+	}
+
+	return person.referenceUrls.some(
+		(entry) =>
+			typeof entry === 'string' &&
+			/(?:wikidata\.org\/wiki\/Q\d+|themoviedb\.org\/person\/|watch\.plex\.tv\/person\/|anime-planet\.com\/people\/|screendollars\.com\/celebrity\/)/i.test(entry),
+	);
+}
+
+async function resolvePersonByName(name, existingEntry) {
+	const normalizedName = normalizeKey(name);
+	let bestMatch = null;
+	let bestScore = Number.NEGATIVE_INFINITY;
+
 	for (const language of ['en', 'es']) {
 		const searchResults = await searchEntities(name, language);
 		for (const result of searchResults) {
@@ -557,17 +684,61 @@ async function resolvePersonByName(name) {
 			}
 
 			const entity = await getEntity(result.id);
-			if (!entity) {
+			if (!entity || !isHumanEntity(entity)) {
 				continue;
 			}
 
-			if (getEntityNameKeys(entity).has(normalizeKey(name))) {
-				return entity;
+			if (!getEntityNameKeys(entity).has(normalizedName)) {
+				continue;
+			}
+
+			const imdbId = getStringClaim(entity, 'P345');
+			const birthYear = getBirthYear(entity);
+			const deathYear = getDeathYear(entity);
+			let score = 0;
+
+			if (normalizeKey(getEntityDisplayName(entity, name)) === normalizedName) {
+				score += 12;
+			}
+			if (isLikelyEntertainmentSearchResult(result)) {
+				score += 20;
+			}
+			if (imdbId) {
+				score += 12;
+			}
+			if (getStringClaim(entity, 'P18')) {
+				score += 4;
+			}
+			if (getIsoDateClaim(entity, 'P569')) {
+				score += 3;
+			}
+			if (existingEntry?.imdbId && imdbId === existingEntry.imdbId) {
+				score += 80;
+			}
+			if (existingEntry?.birthYear && birthYear === existingEntry.birthYear) {
+				score += 25;
+			}
+			if (existingEntry?.deathYear && deathYear === existingEntry.deathYear) {
+				score += 15;
+			}
+			if (birthYear && birthYear < 1850) {
+				score -= 80;
+			}
+			if (birthYear && !deathYear && CURRENT_YEAR - birthYear > 105) {
+				score -= 60;
+			}
+			if (!isLikelyEntertainmentSearchResult(result) && !imdbId) {
+				score -= 12;
+			}
+
+			if (score > bestScore) {
+				bestScore = score;
+				bestMatch = entity;
 			}
 		}
 	}
 
-	return null;
+	return bestScore > -20 ? bestMatch : null;
 }
 
 async function resolvePeopleForMovie(movie) {
@@ -828,38 +999,82 @@ async function loadPeopleCatalog() {
 function needsEnrichment(existing) {
 	return (
 		!existing?.image ||
-		!existing?.birthYear ||
+		(!existing?.birthDate && !existing?.birthYear) ||
 		!existing?.nationalityPrimary ||
-		!existing?.imdbUrl ||
+		!hasTraceableProfile(existing) ||
+		hasSuspiciousPortrait(existing) ||
 		(Number.isInteger(existing?.birthYear) &&
 			!Number.isInteger(existing?.deathYear) &&
-			CURRENT_YEAR - existing.birthYear > 100)
+			CURRENT_YEAR - existing.birthYear > 100) ||
+		hasImplausibleLifeData(existing)
 	);
 }
 
-async function enrichPersonRecord(personName, catalog, catalogIndex, stats) {
-	const entity = await resolvePersonByName(personName);
+async function enrichPersonRecord(personName, catalog, catalogIndex, stats, resolvedEntity) {
+	const existingEntry = getCatalogEntry(catalog, catalogIndex, personName);
+	const existingEntityId = getWikidataEntityIdFromReferenceUrls(existingEntry?.referenceUrls);
+	let entity = resolvedEntity ?? null;
+
+	if (!entity && existingEntry && !hasImplausibleLifeData(existingEntry)) {
+		const existingEntityId = getWikidataEntityIdFromReferenceUrls(existingEntry.referenceUrls);
+		if (existingEntityId && !hasSuspiciousPortrait(existingEntry)) {
+			const existingEntity = await getEntity(existingEntityId);
+			const existingEntityImdbId = getStringClaim(existingEntity, 'P345');
+			const imdbAligned =
+				!existingEntry?.imdbId || (existingEntityImdbId && existingEntityImdbId === existingEntry.imdbId);
+			if (existingEntity && isHumanEntity(existingEntity) && imdbAligned) {
+				entity = existingEntity;
+			}
+		}
+	}
+
+	if (!entity) {
+		entity = await resolvePersonByName(personName, existingEntry);
+	}
+
 	if (!entity) {
 		stats.missing.push({ movie: 'people-pool', name: personName });
 		return false;
 	}
 
-	const existingEntry = getCatalogEntry(catalog, catalogIndex, personName);
+	const shouldResetLegacyIdentity = existingEntityId && entity.id && existingEntityId !== entity.id;
+	const shouldResetLegacyDates =
+		hasImplausibleLifeData(existingEntry) || (existingEntityId && entity.id && existingEntityId !== entity.id);
+	const safeExistingBirthDate = shouldResetLegacyDates ? undefined : existingEntry?.birthDate;
+	const safeExistingBirthYear = shouldResetLegacyDates ? undefined : existingEntry?.birthYear;
+	const safeExistingDeathDate = shouldResetLegacyDates ? undefined : existingEntry?.deathDate;
+	const safeExistingDeathYear = shouldResetLegacyDates ? undefined : existingEntry?.deathYear;
+	const birthDate = getIsoDateClaim(entity, 'P569') ?? safeExistingBirthDate;
 	const birthYear = getBirthYear(entity);
+	const deathDate = getIsoDateClaim(entity, 'P570') ?? safeExistingDeathDate;
 	const deathYear = getDeathYear(entity);
 	const nationalityPrimary = await getPrimaryNationality(entity);
-	const imdbId = getStringClaim(entity, 'P345') ?? undefined;
+	const imdbId = getStringClaim(entity, 'P345') ?? existingEntry?.imdbId ?? undefined;
 	const wikidataRemoteImageUrl = getRemoteImageUrl(getStringClaim(entity, 'P18'));
+	const safeWikidataRemoteImageUrl = isSuspiciousRemoteImageUrl(wikidataRemoteImageUrl)
+		? undefined
+		: wikidataRemoteImageUrl;
+	const shouldRefreshPortrait =
+		shouldResetLegacyIdentity ||
+		hasSuspiciousPortrait(existingEntry) ||
+		!existingEntry?.image ||
+		!(await fileExists(path.resolve(`public${existingEntry?.image ?? ''}`)));
 	const tmdbFallback =
-		!wikidataRemoteImageUrl || !birthYear || !existingEntry?.image
+		!safeWikidataRemoteImageUrl || !birthDate || shouldRefreshPortrait
 			? await fetchTmdbPersonFallback(personName)
 			: null;
 	const plexFallback =
-		!wikidataRemoteImageUrl && !tmdbFallback?.imageUrl ? await fetchPlexPersonFallback(personName) : null;
-	const remoteImageUrl = wikidataRemoteImageUrl ?? tmdbFallback?.imageUrl ?? plexFallback?.imageUrl;
-	let localImage = existingEntry?.image;
+		!safeWikidataRemoteImageUrl && !tmdbFallback?.imageUrl ? await fetchPlexPersonFallback(personName) : null;
+	const safeExistingRemoteImageUrl = shouldResetLegacyIdentity ? undefined : existingEntry?.remoteImageUrl;
+	const remoteImageUrl =
+		safeWikidataRemoteImageUrl ??
+		tmdbFallback?.imageUrl ??
+		plexFallback?.imageUrl ??
+		safeExistingRemoteImageUrl;
+	let localImage =
+		hasSuspiciousPortrait(existingEntry) || shouldResetLegacyIdentity ? undefined : existingEntry?.image;
 
-	if (remoteImageUrl && (!localImage || !(await fileExists(path.resolve(`public${localImage}`))))) {
+	if (remoteImageUrl && (!localImage || shouldRefreshPortrait || remoteImageUrl !== existingEntry?.remoteImageUrl)) {
 		try {
 			localImage = await downloadPersonImage(personName, imdbId, remoteImageUrl);
 		} catch (error) {
@@ -869,8 +1084,10 @@ async function enrichPersonRecord(personName, catalog, catalogIndex, stats) {
 
 	setCatalogEntry(catalog, catalogIndex, personName, {
 		name: getEntityDisplayName(entity, personName),
-		birthYear: birthYear ?? existingEntry?.birthYear,
-		deathYear: deathYear ?? existingEntry?.deathYear,
+		birthDate,
+		birthYear: birthYear ?? safeExistingBirthYear ?? (birthDate ? Number.parseInt(birthDate.slice(0, 4), 10) : undefined),
+		deathDate,
+		deathYear: deathYear ?? safeExistingDeathYear ?? (deathDate ? Number.parseInt(deathDate.slice(0, 4), 10) : undefined),
 		nationalityPrimary: nationalityPrimary ?? existingEntry?.nationalityPrimary,
 		image: localImage,
 		imdbId,
@@ -887,7 +1104,7 @@ async function enrichPersonRecord(personName, catalog, catalogIndex, stats) {
 		notes: existingEntry?.notes,
 		source: plexFallback?.imageUrl
 			? 'wikidata-imdb-plex-cache'
-			: remoteImageUrl === wikidataRemoteImageUrl
+			: remoteImageUrl === safeWikidataRemoteImageUrl
 				? 'wikidata-imdb-cache'
 				: 'wikidata-imdb-tmdb-cache',
 	});
@@ -943,7 +1160,7 @@ async function runWorker(queue, catalog, catalogIndex, stats, missingOnly) {
 				continue;
 			}
 
-			await enrichPersonRecord(personName, catalog, catalogIndex, stats);
+			await enrichPersonRecord(personName, catalog, catalogIndex, stats, entity);
 		}
 
 		await saveCatalog(catalog);

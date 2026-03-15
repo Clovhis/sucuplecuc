@@ -69,10 +69,10 @@ The bundled script checks:
 - people pool coverage in `src/data/people.json` for every credited director/main cast member
 - local cached portrait existence under `public/people/**`
 - portrait source sanity so cached portraits are real headshots and not logos, posters, favicons or generic site assets
-- birth year presence for every credited director/main cast member
+- birth date/year presence when it can be verified from public sources
 - death year sanity for deceased people and implausibly old profiles
 - primary nationality presence for every credited director/main cast member
-- IMDb trace URL presence for every credited director/main cast member
+- traceable profile presence for every credited director/main cast member (`IMDb`, `Wikidata`, `TMDb`, `Plex`, `Anime-Planet`, etc.)
 - editorial recommendation completeness for `becauseYouLiked` and `related`
 - editorial recommendation slugs that resolve to real movie entries
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
@@ -81,6 +81,7 @@ The bundled script checks:
 - `verdictLabel` hard cap of `21` visible characters so the card badge never clips
 - `verdictLabel` readability so the badge says clearly if the movie is buena, pasable o mala
 - platform labels against the site allowlist
+- Argentine audience title drift: `title` should reflect the name used in Argentina, while `originalTitle` keeps the source/original title
 - catalog sync in `docs/movie-catalog-reference.md`
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
 - raw numeric score leakage in reviews
@@ -109,9 +110,11 @@ If a finding depends on external truth, verify it with primary or trustworthy so
 
 - official YouTube channels for trailers
 - official movie/distributor pages, JustWatch AR, IMDb, Rotten Tomatoes, Metacritic
+- Argentine platform pages / IMDb Argentina release info when validating localized titles
 - official award pages or reliable databases for Oscar/Cannes/Grammy wins
 
 Do not invent trailers, awards, or platform data.
+Do not invent birth dates, portraits, or IMDb links either.
 
 ### 4. Safe fix loop
 
@@ -131,5 +134,5 @@ Report:
 - fixes applied, if any
 - final revalidation status
 - explicit statement that no forbidden path was modified
-- explicit confirmation that the people pool is complete for every credited director/main cast member in the audited batch, including birth year, nationality, IMDb trace, and local portrait
+- explicit confirmation that the people pool is complete for every credited director/main cast member in the audited batch, including nationality plus a traceable profile, and that any missing birth date or portrait is an explicit verified gap rather than fabricated data
 - explicit confirmation that deceased people do not render as living ages and that animation/anime titles use original voice cast in `mainCast`

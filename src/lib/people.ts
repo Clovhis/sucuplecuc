@@ -61,7 +61,9 @@ function buildMoviePersonCredit(name: string): MoviePersonCredit {
 	return {
 		creditedName: name,
 		name: person?.name || name,
+		birthDate: person?.birthDate,
 		birthYear: person?.birthYear,
+		deathDate: person?.deathDate,
 		deathYear: person?.deathYear,
 		nationalityPrimary: person?.nationalityPrimary,
 		image: person?.image,
