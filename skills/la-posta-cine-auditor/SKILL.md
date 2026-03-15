@@ -68,6 +68,7 @@ The bundled script checks:
 - required fields and JSON shape
 - people pool coverage in `src/data/people.json` for every credited director/main cast member
 - local cached portrait existence under `public/people/**`
+- portrait source sanity so cached portraits are real headshots and not logos, posters, favicons or generic site assets
 - birth year presence for every credited director/main cast member
 - death year sanity for deceased people and implausibly old profiles
 - primary nationality presence for every credited director/main cast member

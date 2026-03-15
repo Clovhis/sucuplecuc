@@ -128,6 +128,19 @@ const LEGENDARY_MOVIE_SLUGS = new Set([
 	'the-matrix-1999',
 ]);
 const LEGENDARY_LABEL_PATTERNS = ['legendaria', 'obra maestra', 'clasico total'];
+const TRUSTED_PERSON_IMAGE_HOSTS = new Set([
+	'commons.wikimedia.org',
+	'media.themoviedb.org',
+	'metadata-static.plex.tv',
+	'api.screendollars.com',
+	'images.squarespace-cdn.com',
+	's3-eu-west-1.amazonaws.com',
+	'tn.com.ar',
+	'www.sonypicturesanimation.com',
+	'sonypicturesanimation.com',
+]);
+const SUSPICIOUS_PERSON_IMAGE_HOSTS = new Set(['static.wixstatic.com']);
+const SUSPICIOUS_PERSON_IMAGE_TOKENS = ['logo', 'favicon', 'placeholder', 'default-avatar', 'default_profile', 'no-image', 'site-icon'];
 
 function parseArgs(argv) {
 	const args = {
@@ -211,6 +224,23 @@ function splitCreditNames(value) {
 		.split(/\s*,\s*|\s+y\s+/i)
 		.map((entry) => entry.trim())
 		.filter(Boolean);
+}
+
+function getHostname(value) {
+	try {
+		return new URL(String(value || '')).hostname.toLowerCase();
+	} catch {
+		return '';
+	}
+}
+
+function isSuspiciousPersonImageUrl(value) {
+	const normalized = String(value || '').toLowerCase();
+	if (!normalized) {
+		return false;
+	}
+
+	return SUSPICIOUS_PERSON_IMAGE_TOKENS.some((token) => normalized.includes(token));
 }
 
 function runGit(args, options = {}) {
@@ -679,6 +709,27 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 					'missing-person-image-file',
 					candidatePath,
 					`"${personName}" points to missing image file "${personEntry.image}".`,
+				);
+			}
+		}
+
+		if (typeof personEntry.remoteImageUrl === 'string' && personEntry.remoteImageUrl.trim().length > 0) {
+			const imageHost = getHostname(personEntry.remoteImageUrl);
+			if (SUSPICIOUS_PERSON_IMAGE_HOSTS.has(imageHost) || isSuspiciousPersonImageUrl(personEntry.remoteImageUrl)) {
+				addFinding(
+					findings,
+					'error',
+					'suspicious-person-image-source',
+					candidatePath,
+					`"${personName}" uses a suspicious portrait source ("${personEntry.remoteImageUrl}") that looks more like a logo, favicon or generic site asset than a real headshot.`,
+				);
+			} else if (!TRUSTED_PERSON_IMAGE_HOSTS.has(imageHost)) {
+				addFinding(
+					findings,
+					'warn',
+					'untrusted-person-image-source',
+					candidatePath,
+					`"${personName}" uses an uncommon portrait host ("${imageHost}"). Verify that the cached image is a real actor/director headshot.`,
 				);
 			}
 		}

@@ -161,18 +161,20 @@
 	},
 	"Adam Rosette": {
 		"name": "Adam Rosette",
+		"birthYear": 1984,
 		"imdbId": "nm2411105",
 		"imdbUrl": "https://www.imdb.com/name/nm2411105/",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q134930966",
 			"https://www.imdb.com/name/nm2411105/",
-			"https://www.themoviedb.org/person/2872262-adam-rosette"
+			"https://www.themoviedb.org/person/2872262-adam-rosette",
+			"https://www.sonypicturesanimation.com/our-team/filmmakers/adam-rosette"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "manual-tmdb-imdb-cache",
+		"lastVerifiedAt": "2026-03-15",
+		"source": "manual-official-site-imdb-cache",
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/adam-rosette-nm2411105.jpg",
-		"remoteImageUrl": "https://media.themoviedb.org/t/p/w260_and_h390_face/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg"
+		"remoteImageUrl": "https://www.sonypicturesanimation.com/sites/default/files/styles/max_2600_x_2600/public/2025-04/Adam%20Rosette%201200x2000.jpg?itok=7qAAVIP9"
 	},
 	"Adam West": {
 		"name": "Adam West",
@@ -3337,13 +3339,13 @@
 		"imdbId": "nm9765790",
 		"imdbUrl": "https://www.imdb.com/name/nm9765790/",
 		"image": "/people/camila-plaate-nm9765790.jpg",
-		"remoteImageUrl": "https://media.themoviedb.org/t/p/w260_and_h390_face/4UQ8qAtYeOrUQL3I44foCBfuwUl.jpg",
+		"remoteImageUrl": "https://tn.com.ar/resizer/v2/https%3A%2F%2Fthumbs.vodgc.net%2F1-14-aQH7Ew1759095587966-1759096038.jpg?auth=b3c5ce56f824a3071e532628ed973bcc418552c5dc3b6748eda9ce9fc13e106d&width=767",
 		"referenceUrls": [
 			"https://www.themoviedb.org/person/2286273-camila-plaate",
 			"https://www.imdb.com/name/nm9765790/"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "manual-tmdb-imdb-cache"
+		"lastVerifiedAt": "2026-03-15",
+		"source": "manual-user-provided-cache"
 	},
 	"Candice Bergen": {
 		"name": "Candice Bergen",
@@ -18829,6 +18831,21 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache"
 	},
+	"Nick Kroll": {
+		"name": "Nick Kroll",
+		"birthYear": 1978,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/nick-kroll-nm0602860.jpg",
+		"imdbId": "nm0602860",
+		"imdbUrl": "https://www.imdb.com/name/nm0602860/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/ggDaWSVuEXryxTJ6sKo2kiEhZPL.jpg",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm0602860/",
+			"https://www.themoviedb.org/person/208519-nick-kroll"
+		],
+		"lastVerifiedAt": "2026-03-15",
+		"source": "manual-tmdb-imdb-cache"
+	},
 	"Nick Stahl": {
 		"name": "Nick Stahl",
 		"birthYear": 1979,
@@ -21410,17 +21427,19 @@
 	},
 	"Robert Strange": {
 		"name": "Robert Strange",
-		"birthYear": 1796,
-		"deathYear": 1854,
-		"nationalityPrimary": "Estadounidense",
-		"image": "/people/robert-strange.jpg",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/NC-Congress-RogerStrange.jpg?width=120",
+		"birthYear": 1989,
+		"nationalityPrimary": "Británico",
+		"image": "/people/robert-strange-nm6003807.jpg",
+		"imdbId": "nm6003807",
+		"imdbUrl": "https://www.imdb.com/name/nm6003807/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/4GBjA1itRhsKaPaOrVE1YN9qOqc.jpg",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q1728001",
+			"https://www.wikidata.org/wiki/Q52304584",
+			"https://www.imdb.com/name/nm6003807/",
 			"https://www.themoviedb.org/person/1675328-robert-strange"
 		],
 		"lastVerifiedAt": "2026-03-15",
-		"source": "wikidata-imdb-cache"
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Robert Wise": {
 		"name": "Robert Wise",
@@ -25102,6 +25121,8 @@
 	},
 	"Tyree Dillihay": {
 		"name": "Tyree Dillihay",
+		"birthYear": 1980,
+		"nationalityPrimary": "Estadounidense",
 		"image": "/people/tyree-dillihay-nm2826643.jpg",
 		"imdbId": "nm2826643",
 		"imdbUrl": "https://www.imdb.com/name/nm2826643/",
