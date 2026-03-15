@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-13. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-14. Fuente: src/data/movies/*.json
 
-Total de peliculas: 657
+Total de peliculas: 660
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -252,6 +252,7 @@ Total de peliculas: 657
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus |
 | 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Stremio |
 | 2019 | How to Train Your Dragon: The Hidden World | how-to-train-your-dragon-the-hidden-world-2019 | Animacion | Stremio |
+| 2019 | IT: Capítulo 2 | it-chapter-two-2019 | Terror | Netflix |
 | 2019 | John Wick: Chapter 3 - Parabellum | john-wick-chapter-3-parabellum-2019 | Accion | Stremio |
 | 2019 | Joker | joker-2019 | Drama | Stremio |
 | 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus |
@@ -286,6 +287,7 @@ Total de peliculas: 657
 | 2017 | El culto de Chucky | cult-of-chucky-2017 | Terror | Stremio |
 | 2017 | Fireworks | fireworks-2017 | Anime | Stremio |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus |
+| 2017 | IT (Eso) | it-2017 | Terror | HBO Max |
 | 2017 | John Wick: Chapter 2 | john-wick-chapter-2-2017 | Accion | Prime Video |
 | 2017 | Justice League | justice-league-2017 | Accion | Stremio |
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max |
@@ -536,6 +538,7 @@ Total de peliculas: 657
 | 1990 | Home Alone | home-alone-1990 | Comedia | Disney Plus |
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Stremio |
 | 1990 | Rocky V | rocky-v-1990 | Drama | Stremio |
+| 1990 | Stephen King's IT | it-1990 | Terror | Stremio |
 | 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video |
 | 1989 | Batman | batman-1989 | Fantasia | Stremio |
 | 1989 | Driving Miss Daisy | driving-miss-daisy-1989 | Drama | Stremio |
