@@ -31,6 +31,8 @@ Apply add-only mode by default.
 Allowed paths:
 
 - `src/data/movies/**`
+- `src/data/people.json`
+- `public/people/**`
 - `content/movies/**` (only if this repo variant uses it)
 - `docs/movie-catalog-reference.md`
 
@@ -95,10 +97,12 @@ git checkout -b feature/movie-<slug>-2
 git checkout main
 git pull origin main
 git checkout -b feature/movie-<slug>
+npm run enrich-people -- --movie <slug>
 npm run build
 git diff --name-only
 git diff -- src/data/movies/<slug>.json
-git add src/data/movies/<slug>.json
+git diff -- src/data/people.json
+git add src/data/movies/<slug>.json src/data/people.json public/people docs/movie-catalog-reference.md
 git commit -m "Add movie entry: <title> (<year>)"
 git push -u origin feature/movie-<slug>
 ```
@@ -129,6 +133,11 @@ Find trustworthy metadata:
 - `director`
 - `mainCast` (at least 2-3 principal actors)
 - `productionCompany`
+- IMDb profile trace for the credited director and main cast
+- birth year for each credited director and main cast member
+- primary nationality label in Spanish for each credited director and main cast member (for example `Argentino`, `Britanica`, `Mexicano`)
+- one local cached portrait per credited director and main cast member under `public/people/**`
+- death year when the person is deceased, so UI can show `Fallecio en <anio>` instead of a fake living age
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
 
@@ -171,6 +180,27 @@ Trailer policy is strict:
 
 Do not invent data.
 Do not store full YouTube URL when schema uses id.
+
+People pool policy (mandatory):
+
+- Every new movie must also update `src/data/people.json`.
+- The people catalog is keyed by the exact credited name string used in movie JSON.
+- Before searching the internet, consult `src/data/people.json` first and reuse any existing person entry/image/info cache already present.
+- Only enrich missing or stale person fields. Do not redownload portraits or rewrite entries that are already complete without a reason.
+- Each credited director and each actor in `mainCast` must end with:
+  - `birthYear`
+  - `deathYear` when applicable
+  - `nationalityPrimary` written in Spanish as a short demonym/identity label ready for UI display (for example `Argentino`, `Estadounidense`, `Espanola`)
+  - `image` pointing to a local cached file under `public/people/`
+  - `imdbUrl`
+- For titles whose `category` is `Anime`, `Animacion`, or `Animación`, `mainCast` must list the principal original voice cast, not dub/localized voice actors and not character names.
+- Preferred flow:
+  1. write the movie JSON
+  2. consult `src/data/people.json` and keep any already-complete records untouched
+  3. run `npm run enrich-people -- --movie <slug>`
+  4. inspect unresolved names manually only if the script misses someone
+- Do not leave a new movie with unresolved people metadata.
+- Do not publish animation/anime entries with ambiguous cast provenance; if you cannot verify the original voice cast, stop and verify before commit.
 
 Platform policy for Argentina (mandatory):
 
@@ -232,6 +262,7 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
 
 If optional fields are not used by current project schema, keep only supported fields.
 If `screenshots` are not confirmed, keep `[]`.
+The director/cast portraits are not stored inside the movie JSON; they must live in `src/data/people.json` plus local files in `public/people/`.
 
 ## Editorial metadata (mandatory)
 
@@ -366,6 +397,7 @@ Run these checks in order:
 1. Build validation:
 
 ```bash
+npm run enrich-people -- --movie <slug>
 npm run build
 ```
 
@@ -384,6 +416,8 @@ If any forbidden path appears, abort and report conflicting files.
 
 ```bash
 git diff -- src/data/movies/<slug>.json
+git diff -- src/data/people.json
+git diff -- public/people
 ```
 
 If catalog was refreshed:
@@ -395,7 +429,7 @@ git diff -- docs/movie-catalog-reference.md
 Only then commit and push:
 
 ```bash
-git add src/data/movies/<slug>.json docs/movie-catalog-reference.md
+git add src/data/movies/<slug>.json src/data/people.json public/people docs/movie-catalog-reference.md
 git commit -m "Add movie entry: <title> (<year>)"
 git push -u origin feature/movie-<slug>
 ```
@@ -409,12 +443,13 @@ Return all of the following:
 3. Field summary (`title/originalTitle/year/category/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere`)
 4. `npm run build` result
 5. `git diff --name-only` output
-6. Explicit confirmation: `No se modifico ningun archivo fuera de peliculas y catalogo`
+6. Explicit confirmation: `No se modifico ningun archivo fuera de peliculas, people pool y catalogo`
 7. Optional PR link or exact command to open PR
 8. External review source used (site + URL) and what was extracted from it
 9. Platform source used for AR (site + URL) and why chosen `releasePlatform` matches resolver flow
 10. Awards source used (site + URL), verified premios/galardones found, and exact final `awards.wins` content (including empty array when no wins apply)
 11. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
+12. People pool confirmation with exact credited names added/updated in `src/data/people.json` and cached image paths in `public/people/`
 
 ## Validation checklist
 

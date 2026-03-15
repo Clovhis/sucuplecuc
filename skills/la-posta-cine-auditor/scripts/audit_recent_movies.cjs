@@ -7,6 +7,8 @@ const { spawnSync } = require('child_process');
 
 const DEFAULT_ROOT = 'src/data/movies';
 const DEFAULT_BASE_REF = 'main';
+const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
+const PEOPLE_PUBLIC_ROOT = path.resolve('public');
 const ALLOWED_PLATFORMS = new Set([
 	'Netflix',
 	'HBO Max',
@@ -21,6 +23,7 @@ const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basu
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
 const ALLOWED_IDEAL_FOR_TAGS = new Set(['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche']);
 const MAX_VERDICT_LABEL_LENGTH = 21;
+const CURRENT_YEAR = new Date().getUTCFullYear();
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
 const RECOMMENDED_LABEL_PATTERNS = [
@@ -191,6 +194,25 @@ function normalizeText(value) {
 		.trim();
 }
 
+function normalizePersonKey(value) {
+	return String(value || '')
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9\s']/g, ' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+}
+
+function splitCreditNames(value) {
+	return String(value || '')
+		.replace(/\s+/g, ' ')
+		.trim()
+		.split(/\s*,\s*|\s+y\s+/i)
+		.map((entry) => entry.trim())
+		.filter(Boolean);
+}
+
 function runGit(args, options = {}) {
 	const result = spawnSync('git', args, {
 		cwd: options.cwd || process.cwd(),
@@ -248,6 +270,22 @@ function listAllCandidates(rootDir) {
 
 function readJson(filePath) {
 	return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function loadPeopleCatalog() {
+	if (!fs.existsSync(PEOPLE_CATALOG_PATH)) {
+		return {};
+	}
+
+	try {
+		return readJson(PEOPLE_CATALOG_PATH);
+	} catch {
+		return {};
+	}
+}
+
+function buildPeopleCatalogIndex(peopleCatalog) {
+	return new Map(Object.keys(peopleCatalog).map((key) => [normalizePersonKey(key), key]));
 }
 
 function addFinding(findings, severity, code, file, message) {
@@ -543,6 +581,123 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	}
 }
 
+function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopleCatalogIndex) {
+	const creditNames = [
+		...splitCreditNames(movie.director),
+		...(Array.isArray(movie.mainCast) ? movie.mainCast.flatMap((entry) => splitCreditNames(entry)) : []),
+	];
+	const uniqueNames = [...new Set(creditNames)];
+
+	for (const personName of uniqueNames) {
+		const catalogKey = peopleCatalog[personName]
+			? personName
+			: peopleCatalogIndex.get(normalizePersonKey(personName));
+		const personEntry = catalogKey ? peopleCatalog[catalogKey] : undefined;
+		if (!personEntry || typeof personEntry !== 'object') {
+			addFinding(
+				findings,
+				'error',
+				'missing-person-entry',
+				candidatePath,
+				`"${personName}" is missing from src/data/people.json.`,
+			);
+			continue;
+		}
+
+		if (!Number.isInteger(personEntry.birthYear) || personEntry.birthYear < 1850 || personEntry.birthYear > 2100) {
+			addFinding(
+				findings,
+				'error',
+				'invalid-person-birth-year',
+				candidatePath,
+				`"${personName}" must include a valid birthYear in src/data/people.json.`,
+			);
+		}
+
+		if (
+			Number.isInteger(personEntry.deathYear) &&
+			(Number.isInteger(personEntry.birthYear) ? personEntry.deathYear < personEntry.birthYear : false)
+		) {
+			addFinding(
+				findings,
+				'error',
+				'invalid-person-death-year',
+				candidatePath,
+				`"${personName}" has a deathYear earlier than birthYear in src/data/people.json.`,
+			);
+		}
+
+		if (Number.isInteger(personEntry.deathYear) && personEntry.deathYear > CURRENT_YEAR) {
+			addFinding(
+				findings,
+				'error',
+				'invalid-person-death-year-future',
+				candidatePath,
+				`"${personName}" has a deathYear in the future in src/data/people.json.`,
+			);
+		}
+
+		if (
+			Number.isInteger(personEntry.birthYear) &&
+			!Number.isInteger(personEntry.deathYear) &&
+			CURRENT_YEAR - personEntry.birthYear > 110
+		) {
+			addFinding(
+				findings,
+				'warn',
+				'missing-person-death-year',
+				candidatePath,
+				`"${personName}" looks old enough to require a deathYear check in src/data/people.json.`,
+			);
+		}
+
+		if (typeof personEntry.nationalityPrimary !== 'string' || personEntry.nationalityPrimary.trim().length === 0) {
+			addFinding(
+				findings,
+				'error',
+				'missing-person-nationality',
+				candidatePath,
+				`"${personName}" must include nationalityPrimary in src/data/people.json.`,
+			);
+		}
+
+		if (typeof personEntry.image !== 'string' || personEntry.image.trim().length === 0) {
+			addFinding(
+				findings,
+				'error',
+				'missing-person-image',
+				candidatePath,
+				`"${personName}" must include a cached local image path.`,
+			);
+		} else {
+			const normalizedImagePath = personEntry.image.replace(/^\/+/, '').replace(/\//g, path.sep);
+			const absoluteImagePath = path.join(PEOPLE_PUBLIC_ROOT, normalizedImagePath);
+			if (!fs.existsSync(absoluteImagePath)) {
+				addFinding(
+					findings,
+					'error',
+					'missing-person-image-file',
+					candidatePath,
+					`"${personName}" points to missing image file "${personEntry.image}".`,
+				);
+			}
+		}
+
+		if (
+			typeof personEntry.imdbUrl !== 'string' ||
+			!/https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?/i.test(personEntry.imdbUrl)
+		) {
+			addFinding(
+				findings,
+				'warn',
+				'missing-person-imdb-url',
+				candidatePath,
+				`"${personName}" should keep a valid IMDb profile URL for traceability.`,
+			);
+		}
+	}
+}
+
 function validateTrailerId(movie, candidatePath, findings) {
 	const value = String(movie.trailerYoutubeId || '').trim();
 	if (!value) {
@@ -777,6 +932,8 @@ async function auditCandidates(args) {
 	const catalogPath = path.resolve('docs/movie-catalog-reference.md');
 	const catalogText = fs.existsSync(catalogPath) ? fs.readFileSync(catalogPath, 'utf8') : '';
 	const knownMovieSlugs = loadKnownMovieSlugs(rootDir);
+	const peopleCatalog = loadPeopleCatalog();
+	const peopleCatalogIndex = buildPeopleCatalogIndex(peopleCatalog);
 	const findings = [];
 	const candidateMovies = [];
 
@@ -785,6 +942,12 @@ async function auditCandidates(args) {
 	const unexpectedCommittedChanges = committedChanges.filter((filePath) => {
 		const normalizedPath = filePath.replace(/\\/g, '/');
 		if (normalizedPath.startsWith(`${normalizedRoot}/`)) {
+			return false;
+		}
+		if (normalizedPath === 'src/data/people.json') {
+			return false;
+		}
+		if (normalizedPath.startsWith('public/people/')) {
 			return false;
 		}
 		return normalizedPath !== 'docs/movie-catalog-reference.md';
@@ -815,6 +978,7 @@ async function auditCandidates(args) {
 		});
 
 		validateMovieShape(movie, candidate, catalogText, findings, knownMovieSlugs);
+		validatePeoplePool(movie, candidate, findings, peopleCatalog, peopleCatalogIndex);
 		const trailerId = validateTrailerId(movie, candidate, findings);
 
 		if (trailerId && !args.skipYoutube) {

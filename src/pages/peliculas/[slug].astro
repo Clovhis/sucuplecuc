@@ -7,6 +7,7 @@ import {
 	getVerdictBadgeClass,
 	getVerdictLabel,
 } from '../../lib/movies';
+import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
 import { createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
@@ -26,6 +27,16 @@ const pageDescription = movie.review;
 const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
+const peopleGroups = getMoviePeopleGroups(movie);
+const currentYear = new Date().getUTCFullYear();
+const normalizedCategory = String(movie.category || '')
+	.normalize('NFD')
+	.replace(/[\u0300-\u036f]/g, '')
+	.toLowerCase()
+	.trim();
+const isAnimatedTitle = normalizedCategory === 'anime' || normalizedCategory === 'animacion';
+const castSectionTitle = isAnimatedTitle ? 'Voces originales' : 'Actores principales';
+const castRoleLabel = isAnimatedTitle ? 'Voz original' : 'Protagonista';
 const screenshotUrls = (movie.screenshots ?? [])
 	.filter((value) => typeof value === 'string' && value.trim().length > 0)
 	.slice(0, 2)
@@ -73,6 +84,35 @@ const hasEditorialTopGrid =
 	Boolean(editorialSummary.runtime) || editorialSummary.idealFor.length > 0;
 const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
+
+function getAgeAtDeath(birthYear?: number, deathYear?: number): number | undefined {
+	if (!birthYear || !deathYear || deathYear < birthYear) {
+		return undefined;
+	}
+
+	return deathYear - birthYear;
+}
+
+function getDeathSummary(birthYear?: number, deathYear?: number): string | undefined {
+	if (!deathYear) {
+		return undefined;
+	}
+
+	const ageAtDeath = getAgeAtDeath(birthYear, deathYear);
+	if (ageAtDeath) {
+		return `Falleció en ${deathYear} a los ${ageAtDeath} años de edad`;
+	}
+
+	return `Falleció en ${deathYear}`;
+}
+
+function shouldHideLivingAge(birthYear?: number, deathYear?: number): boolean {
+	if (!birthYear || deathYear) {
+		return false;
+	}
+
+	return currentYear - birthYear > 110;
+}
 ---
 
 <BaseLayout
@@ -129,18 +169,138 @@ const structuredData = createMovieStructuredData(movie, pageTitle, pageDescripti
 						<dd>{movie.category}</dd>
 					</div>
 					<div class="movie-detail__credit-item">
-						<dt>Director</dt>
-						<dd>{movie.director}</dd>
-					</div>
-					<div class="movie-detail__credit-item">
-						<dt>Actores principales</dt>
-						<dd>{movie.mainCast.join(', ')}</dd>
-					</div>
-					<div class="movie-detail__credit-item">
 						<dt>Productora</dt>
 						<dd>{movie.productionCompany}</dd>
 					</div>
 				</dl>
+				{
+					(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
+						<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
+							{
+								peopleGroups.directors.length > 0 && (
+									<div class="movie-detail__people-block">
+										<p class="movie-detail__people-title">
+											{peopleGroups.directors.length > 1 ? 'Dirección' : 'Director'}
+										</p>
+								<ul class="movie-detail__people-grid" role="list">
+											{peopleGroups.directors.map((person) => (
+												<li>
+													<article class="movie-detail__person-card">
+														<div class="movie-detail__person-avatar">
+															{person.image || person.remoteImageUrl ? (
+																<img
+																	src={person.image ?? person.remoteImageUrl}
+																	alt={`Foto de ${person.creditedName}`}
+																	loading="lazy"
+																/>
+															) : (
+																<span aria-hidden="true">{person.initials}</span>
+															)}
+														</div>
+														<div class="movie-detail__person-copy">
+															<p class="movie-detail__person-role">Dirección</p>
+															<p class="movie-detail__person-name">{person.creditedName}</p>
+															<p class="movie-detail__person-meta">
+																{person.birthYear ? (
+																	<>
+																		<span>Nac. {person.birthYear}</span>
+																		{person.deathYear ? (
+																			<span class="movie-detail__person-death">
+																				{getDeathSummary(person.birthYear, person.deathYear)}
+																			</span>
+																		) : shouldHideLivingAge(person.birthYear, person.deathYear) ? (
+																			<span>Edad no confirmada</span>
+																		) : (
+																			<span
+																				class="movie-detail__person-age"
+																				data-birth-year={person.birthYear}
+																			>
+																				Edad {currentYear - person.birthYear}
+																			</span>
+																		)}
+																	</>
+																) : person.deathYear ? (
+																	<span class="movie-detail__person-death">
+																		{getDeathSummary(person.birthYear, person.deathYear)}
+																	</span>
+																) : (
+																	<span>Edad no disponible</span>
+																)}
+															</p>
+															<p class="movie-detail__person-origin">
+																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
+															</p>
+														</div>
+													</article>
+												</li>
+											))}
+										</ul>
+									</div>
+								)
+							}
+							{
+								peopleGroups.cast.length > 0 && (
+									<div class="movie-detail__people-block">
+										<p class="movie-detail__people-title">{castSectionTitle}</p>
+								<ul class="movie-detail__people-grid" role="list">
+											{peopleGroups.cast.map((person) => (
+												<li>
+													<article class="movie-detail__person-card">
+														<div class="movie-detail__person-avatar">
+															{person.image || person.remoteImageUrl ? (
+																<img
+																	src={person.image ?? person.remoteImageUrl}
+																	alt={`Foto de ${person.creditedName}`}
+																	loading="lazy"
+																/>
+															) : (
+																<span aria-hidden="true">{person.initials}</span>
+															)}
+														</div>
+														<div class="movie-detail__person-copy">
+															<p class="movie-detail__person-role">{castRoleLabel}</p>
+															<p class="movie-detail__person-name">{person.creditedName}</p>
+															<p class="movie-detail__person-meta">
+																{person.birthYear ? (
+																	<>
+																		<span>Nac. {person.birthYear}</span>
+																		{person.deathYear ? (
+																			<span class="movie-detail__person-death">
+																				{getDeathSummary(person.birthYear, person.deathYear)}
+																			</span>
+																		) : shouldHideLivingAge(person.birthYear, person.deathYear) ? (
+																			<span>Edad no confirmada</span>
+																		) : (
+																			<span
+																				class="movie-detail__person-age"
+																				data-birth-year={person.birthYear}
+																			>
+																				Edad {currentYear - person.birthYear}
+																			</span>
+																		)}
+																	</>
+																) : person.deathYear ? (
+																	<span class="movie-detail__person-death">
+																		{getDeathSummary(person.birthYear, person.deathYear)}
+																	</span>
+																) : (
+																	<span>Edad no disponible</span>
+																)}
+															</p>
+															<p class="movie-detail__person-origin">
+																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
+															</p>
+														</div>
+													</article>
+												</li>
+											))}
+										</ul>
+									</div>
+								)
+							}
+						</section>
+					)
+				}
 				{
 					hasEditorialTopGrid && (
 						<div class="movie-detail__editorial-grid" aria-label="Datos utiles para decidir rapido">
@@ -269,4 +429,21 @@ const structuredData = createMovieStructuredData(movie, pageTitle, pageDescripti
 			}
 		});
 	}
+
+	document.querySelectorAll('[data-birth-year]').forEach((node) => {
+		if (!(node instanceof HTMLElement)) {
+			return;
+		}
+
+		const birthYear = Number.parseInt(node.dataset.birthYear ?? '', 10);
+		if (!Number.isInteger(birthYear)) {
+			return;
+		}
+
+		const currentYear = new Date().getUTCFullYear();
+		const age = currentYear - birthYear;
+		if (age > 0) {
+			node.textContent = `${age} años`;
+		}
+	});
 </script>

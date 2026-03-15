@@ -16,6 +16,8 @@ Use this skill after a movie add/backfill workflow, especially when the branch c
 Allowed fix paths:
 
 - `src/data/movies/**`
+- `src/data/people.json`
+- `public/people/**`
 - `docs/movie-catalog-reference.md`
 
 Forbidden fix paths:
@@ -64,6 +66,12 @@ The bundled script checks:
 
 - recent candidate detection from `git diff <base>...HEAD`
 - required fields and JSON shape
+- people pool coverage in `src/data/people.json` for every credited director/main cast member
+- local cached portrait existence under `public/people/**`
+- birth year presence for every credited director/main cast member
+- death year sanity for deceased people and implausibly old profiles
+- primary nationality presence for every credited director/main cast member
+- IMDb trace URL presence for every credited director/main cast member
 - editorial recommendation completeness for `becauseYouLiked` and `related`
 - editorial recommendation slugs that resolve to real movie entries
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
@@ -108,7 +116,7 @@ Do not invent trailers, awards, or platform data.
 
 If the script reports fixable issues:
 
-1. Edit only affected movie JSON files and, if needed, `docs/movie-catalog-reference.md`
+1. Edit only affected movie JSON files, `src/data/people.json`, local `public/people/**` files and, if needed, `docs/movie-catalog-reference.md`
 2. Re-run the auditor without skipping the mandatory batch score/badge check
 3. Run `npm run build`
 4. Confirm no forbidden path changed
@@ -122,3 +130,5 @@ Report:
 - fixes applied, if any
 - final revalidation status
 - explicit statement that no forbidden path was modified
+- explicit confirmation that the people pool is complete for every credited director/main cast member in the audited batch, including birth year, nationality, IMDb trace, and local portrait
+- explicit confirmation that deceased people do not render as living ages and that animation/anime titles use original voice cast in `mainCast`
