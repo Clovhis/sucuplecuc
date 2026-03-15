@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "new-movie": "node ./scripts/new-movie.mjs",
-    "enrich-editorial": "node ./scripts/enrich-movie-editorial.mjs"
+    "enrich-editorial": "node ./scripts/enrich-movie-editorial.mjs",
+    "enrich-people": "node ./scripts/enrich-people-pool.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

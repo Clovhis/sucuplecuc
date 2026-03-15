@@ -8,7 +8,7 @@ export const SITE_LOCALE = 'es_AR';
 export const SITE_LANGUAGE = 'es-AR';
 export const CONTACT_EMAIL = 'yosoyvargas@hotmail.com';
 export const SITE_DESCRIPTION =
-	'Cine Posta es un sitio argentino de reseñas cortas, honestas y directas sobre películas, con veredictos claros para decidir rápido qué ver.';
+	'Cine Posta es un sitio argentino de reseñas cortas, honestas y directas sobre películas, con veredictos claros y fichas de actores y directores para decidir rápido qué ver.';
 export const SITE_LOGO_PATH = '/brand/cineposta-logo-mark.png';
 export const SITE_IMAGE_PATH = '/brand/cineposta-logo-full.png';
 export const ABOUT_PATH = '/sobre-cine-posta/';
