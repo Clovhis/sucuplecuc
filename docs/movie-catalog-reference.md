@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-14. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-16. Fuente: src/data/movies/*.json
 
-Total de peliculas: 660
+Total de peliculas: 662
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -59,6 +59,7 @@ Total de peliculas: 660
 | 2025 | How to Train Your Dragon | how-to-train-your-dragon-2025 | Aventura | HBO Max |
 | 2025 | Jurassic World Rebirth | jurassic-world-rebirth-2025 | Accion | HBO Max |
 | 2025 | Karate Kid: Legends | karate-kid-legends-2025 | Accion | HBO Max |
+| 2025 | KPop Demon Hunters | kpop-demon-hunters-2025 | Animacion | Netflix |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Stremio |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max |
@@ -88,6 +89,7 @@ Total de peliculas: 660
 | 2025 | Tron: Ares | tron-ares-2025 | Ciencia ficcion | Disney Plus |
 | 2025 | Until Dawn | until-dawn-2025 | Terror | HBO Max |
 | 2025 | Valor sentimental | valor-sentimental-2025 | Drama | Stremio |
+| 2025 | Weapons | weapons-2025 | Terror | HBO Max |
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Stremio |
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Cine |
