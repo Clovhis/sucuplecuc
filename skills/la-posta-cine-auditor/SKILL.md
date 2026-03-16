@@ -66,6 +66,7 @@ The bundled script checks:
 
 - recent candidate detection from `git diff <base>...HEAD`
 - required fields and JSON shape
+- `mainCast` sanity: enough credited principal performers for the title type, no duplicate names, and no obvious omission of award-winning acting recipients from the credited cast
 - people pool coverage in `src/data/people.json` for every credited director/main cast member
 - local cached portrait existence under `public/people/**`
 - portrait source sanity so cached portraits are real headshots and not logos, posters, favicons or generic site assets

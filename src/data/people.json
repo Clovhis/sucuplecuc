@@ -1097,6 +1097,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1974-08-20"
 	},
+	"Amy Madigan": {
+		"name": "Amy Madigan",
+		"birthDate": "1950-09-11",
+		"birthYear": 1950,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/amy-madigan-nm0001496.jpg",
+		"imdbId": "nm0001496",
+		"imdbUrl": "https://www.imdb.com/name/nm0001496/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amy%20Madigan%20(40389212382).jpg?width=120",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q235219",
+			"https://www.imdb.com/name/nm0001496/",
+			"https://www.themoviedb.org/person/23882-amy-madigan"
+		],
+		"lastVerifiedAt": "2026-03-16",
+		"source": "wikidata-imdb-cache"
+	},
 	"Amy Poehler": {
 		"name": "Amy Poehler",
 		"birthYear": 1971,
@@ -4526,6 +4543,7 @@
 		"name": "Chris Appelhans",
 		"birthDate": "1980-04-28",
 		"birthYear": 1980,
+		"nationalityPrimary": "Estadounidense",
 		"image": "/people/chris-appelhans-nm2282774.jpg",
 		"imdbId": "nm2282774",
 		"imdbUrl": "https://www.imdb.com/name/nm2282774/",
@@ -17443,6 +17461,7 @@
 	},
 	"Maggie Kang": {
 		"name": "Maggie Kang",
+		"birthYear": 1981,
 		"nationalityPrimary": "Canadiense",
 		"image": "/people/maggie-kang-nm3133422.jpg",
 		"imdbId": "nm3133422",

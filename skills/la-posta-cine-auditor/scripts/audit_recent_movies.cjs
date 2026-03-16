@@ -500,6 +500,33 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		addFinding(findings, 'error', 'invalid-cast', candidatePath, 'mainCast must contain at least two credited performers.');
 	}
 
+	const normalizedCategory = normalizeText(movie.category || '');
+	const isAnimatedTitle =
+		normalizedCategory === 'anime' || normalizedCategory === 'animacion' || normalizedCategory === 'animación';
+	if (Array.isArray(movie.mainCast) && !isAnimatedTitle && movie.mainCast.length < 4) {
+		addFinding(
+			findings,
+			'warn',
+			'short-principal-cast',
+			candidatePath,
+			'Live-action entries should usually carry 4-5 principal performers in mainCast unless reliable official billing clearly supports fewer.',
+		);
+	}
+
+	if (Array.isArray(movie.mainCast)) {
+		const seenCast = new Set();
+		for (const castName of movie.mainCast) {
+			const normalizedCastName = normalizeText(castName);
+			if (!normalizedCastName) {
+				continue;
+			}
+			if (seenCast.has(normalizedCastName)) {
+				addFinding(findings, 'warn', 'duplicate-cast-name', candidatePath, `mainCast repeats "${castName}".`);
+			}
+			seenCast.add(normalizedCastName);
+		}
+	}
+
 	if (!Array.isArray(movie.screenshots)) {
 		addFinding(findings, 'error', 'invalid-screenshots', candidatePath, 'screenshots must be an array.');
 	}
@@ -566,10 +593,27 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 				addFinding(findings, 'error', 'award-invalid-year', candidatePath, `Award entry #${index + 1} has invalid year "${String(win.year)}".`);
 			}
 
-			const normalizedCategory = normalizeText(win.category);
-			if (win.award === 'oscar' && normalizedCategory.includes('mejor pelicula')) {
+			const normalizedAwardCategory = normalizeText(win.category);
+			if (win.award === 'oscar' && normalizedAwardCategory.includes('mejor pelicula')) {
 				if (typeof win.recipient !== 'string' || win.recipient.trim().length === 0) {
 					addFinding(findings, 'error', 'award-missing-recipient', candidatePath, 'Oscar wins for "Mejor película" require recipient.');
+				}
+			}
+
+			if (
+				typeof win.recipient === 'string' &&
+				win.recipient.trim().length > 0 &&
+				/(^| )actor( |$)|(^| )actriz( |$)/.test(normalizedAwardCategory)
+			) {
+				const creditedCast = Array.isArray(movie.mainCast) ? movie.mainCast.map((entry) => normalizeText(String(entry || ''))) : [];
+				if (!creditedCast.includes(normalizeText(win.recipient))) {
+					addFinding(
+						findings,
+						'error',
+						'acting-award-missing-from-cast',
+						candidatePath,
+						`Acting award recipient "${win.recipient}" must appear in mainCast.`,
+					);
 				}
 			}
 		}

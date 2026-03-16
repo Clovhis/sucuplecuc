@@ -131,7 +131,7 @@ Find trustworthy metadata:
 - `poster`
 - official YouTube trailer id in original language (store only `trailerYoutubeId`)
 - `director`
-- `mainCast` (at least 2-3 principal actors)
+- `mainCast` (ordered by principal billing; for live-action default to 4-5 core performers unless reliable billing clearly supports fewer)
 - `productionCompany`
 - IMDb profile trace for the credited director and main cast
 - birth year for each credited director and main cast member
@@ -140,6 +140,15 @@ Find trustworthy metadata:
 - death year when the person is deceased, so UI can show `Fallecio en <anio>` instead of a fake living age
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
+
+Main cast policy (mandatory):
+
+- `mainCast` must be ordered from most principal/top-billed to less principal names, based on trustworthy billing order.
+- For live-action titles, default to `4` or `5` credited performers in `mainCast`, not just `2` or `3`, unless reliable official billing clearly exposes fewer names.
+- For animation/anime, still prioritize the principal original voice cast and keep the most central billed voices first.
+- Never drop a clearly major performer just to keep the list short. If someone is top-billed, a central marketing face, or wins an acting Oscar/major prize for that movie, include them in `mainCast`.
+- When two sources disagree on cast ordering, prefer the official poster/trailer billing block, then the studio/distributor page, then a major database.
+- When in doubt between omitting a big name or keeping one extra principal credit, keep the extra principal credit.
 
 Argentine title policy (mandatory):
 

@@ -131,6 +131,8 @@ Current schema:
 - `editorial` recommendations must reference existing movie slugs, must not point back to the same movie, and should be curated instead of left to auto-pick defaults.
 - `releasePlatform` is optional but recommended.
 - `originalTitle`, `category`, `director`, `mainCast`, and `productionCompany` are required for publishing.
+- `mainCast` should be ordered by principal billing and, for live-action titles, should usually include `4` or `5` core performers rather than the bare minimum.
+- If a performer is top-billed, central to marketing, or wins an acting award for that movie, do not leave them out of `mainCast`.
 
 ## People catalog model
 
