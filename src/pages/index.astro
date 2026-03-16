@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import MovieCard from '../components/MovieCard.astro';
+import { getCinemaNews } from '../lib/cinemaNews';
 import { getMovies, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
 import { ABOUT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
+const cinemaNews = await getCinemaNews();
 const movies = getMovies();
 const pageTitle = 'Cine Posta | Reseñas cortas y honestas de películas';
 const pageDescription = SITE_DESCRIPTION;
@@ -65,6 +68,13 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 	</header>
 
 	<main id="main-content" class="container home-catalog">
+		<CinemaNewsTicker
+			items={cinemaNews.items}
+			sourceLabel={cinemaNews.sourceLabel}
+			updatedLabel={cinemaNews.updatedLabel}
+			isFallback={cinemaNews.isFallback}
+		/>
+
 		{
 			movies.length > 0 ? (
 				<>
@@ -72,10 +82,10 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 						<div class="catalog-shell__intro">
 							<p class="catalog-shell__kicker">Explorá el catálogo</p>
 							<p class="catalog-shell__copy">
-								Cine Posta es un sitio argentino con reseñas cortas, honestas y directas para decidir rápido qué ver.
+								Reseñas cortas y directas para elegir rápido qué ver.
 							</p>
 							<p class="catalog-shell__copy">
-								Usá filtros o escribí directo. Y dentro de cada ficha vas a encontrar recomendaciones para seguir por ese mismo lado, además de una base de actores y directores con retrato, edad y nacionalidad.
+								Filtrá o buscá directo. Cada ficha te lleva a películas, actores y directores relacionados.
 							</p>
 						</div>
 						<section class="movie-search" data-movie-search-root>

@@ -1,0 +1,203 @@
+---
+import type { CinemaNewsItem } from '../lib/cinemaNews';
+
+interface Props {
+	items: CinemaNewsItem[];
+	sourceLabel: string;
+	updatedLabel: string;
+	isFallback?: boolean;
+}
+
+const { items, sourceLabel, updatedLabel, isFallback = false } = Astro.props;
+const [leadItem, ...tickerItems] = items;
+const animatedItems = tickerItems.length > 0 ? tickerItems : items;
+const marqueeItems = animatedItems.length > 0 ? animatedItems : items;
+---
+
+{
+	leadItem ? (
+		<section class="news-rail fade-up" style="--item-delay: 70ms;" aria-labelledby="cine-news-title">
+			<div class="news-rail__header">
+				<div class="news-rail__title-wrap">
+					<p class="news-rail__kicker">Noticias diarias</p>
+					<h2 id="cine-news-title" class="news-rail__title">Noticias de cine</h2>
+				</div>
+				<p class="news-rail__meta">
+					Fuente: {sourceLabel} · {updatedLabel}
+					{isFallback ? ' · modo respaldo' : ''}
+				</p>
+			</div>
+
+			<div class="news-rail__body">
+				<article class="news-rail__lead">
+					<p class="news-rail__lead-label">
+						<span class="news-rail__live-dot" aria-hidden="true"></span>
+						Ahora mismo
+					</p>
+					<a
+						class="news-rail__lead-link"
+						href={leadItem.link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<h3 class="news-rail__lead-title">{leadItem.title}</h3>
+						<p class="news-rail__lead-summary">{leadItem.summary}</p>
+					</a>
+					<p class="news-rail__lead-meta">
+						<time datetime={leadItem.publishedAt}>{leadItem.publishedLabel}</time>
+						<span aria-hidden="true">·</span>
+						{leadItem.source}
+						{leadItem.category ? (
+							<>
+								<span aria-hidden="true">·</span>
+								{leadItem.category}
+							</>
+						) : null}
+					</p>
+				</article>
+
+				<div class="news-rail__ticker">
+					<p class="news-rail__ticker-label">Cable cinéfilo</p>
+					<div class="news-rail__marquee" data-news-marquee>
+						<div class="news-rail__track" data-news-track>
+							<ul class="news-rail__ticker-list" data-news-segment>
+								{
+									marqueeItems.map((item) => (
+										<li class="news-rail__ticker-item">
+											<a
+												class="news-rail__ticker-link"
+												href={item.link}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<span class="news-rail__ticker-item-meta">
+													<time datetime={item.publishedAt}>{item.publishedLabel}</time>
+													<span aria-hidden="true">·</span>
+													{item.source}
+												</span>
+												<span class="news-rail__ticker-item-title">{item.title}</span>
+											</a>
+										</li>
+									))
+								}
+							</ul>
+							<ul class="news-rail__ticker-list" aria-hidden="true">
+								{
+									marqueeItems.map((item) => (
+										<li class="news-rail__ticker-item">
+											<a
+												class="news-rail__ticker-link"
+												href={item.link}
+												target="_blank"
+												rel="noopener noreferrer"
+												tabindex="-1"
+											>
+												<span class="news-rail__ticker-item-meta">
+													{item.publishedLabel}
+													<span aria-hidden="true">·</span>
+													{item.source}
+												</span>
+												<span class="news-rail__ticker-item-title">{item.title}</span>
+											</a>
+										</li>
+									))
+								}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	) : null
+}
+
+<script>
+	const marquees = Array.from(document.querySelectorAll('[data-news-marquee]'));
+	const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+	const finePointer = window.matchMedia('(pointer: fine)');
+	const TICKER_SPEED = 44;
+
+	for (const marquee of marquees) {
+		if (!(marquee instanceof HTMLElement)) continue;
+
+		const track = marquee.querySelector('[data-news-track]');
+		const segment = marquee.querySelector('[data-news-segment]');
+		if (!(track instanceof HTMLElement) || !(segment instanceof HTMLElement)) continue;
+
+		let frameId = 0;
+		let lastFrameTime = 0;
+		let offset = 0;
+		let paused = false;
+		let segmentWidth = 0;
+
+		const shouldAutoScroll = () =>
+			!reduceMotion.matches && finePointer.matches && window.innerWidth > 640;
+
+		const measure = () => {
+			segmentWidth = segment.getBoundingClientRect().width;
+			if (!Number.isFinite(segmentWidth) || segmentWidth <= marquee.clientWidth) {
+				offset = 0;
+				track.style.transform = 'translate3d(0, 0, 0)';
+			}
+		};
+
+		const step = (time) => {
+			if (lastFrameTime === 0) {
+				lastFrameTime = time;
+			}
+
+			const deltaSeconds = (time - lastFrameTime) / 1000;
+			lastFrameTime = time;
+
+			if (!paused && shouldAutoScroll() && segmentWidth > marquee.clientWidth) {
+				offset += deltaSeconds * TICKER_SPEED;
+				if (offset >= segmentWidth) {
+					offset -= segmentWidth;
+				}
+
+				track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+			}
+
+			frameId = window.requestAnimationFrame(step);
+		};
+
+		const pause = () => {
+			paused = true;
+		};
+
+		const resume = () => {
+			paused = false;
+			lastFrameTime = 0;
+		};
+
+		measure();
+		frameId = window.requestAnimationFrame(step);
+
+		marquee.addEventListener('pointerenter', pause);
+		marquee.addEventListener('pointerleave', resume);
+		marquee.addEventListener('pointerdown', pause);
+		marquee.addEventListener('pointerup', resume);
+		marquee.addEventListener('pointercancel', resume);
+		marquee.addEventListener('focusin', pause);
+		marquee.addEventListener('focusout', (event) => {
+			if (!(event.target instanceof Node)) return;
+			if (event.relatedTarget instanceof Node && marquee.contains(event.relatedTarget)) return;
+			resume();
+		});
+
+		window.addEventListener('resize', measure);
+		document.addEventListener('visibilitychange', () => {
+			lastFrameTime = 0;
+		});
+		const syncEnvironment = () => {
+			lastFrameTime = 0;
+			measure();
+		};
+
+		reduceMotion.addEventListener('change', syncEnvironment);
+		finePointer.addEventListener('change', syncEnvironment);
+		window.addEventListener('pagehide', () => {
+			window.cancelAnimationFrame(frameId);
+		});
+	}
+</script>
