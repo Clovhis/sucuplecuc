@@ -170,8 +170,21 @@ const marqueeItems = animatedItems.length > 0 ? animatedItems : items;
 			lastFrameTime = 0;
 		};
 
+		const start = () => {
+			if (frameId !== 0) return;
+			lastFrameTime = 0;
+			frameId = window.requestAnimationFrame(step);
+		};
+
+		const stop = () => {
+			if (frameId === 0) return;
+			window.cancelAnimationFrame(frameId);
+			frameId = 0;
+			lastFrameTime = 0;
+		};
+
 		measure();
-		frameId = window.requestAnimationFrame(step);
+		start();
 
 		marquee.addEventListener('pointerenter', pause);
 		marquee.addEventListener('pointerleave', resume);
@@ -197,7 +210,12 @@ const marqueeItems = animatedItems.length > 0 ? animatedItems : items;
 		reduceMotion.addEventListener('change', syncEnvironment);
 		finePointer.addEventListener('change', syncEnvironment);
 		window.addEventListener('pagehide', () => {
-			window.cancelAnimationFrame(frameId);
+			stop();
+		});
+		window.addEventListener('pageshow', () => {
+			measure();
+			resume();
+			start();
 		});
 	}
 </script>
