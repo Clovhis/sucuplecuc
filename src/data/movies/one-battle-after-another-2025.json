@@ -20,7 +20,44 @@
 	"runtimeMinutes": 161,
 	"review": "RogerEbert la describió como una de las películas más potentes y emotivas del año, con Paul Thomás Anderson en modo ambicioso total. DiCaprio, Sean Penn y Regina Hall sostienen un combo de tensión y caos que casi no afloja. No es una propuesta liviana, pero cuando engancha pega fuerte de verdad.",
 	"awards": {
-		"wins": []
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película",
+				"year": 2026,
+				"recipient": "Adam Somner, Sara Murphy, Paul Thomas Anderson"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor dirección",
+				"year": 2026,
+				"recipient": "Paul Thomas Anderson"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor actor de reparto",
+				"year": 2026,
+				"recipient": "Sean Penn"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor casting",
+				"year": 2026,
+				"recipient": "Cassandra Kulukundis"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor montaje",
+				"year": 2026,
+				"recipient": "Andy Jurgensen"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor guion adaptado",
+				"year": 2026,
+				"recipient": "Paul Thomas Anderson"
+			}
+		]
 	},
 	"editorial": {
 		"idealFor": [

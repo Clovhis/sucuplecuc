@@ -20,7 +20,26 @@
 	"verdictLabel": "ESTA MUY BIEN",
 	"review": "Muy buena: entretenida y bien actuada. Tiene buen ritmo, visualmente está tremenda y se disfruta de punta a punta.",
 	"awards": {
-		"wins": []
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor diseño de vestuario",
+				"year": 2026,
+				"recipient": "Kate Hawley"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor maquillaje y peinado",
+				"year": 2026,
+				"recipient": "Mike Hill, Jordan Samuel, Cliona Furey"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor diseño de producción",
+				"year": 2026,
+				"recipient": "Tamara Deverell, Shane Vieau"
+			}
+		]
 	},
 	"editorial": {
 		"idealFor": [

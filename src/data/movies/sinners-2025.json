@@ -21,7 +21,32 @@
 	"runtimeMinutes": 137,
 	"review": "Fui con bajas expectativas y me sorprendio para bien. Es buena, tiene clima y te mantiene enganchado. En HBO Max entra perfecto para una noche tranqui.",
 	"awards": {
-		"wins": []
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor actor",
+				"year": 2026,
+				"recipient": "Michael B. Jordan"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor fotografía",
+				"year": 2026,
+				"recipient": "Autumn Durald Arkapaw"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor banda sonora original",
+				"year": 2026,
+				"recipient": "Ludwig Goransson"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor guion original",
+				"year": 2026,
+				"recipient": "Ryan Coogler"
+			}
+		]
 	},
 	"editorial": {
 		"idealFor": [

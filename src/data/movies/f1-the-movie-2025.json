@@ -20,7 +20,14 @@
 	"runtimeMinutes": 155,
 	"review": "Salió bien parada en crítica y quedó arriba entre los tanques del año. Tiene pulso de espectáculo y acá va recomendada.",
 	"awards": {
-		"wins": []
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor sonido",
+				"year": 2026,
+				"recipient": "Gareth John, Al Nelson, Gwendolyn Yates Whittle, Gary A. Rizzo, Juan Peralta"
+			}
+		]
 	},
 	"editorial": {
 		"idealFor": [

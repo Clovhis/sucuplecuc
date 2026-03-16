@@ -21,7 +21,14 @@
 	"runtimeMinutes": 125,
 	"review": "Peliculon, emociona una banda. Tiene una carga dramatica fuerte y está muy bien llevada de principio a fin. Si te pega este tipo de historia, te deja pensando rato largo.",
 	"awards": {
-		"wins": []
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor actriz",
+				"year": 2026,
+				"recipient": "Jessie Buckley"
+			}
+		]
 	},
 	"editorial": {
 		"idealFor": [
