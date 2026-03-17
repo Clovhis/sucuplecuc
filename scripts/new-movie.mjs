@@ -80,6 +80,10 @@ async function main() {
 		slug: args.slug,
 		title: args.title,
 		year,
+		synopsis:
+			typeof args.synopsis === 'string' && args.synopsis.trim().length > 0
+				? args.synopsis.trim()
+				: template.synopsis,
 	};
 
 	await writeFile(outputPath, `${JSON.stringify(movieData, null, '\t')}\n`, 'utf8');
@@ -87,6 +91,7 @@ async function main() {
 	console.log(
 		'Antes de publicar completa, como minimo, editorial.becauseYouLiked (1-2 slugs) y editorial.related (3-4 slugs).',
 	);
+	console.log('No publiques la entrada sin completar synopsis con de que se trata la pelicula, sin opinion.');
 }
 
 main().catch((error) => {

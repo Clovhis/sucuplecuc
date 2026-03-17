@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "new-movie": "node ./scripts/new-movie.mjs",
+    "enrich-synopsis": "node ./scripts/enrich-movie-synopsis.mjs",
     "enrich-editorial": "node ./scripts/enrich-movie-editorial.mjs",
     "enrich-people": "node ./scripts/enrich-people-pool.mjs"
   },

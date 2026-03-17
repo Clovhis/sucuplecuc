@@ -6,6 +6,7 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 
 - Static movie catalog (JSON-based content, no CMS required)
 - Home catalog with client-side search by title/year/platform/rating
+- Brief plot synopsis on every movie card and detail page
 - Genre chips on home, including `Superheroes` (Marvel/DC live-action only)
 - Visible loading/search status in home while posters and filtered results settle
 - Faster initial catalog paint via poster prioritization + lighter card rendering
@@ -79,6 +80,7 @@ Current schema:
 	"slug": "movie-title-2026",
 	"title": "Movie Title",
 	"originalTitle": "Original title",
+	"synopsis": "What the movie is about (max ~3 lines in UI, not a review)",
 	"year": 2026,
 	"releaseDate": "2026-03-14",
 	"category": "Action|Romance|Drama|Terror|Thriller|Sci-Fi",
@@ -115,6 +117,7 @@ Current schema:
 
 - `slug` is the routing key and also the Supabase rating key (`movie_slug`).
 - `releaseDate` is optional (`YYYY-MM-DD`). If present, the site uses it to decide if the movie is already released.
+- `synopsis` is required, should say what the movie is about, and should stay short enough to read in 5 lines or less on the catalog card.
 - If `releaseDate` is missing, the site treats the movie as released only when `year` is less than the current year.
 - `trailerYoutubeId` stores only the YouTube ID, never full URLs.
 - For anime and other non-Latin originals, prefer the official native-script `originalTitle` when it is verifiable from official material.

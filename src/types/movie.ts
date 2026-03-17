@@ -30,6 +30,7 @@ export interface Movie {
 	slug: string;
 	title: string;
 	originalTitle: string;
+	synopsis: string;
 	year: number;
 	releaseDate?: string;
 	category: string;
