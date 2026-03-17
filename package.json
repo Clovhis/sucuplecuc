@@ -10,10 +10,16 @@
     "new-movie": "node ./scripts/new-movie.mjs",
     "enrich-synopsis": "node ./scripts/enrich-movie-synopsis.mjs",
     "enrich-editorial": "node ./scripts/enrich-movie-editorial.mjs",
-    "enrich-people": "node ./scripts/enrich-people-pool.mjs"
+    "enrich-people": "node ./scripts/enrich-people-pool.mjs",
+    "gsc:sites": "node ./scripts/gsc.mjs sites",
+    "gsc:submit-sitemap": "node ./scripts/gsc.mjs submit-sitemap",
+    "gsc:queries": "node ./scripts/gsc.mjs queries",
+    "gsc:pages": "node ./scripts/gsc.mjs pages",
+    "gsc:inspect": "node ./scripts/gsc.mjs inspect"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",
-    "astro": "^5.17.1"
+    "astro": "^5.17.1",
+    "googleapis": "^171.4.0"
   }
 }

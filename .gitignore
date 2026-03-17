@@ -18,6 +18,8 @@ pnpm-debug.log*
 .env.production
 .env.local
 .env.*.local
+credentials/
+*.service-account.json
 
 # macOS-specific files
 .DS_Store

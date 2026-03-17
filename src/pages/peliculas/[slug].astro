@@ -63,6 +63,9 @@ const hasScreenshotGallery = screenshotUrls.length >= 2;
 const trailerEmbedUrl = movie.trailerYoutubeId
 	? `https://www.youtube.com/embed/${movie.trailerYoutubeId}`
 	: '';
+const trailerWatchUrl = movie.trailerYoutubeId
+	? `https://www.youtube.com/watch?v=${movie.trailerYoutubeId}`
+	: '';
 const awardMeta = {
 	oscar: { label: 'Oscar', icon: '🏆' },
 	grammy: { label: 'Grammy', icon: '🎵' },
@@ -500,14 +503,26 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				}
 
 				{trailerEmbedUrl ? (
-					<iframe
-						class="trailer-frame"
-						src={trailerEmbedUrl}
-						title={`Trailer de ${movie.title}`}
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
-						allowfullscreen
-					/>
+					<div class="trailer-shell" data-trailer-root data-trailer-src={trailerEmbedUrl}>
+						<button
+							type="button"
+							class="trailer-shell__button"
+							data-trailer-button
+							aria-label={`Cargar trailer de ${movie.title}`}
+						>
+							<span class="trailer-shell__eyebrow">Trailer oficial</span>
+							<strong class="trailer-shell__title">Ver trailer de {movie.title}</strong>
+							<span class="trailer-shell__copy">Lo cargamos solo si lo querés reproducir.</span>
+						</button>
+						<a
+							class="trailer-shell__external"
+							href={trailerWatchUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Abrir en YouTube
+						</a>
+					</div>
 				) : (
 					<p class="message-box">Trailer no disponible.</p>
 				)}
@@ -590,5 +605,39 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 		}
 
 		node.textContent = `${age} años`;
+	});
+
+	document.querySelectorAll('[data-trailer-root]').forEach((node) => {
+		if (!(node instanceof HTMLElement)) {
+			return;
+		}
+
+		const button = node.querySelector('[data-trailer-button]');
+		if (!(button instanceof HTMLButtonElement)) {
+			return;
+		}
+
+		button.addEventListener(
+			'click',
+			() => {
+				const iframeSrc = node.dataset.trailerSrc;
+				if (!iframeSrc) {
+					return;
+				}
+
+				const iframe = document.createElement('iframe');
+				iframe.className = 'trailer-frame';
+				iframe.src = iframeSrc;
+				iframe.title = button.getAttribute('aria-label') ?? 'Trailer';
+				iframe.loading = 'lazy';
+				iframe.allow =
+					'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+				iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+				iframe.allowFullscreen = true;
+
+				node.replaceChildren(iframe);
+			},
+			{ once: true },
+		);
 	});
 </script>

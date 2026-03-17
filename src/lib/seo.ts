@@ -1,14 +1,14 @@
-import type { Movie } from '../types/movie';
+import type { Movie, MovieVerdict } from '../types/movie';
 import { getMoviePath, getPosterUrl } from './movies';
 
 export const SITE_URL = 'https://www.cineposta.com.ar';
 export const SITE_NAME = 'Cine Posta';
-export const SITE_ALTERNATE_NAME = 'cineposta';
+export const SITE_ALTERNATE_NAMES = ['Cineposta', 'cineposta', 'cineposta.com.ar'] as const;
 export const SITE_LOCALE = 'es_AR';
 export const SITE_LANGUAGE = 'es-AR';
 export const CONTACT_EMAIL = 'yosoyvargas@hotmail.com';
 export const SITE_DESCRIPTION =
-	'Cine Posta es un sitio argentino de reseñas cortas, honestas y directas sobre películas, con veredictos claros y fichas de actores y directores para decidir rápido qué ver.';
+	'Cine Posta, también conocido como Cineposta, es un sitio argentino de reseñas cortas, honestas y directas sobre películas, con veredictos claros y fichas de actores y directores para decidir rápido qué ver.';
 export const SITE_LOGO_PATH = '/brand/cineposta-logo-mark.png';
 export const SITE_IMAGE_PATH = '/brand/cineposta-logo-full.png';
 export const ABOUT_PATH = '/sobre-cine-posta/';
@@ -31,13 +31,28 @@ function getCollectionPageId(): string {
 	return `${SITE_URL}/#webpage`;
 }
 
+function getReviewRatingValue(verdict: MovieVerdict): number {
+	switch (verdict) {
+		case 'recomendada':
+			return 4;
+		case 'zafa':
+			return 3;
+		case 'no_recomendada':
+			return 2;
+		case 'basura_atomica':
+			return 1;
+		default:
+			return 3;
+	}
+}
+
 function createOrganizationSchema(): StructuredDataValue {
 	return {
 		'@context': 'https://schema.org',
 		'@type': 'Organization',
 		'@id': getOrganizationId(),
 		name: SITE_NAME,
-		alternateName: SITE_ALTERNATE_NAME,
+		alternateName: SITE_ALTERNATE_NAMES,
 		url: `${SITE_URL}/`,
 		description: SITE_DESCRIPTION,
 		email: `mailto:${CONTACT_EMAIL}`,
@@ -59,7 +74,7 @@ function createWebsiteSchema(): StructuredDataValue {
 		'@id': getWebsiteId(),
 		url: `${SITE_URL}/`,
 		name: SITE_NAME,
-		alternateName: SITE_ALTERNATE_NAME,
+		alternateName: SITE_ALTERNATE_NAMES,
 		description: SITE_DESCRIPTION,
 		inLanguage: SITE_LANGUAGE,
 		publisher: {
@@ -159,12 +174,14 @@ export function createMovieStructuredData(
 		| 'director'
 		| 'mainCast'
 		| 'productionCompany'
+		| 'verdict'
 		| 'review'
 	>,
 	pageTitle: string,
 	pageDescription: string,
 ): StructuredDataValue[] {
 	const movieUrl = asAbsoluteUrl(getMoviePath(movie.slug));
+	const reviewId = `${movieUrl}#review`;
 	const imageUrls = [
 		getPosterUrl(movie.poster),
 		...(movie.screenshots ?? []).slice(0, 2).map((value) => getPosterUrl(value)),
@@ -192,20 +209,40 @@ export function createMovieStructuredData(
 			name: movie.productionCompany,
 		},
 		review: {
-			'@type': 'Review',
-			author: {
-				'@type': 'Organization',
-				'@id': getOrganizationId(),
-				name: SITE_NAME,
-			},
-			publisher: {
-				'@type': 'Organization',
-				'@id': getOrganizationId(),
-				name: SITE_NAME,
-			},
-			inLanguage: SITE_LANGUAGE,
-			name: `${movie.title} (${movie.year})`,
-			reviewBody: movie.review,
+			'@id': reviewId,
+		},
+	};
+
+	const reviewSchema: StructuredDataValue = {
+		'@context': 'https://schema.org',
+		'@type': 'Review',
+		'@id': reviewId,
+		url: movieUrl,
+		name: `Reseña de ${movie.title} (${movie.year})`,
+		inLanguage: SITE_LANGUAGE,
+		reviewBody: movie.review,
+		author: {
+			'@type': 'Organization',
+			'@id': getOrganizationId(),
+			name: SITE_NAME,
+			url: `${SITE_URL}/`,
+		},
+		publisher: {
+			'@type': 'Organization',
+			'@id': getOrganizationId(),
+			name: SITE_NAME,
+			url: `${SITE_URL}/`,
+		},
+		itemReviewed: {
+			'@type': 'Movie',
+			'@id': `${movieUrl}#movie`,
+			name: movie.title,
+		},
+		reviewRating: {
+			'@type': 'Rating',
+			ratingValue: getReviewRatingValue(movie.verdict),
+			bestRating: 4,
+			worstRating: 1,
 		},
 	};
 
@@ -219,6 +256,7 @@ export function createMovieStructuredData(
 
 	return [
 		movieSchema,
+		reviewSchema,
 		{
 			'@context': 'https://schema.org',
 			'@type': 'WebPage',

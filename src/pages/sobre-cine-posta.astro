@@ -4,7 +4,7 @@ import { CONTACT_EMAIL, SITE_DESCRIPTION, SITE_NAME, createAboutPageStructuredDa
 
 const pageTitle = `Sobre ${SITE_NAME} | Qué es y cómo funciona`;
 const pageDescription =
-	'Sobre Cine Posta: qué es el sitio, cómo reseña películas y cómo contactar por prensa o colaboraciones.';
+	'Sobre Cine Posta, también conocido como Cineposta: qué es el sitio, cómo reseña películas y cómo contactar por prensa o colaboraciones.';
 const structuredData = createAboutPageStructuredData(pageTitle, pageDescription);
 ---
 
@@ -18,6 +18,7 @@ const structuredData = createAboutPageStructuredData(pageTitle, pageDescription)
 			<p class="about-page__kicker">Marca y proyecto editorial</p>
 			<h1 class="about-page__title">{SITE_NAME}</h1>
 			<p class="about-page__lead">{SITE_DESCRIPTION}</p>
+			<p class="about-page__lead">Si buscás Cineposta, todo junto, también estás buscando este sitio.</p>
 		</section>
 
 		<section class="about-page__grid">
@@ -26,6 +27,10 @@ const structuredData = createAboutPageStructuredData(pageTitle, pageDescription)
 				<p>
 					{SITE_NAME} es un sitio argentino de reseñas de películas pensado para gente que quiere una señal clara
 					antes de elegir qué ver.
+				</p>
+				<p>
+					La marca principal es {SITE_NAME}, pero también usamos la variante Cineposta para que el nombre quede
+					claro cuando alguien lo escribe todo junto.
 				</p>
 				<p>
 					La propuesta es simple: textos cortos, honestos, sin humo crítico ni vueltas raras. La idea es bajar la

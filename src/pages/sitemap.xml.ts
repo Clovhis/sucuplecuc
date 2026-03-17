@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { stat } from 'node:fs/promises';
 import { getMoviePath, getMovies } from '../lib/movies';
 import { ABOUT_PATH, SITE_URL } from '../lib/seo';
 
@@ -17,10 +18,46 @@ function escapeXml(value: string): string {
 		.replace(/>/g, '&gt;');
 }
 
-export const GET: APIRoute = () => {
-	const urls = ['/', ABOUT_PATH, ...getMovies().map((movie) => getMoviePath(movie.slug))];
-	const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-		.map((pathname) => `  <url><loc>${escapeXml(toAbsoluteUrl(pathname))}</loc></url>`)
+function toLastMod(value: Date): string {
+	return value.toISOString();
+}
+
+async function getFileLastMod(pathname: string): Promise<string | undefined> {
+	try {
+		const fileStats = await stat(pathname);
+		return toLastMod(fileStats.mtime);
+	} catch {
+		return undefined;
+	}
+}
+
+export const GET: APIRoute = async () => {
+	const movies = getMovies();
+	const movieEntries = await Promise.all(
+		movies.map(async (movie) => ({
+			pathname: getMoviePath(movie.slug),
+			lastmod: await getFileLastMod(`src/data/movies/${movie.slug}.json`),
+		})),
+	);
+	const homeLastMod =
+		(await getFileLastMod('src/pages/index.astro')) ??
+		movieEntries
+			.map((entry) => entry.lastmod)
+			.filter((value): value is string => Boolean(value))
+			.sort()
+			.at(-1);
+	const aboutLastMod = await getFileLastMod('src/pages/sobre-cine-posta.astro');
+	const entries = [
+		{ pathname: '/', lastmod: homeLastMod },
+		{ pathname: ABOUT_PATH, lastmod: aboutLastMod },
+		...movieEntries,
+	];
+	const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries
+		.map((entry) => {
+			const loc = `  <url><loc>${escapeXml(toAbsoluteUrl(entry.pathname))}</loc>`;
+			const lastmod = entry.lastmod ? `<lastmod>${escapeXml(entry.lastmod)}</lastmod>` : '';
+			return `${loc}${lastmod}</url>`;
+		})
 		.join('\n')}\n</urlset>\n`;
 
 	return new Response(body, {

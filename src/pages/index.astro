@@ -8,7 +8,7 @@ import { ABOUT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } fro
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
-const pageTitle = 'Cine Posta | Reseñas cortas y honestas de películas';
+const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y honestas de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
 ---
@@ -26,6 +26,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				</a>
 				<div class="site-header__copy">
 					<h1 class="site-header__tagline">{SITE_NAME}: reseñas super cortas y honestas de películas</h1>
+					<p class="site-header__rotating-copy">También nos encontrás buscando Cineposta, todo junto.</p>
 					<p class="site-header__rotating-copy" data-rotating-copy>
 						Sin humo, sin metaforas raras, sin chamuyo.
 					</p>

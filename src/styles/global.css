@@ -1632,6 +1632,66 @@ address.site-header__support-card {
 	aspect-ratio: 16 / 9;
 }
 
+.trailer-shell {
+	display: grid;
+	gap: 0.75rem;
+	padding: 1rem;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+		var(--panel);
+	box-shadow: var(--shadow-panel);
+}
+
+.trailer-shell__button {
+	display: grid;
+	gap: 0.35rem;
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid rgba(255, 176, 137, 0.24);
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.03);
+	color: inherit;
+	text-align: left;
+	cursor: pointer;
+	transition:
+		transform 0.18s ease,
+		border-color 0.18s ease,
+		background-color 0.18s ease;
+}
+
+.trailer-shell__button:hover,
+.trailer-shell__button:focus-visible {
+	transform: translateY(-1px);
+	border-color: rgba(255, 176, 137, 0.5);
+	background: rgba(255, 255, 255, 0.06);
+	outline: none;
+}
+
+.trailer-shell__eyebrow {
+	font-size: 0.78rem;
+	font-family: 'IBM Plex Mono', monospace;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--accent-soft);
+}
+
+.trailer-shell__title {
+	font-size: 1rem;
+}
+
+.trailer-shell__copy {
+	color: var(--muted);
+	font-size: 0.92rem;
+}
+
+.trailer-shell__external {
+	justify-self: start;
+	font-size: 0.92rem;
+	color: #dce6ff;
+}
+
 .message-box {
 	margin: 0;
 	padding: 0.85rem 1rem;
