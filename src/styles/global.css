@@ -1167,6 +1167,34 @@ address.site-header__support-card {
 	line-height: 1.2;
 }
 
+.movie-detail__synopsis-card {
+	display: grid;
+	gap: 0.45rem;
+	padding: 0.9rem 1rem;
+	border: 1px solid rgba(117, 153, 255, 0.28);
+	border-left: 4px solid rgba(117, 153, 255, 0.72);
+	border-radius: 12px;
+	background:
+		linear-gradient(180deg, rgba(117, 153, 255, 0.1), rgba(117, 153, 255, 0.03)),
+		rgba(255, 255, 255, 0.02);
+}
+
+.movie-detail__synopsis-kicker {
+	margin: 0;
+	font-size: 0.78rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #c6d4ff;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.movie-detail__synopsis {
+	margin: 0;
+	color: #edf2fc;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
 .movie-detail__review-card {
 	display: grid;
 	gap: 0.45rem;

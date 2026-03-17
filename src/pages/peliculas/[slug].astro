@@ -23,7 +23,7 @@ export function getStaticPaths() {
 const { movie } = Astro.props as { movie: Movie };
 const allMovies = getMovies();
 const pageTitle = `${movie.title} (${movie.year}) | Cine Posta`;
-const pageDescription = movie.review;
+const pageDescription = movie.synopsis;
 const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
@@ -397,6 +397,14 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 									</div>
 								)
 							}
+						</section>
+					)
+				}
+				{
+					movie.synopsis && (
+						<section class="movie-detail__synopsis-card" aria-label="De que se trata">
+							<p class="movie-detail__synopsis-kicker">De que se trata</p>
+							<p class="movie-detail__synopsis">{movie.synopsis}</p>
 						</section>
 					)
 				}

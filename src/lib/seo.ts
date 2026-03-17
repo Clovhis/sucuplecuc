@@ -149,6 +149,7 @@ export function createMovieStructuredData(
 		| 'slug'
 		| 'title'
 		| 'originalTitle'
+		| 'synopsis'
 		| 'year'
 		| 'releaseDate'
 		| 'category'
@@ -175,7 +176,7 @@ export function createMovieStructuredData(
 		'@id': `${movieUrl}#movie`,
 		url: movieUrl,
 		name: movie.title,
-		description: pageDescription,
+		description: movie.synopsis,
 		image: imageUrls,
 		director: {
 			'@type': 'Person',

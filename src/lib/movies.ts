@@ -72,6 +72,26 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 
 const IDEAL_FOR_TAGS: MovieIdealForTag[] = ['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche'];
 const MAX_VERDICT_LABEL_LENGTH = 21;
+const MAX_SYNOPSIS_LENGTH = 320;
+const REVIEWISH_SYNOPSIS_PATTERNS = [
+	/\bfunciona mejor\b/i,
+	/\bse deja ver\b/i,
+	/\bnunca termina de\b/i,
+	/\bqueda m[aá]s cerca\b/i,
+	/\bentra del lado\b/i,
+	/\bpara verla\b/i,
+	/\bpelicul[oó]n\b/i,
+	/\bemociona\b/i,
+	/\bmuy bien llevada\b/i,
+	/\bde principio a fin\b/i,
+	/\bte deja pensando\b/i,
+	/\bsi te pega\b/i,
+	/\bsuper recomendada\b/i,
+	/\bmuy buena\b/i,
+	/\bla cr[ií]tica\b/i,
+	/\breseñ(?:as|a)\b/i,
+	/\brecepci[oó]n\b/i,
+];
 
 const TITLE_TOKEN_STOP_WORDS = new Set([
 	'a',
@@ -140,6 +160,21 @@ function joinWithBase(pathPart: string): string {
 	return `${base}${pathPart.replace(/^\/+/, '')}`;
 }
 
+function normalizeComparableText(value: string): string {
+	return value
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/\s+/g, ' ')
+		.trim();
+}
+
+function synopsisCopiesReview(synopsis: string, review: string): boolean {
+	const normalizedSynopsis = normalizeComparableText(synopsis);
+	const normalizedReview = normalizeComparableText(review);
+	return Boolean(normalizedSynopsis && normalizedReview && normalizedReview.includes(normalizedSynopsis));
+}
+
 function validateMovies(movies: Movie[]): void {
 	const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 	const seen = new Set<string>();
@@ -161,6 +196,32 @@ function validateMovies(movies: Movie[]): void {
 
 		if (!movie.originalTitle?.trim()) {
 			throw new Error(`Movie "${slug}" is missing originalTitle.`);
+		}
+		if (!movie.synopsis?.trim()) {
+			throw new Error(`Movie "${slug}" is missing synopsis.`);
+		}
+		if (movie.synopsis.trim().startsWith('Completar ')) {
+			throw new Error(`Movie "${slug}" still has the synopsis placeholder.`);
+		}
+		if (movie.synopsis.includes('\n')) {
+			throw new Error(`Movie "${slug}" synopsis must stay in a single paragraph.`);
+		}
+		if (movie.synopsis.trim().length > MAX_SYNOPSIS_LENGTH) {
+			throw new Error(
+				`Movie "${slug}" has synopsis longer than ${String(MAX_SYNOPSIS_LENGTH)} characters.`,
+			);
+		}
+		if (synopsisCopiesReview(movie.synopsis, movie.review ?? '')) {
+			throw new Error(`Movie "${slug}" synopsis is copied from the review instead of explaining the plot.`);
+		}
+		const normalizedSynopsis = normalizeComparableText(movie.synopsis);
+		const normalizedReview = normalizeComparableText(movie.review ?? '');
+		if (
+			normalizedReview &&
+			normalizedReview.includes(normalizedSynopsis) &&
+			REVIEWISH_SYNOPSIS_PATTERNS.some((pattern) => pattern.test(movie.synopsis))
+		) {
+			throw new Error(`Movie "${slug}" synopsis looks copied from the review instead of explaining the plot.`);
 		}
 		if (!movie.category?.trim()) {
 			throw new Error(`Movie "${slug}" is missing category.`);
