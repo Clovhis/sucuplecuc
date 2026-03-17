@@ -20,6 +20,7 @@ const {
 const canonical = Astro.site
 	? new URL(Astro.url.pathname, Astro.site).toString()
 	: Astro.url.toString();
+const assetBase = import.meta.env.BASE_URL;
 const footerLinks = [
 	{ href: import.meta.env.BASE_URL, label: 'Inicio' },
 	{ href: ABOUT_PATH, label: 'Sobre Cine Posta' },
@@ -39,6 +40,7 @@ const footerLinks = [
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 		<meta name="author" content={SITE_NAME} />
 		<meta name="theme-color" content="#06070a" />
+		<meta name="application-name" content={SITE_NAME} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta property="og:type" content={openGraphType} />
@@ -55,10 +57,14 @@ const footerLinks = [
 		<link rel="canonical" href={canonical} />
 		<link rel="alternate" href={canonical} hreflang={SITE_LANGUAGE.toLowerCase()} />
 		<link rel="alternate" href={canonical} hreflang="x-default" />
-		<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
-		<link rel="icon" type="image/png" sizes="48x48" href={`${import.meta.env.BASE_URL}favicon.png`} />
-		<link rel="apple-touch-icon" sizes="180x180" href={`${import.meta.env.BASE_URL}apple-touch-icon.png`} />
-		<link rel="shortcut icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
+		<link rel="icon" href={`${assetBase}favicon.ico`} sizes="any" />
+		<link rel="icon" type="image/svg+xml" href={`${assetBase}favicon.svg`} />
+		<link rel="icon" type="image/png" sizes="32x32" href={`${assetBase}favicon-32x32.png`} />
+		<link rel="icon" type="image/png" sizes="48x48" href={`${assetBase}favicon-48x48.png`} />
+		<link rel="icon" type="image/png" sizes="192x192" href={`${assetBase}favicon-192x192.png`} />
+		<link rel="apple-touch-icon" sizes="180x180" href={`${assetBase}apple-touch-icon.png`} />
+		<link rel="manifest" href={`${assetBase}site.webmanifest`} />
+		<link rel="shortcut icon" href={`${assetBase}favicon.ico`} />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
