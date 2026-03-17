@@ -70,7 +70,34 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'pelicula-nacional', label: 'Cine nacional' },
 ];
 
-const IDEAL_FOR_TAGS: MovieIdealForTag[] = ['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche'];
+const IDEAL_FOR_TAGS: MovieIdealForTag[] = [
+	'solo',
+	'en pareja',
+	'con amigos',
+	'en familia',
+	'domingo',
+	'trasnoche',
+	'plan corto',
+	'maraton',
+	'pochoclera',
+	'intensa',
+	'tensa',
+	'liviana',
+	'para pensar',
+	'premiada',
+];
+const SOCIAL_IDEAL_FOR_TAGS: MovieIdealForTag[] = ['solo', 'en pareja', 'con amigos', 'en familia'];
+const TIMING_IDEAL_FOR_TAGS: MovieIdealForTag[] = ['domingo', 'trasnoche'];
+const DESCRIPTOR_IDEAL_FOR_TAGS: MovieIdealForTag[] = [
+	'plan corto',
+	'maraton',
+	'pochoclera',
+	'intensa',
+	'tensa',
+	'liviana',
+	'para pensar',
+	'premiada',
+];
 const MAX_VERDICT_LABEL_LENGTH = 21;
 const MAX_SYNOPSIS_LENGTH = 320;
 const REVIEWISH_SYNOPSIS_PATTERNS = [
@@ -617,6 +644,51 @@ function pushUniqueTag(target: MovieIdealForTag[], tag: MovieIdealForTag): void 
 	}
 }
 
+function hasAnyIdealForTag(target: MovieIdealForTag[], candidates: MovieIdealForTag[]): boolean {
+	return candidates.some((candidate) => target.includes(candidate));
+}
+
+function pushFirstAvailableIdealForTag(
+	target: MovieIdealForTag[],
+	candidates: MovieIdealForTag[],
+	options?: { exclusiveWith?: MovieIdealForTag[] },
+): void {
+	if (options?.exclusiveWith && hasAnyIdealForTag(target, options.exclusiveWith)) {
+		return;
+	}
+
+	for (const candidate of candidates) {
+		if (!target.includes(candidate)) {
+			target.push(candidate);
+			return;
+		}
+	}
+}
+
+function normalizeIdealForTags(tags: MovieIdealForTag[]): MovieIdealForTag[] {
+	const normalized: MovieIdealForTag[] = [];
+	let hasSocialTag = false;
+	let hasTimingTag = false;
+
+	for (const tag of tags) {
+		if (SOCIAL_IDEAL_FOR_TAGS.includes(tag)) {
+			if (hasSocialTag) continue;
+			hasSocialTag = true;
+		}
+
+		if (TIMING_IDEAL_FOR_TAGS.includes(tag)) {
+			if (hasTimingTag) continue;
+			hasTimingTag = true;
+		}
+
+		if (!normalized.includes(tag)) {
+			normalized.push(tag);
+		}
+	}
+
+	return normalized;
+}
+
 function getNormalizedTitleTokens(movie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>): string[] {
 	const source = normalizeSearchText([movie.title, movie.originalTitle, movie.slug].join(' '))
 		.replace(/[^a-z0-9\s]/g, ' ')
@@ -684,59 +756,96 @@ export function getRuntimeComment(movie: Pick<Movie, 'runtimeMinutes' | 'verdict
 export function getIdealForTags(
 	movie: Pick<Movie, 'category' | 'genres' | 'releasePlatform' | 'runtimeMinutes' | 'verdict' | 'editorial' | 'country' | 'isArgentinian' | 'awards' | 'slug' | 'title' | 'originalTitle'>,
 ): MovieIdealForTag[] {
-	if (movie.editorial?.idealFor?.length) {
-		return Array.from(new Set(movie.editorial.idealFor)).slice(0, 4);
-	}
-
 	const recommendationGenres = new Set(getRecommendationGenres(movie));
-	const tags: MovieIdealForTag[] = [];
-
-	if (
-		recommendationGenres.has('thriller') ||
-		recommendationGenres.has('drama') ||
-		recommendationGenres.has('crimen') ||
-		recommendationGenres.has('anime')
-	) {
-		pushUniqueTag(tags, 'solo');
-	}
-
-	if (recommendationGenres.has('romance') || recommendationGenres.has('comedia')) {
-		pushUniqueTag(tags, 'en pareja');
-	}
-
-	if (
-		recommendationGenres.has('accion') ||
-		recommendationGenres.has('comedia') ||
-		recommendationGenres.has('superheroes') ||
-		recommendationGenres.has('animacion') ||
-		recommendationGenres.has('aventura')
-	) {
-		pushUniqueTag(tags, 'con amigos');
-	}
-
-	if (
-		(movie.runtimeMinutes ?? 0) >= 120 ||
-		recommendationGenres.has('drama') ||
-		recommendationGenres.has('aventura') ||
-		recommendationGenres.has('oscar-mejor-pelicula') ||
-		movie.verdict === 'recomendada'
-	) {
-		pushUniqueTag(tags, 'domingo');
-	}
-
-	if (
+	const tags = normalizeIdealForTags(movie.editorial?.idealFor?.length ? movie.editorial.idealFor : []);
+	const runtimeMinutes = movie.runtimeMinutes ?? 0;
+	const hasAwards = (movie.awards?.wins ?? []).length > 0;
+	const isTenseTitle =
 		recommendationGenres.has('terror') ||
 		recommendationGenres.has('thriller') ||
-		(movie.runtimeMinutes ?? 0) <= 110
-	) {
-		pushUniqueTag(tags, 'trasnoche');
+		recommendationGenres.has('crimen');
+	const isCrowdPleaser =
+		recommendationGenres.has('accion') ||
+		recommendationGenres.has('aventura') ||
+		recommendationGenres.has('superheroes') ||
+		recommendationGenres.has('animacion') ||
+		recommendationGenres.has('comedia') ||
+		(isTenseTitle && movie.verdict === 'recomendada');
+	const isThoughtfulTitle =
+		recommendationGenres.has('drama') ||
+		recommendationGenres.has('crimen') ||
+		recommendationGenres.has('oscar-mejor-pelicula') ||
+		normalizeSearchText(movie.category) === 'documental';
+
+	pushFirstAvailableIdealForTag(
+		tags,
+		recommendationGenres.has('romance')
+			? ['en pareja']
+			: recommendationGenres.has('animacion')
+				? ['en familia', 'con amigos']
+				: isCrowdPleaser
+					? ['con amigos', 'solo']
+					: ['solo', 'con amigos'],
+		{ exclusiveWith: SOCIAL_IDEAL_FOR_TAGS },
+	);
+
+	pushFirstAvailableIdealForTag(
+		tags,
+		isTenseTitle || runtimeMinutes <= 105
+			? ['trasnoche', 'domingo']
+			: runtimeMinutes >= 120 || isThoughtfulTitle
+				? ['domingo', 'trasnoche']
+				: ['domingo'],
+		{ exclusiveWith: TIMING_IDEAL_FOR_TAGS },
+	);
+
+	if (runtimeMinutes > 0 && runtimeMinutes <= 100) {
+		pushUniqueTag(tags, 'plan corto');
 	}
 
-	if (tags.length === 0) {
-		pushUniqueTag(tags, 'domingo');
+	if (runtimeMinutes >= 140) {
+		pushUniqueTag(tags, 'maraton');
 	}
 
-	return tags.slice(0, 4);
+	if (isCrowdPleaser) {
+		pushUniqueTag(tags, 'pochoclera');
+	}
+
+	if (isTenseTitle) {
+		pushUniqueTag(tags, recommendationGenres.has('terror') ? 'intensa' : 'tensa');
+	}
+
+	if (recommendationGenres.has('comedia') || recommendationGenres.has('animacion')) {
+		pushUniqueTag(tags, 'liviana');
+	}
+
+	if (isThoughtfulTitle) {
+		pushUniqueTag(tags, 'para pensar');
+	}
+
+	if (hasAwards) {
+		pushUniqueTag(tags, 'premiada');
+	}
+
+	const fallbackTags: MovieIdealForTag[] = [
+		'plan corto',
+		'pochoclera',
+		'liviana',
+		'para pensar',
+		'intensa',
+		'tensa',
+		'premiada',
+		'maraton',
+	];
+
+	for (const tag of fallbackTags) {
+		if (tags.length >= 4) break;
+		if (DESCRIPTOR_IDEAL_FOR_TAGS.includes(tag)) {
+			pushUniqueTag(tags, tag);
+		}
+	}
+
+	return normalizeIdealForTags(tags).slice(0, 4);
 }
 
 function getBridgeAnchorCandidates(movie: Movie, allMovies: Movie[]): Movie[] {

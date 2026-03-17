@@ -37,6 +37,10 @@ function getVerdictGlyph(badgeClass: string): VerdictGlyph {
 }
 
 const verdictGlyph = getVerdictGlyph(verdictClass);
+const quickCast = movie.mainCast.slice(0, 2).join(', ');
+const quickMeta = [String(movie.year), movie.category, movie.releasePlatform ?? '']
+	.filter(Boolean)
+	.join(' · ');
 const searchableText = [
 	movie.title,
 	movie.originalTitle,
@@ -59,6 +63,12 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	data-movie-card
 	data-movie-search={searchableTextNormalized}
 	data-movie-genres={recommendationGenres}
+	data-movie-title={movie.title}
+	data-movie-year={movie.year}
+	data-movie-url={movieUrl}
+	data-movie-poster-url={posterUrl}
+	data-movie-meta={quickMeta}
+	data-movie-cast={quickCast}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">

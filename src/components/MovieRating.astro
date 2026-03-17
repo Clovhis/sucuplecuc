@@ -18,21 +18,21 @@ const supabaseAnonKey =
 	data-supabase-anon-key={supabaseAnonKey}
 >
 	<div class="rating-card__top">
-		<p class="rating-card__title">Que opina la tribuna</p>
+		<p class="rating-card__title">Qué opina la tribuna</p>
 		<p class="rating-card__summary">
 			<span data-rating-average>-/-</span>
 			<span aria-hidden="true">|</span>
 			<span data-rating-count>Sin votos</span>
 		</p>
 	</div>
-	<div class="rating-stars" role="group" aria-label="Calificar pelicula de 1 a 5 estrellas">
+	<div class="rating-stars" role="group" aria-label="Calificar película de 1 a 5 estrellas">
 		<button type="button" data-star-value="1" aria-label="1 estrella">★</button>
 		<button type="button" data-star-value="2" aria-label="2 estrellas">★</button>
 		<button type="button" data-star-value="3" aria-label="3 estrellas">★</button>
 		<button type="button" data-star-value="4" aria-label="4 estrellas">★</button>
 		<button type="button" data-star-value="5" aria-label="5 estrellas">★</button>
 	</div>
-	<p class="rating-card__status" data-rating-status>Cargando puntuacion...</p>
+	<p class="rating-card__status" data-rating-status>Cargando puntuación...</p>
 </section>
 
 <script>
@@ -119,7 +119,7 @@ const supabaseAnonKey =
 		}
 
 		async function loadStatsAndVote() {
-			statusNode.textContent = 'Cargando puntuacion...';
+			statusNode.textContent = 'Cargando puntuación...';
 
 			const [statsResponse, voteResponse] = await Promise.all([
 				ratingClient
@@ -148,7 +148,7 @@ const supabaseAnonKey =
 			paintStars(currentVote);
 
 			statusNode.textContent =
-				currentVote > 0 ? `Tu voto: ${currentVote}/5` : 'Todavia no votaste esta peli.';
+				currentVote > 0 ? `Tu voto: ${currentVote}/5` : 'Todavía no votaste esta peli.';
 		}
 
 		async function submitVote(nextVote) {

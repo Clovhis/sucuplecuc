@@ -15,6 +15,72 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<header class="site-header container">
+		{
+			movies.length > 0 && (
+				<section
+					class="site-search-bar fade-up"
+					style="--item-delay: 0ms;"
+					data-movie-search-root
+					aria-label="Buscar en el catálogo"
+				>
+					<div class="site-search-bar__meta">
+						<p class="site-search-bar__eyebrow">Buscar en el catálogo</p>
+						<p class="site-search-bar__copy">
+							Escribí un título, año, plataforma o rating y filtrá el videoclub al toque.
+						</p>
+						<p class="movie-search__summary" data-movie-search-summary>{movies.length} títulos publicados.</p>
+					</div>
+					<section class="movie-search movie-search--top">
+						<label for="movie-search-input" class="movie-search__label u-visually-hidden">
+							Buscar película
+						</label>
+						<div class="movie-search__input-wrap">
+							<span class="movie-search__input-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24" role="presentation">
+									<circle cx="11" cy="11" r="6.5"></circle>
+									<path d="M16 16l4 4"></path>
+								</svg>
+							</span>
+							<input
+								id="movie-search-input"
+								class="movie-search__input"
+								type="search"
+								placeholder="Título, año, plataforma o rating..."
+								autocomplete="off"
+								data-movie-search-input
+							/>
+							<div
+								class="movie-search__dropdown"
+								data-movie-search-dropdown
+								aria-label="Sugerencias rápidas"
+								hidden
+							>
+								<p class="movie-search__dropdown-copy" data-movie-search-dropdown-copy></p>
+								<div class="movie-search__suggestions" data-movie-search-suggestions></div>
+							</div>
+						</div>
+					</section>
+					<div class="site-search-bar__feedback">
+						<div
+							class="movie-search__status"
+							data-movie-search-status
+							role="status"
+							aria-live="polite"
+							aria-atomic="true"
+							hidden
+						>
+							<span class="movie-search__status-spinner" aria-hidden="true"></span>
+							<p class="movie-search__status-copy" data-movie-search-status-copy>
+								Bancá que carga el videoclub...
+							</p>
+						</div>
+						<p class="message-box movie-search__empty" data-movie-search-empty hidden>
+							No encontramos peliculas con ese criterio.
+						</p>
+					</div>
+				</section>
+			)
+		}
 		<div class="site-header__line">
 			<div class="site-header__brand-column">
 				<a class="site-header__brand" href={import.meta.env.BASE_URL} aria-label="Ir al inicio">
@@ -79,7 +145,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 		{
 			movies.length > 0 ? (
 				<>
-					<section class="catalog-shell fade-up" style="--item-delay: 0ms;">
+					<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
 						<div class="catalog-shell__intro">
 							<p class="catalog-shell__kicker">Explorá el catálogo</p>
 							<p class="catalog-shell__copy">
@@ -89,61 +155,23 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 								Filtrá o buscá directo. Cada ficha te lleva a películas, actores y directores relacionados.
 							</p>
 						</div>
-						<section class="movie-search" data-movie-search-root>
-							<div class="home-genre-filter" data-home-genre-filter>
-								<p class="home-genre-filter__label">Elegí género</p>
-								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-									{
-										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-											<button
-												type="button"
-												class="home-genre-filter__chip"
-												data-home-genre-chip
-												data-home-genre-id={genre.id}
-												aria-pressed="false"
-											>
-												{genre.label}
-											</button>
-										))
-									}
-								</div>
+						<section class="catalog-shell__filters home-genre-filter" data-home-genre-filter>
+							<p class="home-genre-filter__label">Elegí género</p>
+							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+								{
+									RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+										<button
+											type="button"
+											class="home-genre-filter__chip"
+											data-home-genre-chip
+											data-home-genre-id={genre.id}
+											aria-pressed="false"
+										>
+											{genre.label}
+										</button>
+									))
+								}
 							</div>
-							<label for="movie-search-input" class="movie-search__label">Buscar película</label>
-							<div class="movie-search__input-wrap">
-								<span class="movie-search__input-icon" aria-hidden="true">
-									<svg viewBox="0 0 24 24" role="presentation">
-										<circle cx="11" cy="11" r="6.5"></circle>
-										<path d="M16 16l4 4"></path>
-									</svg>
-								</span>
-								<input
-									id="movie-search-input"
-									class="movie-search__input"
-									type="search"
-									placeholder="Título, año, plataforma o rating..."
-									autocomplete="off"
-									data-movie-search-input
-								/>
-							</div>
-							<div
-								class="movie-search__status"
-								data-movie-search-status
-								role="status"
-								aria-live="polite"
-								aria-atomic="true"
-								hidden
-							>
-								<span class="movie-search__status-spinner" aria-hidden="true"></span>
-								<p class="movie-search__status-copy" data-movie-search-status-copy>
-									Bancá que carga el videoclub...
-								</p>
-							</div>
-							<p class="movie-search__summary" data-movie-search-summary>
-								{movies.length} títulos publicados.
-							</p>
-							<p class="message-box movie-search__empty" data-movie-search-empty hidden>
-								No encontramos peliculas con ese criterio.
-							</p>
 						</section>
 					</section>
 
@@ -167,8 +195,11 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 		const statusBox = searchRoot.querySelector('[data-movie-search-status]');
 		const statusCopy = searchRoot.querySelector('[data-movie-search-status-copy]');
 		const summary = searchRoot.querySelector('[data-movie-search-summary]');
+		const suggestionsBox = searchRoot.querySelector('[data-movie-search-dropdown]');
+		const suggestionsCopy = searchRoot.querySelector('[data-movie-search-dropdown-copy]');
+		const suggestionsList = searchRoot.querySelector('[data-movie-search-suggestions]');
 		const cards = Array.from(document.querySelectorAll('[data-movie-card]'));
-		const genreChips = Array.from(searchRoot.querySelectorAll('[data-home-genre-chip]'));
+		const genreChips = Array.from(document.querySelectorAll('[data-home-genre-chip]'));
 		const homeStateKey = 'cineposta:home-list-state:v1';
 		const catalogLoadingPhrases = [
 			'Bancá que carga el videoclub...',
@@ -190,10 +221,21 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			const movieIndex = cards.flatMap((card) => {
 				if (!(card instanceof HTMLElement)) return [];
 				const poster = card.querySelector('[data-movie-poster]');
+				const link = card.querySelector('a');
 				return [
 					{
 						element: card,
 						searchable: card.dataset.movieSearch ?? '',
+						title: card.dataset.movieTitle ?? '',
+						year: card.dataset.movieYear ?? '',
+						url:
+							card.dataset.movieUrl ??
+							(link instanceof HTMLAnchorElement ? link.href : ''),
+						posterUrl:
+							card.dataset.moviePosterUrl ??
+							(poster instanceof HTMLImageElement ? poster.currentSrc || poster.src : ''),
+						meta: card.dataset.movieMeta ?? '',
+						cast: card.dataset.movieCast ?? '',
 						genres: new Set(
 							(card.dataset.movieGenres ?? '')
 								.split(',')
@@ -221,8 +263,115 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			let skipPersistOnPageHide = false;
 			let activeStatusPhrases = [];
 			let activeStatusIndex = 0;
+			let activeSuggestionIndex = -1;
+			let currentSuggestions = [];
 
 			const getVisibleEntries = () => movieIndex.filter((entry) => !entry.element.hidden);
+
+			const hideSuggestions = () => {
+				activeSuggestionIndex = -1;
+				currentSuggestions = [];
+				if (suggestionsBox instanceof HTMLElement) {
+					suggestionsBox.hidden = true;
+				}
+				if (suggestionsList instanceof HTMLElement) {
+					suggestionsList.replaceChildren();
+				}
+			};
+
+			const updateSuggestionHighlight = () => {
+				if (!(suggestionsList instanceof HTMLElement)) return;
+				const options = Array.from(suggestionsList.querySelectorAll('[data-movie-search-suggestion]'));
+				for (const option of options) {
+					if (!(option instanceof HTMLAnchorElement)) continue;
+					const optionIndex = Number(option.dataset.suggestionIndex ?? '-1');
+					const isActive = optionIndex === activeSuggestionIndex;
+					option.classList.toggle('is-active', isActive);
+				}
+			};
+
+			const getSuggestionScore = (entry, query) => {
+				const normalizedTitle = normalize(entry.title);
+				const normalizedMeta = normalize(`${entry.meta} ${entry.cast}`);
+				let score = 300;
+
+				if (normalizedTitle.startsWith(query)) score -= 180;
+				else if (normalizedTitle.includes(query)) score -= 120;
+				else if (entry.searchable.startsWith(query)) score -= 90;
+				else if (entry.searchable.includes(query)) score -= 40;
+
+				if (entry.year === query) score -= 35;
+				if (normalizedMeta.includes(query)) score -= 20;
+
+				return score;
+			};
+
+			const renderSuggestions = (query, matchingEntries) => {
+				if (
+					!(suggestionsBox instanceof HTMLElement) ||
+					!(suggestionsList instanceof HTMLElement) ||
+					!(suggestionsCopy instanceof HTMLElement)
+				) {
+					return;
+				}
+
+				if (query.length === 0 || matchingEntries.length === 0) {
+					hideSuggestions();
+					return;
+				}
+
+				const suggestions = matchingEntries
+					.slice()
+					.sort((left, right) => getSuggestionScore(left, query) - getSuggestionScore(right, query))
+					.slice(0, 6);
+
+				currentSuggestions = suggestions;
+				activeSuggestionIndex = -1;
+				suggestionsCopy.textContent = `${matchingEntries.length} coincidencia${
+					matchingEntries.length === 1 ? '' : 's'
+				} rápida${matchingEntries.length === 1 ? '' : 's'}.`;
+
+				const suggestionNodes = suggestions.map((entry, index) => {
+					const link = document.createElement('a');
+					link.className = 'movie-search__suggestion';
+					link.href = entry.url;
+					link.dataset.movieSearchSuggestion = 'true';
+					link.dataset.suggestionIndex = String(index);
+
+					const poster = document.createElement('img');
+					poster.className = 'movie-search__suggestion-poster';
+					poster.src = entry.posterUrl;
+					poster.alt = '';
+					poster.loading = 'lazy';
+					poster.decoding = 'async';
+
+					const body = document.createElement('span');
+					body.className = 'movie-search__suggestion-body';
+
+					const title = document.createElement('span');
+					title.className = 'movie-search__suggestion-title';
+					title.textContent = entry.title;
+
+					const meta = document.createElement('span');
+					meta.className = 'movie-search__suggestion-meta';
+					meta.textContent = entry.meta;
+
+					body.append(title, meta);
+
+					if (entry.cast) {
+						const cast = document.createElement('span');
+						cast.className = 'movie-search__suggestion-cast';
+						cast.textContent = entry.cast;
+						body.append(cast);
+					}
+
+					link.append(poster, body);
+					return link;
+				});
+
+				suggestionsList.replaceChildren(...suggestionNodes);
+				suggestionsBox.hidden = false;
+			};
 
 			const updateSummary = (visibleCount) => {
 				if (!(summary instanceof HTMLElement)) return;
@@ -357,6 +506,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				const genreKey = activeGenre ?? '';
 				if (!force && query === lastAppliedQuery && genreKey === lastAppliedGenre) {
 					const visibleCount = getVisibleEntries().length;
+					renderSuggestions(query, getVisibleEntries());
 					updateSummary(visibleCount);
 					return visibleCount;
 				}
@@ -364,6 +514,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				lastAppliedQuery = query;
 				lastAppliedGenre = genreKey;
 				let visibleCount = 0;
+				const matchingEntries = [];
 
 				for (const entry of movieIndex) {
 					const genreMatch = !activeGenre || entry.genres.has(activeGenre);
@@ -372,13 +523,17 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 					if (entry.element.hidden === show) {
 						entry.element.hidden = !show;
 					}
-					if (show) visibleCount += 1;
+					if (show) {
+						visibleCount += 1;
+						matchingEntries.push(entry);
+					}
 				}
 
 				if (emptyState instanceof HTMLElement) {
 					emptyState.hidden = visibleCount > 0;
 				}
 
+				renderSuggestions(query, matchingEntries);
 				updateSummary(visibleCount);
 				return visibleCount;
 			};
@@ -386,6 +541,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			const resetCatalog = (mode = 'catalog') => {
 				activeGenre = null;
 				input.value = '';
+				hideSuggestions();
 				applyGenreUI();
 				sessionStorage.removeItem(homeStateKey);
 				const visibleCount = runFilter(true);
@@ -497,6 +653,65 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			applyGenreUI();
 			input.addEventListener('input', () => {
 				scheduleFilter();
+			});
+			input.addEventListener('focus', () => {
+				if (input.value.trim().length > 0 && currentSuggestions.length > 0 && suggestionsBox instanceof HTMLElement) {
+					suggestionsBox.hidden = false;
+				}
+			});
+			input.addEventListener('keydown', (event) => {
+				if (currentSuggestions.length === 0) {
+					if (event.key === 'Escape') {
+						hideSuggestions();
+					}
+					return;
+				}
+
+				if (event.key === 'ArrowDown') {
+					event.preventDefault();
+					activeSuggestionIndex = Math.min(activeSuggestionIndex + 1, currentSuggestions.length - 1);
+					updateSuggestionHighlight();
+					return;
+				}
+
+				if (event.key === 'ArrowUp') {
+					event.preventDefault();
+					activeSuggestionIndex = Math.max(activeSuggestionIndex - 1, 0);
+					updateSuggestionHighlight();
+					return;
+				}
+
+				if (event.key === 'Enter' && activeSuggestionIndex >= 0) {
+					event.preventDefault();
+					persistHomeState();
+					window.location.href = currentSuggestions[activeSuggestionIndex].url;
+					return;
+				}
+
+				if (event.key === 'Escape') {
+					hideSuggestions();
+				}
+			});
+			if (suggestionsList instanceof HTMLElement) {
+				suggestionsList.addEventListener('mousemove', (event) => {
+					const suggestion = event.target instanceof Element
+						? event.target.closest('[data-movie-search-suggestion]')
+						: null;
+					if (!(suggestion instanceof HTMLAnchorElement)) return;
+					activeSuggestionIndex = Number(suggestion.dataset.suggestionIndex ?? '-1');
+					updateSuggestionHighlight();
+				});
+				suggestionsList.addEventListener('click', (event) => {
+					const suggestion = event.target instanceof Element
+						? event.target.closest('[data-movie-search-suggestion]')
+						: null;
+					if (!(suggestion instanceof HTMLAnchorElement)) return;
+					persistHomeState();
+				});
+			}
+			document.addEventListener('pointerdown', (event) => {
+				if (!(event.target instanceof Node) || searchRoot.contains(event.target)) return;
+				hideSuggestions();
 			});
 			if (homeBrandLink instanceof HTMLAnchorElement) {
 				homeBrandLink.addEventListener('click', (event) => {

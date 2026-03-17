@@ -101,10 +101,24 @@ const awardCategories = groupedAwards.flatMap((group) =>
 		year: win.year,
 	})),
 );
-const hasEditorialTopGrid =
-	Boolean(editorialSummary.runtime) || editorialSummary.idealFor.length > 0;
 const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
+const idealForDisplayLabels: Record<string, string> = {
+	solo: 'Verla solo',
+	'en pareja': 'Noche romantica',
+	'con amigos': 'Ver con amigos',
+	'en familia': 'Ver con hijos',
+	domingo: 'Plan dominguero',
+	trasnoche: 'Plan trasnoche',
+	'plan corto': 'Plan corto',
+	maraton: 'Va para maraton',
+	pochoclera: 'Puro pochoclo',
+	intensa: 'Alta tension',
+	tensa: 'Te deja pegado',
+	liviana: 'Cero complicacion',
+	'para pensar': 'Para debatir despues',
+	premiada: 'Con premios encima',
+};
 
 function parsePersonDate(value?: string) {
 	if (!value) {
@@ -267,265 +281,275 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
 					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
 				</div>
-				<dl class="movie-detail__credits">
-					<div class="movie-detail__credit-item">
-						<dt>Titulo original</dt>
-						<dd>{movie.originalTitle}</dd>
+				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
+					<div class="movie-detail__hero-stack">
+						{trailerEmbedUrl ? (
+							<div class="trailer-shell">
+								<div class="trailer-shell__header">
+									<span class="trailer-shell__eyebrow">Trailer oficial</span>
+									<strong class="trailer-shell__title">Ver trailer de {movie.title}</strong>
+								</div>
+								<iframe
+									class="trailer-frame"
+									src={trailerEmbedUrl}
+									title={`Trailer de ${movie.title}`}
+									loading="lazy"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
+								></iframe>
+								<a
+									class="trailer-shell__external"
+									href={trailerWatchUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Abrir en YouTube
+								</a>
+							</div>
+						) : (
+							<p class="message-box">Trailer no disponible.</p>
+						)}
+						{
+							movie.synopsis && (
+								<section class="movie-detail__synopsis-card" aria-label="De que se trata">
+									<p class="movie-detail__synopsis-kicker">De que se trata</p>
+									<p class="movie-detail__synopsis">{movie.synopsis}</p>
+								</section>
+							)
+						}
+						{
+							movie.review && (
+								<section class="movie-detail__review-card" aria-label="Reseña honesta">
+									<p class="movie-detail__review-kicker">Reseña honesta</p>
+									<p class="movie-detail__review">{movie.review}</p>
+								</section>
+							)
+						}
 					</div>
-					<div class="movie-detail__credit-item">
-						<dt>Categoria</dt>
-						<dd>{movie.category}</dd>
-					</div>
-					<div class="movie-detail__credit-item">
-						<dt>Productora</dt>
-						<dd>{movie.productionCompany}</dd>
-					</div>
-				</dl>
-				{
-					(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
-						<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
-							{
-								peopleGroups.directors.length > 0 && (
-									<div class="movie-detail__people-block">
-										<p class="movie-detail__people-title">
-											{peopleGroups.directors.length > 1 ? 'Dirección' : 'Director'}
-										</p>
-								<ul class="movie-detail__people-grid" role="list">
-											{peopleGroups.directors.map((person) => (
-												<li>
-													<article class="movie-detail__person-card">
-														<div class="movie-detail__person-avatar">
-															{person.image || person.remoteImageUrl ? (
-																<img
-																	src={person.image ?? person.remoteImageUrl}
-																	alt={`Foto de ${person.creditedName}`}
-																	loading="lazy"
-																/>
-															) : (
-																<span aria-hidden="true">{person.initials}</span>
-															)}
-														</div>
-														<div class="movie-detail__person-copy">
-															<p class="movie-detail__person-role">Dirección</p>
-															<p class="movie-detail__person-name">{person.creditedName}</p>
-															<p class="movie-detail__person-meta">
-																{getBirthSummary(person) ? (
-																	<>
-																		<span>{getBirthSummary(person)}</span>
-																		{person.deathDate || person.deathYear ? (
-																			<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																		) : shouldHideLivingAge(person) ? (
-																			<span>Edad no confirmada</span>
-																		) : (
-																			<span
-																				class="movie-detail__person-age"
-																				data-birth-date={person.birthDate}
-																				data-birth-year={person.birthYear}
-																			>
-																				{getPersonAge(person)} años
-																			</span>
-																		)}
-																	</>
-																) : person.deathDate || person.deathYear ? (
-																	<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+					{
+						(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
+							<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
+								{
+									peopleGroups.directors.length > 0 && (
+										<div class="movie-detail__people-block">
+											<p class="movie-detail__people-title">
+												{peopleGroups.directors.length > 1 ? 'Dirección' : 'Director'}
+											</p>
+									<ul class="movie-detail__people-grid" role="list">
+												{peopleGroups.directors.map((person) => (
+													<li>
+														<article class="movie-detail__person-card">
+															<div class="movie-detail__person-avatar">
+																{person.image || person.remoteImageUrl ? (
+																	<img
+																		src={person.image ?? person.remoteImageUrl}
+																		alt={`Foto de ${person.creditedName}`}
+																		loading="lazy"
+																	/>
 																) : (
-																	<span>Fecha de nacimiento no disponible</span>
+																	<span aria-hidden="true">{person.initials}</span>
 																)}
-															</p>
-															<p class="movie-detail__person-origin">
-																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
-															</p>
-														</div>
-													</article>
-												</li>
-											))}
-										</ul>
-									</div>
-								)
-							}
-							{
-								peopleGroups.cast.length > 0 && (
-									<div class="movie-detail__people-block">
-										<p class="movie-detail__people-title">{castSectionTitle}</p>
-								<ul class="movie-detail__people-grid" role="list">
-											{peopleGroups.cast.map((person) => (
-												<li>
-													<article class="movie-detail__person-card">
-														<div class="movie-detail__person-avatar">
-															{person.image || person.remoteImageUrl ? (
-																<img
-																	src={person.image ?? person.remoteImageUrl}
-																	alt={`Foto de ${person.creditedName}`}
-																	loading="lazy"
-																/>
-															) : (
-																<span aria-hidden="true">{person.initials}</span>
-															)}
-														</div>
-														<div class="movie-detail__person-copy">
-															<p class="movie-detail__person-role">{castRoleLabel}</p>
-															<p class="movie-detail__person-name">{person.creditedName}</p>
-															<p class="movie-detail__person-meta">
-																{getBirthSummary(person) ? (
-																	<>
-																		<span>{getBirthSummary(person)}</span>
-																		{person.deathDate || person.deathYear ? (
-																			<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																		) : shouldHideLivingAge(person) ? (
-																			<span>Edad no confirmada</span>
-																		) : (
-																			<span
-																				class="movie-detail__person-age"
-																				data-birth-date={person.birthDate}
-																				data-birth-year={person.birthYear}
-																			>
-																				{getPersonAge(person)} años
-																			</span>
-																		)}
-																	</>
-																) : person.deathDate || person.deathYear ? (
-																	<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																) : (
-																	<span>Fecha de nacimiento no disponible</span>
-																)}
-															</p>
-															<p class="movie-detail__person-origin">
-																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
-															</p>
-														</div>
-													</article>
-												</li>
-											))}
-										</ul>
-									</div>
-								)
-							}
-						</section>
-					)
-				}
-				{
-					movie.synopsis && (
-						<section class="movie-detail__synopsis-card" aria-label="De que se trata">
-							<p class="movie-detail__synopsis-kicker">De que se trata</p>
-							<p class="movie-detail__synopsis">{movie.synopsis}</p>
-						</section>
-					)
-				}
-				{
-					hasEditorialTopGrid && (
-						<div class="movie-detail__editorial-grid" aria-label="Datos utiles para decidir rapido">
-							{
-								editorialSummary.runtime && (
-									<section class="movie-detail__editorial-card movie-detail__editorial-card--duration">
-										<p class="movie-detail__editorial-kicker">Duración</p>
-										<p class="movie-detail__runtime-value">{editorialSummary.runtime.formatted}</p>
-									</section>
-								)
-							}
-							{
-								editorialSummary.idealFor.length > 0 && (
-									<section class="movie-detail__editorial-card">
-										<p class="movie-detail__editorial-kicker">Ideal para</p>
-										<ul class="movie-detail__tag-list" aria-label="Ideal para">
-											{editorialSummary.idealFor.map((tag) => (
-												<li class="movie-detail__tag">{tag}</li>
-											))}
-										</ul>
-									</section>
-								)
-							}
-						</div>
-					)
-				}
-				{
-					groupedAwards.length > 0 && (
-						<section class="movie-detail__awards-card" aria-label="Premios y galardones">
-							<p class="movie-detail__awards-kicker">Premios y galardones</p>
-							<div class="movie-detail__awards-groups">
-								{groupedAwards.map((group) => (
-									<div class="movie-detail__awards-group">
-										<p class="movie-detail__awards-group-title">{group.label}</p>
-										<div
-											class="movie-detail__awards-icons"
-											aria-label={`${group.count} premio${group.count === 1 ? '' : 's'} ${group.label}`}
-										>
-											{Array.from({ length: group.count }).map(() => (
-												<span class={`movie-detail__award-icon movie-detail__award-icon--${group.awardType}`}>
-													{group.icon}
-												</span>
-											))}
+															</div>
+															<div class="movie-detail__person-copy">
+																<p class="movie-detail__person-role">Dirección</p>
+																<p class="movie-detail__person-name">{person.creditedName}</p>
+																<p class="movie-detail__person-meta">
+																	{getBirthSummary(person) ? (
+																		<>
+																			<span>{getBirthSummary(person)}</span>
+																			{person.deathDate || person.deathYear ? (
+																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																			) : shouldHideLivingAge(person) ? (
+																				<span>Edad no confirmada</span>
+																			) : (
+																				<span
+																					class="movie-detail__person-age"
+																					data-birth-date={person.birthDate}
+																					data-birth-year={person.birthYear}
+																				>
+																					{getPersonAge(person)} años
+																				</span>
+																			)}
+																		</>
+																	) : person.deathDate || person.deathYear ? (
+																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																	) : (
+																		<span>Fecha de nacimiento no disponible</span>
+																	)}
+																</p>
+																<p class="movie-detail__person-origin">
+																	{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
+																</p>
+															</div>
+														</article>
+													</li>
+												))}
+											</ul>
 										</div>
-										<p class="movie-detail__awards-group-count">
-											{group.count} premio{group.count === 1 ? '' : 's'}
-										</p>
-									</div>
-								))}
-							</div>
-							<ul class="movie-detail__awards-list">
-								{awardCategories.map((award) => (
-									<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
-										<span class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}>
-											{award.label}
-										</span>
-										<span>{award.category}</span>
-										{award.recipient && (
-											<span class="movie-detail__award-recipient">· {award.recipient}</span>
-										)}
-										{award.year && <span class="movie-detail__award-year">({award.year})</span>}
-										{award.isBestPicture && (
-											<span class="movie-detail__award-highlight">Premio mayor</span>
-										)}
-									</li>
-								))}
-							</ul>
-						</section>
-					)
-				}
-				<section class="movie-detail__review-card" aria-label="Reseña honesta">
-					<p class="movie-detail__review-kicker">Reseña honesta</p>
-					<p class="movie-detail__review">{movie.review}</p>
+									)
+								}
+								{
+									peopleGroups.cast.length > 0 && (
+										<div class="movie-detail__people-block">
+											<p class="movie-detail__people-title">{castSectionTitle}</p>
+									<ul class="movie-detail__people-grid" role="list">
+												{peopleGroups.cast.map((person) => (
+													<li>
+														<article class="movie-detail__person-card">
+															<div class="movie-detail__person-avatar">
+																{person.image || person.remoteImageUrl ? (
+																	<img
+																		src={person.image ?? person.remoteImageUrl}
+																		alt={`Foto de ${person.creditedName}`}
+																		loading="lazy"
+																	/>
+																) : (
+																	<span aria-hidden="true">{person.initials}</span>
+																)}
+															</div>
+															<div class="movie-detail__person-copy">
+																<p class="movie-detail__person-role">{castRoleLabel}</p>
+																<p class="movie-detail__person-name">{person.creditedName}</p>
+																<p class="movie-detail__person-meta">
+																	{getBirthSummary(person) ? (
+																		<>
+																			<span>{getBirthSummary(person)}</span>
+																			{person.deathDate || person.deathYear ? (
+																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																			) : shouldHideLivingAge(person) ? (
+																				<span>Edad no confirmada</span>
+																			) : (
+																				<span
+																					class="movie-detail__person-age"
+																					data-birth-date={person.birthDate}
+																					data-birth-year={person.birthYear}
+																				>
+																					{getPersonAge(person)} años
+																				</span>
+																			)}
+																		</>
+																	) : person.deathDate || person.deathYear ? (
+																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																	) : (
+																		<span>Fecha de nacimiento no disponible</span>
+																	)}
+																</p>
+																<p class="movie-detail__person-origin">
+																	{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
+																</p>
+															</div>
+														</article>
+													</li>
+												))}
+											</ul>
+										</div>
+									)
+								}
+							</section>
+						)
+					}
 				</section>
-				<MovieRating movieSlug={movie.slug} />
-				{
-					editorialSummary.related.length > 0 && (
-						<section class="movie-detail__editorial-card movie-detail__editorial-card--related">
-							<p class="movie-detail__editorial-copy">{relatedIntro}</p>
-							<div class="movie-detail__related-list">
-								{editorialSummary.related.map((recommendation) => (
-									<a class="movie-detail__related-link" href={recommendation.url}>
-										<span>{recommendation.title}</span>
-										<span>{recommendation.year}</span>
-									</a>
-								))}
+				<section class="movie-detail__info-tail" aria-label="Ficha técnica y datos extra">
+					<div class="movie-detail__info-overview">
+						<dl class="movie-detail__credits">
+							<div class="movie-detail__credit-item">
+								<dt>Titulo original</dt>
+								<dd>{movie.originalTitle}</dd>
 							</div>
-						</section>
-					)
-				}
-
-				{trailerEmbedUrl ? (
-					<div class="trailer-shell" data-trailer-root data-trailer-src={trailerEmbedUrl}>
-						<button
-							type="button"
-							class="trailer-shell__button"
-							data-trailer-button
-							aria-label={`Cargar trailer de ${movie.title}`}
-						>
-							<span class="trailer-shell__eyebrow">Trailer oficial</span>
-							<strong class="trailer-shell__title">Ver trailer de {movie.title}</strong>
-							<span class="trailer-shell__copy">Lo cargamos solo si lo querés reproducir.</span>
-						</button>
-						<a
-							class="trailer-shell__external"
-							href={trailerWatchUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Abrir en YouTube
-						</a>
+							<div class="movie-detail__credit-item">
+								<dt>Categoria</dt>
+								<dd>{movie.category}</dd>
+							</div>
+							<div class="movie-detail__credit-item">
+								<dt>Productora</dt>
+								<dd>{movie.productionCompany}</dd>
+							</div>
+						</dl>
+						{
+							editorialSummary.related.length > 0 && (
+								<section class="movie-detail__editorial-card movie-detail__editorial-card--related">
+									<p class="movie-detail__editorial-copy">{relatedIntro}</p>
+									<div class="movie-detail__related-list">
+										{editorialSummary.related.map((recommendation) => (
+											<a class="movie-detail__related-link" href={recommendation.url}>
+												<span>{recommendation.title}</span>
+												<span>{recommendation.year}</span>
+											</a>
+										))}
+									</div>
+								</section>
+							)
+						}
 					</div>
-				) : (
-					<p class="message-box">Trailer no disponible.</p>
-				)}
+					<div class="movie-detail__editorial-grid" aria-label="Datos utiles para decidir rapido">
+						{
+							editorialSummary.runtime && (
+								<section class="movie-detail__editorial-card movie-detail__editorial-card--duration">
+									<p class="movie-detail__editorial-kicker">Duración</p>
+									<p class="movie-detail__runtime-value">{editorialSummary.runtime.formatted}</p>
+								</section>
+							)
+						}
+						<MovieRating movieSlug={movie.slug} />
+						{
+							editorialSummary.idealFor.length > 0 && (
+								<section class="movie-detail__editorial-card movie-detail__editorial-card--ideal-for">
+									<p class="movie-detail__editorial-kicker">Qué plan pide</p>
+									<ul class="movie-detail__tag-list" aria-label="Qué plan pide">
+										{editorialSummary.idealFor.map((tag) => (
+											<li class="movie-detail__tag">{idealForDisplayLabels[tag] ?? tag}</li>
+										))}
+									</ul>
+								</section>
+							)
+						}
+					</div>
+					{
+						groupedAwards.length > 0 && (
+							<section class="movie-detail__awards-card" aria-label="Premios y galardones">
+								<p class="movie-detail__awards-kicker">Premios y galardones</p>
+								<div class="movie-detail__awards-groups">
+									{groupedAwards.map((group) => (
+										<div class="movie-detail__awards-group">
+											<p class="movie-detail__awards-group-title">{group.label}</p>
+											<div
+												class="movie-detail__awards-icons"
+												aria-label={`${group.count} premio${group.count === 1 ? '' : 's'} ${group.label}`}
+											>
+												{Array.from({ length: group.count }).map(() => (
+													<span class={`movie-detail__award-icon movie-detail__award-icon--${group.awardType}`}>
+														{group.icon}
+													</span>
+												))}
+											</div>
+											<p class="movie-detail__awards-group-count">
+												{group.count} premio{group.count === 1 ? '' : 's'}
+											</p>
+										</div>
+									))}
+								</div>
+								<ul class="movie-detail__awards-list">
+									{awardCategories.map((award) => (
+										<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
+											<span class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}>
+												{award.label}
+											</span>
+											<span>{award.category}</span>
+											{award.recipient && (
+												<span class="movie-detail__award-recipient">· {award.recipient}</span>
+											)}
+											{award.year && <span class="movie-detail__award-year">({award.year})</span>}
+											{award.isBestPicture && (
+												<span class="movie-detail__award-highlight">Premio mayor</span>
+											)}
+										</li>
+									))}
+								</ul>
+							</section>
+						)
+					}
+				</section>
 			</div>
 		</section>
 	</main>
@@ -605,39 +629,5 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 		}
 
 		node.textContent = `${age} años`;
-	});
-
-	document.querySelectorAll('[data-trailer-root]').forEach((node) => {
-		if (!(node instanceof HTMLElement)) {
-			return;
-		}
-
-		const button = node.querySelector('[data-trailer-button]');
-		if (!(button instanceof HTMLButtonElement)) {
-			return;
-		}
-
-		button.addEventListener(
-			'click',
-			() => {
-				const iframeSrc = node.dataset.trailerSrc;
-				if (!iframeSrc) {
-					return;
-				}
-
-				const iframe = document.createElement('iframe');
-				iframe.className = 'trailer-frame';
-				iframe.src = iframeSrc;
-				iframe.title = button.getAttribute('aria-label') ?? 'Trailer';
-				iframe.loading = 'lazy';
-				iframe.allow =
-					'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-				iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-				iframe.allowFullscreen = true;
-
-				node.replaceChildren(iframe);
-			},
-			{ once: true },
-		);
 	});
 </script>

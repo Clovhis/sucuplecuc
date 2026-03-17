@@ -17,7 +17,21 @@ export interface MovieAwards {
 	wins: MovieAwardWin[];
 }
 
-export type MovieIdealForTag = 'solo' | 'en pareja' | 'con amigos' | 'domingo' | 'trasnoche';
+export type MovieIdealForTag =
+	| 'solo'
+	| 'en pareja'
+	| 'con amigos'
+	| 'en familia'
+	| 'domingo'
+	| 'trasnoche'
+	| 'plan corto'
+	| 'maraton'
+	| 'pochoclera'
+	| 'intensa'
+	| 'tensa'
+	| 'liviana'
+	| 'para pensar'
+	| 'premiada';
 
 export interface MovieEditorial {
 	runtimeComment?: string;
