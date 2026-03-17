@@ -49,6 +49,15 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 								autocomplete="off"
 								data-movie-search-input
 							/>
+							<button
+								type="button"
+								class="movie-search__clear"
+								data-movie-search-clear
+								aria-label="Borrar búsqueda"
+								hidden
+							>
+								<span aria-hidden="true">×</span>
+							</button>
 							<div
 								class="movie-search__dropdown"
 								data-movie-search-dropdown
@@ -191,6 +200,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 	if (searchRoot instanceof HTMLElement) {
 		const homeBrandLink = document.querySelector('.site-header__brand');
 		const input = searchRoot.querySelector('[data-movie-search-input]');
+		const clearButton = searchRoot.querySelector('[data-movie-search-clear]');
 		const emptyState = searchRoot.querySelector('[data-movie-search-empty]');
 		const statusBox = searchRoot.querySelector('[data-movie-search-status]');
 		const statusCopy = searchRoot.querySelector('[data-movie-search-status-copy]');
@@ -201,6 +211,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 		const cards = Array.from(document.querySelectorAll('[data-movie-card]'));
 		const genreChips = Array.from(document.querySelectorAll('[data-home-genre-chip]'));
 		const homeStateKey = 'cineposta:home-list-state:v1';
+		const homeReturnBehaviorKey = 'cineposta:home-return-behavior:v1';
 		const catalogLoadingPhrases = [
 			'Bancá que carga el videoclub...',
 			'Estamos acomodando los posters.',
@@ -267,6 +278,46 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			let currentSuggestions = [];
 
 			const getVisibleEntries = () => movieIndex.filter((entry) => !entry.element.hidden);
+			const isPlainLeftClick = (event) =>
+				event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+
+			const setReturnBehavior = (behavior) => {
+				try {
+					if (typeof behavior === 'string' && behavior.length > 0) {
+						sessionStorage.setItem(homeReturnBehaviorKey, behavior);
+						return;
+					}
+					sessionStorage.removeItem(homeReturnBehaviorKey);
+				} catch {
+					// Ignore storage errors.
+				}
+			};
+
+			const consumeReturnBehavior = () => {
+				try {
+					const behavior = sessionStorage.getItem(homeReturnBehaviorKey);
+					sessionStorage.removeItem(homeReturnBehaviorKey);
+					return behavior;
+				} catch {
+					return null;
+				}
+			};
+
+			const prepareResetOnReturn = () => {
+				skipPersistOnPageHide = true;
+				setReturnBehavior('reset');
+				try {
+					sessionStorage.removeItem(homeStateKey);
+				} catch {
+					// Ignore storage errors.
+				}
+			};
+
+			const updateClearButtonVisibility = () => {
+				if (!(clearButton instanceof HTMLButtonElement)) return;
+				const shouldShow = input.value.trim().length > 0 || Boolean(activeGenre);
+				clearButton.hidden = !shouldShow;
+			};
 
 			const hideSuggestions = () => {
 				activeSuggestionIndex = -1;
@@ -498,12 +549,14 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 
 			const toggleGenre = (genreId) => {
 				activeGenre = activeGenre === genreId ? null : genreId;
+				updateClearButtonVisibility();
 				return activeGenre;
 			};
 
 			const runFilter = (force = false) => {
 				const query = normalize(input.value);
 				const genreKey = activeGenre ?? '';
+				updateClearButtonVisibility();
 				if (!force && query === lastAppliedQuery && genreKey === lastAppliedGenre) {
 					const visibleCount = getVisibleEntries().length;
 					renderSuggestions(query, getVisibleEntries());
@@ -543,7 +596,9 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				input.value = '';
 				hideSuggestions();
 				applyGenreUI();
+				updateClearButtonVisibility();
 				sessionStorage.removeItem(homeStateKey);
+				setReturnBehavior(null);
 				const visibleCount = runFilter(true);
 				syncStatusWithVisiblePosters(mode, visibleCount);
 				return visibleCount;
@@ -594,6 +649,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 					activeGenre = parsed.genre;
 					applyGenreUI();
 				}
+				updateClearButtonVisibility();
 
 				lastAppliedQuery = '';
 				lastAppliedGenre = '';
@@ -620,7 +676,10 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				.filter((link) => link instanceof HTMLAnchorElement);
 
 			for (const link of cardLinks) {
-				link.addEventListener('click', persistHomeState, { passive: true });
+				link.addEventListener('click', (event) => {
+					if (!isPlainLeftClick(event)) return;
+					prepareResetOnReturn();
+				});
 			}
 
 			const applyGenreUI = () => {
@@ -651,6 +710,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			}
 
 			applyGenreUI();
+			updateClearButtonVisibility();
 			input.addEventListener('input', () => {
 				scheduleFilter();
 			});
@@ -683,7 +743,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 
 				if (event.key === 'Enter' && activeSuggestionIndex >= 0) {
 					event.preventDefault();
-					persistHomeState();
+					prepareResetOnReturn();
 					window.location.href = currentSuggestions[activeSuggestionIndex].url;
 					return;
 				}
@@ -706,7 +766,15 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 						? event.target.closest('[data-movie-search-suggestion]')
 						: null;
 					if (!(suggestion instanceof HTMLAnchorElement)) return;
-					persistHomeState();
+					if (!isPlainLeftClick(event)) return;
+					prepareResetOnReturn();
+				});
+			}
+			if (clearButton instanceof HTMLButtonElement) {
+				clearButton.addEventListener('click', () => {
+					showStatus(catalogLoadingPhrases);
+					resetCatalog('catalog');
+					input.focus();
 				});
 			}
 			document.addEventListener('pointerdown', (event) => {
@@ -730,6 +798,10 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 					return;
 				}
 				persistHomeState();
+			});
+			window.addEventListener('pageshow', () => {
+				if (consumeReturnBehavior() !== 'reset') return;
+				resetCatalog('catalog');
 			});
 			showStatus(catalogLoadingPhrases);
 			restoreHomeState();
