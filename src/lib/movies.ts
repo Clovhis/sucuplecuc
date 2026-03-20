@@ -387,11 +387,27 @@ function isReleased(movie: Pick<Movie, 'year' | 'releaseDate'>): boolean {
 	return movie.year < currentYear;
 }
 
+function getMovieSortTimestamp(movie: Pick<Movie, 'year' | 'releaseDate'>): number {
+	if (movie.releaseDate) {
+		const releaseDate = new Date(`${movie.releaseDate}T00:00:00Z`);
+		if (!Number.isNaN(releaseDate.getTime())) {
+			return releaseDate.getTime();
+		}
+	}
+
+	return Date.UTC(movie.year, 0, 1);
+}
+
 export function getMovies(): Movie[] {
 	const movies = Object.values(movieModules)
 		.map((moduleItem) => moduleItem.default)
 		.filter((movie) => isReleased(movie))
-		.sort((a, b) => b.year - a.year || a.title.localeCompare(b.title, 'es'));
+		.sort(
+			(a, b) =>
+				getMovieSortTimestamp(b) - getMovieSortTimestamp(a) ||
+				b.year - a.year ||
+				a.title.localeCompare(b.title, 'es'),
+		);
 
 	validateMovies(movies);
 	return movies;

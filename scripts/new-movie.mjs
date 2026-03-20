@@ -92,6 +92,8 @@ async function main() {
 		'Antes de publicar completa, como minimo, editorial.becauseYouLiked (1-2 slugs) y editorial.related (3-4 slugs).',
 	);
 	console.log('No publiques la entrada sin completar synopsis con de que se trata la pelicula, sin opinion.');
+	console.log(`Despues corre: npm run enrich-people -- --movie ${args.slug} --missing-only`);
+	console.log(`Y valida personas con: npm run audit:movie-people -- --movie ${args.slug}`);
 }
 
 main().catch((error) => {
