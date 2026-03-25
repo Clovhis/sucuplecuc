@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-16. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 662
+Total de peliculas: 665
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -18,8 +18,11 @@ Total de peliculas: 662
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Cine |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Cine |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Cine |
+| 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix |
 | 2026 | Mercy | mercy-2026 | Accion | Cine |
 | 2026 | Othello | othello-2026 | Drama | Cine |
+| 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix |
+| 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video |
 | 2026 | Primate | primate-2026 | Terror | Cine |
 | 2026 | Protector | protector-2026 | Accion | Cine |
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Cine |
