@@ -53,8 +53,7 @@ const normalizedCategory = String(movie.category || '')
 	.toLowerCase()
 	.trim();
 const isAnimatedTitle = normalizedCategory === 'anime' || normalizedCategory === 'animacion';
-const castSectionTitle = isAnimatedTitle ? 'Voces originales' : 'Actores principales';
-const castRoleLabel = isAnimatedTitle ? 'Voz original' : 'Protagonista';
+const castSectionTitle = isAnimatedTitle ? 'Voces originales' : 'Elenco';
 const screenshotUrls = (movie.screenshots ?? [])
 	.filter((value) => typeof value === 'string' && value.trim().length > 0)
 	.slice(0, 2)
@@ -409,7 +408,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																)}
 															</div>
 															<div class="movie-detail__person-copy">
-																<p class="movie-detail__person-role">{castRoleLabel}</p>
 																<p class="movie-detail__person-name">{person.creditedName}</p>
 																<p class="movie-detail__person-meta">
 																	{getBirthSummary(person) ? (
