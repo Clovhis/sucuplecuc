@@ -1,13 +1,14 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-24. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-30. Fuente: src/data/movies/*.json
 
-Total de peliculas: 665
+Total de peliculas: 666
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Cine |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Cine |
+| 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Cine |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Cine |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
