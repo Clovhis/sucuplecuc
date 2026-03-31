@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-30. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-03-31. Fuente: src/data/movies/*.json
 
-Total de peliculas: 666
+Total de peliculas: 667
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -32,6 +32,7 @@ Total de peliculas: 666
 | 2026 | Send Help | send-help-2026 | Thriller | Cine |
 | 2026 | Shelter | shelter-2026 | Thriller | Cine |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Cine |
+| 2026 | Te van a matar | te-van-a-matar-2026 | Terror | Cine |
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Cine |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Cine |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Cine |
