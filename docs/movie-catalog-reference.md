@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-03-31. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-01. Fuente: src/data/movies/*.json
 
-Total de peliculas: 667
+Total de peliculas: 668
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
@@ -51,6 +51,7 @@ Total de peliculas: 667
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Cine |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV |
+| 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Cine |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus |
 | 2025 | F1: The Movie | f1-the-movie-2025 | Drama | Apple TV |
 | 2025 | Fear Street: Prom Queen | fear-street-prom-queen-2025 | Terror | Netflix |
