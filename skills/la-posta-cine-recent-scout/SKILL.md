@@ -153,6 +153,7 @@ Otherwise use the recent-branch audit flow from the auditor skill.
 
 If no candidate survives the pipeline, stop and report:
 
+- the exact sentence: `No hay nada digno para subir a cineposta`
 - the exact date window you used
 - sources checked
 - why each rejected candidate failed: stale, duplicate, weak evidence, or insufficient metadata
@@ -168,4 +169,4 @@ Return:
 3. duplicate/freshness guard result for the chosen title
 4. confirmation that `la-posta-cine-add-movie` was triggered
 5. confirmation that `la-posta-cine-auditor` was triggered
-6. final status: added and audited, or no viable candidate found
+6. final status: added and audited, or `No hay nada digno para subir a cineposta`
