@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Recent Scout"
+  short_description: "Detecta estrenos recientes para subir"
+  default_prompt: "Use $la-posta-cine-recent-scout to find one relevant recent movie not yet in the catalog, then trigger the add and audit workflows."

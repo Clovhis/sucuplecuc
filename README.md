@@ -57,10 +57,14 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 ├─ skills/
 │  ├─ la-posta-cine-add-movie/
 │  │  └─ SKILL.md
-│  └─ la-posta-cine-auditor/
+│  ├─ la-posta-cine-auditor/
+│  │  ├─ SKILL.md
+│  │  ├─ agents/openai.yaml
+│  │  └─ scripts/audit_recent_movies.cjs
+│  └─ la-posta-cine-recent-scout/
 │     ├─ SKILL.md
 │     ├─ agents/openai.yaml
-│     └─ scripts/audit_recent_movies.cjs
+│     └─ scripts/check_recent_candidate.mjs
 ├─ templates/
 │  └─ movie.template.json
 ├─ supabase/
@@ -291,10 +295,11 @@ Alternative: copy `templates/movie.template.json`.
 
 ## Agent movie workflows
 
-The repo includes two Codex skills for movie-content operations:
+The repo includes three Codex skills for movie-content operations:
 
 - `skills/la-posta-cine-add-movie/`
 - `skills/la-posta-cine-auditor/`
+- `skills/la-posta-cine-recent-scout/`
 
 ### `la-posta-cine-add-movie`
 
@@ -358,6 +363,25 @@ Safe fix scope for the auditor:
 - `docs/movie-catalog-reference.md`
 
 It must not auto-fix site code.
+
+### `la-posta-cine-recent-scout`
+
+Use this skill before the add workflow when you want Codex to find a fresh movie on its own.
+
+Responsibilities:
+
+- use the current date and browse recent cinema + streaming releases
+- keep only titles already released inside the recent-release window
+- reject duplicates against `docs/movie-catalog-reference.md` and `src/data/movies/*.json`
+- prefer stronger, more publishable candidates over weakly sourced obscurities
+- hand off the winning title to `la-posta-cine-add-movie`
+- then trigger `la-posta-cine-auditor`
+
+Guard command:
+
+```bash
+node skills/la-posta-cine-recent-scout/scripts/check_recent_candidate.mjs --title "Movie Title" --year 2026 --release-date 2026-03-14
+```
 
 ## Catalog-first workflow (mandatory)
 
