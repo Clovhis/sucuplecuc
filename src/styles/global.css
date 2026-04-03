@@ -633,7 +633,10 @@ address.site-header__support-card {
 }
 
 .catalog-shell__filters {
+	display: grid;
+	gap: 1rem;
 	align-content: start;
+	min-width: 0;
 }
 
 .movie-grid {
@@ -697,6 +700,91 @@ address.site-header__support-card {
 	border-color: rgba(117, 153, 255, 0.82);
 	background: rgba(117, 153, 255, 0.24);
 	color: #f4f7ff;
+}
+
+.home-platform-filter {
+	display: grid;
+	gap: 0.65rem;
+	min-width: 0;
+}
+
+.home-platform-filter__chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+.home-platform-filter__chip {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 5.4rem;
+	min-height: 3rem;
+	padding: 0.5rem 0.72rem;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+		rgba(9, 13, 20, 0.54);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.05),
+		0 10px 24px rgba(6, 9, 14, 0.18);
+	cursor: pointer;
+	transition:
+		transform 0.16s ease,
+		border-color 0.16s ease,
+		background-color 0.16s ease,
+		box-shadow 0.16s ease;
+}
+
+.home-platform-filter__chip:hover,
+.home-platform-filter__chip:focus-visible {
+	transform: translateY(-1px);
+	border-color: rgba(255, 255, 255, 0.22);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+		rgba(12, 18, 27, 0.72);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.08),
+		0 16px 32px rgba(6, 9, 14, 0.24);
+}
+
+.home-platform-filter__chip.is-active {
+	border-color: rgba(117, 153, 255, 0.5);
+	background:
+		linear-gradient(180deg, rgba(117, 153, 255, 0.16), rgba(117, 153, 255, 0.06)),
+		rgba(10, 15, 24, 0.84);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.1),
+		0 18px 34px rgba(10, 15, 24, 0.28);
+}
+
+.home-platform-filter__badge.platform-chip {
+	padding: 0;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+.home-platform-filter__badge.platform-chip--brand {
+	padding: 0;
+}
+
+.home-platform-filter__badge .platform-chip__logo {
+	max-height: 1.14rem;
+}
+
+.home-platform-filter__badge.platform-chip--disney-plus .platform-chip__logo {
+	max-height: 1.22rem;
+}
+
+.home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo,
+.home-platform-filter__badge.platform-chip--crunchyroll .platform-chip__logo {
+	max-height: 1.16rem;
+}
+
+.home-platform-filter__badge.platform-chip--cine .platform-chip__cine-label {
+	font-size: 0.76rem;
 }
 
 .movie-search__label {
@@ -1252,6 +1340,16 @@ address.site-header__support-card {
 	background: linear-gradient(180deg, rgba(228, 191, 99, 0.16), rgba(228, 191, 99, 0.06));
 	border-color: rgba(228, 191, 99, 0.32);
 	color: #e9c86a;
+}
+
+.platform-chip--cine-ar {
+	--platform-chip-logo-width: 3.1rem;
+	--platform-chip-logo-max-height: 1rem;
+	--platform-tile-logo-width: 3.75rem;
+	--platform-tile-logo-max-height: 1.26rem;
+	color: #b8e0ff;
+	background: linear-gradient(180deg, rgba(38, 112, 194, 0.24), rgba(38, 112, 194, 0.08));
+	border-color: rgba(94, 172, 255, 0.34);
 }
 
 .platform-chip--cine .platform-chip__cine-label {
@@ -2630,14 +2728,16 @@ address.site-header__support-card {
 		font-size: 0.76rem;
 	}
 
-	.home-genre-filter__chips {
+	.home-genre-filter__chips,
+	.home-platform-filter__chips {
 		flex-wrap: nowrap;
 		overflow-x: auto;
 		padding-bottom: 0.15rem;
 		scrollbar-width: none;
 	}
 
-	.home-genre-filter__chips::-webkit-scrollbar {
+	.home-genre-filter__chips::-webkit-scrollbar,
+	.home-platform-filter__chips::-webkit-scrollbar {
 		display: none;
 	}
 
@@ -2645,6 +2745,18 @@ address.site-header__support-card {
 		flex: 0 0 auto;
 		font-size: 0.74rem;
 		padding: 0.36rem 0.66rem;
+	}
+
+	.home-platform-filter__chip {
+		flex: 0 0 auto;
+		min-width: 5rem;
+		min-height: 2.7rem;
+		padding: 0.44rem 0.66rem;
+		border-radius: 14px;
+	}
+
+	.home-platform-filter__badge .platform-chip__logo {
+		max-height: 1.06rem;
 	}
 
 	.news-rail__header {
@@ -2719,6 +2831,12 @@ address.site-header__support-card {
 	.movie-search__label,
 	.home-genre-filter__label {
 		font-size: 0.72rem;
+	}
+
+	.home-platform-filter__chip {
+		min-width: 4.7rem;
+		min-height: 2.55rem;
+		padding-inline: 0.58rem;
 	}
 
 	.movie-search__dropdown-copy {

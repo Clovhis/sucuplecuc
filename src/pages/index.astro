@@ -2,12 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import MovieCard from '../components/MovieCard.astro';
+import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getMovies, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
+import { getPlatformFilterOptions } from '../lib/platforms';
 import { ABOUT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
+const platformOptions = getPlatformFilterOptions(movies);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y honestas de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
@@ -158,30 +161,60 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 						<div class="catalog-shell__intro">
 							<p class="catalog-shell__kicker">Explorá el catálogo</p>
 							<p class="catalog-shell__copy">
-								Reseñas cortas y directas para elegir rápido qué ver.
+								Reseñas cortas y al hueso para decidir rápido qué ver.
 							</p>
 							<p class="catalog-shell__copy">
-								Filtrá o buscá directo. Cada ficha te lleva a películas, actores y directores relacionados.
+								Filtrá por género o plataforma, o buscá directo. Cada ficha te conecta con películas, actores y directores relacionados.
 							</p>
 						</div>
-						<section class="catalog-shell__filters home-genre-filter" data-home-genre-filter>
-							<p class="home-genre-filter__label">Elegí género</p>
-							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-								{
-									RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-										<button
-											type="button"
-											class="home-genre-filter__chip"
-											data-home-genre-chip
-											data-home-genre-id={genre.id}
-											aria-pressed="false"
-										>
-											{genre.label}
-										</button>
-									))
-								}
-							</div>
-						</section>
+						<div class="catalog-shell__filters">
+							<section class="home-genre-filter" data-home-genre-filter>
+								<p class="home-genre-filter__label">Elegí género</p>
+								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+									{
+										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+											<button
+												type="button"
+												class="home-genre-filter__chip"
+												data-home-genre-chip
+												data-home-genre-id={genre.id}
+												aria-pressed="false"
+											>
+												{genre.label}
+											</button>
+										))
+									}
+								</div>
+							</section>
+							{
+								platformOptions.length > 0 && (
+									<section class="home-platform-filter" data-home-platform-filter>
+										<p class="home-genre-filter__label">Elegí plataforma</p>
+										<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+											{
+												platformOptions.map((platform) => (
+													<button
+														type="button"
+														class="home-platform-filter__chip"
+														data-home-platform-chip
+														data-home-platform-id={platform.normalizedLabel}
+														data-home-platform-label={platform.displayLabel}
+														aria-label={`Filtrar por ${platform.displayLabel}`}
+														aria-pressed="false"
+														title={platform.displayLabel}
+													>
+														<PlatformBadge
+															platform={platform.normalizedLabel}
+															className="home-platform-filter__badge"
+														/>
+													</button>
+												))
+											}
+										</div>
+									</section>
+								)
+							}
+						</div>
 					</section>
 
 					<section class="movie-grid" aria-label="Peliculas publicadas" data-movie-search-grid>
@@ -210,7 +243,8 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 		const suggestionsList = searchRoot.querySelector('[data-movie-search-suggestions]');
 		const cards = Array.from(document.querySelectorAll('[data-movie-card]'));
 		const genreChips = Array.from(document.querySelectorAll('[data-home-genre-chip]'));
-		const homeStateKey = 'cineposta:home-list-state:v1';
+		const platformChips = Array.from(document.querySelectorAll('[data-home-platform-chip]'));
+		const homeStateKey = 'cineposta:home-list-state:v2';
 		const homeReturnBehaviorKey = 'cineposta:home-return-behavior:v1';
 		const catalogLoadingPhrases = [
 			'Bancá que carga el videoclub...',
@@ -227,6 +261,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			'No te vayas, ya salen los resultados.',
 		];
 		let activeGenre = null;
+		let activePlatform = null;
 
 		if (input instanceof HTMLInputElement) {
 			const movieIndex = cards.flatMap((card) => {
@@ -247,6 +282,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 							(poster instanceof HTMLImageElement ? poster.currentSrc || poster.src : ''),
 						meta: card.dataset.movieMeta ?? '',
 						cast: card.dataset.movieCast ?? '',
+						platform: card.dataset.moviePlatform ?? '',
 						genres: new Set(
 							(card.dataset.movieGenres ?? '')
 								.split(',')
@@ -266,6 +302,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 					.trim();
 			let lastAppliedQuery = '';
 			let lastAppliedGenre = '';
+			let lastAppliedPlatform = '';
 			let filterTimer = 0;
 			let filterFrame = 0;
 			let statusRotateTimer = 0;
@@ -280,6 +317,14 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 			const getVisibleEntries = () => movieIndex.filter((entry) => !entry.element.hidden);
 			const isPlainLeftClick = (event) =>
 				event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+			const getChipLabel = (chips, dataKey, activeValue) => {
+				if (!activeValue) return '';
+				const activeChip = chips.find(
+					(chip) => chip instanceof HTMLElement && chip.dataset[dataKey] === activeValue,
+				);
+				if (!(activeChip instanceof HTMLElement)) return activeValue;
+				return activeChip.dataset.homePlatformLabel ?? activeChip.textContent?.trim() ?? activeValue;
+			};
 
 			const setReturnBehavior = (behavior) => {
 				try {
@@ -315,7 +360,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 
 			const updateClearButtonVisibility = () => {
 				if (!(clearButton instanceof HTMLButtonElement)) return;
-				const shouldShow = input.value.trim().length > 0 || Boolean(activeGenre);
+				const shouldShow = input.value.trim().length > 0 || Boolean(activeGenre) || Boolean(activePlatform);
 				clearButton.hidden = !shouldShow;
 			};
 
@@ -429,14 +474,18 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				const query = normalize(input.value);
 				const hasQuery = query.length > 0;
 				const hasGenre = Boolean(activeGenre);
-				if (!hasQuery && !hasGenre) {
+				const hasPlatform = Boolean(activePlatform);
+				if (!hasQuery && !hasGenre && !hasPlatform) {
 					summary.textContent = `${visibleCount} títulos publicados.`;
 					return;
 				}
 
 				const parts = [];
 				if (hasGenre) {
-					parts.push('género activo');
+					parts.push(`género ${getChipLabel(genreChips, 'homeGenreId', activeGenre)}`);
+				}
+				if (hasPlatform) {
+					parts.push(`plataforma ${getChipLabel(platformChips, 'homePlatformId', activePlatform)}`);
 				}
 				if (hasQuery) {
 					parts.push(`búsqueda "${input.value.trim()}"`);
@@ -538,6 +587,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 					const payload = {
 						query: input.value,
 						genre: activeGenre,
+						platform: activePlatform,
 						scrollY: Math.max(0, Math.round(window.scrollY)),
 						ts: Date.now(),
 					};
@@ -553,11 +603,18 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				return activeGenre;
 			};
 
+			const togglePlatform = (platformId) => {
+				activePlatform = activePlatform === platformId ? null : platformId;
+				updateClearButtonVisibility();
+				return activePlatform;
+			};
+
 			const runFilter = (force = false) => {
 				const query = normalize(input.value);
 				const genreKey = activeGenre ?? '';
+				const platformKey = activePlatform ?? '';
 				updateClearButtonVisibility();
-				if (!force && query === lastAppliedQuery && genreKey === lastAppliedGenre) {
+				if (!force && query === lastAppliedQuery && genreKey === lastAppliedGenre && platformKey === lastAppliedPlatform) {
 					const visibleCount = getVisibleEntries().length;
 					renderSuggestions(query, getVisibleEntries());
 					updateSummary(visibleCount);
@@ -566,13 +623,15 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 
 				lastAppliedQuery = query;
 				lastAppliedGenre = genreKey;
+				lastAppliedPlatform = platformKey;
 				let visibleCount = 0;
 				const matchingEntries = [];
 
 				for (const entry of movieIndex) {
 					const genreMatch = !activeGenre || entry.genres.has(activeGenre);
+					const platformMatch = !activePlatform || entry.platform === activePlatform;
 					const queryMatch = query.length === 0 || entry.searchable.includes(query);
-					const show = genreMatch && queryMatch;
+					const show = genreMatch && platformMatch && queryMatch;
 					if (entry.element.hidden === show) {
 						entry.element.hidden = !show;
 					}
@@ -593,9 +652,11 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 
 			const resetCatalog = (mode = 'catalog') => {
 				activeGenre = null;
+				activePlatform = null;
 				input.value = '';
 				hideSuggestions();
 				applyGenreUI();
+				applyPlatformUI();
 				updateClearButtonVisibility();
 				sessionStorage.removeItem(homeStateKey);
 				setReturnBehavior(null);
@@ -647,15 +708,21 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				}
 				if (typeof parsed.genre === 'string' && parsed.genre.length > 0) {
 					activeGenre = parsed.genre;
-					applyGenreUI();
 				}
+				if (typeof parsed.platform === 'string' && parsed.platform.length > 0) {
+					activePlatform = parsed.platform;
+				}
+				applyGenreUI();
+				applyPlatformUI();
 				updateClearButtonVisibility();
 
 				lastAppliedQuery = '';
 				lastAppliedGenre = '';
+				lastAppliedPlatform = '';
 				const mode =
 					((typeof parsed.query === 'string' && parsed.query.trim().length > 0) ||
-						Boolean(activeGenre))
+						Boolean(activeGenre) ||
+						Boolean(activePlatform))
 					? 'search'
 					: 'catalog';
 				const visibleCount = runFilter(true);
@@ -692,6 +759,16 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				}
 			};
 
+			const applyPlatformUI = () => {
+				for (const chip of platformChips) {
+					if (!(chip instanceof HTMLButtonElement)) continue;
+					const chipPlatform = chip.dataset.homePlatformId;
+					const isActive = Boolean(chipPlatform && chipPlatform === activePlatform);
+					chip.classList.toggle('is-active', isActive);
+					chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+				}
+			};
+
 			for (const chip of genreChips) {
 				if (!(chip instanceof HTMLButtonElement)) continue;
 				chip.addEventListener('click', () => {
@@ -709,7 +786,25 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				});
 			}
 
+			for (const chip of platformChips) {
+				if (!(chip instanceof HTMLButtonElement)) continue;
+				chip.addEventListener('click', () => {
+					const nextPlatform = chip.dataset.homePlatformId ?? null;
+					const isResetInteraction = activePlatform === nextPlatform;
+					togglePlatform(nextPlatform);
+					if (isResetInteraction) {
+						input.value = '';
+					}
+					applyPlatformUI();
+					showStatus(searchLoadingPhrases);
+					const visibleCount = runFilter(true);
+					syncStatusWithVisiblePosters('search', visibleCount);
+					persistHomeState();
+				});
+			}
+
 			applyGenreUI();
+			applyPlatformUI();
 			updateClearButtonVisibility();
 			input.addEventListener('input', () => {
 				scheduleFilter();
