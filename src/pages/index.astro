@@ -6,7 +6,7 @@ import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getMovies, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
 import { getPlatformFilterOptions } from '../lib/platforms';
-import { ABOUT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
@@ -18,6 +18,7 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<header class="site-header container">
+		<h1 class="u-visually-hidden">{SITE_NAME}: reseñas super cortas y honestas de películas</h1>
 		{
 			movies.length > 0 && (
 				<section
@@ -26,13 +27,6 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 					data-movie-search-root
 					aria-label="Buscar en el catálogo"
 				>
-					<div class="site-search-bar__meta">
-						<p class="site-search-bar__eyebrow">Buscar en el catálogo</p>
-						<p class="site-search-bar__copy">
-							Escribí un título, año, plataforma o rating y filtrá el videoclub al toque.
-						</p>
-						<p class="movie-search__summary" data-movie-search-summary>{movies.length} títulos publicados.</p>
-					</div>
 					<section class="movie-search movie-search--top">
 						<label for="movie-search-input" class="movie-search__label u-visually-hidden">
 							Buscar película
@@ -72,6 +66,23 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 							</div>
 						</div>
 					</section>
+					<a
+						class="site-header__donate"
+						href="https://cafecito.app/cineposta"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							class="site-header__donate-logo"
+							src={`${import.meta.env.BASE_URL}brand/cafecito-logo.svg`}
+							alt=""
+							aria-hidden="true"
+						/>
+						Invitá un cafecito
+					</a>
+					<p class="movie-search__summary u-visually-hidden" data-movie-search-summary>
+						{movies.length} títulos publicados.
+					</p>
 					<div class="site-search-bar__feedback">
 						<div
 							class="movie-search__status"
@@ -93,57 +104,6 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 				</section>
 			)
 		}
-		<div class="site-header__line">
-			<div class="site-header__brand-column">
-				<a class="site-header__brand" href={import.meta.env.BASE_URL} aria-label="Ir al inicio">
-					<img
-						class="site-header__logo"
-						src={`${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`}
-						alt="Cine Posta"
-					/>
-				</a>
-				<div class="site-header__copy">
-					<h1 class="site-header__tagline">{SITE_NAME}: reseñas super cortas y honestas de películas</h1>
-					<p class="site-header__rotating-copy">También nos encontrás buscando Cineposta, todo junto.</p>
-					<p class="site-header__rotating-copy" data-rotating-copy>
-						Sin humo, sin metaforas raras, sin chamuyo.
-					</p>
-				</div>
-			</div>
-			<div class="site-header__support">
-				<div class="site-header__support-card site-header__support-card--donate">
-					<div class="site-header__actions">
-						<a
-							class="site-header__donate"
-							href="https://cafecito.app/cineposta"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img
-								class="site-header__donate-logo"
-								src={`${import.meta.env.BASE_URL}brand/cafecito-logo.svg`}
-								alt=""
-								aria-hidden="true"
-							/>
-							Invitá un cafecito
-						</a>
-					</div>
-					<p class="site-header__donate-copy" data-donate-copy>Tu ayuda mantiene viva la data posta.</p>
-				</div>
-				<div class="site-header__support-card site-header__support-card--contact">
-					<a
-						class="site-header__contact-link"
-						href="mailto:yosoyvargas@hotmail.com?subject=Cine%20Posta%20-%20Contacto%20y%20Prensa"
-						aria-label="Enviar email de contacto o prensa"
-					>
-						Contacto / Prensa
-					</a>
-					<a class="site-header__contact-link" href={ABOUT_PATH} aria-label="Ir a la página Sobre Cine Posta">
-						Sobre Cine Posta
-					</a>
-				</div>
-			</div>
-		</div>
 	</header>
 
 	<main id="main-content" class="container home-catalog">
@@ -904,167 +864,3 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 	}
 </script>
 
-<script>
-	const rotatingCopyElement = document.querySelector('[data-rotating-copy]');
-	const donateCopyElement = document.querySelector('[data-donate-copy]');
-
-	const rotatingCopies = [
-		'Sin humo, sin metaforas raras, sin chamuyo.',
-		'En castellano normal. No en "critiques".',
-		'No te vendo una experiencia sensorial: te digo si zafa o no.',
-		'Directo a lo importante. Sin vueltas.',
-		'Es cine, no un parcial. Te la hago facil.',
-		'Lo bueno, lo flojo y listo. En dos renglones.',
-		'Si esta buena, te lo digo. Si no, tambien.',
-		'Sin verso academico. Con criterio.',
-		'Opinion corta, clara y sin maquillaje.',
-		'No hay humo: hay veredicto.',
-		'Poca vuelta, mucha data util.',
-		'Resena breve para decidir rapido.',
-		'Te ahorramos el chamuyo de festival.',
-		'Un vistazo y ya sabes si va con vos.',
-		'Corta y al pie, como debe ser.',
-		'Si no suma, no la vendemos.',
-		'Mas criterio, menos poesia rara.',
-		'No la estiramos: te contamos lo esencial.',
-		'Para elegir peli sin perder media hora.',
-		'Sin adjetivos inflados, con opinion real.',
-		'Te lo explicamos simple: rinde o no rinde.',
-		'No hay misterio: aca se puntua de frente.',
-		'Resena corta para gente ocupada.',
-		'Hablamos normal, como en la vereda.',
-		'Sin solemnidad: solo cine y criterio.',
-		'Resumen rapido, decision facil.',
-		'Una leida y ya estas.',
-		'Cero humo critico, cero spoiler.',
-		'Te decimos lo que importa, no relleno.',
-		'Opinion honesta, formato express.',
-		'Si esta inflada, aca baja a tierra.',
-		'Analisis corto, utilidad larga.',
-		'Nada de vueltas: veredicto claro.',
-		'Resenas para decidir, no para confundirte.',
-		'No la intelectualizamos al pedo.',
-		'Lo justo y necesario para elegir.',
-		'Mas claridad, menos pirueta.',
-		'Aca no hay firuletes, hay criterio.',
-		'Texto corto, señal clara.',
-		'Si no convence, se dice.',
-		'Si la rompe, tambien se dice.',
-		'Pensado para leer en un minuto.',
-		'Simple, directo y sin venderte nada.',
-		'No hacemos tesis: hacemos resenas utiles.',
-		'Lo esencial, en criollo.',
-		'Sin tecnicismos innecesarios.',
-		'Una mirada honesta y al hueso.',
-		'Te evitamos la decepcion con pocas palabras.',
-		'Sin humo de marketing, con opinion real.',
-		'Resena corta, decision inteligente.'
-	];
-
-	const donateCopies = [
-		'No seas raton.',
-		'Asi pago el hosting.',
-		'Un cafecito y sale otra resena.',
-		'Con esto mantenemos el motor prendido.',
-		'Una monedita y seguimos meta cine.',
-		'Donar tambien cuenta como acto artistico.',
-		'Un cafecito y no lloro mirando la factura.',
-		'Si te sirvio, tiranos una ficha.',
-		'La web no se paga con aplausos.',
-		'Un cafecito y seguimos sin publicidad falopa.',
-		'Apoya el proyecto y ganale al algoritmo.',
-		'Con tu ayuda no cerramos por balance.',
-		'Pone uno y te lo agradece todo el equipo (yo).',
-		'Un cafecito y seguimos full servicio.',
-		'No te digo socio, pero casi.',
-		'Tu cafecito financia criterio.',
-		'Acá no vendemos humo, pero si aceptamos cafes.',
-		'Un aporte y seguimos spoileando menos.',
-		'Pone un cafecito, dale, no duele.',
-		'Esto funciona gracias a gente piola como vos.',
-		'Un cafecito = una sonrisa del admin.',
-		'Cada aporte evita una crisis existencial.',
-		'Apoya el caos organizado de este sitio.',
-		'Con un cafecito se vuelve mas rapida la critica.',
-		'Tu ayuda mantiene viva la data posta.',
-		'No seas timido, se recibe carino en pesos.',
-		'Un cafecito y prometemos seguir sinceros.',
-		'Invita uno y desbloqueas karma cinefilo.',
-		'Ayuda minima, alegria maxima.',
-		'Donar hoy, reseñas manana.',
-		'Tu aporte va directo al bien comun cinefilo.',
-		'Un cafecito para que no nos gane la inflacion.',
-		'Si te ahorramos una mala peli, se festeja con cafe.',
-		'Pone un cafecito y seguimos en linea.',
-		'Con tu aporte no cobramos entrada.',
-		'Un cafecito y seguimos bancando el proyecto.',
-		'No pedimos mucho, solo un empujoncito.',
-		'Donar es opcional, pero queda fachero.',
-		'Apoya esta noble causa anti chamuyo.',
-		'Con un cafecito hacemos magia humilde.',
-		'Gracias por bancar este rincon cinéfilo.',
-		'Invita un cafe y te queremos un poquito mas.',
-		'Tu aporte paga bytes y paciencia.',
-		'Un cafecito para que no se caiga nada.',
-		'Colabora y seguimos recomendando joyitas.',
-		'Sin tu ayuda, el server se pone dramatico.',
-		'Un cafecito y cerramos trato.',
-		'Pone uno y quedamos a mano con el universo.',
-		'Tu cafe sostiene el aguante digital.',
-		'Dona tranquilo: no mordemos.'
-	];
-
-	const shuffleOrder = (length) => {
-		const order = Array.from({ length }, (_, index) => index);
-		for (let index = order.length - 1; index > 0; index -= 1) {
-			const randomIndex = Math.floor(Math.random() * (index + 1));
-			[order[index], order[randomIndex]] = [order[randomIndex], order[index]];
-		}
-		return order;
-	};
-
-	const isValidState = (state, length) => {
-		if (!state || typeof state !== 'object') return false;
-		if (!Array.isArray(state.order) || state.order.length !== length) return false;
-		if (!Number.isInteger(state.next) || state.next < 0 || state.next >= length) return false;
-		const unique = new Set(state.order);
-		if (unique.size !== length) return false;
-		return state.order.every((value) => Number.isInteger(value) && value >= 0 && value < length);
-	};
-
-	const applyRotatingCopy = (element, copies, storageKey) => {
-		if (!(element instanceof HTMLElement) || copies.length === 0) return;
-
-		let state = null;
-
-		try {
-			const rawState = localStorage.getItem(storageKey);
-			if (rawState) {
-				state = JSON.parse(rawState);
-			}
-		} catch {
-			state = null;
-		}
-
-		if (!isValidState(state, copies.length)) {
-			state = { order: shuffleOrder(copies.length), next: 0 };
-		}
-
-		const selected = state.order[state.next];
-		element.textContent = copies[selected];
-
-		state.next += 1;
-		if (state.next >= copies.length) {
-			state = { order: shuffleOrder(copies.length), next: 0 };
-		}
-
-		try {
-			localStorage.setItem(storageKey, JSON.stringify(state));
-		} catch {
-			// Ignore storage errors (private mode, blocked storage, etc.).
-		}
-	};
-
-	applyRotatingCopy(rotatingCopyElement, rotatingCopies, 'cineposta:rotating-copy-state:v1');
-	applyRotatingCopy(donateCopyElement, donateCopies, 'cineposta:donate-copy-state:v1');
-</script>
