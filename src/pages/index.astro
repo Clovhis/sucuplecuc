@@ -14,6 +14,7 @@ const platformOptions = getPlatformFilterOptions(movies);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y honestas de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
+const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`;
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
@@ -27,6 +28,14 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 					data-movie-search-root
 					aria-label="Buscar en el catálogo"
 				>
+					<a class="site-header__brand" href="/" aria-label="Cine Posta: reiniciar filtros y volver al inicio">
+						<img
+							class="site-header__brand-logo"
+							src={siteBrandLogo}
+							alt="Cine Posta"
+							decoding="async"
+						/>
+					</a>
 					<section class="movie-search movie-search--top">
 						<label for="movie-search-input" class="movie-search__label u-visually-hidden">
 							Buscar película
@@ -121,31 +130,13 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 						<div class="catalog-shell__intro">
 							<p class="catalog-shell__kicker">Explorá el catálogo</p>
 							<p class="catalog-shell__copy">
-								Reseñas cortas y al hueso para decidir rápido qué ver.
+								Cine Posta junta reseñas cortas y honestas para ayudarte a decidir rápido qué película ver.
 							</p>
 							<p class="catalog-shell__copy">
-								Filtrá por género o plataforma, o buscá directo. Cada ficha te conecta con películas, actores y directores relacionados.
+								Arrancá por plataforma, afiná por género o buscá directo. Cada ficha te conecta con películas, actores y directores relacionados.
 							</p>
 						</div>
 						<div class="catalog-shell__filters">
-							<section class="home-genre-filter" data-home-genre-filter>
-								<p class="home-genre-filter__label">Elegí género</p>
-								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-									{
-										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-											<button
-												type="button"
-												class="home-genre-filter__chip"
-												data-home-genre-chip
-												data-home-genre-id={genre.id}
-												aria-pressed="false"
-											>
-												{genre.label}
-											</button>
-										))
-									}
-								</div>
-							</section>
 							{
 								platformOptions.length > 0 && (
 									<section class="home-platform-filter" data-home-platform-filter>
@@ -174,6 +165,24 @@ const structuredData = createHomeStructuredData(movies, pageTitle, pageDescripti
 									</section>
 								)
 							}
+							<section class="home-genre-filter" data-home-genre-filter>
+								<p class="home-genre-filter__label">Elegí género</p>
+								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+									{
+										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+											<button
+												type="button"
+												class="home-genre-filter__chip"
+												data-home-genre-chip
+												data-home-genre-id={genre.id}
+												aria-pressed="false"
+											>
+												{genre.label}
+											</button>
+										))
+									}
+								</div>
+							</section>
 						</div>
 					</section>
 

@@ -6,6 +6,7 @@ export interface CinemaNewsItem {
 	publishedAt: string;
 	publishedLabel: string;
 	category?: string;
+	imageUrl?: string;
 }
 
 interface CinemaNewsFeed {
@@ -86,6 +87,8 @@ const FALLBACK_ITEMS: Omit<CinemaNewsItem, 'publishedLabel'>[] = [
 		link: 'https://www.escribiendocine.com/noticias/2026/03/15/21599-todos-los-ganadores-de-los-premios-oscar-2026',
 		source: 'EscribiendoCine',
 		publishedAt: '2026-03-16T02:02:01Z',
+		imageUrl:
+			'https://escribiendocine-s3.cdn.net.ar/s3i233/2026/03/escribiendocine/images/02/51/19/2511930_07ac4cf2417960184050e4e0dcc0e0a3a0b14a960fd13bada83dbb790853a9e9/sm.jpg',
 	},
 	{
 		title: 'Hoppers: Saltar de una conciencia humana a una animal',
@@ -93,6 +96,7 @@ const FALLBACK_ITEMS: Omit<CinemaNewsItem, 'publishedLabel'>[] = [
 		link: 'https://www.cinesargentinos.com.ar/noticia/7101-hoppers-saltar-de-una-conciencia-humana-a-una-animal',
 		source: 'Cines Argentinos',
 		publishedAt: '2026-03-03T10:30:00-03:00',
+		imageUrl: 'https://www.cinesargentinos.com.ar/static/archivos/72950',
 	},
 	{
 		title: 'Todos los ganadores de los Razzie Awards 2026 a lo peor del año',
@@ -100,6 +104,8 @@ const FALLBACK_ITEMS: Omit<CinemaNewsItem, 'publishedLabel'>[] = [
 		link: 'https://www.escribiendocine.com/noticias/2026/03/14/21592-todos-los-ganadores-de-los-razzie-awards-2026-a-lo-peor-del-ano',
 		source: 'EscribiendoCine',
 		publishedAt: '2026-03-14T14:08:03Z',
+		imageUrl:
+			'https://escribiendocine-s3.cdn.net.ar/s3i233/2026/03/escribiendocine/images/02/51/04/2510405_9ac6ad5924cd6d53dff009f52b8b72eb90ee95b54c20d0991531360036611c37/sm.jpg',
 	},
 ];
 
@@ -191,10 +197,11 @@ export async function getCinemaNews(): Promise<CinemaNewsResult> {
 
 	const items = dedupeAndSortItems(collectedItems).slice(0, MAX_NEWS_ITEMS);
 	if (items.length > 0) {
+		const enrichedItems = await enrichItemsWithImages(items);
 		return {
-			items,
+			items: enrichedItems,
 			sourceLabel: 'medios argentinos',
-			updatedLabel: formatUpdatedLabel(items[0]?.publishedAt ?? new Date().toISOString()),
+			updatedLabel: formatUpdatedLabel(enrichedItems[0]?.publishedAt ?? new Date().toISOString()),
 			isFallback: false,
 		};
 	}
@@ -228,6 +235,7 @@ function parseFeedItem(block: string, source: string): CinemaNewsItem | null {
 	const description = extractTag(block, 'description') || extractTag(block, 'content:encoded');
 	const publishedAt = normalizePublishedAt(cleanText(extractTag(block, 'pubDate')));
 	const summary = summarizeDescription(description);
+	const imageUrl = extractImageUrl(block, link);
 	const haystack = `${title} ${summary}`;
 
 	if (!title || !link || !publishedAt || summary.length < 30) {
@@ -254,6 +262,7 @@ function parseFeedItem(block: string, source: string): CinemaNewsItem | null {
 		publishedAt,
 		publishedLabel: formatPublishedLabel(publishedAt),
 		category,
+		imageUrl,
 	};
 }
 
@@ -280,16 +289,85 @@ function dedupeAndSortItems(items: CinemaNewsItem[]) {
 		});
 }
 
+async function enrichItemsWithImages(items: CinemaNewsItem[]) {
+	return Promise.all(
+		items.map(async (item) => {
+			if (item.imageUrl) {
+				return item;
+			}
+
+			const imageUrl = await fetchArticleImage(item.link);
+			return imageUrl ? { ...item, imageUrl } : item;
+		}),
+	);
+}
+
 function extractTag(input: string, tag: string) {
 	const safeTag = tag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 	const match = input.match(new RegExp(`<${safeTag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${safeTag}>`, 'i'));
 	return match?.[1] ?? '';
 }
 
+function extractAttribute(input: string, tagName: string, attributeName: string, requiresImageType = false) {
+	const safeTagName = tagName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const safeAttributeName = attributeName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const tagPattern = new RegExp(`<${safeTagName}\\b([^>]*)\\/?>`, 'gi');
+
+	for (const match of input.matchAll(tagPattern)) {
+		const attributes = match[1] ?? '';
+		if (
+			requiresImageType &&
+			!/\btype\s*=\s*['"][^'"]*image\//i.test(attributes)
+		) {
+			continue;
+		}
+
+		const attributeMatch = attributes.match(
+			new RegExp(`${safeAttributeName}\\s*=\\s*['"]([^'"]+)['"]`, 'i'),
+		);
+		if (attributeMatch?.[1]) {
+			return attributeMatch[1];
+		}
+	}
+
+	return '';
+}
+
+function extractImageUrl(block: string, articleUrl: string) {
+	const candidates = [
+		extractAttribute(block, 'media:content', 'url'),
+		extractAttribute(block, 'media:thumbnail', 'url'),
+		extractAttribute(block, 'enclosure', 'url', true),
+		extractAttribute(block, 'img', 'src'),
+	];
+
+	for (const candidate of candidates) {
+		const normalized = normalizeImageUrl(candidate, articleUrl);
+		if (normalized) {
+			return normalized;
+		}
+	}
+
+	return '';
+}
+
 function cleanText(input: string) {
 	return decodeHtmlEntities(stripTags(stripCdata(input)))
 		.replace(/\s+/g, ' ')
 		.trim();
+}
+
+function normalizeImageUrl(input: string, articleUrl: string) {
+	const decoded = decodeHtmlEntities(stripCdata(input)).trim();
+	if (!decoded) {
+		return '';
+	}
+
+	try {
+		return new URL(decoded, articleUrl).toString();
+	} catch {
+		return '';
+	}
 }
 
 function summarizeDescription(input: string) {
@@ -332,6 +410,55 @@ function decodeHtmlEntities(input: string) {
 			return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : '';
 		})
 		.replace(/&([a-zA-Z][a-zA-Z0-9]+);/g, (fullMatch, entity) => HTML_ENTITIES[entity] ?? fullMatch);
+}
+
+async function fetchArticleImage(articleUrl: string) {
+	try {
+		const response = await fetch(articleUrl, {
+			headers: fetchHeaders,
+			redirect: 'follow',
+		});
+		if (!response.ok) {
+			throw new Error(`Article responded with ${response.status}`);
+		}
+
+		const html = await response.text();
+		const candidates = [
+			extractMetaContent(html, 'property', 'og:image'),
+			extractMetaContent(html, 'name', 'twitter:image'),
+			extractMetaContent(html, 'name', 'twitter:image:src'),
+		];
+
+		for (const candidate of candidates) {
+			const normalized = normalizeImageUrl(candidate, articleUrl);
+			if (normalized) {
+				return normalized;
+			}
+		}
+	} catch (error) {
+		console.warn(`[cinemaNews] Failed to extract article image for ${articleUrl}:`, error);
+	}
+
+	return '';
+}
+
+function extractMetaContent(input: string, key: 'property' | 'name', value: string) {
+	const metaPattern = /<meta\b[^>]*>/gi;
+
+	for (const match of input.matchAll(metaPattern)) {
+		const tag = match[0] ?? '';
+		const normalizedTag = tag.toLowerCase();
+		if (!normalizedTag.includes(`${key.toLowerCase()}=`) || !normalizedTag.includes(value.toLowerCase())) {
+			continue;
+		}
+
+		const contentMatch = tag.match(/\bcontent\s*=\s*['"]([^'"]+)['"]/i);
+		if (contentMatch?.[1]) {
+			return contentMatch[1];
+		}
+	}
+
+	return '';
 }
 
 function trimText(input: string, maxLength: number) {
