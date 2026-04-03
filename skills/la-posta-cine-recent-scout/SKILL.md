@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-recent-scout
-description: Find one relevant recent movie for La Posta Cine by using the current date, browsing recent theatrical and streaming releases, verifying the movie is not already in `docs/movie-catalog-reference.md` or `src/data/movies`, and then chaining the existing add + audit workflows. Use when Codex needs to scout a fresh movie to publish from cinema or streaming catalogs, especially for prompts like "busca una pelicula reciente para subir", "releva estrenos", "fijate si hay alguna pelicula nueva para cargar", or "encontra algo reciente que no este en el sitio".
+description: Find one relevant recent movie for La Posta Cine by using the current date, browsing recent theatrical and streaming releases, verifying the movie is not already in `docs/movie-catalog-reference.md` or `src/data/movies`, and then chaining the existing add + cartelera revalidation + audit workflows. Use when Codex needs to scout a fresh movie to publish from cinema or streaming catalogs, especially for prompts like "busca una pelicula reciente para subir", "releva estrenos", "fijate si hay alguna pelicula nueva para cargar", or "encontra algo reciente que no este en el sitio".
 ---
 
 # la-posta-cine-recent-scout
@@ -12,7 +12,8 @@ This skill does not replace the existing load and audit skills. Its job is to:
 1. detect a recent candidate using live web research
 2. reject stale or duplicate titles
 3. hand off the winner to `la-posta-cine-add-movie`
-4. hand off the resulting candidate file(s) to `la-posta-cine-auditor`
+4. if the resulting movie ends in `Cine`, hand off to `la-posta-cine-cartelera-revalidator`
+5. hand off the resulting candidate file(s) to `la-posta-cine-auditor`
 
 ## Workspace rule
 
@@ -23,6 +24,7 @@ Use these repo artifacts first:
 - `docs/movie-catalog-reference.md`
 - `src/data/movies/*.json`
 - `skills/la-posta-cine-add-movie/SKILL.md`
+- `skills/la-posta-cine-cartelera-revalidator/SKILL.md`
 - `skills/la-posta-cine-auditor/SKILL.md`
 - `skills/la-posta-cine-recent-scout/scripts/check_recent_candidate.mjs`
 
@@ -136,6 +138,18 @@ Rules:
 - Do not pass a duplicate candidate into the add workflow.
 - Do not hand off without exact release-date evidence unless every trustworthy source is still year-only.
 
+## Handoff to cartelera revalidation workflow
+
+If the chosen candidate is theatrical or the add step leaves `releasePlatform: "Cine"`, immediately use `la-posta-cine-cartelera-revalidator` before the auditor.
+
+Preferred form:
+
+```text
+Usa $la-posta-cine-cartelera-revalidator para confirmar la vigencia de cartelera de la pelicula recien agregada y corregir la plataforma si ya no sigue en cines argentinos.
+```
+
+If the add step resolves the movie directly to a non-theatrical platform, skip this handoff.
+
 ## Handoff to audit workflow
 
 After the add workflow creates or updates candidate movie files, immediately use `la-posta-cine-auditor`.
@@ -168,5 +182,6 @@ Return:
 2. the shortlist you considered
 3. duplicate/freshness guard result for the chosen title
 4. confirmation that `la-posta-cine-add-movie` was triggered
-5. confirmation that `la-posta-cine-auditor` was triggered
+5. confirmation that `la-posta-cine-cartelera-revalidator` was triggered when applicable
+6. confirmation that `la-posta-cine-auditor` was triggered
 6. final status: added and audited, or `No hay nada digno para subir a cineposta`

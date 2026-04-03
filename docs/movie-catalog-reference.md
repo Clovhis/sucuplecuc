@@ -2,42 +2,43 @@
 
 Generado automaticamente el 2026-04-03. Fuente: src/data/movies/*.json
 
-Total de peliculas: 668
+Total de peliculas: 670
 
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
-| 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Cine |
+| 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Stremio |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Stremio |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Cine |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
-| 2026 | Crime 101 | crime-101-2026 | Crimen | Cine |
+| 2026 | Crime 101 | crime-101-2026 | Crimen | Stremio |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine |
-| 2026 | Dracula | dracula-2026 | Terror | Cine |
+| 2026 | Dracula | dracula-2026 | Terror | Stremio |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix |
-| 2026 | GOAT | goat-2026 | Animacion | Cine |
-| 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Cine |
+| 2026 | GOAT | goat-2026 | Animacion | Stremio |
+| 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Stremio |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Cine |
-| 2026 | Iron Lung | iron-lung-2026 | Terror | Cine |
+| 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix |
-| 2026 | Mercy | mercy-2026 | Accion | Cine |
-| 2026 | Othello | othello-2026 | Drama | Cine |
+| 2026 | Mercy | mercy-2026 | Accion | Stremio |
+| 2026 | Othello | othello-2026 | Drama | Stremio |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix |
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video |
-| 2026 | Primate | primate-2026 | Terror | Cine |
-| 2026 | Protector | protector-2026 | Accion | Cine |
-| 2026 | Psycho Killer | psycho-killer-2026 | Terror | Cine |
-| 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Cine |
+| 2026 | Primate | primate-2026 | Terror | Stremio |
+| 2026 | Protector | protector-2026 | Accion | Stremio |
+| 2026 | Proyecto Fin Del Mundo | project-hail-mary-2026 | Ciencia ficcion | Cine |
+| 2026 | Psycho Killer | psycho-killer-2026 | Terror | Stremio |
+| 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Stremio |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Cine |
-| 2026 | Send Help | send-help-2026 | Thriller | Cine |
-| 2026 | Shelter | shelter-2026 | Thriller | Cine |
-| 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Cine |
+| 2026 | Send Help | send-help-2026 | Thriller | Stremio |
+| 2026 | Shelter | shelter-2026 | Thriller | Stremio |
+| 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Stremio |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | Cine |
-| 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Cine |
-| 2026 | The Bride! | the-bride-2026 | Fantasia | Cine |
-| 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Cine |
-| 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Cine |
-| 2026 | Whistle | whistle-2026 | Terror | Cine |
+| 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Stremio |
+| 2026 | The Bride! | the-bride-2026 | Fantasia | Stremio |
+| 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Stremio |
+| 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Stremio |
+| 2026 | Whistle | whistle-2026 | Terror | Stremio |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Stremio |
@@ -46,12 +47,12 @@ Total de peliculas: 668
 | 2025 | Belén | belen-2025 | Drama | Prime Video |
 | 2025 | Black Bag | black-bag-2025 | Thriller | HBO Max |
 | 2025 | Captain America: Brave New World | captain-america-brave-new-world-2025 | Accion | Disney Plus |
-| 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Cine |
+| 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Stremio |
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Stremio |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV |
-| 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Cine |
+| 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Stremio |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus |
 | 2025 | F1: The Movie | f1-the-movie-2025 | Drama | Apple TV |
 | 2025 | Fear Street: Prom Queen | fear-street-prom-queen-2025 | Terror | Netflix |
@@ -74,10 +75,11 @@ Total de peliculas: 668
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Stremio |
 | 2025 | Mountainhead | mountainhead-2025 | Drama | HBO Max |
 | 2025 | Novocaine | novocaine-2025 | Accion | Netflix |
+| 2025 | Nuremberg | nuremberg-2025 | Thriller | Cine |
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max |
 | 2025 | Opus | opus-2025 | Thriller | HBO Max |
 | 2025 | Otro viernes de locos | otro-viernes-de-locos-2025 | Comedia | Disney Plus |
-| 2025 | Scarlet | scarlet-2025 | Anime | Cine |
+| 2025 | Scarlet | scarlet-2025 | Anime | Stremio |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus |
 | 2025 | Superman | superman-2025 | Accion | HBO Max |
@@ -86,9 +88,9 @@ Total de peliculas: 668
 | 2025 | The Electric State | the-electric-state-2025 | Ciencia ficcion | Netflix |
 | 2025 | The Fantastic Four: First Steps | the-fantastic-four-first-steps-2025 | Accion | Disney Plus |
 | 2025 | The Gorge | the-gorge-2025 | Ciencia ficcion | Apple TV |
-| 2025 | The Housemaid (La empleada) | the-housemaid-2025 | Thriller | Cine |
+| 2025 | The Housemaid (La empleada) | the-housemaid-2025 | Thriller | Apple TV |
 | 2025 | The Monkey | the-monkey-2025 | Terror | Prime Video |
-| 2025 | The Plague | the-plague-2025 | Thriller | Cine |
+| 2025 | The Plague | the-plague-2025 | Thriller | Stremio |
 | 2025 | The Woman in the Yard | the-woman-in-the-yard-2025 | Terror | HBO Max |
 | 2025 | Thunderbolts* | thunderbolts-2025 | Accion | Disney Plus |
 | 2025 | Together: Juntos Hasta La Muerte | together-juntos-hasta-la-muerte-2025 | Terror | Prime Video |

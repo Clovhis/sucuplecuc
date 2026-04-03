@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-auditor
-description: Audit recently added La Posta Cine movie entries after `la-posta-cine-add-movie` or any bulk/backfill load. Use when Codex needs to verify newly added `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, trailer validity, review quality, awards structure, platform labels, catalog sync, and safe diff scope before or after publishing.
+description: Audit recently added or revalidated La Posta Cine movie entries after `la-posta-cine-add-movie`, `la-posta-cine-cartelera-revalidator`, or any bulk/backfill load. Use when Codex needs to verify newly added or platform-adjusted `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, trailer validity, review quality, awards structure, platform labels, catalog sync, and safe diff scope before or after publishing.
 ---
 
 # la-posta-cine-auditor
@@ -9,9 +9,11 @@ Audit a recent movie batch without touching site code.
 
 This skill must always execute the bundled audit script. Manual eyeballing is not enough, even if the only requested check is verdict labels or score/badge tone.
 
+If the branch still contains fresh `Cine` claims that have not yet been checked against current cartelera, invoke `la-posta-cine-cartelera-revalidator` first and then return to this skill.
+
 ## Scope
 
-Use this skill after a movie add/backfill workflow, especially when the branch contains new files under `src/data/movies`.
+Use this skill after a movie add/backfill/revalidation workflow, especially when the branch contains new files under `src/data/movies` or platform changes from `Cine` to another label.
 
 Allowed fix paths:
 

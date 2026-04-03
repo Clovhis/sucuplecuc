@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, run build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -120,6 +120,18 @@ Rules:
 - After creating or updating movie entries (single or bulk), always refresh `docs/movie-catalog-reference.md` in the same change set.
 - Keep the catalog sorted and include at least: `year`, `title`, `slug`, `category`, `releasePlatform`.
 
+## Workflow chaining
+
+This skill is not the last step when a movie ends in `Cine`.
+
+Mandatory chain:
+
+1. add/update the movie file
+2. if the final `releasePlatform` is `Cine`, immediately use `la-posta-cine-cartelera-revalidator`
+3. after that, use `la-posta-cine-auditor`
+
+If the movie resolves to a non-theatrical platform from the start, skip the cartelera revalidation and go straight to the auditor.
+
 ## Metadata lookup rules
 
 Find trustworthy metadata:
@@ -230,7 +242,7 @@ People pool policy (mandatory):
 Platform policy for Argentina (mandatory):
 
 - Always resolve `releasePlatform` for Argentine audience (`AR`) using trustworthy availability sources (prefer JustWatch `ar` pages and/or official platform pages).
-- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`, `Crunchyroll`.
+- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`.
 - Mandatory resolver flow (do not skip):
   1. Search availability for exact movie + year in AR.
   2. Read only AR offers and identify `FLATRATE` subscription availability first.
@@ -240,10 +252,11 @@ Platform policy for Argentina (mandatory):
      - `Amazon Prime Video` or `Prime Video` -> `Prime Video`
      - `Apple TV Plus` or `Apple TV+` -> `Apple TV`
      - `Netflix` -> `Netflix`
-     - `Crunchyroll` -> `Crunchyroll`
+- `Crunchyroll` -> `Crunchyroll`
   4. If at least one mapped `FLATRATE` provider exists, use that mapped label (never `Stremio` in this case).
   5. If there is no mapped `FLATRATE` but AR indicates cinema-only availability, set `releasePlatform: "Cine"`.
   6. If AR availability exists only in providers outside allowlist, or AR has no confirmed availability, set `releasePlatform: "Stremio"`.
+- If `releasePlatform` ends in `Cine`, do not trust that label as final until `la-posta-cine-cartelera-revalidator` confirms the movie is still in current Argentine cartelera.
 - Forbidden shortcuts:
   - Do not assign `Stremio` by default without AR lookup attempt.
   - Do not copy platform from another movie without validating title/year.
@@ -407,7 +420,7 @@ Set premiere fields only when requested or confidently confirmed:
 
 - `isPremiere: true`
 - `premiereLabel: "ESTRENO"`
-- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Apple TV`, `Cine`, `Prime Video`, `Disney Plus`, `Crunchyroll`) when reliable for AR
+- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`) when reliable for AR
 
 If not confirmed, keep:
 
@@ -427,6 +440,12 @@ npm run build
 ```
 
 If build fails, abort. Do not edit site code.
+
+If the movie still claims `Cine`, run the chained revalidation step before final diff/commit:
+
+```text
+Usa $la-posta-cine-cartelera-revalidator para confirmar si <title> sigue realmente en cartelera argentina o si corresponde otra plataforma / Stremio.
+```
 
 2. File-scope validation:
 
@@ -451,7 +470,7 @@ If catalog was refreshed:
 git diff -- docs/movie-catalog-reference.md
 ```
 
-Only then commit and push:
+After the required revalidation/audit chain, only then commit and push:
 
 ```bash
 git add src/data/movies/<slug>.json src/data/people.json public/people docs/movie-catalog-reference.md
