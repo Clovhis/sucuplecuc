@@ -1,0 +1,118 @@
+---
+interface Props {
+	platform?: string | null;
+	className?: string;
+	mode?: 'chip' | 'tile';
+}
+
+const { platform, className = '', mode = 'chip' } = Astro.props as Props;
+const normalizedPlatform = String(platform ?? '')
+	.trim()
+	.toLowerCase()
+	.normalize('NFD')
+	.replace(/[\u0300-\u036f]/g, '');
+
+type PlatformVariant =
+	| 'default'
+	| 'cine'
+	| 'netflix'
+	| 'hbo-max'
+	| 'disney-plus'
+	| 'prime-video'
+	| 'apple-tv'
+	| 'crunchyroll'
+	| 'stremio';
+
+function getPlatformVariant(value: string): PlatformVariant {
+	switch (value) {
+		case 'cine':
+			return 'cine';
+		case 'netflix':
+			return 'netflix';
+		case 'hbo max':
+			return 'hbo-max';
+		case 'disney plus':
+			return 'disney-plus';
+		case 'prime video':
+			return 'prime-video';
+		case 'apple tv':
+			return 'apple-tv';
+		case 'crunchyroll':
+			return 'crunchyroll';
+		case 'stremio':
+			return 'stremio';
+		default:
+			return 'default';
+	}
+}
+
+const variant = getPlatformVariant(normalizedPlatform);
+const platformAssets = {
+	netflix: {
+		src: '/brand/platforms/netflix.svg',
+		wide: true,
+	},
+	'hbo-max': {
+		src: '/brand/platforms/hbo-max.svg',
+		wide: true,
+	},
+	'disney-plus': {
+		src: '/brand/platforms/disney-plus.svg',
+		wide: true,
+	},
+	'prime-video': {
+		src: '/brand/platforms/prime-video.svg',
+		wide: true,
+	},
+	'apple-tv': {
+		src: '/brand/platforms/apple-tv.svg',
+		wide: true,
+	},
+	crunchyroll: {
+		src: '/brand/platforms/crunchyroll.svg',
+		wide: true,
+	},
+	stremio: {
+		src: '/brand/platforms/stremio-wordmark.png',
+		wide: true,
+	},
+} as const satisfies Partial<Record<Exclude<PlatformVariant, 'default'>, { src: string; wide?: boolean }>>;
+
+const platformAsset = variant !== 'default' ? platformAssets[variant] : null;
+const cineLabel = 'En Cines';
+const isKnownPlatform = Boolean(platformAsset);
+
+const rootClasses =
+	mode === 'tile'
+		? isKnownPlatform
+			? ['platform-mark', 'platform-mark--tile', `platform-chip--${variant}`, className]
+			: ['platform-mark', 'platform-mark--tile', className]
+		: isKnownPlatform
+			? ['platform-chip', 'platform-chip--brand', `platform-chip--${variant}`, className]
+			: ['platform-chip', className];
+---
+
+{
+	platform && (
+		<span class:list={rootClasses} aria-label={isKnownPlatform ? `Plataforma: ${platform}` : undefined}>
+			{
+				variant === 'cine' ? (
+					<span class="platform-chip__cine-label">{cineLabel}</span>
+				) : isKnownPlatform ? (
+					<img
+						class:list={['platform-chip__logo', platformAsset?.wide && 'platform-chip__logo--wide']}
+						src={platformAsset!.src}
+						alt=""
+						decoding="async"
+						loading="lazy"
+					/>
+				) : mode === 'tile' ? (
+					<span class="platform-mark__label">{platform}</span>
+				) : (
+					<span>{platform}</span>
+				)
+			}
+			{isKnownPlatform && <span class="u-visually-hidden">{platform}</span>}
+		</span>
+	)
+}

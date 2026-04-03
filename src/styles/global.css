@@ -994,15 +994,16 @@ address.site-header__support-card {
 	z-index: 1;
 }
 
-.movie-card--thumbs-up {
+.movie-card--badge--recomendada {
 	--card-accent: rgba(49, 179, 109, 0.85);
 }
 
-.movie-card--meh {
+.movie-card--badge--zafa {
 	--card-accent: rgba(243, 188, 63, 0.82);
 }
 
-.movie-card--thumbs-down {
+.movie-card--badge--no_recomendada,
+.movie-card--badge--basura_atomica {
 	--card-accent: rgba(236, 110, 89, 0.84);
 }
 
@@ -1094,8 +1095,7 @@ address.site-header__support-card {
 .movie-card__meta {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
-	flex-wrap: wrap;
+	gap: 0.35rem;
 }
 
 .movie-card__footer {
@@ -1104,6 +1104,7 @@ address.site-header__support-card {
 	grid-template-columns: minmax(0, 1fr) auto;
 	grid-template-rows: auto auto;
 	gap: 0.5rem 0.7rem;
+	align-items: center;
 }
 
 .movie-card__cta {
@@ -1114,47 +1115,13 @@ address.site-header__support-card {
 	text-transform: uppercase;
 }
 
-.movie-card__glyph {
+.movie-card__platform-mark {
 	grid-column: 2;
 	grid-row: 1 / span 2;
-	width: 54px;
-	height: 54px;
-	border-radius: 12px;
-	border: 1px solid rgba(147, 160, 184, 0.4);
-	background: rgba(147, 160, 184, 0.08);
-	color: #9ea9bf;
-	display: grid;
-	place-items: center;
-	align-self: end;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
-}
-
-.movie-card__glyph svg {
-	width: 34px;
-	height: 34px;
-	fill: none;
-	stroke: currentColor;
-	stroke-width: 1.9;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-}
-
-.movie-card__glyph--thumbs-up {
-	border-color: rgba(49, 179, 109, 0.5);
-	background: rgba(49, 179, 109, 0.12);
-	color: #7fe2ae;
-}
-
-.movie-card__glyph--meh {
-	border-color: rgba(243, 188, 63, 0.52);
-	background: rgba(243, 188, 63, 0.14);
-	color: #f7d481;
-}
-
-.movie-card__glyph--thumbs-down {
-	border-color: rgba(236, 110, 89, 0.5);
-	background: rgba(236, 110, 89, 0.12);
-	color: #f0a295;
+	width: 76px;
+	height: 58px;
+	align-self: center;
+	justify-self: end;
 }
 
 .badge {
@@ -1195,7 +1162,9 @@ address.site-header__support-card {
 .platform-chip {
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	font-size: 0.72rem;
+	line-height: 1;
 	padding: 0.2rem 0.52rem;
 	border-radius: 999px;
 	background: rgba(117, 153, 255, 0.12);
@@ -1203,6 +1172,164 @@ address.site-header__support-card {
 	color: #b9c9ff;
 	text-transform: uppercase;
 	letter-spacing: 0.06em;
+}
+
+.platform-chip--brand {
+	--platform-chip-logo-width: auto;
+	--platform-chip-logo-max-height: 0.98rem;
+	--platform-tile-logo-width: auto;
+	--platform-tile-logo-max-height: 1.42rem;
+	padding: 0.28rem 0.6rem;
+	background: rgba(255, 255, 255, 0.04);
+	border-color: rgba(255, 255, 255, 0.12);
+	text-transform: none;
+	letter-spacing: 0;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.platform-chip__logo {
+	display: block;
+	width: var(--platform-chip-logo-width);
+	max-width: 100%;
+	height: auto;
+	max-height: var(--platform-chip-logo-max-height);
+	flex: 0 0 auto;
+	object-fit: contain;
+}
+
+.platform-chip__logo--wide {
+	width: var(--platform-chip-logo-width);
+}
+
+.platform-chip__cine-label {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.platform-mark {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.platform-mark--tile {
+	width: 100%;
+	height: 100%;
+	padding: 0.45rem 0.5rem;
+	border-radius: 12px;
+	border: 1px solid rgba(147, 160, 184, 0.26);
+	background: rgba(147, 160, 184, 0.08);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.platform-mark--tile .platform-chip__logo {
+	width: var(--platform-tile-logo-width, var(--platform-chip-logo-width));
+	max-width: 100%;
+	height: auto;
+	max-height: var(--platform-tile-logo-max-height);
+}
+
+.platform-mark--tile .platform-chip__logo--wide {
+	width: var(--platform-tile-logo-width, var(--platform-chip-logo-width));
+}
+
+.platform-mark__label {
+	font-size: 0.68rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #d8e3fb;
+}
+
+.platform-chip--cine {
+	background: linear-gradient(180deg, rgba(228, 191, 99, 0.16), rgba(228, 191, 99, 0.06));
+	border-color: rgba(228, 191, 99, 0.32);
+	color: #e9c86a;
+}
+
+.platform-chip--cine .platform-chip__cine-label {
+	font-size: 0.72rem;
+}
+
+.platform-mark--tile.platform-chip--cine .platform-chip__cine-label {
+	font-size: 0.88rem;
+}
+
+.platform-chip--netflix {
+	--platform-chip-logo-width: 3rem;
+	--platform-chip-logo-max-height: 0.92rem;
+	--platform-tile-logo-width: 3.2rem;
+	--platform-tile-logo-max-height: 1.1rem;
+	color: #f52039;
+	background: rgba(245, 32, 57, 0.1);
+	border-color: rgba(245, 32, 57, 0.32);
+}
+
+.platform-chip--hbo-max {
+	--platform-chip-logo-width: 3.55rem;
+	--platform-chip-logo-max-height: 0.96rem;
+	--platform-tile-logo-width: 4rem;
+	--platform-tile-logo-max-height: 1.22rem;
+	color: #bda6ff;
+	background: rgba(122, 92, 255, 0.16);
+	border-color: rgba(122, 92, 255, 0.32);
+}
+
+.platform-chip--disney-plus {
+	--platform-chip-logo-width: 3.9rem;
+	--platform-chip-logo-max-height: 1.02rem;
+	--platform-tile-logo-width: 4.65rem;
+	--platform-tile-logo-max-height: 1.52rem;
+	color: #d9e8ff;
+	background: linear-gradient(180deg, rgba(17, 86, 189, 0.3), rgba(17, 86, 189, 0.1));
+	border-color: rgba(105, 169, 255, 0.34);
+}
+
+.platform-chip--prime-video {
+	--platform-chip-logo-width: 4rem;
+	--platform-chip-logo-max-height: 0.96rem;
+	--platform-tile-logo-width: 4.8rem;
+	--platform-tile-logo-max-height: 1.52rem;
+	color: #91d8ff;
+	background: linear-gradient(180deg, rgba(0, 168, 225, 0.2), rgba(0, 168, 225, 0.08));
+	border-color: rgba(0, 168, 225, 0.34);
+}
+
+.platform-chip--apple-tv {
+	--platform-chip-logo-width: 2.75rem;
+	--platform-chip-logo-max-height: 0.9rem;
+	--platform-tile-logo-width: 3.2rem;
+	--platform-tile-logo-max-height: 1.1rem;
+	color: #f4f7ff;
+	background: rgba(255, 255, 255, 0.06);
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.platform-chip--crunchyroll {
+	--platform-chip-logo-width: 4.3rem;
+	--platform-chip-logo-max-height: 0.94rem;
+	--platform-tile-logo-width: 4.95rem;
+	--platform-tile-logo-max-height: 1.36rem;
+	color: #ffb16a;
+	background: rgba(244, 117, 33, 0.12);
+	border-color: rgba(244, 117, 33, 0.34);
+}
+
+.platform-chip--stremio {
+	--platform-chip-logo-width: 3.6rem;
+	--platform-chip-logo-max-height: 1rem;
+	--platform-tile-logo-width: 4.2rem;
+	--platform-tile-logo-max-height: 1.42rem;
+	color: #f7f1ff;
+	background: linear-gradient(180deg, rgba(122, 92, 255, 0.2), rgba(248, 68, 132, 0.08));
+	border-color: rgba(198, 147, 255, 0.32);
 }
 
 .review-clamp {
@@ -2387,13 +2514,14 @@ address.site-header__support-card {
 	}
 
 	.movie-card__footer {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		gap: 0.35rem;
+		grid-template-columns: minmax(0, 1fr) auto;
+		grid-template-rows: auto auto;
+		gap: 0.35rem 0.5rem;
 	}
 
-	.movie-card__glyph {
-		display: none;
+	.movie-card__platform-mark {
+		width: 58px;
+		height: 46px;
 	}
 
 	.movie-card__cta {
@@ -2408,6 +2536,26 @@ address.site-header__support-card {
 	.platform-chip {
 		font-size: 0.62rem;
 		padding: 0.12rem 0.36rem;
+	}
+
+	.platform-chip--brand {
+		padding: 0.18rem 0.44rem;
+	}
+
+	.platform-chip__logo {
+		max-height: 0.84rem;
+	}
+
+	.platform-chip__logo--wide {
+		max-height: 0.84rem;
+	}
+
+	.platform-mark--tile .platform-chip__logo {
+		max-height: 1.05rem;
+	}
+
+	.platform-mark--tile .platform-chip__logo--wide {
+		max-height: 1.05rem;
 	}
 
 	.site-header__support {

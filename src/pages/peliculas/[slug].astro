@@ -9,6 +9,7 @@ import {
 } from '../../lib/movies';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
+import PlatformBadge from '../../components/PlatformBadge.astro';
 import { createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -278,7 +279,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				<div class="movie-detail__meta">
 					<span>{movie.year}</span>
 					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
-					{movie.releasePlatform && <span class="platform-chip">{movie.releasePlatform}</span>}
+					<PlatformBadge platform={movie.releasePlatform} />
 				</div>
 				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
 					<div class="movie-detail__hero-stack">
@@ -459,6 +460,16 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								<dt>Categoria</dt>
 								<dd>{movie.category}</dd>
 							</div>
+							{
+								movie.releasePlatform && (
+									<div class="movie-detail__credit-item">
+										<dt>Plataforma</dt>
+										<dd>
+											<PlatformBadge platform={movie.releasePlatform} />
+										</dd>
+									</div>
+								)
+							}
 							<div class="movie-detail__credit-item">
 								<dt>Productora</dt>
 								<dd>{movie.productionCompany}</dd>
