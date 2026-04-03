@@ -7,7 +7,7 @@ Total de peliculas: 668
 | Año | Titulo | Slug | Categoria | Plataforma |
 | --- | --- | --- | --- | --- |
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Cine |
-| 2026 | A New Dawn | a-new-dawn-2026 | Anime | Cine |
+| 2026 | A New Dawn | a-new-dawn-2026 | Anime | Stremio |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Cine |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Cine |
@@ -40,7 +40,7 @@ Total de peliculas: 668
 | 2026 | Whistle | whistle-2026 | Terror | Cine |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max |
-| 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Cine |
+| 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Stremio |
 | 2025 | Back in Action | back-in-action-2025 | Accion | Netflix |
 | 2025 | Ballerina | ballerina-2025 | Accion | Prime Video |
 | 2025 | Belén | belen-2025 | Drama | Prime Video |
@@ -48,7 +48,7 @@ Total de peliculas: 668
 | 2025 | Captain America: Brave New World | captain-america-brave-new-world-2025 | Accion | Disney Plus |
 | 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Cine |
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max |
-| 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Cine |
+| 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Stremio |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV |
 | 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Cine |
@@ -98,7 +98,7 @@ Total de peliculas: 668
 | 2025 | Weapons | weapons-2025 | Terror | HBO Max |
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Stremio |
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max |
-| 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Cine |
+| 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Stremio |
 | 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Stremio |
 | 2024 | A Real Pain | a-real-pain-2024 | Comedia | Disney Plus |
 | 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus |

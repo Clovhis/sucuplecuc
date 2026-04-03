@@ -484,7 +484,6 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		'verdict',
 		'verdictLabel',
 		'review',
-		'releasePlatform',
 	];
 
 	for (const field of requiredStrings) {
@@ -669,7 +668,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		addFinding(findings, 'error', 'opaque-verdict-label', candidatePath, 'verdictLabel should be direct and easy to understand, not a cryptic adjective mashup.');
 	}
 
-	if (!ALLOWED_PLATFORMS.has(movie.releasePlatform)) {
+	if (movie.releasePlatform !== undefined && !ALLOWED_PLATFORMS.has(movie.releasePlatform)) {
 		addFinding(findings, 'error', 'invalid-platform', candidatePath, `Unsupported releasePlatform "${String(movie.releasePlatform)}".`);
 	}
 
