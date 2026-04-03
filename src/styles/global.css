@@ -715,19 +715,48 @@ img {
 
 .home-platform-filter__badge.platform-chip--brand {
 	padding: 0;
+	--platform-chip-logo-max-height: 1.22rem;
 }
 
 .home-platform-filter__badge .platform-chip__logo {
-	max-height: 1.14rem;
+	max-height: 1.22rem;
 }
 
 .home-platform-filter__badge.platform-chip--cine-ar {
-	--platform-chip-logo-width: 2.85rem;
-	--platform-chip-logo-max-height: 0.92rem;
+	--platform-chip-logo-width: 3rem;
+	--platform-chip-logo-max-height: 0.98rem;
 }
 
 .home-platform-filter__badge.platform-chip--disney-plus .platform-chip__logo {
-	max-height: 1.22rem;
+	max-height: 1.34rem;
+}
+
+.home-platform-filter__badge.platform-chip--netflix {
+	--platform-chip-logo-width: 3.2rem;
+}
+
+.home-platform-filter__badge.platform-chip--hbo-max {
+	--platform-chip-logo-width: 3.8rem;
+}
+
+.home-platform-filter__badge.platform-chip--disney-plus {
+	--platform-chip-logo-width: 4.15rem;
+}
+
+.home-platform-filter__badge.platform-chip--prime-video {
+	--platform-chip-logo-width: 4.25rem;
+}
+
+.home-platform-filter__badge.platform-chip--apple-tv {
+	--platform-chip-logo-width: 3rem;
+}
+
+.home-platform-filter__badge.platform-chip--crunchyroll {
+	--platform-chip-logo-width: 4.5rem;
+}
+
+.home-platform-filter__badge.platform-chip--stremio {
+	--platform-chip-logo-width: 3.8rem;
 }
 
 .home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo,
