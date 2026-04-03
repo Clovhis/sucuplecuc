@@ -14,6 +14,7 @@ const ALLOWED_PLATFORMS = new Set([
 	'HBO Max',
 	'Apple TV',
 	'Cine',
+	'CINE.AR',
 	'Prime Video',
 	'Disney Plus',
 	'Crunchyroll',

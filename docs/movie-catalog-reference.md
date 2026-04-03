@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-01. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-03. Fuente: src/data/movies/*.json
 
 Total de peliculas: 668
 
@@ -224,7 +224,7 @@ Total de peliculas: 668
 | 2021 | Cruella | cruella-2021 | Aventura | Disney Plus |
 | 2021 | Don't Look Up | dont-look-up-2021 | Comedia | Netflix |
 | 2021 | Dune: Part One | dune-2021 | Acción | HBO Max |
-| 2021 | El perro que no calla | el-perro-que-no-calla-2021 | Drama | Cine |
+| 2021 | El perro que no calla | el-perro-que-no-calla-2021 | Drama | CINE.AR |
 | 2021 | Encanto | encanto-2021 | Animación | Disney Plus |
 | 2021 | Eternals | eternals-2021 | Acción | Disney Plus |
 | 2021 | F9: The Fast Saga | f9-the-fast-saga-2021 | Acción | Stremio |
