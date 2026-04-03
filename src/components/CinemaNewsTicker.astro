@@ -119,8 +119,17 @@ const marqueeItems = items;
 <script>
 	const marquees = Array.from(document.querySelectorAll('[data-news-marquee]'));
 	const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-	const finePointer = window.matchMedia('(pointer: fine)');
 	const TICKER_SPEED = 44;
+	const bindMediaQueryChange = (query, listener) => {
+		if (typeof query.addEventListener === 'function') {
+			query.addEventListener('change', listener);
+			return;
+		}
+
+		if (typeof query.addListener === 'function') {
+			query.addListener(listener);
+		}
+	};
 
 	for (const marquee of marquees) {
 		if (!(marquee instanceof HTMLElement)) continue;
@@ -135,14 +144,20 @@ const marqueeItems = items;
 		let paused = false;
 		let segmentWidth = 0;
 
-		const shouldAutoScroll = () =>
-			!reduceMotion.matches && finePointer.matches && window.innerWidth > 640;
+		const shouldAutoScroll = () => !reduceMotion.matches && window.innerWidth > 640;
+		const syncTrackPosition = () => {
+			track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+		};
 
 		const measure = () => {
 			segmentWidth = segment.getBoundingClientRect().width;
-			if (!Number.isFinite(segmentWidth) || segmentWidth <= marquee.clientWidth) {
+			if (
+				!Number.isFinite(segmentWidth) ||
+				segmentWidth <= marquee.clientWidth ||
+				!shouldAutoScroll()
+			) {
 				offset = 0;
-				track.style.transform = 'translate3d(0, 0, 0)';
+				syncTrackPosition();
 			}
 		};
 
@@ -160,7 +175,10 @@ const marqueeItems = items;
 					offset -= segmentWidth;
 				}
 
-				track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+				syncTrackPosition();
+			} else if (offset !== 0 && !shouldAutoScroll()) {
+				offset = 0;
+				syncTrackPosition();
 			}
 
 			frameId = window.requestAnimationFrame(step);
@@ -212,8 +230,7 @@ const marqueeItems = items;
 			measure();
 		};
 
-		reduceMotion.addEventListener('change', syncEnvironment);
-		finePointer.addEventListener('change', syncEnvironment);
+		bindMediaQueryChange(reduceMotion, syncEnvironment);
 		window.addEventListener('pagehide', () => {
 			stop();
 		});
