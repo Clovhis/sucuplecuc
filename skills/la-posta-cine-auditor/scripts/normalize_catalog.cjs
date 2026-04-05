@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 
 const DEFAULT_ROOT = 'src/data/movies';
-const ALLOWED_IDEAL_FOR = ['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche'];
 const LEGENDARY_MOVIE_SLUGS = new Set([
 	'the-godfather-1972',
 	'the-godfather-part-ii-1974',
@@ -137,23 +136,6 @@ function scorePair(source, target) {
 	return score;
 }
 
-function deriveIdealFor(movieData) {
-	const keys = new Set([...movieData.categoryTokens, ...movieData.genreTokens]);
-	if (keys.has('terror') || keys.has('thriller')) {
-		return ['trasnoche', 'con amigos'];
-	}
-	if (keys.has('drama') || keys.has('romance')) {
-		return ['solo', 'domingo'];
-	}
-	if (keys.has('anime') || keys.has('animacion') || keys.has('comedia')) {
-		return ['domingo', 'con amigos'];
-	}
-	if (keys.has('accion') || keys.has('aventura') || keys.has('cienciaficcion') || keys.has('scifi')) {
-		return ['con amigos', 'domingo'];
-	}
-	return ['solo', 'domingo'];
-}
-
 function chooseRecommendations(source, allMovies) {
 	const ranked = allMovies
 		.map((target) => ({
@@ -211,20 +193,14 @@ function main() {
 			awardsChanged += 1;
 		}
 
-		const currentIdealFor =
-			movie.editorial &&
-			Array.isArray(movie.editorial.idealFor) &&
-			movie.editorial.idealFor.every((tag) => ALLOWED_IDEAL_FOR.includes(tag))
-				? movie.editorial.idealFor
-				: deriveIdealFor(movieData);
-
 		const recommendations = chooseRecommendations(movieData, movies);
-		movie.editorial = {
+		const nextEditorial = {
 			...(movie.editorial && typeof movie.editorial === 'object' && !Array.isArray(movie.editorial) ? movie.editorial : {}),
-			idealFor: currentIdealFor,
 			becauseYouLiked: recommendations.becauseYouLiked,
 			related: recommendations.related,
 		};
+		delete nextEditorial.idealFor;
+		movie.editorial = nextEditorial;
 
 		const labelPool = buildLabelPool(movieData);
 		const chosenLabel = labelPool[0];

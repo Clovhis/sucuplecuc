@@ -36,10 +36,6 @@
 	"runtimeMinutes": 100,
 	"review": "The Artist juega al cine mudo con cariño, timing y bastante picardía. Podría ser puro truco nostálgico, pero tiene corazón.",
 	"editorial": {
-		"idealFor": [
-			"solo",
-			"domingo"
-		],
 		"becauseYouLiked": [
 			"corazon-de-leon-2013",
 			"forrest-gump-1994"
@@ -51,5 +47,6 @@
 			"un-cuento-chino-2011"
 		]
 	},
-	"synopsis": "En el Hollywood de fines de los anos veinte, una estrella del cine mudo ve caer su carrera con la llegada del sonido. Al mismo tiempo, una joven actriz asciende rapidamente en esa nueva industria."
+	"synopsis": "En el Hollywood de fines de los anos veinte, una estrella del cine mudo ve caer su carrera con la llegada del sonido. Al mismo tiempo, una joven actriz asciende rapidamente en esa nueva industria.",
+	"audienceRating": "ATP"
 }

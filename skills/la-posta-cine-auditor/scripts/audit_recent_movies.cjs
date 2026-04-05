@@ -22,8 +22,8 @@ const ALLOWED_PLATFORMS = new Set([
 ]);
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
-const ALLOWED_IDEAL_FOR_TAGS = new Set(['solo', 'en pareja', 'con amigos', 'domingo', 'trasnoche']);
 const MAX_VERDICT_LABEL_LENGTH = 21;
+const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
@@ -492,6 +492,10 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		}
 	}
 
+	if (typeof movie.audienceRating !== 'string' || !AUDIENCE_RATING_PATTERN.test(movie.audienceRating.trim())) {
+		addFinding(findings, 'error', 'invalid-audience-rating', candidatePath, 'audienceRating must be `ATP` or `+<edad>`.');
+	}
+
 	if (!Number.isInteger(movie.year) || movie.year < 1888 || movie.year > 2100) {
 		addFinding(findings, 'error', 'invalid-year', candidatePath, `Invalid year "${String(movie.year)}".`);
 	}
@@ -534,12 +538,8 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	if (movie.editorial === undefined || movie.editorial === null || typeof movie.editorial !== 'object' || Array.isArray(movie.editorial)) {
 		addFinding(findings, 'error', 'missing-editorial', candidatePath, 'editorial must exist as an object so the recommendation blocks can render with curated links.');
 	} else {
-		if (
-			movie.editorial.idealFor !== undefined &&
-			(!Array.isArray(movie.editorial.idealFor) ||
-				movie.editorial.idealFor.some((tag) => typeof tag !== 'string' || !ALLOWED_IDEAL_FOR_TAGS.has(tag)))
-		) {
-			addFinding(findings, 'error', 'invalid-ideal-for', candidatePath, 'editorial.idealFor contains unsupported tags.');
+		if (movie.editorial.idealFor !== undefined) {
+			addFinding(findings, 'error', 'deprecated-ideal-for', candidatePath, 'editorial.idealFor is deprecated and must be removed from movie files.');
 		}
 
 		validateEditorialSlugList({

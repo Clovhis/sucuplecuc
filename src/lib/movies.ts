@@ -1,4 +1,4 @@
-import type { Movie, MovieIdealForTag, MovieVerdict } from '../types/movie';
+import type { Movie, MovieVerdict } from '../types/movie';
 
 const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) as Record<
 	string,
@@ -48,7 +48,6 @@ export interface MovieRuntimeSummary {
 
 export interface MovieEditorialSummary {
 	runtime?: MovieRuntimeSummary;
-	idealFor: MovieIdealForTag[];
 	bridge: MovieLinkRecommendation[];
 	related: MovieLinkRecommendation[];
 }
@@ -70,36 +69,9 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'pelicula-nacional', label: 'Cine nacional' },
 ];
 
-const IDEAL_FOR_TAGS: MovieIdealForTag[] = [
-	'solo',
-	'en pareja',
-	'con amigos',
-	'en familia',
-	'domingo',
-	'trasnoche',
-	'plan corto',
-	'maraton',
-	'pochoclera',
-	'intensa',
-	'tensa',
-	'liviana',
-	'para pensar',
-	'premiada',
-];
-const SOCIAL_IDEAL_FOR_TAGS: MovieIdealForTag[] = ['solo', 'en pareja', 'con amigos', 'en familia'];
-const TIMING_IDEAL_FOR_TAGS: MovieIdealForTag[] = ['domingo', 'trasnoche'];
-const DESCRIPTOR_IDEAL_FOR_TAGS: MovieIdealForTag[] = [
-	'plan corto',
-	'maraton',
-	'pochoclera',
-	'intensa',
-	'tensa',
-	'liviana',
-	'para pensar',
-	'premiada',
-];
 const MAX_VERDICT_LABEL_LENGTH = 21;
 const MAX_SYNOPSIS_LENGTH = 320;
+const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
 const REVIEWISH_SYNOPSIS_PATTERNS = [
 	/\bfunciona mejor\b/i,
 	/\bse deja ver\b/i,
@@ -272,6 +244,9 @@ function validateMovies(movies: Movie[]): void {
 				throw new Error(`Movie "${slug}" has invalid releaseDate format. Use YYYY-MM-DD.`);
 			}
 		}
+		if (typeof movie.audienceRating !== 'string' || !AUDIENCE_RATING_PATTERN.test(movie.audienceRating.trim())) {
+			throw new Error(`Movie "${slug}" has invalid audienceRating.`);
+		}
 		if (!Array.isArray(movie.mainCast)) {
 			throw new Error(`Movie "${slug}" has invalid mainCast.`);
 		}
@@ -347,15 +322,6 @@ function validateMovies(movies: Movie[]): void {
 				(typeof movie.editorial.runtimeComment !== 'string' || movie.editorial.runtimeComment.trim().length === 0)
 			) {
 				throw new Error(`Movie "${slug}" has invalid editorial.runtimeComment.`);
-			}
-
-			if (movie.editorial.idealFor !== undefined) {
-				if (
-					!Array.isArray(movie.editorial.idealFor) ||
-					movie.editorial.idealFor.some((tag) => !IDEAL_FOR_TAGS.includes(tag))
-				) {
-					throw new Error(`Movie "${slug}" has invalid editorial.idealFor tags.`);
-				}
 			}
 
 			for (const key of ['becauseYouLiked', 'related'] as const) {
@@ -654,57 +620,6 @@ export function getRecommendationGenres(
 	);
 }
 
-function pushUniqueTag(target: MovieIdealForTag[], tag: MovieIdealForTag): void {
-	if (!target.includes(tag)) {
-		target.push(tag);
-	}
-}
-
-function hasAnyIdealForTag(target: MovieIdealForTag[], candidates: MovieIdealForTag[]): boolean {
-	return candidates.some((candidate) => target.includes(candidate));
-}
-
-function pushFirstAvailableIdealForTag(
-	target: MovieIdealForTag[],
-	candidates: MovieIdealForTag[],
-	options?: { exclusiveWith?: MovieIdealForTag[] },
-): void {
-	if (options?.exclusiveWith && hasAnyIdealForTag(target, options.exclusiveWith)) {
-		return;
-	}
-
-	for (const candidate of candidates) {
-		if (!target.includes(candidate)) {
-			target.push(candidate);
-			return;
-		}
-	}
-}
-
-function normalizeIdealForTags(tags: MovieIdealForTag[]): MovieIdealForTag[] {
-	const normalized: MovieIdealForTag[] = [];
-	let hasSocialTag = false;
-	let hasTimingTag = false;
-
-	for (const tag of tags) {
-		if (SOCIAL_IDEAL_FOR_TAGS.includes(tag)) {
-			if (hasSocialTag) continue;
-			hasSocialTag = true;
-		}
-
-		if (TIMING_IDEAL_FOR_TAGS.includes(tag)) {
-			if (hasTimingTag) continue;
-			hasTimingTag = true;
-		}
-
-		if (!normalized.includes(tag)) {
-			normalized.push(tag);
-		}
-	}
-
-	return normalized;
-}
-
 function getNormalizedTitleTokens(movie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>): string[] {
 	const source = normalizeSearchText([movie.title, movie.originalTitle, movie.slug].join(' '))
 		.replace(/[^a-z0-9\s]/g, ' ')
@@ -767,101 +682,6 @@ export function getRuntimeComment(movie: Pick<Movie, 'runtimeMinutes' | 'verdict
 		return movie.verdict === 'recomendada' ? 'es larguita pero va bien' : 'dura bastante y se siente';
 	}
 	return movie.verdict === 'recomendada' ? 'es larguisima pero no te aburre nunca' : 'es larga y se hace notar';
-}
-
-export function getIdealForTags(
-	movie: Pick<Movie, 'category' | 'genres' | 'releasePlatform' | 'runtimeMinutes' | 'verdict' | 'editorial' | 'country' | 'isArgentinian' | 'awards' | 'slug' | 'title' | 'originalTitle'>,
-): MovieIdealForTag[] {
-	const recommendationGenres = new Set(getRecommendationGenres(movie));
-	const tags = normalizeIdealForTags(movie.editorial?.idealFor?.length ? movie.editorial.idealFor : []);
-	const runtimeMinutes = movie.runtimeMinutes ?? 0;
-	const hasAwards = (movie.awards?.wins ?? []).length > 0;
-	const isTenseTitle =
-		recommendationGenres.has('terror') ||
-		recommendationGenres.has('thriller') ||
-		recommendationGenres.has('crimen');
-	const isCrowdPleaser =
-		recommendationGenres.has('accion') ||
-		recommendationGenres.has('aventura') ||
-		recommendationGenres.has('superheroes') ||
-		recommendationGenres.has('animacion') ||
-		recommendationGenres.has('comedia') ||
-		(isTenseTitle && movie.verdict === 'recomendada');
-	const isThoughtfulTitle =
-		recommendationGenres.has('drama') ||
-		recommendationGenres.has('crimen') ||
-		recommendationGenres.has('oscar-mejor-pelicula') ||
-		normalizeSearchText(movie.category) === 'documental';
-
-	pushFirstAvailableIdealForTag(
-		tags,
-		recommendationGenres.has('romance')
-			? ['en pareja']
-			: recommendationGenres.has('animacion')
-				? ['en familia', 'con amigos']
-				: isCrowdPleaser
-					? ['con amigos', 'solo']
-					: ['solo', 'con amigos'],
-		{ exclusiveWith: SOCIAL_IDEAL_FOR_TAGS },
-	);
-
-	pushFirstAvailableIdealForTag(
-		tags,
-		isTenseTitle || runtimeMinutes <= 105
-			? ['trasnoche', 'domingo']
-			: runtimeMinutes >= 120 || isThoughtfulTitle
-				? ['domingo', 'trasnoche']
-				: ['domingo'],
-		{ exclusiveWith: TIMING_IDEAL_FOR_TAGS },
-	);
-
-	if (runtimeMinutes > 0 && runtimeMinutes <= 100) {
-		pushUniqueTag(tags, 'plan corto');
-	}
-
-	if (runtimeMinutes >= 140) {
-		pushUniqueTag(tags, 'maraton');
-	}
-
-	if (isCrowdPleaser) {
-		pushUniqueTag(tags, 'pochoclera');
-	}
-
-	if (isTenseTitle) {
-		pushUniqueTag(tags, recommendationGenres.has('terror') ? 'intensa' : 'tensa');
-	}
-
-	if (recommendationGenres.has('comedia') || recommendationGenres.has('animacion')) {
-		pushUniqueTag(tags, 'liviana');
-	}
-
-	if (isThoughtfulTitle) {
-		pushUniqueTag(tags, 'para pensar');
-	}
-
-	if (hasAwards) {
-		pushUniqueTag(tags, 'premiada');
-	}
-
-	const fallbackTags: MovieIdealForTag[] = [
-		'plan corto',
-		'pochoclera',
-		'liviana',
-		'para pensar',
-		'intensa',
-		'tensa',
-		'premiada',
-		'maraton',
-	];
-
-	for (const tag of fallbackTags) {
-		if (tags.length >= 4) break;
-		if (DESCRIPTOR_IDEAL_FOR_TAGS.includes(tag)) {
-			pushUniqueTag(tags, tag);
-		}
-	}
-
-	return normalizeIdealForTags(tags).slice(0, 4);
 }
 
 function getBridgeAnchorCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
@@ -991,7 +811,6 @@ export function getMovieEditorialSummary(movie: Movie, allMovies: Movie[]): Movi
 
 	return {
 		runtime,
-		idealFor: getIdealForTags(movie),
 		bridge: getBridgeRecommendations(movie, allMovies),
 		related: getRelatedRecommendations(movie, allMovies),
 	};

@@ -4,6 +4,8 @@ export type MovieVerdict =
 	| 'no_recomendada'
 	| 'basura_atomica';
 
+export type MovieAudienceRating = 'ATP' | `+${number}`;
+
 export type MovieAwardType = 'oscar' | 'grammy' | 'cannes';
 
 export interface MovieAwardWin {
@@ -17,25 +19,8 @@ export interface MovieAwards {
 	wins: MovieAwardWin[];
 }
 
-export type MovieIdealForTag =
-	| 'solo'
-	| 'en pareja'
-	| 'con amigos'
-	| 'en familia'
-	| 'domingo'
-	| 'trasnoche'
-	| 'plan corto'
-	| 'maraton'
-	| 'pochoclera'
-	| 'intensa'
-	| 'tensa'
-	| 'liviana'
-	| 'para pensar'
-	| 'premiada';
-
 export interface MovieEditorial {
 	runtimeComment?: string;
-	idealFor?: MovieIdealForTag[];
 	becauseYouLiked?: string[];
 	related?: string[];
 }
@@ -47,6 +32,7 @@ export interface Movie {
 	synopsis: string;
 	year: number;
 	releaseDate?: string;
+	audienceRating: MovieAudienceRating;
 	category: string;
 	genres?: string[];
 	country?: string;

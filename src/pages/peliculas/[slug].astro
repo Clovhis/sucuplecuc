@@ -103,22 +103,26 @@ const awardCategories = groupedAwards.flatMap((group) =>
 );
 const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
-const idealForDisplayLabels: Record<string, string> = {
-	solo: 'Verla solo',
-	'en pareja': 'Noche romantica',
-	'con amigos': 'Ver con amigos',
-	'en familia': 'Ver con hijos',
-	domingo: 'Plan dominguero',
-	trasnoche: 'Plan trasnoche',
-	'plan corto': 'Plan corto',
-	maraton: 'Va para maraton',
-	pochoclera: 'Puro pochoclo',
-	intensa: 'Alta tension',
-	tensa: 'Te deja pegado',
-	liviana: 'Cero complicacion',
-	'para pensar': 'Para debatir despues',
-	premiada: 'Con premios encima',
-};
+
+function getAudienceRatingLabel(audienceRating: string): string {
+	const normalized = String(audienceRating ?? '')
+		.trim()
+		.toUpperCase();
+
+	if (!normalized) {
+		return 'Clasificación no disponible';
+	}
+
+	if (normalized === 'ATP') {
+		return 'Apta para todo público';
+	}
+
+	if (normalized.startsWith('+')) {
+		return `Mayores de ${normalized.slice(1)} años`;
+	}
+
+	return normalized;
+}
 
 function parsePersonDate(value?: string) {
 	if (!value) {
@@ -501,18 +505,13 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							)
 						}
 						<MovieRating movieSlug={movie.slug} />
-						{
-							editorialSummary.idealFor.length > 0 && (
-								<section class="movie-detail__editorial-card movie-detail__editorial-card--ideal-for">
-									<p class="movie-detail__editorial-kicker">Qué plan pide</p>
-									<ul class="movie-detail__tag-list" aria-label="Qué plan pide">
-										{editorialSummary.idealFor.map((tag) => (
-											<li class="movie-detail__tag">{idealForDisplayLabels[tag] ?? tag}</li>
-										))}
-									</ul>
-								</section>
-							)
-						}
+						<section class="movie-detail__editorial-card movie-detail__editorial-card--audience-rating">
+							<div class="movie-detail__audience-rating-top">
+								<p class="movie-detail__editorial-kicker">Clasificación</p>
+								<span class="movie-detail__audience-rating-chip">{movie.audienceRating}</span>
+							</div>
+							<p class="movie-detail__audience-rating-value">{getAudienceRatingLabel(movie.audienceRating)}</p>
+						</section>
 					</div>
 					{
 						groupedAwards.length > 0 && (

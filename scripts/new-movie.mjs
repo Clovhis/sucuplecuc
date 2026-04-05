@@ -72,7 +72,6 @@ async function main() {
 	const movieData = {
 		...template,
 		editorial: {
-			idealFor: [],
 			becauseYouLiked: [],
 			related: [],
 			...(template.editorial ?? {}),

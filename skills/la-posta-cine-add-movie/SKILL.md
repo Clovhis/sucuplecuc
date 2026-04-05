@@ -142,6 +142,7 @@ Find trustworthy metadata:
 - `category`
 - `poster`
 - official YouTube trailer id in original language (store only `trailerYoutubeId`)
+- `audienceRating` normalized as `ATP` or `+<edad>`
 - `director`
 - `mainCast` (ordered by principal billing; for live-action default to 4-5 core performers unless reliable billing clearly supports fewer)
 - `productionCompany`
@@ -216,6 +217,27 @@ Trailer policy is strict:
 Do not invent data.
 Do not store full YouTube URL when schema uses id.
 
+Audience rating policy for Argentina (mandatory):
+
+- Always resolve `audienceRating` for Argentine users before commit.
+- Store only normalized values:
+  - `ATP` when the title is apta para todo público
+  - `+13`, `+16`, `+18`, etc. when the source exposes a minimum age
+- Preferred source order:
+  1. `TMDb` movie page using AR certification shown in the header (`ATP`, `+13`, `R`, etc.)
+  2. `JustWatch AR` when the page exposes `contentRating`
+  3. official local distributor/platform page if the age label is explicit
+- Normalization rules:
+  - `ATP`, `TP`, `G`, `U`, `PG`, `L` -> `ATP`
+  - numeric certifications stay numeric with `+` prefix (`13` -> `+13`)
+  - `PG-13` -> `+13`
+  - `R` -> `+17`
+  - `NC-17`, `TV-MA`, `X` -> `+18`
+- Never leave `audienceRating` empty in a published movie file.
+- After creating or updating a movie entry, prefer running:
+  - `node scripts/enrich-movie-age-ratings.mjs --movie <slug>`
+  - this should also keep `docs/movie-catalog-reference.md` synced
+
 People pool policy (mandatory):
 
 - Every new movie must also update `src/data/people.json`.
@@ -273,6 +295,7 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "title": "Movie Title",
   "originalTitle": "Original title",
   "year": 2026,
+  "audienceRating": "+13",
   "category": "Drama",
   "poster": "",
   "screenshots": [],
@@ -284,7 +307,6 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "verdictLabel": "ZAFA",
   "runtimeMinutes": 118,
   "editorial": {
-    "idealFor": ["solo", "domingo"],
     "becauseYouLiked": ["otra-peli-del-catalogo-2024"],
     "related": ["peli-relacionada-1-2023", "peli-relacionada-2-2022", "peli-relacionada-3-2021"]
   },
@@ -318,7 +340,6 @@ Rules:
   - these power the `Si ya la viste...` follow-up block
   - prioritize strong next-click suggestions instead of obvious filler
 - Slugs used in `becauseYouLiked` and `related` must already exist in `src/data/movies`, must not equal the current movie slug, and should not repeat within the same list.
-- `editorial.idealFor` is optional but recommended when confidence is high (`solo`, `en pareja`, `con amigos`, `domingo`, `trasnoche`).
 - `runtimeMinutes` is strongly recommended whenever it can be verified, so the `Duración` block does not stay empty.
 
 ## Rating compatibility by slug (mandatory)

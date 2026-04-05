@@ -167,6 +167,7 @@ export function createMovieStructuredData(
 		| 'synopsis'
 		| 'year'
 		| 'releaseDate'
+		| 'audienceRating'
 		| 'category'
 		| 'genres'
 		| 'poster'
@@ -252,6 +253,10 @@ export function createMovieStructuredData(
 
 	if (movie.releaseDate) {
 		movieSchema.datePublished = movie.releaseDate;
+	}
+
+	if (movie.audienceRating) {
+		movieSchema.contentRating = movie.audienceRating;
 	}
 
 	return [

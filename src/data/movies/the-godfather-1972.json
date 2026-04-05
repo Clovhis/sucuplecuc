@@ -35,10 +35,6 @@
 	"runtimeMinutes": 175,
 	"review": "The Godfather es de esas películas que parecen más grandes cada vez que se vuelven a ver. Tiene poder, duelo familiar y una oscuridad que nunca se gasta.",
 	"editorial": {
-		"idealFor": [
-			"solo",
-			"domingo"
-		],
 		"becauseYouLiked": [
 			"the-godfather-part-ii-1974",
 			"on-the-waterfront-1954"
@@ -50,5 +46,6 @@
 			"leonera-2008"
 		]
 	},
-	"synopsis": "Es la primera entrega de la trilogía de El Padrino, que narra la familia Corleone bajo el patriarca Vito Corleone (Brando) y la transformación de su hijo menor, Michael Corleone (Pacino), de un extraño reacio a la familia a un despiadado jefe de la mafia."
+	"synopsis": "Es la primera entrega de la trilogía de El Padrino, que narra la familia Corleone bajo el patriarca Vito Corleone (Brando) y la transformación de su hijo menor, Michael Corleone (Pacino), de un extraño reacio a la familia a un despiadado jefe de la mafia.",
+	"audienceRating": "+17"
 }
