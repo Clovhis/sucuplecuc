@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-04-05. Fuente: src/data/movies/*.json
 
-Total de peliculas: 671
+Total de peliculas: 672
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -19,6 +19,7 @@ Total de peliculas: 671
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Stremio | +13 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Cine | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio | +16 |
+| 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Cine | +16 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
