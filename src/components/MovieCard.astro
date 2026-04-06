@@ -35,6 +35,7 @@ const searchableText = [
 	movie.synopsis,
 	String(movie.year),
 	movie.category,
+	movie.audienceRating,
 	movie.releasePlatform ?? '',
 	movie.director,
 	movie.productionCompany,
@@ -81,6 +82,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 					<p class="movie-card__year">{movie.year}</p>
 				</div>
 				<p class="movie-card__cta">{movie.category}</p>
+				<p class="movie-card__audience-rating">{movie.audienceRating}</p>
 				<PlatformBadge platform={movie.releasePlatform} mode="tile" className="movie-card__platform-mark" />
 			</div>
 		</div>

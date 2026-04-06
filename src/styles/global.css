@@ -1233,7 +1233,7 @@ img {
 	margin-top: auto;
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) auto;
-	grid-template-rows: auto auto;
+	grid-template-rows: auto auto auto;
 	gap: 0.5rem 0.7rem;
 	align-items: center;
 }
@@ -1246,9 +1246,18 @@ img {
 	text-transform: uppercase;
 }
 
+.movie-card__audience-rating {
+	margin: 0;
+	color: var(--muted);
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
 .movie-card__platform-mark {
 	grid-column: 2;
-	grid-row: 1 / span 2;
+	grid-row: 1 / span 3;
 	width: 76px;
 	height: 58px;
 	align-self: center;
@@ -2761,7 +2770,7 @@ img {
 
 	.movie-card__footer {
 		grid-template-columns: minmax(0, 1fr) auto;
-		grid-template-rows: auto auto;
+		grid-template-rows: auto auto auto;
 		gap: 0.35rem 0.5rem;
 	}
 
@@ -2772,6 +2781,10 @@ img {
 
 	.movie-card__cta {
 		font-size: 0.72rem;
+	}
+
+	.movie-card__audience-rating {
+		font-size: 0.67rem;
 	}
 
 	.badge {
