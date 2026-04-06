@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-cartelera-revalidator
-description: "Revalidate La Posta Cine movie entries that still claim `releasePlatform: \"Cine\"` against live Argentine theatrical availability and legal AR platform data, then downgrade stale entries to a mapped platform or `Stremio` and refresh `docs/movie-catalog-reference.md`. Use when the user asks to audit cartelera, stale \"En cines\" badges, current theatrical status, or after `la-posta-cine-add-movie` / `la-posta-cine-recent-scout` when a new or edited title ends in `Cine`."
+description: "Revalidate La Posta Cine movie entries that still claim `releasePlatform: \"Cine\"` against live Argentine theatrical availability and legal AR platform data, then downgrade stale entries to a mapped platform, an optional 2-label multi-platform combination, or `Stremio` and refresh `docs/movie-catalog-reference.md`. Use when the user asks to audit cartelera, stale \"En cines\" badges, current theatrical status, or after `la-posta-cine-add-movie` / `la-posta-cine-recent-scout` when a new or edited title ends in `Cine`."
 ---
 
 # la-posta-cine-cartelera-revalidator
@@ -106,10 +106,13 @@ Platform resolver rules:
   - `Prime Video`
   - `Disney Plus`
   - `Crunchyroll`
+  - `Mercado Play`
   - `CINE.AR`
 - Prefer `FLATRATE` subscription offers first.
-- If no `FLATRATE` offer exists but AR still has a clearly legal transactional offer on an allowlisted provider, use that provider label.
-- If no legal AR platform can be verified, set `releasePlatform: "Stremio"`.
+- Keep `releasePlatform` as the primary label. If a second legal AR provider is also clearly confirmed, persist both in `releasePlatforms` with a hard cap of `2` total labels.
+- Never combine `Stremio` with another provider.
+- If no `FLATRATE` offer exists but AR still has a clearly legal transactional offer on an allowlisted provider, use that provider label as primary and add a second verified legal provider only if it is also well supported.
+- If no legal AR platform can be verified, set `releasePlatform: "Stremio"` and omit `releasePlatforms`.
 
 Never leave `releasePlatform` empty after this skill runs.
 
@@ -122,6 +125,7 @@ Common outcomes:
 - `Cine` -> `Stremio`
 - `Cine` -> `Apple TV`
 - `Cine` -> `Prime Video`
+- `Cine` -> `Netflix + Mercado Play`
 - `Cine` -> `CINE.AR`
 
 Do not rewrite reviews or editorial copy unless the user explicitly asked for that too.
@@ -170,7 +174,8 @@ Return:
 2. full list of local titles that started in `Cine`
 3. titles that remain in `Cine`
 4. titles moved to another legal platform
-5. titles moved to `Stremio`
-6. source URLs used for the key decisions
-7. confirmation that `docs/movie-catalog-reference.md` was refreshed
-8. confirmation that `la-posta-cine-auditor` was triggered or executed next
+5. titles moved to a legal AR multi-platform combination
+6. titles moved to `Stremio`
+7. source URLs used for the key decisions
+8. confirmation that `docs/movie-catalog-reference.md` was refreshed
+9. confirmation that `la-posta-cine-auditor` was triggered or executed next

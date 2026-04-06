@@ -74,6 +74,15 @@ function rotate(values, offset) {
 	return values.slice(safeOffset).concat(values.slice(0, safeOffset));
 }
 
+function getNormalizedPlatforms(movie) {
+	const sourcePlatforms =
+		Array.isArray(movie.releasePlatforms) && movie.releasePlatforms.length > 0
+			? movie.releasePlatforms
+			: [movie.releasePlatform];
+
+	return Array.from(new Set(sourcePlatforms.map((platform) => normalizeText(platform)).filter(Boolean))).slice(0, 2);
+}
+
 function buildMovieData(rootDir) {
 	return fs
 		.readdirSync(rootDir, { withFileTypes: true })
@@ -93,7 +102,7 @@ function buildMovieData(rootDir) {
 				director: normalizeText(movie.director),
 				cast: new Set((Array.isArray(movie.mainCast) ? movie.mainCast : []).map((name) => normalizeText(name)).filter(Boolean)),
 				country: normalizeText(movie.country),
-				platform: normalizeText(movie.releasePlatform),
+				platforms: new Set(getNormalizedPlatforms(movie)),
 			};
 		})
 		sort((left, right) => String(left.movie.slug).localeCompare(String(right.movie.slug)));
@@ -128,7 +137,7 @@ function scorePair(source, target) {
 		if (source.cast.has(castMember)) score += 18;
 	}
 	if (source.country && source.country === target.country) score += 6;
-	if (source.platform && source.platform === target.platform) score += 4;
+	if ([...source.platforms].some((platform) => target.platforms.has(platform))) score += 4;
 
 	const yearDelta = Math.abs(Number(source.movie.year || 0) - Number(target.movie.year || 0));
 	score += Math.max(0, 25 - yearDelta);

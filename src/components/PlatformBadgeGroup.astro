@@ -1,0 +1,22 @@
+---
+import PlatformBadge from './PlatformBadge.astro';
+
+interface Props {
+	platforms?: Array<string | null | undefined>;
+	className?: string;
+	mode?: 'chip' | 'tile';
+}
+
+const { platforms = [], className = '', mode = 'chip' } = Astro.props as Props;
+const items = [...new Set(platforms.map((value) => String(value ?? '').trim()).filter(Boolean))].slice(0, 2);
+---
+
+{
+	items.length > 0 && (
+		<span class:list={['platform-badge-group', `platform-badge-group--${mode}`, `platform-badge-group--count-${items.length}`, className]}>
+			{items.map((platform) => (
+				<PlatformBadge platform={platform} mode={mode} className="platform-badge-group__item" />
+			))}
+		</span>
+	)
+}

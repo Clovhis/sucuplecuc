@@ -1,14 +1,16 @@
 ---
 import {
 	getMoviePath,
+	getMoviePlatformLabel,
+	getMoviePlatforms,
 	getPosterUrl,
 	getRecommendationGenres,
 	getVerdictBadgeClass,
 	getVerdictLabel,
 	normalizeSearchText,
 } from '../lib/movies';
-import { normalizePlatformLabel } from '../lib/platforms';
-import PlatformBadge from './PlatformBadge.astro';
+import { getNormalizedMoviePlatforms } from '../lib/platforms';
+import PlatformBadgeGroup from './PlatformBadgeGroup.astro';
 import type { Movie } from '../types/movie';
 
 interface Props {
@@ -26,7 +28,8 @@ const entryDelayMs = `${Math.min(index, 11) * 32}ms`;
 const posterLoading = index < 8 ? 'eager' : 'lazy';
 const posterFetchPriority = index < 4 ? 'high' : 'auto';
 const quickCast = movie.mainCast.slice(0, 2).join(', ');
-const quickMeta = [String(movie.year), movie.category, movie.releasePlatform ?? '']
+const moviePlatforms = getMoviePlatforms(movie);
+const quickMeta = [String(movie.year), movie.category, getMoviePlatformLabel(movie)]
 	.filter(Boolean)
 	.join(' · ');
 const searchableText = [
@@ -36,7 +39,7 @@ const searchableText = [
 	String(movie.year),
 	movie.category,
 	movie.audienceRating,
-	movie.releasePlatform ?? '',
+	...moviePlatforms,
 	movie.director,
 	movie.productionCompany,
 	...(movie.mainCast ?? []),
@@ -58,7 +61,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	data-movie-poster-url={posterUrl}
 	data-movie-meta={quickMeta}
 	data-movie-cast={quickCast}
-	data-movie-platform={normalizePlatformLabel(movie.releasePlatform)}
+	data-movie-platforms={getNormalizedMoviePlatforms(movie).join(',')}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">
@@ -83,7 +86,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 				</div>
 				<p class="movie-card__cta">{movie.category}</p>
 				<p class="movie-card__audience-rating">{movie.audienceRating}</p>
-				<PlatformBadge platform={movie.releasePlatform} mode="tile" className="movie-card__platform-mark" />
+				<PlatformBadgeGroup platforms={moviePlatforms} mode="tile" className="movie-card__platform-mark" />
 			</div>
 		</div>
 	</a>

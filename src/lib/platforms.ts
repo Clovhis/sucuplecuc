@@ -10,6 +10,7 @@ export type PlatformVariant =
 	| 'disney-plus'
 	| 'prime-video'
 	| 'apple-tv'
+	| 'mercado-play'
 	| 'crunchyroll'
 	| 'stremio';
 
@@ -39,6 +40,7 @@ const PLATFORM_DISPLAY_LABELS: Partial<Record<PlatformVariant, string>> = {
 	'disney-plus': 'Disney+',
 	'prime-video': 'Prime Video',
 	'apple-tv': 'Apple TV+',
+	'mercado-play': 'Mercado Play',
 	crunchyroll: 'Crunchyroll',
 	stremio: 'Stremio',
 };
@@ -54,6 +56,8 @@ const PLATFORM_VARIANTS_BY_LABEL: Record<string, PlatformVariant> = {
 	'disney plus': 'disney-plus',
 	'prime video': 'prime-video',
 	'apple tv': 'apple-tv',
+	'apple tv+': 'apple-tv',
+	'mercado play': 'mercado-play',
 	crunchyroll: 'crunchyroll',
 	stremio: 'stremio',
 };
@@ -64,6 +68,7 @@ const PLATFORM_FILTER_ORDER = [
 	'hbo max',
 	'paramount plus',
 	'prime video',
+	'mercado play',
 	'apple tv',
 	'crunchyroll',
 	'stremio',
@@ -104,6 +109,10 @@ export const PLATFORM_ASSETS: Partial<Record<Exclude<PlatformVariant, 'default' 
 		src: '/brand/platforms/apple-tv.svg',
 		wide: true,
 	},
+	'mercado-play': {
+		src: '/brand/platforms/mercado-play.svg',
+		wide: true,
+	},
 	crunchyroll: {
 		src: '/brand/platforms/crunchyroll.svg',
 		wide: true,
@@ -120,6 +129,18 @@ export function normalizePlatformLabel(value: string | null | undefined): string
 		.toLowerCase()
 		.normalize('NFD')
 		.replace(/[\u0300-\u036f]/g, '');
+}
+
+export function normalizePlatformList(values: Array<string | null | undefined>): string[] {
+	const deduped = new Set<string>();
+
+	for (const value of values) {
+		const normalized = String(value ?? '').trim();
+		if (!normalized) continue;
+		deduped.add(normalized);
+	}
+
+	return [...deduped];
 }
 
 export function getPlatformVariant(value: string | null | undefined): PlatformVariant {
@@ -142,8 +163,41 @@ export function getPlatformPresentation(value: string | null | undefined): Platf
 	};
 }
 
+export function getPlatformPresentations(values: Array<string | null | undefined>): PlatformPresentation[] {
+	return normalizePlatformList(values).map((value) => getPlatformPresentation(value));
+}
+
+export function getMoviePlatforms(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string[] {
+	const primaryPlatforms =
+		Array.isArray(movie.releasePlatforms) && movie.releasePlatforms.length > 0
+			? movie.releasePlatforms
+			: [movie.releasePlatform];
+
+	return normalizePlatformList(primaryPlatforms).slice(0, 2);
+}
+
+export function getNormalizedMoviePlatforms(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string[] {
+	return getMoviePlatforms(movie)
+		.map((platform) => normalizePlatformLabel(platform))
+		.filter(Boolean);
+}
+
+export function getMoviePlatformLabel(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string {
+	return getPlatformPresentations(getMoviePlatforms(movie))
+		.map((presentation) => presentation.displayLabel)
+		.join(' + ');
+}
+
+export function moviesSharePlatform(
+	left: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>,
+	right: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>,
+): boolean {
+	const leftPlatforms = new Set(getNormalizedMoviePlatforms(left));
+	return getNormalizedMoviePlatforms(right).some((platform) => leftPlatforms.has(platform));
+}
+
 export function getPlatformFilterOptions(
-	movies: Array<Pick<Movie, 'releasePlatform'>>,
+	movies: Array<Pick<Movie, 'releasePlatform' | 'releasePlatforms'>>,
 ): PlatformFilterOption[] {
 	const optionsByLabel = new Map<string, PlatformFilterOption>();
 
@@ -158,19 +212,20 @@ export function getPlatformFilterOptions(
 	}
 
 	for (const movie of movies) {
-		const presentation = getPlatformPresentation(movie.releasePlatform);
-		if (!presentation.normalizedLabel) continue;
+		for (const presentation of getPlatformPresentations(getMoviePlatforms(movie))) {
+			if (!presentation.normalizedLabel) continue;
 
-		const existing = optionsByLabel.get(presentation.normalizedLabel);
-		if (existing) {
-			existing.count += 1;
-			continue;
+			const existing = optionsByLabel.get(presentation.normalizedLabel);
+			if (existing) {
+				existing.count += 1;
+				continue;
+			}
+
+			optionsByLabel.set(presentation.normalizedLabel, {
+				...presentation,
+				count: 1,
+			});
 		}
-
-		optionsByLabel.set(presentation.normalizedLabel, {
-			...presentation,
-			count: 1,
-		});
 	}
 
 	return [...optionsByLabel.values()].sort((left, right) => {
