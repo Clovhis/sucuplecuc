@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-04-06. Fuente: src/data/movies/*.json
 
-Total de peliculas: 677
+Total de peliculas: 682
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -121,6 +121,7 @@ Total de peliculas: 677
 | 2024 | Dune: Part Two | dune-part-two-2024 | Accion | Netflix | +13 |
 | 2024 | El Jockey | el-jockey-2024 | Crimen | Disney Plus | +13 |
 | 2024 | EMILIA PÉREZ | emilia-perez-2024 | Drama | Stremio | +13 |
+| 2024 | Frida | frida-2024 | Documental | Prime Video | +17 |
 | 2024 | Furiosa: A Mad Max Saga | furiosa-a-mad-max-saga-2024 | Accion | Netflix | +16 |
 | 2024 | Gladiator II | gladiator-ii-2024 | Accion | Netflix | +13 |
 | 2024 | Godzilla x Kong: The New Empire | godzilla-x-kong-the-new-empire-2024 | Accion | Netflix | +13 |
@@ -132,10 +133,12 @@ Total de peliculas: 677
 | 2024 | I Saw the TV Glow | i-saw-the-tv-glow-2024 | Drama | HBO Max | +13 |
 | 2024 | Immaculate | immaculate-2024 | Terror | Stremio | +17 |
 | 2024 | Inside Out 2 | inside-out-2-2024 | Animacion | Disney Plus | ATP |
+| 2024 | Jim Henson: la audacia de las ideas | jim-henson-idea-man-2024 | Documental | Disney Plus | ATP |
 | 2024 | Joker: Folie à Deux | joker-folie-a-deux-2024 | Drama | HBO Max | +17 |
 | 2024 | Kingdom of the Planet of the Apes | kingdom-of-the-planet-of-the-apes-2024 | Accion | Disney Plus | +13 |
 | 2024 | Kraven the Hunter | kraven-the-hunter-2024 | Accion | HBO Max | +16 |
 | 2024 | Kung Fu Panda 4 | kung-fu-panda-4-2024 | Comedia | Prime Video | ATP |
+| 2024 | La música de John Williams | music-by-john-williams-2024 | Documental | Disney Plus | ATP |
 | 2024 | Longlegs | longlegs-2024 | Terror | Prime Video | +16 |
 | 2024 | Look Back | look-back-2024 | Anime | Stremio | ATP |
 | 2024 | Love Lies Bleeding | love-lies-bleeding-2024 | Thriller | HBO Max | +16 |
@@ -148,6 +151,7 @@ Total de peliculas: 677
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |
+| 2024 | Super/Man: La Historia De Christopher Reeve | super-man-the-christopher-reeve-story-2024 | Documental | HBO Max | +13 |
 | 2024 | The Apprentice (La historia de Trump) | the-apprentice-2024 | Historia | Stremio | +17 |
 | 2024 | The Beekeeper | the-beekeeper-2024 | Accion | Prime Video | +16 |
 | 2024 | The Brutalist | the-brutalist-2024 | Drama | HBO Max | +16 |
@@ -162,6 +166,7 @@ Total de peliculas: 677
 | 2024 | Twisters | twisters-2024 | Accion | Netflix | +13 |
 | 2024 | Venom: The Last Dance | venom-the-last-dance-2024 | Accion | HBO Max | +13 |
 | 2024 | Wicked | wicked-2024 | Fantasia | HBO Max | ATP |
+| 2024 | Will y Harper | will-y-harper-2024 | Documental | Netflix | +16 |
 | 2024 | Wolfs | wolfs-2024 | Comedia | Apple TV | +13 |
 | 2023 | Air | air-2023 | Drama | Prime Video | +17 |
 | 2023 | Ant-Man and the Wasp: Quantumania | ant-man-and-the-wasp-quantumania-2023 | Accion | Disney Plus | +13 |

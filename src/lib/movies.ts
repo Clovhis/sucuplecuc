@@ -15,6 +15,7 @@ const VERDICT_LABELS: Record<MovieVerdict, string> = {
 export type RecommendationGenreId =
 	| 'accion'
 	| 'comedia'
+	| 'documental'
 	| 'terror'
 	| 'drama'
 	| 'thriller'
@@ -55,6 +56,7 @@ export interface MovieEditorialSummary {
 export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'accion', label: 'Acción' },
 	{ id: 'comedia', label: 'Comedia' },
+	{ id: 'documental', label: 'Documentales' },
 	{ id: 'terror', label: 'Terror' },
 	{ id: 'drama', label: 'Drama' },
 	{ id: 'thriller', label: 'Thriller' },
@@ -403,6 +405,9 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	}
 	if (normalized.includes('comedia')) {
 		target.add('comedia');
+	}
+	if (normalized.includes('documental') || normalized.includes('documentary') || normalized.includes('docu')) {
+		target.add('documental');
 	}
 	if (normalized.includes('terror') || normalized.includes('horror')) {
 		target.add('terror');
