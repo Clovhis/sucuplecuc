@@ -13,7 +13,7 @@ Cine Posta is a minimal Astro + GitHub Pages movie review site focused on short,
 - Movie detail pages by slug (`/peliculas/<slug>/`)
 - Embedded YouTube trailer (via `trailerYoutubeId`)
 - Verdict badges + optional colloquial `verdictLabel`
-- Platform label (`releasePlatform`: Cine, Netflix, HBO Max, Apple TV, Prime Video, Disney Plus, Crunchyroll, Stremio)
+- Platform label (`releasePlatform`: Cine, Netflix, HBO Max, Paramount Plus, Apple TV, Prime Video, Disney Plus, Crunchyroll, Stremio)
 - Technical metadata in detail page (`originalTitle`, `category`, `director`, `mainCast`, `productionCompany`)
 - People panel backed by `src/data/people.json`, with birth date/age when available and initials fallback when no trustworthy portrait exists
 - Editorial helper blocks in detail page (`runtimeMinutes`, `idealFor`, bridge recommendations, related suggestions)
@@ -91,7 +91,7 @@ Current schema:
 	"poster": "https://... or /posters/local.svg",
 	"screenshots": ["https://.../shot-1.jpg", "https://.../shot-2.jpg"],
 	"trailerYoutubeId": "abc123",
-	"releasePlatform": "Cine|Netflix|HBO Max|Apple TV|Prime Video|Disney Plus|Crunchyroll|Stremio",
+	"releasePlatform": "Cine|Netflix|HBO Max|Paramount Plus|Apple TV|Prime Video|Disney Plus|Crunchyroll|Stremio",
 	"director": "Director Name",
 	"mainCast": ["Actor 1", "Actor 2", "Actor 3"],
 	"productionCompany": "Studio / Production Company",

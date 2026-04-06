@@ -205,7 +205,7 @@ img {
 	height: clamp(2.3rem, 1.3vw + 1.72rem, 2.54rem);
 	max-width: 100%;
 	display: block;
-	transform: translateY(1px);
+	transform: translateY(3px);
 }
 
 .site-search-bar__feedback {
@@ -792,6 +792,11 @@ img {
 	--platform-chip-logo-width: 3.8rem;
 }
 
+.home-platform-filter__badge.platform-chip--paramount-plus {
+	--platform-chip-logo-width: 3.85rem;
+	--platform-chip-logo-max-height: 1.62rem;
+}
+
 .home-platform-filter__badge.platform-chip--disney-plus {
 	--platform-chip-logo-width: 4.15rem;
 }
@@ -815,6 +820,10 @@ img {
 .home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo,
 .home-platform-filter__badge.platform-chip--crunchyroll .platform-chip__logo {
 	max-height: 1.16rem;
+}
+
+.home-platform-filter__badge.platform-chip--paramount-plus .platform-chip__logo {
+	max-height: 1.56rem;
 }
 
 .home-platform-filter__badge.platform-chip--cine .platform-chip__cine-label {
@@ -1414,6 +1423,16 @@ img {
 	border-color: rgba(122, 92, 255, 0.32);
 }
 
+.platform-chip--paramount-plus {
+	--platform-chip-logo-width: 3.7rem;
+	--platform-chip-logo-max-height: 1.5rem;
+	--platform-tile-logo-width: 4.3rem;
+	--platform-tile-logo-max-height: 2.24rem;
+	color: #edf4ff;
+	background: linear-gradient(180deg, rgba(18, 97, 233, 0.24), rgba(18, 97, 233, 0.08));
+	border-color: rgba(131, 177, 255, 0.34);
+}
+
 .platform-chip--disney-plus {
 	--platform-chip-logo-width: 3.9rem;
 	--platform-chip-logo-max-height: 1.02rem;
@@ -1969,6 +1988,13 @@ img {
 .movie-detail__credit-item dd {
 	margin: 0;
 	color: #dde3ef;
+}
+
+.movie-detail__platform-value {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.65rem;
 }
 
 .movie-detail__people-panel {

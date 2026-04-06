@@ -168,7 +168,7 @@ Argentine title policy (mandatory):
 - `title` must always be the name used for Argentine audiences, not the raw original title by default.
 - `originalTitle` must keep the source-language/original-market title.
 - Verify `title` against Argentine-facing sources in this order when available:
-  1. Argentine platform page (`Disney Plus AR`, `Netflix AR`, `HBO Max AR`, `Prime Video AR`, etc.)
+  1. Argentine platform page (`Disney Plus AR`, `Netflix AR`, `HBO Max AR`, `Paramount Plus AR`, `Prime Video AR`, etc.)
   2. `JustWatch AR`
   3. `IMDb` release info for `Argentina`
   4. local distributor/exhibitor material for Argentina
@@ -264,13 +264,14 @@ People pool policy (mandatory):
 Platform policy for Argentina (mandatory):
 
 - Always resolve `releasePlatform` for Argentine audience (`AR`) using trustworthy availability sources (prefer JustWatch `ar` pages and/or official platform pages).
-- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`.
+- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`.
 - Mandatory resolver flow (do not skip):
   1. Search availability for exact movie + year in AR.
   2. Read only AR offers and identify `FLATRATE` subscription availability first.
   3. Map provider name to allowed labels:
      - `Max` or `HBO Max` -> `HBO Max`
      - `Disney Plus` or `Disney+` -> `Disney Plus`
+     - `Paramount`, `Paramount Plus` or `Paramount+` -> `Paramount Plus`
      - `Amazon Prime Video` or `Prime Video` -> `Prime Video`
      - `Apple TV Plus` or `Apple TV+` -> `Apple TV`
      - `Netflix` -> `Netflix`
@@ -441,7 +442,7 @@ Set premiere fields only when requested or confidently confirmed:
 
 - `isPremiere: true`
 - `premiereLabel: "ESTRENO"`
-- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`) when reliable for AR
+- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`) when reliable for AR
 
 If not confirmed, keep:
 

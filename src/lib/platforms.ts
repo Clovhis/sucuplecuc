@@ -6,6 +6,7 @@ export type PlatformVariant =
 	| 'cine-ar'
 	| 'netflix'
 	| 'hbo-max'
+	| 'paramount-plus'
 	| 'disney-plus'
 	| 'prime-video'
 	| 'apple-tv'
@@ -34,6 +35,7 @@ const PLATFORM_DISPLAY_LABELS: Partial<Record<PlatformVariant, string>> = {
 	'cine-ar': 'CINE.AR',
 	netflix: 'Netflix',
 	'hbo-max': 'HBO Max',
+	'paramount-plus': 'Paramount+',
 	'disney-plus': 'Disney+',
 	'prime-video': 'Prime Video',
 	'apple-tv': 'Apple TV+',
@@ -46,6 +48,9 @@ const PLATFORM_VARIANTS_BY_LABEL: Record<string, PlatformVariant> = {
 	'cine.ar': 'cine-ar',
 	netflix: 'netflix',
 	'hbo max': 'hbo-max',
+	paramount: 'paramount-plus',
+	'paramount+': 'paramount-plus',
+	'paramount plus': 'paramount-plus',
 	'disney plus': 'disney-plus',
 	'prime video': 'prime-video',
 	'apple tv': 'apple-tv',
@@ -57,6 +62,7 @@ const PLATFORM_FILTER_ORDER = [
 	'netflix',
 	'disney plus',
 	'hbo max',
+	'paramount plus',
 	'prime video',
 	'apple tv',
 	'crunchyroll',
@@ -80,6 +86,10 @@ export const PLATFORM_ASSETS: Partial<Record<Exclude<PlatformVariant, 'default' 
 	},
 	'hbo-max': {
 		src: '/brand/platforms/hbo-max.svg',
+		wide: true,
+	},
+	'paramount-plus': {
+		src: '/brand/platforms/paramount-plus.png',
 		wide: true,
 	},
 	'disney-plus': {
@@ -136,6 +146,16 @@ export function getPlatformFilterOptions(
 	movies: Array<Pick<Movie, 'releasePlatform'>>,
 ): PlatformFilterOption[] {
 	const optionsByLabel = new Map<string, PlatformFilterOption>();
+
+	for (const platformLabel of PLATFORM_FILTER_ORDER) {
+		const presentation = getPlatformPresentation(platformLabel);
+		if (!presentation.normalizedLabel) continue;
+
+		optionsByLabel.set(presentation.normalizedLabel, {
+			...presentation,
+			count: 0,
+		});
+	}
 
 	for (const movie of movies) {
 		const presentation = getPlatformPresentation(movie.releasePlatform);

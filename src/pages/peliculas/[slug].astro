@@ -7,6 +7,7 @@ import {
 	getVerdictBadgeClass,
 	getVerdictLabel,
 } from '../../lib/movies';
+import { getPlatformPresentation } from '../../lib/platforms';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
 import PlatformBadge from '../../components/PlatformBadge.astro';
@@ -29,6 +30,7 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
 const peopleGroups = getMoviePeopleGroups(movie);
+const platformPresentation = getPlatformPresentation(movie.releasePlatform);
 const currentDate = new Date();
 const currentYear = currentDate.getUTCFullYear();
 const currentDateParts = {
@@ -468,8 +470,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								movie.releasePlatform && (
 									<div class="movie-detail__credit-item">
 										<dt>Plataforma</dt>
-										<dd>
+										<dd class="movie-detail__platform-value">
 											<PlatformBadge platform={movie.releasePlatform} />
+											<span>{platformPresentation.displayLabel}</span>
 										</dd>
 									</div>
 								)

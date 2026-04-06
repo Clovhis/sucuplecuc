@@ -12,6 +12,7 @@ const PEOPLE_PUBLIC_ROOT = path.resolve('public');
 const ALLOWED_PLATFORMS = new Set([
 	'Netflix',
 	'HBO Max',
+	'Paramount Plus',
 	'Apple TV',
 	'Cine',
 	'CINE.AR',

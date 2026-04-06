@@ -62,7 +62,7 @@ Research recent titles from both cinema and streaming.
 
 Preferred source types:
 
-- official platform release/news pages: Netflix, Max/HBO Max, Disney Plus, Prime Video, Apple TV, Crunchyroll
+- official platform release/news pages: Netflix, Max/HBO Max, Paramount Plus, Disney Plus, Prime Video, Apple TV, Crunchyroll
 - official studio/distributor pages and official trailers
 - JustWatch AR pages for current Argentine availability
 - trustworthy trade/industry or release references such as Variety, The Hollywood Reporter, IndieWire, IMDb release info, Box Office Mojo, Cines Argentinos

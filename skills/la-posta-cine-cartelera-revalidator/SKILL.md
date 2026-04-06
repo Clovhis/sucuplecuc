@@ -101,6 +101,7 @@ Platform resolver rules:
 - If a legal AR platform exists in the site allowlist, map it to one of:
   - `Netflix`
   - `HBO Max`
+  - `Paramount Plus`
   - `Apple TV`
   - `Prime Video`
   - `Disney Plus`

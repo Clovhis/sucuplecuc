@@ -103,7 +103,7 @@ Total de peliculas: 672
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Stremio | ATP |
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max | +17 |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Stremio | ATP |
-| 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Stremio | +13 |
+| 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Paramount Plus | +13 |
 | 2024 | A Real Pain | a-real-pain-2024 | Comedia | Disney Plus | +13 |
 | 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus | +17 |
 | 2024 | Am I OK? | am-i-ok-2024 | Comedia | HBO Max | +17 |
