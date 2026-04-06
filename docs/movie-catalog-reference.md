@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-05. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-06. Fuente: src/data/movies/*.json
 
-Total de peliculas: 672
+Total de peliculas: 677
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -41,6 +41,7 @@ Total de peliculas: 672
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Stremio | +17 |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Stremio | +17 |
 | 2026 | Whistle | whistle-2026 | Terror | Stremio | +16 |
+| 2025 | ¿Y dónde está el policía? | y-donde-esta-el-policia-2025 | Comedia | Paramount Plus | +13 |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max | +16 |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max | ATP |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Stremio | +13 |
@@ -108,6 +109,7 @@ Total de peliculas: 672
 | 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus | +17 |
 | 2024 | Am I OK? | am-i-ok-2024 | Comedia | HBO Max | +17 |
 | 2024 | Anora | anora-2024 | Comedia | HBO Max | +16 |
+| 2024 | Aún estoy aquí | aun-estoy-aqui-2024 | Drama | Paramount Plus | +14 |
 | 2024 | Bad Boys: Hasta la muerte | bad-boys-ride-or-die-2024 | Crimen | Prime Video | +17 |
 | 2024 | Beetlejuice Beetlejuice | beetlejuice-beetlejuice-2024 | Comedia | HBO Max | +13 |
 | 2024 | Beverly Hills Cop: Axel F | beverly-hills-cop-axel-f-2024 | Accion | Netflix | +16 |
@@ -468,11 +470,13 @@ Total de peliculas: 672
 | 2003 | The Matrix Reloaded | matrix-reloaded-2003 | Ciencia ficcion | HBO Max | +17 |
 | 2003 | The Matrix Revolutions | matrix-revolutions-2003 | Ciencia ficcion | Netflix | +17 |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus | +13 |
+| 2002 | Atrápame si puedes | atrapame-si-puedes-2002 | Drama | Paramount Plus | +13 |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video | +17 |
 | 2002 | Chicago | chicago-2002 | Comedia | Stremio | +13 |
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix | +13 |
 | 2002 | Halloween: Resurrection | halloween-resurrection-2002 | Terror | Stremio | +17 |
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max | ATP |
+| 2002 | Minority Report | minority-report-2002 | Ciencia ficcion | Paramount Plus | +13 |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio | +13 |
 | 2002 | Star Wars: Episode II - Attack of the Clones | star-wars-episode-ii-attack-of-the-clones-2002 | Ciencia ficcion | Disney Plus | +13 |
 | 2002 | The Lord of the Rings: The Two Towers | the-lord-of-the-rings-the-two-towers-2002 | Aventura | Stremio | +13 |
@@ -568,6 +572,7 @@ Total de peliculas: 672
 | 1988 | Rain Man | rain-man-1988 | Drama | Prime Video | +17 |
 | 1988 | Viernes 13. 7ª parte: Sangre nueva | friday-the-13th-part-vii-the-new-blood-1988 | Terror | Stremio | +17 |
 | 1987 | A Nightmare on Elm Street 3: Dream Warriors | a-nightmare-on-elm-street-3-dream-warriors-1987 | Terror | Stremio | +17 |
+| 1987 | Los intocables de Eliot Ness | los-intocables-de-eliot-ness-1987 | Crimen | Paramount Plus | +17 |
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio | ATP |
 | 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Stremio | +13 |
 | 1986 | Aliens | aliens-1986 | Ciencia ficcion | Disney Plus | +17 |
