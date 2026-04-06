@@ -18,6 +18,15 @@ function escapeCell(value) {
 	return String(value ?? '').replace(/\|/g, '\\|');
 }
 
+function getCatalogPlatformLabel(movie) {
+	const platforms =
+		Array.isArray(movie.releasePlatforms) && movie.releasePlatforms.length > 0
+			? movie.releasePlatforms
+			: [movie.releasePlatform];
+
+	return [...new Set(platforms.map((value) => String(value ?? '').trim()).filter(Boolean))].slice(0, 2).join(' + ');
+}
+
 async function loadMovies() {
 	const fileNames = (await readdir(MOVIES_DIR)).filter((fileName) => fileName.endsWith('.json'));
 	const movies = await Promise.all(
@@ -44,7 +53,7 @@ export async function updateMovieCatalogReference() {
 		'| --- | --- | --- | --- | --- | --- |',
 		...movies.map(
 			(movie) =>
-				`| ${escapeCell(movie.year)} | ${escapeCell(movie.title)} | ${escapeCell(movie.slug)} | ${escapeCell(movie.category)} | ${escapeCell(movie.releasePlatform ?? '')} | ${escapeCell(movie.audienceRating ?? '')} |`,
+				`| ${escapeCell(movie.year)} | ${escapeCell(movie.title)} | ${escapeCell(movie.slug)} | ${escapeCell(movie.category)} | ${escapeCell(getCatalogPlatformLabel(movie))} | ${escapeCell(movie.audienceRating ?? '')} |`,
 		),
 		'',
 	];

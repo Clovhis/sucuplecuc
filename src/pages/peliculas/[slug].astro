@@ -3,14 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
 	getMovieEditorialSummary,
 	getMovies,
+	getMoviePlatformLabel,
+	getMoviePlatforms,
 	getPosterUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
 } from '../../lib/movies';
-import { getPlatformPresentation } from '../../lib/platforms';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
-import PlatformBadge from '../../components/PlatformBadge.astro';
+import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import { createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -30,7 +31,8 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
 const peopleGroups = getMoviePeopleGroups(movie);
-const platformPresentation = getPlatformPresentation(movie.releasePlatform);
+const moviePlatforms = getMoviePlatforms(movie);
+const moviePlatformLabel = getMoviePlatformLabel(movie);
 const currentDate = new Date();
 const currentYear = currentDate.getUTCFullYear();
 const currentDateParts = {
@@ -285,7 +287,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				<div class="movie-detail__meta">
 					<span>{movie.year}</span>
 					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
-					<PlatformBadge platform={movie.releasePlatform} />
+					<PlatformBadgeGroup platforms={moviePlatforms} />
 				</div>
 				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
 					<div class="movie-detail__hero-stack">
@@ -467,12 +469,12 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								<dd>{movie.category}</dd>
 							</div>
 							{
-								movie.releasePlatform && (
+								moviePlatforms.length > 0 && (
 									<div class="movie-detail__credit-item">
-										<dt>Plataforma</dt>
+										<dt>{moviePlatforms.length > 1 ? 'Plataformas' : 'Plataforma'}</dt>
 										<dd class="movie-detail__platform-value">
-											<PlatformBadge platform={movie.releasePlatform} />
-											<span>{platformPresentation.displayLabel}</span>
+											<PlatformBadgeGroup platforms={moviePlatforms} />
+											<span>{moviePlatformLabel}</span>
 										</dd>
 									</div>
 								)

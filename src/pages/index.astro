@@ -251,7 +251,12 @@ const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`
 							(poster instanceof HTMLImageElement ? poster.currentSrc || poster.src : ''),
 						meta: card.dataset.movieMeta ?? '',
 						cast: card.dataset.movieCast ?? '',
-						platform: card.dataset.moviePlatform ?? '',
+						platforms: new Set(
+							(card.dataset.moviePlatforms ?? '')
+								.split(',')
+								.map((value) => value.trim())
+								.filter(Boolean),
+						),
 						genres: new Set(
 							(card.dataset.movieGenres ?? '')
 								.split(',')
@@ -598,7 +603,7 @@ const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`
 
 				for (const entry of movieIndex) {
 					const genreMatch = !activeGenre || entry.genres.has(activeGenre);
-					const platformMatch = !activePlatform || entry.platform === activePlatform;
+					const platformMatch = !activePlatform || entry.platforms.has(activePlatform);
 					const queryMatch = query.length === 0 || entry.searchable.includes(query);
 					const show = genreMatch && platformMatch && queryMatch;
 					if (entry.element.hidden === show) {

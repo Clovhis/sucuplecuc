@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-recent-scout
-description: Find one relevant recent movie for La Posta Cine by using the current date, browsing recent theatrical and streaming releases, verifying the movie is not already in `docs/movie-catalog-reference.md` or `src/data/movies`, and then chaining the existing add + cartelera revalidation + audit workflows. Use when Codex needs to scout a fresh movie to publish from cinema or streaming catalogs, especially for prompts like "busca una pelicula reciente para subir", "releva estrenos", "fijate si hay alguna pelicula nueva para cargar", or "encontra algo reciente que no este en el sitio".
+description: Find one relevant recent movie for La Posta Cine by using the current date, browsing recent theatrical and streaming releases, verifying the movie is not already in `docs/movie-catalog-reference.md` or `src/data/movies`, and then chaining the existing add + cartelera revalidation + audit workflows. Use when Codex needs to scout a fresh movie to publish from cinema or streaming catalogs, especially for prompts like "busca una pelicula reciente para subir", "releva estrenos", "fijate si hay alguna pelicula nueva para cargar", or "encontra algo reciente que no este en el sitio". The downstream add flow may resolve the movie as single-platform or multi-platform in AR.
 ---
 
 # la-posta-cine-recent-scout
@@ -62,7 +62,7 @@ Research recent titles from both cinema and streaming.
 
 Preferred source types:
 
-- official platform release/news pages: Netflix, Max/HBO Max, Paramount Plus, Disney Plus, Prime Video, Apple TV, Crunchyroll
+- official platform release/news pages: Netflix, Max/HBO Max, Paramount Plus, Disney Plus, Prime Video, Apple TV, Crunchyroll, Mercado Play
 - official studio/distributor pages and official trailers
 - JustWatch AR pages for current Argentine availability
 - trustworthy trade/industry or release references such as Variety, The Hollywood Reporter, IndieWire, IMDb release info, Box Office Mojo, Cines Argentinos
@@ -118,7 +118,7 @@ Before triggering the add skill, collect:
 - original title when different
 - year
 - exact release date used for recency
-- release context: `Cine` or likely streaming platform
+- release context: `Cine`, likely streaming platform, or likely multi-platform AR combination when the evidence is strong
 - at least `2` source URLs proving the movie is recent/relevant
 - a short note explaining why this was chosen over the other shortlisted titles
 
@@ -129,7 +129,7 @@ Once a candidate passes the gate, immediately use `la-posta-cine-add-movie`.
 Recommended handoff shape:
 
 ```text
-Usa $la-posta-cine-add-movie para agregar <Title> (<Year>). Es una pelicula reciente confirmada al <today>, con estreno/availability fechado el <release-date>. Contexto: <Cine|platform>. Fuentes para metadata y fecha: <url-1>, <url-2>, <url-3>. Si no hay opinion del usuario, inferi verdict y review desde recepcion critica verificada sin inventar datos.
+Usa $la-posta-cine-add-movie para agregar <Title> (<Year>). Es una pelicula reciente confirmada al <today>, con estreno/availability fechado el <release-date>. Contexto: <Cine|platform|multi-platform>. Fuentes para metadata y fecha: <url-1>, <url-2>, <url-3>. Si no hay opinion del usuario, inferi verdict y review desde recepcion critica verificada sin inventar datos.
 ```
 
 Rules:
@@ -149,6 +149,7 @@ Usa $la-posta-cine-cartelera-revalidator para confirmar la vigencia de cartelera
 ```
 
 If the add step resolves the movie directly to a non-theatrical platform, skip this handoff.
+If the add step resolves the movie to a legal AR multi-platform combination, keep going directly to the auditor unless the primary label is still `Cine`.
 
 ## Handoff to audit workflow
 

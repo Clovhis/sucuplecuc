@@ -18,6 +18,7 @@ const ALLOWED_PLATFORMS = new Set([
 	'CINE.AR',
 	'Prime Video',
 	'Disney Plus',
+	'Mercado Play',
 	'Crunchyroll',
 	'Stremio',
 ]);
@@ -671,6 +672,43 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 
 	if (movie.releasePlatform !== undefined && !ALLOWED_PLATFORMS.has(movie.releasePlatform)) {
 		addFinding(findings, 'error', 'invalid-platform', candidatePath, `Unsupported releasePlatform "${String(movie.releasePlatform)}".`);
+	}
+
+	if (movie.releasePlatforms !== undefined) {
+		if (!Array.isArray(movie.releasePlatforms)) {
+			addFinding(findings, 'error', 'invalid-platforms', candidatePath, 'releasePlatforms must be an array when present.');
+		} else {
+			if (movie.releasePlatforms.length === 0) {
+				addFinding(findings, 'error', 'empty-platforms', candidatePath, 'releasePlatforms should not be an empty array.');
+			}
+			if (movie.releasePlatforms.length > 2) {
+				addFinding(findings, 'error', 'too-many-platforms', candidatePath, 'releasePlatforms supports at most 2 platforms.');
+			}
+
+			const normalizedPlatforms = new Set();
+			for (const platform of movie.releasePlatforms) {
+				if (typeof platform !== 'string' || platform.trim().length === 0) {
+					addFinding(findings, 'error', 'invalid-platforms', candidatePath, 'releasePlatforms can only contain non-empty strings.');
+					continue;
+				}
+				if (!ALLOWED_PLATFORMS.has(platform)) {
+					addFinding(findings, 'error', 'invalid-platform', candidatePath, `Unsupported releasePlatforms entry "${String(platform)}".`);
+				}
+				const normalizedPlatform = platform.trim().toLowerCase();
+				if (normalizedPlatforms.has(normalizedPlatform)) {
+					addFinding(findings, 'warn', 'duplicate-platform', candidatePath, `releasePlatforms repeats "${platform}".`);
+				}
+				normalizedPlatforms.add(normalizedPlatform);
+			}
+
+			if (
+				typeof movie.releasePlatform === 'string' &&
+				movie.releasePlatform.trim().length > 0 &&
+				!movie.releasePlatforms.includes(movie.releasePlatform)
+			) {
+				addFinding(findings, 'warn', 'platform-mismatch', candidatePath, 'releasePlatform should be included in releasePlatforms when both are present.');
+			}
+		}
 	}
 
 	const argentinaTitleCandidate = detectArgentinaTitleDrift(movie);

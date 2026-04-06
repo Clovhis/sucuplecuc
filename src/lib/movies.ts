@@ -1,4 +1,5 @@
 import type { Movie, MovieVerdict } from '../types/movie';
+import { getMoviePlatformLabel, getMoviePlatforms, moviesSharePlatform } from './platforms';
 
 const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) as Record<
 	string,
@@ -251,6 +252,24 @@ function validateMovies(movies: Movie[]): void {
 		}
 		if (!Array.isArray(movie.mainCast)) {
 			throw new Error(`Movie "${slug}" has invalid mainCast.`);
+		}
+		if (movie.releasePlatforms !== undefined) {
+			if (!Array.isArray(movie.releasePlatforms)) {
+				throw new Error(`Movie "${slug}" has invalid releasePlatforms format.`);
+			}
+			if (movie.releasePlatforms.length === 0 || movie.releasePlatforms.length > 2) {
+				throw new Error(`Movie "${slug}" must define between 1 and 2 releasePlatforms when present.`);
+			}
+
+			const normalizedPlatforms = movie.releasePlatforms
+				.map((platform) => (typeof platform === 'string' ? platform.trim() : ''))
+				.filter(Boolean);
+			if (normalizedPlatforms.length !== movie.releasePlatforms.length) {
+				throw new Error(`Movie "${slug}" has empty or invalid releasePlatforms entries.`);
+			}
+			if (new Set(normalizedPlatforms).size !== normalizedPlatforms.length) {
+				throw new Error(`Movie "${slug}" repeats platforms in releasePlatforms.`);
+			}
 		}
 		if (movie.genres !== undefined) {
 			if (!Array.isArray(movie.genres)) {
@@ -767,7 +786,7 @@ function getRelatedMovieCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
 			if (normalizeSearchText(candidate.director) === normalizeSearchText(movie.director)) {
 				score += 18;
 			}
-			if (candidate.releasePlatform && candidate.releasePlatform === movie.releasePlatform) {
+			if (moviesSharePlatform(candidate, movie)) {
 				score += 3;
 			}
 			if (isArgentinianMovie(candidate) && isArgentinianMovie(movie)) {
@@ -842,3 +861,5 @@ export function getPosterUrl(poster: string): string {
 export function getMoviePath(slug: string): string {
 	return joinWithBase(`peliculas/${slug}/`);
 }
+
+export { getMoviePlatformLabel, getMoviePlatforms } from './platforms';

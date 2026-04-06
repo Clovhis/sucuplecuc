@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-auditor
-description: Audit recently added or revalidated La Posta Cine movie entries after `la-posta-cine-add-movie`, `la-posta-cine-cartelera-revalidator`, or any bulk/backfill load. Use when Codex needs to verify newly added or platform-adjusted `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, trailer validity, review quality, awards structure, platform labels, catalog sync, and safe diff scope before or after publishing.
+description: Audit recently added or revalidated La Posta Cine movie entries after `la-posta-cine-add-movie`, `la-posta-cine-cartelera-revalidator`, or any bulk/backfill load. Use when Codex needs to verify newly added or platform-adjusted `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, trailer validity, review quality, awards structure, single or multi-platform labels, catalog sync, and safe diff scope before or after publishing.
 ---
 
 # la-posta-cine-auditor
@@ -13,7 +13,7 @@ If the branch still contains fresh `Cine` claims that have not yet been checked 
 
 ## Scope
 
-Use this skill after a movie add/backfill/revalidation workflow, especially when the branch contains new files under `src/data/movies` or platform changes from `Cine` to another label.
+Use this skill after a movie add/backfill/revalidation workflow, especially when the branch contains new files under `src/data/movies`, platform changes from `Cine` to another label, or provider adjustments that add/remove `releasePlatforms`.
 
 Allowed fix paths:
 
@@ -84,6 +84,7 @@ The bundled script checks:
 - `verdictLabel` hard cap of `21` visible characters so the card badge never clips
 - `verdictLabel` readability so the badge says clearly if the movie is buena, pasable o mala
 - platform labels against the site allowlist
+- `releasePlatform` / `releasePlatforms` consistency: no duplicates, max `2` labels total, `releasePlatform` preserved as primary, and `Stremio` kept exclusive
 - Argentine audience title drift: `title` should reflect the name used in Argentina, while `originalTitle` keeps the source/original title
 - catalog sync in `docs/movie-catalog-reference.md`
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
@@ -112,7 +113,7 @@ The third-party mention check is also mandatory:
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:
 
 - official YouTube channels for trailers
-- official movie/distributor pages, JustWatch AR, IMDb, Rotten Tomatoes, Metacritic
+- official movie/distributor pages, JustWatch AR, official AR platform pages (including Mercado Play), IMDb, Rotten Tomatoes, Metacritic
 - Argentine platform pages / IMDb Argentina release info when validating localized titles
 - official award pages or reliable databases for Oscar/Cannes/Grammy wins
 

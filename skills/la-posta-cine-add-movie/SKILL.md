@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -118,7 +118,7 @@ Rules:
 - If candidate `slug` or normalized `title + year` already appears in the catalog, stop and report duplicate before doing deeper checks.
 - Do not trust the catalog blindly: perform a final targeted duplicate verification in `src/data/movies` (exact slug/title-year check) before writing.
 - After creating or updating movie entries (single or bulk), always refresh `docs/movie-catalog-reference.md` in the same change set.
-- Keep the catalog sorted and include at least: `year`, `title`, `slug`, `category`, `releasePlatform`.
+- Keep the catalog sorted and include at least: `year`, `title`, `slug`, `category`, `releasePlatform`; include `releasePlatforms` too when the movie is multi-platform.
 
 ## Workflow chaining
 
@@ -264,7 +264,9 @@ People pool policy (mandatory):
 Platform policy for Argentina (mandatory):
 
 - Always resolve `releasePlatform` for Argentine audience (`AR`) using trustworthy availability sources (prefer JustWatch `ar` pages and/or official platform pages).
-- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`.
+- `releasePlatform` remains the primary/platform badge leader. When a second verified legal AR platform also exists, store both in `releasePlatforms` with a hard cap of `2` total labels.
+- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `Stremio`.
+- `Stremio` is exclusive: if the movie resolves to `Stremio`, do not also create `releasePlatforms` and do not combine it with any other provider.
 - Mandatory resolver flow (do not skip):
   1. Search availability for exact movie + year in AR.
   2. Read only AR offers and identify `FLATRATE` subscription availability first.
@@ -275,16 +277,21 @@ Platform policy for Argentina (mandatory):
      - `Amazon Prime Video` or `Prime Video` -> `Prime Video`
      - `Apple TV Plus` or `Apple TV+` -> `Apple TV`
      - `Netflix` -> `Netflix`
-- `Crunchyroll` -> `Crunchyroll`
-  4. If at least one mapped `FLATRATE` provider exists, use that mapped label (never `Stremio` in this case).
-  5. If there is no mapped `FLATRATE` but AR indicates cinema-only availability, set `releasePlatform: "Cine"`.
-  6. If AR availability exists only in providers outside allowlist, or AR has no confirmed availability, set `releasePlatform: "Stremio"`.
+     - `Crunchyroll` -> `Crunchyroll`
+     - `Mercado Play` -> `Mercado Play`
+  4. If at least one mapped legal AR provider exists, use the best verified provider as `releasePlatform`.
+  5. If a second mapped legal AR provider is also verified, persist both in `releasePlatforms`, preserving `releasePlatform` as the first label and never exceeding `2` total labels.
+  6. If more than `2` legal AR providers are verified, keep only the primary `releasePlatform` plus one secondary label that is also clearly confirmed for AR.
+  7. If `releasePlatform` is already `Stremio`, keep it single-platform even if a weaker or conflicting source suggests another service.
+  8. If there is no mapped legal AR provider but AR indicates cinema-only availability, set `releasePlatform: "Cine"` and omit `releasePlatforms`.
+  9. If AR availability exists only in providers outside allowlist, or AR has no confirmed availability, set `releasePlatform: "Stremio"` and omit `releasePlatforms`.
 - If `releasePlatform` ends in `Cine`, do not trust that label as final until `la-posta-cine-cartelera-revalidator` confirms the movie is still in current Argentine cartelera.
 - Forbidden shortcuts:
   - Do not assign `Stremio` by default without AR lookup attempt.
   - Do not copy platform from another movie without validating title/year.
   - Do not use non-AR market data to override AR result.
 - Never leave `releasePlatform` empty.
+- Never persist duplicated labels across `releasePlatform` / `releasePlatforms`.
 
 ## Content schema
 
@@ -317,13 +324,16 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "review": "Resena breve en castellano rioplatense",
   "isPremiere": false,
   "premiereLabel": "",
-  "releasePlatform": "Stremio"
+  "releasePlatform": "Netflix",
+  "releasePlatforms": ["Netflix", "Mercado Play"]
 }
 ```
 
 If optional fields are not used by current project schema, keep only supported fields.
 If `screenshots` are not confirmed, keep `[]`.
 The director/cast portraits are not stored inside the movie JSON; they must live in `src/data/people.json` plus local files in `public/people/`.
+If the movie is single-platform, omit `releasePlatforms`.
+If the movie resolves to `Stremio`, keep only `releasePlatform: "Stremio"`.
 
 ## Editorial metadata (mandatory)
 
@@ -442,7 +452,10 @@ Set premiere fields only when requested or confidently confirmed:
 
 - `isPremiere: true`
 - `premiereLabel: "ESTRENO"`
-- `releasePlatform`: only one allowed label (`Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Stremio`) when reliable for AR
+- `releasePlatform`: primary AR label
+- `releasePlatforms`: optional array with max `2` total legal AR labels when the title is truly multi-platform
+- Allowed labels are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `Stremio`
+- Never combine `Stremio` with another provider in premiere metadata
 
 If not confirmed, keep:
 
@@ -506,13 +519,13 @@ Return all of the following:
 
 1. Branch created
 2. New file path
-3. Field summary (`title/originalTitle/year/category/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere`)
+3. Field summary (`title/originalTitle/year/category/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere/releasePlatform/releasePlatforms`)
 4. `npm run build` result
 5. `git diff --name-only` output
 6. Explicit confirmation: `No se modifico ningun archivo fuera de peliculas, people pool y catalogo`
 7. Optional PR link or exact command to open PR
 8. External review source used (site + URL) and what was extracted from it
-9. Platform source used for AR (site + URL) and why chosen `releasePlatform` matches resolver flow
+9. Platform source used for AR (site + URL) and why chosen `releasePlatform` / optional `releasePlatforms` match resolver flow
 10. Awards source used (site + URL), verified premios/galardones found, and exact final `awards.wins` content (including empty array when no wins apply)
 11. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
 12. People pool confirmation with exact credited names added/updated in `src/data/people.json` and cached image paths in `public/people/`
@@ -531,7 +544,8 @@ Return all of the following:
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)
 - [ ] External review enrichment from specialized North American source (or explicit fallback/user-provided link)
 - [ ] Awards enrichment completed: premios/galardones verified and `awards.wins` always present (wins list or `[]`)
-- [ ] `releasePlatform` resolved with AR evidence and mapping flow (not defaulted blindly)
+- [ ] `releasePlatform` / optional `releasePlatforms` resolved with AR evidence and mapping flow (not defaulted blindly)
+- [ ] Multi-platform titles keep max `2` labels total and never combine another provider with `Stremio`
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
 - [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)

@@ -41,6 +41,7 @@ export interface Movie {
 	screenshots?: string[];
 	trailerYoutubeId: string;
 	releasePlatform?: string;
+	releasePlatforms?: string[];
 	director: string;
 	mainCast: string[];
 	productionCompany: string;
