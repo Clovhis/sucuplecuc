@@ -1,0 +1,10 @@
+# Default owner for the repository contents
+* @Clovhis
+
+# Protect repository configuration itself
+/.github/ @Clovhis
+/.github/CODEOWNERS @Clovhis
+
+# Security-sensitive areas
+/supabase/ @Clovhis
+/scripts/ @Clovhis

@@ -4,19 +4,9 @@ interface Props {
 }
 
 const { movieSlug } = Astro.props as Props;
-const supabaseUrl =
-	import.meta.env.PUBLIC_SUPABASE_URL || 'https://bftcrexcwktyiqsermni.supabase.co';
-const supabaseAnonKey =
-	import.meta.env.PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_hNR05jnfp5EF3Vbduk9jnA_cywpdIOM';
 ---
 
-<section
-	class="rating-card"
-	data-rating-widget
-	data-movie-slug={movieSlug}
-	data-supabase-url={supabaseUrl}
-	data-supabase-anon-key={supabaseAnonKey}
->
+<section class="rating-card" data-rating-widget data-movie-slug={movieSlug}>
 	<div class="rating-card__top">
 		<p class="rating-card__title">Qué opina la tribuna</p>
 		<p class="rating-card__summary">
@@ -37,7 +27,6 @@ const supabaseAnonKey =
 
 <script>
 	import {
-		createSupabaseBrowserClient,
 		isSupabaseConfigured,
 		supabase,
 	} from '../lib/supabaseClient';
@@ -57,12 +46,24 @@ const supabaseAnonKey =
 		const storageKey = 'la-posta-cine-visitor-token';
 		const currentToken = localStorage.getItem(storageKey);
 		if (currentToken) return currentToken;
-		const nextToken =
-			typeof crypto !== 'undefined' && crypto.randomUUID
-				? crypto.randomUUID()
-				: `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+		const nextToken = createVisitorToken();
 		localStorage.setItem(storageKey, nextToken);
 		return nextToken;
+	}
+
+	function createVisitorToken() {
+		if (typeof crypto !== 'undefined') {
+			if (typeof crypto.randomUUID === 'function') {
+				return crypto.randomUUID();
+			}
+
+			if (typeof crypto.getRandomValues === 'function') {
+				const bytes = crypto.getRandomValues(new Uint8Array(16));
+				return Array.from(bytes, (byte) => byte.toString(16).padStart(2, '0')).join('');
+			}
+		}
+
+		return `${Date.now()}-${Math.random().toString(36).slice(2, 18)}`;
 	}
 
 	function formatAverage(value) {
@@ -72,9 +73,6 @@ const supabaseAnonKey =
 
 	async function setupRatingWidget(widget) {
 		const movieSlug = widget.dataset.movieSlug ?? '';
-		const widgetSupabaseUrl = widget.dataset.supabaseUrl ?? '';
-		const widgetSupabaseAnonKey = widget.dataset.supabaseAnonKey ?? '';
-
 		const averageNode = widget.querySelector('[data-rating-average]');
 		const countNode = widget.querySelector('[data-rating-count]');
 		const statusNode = widget.querySelector('[data-rating-status]');
@@ -89,12 +87,7 @@ const supabaseAnonKey =
 			return;
 		}
 
-		const ratingClient =
-			widgetSupabaseUrl && widgetSupabaseAnonKey
-				? createSupabaseBrowserClient(widgetSupabaseUrl, widgetSupabaseAnonKey)
-				: supabase;
-
-		if (!isSupabaseConfigured || !ratingClient) {
+		if (!isSupabaseConfigured || !supabase) {
 			statusNode.textContent = 'Rating no configurado (faltan variables Supabase).';
 			return;
 		}
@@ -122,16 +115,16 @@ const supabaseAnonKey =
 			statusNode.textContent = 'Cargando puntuación...';
 
 			const [statsResponse, voteResponse] = await Promise.all([
-				ratingClient
+				supabase
 					.from('movie_rating_stats')
 					.select('avg_rating,vote_count')
 					.eq('movie_slug', movieSlug)
 					.maybeSingle(),
-				ratingClient
-					.from('movie_ratings')
-					.select('rating')
-					.eq('movie_slug', movieSlug)
-					.eq('visitor_token', visitorToken)
+				supabase
+					.rpc('get_movie_rating', {
+						p_movie_slug: movieSlug,
+						p_visitor_token: visitorToken,
+					})
 					.maybeSingle(),
 			]);
 
@@ -157,14 +150,11 @@ const supabaseAnonKey =
 			setDisabled(true);
 			statusNode.textContent = 'Guardando voto...';
 
-			const { error } = await ratingClient.from('movie_ratings').upsert(
-				{
-					movie_slug: movieSlug,
-					visitor_token: visitorToken,
-					rating: nextVote,
-				},
-				{ onConflict: 'movie_slug,visitor_token' },
-			);
+			const { error } = await supabase.rpc('submit_movie_rating', {
+				p_movie_slug: movieSlug,
+				p_visitor_token: visitorToken,
+				p_rating: nextVote,
+			});
 
 			if (error) {
 				statusNode.textContent = 'No se pudo guardar tu voto.';

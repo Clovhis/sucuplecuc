@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { ABOUT_PATH, CONTACT_EMAIL, SITE_LANGUAGE, SITE_LOCALE, SITE_NAME } from '../lib/seo';
+import { DEFAULT_SUPABASE_URL } from '../lib/supabaseClient';
 
 interface Props {
 	title: string;
@@ -21,6 +22,21 @@ const canonical = Astro.site
 	? new URL(Astro.url.pathname, Astro.site).toString()
 	: Astro.url.toString();
 const assetBase = import.meta.env.BASE_URL;
+const supabaseOrigin = new URL(import.meta.env.PUBLIC_SUPABASE_URL || DEFAULT_SUPABASE_URL).origin;
+const contentSecurityPolicy = [
+	"default-src 'self'",
+	"base-uri 'self'",
+	"object-src 'none'",
+	"form-action 'self'",
+	"img-src 'self' data: https:",
+	`connect-src 'self' ${supabaseOrigin}`,
+	"font-src 'self' https://fonts.gstatic.com data:",
+	"style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+	"script-src 'self'",
+	"frame-src https://www.youtube.com https://www.youtube-nocookie.com",
+	"manifest-src 'self'",
+	'upgrade-insecure-requests',
+].join('; ');
 const footerLinks = [
 	{ href: import.meta.env.BASE_URL, label: 'Inicio' },
 	{ href: ABOUT_PATH, label: 'Sobre Cine Posta' },
@@ -36,9 +52,10 @@ const footerLinks = [
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="generator" content={Astro.generator} />
+		<meta http-equiv="Content-Security-Policy" content={contentSecurityPolicy} />
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 		<meta name="author" content={SITE_NAME} />
+		<meta name="referrer" content="strict-origin-when-cross-origin" />
 		<meta name="theme-color" content="#06070a" />
 		<meta name="application-name" content={SITE_NAME} />
 		<title>{title}</title>
