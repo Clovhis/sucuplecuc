@@ -19,8 +19,8 @@
     "gsc:inspect": "node ./scripts/gsc.mjs inspect"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.97.0",
-    "astro": "^5.17.1",
+    "@supabase/supabase-js": "^2.101.1",
+    "astro": "^6.1.4",
     "googleapis": "^171.4.0"
   }
 }

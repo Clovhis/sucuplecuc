@@ -72,6 +72,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 				loading={posterLoading}
 				decoding="async"
 				fetchpriority={posterFetchPriority}
+				referrerpolicy="no-referrer"
 				data-movie-poster
 			/>
 			<span class={`badge movie-card__badge ${verdictClass}`}>{verdictLabel}</span>

@@ -12,6 +12,7 @@ export interface CinemaNewsItem {
 interface CinemaNewsFeed {
 	name: string;
 	url: string;
+	articleHosts: string[];
 }
 
 interface CinemaNewsResult {
@@ -26,22 +27,27 @@ const FEEDS: CinemaNewsFeed[] = [
 	{
 		name: 'LA NACION',
 		url: 'https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/espectaculos/?outputType=xml',
+		articleHosts: ['lanacion.com.ar', 'www.lanacion.com.ar'],
 	},
 	{
 		name: 'Clarín',
 		url: 'https://www.clarin.com/rss/espectaculos/cine/',
+		articleHosts: ['clarin.com', 'www.clarin.com'],
 	},
 	{
 		name: 'Página/12',
 		url: 'https://www.pagina12.com.ar/arc/outboundfeeds/rss/suplementos/cultura-y-espectaculos/notas',
+		articleHosts: ['pagina12.com.ar', 'www.pagina12.com.ar'],
 	},
 	{
 		name: 'EscribiendoCine',
 		url: 'https://www.escribiendocine.com/rss/noticias/',
+		articleHosts: ['escribiendocine.com', 'www.escribiendocine.com'],
 	},
 	{
 		name: 'Cines Argentinos',
-		url: 'http://feeds.feedburner.com/cinesargentinos',
+		url: 'https://feeds.feedburner.com/cinesargentinos',
+		articleHosts: ['cinesargentinos.com.ar', 'www.cinesargentinos.com.ar'],
 	},
 ];
 
@@ -171,22 +177,20 @@ const REQUIRED_CINEMA_PATTERNS = [
 
 const fetchHeaders = {
 	accept: 'application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8',
-	'user-agent': 'Mozilla/5.0 (compatible; CinePostaBot/1.0; +https://cineposta.com)',
+	'user-agent': 'Mozilla/5.0 (compatible; CinePostaBot/1.0; +https://www.cineposta.com.ar)',
 };
 const SITE_TIMEZONE = 'America/Argentina/Buenos_Aires';
+const ALLOWED_REMOTE_PROTOCOLS = new Set(['https:']);
+const MAX_REDIRECT_HOPS = 3;
 
 export async function getCinemaNews(): Promise<CinemaNewsResult> {
 	const collectedItems: CinemaNewsItem[] = [];
 
 	for (const feed of FEEDS) {
 		try {
-			const response = await fetch(feed.url, { headers: fetchHeaders });
-			if (!response.ok) {
-				throw new Error(`Feed responded with ${response.status}`);
-			}
-
-			const xml = await response.text();
-			const items = parseFeedItems(xml, feed.name);
+			const feedUrl = new URL(feed.url);
+			const xml = await fetchTrustedText(feedUrl, [normalizeHostname(feedUrl.hostname)]);
+			const items = parseFeedItems(xml, feed);
 			if (items.length > 0) {
 				collectedItems.push(...items);
 			}
@@ -219,18 +223,18 @@ export async function getCinemaNews(): Promise<CinemaNewsResult> {
 	};
 }
 
-function parseFeedItems(xml: string, source: string) {
+function parseFeedItems(xml: string, feed: CinemaNewsFeed) {
 	const itemBlocks = Array.from(xml.matchAll(/<item\b[\s\S]*?<\/item>/gi), (match) => match[0]);
 	const items = itemBlocks
-		.map((block) => parseFeedItem(block, source))
+		.map((block) => parseFeedItem(block, feed))
 		.filter((item): item is CinemaNewsItem => Boolean(item));
 
 	return items.slice(0, MAX_NEWS_ITEMS);
 }
 
-function parseFeedItem(block: string, source: string): CinemaNewsItem | null {
+function parseFeedItem(block: string, feed: CinemaNewsFeed): CinemaNewsItem | null {
 	const title = cleanText(extractTag(block, 'title'));
-	const link = cleanText(extractTag(block, 'link'));
+	const link = normalizeArticleUrl(extractTag(block, 'link'), feed);
 	const category = cleanText(extractTag(block, 'category'));
 	const description = extractTag(block, 'description') || extractTag(block, 'content:encoded');
 	const publishedAt = normalizePublishedAt(cleanText(extractTag(block, 'pubDate')));
@@ -250,7 +254,7 @@ function parseFeedItem(block: string, source: string): CinemaNewsItem | null {
 		return null;
 	}
 
-	if (!looksLikeCinemaStory(source, category, haystack, link)) {
+	if (!looksLikeCinemaStory(feed.name, category, haystack, link)) {
 		return null;
 	}
 
@@ -258,7 +262,7 @@ function parseFeedItem(block: string, source: string): CinemaNewsItem | null {
 		title,
 		summary,
 		link,
-		source,
+		source: feed.name,
 		publishedAt,
 		publishedLabel: formatPublishedLabel(publishedAt),
 		category,
@@ -296,7 +300,8 @@ async function enrichItemsWithImages(items: CinemaNewsItem[]) {
 				return item;
 			}
 
-			const imageUrl = await fetchArticleImage(item.link);
+			const matchingFeed = FEEDS.find((feed) => feed.name === item.source);
+			const imageUrl = matchingFeed ? await fetchArticleImage(item.link, matchingFeed.articleHosts) : '';
 			return imageUrl ? { ...item, imageUrl } : item;
 		}),
 	);
@@ -364,7 +369,35 @@ function normalizeImageUrl(input: string, articleUrl: string) {
 	}
 
 	try {
-		return new URL(decoded, articleUrl).toString();
+		const normalized = new URL(decoded, articleUrl);
+		return ALLOWED_REMOTE_PROTOCOLS.has(normalized.protocol) ? normalized.toString() : '';
+	} catch {
+		return '';
+	}
+}
+
+function normalizeHostname(input: string) {
+	return input.trim().toLowerCase().replace(/\.$/, '');
+}
+
+function isAllowedHost(input: string, allowedHosts: string[]) {
+	const normalized = normalizeHostname(input);
+	return allowedHosts.some((host) => normalizeHostname(host) === normalized);
+}
+
+function normalizeArticleUrl(input: string, feed: CinemaNewsFeed) {
+	const decoded = decodeHtmlEntities(stripCdata(input)).trim();
+	if (!decoded) {
+		return '';
+	}
+
+	try {
+		const normalized = new URL(decoded, feed.url);
+		if (!ALLOWED_REMOTE_PROTOCOLS.has(normalized.protocol)) {
+			return '';
+		}
+
+		return isAllowedHost(normalized.hostname, feed.articleHosts) ? normalized.toString() : '';
 	} catch {
 		return '';
 	}
@@ -412,17 +445,9 @@ function decodeHtmlEntities(input: string) {
 		.replace(/&([a-zA-Z][a-zA-Z0-9]+);/g, (fullMatch, entity) => HTML_ENTITIES[entity] ?? fullMatch);
 }
 
-async function fetchArticleImage(articleUrl: string) {
+async function fetchArticleImage(articleUrl: string, allowedHosts: string[]) {
 	try {
-		const response = await fetch(articleUrl, {
-			headers: fetchHeaders,
-			redirect: 'follow',
-		});
-		if (!response.ok) {
-			throw new Error(`Article responded with ${response.status}`);
-		}
-
-		const html = await response.text();
+		const html = await fetchTrustedText(new URL(articleUrl), allowedHosts);
 		const candidates = [
 			extractMetaContent(html, 'property', 'og:image'),
 			extractMetaContent(html, 'name', 'twitter:image'),
@@ -440,6 +465,46 @@ async function fetchArticleImage(articleUrl: string) {
 	}
 
 	return '';
+}
+
+async function fetchTrustedText(url: URL, allowedHosts: string[]) {
+	let nextUrl = url;
+
+	for (let hop = 0; hop <= MAX_REDIRECT_HOPS; hop += 1) {
+		if (!ALLOWED_REMOTE_PROTOCOLS.has(nextUrl.protocol) || !isAllowedHost(nextUrl.hostname, allowedHosts)) {
+			throw new Error(`Blocked outbound request to ${nextUrl.toString()}`);
+		}
+
+		const response = await fetch(nextUrl, {
+			headers: fetchHeaders,
+			redirect: 'manual',
+		});
+
+		if ([301, 302, 303, 307, 308].includes(response.status)) {
+			const location = response.headers.get('location');
+			if (!location) {
+				throw new Error(`Redirect without location for ${nextUrl.toString()}`);
+			}
+
+			nextUrl = new URL(location, nextUrl);
+			continue;
+		}
+
+		if (!response.ok) {
+			throw new Error(`Request failed with ${response.status}`);
+		}
+
+		if (response.url) {
+			const finalUrl = new URL(response.url);
+			if (!ALLOWED_REMOTE_PROTOCOLS.has(finalUrl.protocol) || !isAllowedHost(finalUrl.hostname, allowedHosts)) {
+				throw new Error(`Blocked redirected response from ${finalUrl.toString()}`);
+			}
+		}
+
+		return response.text();
+	}
+
+	throw new Error(`Too many redirects for ${url.toString()}`);
 }
 
 function extractMetaContent(input: string, key: 'property' | 'name', value: string) {

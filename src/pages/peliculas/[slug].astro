@@ -271,13 +271,14 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 									src={imageUrl}
 									alt={`Screenshot ${index + 1} de ${movie.title}`}
 									loading="lazy"
+									referrerpolicy="no-referrer"
 								/>
 							</div>
 						))}
 					</div>
 				) : (
 					<div class="movie-detail__poster fade-up" style="--item-delay: 0ms;">
-						<img src={posterUrl} alt={`Poster de ${movie.title}`} />
+						<img src={posterUrl} alt={`Poster de ${movie.title}`} referrerpolicy="no-referrer" />
 					</div>
 				)
 			}
@@ -311,6 +312,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 									href={trailerWatchUrl}
 									target="_blank"
 									rel="noopener noreferrer"
+									referrerpolicy="no-referrer"
 								>
 									Abrir en YouTube
 								</a>
@@ -354,6 +356,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																		src={person.image ?? person.remoteImageUrl}
 																		alt={`Foto de ${person.creditedName}`}
 																		loading="lazy"
+																		referrerpolicy="no-referrer"
 																	/>
 																) : (
 																	<span aria-hidden="true">{person.initials}</span>
@@ -411,6 +414,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																		src={person.image ?? person.remoteImageUrl}
 																		alt={`Foto de ${person.creditedName}`}
 																		loading="lazy"
+																		referrerpolicy="no-referrer"
 																	/>
 																) : (
 																	<span aria-hidden="true">{person.initials}</span>
