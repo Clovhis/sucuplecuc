@@ -26,15 +26,15 @@ jobs:
       PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 1
           persist-credentials: false
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Setup Pages
@@ -47,7 +47,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
@@ -61,7 +61,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages (attempt 1)
         id: deploy_1
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         continue-on-error: true
 
       - name: Wait before retry 2
@@ -71,7 +71,7 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 2)
         id: deploy_2
         if: steps.deploy_1.outcome == 'failure'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         continue-on-error: true
 
       - name: Wait before retry 3
@@ -81,7 +81,7 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 3)
         id: deploy_3
         if: steps.deploy_1.outcome == 'failure' && steps.deploy_2.outcome == 'failure'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         continue-on-error: true
 
       - name: Fail if all deploy attempts failed
