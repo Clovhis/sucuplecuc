@@ -1,5 +1,5 @@
 import type { Movie, MovieVerdict } from '../types/movie';
-import { getMoviePlatformLabel, getMoviePlatforms, moviesSharePlatform } from './platforms';
+import { generateMovieEditorialRecommendations } from './recommendation-engine';
 
 const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) as Record<
 	string,
@@ -94,64 +94,6 @@ const REVIEWISH_SYNOPSIS_PATTERNS = [
 	/\breseñ(?:as|a)\b/i,
 	/\brecepci[oó]n\b/i,
 ];
-
-const TITLE_TOKEN_STOP_WORDS = new Set([
-	'a',
-	'al',
-	'and',
-	'chapter',
-	'de',
-	'del',
-	'el',
-	'la',
-	'las',
-	'los',
-	'movie',
-	'of',
-	'part',
-	'the',
-	'un',
-	'una',
-	'vol',
-	'y',
-]);
-
-const BRIDGE_ANCHOR_POOLS: Partial<Record<RecommendationGenreId, string[]>> = {
-	accion: [
-		'john-wick-chapter-4-2023',
-		'top-gun-maverick-2022',
-		'mission-impossible-dead-reckoning-part-one-2023',
-		'furiosa-a-mad-max-saga-2024',
-	],
-	comedia: ['the-holdovers-2023', 'hit-man-2024', 'barbie-2023', 'esperando-la-carroza-1985'],
-	terror: [
-		'cuando-acecha-la-maldad-2023',
-		'longlegs-2024',
-		'the-substance-2024',
-		'smile-2-2024',
-	],
-	drama: ['oppenheimer-2023', 'parasite-2019', 'the-zone-of-interest-2023', 'moonlight-2016'],
-	thriller: ['conclave-2024', 'argo-2012', 'the-departed-2006', 'the-killer-2023'],
-	'sci-fi': ['dune-part-two-2024', 'everything-everywhere-all-at-once-2022', 'the-matrix-resurrections-2021'],
-	superheroes: [
-		'the-batman-2022',
-		'logan-2017',
-		'guardians-of-the-galaxy-vol-3-2023',
-		'spider-man-no-way-home-2021',
-	],
-	animacion: ['inside-out-2-2024', 'the-wild-robot-2024', 'spider-man-into-the-spider-verse-2018'],
-	anime: ['look-back-2024', 'the-boy-and-the-heron-2023', 'spy-x-family-code-white-2023'],
-	romance: ['challengers-2024', 'the-idea-of-you-2024', 'titanic-1997'],
-	crimen: ['nueve-reinas-2000', 'el-angel-2018', 'the-departed-2006', 'relatos-salvajes-2014'],
-	aventura: [
-		'dune-part-two-2024',
-		'barbie-2023',
-		'wonka-2023',
-		'the-lord-of-the-rings-the-return-of-the-king-2003',
-	],
-	'oscar-mejor-pelicula': ['oppenheimer-2023', 'parasite-2019', 'moonlight-2016', 'no-country-for-old-men-2007'],
-	'pelicula-nacional': ['relatos-salvajes-2014', 'nueve-reinas-2000', 'argentina-1985-2022', 'esperando-la-carroza-1985'],
-};
 
 function withTrailingSlash(value: string): string {
 	return value.endsWith('/') ? value : `${value}/`;
@@ -644,27 +586,6 @@ export function getRecommendationGenres(
 	);
 }
 
-function getNormalizedTitleTokens(movie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>): string[] {
-	const source = normalizeSearchText([movie.title, movie.originalTitle, movie.slug].join(' '))
-		.replace(/[^a-z0-9\s]/g, ' ')
-		.split(/\s+/)
-		.filter((token) => token.length >= 3 && !TITLE_TOKEN_STOP_WORDS.has(token) && !/^\d+$/.test(token));
-
-	return Array.from(new Set(source));
-}
-
-function getSharedTitleTokenCount(
-	sourceMovie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>,
-	candidateMovie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>,
-): number {
-	const sourceTokens = new Set(getNormalizedTitleTokens(sourceMovie));
-	if (sourceTokens.size === 0) {
-		return 0;
-	}
-
-	return getNormalizedTitleTokens(candidateMovie).filter((token) => sourceTokens.has(token)).length;
-}
-
 function getMovieLinkRecommendation(movie: Pick<Movie, 'slug' | 'title' | 'year'>): MovieLinkRecommendation {
 	return {
 		slug: movie.slug,
@@ -713,45 +634,16 @@ function getBridgeAnchorCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
 	if (preferredBridgeSlugs.length > 0) {
 		const preferred = preferredBridgeSlugs
 			.map((slug) => allMovies.find((candidate) => candidate.slug === slug))
-			.filter((candidate): candidate is Movie => Boolean(candidate) && candidate.slug !== movie.slug);
+			.filter((candidate): candidate is Movie => candidate !== undefined && candidate.slug !== movie.slug);
 		if (preferred.length > 0) {
 			return preferred.slice(0, 2);
 		}
 	}
 
-	const recommendationGenres = getRecommendationGenres(movie);
-	const anchorPool = Array.from(
-		new Set(recommendationGenres.flatMap((genreId) => BRIDGE_ANCHOR_POOLS[genreId] ?? [])),
-	);
-
-	const ranked = allMovies
-		.filter((candidate) => candidate.slug !== movie.slug)
-		.map((candidate) => {
-			let score = 0;
-			const candidateGenres = getRecommendationGenres(candidate);
-			const sharedGenres = candidateGenres.filter((genreId) => recommendationGenres.includes(genreId)).length;
-			score += sharedGenres * 12;
-			score += getSharedTitleTokenCount(movie, candidate) * 14;
-
-			if (anchorPool.includes(candidate.slug)) {
-				score += 30;
-			}
-			if (candidate.verdict === 'recomendada') {
-				score += 4;
-			}
-			if ((candidate.awards?.wins ?? []).length > 0) {
-				score += 3;
-			}
-			if (candidate.year <= movie.year) {
-				score += 2;
-			}
-
-			return { candidate, score };
-		})
-		.filter((entry) => entry.score > 0)
-		.sort((a, b) => b.score - a.score || b.candidate.year - a.candidate.year || a.candidate.title.localeCompare(b.candidate.title, 'es'));
-
-	return ranked.slice(0, 2).map((entry) => entry.candidate);
+	const generated = generateMovieEditorialRecommendations(movie, allMovies);
+	return generated.becauseYouLiked
+		.map((slug) => allMovies.find((candidate) => candidate.slug === slug))
+		.filter((candidate): candidate is Movie => candidate !== undefined);
 }
 
 export function getBridgeRecommendations(movie: Movie, allMovies: Movie[]): MovieLinkRecommendation[] {
@@ -763,59 +655,16 @@ function getRelatedMovieCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
 	if (preferredRelatedSlugs.length > 0) {
 		const preferred = preferredRelatedSlugs
 			.map((slug) => allMovies.find((candidate) => candidate.slug === slug))
-			.filter((candidate): candidate is Movie => Boolean(candidate) && candidate.slug !== movie.slug);
+			.filter((candidate): candidate is Movie => candidate !== undefined && candidate.slug !== movie.slug);
 		if (preferred.length > 0) {
 			return preferred.slice(0, 4);
 		}
 	}
 
-	const movieGenres = getRecommendationGenres(movie);
-	const movieCast = new Set(movie.mainCast.map((castMember) => normalizeSearchText(castMember)));
-
-	const ranked = allMovies
-		.filter((candidate) => candidate.slug !== movie.slug)
-		.map((candidate) => {
-			let score = 0;
-			const candidateGenres = getRecommendationGenres(candidate);
-			const sharedGenres = candidateGenres.filter((genreId) => movieGenres.includes(genreId)).length;
-			score += sharedGenres * 14;
-
-			if (normalizeSearchText(candidate.category) === normalizeSearchText(movie.category)) {
-				score += 10;
-			}
-			if (normalizeSearchText(candidate.director) === normalizeSearchText(movie.director)) {
-				score += 18;
-			}
-			if (moviesSharePlatform(candidate, movie)) {
-				score += 3;
-			}
-			if (isArgentinianMovie(candidate) && isArgentinianMovie(movie)) {
-				score += 8;
-			}
-
-			const sharedCast = candidate.mainCast.filter((castMember) =>
-				movieCast.has(normalizeSearchText(castMember)),
-			).length;
-			score += sharedCast * 6;
-			score += getSharedTitleTokenCount(movie, candidate) * 18;
-
-			const yearDistance = Math.abs(candidate.year - movie.year);
-			if (yearDistance <= 2) {
-				score += 6;
-			} else if (yearDistance <= 6) {
-				score += 3;
-			}
-
-			if (candidate.verdict === 'recomendada') {
-				score += 2;
-			}
-
-			return { candidate, score };
-		})
-		.filter((entry) => entry.score > 0)
-		.sort((a, b) => b.score - a.score || b.candidate.year - a.candidate.year || a.candidate.title.localeCompare(b.candidate.title, 'es'));
-
-	return ranked.slice(0, 4).map((entry) => entry.candidate);
+	const generated = generateMovieEditorialRecommendations(movie, allMovies);
+	return generated.related
+		.map((slug) => allMovies.find((candidate) => candidate.slug === slug))
+		.filter((candidate): candidate is Movie => candidate !== undefined);
 }
 
 export function getRelatedRecommendations(movie: Movie, allMovies: Movie[]): MovieLinkRecommendation[] {

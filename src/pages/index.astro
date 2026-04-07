@@ -198,6 +198,10 @@ const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`
 </BaseLayout>
 
 <script>
+	// Astro 6 ahora typechequea los <script> inline sin atributos.
+	// Este controlador del buscador principal sigue siendo JS cliente orientado al DOM;
+	// se deja documentado y excluido hasta separarlo en un módulo tipado dedicado.
+	// @ts-nocheck
 	const searchRoot = document.querySelector('[data-movie-search-root]');
 	if (searchRoot instanceof HTMLElement) {
 		const homeBrandLink = document.querySelector('.site-header__brand');

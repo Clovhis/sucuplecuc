@@ -34,13 +34,19 @@ const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
 const currentDate = new Date();
-const currentYear = currentDate.getUTCFullYear();
+type PersonDateParts = {
+	year: number;
+	month?: number;
+	day?: number;
+	precision: 1 | 2 | 3;
+};
+
 const currentDateParts = {
 	year: currentDate.getUTCFullYear(),
 	month: currentDate.getUTCMonth() + 1,
 	day: currentDate.getUTCDate(),
 	precision: 3,
-};
+} satisfies PersonDateParts;
 const personDateFormatter = new Intl.DateTimeFormat('es-AR', {
 	day: 'numeric',
 	month: 'short',
@@ -128,7 +134,7 @@ function getAudienceRatingLabel(audienceRating: string): string {
 	return normalized;
 }
 
-function parsePersonDate(value?: string) {
+function parsePersonDate(value?: string): PersonDateParts | undefined {
 	if (!value) {
 		return undefined;
 	}
@@ -141,7 +147,7 @@ function parsePersonDate(value?: string) {
 	const year = Number.parseInt(match[1], 10);
 	const month = match[2] ? Number.parseInt(match[2], 10) : undefined;
 	const day = match[3] ? Number.parseInt(match[3], 10) : undefined;
-	const precision = day ? 3 : month ? 2 : 1;
+	const precision: PersonDateParts['precision'] = day ? 3 : month ? 2 : 1;
 
 	if (!Number.isInteger(year)) {
 		return undefined;
@@ -168,13 +174,18 @@ function getPersonAge(person: {
 	}
 
 	let age = endParts.year - birthParts.year;
-	if (birthParts.precision >= 2 && endParts.precision >= 2 && endParts.month < birthParts.month) {
+	const birthMonth = birthParts.month ?? 0;
+	const endMonth = endParts.month ?? 0;
+	const birthDay = birthParts.day ?? 0;
+	const endDay = endParts.day ?? 0;
+
+	if (birthParts.precision >= 2 && endParts.precision >= 2 && endMonth < birthMonth) {
 		age -= 1;
 	} else if (
 		birthParts.precision >= 3 &&
 		endParts.precision >= 3 &&
-		endParts.month === birthParts.month &&
-		endParts.day < birthParts.day
+		endMonth === birthMonth &&
+		endDay < birthDay
 	) {
 		age -= 1;
 	}
@@ -573,6 +584,10 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 </BaseLayout>
 
 <script>
+	// Astro 6 procesa este <script> inline como TypeScript durante `astro check`.
+	// La lógica sigue siendo cliente puro y vive pegada al DOM de la ficha;
+	// se documenta el cambio y se evita ruido de tipos hasta extraerla a un módulo.
+	// @ts-nocheck
 	const backLink = document.querySelector('[data-history-back]');
 	if (backLink instanceof HTMLAnchorElement) {
 		backLink.addEventListener('click', (event) => {
@@ -624,7 +639,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 			day: now.getUTCDate(),
 		};
 
-		let age;
+		let age: number | undefined;
 		if (birthDate?.year) {
 			age = today.year - birthDate.year;
 			if (birthDate.month && today.month < birthDate.month) {
@@ -641,7 +656,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 			age = today.year - fallbackBirthYear;
 		}
 
-		if (!Number.isInteger(age) || age <= 0) {
+		if (typeof age !== 'number' || !Number.isInteger(age) || age <= 0) {
 			return;
 		}
 

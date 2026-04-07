@@ -105,7 +105,7 @@ function buildMovieData(rootDir) {
 				platforms: new Set(getNormalizedPlatforms(movie)),
 			};
 		})
-		sort((left, right) => String(left.movie.slug).localeCompare(String(right.movie.slug)));
+		.sort((left, right) => String(left.movie.slug).localeCompare(String(right.movie.slug)));
 }
 
 function buildLabelPool(movieData) {

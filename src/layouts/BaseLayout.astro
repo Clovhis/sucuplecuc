@@ -90,7 +90,7 @@ const footerLinks = [
 		/>
 		{
 			structuredData.map((entry) => (
-				<script type="application/ld+json" set:html={JSON.stringify(entry)} />
+				<script is:inline type="application/ld+json" set:html={JSON.stringify(entry)} />
 			))
 		}
 	</head>

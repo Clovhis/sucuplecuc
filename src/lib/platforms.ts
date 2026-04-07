@@ -76,7 +76,7 @@ const PLATFORM_FILTER_ORDER = [
 	'cine.ar',
 ] as const;
 
-const PLATFORM_FILTER_ORDER_INDEX = new Map(
+const PLATFORM_FILTER_ORDER_INDEX = new Map<string, number>(
 	PLATFORM_FILTER_ORDER.map((platformLabel, index) => [platformLabel, index]),
 );
 
