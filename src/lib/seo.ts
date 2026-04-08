@@ -234,11 +234,6 @@ export function createMovieStructuredData(
 			name: SITE_NAME,
 			url: `${SITE_URL}/`,
 		},
-		itemReviewed: {
-			'@type': 'Movie',
-			'@id': `${movieUrl}#movie`,
-			name: movie.title,
-		},
 		reviewRating: {
 			'@type': 'Rating',
 			ratingValue: getReviewRatingValue(movie.verdict),
