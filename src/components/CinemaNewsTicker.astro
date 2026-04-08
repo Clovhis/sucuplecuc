@@ -120,4 +120,5 @@ const marqueeItems = items;
 	) : null
 }
 
-<script is:inline type="module" src="/scripts/newsTicker.js"></script>
+<!-- Astro 6: use a local typed script instead of an opaque file from `public/` whenever possible. -->
+<script src="../scripts/news-ticker.ts"></script>

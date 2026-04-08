@@ -1,24 +1,37 @@
-const marquees = Array.from(document.querySelectorAll('[data-news-marquee]'));
+/**
+ * Astro 6 client entrypoint.
+ * The ticker now lives in `src/scripts` so Astro can bundle and typecheck it
+ * instead of serving an opaque file from `public/`.
+ */
+
+const marquees = Array.from(document.querySelectorAll<HTMLElement>('[data-news-marquee]'));
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const TICKER_SPEED = 44;
 
-const bindMediaQueryChange = (query, listener) => {
+const bindMediaQueryChange = (
+	query: MediaQueryList,
+	listener: (event: MediaQueryListEvent) => void,
+): void => {
 	if (typeof query.addEventListener === 'function') {
 		query.addEventListener('change', listener);
 		return;
 	}
 
-	if (typeof query.addListener === 'function') {
-		query.addListener(listener);
+	const legacyAddListener = (
+		query as MediaQueryList & {
+			addListener?: (listener: (event: MediaQueryListEvent) => void) => void;
+		}
+	).addListener;
+
+	if (typeof legacyAddListener === 'function') {
+		legacyAddListener.call(query, listener);
 	}
 };
 
 for (const marquee of marquees) {
-	if (!(marquee instanceof HTMLElement)) continue;
-
-	const track = marquee.querySelector('[data-news-track]');
-	const segment = marquee.querySelector('[data-news-segment]');
-	if (!(track instanceof HTMLElement) || !(segment instanceof HTMLElement)) continue;
+	const track = marquee.querySelector<HTMLElement>('[data-news-track]');
+	const segment = marquee.querySelector<HTMLElement>('[data-news-segment]');
+	if (!(track && segment)) continue;
 
 	let frameId = 0;
 	let lastFrameTime = 0;
@@ -26,12 +39,13 @@ for (const marquee of marquees) {
 	let paused = false;
 	let segmentWidth = 0;
 
-	const shouldAutoScroll = () => !reduceMotion.matches && window.innerWidth > 640;
-	const syncTrackPosition = () => {
+	const shouldAutoScroll = (): boolean => !reduceMotion.matches && window.innerWidth > 640;
+
+	const syncTrackPosition = (): void => {
 		track.style.transform = `translate3d(${-offset}px, 0, 0)`;
 	};
 
-	const measure = () => {
+	const measure = (): void => {
 		segmentWidth = segment.getBoundingClientRect().width;
 		if (!Number.isFinite(segmentWidth) || segmentWidth <= marquee.clientWidth || !shouldAutoScroll()) {
 			offset = 0;
@@ -39,7 +53,7 @@ for (const marquee of marquees) {
 		}
 	};
 
-	const step = (time) => {
+	const step = (time: number): void => {
 		if (lastFrameTime === 0) {
 			lastFrameTime = time;
 		}
@@ -62,22 +76,22 @@ for (const marquee of marquees) {
 		frameId = window.requestAnimationFrame(step);
 	};
 
-	const pause = () => {
+	const pause = (): void => {
 		paused = true;
 	};
 
-	const resume = () => {
+	const resume = (): void => {
 		paused = false;
 		lastFrameTime = 0;
 	};
 
-	const start = () => {
+	const start = (): void => {
 		if (frameId !== 0) return;
 		lastFrameTime = 0;
 		frameId = window.requestAnimationFrame(step);
 	};
 
-	const stop = () => {
+	const stop = (): void => {
 		if (frameId === 0) return;
 		window.cancelAnimationFrame(frameId);
 		frameId = 0;
@@ -93,8 +107,7 @@ for (const marquee of marquees) {
 	marquee.addEventListener('pointerup', resume);
 	marquee.addEventListener('pointercancel', resume);
 	marquee.addEventListener('focusin', pause);
-	marquee.addEventListener('focusout', (event) => {
-		if (!(event.target instanceof Node)) return;
+	marquee.addEventListener('focusout', (event: FocusEvent) => {
 		if (event.relatedTarget instanceof Node && marquee.contains(event.relatedTarget)) return;
 		resume();
 	});
@@ -104,7 +117,7 @@ for (const marquee of marquees) {
 		lastFrameTime = 0;
 	});
 
-	const syncEnvironment = () => {
+	const syncEnvironment = (): void => {
 		lastFrameTime = 0;
 		measure();
 	};
