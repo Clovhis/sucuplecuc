@@ -37,6 +37,7 @@ for (const marquee of marquees) {
 
 	const direction = marquee.dataset.marqueeDirection === 'ltr' ? 'ltr' : 'rtl';
 	const speed = Number.parseFloat(marquee.dataset.marqueeSpeed ?? '') || TICKER_SPEED;
+	const allowMobileAutoplay = marquee.dataset.marqueeMobileAutoplay === 'true';
 
 	let frameId = 0;
 	let lastFrameTime = 0;
@@ -45,7 +46,8 @@ for (const marquee of marquees) {
 	let segmentWidth = 0;
 	let trackWidth = 0;
 
-	const shouldAutoScroll = (): boolean => !reduceMotion.matches && window.innerWidth > 640;
+	const shouldAutoScroll = (): boolean =>
+		!reduceMotion.matches && (allowMobileAutoplay || window.innerWidth > 640);
 	const canLoop = (): boolean => trackWidth > marquee.clientWidth && segmentWidth > 0;
 
 	const syncTrackPosition = (): void => {
