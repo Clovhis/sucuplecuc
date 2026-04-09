@@ -1,0 +1,71 @@
+---
+import type { CafecitoSupporter } from '../lib/cafecitoSupporters';
+
+interface Props {
+	items: CafecitoSupporter[];
+	profileUrl: string;
+	isFallback?: boolean;
+}
+
+const { items, profileUrl, isFallback = false } = Astro.props;
+---
+
+{
+	items.length > 0 ? (
+		<section
+			class="supporter-ticker"
+			aria-label={isFallback ? 'Cafecitos recientes en modo respaldo' : 'Cafecitos recientes'}
+		>
+			<a
+				class="supporter-ticker__label"
+				href={profileUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Cafecitos recientes
+			</a>
+			<div
+				class="supporter-ticker__marquee"
+				data-marquee-root
+				data-marquee-direction="ltr"
+				data-marquee-speed="24"
+			>
+				<div class="supporter-ticker__track" data-marquee-track>
+					<ul class="supporter-ticker__list" data-marquee-segment>
+						{
+							items.map((item) => (
+								<li
+									class="supporter-ticker__item"
+									title={`${item.name}: "${item.message}"`}
+								>
+									<span class="supporter-ticker__name">{item.name}</span>
+									<span class="supporter-ticker__message">"{item.message}"</span>
+									<span class="supporter-ticker__meta">
+										{item.coffeesLabel}
+										<span aria-hidden="true"> · </span>
+										{item.timeAgo}
+									</span>
+								</li>
+							))
+						}
+					</ul>
+					<ul class="supporter-ticker__list" aria-hidden="true">
+						{
+							items.map((item) => (
+								<li class="supporter-ticker__item">
+									<span class="supporter-ticker__name">{item.name}</span>
+									<span class="supporter-ticker__message">"{item.message}"</span>
+									<span class="supporter-ticker__meta">
+										{item.coffeesLabel}
+										<span aria-hidden="true"> · </span>
+										{item.timeAgo}
+									</span>
+								</li>
+							))
+						}
+					</ul>
+				</div>
+			</div>
+		</section>
+	) : null
+}

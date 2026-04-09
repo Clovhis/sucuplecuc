@@ -214,6 +214,92 @@ img {
 	gap: 0.6rem;
 }
 
+.supporter-ticker {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	gap: 0.72rem;
+	align-items: center;
+	min-width: 0;
+	padding-top: 0.12rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.supporter-ticker__label {
+	display: inline-flex;
+	align-items: center;
+	font-size: 0.62rem;
+	font-family: 'IBM Plex Mono', monospace;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #95a3ba;
+}
+
+.supporter-ticker__label:hover,
+.supporter-ticker__label:focus-visible {
+	color: #d6e0f0;
+}
+
+.supporter-ticker__marquee {
+	position: relative;
+	min-width: 0;
+	overflow: hidden;
+	mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+	-webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.supporter-ticker__track {
+	display: flex;
+	width: max-content;
+	will-change: transform;
+}
+
+.supporter-ticker__list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 0.58rem;
+	padding: 0;
+	margin: 0;
+}
+
+.supporter-ticker__item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.38rem;
+	white-space: nowrap;
+	font-size: 0.74rem;
+	color: #d7dfed;
+}
+
+.supporter-ticker__item::after {
+	content: '';
+	display: inline-block;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin-left: 0.18rem;
+	border-radius: 999px;
+	background: rgba(255, 176, 137, 0.5);
+	box-shadow: 0 0 0 4px rgba(255, 176, 137, 0.08);
+}
+
+.supporter-ticker__name {
+	color: #fff1e8;
+	font-weight: 700;
+}
+
+.supporter-ticker__message {
+	color: #c4d0e4;
+}
+
+.supporter-ticker__meta {
+	color: #7e8ca4;
+	font-size: 0.62rem;
+	font-family: 'IBM Plex Mono', monospace;
+	letter-spacing: 0.04em;
+}
+
 .site-header__donate {
 	position: relative;
 	isolation: isolate;
@@ -2632,6 +2718,12 @@ img {
 		-webkit-mask-image: none;
 		overflow-x: auto;
 	}
+
+	.supporter-ticker__marquee {
+		mask-image: none;
+		-webkit-mask-image: none;
+		overflow-x: auto;
+	}
 }
 
 @media (max-width: 1040px) {
@@ -2727,6 +2819,37 @@ img {
 
 	.site-search-bar__feedback {
 		grid-column: 1 / -1;
+	}
+
+	.supporter-ticker {
+		grid-template-columns: 1fr;
+		gap: 0.35rem;
+	}
+
+	.supporter-ticker__marquee {
+		overflow-x: auto;
+		mask-image: none;
+		-webkit-mask-image: none;
+		scroll-snap-type: x proximity;
+		overscroll-behavior-x: contain;
+		scrollbar-width: none;
+	}
+
+	.supporter-ticker__marquee::-webkit-scrollbar {
+		display: none;
+	}
+
+	.supporter-ticker__list[aria-hidden='true'] {
+		display: none;
+	}
+
+	.supporter-ticker__item {
+		scroll-snap-align: start;
+		font-size: 0.7rem;
+	}
+
+	.supporter-ticker__meta {
+		font-size: 0.58rem;
 	}
 
 	.movie-search--top,
@@ -3030,7 +3153,8 @@ img {
 	}
 
 	.movie-search__label,
-	.home-genre-filter__label {
+	.home-genre-filter__label,
+	.supporter-ticker__label {
 		font-size: 0.72rem;
 	}
 

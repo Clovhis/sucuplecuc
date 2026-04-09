@@ -4,7 +4,9 @@
  * instead of serving an opaque file from `public/`.
  */
 
-const marquees = Array.from(document.querySelectorAll<HTMLElement>('[data-news-marquee]'));
+const marquees = Array.from(
+	document.querySelectorAll<HTMLElement>('[data-news-marquee], [data-marquee-root]'),
+);
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const TICKER_SPEED = 44;
 
@@ -29,28 +31,48 @@ const bindMediaQueryChange = (
 };
 
 for (const marquee of marquees) {
-	const track = marquee.querySelector<HTMLElement>('[data-news-track]');
-	const segment = marquee.querySelector<HTMLElement>('[data-news-segment]');
+	const track = marquee.querySelector<HTMLElement>('[data-news-track], [data-marquee-track]');
+	const segment = marquee.querySelector<HTMLElement>('[data-news-segment], [data-marquee-segment]');
 	if (!(track && segment)) continue;
+
+	const direction = marquee.dataset.marqueeDirection === 'ltr' ? 'ltr' : 'rtl';
+	const speed = Number.parseFloat(marquee.dataset.marqueeSpeed ?? '') || TICKER_SPEED;
 
 	let frameId = 0;
 	let lastFrameTime = 0;
 	let offset = 0;
 	let paused = false;
 	let segmentWidth = 0;
+	let trackWidth = 0;
 
 	const shouldAutoScroll = (): boolean => !reduceMotion.matches && window.innerWidth > 640;
+	const canLoop = (): boolean => trackWidth > marquee.clientWidth && segmentWidth > 0;
 
 	const syncTrackPosition = (): void => {
-		track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+		if (!shouldAutoScroll() || !canLoop()) {
+			track.style.transform = 'translate3d(0, 0, 0)';
+			return;
+		}
+
+		const translateX = direction === 'ltr' ? offset - segmentWidth : -offset;
+		track.style.transform = `translate3d(${translateX}px, 0, 0)`;
 	};
 
 	const measure = (): void => {
 		segmentWidth = segment.getBoundingClientRect().width;
-		if (!Number.isFinite(segmentWidth) || segmentWidth <= marquee.clientWidth || !shouldAutoScroll()) {
+		trackWidth = track.scrollWidth;
+		if (
+			!Number.isFinite(segmentWidth) ||
+			!Number.isFinite(trackWidth) ||
+			trackWidth <= marquee.clientWidth ||
+			!shouldAutoScroll()
+		) {
 			offset = 0;
 			syncTrackPosition();
+			return;
 		}
+
+		syncTrackPosition();
 	};
 
 	const step = (time: number): void => {
@@ -61,8 +83,8 @@ for (const marquee of marquees) {
 		const deltaSeconds = (time - lastFrameTime) / 1000;
 		lastFrameTime = time;
 
-		if (!paused && shouldAutoScroll() && segmentWidth > marquee.clientWidth) {
-			offset += deltaSeconds * TICKER_SPEED;
+		if (!paused && shouldAutoScroll() && canLoop()) {
+			offset += deltaSeconds * speed;
 			if (offset >= segmentWidth) {
 				offset -= segmentWidth;
 			}
