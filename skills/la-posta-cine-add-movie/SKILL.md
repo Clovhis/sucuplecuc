@@ -35,6 +35,7 @@ Allowed paths:
 - `public/people/**`
 - `content/movies/**` (only if this repo variant uses it)
 - `docs/movie-catalog-reference.md`
+- `docs/person-profile-catalog-reference.md`
 
 Conditionally allowed only with explicit user approval in the same request:
 
@@ -119,6 +120,19 @@ Rules:
 - Do not trust the catalog blindly: perform a final targeted duplicate verification in `src/data/movies` (exact slug/title-year check) before writing.
 - After creating or updating movie entries (single or bulk), always refresh `docs/movie-catalog-reference.md` in the same change set.
 - Keep the catalog sorted and include at least: `year`, `title`, `slug`, `category`, `releasePlatform`; include `releasePlatforms` too when the movie is multi-platform.
+
+## Person profile catalog (mandatory)
+
+Use `docs/person-profile-catalog-reference.md` before finalizing `director` and `mainCast`.
+
+Rules:
+
+- Read `docs/person-profile-catalog-reference.md` after the movie catalog check and before locking credited names.
+- If a credited director or cast member already appears there, reuse the exact canonical `Nombre` from that catalog in the movie JSON.
+- Do not invent aliases, nicknames, shortened names, alternate spellings, or accented/unaccented variants when an exclusive profile already exists.
+- The goal is that movie detail pages keep linking to the existing dynamic profile under `/personas/<slug>/`.
+- Treat `docs/person-profile-catalog-reference.md` as the editorial reference, but if there is any conflict, confirm against `src/data/personProfiles.ts` / current site behavior before writing.
+- When a new movie includes people who already have an exclusive profile, the movie load must preserve that linkage. Do not leave it to chance.
 
 ## Workflow chaining
 
@@ -242,6 +256,9 @@ People pool policy (mandatory):
 
 - Every new movie must also update `src/data/people.json`.
 - The people catalog is keyed by the exact credited name string used in movie JSON.
+- Before freezing `director` and `mainCast`, consult `docs/person-profile-catalog-reference.md` and detect whether any credited name already has an exclusive profile.
+- If a credited person already has an exclusive profile, use that exact canonical name in movie JSON and preserve the same person record lineage in `src/data/people.json`.
+- Do not create near-duplicate people entries for someone who already has an exclusive profile page.
 - Before searching the internet, consult `src/data/people.json` first and reuse any existing person entry/image/info cache already present.
 - Only enrich missing or stale person fields. Do not redownload portraits or rewrite entries that are already complete without a reason.
 - Each credited director and each actor in `mainCast` must end with:
@@ -529,6 +546,7 @@ Return all of the following:
 10. Awards source used (site + URL), verified premios/galardones found, and exact final `awards.wins` content (including empty array when no wins apply)
 11. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
 12. People pool confirmation with exact credited names added/updated in `src/data/people.json` and cached image paths in `public/people/`
+13. Exclusive profile linkage confirmation for any credited person already present in `docs/person-profile-catalog-reference.md`
 
 ## Validation checklist
 
@@ -549,6 +567,8 @@ Return all of the following:
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
 - [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)
+- [ ] `docs/person-profile-catalog-reference.md` consulted before locking credited names
+- [ ] Any credited person with an exclusive profile keeps the canonical catalog name so the dynamic `/personas/<slug>/` link resolves
 - [ ] `npm run build` passed
 - [ ] Diff shown before commit
 - [ ] Commit and push done on feature branch

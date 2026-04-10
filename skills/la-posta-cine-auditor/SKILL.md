@@ -21,6 +21,7 @@ Allowed fix paths:
 - `src/data/people.json`
 - `public/people/**`
 - `docs/movie-catalog-reference.md`
+- `docs/person-profile-catalog-reference.md`
 
 Forbidden fix paths:
 
@@ -64,12 +65,15 @@ node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs \
 
 ### 2. Run deterministic checks
 
+Before interpreting people findings, read `docs/person-profile-catalog-reference.md` as the reference list of exclusive dynamic profiles.
+
 The bundled script checks:
 
 - recent candidate detection from `git diff <base>...HEAD`
 - required fields and JSON shape
 - `mainCast` sanity: enough credited principal performers for the title type, no duplicate names, and no obvious omission of award-winning acting recipients from the credited cast
 - people pool coverage in `src/data/people.json` for every credited director/main cast member
+- reconciliation against `docs/person-profile-catalog-reference.md` so any credited person with an exclusive profile keeps the canonical catalog name and can still resolve to `/personas/<slug>/`
 - local cached portrait existence under `public/people/**`
 - portrait source sanity so cached portraits are real headshots and not logos, posters, favicons or generic site assets
 - birth date/year presence when it can be verified from public sources
@@ -110,6 +114,12 @@ The third-party mention check is also mandatory:
 - rewrite the sentence into generic editorial language (`la crítica`, `la recepción`, `el consenso`) instead of naming the source
 - sources may still be cited in the audit report/output evidence, but never inside the published review copy
 
+The exclusive profile reconciliation check is mandatory too:
+
+- treat canonical-name drift as a hard stop when a credited director or cast member already has an exclusive profile in `docs/person-profile-catalog-reference.md`
+- rewrite the credited name in movie JSON to the canonical catalog name instead of leaving an alias or alternate spelling
+- the objective is to preserve the dynamic person-page link from the movie detail page
+
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:
 
 - official YouTube channels for trailers
@@ -140,3 +150,4 @@ Report:
 - explicit statement that no forbidden path was modified
 - explicit confirmation that the people pool is complete for every credited director/main cast member in the audited batch, including nationality plus a traceable profile, and that any missing birth date or portrait is an explicit verified gap rather than fabricated data
 - explicit confirmation that deceased people do not render as living ages and that animation/anime titles use original voice cast in `mainCast`
+- explicit confirmation that credited people with exclusive profiles still resolve to their dynamic `/personas/<slug>/` pages

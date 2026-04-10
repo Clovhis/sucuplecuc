@@ -18,10 +18,23 @@ type MovieIndexEntry = {
 	posterUrl: string;
 	meta: string;
 	cast: string;
+	entryType: 'movie';
 	platforms: Set<string>;
 	genres: Set<string>;
 	poster: HTMLImageElement | null;
 };
+
+type PersonIndexEntry = {
+	searchable: string;
+	title: string;
+	url: string;
+	posterUrl: string;
+	meta: string;
+	cast: string;
+	entryType: 'person';
+};
+
+type SearchSuggestionEntry = MovieIndexEntry | PersonIndexEntry;
 
 type HomeState = {
 	query: string;
@@ -66,6 +79,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const suggestionsCopy = searchRoot.querySelector<HTMLElement>('[data-movie-search-dropdown-copy]');
 	const suggestionsList = searchRoot.querySelector<HTMLElement>('[data-movie-search-suggestions]');
 	const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-movie-card]'));
+	const people = Array.from(searchRoot.querySelectorAll<HTMLElement>('[data-person-search-entry]'));
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
 
@@ -88,6 +102,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				(poster instanceof HTMLImageElement ? poster.currentSrc || poster.src : ''),
 			meta: card.dataset.movieMeta ?? '',
 			cast: card.dataset.movieCast ?? '',
+			entryType: 'movie',
 			platforms: new Set(
 				(card.dataset.moviePlatforms ?? '')
 					.split(',')
@@ -101,6 +116,24 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 					.filter(Boolean),
 			),
 			poster: poster instanceof HTMLImageElement ? poster : null,
+		}];
+	});
+	const personIndex = people.flatMap((person): PersonIndexEntry[] => {
+		const url = person.dataset.personUrl ?? '';
+		const title = person.dataset.personTitle ?? '';
+
+		if (!url || !title) {
+			return [];
+		}
+
+		return [{
+			searchable: person.dataset.personSearch ?? '',
+			title,
+			url,
+			posterUrl: person.dataset.personPosterUrl ?? '',
+			meta: person.dataset.personMeta ?? 'Perfil',
+			cast: person.dataset.personKnownFor ?? '',
+			entryType: 'person',
 		}];
 	});
 
@@ -118,7 +151,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	let activeStatusPhrases: string[] = [];
 	let activeStatusIndex = 0;
 	let activeSuggestionIndex = -1;
-	let currentSuggestions: MovieIndexEntry[] = [];
+	let currentSuggestions: SearchSuggestionEntry[] = [];
 
 	const normalize = (value: string): string =>
 		value
@@ -128,6 +161,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			.trim();
 
 	const getVisibleEntries = (): MovieIndexEntry[] => movieIndex.filter((entry) => !entry.element.hidden);
+
+	const getSuggestionMatches = (query: string, matchingMovies: MovieIndexEntry[]): SearchSuggestionEntry[] =>
+		query.length === 0
+			? []
+			: [...personIndex.filter((entry) => entry.searchable.includes(query)), ...matchingMovies];
 
 	const isPlainLeftClick = (event: MouseEvent): boolean =>
 		event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
@@ -214,23 +252,25 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
-	const getSuggestionScore = (entry: MovieIndexEntry, query: string): number => {
+	const getSuggestionScore = (entry: SearchSuggestionEntry, query: string): number => {
 		const normalizedTitle = normalize(entry.title);
 		const normalizedMeta = normalize(`${entry.meta} ${entry.cast}`);
 		let score = 300;
 
+		if (entry.entryType === 'person') score -= 35;
+		if (normalizedTitle === query) score -= 260;
 		if (normalizedTitle.startsWith(query)) score -= 180;
 		else if (normalizedTitle.includes(query)) score -= 120;
 		else if (entry.searchable.startsWith(query)) score -= 90;
 		else if (entry.searchable.includes(query)) score -= 40;
 
-		if (entry.year === query) score -= 35;
+		if (entry.entryType === 'movie' && entry.year === query) score -= 35;
 		if (normalizedMeta.includes(query)) score -= 20;
 
 		return score;
 	};
 
-	const renderSuggestions = (query: string, matchingEntries: MovieIndexEntry[]): void => {
+	const renderSuggestions = (query: string, matchingEntries: SearchSuggestionEntry[]): void => {
 		if (!(suggestionsBox && suggestionsList && suggestionsCopy)) {
 			return;
 		}
@@ -283,6 +323,13 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				cast.className = 'movie-search__suggestion-cast';
 				cast.textContent = entry.cast;
 				body.append(cast);
+			}
+
+			if (entry.entryType === 'person') {
+				const tag = document.createElement('span');
+				tag.className = 'movie-search__suggestion-tag';
+				tag.textContent = 'Persona';
+				body.append(tag);
 			}
 
 			link.append(poster, body);
@@ -456,7 +503,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			platformKey === lastAppliedPlatform
 		) {
 			const visibleCount = getVisibleEntries().length;
-			renderSuggestions(query, getVisibleEntries());
+			renderSuggestions(query, getSuggestionMatches(query, getVisibleEntries()));
 			updateSummary(visibleCount);
 			return visibleCount;
 		}
@@ -488,7 +535,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			emptyState.hidden = visibleCount > 0;
 		}
 
-		renderSuggestions(query, matchingEntries);
+		renderSuggestions(query, getSuggestionMatches(query, matchingEntries));
 		updateSummary(visibleCount);
 		return visibleCount;
 	};
@@ -685,10 +732,24 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			return;
 		}
 
-		if (event.key === 'Enter' && activeSuggestionIndex >= 0) {
-			event.preventDefault();
-			prepareResetOnReturn();
-			window.location.href = currentSuggestions[activeSuggestionIndex].url;
+		if (event.key === 'Enter') {
+			if (activeSuggestionIndex >= 0) {
+				event.preventDefault();
+				prepareResetOnReturn();
+				window.location.href = currentSuggestions[activeSuggestionIndex].url;
+				return;
+			}
+
+			const query = normalize(input.value);
+			const firstSuggestion = currentSuggestions[0];
+			if (
+				firstSuggestion?.entryType === 'person' &&
+				normalize(firstSuggestion.title) === query
+			) {
+				event.preventDefault();
+				prepareResetOnReturn();
+				window.location.href = firstSuggestion.url;
+			}
 			return;
 		}
 

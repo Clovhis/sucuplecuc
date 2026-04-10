@@ -8,6 +8,7 @@ const { spawnSync } = require('child_process');
 const DEFAULT_ROOT = 'src/data/movies';
 const DEFAULT_BASE_REF = 'main';
 const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
+const PERSON_PROFILE_CATALOG_PATH = path.resolve('docs/person-profile-catalog-reference.md');
 const PEOPLE_PUBLIC_ROOT = path.resolve('public');
 const ALLOWED_PLATFORMS = new Set([
 	'Netflix',
@@ -397,6 +398,35 @@ function buildPeopleCatalogIndex(peopleCatalog) {
 	return new Map(Object.keys(peopleCatalog).map((key) => [normalizePersonKey(key), key]));
 }
 
+function loadExclusiveProfileCatalog() {
+	if (!fs.existsSync(PERSON_PROFILE_CATALOG_PATH)) {
+		return [];
+	}
+
+	try {
+		return fs
+			.readFileSync(PERSON_PROFILE_CATALOG_PATH, 'utf8')
+			.split(/\r?\n/)
+			.map((line) => line.trim())
+			.filter((line) => line.startsWith('|'))
+			.map((line) => line.split('|').map((cell) => cell.trim()))
+			.filter((cells) => cells.length >= 7)
+			.filter((cells) => cells[1] && cells[1] !== 'Nombre' && cells[1] !== '---')
+			.map((cells) => ({
+				name: cells[1].replace(/`/g, ''),
+				slug: cells[2].replace(/`/g, ''),
+				route: cells[3].replace(/`/g, ''),
+			}))
+			.filter((entry) => entry.name && entry.slug);
+	} catch {
+		return [];
+	}
+}
+
+function buildExclusiveProfileIndex(entries) {
+	return new Map(entries.map((entry) => [normalizePersonKey(entry.name), entry]));
+}
+
 function addFinding(findings, severity, code, file, message) {
 	findings.push({ severity, code, file, message });
 }
@@ -781,7 +811,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	}
 }
 
-function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopleCatalogIndex) {
+function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopleCatalogIndex, exclusiveProfileIndex) {
 	const creditNames = [
 		...splitCreditNames(movie.director),
 		...(Array.isArray(movie.mainCast) ? movie.mainCast.flatMap((entry) => splitCreditNames(entry)) : []),
@@ -789,6 +819,17 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 	const uniqueNames = [...new Set(creditNames)];
 
 	for (const personName of uniqueNames) {
+		const exclusiveProfile = exclusiveProfileIndex.get(normalizePersonKey(personName));
+		if (exclusiveProfile && personName !== exclusiveProfile.name) {
+			addFinding(
+				findings,
+				'error',
+				'exclusive-profile-name-drift',
+				candidatePath,
+				`"${personName}" matches the exclusive profile "${exclusiveProfile.name}" (${exclusiveProfile.route}). Use the canonical catalog name so the dynamic profile link resolves consistently.`,
+			);
+		}
+
 		const catalogKey = peopleCatalog[personName]
 			? personName
 			: peopleCatalogIndex.get(normalizePersonKey(personName));
@@ -1216,6 +1257,8 @@ async function auditCandidates(args) {
 	const knownMovieSlugs = loadKnownMovieSlugs(rootDir);
 	const peopleCatalog = loadPeopleCatalog();
 	const peopleCatalogIndex = buildPeopleCatalogIndex(peopleCatalog);
+	const exclusiveProfileCatalog = loadExclusiveProfileCatalog();
+	const exclusiveProfileIndex = buildExclusiveProfileIndex(exclusiveProfileCatalog);
 	const findings = [];
 	const candidateMovies = [];
 
@@ -1260,7 +1303,7 @@ async function auditCandidates(args) {
 		});
 
 		validateMovieShape(movie, candidate, catalogText, findings, knownMovieSlugs);
-		validatePeoplePool(movie, candidate, findings, peopleCatalog, peopleCatalogIndex);
+		validatePeoplePool(movie, candidate, findings, peopleCatalog, peopleCatalogIndex, exclusiveProfileIndex);
 		const trailerId = validateTrailerId(movie, candidate, findings);
 
 		if (trailerId && !args.skipYoutube) {

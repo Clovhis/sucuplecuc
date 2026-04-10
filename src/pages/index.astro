@@ -7,12 +7,14 @@ import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCafecitoSupporters } from '../lib/cafecitoSupporters';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getMovies, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
+import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
 import { SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const cafecitoSupporters = await getCafecitoSupporters();
 const movies = getMovies();
+const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y honestas de películas';
 const pageDescription = SITE_DESCRIPTION;
@@ -54,7 +56,7 @@ const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`
 								id="movie-search-input"
 								class="movie-search__input"
 								type="search"
-								placeholder="Título, año, plataforma o rating..."
+								placeholder="Título, actor, año, plataforma o rating..."
 								autocomplete="off"
 								data-movie-search-input
 							/>
@@ -78,6 +80,27 @@ const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`
 							</div>
 						</div>
 					</section>
+					{
+						featuredPeople.length > 0 && (
+							<div hidden data-person-search-index aria-hidden="true">
+								{
+									featuredPeople.map((person) => (
+										<a
+											data-person-search-entry
+											data-person-search={person.searchableText}
+											data-person-title={person.title}
+											data-person-url={person.url}
+											data-person-poster-url={person.posterUrl}
+											data-person-meta={person.meta}
+											data-person-known-for={person.knownFor}
+										>
+											{person.title}
+										</a>
+									))
+								}
+							</div>
+						)
+					}
 					<a
 						class="site-header__donate"
 						href="https://cafecito.app/cineposta"

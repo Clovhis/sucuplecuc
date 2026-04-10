@@ -1,5 +1,7 @@
 import type { Movie, MovieVerdict } from '../types/movie';
+import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
 import { getMoviePath, getPosterUrl } from './movies';
+import { getPersonPath } from './people';
 
 export const SITE_URL = 'https://www.cineposta.com.ar';
 export const SITE_NAME = 'Cine Posta';
@@ -291,6 +293,94 @@ export function createMovieStructuredData(
 					position: 2,
 					name: movie.title,
 					item: movieUrl,
+				},
+			],
+		},
+	];
+}
+
+export function createPersonStructuredData(
+	person: Pick<
+		PersonProfile,
+		| 'slug'
+		| 'name'
+		| 'headline'
+		| 'roles'
+		| 'profileImage'
+		| 'image'
+		| 'remoteImageUrl'
+		| 'birthDate'
+		| 'birthPlace'
+		| 'nationalityPrimary'
+		| 'imdbUrl'
+		| 'referenceUrls'
+	>,
+	filmography: Pick<PersonFilmographyEntry, 'title'>[],
+	pageTitle: string,
+	pageDescription: string,
+): StructuredDataValue[] {
+	const personUrl = asAbsoluteUrl(getPersonPath(person.slug));
+	const imageUrl = person.profileImage
+		? person.profileImage
+		: person.image
+		? asAbsoluteUrl(person.image)
+		: person.remoteImageUrl ?? asAbsoluteUrl(SITE_IMAGE_PATH);
+
+	return [
+		{
+			'@context': 'https://schema.org',
+			'@type': 'Person',
+			'@id': `${personUrl}#person`,
+			url: personUrl,
+			name: person.name,
+			description: person.headline,
+			image: imageUrl,
+			jobTitle: person.roles.join(', '),
+			nationality: person.nationalityPrimary,
+			birthDate: person.birthDate,
+			birthPlace: person.birthPlace
+				? {
+						'@type': 'Place',
+						name: person.birthPlace,
+					}
+				: undefined,
+			sameAs: [person.imdbUrl, ...(person.referenceUrls ?? [])].filter(Boolean),
+			knowsAbout: filmography.slice(0, 6).map((movie) => movie.title),
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'ProfilePage',
+			'@id': `${personUrl}#webpage`,
+			url: personUrl,
+			name: pageTitle,
+			description: pageDescription,
+			inLanguage: SITE_LANGUAGE,
+			isPartOf: {
+				'@id': getWebsiteId(),
+			},
+			about: {
+				'@id': `${personUrl}#person`,
+			},
+			mainEntity: {
+				'@id': `${personUrl}#person`,
+			},
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			'@id': `${personUrl}#breadcrumb`,
+			itemListElement: [
+				{
+					'@type': 'ListItem',
+					position: 1,
+					name: SITE_NAME,
+					item: `${SITE_URL}/`,
+				},
+				{
+					'@type': 'ListItem',
+					position: 2,
+					name: person.name,
+					item: personUrl,
 				},
 			],
 		},

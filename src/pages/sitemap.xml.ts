@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { stat } from 'node:fs/promises';
 import { getMoviePath, getMovies } from '../lib/movies';
+import { getPersonPath, getPersonProfiles } from '../lib/people';
 import { ABOUT_PATH, SITE_URL } from '../lib/seo';
 
 export const prerender = true;
@@ -33,10 +34,17 @@ async function getFileLastMod(pathname: string): Promise<string | undefined> {
 
 export const GET: APIRoute = async () => {
 	const movies = getMovies();
+	const people = getPersonProfiles();
 	const movieEntries = await Promise.all(
 		movies.map(async (movie) => ({
 			pathname: getMoviePath(movie.slug),
 			lastmod: await getFileLastMod(`src/data/movies/${movie.slug}.json`),
+		})),
+	);
+	const personEntries = await Promise.all(
+		people.map(async (person) => ({
+			pathname: getPersonPath(person.slug),
+			lastmod: await getFileLastMod('src/data/personProfiles.ts'),
 		})),
 	);
 	const homeLastMod =
@@ -50,6 +58,7 @@ export const GET: APIRoute = async () => {
 	const entries = [
 		{ pathname: '/', lastmod: homeLastMod },
 		{ pathname: ABOUT_PATH, lastmod: aboutLastMod },
+		...personEntries,
 		...movieEntries,
 	];
 	const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries

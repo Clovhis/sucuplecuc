@@ -361,21 +361,52 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 												{peopleGroups.directors.map((person) => (
 													<li>
 														<article class="movie-detail__person-card">
-															<div class="movie-detail__person-avatar">
-																{person.image || person.remoteImageUrl ? (
-																	<img
-																		src={person.image ?? person.remoteImageUrl}
-																		alt={`Foto de ${person.creditedName}`}
-																		loading="lazy"
-																		referrerpolicy="no-referrer"
-																	/>
+															{
+																person.profilePath ? (
+																	<a
+																		class="movie-detail__person-avatar movie-detail__person-avatar--link"
+																		href={person.profilePath}
+																		aria-label={`Ver perfil de ${person.creditedName}`}
+																	>
+																		{person.image || person.remoteImageUrl ? (
+																			<img
+																				src={person.image ?? person.remoteImageUrl}
+																				alt={`Foto de ${person.creditedName}`}
+																				loading="lazy"
+																				referrerpolicy="no-referrer"
+																			/>
+																		) : (
+																			<span aria-hidden="true">{person.initials}</span>
+																		)}
+																	</a>
 																) : (
-																	<span aria-hidden="true">{person.initials}</span>
-																)}
-															</div>
+																	<div class="movie-detail__person-avatar">
+																		{person.image || person.remoteImageUrl ? (
+																			<img
+																				src={person.image ?? person.remoteImageUrl}
+																				alt={`Foto de ${person.creditedName}`}
+																				loading="lazy"
+																				referrerpolicy="no-referrer"
+																			/>
+																		) : (
+																			<span aria-hidden="true">{person.initials}</span>
+																		)}
+																	</div>
+																)
+															}
 															<div class="movie-detail__person-copy">
 																<p class="movie-detail__person-role">Dirección</p>
-																<p class="movie-detail__person-name">{person.creditedName}</p>
+																<p class="movie-detail__person-name">
+																	{
+																		person.profilePath ? (
+																			<a class="movie-detail__person-name-link" href={person.profilePath}>
+																				{person.creditedName}
+																			</a>
+																		) : (
+																			person.creditedName
+																		)
+																	}
+																</p>
 																<p class="movie-detail__person-meta">
 																	{getBirthSummary(person) ? (
 																		<>
@@ -419,20 +450,51 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 												{peopleGroups.cast.map((person) => (
 													<li>
 														<article class="movie-detail__person-card">
-															<div class="movie-detail__person-avatar">
-																{person.image || person.remoteImageUrl ? (
-																	<img
-																		src={person.image ?? person.remoteImageUrl}
-																		alt={`Foto de ${person.creditedName}`}
-																		loading="lazy"
-																		referrerpolicy="no-referrer"
-																	/>
+															{
+																person.profilePath ? (
+																	<a
+																		class="movie-detail__person-avatar movie-detail__person-avatar--link"
+																		href={person.profilePath}
+																		aria-label={`Ver perfil de ${person.creditedName}`}
+																	>
+																		{person.image || person.remoteImageUrl ? (
+																			<img
+																				src={person.image ?? person.remoteImageUrl}
+																				alt={`Foto de ${person.creditedName}`}
+																				loading="lazy"
+																				referrerpolicy="no-referrer"
+																			/>
+																		) : (
+																			<span aria-hidden="true">{person.initials}</span>
+																		)}
+																	</a>
 																) : (
-																	<span aria-hidden="true">{person.initials}</span>
-																)}
-															</div>
+																	<div class="movie-detail__person-avatar">
+																		{person.image || person.remoteImageUrl ? (
+																			<img
+																				src={person.image ?? person.remoteImageUrl}
+																				alt={`Foto de ${person.creditedName}`}
+																				loading="lazy"
+																				referrerpolicy="no-referrer"
+																			/>
+																		) : (
+																			<span aria-hidden="true">{person.initials}</span>
+																		)}
+																	</div>
+																)
+															}
 															<div class="movie-detail__person-copy">
-																<p class="movie-detail__person-name">{person.creditedName}</p>
+																<p class="movie-detail__person-name">
+																	{
+																		person.profilePath ? (
+																			<a class="movie-detail__person-name-link" href={person.profilePath}>
+																				{person.creditedName}
+																			</a>
+																		) : (
+																			person.creditedName
+																		)
+																	}
+																</p>
 																<p class="movie-detail__person-meta">
 																	{getBirthSummary(person) ? (
 																		<>
