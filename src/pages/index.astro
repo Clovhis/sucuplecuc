@@ -164,131 +164,135 @@ function formatUpcomingReleaseDate(value: string) {
 	</header>
 
 	<main id="main-content" class="container home-catalog">
-		<CinemaNewsTicker
-			items={cinemaNews.items}
-			sourceLabel={cinemaNews.sourceLabel}
-			updatedLabel={cinemaNews.updatedLabel}
-			isFallback={cinemaNews.isFallback}
-		/>
+		<div class="home-catalog__desktop-extra">
+			<CinemaNewsTicker
+				items={cinemaNews.items}
+				sourceLabel={cinemaNews.sourceLabel}
+				updatedLabel={cinemaNews.updatedLabel}
+				isFallback={cinemaNews.isFallback}
+			/>
+		</div>
 
 		{
 			movies.length > 0 ? (
 				<>
-					<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
-						<h2 class="u-visually-hidden">Filtros del catálogo y próximos estrenos</h2>
-						<div class="catalog-shell__main">
-							<div class="catalog-shell__filters">
-								{
-									featuredPeople.length > 0 && (
-										<section class="home-people-showcase" aria-labelledby="home-people-showcase-title">
-											<h3 id="home-people-showcase-title" class="home-people-showcase__title">
-												Bio de actores y directores
-											</h3>
-											<div class="home-people-showcase__grid" data-home-people-grid></div>
-										</section>
-									)
-								}
-								<div class="catalog-shell__filter-controls">
+					<div class="home-catalog__desktop-extra">
+						<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
+							<h2 class="u-visually-hidden">Filtros del catálogo y próximos estrenos</h2>
+							<div class="catalog-shell__main">
+								<div class="catalog-shell__filters">
 									{
-										platformOptions.length > 0 && (
-											<section class="home-platform-filter" data-home-platform-filter>
-												<p class="home-genre-filter__label">Elegí plataforma</p>
-												<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
-													{
-														platformOptions.map((platform) => (
-															<button
-																type="button"
-																class="home-platform-filter__chip"
-																data-home-platform-chip
-																data-home-platform-id={platform.normalizedLabel}
-																data-home-platform-label={platform.displayLabel}
-																aria-label={`Filtrar por ${platform.displayLabel}`}
-																aria-pressed="false"
-																title={platform.displayLabel}
-															>
-																<PlatformBadge
-																	platform={platform.normalizedLabel}
-																	className="home-platform-filter__badge"
-																/>
-															</button>
-														))
-													}
-												</div>
+										featuredPeople.length > 0 && (
+											<section class="home-people-showcase" aria-labelledby="home-people-showcase-title">
+												<h3 id="home-people-showcase-title" class="home-people-showcase__title">
+													Bio de actores y directores
+												</h3>
+												<div class="home-people-showcase__grid" data-home-people-grid></div>
 											</section>
 										)
 									}
-									<section class="home-genre-filter" data-home-genre-filter>
-										<p class="home-genre-filter__label">Elegí género</p>
-										<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-											{
-												RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-													<button
-														type="button"
-														class="home-genre-filter__chip"
-														data-home-genre-chip
-														data-home-genre-id={genre.id}
-														aria-pressed="false"
-													>
-														{genre.label}
-													</button>
-												))
-											}
-										</div>
-									</section>
-								</div>
-							</div>
-							<aside class="catalog-shell__upcoming" aria-labelledby="upcoming-releases-title">
-								<h3 id="upcoming-releases-title" class="catalog-shell__upcoming-title">
-									Próximos estrenos
-								</h3>
-								{
-									upcomingReleases.length > 0 ? (
-										<ol class="upcoming-release-list">
-											{
-												upcomingReleases.map((release) => (
-													<li class="upcoming-release-list__item">
-														<a
-															class="upcoming-release-list__card"
-															href={release.videoUrl}
-															target="_blank"
-															rel="noopener noreferrer"
-															aria-label={`Ver video de ${release.title}`}
-															title={`Ver video de ${release.title}`}
-														>
-															<div class="upcoming-release-list__media">
-																<img
-																	class="upcoming-release-list__image"
-																	src={release.thumbnailUrl}
-																	alt={`Trailer de ${release.title}`}
-																	loading="lazy"
-																	decoding="async"
-																	referrerpolicy="no-referrer"
-																/>
-																<span class="upcoming-release-list__play" aria-hidden="true">
-																	Ver video
-																</span>
-															</div>
-															<div class="upcoming-release-list__content">
-																<p class="upcoming-release-list__title">{release.title}</p>
-																<time
-																	class="upcoming-release-list__date"
-																	datetime={release.releaseDate}
+									<div class="catalog-shell__filter-controls">
+										{
+											platformOptions.length > 0 && (
+												<section class="home-platform-filter" data-home-platform-filter>
+													<p class="home-genre-filter__label">Elegí plataforma</p>
+													<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+														{
+															platformOptions.map((platform) => (
+																<button
+																	type="button"
+																	class="home-platform-filter__chip"
+																	data-home-platform-chip
+																	data-home-platform-id={platform.normalizedLabel}
+																	data-home-platform-label={platform.displayLabel}
+																	aria-label={`Filtrar por ${platform.displayLabel}`}
+																	aria-pressed="false"
+																	title={platform.displayLabel}
 																>
-																	{formatUpcomingReleaseDate(release.releaseDate)}
-																</time>
-															</div>
-														</a>
-													</li>
-												))
-											}
-										</ol>
-									) : (
-										<p class="catalog-shell__upcoming-empty">Agenda en actualización.</p>
-									)
-								}
-							</aside>
-						</div>
-					</section>
+																	<PlatformBadge
+																		platform={platform.normalizedLabel}
+																		className="home-platform-filter__badge"
+																	/>
+																</button>
+															))
+														}
+													</div>
+												</section>
+											)
+										}
+										<section class="home-genre-filter" data-home-genre-filter>
+											<p class="home-genre-filter__label">Elegí género</p>
+											<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+												{
+													RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+														<button
+															type="button"
+															class="home-genre-filter__chip"
+															data-home-genre-chip
+															data-home-genre-id={genre.id}
+															aria-pressed="false"
+														>
+															{genre.label}
+														</button>
+													))
+												}
+											</div>
+										</section>
+									</div>
+								</div>
+								<aside class="catalog-shell__upcoming" aria-labelledby="upcoming-releases-title">
+									<h3 id="upcoming-releases-title" class="catalog-shell__upcoming-title">
+										Próximos estrenos
+									</h3>
+									{
+										upcomingReleases.length > 0 ? (
+											<ol class="upcoming-release-list">
+												{
+													upcomingReleases.map((release) => (
+														<li class="upcoming-release-list__item">
+															<a
+																class="upcoming-release-list__card"
+																href={release.videoUrl}
+																target="_blank"
+																rel="noopener noreferrer"
+																aria-label={`Ver video de ${release.title}`}
+																title={`Ver video de ${release.title}`}
+															>
+																<div class="upcoming-release-list__media">
+																	<img
+																		class="upcoming-release-list__image"
+																		src={release.thumbnailUrl}
+																		alt={`Trailer de ${release.title}`}
+																		loading="lazy"
+																		decoding="async"
+																		referrerpolicy="no-referrer"
+																	/>
+																	<span class="upcoming-release-list__play" aria-hidden="true">
+																		Ver video
+																	</span>
+																</div>
+																<div class="upcoming-release-list__content">
+																	<p class="upcoming-release-list__title">{release.title}</p>
+																	<time
+																		class="upcoming-release-list__date"
+																		datetime={release.releaseDate}
+																	>
+																		{formatUpcomingReleaseDate(release.releaseDate)}
+																	</time>
+																</div>
+															</a>
+														</li>
+													))
+												}
+											</ol>
+										) : (
+											<p class="catalog-shell__upcoming-empty">Agenda en actualización.</p>
+										)
+									}
+								</aside>
+							</div>
+						</section>
+					</div>
 
 					<section class="movie-grid" aria-label="Peliculas publicadas" data-movie-search-grid>
 						{movies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
