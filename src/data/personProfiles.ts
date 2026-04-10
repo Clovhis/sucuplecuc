@@ -674,4 +674,347 @@ export const personProfiles: Record<string, PersonProfileRecord> = {
 			'https://www.oscars.org/oscars/ceremonies/2014',
 		],
 	},
+	'steven-spielberg': {
+		slug: 'steven-spielberg',
+		name: 'Steven Spielberg',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Steven%20Spielberg%202025.jpg?width=640',
+		headline:
+			'Director clave del blockbuster moderno y al mismo tiempo un narrador clásico capaz de pasar de la aventura pura al drama histórico con una fluidez rarísima.',
+		roles: ['Director', 'Productor', 'Guionista'],
+		birthPlace: 'Cincinnati, Ohio, Estados Unidos',
+		spotlight:
+			'Pocos cineastas moldearon tanto la imaginación popular: tiburones, extraterrestres, dinosaurios, guerras y memoria histórica, todo dentro de una misma carrera.',
+		biography: [
+			'Steven Spielberg nació el 18 de diciembre de 1946 en Cincinnati y desde muy chico filmó cortos caseros, armado con esa mezcla de curiosidad técnica y entusiasmo infantil que después se volvería una marca de estilo. Su ingreso a Hollywood se dio a través de la televisión, pero el salto real llegó con Duel y, sobre todo, con Jaws.',
+			'Ahí empezó una etapa histórica. Spielberg ayudó a definir el blockbuster moderno con E.T., Indiana Jones y Jurassic Park, sin perder nunca claridad narrativa ni sentido del espectáculo. Pero su carrera no quedó encerrada en la aventura: también dirigió Schindler’s List, Saving Private Ryan, Munich, Lincoln y The Fabelmans, mostrando una veta dramática cada vez más fuerte.',
+			'Su gran rasgo es la precisión con la que organiza emoción, espacio y ritmo. Puede filmar maravilla, terror, guerra o intimidad familiar sin perder legibilidad ni pulso popular. Por eso sigue siendo una referencia inevitable tanto para el cine industrial como para el más prestigioso.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '3 premios' },
+			{ label: 'Huella', value: 'Padre del blockbuster' },
+			{ label: 'Pulso', value: 'Emoción + espectáculo' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: "Schindler's List", year: 1994 },
+			{ label: 'Oscar', category: 'Mejor director', work: 'Saving Private Ryan', year: 1999 },
+			{ label: 'Oscar', category: 'Premio Irving G. Thalberg', work: 'Trayectoria como productor', year: 1986 },
+		],
+		knownFor: ['jaws-1975', 'e-t-the-extra-terrestrial-1982', 'jurassic-park-1993', 'schindler-s-list-1993'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Steven-Spielberg',
+			'https://www.oscars.org/oscars/ceremonies/1994',
+			'https://www.oscars.org/oscars/ceremonies/1999',
+		],
+	},
+	'christopher-nolan': {
+		slug: 'christopher-nolan',
+		name: 'Christopher Nolan',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/ChrisNolanBFI150224%20(10%20of%2012)%20(53532289710)%20(cropped2).jpg?width=640',
+		headline:
+			'Director británico que convirtió las estructuras complejas, el gran formato y la obsesión por el tiempo en cine masivo de primer nivel.',
+		roles: ['Director', 'Productor', 'Guionista'],
+		birthPlace: 'Londres, Inglaterra, Reino Unido',
+		spotlight:
+			'Consiguió algo muy difícil: hacer películas conceptuales, formales y largamente ambiciosas sin abandonar la escala industrial ni el impacto popular.',
+		biography: [
+			'Christopher Nolan nació el 30 de julio de 1970 en Londres y creció entre Inglaterra y Estados Unidos. Desde sus primeros trabajos se notó una fascinación por la percepción, la memoria y las estructuras narrativas quebradas, algo que explotó del todo con Memento.',
+			'Después convirtió esa obsesión en un lenguaje mainstream. Batman Begins, The Dark Knight, Inception, Interstellar, Dunkirk y Oppenheimer muestran a un director que piensa el espectáculo desde la forma, el montaje y la escala. Incluso cuando trabaja con ideas enormes, suele mantener una tensión narrativa muy concreta.',
+			'Nolan filma como si cada película fuera un mecanismo de relojería. Su prestigio no viene solo de la grandilocuencia, sino de haber logrado que el cine-evento contemporáneo vuelva a sentirse como una experiencia de autor.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '2 premios' },
+			{ label: 'Marca', value: 'Gran formato autoral' },
+			{ label: 'Pulso', value: 'Concepto + tensión' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'Oppenheimer', year: 2024 },
+			{ label: 'Oscar', category: 'Mejor película como productor', work: 'Oppenheimer', year: 2024 },
+			{ label: 'BFI Fellowship', category: 'Máximo honor del BFI', work: 'Trayectoria', year: 2024 },
+		],
+		knownFor: ['memento-2000', 'inception-2010', 'interstellar-2014', 'oppenheimer-2023'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Christopher-Nolan-British-director',
+			'https://www.oscars.org/oscars/ceremonies/2024',
+			'https://www.bfi.org.uk/news/programme-announced-february-2024-bfi-southbank-bfi-imax',
+		],
+	},
+	'quentin-tarantino': {
+		slug: 'quentin-tarantino',
+		name: 'Quentin Tarantino',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Quentin%20Tarantino%20by%20Gage%20Skidmore.jpg?width=640',
+		headline:
+			'Director y guionista que volvió pop la cita cinéfila, la violencia estilizada y el diálogo como motor puro de tensión y placer.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Knoxville, Tennessee, Estados Unidos',
+		spotlight:
+			'Su cine mezcla exploitation, western, kung fu, noir y comedia negra con una seguridad tonal tan extrema que terminó inventando un adjetivo propio.',
+		biography: [
+			'Quentin Tarantino nació el 27 de marzo de 1963 en Knoxville y se formó más en videoclubs y salas que en escuelas de cine. Esa educación cinéfila, desordenada y apasionada terminó siendo parte central de su identidad como autor.',
+			'Reservoir Dogs y Pulp Fiction lo instalaron de inmediato como una voz singular. Después siguió expandiendo un universo reconocible con Jackie Brown, Kill Bill, Inglourious Basterds, Django Unchained, The Hateful Eight y Once Upon a Time in Hollywood. Cada película suya parece conversar con medio siglo de cine popular.',
+			'Tarantino filma desde el exceso controlado: música, actuación, encuadre y texto trabajan para crear escenas larguísimas que siempre están a punto de explotar. Es un estilista total, pero también un narrador que entiende perfectamente el placer físico del cine.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '2 premios' },
+			{ label: 'Marca', value: 'Autor pop absoluto' },
+			{ label: 'Pulso', value: 'Diálogo + pólvora' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor guion original', work: 'Pulp Fiction', year: 1995 },
+			{ label: 'Oscar', category: 'Mejor guion original', work: 'Django Unchained', year: 2013 },
+		],
+		knownFor: [
+			'pulp-fiction-1994',
+			'kill-bill-vol-1-2003',
+			'inglourious-basterds-2009',
+			'once-upon-a-time-in-hollywood-2019',
+		],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Quentin-Tarantino',
+			'https://www.oscars.org/oscars/ceremonies/1995',
+			'https://www.oscars.org/oscars/ceremonies/2013',
+		],
+	},
+	'hayao-miyazaki': {
+		slug: 'hayao-miyazaki',
+		name: 'Hayao Miyazaki',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/HayaoMiyazakiCCJuly09.jpg?width=640',
+		headline:
+			'Maestro absoluto de la animación japonesa, creador de mundos sensibles, melancólicos y visualmente deslumbrantes que marcaron generaciones enteras.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Tokio, Japón',
+		spotlight:
+			'Su cine puede ser tierno, ecológico, bélico, fantástico y político al mismo tiempo, siempre con una humanidad enorme en el centro.',
+		biography: [
+			'Hayao Miyazaki nació el 5 de enero de 1941 en Tokio y se formó dentro de la industria de la animación japonesa antes de convertirse en uno de sus grandes renovadores. Su imaginación visual siempre convivió con una mirada crítica sobre la guerra, la modernidad y el vínculo entre humanidad y naturaleza.',
+			'Con Nausicaä, My Neighbor Totoro, Princess Mononoke, Spirited Away, Howl’s Moving Castle y The Boy and the Heron armó una filmografía que atraviesa décadas sin perder delicadeza ni poder de asombro. Sus películas están llenas de vuelo, de criaturas extrañas y de personajes femeninos complejos y memorables.',
+			'Miyazaki tiene algo raro incluso entre los gigantes: cada plano suyo parece dibujado desde una ética, no solo desde una estética. Por eso su cine emociona tanto a chicos como a adultos sin caer nunca en el subrayado fácil.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '2 premios competitivos' },
+			{ label: 'Huella', value: 'Leyenda de la animación' },
+			{ label: 'Pulso', value: 'Poesía + aventura' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor película animada', work: 'Spirited Away', year: 2003 },
+			{ label: 'Oscar', category: 'Mejor película animada', work: 'The Boy and the Heron', year: 2024 },
+		],
+		knownFor: [
+			'nausicaa-of-the-valley-of-the-wind-1984',
+			'my-neighbor-totoro-1988',
+			'spirited-away-2001',
+			'the-boy-and-the-heron-2023',
+		],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Miyazaki-Hayao',
+			'https://www.oscars.org/oscars/ceremonies/2003',
+			'https://www.oscars.org/oscars/ceremonies/2024',
+		],
+	},
+	'james-cameron': {
+		slug: 'james-cameron',
+		name: 'James Cameron',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/James%20Cameron%20at%2053rd%20Saturn%20Awards%202026-01.jpg?width=640',
+		headline:
+			'Director que convirtió la ambición tecnológica en espectáculo planetario sin resignar una vocación clarísima por el cine de aventura.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Kapuskasing, Ontario, Canadá',
+		spotlight:
+			'Su carrera está hecha de hitos industriales: secuelas superiores al original, ciencia ficción musculosa, récords de taquilla y obsesión real por la imagen.',
+		biography: [
+			'James Cameron nació el 16 de agosto de 1954 en Kapuskasing, Ontario, y llegó al cine por una mezcla de curiosidad técnica, trabajo duro y fascinación por la ciencia ficción. Su crecimiento fue veloz: de Piranha II a The Terminator hay un salto brutal de control y personalidad.',
+			'Con Aliens, Terminator 2, Titanic y Avatar construyó una carrera ligada a la escala, la invención técnica y el espectáculo físico. Pero su cine no es puro aparato: suele apoyarse en conflictos simples y muy claros para que la dimensión industrial nunca tape del todo lo emocional.',
+			'Cameron empuja cada proyecto como si quisiera probar un límite nuevo del medio. Esa obsesión, que a veces roza la demencia productiva, es parte de lo que lo volvió una figura central del cine mundial.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '3 premios' },
+			{ label: 'Marca', value: 'Espectáculo tecnológico' },
+			{ label: 'Pulso', value: 'Ambición total' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'Titanic', year: 1998 },
+			{ label: 'Oscar', category: 'Mejor película como productor', work: 'Titanic', year: 1998 },
+			{ label: 'Golden Globe', category: 'Mejor director', work: 'Avatar', year: 2010 },
+		],
+		knownFor: ['the-terminator-1984', 'aliens-1986', 'titanic-1997', 'avatar-2009'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/James-Cameron',
+			'https://www.oscars.org/oscars/ceremonies/1998',
+			'https://www.goldenglobes.com/person/james-cameron',
+		],
+	},
+	'martin-scorsese': {
+		slug: 'martin-scorsese',
+		name: 'Martin Scorsese',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Scorsese%20MFF%202023.jpg?width=640',
+		headline:
+			'Uno de los grandes autores del cine estadounidense, dueño de una energía visual y moral que sigue marcando el estándar del drama adulto.',
+		roles: ['Director', 'Productor', 'Guionista'],
+		birthPlace: 'Queens, Nueva York, Estados Unidos',
+		spotlight:
+			'Pocos filmaron con tanta intensidad la culpa, la violencia, la fe, la ambición y el derrumbe de los hombres modernos.',
+		biography: [
+			'Martin Scorsese nació el 17 de noviembre de 1942 en Queens y creció en Little Italy, un universo que impregnó buena parte de su cine. Su formación mezcla cinefilia extrema, educación católica y una sensibilidad urbana que hizo de sus primeras películas algo inconfundible.',
+			'Mean Streets, Taxi Driver, Raging Bull, Goodfellas, Casino, The Departed, The Wolf of Wall Street y Killers of the Flower Moon forman parte de una filmografía monumental. También fue central como historiador, restaurador y defensor del cine, tanto en documentales como en tareas de preservación.',
+			'Scorsese filma con nervio, música, cámara móvil y montaje vivo, pero detrás de esa superficie siempre hay preguntas morales profundas. No es solo un estilista feroz: es un observador implacable de la violencia y de la culpa.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '1 premio' },
+			{ label: 'Huella', value: 'Autor total' },
+			{ label: 'Pulso', value: 'Furia moral' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'The Departed', year: 2007 },
+			{ label: 'Palma de Oro', category: 'Mejor película', work: 'Taxi Driver', year: 1976 },
+		],
+		knownFor: ['taxi-driver-1976', 'goodfellas-1990', 'the-departed-2006', 'killers-of-the-flower-moon-2023'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Martin-Scorsese',
+			'https://www.oscars.org/oscars/ceremonies/2007',
+			'https://www.festival-cannes.com/en/p/taxi-driver/',
+		],
+	},
+	'francis-ford-coppola': {
+		slug: 'francis-ford-coppola',
+		name: 'Francis Ford Coppola',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Francis%20Ford%20Coppola%20on%20December%208%2C%202024%20in%20the%20White%20House%20Oval%20Office%20(cropped).jpg?width=640',
+		headline:
+			'Figura fundacional del Nuevo Hollywood, capaz de levantar epopeyas monumentales y al mismo tiempo pelear por una idea radical de independencia creativa.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Detroit, Michigan, Estados Unidos',
+		spotlight:
+			'Entre The Godfather, The Conversation y Apocalypse Now dejó una de las décadas más impresionantes que haya firmado un director en la historia del cine.',
+		biography: [
+			'Francis Ford Coppola nació el 7 de abril de 1939 en Detroit y se formó primero en teatro y después en cine. Su paso por el circuito de Roger Corman le dio oficio industrial, pero muy rápido apuntó a algo más ambicioso y personal.',
+			'En los 70 dirigió una seguidilla imposible: The Godfather, The Conversation, The Godfather Part II y Apocalypse Now. Esas películas no solo lo volvieron central en el Nuevo Hollywood, también redefinieron la escala posible del cine de estudio cuando un autor toma el control.',
+			'Coppola siempre fue más que un director prestigioso: también funcionó como productor, impulsor tecnológico y figura de referencia para generaciones enteras. Su carrera tiene altibajos, sí, pero su peso histórico es inmenso.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '6 premios personales' },
+			{ label: 'Huella', value: 'Nuevo Hollywood' },
+			{ label: 'Pulso', value: 'Épica + riesgo' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'The Godfather Part II', year: 1975 },
+			{ label: 'Oscar', category: 'Mejor guion adaptado', work: 'The Godfather', year: 1973 },
+		],
+		knownFor: ['the-godfather-1972', 'the-godfather-part-ii-1974', 'apocalypse-now-1979', 'megalopolis-2024'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Francis-Ford-Coppola',
+			'https://www.oscars.org/oscars/ceremonies/1973',
+			'https://www.oscars.org/oscars/ceremonies/1975',
+		],
+	},
+	'george-lucas': {
+		slug: 'george-lucas',
+		name: 'George Lucas',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/George%20Lucas.jpg?width=640',
+		headline:
+			'Arquitecto de franquicias modernas, productor visionario y director que cambió para siempre la relación entre cine, tecnología y cultura popular.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Modesto, California, Estados Unidos',
+		spotlight:
+			'No filmó demasiado como director, pero lo que hizo alcanzó para redefinir los efectos visuales, el merchandising y la idea misma de universo cinematográfico.',
+		biography: [
+			'George Lucas nació el 14 de mayo de 1944 en Modesto y llegó al cine después de una adolescencia marcada por los autos, la velocidad y un accidente que casi le cambia la vida. Ya en la USC empezó a combinar fascinación visual, ciencia ficción y una mirada muy precisa sobre la cultura estadounidense.',
+			'THX 1138 y American Graffiti mostraban dos facetas distintas, pero fue Star Wars la obra que reorganizó su carrera y buena parte de la industria. Lucas no solo dirigió la película original y la trilogía precuela: también construyó Lucasfilm, ILM y una infraestructura tecnológica decisiva para el cine moderno.',
+			'Su importancia excede largamente la dirección. Lucas pensó el cine como sistema, como mitología global y como laboratorio técnico. Por eso su figura es indispensable incluso cuando no estaba detrás de cámara.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '1 premio honorífico de producción' },
+			{ label: 'Huella', value: 'Revolución industrial' },
+			{ label: 'Pulso', value: 'Mito pop global' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Premio Irving G. Thalberg', work: 'Trayectoria como productor', year: 1991 },
+		],
+		knownFor: [
+			'star-wars-episode-iv-a-new-hope-1977',
+			'star-wars-episode-i-the-phantom-menace-1999',
+			'star-wars-episode-ii-attack-of-the-clones-2002',
+			'star-wars-episode-iii-revenge-of-the-sith-2005',
+		],
+		referenceUrls: [
+			'https://www.britannica.com/biography/George-Lucas',
+			'https://www.lucasfilm.com/who-we-are/george-lucas/',
+			'https://www.oscars.org/oscars/ceremonies/1992',
+		],
+	},
+	'peter-jackson': {
+		slug: 'peter-jackson',
+		name: 'Peter Jackson',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Jackson%20ONZ%20(cropped).jpg?width=640',
+		headline:
+			'Director neozelandés que llevó la fantasía épica a una escala pocas veces vista y convirtió una sensibilidad geek en cine masivo del más alto nivel.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Pukerua Bay, Isla Norte, Nueva Zelanda',
+		spotlight:
+			'Pasó del gore artesanal a una de las trilogías más influyentes del siglo XXI sin perder el gusto por el detalle, el mundo construido y la aventura física.',
+		biography: [
+			'Peter Jackson nació el 31 de octubre de 1961 en Pukerua Bay y arrancó filmando de manera completamente autodidacta. Sus primeras películas ya mostraban una imaginación visual desaforada y una energía artesanal que después iba a escalar de forma impensada.',
+			'El salto definitivo llegó con The Lord of the Rings, una apuesta gigantesca que redefinió el cine fantástico contemporáneo. La trilogía combinó ambición épica, trabajo técnico monumental y una convicción emocional que la volvió un fenómeno crítico y popular a nivel mundial.',
+			'Jackson tiene un don especial para hacer tangible lo imposible. Sus películas pueden ser enormes, pero casi siempre conservan algo físico, táctil y lúdico. Esa mezcla es una parte grande de su encanto como director.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '3 premios' },
+			{ label: 'Marca', value: 'Fantasía épica' },
+			{ label: 'Pulso', value: 'Aventura gigantesca' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'The Lord of the Rings: The Return of the King', year: 2004 },
+			{ label: 'Oscar', category: 'Mejor película como productor', work: 'The Lord of the Rings: The Return of the King', year: 2004 },
+			{ label: 'Oscar', category: 'Mejor guion adaptado', work: 'The Lord of the Rings: The Return of the King', year: 2004 },
+		],
+		knownFor: [
+			'the-lord-of-the-rings-the-fellowship-of-the-ring-2001',
+			'the-lord-of-the-rings-the-two-towers-2002',
+			'the-lord-of-the-rings-the-return-of-the-king-2003',
+		],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Peter-Jackson-New-Zealand-director',
+			'https://www.oscars.org/oscars/ceremonies/2004',
+			'https://www.nzonscreen.com/profile/peter-jackson/biography',
+		],
+	},
+	'guillermo-del-toro': {
+		slug: 'guillermo-del-toro',
+		name: 'Guillermo del Toro',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Guillermo%20del%20Toro%20at%20the%202026%20Sundance%20Film%20Festival%2001%20(cropped).jpg?width=640',
+		headline:
+			'Director mexicano que volvió prestigioso al cine de monstruos sin domesticarlo, siempre mezclando imaginación visual con melancolía y política.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Guadalajara, Jalisco, México',
+		spotlight:
+			'Su filmografía une terror, fantasía, catolicismo, guerra y criaturas heridas en un universo visual que nadie más filma igual.',
+		biography: [
+			'Guillermo del Toro nació el 9 de octubre de 1964 en Guadalajara y desde muy joven estuvo obsesionado con los monstruos, el maquillaje, la imaginería católica y los cuentos oscuros. Esa mezcla se convirtió en el corazón de toda su obra.',
+			'Cronos, The Devil’s Backbone, Pan’s Labyrinth, Hellboy, Pacific Rim, The Shape of Water, Nightmare Alley y Pinocchio muestran una carrera muy poco domesticable. Del Toro puede trabajar dentro de Hollywood sin perder nunca del todo su sensibilidad gótica, afectiva y monstruosa.',
+			'Lo mejor de su cine aparece cuando hace convivir ternura y espanto. Sus criaturas no suelen ser simples amenazas: son cuerpos heridos, exiliados o incomprendidos. Ahí aparece toda su humanidad como autor.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '3 premios' },
+			{ label: 'Marca', value: 'Poeta de monstruos' },
+			{ label: 'Pulso', value: 'Fantasía + dolor' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'The Shape of Water', year: 2018 },
+			{ label: 'Oscar', category: 'Mejor película como productor', work: 'The Shape of Water', year: 2018 },
+			{ label: 'Oscar', category: 'Mejor película animada', work: "Guillermo del Toro's Pinocchio", year: 2023 },
+		],
+		knownFor: ['blade-ii-2002', 'the-shape-of-water-2017', 'nightmare-alley-2021', 'frankenstein-2025'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Guillermo-del-Toro',
+			'https://www.oscars.org/oscars/ceremonies/2018',
+			'https://www.oscars.org/oscars/ceremonies/2023',
+		],
+	},
 };
