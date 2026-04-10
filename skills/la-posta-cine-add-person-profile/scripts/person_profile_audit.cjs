@@ -3,6 +3,10 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const PROFILE_IMAGE_MIN_WIDTH = 480;
+const PROFILE_IMAGE_WARN_WIDTH = 900;
+const PROFILE_IMAGE_WARN_SIZE_KB = 180;
+const PROFILE_IMAGE_ERROR_SIZE_KB = 260;
 
 function usage() {
 	console.log(
@@ -150,6 +154,97 @@ function isHttpsUrl(value) {
 	return /^https:\/\/.+/i.test(String(value || ''));
 }
 
+function isLocalAssetPath(value) {
+	return /^\/[a-z0-9/_\-.]+$/i.test(String(value || ''));
+}
+
+function getProfileImageWidthHint(value) {
+	const source = String(value || '');
+	const widthQueryMatch = source.match(/[?&]width=(\d{2,4})/i);
+	if (widthQueryMatch) {
+		return Number.parseInt(widthQueryMatch[1], 10);
+	}
+
+	const tmdbWidthMatch = source.match(/\/w(\d{2,4})\//i);
+	if (tmdbWidthMatch) {
+		return Number.parseInt(tmdbWidthMatch[1], 10);
+	}
+
+	return undefined;
+}
+
+function auditProfileImage({ slug, profileImage, repoRoot, findings }) {
+	if (!normalizeWhitespace(profileImage)) {
+		addFinding(
+			findings,
+			'error',
+			slug,
+			'La foto principal del perfil debe definir profileImage; no alcanza con la imagen compacta de people.json.',
+		);
+		return;
+	}
+
+	if (/poster-no-disponible/i.test(profileImage)) {
+		addFinding(findings, 'error', slug, 'profileImage no puede usar el poster de fallback.');
+		return;
+	}
+
+	if (isHttpsUrl(profileImage)) {
+		const widthHint = getProfileImageWidthHint(profileImage);
+		if (widthHint && widthHint < PROFILE_IMAGE_MIN_WIDTH) {
+			addFinding(
+				findings,
+				'error',
+				slug,
+				`profileImage parece demasiado chico para el hero portrait (${widthHint}px); usar una variante de al menos ${PROFILE_IMAGE_MIN_WIDTH}px de ancho.`,
+			);
+		} else if (widthHint && widthHint > PROFILE_IMAGE_WARN_WIDTH) {
+			addFinding(
+				findings,
+				'warn',
+				slug,
+				`profileImage usa una variante grande (${widthHint}px); revisar si existe una versión más liviana sin perder nitidez.`,
+			);
+		} else if (!widthHint) {
+			addFinding(
+				findings,
+				'warn',
+				slug,
+				'profileImage no expone un width hint visible; conviene usar una URL resizeada para controlar mejor calidad y peso.',
+			);
+		}
+		return;
+	}
+
+	if (!isLocalAssetPath(profileImage)) {
+		addFinding(findings, 'error', slug, 'profileImage debe ser https o un asset local dentro de /public.');
+		return;
+	}
+
+	const assetPath = path.join(repoRoot, 'public', profileImage.replace(/^\/+/, ''));
+	if (!fs.existsSync(assetPath)) {
+		addFinding(findings, 'error', slug, `No existe el asset local para profileImage: ${path.relative(repoRoot, assetPath)}`);
+		return;
+	}
+
+	const fileSizeKb = fs.statSync(assetPath).size / 1024;
+	if (fileSizeKb > PROFILE_IMAGE_ERROR_SIZE_KB) {
+		addFinding(
+			findings,
+			'error',
+			slug,
+			`profileImage local pesa ${fileSizeKb.toFixed(1)} KB; optimizarlo para mantener el repo liviano.`,
+		);
+	} else if (fileSizeKb > PROFILE_IMAGE_WARN_SIZE_KB) {
+		addFinding(
+			findings,
+			'warn',
+			slug,
+			`profileImage local pesa ${fileSizeKb.toFixed(1)} KB; todavía compila, pero conviene comprimirlo un poco más.`,
+		);
+	}
+}
+
 function auditProfile({ slug, profile, peopleByName, moviesBySlug, allMovies, requireDist, repoRoot, duplicateNameCounts }) {
 	const findings = [];
 	const scope = slug;
@@ -213,11 +308,9 @@ function auditProfile({ slug, profile, peopleByName, moviesBySlug, allMovies, re
 		if (!profile.profileImage && !personRecord.image && !personRecord.remoteImageUrl) {
 			addFinding(findings, 'error', scope, 'La ficha no tiene cobertura de imagen.');
 		}
-
-		if (!profile.profileImage) {
-			addFinding(findings, 'warn', scope, 'La ficha exclusiva depende de la imagen compacta de people.json; conviene definir profileImage.');
-		}
 	}
+
+	auditProfileImage({ slug, profileImage: profile.profileImage, repoRoot, findings });
 
 	if (duplicateNameCounts.get(normalizePersonName(profile.name)) > 1) {
 		addFinding(findings, 'error', scope, 'Hay mas de un profile con el mismo nombre normalizado.');
@@ -235,10 +328,6 @@ function auditProfile({ slug, profile, peopleByName, moviesBySlug, allMovies, re
 		if (!connectedMovieSlugs.has(movieSlug)) {
 			addFinding(findings, 'error', scope, `knownFor incluye ${movieSlug} pero esa pelicula no esta conectada a la persona en el catalogo.`);
 		}
-	}
-
-	if (profile.profileImage && !isHttpsUrl(profile.profileImage)) {
-		addFinding(findings, 'warn', scope, 'profileImage no es https; revisar estrategia de imagen.');
 	}
 
 	if (requireDist) {

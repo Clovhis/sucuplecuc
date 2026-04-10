@@ -141,6 +141,7 @@ Every new profile should include:
 
 - `slug`
 - `name`
+- `profileImage` for the hero portrait on `/personas/[slug]`
 - short `headline`
 - `roles`
 - `birthPlace` when available
@@ -160,7 +161,9 @@ The bundled auditor checks, at minimum:
 - required profile fields are present and non-empty
 - no duplicate slugs or duplicate normalized names exist
 - every candidate resolves to a person entry in `src/data/people.json`
-- image coverage exists through `profileImage`, local portrait, or remote fallback
+- the exclusive-page hero portrait has an explicit `profileImage`
+- `profileImage` is not a blurry compact fallback from `people.json`
+- `profileImage` uses a resized/optimized source that stays reasonably light
 - `knownFor` only references real movie slugs from the catalog
 - `knownFor` is actually connected to that person in the current catalog
 - the connected filmography is not empty
@@ -176,14 +179,17 @@ Quality matters, but keep the site light.
 Preferred order:
 
 1. Use an existing local portrait in `public/people/**` for compact surfaces like search or cast cards
-2. For the exclusive profile page, prefer a higher-resolution `profileImage` URL when the cached local portrait is too small
-3. Use resized remote sources when possible, ideally width `480` to `720`
-4. If storing locally, prefer compressed WebP or optimized JPG and keep the file roughly under `160 KB`
+2. For the exclusive profile page, always define `profileImage`; do not rely on `image` or `remoteImageUrl` from `people.json`
+3. For the hero portrait, prefer a resized `profileImage` around width `480` to `720`
+4. If storing locally, prefer compressed WebP or optimized JPG and keep the file roughly under `160 KB`; only tolerate going above that when the visual gain is obvious
+5. If using a remote portrait, prefer URLs that already expose a width hint such as `?width=640` or `/w500/`
 
 Rules:
 
 - Never use giant originals when a resized version exists
 - Never use posters, screenshots, or character art as portraits
+- The hero portrait in the left rail of `/personas/[slug]` must look crisp on desktop; blurry miniatures are not acceptable
+- `people.json` can stay low-res for compact cards, but that compact asset is not enough for `profileImage`
 - Keep the exclusive page visually crisp without bloating the repository
 
 ## Search and navigation requirements
