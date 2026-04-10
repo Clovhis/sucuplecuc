@@ -63,6 +63,8 @@ export interface PersonSearchEntry {
 	url: string;
 	posterUrl: string;
 	meta: string;
+	ageLabel: string;
+	nationalityLabel: string;
 	knownFor: string;
 	searchableText: string;
 }

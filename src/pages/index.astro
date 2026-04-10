@@ -6,7 +6,7 @@ import MovieCard from '../components/MovieCard.astro';
 import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCafecitoSupporters } from '../lib/cafecitoSupporters';
 import { getCinemaNews } from '../lib/cinemaNews';
-import { getMovies, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
+import { getMovies, getUpcomingMovieReleases, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
 import { SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
@@ -16,10 +16,25 @@ const cafecitoSupporters = await getCafecitoSupporters();
 const movies = getMovies();
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
+const upcomingReleases = getUpcomingMovieReleases(new Date(), 2);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y honestas de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
 const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`;
+
+function formatUpcomingReleaseDate(value: string) {
+	const releaseDate = new Date(`${value}T00:00:00Z`);
+	if (Number.isNaN(releaseDate.getTime())) {
+		return value;
+	}
+
+	return new Intl.DateTimeFormat('es-AR', {
+		day: 'numeric',
+		month: 'short',
+		year: 'numeric',
+		timeZone: 'UTC',
+	}).format(releaseDate);
+}
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
@@ -92,6 +107,8 @@ const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`
 											data-person-url={person.url}
 											data-person-poster-url={person.posterUrl}
 											data-person-meta={person.meta}
+											data-person-age={person.ageLabel}
+											data-person-nationality={person.nationalityLabel}
 											data-person-known-for={person.knownFor}
 										>
 											{person.title}
@@ -158,62 +175,118 @@ const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`
 			movies.length > 0 ? (
 				<>
 					<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
-						<div class="catalog-shell__intro">
-							<p class="catalog-shell__kicker">Explorá el catálogo</p>
-							<p class="catalog-shell__copy">
-								Cine Posta junta reseñas cortas y honestas para ayudarte a decidir rápido qué película ver.
-							</p>
-							<p class="catalog-shell__copy">
-								Arrancá por plataforma, afiná por género o buscá directo. Cada ficha te conecta con películas, actores y directores relacionados.
-							</p>
-						</div>
-						<div class="catalog-shell__filters">
-							{
-								platformOptions.length > 0 && (
-									<section class="home-platform-filter" data-home-platform-filter>
-										<p class="home-genre-filter__label">Elegí plataforma</p>
-										<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+						<h2 class="u-visually-hidden">Filtros del catálogo y próximos estrenos</h2>
+						<div class="catalog-shell__main">
+							<div class="catalog-shell__filters">
+								{
+									featuredPeople.length > 0 && (
+										<section class="home-people-showcase" aria-labelledby="home-people-showcase-title">
+											<h3 id="home-people-showcase-title" class="home-people-showcase__title">
+												Bio de actores y directores
+											</h3>
+											<div class="home-people-showcase__grid" data-home-people-grid></div>
+										</section>
+									)
+								}
+								<div class="catalog-shell__filter-controls">
+									{
+										platformOptions.length > 0 && (
+											<section class="home-platform-filter" data-home-platform-filter>
+												<p class="home-genre-filter__label">Elegí plataforma</p>
+												<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+													{
+														platformOptions.map((platform) => (
+															<button
+																type="button"
+																class="home-platform-filter__chip"
+																data-home-platform-chip
+																data-home-platform-id={platform.normalizedLabel}
+																data-home-platform-label={platform.displayLabel}
+																aria-label={`Filtrar por ${platform.displayLabel}`}
+																aria-pressed="false"
+																title={platform.displayLabel}
+															>
+																<PlatformBadge
+																	platform={platform.normalizedLabel}
+																	className="home-platform-filter__badge"
+																/>
+															</button>
+														))
+													}
+												</div>
+											</section>
+										)
+									}
+									<section class="home-genre-filter" data-home-genre-filter>
+										<p class="home-genre-filter__label">Elegí género</p>
+										<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
 											{
-												platformOptions.map((platform) => (
+												RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
 													<button
 														type="button"
-														class="home-platform-filter__chip"
-														data-home-platform-chip
-														data-home-platform-id={platform.normalizedLabel}
-														data-home-platform-label={platform.displayLabel}
-														aria-label={`Filtrar por ${platform.displayLabel}`}
+														class="home-genre-filter__chip"
+														data-home-genre-chip
+														data-home-genre-id={genre.id}
 														aria-pressed="false"
-														title={platform.displayLabel}
 													>
-														<PlatformBadge
-															platform={platform.normalizedLabel}
-															className="home-platform-filter__badge"
-														/>
+														{genre.label}
 													</button>
 												))
 											}
 										</div>
 									</section>
-								)
-							}
-							<section class="home-genre-filter" data-home-genre-filter>
-								<p class="home-genre-filter__label">Elegí género</p>
-								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-									{
-										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-											<button
-												type="button"
-												class="home-genre-filter__chip"
-												data-home-genre-chip
-												data-home-genre-id={genre.id}
-												aria-pressed="false"
-											>
-												{genre.label}
-											</button>
-										))
-									}
 								</div>
-							</section>
+							</div>
+							<aside class="catalog-shell__upcoming" aria-labelledby="upcoming-releases-title">
+								<h3 id="upcoming-releases-title" class="catalog-shell__upcoming-title">
+									Próximos estrenos
+								</h3>
+								{
+									upcomingReleases.length > 0 ? (
+										<ol class="upcoming-release-list">
+											{
+												upcomingReleases.map((release) => (
+													<li class="upcoming-release-list__item">
+														<a
+															class="upcoming-release-list__card"
+															href={release.videoUrl}
+															target="_blank"
+															rel="noopener noreferrer"
+															aria-label={`Ver video de ${release.title}`}
+															title={`Ver video de ${release.title}`}
+														>
+															<div class="upcoming-release-list__media">
+																<img
+																	class="upcoming-release-list__image"
+																	src={release.thumbnailUrl}
+																	alt={`Trailer de ${release.title}`}
+																	loading="lazy"
+																	decoding="async"
+																	referrerpolicy="no-referrer"
+																/>
+																<span class="upcoming-release-list__play" aria-hidden="true">
+																	Ver video
+																</span>
+															</div>
+															<div class="upcoming-release-list__content">
+																<p class="upcoming-release-list__title">{release.title}</p>
+																<time
+																	class="upcoming-release-list__date"
+																	datetime={release.releaseDate}
+																>
+																	{formatUpcomingReleaseDate(release.releaseDate)}
+																</time>
+															</div>
+														</a>
+													</li>
+												))
+											}
+										</ol>
+									) : (
+										<p class="catalog-shell__upcoming-empty">Agenda en actualización.</p>
+									)
+								}
+							</aside>
 						</div>
 					</section>
 

@@ -30,6 +30,8 @@ type PersonIndexEntry = {
 	url: string;
 	posterUrl: string;
 	meta: string;
+	ageLabel: string;
+	nationalityLabel: string;
 	cast: string;
 	entryType: 'person';
 };
@@ -82,6 +84,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const people = Array.from(searchRoot.querySelectorAll<HTMLElement>('[data-person-search-entry]'));
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
+	const peopleShowcaseGrid = document.querySelector<HTMLElement>('[data-home-people-grid]');
 
 	if (!(input instanceof HTMLInputElement)) {
 		return;
@@ -132,6 +135,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			url,
 			posterUrl: person.dataset.personPosterUrl ?? '',
 			meta: person.dataset.personMeta ?? 'Perfil',
+			ageLabel: person.dataset.personAge ?? '',
+			nationalityLabel: person.dataset.personNationality ?? '',
 			cast: person.dataset.personKnownFor ?? '',
 			entryType: 'person',
 		}];
@@ -160,12 +165,72 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			.replace(/[\u0300-\u036f]/g, '')
 			.trim();
 
+	const shuffleEntries = <T>(entries: T[]): T[] => {
+		const nextEntries = entries.slice();
+		for (let index = nextEntries.length - 1; index > 0; index -= 1) {
+			const swapIndex = Math.floor(Math.random() * (index + 1));
+			[nextEntries[index], nextEntries[swapIndex]] = [nextEntries[swapIndex], nextEntries[index]];
+		}
+		return nextEntries;
+	};
+
 	const getVisibleEntries = (): MovieIndexEntry[] => movieIndex.filter((entry) => !entry.element.hidden);
 
 	const getSuggestionMatches = (query: string, matchingMovies: MovieIndexEntry[]): SearchSuggestionEntry[] =>
 		query.length === 0
 			? []
 			: [...personIndex.filter((entry) => entry.searchable.includes(query)), ...matchingMovies];
+
+	const renderPeopleShowcase = (): void => {
+		if (!(peopleShowcaseGrid instanceof HTMLElement) || personIndex.length === 0) {
+			return;
+		}
+
+		const showcaseEntries = shuffleEntries(personIndex).slice(0, Math.min(6, personIndex.length));
+		const showcaseNodes = showcaseEntries.map((entry) => {
+			const card = document.createElement('a');
+			card.className = 'home-people-showcase__card';
+			card.href = entry.url;
+
+			const portrait = document.createElement('span');
+			portrait.className = 'home-people-showcase__portrait';
+
+			const image = document.createElement('img');
+			image.className = 'home-people-showcase__image';
+			image.src = entry.posterUrl;
+			image.alt = `Retrato de ${entry.title}`;
+			image.loading = 'lazy';
+			image.decoding = 'async';
+			image.referrerPolicy = 'no-referrer';
+			portrait.append(image);
+
+			const body = document.createElement('span');
+			body.className = 'home-people-showcase__body';
+
+			const title = document.createElement('span');
+			title.className = 'home-people-showcase__name';
+			title.textContent = entry.title;
+
+			const meta = document.createElement('span');
+			meta.className = 'home-people-showcase__meta';
+			meta.textContent = entry.ageLabel || 'Edad no disponible';
+
+			const nationality = document.createElement('span');
+			nationality.className = 'home-people-showcase__nationality';
+			nationality.textContent = entry.nationalityLabel || 'Nacionalidad no disponible';
+
+			body.append(title, meta, nationality);
+
+			card.append(portrait, body);
+			card.addEventListener('click', (event) => {
+				if (!isPlainLeftClick(event)) return;
+				prepareResetOnReturn();
+			});
+			return card;
+		});
+
+		peopleShowcaseGrid.replaceChildren(...showcaseNodes);
+	};
 
 	const isPlainLeftClick = (event: MouseEvent): boolean =>
 		event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
@@ -824,5 +889,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	});
 
 	showStatus(catalogLoadingPhrases);
+	renderPeopleShowcase();
 	restoreHomeState();
 }

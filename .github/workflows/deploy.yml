@@ -43,6 +43,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Refresh upcoming releases
+        run: npm run update-upcoming-releases
+
       - name: Build site
         run: npm run build
 

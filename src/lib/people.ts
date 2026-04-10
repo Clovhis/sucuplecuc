@@ -34,6 +34,73 @@ function normalizeWhitespace(value: string): string {
 	return value.replace(/\s+/g, ' ').trim();
 }
 
+function parseYear(value?: string): number | undefined {
+	if (!value) {
+		return undefined;
+	}
+
+	const match = value.match(/^(\d{4})/);
+	if (!match) {
+		return undefined;
+	}
+
+	return Number.parseInt(match[1] ?? '', 10);
+}
+
+function getAgeFromYears(startYear: number, endYear: number): number | undefined {
+	if (!Number.isFinite(startYear) || !Number.isFinite(endYear) || endYear < startYear) {
+		return undefined;
+	}
+
+	return endYear - startYear;
+}
+
+function getAgeFromDates(startDate: string, endDate: string): number | undefined {
+	const birthDate = new Date(`${startDate}T00:00:00Z`);
+	const targetDate = new Date(`${endDate}T00:00:00Z`);
+
+	if (Number.isNaN(birthDate.getTime()) || Number.isNaN(targetDate.getTime())) {
+		return undefined;
+	}
+
+	let age = targetDate.getUTCFullYear() - birthDate.getUTCFullYear();
+	const birthMonth = birthDate.getUTCMonth();
+	const birthDay = birthDate.getUTCDate();
+	const targetMonth = targetDate.getUTCMonth();
+	const targetDay = targetDate.getUTCDate();
+
+	if (targetMonth < birthMonth || (targetMonth === birthMonth && targetDay < birthDay)) {
+		age -= 1;
+	}
+
+	return age >= 0 ? age : undefined;
+}
+
+function getPersonAgeLabel(profile: Pick<PersonProfile, 'birthDate' | 'birthYear' | 'deathDate' | 'deathYear'>): string {
+	const today = new Date();
+	const todayIso = `${today.getUTCFullYear()}-${String(today.getUTCMonth() + 1).padStart(2, '0')}-${String(
+		today.getUTCDate(),
+	).padStart(2, '0')}`;
+	const birthYear = profile.birthYear ?? parseYear(profile.birthDate);
+	const endYear = profile.deathYear ?? parseYear(profile.deathDate) ?? today.getUTCFullYear();
+
+	if (profile.birthDate && /^\d{4}-\d{2}-\d{2}$/.test(profile.birthDate)) {
+		const exactAge = getAgeFromDates(profile.birthDate, profile.deathDate ?? todayIso);
+		if (typeof exactAge === 'number') {
+			return `${exactAge} años`;
+		}
+	}
+
+	if (typeof birthYear === 'number') {
+		const age = getAgeFromYears(birthYear, endYear);
+		if (typeof age === 'number') {
+			return `${age} años`;
+		}
+	}
+
+	return 'Edad no disponible';
+}
+
 export function normalizePersonName(value: string): string {
 	return normalizeWhitespace(value)
 		.normalize('NFD')
@@ -228,6 +295,8 @@ export function getPersonSearchEntries(): PersonSearchEntry[] {
 			url: profile.profilePath,
 			posterUrl,
 			meta: `Perfil · ${profile.roles.join(' · ')}`,
+			ageLabel: getPersonAgeLabel(profile),
+			nationalityLabel: profile.nationalityPrimary ?? 'Nacionalidad no disponible',
 			knownFor,
 			searchableText: normalizeSearchText(
 				[
