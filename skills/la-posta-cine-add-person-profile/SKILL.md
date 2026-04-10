@@ -147,12 +147,14 @@ Every new profile should include:
 - `birthPlace` when available
 - `spotlight`
 - `biography` with 2-4 paragraphs
-- `stats` with quick milestones
+- `stats` only when there is a genuinely useful, factual milestone to show
 - `awards` with only verified highlights
 - `knownFor` pointing to existing movie slugs in the catalog
 - `referenceUrls`
 
 Do not invent filmography outside the repo. The profile page should show movies connected through the existing catalog.
+
+Avoid generic editorial filler in `stats`. Labels or values in the line of `Momento`, `Marca`, `Pulso` or similar chamuyo should not be added just to occupy space. If there is nothing concrete to surface, omit `stats`.
 
 ## Auditor coverage
 
@@ -168,6 +170,7 @@ The bundled auditor checks, at minimum:
 - `knownFor` is actually connected to that person in the current catalog
 - the connected filmography is not empty
 - biography, stats, awards, and references meet minimum completeness
+- generic filler stats are not required and should be omitted when they do not add concrete value
 - built output exists in `dist/personas/<slug>/index.html` when `--require-dist` is used
 
 Do not treat warnings as a successful editorial review if they reveal weak source coverage or a blurry-image fallback.

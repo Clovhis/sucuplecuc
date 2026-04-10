@@ -127,19 +127,6 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 						<strong>{filmCountLabel}</strong>
 					</div>
 				</div>
-
-				{
-					profile.stats && profile.stats.length > 0 && (
-						<div class="person-page__stats" aria-label="Hitos rápidos">
-							{profile.stats.map((stat) => (
-								<div class="person-page__stat-card">
-									<span>{stat.label}</span>
-									<strong>{stat.value}</strong>
-								</div>
-							))}
-						</div>
-					)
-				}
 			</div>
 
 			<aside class="person-page__showcase" aria-label="Títulos destacados">

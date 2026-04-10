@@ -277,8 +277,15 @@ function auditProfile({ slug, profile, peopleByName, moviesBySlug, allMovies, re
 		addFinding(findings, 'error', scope, 'biography contiene parrafos vacios.');
 	}
 
-	if (!Array.isArray(profile.stats) || profile.stats.length === 0) {
-		addFinding(findings, 'error', scope, 'stats debe tener al menos un milestone.');
+	if (profile.stats != null && !Array.isArray(profile.stats)) {
+		addFinding(findings, 'error', scope, 'stats debe ser un array cuando existe.');
+	} else if (
+		Array.isArray(profile.stats) &&
+		profile.stats.some(
+			(entry) => !entry || !normalizeWhitespace(entry.label) || !normalizeWhitespace(entry.value),
+		)
+	) {
+		addFinding(findings, 'error', scope, 'stats contiene items vacios o incompletos.');
 	}
 
 	if (!Array.isArray(profile.awards) || profile.awards.length === 0) {
