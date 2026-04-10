@@ -176,6 +176,55 @@ function formatUpcomingReleaseDate(value: string) {
 		{
 			movies.length > 0 ? (
 				<>
+					<section class="home-catalog__mobile-filters fade-up" style="--item-delay: 80ms;" aria-label="Filtros del catálogo en mobile">
+						{
+							platformOptions.length > 0 && (
+								<section class="home-platform-filter home-platform-filter--mobile" data-home-platform-filter>
+									<p class="home-genre-filter__label">Elegí plataforma</p>
+									<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+										{
+											platformOptions.map((platform) => (
+												<button
+													type="button"
+													class="home-platform-filter__chip"
+													data-home-platform-chip
+													data-home-platform-id={platform.normalizedLabel}
+													data-home-platform-label={platform.displayLabel}
+													aria-label={`Filtrar por ${platform.displayLabel}`}
+													aria-pressed="false"
+													title={platform.displayLabel}
+												>
+													<PlatformBadge
+														platform={platform.normalizedLabel}
+														className="home-platform-filter__badge"
+													/>
+												</button>
+											))
+										}
+									</div>
+								</section>
+							)
+						}
+						<section class="home-genre-filter home-genre-filter--mobile" data-home-genre-filter>
+							<p class="home-genre-filter__label">Elegí género</p>
+							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+								{
+									RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+										<button
+											type="button"
+											class="home-genre-filter__chip"
+											data-home-genre-chip
+											data-home-genre-id={genre.id}
+											aria-pressed="false"
+										>
+											{genre.label}
+										</button>
+									))
+								}
+							</div>
+						</section>
+					</section>
+
 					<div class="home-catalog__desktop-extra">
 						<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
 							<h2 class="u-visually-hidden">Filtros del catálogo y próximos estrenos</h2>

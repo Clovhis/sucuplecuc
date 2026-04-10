@@ -400,6 +400,10 @@ img {
 	display: block;
 }
 
+.home-catalog__mobile-filters {
+	display: none;
+}
+
 .news-rail {
 	position: relative;
 	overflow: hidden;
@@ -3133,6 +3137,48 @@ img {
 		display: none;
 	}
 
+	.home-catalog__mobile-filters {
+		display: grid;
+		gap: 0.9rem;
+		padding: 0.85rem 0.9rem 0.95rem;
+		border-radius: 18px;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		background:
+			linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+			rgba(10, 14, 22, 0.72);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.03),
+			0 14px 28px rgba(6, 9, 14, 0.18);
+	}
+
+	.home-platform-filter--mobile,
+	.home-genre-filter--mobile {
+		gap: 0.58rem;
+	}
+
+	.home-platform-filter--mobile .home-platform-filter__chips {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.home-platform-filter--mobile .home-platform-filter__chip {
+		min-height: 2.5rem;
+		padding: 0.36rem 0.44rem;
+		border-radius: 14px;
+	}
+
+	.home-platform-filter--mobile .home-platform-filter__badge .platform-chip__logo {
+		max-height: 0.98rem;
+	}
+
+	.home-genre-filter--mobile .home-genre-filter__chips {
+		gap: 0.4rem;
+	}
+
+	.home-genre-filter--mobile .home-genre-filter__chip {
+		font-size: 0.72rem;
+		padding: 0.34rem 0.62rem;
+	}
+
 	.home-catalog {
 		gap: 0.95rem;
 		padding-bottom: 2.6rem;
@@ -3792,6 +3838,10 @@ img {
 		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
 
+	.home-platform-filter--mobile .home-platform-filter__chips {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
 	.home-people-showcase__grid {
 		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
@@ -3898,6 +3948,24 @@ img {
 
 	.home-platform-filter__chips {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.home-catalog__mobile-filters {
+		padding: 0.78rem 0.8rem 0.88rem;
+		border-radius: 16px;
+	}
+
+	.home-platform-filter--mobile .home-platform-filter__chips {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.home-platform-filter--mobile .home-platform-filter__chip {
+		min-height: 2.38rem;
+	}
+
+	.home-genre-filter--mobile .home-genre-filter__chip {
+		font-size: 0.7rem;
+		padding: 0.32rem 0.56rem;
 	}
 
 	.home-people-showcase__grid {
