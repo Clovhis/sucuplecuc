@@ -30,6 +30,327 @@ const argentineDirectorDefaults = {
 	stats: [],
 };
 
+function normalizePersonName(value) {
+	return String(value || '')
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9\s']/g, ' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+}
+
+const catalogBackedProfileMeta = {
+	'emma-watson': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emma%20Watson%202013.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q39476', 'https://www.imdb.com/name/nm0914612/', 'https://www.themoviedb.org/person/10990-emma-watson'],
+	},
+	'scarlett-johansson': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Scarlett%20Johansson%20by%20Gage%20Skidmore%202%20(cropped)%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q34436', 'https://www.imdb.com/name/nm0424060/', 'https://www.themoviedb.org/person/1245-scarlett-johansson'],
+	},
+	'lupita-nyong-o': {
+		profileImage: "https://commons.wikimedia.org/wiki/Special:FilePath/MKr347546%20Lupita%20Nyong'o%20(Jury%2C%20Berlinale%202024)%20crop.jpg?width=640",
+		referenceUrls: ['https://www.wikidata.org/wiki/Q3840847', 'https://www.imdb.com/name/nm2143282/'],
+	},
+	'emily-blunt': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emily%20Blunt%20at%202026%20Golden%20Globes%2001%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q193517', 'https://www.imdb.com/name/nm1289434/', 'https://www.themoviedb.org/person/5081-emily-blunt'],
+	},
+	'amy-adams': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Amy%20Adams%20UK%20Nocturnal%20Animals%20Premiere%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q481832', 'https://www.imdb.com/name/nm0010736/', 'https://www.themoviedb.org/person/9273-amy-adams'],
+	},
+	'jessica-chastain': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jessica%20Chastain-64631%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q229313', 'https://www.imdb.com/name/nm1567113/', 'https://www.themoviedb.org/person/83002-jessica-chastain'],
+	},
+	'hailee-steinfeld': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Hailee%20Steinfeld%20(21604481176)%20(cropped)-001.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q231726', 'https://www.imdb.com/name/nm2794962/', 'https://www.themoviedb.org/person/130640-hailee-steinfeld'],
+	},
+	'ariana-debose': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ariana%20DeBose%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q27733932', 'https://www.imdb.com/name/nm3663196/', 'https://www.themoviedb.org/person/1437491-ariana-debose'],
+	},
+	'kirsten-dunst': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kirsten%20Dunst%20(2017%20crop).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q76478', 'https://www.imdb.com/name/nm0000379/', 'https://www.themoviedb.org/person/205-kirsten-dunst'],
+	},
+	'rachel-mcadams': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rachel%20McAdams%20-%20Walk%20of%20Fame.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q190386', 'https://www.imdb.com/name/nm1046097/', 'https://www.themoviedb.org/person/53714-rachel-mcadams'],
+	},
+	'daisy-edgar-jones': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Daisy%20Edgar-Jones%20at%20the%202024%20Toronto%20International%20Film%20Festival%202%20(better%20crop).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q73889193', 'https://www.imdb.com/name/nm8402992/', 'https://www.themoviedb.org/person/2230991-daisy-edgar-jones'],
+	},
+	'jamie-lee-curtis': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Jamie%20Lee%20Curtis%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q106997', 'https://www.imdb.com/name/nm0000130/', 'https://www.themoviedb.org/person/8944-jamie-lee-curtis'],
+	},
+	'sigourney-weaver': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sigourney%20Weaver%20at%20the%202025%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q102124', 'https://www.imdb.com/name/nm0000244/', 'https://www.themoviedb.org/person/10205-sigourney-weaver'],
+	},
+	'jennifer-connelly': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jennifer%20Connelly%202010%20TIFF.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q103343', 'https://www.imdb.com/name/nm0000124/', 'https://www.themoviedb.org/person/6161-jennifer-connelly'],
+	},
+	'viola-davis': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Viola%20Davis%20(27983785894)%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q229181', 'https://www.imdb.com/name/nm0205626/', 'https://www.themoviedb.org/person/19492-viola-davis'],
+	},
+	'halle-berry': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Halle%20Berry%20by%20Gage%20Skidmore%202.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q1033016', 'https://www.imdb.com/name/nm0000932/', 'https://www.themoviedb.org/person/4587-halle-berry'],
+	},
+	'brie-larson': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Captain%20Marvel%20trailer%20at%20the%20National%20Air%20and%20Space%20Museum%204%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q29328', 'https://www.imdb.com/name/nm0488953/', 'https://www.themoviedb.org/person/60073-brie-larson'],
+	},
+	'awkwafina': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Awkwafina%20by%20Gage%20Skidmore.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q15306031', 'https://www.imdb.com/name/nm5377144/', 'https://www.themoviedb.org/person/1625558-awkwafina'],
+	},
+	'america-ferrera': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/America%20Ferrera%20at%20the%202025%20Toronto%20International%20Film%20Festival%20(cropped2).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q219402', 'https://www.imdb.com/name/nm1065229/', 'https://www.themoviedb.org/person/59174-america-ferrera'],
+	},
+	'michelle-williams': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Michelle%20Williams%20UK%20Manchester%20By%20the%20Sea%20Premiere.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q156796', 'https://www.imdb.com/name/nm0931329/', 'https://www.themoviedb.org/person/1812-michelle-williams'],
+	},
+	'keke-palmer': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Keke%20Palmer%202016%20Paleyfest%20original.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q273044', 'https://www.imdb.com/name/nm1551130/', 'https://www.themoviedb.org/person/74688-keke-palmer'],
+	},
+	'caitriona-balfe': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caitriona%20Balfe%20at%20the%202024%20Toronto%20International%20Film%20Festival%20(crop).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q2933352', 'https://www.imdb.com/name/nm2928020/', 'https://www.themoviedb.org/person/147056-caitr-ona-balfe'],
+	},
+	'kristen-wiig': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kristin%20Wiig%202013.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q231382', 'https://www.imdb.com/name/nm1325419/', 'https://www.themoviedb.org/person/41091-kristen-wiig'],
+	},
+	'rebecca-hall': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/RebeccaHallTIFFSept2011.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q230534', 'https://www.imdb.com/name/nm0356017/', 'https://www.themoviedb.org/person/15556-rebecca-hall'],
+	},
+	'rosamund-pike': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/RosamundPike10TIFF.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q230004', 'https://www.imdb.com/name/nm0683253/', 'https://www.themoviedb.org/person/10882-rosamund-pike'],
+	},
+	'will-smith': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Will%20Smith%20by%20Gage%20Skidmore%202.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q40096', 'https://www.imdb.com/name/nm0000226/', 'https://www.themoviedb.org/person/2888-will-smith'],
+	},
+	'nicolas-cage': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20Cage%20Deauville%202013%202.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q42869', 'https://www.imdb.com/name/nm0000115/', 'https://www.themoviedb.org/person/2963-nicolas-cage'],
+	},
+	'jamie-foxx': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/TIFF%202019%20jamie%20foxx%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q171905', 'https://www.imdb.com/name/nm0004937/', 'https://www.themoviedb.org/person/134-jamie-foxx'],
+	},
+	'sylvester-stallone': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sylvester%20Stallone%20Cannes%202019.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q40026', 'https://www.imdb.com/name/nm0000230/', 'https://www.themoviedb.org/person/16483-sylvester-stallone'],
+	},
+	'laurence-fishburne': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laurence%20Fishburne%202009%20-%20cropped.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q193048', 'https://www.imdb.com/name/nm0000401/', 'https://www.themoviedb.org/person/2975-laurence-fishburne'],
+	},
+	'johnny-depp': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Johnny%20Depp%202020.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q37175', 'https://www.imdb.com/name/nm0000136/', 'https://www.themoviedb.org/person/85-johnny-depp'],
+	},
+	'ian-mckellen': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/McKellenRichmnd040219-5%20(46275370484)%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q170510', 'https://www.imdb.com/name/nm0005212/', 'https://www.themoviedb.org/person/1327-ian-mckellen'],
+	},
+	'liam-neeson': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Liam%20Neeson%20Deauville%202012.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q58444', 'https://www.imdb.com/name/nm0000553/', 'https://www.themoviedb.org/person/3896-liam-neeson'],
+	},
+	'edward-norton': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ed%20Norton%20and%20Shauna%20Robertson%20TIFF%202025%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q125904', 'https://www.imdb.com/name/nm0001570/', 'https://www.themoviedb.org/person/819-edward-norton'],
+	},
+	'ke-huy-quan': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ke%20Huy%20Quan%20at%20the%20White%20House%20(52902390767)%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q445017', 'https://www.imdb.com/name/nm0702841/', 'https://www.themoviedb.org/person/690-ke-huy-quan'],
+	},
+	'james-mcavoy': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/James%20McAvoy%20by%20Gage%20Skidmore%202.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q193659', 'https://www.imdb.com/name/nm0564215/', 'https://www.themoviedb.org/person/5530-james-mcavoy'],
+	},
+	'christoph-waltz': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Christoph%20Waltz%20at%2082nd%20Venice%20International%20Film%20Festival-1%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q76819', 'https://www.imdb.com/name/nm0910607/', 'https://www.themoviedb.org/person/27319-christoph-waltz'],
+	},
+	'don-cheadle': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Don%20Cheadle%20at%20Jimmy%20Kimmel%20Live!%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q272019', 'https://www.imdb.com/name/nm0000332/', 'https://www.themoviedb.org/person/1896-don-cheadle'],
+	},
+	'jesse-eisenberg': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jesse%20Eisenberg%20by%20Philip%20Romano%20(3x4%20cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q219512', 'https://www.imdb.com/name/nm0251986/', 'https://www.themoviedb.org/person/44735-jesse-eisenberg'],
+	},
+	'woody-harrelson': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Woody%20Harrelson%20191020-N-NU281-1028%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q201279', 'https://www.imdb.com/name/nm0000437/', 'https://www.themoviedb.org/person/57755-woody-harrelson'],
+	},
+	'viggo-mortensen': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Viggo%20Mortensen%20B%20(2020).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q171363', 'https://www.imdb.com/name/nm0001557/', 'https://www.themoviedb.org/person/110-viggo-mortensen'],
+	},
+	'tom-hiddleston': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Hiddleston%20at%20the%202024%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q295803', 'https://www.imdb.com/name/nm1089991/', 'https://www.themoviedb.org/person/91606-tom-hiddleston'],
+	},
+	'brendan-gleeson': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brendan%20Gleeson.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q206659', 'https://www.imdb.com/name/nm0322407/', 'https://www.themoviedb.org/person/2039-brendan-gleeson'],
+	},
+	'jesse-plemons': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jesse%20Plemons%20(20769593584).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q1138674', 'https://www.imdb.com/name/nm0687146/', 'https://www.themoviedb.org/person/88124-jesse-plemons'],
+	},
+	'colin-firth': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Colin%20Firth%20by%20Gage%20Skidmore.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q162492', 'https://www.imdb.com/name/nm0000147/', 'https://www.themoviedb.org/person/5472-colin-firth'],
+	},
+	'dustin-hoffman': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dustin%20Hoffman%20-%201968.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q42930', 'https://www.imdb.com/name/nm0000163/', 'https://www.themoviedb.org/person/4483-dustin-hoffman'],
+	},
+	'gene-hackman': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gene%20Hackman%20-%201972.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q150943', 'https://www.imdb.com/name/nm0000432/', 'https://www.themoviedb.org/person/193-gene-hackman'],
+	},
+	'antonio-banderas': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Banderas%202020.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q41548', 'https://www.imdb.com/name/nm0000104/', 'https://www.themoviedb.org/person/3131-antonio-banderas'],
+	},
+	'ben-kingsley': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Kingsley%20by%20Gage%20Skidmore.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q173158', 'https://www.imdb.com/name/nm0001426/', 'https://www.themoviedb.org/person/2282-ben-kingsley'],
+	},
+	'christopher-walken': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Walken%202018.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q185051', 'https://www.imdb.com/name/nm0000686/', 'https://www.themoviedb.org/person/4690-christopher-walken'],
+	},
+	'david-fincher': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/TheKillerBFILFF051023%20(8%20of%2022)%20(53255176376)%20(cropped2).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q184903', 'https://www.imdb.com/name/nm0000399/', 'https://www.themoviedb.org/person/7467-david-fincher'],
+	},
+	'ridley-scott': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ridley%20Scott%20At%20BFI%20-%20BFI%20Southbank%20-%20Saturday%204th%20October%202025.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q56005', 'https://www.imdb.com/name/nm0000631/', 'https://www.themoviedb.org/person/578-ridley-scott'],
+	},
+	'george-miller': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/George%20Miller%20(35706244922).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q446960', 'https://www.imdb.com/name/nm0004306/', 'https://www.themoviedb.org/person/20629-george-miller'],
+	},
+	'greta-gerwig': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greta%20Gerwig.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q271967', 'https://www.imdb.com/name/nm1950086/', 'https://www.themoviedb.org/person/45400-greta-gerwig'],
+	},
+	'damien-chazelle': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Damien%20Chazelle%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q18350026', 'https://www.imdb.com/name/nm3227090/', 'https://www.themoviedb.org/person/136495-damien-chazelle'],
+	},
+	'yorgos-lanthimos': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yorgos%20Lanthimos%2C%20THE%20LOBSTER%2C%20Fantastic%20Fest%202015%20-9674%20(27161878820)%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q975410', 'https://www.imdb.com/name/nm0487166/'],
+	},
+	'matt-reeves': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/MattReeves.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q931613', 'https://www.imdb.com/name/nm0716257/', 'https://www.themoviedb.org/person/32278-matt-reeves'],
+	},
+	'chloe-zhao': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chloe%20Zhao.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q21078321', 'https://www.imdb.com/name/nm3144293/', 'https://www.themoviedb.org/person/1395183-chloe-zhao'],
+	},
+	'sam-mendes': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Mendes%20in%202022%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q223233', 'https://www.imdb.com/name/nm0005222/', 'https://www.themoviedb.org/person/39-sam-mendes'],
+	},
+	'robert-eggers': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Eggers%20-%20The%20Witch%2CFantastic%20Fest%202015-1667%20(28894993650)%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q20826736', 'https://www.imdb.com/name/nm3211470/', 'https://www.themoviedb.org/person/138781-robert-eggers'],
+	},
+	'hector-alterio': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A9ctor%20Alterio%202023.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q2576722', 'https://www.imdb.com/name/nm0022765/', 'https://www.themoviedb.org/person/59136-hector-alterio'],
+	},
+	'luis-brandoni': {
+		profileImage: '/people/luis-brandoni-2024.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q6700387', 'https://www.imdb.com/name/nm0104809/', 'https://www.themoviedb.org/person/74896-luis-brandoni'],
+	},
+	'oscar-martinez': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Goyas%202025%20-%20Oscar%20Mart%C3%ADnez%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q3357012', 'https://www.imdb.com/name/nm0553650/', 'https://www.themoviedb.org/person/1457004-oscar-martinez'],
+	},
+	'diego-peretti': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Diego%20Peretti%20en%20terapia.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q5274770', 'https://www.imdb.com/name/nm0673391/', 'https://www.themoviedb.org/person/96429-diego-peretti'],
+	},
+	'dario-grandinetti': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dar%C3%ADo%20Grandinetti%20(cropped%202).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q285022', 'https://www.imdb.com/name/nm0334882/', 'https://www.themoviedb.org/person/3618-dario-grandinetti'],
+	},
+	'nahuel-perez-biscayart': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nahuel%20P%C3%A9rez%20Biscayart%20-65369.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q2879350', 'https://www.imdb.com/name/nm1465580/', 'https://www.themoviedb.org/person/66957-nahuel-perez-biscayart'],
+	},
+	'daniel-fanego': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Fanego%20-%20Sonido%20Cultura%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q5798330', 'https://www.imdb.com/name/nm0266723/', 'https://www.themoviedb.org/person/140541-daniel-fanego'],
+	},
+	'julio-chavez': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Julio%20Ch%C3%A1vez%20en%202017%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q6309177', 'https://www.imdb.com/name/nm0154509/', 'https://www.themoviedb.org/person/583126-julio-chavez'],
+	},
+	'joaquin-furriel': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Festival%20de%20M%C3%A1laga%202024%20-%20Joaqu%C3%ADn%20Furriel%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q5931963', 'https://www.imdb.com/name/nm0299078/'],
+	},
+	'eduardo-blanco': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Premios%20Goya%202018%20-%20Eduardo%20Blanco.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q5340537', 'https://www.imdb.com/name/nm0087249/', 'https://www.themoviedb.org/person/132449-eduardo-blanco'],
+	},
+	'gaston-pauls': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Camara%20Diputados%20de%20Chile%20(10995516304).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q589361', 'https://www.imdb.com/name/nm0667282/', 'https://www.themoviedb.org/person/119671-gaston-pauls'],
+	},
+	'mauricio-dayub': {
+		profileImage: 'https://media.themoviedb.org/t/p/w500/rYzuZ4OpRYbhFQIWeISzqyEkMKf.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q6006921', 'https://www.imdb.com/name/nm0206778/', 'https://www.themoviedb.org/person/115210-mauricio-dayub'],
+	},
+	'norma-aleandro': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norma%20Aleandro%20-%20Festival%20Internacional%20de%20Cine%20de%20Mar%20del%20Plata%20(cropped).jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q240136', 'https://www.imdb.com/name/nm0001903/', 'https://www.themoviedb.org/person/46853-norma-aleandro'],
+	},
+	'graciela-borges': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Graciela%20Borges.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q1814181', 'https://www.imdb.com/name/nm0096559/', 'https://www.themoviedb.org/person/590943-graciela-borges'],
+	},
+	'martina-gusman': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Martina%20Gusman%20Cannes%202011.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q3295713', 'https://www.imdb.com/name/nm1089900/', 'https://www.themoviedb.org/person/84667-martina-gusman'],
+	},
+	'cecilia-dopazo': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cecilia%20Dopazo%202014.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q5759788', 'https://www.imdb.com/name/nm0233292/', 'https://www.themoviedb.org/person/109003-cecilia-dopazo'],
+	},
+	'julieta-diaz': {
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Julieta%20D%C3%ADaz%20-%20Presentaci%C3%B3n%20Coraz%C3%B3n%20de%20Le%C3%B3n.jpg?width=640',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q586715', 'https://www.imdb.com/name/nm0246638/', 'https://www.themoviedb.org/person/140542-julieta-diaz'],
+	},
+};
+
 const bulkProfileReferenceUrls = {
 	'timothee-chalamet': [
 		'https://www.wikidata.org/wiki/Q19877770',
@@ -526,6 +847,49 @@ function buildBulkProfile(defaults, seed) {
  */
 function buildBulkProfiles(defaults, seeds) {
 	return Object.fromEntries(seeds.map((seed) => [seed.slug, buildBulkProfile(defaults, seed)]));
+}
+
+function getCatalogBackedProfileMeta(slug) {
+	return catalogBackedProfileMeta[slug];
+}
+
+function buildCatalogBackedBiography(name, roleLabel, spotlight, knownFor) {
+	const connectionLabel =
+		knownFor.length > 1 ? 'a varios titulos fuertes del catalogo' : 'a un titulo fuerte del catalogo';
+
+	return [
+		`${name} mantiene una carrera muy visible y un peso real dentro de la conversacion cinematografica que el sitio ya cubre. Como ${roleLabel}, sigue funcionando como referencia inmediata cuando se mezclan prestigio, industria y reconocimiento popular.`,
+		`${spotlight} En Cine Posta aparece conectado ${connectionLabel}, asi que su ficha exclusiva ordena mejor busquedas, enlaces de reparto y navegacion editorial.`,
+	];
+}
+
+function buildCatalogBackedProfile(defaults, seed) {
+	const profileMeta = getCatalogBackedProfileMeta(seed.slug);
+	const roleLabel = defaults.roles.includes('Director')
+		? 'director'
+		: defaults.roles.includes('Actriz')
+			? 'actriz'
+			: 'actor';
+	const spotlight =
+		seed.spotlight ??
+		'Su nombre sigue funcionando como una referencia inmediata para el tipo de cine con el que el catalogo ya lo conecta.';
+
+	return {
+		...seed,
+		profileImage: seed.profileImage ?? profileMeta?.profileImage ?? bulkProfileImageUrls[seed.slug],
+		roles: defaults.roles,
+		spotlight,
+		biography: seed.biography ?? buildCatalogBackedBiography(seed.name, roleLabel, spotlight, seed.knownFor ?? []),
+		stats: defaults.stats.map((stat) => ({ ...stat })),
+		referenceUrls: mergeReferenceUrls(
+			seed.referenceUrls,
+			mergeReferenceUrls(profileMeta?.referenceUrls, bulkProfileReferenceUrls[seed.slug]),
+		),
+	};
+}
+
+function buildCatalogBackedProfiles(defaults, seeds) {
+	return Object.fromEntries(seeds.map((seed) => [seed.slug, buildCatalogBackedProfile(defaults, seed)]));
 }
 
 const bulkTrendProfiles = {
@@ -2566,6 +2930,670 @@ const bulkTrendProfiles = {
 	]),
 };
 
+const bulkExpansionProfiles = {
+	...buildCatalogBackedProfiles(globalActressDefaults, [
+		{
+			slug: 'emma-watson',
+			name: 'Emma Watson',
+			headline: 'Figura global marcada por Harry Potter y todavia muy instalada en la cultura pop internacional.',
+			awards: [{ label: 'MTV Movie Award', category: 'Trailblazer Award' }],
+			knownFor: [
+				'harry-potter-and-the-chamber-of-secrets-2002',
+				'harry-potter-and-the-deathly-hallows-part-1-2010',
+				'harry-potter-and-the-deathly-hallows-part-2-2011',
+				'harry-potter-and-the-goblet-of-fire-2005',
+			],
+		},
+		{
+			slug: 'scarlett-johansson',
+			name: 'Scarlett Johansson',
+			headline: 'Estrella de primera linea capaz de moverse entre blockbuster, sci-fi y comedia con la misma autoridad.',
+			awards: [{ label: 'BAFTA', category: 'Mejor actriz', work: 'Lost in Translation', year: 2004 }],
+			knownFor: [
+				'black-widow-2021',
+				'captain-america-civil-war-2016',
+				'captain-america-the-winter-soldier-2014',
+				'jurassic-world-rebirth-2025',
+			],
+		},
+		{
+			slug: 'lupita-nyong-o',
+			name: "Lupita Nyong'o",
+			headline: 'Actriz de enorme presencia que sostiene prestigio, terror y franchise movie sin perder elegancia.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: '12 Years a Slave', year: 2014 }],
+			knownFor: ['12-years-a-slave-2013', 'a-quiet-place-day-one-2024', 'black-panther-2018', 'black-panther-wakanda-forever-2022'],
+		},
+		{
+			slug: 'emily-blunt',
+			name: 'Emily Blunt',
+			headline: 'Una de las actrices britanicas mas confiables del mainstream reciente, entre accion, drama y comedia.',
+			awards: [{ label: 'Golden Globe', category: 'Nominacion a mejor actriz de reparto', work: 'Oppenheimer', year: 2024 }],
+			knownFor: ['jungle-cruise-2021', 'oppenheimer-2023', 'the-fall-guy-2024'],
+		},
+		{
+			slug: 'amy-adams',
+			name: 'Amy Adams',
+			headline: 'Actriz de altisimo oficio que puede darle humanidad inmediata a cine de estudio y drama prestigioso.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz', work: 'American Hustle', year: 2014 }],
+			knownFor: ['atrapame-si-puedes-2002', 'justice-league-2017', 'man-of-steel-2013'],
+		},
+		{
+			slug: 'jessica-chastain',
+			name: 'Jessica Chastain',
+			headline: 'Presencia intensa y elegante, siempre asociada a personajes de gran peso emocional.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz', work: 'The Eyes of Tammy Faye', year: 2022 }],
+			knownFor: ['dark-phoenix-2019', 'interstellar-2014', 'it-chapter-two-2019'],
+		},
+		{
+			slug: 'hailee-steinfeld',
+			name: 'Hailee Steinfeld',
+			headline: 'Figura joven que sigue mezclando musica, voz pop y cine comercial con mucha naturalidad.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz de reparto', work: 'True Grit', year: 2011 }],
+			knownFor: ['sinners-2025', 'spider-man-across-the-spider-verse-2023', 'spider-man-into-the-spider-verse-2018'],
+		},
+		{
+			slug: 'ariana-debose',
+			name: 'Ariana DeBose',
+			headline: 'Actriz y performer con energia de musical clasico reciclada para la Hollywood actual.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'West Side Story', year: 2022 }],
+			knownFor: ['kraven-the-hunter-2024', 'west-side-story-2021', 'wish-2023'],
+		},
+		{
+			slug: 'kirsten-dunst',
+			name: 'Kirsten Dunst',
+			headline: 'Ex nena prodigio convertida en actriz adulta de enorme precision para drama, ironia y desencanto.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz de reparto', work: 'The Power of the Dog', year: 2022 }],
+			knownFor: ['civil-war-2024', 'spider-man-2-2004', 'spider-man-3-2007', 'the-power-of-the-dog-2021'],
+		},
+		{
+			slug: 'rachel-mcadams',
+			name: 'Rachel McAdams',
+			headline: 'Actriz canadiense que combina carisma mainstream y un registro dramatico siempre creible.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz de reparto', work: 'Spotlight', year: 2016 }],
+			knownFor: ['doctor-strange-2016', 'send-help-2026', 'spotlight-2015'],
+		},
+		{
+			slug: 'daisy-edgar-jones',
+			name: 'Daisy Edgar-Jones',
+			headline: 'Una de las caras jovenes mas visibles del drama romantico y del nuevo cine de estudio britanico.',
+			awards: [{ label: 'Golden Globe', category: 'Nominacion a mejor actriz en miniserie', work: 'Normal People', year: 2021 }],
+			knownFor: ['twisters-2024'],
+		},
+		{
+			slug: 'jamie-lee-curtis',
+			name: 'Jamie Lee Curtis',
+			headline: 'Icono absoluto del cine de genero que sigue reinventandose sin perder autoridad pop.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'Everything Everywhere All at Once', year: 2023 }],
+			knownFor: ['everything-everywhere-all-at-once-2022', 'halloween-1978', 'halloween-2018', 'halloween-ends-2022'],
+		},
+		{
+			slug: 'sigourney-weaver',
+			name: 'Sigourney Weaver',
+			headline: 'Leyenda del sci-fi moderno y una presencia que todavia eleva cualquier universo fantastico o industrial.',
+			awards: [{ label: 'BAFTA', category: 'Mejor actriz', work: 'Aliens', year: 1987 }],
+			knownFor: ['alien-1979', 'alien-3-1992', 'alien-resurrection-1997', 'aliens-1986'],
+		},
+		{
+			slug: 'jennifer-connelly',
+			name: 'Jennifer Connelly',
+			headline: 'Actriz de nervio elegante, muy fuerte cuando una pelicula necesita gravedad y melancolia.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'A Beautiful Mind', year: 2002 }],
+			knownFor: ['a-beautiful-mind-2001', 'hulk-2003', 'jim-henson-idea-man-2024', 'top-gun-maverick-2022'],
+		},
+		{
+			slug: 'viola-davis',
+			name: 'Viola Davis',
+			headline: 'Una de las grandes actrices estadounidenses contemporaneas, con una pantalla siempre dominante.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'Fences', year: 2017 }],
+			knownFor: ['air-2023', 'g20-2025', 'kung-fu-panda-4-2024'],
+		},
+		{
+			slug: 'halle-berry',
+			name: 'Halle Berry',
+			headline: 'Estrella historica de Hollywood que todavia conserva poder de icono y presencia fisica muy fuerte.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz', work: "Monster's Ball", year: 2002 }],
+			knownFor: ['catwoman-2004', 'john-wick-chapter-3-parabellum-2019', 'x-men-the-last-stand-2006'],
+		},
+		{
+			slug: 'brie-larson',
+			name: 'Brie Larson',
+			headline: 'Actriz que encontro un equilibrio raro entre prestigio dramatico y liderazgo de franquicia.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz', work: 'Room', year: 2016 }],
+			knownFor: ['captain-marvel-2019', 'the-marvels-2023'],
+		},
+		{
+			slug: 'awkwafina',
+			name: 'Awkwafina',
+			headline: 'Figura muy reconocible de la comedia actual, con timing pop y una veta dramatica que ya demostro peso propio.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actriz de comedia o musical', work: 'The Farewell', year: 2020 }],
+			knownFor: ['kung-fu-panda-4-2024', 'shang-chi-and-the-legend-of-the-ten-rings-2021'],
+		},
+		{
+			slug: 'america-ferrera',
+			name: 'America Ferrera',
+			headline: 'Actriz y voz publica con enorme reconocimiento transversal entre television, animacion y cine popular.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz de reparto', work: 'Barbie', year: 2024 }],
+			knownFor: ['how-to-train-your-dragon-2010', 'how-to-train-your-dragon-the-hidden-world-2019'],
+		},
+		{
+			slug: 'michelle-williams',
+			name: 'Michelle Williams',
+			headline: 'Actriz de enorme prestigio que sigue cruzando cine adulto, biopic y proyectos de alto perfil.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz', work: 'My Week with Marilyn', year: 2012 }],
+			knownFor: ['the-fabelmans-2022', 'venom-2018', 'venom-let-there-be-carnage-2021'],
+		},
+		{
+			slug: 'keke-palmer',
+			name: 'Keke Palmer',
+			headline: 'Performer completisima, con carisma instantaneo y una energia que encaja perfecto en el cine pop actual.',
+			awards: [{ label: 'Emmy', category: 'Mejor presentadora de game show', work: 'Password', year: 2024 }],
+			knownFor: ['nope-2022'],
+		},
+		{
+			slug: 'caitriona-balfe',
+			name: 'Caitríona Balfe',
+			headline: 'Actriz irlandesa muy respetada, ideal para personajes sobrios y de fuerte carga emocional.',
+			awards: [{ label: 'BAFTA', category: 'Nominacion a mejor actriz de reparto', work: 'Belfast', year: 2022 }],
+			knownFor: ['belfast-2021', 'the-amateur-2025'],
+		},
+		{
+			slug: 'kristen-wiig',
+			name: 'Kristen Wiig',
+			headline: 'Comediante de altisimo perfil que hace rato demostro tambien criterio autoral y versatilidad de actriz.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor guion original', work: 'Bridesmaids', year: 2012 }],
+			knownFor: ['despicable-me-4-2024', 'will-y-harper-2024', 'wonder-woman-1984-2020'],
+		},
+		{
+			slug: 'rebecca-hall',
+			name: 'Rebecca Hall',
+			headline: 'Actriz de gran precision para personajes ambiguos, inteligentes y algo opacos.',
+			awards: [{ label: 'Golden Globe', category: 'Nominacion a mejor actriz', work: 'Vicky Cristina Barcelona', year: 2009 }],
+			knownFor: ['godzilla-vs-kong-2021', 'godzilla-x-kong-the-new-empire-2024'],
+		},
+		{
+			slug: 'rosamund-pike',
+			name: 'Rosamund Pike',
+			headline: 'Presencia glacial y sofisticada, perfecta para cine adulto, thriller y humor negro elegante.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actriz de comedia o musical', work: 'I Care a Lot', year: 2021 }],
+			knownFor: ['saltburn-2023'],
+		},
+	]),
+	...buildCatalogBackedProfiles(globalActorDefaults, [
+		{
+			slug: 'will-smith',
+			name: 'Will Smith',
+			headline: 'Estrella masiva que sigue ocupando una zona central entre franquicia, accion y carisma de leading man.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'King Richard', year: 2022 }],
+			knownFor: ['bad-boys-ride-or-die-2024', 'king-richard-2021', 'suicide-squad-2016'],
+		},
+		{
+			slug: 'nicolas-cage',
+			name: 'Nicolas Cage',
+			headline: 'Figura de culto y superestrella a la vez, siempre lista para llevar una pelicula a un lugar desquiciado.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Leaving Las Vegas', year: 1996 }],
+			knownFor: ['ghost-rider-2007', 'ghost-rider-spirit-of-vengeance-2011', 'longlegs-2024'],
+		},
+		{
+			slug: 'jamie-foxx',
+			name: 'Jamie Foxx',
+			headline: 'Actor de gran presencia popular que puede pasar del thriller a la comedia y al drama biografico sin friccion.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Ray', year: 2005 }],
+			knownFor: ['back-in-action-2025', 'django-unchained-2012', 'the-amazing-spider-man-2-2014'],
+		},
+		{
+			slug: 'sylvester-stallone',
+			name: 'Sylvester Stallone',
+			headline: 'Icono absoluto del cine de accion y del relato de superacion popular hecho estrella.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor de reparto', work: 'Creed', year: 2016 }],
+			knownFor: ['creed-2015', 'creed-ii-2018', 'rocky-1976', 'rocky-balboa-2006'],
+		},
+		{
+			slug: 'laurence-fishburne',
+			name: 'Laurence Fishburne',
+			headline: 'Actor de voz y presencia inconfundibles, clave para cine de accion, sci-fi y drama adulto.',
+			awards: [{ label: 'Tony Award', category: 'Mejor actor', work: 'Two Trains Running', year: 1992 }],
+			knownFor: ['a-nightmare-on-elm-street-3-dream-warriors-1987', 'john-wick-chapter-2-2017', 'john-wick-chapter-3-parabellum-2019', 'john-wick-chapter-4-2023'],
+		},
+		{
+			slug: 'johnny-depp',
+			name: 'Johnny Depp',
+			headline: 'Figura hiperreconocible del cine global, entre personaje iconico, excentricidad y star power sostenido.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor de comedia o musical', work: 'Sweeney Todd', year: 2008 }],
+			knownFor: ['fantastic-beasts-the-crimes-of-grindelwald-2018', 'pirates-of-the-caribbean-at-worlds-end-2007', 'pirates-of-the-caribbean-dead-mans-chest-2006', 'pirates-of-the-caribbean-dead-men-tell-no-tales-2017'],
+		},
+		{
+			slug: 'ian-mckellen',
+			name: 'Ian McKellen',
+			headline: 'Leyenda britanica cuya autoridad dramatica sigue dando espesor inmediato a fantasia, blockbuster y teatro filmado.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor', work: 'Gods and Monsters', year: 1999 }],
+			knownFor: ['the-lord-of-the-rings-the-fellowship-of-the-ring-2001', 'the-lord-of-the-rings-the-return-of-the-king-2003', 'the-lord-of-the-rings-the-two-towers-2002', 'x-men-2000'],
+		},
+		{
+			slug: 'liam-neeson',
+			name: 'Liam Neeson',
+			headline: 'Actor de voz grave y fisico imponente que supo reinventarse como estrella de accion tardia.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor', work: "Schindler's List", year: 1994 }],
+			knownFor: ['batman-begins-2005', 'schindler-s-list-1993', 'star-wars-episode-i-the-phantom-menace-1999', 'y-donde-esta-el-policia-2025'],
+		},
+		{
+			slug: 'edward-norton',
+			name: 'Edward Norton',
+			headline: 'Actor de precision quirurgica, ideal para personajes nerviosos, brillantes o moralmente torcidos.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor de reparto', work: 'Primal Fear', year: 1997 }],
+			knownFor: ['fight-club-1999', 'glass-onion-a-knives-out-mystery-2022', 'the-incredible-hulk-2008'],
+		},
+		{
+			slug: 'ke-huy-quan',
+			name: 'Ke Huy Quan',
+			headline: 'Una de las historias de regreso mas queridas del cine reciente y una cara muy facil de abrazar para el publico.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Everything Everywhere All at Once', year: 2023 }],
+			knownFor: ['indiana-jones-and-the-temple-of-doom-1984', 'the-electric-state-2025', 'zootopia-2-2025'],
+		},
+		{
+			slug: 'james-mcavoy',
+			name: 'James McAvoy',
+			headline: 'Actor britanico de enorme elasticidad, capaz de cargar vulnerabilidad, furia o rareza con la misma eficacia.',
+			awards: [{ label: 'BAFTA', category: 'Rising Star Award', year: 2006 }],
+			knownFor: ['dark-phoenix-2019', 'it-chapter-two-2019', 'x-men-apocalypse-2016', 'x-men-days-of-future-past-2014'],
+		},
+		{
+			slug: 'christoph-waltz',
+			name: 'Christoph Waltz',
+			headline: 'Actor de inteligencia filosa y diccion perfecta, siempre listo para convertir un villano en puro espectaculo.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Inglourious Basterds', year: 2010 }],
+			knownFor: ['django-unchained-2012', 'dracula-2026', 'frankenstein-2025', 'inglourious-basterds-2009'],
+		},
+		{
+			slug: 'don-cheadle',
+			name: 'Don Cheadle',
+			headline: 'Actor muy confiable para cine coral, franquicia y drama politico, siempre con energia de veterano fino.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor', work: 'Hotel Rwanda', year: 2005 }],
+			knownFor: ['crash-2005', 'iron-man-2-2010', 'iron-man-3-2013', 'space-jam-a-new-legacy-2021'],
+		},
+		{
+			slug: 'jesse-eisenberg',
+			name: 'Jesse Eisenberg',
+			headline: 'Actor de nervio acelerado y una marca verbal muy propia, hoy tambien instalado como autor.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor', work: 'The Social Network', year: 2011 }],
+			knownFor: ['a-real-pain-2024', 'batman-v-superman-dawn-of-justice-2016', 'los-ilusionistas-3-2025'],
+		},
+		{
+			slug: 'woody-harrelson',
+			name: 'Woody Harrelson',
+			headline: 'Presencia rustica, canchera y muy flexible, capaz de sumar humanidad o peligro apenas entra en cuadro.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor de reparto', work: 'Three Billboards Outside Ebbing, Missouri', year: 2018 }],
+			knownFor: ['los-ilusionistas-3-2025', 'solo-a-star-wars-story-2018', 'venom-let-there-be-carnage-2021', 'war-for-the-planet-of-the-apes-2017'],
+		},
+		{
+			slug: 'viggo-mortensen',
+			name: 'Viggo Mortensen',
+			headline: 'Actor de enorme gravitas que puede llevar cine epico, drama adulto y proyectos autorales sin perder misterio.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor', work: 'Captain Fantastic', year: 2017 }],
+			knownFor: ['green-book-2018', 'the-lord-of-the-rings-the-return-of-the-king-2003', 'the-lord-of-the-rings-the-two-towers-2002'],
+		},
+		{
+			slug: 'tom-hiddleston',
+			name: 'Tom Hiddleston',
+			headline: 'Actor britanico muy reconocible, con una mezcla eficaz de elegancia, ironia y energia de villano pop.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en miniserie', work: 'The Night Manager', year: 2017 }],
+			knownFor: ['thor-2011', 'thor-ragnarok-2017', 'thor-the-dark-world-2013'],
+		},
+		{
+			slug: 'brendan-gleeson',
+			name: 'Brendan Gleeson',
+			headline: 'Actor irlandes de peso enorme, ideal para personajes fatigados, filosos o secretamente tiernos.',
+			awards: [{ label: 'BAFTA', category: 'Nominacion a mejor actor de reparto', work: 'The Banshees of Inisherin', year: 2023 }],
+			knownFor: ['joker-folie-a-deux-2024', 'the-banshees-of-inisherin-2022'],
+		},
+		{
+			slug: 'jesse-plemons',
+			name: 'Jesse Plemons',
+			headline: 'Uno de los actores estadounidenses mas finos de su generacion, especialista en quietud inquietante.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor de reparto', work: 'The Power of the Dog', year: 2022 }],
+			knownFor: ['the-power-of-the-dog-2021'],
+		},
+		{
+			slug: 'colin-firth',
+			name: 'Colin Firth',
+			headline: 'Actor britanico de perfil clasico, siempre muy fuerte cuando el material pide elegancia y vulnerabilidad.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: "The King's Speech", year: 2011 }],
+			knownFor: ['the-king-s-speech-2010'],
+		},
+		{
+			slug: 'dustin-hoffman',
+			name: 'Dustin Hoffman',
+			headline: 'Una de las grandes caras del cine estadounidense moderno, todavia clave para entender el actorismo de Hollywood.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Kramer vs. Kramer', year: 1980 }],
+			knownFor: ['kramer-vs-kramer-1979', 'kung-fu-panda-2008', 'midnight-cowboy-1969', 'rain-man-1988'],
+		},
+		{
+			slug: 'gene-hackman',
+			name: 'Gene Hackman',
+			headline: 'Gigante absoluto del cine americano, con una autoridad seca que sigue pesando incluso desde la retirada.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'The French Connection', year: 1972 }],
+			knownFor: ['superman-1978', 'superman-iv-the-quest-for-peace-1987', 'the-french-connection-1971', 'unforgiven-1992'],
+		},
+		{
+			slug: 'antonio-banderas',
+			name: 'Antonio Banderas',
+			headline: 'Estrella hispana global que sigue girando entre thriller, aventura y cine de autor con mucha soltura.',
+			awards: [{ label: 'Cannes', category: 'Mejor actor', work: 'Pain and Glory', year: 2019 }],
+			knownFor: ['competencia-oficial-2021', 'indiana-jones-and-the-dial-of-destiny-2023', 'uncharted-2022'],
+		},
+		{
+			slug: 'ben-kingsley',
+			name: 'Ben Kingsley',
+			headline: 'Actor de enorme autoridad escenica, siempre listo para sumar prestigio instantaneo a una pelicula.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Gandhi', year: 1983 }],
+			knownFor: ['gandhi-1982', 'schindler-s-list-1993'],
+		},
+		{
+			slug: 'christopher-walken',
+			name: 'Christopher Walken',
+			headline: 'Figura unica del cine estadounidense, capaz de volver extrana o magnetica cualquier escena con muy poco.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'The Deer Hunter', year: 1979 }],
+			knownFor: ['atrapame-si-puedes-2002', 'the-deer-hunter-1978'],
+		},
+	]),
+	...buildCatalogBackedProfiles(globalDirectorDefaults, [
+		{
+			slug: 'david-fincher',
+			name: 'David Fincher',
+			headline: 'Uno de los grandes estilistas del thriller contemporaneo y un nombre que todavia ordena conversacion critica.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor director', work: 'The Social Network', year: 2011 }],
+			knownFor: ['alien-3-1992', 'fight-club-1999', 'se7en-1995', 'the-killer-2023'],
+		},
+		{
+			slug: 'ridley-scott',
+			name: 'Ridley Scott',
+			headline: 'Maestro industrial del gran espectaculo adulto, con una filmografia que sigue siendo referencia global.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor director', work: 'Gladiator', year: 2001 }],
+			knownFor: ['alien-1979', 'alien-covenant-2017', 'blade-runner-1982', 'gladiator-2000'],
+		},
+		{
+			slug: 'george-miller',
+			name: 'George Miller',
+			headline: 'Autor de energia desbordada que hizo de Mad Max una religion visual y del movimiento una firma.',
+			awards: [{ label: 'Oscar', category: 'Mejor pelicula animada', work: 'Happy Feet', year: 2007 }],
+			knownFor: ['furiosa-a-mad-max-saga-2024', 'mad-max-1979', 'mad-max-2-1981', 'mad-max-beyond-thunderdome-1985'],
+		},
+		{
+			slug: 'greta-gerwig',
+			name: 'Greta Gerwig',
+			headline: 'Rara figura capaz de llevar sensibilidad indie, evento de estudio y conversacion cultural masiva en una sola firma.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor directora', work: 'Lady Bird', year: 2018 }],
+			knownFor: ['barbie-2023'],
+		},
+		{
+			slug: 'damien-chazelle',
+			name: 'Damien Chazelle',
+			headline: 'Uno de los directores mas visibles de su generacion, entre virtuosismo formal, musica y ambicion de gran estudio.',
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'La La Land', year: 2017 }],
+			knownFor: ['whiplash-2014'],
+		},
+		{
+			slug: 'yorgos-lanthimos',
+			name: 'Yorgos Lanthimos',
+			headline: 'Autor de prestigio altisimo que logro volver muy popular una rareza que sigue siendo verdaderamente suya.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor director', work: 'Poor Things', year: 2024 }],
+			knownFor: ['poor-things-2023'],
+		},
+		{
+			slug: 'matt-reeves',
+			name: 'Matt Reeves',
+			headline: 'Director ideal para darle gravedad, escala y melancolia al blockbuster contemporaneo.',
+			awards: [{ label: 'Saturn Award', category: 'Mejor director', work: 'Dawn of the Planet of the Apes', year: 2015 }],
+			knownFor: ['dawn-of-the-planet-of-the-apes-2014', 'the-batman-2022', 'war-for-the-planet-of-the-apes-2017'],
+		},
+		{
+			slug: 'chloe-zhao',
+			name: 'Chloé Zhao',
+			headline: 'Autora que paso del indie contemplativo a la maquinaria de estudio sin perder mirada propia.',
+			awards: [{ label: 'Oscar', category: 'Mejor directora', work: 'Nomadland', year: 2021 }],
+			knownFor: ['eternals-2021', 'hamnet-2025', 'nomadland-2020'],
+		},
+		{
+			slug: 'sam-mendes',
+			name: 'Sam Mendes',
+			headline: 'Director de gran oficio para cine prestigioso y de gran escala, siempre muy solido en la puesta.',
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'American Beauty', year: 2000 }],
+			knownFor: ['american-beauty-1999', 'skyfall-2012', 'spectre-2015'],
+		},
+		{
+			slug: 'robert-eggers',
+			name: 'Robert Eggers',
+			headline: 'Uno de los autores mas trendy del terror actual, obsesionado con textura historica y clima asfixiante.',
+			awards: [{ label: 'Independent Spirit Award', category: 'Nominacion a mejor opera prima', work: 'The Witch', year: 2016 }],
+			knownFor: ['nosferatu-2024'],
+		},
+	]),
+	...buildCatalogBackedProfiles(argentineActorDefaults, [
+		{
+			slug: 'hector-alterio',
+			name: 'Héctor Alterio',
+			headline: 'Una de las presencias mas grandes del cine rioplatense, con autoridad historica y una voz inconfundible.',
+			spotlight:
+				'Su carrera cruza cine argentino, teatro y una etapa espanola muy fuerte, siempre con personajes que cargan memoria, peso politico o autoridad moral.',
+			biography: [
+				'Hector Alterio es uno de esos nombres que ordenan solos buena parte de la historia del cine argentino moderno. En los setenta fue pieza clave de peliculas politicas y populares, y despues siguio construyendo una filmografia de enorme prestigio entre Argentina y Espana.',
+				'En el catalogo del sitio aparece asociado a La historia oficial, Camila, Caballos salvajes y El hijo de la novia, cuatro titulos que muestran distintas edades de su carrera: del drama historico al cine de reencuentro generacional, siempre con una autoridad expresiva impresionante.',
+			],
+			awards: [{ label: 'Goya', category: 'Mejor actor', work: 'El nido', year: 1981 }],
+			knownFor: ['caballos-salvajes-1995', 'camila-1984', 'el-hijo-de-la-novia-2001', 'la-historia-oficial-1985'],
+		},
+		{
+			slug: 'luis-brandoni',
+			name: 'Luis Brandoni',
+			headline: 'Figura central del cine y el teatro argentinos, siempre muy fuerte en personajes populares y de oficio clasico.',
+			spotlight:
+				'Su peso local no sale solo del cine: tambien viene de decadas de teatro y television, donde construyo una figura reconocible, querible y de enorme oficio.',
+			biography: [
+				'Luis Brandoni ocupa un lugar rarisimo dentro de la cultura argentina porque combina prestigio actoral, popularidad transversal y una relacion muy vieja con el teatro, la tele y el cine nacional. Tiene esa mezcla de actor clasico y figura popular que le permite pasar de la comedia al drama sin perder identidad.',
+				'La seleccion del catalogo lo conecta con Esperando la carroza, Mi obra maestra, El cuento de las comadrejas y La odisea de los giles, un recorrido muy bueno para entender su alcance: humor costumbrista, duelos actorales, cine de gran publico y personajes que parecen salir directo de la calle argentina.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actor', work: 'Mi obra maestra', year: 2019 }],
+			knownFor: ['el-cuento-de-las-comadrejas-2019', 'esperando-la-carroza-1985', 'la-odisea-de-los-giles-2019', 'mi-obra-maestra-2018'],
+		},
+		{
+			slug: 'oscar-martinez',
+			name: 'Oscar Martínez',
+			headline: 'Actor argentino de enorme sofisticacion, con una mezcla rarissima de ironia, elegancia y densidad.',
+			spotlight:
+				'Es una referencia inmediata del actor intelectual argentino: filoso, preciso y con una manera muy personal de trabajar la ironia.',
+			biography: [
+				'Oscar Martinez viene del teatro y de una formacion muy solida, y eso se nota en la manera en que construye cada personaje: no necesita sobreactuar nada para imponer inteligencia, ego, fragilidad o veneno. Es uno de los actores argentinos que mejor envejecieron en pantalla.',
+				'En Cine Posta queda conectado a El ciudadano ilustre, Competencia oficial y El cuento de las comadrejas. Ese trio alcanza para ver varias de sus zonas mas fuertes: el sarcasmo, el duelo verbal, la inseguridad escondida detras de la autosuficiencia y una enorme comodidad para sostener peliculas apoyadas en la actuacion.',
+			],
+			awards: [{ label: 'Goya', category: 'Mejor actor', work: 'El ciudadano ilustre', year: 2017 }],
+			knownFor: ['competencia-oficial-2021', 'el-ciudadano-ilustre-2016', 'el-cuento-de-las-comadrejas-2019'],
+		},
+		{
+			slug: 'diego-peretti',
+			name: 'Diego Peretti',
+			headline: 'Actor muy querido por el publico local, capaz de mezclar neurotica comica y peso dramatico con mucha precision.',
+			spotlight:
+				'Su recorrido tiene una marca muy propia: puede ser hilarante, ansioso o conmovedor sin dejar de sonar siempre cercano al espectador argentino.',
+			biography: [
+				'Diego Peretti logro algo dificil: convertirse en una figura super popular sin quedar limitado a un solo registro. Su paso previo por la psiquiatria, sumado a una intuicion muy fina para la observacion del comportamiento, le dio herramientas ideales para personajes cruzados por la neurosis, la culpa o la torpeza afectiva.',
+				'Tiempo de valientes sigue siendo una referencia clarisima para verlo en accion, pero su peso en el cine y la television local va bastante mas alla de esa pelicula. Tiene timing de comedia, escucha para el drama y una cualidad muy argentina para hacer creible al tipo comun cuando todo alrededor se desordena.',
+			],
+			awards: [{ label: 'Martín Fierro', category: 'Mejor actor protagonista de unitario', work: 'En terapia', year: 2013 }],
+			knownFor: ['tiempo-de-valientes-2005'],
+		},
+		{
+			slug: 'dario-grandinetti',
+			name: 'Darío Grandinetti',
+			headline: 'Presencia finamente ambigua del cine argentino, ideal para personajes cultivados, opacos o imprevisibles.',
+			spotlight:
+				'Su carrera le dio un lugar muy particular: actor argentino de fuerte raiz local pero con circulacion natural en el cine espanol y de autor.',
+			biography: [
+				'Dario Grandinetti tiene una elegancia seca que lo volvio ideal para personajes sofisticados, ambiguos o directamente inquietantes. Sin hacer grandes despliegues gestuales, suele instalar una tension muy clara entre lo que el personaje muestra y lo que esconde.',
+				'Rojo lo aprovecha muy bien en esa zona de respetabilidad enrarecida, pero su carrera viene de mucho antes y dialoga con varias etapas fuertes del cine iberoamericano. Eso lo convierte en una ficha muy util para un sitio que mira cine argentino con contexto regional y autoral.',
+			],
+			awards: [{ label: 'Premios Platino', category: 'Nominacion a mejor actor', work: 'Rojo', year: 2019 }],
+			knownFor: ['rojo-2018'],
+		},
+		{
+			slug: 'nahuel-perez-biscayart',
+			name: 'Nahuel Pérez Biscayart',
+			headline: 'Uno de los actores argentinos con mejor circulacion internacional y un registro cada vez mas prestigioso.',
+			spotlight:
+				'Su presencia fisica y emocional es muy singular: transmite fragilidad, deseo, violencia o desborde con una intensidad poco comun.',
+			biography: [
+				'Nahuel Perez Biscayart construyo una carrera mucho mas festivalera e internacional que la mayoria de sus contemporaneos argentinos. Eso no lo alejo de una identidad fuerte: sigue teniendo una energia muy rioplatense, solo que puesta al servicio de peliculas mas arriesgadas y directores muy distintos entre si.',
+				'El Jockey lo suma al catalogo desde un lugar ideal, porque encaja con esa imagen de actor imprevisible, corporal y muy dispuesto al riesgo. Es de esos interpretes que no parecen ordenar la pelicula sino agitarla desde adentro.',
+			],
+			awards: [{ label: 'César', category: 'Nominacion a mejor actor revelacion', work: '120 BPM', year: 2018 }],
+			knownFor: ['el-jockey-2024'],
+		},
+		{
+			slug: 'daniel-fanego',
+			name: 'Daniel Fanego',
+			headline: 'Actor de enorme densidad y un timbre dramatico muy propio, clave para thrillers y dramas adultos argentinos.',
+			spotlight:
+				'Pocos actores argentinos tenian una autoridad tan inmediata para entrar a una escena y cargarla de conflicto, historia o amenaza.',
+			biography: [
+				'Daniel Fanego fue durante decadas una presencia central del cine, la television y el teatro argentinos. Tenia voz, rostro y tempo para personajes de poder, de desgaste o de cinismo, pero tambien una sensibilidad muy particular para volver humanos a tipos duros o moralmente quebrados.',
+				'Betibu lo encuentra en una zona que le sentaba perfecto: thriller adulto, climas enrarecidos y personajes marcados por lo que saben y por lo que callan. Su figura sigue pesando mucho dentro del imaginario del cine argentino contemporaneo.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Mejor actor de reparto', work: 'Luna de Avellaneda', year: 2005 }],
+			knownFor: ['betibu-2014'],
+		},
+		{
+			slug: 'julio-chavez',
+			name: 'Julio Chávez',
+			headline: 'Uno de los grandes actores argentinos vivos, con una intensidad seca y una escucha muy poco comunes.',
+			spotlight:
+				'En escena transmite concentracion total: parece escuchar de verdad, pensar de verdad y reaccionar desde un lugar muy trabajado pero nunca mecanico.',
+			biography: [
+				'Julio Chavez tiene una carrera inmensa en teatro, cine y television, y en todos los formatos mantiene el mismo nivel de exigencia. Su estilo no pasa por el lucimiento vistoso sino por una intensidad contenida, muy precisa, que vuelve inolvidables incluso a los personajes mas cerrados o antipaticos.',
+				'Un oso rojo muestra bien esa potencia seca, pero su peso en la actuacion argentina excede largamente un solo titulo. Es una referencia inevitable cuando se habla de actores de composicion, de trabajo de cuerpo y voz, y de presencia dramatica sostenida.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Mejor actor', work: 'El custodio', year: 2007 }],
+			knownFor: ['un-oso-rojo-2002'],
+		},
+		{
+			slug: 'joaquin-furriel',
+			name: 'Joaquín Furriel',
+			headline: 'Actor de presencia sobria y elegante, muy eficaz para thriller, drama y personajes bajo presion.',
+			spotlight:
+				'Tiene una pantalla serena pero muy tensionada, ideal para tipos que parecen controlados hasta que algo se les rompe.',
+			biography: [
+				'Joaquin Furriel construyo una carrera sostenida entre teatro, television y cine, con una imagen de actor serio, prolijo y muy confiable para relatos de tension. Le sale muy bien ese personaje que contiene mas de lo que dice y que va revelando el conflicto a medida que la pelicula lo aprieta.',
+				'Cortafuego lo enlaza con el catalogo desde un presente de thriller, pero su valor editorial va mas alla de una pelicula puntual. Es una de esas figuras argentinas que pueden sostener protagonicos adultos sin necesidad de sobreactuar heroicidad ni tormento.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actor', work: 'El patron, radiografia de un crimen', year: 2015 }],
+			knownFor: ['cortafuego-2026'],
+		},
+		{
+			slug: 'eduardo-blanco',
+			name: 'Eduardo Blanco',
+			headline: 'Rostro queridisimo del cine argentino, especialista en humanidad, calidez y verdad popular.',
+			spotlight:
+				'Su gran virtud es que nunca parece actuar para la platea: transmite barrio, experiencia y vulnerabilidad con una naturalidad enorme.',
+			biography: [
+				'Eduardo Blanco es una pieza fundamental del cine argentino de las ultimas decadas porque representa como pocos al hombre comun llevado a situaciones limite, tiernas o dolorosas. Tiene una cercania inmediata que vuelve muy facil empatizar con sus personajes sin que pierdan complejidad.',
+				'Luna de Avellaneda lo tiene en una de sus zonas mas queridas, pero su trayectoria tambien quedo muy marcada por colaboraciones fuertes dentro del cine industrial argentino de calidad. Cuando una pelicula necesita calor humano y verdad popular, su nombre aparece enseguida.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Mejor actor de reparto', work: 'Luna de Avellaneda', year: 2005 }],
+			knownFor: ['luna-de-avellaneda-2004'],
+		},
+		{
+			slug: 'gaston-pauls',
+			name: 'Gastón Pauls',
+			headline: 'Actor muy asociado al cambio de clima del cine argentino de fines de los noventa y principios de los dos mil.',
+			spotlight:
+				'Su imagen quedo muy ligada a una generacion de peliculas urbanas, nerviosas y desencantadas que marcaron epoca en Argentina.',
+			biography: [
+				'Gaston Pauls fue una de las caras mas visibles del recambio del cine argentino cuando el policial, la estafa y el retrato de una juventud desencajada empezaron a ganar otro pulso. Tiene una energia intensa, algo fragil y algo nocturna, que definio muy bien ese momento de pantalla.',
+				'Nueve reinas es una referencia obligada para leer ese periodo, pero su presencia excede un solo clasico: tambien ayudo a construir una idea de actor joven argentino menos solemne y mas conectado con la calle, la duda y la velocidad del relato.',
+			],
+			awards: [{ label: 'Cóndor de Plata', category: 'Nominacion a mejor actor', work: 'Nueve reinas', year: 2001 }],
+			knownFor: ['nueve-reinas-2000'],
+		},
+		{
+			slug: 'mauricio-dayub',
+			name: 'Mauricio Dayub',
+			headline: 'Actor de enorme oficio y sensibilidad popular, siempre valioso cuando una pelicula necesita humanidad inmediata.',
+			spotlight:
+				'Su trayectoria teatral pesa mucho en pantalla: sabe dar verdad, humor y emocion sin cargar de mas ninguna escena.',
+			biography: [
+				'Mauricio Dayub es uno de los actores argentinos mas queridos dentro del cruce entre teatro comercial de calidad, television y cine. Tiene un oficio muy asentado, de esos que ordenan un elenco y hacen que la emocion llegue sin subrayados innecesarios.',
+				'Corazon de leon lo conecta con el costado mas popular del catalogo, pero su valor tambien esta en la versatilidad. Puede sostener humor, ternura, observacion costumbrista y momentos de dolor con la misma naturalidad, algo nada facil de conseguir.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actor de reparto', work: 'El cuento de las comadrejas', year: 2020 }],
+			knownFor: ['corazon-de-leon-2013'],
+		},
+	]),
+	...buildCatalogBackedProfiles(argentineActressDefaults, [
+		{
+			slug: 'norma-aleandro',
+			name: 'Norma Aleandro',
+			headline: 'Leyenda absoluta del cine argentino, con una mezcla inigualable de inteligencia, calidez y autoridad dramatica.',
+			spotlight:
+				'Su figura excede ampliamente una pelicula o una epoca: es una referencia mayor del teatro y del cine argentino dentro y fuera del pais.',
+			biography: [
+				'Norma Aleandro ocupa un lugar central en la historia cultural argentina por la amplitud y la consistencia de su carrera. Tiene una inteligencia interpretativa muy rara, capaz de volver transparentes emociones complejas sin perder jamas elegancia ni contundencia.',
+				'La historia oficial la proyecto al mundo y El hijo de la novia la volvio a confirmar para nuevas generaciones, pero su peso no depende solo de esos titulos. Hablar de ella es hablar de una actriz que sostuvo prestigio artistico, popularidad y reconocimiento internacional durante decadas.',
+			],
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz', work: 'La historia oficial', year: 1986 }],
+			knownFor: ['el-hijo-de-la-novia-2001', 'la-historia-oficial-1985'],
+		},
+		{
+			slug: 'graciela-borges',
+			name: 'Graciela Borges',
+			headline: 'Icono historico de la pantalla argentina, elegante y feroz al mismo tiempo, siempre con peso de estrella.',
+			spotlight:
+				'Pocas figuras argentinas atravesaron tantas etapas del cine nacional conservando aura de estrella y verdadera curiosidad artistica.',
+			biography: [
+				'Graciela Borges empezo muy joven y termino convirtiendose en una presencia historica del cine argentino. Su carrera cruza melodrama, modernidad, cine de autor y personajes de una enorme sofisticacion emocional, siempre con una fotogenia y una personalidad muy dificiles de igualar.',
+				'Que en el catalogo aparezca asociada tanto a La cienaga como a El cuento de las comadrejas habla bien de su amplitud. Puede dialogar con Lucrecia Martel o con una pelicula mas abierta al gran publico sin perder nunca su misterio ni su peso de figura legendaria.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Premio a la trayectoria', year: 2016 }],
+			knownFor: ['el-cuento-de-las-comadrejas-2019', 'la-cienaga-2001'],
+		},
+		{
+			slug: 'martina-gusman',
+			name: 'Martina Gusmán',
+			headline: 'Actriz argentina de intensidad frontal, muy potente cuando el cine pide fisicidad, calle y nervio.',
+			spotlight:
+				'Su mejor zona aparece cuando la pelicula necesita cuerpo, tension social y una energia que no busque ser simpatica.',
+			biography: [
+				'Martina Gusman construyo una imagen muy fuerte dentro del cine argentino contemporaneo a partir de personajes expuestos al limite fisico y moral. Tiene una forma directa de estar en pantalla, sin adornos, que la volvio clave para un tipo de drama urbano, aspero y muy corporal.',
+				'Leonera y Carancho son dos puntos fundamentales para entender esa presencia, pero tambien sirven para medir su importancia dentro de una etapa fuerte del cine local que dialogo mucho con festivales y con una idea mas rugosa del realismo.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actriz', work: 'Carancho', year: 2011 }],
+			knownFor: ['carancho-2010', 'leonera-2008'],
+		},
+		{
+			slug: 'cecilia-dopazo',
+			name: 'Cecilia Dopazo',
+			headline: 'Actriz muy reconocible del cine argentino de los noventa, con presencia sensible y un tono muy local.',
+			spotlight:
+				'Su cara quedo asociada a un momento muy especifico del cine argentino, entre juventud, romanticismo y una energia urbana bien de epoca.',
+			biography: [
+				'Cecilia Dopazo fue una figura muy visible del cine argentino de los noventa y tambien tuvo mucho recorrido en television y teatro. En pantalla supo combinar fragilidad, empuje y una sensibilidad muy reconocible para personajes atravesados por el deseo, la epoca y la confusion sentimental.',
+				'Tango feroz y Caballos salvajes la dejan muy bien ubicada dentro de ese tramo del cine local que mezclo impulso generacional, musica, road movie y dramatismo popular. Su presencia ayuda a leer una etapa entera, no solo un par de titulos sueltos.',
+			],
+			awards: [{ label: 'Cóndor de Plata', category: 'Nominacion a revelacion femenina', work: 'Tango feroz', year: 1994 }],
+			knownFor: ['caballos-salvajes-1995', 'tango-feroz-la-leyenda-de-tanguito-1993'],
+		},
+		{
+			slug: 'julieta-diaz',
+			name: 'Julieta Díaz',
+			headline: 'Actriz muy popular dentro del cine y la tele argentina, con una mezcla efectiva de calidez, humor y drama.',
+			spotlight:
+				'Tiene llegada masiva sin perder oficio: funciona muy bien en comedia romantica, drama familiar y relatos apoyados en vinculos cercanos.',
+			biography: [
+				'Julieta Diaz construyo una carrera muy solida entre television, teatro y cine, y eso la volvio una de las caras mas reconocibles para el publico argentino. Tiene una cercania muy natural, pero tambien sabe sostener conflictos emotivos sin volverse melosa ni subrayada.',
+				'Corazon de leon la conecta en el sitio con un gran exito popular, aunque su recorrido es mas amplio. Es una actriz muy valiosa para el cine local porque puede atraer publico, darle ritmo a escenas cotidianas y al mismo tiempo cargar de verdad los momentos mas sensibles.',
+			],
+			awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actriz', work: 'Corazon de Leon', year: 2014 }],
+			knownFor: ['corazon-de-leon-2013'],
+		},
+	]),
+};
+
 export const personProfiles: Record<string, PersonProfileRecord> = {
 	'brad-pitt': {
 		slug: 'brad-pitt',
@@ -3584,4 +4612,5 @@ export const personProfiles: Record<string, PersonProfileRecord> = {
 		],
 	},
 	...bulkTrendProfiles,
+	...bulkExpansionProfiles,
 };
