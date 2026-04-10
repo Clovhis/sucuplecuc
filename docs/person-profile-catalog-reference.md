@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-10. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 286
+Total de personas con ficha exclusiva: 296
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -10,6 +10,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | --- | --- | --- | --- | ---: | ---: |
 | Aaron Taylor-Johnson | `aaron-taylor-johnson` | /personas/aaron-taylor-johnson/ | Actor | 3 | 3 |
 | Adam Driver | `adam-driver` | /personas/adam-driver/ | Actor | 2 | 3 |
+| Adria Arjona | `adria-arjona` | /personas/adria-arjona/ | Actriz | 2 | 3 |
 | Adrien Brody | `adrien-brody` | /personas/adrien-brody/ | Actor | 1 | 3 |
 | Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 2 | 3 |
 | Alberto Ammann | `alberto-ammann` | /personas/alberto-ammann/ | Actor | 2 | 3 |
@@ -46,10 +47,12 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Bryce Dallas Howard | `bryce-dallas-howard` | /personas/bryce-dallas-howard/ | Actriz | 3 | 3 |
 | Cailee Spaeny | `cailee-spaeny` | /personas/cailee-spaeny/ | Actriz | 2 | 3 |
 | Caitríona Balfe | `caitriona-balfe` | /personas/caitriona-balfe/ | Actriz | 2 | 3 |
+| Cameron Diaz | `cameron-diaz` | /personas/cameron-diaz/ | Actriz | 2 | 3 |
 | Carrie Fisher | `carrie-fisher` | /personas/carrie-fisher/ | Actriz | 4 | 3 |
 | Carrie-Anne Moss | `carrie-anne-moss` | /personas/carrie-anne-moss/ | Actriz | 4 | 3 |
 | Cate Blanchett | `cate-blanchett` | /personas/cate-blanchett/ | Actriz / Productora | 4 | 3 |
 | Cecilia Dopazo | `cecilia-dopazo` | /personas/cecilia-dopazo/ | Actriz | 2 | 3 |
+| Charlie Day | `charlie-day` | /personas/charlie-day/ | Actor | 2 | 3 |
 | Charlize Theron | `charlize-theron` | /personas/charlize-theron/ | Actriz / Productora | 2 | 3 |
 | Chino Darín | `chino-darin` | /personas/chino-darin/ | Actor | 2 | 3 |
 | Chiwetel Ejiofor | `chiwetel-ejiofor` | /personas/chiwetel-ejiofor/ | Actor | 4 | 2 |
@@ -135,6 +138,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ian McKellen | `ian-mckellen` | /personas/ian-mckellen/ | Actor | 4 | 3 |
 | Jack Black | `jack-black` | /personas/jack-black/ | Actor | 4 | 3 |
 | Jack Nicholson | `jack-nicholson` | /personas/jack-nicholson/ | Actor | 4 | 4 |
+| Jack Quaid | `jack-quaid` | /personas/jack-quaid/ | Actor | 2 | 3 |
 | Jacob Elordi | `jacob-elordi` | /personas/jacob-elordi/ | Actor | 3 | 3 |
 | Jake Gyllenhaal | `jake-gyllenhaal` | /personas/jake-gyllenhaal/ | Actor | 2 | 3 |
 | James Cameron | `james-cameron` | /personas/james-cameron/ | Director / Guionista / Productor | 4 | 3 |
@@ -174,8 +178,10 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Julieta Díaz | `julieta-diaz` | /personas/julieta-diaz/ | Actriz | 1 | 3 |
 | Julio Chávez | `julio-chavez` | /personas/julio-chavez/ | Actor | 1 | 3 |
 | Kate Winslet | `kate-winslet` | /personas/kate-winslet/ | Actriz | 1 | 3 |
+| Kathryn Newton | `kathryn-newton` | /personas/kathryn-newton/ | Actriz | 1 | 3 |
 | Ke Huy Quan | `ke-huy-quan` | /personas/ke-huy-quan/ | Actor | 3 | 3 |
 | Keanu Reeves | `keanu-reeves` | /personas/keanu-reeves/ | Actor | 4 | 3 |
+| Keegan-Michael Key | `keegan-michael-key` | /personas/keegan-michael-key/ | Actor | 2 | 3 |
 | Keke Palmer | `keke-palmer` | /personas/keke-palmer/ | Actriz | 1 | 3 |
 | Kieran Culkin | `kieran-culkin` | /personas/kieran-culkin/ | Actor | 1 | 3 |
 | Kirsten Dunst | `kirsten-dunst` | /personas/kirsten-dunst/ | Actriz | 4 | 3 |
@@ -226,6 +232,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Oscar Isaac | `oscar-isaac` | /personas/oscar-isaac/ | Actor | 1 | 3 |
 | Oscar Martínez | `oscar-martinez` | /personas/oscar-martinez/ | Actor | 3 | 3 |
 | Pamela Anderson | `pamela-anderson` | /personas/pamela-anderson/ | Actriz | 1 | 3 |
+| Patricia Arquette | `patricia-arquette` | /personas/patricia-arquette/ | Actriz | 1 | 3 |
 | Patrick Stewart | `patrick-stewart` | /personas/patrick-stewart/ | Actor | 3 | 3 |
 | Paul Dano | `paul-dano` | /personas/paul-dano/ | Actor | 1 | 3 |
 | Paul Giamatti | `paul-giamatti` | /personas/paul-giamatti/ | Actor | 1 | 3 |
@@ -261,6 +268,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 4 | 3 |
 | Sam Mendes | `sam-mendes` | /personas/sam-mendes/ | Director | 3 | 3 |
 | Sam Worthington | `sam-worthington` | /personas/sam-worthington/ | Actor | 4 | 3 |
+| Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 1 | 3 |
 | Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 4 | 3 |
 | Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 2 | 3 |
 | Santiago Mitre | `santiago-mitre` | /personas/santiago-mitre/ | Director | 2 | 3 |
@@ -281,6 +289,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Tom Hiddleston | `tom-hiddleston` | /personas/tom-hiddleston/ | Actor | 3 | 3 |
 | Tom Holland | `tom-holland` | /personas/tom-holland/ | Actor | 4 | 3 |
 | Tommy Lee Jones | `tommy-lee-jones` | /personas/tommy-lee-jones/ | Actor | 3 | 3 |
+| Toni Collette | `toni-collette` | /personas/toni-collette/ | Actriz | 2 | 3 |
 | Uma Thurman | `uma-thurman` | /personas/uma-thurman/ | Actriz | 4 | 3 |
 | Vanessa Kirby | `vanessa-kirby` | /personas/vanessa-kirby/ | Actriz | 2 | 3 |
 | Viggo Mortensen | `viggo-mortensen` | /personas/viggo-mortensen/ | Actor | 3 | 3 |
@@ -292,5 +301,6 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Willem Dafoe | `willem-dafoe` | /personas/willem-dafoe/ | Actor | 4 | 3 |
 | Woody Harrelson | `woody-harrelson` | /personas/woody-harrelson/ | Actor | 4 | 3 |
 | Yorgos Lanthimos | `yorgos-lanthimos` | /personas/yorgos-lanthimos/ | Director | 1 | 2 |
+| Zazie Beetz | `zazie-beetz` | /personas/zazie-beetz/ | Actriz | 2 | 3 |
 | Zendaya | `zendaya` | /personas/zendaya/ | Actriz | 4 | 3 |
 | Zoe Saldaña | `zoe-saldana` | /personas/zoe-saldana/ | Actriz | 4 | 3 |

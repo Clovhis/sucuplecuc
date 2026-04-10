@@ -349,6 +349,46 @@ const catalogBackedProfileMeta = {
 		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Julieta%20D%C3%ADaz%20-%20Presentaci%C3%B3n%20Coraz%C3%B3n%20de%20Le%C3%B3n.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q586715', 'https://www.imdb.com/name/nm0246638/', 'https://www.themoviedb.org/person/140542-julieta-diaz'],
 	},
+	'keegan-michael-key': {
+		profileImage: '/people/keegan-michael-key-nm1221047.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q6382703', 'https://www.imdb.com/name/nm1221047/', 'https://www.themoviedb.org/person/298410-keegan-michael-key'],
+	},
+	'charlie-day': {
+		profileImage: '/people/charlie-day-nm0206359.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q365915', 'https://www.imdb.com/name/nm0206359/', 'https://www.themoviedb.org/person/95101-charlie-day'],
+	},
+	'zazie-beetz': {
+		profileImage: '/people/zazie-beetz-nm5939164.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q26997611', 'https://www.imdb.com/name/nm5939164/', 'https://www.themoviedb.org/person/1545693-zazie-beetz'],
+	},
+	'patricia-arquette': {
+		profileImage: '/people/patricia-arquette-nm0000099.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q215976', 'https://www.imdb.com/name/nm0000099/', 'https://www.themoviedb.org/person/4687-patricia-arquette'],
+	},
+	'samara-weaving': {
+		profileImage: '/people/samara-weaving-nm3034977.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q7408805', 'https://www.imdb.com/name/nm3034977/', 'https://www.themoviedb.org/person/1372369-samara-weaving'],
+	},
+	'kathryn-newton': {
+		profileImage: '/people/kathryn-newton-nm1105980.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q165625', 'https://www.imdb.com/name/nm1105980/', 'https://www.themoviedb.org/person/221192-kathryn-newton'],
+	},
+	'adria-arjona': {
+		profileImage: '/people/adria-arjona-nm5245722.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q18684239', 'https://www.imdb.com/name/nm5245722/', 'https://www.themoviedb.org/person/1371297-adria-arjona'],
+	},
+	'jack-quaid': {
+		profileImage: '/people/jack-quaid-nm4425051.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q1139078', 'https://www.imdb.com/name/nm4425051/', 'https://www.themoviedb.org/person/1030513-jack-quaid'],
+	},
+	'cameron-diaz': {
+		profileImage: '/people/cameron-diaz-nm0000139.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q44380', 'https://www.imdb.com/name/nm0000139/', 'https://www.themoviedb.org/person/6941-cameron-diaz'],
+	},
+	'toni-collette': {
+		profileImage: '/people/toni-collette-nm0001057.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q229291', 'https://www.imdb.com/name/nm0001057/', 'https://www.themoviedb.org/person/3051-toni-collette'],
+	},
 };
 
 const bulkProfileReferenceUrls = {
@@ -4193,6 +4233,83 @@ const bulkCompletionProfiles = {
 	]),
 };
 
+const bulkRequestedProfiles = {
+	...buildCatalogBackedProfiles(globalActorDefaults, [
+		{
+			slug: 'keegan-michael-key',
+			name: 'Keegan-Michael Key',
+			headline: 'Comediante y actor hiperreconocible, con timing de sketch y energia suficiente para sostener doblaje, musical y mainstream puro.',
+			awards: [{ label: 'Primetime Emmy', category: 'Mejor serie de sketches de variedades', work: 'Key & Peele', year: 2016 }],
+			knownFor: ['super-mario-galaxy-2026', 'wonka-2023'],
+		},
+		{
+			slug: 'charlie-day',
+			name: 'Charlie Day',
+			headline: 'Actor y comediante de nervio caotico, muy asociado a personajes acelerados que vuelven memorable cualquier escena.',
+			awards: [{ label: "Critics' Choice Television Award", category: 'Nominacion a mejor actor en comedia', work: "It's Always Sunny in Philadelphia", year: 2011 }],
+			knownFor: ['super-mario-galaxy-2026', 'the-super-mario-bros-movie-2023'],
+		},
+		{
+			slug: 'jack-quaid',
+			name: 'Jack Quaid',
+			headline: 'Cara muy instalada de la camada joven del mainstream, entre accion pop, terror y un carisma bastante relajado.',
+			awards: [{ label: 'Critics Choice Super Award', category: 'Nominacion a mejor actor en pelicula de accion', work: 'Novocaine', year: 2025 }],
+			knownFor: ['companion-2025', 'novocaine-2025'],
+		},
+	]),
+	...buildCatalogBackedProfiles(globalActressDefaults, [
+		{
+			slug: 'zazie-beetz',
+			name: 'Zazie Beetz',
+			headline: 'Actriz de presencia muy contemporanea, siempre efectiva para personajes secos, filosos o un poco imprevisibles.',
+			awards: [{ label: 'Primetime Emmy', category: 'Nominacion a mejor actriz de reparto en comedia', work: 'Atlanta', year: 2018 }],
+			knownFor: ['joker-2019', 'te-van-a-matar-2026'],
+		},
+		{
+			slug: 'patricia-arquette',
+			name: 'Patricia Arquette',
+			headline: 'Actriz importantisima de varias decadas, con prestigio real y una mezcla muy rara de vulnerabilidad, aspereza y verdad.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'Boyhood', year: 2015 }],
+			knownFor: ['te-van-a-matar-2026'],
+		},
+		{
+			slug: 'samara-weaving',
+			name: 'Samara Weaving',
+			headline: 'Actriz muy fuerte para terror y comedia negra, con una energia fisica que la volvio figura de genero en tiempo record.',
+			awards: [{ label: 'AACTA Award', category: 'Nominacion a mejor actriz de television', work: 'Home and Away', year: 2011 }],
+			knownFor: ['boda-sangrienta-2-2026'],
+		},
+		{
+			slug: 'kathryn-newton',
+			name: 'Kathryn Newton',
+			headline: 'Actriz joven muy visible en terror, comedia y fantasy pop, con perfil claro de estrella de genero contemporanea.',
+			awards: [{ label: 'Young Artist Award', category: 'Mejor actriz joven de reparto', work: 'Paranormal Activity 4', year: 2013 }],
+			knownFor: ['boda-sangrienta-2-2026'],
+		},
+		{
+			slug: 'adria-arjona',
+			name: 'Adria Arjona',
+			headline: 'Actriz cada vez mas presente en el mainstream reciente, con una mezcla util de elegancia, misterio y fisico de thriller.',
+			awards: [{ label: 'Imagen Award', category: 'Nominacion a mejor actriz en television', work: 'Emerald City', year: 2017 }],
+			knownFor: ['hit-man-2024', 'morbius-2022'],
+		},
+		{
+			slug: 'cameron-diaz',
+			name: 'Cameron Diaz',
+			headline: 'Una de las grandes caras del mainstream noventoso y dosmilero, entre comedia, animacion y star power puro.',
+			awards: [{ label: 'Hollywood Walk of Fame', category: 'Trayectoria', year: 2009 }],
+			knownFor: ['back-in-action-2025', 'shrek-2001'],
+		},
+		{
+			slug: 'toni-collette',
+			name: 'Toni Collette',
+			headline: 'Actriz enorme, capaz de llevar drama, comedia y terror con una precision emocional que casi nunca falla.',
+			awards: [{ label: 'Primetime Emmy', category: 'Mejor actriz en comedia', work: 'United States of Tara', year: 2009 }],
+			knownFor: ['nightmare-alley-2021', 'the-sixth-sense-1999'],
+		},
+	]),
+};
+
 export const personProfiles: Record<string, PersonProfileRecord> = {
 	'brad-pitt': {
 		slug: 'brad-pitt',
@@ -5213,4 +5330,5 @@ export const personProfiles: Record<string, PersonProfileRecord> = {
 	...bulkTrendProfiles,
 	...bulkExpansionProfiles,
 	...bulkCompletionProfiles,
+	...bulkRequestedProfiles,
 };
