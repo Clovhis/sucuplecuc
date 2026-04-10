@@ -1,0 +1,31 @@
+---
+import { getAwardVisualMeta, type AwardVisualKey } from '../lib/awards';
+
+type Props = {
+	award: string | AwardVisualKey;
+	class?: string;
+	decorative?: boolean;
+	label?: string;
+	size?: number;
+};
+
+const {
+	award,
+	class: className,
+	decorative = true,
+	label,
+	size = 28,
+} = Astro.props as Props;
+const meta = getAwardVisualMeta(String(award));
+---
+
+<img
+	class:list={['award-mark', className]}
+	src={meta.assetPath}
+	alt={decorative ? '' : label ?? meta.alt}
+	width={size}
+	height={size}
+	loading="lazy"
+	decoding="async"
+	aria-hidden={decorative ? 'true' : undefined}
+/>

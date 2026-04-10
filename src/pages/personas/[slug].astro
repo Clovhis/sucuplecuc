@@ -1,6 +1,8 @@
 ---
 import type { GetStaticPaths } from 'astro';
+import AwardMark from '../../components/AwardMark.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAwardVisualKey } from '../../lib/awards';
 import { getPersonFilmography, getPersonProfileBySlug, getPersonProfiles } from '../../lib/people';
 import { createPersonStructuredData } from '../../lib/seo';
 
@@ -161,9 +163,14 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 				</div>
 				<ul class="person-page__award-list">
 					{profile.awards.map((award) => (
-						<li class="person-page__award-item">
+						<li class="person-page__award-item" data-award={getAwardVisualKey(award.label)}>
 							<div>
-								<p class="person-page__award-label">{award.label}</p>
+								<div class="person-page__award-head">
+									<span class="person-page__award-mark-shell" aria-hidden="true">
+										<AwardMark award={award.label} class="person-page__award-mark" size={30} />
+									</span>
+									<p class="person-page__award-label">{award.label}</p>
+								</div>
 								<p class="person-page__award-category">{award.category}</p>
 								{award.work && <p class="person-page__award-work">{award.work}</p>}
 							</div>

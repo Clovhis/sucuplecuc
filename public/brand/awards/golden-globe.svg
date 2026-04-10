@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Golden Globe-inspired trophy</title>
+  <defs>
+    <linearGradient id="gg-gold" x1="12%" y1="6%" x2="88%" y2="94%">
+      <stop offset="0%" stop-color="#ffe49d"/>
+      <stop offset="30%" stop-color="#f6bf47"/>
+      <stop offset="62%" stop-color="#d18a12"/>
+      <stop offset="100%" stop-color="#f4cf74"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#gg-gold)">
+    <circle cx="32" cy="18" r="11.8"/>
+    <path d="M17.8 17.7c0-1.6 1.3-2.9 2.9-2.9H43c1.9 0 3.1 2.2 2.1 3.8l-1.5 2.3c-.9 1.4-2.5 2.2-4.1 2.2H20.7c-1.6 0-2.9-1.3-2.9-2.9v-2.5z"/>
+    <path d="M28.7 29.8h6.6l1.5 5h-9.6z"/>
+    <path d="M26.6 34.8h10.8c1.1 0 2 .9 2 2v2.4c0 1.1-.9 2-2 2H26.6c-1.1 0-2-.9-2-2v-2.4c0-1.1.9-2 2-2z"/>
+    <path d="M28.2 41.2h7.6v11.5h-7.6z"/>
+    <path d="M23.4 52.2h17.2c1.2 0 2.2 1 2.2 2.2v1.8c0 1.2-1 2.2-2.2 2.2H23.4c-1.2 0-2.2-1-2.2-2.2v-1.8c0-1.2 1-2.2 2.2-2.2z"/>
+  </g>
+</svg>

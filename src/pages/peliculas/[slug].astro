@@ -11,7 +11,9 @@ import {
 } from '../../lib/movies';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
+import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
+import { getAwardVisualKey } from '../../lib/awards';
 import { createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -77,9 +79,9 @@ const trailerWatchUrl = movie.trailerYoutubeId
 	? `https://www.youtube.com/watch?v=${movie.trailerYoutubeId}`
 	: '';
 const awardMeta = {
-	oscar: { label: 'Oscar', icon: '🏆' },
-	grammy: { label: 'Grammy', icon: '🎵' },
-	cannes: { label: 'Cannes', icon: '🌴' },
+	oscar: { label: 'Oscar' },
+	grammy: { label: 'Grammy' },
+	cannes: { label: 'Cannes' },
 } as const;
 
 const groupedAwards = (['oscar', 'grammy', 'cannes'] as const)
@@ -90,7 +92,6 @@ const groupedAwards = (['oscar', 'grammy', 'cannes'] as const)
 			wins,
 			count: wins.length,
 			label: awardMeta[awardType].label,
-			icon: awardMeta[awardType].icon,
 		};
 	})
 	.filter((group) => group.count > 0);
@@ -602,28 +603,36 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								<div class="movie-detail__awards-groups">
 									{groupedAwards.map((group) => (
 										<div class="movie-detail__awards-group">
-											<p class="movie-detail__awards-group-title">{group.label}</p>
-											<div
-												class="movie-detail__awards-icons"
-												aria-label={`${group.count} premio${group.count === 1 ? '' : 's'} ${group.label}`}
-											>
-												{Array.from({ length: group.count }).map(() => (
-													<span class={`movie-detail__award-icon movie-detail__award-icon--${group.awardType}`}>
-														{group.icon}
-													</span>
-												))}
+											<div class="movie-detail__awards-group-top">
+												<span
+													class={`movie-detail__award-brand movie-detail__award-brand--${group.awardType}`}
+													aria-hidden="true"
+												>
+													<AwardMark
+														award={group.awardType}
+														class="movie-detail__award-brand-image"
+														size={36}
+													/>
+												</span>
+												<div class="movie-detail__awards-group-copy">
+													<p class="movie-detail__awards-group-title">{group.label}</p>
+													<p class="movie-detail__awards-group-count">
+														{group.count} premio{group.count === 1 ? '' : 's'}
+													</p>
+												</div>
 											</div>
-											<p class="movie-detail__awards-group-count">
-												{group.count} premio{group.count === 1 ? '' : 's'}
-											</p>
 										</div>
 									))}
 								</div>
 								<ul class="movie-detail__awards-list">
 									{awardCategories.map((award) => (
 										<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
-											<span class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}>
-												{award.label}
+											<span
+												class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}
+												data-award={getAwardVisualKey(award.label)}
+											>
+												<AwardMark award={award.label} class="movie-detail__award-tag-icon" size={16} />
+												<span>{award.label}</span>
 											</span>
 											<span>{award.category}</span>
 											{award.recipient && (
