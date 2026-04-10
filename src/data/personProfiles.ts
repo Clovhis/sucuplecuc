@@ -688,6 +688,210 @@ const bulkProfileReferenceUrls = {
 		'https://www.imdb.com/name/nm1167933/',
 		'https://www.themoviedb.org/person/591600-damian-szifron',
 	],
+	'brad-dourif': {
+		profileImage: '/people/brad-dourif-nm0000374.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q329734', 'https://www.imdb.com/name/nm0000374/', 'https://www.themoviedb.org/person/1370-brad-dourif'],
+	},
+	'rupert-grint': {
+		profileImage: '/people/rupert-grint-nm0342488.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q19190', 'https://www.imdb.com/name/nm0342488/', 'https://www.themoviedb.org/person/10989-rupert-grint'],
+	},
+	'mark-hamill': {
+		profileImage: '/people/mark-hamill-nm0000434.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q210447', 'https://www.imdb.com/name/nm0000434/', 'https://www.themoviedb.org/person/2-mark-hamill'],
+	},
+	'arnold-schwarzenegger': {
+		profileImage: '/people/arnold-schwarzenegger-nm0000216.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q2685', 'https://www.imdb.com/name/nm0000216/', 'https://www.themoviedb.org/person/1100-arnold-schwarzenegger'],
+	},
+	'carrie-fisher': {
+		profileImage: '/people/carrie-fisher-nm0000402.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q108941', 'https://www.imdb.com/name/nm0000402/', 'https://www.themoviedb.org/person/4-carrie-fisher'],
+	},
+	'carrie-anne-moss': {
+		profileImage: '/people/carrie-anne-moss-nm0005251.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q206890', 'https://www.imdb.com/name/nm0005251/', 'https://www.themoviedb.org/person/530-carrie-anne-moss'],
+	},
+	'christopher-reeve': {
+		profileImage: '/people/christopher-reeve-nm0001659.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q174311', 'https://www.imdb.com/name/nm0001659/', 'https://www.themoviedb.org/person/20006-christopher-reeve'],
+	},
+	'courteney-cox': {
+		profileImage: '/people/courteney-cox-nm0001073.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q58912', 'https://www.imdb.com/name/nm0001073/', 'https://www.themoviedb.org/person/14405-courteney-cox'],
+	},
+	'donald-pleasence': {
+		profileImage: '/people/donald-pleasence-nm0000587.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q314914', 'https://www.imdb.com/name/nm0000587/', 'https://www.themoviedb.org/person/9221-donald-pleasence'],
+	},
+	'gal-gadot': {
+		profileImage: '/people/gal-gadot-nm2933757.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q185654', 'https://www.imdb.com/name/nm2933757/'],
+	},
+	'geoffrey-rush': {
+		profileImage: '/people/geoffrey-rush-nm0001691.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q166272', 'https://www.imdb.com/name/nm0001691/', 'https://www.themoviedb.org/person/118-geoffrey-rush'],
+	},
+	'henry-cavill': {
+		profileImage: '/people/henry-cavill-nm0147147.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q295498', 'https://www.imdb.com/name/nm0147147/', 'https://www.themoviedb.org/person/73968-henry-cavill'],
+	},
+	'neve-campbell': {
+		profileImage: '/people/neve-campbell-nm0000117.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q193482', 'https://www.imdb.com/name/nm0000117/', 'https://www.themoviedb.org/person/9206-neve-campbell'],
+	},
+	'robert-englund': {
+		profileImage: '/people/robert-englund-nm0000387.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q310389', 'https://www.imdb.com/name/nm0000387/', 'https://www.themoviedb.org/person/5139-robert-englund'],
+	},
+	'ving-rhames': {
+		profileImage: '/people/ving-rhames-nm0000609.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q310315', 'https://www.imdb.com/name/nm0000609/', 'https://www.themoviedb.org/person/10182-ving-rhames'],
+	},
+	'ed-harris': {
+		profileImage: '/people/ed-harris-nm0000438.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q104791', 'https://www.imdb.com/name/nm0000438/', 'https://www.themoviedb.org/person/228-ed-harris'],
+	},
+	'gerard-butler': {
+		profileImage: '/people/gerard-butler-nm0124930.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q169982', 'https://www.imdb.com/name/nm0124930/', 'https://www.themoviedb.org/person/17276-gerard-butler'],
+	},
+	'gwyneth-paltrow': {
+		profileImage: '/people/gwyneth-paltrow-nm0000569.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q34460', 'https://www.imdb.com/name/nm0000569/', 'https://www.themoviedb.org/person/12052-gwyneth-paltrow'],
+	},
+	'jeff-goldblum': {
+		profileImage: '/people/jeff-goldblum-nm0000156.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q106706', 'https://www.imdb.com/name/nm0000156/', 'https://www.themoviedb.org/person/4785-jeff-goldblum'],
+	},
+	'mel-gibson': {
+		profileImage: '/people/mel-gibson-nm0000154.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q42229', 'https://www.imdb.com/name/nm0000154/', 'https://www.themoviedb.org/person/2461-mel-gibson'],
+	},
+	'paul-rudd': {
+		profileImage: '/people/paul-rudd-nm0748620.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q276525', 'https://www.imdb.com/name/nm0748620/', 'https://www.themoviedb.org/person/22226-paul-rudd'],
+	},
+	'sam-worthington': {
+		profileImage: '/people/sam-worthington-nm0941777.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q82085', 'https://www.imdb.com/name/nm0941777/', 'https://www.themoviedb.org/person/65731-sam-worthington'],
+	},
+	'uma-thurman': {
+		profileImage: '/people/uma-thurman-nm0000235.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q125017', 'https://www.imdb.com/name/nm0000235/', 'https://www.themoviedb.org/person/139-uma-thurman'],
+	},
+	'bryce-dallas-howard': {
+		profileImage: '/people/bryce-dallas-howard-nm0397171.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q229775', 'https://www.imdb.com/name/nm0397171/', 'https://www.themoviedb.org/person/18997-bryce-dallas-howard'],
+	},
+	'chris-pine': {
+		profileImage: '/people/chris-pine-nm1517976.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q23466', 'https://www.imdb.com/name/nm1517976/', 'https://www.themoviedb.org/person/62064-chris-pine'],
+	},
+	'christopher-lloyd': {
+		profileImage: '/people/christopher-lloyd-nm0000502.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q109324', 'https://www.imdb.com/name/nm0000502/', 'https://www.themoviedb.org/person/1062-christopher-lloyd'],
+	},
+	'david-arquette': {
+		profileImage: '/people/david-arquette-nm0000274.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q294185', 'https://www.imdb.com/name/nm0000274/', 'https://www.themoviedb.org/person/15234-david-arquette'],
+	},
+	'evangeline-lilly': {
+		profileImage: '/people/evangeline-lilly-nm1431940.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q160392', 'https://www.imdb.com/name/nm1431940/', 'https://www.themoviedb.org/person/19034-evangeline-lilly'],
+	},
+	'james-franco': {
+		profileImage: '/people/james-franco-nm0290556.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q306403', 'https://www.imdb.com/name/nm0290556/', 'https://www.themoviedb.org/person/17051-james-franco'],
+	},
+	'jason-bateman': {
+		profileImage: '/people/jason-bateman-nm0000867.png',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q284636', 'https://www.imdb.com/name/nm0000867/', 'https://www.themoviedb.org/person/23532-jason-bateman'],
+	},
+	'linda-hamilton': {
+		profileImage: '/people/linda-hamilton-nm0000157.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q208214', 'https://www.imdb.com/name/nm0000157/', 'https://www.themoviedb.org/person/2713-linda-hamilton'],
+	},
+	'marlon-brando': {
+		profileImage: '/people/marlon-brando-nm0000008.png',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q34012', 'https://www.imdb.com/name/nm0000008/', 'https://www.themoviedb.org/person/3084-marlon-brando'],
+	},
+	'michael-j-fox': {
+		profileImage: '/people/michael-j-fox-nm0000150.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q395274', 'https://www.imdb.com/name/nm0000150/', 'https://www.themoviedb.org/person/521-michael-j-fox'],
+	},
+	'orlando-bloom': {
+		profileImage: '/people/orlando-bloom-nm0089217.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q44467', 'https://www.imdb.com/name/nm0089217/', 'https://www.themoviedb.org/person/114-orlando-bloom'],
+	},
+	'patrick-stewart': {
+		profileImage: '/people/patrick-stewart-nm0001772.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q16296', 'https://www.imdb.com/name/nm0001772/', 'https://www.themoviedb.org/person/2387-patrick-stewart'],
+	},
+	'paul-walker': {
+		profileImage: '/people/paul-walker-nm0908094.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q213864', 'https://www.imdb.com/name/nm0908094/', 'https://www.themoviedb.org/person/8167-paul-walker'],
+	},
+	'tessa-thompson': {
+		profileImage: '/people/tessa-thompson-nm1935086.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q271500', 'https://www.imdb.com/name/nm1935086/', 'https://www.themoviedb.org/person/62561-tessa-thompson'],
+	},
+	'tommy-lee-jones': {
+		profileImage: '/people/tommy-lee-jones-nm0000169.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q170587', 'https://www.imdb.com/name/nm0000169/', 'https://www.themoviedb.org/person/2176-tommy-lee-jones'],
+	},
+	'vin-diesel': {
+		profileImage: '/people/vin-diesel-nm0004874.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q178166', 'https://www.imdb.com/name/nm0004874/', 'https://www.themoviedb.org/person/12835-vin-diesel'],
+	},
+	'wesley-snipes': {
+		profileImage: '/people/wesley-snipes-nm0000648.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q189694', 'https://www.imdb.com/name/nm0000648/', 'https://www.themoviedb.org/person/10814-wesley-snipes'],
+	},
+	'anthony-mackie': {
+		profileImage: '/people/anthony-mackie-nm1107001.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q511554', 'https://www.imdb.com/name/nm1107001/', 'https://www.themoviedb.org/person/53650-anthony-mackie'],
+	},
+	'andy-serkis': {
+		profileImage: '/people/andy-serkis-nm0785227.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q206922', 'https://www.imdb.com/name/nm0785227/', 'https://www.themoviedb.org/person/1333-andy-serkis'],
+	},
+	'jodie-comer': {
+		profileImage: '/people/jodie-comer-nm3069650.jpeg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q16567346', 'https://www.imdb.com/name/nm3069650/', 'https://www.themoviedb.org/person/1388593-jodie-comer'],
+	},
+	'penelope-cruz': {
+		profileImage: '/people/penelope-cruz-nm0004851.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q39666', 'https://www.imdb.com/name/nm0004851/', 'https://www.themoviedb.org/person/955-penelope-cruz'],
+	},
+	'michael-caine': {
+		profileImage: '/people/michael-caine-nm0000323.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q123351', 'https://www.imdb.com/name/nm0000323/', 'https://www.themoviedb.org/person/3895-michael-caine'],
+	},
+	'michael-shannon': {
+		profileImage: '/people/michael-shannon-nm0788335.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q41449', 'https://www.imdb.com/name/nm0788335/', 'https://www.themoviedb.org/person/335-michael-shannon'],
+	},
+	'jennifer-garner': {
+		profileImage: '/people/jennifer-garner-nm0004950.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q172044', 'https://www.imdb.com/name/nm0004950/', 'https://www.themoviedb.org/person/9278-jennifer-garner'],
+	},
+	'jeremy-renner': {
+		profileImage: '/people/jeremy-renner-nm0719637.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q23365', 'https://www.imdb.com/name/nm0719637/', 'https://www.themoviedb.org/person/17604-jeremy-renner'],
+	},
+	'melissa-barrera': {
+		profileImage: '/people/melissa-barrera-nm4574440.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q20810462', 'https://www.imdb.com/name/nm4574440/', 'https://www.themoviedb.org/person/1373659-melissa-barrera'],
+	},
+	'alberto-ammann': {
+		profileImage: '/people/alberto-ammann-nm2975962.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q2595437', 'https://www.imdb.com/name/nm2975962/', 'https://www.themoviedb.org/person/110424-alberto-ammann'],
+	},
+	'luis-ziembrowski': {
+		profileImage: '/people/luis-ziembrowski-nm0956249.jpg',
+		referenceUrls: ['https://www.wikidata.org/wiki/Q5984494', 'https://www.imdb.com/name/nm0956249/', 'https://www.themoviedb.org/person/1028444-luis-ziembrowski'],
+	},
 };
 
 const bulkProfileImageUrls = {
@@ -832,12 +1036,23 @@ function mergeReferenceUrls(...groups) {
  * @returns {PersonProfileRecord}
  */
 function buildBulkProfile(defaults, seed) {
+	const fallbackMeta = bulkProfileReferenceUrls[seed.slug];
+	const fallbackProfileImage =
+		fallbackMeta && typeof fallbackMeta === 'object' && !Array.isArray(fallbackMeta)
+			? fallbackMeta.profileImage
+			: undefined;
+	const fallbackReferenceUrls = Array.isArray(fallbackMeta)
+		? fallbackMeta
+		: fallbackMeta && typeof fallbackMeta === 'object'
+			? fallbackMeta.referenceUrls
+			: undefined;
+
 	return {
 		...seed,
-		profileImage: seed.profileImage ?? bulkProfileImageUrls[seed.slug],
+		profileImage: seed.profileImage ?? fallbackProfileImage ?? bulkProfileImageUrls[seed.slug],
 		roles: defaults.roles,
 		stats: defaults.stats.map((stat) => ({ ...stat })),
-		referenceUrls: mergeReferenceUrls(seed.referenceUrls, bulkProfileReferenceUrls[seed.slug]),
+		referenceUrls: mergeReferenceUrls(seed.referenceUrls, fallbackReferenceUrls),
 	};
 }
 
@@ -865,6 +1080,16 @@ function buildCatalogBackedBiography(name, roleLabel, spotlight, knownFor) {
 
 function buildCatalogBackedProfile(defaults, seed) {
 	const profileMeta = getCatalogBackedProfileMeta(seed.slug);
+	const fallbackMeta = bulkProfileReferenceUrls[seed.slug];
+	const fallbackProfileImage =
+		fallbackMeta && typeof fallbackMeta === 'object' && !Array.isArray(fallbackMeta)
+			? fallbackMeta.profileImage
+			: undefined;
+	const fallbackReferenceUrls = Array.isArray(fallbackMeta)
+		? fallbackMeta
+		: fallbackMeta && typeof fallbackMeta === 'object'
+			? fallbackMeta.referenceUrls
+			: undefined;
 	const roleLabel = defaults.roles.includes('Director')
 		? 'director'
 		: defaults.roles.includes('Actriz')
@@ -876,14 +1101,14 @@ function buildCatalogBackedProfile(defaults, seed) {
 
 	return {
 		...seed,
-		profileImage: seed.profileImage ?? profileMeta?.profileImage ?? bulkProfileImageUrls[seed.slug],
+		profileImage: seed.profileImage ?? profileMeta?.profileImage ?? fallbackProfileImage ?? bulkProfileImageUrls[seed.slug],
 		roles: defaults.roles,
 		spotlight,
 		biography: seed.biography ?? buildCatalogBackedBiography(seed.name, roleLabel, spotlight, seed.knownFor ?? []),
 		stats: defaults.stats.map((stat) => ({ ...stat })),
 		referenceUrls: mergeReferenceUrls(
 			seed.referenceUrls,
-			mergeReferenceUrls(profileMeta?.referenceUrls, bulkProfileReferenceUrls[seed.slug]),
+			mergeReferenceUrls(profileMeta?.referenceUrls, fallbackReferenceUrls),
 		),
 	};
 }
@@ -3594,6 +3819,380 @@ const bulkExpansionProfiles = {
 	]),
 };
 
+const bulkCompletionProfiles = {
+	...buildCatalogBackedProfiles(globalActorDefaults, [
+		{
+			slug: 'brad-dourif',
+			name: 'Brad Dourif',
+			headline: 'Actor de culto con una intensidad rarisima, fundamental para el terror y para el cine de personajes torcidos.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor de reparto', work: "One Flew Over the Cuckoo's Nest", year: 1976 }],
+			knownFor: ['child-s-play-1988', 'bride-of-chucky-1998', 'cult-of-chucky-2017', 'one-flew-over-the-cuckoo-s-nest-1975'],
+		},
+		{
+			slug: 'rupert-grint',
+			name: 'Rupert Grint',
+			headline: 'Rostro inseparable de Harry Potter, clave para la pata mas popular y generacional de esa saga dentro del sitio.',
+			awards: [{ label: 'National Movie Awards', category: 'Nominacion a actuacion del ano', work: 'Harry Potter and the Deathly Hallows Part 1', year: 2011 }],
+			knownFor: [
+				'harry-potter-and-the-sorcerers-stone-2001',
+				'harry-potter-and-the-prisoner-of-azkaban-2004',
+				'harry-potter-and-the-half-blood-prince-2009',
+				'harry-potter-and-the-deathly-hallows-part-2-2011',
+			],
+		},
+		{
+			slug: 'mark-hamill',
+			name: 'Mark Hamill',
+			headline: 'Icono pop absoluto entre Star Wars, animacion y doblaje, con una voz y una presencia que siguen pesando mucho.',
+			awards: [{ label: 'Disney Legends', category: 'Trayectoria', year: 2017 }],
+			knownFor: ['star-wars-episode-iv-a-new-hope-1977', 'star-wars-episode-v-the-empire-strikes-back-1980', 'star-wars-episode-viii-the-last-jedi-2017', 'child-s-play-2019'],
+		},
+		{
+			slug: 'arnold-schwarzenegger',
+			name: 'Arnold Schwarzenegger',
+			headline: 'Superestrella total de la accion ochentosa y noventosa, todavia inseparable de Terminator y del cuerpo industrial del blockbuster.',
+			awards: [{ label: 'Golden Globe Award for New Star of the Year – Actor', category: 'Revelacion masculina', year: 1977 }],
+			knownFor: ['the-terminator-1984', 'terminator-2-judgment-day-1991', 'terminator-genisys-2015', 'terminator-dark-fate-2019'],
+		},
+		{
+			slug: 'christopher-reeve',
+			name: 'Christopher Reeve',
+			headline: 'La cara definitiva de Superman para varias generaciones y una figura historica del cine fantastico clasico.',
+			awards: [{ label: 'BAFTA', category: 'Revelacion cinematografica', work: 'Superman', year: 1980 }],
+			knownFor: ['superman-1978', 'superman-ii-1980', 'superman-iii-1983', 'super-man-the-christopher-reeve-story-2024'],
+		},
+		{
+			slug: 'donald-pleasence',
+			name: 'Donald Pleasence',
+			headline: 'Veterano britanico de enorme peso para el terror y para el cine de personajes obsesivos o perturbadores.',
+			awards: [{ label: 'Tony Award', category: 'Nominacion a mejor actor en obra', year: 1965 }],
+			knownFor: ['halloween-1978', 'halloween-ii-1981', 'halloween-4-the-return-of-michael-myers-1988', 'halloween-5-the-revenge-of-michael-myers-1989'],
+		},
+		{
+			slug: 'geoffrey-rush',
+			name: 'Geoffrey Rush',
+			headline: 'Actor australiano de altisimo prestigio, capaz de llevar excentricidad, autoridad y humor venenoso con la misma comodidad.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Shine', year: 1997 }],
+			knownFor: ['pirates-of-the-caribbean-at-worlds-end-2007', 'pirates-of-the-caribbean-on-stranger-tides-2011', 'the-king-s-speech-2010', 'shakespeare-in-love-1998'],
+		},
+		{
+			slug: 'henry-cavill',
+			name: 'Henry Cavill',
+			headline: 'Figura muy instalada del blockbuster de estudio, entre superheroes, espias y musculatura de leading man clasico.',
+			awards: [{ label: 'MTV Movie Award', category: 'Best Hero', work: 'Man of Steel', year: 2014 }],
+			knownFor: ['man-of-steel-2013', 'batman-v-superman-dawn-of-justice-2016', 'justice-league-2017', 'mission-impossible-fallout-2018'],
+		},
+		{
+			slug: 'robert-englund',
+			name: 'Robert Englund',
+			headline: 'Leyenda absoluta del horror moderno, inseparable de Freddy Krueger y del slasher de video club.',
+			awards: [{ label: 'Saturn Award', category: 'Nominacion a mejor actor de reparto', work: 'A Nightmare on Elm Street 3: Dream Warriors', year: 1988 }],
+			knownFor: ['a-nightmare-on-elm-street-4-the-dream-master-1988', 'a-nightmare-on-elm-street-5-the-dream-child-1989', 'freddy-vs-jason-2003', 'wes-craven-s-new-nightmare-1994'],
+		},
+		{
+			slug: 'ving-rhames',
+			name: 'Ving Rhames',
+			headline: 'Actor de presencia enorme y voz inconfundible, muy asociado al cine de accion y a figuras de poder duro.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en miniserie o telefilm', work: 'Don King: Only in America', year: 1998 }],
+			knownFor: ['mission-impossible-iii-2006', 'mission-impossible-fallout-2018', 'mission-impossible-dead-reckoning-part-one-2023', 'mission-impossible-the-final-reckoning-2025'],
+		},
+		{
+			slug: 'ed-harris',
+			name: 'Ed Harris',
+			headline: 'Actor de enorme autoridad dramatica, ideal para personajes severos, desgastados o moralmente ambiguos.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor de reparto en miniserie o telefilm', work: 'Game Change', year: 2013 }],
+			knownFor: ['the-truman-show-1998', 'a-beautiful-mind-2001', 'love-lies-bleeding-2024', 'jugada-maestra-2026'],
+		},
+		{
+			slug: 'gerard-butler',
+			name: 'Gerard Butler',
+			headline: 'Actor escoces muy reconocible para accion y aventura, con una energia de heroe fisico que sigue siendo vendible.',
+			awards: [{ label: 'MTV Movie Award', category: 'Nominacion a mejor actuacion', work: '300', year: 2007 }],
+			knownFor: ['how-to-train-your-dragon-2010', 'how-to-train-your-dragon-2-2014', 'how-to-train-your-dragon-2025', 'greenland-2-migration-2026'],
+		},
+		{
+			slug: 'jeff-goldblum',
+			name: 'Jeff Goldblum',
+			headline: 'Figura unica del cine norteamericano, con carisma excéntrico y un ritmo verbal que lo vuelve reconocible al instante.',
+			awards: [{ label: 'Hollywood Walk of Fame', category: 'Trayectoria' }],
+			knownFor: ['jurassic-park-1993', 'the-lost-world-jurassic-park-1997', 'wicked-2024', 'wicked-for-good-2025'],
+		},
+		{
+			slug: 'mel-gibson',
+			name: 'Mel Gibson',
+			headline: 'Estrella historica del cine de accion y aventura que tambien dejo una marca gigante como realizador.',
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'Braveheart', year: 1996 }],
+			knownFor: ['mad-max-1979', 'mad-max-2-1981', 'mad-max-beyond-thunderdome-1985', 'braveheart-1995'],
+		},
+		{
+			slug: 'paul-rudd',
+			name: 'Paul Rudd',
+			headline: 'Actor muy querido del mainstream reciente, con timing de comedia y una version amable del heroe de franquicia.',
+			awards: [{ label: 'Hollywood Walk of Fame', category: 'Trayectoria' }],
+			knownFor: ['halloween-the-curse-of-michael-myers-1995', 'ant-man-2015', 'ant-man-and-the-wasp-2018', 'ant-man-and-the-wasp-quantumania-2023'],
+		},
+		{
+			slug: 'sam-worthington',
+			name: 'Sam Worthington',
+			headline: 'Actor asociado al blockbuster sci-fi de gran escala, especialmente a la maquinaria emocional y tecnica de Avatar.',
+			awards: [{ label: 'Saturn Award', category: 'Nominacion a mejor actor', work: 'Avatar', year: 2010 }],
+			knownFor: ['avatar-2009', 'avatar-the-way-of-water-2022', 'avatar-fuego-y-cenizas-2025', 'terminator-salvation-2009'],
+		},
+		{
+			slug: 'chris-pine',
+			name: 'Chris Pine',
+			headline: 'Leading man moderno con mezcla de ironia, elegancia y presencia fisica, muy comodo entre fantasia, comedia y accion.',
+			awards: [{ label: "Critics' Choice Award", category: 'Nominacion a mejor elenco', work: 'Hell or High Water', year: 2017 }],
+			knownFor: ['wonder-woman-2017', 'wonder-woman-1984-2020', 'wish-2023'],
+		},
+		{
+			slug: 'christopher-lloyd',
+			name: 'Christopher Lloyd',
+			headline: 'Actor de composicion inolvidable, historico para el cine fantastico y para personajes excéntricos de culto.',
+			awards: [{ label: 'Primetime Emmy', category: 'Mejor actor de reparto en comedia', work: 'Taxi', year: 1983 }],
+			knownFor: ['back-to-the-future-1985', 'back-to-the-future-part-ii-1989', 'back-to-the-future-part-iii-1990'],
+		},
+		{
+			slug: 'david-arquette',
+			name: 'David Arquette',
+			headline: 'Nombre muy ligado al terror pop noventoso y a la identidad coral de la saga Scream.',
+			awards: [{ label: 'Teen Choice Award', category: 'Quimica en pantalla', work: 'Scream 3', year: 2000 }],
+			knownFor: ['scream-1996', 'scream-2-1997', 'scream-3-2000'],
+		},
+		{
+			slug: 'james-franco',
+			name: 'James Franco',
+			headline: 'Actor muy visible de los 2000 y 2010, siempre cerca de personajes desprolijos, carismaticos o deliberadamente inestables.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en miniserie o telefilm', work: 'James Dean', year: 2002 }],
+			knownFor: ['spider-man-2-2004', 'spider-man-3-2007', 'rise-of-the-planet-of-the-apes-2011'],
+		},
+		{
+			slug: 'jason-bateman',
+			name: 'Jason Bateman',
+			headline: 'Actor de perfil sobrio y muy afilado para la comedia seca, el thriller y la ironia contemporanea.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en serie de comedia', work: 'Arrested Development', year: 2005 }],
+			knownFor: ['carry-on-2024', 'thunder-force-2021', 'zootopia-2-2025'],
+		},
+		{
+			slug: 'marlon-brando',
+			name: 'Marlon Brando',
+			headline: 'Gigante absoluto de la actuacion del siglo XX, referencia ineludible para entender el star system y el actor moderno.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'The Godfather', year: 1973 }],
+			knownFor: ['on-the-waterfront-1954', 'the-godfather-1972', 'apocalypse-now-1979'],
+		},
+		{
+			slug: 'michael-j-fox',
+			name: 'Michael J. Fox',
+			headline: 'Icono total de los ochenta, inseparable de la aventura pop y del carisma comico que hizo enorme a Volver al futuro.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en serie de comedia', work: 'Spin City', year: 2000 }],
+			knownFor: ['back-to-the-future-1985', 'back-to-the-future-part-ii-1989', 'back-to-the-future-part-iii-1990'],
+		},
+		{
+			slug: 'orlando-bloom',
+			name: 'Orlando Bloom',
+			headline: 'Figura muy asociada al cine de aventuras y fantasia de gran escala, clave para el blockbuster de los 2000.',
+			awards: [{ label: 'Screen Actors Guild Award', category: 'Mejor elenco', work: 'The Lord of the Rings: The Return of the King', year: 2004 }],
+			knownFor: ['pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003', 'pirates-of-the-caribbean-dead-mans-chest-2006', 'pirates-of-the-caribbean-at-worlds-end-2007'],
+		},
+		{
+			slug: 'patrick-stewart',
+			name: 'Patrick Stewart',
+			headline: 'Actor britanico legendario, con una autoridad escenica que le dio espesor a ciencia ficcion, teatro y blockbuster.',
+			awards: [{ label: 'Hollywood Walk of Fame', category: 'Trayectoria' }],
+			knownFor: ['x-men-2000', 'x2-2003', 'logan-2017'],
+		},
+		{
+			slug: 'paul-walker',
+			name: 'Paul Walker',
+			headline: 'Rostro central de Rapido y furioso, asociado para siempre al costado mas afectivo y callejero de esa franquicia.',
+			awards: [{ label: 'MTV Movie Award', category: 'Best On-Screen Duo', work: 'The Fast and the Furious', year: 2002 }],
+			knownFor: ['the-fast-and-the-furious-2001', 'fast-five-2011', 'furious-7-2015'],
+		},
+		{
+			slug: 'tommy-lee-jones',
+			name: 'Tommy Lee Jones',
+			headline: 'Actor de rostro durisimo y enorme oficio, muy eficaz para personajes de ley, poder o desgaste moral.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'The Fugitive', year: 1994 }],
+			knownFor: ['no-country-for-old-men-2007', 'captain-america-the-first-avenger-2011', 'batman-forever-1995'],
+		},
+		{
+			slug: 'vin-diesel',
+			name: 'Vin Diesel',
+			headline: 'Figura central del action franchise contemporaneo, muy ligada al costado muscular y familiar de Rapido y furioso.',
+			awards: [{ label: 'MTV Movie Award', category: 'Best On-Screen Duo', work: 'Fast & Furious 6', year: 2014 }],
+			knownFor: ['the-fast-and-the-furious-2001', 'fast-five-2011', 'f9-the-fast-saga-2021'],
+		},
+		{
+			slug: 'anthony-mackie',
+			name: 'Anthony Mackie',
+			headline: 'Actor muy instalado en el cine comercial reciente, capaz de mezclar carisma liviano y dramatismo sin volverse solemne.',
+			awards: [{ label: 'Black Reel Award', category: 'Mejor actor de reparto', work: 'The Hurt Locker', year: 2010 }],
+			knownFor: ['the-hurt-locker-2008', 'captain-america-brave-new-world-2025'],
+		},
+		{
+			slug: 'andy-serkis',
+			name: 'Andy Serkis',
+			headline: 'Pionero absoluto de la captura de movimiento y actor clave para entender el blockbuster digital del siglo XXI.',
+			awards: [{ label: 'Saturn Award', category: 'Mejor actor de reparto', work: 'The Lord of the Rings: The Return of the King', year: 2004 }],
+			knownFor: ['dawn-of-the-planet-of-the-apes-2014', 'war-for-the-planet-of-the-apes-2017'],
+		},
+		{
+			slug: 'michael-caine',
+			name: 'Michael Caine',
+			headline: 'Actor britanico gigantesco, de elegancia seca y trayectoria monumental entre clasicos, thrillers y blockbuster.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'The Cider House Rules', year: 2000 }],
+			knownFor: ['batman-begins-2005', 'the-prestige-2006'],
+		},
+		{
+			slug: 'michael-shannon',
+			name: 'Michael Shannon',
+			headline: 'Actor de intensidad seca y amenazante, muy valioso para personajes que parecen quebrarse por dentro.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor de reparto', work: 'Nocturnal Animals', year: 2017 }],
+			knownFor: ['the-shape-of-water-2017', 'nuremberg-2025'],
+		},
+		{
+			slug: 'jeremy-renner',
+			name: 'Jeremy Renner',
+			headline: 'Actor de energia sobria y fisica, muy fuerte cuando una pelicula necesita tension, oficio y dureza sin pose.',
+			awards: [{ label: 'Screen Actors Guild Award', category: 'Mejor elenco', work: 'American Hustle', year: 2014 }],
+			knownFor: ['the-hurt-locker-2008', 'mission-impossible-rogue-nation-2015'],
+		},
+		{
+			slug: 'alberto-ammann',
+			name: 'Alberto Ammann',
+			headline: 'Actor argentino-espanol muy valioso para thrillers y dramas de temperatura oscura, con fuerte circulacion iberoamericana.',
+			spotlight:
+				'Dentro del cine argentino reciente suma una mezcla interesante de prestigio, fisico de personaje y una carrera armada entre Buenos Aires y Espana.',
+			biography: [
+				'Alberto Ammann construyo una carrera muy particular porque nunca quedo encerrado en una sola industria ni en un unico tipo de personaje. Tiene una presencia dura, a veces opaca y a veces explosiva, que le sienta muy bien al thriller, al policial y a los dramas de clima espeso.',
+				'En el catalogo aparece asociado a Tesis sobre un homicidio y Betibu, dos titulos que lo conectan con un costado bien reconocible del cine rioplatense: intriga, zonas grises, personajes atravesados por secretos y una actuacion que trabaja mas desde la tension que desde el lucimiento.',
+			],
+			awards: [{ label: 'Goya', category: 'Mejor actor revelacion', work: 'Cell 211', year: 2010 }],
+			knownFor: ['tesis-sobre-un-homicidio-2013', 'betibu-2014'],
+		},
+		{
+			slug: 'luis-ziembrowski',
+			name: 'Luis Ziembrowski',
+			headline: 'Actor argentino muy respetado por su intensidad, su fisico expresivo y su facilidad para volver inquietante cualquier escena.',
+			spotlight:
+				'Para el cine argentino de genero y para varios dramas urbanos pesados, su presencia funciona como un acelerador inmediato de tension y extrañeza.',
+			biography: [
+				'Luis Ziembrowski es una de esas caras del cine argentino que el publico reconoce enseguida aunque no siempre se lo ubique como estrella. Tiene una energia muy particular, entre fragilidad, amenaza y desborde, que lo hizo valiosisimo para peliculas de clima raro, violencia contenida o personajes al borde.',
+				'Que el sitio lo conecte con Septimo y Cuando acecha la maldad tiene bastante sentido editorial: ahi aparece una parte importante de su valor, la de un actor capaz de meterse tanto en el thriller industrial como en el terror argentino contemporaneo sin perder identidad propia.',
+			],
+			awards: [{ label: 'Cóndor de Plata', category: 'Mejor actor de reparto', work: 'Los sonambulos', year: 2020 }],
+			knownFor: ['septimo-2013', 'cuando-acecha-la-maldad-2023'],
+		},
+	]),
+	...buildCatalogBackedProfiles(globalActressDefaults, [
+		{
+			slug: 'carrie-fisher',
+			name: 'Carrie Fisher',
+			headline: 'Icono pop absoluto cuya imagen como Leia ya forma parte de la historia grande del cine comercial.',
+			awards: [{ label: 'Disney Legends', category: 'Trayectoria', year: 2017 }],
+			knownFor: ['star-wars-episode-iv-a-new-hope-1977', 'star-wars-episode-v-the-empire-strikes-back-1980', 'star-wars-episode-vii-the-force-awakens-2015', 'star-wars-episode-viii-the-last-jedi-2017'],
+		},
+		{
+			slug: 'carrie-anne-moss',
+			name: 'Carrie-Anne Moss',
+			headline: 'Figura central del sci-fi de fines de los noventa y principios de los dos mil, siempre asociada a personajes duros y elegantes.',
+			awards: [{ label: 'Independent Spirit Award', category: 'Nominacion a mejor actriz de reparto', work: 'Memento', year: 2002 }],
+			knownFor: ['the-matrix-1999', 'matrix-reloaded-2003', 'matrix-revolutions-2003', 'memento-2000'],
+		},
+		{
+			slug: 'courteney-cox',
+			name: 'Courteney Cox',
+			headline: 'Actriz hiperreconocible entre Friends y Scream, con un pie fuerte en la comedia masiva y otro en el terror mainstream.',
+			awards: [{ label: 'Hollywood Walk of Fame', category: 'Trayectoria', year: 2023 }],
+			knownFor: ['scream-1996', 'scream-2-1997', 'scream-4-2011', 'scream-7-2026'],
+		},
+		{
+			slug: 'gal-gadot',
+			name: 'Gal Gadot',
+			headline: 'Figura muy visible del blockbuster reciente, ligada al imaginario superheroico y al star power global.',
+			awards: [{ label: 'Hollywood Walk of Fame', category: 'Trayectoria' }],
+			knownFor: ['wonder-woman-2017', 'wonder-woman-1984-2020', 'zack-snyder-s-justice-league-2021', 'snow-white-2025'],
+		},
+		{
+			slug: 'neve-campbell',
+			name: 'Neve Campbell',
+			headline: 'Rostro central del slasher noventoso y una pieza clave para la identidad completa de Scream en el catalogo.',
+			awards: [{ label: 'Saturn Award', category: 'Nominacion a mejor actriz', work: 'Scream', year: 1997 }],
+			knownFor: ['scream-1996', 'scream-2-1997', 'scream-4-2011', 'scream-7-2026'],
+		},
+		{
+			slug: 'gwyneth-paltrow',
+			name: 'Gwyneth Paltrow',
+			headline: 'Actriz muy asociada al star system de los noventa y dos mil, entre prestigio romanticizado y blockbuster puro.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz', work: 'Shakespeare in Love', year: 1999 }],
+			knownFor: ['se7en-1995', 'shakespeare-in-love-1998', 'iron-man-2-2010', 'iron-man-3-2013'],
+		},
+		{
+			slug: 'uma-thurman',
+			name: 'Uma Thurman',
+			headline: 'Figura muy potente del cine de autor popular, con una fotogenia y una fisicidad que dejaron huella duradera.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actriz en miniserie o telefilm', work: 'Hysterical Blindness', year: 2003 }],
+			knownFor: ['pulp-fiction-1994', 'kill-bill-vol-1-2003', 'kill-bill-vol-2-2004', 'pretty-lethal-2026'],
+		},
+		{
+			slug: 'bryce-dallas-howard',
+			name: 'Bryce Dallas Howard',
+			headline: 'Actriz muy reconocible del blockbuster reciente, particularmente ligada al renacimiento Jurassic World.',
+			awards: [{ label: 'Hasty Pudding Woman of the Year', category: 'Trayectoria', year: 2019 }],
+			knownFor: ['jurassic-world-2015', 'jurassic-world-fallen-kingdom-2018', 'jurassic-world-dominion-2022'],
+		},
+		{
+			slug: 'evangeline-lilly',
+			name: 'Evangeline Lilly',
+			headline: 'Actriz muy asociada al sci-fi y la aventura de gran estudio, con una presencia sobria que siempre ordena bien la escena.',
+			awards: [{ label: 'Screen Actors Guild Award', category: 'Mejor elenco en drama', work: 'Lost', year: 2006 }],
+			knownFor: ['ant-man-2015', 'ant-man-and-the-wasp-2018', 'ant-man-and-the-wasp-quantumania-2023'],
+		},
+		{
+			slug: 'linda-hamilton',
+			name: 'Linda Hamilton',
+			headline: 'Icono absoluto del cine de accion y sci-fi, central para la dimension humana y fisica de Terminator.',
+			awards: [{ label: 'Saturn Award', category: 'Mejor actriz', work: 'Terminator 2: Judgment Day', year: 1992 }],
+			knownFor: ['the-terminator-1984', 'terminator-2-judgment-day-1991', 'terminator-dark-fate-2019'],
+		},
+		{
+			slug: 'tessa-thompson',
+			name: 'Tessa Thompson',
+			headline: 'Actriz de enorme elegancia y una pantalla contemporanea muy fuerte, ideal para personajes filosos, seguros o contradictorios.',
+			awards: [{ label: 'Independent Spirit Award', category: 'Nominacion a mejor actriz', work: 'Dear White People', year: 2015 }],
+			knownFor: ['creed-2015', 'creed-ii-2018', 'creed-iii-2023'],
+		},
+		{
+			slug: 'jodie-comer',
+			name: 'Jodie Comer',
+			headline: 'Actriz britanica de enorme actualidad, muy valorada por su elasticidad y por la precision con la que cambia de registro.',
+			awards: [{ label: 'Primetime Emmy', category: 'Mejor actriz dramatica', work: 'Killing Eve', year: 2019 }],
+			knownFor: ['free-guy-2021', '28-years-later-2025'],
+		},
+		{
+			slug: 'penelope-cruz',
+			name: 'Penélope Cruz',
+			headline: 'Una de las grandes estrellas iberoamericanas del cine contemporaneo, con peso real tanto en Hollywood como en el cine de autor.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'Vicky Cristina Barcelona', year: 2009 }],
+			knownFor: ['pirates-of-the-caribbean-on-stranger-tides-2011', 'competencia-oficial-2021'],
+		},
+		{
+			slug: 'jennifer-garner',
+			name: 'Jennifer Garner',
+			headline: 'Figura muy conocida del mainstream de los 2000, asociada a accion, comic book movies y un carisma muy accesible.',
+			awards: [{ label: 'Hollywood Walk of Fame', category: 'Trayectoria' }],
+			knownFor: ['daredevil-2003', 'elektra-2005'],
+		},
+		{
+			slug: 'melissa-barrera',
+			name: 'Melissa Barrera',
+			headline: 'Actriz mexicana con mucho peso en el terror mainstream reciente y una presencia cada vez mas identificable para el publico joven.',
+			awards: [{ label: 'Imagen Award', category: 'Nominacion a mejor actriz', work: 'Vida', year: 2021 }],
+			knownFor: ['scream-2022', 'scream-vi-2023'],
+		},
+	]),
+};
+
 export const personProfiles: Record<string, PersonProfileRecord> = {
 	'brad-pitt': {
 		slug: 'brad-pitt',
@@ -4613,4 +5212,5 @@ export const personProfiles: Record<string, PersonProfileRecord> = {
 	},
 	...bulkTrendProfiles,
 	...bulkExpansionProfiles,
+	...bulkCompletionProfiles,
 };
