@@ -2295,18 +2295,21 @@ const bulkTrendProfiles = {
 		{
 			slug: 'tom-holland',
 			name: 'Tom Holland',
-			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Holland%20director.jpg?width=640',
-			headline: 'Tom Holland aparece hoy como uno de los rostros mas firmes del mapa global, entre grandes estudios, cine adulto y pulso de temporada.',
-			spotlight: 'Su nombre sigue funcionando como señal inmediata de visibilidad internacional, incluso cuando el proyecto cambia fuerte de tono o de escala.',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Holland%20during%20pro-am%20Wentworth%20golf%20club%202023-2.jpg?width=640',
+			headline:
+				'Tom Holland se sostiene como una cara central del blockbuster contemporaneo, con peso real en franquicias globales y buen margen para correrse a proyectos mas chicos.',
+			spotlight:
+				'Su perfil publico mezcla carisma de estrella, timing fisico y una asociacion inmediata con el Spider-Man mas reciente del cine.',
 			biography: [
-				'Tom Holland logro algo poco comun: ser identificable para publicos muy distintos sin resignar densidad ni flexibilidad como interprete.',
-				'En este catalogo queda ligado a Uncharted, Spider-Man: No Way Home y Spider-Man: Far From Home, una mezcla que ayuda a entender por que su figura todavia pesa tanto en la conversacion mundial.',
+				'Tom Holland salto al primer plano mundial a partir de Spider-Man, pero su presencia funciona tambien fuera del traje: tiene energia fisica, una veta juvenil muy marcada y oficio para empujar aventuras de estudio.',
+				'En Cine Posta queda asociado a Uncharted, Spider-Man: No Way Home, Spider-Man: Far From Home y Spider-Man: Homecoming, un bloque que explica rapido por que sigue tan pegado al imaginario pop reciente.',
 			],
 			awards: [{ label: 'BAFTA', category: 'Rising Star', work: 'Reconocimiento revelacion', year: 2017 }],
 			knownFor: ['uncharted-2022', 'spider-man-no-way-home-2021', 'spider-man-far-from-home-2019', 'spider-man-homecoming-2017'],
 			referenceUrls: [
-				'https://www.wikidata.org/wiki/Q1340923',
-				'https://www.imdb.com/name/nm0276169/',
+				'https://www.wikidata.org/wiki/Q2023710',
+				'https://www.imdb.com/name/nm4043618/',
 				'https://www.themoviedb.org/person/1136406-tom-holland',
 			],
 		},
