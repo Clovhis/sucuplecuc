@@ -71,6 +71,7 @@ The bundled script checks:
 
 - recent candidate detection from `git diff <base>...HEAD`
 - required fields and JSON shape
+- `releaseDate` presence for current-year / future titles so Astro 6 does not leave them hidden from home/search
 - `mainCast` sanity: enough credited principal performers for the title type, no duplicate names, and no obvious omission of award-winning acting recipients from the credited cast
 - people pool coverage in `src/data/people.json` for every credited director/main cast member
 - reconciliation against `docs/person-profile-catalog-reference.md` so any credited person with an exclusive profile keeps the canonical catalog name and can still resolve to `/personas/<slug>/`
@@ -119,6 +120,12 @@ The exclusive profile reconciliation check is mandatory too:
 - treat canonical-name drift as a hard stop when a credited director or cast member already has an exclusive profile in `docs/person-profile-catalog-reference.md`
 - rewrite the credited name in movie JSON to the canonical catalog name instead of leaving an alias or alternate spelling
 - the objective is to preserve the dynamic person-page link from the movie detail page
+
+The current-year `releaseDate` check is mandatory too:
+
+- treat a missing `releaseDate` on any current-year or future entry as a hard stop
+- fill it with an exact `YYYY-MM-DD` date from trustworthy AR-facing release evidence before republishing
+- do not trust `npm run build` as proof here: Astro 6 can still pass build while the movie stays filtered out of home/search
 
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:
 

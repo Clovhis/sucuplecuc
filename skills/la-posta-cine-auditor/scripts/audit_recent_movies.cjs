@@ -431,6 +431,15 @@ function addFinding(findings, severity, code, file, message) {
 	findings.push({ severity, code, file, message });
 }
 
+function isValidIsoDateString(value) {
+	if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+		return false;
+	}
+
+	const parsed = new Date(`${value}T00:00:00Z`);
+	return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+}
+
 function collectStringFields(value, currentPath, output) {
 	if (typeof value === 'string') {
 		output.push({ path: currentPath, value });
@@ -530,6 +539,21 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 
 	if (!Number.isInteger(movie.year) || movie.year < 1888 || movie.year > 2100) {
 		addFinding(findings, 'error', 'invalid-year', candidatePath, `Invalid year "${String(movie.year)}".`);
+	}
+
+	const normalizedReleaseDate = typeof movie.releaseDate === 'string' ? movie.releaseDate.trim() : '';
+	if (movie.releaseDate !== undefined && !isValidIsoDateString(normalizedReleaseDate)) {
+		addFinding(findings, 'error', 'invalid-release-date', candidatePath, 'releaseDate must use a real YYYY-MM-DD date.');
+	}
+
+	if (Number.isInteger(movie.year) && movie.year >= CURRENT_YEAR && !normalizedReleaseDate) {
+		addFinding(
+			findings,
+			'error',
+			'missing-release-date',
+			candidatePath,
+			`Current-year and future entries must include releaseDate. Astro 6 filters home/search visibility through getMovies(), so a ${CURRENT_YEAR}+ movie without releaseDate can build successfully but stay hidden from the homepage.`,
+		);
 	}
 
 	if (!Array.isArray(movie.mainCast) || movie.mainCast.length < 2) {

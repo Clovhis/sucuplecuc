@@ -153,6 +153,7 @@ Find trustworthy metadata:
 - `title`
 - `originalTitle`
 - `year`
+- `releaseDate` in exact `YYYY-MM-DD` format for any current-year/future title, or any add framed as `reciente` / `estreno`
 - `category`
 - `poster`
 - official YouTube trailer id in original language (store only `trailerYoutubeId`)
@@ -167,6 +168,14 @@ Find trustworthy metadata:
 - death year when the person is deceased, so UI can show `Fallecio en <anio>` instead of a fake living age
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
+
+Release date policy for Astro 6 (mandatory):
+
+- Any movie whose `year` is the current calendar year or in the future must include `releaseDate`.
+- Use an exact `YYYY-MM-DD` date verified from AR-facing evidence when possible: official distributor/platform page, exhibitor/cartelera source, `JustWatch AR`, or equivalent trustworthy source.
+- If the title is being loaded as `reciente`, `estreno`, `Cine`, or `isPremiere: true`, do not leave `releaseDate` blank.
+- Do not treat `npm run build` as enough validation here: Astro 6 can build successfully while `getMovies()` still hides a current-year movie that lacks `releaseDate`.
+- If the exact date cannot be verified, stop before commit instead of publishing a hidden entry.
 
 Main cast policy (mandatory):
 
@@ -320,6 +329,7 @@ Create one JSON file in `src/data/movies/<slug>.json` using project schema:
   "title": "Movie Title",
   "originalTitle": "Original title",
   "year": 2026,
+  "releaseDate": "2026-04-09",
   "audienceRating": "+13",
   "category": "Drama",
   "poster": "",
@@ -488,6 +498,7 @@ Run these checks in order:
 
 ```bash
 npm run enrich-people -- --movie <slug>
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json
 npm run build
 ```
 
@@ -556,6 +567,7 @@ Return all of the following:
 - [ ] No modified files outside allowlist
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
+- [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 6 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources
 - [ ] Original title and category from trustworthy sources
 - [ ] Director/main cast/production company from trustworthy sources
