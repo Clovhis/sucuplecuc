@@ -17,6 +17,8 @@ const movies = getMovies();
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 2);
+const movieCountLabel = new Intl.NumberFormat('es-AR').format(movies.length);
+const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.length);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y honestas de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
@@ -232,10 +234,31 @@ function formatUpcomingReleaseDate(value: string) {
 								<div class="catalog-shell__filters">
 									{
 										featuredPeople.length > 0 && (
-											<section class="home-people-showcase" aria-labelledby="home-people-showcase-title">
-												<h3 id="home-people-showcase-title" class="home-people-showcase__title">
-													Bio de actores y directores
-												</h3>
+											<section class="home-people-showcase" aria-label="Qué es Cine Posta">
+												<div class="home-people-showcase__header">
+													<div class="home-people-showcase__heading">
+														<p class="home-people-showcase__eyebrow">Qué es Cine Posta</p>
+														<p class="home-people-showcase__intro-copy">
+															Cine Posta junta reseñas cortas, un catálogo curado y fichas editoriales para
+															saltar de cada película a sus protagonistas y directores sin salir del sitio.
+														</p>
+													</div>
+													<div class="home-people-showcase__intro" aria-label="Cobertura actual del sitio">
+														<ul class="home-people-showcase__stats">
+															<li class="home-people-showcase__stat">
+																<strong>{movieCountLabel}+</strong>
+																<span>películas</span>
+															</li>
+															<li class="home-people-showcase__stat">
+																<strong>{personCountLabel}+</strong>
+																<span>perfiles</span>
+															</li>
+														</ul>
+														<a class="home-people-showcase__link" href="/sobre-cine-posta">
+															Ver más
+														</a>
+													</div>
+												</div>
 												<div class="home-people-showcase__grid" data-home-people-grid></div>
 											</section>
 										)

@@ -714,12 +714,13 @@ img {
 .catalog-shell__filter-controls {
 	display: grid;
 	gap: 1rem;
-	margin-top: auto;
 }
 
 .catalog-shell__upcoming {
 	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
 	gap: 0.85rem;
+	align-self: stretch;
 	padding: 1rem;
 	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
@@ -750,15 +751,21 @@ img {
 	list-style: none;
 	display: grid;
 	gap: 0.68rem;
+	align-content: stretch;
+	grid-auto-rows: minmax(0, 1fr);
+	min-height: 100%;
 }
 
 .upcoming-release-list__item {
 	min-width: 0;
+	display: grid;
 }
 
 .upcoming-release-list__card {
 	display: grid;
+	grid-template-rows: auto minmax(0, auto);
 	gap: 0.68rem;
+	min-height: 100%;
 	padding: 0.74rem;
 	border-radius: 16px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1082,11 +1089,137 @@ img {
 		0 16px 32px rgba(4, 8, 14, 0.18);
 }
 
-.home-people-showcase__title {
+.home-people-showcase__header {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 1rem 1.2rem;
+	align-items: center;
+	padding-bottom: 0.72rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.home-people-showcase__heading {
+	display: grid;
+	gap: 0.5rem;
+	align-content: start;
+}
+
+.home-people-showcase__eyebrow {
 	margin: 0;
-	font-size: 0.98rem;
-	line-height: 1.2;
+	display: inline-flex;
+	align-items: center;
+	justify-self: start;
+	padding: 0.28rem 0.52rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 176, 137, 0.16);
+	background: rgba(255, 176, 137, 0.08);
+	font-size: 0.66rem;
+	color: #ffcfbb;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.home-people-showcase__intro {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.45rem;
+	align-self: start;
+}
+
+.home-people-showcase__intro-copy {
+	margin: 0;
+	max-width: 56ch;
+	color: #d7e1ef;
+	font-size: 0.92rem;
+	line-height: 1.5;
+	text-align: left;
+	text-wrap: pretty;
+}
+
+.home-people-showcase__stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.36rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.home-people-showcase__stat {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.3rem;
+	padding: 0.42rem 0.6rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.035);
+}
+
+.home-people-showcase__stat strong {
+	color: #f8fbff;
+	font-size: 0.82rem;
+	line-height: 1.1;
+}
+
+.home-people-showcase__stat span {
+	color: #b8c5da;
+	font-size: 0.62rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.home-people-showcase__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2rem;
+	padding: 0.42rem 0.76rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.04);
 	color: #f4f7ff;
+	font-size: 0.66rem;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Mono', monospace;
+	transition:
+		transform 0.16s ease,
+		border-color 0.16s ease,
+		background-color 0.16s ease,
+		box-shadow 0.16s ease;
+}
+
+.home-people-showcase__link:hover,
+.home-people-showcase__link:focus-visible {
+	transform: translateY(-1px);
+	border-color: rgba(255, 176, 137, 0.34);
+	background: rgba(255, 176, 137, 0.1);
+	box-shadow: 0 12px 22px rgba(8, 12, 22, 0.18);
+}
+
+@media (max-width: 1180px) {
+	.home-people-showcase__header {
+		grid-template-columns: 1fr;
+		gap: 0.4rem;
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+
+	.home-people-showcase__eyebrow,
+	.home-people-showcase__intro-copy,
+	.home-people-showcase__intro {
+		display: none;
+	}
+
+	.home-people-showcase__heading {
+		gap: 0;
+	}
 }
 
 .home-people-showcase__grid {
