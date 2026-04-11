@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-04-11. Fuente: src/data/movies/*.json
 
-Total de peliculas: 684
+Total de peliculas: 686
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -10,6 +10,7 @@ Total de peliculas: 684
 | 2026 | 53 domingos | 53-domingos-2026 | Comedia | Netflix | +13 |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Stremio | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Cine | +16 |
+| 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Cine | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Stremio | +13 |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine | +16 |
@@ -22,6 +23,7 @@ Total de peliculas: 684
 | 2026 | Hoppers | hoppers-2026 | Animacion | Cine | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Cine | +16 |
+| 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Cine | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
