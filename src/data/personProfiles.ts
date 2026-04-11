@@ -5923,6 +5923,72 @@ const bulkRequestedProfiles = {
 			awards: [{ label: 'Critics Choice Super Award', category: 'Nominacion a mejor actor en pelicula de accion', work: 'Novocaine', year: 2025 }],
 			knownFor: ['companion-2025', 'novocaine-2025'],
 		},
+		{
+			slug: 'john-travolta',
+			name: 'John Travolta',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/John%20Travolta%2C%202014%20(cropped).jpg?width=640',
+			headline:
+				'Figura enorme del cine popular estadounidense, capaz de mezclar baile, carisma de estrella y una veta rara que lo mantuvo vigente durante decadas.',
+			birthPlace: 'Englewood, Nueva Jersey, Estados Unidos',
+			spotlight:
+				'Su carrera tuvo picos muy distintos, del estallido disco y la fiebre pop de los setenta al renacimiento noventoso con Tarantino y varios thrillers de estudio.',
+			biography: [
+				'John Travolta nacio el 18 de febrero de 1954 en Englewood y crecio en una familia muy ligada al espectaculo. Empezo en el teatro musical y salto rapido a la fama con Welcome Back, Kotter, Saturday Night Fever y Grease, tres trabajos que lo volvieron una de las caras mas reconocibles de fines de los setenta.',
+				'Despues de una etapa mas irregular, Pulp Fiction lo devolvio al centro de la conversacion critica y popular con un papel que reorganizo toda su imagen publica. Desde entonces siguio alternando accion, comedia, policial y thriller, siempre con ese magnetismo medio canchero que sigue haciendo reconocible a Travolta apenas entra en cuadro.',
+			],
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor', work: 'Pulp Fiction', year: 1995 }],
+			knownFor: ['pulp-fiction-1994', 'the-punisher-2004'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/John_Travolta',
+				'https://www.wikidata.org/wiki/Q80938',
+				'https://www.oscars.org/oscars/ceremonies/1995',
+			],
+		},
+		{
+			slug: 'jim-carrey',
+			name: 'Jim Carrey',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Jim%20Carrey%202020%20cropped.jpg?width=640',
+			headline:
+				'Comediante y actor de energia fisica arrolladora que paso del gesto desatado al drama sin perder una personalidad instantaneamente reconocible.',
+			birthPlace: 'Newmarket, Ontario, Canada',
+			spotlight:
+				'Convirtio su elasticidad corporal y su timing salvaje en una marca pop global, pero tambien demostro un costado dramatico mucho mas fino de lo que muchos le suponian.',
+			biography: [
+				'Jim Carrey nacio el 17 de enero de 1962 en Newmarket, Ontario, y se formo primero en el circuito de stand-up, donde pulio una combinacion rarissima de imitacion, velocidad y desborde fisico. Cuando entro a la tele y despues al cine, esa energia ya venia completamente aceitada.',
+				'Ace Ventura, The Mask y Dumb and Dumber lo convirtieron en un fenomeno de los noventa, pero The Truman Show, Man on the Moon y Eternal Sunshine of the Spotless Mind mostraron enseguida que podia trabajar registros mucho mas melancolicos y complejos. En el catalogo del sitio queda unido a Batman Forever y The Truman Show, un cruce muy bueno para ver sus dos caras mas famosas.',
+			],
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en comedia o musical', work: 'The Truman Show', year: 1999 }],
+			knownFor: ['batman-forever-1995', 'the-truman-show-1998'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Jim_Carrey',
+				'https://www.wikidata.org/wiki/Q40504',
+				'https://www.goldenglobes.com/person/jim-carrey',
+			],
+		},
+		{
+			slug: 'eddie-murphy',
+			name: 'Eddie Murphy',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Eddie%20Murphy%20by%20David%20Shankbone.jpg?width=640',
+			headline:
+				'Superestrella de la comedia y del doblaje mainstream, una presencia central para entender la cultura popular estadounidense desde los ochenta para aca.',
+			birthPlace: 'Brooklyn, Nueva York, Estados Unidos',
+			spotlight:
+				'Paso de revolucionar el humor televisivo a liderar franquicias de cine y ponerle voz a uno de los personajes animados mas queridos de este siglo.',
+			biography: [
+				'Eddie Murphy nacio el 3 de abril de 1961 en Brooklyn y exploto muy joven gracias a Saturday Night Live, donde su velocidad comica y su capacidad para aduenarse de cualquier sketch lo volvieron una figura inmediata. Ese impulso paso casi sin escalas al cine, donde armo una racha demoledora en los ochenta con 48 Hrs., Trading Places, Beverly Hills Cop y Coming to America.',
+				'Con el tiempo amplio su perfil entre comedia familiar, doblaje y proyectos mas dramaticos. El exito global de Shrek le dio una segunda vida para otra generacion, mientras que Dreamgirls le devolvio prestigio de premios. Dentro del sitio queda conectado a Axel F y Shrek, dos puntas muy claras de una carrera larguisima y todavia muy popular.',
+			],
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor de reparto', work: 'Dreamgirls', year: 2007 }],
+			knownFor: ['beverly-hills-cop-axel-f-2024', 'shrek-2001'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Eddie_Murphy',
+				'https://www.wikidata.org/wiki/Q43874',
+				'https://www.goldenglobes.com/person/eddie-murphy',
+			],
+		},
 	]),
 	...buildCatalogBackedProfiles(globalActressDefaults, [
 		{
@@ -5973,6 +6039,273 @@ const bulkRequestedProfiles = {
 			headline: 'Actriz enorme, capaz de llevar drama, comedia y terror con una precision emocional que casi nunca falla.',
 			awards: [{ label: 'Primetime Emmy', category: 'Mejor actriz en comedia', work: 'United States of Tara', year: 2009 }],
 			knownFor: ['nightmare-alley-2021', 'the-sixth-sense-1999'],
+		},
+		{
+			slug: 'keira-knightley',
+			name: 'Keira Knightley',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/KeiraKnightleyByAndreaRaffin2011%20(cropped).jpg?width=640',
+			headline:
+				'Actriz britanica que supo combinar cine de epoca, franquicia global y drama adulto con una elegancia muy poco aparatosa.',
+			birthPlace: 'Teddington, Londres, Inglaterra',
+			spotlight:
+				'Su filmografia se sostiene sobre un equilibrio raro entre star system, sensibilidad clasica y una presencia muy afinada para personajes romanticos o tensos.',
+			biography: [
+				'Keira Knightley nacio el 26 de marzo de 1985 en Teddington y empezo a trabajar de chica despues de criarse en una familia de actores y dramaturgos. El salto mas fuerte le llego muy temprano con Bend It Like Beckham y, enseguida, con Pirates of the Caribbean, saga que la termino de instalar como estrella global.',
+				'Lejos de quedarse en el blockbuster, Knightley encontro rapido una zona muy fuerte en los dramas de epoca y los personajes emocionalmente contenidos. Pride & Prejudice, Atonement, Never Let Me Go y The Imitation Game ayudaron a consolidar una carrera donde la delicadeza nunca le quita firmeza a lo que interpreta.',
+			],
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz', work: 'Pride & Prejudice', year: 2006 }],
+			knownFor: ['pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003', 'pirates-of-the-caribbean-dead-mans-chest-2006'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Keira_Knightley',
+				'https://www.wikidata.org/wiki/Q42581',
+				'https://www.oscars.org/oscars/ceremonies/2006',
+			],
+		},
+		{
+			slug: 'glenn-close',
+			name: 'Glenn Close',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Glenn%20Close%202012%201.jpg?width=640',
+			headline:
+				'Una de las grandes actrices estadounidenses de las ultimas decadas, dueña de una autoridad tremenda para drama, thriller y personajes muy filosos.',
+			birthPlace: 'Greenwich, Connecticut, Estados Unidos',
+			spotlight:
+				'Su potencia aparece tanto en villanas memorables como en figuras heridas o cansadas, siempre con una precision que vuelve enorme cualquier gesto.',
+			biography: [
+				'Glenn Close nacio el 19 de marzo de 1947 en Greenwich y llego al cine despues de una formacion muy fuerte en teatro. Esa base escenica se nota en la manera en que controla la voz, la quietud y el crescendo emocional, recursos que la ayudaron a convertirse en una presencia muy poderosa desde sus primeros papeles filmicos.',
+				'The World According to Garp, Fatal Attraction, Dangerous Liaisons, Albert Nobbs y The Wife muestran bien la amplitud de su carrera. Close puede trabajar desde la sofisticacion, la ferocidad o la fragilidad sin perder nunca peso escenico, algo que la mantuvo como referencia incluso cuando la industria fue cambiando de ritmo y de rostros.',
+			],
+			awards: [{ label: 'Golden Globe', category: 'Mejor actriz en drama', work: 'The Wife', year: 2019 }],
+			knownFor: ['back-in-action-2025', 'super-man-the-christopher-reeve-story-2024'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Glenn_Close',
+				'https://www.wikidata.org/wiki/Q372311',
+				'https://www.goldenglobes.com/person/glenn-close',
+			],
+		},
+	]),
+	...buildCatalogBackedProfiles(globalDirectorDefaults, [
+		{
+			slug: 'alfred-hitchcock',
+			name: 'Alfred Hitchcock',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Hitchcock%2C%20Alfred%2002.jpg?width=640',
+			headline:
+				'Maestro absoluto del suspenso cinematografico y una figura fundacional para entender como el cine puede manipular mirada, tiempo y ansiedad.',
+			birthPlace: 'Leytonstone, Essex, Inglaterra',
+			spotlight:
+				'Convirtio el suspenso en una forma de puesta en escena mas que en un simple genero, y esa influencia sigue viva en casi todo thriller moderno.',
+			biography: [
+				'Alfred Hitchcock nacio el 13 de agosto de 1899 en Leytonstone y empezo a trabajar en la industria britanica del cine mudo antes de afirmarse como director en los anos treinta. Ya desde esa etapa quedo claro que pensaba las peliculas desde el punto de vista, la informacion y la manera de administrar el miedo cuadro a cuadro.',
+				'Cuando se traslado a Hollywood llevo esa precision a otro nivel con Rebecca, Shadow of a Doubt, Rear Window, Vertigo, North by Northwest y Psycho. No necesitaba explosiones ni grandilocuencia: le alcanzaba con un encuadre, una escalera o una puerta para instalar paranoia. Por eso sigue siendo una referencia obligatoria mas de medio siglo despues de su ultima gran etapa.',
+			],
+			awards: [{ label: 'Oscar', category: 'Premio Irving G. Thalberg Memorial', work: 'Trayectoria', year: 1968 }],
+			knownFor: ['rebecca-1940', 'psycho-1960'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Alfred_Hitchcock',
+				'https://www.wikidata.org/wiki/Q7374',
+				'https://www.oscars.org/governors-awards',
+			],
+		},
+		{
+			slug: 'clint-eastwood',
+			name: 'Clint Eastwood',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Clint%20Eastwood%20at%202010%20New%20York%20Film%20Festival.jpg?width=640',
+			headline:
+				'Icono total del cine estadounidense, primero como rostro del western y del policial y despues como director de una sobriedad demoledora.',
+			birthPlace: 'San Francisco, California, Estados Unidos',
+			spotlight:
+				'Pocas trayectorias resumen tan bien medio siglo de Hollywood: estrella masculina clasica, autor tardio y director de dramas secos con enorme precision moral.',
+			biography: [
+				'Clint Eastwood nacio el 31 de mayo de 1930 en San Francisco y se hizo famoso como actor en la television y, sobre todo, en los westerns de Sergio Leone y en la saga de Dirty Harry. Esa primera etapa lo convirtio en un simbolo del heroe duro, laconicamente masculino y ligado a una idea muy fisica de la pantalla.',
+				'Con el tiempo se afirmo tambien como director de peso enorme. Unforgiven, The Bridges of Madison County, Mystic River, Million Dollar Baby, Letters from Iwo Jima y Gran Torino muestran un cineasta cada vez mas interesado por la culpa, el paso del tiempo y las zonas grises de la violencia. Incluso cuando aparece adelante de camara, su figura ya dialoga con toda esa historia.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'Unforgiven', year: 1993 }],
+			knownFor: ['unforgiven-1992', 'million-dollar-baby-2004'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Clint_Eastwood',
+				'https://www.wikidata.org/wiki/Q43203',
+				'https://www.oscars.org/oscars/ceremonies/1993',
+				'https://www.oscars.org/oscars/ceremonies/2005',
+			],
+		},
+		{
+			slug: 'taika-waititi',
+			name: 'Taika Waititi',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Taika%20Waititi%20photo%20by%20pouria%20afkhami%20(cropped).jpg?width=640',
+			headline:
+				'Director neozelandes que mezclo humor absurdo, sensibilidad pop y melancolia para convertirse en una firma muy reconocible del cine reciente.',
+			birthPlace: 'Wellington, Nueva Zelanda',
+			spotlight:
+				'Su cine puede ser jugueton y ridiculo, pero casi siempre esconde una veta emocional muy clara que evita que todo quede solo en ocurrencia.',
+			biography: [
+				'Taika Waititi nacio el 16 de agosto de 1975 en Wellington y se movio primero entre el cortometraje, la comedia y la escena artistica neozelandesa antes de armar una identidad cinematografica muy propia. Eagle vs Shark, Boy y What We Do in the Shadows mostraban ya una mezcla muy rara de ironia, ternura y absurdo.',
+				'El salto global llego con Hunt for the Wilderpeople, Thor: Ragnarok y Jojo Rabbit, pelicula con la que gano el Oscar por guion adaptado. Desde entonces se volvio una figura central para un tipo de blockbuster mas descontracturado y colorido, sin dejar del todo la sensibilidad rara y afectiva que ya estaba en sus trabajos mas chicos.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor guion adaptado', work: 'Jojo Rabbit', year: 2020 }],
+			knownFor: ['thor-ragnarok-2017', 'thor-love-and-thunder-2022', 'free-guy-2021'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Taika_Waititi',
+				'https://www.wikidata.org/wiki/Q2388576',
+				'https://www.oscars.org/oscars/ceremonies/2020',
+			],
+		},
+		{
+			slug: 'kenneth-branagh',
+			name: 'Kenneth Branagh',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Kenneth%20Branagh%20at%20diff%202015.jpg?width=640',
+			headline:
+				'Director y actor britanico que llevo Shakespeare al cine popular y despues encontro un lugar propio entre la actuacion prestigiosa y el gran estudio.',
+			birthPlace: 'Belfast, Irlanda del Norte',
+			spotlight:
+				'Su carrera va del teatro clasico al blockbuster con una naturalidad rara, siempre apoyada en oficio, voz y una enorme confianza en el texto.',
+			biography: [
+				'Kenneth Branagh nacio el 10 de diciembre de 1960 en Belfast y se formo muy fuerte en teatro antes de irrumpir con sus adaptaciones cinematograficas de Shakespeare. Henry V lo instalo muy rapido como una de las grandes promesas britanicas porque mostraba ambicion, energia y una relacion muy viva con el material clasico.',
+				'Despues amplio mucho el rango entre actuacion, direccion y guion. Paso por Hamlet, Much Ado About Nothing, Thor, Dunkirk y Belfast, pelicula con la que finalmente gano el Oscar por guion original. Ese recorrido explica bien por que sigue siendo una figura tan util para unir prestigio actoral y cine industrial.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor guion original', work: 'Belfast', year: 2022 }],
+			knownFor: ['belfast-2021', 'thor-2011', 'dunkirk-2017'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Kenneth_Branagh',
+				'https://www.wikidata.org/wiki/Q55294',
+				'https://www.oscars.org/oscars/ceremonies/2022',
+			],
+		},
+		{
+			slug: 'brad-bird',
+			name: 'Brad Bird',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Brad%20bird%20cropped%202009.jpg?width=640',
+			headline:
+				'Director clave para la animacion moderna, capaz de combinar velocidad, claridad narrativa y una fe rara en la inteligencia del publico.',
+			birthPlace: 'Kalispell, Montana, Estados Unidos',
+			spotlight:
+				'Su cine se reconoce por el movimiento, la construccion de mundo y una confianza muy fuerte en el poder del relato clasico bien contado.',
+			biography: [
+				'Brad Bird nacio el 24 de septiembre de 1957 en Kalispell y empezo a llamar la atencion desde muy joven como animador, primero en cortos caseros y despues dentro de Disney. Durante anos trabajo en television y animacion serial, pero su gran salto como director llego cuando llevo The Iron Giant a un estatus de clasico moderno.',
+				'Con The Incredibles y Ratatouille termino de consolidarse como una de las firmas mas fuertes de Pixar, capaz de mezclar humor, aventura, familia y una puesta en escena realmente cinematografica. Mas tarde incluso paso con comodidad al live action con Mission: Impossible - Ghost Protocol, otra prueba de que su sentido del movimiento no dependia solo de la animacion.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor pelicula animada', work: 'Ratatouille', year: 2008 }],
+			knownFor: ['the-incredibles-2004', 'ratatouille-2007', 'mission-impossible-ghost-protocol-2011'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Brad_Bird',
+				'https://www.wikidata.org/wiki/Q310960',
+				'https://www.oscars.org/oscars/ceremonies/2008',
+			],
+		},
+		{
+			slug: 'robert-zemeckis',
+			name: 'Robert Zemeckis',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Zemeckis%20%22The%20Walk%22%20at%20Opening%20Ceremony%20of%20the%2028th%20Tokyo%20International%20Film%20Festival%20(21835891403)%20(cropped).jpg?width=640',
+			headline:
+				'Director de enorme inventiva tecnica y narrativa, responsable de varios clasicos populares que unieron aventura, humor y emocion sin perder escala.',
+			birthPlace: 'Chicago, Illinois, Estados Unidos',
+			spotlight:
+				'Su filmografia cruza fantasia, comedia, sci-fi y melodrama, siempre con una fascinacion visible por la tecnologia puesta al servicio del entretenimiento.',
+			biography: [
+				'Robert Zemeckis nacio el 14 de mayo de 1952 en Chicago y se formo en la USC dentro de una generacion obsesionada con llevar nuevas herramientas tecnicas al cine comercial. Muy pronto encontro una alianza fuerte con Bob Gale y Steven Spielberg que lo ayudo a desarrollar una voz propia entre la aventura clasica y la experimentacion visual.',
+				'Back to the Future, Who Framed Roger Rabbit, Forrest Gump, Contact, Cast Away y The Walk muestran bien esa combinacion de asombro tecnologico y relato directo. Zemeckis nunca se quedo quieto: cada tanto persigue un nuevo recurso formal, pero casi siempre lo hace sin abandonar el instinto de gran showman popular.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'Forrest Gump', year: 1995 }],
+			knownFor: ['back-to-the-future-1985', 'back-to-the-future-part-ii-1989', 'back-to-the-future-part-iii-1990', 'forrest-gump-1994', 'here-2024'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Robert_Zemeckis',
+				'https://www.wikidata.org/wiki/Q187364',
+				'https://www.oscars.org/oscars/ceremonies/1995',
+			],
+		},
+		{
+			slug: 'sam-raimi',
+			name: 'Sam Raimi',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Raimi%20(53896379405)%20(cropped).jpg?width=640',
+			headline:
+				'Director crucial para entender el cruce entre terror jugueton, humor fisico y blockbuster superheroico de enorme impacto popular.',
+			birthPlace: 'Royal Oak, Michigan, Estados Unidos',
+			spotlight:
+				'Su sello mezcla camara desatada, gusto por el grotesco y una energia de comic que le dio un tono muy propio incluso a sus peliculas mas industriales.',
+			biography: [
+				'Sam Raimi nacio el 23 de octubre de 1959 en Royal Oak y empezo a filmar de adolescente junto a Bruce Campbell y Rob Tapert, el nucleo creativo con el que termino armando The Evil Dead. Esa primera etapa ya traia todo lo que despues lo iba a distinguir: humor negro, terror fisico, movimientos de camara inventivos y una energia casi de dibujo animado.',
+				'Con Darkman, A Simple Plan, Spider-Man, Spider-Man 2 y Doctor Strange in the Multiverse of Madness mostro que podia llevar ese estilo a escalas muy distintas sin perder identidad. Raimi es uno de esos directores que hicieron escuela porque su puesta siempre parece estar a punto de salirse de control, pero en realidad esta pensada con una precision muy particular.',
+			],
+			awards: [{ label: 'Saturn Award', category: 'Mejor director', work: 'Spider-Man 2', year: 2005 }],
+			knownFor: ['spider-man-2-2004', 'spider-man-3-2007', 'doctor-strange-in-the-multiverse-of-madness-2022', 'send-help-2026'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Sam_Raimi',
+				'https://www.wikidata.org/wiki/Q275402',
+				'https://www.saturnawards.org/The-Saturn-Awards-Past-Winners.php',
+			],
+		},
+		{
+			slug: 'ron-howard',
+			name: 'Ron Howard',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Ron%20Howard%202011%20Shankbone%203.JPG?width=640',
+			headline:
+				'Director de enorme oficio industrial que paso de nino actor a narrador clasico del Hollywood mas visible y prestigioso.',
+			birthPlace: 'Duncan, Oklahoma, Estados Unidos',
+			spotlight:
+				'Tiene una cualidad muy clara para ordenar relatos complejos y volverlos accesibles sin quitarles peso dramatico ni escala popular.',
+			biography: [
+				'Ron Howard nacio el 1 de marzo de 1954 en Duncan y se crio practicamente dentro de los sets, primero como actor infantil y despues como una cara muy popular de la television estadounidense. Esa experiencia temprana le dio una comprension muy concreta del trabajo de produccion y del funcionamiento de los relatos masivos.',
+				'Cuando paso a la direccion encontro rapido un perfil muy solido para el cine de estudio con Splash, Apollo 13, A Beautiful Mind, Frost/Nixon, Rush y Solo. Howard no suele imponer una firma ruidosa, pero si una claridad narrativa muy eficaz que explica por que sigue siendo un nombre tan confiable para proyectos grandes y biografias filmadas.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'A Beautiful Mind', year: 2002 }],
+			knownFor: ['a-beautiful-mind-2001', 'solo-a-star-wars-story-2018', 'jim-henson-idea-man-2024'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Ron_Howard',
+				'https://www.wikidata.org/wiki/Q103646',
+				'https://www.oscars.org/oscars/ceremonies/2002',
+			],
+		},
+		{
+			slug: 'robert-redford',
+			name: 'Robert Redford',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Tell%20Them%20Willie%20Boy%20Is%20Here%20%E2%80%93%20Robert%20Redford%20photo.jpg?width=640',
+			headline:
+				'Figura legendaria del cine estadounidense que supo sostener carrera de estrella, direccion prestigiosa y un compromiso fuerte con el cine independiente.',
+			birthPlace: 'Santa Monica, California, Estados Unidos',
+			spotlight:
+				'Su nombre remite enseguida a un tipo de cine adulto y elegante, con actores centrales, oficio clasico y una idea muy clara de prestigio americano.',
+			biography: [
+				'Robert Redford nacio el 18 de agosto de 1936 en Santa Monica y se afirmo primero como actor durante los sesenta y setenta hasta convertirse en una de las caras mas fuertes de Hollywood. Butch Cassidy and the Sundance Kid, The Sting, All the President\'s Men y Out of Africa ayudaron a fijar esa imagen de estrella serena, atletica y muy fotogenica.',
+				'Tambien encontro peso grande como director con Ordinary People, Quiz Show y The Horse Whisperer, y fuera de los sets impulso de manera decisiva el ecosistema del cine independiente a traves del Sundance Institute. Esa doble condicion de estrella clasica y promotor cultural lo vuelve una figura imprescindible para cualquier catalogo serio.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'Ordinary People', year: 1981 }],
+			knownFor: ['the-sting-1973', 'ordinary-people-1980', 'out-of-africa-1985'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Robert_Redford',
+				'https://www.wikidata.org/wiki/Q59215',
+				'https://www.oscars.org/oscars/ceremonies/1981',
+			],
+		},
+		{
+			slug: 'billy-wilder',
+			name: 'Billy Wilder',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Gloria%20Swanson%20%26%20Billy%20Wilder%20-%20ca.%201950.JPG?width=640',
+			headline:
+				'Uno de los grandes guionistas y directores del siglo XX, maestro para convertir cinismo, humor y melancolia en cine perfecto.',
+			birthPlace: 'Sucha, Galitzia, Imperio austrohungaro',
+			spotlight:
+				'Su cine podia ser feroz con las instituciones y a la vez profundamente humano con personajes quebrados, ambiciosos o directamente desesperados.',
+			biography: [
+				'Billy Wilder nacio el 22 de junio de 1906 en Sucha y arranco como periodista antes de pasar al guion en Berlin y luego emigrar a Hollywood escapando del nazismo. Esa biografia marcada por el exilio y la observacion periodistica se siente en la lucidez con la que mira el deseo, el poder, la moral y la hipocresia social.',
+				'Double Indemnity, Sunset Boulevard, Ace in the Hole, The Apartment y Some Like It Hot bastan para explicar por que su nombre sigue siendo central en cualquier historia del cine. Wilder escribia y dirigia con una precision extraordinaria: podia ser gracioso, cruel, romantico o devastador sin perder claridad ni filo.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'The Apartment', year: 1961 }],
+			knownFor: ['the-lost-weekend-1945', 'the-apartment-1960'],
+			referenceUrls: [
+				'https://es.wikipedia.org/wiki/Billy_Wilder',
+				'https://www.wikidata.org/wiki/Q51547',
+				'https://www.oscars.org/oscars/ceremonies/1961',
+			],
 		},
 	]),
 };

@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-11. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 299
+Total de personas con ficha exclusiva: 314
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -15,6 +15,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 2 | 3 |
 | Alberto Ammann | `alberto-ammann` | /personas/alberto-ammann/ | Actor | 2 | 3 |
 | Alejandra Flechner | `alejandra-flechner` | /personas/alejandra-flechner/ | Actriz | 1 | 3 |
+| Alfred Hitchcock | `alfred-hitchcock` | /personas/alfred-hitchcock/ | Director | 2 | 3 |
 | America Ferrera | `america-ferrera` | /personas/america-ferrera/ | Actriz | 2 | 3 |
 | Amy Adams | `amy-adams` | /personas/amy-adams/ | Actriz | 3 | 3 |
 | Ana de Armas | `ana-de-armas` | /personas/ana-de-armas/ | Actriz | 3 | 3 |
@@ -35,7 +36,9 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ben Affleck | `ben-affleck` | /personas/ben-affleck/ | Actor | 4 | 3 |
 | Ben Kingsley | `ben-kingsley` | /personas/ben-kingsley/ | Actor | 2 | 3 |
 | Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 4 | 3 |
+| Billy Wilder | `billy-wilder` | /personas/billy-wilder/ | Director | 2 | 3 |
 | Bong Joon-ho | `bong-joon-ho` | /personas/bong-joon-ho/ | Director | 2 | 2 |
+| Brad Bird | `brad-bird` | /personas/brad-bird/ | Director | 3 | 3 |
 | Brad Dourif | `brad-dourif` | /personas/brad-dourif/ | Actor | 4 | 3 |
 | Brad Pitt | `brad-pitt` | /personas/brad-pitt/ | Actor / Productor | 4 | 4 |
 | Bradley Cooper | `bradley-cooper` | /personas/bradley-cooper/ | Actor | 3 | 3 |
@@ -69,6 +72,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Christopher Reeve | `christopher-reeve` | /personas/christopher-reeve/ | Actor | 4 | 3 |
 | Christopher Walken | `christopher-walken` | /personas/christopher-walken/ | Actor | 2 | 3 |
 | Cillian Murphy | `cillian-murphy` | /personas/cillian-murphy/ | Actor | 2 | 3 |
+| Clint Eastwood | `clint-eastwood` | /personas/clint-eastwood/ | Director | 2 | 4 |
 | Colin Farrell | `colin-farrell` | /personas/colin-farrell/ | Actor | 2 | 3 |
 | Colin Firth | `colin-firth` | /personas/colin-firth/ | Actor | 1 | 3 |
 | Colman Domingo | `colman-domingo` | /personas/colman-domingo/ | Actor | 1 | 3 |
@@ -99,6 +103,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Dwayne Johnson | `dwayne-johnson` | /personas/dwayne-johnson/ | Actor | 4 | 3 |
 | Ebon Moss-Bachrach | `ebon-moss-bachrach` | /personas/ebon-moss-bachrach/ | Actor | 1 | 3 |
 | Ed Harris | `ed-harris` | /personas/ed-harris/ | Actor | 4 | 3 |
+| Eddie Murphy | `eddie-murphy` | /personas/eddie-murphy/ | Actor | 2 | 3 |
 | Eddie Redmayne | `eddie-redmayne` | /personas/eddie-redmayne/ | Actor | 3 | 3 |
 | Eduardo Blanco | `eduardo-blanco` | /personas/eduardo-blanco/ | Actor | 1 | 3 |
 | Edward Berger | `edward-berger` | /personas/edward-berger/ | Director | 2 | 3 |
@@ -123,6 +128,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | George Miller | `george-miller` | /personas/george-miller/ | Director | 4 | 3 |
 | Gerard Butler | `gerard-butler` | /personas/gerard-butler/ | Actor | 4 | 3 |
 | Glen Powell | `glen-powell` | /personas/glen-powell/ | Actor | 3 | 3 |
+| Glenn Close | `glenn-close` | /personas/glenn-close/ | Actriz | 2 | 3 |
 | Graciela Borges | `graciela-borges` | /personas/graciela-borges/ | Actriz | 2 | 3 |
 | Greta Gerwig | `greta-gerwig` | /personas/greta-gerwig/ | Director | 1 | 3 |
 | Guillermo del Toro | `guillermo-del-toro` | /personas/guillermo-del-toro/ | Director / Guionista / Productor | 4 | 3 |
@@ -163,11 +169,13 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Jesse Plemons | `jesse-plemons` | /personas/jesse-plemons/ | Actor | 1 | 3 |
 | Jessica Chastain | `jessica-chastain` | /personas/jessica-chastain/ | Actriz | 3 | 3 |
 | Jessie Buckley | `jessie-buckley` | /personas/jessie-buckley/ | Actriz | 2 | 3 |
+| Jim Carrey | `jim-carrey` | /personas/jim-carrey/ | Actor | 2 | 3 |
 | Joaquín Furriel | `joaquin-furriel` | /personas/joaquin-furriel/ | Actor | 1 | 2 |
 | Joaquin Phoenix | `joaquin-phoenix` | /personas/joaquin-phoenix/ | Actor | 4 | 3 |
 | Jodie Comer | `jodie-comer` | /personas/jodie-comer/ | Actriz | 2 | 3 |
 | Jodie Foster | `jodie-foster` | /personas/jodie-foster/ | Actriz / Directora | 2 | 3 |
 | John David Washington | `john-david-washington` | /personas/john-david-washington/ | Actor | 1 | 3 |
+| John Travolta | `john-travolta` | /personas/john-travolta/ | Actor | 2 | 3 |
 | Johnny Depp | `johnny-depp` | /personas/johnny-depp/ | Actor | 4 | 3 |
 | Jon M. Chu | `jon-m-chu` | /personas/jon-m-chu/ | Director | 2 | 3 |
 | Jonathan Bailey | `jonathan-bailey` | /personas/jonathan-bailey/ | Actor | 2 | 3 |
@@ -183,7 +191,9 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ke Huy Quan | `ke-huy-quan` | /personas/ke-huy-quan/ | Actor | 3 | 3 |
 | Keanu Reeves | `keanu-reeves` | /personas/keanu-reeves/ | Actor | 4 | 3 |
 | Keegan-Michael Key | `keegan-michael-key` | /personas/keegan-michael-key/ | Actor | 2 | 3 |
+| Keira Knightley | `keira-knightley` | /personas/keira-knightley/ | Actriz | 2 | 3 |
 | Keke Palmer | `keke-palmer` | /personas/keke-palmer/ | Actriz | 1 | 3 |
+| Kenneth Branagh | `kenneth-branagh` | /personas/kenneth-branagh/ | Director | 3 | 3 |
 | Kieran Culkin | `kieran-culkin` | /personas/kieran-culkin/ | Actor | 1 | 3 |
 | Kirsten Dunst | `kirsten-dunst` | /personas/kirsten-dunst/ | Actriz | 4 | 3 |
 | Kristen Wiig | `kristen-wiig` | /personas/kristen-wiig/ | Actriz | 3 | 3 |
@@ -262,6 +272,9 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Robert Eggers | `robert-eggers` | /personas/robert-eggers/ | Director | 1 | 3 |
 | Robert Englund | `robert-englund` | /personas/robert-englund/ | Actor | 4 | 3 |
 | Robert Pattinson | `robert-pattinson` | /personas/robert-pattinson/ | Actor | 3 | 3 |
+| Robert Redford | `robert-redford` | /personas/robert-redford/ | Director | 3 | 3 |
+| Robert Zemeckis | `robert-zemeckis` | /personas/robert-zemeckis/ | Director | 5 | 3 |
+| Ron Howard | `ron-howard` | /personas/ron-howard/ | Director | 3 | 3 |
 | Rosamund Pike | `rosamund-pike` | /personas/rosamund-pike/ | Actriz | 1 | 3 |
 | Rupert Grint | `rupert-grint` | /personas/rupert-grint/ | Actor | 4 | 3 |
 | Russell Crowe | `russell-crowe` | /personas/russell-crowe/ | Actor | 4 | 3 |
@@ -269,6 +282,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 3 | 3 |
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 4 | 3 |
 | Sam Mendes | `sam-mendes` | /personas/sam-mendes/ | Director | 3 | 3 |
+| Sam Raimi | `sam-raimi` | /personas/sam-raimi/ | Director | 4 | 3 |
 | Sam Worthington | `sam-worthington` | /personas/sam-worthington/ | Actor | 4 | 3 |
 | Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 1 | 3 |
 | Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 4 | 3 |
@@ -283,6 +297,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Steven Yeun | `steven-yeun` | /personas/steven-yeun/ | Actor | 1 | 3 |
 | Sydney Sweeney | `sydney-sweeney` | /personas/sydney-sweeney/ | Actriz | 4 | 3 |
 | Sylvester Stallone | `sylvester-stallone` | /personas/sylvester-stallone/ | Actor | 4 | 3 |
+| Taika Waititi | `taika-waititi` | /personas/taika-waititi/ | Director | 3 | 3 |
 | Tessa Thompson | `tessa-thompson` | /personas/tessa-thompson/ | Actriz | 3 | 3 |
 | Tim Burton | `tim-burton` | /personas/tim-burton/ | Director / Productor / Guionista | 3 | 4 |
 | Timothée Chalamet | `timothee-chalamet` | /personas/timothee-chalamet/ | Actor | 3 | 3 |
