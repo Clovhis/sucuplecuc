@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-11. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 296
+Total de personas con ficha exclusiva: 299
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -83,6 +83,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Daniel Kaluuya | `daniel-kaluuya` | /personas/daniel-kaluuya/ | Actor | 1 | 3 |
 | Daniel Radcliffe | `daniel-radcliffe` | /personas/daniel-radcliffe/ | Actor | 4 | 3 |
 | Danny Boyle | `danny-boyle` | /personas/danny-boyle/ | Director | 2 | 3 |
+| Danny DeVito | `danny-devito` | /personas/danny-devito/ | Actor / Director / Productor | 1 | 4 |
 | Darío Grandinetti | `dario-grandinetti` | /personas/dario-grandinetti/ | Actor | 1 | 3 |
 | David Arquette | `david-arquette` | /personas/david-arquette/ | Actor | 3 | 3 |
 | David Fincher | `david-fincher` | /personas/david-fincher/ | Director | 4 | 3 |
@@ -218,6 +219,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Michael J. Fox | `michael-j-fox` | /personas/michael-j-fox/ | Actor | 3 | 3 |
 | Michael Keaton | `michael-keaton` | /personas/michael-keaton/ | Actor | 4 | 3 |
 | Michael Shannon | `michael-shannon` | /personas/michael-shannon/ | Actor | 2 | 3 |
+| Michelle Pfeiffer | `michelle-pfeiffer` | /personas/michelle-pfeiffer/ | Actriz / Productora | 1 | 4 |
 | Michelle Williams | `michelle-williams` | /personas/michelle-williams/ | Actriz | 3 | 3 |
 | Mikey Madison | `mikey-madison` | /personas/mikey-madison/ | Actriz | 1 | 3 |
 | Miles Teller | `miles-teller` | /personas/miles-teller/ | Actor | 4 | 3 |
@@ -282,6 +284,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Sydney Sweeney | `sydney-sweeney` | /personas/sydney-sweeney/ | Actriz | 4 | 3 |
 | Sylvester Stallone | `sylvester-stallone` | /personas/sylvester-stallone/ | Actor | 4 | 3 |
 | Tessa Thompson | `tessa-thompson` | /personas/tessa-thompson/ | Actriz | 3 | 3 |
+| Tim Burton | `tim-burton` | /personas/tim-burton/ | Director / Productor / Guionista | 3 | 4 |
 | Timothée Chalamet | `timothee-chalamet` | /personas/timothee-chalamet/ | Actor | 3 | 3 |
 | Tom Cruise | `tom-cruise` | /personas/tom-cruise/ | Actor | 3 | 3 |
 | Tom Hanks | `tom-hanks` | /personas/tom-hanks/ | Actor / Productor | 4 | 3 |

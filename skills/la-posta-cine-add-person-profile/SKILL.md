@@ -1,11 +1,11 @@
 ---
 name: la-posta-cine-add-person-profile
-description: Add or update an exclusive actor/actress profile page for Cine Posta from a plain-language request (for example "hacé la ficha de Al Pacino"). Use when the user wants a dedicated bio page reachable from search and movie cast portraits, aligned with Astro 6 and the existing Cine Posta actor-profile implementation.
+description: Add or update an exclusive actor, actress, or director profile page for Cine Posta from a plain-language request (for example "hacé la ficha de Al Pacino"). Use when the user wants a dedicated bio page reachable from search and movie cast portraits, aligned with Astro 6 and the existing Cine Posta person-profile implementation, with biographies based on real sourced facts instead of generic templates.
 ---
 
 # la-posta-cine-add-person-profile
 
-Use this workflow when the request is to create or expand a ficha exclusiva de actor o actriz in this repo.
+Use this workflow when the request is to create or expand a ficha exclusiva de actor, actriz, o director in this repo.
 
 This skill must always finish with the bundled auditor. Manual eyeballing is not enough.
 
@@ -129,11 +129,46 @@ If the name is ambiguous, ask one concise clarification question.
 2. Check whether the person already exists in `src/data/people.json`
 3. Check whether the person already has a profile in `src/data/personProfiles.ts`
 4. Inspect current connected movies in `src/data/movies/**` through existing helpers, not by manually rebuilding the graph
-5. Collect trustworthy biography and awards sources
-6. Write editorial profile copy in Spanish matching the site tone
+5. Collect trustworthy biography and awards sources, starting from real biographical references and not from catalog-derived summaries
+6. Write editorial profile copy in Spanish matching the site tone and grounded in sourced facts
 7. Update `docs/person-profile-catalog-reference.md` to reflect the new total and the affected rows
 8. Run the person-profile auditor on the candidate slug or batch
 9. Keep the profile reusable so future profiles follow the same schema
+
+## Biography sourcing standards
+
+The biography is the main editorial asset. It must be built from real biographical information, not from sentence templates.
+
+Required approach:
+
+1. Start with Wikipedia as the baseline biography source:
+   - Prefer the Spanish Wikipedia lead/extract when it exists and is solid
+   - Fall back to English Wikipedia only when Spanish coverage is weak or missing
+   - Use Wikidata to confirm structured facts such as birth date, birth place, occupations, and aliases when needed
+2. Verify awards from primary or clearly authoritative sources when the biography mentions them:
+   - official award sites
+   - Academy, BAFTA, Emmy, Golden Globe, Cannes, Venice, Berlinale, etc.
+   - Britannica or official biographies when needed as secondary support
+3. Paraphrase in original Spanish copy for the site; do not paste encyclopedia text verbatim
+4. If the available material is too thin, keep researching before writing; do not fill the gap with generic editorial copy
+
+Every biography should try to cover, when the sources support it:
+
+- where and when the person was born
+- how they entered acting or directing, including training, early work, or first professional steps
+- the breakthrough role, early recognition, or career turning point
+- the main line of their trajectory with concrete titles or collaborations
+- notable awards or distinctions only when verified
+
+Explicitly forbidden biography patterns:
+
+- reusable paragraph skeletons with only names/titles swapped
+- filler like `Su carrera quedó muy ligada a la actuación`
+- filler like `Con el tiempo, X fue ganando lugar dentro de la industria`
+- filler like `Dentro del catálogo del sitio su recorrido se puede seguir...`
+- any paragraph whose main job is to sound complete while avoiding real facts
+
+If you cannot source at least two concrete biographical facts beyond occupation and current fame, stop the write-up, gather better sources, and only then continue.
 
 ## Profile content requirements
 
@@ -146,15 +181,17 @@ Every new profile should include:
 - `roles`
 - `birthPlace` when available
 - `spotlight`
-- `biography` with 2-4 paragraphs
+- `biography` with 2-4 paragraphs built from concrete sourced facts, not templates
 - `stats` only when there is a genuinely useful, factual milestone to show
 - `awards` with only verified highlights
 - `knownFor` pointing to existing movie slugs in the catalog
-- `referenceUrls`
+- `referenceUrls` including the biography source(s) actually used for the write-up
 
 Do not invent filmography outside the repo. The profile page should show movies connected through the existing catalog.
 
 Avoid generic editorial filler in `stats`. Labels or values in the line of `Momento`, `Marca`, `Pulso` or similar chamuyo should not be added just to occupy space. If there is nothing concrete to surface, omit `stats`.
+
+Do not use `knownFor`, connected catalog titles, or existing site copy as a substitute for real biographical research. Those fields support the ficha, but they do not justify the biography on their own.
 
 ## Auditor coverage
 
@@ -170,6 +207,7 @@ The bundled auditor checks, at minimum:
 - `knownFor` is actually connected to that person in the current catalog
 - the connected filmography is not empty
 - biography, stats, awards, and references meet minimum completeness
+- biography copy is not a repeated template with swapped names or titles
 - generic filler stats are not required and should be omitted when they do not add concrete value
 - built output exists in `dist/personas/<slug>/index.html` when `--require-dist` is used
 
@@ -227,6 +265,7 @@ Before finishing:
 5. Check that homepage search still builds and that movie detail pages still compile
 6. Confirm `docs/person-profile-catalog-reference.md` was updated when the profile set changed
 7. Review diff to confirm only intended files changed
+8. In batch loads, spot-check multiple biographies together to confirm they do not share the same paragraph skeleton
 
 ## Output to user
 
@@ -237,5 +276,6 @@ Report:
 - whether movie portrait linking was added
 - what image strategy was used (`local`, `remote resized`, or `optimized local`)
 - whether the person catalog was updated
+- what source strategy was used for the biography (`Wikipedia ES`, `Wikipedia EN + Wikidata`, `Wikipedia + awards source`, etc.)
 - auditor result
 - build result

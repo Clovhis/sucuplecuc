@@ -6994,6 +6994,101 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 			'https://www.oscars.org/oscars/ceremonies/2023',
 		],
 	},
+	'danny-devito': {
+		slug: 'danny-devito',
+		name: 'Danny DeVito',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Danny%20DeVito%20cropped%20and%20edited%20for%20brightness.jpg?width=640',
+		headline:
+			'Actor, comediante, director y productor con una energía inconfundible, capaz de pasar del caos televisivo al cine de estudio sin perder filo ni timing.',
+		roles: ['Actor', 'Director', 'Productor'],
+		birthPlace: 'Neptune Township, Nueva Jersey, Estados Unidos',
+		spotlight:
+			'Pocos intérpretes volvieron tan productiva una presencia física tan singular: DeVito hizo de eso una marca de humor, ternura y mala leche en proporciones muy suyas.',
+		biography: [
+			'Daniel Michael DeVito Jr. nació el 17 de noviembre de 1944 en Neptune Township, Nueva Jersey. Antes de dedicarse por completo a la actuación trabajó como esteticista en el salón de su hermana, y esa búsqueda de formación en maquillaje lo terminó llevando a la American Academy of Dramatic Arts de Nueva York, donde se graduó en 1966.',
+			'Su primer gran salto llegó con One Flew Over the Cuckoo’s Nest, pero la consagración popular vino poco después gracias a Louie De Palma en Taxi. Ese personaje lo instaló como una figura central de la comedia televisiva y le abrió una carrera larguísima en cine y TV, con títulos como Romancing the Stone, Twins, Batman Returns, Get Shorty y L.A. Confidential.',
+			'Con el tiempo también consolidó peso detrás de cámara. Dirigió películas como Throw Momma from the Train, The War of the Roses y Matilda, y como productor estuvo ligado a proyectos muy fuertes de Jersey Films. En pantalla, mientras tanto, siguió explotando una mezcla rara de ferocidad cómica y humanidad que lo volvió irrepetible.',
+		],
+		stats: [
+			{ label: 'Primetime Emmy', value: '1981' },
+			{ label: 'Golden Globe', value: '1980' },
+			{ label: 'Debut como director', value: '1987' },
+		],
+		awards: [
+			{ label: 'Primetime Emmy', category: 'Mejor actor de reparto en comedia', work: 'Taxi', year: 1981 },
+			{ label: 'Golden Globe', category: 'Mejor actor de reparto en televisión', work: 'Taxi', year: 1980 },
+		],
+		knownFor: ['batman-returns-1992'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Danny_DeVito',
+			'https://www.wikidata.org/wiki/Q26806',
+			'https://www.televisionacademy.com/features/emmy-magazine/articles/archive-danny-devito',
+			'https://goldenglobes.com/tv-show/taxi/',
+		],
+	},
+	'michelle-pfeiffer': {
+		slug: 'michelle-pfeiffer',
+		name: 'Michelle Pfeiffer',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Michelle%20Pfeiffer%20Ant-Man%20%26%20The%20Wasp%20premiere%20(cropped).jpg?width=640',
+		headline:
+			'Actriz de enorme elegancia y carácter, una estrella que supo combinar glamour clásico con una intensidad dramática siempre filosa.',
+		roles: ['Actriz', 'Productora'],
+		birthPlace: 'Santa Ana, California, Estados Unidos',
+		spotlight:
+			'Su carrera se armó sobre un equilibrio poco común: magnetismo de gran estrella, riesgo para elegir personajes y una voz propia incluso dentro del Hollywood más industrial.',
+		biography: [
+			'Michelle Marie Pfeiffer nació el 29 de abril de 1958 en Santa Ana, California, y creció en Orange County. Después de terminar la secundaria trabajó como cajera, pasó por Golden West College y durante un tiempo pensó en formarse como taquígrafa judicial, antes de volcarse de lleno a la actuación tras participar en certámenes de belleza a fines de los 70.',
+			'Empezó con televisión y pequeños papeles, pero el gran cambio llegó cuando Brian De Palma la eligió para Scarface. A partir de ahí construyó una de las filmografías más fuertes de los 80 y 90 con títulos como Dangerous Liaisons, The Fabulous Baker Boys, Batman Returns, The Age of Innocence y What Lies Beneath.',
+			'Pfeiffer nunca dependió sólo del star system. Su peso como intérprete siempre estuvo en cómo mezcla sofisticación, vulnerabilidad y peligro. Esa combinación la convirtió en una figura clave para entender el Hollywood adulto de esas décadas y explica por qué Catwoman sigue siendo uno de sus papeles más recordados.',
+		],
+		stats: [
+			{ label: 'Golden Globe', value: '1990' },
+			{ label: 'BAFTA', value: '1990' },
+			{ label: 'Nominaciones al Oscar', value: '3' },
+		],
+		awards: [
+			{ label: 'Golden Globe', category: 'Mejor actriz en drama', work: 'The Fabulous Baker Boys', year: 1990 },
+			{ label: 'BAFTA', category: 'Mejor actriz de reparto', work: 'Dangerous Liaisons', year: 1990 },
+		],
+		knownFor: ['batman-returns-1992'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Michelle_Pfeiffer',
+			'https://www.wikidata.org/wiki/Q159778',
+			'https://goldenglobes.com/articles/golden-globe-moment-michelle-pfeiffer-and-tom-cruise-1990/',
+			'https://www.bafta.org/awards/film/?award-year=1990',
+		],
+	},
+	'tim-burton': {
+		slug: 'tim-burton',
+		name: 'Tim Burton',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tim%20Burton-63605.jpg?width=640',
+		headline:
+			'Director, productor y guionista que convirtió la sensibilidad gótica, la animación y el cuento raro en una marca autoral reconocible incluso dentro del blockbuster.',
+		roles: ['Director', 'Productor', 'Guionista'],
+		birthPlace: 'Burbank, California, Estados Unidos',
+		spotlight:
+			'Su cine hizo convivir suburbio, monstruos, humor negro y melancolía sin perder nunca vocación popular; por eso su firma visual sigue siendo inmediata.',
+		biography: [
+			'Timothy Walter Burton nació el 25 de agosto de 1958 en Burbank, California. De chico dibujaba y filmaba cortos caseros, y después estudió animación en el California Institute of the Arts, el semillero creado por Disney para formar nuevos talentos visuales.',
+			'Su entrada profesional fue justamente en Disney, donde trabajó como animador y desarrolló cortos como Vincent y Frankenweenie. Esos trabajos, más su imaginario ya muy definido, lo empujaron hacia su debut en largometraje con Pee-wee’s Big Adventure, la película que abrió la puerta a una carrera cada vez más singular dentro de Hollywood.',
+			'Burton terminó armando una filmografía marcada por outsideres, criaturas tristes y mundos deformados pero muy precisos. Beetlejuice, Batman, Batman Returns, Edward Scissorhands, Ed Wood, Sleepy Hollow y Big Fish muestran cómo logró llevar una sensibilidad casi artesanal y de freak suburbano a una escala masiva sin volverla genérica.',
+		],
+		stats: [
+			{ label: 'Debut en largometraje', value: '1985' },
+			{ label: 'Golden Lion', value: 'Venecia 2007' },
+			{ label: 'CalArts', value: 'Promoción 1979' },
+		],
+		awards: [{ label: 'Golden Lion', category: 'Premio a la trayectoria', work: 'Festival de Venecia', year: 2007 }],
+		knownFor: ['batman-1989', 'batman-returns-1992', 'beetlejuice-beetlejuice-2024'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Tim_Burton',
+			'https://www.wikidata.org/wiki/Q56008',
+			'https://www.timburton.com/about',
+			'https://www.labiennale.org/en/history-venice-film-festival',
+		],
+	},
 	...bulkTrendProfiles,
 	...bulkExpansionProfiles,
 	...bulkCompletionProfiles,
