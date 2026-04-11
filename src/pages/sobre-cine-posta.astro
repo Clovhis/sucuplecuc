@@ -4,7 +4,7 @@ import { CONTACT_EMAIL, SITE_DESCRIPTION, SITE_NAME, createAboutPageStructuredDa
 
 const pageTitle = `Sobre ${SITE_NAME} | Qué es y cómo funciona`;
 const pageDescription =
-	'Sobre Cine Posta, también conocido como Cineposta: qué es el sitio, cómo reseña películas y cómo contactar por prensa o colaboraciones.';
+	'Sobre Cine Posta, también conocido como Cineposta: qué es el sitio, cómo reseña películas, cómo arma fichas de actores y directores y cómo contactar por prensa o colaboraciones.';
 const structuredData = createAboutPageStructuredData(pageTitle, pageDescription);
 ---
 
@@ -36,6 +36,11 @@ const structuredData = createAboutPageStructuredData(pageTitle, pageDescription)
 					La propuesta es simple: textos cortos, honestos, sin humo crítico ni vueltas raras. La idea es bajar la
 					decisión a tierra y decir si una peli rinde o no rinde.
 				</p>
+				<p>
+					Además de las reseñas, {SITE_NAME} también publica fichas exclusivas de actores y directores para que el
+					sitio sirva como entrada rápida a biografías, premios, filmografías conectadas y datos básicos de cada
+					nombre.
+				</p>
 			</article>
 
 			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
@@ -45,8 +50,12 @@ const structuredData = createAboutPageStructuredData(pageTitle, pageDescription)
 					veredicto editorial claro.
 				</p>
 				<p>
-					El catálogo se actualiza de forma manual para mantener criterio, tono consistente y foco en cine que valga
-					la pena comentar.
+					En los perfiles de personas, el criterio es parecido: bio breve, galardones, edad u origen cuando aplica, y
+					enlaces internos hacia las películas donde esa figura aparece dentro del catálogo.
+				</p>
+				<p>
+					El catálogo se actualiza de forma manual para mantener criterio, tono consistente y foco tanto en cine que
+					valga la pena comentar como en nombres que ayuden a navegar mejor el universo del sitio.
 				</p>
 			</article>
 

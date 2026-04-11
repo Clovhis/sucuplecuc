@@ -21,8 +21,8 @@ const knownForEntries = profile.knownFor
 	.map((slug) => filmography.find((entry) => entry.movieSlug === slug))
 	.filter((entry): entry is (typeof filmography)[number] => Boolean(entry));
 const showcaseEntries = (knownForEntries.length > 0 ? knownForEntries : filmography).slice(0, 4);
-const pageTitle = `${profile.name} | Cine Posta`;
-const pageDescription = `${profile.name}: ${profile.headline} Bio, galardones y peliculas relacionadas dentro de Cine Posta.`;
+const pageTitle = `Biografia de ${profile.name}: peliculas y premios | Cine Posta`;
+const pageDescription = `${profile.name}: biografia, edad, premios y peliculas relacionadas dentro de Cine Posta.`;
 const profileImage =
 	profile.profileImage ?? profile.image ?? profile.remoteImageUrl ?? '/posters/poster-no-disponible.svg';
 const structuredData = createPersonStructuredData(profile, filmography, pageTitle, pageDescription);
@@ -147,7 +147,7 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 		<section class="person-page__content">
 			<article class="person-page__panel fade-up" style="--item-delay: 80ms;">
 				<div class="person-page__section-head">
-					<h2>Bio</h2>
+					<h2>Biografia de {profile.name}</h2>
 				</div>
 				<div class="person-page__bio-copy">
 					{profile.biography.map((paragraph) => (

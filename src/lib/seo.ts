@@ -333,7 +333,7 @@ export function createPersonStructuredData(
 			'@id': `${personUrl}#person`,
 			url: personUrl,
 			name: person.name,
-			description: person.headline,
+			description: pageDescription,
 			image: imageUrl,
 			jobTitle: person.roles.join(', '),
 			nationality: person.nationalityPrimary,
