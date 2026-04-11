@@ -1,6 +1,6 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado manualmente el 2026-04-10. Fuente: `src/data/personProfiles.ts`
+Generado manualmente el 2026-04-11. Fuente: `src/data/personProfiles.ts`
 
 Total de personas con ficha exclusiva: 296
 
