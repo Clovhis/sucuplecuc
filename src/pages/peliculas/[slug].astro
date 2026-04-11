@@ -114,6 +114,15 @@ const awardCategories = groupedAwards.flatMap((group) =>
 );
 const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
+const personProfileReturnPath = encodeURIComponent(Astro.url.pathname);
+
+function getPersonProfileHref(profilePath?: string): string | undefined {
+	if (!profilePath) {
+		return undefined;
+	}
+
+	return `${profilePath}?backTo=${personProfileReturnPath}`;
+}
 
 function getAudienceRatingLabel(audienceRating: string): string {
 	const normalized = String(audienceRating ?? '')
@@ -366,7 +375,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																person.profilePath ? (
 																	<a
 																		class="movie-detail__person-avatar movie-detail__person-avatar--link"
-																		href={person.profilePath}
+																		href={getPersonProfileHref(person.profilePath)}
 																		aria-label={`Ver perfil de ${person.creditedName}`}
 																	>
 																		{person.image || person.remoteImageUrl ? (
@@ -400,7 +409,10 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																<p class="movie-detail__person-name">
 																	{
 																		person.profilePath ? (
-																			<a class="movie-detail__person-name-link" href={person.profilePath}>
+																			<a
+																				class="movie-detail__person-name-link"
+																				href={getPersonProfileHref(person.profilePath)}
+																			>
 																				{person.creditedName}
 																			</a>
 																		) : (
@@ -455,7 +467,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																person.profilePath ? (
 																	<a
 																		class="movie-detail__person-avatar movie-detail__person-avatar--link"
-																		href={person.profilePath}
+																		href={getPersonProfileHref(person.profilePath)}
 																		aria-label={`Ver perfil de ${person.creditedName}`}
 																	>
 																		{person.image || person.remoteImageUrl ? (
@@ -488,7 +500,10 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																<p class="movie-detail__person-name">
 																	{
 																		person.profilePath ? (
-																			<a class="movie-detail__person-name-link" href={person.profilePath}>
+																			<a
+																				class="movie-detail__person-name-link"
+																				href={getPersonProfileHref(person.profilePath)}
+																			>
 																				{person.creditedName}
 																			</a>
 																		) : (
