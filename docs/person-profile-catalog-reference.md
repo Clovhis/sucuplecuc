@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-11. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 314
+Total de personas con ficha exclusiva: 320
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -115,6 +115,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Érica Rivas | `erica-rivas` | /personas/erica-rivas/ | Actriz | 2 | 3 |
 | Evangeline Lilly | `evangeline-lilly` | /personas/evangeline-lilly/ | Actriz | 3 | 3 |
 | Ewan McGregor | `ewan-mcgregor` | /personas/ewan-mcgregor/ | Actor | 3 | 3 |
+| Fernán Mirás | `fernan-miras` | /personas/fernan-miras/ | Actor / Director / Guionista | 2 | 2 |
 | Fernanda Torres | `fernanda-torres` | /personas/fernanda-torres/ | Actriz | 1 | 3 |
 | Florence Pugh | `florence-pugh` | /personas/florence-pugh/ | Actriz | 2 | 3 |
 | Francis Ford Coppola | `francis-ford-coppola` | /personas/francis-ford-coppola/ | Director / Guionista / Productor | 4 | 3 |
@@ -129,6 +130,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Gerard Butler | `gerard-butler` | /personas/gerard-butler/ | Actor | 4 | 3 |
 | Glen Powell | `glen-powell` | /personas/glen-powell/ | Actor | 3 | 3 |
 | Glenn Close | `glenn-close` | /personas/glenn-close/ | Actriz | 2 | 3 |
+| Gore Verbinski | `gore-verbinski` | /personas/gore-verbinski/ | Director / Productor / Guionista | 4 | 2 |
 | Graciela Borges | `graciela-borges` | /personas/graciela-borges/ | Actriz | 2 | 3 |
 | Greta Gerwig | `greta-gerwig` | /personas/greta-gerwig/ | Director | 1 | 3 |
 | Guillermo del Toro | `guillermo-del-toro` | /personas/guillermo-del-toro/ | Director / Guionista / Productor | 4 | 3 |
@@ -179,6 +181,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Johnny Depp | `johnny-depp` | /personas/johnny-depp/ | Actor | 4 | 3 |
 | Jon M. Chu | `jon-m-chu` | /personas/jon-m-chu/ | Director | 2 | 3 |
 | Jonathan Bailey | `jonathan-bailey` | /personas/jonathan-bailey/ | Actor | 2 | 3 |
+| Jorge Marrale | `jorge-marrale` | /personas/jorge-marrale/ | Actor | 1 | 2 |
 | Joseph Kosinski | `joseph-kosinski` | /personas/joseph-kosinski/ | Director | 2 | 3 |
 | Josh Brolin | `josh-brolin` | /personas/josh-brolin/ | Actor | 4 | 3 |
 | Josh O'Connor | `josh-o-connor` | /personas/josh-o-connor/ | Actor | 1 | 2 |
@@ -235,6 +238,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Miles Teller | `miles-teller` | /personas/miles-teller/ | Actor | 4 | 3 |
 | Morgan Freeman | `morgan-freeman` | /personas/morgan-freeman/ | Actor | 4 | 3 |
 | Nahuel Pérez Biscayart | `nahuel-perez-biscayart` | /personas/nahuel-perez-biscayart/ | Actor | 1 | 3 |
+| Natalia Oreiro | `natalia-oreiro` | /personas/natalia-oreiro/ | Actriz | 1 | 2 |
 | Natalie Portman | `natalie-portman` | /personas/natalie-portman/ | Actriz / Productora | 4 | 3 |
 | Neve Campbell | `neve-campbell` | /personas/neve-campbell/ | Actriz | 4 | 3 |
 | Nicholas Hoult | `nicholas-hoult` | /personas/nicholas-hoult/ | Actor | 3 | 3 |
@@ -260,6 +264,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Quentin Tarantino | `quentin-tarantino` | /personas/quentin-tarantino/ | Director / Guionista / Productor | 4 | 3 |
 | Rachel McAdams | `rachel-mcadams` | /personas/rachel-mcadams/ | Actriz | 3 | 3 |
 | Rachel Zegler | `rachel-zegler` | /personas/rachel-zegler/ | Actriz | 2 | 3 |
+| Rafael Ferro | `rafael-ferro` | /personas/rafael-ferro/ | Actor | 1 | 2 |
 | Ralph Fiennes | `ralph-fiennes` | /personas/ralph-fiennes/ | Actor | 3 | 3 |
 | Rami Malek | `rami-malek` | /personas/rami-malek/ | Actor | 3 | 3 |
 | Rebecca Ferguson | `rebecca-ferguson` | /personas/rebecca-ferguson/ | Actriz | 4 | 3 |
@@ -282,6 +287,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 3 | 3 |
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 4 | 3 |
 | Sam Mendes | `sam-mendes` | /personas/sam-mendes/ | Director | 3 | 3 |
+| Sam Rockwell | `sam-rockwell` | /personas/sam-rockwell/ | Actor | 1 | 2 |
 | Sam Raimi | `sam-raimi` | /personas/sam-raimi/ | Director | 4 | 3 |
 | Sam Worthington | `sam-worthington` | /personas/sam-worthington/ | Actor | 4 | 3 |
 | Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 1 | 3 |

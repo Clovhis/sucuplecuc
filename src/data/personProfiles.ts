@@ -5524,6 +5524,143 @@ const bulkExpansionProfiles = {
 			knownFor: ['corazon-de-leon-2013'],
 		},
 	]),
+	'fernan-miras': {
+		slug: 'fernan-miras',
+		name: 'Fernán Mirás',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fern%C3%A1n%20Mir%C3%A1s%20(cropped).jpg?width=640',
+		headline:
+			'Actor, director y guionista argentino que pasó de figura muy popular de los 90 a un recorrido cada vez más completo detrás y delante de cámara.',
+		roles: ['Actor', 'Director', 'Guionista'],
+		birthPlace: 'Buenos Aires, Argentina',
+		spotlight:
+			'Tango feroz lo volvió masivo, pero su carrera siguió creciendo en televisión, teatro y cine hasta sumar una etapa propia como director y coguionista.',
+		biography: [
+			'Fernán Gonzalo Mirás nació en Buenos Aires el 17 de julio de 1969. Según Wikipedia, debutó en teatro en 1987 con Cuba y su pequeño Teddy, de Reynaldo Povod, y poco después hizo su primer trabajo cinematográfico en La amiga, la película de Jeanine Meerapfel estrenada en 1988.',
+			'El gran salto llegó en 1993 con Tango feroz: la leyenda de Tanguito, donde interpretó al músico Tanguito y quedó instalado como una de las caras fuertes de esa etapa del cine argentino. Después sostuvo mucha presencia en televisión con títulos como La banda del Golden Rocket, Chiquititas, Verano del 98, Vulnerables, Culpables, Rebelde Way, Para vestir santos y Tiempos compulsivos.',
+			'Wikipedia también marca que, además de seguir actuando en cine y series, abrió una etapa como realizador con El peso de la ley, continuó como director y coguionista en Casi muerta y volvió a ese rol en La casaca de Dios. En el recorrido local eso lo vuelve una figura especialmente interesante: alguien que cruzó teatro, tele, cine industrial y dirección sin quedar atado a una sola versión de sí mismo.',
+		],
+		stats: [],
+		awards: [
+			{ label: 'Premio Cóndor de Plata', category: 'Nominacion por actuacion', work: 'Tango feroz: la leyenda de Tanguito', year: 1994 },
+		],
+		knownFor: ['la-casaca-de-dios-2026', 'tango-feroz-la-leyenda-de-tanguito-1993'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Fern%C3%A1n_Mir%C3%A1s',
+			'https://it.wikipedia.org/wiki/Tango_feroz_-_La_leyenda_de_Tanguito',
+		],
+	},
+	'jorge-marrale': {
+		slug: 'jorge-marrale',
+		name: 'Jorge Marrale',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/JMarrale.JPG?width=640',
+		headline:
+			'Actor argentino de larguísima trayectoria, muy asociado a villanos, figuras severas y personajes de enorme autoridad escénica.',
+		roles: ['Actor'],
+		birthPlace: 'Barracas, Buenos Aires, Argentina',
+		spotlight:
+			'Su formación en el Conservatorio y su paso por la Comedia Nacional del Cervantes ayudan a explicar la solidez con la que se movió entre teatro, cine y televisión durante décadas.',
+		biography: [
+			'Jorge Luis Marrale nació en Buenos Aires el 30 de junio de 1947. Wikipedia precisa que nació en Barracas, se crió en Lanús, cursó una secundaria industrial y llegó a empezar Ingeniería antes de decidirse por la actuación después de ver a Vittorio Gassman en El hombre de la flor en la boca.',
+			'Dejó la facultad, entró al Conservatorio de Arte Dramático y egresó con un promedio que le permitió integrarse a la Comedia Nacional del Teatro Nacional Cervantes. En sus primeros años también trabajó en Segba y durante once años en Gas del Estado, hasta que entrados los 80 la continuidad actoral empezó a afirmarse y los 90 terminaron siendo uno de los períodos más fuertes de su carrera.',
+			'Desde entonces acumuló una trayectoria enorme en televisión, teatro y cine, con un perfil muy reconocible para roles intensos o directamente villanescos. La misma Wikipedia lo registra además como presidente de SAGAI desde 2018 y como una voz activa en debates públicos sobre teatro y cultura, algo que termina de ubicarlo como una figura muy fuerte del oficio en Argentina.',
+		],
+		stats: [],
+		awards: [{ label: 'Premio Cóndor de Plata', category: 'Mejor actor', work: 'Maracaibo', year: 2018 }],
+		knownFor: ['la-casaca-de-dios-2026'],
+		referenceUrls: ['https://es.wikipedia.org/wiki/Jorge_Marrale', 'https://en.wikipedia.org/wiki/Jorge_Marrale'],
+	},
+	'natalia-oreiro': {
+		slug: 'natalia-oreiro',
+		name: 'Natalia Oreiro',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Natalia%20Oreiro%20at%202017%20MIFF%20(cropped).jpg?width=640',
+		headline: 'Actriz y cantante uruguaya que construyó una carrera rioplatense enorme entre telenovelas, pop y cine.',
+		roles: ['Actriz'],
+		birthPlace: 'Montevideo, Uruguay',
+		spotlight:
+			'Se instaló en Argentina en 1994, explotó a escala internacional con Muñeca brava y después sostuvo una presencia fuerte también en el cine, sin dejar la música.',
+		biography: [
+			'Natalia Marisa Oreiro Iglesias nació en Montevideo el 19 de mayo de 1977. Wikipedia señala que empezó a trabajar en publicidades durante la preadolescencia y que a los 15 años ganó en Uruguay y luego en Argentina un concurso para ser Paquita de Xuxa, experiencia que terminó financiando su mudanza a Buenos Aires en 1994.',
+			'Ya instalada en Argentina, encadenó títulos muy visibles como 90 60 90 modelos, Ricos y famosos y, sobre todo, Muñeca brava, el éxito que la internacionalizó y la dejó asociada a la llamada Oreiromanía. La misma página repasa que después siguió con Kachorra, Sos mi vida y Solamente vos, al mismo tiempo que desarrollaba una carrera musical solista con cuatro discos de estudio y más de siete millones de discos vendidos en el mundo.',
+			'En cine, Wikipedia destaca películas como Un argentino en New York, Música en espera, Mi primera boda, Infancia clandestina, Wakolda y Gilda, no me arrepiento de este amor. Justamente por Gilda ganó el Cóndor de Plata y el Premio Sur a mejor actriz, un punto alto dentro de una trayectoria muy marcada por el ida y vuelta entre Uruguay, Argentina y un público popular gigantesco en toda la región.',
+		],
+		stats: [],
+		awards: [{ label: 'Premio Cóndor de Plata', category: 'Mejor actriz', work: 'Gilda, no me arrepiento de este amor', year: 2017 }],
+		knownFor: ['la-casaca-de-dios-2026'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Natalia_Oreiro',
+			'https://es.wikipedia.org/wiki/Gilda,_no_me_arrepiento_de_este_amor',
+		],
+	},
+	'rafael-ferro': {
+		slug: 'rafael-ferro',
+		name: 'Rafael Ferro',
+		profileImage: 'https://media.themoviedb.org/t/p/w500/rBPfuNG5p0mnPWMl0WgWbuxnW0p.jpg',
+		headline:
+			'Actor argentino de cine, teatro y televisión, muy reconocido por su intensidad y por una galería amplia de villanos televisivos.',
+		roles: ['Actor'],
+		birthPlace: 'Buenos Aires, Argentina',
+		spotlight:
+			'Su carrera mezcla tiras masivas, teatro y películas de perfil autoral, siempre con una presencia áspera y muy fácil de recordar.',
+		biography: [
+			'José Rafael Ferro nació en Buenos Aires el 6 de diciembre de 1965. Wikipedia indica que creció en el barrio de Palermo y que su carrera quedó repartida entre cine, teatro y televisión, con una visibilidad muy fuerte en la pantalla chica desde comienzos de los 2000.',
+			'La propia entrada lo presenta como un actor especialmente ligado a telenovelas y series como Verano del 98, Resistiré, Lalola, Para vestir santos, Guapas, Un año para recordar y Las Estrellas, donde en muchos casos interpretó villanos. Esa asociación con personajes duros o incómodos terminó siendo una de sus marcas más reconocibles ante el público local.',
+			'En paralelo también sostuvo una filmografía variada que va de Bolivia y La antena a Medianeras, El robo del siglo y La casaca de Dios. Wikipedia además registra una nominación a los Premios Sur por La vida después, señal de un recorrido que no quedó encerrado en la tele sino que también tuvo peso en el cine argentino contemporáneo.',
+		],
+		stats: [],
+		awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actor de reparto', work: 'La vida después', year: 2015 }],
+		knownFor: ['la-casaca-de-dios-2026'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Rafael_Ferro',
+			'https://es.wikipedia.org/wiki/Rafael_Ferro#Premios_y_nominaciones',
+		],
+	},
+	'gore-verbinski': {
+		slug: 'gore-verbinski',
+		name: 'Gore Verbinski',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gore%20Verbinski%201.JPG?width=640',
+		headline: 'Director estadounidense que pasó de la publicidad y los videoclips al blockbuster con una firma visual muy marcada.',
+		roles: ['Director', 'Productor', 'Guionista'],
+		birthPlace: 'Oak Ridge, Tennessee, Estados Unidos',
+		spotlight:
+			'Su carrera combinó formación académica en UCLA, avisos premiados, terror de estudio y la primera gran trilogía de Piratas del Caribe antes del Oscar por Rango.',
+		biography: [
+			'Gregor Verbinski nació en Oak Ridge, Tennessee, el 16 de marzo de 1964. Wikipedia cuenta que su familia se mudó al sur de California en 1967 y que estudió cine y televisión en UCLA, donde se graduó en 1987 antes de empezar a dirigir numerosos anuncios publicitarios y videos musicales.',
+			"Su debut como director de largometrajes fue MouseHunt, pero el salto fuerte llegó con The Ring y sobre todo con las tres primeras películas de Piratas del Caribe: The Curse of the Black Pearl, Dead Man's Chest y At World's End. Más adelante sumó títulos como El llanero solitario y A Cure for Wellness.",
+			'Wikipedia también remarca que en 2011 ganó el Oscar a mejor película animada por Rango, película que además escribió y produjo. Esa combinación de oficio industrial, imaginación visual y capacidad para moverse entre live action y animación explica por qué su nombre sigue pesando tanto cuando aparece un proyecto suyo nuevo.',
+		],
+		stats: [],
+		awards: [{ label: 'Oscar', category: 'Mejor pelicula animada', work: 'Rango', year: 2012 }],
+		knownFor: [
+			'buena-suerte-diviertete-no-mueras-2026',
+			'pirates-of-the-caribbean-at-worlds-end-2007',
+			'pirates-of-the-caribbean-dead-mans-chest-2006',
+			'pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003',
+		],
+		referenceUrls: ['https://es.wikipedia.org/wiki/Gore_Verbinski', 'https://es.wikipedia.org/wiki/Rango_(pel%C3%ADcula)'],
+	},
+	'sam-rockwell': {
+		slug: 'sam-rockwell',
+		name: 'Sam Rockwell',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Rockwell%20(51492)%20(cropped).jpg?width=640',
+		headline:
+			'Actor estadounidense de registro excéntrico y enorme precisión, una referencia fija para personajes raros, eléctricos y muy magnéticos.',
+		roles: ['Actor'],
+		birthPlace: 'Daly City, California, Estados Unidos',
+		spotlight:
+			'Se formó en Nueva York, creció en el cine independiente y terminó convirtiendo esa rareza en un lugar propio dentro de Hollywood.',
+		biography: [
+			'Samuel Rockwell nació en Daly City, California, el 5 de noviembre de 1968. Wikipedia cuenta que es hijo de actores, que sus padres se separaron cuando era chico y que se crió entre San Francisco y los veranos con su madre en Nueva York. A los diez años ya había actuado en un escenario del East Village interpretando a Humphrey Bogart en un sketch improvisado.',
+			'Después de terminar la secundaria se mudó a Nueva York para seguir la carrera, estudió en el William Esper Studio y pasó varios años encadenando apariciones chicas mientras trabajaba en restaurantes, hacía repartos en bicicleta y hasta colaboró con un detective privado. El quiebre llegó con Box of Moon Light y Lawn Dogs, dos películas que lo pusieron en el mapa del cine independiente.',
+			'Wikipedia marca luego una progresión muy clara: Confesiones de una mente peligrosa como primer gran protagónico, Moon como consagración crítica y finalmente Three Billboards Outside Ebbing, Missouri, película por la que ganó el Oscar, el Globo de Oro, el BAFTA y el SAG como actor de reparto. Desde ahí quedó confirmado como uno de los intérpretes más singulares y confiables del cine estadounidense reciente.',
+		],
+		stats: [],
+		awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Three Billboards Outside Ebbing, Missouri', year: 2018 }],
+		knownFor: ['buena-suerte-diviertete-no-mueras-2026'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Sam_Rockwell',
+			'https://es.wikipedia.org/wiki/Three_Billboards_Outside_Ebbing,_Missouri',
+		],
+	},
 };
 
 const bulkCompletionProfiles = {
