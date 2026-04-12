@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import ts from 'typescript';
 import vm from 'node:vm';
 import { createRequire } from 'node:module';
 
@@ -458,20 +459,21 @@ async function getWikipediaExtract(lang, title) {
 
 async function loadPersonProfiles() {
 	const source = await fs.readFile(PERSON_PROFILES_PATH, 'utf8');
-	const transformed = source
-		.replace(/^import\s+type\s+.+?;\s*$/gm, '')
-		.replace(
-			/export\s+const\s+personProfiles\s*:\s*Record<string,\s*PersonProfileRecord>\s*=/,
-			'module.exports.personProfiles =',
-		);
+	const transformed = ts.transpileModule(source, {
+		compilerOptions: {
+			module: ts.ModuleKind.CommonJS,
+			target: ts.ScriptTarget.ES2020,
+		},
+	}).outputText;
 	const sandbox = {
 		module: { exports: {} },
 		exports: {},
 		require,
 		console,
 	};
+	sandbox.exports = sandbox.module.exports;
 	vm.runInNewContext(transformed, sandbox, { filename: PERSON_PROFILES_PATH });
-	return sandbox.module.exports.personProfiles || {};
+	return sandbox.module.exports.personProfiles || sandbox.exports.personProfiles || {};
 }
 
 async function loadMoviesBySlug() {

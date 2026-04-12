@@ -1,5 +1,17 @@
 import type { PersonProfileRecord } from '../types/person';
 
+type ProfileDefaults = {
+	roles: PersonProfileRecord['roles'];
+	stats: NonNullable<PersonProfileRecord['stats']>;
+};
+
+type ProfileSeed = Omit<Partial<PersonProfileRecord>, 'roles' | 'stats' | 'referenceUrls'> &
+	Pick<PersonProfileRecord, 'slug' | 'name' | 'headline' | 'awards' | 'knownFor'> & {
+		referenceUrls?: string[];
+	};
+
+type BulkProfileReference = string[] | { profileImage?: string; referenceUrls?: string[] };
+
 const globalActorDefaults = {
 	roles: ['Actor'],
 	stats: [],
@@ -30,7 +42,7 @@ const argentineDirectorDefaults = {
 	stats: [],
 };
 
-function normalizePersonName(value) {
+function normalizePersonName(value: string) {
 	return String(value || '')
 		.normalize('NFD')
 		.replace(/[\u0300-\u036f]/g, '')
@@ -40,7 +52,7 @@ function normalizePersonName(value) {
 		.trim();
 }
 
-const catalogBackedProfileMeta = {
+const catalogBackedProfileMeta: Record<string, { profileImage?: string; referenceUrls?: string[] }> = {
 	'emma-watson': {
 		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emma%20Watson%202013.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q39476', 'https://www.imdb.com/name/nm0914612/', 'https://www.themoviedb.org/person/10990-emma-watson'],
@@ -391,7 +403,7 @@ const catalogBackedProfileMeta = {
 	},
 };
 
-const bulkProfileReferenceUrls = {
+const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 	'timothee-chalamet': [
 		'https://www.wikidata.org/wiki/Q19877770',
 		'https://www.imdb.com/name/nm3154303/',
@@ -934,7 +946,7 @@ const bulkProfileReferenceUrls = {
 	},
 };
 
-const bulkProfileImageUrls = {
+const bulkProfileImageUrls: Record<string, string> = {
 	'timothee-chalamet':
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Timoth%C3%A9e%20Chalamet-63541%20(cropped).jpg?width=640',
 	'paul-mescal':
@@ -1059,12 +1071,12 @@ const bulkProfileImageUrls = {
 /**
  * @param {...(string[] | undefined)} groups
  */
-function mergeReferenceUrls(...groups) {
+function mergeReferenceUrls(...groups: Array<string[] | undefined>): string[] {
 	return Array.from(
 		new Set(
 			groups
 				.flat()
-				.filter((value) => typeof value === 'string' && value.trim().length > 0)
+				.filter((value): value is string => typeof value === 'string' && value.trim().length > 0)
 				.map((value) => value.trim()),
 		),
 	);
@@ -1075,7 +1087,7 @@ function mergeReferenceUrls(...groups) {
  * @param {{ slug: string; referenceUrls?: string[] } & Record<string, unknown>} seed
  * @returns {PersonProfileRecord}
  */
-function buildBulkProfile(defaults, seed) {
+function buildBulkProfile(defaults: ProfileDefaults, seed: ProfileSeed): PersonProfileRecord {
 	const fallbackMeta = bulkProfileReferenceUrls[seed.slug];
 	const fallbackProfileImage =
 		fallbackMeta && typeof fallbackMeta === 'object' && !Array.isArray(fallbackMeta)
@@ -1091,6 +1103,8 @@ function buildBulkProfile(defaults, seed) {
 		...seed,
 		profileImage: seed.profileImage ?? fallbackProfileImage ?? bulkProfileImageUrls[seed.slug],
 		roles: defaults.roles,
+		spotlight: seed.spotlight ?? 'Figura conectada al catalogo editorial actual de Cine Posta.',
+		biography: seed.biography ?? buildCatalogBackedBiography(seed.name, 'figura', seed.spotlight ?? 'Figura conectada al catalogo editorial actual de Cine Posta.', seed.knownFor),
 		stats: defaults.stats.map((stat) => ({ ...stat })),
 		referenceUrls: mergeReferenceUrls(seed.referenceUrls, fallbackReferenceUrls),
 	};
@@ -1100,15 +1114,20 @@ function buildBulkProfile(defaults, seed) {
  * @param {{ roles: string[]; stats: { label: string; value: string }[] }} defaults
  * @param {Array<Record<string, unknown> & { slug: string }>} seeds
  */
-function buildBulkProfiles(defaults, seeds) {
+function buildBulkProfiles(defaults: ProfileDefaults, seeds: ProfileSeed[]): Record<string, PersonProfileRecord> {
 	return Object.fromEntries(seeds.map((seed) => [seed.slug, buildBulkProfile(defaults, seed)]));
 }
 
-function getCatalogBackedProfileMeta(slug) {
+function getCatalogBackedProfileMeta(slug: string) {
 	return catalogBackedProfileMeta[slug];
 }
 
-function buildCatalogBackedBiography(name, roleLabel, spotlight, knownFor) {
+function buildCatalogBackedBiography(
+	name: string,
+	roleLabel: string,
+	spotlight: string,
+	knownFor: string[],
+): string[] {
 	const connectionLabel =
 		knownFor.length > 1 ? 'a varios titulos fuertes del catalogo' : 'a un titulo fuerte del catalogo';
 
@@ -1118,7 +1137,7 @@ function buildCatalogBackedBiography(name, roleLabel, spotlight, knownFor) {
 	];
 }
 
-function buildCatalogBackedProfile(defaults, seed) {
+function buildCatalogBackedProfile(defaults: ProfileDefaults, seed: ProfileSeed): PersonProfileRecord {
 	const profileMeta = getCatalogBackedProfileMeta(seed.slug);
 	const fallbackMeta = bulkProfileReferenceUrls[seed.slug];
 	const fallbackProfileImage =
@@ -1153,11 +1172,11 @@ function buildCatalogBackedProfile(defaults, seed) {
 	};
 }
 
-function buildCatalogBackedProfiles(defaults, seeds) {
+function buildCatalogBackedProfiles(defaults: ProfileDefaults, seeds: ProfileSeed[]): Record<string, PersonProfileRecord> {
 	return Object.fromEntries(seeds.map((seed) => [seed.slug, buildCatalogBackedProfile(defaults, seed)]));
 }
 
-const personProfileEditorialOverrides = {
+const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecord>> = {
 	/* __PERSON_PROFILE_EDITORIAL_OVERRIDES_START__ */
 	'aaron-taylor-johnson': {
 		biography: [
@@ -2801,7 +2820,9 @@ const personProfileEditorialOverrides = {
 /* __PERSON_PROFILE_EDITORIAL_OVERRIDES_END__ */
 };
 
-function applyPersonProfileEditorialOverrides(profiles) {
+function applyPersonProfileEditorialOverrides(
+	profiles: Record<string, PersonProfileRecord>,
+): Record<string, PersonProfileRecord> {
 	return Object.fromEntries(
 		Object.entries(profiles).map(([slug, profile]) => {
 			const override = personProfileEditorialOverrides[slug];
@@ -5535,9 +5556,9 @@ const bulkExpansionProfiles = {
 		spotlight:
 			'Tango feroz lo volvió masivo, pero su carrera siguió creciendo en televisión, teatro y cine hasta sumar una etapa propia como director y coguionista.',
 		biography: [
-			'Fernán Gonzalo Mirás nació en Buenos Aires el 17 de julio de 1969. Según Wikipedia, debutó en teatro en 1987 con Cuba y su pequeño Teddy, de Reynaldo Povod, y poco después hizo su primer trabajo cinematográfico en La amiga, la película de Jeanine Meerapfel estrenada en 1988.',
+			'Fernán Gonzalo Mirás nació en Buenos Aires el 17 de julio de 1969. Debutó en teatro a fines de los 80 con Cuba y su pequeño Teddy, de Reynaldo Povod, y poco después dio el salto al cine con La amiga, la película de Jeanine Meerapfel.',
 			'El gran salto llegó en 1993 con Tango feroz: la leyenda de Tanguito, donde interpretó al músico Tanguito y quedó instalado como una de las caras fuertes de esa etapa del cine argentino. Después sostuvo mucha presencia en televisión con títulos como La banda del Golden Rocket, Chiquititas, Verano del 98, Vulnerables, Culpables, Rebelde Way, Para vestir santos y Tiempos compulsivos.',
-			'Wikipedia también marca que, además de seguir actuando en cine y series, abrió una etapa como realizador con El peso de la ley, continuó como director y coguionista en Casi muerta y volvió a ese rol en La casaca de Dios. En el recorrido local eso lo vuelve una figura especialmente interesante: alguien que cruzó teatro, tele, cine industrial y dirección sin quedar atado a una sola versión de sí mismo.',
+			'Además de seguir actuando en cine, series y teatro, abrió una etapa como realizador con El peso de la ley, continuó como director y coguionista en Casi muerta y volvió a ese rol en La casaca de Dios. Ese cruce entre actuación popular, oficio teatral y trabajo detrás de cámara lo convirtió en una figura especialmente completa dentro del audiovisual argentino.',
 		],
 		stats: [],
 		awards: [
@@ -5560,9 +5581,9 @@ const bulkExpansionProfiles = {
 		spotlight:
 			'Su formación en el Conservatorio y su paso por la Comedia Nacional del Cervantes ayudan a explicar la solidez con la que se movió entre teatro, cine y televisión durante décadas.',
 		biography: [
-			'Jorge Luis Marrale nació en Buenos Aires el 30 de junio de 1947. Wikipedia precisa que nació en Barracas, se crió en Lanús, cursó una secundaria industrial y llegó a empezar Ingeniería antes de decidirse por la actuación después de ver a Vittorio Gassman en El hombre de la flor en la boca.',
+			'Jorge Luis Marrale nació en Buenos Aires el 30 de junio de 1947. Nació en Barracas, se crió en Lanús, cursó una secundaria industrial y llegó a empezar Ingeniería antes de decidirse por la actuación después de ver a Vittorio Gassman en El hombre de la flor en la boca.',
 			'Dejó la facultad, entró al Conservatorio de Arte Dramático y egresó con un promedio que le permitió integrarse a la Comedia Nacional del Teatro Nacional Cervantes. En sus primeros años también trabajó en Segba y durante once años en Gas del Estado, hasta que entrados los 80 la continuidad actoral empezó a afirmarse y los 90 terminaron siendo uno de los períodos más fuertes de su carrera.',
-			'Desde entonces acumuló una trayectoria enorme en televisión, teatro y cine, con un perfil muy reconocible para roles intensos o directamente villanescos. La misma Wikipedia lo registra además como presidente de SAGAI desde 2018 y como una voz activa en debates públicos sobre teatro y cultura, algo que termina de ubicarlo como una figura muy fuerte del oficio en Argentina.',
+			'Desde entonces acumuló una trayectoria enorme en televisión, teatro y cine, con un perfil muy reconocible para roles intensos o directamente villanescos. También fue presidente de SAGAI desde 2018 y se mantuvo como una voz activa en debates públicos sobre teatro y cultura, algo que termina de ubicarlo como una figura muy fuerte del oficio en Argentina.',
 		],
 		stats: [],
 		awards: [{ label: 'Premio Cóndor de Plata', category: 'Mejor actor', work: 'Maracaibo', year: 2018 }],
@@ -5579,9 +5600,9 @@ const bulkExpansionProfiles = {
 		spotlight:
 			'Se instaló en Argentina en 1994, explotó a escala internacional con Muñeca brava y después sostuvo una presencia fuerte también en el cine, sin dejar la música.',
 		biography: [
-			'Natalia Marisa Oreiro Iglesias nació en Montevideo el 19 de mayo de 1977. Wikipedia señala que empezó a trabajar en publicidades durante la preadolescencia y que a los 15 años ganó en Uruguay y luego en Argentina un concurso para ser Paquita de Xuxa, experiencia que terminó financiando su mudanza a Buenos Aires en 1994.',
-			'Ya instalada en Argentina, encadenó títulos muy visibles como 90 60 90 modelos, Ricos y famosos y, sobre todo, Muñeca brava, el éxito que la internacionalizó y la dejó asociada a la llamada Oreiromanía. La misma página repasa que después siguió con Kachorra, Sos mi vida y Solamente vos, al mismo tiempo que desarrollaba una carrera musical solista con cuatro discos de estudio y más de siete millones de discos vendidos en el mundo.',
-			'En cine, Wikipedia destaca películas como Un argentino en New York, Música en espera, Mi primera boda, Infancia clandestina, Wakolda y Gilda, no me arrepiento de este amor. Justamente por Gilda ganó el Cóndor de Plata y el Premio Sur a mejor actriz, un punto alto dentro de una trayectoria muy marcada por el ida y vuelta entre Uruguay, Argentina y un público popular gigantesco en toda la región.',
+			'Natalia Marisa Oreiro Iglesias nació en Montevideo el 19 de mayo de 1977. Empezó a trabajar en publicidades durante la preadolescencia y, a los 15 años, ganó en Uruguay y luego en Argentina un concurso para ser Paquita de Xuxa, experiencia que terminó financiando su mudanza a Buenos Aires en 1994.',
+			'Ya instalada en Argentina, encadenó títulos muy visibles como 90 60 90 modelos, Ricos y famosos y, sobre todo, Muñeca brava, el éxito que la internacionalizó y la dejó asociada a la llamada Oreiromanía. Después siguió con Kachorra, Sos mi vida y Solamente vos, al mismo tiempo que desarrollaba una carrera musical solista con cuatro discos de estudio y millones de discos vendidos en toda la región.',
+			'En cine sumó títulos como Un argentino en New York, Música en espera, Mi primera boda, Infancia clandestina, Wakolda y Gilda, no me arrepiento de este amor. Justamente por Gilda ganó el Cóndor de Plata y el Premio Sur a mejor actriz, un punto alto dentro de una trayectoria marcada por el ida y vuelta entre Uruguay, Argentina y un público popular gigantesco en toda la región.',
 		],
 		stats: [],
 		awards: [{ label: 'Premio Cóndor de Plata', category: 'Mejor actriz', work: 'Gilda, no me arrepiento de este amor', year: 2017 }],
@@ -5602,9 +5623,9 @@ const bulkExpansionProfiles = {
 		spotlight:
 			'Su carrera mezcla tiras masivas, teatro y películas de perfil autoral, siempre con una presencia áspera y muy fácil de recordar.',
 		biography: [
-			'José Rafael Ferro nació en Buenos Aires el 6 de diciembre de 1965. Wikipedia indica que creció en el barrio de Palermo y que su carrera quedó repartida entre cine, teatro y televisión, con una visibilidad muy fuerte en la pantalla chica desde comienzos de los 2000.',
+			'José Rafael Ferro nació en Buenos Aires el 6 de diciembre de 1965. Creció en el barrio de Palermo y construyó una carrera repartida entre cine, teatro y televisión, con una visibilidad muy fuerte en la pantalla chica desde comienzos de los 2000.',
 			'La propia entrada lo presenta como un actor especialmente ligado a telenovelas y series como Verano del 98, Resistiré, Lalola, Para vestir santos, Guapas, Un año para recordar y Las Estrellas, donde en muchos casos interpretó villanos. Esa asociación con personajes duros o incómodos terminó siendo una de sus marcas más reconocibles ante el público local.',
-			'En paralelo también sostuvo una filmografía variada que va de Bolivia y La antena a Medianeras, El robo del siglo y La casaca de Dios. Wikipedia además registra una nominación a los Premios Sur por La vida después, señal de un recorrido que no quedó encerrado en la tele sino que también tuvo peso en el cine argentino contemporáneo.',
+			'En paralelo también sostuvo una filmografía variada que va de Bolivia y La antena a Medianeras, El robo del siglo y La casaca de Dios. Su nominación a los Premios Sur por La vida después confirma un recorrido que no quedó encerrado en la tele y que también tuvo peso en el cine argentino contemporáneo.',
 		],
 		stats: [],
 		awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actor de reparto', work: 'La vida después', year: 2015 }],
@@ -5624,9 +5645,9 @@ const bulkExpansionProfiles = {
 		spotlight:
 			'Su carrera combinó formación académica en UCLA, avisos premiados, terror de estudio y la primera gran trilogía de Piratas del Caribe antes del Oscar por Rango.',
 		biography: [
-			'Gregor Verbinski nació en Oak Ridge, Tennessee, el 16 de marzo de 1964. Wikipedia cuenta que su familia se mudó al sur de California en 1967 y que estudió cine y televisión en UCLA, donde se graduó en 1987 antes de empezar a dirigir numerosos anuncios publicitarios y videos musicales.',
+			'Gregor Verbinski nació en Oak Ridge, Tennessee, el 16 de marzo de 1964. Su familia se mudó al sur de California cuando era chico y estudió cine y televisión en UCLA, donde se graduó en 1987 antes de empezar a dirigir numerosos anuncios publicitarios y videos musicales.',
 			"Su debut como director de largometrajes fue MouseHunt, pero el salto fuerte llegó con The Ring y sobre todo con las tres primeras películas de Piratas del Caribe: The Curse of the Black Pearl, Dead Man's Chest y At World's End. Más adelante sumó títulos como El llanero solitario y A Cure for Wellness.",
-			'Wikipedia también remarca que en 2011 ganó el Oscar a mejor película animada por Rango, película que además escribió y produjo. Esa combinación de oficio industrial, imaginación visual y capacidad para moverse entre live action y animación explica por qué su nombre sigue pesando tanto cuando aparece un proyecto suyo nuevo.',
+			'En 2011 ganó el Oscar a mejor película animada por Rango, película que además escribió y produjo. Esa combinación de oficio industrial, imaginación visual y capacidad para moverse entre live action y animación explica por qué su nombre sigue pesando tanto cuando aparece un proyecto suyo nuevo.',
 		],
 		stats: [],
 		awards: [{ label: 'Oscar', category: 'Mejor pelicula animada', work: 'Rango', year: 2012 }],
@@ -5649,9 +5670,9 @@ const bulkExpansionProfiles = {
 		spotlight:
 			'Se formó en Nueva York, creció en el cine independiente y terminó convirtiendo esa rareza en un lugar propio dentro de Hollywood.',
 		biography: [
-			'Samuel Rockwell nació en Daly City, California, el 5 de noviembre de 1968. Wikipedia cuenta que es hijo de actores, que sus padres se separaron cuando era chico y que se crió entre San Francisco y los veranos con su madre en Nueva York. A los diez años ya había actuado en un escenario del East Village interpretando a Humphrey Bogart en un sketch improvisado.',
+			'Samuel Rockwell nació en Daly City, California, el 5 de noviembre de 1968. Es hijo de actores, sus padres se separaron cuando era chico y se crió entre San Francisco y los veranos con su madre en Nueva York. A los diez años ya había actuado en un escenario del East Village interpretando a Humphrey Bogart en un sketch improvisado.',
 			'Después de terminar la secundaria se mudó a Nueva York para seguir la carrera, estudió en el William Esper Studio y pasó varios años encadenando apariciones chicas mientras trabajaba en restaurantes, hacía repartos en bicicleta y hasta colaboró con un detective privado. El quiebre llegó con Box of Moon Light y Lawn Dogs, dos películas que lo pusieron en el mapa del cine independiente.',
-			'Wikipedia marca luego una progresión muy clara: Confesiones de una mente peligrosa como primer gran protagónico, Moon como consagración crítica y finalmente Three Billboards Outside Ebbing, Missouri, película por la que ganó el Oscar, el Globo de Oro, el BAFTA y el SAG como actor de reparto. Desde ahí quedó confirmado como uno de los intérpretes más singulares y confiables del cine estadounidense reciente.',
+			'Su carrera fue creciendo con Confesiones de una mente peligrosa como primer gran protagónico, Moon como consagración crítica y finalmente Three Billboards Outside Ebbing, Missouri, película por la que ganó el Oscar, el Globo de Oro, el BAFTA y el SAG como actor de reparto. Desde ahí quedó confirmado como uno de los intérpretes más singulares y confiables del cine estadounidense reciente.',
 		],
 		stats: [],
 		awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Three Billboards Outside Ebbing, Missouri', year: 2018 }],

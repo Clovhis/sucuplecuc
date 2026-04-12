@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Full Site Fix"
+  short_description: "Audita y corrige todo el sitio"
+  default_prompt: "Use $la-posta-cine-full-site-fix to create a fresh fix branch from main, audit the whole site, repair structural and editorial issues, and validate the final build."
