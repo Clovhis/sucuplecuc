@@ -8,7 +8,6 @@ import {
 	getPosterUrl,
 	getMovieTrailerPath,
 	getYoutubeThumbnailUrl,
-	getYoutubeWatchUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
 } from '../../lib/movies';
@@ -76,7 +75,6 @@ const screenshotUrls = (movie.screenshots ?? [])
 	.map((value) => getPosterUrl(value));
 const hasScreenshotGallery = screenshotUrls.length >= 2;
 const trailerPageUrl = movie.trailerYoutubeId ? getMovieTrailerPath(movie.slug) : '';
-const trailerWatchUrl = getYoutubeWatchUrl(movie.trailerYoutubeId);
 const trailerThumbnailUrl = getYoutubeThumbnailUrl(movie.trailerYoutubeId) || posterUrl;
 const awardMeta = {
 	oscar: { label: 'Oscar' },
@@ -314,12 +312,12 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
 					<div class="movie-detail__hero-stack">
 						{trailerPageUrl ? (
-							<div class="trailer-shell trailer-shell--preview">
-								<div class="trailer-shell__header">
-									<span class="trailer-shell__eyebrow">Trailer oficial</span>
-									<strong class="trailer-shell__title">Ver trailer de {movie.title}</strong>
-								</div>
-								<a class="trailer-preview" href={trailerPageUrl} aria-label={`Ver trailer de ${movie.title}`}>
+							<a
+								class="trailer-shell trailer-shell--preview trailer-shell--preview-link"
+								href={trailerPageUrl}
+								aria-label={`Ver trailer de ${movie.title}`}
+							>
+								<div class="trailer-preview">
 									<img
 										class="trailer-preview__image"
 										src={trailerThumbnailUrl}
@@ -328,20 +326,8 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										referrerpolicy="no-referrer"
 									/>
 									<span class="trailer-preview__play" aria-hidden="true">Ver trailer</span>
-								</a>
-								<div class="trailer-preview__actions">
-									<a class="page-action" href={trailerPageUrl}>Mirarlo acá</a>
-									<a
-										class="trailer-shell__external"
-										href={trailerWatchUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										referrerpolicy="no-referrer"
-									>
-										Abrir en YouTube
-									</a>
 								</div>
-							</div>
+							</a>
 						) : (
 							<p class="message-box">Trailer no disponible.</p>
 						)}
