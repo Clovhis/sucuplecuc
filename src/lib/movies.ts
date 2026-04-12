@@ -115,6 +115,10 @@ function joinWithBase(pathPart: string): string {
 	return `${base}${pathPart.replace(/^\/+/, '')}`;
 }
 
+function normalizeYoutubeId(value: string): string {
+	return String(value ?? '').trim();
+}
+
 function normalizeComparableText(value: string): string {
 	return value
 		.normalize('NFD')
@@ -391,8 +395,8 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			slug: movie.slug,
 			title: movie.title,
 			releaseDate: movie.releaseDate!,
-			videoUrl: `https://www.youtube.com/watch?v=${movie.trailerYoutubeId}`,
-			thumbnailUrl: `https://i.ytimg.com/vi/${movie.trailerYoutubeId}/hqdefault.jpg`,
+			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
+			thumbnailUrl: getYoutubeThumbnailUrl(movie.trailerYoutubeId),
 		}));
 
 	const releaseBySlug = new Map(catalogUpcoming.map((release) => [release.slug, release]));
@@ -791,8 +795,27 @@ export function getPosterUrl(poster: string): string {
 	return joinWithBase(poster);
 }
 
+export function getYoutubeEmbedUrl(youtubeId: string): string {
+	const normalizedId = normalizeYoutubeId(youtubeId);
+	return normalizedId ? `https://www.youtube.com/embed/${normalizedId}` : '';
+}
+
+export function getYoutubeWatchUrl(youtubeId: string): string {
+	const normalizedId = normalizeYoutubeId(youtubeId);
+	return normalizedId ? `https://www.youtube.com/watch?v=${normalizedId}` : '';
+}
+
+export function getYoutubeThumbnailUrl(youtubeId: string): string {
+	const normalizedId = normalizeYoutubeId(youtubeId);
+	return normalizedId ? `https://i.ytimg.com/vi/${normalizedId}/hqdefault.jpg` : '';
+}
+
 export function getMoviePath(slug: string): string {
 	return joinWithBase(`peliculas/${slug}/`);
+}
+
+export function getMovieTrailerPath(slug: string): string {
+	return joinWithBase(`trailers/${slug}/`);
 }
 
 export { getMoviePlatformLabel, getMoviePlatforms } from './platforms';

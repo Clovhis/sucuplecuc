@@ -1,6 +1,6 @@
 import type { Movie, MovieVerdict } from '../types/movie';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
-import { getMoviePath, getPosterUrl } from './movies';
+import { getMoviePath, getMovieTrailerPath, getPosterUrl } from './movies';
 import { getPersonPath } from './people';
 
 export const SITE_URL = 'https://www.cineposta.com.ar';
@@ -293,6 +293,58 @@ export function createMovieStructuredData(
 					position: 2,
 					name: movie.title,
 					item: movieUrl,
+				},
+			],
+		},
+	];
+}
+
+export function createTrailerPageStructuredData(
+	movie: Pick<Movie, 'slug' | 'title'>,
+	pageTitle: string,
+	pageDescription: string,
+): StructuredDataValue[] {
+	const movieUrl = asAbsoluteUrl(getMoviePath(movie.slug));
+	const trailerUrl = asAbsoluteUrl(getMovieTrailerPath(movie.slug));
+
+	return [
+		{
+			'@context': 'https://schema.org',
+			'@type': 'WebPage',
+			'@id': `${trailerUrl}#webpage`,
+			url: trailerUrl,
+			name: pageTitle,
+			description: pageDescription,
+			inLanguage: SITE_LANGUAGE,
+			isPartOf: {
+				'@id': getWebsiteId(),
+			},
+			about: {
+				'@id': `${movieUrl}#movie`,
+			},
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			'@id': `${trailerUrl}#breadcrumb`,
+			itemListElement: [
+				{
+					'@type': 'ListItem',
+					position: 1,
+					name: SITE_NAME,
+					item: `${SITE_URL}/`,
+				},
+				{
+					'@type': 'ListItem',
+					position: 2,
+					name: movie.title,
+					item: movieUrl,
+				},
+				{
+					'@type': 'ListItem',
+					position: 3,
+					name: 'Trailer oficial',
+					item: trailerUrl,
 				},
 			],
 		},
