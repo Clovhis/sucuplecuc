@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-04-17. Fuente: src/data/movies/*.json
 
-Total de peliculas: 688
+Total de peliculas: 689
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
