@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-11. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-17. Fuente: src/data/movies/*.json
 
-Total de peliculas: 686
+Total de peliculas: 688
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -17,6 +17,7 @@ Total de peliculas: 686
 | 2026 | Dracula | dracula-2026 | Terror | Stremio | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El drama | the-drama-2026 | Romance | Cine | +17 |
+| 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | GOAT | goat-2026 | Animacion | Stremio | ATP |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Stremio | +13 |
@@ -108,6 +109,7 @@ Total de peliculas: 686
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Stremio | ATP |
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max | +17 |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Stremio | ATP |
+| 2024 | 40 Acres | 40-acres-2024 | Thriller | Netflix | +16 |
 | 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Paramount Plus | +13 |
 | 2024 | A Real Pain | a-real-pain-2024 | Comedia | Disney Plus | +13 |
 | 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus + HBO Max | +17 |
