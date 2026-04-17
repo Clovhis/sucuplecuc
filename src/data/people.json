@@ -340,6 +340,20 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1960-07-21"
 	},
+	"Agustín Aristarán": {
+		"name": "Agustín Aristarán",
+		"birthDate": "1983-09-15",
+		"birthYear": 1983,
+		"nationalityPrimary": "Argentino",
+		"image": "/people/agustin-aristaran.jpg",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/bLYj5IHVW1eWY6KAVzmnF8k13By.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q131709248",
+			"https://www.themoviedb.org/person/2276345-agustin-aristaran"
+		],
+		"lastVerifiedAt": "2026-04-17",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Ahn Hyo-seop": {
 		"name": "Ahn Hyo-seop",
 		"birthDate": "1995-04-17",
@@ -7873,6 +7887,7 @@
 	},
 	"Eduardo Blanco": {
 		"name": "Eduardo Blanco",
+		"birthDate": "1958-02-28",
 		"birthYear": 1958,
 		"nationalityPrimary": "Argentino",
 		"image": "/people/eduardo-blanco-nm0087249.jpg",
@@ -7884,9 +7899,8 @@
 			"https://www.imdb.com/name/nm0087249/",
 			"https://www.themoviedb.org/person/132449-eduardo-blanco"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1958-02-28"
+		"lastVerifiedAt": "2026-04-17",
+		"source": "wikidata-imdb-cache"
 	},
 	"Eduardo Noriega": {
 		"name": "Eduardo Noriega",
@@ -15316,6 +15330,7 @@
 	},
 	"Juan José Campanella": {
 		"name": "Juan J. Campanella",
+		"birthDate": "1959-07-19",
 		"birthYear": 1959,
 		"nationalityPrimary": "Argentino",
 		"image": "/people/juan-jose-campanella-nm0002728.jpg",
@@ -15327,9 +15342,8 @@
 			"https://www.imdb.com/name/nm0002728/",
 			"https://www.themoviedb.org/person/84714-juan-jose-campanella"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1959-07-19"
+		"lastVerifiedAt": "2026-04-17",
+		"source": "wikidata-imdb-cache"
 	},
 	"Judd Hirsch": {
 		"name": "Judd Hirsch",
@@ -18079,6 +18093,7 @@
 	},
 	"Luis Brandoni": {
 		"name": "Luis Brandoni",
+		"birthDate": "1940-04-18",
 		"birthYear": 1940,
 		"nationalityPrimary": "Argentino",
 		"image": "/people/luis-brandoni-nm0104809.jpg",
@@ -18090,9 +18105,8 @@
 			"https://www.imdb.com/name/nm0104809/",
 			"https://www.themoviedb.org/person/74896-luis-brandoni"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1940-04-18"
+		"lastVerifiedAt": "2026-04-17",
+		"source": "wikidata-imdb-cache"
 	},
 	"Luis Luque": {
 		"name": "Luis Luque",
@@ -18716,6 +18730,19 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1974-08-31"
+	},
+	"Manuela Menéndez": {
+		"name": "Manuela Menéndez",
+		"nationalityPrimary": "Argentina",
+		"image": "",
+		"imdbId": "nm13065836",
+		"imdbUrl": "https://www.imdb.com/name/nm13065836/",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm13065836/"
+		],
+		"lastVerifiedAt": "2026-04-17",
+		"source": "manual-imdb-cache",
+		"notes": "Perfil trazable verificado; no se encontro fecha publica confiable ni retrato individual confiable."
 	},
 	"Marcelo Piñeyro": {
 		"name": "Marcelo Piñeyro",
@@ -28803,6 +28830,19 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1988-04-18"
+	},
+	"Verónica Pelaccini": {
+		"name": "Verónica Pelaccini",
+		"nationalityPrimary": "Argentina",
+		"image": "",
+		"imdbId": "nm1011903",
+		"imdbUrl": "https://www.imdb.com/name/nm1011903/",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm1011903/"
+		],
+		"lastVerifiedAt": "2026-04-17",
+		"source": "manual-imdb-cache",
+		"notes": "Perfil trazable verificado; no se encontro fecha publica confiable ni retrato individual confiable."
 	},
 	"Vera Miles": {
 		"name": "Vera Miles",

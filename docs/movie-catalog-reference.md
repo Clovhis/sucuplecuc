@@ -28,6 +28,7 @@ Total de peliculas: 688
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
+| 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video | +18 |
 | 2026 | Primate | primate-2026 | Terror | Stremio | +16 |
