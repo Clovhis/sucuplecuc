@@ -11,7 +11,7 @@ const PEOPLE_CATALOG_PATH = path.resolve(REPO_ROOT, 'src/data/people.json');
 const MOVIES_DIR = path.resolve(REPO_ROOT, 'src/data/movies');
 const USER_AGENT = 'cine-posta-person-profile-editorial/1.0';
 const REQUEST_GAP_MS = 320;
-const MIN_BIO_WORDS = 70;
+const MIN_BIO_WORDS = 80;
 const START_MARKER = '/* __PERSON_PROFILE_EDITORIAL_OVERRIDES_START__ */';
 const END_MARKER = '/* __PERSON_PROFILE_EDITORIAL_OVERRIDES_END__ */';
 
@@ -68,7 +68,13 @@ const INVALID_BIRTH_PLACE_PATTERNS = [
 const TEMPLATE_BIO_PATTERNS = [
 	/Su carrera quedó muy ligada a /,
 	/Dentro del catálogo del sitio su recorrido /,
+	/Dentro del catalogo del sitio su recorrido /,
 	/Con el tiempo, [A-ZÁÉÍÓÚÑ][^.,;:!?]+ fue ganando lugar dentro de la industria\./,
+	/En el mapa editorial de Cine Posta/i,
+	/ficha queda pensada para sumar contexto concreto/i,
+	/mencion rapida de filmografia/i,
+	/mención rápida de filmografía/i,
+	/En Cine Posta aparece ligado/i,
 ];
 const BACKGROUND_SENTENCE_PATTERNS = [
 	/\bcomenz/i,
@@ -154,6 +160,10 @@ function normalizeWhitespace(value) {
 	return String(value || '').replace(/\s+/g, ' ').trim();
 }
 
+function countWordsInText(value) {
+	return (String(value || '').match(/[\p{L}\p{N}]+/gu) || []).length;
+}
+
 function normalizePersonName(value) {
 	return normalizeWhitespace(value)
 		.normalize('NFD')
@@ -220,30 +230,6 @@ function joinWithAnd(values) {
 	if (values.length === 1) return values[0];
 	if (values.length === 2) return `${values[0]} y ${values[1]}`;
 	return `${values.slice(0, -1).join(', ')} y ${values.at(-1)}`;
-}
-
-function pickDisplayName(profile) {
-	const tokens = normalizeWhitespace(profile.name).split(/\s+/).filter(Boolean);
-	return tokens[0] ?? profile.name;
-}
-
-function getRoleCareerAreas(profile) {
-	const areaMap = {
-		actor: 'la actuación',
-		actriz: 'la actuación',
-		director: 'la dirección',
-		productor: 'la producción',
-		productora: 'la producción',
-		guionista: 'la escritura',
-	};
-
-	return Array.from(
-		new Set(
-			(profile.roles || [])
-				.map((role) => areaMap[normalizeWhitespace(role).toLowerCase()] || `el trabajo como ${normalizeWhitespace(role).toLowerCase()}`)
-				.filter(Boolean),
-		),
-	);
 }
 
 function getMovieTitleBySlug(moviesBySlug, slug) {
@@ -333,13 +319,16 @@ function biographyHasSuspiciousContent(profile) {
 }
 
 function biographyWordCount(profile) {
-	return (profile.biography || []).join(' ').split(/\s+/).filter(Boolean).length;
+	return countWordsInText((profile.biography || []).join(' '));
 }
 
 function shouldRewriteBiography(profile) {
 	return (
 		isGenericBiography(profile) ||
 		isTemplateBiography(profile) ||
+		!Array.isArray(profile.biography) ||
+		profile.biography.length < 2 ||
+		profile.biography.length > 4 ||
 		biographyWordCount(profile) < MIN_BIO_WORDS ||
 		biographyHasSuspiciousContent(profile)
 	);
@@ -447,7 +436,7 @@ async function getWikipediaExtract(lang, title) {
 	}
 
 	const url =
-		`https://${lang}.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=1&explaintext=1&format=json&titles=` +
+		`https://${lang}.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&format=json&titles=` +
 		encodeURIComponent(title);
 	const data = await fetchJson(url);
 	const page = Object.values(data?.query?.pages || {})[0];
@@ -514,11 +503,16 @@ function cleanWikipediaSentence(sentence) {
 		return '';
 	}
 
-	value = value.replace(/\(([^()]*)\)/g, (match, content) => {
+	value = value
+		.replace(/={2,}\s*([^=]+?)\s*={2,}/g, ' ')
+		.replace(/\[cita requerida\]/gi, ' ')
+		.replace(/\[[^\]]+\]/g, ' ');
+	value = value.replace(/\(([^()]*)\)/g, (_match, content) => {
 		const sanitized = sanitizeParentheticalContent(content);
 		return sanitized ? `(${sanitized})` : '';
 	});
 	value = value
+		.replace(/\/[^/\s]*[ˈˌ][^/]*\//g, '')
 		.replace(/\s+([,.;:!?])/g, '$1')
 		.replace(/\(\s+/g, '(')
 		.replace(/\s+\)/g, ')')
@@ -531,6 +525,9 @@ function cleanWikipediaSentence(sentence) {
 function looksUsefulBiographySentence(sentence) {
 	const value = cleanWikipediaSentence(sentence);
 	if (!value || value.length < 30) {
+		return false;
+	}
+	if (/(?:\b[A-Z]\.|;\s*n\.|,\s*n\.)$/u.test(value)) {
 		return false;
 	}
 
@@ -549,22 +546,7 @@ function isHighlightSentence(sentence) {
 	return HIGHLIGHT_SENTENCE_PATTERNS.some((pattern) => pattern.test(sentence));
 }
 
-function buildCatalogContextParagraph({ profile, moviesBySlug }) {
-	const knownForTitles = getKnownForTitles(profile, moviesBySlug);
-	if (knownForTitles.length === 0) {
-		return undefined;
-	}
-
-	const roleIsDirectorOnly =
-		(profile.roles || []).some((role) => /director/i.test(role)) &&
-		!(profile.roles || []).some((role) => /actor|actriz/i.test(role));
-
-	return roleIsDirectorOnly
-		? `En Cine Posta su obra queda conectada con ${joinWithAnd(knownForTitles)}, que hoy funcionan como entrada rápida a su filmografía dentro del sitio.`
-		: `En Cine Posta aparece ligado a ${joinWithAnd(knownForTitles)}, tres títulos que ayudan a seguir su recorrido dentro del sitio.`;
-}
-
-function buildWikipediaDrivenBiography({ profile, extract, moviesBySlug }) {
+function buildWikipediaDrivenBiography({ extract }) {
 	const cleanedSentences = uniqueValues(
 		splitSentences(extract)
 			.map((sentence) => cleanWikipediaSentence(sentence))
@@ -590,24 +572,31 @@ function buildWikipediaDrivenBiography({ profile, extract, moviesBySlug }) {
 	takeSentence(cleanedSentences.find((sentence, index) => index > 0 && !used.has(sentence) && isHighlightSentence(sentence)));
 
 	for (const sentence of cleanedSentences) {
-		if (selected.length >= 3) {
+		if (selected.length >= 4 || countWordsInText(selected.join(' ')) >= MIN_BIO_WORDS) {
 			break;
 		}
 		takeSentence(sentence);
 	}
 
-	if (selected.length < 2) {
-		const catalogParagraph = buildCatalogContextParagraph({ profile, moviesBySlug });
-		if (catalogParagraph) {
-			selected.push(catalogParagraph);
+	for (const sentence of cleanedSentences) {
+		if (countWordsInText(selected.join(' ')) >= MIN_BIO_WORDS) {
+			break;
+		}
+		if (!sentence || used.has(sentence)) {
+			continue;
+		}
+		used.add(sentence);
+		if (selected.length < 4) {
+			selected.push(sentence);
+		} else {
+			selected[selected.length - 1] = `${selected[selected.length - 1]} ${sentence}`;
 		}
 	}
 
-	return selected.slice(0, 3);
+	return selected.slice(0, 4);
 }
 
 function buildIdentityParagraph({ profile, person, birthPlace }) {
-	const roleAreas = getRoleCareerAreas(profile);
 	const birthDate = formatDateEs(person?.birthDate || profile.birthDate);
 	const birthYear = person?.birthYear || profile.birthYear;
 	const pieces = [];
@@ -624,34 +613,28 @@ function buildIdentityParagraph({ profile, person, birthPlace }) {
 		pieces.push(`${profile.name} nació en ${birthPlace}.`);
 	}
 
-	if (roleAreas.length > 0) {
-		pieces.push(`Su carrera quedó muy ligada a ${joinWithAnd(roleAreas)}.`);
-	}
-
 	return normalizeWhitespace(pieces.join(' '));
 }
 
 function buildCareerStartParagraph({ profile, extract }) {
-	const shortName = pickDisplayName(profile);
 	for (const matcher of SPANISH_START_PATTERNS) {
 		if (matcher.test.test(extract)) {
-			return normalizeWhitespace(`${matcher.text} Con el tiempo, ${shortName} fue ganando lugar dentro de la industria.`);
+			return normalizeWhitespace(matcher.text);
 		}
 	}
 
 	if (/premio|oscar|festival|cannes|forbes|time/i.test(extract)) {
-		return `${shortName} fue sumando visibilidad de manera sostenida hasta quedar entre los nombres más reconocibles de su generación.`;
+		return 'Su trayectoria recibió reconocimiento público a través de premios, nominaciones o presencia en festivales, según las fuentes biográficas consultadas.';
 	}
 
 	if ((profile.roles || []).some((role) => /director/i.test(role))) {
-		return `${shortName} fue armando sus primeros proyectos detrás de cámara antes de consolidarse como una voz reconocible en el largometraje.`;
+		return undefined;
 	}
 
-	return `${shortName} fue construyendo sus primeros trabajos antes de alcanzar una visibilidad mucho más amplia en cine.`;
+	return undefined;
 }
 
 function buildCareerHighlightsParagraph({ profile, moviesBySlug }) {
-	const shortName = pickDisplayName(profile);
 	const knownForTitles = getKnownForTitles(profile, moviesBySlug);
 	const awardSentence = getAwardSentence(profile);
 	const roleIsDirectorOnly =
@@ -661,14 +644,14 @@ function buildCareerHighlightsParagraph({ profile, moviesBySlug }) {
 
 	if (knownForTitles.length > 0) {
 		baseSentence = roleIsDirectorOnly
-			? `Dentro del catálogo del sitio su recorrido detrás de cámara se puede seguir en títulos como ${joinWithAnd(
+			? `Entre sus trabajos como realizador figuran ${joinWithAnd(
 					knownForTitles,
 			  )}.`
-			: `Dentro del catálogo del sitio su recorrido en pantalla se puede seguir en títulos como ${joinWithAnd(
+			: `Entre sus trabajos en pantalla figuran ${joinWithAnd(
 					knownForTitles,
 			  )}.`;
 	} else {
-		baseSentence = `${shortName} fue sosteniendo un recorrido con presencia tanto industrial como autoral.`;
+		baseSentence = '';
 	}
 
 	return normalizeWhitespace([baseSentence, awardSentence].filter(Boolean).join(' '));
@@ -684,6 +667,26 @@ function buildFallbackBiography({ profile, person, birthPlace, extract, moviesBy
 	return paragraphs.slice(0, 3);
 }
 
+function ensureGeneratedBiographyMinimum({ biography, profile, person, birthPlace, extract, moviesBySlug }) {
+	const paragraphs = [...(biography || [])].filter(Boolean);
+	const supplements = buildFallbackBiography({ profile, person, birthPlace, extract, moviesBySlug });
+
+	for (const supplement of supplements) {
+		if (paragraphs.length >= 4 && countWordsInText(paragraphs.join(' ')) >= MIN_BIO_WORDS) {
+			break;
+		}
+		if (!paragraphs.some((paragraph) => normalizeWhitespace(paragraph) === normalizeWhitespace(supplement))) {
+			if (paragraphs.length < 4) {
+				paragraphs.push(supplement);
+			} else {
+				paragraphs[paragraphs.length - 1] = `${paragraphs[paragraphs.length - 1]} ${supplement}`;
+			}
+		}
+	}
+
+	return paragraphs.slice(0, 4);
+}
+
 async function enrichProfile({ profile, person, moviesBySlug }) {
 	const wikidataId = getWikidataId(person?.referenceUrls, profile.referenceUrls);
 	const wikidataEntity = await getWikidataEntity(wikidataId);
@@ -696,12 +699,11 @@ async function enrichProfile({ profile, person, moviesBySlug }) {
 	const extract = esExtract || enExtract || '';
 	const birthPlaceFromIntro = getBirthPlaceFromIntro(extract);
 	const birthPlace = birthPlaceFromIntro || getLabel(birthPlaceEntity) || profile.birthPlace;
-	const biography =
+	const biographyBase =
 		(esExtract
 			? buildWikipediaDrivenBiography({
 					profile,
 					extract: esExtract,
-					moviesBySlug,
 			  })
 			: undefined) ??
 		buildFallbackBiography({
@@ -711,6 +713,14 @@ async function enrichProfile({ profile, person, moviesBySlug }) {
 			extract,
 			moviesBySlug,
 		});
+	const biography = ensureGeneratedBiographyMinimum({
+		biography: biographyBase,
+		profile,
+		person,
+		birthPlace,
+		extract,
+		moviesBySlug,
+	});
 
 	return {
 		birthPlace,
@@ -819,7 +829,7 @@ async function main() {
 			nextOverride.birthPlace = enriched.birthPlace;
 			birthPlacesFilled += 1;
 		}
-		if (shouldRewriteBiography(profile)) {
+		if (args.slugs.length > 0 || shouldRewriteBiography(profile)) {
 			nextOverride.biography = enriched.biography;
 			rewritten += 1;
 		}

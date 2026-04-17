@@ -61,6 +61,10 @@ const BIO_TEMPLATE_PATTERNS = [
 	/\bDentro del catalogo del sitio\b/i,
 	/\bmantiene una carrera muy visible\b/i,
 	/\bfue ganando lugar dentro de la industria\b/i,
+	/\bEn el mapa editorial de Cine Posta\b/i,
+	/\bficha queda pensada para sumar contexto concreto\b/i,
+	/\bmencion rapida de filmografia\b/i,
+	/\bEn Cine Posta aparece ligado\b/i,
 ];
 
 function parseArgs(argv) {
@@ -122,6 +126,14 @@ function addFinding(findings, severity, source, scope, code, message) {
 
 function countChar(value, char) {
 	return [...String(value || '')].filter((entry) => entry === char).length;
+}
+
+function countWords(value) {
+	return (String(value || '').match(/[\p{L}\p{N}]+/gu) || []).length;
+}
+
+function hasBrokenBiographyFragment(value) {
+	return /(?:\b[A-Z]\.|;\s*n\.|,\s*n\.)$/u.test(normalizeWhitespace(value));
 }
 
 function hasUnbalancedDelimiters(value) {
@@ -380,11 +392,34 @@ function scanPersonEditorial(profiles) {
 	for (const [slug, profile] of Object.entries(profiles)) {
 		const paragraphs = Array.isArray(profile.biography) ? profile.biography.map((entry) => normalizeWhitespace(entry)) : [];
 		const seenParagraphs = new Set();
+		const biographyWords = countWords(paragraphs.join(' '));
+
+		if (biographyWords < 80) {
+			addFinding(
+				findings,
+				'error',
+				'person-editorial',
+				slug,
+				'short-biography',
+				`Biography is too short (${biographyWords} words); editorial minimum is 80 words.`,
+			);
+		}
 
 		for (const paragraph of paragraphs) {
 			if (!paragraph) {
 				addFinding(findings, 'error', 'person-editorial', slug, 'empty-biography-paragraph', 'Biography contains an empty paragraph.');
 				continue;
+			}
+
+			if (hasBrokenBiographyFragment(paragraph)) {
+				addFinding(
+					findings,
+					'error',
+					'person-editorial',
+					slug,
+					'broken-biography-fragment',
+					'Biography paragraph appears to be cut off by an initial or abbreviation.',
+				);
 			}
 
 			if (BIO_WIKIPEDIA_PATTERNS.some((pattern) => pattern.test(paragraph))) {

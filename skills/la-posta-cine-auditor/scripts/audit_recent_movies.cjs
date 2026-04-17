@@ -563,13 +563,14 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	const normalizedCategory = normalizeText(movie.category || '');
 	const isAnimatedTitle =
 		normalizedCategory === 'anime' || normalizedCategory === 'animacion' || normalizedCategory === 'animación';
-	if (Array.isArray(movie.mainCast) && !isAnimatedTitle && movie.mainCast.length < 4) {
+	const isDocumentaryTitle = normalizedCategory === 'documental';
+	if (Array.isArray(movie.mainCast) && !isAnimatedTitle && !isDocumentaryTitle && movie.mainCast.length < 3) {
 		addFinding(
 			findings,
 			'warn',
 			'short-principal-cast',
 			candidatePath,
-			'Live-action entries should usually carry 4-5 principal performers in mainCast unless reliable official billing clearly supports fewer.',
+			'Live-action entries should usually carry at least 3 principal performers in mainCast unless reliable official billing clearly supports fewer.',
 		);
 	}
 

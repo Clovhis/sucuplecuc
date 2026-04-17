@@ -93,6 +93,30 @@ function normalizePersonName(value) {
 		.trim();
 }
 
+function countWords(value) {
+	return (String(value || '').match(/[\p{L}\p{N}]+/gu) || []).length;
+}
+
+function hasBrokenBiographyFragment(value) {
+	return /(?:\b[A-Z]\.|;\s*n\.|,\s*n\.)$/u.test(normalizeWhitespace(value));
+}
+
+function hasTemplateBiographyFiller(value) {
+	const text = normalizeWhitespace(value)
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '');
+	return [
+		/\bSu carrera quedo muy ligada a\b/i,
+		/\bDentro del catalogo del sitio\b/i,
+		/\bmantiene una carrera muy visible\b/i,
+		/\bfue ganando lugar dentro de la industria\b/i,
+		/\bEn el mapa editorial de Cine Posta\b/i,
+		/\bficha queda pensada para sumar contexto concreto\b/i,
+		/\bmencion rapida de filmografia\b/i,
+		/\bEn Cine Posta aparece ligado\b/i,
+	].some((pattern) => pattern.test(text));
+}
+
 function splitCreditNames(value) {
 	return normalizeWhitespace(value)
 		.split(/\s*,\s*|\s+y\s+/i)
@@ -277,6 +301,22 @@ function auditProfile({ slug, profile, peopleByName, moviesBySlug, allMovies, re
 		addFinding(findings, 'error', scope, 'biography debe tener entre 2 y 4 parrafos.');
 	} else if (profile.biography.some((entry) => !normalizeWhitespace(entry))) {
 		addFinding(findings, 'error', scope, 'biography contiene parrafos vacios.');
+	} else {
+		const biographyWords = countWords(profile.biography.join(' '));
+		if (biographyWords < 80) {
+			addFinding(
+				findings,
+				'error',
+				scope,
+				`biography es demasiado corta (${biographyWords} palabras); minimo editorial: 80 palabras.`,
+			);
+		}
+		if (profile.biography.some(hasBrokenBiographyFragment)) {
+			addFinding(findings, 'error', scope, 'biography contiene un parrafo cortado por una inicial o abreviatura.');
+		}
+		if (profile.biography.some(hasTemplateBiographyFiller)) {
+			addFinding(findings, 'error', scope, 'biography contiene relleno editorial generico en vez de datos biograficos.');
+		}
 	}
 
 	if (profile.stats != null && !Array.isArray(profile.stats)) {
