@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { stat } from 'node:fs/promises';
 import { getMoviePath, getMovieTrailerPath, getMovies } from '../lib/movies';
 import { getPersonPath, getPersonProfiles } from '../lib/people';
-import { ABOUT_PATH, SITE_URL } from '../lib/seo';
+import { ABOUT_PATH, PRIVACY_PATH, SITE_URL } from '../lib/seo';
 
 export const prerender = true;
 
@@ -63,9 +63,11 @@ export const GET: APIRoute = async () => {
 			.sort()
 			.at(-1);
 	const aboutLastMod = await getFileLastMod('src/pages/sobre-cine-posta.astro');
+	const privacyLastMod = await getFileLastMod('src/pages/politica-de-privacidad.astro');
 	const entries = [
 		{ pathname: '/', lastmod: homeLastMod },
 		{ pathname: ABOUT_PATH, lastmod: aboutLastMod },
+		{ pathname: PRIVACY_PATH, lastmod: privacyLastMod },
 		...personEntries,
 		...movieEntries,
 		...trailerEntries,

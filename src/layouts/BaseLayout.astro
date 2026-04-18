@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { ABOUT_PATH, CONTACT_EMAIL, SITE_LANGUAGE, SITE_LOCALE, SITE_NAME } from '../lib/seo';
+import { ABOUT_PATH, PRIVACY_PATH, SITE_LANGUAGE, SITE_LOCALE, SITE_NAME } from '../lib/seo';
 import { DEFAULT_SUPABASE_URL } from '../lib/supabaseClient';
 
 interface Props {
@@ -40,10 +40,7 @@ const contentSecurityPolicy = [
 const footerLinks = [
 	{ href: import.meta.env.BASE_URL, label: 'Inicio' },
 	{ href: ABOUT_PATH, label: 'Sobre Cine Posta' },
-	{
-		href: `mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Contacto%20y%20Prensa`,
-		label: 'Contacto / Prensa',
-	},
+	{ href: PRIVACY_PATH, label: 'Privacidad' },
 ];
 ---
 

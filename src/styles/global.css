@@ -3113,7 +3113,8 @@ img {
 	background: rgba(117, 153, 255, 0.1);
 }
 
-.about-page {
+.about-page,
+.privacy-page {
 	display: grid;
 	gap: 1.4rem;
 	padding-bottom: 3.6rem;
@@ -3629,6 +3630,40 @@ img {
 	text-decoration: underline;
 	text-decoration-color: rgba(255, 209, 188, 0.4);
 	text-underline-offset: 0.2em;
+}
+
+.privacy-page__hero {
+	max-width: 860px;
+}
+
+.privacy-page__content {
+	display: grid;
+	gap: 1.25rem;
+	max-width: 860px;
+}
+
+.privacy-page__section {
+	display: grid;
+	gap: 0.7rem;
+}
+
+.privacy-page__section h2,
+.privacy-page__section p {
+	margin: 0;
+}
+
+.privacy-page__section h2 {
+	font-size: 1rem;
+}
+
+.privacy-page__section p {
+	max-width: 72ch;
+	color: var(--muted);
+}
+
+.privacy-page__section + .privacy-page__section {
+	padding-top: 1.25rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-footer {

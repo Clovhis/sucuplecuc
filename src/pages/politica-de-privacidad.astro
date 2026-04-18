@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONTACT_EMAIL, PRIVACY_PATH, SITE_LANGUAGE, SITE_NAME, SITE_URL } from '../lib/seo';
+
+const pageTitle = `Política de Privacidad | ${SITE_NAME}`;
+const pageDescription =
+	'Política de privacidad de Cine Posta: información clara sobre anuncios de Google AdSense, cookies, medición de anuncios y opciones de consentimiento.';
+const privacyUrl = new URL(PRIVACY_PATH, SITE_URL).toString();
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		'@id': `${privacyUrl}#webpage`,
+		url: privacyUrl,
+		name: pageTitle,
+		description: pageDescription,
+		inLanguage: SITE_LANGUAGE,
+		isPartOf: {
+			'@type': 'WebSite',
+			name: SITE_NAME,
+			url: `${SITE_URL}/`,
+		},
+	},
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container privacy-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero privacy-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Privacidad, anuncios y cookies</p>
+			<h1 class="about-page__title">Política de Privacidad</h1>
+			<p class="about-page__lead">
+				En {SITE_NAME} queremos explicar esto sin vueltas: el sitio puede mostrar anuncios, y para eso pueden usarse
+				cookies u otras tecnologías parecidas.
+			</p>
+		</section>
+
+		<article class="about-page__card privacy-page__content fade-up" style="--item-delay: 80ms;">
+			<section class="privacy-page__section">
+				<h2>Anuncios en el sitio</h2>
+				<p>
+					{SITE_NAME} puede mostrar anuncios mediante Google AdSense. Esos anuncios ayudan a sostener el proyecto
+					y pueden aparecer en distintas partes del sitio.
+				</p>
+				<p>
+					Google y otros terceros relacionados con publicidad pueden usar cookies para mostrar anuncios, medir su
+					rendimiento o evitar que veas demasiadas veces el mismo aviso.
+				</p>
+			</section>
+
+			<section class="privacy-page__section">
+				<h2>Cookies y medición</h2>
+				<p>
+					Las cookies son pequeños datos que el navegador guarda para que un sitio o un proveedor externo recuerde
+					cierta información. En el contexto de publicidad, pueden servir para personalizar anuncios, medir anuncios
+					o entender si una campaña funciona.
+				</p>
+				<p>
+					El uso exacto de cookies puede depender de tu ubicación, del navegador, de tus ajustes y de las opciones
+					que hayas elegido en servicios de Google u otros proveedores.
+				</p>
+			</section>
+
+			<section class="privacy-page__section">
+				<h2>Consentimiento</h2>
+				<p>
+					Cuando corresponda, podés gestionar tu consentimiento desde el mensaje de privacidad que aparece en el
+					sitio o desde las opciones de tu navegador.
+				</p>
+				<p>
+					Para usuarios alcanzados por normativa europea, {SITE_NAME} usa un mensaje/CMP de consentimiento para
+					aceptar, rechazar o ajustar opciones vinculadas a anuncios y cookies cuando aplica.
+				</p>
+			</section>
+
+			<section class="privacy-page__section">
+				<h2>Contacto</h2>
+				<p>
+					Si tenés una consulta sobre privacidad, anuncios o cookies en {SITE_NAME}, podés escribir a
+					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Privacidad`}>{CONTACT_EMAIL}</a>.
+				</p>
+			</section>
+		</article>
+	</main>
+</BaseLayout>
