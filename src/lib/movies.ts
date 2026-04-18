@@ -464,7 +464,13 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	if (normalized.includes('drama') || normalized.includes('biografic')) {
 		target.add('drama');
 	}
-	if (normalized.includes('thriller') || normalized.includes('suspenso')) {
+	if (
+		normalized.includes('thriller') ||
+		normalized.includes('suspenso') ||
+		normalized.includes('suspense') ||
+		normalized.includes('misterio') ||
+		normalized.includes('mystery')
+	) {
 		target.add('thriller');
 	}
 	if (
