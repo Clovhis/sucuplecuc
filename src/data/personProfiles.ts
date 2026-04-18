@@ -352,43 +352,43 @@ const catalogBackedProfileMeta: Record<string, { profileImage?: string; referenc
 		referenceUrls: ['https://www.wikidata.org/wiki/Q586715', 'https://www.imdb.com/name/nm0246638/', 'https://www.themoviedb.org/person/140542-julieta-diaz'],
 	},
 	'keegan-michael-key': {
-		profileImage: '/people/keegan-michael-key-nm1221047.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Keegan-Michael%20Key%20(49550965587)%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q6382703', 'https://www.imdb.com/name/nm1221047/', 'https://www.themoviedb.org/person/298410-keegan-michael-key'],
 	},
 	'charlie-day': {
-		profileImage: '/people/charlie-day-nm0206359.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Charlie%20Day%20by%20Gage%20Skidmore.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q365915', 'https://www.imdb.com/name/nm0206359/', 'https://www.themoviedb.org/person/95101-charlie-day'],
 	},
 	'zazie-beetz': {
-		profileImage: '/people/zazie-beetz-nm5939164.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Zazie%20Beetz%20by%20Gage%20Skidmore.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q26997611', 'https://www.imdb.com/name/nm5939164/', 'https://www.themoviedb.org/person/1545693-zazie-beetz'],
 	},
 	'patricia-arquette': {
-		profileImage: '/people/patricia-arquette-nm0000099.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Patricia%20Arquette%202015.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q215976', 'https://www.imdb.com/name/nm0000099/', 'https://www.themoviedb.org/person/4687-patricia-arquette'],
 	},
 	'samara-weaving': {
-		profileImage: '/people/samara-weaving-nm3034977.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Samara%20Weaving%202015%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q7408805', 'https://www.imdb.com/name/nm3034977/', 'https://www.themoviedb.org/person/1372369-samara-weaving'],
 	},
 	'kathryn-newton': {
-		profileImage: '/people/kathryn-newton-nm1105980.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kathryn%20Newton%20during%20an%20interview%2C%20February%202023%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q165625', 'https://www.imdb.com/name/nm1105980/', 'https://www.themoviedb.org/person/221192-kathryn-newton'],
 	},
 	'adria-arjona': {
-		profileImage: '/people/adria-arjona-nm5245722.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Adria%20Arjona-7303.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q18684239', 'https://www.imdb.com/name/nm5245722/', 'https://www.themoviedb.org/person/1371297-adria-arjona'],
 	},
 	'jack-quaid': {
-		profileImage: '/people/jack-quaid-nm4425051.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jack%20Quaid%20at%2053rd%20Saturn%20Awards%202026.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q1139078', 'https://www.imdb.com/name/nm4425051/', 'https://www.themoviedb.org/person/1030513-jack-quaid'],
 	},
 	'cameron-diaz': {
-		profileImage: '/people/cameron-diaz-nm0000139.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cameron%20Diaz%20at%20WWD%20Style%20Awards%202026-1998.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q44380', 'https://www.imdb.com/name/nm0000139/', 'https://www.themoviedb.org/person/6941-cameron-diaz'],
 	},
 	'toni-collette': {
-		profileImage: '/people/toni-collette-nm0001057.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Toni%20Collette%20at%20the%202025%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q229291', 'https://www.imdb.com/name/nm0001057/', 'https://www.themoviedb.org/person/3051-toni-collette'],
 	},
 };
@@ -747,7 +747,7 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		referenceUrls: ['https://www.wikidata.org/wiki/Q2685', 'https://www.imdb.com/name/nm0000216/', 'https://www.themoviedb.org/person/1100-arnold-schwarzenegger'],
 	},
 	'carrie-fisher': {
-		profileImage: '/people/carrie-fisher-nm0000402.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Carrie%20Fisher%202013-a%20straightened.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q108941', 'https://www.imdb.com/name/nm0000402/', 'https://www.themoviedb.org/person/4-carrie-fisher'],
 	},
 	'carrie-anne-moss': {
@@ -759,31 +759,31 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		referenceUrls: ['https://www.wikidata.org/wiki/Q174311', 'https://www.imdb.com/name/nm0001659/', 'https://www.themoviedb.org/person/20006-christopher-reeve'],
 	},
 	'courteney-cox': {
-		profileImage: '/people/courteney-cox-nm0001073.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/CourteneyCoxFeb09%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q58912', 'https://www.imdb.com/name/nm0001073/', 'https://www.themoviedb.org/person/14405-courteney-cox'],
 	},
 	'donald-pleasence': {
-		profileImage: '/people/donald-pleasence-nm0000587.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Donald%20Pleasence%20Allan%20Warren%20edit.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q314914', 'https://www.imdb.com/name/nm0000587/', 'https://www.themoviedb.org/person/9221-donald-pleasence'],
 	},
 	'gal-gadot': {
-		profileImage: '/people/gal-gadot-nm2933757.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gal%20Gadot%202018%20cropped%20retouched.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q185654', 'https://www.imdb.com/name/nm2933757/'],
 	},
 	'geoffrey-rush': {
-		profileImage: '/people/geoffrey-rush-nm0001691.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Geoffrey%20Rush%20Final%20Portrait%20Red%20Carpet%20Berlinale%202017%2001%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q166272', 'https://www.imdb.com/name/nm0001691/', 'https://www.themoviedb.org/person/118-geoffrey-rush'],
 	},
 	'henry-cavill': {
-		profileImage: '/people/henry-cavill-nm0147147.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Cavill%20(48417913146)%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q295498', 'https://www.imdb.com/name/nm0147147/', 'https://www.themoviedb.org/person/73968-henry-cavill'],
 	},
 	'neve-campbell': {
-		profileImage: '/people/neve-campbell-nm0000117.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Neve%20Campbell%2004%20(21268333696).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q193482', 'https://www.imdb.com/name/nm0000117/', 'https://www.themoviedb.org/person/9206-neve-campbell'],
 	},
 	'robert-englund': {
-		profileImage: '/people/robert-englund-nm0000387.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Englund%20at%20Comiccon%20Brussels%202023%20(53039678100)%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q310389', 'https://www.imdb.com/name/nm0000387/', 'https://www.themoviedb.org/person/5139-robert-englund'],
 	},
 	'ving-rhames': {
@@ -791,23 +791,23 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		referenceUrls: ['https://www.wikidata.org/wiki/Q310315', 'https://www.imdb.com/name/nm0000609/', 'https://www.themoviedb.org/person/10182-ving-rhames'],
 	},
 	'ed-harris': {
-		profileImage: '/people/ed-harris-nm0000438.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ed%20Harris%20by%20Gage%20Skidmore.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q104791', 'https://www.imdb.com/name/nm0000438/', 'https://www.themoviedb.org/person/228-ed-harris'],
 	},
 	'gerard-butler': {
-		profileImage: '/people/gerard-butler-nm0124930.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20Butler%20(29681162176).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q169982', 'https://www.imdb.com/name/nm0124930/', 'https://www.themoviedb.org/person/17276-gerard-butler'],
 	},
 	'gwyneth-paltrow': {
-		profileImage: '/people/gwyneth-paltrow-nm0000569.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gwyneth%20Paltrow%20-%20Marty%20Supreme.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q34460', 'https://www.imdb.com/name/nm0000569/', 'https://www.themoviedb.org/person/12052-gwyneth-paltrow'],
 	},
 	'jeff-goldblum': {
-		profileImage: '/people/jeff-goldblum-nm0000156.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeff%20Goldblum%20by%20Gage%20Skidmore.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q106706', 'https://www.imdb.com/name/nm0000156/', 'https://www.themoviedb.org/person/4785-jeff-goldblum'],
 	},
 	'mel-gibson': {
-		profileImage: '/people/mel-gibson-nm0000154.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mel%20Gibson%20Cannes%202016%202.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q42229', 'https://www.imdb.com/name/nm0000154/', 'https://www.themoviedb.org/person/2461-mel-gibson'],
 	},
 	'paul-rudd': {
@@ -815,31 +815,31 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		referenceUrls: ['https://www.wikidata.org/wiki/Q276525', 'https://www.imdb.com/name/nm0748620/', 'https://www.themoviedb.org/person/22226-paul-rudd'],
 	},
 	'sam-worthington': {
-		profileImage: '/people/sam-worthington-nm0941777.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Avatar%20The%20Way%20of%20Water%20Tokyo%20Press%20Conference%20Sam%20Worthington%20(52563252594)%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q82085', 'https://www.imdb.com/name/nm0941777/', 'https://www.themoviedb.org/person/65731-sam-worthington'],
 	},
 	'uma-thurman': {
-		profileImage: '/people/uma-thurman-nm0000235.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Uma%20Thurman%20Cannes%202017%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q125017', 'https://www.imdb.com/name/nm0000235/', 'https://www.themoviedb.org/person/139-uma-thurman'],
 	},
 	'bryce-dallas-howard': {
-		profileImage: '/people/bryce-dallas-howard-nm0397171.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bryce%20Dallas%20Howard%20June%202018%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q229775', 'https://www.imdb.com/name/nm0397171/', 'https://www.themoviedb.org/person/18997-bryce-dallas-howard'],
 	},
 	'chris-pine': {
-		profileImage: '/people/chris-pine-nm1517976.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chris%20Pine%20(Cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q23466', 'https://www.imdb.com/name/nm1517976/', 'https://www.themoviedb.org/person/62064-chris-pine'],
 	},
 	'christopher-lloyd': {
-		profileImage: '/people/christopher-lloyd-nm0000502.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Lloyd%20(53135075986).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q109324', 'https://www.imdb.com/name/nm0000502/', 'https://www.themoviedb.org/person/1062-christopher-lloyd'],
 	},
 	'david-arquette': {
-		profileImage: '/people/david-arquette-nm0000274.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/David%20Arquette%20Alpha1%202019%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q294185', 'https://www.imdb.com/name/nm0000274/', 'https://www.themoviedb.org/person/15234-david-arquette'],
 	},
 	'evangeline-lilly': {
-		profileImage: '/people/evangeline-lilly-nm1431940.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Evangeline%20Lilly%202014%20Comic%20Con%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q160392', 'https://www.imdb.com/name/nm1431940/', 'https://www.themoviedb.org/person/19034-evangeline-lilly'],
 	},
 	'james-franco': {
@@ -847,27 +847,27 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		referenceUrls: ['https://www.wikidata.org/wiki/Q306403', 'https://www.imdb.com/name/nm0290556/', 'https://www.themoviedb.org/person/17051-james-franco'],
 	},
 	'jason-bateman': {
-		profileImage: '/people/jason-bateman-nm0000867.png',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jason%20Bateman%202018.png?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q284636', 'https://www.imdb.com/name/nm0000867/', 'https://www.themoviedb.org/person/23532-jason-bateman'],
 	},
 	'linda-hamilton': {
-		profileImage: '/people/linda-hamilton-nm0000157.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Linda%20Hamilton%20Photo%20Op%20GalaxyCon%20Raleigh%202024.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q208214', 'https://www.imdb.com/name/nm0000157/', 'https://www.themoviedb.org/person/2713-linda-hamilton'],
 	},
 	'marlon-brando': {
-		profileImage: '/people/marlon-brando-nm0000008.png',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marlon%20Brando%20publicity%20for%20One-Eyed%20Jacks.png?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q34012', 'https://www.imdb.com/name/nm0000008/', 'https://www.themoviedb.org/person/3084-marlon-brando'],
 	},
 	'michael-j-fox': {
-		profileImage: '/people/michael-j-fox-nm0000150.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20J%20Fox%202020.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q395274', 'https://www.imdb.com/name/nm0000150/', 'https://www.themoviedb.org/person/521-michael-j-fox'],
 	},
 	'orlando-bloom': {
-		profileImage: '/people/orlando-bloom-nm0089217.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Orlando%20Bloom%20Cannes%202013.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q44467', 'https://www.imdb.com/name/nm0089217/', 'https://www.themoviedb.org/person/114-orlando-bloom'],
 	},
 	'patrick-stewart': {
-		profileImage: '/people/patrick-stewart-nm0001772.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Patrick%20Stewart%20by%20Gage%20Skidmore%202.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q16296', 'https://www.imdb.com/name/nm0001772/', 'https://www.themoviedb.org/person/2387-patrick-stewart'],
 	},
 	'paul-walker': {
@@ -879,11 +879,11 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		referenceUrls: ['https://www.wikidata.org/wiki/Q271500', 'https://www.imdb.com/name/nm1935086/', 'https://www.themoviedb.org/person/62561-tessa-thompson'],
 	},
 	'tommy-lee-jones': {
-		profileImage: '/people/tommy-lee-jones-nm0000169.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tommy%20Lee%20Jones%202017.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q170587', 'https://www.imdb.com/name/nm0000169/', 'https://www.themoviedb.org/person/2176-tommy-lee-jones'],
 	},
 	'vin-diesel': {
-		profileImage: '/people/vin-diesel-nm0004874.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Vin%20Diesel%202013.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q178166', 'https://www.imdb.com/name/nm0004874/', 'https://www.themoviedb.org/person/12835-vin-diesel'],
 	},
 	'wesley-snipes': {
@@ -891,47 +891,47 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		referenceUrls: ['https://www.wikidata.org/wiki/Q189694', 'https://www.imdb.com/name/nm0000648/', 'https://www.themoviedb.org/person/10814-wesley-snipes'],
 	},
 	'anthony-mackie': {
-		profileImage: '/people/anthony-mackie-nm1107001.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Anthony%20Mackie%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q511554', 'https://www.imdb.com/name/nm1107001/', 'https://www.themoviedb.org/person/53650-anthony-mackie'],
 	},
 	'andy-serkis': {
-		profileImage: '/people/andy-serkis-nm0785227.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Andy%20Serkis%20Comic-Con%202011.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q206922', 'https://www.imdb.com/name/nm0785227/', 'https://www.themoviedb.org/person/1333-andy-serkis'],
 	},
 	'jodie-comer': {
-		profileImage: '/people/jodie-comer-nm3069650.jpeg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jodie%20Comer%20(cropped).jpeg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q16567346', 'https://www.imdb.com/name/nm3069650/', 'https://www.themoviedb.org/person/1388593-jodie-comer'],
 	},
 	'penelope-cruz': {
-		profileImage: '/people/penelope-cruz-nm0004851.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Goyas%202024%20-%20Pen%C3%A9lope%20Cruz-2%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q39666', 'https://www.imdb.com/name/nm0004851/', 'https://www.themoviedb.org/person/955-penelope-cruz'],
 	},
 	'michael-caine': {
-		profileImage: '/people/michael-caine-nm0000323.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Caine%20-%20Viennale%202012%20a%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q123351', 'https://www.imdb.com/name/nm0000323/', 'https://www.themoviedb.org/person/3895-michael-caine'],
 	},
 	'michael-shannon': {
-		profileImage: '/people/michael-shannon-nm0788335.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/MichaelShannon-byPhilipRomano.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q41449', 'https://www.imdb.com/name/nm0788335/', 'https://www.themoviedb.org/person/335-michael-shannon'],
 	},
 	'jennifer-garner': {
-		profileImage: '/people/jennifer-garner-nm0004950.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jennifer%20Garner%20at%20the%20Fast%20Company%20Innovation%20Festival%20-%2044972951114%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q172044', 'https://www.imdb.com/name/nm0004950/', 'https://www.themoviedb.org/person/9278-jennifer-garner'],
 	},
 	'jeremy-renner': {
-		profileImage: '/people/jeremy-renner-nm0719637.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Renner%20at%20TIFF%202025%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q23365', 'https://www.imdb.com/name/nm0719637/', 'https://www.themoviedb.org/person/17604-jeremy-renner'],
 	},
 	'melissa-barrera': {
-		profileImage: '/people/melissa-barrera-nm4574440.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Melissa%20Barrera%202023.jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q20810462', 'https://www.imdb.com/name/nm4574440/', 'https://www.themoviedb.org/person/1373659-melissa-barrera'],
 	},
 	'alberto-ammann': {
-		profileImage: '/people/alberto-ammann-nm2975962.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Goyas%202025%20-%20Alberto%20Ammann%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q2595437', 'https://www.imdb.com/name/nm2975962/', 'https://www.themoviedb.org/person/110424-alberto-ammann'],
 	},
 	'luis-ziembrowski': {
-		profileImage: '/people/luis-ziembrowski-nm0956249.jpg',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Luis%20Ziembrowski%20-%202015%20(cropped).jpg?width=640',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q5984494', 'https://www.imdb.com/name/nm0956249/', 'https://www.themoviedb.org/person/1028444-luis-ziembrowski'],
 	},
 };
