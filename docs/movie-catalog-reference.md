@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-04-19. Fuente: src/data/movies/*.json
 
-Total de peliculas: 690
+Total de peliculas: 691
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -26,6 +26,7 @@ Total de peliculas: 690
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Cine | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Cine | +13 |
+| 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
