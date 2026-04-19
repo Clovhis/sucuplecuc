@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-11. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 320
+Total de personas con ficha exclusiva: 321
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -286,6 +286,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ryan Coogler | `ryan-coogler` | /personas/ryan-coogler/ | Director | 4 | 3 |
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 3 | 3 |
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 4 | 3 |
+| Sadie Sandler | `sadie-sandler` | /personas/sadie-sandler/ | Actriz | 1 | 6 |
 | Sam Mendes | `sam-mendes` | /personas/sam-mendes/ | Director | 3 | 3 |
 | Sam Rockwell | `sam-rockwell` | /personas/sam-rockwell/ | Actor | 1 | 2 |
 | Sam Raimi | `sam-raimi` | /personas/sam-raimi/ | Director | 4 | 3 |

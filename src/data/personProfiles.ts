@@ -6327,6 +6327,32 @@ const bulkRequestedProfiles = {
 	]),
 	...buildCatalogBackedProfiles(globalActressDefaults, [
 		{
+			slug: 'sadie-sandler',
+			name: 'Sadie Sandler',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Sadie%20Sandler%20(cropped).jpg?width=640',
+			headline:
+				'Actriz estadounidense que paso de apariciones familiares en comedias de Happy Madison a liderar una nueva etapa teen de Netflix.',
+			birthPlace: 'Los Angeles, California, Estados Unidos',
+			spotlight:
+				'Su lugar mas interesante hoy esta en esa zona entre comedia de crecimiento, incomodidad adolescente y un timing seco que ya no depende solamente del apellido Sandler.',
+			biography: [
+				'Sadie Madison Sandler nacio el 6 de mayo de 2006 en Los Angeles, hija de Adam Sandler y Jackie Sandler. Empezo a aparecer desde chica en producciones ligadas a Happy Madison, primero con participaciones breves y trabajos de voz, dentro de un entorno familiar muy asociado a la comedia mainstream.',
+				'El salto mas visible llego con You Are So Not Invited to My Bat Mitzvah, donde compartio pantalla con Sunny, Adam y Jackie Sandler en una comedia de crecimiento que Netflix presento como un asunto familiar. Ahi dejo de ser solo una presencia alrededor de la filmografia de su padre y empezo a quedar asociada a personajes adolescentes con timing natural.',
+				'En Roommates, la pelicula que la conecta directamente con el catalogo del sitio, toma el centro como Devon, una estudiante que busca reinventarse y termina atrapada en una convivencia venenosa. La gracia de su trabajo esta en sostener la incomodidad sin sobreactuarla: la ingenuidad, la necesidad de pertenecer y el enojo aparecen como parte de una misma energia.',
+			],
+			awards: [{ label: 'Family Film Award', category: 'Best Family Film (Television)', work: 'You Are So Not Invited to My Bat Mitzvah', year: 2024 }],
+			knownFor: ['companeras-de-cuarto-2026'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Sadie_Sandler',
+				'https://www.allmovie.com/artist/sadie-sandler-an83822',
+				'https://www.netflix.com/tudum/articles/you-are-so-not-invited-to-my-bat-mitzvah-cast',
+				'https://en.wikipedia.org/wiki/Roommates_(2026_film)',
+				'https://www.imdb.com/title/tt21276878/awards/',
+				'https://www.imdb.com/name/nm2490721/',
+			],
+		},
+		{
 			slug: 'zazie-beetz',
 			name: 'Zazie Beetz',
 			headline: 'Actriz de presencia muy contemporanea, siempre efectiva para personajes secos, filosos o un poco imprevisibles.',
