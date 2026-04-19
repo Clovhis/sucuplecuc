@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-17. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-19. Fuente: src/data/movies/*.json
 
-Total de peliculas: 689
+Total de peliculas: 690
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -11,6 +11,7 @@ Total de peliculas: 689
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Stremio | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Cine | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Cine | +17 |
+| 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Stremio | +13 |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine | +16 |
