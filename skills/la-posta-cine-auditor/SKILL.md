@@ -11,6 +11,14 @@ This skill must always execute the bundled audit script. Manual eyeballing is no
 
 If the branch still contains fresh `Cine` claims that have not yet been checked against current cartelera, invoke `la-posta-cine-cartelera-revalidator` first and then return to this skill.
 
+## Token budget
+
+- Keep user-facing progress updates to the minimum: audit start, blockers, validation failures that require edits, and final status.
+- Use the bundled auditor output as the primary signal; do not manually restate every passing check.
+- Prefer candidate-specific audit commands over full-catalog commands unless the task explicitly requires a full audit.
+- Summarize errors/warnings by candidate and severity; paste long logs only when they are needed to explain a fix.
+- When chaining from another skill, carry forward only the candidate paths, changed platform labels, and relevant evidence URLs.
+
 ## Scope
 
 Use this skill after a movie add/backfill/revalidation workflow, especially when the branch contains new files under `src/data/movies`, platform changes from `Cine` to another label, or provider adjustments that add/remove `releasePlatforms`.

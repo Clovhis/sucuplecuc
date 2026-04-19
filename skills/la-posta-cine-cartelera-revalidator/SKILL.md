@@ -7,6 +7,14 @@ description: "Revalidate La Posta Cine movie entries that still claim `releasePl
 
 Revalidate only movie-content data. Do not touch site code.
 
+## Token budget
+
+- Keep user-facing progress updates to the minimum: revalidation start, ambiguous evidence/blockers, platform changes, validation failures, and final result.
+- Do not narrate each source lookup or unchanged title; summarize unchanged titles in one grouped result.
+- Use local scripts and catalog files before opening individual movie JSON files.
+- For web evidence, keep only URLs and the specific fact extracted from each source; do not quote or paste page content unless needed for ambiguity.
+- When handing off to the auditor, pass only affected movie paths, final platform labels, and key evidence URLs.
+
 Allowed edit paths:
 
 - `src/data/movies/**`

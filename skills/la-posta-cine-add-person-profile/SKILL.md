@@ -9,6 +9,14 @@ Use this workflow when the request is to create or expand a ficha exclusiva de a
 
 This skill must always finish with the bundled auditor. Manual eyeballing is not enough.
 
+## Token budget
+
+- Keep user-facing progress updates to the minimum: branch/start, blockers that require user input, validation failures, and final result.
+- Do not narrate routine searches, file reads, biography lookups, or script runs unless the result changes the plan.
+- Prefer `docs/person-profile-catalog-reference.md`, existing helpers, and targeted file reads before loading broad data sets into context.
+- Summarize source strategy and command results; do not paste long source excerpts, generated HTML, or full command output unless needed to diagnose a failure.
+- In batch profile work, report aggregate status and only call out profiles that changed, failed validation, or need user input.
+
 ## Install and use
 
 Install:

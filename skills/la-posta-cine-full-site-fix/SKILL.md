@@ -9,6 +9,14 @@ Run a full-site QA and editorial repair pass for this repo.
 
 This skill is not report-only. If it finds a clear issue, fix it in the same run, then revalidate.
 
+## Token budget
+
+- Keep user-facing progress updates to the minimum: branch/start, major audit result, blockers, validation failures, and final result.
+- Do not narrate every finding while scanning; group findings by area and severity after the auditor finishes.
+- Use the bundled full-site auditor as the primary discovery surface before opening individual files.
+- Read and edit only files tied to confirmed findings; avoid broad manual scans unless the auditor output is insufficient.
+- Summarize repeated editorial fixes by pattern and list representative file paths instead of pasting large copy blocks.
+
 ## Non-negotiables
 
 - Never work directly on `main`.

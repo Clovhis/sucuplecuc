@@ -15,6 +15,14 @@ This skill does not replace the existing load and audit skills. Its job is to:
 4. if the resulting movie ends in `Cine`, hand off to `la-posta-cine-cartelera-revalidator`
 5. hand off the resulting candidate file(s) to `la-posta-cine-auditor`
 
+## Token budget
+
+- Keep user-facing progress updates to the minimum: scout start, no-candidate blocker, selected candidate, downstream failure, and final result.
+- Do not narrate each rejected search result; keep rejection reasons for the final shortlist summary.
+- Build a shortlist from source result pages, then read only the pages needed to verify the strongest candidates.
+- Pass downstream skills only the selected title, year, release date, likely AR platform context, and source URLs.
+- Summarize evidence as facts plus URLs; do not paste long release articles or catalog excerpts into chat.
+
 ## Workspace rule
 
 Always work inside `C:\WebsitePeliculas`.

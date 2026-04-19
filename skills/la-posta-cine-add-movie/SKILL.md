@@ -7,6 +7,14 @@ description: Add a single movie entry to La posta cine safely from a plain-langu
 
 Execute this workflow when the user asks to add a movie entry.
 
+## Token budget
+
+- Keep user-facing progress updates to the minimum: branch/start, blockers that require user input, validation failures, and final result.
+- Do not narrate routine searches, file reads, metadata lookups, or script runs unless the result changes the plan.
+- Prefer catalog files and bundled scripts before loading many raw movie/person files into context.
+- When chaining another skill, pass only the candidate slug/path, key decision needed, and relevant evidence URLs.
+- Summarize command output and sources; paste full diffs only where this workflow explicitly requires showing a diff.
+
 ## Install and use
 
 Install (copy this folder into Codex skills path):
