@@ -9,10 +9,12 @@ Run a full-site QA and editorial repair pass for this repo.
 
 This skill is not report-only. If it finds a clear issue, fix it in the same run, then revalidate.
 
-## Token budget
+## Quiet mode and token budget
 
-- Keep user-facing progress updates to the minimum: branch/start, major audit result, blockers, validation failures, and final result.
-- Do not narrate every finding while scanning; group findings by area and severity after the auditor finishes.
+- Run in quiet mode by default. Send no progress updates for routine successful steps.
+- Allowed user-facing messages before the final response: one required initial acknowledgment, a blocker that needs user input, a validation failure that changes the plan, or a long-run heartbeat only after several minutes of silence.
+- Do not send updates for branch creation, audit start, every finding while scanning, obvious local fixes, re-audit success, `astro check` start, build start, or build success.
+- Group findings by area and severity in the final response.
 - Use the bundled full-site auditor as the primary discovery surface before opening individual files.
 - Read and edit only files tied to confirmed findings; avoid broad manual scans unless the auditor output is insufficient.
 - Summarize repeated editorial fixes by pattern and list representative file paths instead of pasting large copy blocks.

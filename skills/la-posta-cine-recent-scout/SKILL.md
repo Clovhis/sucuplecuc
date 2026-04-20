@@ -15,13 +15,15 @@ This skill does not replace the existing load and audit skills. Its job is to:
 4. if the resulting movie ends in `Cine`, hand off to `la-posta-cine-cartelera-revalidator`
 5. hand off the resulting candidate file(s) to `la-posta-cine-auditor`
 
-## Token budget
+## Quiet mode and token budget
 
-- Keep user-facing progress updates to the minimum: scout start, no-candidate blocker, selected candidate, downstream failure, and final result.
-- Do not narrate each rejected search result; keep rejection reasons for the final shortlist summary.
+- Run in quiet mode by default. Send no progress updates for routine successful steps.
+- Allowed user-facing messages before the final response: one required initial acknowledgment, no viable candidate, ambiguity that needs user input, downstream failure, or a long-run heartbeat only after several minutes of silence.
+- Do not send updates for scout start, each source lookup, shortlist growth, rejected candidates, selected candidate before handoff, duplicate check success, add-workflow handoff, audit handoff, audit success, build start, or build success.
+- Keep rejection reasons for the final shortlist summary.
 - Build a shortlist from source result pages, then read only the pages needed to verify the strongest candidates.
-- Pass downstream skills only the selected title, year, release date, likely AR platform context, and source URLs.
-- Summarize evidence as facts plus URLs; do not paste long release articles or catalog excerpts into chat.
+- Pass downstream skills only the selected title, year, release date, likely AR platform context, source URLs, and the instruction to preserve quiet mode.
+- Summarize evidence as facts plus URLs in the final response; do not paste long release articles or catalog excerpts into chat.
 
 ## Workspace rule
 

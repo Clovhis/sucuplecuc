@@ -11,13 +11,15 @@ This skill must always execute the bundled audit script. Manual eyeballing is no
 
 If the branch still contains fresh `Cine` claims that have not yet been checked against current cartelera, invoke `la-posta-cine-cartelera-revalidator` first and then return to this skill.
 
-## Token budget
+## Quiet mode and token budget
 
-- Keep user-facing progress updates to the minimum: audit start, blockers, validation failures that require edits, and final status.
+- Run in quiet mode by default. Send no progress updates for routine successful steps.
+- Allowed user-facing messages before the final response: one required initial acknowledgment, a blocker that needs user input, a validation failure that requires edits, or a long-run heartbeat only after several minutes of silence.
+- Do not send updates for audit start, passing checks, candidate discovery, fixes that are obvious and local, build start, or build success.
 - Use the bundled auditor output as the primary signal; do not manually restate every passing check.
 - Prefer candidate-specific audit commands over full-catalog commands unless the task explicitly requires a full audit.
-- Summarize errors/warnings by candidate and severity; paste long logs only when they are needed to explain a fix.
-- When chaining from another skill, carry forward only the candidate paths, changed platform labels, and relevant evidence URLs.
+- Summarize errors/warnings by candidate and severity in the final response; paste long logs only when they are needed to explain a fix.
+- When chaining from another skill, carry forward only the candidate paths, changed platform labels, and relevant evidence URLs. Preserve quiet mode.
 
 ## Scope
 

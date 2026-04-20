@@ -7,13 +7,15 @@ description: Add a single movie entry to La posta cine safely from a plain-langu
 
 Execute this workflow when the user asks to add a movie entry.
 
-## Token budget
+## Quiet mode and token budget
 
-- Keep user-facing progress updates to the minimum: branch/start, blockers that require user input, validation failures, and final result.
-- Do not narrate routine searches, file reads, metadata lookups, or script runs unless the result changes the plan.
+- Run in quiet mode by default. Send no progress updates for routine successful steps.
+- Allowed user-facing messages before the final response: one required initial acknowledgment, a blocker that needs user input, a validation failure that changes the plan, or a long-run heartbeat only after several minutes of silence.
+- Do not send updates for branch creation, source lookup progress, metadata findings, duplicate checks, JSON creation, enrichment success, audit success, build start, or build success.
+- Do not narrate searches, file reads, metadata lookups, or script runs unless they fail or force a decision.
 - Prefer catalog files and bundled scripts before loading many raw movie/person files into context.
-- When chaining another skill, pass only the candidate slug/path, key decision needed, and relevant evidence URLs.
-- Summarize command output and sources; paste full diffs only where this workflow explicitly requires showing a diff.
+- When chaining another skill, pass only the candidate slug/path, key decision needed, and relevant evidence URLs. Tell the downstream skill to keep quiet mode.
+- Summarize command output and sources in the final response; paste full diffs only where this workflow explicitly requires showing a diff.
 
 ## Install and use
 

@@ -7,13 +7,15 @@ description: "Revalidate La Posta Cine movie entries that still claim `releasePl
 
 Revalidate only movie-content data. Do not touch site code.
 
-## Token budget
+## Quiet mode and token budget
 
-- Keep user-facing progress updates to the minimum: revalidation start, ambiguous evidence/blockers, platform changes, validation failures, and final result.
-- Do not narrate each source lookup or unchanged title; summarize unchanged titles in one grouped result.
+- Run in quiet mode by default. Send no progress updates for routine successful steps.
+- Allowed user-facing messages before the final response: one required initial acknowledgment, ambiguous evidence that needs user input, a validation failure that changes the plan, or a long-run heartbeat only after several minutes of silence.
+- Do not send updates for revalidation start, each source lookup, unchanged titles, obvious platform changes, catalog refresh success, audit handoff, audit success, build start, or build success.
+- Summarize unchanged titles and platform changes only in the final response.
 - Use local scripts and catalog files before opening individual movie JSON files.
 - For web evidence, keep only URLs and the specific fact extracted from each source; do not quote or paste page content unless needed for ambiguity.
-- When handing off to the auditor, pass only affected movie paths, final platform labels, and key evidence URLs.
+- When handing off to the auditor, pass only affected movie paths, final platform labels, and key evidence URLs. Preserve quiet mode.
 
 Allowed edit paths:
 

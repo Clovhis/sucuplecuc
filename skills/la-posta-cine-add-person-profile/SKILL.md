@@ -9,12 +9,14 @@ Use this workflow when the request is to create or expand a ficha exclusiva de a
 
 This skill must always finish with the bundled auditor. Manual eyeballing is not enough.
 
-## Token budget
+## Quiet mode and token budget
 
-- Keep user-facing progress updates to the minimum: branch/start, blockers that require user input, validation failures, and final result.
-- Do not narrate routine searches, file reads, biography lookups, or script runs unless the result changes the plan.
+- Run in quiet mode by default. Send no progress updates for routine successful steps.
+- Allowed user-facing messages before the final response: one required initial acknowledgment, a blocker that needs user input, a validation failure that changes the plan, or a long-run heartbeat only after several minutes of silence.
+- Do not send updates for branch creation, source lookup progress, catalog checks, profile draft creation, image lookup success, auditor success, build start, or build success.
+- Do not narrate searches, file reads, biography lookups, or script runs unless they fail or force a decision.
 - Prefer `docs/person-profile-catalog-reference.md`, existing helpers, and targeted file reads before loading broad data sets into context.
-- Summarize source strategy and command results; do not paste long source excerpts, generated HTML, or full command output unless needed to diagnose a failure.
+- Summarize source strategy and command results in the final response; do not paste long source excerpts, generated HTML, or full command output unless needed to diagnose a failure.
 - In batch profile work, report aggregate status and only call out profiles that changed, failed validation, or need user input.
 
 ## Install and use
