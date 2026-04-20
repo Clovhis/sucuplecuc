@@ -363,6 +363,7 @@ export function createPersonStructuredData(
 		| 'image'
 		| 'remoteImageUrl'
 		| 'birthDate'
+		| 'deathDate'
 		| 'birthPlace'
 		| 'nationalityPrimary'
 		| 'imdbUrl'
@@ -391,6 +392,7 @@ export function createPersonStructuredData(
 			jobTitle: person.roles.join(', '),
 			nationality: person.nationalityPrimary,
 			birthDate: person.birthDate,
+			deathDate: person.deathDate,
 			birthPlace: person.birthPlace
 				? {
 						'@type': 'Place',

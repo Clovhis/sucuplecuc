@@ -5516,9 +5516,9 @@ const bulkExpansionProfiles = {
 			name: 'Luis Brandoni',
 			headline: 'Figura central del cine y el teatro argentinos, siempre muy fuerte en personajes populares y de oficio clasico.',
 			spotlight:
-				'Su peso local no sale solo del cine: tambien viene de decadas de teatro y television, donde construyo una figura reconocible, querible y de enorme oficio.',
+				'Su peso local no salio solo del cine: tambien vino de decadas de teatro y television, donde construyo una figura reconocible, querible y de enorme oficio.',
 			biography: [
-				'Luis Brandoni ocupa un lugar rarisimo dentro de la cultura argentina porque combina prestigio actoral, popularidad transversal y una relacion muy vieja con el teatro, la tele y el cine nacional. Tiene esa mezcla de actor clasico y figura popular que le permite pasar de la comedia al drama sin perder identidad.',
+				'Luis Brandoni ocupo un lugar rarisimo dentro de la cultura argentina porque combino prestigio actoral, popularidad transversal y una relacion muy vieja con el teatro, la tele y el cine nacional. Fallecio el 20 de abril de 2026, a los 86 anos, despues de permanecer internado por una caida domestica.',
 				'La seleccion del catalogo lo conecta con Esperando la carroza, Mi obra maestra, El cuento de las comadrejas y La odisea de los giles, un recorrido muy bueno para entender su alcance: humor costumbrista, duelos actorales, cine de gran publico y personajes que parecen salir directo de la calle argentina.',
 			],
 			awards: [{ label: 'Premios Sur', category: 'Nominacion a mejor actor', work: 'Mi obra maestra', year: 2019 }],

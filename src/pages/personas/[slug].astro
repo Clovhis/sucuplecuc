@@ -26,10 +26,17 @@ const pageDescription = `${profile.name}: biografia, edad, premios y peliculas r
 const profileImage =
 	profile.profileImage ?? profile.image ?? profile.remoteImageUrl ?? '/posters/poster-no-disponible.svg';
 const structuredData = createPersonStructuredData(profile, filmography, pageTitle, pageDescription);
-const age = getAge(profile.birthDate, profile.birthYear);
+const age = getAge(profile.birthDate, profile.birthYear, profile.deathDate, profile.deathYear);
+const deathDateLabel = formatPersonDate(profile.deathDate) ?? profile.deathYear;
+const lifeFactLabel = deathDateLabel ? 'Fallecimiento' : 'Edad';
+const lifeFactValue = deathDateLabel
+	? `${deathDateLabel}${age ? ` · ${age} años` : ''}`
+	: age
+		? `${age} años`
+		: 'No confirmada';
 const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} en Cine Posta`;
 
-function getAge(birthDate?: string, birthYear?: number): number | undefined {
+function getAge(birthDate?: string, birthYear?: number, deathDate?: string, deathYear?: number): number | undefined {
 	const currentDate = new Date();
 	if (!birthDate && !birthYear) {
 		return undefined;
@@ -38,15 +45,18 @@ function getAge(birthDate?: string, birthYear?: number): number | undefined {
 	const year = birthDate ? Number.parseInt(birthDate.slice(0, 4), 10) : birthYear;
 	const month = birthDate ? Number.parseInt(birthDate.slice(5, 7), 10) : 1;
 	const day = birthDate ? Number.parseInt(birthDate.slice(8, 10), 10) : 1;
+	const endYear = deathDate ? Number.parseInt(deathDate.slice(0, 4), 10) : (deathYear ?? currentDate.getUTCFullYear());
+	const endMonth = deathDate ? Number.parseInt(deathDate.slice(5, 7), 10) : (deathYear ? 1 : currentDate.getUTCMonth() + 1);
+	const endDay = deathDate ? Number.parseInt(deathDate.slice(8, 10), 10) : (deathYear ? 1 : currentDate.getUTCDate());
 
-	if (!year) {
+	if (!year || !endYear) {
 		return undefined;
 	}
 
-	let ageValue = currentDate.getUTCFullYear() - year;
+	let ageValue = endYear - year;
 	if (
-		currentDate.getUTCMonth() + 1 < month ||
-		(currentDate.getUTCMonth() + 1 === month && currentDate.getUTCDate() < day)
+		endMonth < month ||
+		(endMonth === month && endDay < day)
 	) {
 		ageValue -= 1;
 	}
@@ -54,7 +64,7 @@ function getAge(birthDate?: string, birthYear?: number): number | undefined {
 	return ageValue > 0 ? ageValue : undefined;
 }
 
-function formatBirthDate(value?: string): string | undefined {
+function formatPersonDate(value?: string): string | undefined {
 	if (!value) {
 		return undefined;
 	}
@@ -114,11 +124,11 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 				<div class="person-page__facts" aria-label="Datos principales">
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">Nacimiento</span>
-						<strong>{formatBirthDate(profile.birthDate) ?? profile.birthYear ?? 'No disponible'}</strong>
+						<strong>{formatPersonDate(profile.birthDate) ?? profile.birthYear ?? 'No disponible'}</strong>
 					</div>
 					<div class="person-page__fact">
-						<span class="person-page__fact-label">Edad</span>
-						<strong>{age ? `${age} años` : 'No confirmada'}</strong>
+						<span class="person-page__fact-label">{lifeFactLabel}</span>
+						<strong>{lifeFactValue}</strong>
 					</div>
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">Origen</span>
