@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-11. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 321
+Total de personas con ficha exclusiva: 333
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -57,6 +57,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Cecilia Dopazo | `cecilia-dopazo` | /personas/cecilia-dopazo/ | Actriz | 2 | 3 |
 | Charlie Day | `charlie-day` | /personas/charlie-day/ | Actor | 2 | 3 |
 | Charlize Theron | `charlize-theron` | /personas/charlize-theron/ | Actriz / Productora | 2 | 3 |
+| Charlton Heston | `charlton-heston` | /personas/charlton-heston/ | Actor | 2 | 3 |
 | Chino Darín | `chino-darin` | /personas/chino-darin/ | Actor | 2 | 3 |
 | Chiwetel Ejiofor | `chiwetel-ejiofor` | /personas/chiwetel-ejiofor/ | Actor | 4 | 2 |
 | Chloé Zhao | `chloe-zhao` | /personas/chloe-zhao/ | Director | 3 | 3 |
@@ -72,6 +73,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Christopher Reeve | `christopher-reeve` | /personas/christopher-reeve/ | Actor | 4 | 3 |
 | Christopher Walken | `christopher-walken` | /personas/christopher-walken/ | Actor | 2 | 3 |
 | Cillian Murphy | `cillian-murphy` | /personas/cillian-murphy/ | Actor | 2 | 3 |
+| Clark Gable | `clark-gable` | /personas/clark-gable/ | Actor | 3 | 3 |
 | Clint Eastwood | `clint-eastwood` | /personas/clint-eastwood/ | Director | 2 | 4 |
 | Colin Farrell | `colin-farrell` | /personas/colin-farrell/ | Actor | 2 | 3 |
 | Colin Firth | `colin-firth` | /personas/colin-firth/ | Actor | 1 | 3 |
@@ -141,6 +143,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Harrison Ford | `harrison-ford` | /personas/harrison-ford/ | Actor | 4 | 3 |
 | Hayao Miyazaki | `hayao-miyazaki` | /personas/hayao-miyazaki/ | Director / Guionista / Productor | 4 | 3 |
 | Héctor Alterio | `hector-alterio` | /personas/hector-alterio/ | Actor | 4 | 3 |
+| Helena Bonham Carter | `helena-bonham-carter` | /personas/helena-bonham-carter/ | Actriz | 2 | 3 |
 | Henry Cavill | `henry-cavill` | /personas/henry-cavill/ | Actor | 4 | 3 |
 | Hugh Grant | `hugh-grant` | /personas/hugh-grant/ | Actor | 2 | 3 |
 | Hugh Jackman | `hugh-jackman` | /personas/hugh-jackman/ | Actor | 4 | 3 |
@@ -176,7 +179,9 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Joaquin Phoenix | `joaquin-phoenix` | /personas/joaquin-phoenix/ | Actor | 4 | 3 |
 | Jodie Comer | `jodie-comer` | /personas/jodie-comer/ | Actriz | 2 | 3 |
 | Jodie Foster | `jodie-foster` | /personas/jodie-foster/ | Actriz / Directora | 2 | 3 |
+| Joe Pesci | `joe-pesci` | /personas/joe-pesci/ | Actor / Músico | 2 | 3 |
 | John David Washington | `john-david-washington` | /personas/john-david-washington/ | Actor | 1 | 3 |
+| John Lithgow | `john-lithgow` | /personas/john-lithgow/ | Actor / Autor | 2 | 3 |
 | John Travolta | `john-travolta` | /personas/john-travolta/ | Actor | 2 | 3 |
 | Johnny Depp | `johnny-depp` | /personas/johnny-depp/ | Actor | 4 | 3 |
 | Jon M. Chu | `jon-m-chu` | /personas/jon-m-chu/ | Director | 2 | 3 |
@@ -260,6 +265,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Penélope Cruz | `penelope-cruz` | /personas/penelope-cruz/ | Actriz | 2 | 3 |
 | Peter Jackson | `peter-jackson` | /personas/peter-jackson/ | Director / Guionista / Productor | 3 | 3 |
 | Peter Lanzani | `peter-lanzani` | /personas/peter-lanzani/ | Actor | 2 | 3 |
+| Peter O'Toole | `peter-o-toole` | /personas/peter-o-toole/ | Actor | 3 | 3 |
 | Pierce Brosnan | `pierce-brosnan` | /personas/pierce-brosnan/ | Actor | 1 | 3 |
 | Quentin Tarantino | `quentin-tarantino` | /personas/quentin-tarantino/ | Director / Guionista / Productor | 4 | 3 |
 | Rachel McAdams | `rachel-mcadams` | /personas/rachel-mcadams/ | Actriz | 3 | 3 |
@@ -298,8 +304,10 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Scarlett Johansson | `scarlett-johansson` | /personas/scarlett-johansson/ | Actriz | 4 | 3 |
 | Sean Baker | `sean-baker` | /personas/sean-baker/ | Director | 1 | 3 |
 | Sebastian Stan | `sebastian-stan` | /personas/sebastian-stan/ | Actor | 3 | 3 |
+| Shirley MacLaine | `shirley-maclaine` | /personas/shirley-maclaine/ | Actriz / Bailarina / Autora | 3 | 4 |
 | Sigourney Weaver | `sigourney-weaver` | /personas/sigourney-weaver/ | Actriz | 4 | 3 |
 | Soledad Villamil | `soledad-villamil` | /personas/soledad-villamil/ | Actriz | 2 | 3 |
+| Stanley Kubrick | `stanley-kubrick` | /personas/stanley-kubrick/ | Director / Guionista / Productor | 2 | 3 |
 | Steven Spielberg | `steven-spielberg` | /personas/steven-spielberg/ | Director / Productor / Guionista | 4 | 3 |
 | Steven Yeun | `steven-yeun` | /personas/steven-yeun/ | Actor | 1 | 3 |
 | Sydney Sweeney | `sydney-sweeney` | /personas/sydney-sweeney/ | Actriz | 4 | 3 |
@@ -307,6 +315,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Taika Waititi | `taika-waititi` | /personas/taika-waititi/ | Director | 3 | 3 |
 | Tessa Thompson | `tessa-thompson` | /personas/tessa-thompson/ | Actriz | 3 | 3 |
 | Tim Burton | `tim-burton` | /personas/tim-burton/ | Director / Productor / Guionista | 3 | 4 |
+| Tim Roth | `tim-roth` | /personas/tim-roth/ | Actor / Director | 3 | 3 |
 | Timothée Chalamet | `timothee-chalamet` | /personas/timothee-chalamet/ | Actor | 3 | 3 |
 | Tom Cruise | `tom-cruise` | /personas/tom-cruise/ | Actor | 3 | 3 |
 | Tom Hanks | `tom-hanks` | /personas/tom-hanks/ | Actor / Productor | 4 | 3 |
@@ -322,8 +331,11 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ving Rhames | `ving-rhames` | /personas/ving-rhames/ | Actor | 4 | 3 |
 | Viola Davis | `viola-davis` | /personas/viola-davis/ | Actriz | 3 | 3 |
 | Wagner Moura | `wagner-moura` | /personas/wagner-moura/ | Actor | 2 | 3 |
+| Wesley Snipes | `wesley-snipes` | /personas/wesley-snipes/ | Actor / Productor | 3 | 3 |
 | Will Smith | `will-smith` | /personas/will-smith/ | Actor | 3 | 3 |
 | Willem Dafoe | `willem-dafoe` | /personas/willem-dafoe/ | Actor | 4 | 3 |
+| William Wyler | `william-wyler` | /personas/william-wyler/ | Director / Productor | 3 | 3 |
+| Winona Ryder | `winona-ryder` | /personas/winona-ryder/ | Actriz | 2 | 3 |
 | Woody Harrelson | `woody-harrelson` | /personas/woody-harrelson/ | Actor | 4 | 3 |
 | Yorgos Lanthimos | `yorgos-lanthimos` | /personas/yorgos-lanthimos/ | Director | 1 | 2 |
 | Zazie Beetz | `zazie-beetz` | /personas/zazie-beetz/ | Actriz | 2 | 3 |

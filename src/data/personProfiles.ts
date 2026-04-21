@@ -7783,6 +7783,351 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 			'https://www.labiennale.org/en/history-venice-film-festival',
 		],
 	},
+	'shirley-maclaine': {
+		slug: 'shirley-maclaine',
+		name: 'Shirley MacLaine',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Shirley%20MacLaine%20-%201960.jpg?width=640',
+		headline:
+			'Actriz, bailarina y autora de presencia luminosa, una figura clave del Hollywood adulto que cruzó comedia, melodrama y musical sin perder personalidad.',
+		roles: ['Actriz', 'Bailarina', 'Autora'],
+		birthPlace: 'Richmond, Virginia, Estados Unidos',
+		spotlight:
+			'Su carrera tiene esa mezcla muy rara de ligereza, nervio cómico y melancolía que explica por qué The Apartment y Terms of Endearment siguen funcionando tan bien.',
+		biography: [
+			'Shirley MacLaine nació el 24 de abril de 1934 en Richmond, Virginia, como Shirley MacLean Beaty. Empezó a estudiar ballet de chica y, después de la secundaria, se mudó a Nueva York para trabajar como bailarina y modelo. El teatro musical fue su primera escuela profesional antes de que el cine la encontrara casi de golpe.',
+			'Su entrada grande llegó desde Broadway, cuando trabajaba como corista y suplente en The Pajama Game. Alfred Hitchcock la eligió para The Trouble with Harry y, desde ahí, MacLaine armó una carrera central en el cine estadounidense de los 50, 60 y 70, con directores como Billy Wilder, Vincente Minnelli y Hal Ashby.',
+			'The Apartment, Irma la Douce y Terms of Endearment muestran sus mejores registros: ironía, vulnerabilidad y un timing que nunca parece forzado. Ganó el Oscar por Terms of Endearment, pero su importancia excede el premio: es una de esas actrices que vuelven más inteligente cualquier escena donde aparecen.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '1984' },
+			{ label: 'AFI', value: 'Life Achievement' },
+			{ label: 'Debut cine', value: '1955' },
+		],
+		awards: [{ label: 'Oscar', category: 'Mejor actriz', work: 'Terms of Endearment', year: 1984 }],
+		knownFor: ['the-apartment-1960', 'terms-of-endearment-1983', 'around-the-world-in-80-days-1956'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Shirley-MacLaine',
+			'https://www.wikidata.org/wiki/Q95026',
+			'https://www.oscars.org/oscars/ceremonies/1984',
+			'https://www.afi.com/laa/shirley-maclaine/',
+		],
+	},
+	'wesley-snipes': {
+		slug: 'wesley-snipes',
+		name: 'Wesley Snipes',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Wesley%20Snipes%20(41969097750)%20(cropped).jpg?width=640',
+		headline:
+			'Actor de acción con formación seria y presencia filosa, capaz de combinar artes marciales, comedia seca y un magnetismo de estrella noventosa.',
+		roles: ['Actor', 'Productor'],
+		birthPlace: 'Orlando, Florida, Estados Unidos',
+		spotlight:
+			'Antes de que el cine de superhéroes se volviera industria total, Snipes ya había convertido a Blade en un personaje con cuerpo, actitud y estilo propio.',
+		biography: [
+			'Wesley Snipes nació el 31 de julio de 1962 en Orlando, Florida, y creció entre Florida y Nueva York. Se formó en actuación y también en artes marciales, una combinación que después iba a marcar buena parte de su imagen pública: no era solo presencia física, también tenía una precisión de movimiento muy entrenada.',
+			'Su carrera empezó a tomar forma en los 80 y explotó en los 90 con New Jack City, White Men Can’t Jump, Passenger 57 y Demolition Man. Snipes podía jugar de villano, héroe de acción o comediante con la misma confianza, y eso lo volvió una de las caras más versátiles del cine comercial de esa década.',
+			'Blade terminó de fijar su lugar en la cultura pop. La película mezcló cómic, terror, artes marciales y actitud urbana antes de que Marvel dominara el mapa. En paralelo, su premio Volpi en Venecia por One Night Stand recuerda que su carrera también tuvo reconocimiento festivalero, no solo taquilla.',
+		],
+		stats: [
+			{ label: 'Volpi Cup', value: '1997' },
+			{ label: 'Artes marciales', value: 'Marca física' },
+			{ label: 'Blade', value: 'Trilogía completa' },
+		],
+		awards: [{ label: 'Volpi Cup', category: 'Mejor actor', work: 'One Night Stand', year: 1997 }],
+		knownFor: ['blade-1998', 'blade-ii-2002', 'blade-trinity-2004'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Wesley_Snipes',
+			'https://www.wikidata.org/wiki/Q189694',
+			'https://www.labiennale.org/en/history-venice-film-festival',
+		],
+	},
+	'clark-gable': {
+		slug: 'clark-gable',
+		name: 'Clark Gable',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Clark%20Gable%20-%20publicity.JPG?width=640',
+		headline:
+			'Estrella mayor del Hollywood clásico, dueño de una masculinidad cinematográfica que marcó durante décadas el molde del galán estadounidense.',
+		roles: ['Actor'],
+		birthPlace: 'Cadiz, Ohio, Estados Unidos',
+		spotlight:
+			'Su carisma parece de otra época, pero todavía se entiende perfecto: Gable tenía autoridad, humor y una cámara que casi siempre parecía estar esperándolo.',
+		biography: [
+			'Clark Gable nació el 1 de febrero de 1901 en Cadiz, Ohio, y antes de ser una estrella pasó por trabajos muy lejos del glamour de Hollywood. Su camino hacia el cine incluyó teatro, compañías itinerantes y una construcción de oficio que después MGM convirtió en una imagen pública enorme.',
+			'Durante los años 30 se volvió uno de los rostros centrales del sistema de estudios. It Happened One Night fue decisiva: MGM lo prestó a Columbia y el movimiento terminó en una consagración absoluta, con la película arrasando en los Oscar y Gable ganando como mejor actor.',
+			'Gone with the Wind terminó de fijarlo como icono cultural, aunque su filmografía clásica es bastante más amplia. Lo que sobrevive en pantalla no es solo la pose del galán, sino una mezcla de picardía, fuerza y soltura que explica por qué su nombre quedó tan pegado a la idea misma de estrella.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '1935' },
+			{ label: 'MGM', value: 'Estrella central' },
+			{ label: 'Era', value: 'Hollywood clásico' },
+		],
+		awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'It Happened One Night', year: 1935 }],
+		knownFor: ['it-happened-one-night-1934', 'gone-with-the-wind-1939', 'mutiny-on-the-bounty-1935'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Clark-Gable',
+			'https://www.wikidata.org/wiki/Q71243',
+			'https://www.oscars.org/oscars/ceremonies/1935',
+		],
+	},
+	'peter-o-toole': {
+		slug: 'peter-o-toole',
+		name: "Peter O'Toole",
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20O%27Toole%20-%201968.jpg?width=640',
+		headline:
+			'Actor irlandés-británico de intensidad teatral y mirada hipnótica, una de las presencias más grandes que haya dado el cine épico moderno.',
+		roles: ['Actor'],
+		birthPlace: 'Leeds, Inglaterra, Reino Unido',
+		spotlight:
+			'Lawrence of Arabia no lo volvió famoso por accidente: O’Toole tenía esa cualidad peligrosa de parecer frágil, brillante y desmesurado al mismo tiempo.',
+		biography: [
+			'Peter O’Toole nació el 2 de agosto de 1932; su propio relato volvió legendaria la confusión entre Irlanda e Inglaterra, aunque el registro de nacimiento conocido lo ubica en Leeds, donde creció. Antes de la actuación trabajó en periodismo local, pasó por la Royal Navy y se formó en la Royal Academy of Dramatic Art.',
+			'El teatro fue su base real: Bristol Old Vic, repertorio clásico y una técnica que después llevó al cine con una electricidad muy particular. Lawrence of Arabia lo convirtió en una estrella mundial desde su primer gran protagónico cinematográfico, y a partir de ahí su carrera quedó ligada a personajes brillantes, obsesivos o directamente fuera de escala.',
+			'O’Toole recibió ocho nominaciones competitivas al Oscar y un Oscar honorario en 2003. Esa relación rara con la Academia dice bastante: pocas carreras fueron tan reconocidas y, a la vez, tan difíciles de encerrar en una estatua. En pantalla, su presencia sigue pareciendo más grande que la película que la contiene.',
+		],
+		stats: [
+			{ label: 'Oscar honorario', value: '2003' },
+			{ label: 'Nominaciones', value: '8 al Oscar' },
+			{ label: 'Formación', value: 'RADA' },
+		],
+		awards: [{ label: 'Oscar', category: 'Premio honorario', work: 'Trayectoria', year: 2003 }],
+		knownFor: ['lawrence-of-arabia-1962', 'the-last-emperor-1987', 'supergirl-1984'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Peter_O%27Toole',
+			'https://www.wikidata.org/wiki/Q103876',
+			'https://www.theguardian.com/film/2003/jan/27/awardsandprizes.oscars2003',
+		],
+	},
+	'tim-roth': {
+		slug: 'tim-roth',
+		name: 'Tim Roth',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tim%20Roth%20cropped.jpg?width=640',
+		headline:
+			'Actor británico de nervio callejero y amenaza contenida, fundamental para entender cierta electricidad del cine independiente de los 90.',
+		roles: ['Actor', 'Director'],
+		birthPlace: 'Dulwich, Londres, Reino Unido',
+		spotlight:
+			'Roth siempre parece estar midiendo la escena desde un lugar incómodo: incluso quieto, transmite peligro, ironía o una vulnerabilidad que no se entrega del todo.',
+		biography: [
+			'Tim Roth nació el 14 de mayo de 1961 en Dulwich, Londres. Su entrada pública fue fuerte desde el comienzo: Made in Britain lo instaló como una cara nueva del realismo televisivo británico, áspera y difícil de domesticar, muy lejos del actor prolijo de escuela clásica.',
+			'The Hit lo confirmó en el cine y después Quentin Tarantino lo volvió una presencia clave de Reservoir Dogs y Pulp Fiction. Roth llevó a Hollywood una energía británica más sucia, rápida y nerviosa, ideal para personajes que parecen pensar y atacar al mismo tiempo.',
+			'Con Rob Roy consiguió reconocimiento grande de premios, incluido el BAFTA a mejor actor de reparto y la nominación al Oscar. Desde entonces alternó cine de autor, mainstream y televisión, manteniendo una presencia rara: secundaria muchas veces, pero casi nunca menor.',
+		],
+		stats: [
+			{ label: 'BAFTA', value: '1996' },
+			{ label: 'Oscar', value: '1 nominación' },
+			{ label: 'Debut fuerte', value: 'Made in Britain' },
+		],
+		awards: [{ label: 'BAFTA', category: 'Mejor actor de reparto', work: 'Rob Roy', year: 1996 }],
+		knownFor: ['reservoir-dogs-1992', 'the-incredible-hulk-2008', 'peaky-blinders-the-immortal-man-2026'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Tim_Roth',
+			'https://www.wikidata.org/wiki/Q203804',
+			'https://www.bafta.org/awards/film/?award-year=1996',
+		],
+	},
+	'winona-ryder': {
+		slug: 'winona-ryder',
+		name: 'Winona Ryder',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Winona%20Ryder-63849.jpg?width=640',
+		headline:
+			'Actriz de sensibilidad nerviosa y aura generacional, una figura clave entre el cine adolescente raro, el drama de época y el fantástico popular.',
+		roles: ['Actriz'],
+		birthPlace: 'Winona, Minnesota, Estados Unidos',
+		spotlight:
+			'Su mejor pantalla combina fragilidad, inteligencia y una rareza muy reconocible: Ryder hizo que el desajuste también pudiera ser estrella.',
+		biography: [
+			'Winona Ryder nació el 29 de octubre de 1971 en Winona, Minnesota, y creció en un entorno familiar muy ligado a libros, cultura alternativa y comunidad artística. Empezó a actuar de adolescente y encontró rápido una identidad propia, más cerca de la sensibilidad outsider que del molde clásico de estrella juvenil.',
+			'Beetlejuice y Heathers la convirtieron en emblema de una juventud oscura, irónica y muy ochentosa. Después amplió su registro con Edward Scissorhands, The Age of Innocence, Little Women y Girl, Interrupted, alternando fantasía, comedia negra y drama de prestigio.',
+			'Su Golden Globe por The Age of Innocence marcó un reconocimiento formal a una actriz que ya era ícono cultural. Más tarde Stranger Things la devolvió al centro masivo, pero su peso venía de antes: pocas actrices definieron tan bien el encanto melancólico de los 90.',
+		],
+		stats: [
+			{ label: 'Golden Globe', value: '1994' },
+			{ label: 'Oscar', value: '2 nominaciones' },
+			{ label: 'Registro', value: 'Outsider pop' },
+		],
+		awards: [{ label: 'Golden Globe', category: 'Mejor actriz de reparto', work: 'The Age of Innocence', year: 1994 }],
+		knownFor: ['beetlejuice-beetlejuice-2024', 'alien-resurrection-1997'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Winona_Ryder',
+			'https://www.wikidata.org/wiki/Q106175',
+			'https://goldenglobes.com/film/age-of-innocence-the/',
+		],
+	},
+	'joe-pesci': {
+		slug: 'joe-pesci',
+		name: 'Joe Pesci',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/JoePesci-2009.jpg?width=640',
+		headline:
+			'Actor estadounidense de energía explosiva, capaz de hacer comedia familiar y violencia criminal con una precisión casi musical.',
+		roles: ['Actor', 'Músico'],
+		birthPlace: 'Newark, Nueva Jersey, Estados Unidos',
+		spotlight:
+			'Pesci puede parecer pequeño en el plano, pero cambia la temperatura de una escena apenas abre la boca: ahí está buena parte de su poder.',
+		biography: [
+			'Joe Pesci nació el 9 de febrero de 1943 en Newark, Nueva Jersey. Antes de consolidarse como actor trabajó como músico, comediante y artista de club nocturno, un recorrido que explica bastante de su oído para el ritmo, la pausa y la explosión verbal.',
+			'Su carrera cambió cuando Robert De Niro y Martin Scorsese vieron The Death Collector y lo llamaron para Raging Bull. A partir de ahí quedó asociado a un tipo de intensidad muy particular: personajes rápidos, peligrosos, muchas veces graciosos hasta que dejan de serlo.',
+			'Goodfellas le dio el Oscar a mejor actor de reparto y fijó uno de los villanos más feroces del cine moderno. Pero Home Alone mostró otra cara igual de precisa: Pesci podía convertir el golpe físico y la humillación de slapstick en una máquina cómica perfecta.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '1991' },
+			{ label: 'Scorsese', value: 'Colaborador clave' },
+			{ label: 'Registro', value: 'Comedia + amenaza' },
+		],
+		awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Goodfellas', year: 1991 }],
+		knownFor: ['goodfellas-1990', 'home-alone-1990'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Joe_Pesci',
+			'https://www.wikidata.org/wiki/Q203900',
+			'https://www.oscars.org/oscars/ceremonies/1991/A',
+		],
+	},
+	'john-lithgow': {
+		slug: 'john-lithgow',
+		name: 'John Lithgow',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/John%20Lithgow%20at%20Met%20Opera%20Opening%20in%202008.jpg?width=640',
+		headline:
+			'Actor de formación teatral y elasticidad enorme, capaz de pasar del villano inquietante a la comedia televisiva sin perder autoridad.',
+		roles: ['Actor', 'Autor'],
+		birthPlace: 'Rochester, Nueva York, Estados Unidos',
+		spotlight:
+			'Lithgow tiene una de esas carreras donde el prestigio teatral, la televisión popular y el cine de género conviven sin que ninguna zona parezca prestada.',
+		biography: [
+			'John Lithgow nació el 19 de octubre de 1945 en Rochester, Nueva York, en una familia muy vinculada al teatro. Estudió en Harvard y luego en la London Academy of Music and Dramatic Art con una beca Fulbright, una formación que explica la precisión técnica que sostiene incluso sus papeles más desbordados.',
+			'Ganó un Tony poco después de su debut en Broadway y después cruzó al cine con una naturalidad notable. The World According to Garp y Terms of Endearment le dieron nominaciones consecutivas al Oscar, mientras que su trabajo televisivo terminó de volverlo una cara familiar para varias generaciones.',
+			'En cine puede ser cálido, ridículo, intimidante o solemne sin perder claridad. Desde villanos de género hasta papeles institucionales como Conclave, Lithgow trabaja siempre con una presencia muy calibrada, de actor que sabe exactamente cuándo agrandar o achicar el gesto.',
+		],
+		stats: [
+			{ label: 'Tony', value: '1973' },
+			{ label: 'Emmy', value: 'Múltiples premios' },
+			{ label: 'Formación', value: 'Harvard + LAMDA' },
+		],
+		awards: [{ label: 'Tony', category: 'Mejor actor destacado', work: 'The Changing Room', year: 1973 }],
+		knownFor: ['conclave-2024', 'rise-of-the-planet-of-the-apes-2011'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/John_Lithgow',
+			'https://www.wikidata.org/wiki/Q212064',
+			'https://www.televisionacademy.com/bios/john-lithgow',
+		],
+	},
+	'charlton-heston': {
+		slug: 'charlton-heston',
+		name: 'Charlton Heston',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Charlton%20Heston%20-%201953.jpg?width=640',
+		headline:
+			'Actor monumental del cine épico estadounidense, asociado a personajes de autoridad física, gesto solemne y escala casi bíblica.',
+		roles: ['Actor'],
+		birthPlace: 'Evanston, Illinois, Estados Unidos',
+		spotlight:
+			'Heston fue una de las caras que Hollywood eligió cuando necesitaba que una película pareciera más grande que la vida cotidiana.',
+		biography: [
+			'Charlton Heston nació el 4 de octubre de 1923 en Evanston, Illinois. Estudió actuación en Northwestern University, sirvió en la Segunda Guerra Mundial y luego construyó una carrera teatral y televisiva antes de instalarse definitivamente en el cine.',
+			'Su físico, su voz y su manera de ocupar el cuadro lo empujaron hacia epopeyas históricas y religiosas. The Ten Commandments y Ben-Hur lo volvieron una figura central del espectáculo hollywoodense de gran escala, con personajes diseñados para sostener decorados, masas y conflictos morales enormes.',
+			'Ganó el Oscar por Ben-Hur, pero su carrera no quedó encerrada en el péplum. También trabajó en ciencia ficción, westerns y thrillers políticos. Lo más reconocible de Heston es esa cualidad de estatua viva: a veces rígida, sí, pero casi siempre poderosa.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '1960' },
+			{ label: 'Épica', value: 'Marca central' },
+			{ label: 'Northwestern', value: 'Formación actoral' },
+		],
+		awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Ben-Hur', year: 1960 }],
+		knownFor: ['ben-hur-1959', 'the-greatest-show-on-earth-1952'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Charlton_Heston',
+			'https://www.wikidata.org/wiki/Q104094',
+			'https://www.oscars.org/oscars/ceremonies/1960',
+		],
+	},
+	'helena-bonham-carter': {
+		slug: 'helena-bonham-carter',
+		name: 'Helena Bonham Carter',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/MerchantIvoryCurzMayfair201124%20(9%20of%2028)%20(54154554480)%20(cropped).jpg?width=640',
+		headline:
+			'Actriz británica de imaginación gótica y formación clásica, capaz de moverse entre época, fantasía, comedia negra y drama con una libertad muy propia.',
+		roles: ['Actriz'],
+		birthPlace: 'Londres, Inglaterra, Reino Unido',
+		spotlight:
+			'Su carrera es mucho más que excentricidad: Bonham Carter sabe encontrar humanidad incluso en personajes deformados por el poder, el duelo o la rareza.',
+		biography: [
+			'Helena Bonham Carter nació el 26 de mayo de 1966 en Londres. Empezó a actuar muy joven y sus primeros grandes papeles quedaron asociados al cine de época, sobre todo a la tradición Merchant Ivory, donde su presencia parecía ideal para personajes contenidos, inteligentes y emocionalmente atrapados.',
+			'Con el tiempo rompió ese molde de manera bastante radical. Fight Club, la saga Harry Potter y varias colaboraciones con Tim Burton la llevaron hacia una zona más gótica, barroca y popular, sin abandonar nunca la precisión de actriz clásica que ya traía desde sus comienzos.',
+			'The King’s Speech le dio el BAFTA a mejor actriz de reparto y reforzó una idea clara: Bonham Carter puede ser excéntrica, pero nunca es decorativa. Incluso en películas enormes, suele encontrar un detalle de carácter que vuelve específico al personaje.',
+		],
+		stats: [
+			{ label: 'BAFTA', value: '2011' },
+			{ label: 'Oscar', value: '2 nominaciones' },
+			{ label: 'Registro', value: 'Clásico + gótico' },
+		],
+		awards: [{ label: 'BAFTA', category: 'Mejor actriz de reparto', work: "The King's Speech", year: 2011 }],
+		knownFor: ['fight-club-1999', 'the-king-s-speech-2010'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Helena_Bonham_Carter',
+			'https://www.wikidata.org/wiki/Q170428',
+			'https://www.bafta.org/awards/film/?award-year=2011',
+		],
+	},
+	'stanley-kubrick': {
+		slug: 'stanley-kubrick',
+		name: 'Stanley Kubrick',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Stanley%20Kubrick%20(1949%20portrait%20by%20Phillip%20Harrington%20-%20cropped).jpg?width=640',
+		headline:
+			'Director estadounidense de control obsesivo y potencia visual enorme, una figura decisiva para entender el cine moderno como precisión, misterio y escala.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Bronx, Nueva York, Estados Unidos',
+		spotlight:
+			'Kubrick filmó pocos largometrajes, pero casi todos parecen diseñados para quedarse discutiendo con el cine durante décadas.',
+		biography: [
+			'Stanley Kubrick nació el 26 de julio de 1928 en el Bronx, Nueva York. Antes de dirigir fue fotógrafo de la revista Look, una escuela visual decisiva para su forma de mirar: encuadre preciso, paciencia y una relación muy física con la composición.',
+			'Después de cortos y largometrajes independientes, Kubrick empezó a ganar peso con The Killing, Paths of Glory y Spartacus. Más adelante, Dr. Strangelove, 2001: A Space Odyssey, A Clockwork Orange, Barry Lyndon, The Shining y Full Metal Jacket lo convirtieron en un autor central, siempre distinto y siempre reconocible.',
+			'Su único Oscar competitivo fue por los efectos visuales de 2001, algo coherente con una carrera obsesionada por empujar la técnica. Pero reducirlo al control sería poco: lo más fuerte de Kubrick es cómo ese control deja entrar preguntas incómodas sobre violencia, deseo, poder y miedo.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '1969' },
+			{ label: 'Look', value: 'Fotógrafo' },
+			{ label: 'Marca', value: 'Control formal' },
+		],
+		awards: [{ label: 'Oscar', category: 'Efectos visuales especiales', work: '2001: A Space Odyssey', year: 1969 }],
+		knownFor: ['2001-a-space-odyssey-1968', 'the-shining-1980'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/Stanley-Kubrick',
+			'https://www.wikidata.org/wiki/Q2001',
+			'https://www.oscars.org/oscars/ceremonies/1969',
+		],
+	},
+	'william-wyler': {
+		slug: 'william-wyler',
+		name: 'William Wyler',
+		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/William%20Wyler%20portrait.jpg?width=640',
+		headline:
+			'Director clásico de precisión narrativa y dirección de actores extraordinaria, uno de los nombres más premiados y constantes del Hollywood de estudios.',
+		roles: ['Director', 'Productor'],
+		birthPlace: 'Mulhouse, Alsacia, Francia',
+		spotlight:
+			'Wyler no tenía una firma ostentosa, pero sí una eficacia brutal: sus películas parecen simples hasta que se mira cómo administra tensión, espacio y actuación.',
+		biography: [
+			'William Wyler nació el 1 de julio de 1902 en Mulhouse, entonces parte de Alsacia. Llegó a Estados Unidos joven y empezó desde abajo en Universal, pasando por tareas de producción antes de dirigir westerns mudos y aprender el oficio dentro del sistema industrial.',
+			'Con los años se volvió uno de los directores más respetados del Hollywood clásico. Wuthering Heights, The Letter, Roman Holiday, The Heiress, Mrs. Miniver, The Best Years of Our Lives y Ben-Hur muestran una carrera de géneros muy variados, siempre apoyada en actores llevados a un nivel altísimo.',
+			'Ganó tres Oscar como mejor director, por Mrs. Miniver, The Best Years of Our Lives y Ben-Hur. Ese récord no alcanza para explicar su importancia, pero ayuda: Wyler fue un maestro de la puesta invisible, de esa dirección que parece no empujar y sin embargo controla todo.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '3 como director' },
+			{ label: 'Nominaciones', value: 'Récord histórico' },
+			{ label: 'Marca', value: 'Actores + relato' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'Mrs. Miniver', year: 1943 },
+			{ label: 'Oscar', category: 'Mejor director', work: 'The Best Years of Our Lives', year: 1947 },
+			{ label: 'Oscar', category: 'Mejor director', work: 'Ben-Hur', year: 1960 },
+		],
+		knownFor: ['ben-hur-1959', 'mrs-miniver-1942', 'the-best-years-of-our-lives-1946'],
+		referenceUrls: [
+			'https://www.britannica.com/biography/William-Wyler',
+			'https://www.wikidata.org/wiki/Q51540',
+			'https://www.oscars.org/oscars/ceremonies/1960',
+		],
+	},
 	...bulkTrendProfiles,
 	...bulkExpansionProfiles,
 	...bulkCompletionProfiles,
