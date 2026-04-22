@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-19. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-22. Fuente: src/data/movies/*.json
 
-Total de peliculas: 691
+Total de peliculas: 694
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -24,8 +24,9 @@ Total de peliculas: 691
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Stremio | +13 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Cine | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio | +16 |
-| 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Cine | +16 |
+| 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Stremio | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Cine | +13 |
+| 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Cine | +17 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
@@ -47,6 +48,7 @@ Total de peliculas: 691
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Stremio | +12 |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Stremio | +16 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Stremio | +17 |
+| 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Cine | +17 |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Stremio | +17 |
 | 2026 | Whistle | whistle-2026 | Terror | Stremio | +16 |
 | 2025 | ¿Y dónde está el policía? | y-donde-esta-el-policia-2025 | Comedia | Paramount Plus | +13 |
@@ -70,7 +72,7 @@ Total de peliculas: 691
 | 2025 | Final Destination: Bloodlines | final-destination-bloodlines-2025 | Terror | HBO Max | +16 |
 | 2025 | Frankenstein | frankenstein-2025 | Terror | Netflix | +16 |
 | 2025 | G20 | g20-2025 | Accion | Prime Video | +16 |
-| 2025 | Hamnet | hamnet-2025 | Drama | Cine | +13 |
+| 2025 | Hamnet | hamnet-2025 | Drama | Stremio | +13 |
 | 2025 | Havoc | havoc-2025 | Accion | Netflix | +16 |
 | 2025 | Heart Eyes | heart-eyes-2025 | Terror | Netflix | +17 |
 | 2025 | Homo Argentum | homo-argentum-2025 | Comedia | Disney Plus | +14 |
@@ -90,6 +92,7 @@ Total de peliculas: 691
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max | +16 |
 | 2025 | Opus | opus-2025 | Thriller | HBO Max | +17 |
 | 2025 | Otro viernes de locos | otro-viernes-de-locos-2025 | Comedia | Disney Plus | ATP |
+| 2025 | Padre Madre Hermana Hermano | padre-madre-hermana-hermano-2025 | Drama | Cine | +13 |
 | 2025 | Scarlet | scarlet-2025 | Anime | Stremio | ATP |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |

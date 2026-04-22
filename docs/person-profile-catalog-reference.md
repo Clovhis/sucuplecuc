@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-11. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 333
+Total de personas con ficha exclusiva: 335
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -190,6 +190,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Joseph Kosinski | `joseph-kosinski` | /personas/joseph-kosinski/ | Director | 2 | 3 |
 | Josh Brolin | `josh-brolin` | /personas/josh-brolin/ | Actor | 4 | 3 |
 | Josh O'Connor | `josh-o-connor` | /personas/josh-o-connor/ | Actor | 1 | 2 |
+| Juan José Campanella | `juan-jose-campanella` | /personas/juan-jose-campanella/ | Director / Guionista / Productor | 5 | 4 |
 | Jude Law | `jude-law` | /personas/jude-law/ | Actor | 2 | 3 |
 | Julianne Moore | `julianne-moore` | /personas/julianne-moore/ | Actriz | 2 | 3 |
 | Julieta Díaz | `julieta-diaz` | /personas/julieta-diaz/ | Actriz | 1 | 3 |
@@ -301,6 +302,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 4 | 3 |
 | Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 2 | 3 |
 | Santiago Mitre | `santiago-mitre` | /personas/santiago-mitre/ | Director | 2 | 3 |
+| Santiago Segura | `santiago-segura` | /personas/santiago-segura/ | Director / Actor / Guionista / Productor | 1 | 4 |
 | Scarlett Johansson | `scarlett-johansson` | /personas/scarlett-johansson/ | Actriz | 4 | 3 |
 | Sean Baker | `sean-baker` | /personas/sean-baker/ | Director | 1 | 3 |
 | Sebastian Stan | `sebastian-stan` | /personas/sebastian-stan/ | Actor | 3 | 3 |

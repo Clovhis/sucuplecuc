@@ -8128,6 +8128,78 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 			'https://www.oscars.org/oscars/ceremonies/1960',
 		],
 	},
+	'juan-jose-campanella': {
+		slug: 'juan-jose-campanella',
+		name: 'Juan José Campanella',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Juan%20Jos%C3%A9%20Camapanella%202019.jpg?width=640',
+		headline:
+			'Director argentino de relato clásico y pulso popular, capaz de cruzar melodrama, comedia, policial y memoria sin perder llegada masiva.',
+		roles: ['Director', 'Guionista', 'Productor'],
+		birthPlace: 'Buenos Aires, Argentina',
+		spotlight:
+			'Su cine suele trabajar vínculos, duelo y comunidad con una claridad narrativa enorme: por eso El secreto de sus ojos funcionó igual en los Oscar que en la cultura popular argentina.',
+		biography: [
+			'Juan José Campanella nació el 19 de julio de 1959 en Buenos Aires. Se formó entre Argentina y Estados Unidos, con paso por la Tisch School of the Arts de Nueva York, y esa doble escuela se nota en su cine: emoción rioplatense, estructura muy clásica y un manejo industrial del ritmo.',
+			'Su filmografía argentina quedó asociada a historias de personajes adultos, afectos pendientes y comunidades que se resisten a desaparecer. El mismo amor, la misma lluvia, El hijo de la novia, Luna de Avellaneda y El secreto de sus ojos consolidaron una alianza creativa muy reconocible con actores como Ricardo Darín y Eduardo Blanco.',
+			'El secreto de sus ojos ganó el Oscar a mejor película internacional en 2010 y terminó de ubicarlo como uno de los directores argentinos más visibles fuera del país. Después siguió alternando cine, televisión, animación y comedia coral, con una marca clara: narrar grande sin perder oído argentino.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '2010' },
+			{ label: 'Catálogo', value: '5 películas' },
+			{ label: 'Marca', value: 'Clásico popular' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor película internacional', work: 'El secreto de sus ojos', year: 2010 },
+			{ label: 'Oscar', category: 'Nominación a mejor película internacional', work: 'El hijo de la novia', year: 2002 },
+		],
+		knownFor: [
+			'el-secreto-de-sus-ojos-2009',
+			'el-hijo-de-la-novia-2001',
+			'luna-de-avellaneda-2004',
+			'el-cuento-de-las-comadrejas-2019',
+			'parque-lezama-2026',
+		],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Juan_Jos%C3%A9_Campanella',
+			'https://www.wikidata.org/wiki/Q726925',
+			'https://www.oscars.org/oscars/ceremonies/2010',
+			'https://www.oscars.org/oscars/ceremonies/2002',
+		],
+	},
+	'santiago-segura': {
+		slug: 'santiago-segura',
+		name: 'Santiago Segura',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Premios%20Goya%202018%20-%20Santiago%20Segura%2001.jpg?width=640',
+		headline:
+			'Actor, director y guionista español que convirtió el humor incorrecto de Torrente en una de las marcas más reconocibles del cine popular español.',
+		roles: ['Director', 'Actor', 'Guionista', 'Productor'],
+		birthPlace: 'Madrid, España',
+		spotlight:
+			'Su carrera se mueve entre la comedia bruta, la autoparodia y una intuición comercial muy afinada para detectar qué público quiere ver cada entrega.',
+		biography: [
+			'Santiago Segura nació el 17 de julio de 1965 en Madrid y empezó a filmar desde chico con cámara Super 8, antes de abrirse camino entre cortos, colaboraciones y trabajos de actor. Su salto popular llegó con El día de la bestia, de Álex de la Iglesia, donde ganó el Goya a mejor actor revelación.',
+			'En 1998 dirigió, escribió y protagonizó Torrente, el brazo tonto de la ley, una comedia policial deliberadamente grosera que terminó convertida en fenómeno de taquilla y le dio el Goya a mejor dirección novel. Desde ahí, José Luis Torrente pasó a ser una franquicia y una especie de espejo deformante del costumbrismo español.',
+			'Segura también produjo, actuó en cine de género y encontró otro filón masivo con comedias familiares, pero Torrente sigue siendo su personaje más reconocible. Torrente Presidente recupera esa zona de sátira salvaje, con un humor que funciona por exceso, cameo y provocación calculada.',
+		],
+		stats: [
+			{ label: 'Goya', value: 'Dirección novel' },
+			{ label: 'Torrente', value: 'Saga desde 1998' },
+			{ label: 'Registro', value: 'Comedia popular' },
+		],
+		awards: [
+			{ label: 'Goya', category: 'Mejor actor revelación', work: 'El día de la bestia', year: 1996 },
+			{ label: 'Goya', category: 'Mejor dirección novel', work: 'Torrente, el brazo tonto de la ley', year: 1999 },
+		],
+		knownFor: ['torrente-presidente-2026'],
+		referenceUrls: [
+			'https://es.wikipedia.org/wiki/Santiago_Segura',
+			'https://www.wikidata.org/wiki/Q509900',
+			'https://www.premiosgoya.com/pelicula/el-dia-de-la-bestia/',
+			'https://www.premiosgoya.com/pelicula/torrente-el-brazo-tonto-de-la-ley/',
+		],
+	},
 	...bulkTrendProfiles,
 	...bulkExpansionProfiles,
 	...bulkCompletionProfiles,
