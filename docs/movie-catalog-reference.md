@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-22. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-23. Fuente: src/data/movies/*.json
 
-Total de peliculas: 694
+Total de peliculas: 696
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -18,6 +18,7 @@ Total de peliculas: 694
 | 2026 | Dracula | dracula-2026 | Terror | Stremio | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El drama | the-drama-2026 | Romance | Cine | +17 |
+| 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Cine | ATP |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | GOAT | goat-2026 | Animacion | Stremio | ATP |
@@ -30,6 +31,7 @@ Total de peliculas: 694
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
+| 2026 | Michael | michael-2026 | Drama | Cine | +13 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
