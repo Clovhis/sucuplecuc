@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-04-23. Fuente: src/data/movies/*.json
 
-Total de peliculas: 696
+Total de peliculas: 703
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -189,6 +189,7 @@ Total de peliculas: 696
 | 2023 | Blue Beetle | blue-beetle-2023 | Accion | HBO Max | +13 |
 | 2023 | Creed III | creed-iii-2023 | Drama | Stremio | +13 |
 | 2023 | Cuando acecha la maldad | cuando-acecha-la-maldad-2023 | Terror | Netflix | +16 |
+| 2023 | Fast X | fast-x-2023 | Accion | Netflix | +13 |
 | 2023 | Guardians of the Galaxy Vol. 3 | guardians-of-the-galaxy-vol-3-2023 | Accion | Disney Plus | +13 |
 | 2023 | Indiana Jones and the Dial of Destiny | indiana-jones-and-the-dial-of-destiny-2023 | Accion | Disney Plus | +13 |
 | 2023 | John Wick: Chapter 4 | john-wick-chapter-4-2023 | Accion | Mercado Play | +16 |
@@ -284,6 +285,7 @@ Total de peliculas: 696
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus | +13 |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus | +13 |
 | 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Stremio | +13 |
+| 2019 | Fast & Furious Presents: Hobbs & Shaw | fast-and-furious-presents-hobbs-and-shaw-2019 | Accion | Prime Video | +13 |
 | 2019 | How to Train Your Dragon: The Hidden World | how-to-train-your-dragon-the-hidden-world-2019 | Animacion | Stremio | ATP |
 | 2019 | IT: Capítulo 2 | it-chapter-two-2019 | Terror | Netflix | +17 |
 | 2019 | John Wick: Chapter 3 - Parabellum | john-wick-chapter-3-parabellum-2019 | Accion | Mercado Play | +16 |
@@ -328,6 +330,7 @@ Total de peliculas: 696
 | 2017 | Pirates of the Caribbean: Dead Men Tell No Tales | pirates-of-the-caribbean-dead-men-tell-no-tales-2017 | Aventura | Disney Plus | +13 |
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max | +13 |
 | 2017 | Star Wars: The Last Jedi | star-wars-episode-viii-the-last-jedi-2017 | Ciencia ficcion | Disney Plus | +13 |
+| 2017 | The Fate of the Furious | the-fate-of-the-furious-2017 | Accion | HBO Max | +13 |
 | 2017 | The Shape of Water | the-shape-of-water-2017 | Drama | Disney Plus | +17 |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus | +13 |
 | 2017 | War for the Planet of the Apes | war-for-the-planet-of-the-apes-2017 | Accion | Disney Plus | +13 |
@@ -375,6 +378,7 @@ Total de peliculas: 696
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus | +13 |
 | 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video + Paramount Plus | +17 |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max | ATP |
+| 2013 | Fast & Furious 6 | fast-and-furious-6-2013 | Accion | Stremio | +13 |
 | 2013 | Frozen | frozen-2013 | Animacion | Disney Plus | ATP |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus | +13 |
 | 2013 | La maldición de Chucky | curse-of-chucky-2013 | Terror | HBO Max | +17 |
@@ -418,6 +422,7 @@ Total de peliculas: 696
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus | +16 |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix | +13 |
+| 2009 | Fast & Furious | fast-and-furious-2009 | Accion | HBO Max | +13 |
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max | +12 |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix | +16 |
@@ -454,6 +459,7 @@ Total de peliculas: 696
 | 2006 | Superman Returns | superman-returns-2006 | Accion | HBO Max | +13 |
 | 2006 | Tales from Earthsea | tales-from-earthsea-2006 | Anime | Netflix | +13 |
 | 2006 | The Departed | the-departed-2006 | Thriller | HBO Max | +16 |
+| 2006 | The Fast and the Furious: Tokyo Drift | the-fast-and-the-furious-tokyo-drift-2006 | Accion | HBO Max | +13 |
 | 2006 | The Girl Who Leapt Through Time | the-girl-who-leapt-through-time-2006 | Anime | Stremio | +13 |
 | 2006 | The Prestige | the-prestige-2006 | Thriller | HBO Max | +13 |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus | +13 |
@@ -477,6 +483,7 @@ Total de peliculas: 696
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio | ATP |
 | 2004 | The Incredibles | the-incredibles-2004 | Animacion | Disney Plus | ATP |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max | +16 |
+| 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Stremio | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
 | 2003 | Finding Nemo | finding-nemo-2003 | Animacion | Disney Plus | ATP |
 | 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | HBO Max | +17 |
