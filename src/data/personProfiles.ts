@@ -2165,28 +2165,6 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 			'Dos años después, tuvo un papel de reparto en Platoon dirigido por Oliver Stone.'
 		],
 	},
-	'jonah-hill': {
-		headline: 'Actor, guionista y director que llevó su comedia nerviosa hacia un registro más incómodo y autoral.',
-		birthPlace: 'Los Ángeles, California',
-		spotlight:
-			'Arrancó como figura clave de la comedia dosmilera, pero su carrera se volvió más interesante cuando empezó a cruzar humor, ansiedad, drama y exposición pública.',
-		biography: [
-			'Jonah Hill Feldstein (Los Ángeles, 20 de diciembre de 1983) es un actor, comediante, guionista, productor y director estadounidense.',
-			'Se hizo popular dentro de la nueva comedia de estudio de los 2000, con personajes torpes, verborrágicos y de energía muy incómoda. Después de Superbad y el circuito de Judd Apatow, pegó un giro importante con Moneyball y The Wolf of Wall Street, trabajos que le dieron dos nominaciones al Óscar como actor de reparto.',
-			'Como realizador, Mid90s mostró una sensibilidad más melancólica, cercana al coming-of-age y la cultura skate. En Outcome vuelve a dirigir y actuar, ya instalado en una zona donde la celebridad, la autocrítica y la incomodidad pública son parte del material.'
-		],
-		awards: [
-			{ label: 'Oscar', category: 'Nominación a mejor actor de reparto', work: 'Moneyball', year: 2012 },
-			{ label: 'Oscar', category: 'Nominación a mejor actor de reparto', work: 'The Wolf of Wall Street', year: 2014 },
-		],
-		knownFor: ['outcome-2026', 'dont-look-up-2021'],
-		referenceUrls: [
-			'https://www.wikidata.org/wiki/Q313388',
-			'https://www.imdb.com/name/nm1706767/',
-			'https://www.themoviedb.org/person/21007-jonah-hill',
-			'https://www.britannica.com/biography/Jonah-Hill',
-		],
-	},
 	'jon-m-chu': {
 		biography: [
 			'Jonathan Murray Chu (2 de noviembre de 1979) es un cineasta estadounidense formado en la Escuela de Cine de la Universidad del Sur de California.',
@@ -3438,6 +3416,55 @@ const bulkTrendProfiles = {
 				'https://www.wikidata.org/wiki/Q43416',
 				'https://www.imdb.com/name/nm0000206/',
 				'https://www.themoviedb.org/person/6384-keanu-reeves',
+			],
+		},
+		{
+			slug: 'jonah-hill',
+			name: 'Jonah Hill',
+			profileImage: '/people/jonah-hill-nm1706767.jpg',
+			headline: 'Actor, guionista y director que llevó su comedia nerviosa hacia un registro más incómodo y autoral.',
+			birthPlace: 'Los Ángeles, California',
+			spotlight:
+				'Arrancó como figura clave de la comedia dosmilera, pero su carrera se volvió más interesante cuando empezó a cruzar humor, ansiedad, drama y exposición pública.',
+			biography: [
+				'Jonah Hill Feldstein (Los Ángeles, 20 de diciembre de 1983) es un actor, comediante, guionista, productor y director estadounidense.',
+				'Se hizo popular dentro de la nueva comedia de estudio de los 2000, con personajes torpes, verborrágicos y de energía muy incómoda. Después de Superbad y el circuito de Judd Apatow, pegó un giro importante con Moneyball y The Wolf of Wall Street, trabajos que le dieron dos nominaciones al Óscar como actor de reparto.',
+				'Como realizador, Mid90s mostró una sensibilidad más melancólica, cercana al coming-of-age y la cultura skate. En Outcome vuelve a dirigir y actuar, ya instalado en una zona donde la celebridad, la autocrítica y la incomodidad pública son parte del material.',
+			],
+			awards: [
+				{ label: 'Oscar', category: 'Nominación a mejor actor de reparto', work: 'Moneyball', year: 2012 },
+				{ label: 'Oscar', category: 'Nominación a mejor actor de reparto', work: 'The Wolf of Wall Street', year: 2014 },
+			],
+			knownFor: ['outcome-2026', 'dont-look-up-2021'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q313388',
+				'https://www.imdb.com/name/nm1706767/',
+				'https://www.themoviedb.org/person/21007-jonah-hill',
+				'https://www.britannica.com/biography/Jonah-Hill',
+			],
+		},
+		{
+			slug: 'eric-bana',
+			name: 'Eric Bana',
+			profileImage: '/people/eric-bana-nm0051509.jpg',
+			headline: 'Actor australiano de presencia seca, capaz de pasar del drama criminal al blockbuster sin perder gravedad.',
+			birthPlace: 'Melbourne, Victoria, Australia',
+			spotlight:
+				'Viene de la comedia televisiva australiana, pero su carrera internacional se armó sobre personajes tensos, físicos y bastante contenidos.',
+			biography: [
+				'Eric Bana nació en Melbourne el 9 de agosto de 1968 y empezó su carrera como comediante, primero en stand-up y después en televisión australiana. Ese origen humorístico no le impidió pegar un giro fuerte hacia el drama con Chopper, donde su transformación física y su intensidad lo pusieron en el radar internacional.',
+				'Hollywood lo tomó rápido para papeles de escala grande: Black Hawk Down, Hulk, Troy y Munich lo ubicaron entre el cine bélico, el cómic de autor, la épica histórica y el thriller político. Bana nunca fue una estrella de gesto expansivo; su fuerte suele estar en una presencia más cerrada, con personajes que parecen aguantar presión todo el tiempo.',
+				'En Cine Posta queda conectado con Hulk y Apex, dos extremos útiles para leerlo: de Bruce Banner como figura partida a un thriller de supervivencia donde vuelve a funcionar por tensión física y oficio seco.',
+			],
+			awards: [
+				{ label: 'AACTA', category: 'Mejor actor principal', work: 'Chopper', year: 2000 },
+				{ label: 'Logie', category: 'Personalidad de comedia más popular', work: 'The Eric Bana Show Live', year: 1997 },
+			],
+			knownFor: ['apex-2026', 'hulk-2003'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q4440',
+				'https://www.imdb.com/name/nm0051509/',
+				'https://www.themoviedb.org/person/8783-eric-bana',
 			],
 		},
 		{
