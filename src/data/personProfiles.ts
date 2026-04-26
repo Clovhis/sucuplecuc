@@ -1177,10 +1177,12 @@ function ensureBiographyDepth(profile: PersonProfileRecord): PersonProfileRecord
 const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecord>> = {
 	/* __PERSON_PROFILE_EDITORIAL_OVERRIDES_START__ */
 	'aaron-taylor-johnson': {
+		birthPlace: 'High Wycombe, Buckinghamshire, Inglaterra',
 		biography: [
 			'Aaron Perry Taylor-Johnson (High Wycombe, Buckinghamshire, Inglaterra, 13 de junio de 1990) es un actor, guionista y productor británico. Es más conocido por su interpretación del personaje Dave Lizewski / Kick-Ass en la película homónima Kick-Ass (2010) y su secuela Kick-Ass 2 (2013), y del personaje Pietro Maximoff / Quicksilver en Vengadores: La era de Ultrón (2015).',
 			'Johnson comenzó a actuar de niño y apareció en películas como Shanghai Knights (2003), El ilusionista (2006) y Angus, tangas y besos perfectos (2008).',
-			'Su interpretación de John Lennon en la película biográfica Nowhere Boy (2009), dirigida por Sam Taylor-Johnson, con quien se casó en 2012, cosechó muy buenas críticas en su carrera.'
+			'Su interpretación de John Lennon en la película biográfica Nowhere Boy (2009), dirigida por Sam Taylor-Johnson, con quien se casó en 2012, cosechó muy buenas críticas en su carrera.',
+			'Aaron Taylor-Johnson nació el 13 de junio de 1990 en High Wycombe, Buckinghamshire, Inglaterra.'
 		],
 	},
 	'adam-driver': {
@@ -1202,39 +1204,22 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'adrien-brody': {
-		biography: [
-			'Adrien Nicholas Brody (Newhaven, Nueva York, 14 de abril de 1973), es un actor y productor estadounidense.',
-			'Saltó a la fama en el año 2002, tras encarnar a Władysław Szpilman en la película El pianista, dirigida por Roman Polanski, por la cual obtuvo premio Óscar como mejor actor principal a los 29 años de edad.',
-			'También es conocido por su papel como un sobreviviente del Holocausto que emigra a los Estados Unidos en The brutalist (2024) de Brady Corbet.',
-			'Brody recibió elogios de la crítica y ganó por este film el premio Óscar como mejor actor principal, el Globo de Oro al Mejor Actor - Drama y el Premio BAFTA al mejor actor.'
-		],
+		birthPlace: 'Newhaven, Nueva York',
 	},
 	'alberto-ammann': {
 		birthPlace: 'Córdoba, Argentina',
 	},
 	'america-ferrera': {
-		biography: [
-			'America Georgina Ferrera (Los Ángeles, 18 de abril de 1984) es una actriz, directora y productora estadounidense de padres hondureños. Ferrera desarrolló un interés en la actuación a una edad temprana, actuando en varias producciones teatrales en su escuela.',
-			'Hizo su debut en el cine en 2002 con la comedia dramática Real Women Have Curves, ganando elogios por su actuación.',
-			'Ferrera ha ganado un Premio Emmy, un Globo de Oro y un Premio del Sindicato de Actores, entre otros.',
-			'Ferrera logró un éxito modesto al principio de su carrera con papeles en películas como la película original de Disney Gotta Kick It Up! (2002) y la comedia dramática The Sisterhood of the Traveling Pants (2005); esta última le valió el Premio Imagen a la mejor actriz y su primera nominación al Premio ALMA a la mejor actriz en una película.'
-		],
+		birthPlace: 'Los Ángeles',
 	},
 	'amy-adams': {
-		biography: [
-			'Amy Lou Adams (Vicenza, 20 de agosto de 1974) es una actriz estadounidense, conocida por sus actuaciones tanto cómicas como dramáticas.',
-			'Se formó para ser bailarina, pero a los 18 años encontró que el teatro musical encajaba mejor, y desde 1994 hasta 1998 trabajó en restaurantes de teatro en vivo.',
-			'Sus reconocimientos incluyen, entre otros, dos Globos de Oro, un Premio del Sindicato de Actores, cinco Premios de la Crítica Cinematográfica y un premio Indepedent Spirit, además de seis nominaciones a los Premios de la Academia y siete a los Premios BAFTA.'
-		],
+		birthPlace: 'Vicenza',
 	},
 	'ana-de-armas': {
-		biography: [
-			'Ana Celia de Armas Caso (La Habana, 30 de abril de 1988) es una actriz cubana de origen español y nacionalizada estadounidense. Comenzó su carrera con 16 años en su país natal y pronto obtuvo un papel principal en el drama romántico hispanocubano Una rosa de Francia (2006).',
-			'A la edad de 18 años, se mudó a Madrid y protagonizó series como la popular serie de suspenso El internado (2007-2010) y el drama histórico Hispania, la leyenda (2010-2012).',
-			'Después de mudarse a Los Ángeles, De Armas tuvo papeles de habla inglesa en el thriller psicológico Knock Knock (2015), la comedia criminal War Dogs (2016), y tuvo un papel secundario en la película biográfica Manos de piedra (2016).'
-		],
+		birthPlace: 'La Habana',
 	},
 	'andrew-garfield': {
+		birthPlace: 'Los Ángeles, California',
 		biography: [
 			'Andrew Russell Garfield (Los Ángeles, California, 20 de agosto de 1983) es un actor y productor británicoestadonidense.',
 			'Nacido en Los Ángeles y criado en Epsom, Inglaterra, Garfield se formó en la Royal Central School of Speech and Drama y comenzó su carrera en los escenarios del Reino Unido y en producciones televisivas.',
@@ -1243,49 +1228,36 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'andy-serkis': {
-		biography: [
-			'Andrew Clement Serkis (Ruislip, Middlesex, Inglaterra, 20 de abril de 1964), conocido como Andy Serkis, es un actor, director de cine y escritor británico.',
-			'Conocido por interpretar a personajes a través de la técnica de captura de movimiento, como Gollum en las trilogías cinematográficas de El Señor de los Anillos y El hobbit.',
-			'Además del líder Supremo, Snoke, en Star Wars: Episodio VII - El despertar de la Fuerza, y Star Wars: Episodio VIII - Los últimos Jedi, y a César en la franquicia de El planeta de los simios.'
-		],
+		birthPlace: 'Ruislip, Middlesex, Inglaterra',
 	},
 	'anthony-mackie': {
+		birthPlace: 'Nueva Orleans, Luisiana',
 		biography: [
 			'Anthony Dwane Mackie (Nueva Orleans, Luisiana; 23 de septiembre de 1978) es un actor estadounidense conocido por su papel como el sargento JT Sanborn en la película The Hurt Locker, ganadora en los Premios Oscar a la Mejor Película.',
 			'Ha aparecido en otras películas y series de televisión, así como en los escenarios de Broadway.',
-			'También es conocido por interpretar a Sam Wilson / Falcon en las películas del Universo cinematográfico de Marvel Captain America: The Winter Soldier (2014), Avengers: Age of Ultron (2015), Ant-Man (2015), Capitán América: Civil War (2016), Avengers: Infinity War (2018), Avengers: Endgame (2019) y recientemente al nuevo Capitán América en The Falcon and the Winter Soldier (2021) y Captain America: Brave New World (2025).'
+			'También es conocido por interpretar a Sam Wilson / Falcon en las películas del Universo cinematográfico de Marvel Captain America: The Winter Soldier (2014), Avengers: Age of Ultron (2015), Ant-Man (2015), Capitán América: Civil War (2016), Avengers: Infinity War (2018), Avengers: Endgame (2019) y recientemente al nuevo Capitán América en The Falcon and the Winter Soldier (2021) y Captain America: Brave New World (2025).',
+			'Anthony Mackie nació el 23 de septiembre de 1978 en Nueva Orleans, Luisiana.'
 		],
 	},
 	'antonio-banderas': {
-		biography: [
-			'José Antonio Domínguez Bandera (Málaga, 10 de agosto de 1960), conocido como Antonio Banderas, es un actor, director de cine, cantante, productor, guionista y empresario teatral español.',
-			'Comenzó como actor en el teatro en España y, poco más tarde en el cine con una serie de películas de Pedro Almodóvar en la década de 1980.',
-			'En 2003, Banderas debutó en el teatro de Estados Unidos en Nine, por lo que fue nominado para un Premio Tony y ganó un Premio Drama Desk.'
-		],
+		birthPlace: 'Málaga',
 	},
 	'anya-taylor-joy': {
+		birthPlace: 'Miami',
 		biography: [
 			'Anya-Josephine Marie Taylor-Joy (Miami, 16 de abril de 1996) es una actriz y modelo británica y estadounidense, nacida en Miami y criada entre Buenos Aires (Argentina) y Londres (Reino Unido). Ha recibido varios premios, incluido un Globo de Oro, un Premio del Sindicato de Actores y un Premio de la Crítica Televisiva, además de recibir nominaciones a los Premios BAFTA y a los Premios Primetime Emmy.',
 			'En 2021, la revista Time la colocó en la lista «Los próximos 100 de Time». De madre inglesa y española y padre argentino de raíces escocesas, Taylor-Joy dejó la escuela a los dieciséis años y comenzó su carrera como actriz.',
-			'Después de pequeños papeles en televisión, debutó en el cine con el papel principal de Thomasin en la película de terror La bruja (2015), que le valió un premio Gotham y un premio Empire.'
+			'Después de pequeños papeles en televisión, debutó en el cine con el papel principal de Thomasin en la película de terror La bruja (2015), que le valió un premio Gotham y un premio Empire.',
+			'Anya Taylor-Joy nació el 16 de abril de 1996 en Miami.'
 		],
 	},
 	'ariana-debose': {
-		biography: [
-			'Ariana DeBose (Raleigh, Carolina del Norte; 25 de enero de 1991) es una actriz, cantante y bailarina estadounidense.',
-			'En 2022, la revista Time la nombró una de las 100 personas más influyentes del mundo. DeBose hizo su debut en televisión compitiendo en la sexta temporada de So You Think You Can Dance en 2009, donde terminó entre las 20 mejores.',
-			'Conocida por sus actuaciones en el escenario y la pantalla, ha recibido múltiples elogios, incluido un Premio Óscar, un Premio BAFTA y un Globo de Oro.'
-		],
+		birthPlace: 'Raleigh, Carolina del Norte',
 	},
 	'ariana-grande': {
-		biography: [
-			'Ariana Grande-Butera (Boca Ratón, Florida, 26 de junio de 1993) es una cantante, compositora, productora, empresaria y actriz estadounidense. Inició su carrera artística en Broadway a los 15 años, al participar en el musical 13 (2008).',
-			'Alcanzó notoriedad al interpretar a Cat Valentine en las series de televisión de Nickelodeon Victorious (2010-2013) y Sam & Cat (2013-2014).',
-			'En 2011, firmó con Republic Records, luego de que ejecutivos del sello descubrieran vídeos suyos interpretando versiones de canciones en YouTube.'
-		],
+		birthPlace: 'Boca Ratón, Florida',
 	},
 	'arnold-schwarzenegger': {
-		birthPlace: 'Thal',
 		biography: [
 			'Arnold Alois Schwarzenegger (pronunciado; Thal, Austria, 30 de julio de 1947) es un actor, empresario, político y exfísicoculturista profesional austriaco y estadounidense.',
 			'Ejerció como trigésimo octavo gobernador del estado de California en dos mandatos desde 2003 hasta 2011. Schwarzenegger comenzó a entrenar con pesas cuando tenía quince años, ganó el título de Mr. Universo con veinte y luego encadenó siete victorias en la competición de Mister Olympia entre 1970 y 1980.',
@@ -1294,19 +1266,10 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'austin-butler': {
-		biography: [
-			'Austin Robert Butler (Anaheim, California, 17 de agosto de 1991) es un actor, cantante y modelo estadounidense, conocido principalmente por interpretar a Elvis Presley en la película biográfica musical Elvis.',
-			'Comenzó su carrera en televisión, primero en papeles en Disney Channel y Nickelodeon y luego en dramas para adolescentes, incluidas partes recurrentes en las series de The CW Life Unexpected (2010-2011) y Switched at Birth (2011-2012).',
-			'Obtuvo reconocimiento por protagonizar The Carrie Diaries (2013-2014) y The Shannara Chronicles (2016-2017).'
-		],
+		birthPlace: 'Anaheim, California',
 	},
 	'awkwafina': {
-		biography: [
-			'Nora Lum (Nueva York, 2 de junio de 1988), conocida profesionalmente como Awkwafina, es una actriz y cantante estadounidense de ascendencia china y surcoreana.',
-			'Sus apariciones en televisión incluyen producciones como Girl Code, Future Man y Saturday Night Live.',
-			'Participó en las películas Ocean\'s 8 y Crazy Rich Asians (2018), además de protagonizar la cinta The Farewell (2019), por la cual ganó un Globo de Oro en 2020 como mejor actriz de comedia o musical.',
-			'Ha publicado dos álbumes, Yellow Ranger (2014) e In Fina We Trust (2018).'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'ayo-edebiri': {
 		birthPlace: 'Boston',
@@ -1318,19 +1281,16 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'barry-keoghan': {
+		birthPlace: 'Summerhill',
 		biography: [
-			'Barry Keoghan (pronunciado; n.',
+			'Dublín, 18 de octubre de 1992) es un actor irlandés.',
 			'Ha recibido varios reconocimientos, incluido un premio BAFTA, y ha sido nominado a un premio Óscar y dos premios Globo de Oro. Keoghan comenzó a actuar en 2011 y obtuvo reconocimiento en 2017 por sus papeles en Dunkerque (2017) y The Killing of a Sacred Deer (2017).',
 			'Obtuvo elogios por sus actuaciones en la película policial irlandesa Calm with Horses (2019) y en la película de fantasía The Green Knight (2021).',
-			'Dublín, 18 de octubre de 1992) es un actor irlandés.'
+			'Barry Keoghan nació el 17 de octubre de 1992 en Summerhill.'
 		],
 	},
 	'ben-affleck': {
-		biography: [
-			'Benjamin Géza Affleck-Boldt (Berkeley, 15 de agosto de 1972), conocido simplemente como Ben Affleck, es un actor, director, productor y guionista estadounidense.',
-			'Apoyado por su madre, inició su carrera como actor infantil de documentales educativos y después apareciendo en varias películas dirigidas por Kevin Smith, entre estas Mallrats (1995) y Chasing Amy (1997).',
-			'Comenzó a ganar notoriedad dentro de la industria del cine tras protagonizar y escribir el guion de Good Will Hunting (1997), película que obtuvo la aclamación crítica y le valió, entre otros premios, el Óscar al mejor guion original.'
-		],
+		birthPlace: 'Berkeley',
 	},
 	'ben-kingsley': {
 		birthPlace: 'Snainton',
@@ -1342,46 +1302,22 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'benedict-cumberbatch': {
-		biography: [
-			'Benedict Timothy Carlton Cumberbatch (Londres, 19 de julio de 1976), conocido como Benedict Cumberbatch, es un actor británico de televisión, teatro, cine y voz. Accedió a la fama con su interpretación de Stephen Hawking en la película televisiva Hawking (2004); posteriormente, interpretó el personaje de William Pitt en la película histórica Amazing Grace (2006), así como el rol del célebre detective Sherlock Holmes en una adaptación moderna del personaje de Arthur Conan Doyle, en la serie Sherlock (2010-2017), ambas producciones de la BBC.',
-			'En noviembre de 2013, fue galardonado por el BAFTA Los Ángeles con un premio Britannia para el artista británico del año por «sus actuaciones magistrales en televisión, cine y teatro».',
-			'En el 2015, recibió su primera nominación a un Óscar a mejor actor, por su papel en la película The Imitation Game.'
-		],
+		birthPlace: 'Londres',
 	},
 	'bong-joon-ho': {
-		biography: [
-			'Bong Joon-ho (Daegu, 14 de septiembre de 1969) es un director de cine y guionista surcoreano.',
-			'Entre sus trabajos cinematográficos figuran Memorias de un asesino (2003), la película de monstruos The Host (2006), la película de ciencia ficción Snowpiercer (2013) y la ganadora del Óscar a Mejor Película, Parásitos (2019).',
-			'En 2017, Metacritic lo clasificó en el puesto 13 de su lista de los 25 mejores directores de cine del siglo XXI. Sus películas presentan temas incómodos, humor negro y cambios repentinos de humor.'
-		],
+		birthPlace: 'Daegu',
 	},
 	'brad-dourif': {
-		biography: [
-			'Bradford Claude «Brad» Dourif (Huntington, Virginia Occidental; 18 de marzo de 1950) es un actor estadounidense retirado (a excepción de su papel como Chucky) de cine y televisión, candidato a un premio Óscar y a un premio Emmy.',
-			'Probablemente es más conocido por su papel en One Flew Over the Cuckoo\'s Nest, que le valió la citada candidatura al Óscar como mejor actor de reparto. También ha puesto su voz al personaje de Chucky en las películasChild\'s Play, ha interpretado a Lon Suder en Star Trek: Voyager, al doctor Gediman en Alien: resurrección y a Gríma Lengua de Serpiente en la adaptación cinematográfica de El Señor de los Anillos.',
-			'También ha ganado un premio Saturn por El exorcista III y ha sido candidato a un premio Emmy por su papel en Deadwood.'
-		],
+		birthPlace: 'Huntington, Virginia Occidental',
 	},
 	'bradley-cooper': {
-		biography: [
-			'Bradley Charles Cooper (Filadelfia, 5 de enero de 1975) es un actor, actor de voz, director, productor, guionista, cantante y compositor estadounidense.',
-			'Inspirado por su padre, comenzó a interesarse por la actuación a temprana edad, y continuó con sus estudios hasta el 2000, cuando obtuvo su máster en Bellas Artes en The New School, en Nueva York.',
-			'Posteriormente, desempeñó papeles menores en numerosas películas y series de televisión, entre estas Alias y Wedding Crashers (2005). Cooper saltó a la fama con su papel en The Hangover (2009), que se convirtió en un éxito crítico y comercial, extendiéndose por dos secuelas igualmente exitosas lanzadas en 2011 y 2013. Su racha de filmes aclamados y taquilleros continuó con Silver Linings Playbook (2012), American Hustle (2013) y American Sniper (2014), con los cuales recibió nominaciones a los premios Óscar por su actuación. Asimismo, prestó su voz para dar vida al personaje de Rocket Raccoon en el Universo cinematográfico de Marvel. Además del cine, Cooper interpretó a Joseph Merrick en la obra de teatro El hombre elefante. En 2018, protagonizó, dirigió, produjo y escribió la película A Star Is Born, que también fue un éxito crítico y comercial, y le valió tres nominaciones a los Óscar. Su banda sonora, la cual grabó en conjunto con Lady Gaga, alcanzó la primera posición de los álbumes más vendidos en 21 países, además de haber sido el cuarto disco más vendido tanto del 2018 como del 2019, con 1.9 y 1.2 millones de copias, respectivamente. Cooper ha sido uno de los actores mejores pagados del cine desde 2013, y ha sido reconocido por la revista Time como una de las celebridades más influyentes. En sumatoria, todas sus películas totalizan una recaudación de más de $11.3 mil millones a nivel mundial, siendo uno de los diez actores más recaudadores de toda la historia del cine. Asimismo, Cooper ha ganado un BAFTA, cuatro Critics\' Choice y dos Grammys, además de haber obtenido ocho nominaciones al premios Óscar, cinco al Golden Globe y una al Tony. Por otra parte, Cooper ha sido un filántropo activo desde los inicios de su carrera y ha apoyado a fundaciones que combaten enfermedades como el cáncer y el alzheimer. Desde 2015 hasta 2019, mantuvo una relación con la modelo Irina Shayk, con quien tiene una hija.'
-		],
+		birthPlace: 'Filadelfia',
 	},
 	'brady-corbet': {
-		biography: [
-			'Brady James Monson Corbet (Scottsdale, Arizona; 17 de agosto de 1988) es un actor y director de cine estadounidense.',
-			'También interpretó a Derek Huxley en la serie de TV 24.',
-			'Es conocido por haber interpretado a Mason Freeland en Thirteen, a Brian Lackey en Mysterious Skin y a Alan Tracy en Thunderbirds.',
-			'Brady James Monson Corbet nació en Scottsdale, Arizona, el 17 de agosto de 1988. Fue criado por una madre soltera, a quien considera lo más parecido que tiene a "un héroe". Por parte de su madre, tiene ascendencia irlandesa, serbia (de Apatin) y judía asquenazí; asistió a una escuela católica. Corbet empezó su carrera a los 11 años, cuando apareció como actor invitado en un episodio de la serie The King of Queens.'
-		],
+		birthPlace: 'Scottsdale, Arizona',
 	},
 	'brendan-fraser': {
-		biography: [
-			'Brendan James Fraser (Indianápolis, 3 de diciembre de 1968) es un actor canadoestadounidense ganador del premio Oscar en 2023 por su rol de Charlie en la cinta La ballena de Darren Aronofsky.',
-			'Fraser es reconocido principalmente por sus interpretaciones en películas como Dioses y monstruos, George of the Jungle, la trilogía de La momia, The Mummy Returns y La momia: la tumba del emperador Dragón; The Quiet American, Crash, Al diablo con el diablo, Viaje al centro de la Tierra y La ballena.'
-		],
+		birthPlace: 'Indianápolis, Indiana',
 	},
 	'brendan-gleeson': {
 		birthPlace: 'Dublín',
@@ -1393,50 +1329,22 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'brian-tyree-henry': {
-		biography: [
-			'Brian Tyree Henry (Fayetteville, Carolina del Norte, Estados Unidos; 31 de marzo de 1982) es un actor estadounidense, es conocido por sus papeles en televisión que incluyen a Alfred "Paper Boi" Miles en Atlanta y Tavis Brown en Vice Principals.',
-			'Henry también fue parte del reparto original de The Book of Mormon. En febrero de 2017, Henry apareció como invitado en la serie de NBC This is Us, en el episodio "Memphis" como el primo de William, por lo que fue nominado a un Premio Primetime Emmy. En 2021, interpretó a Phastos en la película Eternals de Marvel Studios.',
-			'El personaje tuvo el primer beso homosexual de un superhéroe en el Universo cinematográfico de Marvel, al lado del actor Haaz Sleiman. Fue nominado al Premio Oscar en la categoría de mejor actor principal del año 2022 por su papel en la película "Causeway", la cual protagoniza junto a Jennifer Lawrence.'
-		],
+		birthPlace: 'Fayetteville, Carolina del Norte, Estados Unidos',
 	},
 	'brie-larson': {
-		biography: [
-			'Brianne Sidonie Desaulniers (Sacramento, 1 de octubre de 1989), más conocida como Brie Larson, es una actriz, cantante, directora, productora, guionista, modelo y youtuber estadounidense.',
-			'Brie fue educada en su casa antes de estudiar interpretación en el American Conservatory Theater.',
-			'Es ganadora, entre otros, del premio Óscar, Globo de Oro, SAG y BAFTA a la mejor actriz, además de un premio Primetime Emmy como productora.',
-			'Comenzó su carrera como actriz en televisión, apareciendo como habitual en la comedia de 2001 Raising Dad, por la que fue nominada para un Young Artist Award.'
-		],
+		birthPlace: 'Sacramento',
 	},
 	'bryce-dallas-howard': {
-		biography: [
-			'Bryce Dallas Howard (Los Ángeles, 2 de marzo de 1981) es una actriz, guionista y directora estadounidense.',
-			'Howard asistió a la Tisch School of the Arts de la Universidad de Nueva York; yéndose inicialmente en 2002 para asumir papeles en Broadway, pero se graduó oficialmente en 2020.',
-			'Su primer papel cinematográfico fue en Parenthood de 1989, dirigida por su padre Ron Howard.',
-			'Night Shyamalan, quien la eligió como la hija ciega de un jefe local en el thriller psicológico, The Village (2004).'
-		],
+		birthPlace: 'Los Ángeles',
 	},
 	'cailee-spaeny': {
-		biography: [
-			'Cailee Spaeny (Springfield, Misuri; 24 de julio de 1998) es una actriz y cantante estadounidense. Es conocida principalmente por haber interpretado a Priscilla Presley en la película autobiográfica Priscilla (2023) y a Rain Carradine en Alien: Romulus (2024).',
-			'En la temporada 2013-2014, consiguió el papel principal de Ariel en la producción Disney\'s Little Mermaid Jr. Como cantante, lanzó su sencillo debut Fallin en 2016 en la plaforma iTunes bajo Future Town Music. Su debut fue como Erica en el cortometraje de 2016, Counting to 1000.',
-			'Su primer papel importante fue en la película de 2018 Pacific Rim: Uprising junto a John Boyega y Scott Eastwood. En el año 2023 ganó gran reconocimiento por su interpretación de Priscilla Presley en la película autobiográfica Priscilla de la reconocida directora Sofía Coppolla.',
-			'Cailee Spaeny nació el 24 de julio de 1998 en Springfield, Misuri.'
-		],
+		birthPlace: 'Springfield, Misuri',
 	},
 	'caitriona-balfe': {
-		biography: [
-			'Caitríona Mary Balfe (Dublín, 4 de octubre de 1979) es una actriz y modelo irlandesa, más conocida por interpretar a Claire Fraser en la serie Outlander.',
-			'Desde pequeña su deseo siempre fue convertirse en actriz, por eso mismo después de concluir sus estudios secundarios, acudió a estudiar interpretación en el Dublin Institute of Technology.',
-			'En 1999, teniendo apenas 19 años, la descubrió un cazatalentos en un centro comercial y le ofreció trabajar como modelo en París, fue entonces cuando la irlandesa abandonó sus estudios y se convirtió en una cotizada modelo, participando, durante 10 años, en campañas de publicidad y pasarelas para marcas como Dolce & Gabbana, Roberto Cavalli, Max Mara, Bottega Veneta, H&M, Victoria\'s Secret y Oscar de la Renta.',
-			'Caitríona Balfe nació el 4 de octubre de 1979 en Dublín.'
-		],
+		birthPlace: 'Dublín',
 	},
 	'cameron-diaz': {
-		biography: [
-			'Cameron Michelle Diaz (San Diego, California, 30 de agosto de 1972) es una actriz y modelo estadounidense.',
-			'Saltó a la fama en la década de 1990 por sus papeles en películas como La Máscara (1994), La boda de mi mejor amigo (1997) y Algo pasa con Mary (1998).',
-			'Otras películas por las que es conocida son Los ángeles de Charlie (2000) y su secuela Los ángeles de Charlie: Al límite (2003), por darle voz a la Princesa Fiona en la franquicia de Shrek (2001-2010), The Holiday (2006), Algo pasa en Las Vegas (2008), Knight & Day (2010), The Green Hornet (2011), Bad Teacher (2011), The Other Woman (2014) y Annie (2014).'
-		],
+		birthPlace: 'San Diego, California',
 	},
 	'carrie-anne-moss': {
 		birthPlace: 'Burnaby, Columbia Británica',
@@ -1448,11 +1356,7 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'carrie-fisher': {
-		biography: [
-			'Carrie Frances Fisher (Burbank, California, 21 de octubre de 1956-Los Ángeles, 27 de diciembre de 2016), más conocida como Carrie Fisher, fue una actriz, cantante, novelista, escritora y guionista script doctor estadounidense de cine y televisión. Es conocida por interpretar a la Princesa Leia Organa en las películas de Star Wars (1977-2019), papel por el que fue nominada a cuatro Premios Saturn.',
-			'Sus otros créditos cinematográficos incluyen Shampoo (1975), The Blues Brothers (1980), Hannah and Her Sisters (1986), The \'Burbs (1989), When Harry Met Sally... (1989), Soapdish (1991) y The Women (2008). Fisher fue nominada dos veces al Premio Primetime Emmy a la mejor actriz invitada en una serie de comedia por sus actuaciones en las series de televisión 30 Rock y Catastrophe.',
-			'Fue nombrada póstumamente una Leyenda de Disney en 2017, y en 2018 recibió un Premio Grammy póstumo al mejor álbum hablado.'
-		],
+		birthPlace: 'Burbank, California',
 	},
 	'cecilia-dopazo': {
 		birthPlace: 'Argentina',
@@ -1475,33 +1379,16 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'chiwetel-ejiofor': {
-		biography: [
-			'Chiwetel Umeadi Ejiofor (Londres, 10 de julio de 1977) es un actor y director británico con una larga trayectoria tanto en cine y televisión como en teatro.',
-			'Empezó a aparecer en obras de teatro en la escuela a los trece años.',
-			'Estuvo nominado al Óscar por su interpretación en la película 12 años de esclavitud (2013).',
-			'Ejiofor nació en Londres, Inglaterra, en el barrio de Forest Gate, hijo de padres nigerianos. Obtuvo una beca para estudiar en la Academia Londinense de Música y Arte Dramático (LAMDA).'
-		],
+		birthPlace: 'Londres',
 	},
 	'chloe-zhao': {
-		biography: [
-			'Zhao Ting (Pekín, 31 de marzo de 1982), más conocida cómo Chloé Zhao, es una directora, productora y guionista china.',
-			'Obtuvo un gran reconocimiento por su trabajo en el aclamado filme Nomadland (2020), por el cual recibió el premio a la mejor película y mejor dirección en la 93.ª entrega de los Premios Óscar, convirtiéndose en la segunda mujer en ganarlo. Adicionalmente ha ganado, entre otros, dos Premios BAFTA, dos Globos de Oro, un Premio del Sindicato de Directores y tres Premios de la Crítica Cinematográfica. También, destacan sus trabajos para el Universo Cinematográfico de Marvel con la película de superhéroes Eternals (2021), y la película dramática Hamnet (2025) con la que recibió de nuevo elogios de la crítica y tres nominaciones en la 98.ª edición de los Premios Óscar. En diciembre de 2024, fue incluida en la lista de la BBC 100 Women.'
-		],
+		birthPlace: 'Pekín',
 	},
 	'chris-evans': {
-		biography: [
-			'Christopher Robert Evans (Boston, 13 de junio de 1981), conocido simplemente como Chris Evans, es un actor, actor de voz, director y productor de cine estadounidense.',
-			'Criado en el pueblo de Sudbury, mostró interés a temprana edad por la actuación y se mudó a Nueva York para estudiar teatro después de terminar la secundaria.',
-			'Debutó como actor en 1997 al aparecer en un cortometraje educativo y años más tarde, en el 2000, protagonizó la serie Opposite Sex.',
-			'Después de ello, ganó reconocimiento por su participación en películas como Not Another Teen Movie (2001) y The Perfect Score (2004).'
-		],
+		birthPlace: 'Boston',
 	},
 	'chris-hemsworth': {
-		biography: [
-			'Christopher Hemsworth (Melbourne, 11 de agosto de 1983) es un actor, actor de voz y productor australiano.',
-			'Criado en la comunidad de Bulman, al norte de Australia, mostró interés por la actuación motivado por su hermano mayor e inició su carrera en 2002 con apariciones menores en series de televisión de su país.',
-			'Posteriormente, se mudó a Sídney para conseguir mejores oportunidades y logró reconocimiento tras unirse al elenco principal de Home and Away, serie para la que grabó 189 episodios en cuestión de tres años.'
-		],
+		birthPlace: 'Melbourne',
 	},
 	'chris-pine': {
 		birthPlace: 'Los Ángeles, California',
@@ -1513,25 +1400,13 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'chris-pratt': {
-		biography: [
-			'Christopher Michael Pratt (Virginia, 21 de junio de 1979), conocido simplemente como Chris Pratt, es un actor, actor de voz y productor estadounidense.',
-			'Aunque nació en Virginia, creció en la ciudad de Lake Stevens (Washington) y tras terminar la secundaria en 1997, abandonó sus estudios universitarios para mudarse a Maui (Hawái), donde fue descubierto por la actriz Rae Dawn Chong mientras trabajaba como camarero en un restaurante de Bubba Gump Shrimp Company.',
-			'C., pero destacó principalmente por su papel como Andy Dwyer en la comedia Parks and Recreation.'
-		],
+		birthPlace: 'Virginia',
 	},
 	'christoph-waltz': {
-		biography: [
-			'Christoph Waltz (Viena, 4 de octubre de 1956) es un actor austriacoalemán nacionalizado estadounidense, que obtuvo reconocimiento internacional por sus interpretaciones de villanos en el cine.',
-			'Tras una carrera considerable en la televisión y el teatro alemán, el papel que le catapultó al éxito en Estados Unidos fue en la película de Quentin Tarantino de 2009, Malditos Bastardos, donde interpretó a Hans Landa, por el que recibió el Premio Óscar al Mejor Actor de Reparto y el Premio al Mejor Actor del Festival de Cine de Cannes.',
-			'Entre sus premios se incluyen dos Premios Óscar, dos Globos de Oro, dos Premios BAFTA, dos Premios del Sindicato de Actores de Cine, dos Premios de la Crítica de Cine y una nominación a un Premio Emmy.'
-		],
+		birthPlace: 'Viena',
 	},
 	'christopher-lloyd': {
-		biography: [
-			'Christopher Allen Lloyd (Stamford, Connecticut, 22 de octubre de 1938) es un actor estadounidense.',
-			'También ha desarrollado su carrera en televisión, ganando dos Premios Primetime Emmy por su papel de Jim Ignatowski en la serie Taxi (1978-1983).',
-			'Ha interpretado a Doc Emmett Brown en la trilogía de Back to the Future (1985, 1989 y 1990), a Fester Addams en The Addams Family (1991) y Addams Family Values (1993), y al Juez Doom en ¿Quién engañó a Roger Rabbit? (1988).'
-		],
+		birthPlace: 'Stamford, Connecticut',
 	},
 	'christopher-mcquarrie': {
 		birthPlace: 'Princeton, Nueva Jersey',
@@ -1552,101 +1427,46 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'christopher-walken': {
-		biography: [
-			'Ronald Walken (Nueva York, 31 de marzo de 1943), conocido artísticamente como Christopher Walken, es un actor de cine y teatro estadounidense. Ha participado en más de cien películas y programas de televisión, entre ellos Annie Hall, The Deer Hunter, Sleepy Hollow, Brainstorm, The Dead Zone, A View to a Kill, At Close Range, El rey de Nueva York, Batman Returns, True Romance, Atrápame si puedes, Pulp Fiction, Envy, Wedding Crashers, Click, Hairspray, Things to Do in Denver When You\'re Dead y Seven Psychopaths, además de aparecer en videos musicales de Madonna, Journey y Fatboy Slim.',
-			'Walken debutó como director y guionista con el cortometraje Popcorn Shrimp de 2001.',
-			'Sus películas han recaudado más de 1800 millones de dólares en Estados Unidos. Además, ha protagonizado las obras de William Shakespeare: Hamlet, Macbeth, Romeo y Julieta y Coriolano.'
-		],
+		birthPlace: 'Nueva York,​',
 	},
 	'cillian-murphy': {
-		biography: [
-			'Cork, 25 de mayo de 1976) es un actor, actor de voz, músico y productor irlandés.',
-			'Comenzó a mostrar interés por la música desde temprana edad y con diez años ya había compuesto varias canciones.',
-			'Tras ello, empezó a estudiar derecho en la Universidad Colegio Cork, donde fue cobrando interés por la actuación tras ver y protagonizar varias de sus obras de teatro.',
-			'Tras culminar la secundaria, fundó con su hermano la banda The Sons of Mr. Green Genes, en la cual era el vocalista, guitarrista y en ocasiones pianista, además de componer todos sus temas.'
-		],
+		birthPlace: 'Cork',
 	},
 	'colin-farrell': {
-		biography: [
-			'Colin James Farrell (Castleknock, Dublín, 31 de mayo de 1976) es un actor irlandés.',
-			'Farrell comenzó a actuar en la serie dramática de la BBC Ballykissangel (1998) e hizo su debut cinematográfico en el drama The War Zone (1999).',
-			'Protagonista de éxitos de taquilla y películas independientes desde la década de 2000, ha recibido varios premios y nominaciones, incluidos dos Globos de Oro y una nominación a un Premio de la Academia.',
-			'El Irish Times lo nombró el quinto actor de cine más importante de Irlanda en 2020, y la revista Time lo nombró una de las 100 personas más influyentes del mundo en 2023.'
-		],
+		birthPlace: 'Castleknock',
 	},
 	'colin-firth': {
-		biography: [
-			'Colin Andrew Firth (Hampshire; 10 de septiembre de 1960) es un actor y productor británico.',
-			'En televisión, fue nominado a los Premios Emmy por su papel del Dr. Wilhelm Stuckart en la película de la BBC Conspiracy (2001), y por su interpretación de Michael Peterson en la miniserie de HBO The Staircase (2022).',
-			'Ha recibido numerosos reconocimientos, incluyendo un Premio Óscar, dos Premios BAFTA y un Premio Globo de Oro, así como nominaciones a dos Premios Primetime Emmy.',
-			'En 2011, Firth fue nombrado Comendador de la Orden del Imperio Británico (CBE) por sus servicios al arte dramático, y apareció en la lista de las 100 personas más influyentes del mundo de la revista Time. Identificado a mediados de la década de 1980 con el llamado Brit Pack de jóvenes actores británicos en ascenso, protagonizó películas como A Month in the Country (1987), Tumbledown (1988) y Valmont (1989).'
-		],
+		birthPlace: 'Hampshire',
 	},
 	'colman-domingo': {
-		biography: [
-			'Colman Jason Domingo (Filadelfia, 28 de noviembre de 1969) es un actor, director de escena y dramaturgo estadounidense. Ganador de un Premio Primetime Emmy y nominado a los Premios Óscar y a los Premios Tony, en 2024 fue incluido en la prestigiosa lista de la revista Time 100 como una de las 100 personas más influyentes del mundo. Domingo comenzó en Broadway en la obra de teatro de 2005, Well y se consagró con el musical de 2008, Passing Strange.',
-			'En televisión, comenzó como invitado en la serie, Law & Order, aunque sería su papel de Victor Strand en la serie Fear The Walking Dead (2015-2023), de AMC, el que le llevaría al reconocimiento. Las apariciones cinematográficas de Domingo incluyen papeles secundarios en Lincoln (2012), Selma (2014), If Beale Street Could Talk (2018), Ma Rainey\'s Black Bottom (2020) o The Color Purple (2023).',
-			'Obtuvo elogios por su papel de Mr. Bones en el musical: The Scottsboro Boys (2011), por el que fue nominado al premio Tony al mejor actor destacado en un musical.'
-		],
+		birthPlace: 'Filadelfia',
 	},
 	'coralie-fargeat': {
-		biography: [
-			'Coralie Fargeat (París, 24 de noviembre de 1976) es una directora de cine y guionista francesa.',
-			'Es conocida por su primer largometraje Revenge de 2017, por la que recibió premios en festivales de cine independientes, como en el Festival de Sitges, Monster Fest, el Festival Internacional de Cine Fantástico de Bucheon, el Festival Internacional de Cine de Calgary y el Festival Internacional de Cine de Cleveland. Fargeat estrenó su segunda película, The Substance, en el Festival de Cannes 2024, donde ganó el premio a mejor guion.'
-		],
+		birthPlace: 'París',
 	},
 	'courteney-cox': {
-		biography: [
-			'Courteney Bass Cox (Birmingham, Alabama, 15 de junio de 1964) es una actriz, modelo, productora de televisión y directora de cine estadounidense, célebre por su interpretación de Monica Geller en la popular serie de televisión Friends y por interpretar a Gale Weathers en la saga de películas de Scream.',
-			'Ganadora de un Premio del Sindicato de Actores y nominada a un Premio Globo de Oro como mejor actriz por la serie televisiva, Cougar Town en 2010.',
-			'Gracias a la buena acogida de crítica y público, recibió su primera nominación al premio Emmy al mejor programa de variedades. En 2023, recibió una estrella en el Paseo de la Fama de Hollywood. Cox es socia creadora de la productora audiovisual, Coquette Productions, fundada junto a su exmarido, David Arquette, en 2004. Hizo su debut como directora en el telefilme, TalhotBlond (2012).'
-		],
+		birthPlace: 'Birmingham, Alabama',
 	},
 	'cynthia-erivo': {
-		biography: [
-			'Cynthia Chinasaokwu Onyedinmanasu Owezuke Amarachukwu Echimino Erivo (Stockwell, 8 de enero de 1987), conocida como Cynthia Erivo, es una actriz y cantante británica.',
-			'Reconocida por su trabajo en el teatro y el cine, ha recibido múltiples premios y forma parte del grupo de artistas nominados a los Emmy, Grammy, Óscar y Tony (EGOT), entre otros.',
-			'Debutó en el West End con el musical Los paraguas de Cherburgo (2011) y más tarde en Broadway con el papel de Celie en la reposición de The Color Purple (2015-2017).'
-		],
+		birthPlace: 'Stockwell',
 	},
 	'daisy-edgar-jones': {
-		biography: [
-			'Daisy Jessica Edgar-Jones (Londres, 24 de mayo de 1998) es una actriz inglesa.',
-			'Comenzó su carrera con las series de televisión Cold Feet (2016–2020) y War of the Worlds (2019–2021).',
-			'Obtuvo reconocimiento por su papel protagónico en la miniserie dramática romántica Normal People (2020), producida por BBC y Hulu, que le valió nominaciones a un Premio de Televisión de la Academia Británica y a un Globo de Oro.',
-			'Ha ampliado su carrera interpretando papeles en cine en el thriller de terror Fresh (2022), el misterio Where the Crawdads Sing (2022), la película de desastres Twisters (2024) y el drama romántico On Swift Horses (2024), esta última también como productora ejecutiva. En televisión, interpretó a una víctima mormona de asesinato en la miniserie criminal Under the Banner of Heaven, por la que obtuvo una segunda nominación al Globo de Oro.'
-		],
+		birthPlace: 'Londres',
 	},
 	'damien-chazelle': {
-		biography: [
-			'Damien Sayre Chazelle (Providence, Rhode Island, 19 de enero de 1985) es un director, guionista y productor de cine estadounidense y francés.',
-			'Dirigió y escribió Whiplash y La La Land, estrenadas en 2014 y 2016, así como First Man en 2018 y Babylon en 2022.',
-			'Whiplash obtuvo tres premios Óscar entre cinco nominaciones, y La La Land recibió siete Globos de Oro, el mayor número otorgado a una película desde la creación del certamen, así como seis premios Óscar entre 14 nominaciones.'
-		],
+		birthPlace: 'Providence, Rhode Island',
 	},
 	'daniel-craig': {
-		biography: [
-			'Daniel Wroughton Craig (Chester, Inglaterra, 2 de marzo de 1968), conocido como Daniel Craig, es un actor británico de cine, teatro y televisión.',
-			'El papel de Bond lo ha elevado a nivel de estrella internacional: a pesar de que inicialmente fue recibido con escepticismo por los seguidores más fieles a Bond, se ha convertido en uno de los actores más aclamados, cuya interpretación hasta le ha válido a una nominación al premio BAFTA, convirtiéndose en uno de los actores con más ganancias de la industria cinematográfica. Reconocido por sus papeles en películas de acción y aventuras, Craig es instruido en la compañía británica National Youth Theatre y se gradúa en la Guildhall School of Music and Drama, de música e interpretación de Londres, donde inició su carrera en el escenario.',
-			'Debe su notoriedad especialmente por ser el sexto actor en encarnar en el cine al personaje de James Bond del escritor Ian Fleming, en las adaptaciones oficiales de las películas producidas por Eon Productions: Casino Royale (2006), Quantum of Solace (2008), Skyfall (2012), Spectre (2015) y Sin tiempo para morir (2021).'
-		],
+		birthPlace: 'Chester, Inglaterra',
 	},
 	'daniel-fanego': {
 		birthPlace: 'Buenos Aires',
 	},
 	'daniel-kaluuya': {
-		biography: [
-			'Daniel Kaluuya (Londres; 24 de febrero de 1989) es un actor y cineasta inglés.',
-			'Es conocido por haber participado en el segundo episodio de la primera temporada de la serie de televisión Black Mirror y en la película de Jordan Peele Get Out, por la cual recibió aclamación por parte de la crítica y su primera nominación a los premios de la Academia como mejor actor.',
-			'Ha ganado, entre otros, el premio Óscar, SAG, Globo de Oro y BAFTA al mejor actor de reparto por su actuación en Judas and The Black Messiah (2021).'
-		],
+		birthPlace: 'Londres',
 	},
 	'daniel-radcliffe': {
-		biography: [
-			'Daniel Jacob Radcliffe (Fulham, Inglaterra, 23 de julio de 1989) es un actor británico, principalmente conocido por haber protagonizado la saga cinematográfica de Harry Potter. Fundamentalmente por ello, ha recaudado una fortuna de 23 millones de libras esterlinas (algo más de 27 millones de euros), parte de la cual ha destinado a organizaciones benéficas. Sus comienzos profesionales se remontan a 1999, cuando actuó en el telefilme David Copperfield, adaptación de la novela homónima de Charles Dickens. Posteriormente, debutó con El sastre de Panamá (2001) y apareció en otras películas como en la independiente December Boys y la televisiva My Boy Jack.',
-			'En 2007 protagonizó la obra de teatro Equus, del dramaturgo Peter Shaffer, en la que interpretaba al perturbado Alan Strang.',
-			'Recibió críticas elogiosas, tanto en Inglaterra como en los Estados Unidos, además de varios premios y distinciones. Por otra parte, ha manifestado su ilusión por ser guionista o director.'
-		],
+		birthPlace: 'Fulham, Inglaterra',
 	},
 	'danny-boyle': {
 		birthPlace: 'Radcliffe, Gran Mánchester',
@@ -1661,26 +1481,13 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		birthPlace: 'Rosario',
 	},
 	'david-arquette': {
-		biography: [
-			'David James Arquette (Winchester, Virginia, 8 de septiembre de 1971) es un actor estadounidense, director de cine, productor, guionista, diseñador de modas, y ocasionalmente luchador libre profesional.',
-			'Desde entonces ha tenido varios papeles de televisión, interpretando a "Jason Ventress" en In Case of Emergency.',
-			'Es miembro de la familia de actores Arquette, se hizo conocido en el papel durante la década de 1990 después de protagonizar muchas películas de Hollywood, incluyendo la saga Scream.',
-			'Además de su carrera como actor, Arquette tuvo una breve incursión en la lucha libre profesional a principios de 2000, en la cual consiguió alcanzar el título de Campeón Mundial Peso Pesado de la WCW.'
-		],
+		birthPlace: 'Winchester, Virginia',
 	},
 	'david-fincher': {
-		biography: [
-			'David Andrew Leo Fincher (Denver, 28 de agosto de 1962) es un director y productor estadounidense de cine, televisión y vídeos musicales. Fue nominado para el Óscar a mejor director por El curioso caso de Benjamin Button (2008), La red social (2010) y por Mank (2020).',
-			'También es conocido por haber dirigido la película de terror y ciencia ficción Alien³ (1992) en su debut como director y los thrillers psicológicos Seven (1995), Fight Club (1999), Perdida (2014), Zodiac (2007) y The Girl with the Dragon Tattoo (2011), entre otras, además de tener un papel decisivo en la creación de las series de televisión House of Cards y Mindhunter, ambas de Netflix.',
-			'Sus películas Zodiac y La red social están incluidas en el ranking de la BBC Las 100 mejores películas del siglo XXI.'
-		],
+		birthPlace: 'Denver',
 	},
 	'demi-moore': {
-		biography: [
-			'Demetria Gene Moore (Roswell, Nuevo México, 11 de noviembre de 1962), conocida profesionalmente como Demi Moore, es una actriz, modelo y productora estadounidense. Después de realizar papeles pequeños en películas y un papel recurrente en la serie de televisión General Hospital, Moore estableció su carrera en la década de 1990.',
-			'Acto seguido apareció en películas con buenos resultados en taquilla como A Few Good Men (1992), Indecent Proposal (1993) y Disclosure (1994). Protagonizó un episodio de la serie de terror Tales from the Crypt.',
-			'Su actuación protagonista en Ghost, la película más taquillera de 1990, le valió una nominación a los Globos de Oro.'
-		],
+		birthPlace: 'Roswell',
 	},
 	'denis-villeneuve': {
 		birthPlace: 'Trois-Rivières, Quebec',
@@ -1692,45 +1499,22 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'dev-patel': {
-		biography: [
-			'Dev Patel (Harrow, Londres, Inglaterra; 23 de abril de 1990) es un actor y director británico de ascendencia india.',
-			'Tuvo su primer papel como Sir Andrew Aguecheek en la producción de la escuela de Noche de Reyes.',
-			'Es conocido por sus papeles en las películas Slumdog Millionaire, El Exótico Hotel Marigold, The Last Airbender, Lion, y en las series Skins y The Newsroom. En el año 2016 fue nominado al Premio Óscar por su interpretación de Saroo Brierley en Lion.',
-			'Dev Patel nació el 23 de abril de 1990 en Harrow, Londres, Inglaterra.'
-		],
+		birthPlace: 'Harrow, Londres, Inglaterra',
 	},
 	'diego-peretti': {
 		birthPlace: 'Buenos Aires',
 	},
 	'don-cheadle': {
-		biography: [
-			'Donald Frank Cheadle Jr. (Kansas City, Misuri; 29 de noviembre de 1964) es un actor y productor de cine y televisión estadounidense.',
-			'Ganador del Globo de Oro al mejor actor de reparto - Serie, miniserie o telefilme y dos veces ganador del Premio del Sindicato de Actores al mejor reparto. Candidato a los Premios Óscar, Emmy y BAFTA. Conocido por sus intervenciones en películas como Boogie Nights (1997), Traffic (2000), Ocean\'s Twelve (2004), Hotel Rwanda (2004), Crash (2004) o El vuelo (2012).',
-			'También es conocido por interpretar al teniente coronel James «Rhodey» Rhodes en las películas del Universo cinematográfico de Marvel Iron Man 2 (2010), Iron Man 3 (2013), Avengers: Age of Ultron (2015), Capitán América: Civil War (2016), Avengers: Infinity War (2018), Avengers: Endgame (2019) y la serie The Falcon and the Winter Soldier (2021).'
-		],
+		birthPlace: 'Kansas City, Misuri',
 	},
 	'donald-pleasence': {
-		biography: [
-			'Donald Henry Pleasence (Worksop, Nottinghamshire, Inglaterra; 5 de octubre de 1919-Saint-Paul de Vence, Francia; 2 de febrero de 1995) fue un actor británico.',
-			'Aunque es habitualmente asociado a papeles de «malo» (o al menos sombríos) en películas de serie B, tuvo una carrera muy extensa y trabajó con figuras de máximo prestigio, como Laurence Olivier, John Sturges y Woody Allen.',
-			'A los siete años participó en su primera obra de teatro, en Scunthorpe, titulada Passers By. Fue educado como un estricto metodista en el pequeño pueblo de Grimoldby, Lincolnshire, desde la edad de nueve años. Con su hermano mayor Ralph, ambos fueron a la escuela de Eastfield Road en Louth. Estuvo en los Scouts locales, el 4º Metodista Unido de Louth. Produjo el concierto escolar de Navidad, en Louth, en sus primeros años de adolescencia. Durante dieciocho meses trabajó como empleado de reservas en Swinton railway station, con LNER y decidió que quería ser actor profesional, aceptando un puesto en la Jersey Repertory Company en 1939. Su primera obra profesional en el Playhouse, en Jersey, en julio de 1939, fue como ayudante del director de escena de la Kent-Naismith Rep Company, donde interpretó a Hareton Earnshaw en Cumbres borrascosas.',
-			'Donald Pleasence nació el 5 de octubre de 1919 en Worksop, Nottinghamshire, Inglaterra.'
-		],
+		birthPlace: 'Worksop, Nottinghamshire, Inglaterra',
 	},
 	'dustin-hoffman': {
-		biography: [
-			'Dustin Lee Hoffman (Los Ángeles, California, 8 de agosto de 1937), conocido artísticamente como Dustin Hoffman, es un actor, comediante y director estadounidense.',
-			'Ha ganado en dos ocasiones el Óscar de la Academia de Cine de Hollywood al mejor actor. Hoffman obtuvo elogios críticos por protagonizar la obra Eh?, por la cual ganó un premio de teatro mundial y un premio Drama Desk.',
-			'Este logro fue seguido pronto por su papel en la película de El graduado, de 1967.',
-			'Desde entonces, su carrera se ha centrado en gran medida en el cine, con retornos esporádicos a la televisión y al escenario.'
-		],
+		birthPlace: 'Los Ángeles, California',
 	},
 	'dwayne-johnson': {
-		biography: [
-			'Dwayne Douglas Johnson (Hayward, California, 2 de mayo de 1972), conocido como The Rock o La Roca, es un actor, luchador profesional y empresario estadounidense. Se desempeñó como luchador profesional para WWE hasta su retirada oficial en 2019, aunque regresó en 2023 a tiempo parcial.',
-			'El primer papel protagonista de Johnson en una película fue en El rey Escorpión en 2002.',
-			'Como actor, ha participado en numerosas películas en bastantes de ellas, siendo su papel como Luke Hobbs en la franquicia The Fast and the Furious uno de los más reconocidos, así como Black Adam para su cinta independiente Black Adam (2022), perteneciente al Universo extendido de DC.'
-		],
+		birthPlace: 'Hayward, California',
 	},
 	'ebon-moss-bachrach': {
 		birthPlace: 'Nueva York, Nueva York',
@@ -1742,19 +1526,10 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'ed-harris': {
-		biography: [
-			'Edward Allen Harris (Tenafly, Nueva Jersey, 28 de noviembre de 1950), más conocido como Ed Harris, es un actor y cineasta estadounidense.',
-			'En televisión, Harris destaca por sus papeles como Miles Roby en la miniserie Empire Falls (2005) y como el senador estadounidense John McCain en el telefilme Game Change (2012); este último le valió el Globo de Oro al mejor actor de reparto de serie, miniserie o telefilme.',
-			'Sus interpretaciones en Apolo 13 (1995), El show de Truman (1998), Pollock (2000) y Las horas (2002) le valieron el aplauso de la crítica y nominaciones al Oscar.'
-		],
+		birthPlace: 'Tenafly, Nueva Jersey',
 	},
 	'eddie-redmayne': {
-		biography: [
-			'Edward John David Redmayne (Westminster, Londres, 6 de enero de 1982) es un actor británico.',
-			'Comenzó su carrera como actor profesional en el teatro del West End antes de hacer su debut en la pantalla en 1996 con apariciones televisivas como invitado.',
-			'Conocido principalmente por su papel en películas biográficas, ha recibido varios reconocimientos.',
-			'Sus primeras películas fueron Like Minds (2006), The Good Shepherd (2006) y Elizabeth: The Golden Age (2007). En el escenario, Redmayne protagonizó las producciones Red de 2009 a 2010 y Richard II de 2011 a 2012.'
-		],
+		birthPlace: 'Westminster, Londres',
 	},
 	'eduardo-blanco': {
 		birthPlace: 'Buenos Aires',
@@ -1769,88 +1544,52 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'edward-norton': {
-		biography: [
-			'Edward Harrison Norton (Boston, Massachusetts, 18 de agosto de 1969) es un actor, guionista, director y productor de cine estadounidense. Ha ganado un Globo de Oro y ha sido nominado en cuatro ocasiones al Óscar (por Primal Fear, American History X, Birdman y A Complete Unknown).',
-			'Su madre Lydia Robinson "Robin" (Rouse) profesora de lengua inglesa en la escuela secundaria local antes de convertirse en directora de subvenciones educativas en la Fundación Abell, murió de un tumor cerebral en 1997.',
-			'Para hacer frente al dolor que le provocó la tragedia, Norton preparó una proyección benéfica de Everyone Says I Love You en Baltimore para financiar la investigación del equipo de oncología del Hospital Johns Hopkins, que operó a su madre. Su padre es el prestigioso abogado Edward Mower Norton, que sirvió en Vietnam como teniente de la Infantería de Marina; con el transcurso de los años llegó a ser un abogado ambientalista, y defensor de la conservación de la naturaleza que desarrolló este aspecto sobre todo en Asia; obtuvo el puesto de fiscal federal en la administración del presidente Jimmy Carter.',
-			'Edward Norton nació el 18 de agosto de 1969 en Boston, Massachusetts.'
-		],
+		birthPlace: 'Boston, Massachusetts',
 	},
 	'elle-fanning': {
+		birthPlace: 'Conyers, Georgia',
 		biography: [
 			'Mary Elle Fanning (Conyers, Georgia, 9 de abril de 1998) es una actriz, modelo y productora de cine estadounidense.',
 			'Es conocida por interpretar a la Princesa Aurora / Bella Durmiente en las películas de fantasía Maleficent (2014) y Maleficent: Mistress of Evil (2019) y por interpretar a Catalina la Grande en la serie The Great (2020-2023), papel por el que recibió nominaciones a un Premio Emmy en 2022; tres Premios Globo de Oro en 2021, 2022 y 2023, al Premio del Sindicato de Actores de 2022 y al Premio Satellite en 2023 como Mejor actriz de serie de comedia.',
-			'Saltó a la fama tras protagonizar junto a su hermana la miniserie Taken (2002).'
+			'Saltó a la fama tras protagonizar junto a su hermana la miniserie Taken (2002).',
+			'Elle Fanning nació el 9 de abril de 1998 en Conyers, Georgia.'
 		],
 	},
 	'emily-blunt': {
-		biography: [
-			'Emily Olivia Laura Blunt (Londres, 23 de febrero de 1983), conocida como Emily Blunt, es una actriz y cantante británica, ganadora de un Globo de Oro, de un Premio del Sindicato de Actores y de un Premio de la Crítica Cinematográfica.',
-			'Ha sido nominada a seis Globos de Oro, cuatro Premios BAFTA, tres Premios del Sindicato de Actores y siete Premios de la Crítica Cinematográfica.',
-			'Es conocida por su trabajo en The Devil Wears Prada (2006), The Young Victoria (2009), The Adjustment Bureau (2011), Looper (2012), Al filo del mañana (2014), Sicario (2015), El cazador y la reina del hielo (2016), La chica del tren (2016), A Quiet Place (2018), El regreso de Mary Poppins (2018), Wild Mountain Thyme (2020), y Oppenheimer (2023) entre otros.'
-		],
+		birthPlace: 'Londres',
 	},
 	'emma-watson': {
-		biography: [
-			'Emma Charlotte Duerre Watson (París, 15 de abril de 1990) es una actriz, modelo y activista británica, conocida principalmente por haber interpretado el personaje de Hermione Granger en la saga de películas de Harry Potter.',
-			'Fue elegida para interpretar a Hermione Granger a los nueve años, después de haber participado anteriormente en obras de teatro escolares. Protagonizó, junto con Daniel Radcliffe y Rupert Grint, las ocho películas de la serie cinematográfica. Debido a su trabajo en Harry Potter, fue galardonada con diversos premios y se estima que ha ganado 26 millones de libras esterlinas. Hizo su primera aparición fuera de la saga de Harry Potter en la película para televisión Ballet Shoes emitida por BBC One el 26 de diciembre de 2007 con una audiencia de 5,2 millones.',
-			'En 2012 protagonizó junto a Logan Lerman, la película The Perks of Being a Wallflower, basada en la novela homónima de Stephen Chbosky, en 2013 actuó en The Bling Ring, película de Sofia Coppola basada en hechos reales, y en 2014 apareció en Noé, la epopeya bíblica de Darren Aronofsky.'
-		],
+		birthPlace: 'París',
 	},
 	'evangeline-lilly': {
+		birthPlace: 'Fort Saskatchewan, Alberta',
 		biography: [
 			'Nicole Evangeline Lilly (Fort Saskatchewan, Alberta; 3 de agosto de 1979), conocida artísticamente como Evangeline Lilly, es una exactriz y escritora canadiense.',
 			'Logró popularidad por su papel de Kate Austen en la serie de televisión Lost (2004-2010), por la que obtuvo un Premio del Sindicato de Actores y recibió una nominación al Globo de Oro. También fue reconocida por sus interpretaciones de Connie James en The Hurt Locker (2008), Hope van Dyne en Ant-Man and the Wasp (2018), Bailey Tallet en Real Steel (2011) y Tauriel en la serie fílmica de El Hobbit.',
-			'Interpretó a Hope van Dyne / "La Avispa" en el universo cinematográfico de Marvel en las películas Ant-Man (2015), Ant-Man and the Wasp (2018) Avengers: Endgame (2019) y Ant-Man and the Wasp: Quantumania (2023).'
+			'Interpretó a Hope van Dyne / "La Avispa" en el universo cinematográfico de Marvel en las películas Ant-Man (2015), Ant-Man and the Wasp (2018) Avengers: Endgame (2019) y Ant-Man and the Wasp: Quantumania (2023).',
+			'Evangeline Lilly nació el 3 de agosto de 1979 en Fort Saskatchewan, Alberta.'
 		],
 	},
 	'ewan-mcgregor': {
-		biography: [
-			'Ewan Gordon McGregor (Perth, 31 de marzo de 1971), citado como Ewan McGregor, es un actor, cantante y director de cine escocés.',
-			'Es famoso sobre todo por haber protagonizado la película de culto británica Trainspotting (1996), las películas románticas de Hollywood Moulin Rouge! (2001) y Abajo el amor (2003), y por haber interpretado a Obi-Wan Kenobi en la trilogía de las precuelas de la saga Star Wars y en la serie del mismo nombre Obi-Wan Kenobi (2022).',
-			'Ha interpretado a personajes musicales a lo largo de su trayectoria cinematográfica, por lo que ha grabado y colaborado en diferentes bandas sonoras.',
-			'Ewan McGregor nació el 31 de marzo de 1971 en Perth.'
-		],
+		birthPlace: 'Perth',
 	},
 	'fernanda-torres': {
-		biography: [
-			'Fernanda Torres (Río de Janeiro, 15 de septiembre de 1965) es una escritora y actriz brasileña de cine, teatro y televisión.',
-			'Por su actuación aclamada por la crítica en la película dramática Aún estoy aqui (2024), Torres ganó el Globo de Oro a la mejor actriz - Drama, convirtiéndose en la primera brasileña en obtenerlo.',
-			'Torres creció inmersa en el mundo del arte y la actuación, debido a que es hija de la actriz Fernanda Montenegro y del actor Fernando Torres.'
-		],
+		birthPlace: 'Río de Janeiro',
 	},
 	'florence-pugh': {
-		biography: [
-			'Florence Rose Pugh (Oxford, Inglaterra; 3 de enero de 1996) es una actriz británica.',
-			'Hizo su debut actoral en 2014 en la película dramática The Falling.',
-			'Pugh ganó reconocimiento en 2016 por su papel protagónico como una joven esposa violenta en el drama independiente Lady Macbeth, ganando un Premio de Cine Independiente Británico.',
-			'Después de protagonizar las películas King Lear y Outlaw King de 2018, recibió elogios por su papel principal en la miniserie The Little Drummer Girl de 2018.'
-		],
+		birthPlace: 'Oxford, Inglaterra',
 	},
 	'gal-gadot': {
-		biography: [
-			'Gal Gadot (Petaj Tikva, 30 de abril de 1985) es una actriz, productora y modelo israelí.',
-			'A los 18 años ganó el título de Miss Israel 2004, con el cual representó a Israel en Miss Universo 2004.',
-			'Su primer papel cinematográfico internacional llegó con Gisele Yashar en Fast & Furious (2009), un papel que repitió en las entregas posteriores de la franquicia cinematográfica.',
-			'Luego ganó fama mundial por interpretar a Wonder Woman, primero con una breve participación en Batman v Superman: Dawn of Justice (2016) y luego como protagonista en Wonder Woman (2017), Liga de la Justicia (2017), Wonder Woman 1984 (2020) y Liga de la Justicia de Zack Snyder (2021). Su interpretación del personaje le ha otorgado varios premios, entre estos dos MTV Movie & TV Awards, un Critics\' Choice y un Saturn.'
-		],
+		birthPlace: 'Petaj Tikva',
 	},
 	'gary-oldman': {
-		biography: [
-			'Gary Leonard Oldman (Londres, 21 de marzo de 1958) es un actor, director de cine, guionista y productor inglés.',
-			'También ha doblado a Viktor Reznov en los videojuegos Call of Duty World at War y Call of Duty: Black Ops y a Lord Shen en Kung Fu Panda 2, papel por el que recibió una nominación a Mejor Interpretación Vocal en los premios Annie.',
-			'Entre sus películas están JFK (1991), Amada Inmortal (1994), Drácula, de Bram Stoker (1992), Romeo Is Bleeding (1993), Léon (1994), El quinto elemento (1997), Harry Potter y el prisionero de Azkaban (2004), Batman Begins (2005) Harry Potter y la Orden del Fénix (2007), The Dark Knight (2008), Tinker Tailor Soldier Spy, The Dark Knight Rises (2012), Darkest Hour (2017) y Mank (2020).'
-		],
+		birthPlace: 'Londres',
 	},
 	'gaston-pauls': {
 		birthPlace: 'Buenos Aires',
 	},
 	'gene-hackman': {
-		biography: [
-			'Eugene Allen Hackman (San Bernardino, California; 30 de enero de 1930-Santa Fe, Nuevo México; 18 de febrero de 2025), conocido como Gene Hackman, fue un actor estadounidense.',
-			'Se retiró principalmente de la actuación después de su último papel cinematográfico en Welcome to Mooseport (2004), y ocasionalmente brindó narraciones para documentales de televisión hasta 2017.',
-			'Hackman ganó dos premios Oscar por su papel de Jimmy "Popeye" Doyle en el thriller de acción The French Connection (1971) de William Friedkin y por su papel de Mejor Actor de Reparto por su papel de un sheriff villano en la película western de Clint Eastwood, Unforgiven (1992).'
-		],
+		birthPlace: 'San Bernardino, California',
 	},
 	'geoffrey-rush': {
 		birthPlace: 'Toowoomba, Queensland',
@@ -1862,106 +1601,49 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'george-clooney': {
-		biography: [
-			'George Timothy Clooney (Lexington, Kentucky, 6 de mayo de 1961) es un actor, director, productor y guionista estadounidense nacionalizado francés en diciembre de 2025.',
-			'Fue nominado dos veces para los premios Emmy por su interpretación del Dr. Doug Ross en la galardonada serie de televisión Urgencias.',
-			'También es conocido por su activismo político, siendo Mensajero de la Paz de Naciones Unidas desde 2008, título al que renunció posteriormente.',
-			'Ha sido galardonado con cuatro Globos de Oro, dos Óscar y un BAFTA.'
-		],
+		birthPlace: 'Lexington, Kentucky',
 	},
 	'george-miller': {
-		biography: [
-			'George Miller (Brisbane, 3 de marzo de 1945) es un cineasta australiano, conocido por ser el creador de la saga Mad Max.',
-			'Miller es, gracias a la saga Mad Max, considerado uno de los mejores directores de acción.',
-			'Además de haber dirigido acción, Miller también ha destacado en obras dramáticas como Lorenzo\'s Oil (nominada al Óscar a Mejor guion original), la película de fantasía The Witches of Eastwick o Happy Feet, ganadora de un Óscar a Mejor película de animación.'
-		],
+		birthPlace: 'Brisbane',
 	},
 	'gerard-butler': {
-		biography: [
-			'Gerard James Butler (Paisley, Escocia, 13 de noviembre de 1969) es un actor de cine y televisión y productor británico.',
-			'Después de estudiar Derecho, se dedicó a la actuación a mediados de la década de 1990 con pequeños papeles en producciones fílmicas.',
-			'En 2000, interpretó a Drácula en la película de terror Dracula 2000 con Christopher Plummer y Jonny Lee Miller.',
-			'Debutó en el cine con Mrs. Brown (1997), seguida de la película de James Bond El mañana nunca muere (1997).'
-		],
+		birthPlace: 'Paisley, Escocia',
 	},
 	'glen-powell': {
-		biography: [
-			'Glen Thomas Powell Jr. (Austin, Texas, 21 de octubre de 1988) es un actor, escritor y productor estadounidense. Es conocido por interpretar a Chad Radwell en la serie de comedia de terror de Fox Scream Queens (2015-2016), Finnegan en Everybody Wants Some!! (2016), y al astronauta John Glenn en el drama Hidden Figures (2016), aunque obtuvo un mayor reconocimiento por su papel secundario en la película de acción Top Gun: Maverick (2022) y su papel principal en la comedia romántica Anyone but You (2023).',
-			'Comenzó su carrera como actor junto a Antonio Banderas y Sylvester Stallone en Spy Kids 3-D: Game Over. En 2007, antes de su primer año de universidad, Glen obtuvo un papel en The Great Debaters, dirigida y protagonizada por Denzel Washington. Desde su mudanza a Los Ángeles, ha aparecido en series de televisión como Into the West, Jack & Bobby, CSI: Miami, NCIS, Without a Trace, Rizzoli & Isles y The Lying Game, junto con largometrajes como The Expendables 3, Ride Along 2, Sex Ed, Stuck in Love y The Dark Knight Rises. Aunque adquirió mayor relevancia por su papel protagónico en la serie slasher creada por Ryan Murphy Scream Queens, con el personaje de Chad Radwell, que se mantuvo en sus dos temporadas. En años posteriores, sus papeles en televisión han sido dedicados como actuación de voz en All Hail King Julien, Jurassic World: Campamento Cretácico y Rick y Morty. Powell coprotagonizó como Finnegan en Everybody Wants Some!!, la secuela espiritual de Richard Linklater de Dazed & Confused, que fue filmada en Austin y lanzada por Paramount el 30 de marzo de 2016.',
-			'Recibió elogios de la crítica por su actuación. También protagonizó junto a Zoey Deutch la cinta Set It Up, una comedia romántica en Netflix. Además, participó en el romance histórico The Guernsey Literary and Potato Peel Pie Society como Mark Reynolds. Interpreta al Sargento Dylan Chutsky, un soldado estadounidense en el drama sobre la guerra de Irak Castillos de arena (2017) —título original; Sand Castle— una producción de Netflix dirigida por Fernando Coimbra. En la película trabajó junto con Logan Marshall-Green y Henry Cavill como actores de reparto y con Nicholas Hoult como el protagonista del filme. Durante 2022 puso voz al protagonista Bostick en la película animada Apollo 10 1⁄2: A Space Age Childhood. También obtuvo mayor reconocimiento por la prensa gracias a su actuación como Jake «Hangman» Seresin en Top Gun: Maverick, que protagonizó junto a Tom Cruise y Jennifer Connelly, entre otros. Además, protagonizó la película biográfica de guerra Devotion como Thomas J.',
-			'Glen Powell nació el 21 de octubre de 1988 en Austin, Texas.'
-		],
+		birthPlace: 'Austin, Texas',
 	},
 	'graciela-borges': {
 		birthPlace: 'Buenos Aires',
 	},
 	'greta-gerwig': {
-		biography: [
-			'Greta Celeste Gerwig (Sacramento, California; 4 de agosto de 1983) es una actriz, directora, guionista y productora estadounidense.',
-			'En 2017 debutó como directora y guionista en solitario con la película Lady Bird, por la que ganó el Globo de Oro a la mejor película - Comedia o musical y recibió nominaciones a los Premios Óscar a mejor dirección y mejor guion original.',
-			'Su renombre surgió por su participación en películas del género mumblecore. Ha colaborado con el director Joe Swanberg en varios proyectos, incluyendo la película Nights and Weekends escrita, dirigida y protagonizada por ambos.'
-		],
+		birthPlace: 'Sacramento, California',
 	},
 	'gwyneth-paltrow': {
-		biography: [
-			'Gwyneth Kate Paltrow (Los Ángeles, 27 de septiembre de 1972) es una actriz y cantante estadounidense.',
-			'Creció celebrando tanto las fiestas judías como las cristianas. Es prima segunda de la antigua congresista por Arizona, Gabrielle Giffords por su padre. Su tío materno es el cantante de ópera Harry Danner cuya hija, Hillary Danner, es en consecuencia su prima y amiga muy cercana. Otra de sus primas, con quien cofundó la compañía WeWork, es Rebekah Paltrow Neumann,que está casada con el multimillonario de origen israelí Adam Neumann. Estudió un semestre de Historia del Arte en la Universidad de California, pero su inquietud artística la llevó a buscar trabajo como actriz en Nueva York.',
-			'Es ganadora de un Óscar, un Globo de Oro y dos Premios del Sindicato de Actores todos ellos por su interpretación de Viola de Lesseps en la película Shakespeare in Love (1998).',
-			'Gwyneth Paltrow nació el 27 de septiembre de 1972 en Los Ángeles.'
-		],
+		birthPlace: 'Los Ángeles',
 	},
 	'hailee-steinfeld': {
-		biography: [
-			'Hailee Steinfeld (Tarzana, Los Ángeles, California; 11 de diciembre de 1996) es una actriz y cantante estadounidense.',
-			'Tuvo algunos papeles en cortometrajes y series de televisión antes de interpretar a Mattie Ross en la adaptación de True Grit de los hermanos Coen, por la cual fue nominada al Óscar.',
-			'Interpretó a Emily Junk en la serie de películas Pitch Perfect (2015-2017) y a Nadine Franklin en The Edge of Seventeen (2016), la última de las cuales le valió una nominación al Globo de Oro a la mejor actriz de comedia cinematográfica o Musical.'
-		],
+		birthPlace: 'Tarzana, Los Ángeles, California',
 	},
 	'halle-berry': {
-		biography: [
-			'Halle Maria Berry (Cleveland, Ohio, 14 de agosto de 1966) es una actriz, directora y productora estadounidense ganadora de un Premio Óscar, un Globo de Oro, dos Premios del Sindicato de Actores y un Emmy.',
-			'Antes de convertirse en actriz, comenzó siendo modelo y participó en varios concursos de belleza, terminando como primera finalista en el concurso de Miss Estados Unidos y ocupando el sexto lugar en el concurso de Miss Mundo en 1986.',
-			'Dandridge (1999), por la cual ganó el Premio Primetime Emmy y el Premios Globo de Oro a la Mejor Actriz en una Miniserie o Película, entre muchos otros premios.'
-		],
+		birthPlace: 'Cleveland',
 	},
 	'harrison-ford': {
-		biography: [
-			'Harrison Ford (Chicago, Illinois, 13 de julio de 1942) es un actor, productor de cine, y actor de voz estadounidense de cine y televisión.',
-			'Aunque inicialmente fue un fracaso en taquilla, la película se transformó con el tiempo en una película de culto de la ciencia ficción.',
-			'Es recordado por haber interpretado el personaje de Indiana Jones en la saga homónima (1981-2023) y por haber interpretado al personaje de Han Solo en la saga de ciencia ficción Star Wars (1977-1983, 2015-2019).'
-		],
+		birthPlace: 'Chicago, Illinois',
 	},
 	'hector-alterio': {
 		birthPlace: 'Buenos Aires',
 	},
 	'henry-cavill': {
-		biography: [
-			'Henry William Dalgliesh Cavill (Saint Helier, Jersey; 5 de mayo de 1983) es un actor británico.',
-			'Inició su carrera profesional con la película Laguna (2001) y durante los años posteriores desarrolló papeles secundarios en varias producciones británicas como The Count of Monte Cristo (2002), Tristan & Isolde (2006) y Stardust (2007).',
-			'Comenzó a ganar reconocimiento al interpretar a Charles Brandon, primer duque de Suffolk, en la serie de televisión The Tudors, desde 2007 hasta 2010.',
-			'Tras su salida de The Tudors, protagonizó su primer éxito en taquilla Immortals (2011), y posteriormente adquirió fama a nivel mundial interpretando a Superman en las películas El hombre de acero (2013), Batman v Superman: Dawn of Justice (2016), Justice League (2017) y Zack Snyder\'s Justice League (2021).'
-		],
+		birthPlace: 'Saint Helier, Jersey',
 	},
 	'hugh-grant': {
-		biography: [
-			'Hugh John Mungo Grant (Hammersmith, Londres, 9 de septiembre de 1960), más conocido como Hugh Grant, es un actor y productor de cine británico.',
-			'Protagonizó otras comedias románticas como Notting Hill (1999), El diario de Bridget Jones (2001) y su secuela de 2004, Un niño grande (2002), Amor con preaviso (2002), Love Actually (2003) y Tú la letra, yo la música (2007). Durante la década de 2010, Grant comenzó a tomar papeles opuestos, comenzando con múltiples papeles en la película de ciencia ficción El atlas de las nubes (2012) de The Wachowski.',
-			'Se estableció al principio de su carrera como un protagonista romántico encantador y vulnerable, y desde entonces ha pasado a ser un actor de carácter más dramático.'
-		],
+		birthPlace: 'Hammersmith, Londres',
 	},
 	'hugh-jackman': {
-		biography: [
-			'Hugh Michael Jackman (Sídney, 12 de octubre de 1968) es un actor, cantante y productor de cine australobritánico. Su papel más reconocido es Wolverine en la serie de películas de X-Men y en Deadpool & Wolverine del Universo cinematográfico de Marvel en 2024.',
-			'En teatro, ganó un premio Tony por su papel en The Boy From Oz.',
-			'Entre otras obras notables, ha protagonizado las películas: Kate & Leopold (2001), Van Helsing (2004), The Prestige (2006), Australia (2008), Real Steel (2011), Los Miserables (2012), Prisoners (2013) y El gran showman (2017).'
-		],
+		birthPlace: 'Sídney',
 	},
 	'ian-mckellen': {
-		biography: [
-			'Sir Ian Murray McKellen (Burnley, Inglaterra, 25 de mayo de 1939) es un actor británico de cine y teatro, uno de los más notables del Reino Unido, considerado comúnmente un icono de la cultura británica. En su larga carrera ha ganado siete premios Laurence Olivier, un Globo de Oro, un Tony, dos premios del Sindicato de Actores, un BIF y dos premios de la Crítica Cinematográfica; y ha sido nominado al Óscar en dos ocasiones, cinco a los BAFTA y cinco a los Emmy.',
-			'Su labor interpretativa ha abarcado desde Shakespeare y el teatro popular contemporáneo hasta la fantasía y la ciencia ficción.',
-			'La BBC declaró que «sus interpretaciones le han asegurado un nicho en el canon del teatro inglés y dentro del gremio cinematográfico». Comenzó su carrera profesional en 1961 como parte del selecto elenco del Belgrade Theatre.'
-		],
+		birthPlace: 'Burnley, Inglaterra',
 	},
 	'jack-black': {
 		birthPlace: 'Santa Mónica, California',
@@ -1982,108 +1664,52 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'jacob-elordi': {
-		biography: [
-			'Jacob Nathaniel Elordi (Brisbane, Queensland, 26 de junio de 1997) es un actor australiano conocido por interpretar a Noah Flynn en la franquicia de películas de Netflix The Kissing Booth (2018-2021) y a Nate Jacobs en la serie Euphoria de HBO.',
-			'Su primer papel como actor fue en la película australiana Swinging Safari en 2018, interpretando el papel de Rooster. Elordi saltó a la fama interpretando a Noah Flynn en la película de comedia romántica de Netflix The Kissing Booth, que se estrenó en mayo de 2018. En 2019, Elordi protagonizó la película de terror The Mortuary Collection y comenzó a interpretar a Nate Jacobs en la serie de televisión de HBO Euphoria. Repitió el papel en la secuela The Kissing Booth 2, que se filmó a mediados de 2019 en Ciudad del Cabo y se estrenó en julio de 2020. También protagonizó la tercera película de la serie, The Kissing Booth 3, que se estrenó en Netflix el 11 de agosto de 2021.',
-			'En 2020 protagonizó la película 2 Hearts, que se hizo especialmente reconocida tres años después gracias a entrar en el catálogo de Netflix. En 2022 tuvo una participación en la cinta Deep Water junto a Ana de Armas y Ben Affleck. Ya en 2023 obtuvo gran reconocimiento para la crítica especializada por sus papeles de Félix Catton en el drama Saltburn y a Elvis Presley en la película biográfica Priscilla. En 2024 estrenó la película Oh, Canada, interpretando al joven Leonard Fife. Además, se anunció su fichaje para la película histórica On Swift Horses y como el Monstruo de Frankenstein en la película de Guillermo del Toro Frankenstein, por la que más tarde recibiría una nominación al Globo de Oro al mejor actor de reparto. En 2026 protagonizó junto a Margot Robbie la séptima adaptación al cine de la novela Cumbres Borrascosas.',
-			'Jacob Elordi nació el 26 de junio de 1997 en Brisbane, Queensland.'
-		],
+		birthPlace: 'Brisbane, Queensland',
 	},
 	'jake-gyllenhaal': {
-		biography: [
-			'Jacob Benjamin Gyllenhaal (Los Ángeles, 19 de diciembre de 1980) es un actor estadounidense.',
-			'Comenzó a actuar a la edad de once años, cuando participó en City Slickers, estrenada en 1991.',
-			'Su primer papel protagonista fue en la película October Sky (1999), a la que le siguieron trabajos como la película independiente de culto Donnie Darko, en la que interpreta a un adolescente con problemas psicológicos y donde compartió reparto con su hermana Maggie Gyllenhaal, y The Day After Tomorrow (2004), que trata el tema catastrófico del enfriamiento global.'
-		],
+		birthPlace: 'Los Ángeles',
 	},
 	'james-franco': {
-		biography: [
-			'James Edward Franco (Palo Alto, California, 19 de abril de 1978) es un actor y director de cine estadounidense. Inició su trabajo interpretativa a finales de la década de 1990, con apariciones en series televisivas como Freaks and Geeks y en películas de adolescentes.',
-			'En 2001 interpretó el papel de James Dean en la película homónima, actuación que fue premiada con un Globo de Oro al mejor actor de miniserie o telefilme. Alcanzó la fama internacional por su papel de Harry Osborn en la primera trilogía de Spider-Man.',
-			'A partir de entonces, sus participaciones en películas han sido muy variadas, incluyendo la película de guerra The Great Raid (2005), el drama romántico Tristán e Isolda, y la película dramática Annapolis (2006), dirigida por Justin Lin, entre otras.'
-		],
+		birthPlace: 'Palo Alto, California',
 	},
 	'james-gunn': {
-		biography: [
-			'James Francis Gunn Jr. (San Luis, Misuri; 5 de agosto de 1966) es un cineasta y guionista estadounidense, copresidente y codirector del Universo DC.',
-			'Discovery contrató a Gunn y Peter Safran para convertirse en copresidentes y codirectores ejecutivos de DC Studios. Bajo DC Studios, Gunn coproducirá y será productor ejecutivo de todas las películas y series de televisión de la próxima franquicia de medios del Universo DC (DCU) junto con Safran, al mismo tiempo que seguirá escribiendo guiones y dirigiendo proyectos para el DCU. Comenzó su carrera como guionista a mediados de los años 1990, comenzando en Troma Entertainment con Tromeo and Juliet (1997).',
-			'Reconocido por escribir y dirigir las películas de la trilogía de Guardianes de la Galaxia (2014-2023), la película The Suicide Squad (2021) y la película de Superman (2025); así como las series Peacemaker (2022-2025) de HBO Max, Creature Commandos (2024), y el especial original de Disney+ The Guardians of the Galaxy Holiday Special (2022).'
-		],
+		birthPlace: 'San Luis, Misuri',
 	},
 	'james-mangold': {
-		biography: [
-			'James Allen Mangold (Nueva York, 16 de diciembre de 1963) es un director de cine y guionista estadounidense.',
-			'Estudió en la facultad de Arte Cinematográfico de la Escuela Universitaria de Artes de Columbia y en el Instituto de Artes de California.',
-			'Es conocido por haber dirigido la película The Wolverine (2013) y su secuela Logan (2017), ambas pertenecientes a la saga de películas de X-Men.',
-			'Más tarde colaboró en una película animada de la multinacional Disney titulada Oliver y su pandilla.'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'james-mcavoy': {
-		biography: [
-			'James McAvoy (Glasgow, Escocia, 21 de abril de 1979) es un actor escocés.',
-			'Hizo su debut como actor cuando era adolescente en The Near Room (1995) y apareció principalmente en televisión hasta 2003, cuando comenzó su carrera cinematográfica.',
-			'McAvoy obtuvo reconocimiento por interpretar al Sr. Tumnus en la película de fantasía Las crónicas de Narnia: El león, la bruja y el armario (2005) y a Wesley Gibson en la película de acción Wanted (2008).',
-			'Su trabajo televisivo notable incluye el thriller State of Play (2003), la miniserie de ciencia ficción Children of Dune de Frank Herbert (2003) y la serie dramática Shameless (2004-2005).'
-		],
+		birthPlace: 'Glasgow, Escocia',
 	},
 	'jamie-foxx': {
+		birthPlace: 'Terrell, Texas',
 		biography: [
 			'Eric Marlon Bishop (Terrell, Texas; 13 de diciembre de 1967), más conocido como Jamie Foxx, es un actor, comediante, productor discográfico y cantante de R&B estadounidense.',
 			'Otros papeles incluyen al Sargento Sykes en Jarhead (2005), el ejecutivo discográfico Curtis Taylor Jr. en Dreamgirls (2006), el Detective Ricardo Tubbs en la adaptación cinematográfica de 2006 de la serie de televisión, Miami Vice, el papel principal en la película Django Unchained (2012), el supervillano Electro en The Amazing Spider-Man 2: Rise of Electro (2014) y Spider-Man: No Way Home (2021), Will Stacks en Annie (2014), el gánster Bats/Leon Jefferson III en Baby Driver (2017) y como Walter McMillian en Just Mercy (2019), donde recibió un Premio SAG.',
-			'Foxx se hizo muy conocido por su interpretación de Ray Charles en la película biográfica Ray de 2004, por la que ganó un Premio Óscar, un Globo de Oro, un BAFTA y un Premio del Sindicato de Actores como Mejor Actor, siendo uno de los pocos actores afroamericanos en ganar los premios principales en la industria cinematográfica.'
+			'Foxx se hizo muy conocido por su interpretación de Ray Charles en la película biográfica Ray de 2004, por la que ganó un Premio Óscar, un Globo de Oro, un BAFTA y un Premio del Sindicato de Actores como Mejor Actor, siendo uno de los pocos actores afroamericanos en ganar los premios principales en la industria cinematográfica.',
+			'Jamie Foxx nació el 13 de diciembre de 1967 en Terrell, Texas.'
 		],
 	},
 	'jamie-lee-curtis': {
-		biography: [
-			'Jamie Lee Curtis (Santa Mónica, California, 22 de noviembre de 1958) es una actriz, productora cinematográfica, autora infantil y activista estadounidense.',
-			'Murder Case) de la serie Colombo, emitida el 22 de mayo de 1977.',
-			'Conocida por sus actuaciones en los géneros de terror y slasher, se la considera una reina del grito, además de sus papeles en comedias. Curtis ha recibido múltiples elogios, incluido un Premio Óscar, un Emmy, un BAFTA, tres Globos de Oro y dos Premios del Sindicato de Actores, así como nominaciones para un Grammy y para un Independent Spirit.'
-		],
+		birthPlace: 'Santa Mónica, California',
 	},
 	'jason-bateman': {
-		biography: [
-			'Jason Kent Bateman (Rye, Nueva York, 14 de enero de 1969) es un actor y director estadounidense ganador de un Globo de Oro, un Premio Emmy y tres Premios del Sindicato de Actores.',
-			'Después de haber actuado en varias series de comedia durante la década de 1980, Bateman adquirió fama por su trabajo como Michael Bluth en la serie Arrested Development (2003-2019).',
-			'Ha protagonizado y dirigido la serie de televisión Ozark (2017-2022), por la que ha recibido multitud de galardones.'
-		],
+		birthPlace: 'Rye, Nueva York',
 	},
 	'jason-momoa': {
-		biography: [
-			'Joseph Jason Namakaeha Momoa (Honolulu, 1 de agosto de 1979) es un actor, actor de voz, director, guionista y productor de cine estadounidense.',
-			'Comenzó su carrera como actor después de mentir sobre ser un modelo profesional, lo cual le concedió un papel en la serie Baywatch, en la que debutó en 1999 y participó dos temporadas.',
-			'Más tarde, ganó popularidad interpretando a Ronon Dex en la serie de televisión Stargate Atlantis desde 2004 hasta 2009.',
-			'En 2011, siguió adquiriendo fama al interpretar a Khal Drogo en la serie Game of Thrones durante sus dos primeras temporadas.'
-		],
+		birthPlace: 'Honolulu',
 	},
 	'javier-bardem': {
-		biography: [
-			'Javier Ángel Encinas Bardem (Las Palmas de Gran Canaria, 1 de marzo de 1969), conocido artísticamente como Javier Bardem, es un actor español, hijo de la actriz española Pilar Bardem y proveniente de una familia de conocidos actores españoles.',
-			'Ganó el Premio Óscar al mejor actor de reparto de 2007 por su papel como el psicópata asesino Anton Chigurh en No Country for Old Men.',
-			'También ha cosechado elogios de la crítica por papeles en películas tales como Jamón, jamón, Carne trémula, Boca a boca, Los lunes al sol, Mar adentro y El buen patrón.'
-		],
+		birthPlace: 'Las Palmas de Gran Canaria',
 	},
 	'jeff-goldblum': {
-		biography: [
-			'Jeffrey Lynn Goldblum (West Homestead, Pensilvania, Estados Unidos; 22 de octubre de 1952), más conocido como Jeff Goldblum, es un actor y músico estadounidense.',
-			'Su carrera comenzó con la película Death Wish (1974) donde interpretaba a un maleante y desde entonces se ha destacado en películas taquilleras como La mosca (1986), Parque Jurásico (1993), Independence Day (1996), El mundo perdido (1997), Jurassic World: el reino caído (2018), entre otras.',
-			'Entre 2009 y 2010 interpretó al detective Zach Nichols en la serie Law & Order: Criminal Intent.'
-		],
+		birthPlace: 'West Homestead, PA, Estados Unidos',
 	},
 	'jenna-ortega': {
-		biography: [
-			'Jenna Marie Ortega (Palm Desert, California, 27 de septiembre de 2002) es una actriz estadounidense.',
-			'Logró su gran avance actoral al protagonizar la serie de Disney Channel Stuck in the Middle (2016-2018), donde interpretó a Harley Diaz.',
-			'Otros de sus primeros trabajos reconocidos incluyen su interpretación como Ellie Alves en la serie de suspense You (2019), y su protagónico en la cinta de comedia familiar Yes Day (2021), ambas de Netflix.',
-			'Recibió elogios de la crítica por su actuación en el drama adolescente The Fallout (2021).'
-		],
+		birthPlace: 'Palm Desert, California',
 	},
 	'jennifer-connelly': {
-		biography: [
-			'Jennifer Lynn Connelly (Cairo, Nueva York, 12 de diciembre de 1970) es una actriz y modelo estadounidense.',
-			'Comenzó su carrera como modelo infantil antes de debutar en la actuación en el filme de Sergio Leone Érase una vez en América (1984).',
-			'Un año después, realizó su primer papel protagónico en la película de terror de Dario Argento Phenomena, y en 1986 obtuvo reconocimiento al participar junto con David Bowie en la cinta de fantasía Labyrinth, de Jim Henson.',
-			'Tras protagonizar la comedia romántica Career Opportunities (1991) y la película de aventuras The Rocketeer (1991), recibió elogios de la crítica especializada por su actuación en el filme de ciencia ficción Dark City (1998) y en el drama Requiem for a Dream (2000).'
-		],
+		birthPlace: 'Cairo, Nueva York',
 	},
 	'jennifer-garner': {
 		birthPlace: 'Houston, Texas',
@@ -2095,14 +1721,9 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'jeremy-renner': {
-		biography: [
-			'Jeremy Lee Renner (Modesto, 7 de enero de 1971) es un actor, actor de voz, productor y músico estadounidense.',
-			'Inició su carrera como actor en 1995 con apariciones en varios proyectos de su universidad y posteriormente como protagonista de filmes independientes, entre ellos Dahmer (2002), en el que su actuación recibió buenos comentarios.',
-			'Ganó reconocimiento en la industria al protagonizar la aclamada película The Hurt Locker (2008), que le valió una nominación a los Premios Óscar como mejor actor, así como a otros galardones, entre ellos el BAFTA y el SAG.'
-		],
+		birthPlace: 'Modesto',
 	},
 	'jeremy-strong': {
-		birthPlace: 'Boston, Massachusetts, Estados Unidos',
 		biography: [
 			'Jeremy Strong (Boston, Massachusetts, Estados Unidos, 25 de diciembre de 1978) es un actor estadounidense de cine y teatro, conocido principalmente por su papel como Kendall Roy en la serie de televisión estadounidense Succession (2018), por el que ganó el premio Primetime Emmy como mejor actor en una serie dramática en 2020. También ha intervenido en varias películas destacadas, como Lincoln (2012), La noche más oscura (2012), Selma (2014), La gran apuesta (2015), Molly\'s Game (2017) y The Gentlemen (2019).',
 			'Asistió a escuelas públicas en Boston y Sudbury (Massachusetts). Estudió en la Universidad de Yale, en la que protagonizó una serie de obras de teatro, y donde graduó con una licenciatura en inglés. También estudió en la Real Academia de Arte Dramático y la Steppenwolf Theatre Company en Chicago.',
@@ -2111,38 +1732,22 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'jesse-eisenberg': {
-		biography: [
-			'Jesse Adam Eisenberg (Nueva York, 5 de octubre de 1983) es un actor, actor de voz, escritor, dramaturgo y humorista estadounidense.',
-			'Su papel debut fue en la película The Emperor\'s Club (2002), The Village (2004), The Squid and the Whale (2005), The Living Wake (2007) y The Education of Charlie Banks (2007).',
-			'Fue nominado para mejor actor en los premios Óscar por su papel en The Social Network (2010) y al Premio Golden Raspberry en 2016, al peor actor de reparto por su papel de Lex Luthor. En 2007 fue honrado con el Premio Rising Star del Festival de Cine de Vail por su papel de Mills Joquin en The Living Wake. En 2009 protagonizó la comedia dramática Adventureland y la comedia de terror Zombieland, por la que ganó aclamación por parte de la crítica.'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'jesse-plemons': {
-		biography: [
-			'Jesse Plemons (Dallas, Texas; 2 de abril de 1988) es un actor estadounidense.',
-			'Comenzó su carrera como actor infantil y su carrera tomó impulso con su participación en la serie dramática Friday Night Lights (2006-2011).',
-			'Posteriormente interpretó a Todd Alquist en la quinta temporada de la serie criminal Breaking Bad (2012-2013); repitió su papel en el telefilme El Camino: A Breaking Bad Movie (2019).',
-			'Más tarde recibió su primera candidatura a los Premios Primetime Emmy y ganó el Premio de la Crítica Televisiva por su interpretación de Ed Blumquist en la segunda temporada de la serie de televisión antológica Fargo (2015).'
-		],
+		birthPlace: 'Dallas, Texas',
 	},
 	'jessica-chastain': {
-		biography: [
-			'Jessica Michelle Chastain (Sacramento, 24 de marzo de 1977), conocida como Jessica Chastain, es una actriz y productora de cine estadounidense.',
-			'Es fundadora de la productora de cine y televisión Freckle Films creada en 2016. Después de interpretar pequeños papeles en series de televisión, hizo su debut en la gran pantalla con la película independiente Jolene en 2008.',
-			'En su carrera ha recibido varios premios y nominaciones: entre ellos, un Premio Óscar, un Globo de Oro y tres Premios SAG.'
-		],
+		birthPlace: 'Sacramento',
 	},
 	'jessie-buckley': {
-		biography: [
-			'Jessie Noelle Buckley (Killarney, 28 de diciembre de 1989) es una actriz, cantante y compositora irlandesa.',
-			'Ganadora de un Premio Laurence Olivier, un premio BAFTA, un Globo de Oro y un Óscar. En 2019, fue reconocida por la revista Forbes en su lista anual 30 Under 30, y en 2020, fue incluida en el número 38 en la lista del diario The Irish Times dentro de los mejores actores irlandeses de cine de todos los tiempos. Su carrera comenzó en 2008 como concursante en un programa de talentos de la BBC titulado I\'d Do Anything, en el que ocupó el segundo lugar. Después de participar en papeles teatrales, suspendió su carrera profesional para estudiar en la Real Academia de Arte Dramático, de donde se graduó en 2013.',
-			'Desde entonces, ha protagonizado las películas Beast (2017) y Wild Rose (2018), por las cuales recibió elogios de la crítica y una nominación al Premio BAFTA a la mejor actriz en un papel principal por este último; y The Lost Daughter (2021), por la que fue nominada a mejor actriz de reparto en la 94.ª edición de los Premios Óscar por su interpretación de Leda.'
-		],
+		birthPlace: 'Killarney',
 	},
 	'joaquin-furriel': {
 		birthPlace: 'Lomas de Zamora, provincia de Buenos Aires',
 	},
 	'jodie-comer': {
+		birthPlace: 'Liverpool',
 		biography: [
 			'Jodie Marie Comer (Liverpool; 11 de marzo de 1993), conocida artísticamente como Jodie Comer, es una actriz británica de cine, televisión y teatro.',
 			'Ha recibido varios reconocimientos, incluidos dos Premios de la Academia Británica de la Televisión, un Premio Primetime Emmy, un Premio Tony, y un Premio Laurence Olivier.',
@@ -2151,68 +1756,31 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'john-david-washington': {
-		biography: [
-			'John David Washington (Los Ángeles, California; 28 de julio de 1984) es un actor y exjugador de fútbol americano profesional estadounidense.',
-			'Hijo del actor Denzel Washington y Pauletta Washington, es el mayor de cuatro hermanos. En 1992, a la edad de siete años, apareció como estudiante en un aula de Harlem en la película Malcolm X de Spike Lee, la cual estaba protagonizada por su padre.',
-			'Como actor es más conocido por su rol protagonista en la película de 2018 BlacKkKlansman y en la de 2020 Tenet.',
-			'John David Washington nació el 28 de julio de 1984 en Los Ángeles, California.'
-		],
+		birthPlace: 'Los Ángeles, California',
 	},
 	'johnny-depp': {
-		biography: [
-			'John Christopher Depp II (Owensboro, Kentucky, 9 de junio de 1963) es un actor, director, productor de cine y músico estadounidense.',
-			'Ha sido nominado en tres ocasiones al Óscar y recibió un Globo de Oro, un Premio del Sindicato de Actores y un César. Comenzó su carrera en la película de terror A Nightmare on Elm Street de 1984 como Glen Lantz, una de las víctimas de Freddy Krueger.',
-			'Dos años después, tuvo un papel de reparto en Platoon dirigido por Oliver Stone.'
-		],
+		birthPlace: 'Owensboro, Kentucky',
 	},
 	'jon-m-chu': {
-		biography: [
-			'Jonathan Murray Chu (2 de noviembre de 1979) es un cineasta estadounidense formado en la Escuela de Cine de la Universidad del Sur de California.',
-			'Su carrera pasó por Step Up 2: The Streets, Step Up 3D, Justin Bieber: Never Say Never, Jem and the Holograms, Crazy Rich Asians e In the Heights, hasta consolidarse como un director muy ligado al musical y al entretenimiento pop de gran escala.',
-			'En Cine Posta queda especialmente conectado con Wicked y Wicked: For Good, dos títulos que explican su peso reciente dentro del cine de estudio, la conversación de premios y el público masivo.'
-		],
+		birthPlace: 'Palo Alto',
 	},
 	'jonathan-bailey': {
-		biography: [
-			'Jonathan Stuart Bailey (Wallingford, Reino Unido; 25 de abril de 1988) es un actor de cine, teatro y televisión británico, ganador de un Premio Laurence Olivier y conocido por interpretar a Anthony Bridgerton en la serie Bridgerton (2020-2026).',
-			'Comenzó a destacar con su papel en la serie musical Groove High (2012) de Disney Channel y por su participación en la serie de Crashing (2016), en la cual interpretó el papel de Sam.',
-			'Su primera aparición en el escenario fue en una producción de su escuela primaria de El Arca de Noé, interpretando una gota de lluvia. Bailey asistió a la escuela secundaria The Oratory School mientras tomaba lecciones de ballet.',
-			'Jonathan Bailey nació el 25 de abril de 1988 en Wallingford, Reino Unido.'
-		],
+		birthPlace: 'Wallingford, Reino Unido',
 	},
 	'joseph-kosinski': {
-		biography: [
-			'Joseph Kosinski (Marshalltown, Iowa, 3 de mayo de 1974) es un actor, director de anuncios comerciales de televisión estadounidense y director de cine, principalmente conocido por su trabajo con imágenes generadas por computador (CGI).',
-			'Debutó como director en la gran pantalla con la película de ciencia ficción en Disney digital 3-D Tron: Legacy, secuela de la película Tron de 1982.',
-			'Sus trabajos anteriores han estado principalmente relacionados con comerciales de televisión que incluyen CGI, algunos de los cuales han sido el comercial de Starry Night, para Halo 3 y el galardonado Mad World para el videojuego Gears of War.'
-		],
+		birthPlace: 'Marshalltown, Iowa,​',
 	},
 	'josh-brolin': {
-		biography: [
-			'Josh James Brolin (Santa Mónica, California, 12 de febrero de 1968) es un actor estadounidense de cine y televisión.',
-			'Debutó muy joven en Los Goonies y luego construyó una carrera mucho más áspera, con papeles como Llewellyn Moss en No Country for Old Men, Dan White en Milk, el Agente K joven en Men in Black 3 y Thanos dentro del universo Marvel.',
-			'En Cine Posta aparece asociado a Weapons, Deadpool 2, Jonah Hex y No Country for Old Men, un arco que muestra bien su mezcla de blockbuster, western moderno, cómic y thriller adulto.'
-		],
+		birthPlace: 'Santa Mónica, California',
 	},
 	'josh-o-connor': {
-		biography: [
-			'Josh O\'Connor (Southampton, Hampshire; 20 de mayo de 1990) es un actor británico.',
-			'Es conocido por sus papeles como Johnny Saxby en la película God\'s Own Country (2017), por el de Lawrence Durrell en la serie televisiva The Durrells (2016-2019) y por interpretar al entonces príncipe Carlos de Gales (actual Carlos III) en la tercera y cuarta temporada de The Crown.',
-			'Por este último papel ha ganado un premio Emmy, un Globo de Oro, un Premio de la Crítica Televisiva y dos premios SAG.'
-		],
+		birthPlace: 'Southampton, Hampshire',
 	},
 	'jude-law': {
-		biography: [
-			'David Jude Heyworth Law (Lewisham, Londres, 29 de diciembre de 1972), más conocido como Jude Law, es un actor, productor y director de cine y de teatro británico. Comenzó su carrera en el teatro antes de conseguir pequeños papeles en varias producciones de televisión y largometrajes británicos, y luego obtuvo reconocimiento por su papel en The Talented Mr. Ripley (1999), de Anthony Minghella, por la que ganó el Premios BAFTA al mejor actor en un papel secundario y fue nominado a un Premio Óscar. Law encontró un mayor éxito comercial y de crítica en AI Artificial Intelligence (2001) de Steven Spielberg, Road to Perdition (2002) de Sam Mendes, Cold Mountain (2003) de Minghella, por la que obtuvo nominaciones al Premio de la Academia y al BAFTA, además del drama Closer (2004) y la comedia romántica The Holiday (2006).',
-			'Otros papeles notables incluyen las series de televisión The Young Pope (2016) y The New Pope (2020). Además de su trabajo cinematográfico, Law ha actuado en varias producciones del West End de Londres y en Broadway de New York, incluidas Les Parents terribles en 1994, Hamlet en 2010 y Anna Christie en 2011. Law ha recibido múltiples premios y nominaciones, incluido un Premio BAFTA al Mejor Actor de Reparto y el Premio César Honorario.',
-			'Ha sido nominado a un Premio BAFTA al Mejor Actor en un Papel Protagónico, así como a un total de dos Premios de la Academia, dos Premios Tony y cuatro Premios Globo de Oro.'
-		],
+		birthPlace: 'Lewisham, Londres',
 	},
 	'julianne-moore': {
-		biography: [
-			'Julie Anne Smith (Fayetteville, Carolina del Norte, 3 de diciembre de 1960), conocida profesionalmente como Julianne Moore, es una actriz y productora estadounidense, una de las pocas actrices que ha ganado los cuatro premios más importantes de la industria cinematográfica: el Premio Óscar, los Globos de Oro, el Premio BAFTA y el Premio del Sindicato de Actores por sus interpretaciones en diversos papeles. También ha sido galardonada con un premio Primetime Emmy, la Copa Volpi a la mejor actriz, el Premio del Festival de Cannes a la mejor actriz y el Oso de plata del Festival Internacional de Cine de Berlín.',
-			'Desde 2008, es embajadora de la ONG Save the Children. Es conocida por su participación en películas como The Lost World: Jurassic Park (1997), Boogie Nights (1997), Magnolia (1999), Hannibal (2001), Las horas (2002), Far from Heaven (2002), Children of Men (2006), A Single Man (2009), The Kids Are All Right (2011), Carrie (2013), Maps to the Stars (2014), Still Alice (2014), Los juegos del hambre: sinsajo - Parte 1 (2014), Sinsajo - Parte 2 (2015), Freeheld (2015) y La habitación de al lado (2024).'
-		],
+		birthPlace: 'Fayetteville, Carolina del Norte',
 	},
 	'julieta-diaz': {
 		birthPlace: 'Buenos Aires',
@@ -2221,25 +1789,13 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		birthPlace: 'Buenos Aires',
 	},
 	'kathryn-newton': {
-		biography: [
-			'Kathryn Love Newton (Orlando, Florida, 8 de febrero de 1997) es una actriz estadounidense.',
-			'Es conocida por su papel de Allie Pressman en la serie de Netflix The Society, así como por su papel de Alex Nelson en la película de 2012 Paranormal Activity 4, que le valió un Young Artist Award por Mejor actriz joven en un largometraje. También es conocida por interpretar una versión más joven de Claire Novak en la serie de The CW Supernatural.',
-			'En 2023 interpretó a Cassie Lang en Ant-Man and the Wasp: Quantumania.'
-		],
+		birthPlace: 'Orlando, Florida',
 	},
 	'ke-huy-quan': {
-		biography: [
-			'Ke Huy Quan (關繼威) (Saigón, 20 de agosto de 1971), también conocido como Jonathan Ke Quan, es un actor vietnamita-estadounidense.',
-			'Conocido por su actuación en 2 famosas películas de aventuras de la década de los 80: Indiana Jones y el templo maldito (1984), en el que interpretaba el papel de Tapón, y Los Goonies (1985), en el personaje de Data.',
-			'Y, posteriormente, con el resurgimiento de su carrera en 2022, con la película Everything Everywhere All at Once, que le valió el premio Óscar al mejor actor de reparto y el Globo de Oro al mejor actor de reparto, siendo el primer actor de origen vietnamita en conseguirlo.'
-		],
+		birthPlace: '關繼威',
 	},
 	'keanu-reeves': {
-		biography: [
-			'Keanu Charles Reeves (Beirut, 2 de septiembre de 1964) es un actor y músico canadiense. Su trayectoria cinematográfica abarca más de cuatro décadas y ha recibido diversos reconocimientos por su trabajo en el cine.',
-			'En teatro, actuó como el Príncipe Hamlet para la producción de Hamlet en el Manitoba Theatre Center.',
-			'Es conocido por sus papeles protagónicos en películas de acción, su amable imagen pública y sus esfuerzos filantrópicos. Es conocido por interpretar a Neo en Matrix y a John Wick en la saga John Wick. Tiene entre su repertorio las comedias de la franquicia de Bill y Ted (1989-2020); los thrillers de acción Point Break (1991), Speed (1994) y la franquicia John Wick (2014-2023); el thriller psicológico The Devil\'s Advocate (1997); el thriller sobrenatural Constantine (2005); y la saga de ciencia ficción y acción The Matrix (1999-2021).'
-		],
+		birthPlace: 'Beirut',
 	},
 	'keegan-michael-key': {
 		birthPlace: 'Southfield, Michigan',
@@ -2251,46 +1807,22 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'keke-palmer': {
-		biography: [
-			'Lauren Keyana «Keke» Palmer (Harvey, Illinois; 26 de agosto de 1993) es una actriz y cantante estadounidense.',
-			'Fue incluida en la lista de la revista Time de las personas más influyentes del mundo en 2019. Palmer hizo su debut actoral en Barbershop 2: Back in Business (2004). Más tarde apareció en la película para televisión The Wool Cap (2004) y tuvo su gran avance protagonizando la película dramática Akeelah and the Bee (2006).',
-			'Conocida por interpretar papeles protagónicos y de personajes en producciones de comedia dramática, ha recibido un Premio Primetime Emmy, cinco Premios NAACP Image y nominaciones para un Premio Daytime Emmy y un Premio del Sindicato de Actores.'
-		],
+		birthPlace: 'Harvey, Illinois',
 	},
 	'kieran-culkin': {
-		biography: [
-			'Kieran Kyle Culkin (Nueva York, 30 de septiembre de 1982) es un actor estadounidense. Conocido por interpretar personajes desagradables pero simpáticos en el escenario y la pantalla, sus galardones incluyen un premio Oscar, un premio BAFTA, un premio Primetime Emmy y dos premios Globo de Oro.',
-			'Culkin comenzó su carrera cuando era niño en producciones teatrales para la Light Opera of Manhattan.',
-			'Hizo su debut cinematográfico junto a su hermano mayor, Macaulay, en la comedia navideña Home Alone (1990); más tarde repitió su papel en su secuela Home Alone 2: Lost in New York (1992).'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'kirsten-dunst': {
-		biography: [
-			'Kirsten Caroline Dunst (Point Pleasant, Nueva Jersey; 30 de abril de 1982) es una actriz estadounidense. También ha realizado incursiones como cantante, modelo y productora de cine. Debutó en el medio cinematográfico con Oedipus Wrecks, un cortometraje de Woody Allen perteneciente a la antología cinematográfica Historias de Nueva York (1989).',
-			'En 2001, la actriz hizo su debut como cantante en el filme Get Over It, en el cual interpretó dos canciones.',
-			'A los doce años fue reconocida por su interpretación de la vampiresa Claudia en Entrevista con el vampiro (1994), papel por el cual fue nominada al Globo de Oro como mejor actriz de reparto. Ese mismo año actuó en la película Mujercitas, lo que contribuyó al aumento de su popularidad.'
-		],
+		birthPlace: 'Point Pleasant, Nueva Jersey',
 	},
 	'kristen-wiig': {
-		biography: [
-			'Kristen Carroll Wiig (Canandaigua, Nueva York, 22 de agosto de 1973) es una actriz de cine y televisión estadounidense, que formó parte de Saturday Night Live desde 2005 hasta 2012.',
-			'Wiig fue miembro del grupo The Groundlings, y ha aparecido en varias películas y series de televisión, incluyendo Bridesmaids, MacGruber, Flight of the Conchords, Adventureland y Paul.',
-			'Sus papeles como actriz de voz incluyen a "Ruffnut" en Cómo entrenar a tu dragón y "Lola Bunny" en la serie The Looney Tunes Show.'
-		],
+		birthPlace: 'Canandaigua, Nueva York',
 	},
 	'laurence-fishburne': {
-		biography: [
-			'Laurence John Fishburne III (Augusta, Georgia, 30 de julio de 1961), conocido como Laurence Fishburne, es un actor de cine estadounidense.',
-			'Ha participado también en la popular serie de CBS, CSI, y representó a Perry White en la cinta El Hombre de Acero (2013) y su continuación en Batman v Superman: Dawn of Justice (2016).',
-			'En 1993 fue nominado al premio Óscar al mejor actor por la película What\'s Love Got to Do with It, un biopic sobre la vida de la cantante Tina Turner, en la que Fishburne interpretaba a un personaje Villano Ike Turner.'
-		],
+		birthPlace: 'Augusta, Georgia',
 	},
 	'liam-neeson': {
-		biography: [
-			'William John Neeson (Ballymena, Irlanda del Norte, 7 de junio de 1952), conocido como Liam Neeson, es un actor británico. En 1976 comenzó a actuar en el Teatro Lírico de Belfast, donde estuvo dos años y en 1978 hace su debut en The Pilgrim\'s Progress.',
-			'Su primer papel reseñable en el cine fue el de la película Excalibur de 1981.',
-			'La fama mundial le llegó con su interpretación de Oskar Schindler en la aclamada película La lista de Schindler (1993), dirigida por Steven Spielberg, un papel por el que fue nominado a los premios Óscar.'
-		],
+		birthPlace: 'Ballymena, Irlanda del Norte',
 	},
 	'linda-hamilton': {
 		birthPlace: 'Salisbury, Maryland',
@@ -2302,12 +1834,7 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'luca-guadagnino': {
-		biography: [
-			'Luca Guadagnino (Palermo, 10 de agosto de 1971) es un director, guionista y productor de cine italiano. Nominado al Óscar a la Mejor Película y BAFTA al Mejor Director, por su película Call Me by Your Name (2017), Guadagnino lleva una extensa carrera de más de tres décadas.',
-			'Estudió Literatura primero en la Universidad de Palermo y se graduó después por la Universidad La Sapienza de Roma, en la facultad de Historia y Críticos de Cine, con una tesis sobre el director de cine estadounidense Jonathan Demme.',
-			'Ganó reconocimiento con su película Melissa P (2005).',
-			'Luca Guadagnino nació el 10 de agosto de 1971 en Palermo.'
-		],
+		birthPlace: 'Palermo',
 	},
 	'luis-brandoni': {
 		birthPlace: 'Dock Sud, Avellaneda, provincia de Buenos Aires',
@@ -2316,20 +1843,12 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		birthPlace: 'Buenos Aires',
 	},
 	'lupita-nyong-o': {
-		biography: [
-			'Lupita Amondi Nyong\'o Buyu (Ciudad de México, 1 de marzo de 1983) es una actriz kenianomexicana.',
-			'En 2013 se convirtió en la primera actriz keniata y mexicana en ganar un Óscar a mejor actriz de reparto. También ha recibido un premio Daytime Emmy, y nominaciones a dos premios de la Academia de Cine Británica, un Globo de Oro y un premio Tony.',
-			'Saltó a la fama en 2013 con su papel como Patsey en la película 12 Years a Slave, del director británico Steve Rodney McQueen, por la que fue aclamada por la crítica.'
-		],
+		birthPlace: 'Ciudad de México',
 	},
 	'mads-mikkelsen': {
-		biography: [
-			'Mads Dittmann Mikkelsen (Østerbro, Copenhague, 22 de noviembre de 1965) es un actor, gimnasta y bailarín danés.',
-			'Saltó a la fama en su natal Dinamarca como actor por sus papeles como Tonny en las dos primeras películas de la trilogía cinematográfica Pusher (1996 y 2004), el sargento detective Allan Fischer en la serie de televisión Rejseholdet (2000‑2004), Niels en Open Hearts (2002), Svend en The green butchers (2003), Iván en Adam’s apples (2005), Jacob Petersen en Después de la boda (2006), Le Chiffre en Casino Royale (película de 2006), Hannibal Lecter en la serie de televisión Hannibal (2013) y Jürgen Voller en Indiana Jones y el dial del destino (2023).'
-		],
+		birthPlace: 'Østerbro, Copenhague',
 	},
 	'mahershala-ali': {
-		birthPlace: 'Oakland, California',
 		biography: [
 			'Mahershala Ali, nacido como Mahershalalhashbaz Gilmore (Oakland, California, 16 de febrero de 1974) es un actor estadounidense, ganador de dos Premios Óscar como mejor actor de reparto por las películas Moonlight (2016) y Green Book (2018) y dos Premios del Sindicato de Actores también como actor secundario.',
 			'En su etapa universitaria en el Saint Mary\'s College of California jugó al baloncesto cuatro temporadas con los Gaels, bajo el nombre de Mahershala Gilmore, en las que tuvo un promedio de 3,6 puntos y 1,1 rebotes por partido. Debutó profesionalmente en el escenario del California Shakespeare Festival, y obtuvo un máster en actuación por la Tisch School of the Arts de la Universidad de Nueva York. Su debut televisivo se produjo en 2001, cuando interpretó al Dr. Trey Sanders en la serie Crossing Jordan.',
@@ -2338,17 +1857,16 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'margaret-qualley': {
+		birthPlace: 'Kalispell, Montana',
 		biography: [
 			'Sarah Margaret Qualley (Kalispell, Montana; 23 de octubre de 1994) es una actriz estadounidense.',
-			'Hija de la también intérprete Andie MacDowell, practicó ballet desde pequeña y su interés por esa danza la llevó a anotarse en la North Carolina School of the Arts a los catorce años. A los dieciséis, tomó clases de verano en el American Ballet Theatre, pero para cuando le ofrecieron una pasantía había decidido no continuar con esa disciplina. Durante un tiempo prosiguió su carrera ejerciendo como modelo, hasta que se decantó por la actuación y formó parte de un programa de verano de la Real Academia de Arte Dramático. Su primer trabajo fue una participación menor en la película de 2013 Palo Alto, donde se la seleccionó porque no conseguían otra candidata. Un año más tarde se hizo con un papel en la serie de televisión The Leftovers, en la que tuvo mayor implicación, aunque su personaje recibió críticas negativas por su desarrollo. En 2016 adquirió más popularidad, cuando protagonizó un video publicitario para el perfume Kenzo World en que se la muestra bailando de manera poco convencional. Al año siguiente, su interpretación de monja católica que atraviesa una crisis de fe en Novitiate le reportó comentarios positivos de los medios. Al mismo tiempo, coprotagonizó Death Note (2017), adaptación de Netflix del manga homónimo muy criticada por los espectadores y la prensa, a quienes el desempeño de Qualley no convenció. Más tarde, se valió de sus habilidades como bailarina en videos musicales para artistas como SoKo, Cashmere Cat y, también, su hermana, Rainey Qualley. De manera semejante, por su interpretación de la coreógrafa Ann Reinking en Fosse/Verdon (2019) recibió una nominación al premio Primetime Emmy a la mejor actriz de reparto - Miniserie o telefilme. Continuó afianzándose como actriz principal con producciones como IO, Strange but True (2019) y My Salinger Year (2020). Su interpretación de una empleada doméstica y madre soltera en la miniserie Maid (2021) suscitó comentarios positivos de la prensa, además de que por ello se la nominó, entre otros premios, al Globo de Oro, al Primetime Emmy y al del Sindicato de Actores. Sus siguientes proyectos cinematográficos tuvieron elementos eróticos: en Stars at Noon fue una periodista que se prostituye con funcionarios gubernamentales por motivos de seguridad, y en Sanctuary (2022) interpretó a una dominatrix que chantajea a un cliente. Casada desde 2023 con el cantante de Bleachers, Jack Antonoff, ese año participó en dos videos musicales del grupo, uno de los cuales dirigió. En 2024 trabajó en Drive-Away Dolls, una comedia dirigida por Ethan Coen, y en La sustancia, por la que fue nominada al Globo de Oro.'
+			'Hija de la también intérprete Andie MacDowell, practicó ballet desde pequeña y su interés por esa danza la llevó a anotarse en la North Carolina School of the Arts a los catorce años. A los dieciséis, tomó clases de verano en el American Ballet Theatre, pero para cuando le ofrecieron una pasantía había decidido no continuar con esa disciplina. Durante un tiempo prosiguió su carrera ejerciendo como modelo, hasta que se decantó por la actuación y formó parte de un programa de verano de la Real Academia de Arte Dramático. Su primer trabajo fue una participación menor en la película de 2013 Palo Alto, donde se la seleccionó porque no conseguían otra candidata. Un año más tarde se hizo con un papel en la serie de televisión The Leftovers, en la que tuvo mayor implicación, aunque su personaje recibió críticas negativas por su desarrollo. En 2016 adquirió más popularidad, cuando protagonizó un video publicitario para el perfume Kenzo World en que se la muestra bailando de manera poco convencional. Al año siguiente, su interpretación de monja católica que atraviesa una crisis de fe en Novitiate le reportó comentarios positivos de los medios. Al mismo tiempo, coprotagonizó Death Note (2017), adaptación de Netflix del manga homónimo muy criticada por los espectadores y la prensa, a quienes el desempeño de Qualley no convenció. Más tarde, se valió de sus habilidades como bailarina en videos musicales para artistas como SoKo, Cashmere Cat y, también, su hermana, Rainey Qualley. De manera semejante, por su interpretación de la coreógrafa Ann Reinking en Fosse/Verdon (2019) recibió una nominación al premio Primetime Emmy a la mejor actriz de reparto - Miniserie o telefilme. Continuó afianzándose como actriz principal con producciones como IO, Strange but True (2019) y My Salinger Year (2020). Su interpretación de una empleada doméstica y madre soltera en la miniserie Maid (2021) suscitó comentarios positivos de la prensa, además de que por ello se la nominó, entre otros premios, al Globo de Oro, al Primetime Emmy y al del Sindicato de Actores. Sus siguientes proyectos cinematográficos tuvieron elementos eróticos: en Stars at Noon fue una periodista que se prostituye con funcionarios gubernamentales por motivos de seguridad, y en Sanctuary (2022) interpretó a una dominatrix que chantajea a un cliente. Casada desde 2023 con el cantante de Bleachers, Jack Antonoff, ese año participó en dos videos musicales del grupo, uno de los cuales dirigió. En 2024 trabajó en Drive-Away Dolls, una comedia dirigida por Ethan Coen, y en La sustancia, por la que fue nominada al Globo de Oro. Nacida en octubre de 1994 en Montana, es hija de la actriz Andie MacDowell y del exmodelo y estanciero Paul Qualley, quienes se conocieron en una campaña de Gap para la que ambos modelaban. Tiene un hermano mayor, Justin, y una hermana cinco años mayor, Rainey, cantante de blues e intérprete ocasional. Posee ascendencia escocesa por parte materna. Transcurrió sus primeros años en un rancho de tres mil acres —unas 1200 hectáreas— ubicado en Missoula, donde MacDowell se había establecido poco después de haber actuado en Cuatro bodas y un funeral (1994), con el objetivo de que los medios no se entrometieran con su familia.',
+			'De acuerdo con lo escrito por Tamara Abraham en el Daily Mail, « no desentonó entre tantas modelos experimentadas que desfilaron en la pasarela». No obstante, a los pocos meses abandonó toda idea de seguir esa profesión, porque «la hacía sentir ridícula». Más adelante, asistió a la Universidad de Nueva York, pero en ese momento ya se encontraba grabando The Leftovers, por lo que pospuso las clases. De hecho, el primer episodio se proyectó en el Skirball Center de la institución. Hacia 2013, vivía en Venice (Los Ángeles) con su madre. Durante una clase de improvisación en la escuela secundaria se interesó en la actuación y en un posterior viaje a Los Ángeles consiguió un representante. Asistió a un programa de verano de la londinense Real Academia de Arte Dramático y como presentación interpretó un monólogo de lady Macbeth donde pide a los dioses que la despojen de su femineidad, a fin de volverse lo suficientemente cruel para alcanzar su «brutal» objetivo. Qualley se describió como «un poco introvertida» y dijo que un discurso semejante «contrarrestaba mis tendencias naturales. La idea de explorar diferentes lados de uno mismo es divertida». Su desempeño le mereció el papel masculino principal en una puesta de Enrique V representada por su clase. Su debut cinematográfico sucedió por casualidad, cuando visitó a una amiga que estaba filmando Palo Alto (2013) y la directora, Gia Coppola, le ofreció un papel menor que no tiene diálogos, al no haber nadie más que lo interpretara.',
+			'Margaret Qualley nació el 23 de octubre de 1994 en Kalispell, Montana.'
 		],
 	},
 	'margot-robbie': {
-		biography: [
-			'Margot Elise Robbie (Dalby, Queensland, 2 de julio de 1990) es una actriz y productora australiana.',
-			'Luego de su salida, se mudó a los Estados Unidos y protagonizó la serie Pan Am en el 2011, y más tarde comenzó a ganar popularidad por su papeles en las exitosas películas El lobo de Wall Street (2013) y Focus (2015).',
-			'Su filmografía incluye tanto películas taquilleras como independientes, y entre sus galardones incluye nominaciones a tres Premios Óscar, seis Premios BAFTA y cuatro Premios Globo de Oro.'
-		],
+		birthPlace: 'Dalby, Queensland',
 	},
 	'mark-hamill': {
 		birthPlace: 'Oakland, California',
@@ -2360,46 +1878,25 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'mark-ruffalo': {
-		biography: [
-			'Mark Alan Ruffalo (Kenosha, Wisconsin, 22 de noviembre de 1967) es un actor, actor de voz, productor y director estadounidense.',
-			'Inició su carrera como actor en los años 1990 apareciendo en varias series de televisión y películas con papeles menores hasta que logró reconocimiento con la película Puedes contar conmigo (2000).',
-			'Más tarde, protagonizó comedias románticas como Eternal Sunshine of the Spotless Mind (2004), 13 Going on 30 (2004) y Dicen por ahí... (2005), así como los suspensos Zodiac (2007) y Shutter Island (2010); también ganó reconocimiento en el teatro gracias a su participación en la obra Awake and Sing!, con la que fue nominado a los premios Tony de 2006.'
-		],
+		birthPlace: 'Kenosha, Wisconsin',
 	},
 	'marlon-brando': {
-		biography: [
-			'Marlon Brando Jr. (Omaha, Nebraska, 3 de abril de 1924-Los Ángeles, California, 1 de julio de 2004) fue un actor estadounidense de cine y teatro.',
-			'Su formación e instrucción teatral fue llevada a cabo por Stella Adler, una de las más prestigiosas profesoras que desarrollaron el sistema Stanislavski en Nueva York (véase actuación de método); muchos sábados acudía al Actor\'s Studio interesado en las clases de Elia Kazan. Se convirtió en actor de teatro a mediados de la década de 1940 y en actor de cine a comienzos de los años 1950.',
-			'A lo largo de su carrera recibió múltiples reconocimientos por sus logros artísticos, entre ellos dos premios Óscar al mejor actor —por On the Waterfront (1954) y El padrino (1972)—, dos Globo de Oro y tres BAFTA. Se hizo mundialmente conocido en la década de 1950 por sus intervenciones en películas como Un tranvía llamado Deseo (1951), ¡Viva Zapata! (1952), Julio César y On the Waterfront (1954), entre otras.'
-		],
+		birthPlace: 'Omaha, Nebraska',
 	},
 	'martina-gusman': {
 		birthPlace: 'Buenos Aires',
 	},
 	'matt-damon': {
-		biography: [
-			'Matthew Paige Damon (Cambridge, Massachusetts, 8 de octubre de 1970), conocido simplemente como Matt Damon, es un actor, guionista y productor estadounidense.',
-			'Desde temprana edad se destacó en sus estudios y comenzó a mostrar interés por la actuación durante la secundaria gracias a sus maestros.',
-			'Tras varias apariciones como extra, hizo su debut como protagonista con la película School Ties (1992) y después logró mayor reconocimiento con su papel en Good Will Hunting (1997), que le valió una nominación al Óscar como mejor actor y un galardón por mejor guion original.'
-		],
+		birthPlace: 'Cambridge, Massachusetts',
 	},
 	'matt-reeves': {
-		biography: [
-			'Matthew George "Matt" Reeves (Rockville Centre, Nueva York; 27 de abril de 1966) es un director, guionista y productor de cine estadounidense.',
-			'Comenzó a hacer películas con tan solo ocho años, dirigiendo a sus amigos con una cámara doméstica.',
-			'Junto con Abrams creó la serie televisiva Felicity, de la que dirigió numerosos episodios, incluido el piloto.',
-			'Reeves nació en una familia cristiana en Rockville Centre, Nueva York, y fue criado en Los Ángeles. Abrams, con quien filmó cortos que emitía un canal público de televisión por cable.'
-		],
+		birthPlace: 'Rockville Centre, Nueva York',
 	},
 	'mauricio-dayub': {
 		birthPlace: 'Paraná, Entre Ríos',
 	},
 	'mel-gibson': {
-		biography: [
-			'Mel Colm-Cille Gerard Gibson (Peekskill, Nueva York, 3 de enero de 1956), conocido como Mel Gibson, es un actor, director y productor de cine estadounidense.',
-			'Abanderado de la mejor generación del cine australiano y tras lograr la fama en Hollywood con las series de películas Mad Max y Lethal Weapon, Gibson se embarcó en dirigir y actuar en la película Braveheart, ganadora de cinco Premios Óscar, incluyendo mejor película y mejor dirección.',
-			'Fue designado como enviado presidencial de Donald Trump en Hollywood en enero de 2025.'
-		],
+		birthPlace: 'Peekskill, Nueva York',
 	},
 	'melissa-barrera': {
 		birthPlace: 'Monterrey, Nuevo León',
@@ -2411,40 +1908,19 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'michael-b-jordan': {
-		biography: [
-			'Michael Bakari Waterson Jordan (Santa Ana, California; 9 de febrero de 1987), popularmente conocido como Michael B.',
-			'Dentro de sus primeros trabajos se encuentran las series de televisión The Wire y Friday Night Lights.',
-			'Ganador del Premio Óscar y del Premio SAG a Mejor Actor por su papel en Sinners (2025), también es conocido por interpretar al personaje de Erik Killmonger, el primo y enemigo de T\'Challa en el Universo cinematográfico de Marvel, en Black Panther (2018), y a Adonis Creed, hijo del boxeador ficticio Apollo Creed, en Creed (2015), Creed II (2018) y Creed III (2023).'
-		],
+		birthPlace: 'Santa Ana, California',
 	},
 	'michael-caine': {
-		biography: [
-			'Michael Caine (Londres, 14 de marzo de 1933) es un actor británico, famoso por su particular acento inglés de cockney.',
-			'Ha aparecido en más de 150 películas a lo largo de su carrera y es considerado una leyenda en la industria cinematográfica británica. Logró el reconocimiento del público en los sesenta con las cintas inglesas Zulu de 1964, Archivo confidencial de 1965, Alfie de 1966, por la cual aspiró al Óscar, The Italian Job de 1969 y La batalla de Inglaterra de 1969.',
-			'Entre sus películas más importantes durante los setenta se encuentran: Asesino implacable de 1971, El último valle de 1972, La huella, la cual le dio su segunda candidatura al Óscar, El hombre que pudo reinar de 1975 y Un puente lejano de 1977.'
-		],
+		birthPlace: 'Rotherhithe',
 	},
 	'michael-fassbender': {
-		biography: [
-			'Michael Fassbender (Heidelberg, República Federal de Alemania, 2 de abril de 1977) es un actor, productor de cine y piloto de carreras germanoirlandés.',
-			'Su debut en el cine fue con la película 300 (2007).',
-			'En 2008 con el filme Hunger (2008) obtuvo su primer papel protagonista, el cual fue bien recibido por parte de la crítica y con el cual ganó su primer British Independent Film Awards.',
-			'En 2009 participó en dos películas que de igual manera fueron bien recibidas por los críticos, Fish Tank (2009) de Andrea Arnold e Inglourious Basterds (2009) de Quentin Tarantino.'
-		],
+		birthPlace: 'Heidelberg, República Federal de Alemania',
 	},
 	'michael-j-fox': {
-		biography: [
-			'Michael Andrew Fox (Edmonton, 9 de junio de 1961), conocido artísticamente como Michael J.',
-			'Fox, es un actor canadiense y estadounidense. Su carrera en el cine y la televisión comenzó a finales de los años setenta.',
-			'Entre sus papeles se destacan Marty McFly en la trilogía de Back to the Future (1985-1990); Alex Keaton en Family Ties (1982-1989), por la cual ganó tres premios Emmy y un Globo de Oro, y Mike Flaherty en Spin City (1996-2000), por la cual ganó un Emmy, dos Globos de Oro y dos SAG.'
-		],
+		birthPlace: 'Edmonton',
 	},
 	'michael-keaton': {
-		biography: [
-			'Michael John Douglas (Coraopolis, Pensilvania, 5 de septiembre de 1951), más conocido por su nombre artístico Michael Keaton, es un actor estadounidense, ganador de un Globo de Oro.',
-			'Es conocido por su vasta carrera e intervenciones en películas como la comedía de humor negro Beetlejuice (1988), encarnar al superhéroe de DC Comics, Batman, en Batman (1989) y su secuela, Batman Returns (1992) —las tres dirigidas por Tim Burton— con las que saltaría a la fama mundial y ganaría la aclamación de la crítica.',
-			'También actuó en Multiplicity (1996), en el drama Jackie Brown (1997), en la comedia navideña Jack Frost (1999), White Noise (2005), en Toy Story 3 (2010) como la voz de Ken, en el drama Spotlight (2015), en la película biográfica The Founder (2016) como Ray Kroc, en Spider-Man: Homecoming (2017) como el supervillano de Marvel Comics, Buitre, y en la película drámatica legal histórica The Trial of the Chicago 7 (2020) como Ramsey Clark, con la que ganaría múltiples premios.'
-		],
+		birthPlace: 'Coraopolis, Pensilvania',
 	},
 	'michael-shannon': {
 		birthPlace: 'Lexington, Kentucky',
@@ -2465,52 +1941,34 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'mikey-madison': {
-		biography: [
-			'Mikaela «Mikey» Madison Rosberg (Los Ángeles, California; 25 de marzo de 1999) es una actriz estadounidense. Comenzó su carrera actuando en cortometrajes y recibió reconocimiento por su papel de una adolescente hosca en la serie de comedia de FX Better Things (2016-2022), y por Anora (2024) de Sean Baker, obteniendo el Premio Óscar a la mejor actriz por esta última.',
-			'También interpretó a Susan Atkins en la película de comedia dramática de época de Quentin Tarantino, Once Upon a Time in Hollywood (2019) y a Amber Freeman en la película de terror Scream (2022). En 2024, Madison protagonizó la comedia dramática Anora, dirigida por Sean Baker, siendo elogiada por la crítica cinematográfica.',
-			'Por la película recibió nominaciones a mejor actriz en los Globos de Oro, los Premios BAFTA y los Premios Óscar, entre otros, resultando ganadora en las dos últimas entregas de premios por su actuación.'
-		],
+		birthPlace: 'Los Ángeles, California',
 	},
 	'miles-teller': {
-		biography: [
-			'Miles Alexander Teller (Downingtown, Pensilvania; 20 de febrero de 1987) es un actor estadounidense.',
-			'Posteriormente, comenzó a estudiar actuación del método en el Instituto de Teatro y Cine Lee Strasberg y apareció en varios cortometrajes hasta debutar formalmente en el cine con la película Rabbit Hole (2010), en la que fue escogido personalmente por Nicole Kidman.',
-			'Tras su debut, Teller ganó reconocimiento protagonizando la película The Spectacular Now (2013), en la cual recibió elogios de la crítica y ganó el premio especial del jurado en el Festival de Cine de Sundance de 2013.'
-		],
+		birthPlace: 'Downingtown, Pensilvania',
 	},
 	'nahuel-perez-biscayart': {
 		birthPlace: 'Buenos Aires',
 	},
 	'neve-campbell': {
-		biography: [
-			'Neve Adrianne Campbell (Guelph, Ontario; 3 de octubre de 1973) es una actriz canadiense.',
-			'Campbell es reconocida por su trabajo en los géneros de drama y terror, por lo que es considerada como una reina del grito. Después de una serie de apariciones menores, Campbell interpretó un papel protagónico en la serie dramática canadiense Catwalk (1992-1994) y la película para televisión The Canterville Ghost (1996), esta última le valió un premio Family Film Awards a la mejor actriz.',
-			'Posteriormente se mudó a los Estados Unidos para interpretar el papel de Julia Salinger en la serie dramática para adolescentes de Fox Party of Five (1994-2000), que fue su papel decisivo, lo que le valió el reconocimiento como ídolo adolescente y una nominación al premio Teen Choice Awards a la mejor actriz de televisión.'
-		],
+		birthPlace: 'Guelph',
 	},
 	'nicholas-hoult': {
-		biography: [
-			'Nicholas Caradoc Hoult (Wokingham, Inglaterra; 7 de diciembre de 1989) es un actor británico.',
-			'Su exitoso comienzo en el séptimo arte se da al interpretar con 11 años a Marcus en About a Boy (2002) —previamente, había intervenido en pequeños roles televisivos y cinematográficos en la televisión británica desde que se inicia en la actuación a los 3 años debutando en la película Intimate Relations (1996)— Desde entonces, su legado no ha dejado de extenderse, interviniendo en series y largometrajes.',
-			'A sus 17 años da vida al personaje Tony Stonem en la serie británica Skins (2007-2008), papel que lo ayuda a hacer la transición de estrella infantil a papeles más oscuros en la industria del cine, alcanzando éxito y reconocimiento. Y no sería hasta una década más tarde, que regresaría a una serie para interpretar al emperador Pedro III de Rusia en The Great (2020-2023) que le otorga nominaciones a dos Premios Globo de Oro y un Premio Primetime Emmy.'
-		],
+		birthPlace: 'Wokingham, Inglaterra',
 	},
 	'nicolas-cage': {
+		birthPlace: 'Long Beach, California',
 		biography: [
 			'Nicolas Kim Coppola (Long Beach, California, 7 de enero de 1964), conocido profesionalmente como Nicolas Cage, es un actor, actor de voz y productor de cine estadounidense. Ha recibido varios galardones, entre ellos un Premio de la Academia, un Premio del Screen Actors Guild y un Premio Globo de Oro.',
 			'Conocido por su versatilidad como actor, su participación en varios géneros cinematográficos le ha valido seguidores de culto. Nacido en el seno de la familia Coppola, Cage comenzó su carrera en películas como Fast Times at Ridgemont High (1982) y Valley Girl (1983), así como diversas películas de su tío Francis Ford Coppola como La ley de la calle (1983), The Cotton Club (1984) y Peggy Sue se casó (1986).',
-			'Obtuvo éxito de crítica por sus papeles en Hechizo de luna (1987) y Raising Arizona (1987), y obtuvo un Premio de la Academia al Mejor Actor por su actuación en la película dramática Leaving Las Vegas (1995).'
+			'Obtuvo éxito de crítica por sus papeles en Hechizo de luna (1987) y Raising Arizona (1987), y obtuvo un Premio de la Academia al Mejor Actor por su actuación en la película dramática Leaving Las Vegas (1995).',
+			'Nicolas Cage nació el 7 de enero de 1964 en Long Beach, California.'
 		],
 	},
 	'norma-aleandro': {
 		birthPlace: 'Buenos Aires',
 	},
 	'orlando-bloom': {
-		biography: [
-			'Orlando Jonathan Blanchard Copeland Bloom (Canterbury, Kent, 13 de enero de 1977) es un actor británico.',
-			'Bloom hizo su debut teatral en el escenario del Duke of York, con un papel en la obra In Celebration, que se representó hasta 2007.',
-			'Su salto a la fama llegó con Legolas en la trilogía de El Señor de los Anillos, basada en la obra de J. R. R. Tolkien, y se amplió con Will Turner en Piratas del Caribe. En el sitio queda ligado a ese cine de aventuras y fantasía que marcó buena parte del blockbuster de los 2000.'
-		],
+		birthPlace: 'Canterbury, Kent',
 	},
 	'oscar-isaac': {
 		birthPlace: 'Ciudad de Guatemala',
@@ -2525,26 +1983,13 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		birthPlace: 'Buenos Aires',
 	},
 	'pamela-anderson': {
-		biography: [
-			'Pamela Denise Anderson (Ladysmith, Columbia Británica, 1 de julio de 1967) es una actriz y modelo de glamour canadoestadounidense.',
-			'Luego recibió reconocimiento internacional por protagonizar a "CJ" Parker en la serie dramática de acción Baywatch (1992-1997), que consolidó aún más su estatus como símbolo sexual.',
-			'Luego pasó a interpretar a Vallery Irons en la serie sindicada VIP (1998-2002) y a Skyler Dayton en la comedia de Fox Stacked (2005-2006).',
-			'Asimismo, ha participado en películas, comerciales, comedias de situación y programas de telerrealidad.'
-		],
+		birthPlace: 'Ladysmith, Columbia Británica',
 	},
 	'patricia-arquette': {
-		biography: [
-			'Patricia Tarrey Arquette (Chicago, 8 de abril de 1968) es una actriz estadounidense ganadora de un Premio Óscar, tres Globos de Oro, un BAFTA, dos Premios del Sindicato de Actores y dos Emmy.',
-			'Arquette hizo su debut cinematográfico como Kristen Parker en el slasher de fantasía A Nightmare on Elm Street 3: Dream Warriors (1987).',
-			'Por interpretar a una madre soltera en la película de mayoría de edad Boyhood (2014), que se filmó entre 2002 y 2014, Arquette ganó el Óscar a la mejor actriz de reparto.'
-		],
+		birthPlace: 'Chicago, Illinois',
 	},
 	'patrick-stewart': {
-		biography: [
-			'Sir Patrick Stewart (Mirfield, Inglaterra, 13 de julio de 1940) es un actor británico de cine, televisión y doblaje, conocido principalmente por sus papeles en obras de teatro de William Shakespeare y, especialmente, por ser Jean-Luc Picard, capitán, principalmente en la serie Star Trek: The Next Generation y en las películas Star Trek: Generations, Star Trek: First Contact, Star Trek: Insurrection y Star Trek: Nemesis; y como almirante retirado en la serie Star Trek: Picard de la saga de Star Trek, así como el Profesor Xavier, en las películas de X-Men.',
-			'Fue nombrado oficial de la Orden del Imperio Británico en la lista honorífica de año nuevo de 2001.',
-			'Sus padres no le dieron un segundo nombre, pero usó profesionalmente «Patrick Hewes Stewart» —añadiendo como segundo nombre «Hewes»— durante un tiempo en la década de 1980.'
-		],
+		birthPlace: 'Mirfield, Inglaterra',
 	},
 	'paul-dano': {
 		birthPlace: 'Nueva York',
@@ -2556,68 +2001,31 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'paul-giamatti': {
-		biography: [
-			'Paul Edward Valentine Giamatti (New Haven, Connecticut, 6 de junio de 1967) es un actor estadounidense.',
-			'Comenzó su carrera como actor secundario durante los años 1990 en producciones como Private Parts, The Truman Show, Saving Private Ryan, El negociador y Man on the Moon, antes de conseguir papeles como protagonista durante los años 2000 en películas como American Splendor, Entre copas, Cinderella Man, John Adams, Lady in the Water y Cold Souls.',
-			'Durante su carrera ha sido nominado a dos Óscar y ha ganado tres Globo de Oro.'
-		],
+		birthPlace: 'New Haven, Connecticut',
 	},
 	'paul-mescal': {
-		biography: [
-			'Paul Colm Michael Mescal (Maynooth, Kildare, 2 de febrero de 1996) es un actor irlandés.',
-			'Inició su carrera en 2013 como actor de teatro apareciendo en numerosas obras en Dublín.',
-			'Posteriormente, ganó reconocimiento en la televisión al protagonizar la miniserie Normal People con el personaje de Connell Waldron, actuación que le valió un BAFTA TV y una nominación a los premios Emmy.',
-			'Tras ello, incursionó en el cine y protagonizó la aclamada película Aftersun (2022), con la que recibió una nominación como mejor actor en los Premios Óscar, así como en los Premios de la Crítica Cinematográfica, los BAFTA y los Globos de Oro.'
-		],
+		birthPlace: 'Maynooth, Kildare',
 	},
 	'paul-rudd': {
-		biography: [
-			'Paul Stephen Rudd (Passaic, Nueva Jersey, 6 de abril de 1969) es un actor, comediante, escritor y productor de cine estadounidense.',
-			'Estudió teatro en la Universidad de Kansas y en la Academia Estadounidense de Artes Dramáticas, antes de hacer su debut como actor en 1992 con la serie dramática titulada Sisters de NBC.',
-			'Es conocido por sus papeles en las películas: Clueless (1995), Romeo + Juliet (1996), The Object of My Affection (1998), Wet Hot American Summer (2001), Anchorman: The Legend of Ron Burgundy (2004), The 40 Year Old Virgin (2005), Knocked Up (2007), Role Models (2008), I Love You, Man (2009), This Is 40 (2012), The Perks of Being a Wallflower (2012), Anchorman 2: The Legend Continues (2013), Los principios del cuidado (2016), Mute (2018) e Ideal Home (2018).'
-		],
+		birthPlace: 'Passaic, Nueva Jersey',
 	},
 	'paul-thomas-anderson': {
-		biography: [
-			'Paul Thomas Anderson (Studio City, California; 26 de junio de 1970) es un director, guionista y productor de cine estadounidense.',
-			'Ha dirigido diez largometrajes: Sydney (1996), Boogie Nights (1997), Magnolia (1999), Embriagado de amor (2002), There Will Be Blood (2007), The Master (2012), Puro vicio (2014), Phantom Thread (2017), Licorice Pizza (2021) y Una batalla tras otra (2025).',
-			'Ha estado nominado a ocho premios Óscar por Phantom Thread (mejor película, mejor director), There Will Be Blood (mejor director, mejor película y mejor guion adaptado), Inherent Vice (mejor guion adaptado), Magnolia (mejor guion original) y Boogie Nights (mejor guion original); ha ganado el premio a (mejor director) del Festival de Cannes por Embriagado de amor, un Oso de Oro y un Oso de Plata a la mejor dirección del Festival internacional de Cine de Berlín y un León de Plata al mejor director del Festival internacional de Cine de Venecia.'
-		],
+		birthPlace: 'Studio City, California',
 	},
 	'paul-walker': {
-		biography: [
-			'Paul William Walker IV (Glendale, California, 12 de septiembre de 1973-Santa Clarita, California, 30 de noviembre de 2013) fue un actor, modelo, piloto de carreras y biólogo marino estadounidense, conocido por su papel de Brian O\'Conner en la película de acción The Fast and the Furious, repitiéndolo en cinco ocasiones de las siguientes películas de la franquicia.',
-			'Tras licenciarse en Biología Marina en la Universidad de California, estudios que compaginó con su carrera como modelo profesional, Walker inició su trayectoria como actor con apariciones en varios programas de televisión como The Young and the Restless y Touched by an Angel.',
-			'También obtuvo fama a través de películas para adolescentes tales como Alguien como tú y Juego de campeones.'
-		],
+		birthPlace: 'Glendale, California',
 	},
 	'pedro-pascal': {
-		biography: [
-			'José Pedro Balmaceda Pascal (Santiago de Chile, 2 de abril de 1975), conocido como Pedro Pascal, es un actor de cine, teatro y televisión, actor de voz y director de escena chileno, nacionalizado estadounidense, conocido por interpretar al príncipe Oberyn Martell en la serie de televisión Game of Thrones (2014), a Javier Peña en Narcos (2015–2017) de Netflix; a el Mandaloriano en la serie The Mandalorian (2019–2023), y por la serie The Last of Us (2023–2025) de HBO, donde interpreta a Joel Miller.',
-			'En cine, ha protagonizado grandes blockbuster como Wonder Woman 1984 (2020), Gladiator II (2024) o The Fantastic Four: First Steps (2025).',
-			'Nominado al Premio Globo de Oro, a los Premios Primetime Emmy y ganador de un Premio del Sindicato de Actores; en 2023, la revista Time le nombró una de las 100 personas más influyentes del mundo.'
-		],
+		birthPlace: 'Santiago de Chile',
 	},
 	'penelope-cruz': {
-		biography: [
-			'Penélope Cruz Sánchez (Alcobendas, 28 de abril de 1974) es una actriz, cantante y modelo española. En 2006 fue la primera actriz española candidata a los Premios Óscar y a los Globos de Oro en la categoría de mejor actriz protagonista, por su papel en la película española Volver, dirigida por el cineasta español Pedro Almodóvar; en esa ocasión no obtuvo el Óscar, pero en 2008 se convirtió en la primera actriz española en conseguir el Óscar como mejor actriz de reparto gracias a la película Vicky Cristina Barcelona dirigida por Woody Allen. Con esta película ganó además el premio BAFTA, su tercer Goya, y fue nominada a los Globos de Oro y al Premio del Sindicato de Actores.',
-			'Penélope Cruz volvió a ser nominada al Óscar como mejor actriz de reparto de 2010 por su papel en Nine y en 2022 en la categoría de mejor actriz protagonista por su papel en la película de Almodóvar, Madres paralelas.',
-			'En 2018 recibió Medalla de Oro al Mérito en las Bellas Artes, concedida por el Gobierno de España. En 2019 recibió el Premio Donostia y fue el rostro identificativo del 67 Festival de cine de San Sebastián. En 2022 le fue concedido el Premio Nacional de Cinematografía.'
-		],
+		birthPlace: 'Alcobendas, Comunidad de Madrid',
 	},
 	'pierce-brosnan': {
-		biography: [
-			'Pierce Brendan Brosnan (Drogheda, Leinster; 16 de mayo de 1953) es un actor y productor de cine irlandés. Fue el quinto actor en interpretar al agente secreto ficticio James Bond en la saga cinematográfica de James Bond, protagonizando cuatro películas entre 1995 y 2002 (GoldenEye, El mañana nunca muere, El mundo nunca es suficiente y Muere otro día).',
-			'Tras una carrera como actor de teatro, saltó a la popularidad en la serie de televisión Remington Steele (1982-1987).',
-			'Tras alcanzar fama mundial por su papel de James Bond, Brosnan protagonizó otras películas importantes, entre ellas la épica película de aventuras y desastres Dante\'s Peak (1997) y la nueva versión de la película de atraco The Thomas Crown Affair (1999).'
-		],
+		birthPlace: 'Drogheda, Leinster',
 	},
 	'rachel-mcadams': {
-		biography: [
-			'Rachel Anne McAdams (London, Ontario, 17 de noviembre de 1978) es una actriz canadiense.',
-			'Después de graduarse de un programa de grado en teatro en la Universidad York en 2001, trabajó en producciones cinematográficas y televisivas canadienses, como la película dramática Perfect Pie (2002), por la que recibió una nominación al premio Genie, la película de comedia, My Name Is Tanino (2002) y la serie de comedia Slings and Arrows (2003-2005), por la que ganó un premio Gemini.',
-			'McAdams saltó a la fama en 2004 con la comedia Mean Girls y el drama romántico The Notebook. En 2005 protagonizó la comedia romántica Wedding Crashers, el thriller psicológico Red Eye y la comedia dramática The Family Stone.'
-		],
+		birthPlace: 'London, Ontario',
 	},
 	'rachel-zegler': {
 		birthPlace: 'Hackensack, Nueva Jersey',
@@ -2629,19 +2037,10 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'ralph-fiennes': {
-		biography: [
-			'Ralph Nathaniel Twisleton-Wykeham-Fiennes (Ipswich, Inglaterra, 22 de diciembre de 1962), conocido artísticamente como Ralph Fiennes, es un actor y director británico, nominado tres veces al Premio Óscar.',
-			'Luego, la familia se mudó a Salisbury, en Inglaterra, donde Fiennes terminó su educación y empezó a asistir al Chelsea College of Arts.',
-			'Entre ellos destacan el actor Joseph Fiennes y la directora Martha Fiennes, quien dirigió una película basada en la novela en verso Eugenio Oneguin del ruso Aleksandr Pushkin en la que actuó el propio Ralph en el papel protagonista y que lleva por título Onegin (1999).',
-			'Ralph Fiennes nació el 22 de diciembre de 1962 en Ipswich, Inglaterra.'
-		],
+		birthPlace: 'Ipswich, Inglaterra',
 	},
 	'rami-malek': {
-		biography: [
-			'Rami Said Malek (Torrance, California, 12 de mayo de 1981) es un actor estadounidense.',
-			'Es conocido principalmente por su papel como Elliot Alderson en la serie televisiva Mr. Robot, por el que ganó un premio Emmy y un Premio de la Crítica Televisiva, y por encarnar a la leyenda del Rock Freddie Mercury en la película biográfica Bohemian Rhapsody, interpretación por la cual ganó un premio Óscar, un Globo de Oro, un SAG y un BAFTA, entre otros, al mejor actor.',
-			'Malek también ha interpretado personajes notables en el cine y televisión como el faraón Ahkmenrah en la trilogía Night at the Museum, Kenny en la serie de FOX The War at Home (La guerra en casa), y Merriel "Snafu" Shelton en la miniserie de HBO The Pacific.'
-		],
+		birthPlace: 'Torrance, California',
 	},
 	'rebecca-ferguson': {
 		birthPlace: 'Estocolmo',
@@ -2662,89 +2061,48 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'renate-reinsve': {
-		biography: [
-			'Renate Reinsve es una actriz noruega.',
-			'Hizo su debut cinematográfico en Oslo, 31 de agosto (2011) antes de protagonizar la película aclamada por la crítica La peor persona del mundo (2021), que le valió el Premio del Festival de Cine de Cannes a la Mejor Actriz y una nominación en los Premios BAFTA. Desde entonces, ha protagonizado la serie de suspenso legal estadounidense Presumed Innocent y la película dramática A Different Man (ambas de 2024).',
-			'Se reunió nuevamente con el director Joachim Trier para protagonizar la película Sentimental Value, que le valió una nominación en los Globos de Oro, en la categoría de Mejor Actriz - Drama y a los Premios Óscar en la categoría de Mejor Actriz.'
-		],
+		birthPlace: 'Nedre Eiker',
 	},
 	'ridley-scott': {
-		biography: [
-			'Ridley Scott (South Shields, Inglaterra, 30 de noviembre de 1937) es un director de cine, productor y guionista británico.',
-			'Comenzando su carrera en la publicidad, donde perfeccionó sus habilidades cinematográficas al hacer mini-películas creativas para comerciales de televisión, el trabajo de Scott es conocido por su estilo visual altamente concentrado y atmosférico. A pesar de que sus películas varían ampliamente en ambientación y época, frecuentemente exhiben imágenes memorables de entornos urbanos, ya sea en el Antiguo Egipto (Exodus: Gods and Kings), el siglo II en Roma (Gladiador), del Jerusalén del siglo XII (Kingdom of Heaven), la Inglaterra medieval (Robin Hood), el contemporáneo Mogadiscio (Black Hawk Down), los paisajes futuros de Blade Runner o los planetas distantes en Alien, Prometheus, The Martian y Alien: Covenant.',
-			'Varias de sus películas también son conocidas por sus fuertes personajes femeninos. Scott ha sido nominado tres veces al Óscar al mejor director (por Thelma & Louise, Gladiator y Black Hawk Down). En 1995, tanto Ridley como su hermano Tony recibieron un BAFTA por su destacada contribución británica al cine. En una encuesta de la BBC de 2004, Scott fue nombrado la décima persona más influyente en la cultura británica. En 2015, recibió un doctorado honorario de la Royal College of Art en Londres, y en 2018 recibió la BAFTA Fellowship por el logro de toda la vida.'
-		],
+		birthPlace: 'South Shields, Inglaterra',
 	},
 	'robert-downey-jr': {
-		biography: [
-			'Robert John Downey Jr. (Nueva York, 4 de abril de 1965) es un actor, actor de voz, productor y cantante estadounidense.',
-			'Inició su carrera como actor a temprana edad en varios filmes dirigidos por su padre, Robert Downey Sr., y en su infancia estudió actuación en varias academias de Nueva York.',
-			'Tras numerosos proyectos fallidos, ganó relevancia en el cine protagonizando la película Chaplin (1992), actuación con que ganó un BAFTA y recibió una nominación a los premios Óscar y los Globo de Oro.'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'robert-eggers': {
-		biography: [
-			'Robert Houston Eggers, conocido como Robert Eggers (Nueva York, 7 de julio de 1983), es un director de cine, guionista y diseñador de producción estadounidense. Es conocido por sus aclamadas películas La bruja (2015), El faro (2019), El hombre del norte (2022) y Nosferatu (2024). Sus películas se destacan por sus elementos folclóricos y mitológicos, así como por sus denodados esfuerzos por garantizar la autenticidad histórica.',
-			'En Cine Posta su obra queda conectada con Nosferatu, que hoy funcionan como entrada rápida a su filmografía dentro del sitio.'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'robert-englund': {
-		biography: [
-			'Robert Barton Englund (Glendale, California, 6 de junio de 1947), conocido como Robert Englund, es un actor, actor de voz, cantante y director de cine estadounidense, célebre por interpretar al famoso asesino ficticio Freddy Krueger, en la serie de películas A Nightmare on Elm Street.',
-			'Recibió dos nominaciones al Premio Saturn en la categoría de mejor actor de reparto por A Nightmare on Elm Street 3: Dream Warriors (1987) y por A Nightmare on Elm Street 4: The Dream Master (1988) en España.'
-		],
+		birthPlace: 'Glendale, California',
 	},
 	'robert-pattinson': {
+		birthPlace: 'Londres',
+	},
+	'ron-howard': {
 		biography: [
-			'Robert Douglas Thomas Pattinson (Londres; 13 de mayo de 1986) es un actor, modelo, productor y cantante británico.',
-			'Inició su carrera durante su adolescencia como modelo de varias marcas infantiles, pero tras la llegada de su pubertad comenzó a tener problemas para obtener nuevos empleos, por lo que decidió dedicarse a la actuación. Tras aparecer en el telefilme Dark Kingdom: The Dragon King, debutó en el cine con Vanity Fair (2004) y seguidamente ganó reconocimiento al interpretar al personaje de Cedric Diggory en Harry Potter y el cáliz de fuego (2005). Pattinson logró mayor popularidad al interpretar al personaje de Edward Cullen en las películas Twilight (2008), The Twilight Saga: New Moon (2009), The Twilight Saga: Eclipse (2010), The Twilight Saga: Breaking Dawn - Part 1 (2011) y The Twilight Saga: Breaking Dawn - Part 2 (2012), que fueron éxitos en taquilla. Su trabajo en dicha saga lo hizo ganador de dos premios en los Scream Awards, así como de nueve en los MTV Movie Awards y diez en los Teen Choice Awards.',
-			'Además de ello, interpretó al personaje de Batman en The Batman (2022).'
+			'Ronald William «Ron» Howard (Duncan, Oklahoma, 1 de marzo de 1954) es un director, productor, guionista y actor estadounidense.',
+			'Howard comenzó su carrera como actor infantil antes de pasar a dirigir películas.',
+			'A lo largo de sus seis décadas de carrera, Howard ha recibido dos premios Óscar, cuatro premios Emmy, dos Globos de Oro y un premio Grammy.',
+			'Fue galardonado con la Medalla Nacional de las Artes en 2003 y fue incluido en el Salón de la Fama de la Televisión en 2013.'
 		],
 	},
 	'rosamund-pike': {
-		biography: [
-			'Rosamund Mary Ellen Pike (Hammersmith, Inglaterra, 1979) es una actriz británica de cine y televisión.',
-			'En televisión, destacan sus papeles en A Rather English Marriage (1998), Esposas e hijas (1999), Love in a Cold Climate (2001), State of the Union (2019) o The Wheel of Time (2021-2025).',
-			'Es conocida internacionalmente por sus personajes de la villana Miranda Frost en la película de James Bond Die Another Day, Jane Bennet en Orgullo y prejuicio en 2005 y Amy Dunne en Perdida, por el que ha sido nominada a diversos premios entre los cuales destacan el Óscar, el Globo de Oro, el BAFTA y el premio SAG; todos en la categoría de mejor actriz.'
-		],
+		birthPlace: 'Hammersmith, Inglaterra',
 	},
 	'rupert-grint': {
-		biography: [
-			'Rupert Alexander Lloyd Grint (Harlow, Inglaterra, 24 de agosto de 1988) es un actor británico, conocido por interpretar a Ron Weasley en la serie de películas de Harry Potter.',
-			'Obtuvo dicho papel a los once años, después de haber participado anteriormente solo en obras de teatro escolares y grupos de teatro locales. Protagonizó, junto a Daniel Radcliffe y Emma Watson, las ocho películas de la serie cinematográfica. Realizó su primera aparición fuera de Harry Potter en el largometraje Thunderpants dirigido por Pete Hewitt y estrenado el 24 de mayo de 2002.',
-			'Protagonizó la comedia dramática Driving Lessons, estrenada el 8 de septiembre de 2006, donde compartió reparto con Julie Walters, actriz que encarnó a Molly Weasley —madre del personaje de Grint— en la saga de películas de Harry Potter, y Cherrybomb (2009), una cinta de bajo presupuesto de lanzamiento limitado.'
-		],
+		birthPlace: 'Harlow, Inglaterra',
 	},
 	'ryan-coogler': {
-		biography: [
-			'Ryan Kyle Coogler (Oakland, California; 23 de mayo de 1986) es un director y guionista estadounidense.',
-			'Comenzó a ser reconocido en la industria por su trabajo como director de las películas Creed (2015) y Black Panther (2018).',
-			'Coogler también produjo el drama histórico Judas and the Black Messiah (2021) y la película de terror sobrenatural Sinners (2025), que también escribió y dirigió.',
-			'Recibió nominaciones en los Óscar a la mejor película por ambas, mientras que por Sinners también fue nominado a Mejor Director y Mejor Guion Original.'
-		],
+		birthPlace: 'Oakland, California',
 	},
 	'ryan-gosling': {
-		biography: [
-			'Ryan Thomas Gosling (London, Ontario, 12 de noviembre de 1980) es un actor y músico canadiense.',
-			'Inició su carrera como estrella infantil en el programa The Mickey Mouse Club (1993-1994) de Disney Channel y posteriormente participó en otras producciones televisivas orientadas al público juvenil, como Are You Afraid of the Dark? (1995), Goosebumps (1996), Breaker High (1997-1998) y Young Hercules (1998-1999).',
-			'Su primer papel importante en el cine fue en The believer (2001), y luego construyó una reputación por sus interpretaciones en películas independientes como Murder by numbers (2002), The Slaughter Rule (2002), The United States of Leland (2003) y Stay (2005).'
-		],
+		birthPlace: 'London, Ontario',
 	},
 	'ryan-reynolds': {
-		biography: [
-			'Ryan Rodney Reynolds (Vancouver, 23 de octubre de 1976) es un actor, actor de voz, comediante, guionista, productor de cine y empresario canadiense, nacionalizado estadounidense.',
-			'Comenzó su carrera protagonizando la telenovela canadiense para adolescentes Hillside (1991-1993) y tuvo papeles menores antes de obtener el papel principal en la comedia de situación Two Guys and a Girl entre 1998 y 2001.',
-			'Reynolds luego protagonizó una variedad de películas, que incluyen comedias como Van Wilder (2002) o The Proposal (2009).',
-			'También actuó en papeles dramáticos en Buried (2010), Woman in Gold (2015) y Life (2017), protagonizó películas de acción como Blade: Trinity (2004), Green Lantern (2011), 6 Underground (2019), Free Guy (2021) o Red Notice (2021) y prestó su voz en diversas películas animadas como The Croods (2013-2020) y Pokémon: Detective Pikachu (2019).'
-		],
+		birthPlace: 'Vancouver',
 	},
 	'sam-mendes': {
-		biography: [
-			'Samuel Alexander Mendes (Reading, Berkshire, 1 de agosto de 1965) es un director de cine y teatro, productor y guionista inglés.',
-			'En 2000, fue nombrado Comendador de la Orden del Imperio Británico por sus servicios al teatro y caballero en la Lista de Honores de Año Nuevo de 2020.',
-			'En 2000, recibió el Premio Shakespeare de la Fundación Alfred Toepfer en Hamburgo.',
-			'En 2005, recibió un premio a la trayectoria del Gremio de Directores de Gran Bretaña. En 2008, The Daily Telegraph lo clasificó en el puesto número 15 de su lista de las «100 personas más influyentes de la cultura británica». Estudió literatura inglesa en Peterhouse, en la Universidad de Cambridge, y comenzó a dirigir obras de teatro allí antes de unirse al Donmar Warehouse, que se convirtió en un centro de la cultura teatral londinense de los años noventa. En el teatro, es conocido por sus oscuras reinterpretaciones de los musicales Cabaret (1993), Oliver! (1994), Company (1995) y Gypsy (2003).'
-		],
+		birthPlace: 'Reading, Berkshire',
 	},
 	'sam-worthington': {
 		birthPlace: 'Godalming, Surrey',
@@ -2756,18 +2114,10 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'samara-weaving': {
-		biography: [
-			'Samara Weaving (Adelaida, Australia Meridional; 23 de febrero de 1992) es una actriz y modelo australiana.',
-			'Comenzó su carrera en su país natal, interpretando a Kirsten Mulroney en la serie Out of the Blue (2008) y a Indi Walker en la telenovela Home and Away (2009-2013), por la que recibió una nominación al premio AACTA.',
-			'Weaving protagonizó las películas de terror Mayhem y The Babysitter (ambas de 2017), y recibió numerosos premios de reparto por la película dramática Three Billboards Outside Ebbing, Missouri (2017).'
-		],
+		birthPlace: 'Adelaida, Australia Meridional',
 	},
 	'samuel-l-jackson': {
-		biography: [
-			'Samuel Leroy Jackson (Washington D.',
-			'C., 21 de diciembre de 1948) es un actor y productor de cine, televisión y teatro estadounidense.',
-			'Ha sido candidato al Premio Óscar, a los Globos de Oro y al Premio del Sindicato de Actores, así como ganador de un BAFTA al mejor actor de reparto y en 2022 se le entregó un Óscar honorífico a su trayectoria profesional. Es conocido por sus numerosas intervenciones en películas como Coming to America (1988), Goodfellas (1990), Jurassic Park (1993), Pulp Fiction (1994), Die Hard with a Vengeance (1995), A Time to Kill (1996), El protegido (2000), Changing Lanes (2002), S.W.A.T. (2003), Django Unchained (2012), Spiral, From the Book of Saw (2021) en el Universo cinematográfico de Marvel como el director de S.H.I.E.L.D., Nick Fury, en la saga Star Wars como el maestro Mace Windu (1999, 2002 y 2005) y en The Hateful Eight (2015) como el mayor Marquis Warren, El Cazarrecompensas.'
-		],
+		birthPlace: 'Washington D. C.',
 	},
 	'sandra-huller': {
 		birthPlace: 'Suhl, Turingia',
@@ -2779,34 +2129,22 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'scarlett-johansson': {
-		biography: [
-			'Scarlett Ingrid Johansson (Nueva York, 22 de noviembre de 1984) es una actriz estadounidense que también se ha desempeñado de manera eventual como cantante, productora, modelo y directora.',
-			'Comenzó a mostrar interés en las artes escénicas desde edad temprana y, a lo largo de su infancia y adolescencia, recibió formación actoral en distintos centros de enseñanza.',
-			'En 2025, sus películas con papel protagonista totalizaron más de 15 mil millones de dólares recaudados, lo que la convirtió en la estrella de cine más taquillera de la historia hasta ese momento.'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'sean-baker': {
-		biography: [
-			'Sean Baker (Summit, Nueva Jersey, 26 de febrero de 1971) es un cineasta estadounidense.',
-			'Bernard\'s High School. En los condados de Somerset y Morris, Baker trabajó como proyeccionista en el Teatro Wellmont de Montclair, Nueva Jersey.',
-			'Graduado por la Universidad de Nueva York, es conocido por la realización de películas como Starlet (2012), Tangerine (2015) y The Florida Project (2017). En 2024 ganó la Palma de Oro del Festival de Cannes y en 2025 el Oscar a mejor película, guion original, montaje y dirección por Anora.',
-			'Sean Baker nació el 26 de febrero de 1971 en Summit, Nueva Jersey.'
-		],
+		birthPlace: 'Summit, Nueva Jersey',
 	},
 	'sebastian-stan': {
+		birthPlace: 'Constanza',
 		biography: [
 			'Sebastian Stan (Constanza, 13 de agosto de 1982) es un actor rumano-estadounidense. Reconocido por su papel de Bucky Barnes / Winter Soldier, antihéroe de Marvel.',
-			'En televisión, interpretó a Carter Baizen en Gossip Girl, al príncipe Jack Benjamin en Kings, a Jefferson en Once Upon a Time y a T.J.',
 			'Este último le valió una nominación al premio Critics\' Choice Television como Mejor Actor de Reparto en una Película / Miniserie.',
-			'Stan ganó un amplio reconocimiento por su papel de Bucky Barnes / Winter Soldier en las películas del Universo cinematográfico de Marvel Capitán América: El Primer Vengador (2011), Captain America: The Winter Soldier (2014), Capitán América: Civil War (2016), Black Panther (2018), Avengers: Infinity War (2018), Avengers: Endgame (2019) y The Falcon and the Winter Soldier (2021).'
+			'Stan ganó un amplio reconocimiento por su papel de Bucky Barnes / Winter Soldier en las películas del Universo cinematográfico de Marvel Capitán América: El Primer Vengador (2011), Captain America: The Winter Soldier (2014), Capitán América: Civil War (2016), Black Panther (2018), Avengers: Infinity War (2018), Avengers: Endgame (2019) y The Falcon and the Winter Soldier (2021).',
+			'Sebastian Stan nació el 13 de agosto de 1982 en Constanza.'
 		],
 	},
 	'sigourney-weaver': {
-		biography: [
-			'Susan Alexandra Weaver (Manhattan, Nueva York, 8 de octubre de 1949), más conocida como Sigourney Weaver, es una actriz estadounidense de cine, televisión y teatro.',
-			'Ha sido candidata a los Premios Óscar y a los Premios del Sindicato de Actores. Ha sido ganadora de dos Globo de Oro en las categorías de mejor actriz en drama y mejor actriz de reparto, de varios Saturn Awards (Aliens y Avatar) y de un BAFTA a la mejor actriz de reparto. Es conocida por sus intervenciones como la teniente Ellen Ripley en varias películas de la saga de Alien: Alien, el octavo pasajero (1979), Aliens (1986), Alien 3 (1992) y Alien: resurrección (1997).',
-			'Ha participado también en otras películas tan recordadas como Avatar (2009), Los cazafantasmas (1984), Gorilas en la niebla (1988), Working Girl (1988), Copycat (1994), La tormenta de hielo (1997), Snow White: A Tale of Terror (1997), y The Village (2004).'
-		],
+		birthPlace: 'Manhattan, Nueva York',
 	},
 	'steven-yeun': {
 		birthPlace: 'Seúl',
@@ -2818,90 +2156,46 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'sydney-sweeney': {
-		biography: [
-			'Sydney Bernice Sweeney (Spokane, Washington, 12 de septiembre de 1997) es una actriz, modelo y productora estadounidense. Es conocida por sus papeles en la serie dramática Euphoria (2019-presente) de HBO y en la primera temporada de la serie de antología The White Lotus (2021), que le valió nominaciones a dos premios Primetime Emmy. Sweeney llamó la atención por primera vez en 2018 por aparecer en las series de televisión Everything Sucks! y en The Handmaid\'s Tale, y en la serie limitada Sharp Objects.',
-			'Al año siguiente, apareció en la película Once Upon a Time in Hollywood dirigida por Quentin Tarantino.',
-			'En 2023, interpretó a Reality Winner en la película dramática Reality y protagonizó la comedia romántica Anyone but You.'
-		],
+		birthPlace: 'Spokane, Washington',
 	},
 	'sylvester-stallone': {
-		biography: [
-			'Sylvester Gardenzio Stallone (Nueva York, 6 de julio de 1946) es un actor, pintor y cineasta estadounidense.',
-			'En televisión, destaca su papel protagonista en la serie Tulsa King.',
-			'La cinta Rocky (1976) se hizo con tres estatuillas del premio Óscar, en la categoría de mejor director, mejor película y mejor montaje.',
-			'Es reconocido mundialmente como uno de los principales actores del cine de acción de Hollywood con una carrera de más de cincuenta años y fue designado en enero de 2025 como enviado presidencial del presidente Trump en dicho lugar.'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'tessa-thompson': {
-		biography: [
-			'Tessa Lynne Thompson (Los Ángeles, California; 3 de octubre de 1983) es una actriz estadounidense.',
-			'En televisión, actuó como Jackie Cook en el drama de misterio Veronica Mars (2005-2006), Sara Freeman en el drama policial de época Copper (2012-2013) y Charlotte Hale en el thriller de ciencia ficción de HBO Westworld (2016-2022).',
-			'Obtuvo un mayor reconocimiento por sus papeles protagónicos como Nyla Adrose en la película dramática For Colored Girls (2010), la activista por los derechos civiles Diane Nash en la película de drama histórico Selma (2014), Bianca en la película de drama deportivo Creed (2015), Josie Radek en la película de terror de ciencia ficción Annihilation (2018) y la Agente M en Men in Black: International (2019).'
-		],
+		birthPlace: 'Los Ángeles, California',
 	},
 	'timothee-chalamet': {
-		biography: [
-			'Timothée Hal Chalamet (Hell\'s Kitchen, Manhattan, Nueva York, 27 de diciembre de 1995) es un actor estadounidense-francés. Ha sido nominado para tres Premios Óscar, tres BAFTAs, cuatro Premios Globo de Oro, cinco SAG y seis Premios de la Crítica Cinematográfica.',
-			'Chalamet comenzó su carrera cuando era adolescente en televisión, apareciendo en la serie Homeland en 2012.',
-			'Chalamet saltó a la fama internacional con el papel principal de un adolescente enamorado en la película de Luca Guadagnino Call Me by Your Name (2017), lo que le valió una nominación al Premio de la Academia al Mejor Actor.'
-		],
+		birthPlace: 'Manhattan',
 	},
 	'tom-cruise': {
+		birthPlace: 'Siracusa, Nueva York',
 		biography: [
 			'Thomas Cruise Mapother IV (Siracusa, Nueva York, 3 de julio de 1962), conocido como Tom Cruise, es un actor y productor de cine estadounidense, ganador de un Premio Óscar Honorífico, tres Globos de Oro, un Premio Saturn y una Palma de Oro, entre otras.',
+			'Nació en Siracusa, Nueva York, el 3 de julio de 1962, es hijo del ingeniero electrónico Thomas Cruise Mapother III (1934-1984) y de su esposa, Mary Lee Pfeiffer (1936-2017), una profesora aficionada al teatro; y hermano de Lee Anne, Marian y Cass.',
 			'En más de cuatro décadas de carrera ha protagonizado películas de gran éxito comercial y aclamadas por la crítica: las cintas de acción Top Gun (1986), Days of Thunder (1990), la saga Misión imposible (1996-presente) y Top Gun: Maverick (2022); las películas dramáticas El color del dinero (1986), Rain Man (1988), Nacido el 4 de julio (1989) y Magnolia (1999); la película gótica de terror Entrevista con el vampiro (1994); la comedia romántica Jerry Maguire (1996); así como las películas de ciencia ficción Minority Report (2002), La guerra de los mundos (2005) y Oblivion (2013).',
-			'También ha protagonizado los thrillers The Firm (1993), Collateral (2004), Valkyrie (2008) y Jack Reacher (2012).'
+			'Tom Cruise nació el 3 de julio de 1962 en Siracusa, Nueva York.'
 		],
 	},
 	'tom-hardy': {
-		biography: [
-			'Edward Thomas Hardy (Hammersmith, Londres, 15 de septiembre de 1977) es un actor inglés, considerado como un actor de método.',
-			'Su debut llegó en la película Black Hawk Down (2001).',
-			'Desde entonces ha sido nominado por sus trabajos al Premio Óscar al Mejor Actor de Reparto, en dos ocasiones al Premios de la Crítica Cinematográfica y otras dos a los Premios de Cine de la Academia Británica, así como, ha sido galardonado con un Premio BAFTA a la estrella emergente del 2011. Las actuaciones que más reconocimiento le han otorgado son Eddie Brock en Venom (2018) y sus secuelas Venom: Let There Be Carnage (2021) y Venom: The Last Dance (2024), a Bane en The Dark Knight Rises (2012) y a Mad Max en Mad Max: Fury Road (2015).'
-		],
+		birthPlace: 'Hammersmith, Londres',
 	},
 	'tom-hiddleston': {
-		biography: [
-			'Thomas William Hiddleston (Westminster, Inglaterra, 9 de febrero de 1981) es un actor y productor de cine británico.',
-			'Es conocido por haber interpretado a Loki en las adaptaciones cinematográficas de la Trilogía de Thor de Marvel Studios: Thor (2011), Thor: The Dark World (2013) y Thor: Ragnarok (2017), así como también en The Avengers (2012), Avengers: Infinity War (2018), Avengers: Endgame (2019) y en la serie Loki (2021-2023) de Disney+.',
-			'Fue galardonado con el premio Globo de oro por su interpretación en The Night Manager.'
-		],
+		birthPlace: 'Westminster, Inglaterra',
 	},
 	'tom-holland': {
-		biography: [
-			'Thomas Stanley Holland (Londres, 1 de junio de 1996), conocido simplemente como Tom Holland, es un actor, actor de voz y bailarín británico.',
-			'Comenzó su carrera en el teatro en 2008 interpretando al personaje principal en el musical Billy Elliot.',
-			'Posteriormente, tras graduarse de la BRIT School en 2012, debutó en el cine con la película Lo imposible (2012) y logró gran reconocimiento por parte de la crítica, tras haber sido nombrado por la National Board of Review como el actor revelación de ese año, además de haber sido nominado a los Premios de la Crítica Cinematográfica como mejor intérprete joven.'
-		],
+		birthPlace: 'Londres',
 	},
 	'tommy-lee-jones': {
-		biography: [
-			'Tommy Lee Jones (San Saba, Texas, 15 de septiembre de 1946) es un actor y cineasta estadounidense.',
-			'Call en la miniserie Lonesome Dove, el agente K en la serie cinematográfica de Hombres de negro, al alguacil Ed Tom Bell en No Country for Old Men, al villano Dos Caras en Batman Forever, al terrorista William "Bill" Strannix en Under Siege, al ranger Roland Sharp en Man of the House, el ranchero Pete Perkins en Los tres entierros de Melquiades Estrada, el coronel Chester Phillips en Capitán América: el primer vengador, el director de la CIA Robert Dewey en Jason Bourne y a Warden Dwight McClusky en Natural Born Killers.',
-			'Ha recibido cuatro nominaciones al Premio Óscar, ganando el premio en la categoría de mejor actor de reparto por su actuación como el alguacil Samuel Gerard en la película de suspense de 1993 El fugitivo.'
-		],
+		birthPlace: 'San Saba, Texas',
 	},
 	'toni-collette': {
-		biography: [
-			'Antonia Collette (Blacktown, Nueva Gales del Sur; 1 de noviembre de 1972), conocida como Toni Collette, es una actriz y productora australiana.',
-			'Conocida por su trabajo en televisión y películas independientes, ha recibido varios galardones, entre ellos un Globo de Oro, un Premio Primetime Emmy y cinco Premios AACTA, con nominaciones a un Premio de la Academia y un Premio Tony.',
-			'Su papel decisivo se produjo en la comedia dramática La boda de Muriel (1994), que le valió una nominación al Globo de Oro y le valió el premio AACTA a la mejor actriz en un papel principal.'
-		],
+		birthPlace: 'Blacktown, Nueva Gales del Sur',
 	},
 	'uma-thurman': {
-		biography: [
-			'Uma Karuna Thurman (Boston, Massachusetts, 29 de abril de 1970) es una actriz y exmodelo estadounidense nominada al Óscar y ganadora del Globo de Oro.',
-			'Comenzó como modelo profesional y acabó dedicándose al cine en 1988, donde ha trabajado tanto en producciones de bajo presupuesto como en superproducciones de grandes estudios.',
-			'Aunque sin duda es mundialmente conocida por sus trabajos en Pulp Fiction (1994) y Kill Bill (2003-2004), ambas dirigidas por Quentin Tarantino.',
-			'Se la ha podido ver en dramas, películas de ciencia ficción, de acción, de suspense y también en comedias románticas.'
-		],
+		birthPlace: 'Boston, Massachusetts',
 	},
 	'vanessa-kirby': {
-		biography: [
-			'Vanessa Nuala Kirby (Wimbledon, Londres, Inglaterra, 18 de abril de 1988), conocida como Vanessa Kirby, es una actriz británica.',
-			'Ha recibido, entre otros reconocimientos, un British Academy Television Awards, una Copa Volpi, nominaciones para un premio Óscar, un Globo de Oro, un Premio Primetime Emmy y dos Premios del Sindicato de Actores.',
-			'Después de su graduación, hizo su debut como actriz profesional en el escenario con una producción de Todos eran mis hijos (2010), de Arthur Miller, y siguió esto con aclamadas actuaciones en las obras El sueño de una noche de verano (2010), Como gustéis (2010), Women Beware Women (2011), Las tres hermanas (2012) y como Stella Kowalski en Un tranvía llamado Deseo (2014), y obtuvo los premios Ian Charleson por estas actuaciones.'
-		],
+		birthPlace: 'Wimbledon, Londres, Inglaterra',
 	},
 	'viggo-mortensen': {
 		birthPlace: 'Nueva York',
@@ -2913,19 +2207,10 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'vin-diesel': {
-		biography: [
-			'Mark Sinclair Vincent (Alameda, California, 18 de julio de 1967), más conocido por su nombre artístico Vin Diesel, es un actor productor y director de cine estadounidense. Conocido por la interpretación de Dominic Toretto en la saga cinematográfica The Fast and the Furious y por el papel de Richard B.',
-			'Diesel ha protagonizado además películas como xXx y xXx: Return of Xander Cage (2002 y 2017); A Man Apart (2003); The Pacifier (2005); Find me Guilty (2006); y El último cazador de brujas (2015).',
-			'Riddick en la trilogía Las Crónicas de Riddick, es también productor de las secuelas de ambas franquicias.'
-		],
+		birthPlace: 'Alameda, California',
 	},
 	'ving-rhames': {
-		biography: [
-			'Irving Rameses "Ving" Rhames (Nueva York, 12 de mayo de 1959) es un actor estadounidense y ganador de un Globo de Oro, conocido por sus papeles en películas como Pulp Fiction, Guardianes de la Galaxia Vol. 2 y el personaje de Luther Stickell en la saga de películas Misión Imposible.',
-			'Entró en la Escuela de Nueva York de las Artes Escénicas, donde descubrió su gusto por la actuación.',
-			'En 1998, durante la ceremonia de los Globo de Oro en la que resultó vencedor frente a su gran ídolo, Jack Lemmon, decidió entregar su premio al veterano actor como reconocimiento a su gran carrera.',
-			'Ving Rhames nació el 12 de mayo de 1959 en Nueva York.'
-		],
+		birthPlace: 'Nueva York',
 	},
 	'viola-davis': {
 		birthPlace: 'Saint Matthews, Carolina del Sur',
@@ -2944,35 +2229,31 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'will-smith': {
-		biography: [
-			'Willard Carroll Smith II (Filadelfia, 25 de septiembre de 1968), más conocido como Will Smith, es un actor, rapero y productor de cine estadounidense.',
-			'En 1990, su fama aumentó drásticamente, cuando protagonizó la serie de televisión El príncipe de Bel-Air, donde interpretaba a una versión ficticia de sí mismo, y que se transmitió durante más de media década (1990-1996) en la NBC y se ha retransmitido de forma permanente en diversas cadenas.',
-			'Ha tenido éxito en sus dos facetas artísticas: Ganó un Premio Óscar con dos nominaciones previas, siendo nominado a cuatro Premios Globo de Oro y saliendo ganador de cuatro Premios Grammy.'
-		],
+		birthPlace: 'Filadelfia',
 	},
 	'willem-dafoe': {
-		biography: [
-			'William James Dafoe (Appleton, Wisconsin, 22 de julio de 1955) es un actor estadounidense.',
-			'Dafoe fue miembro fundador de la compañía de teatro experimental The Wooster Group.',
-			'Conocido por sus diversos papeles en el cine, ha recibido varios galardones, incluida la Copa Volpi al Mejor Actor, así como nominaciones a cuatro Premios de la Academia, un Premio BAFTA y cuatro Premios Globo de Oro.',
-			'Ha colaborado frecuentemente con los cineastas Paul Schrader, Abel Ferrara, Lars von Trier, Julian Schnabel, Wes Anderson y Robert Eggers.'
-		],
+		birthPlace: 'Appleton, Wisconsin',
 	},
 	'woody-harrelson': {
+		birthPlace: 'Midland, Texas',
 		biography: [
 			'Woodrow Tracy Harrelson (Midland, Texas, 23 de julio de 1961), más conocido como Woody Harrelson, es un actor y dramaturgo estadounidense de cine, teatro y televisión conocido por su papel del camarero Woody Boyd en la sitcom Cheers de los años 1980, con la que consiguió un premio Emmy.',
 			'Larry Flynt, la adaptación cinematográfica de Una mirada a la oscuridad, el drama Three Billboards Outside Ebbing, Missouri, en la aclamada serie True Detective y como Cletus Kasady / Carnage en la película Venom: Let There Be Carnage, donde comparte reparto con Tom Hardy.',
-			'Harrelson ha sido nominado en tres ocasiones al premio Óscar, la primera en la categoría de Mejor actor por The People vs.'
+			'Harrelson ha sido nominado en tres ocasiones al premio Óscar, la primera en la categoría de Mejor actor por The People vs.',
+			'Woody Harrelson nació el 23 de julio de 1961 en Midland, Texas.'
 		],
 	},
 	'yorgos-lanthimos': {
+		birthPlace: 'Atenas',
 		biography: [
 			'Yorgos Lánthimos (Atenas, 23 de septiembre de 1973) es un director de cine y de teatro, guionista y productor de cine griego, conocido por su enfoque distintivo en el cine contemporáneo.',
+			'Yorgos Lánthimos, nacido el 23 de septiembre de 1973 en Atenas, Grecia, estudió dirección de cine y televisión en la Escuela de Cine de Atenas.',
 			'Ganador en 2018, al BAFTA a la mejor película británica por The Favourite y en 2023, al Globo de Oro a la mejor película - comedia o musical por Poor Things; ha sido también nominado en varias ocasiones al Premio Óscar.',
-			'Su obra se caracteriza por un estilo único y, a menudo, surrealista.'
+			'Yorgos Lanthimos nació el 23 de septiembre de 1973 en Atenas.'
 		],
 	},
 	'zazie-beetz': {
+		birthPlace: 'Berlín',
 		biography: [
 			'Zazie Olivia Beetz (Berlín, 1 de junio de 1991) es una actriz germano-estadounidense. Se hizo conocida por su papel de Vanessa, en la serie televisiva Atlanta.',
 			'En 2023 participa en un episodio de la serie Black Mirror de Netflix.',
@@ -2981,18 +2262,16 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 		],
 	},
 	'zendaya': {
+		birthPlace: 'Oakland, California',
 		biography: [
 			'Zendaya Maree Stoermer Coleman (Oakland, California, 1 de septiembre de 1996), conocida simplemente como Zendaya, es una actriz y cantante estadounidense. Entre sus galardones se incluyen dos premios Primetime Emmy y un Globo de Oro.',
 			'Nacida y criada en Oakland, California, Zendaya comenzó su carrera como modelo infantil y bailarina de respaldo.',
-			'Hizo su debut televisivo como Rocky Blue en Shake It Up y luego protagonizó K.C. Undercover. En Cine Posta queda conectada con Challengers, Dune y Spider-Man, una combinación que resume su paso de figura juvenil a estrella central del cine contemporáneo.'
+			'Su debut cinematográfico se produjo en 2017 como MJ en la película de superhéroes Spider-Man: Homecoming; más tarde repitió su papel en sus secuelas Far From Home (2019) y No Way Home (2021).',
+			'Zendaya nació el 1 de septiembre de 1996 en Oakland, California.'
 		],
 	},
 	'zoe-saldana': {
-		biography: [
-			'Zoë Yadira Saldaña-Perego (Passaic, Nueva Jersey, 19 de junio de 1978) es una actriz, bailarina y modelo estadounidense de ascendencia dominicana. Conocida principalmente por su trabajo en franquicias de películas de ciencia ficción, ha protagonizado cuatro de las películas más taquilleras de todos los tiempos (Avatar, Avatar: The Way of Water, Avengers: Infinity War y Avengers: Endgame).',
-			'La revista Time la nombró una de las 100 personas más influyentes del mundo en el 2023. Como bailarina, Saldaña comenzó su carrera actoral en la pantalla en 1999 con un papel de invitada en dos episodios de Law & Order.',
-			'Su primer papel en el cine fue en Center Stage (2000), en el que interpretó a una bailarina de ballet.'
-		],
+		birthPlace: 'Passaic',
 	},
 /* __PERSON_PROFILE_EDITORIAL_OVERRIDES_END__ */
 };

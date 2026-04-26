@@ -1,14 +1,15 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-23. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-26. Fuente: src/data/movies/*.json
 
-Total de peliculas: 703
+Total de peliculas: 715
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Stremio | +16 |
 | 2026 | 53 domingos | 53-domingos-2026 | Comedia | Netflix | +13 |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Stremio | ATP |
+| 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Cine | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Cine | +17 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
@@ -33,6 +34,7 @@ Total de peliculas: 703
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
 | 2026 | Michael | michael-2026 | Drama | Cine | +13 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
+| 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video | +18 |
@@ -321,6 +323,7 @@ Total de peliculas: 703
 | 2017 | Dunkirk | dunkirk-2017 | Drama | Stremio | +13 |
 | 2017 | El culto de Chucky | cult-of-chucky-2017 | Terror | Stremio | +18 |
 | 2017 | Fireworks | fireworks-2017 | Anime | Stremio | +13 |
+| 2017 | Get Out | get-out-2017 | Terror | Stremio | +16 |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus | +13 |
 | 2017 | IT (Eso) | it-2017 | Terror | HBO Max | +16 |
 | 2017 | John Wick: Chapter 2 | john-wick-chapter-2-2017 | Accion | Prime Video | +16 |
@@ -337,12 +340,14 @@ Total de peliculas: 703
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | HBO Max | +13 |
 | 2017 | Zama | zama-2017 | Drama | Stremio | +18 |
 | 2016 | A Silent Voice | a-silent-voice-2016 | Anime | Prime Video | +13 |
+| 2016 | Arrival | arrival-2016 | Ciencia ficcion | Stremio | +13 |
 | 2016 | Batman v Superman: Dawn of Justice | batman-v-superman-dawn-of-justice-2016 | Accion | Stremio | +13 |
 | 2016 | Captain America: Civil War | captain-america-civil-war-2016 | Accion | Disney Plus | +13 |
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus | +17 |
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus | +13 |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus | +13 |
 | 2016 | Fantastic Beasts and Where to Find Them | fantastic-beasts-and-where-to-find-them-2016 | Fantasia | HBO Max | +12 |
+| 2016 | La La Land | la-la-land-2016 | Musical | Prime Video | +13 |
 | 2016 | Moonlight | moonlight-2016 | Drama | Prime Video | +17 |
 | 2016 | Rogue One: A Star Wars Story | rogue-one-a-star-wars-story-2016 | Ciencia ficcion | Disney Plus | +13 |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio | +13 |
@@ -374,6 +379,7 @@ Total de peliculas: 703
 | 2014 | John Wick | john-wick-2014 | Accion | Stremio | +18 |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max | +16 |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus | +13 |
+| 2014 | The Grand Budapest Hotel | the-grand-budapest-hotel-2014 | Comedia | Disney Plus | +13 |
 | 2014 | Whiplash | whiplash-2014 | Drama | HBO Max | +12 |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus | +13 |
 | 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video + Paramount Plus | +17 |
@@ -419,6 +425,7 @@ Total de peliculas: 703
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max | +13 |
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Stremio | +12 |
+| 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus | +16 |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix | +13 |
@@ -474,6 +481,7 @@ Total de peliculas: 703
 | 2005 | Tiempo de valientes | tiempo-de-valientes-2005 | Comedia | Stremio | +13 |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video | +16 |
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix | +13 |
+| 2004 | Eternal Sunshine of the Spotless Mind | eternal-sunshine-of-the-spotless-mind-2004 | Romance | Prime Video | +16 |
 | 2004 | Harry Potter and the Prisoner of Azkaban | harry-potter-and-the-prisoner-of-azkaban-2004 | Aventura | HBO Max | ATP |
 | 2004 | Howl's Moving Castle | howls-moving-castle-2004 | Anime | Netflix | ATP |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix | +17 |
@@ -583,6 +591,7 @@ Total de peliculas: 703
 | 1990 | Stephen King's IT | it-1990 | Terror | Stremio | +16 |
 | 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video | ATP |
 | 1989 | Batman | batman-1989 | Fantasia | HBO Max | +13 |
+| 1989 | Do the Right Thing | do-the-right-thing-1989 | Drama | Stremio | +16 |
 | 1989 | Driving Miss Daisy | driving-miss-daisy-1989 | Drama | Stremio | ATP |
 | 1989 | Halloween 5: La venganza de Michael Myers | halloween-5-the-revenge-of-michael-myers-1989 | Terror | Stremio | +17 |
 | 1989 | Indiana Jones and the Last Crusade | indiana-jones-and-the-last-crusade-1989 | Aventura | Stremio | +13 |
@@ -675,7 +684,10 @@ Total de peliculas: 703
 | 1960 | Psycho | psycho-1960 | Terror | HBO Max | +16 |
 | 1960 | The Apartment | the-apartment-1960 | Drama | Stremio | +14 |
 | 1959 | Ben-Hur | ben-hur-1959 | Drama | Stremio | ATP |
+| 1959 | North by Northwest | north-by-northwest-1959 | Aventura | Stremio | +13 |
 | 1958 | Gigi | gigi-1958 | Comedia | Stremio | ATP |
+| 1958 | Vertigo | vertigo-1958 | Thriller | HBO Max | +13 |
+| 1957 | 12 Angry Men | 12-angry-men-1957 | Drama | Stremio | +13 |
 | 1957 | The Bridge on the River Kwai | the-bridge-on-the-river-kwai-1957 | Drama | Stremio | ATP |
 | 1956 | Around the World in 80 Days | around-the-world-in-80-days-1956 | Comedia | Stremio | ATP |
 | 1955 | Marty | marty-1955 | Drama | Prime Video | +13 |
