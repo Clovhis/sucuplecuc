@@ -35,6 +35,12 @@ const lifeFactValue = deathDateLabel
 		? `${age} años`
 		: 'No confirmada';
 const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} en Cine Posta`;
+const biographyParagraphs =
+	profile.biography.length > 0
+		? profile.biography
+		: [
+				`Todavia estamos armando la bio editorial de ${profile.name}. Mientras tanto, podes recorrer sus peliculas conectadas, premios y titulos asociados dentro del catalogo.`,
+			];
 
 function getAge(birthDate?: string, birthYear?: number, deathDate?: string, deathYear?: number): number | undefined {
 	const currentDate = new Date();
@@ -160,7 +166,7 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 					<h2>Biografia de {profile.name}</h2>
 				</div>
 				<div class="person-page__bio-copy">
-					{profile.biography.map((paragraph) => (
+					{biographyParagraphs.map((paragraph) => (
 						<p>{paragraph}</p>
 					))}
 				</div>

@@ -579,6 +579,8 @@ const bulkProfileReferenceUrls: Record<string, BulkProfileReference> = {
 		'https://www.wikidata.org/wiki/Q151892',
 		'https://www.imdb.com/name/nm3812858/',
 		'https://www.themoviedb.org/person/226001-ariana-grande',
+		'https://www.grammy.com/artists/ariana-grande/18441',
+		'https://www.grammy.com/news/ariana-grande-makes-her-own-way',
 	],
 	'cynthia-erivo': [
 		'https://www.wikidata.org/wiki/Q21592474',
@@ -1166,11 +1168,96 @@ function normalizeBiographyParagraphs(biography: PersonProfileRecord['biography'
 	return normalized;
 }
 
+function formatKnownForTitle(slug: string): string {
+	const lowerWords = new Set(['a', 'and', 'de', 'del', 'el', 'en', 'for', 'la', 'las', 'los', 'of', 'the', 'to', 'y']);
+	const title = slug
+		.replace(/-\d{4}$/u, '')
+		.split('-')
+		.filter(Boolean)
+		.map((word, index) => {
+			if (index > 0 && lowerWords.has(word)) {
+				return word;
+			}
+
+			return `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
+		})
+		.join(' ');
+
+	return title
+		.replace(/\bIi\b/gu, 'II')
+		.replace(/\bIii\b/gu, 'III')
+		.replace(/\bIv\b/gu, 'IV')
+		.replace(/\bM3gan\b/gu, 'M3GAN')
+		.replace(/\bX Men\b/gu, 'X-Men')
+		.replace(/\bDc\b/gu, 'DC')
+		.replace(/\bMcu\b/gu, 'MCU');
+}
+
+function formatKnownForList(knownFor: PersonProfileRecord['knownFor']): string {
+	const titles = knownFor.slice(0, 3).map(formatKnownForTitle);
+
+	if (titles.length === 0) {
+		return 'varios titulos del catalogo';
+	}
+
+	if (titles.length === 1) {
+		return titles[0];
+	}
+
+	if (titles.length === 2) {
+		return `${titles[0]} y ${titles[1]}`;
+	}
+
+	return `${titles.slice(0, -1).join(', ')} y ${titles[titles.length - 1]}`;
+}
+
+function formatRolesForBiography(roles: PersonProfileRecord['roles']): string {
+	const primaryRole = roles[0]?.toLowerCase() ?? 'figura';
+	return primaryRole === 'dirección' ? 'director' : primaryRole;
+}
+
+function buildCatalogBiography(profile: PersonProfileRecord): string[] {
+	const roleLabel = formatRolesForBiography(profile.roles);
+	const knownForLabel = formatKnownForList(profile.knownFor);
+	const originCopy = profile.birthPlace ? ` con origen en ${profile.birthPlace}` : '';
+	const award = profile.awards[0];
+	const awardCopy = award
+		? ` Entre sus reconocimientos destacados figura ${award.label}${award.category ? ` en ${award.category}` : ''}${award.work ? ` por ${award.work}` : ''}${award.year ? ` en ${award.year}` : ''}.`
+		: ' Su lugar dentro del sitio se entiende por la continuidad entre trayectoria, presencia de pantalla y titulos asociados.';
+
+	return [
+		`${profile.name} es ${roleLabel}${originCopy} y su perfil dentro de Cine Posta queda asociado a una zona concreta del catalogo. ${profile.headline}`,
+		`Su recorrido en la ficha se lee a partir de ${knownForLabel}, titulos que ayudan a ubicar que tipo de presencia aporta: estrella reconocible, interprete de genero, figura autoral o pieza clave de una franquicia.`,
+		`${profile.spotlight} Ese contexto permite conectar rapidamente su filmografia, los premios cargados y las peliculas relacionadas sin dejar la bio reducida a una linea de ficha tecnica.${awardCopy}`,
+	];
+}
+
+const minimumBiographyParagraphs = 3;
+const minimumBiographyCharacters = 520;
+
 function ensureBiographyDepth(profile: PersonProfileRecord): PersonProfileRecord {
 	const biography = normalizeBiographyParagraphs(profile.biography);
+	const biographyLength = biography.join(' ').length;
+
+	if (biography.length >= minimumBiographyParagraphs && biographyLength >= minimumBiographyCharacters) {
+		return {
+			...profile,
+			biography,
+		};
+	}
+
+	const catalogBiography = buildCatalogBiography(profile);
+	const expandedBiography =
+		biography.length === 0
+			? catalogBiography
+			: [
+					...biography,
+					...catalogBiography.filter((paragraph) => !biography.some((entry) => entry.includes(paragraph.slice(0, 32)))),
+				].slice(0, 5);
+
 	return {
 		...profile,
-		biography,
+		biography: expandedBiography,
 	};
 }
 
@@ -1256,6 +1343,12 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	},
 	'ariana-grande': {
 		birthPlace: 'Boca Ratón, Florida',
+		biography: [
+			'Ariana Grande-Butera nació el 26 de junio de 1993 en Boca Ratón, Florida, y antes de convertirse en una figura central del pop ya venía de una formación muy ligada al teatro musical. Debutó en Broadway en 2008 con 13 y ganó visibilidad televisiva a partir de Victorious, donde su registro vocal empezó a quedar tan presente como su perfil de actriz.',
+			'Su carrera musical la llevó a una escala global con discos como Yours Truly, My Everything, Dangerous Woman, Sweetener, Thank U, Next, Positions y Eternal Sunshine. En ese camino armó una identidad muy reconocible: voz de soprano, producción pop y R&B, una imagen visual hipercontrolada y una relación directa con fandoms masivos.',
+			'El regreso fuerte al cine llegó con Wicked, donde interpretó a Glinda en la adaptación de Jon M. Chu junto a Cynthia Erivo. El papel no funcionó como cameo de celebridad: conectó su origen teatral, su disciplina vocal y su capacidad para sostener comedia, artificio y vulnerabilidad dentro de un musical de gran escala.',
+			'En Cine Posta, Ariana queda conectada sobre todo con Wicked y Wicked: For Good. Su ficha importa porque marca el punto en el que una estrella pop enorme vuelve a ser leída como actriz de musical, con nominaciones importantes por Wicked y un lugar nuevo dentro del cine comercial contemporáneo.',
+		],
 	},
 	'arnold-schwarzenegger': {
 		biography: [
@@ -1560,6 +1653,12 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	},
 	'emma-watson': {
 		birthPlace: 'París',
+		biography: [
+			'Emma Charlotte Duerre Watson nació el 15 de abril de 1990 en París y se crió principalmente en Oxfordshire. Saltó a la fama muy joven cuando fue elegida como Hermione Granger en Harry Potter and the Sorcerer\'s Stone, papel que sostuvo durante toda la saga cinematográfica entre 2001 y 2011.',
+			'Después de Harry Potter buscó correrse del encasillamiento con proyectos de distinto tono: The Perks of Being a Wallflower, The Bling Ring, Noah, Beauty and the Beast y Little Women muestran una carrera que combina fenómeno popular, cine de autor accesible y adaptaciones literarias de alto perfil.',
+			'En paralelo mantuvo una vida académica poco habitual para una estrella de franquicia. Estudió literatura inglesa en Brown University y se graduó en 2014, reforzando una imagen pública asociada no solo al cine sino también a la formación intelectual y a una exposición mediática más medida.',
+			'También tuvo un perfil fuerte como activista por la igualdad de género. En 2014 fue nombrada Embajadora de Buena Voluntad de ONU Mujeres y ayudó a lanzar la campaña HeForShe, una iniciativa que buscó involucrar a hombres y niños en la conversación por los derechos de las mujeres.',
+		],
 	},
 	'evangeline-lilly': {
 		birthPlace: 'Fort Saskatchewan, Alberta',
