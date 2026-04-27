@@ -1,7 +1,6 @@
 import type { Movie, MovieVerdict } from '../types/movie';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
 import type { MovieEditorialSummary } from './movies';
-import { getMoviePlatformLabel } from './platforms';
 
 export interface EditorialBlock {
 	title: string;
@@ -47,7 +46,6 @@ function getRuntimeValue(summary: MovieEditorialSummary): string | undefined {
 }
 
 export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary): MovieValueGuide {
-	const platformLabel = getMoviePlatformLabel(movie);
 	const castLabel = joinNames(movie.mainCast, 'su elenco principal');
 	const relatedLabel = summary.related.length
 		? joinNames(
@@ -65,7 +63,7 @@ export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary)
 	return {
 		blocks: [
 			{
-				title: 'Lectura editorial',
+				title: '',
 				paragraphs: [
 					`${movie.title} entra en el catalogo como una propuesta de ${movie.category.toLowerCase()} de ${movie.year}, dirigida por ${movie.director}. La ficha no se limita a repetir datos: separa premisa, veredicto y contexto para que la decision de verla sea rapida y concreta.`,
 					`El punto de partida es el cruce entre ${castLabel}, la marca de ${movie.productionCompany} y el lugar que ocupa frente a ${bridgeLabel}. Esa comparacion interna ayuda a entender si conviene verla por tono, por reparto o por simple curiosidad de genero.`,
@@ -80,7 +78,6 @@ export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary)
 			},
 		],
 		facts: [
-			{ label: 'Plan sugerido', value: getPlanSuggestion(movie, platformLabel) },
 			{ label: 'Punto fuerte a revisar', value: `El cruce entre ${castLabel} y el tono de ${movie.category.toLowerCase()}.` },
 			{ label: 'Antes de verla', value: getRuntimeValue(summary) ?? 'Revisa sinopsis, trailer y clasificacion antes de decidir.' },
 			{ label: 'Si te interesa', value: `Segui por ${relatedLabel} para comparar el mismo pulso dentro del sitio.` },
@@ -94,17 +91,6 @@ function getVerdictLabelForSentence(movie: Pick<Movie, 'title' | 'verdict' | 've
 		return `El veredicto de Cine Posta para ${movie.title} es "${label}"`;
 	}
 	return `El veredicto de Cine Posta para ${movie.title} esta marcado como ${movie.verdict.replace(/_/g, ' ')}`;
-}
-
-function getPlanSuggestion(movie: Pick<Movie, 'title' | 'category' | 'verdict'>, platformLabel: string): string {
-	const platformCopy = platformLabel ? ` en ${platformLabel}` : '';
-	if (movie.verdict === 'recomendada') {
-		return `Va bien como eleccion principal${platformCopy} si buscas ${movie.category.toLowerCase()} sin dar tantas vueltas.`;
-	}
-	if (movie.verdict === 'zafa') {
-		return `Rinde mejor como opcion de genero${platformCopy}, con expectativas medidas.`;
-	}
-	return `Conviene entrar solo si ya te interesa mucho ${movie.category.toLowerCase()} o queres completar una filmografia.`;
 }
 
 export function getPersonEditorialBlocks(

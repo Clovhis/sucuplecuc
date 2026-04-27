@@ -34,6 +34,18 @@ function getCollectionPageId(): string {
 	return `${SITE_URL}/#webpage`;
 }
 
+function createBreadcrumbListItem(position: number, name: string, itemUrl: string): StructuredDataValue {
+	return {
+		'@type': 'ListItem',
+		position,
+		name,
+		item: {
+			'@id': itemUrl,
+			name,
+		},
+	};
+}
+
 function getReviewRatingValue(verdict: MovieVerdict): number {
 	switch (verdict) {
 		case 'recomendada':
@@ -185,7 +197,6 @@ export function createMovieStructuredData(
 	pageDescription: string,
 ): StructuredDataValue[] {
 	const movieUrl = asAbsoluteUrl(getMoviePath(movie.slug));
-	const reviewId = `${movieUrl}#review`;
 	const imageUrls = [
 		getPosterUrl(movie.poster),
 		...(movie.screenshots ?? []).slice(0, 2).map((value) => getPosterUrl(value)),
@@ -212,38 +223,39 @@ export function createMovieStructuredData(
 			'@type': 'Organization',
 			name: movie.productionCompany,
 		},
-		review: {
-			'@id': reviewId,
-		},
 	};
 
-	const reviewSchema: StructuredDataValue = {
-		'@context': 'https://schema.org',
+	const reviewSchema =
+		typeof movie.review === 'string' && movie.review.trim().length > 0
+			? {
 		'@type': 'Review',
-		'@id': reviewId,
-		url: movieUrl,
-		name: `Reseña de ${movie.title} (${movie.year})`,
-		inLanguage: SITE_LANGUAGE,
-		reviewBody: movie.review,
-		author: {
-			'@type': 'Organization',
-			'@id': getOrganizationId(),
-			name: SITE_NAME,
-			url: `${SITE_URL}/`,
-		},
-		publisher: {
-			'@type': 'Organization',
-			'@id': getOrganizationId(),
-			name: SITE_NAME,
-			url: `${SITE_URL}/`,
-		},
-		reviewRating: {
-			'@type': 'Rating',
-			ratingValue: getReviewRatingValue(movie.verdict),
-			bestRating: 4,
-			worstRating: 1,
-		},
-	};
+				name: `Reseña de ${movie.title} (${movie.year})`,
+				inLanguage: SITE_LANGUAGE,
+				reviewBody: movie.review,
+				author: {
+					'@type': 'Organization',
+					'@id': getOrganizationId(),
+					name: SITE_NAME,
+					url: `${SITE_URL}/`,
+				},
+				publisher: {
+					'@type': 'Organization',
+					'@id': getOrganizationId(),
+					name: SITE_NAME,
+					url: `${SITE_URL}/`,
+				},
+				reviewRating: {
+					'@type': 'Rating',
+					ratingValue: getReviewRatingValue(movie.verdict),
+					bestRating: 4,
+					worstRating: 1,
+				},
+			}
+			: undefined;
+
+	if (reviewSchema) {
+		movieSchema.review = reviewSchema;
+	}
 
 	if (movie.originalTitle && movie.originalTitle !== movie.title) {
 		movieSchema.alternateName = movie.originalTitle;
@@ -259,7 +271,6 @@ export function createMovieStructuredData(
 
 	return [
 		movieSchema,
-		reviewSchema,
 		{
 			'@context': 'https://schema.org',
 			'@type': 'WebPage',
@@ -283,18 +294,8 @@ export function createMovieStructuredData(
 			'@type': 'BreadcrumbList',
 			'@id': `${movieUrl}#breadcrumb`,
 			itemListElement: [
-				{
-					'@type': 'ListItem',
-					position: 1,
-					name: SITE_NAME,
-					item: `${SITE_URL}/`,
-				},
-				{
-					'@type': 'ListItem',
-					position: 2,
-					name: movie.title,
-					item: movieUrl,
-				},
+				createBreadcrumbListItem(1, SITE_NAME, `${SITE_URL}/`),
+				createBreadcrumbListItem(2, movie.title, movieUrl),
 			],
 		},
 	];
@@ -329,24 +330,9 @@ export function createTrailerPageStructuredData(
 			'@type': 'BreadcrumbList',
 			'@id': `${trailerUrl}#breadcrumb`,
 			itemListElement: [
-				{
-					'@type': 'ListItem',
-					position: 1,
-					name: SITE_NAME,
-					item: `${SITE_URL}/`,
-				},
-				{
-					'@type': 'ListItem',
-					position: 2,
-					name: movie.title,
-					item: movieUrl,
-				},
-				{
-					'@type': 'ListItem',
-					position: 3,
-					name: 'Trailer oficial',
-					item: trailerUrl,
-				},
+				createBreadcrumbListItem(1, SITE_NAME, `${SITE_URL}/`),
+				createBreadcrumbListItem(2, movie.title, movieUrl),
+				createBreadcrumbListItem(3, 'Trailer oficial', trailerUrl),
 			],
 		},
 	];
@@ -425,18 +411,8 @@ export function createPersonStructuredData(
 			'@type': 'BreadcrumbList',
 			'@id': `${personUrl}#breadcrumb`,
 			itemListElement: [
-				{
-					'@type': 'ListItem',
-					position: 1,
-					name: SITE_NAME,
-					item: `${SITE_URL}/`,
-				},
-				{
-					'@type': 'ListItem',
-					position: 2,
-					name: person.name,
-					item: personUrl,
-				},
+				createBreadcrumbListItem(1, SITE_NAME, `${SITE_URL}/`),
+				createBreadcrumbListItem(2, person.name, personUrl),
 			],
 		},
 	];

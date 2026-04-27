@@ -2834,6 +2834,16 @@ img {
 		inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
+.movie-detail__person-card--profile {
+	border-color: rgba(255, 176, 137, 0.2);
+	background:
+		linear-gradient(180deg, rgba(255, 176, 137, 0.14), rgba(117, 153, 255, 0.05)),
+		rgba(8, 12, 18, 0.58);
+	box-shadow:
+		0 14px 28px rgba(0, 0, 0, 0.26),
+		inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
 .movie-detail__person-avatar {
 	display: block;
 	position: relative;
@@ -2889,6 +2899,14 @@ img {
 	min-width: 0;
 }
 
+.movie-detail__person-badge-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.4rem 0.5rem;
+	margin: 0;
+}
+
 .movie-detail__person-role {
 	margin: 0;
 	font-size: 0.7rem;
@@ -2896,6 +2914,20 @@ img {
 	letter-spacing: 0.08em;
 	color: #91a0ba;
 	font-family: var(--font-mono);
+}
+
+.movie-detail__person-flag {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.13rem 0.36rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 176, 137, 0.18);
+	background: rgba(255, 176, 137, 0.09);
+	color: #f8dccc;
+	font-size: 0.54rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 }
 
 .movie-detail__person-name {

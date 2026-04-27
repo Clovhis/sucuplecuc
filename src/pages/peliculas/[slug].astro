@@ -350,11 +350,10 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							)
 						}
 						<section class="movie-detail__value-card" aria-labelledby={`movie-value-${movie.slug}`}>
-							<p class="movie-detail__value-kicker">Valor editorial</p>
-							<h2 id={`movie-value-${movie.slug}`}>Por que esta ficha suma algo propio</h2>
+							<h2 id={`movie-value-${movie.slug}`} class="u-visually-hidden">Contexto editorial de la ficha</h2>
 							{movieValueGuide.blocks.map((block) => (
 								<section class="movie-detail__value-block">
-									<h3>{block.title}</h3>
+									{block.title && <h3>{block.title}</h3>}
 									{block.paragraphs.map((paragraph) => (
 										<p>{paragraph}</p>
 									))}
@@ -374,7 +373,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 									<ul class="movie-detail__people-grid" role="list">
 												{peopleGroups.directors.map((person) => (
 													<li>
-														<article class="movie-detail__person-card">
+														<article
+															class={`movie-detail__person-card${person.profilePath ? ' movie-detail__person-card--profile' : ''}`}
+														>
 															{
 																person.profilePath ? (
 																	<a
@@ -424,6 +425,13 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																		)
 																	}
 																</p>
+																{
+																	person.profilePath && (
+																		<p class="movie-detail__person-badge-row">
+																			<span class="movie-detail__person-flag">Bio disponible</span>
+																		</p>
+																	)
+																}
 																<p class="movie-detail__person-meta">
 																	{getBirthSummary(person) ? (
 																		<>
@@ -466,7 +474,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 									<ul class="movie-detail__people-grid" role="list">
 												{peopleGroups.cast.map((person) => (
 													<li>
-														<article class="movie-detail__person-card">
+														<article
+															class={`movie-detail__person-card${person.profilePath ? ' movie-detail__person-card--profile' : ''}`}
+														>
 															{
 																person.profilePath ? (
 																	<a
@@ -501,6 +511,13 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																)
 															}
 															<div class="movie-detail__person-copy">
+																{
+																	person.profilePath && (
+																		<p class="movie-detail__person-badge-row">
+																			<span class="movie-detail__person-flag">Bio disponible</span>
+																		</p>
+																	)
+																}
 																<p class="movie-detail__person-name">
 																	{
 																		person.profilePath ? (
