@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-26. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-27. Fuente: src/data/movies/*.json
 
-Total de peliculas: 715
+Total de peliculas: 732
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -286,6 +286,7 @@ Total de peliculas: 715
 | 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus | +13 |
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus | +13 |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus | +13 |
+| 2019 | Dumbo | dumbo-2019 | Fantasia | Disney Plus | ATP |
 | 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Stremio | +13 |
 | 2019 | Fast & Furious Presents: Hobbs & Shaw | fast-and-furious-presents-hobbs-and-shaw-2019 | Accion | Prime Video | +13 |
 | 2019 | How to Train Your Dragon: The Hidden World | how-to-train-your-dragon-the-hidden-world-2019 | Animacion | Stremio | ATP |
@@ -348,6 +349,7 @@ Total de peliculas: 715
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus | +13 |
 | 2016 | Fantastic Beasts and Where to Find Them | fantastic-beasts-and-where-to-find-them-2016 | Fantasia | HBO Max | +12 |
 | 2016 | La La Land | la-la-land-2016 | Musical | Prime Video | +13 |
+| 2016 | Miss Peregrine's Home for Peculiar Children | miss-peregrines-home-for-peculiar-children-2016 | Fantasia | Disney Plus | +13 |
 | 2016 | Moonlight | moonlight-2016 | Drama | Prime Video | +17 |
 | 2016 | Rogue One: A Star Wars Story | rogue-one-a-star-wars-story-2016 | Ciencia ficcion | Disney Plus | +13 |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Stremio | +13 |
@@ -369,6 +371,7 @@ Total de peliculas: 715
 | 2015 | The Hateful Eight | the-hateful-eight-2015 | Thriller | Prime Video | +17 |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus | +12 |
 | 2014 | Betibú | betibu-2014 | Thriller | Stremio | +12 |
+| 2014 | Big Eyes | big-eyes-2014 | Drama | Stremio | +13 |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus | ATP |
 | 2014 | Birdman or (The Unexpected Virtue of Ignorance) | birdman-or-the-unexpected-virtue-of-ignorance-2014 | Drama | Disney Plus | +16 |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus | +13 |
@@ -395,7 +398,9 @@ Total de peliculas: 715
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus | +13 |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus | +13 |
 | 2012 | Argo | argo-2012 | Thriller | Netflix + Mercado Play | +17 |
+| 2012 | Dark Shadows | dark-shadows-2012 | Comedia | Stremio | +13 |
 | 2012 | Django Unchained | django-unchained-2012 | Drama | Prime Video | +16 |
+| 2012 | Frankenweenie | frankenweenie-2012 | Animacion | Disney Plus | ATP |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
 | 2012 | Skyfall | skyfall-2012 | Accion | Netflix | +12 |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video | +13 |
@@ -417,6 +422,7 @@ Total de peliculas: 715
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus | +13 |
+| 2010 | Alice in Wonderland | alice-in-wonderland-2010 | Fantasia | Disney Plus | ATP |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
 | 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max | +12 |
 | 2010 | How to Train Your Dragon | how-to-train-your-dragon-2010 | Animacion | Stremio | ATP |
@@ -458,6 +464,7 @@ Total de peliculas: 715
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus | +13 |
 | 2007 | Ratatouille | ratatouille-2007 | Animacion | Disney Plus | ATP |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
+| 2007 | Sweeney Todd: The Demon Barber of Fleet Street | sweeney-todd-the-demon-barber-of-fleet-street-2007 | Musical | Stremio | +17 |
 | 2006 | Casino Royale | casino-royale-2006 | Accion | Netflix | +12 |
 | 2006 | Mission: Impossible III | mission-impossible-iii-2006 | Accion | Disney Plus | +13 |
 | 2006 | Paprika | paprika-2006 | Anime | Stremio | +13 |
@@ -471,7 +478,9 @@ Total de peliculas: 715
 | 2006 | The Prestige | the-prestige-2006 | Thriller | HBO Max | +13 |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus | +13 |
 | 2005 | Batman Begins | batman-begins-2005 | Drama | Netflix | +13 |
+| 2005 | Charlie and the Chocolate Factory | charlie-and-the-chocolate-factory-2005 | Fantasia | HBO Max | ATP |
 | 2005 | Constantine | constantine-2005 | Terror | HBO Max | +17 |
+| 2005 | Corpse Bride | corpse-bride-2005 | Animacion | HBO Max | ATP |
 | 2005 | Crash | crash-2005 | Drama | Prime Video | +17 |
 | 2005 | El aura | el-aura-2005 | Thriller | HBO Max | +18 |
 | 2005 | Elektra | elektra-2005 | Accion | Netflix + Prime Video | +13 |
@@ -492,6 +501,7 @@ Total de peliculas: 715
 | 2004 | The Incredibles | the-incredibles-2004 | Animacion | Disney Plus | ATP |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max | +16 |
 | 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Stremio | +13 |
+| 2003 | Big Fish | big-fish-2003 | Drama | Stremio | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
 | 2003 | Finding Nemo | finding-nemo-2003 | Animacion | Disney Plus | ATP |
 | 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | HBO Max | +17 |
@@ -523,6 +533,7 @@ Total de peliculas: 715
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video | +13 |
 | 2001 | Millennium Actress | millennium-actress-2001 | Anime | Stremio | +13 |
 | 2001 | Monsters, Inc. | monsters-inc-2001 | Animacion | Disney Plus | ATP |
+| 2001 | Planet of the Apes | planet-of-the-apes-2001 | Ciencia ficcion | Disney Plus | +13 |
 | 2001 | Shrek | shrek-2001 | Animacion | Netflix + HBO Max | ATP |
 | 2001 | Spirited Away | spirited-away-2001 | Anime | Netflix | ATP |
 | 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Stremio | +13 |
@@ -536,6 +547,7 @@ Total de peliculas: 715
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus | +13 |
 | 1999 | American Beauty | american-beauty-1999 | Drama | Paramount Plus + Mercado Play | +16 |
 | 1999 | Fight Club | fight-club-1999 | Drama | Prime Video | +18 |
+| 1999 | Sleepy Hollow | sleepy-hollow-1999 | Terror | Stremio | +17 |
 | 1999 | Star Wars: Episode I - The Phantom Menace | star-wars-episode-i-the-phantom-menace-1999 | Ciencia ficcion | Disney Plus | ATP |
 | 1999 | The Matrix | the-matrix-1999 | Ciencia ficcion | Netflix | +13 |
 | 1999 | The Sixth Sense | the-sixth-sense-1999 | Thriller | Stremio | +13 |
@@ -554,6 +566,7 @@ Total de peliculas: 715
 | 1997 | Scream 2 | scream-2-1997 | Terror | Paramount Plus | +16 |
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video | +13 |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus | +13 |
+| 1996 | Mars Attacks! | mars-attacks-1996 | Ciencia ficcion | Stremio | +13 |
 | 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Stremio | +13 |
 | 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Paramount Plus + Mercado Play | +16 |
 | 1996 | The English Patient | the-english-patient-1996 | Drama | Stremio | +17 |
@@ -564,6 +577,7 @@ Total de peliculas: 715
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Stremio | +17 |
 | 1995 | Se7en | se7en-1995 | Thriller | HBO Max | +18 |
 | 1995 | Toy Story | toy-story-1995 | Animacion | Disney Plus | ATP |
+| 1994 | Ed Wood | ed-wood-1994 | Biografica | Stremio | +17 |
 | 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Paramount Plus + Mercado Play | +13 |
 | 1994 | La nueva pesadilla de Wes Craven | wes-craven-s-new-nightmare-1994 | Terror | Stremio | +17 |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix | +18 |
@@ -584,6 +598,7 @@ Total de peliculas: 715
 | 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Stremio | ATP |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus | +13 |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Stremio | +13 |
+| 1990 | Edward Scissorhands | edward-scissorhands-1990 | Fantasia | Stremio | +13 |
 | 1990 | Goodfellas | goodfellas-1990 | Crimen | Netflix + Prime Video | +18 |
 | 1990 | Home Alone | home-alone-1990 | Comedia | Disney Plus | ATP |
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Stremio | +17 |
@@ -599,6 +614,7 @@ Total de peliculas: 715
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus | +17 |
 | 1989 | Viernes 13. Parte VIII: Jason vuelve... para siempre | friday-the-13th-part-viii-jason-takes-manhattan-1989 | Terror | Stremio | +18 |
 | 1988 | Akira | akira-1988 | Anime | Netflix | +17 |
+| 1988 | Beetlejuice | beetlejuice-1988 | Comedia | HBO Max | +13 |
 | 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix | +13 |
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Stremio | +17 |
 | 1988 | Muñeco diabólico | child-s-play-1988 | Terror | Prime Video | +16 |
@@ -621,6 +637,7 @@ Total de peliculas: 715
 | 1985 | La historia oficial | la-historia-oficial-1985 | Drama | Stremio | +18 |
 | 1985 | Mad Max Beyond Thunderdome | mad-max-beyond-thunderdome-1985 | Accion | HBO Max | +15 |
 | 1985 | Out of Africa | out-of-africa-1985 | Drama | Stremio | ATP |
+| 1985 | Pee-wee's Big Adventure | pee-wees-big-adventure-1985 | Comedia | Stremio | ATP |
 | 1985 | Rocky IV | rocky-iv-1985 | Drama | Stremio | ATP |
 | 1985 | Viernes 13. Parte V: Un nuevo comienzo | friday-the-13th-a-new-beginning-1985 | Terror | Stremio | +18 |
 | 1984 | Amadeus | amadeus-1984 | Drama | Stremio | ATP |
