@@ -85,6 +85,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
 	const peopleShowcaseGrid = document.querySelector<HTMLElement>('[data-home-people-grid]');
+	const searchResultsGrid = document.querySelector<HTMLElement>('[data-movie-search-grid]');
 
 	if (!(input instanceof HTMLInputElement)) {
 		return;
@@ -180,6 +181,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		query.length === 0
 			? []
 			: [...personIndex.filter((entry) => entry.searchable.includes(query)), ...matchingMovies];
+
+	const isDesktopSearchLayout = (): boolean => window.matchMedia('(min-width: 721px)').matches;
+
+	const getScrollBehavior = (): ScrollBehavior =>
+		window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
 	const renderPeopleShowcase = (): void => {
 		if (!(peopleShowcaseGrid instanceof HTMLElement) || personIndex.length === 0) {
@@ -651,6 +657,39 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}, 120);
 	};
 
+	const scrollToVisibleSearchResults = (): void => {
+		if (!isDesktopSearchLayout()) return;
+
+		const firstVisibleResult = getVisibleEntries()[0]?.element;
+		const scrollTarget = firstVisibleResult ?? searchResultsGrid;
+		if (!(scrollTarget instanceof HTMLElement)) return;
+
+		window.requestAnimationFrame(() => {
+			const targetTop = Math.max(0, scrollTarget.getBoundingClientRect().top + window.scrollY - 16);
+			window.scrollTo({
+				top: targetTop,
+				left: 0,
+				behavior: getScrollBehavior(),
+			});
+		});
+	};
+
+	const confirmDesktopSearch = (): void => {
+		if (!isDesktopSearchLayout() || input.value.trim().length === 0) return;
+
+		window.clearTimeout(filterTimer);
+		window.cancelAnimationFrame(filterFrame);
+
+		const visibleCount = runFilter(true);
+		persistHomeState();
+		syncStatusWithVisiblePosters('search', visibleCount);
+		hideSuggestions();
+
+		if (visibleCount > 0) {
+			scrollToVisibleSearchResults();
+		}
+	};
+
 	const restoreHomeState = (): void => {
 		let parsed: Partial<HomeState> | null = null;
 
@@ -776,6 +815,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	});
 
 	input.addEventListener('keydown', (event: KeyboardEvent) => {
+		if (
+			event.key === 'Enter' &&
+			activeSuggestionIndex < 0 &&
+			input.value.trim().length > 0 &&
+			isDesktopSearchLayout()
+		) {
+			event.preventDefault();
+			confirmDesktopSearch();
+			return;
+		}
+
 		if (currentSuggestions.length === 0) {
 			if (event.key === 'Escape') {
 				hideSuggestions();
