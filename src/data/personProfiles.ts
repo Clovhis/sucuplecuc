@@ -1293,6 +1293,14 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'adrien-brody': {
 		birthPlace: 'Newhaven, Nueva York',
 	},
+	'alan-arkin': {
+		birthPlace: 'Nueva York',
+		biography: [
+			'Alan Arkin nacio el 26 de marzo de 1934 en Nueva York y armo una carrera rarisima de extensa porque antes de consolidarse como actor tambien paso por la musica folk, la comedia en vivo y el teatro. Fue parte de la primera generacion de Second City y despues dio el salto a Broadway con Enter Laughing, papel que le hizo ganar un Tony y lo marco enseguida como un interprete con timing muy preciso.',
+			'En cine encontro rapido un lugar singular: podia ser gracioso, nervioso o directamente devastador sin cambiar demasiado el tono de voz. The Russians Are Coming, The Russians Are Coming y The Heart Is a Lonely Hunter lo instalaron como un actor serio de primera linea, y en las decadas siguientes sostuvo una filmografia muy amplia que va de Catch-22 y Glengarry Glen Ross a Grosse Pointe Blank y Little Miss Sunshine.',
+			'Con Little Miss Sunshine gano finalmente el Oscar, ya convertido en una especie de referencia secreta para varias generaciones de actores. Su presencia tenia algo seco y humano al mismo tiempo, ideal para personajes cansados, ironicos o apenas corridos del centro, y por eso tambien funciono tan bien en trabajos tardios como Argo o en su costado mas ligero dentro del cine familiar y de estudio.',
+		],
+	},
 	'alberto-ammann': {
 		birthPlace: 'Córdoba, Argentina',
 	},
@@ -1316,6 +1324,14 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	},
 	'andy-serkis': {
 		birthPlace: 'Ruislip, Middlesex, Inglaterra',
+	},
+	'annette-bening': {
+		birthPlace: 'Topeka, Kansas',
+		biography: [
+			'Annette Bening nacio el 29 de mayo de 1958 en Topeka, Kansas, y crecio sobre todo en San Diego. Antes de afirmarse en cine se formo en teatro, estudio en San Francisco State University y paso por el circuito escenico de Colorado Shakespeare Festival y del American Conservatory Theater, una base muy visible en la precision con la que trabaja la voz y el ritmo.',
+			'El salto fuerte llego con The Grifters a comienzos de los noventa, y desde ahi construyo una carrera muy solida en drama adulto y comedia filosa. American Beauty, Being Julia, The Kids Are All Right, 20th Century Women y Nyad muestran bien esa mezcla de inteligencia, ironia y vulnerabilidad que la volvio una actriz de enorme prestigio.',
+			'Bening fue nominada varias veces al Oscar y gano Globos de Oro por trabajos como Being Julia y The Kids Are All Right. Incluso cuando aparece en proyectos mas grandes o satiricos, como Mars Attacks!, mantiene una presencia muy clara: nunca sobreactua, pero siempre deja la sensacion de que entiende mejor que nadie el tono de la pelicula.',
+		],
 	},
 	'anthony-mackie': {
 		birthPlace: 'Nueva Orleans, Luisiana',
@@ -1347,7 +1363,7 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 			'Ariana Grande-Butera nació el 26 de junio de 1993 en Boca Ratón, Florida, y antes de convertirse en una figura central del pop ya venía de una formación muy ligada al teatro musical. Debutó en Broadway en 2008 con 13 y ganó visibilidad televisiva a partir de Victorious, donde su registro vocal empezó a quedar tan presente como su perfil de actriz.',
 			'Su carrera musical la llevó a una escala global con discos como Yours Truly, My Everything, Dangerous Woman, Sweetener, Thank U, Next, Positions y Eternal Sunshine. En ese camino armó una identidad muy reconocible: voz de soprano, producción pop y R&B, una imagen visual hipercontrolada y una relación directa con fandoms masivos.',
 			'El regreso fuerte al cine llegó con Wicked, donde interpretó a Glinda en la adaptación de Jon M. Chu junto a Cynthia Erivo. El papel no funcionó como cameo de celebridad: conectó su origen teatral, su disciplina vocal y su capacidad para sostener comedia, artificio y vulnerabilidad dentro de un musical de gran escala.',
-			'En Cine Posta, Ariana queda conectada sobre todo con Wicked y Wicked: For Good. Su ficha importa porque marca el punto en el que una estrella pop enorme vuelve a ser leída como actriz de musical, con nominaciones importantes por Wicked y un lugar nuevo dentro del cine comercial contemporáneo.',
+			'En Cine Posta, Ariana queda conectada sobre todo con Wicked y Wicked: For Good. Su ficha importa porque marca el punto en el que una estrella pop enorme vuelve a ser leída como actriz de musical, con nominaciones importantes por Wicked y un lugar nuevo dentro del cine comercial contemporáneo.'
 		],
 	},
 	'arnold-schwarzenegger': {
@@ -1451,6 +1467,14 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'carrie-fisher': {
 		birthPlace: 'Burbank, California',
 	},
+	'catherine-o-hara': {
+		birthPlace: 'Toronto',
+		biography: [
+			'Catherine O\'Hara nacio el 4 de marzo de 1954 en Toronto y se formo en la escena de improvisacion canadiense antes de hacerse conocida en SCTV. Esa escuela de comedia le dio algo decisivo para toda su carrera: la capacidad de hacer personajes exagerados sin que pierdan humanidad, incluso cuando estan siempre a un paso del ridiculo.',
+			'Durante los ochenta y noventa dejo una galeria de trabajos muy recordados con Beetlejuice, Home Alone, Waiting for Guffman y Best in Show, ademas de una veta muy fuerte como actriz de voz. En el universo de Tim Burton tambien quedo asociada a Frankenweenie, donde esa mezcla de excentricidad y ternura le sienta perfecto.',
+			'Mucho despues encontro una segunda gran oleada de reconocimiento con Moira Rose en Schitt\'s Creek, papel por el que gano el Emmy y volvio a quedar en el centro de la conversacion. Su gracia esta en que puede sonar histrionica, refinada o desquiciada, pero casi siempre consigue que el personaje tenga una vida interior real.',
+		],
+	},
 	'cecilia-dopazo': {
 		birthPlace: 'Argentina',
 	},
@@ -1508,6 +1532,15 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 			'También creó la serie Persons Unknown.',
 			'McQuarrie ganó el premio Óscar al mejor guion original por The Usual Suspects.',
 			'Es colaborador regular del director Bryan Singer, coescribió el guion de Public Access, escribió el de The Usual Suspects, coescribió y produjo Valkyrie y coescribió Jack the Giant Slayer y Al filo del mañana. Su gran éxito fue The Tourist, que recaudó 278 millones de dólares. Como director, escribió y dirigió The Way of the Gun y Jack Reacher.'
+		],
+	},
+	'christopher-plummer': {
+		birthPlace: 'Toronto',
+		biography: [
+			'Arthur Christopher Orme Plummer (Toronto, 13 de diciembre de 1929-Weston, Connecticut, 5 de febrero de 2021) fue un actor canadiense ganador de los cuatro principales galardones interpretativos de Estados Unidos: Óscar, Emmy, Globo de Oro y Tony. Con 82 años, se había convertido en el galardonado más longevo en ganar un Premio Óscar en 2011, tras superar a George Burns y Jessica Tandy, respectivamente, hasta que en 2021 fue superado por Anthony Hopkins, quien obtuvo su segundo galardón a los 83 años. Christopher Plummer, bisnieto del primer ministro de Canadá John Abbot, nació el 13 de diciembre de 1929 en Toronto, ciudad que abandonaría para mudarse con su madre a Senneville, cerca de Montreal.',
+			'De niño estudió para ser pianista, pero pronto nació en él el deseo de ser actor.',
+			'Debido a esta afición, en su juventud conoció a su compatriota, el pianista de jazz Oscar Peterson, al que le unió siempre gran amistad.',
+			'Christopher Plummer nació el 13 de diciembre de 1929 en Toronto.'
 		],
 	},
 	'christopher-reeve': {
@@ -1594,6 +1627,14 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'dev-patel': {
 		birthPlace: 'Harrow, Londres, Inglaterra',
 	},
+	'diane-keaton': {
+		birthPlace: 'Los Ángeles',
+		biography: [
+			'Diane Keaton nacio el 5 de enero de 1946 en Los Angeles y arranco en el teatro musical antes de hacerse visible en Broadway con Hair. Esa base escenica, mezclada con una personalidad muy particular, le dio una voz propia enseguida: insegura, ironica, encantadora y bastante mas precisa de lo que a veces sugiere su imagen descontracturada.',
+			'Su asociacion con el cine de los setenta la volvio una figura central de esa epoca. The Godfather, Sleeper, Love and Death, Annie Hall, Manhattan y Reds muestran como podia moverse entre comedia nerviosa, romance adulto y drama sin perder identidad. Annie Hall le dio el Oscar y termino de fijar una de las mascaras mas influyentes del cine estadounidense moderno.',
+			'Con el tiempo siguio trabajando como actriz y directora, encontrando buenos lugares tanto en comedias como en peliculas mas melancolicas o familiares. Lo interesante en Keaton es que nunca parece estar haciendo una gran demostracion tecnica, pero casi siempre ordena la escena desde el ritmo, las pausas y una mezcla rara de fragilidad y decision.',
+		],
+	},
 	'diego-peretti': {
 		birthPlace: 'Buenos Aires',
 	},
@@ -1651,13 +1692,39 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'emily-blunt': {
 		birthPlace: 'Londres',
 	},
+	'emily-watson': {
+		birthPlace: 'Islington, Londres',
+		biography: [
+			'Emily Margaret Watson (Islington, Londres, 14 de enero de 1967) es una actriz británica de teatro, cine y televisión.',
+			'Inició su carrera en las tablas e ingresó a la Compañía Real de Teatro de Shakespeare en 1992.',
+			'Su rol debut en la película Breaking the Waves de 1996 la convirtió rápidamente en estrella, otorgándole su primera candidatura al premio Óscar.',
+			'Volvió a ser candidata por su papel en la drama Hilary y Jackie en 1998. En 2002 protagonizó con éxito las obras teatrales Noche de reyes y Tío Vania, recibiendo el premio Olivier por la última.'
+		],
+	},
 	'emma-watson': {
 		birthPlace: 'París',
 		biography: [
 			'Emma Charlotte Duerre Watson nació el 15 de abril de 1990 en París y se crió principalmente en Oxfordshire. Saltó a la fama muy joven cuando fue elegida como Hermione Granger en Harry Potter and the Sorcerer\'s Stone, papel que sostuvo durante toda la saga cinematográfica entre 2001 y 2011.',
 			'Después de Harry Potter buscó correrse del encasillamiento con proyectos de distinto tono: The Perks of Being a Wallflower, The Bling Ring, Noah, Beauty and the Beast y Little Women muestran una carrera que combina fenómeno popular, cine de autor accesible y adaptaciones literarias de alto perfil.',
 			'En paralelo mantuvo una vida académica poco habitual para una estrella de franquicia. Estudió literatura inglesa en Brown University y se graduó en 2014, reforzando una imagen pública asociada no solo al cine sino también a la formación intelectual y a una exposición mediática más medida.',
-			'También tuvo un perfil fuerte como activista por la igualdad de género. En 2014 fue nombrada Embajadora de Buena Voluntad de ONU Mujeres y ayudó a lanzar la campaña HeForShe, una iniciativa que buscó involucrar a hombres y niños en la conversación por los derechos de las mujeres.',
+			'También tuvo un perfil fuerte como activista por la igualdad de género. En 2014 fue nombrada Embajadora de Buena Voluntad de ONU Mujeres y ayudó a lanzar la campaña HeForShe, una iniciativa que buscó involucrar a hombres y niños en la conversación por los derechos de las mujeres.'
+		],
+	},
+	'eva-green': {
+		birthPlace: 'París',
+		biography: [
+			'Eva Gaëlle Green (París, 6 de julio de 1980) es una actriz y modelo francesa, hija de la actriz Marlène Jobert.',
+			'Comenzó su carrera en el teatro antes de debutar en el cine con el largometraje de Bernardo Bertolucci Soñadores (2003).',
+			'Obtuvo reconocimiento internacional por su interpretación de Sibila de Jerusalén en el drama histórico de Ridley Scott Kingdom of Heaven (2005).',
+			'El año siguiente interpretó a la chica bond Vesper Lynd en la película del agente 007 Casino Royale (2006), actuación por la que recibió el premio Rising Star otorgado por la Academia Británica de las Artes Cinematográficas y de la Televisión.'
+		],
+	},
+	'eva-marie-saint': {
+		birthPlace: 'Newark, Nueva Jersey',
+		biography: [
+			'Eva Marie Saint nacio el 4 de julio de 1924 en Newark, Nueva Jersey, estudio actuacion en Bowling Green State University y empezo a trabajar muy temprano en radio, television en vivo y teatro. Antes de afirmarse en cine ya venia construyendo prestigio en escena, sobre todo con The Trip to Bountiful, papel que la acerco al salto grande de su carrera.',
+			'Ese salto fue On the Waterfront, donde debuto en cine junto a Marlon Brando y gano el Oscar como actriz de reparto. A partir de ahi quedo asociada a un tipo de presencia clasica pero nada rigida: delicada, inteligente y con una intensidad muy sobria que volvia creibles incluso las escenas mas romanticas o tensas.',
+			'Despues siguio una filmografia muy fuerte con A Hatful of Rain, North by Northwest, Exodus y varias producciones importantes de los cincuenta y sesenta. Hitchcock la eligio para North by Northwest cuando nadie esperaba verla como femme fatale, y esa decision resume bastante bien su gracia: parecia elegante y serena, pero siempre podia dejar ver una veta mas ambigua o filosa de lo que sugeria la superficie.',
 		],
 	},
 	'evangeline-lilly': {
@@ -1671,6 +1738,23 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	},
 	'ewan-mcgregor': {
 		birthPlace: 'Perth',
+	},
+	'f-murray-abraham': {
+		birthPlace: 'Pittsburgh',
+		biography: [
+			'Murray Abraham, registrado al nacer como Murray Abraham (Pittsburgh, Pensilvania, 24 de octubre de 1939), es un actor estadounidense ganador de los premios Óscar y Globo de Oro, por su papel como Antonio Salieri en Amadeus.',
+			'Estudió dos años en el Texas Western College (conocida en la actualidad como la Universidad de Texas en El Paso), donde recibió una mención especial de la sociedad de honor del Alpha Psi Omega (ΑΨΩ), por su interpretación en Comanche Eagle, durante la temporada 1959-1960.',
+			'Participó en varias obras universitarias y acabó viajando a Nueva York para especializarse en interpretación, donde tuvo como profesora a la prestigiosa actriz Uta Hagen.',
+			'F. Murray Abraham nació el 24 de octubre de 1939 en Pittsburgh.'
+		],
+	},
+	'felicity-jones': {
+		birthPlace: 'Birmingham',
+		biography: [
+			'Felicity Jones nacio el 17 de octubre de 1983 en Birmingham y empezo a actuar de chica, primero en talleres y despues en television britanica. Paso por The Worst Witch, radio en la BBC y varios trabajos juveniles mientras estudiaba ingles en Wadham College, Oxford, una combinacion bastante rara entre formacion academica y carrera profesional sostenida desde muy temprano.',
+			'Su nombre empezo a sonar fuerte en cine con Like Crazy, donde gano un premio especial del jurado en Sundance y mostro un registro muy natural, sin grandilocuencia. Ese impulso la llevo a una zona de mayor visibilidad con The Theory of Everything, por la que fue nominada al Oscar interpretando a Jane Hawking, y mas tarde con Rogue One, donde cargo sobre los hombros una superproduccion enorme sin perder delicadeza.',
+			'Lo mejor de Jones aparece cuando trabaja personajes sensibles pero firmes, gente que parece frágil hasta que uno advierte la obstinacion que llevan adentro. Por eso funciona igual de bien en dramas de epoca, ciencia ficcion o cine historico, y por eso su recorrido reciente con The Brutalist sigue pareciendo una extension natural de una carrera construida con bastante criterio.',
+		],
 	},
 	'fernanda-torres': {
 		birthPlace: 'Río de Janeiro',
@@ -1792,6 +1876,15 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'jamie-lee-curtis': {
 		birthPlace: 'Santa Mónica, California',
 	},
+	'jared-leto': {
+		birthPlace: 'Bossier City, Luisiana',
+		biography: [
+			'Jared Joseph Leto (Bossier City, Luisiana, 26 de diciembre de 1971) es un actor, cantante, director y productor estadounidense. Es fundador de la banda de rock alternativo 30 Seconds to Mars y ganador de los premios Óscar, Globo de oro y del SAG.',
+			'Sus primeras participaciones en televisión las realizó en las series Camp Wilder, en 1992, Almost Home, en 1993, y My So-Called Life, en 1994, junto a Claire Danes.',
+			'Desde ese momento la banda fue creciendo en popularidad y reconocimiento en todo el mundo.',
+			'Jared Leto nació el 26 de diciembre de 1971 en Bossier City, Luisiana.'
+		],
+	},
 	'jason-bateman': {
 		birthPlace: 'Rye, Nueva York',
 	},
@@ -1801,8 +1894,24 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'javier-bardem': {
 		birthPlace: 'Las Palmas de Gran Canaria',
 	},
+	'jeff-bridges': {
+		birthPlace: 'Los Ángeles, California',
+		biography: [
+			'Jeff Bridges nacio el 4 de diciembre de 1949 en Los Angeles dentro de una familia completamente ligada al oficio: su padre fue Lloyd Bridges y su hermano Beau tambien hizo carrera en la actuacion. Empezo a aparecer en pantalla desde muy chico y despues se formo con mas seriedad antes de entrar de lleno en el cine de los setenta.',
+			'Su consolidacion llego temprano con The Last Picture Show, que le dio su primera nominacion al Oscar, y siguio con una filmografia muy variada donde entran Starman, The Fabulous Baker Boys, The Fisher King y The Big Lebowski. Bridges tiene algo raro: puede parecer relajadisimo, pero siempre transmite que el personaje esta pensando mas de lo que dice.',
+			'Con Crazy Heart gano finalmente el Oscar y reafirmo una carrera larguisima que tambien supo convivir con el blockbuster, de TRON a Iron Man. Incluso cuando trabaja en registros muy distintos, mantiene esa mezcla de calma, desgaste y humor seco que lo vuelve uno de los rostros mas queridos y confiables del cine estadounidense.',
+		],
+	},
 	'jeff-goldblum': {
 		birthPlace: 'West Homestead, PA, Estados Unidos',
+	},
+	'jeffrey-wright': {
+		birthPlace: 'Washington D. C.',
+		biography: [
+			'Jeffrey Wright nacio el 7 de diciembre de 1965 en Washington D. C. y estudio en Amherst College antes de correrse hacia la actuacion. Muy pronto encontro un lugar fuerte en el teatro neoyorquino, donde se hizo notar por una presencia verbal potentisima y una manera muy concentrada de sostener personajes complejos.',
+			'Su gran irrupcion llego con Angels in America, primero en escena y despues en la version televisiva, trabajo que le dio premios importantes y lo instalo como un actor de enorme prestigio. Desde ahi armo una filmografia muy consistente con Basquiat, Syriana, los Bond de Daniel Craig, The Batman, Westworld y American Fiction, siempre desde una inteligencia expresiva muy marcada.',
+			'Wright no necesita levantar la voz para dominar un plano: suele trabajar desde la precision, el cansancio moral o la tension interior. Por eso funciona tan bien en figuras brillantes pero heridas, como pasa con muchos de sus mejores papeles recientes, y por eso tambien se volvio un nombre tan respetado dentro del cine y la television adulta.',
+		],
 	},
 	'jenna-ortega': {
 		birthPlace: 'Palm Desert, California',
@@ -1817,6 +1926,14 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 			'Su familia es metodista. A los tres años de edad comenzó a recibir clases de ballet, actividad que continuaría durante su juventud.',
 			'Ansiosa por ganar experiencia, Garner visita a su amigo Clayton Kirlew en Nueva York en 1995, y decide quedarse para intentar conseguir algún papel en el teatro.',
 			'Jennifer Garner nació el 17 de abril de 1972 en Houston, Texas.'
+		],
+	},
+	'jennifer-tilly': {
+		birthPlace: 'Harbor City, California',
+		biography: [
+			'Jennifer Tilly nacio el 16 de septiembre de 1958 en Harbor City, California, y se crio entre California y Canada en una familia donde la actuacion no era algo lejano. Estudio teatro y fue armando una carrera muy personal gracias a una voz inconfundible, un timing de comedia muy fisico y una facilidad rara para llevar personajes exagerados sin que pierdan encanto.',
+			'El gran salto llego en los noventa con Bullets Over Broadway, que le dio una nominacion al Oscar, y enseguida amplio su lugar con peliculas como Bound, Liar Liar y varios thrillers o comedias negras. En paralelo encontro una zona propia en el terror pop al convertir a Tiffany en uno de los rostros mas recordados de la saga de Chucky.',
+			'Ademas de su trabajo en cine, sostuvo durante anos la voz de Bonnie en Family Guy y construyo una segunda identidad publica como jugadora profesional de poker. Esa mezcla de glamour, humor camp y total conciencia del artificio explica por que Tilly sigue siendo una presencia tan querida en el cruce entre culto, mainstream y genero.',
 		],
 	},
 	'jeremy-renner': {
@@ -1857,14 +1974,48 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'john-david-washington': {
 		birthPlace: 'Los Ángeles, California',
 	},
+	'john-goodman': {
+		birthPlace: 'Affton, Misuri',
+		biography: [
+			'John Goodman nacio el 20 de junio de 1952 en Affton, Misuri, y llego a la actuacion despues de estudiar teatro y jugar al futbol americano en la universidad. Se instalo en Nueva York a mediados de los setenta y paso varios anos haciendo escena y trabajos publicitarios antes de empezar a encontrar papeles cada vez mas visibles en cine y television.',
+			'La popularidad masiva le llego con Roseanne, serie que lo volvio una cara central de la television estadounidense y le dio el Globo de Oro. En paralelo fue armando una relacion muy fuerte con los hermanos Coen en peliculas como Raising Arizona, Barton Fink, The Big Lebowski y O Brother, Where Art Thou?, donde su presencia podia ser comica, inquietante o directamente brutal.',
+			'Goodman tambien sostuvo una carrera enorme en animacion y cine de estudio, con Monsters, Inc., The Artist, Flight, 10 Cloverfield Lane y muchos secundarios inolvidables. Lo mejor de el es esa mezcla dificil de volumen fisico, tristeza, humor y amenaza: parece gigantesco incluso cuando el personaje esta roto o completamente a la deriva.',
+		],
+	},
+	'john-malkovich': {
+		birthPlace: 'Christopher, Illinois',
+		biography: [
+			'John Gavin Malkovich (Christopher, Illinois, 9 de diciembre de 1953), conocido como John Malkovich, es un actor, productor, director de cine y diseñador de moda estadounidense.',
+			'Durante un verano, integró un proyecto local de teatro, donde coprotagonizó la obra America Hurrah, de Jean-Claude van Itallie, en 1972.',
+			'Recibió un premio Emmy por Muerte de un viajante y fue nominado a los Premios Óscar por sus papeles en En un lugar del corazón y En la línea de fuego.',
+			'Ha trabajado como actor en más de setenta películas, entre ellas Dangerous Liaisons, El imperio del sol, The Killing Fields, Con Air, Of Mice and Men, Being John Malkovich, Burn After Reading, RED y Warm Bodies, y ha producido películas como Ghost World, Juno y The Perks of Being a Wallflower.'
+		],
+	},
 	'johnny-depp': {
 		birthPlace: 'Owensboro, Kentucky',
 	},
 	'jon-m-chu': {
 		birthPlace: 'Palo Alto',
 	},
+	'jon-voight': {
+		birthPlace: 'Yonkers, Nueva York',
+		biography: [
+			'Jon Voight nacio el 29 de diciembre de 1938 en Yonkers, Nueva York, y se formo en la Catholic University of America antes de empezar a trabajar en teatro y television. Su primera etapa lo mostro como un actor muy fisico y muy serio, con una intensidad que encajaba perfecto en los cambios del cine estadounidense de fines de los sesenta.',
+			'La irrupcion decisiva llego con Midnight Cowboy, donde su Joe Buck se volvio uno de los personajes emblematicos de esa era. En los anos siguientes encadeno trabajos fuertes en Deliverance, Coming Home, por la que gano el Oscar, y Runaway Train, consolidando una imagen de actor capaz de combinar fragilidad, ferocidad y una energia muy expuesta.',
+			'Con el tiempo paso a ocupar lugares mas maduros o ambiguos en thrillers, dramas politicos y cine comercial. Incluso en peliculas de gran circulacion como Mission: Impossible sigue funcionando por lo mismo que al principio: entra en cuadro y enseguida transmite que el personaje tiene una historia pesada atras, aunque el guion no la explique completa.',
+		],
+	},
 	'jonathan-bailey': {
 		birthPlace: 'Wallingford, Reino Unido',
+	},
+	'joseph-gordon-levitt': {
+		birthPlace: 'Los Ángeles',
+		biography: [
+			'Joseph Leonard Gordon-Levitt (Los Ángeles, 17 de febrero de 1981) es un actor, cantante, director y productor estadounidense.',
+			'De niño, se hizo conocido por sus papeles en las películas Angels in the Outfield, Beethoven, 10 Things I Hate About You y la serie de televisión 3rd Rock from the Sun.',
+			'En 2013 se estrenó su primer largometraje como director, Don Jon\'s Addiction, escrita y protagonizada por él.',
+			'Hizo una pausa en la actuación para estudiar en la Universidad de Columbia, pero abandonó en 2004 para seguir trabajando como actor.'
+		],
 	},
 	'joseph-kosinski': {
 		birthPlace: 'Marshalltown, Iowa,​',
@@ -1908,14 +2059,49 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'keke-palmer': {
 		birthPlace: 'Harvey, Illinois',
 	},
+	'kevin-costner': {
+		birthPlace: 'Lynwood, California',
+		biography: [
+			'Kevin Michael Costner (Lynwood, California, 18 de enero de 1955) es un actor y cineasta estadounidense.',
+			'En televisión, Costner interpretó a Devil Anse Hatfield en la miniserie Hatfields & McCoys (2012), por la que ganó el Premio Emmy al Mejor Actor Principal en una Miniserie o Película para Televisión.',
+			'Ha recibido numerosos reconocimientos, incluidos dos Premios Óscar, tres Premios Globo de Oro y un Premio Primetime Emmy.',
+			'Costner alcanzó la fama protagonizando películas como Los intocables (1987), Bull Durham (1988), Field of Dreams (1989), JFK (1991), Robin Hood: Prince of Thieves (1991), El guardaespaldas (1992) y A Perfect World (1993).'
+		],
+	},
 	'kieran-culkin': {
 		birthPlace: 'Nueva York',
+	},
+	'kim-basinger': {
+		birthPlace: 'Athens, Georgia',
+		biography: [
+			'Kim Basinger nacio el 8 de diciembre de 1953 en Athens, Georgia, y primero se hizo conocida como modelo antes de pasar a la actuacion en television y cine. Esa etapa inicial la volvio un icono visual de los ochenta, pero enseguida mostro que habia algo mas interesante que la simple imagen de sex symbol.',
+			'Su despegue cinematografico se dio con Never Say Never Again, The Natural y 9 1/2 Weeks, peliculas que fijaron su mezcla de glamour clasico, fragilidad y erotismo. Mas tarde encontro uno de sus papeles mas populares en Batman y su gran consagracion critica con L.A. Confidential, donde gano el Oscar como actriz de reparto interpretando a una figura que jugaba justamente con su propia imagen publica.',
+			'Basinger se movio con soltura entre thriller, noir, drama y cine comercial, siempre con una presencia un poco distante que la hacia distinta a otras estrellas de su epoca. Incluso cuando la pelicula no estaba a su altura, solia aportar una tension elegante y una melancolia muy utiles para personajes deseados, observados o directamente subestimados.',
+		],
 	},
 	'kirsten-dunst': {
 		birthPlace: 'Point Pleasant, Nueva Jersey',
 	},
+	'kris-kristofferson': {
+		birthPlace: 'Brownsville, Texas',
+		biography: [
+			'Kristoffer Kristofferson (Brownsville, Texas; 22 de junio de 1936-Hana, Hawái; 28 de septiembre de 2024) fue compositor de música country, actor y cantante estadounidense ilustre por canciones como Me and Bobby McGee, For the Good Times, Sunday Mornin\' Comin\' Down, y Help Me Make It Through the Night.',
+			'Kristoffer Kristofferson, nació el 22 de junio de 1936 en Brownsville (Texas), hijo de Mary Ann y de Lars Henry Kristofferson, un oficial del Cuerpo Aéreo del Ejército de los Estados Unidos y posterior General de la Fuerza aérea de los Estados Unidos. Sus abuelos paternos habían emigrado desde Suecia, mientras que su familia materna es de ascendencia neerlandesa. Durante su infancia, su padre le animó a emprender la carrera militar. Kristofferson cambió frecuentemente de localidad durante su infancia, hasta fijar su residencia en San Mateo, California, en cuya escuela secundaria se graduó.',
+			'En 2004, entró en el Museo y Salón de la Fama del Country.',
+			'Kris Kristofferson nació el 22 de junio de 1936 en Brownsville, Texas.'
+		],
+	},
 	'kristen-wiig': {
 		birthPlace: 'Canandaigua, Nueva York',
+	},
+	'laura-dern': {
+		birthPlace: 'Los Ángeles',
+		biography: [
+			'Laura Elizabeth Dern (Los Ángeles, 10 de febrero de 1967) es una actriz y productora estadounidense.',
+			'Después de ganar dos Globos de Oro por su interpretación de Katherine Harris en la película para televisión Recount (2008) y Amy Jellicoe en la serie de comedia dramática Enlightened (2011–2013), Dern obtuvo su segunda nominación al Premio Óscar por su trabajo en la película biográfica Alma salvaje (2014).',
+			'Ha recibido numerosos galardones, incluido un Premio Óscar, un Premios Primetime Emmy, un Premio BAFTA y cinco Globos de Oro.',
+			'Laura Dern nació el 10 de febrero de 1967 en Los Ángeles.'
+		],
 	},
 	'laurence-fishburne': {
 		birthPlace: 'Augusta, Georgia',
@@ -1979,6 +2165,14 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	'mark-ruffalo': {
 		birthPlace: 'Kenosha, Wisconsin',
 	},
+	'mark-wahlberg': {
+		birthPlace: 'Boston, Massachusetts',
+		biography: [
+			'Mark Wahlberg nacio el 5 de junio de 1971 en Boston, Massachusetts, y su primera fama no vino del cine sino de la musica y la cultura pop de los noventa. Bajo el nombre Marky Mark lidero Marky Mark and the Funky Bunch, pego con temas como Good Vibrations y construyo una imagen publica muy fuerte antes de empezar a correrse hacia la actuacion.',
+			'El salto real llego cuando encontro directores que supieron usar mejor su energia fisica y su costado medio canchero. Boogie Nights fue el punto de quiebre, porque mostro que podia sostener un personaje mas complejo de lo que muchos suponian, y despues siguio afirmandose con Three Kings, The Perfect Storm, Planet of the Apes, The Departed y The Fighter, pelicula por la que tambien quedo ligado a una etapa de mayor prestigio industrial.',
+			'Con el tiempo armo una carrera muy peculiar entre policial, accion, comedia y produccion, siempre con algo de estrella popular que no necesita volverse demasiado sofisticada para funcionar. Puede ser un tipo duro, un improvisado simpatico o un protagonista de estudio bastante clasico, y justamente esa elasticidad explica por que siguio encontrando lugar tanto en franquicias como en peliculas mas ligadas al drama adulto.',
+		],
+	},
 	'marlon-brando': {
 		birthPlace: 'Omaha, Nebraska',
 	},
@@ -2011,6 +2205,14 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	},
 	'michael-caine': {
 		birthPlace: 'Rotherhithe',
+	},
+	'michael-clarke-duncan': {
+		birthPlace: 'Chicago',
+		biography: [
+			'Michael Clarke Duncan nacio el 10 de diciembre de 1957 en Chicago y llego tarde a la actuacion despues de pasar por trabajos fisicos muy duros y por tareas de seguridad para distintas celebridades. Esa experiencia previa le dio una presencia de cuerpo enorme y una gravedad natural que enseguida se notaban cuando aparecia en pantalla, incluso antes de conseguir papeles importantes.',
+			'Despues de algunas participaciones breves, el primer empujon fuerte llego con Armageddon, donde Michael Bay supo aprovechar su porte como pocos. Pero la consagracion total fue The Green Mile: su John Coffey combinaba tamaño, ternura y dolor con una delicadeza muy rara, y por ese trabajo recibio la nominacion al Oscar que termino de fijar su lugar dentro de Hollywood.',
+			'Mas tarde sostuvo una filmografia muy popular con Planet of the Apes, Daredevil, Sin City, The Scorpion King y varios trabajos de voz. Duncan tenia algo dificil de repetir: podia imponer amenaza inmediata y, al mismo tiempo, transmitir una bondad casi infantil, una dualidad que explica por que sigue siendo tan recordado mucho mas alla de haber tenido una carrera relativamente corta.',
+		],
 	},
 	'michael-fassbender': {
 		birthPlace: 'Heidelberg, República Federal de Alemania',
@@ -2259,6 +2461,15 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	},
 	'sylvester-stallone': {
 		birthPlace: 'Nueva York',
+	},
+	'talia-shire': {
+		birthPlace: 'Lake Success, Nueva York',
+		biography: [
+			'Talia Rose Coppola (Lake Success, Nueva York, 25 de abril de 1946), conocida como Talia Shire, es una actriz estadounidense.',
+			'Seguiría haciendo el papel de Adrianna en la serie de películas de Rocky.',
+			'Sus papeles más conocidos son como Connie Corleone en El padrino y Adrianna Pennino Balboa en la saga de Rocky.',
+			'Talia Rose Coppola nació en Lake Success, Nueva York, hija de Italia Pennino Coppola y el compositor Carmine Coppola. Es hermana del director y productor Francis Ford Coppola, y tía del actor Nicolas Cage y de la directora Sofia Coppola.'
+		],
 	},
 	'tessa-thompson': {
 		birthPlace: 'Los Ángeles, California',
@@ -5751,6 +5962,213 @@ const bulkRequestedProfiles = {
 				'https://www.goldenglobes.com/person/eddie-murphy',
 			],
 		},
+		{
+			slug: 'mark-wahlberg',
+			name: 'Mark Wahlberg',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mark%20Wahlberg%202021.jpg?width=640',
+			headline: 'Actor de fisico de estrella y energia de barrio que pudo moverse del policial y la accion al drama de prestigio.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor de reparto', work: 'The Departed', year: 2007 }],
+			knownFor: ['planet-of-the-apes-2001', 'uncharted-2022'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Mark_Wahlberg',
+				'https://www.wikidata.org/wiki/Q164119',
+				'https://www.imdb.com/name/nm0000242/',
+			],
+		},
+		{
+			slug: 'michael-clarke-duncan',
+			name: 'Michael Clarke Duncan',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/MClarkeDuncan021109-R106%20(50094589037).jpg?width=640',
+			headline:
+				'Presencia imponente y voz inconfundible, capaz de volver entranable o amenazante a cualquier personaje secundario.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor de reparto', work: 'The Green Mile', year: 2000 }],
+			knownFor: ['daredevil-2003', 'planet-of-the-apes-2001'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Michael_Clarke_Duncan',
+				'https://www.wikidata.org/wiki/Q483148',
+				'https://www.imdb.com/name/nm0003817/',
+			],
+		},
+		{
+			slug: 'kris-kristofferson',
+			name: 'Kris Kristofferson',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Kris%20Kristofferson%20SXSW%202006%20crop.jpg?width=640',
+			headline: 'Figura singular que unio musica, cine y una autoridad tranquila muy dificil de imitar.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en comedia o musical', work: 'A Star Is Born', year: 1977 }],
+			knownFor: ['blade-1998', 'blade-ii-2002', 'planet-of-the-apes-2001'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Kris_Kristofferson',
+				'https://www.wikidata.org/wiki/Q208681',
+				'https://www.imdb.com/name/nm0001434/',
+			],
+		},
+		{
+			slug: 'alan-arkin',
+			name: 'Alan Arkin',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alan%20Arkin%20-%201975.jpg?width=640',
+			headline:
+				'Actor de enorme precision para la comedia seca, el drama y los personajes cansados que siempre esconden algo mas.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Little Miss Sunshine', year: 2007 }],
+			knownFor: ['argo-2012', 'dumbo-2019'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Alan_Arkin',
+				'https://www.wikidata.org/wiki/Q108283',
+				'https://www.imdb.com/name/nm0000273/',
+			],
+		},
+		{
+			slug: 'f-murray-abraham',
+			name: 'F. Murray Abraham',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/F%20Murray.Abraham%20cropped.jpg?width=640',
+			headline: 'Actor de voz inolvidable y temperamento clasico, ideal para figuras de poder, resentimiento o misterio.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Amadeus', year: 1985 }],
+			knownFor: ['amadeus-1984', 'the-grand-budapest-hotel-2014'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/F._Murray_Abraham',
+				'https://www.wikidata.org/wiki/Q181936',
+				'https://www.imdb.com/name/nm0000719/',
+			],
+		},
+		{
+			slug: 'jeff-bridges',
+			name: 'Jeff Bridges',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeff%20Bridges%20by%20Gage%20Skidmore%203.jpg?width=640',
+			headline: 'Uno de esos actores que pueden parecer relajados y gigantes a la vez, siempre con una humanidad muy clara.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Crazy Heart', year: 2010 }],
+			knownFor: ['iron-man-2008', 'tron-ares-2025'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Jeff_Bridges',
+				'https://www.wikidata.org/wiki/Q174843',
+				'https://www.imdb.com/name/nm0000313/',
+			],
+		},
+		{
+			slug: 'john-malkovich',
+			name: 'John Malkovich',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/John%20Malkovich%2C%20Berlinale%202023%20cropped.jpg?width=640',
+			headline: 'Actor de presencia cerebral y rara, perfecto para personajes sofisticados, perversos o directamente fuera de eje.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actor de reparto', work: 'Places in the Heart', year: 1985 }],
+			knownFor: ['jonah-hex-2010', 'opus-2025'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/John_Malkovich',
+				'https://www.wikidata.org/wiki/Q172261',
+				'https://www.imdb.com/name/nm0000518/',
+			],
+		},
+		{
+			slug: 'jon-voight',
+			name: 'Jon Voight',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jon%20Voight%202011.jpg?width=640',
+			headline:
+				'Nombre central del cine estadounidense de los setenta en adelante, con potencia dramatica y una fisicidad muy reconocible.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Coming Home', year: 1979 }],
+			knownFor: ['midnight-cowboy-1969', 'mission-impossible-1996'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Jon_Voight',
+				'https://www.wikidata.org/wiki/Q167520',
+				'https://www.imdb.com/name/nm0000685/',
+			],
+		},
+		{
+			slug: 'kevin-costner',
+			name: 'Kevin Costner',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kevin%20Costner%202016.jpg?width=640',
+			headline: 'Figura clave del mainstream americano, asociado a heroes sobrios, western y relato clasico de gran escala.',
+			awards: [{ label: 'Oscar', category: 'Mejor director', work: 'Dances with Wolves', year: 1991 }],
+			knownFor: ['dances-with-wolves-1990', 'los-intocables-de-eliot-ness-1987'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Kevin_Costner',
+				'https://www.wikidata.org/wiki/Q11930',
+				'https://www.imdb.com/name/nm0000126/',
+			],
+		},
+		{
+			slug: 'christopher-plummer',
+			name: 'Christopher Plummer',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Plummer%201964.jpg?width=640',
+			headline:
+				'Actor canadiense de elegancia absoluta, capaz de atravesar teatro, cine clasico y prestigio tardio sin perder filo.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Beginners', year: 2012 }],
+			knownFor: ['the-sound-of-music-1965', 'up-2009'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Christopher_Plummer',
+				'https://www.wikidata.org/wiki/Q190523',
+				'https://www.imdb.com/name/nm0001626/',
+			],
+		},
+		{
+			slug: 'jeffrey-wright',
+			name: 'Jeffrey Wright',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20Wright%20cropped%20by%20David%20Shankbone.jpg?width=640',
+			headline: 'Actor de enorme densidad verbal y emocional, muy eficaz para personajes inteligentes, ambiguos o heridos.',
+			awards: [
+				{
+					label: 'Primetime Emmy',
+					category: 'Mejor actor de reparto en miniserie o pelicula',
+					work: 'Angels in America',
+					year: 2004,
+				},
+			],
+			knownFor: ['the-batman-2022', 'el-mago-de-kremlin-2026'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Jeffrey_Wright',
+				'https://www.wikidata.org/wiki/Q343059',
+				'https://www.imdb.com/name/nm0942482/',
+			],
+		},
+		{
+			slug: 'jared-leto',
+			name: 'Jared Leto',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Jared%20Leto%2C%20San%20Diego%20Comic%20Con%202016%20(2).jpg?width=640',
+			headline:
+				'Performer extremo y algo imprevisible, siempre dispuesto a empujar un personaje hacia una zona mas fisica o excéntrica.',
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Dallas Buyers Club', year: 2014 }],
+			knownFor: ['suicide-squad-2016', 'morbius-2022', 'tron-ares-2025'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Jared_Leto',
+				'https://www.wikidata.org/wiki/Q484523',
+				'https://www.imdb.com/name/nm0001467/',
+			],
+		},
+		{
+			slug: 'john-goodman',
+			name: 'John Goodman',
+			profileImage: 'https://media.themoviedb.org/t/p/w500/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg',
+			headline: 'Actor enorme en todos los sentidos, dueno de una mezcla muy rara de calidez, amenaza y timing comico.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actor en serie de comedia', work: 'Roseanne', year: 1993 }],
+			knownFor: ['monsters-inc-2001', 'the-artist-2011'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/John_Goodman',
+				'https://www.wikidata.org/wiki/Q215072',
+				'https://www.imdb.com/name/nm0000422/',
+			],
+		},
+		{
+			slug: 'joseph-gordon-levitt',
+			name: 'Joseph Gordon-Levitt',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Gordon%20Levitt%20Sundance%20Film%20Festival%202026%20(cropped).jpg?width=640',
+			headline: 'Actor muy versatil que paso de promesa juvenil a nombre confiable para thriller, sci-fi y comedia adulta.',
+			awards: [
+				{
+					label: 'Golden Globe',
+					category: 'Nominacion a mejor actor en comedia o musical',
+					work: '500 Days of Summer',
+					year: 2010,
+				},
+			],
+			knownFor: ['inception-2010', 'beverly-hills-cop-axel-f-2024'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Joseph_Gordon-Levitt',
+				'https://www.wikidata.org/wiki/Q177311',
+				'https://www.imdb.com/name/nm0330687/',
+			],
+		},
 	]),
 	...buildCatalogBackedProfiles(globalActressDefaults, [
 		{
@@ -5870,6 +6288,155 @@ const bulkRequestedProfiles = {
 				'https://es.wikipedia.org/wiki/Glenn_Close',
 				'https://www.wikidata.org/wiki/Q372311',
 				'https://www.goldenglobes.com/person/glenn-close',
+			],
+		},
+		{
+			slug: 'kim-basinger',
+			name: 'Kim Basinger',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kim%20Basinger%20-%20The%20Natural.jpg?width=640',
+			headline: 'Actriz y exmodelo que supo mezclar glamour clasico, vulnerabilidad y una veta noir muy efectiva.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'L.A. Confidential', year: 1998 }],
+			knownFor: ['batman-1989'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Kim_Basinger',
+				'https://www.wikidata.org/wiki/Q131380',
+				'https://www.imdb.com/name/nm0000107/',
+			],
+		},
+		{
+			slug: 'eva-green',
+			name: 'Eva Green',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Eva%20Green%20(Headshot).jpg?width=640',
+			headline: 'Actriz de presencia hipnotica, ideal para personajes sensuales, ambiguos o directamente goticos.',
+			awards: [{ label: 'BAFTA', category: 'Rising Star Award', work: 'Trayectoria emergente', year: 2007 }],
+			knownFor: ['casino-royale-2006', 'dark-shadows-2012', 'dumbo-2019'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Eva_Green',
+				'https://www.wikidata.org/wiki/Q191644',
+				'https://www.imdb.com/name/nm1200692/',
+			],
+		},
+		{
+			slug: 'catherine-o-hara',
+			name: "Catherine O'Hara",
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/CATHERINE%20OHARA.jpg?width=640',
+			headline: 'Comediante y actriz de caracter con un talento enorme para el absurdo, la ternura y el detalle desquiciado.',
+			awards: [{ label: 'Primetime Emmy', category: 'Mejor actriz en comedia', work: "Schitt's Creek", year: 2020 }],
+			knownFor: ['beetlejuice-1988', 'beetlejuice-beetlejuice-2024', 'frankenweenie-2012'],
+			referenceUrls: [
+				"https://en.wikipedia.org/wiki/Catherine_O'Hara",
+				'https://www.wikidata.org/wiki/Q233365',
+				'https://www.imdb.com/name/nm0001573/',
+			],
+		},
+		{
+			slug: 'annette-bening',
+			name: 'Annette Bening',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/AnnetteBeningSept2013TIFF.jpg?width=640',
+			headline:
+				'Actriz de enorme refinamiento para drama adulto, comedia filosa y personajes que esconden tension bajo la superficie.',
+			awards: [{ label: 'Golden Globe', category: 'Mejor actriz en drama', work: 'Being Julia', year: 2005 }],
+			knownFor: ['american-beauty-1999', 'mars-attacks-1996'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Annette_Bening',
+				'https://www.wikidata.org/wiki/Q190602',
+				'https://www.imdb.com/name/nm0000906/',
+			],
+		},
+		{
+			slug: 'diane-keaton',
+			name: 'Diane Keaton',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Diane%20Keaton%20by%20Firooz%20Zahedi%202.jpg?width=640',
+			headline:
+				'Figura esencial del cine estadounidense moderno, capaz de volver inconfundible cualquier mezcla de neurosis, encanto y melancolia.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz', work: 'Annie Hall', year: 1978 }],
+			knownFor: ['annie-hall-1977', 'the-godfather-part-ii-1974'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Diane_Keaton',
+				'https://www.wikidata.org/wiki/Q102642',
+				'https://www.imdb.com/name/nm0000473/',
+			],
+		},
+		{
+			slug: 'felicity-jones',
+			name: 'Felicity Jones',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Felicity%20Jones%20at%20TIFF%202025%2002%20(cropped).jpg?width=640',
+			headline: 'Actriz britanica de registro fino, muy buena para personajes sensibles, obstinados o silenciosamente intensos.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz', work: 'The Theory of Everything', year: 2015 }],
+			knownFor: ['rogue-one-a-star-wars-story-2016', 'the-brutalist-2024'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Felicity_Jones',
+				'https://www.wikidata.org/wiki/Q234447',
+				'https://www.imdb.com/name/nm0428065/',
+			],
+		},
+		{
+			slug: 'jennifer-tilly',
+			name: 'Jennifer Tilly',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Jennifer%20Tilly%20in%202024%20by%20Gage%20Skidmore.jpg?width=640',
+			headline: 'Actriz y voz inconfundible que hizo de la exageracion, el humor negro y el camp una marca muy propia.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz de reparto', work: 'Bullets Over Broadway', year: 1995 }],
+			knownFor: ['bride-of-chucky-1998', 'seed-of-chucky-2004'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Jennifer_Tilly',
+				'https://www.wikidata.org/wiki/Q495549',
+				'https://www.imdb.com/name/nm0000236/',
+			],
+		},
+		{
+			slug: 'laura-dern',
+			name: 'Laura Dern',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laura%20Dern%202025%20(facecrop).jpg?width=640',
+			headline:
+				'Actriz de prestigio absoluto, con una intensidad emocional que funciona tanto en cine de autor como en el mainstream.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'Marriage Story', year: 2020 }],
+			knownFor: ['jurassic-park-1993', 'jurassic-world-dominion-2022'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Laura_Dern',
+				'https://www.wikidata.org/wiki/Q220901',
+				'https://www.imdb.com/name/nm0000368/',
+			],
+		},
+		{
+			slug: 'eva-marie-saint',
+			name: 'Eva Marie Saint',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Eva%20Marie%20Saint%20Promo%20Portrait%2C%20c.%201951.jpg?width=640',
+			headline: 'Actriz clasica de presencia elegantisima y enorme inteligencia para el drama romantico y el thriller.',
+			awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'On the Waterfront', year: 1955 }],
+			knownFor: ['on-the-waterfront-1954', 'north-by-northwest-1959'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Eva_Marie_Saint',
+				'https://www.wikidata.org/wiki/Q233248',
+				'https://www.imdb.com/name/nm0001710/',
+			],
+		},
+		{
+			slug: 'talia-shire',
+			name: 'Talia Shire',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Talia%20Shire%201977.jpg?width=640',
+			headline: 'Actriz clave del Nuevo Hollywood, siempre muy eficaz para personajes calidos, vulnerables y testarudos.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz', work: 'Rocky', year: 1977 }],
+			knownFor: ['rocky-1976', 'rocky-ii-1979', 'rocky-v-1990'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Talia_Shire',
+				'https://www.wikidata.org/wiki/Q228998',
+				'https://www.imdb.com/name/nm0001735/',
+			],
+		},
+		{
+			slug: 'emily-watson',
+			name: 'Emily Watson',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emily%20Watson.jpg?width=640',
+			headline: 'Actriz britanica de enorme intensidad interior, muy asociada a personajes complejos y emocionalmente exigentes.',
+			awards: [{ label: 'Oscar', category: 'Nominacion a mejor actriz', work: 'Breaking the Waves', year: 1997 }],
+			knownFor: ['corpse-bride-2005', 'hamnet-2025'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Emily_Watson',
+				'https://www.wikidata.org/wiki/Q268735',
+				'https://www.imdb.com/name/nm0914941/',
 			],
 		},
 	]),
