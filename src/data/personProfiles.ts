@@ -1223,12 +1223,12 @@ function buildCatalogBiography(profile: PersonProfileRecord): string[] {
 	const award = profile.awards[0];
 	const awardCopy = award
 		? ` Entre sus reconocimientos destacados figura ${award.label}${award.category ? ` en ${award.category}` : ''}${award.work ? ` por ${award.work}` : ''}${award.year ? ` en ${award.year}` : ''}.`
-		: ' Su lugar dentro del sitio se entiende por la continuidad entre trayectoria, presencia de pantalla y titulos asociados.';
+		: ' Su trayectoria se entiende mejor al mirar la continuidad entre presencia de pantalla, oficio y titulos asociados.';
 
 	return [
-		`${profile.name} es ${roleLabel}${originCopy} y su perfil dentro de Cine Posta queda asociado a una zona concreta del catalogo. ${profile.headline}`,
-		`Su recorrido en la ficha se lee a partir de ${knownForLabel}, titulos que ayudan a ubicar que tipo de presencia aporta: estrella reconocible, interprete de genero, figura autoral o pieza clave de una franquicia.`,
-		`${profile.spotlight} Ese contexto permite conectar rapidamente su filmografia, los premios cargados y las peliculas relacionadas sin dejar la bio reducida a una linea de ficha tecnica.${awardCopy}`,
+		`${profile.name} es ${roleLabel}${originCopy}. ${profile.headline}`,
+		`Su recorrido se puede ubicar a partir de ${knownForLabel}, titulos que muestran que tipo de presencia aporta: estrella reconocible, interprete de genero, figura autoral o pieza clave de una franquicia.`,
+		`${profile.spotlight} La biografia queda enfocada en trayectoria, premios y peliculas relacionadas para evitar que el perfil sea apenas una linea de ficha tecnica.${awardCopy}`,
 	];
 }
 
@@ -1253,7 +1253,7 @@ function ensureBiographyDepth(profile: PersonProfileRecord): PersonProfileRecord
 			: [
 					...biography,
 					...catalogBiography.filter((paragraph) => !biography.some((entry) => entry.includes(paragraph.slice(0, 32)))),
-				].slice(0, 5);
+				].slice(0, 4);
 
 	return {
 		...profile,
@@ -3024,7 +3024,7 @@ const bulkTrendProfiles = {
 				{ label: 'Oscar', category: 'Nominación a mejor actor de reparto', work: 'Moneyball', year: 2012 },
 				{ label: 'Oscar', category: 'Nominación a mejor actor de reparto', work: 'The Wolf of Wall Street', year: 2014 },
 			],
-			knownFor: ['outcome-2026', 'dont-look-up-2021'],
+			knownFor: ['outcome-2026'],
 			referenceUrls: [
 				'https://www.wikidata.org/wiki/Q313388',
 				'https://www.imdb.com/name/nm1706767/',

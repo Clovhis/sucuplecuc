@@ -3,6 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import AwardMark from '../../components/AwardMark.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAwardVisualKey } from '../../lib/awards';
+import { getPersonEditorialBlocks } from '../../lib/editorialCopy';
 import { getPersonFilmography, getPersonProfileBySlug, getPersonProfiles } from '../../lib/people';
 import { createPersonStructuredData } from '../../lib/seo';
 
@@ -17,6 +18,7 @@ const { profile } = Astro.props as {
 	profile: NonNullable<ReturnType<typeof getPersonProfileBySlug>>;
 };
 const filmography = getPersonFilmography(profile.name);
+const personEditorialBlocks = getPersonEditorialBlocks(profile, filmography);
 const knownForEntries = profile.knownFor
 	.map((slug) => filmography.find((entry) => entry.movieSlug === slug))
 	.filter((entry): entry is (typeof filmography)[number] => Boolean(entry));
@@ -168,6 +170,16 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 				<div class="person-page__bio-copy">
 					{biographyParagraphs.map((paragraph) => (
 						<p>{paragraph}</p>
+					))}
+				</div>
+				<div class="person-page__context-copy">
+					{personEditorialBlocks.map((block) => (
+						<section>
+							<h3>{block.title}</h3>
+							{block.paragraphs.map((paragraph) => (
+								<p>{paragraph}</p>
+							))}
+						</section>
 					))}
 				</div>
 			</article>

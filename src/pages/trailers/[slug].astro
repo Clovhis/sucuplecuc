@@ -35,7 +35,14 @@ const pageDescription = `Mirá el trailer oficial de ${movie.title} (${movie.yea
 const structuredData = createTrailerPageStructuredData(movie, pageTitle, pageDescription);
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} image={trailerThumbnailUrl} structuredData={structuredData}>
+<BaseLayout
+	title={pageTitle}
+	description={pageDescription}
+	image={trailerThumbnailUrl}
+	structuredData={structuredData}
+	noindex
+	allowAds={false}
+>
 	<main id="main-content" class="container">
 		<div class="page-actions">
 			<a class="page-action page-action--history" href={movieUrl}>Volver a la reseña</a>

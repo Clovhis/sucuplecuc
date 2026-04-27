@@ -9,6 +9,8 @@ interface Props {
 	image?: string;
 	openGraphType?: 'article' | 'website';
 	structuredData?: Array<Record<string, unknown>>;
+	noindex?: boolean;
+	allowAds?: boolean;
 }
 
 const {
@@ -17,6 +19,8 @@ const {
 	image,
 	openGraphType = 'website',
 	structuredData = [],
+	noindex = false,
+	allowAds = true,
 } = Astro.props as Props;
 const canonical = Astro.site
 	? new URL(Astro.url.pathname, Astro.site).toString()
@@ -50,15 +54,26 @@ const footerLinks = [
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="Content-Security-Policy" content={contentSecurityPolicy} />
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<meta
+			name="robots"
+			content={
+				noindex
+					? 'noindex, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+					: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+			}
+		/>
 		<meta name="author" content={SITE_NAME} />
 		<meta name="referrer" content="strict-origin-when-cross-origin" />
-		<script
-			is:inline
-			async
-			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6107242162035895"
-			crossorigin="anonymous"
-		></script>
+		{
+			allowAds && (
+				<script
+					is:inline
+					async
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6107242162035895"
+					crossorigin="anonymous"
+				></script>
+			)
+		}
 		<meta name="theme-color" content="#06070a" />
 		<meta name="application-name" content={SITE_NAME} />
 		<title>{title}</title>
