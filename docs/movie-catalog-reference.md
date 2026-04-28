@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-27. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-28. Fuente: src/data/movies/*.json
 
-Total de peliculas: 732
+Total de peliculas: 735
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -21,6 +21,8 @@ Total de peliculas: 732
 | 2026 | El drama | the-drama-2026 | Romance | Cine | +17 |
 | 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Cine | ATP |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
+| 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
+| 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | GOAT | goat-2026 | Animacion | Stremio | ATP |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Stremio | +13 |
@@ -30,6 +32,7 @@ Total de peliculas: 732
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Cine | +17 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
+| 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
 | 2026 | Michael | michael-2026 | Drama | Cine | +13 |
