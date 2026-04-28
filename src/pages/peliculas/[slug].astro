@@ -349,17 +349,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								</section>
 							)
 						}
-						<section class="movie-detail__value-card" aria-labelledby={`movie-value-${movie.slug}`}>
-							<h2 id={`movie-value-${movie.slug}`} class="u-visually-hidden">Contexto editorial de la ficha</h2>
-							{movieValueGuide.blocks.map((block) => (
-								<section class="movie-detail__value-block">
-									{block.title && <h3>{block.title}</h3>}
-									{block.paragraphs.map((paragraph) => (
-										<p>{paragraph}</p>
-									))}
-								</section>
-							))}
-						</section>
 					</div>
 					{
 						(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
@@ -692,6 +681,24 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										</li>
 									))}
 								</ul>
+							</section>
+						)
+					}
+					{
+						movieValueGuide.footerBlocks.length > 0 && (
+							<section
+								class="movie-detail__value-card movie-detail__value-card--footer"
+								aria-labelledby={`movie-value-footer-${movie.slug}`}
+							>
+								<h2 id={`movie-value-footer-${movie.slug}`} class="u-visually-hidden">Contexto editorial de la ficha</h2>
+								{movieValueGuide.footerBlocks.map((block) => (
+									<section class="movie-detail__value-block">
+										{block.title && <h3>{block.title}</h3>}
+										{block.paragraphs.map((paragraph) => (
+											<p>{paragraph}</p>
+										))}
+									</section>
+								))}
 							</section>
 						)
 					}

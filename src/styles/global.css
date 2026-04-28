@@ -18,6 +18,8 @@
 	--meh: #f3bc3f;
 	--bad: #ec6e59;
 	--trash: #a855f7;
+	--control-radius: 10px;
+	--control-radius-tight: 8px;
 	--focus-ring: rgba(255, 176, 137, 0.92);
 	--shadow-panel:
 		0 24px 60px rgba(0, 0, 0, 0.38),
@@ -123,7 +125,7 @@ img {
 	left: 0.75rem;
 	z-index: 30;
 	padding: 0.7rem 1rem;
-	border-radius: 999px;
+	border-radius: var(--control-radius-tight);
 	border: 1px solid rgba(255, 176, 137, 0.5);
 	background: rgba(13, 18, 28, 0.95);
 	color: #fff3ec;
@@ -313,7 +315,7 @@ img {
 	gap: 0.48rem;
 	min-height: 2.75rem;
 	padding: 0.52rem 1.02rem;
-	border-radius: 13px;
+	border-radius: var(--control-radius);
 	border: 1px solid rgba(255, 188, 144, 0.42);
 	background:
 		linear-gradient(135deg, rgba(255, 231, 210, 0.12), rgba(255, 143, 91, 0.18) 46%, rgba(15, 20, 29, 0.92) 47%),
@@ -380,7 +382,7 @@ img {
 
 .site-header__donate:hover,
 .site-footer__donate:hover {
-	transform: translateY(-3px) rotate(-0.5deg);
+	transform: translateY(-3px);
 	border-color: rgba(255, 188, 144, 0.72);
 	background:
 		linear-gradient(135deg, rgba(255, 231, 210, 0.16), rgba(255, 143, 91, 0.28) 46%, rgba(17, 24, 35, 0.96) 47%),
@@ -847,7 +849,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: 0.34rem 0.58rem;
-	border-radius: 999px;
+	border-radius: var(--control-radius-tight);
 	background: rgba(8, 12, 20, 0.74);
 	border: 1px solid rgba(255, 255, 255, 0.14);
 	color: #f4f7ff;
@@ -923,7 +925,7 @@ img {
 		linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
 		rgba(7, 12, 21, 0.72);
 	color: #d9e1f1;
-	border-radius: 9px;
+	border-radius: var(--control-radius-tight);
 	padding: 0.4rem 0.78rem 0.4rem 0.9rem;
 	font: inherit;
 	font-size: 0.76rem;
@@ -955,7 +957,7 @@ img {
 
 .home-genre-filter__chip:hover,
 .home-genre-filter__chip:focus-visible {
-	transform: translateY(-2px) rotate(-0.4deg);
+	transform: translateY(-2px);
 	border-color: rgba(255, 176, 137, 0.48);
 	background:
 		linear-gradient(90deg, rgba(255, 176, 137, 0.25), transparent 0.46rem),
@@ -1002,7 +1004,7 @@ img {
 	min-width: 0;
 	min-height: 2.6rem;
 	padding: 0.42rem 0.56rem;
-	border-radius: 10px;
+	border-radius: var(--control-radius);
 	border: 1px solid rgba(180, 198, 228, 0.16);
 	background:
 		linear-gradient(90deg, transparent calc(100% - 0.42rem), rgba(117, 153, 255, 0.12) calc(100% - 0.42rem)),
@@ -1019,35 +1021,13 @@ img {
 		box-shadow 0.16s ease;
 }
 
-.home-platform-filter__chip::before,
-.home-platform-filter__chip::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	width: 0.5rem;
-	height: 0.5rem;
-	border-radius: 999px;
-	background: rgba(6, 7, 10, 0.92);
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-	transform: translateY(-50%);
-	pointer-events: none;
-}
-
-.home-platform-filter__chip::before {
-	left: -0.28rem;
-}
-
-.home-platform-filter__chip::after {
-	right: -0.28rem;
-}
-
 .home-platform-filter__chip[data-home-platform-id='cine-ar'] {
 	padding-inline: 0.56rem;
 }
 
 .home-platform-filter__chip:hover,
 .home-platform-filter__chip:focus-visible {
-	transform: translateY(-2px) rotate(0.35deg);
+	transform: translateY(-2px);
 	border-color: rgba(255, 176, 137, 0.36);
 	background:
 		linear-gradient(90deg, transparent calc(100% - 0.42rem), rgba(255, 176, 137, 0.22) calc(100% - 0.42rem)),
@@ -1251,7 +1231,7 @@ img {
 	justify-content: center;
 	min-height: 2rem;
 	padding: 0.42rem 0.88rem;
-	border-radius: 9px;
+	border-radius: var(--control-radius-tight);
 	border: 1px solid rgba(255, 176, 137, 0.28);
 	background:
 		linear-gradient(90deg, rgba(255, 176, 137, 0.18), transparent 0.36rem),
@@ -1284,7 +1264,7 @@ img {
 
 .home-people-showcase__link:hover,
 .home-people-showcase__link:focus-visible {
-	transform: translateY(-2px) rotate(-0.35deg);
+	transform: translateY(-2px);
 	border-color: rgba(255, 176, 137, 0.56);
 	background:
 		linear-gradient(90deg, rgba(255, 176, 137, 0.28), transparent 0.4rem),
@@ -1483,8 +1463,8 @@ img {
 	width: 1.72rem;
 	height: 1.72rem;
 	padding: 0;
-	border: 0;
-	border-radius: 999px;
+	border: 1px solid rgba(76, 113, 255, 0.18);
+	border-radius: var(--control-radius-tight);
 	background: rgba(76, 113, 255, 0.08);
 	color: #4c71ff;
 	cursor: pointer;
@@ -1497,7 +1477,7 @@ img {
 .movie-search__clear:hover {
 	background: rgba(76, 113, 255, 0.16);
 	color: #7f9aff;
-	transform: translateY(-50%) scale(1.03);
+	transform: translateY(calc(-50% - 1px));
 }
 
 .movie-search__clear:focus-visible {
@@ -1916,7 +1896,7 @@ img {
 	font-size: 0.72rem;
 	line-height: 1;
 	padding: 0.2rem 0.52rem;
-	border-radius: 999px;
+	border-radius: var(--control-radius-tight);
 	background: rgba(117, 153, 255, 0.12);
 	border: 1px solid rgba(117, 153, 255, 0.35);
 	color: #b9c9ff;
@@ -2349,7 +2329,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: 0.35rem 0.62rem;
-	border-radius: 999px;
+	border-radius: var(--control-radius-tight);
 	border: 1px solid rgba(224, 255, 243, 0.32);
 	background: rgba(11, 31, 24, 0.28);
 	backdrop-filter: blur(8px);
@@ -2380,7 +2360,7 @@ img {
 	justify-content: space-between;
 	gap: 0.85rem;
 	padding: 0.72rem 0.84rem;
-	border-radius: 10px;
+	border-radius: var(--control-radius);
 	border: 1px solid rgba(117, 153, 255, 0.22);
 	background: rgba(117, 153, 255, 0.08);
 	color: #eef3ff;
@@ -2484,6 +2464,13 @@ img {
 		linear-gradient(180deg, rgba(90, 214, 164, 0.1), rgba(117, 153, 255, 0.03)),
 		rgba(255, 255, 255, 0.02);
 	box-shadow: var(--shadow-card);
+}
+
+.movie-detail__value-card--footer {
+	border-left-color: rgba(117, 153, 255, 0.62);
+	background:
+		linear-gradient(180deg, rgba(117, 153, 255, 0.1), rgba(90, 214, 164, 0.03)),
+		rgba(255, 255, 255, 0.02);
 }
 
 .movie-detail__value-kicker {
@@ -3024,6 +3011,7 @@ img {
 	font-size: 1.45rem;
 	line-height: 1;
 	padding: 0.1rem;
+	border-radius: 6px;
 	cursor: pointer;
 	transition: transform 0.16s ease, color 0.16s ease;
 }
@@ -3146,7 +3134,7 @@ img {
 	justify-content: center;
 	min-height: 3rem;
 	padding: 0.75rem 1rem;
-	border-radius: 999px;
+	border-radius: var(--control-radius);
 	background: rgba(10, 12, 17, 0.88);
 	border: 1px solid rgba(255, 255, 255, 0.12);
 	color: #f8fbff;
@@ -3314,7 +3302,7 @@ img {
 	align-items: center;
 	gap: 0.4rem;
 	padding: 0.48rem 0.72rem;
-	border-radius: 999px;
+	border-radius: var(--control-radius-tight);
 	border: 1px solid rgba(255, 176, 137, 0.28);
 	background: rgba(255, 255, 255, 0.03);
 	color: var(--accent-soft);
@@ -4495,7 +4483,7 @@ img {
 	.home-platform-filter__chip {
 		min-height: 2.7rem;
 		padding: 0.4rem 0.52rem;
-		border-radius: 14px;
+		border-radius: var(--control-radius);
 	}
 
 	.home-platform-filter__badge .platform-chip__logo {

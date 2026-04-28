@@ -13,7 +13,7 @@ export interface EditorialFact {
 }
 
 export interface MovieValueGuide {
-	blocks: EditorialBlock[];
+	footerBlocks: EditorialBlock[];
 	facts: EditorialFact[];
 }
 
@@ -61,19 +61,19 @@ export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary)
 		: relatedLabel;
 
 	return {
-		blocks: [
-			{
-				title: '',
-				paragraphs: [
-					`${movie.title} entra en el catalogo como una propuesta de ${movie.category.toLowerCase()} de ${movie.year}, dirigida por ${movie.director}. La ficha no se limita a repetir datos: separa premisa, veredicto y contexto para que la decision de verla sea rapida y concreta.`,
-					`El punto de partida es el cruce entre ${castLabel}, la marca de ${movie.productionCompany} y el lugar que ocupa frente a ${bridgeLabel}. Esa comparacion interna ayuda a entender si conviene verla por tono, por reparto o por simple curiosidad de genero.`,
-				],
-			},
+		footerBlocks: [
 			{
 				title: 'Como leer el veredicto',
 				paragraphs: [
 					`${getVerdictLabelForSentence(movie)}. ${verdictCopy[movie.verdict]}`,
 					`Tambien miramos si ${movie.title} sostiene su promesa basica: que la sinopsis, el trailer, la duracion y el resultado final apunten hacia la misma experiencia. Cuando esos elementos se contradicen, el veredicto lo dice sin disfrazarlo.`,
+				],
+			},
+			{
+				title: '',
+				paragraphs: [
+					`${movie.title} entra en el catalogo como una propuesta de ${movie.category.toLowerCase()} de ${movie.year}, dirigida por ${movie.director}. La ficha no se limita a repetir datos: separa premisa, veredicto y contexto para que la decision de verla sea rapida y concreta.`,
+					`El punto de partida es el cruce entre ${castLabel}, la marca de ${movie.productionCompany} y el lugar que ocupa frente a ${bridgeLabel}. Esa comparacion interna ayuda a entender si conviene verla por tono, por reparto o por simple curiosidad de genero.`,
 				],
 			},
 		],
