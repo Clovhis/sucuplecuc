@@ -172,16 +172,6 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 						<p>{paragraph}</p>
 					))}
 				</div>
-				<div class="person-page__context-copy">
-					{personEditorialBlocks.map((block) => (
-						<section>
-							<h3>{block.title}</h3>
-							{block.paragraphs.map((paragraph) => (
-								<p>{paragraph}</p>
-							))}
-						</section>
-					))}
-				</div>
 			</article>
 
 			<aside class="person-page__panel person-page__panel--awards fade-up" style="--item-delay: 120ms;">
@@ -234,6 +224,23 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 					))}
 				</div>
 			</section>
+
+			{
+				personEditorialBlocks.length > 0 && (
+					<section class="person-page__panel person-page__panel--context fade-up" style="--item-delay: 200ms;">
+						<div class="person-page__context-copy person-page__context-copy--standalone">
+							{personEditorialBlocks.map((block) => (
+								<section>
+									<h3>{block.title}</h3>
+									{block.paragraphs.map((paragraph) => (
+										<p>{paragraph}</p>
+									))}
+								</section>
+							))}
+						</div>
+					</section>
+				)
+			}
 		</section>
 	</main>
 </BaseLayout>

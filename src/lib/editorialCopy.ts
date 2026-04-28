@@ -109,7 +109,7 @@ export function getPersonEditorialBlocks(
 
 	return [
 		{
-			title: 'Contexto dentro del catalogo',
+			title: '',
 			paragraphs: [
 				`${profile.name} aparece en Cine Posta como ${roleLabel}, con una filmografia interna que permite saltar de la biografia a ${filmTitles}. La pagina esta pensada para conectar datos basicos, premios y peliculas sin depender de una ficha externa.`,
 				`${profile.spotlight} ${awardCopy}`,
