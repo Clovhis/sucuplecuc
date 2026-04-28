@@ -154,6 +154,7 @@ Required approach:
 1. Start with Wikipedia as the baseline biography source:
    - Prefer the Spanish Wikipedia lead/extract when it exists and is solid
    - Fall back to English Wikipedia only when Spanish coverage is weak or missing
+   - If English Wikipedia is used as fallback, the published copy still has to end in natural Spanish, but every factual claim must remain traceable to that Wikipedia page
    - Use Wikidata to confirm structured facts such as birth date, birth place, occupations, and aliases when needed
 2. Verify awards from primary or clearly authoritative sources when the biography mentions them:
    - official award sites
@@ -169,6 +170,13 @@ Every biography should try to cover, when the sources support it:
 - the breakthrough role, early recognition, or career turning point
 - the main line of their trajectory with concrete titles or collaborations
 - notable awards or distinctions only when verified
+
+Mandatory depth rule:
+
+- Use the historical Brad Pitt baseline that existed in this repo on 2026-04-28: `836` characters
+- Every biography must end with at least `2508` visible characters once whitespace is normalized
+- That minimum is mandatory even for Brad Pitt himself; treat the old `836`-character text only as the benchmark to triple, never as the new target
+- Do not pad with vague editorial filler just to hit the minimum; keep adding sourced facts from Wikipedia until the text clears the threshold honestly
 
 Explicitly forbidden biography patterns:
 
@@ -192,10 +200,12 @@ Every new profile should include:
 - `birthPlace` when available
 - `spotlight`
 - `biography` with 2-4 paragraphs built from concrete sourced facts, not templates
+- `biography` with 2-4 paragraphs, at least `2508` visible characters after whitespace normalization, and enough sourced detail to exceed the old Brad Pitt baseline by `3x`
 - `stats` only when there is a genuinely useful, factual milestone to show
 - `awards` with only verified highlights
 - `knownFor` pointing to existing movie slugs in the catalog
 - `referenceUrls` including the biography source(s) actually used for the write-up
+- `referenceUrls` must include the exact Wikipedia page actually used for the biography, not just Wikidata/IMDb support links
 
 Do not invent filmography outside the repo. The profile page should show movies connected through the existing catalog.
 
@@ -217,6 +227,7 @@ The bundled auditor checks, at minimum:
 - `knownFor` is actually connected to that person in the current catalog
 - the connected filmography is not empty
 - biography, stats, awards, and references meet minimum completeness
+- biography reaches the mandatory `2508`-character floor derived from the pre-enrichment Brad Pitt baseline (`836 x 3`)
 - biography copy is not a repeated template with swapped names or titles
 - generic filler stats are not required and should be omitted when they do not add concrete value
 - built output exists in `dist/personas/<slug>/index.html` when `--require-dist` is used

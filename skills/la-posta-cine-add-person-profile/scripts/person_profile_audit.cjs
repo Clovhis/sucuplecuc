@@ -8,6 +8,8 @@ const PROFILE_IMAGE_MIN_WIDTH = 480;
 const PROFILE_IMAGE_WARN_WIDTH = 900;
 const PROFILE_IMAGE_WARN_SIZE_KB = 180;
 const PROFILE_IMAGE_ERROR_SIZE_KB = 260;
+const BRAD_PITT_BASELINE_BIOGRAPHY_CHARACTERS = 836;
+const MINIMUM_BIOGRAPHY_CHARACTERS = BRAD_PITT_BASELINE_BIOGRAPHY_CHARACTERS * 3;
 
 function usage() {
 	console.log(
@@ -303,12 +305,21 @@ function auditProfile({ slug, profile, peopleByName, moviesBySlug, allMovies, re
 		addFinding(findings, 'error', scope, 'biography contiene parrafos vacios.');
 	} else {
 		const biographyWords = countWords(profile.biography.join(' '));
+		const biographyCharacters = normalizeWhitespace(profile.biography.join(' ')).length;
 		if (biographyWords < 80) {
 			addFinding(
 				findings,
 				'error',
 				scope,
 				`biography es demasiado corta (${biographyWords} palabras); minimo editorial: 80 palabras.`,
+			);
+		}
+		if (biographyCharacters < MINIMUM_BIOGRAPHY_CHARACTERS) {
+			addFinding(
+				findings,
+				'error',
+				scope,
+				`biography es demasiado corta (${biographyCharacters} caracteres); minimo editorial obligatorio: ${MINIMUM_BIOGRAPHY_CHARACTERS} caracteres, equivalente al triple de la biografia historica de Brad Pitt (${BRAD_PITT_BASELINE_BIOGRAPHY_CHARACTERS}).`,
 			);
 		}
 		if (profile.biography.some(hasBrokenBiographyFragment)) {

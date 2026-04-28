@@ -47,6 +47,8 @@ Forbidden fix paths:
 
 Never auto-fix project code if the audit fails.
 
+If the branch also edits `src/data/personProfiles.ts` through an add/update profile workflow, do not sign off on that part from movie checks alone. Defer to `skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs` and preserve its current mandatory biography floor of `2508` normalized characters, derived from tripling the historical `836`-character Brad Pitt baseline.
+
 ## Workflow
 
 ### 1. Resolve candidates
