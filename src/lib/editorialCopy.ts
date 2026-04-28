@@ -7,14 +7,8 @@ export interface EditorialBlock {
 	paragraphs: string[];
 }
 
-export interface EditorialFact {
-	label: string;
-	value: string;
-}
-
 export interface MovieValueGuide {
 	footerBlocks: EditorialBlock[];
-	facts: EditorialFact[];
 }
 
 const verdictCopy: Record<MovieVerdict, string> = {
@@ -38,11 +32,6 @@ function joinNames(values: string[], fallback: string): string {
 	if (names.length === 1) return names[0];
 	if (names.length === 2) return `${names[0]} y ${names[1]}`;
 	return `${names.slice(0, -1).join(', ')} y ${names[names.length - 1]}`;
-}
-
-function getRuntimeValue(summary: MovieEditorialSummary): string | undefined {
-	if (!summary.runtime) return undefined;
-	return summary.runtime.comment ? `${summary.runtime.formatted}: ${summary.runtime.comment}.` : summary.runtime.formatted;
 }
 
 export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary): MovieValueGuide {
@@ -76,11 +65,6 @@ export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary)
 					`El punto de partida es el cruce entre ${castLabel}, la marca de ${movie.productionCompany} y el lugar que ocupa frente a ${bridgeLabel}. Esa comparacion interna ayuda a entender si conviene verla por tono, por reparto o por simple curiosidad de genero.`,
 				],
 			},
-		],
-		facts: [
-			{ label: 'Punto fuerte a revisar', value: `El cruce entre ${castLabel} y el tono de ${movie.category.toLowerCase()}.` },
-			{ label: 'Antes de verla', value: getRuntimeValue(summary) ?? 'Revisa sinopsis, trailer y clasificacion antes de decidir.' },
-			{ label: 'Si te interesa', value: `Segui por ${relatedLabel} para comparar el mismo pulso dentro del sitio.` },
 		],
 	};
 }

@@ -604,17 +604,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						}
 					</div>
 					<div class="movie-detail__editorial-grid" aria-label="Datos utiles para decidir rapido">
-						<section class="movie-detail__editorial-card movie-detail__editorial-card--value-facts">
-							<p class="movie-detail__editorial-kicker">Guia rapida</p>
-							<dl class="movie-detail__value-facts">
-								{movieValueGuide.facts.map((fact) => (
-									<div>
-										<dt>{fact.label}</dt>
-										<dd>{fact.value}</dd>
-									</div>
-								))}
-							</dl>
-						</section>
 						{
 							editorialSummary.runtime && (
 								<section class="movie-detail__editorial-card movie-detail__editorial-card--duration">

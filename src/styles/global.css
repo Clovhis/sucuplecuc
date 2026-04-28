@@ -2505,40 +2505,6 @@ img {
 	line-height: 1.62;
 }
 
-.movie-detail__editorial-card--value-facts {
-	border-color: rgba(90, 214, 164, 0.24);
-	background:
-		linear-gradient(180deg, rgba(90, 214, 164, 0.09), rgba(255, 255, 255, 0.02)),
-		rgba(255, 255, 255, 0.02);
-}
-
-.movie-detail__value-facts {
-	display: grid;
-	gap: 0.7rem;
-	margin: 0;
-}
-
-.movie-detail__value-facts div {
-	display: grid;
-	gap: 0.2rem;
-}
-
-.movie-detail__value-facts dt {
-	margin: 0;
-	color: #a8f1d5;
-	font-size: 0.72rem;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	font-family: var(--font-mono);
-}
-
-.movie-detail__value-facts dd {
-	margin: 0;
-	color: #edf7f4;
-	font-size: 0.93rem;
-	line-height: 1.45;
-}
-
 .movie-detail__awards-card {
 	display: grid;
 	gap: 0.8rem;
