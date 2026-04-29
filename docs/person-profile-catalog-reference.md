@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-27. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 362
+Total de personas con ficha exclusiva: 363
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -365,6 +365,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Willem Dafoe | `willem-dafoe` | /personas/willem-dafoe/ | Actor | 4 | 3 |
 | William Wyler | `william-wyler` | /personas/william-wyler/ | Director / Productor | 3 | 3 |
 | Winona Ryder | `winona-ryder` | /personas/winona-ryder/ | Actriz | 2 | 3 |
+| Woody Allen | `woody-allen` | /personas/woody-allen/ | Director / Guionista / Actor | 4 | 4 |
 | Woody Harrelson | `woody-harrelson` | /personas/woody-harrelson/ | Actor | 4 | 3 |
 | Yorgos Lanthimos | `yorgos-lanthimos` | /personas/yorgos-lanthimos/ | Director | 1 | 2 |
 | Zazie Beetz | `zazie-beetz` | /personas/zazie-beetz/ | Actriz | 2 | 3 |

@@ -13165,6 +13165,41 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 			'https://www.oscars.org/oscars/ceremonies/1960',
 		],
 	},
+	'woody-allen': {
+		slug: 'woody-allen',
+		name: 'Woody Allen',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Woody%20Allen%20Cannes%202011.jpg?width=640',
+		headline:
+			'Figura central del cine estadounidense que llevó la neurosis, la comedia intelectual y el romance urbano a una filmografía inmensa, muy personal y reconocible.',
+		roles: ['Director', 'Guionista', 'Actor'],
+		birthPlace: 'Bronx, Nueva York, Estados Unidos',
+		spotlight:
+			'Pocos autores mezclaron con tanta naturalidad chiste, melancolía, filosofía, jazz, drama moral y vida neoyorquina a lo largo de tantas décadas.',
+		biography: [
+			'Woody Allen nació como Allan Stewart Konigsberg el 30 de noviembre de 1935 en el Bronx y creció en Brooklyn, dentro de una familia judía de clase media baja. Desde muy joven mostró una facilidad rarísima para el humor escrito: en la secundaria ya vendía chistes a columnistas y poco después empezó a trabajar para televisión, escribiendo material para programas y especiales de figuras como Sid Caesar. Ese arranque precoz le dio algo que se sentiría durante toda su carrera: una relación casi artesanal con el gag, el ritmo verbal y la observación incómoda de la vida cotidiana. Antes de convertirse en director ya había pasado por el circuito del stand-up en Greenwich Village, había publicado textos humorísticos y había construido una máscara escénica muy precisa, la del tipo brillante, inseguro, hipocondríaco y sentimentalmente desastroso que después se volvería inseparable de su cine.',
+			'Su salto al largometraje terminó de consolidarse con Take the Money and Run, Bananas, Sleeper y Love and Death, comedias donde mezcló slapstick, parodia cultural y una velocidad verbal muy particular. Pero la gran bisagra fue Annie Hall en 1977: no solo ganó el Oscar a mejor director y mejor guion original, también redefinió lo que podía ser la comedia romántica moderna al meter memoria, fragmentación narrativa, terapia, neurosis y tristeza real dentro de una película popular. A partir de ahí armó una de las filmografías más extensas del cine norteamericano, con títulos como Manhattan, Interiors, Stardust Memories, Zelig, The Purple Rose of Cairo, Hannah and Her Sisters, Radio Days, Crimes and Misdemeanors, Husbands and Wives y Bullets Over Broadway. En paralelo fue afinando dos líneas que convivieron siempre en su obra: por un lado la comedia urbana, hablada y sentimental; por el otro un costado más severo, a veces moral y a veces directamente bergmaniano, obsesionado con la culpa, el azar, la infidelidad, la muerte y la imposibilidad de vivir de manera del todo coherente.',
+			'Lo notable es que esa máquina no se agotó en una sola época. Después de los noventa volvió a encontrar un impulso fuerte con Match Point, Vicky Cristina Barcelona, Midnight in Paris y Blue Jasmine, películas que mostraron que todavía podía cambiar de ciudad, de tono y de generación sin perder del todo su identidad autoral. Midnight in Paris le dio otro Oscar por guion original y confirmó algo que ya parecía definitivo: Allen no fue solo un gran comediante o un gran cronista de Nueva York, sino un autor capaz de filmar casi una película por año durante décadas, sosteniendo una voz inmediata y reconocible incluso cuando cambiaban la escala, el elenco o el país de rodaje. Su influencia aparece en incontables directores y guionistas que tomaron de él la mezcla de diálogo filoso, humor autoconsciente, sofisticación cultural y fragilidad emocional. Más allá de los altibajos inevitables en una obra tan extensa, su lugar en la historia del cine sigue apoyado en una evidencia simple: muy pocos cineastas lograron convertir su manera de pensar, de hablar y de dudar en un universo cinematográfico tan vasto.',
+		],
+		stats: [
+			{ label: 'Oscar', value: '4 premios' },
+			{ label: 'BAFTA', value: '10 premios' },
+			{ label: 'Record', value: '16 nominaciones a guion original' },
+		],
+		awards: [
+			{ label: 'Oscar', category: 'Mejor director', work: 'Annie Hall', year: 1978 },
+			{ label: 'Oscar', category: 'Mejor guion original', work: 'Annie Hall', year: 1978 },
+			{ label: 'Oscar', category: 'Mejor guion original', work: 'Hannah and Her Sisters', year: 1987 },
+			{ label: 'Oscar', category: 'Mejor guion original', work: 'Midnight in Paris', year: 2012 },
+		],
+		knownFor: ['annie-hall-1977', 'manhattan-1979', 'match-point-2005', 'midnight-in-paris-2011'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Woody_Allen',
+			'https://www.britannica.com/biography/Woody-Allen',
+			'https://www.oscars.org/oscars/ceremonies/1978/memorable-moments',
+			'https://www.oscars.org/oscars/ceremonies/2012/memorable-moments',
+		],
+	},
 	'juan-jose-campanella': {
 		slug: 'juan-jose-campanella',
 		name: 'Juan José Campanella',
