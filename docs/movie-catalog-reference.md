@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-28. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-29. Fuente: src/data/movies/*.json
 
-Total de peliculas: 735
+Total de peliculas: 755
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -317,6 +317,7 @@ Total de peliculas: 735
 | 2018 | La noche de Halloween | halloween-2018 | Terror | Netflix | +16 |
 | 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus | +13 |
 | 2018 | Mission: Impossible - Fallout | mission-impossible-fallout-2018 | Accion | Stremio | +13 |
+| 2018 | Ready Player One: Comienza el Juego | ready-player-one-2018 | Ciencia ficcion | Stremio | +13 |
 | 2018 | Rojo | rojo-2018 | Thriller | HBO Max | +13 |
 | 2018 | Solo: A Star Wars Story | solo-a-star-wars-story-2018 | Ciencia ficcion | Disney Plus | +13 |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video | +13 |
@@ -334,6 +335,7 @@ Total de peliculas: 735
 | 2017 | Justice League | justice-league-2017 | Accion | Stremio | +13 |
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max | +12 |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus | +17 |
+| 2017 | Los archivos del Pentágono | the-post-2017 | Drama | Stremio | +13 |
 | 2017 | Pirates of the Caribbean: Dead Men Tell No Tales | pirates-of-the-caribbean-dead-men-tell-no-tales-2017 | Aventura | Disney Plus | +13 |
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max | +13 |
 | 2017 | Star Wars: The Last Jedi | star-wars-episode-viii-the-last-jedi-2017 | Ciencia ficcion | Disney Plus | +13 |
@@ -352,6 +354,7 @@ Total de peliculas: 735
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus | +13 |
 | 2016 | Fantastic Beasts and Where to Find Them | fantastic-beasts-and-where-to-find-them-2016 | Fantasia | HBO Max | +12 |
 | 2016 | La La Land | la-la-land-2016 | Musical | Prime Video | +13 |
+| 2016 | Mi amigo el gigante | the-bfg-2016 | Fantasia | Stremio | ATP |
 | 2016 | Miss Peregrine's Home for Peculiar Children | miss-peregrines-home-for-peculiar-children-2016 | Fantasia | Disney Plus | +13 |
 | 2016 | Moonlight | moonlight-2016 | Drama | Prime Video | +17 |
 | 2016 | Rogue One: A Star Wars Story | rogue-one-a-star-wars-story-2016 | Ciencia ficcion | Disney Plus | +13 |
@@ -362,6 +365,7 @@ Total de peliculas: 735
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus | +20 |
 | 2015 | Creed | creed-2015 | Drama | Stremio | +13 |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus | +16 |
+| 2015 | El puente de los espías | bridge-of-spies-2015 | Thriller | Stremio | +13 |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus | +13 |
 | 2015 | Furious 7 | furious-7-2015 | Accion | HBO Max | +13 |
 | 2015 | Jurassic World | jurassic-world-2015 | Aventura | Prime Video + Netflix | +13 |
@@ -404,6 +408,7 @@ Total de peliculas: 735
 | 2012 | Dark Shadows | dark-shadows-2012 | Comedia | Stremio | +13 |
 | 2012 | Django Unchained | django-unchained-2012 | Drama | Prime Video | +16 |
 | 2012 | Frankenweenie | frankenweenie-2012 | Animacion | Disney Plus | ATP |
+| 2012 | Lincoln | lincoln-2012 | Drama | Stremio | +13 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
 | 2012 | Skyfall | skyfall-2012 | Accion | Netflix | +12 |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video | +13 |
@@ -416,6 +421,7 @@ Total de peliculas: 735
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Stremio | +13 |
 | 2011 | Harry Potter and the Deathly Hallows: Part 2 | harry-potter-and-the-deathly-hallows-part-2-2011 | Aventura | HBO Max | +12 |
 | 2011 | Kung Fu Panda 2 | kung-fu-panda-2-2011 | Animacion | Netflix + Prime Video | ATP |
+| 2011 | Las aventuras de Tintín: El secreto del unicornio | the-adventures-of-tintin-2011 | Animacion | Stremio | ATP |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Stremio | +13 |
 | 2011 | Mission: Impossible - Ghost Protocol | mission-impossible-ghost-protocol-2011 | Accion | Disney Plus | +13 |
 | 2011 | Pirates of the Caribbean: On Stranger Tides | pirates-of-the-caribbean-on-stranger-tides-2011 | Aventura | Disney Plus | +13 |
@@ -424,6 +430,7 @@ Total de peliculas: 735
 | 2011 | The Artist | the-artist-2011 | Comedia | Stremio | ATP |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
+| 2011 | War Horse (Caballo de batalla) | war-horse-2011 | Drama | Stremio | +13 |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus | +13 |
 | 2010 | Alice in Wonderland | alice-in-wonderland-2010 | Fantasia | Disney Plus | ATP |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
@@ -489,6 +496,8 @@ Total de peliculas: 735
 | 2005 | Elektra | elektra-2005 | Accion | Netflix + Prime Video | +13 |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus | +13 |
 | 2005 | Harry Potter and the Goblet of Fire | harry-potter-and-the-goblet-of-fire-2005 | Aventura | HBO Max | +13 |
+| 2005 | La guerra de los mundos | war-of-the-worlds-2005 | Ciencia ficcion | Stremio | +13 |
+| 2005 | Múnich | munich-2005 | Thriller | Stremio | +17 |
 | 2005 | Star Wars: Episode III - Revenge of the Sith | star-wars-episode-iii-revenge-of-the-sith-2005 | Ciencia ficcion | Disney Plus | +13 |
 | 2005 | Tiempo de valientes | tiempo-de-valientes-2005 | Comedia | Stremio | +13 |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video | +16 |
@@ -498,6 +507,7 @@ Total de peliculas: 735
 | 2004 | Howl's Moving Castle | howls-moving-castle-2004 | Anime | Netflix | ATP |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix | +17 |
 | 2004 | La semilla de Chucky | seed-of-chucky-2004 | Terror | Stremio | +17 |
+| 2004 | La terminal | the-terminal-2004 | Comedia | Stremio | +13 |
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix | +14 |
 | 2004 | Million Dollar Baby | million-dollar-baby-2004 | Drama | Prime Video | +13 |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Stremio | ATP |
@@ -529,6 +539,7 @@ Total de peliculas: 735
 | 2002 | The Lord of the Rings: The Two Towers | the-lord-of-the-rings-the-two-towers-2002 | Aventura | Stremio | +13 |
 | 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max | +13 |
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Stremio | +13 |
+| 2001 | A.I. Inteligencia Artificial | a-i-artificial-intelligence-2001 | Ciencia ficcion | Stremio | +13 |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus | +13 |
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max | ATP |
 | 2001 | Jason X: Martes 13, parte X | jason-x-2001 | Terror | HBO Max | +17 |
@@ -561,6 +572,7 @@ Total de peliculas: 735
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Stremio | +17 |
 | 1998 | The Truman Show | the-truman-show-1998 | Drama | Stremio | ATP |
 | 1997 | Alien Resurrection | alien-resurrection-1997 | Ciencia ficcion | Disney Plus | +17 |
+| 1997 | Amistad | amistad-1997 | Drama | Stremio | +17 |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video | +13 |
 | 1997 | Good Will Hunting | good-will-hunting-1997 | Drama | Stremio | +17 |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Stremio | +17 |
@@ -594,6 +606,7 @@ Total de peliculas: 735
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Stremio | +13 |
 | 1992 | Reservoir Dogs | reservoir-dogs-1992 | Crimen | Stremio | +18 |
 | 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max | +17 |
+| 1991 | Hook (El capitán Garfio) | hook-1991 | Aventura | Stremio | ATP |
 | 1991 | Muñeco diabólico 3 | child-s-play-3-1991 | Terror | Stremio | +17 |
 | 1991 | Pesadilla final: La muerte de Freddy | freddy-s-dead-the-final-nightmare-1991 | Terror | Stremio | +17 |
 | 1991 | Terminator 2: Judgment Day | terminator-2-judgment-day-1991 | Accion | Stremio | +17 |
@@ -607,6 +620,7 @@ Total de peliculas: 735
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Stremio | +17 |
 | 1990 | Rocky V | rocky-v-1990 | Drama | Stremio | +13 |
 | 1990 | Stephen King's IT | it-1990 | Terror | Stremio | +16 |
+| 1989 | Always (Para Siempre) | always-1989 | Romance | Stremio | +13 |
 | 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video | ATP |
 | 1989 | Batman | batman-1989 | Fantasia | HBO Max | +13 |
 | 1989 | Do the Right Thing | do-the-right-thing-1989 | Drama | Stremio | +16 |
@@ -626,6 +640,7 @@ Total de peliculas: 735
 | 1988 | Rain Man | rain-man-1988 | Drama | Prime Video | +17 |
 | 1988 | Viernes 13. 7ª parte: Sangre nueva | friday-the-13th-part-vii-the-new-blood-1988 | Terror | Stremio | +17 |
 | 1987 | A Nightmare on Elm Street 3: Dream Warriors | a-nightmare-on-elm-street-3-dream-warriors-1987 | Terror | Stremio | +17 |
+| 1987 | El imperio del sol | empire-of-the-sun-1987 | Drama | Stremio | +13 |
 | 1987 | Los intocables de Eliot Ness | los-intocables-de-eliot-ness-1987 | Crimen | Paramount Plus | +17 |
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Stremio | ATP |
 | 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Stremio | +13 |
@@ -636,6 +651,7 @@ Total de peliculas: 735
 | 1986 | Viernes 13. 6ª parte: Jason vive | friday-the-13th-part-vi-jason-lives-1986 | Terror | Stremio | +18 |
 | 1985 | A Nightmare on Elm Street 2: Freddy's Revenge | a-nightmare-on-elm-street-2-freddy-s-revenge-1985 | Terror | Stremio | +17 |
 | 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video + Netflix | ATP |
+| 1985 | El color púrpura | the-color-purple-1985 | Drama | Stremio | +13 |
 | 1985 | Esperando la carroza | esperando-la-carroza-1985 | Comedia | Prime Video | +13 |
 | 1985 | La historia oficial | la-historia-oficial-1985 | Drama | Stremio | +18 |
 | 1985 | Mad Max Beyond Thunderdome | mad-max-beyond-thunderdome-1985 | Accion | HBO Max | +15 |
@@ -670,6 +686,7 @@ Total de peliculas: 735
 | 1980 | Superman II | superman-ii-1980 | Ciencia ficcion | HBO Max | ATP |
 | 1980 | The Shining | the-shining-1980 | Terror | HBO Max | +18 |
 | 1980 | Viernes 13 | friday-the-13th-1980 | Terror | HBO Max | +18 |
+| 1979 | 1941 | 1941-1979 | Comedia | Stremio | +13 |
 | 1979 | Alien | alien-1979 | Ciencia ficcion | Disney Plus + HBO Max | +18 |
 | 1979 | Apocalypse Now | apocalypse-now-1979 | Drama | Stremio | +18 |
 | 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max | ATP |
@@ -679,15 +696,18 @@ Total de peliculas: 735
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max | ATP |
 | 1978 | The Deer Hunter | the-deer-hunter-1978 | Drama | Stremio | +17 |
 | 1977 | Annie Hall | annie-hall-1977 | Comedia | Stremio | ATP |
+| 1977 | Encuentros en la tercera fase | close-encounters-of-the-third-kind-1977 | Ciencia ficcion | Stremio | ATP |
 | 1977 | Star Wars: Episode IV - A New Hope | star-wars-episode-iv-a-new-hope-1977 | Ciencia ficcion | Disney Plus | ATP |
 | 1976 | Rocky | rocky-1976 | Drama | Stremio | +13 |
 | 1976 | Taxi Driver | taxi-driver-1976 | Thriller | HBO Max | +17 |
 | 1975 | Jaws | jaws-1975 | Terror | Stremio | +15 |
 | 1975 | One Flew Over the Cuckoo's Nest | one-flew-over-the-cuckoo-s-nest-1975 | Drama | HBO Max | +17 |
+| 1974 | Loca evasión | the-sugarland-express-1974 | Drama | Stremio | +13 |
 | 1974 | The Godfather Part II | the-godfather-part-ii-1974 | Drama | Netflix | +17 |
 | 1973 | The Exorcist | the-exorcist-1973 | Terror | Stremio | +18 |
 | 1973 | The Sting | the-sting-1973 | Crimen | Stremio | ATP |
 | 1972 | The Godfather | the-godfather-1972 | Drama | Netflix | +17 |
+| 1971 | Reto a la muerte | duel-1971 | Thriller | Stremio | +13 |
 | 1971 | The French Connection | the-french-connection-1971 | Crimen | Disney Plus | +17 |
 | 1970 | Patton | patton-1970 | Drama | Disney Plus | ATP |
 | 1969 | Midnight Cowboy | midnight-cowboy-1969 | Drama | Stremio | +17 |
