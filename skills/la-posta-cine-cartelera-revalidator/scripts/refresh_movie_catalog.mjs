@@ -22,12 +22,14 @@ const lines = [
   '',
   `Total de peliculas: ${movies.length}`,
   '',
-  '| Año | Titulo | Slug | Categoria | Plataforma |',
-  '| --- | --- | --- | --- | --- |',
+  '| Año | Titulo | Slug | Categoria | Plataforma | Clasificación |',
+  '| --- | --- | --- | --- | --- | --- |',
 ];
 
 for (const movie of movies) {
-  lines.push(`| ${movie.year} | ${movie.title} | ${movie.slug} | ${movie.category} | ${movie.releasePlatform || ''} |`);
+  lines.push(
+    `| ${movie.year} | ${movie.title} | ${movie.slug} | ${movie.category} | ${movie.releasePlatform || ''} | ${movie.audienceRating || ''} |`,
+  );
 }
 
 fs.writeFileSync(CATALOG_PATH, `${lines.join('\n')}\n`);
