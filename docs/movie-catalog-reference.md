@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-29. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-04-30. Fuente: src/data/movies/*.json
 
-Total de peliculas: 815
+Total de peliculas: 816
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -616,6 +616,7 @@ Total de peliculas: 815
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix | +13 |
 | 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus | +17 |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Stremio | +13 |
+| 1995 | Four Rooms | four-rooms-1995 | Comedia | Stremio | +17 |
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix | +17 |
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Stremio | +17 |
 | 1995 | Poderosa Afrodita | mighty-aphrodite-1995 | Comedia | Stremio | +13 |
