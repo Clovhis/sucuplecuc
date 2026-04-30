@@ -394,13 +394,13 @@ Total de peliculas: 853
 | 2014 | Birdman or (The Unexpected Virtue of Ignorance) | birdman-or-the-unexpected-virtue-of-ignorance-2014 | Drama | Disney Plus | +16 |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus | +13 |
 | 2014 | Dawn of the Planet of the Apes | dawn-of-the-planet-of-the-apes-2014 | Accion | Disney Plus | +13 |
+| 2014 | El debate de los 50 años | the-50-year-argument-2014 | Documental | Stremio | ATP |
 | 2014 | Guardians of the Galaxy | guardians-of-the-galaxy-2014 | Accion | Disney Plus | +13 |
 | 2014 | How to Train Your Dragon 2 | how-to-train-your-dragon-2-2014 | Animacion | Stremio | ATP |
 | 2014 | Interstellar | interstellar-2014 | Ciencia ficcion | Prime Video | +13 |
 | 2014 | John Wick | john-wick-2014 | Accion | Stremio | +18 |
 | 2014 | Magia a la luz de la luna | magic-in-the-moonlight-2014 | Romance | Stremio | +13 |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max | +16 |
-| 2014 | The 50 Year Argument | the-50-year-argument-2014 | Documental | Stremio | ATP |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus | +13 |
 | 2014 | The Grand Budapest Hotel | the-grand-budapest-hotel-2014 | Comedia | Disney Plus | +13 |
 | 2014 | Whiplash | whiplash-2014 | Drama | HBO Max | +12 |
@@ -455,13 +455,13 @@ Total de peliculas: 853
 | 2010 | Alice in Wonderland | alice-in-wonderland-2010 | Fantasia | Disney Plus | ATP |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
 | 2010 | Conocerás al hombre de tus sueños | you-will-meet-a-tall-dark-stranger-2010 | Drama | Stremio | +13 |
+| 2010 | Hablar en público | public-speaking-2010 | Documental | Stremio | ATP |
 | 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max | +12 |
 | 2010 | How to Train Your Dragon | how-to-train-your-dragon-2010 | Animacion | Stremio | ATP |
 | 2010 | Inception | inception-2010 | Ciencia ficcion | HBO Max + Prime Video | +13 |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus | +13 |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max | +13 |
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
-| 2010 | Public Speaking | public-speaking-2010 | Documental | Stremio | ATP |
 | 2010 | Shutter Island | shutter-island-2010 | Thriller | Stremio | +17 |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Stremio | +12 |
 | 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
@@ -550,13 +550,13 @@ Total de peliculas: 853
 | 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Stremio | +13 |
 | 2003 | Big Fish | big-fish-2003 | Drama | Stremio | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
-| 2003 | Feel Like Going Home | the-blues-feel-like-going-home-2003 | Documental | Stremio | ATP |
 | 2003 | Finding Nemo | finding-nemo-2003 | Animacion | Disney Plus | ATP |
 | 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | HBO Max | +17 |
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video | +13 |
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix | +18 |
 | 2003 | Oldboy | oldboy-2003 | Thriller | Stremio | +18 |
 | 2003 | Pirates of the Caribbean: The Curse of the Black Pearl | pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003 | Aventura | Disney Plus | ATP |
+| 2003 | Sentirse como en casa | the-blues-feel-like-going-home-2003 | Documental | Stremio | ATP |
 | 2003 | Terminator 3: Rise of the Machines | terminator-3-rise-of-the-machines-2003 | Accion | Stremio | +17 |
 | 2003 | The Lord of the Rings: The Return of the King | the-lord-of-the-rings-the-return-of-the-king-2003 | Drama | Prime Video | +13 |
 | 2003 | The Matrix Reloaded | matrix-reloaded-2003 | Ciencia ficcion | HBO Max | +17 |
@@ -695,7 +695,7 @@ Total de peliculas: 853
 | 1988 | Beetlejuice | beetlejuice-1988 | Comedia | HBO Max | +13 |
 | 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix | +13 |
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Stremio | +17 |
-| 1988 | Location Production Footage: The Last Temptation of Christ | the-last-temptation-of-christ-1988 | Drama | Stremio | +13 |
+| 1988 | La última tentación de Cristo | the-last-temptation-of-christ-1988 | Drama | Stremio | +13 |
 | 1988 | Muñeco diabólico | child-s-play-1988 | Terror | Prime Video | +16 |
 | 1988 | My Neighbor Totoro | my-neighbor-totoro-1988 | Anime | Netflix | ATP |
 | 1988 | Otra mujer | another-woman-1988 | Drama | Stremio | +13 |
@@ -771,7 +771,7 @@ Total de peliculas: 853
 | 1979 | Mad Max | mad-max-1979 | Accion | HBO Max | +18 |
 | 1979 | Manhattan | manhattan-1979 | Romance | Stremio | +13 |
 | 1979 | Rocky II | rocky-ii-1979 | Drama | Stremio | ATP |
-| 1978 | American Boy: A Profile of Steven Prince | american-boy-a-profile-of-steven-prince-1978 | Documental | Stremio | ATP |
+| 1978 | American Boy: perfil de Steven Prince | american-boy-a-profile-of-steven-prince-1978 | Documental | Stremio | ATP |
 | 1978 | El último vals | the-last-waltz-1978 | Documental | Stremio | ATP |
 | 1978 | Interiors | interiors-1978 | Drama | Stremio | +16 |
 | 1978 | La noche de Halloween | halloween-1978 | Terror | Stremio | +17 |
@@ -801,8 +801,8 @@ Total de peliculas: 853
 | 1971 | Bananas | bananas-1971 | Comedia | Stremio | ATP |
 | 1971 | Reto a la muerte | duel-1971 | Thriller | Stremio | +13 |
 | 1971 | The French Connection | the-french-connection-1971 | Crimen | Disney Plus | +17 |
+| 1970 | Escenas callejeras | street-scenes-1970-1970 | Documental | Stremio | ATP |
 | 1970 | Patton | patton-1970 | Drama | Disney Plus | ATP |
-| 1970 | Street Scenes | street-scenes-1970-1970 | Documental | Stremio | ATP |
 | 1969 | Midnight Cowboy | midnight-cowboy-1969 | Drama | Stremio | +17 |
 | 1969 | Toma el dinero y corre | take-the-money-and-run-1969 | Comedia | Stremio | +13 |
 | 1968 | 2001: A Space Odyssey | 2001-a-space-odyssey-1968 | Ciencia ficcion | HBO Max | ATP |
