@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-04-30. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-01. Fuente: src/data/movies/*.json
 
-Total de peliculas: 853
+Total de peliculas: 856
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -31,6 +31,7 @@ Total de peliculas: 853
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Stremio | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Cine | +13 |
+| 2026 | La Odisea | the-odyssey-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Cine | +17 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
@@ -571,6 +572,7 @@ Total de peliculas: 853
 | 2002 | Halloween: Resurrection | halloween-resurrection-2002 | Terror | Stremio | +17 |
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max | ATP |
 | 2002 | Minority Report | minority-report-2002 | Ciencia ficcion | Paramount Plus + Mercado Play | +13 |
+| 2002 | Noches blancas (Insomnia) | insomnia-2002 | Thriller | Stremio | +13 |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Stremio | +13 |
 | 2002 | Star Wars: Episode II - Attack of the Clones | star-wars-episode-ii-attack-of-the-clones-2002 | Ciencia ficcion | Disney Plus | +13 |
 | 2002 | The Lord of the Rings: The Two Towers | the-lord-of-the-rings-the-two-towers-2002 | Aventura | Stremio | +13 |
@@ -610,6 +612,7 @@ Total de peliculas: 853
 | 1999 | The Sixth Sense | the-sixth-sense-1999 | Thriller | Stremio | +13 |
 | 1998 | Blade | blade-1998 | Accion | HBO Max | +17 |
 | 1998 | Celebrity | celebrity-1998 | Comedia | Stremio | +13 |
+| 1998 | Following | following-1998 | Thriller | Stremio | +16 |
 | 1998 | Halloween: H20. Veinte años después | halloween-h20-20-years-later-1998 | Terror | Stremio | +17 |
 | 1998 | La novia de Chucky | bride-of-chucky-1998 | Terror | Prime Video | +13 |
 | 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix | +16 |
