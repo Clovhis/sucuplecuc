@@ -3,7 +3,6 @@ import {
 	type PostometroCatalogEntry,
 	type PostometroResultCard,
 	type PostometroPlatformOption,
-	type PostometroPreset,
 	getPostometroResultSet,
 } from '../lib/postometro-engine';
 
@@ -11,11 +10,9 @@ type PostometroPayload = {
 	catalog: PostometroCatalogEntry[];
 	platformOptions: PostometroPlatformOption[];
 	defaultAnswers: PostometroAnswers;
-	presets: PostometroPreset[];
 };
 
 type MutableState = {
-	activePresetId: string | null;
 	answers: PostometroAnswers;
 	comboOffset: number;
 	lastComboKey: string | null;
@@ -46,7 +43,6 @@ function initPostometro(
 		return;
 	}
 
-	const presetButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-postometro-preset]'));
 	const resetButton = document.querySelector<HTMLButtonElement>('[data-postometro-reset]');
 	const headline = resultsRoot.querySelector<HTMLElement>('[data-postometro-headline]');
 	const diagnosis = resultsRoot.querySelector<HTMLElement>('[data-postometro-diagnosis]');
@@ -59,7 +55,6 @@ function initPostometro(
 	}
 
 	const state: MutableState = {
-		activePresetId: detectPresetId(payload.presets, payload.defaultAnswers),
 		answers: { ...payload.defaultAnswers },
 		comboOffset: 0,
 		lastComboKey: null,
@@ -88,14 +83,6 @@ function initPostometro(
 			if (element instanceof HTMLSelectElement && element.name === 'era') {
 				element.value = answers.era;
 			}
-		}
-	};
-
-	const syncPresetUI = (): void => {
-		for (const button of presetButtons) {
-			const isActive = button.dataset.presetId === state.activePresetId;
-			button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-			button.classList.toggle('is-active', isActive);
 		}
 	};
 
@@ -184,44 +171,22 @@ function initPostometro(
 
 	const updateFromForm = (): void => {
 		state.answers = readAnswers(form, payload.defaultAnswers);
-		state.activePresetId = detectPresetId(payload.presets, state.answers);
 		state.rerollOffset = 0;
 		syncComboRotation();
-		syncPresetUI();
 		render();
 	};
 
 	applyAnswersToForm(state.answers);
 	syncComboRotation();
-	syncPresetUI();
 	render();
 
 	form.addEventListener('change', updateFromForm);
 
-	for (const button of presetButtons) {
-		button.addEventListener('click', () => {
-			const nextAnswers = parseAnswers(button.dataset.presetAnswers);
-			if (!nextAnswers) {
-				return;
-			}
-
-			state.answers = nextAnswers;
-			state.activePresetId = button.dataset.presetId ?? null;
-			state.rerollOffset = 0;
-			applyAnswersToForm(state.answers);
-			syncComboRotation();
-			syncPresetUI();
-			render();
-		});
-	}
-
 	resetButton?.addEventListener('click', () => {
 		state.answers = { ...payload.defaultAnswers };
-		state.activePresetId = detectPresetId(payload.presets, state.answers);
 		state.rerollOffset = 0;
 		applyAnswersToForm(state.answers);
 		syncComboRotation();
-		syncPresetUI();
 		render();
 	});
 
@@ -278,18 +243,6 @@ function parsePayload(raw: string | null): PostometroPayload | null {
 	}
 }
 
-function parseAnswers(raw: string | undefined): PostometroAnswers | null {
-	if (!raw) {
-		return null;
-	}
-
-	try {
-		return JSON.parse(raw) as PostometroAnswers;
-	} catch {
-		return null;
-	}
-}
-
 function readAnswers(form: HTMLFormElement, fallback: PostometroAnswers): PostometroAnswers {
 	const formData = new FormData(form);
 	return {
@@ -300,19 +253,6 @@ function readAnswers(form: HTMLFormElement, fallback: PostometroAnswers): Postom
 		intensity: String(formData.get('intensity') ?? fallback.intensity) as PostometroAnswers['intensity'],
 		era: String(formData.get('era') ?? fallback.era) as PostometroAnswers['era'],
 	};
-}
-
-function detectPresetId(presets: PostometroPreset[], answers: PostometroAnswers): string | null {
-	return (
-		presets.find((preset) =>
-			preset.answers.mood === answers.mood &&
-			preset.answers.time === answers.time &&
-			preset.answers.company === answers.company &&
-			preset.answers.platform === answers.platform &&
-			preset.answers.intensity === answers.intensity &&
-			preset.answers.era === answers.era,
-		)?.id ?? null
-	);
 }
 
 function rotateResults(results: PostometroResultCard[], offset: number): PostometroResultCard[] {

@@ -3381,7 +3381,6 @@ img {
 }
 
 .postometro-hero,
-.postometro-presets,
 .postometro-panel,
 .postometro-results {
 	border-radius: 24px;
@@ -3445,19 +3444,6 @@ img {
 	line-height: 1.55;
 }
 
-.postometro-presets {
-	display: grid;
-	gap: 0.95rem;
-	padding: 1.1rem 1.2rem 1.2rem;
-}
-
-.postometro-presets__header {
-	display: grid;
-	gap: 0.32rem;
-}
-
-.postometro-presets__header h2,
-.postometro-presets__header p,
 .postometro-panel__intro h2,
 .postometro-results__header h2,
 .postometro-results__diagnosis,
@@ -3467,62 +3453,14 @@ img {
 	margin: 0;
 }
 
-.postometro-presets__header h2,
 .postometro-panel__intro h2,
 .postometro-results__header h2 {
 	font-size: 1.12rem;
 }
 
-.postometro-presets__header p,
 .postometro-results__subheadline,
 .postometro-alternatives__header p {
 	color: #b5c2d7;
-}
-
-.postometro-presets__grid {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 0.75rem;
-}
-
-.postometro-preset {
-	display: grid;
-	gap: 0.35rem;
-	align-content: start;
-	padding: 0.95rem;
-	border-radius: 18px;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	background:
-		linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.018)),
-		rgba(255, 255, 255, 0.03);
-	color: inherit;
-	text-align: left;
-	cursor: pointer;
-	transition:
-		transform 0.18s ease,
-		border-color 0.18s ease,
-		background-color 0.18s ease;
-}
-
-.postometro-preset:hover,
-.postometro-preset:focus-visible,
-.postometro-preset.is-active {
-	transform: translateY(-2px);
-	border-color: rgba(255, 176, 137, 0.42);
-	background:
-		linear-gradient(180deg, rgba(255, 176, 137, 0.12), rgba(255, 176, 137, 0.03)),
-		rgba(255, 255, 255, 0.03);
-}
-
-.postometro-preset__label {
-	font-size: 0.94rem;
-	font-weight: 700;
-}
-
-.postometro-preset__copy {
-	color: #c4d0e3;
-	font-size: 0.88rem;
-	line-height: 1.45;
 }
 
 .postometro-shell {
@@ -3545,28 +3483,44 @@ img {
 
 .postometro-form {
 	display: grid;
-	gap: 1rem;
+	gap: 1.1rem;
 	margin-top: 1rem;
 }
 
 .postometro-fieldset {
 	display: grid;
-	gap: 0.7rem;
+	gap: 0.78rem;
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
 
+.postometro-fieldset--panel {
+	padding: 1rem;
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.018)),
+		rgba(255, 255, 255, 0.022);
+}
+
 .postometro-fieldset legend {
 	padding: 0;
 	color: #eef4ff;
-	font-size: 0.94rem;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.postometro-fieldset__hint {
+	margin: -0.2rem 0 0;
+	color: #b5c2d7;
+	font-size: 0.88rem;
+	line-height: 1.45;
 }
 
 .postometro-choice-grid {
 	display: grid;
-	gap: 0.72rem;
+	gap: 0.78rem;
 }
 
 .postometro-choice-grid--mood {
@@ -3594,7 +3548,7 @@ img {
 	display: grid;
 	gap: 0.38rem;
 	min-height: 100%;
-	padding: 0.9rem;
+	padding: 1rem;
 	border-radius: 18px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	background:
@@ -3609,12 +3563,12 @@ img {
 }
 
 .postometro-choice-card__body strong {
-	font-size: 0.92rem;
+	font-size: 0.95rem;
 }
 
 .postometro-choice-card__body span {
 	color: #c4cfdf;
-	font-size: 0.84rem;
+	font-size: 0.85rem;
 	line-height: 1.45;
 }
 
@@ -3634,48 +3588,48 @@ img {
 	color: #fff4ed;
 }
 
-.postometro-form__row {
+.postometro-chip-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
-}
-
-.postometro-chip-row {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.56rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.72rem;
 }
 
 .postometro-chip-option span {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
-	justify-content: center;
-	min-height: 2.35rem;
-	padding: 0.38rem 0.72rem;
-	border-radius: 999px;
+	justify-content: flex-start;
+	width: 100%;
+	min-height: 3.25rem;
+	padding: 0.78rem 0.95rem;
+	border-radius: 16px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
-	background: rgba(255, 255, 255, 0.03);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.038), rgba(255, 255, 255, 0.016)),
+		rgba(255, 255, 255, 0.024);
 	color: #dce5f4;
-	font-size: 0.78rem;
-	font-family: var(--font-mono);
-	letter-spacing: 0.04em;
+	font-size: 0.88rem;
+	font-weight: 700;
+	font-family: var(--font-sans);
+	letter-spacing: 0.01em;
 	text-transform: uppercase;
 	cursor: pointer;
 	transition:
 		transform 0.16s ease,
 		border-color 0.16s ease,
-		background-color 0.16s ease;
+		background-color 0.16s ease,
+		box-shadow 0.16s ease;
 }
 
 .postometro-chip-option input:checked + span,
 .postometro-chip-option:hover span,
 .postometro-chip-option:focus-within span {
-	transform: translateY(-1px);
+	transform: translateY(-2px);
 	border-color: rgba(117, 153, 255, 0.46);
 	background:
-		linear-gradient(180deg, rgba(117, 153, 255, 0.14), rgba(117, 153, 255, 0.04)),
+		linear-gradient(180deg, rgba(117, 153, 255, 0.16), rgba(117, 153, 255, 0.05)),
 		rgba(255, 255, 255, 0.03);
 	color: #eef4ff;
+	box-shadow: 0 16px 28px rgba(8, 12, 22, 0.16);
 }
 
 .postometro-select-field {
@@ -3706,8 +3660,10 @@ img {
 	color: #f3f6fb;
 }
 
-.postometro-form__row--bottom {
+.postometro-form__footer {
+	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+	gap: 1rem;
 	align-items: end;
 }
 
@@ -4796,10 +4752,6 @@ img {
 		grid-template-columns: 1fr;
 	}
 
-	.postometro-presets__grid {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
-
 	.postometro-shell {
 		grid-template-columns: 1fr;
 	}
@@ -4839,7 +4791,7 @@ img {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
-	.postometro-form__row {
+	.postometro-form__footer {
 		grid-template-columns: 1fr;
 	}
 
@@ -5006,7 +4958,6 @@ img {
 		padding-right: 0;
 	}
 
-	.postometro-presets,
 	.postometro-panel,
 	.postometro-results {
 		padding: 1rem;
@@ -5314,14 +5265,13 @@ img {
 	}
 
 	.postometro-hero,
-	.postometro-presets,
 	.postometro-panel,
 	.postometro-results {
 		border-radius: 18px;
 	}
 
-	.postometro-presets__grid,
-	.postometro-choice-grid--company {
+	.postometro-choice-grid--company,
+	.postometro-chip-grid {
 		grid-template-columns: 1fr;
 	}
 

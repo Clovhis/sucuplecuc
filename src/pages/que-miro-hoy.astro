@@ -9,7 +9,6 @@ import {
 	POSTOMETRO_ERA_OPTIONS,
 	POSTOMETRO_INTENSITY_OPTIONS,
 	POSTOMETRO_MOOD_OPTIONS,
-	POSTOMETRO_PRESETS,
 	POSTOMETRO_TIME_OPTIONS,
 } from '../lib/postometro';
 import { getMovies } from '../lib/movies';
@@ -23,9 +22,9 @@ const initialResults = getPostometroResultSet(postometroCatalog, initialAnswers,
 const primaryResult = initialResults.results[0] ?? null;
 const alternativeResults = initialResults.results.slice(1, 3);
 
-const pageTitle = `Qué miro hoy | El Postómetro de ${SITE_NAME}`;
+const pageTitle = `¿Qué vemos hoy? | ${SITE_NAME}`;
 const pageDescription =
-	'El Postómetro de Cine Posta recomienda una película según tu noche: humor, tiempo, compañía, plataforma y cuánto te bancás una peli liviana, intensa, densa o pochoclera.';
+	'¿Qué vemos hoy? de Cine Posta recomienda una película según tu noche: humor, tiempo, compañía, plataforma y cuánto te bancás una peli liviana, intensa, profunda o pochoclera.';
 const pageUrl = new URL(QUE_MIRO_HOY_PATH, SITE_URL).toString();
 const structuredData = [
 	{
@@ -51,7 +50,7 @@ const structuredData = [
 			{
 				'@type': 'ListItem',
 				position: 2,
-				name: 'Qué miro hoy',
+				name: 'Qué vemos hoy',
 				item: pageUrl,
 			},
 		],
@@ -62,7 +61,6 @@ const postometroData = JSON.stringify({
 	catalog: postometroCatalog,
 	platformOptions,
 	defaultAnswers: initialAnswers,
-	presets: POSTOMETRO_PRESETS,
 });
 ---
 
@@ -74,8 +72,7 @@ const postometroData = JSON.stringify({
 
 		<section class="postometro-hero fade-up" style="--item-delay: 0ms;">
 			<div class="postometro-hero__copy">
-				<p class="postometro-hero__eyebrow">Qué miro hoy</p>
-				<h1 class="postometro-hero__title">El Postómetro</h1>
+				<h1 class="postometro-hero__title">¿Qué vemos hoy?</h1>
 				<p class="postometro-hero__lead">
 					No te tira “cosas parecidas”. Te acomoda la noche. Elegís cómo venís y Cine Posta te baja una recomendación
 					concreta para hoy.
@@ -87,127 +84,15 @@ const postometroData = JSON.stringify({
 			</div>
 		</section>
 
-		<section class="postometro-presets fade-up" style="--item-delay: 60ms;" aria-labelledby="postometro-presets-title">
-			<div class="postometro-presets__header">
-				<h2 id="postometro-presets-title">Presets de noche</h2>
-				<p>Si venís fusilado, arrancá por un preset y después afinás.</p>
-			</div>
-			<div class="postometro-presets__grid" data-postometro-presets>
-				{
-					POSTOMETRO_PRESETS.map((preset, index) => (
-						<button
-							type="button"
-							class="postometro-preset"
-							data-postometro-preset
-							data-preset-id={preset.id}
-							data-preset-answers={JSON.stringify(preset.answers)}
-							aria-pressed={index === 2 ? 'true' : 'false'}
-						>
-							<span class="postometro-preset__label">{preset.label}</span>
-							<span class="postometro-preset__copy">{preset.description}</span>
-						</button>
-					))
-				}
-			</div>
-		</section>
-
 		<div class="postometro-shell">
-			<section class="postometro-panel fade-up" style="--item-delay: 120ms;" aria-labelledby="postometro-panel-title">
+			<section class="postometro-panel fade-up" style="--item-delay: 60ms;" aria-labelledby="postometro-panel-title">
 				<div class="postometro-panel__intro">
 					<p class="postometro-panel__eyebrow">Ajustá tu noche</p>
 					<h2 id="postometro-panel-title">Decime cómo venís y te tiro una</h2>
 				</div>
 
 				<form class="postometro-form" data-postometro-form>
-					<fieldset class="postometro-fieldset">
-						<legend>¿Qué buscás que te haga la peli?</legend>
-						<div class="postometro-choice-grid postometro-choice-grid--mood">
-							{
-								POSTOMETRO_MOOD_OPTIONS.map((option) => (
-									<label class="postometro-choice-card">
-										<input
-											type="radio"
-											name="mood"
-											value={option.id}
-											checked={option.id === initialAnswers.mood}
-											data-postometro-field="mood"
-										/>
-										<span class="postometro-choice-card__body">
-											<strong>{option.label}</strong>
-											<span>{option.description}</span>
-										</span>
-									</label>
-								))
-							}
-						</div>
-					</fieldset>
-
-					<fieldset class="postometro-fieldset">
-						<legend>¿Con quién la ves?</legend>
-						<div class="postometro-choice-grid postometro-choice-grid--company">
-							{
-								POSTOMETRO_COMPANY_OPTIONS.map((option) => (
-									<label class="postometro-choice-card postometro-choice-card--compact">
-										<input
-											type="radio"
-											name="company"
-											value={option.id}
-											checked={option.id === initialAnswers.company}
-											data-postometro-field="company"
-										/>
-										<span class="postometro-choice-card__body">
-											<strong>{option.label}</strong>
-											<span>{option.description}</span>
-										</span>
-									</label>
-								))
-							}
-						</div>
-					</fieldset>
-
-					<div class="postometro-form__row">
-						<fieldset class="postometro-fieldset">
-							<legend>¿Cuánto tiempo tenés?</legend>
-							<div class="postometro-chip-row">
-								{
-									POSTOMETRO_TIME_OPTIONS.map((option) => (
-										<label class="postometro-chip-option">
-											<input
-												type="radio"
-												name="time"
-												value={option.id}
-												checked={option.id === initialAnswers.time}
-												data-postometro-field="time"
-											/>
-											<span>{option.label}</span>
-										</label>
-									))
-								}
-							</div>
-						</fieldset>
-
-						<fieldset class="postometro-fieldset">
-							<legend>¿Qué tan cargada la bancás?</legend>
-							<div class="postometro-chip-row">
-								{
-									POSTOMETRO_INTENSITY_OPTIONS.map((option) => (
-										<label class="postometro-chip-option">
-											<input
-												type="radio"
-												name="intensity"
-												value={option.id}
-												checked={option.id === initialAnswers.intensity}
-												data-postometro-field="intensity"
-											/>
-											<span>{option.label}</span>
-										</label>
-									))
-								}
-							</div>
-						</fieldset>
-					</div>
-
-					<div class="postometro-form__row postometro-form__row--bottom">
+					<div class="postometro-form__footer">
 						<label class="postometro-select-field" for="postometro-era">
 							<span>¿De qué época?</span>
 							<select id="postometro-era" name="era" data-postometro-field="era">
@@ -240,12 +125,102 @@ const postometroData = JSON.stringify({
 							</button>
 						</div>
 					</div>
+
+					<fieldset class="postometro-fieldset postometro-fieldset--panel">
+						<legend>¿Qué buscás que te haga la peli?</legend>
+						<p class="postometro-fieldset__hint">Arrancá por el efecto que querés que te deje hoy.</p>
+						<div class="postometro-choice-grid postometro-choice-grid--mood">
+							{
+								POSTOMETRO_MOOD_OPTIONS.map((option) => (
+									<label class="postometro-choice-card">
+										<input
+											type="radio"
+											name="mood"
+											value={option.id}
+											checked={option.id === initialAnswers.mood}
+											data-postometro-field="mood"
+										/>
+										<span class="postometro-choice-card__body">
+											<strong>{option.label}</strong>
+											<span>{option.description}</span>
+										</span>
+									</label>
+								))
+							}
+						</div>
+					</fieldset>
+
+					<fieldset class="postometro-fieldset postometro-fieldset--panel">
+						<legend>¿Con quién la ves?</legend>
+						<p class="postometro-fieldset__hint">Esto cambia bastante qué tan rendidora conviene que sea.</p>
+						<div class="postometro-choice-grid postometro-choice-grid--company">
+							{
+								POSTOMETRO_COMPANY_OPTIONS.map((option) => (
+									<label class="postometro-choice-card postometro-choice-card--compact">
+										<input
+											type="radio"
+											name="company"
+											value={option.id}
+											checked={option.id === initialAnswers.company}
+											data-postometro-field="company"
+										/>
+										<span class="postometro-choice-card__body">
+											<strong>{option.label}</strong>
+											<span>{option.description}</span>
+										</span>
+									</label>
+								))
+							}
+						</div>
+					</fieldset>
+
+					<fieldset class="postometro-fieldset postometro-fieldset--panel">
+						<legend>¿Cuánto tiempo tenés?</legend>
+						<p class="postometro-fieldset__hint">Elegí el margen real que tenés, no el ideal.</p>
+						<div class="postometro-chip-grid">
+							{
+								POSTOMETRO_TIME_OPTIONS.map((option) => (
+									<label class="postometro-chip-option">
+										<input
+											type="radio"
+											name="time"
+											value={option.id}
+											checked={option.id === initialAnswers.time}
+											data-postometro-field="time"
+										/>
+										<span>{option.label}</span>
+									</label>
+								))
+							}
+						</div>
+					</fieldset>
+
+					<fieldset class="postometro-fieldset postometro-fieldset--panel">
+						<legend>¿Qué tan cargada la bancás?</legend>
+						<p class="postometro-fieldset__hint">Acá marcás si querés algo llevadero o una peli más pesada.</p>
+						<div class="postometro-chip-grid">
+							{
+								POSTOMETRO_INTENSITY_OPTIONS.map((option) => (
+									<label class="postometro-chip-option">
+										<input
+											type="radio"
+											name="intensity"
+											value={option.id}
+											checked={option.id === initialAnswers.intensity}
+											data-postometro-field="intensity"
+										/>
+										<span>{option.label}</span>
+									</label>
+								))
+							}
+						</div>
+					</fieldset>
 				</form>
 			</section>
 
 			<aside
 				class="postometro-results fade-up"
-				style="--item-delay: 180ms;"
+				style="--item-delay: 120ms;"
 				data-postometro-results
 				aria-live="polite"
 				aria-atomic="true"

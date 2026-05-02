@@ -118,7 +118,7 @@ const intensityOptionDescriptions: Record<PostometroIntensityId, string> = {
 	liviana: 'Que entre fácil y no se ponga densa al pedo.',
 	equilibrada: 'Algo con sustancia, pero sin castigo.',
 	intensa: 'Querés una peli que apriete fuerte.',
-	densa: 'Hoy te bancás algo más cargado o exigente.',
+	densa: 'Hoy querés algo más profundo, cargado o exigente.',
 };
 
 const eraOptionDescriptions: Record<PostometroEraId, string> = {
@@ -155,7 +155,7 @@ export const POSTOMETRO_INTENSITY_OPTIONS: PostometroOption<PostometroIntensityI
 	{ id: 'liviana', label: 'Liviana', description: intensityOptionDescriptions.liviana },
 	{ id: 'equilibrada', label: 'Con peso justo', description: intensityOptionDescriptions.equilibrada },
 	{ id: 'intensa', label: 'Intensa', description: intensityOptionDescriptions.intensa },
-	{ id: 'densa', label: 'Bien densa', description: intensityOptionDescriptions.densa },
+	{ id: 'densa', label: 'Profunda', description: intensityOptionDescriptions.densa },
 ];
 
 export const POSTOMETRO_ERA_OPTIONS: PostometroOption<PostometroEraId>[] = [
@@ -307,7 +307,7 @@ const intensityReasons: Record<PostometroIntensityId, string> = {
 	liviana: 'No se pone densa al pedo y entra bastante fácil.',
 	equilibrada: 'Tiene sustancia, pero no exige fumársela con manual.',
 	intensa: 'Aprieta bastante y no juega a media máquina.',
-	densa: 'Pide un poco más de cabeza y paciencia, justo lo que buscaste.',
+	densa: 'Tiene más capas y pide un poco más de cabeza, justo lo que buscaste.',
 };
 
 const companyRotationOffset: Record<PostometroCompanyId, number> = {
@@ -653,7 +653,7 @@ export function buildPostometroDiagnosis(answers: PostometroAnswers): string {
 		liviana: 'sin ponerse intensa al pedo',
 		equilibrada: 'con peso justo',
 		intensa: 'apretando fuerte',
-		densa: 'más cargada de lo normal',
+		densa: 'con bastante más profundidad',
 	}[answers.intensity];
 
 	const companyPart = {
@@ -813,7 +813,7 @@ export function getPostometroResultSet(
 				: 'Mantuvimos el mood y la compañía, pero abrimos plataforma para no venderte humo.',
 		note:
 			mode === 'strict'
-				? 'El Postómetro sale del catálogo editorial de Cine Posta.'
+				? 'Qué vemos hoy sale del catálogo editorial de Cine Posta.'
 				: `En ${platformLabel} no había una recomendación realmente redonda para ese combo. Mejor decirlo y abrir el abanico.`,
 		results,
 	};
