@@ -47,7 +47,6 @@ function initPostometro(
 	const headline = resultsRoot.querySelector<HTMLElement>('[data-postometro-headline]');
 	const diagnosis = resultsRoot.querySelector<HTMLElement>('[data-postometro-diagnosis]');
 	const subheadline = resultsRoot.querySelector<HTMLElement>('[data-postometro-subheadline]');
-	const note = resultsRoot.querySelector<HTMLElement>('[data-postometro-note]');
 	const body = resultsRoot.querySelector<HTMLElement>('[data-postometro-results-body]');
 
 	if (!(headline && diagnosis && subheadline && body)) {
@@ -99,11 +98,18 @@ function initPostometro(
 		headline.textContent = resultSet.headline;
 		diagnosis.textContent = resultSet.diagnosis;
 		subheadline.textContent = resultSet.subheadline;
-		if (note instanceof HTMLElement) {
-			note.textContent = resultSet.note;
-		}
 
 		if (rotatedResults.length === 0) {
+			if (resultSet.results.length === 0) {
+				body.innerHTML = `
+					<section class="postometro-empty" data-postometro-empty>
+						<h3>No hay una buena opción para ese combo</h3>
+						<p>${escapeHtml(resultSet.note)}</p>
+					</section>
+				`;
+				return;
+			}
+
 			body.innerHTML = `
 				<section class="postometro-empty" data-postometro-empty>
 					<h3>Te las viste todas para este combo</h3>
@@ -113,8 +119,7 @@ function initPostometro(
 			return;
 		}
 
-		const [primary, ...alternatives] = rotatedResults;
-		const nextAlternatives = alternatives.slice(0, 2);
+		const [primary] = rotatedResults;
 
 		body.innerHTML = `
 			<article class="postometro-pick postometro-pick--primary" data-postometro-primary>
@@ -157,15 +162,6 @@ function initPostometro(
 					</div>
 				</div>
 			</article>
-			<section class="postometro-alternatives" aria-labelledby="postometro-alternatives-title">
-				<div class="postometro-alternatives__header">
-					<h3 id="postometro-alternatives-title">Si esa ya la viste</h3>
-					<p data-postometro-note>${escapeHtml(resultSet.note)}</p>
-				</div>
-				<div class="postometro-alternatives__grid" data-postometro-alternatives>
-					${nextAlternatives.map(renderMiniCard).join('')}
-				</div>
-			</section>
 		`;
 	};
 
@@ -311,30 +307,6 @@ function saveSeenSlugs(seenSlugs: Set<string>): void {
 	} catch {
 		// Ignore storage failures and keep the session in memory only.
 	}
-}
-
-function renderMiniCard(result: PostometroResultCard): string {
-	return `
-		<article class="postometro-pick postometro-pick--mini">
-			<div class="postometro-pick__mini-poster-shell">
-				<img
-					class="postometro-pick__mini-poster"
-					src="${escapeHtml(result.posterUrl)}"
-					alt="Poster de ${escapeHtml(result.title)}"
-					loading="lazy"
-					decoding="async"
-					referrerpolicy="no-referrer"
-				/>
-			</div>
-			<div class="postometro-pick__mini-body">
-				<div class="postometro-pick__mini-top">
-					<span class="postometro-pill postometro-pill--muted">${escapeHtml(result.runtimeLabel)}</span>
-				</div>
-				<h4>${escapeHtml(result.title)}</h4>
-				<a class="postometro-text-link" href="${escapeHtml(result.url)}">Ir a la ficha</a>
-			</div>
-		</article>
-	`;
 }
 
 function escapeHtml(value: string): string {

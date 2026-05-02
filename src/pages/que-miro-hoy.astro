@@ -20,7 +20,6 @@ const platformOptions = getPostometroPlatformOptions(movies);
 const initialAnswers = DEFAULT_POSTOMETRO_ANSWERS;
 const initialResults = getPostometroResultSet(postometroCatalog, initialAnswers, platformOptions);
 const primaryResult = initialResults.results[0] ?? null;
-const alternativeResults = initialResults.results.slice(1, 3);
 
 const pageTitle = `¿Qué vemos hoy? | ${SITE_NAME}`;
 const pageDescription =
@@ -73,10 +72,6 @@ const postometroData = JSON.stringify({
 		<section class="postometro-hero fade-up" style="--item-delay: 0ms;">
 			<div class="postometro-hero__copy">
 				<h1 class="postometro-hero__title">¿Qué vemos hoy?</h1>
-				<p class="postometro-hero__lead">
-					No te tira “cosas parecidas”. Te acomoda la noche. Elegís cómo venís y Cine Posta te baja una recomendación
-					concreta para hoy.
-				</p>
 			</div>
 			<div class="postometro-hero__notes">
 				<p>Humor, tiempo disponible, compañía, plataforma y cuánto te bancás una peli intensa.</p>
@@ -278,45 +273,11 @@ const postometroData = JSON.stringify({
 										</div>
 									</div>
 								</article>
-
-								<section class="postometro-alternatives" aria-labelledby="postometro-alternatives-title">
-									<div class="postometro-alternatives__header">
-										<h3 id="postometro-alternatives-title">Si esa ya la viste</h3>
-										<p data-postometro-note>{initialResults.note}</p>
-									</div>
-									<div class="postometro-alternatives__grid" data-postometro-alternatives>
-										{
-											alternativeResults.map((result) => (
-												<article class="postometro-pick postometro-pick--mini">
-													<div class="postometro-pick__mini-poster-shell">
-														<img
-															class="postometro-pick__mini-poster"
-															src={result.posterUrl}
-															alt={`Poster de ${result.title}`}
-															loading="lazy"
-															decoding="async"
-															referrerpolicy="no-referrer"
-														/>
-													</div>
-													<div class="postometro-pick__mini-body">
-														<div class="postometro-pick__mini-top">
-															<span class="postometro-pill postometro-pill--muted">{result.runtimeLabel}</span>
-														</div>
-														<h4>{result.title}</h4>
-														<a class="postometro-text-link" href={result.url}>
-															Ir a la ficha
-														</a>
-													</div>
-												</article>
-											))
-										}
-									</div>
-								</section>
 							</>
 						) : (
 							<section class="postometro-empty" data-postometro-empty>
-								<h3>No salió una clara</h3>
-								<p>Probá abrir la plataforma o bajar la intensidad. Mejor eso antes que vender humo.</p>
+								<h3>No hay una buena opción para ese combo</h3>
+								<p>{initialResults.note}</p>
 							</section>
 						)
 					}

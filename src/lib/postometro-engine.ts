@@ -13,7 +13,7 @@ export type PostometroTimeId = 'flash' | 'normal' | 'larga' | 'sin-reloj';
 export type PostometroIntensityId = 'liviana' | 'equilibrada' | 'intensa' | 'densa';
 export type PostometroPlatformId = 'cualquiera' | string;
 export type PostometroEraId = 'cualquiera' | 'clasicos' | 'modernas' | 'recientes';
-export type PostometroResultMode = 'strict' | 'platform-fallback';
+export type PostometroResultMode = 'strict' | 'no-match';
 
 export interface PostometroAnswers {
 	mood: PostometroMoodId;
@@ -704,16 +704,16 @@ function getEligibleCatalog(entries: PostometroCatalogEntry[], answers: Postomet
 
 function narrowCatalogByMood(entries: PostometroCatalogEntry[], wanted: PostometroMoodId): PostometroCatalogEntry[] {
 	const exactMatches = entries.filter((entry) => getMoodFitTier(entry, wanted) === 0);
-	if (exactMatches.length >= 3) {
+	if (exactMatches.length > 0) {
 		return exactMatches;
 	}
 
 	const adjacentMatches = entries.filter((entry) => getMoodFitTier(entry, wanted) <= 1);
-	if (adjacentMatches.length >= 3) {
+	if (wanted !== 'sustos' && adjacentMatches.length > 0) {
 		return adjacentMatches;
 	}
 
-	return entries;
+	return [];
 }
 
 function hashString(value: string): number {
@@ -773,15 +773,45 @@ export function getPostometroResultSet(
 	limit = 12,
 ): PostometroResultSet {
 	const strictEntries = getEligibleCatalog(entries, answers, true);
-	const fallbackEntries =
-		answers.platform !== 'cualquiera' && strictEntries.length < 3
-			? getEligibleCatalog(entries, answers, false)
-			: strictEntries;
-	const mode: PostometroResultMode =
-		strictEntries.length >= 3 || answers.platform === 'cualquiera' ? 'strict' : 'platform-fallback';
+	const moodScopedEntries = narrowCatalogByMood(strictEntries, answers.mood);
+	const platformLabel = resolvePostometroPlatformLabel(answers.platform, platformOptions);
+	const moodLabel = POSTOMETRO_MOOD_OPTIONS.find((option) => option.id === answers.mood)?.label ?? answers.mood;
+
+	if (moodScopedEntries.length === 0) {
+		const platformContext =
+			answers.platform === 'cualquiera'
+				? 'para ese combo'
+				: platformLabel.toLowerCase() === 'en cines'
+					? 'en cines'
+					: `en ${platformLabel}`;
+		const platformNoteContext =
+			answers.platform === 'cualquiera'
+				? 'ese combo'
+				: platformLabel.toLowerCase() === 'en cines'
+					? 'en cines'
+					: `en ${platformLabel}`;
+
+		return {
+			mode: 'no-match',
+			diagnosis:
+				answers.platform === 'cualquiera'
+					? 'Con esa combinación no hay nada realmente compatible en el catálogo actual.'
+					: `Con ese mood y esa plataforma, hoy no hay nada que cierre de verdad ${platformContext}.`,
+			headline:
+				answers.platform === 'cualquiera'
+					? 'No hay una opción realmente redonda para ese combo'
+					: `No hay una opción para "${moodLabel}" ahora mismo ${platformContext}`,
+			subheadline: 'Mejor decirlo antes que chamuyarte una película que no corresponde.',
+			note:
+				answers.platform === 'cualquiera'
+					? 'Probá aflojar un filtro o cambiar el mood para abrir opciones reales.'
+					: `Probá otra plataforma o cambiá el mood. Hoy ${platformNoteContext} no da para vender humo.`,
+			results: [],
+		};
+	}
 
 	const rankedEntries = reorderRankedEntriesForVariety(
-		narrowCatalogByMood(fallbackEntries, answers.mood)
+		moodScopedEntries
 		.map((entry) => ({
 			entry,
 			score: scoreMovie(entry, answers),
@@ -798,23 +828,13 @@ export function getPostometroResultSet(
 	);
 
 	const results = rankedEntries.map(({ entry, score }) => buildResultCard(entry, answers, score));
-	const platformLabel = resolvePostometroPlatformLabel(answers.platform, platformOptions);
 
 	return {
-		mode,
+		mode: 'strict',
 		diagnosis: buildPostometroDiagnosis(answers),
-		headline:
-			mode === 'strict'
-				? 'La mejor chance para esta noche'
-				: 'No cerraba perfecto en esa plataforma',
-		subheadline:
-			mode === 'strict'
-				? 'Te dejamos una principal y un par más del mismo palo por si ya la viste.'
-				: 'Mantuvimos el mood y la compañía, pero abrimos plataforma para no venderte humo.',
-		note:
-			mode === 'strict'
-				? 'Qué vemos hoy sale del catálogo editorial de Cine Posta.'
-				: `En ${platformLabel} no había una recomendación realmente redonda para ese combo. Mejor decirlo y abrir el abanico.`,
+		headline: 'La mejor chance para esta noche',
+		subheadline: 'La elección sale de tu combo de hoy y del catálogo editorial del sitio.',
+		note: 'Qué vemos hoy sale del catálogo editorial de Cine Posta.',
 		results,
 	};
 }
