@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-05-01. Fuente: src/data/movies/*.json
 
-Total de peliculas: 856
+Total de peliculas: 857
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -37,6 +37,7 @@ Total de peliculas: 856
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
+| 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
 | 2026 | Michael | michael-2026 | Drama | Cine | +13 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
