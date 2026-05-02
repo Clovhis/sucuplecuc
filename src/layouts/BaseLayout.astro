@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { ABOUT_PATH, PRIVACY_PATH, SITE_LANGUAGE, SITE_LOCALE, SITE_NAME } from '../lib/seo';
+import { ABOUT_PATH, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_LANGUAGE, SITE_LOCALE, SITE_NAME } from '../lib/seo';
 import { DEFAULT_SUPABASE_URL } from '../lib/supabaseClient';
 
 interface Props {
@@ -43,6 +43,7 @@ const contentSecurityPolicy = [
 ].join('; ');
 const footerLinks = [
 	{ href: import.meta.env.BASE_URL, label: 'Inicio' },
+	{ href: QUE_MIRO_HOY_PATH, label: 'Qué miro hoy' },
 	{ href: ABOUT_PATH, label: 'Sobre Cine Posta' },
 	{ href: PRIVACY_PATH, label: 'Privacidad' },
 ];

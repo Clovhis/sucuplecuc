@@ -1,0 +1,29 @@
+---
+import { QUE_MIRO_HOY_PATH } from '../lib/seo';
+
+interface Props {
+	compact?: boolean;
+	className?: string;
+}
+
+const { compact = false, className = '' } = Astro.props as Props;
+const classes = ['postometro-teaser', compact ? 'postometro-teaser--compact' : '', className].filter(Boolean).join(' ');
+const titleId = compact ? 'postometro-teaser-title-compact' : 'postometro-teaser-title';
+---
+
+<section class={classes} aria-labelledby={titleId}>
+	<div class="postometro-teaser__copy">
+		<h2 id={titleId} class="postometro-teaser__title">
+			¿Qué miro hoy?
+		</h2>
+		<p class="postometro-teaser__lead">
+			El Postómetro te sugiere una película según tu noche: humor, tiempo, compañía, plataforma y tolerancia a la
+			intensidad.
+		</p>
+	</div>
+	<div class="postometro-teaser__actions">
+		<a class="postometro-teaser__link" href={QUE_MIRO_HOY_PATH}>
+			Probar el Postómetro
+		</a>
+	</div>
+</section>

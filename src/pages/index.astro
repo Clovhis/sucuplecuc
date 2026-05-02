@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CafecitoSupportersTicker from '../components/CafecitoSupportersTicker.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import MovieCard from '../components/MovieCard.astro';
+import PostometroTeaser from '../components/PostometroTeaser.astro';
 import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCafecitoSupporters } from '../lib/cafecitoSupporters';
 import { getCinemaNews } from '../lib/cinemaNews';
@@ -179,6 +180,7 @@ function formatUpcomingReleaseDate(value: string) {
 			movies.length > 0 ? (
 				<>
 					<section class="home-catalog__mobile-filters fade-up" style="--item-delay: 80ms;" aria-label="Filtros del catálogo en mobile">
+						<PostometroTeaser compact={true} />
 						{
 							platformOptions.length > 0 && (
 								<section class="home-platform-filter home-platform-filter--mobile" data-home-platform-filter>
@@ -232,6 +234,7 @@ function formatUpcomingReleaseDate(value: string) {
 							<h2 class="u-visually-hidden">Filtros del catálogo y próximos estrenos</h2>
 							<div class="catalog-shell__main">
 								<div class="catalog-shell__filters">
+									<PostometroTeaser />
 									{
 										featuredPeople.length > 0 && (
 											<section class="home-people-showcase" aria-label="Qué es Cine Posta">

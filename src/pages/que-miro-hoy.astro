@@ -1,0 +1,355 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+	createPostometroCatalogEntries,
+	DEFAULT_POSTOMETRO_ANSWERS,
+	getPostometroPlatformOptions,
+	getPostometroResultSet,
+	POSTOMETRO_COMPANY_OPTIONS,
+	POSTOMETRO_ERA_OPTIONS,
+	POSTOMETRO_INTENSITY_OPTIONS,
+	POSTOMETRO_MOOD_OPTIONS,
+	POSTOMETRO_PRESETS,
+	POSTOMETRO_TIME_OPTIONS,
+} from '../lib/postometro';
+import { getMovies } from '../lib/movies';
+import { QUE_MIRO_HOY_PATH, SITE_LANGUAGE, SITE_NAME, SITE_URL } from '../lib/seo';
+
+const movies = getMovies();
+const postometroCatalog = createPostometroCatalogEntries(movies);
+const platformOptions = getPostometroPlatformOptions(movies);
+const initialAnswers = DEFAULT_POSTOMETRO_ANSWERS;
+const initialResults = getPostometroResultSet(postometroCatalog, initialAnswers, platformOptions);
+const primaryResult = initialResults.results[0] ?? null;
+const alternativeResults = initialResults.results.slice(1, 3);
+
+const pageTitle = `Qué miro hoy | El Postómetro de ${SITE_NAME}`;
+const pageDescription =
+	'El Postómetro de Cine Posta recomienda una película según tu noche: humor, tiempo, compañía, plataforma y cuánto te bancás una peli liviana, intensa, densa o pochoclera.';
+const pageUrl = new URL(QUE_MIRO_HOY_PATH, SITE_URL).toString();
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		'@id': `${pageUrl}#webpage`,
+		url: pageUrl,
+		name: pageTitle,
+		description: pageDescription,
+		inLanguage: SITE_LANGUAGE,
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		'@id': `${pageUrl}#breadcrumb`,
+		itemListElement: [
+			{
+				'@type': 'ListItem',
+				position: 1,
+				name: SITE_NAME,
+				item: `${SITE_URL}/`,
+			},
+			{
+				'@type': 'ListItem',
+				position: 2,
+				name: 'Qué miro hoy',
+				item: pageUrl,
+			},
+		],
+	},
+];
+
+const postometroData = JSON.stringify({
+	catalog: postometroCatalog,
+	platformOptions,
+	defaultAnswers: initialAnswers,
+	presets: POSTOMETRO_PRESETS,
+});
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container postometro-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="postometro-hero fade-up" style="--item-delay: 0ms;">
+			<div class="postometro-hero__copy">
+				<p class="postometro-hero__eyebrow">Qué miro hoy</p>
+				<h1 class="postometro-hero__title">El Postómetro</h1>
+				<p class="postometro-hero__lead">
+					No te tira “cosas parecidas”. Te acomoda la noche. Elegís cómo venís y Cine Posta te baja una recomendación
+					concreta para hoy.
+				</p>
+			</div>
+			<div class="postometro-hero__notes">
+				<p>Humor, tiempo disponible, compañía, plataforma y cuánto te bancás una peli intensa.</p>
+				<p>Todo sale del catálogo editorial del sitio.</p>
+			</div>
+		</section>
+
+		<section class="postometro-presets fade-up" style="--item-delay: 60ms;" aria-labelledby="postometro-presets-title">
+			<div class="postometro-presets__header">
+				<h2 id="postometro-presets-title">Presets de noche</h2>
+				<p>Si venís fusilado, arrancá por un preset y después afinás.</p>
+			</div>
+			<div class="postometro-presets__grid" data-postometro-presets>
+				{
+					POSTOMETRO_PRESETS.map((preset, index) => (
+						<button
+							type="button"
+							class="postometro-preset"
+							data-postometro-preset
+							data-preset-id={preset.id}
+							data-preset-answers={JSON.stringify(preset.answers)}
+							aria-pressed={index === 2 ? 'true' : 'false'}
+						>
+							<span class="postometro-preset__label">{preset.label}</span>
+							<span class="postometro-preset__copy">{preset.description}</span>
+						</button>
+					))
+				}
+			</div>
+		</section>
+
+		<div class="postometro-shell">
+			<section class="postometro-panel fade-up" style="--item-delay: 120ms;" aria-labelledby="postometro-panel-title">
+				<div class="postometro-panel__intro">
+					<p class="postometro-panel__eyebrow">Ajustá tu noche</p>
+					<h2 id="postometro-panel-title">Decime cómo venís y te tiro una</h2>
+				</div>
+
+				<form class="postometro-form" data-postometro-form>
+					<fieldset class="postometro-fieldset">
+						<legend>¿Qué buscás que te haga la peli?</legend>
+						<div class="postometro-choice-grid postometro-choice-grid--mood">
+							{
+								POSTOMETRO_MOOD_OPTIONS.map((option) => (
+									<label class="postometro-choice-card">
+										<input
+											type="radio"
+											name="mood"
+											value={option.id}
+											checked={option.id === initialAnswers.mood}
+											data-postometro-field="mood"
+										/>
+										<span class="postometro-choice-card__body">
+											<strong>{option.label}</strong>
+											<span>{option.description}</span>
+										</span>
+									</label>
+								))
+							}
+						</div>
+					</fieldset>
+
+					<fieldset class="postometro-fieldset">
+						<legend>¿Con quién la ves?</legend>
+						<div class="postometro-choice-grid postometro-choice-grid--company">
+							{
+								POSTOMETRO_COMPANY_OPTIONS.map((option) => (
+									<label class="postometro-choice-card postometro-choice-card--compact">
+										<input
+											type="radio"
+											name="company"
+											value={option.id}
+											checked={option.id === initialAnswers.company}
+											data-postometro-field="company"
+										/>
+										<span class="postometro-choice-card__body">
+											<strong>{option.label}</strong>
+											<span>{option.description}</span>
+										</span>
+									</label>
+								))
+							}
+						</div>
+					</fieldset>
+
+					<div class="postometro-form__row">
+						<fieldset class="postometro-fieldset">
+							<legend>¿Cuánto tiempo tenés?</legend>
+							<div class="postometro-chip-row">
+								{
+									POSTOMETRO_TIME_OPTIONS.map((option) => (
+										<label class="postometro-chip-option">
+											<input
+												type="radio"
+												name="time"
+												value={option.id}
+												checked={option.id === initialAnswers.time}
+												data-postometro-field="time"
+											/>
+											<span>{option.label}</span>
+										</label>
+									))
+								}
+							</div>
+						</fieldset>
+
+						<fieldset class="postometro-fieldset">
+							<legend>¿Qué tan cargada la bancás?</legend>
+							<div class="postometro-chip-row">
+								{
+									POSTOMETRO_INTENSITY_OPTIONS.map((option) => (
+										<label class="postometro-chip-option">
+											<input
+												type="radio"
+												name="intensity"
+												value={option.id}
+												checked={option.id === initialAnswers.intensity}
+												data-postometro-field="intensity"
+											/>
+											<span>{option.label}</span>
+										</label>
+									))
+								}
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="postometro-form__row postometro-form__row--bottom">
+						<label class="postometro-select-field" for="postometro-era">
+							<span>¿De qué época?</span>
+							<select id="postometro-era" name="era" data-postometro-field="era">
+								{
+									POSTOMETRO_ERA_OPTIONS.map((option) => (
+										<option value={option.id} selected={option.id === initialAnswers.era}>
+											{option.label}
+										</option>
+									))
+								}
+							</select>
+						</label>
+
+						<label class="postometro-select-field" for="postometro-platform">
+							<span>¿Dónde la querés ver?</span>
+							<select id="postometro-platform" name="platform" data-postometro-field="platform">
+								{
+									platformOptions.map((option) => (
+										<option value={option.id} selected={option.id === initialAnswers.platform}>
+											{option.label}
+										</option>
+									))
+								}
+							</select>
+						</label>
+
+						<div class="postometro-form__actions">
+							<button type="button" class="page-action" data-postometro-reset>
+								Resetear noche
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+
+			<aside
+				class="postometro-results fade-up"
+				style="--item-delay: 180ms;"
+				data-postometro-results
+				aria-live="polite"
+				aria-atomic="true"
+			>
+				<div class="postometro-results__header">
+					<p class="postometro-results__eyebrow">Diagnóstico de hoy</p>
+					<h2 data-postometro-headline>{initialResults.headline}</h2>
+					<p class="postometro-results__diagnosis" data-postometro-diagnosis>{initialResults.diagnosis}</p>
+					<p class="postometro-results__subheadline" data-postometro-subheadline>{initialResults.subheadline}</p>
+				</div>
+
+				<div class="postometro-results__body" data-postometro-results-body>
+					{
+						primaryResult ? (
+							<>
+								<article class="postometro-pick postometro-pick--primary" data-postometro-primary>
+									<div class="postometro-pick__poster-shell">
+										<img
+											class="postometro-pick__poster"
+											src={primaryResult.posterUrl}
+											alt={`Poster de ${primaryResult.title}`}
+											loading="eager"
+											decoding="async"
+											referrerpolicy="no-referrer"
+										/>
+									</div>
+									<div class="postometro-pick__body">
+										<div class="postometro-pick__meta-top">
+											<span class="postometro-pill">{primaryResult.matchLabel}</span>
+											<span class="postometro-pill postometro-pill--muted">{primaryResult.year}</span>
+										</div>
+										<h3>{primaryResult.title}</h3>
+										<p class="postometro-pick__review">{primaryResult.review}</p>
+										<ul class="postometro-badge-list">
+											{primaryResult.badges.map((badge) => <li>{badge}</li>)}
+										</ul>
+										<ul class="postometro-reason-list">
+											{primaryResult.reasons.map((reason) => <li>{reason}</li>)}
+										</ul>
+										<div class="postometro-pick__actions">
+											<a class="postometro-cta" href={primaryResult.url}>
+												Ver ficha completa
+											</a>
+											<button
+												type="button"
+												class="postometro-cta postometro-cta--quiet"
+												data-postometro-dismiss
+												data-postometro-slug={primaryResult.slug}
+											>
+												Ya la vi
+											</button>
+											<button type="button" class="postometro-cta postometro-cta--ghost" data-postometro-reroll>
+												Dame otra del mismo palo
+											</button>
+										</div>
+									</div>
+								</article>
+
+								<section class="postometro-alternatives" aria-labelledby="postometro-alternatives-title">
+									<div class="postometro-alternatives__header">
+										<h3 id="postometro-alternatives-title">Si esa ya la viste</h3>
+										<p data-postometro-note>{initialResults.note}</p>
+									</div>
+									<div class="postometro-alternatives__grid" data-postometro-alternatives>
+										{
+											alternativeResults.map((result) => (
+												<article class="postometro-pick postometro-pick--mini">
+													<div class="postometro-pick__mini-poster-shell">
+														<img
+															class="postometro-pick__mini-poster"
+															src={result.posterUrl}
+															alt={`Poster de ${result.title}`}
+															loading="lazy"
+															decoding="async"
+															referrerpolicy="no-referrer"
+														/>
+													</div>
+													<div class="postometro-pick__mini-body">
+														<div class="postometro-pick__mini-top">
+															<span class="postometro-pill postometro-pill--muted">{result.runtimeLabel}</span>
+														</div>
+														<h4>{result.title}</h4>
+														<a class="postometro-text-link" href={result.url}>
+															Ir a la ficha
+														</a>
+													</div>
+												</article>
+											))
+										}
+									</div>
+								</section>
+							</>
+						) : (
+							<section class="postometro-empty" data-postometro-empty>
+								<h3>No salió una clara</h3>
+								<p>Probá abrir la plataforma o bajar la intensidad. Mejor eso antes que vender humo.</p>
+							</section>
+						)
+					}
+				</div>
+			</aside>
+		</div>
+	</main>
+</BaseLayout>
+
+<script is:inline id="postometro-data" type="application/json" set:html={postometroData}></script>
+<script src="../scripts/postometro.ts"></script>
