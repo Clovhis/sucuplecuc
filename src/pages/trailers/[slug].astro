@@ -1,10 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import {
 	getMoviePath,
-	getMoviePlatformLabel,
-	getMoviePlatforms,
 	getMovies,
 	getPosterUrl,
 	getYoutubeEmbedUrl,
@@ -28,8 +25,6 @@ const trailerEmbedUrl = getYoutubeEmbedUrl(movie.trailerYoutubeId);
 const trailerWatchUrl = getYoutubeWatchUrl(movie.trailerYoutubeId);
 const trailerThumbnailUrl = getYoutubeThumbnailUrl(movie.trailerYoutubeId) || getPosterUrl(movie.poster);
 const movieUrl = getMoviePath(movie.slug);
-const moviePlatforms = getMoviePlatforms(movie);
-const moviePlatformLabel = getMoviePlatformLabel(movie);
 const pageTitle = `Trailer oficial de ${movie.title} (${movie.year}) | Cine Posta`;
 const pageDescription = `Mirá el trailer oficial de ${movie.title} (${movie.year}) y volvés a la reseña completa en Cine Posta.`;
 const structuredData = createTrailerPageStructuredData(movie, pageTitle, pageDescription);
@@ -52,16 +47,7 @@ const structuredData = createTrailerPageStructuredData(movie, pageTitle, pageDes
 			<header class="trailer-watch__header">
 				<p class="trailer-watch__eyebrow">Trailer oficial</p>
 				<h1 class="trailer-watch__title">{movie.title}</h1>
-				<p class="trailer-watch__dek">{pageDescription}</p>
-				<div class="trailer-watch__meta">
-					<span>{movie.year}</span>
-					{moviePlatforms.length > 0 && (
-						<>
-							<span>{moviePlatformLabel}</span>
-							<PlatformBadgeGroup platforms={moviePlatforms} />
-						</>
-					)}
-				</div>
+				<p class="trailer-watch__dek">Página de visualización del trailer de {movie.title} ({movie.year}).</p>
 			</header>
 
 			<section class="trailer-shell trailer-shell--watch" aria-label={`Reproductor del trailer de ${movie.title}`}>
@@ -88,33 +74,15 @@ const structuredData = createTrailerPageStructuredData(movie, pageTitle, pageDes
 				</div>
 			</section>
 
-			<section class="trailer-watch__summary" aria-label="Ficha breve de la película">
-				<div class="trailer-watch__poster-card">
-					<img
-						class="trailer-watch__poster"
-						src={getPosterUrl(movie.poster)}
-						alt={`Poster de ${movie.title}`}
-						loading="lazy"
-						referrerpolicy="no-referrer"
-					/>
-				</div>
+			<section class="trailer-watch__summary" aria-label="Contexto breve de la película">
 				<div class="trailer-watch__copy">
 					<p class="trailer-watch__summary-kicker">Sinopsis</p>
 					<p class="trailer-watch__summary-text">{movie.synopsis}</p>
-					<dl class="trailer-watch__facts">
-						<div>
-							<dt>Dirección</dt>
-							<dd>{movie.director}</dd>
-						</div>
-						<div>
-							<dt>Elenco</dt>
-							<dd>{movie.mainCast.slice(0, 4).join(', ')}</dd>
-						</div>
-						<div>
-							<dt>Productora</dt>
-							<dd>{movie.productionCompany}</dd>
-						</div>
-					</dl>
+					<p class="trailer-watch__summary-text">
+						Si querés el contexto completo y el veredicto, seguí a la
+						{' '}
+						<a href={movieUrl}>reseña de {movie.title}</a>.
+					</p>
 				</div>
 			</section>
 		</article>
