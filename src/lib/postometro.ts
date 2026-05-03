@@ -16,6 +16,7 @@ export * from './postometro-engine';
 import type {
 	PostometroCatalogEntry,
 	PostometroCompanyId,
+	PostometroFirstInstallment,
 	PostometroIntensityId,
 	PostometroMoodId,
 	PostometroPlatformOption,
@@ -303,6 +304,56 @@ function inferGroupFits(
 	return [...fits];
 }
 
+function stripSequelMarker(value: string): string | null {
+	const normalized = value.trim();
+	const withoutMarker = normalized
+		.replace(/\s*(?::|-|,)?\s*(?:part|parte|chapter|capitulo|capítulo|vol\.?|volume)\s*\b(?:2|two|ii|segunda parte)$/i, '')
+		.replace(/\s*(?::|-|,)?\s*\b(?:2|two|ii)$/i, '')
+		.trim();
+
+	return withoutMarker && withoutMarker !== normalized ? withoutMarker : null;
+}
+
+function getFirstInstallmentFallback(movie: Movie): PostometroFirstInstallment | undefined {
+	const firstTitle = stripSequelMarker(movie.title) ?? stripSequelMarker(movie.originalTitle);
+	if (!firstTitle) {
+		return undefined;
+	}
+
+	return {
+		title: firstTitle,
+	};
+}
+
+function getFirstInstallment(movie: Movie, moviesBySlug: Map<string, Movie>): PostometroFirstInstallment | undefined {
+	const fallback = getFirstInstallmentFallback(movie);
+	if (!fallback) {
+		return undefined;
+	}
+
+	const normalizedFirstTitle = normalizeSearchText(fallback.title);
+	const editorialCandidates = movie.editorial?.becauseYouLiked ?? [];
+	const catalogMatch = editorialCandidates
+		.map((slug) => moviesBySlug.get(slug))
+		.find(
+			(candidate) =>
+				candidate !== undefined &&
+				candidate.year < movie.year &&
+				(normalizeSearchText(candidate.title) === normalizedFirstTitle ||
+					normalizeSearchText(candidate.originalTitle) === normalizedFirstTitle),
+		);
+
+	if (catalogMatch) {
+		return {
+			title: catalogMatch.title,
+			year: catalogMatch.year,
+			url: getMoviePath(catalogMatch.slug),
+		};
+	}
+
+	return fallback;
+}
+
 export function getPostometroPlatformOptions(movies: Movie[]): PostometroPlatformOption[] {
 	return [
 		{
@@ -323,6 +374,8 @@ export function getPostometroPlatformOptions(movies: Movie[]): PostometroPlatfor
 export function createPostometroCatalogEntries(movies: Movie[]): PostometroCatalogEntry[] {
 	// The engine stays data-driven so new catalog entries start participating automatically
 	// as soon as they expose the same base metadata the site already stores.
+	const moviesBySlug = new Map(movies.map((movie) => [movie.slug, movie]));
+
 	return movies.map((movie) => {
 		const normalizedText = buildNormalizedText(movie);
 		const recommendationGenres = getRecommendationGenres(movie);
@@ -330,6 +383,7 @@ export function createPostometroCatalogEntries(movies: Movie[]): PostometroCatal
 		const intensities = inferIntensities(movie, normalizedText, recommendationGenres, moods);
 		const isFamilyReady = inferFamilyReadiness(movie, normalizedText, recommendationGenres, moods, intensities);
 		const groupFits = inferGroupFits(moods, intensities, isFamilyReady);
+		const firstInstallment = getFirstInstallment(movie, moviesBySlug);
 
 		return {
 			slug: movie.slug,
@@ -352,6 +406,7 @@ export function createPostometroCatalogEntries(movies: Movie[]): PostometroCatal
 			groupFits,
 			isFamilyReady,
 			isArgentinian: isArgentinianMovie(movie),
+			...(firstInstallment ? { firstInstallment } : {}),
 		};
 	});
 }

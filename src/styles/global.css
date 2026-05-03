@@ -3865,6 +3865,10 @@ img {
 	animation-delay: 540ms;
 }
 
+.postometro-pick--reveal .postometro-pick__body > :nth-child(7) {
+	animation-delay: 620ms;
+}
+
 .postometro-pick__meta-top,
 .postometro-pick__mini-top {
 	display: flex;
@@ -3958,6 +3962,33 @@ img {
 	border-radius: 999px;
 	background: rgba(255, 176, 137, 0.68);
 	box-shadow: 0 0 0 4px rgba(255, 176, 137, 0.08);
+}
+
+.postometro-first-note {
+	margin: 0;
+	max-width: 52ch;
+	padding: 0.72rem 0.82rem;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.035);
+	color: #cdd8ea;
+	font-size: 0.84rem;
+	line-height: 1.45;
+}
+
+.postometro-first-note a,
+.postometro-first-note strong {
+	color: #fff1e8;
+	font-weight: 700;
+}
+
+.postometro-first-note a {
+	text-decoration: none;
+}
+
+.postometro-first-note a:hover,
+.postometro-first-note a:focus-visible {
+	text-decoration: underline;
 }
 
 .postometro-pick__actions {

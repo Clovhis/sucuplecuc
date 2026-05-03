@@ -64,6 +64,13 @@ export interface PostometroCatalogEntry {
 	groupFits: PostometroCompanyId[];
 	isFamilyReady: boolean;
 	isArgentinian: boolean;
+	firstInstallment?: PostometroFirstInstallment;
+}
+
+export interface PostometroFirstInstallment {
+	title: string;
+	year?: number;
+	url?: string;
 }
 
 export interface PostometroResultCard {
@@ -81,6 +88,7 @@ export interface PostometroResultCard {
 	badges: string[];
 	matchLabel: string;
 	score: number;
+	firstInstallment?: PostometroFirstInstallment;
 }
 
 export interface PostometroResultSet {
@@ -636,6 +644,7 @@ function buildResultCard(entry: PostometroCatalogEntry, answers: PostometroAnswe
 		badges: buildBadges(entry),
 		matchLabel: getMatchLabel(score),
 		score,
+		...(entry.firstInstallment ? { firstInstallment: entry.firstInstallment } : {}),
 	};
 }
 

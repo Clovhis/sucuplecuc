@@ -20,6 +20,7 @@ type MutableState = {
 	comboOffset: number;
 	rerollOffset: number;
 	seenSlugs: Set<string>;
+	skippedSlugs: Set<string>;
 	hasSearched: boolean;
 	isLoading: boolean;
 	searchTimer: number | null;
@@ -27,6 +28,7 @@ type MutableState = {
 
 const POSTOMETRO_ROTATION_STORAGE_KEY = 'postometro-combo-rotation-v1';
 const POSTOMETRO_SEEN_STORAGE_KEY = 'postometro-seen-v1';
+const POSTOMETRO_SKIPPED_STORAGE_KEY = 'postometro-skipped-v1';
 const POSTOMETRO_RESULT_LIMIT = 40;
 const LOADING_MIN_MS = 3000;
 const LOADING_MAX_MS = 6000;
@@ -119,6 +121,7 @@ function initPostometro(
 		comboOffset: 0,
 		rerollOffset: 0,
 		seenSlugs: loadSeenSlugs(),
+		skippedSlugs: loadSkippedSlugs(),
 		hasSearched: false,
 		isLoading: false,
 		searchTimer: null,
@@ -242,7 +245,10 @@ function initPostometro(
 			payload.platformOptions,
 			POSTOMETRO_RESULT_LIMIT,
 		);
-		const availableResults = resultSet.results.filter((result) => !state.seenSlugs.has(result.slug) && result.slug !== excludedSlug);
+		const unavailableSlugs = new Set([...state.seenSlugs, ...state.skippedSlugs]);
+		const availableResults = resultSet.results.filter(
+			(result) => !unavailableSlugs.has(result.slug) && result.slug !== excludedSlug,
+		);
 
 		headline.textContent = resultSet.headline;
 		diagnosis.textContent = resultSet.diagnosis;
@@ -317,6 +323,7 @@ function initPostometro(
 					<ul class="postometro-reason-list">
 						${primary.reasons.map((reason) => `<li>${escapeHtml(reason)}</li>`).join('')}
 					</ul>
+					${renderFirstInstallmentNote(primary)}
 					<div class="postometro-pick__actions">
 						<a class="postometro-cta" href="${escapeHtml(primary.url)}">Ver ficha completa</a>
 						<button
@@ -402,7 +409,12 @@ function initPostometro(
 		const rerollButton = target.closest<HTMLButtonElement>('[data-postometro-reroll]');
 		if (rerollButton instanceof HTMLButtonElement) {
 			const currentPick = resultsRoot.querySelector<HTMLElement>('[data-postometro-primary-slug]');
-			performSearch('reroll', currentPick?.dataset.postometroPrimarySlug ?? null);
+			const currentSlug = currentPick?.dataset.postometroPrimarySlug ?? null;
+			if (currentSlug) {
+				state.skippedSlugs.add(currentSlug);
+				saveSkippedSlugs(state.skippedSlugs);
+			}
+			performSearch('reroll', currentSlug);
 			return;
 		}
 
@@ -506,8 +518,24 @@ function getSelectedFieldLabel(form: HTMLFormElement, fieldName: string): string
 }
 
 function loadSeenSlugs(): Set<string> {
+	return loadSlugSet(POSTOMETRO_SEEN_STORAGE_KEY);
+}
+
+function saveSeenSlugs(seenSlugs: Set<string>): void {
+	saveSlugSet(POSTOMETRO_SEEN_STORAGE_KEY, seenSlugs);
+}
+
+function loadSkippedSlugs(): Set<string> {
+	return loadSlugSet(POSTOMETRO_SKIPPED_STORAGE_KEY);
+}
+
+function saveSkippedSlugs(skippedSlugs: Set<string>): void {
+	saveSlugSet(POSTOMETRO_SKIPPED_STORAGE_KEY, skippedSlugs);
+}
+
+function loadSlugSet(storageKey: string): Set<string> {
 	try {
-		const raw = window.sessionStorage.getItem(POSTOMETRO_SEEN_STORAGE_KEY);
+		const raw = window.sessionStorage.getItem(storageKey);
 		const parsed = raw ? (JSON.parse(raw) as string[]) : [];
 		return new Set(parsed.filter(Boolean));
 	} catch {
@@ -515,12 +543,30 @@ function loadSeenSlugs(): Set<string> {
 	}
 }
 
-function saveSeenSlugs(seenSlugs: Set<string>): void {
+function saveSlugSet(storageKey: string, slugs: Set<string>): void {
 	try {
-		window.sessionStorage.setItem(POSTOMETRO_SEEN_STORAGE_KEY, JSON.stringify([...seenSlugs]));
+		window.sessionStorage.setItem(storageKey, JSON.stringify([...slugs]));
 	} catch {
 		// Ignore storage failures and keep the session in memory only.
 	}
+}
+
+function renderFirstInstallmentNote(primary: PostometroResultCard): string {
+	if (!primary.firstInstallment) {
+		return '';
+	}
+
+	const year = primary.firstInstallment.year ? ` (${String(primary.firstInstallment.year)})` : '';
+	const label = `${primary.firstInstallment.title}${year}`;
+	const recommendation = primary.firstInstallment.url
+		? `<a href="${escapeHtml(primary.firstInstallment.url)}">${escapeHtml(label)}</a>`
+		: `<strong>${escapeHtml(label)}</strong>`;
+
+	return `
+		<p class="postometro-first-note">
+			Es secuela: si no viste la primera, también te dejo ${recommendation}.
+		</p>
+	`;
 }
 
 function getRandomInt(min: number, max: number): number {
