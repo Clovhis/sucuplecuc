@@ -1,8 +1,8 @@
 import {
 	type PostometroAnswers,
 	type PostometroCatalogEntry,
-	type PostometroResultCard,
 	type PostometroPlatformOption,
+	type PostometroResultCard,
 	getPostometroResultSet,
 } from '../lib/postometro-engine';
 
@@ -12,17 +12,78 @@ type PostometroPayload = {
 	defaultAnswers: PostometroAnswers;
 };
 
+type SearchTrigger = 'search' | 'reroll' | 'dismiss';
+type IdleMode = 'initial' | 'changed' | 'reset';
+
 type MutableState = {
 	answers: PostometroAnswers;
 	comboOffset: number;
-	lastComboKey: string | null;
 	rerollOffset: number;
 	seenSlugs: Set<string>;
+	hasSearched: boolean;
+	isLoading: boolean;
+	searchTimer: number | null;
 };
 
 const POSTOMETRO_ROTATION_STORAGE_KEY = 'postometro-combo-rotation-v1';
 const POSTOMETRO_SEEN_STORAGE_KEY = 'postometro-seen-v1';
 const POSTOMETRO_RESULT_LIMIT = 40;
+const LOADING_MIN_MS = 3000;
+const LOADING_MAX_MS = 6000;
+const LOADING_PHRASES = [
+	'Bancame que voy a buscarla al sotano y vuelvo.',
+	'Estoy sacando polvo de una estanteria sospechosamente larga.',
+	'Le estoy preguntando al catalogo si hoy se porta bien.',
+	'Un segundo, que el proyector se hizo el interesante.',
+	'Estoy peleando con una pila de DVDs que no colabora.',
+	'Bajando al archivo secreto donde viven las recomendaciones posta.',
+	'Ya casi, se trabo una lata de pochoclos en el mecanismo.',
+	'Le estoy cebando un mate al algoritmo para que afloje.',
+	'Espera que rebobino esta intuicion cinematografica.',
+	'Buscando una que no te haga sentir que perdiste la noche.',
+	'Estoy revisando la seccion de pelis que entran como piña.',
+	'Le pedi al catalogo algo digno y se puso exquisito.',
+	'Bancame que estoy corriendo a un critico que se quiso colar.',
+	'Volviendo con una recomendacion abajo del brazo.',
+	'Hay una peli escondida atras de una italiana de 3 horas.',
+	'Chequeando que no te mande cualquier verdura.',
+	'Buscando una que no pida tesis ni siesta.',
+	'Metiendome entre estantes como quien busca una botella fria.',
+	'Un toque, que la linterna del videoclub titila.',
+	'Rastreando una opcion que no te haga putear despues.',
+	'Le estoy diciendo al catalogo que no se haga el gracioso.',
+	'Ya vuelvo, me quede enganchado mirando un poster viejo.',
+	'Buscando algo fino, no una recomendacion de compromiso.',
+	'Se me cayo una carpeta de thrillers. Dame un segundo.',
+	'Pisando fuerte por el pasillo de las que rinden de verdad.',
+	'Abriendo una puerta que dice no tocar. Ideal.',
+	'Le estoy pidiendo a la noche que defina sus intenciones.',
+	'Filtrando las que prometen mucho y entregan poco.',
+	'Bancame que la respuesta estaba en una caja sin rotulo.',
+	'Buscando una que pegue justo con el humor de hoy.',
+	'El catalogo me tiro tres joyitas y una chantada. Estoy separando.',
+	'Un segundo, que esta recomendacion viene con ceremonia.',
+	'Chequeando si hoy pinta cine o una trompada emocional.',
+	'Entrando al cuarto donde guardamos las pelis rendidoras.',
+	'Le estoy haciendo un control de calidad a esta noche.',
+	'Me vino una candidata fuerte, pero quiero una mejor.',
+	'Buscando algo que te deje conforme y no filosofando de bronca.',
+	'Ya casi, se cruzaron dos clasicos y un pochoclo en la puerta.',
+	'Le estoy pasando un peine fino a la cartelera.',
+	'Un toque, que una comedia se quiso hacer pasar por tension.',
+	'Viendo si hoy va mas Burton, Spielberg o una cachetada seca.',
+	'La recomendacion esta en proceso de marinado.',
+	'Revisando que no te encaje una peli que ya viste mil veces.',
+	'Bancame que la mejor opcion estaba en segunda fila.',
+	'Estoy evitando que entre una obviedad por la ventana.',
+	'Ya vuelvo, hay una candidata que pide pista.',
+	'Buscando una para esta noche sin vender humo.',
+	'Separando lo intenso de lo inflado, que no es lo mismo.',
+	'Metiendo mano en el deposito donde viven las buenas decisiones.',
+	'Le estoy sacando la funda a una opcion muy digna.',
+	'Espera que el sotano tiene eco y no escucho al catalogo.',
+];
+
 const dataScript = document.getElementById('postometro-data');
 const form = document.querySelector<HTMLFormElement>('[data-postometro-form]');
 const resultsRoot = document.querySelector<HTMLElement>('[data-postometro-results]');
@@ -43,7 +104,7 @@ function initPostometro(
 		return;
 	}
 
-	const resetButton = document.querySelector<HTMLButtonElement>('[data-postometro-reset]');
+	const resetButton = form.querySelector<HTMLButtonElement>('[data-postometro-reset]');
 	const headline = resultsRoot.querySelector<HTMLElement>('[data-postometro-headline]');
 	const diagnosis = resultsRoot.querySelector<HTMLElement>('[data-postometro-diagnosis]');
 	const subheadline = resultsRoot.querySelector<HTMLElement>('[data-postometro-subheadline]');
@@ -56,19 +117,11 @@ function initPostometro(
 	const state: MutableState = {
 		answers: { ...payload.defaultAnswers },
 		comboOffset: 0,
-		lastComboKey: null,
 		rerollOffset: 0,
 		seenSlugs: loadSeenSlugs(),
-	};
-
-	const syncComboRotation = (): void => {
-		const comboKey = buildAnswerKey(state.answers);
-		if (comboKey === state.lastComboKey) {
-			return;
-		}
-
-		state.lastComboKey = comboKey;
-		state.comboOffset = getNextComboOffset(comboKey);
+		hasSearched: false,
+		isLoading: false,
+		searchTimer: null,
 	};
 
 	const applyAnswersToForm = (answers: PostometroAnswers): void => {
@@ -85,21 +138,127 @@ function initPostometro(
 		}
 	};
 
-	const render = (): void => {
+	const setBusy = (busy: boolean): void => {
+		state.isLoading = busy;
+		resultsRoot.setAttribute('aria-busy', busy ? 'true' : 'false');
+
+		for (const element of Array.from(form.elements)) {
+			if (element instanceof HTMLInputElement || element instanceof HTMLSelectElement || element instanceof HTMLButtonElement) {
+				element.disabled = busy;
+			}
+		}
+	};
+
+	const clearTimers = (): void => {
+		if (state.searchTimer !== null) {
+			window.clearTimeout(state.searchTimer);
+			state.searchTimer = null;
+		}
+	};
+
+	const renderIdle = (mode: IdleMode): void => {
+		clearTimers();
+		resultsRoot.dataset.postometroState = 'idle';
+		setBusy(false);
+		state.hasSearched = false;
+
+		if (mode === 'changed') {
+			headline.textContent = 'Cambiaste el combo';
+			diagnosis.textContent = 'La recomendación anterior ya no vale para estos filtros.';
+			subheadline.textContent = 'Tocá buscar de nuevo y sale una nueva para esta noche.';
+			body.innerHTML = `
+				<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
+					<h3>Listo para volver a buscar</h3>
+					<p>Con este combo nuevo, la película aparece recién cuando apretes <strong>Buscar película</strong>.</p>
+				</section>
+			`;
+			return;
+		}
+
+		headline.textContent = 'Cuando busques, aparece la recomendación';
+		diagnosis.textContent = 'Primero armá el combo de la noche. Después apretás el botón y vemos qué peli entra mejor.';
+		subheadline.textContent = 'Acá no sale nada hasta que dispares la búsqueda.';
+		body.innerHTML = `
+			<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
+				<h3>Tu película todavía no salió</h3>
+				<p>Elegí los filtros y tocá <strong>Buscar película</strong> para arrancar.</p>
+			</section>
+		`;
+	};
+
+	const setLoadingPhrase = (): void => {
+		const phraseNode = body.querySelector<HTMLElement>('[data-postometro-loading-phrase]');
+		if (!(phraseNode instanceof HTMLElement)) {
+			return;
+		}
+
+		phraseNode.textContent = LOADING_PHRASES[getRandomInt(0, LOADING_PHRASES.length - 1)] ?? '';
+	};
+
+	const renderLoading = (): void => {
+		resultsRoot.dataset.postometroState = 'loading';
+		headline.textContent = 'Buscando película';
+		diagnosis.textContent = 'Estamos cruzando tu combo para sacar una recomendación que tenga sentido.';
+		subheadline.textContent = 'Humor, compañía, tiempo, plataforma y época. Todo entra en la mezcla.';
+
+		const pills = [
+			getSelectedFieldLabel(form, 'era'),
+			getSelectedFieldLabel(form, 'platform'),
+			getSelectedFieldLabel(form, 'mood'),
+			getSelectedFieldLabel(form, 'company'),
+			getSelectedFieldLabel(form, 'time'),
+			getSelectedFieldLabel(form, 'intensity'),
+		].filter(Boolean);
+
+		body.innerHTML = `
+			<section class="postometro-loading" data-postometro-loading>
+				<div class="postometro-loading__marquee" aria-hidden="true">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<p class="postometro-loading__eyebrow">Buscando película</p>
+				<h3>Estamos revolviendo el catálogo para esta noche</h3>
+				<p class="postometro-loading__phrase" data-postometro-loading-phrase></p>
+				<ul class="postometro-loading__chips">
+					${pills.map((pill) => `<li>${escapeHtml(pill)}</li>`).join('')}
+				</ul>
+				<div class="postometro-loading__meter" aria-hidden="true">
+					<span></span>
+				</div>
+			</section>
+		`;
+
+		setLoadingPhrase();
+	};
+
+	const renderResultSet = (trigger: SearchTrigger, excludedSlug: string | null): void => {
+		clearTimers();
+		resultsRoot.dataset.postometroState = 'ready';
+
 		const resultSet = getPostometroResultSet(
 			payload.catalog,
 			state.answers,
 			payload.platformOptions,
 			POSTOMETRO_RESULT_LIMIT,
 		);
-		const availableResults = resultSet.results.filter((result) => !state.seenSlugs.has(result.slug));
-		const rotatedResults = rotateResults(availableResults, state.comboOffset + state.rerollOffset);
+		const availableResults = resultSet.results.filter((result) => !state.seenSlugs.has(result.slug) && result.slug !== excludedSlug);
 
 		headline.textContent = resultSet.headline;
 		diagnosis.textContent = resultSet.diagnosis;
 		subheadline.textContent = resultSet.subheadline;
 
-		if (rotatedResults.length === 0) {
+		if (trigger === 'reroll' && availableResults.length === 0) {
+			body.innerHTML = `
+				<section class="postometro-empty" data-postometro-empty>
+					<h3>No encontré otra del mismo palo</h3>
+					<p>Para este combo ya no quedó una variante clara. Cambiá un filtro o marcá otra como vista.</p>
+				</section>
+			`;
+			return;
+		}
+
+		if (availableResults.length === 0) {
 			if (resultSet.results.length === 0) {
 				body.innerHTML = `
 					<section class="postometro-empty" data-postometro-empty>
@@ -113,17 +272,29 @@ function initPostometro(
 			body.innerHTML = `
 				<section class="postometro-empty" data-postometro-empty>
 					<h3>Te las viste todas para este combo</h3>
-					<p>Probá cambiar un filtro o pegá un reroll en otra combinación. En esta sesión ya sacamos las que marcaste como vistas.</p>
+					<p>En esta sesión ya sacamos todas las que marcaste como vistas. Cambiá un filtro y te tiro otra tanda.</p>
 				</section>
 			`;
 			return;
 		}
 
-		const [primary] = rotatedResults;
+		const offset = trigger === 'search' ? state.comboOffset : state.rerollOffset;
+		const rotatedResults = rotateResults(availableResults, offset, trigger !== 'search');
+		const primary = rotatedResults[0];
+
+		if (!primary) {
+			body.innerHTML = `
+				<section class="postometro-empty" data-postometro-empty>
+					<h3>No salió una clara</h3>
+					<p>Probá cambiar el combo y tirar otra búsqueda.</p>
+				</section>
+			`;
+			return;
+		}
 
 		body.innerHTML = `
-			<article class="postometro-pick postometro-pick--primary" data-postometro-primary>
-				<div class="postometro-pick__poster-shell">
+			<article class="postometro-pick postometro-pick--primary postometro-pick--reveal" data-postometro-primary data-postometro-primary-slug="${escapeHtml(primary.slug)}">
+				<div class="postometro-pick__poster-shell postometro-pick__poster-shell--reveal">
 					<img
 						class="postometro-pick__poster"
 						src="${escapeHtml(primary.posterUrl)}"
@@ -165,48 +336,73 @@ function initPostometro(
 		`;
 	};
 
-	const updateFromForm = (): void => {
+	const performSearch = (trigger: SearchTrigger, excludedSlug: string | null = null): void => {
+		if (state.isLoading) {
+			return;
+		}
+
 		state.answers = readAnswers(form, payload.defaultAnswers);
-		state.rerollOffset = 0;
-		syncComboRotation();
-		render();
+
+		if (trigger === 'search') {
+			state.comboOffset = getNextComboOffset(buildAnswerKey(state.answers));
+			state.rerollOffset = 0;
+		} else if (trigger === 'reroll') {
+			state.rerollOffset += 1;
+		} else {
+			state.rerollOffset = 0;
+		}
+
+		renderLoading();
+		setBusy(true);
+
+		state.searchTimer = window.setTimeout(() => {
+			state.searchTimer = null;
+			state.hasSearched = true;
+			setBusy(false);
+			renderResultSet(trigger, excludedSlug);
+		}, getRandomInt(LOADING_MIN_MS, LOADING_MAX_MS));
 	};
 
 	applyAnswersToForm(state.answers);
-	syncComboRotation();
-	render();
+	renderIdle('initial');
 
-	form.addEventListener('change', updateFromForm);
+	form.addEventListener('submit', (event) => {
+		event.preventDefault();
+		performSearch('search');
+	});
+
+	form.addEventListener('change', () => {
+		if (state.isLoading) {
+			return;
+		}
+
+		state.answers = readAnswers(form, payload.defaultAnswers);
+		state.rerollOffset = 0;
+		renderIdle(state.hasSearched ? 'changed' : 'initial');
+	});
 
 	resetButton?.addEventListener('click', () => {
+		if (state.isLoading) {
+			return;
+		}
+
 		state.answers = { ...payload.defaultAnswers };
+		state.comboOffset = 0;
 		state.rerollOffset = 0;
 		applyAnswersToForm(state.answers);
-		syncComboRotation();
-		render();
+		renderIdle('reset');
 	});
 
 	resultsRoot.addEventListener('click', (event: MouseEvent) => {
 		const target = event.target;
-		if (!(target instanceof Element)) {
+		if (!(target instanceof Element) || state.isLoading) {
 			return;
 		}
 
 		const rerollButton = target.closest<HTMLButtonElement>('[data-postometro-reroll]');
 		if (rerollButton instanceof HTMLButtonElement) {
-			const resultSet = getPostometroResultSet(
-				payload.catalog,
-				state.answers,
-				payload.platformOptions,
-				POSTOMETRO_RESULT_LIMIT,
-			);
-			const availableResults = resultSet.results.filter((result) => !state.seenSlugs.has(result.slug));
-			if (availableResults.length <= 1) {
-				return;
-			}
-
-			state.rerollOffset = (state.rerollOffset + 1) % Math.min(availableResults.length, 8);
-			render();
+			const currentPick = resultsRoot.querySelector<HTMLElement>('[data-postometro-primary-slug]');
+			performSearch('reroll', currentPick?.dataset.postometroPrimarySlug ?? null);
 			return;
 		}
 
@@ -221,9 +417,8 @@ function initPostometro(
 		}
 
 		state.seenSlugs.add(slug);
-		state.rerollOffset = 0;
 		saveSeenSlugs(state.seenSlugs);
-		render();
+		performSearch('dismiss');
 	});
 }
 
@@ -251,16 +446,18 @@ function readAnswers(form: HTMLFormElement, fallback: PostometroAnswers): Postom
 	};
 }
 
-function rotateResults(results: PostometroResultCard[], offset: number): PostometroResultCard[] {
+function rotateResults(results: PostometroResultCard[], offset: number, expandedPool: boolean): PostometroResultCard[] {
 	if (results.length === 0) {
 		return [];
 	}
 
 	const topScore = results[0]?.score ?? 0;
-	const primaryPoolSize = Math.min(
-		results.filter((result) => result.score >= topScore - 20).length,
-		6,
-	);
+	const scorePoolSize = results.filter((result) => result.score >= topScore - 20).length;
+	let primaryPoolSize = Math.min(scorePoolSize, 6);
+
+	if (expandedPool && primaryPoolSize <= 1 && results.length > 1) {
+		primaryPoolSize = Math.min(results.length, 8);
+	}
 
 	if (primaryPoolSize <= 1) {
 		return results;
@@ -291,6 +488,23 @@ function getNextComboOffset(comboKey: string): number {
 	}
 }
 
+function getSelectedFieldLabel(form: HTMLFormElement, fieldName: string): string {
+	const checkedRadio = form.querySelector<HTMLInputElement>(`input[name="${fieldName}"]:checked`);
+	if (checkedRadio) {
+		const label = checkedRadio.closest('label');
+		const title = label?.querySelector('strong')?.textContent?.trim();
+		const fallback = label?.querySelector('span')?.textContent?.trim();
+		return title ?? fallback ?? checkedRadio.value;
+	}
+
+	const select = form.querySelector<HTMLSelectElement>(`select[name="${fieldName}"]`);
+	if (select) {
+		return select.selectedOptions[0]?.textContent?.trim() ?? select.value;
+	}
+
+	return fieldName;
+}
+
 function loadSeenSlugs(): Set<string> {
 	try {
 		const raw = window.sessionStorage.getItem(POSTOMETRO_SEEN_STORAGE_KEY);
@@ -307,6 +521,12 @@ function saveSeenSlugs(seenSlugs: Set<string>): void {
 	} catch {
 		// Ignore storage failures and keep the session in memory only.
 	}
+}
+
+function getRandomInt(min: number, max: number): number {
+	const lower = Math.ceil(min);
+	const upper = Math.floor(max);
+	return Math.floor(Math.random() * (upper - lower + 1)) + lower;
 }
 
 function escapeHtml(value: string): string {

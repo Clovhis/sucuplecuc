@@ -3656,14 +3656,73 @@ img {
 
 .postometro-form__footer {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 1rem;
 	align-items: end;
 }
 
 .postometro-form__actions {
-	display: flex;
-	justify-content: flex-end;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 0.85rem;
+	align-items: stretch;
+}
+
+.postometro-search-cta {
+	display: grid;
+	gap: 0.28rem;
+	align-content: center;
+	min-height: 4.8rem;
+	padding: 0.95rem 1rem;
+	border-radius: 18px;
+	border: 1px solid rgba(255, 176, 137, 0.38);
+	background:
+		radial-gradient(circle at 100% 0, rgba(255, 176, 137, 0.22), transparent 0 36%),
+		linear-gradient(180deg, rgba(255, 176, 137, 0.14), rgba(255, 176, 137, 0.05)),
+		rgba(255, 255, 255, 0.035);
+	color: #fff4ed;
+	text-align: left;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.06),
+		0 20px 34px rgba(9, 12, 19, 0.22);
+	transition:
+		transform 0.18s ease,
+		border-color 0.18s ease,
+		box-shadow 0.18s ease,
+		background-color 0.18s ease;
+}
+
+.postometro-search-cta:hover,
+.postometro-search-cta:focus-visible {
+	transform: translateY(-2px);
+	border-color: rgba(255, 176, 137, 0.52);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.08),
+		0 24px 40px rgba(9, 12, 19, 0.26);
+}
+
+.postometro-search-cta:disabled {
+	opacity: 0.78;
+	transform: none;
+	cursor: progress;
+}
+
+.postometro-search-cta__eyebrow {
+	color: rgba(255, 241, 232, 0.82);
+	font-size: 0.72rem;
+	font-family: var(--font-mono);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.postometro-search-cta strong {
+	font-size: 1.2rem;
+	line-height: 1.05;
+}
+
+.postometro-search-cta small {
+	color: #f2ddcf;
+	font-size: 0.9rem;
 }
 
 .postometro-results {
@@ -3671,6 +3730,7 @@ img {
 	top: 1rem;
 	display: grid;
 	gap: 1rem;
+	overflow: hidden;
 }
 
 .postometro-results__diagnosis {
@@ -3682,6 +3742,7 @@ img {
 .postometro-results__body {
 	display: grid;
 	gap: 0;
+	min-height: 25rem;
 }
 
 .postometro-pick {
@@ -3714,10 +3775,49 @@ img {
 	object-fit: cover;
 }
 
+.postometro-pick--reveal {
+	animation: postometro-card-rise 560ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.postometro-pick--reveal .postometro-pick__poster-shell--reveal {
+	animation: postometro-poster-reveal 820ms cubic-bezier(0.18, 0.8, 0.22, 1);
+	transform-origin: center center;
+}
+
 .postometro-pick__body {
 	display: grid;
 	gap: 0.92rem;
 	align-content: start;
+}
+
+.postometro-pick--reveal .postometro-pick__body > * {
+	opacity: 0;
+	transform: translateY(14px);
+	animation: postometro-copy-rise 460ms ease forwards;
+}
+
+.postometro-pick--reveal .postometro-pick__body > :nth-child(1) {
+	animation-delay: 140ms;
+}
+
+.postometro-pick--reveal .postometro-pick__body > :nth-child(2) {
+	animation-delay: 220ms;
+}
+
+.postometro-pick--reveal .postometro-pick__body > :nth-child(3) {
+	animation-delay: 300ms;
+}
+
+.postometro-pick--reveal .postometro-pick__body > :nth-child(4) {
+	animation-delay: 380ms;
+}
+
+.postometro-pick--reveal .postometro-pick__body > :nth-child(5) {
+	animation-delay: 460ms;
+}
+
+.postometro-pick--reveal .postometro-pick__body > :nth-child(6) {
+	animation-delay: 540ms;
 }
 
 .postometro-pick__meta-top,
@@ -3867,10 +3967,16 @@ img {
 }
 
 .postometro-empty {
-	padding: 1rem;
+	display: grid;
+	gap: 0.65rem;
+	align-content: center;
+	min-height: 100%;
+	padding: 1.15rem;
 	border-radius: 18px;
 	border: 1px dashed rgba(255, 255, 255, 0.14);
-	background: rgba(255, 255, 255, 0.03);
+	background:
+		radial-gradient(circle at 100% 0, rgba(117, 153, 255, 0.12), transparent 0 38%),
+		rgba(255, 255, 255, 0.03);
 }
 
 .postometro-empty h3,
@@ -3879,8 +3985,191 @@ img {
 }
 
 .postometro-empty p {
-	margin-top: 0.45rem;
 	color: #c2cede;
+}
+
+.postometro-empty--idle {
+	background:
+		radial-gradient(circle at 0 0, rgba(255, 176, 137, 0.14), transparent 0 34%),
+		radial-gradient(circle at 100% 100%, rgba(117, 153, 255, 0.12), transparent 0 38%),
+		rgba(255, 255, 255, 0.03);
+}
+
+.postometro-loading {
+	display: grid;
+	gap: 1rem;
+	align-content: center;
+	min-height: 100%;
+	padding: 1.2rem;
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background:
+		radial-gradient(circle at 100% 0, rgba(255, 176, 137, 0.14), transparent 0 34%),
+		radial-gradient(circle at 0 100%, rgba(117, 153, 255, 0.12), transparent 0 36%),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
+		rgba(255, 255, 255, 0.03);
+}
+
+.postometro-loading__marquee {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.48rem;
+}
+
+.postometro-loading__marquee span {
+	width: 0.68rem;
+	height: 0.68rem;
+	border-radius: 999px;
+	background: linear-gradient(180deg, #ffb089, #7599ff);
+	box-shadow: 0 0 0 6px rgba(255, 176, 137, 0.08);
+	animation: postometro-loading-bob 980ms ease-in-out infinite;
+}
+
+.postometro-loading__marquee span:nth-child(2) {
+	animation-delay: 120ms;
+}
+
+.postometro-loading__marquee span:nth-child(3) {
+	animation-delay: 240ms;
+}
+
+.postometro-loading__eyebrow {
+	margin: 0;
+	color: var(--accent-soft);
+	font-size: 0.74rem;
+	font-family: var(--font-mono);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.postometro-loading h3,
+.postometro-loading__phrase {
+	margin: 0;
+}
+
+.postometro-loading h3 {
+	font-size: clamp(1.35rem, 2vw + 0.8rem, 1.9rem);
+	line-height: 1.05;
+	max-width: 16ch;
+}
+
+.postometro-loading__phrase {
+	min-height: 3.4rem;
+	color: #dce7f8;
+	font-size: 1rem;
+	line-height: 1.55;
+	text-wrap: balance;
+}
+
+.postometro-loading__chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.48rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.postometro-loading__chips li {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.3rem 0.56rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.05);
+	color: #eef4ff;
+	font-size: 0.72rem;
+	font-family: var(--font-mono);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.postometro-loading__meter {
+	position: relative;
+	height: 0.62rem;
+	border-radius: 999px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.postometro-loading__meter span {
+	position: absolute;
+	inset: 0;
+	width: 34%;
+	border-radius: inherit;
+	background: linear-gradient(90deg, rgba(117, 153, 255, 0.78), rgba(255, 176, 137, 0.92));
+	box-shadow: 0 0 18px rgba(255, 176, 137, 0.26);
+	animation: postometro-meter-sweep 1.65s ease-in-out infinite;
+}
+
+@keyframes postometro-loading-bob {
+	0%,
+	100% {
+		transform: translateY(0) scale(1);
+		opacity: 0.72;
+	}
+
+	50% {
+		transform: translateY(-5px) scale(1.08);
+		opacity: 1;
+	}
+}
+
+@keyframes postometro-meter-sweep {
+	0% {
+		transform: translateX(-110%);
+	}
+
+	50% {
+		transform: translateX(115%);
+	}
+
+	100% {
+		transform: translateX(275%);
+	}
+}
+
+@keyframes postometro-card-rise {
+	0% {
+		opacity: 0;
+		transform: translateY(24px) scale(0.985);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes postometro-poster-reveal {
+	0% {
+		opacity: 0;
+		transform: scale(0.9) rotate(-1.4deg);
+		filter: blur(18px) saturate(0.8);
+	}
+
+	55% {
+		opacity: 1;
+		transform: scale(1.03) rotate(0.4deg);
+		filter: blur(0) saturate(1.06);
+	}
+
+	100% {
+		transform: scale(1) rotate(0);
+		filter: blur(0) saturate(1);
+	}
+}
+
+@keyframes postometro-copy-rise {
+	0% {
+		opacity: 0;
+		transform: translateY(14px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .about-page,
@@ -4761,6 +5050,10 @@ img {
 		grid-template-columns: 1fr;
 	}
 
+	.postometro-form__actions {
+		grid-template-columns: 1fr;
+	}
+
 	.site-footer__inner {
 		flex-direction: column;
 		align-items: flex-start;
@@ -4929,12 +5222,20 @@ img {
 		padding: 1rem;
 	}
 
+	.postometro-results__body {
+		min-height: 0;
+	}
+
 	.postometro-choice-grid--mood {
 		grid-template-columns: 1fr;
 	}
 
 	.postometro-pick__poster-shell {
 		max-width: 260px;
+	}
+
+	.postometro-loading__phrase {
+		min-height: 4.8rem;
 	}
 
 	.about-page__hero,
@@ -5250,9 +5551,15 @@ img {
 	}
 
 	.postometro-cta,
-	.postometro-cta--ghost {
+	.postometro-cta--ghost,
+	.postometro-search-cta,
+	.postometro-form__actions .page-action {
 		width: 100%;
 		justify-self: stretch;
+	}
+
+	.postometro-search-cta {
+		min-height: 4.2rem;
 	}
 
 	.home-platform-filter--mobile .home-platform-filter__chips {

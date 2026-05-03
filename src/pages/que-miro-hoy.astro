@@ -4,7 +4,6 @@ import {
 	createPostometroCatalogEntries,
 	DEFAULT_POSTOMETRO_ANSWERS,
 	getPostometroPlatformOptions,
-	getPostometroResultSet,
 	POSTOMETRO_COMPANY_OPTIONS,
 	POSTOMETRO_ERA_OPTIONS,
 	POSTOMETRO_INTENSITY_OPTIONS,
@@ -18,8 +17,6 @@ const movies = getMovies();
 const postometroCatalog = createPostometroCatalogEntries(movies);
 const platformOptions = getPostometroPlatformOptions(movies);
 const initialAnswers = DEFAULT_POSTOMETRO_ANSWERS;
-const initialResults = getPostometroResultSet(postometroCatalog, initialAnswers, platformOptions);
-const primaryResult = initialResults.results[0] ?? null;
 
 const pageTitle = `¿Qué vemos hoy? | ${SITE_NAME}`;
 const pageDescription =
@@ -113,12 +110,6 @@ const postometroData = JSON.stringify({
 								}
 							</select>
 						</label>
-
-						<div class="postometro-form__actions">
-							<button type="button" class="page-action" data-postometro-reset>
-								Resetear noche
-							</button>
-						</div>
 					</div>
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
@@ -210,6 +201,17 @@ const postometroData = JSON.stringify({
 							}
 						</div>
 					</fieldset>
+
+					<div class="postometro-form__actions">
+						<button type="submit" class="postometro-search-cta" data-postometro-search>
+							<span class="postometro-search-cta__eyebrow">Listo el combo</span>
+							<strong>Buscar película</strong>
+							<small>Dispará la recomendación para esta noche</small>
+						</button>
+						<button type="button" class="page-action" data-postometro-reset>
+							Resetear noche
+						</button>
+					</div>
 				</form>
 			</section>
 
@@ -222,65 +224,20 @@ const postometroData = JSON.stringify({
 			>
 				<div class="postometro-results__header">
 					<p class="postometro-results__eyebrow">Diagnóstico de hoy</p>
-					<h2 data-postometro-headline>{initialResults.headline}</h2>
-					<p class="postometro-results__diagnosis" data-postometro-diagnosis>{initialResults.diagnosis}</p>
-					<p class="postometro-results__subheadline" data-postometro-subheadline>{initialResults.subheadline}</p>
+					<h2 data-postometro-headline>Cuando busques, aparece la recomendación</h2>
+					<p class="postometro-results__diagnosis" data-postometro-diagnosis>
+						Primero armá el combo de la noche. Después apretás el botón y vemos qué peli entra mejor.
+					</p>
+					<p class="postometro-results__subheadline" data-postometro-subheadline>
+						Acá no sale nada hasta que dispares la búsqueda.
+					</p>
 				</div>
 
 				<div class="postometro-results__body" data-postometro-results-body>
-					{
-						primaryResult ? (
-							<>
-								<article class="postometro-pick postometro-pick--primary" data-postometro-primary>
-									<div class="postometro-pick__poster-shell">
-										<img
-											class="postometro-pick__poster"
-											src={primaryResult.posterUrl}
-											alt={`Poster de ${primaryResult.title}`}
-											loading="eager"
-											decoding="async"
-											referrerpolicy="no-referrer"
-										/>
-									</div>
-									<div class="postometro-pick__body">
-										<div class="postometro-pick__meta-top">
-											<span class="postometro-pill">{primaryResult.matchLabel}</span>
-											<span class="postometro-pill postometro-pill--muted">{primaryResult.year}</span>
-										</div>
-										<h3>{primaryResult.title}</h3>
-										<p class="postometro-pick__review">{primaryResult.review}</p>
-										<ul class="postometro-badge-list">
-											{primaryResult.badges.map((badge) => <li>{badge}</li>)}
-										</ul>
-										<ul class="postometro-reason-list">
-											{primaryResult.reasons.map((reason) => <li>{reason}</li>)}
-										</ul>
-										<div class="postometro-pick__actions">
-											<a class="postometro-cta" href={primaryResult.url}>
-												Ver ficha completa
-											</a>
-											<button
-												type="button"
-												class="postometro-cta postometro-cta--quiet"
-												data-postometro-dismiss
-												data-postometro-slug={primaryResult.slug}
-											>
-												Ya la vi
-											</button>
-											<button type="button" class="postometro-cta postometro-cta--ghost" data-postometro-reroll>
-												Dame otra del mismo palo
-											</button>
-										</div>
-									</div>
-								</article>
-							</>
-						) : (
-							<section class="postometro-empty" data-postometro-empty>
-								<h3>No hay una buena opción para ese combo</h3>
-								<p>{initialResults.note}</p>
-							</section>
-						)
-					}
+					<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
+						<h3>Tu película todavía no salió</h3>
+						<p>Elegí los filtros y tocá <strong>Buscar película</strong> para arrancar.</p>
+					</section>
 				</div>
 			</aside>
 		</div>
