@@ -59,6 +59,7 @@ export interface PostometroCatalogEntry {
 	runtimeLabel: string;
 	recommendationGenres: string[];
 	moods: PostometroMoodId[];
+	primaryMood: PostometroMoodId;
 	intensities: PostometroIntensityId[];
 	groupFits: PostometroCompanyId[];
 	isFamilyReady: boolean;
@@ -350,23 +351,27 @@ function getTimeScore(runtimeMinutes: number | null, wanted: PostometroTimeId): 
 }
 
 function getMoodFitTier(entry: PostometroCatalogEntry, wanted: PostometroMoodId): number {
-	if (entry.moods.includes(wanted)) {
+	if (entry.primaryMood === wanted) {
 		return 0;
 	}
 
-	if (moodAdjacency[wanted].some((adjacent) => entry.moods.includes(adjacent))) {
+	if (entry.moods.includes(wanted)) {
 		return 1;
 	}
 
-	if (moodOpposition[wanted].some((opposite) => entry.moods.includes(opposite))) {
+	if (moodAdjacency[wanted].some((adjacent) => entry.moods.includes(adjacent))) {
+		return 2;
+	}
+
+	if (moodOpposition[wanted].some((opposite) => entry.primaryMood === opposite)) {
 		return 3;
 	}
 
-	return 2;
+	return 4;
 }
 
 function hasMoodConflict(entry: PostometroCatalogEntry, wanted: PostometroMoodId): boolean {
-	return moodOpposition[wanted].some((opposite) => entry.moods.includes(opposite));
+	return moodOpposition[wanted].some((opposite) => entry.primaryMood === opposite);
 }
 
 function getMoodScore(entry: PostometroCatalogEntry, wanted: PostometroMoodId): number {
@@ -374,18 +379,22 @@ function getMoodScore(entry: PostometroCatalogEntry, wanted: PostometroMoodId): 
 	const conflict = hasMoodConflict(entry, wanted);
 
 	if (tier === 0) {
-		return conflict ? 20 : 44;
+		return conflict ? 24 : 54;
 	}
 
 	if (tier === 1) {
-		return conflict ? -4 : 10;
+		return conflict ? 10 : 34;
 	}
 
 	if (tier === 2) {
-		return -18;
+		return conflict ? -6 : 12;
 	}
 
-	return -32;
+	if (tier === 3) {
+		return -34;
+	}
+
+	return -22;
 }
 
 function getIntensityScore(entry: PostometroCatalogEntry, wanted: PostometroIntensityId): number {
@@ -521,6 +530,14 @@ function getExtraScore(entry: PostometroCatalogEntry, answers: PostometroAnswers
 
 	if (answers.era === 'recientes' && entry.year >= 2023) {
 		score += 4;
+	}
+
+	if (entry.primaryMood === answers.mood) {
+		score += 8;
+	}
+
+	if (entry.moods.includes(answers.mood) && entry.primaryMood !== answers.mood) {
+		score += 3;
 	}
 
 	return score;
@@ -703,17 +720,18 @@ function getEligibleCatalog(entries: PostometroCatalogEntry[], answers: Postomet
 }
 
 function narrowCatalogByMood(entries: PostometroCatalogEntry[], wanted: PostometroMoodId): PostometroCatalogEntry[] {
-	const exactMatches = entries.filter((entry) => getMoodFitTier(entry, wanted) === 0);
+	const primaryMatches = entries.filter((entry) => entry.primaryMood === wanted);
+	if (primaryMatches.length >= 8) {
+		return primaryMatches;
+	}
+
+	const exactMatches = entries.filter((entry) => entry.moods.includes(wanted));
 	if (exactMatches.length > 0) {
 		return exactMatches;
 	}
 
-	const adjacentMatches = entries.filter((entry) => getMoodFitTier(entry, wanted) <= 1);
-	if (wanted !== 'sustos' && adjacentMatches.length > 0) {
-		return adjacentMatches;
-	}
-
-	return [];
+	const adjacentMatches = entries.filter((entry) => getMoodFitTier(entry, wanted) <= 2);
+	return wanted !== 'sustos' ? adjacentMatches : [];
 }
 
 function hashString(value: string): number {
@@ -727,7 +745,15 @@ function hashString(value: string): number {
 }
 
 function buildAnswerSignature(answers: PostometroAnswers): string {
-	return [answers.mood, answers.time, answers.platform, answers.intensity, answers.era].join('|');
+	return [answers.mood, answers.time, answers.company, answers.platform, answers.intensity, answers.era].join('|');
+}
+
+function getDiversityKey(entry: PostometroCatalogEntry): string {
+	const decade = Math.floor(entry.year / 10) * 10;
+	const genre = entry.recommendationGenres.find((genreId) => genreId !== 'drama') ?? entry.category;
+	const platform = entry.platforms[0] ?? entry.platformLabel;
+
+	return [platform, decade, genre].join('|');
 }
 
 function reorderRankedEntriesForVariety(
@@ -739,31 +765,43 @@ function reorderRankedEntriesForVariety(
 	}
 
 	const topScore = rankedEntries[0]?.score ?? 0;
-	const exactMoodPool = rankedEntries.filter(
-		(item) => getMoodFitTier(item.entry, answers.mood) === 0 && item.score >= topScore - 20,
-	);
-	const broadPool = rankedEntries.filter((item) => item.score >= topScore - 24);
-	const candidatePool = (exactMoodPool.length >= 3 ? exactMoodPool : broadPool).slice(0, 8);
+	const primary = rankedEntries[0];
+	if (!primary) {
+		return rankedEntries;
+	}
 
-	if (candidatePool.length < 2) {
+	const strongPool = rankedEntries.filter((item) => item.score >= topScore - 26);
+	if (strongPool.length < 4) {
 		return rankedEntries;
 	}
 
 	const signature = buildAnswerSignature(answers);
-	const companyOffset = companyRotationOffset[answers.company] ?? 0;
-	const preferredIndex = (hashString(signature) + companyOffset) % candidatePool.length;
-	const preferredSlug = candidatePool[preferredIndex]?.entry.slug;
+	const offset = (hashString(signature) + (companyRotationOffset[answers.company] ?? 0)) % strongPool.length;
+	const rotatedPool = [...strongPool.slice(offset), ...strongPool.slice(0, offset)];
+	const usedSlugs = new Set([primary.entry.slug]);
+	const usedKeys = new Set([getDiversityKey(primary.entry)]);
+	const diverseTail: Array<{ entry: PostometroCatalogEntry; score: number }> = [];
 
-	if (!preferredSlug) {
-		return rankedEntries;
+	for (const item of rotatedPool) {
+		if (usedSlugs.has(item.entry.slug)) {
+			continue;
+		}
+
+		const diversityKey = getDiversityKey(item.entry);
+		if (usedKeys.has(diversityKey)) {
+			continue;
+		}
+
+		usedSlugs.add(item.entry.slug);
+		usedKeys.add(diversityKey);
+		diverseTail.push(item);
 	}
 
-	const preferredEntry = rankedEntries.find((item) => item.entry.slug === preferredSlug);
-	if (!preferredEntry) {
-		return rankedEntries;
-	}
-
-	return [preferredEntry, ...rankedEntries.filter((item) => item.entry.slug !== preferredSlug)];
+	return [
+		primary,
+		...diverseTail,
+		...rankedEntries.filter((item) => !usedSlugs.has(item.entry.slug)),
+	];
 }
 
 export function getPostometroResultSet(

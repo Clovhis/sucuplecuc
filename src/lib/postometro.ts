@@ -40,44 +40,78 @@ function hasAny(text: string, patterns: RegExp[]): boolean {
 	return patterns.some((pattern) => pattern.test(text));
 }
 
+function addMoodStrength(
+	strengths: Map<PostometroMoodId, number>,
+	mood: PostometroMoodId,
+	value: number,
+): void {
+	strengths.set(mood, (strengths.get(mood) ?? 0) + value);
+}
+
 function inferMoods(movie: Movie, normalizedText: string, recommendationGenres: string[]): PostometroMoodId[] {
-	void movie;
-	const moods = new Set<PostometroMoodId>();
+	const strengths = new Map<PostometroMoodId, number>();
 	const genreSet = new Set(recommendationGenres);
+	const normalizedCategory = normalizeSearchText(movie.category ?? '');
+	const genreText = normalizeSearchText([movie.category ?? '', ...(movie.genres ?? [])].join(' '));
+	const titleText = normalizeSearchText([movie.slug, movie.title, movie.originalTitle].join(' '));
+	const isDocumentary = genreSet.has('documental');
+	const hasAnimationOrAnimeGenre = genreSet.has('animacion') || genreSet.has('anime');
+	const hasRomanceGenre = genreSet.has('romance');
+	const hasAdventureWord = /\b(aventura|adventure)\b/.test(genreText);
+	const hasPochocloGenre =
+		genreSet.has('accion') ||
+		genreSet.has('superheroes') ||
+		genreSet.has('sci-fi') ||
+		(genreSet.has('aventura') && (hasAdventureWord || (!hasAnimationOrAnimeGenre && !hasRomanceGenre)));
+	const hasHorrorTitleSignal = hasAny(titleText, [
+		/\ba quiet place\b/i,
+		/\balien\b/i,
+		/\bchucky\b/i,
+		/\bconjuring\b/i,
+		/\bexorcist\b/i,
+		/\bfriday the 13th\b/i,
+		/\bhalloween\b/i,
+		/\blonglegs\b/i,
+		/\bnightmare\b/i,
+		/\bnosferatu\b/i,
+		/\bomen\b/i,
+		/\bsaw\b/i,
+		/\bscream\b/i,
+		/\bsilent hill\b/i,
+		/\bsmile\b/i,
+		/\bthe monkey\b/i,
+		/\buntil dawn\b/i,
+		/\bweapons\b/i,
+		/\bwolf man\b/i,
+	]);
 
 	if (genreSet.has('comedia') || hasAny(normalizedText, [/\bgracios/i, /\bhumor/i, /\bdivertid/i, /\babsurd/i])) {
-		moods.add('risas');
+		addMoodStrength(strengths, 'risas', genreSet.has('comedia') ? 6 : 3);
 	}
 
 	if (
-		genreSet.has('thriller') ||
-		genreSet.has('crimen') ||
+		(!isDocumentary && (genreSet.has('thriller') || genreSet.has('crimen'))) ||
 		hasAny(normalizedText, [
 			/\btension/i,
 			/\bsuspens/i,
 			/\bthriller/i,
-			/\bnervio/i,
 			/\bparano/i,
 			/\bamenaza/i,
 			/\bpersec/i,
-			/\binvestig/i,
 			/\bconspir/i,
 			/\basesin/i,
 			/\bcrimen/i,
 			/\bpolicial/i,
 		])
 	) {
-		moods.add('tension');
+		addMoodStrength(strengths, 'tension', genreSet.has('thriller') || genreSet.has('crimen') ? 6 : 3);
 	}
 
 	if (
-		genreSet.has('accion') ||
-		genreSet.has('aventura') ||
-		genreSet.has('superheroes') ||
-		genreSet.has('sci-fi') ||
+		hasPochocloGenre ||
 		hasAny(normalizedText, [/\bblockbuster/i, /\bespectac/i, /\bpulp/i, /\bfierros/i, /\bfranquicia/i, /\btanque/i])
 	) {
-		moods.add('pochoclo');
+		addMoodStrength(strengths, 'pochoclo', hasPochocloGenre ? 6 : 3);
 	}
 
 	if (
@@ -97,11 +131,15 @@ function inferMoods(movie: Movie, normalizedText: string, recommendationGenres: 
 			/\bduelo/i,
 		])
 	) {
-		moods.add('corazon');
+		addMoodStrength(
+			strengths,
+			'corazon',
+			hasRomanceGenre || hasAnimationOrAnimeGenre ? 5 : 2,
+		);
 	}
 
 	if (
-		genreSet.has('documental') ||
+		isDocumentary ||
 		genreSet.has('oscar-mejor-pelicula') ||
 		hasAny(normalizedText, [
 			/\bdeja pensando/i,
@@ -115,21 +153,56 @@ function inferMoods(movie: Movie, normalizedText: string, recommendationGenres: 
 			/\bobservacion/i,
 		])
 	) {
-		moods.add('cabeza');
+		const oscarThinkingWeight =
+			genreSet.has('oscar-mejor-pelicula') &&
+			(genreSet.has('drama') || genreSet.has('thriller') || genreSet.has('crimen')) &&
+			!hasRomanceGenre &&
+			!genreSet.has('comedia')
+				? 4
+				: 2;
+		addMoodStrength(strengths, 'cabeza', isDocumentary ? 6 : genreSet.has('oscar-mejor-pelicula') ? oscarThinkingWeight : 3);
 	}
 
 	if (
 		genreSet.has('terror') ||
+		hasHorrorTitleSignal ||
 		hasAny(normalizedText, [/\bsusto/i, /\bmal viaje/i, /\bslasher/i, /\bsobrenatural/i, /\bhorror/i])
 	) {
-		moods.add('sustos');
+		addMoodStrength(strengths, 'sustos', genreSet.has('terror') || hasHorrorTitleSignal ? 7 : 4);
+		if ((genreSet.has('terror') || hasHorrorTitleSignal) && !genreSet.has('thriller')) {
+			addMoodStrength(strengths, 'tension', 2);
+		}
 	}
 
-	if (moods.size === 0) {
-		moods.add('corazon');
+	if (isDocumentary && !genreText.includes('true crime') && !genreText.includes('policial')) {
+		strengths.delete('tension');
 	}
 
-	return [...moods];
+	if (normalizedCategory.includes('drama') && strengths.size === 0) {
+		addMoodStrength(strengths, 'corazon', 2);
+	}
+
+	if (
+		(genreSet.has('terror') || genreSet.has('thriller') || genreSet.has('crimen') || hasHorrorTitleSignal) &&
+		!hasRomanceGenre &&
+		!hasAnimationOrAnimeGenre &&
+		(strengths.get('corazon') ?? 0) <= 2
+	) {
+		strengths.delete('corazon');
+	}
+
+	if (strengths.size === 0) {
+		addMoodStrength(strengths, 'corazon', 2);
+	}
+
+	const moodPriority: PostometroMoodId[] = ['pochoclo', 'tension', 'sustos', 'risas', 'corazon', 'cabeza'];
+	return [...strengths.entries()]
+		.filter(([, score]) => score >= 2)
+		.sort(
+			([leftMood, leftScore], [rightMood, rightScore]) =>
+				rightScore - leftScore || moodPriority.indexOf(leftMood) - moodPriority.indexOf(rightMood),
+		)
+		.map(([mood]) => mood);
 }
 
 function inferIntensities(
@@ -274,6 +347,7 @@ export function createPostometroCatalogEntries(movies: Movie[]): PostometroCatal
 			runtimeLabel: movie.runtimeMinutes ? formatRuntimeMinutes(movie.runtimeMinutes) : 'Duración no cargada',
 			recommendationGenres,
 			moods,
+			primaryMood: moods[0] ?? 'corazon',
 			intensities,
 			groupFits,
 			isFamilyReady,

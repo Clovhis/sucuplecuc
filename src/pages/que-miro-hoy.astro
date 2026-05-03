@@ -53,7 +53,14 @@ const structuredData = [
 	},
 ];
 
-const postometroData = JSON.stringify({
+function serializeJsonForScript(value: unknown): string {
+	return JSON.stringify(value).replace(/[<>&\u2028\u2029]/g, (character) => {
+		const codePoint = character.codePointAt(0)?.toString(16).padStart(4, '0') ?? '';
+		return `\\u${codePoint}`;
+	});
+}
+
+const postometroData = serializeJsonForScript({
 	catalog: postometroCatalog,
 	platformOptions,
 	defaultAnswers: initialAnswers,
