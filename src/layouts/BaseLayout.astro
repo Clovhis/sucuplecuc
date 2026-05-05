@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import { ABOUT_PATH, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_LANGUAGE, SITE_LOCALE, SITE_NAME } from '../lib/seo';
 import { DEFAULT_SUPABASE_URL } from '../lib/supabaseClient';
 
@@ -70,7 +71,7 @@ const footerLinks = [
 				<script
 					is:inline
 					async
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6107242162035895"
+					src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
 					crossorigin="anonymous"
 				></script>
 			)
