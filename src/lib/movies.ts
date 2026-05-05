@@ -370,11 +370,7 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) => {
 		const releaseDate = new Date(`${release.releaseDate}T00:00:00Z`);
 		return !Number.isNaN(releaseDate.getTime()) && releaseDate.getTime() >= referenceTimestamp;
-	}).slice(0, limit);
-
-	if (generatedUpcoming.length > 0) {
-		return generatedUpcoming;
-	}
+	});
 
 	const catalogUpcoming = movies
 		.filter((movie) => {
@@ -390,7 +386,6 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 				getMovieSortTimestamp(left) - getMovieSortTimestamp(right) ||
 				left.title.localeCompare(right.title, 'es'),
 		)
-		.slice(0, limit)
 		.map((movie) => ({
 			slug: movie.slug,
 			title: movie.title,
@@ -399,7 +394,13 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			thumbnailUrl: getYoutubeThumbnailUrl(movie.trailerYoutubeId),
 		}));
 
-	const releaseBySlug = new Map(catalogUpcoming.map((release) => [release.slug, release]));
+	const releaseBySlug = new Map<string, UpcomingMovieRelease>();
+
+	for (const release of [...generatedUpcoming, ...catalogUpcoming]) {
+		if (!releaseBySlug.has(release.slug)) {
+			releaseBySlug.set(release.slug, release);
+		}
+	}
 
 	for (const fallback of UPCOMING_RELEASE_FALLBACKS) {
 		if (releaseBySlug.has(fallback.slug)) {

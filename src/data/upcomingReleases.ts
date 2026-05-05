@@ -15,11 +15,11 @@ export const UPCOMING_RELEASE_FALLBACKS: UpcomingReleaseFallback[] = [
 		thumbnailUrl: 'https://i.ytimg.com/vi/e9HXmMnUEdE/hqdefault.jpg',
 	},
 	{
-		slug: 'the-mandalorian-and-grogu',
-		title: 'The Mandalorian and Grogu',
-		releaseDate: '2026-05-22',
-		trailerUrl: 'https://www.youtube.com/watch?v=_pa1KLXuW0Y',
-		thumbnailUrl: 'https://i.ytimg.com/vi/_pa1KLXuW0Y/hqdefault.jpg',
+		slug: 'star-wars-the-mandalorian-and-grogu',
+		title: 'Star Wars: The Mandalorian and Grogu',
+		releaseDate: '2026-05-20',
+		trailerUrl: 'https://www.youtube.com/watch?v=efFD0ZjyUn8',
+		thumbnailUrl: 'https://media.themoviedb.org/t/p/w780/MJcERawyqGqJdPsOBc0C449hQ9.jpg',
 	},
 	{
 		slug: 'toy-story-5',
