@@ -172,7 +172,7 @@ function initPostometro(
 			body.innerHTML = `
 				<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
 					<h3>Listo para volver a buscar</h3>
-					<p>Con este combo nuevo, la película aparece recién cuando apretes <strong>Buscar película</strong>.</p>
+					<p>Con este combo nuevo, la película aparece recién cuando apretes <strong>Buscar</strong>.</p>
 				</section>
 			`;
 			return;
@@ -184,7 +184,7 @@ function initPostometro(
 		body.innerHTML = `
 			<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
 				<h3>Tu película todavía no salió</h3>
-				<p>Elegí los filtros y tocá <strong>Buscar película</strong> para arrancar.</p>
+				<p>Elegí los filtros y tocá <strong>Buscar</strong> para arrancar.</p>
 			</section>
 		`;
 	};

@@ -330,6 +330,312 @@ function uniqueValues<T extends string>(values: T[]): T[] {
 	return [...new Set(values)];
 }
 
+function normalizePostometroText(value: string): string {
+	return value
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.trim();
+}
+
+function hasTextPattern(text: string, patterns: RegExp[]): boolean {
+	return patterns.some((pattern) => pattern.test(text));
+}
+
+function getLaughFitScore(entry: PostometroCatalogEntry): number {
+	const genreSet = new Set(entry.recommendationGenres);
+	const categoryText = normalizePostometroText(entry.category);
+	const reviewText = normalizePostometroText(entry.review);
+	const fullText = normalizePostometroText([entry.title, entry.category, entry.review, entry.recommendationGenres.join(' ')].join(' '));
+	const hasComedyGenre = genreSet.has('comedia') || categoryText.includes('comedia');
+	const hasExplicitHumor = hasTextPattern(fullText, [
+		/\bhumor/,
+		/\bchist/,
+		/\bgag/,
+		/\bgraci/,
+		/\bdivertid/,
+		/\babsurd/,
+		/\bsatir/,
+		/\bparodi/,
+		/\bdelirio/,
+		/\bdisparate/,
+		/\bbizar/,
+		/\bcamp\b/,
+		/\bironi/,
+		/\bincorreccion/,
+		/\bmala leche/,
+		/\btiming/,
+		/\bcomedia negra/,
+		/\bcomedia romant/,
+		/\bcomedia de accion/,
+		/\bcomedia teen/,
+		/\bromcom/,
+		/\bbuddy movie/,
+	]);
+	const hasMutedHumorSignal = hasTextPattern(reviewText, [
+		/\bhumor minimo/,
+		/\bhumor sutil/,
+		/\bhumor seco/,
+		/\bcomedia seca/,
+		/\bcomedia minima/,
+		/\bsilencios largos/,
+		/\btono melancol/,
+	]);
+	const hasSeriousDramaTone = hasTextPattern(reviewText, [
+		/\bautodescubr/,
+		/\bsensible/,
+		/\bduelo/,
+		/\btrauma/,
+		/\bmelancol/,
+		/\btriste/,
+		/\btristeza/,
+		/\bgolpe bajo/,
+		/\bdolor/,
+		/\bdepres/,
+		/\bpesad/,
+		/\bdrama duro/,
+		/\bverdad\b/,
+		/\bintim/,
+		/\bemocion/,
+	]);
+	let score = 0;
+
+	if (hasExplicitHumor) {
+		score += 44;
+	} else if (hasComedyGenre) {
+		score += 16;
+	}
+
+	if (entry.primaryMood === 'risas') {
+		score += 14;
+	} else if (entry.moods.includes('risas')) {
+		score += 8;
+	}
+
+	if (genreSet.has('terror') || genreSet.has('thriller') || genreSet.has('crimen')) {
+		score -= hasExplicitHumor ? 8 : 24;
+	}
+
+	if (genreSet.has('drama') || genreSet.has('romance')) {
+		score -= hasExplicitHumor ? 8 : 26;
+	}
+
+	if (hasSeriousDramaTone && !hasExplicitHumor) {
+		score -= 44;
+	}
+
+	if (hasMutedHumorSignal) {
+		score -= 50;
+	}
+
+	if (!hasComedyGenre) {
+		score -= hasExplicitHumor ? 44 : 60;
+	}
+
+	return score;
+}
+
+function getHorrorFitScore(entry: PostometroCatalogEntry): number {
+	const genreSet = new Set(entry.recommendationGenres);
+	const categoryText = normalizePostometroText(entry.category);
+	const fullText = normalizePostometroText([entry.title, entry.category, entry.review, entry.recommendationGenres.join(' ')].join(' '));
+	let score = 0;
+
+	if (genreSet.has('terror') || categoryText.includes('terror')) {
+		score += 58;
+	}
+
+	if (hasTextPattern(fullText, [/\bsusto/, /\bmal viaje/, /\bslasher/, /\bsobrenatural/, /\bhorror/, /\bgore/, /\bposesion/, /\bdemon/, /\bpesadilla/])) {
+		score += 26;
+	}
+
+	if (genreSet.has('thriller')) {
+		score += genreSet.has('terror') ? 8 : 12;
+	}
+
+	if (!genreSet.has('terror') && !categoryText.includes('terror')) {
+		score -= 54;
+	}
+
+	if (genreSet.has('comedia') || genreSet.has('romance') || genreSet.has('animacion')) {
+		score -= 18;
+	}
+
+	return score;
+}
+
+function getTensionFitScore(entry: PostometroCatalogEntry): number {
+	const genreSet = new Set(entry.recommendationGenres);
+	const categoryText = normalizePostometroText(entry.category);
+	const fullText = normalizePostometroText([entry.title, entry.category, entry.review, entry.recommendationGenres.join(' ')].join(' '));
+	const hasTensionGenre =
+		genreSet.has('thriller') ||
+		genreSet.has('crimen') ||
+		genreSet.has('terror') ||
+		categoryText.includes('thriller') ||
+		categoryText.includes('suspenso') ||
+		categoryText.includes('terror');
+	let score = 0;
+
+	if (hasTensionGenre) {
+		score += 52;
+	}
+
+	if (hasTextPattern(fullText, [/\btension/, /\bsuspens/, /\bparano/, /\bamenaza/, /\bpersec/, /\bconspir/, /\basesin/, /\bcrimen/, /\bpolicial/, /\bpeligro/, /\bsupervivencia/])) {
+		score += 24;
+	}
+
+	if (genreSet.has('accion')) {
+		score += 8;
+	}
+
+	if (!hasTensionGenre) {
+		score -= 34;
+	}
+
+	if (genreSet.has('comedia') || genreSet.has('romance') || genreSet.has('animacion')) {
+		score -= 18;
+	}
+
+	return score;
+}
+
+function getSpectacleFitScore(entry: PostometroCatalogEntry): number {
+	const genreSet = new Set(entry.recommendationGenres);
+	const categoryText = normalizePostometroText(entry.category);
+	const fullText = normalizePostometroText([entry.title, entry.category, entry.review, entry.recommendationGenres.join(' ')].join(' '));
+	const hasSpectacleGenre =
+		genreSet.has('accion') ||
+		genreSet.has('sci-fi') ||
+		genreSet.has('aventura') ||
+		genreSet.has('superheroes') ||
+		genreSet.has('animacion') ||
+		genreSet.has('anime') ||
+		categoryText.includes('accion') ||
+		categoryText.includes('ciencia ficcion') ||
+		categoryText.includes('aventura') ||
+		categoryText.includes('animacion');
+	let score = 0;
+
+	if (hasSpectacleGenre) {
+		score += 50;
+	}
+
+	if (hasTextPattern(fullText, [/\bblockbuster/, /\bespectac/, /\baccion/, /\baventur/, /\bpulp/, /\bfierros/, /\bfranquicia/, /\btanque/, /\britmo/, /\benergia/, /\bvisual/, /\bset piece/])) {
+		score += 22;
+	}
+
+	if (!hasSpectacleGenre) {
+		score -= 36;
+	}
+
+	if (genreSet.has('documental') || genreSet.has('oscar-mejor-pelicula')) {
+		score -= 22;
+	}
+
+	if (genreSet.has('drama') && !hasSpectacleGenre) {
+		score -= 20;
+	}
+
+	return score;
+}
+
+function getHeartFitScore(entry: PostometroCatalogEntry): number {
+	const genreSet = new Set(entry.recommendationGenres);
+	const categoryText = normalizePostometroText(entry.category);
+	const fullText = normalizePostometroText([entry.title, entry.category, entry.review, entry.recommendationGenres.join(' ')].join(' '));
+	const hasDirectHeartGenre =
+		genreSet.has('romance') ||
+		genreSet.has('animacion') ||
+		genreSet.has('anime') ||
+		categoryText.includes('romance') ||
+		categoryText.includes('animacion');
+	const hasDramaGenre = genreSet.has('drama') || categoryText.includes('drama');
+	const hasWarmTone = hasTextPattern(fullText, [/\bcalid/, /\bternur/, /\bsensible/, /\bemocion/, /\bhumana/, /\bvincul/, /\bfamili/, /\bafecto/, /\bduelo/, /\bamistad/, /\bcorazon/, /\bquerible/, /\bromance/]);
+	let score = 0;
+
+	if (hasDirectHeartGenre) {
+		score += 38;
+	} else if (hasDramaGenre) {
+		score += 18;
+	}
+
+	if (hasWarmTone) {
+		score += 42;
+	}
+
+	if (!hasDirectHeartGenre && !hasDramaGenre && !hasWarmTone) {
+		score -= 42;
+	}
+
+	if ((genreSet.has('terror') || genreSet.has('crimen') || genreSet.has('thriller')) && !hasWarmTone) {
+		score -= 32;
+	}
+
+	return score;
+}
+
+function getThinkingFitScore(entry: PostometroCatalogEntry): number {
+	const genreSet = new Set(entry.recommendationGenres);
+	const categoryText = normalizePostometroText(entry.category);
+	const fullText = normalizePostometroText([entry.title, entry.category, entry.review, entry.recommendationGenres.join(' ')].join(' '));
+	const hasDirectThinkingGenre =
+		genreSet.has('documental') ||
+		genreSet.has('oscar-mejor-pelicula') ||
+		categoryText.includes('documental') ||
+		categoryText.includes('ensayo');
+	const hasSeriousThinkingGenre =
+		genreSet.has('drama') ||
+		genreSet.has('thriller') ||
+		genreSet.has('crimen') ||
+		categoryText.includes('drama') ||
+		categoryText.includes('thriller');
+	const hasThinkingTone = hasTextPattern(fullText, [/\bdeja pensando/, /\bexistencial/, /\bmoral/, /\bideas/, /\bsensorial/, /\bcomplej/, /\bambigua/, /\bdilema/, /\bobservacion/, /\bpolitic/, /\bfilosof/, /\bcapas/, /\bincomod/]);
+	let score = 0;
+
+	if (hasDirectThinkingGenre) {
+		score += 42;
+	} else if (hasSeriousThinkingGenre) {
+		score += 14;
+	}
+
+	if (hasThinkingTone) {
+		score += 44;
+	}
+
+	if (!hasDirectThinkingGenre && !hasSeriousThinkingGenre && !hasThinkingTone) {
+		score -= 42;
+	}
+
+	if ((genreSet.has('accion') || genreSet.has('superheroes') || genreSet.has('animacion')) && !hasThinkingTone) {
+		score -= 22;
+	}
+
+	if (genreSet.has('comedia') && !hasThinkingTone && !genreSet.has('oscar-mejor-pelicula')) {
+		score -= 18;
+	}
+
+	return score;
+}
+
+function getMoodIntentScore(entry: PostometroCatalogEntry, wanted: PostometroMoodId): number {
+	if (wanted === 'risas') return getLaughFitScore(entry);
+	if (wanted === 'sustos') return getHorrorFitScore(entry);
+	if (wanted === 'tension') return getTensionFitScore(entry);
+	if (wanted === 'pochoclo') return getSpectacleFitScore(entry);
+	if (wanted === 'corazon') return getHeartFitScore(entry);
+	return getThinkingFitScore(entry);
+}
+
+function getMoodIntentFloor(wanted: PostometroMoodId): number {
+	if (wanted === 'risas') return 24;
+	if (wanted === 'sustos') return 32;
+	if (wanted === 'tension') return 30;
+	if (wanted === 'pochoclo') return 28;
+	if (wanted === 'corazon') return 28;
+	return 28;
+}
+
 function getTimeScore(runtimeMinutes: number | null, wanted: PostometroTimeId): number {
 	if (!runtimeMinutes || wanted === 'sin-reloj') {
 		return 6;
@@ -555,6 +861,7 @@ function scoreMovie(entry: PostometroCatalogEntry, answers: PostometroAnswers): 
 	let score = verdictBaseScore[entry.verdict] ?? 0;
 
 	score += getMoodScore(entry, answers.mood);
+	score += getMoodIntentScore(entry, answers.mood);
 	score += getIntensityScore(entry, answers.intensity);
 	score += getCompanyScore(entry, answers.company);
 	score += getTimeScore(entry.runtimeMinutes, answers.time);
@@ -729,18 +1036,27 @@ function getEligibleCatalog(entries: PostometroCatalogEntry[], answers: Postomet
 }
 
 function narrowCatalogByMood(entries: PostometroCatalogEntry[], wanted: PostometroMoodId): PostometroCatalogEntry[] {
-	const primaryMatches = entries.filter((entry) => entry.primaryMood === wanted);
-	if (primaryMatches.length >= 8) {
-		return primaryMatches;
+	const intentFloor = getMoodIntentFloor(wanted);
+	const strongIntentMatches = entries.filter((entry) => getMoodIntentScore(entry, wanted) >= intentFloor);
+	const primaryStrongMatches = strongIntentMatches.filter((entry) => entry.primaryMood === wanted);
+	if (primaryStrongMatches.length >= 6) {
+		return primaryStrongMatches;
 	}
 
-	const exactMatches = entries.filter((entry) => entry.moods.includes(wanted));
-	if (exactMatches.length > 0) {
-		return exactMatches;
+	const exactStrongMatches = strongIntentMatches.filter((entry) => entry.moods.includes(wanted));
+	if (exactStrongMatches.length >= 4) {
+		return exactStrongMatches;
 	}
 
-	const adjacentMatches = entries.filter((entry) => getMoodFitTier(entry, wanted) <= 2);
-	return wanted !== 'sustos' ? adjacentMatches : [];
+	if (strongIntentMatches.length >= 6) {
+		return strongIntentMatches;
+	}
+
+	if (exactStrongMatches.length > 0) {
+		return exactStrongMatches;
+	}
+
+	return strongIntentMatches;
 }
 
 function hashString(value: string): number {

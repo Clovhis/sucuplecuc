@@ -49,15 +49,81 @@ function addMoodStrength(
 	strengths.set(mood, (strengths.get(mood) ?? 0) + value);
 }
 
+function hasClearComedySignal(text: string): boolean {
+	return hasAny(text, [
+		/\bhumor/i,
+		/\bchist/i,
+		/\bgag/i,
+		/\bgraci/i,
+		/\bdivertid/i,
+		/\babsurd/i,
+		/\bsatir/i,
+		/\bparodi/i,
+		/\bdelirio/i,
+		/\bdisparate/i,
+		/\bbizar/i,
+		/\bcamp\b/i,
+		/\bironi/i,
+		/\bincorreccion/i,
+		/\bmala leche/i,
+		/\btiming/i,
+		/\bcomedia negra/i,
+		/\bcomedia romant/i,
+		/\bcomedia de accion/i,
+		/\bcomedia teen/i,
+		/\bromcom/i,
+		/\bbuddy movie/i,
+	]);
+}
+
+function hasMutedComedySignal(text: string): boolean {
+	return hasAny(text, [
+		/\bhumor minimo/i,
+		/\bhumor sutil/i,
+		/\bhumor seco/i,
+		/\bcomedia seca/i,
+		/\bcomedia minima/i,
+		/\bsilencios largos/i,
+		/\btono melancol/i,
+	]);
+}
+
+function hasSeriousDramaSignal(text: string): boolean {
+	return hasAny(text, [
+		/\bautodescubr/i,
+		/\bsensible/i,
+		/\bduelo/i,
+		/\btrauma/i,
+		/\bmelancol/i,
+		/\btriste/i,
+		/\btristeza/i,
+		/\bgolpe bajo/i,
+		/\bdolor/i,
+		/\bdepres/i,
+		/\bpesad/i,
+		/\bdrama duro/i,
+		/\bverdad\b/i,
+		/\bintim/i,
+		/\bemocion/i,
+	]);
+}
+
 function inferMoods(movie: Movie, normalizedText: string, recommendationGenres: string[]): PostometroMoodId[] {
 	const strengths = new Map<PostometroMoodId, number>();
 	const genreSet = new Set(recommendationGenres);
 	const normalizedCategory = normalizeSearchText(movie.category ?? '');
 	const genreText = normalizeSearchText([movie.category ?? '', ...(movie.genres ?? [])].join(' '));
+	const toneText = normalizeSearchText([movie.title, movie.originalTitle, ...(movie.genres ?? []), movie.review, movie.synopsis].join(' '));
 	const titleText = normalizeSearchText([movie.slug, movie.title, movie.originalTitle].join(' '));
 	const isDocumentary = genreSet.has('documental');
 	const hasAnimationOrAnimeGenre = genreSet.has('animacion') || genreSet.has('anime');
 	const hasRomanceGenre = genreSet.has('romance');
+	const hasComedyGenre = genreSet.has('comedia') || normalizedCategory.includes('comedia');
+	const hasPlainComedyCategory = normalizedCategory === 'comedia';
+	const hasExplicitComedyTone =
+		(hasClearComedySignal(toneText) && !hasMutedComedySignal(toneText)) ||
+		/comedia (romant|negra|de accion|teen)/i.test(normalizedCategory);
+	const hasDramaTone = hasSeriousDramaSignal(toneText);
 	const hasAdventureWord = /\b(aventura|adventure)\b/.test(genreText);
 	const hasPochocloGenre =
 		genreSet.has('accion') ||
@@ -86,8 +152,12 @@ function inferMoods(movie: Movie, normalizedText: string, recommendationGenres: 
 		/\bwolf man\b/i,
 	]);
 
-	if (genreSet.has('comedia') || hasAny(normalizedText, [/\bgracios/i, /\bhumor/i, /\bdivertid/i, /\babsurd/i])) {
-		addMoodStrength(strengths, 'risas', genreSet.has('comedia') ? 6 : 3);
+	if (hasExplicitComedyTone) {
+		addMoodStrength(strengths, 'risas', 8);
+	} else if (hasComedyGenre && !hasDramaTone && !hasPlainComedyCategory) {
+		addMoodStrength(strengths, 'risas', 5);
+	} else if (hasComedyGenre && !hasDramaTone) {
+		addMoodStrength(strengths, 'risas', 3);
 	}
 
 	if (
