@@ -116,6 +116,25 @@ const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
 const personProfileReturnPath = encodeURIComponent(Astro.url.pathname);
 
+function countWords(value: string): number {
+	return String(value ?? '')
+		.trim()
+		.split(/\s+/)
+		.filter(Boolean).length;
+}
+
+function hasCutOffSynopsis(value: string): boolean {
+	const synopsis = String(value ?? '').trim();
+	return /(?:\bcon|\bde|\bla|\bel|\blos|\blas|\by|\bo|\bpara|\bpor|\bcomo|\bque|\bun|\buna)\.$/i.test(
+		synopsis,
+	);
+}
+
+const isAdsenseReadyMovie =
+	countWords(movie.review) >= 120 &&
+	countWords(movie.synopsis) >= 25 &&
+	!hasCutOffSynopsis(movie.synopsis);
+
 function getPersonProfileHref(profilePath?: string): string | undefined {
 	if (!profilePath) {
 		return undefined;
@@ -272,6 +291,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 	image={posterUrl}
 	openGraphType="article"
 	structuredData={structuredData}
+	allowAds={isAdsenseReadyMovie}
 >
 	<main id="main-content" class="container">
 		<div class="page-actions">
