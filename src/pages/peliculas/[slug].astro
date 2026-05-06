@@ -130,7 +130,17 @@ function hasCutOffSynopsis(value: string): boolean {
 	);
 }
 
+function isReleasedMovie(movie: Movie): boolean {
+	if (movie.releaseDate) {
+		const releaseDate = new Date(`${movie.releaseDate}T00:00:00Z`);
+		return !Number.isNaN(releaseDate.getTime()) && releaseDate <= currentDate;
+	}
+
+	return Number(movie.year) < currentDate.getUTCFullYear();
+}
+
 const isAdsenseReadyMovie =
+	isReleasedMovie(movie) &&
 	countWords(movie.review) >= 120 &&
 	countWords(movie.synopsis) >= 25 &&
 	!hasCutOffSynopsis(movie.synopsis);
