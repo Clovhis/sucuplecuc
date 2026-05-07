@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-01. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-07. Fuente: src/data/movies/*.json
 
-Total de peliculas: 857
+Total de peliculas: 861
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -11,11 +11,11 @@ Total de peliculas: 857
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Stremio | ATP |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Stremio | +16 |
-| 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Cine | +17 |
+| 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Stremio | +17 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Stremio | +13 |
-| 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Cine | +16 |
+| 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Apple TV | +16 |
 | 2026 | Dracula | dracula-2026 | Terror | Stremio | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Cine | +13 |
@@ -27,18 +27,21 @@ Total de peliculas: 857
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | GOAT | goat-2026 | Animacion | Stremio | ATP |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Stremio | +13 |
+| 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Cine | +17 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Cine | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Stremio | +16 |
-| 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Cine | +13 |
+| 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Stremio | +13 |
 | 2026 | La Odisea | the-odyssey-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Cine | +17 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
+| 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Cine | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Stremio | +13 |
 | 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
 | 2026 | Michael | michael-2026 | Drama | Cine | +13 |
+| 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Cine | +17 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
@@ -49,7 +52,7 @@ Total de peliculas: 857
 | 2026 | Proyecto Fin Del Mundo | project-hail-mary-2026 | Ciencia ficcion | Cine | +13 |
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Stremio | +17 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Stremio | +13 |
-| 2026 | Scream 7 | scream-7-2026 | Terror | Cine | +16 |
+| 2026 | Scream 7 | scream-7-2026 | Terror | Apple TV | +16 |
 | 2026 | Send Help | send-help-2026 | Thriller | Stremio | +13 |
 | 2026 | Shelter | shelter-2026 | Thriller | Stremio | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Stremio | ATP |
@@ -58,7 +61,7 @@ Total de peliculas: 857
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Stremio | +12 |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Stremio | +16 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Stremio | +17 |
-| 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Cine | +17 |
+| 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Stremio | +17 |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Stremio | +17 |
 | 2026 | Whistle | whistle-2026 | Terror | Stremio | +16 |
 | 2025 | ¿Y dónde está el policía? | y-donde-esta-el-policia-2025 | Comedia | Paramount Plus | +13 |
@@ -173,6 +176,7 @@ Total de peliculas: 857
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |
+| 2024 | Sueños en Oslo | suenos-de-oslo-2024 | Drama | Cine | +13 |
 | 2024 | Super/Man: La Historia De Christopher Reeve | super-man-the-christopher-reeve-story-2024 | Documental | HBO Max | +13 |
 | 2024 | The Apprentice (La historia de Trump) | the-apprentice-2024 | Historia | Stremio | +17 |
 | 2024 | The Beekeeper | the-beekeeper-2024 | Accion | Prime Video + HBO Max | +16 |
