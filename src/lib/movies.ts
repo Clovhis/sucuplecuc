@@ -369,7 +369,7 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 
 	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) => {
 		const releaseDate = new Date(`${release.releaseDate}T00:00:00Z`);
-		return !Number.isNaN(releaseDate.getTime()) && releaseDate.getTime() >= referenceTimestamp;
+		return !Number.isNaN(releaseDate.getTime()) && releaseDate.getTime() > referenceTimestamp;
 	});
 
 	const catalogUpcoming = movies
@@ -379,7 +379,7 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			}
 
 			const releaseTimestamp = getMovieSortTimestamp(movie);
-			return releaseTimestamp >= referenceTimestamp;
+			return releaseTimestamp > referenceTimestamp;
 		})
 		.sort(
 			(left, right) =>
@@ -408,7 +408,7 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 		}
 
 		const releaseDate = new Date(`${fallback.releaseDate}T00:00:00Z`);
-		if (Number.isNaN(releaseDate.getTime()) || releaseDate.getTime() < referenceTimestamp) {
+		if (Number.isNaN(releaseDate.getTime()) || releaseDate.getTime() <= referenceTimestamp) {
 			continue;
 		}
 
