@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-07. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-08. Fuente: src/data/movies/*.json
 
-Total de peliculas: 861
+Total de peliculas: 862
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -51,6 +51,7 @@ Total de peliculas: 861
 | 2026 | Protector | protector-2026 | Accion | Stremio | +16 |
 | 2026 | Proyecto Fin Del Mundo | project-hail-mary-2026 | Ciencia ficcion | Cine | +13 |
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Stremio | +17 |
+| 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Stremio | +13 |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Apple TV | +16 |
 | 2026 | Send Help | send-help-2026 | Thriller | Stremio | +13 |
