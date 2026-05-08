@@ -39,7 +39,7 @@ async function loadMovies() {
 	return movies.sort(compareMovies);
 }
 
-export async function updateMovieCatalogReference() {
+export async function buildMovieCatalogReference() {
 	const movies = await loadMovies();
 	const today = new Date().toISOString().slice(0, 10);
 	const lines = [
@@ -58,11 +58,35 @@ export async function updateMovieCatalogReference() {
 		'',
 	];
 
-	await writeFile(OUTPUT_PATH, `${lines.join('\n')}`, 'utf8');
+	return `${lines.join('\n')}`;
+}
+
+function normalizeForCheck(value) {
+	return String(value)
+		.replace(/^Generado automaticamente el \d{4}-\d{2}-\d{2}\. Fuente:/m, 'Generado automaticamente el <date>. Fuente:')
+		.replace(/\r\n/g, '\n')
+		.trimEnd();
+}
+
+export async function updateMovieCatalogReference() {
+	await writeFile(OUTPUT_PATH, await buildMovieCatalogReference(), 'utf8');
+}
+
+export async function checkMovieCatalogReference() {
+	const [current, expected] = await Promise.all([readFile(OUTPUT_PATH, 'utf8'), buildMovieCatalogReference()]);
+
+	if (normalizeForCheck(current) !== normalizeForCheck(expected)) {
+		throw new Error(
+			'docs/movie-catalog-reference.md is out of sync with src/data/movies/*.json. Run npm run catalog:movies.',
+		);
+	}
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-	updateMovieCatalogReference().catch((error) => {
+	const command = process.argv[2];
+	const task = command === '--check' ? checkMovieCatalogReference : updateMovieCatalogReference;
+
+	task().catch((error) => {
 		console.error(error.message);
 		process.exit(1);
 	});

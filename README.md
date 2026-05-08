@@ -84,6 +84,20 @@ Preview:
 npm run preview
 ```
 
+Validación de contenido:
+
+```bash
+npm run validate:content
+```
+
+Para activar los hooks locales de Git en este clon:
+
+```bash
+npm run hooks:install
+```
+
+El hook `pre-push` valida el catálogo generado, audita contenido modificado y corre el build antes de empujar.
+
 ## Rating con Supabase
 
 Variables públicas esperadas en `.env`:
