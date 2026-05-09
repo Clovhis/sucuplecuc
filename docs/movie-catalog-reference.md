@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-08. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-09. Fuente: src/data/movies/*.json
 
-Total de peliculas: 862
+Total de peliculas: 863
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -97,6 +97,7 @@ Total de peliculas: 862
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Stremio | ATP |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
+| 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
 | 2025 | Me has robado el corazón | me-has-robado-el-corazon-2025 | Comedia romántica | Stremio | +16 |
 | 2025 | Mickey 17 | mickey-17-2025 | Aventura | HBO Max | +13 |
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Stremio | +13 |
