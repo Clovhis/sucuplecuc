@@ -145,24 +145,6 @@ function formatUpcomingReleaseDate(value: string) {
 						profileUrl={cafecitoSupporters.profileUrl}
 						isFallback={cafecitoSupporters.isFallback}
 					/>
-					<div class="site-search-bar__feedback">
-						<div
-							class="movie-search__status"
-							data-movie-search-status
-							role="status"
-							aria-live="polite"
-							aria-atomic="true"
-							hidden
-						>
-							<span class="movie-search__status-spinner" aria-hidden="true"></span>
-							<p class="movie-search__status-copy" data-movie-search-status-copy>
-								Bancá que carga el videoclub...
-							</p>
-						</div>
-						<p class="message-box movie-search__empty" data-movie-search-empty hidden>
-							No encontramos películas con ese criterio.
-						</p>
-					</div>
 				</section>
 			)
 		}
@@ -172,54 +154,8 @@ function formatUpcomingReleaseDate(value: string) {
 		{
 			movies.length > 0 ? (
 				<>
-					<section class="home-catalog__mobile-filters fade-up" style="--item-delay: 80ms;" aria-label="Filtros del catálogo en mobile">
+					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 80ms;" aria-label="Qué vemos hoy">
 						<PostometroTeaser compact={true} />
-						{
-							platformOptions.length > 0 && (
-								<section class="home-platform-filter home-platform-filter--mobile" data-home-platform-filter>
-									<p class="home-genre-filter__label">Elegí plataforma</p>
-									<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
-										{
-											platformOptions.map((platform) => (
-												<button
-													type="button"
-													class="home-platform-filter__chip"
-													data-home-platform-chip
-													data-home-platform-id={platform.normalizedLabel}
-													data-home-platform-label={platform.displayLabel}
-													aria-label={`Filtrar por ${platform.displayLabel}`}
-													aria-pressed="false"
-													title={platform.displayLabel}
-												>
-													<PlatformBadge
-														platform={platform.normalizedLabel}
-														className="home-platform-filter__badge"
-													/>
-												</button>
-											))
-										}
-									</div>
-								</section>
-							)
-						}
-						<section class="home-genre-filter home-genre-filter--mobile" data-home-genre-filter>
-							<p class="home-genre-filter__label">Elegí género</p>
-							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-								{
-									RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-										<button
-											type="button"
-											class="home-genre-filter__chip"
-											data-home-genre-chip
-											data-home-genre-id={genre.id}
-											aria-pressed="false"
-										>
-											{genre.label}
-										</button>
-									))
-								}
-							</div>
-						</section>
 					</section>
 
 					<div class="home-catalog__desktop-extra">
@@ -233,9 +169,9 @@ function formatUpcomingReleaseDate(value: string) {
 											<section class="home-people-showcase" aria-label="Qué es Cine Posta">
 												<div class="home-people-showcase__header">
 													<div class="home-people-showcase__heading">
-														<p class="home-people-showcase__eyebrow">Qué es Cine Posta</p>
+														<p class="home-people-showcase__eyebrow">Perfiles con bio</p>
 														<p class="home-people-showcase__intro-copy">
-															Reseñas cortas, fichas útiles y una voz editorial para decidir rápido qué ver.
+															Actores, actrices y directores con recorrido, películas relacionadas y contexto útil.
 														</p>
 													</div>
 													<div class="home-people-showcase__intro" aria-label="Cobertura actual del sitio">
@@ -258,54 +194,6 @@ function formatUpcomingReleaseDate(value: string) {
 											</section>
 										)
 									}
-									<div class="catalog-shell__filter-controls">
-										{
-											platformOptions.length > 0 && (
-												<section class="home-platform-filter" data-home-platform-filter>
-													<p class="home-genre-filter__label">Elegí plataforma</p>
-													<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
-														{
-															platformOptions.map((platform) => (
-																<button
-																	type="button"
-																	class="home-platform-filter__chip"
-																	data-home-platform-chip
-																	data-home-platform-id={platform.normalizedLabel}
-																	data-home-platform-label={platform.displayLabel}
-																	aria-label={`Filtrar por ${platform.displayLabel}`}
-																	aria-pressed="false"
-																	title={platform.displayLabel}
-																>
-																	<PlatformBadge
-																		platform={platform.normalizedLabel}
-																		className="home-platform-filter__badge"
-																	/>
-																</button>
-															))
-														}
-													</div>
-												</section>
-											)
-										}
-										<section class="home-genre-filter" data-home-genre-filter>
-											<p class="home-genre-filter__label">Elegí género</p>
-											<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-												{
-													RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-														<button
-															type="button"
-															class="home-genre-filter__chip"
-															data-home-genre-chip
-															data-home-genre-id={genre.id}
-															aria-pressed="false"
-														>
-															{genre.label}
-														</button>
-													))
-												}
-											</div>
-										</section>
-									</div>
 								</div>
 								<aside class="catalog-shell__upcoming" aria-labelledby="upcoming-releases-title">
 									<h3 id="upcoming-releases-title" class="catalog-shell__upcoming-title">
@@ -401,6 +289,84 @@ function formatUpcomingReleaseDate(value: string) {
 							</section>
 						)
 					}
+
+					<section class="home-results-tools fade-up" style="--item-delay: 140ms;" aria-labelledby="home-results-tools-title">
+						<div class="home-results-tools__header">
+							<div>
+								<p class="home-results-tools__kicker">Catálogo</p>
+								<h2 id="home-results-tools-title">Películas publicadas</h2>
+							</div>
+							<p class="home-results-tools__summary" data-movie-search-summary>
+								{movies.length} títulos publicados.
+							</p>
+						</div>
+						<div class="home-results-tools__filters">
+							{
+								platformOptions.length > 0 && (
+									<section class="home-platform-filter" data-home-platform-filter>
+										<p class="home-genre-filter__label">Elegí plataforma</p>
+										<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+											{
+												platformOptions.map((platform) => (
+													<button
+														type="button"
+														class="home-platform-filter__chip"
+														data-home-platform-chip
+														data-home-platform-id={platform.normalizedLabel}
+														data-home-platform-label={platform.displayLabel}
+														aria-label={`Filtrar por ${platform.displayLabel}`}
+														aria-pressed="false"
+														title={platform.displayLabel}
+													>
+														<PlatformBadge
+															platform={platform.normalizedLabel}
+															className="home-platform-filter__badge"
+														/>
+													</button>
+												))
+											}
+										</div>
+									</section>
+								)
+							}
+							<section class="home-genre-filter" data-home-genre-filter>
+								<p class="home-genre-filter__label">Elegí género</p>
+								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+									{
+										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
+											<button
+												type="button"
+												class="home-genre-filter__chip"
+												data-home-genre-chip
+												data-home-genre-id={genre.id}
+												aria-pressed="false"
+											>
+												{genre.label}
+											</button>
+										))
+									}
+								</div>
+							</section>
+						</div>
+						<div class="home-results-tools__feedback">
+							<div
+								class="movie-search__status"
+								data-movie-search-status
+								role="status"
+								aria-live="polite"
+								aria-atomic="true"
+								hidden
+							>
+								<span class="movie-search__status-spinner" aria-hidden="true"></span>
+								<p class="movie-search__status-copy" data-movie-search-status-copy>
+									Bancá que carga el videoclub...
+								</p>
+							</div>
+							<p class="message-box movie-search__empty" data-movie-search-empty hidden>
+								No encontramos películas con ese criterio. Probá sacar un filtro.
+							</p>
+						</div>
+					</section>
 
 					<section class="movie-grid" aria-label="Películas publicadas" data-movie-search-grid>
 						{movies.map((movie, index) => <MovieCard movie={movie} index={index} />)}

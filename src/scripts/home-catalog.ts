@@ -73,10 +73,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const homeBrandLink = document.querySelector('.site-header__brand');
 	const input = searchRoot.querySelector<HTMLInputElement>('[data-movie-search-input]');
 	const clearButton = searchRoot.querySelector<HTMLButtonElement>('[data-movie-search-clear]');
-	const emptyState = searchRoot.querySelector<HTMLElement>('[data-movie-search-empty]');
-	const statusBox = searchRoot.querySelector<HTMLElement>('[data-movie-search-status]');
-	const statusCopy = searchRoot.querySelector<HTMLElement>('[data-movie-search-status-copy]');
-	const summary = searchRoot.querySelector<HTMLElement>('[data-movie-search-summary]');
+	const emptyState = document.querySelector<HTMLElement>('[data-movie-search-empty]');
+	const statusBox = document.querySelector<HTMLElement>('[data-movie-search-status]');
+	const statusCopy = document.querySelector<HTMLElement>('[data-movie-search-status-copy]');
+	const summaries = Array.from(document.querySelectorAll<HTMLElement>('[data-movie-search-summary]'));
 	const suggestionsBox = searchRoot.querySelector<HTMLElement>('[data-movie-search-dropdown]');
 	const suggestionsCopy = searchRoot.querySelector<HTMLElement>('[data-movie-search-dropdown-copy]');
 	const suggestionsList = searchRoot.querySelector<HTMLElement>('[data-movie-search-suggestions]');
@@ -192,7 +192,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			return;
 		}
 
-		const showcaseEntries = shuffleEntries(personIndex).slice(0, Math.min(6, personIndex.length));
+		const showcaseEntries = shuffleEntries(personIndex).slice(0, Math.min(12, personIndex.length));
 		const showcaseNodes = showcaseEntries.map((entry) => {
 			const card = document.createElement('a');
 			card.className = 'home-people-showcase__card';
@@ -412,7 +412,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	};
 
 	const updateSummary = (visibleCount: number): void => {
-		if (!(summary instanceof HTMLElement)) return;
+		if (summaries.length === 0) return;
 
 		const query = normalize(input.value);
 		const hasQuery = query.length > 0;
@@ -420,7 +420,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		const hasPlatform = Boolean(activePlatform);
 
 		if (!hasQuery && !hasGenre && !hasPlatform) {
-			summary.textContent = `${visibleCount} títulos publicados.`;
+			for (const summary of summaries) {
+				summary.textContent = `${visibleCount} títulos publicados.`;
+			}
 			return;
 		}
 
@@ -435,7 +437,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			parts.push(`búsqueda "${input.value.trim()}"`);
 		}
 
-		summary.textContent = `${visibleCount} resultado${visibleCount === 1 ? '' : 's'} para ${parts.join(' + ')}.`;
+		for (const summary of summaries) {
+			summary.textContent = `${visibleCount} resultado${visibleCount === 1 ? '' : 's'} para ${parts.join(' + ')}.`;
+		}
 	};
 
 	const stopStatusRotation = (): void => {
