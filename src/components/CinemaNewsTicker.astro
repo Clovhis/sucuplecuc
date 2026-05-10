@@ -8,17 +8,17 @@ interface Props {
 	isFallback?: boolean;
 }
 
-const { items, updatedLabel, isFallback = false } = Astro.props;
+const { items, sourceLabel, updatedLabel, isFallback = false } = Astro.props as Props;
 const marqueeItems = items;
 ---
 
 {
 	marqueeItems.length > 0 ? (
-		<section class="news-rail fade-up" style="--item-delay: 70ms;" aria-label="Noticias diarias">
+		<section class="news-rail fade-up" style="--item-delay: 70ms;" aria-label="Radar de cine">
 			<div class="news-rail__header">
-				<p class="news-rail__kicker">Noticias diarias</p>
+				<p class="news-rail__kicker">Radar de cine</p>
 				<p class="news-rail__meta">
-					{updatedLabel}
+					{sourceLabel} · {updatedLabel}
 					{isFallback ? ' · modo respaldo' : ''}
 				</p>
 			</div>

@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME } from '../lib/seo';
+
+const pageTitle = `Cómo funciona ${SITE_NAME} | Veredictos y metodología`;
+const pageDescription =
+	'Cine Posta explica cómo arma sus reseñas breves, sus veredictos y su criterio editorial: una guía argentina, directa y práctica para decidir qué ver.';
+
+const verdicts = [
+	{
+		name: 'Recomendada',
+		copy: 'Vale tu tiempo. Puede ser por ritmo, idea, actuaciones, clima o porque cumple muy bien lo que promete.',
+	},
+	{
+		name: 'Garpa',
+		copy: 'No siempre es perfecta, pero rinde. Hay algo claro para rescatar y la experiencia cierra.',
+	},
+	{
+		name: 'Zafa',
+		copy: 'Sirve con el plan correcto. No es prioridad, pero tampoco una pérdida total.',
+	},
+	{
+		name: 'No va',
+		copy: 'La promesa queda más grande que la película. Puede tener detalles, pero no alcanza.',
+	},
+	{
+		name: 'Malísima',
+		copy: 'La advertencia es simple: hay mejores formas de usar esa hora y media.',
+	},
+	{
+		name: 'Es una poronga',
+		copy: 'Etiqueta extrema para cuando la peli no solo falla: también te hace discutir por qué existe así.',
+	},
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<main id="main-content" class="container about-page methodology-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Criterio editorial</p>
+			<h1 class="about-page__title">Cómo funciona Cine Posta</h1>
+			<p class="about-page__lead">
+				Esto no intenta ser crítica académica. Es una guía práctica, honesta y argentina para decidir rápido si una película va con tu noche o si conviene pasar de largo.
+			</p>
+		</section>
+
+		<section class="about-page__grid methodology-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 80ms;">
+				<h2>Qué miramos</h2>
+				<p>
+					Miramos si la película cumple la promesa que vende: tono, ritmo, actuaciones, duración, género y ganas reales de recomendarla.
+				</p>
+				<p>
+					La reseña es corta porque la decisión también suele ser corta: ¿la veo hoy, la dejo para después o ni me gasto?
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 140ms;">
+				<h2>Cómo se escribe</h2>
+				<p>
+					Cine Posta escribe con voz propia: rioplatense, directa y sin solemnidad innecesaria. La idea es orientar, no sonar importante.
+				</p>
+				<p>
+					Los datos técnicos ayudan, pero el centro es la experiencia: qué te puede dar la peli y qué te puede hacer perder.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 200ms;">
+				<h2>Qué no hacemos</h2>
+				<p>
+					No puntuamos como una planilla, no fingimos neutralidad absoluta y no estiramos reseñas para llenar espacio.
+				</p>
+				<p>
+					Si una película es chica, rara, fallida o incómoda, igual puede entrar. Lo importante es decir con claridad para quién puede servir.
+				</p>
+			</article>
+		</section>
+
+		<section class="methodology-page__verdicts fade-up" style="--item-delay: 260ms;" aria-labelledby="verdictos-title">
+			<div class="methodology-page__section-head">
+				<p class="about-page__kicker">Diccionario posta</p>
+				<h2 id="verdictos-title">Qué significa cada veredicto</h2>
+			</div>
+			<div class="methodology-page__verdict-grid">
+				{verdicts.map((verdict) => (
+					<article class="methodology-page__verdict-card">
+						<h3>{verdict.name}</h3>
+						<p>{verdict.copy}</p>
+					</article>
+				))}
+			</div>
+		</section>
+	</main>
+</BaseLayout>

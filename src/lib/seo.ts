@@ -14,6 +14,7 @@ export const SITE_DESCRIPTION =
 export const SITE_LOGO_PATH = '/brand/cineposta-logo-mark.png';
 export const SITE_IMAGE_PATH = '/brand/cineposta-logo-full.png';
 export const ABOUT_PATH = '/sobre-cine-posta/';
+export const METHODOLOGY_PATH = '/como-funciona/';
 export const PRIVACY_PATH = '/politica-de-privacidad/';
 export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
 

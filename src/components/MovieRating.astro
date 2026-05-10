@@ -10,9 +10,9 @@ const { movieSlug } = Astro.props as Props;
 	<div class="rating-card__top">
 		<p class="rating-card__title">Qué opina la tribuna</p>
 		<p class="rating-card__summary">
-			<span data-rating-average>-/-</span>
+			<span data-rating-average>Sin promedio todavía</span>
 			<span aria-hidden="true">|</span>
-			<span data-rating-count>Sin votos</span>
+			<span data-rating-count>Todavía sin votos</span>
 		</p>
 	</div>
 	<div class="rating-stars" role="group" aria-label="Calificar película de 1 a 5 estrellas">
@@ -22,7 +22,7 @@ const { movieSlug } = Astro.props as Props;
 		<button type="button" data-star-value="4" aria-label="4 estrellas">★</button>
 		<button type="button" data-star-value="5" aria-label="5 estrellas">★</button>
 	</div>
-	<p class="rating-card__status" data-rating-status>Cargando puntuación...</p>
+	<p class="rating-card__status" data-rating-status>Todavía sin votos. Sé el primero en puntuarla.</p>
 </section>
 
 <!-- Astro 6: keep browser logic in a typed local entrypoint so this component stays declarative. -->

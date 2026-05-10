@@ -11,8 +11,8 @@ const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) 
 const VERDICT_LABELS: Record<MovieVerdict, string> = {
 	recomendada: 'Recomendada',
 	zafa: 'Zafa',
-	no_recomendada: 'Malisima',
-	basura_atomica: 'Basura atomica',
+	no_recomendada: 'Malísima',
+	basura_atomica: 'Basura atómica',
 };
 
 export type RecommendationGenreId =
@@ -73,7 +73,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'drama', label: 'Drama' },
 	{ id: 'thriller', label: 'Thriller' },
 	{ id: 'sci-fi', label: 'Sci-Fi' },
-	{ id: 'superheroes', label: 'Superheroes' },
+	{ id: 'superheroes', label: 'Superhéroes' },
 	{ id: 'animacion', label: 'Animación' },
 	{ id: 'anime', label: 'Anime' },
 	{ id: 'romance', label: 'Romance' },

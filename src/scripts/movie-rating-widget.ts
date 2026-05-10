@@ -43,7 +43,7 @@ function createVisitorToken(): string {
 }
 
 function formatAverage(value: number): string {
-	if (Number.isNaN(value)) return '-/-';
+	if (Number.isNaN(value)) return 'Sin promedio todavía';
 	return `${value.toFixed(1)}/5`;
 }
 
@@ -63,7 +63,9 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	const statusEl = statusNode;
 	const client = supabase;
 	if (!isSupabaseConfigured || !client) {
-		statusEl.textContent = 'Rating no configurado (faltan variables Supabase).';
+		averageEl.textContent = 'Rating no disponible';
+		countEl.textContent = 'Probá más tarde';
+		statusEl.textContent = 'La tribuna no está disponible ahora.';
 		return;
 	}
 
@@ -87,7 +89,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	}
 
 	async function loadStatsAndVote(): Promise<void> {
-		statusEl.textContent = 'Cargando puntuación...';
+		statusEl.textContent = 'Preparando la tribuna...';
 
 		const [statsResponse, voteResponse] = await Promise.all([
 			ratingClient
@@ -104,19 +106,25 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 		]);
 
 		if (statsResponse.error || voteResponse.error) {
+			averageEl.textContent = 'Rating no disponible';
+			countEl.textContent = 'Probá más tarde';
 			statusEl.textContent = 'No se pudo cargar el rating ahora.';
 			return;
 		}
 
 		const voteCount = statsResponse.data?.vote_count ?? 0;
-		averageEl.textContent = formatAverage(statsResponse.data?.avg_rating ?? Number.NaN);
-		countEl.textContent = voteCount === 1 ? '1 voto' : `${voteCount} votos`;
+		averageEl.textContent = voteCount > 0 ? formatAverage(statsResponse.data?.avg_rating ?? Number.NaN) : 'Sin promedio todavía';
+		countEl.textContent = voteCount === 0 ? 'Todavía sin votos' : voteCount === 1 ? '1 voto' : `${voteCount} votos`;
 
 		const voteData = voteResponse.data as { rating?: number | null } | null;
 		currentVote = Number(voteData?.rating ?? 0);
 		paintStars(currentVote);
 		statusEl.textContent =
-			currentVote > 0 ? `Tu voto: ${currentVote}/5` : 'Todavía no votaste esta peli.';
+			currentVote > 0
+				? `Tu voto: ${currentVote}/5`
+				: voteCount === 0
+					? 'Todavía sin votos. Sé el primero en puntuarla.'
+					: 'Todavía no votaste esta peli.';
 	}
 
 	async function submitVote(nextVote: number): Promise<void> {

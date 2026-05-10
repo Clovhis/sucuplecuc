@@ -40,9 +40,14 @@ const FEEDS: CinemaNewsFeed[] = [
 		articleHosts: ['pagina12.com.ar', 'www.pagina12.com.ar'],
 	},
 	{
-		name: 'EscribiendoCine',
-		url: 'https://www.escribiendocine.com/rss/noticias/',
-		articleHosts: ['escribiendocine.com', 'www.escribiendocine.com'],
+		name: 'Infobae',
+		url: 'https://www.infobae.com/arc/outboundfeeds/rss/category/entretenimiento/?outputType=xml',
+		articleHosts: ['infobae.com', 'www.infobae.com'],
+	},
+	{
+		name: 'Ámbito',
+		url: 'https://www.ambito.com/rss/pages/espectaculos.xml',
+		articleHosts: ['ambito.com', 'www.ambito.com'],
 	},
 	{
 		name: 'Cines Argentinos',
@@ -86,34 +91,7 @@ const HTML_ENTITIES: Record<string, string> = {
 	Uuml: 'Ü',
 };
 
-const FALLBACK_ITEMS: Omit<CinemaNewsItem, 'publishedLabel'>[] = [
-	{
-		title: 'Todos los ganadores de los Premios Oscar 2026',
-		summary: 'La premiación consagró a Una batalla tras otra como gran ganadora y repartió varios de los premios más pesados de la noche.',
-		link: 'https://www.escribiendocine.com/noticias/2026/03/15/21599-todos-los-ganadores-de-los-premios-oscar-2026',
-		source: 'EscribiendoCine',
-		publishedAt: '2026-03-16T02:02:01Z',
-		imageUrl:
-			'https://escribiendocine-s3.cdn.net.ar/s3i233/2026/03/escribiendocine/images/02/51/19/2511930_07ac4cf2417960184050e4e0dcc0e0a3a0b14a960fd13bada83dbb790853a9e9/sm.jpg',
-	},
-	{
-		title: 'Hoppers: Saltar de una conciencia humana a una animal',
-		summary: 'Pixar presentó una nueva historia donde el punto de vista se mete de lleno en el mundo animal.',
-		link: 'https://www.cinesargentinos.com.ar/noticia/7101-hoppers-saltar-de-una-conciencia-humana-a-una-animal',
-		source: 'Cines Argentinos',
-		publishedAt: '2026-03-03T10:30:00-03:00',
-		imageUrl: 'https://www.cinesargentinos.com.ar/static/archivos/72950',
-	},
-	{
-		title: 'Todos los ganadores de los Razzie Awards 2026 a lo peor del año',
-		summary: 'La ceremonia volvió a marcar los grandes fracasos del año en Hollywood con una lista que dio que hablar.',
-		link: 'https://www.escribiendocine.com/noticias/2026/03/14/21592-todos-los-ganadores-de-los-razzie-awards-2026-a-lo-peor-del-ano',
-		source: 'EscribiendoCine',
-		publishedAt: '2026-03-14T14:08:03Z',
-		imageUrl:
-			'https://escribiendocine-s3.cdn.net.ar/s3i233/2026/03/escribiendocine/images/02/51/04/2510405_9ac6ad5924cd6d53dff009f52b8b72eb90ee95b54c20d0991531360036611c37/sm.jpg',
-	},
-];
+const FALLBACK_ITEMS: Omit<CinemaNewsItem, 'publishedLabel'>[] = [];
 
 const EXCLUDED_PATTERNS = [
 	/^cr[ií]tica de\b/i,
@@ -151,7 +129,7 @@ const EXCLUDED_PATTERNS = [
 ];
 
 const EXCLUDED_CATEGORIES = new Set(['videos y fotos']);
-const DEDICATED_CINEMA_SOURCES = new Set(['Clarín', 'EscribiendoCine', 'Cines Argentinos']);
+const DEDICATED_CINEMA_SOURCES = new Set(['Clarín', 'Cines Argentinos']);
 const REQUIRED_CINEMA_PATTERNS = [
 	/\bcine\b/i,
 	/\bpel[ií]cula(?:s)?\b/i,
@@ -204,7 +182,7 @@ export async function getCinemaNews(): Promise<CinemaNewsResult> {
 		const enrichedItems = await enrichItemsWithImages(items);
 		return {
 			items: enrichedItems,
-			sourceLabel: 'medios argentinos',
+			sourceLabel: 'La Nación, Clarín, Infobae, Página/12 y Ámbito',
 			updatedLabel: formatUpdatedLabel(enrichedItems[0]?.publishedAt ?? new Date().toISOString()),
 			isFallback: false,
 		};
@@ -217,7 +195,7 @@ export async function getCinemaNews(): Promise<CinemaNewsResult> {
 
 	return {
 		items: fallbackItems,
-		sourceLabel: 'medios argentinos',
+		sourceLabel: 'La Nación, Clarín, Infobae, Página/12 y Ámbito',
 		updatedLabel: 'respaldo local',
 		isFallback: true,
 	};

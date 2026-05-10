@@ -16,8 +16,8 @@ import MovieRating from '../../components/MovieRating.astro';
 import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import { getAwardVisualKey } from '../../lib/awards';
-import { getMovieValueGuide } from '../../lib/editorialCopy';
-import { createMovieStructuredData } from '../../lib/seo';
+import { getMovieTenSecondTake, getMovieValueGuide } from '../../lib/editorialCopy';
+import { METHODOLOGY_PATH, SITE_NAME, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -36,6 +36,7 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
 const movieValueGuide = getMovieValueGuide(movie, editorialSummary);
+const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
@@ -115,6 +116,22 @@ const awardCategories = groupedAwards.flatMap((group) =>
 const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
 const personProfileReturnPath = encodeURIComponent(Astro.url.pathname);
+const reviewPurposeNote = 'Reseña breve y directa para ayudarte a decidir si verla o pasar de largo.';
+const editorialUpdatedLabel = movie.releaseDate
+	? new Intl.DateTimeFormat('es-AR', {
+			day: 'numeric',
+			month: 'long',
+			year: 'numeric',
+			timeZone: 'UTC',
+		}).format(new Date(`${movie.releaseDate}T00:00:00Z`))
+	: '';
+const tenSecondRows = [
+	{ label: 'Veredicto rápido', value: tenSecondTake.quickVerdict },
+	{ label: 'Mirala si', value: tenSecondTake.watchIf },
+	{ label: 'No la mires si', value: tenSecondTake.skipIf },
+	{ label: 'Ideal para', value: tenSecondTake.idealFor },
+	{ label: 'Nivel de intensidad', value: tenSecondTake.intensity },
+];
 
 function countWords(value: string): number {
 	return String(value ?? '')
@@ -341,6 +358,16 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
 					<PlatformBadgeGroup platforms={moviePlatforms} />
 				</div>
+				<div class="movie-detail__editorial-byline" aria-label="Datos editoriales de la reseña">
+					<span>Por {SITE_NAME}</span>
+					{editorialUpdatedLabel && (
+						<>
+							<span aria-hidden="true">·</span>
+							<time datetime={movie.releaseDate}>Actualizada: {editorialUpdatedLabel}</time>
+						</>
+					)}
+				</div>
+				<p class="movie-detail__editorial-note">{reviewPurposeNote}</p>
 				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
 					<div class="movie-detail__hero-stack">
 						{trailerPageUrl ? (
@@ -365,12 +392,27 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						)}
 						{
 							movie.synopsis && (
-								<section class="movie-detail__synopsis-card" aria-label="De que se trata">
-									<p class="movie-detail__synopsis-kicker">De que se trata</p>
+								<section class="movie-detail__synopsis-card" aria-label="De qué se trata">
+									<p class="movie-detail__synopsis-kicker">De qué se trata</p>
 									<p class="movie-detail__synopsis">{movie.synopsis}</p>
 								</section>
 							)
 						}
+						<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
+							<div class="movie-detail__ten-second-head">
+								<p class="movie-detail__ten-second-kicker">La Posta en 10 segundos</p>
+								<a href={METHODOLOGY_PATH}>Cómo leemos las pelis</a>
+							</div>
+							<h2 id={`ten-second-${movie.slug}`} class="u-visually-hidden">La Posta en 10 segundos de {movie.title}</h2>
+							<dl class="movie-detail__ten-second-list">
+								{tenSecondRows.map((row) => (
+									<div class="movie-detail__ten-second-row">
+										<dt>{row.label}</dt>
+										<dd>{row.value}</dd>
+									</div>
+								))}
+							</dl>
+						</section>
 						{
 							movie.review && (
 								<section class="movie-detail__review-card" aria-label="Reseña honesta">
@@ -594,11 +636,11 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					<div class="movie-detail__info-overview">
 						<dl class="movie-detail__credits">
 							<div class="movie-detail__credit-item">
-								<dt>Titulo original</dt>
+								<dt>Título original</dt>
 								<dd>{movie.originalTitle}</dd>
 							</div>
 							<div class="movie-detail__credit-item">
-								<dt>Categoria</dt>
+								<dt>Categoría</dt>
 								<dd>{movie.category}</dd>
 							</div>
 							{
@@ -607,7 +649,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										<dt>{moviePlatforms.length > 1 ? 'Plataformas' : 'Plataforma'}</dt>
 										<dd class="movie-detail__platform-value">
 											<PlatformBadgeGroup platforms={moviePlatforms} />
-											<span>{moviePlatformLabel}</span>
+											<span class="u-visually-hidden">{moviePlatformLabel}</span>
 										</dd>
 									</div>
 								)
@@ -633,7 +675,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							)
 						}
 					</div>
-					<div class="movie-detail__editorial-grid" aria-label="Datos utiles para decidir rapido">
+					<div class="movie-detail__editorial-grid" aria-label="Datos útiles para decidir rápido">
 						{
 							editorialSummary.runtime && (
 								<section class="movie-detail__editorial-card movie-detail__editorial-card--duration">

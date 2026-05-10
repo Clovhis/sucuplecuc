@@ -11,15 +11,23 @@ export interface MovieValueGuide {
 	footerBlocks: EditorialBlock[];
 }
 
+export interface MovieTenSecondTake {
+	quickVerdict: string;
+	watchIf: string;
+	skipIf: string;
+	idealFor: string;
+	intensity: string;
+}
+
 const verdictCopy: Record<MovieVerdict, string> = {
 	recomendada:
-		'La recomendacion sale cuando la pelicula tiene una razon clara para ocupar tiempo de pantalla: ritmo, oficio, ideas o una energia que compensa sus tropiezos.',
+		'La recomendación sale cuando la película tiene una razón clara para ocupar tiempo de pantalla: ritmo, oficio, ideas o una energía que compensa sus tropiezos.',
 	zafa:
-		'El zafa marca una zona intermedia: no es una prioridad absoluta, pero puede servir si el genero, el elenco o el plan de la noche coinciden con lo que buscas.',
+		'El zafa marca una zona intermedia: no es una prioridad absoluta, pero puede servir si el género, el elenco o el plan de la noche coinciden con lo que buscás.',
 	no_recomendada:
-		'La no recomendacion apunta a una advertencia practica. Puede tener algun detalle rescatable, pero la experiencia completa queda por debajo de lo que promete.',
+		'La no recomendación apunta a una advertencia práctica. Puede tener algún detalle rescatable, pero la experiencia completa queda por debajo de lo que promete.',
 	basura_atomica:
-		'La basura atomica queda reservada para casos donde la falla no es solo de gusto: el problema esta en ritmo, decisiones narrativas o una ejecucion que vuelve dificil defenderla.',
+		'La basura atómica queda reservada para casos donde la falla no es solo de gusto: el problema está en ritmo, decisiones narrativas o una ejecución que vuelve difícil defenderla.',
 };
 
 function cleanList(values: string[]): string[] {
@@ -34,35 +42,92 @@ function joinNames(values: string[], fallback: string): string {
 	return `${names.slice(0, -1).join(', ')} y ${names[names.length - 1]}`;
 }
 
+function normalizeText(value: string): string {
+	return value
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase();
+}
+
+function getPrimaryGenre(movie: Movie): string {
+	return cleanList(movie.genres ?? [movie.category])[0] ?? movie.category;
+}
+
+function getIntensityLabel(movie: Movie): string {
+	const haystack = normalizeText([movie.category, ...(movie.genres ?? []), movie.review, movie.synopsis].join(' '));
+
+	if (/\bterror\b|\bhorror\b|\bthriller\b|\bcrimen\b|\bguerra\b|\bbelic/.test(haystack)) {
+		return 'Alta: pide atención y algo de estómago.';
+	}
+
+	if (/\bdrama\b|\boscura\b|\bintensa\b|\bpolitic/.test(haystack)) {
+		return 'Media alta: mejor verla con ganas de meterse.';
+	}
+
+	if (/\bcomedia\b|\banimacion\b|\banime\b|\baventura\b|\bfamiliar\b/.test(haystack)) {
+		return 'Media: va sin manual, pero no siempre en piloto automático.';
+	}
+
+	return 'Media: tranqui, pero con la cabeza prendida.';
+}
+
+export function getMovieTenSecondTake(movie: Movie): MovieTenSecondTake {
+	const genre = getPrimaryGenre(movie).toLowerCase();
+	const castLabel = joinNames(movie.mainCast, 'el elenco');
+	const verdictLabel = movie.verdictLabel?.trim() || movie.verdict.replace(/_/g, ' ');
+
+	const quickVerdicts: Record<MovieVerdict, string> = {
+		recomendada: `${verdictLabel}. Entra por ${genre} y deja una razón clara para verla.`,
+		zafa: `${verdictLabel}. No es prioridad absoluta, pero puede rendir con el plan justo.`,
+		no_recomendada: `${verdictLabel}. Tiene alguna punta, pero no termina de pagar el tiempo que pide.`,
+		basura_atomica: `${verdictLabel}. Acá la advertencia va en serio: cuesta defenderla.`,
+	};
+
+	const watchIfByVerdict: Record<MovieVerdict, string> = {
+		recomendada: `Mirala si querés una de ${genre} con oficio y algo para comentar después.`,
+		zafa: `Mirala si hoy te sirve una de ${genre} sin exigirle que te cambie la vida.`,
+		no_recomendada: `Mirala si te interesa ${castLabel} o venís completando este tipo de cine.`,
+		basura_atomica: `Mirala solo si te divierte discutir por qué algo salió tan torcido.`,
+	};
+
+	const skipIfByVerdict: Record<MovieVerdict, string> = {
+		recomendada: 'No la mires si hoy querés apagar el cerebro y nada más.',
+		zafa: 'No la mires si estás buscando una apuesta segura, redonda y sin baches.',
+		no_recomendada: 'No la mires si tenés poco tiempo y querés ir a lo seguro.',
+		basura_atomica: 'No la mires si tu paciencia anda corta o necesitás algo que fluya.',
+	};
+
+	const idealByVerdict: Record<MovieVerdict, string> = {
+		recomendada: 'Ideal para una noche con ganas de ver algo que deje tema.',
+		zafa: 'Ideal para plan liviano, pochoclos y expectativas bien ubicadas.',
+		no_recomendada: 'Ideal solo para completistas, curiosos o fans del equipo involucrado.',
+		basura_atomica: 'Ideal para verla con gente y comentar el derrumbe en vivo.',
+	};
+
+	return {
+		quickVerdict: quickVerdicts[movie.verdict],
+		watchIf: watchIfByVerdict[movie.verdict],
+		skipIf: skipIfByVerdict[movie.verdict],
+		idealFor: idealByVerdict[movie.verdict],
+		intensity: getIntensityLabel(movie),
+	};
+}
+
 export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary): MovieValueGuide {
-	const castLabel = joinNames(movie.mainCast, 'su elenco principal');
 	const relatedLabel = summary.related.length
 		? joinNames(
 				summary.related.map((entry) => entry.title),
-				'otras peliculas del catalogo',
+				'otras películas del catálogo',
 			)
-		: 'otras peliculas del catalogo';
-	const bridgeLabel = summary.bridge.length
-		? joinNames(
-				summary.bridge.map((entry) => entry.title),
-				'peliculas cercanas del catalogo',
-			)
-		: relatedLabel;
+		: 'otras películas del catálogo';
 
 	return {
 		footerBlocks: [
 			{
-				title: 'Como leer el veredicto',
+				title: 'Cómo leer esta ficha',
 				paragraphs: [
 					`${getVerdictLabelForSentence(movie)}. ${verdictCopy[movie.verdict]}`,
-					`Tambien miramos si ${movie.title} sostiene su promesa basica: que la sinopsis, el trailer, la duracion y el resultado final apunten hacia la misma experiencia. Cuando esos elementos se contradicen, el veredicto lo dice sin disfrazarlo.`,
-				],
-			},
-			{
-				title: '',
-				paragraphs: [
-					`${movie.title} entra en el catalogo como una propuesta de ${movie.category.toLowerCase()} de ${movie.year}, dirigida por ${movie.director}. La ficha no se limita a repetir datos: separa premisa, veredicto y contexto para que la decision de verla sea rapida y concreta.`,
-					`El punto de partida es el cruce entre ${castLabel}, la marca de ${movie.productionCompany} y el lugar que ocupa frente a ${bridgeLabel}. Esa comparacion interna ayuda a entender si conviene verla por tono, por reparto o por simple curiosidad de genero.`,
+					`La ficha intenta responder rápido si ${movie.title} te conviene hoy: de qué va, qué nos dejó y por dónde seguir si te quedaste con ganas de ${relatedLabel}.`,
 				],
 			},
 		],
@@ -74,7 +139,7 @@ function getVerdictLabelForSentence(movie: Pick<Movie, 'title' | 'verdict' | 've
 	if (label) {
 		return `El veredicto de Cine Posta para ${movie.title} es "${label}"`;
 	}
-	return `El veredicto de Cine Posta para ${movie.title} esta marcado como ${movie.verdict.replace(/_/g, ' ')}`;
+	return `El veredicto de Cine Posta para ${movie.title} está marcado como ${movie.verdict.replace(/_/g, ' ')}`;
 }
 
 export function getPersonEditorialBlocks(
@@ -83,19 +148,19 @@ export function getPersonEditorialBlocks(
 ): EditorialBlock[] {
 	const filmTitles = joinNames(
 		filmography.slice(0, 4).map((entry) => entry.title),
-		'las peliculas conectadas',
+		'las películas conectadas',
 	);
 	const roleLabel = profile.roles.join(', ').toLowerCase();
 	const award = profile.awards[0];
 	const awardCopy = award
-		? `La ficha tambien registra ${award.label}${award.category ? ` en ${award.category}` : ''}${award.work ? ` por ${award.work}` : ''}${award.year ? ` (${award.year})` : ''}.`
-		: 'La ficha prioriza peliculas, roles y contexto antes que una lista larga de datos sueltos.';
+		? `La ficha también registra ${award.label}${award.category ? ` en ${award.category}` : ''}${award.work ? ` por ${award.work}` : ''}${award.year ? ` (${award.year})` : ''}.`
+		: 'La ficha prioriza películas, roles y contexto antes que una lista larga de datos sueltos.';
 
 	return [
 		{
 			title: '',
 			paragraphs: [
-				`${profile.name} aparece en Cine Posta como ${roleLabel}, con una filmografia interna que permite saltar de la biografia a ${filmTitles}. La pagina esta pensada para conectar datos basicos, premios y peliculas sin depender de una ficha externa.`,
+				`${profile.name} aparece en Cine Posta como ${roleLabel}, con una filmografía interna que permite saltar de la biografía a ${filmTitles}. La página está pensada para conectar datos básicos, premios y películas sin depender de una ficha externa.`,
 				`${profile.spotlight} ${awardCopy}`,
 			],
 		},
