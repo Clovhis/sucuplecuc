@@ -53,8 +53,8 @@ Rules:
 
 Treat a movie as "recent" only if it has already been released and passes one of these windows relative to today:
 
-- theatrical release date between `today - 90 days` and `today`
-- first streaming/platform release date between `today - 90 days` and `today`
+- theatrical release date between `today - 7 days` and `today`
+- first streaming/platform release date between `today - 7 days` and `today`
 
 Hard rules:
 
