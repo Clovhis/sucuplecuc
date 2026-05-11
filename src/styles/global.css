@@ -1498,30 +1498,24 @@ img {
 
 .editorial-rankings {
 	display: grid;
+	position: relative;
 	gap: 1rem;
+	overflow: hidden;
+	isolation: isolate;
 	padding: 1.1rem;
 	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	background:
+		radial-gradient(circle at 76% 3%, rgba(255, 176, 137, 0.14), transparent 24%),
 		linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012)),
 		rgba(8, 12, 20, 0.72);
 	box-shadow: var(--shadow-panel);
 }
 
 .editorial-rankings__header {
-	display: flex;
-	justify-content: space-between;
-	gap: 1rem;
-	align-items: end;
-}
-
-.editorial-rankings__kicker {
-	margin: 0 0 0.35rem;
-	color: #ffcfbb;
-	font-size: 0.72rem;
-	font-family: var(--font-mono);
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
+	display: grid;
+	position: relative;
+	z-index: 1;
 }
 
 .editorial-rankings__header h2 {
@@ -1531,18 +1525,12 @@ img {
 	line-height: 1.2;
 }
 
-.editorial-rankings__header p {
-	margin: 0;
-	max-width: 34ch;
-	color: #b9c5d9;
-	font-size: 0.92rem;
-	line-height: 1.45;
-}
-
 .editorial-rankings__grid {
 	display: grid;
+	position: relative;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 0.85rem;
+	z-index: 1;
 }
 
 .editorial-rankings__card {
@@ -1558,9 +1546,57 @@ img {
 	box-shadow: var(--shadow-card);
 }
 
+.editorial-rankings__card-title,
 .editorial-rankings__card h3,
 .editorial-rankings__card p {
 	margin: 0;
+}
+
+.editorial-rankings__card-title {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	gap: 0.55rem;
+	align-items: start;
+}
+
+.editorial-rankings__icon {
+	display: inline-grid;
+	place-items: center;
+	width: 1.85rem;
+	height: 1.85rem;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 207, 187, 0.16);
+	background:
+		linear-gradient(180deg, rgba(255, 207, 187, 0.1), rgba(117, 153, 255, 0.04)),
+		rgba(255, 255, 255, 0.035);
+	color: #ffcfbb;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.editorial-rankings__icon::before {
+	content: '';
+	width: 1rem;
+	height: 1rem;
+	background: currentColor;
+	mask: var(--ranking-icon) center / contain no-repeat;
+	-webkit-mask: var(--ranking-icon) center / contain no-repeat;
+	opacity: 0.9;
+}
+
+.editorial-rankings__icon--accion-pochoclera {
+	--ranking-icon: url("data:image/svg+xml,%3Csvg%20viewBox='0%200%2024%2024'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M4%208h16v11H4z'/%3E%3Cpath%20d='m4%208%203-5h13l-3%205'/%3E%3Cpath%20d='m8%203-3%205M14%203l-3%205'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.editorial-rankings__icon--terror-que-garpa {
+	--ranking-icon: url("data:image/svg+xml,%3Csvg%20viewBox='0%200%2024%2024'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M5%207h7v10H5z'/%3E%3Cpath%20d='m12%2010%207-4v12l-7-4'/%3E%3Cpath%20d='M7%2010h3M7%2014h3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.editorial-rankings__icon--pareja-sin-dormirse {
+	--ranking-icon: url("data:image/svg+xml,%3Csvg%20viewBox='0%200%2024%2024'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M4%209a2%202%200%200%200%202-2h12a2%202%200%200%200%202%202v2a2%202%200%200%200%200%204v2a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2v-2a2%202%200%200%200%200-4z'/%3E%3Cpath%20d='M9%208v8M15%208v8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.editorial-rankings__icon--cine-argentino-garpa {
+	--ranking-icon: url("data:image/svg+xml,%3Csvg%20viewBox='0%200%2024%2024'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M5%204v16'/%3E%3Cpath%20d='M5%205h12l-2%204%202%204H5'/%3E%3Cpath%20d='m12%207%201%202%202%20.2-1.5%201.3.4%202-2.1-1-2.1%201%20.4-2-1.5-1.3%202-.2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .editorial-rankings__card h3 {
@@ -4989,10 +5025,6 @@ img {
 		gap: 0.8rem;
 		padding-top: 0.5rem;
 		padding-bottom: 2.6rem;
-	}
-
-	.editorial-rankings {
-		display: none;
 	}
 
 	.home-results-tools {

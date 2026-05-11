@@ -38,35 +38,56 @@ function toRankingMovie(movie: Movie): EditorialRankingMovie {
 	};
 }
 
-function pickMovies(movies: Movie[], predicate: (movie: Movie) => boolean, limit = 4): EditorialRankingMovie[] {
-	return movies
-		.filter((movie) => POSITIVE_VERDICTS.has(movie.verdict) && predicate(movie))
+function pickMovies(
+	movies: Movie[],
+	predicate: (movie: Movie) => boolean,
+	usedMovieSlugs: Set<string>,
+	limit = 3,
+): EditorialRankingMovie[] {
+	const pickedMovies = movies
+		.filter((movie) => POSITIVE_VERDICTS.has(movie.verdict) && !usedMovieSlugs.has(movie.slug) && predicate(movie))
 		.sort((left, right) => right.year - left.year || left.title.localeCompare(right.title, 'es'))
-		.slice(0, limit)
-		.map(toRankingMovie);
+		.slice(0, limit);
+
+	for (const movie of pickedMovies) {
+		usedMovieSlugs.add(movie.slug);
+	}
+
+	return pickedMovies.map(toRankingMovie);
 }
 
 export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
+	const usedMovieSlugs = new Set<string>();
 	const rankings: EditorialRanking[] = [
 		{
 			id: 'accion-pochoclera',
 			title: 'Acción pochoclera para apagar la cabeza',
 			description: 'Tiros, persecuciones, golpes y plan de sillón sin pedir permiso.',
-			movies: pickMovies(movies, (movie) =>
-				hasAnySignal(movie, ['acción', 'action', 'aventura', 'superhéroes', 'superheroes', 'thriller']),
+			movies: pickMovies(
+				movies,
+				(movie) => hasAnySignal(movie, ['acción', 'action', 'aventura', 'superhéroes', 'superheroes', 'thriller']),
+				usedMovieSlugs,
 			),
 		},
 		{
 			id: 'terror-que-garpa',
 			title: 'Terror que no es una poronga',
 			description: 'Sustos, clima o tensión que por lo menos tienen una idea atrás.',
-			movies: pickMovies(movies, (movie) => hasAnySignal(movie, ['terror', 'horror', 'thriller'])),
+			movies: pickMovies(
+				movies,
+				(movie) => hasAnySignal(movie, ['terror', 'horror', 'thriller']),
+				usedMovieSlugs,
+			),
 		},
 		{
 			id: 'pareja-sin-dormirse',
 			title: 'Películas para ver en pareja sin dormirse',
 			description: 'Planes con charla después, sin convertir la noche en trámite.',
-			movies: pickMovies(movies, (movie) => hasAnySignal(movie, ['romance', 'comedia', 'drama'])),
+			movies: pickMovies(
+				movies,
+				(movie) => hasAnySignal(movie, ['romance', 'comedia', 'drama']),
+				usedMovieSlugs,
+			),
 		},
 		{
 			id: 'cine-argentino-garpa',
@@ -77,6 +98,7 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 				(movie) =>
 					movie.isArgentinian === true ||
 					hasAnySignal(movie, ['argentina', 'argentino', 'buenos aires', 'rioplatense']),
+				usedMovieSlugs,
 			),
 		},
 	];

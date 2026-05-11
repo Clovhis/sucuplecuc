@@ -262,16 +262,15 @@ function formatUpcomingReleaseDate(value: string) {
 						editorialRankings.length > 0 && (
 							<section class="editorial-rankings fade-up" style="--item-delay: 120ms;" aria-labelledby="editorial-rankings-title">
 								<div class="editorial-rankings__header">
-									<div>
-										<p class="editorial-rankings__kicker">Listas Cine Posta</p>
-										<h2 id="editorial-rankings-title">Rankings editoriales para entrar sin vueltas</h2>
-									</div>
-									<p>Listas armadas con películas que ya están en el catálogo. Sin inventar relleno.</p>
+									<h2 id="editorial-rankings-title">Rankings editoriales para entrar sin vueltas</h2>
 								</div>
 								<div class="editorial-rankings__grid">
 									{editorialRankings.map((ranking) => (
 										<article class="editorial-rankings__card">
-											<h3>{ranking.title}</h3>
+											<div class="editorial-rankings__card-title">
+												<span class={`editorial-rankings__icon editorial-rankings__icon--${ranking.id}`} aria-hidden="true"></span>
+												<h3>{ranking.title}</h3>
+											</div>
 											<p>{ranking.description}</p>
 											<ol>
 												{ranking.movies.map((entry) => (
