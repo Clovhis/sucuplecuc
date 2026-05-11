@@ -1,14 +1,10 @@
 import type { Movie, MovieVerdict } from '../types/movie';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
-import type { MovieEditorialSummary } from './movies';
+import { getVerdictLabel } from './movies';
 
 export interface EditorialBlock {
 	title: string;
 	paragraphs: string[];
-}
-
-export interface MovieValueGuide {
-	footerBlocks: EditorialBlock[];
 }
 
 export interface MovieTenSecondTake {
@@ -18,17 +14,6 @@ export interface MovieTenSecondTake {
 	idealFor: string;
 	intensity: string;
 }
-
-const verdictCopy: Record<MovieVerdict, string> = {
-	recomendada:
-		'La recomendación sale cuando la película tiene una razón clara para ocupar tiempo de pantalla: ritmo, oficio, ideas o una energía que compensa sus tropiezos.',
-	zafa:
-		'El zafa marca una zona intermedia: no es una prioridad absoluta, pero puede servir si el género, el elenco o el plan de la noche coinciden con lo que buscás.',
-	no_recomendada:
-		'La no recomendación apunta a una advertencia práctica. Puede tener algún detalle rescatable, pero la experiencia completa queda por debajo de lo que promete.',
-	basura_atomica:
-		'La basura atómica queda reservada para casos donde la falla no es solo de gusto: el problema está en ritmo, decisiones narrativas o una ejecución que vuelve difícil defenderla.',
-};
 
 function cleanList(values: string[]): string[] {
 	return values.map((value) => value.trim()).filter(Boolean);
@@ -74,7 +59,7 @@ function getIntensityLabel(movie: Movie): string {
 export function getMovieTenSecondTake(movie: Movie): MovieTenSecondTake {
 	const genre = getPrimaryGenre(movie).toLowerCase();
 	const castLabel = joinNames(movie.mainCast, 'el elenco');
-	const verdictLabel = movie.verdictLabel?.trim() || movie.verdict.replace(/_/g, ' ');
+	const verdictLabel = getVerdictLabel(movie);
 
 	const quickVerdicts: Record<MovieVerdict, string> = {
 		recomendada: `${verdictLabel}. Entra por ${genre} y deja una razón clara para verla.`,
@@ -111,35 +96,6 @@ export function getMovieTenSecondTake(movie: Movie): MovieTenSecondTake {
 		idealFor: idealByVerdict[movie.verdict],
 		intensity: getIntensityLabel(movie),
 	};
-}
-
-export function getMovieValueGuide(movie: Movie, summary: MovieEditorialSummary): MovieValueGuide {
-	const relatedLabel = summary.related.length
-		? joinNames(
-				summary.related.map((entry) => entry.title),
-				'otras películas del catálogo',
-			)
-		: 'otras películas del catálogo';
-
-	return {
-		footerBlocks: [
-			{
-				title: 'Cómo leer esta ficha',
-				paragraphs: [
-					`${getVerdictLabelForSentence(movie)}. ${verdictCopy[movie.verdict]}`,
-					`La ficha intenta responder rápido si ${movie.title} te conviene hoy: de qué va, qué nos dejó y por dónde seguir si te quedaste con ganas de ${relatedLabel}.`,
-				],
-			},
-		],
-	};
-}
-
-function getVerdictLabelForSentence(movie: Pick<Movie, 'title' | 'verdict' | 'verdictLabel'>): string {
-	const label = movie.verdictLabel?.trim();
-	if (label) {
-		return `El veredicto de Cine Posta para ${movie.title} es "${label}"`;
-	}
-	return `El veredicto de Cine Posta para ${movie.title} está marcado como ${movie.verdict.replace(/_/g, ' ')}`;
 }
 
 export function getPersonEditorialBlocks(

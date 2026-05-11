@@ -21,6 +21,7 @@ type MovieIndexEntry = {
 	entryType: 'movie';
 	platforms: Set<string>;
 	genres: Set<string>;
+	absoluteCinema: boolean;
 	poster: HTMLImageElement | null;
 };
 
@@ -42,6 +43,7 @@ type HomeState = {
 	query: string;
 	genre: string | null;
 	platform: string | null;
+	absoluteCinema: boolean;
 	scrollY: number;
 	ts: number;
 };
@@ -84,6 +86,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const people = Array.from(searchRoot.querySelectorAll<HTMLElement>('[data-person-search-entry]'));
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
+	const absoluteCinemaChip = document.querySelector<HTMLButtonElement>('[data-home-absolute-cinema-chip]');
 	const peopleShowcaseGrid = document.querySelector<HTMLElement>('[data-home-people-grid]');
 	const searchResultsGrid = document.querySelector<HTMLElement>('[data-movie-search-grid]');
 
@@ -119,6 +122,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 					.map((value) => value.trim())
 					.filter(Boolean),
 			),
+			absoluteCinema: card.dataset.movieAbsoluteCinema === 'true',
 			poster: poster instanceof HTMLImageElement ? poster : null,
 		}];
 	});
@@ -145,9 +149,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	let activeGenre: string | null = null;
 	let activePlatform: string | null = null;
+	let activeAbsoluteCinema = false;
 	let lastAppliedQuery = '';
 	let lastAppliedGenre = '';
 	let lastAppliedPlatform = '';
+	let lastAppliedAbsoluteCinema = '';
 	let filterTimer = 0;
 	let filterFrame = 0;
 	let statusRotateTimer = 0;
@@ -297,7 +303,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (!(clearButton instanceof HTMLButtonElement)) return;
 
 		const shouldShow =
-			input.value.trim().length > 0 || Boolean(activeGenre) || Boolean(activePlatform);
+			input.value.trim().length > 0 ||
+			Boolean(activeGenre) ||
+			Boolean(activePlatform) ||
+			activeAbsoluteCinema;
 		clearButton.hidden = !shouldShow;
 	};
 
@@ -418,8 +427,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		const hasQuery = query.length > 0;
 		const hasGenre = Boolean(activeGenre);
 		const hasPlatform = Boolean(activePlatform);
+		const hasAbsoluteCinema = activeAbsoluteCinema;
 
-		if (!hasQuery && !hasGenre && !hasPlatform) {
+		if (!hasQuery && !hasGenre && !hasPlatform && !hasAbsoluteCinema) {
 			for (const summary of summaries) {
 				summary.textContent = `${visibleCount} títulos publicados.`;
 			}
@@ -432,6 +442,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 		if (hasPlatform) {
 			parts.push(`plataforma ${getChipLabel(platformChips, 'homePlatformId', activePlatform)}`);
+		}
+		if (hasAbsoluteCinema) {
+			parts.push('sello Absolute Cinema');
 		}
 		if (hasQuery) {
 			parts.push(`búsqueda "${input.value.trim()}"`);
@@ -542,6 +555,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				query: input.value,
 				genre: activeGenre,
 				platform: activePlatform,
+				absoluteCinema: activeAbsoluteCinema,
 				scrollY: Math.max(0, Math.round(window.scrollY)),
 				ts: Date.now(),
 			};
@@ -564,10 +578,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		return activePlatform;
 	};
 
+	const toggleAbsoluteCinema = (): boolean => {
+		activeAbsoluteCinema = !activeAbsoluteCinema;
+		updateClearButtonVisibility();
+		return activeAbsoluteCinema;
+	};
+
 	const runFilter = (force = false): number => {
 		const query = normalize(input.value);
 		const genreKey = activeGenre ?? '';
 		const platformKey = activePlatform ?? '';
+		const absoluteCinemaKey = activeAbsoluteCinema ? '1' : '';
 
 		updateClearButtonVisibility();
 
@@ -575,7 +596,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			!force &&
 			query === lastAppliedQuery &&
 			genreKey === lastAppliedGenre &&
-			platformKey === lastAppliedPlatform
+			platformKey === lastAppliedPlatform &&
+			absoluteCinemaKey === lastAppliedAbsoluteCinema
 		) {
 			const visibleCount = getVisibleEntries().length;
 			renderSuggestions(query, getSuggestionMatches(query, getVisibleEntries()));
@@ -586,6 +608,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		lastAppliedQuery = query;
 		lastAppliedGenre = genreKey;
 		lastAppliedPlatform = platformKey;
+		lastAppliedAbsoluteCinema = absoluteCinemaKey;
 
 		let visibleCount = 0;
 		const matchingEntries: MovieIndexEntry[] = [];
@@ -593,8 +616,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		for (const entry of movieIndex) {
 			const genreMatch = !activeGenre || entry.genres.has(activeGenre);
 			const platformMatch = !activePlatform || entry.platforms.has(activePlatform);
+			const absoluteCinemaMatch = !activeAbsoluteCinema || entry.absoluteCinema;
 			const queryMatch = query.length === 0 || entry.searchable.includes(query);
-			const show = genreMatch && platformMatch && queryMatch;
+			const show = genreMatch && platformMatch && absoluteCinemaMatch && queryMatch;
 
 			if (entry.element.hidden === show) {
 				entry.element.hidden = !show;
@@ -633,13 +657,22 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
+	const applyAbsoluteCinemaUI = (): void => {
+		if (!(absoluteCinemaChip instanceof HTMLButtonElement)) return;
+
+		absoluteCinemaChip.classList.toggle('is-active', activeAbsoluteCinema);
+		absoluteCinemaChip.setAttribute('aria-pressed', activeAbsoluteCinema ? 'true' : 'false');
+	};
+
 	const resetCatalog = (mode: StatusMode = 'catalog'): number => {
 		activeGenre = null;
 		activePlatform = null;
+		activeAbsoluteCinema = false;
 		input.value = '';
 		hideSuggestions();
 		applyGenreUI();
 		applyPlatformUI();
+		applyAbsoluteCinemaUI();
 		updateClearButtonVisibility();
 		removeStoredHomeState();
 		setReturnBehavior(null);
@@ -729,19 +762,25 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (typeof parsed.platform === 'string' && parsed.platform.length > 0) {
 			activePlatform = parsed.platform;
 		}
+		if (typeof parsed.absoluteCinema === 'boolean') {
+			activeAbsoluteCinema = parsed.absoluteCinema;
+		}
 
 		applyGenreUI();
 		applyPlatformUI();
+		applyAbsoluteCinemaUI();
 		updateClearButtonVisibility();
 
 		lastAppliedQuery = '';
 		lastAppliedGenre = '';
 		lastAppliedPlatform = '';
+		lastAppliedAbsoluteCinema = '';
 
 		const mode: StatusMode =
 			((typeof parsed.query === 'string' && parsed.query.trim().length > 0) ||
 				Boolean(activeGenre) ||
-				Boolean(activePlatform))
+				Boolean(activePlatform) ||
+				activeAbsoluteCinema)
 				? 'search'
 				: 'catalog';
 		const visibleCount = runFilter(true);
@@ -800,8 +839,22 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		});
 	}
 
+	absoluteCinemaChip?.addEventListener('click', () => {
+		const isResetInteraction = activeAbsoluteCinema;
+		toggleAbsoluteCinema();
+		if (isResetInteraction) {
+			input.value = '';
+		}
+		applyAbsoluteCinemaUI();
+		showStatus(searchLoadingPhrases);
+		const visibleCount = runFilter(true);
+		syncStatusWithVisiblePosters('search', visibleCount);
+		persistHomeState();
+	});
+
 	applyGenreUI();
 	applyPlatformUI();
+	applyAbsoluteCinemaUI();
 	updateClearButtonVisibility();
 
 	input.addEventListener('input', () => {

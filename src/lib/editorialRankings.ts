@@ -1,5 +1,5 @@
 import type { Movie, MovieVerdict } from '../types/movie';
-import { getMoviePath, normalizeSearchText } from './movies';
+import { getMoviePath, getVerdictLabel, normalizeSearchText } from './movies';
 
 export interface EditorialRankingMovie {
 	title: string;
@@ -34,7 +34,7 @@ function toRankingMovie(movie: Movie): EditorialRankingMovie {
 		title: movie.title,
 		year: movie.year,
 		url: getMoviePath(movie.slug),
-		verdictLabel: movie.verdictLabel?.trim() || movie.verdict.replace(/_/g, ' '),
+		verdictLabel: getVerdictLabel(movie),
 	};
 }
 

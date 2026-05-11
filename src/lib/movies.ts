@@ -15,6 +15,9 @@ const VERDICT_LABELS: Record<MovieVerdict, string> = {
 	basura_atomica: 'Basura atómica',
 };
 
+export const ABSOLUTE_CINEMA_LABEL = 'Absolute Cinema';
+const ABSOLUTE_CINEMA_SOURCE_LABELS = new Set(['legendaria', 'obra maestra', 'clasico total']);
+
 export type RecommendationGenreId =
 	| 'accion'
 	| 'comedia'
@@ -431,11 +434,22 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 		.slice(0, limit);
 }
 
-export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel'>): string {
+export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel' | 'absoluteCinema'>): string {
+	if (isAbsoluteCinemaMovie(movie)) {
+		return ABSOLUTE_CINEMA_LABEL;
+	}
 	if (movie.verdictLabel?.trim()) {
 		return movie.verdictLabel.trim();
 	}
 	return VERDICT_LABELS[movie.verdict] ?? 'Sin definir';
+}
+
+export function isAbsoluteCinemaMovie(movie: Pick<Movie, 'verdictLabel' | 'absoluteCinema'>): boolean {
+	if (movie.absoluteCinema) {
+		return true;
+	}
+	const normalizedLabel = normalizeSearchText(movie.verdictLabel ?? '').replace(/\s+/g, ' ');
+	return ABSOLUTE_CINEMA_SOURCE_LABELS.has(normalizedLabel);
 }
 
 export function normalizeSearchText(value: string): string {
@@ -784,12 +798,19 @@ export function getMovieEditorialSummary(movie: Movie, allMovies: Movie[]): Movi
 	};
 }
 
-export function getVerdictBadgeClass(movie: Pick<Movie, 'verdict' | 'verdictLabel'>): string {
+export function getVerdictBadgeClass(movie: Pick<Movie, 'verdict' | 'verdictLabel' | 'absoluteCinema'>): string {
+	if (isAbsoluteCinemaMovie(movie)) {
+		return 'badge--absolute-cinema';
+	}
 	const normalizedLabel = normalizeSearchText(getVerdictLabel(movie));
 	if (normalizedLabel.includes('mediocre')) {
 		return 'badge--zafa';
 	}
 	return `badge--${movie.verdict}`;
+}
+
+export function getAbsoluteCinemaStickerUrl(): string {
+	return joinWithBase('AbsoluteCinema.png');
 }
 
 export function getPosterUrl(poster: string): string {

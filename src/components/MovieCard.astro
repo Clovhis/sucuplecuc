@@ -1,5 +1,6 @@
 ---
 import {
+	getAbsoluteCinemaStickerUrl,
 	getMoviePath,
 	getMoviePlatformLabel,
 	getMoviePlatforms,
@@ -7,6 +8,7 @@ import {
 	getRecommendationGenres,
 	getVerdictBadgeClass,
 	getVerdictLabel,
+	isAbsoluteCinemaMovie,
 	normalizeSearchText,
 } from '../lib/movies';
 import { getNormalizedMoviePlatforms } from '../lib/platforms';
@@ -29,6 +31,8 @@ const posterLoading = index < 8 ? 'eager' : 'lazy';
 const posterFetchPriority = index < 4 ? 'high' : 'auto';
 const quickCast = movie.mainCast.slice(0, 2).join(', ');
 const moviePlatforms = getMoviePlatforms(movie);
+const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);
+const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
 const quickMeta = [String(movie.year), movie.category, getMoviePlatformLabel(movie)]
 	.filter(Boolean)
 	.join(' · ');
@@ -62,6 +66,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	data-movie-meta={quickMeta}
 	data-movie-cast={quickCast}
 	data-movie-platforms={getNormalizedMoviePlatforms(movie).join(',')}
+	data-movie-absolute-cinema={showAbsoluteCinemaSticker ? 'true' : 'false'}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">
@@ -75,6 +80,19 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 				referrerpolicy="no-referrer"
 				data-movie-poster
 			/>
+			{
+				showAbsoluteCinemaSticker && (
+					<img
+						class="absolute-cinema-sticker movie-card__absolute-cinema-sticker"
+						src={absoluteCinemaStickerUrl}
+						alt="Absolute Cinema"
+						loading={posterLoading}
+						decoding="async"
+						width="1254"
+						height="1254"
+					/>
+				)
+			}
 			<span class={`badge movie-card__badge ${verdictClass}`}>{verdictLabel}</span>
 		</div>
 		<div class="movie-card__body">

@@ -47,6 +47,7 @@ export interface Movie {
 	productionCompany: string;
 	verdict: MovieVerdict;
 	verdictLabel?: string;
+	absoluteCinema?: boolean;
 	awards?: MovieAwards;
 	runtimeMinutes?: number;
 	editorial?: MovieEditorial;

@@ -1240,6 +1240,88 @@ img {
 	font-size: 0.72rem;
 }
 
+.home-special-filter {
+	grid-column: 1 / -1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.8rem;
+	min-width: 0;
+	padding: 0.75rem 0.9rem;
+	border-radius: 16px;
+	border: 1px solid rgba(246, 205, 100, 0.18);
+	background:
+		linear-gradient(90deg, rgba(246, 205, 100, 0.095), rgba(117, 153, 255, 0.035)),
+		rgba(8, 12, 20, 0.46);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.045),
+		0 12px 28px rgba(5, 8, 14, 0.12);
+}
+
+.home-special-filter__chip {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.55rem;
+	min-height: 2.35rem;
+	padding: 0.46rem 0.8rem;
+	border-radius: var(--control-radius);
+	border: 1px solid rgba(246, 205, 100, 0.28);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02)),
+		rgba(15, 18, 24, 0.82);
+	color: #ffe9a8;
+	font: inherit;
+	font-size: 0.78rem;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.08),
+		0 12px 24px rgba(6, 9, 14, 0.2);
+	transition:
+		transform 0.16s ease,
+		border-color 0.16s ease,
+		background-color 0.16s ease,
+		box-shadow 0.16s ease;
+}
+
+.home-special-filter__chip span:last-child {
+	min-width: 1.45rem;
+	padding: 0.16rem 0.42rem;
+	border-radius: 999px;
+	background: rgba(246, 205, 100, 0.14);
+	color: #fff3c7;
+	font-size: 0.7rem;
+	font-family: var(--font-mono);
+	text-align: center;
+}
+
+.home-special-filter__chip:hover,
+.home-special-filter__chip:focus-visible {
+	transform: translateY(-2px);
+	border-color: rgba(246, 205, 100, 0.52);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.026)),
+		rgba(19, 22, 30, 0.88);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.11),
+		0 18px 32px rgba(6, 9, 14, 0.28);
+}
+
+.home-special-filter__chip.is-active {
+	border-color: rgba(246, 205, 100, 0.72);
+	background:
+		linear-gradient(135deg, rgba(246, 205, 100, 0.24), rgba(117, 153, 255, 0.09)),
+		rgba(18, 22, 30, 0.94);
+	color: #fff7dc;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.12),
+		0 18px 34px rgba(10, 15, 24, 0.3),
+		0 0 0 1px rgba(246, 205, 100, 0.11);
+}
+
 .home-people-showcase {
 	display: grid;
 	gap: 0.75rem;
@@ -2092,6 +2174,10 @@ img {
 	--card-accent: rgba(49, 179, 109, 0.85);
 }
 
+.movie-card--badge--absolute-cinema {
+	--card-accent: rgba(246, 205, 100, 0.9);
+}
+
 .movie-card--badge--zafa {
 	--card-accent: rgba(243, 188, 63, 0.82);
 }
@@ -2146,6 +2232,23 @@ img {
 	text-align: center;
 	text-wrap: balance;
 	backdrop-filter: blur(8px);
+}
+
+.absolute-cinema-sticker {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: clamp(3.5rem, 32%, 6rem);
+	height: auto;
+	pointer-events: none;
+	filter: drop-shadow(0 6px 9px rgba(0, 0, 0, 0.42));
+	transform: rotate(-8deg);
+	transform-origin: center;
+}
+
+.movie-card__absolute-cinema-sticker {
+	left: 0.5rem;
+	bottom: 2.35rem;
 }
 
 .movie-card__poster {
@@ -2269,6 +2372,12 @@ img {
 	background: rgba(49, 179, 109, 0.14);
 	border-color: rgba(49, 179, 109, 0.45);
 	color: #80f3b0;
+}
+
+.badge--absolute-cinema {
+	background: rgba(246, 205, 100, 0.15);
+	border-color: rgba(246, 205, 100, 0.52);
+	color: #ffe08f;
 }
 
 .badge--zafa {
@@ -2549,6 +2658,7 @@ img {
 }
 
 .movie-detail__poster {
+	position: relative;
 	border-radius: 14px;
 	border: 1px solid var(--line);
 	overflow: hidden;
@@ -2558,17 +2668,24 @@ img {
 	box-shadow: var(--shadow-card);
 }
 
-.movie-detail__poster img {
+.movie-detail__poster > img:not(.absolute-cinema-sticker) {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
 .movie-detail__gallery {
+	position: relative;
 	display: grid;
 	grid-template-rows: repeat(2, minmax(0, 1fr));
 	gap: 0.75rem;
 	min-height: 560px;
+}
+
+.movie-detail__absolute-cinema-sticker {
+	left: 0.75rem;
+	bottom: 0.75rem;
+	width: clamp(5rem, 34%, 8rem);
 }
 
 .movie-detail__shot-wrap {
@@ -5051,12 +5168,20 @@ img {
 	}
 
 	.home-platform-filter,
-	.home-genre-filter {
+	.home-genre-filter,
+	.home-special-filter {
 		padding: 0;
 		border: 0;
 		border-radius: 0;
 		background: transparent;
 		box-shadow: none;
+	}
+
+	.home-special-filter {
+		display: grid;
+		align-items: start;
+		justify-content: stretch;
+		gap: 0.55rem;
 	}
 
 	.editorial-rankings {

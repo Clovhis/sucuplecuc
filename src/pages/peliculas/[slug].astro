@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
+	getAbsoluteCinemaStickerUrl,
 	getMovieEditorialSummary,
 	getMovies,
 	getMoviePlatformLabel,
@@ -10,13 +11,14 @@ import {
 	getYoutubeThumbnailUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
+	isAbsoluteCinemaMovie,
 } from '../../lib/movies';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
 import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import { getAwardVisualKey } from '../../lib/awards';
-import { getMovieTenSecondTake, getMovieValueGuide } from '../../lib/editorialCopy';
+import { getMovieTenSecondTake } from '../../lib/editorialCopy';
 import { METHODOLOGY_PATH, SITE_NAME, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -34,8 +36,9 @@ const pageTitle = `${movie.title} (${movie.year}) | Cine Posta`;
 const pageDescription = movie.synopsis;
 const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
+const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);
+const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
-const movieValueGuide = getMovieValueGuide(movie, editorialSummary);
 const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
@@ -343,10 +346,32 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								/>
 							</div>
 						))}
+						{showAbsoluteCinemaSticker && (
+							<img
+								class="absolute-cinema-sticker movie-detail__absolute-cinema-sticker"
+								src={absoluteCinemaStickerUrl}
+								alt="Absolute Cinema"
+								loading="eager"
+								decoding="async"
+								width="1254"
+								height="1254"
+							/>
+						)}
 					</div>
 				) : (
 					<div class="movie-detail__poster fade-up" style="--item-delay: 0ms;">
 						<img src={posterUrl} alt={`Poster de ${movie.title}`} referrerpolicy="no-referrer" />
+						{showAbsoluteCinemaSticker && (
+							<img
+								class="absolute-cinema-sticker movie-detail__absolute-cinema-sticker"
+								src={absoluteCinemaStickerUrl}
+								alt="Absolute Cinema"
+								loading="eager"
+								decoding="async"
+								width="1254"
+								height="1254"
+							/>
+						)}
 					</div>
 				)
 			}
@@ -363,7 +388,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					{editorialUpdatedLabel && (
 						<>
 							<span aria-hidden="true">·</span>
-							<time datetime={movie.releaseDate}>Actualizada: {editorialUpdatedLabel}</time>
+							<time datetime={movie.releaseDate}>Fecha de estreno: {editorialUpdatedLabel}</time>
 						</>
 					)}
 				</div>
@@ -398,21 +423,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								</section>
 							)
 						}
-						<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
-							<div class="movie-detail__ten-second-head">
-								<p class="movie-detail__ten-second-kicker">La Posta en 10 segundos</p>
-								<a href={METHODOLOGY_PATH}>Cómo leemos las pelis</a>
-							</div>
-							<h2 id={`ten-second-${movie.slug}`} class="u-visually-hidden">La Posta en 10 segundos de {movie.title}</h2>
-							<dl class="movie-detail__ten-second-list">
-								{tenSecondRows.map((row) => (
-									<div class="movie-detail__ten-second-row">
-										<dt>{row.label}</dt>
-										<dd>{row.value}</dd>
-									</div>
-								))}
-							</dl>
-						</section>
 						{
 							movie.review && (
 								<section class="movie-detail__review-card" aria-label="Reseña honesta">
@@ -632,6 +642,58 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						)
 					}
 				</section>
+				{
+					groupedAwards.length > 0 && (
+						<section class="movie-detail__awards-card" aria-label="Premios y galardones">
+							<p class="movie-detail__awards-kicker">Premios y galardones</p>
+							<div class="movie-detail__awards-groups">
+								{groupedAwards.map((group) => (
+									<div class="movie-detail__awards-group">
+										<div class="movie-detail__awards-group-top">
+											<span
+												class={`movie-detail__award-brand movie-detail__award-brand--${group.awardType}`}
+												aria-hidden="true"
+											>
+												<AwardMark
+													award={group.awardType}
+													class="movie-detail__award-brand-image"
+													size={36}
+												/>
+											</span>
+											<div class="movie-detail__awards-group-copy">
+												<p class="movie-detail__awards-group-title">{group.label}</p>
+												<p class="movie-detail__awards-group-count">
+													{group.count} premio{group.count === 1 ? '' : 's'}
+												</p>
+											</div>
+										</div>
+									</div>
+								))}
+							</div>
+							<ul class="movie-detail__awards-list">
+								{awardCategories.map((award) => (
+									<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
+										<span
+											class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}
+											data-award={getAwardVisualKey(award.label)}
+										>
+											<AwardMark award={award.label} class="movie-detail__award-tag-icon" size={16} />
+											<span>{award.label}</span>
+										</span>
+										<span>{award.category}</span>
+										{award.recipient && (
+											<span class="movie-detail__award-recipient">· {award.recipient}</span>
+										)}
+										{award.year && <span class="movie-detail__award-year">({award.year})</span>}
+										{award.isBestPicture && (
+											<span class="movie-detail__award-highlight">Premio mayor</span>
+										)}
+									</li>
+								))}
+							</ul>
+						</section>
+					)
+				}
 				<section class="movie-detail__info-tail" aria-label="Ficha técnica y datos extra">
 					<div class="movie-detail__info-overview">
 						<dl class="movie-detail__credits">
@@ -693,76 +755,21 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							<p class="movie-detail__audience-rating-value">{getAudienceRatingLabel(movie.audienceRating)}</p>
 						</section>
 					</div>
-					{
-						groupedAwards.length > 0 && (
-							<section class="movie-detail__awards-card" aria-label="Premios y galardones">
-								<p class="movie-detail__awards-kicker">Premios y galardones</p>
-								<div class="movie-detail__awards-groups">
-									{groupedAwards.map((group) => (
-										<div class="movie-detail__awards-group">
-											<div class="movie-detail__awards-group-top">
-												<span
-													class={`movie-detail__award-brand movie-detail__award-brand--${group.awardType}`}
-													aria-hidden="true"
-												>
-													<AwardMark
-														award={group.awardType}
-														class="movie-detail__award-brand-image"
-														size={36}
-													/>
-												</span>
-												<div class="movie-detail__awards-group-copy">
-													<p class="movie-detail__awards-group-title">{group.label}</p>
-													<p class="movie-detail__awards-group-count">
-														{group.count} premio{group.count === 1 ? '' : 's'}
-													</p>
-												</div>
-											</div>
-										</div>
-									))}
+					<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
+						<div class="movie-detail__ten-second-head">
+							<p class="movie-detail__ten-second-kicker">La Posta en 10 segundos</p>
+							<a href={METHODOLOGY_PATH}>Cómo leemos las pelis</a>
+						</div>
+						<h2 id={`ten-second-${movie.slug}`} class="u-visually-hidden">La Posta en 10 segundos de {movie.title}</h2>
+						<dl class="movie-detail__ten-second-list">
+							{tenSecondRows.map((row) => (
+								<div class="movie-detail__ten-second-row">
+									<dt>{row.label}</dt>
+									<dd>{row.value}</dd>
 								</div>
-								<ul class="movie-detail__awards-list">
-									{awardCategories.map((award) => (
-										<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
-											<span
-												class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}
-												data-award={getAwardVisualKey(award.label)}
-											>
-												<AwardMark award={award.label} class="movie-detail__award-tag-icon" size={16} />
-												<span>{award.label}</span>
-											</span>
-											<span>{award.category}</span>
-											{award.recipient && (
-												<span class="movie-detail__award-recipient">· {award.recipient}</span>
-											)}
-											{award.year && <span class="movie-detail__award-year">({award.year})</span>}
-											{award.isBestPicture && (
-												<span class="movie-detail__award-highlight">Premio mayor</span>
-											)}
-										</li>
-									))}
-								</ul>
-							</section>
-						)
-					}
-					{
-						movieValueGuide.footerBlocks.length > 0 && (
-							<section
-								class="movie-detail__value-card movie-detail__value-card--footer"
-								aria-labelledby={`movie-value-footer-${movie.slug}`}
-							>
-								<h2 id={`movie-value-footer-${movie.slug}`} class="u-visually-hidden">Contexto editorial de la ficha</h2>
-								{movieValueGuide.footerBlocks.map((block) => (
-									<section class="movie-detail__value-block">
-										{block.title && <h3>{block.title}</h3>}
-										{block.paragraphs.map((paragraph) => (
-											<p>{paragraph}</p>
-										))}
-									</section>
-								))}
-							</section>
-						)
-					}
+							))}
+						</dl>
+					</section>
 				</section>
 			</div>
 		</section>

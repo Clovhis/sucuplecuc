@@ -8,7 +8,7 @@ import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCafecitoSupporters } from '../lib/cafecitoSupporters';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
-import { getMovies, getUpcomingMovieReleases, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
+import { getMovies, getUpcomingMovieReleases, isAbsoluteCinemaMovie, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
 import { SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
@@ -18,6 +18,7 @@ const cafecitoSupporters = await getCafecitoSupporters();
 const movies = getMovies();
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
+const absoluteCinemaCount = movies.filter(isAbsoluteCinemaMovie).length;
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 3);
 const editorialRankings = getEditorialRankings(movies);
 const movieCountLabel = new Intl.NumberFormat('es-AR').format(movies.length);
@@ -346,6 +347,21 @@ function formatUpcomingReleaseDate(value: string) {
 									}
 								</div>
 							</section>
+								{
+									absoluteCinemaCount > 0 && (
+										<section class="home-special-filter" data-home-special-filter>
+											<button
+												type="button"
+												class="home-special-filter__chip"
+											data-home-absolute-cinema-chip
+											aria-pressed="false"
+										>
+											<span>Absolute Cinema</span>
+											<span>{absoluteCinemaCount}</span>
+										</button>
+									</section>
+								)
+							}
 						</div>
 						<div class="home-results-tools__feedback">
 							<div
