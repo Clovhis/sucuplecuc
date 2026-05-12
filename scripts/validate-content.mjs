@@ -154,6 +154,7 @@ function main() {
 	console.log(`Changed files detected: ${changedFiles.length}`);
 
 	run('npm', ['run', 'catalog:movies:check']);
+	run('npm', ['run', 'audit:editorial-low-value']);
 
 	if (args.all) {
 		run('npm', ['run', 'audit:movies:all']);

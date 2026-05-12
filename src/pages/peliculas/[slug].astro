@@ -129,11 +129,11 @@ const editorialUpdatedLabel = movie.releaseDate
 		}).format(new Date(`${movie.releaseDate}T00:00:00Z`))
 	: '';
 const tenSecondRows = [
-	{ label: 'Veredicto rápido', value: tenSecondTake.quickVerdict },
-	{ label: 'Mirala si', value: tenSecondTake.watchIf },
-	{ label: 'No la mires si', value: tenSecondTake.skipIf },
-	{ label: 'Ideal para', value: tenSecondTake.idealFor },
-	{ label: 'Nivel de intensidad', value: tenSecondTake.intensity },
+	{ label: 'Veredicto', value: tenSecondTake.verdict },
+	{ label: 'Terreno', value: tenSecondTake.lane },
+	{ label: 'Subgéneros', value: tenSecondTake.subgenres },
+	{ label: 'Plan', value: tenSecondTake.plan },
+	{ label: 'Intensidad', value: tenSecondTake.intensity },
 ];
 
 function countWords(value: string): number {

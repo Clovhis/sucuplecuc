@@ -1,4 +1,4 @@
-import type { Movie, MovieVerdict } from '../types/movie';
+import type { Movie } from '../types/movie';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
 import { getVerdictLabel } from './movies';
 
@@ -8,10 +8,10 @@ export interface EditorialBlock {
 }
 
 export interface MovieTenSecondTake {
-	quickVerdict: string;
-	watchIf: string;
-	skipIf: string;
-	idealFor: string;
+	verdict: string;
+	lane: string;
+	subgenres: string;
+	plan: string;
 	intensity: string;
 }
 
@@ -35,7 +35,7 @@ function normalizeText(value: string): string {
 }
 
 function getPrimaryGenre(movie: Movie): string {
-	return cleanList(movie.genres ?? [movie.category])[0] ?? movie.category;
+	return movie.category?.trim() || cleanList(movie.genres ?? [movie.category])[0] || 'Sin categoría';
 }
 
 function getIntensityLabel(movie: Movie): string {
@@ -56,45 +56,54 @@ function getIntensityLabel(movie: Movie): string {
 	return 'Media: tranqui, pero con la cabeza prendida.';
 }
 
+function formatGenreLabel(value: string): string {
+	const label = String(value ?? '').trim();
+	return label || 'Sin categoría';
+}
+
+function getSecondaryGenres(movie: Movie): string[] {
+	const primaryGenre = normalizeText(getPrimaryGenre(movie));
+	return cleanList(movie.genres ?? [])
+		.map((genre) => genre.trim())
+		.filter((genre) => normalizeText(genre) !== primaryGenre);
+}
+
+function getPlanLabel(movie: Movie): string {
+	const parts = [];
+	const runtimeMinutes = movie.runtimeMinutes;
+
+	if (typeof runtimeMinutes === 'number' && Number.isInteger(runtimeMinutes) && runtimeMinutes > 0) {
+		parts.push(`${runtimeMinutes} min`);
+	}
+
+	const platform = String(movie.releasePlatform ?? '').trim();
+	if (platform) {
+		parts.push(platform);
+	}
+
+	const audienceRating = String(movie.audienceRating ?? '').trim();
+	if (audienceRating) {
+		parts.push(audienceRating);
+	}
+
+	return parts.join(' · ') || 'Plan sin datos extra';
+}
+
 export function getMovieTenSecondTake(movie: Movie): MovieTenSecondTake {
-	const genre = getPrimaryGenre(movie).toLowerCase();
-	const castLabel = joinNames(movie.mainCast, 'el elenco');
 	const verdictLabel = getVerdictLabel(movie);
-
-	const quickVerdicts: Record<MovieVerdict, string> = {
-		recomendada: `${verdictLabel}. Entra por ${genre} y deja una razón clara para verla.`,
-		zafa: `${verdictLabel}. No es prioridad absoluta, pero puede rendir con el plan justo.`,
-		no_recomendada: `${verdictLabel}. Tiene alguna punta, pero no termina de pagar el tiempo que pide.`,
-		basura_atomica: `${verdictLabel}. Acá la advertencia va en serio: cuesta defenderla.`,
-	};
-
-	const watchIfByVerdict: Record<MovieVerdict, string> = {
-		recomendada: `Mirala si querés una de ${genre} con oficio y algo para comentar después.`,
-		zafa: `Mirala si hoy te sirve una de ${genre} sin exigirle que te cambie la vida.`,
-		no_recomendada: `Mirala si te interesa ${castLabel} o venís completando este tipo de cine.`,
-		basura_atomica: `Mirala solo si te divierte discutir por qué algo salió tan torcido.`,
-	};
-
-	const skipIfByVerdict: Record<MovieVerdict, string> = {
-		recomendada: 'No la mires si hoy querés apagar el cerebro y nada más.',
-		zafa: 'No la mires si estás buscando una apuesta segura, redonda y sin baches.',
-		no_recomendada: 'No la mires si tenés poco tiempo y querés ir a lo seguro.',
-		basura_atomica: 'No la mires si tu paciencia anda corta o necesitás algo que fluya.',
-	};
-
-	const idealByVerdict: Record<MovieVerdict, string> = {
-		recomendada: 'Ideal para una noche con ganas de ver algo que deje tema.',
-		zafa: 'Ideal para plan liviano, pochoclos y expectativas bien ubicadas.',
-		no_recomendada: 'Ideal solo para completistas, curiosos o fans del equipo involucrado.',
-		basura_atomica: 'Ideal para verla con gente y comentar el derrumbe en vivo.',
-	};
+	const lane = formatGenreLabel(getPrimaryGenre(movie));
+	const secondaryGenres = getSecondaryGenres(movie);
+	const subgenres =
+		secondaryGenres.length > 0 ? secondaryGenres.slice(0, 3).join(' · ') : 'Sin subgéneros cargados';
+	const plan = getPlanLabel(movie);
+	const overrides = movie.editorial?.tenSecondTake;
 
 	return {
-		quickVerdict: quickVerdicts[movie.verdict],
-		watchIf: watchIfByVerdict[movie.verdict],
-		skipIf: skipIfByVerdict[movie.verdict],
-		idealFor: idealByVerdict[movie.verdict],
-		intensity: getIntensityLabel(movie),
+		verdict: overrides?.verdict?.trim() || verdictLabel,
+		lane: overrides?.lane?.trim() || lane,
+		subgenres: overrides?.subgenres?.trim() || subgenres,
+		plan: overrides?.plan?.trim() || plan,
+		intensity: overrides?.intensity?.trim() || getIntensityLabel(movie),
 	};
 }
 

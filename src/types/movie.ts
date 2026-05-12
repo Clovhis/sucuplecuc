@@ -19,10 +19,19 @@ export interface MovieAwards {
 	wins: MovieAwardWin[];
 }
 
+export interface MovieTenSecondTakeOverrides {
+	verdict?: string;
+	lane?: string;
+	subgenres?: string;
+	plan?: string;
+	intensity?: string;
+}
+
 export interface MovieEditorial {
 	runtimeComment?: string;
 	becauseYouLiked?: string[];
 	related?: string[];
+	tenSecondTake?: MovieTenSecondTakeOverrides;
 }
 
 export interface Movie {

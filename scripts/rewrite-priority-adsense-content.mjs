@@ -6,6 +6,21 @@ const TARGET_COUNT = 80;
 const MIN_REVIEW_WORDS = 120;
 const MIN_SYNOPSIS_WORDS = 25;
 const REFERENCE_DATE = new Date('2026-05-06T00:00:00Z');
+const ALLOW_GENERATED_REVIEWS = process.argv.includes('--allow-generated-reviews');
+const GENERATED_REVIEW_MARKERS = [
+	'tiene esta base narrativa',
+	'no puede esconderse demasiado',
+	'la decisión pasa menos por disponibilidad',
+	'la decision pasa menos por disponibilidad',
+	'con una puesta que aprovecha a',
+	'no depende únicamente de explicar la trama',
+	'no depende unicamente de explicar la trama',
+	'tiene un gancho concreto y suficientes elementos propios',
+	'tiene atractivos reconocibles, aunque también deja la sensación',
+	'tiene atractivos reconocibles aunque también deja la sensación',
+	'tiene atractivos reconocibles, aunque tambien deja la sensacion',
+	'tiene atractivos reconocibles aunque tambien deja la sensacion',
+];
 
 const customReviews = {
 	'el-diablo-viste-a-la-moda-2-2026':
@@ -43,38 +58,6 @@ const openerTemplates = [
 	(movie) => `A ${movie.title} le conviene entrar sin pedirle perfección, pero sí una mirada clara sobre su propio material.`,
 ];
 
-const middleTemplates = [
-	(movie, ctx) =>
-		`En ${movie.title}, la dirección de ${ctx.director} ordena la propuesta alrededor de ${ctx.genreFocus}, y eso le da un eje reconocible incluso cuando el relato se mueve por lugares esperables.`,
-	(movie, ctx) =>
-		`El reparto encabezado por ${ctx.cast} ayuda a que ${movie.title} tenga una cara concreta; no queda reducida a datos de producción ni a una sinopsis bonita.`,
-	(movie, ctx) =>
-		`Lo mejor de ${movie.title} aparece cuando ${ctx.genreFocus} no se usa como decorado, sino como forma de medir a los personajes y sus decisiones.`,
-	(movie, ctx) =>
-		`${movie.title} gana cuando confía en ${ctx.genreFocus}; se vuelve más débil cuando se apura a remarcar lo que ya estaba claro.`,
-	(movie, ctx) =>
-		`Con ${ctx.director} al mando, ${movie.title} tiene momentos de oficio, sobre todo cuando deja respirar al elenco y no sólo al mecanismo narrativo.`,
-	(movie, ctx) =>
-		`El gancho principal de ${movie.title} está en cómo ${ctx.cast} ocupan la pantalla y le dan cuerpo a una historia que podía quedarse en fórmula.`,
-	(movie, ctx) =>
-		`La puesta de ${movie.title} no necesita inventar la rueda: le alcanza con hacer que ${ctx.genreFocus} tenga consecuencias visibles para la gente que seguimos.`,
-	(movie, ctx) =>
-		`Cuando ${movie.title} encuentra su mejor versión, ${ctx.genreFocus} deja de ser etiqueta y se vuelve una manera bastante directa de generar interés.`,
-];
-
-const closingTemplates = [
-	(movie, ctx) =>
-		`${ctx.verdictLine} ${ctx.whyLine} En ${movie.title}, la idea es ubicar si la película sirve para verla ahora, guardarla para otro momento o pasar sin culpa.`,
-	(movie, ctx) =>
-		`${ctx.verdictLine} ${ctx.whyLine} El balance final de ${movie.title} depende de cuánto te atraiga ese cruce entre premisa, elenco y ejecución concreta.`,
-	(movie, ctx) =>
-		`${ctx.verdictLine} ${ctx.whyLine} Si el plan de ${movie.title} coincide con lo que buscás, puede rendir; si necesitás algo más fino, conviene elegir con cuidado.`,
-	(movie, ctx) =>
-		`${ctx.verdictLine} ${ctx.whyLine} En ${movie.title}, la recomendación, o la advertencia, sale de mirar la experiencia completa y no sólo los nombres conocidos.`,
-	(movie, ctx) =>
-		`${ctx.verdictLine} ${ctx.whyLine} En pocas palabras: ${movie.title} tiene un lugar posible, pero no necesariamente para cualquier ánimo ni cualquier expectativa.`,
-];
-
 function wordCount(value) {
 	return String(value ?? '')
 		.trim()
@@ -89,6 +72,11 @@ function normalize(value) {
 		.toLowerCase()
 		.replace(/\s+/g, ' ')
 		.trim();
+}
+
+function reviewLooksGenerated(value) {
+	const normalized = normalize(value);
+	return GENERATED_REVIEW_MARKERS.filter((marker) => normalized.includes(normalize(marker))).length >= 2;
 }
 
 function releaseTimestamp(movie) {
@@ -154,37 +142,6 @@ function genreFocus(movie) {
 	return 'el tono, los personajes y el conflicto central';
 }
 
-function verdictLine(movie) {
-	const label = safeName(movie.verdictLabel, 'VEREDICTO');
-	switch (movie.verdict) {
-		case 'recomendada':
-			return `El veredicto ${label} está puesto porque ${movie.title} ofrece más que una premisa correcta.`;
-		case 'zafa':
-			return `El veredicto ${label} tiene sentido porque ${movie.title} da algo, pero también muestra costuras.`;
-		case 'no_recomendada':
-			return `La advertencia ${label} aparece porque el balance de ${movie.title} queda por debajo de lo que prometía.`;
-		case 'basura_atomica':
-			return `El rechazo ${label} sale de una experiencia como ${movie.title}, que acumula decisiones difíciles de defender.`;
-		default:
-			return `El veredicto busca ordenar rápido qué clase de plan ofrece ${movie.title}.`;
-	}
-}
-
-function whyLine(movie) {
-	const platform = getPlatform(movie);
-	const platformCopy = platform && platform !== 'Stremio' ? ` Además, tenerla ubicada en ${platform} ayuda a decidir el plan sin vueltas.` : '';
-	switch (movie.verdict) {
-		case 'recomendada':
-			return `${movie.title} vale más si entrás buscando ${genreFocus(movie)} antes que una sorpresa permanente.${platformCopy}`;
-		case 'zafa':
-			return `${movie.title} puede rendir si el género te llama y no necesitás que cada escena sea redonda.${platformCopy}`;
-		case 'no_recomendada':
-			return `Sólo priorizaría ${movie.title} si ya venís con mucha curiosidad por el elenco, la saga o el concepto.${platformCopy}`;
-		default:
-			return `Conviene medirla por el tipo de plan que arma, no por una expectativa universal.${platformCopy}`;
-	}
-}
-
 function premiseHint(movie) {
 	const synopsis = firstSentence(movie.synopsis)
 		.replace(/^Protagonizada por .*?,\s*/i, '')
@@ -209,64 +166,6 @@ function premiseHint(movie) {
 	if (category.includes('ciencia')) return 'una idea especulativa que sólo funciona si también pesa en lo humano';
 	if (category.includes('drama')) return 'decisiones personales que se acumulan hasta volverse conflicto';
 	return 'una premisa que necesita sostenerse más allá del resumen';
-}
-
-function keywordPhrase(movie) {
-	const stopwords = new Set([
-		'para',
-		'pero',
-		'cuando',
-		'donde',
-		'desde',
-		'hasta',
-		'entre',
-		'sobre',
-		'como',
-		'cada',
-		'esta',
-		'este',
-		'esta',
-		'pelicula',
-		'historia',
-		'protagonizada',
-		'protagonizado',
-		'dirigida',
-		'dirigido',
-		'jeremy',
-		'irvine',
-		'hannah',
-		'emily',
-		'debera',
-		'deben',
-		'vuelve',
-		'nueva',
-		'nuevo',
-		'queda',
-		'queda',
-		'sigue',
-		'hombre',
-		'mujer',
-		'joven',
-		'grupo',
-	]);
-	const blockedNames = normalize(
-		`${movie.title} ${movie.originalTitle ?? ''} ${movie.director ?? ''} ${(movie.mainCast ?? []).join(' ')}`,
-	)
-		.split(/\s+/)
-		.map((word) => word.replace(/[^a-z0-9]/g, ''))
-		.filter(Boolean);
-	for (const namePart of blockedNames) {
-		stopwords.add(namePart);
-	}
-	const words = normalize(`${movie.synopsis} ${movie.category} ${(movie.genres ?? []).join(' ')}`)
-		.split(/\s+/)
-		.map((word) => word.replace(/[^a-z0-9]/g, ''))
-		.filter((word) => word.length >= 5 && !stopwords.has(word));
-	const unique = [...new Set(words)].slice(0, 5);
-	if (unique.length >= 3) {
-		return unique.join(', ');
-	}
-	return genreFocus(movie);
 }
 
 function buildSynopsis(movie) {
@@ -334,7 +233,23 @@ function buildGeneratedReview(movie, index) {
 }
 
 function buildReview(movie, index) {
-	const review = customReviews[movie.slug] ?? buildGeneratedReview(movie, index);
+	const currentReview = String(movie.review ?? '').trim();
+	if (customReviews[movie.slug]) {
+		return customReviews[movie.slug];
+	}
+	if (
+		wordCount(currentReview) >= MIN_REVIEW_WORDS &&
+		!normalize(currentReview).includes(normalize(movie.synopsis)) &&
+		!reviewLooksGenerated(currentReview)
+	) {
+		return currentReview;
+	}
+	if (!ALLOW_GENERATED_REVIEWS) {
+		throw new Error(
+			`${movie.slug} needs manual editorial copy. Generated boilerplate is disabled by default; pass --allow-generated-reviews only for one-off backfills.`,
+		);
+	}
+	const review = buildGeneratedReview(movie, index);
 	if (wordCount(review) < MIN_REVIEW_WORDS) {
 		throw new Error(`${movie.slug} review stayed below ${MIN_REVIEW_WORDS} words.`);
 	}

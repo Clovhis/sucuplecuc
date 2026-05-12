@@ -17,6 +17,7 @@
     "enrich-people": "node ./scripts/enrich-people-pool.mjs",
     "audit:movie-people": "node ./scripts/audit-movie-people.mjs",
     "audit:adsense-content": "node ./scripts/adsense-content-audit.mjs",
+    "audit:editorial-low-value": "node ./scripts/editorial-low-value-audit.mjs",
     "audit:movies:recent": "node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref main --recent --skip-youtube",
     "audit:movies:all": "node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --all --skip-youtube",
     "audit:profiles": "node ./skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --all",
