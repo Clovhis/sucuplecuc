@@ -2999,6 +2999,13 @@ img {
 	white-space: nowrap;
 }
 
+.movie-detail__ten-second-intro {
+	margin: 0;
+	color: #d6e2f8;
+	font-size: 0.92rem;
+	line-height: 1.5;
+}
+
 .movie-detail__ten-second-list {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3029,8 +3036,20 @@ img {
 
 .movie-detail__ten-second-row dd {
 	margin: 0;
+	display: grid;
+	gap: 0.24rem;
 	color: #eef6ff;
 	font-size: 0.94rem;
+	line-height: 1.45;
+}
+
+.movie-detail__ten-second-value {
+	font-weight: 600;
+}
+
+.movie-detail__ten-second-detail {
+	color: #bfd0ea;
+	font-size: 0.85rem;
 	line-height: 1.45;
 }
 

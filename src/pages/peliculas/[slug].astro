@@ -129,11 +129,11 @@ const editorialUpdatedLabel = movie.releaseDate
 		}).format(new Date(`${movie.releaseDate}T00:00:00Z`))
 	: '';
 const tenSecondRows = [
-	{ label: 'Veredicto', value: tenSecondTake.verdict },
-	{ label: 'Terreno', value: tenSecondTake.lane },
-	{ label: 'Subgéneros', value: tenSecondTake.subgenres },
-	{ label: 'Plan', value: tenSecondTake.plan },
-	{ label: 'Intensidad', value: tenSecondTake.intensity },
+	{ label: 'Veredicto', fact: tenSecondTake.verdict },
+	{ label: 'Qué es', fact: tenSecondTake.identity },
+	{ label: 'Ritmo', fact: tenSecondTake.pace },
+	{ label: 'Antes de darle play', fact: tenSecondTake.plan },
+	{ label: 'Intensidad', fact: tenSecondTake.intensity },
 ];
 
 function countWords(value: string): number {
@@ -760,12 +760,18 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							<p class="movie-detail__ten-second-kicker">La Posta en 10 segundos</p>
 							<a href={METHODOLOGY_PATH}>Cómo leemos las pelis</a>
 						</div>
+						<p class="movie-detail__ten-second-intro">
+							Cinco señales rápidas para saber qué tipo de peli es, cuánto pide y con qué clima pega.
+						</p>
 						<h2 id={`ten-second-${movie.slug}`} class="u-visually-hidden">La Posta en 10 segundos de {movie.title}</h2>
 						<dl class="movie-detail__ten-second-list">
 							{tenSecondRows.map((row) => (
 								<div class="movie-detail__ten-second-row">
 									<dt>{row.label}</dt>
-									<dd>{row.value}</dd>
+									<dd>
+										<span class="movie-detail__ten-second-value">{row.fact.value}</span>
+										{row.fact.detail && <span class="movie-detail__ten-second-detail">{row.fact.detail}</span>}
+									</dd>
 								</div>
 							))}
 						</dl>

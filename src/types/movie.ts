@@ -21,7 +21,9 @@ export interface MovieAwards {
 
 export interface MovieTenSecondTakeOverrides {
 	verdict?: string;
+	identity?: string;
 	lane?: string;
+	pace?: string;
 	subgenres?: string;
 	plan?: string;
 	intensity?: string;

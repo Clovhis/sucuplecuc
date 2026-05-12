@@ -321,7 +321,7 @@ function validateMovies(movies: Movie[]): void {
 					throw new Error(`Movie "${slug}" has invalid editorial.tenSecondTake.`);
 				}
 
-				for (const key of ['verdict', 'lane', 'subgenres', 'plan', 'intensity'] as const) {
+				for (const key of ['verdict', 'identity', 'lane', 'pace', 'subgenres', 'plan', 'intensity'] as const) {
 					const value = movie.editorial.tenSecondTake[key];
 					if (value !== undefined && (typeof value !== 'string' || value.trim().length === 0)) {
 						throw new Error(`Movie "${slug}" has invalid editorial.tenSecondTake.${key}.`);
