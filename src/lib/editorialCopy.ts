@@ -1,6 +1,6 @@
 import type { Movie } from '../types/movie';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
-import { getVerdictLabel } from './movies';
+import { getVerdictLabel, isAbsoluteCinemaMovie } from './movies';
 import { getMoviePlatformLabel } from './platforms';
 
 export interface EditorialBlock {
@@ -48,22 +48,22 @@ function getIntensityLabel(movie: Movie): string {
 	const haystack = normalizeText([movie.category, ...(movie.genres ?? []), movie.review, movie.synopsis].join(' '));
 
 	if (/\bterror\b|\bhorror\b|\bslasher\b|\bzombi\b|\bzombie\b|\bgore\b/.test(haystack)) {
-		return 'Alta';
+		return 'Re picante';
 	}
 
 	if (/\bthriller\b|\bcrimen\b|\bguerra\b|\bbelic\b|\bsuspenso\b|\boscura\b|\bintensa\b/.test(haystack)) {
-		return 'Media alta';
+		return 'Pica bastante';
 	}
 
 	if (/\bdrama\b|\bpolitic\b|\bjudicial\b|\bbiopic\b|\bdocumental\b/.test(haystack)) {
-		return 'Media';
+		return 'Pesadita';
 	}
 
 	if (/\bcomedia\b|\banimacion\b|\banime\b|\baventura\b|\bfamiliar\b|\bmusical\b/.test(haystack)) {
-		return 'Baja a media';
+		return 'Tranqui';
 	}
 
-	return 'Media';
+	return 'Tiene lo suyo';
 }
 
 function formatGenreLabel(value: string): string {
@@ -120,17 +120,21 @@ function getAudienceRatingDescription(audienceRating: string): string {
 }
 
 function getVerdictDetail(movie: Movie): string {
+	if (isAbsoluteCinemaMovie(movie)) {
+		return 'Es el sello máximo: obra maestra, clásico total o de esas que hay que ver sí o sí.';
+	}
+
 	switch (movie.verdict) {
 		case 'recomendada':
-			return 'Vale el tiempo sin demasiadas advertencias.';
+			return 'Está buena de verdad: si te llama aunque sea un poco, hay buenas chances de que te garpe.';
 		case 'zafa':
-			return 'Tiene con qué defenderse, pero no entra entre las imprescindibles.';
+			return 'Tiene con qué defenderse, pero depende bastante de tu onda y de lo que tengas ganas de ver hoy.';
 		case 'no_recomendada':
-			return 'Cuesta recomendarla salvo que ya vengas muy comprado.';
+			return 'Tiene más problemas que aciertos. Salvo que vengas muy comprado con el tema, hay mejores opciones.';
 		case 'basura_atomica':
-			return 'Sólo sirve si vas por morbo, completismo o curiosidad extrema.';
+			return 'Solo entra si vas por morbo, completismo o curiosidad extrema. Para casi cualquiera, mejor otra cosa.';
 		default:
-			return 'Sirve como corte rápido antes de darle play.';
+			return 'Resumen rápido para decidir sin comerte una reseña eterna.';
 	}
 }
 
@@ -213,22 +217,22 @@ function getIntensityDetail(movie: Movie): string {
 	const haystack = normalizeText([movie.category, ...(movie.genres ?? []), movie.review, movie.synopsis].join(' '));
 
 	if (/\bterror\b|\bhorror\b|\bslasher\b|\bzombi\b|\bzombie\b|\bgore\b/.test(haystack)) {
-		return 'Tensión fuerte, imágenes ásperas o violencia más frontal.';
+		return 'Hay sustos, violencia o imágenes jodidas: no es para poner de fondo mientras mirás el celu.';
 	}
 
 	if (/\bthriller\b|\bcrimen\b|\bguerra\b|\bbelic\b|\bsuspenso\b/.test(haystack)) {
-		return 'Aprieta por clima, peligro o violencia sin irse siempre al extremo.';
+		return 'Te tiene agarrado por el suspenso, el peligro o la violencia, aunque no se vaya siempre al mango.';
 	}
 
 	if (/\bdrama\b|\bpolitic\b|\bjudicial\b|\bbiopic\b|\bdocumental\b/.test(haystack)) {
-		return 'Pesa más la carga dramática, las ideas o la presión emocional.';
+		return 'Carga bastante en lo emocional o en las ideas. Capaz no grita, pero pesa.';
 	}
 
 	if (/\bcomedia\b|\banimacion\b|\banime\b|\baventura\b|\bfamiliar\b|\bmusical\b/.test(haystack)) {
-		return 'Se deja ver fácil y no juega a desgastarte como espectador.';
+		return 'Se ve liviana: no busca dejarte tenso ni demolerte la cabeza.';
 	}
 
-	return 'Tiene algunos picos, pero sigue siendo bastante llevadera.';
+	return 'Tiene momentos que pegan, pero en general se deja llevar bien.';
 }
 
 export function getMovieTenSecondTake(movie: Movie): MovieTenSecondTake {

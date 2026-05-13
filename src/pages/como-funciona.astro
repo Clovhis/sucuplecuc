@@ -8,28 +8,24 @@ const pageDescription =
 
 const verdicts = [
 	{
-		name: 'Recomendada',
-		copy: 'Vale tu tiempo. Puede ser por ritmo, idea, actuaciones, clima o porque cumple muy bien lo que promete.',
+		name: 'Absolute Cinema',
+		copy: 'Es el sello máximo. Acá entran las obras maestras, los clásicos totales y esas pelis que no solo recomendamos: las defendemos a muerte.',
 	},
 	{
-		name: 'Garpa',
-		copy: 'No siempre es perfecta, pero rinde. Hay algo claro para rescatar y la experiencia cierra.',
+		name: 'Recomendada',
+		copy: 'Está buena de verdad. Si te interesa aunque sea un poco, lo más probable es que la pases bien.',
 	},
 	{
 		name: 'Zafa',
-		copy: 'Sirve con el plan correcto. No es prioridad, pero tampoco una pérdida total.',
-	},
-	{
-		name: 'No va',
-		copy: 'La promesa queda más grande que la película. Puede tener detalles, pero no alcanza.',
+		copy: 'Tiene algo para ofrecer, pero no es prioridad. Puede entrar justo según tu mood, el género o el elenco.',
 	},
 	{
 		name: 'Malísima',
-		copy: 'La advertencia es simple: hay mejores formas de usar esa hora y media.',
+		copy: 'No alcanza. Puede tener alguna idea o algún momento suelto, pero en conjunto no rinde.',
 	},
 	{
-		name: 'Es una poronga',
-		copy: 'Etiqueta extrema para cuando la peli no solo falla: también te hace discutir por qué existe así.',
+		name: 'Basura atómica',
+		copy: 'Nivel desastre. Solo suma si vas por morbo, completismo o para verla y putearla con amigos.',
 	},
 ];
 ---
@@ -84,6 +80,9 @@ const verdicts = [
 			<div class="methodology-page__section-head">
 				<p class="about-page__kicker">Diccionario posta</p>
 				<h2 id="verdictos-title">Qué significa cada veredicto</h2>
+				<p>
+					A veces el badge cambia y dice cosas como "Muy buena", "Imperdible" u "Obra maestra", pero abajo de eso estos son los escalones reales que usamos para ordenar el veredicto.
+				</p>
 			</div>
 			<div class="methodology-page__verdict-grid">
 				{verdicts.map((verdict) => (
