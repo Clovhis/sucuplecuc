@@ -11,7 +11,7 @@ import { getEditorialRankings } from '../lib/editorialRankings';
 import { getMovies, getUpcomingMovieReleases, isAbsoluteCinemaMovie, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
-import { SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { ABOUT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const cafecitoSupporters = await getCafecitoSupporters();
@@ -124,20 +124,25 @@ function formatUpcomingReleaseDate(value: string) {
 							</div>
 						)
 					}
-					<a
-						class="site-header__donate"
-						href="https://cafecito.app/cineposta"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							class="site-header__donate-logo"
-							src={`${import.meta.env.BASE_URL}brand/cafecito-logo.svg`}
-							alt=""
-							aria-hidden="true"
-						/>
-						Apoyá el sitio
-					</a>
+					<div class="site-header__actions">
+						<a
+							class="site-header__donate"
+							href="https://cafecito.app/cineposta"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								class="site-header__donate-logo"
+								src={`${import.meta.env.BASE_URL}brand/cafecito-logo.svg`}
+								alt=""
+								aria-hidden="true"
+							/>
+							Apoyá el sitio
+						</a>
+						<a class="site-header__contact" href={`${ABOUT_PATH}#contacto-y-prensa`}>
+							Prensa / Contacto
+						</a>
+					</div>
 					<p class="movie-search__summary u-visually-hidden" data-movie-search-summary>
 						{movies.length} títulos publicados.
 					</p>
