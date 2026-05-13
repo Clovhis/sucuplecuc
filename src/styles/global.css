@@ -3926,14 +3926,34 @@ img {
 }
 
 .postometro-page {
+	position: relative;
 	display: grid;
 	gap: 1.4rem;
 	padding-bottom: 3.6rem;
+	isolation: isolate;
+}
+
+.postometro-page::before {
+	content: '';
+	position: absolute;
+	inset: 5.8rem -1.5rem auto;
+	height: 11rem;
+	z-index: -1;
+	pointer-events: none;
+	background:
+		linear-gradient(112deg, transparent 0 18%, rgba(255, 176, 137, 0.14) 18% 19%, transparent 19% 33%),
+		linear-gradient(78deg, transparent 0 24%, rgba(92, 218, 183, 0.1) 24% 25%, transparent 25% 42%),
+		linear-gradient(135deg, rgba(117, 153, 255, 0.12), transparent 62%);
+	mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+	-webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+	animation: postometro-light-sweep 11s linear infinite;
 }
 
 .postometro-hero,
 .postometro-panel,
 .postometro-results {
+	min-width: 0;
+	max-width: 100%;
 	border-radius: 24px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	background:
@@ -3943,22 +3963,54 @@ img {
 }
 
 .postometro-hero {
+	position: relative;
 	display: grid;
 	grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
 	gap: 1.25rem;
 	padding: 1.45rem;
 	align-items: center;
+	overflow: hidden;
 	background:
-		radial-gradient(circle at 92% 18%, rgba(255, 125, 59, 0.18), transparent 0 34%),
-		radial-gradient(circle at 16% 10%, rgba(117, 153, 255, 0.16), transparent 0 28%),
+		linear-gradient(122deg, rgba(255, 176, 137, 0.18), transparent 28% 62%, rgba(92, 218, 183, 0.12)),
+		linear-gradient(180deg, rgba(117, 153, 255, 0.11), transparent 46%),
 		linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.016)),
 		var(--panel);
 }
 
+.postometro-hero::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background:
+		repeating-linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 0.06) 0 12px,
+			transparent 12px 24px
+		);
+	mask-image: linear-gradient(180deg, #000 0 12px, transparent 12px calc(100% - 12px), #000 calc(100% - 12px));
+	-webkit-mask-image: linear-gradient(180deg, #000 0 12px, transparent 12px calc(100% - 12px), #000 calc(100% - 12px));
+	opacity: 0.42;
+}
+
+.postometro-hero::after {
+	content: '';
+	position: absolute;
+	inset: -40% auto -40% 42%;
+	width: 12rem;
+	pointer-events: none;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+	transform: rotate(18deg);
+	animation: postometro-hero-shine 7s ease-in-out infinite;
+}
+
 .postometro-hero__copy,
 .postometro-hero__notes {
+	position: relative;
+	z-index: 1;
 	display: grid;
 	gap: 0.7rem;
+	min-width: 0;
 }
 
 .postometro-hero__copy {
@@ -3980,16 +4032,76 @@ img {
 	margin: 0;
 	font-size: clamp(2.2rem, 4.8vw, 4.5rem);
 	line-height: 0.94;
+	text-wrap: balance;
+	overflow-wrap: break-word;
+}
+
+.postometro-hero__subtitle {
+	max-width: 34rem;
+	margin: 0;
+	color: #dce7f8;
+	font-size: clamp(1rem, 0.6vw + 0.88rem, 1.18rem);
+	line-height: 1.55;
+	text-wrap: balance;
+}
+
+.postometro-hero__reel {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.55rem;
+	min-height: 3rem;
+}
+
+.postometro-hero__reel span {
+	display: grid;
+	place-items: center;
+	width: 2.7rem;
+	height: 2.7rem;
+	border-radius: 14px;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.035)),
+		rgba(255, 255, 255, 0.04);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+	animation: postometro-icon-float 2.8s ease-in-out infinite;
+}
+
+.postometro-hero__reel span:nth-child(2) {
+	animation-delay: 180ms;
+}
+
+.postometro-hero__reel span:nth-child(3) {
+	animation-delay: 360ms;
+}
+
+.postometro-hero__reel span:nth-child(4) {
+	animation-delay: 540ms;
 }
 
 .postometro-hero__notes p {
+	display: flex;
+	gap: 0.65rem;
+	align-items: flex-start;
+	min-width: 0;
 	margin: 0;
 	padding: 0.85rem 0.92rem;
 	border-radius: 16px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
-	background: rgba(255, 255, 255, 0.04);
+	background:
+		linear-gradient(90deg, rgba(255, 176, 137, 0.1), rgba(92, 218, 183, 0.06)),
+		rgba(255, 255, 255, 0.04);
 	color: #d7e0ef;
 	line-height: 1.55;
+}
+
+.postometro-hero__notes p > span:first-child {
+	flex: 0 0 auto;
+}
+
+.postometro-hero__note-copy {
+	min-width: 0;
+	overflow-wrap: anywhere;
 }
 
 .postometro-panel__intro h2,
@@ -4013,11 +4125,24 @@ img {
 	grid-template-columns: minmax(0, 1.02fr) minmax(330px, 0.98fr);
 	gap: 1rem;
 	align-items: start;
+	min-width: 0;
 }
 
 .postometro-panel,
 .postometro-results {
+	position: relative;
 	padding: 1.15rem;
+}
+
+.postometro-panel::before,
+.postometro-results::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	border-radius: inherit;
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+	background: linear-gradient(135deg, rgba(255, 176, 137, 0.08), transparent 32% 68%, rgba(92, 218, 183, 0.07));
 }
 
 .postometro-panel__intro,
@@ -4030,6 +4155,7 @@ img {
 	display: grid;
 	gap: 1.1rem;
 	margin-top: 1rem;
+	min-width: 0;
 }
 
 .postometro-fieldset {
@@ -4041,12 +4167,34 @@ img {
 }
 
 .postometro-fieldset--panel {
+	position: relative;
 	padding: 1rem;
 	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	background:
 		linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.018)),
 		rgba(255, 255, 255, 0.022);
+	overflow: hidden;
+	transition:
+		border-color 0.18s ease,
+		transform 0.18s ease,
+		background-color 0.18s ease;
+}
+
+.postometro-fieldset--panel::before {
+	content: '';
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: 4px;
+	background: linear-gradient(180deg, #ffb089, #5cdab7, #7599ff);
+	opacity: 0.75;
+}
+
+.postometro-fieldset--panel:hover,
+.postometro-fieldset--panel:focus-within {
+	transform: translateY(-1px);
+	border-color: rgba(255, 176, 137, 0.22);
+	background-color: rgba(255, 255, 255, 0.018);
 }
 
 .postometro-fieldset legend {
@@ -4054,6 +4202,28 @@ img {
 	color: #eef4ff;
 	font-size: 1rem;
 	font-weight: 700;
+}
+
+.postometro-fieldset legend,
+.postometro-select-field > span {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.45rem;
+	max-width: 100%;
+}
+
+.postometro-label-icon {
+	display: inline-grid;
+	place-items: center;
+	width: 1.75rem;
+	height: 1.75rem;
+	border-radius: 10px;
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.035)),
+		rgba(255, 176, 137, 0.1);
+	font-size: 0.95rem;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .postometro-fieldset__hint {
@@ -4073,7 +4243,7 @@ img {
 }
 
 .postometro-choice-grid--company {
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .postometro-choice-card,
@@ -4091,7 +4261,9 @@ img {
 
 .postometro-choice-card__body {
 	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
 	gap: 0.38rem;
+	column-gap: 0.72rem;
 	min-height: 100%;
 	padding: 1rem;
 	border-radius: 18px;
@@ -4107,6 +4279,26 @@ img {
 		box-shadow 0.16s ease;
 }
 
+.postometro-choice-card__icon {
+	grid-row: span 2;
+	display: grid;
+	place-items: center;
+	width: 2.35rem;
+	height: 2.35rem;
+	border-radius: 14px;
+	background:
+		linear-gradient(180deg, rgba(255, 176, 137, 0.2), rgba(117, 153, 255, 0.1)),
+		rgba(255, 255, 255, 0.04);
+	font-size: 1.15rem;
+	line-height: 1;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.1),
+		0 10px 20px rgba(0, 0, 0, 0.18);
+	transition:
+		transform 0.18s ease,
+		background-color 0.18s ease;
+}
+
 .postometro-choice-card__body strong {
 	font-size: 0.95rem;
 }
@@ -4117,20 +4309,47 @@ img {
 	line-height: 1.45;
 }
 
+.postometro-choice-card__body .postometro-choice-card__icon {
+	color: #fff4ed;
+	font-size: 1.15rem;
+	line-height: 1;
+}
+
+.postometro-choice-card--compact .postometro-choice-card__body {
+	min-height: 9.2rem;
+	align-content: start;
+}
+
+.postometro-choice-card--compact .postometro-choice-card__body span:not(.postometro-choice-card__icon) {
+	overflow-wrap: anywhere;
+}
+
 .postometro-choice-card input:checked + .postometro-choice-card__body,
 .postometro-choice-card:hover .postometro-choice-card__body,
 .postometro-choice-card:focus-within .postometro-choice-card__body {
-	transform: translateY(-2px);
+	transform: translateY(-3px) rotate(-0.4deg);
 	border-color: rgba(255, 176, 137, 0.42);
 	background:
+		linear-gradient(135deg, rgba(92, 218, 183, 0.1), transparent 42%),
 		linear-gradient(180deg, rgba(255, 176, 137, 0.14), rgba(255, 176, 137, 0.03)),
 		rgba(255, 255, 255, 0.03);
-	box-shadow: 0 16px 28px rgba(8, 12, 22, 0.18);
+	box-shadow:
+		0 16px 28px rgba(8, 12, 22, 0.18),
+		0 0 0 4px rgba(255, 176, 137, 0.045);
 }
 
 .postometro-choice-card input:checked + .postometro-choice-card__body strong,
 .postometro-choice-card input:checked + .postometro-choice-card__body span {
 	color: #fff4ed;
+}
+
+.postometro-choice-card input:checked + .postometro-choice-card__body .postometro-choice-card__icon,
+.postometro-choice-card:hover .postometro-choice-card__icon,
+.postometro-choice-card:focus-within .postometro-choice-card__icon {
+	transform: rotate(-6deg) scale(1.08);
+	background:
+		linear-gradient(180deg, rgba(255, 176, 137, 0.32), rgba(92, 218, 183, 0.16)),
+		rgba(255, 255, 255, 0.06);
 }
 
 .postometro-chip-grid {
@@ -4139,10 +4358,11 @@ img {
 	gap: 0.72rem;
 }
 
-.postometro-chip-option span {
+.postometro-chip-option > span {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	gap: 0.56rem;
 	width: 100%;
 	min-height: 3.25rem;
 	padding: 0.78rem 0.95rem;
@@ -4165,9 +4385,21 @@ img {
 		box-shadow 0.16s ease;
 }
 
+.postometro-chip-option__icon {
+	display: inline-grid;
+	place-items: center;
+	flex: 0 0 auto;
+	width: 1.7rem;
+	height: 1.7rem;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.07);
+	font-size: 0.98rem;
+	line-height: 1;
+}
+
 .postometro-chip-option input:checked + span,
-.postometro-chip-option:hover span,
-.postometro-chip-option:focus-within span {
+.postometro-chip-option:hover > span,
+.postometro-chip-option:focus-within > span {
 	transform: translateY(-2px);
 	border-color: rgba(117, 153, 255, 0.46);
 	background:
@@ -4190,10 +4422,13 @@ img {
 
 .postometro-select-field select {
 	min-height: 3rem;
-	padding: 0.72rem 0.88rem;
+	padding: 0.72rem 2.4rem 0.72rem 0.88rem;
 	border-radius: 14px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
-	background: rgba(255, 255, 255, 0.04);
+	background:
+		linear-gradient(45deg, transparent 50%, #ffb089 50%) calc(100% - 18px) 50% / 7px 7px no-repeat,
+		linear-gradient(135deg, #ffb089 50%, transparent 50%) calc(100% - 13px) 50% / 7px 7px no-repeat,
+		rgba(255, 255, 255, 0.04);
 	color: #f3f6fb;
 	color-scheme: dark;
 	font: inherit;
@@ -4220,15 +4455,18 @@ img {
 }
 
 .postometro-search-cta {
-	display: grid;
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	gap: 0.65rem;
 	place-items: center;
+	justify-content: center;
 	min-height: 4.8rem;
 	padding: 0.95rem 1rem;
 	border-radius: 18px;
 	border: 1px solid rgba(255, 176, 137, 0.38);
 	background:
-		radial-gradient(circle at 100% 0, rgba(255, 176, 137, 0.22), transparent 0 36%),
-		linear-gradient(180deg, rgba(255, 176, 137, 0.14), rgba(255, 176, 137, 0.05)),
+		linear-gradient(115deg, rgba(255, 176, 137, 0.26), rgba(92, 218, 183, 0.12), rgba(117, 153, 255, 0.16)),
+		linear-gradient(180deg, rgba(255, 176, 137, 0.18), rgba(255, 176, 137, 0.05)),
 		rgba(255, 255, 255, 0.035);
 	color: #fff4ed;
 	text-align: center;
@@ -4242,6 +4480,12 @@ img {
 		background-color 0.18s ease;
 }
 
+.postometro-search-cta > span {
+	font-size: 1.45rem;
+	filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.28));
+	transition: transform 0.18s ease;
+}
+
 .postometro-search-cta:hover,
 .postometro-search-cta:focus-visible {
 	transform: translateY(-2px);
@@ -4249,6 +4493,11 @@ img {
 	box-shadow:
 		inset 0 1px 0 rgba(255, 255, 255, 0.08),
 		0 24px 40px rgba(9, 12, 19, 0.26);
+}
+
+.postometro-search-cta:hover > span,
+.postometro-search-cta:focus-visible > span {
+	transform: rotate(-8deg) scale(1.12);
 }
 
 .postometro-search-cta:disabled {
@@ -4536,6 +4785,7 @@ img {
 }
 
 .postometro-empty {
+	position: relative;
 	display: grid;
 	gap: 0.65rem;
 	align-content: center;
@@ -4546,6 +4796,22 @@ img {
 	background:
 		radial-gradient(circle at 100% 0, rgba(117, 153, 255, 0.12), transparent 0 38%),
 		rgba(255, 255, 255, 0.03);
+	overflow: hidden;
+}
+
+.postometro-empty::before {
+	content: '🎟️';
+	width: 3rem;
+	height: 3rem;
+	display: grid;
+	place-items: center;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background:
+		linear-gradient(180deg, rgba(255, 176, 137, 0.2), rgba(117, 153, 255, 0.1)),
+		rgba(255, 255, 255, 0.04);
+	box-shadow: 0 18px 30px rgba(0, 0, 0, 0.2);
+	animation: postometro-ticket-wiggle 3.2s ease-in-out infinite;
 }
 
 .postometro-empty h3,
@@ -4586,11 +4852,14 @@ img {
 }
 
 .postometro-loading__marquee span {
-	width: 0.68rem;
-	height: 0.68rem;
+	display: grid;
+	place-items: center;
+	width: 2.35rem;
+	height: 2.35rem;
 	border-radius: 999px;
 	background: linear-gradient(180deg, #ffb089, #7599ff);
 	box-shadow: 0 0 0 6px rgba(255, 176, 137, 0.08);
+	font-size: 1.15rem;
 	animation: postometro-loading-bob 980ms ease-in-out infinite;
 }
 
@@ -4669,6 +4938,63 @@ img {
 	background: linear-gradient(90deg, rgba(117, 153, 255, 0.78), rgba(255, 176, 137, 0.92));
 	box-shadow: 0 0 18px rgba(255, 176, 137, 0.26);
 	animation: postometro-meter-sweep 1.65s ease-in-out infinite;
+}
+
+@keyframes postometro-light-sweep {
+	0% {
+		transform: translateX(-2rem);
+		opacity: 0.58;
+	}
+
+	50% {
+		transform: translateX(2rem);
+		opacity: 0.9;
+	}
+
+	100% {
+		transform: translateX(-2rem);
+		opacity: 0.58;
+	}
+}
+
+@keyframes postometro-hero-shine {
+	0%,
+	24% {
+		transform: translateX(-9rem) rotate(18deg);
+		opacity: 0;
+	}
+
+	44% {
+		opacity: 0.72;
+	}
+
+	68%,
+	100% {
+		transform: translateX(26rem) rotate(18deg);
+		opacity: 0;
+	}
+}
+
+@keyframes postometro-icon-float {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-6px) rotate(-2deg);
+	}
+}
+
+@keyframes postometro-ticket-wiggle {
+	0%,
+	100% {
+		transform: rotate(-2deg);
+	}
+
+	45% {
+		transform: translateY(-4px) rotate(3deg);
+	}
 }
 
 @keyframes postometro-loading-bob {
@@ -5146,7 +5472,30 @@ img {
 
 @media (max-width: 720px) {
 	.site-header {
+		display: grid;
+		width: min(100%, calc(100vw - 1rem));
+		padding: 0.65rem 0 0.75rem;
+	}
+
+	.site-search-bar {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0;
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+		box-shadow: none;
+	}
+
+	.site-header__brand,
+	.site-header__donate,
+	.supporter-ticker {
 		display: none;
+	}
+
+	.site-search-bar .movie-search {
+		width: 100%;
 	}
 
 	.home-catalog__desktop-extra {
@@ -5157,14 +5506,22 @@ img {
 		display: none;
 	}
 
+	.editorial-rankings,
+	.home-catalog ~ .site-footer {
+		display: none;
+	}
+
 	.home-catalog {
+		width: min(100%, calc(100vw - 1rem));
 		gap: 0.8rem;
-		padding-top: 0.5rem;
+		padding-top: 0;
 		padding-bottom: 2.6rem;
+		overflow-x: clip;
 	}
 
 	.home-results-tools {
 		gap: 0.75rem;
+		min-width: 0;
 		padding: 0;
 		border: 0;
 		border-radius: 0;
@@ -5184,11 +5541,14 @@ img {
 	.home-results-tools__filters {
 		grid-template-columns: 1fr;
 		gap: 0.7rem;
+		min-width: 0;
 	}
 
 	.home-platform-filter,
 	.home-genre-filter,
 	.home-special-filter {
+		min-width: 0;
+		max-width: 100%;
 		padding: 0;
 		border: 0;
 		border-radius: 0;
@@ -5201,6 +5561,15 @@ img {
 		align-items: start;
 		justify-content: stretch;
 		gap: 0.55rem;
+	}
+
+	.home-platform-filter__chips {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.home-platform-filter__badge,
+	.home-platform-filter__badge .platform-chip__logo {
+		max-width: 100%;
 	}
 
 	.editorial-rankings {
@@ -5654,6 +6023,18 @@ img {
 		mask-image: none;
 		-webkit-mask-image: none;
 		overflow-x: auto;
+	}
+
+	.postometro-page::before,
+	.postometro-hero::after,
+	.postometro-hero__reel span,
+	.postometro-empty::before,
+	.postometro-loading__marquee span,
+	.postometro-loading__meter span,
+	.postometro-pick--reveal,
+	.postometro-pick--reveal .postometro-pick__poster-shell--reveal,
+	.postometro-pick--reveal .postometro-pick__body > * {
+		animation: none;
 	}
 }
 
@@ -6178,7 +6559,7 @@ img {
 	}
 
 	.home-platform-filter__chips {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
 	.home-catalog__mobile-teaser {
@@ -6203,7 +6584,22 @@ img {
 	}
 
 	.postometro-hero__title {
-		font-size: clamp(2rem, 10vw, 2.8rem);
+		font-size: clamp(2rem, 8.8vw, 2.35rem);
+	}
+
+	.postometro-hero__reel {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.postometro-hero {
+		padding: 1rem;
+	}
+
+	.postometro-hero__notes p {
+		display: grid;
+		grid-template-columns: auto minmax(0, 1fr);
+		font-size: 0.92rem;
 	}
 
 	.postometro-pick__actions {

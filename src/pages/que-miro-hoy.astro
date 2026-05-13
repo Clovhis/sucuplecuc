@@ -17,6 +17,32 @@ const movies = getMovies();
 const postometroCatalog = createPostometroCatalogEntries(movies);
 const platformOptions = getPostometroPlatformOptions(movies);
 const initialAnswers = DEFAULT_POSTOMETRO_ANSWERS;
+const moodOptionIcons: Record<string, string> = {
+	risas: '😂',
+	tension: '⚡',
+	pochoclo: '🍿',
+	corazon: '💛',
+	cabeza: '🧠',
+	sustos: '👻',
+};
+const companyOptionIcons: Record<string, string> = {
+	solo: '🎧',
+	pareja: '🥂',
+	amigos: '🎲',
+	familia: '🛋️',
+};
+const timeOptionIcons: Record<string, string> = {
+	flash: '⏱️',
+	normal: '🕘',
+	larga: '📼',
+	'sin-reloj': '∞',
+};
+const intensityOptionIcons: Record<string, string> = {
+	liviana: '🫧',
+	equilibrada: '🎯',
+	intensa: '🔥',
+	densa: '🪨',
+};
 
 const pageTitle = `¿Qué vemos hoy? | ${SITE_NAME}`;
 const pageDescription =
@@ -75,11 +101,19 @@ const postometroData = serializeJsonForScript({
 
 		<section class="postometro-hero fade-up" style="--item-delay: 0ms;">
 			<div class="postometro-hero__copy">
+				<p class="postometro-hero__eyebrow">El postómetro</p>
 				<h1 class="postometro-hero__title">¿Qué vemos hoy?</h1>
+				<p class="postometro-hero__subtitle">Armá el mood de la noche y dejá que el catálogo haga su pequeña función.</p>
 			</div>
 			<div class="postometro-hero__notes">
-				<p>Humor, tiempo disponible, compañía, plataforma y cuánto te bancás una peli intensa.</p>
-				<p>Todo sale del catálogo editorial del sitio.</p>
+				<div class="postometro-hero__reel" aria-hidden="true">
+					<span>🍿</span>
+					<span>🎬</span>
+					<span>⚡</span>
+					<span>🛋️</span>
+				</div>
+				<p><span aria-hidden="true">🎛️</span><span class="postometro-hero__note-copy">Humor, tiempo disponible, compañía, plataforma y cuánto te bancás una peli intensa.</span></p>
+				<p><span aria-hidden="true">📚</span><span class="postometro-hero__note-copy">Todo sale del catálogo editorial del sitio.</span></p>
 			</div>
 		</section>
 
@@ -93,7 +127,7 @@ const postometroData = serializeJsonForScript({
 				<form class="postometro-form" data-postometro-form>
 					<div class="postometro-form__footer">
 						<label class="postometro-select-field" for="postometro-era">
-							<span>¿De qué época?</span>
+							<span><span class="postometro-label-icon" aria-hidden="true">🗓️</span> ¿De qué época?</span>
 							<select id="postometro-era" name="era" data-postometro-field="era">
 								{
 									POSTOMETRO_ERA_OPTIONS.map((option) => (
@@ -106,7 +140,7 @@ const postometroData = serializeJsonForScript({
 						</label>
 
 						<label class="postometro-select-field" for="postometro-platform">
-							<span>¿Dónde la querés ver?</span>
+							<span><span class="postometro-label-icon" aria-hidden="true">📺</span> ¿Dónde la querés ver?</span>
 							<select id="postometro-platform" name="platform" data-postometro-field="platform">
 								{
 									platformOptions.map((option) => (
@@ -120,7 +154,7 @@ const postometroData = serializeJsonForScript({
 					</div>
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
-						<legend>¿Qué buscás que te haga la peli?</legend>
+						<legend><span class="postometro-label-icon" aria-hidden="true">🎭</span> ¿Qué buscás que te haga la peli?</legend>
 						<p class="postometro-fieldset__hint">Arrancá por el efecto que querés que te deje hoy.</p>
 						<div class="postometro-choice-grid postometro-choice-grid--mood">
 							{
@@ -134,6 +168,7 @@ const postometroData = serializeJsonForScript({
 											data-postometro-field="mood"
 										/>
 										<span class="postometro-choice-card__body">
+											<span class="postometro-choice-card__icon" aria-hidden="true">{moodOptionIcons[option.id]}</span>
 											<strong>{option.label}</strong>
 											<span>{option.description}</span>
 										</span>
@@ -144,7 +179,7 @@ const postometroData = serializeJsonForScript({
 					</fieldset>
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
-						<legend>¿Con quién la ves?</legend>
+						<legend><span class="postometro-label-icon" aria-hidden="true">👥</span> ¿Con quién la ves?</legend>
 						<p class="postometro-fieldset__hint">Esto cambia bastante qué tan rendidora conviene que sea.</p>
 						<div class="postometro-choice-grid postometro-choice-grid--company">
 							{
@@ -158,6 +193,7 @@ const postometroData = serializeJsonForScript({
 											data-postometro-field="company"
 										/>
 										<span class="postometro-choice-card__body">
+											<span class="postometro-choice-card__icon" aria-hidden="true">{companyOptionIcons[option.id]}</span>
 											<strong>{option.label}</strong>
 											<span>{option.description}</span>
 										</span>
@@ -168,7 +204,7 @@ const postometroData = serializeJsonForScript({
 					</fieldset>
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
-						<legend>¿Cuánto tiempo tenés?</legend>
+						<legend><span class="postometro-label-icon" aria-hidden="true">⏳</span> ¿Cuánto tiempo tenés?</legend>
 						<p class="postometro-fieldset__hint">Elegí el margen real que tenés, no el ideal.</p>
 						<div class="postometro-chip-grid">
 							{
@@ -181,7 +217,7 @@ const postometroData = serializeJsonForScript({
 											checked={option.id === initialAnswers.time}
 											data-postometro-field="time"
 										/>
-										<span>{option.label}</span>
+										<span><span class="postometro-chip-option__icon" aria-hidden="true">{timeOptionIcons[option.id]}</span>{option.label}</span>
 									</label>
 								))
 							}
@@ -189,7 +225,7 @@ const postometroData = serializeJsonForScript({
 					</fieldset>
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
-						<legend>¿Qué tan cargada la bancás?</legend>
+						<legend><span class="postometro-label-icon" aria-hidden="true">🌡️</span> ¿Qué tan cargada la bancás?</legend>
 						<p class="postometro-fieldset__hint">Acá marcás si querés algo llevadero o una peli más pesada.</p>
 						<div class="postometro-chip-grid">
 							{
@@ -202,7 +238,7 @@ const postometroData = serializeJsonForScript({
 											checked={option.id === initialAnswers.intensity}
 											data-postometro-field="intensity"
 										/>
-										<span>{option.label}</span>
+										<span><span class="postometro-chip-option__icon" aria-hidden="true">{intensityOptionIcons[option.id]}</span>{option.label}</span>
 									</label>
 								))
 							}
@@ -211,9 +247,11 @@ const postometroData = serializeJsonForScript({
 
 					<div class="postometro-form__actions">
 						<button type="submit" class="postometro-search-cta" data-postometro-search>
+							<span aria-hidden="true">🎬</span>
 							<strong>Buscar</strong>
 						</button>
 						<button type="button" class="page-action" data-postometro-reset>
+							<span aria-hidden="true">↺</span>
 							Resetear noche
 						</button>
 					</div>

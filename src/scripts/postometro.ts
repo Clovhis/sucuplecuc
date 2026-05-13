@@ -30,8 +30,8 @@ const POSTOMETRO_ROTATION_STORAGE_KEY = 'postometro-combo-rotation-v1';
 const POSTOMETRO_SEEN_STORAGE_KEY = 'postometro-seen-v1';
 const POSTOMETRO_SKIPPED_STORAGE_KEY = 'postometro-skipped-v1';
 const POSTOMETRO_RESULT_LIMIT = 40;
-const LOADING_MIN_MS = 3000;
-const LOADING_MAX_MS = 6000;
+const LOADING_MIN_MS = 1000;
+const LOADING_MAX_MS = 3000;
 const LOADING_PHRASES = [
 	'Bancame que voy a buscarla al sótano y vuelvo.',
 	'Estoy sacando polvo de una estantería sospechosamente larga.',
@@ -216,9 +216,9 @@ function initPostometro(
 		body.innerHTML = `
 			<section class="postometro-loading" data-postometro-loading>
 				<div class="postometro-loading__marquee" aria-hidden="true">
-					<span></span>
-					<span></span>
-					<span></span>
+					<span>🎬</span>
+					<span>🍿</span>
+					<span>⚡</span>
 				</div>
 				<p class="postometro-loading__eyebrow">Buscando película</p>
 				<h3>Estamos revolviendo el catálogo para esta noche</h3>
