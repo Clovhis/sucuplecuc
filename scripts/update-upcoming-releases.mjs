@@ -1,4 +1,4 @@
-import { writeFile } from 'node:fs/promises';
+import { access, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
@@ -8,6 +8,7 @@ const OUTPUT_PATH = path.join(ROOT_DIR, 'src/data/upcomingReleases.generated.ts'
 const UPCOMING_URL = 'https://www.themoviedb.org/movie/upcoming';
 const MAX_SOURCE_ITEMS = 12;
 const MAX_RELEASES = 8;
+const STRICT_MODE = process.env.UPCOMING_RELEASES_STRICT === '1';
 const REQUEST_HEADERS = {
 	'user-agent':
 		'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
@@ -202,13 +203,47 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = ${payload
 }
 
 async function main() {
-	const releases = await buildUpcomingReleases();
+	let releases = [];
+
+	try {
+		releases = await buildUpcomingReleases();
+	} catch (error) {
+		if (STRICT_MODE) {
+			throw error;
+		}
+
+		console.warn(
+			`[upcomingReleases] No se pudo consultar la fuente remota. Se conserva el archivo generado existente. ${
+				error instanceof Error ? error.message : String(error)
+			}`,
+		);
+		await ensureOutputFile();
+		return;
+	}
+
 	if (releases.length === 0) {
-		throw new Error('No se pudieron generar próximos estrenos automáticos.');
+		if (STRICT_MODE) {
+			throw new Error('No se pudieron generar próximos estrenos automáticos.');
+		}
+
+		console.warn(
+			'[upcomingReleases] No se pudieron generar próximos estrenos automáticos. Se conserva el archivo generado existente.',
+		);
+		await ensureOutputFile();
+		return;
 	}
 
 	await writeFile(OUTPUT_PATH, renderModule(releases), 'utf8');
 	console.log(`[upcomingReleases] ${releases.length} estrenos guardados en ${path.relative(ROOT_DIR, OUTPUT_PATH)}`);
+}
+
+async function ensureOutputFile() {
+	try {
+		await access(OUTPUT_PATH);
+	} catch {
+		await writeFile(OUTPUT_PATH, renderModule([]), 'utf8');
+		console.warn(`[upcomingReleases] Se creó ${path.relative(ROOT_DIR, OUTPUT_PATH)} vacío para permitir el build.`);
+	}
 }
 
 main().catch((error) => {
