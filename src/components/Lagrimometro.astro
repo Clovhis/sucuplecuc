@@ -1,0 +1,33 @@
+---
+import { getLagrimometroLabel } from '../lib/lagrimometro';
+
+interface Props {
+	score: number;
+}
+
+const { score } = Astro.props as Props;
+const label = getLagrimometroLabel(score);
+const tears = Array.from({ length: 9 });
+---
+
+<div class="lagrimometro" style={`--lagrimometro-level: ${score}%;`}>
+	<div class="lagrimometro__top">
+		<span class="lagrimometro__label">{label}</span>
+		<span class="lagrimometro__score">{score}%</span>
+	</div>
+	<div
+		class="lagrimometro__track"
+		role="progressbar"
+		aria-label={`Lagrimómetro: ${score}%`}
+		aria-valuemin="1"
+		aria-valuemax="99"
+		aria-valuenow={score}
+	>
+		<div class="lagrimometro__fill">
+			<span class="lagrimometro__wave" aria-hidden="true"></span>
+			<span class="lagrimometro__foam" aria-hidden="true"></span>
+			{tears.map((_, index) => <span class="lagrimometro__tear" style={`--tear-index: ${index};`} aria-hidden="true"></span>)}
+		</div>
+	</div>
+	<p class="lagrimometro__note">Probabilidad de necesitar pañuelos al mirar esta película.</p>
+</div>

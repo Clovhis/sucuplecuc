@@ -3384,6 +3384,215 @@ img {
 	color: #dde3ef;
 }
 
+.movie-detail__lagrimometro-card {
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	gap: 0.9rem;
+	scroll-margin-top: 1rem;
+	padding: 1rem;
+	border: 1px solid rgba(124, 226, 255, 0.38);
+	border-radius: 12px;
+	background:
+		radial-gradient(circle at 16% 0%, rgba(170, 245, 255, 0.32), transparent 36%),
+		linear-gradient(135deg, rgba(24, 145, 184, 0.42), rgba(11, 17, 28, 0.94) 56%),
+		rgba(8, 21, 31, 0.9);
+	box-shadow:
+		0 22px 48px rgba(16, 143, 184, 0.28),
+		0 0 0 1px rgba(190, 245, 255, 0.08),
+		inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.movie-detail__lagrimometro-card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(120deg, transparent 0 24%, rgba(255, 255, 255, 0.14) 35%, transparent 48%),
+		radial-gradient(circle at 88% 22%, rgba(131, 231, 255, 0.2), transparent 28%);
+	pointer-events: none;
+	opacity: 0.78;
+}
+
+.movie-detail__lagrimometro-card > * {
+	position: relative;
+	z-index: 1;
+}
+
+.movie-detail__lagrimometro-head {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.movie-detail__lagrimometro-kicker,
+.movie-detail__lagrimometro-title {
+	margin: 0;
+}
+
+.movie-detail__lagrimometro-kicker {
+	color: #d6f8ff;
+	font-family: var(--font-mono);
+	font-size: 0.76rem;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+}
+
+.movie-detail__lagrimometro-title {
+	color: #ffffff;
+	font-size: clamp(1.35rem, 3vw, 1.9rem);
+	font-weight: 800;
+	line-height: 1;
+	text-shadow: 0 0 24px rgba(103, 220, 255, 0.28);
+}
+
+.lagrimometro {
+	display: grid;
+	gap: 0.45rem;
+	min-width: 0;
+}
+
+.lagrimometro__top {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.lagrimometro__label {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+.lagrimometro__score {
+	flex: 0 0 auto;
+	color: #9fe9ff;
+	font-family: var(--font-mono);
+	font-size: 1.02rem;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 0 18px rgba(102, 220, 255, 0.35);
+}
+
+.lagrimometro__track {
+	position: relative;
+	overflow: hidden;
+	height: 1.05rem;
+	border: 1px solid rgba(159, 233, 255, 0.32);
+	border-radius: 999px;
+	background:
+		linear-gradient(180deg, rgba(6, 12, 18, 0.82), rgba(18, 32, 44, 0.74)),
+		rgba(255, 255, 255, 0.04);
+	box-shadow:
+		inset 0 1px 3px rgba(0, 0, 0, 0.55),
+		0 8px 24px rgba(31, 177, 220, 0.12);
+}
+
+.lagrimometro__track::before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	border-radius: inherit;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.24), transparent 48%);
+	pointer-events: none;
+	z-index: 2;
+}
+
+.lagrimometro__fill {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: var(--lagrimometro-level);
+	min-width: 1.1rem;
+	overflow: hidden;
+	border-radius: inherit;
+	background:
+		linear-gradient(90deg, #62d9ff, #9eeeff 55%, #d9fbff),
+		#7de6ff;
+	box-shadow:
+		inset 0 -8px 10px rgba(7, 95, 135, 0.24),
+		0 0 22px rgba(95, 223, 255, 0.3);
+	animation: lagrimometro-fill 850ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.lagrimometro__wave,
+.lagrimometro__foam {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.lagrimometro__wave {
+	background:
+		radial-gradient(9px 7px at 8px 55%, rgba(255, 255, 255, 0.56), transparent 62%),
+		radial-gradient(11px 8px at 28px 35%, rgba(255, 255, 255, 0.36), transparent 64%);
+	background-size: 38px 100%;
+	opacity: 0.82;
+	animation: lagrimometro-wave 1.8s linear infinite;
+}
+
+.lagrimometro__foam {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.52), transparent 48%);
+	mix-blend-mode: screen;
+	opacity: 0.68;
+}
+
+.lagrimometro__tear {
+	position: absolute;
+	top: 50%;
+	left: calc((var(--tear-index) + 0.7) * 10.5%);
+	width: 0.34rem;
+	height: 0.46rem;
+	border-radius: 55% 55% 60% 60%;
+	background: rgba(238, 253, 255, 0.78);
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.34);
+	transform: translateY(-50%) rotate(42deg);
+	opacity: 0.72;
+}
+
+.lagrimometro__tear:nth-child(2n) {
+	width: 0.26rem;
+	height: 0.36rem;
+	opacity: 0.55;
+}
+
+.lagrimometro__note {
+	margin: 0;
+	color: #b8dbe7;
+	font-size: 0.84rem;
+	line-height: 1.35;
+}
+
+.movie-detail__lagrimometro-card .lagrimometro {
+	gap: 0.65rem;
+}
+
+.movie-detail__lagrimometro-card .lagrimometro__label {
+	font-size: clamp(1.15rem, 2.7vw, 1.45rem);
+}
+
+.movie-detail__lagrimometro-card .lagrimometro__score {
+	font-size: clamp(1.4rem, 4vw, 2.05rem);
+	color: #d9fbff;
+}
+
+.movie-detail__lagrimometro-card .lagrimometro__track {
+	height: 1.45rem;
+	border-color: rgba(189, 244, 255, 0.58);
+	background:
+		linear-gradient(180deg, rgba(7, 19, 27, 0.96), rgba(14, 35, 48, 0.9)),
+		rgba(255, 255, 255, 0.06);
+	box-shadow:
+		inset 0 1px 4px rgba(0, 0, 0, 0.55),
+		0 12px 30px rgba(56, 199, 238, 0.22);
+}
+
+.movie-detail__lagrimometro-card .lagrimometro__note {
+	color: #d3f5ff;
+	font-size: 0.94rem;
+}
+
 .movie-detail__platform-value {
 	display: inline-flex;
 	align-items: center;
@@ -5972,6 +6181,26 @@ img {
 	to {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes lagrimometro-fill {
+	from {
+		width: 1.1rem;
+	}
+
+	to {
+		width: var(--lagrimometro-level);
+	}
+}
+
+@keyframes lagrimometro-wave {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 38px 0;
 	}
 }
 

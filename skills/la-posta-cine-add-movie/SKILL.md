@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for Drama/Romance/Comedia romantica, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -402,6 +402,19 @@ Rules:
 - Do not add special rating fields to movie content files.
 - The site binds ratings by `movie_slug`, so normal content creation is enough when slug is correct.
 
+## Lagrimometro compatibility (mandatory)
+
+La posta cine now shows an automatic `Lagrimómetro` on the movie detail technical sheet for tear-jerker lanes.
+Every new movie entry must be compatible through its `category` and `genres`; do not add a manual lagrimometro field to movie JSON.
+
+Rules:
+
+- If the movie is Drama, Romance, or Comedia romántica, set `category` and `genres` accurately so the automatic lagrimometro can appear.
+- If the movie is Acción, Documental, Terror, superhero, or a horror/action franchise with dramatic elements, keep those genre signals explicit so the lagrimometro stays hidden.
+- For mixed genres, prefer specific `genres` over a broad `category` alone. Example: a romantic drama should include `Drama` and `Romance`; an action drama should include `Acción`.
+- After writing the movie file, mentally verify whether `getLagrimometroScore(movie)` should return a score or `undefined`.
+- In final output, include one line: `Lagrimómetro: aplica/no aplica` and the reason based on `category`/`genres`.
+
 ## Duplicate protection (mandatory)
 
 Before writing, abort if duplicate by:
@@ -568,6 +581,7 @@ Return all of the following:
 11. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
 12. People pool confirmation with exact credited names added/updated in `src/data/people.json` and cached image paths in `public/people/`
 13. Exclusive profile linkage confirmation for any credited person already present in `docs/person-profile-catalog-reference.md`
+14. Lagrimómetro confirmation: `aplica` or `no aplica`, with category/genre reason
 
 ## Validation checklist
 
@@ -587,6 +601,7 @@ Return all of the following:
 - [ ] `releasePlatform` / optional `releasePlatforms` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Multi-platform titles keep max `2` labels total and never combine another provider with `Stremio`
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
+- [ ] Lagrimómetro eligibility checked from `category` / `genres`; no manual lagrimometro field added
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
 - [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)
 - [ ] `docs/person-profile-catalog-reference.md` consulted before locking credited names

@@ -17,8 +17,10 @@ import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
 import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
+import Lagrimometro from '../../components/Lagrimometro.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getMovieTenSecondTake } from '../../lib/editorialCopy';
+import { getLagrimometroScore } from '../../lib/lagrimometro';
 import { METHODOLOGY_PATH, SITE_NAME, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -43,6 +45,7 @@ const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
+const lagrimometroScore = getLagrimometroScore(movie);
 const currentDate = new Date();
 type PersonDateParts = {
 	year: number;
@@ -415,6 +418,17 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						) : (
 							<p class="message-box">Trailer no disponible.</p>
 						)}
+						{
+							lagrimometroScore !== undefined && (
+								<section id="lagrimometro" class="movie-detail__lagrimometro-card" aria-label="Lagrimómetro">
+									<div class="movie-detail__lagrimometro-head">
+										<p class="movie-detail__lagrimometro-kicker">Alerta pañuelos</p>
+										<p class="movie-detail__lagrimometro-title">Lagrimómetro</p>
+									</div>
+									<Lagrimometro score={lagrimometroScore} />
+								</section>
+							)
+						}
 						{
 							movie.synopsis && (
 								<section class="movie-detail__synopsis-card" aria-label="De qué se trata">
