@@ -514,7 +514,17 @@ function validateEditorialSlugList({
 }
 
 function validateMeterEligibility(movie, candidatePath, findings) {
-	const disallowedMeterFields = ['jajametro', 'jajametroScore', 'jajámetro', 'lagrimometro', 'lagrimometroScore', 'lagrimómetro'];
+	const disallowedMeterFields = [
+		'jajametro',
+		'jajametroScore',
+		'jajámetro',
+		'lagrimometro',
+		'lagrimometroScore',
+		'lagrimómetro',
+		'cagazometro',
+		'cagazometroScore',
+		'cagazómetro',
+	];
 	for (const field of disallowedMeterFields) {
 		if (Object.prototype.hasOwnProperty.call(movie, field)) {
 			addFinding(
@@ -522,7 +532,7 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 				'error',
 				'manual-meter-field',
 				candidatePath,
-				`Do not add "${field}" to movie JSON. Lagrimómetro/Jajámetro are automatic from primary category.`,
+				`Do not add "${field}" to movie JSON. Lagrimómetro/Jajámetro/Cagazómetro are automatic from primary category.`,
 			);
 		}
 	}
@@ -530,10 +540,12 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	const category = normalizeText(movie.category || '');
 	const genres = Array.isArray(movie.genres) ? normalizeText(movie.genres.join(' ')) : '';
 	const primaryShowsJajametro = category.includes('comedia');
-	const primaryShowsLagrimometro = !primaryShowsJajametro && (category.includes('drama') || category.includes('romance'));
+	const primaryShowsCagazometro = !primaryShowsJajametro && category.includes('terror');
+	const primaryShowsLagrimometro =
+		!primaryShowsJajametro && !primaryShowsCagazometro && (category.includes('drama') || category.includes('romance'));
 
-	if (primaryShowsJajametro && primaryShowsLagrimometro) {
-		addFinding(findings, 'error', 'conflicting-meter-category', candidatePath, 'Primary category cannot trigger both Jajámetro and Lagrimómetro.');
+	if ([primaryShowsJajametro, primaryShowsLagrimometro, primaryShowsCagazometro].filter(Boolean).length > 1) {
+		addFinding(findings, 'error', 'conflicting-meter-category', candidatePath, 'Primary category cannot trigger more than one automatic meter.');
 	}
 
 	if (!primaryShowsJajametro && genres.includes('comedia')) {
@@ -553,6 +565,16 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 			'secondary-tear-meter-hidden',
 			candidatePath,
 			'Drama/Romance appears only in genres; Lagrimómetro will stay hidden because only primary category "Drama" or "Romance" activates it.',
+		);
+	}
+
+	if (!primaryShowsCagazometro && genres.includes('terror')) {
+		addFinding(
+			findings,
+			'warn',
+			'secondary-horror-meter-hidden',
+			candidatePath,
+			'Terror appears only in genres; Cagazómetro will stay hidden because only primary category "Terror" activates it.',
 		);
 	}
 }

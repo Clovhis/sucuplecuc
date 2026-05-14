@@ -19,10 +19,12 @@ import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import Lagrimometro from '../../components/Lagrimometro.astro';
 import Jajametro from '../../components/Jajametro.astro';
+import Cagazometro from '../../components/Cagazometro.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getMovieTenSecondTake } from '../../lib/editorialCopy';
 import { getLagrimometroScore } from '../../lib/lagrimometro';
 import { getJajametroScore } from '../../lib/jajametro';
+import { getCagazometroScore } from '../../lib/cagazometro';
 import { METHODOLOGY_PATH, SITE_NAME, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -49,6 +51,8 @@ const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
 const lagrimometroScore = getLagrimometroScore(movie);
 const jajametroScore = lagrimometroScore === undefined ? getJajametroScore(movie) : undefined;
+const cagazometroScore =
+	lagrimometroScore === undefined && jajametroScore === undefined ? getCagazometroScore(movie) : undefined;
 const currentDate = new Date();
 type PersonDateParts = {
 	year: number;
@@ -440,6 +444,17 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										<p class="movie-detail__jajametro-title">Jajámetro</p>
 									</div>
 									<Jajametro score={jajametroScore} />
+								</section>
+							)
+						}
+						{
+							cagazometroScore !== undefined && (
+								<section id="cagazometro" class="movie-detail__cagazometro-card" aria-label="Cagazómetro">
+									<div class="movie-detail__cagazometro-head">
+										<p class="movie-detail__cagazometro-kicker">Alerta sustos</p>
+										<p class="movie-detail__cagazometro-title">Cagazómetro</p>
+									</div>
+									<Cagazometro score={cagazometroScore} />
 								</section>
 							)
 						}

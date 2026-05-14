@@ -1,0 +1,35 @@
+---
+import { getCagazometroLabel } from '../lib/cagazometro';
+
+interface Props {
+	score: number;
+}
+
+const { score } = Astro.props as Props;
+const label = getCagazometroLabel(score);
+const scares = Array.from({ length: 8 });
+---
+
+<div class="cagazometro" style={`--cagazometro-level: ${score}%;`}>
+	<div class="cagazometro__top">
+		<span class="cagazometro__label">{label}</span>
+		<span class="cagazometro__score">{score}%</span>
+	</div>
+	<div
+		class="cagazometro__track"
+		role="progressbar"
+		aria-label={`Cagazómetro: ${score}%`}
+		aria-valuemin="1"
+		aria-valuemax="99"
+		aria-valuenow={score}
+	>
+		<div class="cagazometro__fill">
+			<span class="cagazometro__pulse" aria-hidden="true"></span>
+			<span class="cagazometro__static" aria-hidden="true"></span>
+			{scares.map((_, index) => (
+				<span class="cagazometro__scare" style={`--scare-index: ${index};`} aria-hidden="true">!</span>
+			))}
+		</div>
+	</div>
+	<p class="cagazometro__note">Probabilidad de mirar entre los dedos o pegar algún salto.</p>
+</div>

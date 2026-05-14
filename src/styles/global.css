@@ -3805,6 +3805,220 @@ img {
 	font-size: 0.94rem;
 }
 
+.movie-detail__cagazometro-card {
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	gap: 0.9rem;
+	scroll-margin-top: 1rem;
+	padding: 1rem;
+	border: 1px solid rgba(255, 87, 116, 0.44);
+	border-radius: 12px;
+	background:
+		radial-gradient(circle at 14% 0%, rgba(255, 88, 116, 0.34), transparent 34%),
+		linear-gradient(135deg, rgba(119, 17, 42, 0.56), rgba(12, 11, 21, 0.95) 58%),
+		rgba(20, 8, 18, 0.94);
+	box-shadow:
+		0 22px 48px rgba(157, 18, 52, 0.28),
+		0 0 0 1px rgba(255, 172, 185, 0.08),
+		inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.movie-detail__cagazometro-card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(120deg, transparent 0 22%, rgba(255, 255, 255, 0.13) 35%, transparent 48%),
+		radial-gradient(circle at 88% 22%, rgba(190, 52, 255, 0.2), transparent 28%),
+		radial-gradient(circle at 75% 82%, rgba(93, 255, 164, 0.15), transparent 26%);
+	pointer-events: none;
+	opacity: 0.82;
+}
+
+.movie-detail__cagazometro-card > * {
+	position: relative;
+	z-index: 1;
+}
+
+.movie-detail__cagazometro-head {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.movie-detail__cagazometro-kicker,
+.movie-detail__cagazometro-title {
+	margin: 0;
+}
+
+.movie-detail__cagazometro-kicker {
+	color: #ffc4cf;
+	font-family: var(--font-mono);
+	font-size: 0.76rem;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+}
+
+.movie-detail__cagazometro-title {
+	color: #ffffff;
+	font-size: clamp(1.35rem, 3vw, 1.9rem);
+	font-weight: 800;
+	line-height: 1;
+	text-shadow: 0 0 24px rgba(255, 71, 112, 0.34);
+}
+
+.cagazometro {
+	display: grid;
+	gap: 0.45rem;
+	min-width: 0;
+}
+
+.cagazometro__top {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.cagazometro__label {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+.cagazometro__score {
+	flex: 0 0 auto;
+	color: #ff6f91;
+	font-family: var(--font-mono);
+	font-size: 1.02rem;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 0 18px rgba(255, 71, 112, 0.38);
+}
+
+.cagazometro__track {
+	position: relative;
+	overflow: hidden;
+	height: 1.05rem;
+	border: 1px solid rgba(255, 111, 145, 0.36);
+	border-radius: 999px;
+	background:
+		linear-gradient(180deg, rgba(18, 10, 18, 0.86), rgba(38, 14, 28, 0.78)),
+		rgba(255, 255, 255, 0.04);
+	box-shadow:
+		inset 0 1px 3px rgba(0, 0, 0, 0.58),
+		0 8px 24px rgba(205, 32, 72, 0.16);
+}
+
+.cagazometro__track::before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	border-radius: inherit;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 50%);
+	pointer-events: none;
+	z-index: 2;
+}
+
+.cagazometro__fill {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: var(--cagazometro-level);
+	min-width: 1.1rem;
+	overflow: hidden;
+	border-radius: inherit;
+	background:
+		linear-gradient(90deg, #631127, #ff365f 52%, #77ffb4),
+		#ff365f;
+	box-shadow:
+		inset 0 -8px 10px rgba(68, 0, 22, 0.32),
+		0 0 22px rgba(255, 55, 95, 0.34);
+	animation: cagazometro-fill 850ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.cagazometro__pulse,
+.cagazometro__static {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.cagazometro__pulse {
+	background:
+		radial-gradient(9px 8px at 8px 52%, rgba(255, 255, 255, 0.5), transparent 62%),
+		radial-gradient(7px 7px at 28px 38%, rgba(18, 0, 20, 0.28), transparent 64%),
+		radial-gradient(10px 8px at 45px 63%, rgba(119, 255, 180, 0.28), transparent 66%);
+	background-size: 50px 100%;
+	opacity: 0.84;
+	animation: cagazometro-pulse 1.45s linear infinite;
+}
+
+.cagazometro__static {
+	background:
+		linear-gradient(90deg, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 52%);
+	background-size: 12px 100%, 100% 100%;
+	mix-blend-mode: screen;
+	opacity: 0.6;
+}
+
+.cagazometro__scare {
+	position: absolute;
+	top: 50%;
+	left: calc((var(--scare-index) + 0.7) * 10.8%);
+	color: rgba(255, 255, 255, 0.7);
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	font-weight: 900;
+	line-height: 1;
+	transform: translateY(-50%) rotate(8deg);
+	opacity: 0.72;
+}
+
+.cagazometro__scare:nth-child(2n) {
+	color: rgba(41, 0, 15, 0.56);
+	font-size: 0.62rem;
+	transform: translateY(-50%) rotate(-8deg);
+}
+
+.cagazometro__note {
+	margin: 0;
+	color: #e9bcc6;
+	font-size: 0.84rem;
+	line-height: 1.35;
+}
+
+.movie-detail__cagazometro-card .cagazometro {
+	gap: 0.65rem;
+}
+
+.movie-detail__cagazometro-card .cagazometro__label {
+	font-size: clamp(1.15rem, 2.7vw, 1.45rem);
+}
+
+.movie-detail__cagazometro-card .cagazometro__score {
+	color: #ffd3dc;
+	font-size: clamp(1.4rem, 4vw, 2.05rem);
+}
+
+.movie-detail__cagazometro-card .cagazometro__track {
+	height: 1.45rem;
+	border-color: rgba(255, 146, 168, 0.58);
+	background:
+		linear-gradient(180deg, rgba(21, 9, 19, 0.96), rgba(46, 13, 31, 0.9)),
+		rgba(255, 255, 255, 0.06);
+	box-shadow:
+		inset 0 1px 4px rgba(0, 0, 0, 0.58),
+		0 12px 30px rgba(219, 42, 82, 0.24);
+}
+
+.movie-detail__cagazometro-card .cagazometro__note {
+	color: #ffd8e0;
+	font-size: 0.94rem;
+}
+
 .movie-detail__platform-value {
 	display: inline-flex;
 	align-items: center;
@@ -6433,6 +6647,26 @@ img {
 
 	to {
 		background-position: 54px 0;
+	}
+}
+
+@keyframes cagazometro-fill {
+	from {
+		width: 1.1rem;
+	}
+
+	to {
+		width: var(--cagazometro-level);
+	}
+}
+
+@keyframes cagazometro-pulse {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 50px 0;
 	}
 }
 

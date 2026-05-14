@@ -95,7 +95,7 @@ The bundled script checks:
 - traceable profile presence for every credited director/main cast member (`IMDb`, `Wikidata`, `TMDb`, `Plex`, `Anime-Planet`, etc.)
 - editorial recommendation completeness for `becauseYouLiked` and `related`
 - editorial recommendation slugs that resolve to real movie entries
-- automatic meter eligibility: primary `Comedia*` shows Jajámetro, primary `Drama`/`Romance` shows Lagrimómetro, secondary genres alone do not trigger either meter, and movie JSON must not include manual meter fields
+- automatic meter eligibility: primary `Comedia*` shows Jajámetro, primary `Drama`/`Romance` shows Lagrimómetro, primary `Terror` shows Cagazómetro, secondary genres alone do not trigger any meter, and movie JSON must not include manual meter fields
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
 - `awards.wins` structure and supported award types
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
@@ -142,9 +142,9 @@ The current-year `releaseDate` check is mandatory too:
 
 The automatic meter check is mandatory too:
 
-- treat any manual `jajametro`, `jajametroScore`, `lagrimometro`, or `lagrimometroScore` field as a hard stop
+- treat any manual `jajametro`, `jajametroScore`, `lagrimometro`, `lagrimometroScore`, `cagazometro`, or `cagazometroScore` field as a hard stop
 - verify the primary `category` is intentional because meters do not activate from secondary `genres`
-- for primary `Comedia*`, expect only Jajámetro; for primary `Drama` or `Romance`, expect only Lagrimómetro
+- for primary `Comedia*`, expect only Jajámetro; for primary `Drama` or `Romance`, expect only Lagrimómetro; for primary `Terror`, expect only Cagazómetro
 - when a meter score seems tonally wrong, verify reception through trustworthy sources such as Rotten Tomatoes, Metacritic, IMDb, reputable critics, or official materials before changing review/category data
 
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:

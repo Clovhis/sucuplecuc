@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance, verify automatic jajametro eligibility for primary Comedia, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance, verify automatic jajametro eligibility for primary Comedia, verify automatic cagazometro eligibility for primary Terror, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -430,6 +430,20 @@ Rules:
 - After writing the movie file, mentally verify whether `getJajametroScore(movie)` should return a score or `undefined`.
 - In final output, include one line: `Jajámetro: aplica/no aplica` and the reason based on primary `category` plus the mutual-exclusion rule.
 
+## Cagazometro compatibility (mandatory)
+
+La posta cine shows an automatic `Cagazómetro` on movie detail pages when the primary `category` is `Terror`.
+Every new movie entry must be compatible through its primary `category`; do not add a manual cagazometro field to movie JSON.
+
+Rules:
+
+- If the movie's primary `category` is `Terror`, set that category accurately so the automatic cagazometro appears.
+- The `Lagrimómetro`, `Jajámetro`, and `Cagazómetro` are mutually exclusive by primary category: `Comedia*` shows Jajámetro; `Drama`/`Romance` shows Lagrimómetro; `Terror` shows Cagazómetro.
+- If the movie is not primary horror, keep `category` accurate so `getCagazometroScore(movie)` returns `undefined`; secondary horror genres do not activate it.
+- The review/verdict should support the likely automatic score with concrete reception or tone evidence from trustworthy sources (Rotten Tomatoes, Metacritic, IMDb, reputable critics, official materials), but never paste raw scores or third-party site names into the published review.
+- After writing the movie file, mentally verify whether `getCagazometroScore(movie)` should return a score or `undefined`.
+- In final output, include one line: `Cagazómetro: aplica/no aplica` and the reason based on primary `category` plus the mutual-exclusion rule.
+
 ## Duplicate protection (mandatory)
 
 Before writing, abort if duplicate by:
@@ -598,6 +612,7 @@ Return all of the following:
 13. Exclusive profile linkage confirmation for any credited person already present in `docs/person-profile-catalog-reference.md`
 14. Lagrimómetro confirmation: `aplica` or `no aplica`, with primary-category reason
 15. Jajámetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
+16. Cagazómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
 
 ## Validation checklist
 
@@ -619,6 +634,7 @@ Return all of the following:
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] Lagrimómetro eligibility checked from primary `category`; no manual lagrimometro field added
 - [ ] Jajámetro eligibility checked from primary `category`; no manual jajametro field added; never shown together with lagrimómetro
+- [ ] Cagazómetro eligibility checked from primary `category`; no manual cagazometro field added; never shown together with lagrimómetro or jajámetro
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
 - [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)
 - [ ] `docs/person-profile-catalog-reference.md` consulted before locking credited names
