@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-09. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-14. Fuente: src/data/movies/*.json
 
-Total de peliculas: 863
+Total de peliculas: 866
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -15,7 +15,7 @@ Total de peliculas: 863
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Stremio | +13 |
-| 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | Apple TV | +16 |
+| 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | HBO Max + Apple TV | +16 |
 | 2026 | Dracula | dracula-2026 | Terror | Stremio | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Cine | +13 |
@@ -31,6 +31,7 @@ Total de peliculas: 863
 | 2026 | Hoppers | hoppers-2026 | Animacion | Cine | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Stremio | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Stremio | +16 |
+| 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Stremio | +13 |
 | 2026 | La Odisea | the-odyssey-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Cine | +17 |
@@ -65,6 +66,7 @@ Total de peliculas: 863
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Stremio | +17 |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Stremio | +17 |
 | 2026 | Whistle | whistle-2026 | Terror | Stremio | +16 |
+| 2026 | Yiya Murano: Muerte a la hora del té | yiya-murano-muerte-a-la-hora-del-te-2026 | Documental | Netflix | +12 |
 | 2025 | ¿Y dónde está el policía? | y-donde-esta-el-policia-2025 | Comedia | Paramount Plus | +13 |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max | +16 |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max | ATP |
@@ -74,7 +76,7 @@ Total de peliculas: 863
 | 2025 | Belén | belen-2025 | Drama | Prime Video | +17 |
 | 2025 | Black Bag | black-bag-2025 | Thriller | HBO Max | +13 |
 | 2025 | Captain America: Brave New World | captain-america-brave-new-world-2025 | Accion | Disney Plus | +13 |
-| 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Stremio | +16 |
+| 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Crunchyroll | +16 |
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Stremio | +13 |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max | +13 |
@@ -94,10 +96,11 @@ Total de peliculas: 863
 | 2025 | Jurassic World Rebirth | jurassic-world-rebirth-2025 | Accion | HBO Max | +13 |
 | 2025 | Karate Kid: Legends | karate-kid-legends-2025 | Accion | HBO Max | +13 |
 | 2025 | KPop Demon Hunters | kpop-demon-hunters-2025 | Animacion | Netflix | ATP |
+| 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Stremio | ATP |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
-| 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
+| 2025 | Marty Supreme | marty-supreme-2025 | Drama | HBO Max | +13 |
 | 2025 | Me has robado el corazón | me-has-robado-el-corazon-2025 | Comedia romántica | Stremio | +16 |
 | 2025 | Mickey 17 | mickey-17-2025 | Aventura | HBO Max | +13 |
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Stremio | +13 |
