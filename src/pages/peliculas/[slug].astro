@@ -18,9 +18,11 @@ import MovieRating from '../../components/MovieRating.astro';
 import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import Lagrimometro from '../../components/Lagrimometro.astro';
+import Jajametro from '../../components/Jajametro.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getMovieTenSecondTake } from '../../lib/editorialCopy';
 import { getLagrimometroScore } from '../../lib/lagrimometro';
+import { getJajametroScore } from '../../lib/jajametro';
 import { METHODOLOGY_PATH, SITE_NAME, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -46,6 +48,7 @@ const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
 const lagrimometroScore = getLagrimometroScore(movie);
+const jajametroScore = lagrimometroScore === undefined ? getJajametroScore(movie) : undefined;
 const currentDate = new Date();
 type PersonDateParts = {
 	year: number;
@@ -426,6 +429,17 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										<p class="movie-detail__lagrimometro-title">Lagrimómetro</p>
 									</div>
 									<Lagrimometro score={lagrimometroScore} />
+								</section>
+							)
+						}
+						{
+							jajametroScore !== undefined && (
+								<section id="jajametro" class="movie-detail__jajametro-card" aria-label="Jajámetro">
+									<div class="movie-detail__jajametro-head">
+										<p class="movie-detail__jajametro-kicker">Alerta risas</p>
+										<p class="movie-detail__jajametro-title">Jajámetro</p>
+									</div>
+									<Jajametro score={jajametroScore} />
 								</section>
 							)
 						}

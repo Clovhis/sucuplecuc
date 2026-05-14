@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for Drama/Romance/Comedia romantica, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance, verify automatic jajametro eligibility for primary Comedia, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -404,16 +404,31 @@ Rules:
 
 ## Lagrimometro compatibility (mandatory)
 
-La posta cine now shows an automatic `Lagrimómetro` on the movie detail technical sheet for tear-jerker lanes.
-Every new movie entry must be compatible through its `category` and `genres`; do not add a manual lagrimometro field to movie JSON.
+La posta cine shows an automatic `Lagrimómetro` on movie detail pages when the primary `category` is a tear-jerker lane.
+Every new movie entry must be compatible through its primary `category`; do not add a manual lagrimometro field to movie JSON.
 
 Rules:
 
-- If the movie is Drama, Romance, or Comedia romántica, set `category` and `genres` accurately so the automatic lagrimometro can appear.
-- If the movie is Acción, Documental, Terror, superhero, or a horror/action franchise with dramatic elements, keep those genre signals explicit so the lagrimometro stays hidden.
-- For mixed genres, prefer specific `genres` over a broad `category` alone. Example: a romantic drama should include `Drama` and `Romance`; an action drama should include `Acción`.
+- If the movie's primary `category` is `Drama` or `Romance`, set that category accurately so the automatic lagrimometro appears.
+- `Comedia`, including `Comedia romántica`, must not trigger the lagrimometro as primary category; it belongs to the Jajámetro lane.
+- Secondary `genres` such as `Drama` or `Romance` do not activate the lagrimometro by themselves. Use them for precision, not for meter eligibility.
+- The review/verdict should support the likely automatic score with concrete reception or tone evidence from trustworthy sources (Rotten Tomatoes, Metacritic, IMDb, reputable critics, official materials), but never paste raw scores or third-party site names into the published review.
 - After writing the movie file, mentally verify whether `getLagrimometroScore(movie)` should return a score or `undefined`.
-- In final output, include one line: `Lagrimómetro: aplica/no aplica` and the reason based on `category`/`genres`.
+- In final output, include one line: `Lagrimómetro: aplica/no aplica` and the reason based on primary `category`.
+
+## Jajametro compatibility (mandatory)
+
+La posta cine shows an automatic `Jajámetro` on movie detail pages when the primary `category` is comedy.
+Every new movie entry must be compatible through its primary `category`; do not add a manual jajametro field to movie JSON.
+
+Rules:
+
+- If the movie's primary `category` contains `Comedia`, including `Comedia romántica`, set it accurately so the automatic jajametro appears.
+- The `Lagrimómetro` and `Jajámetro` are mutually exclusive by primary category: `Comedia*` shows Jajámetro; `Drama`/`Romance` shows Lagrimómetro.
+- If the movie is not primary comedy, keep `category` accurate so `getJajametroScore(movie)` returns `undefined`; secondary comedy genres do not activate it.
+- The review/verdict should support the likely automatic score with concrete reception or tone evidence from trustworthy sources (Rotten Tomatoes, Metacritic, IMDb, reputable critics, official materials), but never paste raw scores or third-party site names into the published review.
+- After writing the movie file, mentally verify whether `getJajametroScore(movie)` should return a score or `undefined`.
+- In final output, include one line: `Jajámetro: aplica/no aplica` and the reason based on primary `category` plus the mutual-exclusion rule.
 
 ## Duplicate protection (mandatory)
 
@@ -581,7 +596,8 @@ Return all of the following:
 11. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
 12. People pool confirmation with exact credited names added/updated in `src/data/people.json` and cached image paths in `public/people/`
 13. Exclusive profile linkage confirmation for any credited person already present in `docs/person-profile-catalog-reference.md`
-14. Lagrimómetro confirmation: `aplica` or `no aplica`, with category/genre reason
+14. Lagrimómetro confirmation: `aplica` or `no aplica`, with primary-category reason
+15. Jajámetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
 
 ## Validation checklist
 
@@ -601,7 +617,8 @@ Return all of the following:
 - [ ] `releasePlatform` / optional `releasePlatforms` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Multi-platform titles keep max `2` labels total and never combine another provider with `Stremio`
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
-- [ ] Lagrimómetro eligibility checked from `category` / `genres`; no manual lagrimometro field added
+- [ ] Lagrimómetro eligibility checked from primary `category`; no manual lagrimometro field added
+- [ ] Jajámetro eligibility checked from primary `category`; no manual jajametro field added; never shown together with lagrimómetro
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
 - [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)
 - [ ] `docs/person-profile-catalog-reference.md` consulted before locking credited names

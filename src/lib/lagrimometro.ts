@@ -1,29 +1,6 @@
 import type { Movie } from '../types/movie';
 
-const INCLUDE_CATEGORY_TOKENS = ['drama', 'romance', 'comedia romantica'];
-const EXCLUDE_CONTEXT_TOKENS = ['accion', 'action', 'documental', 'documentary', 'docu', 'terror', 'horror'];
-const EXCLUDE_TITLE_TOKENS = [
-	'a quiet place',
-	'alien',
-	'avengers',
-	'batman',
-	'captain america',
-	'chucky',
-	'deadpool',
-	'friday the 13th',
-	'halloween',
-	'joker',
-	'nightmare on elm street',
-	'nosferatu',
-	'psycho',
-	'scream',
-	'spider-man',
-	'superman',
-	'the exorcist',
-	'the shining',
-	'wolverine',
-	'x-men',
-];
+const INCLUDE_CATEGORY_TOKENS = ['drama', 'romance'];
 
 const SCORE_OVERRIDES: Record<string, number> = {
 	'million-dollar-baby-2004': 89,
@@ -44,21 +21,16 @@ const SCORE_OVERRIDES: Record<string, number> = {
 	'up-2009': 88,
 };
 
-const TEAR_KEYWORDS = [
-	{ pattern: /\b(llorar|lagrima|emocion|emociona|conmueve|triste|dolor|duelo)\b/g, weight: 12 },
-	{ pattern: /\b(muerte|muere|fallece|fallecio|perdida|pierde|despedida|sacrificio)\b/g, weight: 10 },
-	{ pattern: /\b(enfermedad|terminal|hospital|memoria|recuerdo|soledad|abandono)\b/g, weight: 8 },
-	{ pattern: /\b(madre|padre|hijo|hija|familia|hermano|hermana|pareja)\b/g, weight: 6 },
-	{ pattern: /\b(amor|romance|promesa|destino|reencuentro|separacion)\b/g, weight: 5 },
-	{ pattern: /\b(guerra|holocausto|esclavitud|injusticia|dictadura|prision)\b/g, weight: 7 },
-];
-
 function normalize(value: string): string {
 	return String(value ?? '')
 		.normalize('NFD')
 		.replace(/[\u0300-\u036f]/g, '')
 		.toLowerCase()
 		.trim();
+}
+
+function getPrimaryCategory(movie: Pick<Movie, 'category'>): string {
+	return normalize(movie.category ?? '');
 }
 
 function getMovieContext(movie: Pick<Movie, 'category' | 'genres'>): string {
@@ -69,24 +41,17 @@ function clampLagrimometroScore(value: number): number {
 	return Math.min(99, Math.max(1, Math.round(value)));
 }
 
-export function shouldShowLagrimometro(movie: Pick<Movie, 'category' | 'genres'>): boolean {
-	const context = getMovieContext(movie);
-	if (!INCLUDE_CATEGORY_TOKENS.some((token) => context.includes(token))) {
-		return false;
-	}
-
-	return !EXCLUDE_CONTEXT_TOKENS.some((token) => context.includes(token));
+function hasAny(value: string, patterns: RegExp[]): boolean {
+	return patterns.some((pattern) => pattern.test(value));
 }
 
-function hasExcludedTitleToken(movie: Pick<Movie, 'slug' | 'title' | 'originalTitle'>): boolean {
-	const titleContext = normalize([movie.slug, movie.title, movie.originalTitle].join(' ')).replace(/-/g, ' ');
-	return EXCLUDE_TITLE_TOKENS.some((token) => titleContext.includes(token));
+export function shouldShowLagrimometro(movie: Pick<Movie, 'category'>): boolean {
+	const category = getPrimaryCategory(movie);
+	return !category.includes('comedia') && INCLUDE_CATEGORY_TOKENS.some((token) => category.includes(token));
 }
 
 export function getLagrimometroScore(movie: Movie): number | undefined {
-	if (!shouldShowLagrimometro(movie) || hasExcludedTitleToken(movie)) {
-		return undefined;
-	}
+	if (!shouldShowLagrimometro(movie)) return undefined;
 
 	const override = SCORE_OVERRIDES[movie.slug];
 	if (override !== undefined) {
@@ -107,23 +72,29 @@ export function getLagrimometroScore(movie: Movie): number | undefined {
 		].join(' '),
 	);
 
-	let score = normalizedCategory.includes('romance') ? 44 : 36;
-	if (normalizedCategory.includes('drama')) score += 10;
-	if (normalizedCategory.includes('comedia romantica')) score += 4;
-	if (context.includes('romance')) score += 8;
+	let score = normalizedCategory.includes('romance') ? 48 : 42;
+	if (normalizedCategory.includes('drama')) score += 4;
+	if (context.includes('romance')) score += 5;
 	if (context.includes('familia')) score += 6;
-	if (context.includes('guerra') || context.includes('historia')) score += 5;
-	if (context.includes('comedia')) score -= 6;
+	if (context.includes('guerra') || context.includes('historia')) score += 6;
+	if (context.includes('comedia')) score -= 8;
 	if (movie.verdict === 'recomendada') score += 4;
+	if (movie.verdict === 'zafa') score -= 4;
+	if (movie.verdict === 'no_recomendada') score -= 10;
+	if (movie.verdict === 'basura_atomica') score -= 18;
 	if ((movie.awards?.wins ?? []).length > 0) score += 4;
 	if ((movie.runtimeMinutes ?? 0) >= 125) score += 3;
 
-	for (const keyword of TEAR_KEYWORDS) {
-		const matches = text.match(keyword.pattern);
-		if (matches) {
-			score += Math.min(keyword.weight * matches.length, keyword.weight * 2);
-		}
-	}
+	if (hasAny(text, [/\b(llorar|lagrima|lagrimas|panuelos|devastadora|devastador|desgarradora|desgarrador)\b/])) score += 18;
+	else if (hasAny(text, [/\b(emocion|emociona|conmueve|conmovedora|conmovedor|nudo en la garganta|triste)\b/])) score += 11;
+
+	if (hasAny(text, [/\b(muerte|muere|fallece|fallecio|perdida|pierde|despedida|sacrificio|duelo)\b/])) score += 13;
+	if (hasAny(text, [/\b(enfermedad|terminal|hospital|memoria|recuerdo|soledad|abandono)\b/])) score += 9;
+	if (hasAny(text, [/\b(madre|padre|hijo|hija|familia|hermano|hermana|pareja)\b/])) score += 7;
+	if (hasAny(text, [/\b(amor|romance|promesa|destino|reencuentro|separacion)\b/])) score += 6;
+	if (hasAny(text, [/\b(guerra|holocausto|esclavitud|injusticia|dictadura|prision)\b/])) score += 9;
+	if (hasAny(text, [/\b(no busca golpe bajo|sin golpe bajo|seca|sobria|distante|fria)\b/])) score -= 6;
+	if (hasAny(text, [/\b(thriller|crimen|accion|terror|horror|satira)\b/])) score -= 5;
 
 	return clampLagrimometroScore(score);
 }

@@ -1,0 +1,35 @@
+---
+import { getJajametroLabel } from '../lib/jajametro';
+
+interface Props {
+	score: number;
+}
+
+const { score } = Astro.props as Props;
+const label = getJajametroLabel(score);
+const chuckles = Array.from({ length: 8 });
+---
+
+<div class="jajametro" style={`--jajametro-level: ${score}%;`}>
+	<div class="jajametro__top">
+		<span class="jajametro__label">{label}</span>
+		<span class="jajametro__score">{score}%</span>
+	</div>
+	<div
+		class="jajametro__track"
+		role="progressbar"
+		aria-label={`Jajámetro: ${score}%`}
+		aria-valuemin="1"
+		aria-valuemax="99"
+		aria-valuenow={score}
+	>
+		<div class="jajametro__fill">
+			<span class="jajametro__wave" aria-hidden="true"></span>
+			<span class="jajametro__shine" aria-hidden="true"></span>
+			{chuckles.map((_, index) => (
+				<span class="jajametro__chuckle" style={`--chuckle-index: ${index};`} aria-hidden="true">ja</span>
+			))}
+		</div>
+	</div>
+	<p class="jajametro__note">Probabilidad de que esta película te saque carcajadas de verdad.</p>
+</div>

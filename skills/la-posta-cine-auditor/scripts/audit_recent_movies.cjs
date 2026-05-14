@@ -513,6 +513,50 @@ function validateEditorialSlugList({
 	}
 }
 
+function validateMeterEligibility(movie, candidatePath, findings) {
+	const disallowedMeterFields = ['jajametro', 'jajametroScore', 'jajámetro', 'lagrimometro', 'lagrimometroScore', 'lagrimómetro'];
+	for (const field of disallowedMeterFields) {
+		if (Object.prototype.hasOwnProperty.call(movie, field)) {
+			addFinding(
+				findings,
+				'error',
+				'manual-meter-field',
+				candidatePath,
+				`Do not add "${field}" to movie JSON. Lagrimómetro/Jajámetro are automatic from primary category.`,
+			);
+		}
+	}
+
+	const category = normalizeText(movie.category || '');
+	const genres = Array.isArray(movie.genres) ? normalizeText(movie.genres.join(' ')) : '';
+	const primaryShowsJajametro = category.includes('comedia');
+	const primaryShowsLagrimometro = !primaryShowsJajametro && (category.includes('drama') || category.includes('romance'));
+
+	if (primaryShowsJajametro && primaryShowsLagrimometro) {
+		addFinding(findings, 'error', 'conflicting-meter-category', candidatePath, 'Primary category cannot trigger both Jajámetro and Lagrimómetro.');
+	}
+
+	if (!primaryShowsJajametro && genres.includes('comedia')) {
+		addFinding(
+			findings,
+			'warn',
+			'secondary-comedy-meter-hidden',
+			candidatePath,
+			'Comedy appears only in genres; Jajámetro will stay hidden because only primary category "Comedia" activates it.',
+		);
+	}
+
+	if (!primaryShowsLagrimometro && !primaryShowsJajametro && (genres.includes('drama') || genres.includes('romance'))) {
+		addFinding(
+			findings,
+			'warn',
+			'secondary-tear-meter-hidden',
+			candidatePath,
+			'Drama/Romance appears only in genres; Lagrimómetro will stay hidden because only primary category "Drama" or "Romance" activates it.',
+		);
+	}
+}
+
 function validateMovieShape(movie, candidatePath, catalogText, findings, knownMovieSlugs) {
 	const requiredStrings = [
 		'slug',
@@ -561,6 +605,8 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	}
 
 	const normalizedCategory = normalizeText(movie.category || '');
+	validateMeterEligibility(movie, candidatePath, findings);
+
 	const isAnimatedTitle =
 		normalizedCategory === 'anime' || normalizedCategory === 'animacion' || normalizedCategory === 'animación';
 	const isDocumentaryTitle = normalizedCategory === 'documental';

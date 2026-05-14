@@ -708,6 +708,45 @@ export function getRecommendationGenres(
 	);
 }
 
+export function getCatalogFilterGenres(
+	movie: Pick<
+		Movie,
+		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'country' | 'isArgentinian' | 'awards'
+	>,
+): RecommendationGenreId[] {
+	const genreSet = new Set<RecommendationGenreId>();
+	const normalizedCategory = normalizeSearchText(movie.category ?? '');
+	let hasAnimeToken = false;
+
+	if (normalizedCategory.includes('anime')) {
+		hasAnimeToken = true;
+	}
+
+	mapGenreToken(movie.category ?? '', genreSet);
+
+	if (hasAnimeToken && movie.country?.trim().toUpperCase() === 'JP') {
+		// The home filter should keep Japanese anime out of generic animation.
+		genreSet.delete('animacion');
+		genreSet.add('anime');
+	}
+
+	if (isArgentinianMovie(movie)) {
+		genreSet.add('pelicula-nacional');
+	}
+
+	if (isOscarBestPictureWinner(movie)) {
+		genreSet.add('oscar-mejor-pelicula');
+	}
+
+	if (isMarvelOrDcSuperheroMovie(movie)) {
+		genreSet.add('superheroes');
+	}
+
+	return RECOMMENDATION_GENRE_OPTIONS.map((option) => option.id).filter((genreId) =>
+		genreSet.has(genreId),
+	);
+}
+
 function getMovieLinkRecommendation(movie: Pick<Movie, 'slug' | 'title' | 'year'>): MovieLinkRecommendation {
 	return {
 		slug: movie.slug,
