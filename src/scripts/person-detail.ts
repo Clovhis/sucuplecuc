@@ -1,10 +1,14 @@
 const personBackLink = document.querySelector<HTMLAnchorElement>('[data-history-back]');
 
 if (personBackLink instanceof HTMLAnchorElement) {
-	const returnPath = getSafeReturnPath(new URLSearchParams(window.location.search).get('backTo'));
+	const searchParams = new URLSearchParams(window.location.search);
+	const returnPath = getSafeReturnPath(searchParams.get('backTo'));
 
 	if (returnPath) {
 		personBackLink.href = returnPath;
+		searchParams.delete('backTo');
+		const canonicalPath = `${window.location.pathname}${searchParams.toString() ? `?${searchParams.toString()}` : ''}${window.location.hash}`;
+		window.history.replaceState(window.history.state, '', canonicalPath);
 	}
 
 	personBackLink.addEventListener('click', (event) => {

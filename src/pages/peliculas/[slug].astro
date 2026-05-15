@@ -128,7 +128,6 @@ const awardCategories = groupedAwards.flatMap((group) =>
 );
 const relatedIntro = `Si ${movie.title} te gustó, seguí por acá.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
-const personProfileReturnPath = encodeURIComponent(Astro.url.pathname);
 const reviewPurposeNote = 'Reseña corta y al hueso para decidir si verla o dejarla pasar.';
 const editorialUpdatedLabel = movie.releaseDate
 	? new Intl.DateTimeFormat('es-AR', {
@@ -180,7 +179,7 @@ function getPersonProfileHref(profilePath?: string): string | undefined {
 		return undefined;
 	}
 
-	return `${profilePath}?backTo=${personProfileReturnPath}`;
+	return profilePath;
 }
 
 function getAudienceRatingLabel(audienceRating: string): string {
