@@ -268,22 +268,32 @@ function formatUpcomingReleaseDate(value: string) {
 						editorialRankings.length > 0 && (
 							<section class="editorial-rankings fade-up" style="--item-delay: 120ms;" aria-labelledby="editorial-rankings-title">
 								<div class="editorial-rankings__header">
+									<p class="editorial-rankings__eyebrow">Listas salvavidas</p>
 									<h2 id="editorial-rankings-title">Rankings para caer bien parado</h2>
 								</div>
 								<div class="editorial-rankings__grid">
-									{editorialRankings.map((ranking) => (
-										<article class="editorial-rankings__card">
+									{editorialRankings.map((ranking, rankingIndex) => (
+										<article
+											class={`editorial-rankings__card editorial-rankings__card--${ranking.id}`}
+											style={`--ranking-order: ${rankingIndex};`}
+										>
 											<div class="editorial-rankings__card-title">
 												<span class={`editorial-rankings__icon editorial-rankings__icon--${ranking.id}`} aria-hidden="true"></span>
 												<h3>{ranking.title}</h3>
+												<span class="editorial-rankings__badge">{ranking.movies.length} picks</span>
 											</div>
 											<p>{ranking.description}</p>
 											<ol>
-												{ranking.movies.map((entry) => (
+												{ranking.movies.map((entry, entryIndex) => (
 													<li>
 														<a href={entry.url}>
-															<span>{entry.title}</span>
-															<small>{entry.year} · {entry.verdictLabel}</small>
+															<span class="editorial-rankings__position" aria-hidden="true">
+																{String(entryIndex + 1).padStart(2, '0')}
+															</span>
+															<span class="editorial-rankings__movie">
+																<span>{entry.title}</span>
+																<small>{entry.year} · {entry.verdictLabel}</small>
+															</span>
 														</a>
 													</li>
 												))}
