@@ -100,8 +100,8 @@ export function getLagrimometroScore(movie: Movie): number | undefined {
 }
 
 export function getLagrimometroLabel(score: number): string {
-	if (score >= 85) return 'Llevá pañuelos';
-	if (score >= 70) return 'Se te puede hacer un nudo';
-	if (score >= 50) return 'Te puede pegar';
-	return 'Asoma lagrimita';
+	if (score >= 85) return 'Te llorás la vida, mirala con pañuelos';
+	if (score >= 70) return 'Se viene el nudo en la garganta';
+	if (score >= 50) return 'Quedás al borde del lagrimón';
+	return 'Asoma el lagrimón';
 }

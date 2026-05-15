@@ -95,8 +95,8 @@ export function getCagazometroScore(movie: Movie): number | undefined {
 }
 
 export function getCagazometroLabel(score: number): string {
-	if (score >= 85) return 'Te puede dejar duro';
-	if (score >= 70) return 'Mete sustos en serio';
-	if (score >= 50) return 'Mantiene el cagazo';
-	return 'Asusta lo justo';
+	if (score >= 85) return 'Te cagás en las patas mal';
+	if (score >= 70) return 'Te deja con el culo en la mano';
+	if (score >= 50) return 'Te mantiene medio perseguido';
+	return 'Algún saltito te saca';
 }
