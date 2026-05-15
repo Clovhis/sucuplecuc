@@ -463,6 +463,10 @@ export function createPostometroCatalogEntries(movies: Movie[]): PostometroCatal
 			year: movie.year,
 			category: movie.category,
 			review: movie.review,
+			director: movie.director,
+			mainCast: movie.mainCast
+				.map((actor) => actor.trim())
+				.filter(Boolean),
 			platformLabel: getMoviePlatformLabel(movie) || 'Plataforma no cargada',
 			platforms: getNormalizedMoviePlatforms(movie),
 			verdict: movie.verdict,

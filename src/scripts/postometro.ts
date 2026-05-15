@@ -300,22 +300,25 @@ function initPostometro(
 
 		body.innerHTML = `
 			<article class="postometro-pick postometro-pick--primary postometro-pick--reveal" data-postometro-primary data-postometro-primary-slug="${escapeHtml(primary.slug)}">
-				<div class="postometro-pick__poster-shell postometro-pick__poster-shell--reveal">
-					<img
-						class="postometro-pick__poster"
-						src="${escapeHtml(primary.posterUrl)}"
-						alt="Poster de ${escapeHtml(primary.title)}"
-						loading="eager"
-						decoding="async"
-						referrerpolicy="no-referrer"
-					/>
-				</div>
 				<div class="postometro-pick__body">
 					<div class="postometro-pick__meta-top">
 						<span class="postometro-pill">${escapeHtml(primary.matchLabel)}</span>
 						<span class="postometro-pill postometro-pill--muted">${escapeHtml(String(primary.year))}</span>
 					</div>
 					<h3>${escapeHtml(primary.title)}</h3>
+					<div class="postometro-pick__media">
+						<div class="postometro-pick__poster-shell postometro-pick__poster-shell--reveal">
+							<img
+								class="postometro-pick__poster"
+								src="${escapeHtml(primary.posterUrl)}"
+								alt="Poster de ${escapeHtml(primary.title)}"
+								loading="eager"
+								decoding="async"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+						${renderCredits(primary)}
+					</div>
 					<p class="postometro-pick__review">${escapeHtml(primary.review)}</p>
 					<ul class="postometro-badge-list">
 						${primary.badges.map((badge) => `<li>${escapeHtml(badge)}</li>`).join('')}
@@ -567,6 +570,43 @@ function renderFirstInstallmentNote(primary: PostometroResultCard): string {
 			Es secuela: si no viste la primera, también te dejo ${recommendation}.
 		</p>
 	`;
+}
+
+function renderCredits(primary: PostometroResultCard): string {
+	const director = primary.director.trim();
+	const cast = uniqueTextEntries(primary.mainCast);
+
+	if (!director && cast.length === 0) {
+		return '';
+	}
+
+	return `
+		<dl class="postometro-pick__credits" aria-label="Equipo principal de ${escapeHtml(primary.title)}">
+			${director ? renderCreditRow('Direccion', director) : ''}
+			${cast.length > 0 ? renderCreditRow('Elenco', buildCastSummary(cast)) : ''}
+		</dl>
+	`;
+}
+
+function renderCreditRow(label: string, value: string): string {
+	return `
+		<div class="postometro-pick__credit-row">
+			<dt>${escapeHtml(label)}</dt>
+			<dd>${escapeHtml(value)}</dd>
+		</div>
+	`;
+}
+
+function buildCastSummary(cast: string[]): string {
+	if (cast.length <= 4) {
+		return cast.join(', ');
+	}
+
+	return `${cast.slice(0, 4).join(', ')} y ${cast.length - 4} mas`;
+}
+
+function uniqueTextEntries(values: string[]): string[] {
+	return [...new Set(values.map((value) => value.trim()).filter(Boolean))];
 }
 
 function getRandomInt(min: number, max: number): number {

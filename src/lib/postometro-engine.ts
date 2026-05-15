@@ -51,6 +51,8 @@ export interface PostometroCatalogEntry {
 	year: number;
 	category: string;
 	review: string;
+	director: string;
+	mainCast: string[];
 	platformLabel: string;
 	platforms: string[];
 	verdict: MovieVerdict;
@@ -81,6 +83,8 @@ export interface PostometroResultCard {
 	year: number;
 	category: string;
 	review: string;
+	director: string;
+	mainCast: string[];
 	platformLabel: string;
 	runtimeLabel: string;
 	verdictLabel: string;
@@ -944,6 +948,8 @@ function buildResultCard(entry: PostometroCatalogEntry, answers: PostometroAnswe
 		year: entry.year,
 		category: entry.category,
 		review: entry.review,
+		director: entry.director,
+		mainCast: entry.mainCast,
 		platformLabel: entry.platformLabel,
 		runtimeLabel: entry.runtimeLabel,
 		verdictLabel: entry.verdictLabel,
