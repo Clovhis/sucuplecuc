@@ -167,23 +167,23 @@ function initPostometro(
 
 		if (mode === 'changed') {
 			headline.textContent = 'Cambiaste el combo';
-			diagnosis.textContent = 'La recomendación anterior ya no vale para estos filtros.';
-			subheadline.textContent = 'Tocá buscar de nuevo y sale una nueva para esta noche.';
+			diagnosis.textContent = 'La recomendación anterior ya no corre con estos filtros.';
+			subheadline.textContent = 'Buscá de nuevo y sale otra para esta noche.';
 			body.innerHTML = `
 				<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
-					<h3>Listo para volver a buscar</h3>
-					<p>Con este combo nuevo, la película aparece recién cuando apretes <strong>Buscar</strong>.</p>
+					<h3>Listo para otra búsqueda</h3>
+					<p>Con este combo nuevo, la recomendación cae recién cuando toques <strong>Buscar</strong>.</p>
 				</section>
 			`;
 			return;
 		}
 
-		headline.textContent = 'Cuando busques, aparece la recomendación';
-		diagnosis.textContent = 'Primero armá el combo de la noche. Después apretás el botón y vemos qué peli entra mejor.';
-		subheadline.textContent = 'Acá no sale nada hasta que dispares la búsqueda.';
+		headline.textContent = 'Cuando busques, cae la recomendación';
+		diagnosis.textContent = 'Primero armá el combo de la noche. Después apretás el botón y vemos qué peli te calza mejor.';
+		subheadline.textContent = 'Acá no cae nada hasta que largues la búsqueda.';
 		body.innerHTML = `
 			<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
-				<h3>Tu película todavía no salió</h3>
+				<h3>La recomendación todavía no bajó</h3>
 				<p>Elegí los filtros y tocá <strong>Buscar</strong> para arrancar.</p>
 			</section>
 		`;
@@ -202,7 +202,7 @@ function initPostometro(
 		resultsRoot.dataset.postometroState = 'loading';
 		headline.textContent = 'Buscando película';
 		diagnosis.textContent = 'Estamos cruzando tu combo para sacar una recomendación que tenga sentido.';
-		subheadline.textContent = 'Humor, compañía, tiempo, plataforma y época. Todo entra en la mezcla.';
+		subheadline.textContent = 'Ánimo, compañía, tiempo, plataforma y época. Todo entra en la mezcla.';
 
 		const pills = [
 			getSelectedFieldLabel(form, 'era'),
@@ -277,8 +277,8 @@ function initPostometro(
 
 			body.innerHTML = `
 				<section class="postometro-empty" data-postometro-empty>
-					<h3>Te las viste todas para este combo</h3>
-					<p>En esta sesión ya sacamos todas las que marcaste como vistas. Cambiá un filtro y te tiro otra tanda.</p>
+						<h3>Ya quemaste este combo</h3>
+						<p>En esta sesión ya te mostré todas las que marcaste como vistas. Cambiá un filtro y te tiro otra tanda.</p>
 				</section>
 			`;
 			return;
@@ -291,8 +291,8 @@ function initPostometro(
 		if (!primary) {
 			body.innerHTML = `
 				<section class="postometro-empty" data-postometro-empty>
-					<h3>No salió una clara</h3>
-					<p>Probá cambiar el combo y tirar otra búsqueda.</p>
+						<h3>No salió una clara</h3>
+						<p>Probá cambiar el combo y tirar otra búsqueda.</p>
 				</section>
 			`;
 			return;
@@ -335,7 +335,7 @@ function initPostometro(
 							Ya la vi
 						</button>
 						<button type="button" class="postometro-cta postometro-cta--ghost" data-postometro-reroll>
-							Dame otra del mismo palo
+							Tirame otra del mismo palo
 						</button>
 					</div>
 				</div>

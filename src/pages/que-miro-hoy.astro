@@ -46,7 +46,7 @@ const intensityOptionIcons: Record<string, string> = {
 
 const pageTitle = `¿Qué vemos hoy? | ${SITE_NAME}`;
 const pageDescription =
-	'¿Qué vemos hoy? de Cine Posta recomienda una película según tu noche: humor, tiempo, compañía, plataforma y cuánto te bancás una peli liviana, intensa, profunda o pochoclera.';
+	'¿Qué vemos hoy? de Cine Posta te recomienda una película según cómo venga la noche: ánimo, tiempo, compañía, plataforma y cuánto peso querés bancarte.';
 const pageUrl = new URL(QUE_MIRO_HOY_PATH, SITE_URL).toString();
 const structuredData = [
 	{
@@ -103,7 +103,7 @@ const postometroData = serializeJsonForScript({
 			<div class="postometro-hero__copy">
 				<p class="postometro-hero__eyebrow">El postómetro</p>
 				<h1 class="postometro-hero__title">¿Qué vemos hoy?</h1>
-				<p class="postometro-hero__subtitle">Armá el mood de la noche y dejá que el catálogo haga su pequeña función.</p>
+				<p class="postometro-hero__subtitle">Contame cómo viene la noche y te tiro una que tenga sentido.</p>
 			</div>
 			<div class="postometro-hero__notes">
 				<div class="postometro-hero__reel" aria-hidden="true">
@@ -112,16 +112,16 @@ const postometroData = serializeJsonForScript({
 					<span>⚡</span>
 					<span>🛋️</span>
 				</div>
-				<p><span aria-hidden="true">🎛️</span><span class="postometro-hero__note-copy">Humor, tiempo disponible, compañía, plataforma y cuánto te bancás una peli intensa.</span></p>
-				<p><span aria-hidden="true">📚</span><span class="postometro-hero__note-copy">Todo sale del catálogo editorial del sitio.</span></p>
+				<p><span aria-hidden="true">🎛️</span><span class="postometro-hero__note-copy">Ánimo, tiempo, compañía, plataforma y cuánto peso querés bancarte.</span></p>
+				<p><span aria-hidden="true">📚</span><span class="postometro-hero__note-copy">Sale del catálogo curado del sitio, no de una ruleta cualquiera.</span></p>
 			</div>
 		</section>
 
 		<div class="postometro-shell">
 			<section class="postometro-panel fade-up" style="--item-delay: 60ms;" aria-labelledby="postometro-panel-title">
 				<div class="postometro-panel__intro">
-					<p class="postometro-panel__eyebrow">Ajustá tu noche</p>
-					<h2 id="postometro-panel-title">Decime cómo venís y te tiro una</h2>
+					<p class="postometro-panel__eyebrow">Armemos la noche</p>
+					<h2 id="postometro-panel-title">Decime qué pinta y te tiro una</h2>
 				</div>
 
 				<form class="postometro-form" data-postometro-form>
@@ -155,7 +155,7 @@ const postometroData = serializeJsonForScript({
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
 						<legend><span class="postometro-label-icon" aria-hidden="true">🎭</span> ¿Qué buscás que te haga la peli?</legend>
-						<p class="postometro-fieldset__hint">Arrancá por el efecto que querés que te deje hoy.</p>
+						<p class="postometro-fieldset__hint">Arrancá por la sensación que querés que te deje hoy.</p>
 						<div class="postometro-choice-grid postometro-choice-grid--mood">
 							{
 								POSTOMETRO_MOOD_OPTIONS.map((option) => (
@@ -180,7 +180,7 @@ const postometroData = serializeJsonForScript({
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
 						<legend><span class="postometro-label-icon" aria-hidden="true">👥</span> ¿Con quién la ves?</legend>
-						<p class="postometro-fieldset__hint">Esto cambia bastante qué tan rendidora conviene que sea.</p>
+						<p class="postometro-fieldset__hint">Esto cambia bastante qué tan bien tiene que entrar la peli.</p>
 						<div class="postometro-choice-grid postometro-choice-grid--company">
 							{
 								POSTOMETRO_COMPANY_OPTIONS.map((option) => (
@@ -205,7 +205,7 @@ const postometroData = serializeJsonForScript({
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
 						<legend><span class="postometro-label-icon" aria-hidden="true">⏳</span> ¿Cuánto tiempo tenés?</legend>
-						<p class="postometro-fieldset__hint">Elegí el margen real que tenés, no el ideal.</p>
+						<p class="postometro-fieldset__hint">Marcá el tiempo real que tenés, no el que te gustaría tener.</p>
 						<div class="postometro-chip-grid">
 							{
 								POSTOMETRO_TIME_OPTIONS.map((option) => (
@@ -226,7 +226,7 @@ const postometroData = serializeJsonForScript({
 
 					<fieldset class="postometro-fieldset postometro-fieldset--panel">
 						<legend><span class="postometro-label-icon" aria-hidden="true">🌡️</span> ¿Qué tan cargada la bancás?</legend>
-						<p class="postometro-fieldset__hint">Acá marcás si querés algo llevadero o una peli más pesada.</p>
+						<p class="postometro-fieldset__hint">Acá definís si querés algo llevadero o una peli con más peso.</p>
 						<div class="postometro-chip-grid">
 							{
 								POSTOMETRO_INTENSITY_OPTIONS.map((option) => (
@@ -252,7 +252,7 @@ const postometroData = serializeJsonForScript({
 						</button>
 						<button type="button" class="page-action" data-postometro-reset>
 							<span aria-hidden="true">↺</span>
-							Resetear noche
+							Arrancar de nuevo
 						</button>
 					</div>
 				</form>
@@ -267,18 +267,18 @@ const postometroData = serializeJsonForScript({
 			>
 				<div class="postometro-results__header">
 					<p class="postometro-results__eyebrow">Diagnóstico de hoy</p>
-					<h2 data-postometro-headline>Cuando busques, aparece la recomendación</h2>
+					<h2 data-postometro-headline>Cuando busques, cae la recomendación</h2>
 					<p class="postometro-results__diagnosis" data-postometro-diagnosis>
-						Primero armá el combo de la noche. Después apretás el botón y vemos qué peli entra mejor.
+						Primero armá el combo de la noche. Después apretás el botón y vemos qué peli te calza mejor.
 					</p>
 					<p class="postometro-results__subheadline" data-postometro-subheadline>
-						Acá no sale nada hasta que dispares la búsqueda.
+						Acá no cae nada hasta que largues la búsqueda.
 					</p>
 				</div>
 
 				<div class="postometro-results__body" data-postometro-results-body>
 					<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
-						<h3>Tu película todavía no salió</h3>
+						<h3>La recomendación todavía no bajó</h3>
 						<p>Elegí los filtros y tocá <strong>Buscar</strong> para arrancar.</p>
 					</section>
 				</div>

@@ -101,38 +101,38 @@ export interface PostometroResultSet {
 }
 
 const moodOptionDescriptions: Record<PostometroMoodId, string> = {
-	risas: 'Para cortar el día con algo gracioso o con buena onda.',
-	tension: 'Querés nervio, suspenso o una peli que te agarre del cuello.',
-	pochoclo: 'Buscás espectáculo, ritmo y cero culpa.',
-	corazon: 'Te copa algo cálido, sensible o con humanidad.',
-	cabeza: 'Querés una peli que deje algo para masticar después.',
-	sustos: 'Hoy pinta terror, mal viaje o sobresalto.',
+	risas: 'Para cortar el día con algo gracioso o que te levante un poco.',
+	tension: 'Querés nervio, suspenso o una peli que te tenga agarrado.',
+	pochoclo: 'Buscás show, ritmo y un plan que entre fácil.',
+	corazon: 'Te copa algo cálido, sensible o con alma.',
+	cabeza: 'Querés una peli que te deje pensando un rato.',
+	sustos: 'Hoy pinta terror, mal viaje o pegar un saltito.',
 };
 
 const companyOptionDescriptions: Record<PostometroCompanyId, string> = {
 	solo: 'Podés bancarte algo más raro, intenso o personal.',
-	pareja: 'Conviene que tenga química, ritmo o algo para comentar.',
-	amigos: 'Necesita energía, ganchos rápidos o buenos momentos compartibles.',
-	familia: 'Hace falta algo bastante amable y no demasiado áspero.',
+	pareja: 'Conviene que tenga química, ritmo o algo para comentar después.',
+	amigos: 'Necesita energía, ganchos rápidos o momentos para compartir.',
+	familia: 'Hace falta algo amable y que no se vaya de tema.',
 };
 
 const timeOptionDescriptions: Record<PostometroTimeId, string> = {
-	flash: 'Ideal si no querés pasar de la hora y media larga.',
-	normal: 'Te bancás una duración estándar sin irte al épico.',
+	flash: 'Ideal si no querés irte mucho más de la hora y media.',
+	normal: 'Te bancás una duración estándar sin meterte en una odisea.',
 	larga: 'No te jode pasar un buen rato largo en el sillón.',
 	'sin-reloj': 'La duración hoy no manda.',
 };
 
 const intensityOptionDescriptions: Record<PostometroIntensityId, string> = {
-	liviana: 'Que entre fácil y no se ponga densa al pedo.',
+	liviana: 'Que entre fácil y no se ponga pesada porque sí.',
 	equilibrada: 'Algo con sustancia, pero sin castigo.',
-	intensa: 'Querés una peli que apriete fuerte.',
+	intensa: 'Querés una peli que apriete de verdad.',
 	densa: 'Hoy querés algo más profundo, cargado o exigente.',
 };
 
 const eraOptionDescriptions: Record<PostometroEraId, string> = {
 	cualquiera: 'No filtramos por época: manda el mood de hoy.',
-	clasicos: 'Querés ir a algo con olor a clásico, no a estreno de algoritmo.',
+	clasicos: 'Querés ir a un clásico posta, no a un estreno con cara de algoritmo.',
 	modernas: 'Preferís una peli de este siglo para acá.',
 	recientes: 'Querés algo bien nuevo, más cerca del catálogo fresco.',
 };
@@ -187,7 +187,7 @@ export const POSTOMETRO_PRESETS: PostometroPreset[] = [
 	{
 		id: 'quemado',
 		label: 'Vengo quemado',
-		description: 'Poca paciencia y ganas de algo que entre solo.',
+		description: 'Poca paciencia y ganas de algo que entre de una.',
 		answers: {
 			mood: 'risas',
 			time: 'flash',
@@ -200,7 +200,7 @@ export const POSTOMETRO_PRESETS: PostometroPreset[] = [
 	{
 		id: 'cita',
 		label: 'Plan cita',
-		description: 'Algo que tenga química y deje tema de charla.',
+		description: 'Algo con química y tema de charla después.',
 		answers: {
 			mood: 'corazon',
 			time: 'normal',
@@ -297,23 +297,23 @@ const verdictBaseScore: Record<MovieVerdict, number> = {
 };
 
 const moodPrimaryReasons: Record<PostometroMoodId, string> = {
-	risas: 'Tiene pulso para levantar la noche sin hacerse la importante.',
+	risas: 'Tiene pulso para levantarte la noche sin sobreactuarla.',
 	tension: 'Va bien si hoy querés una peli con nervio y presión.',
-	pochoclo: 'Entrega espectáculo, ritmo y cero culpa.',
+	pochoclo: 'Entrega show, ritmo y un plan sin vueltas.',
 	corazon: 'Tiene humanidad y deja algo cálido más allá del género.',
 	cabeza: 'No termina cuando aparecen los créditos: deja ideas dando vueltas.',
-	sustos: 'Sirve si querés sustos, clima o mal viaje.',
+	sustos: 'Sirve si querés sustos, clima o un mal viaje lindo.',
 };
 
 const companyReasons: Record<PostometroCompanyId, string> = {
 	solo: 'Para verla solo funciona porque se banca bien su propio clima.',
-	pareja: 'En pareja tiene más chances de rendir porque da charla o química.',
-	amigos: 'Con amigos debería entrar bien porque tiene energía compartible.',
+	pareja: 'En pareja suele rendir porque deja charla o química.',
+	amigos: 'Con amigos entra bien porque tiene energía para compartir.',
 	familia: 'No es una bomba de incomodidad: para familia va bastante segura.',
 };
 
 const intensityReasons: Record<PostometroIntensityId, string> = {
-	liviana: 'No se pone densa al pedo y entra bastante fácil.',
+	liviana: 'No se pone pesada porque sí y entra bastante fácil.',
 	equilibrada: 'Tiene sustancia, pero no exige fumársela con manual.',
 	intensa: 'Aprieta bastante y no juega a media máquina.',
 	densa: 'Tiene más capas y pide un poco más de cabeza, justo lo que buscaste.',
@@ -877,9 +877,9 @@ function scoreMovie(entry: PostometroCatalogEntry, answers: PostometroAnswers): 
 
 function getMatchLabel(score: number): string {
 	if (score >= 165) return 'Ideal para hoy';
-	if (score >= 145) return 'Muy buena chance';
-	if (score >= 120) return 'Te puede rendir mucho';
-	return 'Plan B bastante digno';
+	if (score >= 145) return 'Muy buena para esta noche';
+	if (score >= 120) return 'Puede rendir fuerte';
+	return 'Plan B noble';
 }
 
 function getTimeReason(runtimeLabel: string, answers: PostometroAnswers): string | null {
@@ -923,7 +923,7 @@ function buildReasons(entry: PostometroCatalogEntry, answers: PostometroAnswers)
 	}
 
 	if (answers.platform !== 'cualquiera') {
-		reasons.push(`Encima ya está en ${entry.platformLabel}, así que no tenés que salir a cazarla.`);
+		reasons.push(`Encima ya está en ${entry.platformLabel}, así que no tenés que salir a buscarla por todos lados.`);
 	}
 
 	reasons.push(`Dentro de Cine Posta queda marcada como ${entry.verdictLabel.toLowerCase()}.`);
@@ -974,8 +974,8 @@ export function resolvePostometroPlatformLabel(
 
 export function buildPostometroDiagnosis(answers: PostometroAnswers): string {
 	const moodPart = {
-		risas: 'te haga reír',
-		tension: 'te tenga agarrado del cuello',
+		risas: 'te haga reír de verdad',
+		tension: 'te tenga agarrado desde temprano',
 		pochoclo: 'te entretenga con oficio y ritmo',
 		corazon: 'te deje algo cálido',
 		cabeza: 'te deje pensando un rato',
@@ -983,7 +983,7 @@ export function buildPostometroDiagnosis(answers: PostometroAnswers): string {
 	}[answers.mood];
 
 	const intensityPart = {
-		liviana: 'sin ponerse intensa al pedo',
+		liviana: 'sin ponerse pesada porque sí',
 		equilibrada: 'con peso justo',
 		intensa: 'apretando fuerte',
 		densa: 'con bastante más profundidad',
@@ -992,14 +992,14 @@ export function buildPostometroDiagnosis(answers: PostometroAnswers): string {
 	const companyPart = {
 		solo: 'para verla solo',
 		pareja: 'para compartir en pareja',
-		amigos: 'para aguantar bien una juntada',
+		amigos: 'para bancarse bien una juntada',
 		familia: 'que no incomode a media casa',
 	}[answers.company];
 
 	const timePart = {
 		flash: 'y que no se vaya de mambo con la duración',
 		normal: 'sin irse demasiado larga',
-		larga: 'y no te molesta bancarte metraje',
+		larga: 'y no te jode bancarte metraje',
 		'sin-reloj': 'y hoy la duración te da igual',
 	}[answers.time];
 
@@ -1164,11 +1164,11 @@ export function getPostometroResultSet(
 				answers.platform === 'cualquiera'
 					? 'No hay una opción realmente redonda para ese combo'
 					: `No hay una opción para "${moodLabel}" ahora mismo ${platformContext}`,
-			subheadline: 'Mejor decirlo antes que chamuyarte una película que no corresponde.',
+			subheadline: 'Mejor decirlo ahora que venderte una peli que no corresponde.',
 			note:
 				answers.platform === 'cualquiera'
 					? 'Probá aflojar un filtro o cambiar el mood para abrir opciones reales.'
-					: `Probá otra plataforma o cambiá el mood. Hoy ${platformNoteContext} no da para vender humo.`,
+					: `Probá otra plataforma o cambiá el mood. Hoy ${platformNoteContext} no da para inventar.`,
 			results: [],
 		};
 	}
@@ -1195,9 +1195,9 @@ export function getPostometroResultSet(
 	return {
 		mode: 'strict',
 		diagnosis: buildPostometroDiagnosis(answers),
-		headline: 'La mejor chance para esta noche',
+		headline: 'La mejor ficha para esta noche',
 		subheadline: 'La elección sale de tu combo de hoy y del catálogo editorial del sitio.',
-		note: 'Qué vemos hoy sale del catálogo editorial de Cine Posta.',
+		note: 'Qué vemos hoy sale del catálogo curado de Cine Posta.',
 		results,
 	};
 }

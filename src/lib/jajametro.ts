@@ -100,8 +100,8 @@ export function getJajametroScore(movie: Movie): number | undefined {
 }
 
 export function getJajametroLabel(score: number): string {
-	if (score >= 85) return 'Risa asegurada';
-	if (score >= 70) return 'Muy buena chance de carcajada';
-	if (score >= 50) return 'Saca sonrisas';
-	return 'Humor con cuenta gotas';
+	if (score >= 85) return 'Te reís en serio';
+	if (score >= 70) return 'Tiene buena chance de carcajada';
+	if (score >= 50) return 'Te saca un par de risas';
+	return 'Humor medido';
 }

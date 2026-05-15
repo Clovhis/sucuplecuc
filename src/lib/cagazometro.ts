@@ -95,8 +95,8 @@ export function getCagazometroScore(movie: Movie): number | undefined {
 }
 
 export function getCagazometroLabel(score: number): string {
-	if (score >= 85) return 'Miedo fuerte';
-	if (score >= 70) return 'Sustos asegurados';
-	if (score >= 50) return 'Tensión respetable';
-	return 'Miedo tranqui';
+	if (score >= 85) return 'Te puede dejar duro';
+	if (score >= 70) return 'Mete sustos en serio';
+	if (score >= 50) return 'Mantiene el cagazo';
+	return 'Asusta lo justo';
 }

@@ -126,10 +126,10 @@ const awardCategories = groupedAwards.flatMap((group) =>
 		year: win.year,
 	})),
 );
-const relatedIntro = `Si ${movie.title} te gustó, seguí con alguna de estas.`;
+const relatedIntro = `Si ${movie.title} te gustó, seguí por acá.`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
 const personProfileReturnPath = encodeURIComponent(Astro.url.pathname);
-const reviewPurposeNote = 'Reseña breve y directa para ayudarte a decidir si verla o pasar de largo.';
+const reviewPurposeNote = 'Reseña corta y al hueso para decidir si verla o dejarla pasar.';
 const editorialUpdatedLabel = movie.releaseDate
 	? new Intl.DateTimeFormat('es-AR', {
 			day: 'numeric',
@@ -189,7 +189,7 @@ function getAudienceRatingLabel(audienceRating: string): string {
 		.toUpperCase();
 
 	if (!normalized) {
-		return 'Clasificación no disponible';
+		return 'Clasificación no cargada';
 	}
 
 	if (normalized === 'ATP') {
@@ -398,7 +398,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					{editorialUpdatedLabel && (
 						<>
 							<span aria-hidden="true">·</span>
-							<time datetime={movie.releaseDate}>Fecha de estreno: {editorialUpdatedLabel}</time>
+							<time datetime={movie.releaseDate}>Estreno: {editorialUpdatedLabel}</time>
 						</>
 					)}
 				</div>
@@ -423,13 +423,12 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								</div>
 							</a>
 						) : (
-							<p class="message-box">Trailer no disponible.</p>
+							<p class="message-box">Todavía no tenemos trailer cargado.</p>
 						)}
 						{
 							lagrimometroScore !== undefined && (
 								<section id="lagrimometro" class="movie-detail__lagrimometro-card" aria-label="Lagrimómetro">
 									<div class="movie-detail__lagrimometro-head">
-										<p class="movie-detail__lagrimometro-kicker">Alerta pañuelos</p>
 										<p class="movie-detail__lagrimometro-title">Lagrimómetro</p>
 									</div>
 									<Lagrimometro score={lagrimometroScore} />
@@ -440,7 +439,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							jajametroScore !== undefined && (
 								<section id="jajametro" class="movie-detail__jajametro-card" aria-label="Jajámetro">
 									<div class="movie-detail__jajametro-head">
-										<p class="movie-detail__jajametro-kicker">Alerta risas</p>
 										<p class="movie-detail__jajametro-title">Jajámetro</p>
 									</div>
 									<Jajametro score={jajametroScore} />
@@ -451,7 +449,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							cagazometroScore !== undefined && (
 								<section id="cagazometro" class="movie-detail__cagazometro-card" aria-label="Cagazómetro">
 									<div class="movie-detail__cagazometro-head">
-										<p class="movie-detail__cagazometro-kicker">Alerta sustos</p>
 										<p class="movie-detail__cagazometro-title">Cagazómetro</p>
 									</div>
 									<Cagazometro score={cagazometroScore} />
@@ -461,7 +458,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						{
 							movie.synopsis && (
 								<section class="movie-detail__synopsis-card" aria-label="De qué se trata">
-									<p class="movie-detail__synopsis-kicker">De qué se trata</p>
+									<p class="movie-detail__synopsis-kicker">De qué va</p>
 									<p class="movie-detail__synopsis">{movie.synopsis}</p>
 								</section>
 							)
@@ -469,7 +466,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						{
 							movie.review && (
 								<section class="movie-detail__review-card" aria-label="Reseña honesta">
-									<p class="movie-detail__review-kicker">Reseña honesta</p>
+									<p class="movie-detail__review-kicker">La posta</p>
 									<p class="movie-detail__review">{movie.review}</p>
 								</section>
 							)
@@ -542,7 +539,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																{
 																	person.profilePath && (
 																		<p class="movie-detail__person-badge-row">
-																			<span class="movie-detail__person-flag">Bio disponible</span>
+																			<span class="movie-detail__person-flag">Tiene ficha</span>
 																		</p>
 																	)
 																}
@@ -567,7 +564,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																	) : person.deathDate || person.deathYear ? (
 																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
 																	) : (
-																		<span>Fecha de nacimiento no disponible</span>
+																		<span>Nacimiento no cargado</span>
 																	)}
 																</p>
 																<p class="movie-detail__person-origin">
@@ -628,7 +625,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																{
 																	person.profilePath && (
 																		<p class="movie-detail__person-badge-row">
-																			<span class="movie-detail__person-flag">Bio disponible</span>
+																			<span class="movie-detail__person-flag">Tiene ficha</span>
 																		</p>
 																	)
 																}
@@ -667,7 +664,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																	) : person.deathDate || person.deathYear ? (
 																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
 																	) : (
-																		<span>Fecha de nacimiento no disponible</span>
+																		<span>Nacimiento no cargado</span>
 																	)}
 																</p>
 																<p class="movie-detail__person-origin">
@@ -801,10 +798,10 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
 						<div class="movie-detail__ten-second-head">
 							<p class="movie-detail__ten-second-kicker">La Posta en 10 segundos</p>
-							<a href={METHODOLOGY_PATH}>Cómo leemos las pelis</a>
+							<a href={METHODOLOGY_PATH}>Cómo evaluamos las pelis</a>
 						</div>
 						<p class="movie-detail__ten-second-intro">
-							Cinco señales rápidas para saber qué tipo de peli es, cuánto pide y con qué clima pega.
+							Cinco señales rápidas para ubicarte: qué onda la peli, cuánto pide y con qué ánimo entra mejor.
 						</p>
 						<h2 id={`ten-second-${movie.slug}`} class="u-visually-hidden">La Posta en 10 segundos de {movie.title}</h2>
 						<dl class="movie-detail__ten-second-list">

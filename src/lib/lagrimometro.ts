@@ -100,8 +100,8 @@ export function getLagrimometroScore(movie: Movie): number | undefined {
 }
 
 export function getLagrimometroLabel(score: number): string {
-	if (score >= 85) return 'Pañuelos obligatorios';
-	if (score >= 70) return 'Alta chance de nudo en la garganta';
-	if (score >= 50) return 'Puede pegar de costado';
-	return 'Lágrima discreta';
+	if (score >= 85) return 'Llevá pañuelos';
+	if (score >= 70) return 'Se te puede hacer un nudo';
+	if (score >= 50) return 'Te puede pegar';
+	return 'Asoma lagrimita';
 }

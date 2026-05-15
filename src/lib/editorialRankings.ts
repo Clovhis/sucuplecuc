@@ -61,8 +61,8 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 	const rankings: EditorialRanking[] = [
 		{
 			id: 'accion-pochoclera',
-			title: 'Acción pochoclera para apagar la cabeza',
-			description: 'Tiros, persecuciones, golpes y plan de sillón sin pedir permiso.',
+			title: 'Acción pochoclera para desenchufar',
+			description: 'Tiros, persecuciones, golpes y plan de sillón sin ponerse profunda.',
 			movies: pickMovies(
 				movies,
 				(movie) => hasAnySignal(movie, ['acción', 'action', 'aventura', 'superhéroes', 'superheroes', 'thriller']),
@@ -71,8 +71,8 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 		},
 		{
 			id: 'terror-que-garpa',
-			title: 'Terror que no es una poronga',
-			description: 'Sustos, clima o tensión que por lo menos tienen una idea atrás.',
+			title: 'Terror que no da vergüenza ajena',
+			description: 'Sustos, clima o tensión con algo más que ruido atrás.',
 			movies: pickMovies(
 				movies,
 				(movie) => hasAnySignal(movie, ['terror', 'horror', 'thriller']),
@@ -81,8 +81,8 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 		},
 		{
 			id: 'pareja-sin-dormirse',
-			title: 'Películas para ver en pareja sin dormirse',
-			description: 'Planes con charla después, sin convertir la noche en trámite.',
+			title: 'Películas para ver en pareja sin plancharse',
+			description: 'Planes con charla después, sin convertir la noche en un trámite.',
 			movies: pickMovies(
 				movies,
 				(movie) => hasAnySignal(movie, ['romance', 'comedia', 'drama']),
@@ -91,7 +91,7 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 		},
 		{
 			id: 'cine-argentino-garpa',
-			title: 'Cine argentino que sí garpa',
+			title: 'Cine argentino que vale la pena',
 			description: 'Historias de acá que sostienen personalidad, oficio o una mirada propia.',
 			movies: pickMovies(
 				movies,

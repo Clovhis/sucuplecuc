@@ -23,7 +23,7 @@ const upcomingReleases = getUpcomingMovieReleases(new Date(), 3);
 const editorialRankings = getEditorialRankings(movies);
 const movieCountLabel = new Intl.NumberFormat('es-AR').format(movies.length);
 const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.length);
-const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y honestas de películas';
+const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
 const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`;
@@ -45,7 +45,7 @@ function formatUpcomingReleaseDate(value: string) {
 
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<header class="site-header container">
-		<h1 class="u-visually-hidden">{SITE_NAME}: reseñas súper cortas y honestas de películas</h1>
+		<h1 class="u-visually-hidden">{SITE_NAME}: reseñas súper cortas y sin chamuyo de películas</h1>
 		{
 			movies.length > 0 && (
 				<section
@@ -77,7 +77,7 @@ function formatUpcomingReleaseDate(value: string) {
 								id="movie-search-input"
 								class="movie-search__input"
 								type="search"
-								placeholder="Título, actor, año, plataforma o rating..."
+								placeholder="Título, actor, director, año, plataforma o veredicto..."
 								autocomplete="off"
 								data-movie-search-input
 							/>
@@ -137,7 +137,7 @@ function formatUpcomingReleaseDate(value: string) {
 								alt=""
 								aria-hidden="true"
 							/>
-							Apoyá el sitio
+							Bancá el sitio
 						</a>
 						<a class="site-header__contact" href={`${ABOUT_PATH}#contacto-y-prensa`}>
 							Prensa / Contacto
@@ -175,9 +175,9 @@ function formatUpcomingReleaseDate(value: string) {
 											<section class="home-people-showcase" aria-label="Qué es Cine Posta">
 												<div class="home-people-showcase__header">
 													<div class="home-people-showcase__heading">
-														<p class="home-people-showcase__eyebrow">Perfiles con bio</p>
+														<p class="home-people-showcase__eyebrow">Fichas con bio</p>
 														<p class="home-people-showcase__intro-copy">
-															Actores, actrices y directores con recorrido, películas relacionadas y contexto útil.
+															Actores, actrices y directores con recorrido, pelis relacionadas y data útil para ubicarte rápido.
 														</p>
 													</div>
 													<div class="home-people-showcase__intro" aria-label="Cobertura actual del sitio">
@@ -192,7 +192,7 @@ function formatUpcomingReleaseDate(value: string) {
 															</li>
 														</ul>
 														<a class="home-people-showcase__link" href="/sobre-cine-posta">
-															Ver más
+															Chusmear
 														</a>
 													</div>
 												</div>
@@ -247,7 +247,7 @@ function formatUpcomingReleaseDate(value: string) {
 												}
 											</ol>
 										) : (
-											<p class="catalog-shell__upcoming-empty">Agenda en actualización.</p>
+											<p class="catalog-shell__upcoming-empty">Estamos acomodando la agenda.</p>
 										)
 									}
 								</aside>
@@ -268,7 +268,7 @@ function formatUpcomingReleaseDate(value: string) {
 						editorialRankings.length > 0 && (
 							<section class="editorial-rankings fade-up" style="--item-delay: 120ms;" aria-labelledby="editorial-rankings-title">
 								<div class="editorial-rankings__header">
-									<h2 id="editorial-rankings-title">Rankings editoriales para entrar sin vueltas</h2>
+									<h2 id="editorial-rankings-title">Rankings para caer bien parado</h2>
 								</div>
 								<div class="editorial-rankings__grid">
 									{editorialRankings.map((ranking) => (
@@ -309,7 +309,7 @@ function formatUpcomingReleaseDate(value: string) {
 							{
 								platformOptions.length > 0 && (
 									<section class="home-platform-filter" data-home-platform-filter>
-										<p class="home-genre-filter__label">Elegí plataforma</p>
+										<p class="home-genre-filter__label">Dónde la querés ver</p>
 										<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
 											{
 												platformOptions.map((platform) => (
@@ -335,7 +335,7 @@ function formatUpcomingReleaseDate(value: string) {
 								)
 							}
 							<section class="home-genre-filter" data-home-genre-filter>
-								<p class="home-genre-filter__label">Elegí género</p>
+								<p class="home-genre-filter__label">Qué género pinta</p>
 								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
 									{
 										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
@@ -379,11 +379,11 @@ function formatUpcomingReleaseDate(value: string) {
 							>
 								<span class="movie-search__status-spinner" aria-hidden="true"></span>
 								<p class="movie-search__status-copy" data-movie-search-status-copy>
-									Bancá que carga el videoclub...
+									Bancá, que estoy acomodando el videoclub...
 								</p>
 							</div>
 							<p class="message-box movie-search__empty" data-movie-search-empty hidden>
-								No encontramos películas con ese criterio. Probá sacar un filtro.
+								No apareció nada con ese combo. Probá aflojar algún filtro.
 							</p>
 						</div>
 					</section>
@@ -393,7 +393,7 @@ function formatUpcomingReleaseDate(value: string) {
 					</section>
 				</>
 			) : (
-				<p class="message-box">Todavía no hay películas cargadas. Agregá la primera entrada manual.</p>
+				<p class="message-box">Todavía no cargamos ninguna peli. Meté la primera ficha manual.</p>
 			)
 		}
 	</main>

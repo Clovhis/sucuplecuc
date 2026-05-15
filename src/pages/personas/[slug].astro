@@ -24,7 +24,7 @@ const knownForEntries = profile.knownFor
 	.filter((entry): entry is (typeof filmography)[number] => Boolean(entry));
 const showcaseEntries = (knownForEntries.length > 0 ? knownForEntries : filmography).slice(0, 4);
 const pageTitle = `Biografía de ${profile.name}: películas y premios | Cine Posta`;
-const pageDescription = `${profile.name}: biografía, edad, premios y películas relacionadas dentro de Cine Posta.`;
+const pageDescription = `${profile.name}: bio, edad, premios y películas relacionadas dentro de Cine Posta.`;
 const profileImage =
 	profile.profileImage ?? profile.image ?? profile.remoteImageUrl ?? '/posters/poster-no-disponible.svg';
 const structuredData = createPersonStructuredData(profile, filmography, pageTitle, pageDescription);
@@ -36,12 +36,12 @@ const lifeFactValue = deathDateLabel
 	: age
 		? `${age} años`
 		: 'No confirmada';
-const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} en Cine Posta`;
+const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} fichada${filmography.length === 1 ? '' : 's'} en Cine Posta`;
 const biographyParagraphs =
 	profile.biography.length > 0
 		? profile.biography
 		: [
-				`Todavía estamos armando la bio editorial de ${profile.name}. Mientras tanto, podés recorrer sus películas conectadas, premios y títulos asociados dentro del catálogo.`,
+				`Todavía estamos armando la bio editorial de ${profile.name}. Mientras tanto, podés chusmear sus películas conectadas, premios y títulos asociados dentro del catálogo.`,
 			];
 
 function getAge(birthDate?: string, birthYear?: number, deathDate?: string, deathYear?: number): number | undefined {
@@ -118,21 +118,21 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 					<img src={profileImage} alt={`Retrato de ${profile.name}`} loading="eager" referrerpolicy="no-referrer" />
 				</div>
 				<div class="person-page__portrait-copy">
-					<p class="person-page__eyebrow">Ficha exclusiva</p>
+					<p class="person-page__eyebrow">Ficha posta</p>
 					<h1 class="person-page__title">{profile.name}</h1>
 					<p class="person-page__roles">{profile.roles.join(' · ')}</p>
 				</div>
 			</aside>
 
 			<div class="person-page__hero-main">
-				<p class="person-page__eyebrow">Perfil destacado</p>
+				<p class="person-page__eyebrow">Para ubicarlo rápido</p>
 				<p class="person-page__headline">{profile.headline}</p>
 				<p class="person-page__spotlight">{profile.spotlight}</p>
 
 				<div class="person-page__facts" aria-label="Datos principales">
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">Nacimiento</span>
-						<strong>{formatPersonDate(profile.birthDate) ?? profile.birthYear ?? 'No disponible'}</strong>
+						<strong>{formatPersonDate(profile.birthDate) ?? profile.birthYear ?? 'No cargado'}</strong>
 					</div>
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">{lifeFactLabel}</span>
@@ -140,7 +140,7 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 					</div>
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">Origen</span>
-						<strong>{profile.birthPlace ?? profile.nationalityPrimary ?? 'No disponible'}</strong>
+						<strong>{profile.birthPlace ?? profile.nationalityPrimary ?? 'No cargado'}</strong>
 					</div>
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">Catálogo</span>
@@ -150,7 +150,7 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 			</div>
 
 			<aside class="person-page__showcase" aria-label="Títulos destacados">
-				<p class="person-page__showcase-title">Más asociado con</p>
+				<p class="person-page__showcase-title">Lo tenés de</p>
 				<div class="person-page__showcase-grid">
 					{showcaseEntries.map((entry) => (
 						<a class="person-page__showcase-card" href={entry.url}>
@@ -177,7 +177,7 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 			<aside class="person-page__panel person-page__panel--awards fade-up" style="--item-delay: 120ms;">
 				<div class="person-page__section-head">
 					<p class="person-page__eyebrow">Galardones</p>
-					<h2>Premios destacados</h2>
+					<h2>Premios que más pesan</h2>
 				</div>
 				<ul class="person-page__award-list">
 					{profile.awards.map((award) => (
@@ -201,7 +201,7 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 			<section class="person-page__panel person-page__panel--filmography fade-up" style="--item-delay: 160ms;">
 				<div class="person-page__section-head">
 					<p class="person-page__eyebrow">Filmografía</p>
-					<h2>Películas conectadas en Cine Posta</h2>
+					<h2>Películas donde aparece en Cine Posta</h2>
 				</div>
 				<div class="person-page__filmography-grid">
 					{filmography.map((entry) => (

@@ -65,7 +65,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	if (!isSupabaseConfigured || !client) {
 		averageEl.textContent = 'Rating no disponible';
 		countEl.textContent = 'Probá más tarde';
-		statusEl.textContent = 'La tribuna no está disponible ahora.';
+		statusEl.textContent = 'La sección de votos no está disponible ahora.';
 		return;
 	}
 
@@ -89,7 +89,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	}
 
 	async function loadStatsAndVote(): Promise<void> {
-		statusEl.textContent = 'Preparando la tribuna...';
+		statusEl.textContent = 'Cargando votos...';
 
 		const [statsResponse, voteResponse] = await Promise.all([
 			ratingClient
@@ -123,7 +123,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 			currentVote > 0
 				? `Tu voto: ${currentVote}/5`
 				: voteCount === 0
-					? 'Todavía sin votos. Sé el primero en puntuarla.'
+					? 'Todavía nadie la puntuó. Meté el primer voto.'
 					: 'Todavía no votaste esta peli.';
 	}
 
@@ -132,7 +132,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 
 		isSubmitting = true;
 		setDisabled(true);
-		statusEl.textContent = 'Guardando voto...';
+		statusEl.textContent = 'Guardando tu voto...';
 
 		const { error } = await ratingClient.rpc('submit_movie_rating', {
 			p_movie_slug: movieSlug,
@@ -150,7 +150,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 
 		currentVote = nextVote;
 		paintStars(currentVote);
-		statusEl.textContent = `Gracias por votar. Tu voto: ${currentVote}/5`;
+		statusEl.textContent = `Listo. Tu voto: ${currentVote}/5`;
 		await loadStatsAndVote();
 		setDisabled(false);
 		isSubmitting = false;

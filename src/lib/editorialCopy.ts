@@ -56,7 +56,7 @@ function getIntensityLabel(movie: Movie): string {
 	}
 
 	if (/\bdrama\b|\bpolitic\b|\bjudicial\b|\bbiopic\b|\bdocumental\b/.test(haystack)) {
-		return 'Pesadita';
+		return 'Tiene peso';
 	}
 
 	if (/\bcomedia\b|\banimacion\b|\banime\b|\baventura\b|\bfamiliar\b|\bmusical\b/.test(haystack)) {
@@ -126,15 +126,15 @@ function getVerdictDetail(movie: Movie): string {
 
 	switch (movie.verdict) {
 		case 'recomendada':
-			return 'Está buena de verdad: si te llama aunque sea un poco, hay buenas chances de que te garpe.';
+			return 'Está buena de verdad: si ya te llama un poco, es muy probable que te guste.';
 		case 'zafa':
-			return 'Tiene con qué defenderse, pero depende bastante de tu onda y de lo que tengas ganas de ver hoy.';
+			return 'Tiene con qué defenderse, pero depende bastante de tu ánimo y de lo que tengas ganas de ver hoy.';
 		case 'no_recomendada':
-			return 'Tiene más problemas que aciertos. Salvo que vengas muy comprado con el tema, hay mejores opciones.';
+			return 'Tiene más problemas que aciertos. Salvo que vengas muy cebado con el tema, hay opciones mejores.';
 		case 'basura_atomica':
 			return 'Solo entra si vas por morbo, completismo o curiosidad extrema. Para casi cualquiera, mejor otra cosa.';
 		default:
-			return 'Resumen rápido para decidir sin comerte una reseña eterna.';
+			return 'Resumen rápido para decidir sin clavarte una reseña eterna.';
 	}
 }
 
@@ -175,7 +175,7 @@ function getPaceSummary(movie: Movie): MovieTenSecondTakeFact {
 		if (runtimeMinutes <= 120) {
 			return {
 				value: 'Ritmo bastante directo',
-				detail: `${runtimeMinutes} min sin pedir una tarde entera.`,
+				detail: `${runtimeMinutes} min sin pedirte media vida.`,
 			};
 		}
 
@@ -188,7 +188,7 @@ function getPaceSummary(movie: Movie): MovieTenSecondTakeFact {
 
 		return {
 			value: 'Larga y de inmersión',
-			detail: `${runtimeMinutes} min: mejor verla con tiempo de sobra.`,
+			detail: `${runtimeMinutes} min: mejor agarrarla con tiempo de sobra.`,
 		};
 	}
 
@@ -196,14 +196,14 @@ function getPaceSummary(movie: Movie): MovieTenSecondTakeFact {
 	if (/\bcomedia\b|\baventura\b|\banimacion\b|\banime\b/.test(haystack)) {
 		return {
 			value: 'Entra rápido',
-			detail: 'La propuesta es bastante directa desde el arranque.',
+			detail: 'La propuesta entra bastante derecho desde el arranque.',
 		};
 	}
 
 	if (/\bdrama\b|\bdocumental\b|\bbiopic\b/.test(haystack)) {
 		return {
 			value: 'Más de clima que de apuro',
-			detail: 'Le importa más desarrollar personajes e ideas que correr.',
+			detail: 'Le importa más armar personajes e ideas que salir corriendo.',
 		};
 	}
 
@@ -217,22 +217,22 @@ function getIntensityDetail(movie: Movie): string {
 	const haystack = normalizeText([movie.category, ...(movie.genres ?? []), movie.review, movie.synopsis].join(' '));
 
 	if (/\bterror\b|\bhorror\b|\bslasher\b|\bzombi\b|\bzombie\b|\bgore\b/.test(haystack)) {
-		return 'Hay sustos, violencia o imágenes jodidas: no es para poner de fondo mientras mirás el celu.';
+		return 'Hay sustos, violencia o imágenes jodidas: no es para dejarla de fondo mientras scrolleás.';
 	}
 
 	if (/\bthriller\b|\bcrimen\b|\bguerra\b|\bbelic\b|\bsuspenso\b/.test(haystack)) {
-		return 'Te tiene agarrado por el suspenso, el peligro o la violencia, aunque no se vaya siempre al mango.';
+		return 'Te agarra por el suspenso, el peligro o la violencia, aunque no viva siempre al palo.';
 	}
 
 	if (/\bdrama\b|\bpolitic\b|\bjudicial\b|\bbiopic\b|\bdocumental\b/.test(haystack)) {
-		return 'Carga bastante en lo emocional o en las ideas. Capaz no grita, pero pesa.';
+		return 'Es una peli más cargada, de las que te dejan algo dando vueltas.';
 	}
 
 	if (/\bcomedia\b|\banimacion\b|\banime\b|\baventura\b|\bfamiliar\b|\bmusical\b/.test(haystack)) {
-		return 'Se ve liviana: no busca dejarte tenso ni demolerte la cabeza.';
+		return 'Se deja ver liviana: no busca dejarte tenso ni partirte la cabeza.';
 	}
 
-	return 'Tiene momentos que pegan, pero en general se deja llevar bien.';
+	return 'Tiene momentos que pegan, pero en general entra bastante bien.';
 }
 
 export function getMovieTenSecondTake(movie: Movie): MovieTenSecondTake {
