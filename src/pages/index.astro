@@ -21,6 +21,10 @@ const platformOptions = getPlatformFilterOptions(movies);
 const absoluteCinemaCount = movies.filter(isAbsoluteCinemaMovie).length;
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 3);
 const editorialRankings = getEditorialRankings(movies);
+const editorialRankingPools = editorialRankings.map((ranking) => ({
+	id: ranking.id,
+	movies: ranking.candidateMovies,
+}));
 const movieCountLabel = new Intl.NumberFormat('es-AR').format(movies.length);
 const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.length);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de películas';
@@ -268,22 +272,25 @@ function formatUpcomingReleaseDate(value: string) {
 						editorialRankings.length > 0 && (
 							<section class="editorial-rankings fade-up" style="--item-delay: 120ms;" aria-labelledby="editorial-rankings-title">
 								<div class="editorial-rankings__header">
-									<p class="editorial-rankings__eyebrow">Listas salvavidas</p>
-									<h2 id="editorial-rankings-title">Rankings para caer bien parado</h2>
+									<p class="editorial-rankings__eyebrow">Rotan en cada visita</p>
+									<h2 id="editorial-rankings-title">Sugerencias rápidas</h2>
 								</div>
 								<div class="editorial-rankings__grid">
 									{editorialRankings.map((ranking, rankingIndex) => (
 										<article
 											class={`editorial-rankings__card editorial-rankings__card--${ranking.id}`}
 											style={`--ranking-order: ${rankingIndex};`}
+											data-editorial-ranking-card={ranking.id}
 										>
 											<div class="editorial-rankings__card-title">
 												<span class={`editorial-rankings__icon editorial-rankings__icon--${ranking.id}`} aria-hidden="true"></span>
 												<h3>{ranking.title}</h3>
-												<span class="editorial-rankings__badge">{ranking.movies.length} picks</span>
+												<span class="editorial-rankings__badge" data-editorial-ranking-count>
+													{ranking.movies.length} opciones
+												</span>
 											</div>
 											<p>{ranking.description}</p>
-											<ol>
+											<ol data-editorial-ranking-list={ranking.id}>
 												{ranking.movies.map((entry, entryIndex) => (
 													<li>
 														<a href={entry.url}>
@@ -301,6 +308,12 @@ function formatUpcomingReleaseDate(value: string) {
 										</article>
 									))}
 								</div>
+								<script
+									id="editorial-ranking-data"
+									type="application/json"
+									is:inline
+									set:html={JSON.stringify(editorialRankingPools)}
+								></script>
 							</section>
 						)
 					}
@@ -410,5 +423,6 @@ function formatUpcomingReleaseDate(value: string) {
 </BaseLayout>
 
 <!-- Astro 6: page interactivity lives in a typed local module instead of an inline exception block. -->
+<script src="../scripts/editorial-rankings.ts"></script>
 <script src="../scripts/home-catalog.ts"></script>
 

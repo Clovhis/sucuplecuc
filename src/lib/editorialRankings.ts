@@ -13,6 +13,7 @@ export interface EditorialRanking {
 	title: string;
 	description: string;
 	movies: EditorialRankingMovie[];
+	candidateMovies: EditorialRankingMovie[];
 }
 
 const POSITIVE_VERDICTS = new Set<MovieVerdict>(['recomendada', 'zafa']);
@@ -43,17 +44,23 @@ function pickMovies(
 	predicate: (movie: Movie) => boolean,
 	usedMovieSlugs: Set<string>,
 	limit = 3,
-): EditorialRankingMovie[] {
+	candidateLimit = 12,
+): { movies: EditorialRankingMovie[]; candidateMovies: EditorialRankingMovie[] } {
 	const pickedMovies = movies
 		.filter((movie) => POSITIVE_VERDICTS.has(movie.verdict) && !usedMovieSlugs.has(movie.slug) && predicate(movie))
 		.sort((left, right) => right.year - left.year || left.title.localeCompare(right.title, 'es'))
-		.slice(0, limit);
+		.slice(0, candidateLimit);
 
 	for (const movie of pickedMovies) {
 		usedMovieSlugs.add(movie.slug);
 	}
 
-	return pickedMovies.map(toRankingMovie);
+	const candidateMovies = pickedMovies.map(toRankingMovie);
+
+	return {
+		movies: candidateMovies.slice(0, limit),
+		candidateMovies,
+	};
 }
 
 export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
@@ -63,7 +70,7 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 			id: 'accion-pochoclera',
 			title: 'Acción pochoclera para desenchufar',
 			description: 'Tiros, persecuciones, golpes y plan de sillón sin ponerse profunda.',
-			movies: pickMovies(
+			...pickMovies(
 				movies,
 				(movie) => hasAnySignal(movie, ['acción', 'action', 'aventura', 'superhéroes', 'superheroes', 'thriller']),
 				usedMovieSlugs,
@@ -73,7 +80,7 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 			id: 'terror-que-garpa',
 			title: 'Terror que no da vergüenza ajena',
 			description: 'Sustos, clima o tensión con algo más que ruido atrás.',
-			movies: pickMovies(
+			...pickMovies(
 				movies,
 				(movie) => hasAnySignal(movie, ['terror', 'horror', 'thriller']),
 				usedMovieSlugs,
@@ -83,7 +90,7 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 			id: 'pareja-sin-dormirse',
 			title: 'Películas para ver en pareja sin plancharse',
 			description: 'Planes con charla después, sin convertir la noche en un trámite.',
-			movies: pickMovies(
+			...pickMovies(
 				movies,
 				(movie) => hasAnySignal(movie, ['romance', 'comedia', 'drama']),
 				usedMovieSlugs,
@@ -93,7 +100,7 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 			id: 'cine-argentino-garpa',
 			title: 'Cine argentino que vale la pena',
 			description: 'Historias de acá que sostienen personalidad, oficio o una mirada propia.',
-			movies: pickMovies(
+			...pickMovies(
 				movies,
 				(movie) =>
 					movie.isArgentinian === true ||
