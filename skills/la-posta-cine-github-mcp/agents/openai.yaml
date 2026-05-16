@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine GitHub MCP"
+  short_description: "Usa GitHub MCP por defecto en este repo"
+  default_prompt: "Trabaja sobre Clovhis/sucuplecuc usando GitHub MCP como superficie primaria para PRs, issues, comentarios y pushes chicos de archivos de texto; evita web y flujos largos con gh salvo que MCP no cubra la operacion o sea inseguro usar push_files."
