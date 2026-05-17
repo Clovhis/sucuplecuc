@@ -3,6 +3,9 @@ type EditorialRankingMovie = {
 	year: number;
 	url: string;
 	verdictLabel: string;
+	meterKind: 'explosiometro' | 'cagazometro' | 'jajametro' | 'lagrimometro';
+	meterLabel: string;
+	meterScore: number;
 };
 
 type EditorialRankingPool = {
@@ -76,8 +79,15 @@ function isRankingMovie(value: unknown): value is EditorialRankingMovie {
 		typeof value.title === 'string' &&
 		typeof value.year === 'number' &&
 		typeof value.url === 'string' &&
-		typeof value.verdictLabel === 'string'
+		typeof value.verdictLabel === 'string' &&
+		isMeterKind(value.meterKind) &&
+		typeof value.meterLabel === 'string' &&
+		typeof value.meterScore === 'number'
 	);
+}
+
+function isMeterKind(value: unknown): value is EditorialRankingMovie['meterKind'] {
+	return value === 'explosiometro' || value === 'cagazometro' || value === 'jajametro' || value === 'lagrimometro';
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -155,8 +165,8 @@ function renderRankings(rankings: EditorialRankingSelection[]): void {
 
 		list.replaceChildren();
 
-		for (const [entryIndex, entry] of ranking.movies.entries()) {
-			list.append(createRankingItem(entry, entryIndex));
+		for (const entry of ranking.movies) {
+			list.append(createRankingItem(entry));
 		}
 
 		const badge = card?.querySelector<HTMLElement>('[data-editorial-ranking-count]');
@@ -167,24 +177,39 @@ function renderRankings(rankings: EditorialRankingSelection[]): void {
 	}
 }
 
-function createRankingItem(entry: EditorialRankingMovie, entryIndex: number): HTMLLIElement {
+function createRankingItem(entry: EditorialRankingMovie): HTMLLIElement {
 	const item = document.createElement('li');
 	const link = document.createElement('a');
-	const position = document.createElement('span');
 	const movie = document.createElement('span');
 	const title = document.createElement('span');
 	const meta = document.createElement('small');
+	const meter = document.createElement('span');
+	const meterCopy = document.createElement('span');
+	const meterLabel = document.createElement('span');
+	const meterScore = document.createElement('strong');
+	const meterTrack = document.createElement('span');
+	const meterFill = document.createElement('span');
 
 	link.href = entry.url;
-	position.className = 'editorial-rankings__position';
-	position.setAttribute('aria-hidden', 'true');
-	position.textContent = String(entryIndex + 1).padStart(2, '0');
 	movie.className = 'editorial-rankings__movie';
+	title.className = 'editorial-rankings__movie-title';
 	title.textContent = entry.title;
 	meta.textContent = `${entry.year} · ${entry.verdictLabel}`;
+	meter.className = `editorial-rankings__meter editorial-rankings__meter--${entry.meterKind}`;
+	meter.setAttribute('aria-label', `${entry.meterLabel}: ${entry.meterScore}%`);
+	meterCopy.className = 'editorial-rankings__meter-copy';
+	meterLabel.textContent = entry.meterLabel;
+	meterScore.textContent = `${entry.meterScore}%`;
+	meterTrack.className = 'editorial-rankings__meter-track';
+	meterTrack.setAttribute('aria-hidden', 'true');
+	meterFill.className = 'editorial-rankings__meter-fill';
+	meterFill.style.setProperty('--editorial-meter-level', `${entry.meterScore}%`);
 
-	movie.append(title, meta);
-	link.append(position, movie);
+	meterCopy.append(meterLabel, meterScore);
+	meterTrack.append(meterFill);
+	meter.append(meterCopy, meterTrack);
+	movie.append(title, meta, meter);
+	link.append(movie);
 	item.append(link);
 
 	return item;

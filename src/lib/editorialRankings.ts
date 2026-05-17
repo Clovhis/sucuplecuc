@@ -1,11 +1,20 @@
 import type { Movie, MovieVerdict } from '../types/movie';
-import { getMoviePath, getVerdictLabel, normalizeSearchText } from './movies';
+import { getCagazometroScore } from './cagazometro';
+import { getExplosiometroScore } from './explosiometro';
+import { getJajametroScore } from './jajametro';
+import { getLagrimometroScore } from './lagrimometro';
+import { getMoviePath, getVerdictLabel } from './movies';
+
+export type EditorialMeterKind = 'explosiometro' | 'cagazometro' | 'jajametro' | 'lagrimometro';
 
 export interface EditorialRankingMovie {
 	title: string;
 	year: number;
 	url: string;
 	verdictLabel: string;
+	meterKind: EditorialMeterKind;
+	meterLabel: string;
+	meterScore: number;
 }
 
 export interface EditorialRanking {
@@ -18,44 +27,52 @@ export interface EditorialRanking {
 
 const POSITIVE_VERDICTS = new Set<MovieVerdict>(['recomendada', 'zafa']);
 
-function hasAnySignal(movie: Movie, signals: string[]): boolean {
-	const haystack = normalizeSearchText([
-		movie.category,
-		...(movie.genres ?? []),
-		movie.title,
-		movie.synopsis,
-		movie.review,
-	].join(' '));
+const METER_LABELS: Record<EditorialMeterKind, string> = {
+	explosiometro: 'Explosiómetro',
+	cagazometro: 'Cagazómetro',
+	jajametro: 'Jajámetro',
+	lagrimometro: 'Lagrimómetro',
+};
 
-	return signals.some((signal) => haystack.includes(normalizeSearchText(signal)));
-}
-
-function toRankingMovie(movie: Movie): EditorialRankingMovie {
+function toRankingMovie(movie: Movie, meterKind: EditorialMeterKind, meterScore: number): EditorialRankingMovie {
 	return {
 		title: movie.title,
 		year: movie.year,
 		url: getMoviePath(movie.slug),
 		verdictLabel: getVerdictLabel(movie),
+		meterKind,
+		meterLabel: METER_LABELS[meterKind],
+		meterScore,
 	};
 }
 
 function pickMovies(
 	movies: Movie[],
-	predicate: (movie: Movie) => boolean,
+	getMeterScore: (movie: Movie) => number | undefined,
 	usedMovieSlugs: Set<string>,
+	meterKind: EditorialMeterKind,
 	limit = 3,
 	candidateLimit = 12,
 ): { movies: EditorialRankingMovie[]; candidateMovies: EditorialRankingMovie[] } {
 	const pickedMovies = movies
-		.filter((movie) => POSITIVE_VERDICTS.has(movie.verdict) && !usedMovieSlugs.has(movie.slug) && predicate(movie))
-		.sort((left, right) => right.year - left.year || left.title.localeCompare(right.title, 'es'))
+		.map((movie) => ({
+			movie,
+			meterScore: getMeterScore(movie),
+		}))
+		.filter(
+			(entry): entry is { movie: Movie; meterScore: number } =>
+				entry.meterScore !== undefined &&
+				POSITIVE_VERDICTS.has(entry.movie.verdict) &&
+				!usedMovieSlugs.has(entry.movie.slug),
+		)
+		.sort((left, right) => right.movie.year - left.movie.year || left.movie.title.localeCompare(right.movie.title, 'es'))
 		.slice(0, candidateLimit);
 
-	for (const movie of pickedMovies) {
+	for (const { movie } of pickedMovies) {
 		usedMovieSlugs.add(movie.slug);
 	}
 
-	const candidateMovies = pickedMovies.map(toRankingMovie);
+	const candidateMovies = pickedMovies.map(({ movie, meterScore }) => toRankingMovie(movie, meterKind, meterScore));
 
 	return {
 		movies: candidateMovies.slice(0, limit),
@@ -72,8 +89,9 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 			description: 'Tiros, persecuciones, golpes y plan de sillón sin ponerse profunda.',
 			...pickMovies(
 				movies,
-				(movie) => hasAnySignal(movie, ['acción', 'action', 'aventura', 'superhéroes', 'superheroes', 'thriller']),
+				getExplosiometroScore,
 				usedMovieSlugs,
+				'explosiometro',
 			),
 		},
 		{
@@ -82,30 +100,31 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 			description: 'Sustos, clima o tensión con algo más que ruido atrás.',
 			...pickMovies(
 				movies,
-				(movie) => hasAnySignal(movie, ['terror', 'horror', 'thriller']),
+				getCagazometroScore,
 				usedMovieSlugs,
+				'cagazometro',
 			),
 		},
 		{
-			id: 'pareja-sin-dormirse',
-			title: 'Películas para ver en pareja sin plancharse',
-			description: 'Planes con charla después, sin convertir la noche en un trámite.',
+			id: 'comedia-con-jajas',
+			title: 'Comedias con jajás de verdad',
+			description: 'Risas, remates y delirio con ganas de levantar el ánimo sin pedir perdón.',
 			...pickMovies(
 				movies,
-				(movie) => hasAnySignal(movie, ['romance', 'comedia', 'drama']),
+				getJajametroScore,
 				usedMovieSlugs,
+				'jajametro',
 			),
 		},
 		{
-			id: 'cine-argentino-garpa',
-			title: 'Cine argentino que vale la pena',
-			description: 'Historias de acá que sostienen personalidad, oficio o una mirada propia.',
+			id: 'lagrimon-garantizado',
+			title: 'Para activar el lagrimón',
+			description: 'Dramas y romances con chance real de dejarte buscando un pañuelo.',
 			...pickMovies(
 				movies,
-				(movie) =>
-					movie.isArgentinian === true ||
-					hasAnySignal(movie, ['argentina', 'argentino', 'buenos aires', 'rioplatense']),
+				getLagrimometroScore,
 				usedMovieSlugs,
+				'lagrimometro',
 			),
 		},
 	];

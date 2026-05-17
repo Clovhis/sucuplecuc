@@ -291,15 +291,27 @@ function formatUpcomingReleaseDate(value: string) {
 											</div>
 											<p>{ranking.description}</p>
 											<ol data-editorial-ranking-list={ranking.id}>
-												{ranking.movies.map((entry, entryIndex) => (
+												{ranking.movies.map((entry) => (
 													<li>
 														<a href={entry.url}>
-															<span class="editorial-rankings__position" aria-hidden="true">
-																{String(entryIndex + 1).padStart(2, '0')}
-															</span>
 															<span class="editorial-rankings__movie">
-																<span>{entry.title}</span>
+																<span class="editorial-rankings__movie-title">{entry.title}</span>
 																<small>{entry.year} · {entry.verdictLabel}</small>
+																<span
+																	class={`editorial-rankings__meter editorial-rankings__meter--${entry.meterKind}`}
+																	aria-label={`${entry.meterLabel}: ${entry.meterScore}%`}
+																>
+																	<span class="editorial-rankings__meter-copy">
+																		<span>{entry.meterLabel}</span>
+																		<strong>{entry.meterScore}%</strong>
+																	</span>
+																	<span class="editorial-rankings__meter-track" aria-hidden="true">
+																		<span
+																			class="editorial-rankings__meter-fill"
+																			style={`--editorial-meter-level: ${entry.meterScore}%;`}
+																		></span>
+																	</span>
+																</span>
 															</span>
 														</a>
 													</li>
