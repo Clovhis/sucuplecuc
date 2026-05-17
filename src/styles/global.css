@@ -4196,6 +4196,238 @@ img {
 	font-size: 0.94rem;
 }
 
+.movie-detail__explosiometro-card {
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	gap: 0.9rem;
+	scroll-margin-top: 1rem;
+	padding: 1rem;
+	border: 1px solid rgba(255, 164, 55, 0.5);
+	border-radius: 12px;
+	background:
+		radial-gradient(circle at 18% 0%, rgba(255, 211, 94, 0.38), transparent 34%),
+		radial-gradient(circle at 88% 18%, rgba(255, 62, 36, 0.24), transparent 28%),
+		linear-gradient(135deg, rgba(151, 49, 10, 0.62), rgba(19, 12, 10, 0.95) 58%),
+		rgba(28, 12, 7, 0.94);
+	box-shadow:
+		0 22px 48px rgba(228, 82, 18, 0.28),
+		0 0 0 1px rgba(255, 222, 156, 0.09),
+		inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.movie-detail__explosiometro-card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(120deg, transparent 0 22%, rgba(255, 255, 255, 0.16) 34%, transparent 48%),
+		radial-gradient(circle at 74% 82%, rgba(255, 209, 77, 0.2), transparent 24%),
+		linear-gradient(90deg, transparent, rgba(255, 92, 29, 0.16), transparent);
+	pointer-events: none;
+	opacity: 0.84;
+}
+
+.movie-detail__explosiometro-card::after {
+	content: '';
+	position: absolute;
+	right: -2.5rem;
+	bottom: -2.8rem;
+	width: 9rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background:
+		radial-gradient(circle, rgba(255, 245, 163, 0.46) 0 9%, rgba(255, 184, 53, 0.34) 10% 22%, rgba(255, 65, 32, 0.18) 23% 44%, transparent 45%);
+	filter: blur(0.3px);
+	pointer-events: none;
+	opacity: 0.78;
+	transform: rotate(12deg);
+}
+
+.movie-detail__explosiometro-card > * {
+	position: relative;
+	z-index: 1;
+}
+
+.movie-detail__explosiometro-head {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.movie-detail__explosiometro-kicker,
+.movie-detail__explosiometro-title {
+	margin: 0;
+}
+
+.movie-detail__explosiometro-kicker {
+	color: #ffe0a3;
+	font-family: var(--font-mono);
+	font-size: 0.76rem;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+}
+
+.movie-detail__explosiometro-title {
+	color: #ffffff;
+	font-size: clamp(1.35rem, 3vw, 1.9rem);
+	font-weight: 800;
+	line-height: 1;
+	text-shadow: 0 0 24px rgba(255, 123, 35, 0.36);
+}
+
+.explosiometro {
+	display: grid;
+	gap: 0.45rem;
+	min-width: 0;
+}
+
+.explosiometro__top {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.explosiometro__label {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+.explosiometro__score {
+	flex: 0 0 auto;
+	color: #ffd36b;
+	font-family: var(--font-mono);
+	font-size: 1.02rem;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 0 18px rgba(255, 124, 36, 0.42);
+}
+
+.explosiometro__track {
+	position: relative;
+	overflow: hidden;
+	height: 1.05rem;
+	border: 1px solid rgba(255, 194, 88, 0.38);
+	border-radius: 999px;
+	background:
+		linear-gradient(180deg, rgba(22, 13, 8, 0.88), rgba(55, 20, 10, 0.78)),
+		rgba(255, 255, 255, 0.04);
+	box-shadow:
+		inset 0 1px 3px rgba(0, 0, 0, 0.58),
+		0 8px 24px rgba(235, 89, 19, 0.16);
+}
+
+.explosiometro__track::before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	border-radius: inherit;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.26), transparent 50%);
+	pointer-events: none;
+	z-index: 2;
+}
+
+.explosiometro__fill {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: var(--explosiometro-level);
+	min-width: 1.1rem;
+	overflow: hidden;
+	border-radius: inherit;
+	background:
+		linear-gradient(90deg, #b62012, #ff6b1f 42%, #ffc947 72%, #fff2a8),
+		#ff7a22;
+	box-shadow:
+		inset 0 -8px 10px rgba(105, 15, 6, 0.32),
+		0 0 24px rgba(255, 109, 31, 0.38);
+	animation: explosiometro-fill 850ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.explosiometro__blast,
+.explosiometro__heat {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.explosiometro__blast {
+	background:
+		radial-gradient(10px 8px at 8px 52%, rgba(255, 255, 255, 0.62), transparent 62%),
+		radial-gradient(13px 9px at 30px 35%, rgba(255, 246, 143, 0.46), transparent 64%),
+		radial-gradient(9px 7px at 52px 68%, rgba(108, 22, 9, 0.28), transparent 66%);
+	background-size: 58px 100%;
+	opacity: 0.86;
+	animation: explosiometro-blast 1.05s linear infinite;
+}
+
+.explosiometro__heat {
+	background:
+		linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.48), transparent 52%);
+	background-size: 14px 100%, 100% 100%;
+	mix-blend-mode: screen;
+	opacity: 0.66;
+}
+
+.explosiometro__spark {
+	position: absolute;
+	top: 50%;
+	left: calc((var(--spark-index) + 0.48) * 9.7%);
+	color: rgba(65, 20, 0, 0.48);
+	font-family: var(--font-mono);
+	font-size: 0.56rem;
+	font-weight: 900;
+	line-height: 1;
+	text-transform: uppercase;
+	transform: translateY(-50%) rotate(-8deg);
+	opacity: 0.68;
+}
+
+.explosiometro__spark:nth-child(2n) {
+	color: rgba(255, 255, 255, 0.72);
+	font-size: 0.46rem;
+	transform: translateY(-50%) rotate(10deg);
+}
+
+.explosiometro__note {
+	margin: 0;
+	color: #f5d3ad;
+	font-size: 0.84rem;
+	line-height: 1.35;
+}
+
+.movie-detail__explosiometro-card .explosiometro {
+	gap: 0.65rem;
+}
+
+.movie-detail__explosiometro-card .explosiometro__label {
+	font-size: clamp(1.15rem, 2.7vw, 1.45rem);
+}
+
+.movie-detail__explosiometro-card .explosiometro__score {
+	color: #fff0b5;
+	font-size: clamp(1.4rem, 4vw, 2.05rem);
+}
+
+.movie-detail__explosiometro-card .explosiometro__track {
+	height: 1.45rem;
+	border-color: rgba(255, 218, 123, 0.62);
+	background:
+		linear-gradient(180deg, rgba(27, 12, 7, 0.98), rgba(62, 20, 9, 0.92)),
+		rgba(255, 255, 255, 0.06);
+	box-shadow:
+		inset 0 1px 4px rgba(0, 0, 0, 0.58),
+		0 12px 30px rgba(234, 91, 20, 0.24);
+}
+
+.movie-detail__explosiometro-card .explosiometro__note {
+	color: #ffe1b7;
+	font-size: 0.94rem;
+}
+
 .movie-detail__platform-value {
 	display: inline-flex;
 	align-items: center;
@@ -6927,6 +7159,26 @@ img {
 	}
 }
 
+@keyframes explosiometro-fill {
+	from {
+		width: 1.1rem;
+	}
+
+	to {
+		width: var(--explosiometro-level);
+	}
+}
+
+@keyframes explosiometro-blast {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 58px 0;
+	}
+}
+
 @keyframes movieSearchSpin {
 	to {
 		transform: rotate(360deg);
@@ -7015,6 +7267,17 @@ img {
 
 	.news-rail__live-dot,
 	.news-rail__track {
+		animation: none;
+	}
+
+	.lagrimometro__fill,
+	.lagrimometro__wave,
+	.jajametro__fill,
+	.jajametro__wave,
+	.cagazometro__fill,
+	.cagazometro__pulse,
+	.explosiometro__fill,
+	.explosiometro__blast {
 		animation: none;
 	}
 

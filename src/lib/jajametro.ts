@@ -1,6 +1,8 @@
 import type { Movie } from '../types/movie';
 
 const INCLUDE_CATEGORY_TOKENS = ['comedia', 'comedy'];
+const ROMANCE_CATEGORY_TOKENS = ['romance', 'romantica', 'romantic'];
+const DRAMA_CATEGORY_TOKENS = ['drama', 'dramatic', 'dramatica'];
 
 const SCORE_OVERRIDES: Record<string, number> = {
 	'scary-movie-2000': 90,
@@ -42,7 +44,9 @@ function hasAny(value: string, patterns: RegExp[]): boolean {
 
 export function shouldShowJajametro(movie: Pick<Movie, 'category'>): boolean {
 	const category = getPrimaryCategory(movie);
-	return INCLUDE_CATEGORY_TOKENS.some((token) => category.includes(token));
+	const isComedy = INCLUDE_CATEGORY_TOKENS.some((token) => category.includes(token));
+	const leansRomanceOrDrama = [...ROMANCE_CATEGORY_TOKENS, ...DRAMA_CATEGORY_TOKENS].some((token) => category.includes(token));
+	return isComedy && !leansRomanceOrDrama;
 }
 
 export function getJajametroScore(movie: Movie): number | undefined {
@@ -70,7 +74,6 @@ export function getJajametroScore(movie: Movie): number | undefined {
 	);
 
 	let score = normalizedCategory.includes('comedia') ? 52 : 44;
-	if (normalizedCategory.includes('comedia romantica')) score -= 4;
 	if (context.includes('parodia')) score += 10;
 	if (context.includes('satira')) score += 8;
 	if (context.includes('terror') || context.includes('horror')) score += 3;

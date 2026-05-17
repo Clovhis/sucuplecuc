@@ -95,7 +95,7 @@ The bundled script checks:
 - traceable profile presence for every credited director/main cast member (`IMDb`, `Wikidata`, `TMDb`, `Plex`, `Anime-Planet`, etc.)
 - editorial recommendation completeness for `becauseYouLiked` and `related`
 - editorial recommendation slugs that resolve to real movie entries
-- automatic meter eligibility: primary `Comedia*` shows Jajámetro, primary `Drama`/`Romance` shows Lagrimómetro, primary `Terror` shows Cagazómetro, secondary genres alone do not trigger any meter, and movie JSON must not include manual meter fields
+- automatic meter eligibility, matching the movie detail page priority: primary `Drama`/`Romance`/`Romántica` shows Lagrimómetro; if not, primary laugh-first `Comedia` shows Jajámetro; if neither, primary `Terror` shows Cagazómetro; if none of those, primary `Accion`/`Acción` shows Explosiómetro. Secondary genres alone do not trigger any meter, and movie JSON must not include manual meter fields
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
 - `awards.wins` structure and supported award types
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
@@ -142,9 +142,10 @@ The current-year `releaseDate` check is mandatory too:
 
 The automatic meter check is mandatory too:
 
-- treat any manual `jajametro`, `jajametroScore`, `lagrimometro`, `lagrimometroScore`, `cagazometro`, or `cagazometroScore` field as a hard stop
+- treat any manual `jajametro`, `jajametroScore`, `lagrimometro`, `lagrimometroScore`, `cagazometro`, `cagazometroScore`, `explosiometro`, or `explosiometroScore` field as a hard stop
 - verify the primary `category` is intentional because meters do not activate from secondary `genres`
-- for primary `Comedia*`, expect only Jajámetro; for primary `Drama` or `Romance`, expect only Lagrimómetro; for primary `Terror`, expect only Cagazómetro
+- apply the same priority as the page: `Drama`/`Romance`/`Romántica` wins first, then laugh-first `Comedia`, then `Terror`, then `Accion`/`Acción`
+- for primary `Drama`, `Romance`, `Romántica`, or `Comedia romántica`, expect only Lagrimómetro; for primary laugh-first `Comedia` with no drama/romance token, expect only Jajámetro; for primary `Terror` with no drama/romance/comedy token, expect only Cagazómetro; for primary `Accion`/`Acción` with no drama/romance/comedy/terror token, expect only Explosiómetro
 - when a meter score seems tonally wrong, verify reception through trustworthy sources such as Rotten Tomatoes, Metacritic, IMDb, reputable critics, or official materials before changing review/category data
 
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:

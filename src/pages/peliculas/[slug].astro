@@ -20,11 +20,13 @@ import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import Lagrimometro from '../../components/Lagrimometro.astro';
 import Jajametro from '../../components/Jajametro.astro';
 import Cagazometro from '../../components/Cagazometro.astro';
+import Explosiometro from '../../components/Explosiometro.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getMovieTenSecondTake } from '../../lib/editorialCopy';
 import { getLagrimometroScore } from '../../lib/lagrimometro';
 import { getJajametroScore } from '../../lib/jajametro';
 import { getCagazometroScore } from '../../lib/cagazometro';
+import { getExplosiometroScore } from '../../lib/explosiometro';
 import { METHODOLOGY_PATH, SITE_NAME, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -53,6 +55,10 @@ const lagrimometroScore = getLagrimometroScore(movie);
 const jajametroScore = lagrimometroScore === undefined ? getJajametroScore(movie) : undefined;
 const cagazometroScore =
 	lagrimometroScore === undefined && jajametroScore === undefined ? getCagazometroScore(movie) : undefined;
+const explosiometroScore =
+	lagrimometroScore === undefined && jajametroScore === undefined && cagazometroScore === undefined
+		? getExplosiometroScore(movie)
+		: undefined;
 const currentDate = new Date();
 type PersonDateParts = {
 	year: number;
@@ -451,6 +457,16 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										<p class="movie-detail__cagazometro-title">Cagazómetro</p>
 									</div>
 									<Cagazometro score={cagazometroScore} />
+								</section>
+							)
+						}
+						{
+							explosiometroScore !== undefined && (
+								<section id="explosiometro" class="movie-detail__explosiometro-card" aria-label="Explosiómetro">
+									<div class="movie-detail__explosiometro-head">
+										<p class="movie-detail__explosiometro-title">Explosiómetro</p>
+									</div>
+									<Explosiometro score={explosiometroScore} />
 								</section>
 							)
 						}

@@ -513,6 +513,20 @@ function validateEditorialSlugList({
 	}
 }
 
+function isLagrimometroCategory(category) {
+	return (
+		category.includes('drama') ||
+		category.includes('romance') ||
+		category.includes('romantica') ||
+		category.includes('romantic')
+	);
+}
+
+function isJajametroCategory(category) {
+	const isComedy = category.includes('comedia') || category.includes('comedy');
+	return isComedy && !isLagrimometroCategory(category);
+}
+
 function validateMeterEligibility(movie, candidatePath, findings) {
 	const disallowedMeterFields = [
 		'jajametro',
@@ -524,6 +538,9 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 		'cagazometro',
 		'cagazometroScore',
 		'cagazómetro',
+		'explosiometro',
+		'explosiometroScore',
+		'explosiómetro',
 	];
 	for (const field of disallowedMeterFields) {
 		if (Object.prototype.hasOwnProperty.call(movie, field)) {
@@ -532,39 +549,43 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 				'error',
 				'manual-meter-field',
 				candidatePath,
-				`Do not add "${field}" to movie JSON. Lagrimómetro/Jajámetro/Cagazómetro are automatic from primary category.`,
+				`Do not add "${field}" to movie JSON. Lagrimómetro/Jajámetro/Cagazómetro/Explosiómetro are automatic from primary category.`,
 			);
 		}
 	}
 
 	const category = normalizeText(movie.category || '');
 	const genres = Array.isArray(movie.genres) ? normalizeText(movie.genres.join(' ')) : '';
-	const primaryShowsJajametro = category.includes('comedia');
-	const primaryShowsCagazometro = !primaryShowsJajametro && category.includes('terror');
-	const primaryShowsLagrimometro =
-		!primaryShowsJajametro && !primaryShowsCagazometro && (category.includes('drama') || category.includes('romance'));
+	const primaryShowsLagrimometro = isLagrimometroCategory(category);
+	const primaryShowsJajametro = !primaryShowsLagrimometro && isJajametroCategory(category);
+	const primaryShowsCagazometro = !primaryShowsJajametro && !primaryShowsLagrimometro && category.includes('terror');
+	const primaryShowsExplosiometro =
+		!primaryShowsJajametro && !primaryShowsCagazometro && !primaryShowsLagrimometro && category.includes('accion');
 
-	if ([primaryShowsJajametro, primaryShowsLagrimometro, primaryShowsCagazometro].filter(Boolean).length > 1) {
+	if ([primaryShowsJajametro, primaryShowsLagrimometro, primaryShowsCagazometro, primaryShowsExplosiometro].filter(Boolean).length > 1) {
 		addFinding(findings, 'error', 'conflicting-meter-category', candidatePath, 'Primary category cannot trigger more than one automatic meter.');
 	}
 
-	if (!primaryShowsJajametro && genres.includes('comedia')) {
+	const genresMentionLagrimometro = isLagrimometroCategory(genres);
+	const genresMentionComedy = genres.includes('comedia') || genres.includes('comedy');
+
+	if (!primaryShowsJajametro && genresMentionComedy && !genresMentionLagrimometro) {
 		addFinding(
 			findings,
 			'warn',
 			'secondary-comedy-meter-hidden',
 			candidatePath,
-			'Comedy appears only in genres; Jajámetro will stay hidden because only primary category "Comedia" activates it.',
+			'Comedy appears only in genres; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.',
 		);
 	}
 
-	if (!primaryShowsLagrimometro && !primaryShowsJajametro && (genres.includes('drama') || genres.includes('romance'))) {
+	if (!primaryShowsLagrimometro && !primaryShowsJajametro && genresMentionLagrimometro) {
 		addFinding(
 			findings,
 			'warn',
 			'secondary-tear-meter-hidden',
 			candidatePath,
-			'Drama/Romance appears only in genres; Lagrimómetro will stay hidden because only primary category "Drama" or "Romance" activates it.',
+			'Drama/Romance/Romántica appears only in genres; Lagrimómetro will stay hidden because only primary category activates it.',
 		);
 	}
 
@@ -575,6 +596,16 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 			'secondary-horror-meter-hidden',
 			candidatePath,
 			'Terror appears only in genres; Cagazómetro will stay hidden because only primary category "Terror" activates it.',
+		);
+	}
+
+	if (!primaryShowsExplosiometro && genres.includes('accion')) {
+		addFinding(
+			findings,
+			'warn',
+			'secondary-action-meter-hidden',
+			candidatePath,
+			'Action appears only in genres; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.',
 		);
 	}
 }

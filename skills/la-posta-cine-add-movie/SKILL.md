@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance, verify automatic jajametro eligibility for primary Comedia, verify automatic cagazometro eligibility for primary Terror, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance/Romántica, verify automatic jajametro eligibility for primary laugh-first Comedia, verify automatic cagazometro eligibility for primary Terror, verify automatic explosiometro eligibility for primary Accion/Acción, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -409,23 +409,24 @@ Every new movie entry must be compatible through its primary `category`; do not 
 
 Rules:
 
-- If the movie's primary `category` is `Drama` or `Romance`, set that category accurately so the automatic lagrimometro appears.
-- `Comedia`, including `Comedia romántica`, must not trigger the lagrimometro as primary category; it belongs to the Jajámetro lane.
-- Secondary `genres` such as `Drama` or `Romance` do not activate the lagrimometro by themselves. Use them for precision, not for meter eligibility.
+- If the movie's primary `category` is `Drama`, `Romance`, `Romántica`, or `Comedia romántica`, set that category accurately so the automatic lagrimometro appears.
+- Automatic meter priority follows the movie detail page exactly: `Drama`/`Romance`/`Romántica` shows Lagrimómetro first; if not, laugh-first `Comedia` shows Jajámetro; if neither, `Terror` shows Cagazómetro; if none of those, `Accion`/`Acción` shows Explosiómetro.
+- `Comedia romántica` is a romance/lagrimómetro lane, not a Jajámetro lane. Only comedy built to make you laugh should trigger Jajámetro.
+- Secondary `genres` such as `Drama`, `Romance`, or `Romántica` do not activate the lagrimometro by themselves. Use them for precision, not for meter eligibility.
 - The review/verdict should support the likely automatic score with concrete reception or tone evidence from trustworthy sources (Rotten Tomatoes, Metacritic, IMDb, reputable critics, official materials), but never paste raw scores or third-party site names into the published review.
 - After writing the movie file, mentally verify whether `getLagrimometroScore(movie)` should return a score or `undefined`.
 - In final output, include one line: `Lagrimómetro: aplica/no aplica` and the reason based on primary `category`.
 
 ## Jajametro compatibility (mandatory)
 
-La posta cine shows an automatic `Jajámetro` on movie detail pages when the primary `category` is comedy.
+La posta cine shows an automatic `Jajámetro` on movie detail pages when the primary `category` is laugh-first comedy.
 Every new movie entry must be compatible through its primary `category`; do not add a manual jajametro field to movie JSON.
 
 Rules:
 
-- If the movie's primary `category` contains `Comedia`, including `Comedia romántica`, set it accurately so the automatic jajametro appears.
-- The `Lagrimómetro` and `Jajámetro` are mutually exclusive by primary category: `Comedia*` shows Jajámetro; `Drama`/`Romance` shows Lagrimómetro.
-- If the movie is not primary comedy, keep `category` accurate so `getJajametroScore(movie)` returns `undefined`; secondary comedy genres do not activate it.
+- If the movie's primary `category` is laugh-first `Comedia`/`Comedy`, set it accurately so the automatic jajametro appears.
+- Automatic meter priority follows the movie detail page exactly: `Drama`/`Romance`/`Romántica` shows Lagrimómetro first; if not, laugh-first `Comedia` shows Jajámetro; if neither, `Terror` shows Cagazómetro; if none of those, `Accion`/`Acción` shows Explosiómetro.
+- If the movie is `Comedia romántica`, `Drama`, `Romance`, or not primary laugh comedy, keep `category` accurate so `getJajametroScore(movie)` returns `undefined`; secondary comedy genres do not activate it.
 - The review/verdict should support the likely automatic score with concrete reception or tone evidence from trustworthy sources (Rotten Tomatoes, Metacritic, IMDb, reputable critics, official materials), but never paste raw scores or third-party site names into the published review.
 - After writing the movie file, mentally verify whether `getJajametroScore(movie)` should return a score or `undefined`.
 - In final output, include one line: `Jajámetro: aplica/no aplica` and the reason based on primary `category` plus the mutual-exclusion rule.
@@ -438,11 +439,25 @@ Every new movie entry must be compatible through its primary `category`; do not 
 Rules:
 
 - If the movie's primary `category` is `Terror`, set that category accurately so the automatic cagazometro appears.
-- The `Lagrimómetro`, `Jajámetro`, and `Cagazómetro` are mutually exclusive by primary category: `Comedia*` shows Jajámetro; `Drama`/`Romance` shows Lagrimómetro; `Terror` shows Cagazómetro.
+- Automatic meter priority follows the movie detail page exactly: `Drama`/`Romance`/`Romántica` shows Lagrimómetro first; if not, laugh-first `Comedia` shows Jajámetro; if neither, `Terror` shows Cagazómetro; if none of those, `Accion`/`Acción` shows Explosiómetro.
 - If the movie is not primary horror, keep `category` accurate so `getCagazometroScore(movie)` returns `undefined`; secondary horror genres do not activate it.
 - The review/verdict should support the likely automatic score with concrete reception or tone evidence from trustworthy sources (Rotten Tomatoes, Metacritic, IMDb, reputable critics, official materials), but never paste raw scores or third-party site names into the published review.
 - After writing the movie file, mentally verify whether `getCagazometroScore(movie)` should return a score or `undefined`.
 - In final output, include one line: `Cagazómetro: aplica/no aplica` and the reason based on primary `category` plus the mutual-exclusion rule.
+
+## Explosiometro compatibility (mandatory)
+
+La posta cine shows an automatic `Explosiómetro` on movie detail pages when the primary `category` is `Accion`/`Acción`.
+Every new movie entry must be compatible through its primary `category`; do not add a manual explosiometro field to movie JSON.
+
+Rules:
+
+- If the movie's primary `category` is `Accion` or `Acción`, set that category accurately so the automatic explosiometro appears.
+- Automatic meter priority follows the movie detail page exactly: `Drama`/`Romance`/`Romántica` shows Lagrimómetro first; if not, laugh-first `Comedia` shows Jajámetro; if neither, `Terror` shows Cagazómetro; if none of those, `Accion`/`Acción` shows Explosiómetro.
+- If the movie is not primary action, keep `category` accurate so `getExplosiometroScore(movie)` returns `undefined`; secondary action genres do not activate it.
+- For primary action movies, gather trustworthy evidence for action intensity when available: published kill/body counts, official production notes, stunt/action-sequence coverage, reputable critics, or official materials. Use that evidence to support the review/verdict, but never add a raw meter score or third-party site names to the published review.
+- After writing the movie file, mentally verify whether `getExplosiometroScore(movie)` should return a score or `undefined`.
+- In final output, include one line: `Explosiómetro: aplica/no aplica` and the reason based on primary `category` plus the mutual-exclusion rule.
 
 ## Duplicate protection (mandatory)
 
@@ -613,6 +628,7 @@ Return all of the following:
 14. Lagrimómetro confirmation: `aplica` or `no aplica`, with primary-category reason
 15. Jajámetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
 16. Cagazómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
+17. Explosiómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
 
 ## Validation checklist
 
@@ -635,6 +651,7 @@ Return all of the following:
 - [ ] Lagrimómetro eligibility checked from primary `category`; no manual lagrimometro field added
 - [ ] Jajámetro eligibility checked from primary `category`; no manual jajametro field added; never shown together with lagrimómetro
 - [ ] Cagazómetro eligibility checked from primary `category`; no manual cagazometro field added; never shown together with lagrimómetro or jajámetro
+- [ ] Explosiómetro eligibility checked from primary `category`; no manual explosiometro field added; never shown together with lagrimómetro, jajámetro or cagazómetro
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
 - [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)
 - [ ] `docs/person-profile-catalog-reference.md` consulted before locking credited names

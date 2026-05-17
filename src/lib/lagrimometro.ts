@@ -1,6 +1,6 @@
 import type { Movie } from '../types/movie';
 
-const INCLUDE_CATEGORY_TOKENS = ['drama', 'romance'];
+const INCLUDE_CATEGORY_TOKENS = ['drama', 'romance', 'romantica', 'romantic'];
 
 const SCORE_OVERRIDES: Record<string, number> = {
 	'million-dollar-baby-2004': 89,
@@ -47,7 +47,7 @@ function hasAny(value: string, patterns: RegExp[]): boolean {
 
 export function shouldShowLagrimometro(movie: Pick<Movie, 'category'>): boolean {
 	const category = getPrimaryCategory(movie);
-	return !category.includes('comedia') && INCLUDE_CATEGORY_TOKENS.some((token) => category.includes(token));
+	return INCLUDE_CATEGORY_TOKENS.some((token) => category.includes(token));
 }
 
 export function getLagrimometroScore(movie: Movie): number | undefined {
@@ -72,7 +72,7 @@ export function getLagrimometroScore(movie: Movie): number | undefined {
 		].join(' '),
 	);
 
-	let score = normalizedCategory.includes('romance') ? 48 : 42;
+	let score = normalizedCategory.includes('romance') || normalizedCategory.includes('romantica') ? 48 : 42;
 	if (normalizedCategory.includes('drama')) score += 4;
 	if (context.includes('romance')) score += 5;
 	if (context.includes('familia')) score += 6;

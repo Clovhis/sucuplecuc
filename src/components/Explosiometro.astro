@@ -1,0 +1,35 @@
+---
+import { getExplosiometroLabel } from '../lib/explosiometro';
+
+interface Props {
+	score: number;
+}
+
+const { score } = Astro.props as Props;
+const label = getExplosiometroLabel(score);
+const sparks = Array.from({ length: 10 });
+---
+
+<div class="explosiometro" style={`--explosiometro-level: ${score}%;`}>
+	<div class="explosiometro__top">
+		<span class="explosiometro__label">{label}</span>
+		<span class="explosiometro__score">{score}%</span>
+	</div>
+	<div
+		class="explosiometro__track"
+		role="progressbar"
+		aria-label={`Explosiómetro: ${score}%`}
+		aria-valuemin="1"
+		aria-valuemax="99"
+		aria-valuenow={score}
+	>
+		<div class="explosiometro__fill">
+			<span class="explosiometro__blast" aria-hidden="true"></span>
+			<span class="explosiometro__heat" aria-hidden="true"></span>
+			{sparks.map((_, index) => (
+				<span class="explosiometro__spark" style={`--spark-index: ${index};`} aria-hidden="true">boom</span>
+			))}
+		</div>
+	</div>
+	<p class="explosiometro__note">Cuánto quilombo de acción, tiros, persecuciones y explosiones trae esta bestia.</p>
+</div>
