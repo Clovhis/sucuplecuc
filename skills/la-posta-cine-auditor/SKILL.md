@@ -108,7 +108,7 @@ The bundled script checks:
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
 - raw numeric score leakage in reviews
 - forbidden third-party site mentions inside reviews (`Rotten`, `Metacritic`, `IMDb`, etc.)
-- editorial duplication by delegating to `skills/la-posta-cine-add-movie/scripts/review_audit.js`
+- review length / underdeveloped copy / template-shaped wording / repeated sentence skeletons by delegating to `skills/la-posta-cine-add-movie/scripts/review_audit.cjs`
 
 ### 3. Interpret findings
 
@@ -127,6 +127,13 @@ The third-party mention check is also mandatory:
 - treat any explicit site/brand mention inside `review` as a hard error
 - rewrite the sentence into generic editorial language (`la crítica`, `la recepción`, `el consenso`) instead of naming the source
 - sources may still be cited in the audit report/output evidence, but never inside the published review copy
+
+The short-or-robotized review check is mandatory too:
+
+- treat a review that is too short, underdeveloped, or obviously reusable as a hard stop
+- treat template scaffolds and fill-in-the-blank sentences as a hard stop even if the copy is grammatically correct
+- examples of forbidden reviewer shortcuts: generic closings that only restate the verdict, reusable structures with title/cast swapped in, or copy that could describe another movie unchanged
+- if the audit reports `short-review`, `underdeveloped-review`, `duplicate-long-sentence`, `reused-opener-pattern`, `generated-review-marker`, or equivalent robotized signals, rewrite the review before signing off
 
 The exclusive profile reconciliation check is mandatory too:
 

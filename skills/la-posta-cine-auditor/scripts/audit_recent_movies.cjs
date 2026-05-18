@@ -1310,7 +1310,7 @@ function runEditorialAudit(rootDir, candidates) {
 	if (!reviewAuditPath) {
 		return {
 			status: 'warn',
-			message: `review_audit.js not found in expected repo or global skill locations.`,
+			message: `review_audit.cjs not found in expected repo or global skill locations.`,
 		};
 	}
 

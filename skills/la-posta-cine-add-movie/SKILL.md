@@ -481,6 +481,7 @@ Write `review` by combining user feedback + external review enrichment:
 
 - Castellano rioplatense
 - Honest, colloquial tone
+- Write it manually from scratch for that movie. Do not use templates, fill-in-the-blank structures, or recycled sentence skeletons from previous loads.
 - Max 5 lines when user provides clear feedback
 - If user provides little/no feedback, you may expand to 6-8 lines to add useful context from verified sources
 - No spoilers
@@ -490,11 +491,14 @@ Write `review` by combining user feedback + external review enrichment:
 - Never write phrases like `en Rotten`, `segun Metacritic`, `IMDb la dejo...` or any other explicit third-party attribution inside the review.
 - Never start the review with labels like `Numeros:` or any score dump template.
 - Every movie review must be unique in wording and structure.
+- Treat any template-shaped wording as forbidden, including reusable scaffolds like `A <titulo> le conviene entrarla por...`, `Hay una version buena de...`, `Lo mejor aparece cuando...`, `La contra suele aparecer cuando...`, `PASABLE porque...`, or equivalent fill-in-the-blank formulas.
 - Avoid repeated openings across a batch (for example reusing `En la critica especializada...` in multiple entries).
 - In multi-movie batches, vary sentence rhythm and vocabulary so entries do not read like a template.
 - Do not reuse stock closing lines across different movies in the same batch (for example repeating `Queda en ese punto medio que no molesta.`).
 - In batch mode, run a final anti-duplication pass at sentence level: no full sentence may appear verbatim in more than one review.
 - If a review sounds too generic, rewrite it with movie-specific angle (tone, pacing, performances, direction, genre execution) without spoilers.
+- Do not sign off on a review that could be copy-pasted onto another movie by changing only title, cast, or verdict.
+- Reviews that are too short to carry a movie-specific angle are not acceptable. If the first draft sounds like a card note instead of editorial copy, rewrite it before validation.
 - Enforce proper Spanish orthography in review text: use `ñ` and accent marks when applicable (for example `reseñas`, not `resenas`).
 - Do not degrade Spanish words to ASCII-only variants in user-facing review copy.
 
@@ -638,6 +642,7 @@ Return all of the following:
 - [ ] No modified files outside allowlist
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
+- [ ] Review written manually from scratch, without template scaffolds, stock closings, or robotized phrasing that could fit another movie unchanged
 - [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 6 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources
 - [ ] Original title and category from trustworthy sources

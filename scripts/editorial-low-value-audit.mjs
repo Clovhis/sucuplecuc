@@ -6,6 +6,8 @@ const MAX_EXAMPLES = 40;
 const MIN_REPEAT_SENTENCE_WORDS = 6;
 const MAX_REPEAT_SENTENCE_WORDS = 28;
 const MIN_SHARED_SENTENCE_COUNT = 3;
+const MIN_REVIEW_WORDS = 24;
+const MIN_UNDERDEVELOPED_WORDS = 32;
 const FULL_OUTPUT = process.argv.includes('--full');
 const referenceDate = new Date();
 
@@ -62,6 +64,13 @@ function splitIntoSentences(value) {
 			const words = wordCount(sentence);
 			return words >= MIN_REPEAT_SENTENCE_WORDS && words <= MAX_REPEAT_SENTENCE_WORDS;
 		});
+}
+
+function rawSentenceCount(value) {
+	return String(value ?? '')
+		.split(/[\n\r]+|(?<=[.!?])\s+/)
+		.map((sentence) => sentence.trim())
+		.filter(Boolean).length;
 }
 
 function loadMovies() {
@@ -247,11 +256,27 @@ const repeatedOpeningPatterns = Array.from(openerPatternMap.entries())
 const generatedReviewCandidates = [];
 const repeatedEditorialCandidates = [];
 const primaryGenreMismatch = [];
+const shortReviewCandidates = [];
 
 for (const { filePath, movie } of entries) {
 	const signals = getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap);
 	const category = normalize(movie.category);
 	const genres = Array.isArray(movie.genres) ? movie.genres.map((genre) => normalize(genre)).filter(Boolean) : [];
+	const reviewWordCount = wordCount(movie.review);
+	const reviewSentenceCount = rawSentenceCount(movie.review);
+
+	if (
+		reviewWordCount < MIN_REVIEW_WORDS ||
+		(reviewWordCount < MIN_UNDERDEVELOPED_WORDS && reviewSentenceCount < 2)
+	) {
+		shortReviewCandidates.push({
+			slug: movie.slug,
+			title: movie.title,
+			filePath,
+			wordCount: reviewWordCount,
+			sentenceCount: reviewSentenceCount,
+		});
+	}
 
 	if (signals.severity === 'high' || signals.severity === 'medium') {
 		generatedReviewCandidates.push({
@@ -318,6 +343,11 @@ const report = {
 		mediumSeverity: generatedReviewCandidates.filter((entry) => entry.severity === 'medium').length,
 		examples: generatedReviewCandidates.slice(0, MAX_EXAMPLES),
 		...(FULL_OUTPUT ? { all: generatedReviewCandidates } : {}),
+	},
+	shortReviewCandidates: {
+		count: shortReviewCandidates.length,
+		examples: shortReviewCandidates.slice(0, MAX_EXAMPLES),
+		...(FULL_OUTPUT ? { all: shortReviewCandidates } : {}),
 	},
 	repeatedEditorialCandidates: {
 		count: repeatedEditorialCandidates.length,
