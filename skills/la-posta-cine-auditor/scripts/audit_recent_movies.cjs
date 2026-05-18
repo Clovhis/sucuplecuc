@@ -30,6 +30,7 @@ const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
+const MAX_REVIEW_AUDIT_BATCH_SIZE = 100;
 const RECOMMENDED_LABEL_PATTERNS = [
 	'recomendada',
 	'esta buena',
@@ -1314,29 +1315,49 @@ function runEditorialAudit(rootDir, candidates) {
 		};
 	}
 
-	const args = [reviewAuditPath, '--root', rootDir];
-	// Windows command-line limits make full-catalog candidate lists brittle.
-	if (candidates.length > 0 && candidates.length <= 120) {
-		for (const candidate of candidates) {
+	const candidateBatches =
+		candidates.length > 0
+			? Array.from({ length: Math.ceil(candidates.length / MAX_REVIEW_AUDIT_BATCH_SIZE) }, (_, batchIndex) =>
+					candidates.slice(
+						batchIndex * MAX_REVIEW_AUDIT_BATCH_SIZE,
+						(batchIndex + 1) * MAX_REVIEW_AUDIT_BATCH_SIZE,
+					),
+			  )
+			: [[]];
+	const failureMessages = [];
+
+	for (const batch of candidateBatches) {
+		const args = [reviewAuditPath, '--root', rootDir];
+		for (const candidate of batch) {
 			args.push('--candidate', candidate);
+		}
+
+		const result = spawnSync(process.execPath, args, {
+			cwd: process.cwd(),
+			encoding: 'utf8',
+		});
+
+		if (result.status !== 0) {
+			const message = (result.stderr || result.stdout || 'review audit failed').trim();
+			if (message) {
+				failureMessages.push(message);
+			}
 		}
 	}
 
-	const result = spawnSync(process.execPath, args, {
-		cwd: process.cwd(),
-		encoding: 'utf8',
-	});
-
-	if (result.status !== 0) {
+	if (failureMessages.length > 0) {
 		return {
 			status: 'error',
-			message: (result.stderr || result.stdout || 'review audit failed').trim(),
+			message: [...new Set(failureMessages)].join('\n'),
 		};
 	}
 
 	return {
 		status: 'ok',
-		message: (result.stdout || 'review audit passed').trim(),
+		message:
+			candidates.length > 0
+				? `review audit passed for ${candidates.length} file(s)`
+				: 'review audit passed',
 	};
 }
 
