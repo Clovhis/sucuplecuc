@@ -22,6 +22,7 @@
     "audit:movies:all": "node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --all --skip-youtube",
     "audit:profiles": "node ./skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --all",
     "validate:content": "node ./scripts/validate-content.mjs",
+    "validate:public-output": "node ./scripts/validate-public-output.mjs",
     "hooks:install": "node ./scripts/install-hooks.mjs",
     "rewrite:adsense-priority": "node ./scripts/rewrite-priority-adsense-content.mjs",
     "gsc:sites": "node ./scripts/gsc.mjs sites",

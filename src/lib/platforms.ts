@@ -22,6 +22,7 @@ export interface PlatformAsset {
 export interface PlatformPresentation {
 	normalizedLabel: string;
 	displayLabel: string;
+	accessibilityLabel: string;
 	variant: PlatformVariant;
 	asset: PlatformAsset | null;
 	isKnownPlatform: boolean;
@@ -30,6 +31,14 @@ export interface PlatformPresentation {
 export interface PlatformFilterOption extends PlatformPresentation {
 	count: number;
 }
+
+const UNCONFIRMED_PLATFORM_DISPLAY_LABEL = 'Otras plataformas';
+const UNCONFIRMED_PLATFORM_TILE_LABEL = 'Otras';
+const UNCONFIRMED_PLATFORM_FILTER_LABEL = normalizePlatformLabel(UNCONFIRMED_PLATFORM_DISPLAY_LABEL);
+const LEGACY_UNCONFIRMED_PLATFORM_FILTER_LABELS = new Set([
+	normalizePlatformLabel('A confirmar'),
+	normalizePlatformLabel('Disponibilidad a confirmar'),
+]);
 
 const PLATFORM_DISPLAY_LABELS: Partial<Record<PlatformVariant, string>> = {
 	cine: 'En cines',
@@ -71,7 +80,7 @@ const PLATFORM_FILTER_ORDER = [
 	'mercado play',
 	'apple tv',
 	'crunchyroll',
-	'stremio',
+	UNCONFIRMED_PLATFORM_FILTER_LABEL,
 	'cine',
 	'cine.ar',
 ] as const;
@@ -143,20 +152,50 @@ export function normalizePlatformList(values: Array<string | null | undefined>):
 	return [...deduped];
 }
 
+function toPublicPlatformLabel(value: string | null | undefined): string {
+	const rawLabel = String(value ?? '').trim();
+	if (!rawLabel) {
+		return '';
+	}
+
+	return isUnconfirmedPlatformLabel(rawLabel) ? UNCONFIRMED_PLATFORM_DISPLAY_LABEL : rawLabel;
+}
+
+function isUnconfirmedPlatformLabel(value: string | null | undefined): boolean {
+	const normalizedValue = normalizePlatformLabel(value);
+
+	return (
+		getPlatformVariant(value) === 'stremio' ||
+		normalizedValue === UNCONFIRMED_PLATFORM_FILTER_LABEL ||
+		LEGACY_UNCONFIRMED_PLATFORM_FILTER_LABELS.has(normalizedValue)
+	);
+}
+
 export function getPlatformVariant(value: string | null | undefined): PlatformVariant {
 	return PLATFORM_VARIANTS_BY_LABEL[normalizePlatformLabel(value)] ?? 'default';
 }
 
-export function getPlatformPresentation(value: string | null | undefined): PlatformPresentation {
-	const rawLabel = String(value ?? '').trim();
-	const normalizedLabel = normalizePlatformLabel(rawLabel);
-	const variant = getPlatformVariant(rawLabel);
+export function getPlatformPresentation(
+	value: string | null | undefined,
+	options: { mode?: 'chip' | 'tile' } = {},
+): PlatformPresentation {
+	const fullDisplayLabel = toPublicPlatformLabel(value);
+	const rawLabel =
+		options.mode === 'tile' && isUnconfirmedPlatformLabel(value)
+			? UNCONFIRMED_PLATFORM_TILE_LABEL
+			: fullDisplayLabel;
+	const normalizedLabel = isUnconfirmedPlatformLabel(value)
+		? UNCONFIRMED_PLATFORM_FILTER_LABEL
+		: normalizePlatformLabel(rawLabel);
+	const variant = getPlatformVariant(fullDisplayLabel);
 	const asset = variant !== 'default' && variant !== 'cine' ? PLATFORM_ASSETS[variant] ?? null : null;
 	const displayLabel = PLATFORM_DISPLAY_LABELS[variant] ?? rawLabel;
+	const accessibilityLabel = PLATFORM_DISPLAY_LABELS[variant] ?? fullDisplayLabel;
 
 	return {
 		normalizedLabel,
 		displayLabel,
+		accessibilityLabel,
 		variant,
 		asset,
 		isKnownPlatform: variant !== 'default',
@@ -164,7 +203,9 @@ export function getPlatformPresentation(value: string | null | undefined): Platf
 }
 
 export function getPlatformPresentations(values: Array<string | null | undefined>): PlatformPresentation[] {
-	return normalizePlatformList(values).map((value) => getPlatformPresentation(value));
+	return normalizePlatformList(values.map((value) => toPublicPlatformLabel(value))).map((value) =>
+		getPlatformPresentation(value),
+	);
 }
 
 export function getMoviePlatforms(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string[] {
@@ -173,13 +214,11 @@ export function getMoviePlatforms(movie: Pick<Movie, 'releasePlatform' | 'releas
 			? movie.releasePlatforms
 			: [movie.releasePlatform];
 
-	return normalizePlatformList(primaryPlatforms).slice(0, 2);
+	return normalizePlatformList(primaryPlatforms.map((platform) => toPublicPlatformLabel(platform))).slice(0, 2);
 }
 
 export function getNormalizedMoviePlatforms(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string[] {
-	return getMoviePlatforms(movie)
-		.map((platform) => normalizePlatformLabel(platform))
-		.filter(Boolean);
+	return getPlatformPresentations(getMoviePlatforms(movie)).map((platform) => platform.normalizedLabel).filter(Boolean);
 }
 
 export function getMoviePlatformLabel(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string {

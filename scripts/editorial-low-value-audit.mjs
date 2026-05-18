@@ -24,6 +24,20 @@ const GENERATED_REVIEW_MARKERS = [
 	'se juega en como sostiene su tono',
 	'necesita que esos nombres le den pulso propio a la historia',
 ];
+const TEMPLATE_REVIEW_MARKERS = [
+	'recomendada porque',
+	'pasable porque',
+	'esta muy bien porque',
+	'esta buena porque',
+	'entiende que quiere ver el publico',
+	'tiene momentos con brillo',
+	'suma fuerte',
+	'se juega en como sostiene su tono',
+	'no se juega tanto en la novedad',
+	'encuentra aire propio',
+	'pierde un poco de fuerza',
+	'rinde por tramos',
+];
 
 function wordCount(value) {
 	return String(value ?? '')
@@ -257,6 +271,7 @@ const generatedReviewCandidates = [];
 const repeatedEditorialCandidates = [];
 const primaryGenreMismatch = [];
 const shortReviewCandidates = [];
+const templateReviewCandidates = [];
 
 for (const { filePath, movie } of entries) {
 	const signals = getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap);
@@ -264,6 +279,7 @@ for (const { filePath, movie } of entries) {
 	const genres = Array.isArray(movie.genres) ? movie.genres.map((genre) => normalize(genre)).filter(Boolean) : [];
 	const reviewWordCount = wordCount(movie.review);
 	const reviewSentenceCount = rawSentenceCount(movie.review);
+	const templateHits = TEMPLATE_REVIEW_MARKERS.filter((marker) => normalize(movie.review).includes(marker));
 
 	if (
 		reviewWordCount < MIN_REVIEW_WORDS ||
@@ -275,6 +291,16 @@ for (const { filePath, movie } of entries) {
 			filePath,
 			wordCount: reviewWordCount,
 			sentenceCount: reviewSentenceCount,
+		});
+	}
+
+	if (templateHits.length > 0) {
+		templateReviewCandidates.push({
+			slug: movie.slug,
+			title: movie.title,
+			filePath,
+			wordCount: reviewWordCount,
+			templateHits,
 		});
 	}
 
@@ -334,6 +360,13 @@ repeatedEditorialCandidates.sort(
 		left.slug.localeCompare(right.slug, 'es'),
 );
 
+templateReviewCandidates.sort(
+	(left, right) =>
+		right.templateHits.length - left.templateHits.length ||
+		left.wordCount - right.wordCount ||
+		left.slug.localeCompare(right.slug, 'es'),
+);
+
 const report = {
 	referenceDate: referenceDate.toISOString(),
 	releasedMovies: entries.length,
@@ -348,6 +381,11 @@ const report = {
 		count: shortReviewCandidates.length,
 		examples: shortReviewCandidates.slice(0, MAX_EXAMPLES),
 		...(FULL_OUTPUT ? { all: shortReviewCandidates } : {}),
+	},
+	templateReviewCandidates: {
+		count: templateReviewCandidates.length,
+		examples: templateReviewCandidates.slice(0, MAX_EXAMPLES),
+		...(FULL_OUTPUT ? { all: templateReviewCandidates } : {}),
 	},
 	repeatedEditorialCandidates: {
 		count: repeatedEditorialCandidates.length,

@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+	CONTACT_EMAIL,
+	CONTACT_PATH,
+	SITE_NAME,
+	createSimplePageStructuredData,
+} from '../lib/seo';
+
+const pageTitle = `Contacto | ${SITE_NAME}`;
+const pageDescription =
+	'Contacto de Cine Posta para prensa, correcciones editoriales, consultas generales y revisiones de material o datos.';
+const structuredData = createSimplePageStructuredData(CONTACT_PATH, pageTitle, pageDescription, 'ContactPage');
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container about-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Canales abiertos</p>
+			<h1 class="about-page__title">Contacto</h1>
+			<p class="about-page__lead">
+				Si tenés una consulta sobre el sitio, una corrección de datos, un tema de prensa o un pedido de revisión de
+				material, este es el punto de contacto oficial de {SITE_NAME}.
+			</p>
+		</section>
+
+		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
+				<h2>Mail principal</h2>
+				<p>
+					Escribí a
+					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Consulta%20general`}>{CONTACT_EMAIL}</a>.
+				</p>
+				<p>Ese correo sirve para consultas generales, sugerencias, correcciones editoriales y cuestiones comerciales.</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
+				<h2>Prensa y colaboraciones</h2>
+				<p>
+					Para prensa, invitaciones, notas o colaboraciones, usá el asunto
+					<code> Cine Posta - Prensa</code> para ordenar mejor el contacto.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 180ms;">
+				<h2>Correcciones de datos</h2>
+				<p>
+					Si ves una fecha mal cargada, un elenco incompleto o una disponibilidad que quedó desactualizada, mandá el
+					link de la ficha y el dato que debería revisarse.
+				</p>
+				<p>La disponibilidad de plataformas siempre se contrasta con servicios oficiales antes de marcarse como confirmada.</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 240ms;">
+				<h2>Aclaración importante</h2>
+				<p>
+					{SITE_NAME} no hostea películas, no ofrece descargas, no comparte torrents y no entrega enlaces a streaming
+					no autorizado.
+				</p>
+				<p>Las consultas relacionadas con acceso ilegal a contenido no tienen respuesta editorial ni soporte.</p>
+			</article>
+		</section>
+	</main>
+</BaseLayout>

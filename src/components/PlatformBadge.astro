@@ -8,7 +8,10 @@ interface Props {
 }
 
 const { platform, className = '', mode = 'chip' } = Astro.props as Props;
-const { variant, asset: platformAsset, displayLabel, isKnownPlatform } = getPlatformPresentation(platform);
+const { variant, asset: platformAsset, displayLabel, accessibilityLabel, isKnownPlatform } = getPlatformPresentation(
+	platform,
+	{ mode },
+);
 const hasStyledVariant = variant !== 'default';
 
 const rootClasses =
@@ -23,7 +26,10 @@ const rootClasses =
 
 {
 	platform && (
-		<span class:list={rootClasses} aria-label={hasStyledVariant ? `Plataforma: ${displayLabel}` : undefined}>
+		<span
+			class:list={rootClasses}
+			aria-label={hasStyledVariant || accessibilityLabel !== displayLabel ? `Plataforma: ${accessibilityLabel}` : undefined}
+		>
 			{
 				variant === 'cine' ? (
 					<span class="platform-chip__cine-label">{displayLabel}</span>
@@ -41,7 +47,9 @@ const rootClasses =
 					<span>{displayLabel}</span>
 				)
 			}
-			{hasStyledVariant && <span class="u-visually-hidden">{displayLabel}</span>}
+			{(hasStyledVariant || accessibilityLabel !== displayLabel) && (
+				<span class="u-visually-hidden">{accessibilityLabel}</span>
+			)}
 		</span>
 	)
 }

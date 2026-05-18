@@ -1,6 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { CONTACT_EMAIL, SITE_DESCRIPTION, SITE_NAME, createAboutPageStructuredData } from '../lib/seo';
+import {
+	CONTACT_EMAIL,
+	CONTACT_PATH,
+	COPYRIGHT_PATH,
+	EDITORIAL_POLICY_PATH,
+	SITE_DESCRIPTION,
+	SITE_NAME,
+	SOURCES_AND_DATA_PATH,
+	createAboutPageStructuredData,
+} from '../lib/seo';
 
 const pageTitle = `Sobre ${SITE_NAME} | Qué es y cómo funciona`;
 const pageDescription =
@@ -54,13 +63,35 @@ const structuredData = createAboutPageStructuredData(pageTitle, pageDescription)
 					El catálogo se actualiza de forma manual para cuidar el criterio, sostener el tono y poner el foco tanto en
 					cine que valga la pena comentar como en nombres que ayuden a moverse mejor por el sitio.
 				</p>
+				<p>
+					Las reseñas son piezas editoriales originales. {SITE_NAME} no aloja películas, descargas, torrents ni enlaces
+					de streaming no autorizados.
+				</p>
 			</article>
 
-			<article id="contacto-y-prensa" class="about-page__card fade-up" style="--item-delay: 180ms;">
+			<article class="about-page__card fade-up" style="--item-delay: 180ms;">
+				<h2>Transparencia y criterios</h2>
+				<p>
+					Si querés ver cómo trabajamos, están publicadas la
+					<a href={EDITORIAL_POLICY_PATH}> política editorial</a>, la
+					<a href={SOURCES_AND_DATA_PATH}> página de fuentes y datos</a> y la
+					<a href={COPYRIGHT_PATH}> política de uso de material</a>.
+				</p>
+				<p>
+					También aclaramos ahí que la disponibilidad de cada película es orientativa y que siempre conviene
+					confirmarla en servicios oficiales antes de darle play.
+				</p>
+			</article>
+
+			<article id="contacto-y-prensa" class="about-page__card fade-up" style="--item-delay: 240ms;">
 				<h2>Contacto y prensa</h2>
 				<p>
 					Para consultas, prensa o colaboraciones, escribí a
 					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Contacto%20y%20Prensa`}>{CONTACT_EMAIL}</a>.
+				</p>
+				<p>
+					Si necesitás un canal más específico por correcciones editoriales, copyright o consultas generales, también
+					está la página de <a href={CONTACT_PATH}>Contacto</a>.
 				</p>
 				<p>
 					Si querés apoyar el proyecto, también podés hacerlo desde

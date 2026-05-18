@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+	CONTACT_EMAIL,
+	EDITORIAL_POLICY_PATH,
+	SITE_NAME,
+	createSimplePageStructuredData,
+} from '../lib/seo';
+
+const pageTitle = `Política editorial | ${SITE_NAME}`;
+const pageDescription =
+	'Política editorial de Cine Posta: cómo se escriben las reseñas, qué cubre el sitio y qué tipo de enlaces o contenidos no publica.';
+const structuredData = createSimplePageStructuredData(EDITORIAL_POLICY_PATH, pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container about-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Criterio y transparencia</p>
+			<h1 class="about-page__title">Política editorial</h1>
+			<p class="about-page__lead">
+				{SITE_NAME} publica reseñas cortas, fichas y recomendaciones con criterio editorial propio. La idea es orientar
+				rápido, no rellenar ni venderte cualquier cosa.
+			</p>
+		</section>
+
+		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
+				<h2>Qué publica Cine Posta</h2>
+				<p>
+					El sitio cubre películas con reseñas breves, veredictos claros y fichas de actores, actrices y directores.
+					La opinión editorial busca decir qué funciona, qué no, para quién puede rendir y con qué ánimo conviene verla.
+				</p>
+				<p>
+					Las reseñas son textos originales de {SITE_NAME}. Pueden apoyarse en datos verificables de la obra, pero el
+					veredicto y el enfoque crítico son propios.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
+				<h2>Qué no hace el sitio</h2>
+				<p>
+					{SITE_NAME} no aloja películas, no ofrece descargas, no comparte torrents y no publica enlaces a streaming no
+					autorizado.
+				</p>
+				<p>
+					Tampoco promete disponibilidad permanente en una plataforma. Cuando una ficha muestra dónde podría verse una
+					película, eso debe entenderse como dato editorial orientativo y no como garantía contractual.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 180ms;">
+				<h2>Cómo se arma una reseña</h2>
+				<p>
+					La evaluación prioriza actuaciones, guion, ritmo, tono, puesta, claridad del conflicto y tipo de experiencia
+					que propone la película. El foco está en ayudar a decidir, no en resumir toda la trama.
+				</p>
+				<p>
+					Cuando una ficha todavía no tiene disponibilidad cerrada, el sitio lo deja explícito para evitar presentar como
+					confirmado algo que debe revisarse en servicios oficiales.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 240ms;">
+				<h2>Correcciones y contacto</h2>
+				<p>
+					Si detectás un error de datos, una atribución incompleta o un punto que merezca corrección editorial, escribí a
+					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Correccion%20editorial`}>{CONTACT_EMAIL}</a>.
+				</p>
+				<p>Las correcciones se revisan manualmente para no romper el catálogo ni las rutas ya publicadas.</p>
+			</article>
+		</section>
+	</main>
+</BaseLayout>

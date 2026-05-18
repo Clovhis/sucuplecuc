@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+	CONTACT_EMAIL,
+	COPYRIGHT_PATH,
+	SITE_NAME,
+	createSimplePageStructuredData,
+} from '../lib/seo';
+
+const pageTitle = `Copyright y uso de material | ${SITE_NAME}`;
+const pageDescription =
+	'Política de copyright y uso de material de Cine Posta: cómo se usan posters, imágenes y trailers, y cómo contactar por reclamos o correcciones.';
+const structuredData = createSimplePageStructuredData(COPYRIGHT_PATH, pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container about-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Uso editorial de material</p>
+			<h1 class="about-page__title">Copyright y uso de material</h1>
+			<p class="about-page__lead">
+				{SITE_NAME} usa material promocional para identificar obras, acompañar reseñas y contextualizar fichas. El sitio
+				no reclama propiedad sobre posters, stills, trailers ni marcas de terceros.
+			</p>
+		</section>
+
+		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
+				<h2>Qué material aparece en el sitio</h2>
+				<p>
+					Las fichas pueden incluir posters, thumbnails de trailers, imágenes promocionales y nombres o logos de marcas
+					relacionadas con películas o plataformas.
+				</p>
+				<p>
+					Ese material se muestra con finalidad informativa, crítica y de identificación editorial dentro de cada ficha.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
+				<h2>Qué no hace Cine Posta</h2>
+				<p>
+					{SITE_NAME} no redistribuye películas completas, no aloja copias pirata, no habilita descargas y no enlaza a
+					torrents ni a servicios de streaming no autorizados.
+				</p>
+				<p>
+					Los trailers y piezas promocionales se referencian como apoyo editorial y siguen perteneciendo a sus titulares
+					originales.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 180ms;">
+				<h2>Solicitudes de revisión</h2>
+				<p>
+					Si representás a un estudio, distribuidora, plataforma o titular de derechos y querés señalar un uso indebido,
+					un crédito faltante o una imagen a revisar, escribí a
+					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Revision%20de%20material`}>{CONTACT_EMAIL}</a>.
+				</p>
+				<p>Incluí la URL concreta de la página y el motivo del reclamo para poder evaluarlo rápido.</p>
+			</article>
+		</section>
+	</main>
+</BaseLayout>

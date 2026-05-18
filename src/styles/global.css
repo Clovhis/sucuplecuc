@@ -1258,10 +1258,6 @@ img {
 	--platform-chip-logo-width: 4.5rem;
 }
 
-.home-platform-filter__badge.platform-chip--stremio {
-	--platform-chip-logo-width: 3.8rem;
-}
-
 .home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo,
 .home-platform-filter__badge.platform-chip--crunchyroll .platform-chip__logo {
 	max-height: 1.04rem;
@@ -2892,16 +2888,6 @@ img {
 	color: #ffb16a;
 	background: rgba(244, 117, 33, 0.12);
 	border-color: rgba(244, 117, 33, 0.34);
-}
-
-.platform-chip--stremio {
-	--platform-chip-logo-width: 3.6rem;
-	--platform-chip-logo-max-height: 1rem;
-	--platform-tile-logo-width: 4.2rem;
-	--platform-tile-logo-max-height: 1.42rem;
-	color: #f7f1ff;
-	background: linear-gradient(180deg, rgba(122, 92, 255, 0.2), rgba(248, 68, 132, 0.08));
-	border-color: rgba(198, 147, 255, 0.32);
 }
 
 .review-clamp {
@@ -7049,6 +7035,7 @@ img {
 
 .site-footer__nav {
 	display: flex;
+	flex: 1 1 auto;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	gap: 0.7rem;

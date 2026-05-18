@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+	CONTACT_EMAIL,
+	SITE_NAME,
+	SOURCES_AND_DATA_PATH,
+	createSimplePageStructuredData,
+} from '../lib/seo';
+
+const pageTitle = `Fuentes y datos | ${SITE_NAME}`;
+const pageDescription =
+	'Fuentes y datos de Cine Posta: de dónde salen las fichas, cómo se verifican los datos básicos y qué límites tienen las referencias de disponibilidad.';
+const structuredData = createSimplePageStructuredData(SOURCES_AND_DATA_PATH, pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container about-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Metodología de datos</p>
+			<h1 class="about-page__title">Fuentes y datos</h1>
+			<p class="about-page__lead">
+				{SITE_NAME} combina datos técnicos y criterio editorial. Esta página explica de dónde salen esos datos y qué
+				conviene verificar por cuenta propia antes de decidir dónde mirar una película.
+			</p>
+		</section>
+
+		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
+				<h2>Fuentes principales</h2>
+				<p>
+					Las fichas se construyen con material público y verificable: créditos oficiales, posters y trailers
+					publicados por distribuidoras o estudios, comunicados de prensa, sitios oficiales de películas y
+					plataformas, y bases de datos de referencia usadas para contrastar nombres, fechas y filmografías.
+				</p>
+				<p>
+					Cuando hace falta contexto adicional, también se consulta cobertura periodística reconocible para chequear
+					fechas, festivales, estrenos o cambios de disponibilidad.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
+				<h2>Disponibilidad de plataformas</h2>
+				<p>
+					La disponibilidad puede cambiar por país, fecha, ventana comercial o acuerdos entre servicios. Por eso
+					{SITE_NAME} recomienda confirmar siempre en plataformas oficiales antes de mirar una película.
+				</p>
+				<p>
+					Si una ficha muestra <strong>Otras plataformas</strong>, significa que la disponibilidad pública todavía
+					requiere chequeo adicional y no se presenta como confirmada hasta tener una referencia oficial sólida.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 180ms;">
+				<h2>Qué es dato y qué es opinión</h2>
+				<p>
+					Títulos, años, elenco, dirección, clasificación, posters o trailers responden a datos de referencia. La reseña,
+					el veredicto y las recomendaciones asociadas son opinión editorial.
+				</p>
+				<p>
+					El objetivo no es reemplazar una cartelera oficial ni una plataforma, sino ordenar información y sumar una
+					lectura crítica propia.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 240ms;">
+				<h2>Errores y actualizaciones</h2>
+				<p>
+					Si una fecha, crédito o disponibilidad quedó vieja o mal cargada, escribí a
+					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Dato%20para%20revisar`}>{CONTACT_EMAIL}</a>.
+				</p>
+				<p>
+					Las correcciones se revisan de manera manual para mantener consistencia entre fichas, filtros y páginas del
+					site.
+				</p>
+			</article>
+		</section>
+	</main>
+</BaseLayout>

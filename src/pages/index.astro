@@ -11,7 +11,7 @@ import { getEditorialRankings } from '../lib/editorialRankings';
 import { getMovies, getUpcomingMovieReleases, isAbsoluteCinemaMovie, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
-import { ABOUT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { CONTACT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const cafecitoSupporters = await getCafecitoSupporters();
@@ -143,7 +143,7 @@ function formatUpcomingReleaseDate(value: string) {
 							/>
 							Bancá el sitio
 						</a>
-						<a class="site-header__contact" href={`${ABOUT_PATH}#contacto-y-prensa`}>
+						<a class="site-header__contact" href={CONTACT_PATH}>
 							Prensa / Contacto
 						</a>
 					</div>

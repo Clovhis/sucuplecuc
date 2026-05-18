@@ -185,6 +185,7 @@ function main() {
 
 	if (args.build) {
 		run('npm', ['run', 'build']);
+		run('npm', ['run', 'validate:public-output']);
 	}
 }
 

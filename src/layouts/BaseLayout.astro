@@ -1,7 +1,19 @@
 ---
 import '../styles/global.css';
 import { ADSENSE_CLIENT_ID } from '../lib/adsense';
-import { ABOUT_PATH, METHODOLOGY_PATH, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_LANGUAGE, SITE_LOCALE, SITE_NAME } from '../lib/seo';
+import {
+	ABOUT_PATH,
+	CONTACT_PATH,
+	COPYRIGHT_PATH,
+	EDITORIAL_POLICY_PATH,
+	METHODOLOGY_PATH,
+	PRIVACY_PATH,
+	QUE_MIRO_HOY_PATH,
+	SITE_LANGUAGE,
+	SITE_LOCALE,
+	SITE_NAME,
+	SOURCES_AND_DATA_PATH,
+} from '../lib/seo';
 import { DEFAULT_SUPABASE_URL } from '../lib/supabaseClient';
 
 interface Props {
@@ -46,7 +58,11 @@ const footerLinks = [
 	{ href: import.meta.env.BASE_URL, label: 'Inicio' },
 	{ href: QUE_MIRO_HOY_PATH, label: 'Qué vemos hoy' },
 	{ href: METHODOLOGY_PATH, label: 'Cómo funciona' },
-	{ href: ABOUT_PATH, label: 'Sobre Cine Posta' },
+	{ href: ABOUT_PATH, label: 'Sobre' },
+	{ href: EDITORIAL_POLICY_PATH, label: 'Editorial' },
+	{ href: SOURCES_AND_DATA_PATH, label: 'Fuentes' },
+	{ href: COPYRIGHT_PATH, label: 'Copyright' },
+	{ href: CONTACT_PATH, label: 'Contacto' },
 	{ href: PRIVACY_PATH, label: 'Privacidad' },
 ];
 ---
@@ -124,6 +140,15 @@ const footerLinks = [
 					<strong>{SITE_NAME}</strong> · reseñas cortas y sin chamuyo para decidir qué mirar.
 				</p>
 				<div class="site-footer__actions">
+					<nav class="site-footer__nav" aria-label="Navegación del sitio">
+						{
+							footerLinks.map((link) => (
+								<a class="site-footer__link" href={link.href}>
+									{link.label}
+								</a>
+							))
+						}
+					</nav>
 					<a
 						class="site-footer__donate"
 						href="https://cafecito.app/cineposta"
@@ -138,15 +163,6 @@ const footerLinks = [
 						/>
 						Apoyá el sitio
 					</a>
-					<nav class="site-footer__nav" aria-label="Navegación del sitio">
-						{
-							footerLinks.map((link) => (
-								<a class="site-footer__link" href={link.href}>
-									{link.label}
-								</a>
-							))
-						}
-					</nav>
 				</div>
 			</div>
 		</footer>

@@ -16,6 +16,10 @@ export const SITE_IMAGE_PATH = '/brand/cineposta-logo-full.png';
 export const ABOUT_PATH = '/sobre-cine-posta/';
 export const METHODOLOGY_PATH = '/como-funciona/';
 export const PRIVACY_PATH = '/politica-de-privacidad/';
+export const EDITORIAL_POLICY_PATH = '/politica-editorial/';
+export const SOURCES_AND_DATA_PATH = '/fuentes-y-datos/';
+export const COPYRIGHT_PATH = '/copyright-y-uso-de-material/';
+export const CONTACT_PATH = '/contacto/';
 export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
 
 type StructuredDataValue = Record<string, unknown>;
@@ -162,6 +166,35 @@ export function createAboutPageStructuredData(
 			'@type': 'AboutPage',
 			'@id': `${aboutUrl}#webpage`,
 			url: aboutUrl,
+			name: pageTitle,
+			description: pageDescription,
+			inLanguage: SITE_LANGUAGE,
+			isPartOf: {
+				'@id': getWebsiteId(),
+			},
+			about: {
+				'@id': getOrganizationId(),
+			},
+		},
+	];
+}
+
+export function createSimplePageStructuredData(
+	pagePath: string,
+	pageTitle: string,
+	pageDescription: string,
+	pageType: 'WebPage' | 'ContactPage' = 'WebPage',
+): StructuredDataValue[] {
+	const pageUrl = asAbsoluteUrl(pagePath);
+
+	return [
+		createOrganizationSchema(),
+		createWebsiteSchema(),
+		{
+			'@context': 'https://schema.org',
+			'@type': pageType,
+			'@id': `${pageUrl}#webpage`,
+			url: pageUrl,
 			name: pageTitle,
 			description: pageDescription,
 			inLanguage: SITE_LANGUAGE,
