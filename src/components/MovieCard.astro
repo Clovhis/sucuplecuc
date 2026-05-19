@@ -5,6 +5,7 @@ import {
 	getMoviePath,
 	getMoviePlatformLabel,
 	getMoviePlatforms,
+	getPositiveVerdictFilterId,
 	getPosterUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
@@ -33,6 +34,8 @@ const quickCast = movie.mainCast.slice(0, 2).join(', ');
 const moviePlatforms = getMoviePlatforms(movie);
 const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);
 const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
+const positiveVerdictFilterId =
+	movie.verdict === 'recomendada' && !showAbsoluteCinemaSticker ? getPositiveVerdictFilterId(verdictLabel) : '';
 const quickMeta = [String(movie.year), movie.category, getMoviePlatformLabel(movie)]
 	.filter(Boolean)
 	.join(' · ');
@@ -67,6 +70,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	data-movie-cast={quickCast}
 	data-movie-platforms={getNormalizedMoviePlatforms(movie).join(',')}
 	data-movie-absolute-cinema={showAbsoluteCinemaSticker ? 'true' : 'false'}
+	data-movie-positive-verdict-id={positiveVerdictFilterId}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">

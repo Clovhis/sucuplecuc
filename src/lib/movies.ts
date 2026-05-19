@@ -40,6 +40,12 @@ export interface RecommendationGenreOption {
 	label: string;
 }
 
+export interface PositiveVerdictFilterOption {
+	id: string;
+	label: string;
+	count: number;
+}
+
 export interface MovieLinkRecommendation {
 	slug: string;
 	title: string;
@@ -89,6 +95,14 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 const MAX_VERDICT_LABEL_LENGTH = 21;
 const MAX_SYNOPSIS_LENGTH = 320;
 const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
+const POSITIVE_VERDICT_FILTER_ORDER = [
+	'recontra garpa',
+	'muy buena',
+	'esta muy bien',
+	'esta buena',
+	'recomendada',
+];
+const POSITIVE_VERDICT_FILTER_LABELS = new Set(POSITIVE_VERDICT_FILTER_ORDER);
 const REVIEWISH_SYNOPSIS_PATTERNS = [
 	/\bfunciona mejor\b/i,
 	/\bse deja ver\b/i,
@@ -471,6 +485,52 @@ export function normalizeSearchText(value: string): string {
 		.replace(/[\u0300-\u036f]/g, '')
 		.toLowerCase()
 		.trim();
+}
+
+export function getPositiveVerdictFilterId(value: string): string {
+	return normalizeSearchText(value).replace(/\s+/g, '-');
+}
+
+function getPositiveVerdictFilterRank(label: string): number {
+	const normalizedLabel = normalizeSearchText(label).replace(/\s+/g, ' ');
+	const orderIndex = POSITIVE_VERDICT_FILTER_ORDER.indexOf(normalizedLabel);
+	return orderIndex === -1 ? POSITIVE_VERDICT_FILTER_ORDER.length : orderIndex;
+}
+
+export function getPositiveVerdictFilterOptions(movies: Movie[]): PositiveVerdictFilterOption[] {
+	const countsByLabel = new Map<string, number>();
+
+	for (const movie of movies) {
+		if (movie.verdict !== 'recomendada' || isAbsoluteCinemaMovie(movie)) {
+			continue;
+		}
+
+		const label = getVerdictLabel(movie).trim();
+		if (!label) {
+			continue;
+		}
+		const normalizedLabel = normalizeSearchText(label).replace(/\s+/g, ' ');
+		if (!POSITIVE_VERDICT_FILTER_LABELS.has(normalizedLabel)) {
+			continue;
+		}
+
+		countsByLabel.set(label, (countsByLabel.get(label) ?? 0) + 1);
+	}
+
+	return Array.from(countsByLabel.entries())
+		.map(([label, count]) => ({
+			id: getPositiveVerdictFilterId(label),
+			label,
+			count,
+		}))
+		.sort((left, right) => {
+			const rankDelta = getPositiveVerdictFilterRank(left.label) - getPositiveVerdictFilterRank(right.label);
+			if (rankDelta !== 0) {
+				return rankDelta;
+			}
+
+			return right.count - left.count || left.label.localeCompare(right.label, 'es');
+		});
 }
 
 function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void {

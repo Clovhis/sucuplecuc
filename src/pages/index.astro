@@ -8,7 +8,13 @@ import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCafecitoSupporters } from '../lib/cafecitoSupporters';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
-import { getMovies, getUpcomingMovieReleases, isAbsoluteCinemaMovie, RECOMMENDATION_GENRE_OPTIONS } from '../lib/movies';
+import {
+	getMovies,
+	getPositiveVerdictFilterOptions,
+	getUpcomingMovieReleases,
+	isAbsoluteCinemaMovie,
+	RECOMMENDATION_GENRE_OPTIONS,
+} from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
 import { CONTACT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
@@ -19,6 +25,8 @@ const movies = getMovies();
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
 const absoluteCinemaCount = movies.filter(isAbsoluteCinemaMovie).length;
+const positiveVerdictOptions = getPositiveVerdictFilterOptions(movies);
+const hasSpecialFilters = absoluteCinemaCount > 0 || positiveVerdictOptions.length > 0;
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 3);
 const editorialRankings = getEditorialRankings(movies);
 const editorialRankingPools = editorialRankings.map((ranking) => ({
@@ -333,11 +341,10 @@ function formatUpcomingReleaseDate(value: string) {
 					<section class="home-results-tools fade-up" style="--item-delay: 140ms;" aria-labelledby="home-results-tools-title">
 						<div class="home-results-tools__header">
 							<div>
-								<p class="home-results-tools__kicker">Catálogo</p>
 								<h2 id="home-results-tools-title">Películas publicadas</h2>
 							</div>
-							<p class="home-results-tools__summary" data-movie-search-summary>
-								{movies.length} títulos publicados.
+							<p class="home-results-tools__summary">
+								Combiná y jugá con los filtros para descubrir la película que querés ver hoy.
 							</p>
 						</div>
 						<div class="home-results-tools__filters">
@@ -387,18 +394,37 @@ function formatUpcomingReleaseDate(value: string) {
 									}
 								</div>
 							</section>
-								{
-									absoluteCinemaCount > 0 && (
-										<section class="home-special-filter" data-home-special-filter>
-											<button
-												type="button"
-												class="home-special-filter__chip"
-											data-home-absolute-cinema-chip
-											aria-pressed="false"
-										>
-											<span>Absolute Cinema</span>
-											<span>{absoluteCinemaCount}</span>
-										</button>
+							{
+								hasSpecialFilters && (
+									<section class="home-special-filter" data-home-special-filter>
+										{
+											absoluteCinemaCount > 0 && (
+												<button
+													type="button"
+													class="home-special-filter__chip"
+													data-home-absolute-cinema-chip
+													aria-pressed="false"
+												>
+													<span>Absolute Cinema</span>
+													<span>{absoluteCinemaCount}</span>
+												</button>
+											)
+										}
+										{
+											positiveVerdictOptions.map((verdictOption) => (
+												<button
+													type="button"
+													class="home-special-filter__chip"
+													data-home-positive-verdict-chip
+													data-home-positive-verdict-id={verdictOption.id}
+													data-home-positive-verdict-label={verdictOption.label}
+													aria-pressed="false"
+												>
+													<span>{verdictOption.label}</span>
+													<span>{verdictOption.count}</span>
+												</button>
+											))
+										}
 									</section>
 								)
 							}
