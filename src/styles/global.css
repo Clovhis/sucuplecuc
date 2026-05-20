@@ -1258,6 +1258,11 @@ img {
 	--platform-chip-logo-width: 4.5rem;
 }
 
+.home-platform-filter__badge.platform-chip--dgo {
+	--platform-chip-logo-width: 3.25rem;
+	--platform-chip-logo-max-height: 1.2rem;
+}
+
 .home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo,
 .home-platform-filter__badge.platform-chip--crunchyroll .platform-chip__logo {
 	max-height: 1.04rem;
@@ -2957,6 +2962,16 @@ img {
 	color: #ffb16a;
 	background: rgba(244, 117, 33, 0.12);
 	border-color: rgba(244, 117, 33, 0.34);
+}
+
+.platform-chip--dgo {
+	--platform-chip-logo-width: 3rem;
+	--platform-chip-logo-max-height: 1.06rem;
+	--platform-tile-logo-width: 3.45rem;
+	--platform-tile-logo-max-height: 1.22rem;
+	color: #ff8a28;
+	background: linear-gradient(180deg, rgba(255, 138, 40, 0.16), rgba(20, 73, 132, 0.1));
+	border-color: rgba(255, 138, 40, 0.34);
 }
 
 .review-clamp {

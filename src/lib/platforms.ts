@@ -12,6 +12,7 @@ export type PlatformVariant =
 	| 'apple-tv'
 	| 'mercado-play'
 	| 'crunchyroll'
+	| 'dgo'
 	| 'stremio';
 
 export interface PlatformAsset {
@@ -51,6 +52,7 @@ const PLATFORM_DISPLAY_LABELS: Partial<Record<PlatformVariant, string>> = {
 	'apple-tv': 'Apple TV+',
 	'mercado-play': 'Mercado Play',
 	crunchyroll: 'Crunchyroll',
+	dgo: 'DGO',
 	stremio: 'Stremio',
 };
 
@@ -68,6 +70,8 @@ const PLATFORM_VARIANTS_BY_LABEL: Record<string, PlatformVariant> = {
 	'apple tv+': 'apple-tv',
 	'mercado play': 'mercado-play',
 	crunchyroll: 'crunchyroll',
+	dgo: 'dgo',
+	'directv go': 'dgo',
 	stremio: 'stremio',
 };
 
@@ -80,9 +84,10 @@ const PLATFORM_FILTER_ORDER = [
 	'mercado play',
 	'apple tv',
 	'crunchyroll',
-	UNCONFIRMED_PLATFORM_FILTER_LABEL,
+	'dgo',
 	'cine',
 	'cine.ar',
+	UNCONFIRMED_PLATFORM_FILTER_LABEL,
 ] as const;
 
 const PLATFORM_FILTER_ORDER_INDEX = new Map<string, number>(
@@ -124,6 +129,10 @@ export const PLATFORM_ASSETS: Partial<Record<Exclude<PlatformVariant, 'default' 
 	},
 	crunchyroll: {
 		src: '/brand/platforms/crunchyroll.svg',
+		wide: true,
+	},
+	dgo: {
+		src: '/brand/platforms/dgo.png',
 		wide: true,
 	},
 	stremio: {

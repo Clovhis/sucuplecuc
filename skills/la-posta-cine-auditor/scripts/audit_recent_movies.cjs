@@ -21,6 +21,7 @@ const ALLOWED_PLATFORMS = new Set([
 	'Disney Plus',
 	'Mercado Play',
 	'Crunchyroll',
+	'DGO',
 	'Stremio',
 ]);
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);

@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-18. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-20. Fuente: src/data/movies/*.json
 
 Total de peliculas: 870
 
@@ -278,7 +278,7 @@ Total de peliculas: 870
 | 2021 | Eternals | eternals-2021 | Acción | Disney Plus | +13 |
 | 2021 | F9: The Fast Saga | f9-the-fast-saga-2021 | Acción | Stremio | +13 |
 | 2021 | Free Guy | free-guy-2021 | Acción | Disney Plus | +13 |
-| 2021 | Godzilla vs. Kong | godzilla-vs-kong-2021 | Acción | Netflix | +13 |
+| 2021 | Godzilla vs. Kong | godzilla-vs-kong-2021 | Acción | Netflix + DGO | +13 |
 | 2021 | Halloween Kills: La noche aún no termina | halloween-kills-2021 | Terror | Stremio | +16 |
 | 2021 | Home Sweet Home Alone | home-sweet-home-alone-2021 | Comedia | Disney Plus | ATP |
 | 2021 | Jungle Cruise | jungle-cruise-2021 | Acción | Disney Plus | +13 |
@@ -302,9 +302,9 @@ Total de peliculas: 870
 | 2020 | Earwig and the Witch | earwig-and-the-witch-2020 | Anime | Netflix | ATP |
 | 2020 | Nomadland | nomadland-2020 | Drama | Disney Plus | +17 |
 | 2020 | Rifkin's Festival | rifkin-s-festival-2020 | Comedia | Stremio | +13 |
-| 2020 | Tenet | tenet-2020 | Ciencia ficcion | HBO Max | +13 |
+| 2020 | Tenet | tenet-2020 | Ciencia ficcion | HBO Max + DGO | +13 |
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus | +13 |
-| 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max | +13 |
+| 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max + DGO | +13 |
 | 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus | +13 |
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus | +13 |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus | +13 |
