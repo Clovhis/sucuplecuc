@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-20. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-21. Fuente: src/data/movies/*.json
 
-Total de peliculas: 870
+Total de peliculas: 871
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -44,6 +44,7 @@ Total de peliculas: 870
 | 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
 | 2026 | Michael | michael-2026 | Drama | Cine | +13 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Cine | +17 |
+| 2026 | Obsesión | obsesion-2026 | Terror | Cine | +17 |
 | 2026 | Othello | othello-2026 | Drama | Stremio | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
@@ -103,7 +104,7 @@ Total de peliculas: 870
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Stremio | ATP |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
-| 2025 | Marty Supreme | marty-supreme-2025 | Drama | HBO Max | +13 |
+| 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
 | 2025 | Me has robado el corazón | me-has-robado-el-corazon-2025 | Comedia romántica | Stremio | +16 |
 | 2025 | Mickey 17 | mickey-17-2025 | Aventura | HBO Max | +13 |
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Stremio | +13 |
