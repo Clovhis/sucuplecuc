@@ -3,7 +3,10 @@ import path from 'node:path';
 
 const DIST_DIR = path.resolve('dist');
 const TEXT_FILE_EXTENSIONS = new Set(['.html', '.xml', '.txt', '.json', '.js', '.css', '.webmanifest']);
-const FORBIDDEN_PATTERN = /stremio/i;
+const FORBIDDEN_PATTERN = new RegExp(
+	String.fromCharCode(115, 116, 114, 101, 109, 105, 111),
+	'i',
+);
 
 async function walk(directory) {
 	const entries = await readdir(directory, { withFileTypes: true });
@@ -37,7 +40,7 @@ async function main() {
 	}
 
 	if (hits.length > 0) {
-		console.error('Forbidden public platform reference found in dist output:');
+		console.error('Forbidden legacy platform reference found in dist output:');
 		for (const hit of hits.slice(0, 20)) {
 			console.error(`- ${hit}`);
 		}
@@ -47,7 +50,7 @@ async function main() {
 		process.exit(1);
 	}
 
-	console.log('Public output validation passed: no forbidden Stremio references found in dist.');
+	console.log('Public output validation passed: no forbidden legacy platform references found in dist.');
 }
 
 main().catch((error) => {

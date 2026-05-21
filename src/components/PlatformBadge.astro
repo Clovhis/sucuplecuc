@@ -33,7 +33,7 @@ const rootClasses =
 			{
 				variant === 'cine' ? (
 					<span class="platform-chip__cine-label">{displayLabel}</span>
-				) : isKnownPlatform ? (
+				) : isKnownPlatform && platformAsset ? (
 					<img
 						class:list={['platform-chip__logo', platformAsset?.wide && 'platform-chip__logo--wide']}
 						src={platformAsset!.src}

@@ -195,7 +195,7 @@ function buildGeneratedReview(movie, index) {
 	const label = safeName(movie.verdictLabel, 'VEREDICTO');
 	const platform = getPlatform(movie);
 	const platformSentence =
-		platform && platform !== 'Stremio'
+		platform && platform !== 'Otras plataformas'
 			? `Que ${movie.title} esté ubicada en ${platform} también ayuda: es una de esas decisiones que dependen mucho del tipo de plan que tengas esa noche.`
 			: `Con ${movie.title}, la decisión pasa menos por disponibilidad y más por cuánto te tiente este cruce puntual de nombres, género y premisa.`;
 	const runtimeSentence = Number.isInteger(movie.runtimeMinutes)

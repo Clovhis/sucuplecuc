@@ -102,7 +102,7 @@ The bundled script checks:
 - `verdictLabel` hard cap of `21` visible characters so the card badge never clips
 - `verdictLabel` readability so the badge says clearly if the movie is buena, pasable o mala
 - platform labels against the site allowlist
-- `releasePlatform` / `releasePlatforms` consistency: no duplicates, max `2` labels total, `releasePlatform` preserved as primary, and `Stremio` kept exclusive
+- `releasePlatform` / `releasePlatforms` consistency: no duplicates, max `2` labels total, `releasePlatform` preserved as primary, and `Otras plataformas` kept exclusive
 - Argentine audience title drift: `title` should reflect the name used in Argentina, while `originalTitle` keeps the source/original title
 - catalog sync in `docs/movie-catalog-reference.md`
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
@@ -132,7 +132,7 @@ The short-or-robotized review check is mandatory too:
 
 - treat a review that is too short, underdeveloped, or obviously reusable as a hard stop
 - treat template scaffolds and fill-in-the-blank sentences as a hard stop even if the copy is grammatically correct
-- examples of forbidden reviewer shortcuts: generic closings that only restate the verdict, reusable structures with title/cast swapped in, or copy that could describe another movie unchanged
+- examples of forbidden reviewer shortcuts: generic closings that only restate the verdict, verdict-led stock lines like `ZAFA y...` / `PASABLE para...`, reusable structures with title/cast swapped in, or copy that could describe another movie unchanged
 - if the audit reports `short-review`, `underdeveloped-review`, `duplicate-long-sentence`, `reused-opener-pattern`, `generated-review-marker`, or equivalent robotized signals, rewrite the review before signing off
 
 The exclusive profile reconciliation check is mandatory too:

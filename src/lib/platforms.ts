@@ -13,7 +13,7 @@ export type PlatformVariant =
 	| 'mercado-play'
 	| 'crunchyroll'
 	| 'dgo'
-	| 'stremio';
+	| 'other-platforms';
 
 export interface PlatformAsset {
 	src: string;
@@ -53,7 +53,7 @@ const PLATFORM_DISPLAY_LABELS: Partial<Record<PlatformVariant, string>> = {
 	'mercado-play': 'Mercado Play',
 	crunchyroll: 'Crunchyroll',
 	dgo: 'DGO',
-	stremio: 'Stremio',
+	'other-platforms': 'Otras plataformas',
 };
 
 const PLATFORM_VARIANTS_BY_LABEL: Record<string, PlatformVariant> = {
@@ -72,7 +72,14 @@ const PLATFORM_VARIANTS_BY_LABEL: Record<string, PlatformVariant> = {
 	crunchyroll: 'crunchyroll',
 	dgo: 'dgo',
 	'directv go': 'dgo',
-	stremio: 'stremio',
+	'otras plataformas': 'other-platforms',
+	'otros plataformas': 'other-platforms',
+	'otras plataformas online': 'other-platforms',
+	'otras plataformas ar': 'other-platforms',
+	'otras plataformas argentina': 'other-platforms',
+	'otras plataformas arg': 'other-platforms',
+	'a confirmar': 'other-platforms',
+	'disponibilidad a confirmar': 'other-platforms',
 };
 
 const PLATFORM_FILTER_ORDER = [
@@ -135,10 +142,6 @@ export const PLATFORM_ASSETS: Partial<Record<Exclude<PlatformVariant, 'default' 
 		src: '/brand/platforms/dgo.png',
 		wide: true,
 	},
-	stremio: {
-		src: '/brand/platforms/stremio-wordmark.png',
-		wide: true,
-	},
 };
 
 export function normalizePlatformLabel(value: string | null | undefined): string {
@@ -174,7 +177,7 @@ function isUnconfirmedPlatformLabel(value: string | null | undefined): boolean {
 	const normalizedValue = normalizePlatformLabel(value);
 
 	return (
-		getPlatformVariant(value) === 'stremio' ||
+		getPlatformVariant(value) === 'other-platforms' ||
 		normalizedValue === UNCONFIRMED_PLATFORM_FILTER_LABEL ||
 		LEGACY_UNCONFIRMED_PLATFORM_FILTER_LABELS.has(normalizedValue)
 	);

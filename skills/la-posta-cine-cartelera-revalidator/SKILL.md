@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-cartelera-revalidator
-description: "Revalidate La Posta Cine movie entries that still claim `releasePlatform: \"Cine\"` against live Argentine theatrical availability and legal AR platform data, then downgrade stale entries to a mapped platform, an optional 2-label multi-platform combination, or `Stremio` and refresh `docs/movie-catalog-reference.md`. Use when the user asks to audit cartelera, stale \"En cines\" badges, current theatrical status, or after `la-posta-cine-add-movie` / `la-posta-cine-recent-scout` when a new or edited title ends in `Cine`."
+description: "Revalidate La Posta Cine movie entries that still claim `releasePlatform: \"Cine\"` against live Argentine theatrical availability from multiple AR-facing sources plus legal AR platform data, then downgrade stale entries to a mapped platform, an optional 2-label multi-platform combination, or `Otras plataformas` and refresh `docs/movie-catalog-reference.md`. Use when the user asks to audit cartelera, stale \"En cines\" badges, current theatrical status, or after `la-posta-cine-add-movie` / `la-posta-cine-recent-scout` when a new or edited title ends in `Cine`."
 ---
 
 # la-posta-cine-cartelera-revalidator
@@ -82,11 +82,14 @@ Run:
 node skills/la-posta-cine-cartelera-revalidator/scripts/fetch_cartelera_titles.mjs
 ```
 
-Primary theatrical truth source:
+Primary theatrical truth sources:
 
 - `https://m.cinesargentinos.com.ar/cartelera/`
+- `https://www.cinemark.com.ar/elegi-pelicula`
 
 Keep `releasePlatform: "Cine"` only when the title is clearly present in the current Argentine cartelera or a directly equivalent AR theatrical listing is confirmed.
+
+If `Cines Argentinos` misses a same-day title but `Cinemark Argentina` still lists it as current theatrical availability (`SHOWING_NOW` / vigente en la grilla de funciones), treat that as sufficient evidence to keep `Cine`.
 
 Allow title equivalence when marketing names differ slightly, for example:
 
@@ -120,9 +123,9 @@ Platform resolver rules:
   - `CINE.AR`
 - Prefer `FLATRATE` subscription offers first.
 - Keep `releasePlatform` as the primary label. If a second legal AR provider is also clearly confirmed, persist both in `releasePlatforms` with a hard cap of `2` total labels.
-- Never combine `Stremio` with another provider.
+- Never combine `Otras plataformas` with another provider.
 - If no `FLATRATE` offer exists but AR still has a clearly legal transactional offer on an allowlisted provider, use that provider label as primary and add a second verified legal provider only if it is also well supported.
-- If no legal AR platform can be verified, set `releasePlatform: "Stremio"` and omit `releasePlatforms`.
+- If no legal AR platform can be verified, set `releasePlatform: "Otras plataformas"` and omit `releasePlatforms`.
 
 Never leave `releasePlatform` empty after this skill runs.
 
@@ -132,7 +135,7 @@ Update only titles whose platform changes.
 
 Common outcomes:
 
-- `Cine` -> `Stremio`
+- `Cine` -> `Otras plataformas`
 - `Cine` -> `Apple TV`
 - `Cine` -> `Prime Video`
 - `Cine` -> `Netflix + Mercado Play`
@@ -170,11 +173,11 @@ If the user reached this skill from `la-posta-cine-add-movie` or `la-posta-cine-
 
 If a title has ambiguous evidence:
 
-- prefer `Stremio` over leaving a stale `Cine`
+- prefer `Otras plataformas` over leaving a stale `Cine`
 - explain which live sources were checked
 - include the exact title/date mismatch that made theatrical status unreliable
 
-If Cines Argentinos is unreachable, fall back to JustWatch AR plus one additional trustworthy AR-facing source before preserving `Cine`.
+If `Cines Argentinos` is unreachable, fall back to `Cinemark Argentina` plus one additional trustworthy AR-facing source before preserving `Cine`.
 
 ## Output
 
@@ -185,7 +188,7 @@ Return:
 3. titles that remain in `Cine`
 4. titles moved to another legal platform
 5. titles moved to a legal AR multi-platform combination
-6. titles moved to `Stremio`
+6. titles moved to `Otras plataformas`
 7. source URLs used for the key decisions
 8. confirmation that `docs/movie-catalog-reference.md` was refreshed
 9. confirmation that `la-posta-cine-auditor` was triggered or executed next

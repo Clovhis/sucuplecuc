@@ -22,7 +22,7 @@ const ALLOWED_PLATFORMS = new Set([
 	'Mercado Play',
 	'Crunchyroll',
 	'DGO',
-	'Stremio',
+	'Otras plataformas',
 ]);
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
@@ -136,11 +136,14 @@ const LEGENDARY_MOVIE_SLUGS = new Set([
 const LEGENDARY_LABEL_PATTERNS = ['legendaria', 'obra maestra', 'clasico total'];
 const TRUSTED_PERSON_IMAGE_HOSTS = new Set([
 	'commons.wikimedia.org',
+	'images.plex.tv',
 	'media.themoviedb.org',
 	'metadata-static.plex.tv',
 	'api.screendollars.com',
 	'images.squarespace-cdn.com',
 	's3-eu-west-1.amazonaws.com',
+	'firstwind.co.jp',
+	'swallow-p.com',
 	'tn.com.ar',
 	'www.sonypicturesanimation.com',
 	'sonypicturesanimation.com',

@@ -301,8 +301,8 @@ Platform policy for Argentina (mandatory):
 
 - Always resolve `releasePlatform` for Argentine audience (`AR`) using trustworthy availability sources (prefer JustWatch `ar` pages and/or official platform pages).
 - `releasePlatform` remains the primary/platform badge leader. When a second verified legal AR platform also exists, store both in `releasePlatforms` with a hard cap of `2` total labels.
-- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `Stremio`.
-- `Stremio` is exclusive: if the movie resolves to `Stremio`, do not also create `releasePlatforms` and do not combine it with any other provider.
+- Allowed platform labels for AR are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `Otras plataformas`.
+- `Otras plataformas` is exclusive: if the movie resolves to `Otras plataformas`, do not also create `releasePlatforms` and do not combine it with any other provider.
 - Mandatory resolver flow (do not skip):
   1. Search availability for exact movie + year in AR.
   2. Read only AR offers and identify `FLATRATE` subscription availability first.
@@ -318,12 +318,12 @@ Platform policy for Argentina (mandatory):
   4. If at least one mapped legal AR provider exists, use the best verified provider as `releasePlatform`.
   5. If a second mapped legal AR provider is also verified, persist both in `releasePlatforms`, preserving `releasePlatform` as the first label and never exceeding `2` total labels.
   6. If more than `2` legal AR providers are verified, keep only the primary `releasePlatform` plus one secondary label that is also clearly confirmed for AR.
-  7. If `releasePlatform` is already `Stremio`, keep it single-platform even if a weaker or conflicting source suggests another service.
+  7. If `releasePlatform` is already `Otras plataformas`, keep it single-platform even if a weaker or conflicting source suggests another service.
   8. If there is no mapped legal AR provider but AR indicates cinema-only availability, set `releasePlatform: "Cine"` and omit `releasePlatforms`.
-  9. If AR availability exists only in providers outside allowlist, or AR has no confirmed availability, set `releasePlatform: "Stremio"` and omit `releasePlatforms`.
+  9. If AR availability exists only in providers outside allowlist, or AR has no confirmed availability, set `releasePlatform: "Otras plataformas"` and omit `releasePlatforms`.
 - If `releasePlatform` ends in `Cine`, do not trust that label as final until `la-posta-cine-cartelera-revalidator` confirms the movie is still in current Argentine cartelera.
 - Forbidden shortcuts:
-  - Do not assign `Stremio` by default without AR lookup attempt.
+  - Do not assign `Otras plataformas` by default without AR lookup attempt.
   - Do not copy platform from another movie without validating title/year.
   - Do not use non-AR market data to override AR result.
 - Never leave `releasePlatform` empty.
@@ -370,7 +370,7 @@ If optional fields are not used by current project schema, keep only supported f
 If `screenshots` are not confirmed, keep `[]`.
 The director/cast portraits are not stored inside the movie JSON; they must live in `src/data/people.json` plus local files in `public/people/`.
 If the movie is single-platform, omit `releasePlatforms`.
-If the movie resolves to `Stremio`, keep only `releasePlatform: "Stremio"`.
+If the movie resolves to `Otras plataformas`, keep only `releasePlatform: "Otras plataformas"`.
 
 ## Editorial metadata (mandatory)
 
@@ -482,6 +482,7 @@ Write `review` by combining user feedback + external review enrichment:
 - Castellano rioplatense
 - Honest, colloquial tone
 - Write it manually from scratch for that movie. Do not use templates, fill-in-the-blank structures, or recycled sentence skeletons from previous loads.
+- Never arm the review around reusable verdict scaffolds like `ZAFA y ...`, `PASABLE para ...`, `RECOMENDADA si ...` or any closing that could be pasted onto another title with one noun swap.
 - Max 5 lines when user provides clear feedback
 - If user provides little/no feedback, you may expand to 6-8 lines to add useful context from verified sources
 - No spoilers
@@ -552,14 +553,14 @@ Set premiere fields only when requested or confidently confirmed:
 - `premiereLabel: "ESTRENO"`
 - `releasePlatform`: primary AR label
 - `releasePlatforms`: optional array with max `2` total legal AR labels when the title is truly multi-platform
-- Allowed labels are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `Stremio`
-- Never combine `Stremio` with another provider in premiere metadata
+- Allowed labels are only: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Cine`, `CINE.AR`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `Otras plataformas`
+- Never combine `Otras plataformas` with another provider in premiere metadata
 
 If not confirmed, keep:
 
 - `isPremiere: false`
 - `premiereLabel: ""`
-- `releasePlatform: "Stremio"`
+- `releasePlatform: "Otras plataformas"`
 
 ## Validation and commit gate
 
@@ -578,7 +579,7 @@ If build fails, abort. Do not edit site code.
 If the movie still claims `Cine`, run the chained revalidation step before final diff/commit:
 
 ```text
-Usa $la-posta-cine-cartelera-revalidator para confirmar si <title> sigue realmente en cartelera argentina o si corresponde otra plataforma / Stremio.
+Usa $la-posta-cine-cartelera-revalidator para confirmar si <title> sigue realmente en cartelera argentina o si corresponde otra plataforma / Otras plataformas.
 ```
 
 2. File-scope validation:
@@ -643,6 +644,7 @@ Return all of the following:
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
 - [ ] Review written manually from scratch, without template scaffolds, stock closings, or robotized phrasing that could fit another movie unchanged
+- [ ] Review does not lean on verdict-led stock lines (`ZAFA y...`, `PASABLE para...`, `SE DEJA VER si...`) as opener or closer
 - [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 6 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources
 - [ ] Original title and category from trustworthy sources
@@ -651,7 +653,7 @@ Return all of the following:
 - [ ] External review enrichment from specialized North American source (or explicit fallback/user-provided link)
 - [ ] Awards enrichment completed: premios/galardones verified and `awards.wins` always present (wins list or `[]`)
 - [ ] `releasePlatform` / optional `releasePlatforms` resolved with AR evidence and mapping flow (not defaulted blindly)
-- [ ] Multi-platform titles keep max `2` labels total and never combine another provider with `Stremio`
+- [ ] Multi-platform titles keep max `2` labels total and never combine another provider with `Otras plataformas`
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
 - [ ] Lagrimómetro eligibility checked from primary `category`; no manual lagrimometro field added
 - [ ] Jajámetro eligibility checked from primary `category`; no manual jajametro field added; never shown together with lagrimómetro

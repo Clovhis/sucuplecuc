@@ -39,6 +39,27 @@ const GENERATED_REVIEW_MARKERS = [
 	'puede ser mas seca o mas ligera segun el caso',
 	'quiza no sea su titulo mas arrollador pero se sostiene con autoridad de principio a fin',
 ];
+const VERDICT_LED_OPENERS = [
+	'zafa',
+	'pasable',
+	'se deja ver',
+	'recomendada',
+	'esta buena',
+	'esta muy bien',
+	'mala',
+	'malisima',
+	'no la mires',
+	'basura total',
+];
+const VERDICT_LED_SUFFIX_MARKERS = [
+	'entra bien si',
+	'para una salida de cartelera',
+	'si queres pasarla bien',
+	'si buscas',
+	'si te gustan',
+	'si el cuerpo te pide',
+	'para verla si',
+];
 
 function parseArgs(argv) {
 	const args = {
@@ -242,6 +263,29 @@ function decorateMarker(marker, movie) {
 	return marker.replaceAll('<title>', titleVariant);
 }
 
+function getVerdictLedTemplateHit(review) {
+	const sentences = String(review || '')
+		.split(/[\n\r]+|(?<=[.!?])\s+/)
+		.map((sentence) => sentence.trim())
+		.filter(Boolean);
+	const tailSentence = normalizeText(sentences[sentences.length - 1] || '');
+	if (!tailSentence) {
+		return null;
+	}
+
+	const opener = VERDICT_LED_OPENERS.find((token) => tailSentence === token || tailSentence.startsWith(`${token} `));
+	if (!opener) {
+		return null;
+	}
+
+	const suffix = VERDICT_LED_SUFFIX_MARKERS.find((marker) => tailSentence.includes(marker));
+	if (!suffix) {
+		return null;
+	}
+
+	return `verdict-led stock closing :: ${opener} :: ${suffix}`;
+}
+
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalizeText(movie.review);
 	const normalizedDirector = normalizeText(movie.director);
@@ -250,6 +294,10 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const markerHits = GENERATED_REVIEW_MARKERS.filter((marker) =>
 		normalizedReview.includes(decorateMarker(marker, movie)),
 	);
+	const verdictLedTemplateHit = getVerdictLedTemplateHit(movie.review);
+	if (verdictLedTemplateHit) {
+		markerHits.push(verdictLedTemplateHit);
+	}
 	const titleMentions = Math.max(...buildTitleVariants(movie).map((variant) => countPhraseOccurrences(normalizedReview, variant)), 0);
 	const castMatches = getCastMatches(movie, normalizedReview);
 	const castHits = castMatches.length;
