@@ -1412,6 +1412,42 @@ img {
 		0 0 0 1px rgba(246, 205, 100, 0.11);
 }
 
+.home-special-filter__chip[data-home-positive-verdict-chip] {
+	border-color: rgba(49, 179, 109, 0.45);
+	background:
+		linear-gradient(180deg, rgba(49, 179, 109, 0.16), rgba(49, 179, 109, 0.04)),
+		rgba(12, 24, 18, 0.86);
+	color: #80f3b0;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.08),
+		0 12px 24px rgba(6, 9, 14, 0.2);
+}
+
+.home-special-filter__chip[data-home-positive-verdict-chip] span:last-child {
+	background: rgba(49, 179, 109, 0.18);
+	color: #e6fff0;
+	box-shadow: inset 0 0 0 1px rgba(128, 243, 176, 0.1);
+}
+
+.home-special-filter__chip[data-home-positive-verdict-chip]:hover,
+.home-special-filter__chip[data-home-positive-verdict-chip]:focus-visible,
+.home-special-filter__chip[data-home-positive-verdict-chip].is-active {
+	border-color: rgba(49, 179, 109, 0.7);
+	background:
+		linear-gradient(135deg, rgba(49, 179, 109, 0.25), rgba(117, 153, 255, 0.07)),
+		rgba(13, 31, 22, 0.94);
+	color: #b6ffd0;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.12),
+		0 18px 34px rgba(10, 15, 24, 0.3),
+		0 0 0 1px rgba(49, 179, 109, 0.1);
+}
+
+.home-special-filter__chip[data-home-positive-verdict-chip].is-active span:last-child {
+	background: rgba(49, 179, 109, 0.25);
+	color: #f0fff5;
+}
+
 .home-special-filter__chip[data-home-absolute-cinema-chip]:hover,
 .home-special-filter__chip[data-home-absolute-cinema-chip]:focus-visible,
 .home-special-filter__chip[data-home-absolute-cinema-chip].is-active {
