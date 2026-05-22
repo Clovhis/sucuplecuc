@@ -38,6 +38,8 @@ Run only when the request is about creating a new movie-content entry in La post
 
 Apply add-only mode by default.
 
+Movie detail pages already include a global Share panel for every `/peliculas/<slug>/` page. The panel is rendered from site code (`src/pages/peliculas/[slug].astro`, `src/scripts/movie-detail.ts`, `src/styles/global.css`) and uses the movie slug/canonical URL plus local social logos under `public/brand/social/`. A normal movie load must not add share/social fields to movie JSON, must not add per-movie share links, and must not modify the Share UI/assets. Correct slug creation is enough for the Share panel to work.
+
 Allowed paths:
 
 - `src/data/movies/**`
@@ -68,6 +70,8 @@ Forbidden paths:
 
 Never commit directly to `main`.
 Never auto-fix project code if build fails.
+
+If a diff includes Share implementation files (`src/pages/peliculas/[slug].astro`, `src/scripts/movie-detail.ts`, `src/styles/global.css`, or `public/brand/social/**`) during a movie-content load, treat it as out of scope and abort unless the user explicitly requested a site-code/share change in that same task.
 
 ## Inputs to extract from user message
 
@@ -332,6 +336,8 @@ Platform policy for Argentina (mandatory):
 ## Content schema
 
 Create one JSON file in `src/data/movies/<slug>.json` using project schema:
+
+Do not add any share/social/link-copy fields. The movie detail Share card is automatic and derives its URL from `getMoviePath(movie.slug)` plus `SITE_URL`.
 
 ```json
 {
@@ -641,6 +647,7 @@ Return all of the following:
 - [ ] Exactly one new movie file added (unless user explicitly authorized otherwise)
 - [ ] `docs/movie-catalog-reference.md` refreshed and includes new movie slug(s)
 - [ ] No modified files outside allowlist
+- [ ] No Share UI/assets modified during a content-only load; movie share links derive automatically from slug/canonical URL
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
 - [ ] Review written manually from scratch, without template scaffolds, stock closings, or robotized phrasing that could fit another movie unchanged

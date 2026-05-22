@@ -81,6 +81,26 @@ const FORBIDDEN_REVIEW_SITE_REFERENCES = [
 	'sensacine',
 	'tomatazos',
 ];
+const DISALLOWED_SHARE_FIELDS = [
+	'share',
+	'shareUrl',
+	'shareText',
+	'shareLinks',
+	'social',
+	'socialLinks',
+	'whatsapp',
+	'whatsappUrl',
+	'xShare',
+	'xShareUrl',
+	'twitter',
+	'twitterUrl',
+	'instagram',
+	'instagramUrl',
+	'tiktok',
+	'tiktokUrl',
+	'copyUrl',
+	'canonicalUrl',
+];
 const OPAQUE_VERDICT_LABEL_TOKENS = [
 	'seca',
 	'calida',
@@ -615,6 +635,20 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	}
 }
 
+function validateShareFields(movie, candidatePath, findings) {
+	for (const field of DISALLOWED_SHARE_FIELDS) {
+		if (Object.prototype.hasOwnProperty.call(movie, field)) {
+			addFinding(
+				findings,
+				'error',
+				'manual-share-field',
+				candidatePath,
+				`Do not add "${field}" to movie JSON. The movie detail Share panel derives links from slug/canonical URL.`,
+			);
+		}
+	}
+}
+
 function validateMovieShape(movie, candidatePath, catalogText, findings, knownMovieSlugs) {
 	const requiredStrings = [
 		'slug',
@@ -663,6 +697,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	}
 
 	const normalizedCategory = normalizeText(movie.category || '');
+	validateShareFields(movie, candidatePath, findings);
 	validateMeterEligibility(movie, candidatePath, findings);
 
 	const isAnimatedTitle =

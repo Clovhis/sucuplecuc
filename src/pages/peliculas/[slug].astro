@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
 	getAbsoluteCinemaStickerUrl,
 	getMovieEditorialSummary,
+	getMoviePath,
 	getMovies,
 	getMoviePlatformLabel,
 	getMoviePlatforms,
@@ -27,7 +28,7 @@ import { getLagrimometroScore } from '../../lib/lagrimometro';
 import { getJajametroScore } from '../../lib/jajametro';
 import { getCagazometroScore } from '../../lib/cagazometro';
 import { getExplosiometroScore } from '../../lib/explosiometro';
-import { METHODOLOGY_PATH, SITE_NAME, createMovieStructuredData } from '../../lib/seo';
+import { METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -133,6 +134,15 @@ const awardCategories = groupedAwards.flatMap((group) =>
 	})),
 );
 const relatedIntro = `Si ${movie.title} te gustó, seguí por acá.`;
+const movieCanonicalUrl = new URL(getMoviePath(movie.slug), SITE_URL).toString();
+const shareText = `Mirá la reseña de ${movie.title} (${movie.year}) en ${SITE_NAME}`;
+const whatsappShareUrl = `https://wa.me/?${new URLSearchParams({
+	text: `${shareText} ${movieCanonicalUrl}`,
+}).toString()}`;
+const xShareUrl = `https://twitter.com/intent/tweet?${new URLSearchParams({
+	text: shareText,
+	url: movieCanonicalUrl,
+}).toString()}`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
 const reviewPurposeNote = 'Reseña corta y al hueso para decidir si verla o dejarla pasar.';
 const editorialUpdatedLabel = movie.releaseDate
@@ -392,22 +402,66 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 			}
 
 			<div class="movie-detail__panel fade-up" style="--item-delay: 100ms;">
-				<h1 class="movie-detail__title">{movie.title}</h1>
-				<div class="movie-detail__meta">
-					<span>{movie.year}</span>
-					<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
-					<PlatformBadgeGroup platforms={moviePlatforms} />
-				</div>
-				<div class="movie-detail__editorial-byline" aria-label="Datos editoriales de la reseña">
-					<span>Por {SITE_NAME}</span>
-					{editorialUpdatedLabel && (
-						<>
-							<span aria-hidden="true">·</span>
-							<time datetime={movie.releaseDate}>Estreno: {editorialUpdatedLabel}</time>
-						</>
-					)}
-				</div>
-				<p class="movie-detail__editorial-note">{reviewPurposeNote}</p>
+				<header class="movie-detail__heading">
+					<div class="movie-detail__intro">
+						<h1 class="movie-detail__title">{movie.title}</h1>
+						<div class="movie-detail__meta">
+							<span>{movie.year}</span>
+							<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
+							<PlatformBadgeGroup platforms={moviePlatforms} />
+						</div>
+						<div class="movie-detail__editorial-byline" aria-label="Datos editoriales de la reseña">
+							<span>Por {SITE_NAME}</span>
+							{editorialUpdatedLabel && (
+								<>
+									<span aria-hidden="true">·</span>
+									<time datetime={movie.releaseDate}>Estreno: {editorialUpdatedLabel}</time>
+								</>
+							)}
+						</div>
+						<p class="movie-detail__editorial-note">{reviewPurposeNote}</p>
+					</div>
+					<section
+						class="movie-share"
+						aria-labelledby={`share-${movie.slug}`}
+						data-movie-share
+						data-share-url={movieCanonicalUrl}
+						data-share-title={pageTitle}
+						data-share-text={shareText}
+					>
+						<div class="movie-share__top">
+							<p id={`share-${movie.slug}`} class="movie-share__title">Share</p>
+							<p class="movie-share__hint">Pasá esta ficha por mensaje o redes.</p>
+						</div>
+						<div class="movie-share__actions" aria-label={`Compartir ${movie.title}`}>
+							<button class="movie-share__button movie-share__button--primary" type="button" data-native-share hidden>
+								Compartir
+							</button>
+							<a
+								class="movie-share__button movie-share__button--whatsapp"
+								href={whatsappShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label={`Compartir ${movie.title} por WhatsApp`}
+							>
+								<img class="movie-share__logo movie-share__logo--whatsapp" src="/brand/social/whatsapp.svg" alt="" aria-hidden="true" loading="lazy" />
+							</a>
+							<a
+								class="movie-share__button movie-share__button--x"
+								href={xShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label={`Compartir ${movie.title} en X`}
+							>
+								<img class="movie-share__logo movie-share__logo--x" src="/brand/social/x.svg" alt="" aria-hidden="true" loading="lazy" />
+							</a>
+							<button class="movie-share__button movie-share__button--copy" type="button" data-copy-share-url>
+								Copiar URL
+							</button>
+						</div>
+						<p class="movie-share__status" role="status" aria-live="polite" data-share-status></p>
+					</section>
+				</header>
 				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
 					<div class="movie-detail__hero-stack">
 						{trailerPageUrl ? (

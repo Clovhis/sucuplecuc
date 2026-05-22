@@ -25,6 +25,8 @@ If the branch still contains fresh `Cine` claims that have not yet been checked 
 
 Use this skill after a movie add/backfill/revalidation workflow, especially when the branch contains new files under `src/data/movies`, platform changes from `Cine` to another label, or provider adjustments that add/remove `releasePlatforms`.
 
+Movie detail pages have a global Share panel. This auditor treats Share code/assets (`src/pages/peliculas/[slug].astro`, `src/scripts/movie-detail.ts`, `src/styles/global.css`, `public/brand/social/**`) as site-code surface, not movie-content data. For normal movie audits, any diff touching those paths is out of scope unless the user explicitly requested Share/site UI work.
+
 Allowed fix paths:
 
 - `src/data/movies/**`
@@ -40,6 +42,7 @@ Forbidden fix paths:
 - `src/layouts/**`
 - `src/styles/**`
 - `public/**`
+- `public/brand/social/**` (Share/social logo assets)
 - `.github/**`
 - `package*.json`
 - `astro.config.*`
@@ -95,6 +98,7 @@ The bundled script checks:
 - traceable profile presence for every credited director/main cast member (`IMDb`, `Wikidata`, `TMDb`, `Plex`, `Anime-Planet`, etc.)
 - editorial recommendation completeness for `becauseYouLiked` and `related`
 - editorial recommendation slugs that resolve to real movie entries
+- manual Share/social fields in movie JSON; Share links derive globally from slug/canonical URL and must not live in movie data
 - automatic meter eligibility, matching the movie detail page priority: primary `Drama`/`Romance`/`Romántica` shows Lagrimómetro; if not, primary laugh-first `Comedia` shows Jajámetro; if neither, primary `Terror` shows Cagazómetro; if none of those, primary `Accion`/`Acción` shows Explosiómetro. Secondary genres alone do not trigger any meter, and movie JSON must not include manual meter fields
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
 - `awards.wins` structure and supported award types
@@ -155,6 +159,12 @@ The automatic meter check is mandatory too:
 - for primary `Drama`, `Romance`, `Romántica`, or `Comedia romántica`, expect only Lagrimómetro; for primary laugh-first `Comedia` with no drama/romance token, expect only Jajámetro; for primary `Terror` with no drama/romance/comedy token, expect only Cagazómetro; for primary `Accion`/`Acción` with no drama/romance/comedy/terror token, expect only Explosiómetro
 - when a meter score seems tonally wrong, verify reception through trustworthy sources such as Rotten Tomatoes, Metacritic, IMDb, reputable critics, or official materials before changing review/category data
 
+The Share field check is mandatory too:
+
+- treat any manual `share`, `shareUrl`, `shareText`, `shareLinks`, `social`, `socialLinks`, `whatsapp`, `whatsappUrl`, `xShare`, `xShareUrl`, `twitter`, `twitterUrl`, `instagram`, `instagramUrl`, `tiktok`, `tiktokUrl`, `copyUrl`, or `canonicalUrl` field as a hard stop
+- remove manual Share/social fields from movie JSON because the site-level Share panel is automatic
+- in a content-only audit, treat changes to Share UI/assets as forbidden site-code changes unless explicitly requested by the user
+
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:
 
 - official YouTube channels for trailers
@@ -186,3 +196,4 @@ Report:
 - explicit confirmation that the people pool is complete for every credited director/main cast member in the audited batch, including nationality plus a traceable profile, and that any missing birth date or portrait is an explicit verified gap rather than fabricated data
 - explicit confirmation that deceased people do not render as living ages and that animation/anime titles use original voice cast in `mainCast`
 - explicit confirmation that credited people with exclusive profiles still resolve to their dynamic `/personas/<slug>/` pages
+- explicit confirmation that no audited movie JSON contains manual Share/social fields and no Share UI/assets were changed in a content-only audit
