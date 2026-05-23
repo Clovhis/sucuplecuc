@@ -188,9 +188,6 @@ function formatUpcomingReleaseDate(value: string) {
 												<div class="home-people-showcase__header">
 													<div class="home-people-showcase__heading">
 														<p class="home-people-showcase__eyebrow">Fichas con bio</p>
-														<p class="home-people-showcase__intro-copy">
-															Actores, actrices y directores con recorrido, pelis relacionadas y data útil para ubicarte rápido.
-														</p>
 													</div>
 													<div class="home-people-showcase__intro" aria-label="Cobertura actual del sitio">
 														<ul class="home-people-showcase__stats">
@@ -280,7 +277,6 @@ function formatUpcomingReleaseDate(value: string) {
 						editorialRankings.length > 0 && (
 							<section class="editorial-rankings fade-up" style="--item-delay: 120ms;" aria-labelledby="editorial-rankings-title">
 								<div class="editorial-rankings__header">
-									<p class="editorial-rankings__eyebrow">Rotan en cada visita</p>
 									<h2 id="editorial-rankings-title">Sugerencias rápidas</h2>
 								</div>
 								<div class="editorial-rankings__grid">
@@ -288,16 +284,7 @@ function formatUpcomingReleaseDate(value: string) {
 										<article
 											class={`editorial-rankings__card editorial-rankings__card--${ranking.id}`}
 											style={`--ranking-order: ${rankingIndex};`}
-											data-editorial-ranking-card={ranking.id}
 										>
-											<div class="editorial-rankings__card-title">
-												<span class={`editorial-rankings__icon editorial-rankings__icon--${ranking.id}`} aria-hidden="true"></span>
-												<h3>{ranking.title}</h3>
-												<span class="editorial-rankings__badge" data-editorial-ranking-count>
-													{ranking.movies.length} opciones
-												</span>
-											</div>
-											<p>{ranking.description}</p>
 											<ol data-editorial-ranking-list={ranking.id}>
 												{ranking.movies.map((entry) => (
 													<li>
@@ -343,9 +330,6 @@ function formatUpcomingReleaseDate(value: string) {
 							<div>
 								<h2 id="home-results-tools-title">Películas publicadas</h2>
 							</div>
-							<p class="home-results-tools__summary">
-								Combiná y jugá con los filtros para descubrir la película que querés ver hoy.
-							</p>
 						</div>
 						<div class="home-results-tools__filters">
 							{

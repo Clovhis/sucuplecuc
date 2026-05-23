@@ -157,7 +157,6 @@ function renderRankings(rankings: EditorialRankingSelection[]): void {
 		}
 
 		const list = document.querySelector<HTMLOListElement>(`[data-editorial-ranking-list="${ranking.id}"]`);
-		const card = document.querySelector<HTMLElement>(`[data-editorial-ranking-card="${ranking.id}"]`);
 
 		if (!list) {
 			continue;
@@ -167,12 +166,6 @@ function renderRankings(rankings: EditorialRankingSelection[]): void {
 
 		for (const entry of ranking.movies) {
 			list.append(createRankingItem(entry));
-		}
-
-		const badge = card?.querySelector<HTMLElement>('[data-editorial-ranking-count]');
-
-		if (badge) {
-			badge.textContent = `${ranking.movies.length} opciones`;
 		}
 	}
 }
