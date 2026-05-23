@@ -84,6 +84,16 @@ Preview:
 npm run preview
 ```
 
+Playwright desktop/mobile:
+
+```bash
+npm run playwright:install
+npm run playwright:verify
+npm run test:e2e
+```
+
+`playwright:install` instala Chromium, Firefox y WebKit en la cache local de Playwright. `test:e2e` corre smoke tests en desktop Chromium/Firefox/WebKit y mobile Chromium/WebKit contra el preview estático en un puerto aislado (`43210` por defecto) para no reutilizar un dev server viejo por accidente.
+
 Validación de contenido:
 
 ```bash

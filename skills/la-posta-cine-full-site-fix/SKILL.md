@@ -26,6 +26,7 @@ This skill is not report-only. If it finds a clear issue, fix it in the same run
 - If the worktree is dirty before branch prep, stop and ask the user how to handle it. Do not stash or discard changes on your own.
 - Always run the bundled full-site auditor first.
 - Always finish with `npx astro check` and `npm run build`.
+- For site-code, layout, browser script, responsive UI, or public output changes, also run `npm run playwright:verify` and `npm run test:e2e`.
 
 ## Branch prep
 
@@ -125,6 +126,13 @@ npm run build
 git diff --stat
 ```
 
+If the branch changed site-code, layout, browser scripts, responsive UI, or public output behavior, also run:
+
+```bash
+npm run playwright:verify
+npm run test:e2e
+```
+
 If the audit still fails, continue fixing until the remaining findings are either resolved or explicitly blocked by missing source certainty.
 
 ## Output
@@ -137,3 +145,4 @@ Report:
 - remaining warnings, if any
 - `astro check` result
 - build result
+- Playwright verification and e2e result when browser-facing code changed

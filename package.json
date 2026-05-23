@@ -23,6 +23,11 @@
     "audit:profiles": "node ./skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --all",
     "validate:content": "node ./scripts/validate-content.mjs",
     "validate:public-output": "node ./scripts/validate-public-output.mjs",
+    "playwright:install": "playwright install chromium firefox webkit",
+    "playwright:verify": "node ./scripts/verify-playwright.mjs",
+    "test:e2e": "npm run build && playwright test",
+    "test:e2e:desktop": "npm run build && playwright test --project=desktop-chromium --project=desktop-firefox --project=desktop-webkit",
+    "test:e2e:mobile": "npm run build && playwright test --project=mobile-chromium --project=mobile-webkit",
     "hooks:install": "node ./scripts/install-hooks.mjs",
     "rewrite:adsense-priority": "node ./scripts/rewrite-priority-adsense-content.mjs",
     "gsc:sites": "node ./scripts/gsc.mjs sites",
@@ -38,6 +43,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.8",
+    "@playwright/test": "^1.60.0",
     "typescript": "^5.9.3"
   }
 }
