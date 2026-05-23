@@ -33,6 +33,9 @@ const editorialRankingPools = editorialRankings.map((ranking) => ({
 	id: ranking.id,
 	movies: ranking.candidateMovies,
 }));
+const INITIAL_HOME_MOVIE_COUNT = 12;
+const initialHomeMovies = movies.slice(0, INITIAL_HOME_MOVIE_COUNT);
+const deferredHomeMovies = movies.slice(INITIAL_HOME_MOVIE_COUNT);
 const movieCountLabel = new Intl.NumberFormat('es-AR').format(movies.length);
 const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.length);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de películas';
@@ -329,7 +332,14 @@ function formatUpcomingReleaseDate(value: string) {
 						<div class="home-results-tools__header">
 							<div>
 								<h2 id="home-results-tools-title">Películas publicadas</h2>
+								<p class="home-results-tools__intro">
+									Usá la búsqueda o los filtros para abrir el catálogo completo.
+								</p>
 							</div>
+							<p class="home-results-tools__counter" aria-label={`${movieCountLabel} películas en el catálogo`}>
+								<strong>{movieCountLabel}</strong>
+								<span>películas en catálogo</span>
+							</p>
 						</div>
 						<div class="home-results-tools__filters">
 							{
@@ -433,9 +443,24 @@ function formatUpcomingReleaseDate(value: string) {
 						</div>
 					</section>
 
-					<section class="movie-grid" aria-label="Películas publicadas" data-movie-search-grid>
-						{movies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
+					<section
+						class="movie-grid"
+						aria-label="Películas publicadas"
+						data-movie-search-grid
+						data-movie-initial-count={initialHomeMovies.length}
+						data-movie-total-count={movies.length}
+					>
+						{initialHomeMovies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
 					</section>
+					<div hidden data-movie-card-templates aria-hidden="true">
+						{
+							deferredHomeMovies.map((movie, index) => (
+								<template data-movie-card-template>
+									<MovieCard movie={movie} index={index + initialHomeMovies.length} />
+								</template>
+							))
+						}
+					</div>
 				</>
 			) : (
 				<p class="message-box">Todavía no cargamos ninguna peli. Meté la primera ficha manual.</p>

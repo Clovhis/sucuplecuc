@@ -10,7 +10,9 @@ type ReturnBehavior = 'reset';
 type ChipDataKey = 'homeGenreId' | 'homePlatformId' | 'homePositiveVerdictId';
 
 type MovieIndexEntry = {
-	element: HTMLElement;
+	element: HTMLElement | null;
+	template: HTMLTemplateElement | null;
+	initial: boolean;
 	searchable: string;
 	title: string;
 	year: string;
@@ -24,6 +26,7 @@ type MovieIndexEntry = {
 	absoluteCinema: boolean;
 	positiveVerdict: string;
 	poster: HTMLImageElement | null;
+	linkPrepared: boolean;
 };
 
 type PersonIndexEntry = {
@@ -85,6 +88,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const suggestionsCopy = searchRoot.querySelector<HTMLElement>('[data-movie-search-dropdown-copy]');
 	const suggestionsList = searchRoot.querySelector<HTMLElement>('[data-movie-search-suggestions]');
 	const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-movie-card]'));
+	const cardTemplates = Array.from(document.querySelectorAll<HTMLTemplateElement>('[data-movie-card-template]'));
 	const people = Array.from(searchRoot.querySelectorAll<HTMLElement>('[data-person-search-entry]'));
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
@@ -99,12 +103,21 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		return;
 	}
 
-	const movieIndex = cards.flatMap((card): MovieIndexEntry[] => {
+	const getTemplateCard = (template: HTMLTemplateElement): HTMLElement | null =>
+		template.content.querySelector<HTMLElement>('[data-movie-card]');
+
+	const createMovieIndexEntry = (
+		card: HTMLElement,
+		template: HTMLTemplateElement | null,
+		initial: boolean,
+	): MovieIndexEntry => {
 		const poster = card.querySelector('[data-movie-poster]');
 		const link = card.querySelector('a');
 
-		return [{
-			element: card,
+		return {
+			element: initial ? card : null,
+			template,
+			initial,
 			searchable: card.dataset.movieSearch ?? '',
 			title: card.dataset.movieTitle ?? '',
 			year: card.dataset.movieYear ?? '',
@@ -129,9 +142,18 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			),
 			absoluteCinema: card.dataset.movieAbsoluteCinema === 'true',
 			positiveVerdict: card.dataset.moviePositiveVerdictId ?? '',
-			poster: poster instanceof HTMLImageElement ? poster : null,
-		}];
-	});
+			poster: initial && poster instanceof HTMLImageElement ? poster : null,
+			linkPrepared: false,
+		};
+	};
+
+	const movieIndex = [
+		...cards.map((card) => createMovieIndexEntry(card, null, true)),
+		...cardTemplates.flatMap((template): MovieIndexEntry[] => {
+			const card = getTemplateCard(template);
+			return card instanceof HTMLElement ? [createMovieIndexEntry(card, template, false)] : [];
+		}),
+	];
 	const personIndex = people.flatMap((person): PersonIndexEntry[] => {
 		const url = person.dataset.personUrl ?? '';
 		const title = person.dataset.personTitle ?? '';
@@ -152,7 +174,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			entryType: 'person',
 		}];
 	});
+	const totalMovieCount = Number(searchResultsGrid?.dataset.movieTotalCount ?? movieIndex.length);
 
+	let visibleMovieEntries = movieIndex.filter((entry) => entry.initial);
 	let activeGenre: string | null = null;
 	let activePlatform: string | null = null;
 	let activeAbsoluteCinema = false;
@@ -189,7 +213,14 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		return nextEntries;
 	};
 
-	const getVisibleEntries = (): MovieIndexEntry[] => movieIndex.filter((entry) => !entry.element.hidden);
+	const hasActiveCatalogQuery = (): boolean =>
+		normalize(input.value).length > 0 ||
+		Boolean(activeGenre) ||
+		Boolean(activePlatform) ||
+		activeAbsoluteCinema ||
+		Boolean(activePositiveVerdict);
+
+	const getVisibleEntries = (): MovieIndexEntry[] => visibleMovieEntries;
 
 	const getSuggestionMatches = (query: string, matchingMovies: MovieIndexEntry[]): SearchSuggestionEntry[] =>
 		query.length === 0
@@ -310,6 +341,59 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		skipPersistOnPageHide = true;
 		setReturnBehavior('reset');
 		removeStoredHomeState();
+	};
+
+	const prepareCardLink = (entry: MovieIndexEntry): void => {
+		if (entry.linkPrepared || !(entry.element instanceof HTMLElement)) return;
+
+		const link = entry.element.querySelector('a');
+		if (!(link instanceof HTMLAnchorElement)) return;
+
+		link.addEventListener('click', (event) => {
+			if (!isPlainLeftClick(event)) return;
+			prepareResetOnReturn();
+		});
+		entry.linkPrepared = true;
+	};
+
+	const ensureCardElement = (entry: MovieIndexEntry): HTMLElement | null => {
+		if (entry.element instanceof HTMLElement) {
+			prepareCardLink(entry);
+			return entry.element;
+		}
+
+		if (!(entry.template instanceof HTMLTemplateElement)) {
+			return null;
+		}
+
+		const card = entry.template.content.firstElementChild?.cloneNode(true);
+		if (!(card instanceof HTMLElement)) {
+			return null;
+		}
+
+		entry.element = card;
+		const poster = card.querySelector('[data-movie-poster]');
+		entry.poster = poster instanceof HTMLImageElement ? poster : null;
+		prepareCardLink(entry);
+		return card;
+	};
+
+	const renderMovieGrid = (entries: MovieIndexEntry[]): void => {
+		if (!(searchResultsGrid instanceof HTMLElement)) {
+			visibleMovieEntries = entries;
+			return;
+		}
+
+		const elements = entries
+			.map((entry) => ensureCardElement(entry))
+			.filter((element): element is HTMLElement => element instanceof HTMLElement);
+
+		for (const element of elements) {
+			element.hidden = false;
+		}
+
+		searchResultsGrid.replaceChildren(...elements);
+		visibleMovieEntries = entries.filter((entry) => entry.element instanceof HTMLElement);
 	};
 
 	const updateClearButtonVisibility = (): void => {
@@ -446,7 +530,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		if (!hasQuery && !hasGenre && !hasPlatform && !hasAbsoluteCinema && !hasPositiveVerdict) {
 			for (const summary of summaries) {
-				summary.textContent = `${visibleCount} títulos publicados.`;
+				summary.textContent = `${visibleCount} títulos recientes visibles de ${totalMovieCount} publicados.`;
 			}
 			return;
 		}
@@ -644,10 +728,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		lastAppliedAbsoluteCinema = absoluteCinemaKey;
 		lastAppliedPositiveVerdict = positiveVerdictKey;
 
-		let visibleCount = 0;
 		const matchingEntries: MovieIndexEntry[] = [];
+		const shouldShowFullCatalogMatches = hasActiveCatalogQuery();
 
 		for (const entry of movieIndex) {
+			if (!shouldShowFullCatalogMatches) {
+				if (entry.initial) {
+					matchingEntries.push(entry);
+				}
+				continue;
+			}
+
 			const genreMatch = !activeGenre || entry.genres.has(activeGenre);
 			const platformMatch = !activePlatform || entry.platforms.has(activePlatform);
 			const absoluteCinemaMatch = !activeAbsoluteCinema || entry.absoluteCinema;
@@ -655,18 +746,16 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			const queryMatch = query.length === 0 || entry.searchable.includes(query);
 			const show = genreMatch && platformMatch && absoluteCinemaMatch && positiveVerdictMatch && queryMatch;
 
-			if (entry.element.hidden === show) {
-				entry.element.hidden = !show;
-			}
-
 			if (show) {
-				visibleCount += 1;
 				matchingEntries.push(entry);
 			}
 		}
 
+		renderMovieGrid(matchingEntries);
+		const visibleCount = matchingEntries.length;
+
 		if (emptyState instanceof HTMLElement) {
-			emptyState.hidden = visibleCount > 0;
+			emptyState.hidden = visibleCount > 0 || !shouldShowFullCatalogMatches;
 		}
 
 		renderSuggestions(query, getSuggestionMatches(query, matchingEntries));
@@ -848,17 +937,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		removeStoredHomeState();
 	};
-
-	const cardLinks = movieIndex
-		.map((entry) => entry.element.querySelector('a'))
-		.filter((link): link is HTMLAnchorElement => link instanceof HTMLAnchorElement);
-
-	for (const link of cardLinks) {
-		link.addEventListener('click', (event) => {
-			if (!isPlainLeftClick(event)) return;
-			prepareResetOnReturn();
-		});
-	}
 
 	for (const chip of genreChips) {
 		chip.addEventListener('click', () => {

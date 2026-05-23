@@ -65,6 +65,7 @@ const footerLinks = [
 	{ href: CONTACT_PATH, label: 'Contacto' },
 	{ href: PRIVACY_PATH, label: 'Privacidad' },
 ];
+const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -136,19 +137,10 @@ const footerLinks = [
 		<slot />
 		<footer class="site-footer">
 			<div class="site-footer__inner container">
-				<p class="site-footer__copy">
-					<strong>{SITE_NAME}</strong> · reseñas cortas y sin chamuyo para decidir qué mirar.
-				</p>
-				<div class="site-footer__actions">
-					<nav class="site-footer__nav" aria-label="Navegación del sitio">
-						{
-							footerLinks.map((link) => (
-								<a class="site-footer__link" href={link.href}>
-									{link.label}
-								</a>
-							))
-						}
-					</nav>
+				<div class="site-footer__brand">
+					<p class="site-footer__copy">
+						<strong>{SITE_NAME}</strong> es un proyecto editorial independiente de reseñas cortas, datos de catálogo y recomendaciones para decidir qué mirar sin chamuyo.
+					</p>
 					<a
 						class="site-footer__donate"
 						href="https://cafecito.app/cineposta"
@@ -164,6 +156,18 @@ const footerLinks = [
 						Apoyá el sitio
 					</a>
 				</div>
+				<nav class="site-footer__nav" aria-label="Navegación del sitio">
+					{
+						footerLinks.map((link) => (
+							<a class="site-footer__link" href={link.href}>
+								{link.label}
+							</a>
+						))
+					}
+				</nav>
+				<p class="site-footer__legal">
+					© {currentYear} {SITE_NAME}. Hecho desde Argentina. Las marcas, posters y materiales citados pertenecen a sus titulares.
+				</p>
 			</div>
 		</footer>
 	</body>
