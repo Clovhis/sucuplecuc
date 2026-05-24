@@ -75,6 +75,19 @@ export interface UpcomingMovieRelease {
 	sourceUrl?: string;
 }
 
+export interface WeeklyMovieSuggestion {
+	slug: string;
+	title: string;
+	year: number;
+	releaseDate: string;
+	synopsis: string;
+	verdictLabel: string;
+	movieUrl: string;
+	watchUrl: string;
+	embedUrl: string;
+	thumbnailUrl: string;
+}
+
 export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'accion', label: 'Acción' },
 	{ id: 'comedia', label: 'Comedia' },
@@ -105,6 +118,23 @@ const POSITIVE_VERDICT_FILTER_ORDER = [
 	'recomendada',
 ];
 const POSITIVE_VERDICT_FILTER_LABELS = new Set(POSITIVE_VERDICT_FILTER_ORDER);
+const WEEKLY_SUGGESTION_LABEL_SCORE = new Map<string, number>([
+	['absolute cinema', 100],
+	['recontra garpa', 95],
+	['obra maestra', 94],
+	['clasico total', 93],
+	['muy buena', 88],
+	['garpa mal', 86],
+	['garpa fuerte', 84],
+	['recomendada', 82],
+	['esta muy bien', 80],
+	['esta buena', 78],
+	['dura y buena', 76],
+	['se deja ver', 56],
+	['pasable', 52],
+]);
+const WEEKLY_SUGGESTION_WINDOW_DAYS = 30;
+const DAY_IN_MS = 24 * 60 * 60 * 1000;
 const REVIEWISH_SYNOPSIS_PATTERNS = [
 	/\bfunciona mejor\b/i,
 	/\bse deja ver\b/i,
@@ -374,6 +404,35 @@ function getMovieSortTimestamp(movie: Pick<Movie, 'year' | 'releaseDate'>): numb
 	return Date.UTC(movie.year, 0, 1);
 }
 
+function getReferenceDayTimestamp(referenceDate: Date): number {
+	return Date.UTC(
+		referenceDate.getUTCFullYear(),
+		referenceDate.getUTCMonth(),
+		referenceDate.getUTCDate(),
+	);
+}
+
+function getWeeklySuggestionScore(movie: Movie): number {
+	if (isAbsoluteCinemaMovie(movie)) {
+		return WEEKLY_SUGGESTION_LABEL_SCORE.get('absolute cinema')!;
+	}
+
+	const label = normalizeSearchText(getVerdictLabel(movie)).replace(/\s+/g, ' ');
+	const labelScore = WEEKLY_SUGGESTION_LABEL_SCORE.get(label);
+	if (labelScore !== undefined) {
+		return labelScore;
+	}
+
+	if (movie.verdict === 'recomendada') {
+		return 72;
+	}
+	if (movie.verdict === 'zafa') {
+		return 48;
+	}
+
+	return 0;
+}
+
 export function getMovies(): Movie[] {
 	const movies = Object.values(movieModules)
 		.map((moduleItem) => moduleItem.default)
@@ -387,6 +446,62 @@ export function getMovies(): Movie[] {
 
 	validateMovies(movies);
 	return movies;
+}
+
+export function getWeeklyMovieSuggestion(
+	movies: Movie[],
+	referenceDate = new Date(),
+	windowDays = WEEKLY_SUGGESTION_WINDOW_DAYS,
+): WeeklyMovieSuggestion | null {
+	return getWeeklyMovieSuggestions(movies, referenceDate, windowDays, 1)[0] ?? null;
+}
+
+export function getWeeklyMovieSuggestions(
+	movies: Movie[],
+	referenceDate = new Date(),
+	windowDays = WEEKLY_SUGGESTION_WINDOW_DAYS,
+	limit = 5,
+): WeeklyMovieSuggestion[] {
+	const referenceTimestamp = getReferenceDayTimestamp(referenceDate);
+	const windowStartTimestamp = referenceTimestamp - windowDays * DAY_IN_MS;
+
+	const candidates = movies
+		.filter((movie) => {
+			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) {
+				return false;
+			}
+
+			const releaseTimestamp = getMovieSortTimestamp(movie);
+			return releaseTimestamp >= windowStartTimestamp && releaseTimestamp <= referenceTimestamp;
+		})
+		.map((movie) => ({
+			movie,
+			score: getWeeklySuggestionScore(movie),
+		}))
+		.filter((entry) => entry.score > 0)
+		.sort(
+			(left, right) =>
+				right.score - left.score ||
+				getMovieSortTimestamp(right.movie) - getMovieSortTimestamp(left.movie) ||
+				left.movie.title.localeCompare(right.movie.title, 'es'),
+		)
+		.slice(0, Math.max(1, limit));
+
+	return candidates
+		.map((entry) => entry.movie)
+		.filter((suggestion): suggestion is Movie & { releaseDate: string } => Boolean(suggestion.releaseDate))
+		.map((suggestion) => ({
+			slug: suggestion.slug,
+			title: suggestion.title,
+			year: suggestion.year,
+			releaseDate: suggestion.releaseDate,
+			synopsis: suggestion.synopsis,
+			verdictLabel: getVerdictLabel(suggestion),
+			movieUrl: getMoviePath(suggestion.slug),
+			watchUrl: getYoutubeWatchUrl(suggestion.trailerYoutubeId),
+			embedUrl: getYoutubeAutoplayEmbedUrl(suggestion.trailerYoutubeId),
+			thumbnailUrl: getYoutubeThumbnailUrl(suggestion.trailerYoutubeId),
+		}));
 }
 
 export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4): UpcomingMovieRelease[] {
@@ -943,6 +1058,23 @@ export function getPosterUrl(poster: string): string {
 export function getYoutubeEmbedUrl(youtubeId: string): string {
 	const normalizedId = normalizeYoutubeId(youtubeId);
 	return normalizedId ? `https://www.youtube.com/embed/${normalizedId}` : '';
+}
+
+export function getYoutubeAutoplayEmbedUrl(youtubeId: string): string {
+	const normalizedId = normalizeYoutubeId(youtubeId);
+	if (!normalizedId) {
+		return '';
+	}
+
+	const params = new URLSearchParams({
+		autoplay: '1',
+		mute: '1',
+		playsinline: '1',
+		rel: '0',
+		modestbranding: '1',
+	});
+
+	return `https://www.youtube.com/embed/${normalizedId}?${params.toString()}`;
 }
 
 export function getYoutubeWatchUrl(youtubeId: string): string {

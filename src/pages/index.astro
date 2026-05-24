@@ -1,17 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import CafecitoSupportersTicker from '../components/CafecitoSupportersTicker.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import MovieCard from '../components/MovieCard.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
 import PlatformBadge from '../components/PlatformBadge.astro';
-import { getCafecitoSupporters } from '../lib/cafecitoSupporters';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
 	getMovies,
 	getPositiveVerdictFilterOptions,
 	getUpcomingMovieReleases,
+	getWeeklyMovieSuggestions,
 	isAbsoluteCinemaMovie,
 	RECOMMENDATION_GENRE_OPTIONS,
 } from '../lib/movies';
@@ -20,7 +19,6 @@ import { getPlatformFilterOptions } from '../lib/platforms';
 import { CONTACT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
-const cafecitoSupporters = await getCafecitoSupporters();
 const movies = getMovies();
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
@@ -29,6 +27,8 @@ const positiveVerdictOptions = getPositiveVerdictFilterOptions(movies);
 const hasSpecialFilters = absoluteCinemaCount > 0 || positiveVerdictOptions.length > 0;
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 3);
 const editorialRankings = getEditorialRankings(movies);
+const weeklyMovieSuggestions = getWeeklyMovieSuggestions(movies);
+const weeklyMovieSuggestion = weeklyMovieSuggestions[0] ?? null;
 const editorialRankingPools = editorialRankings.map((ranking) => ({
 	id: ranking.id,
 	movies: ranking.candidateMovies,
@@ -161,11 +161,6 @@ function formatUpcomingReleaseDate(value: string) {
 					<p class="movie-search__summary u-visually-hidden" data-movie-search-summary>
 						{movies.length} títulos publicados.
 					</p>
-					<CafecitoSupportersTicker
-						items={cafecitoSupporters.items}
-						profileUrl={cafecitoSupporters.profileUrl}
-						isFallback={cafecitoSupporters.isFallback}
-					/>
 				</section>
 			)
 		}
@@ -328,6 +323,104 @@ function formatUpcomingReleaseDate(value: string) {
 						)
 					}
 
+					{
+						weeklyMovieSuggestion && (
+							<section
+								class="weekly-suggestion fade-up"
+								style="--item-delay: 135ms;"
+								aria-labelledby="weekly-suggestion-title"
+								data-weekly-suggestion-root
+							>
+								<div class="weekly-suggestion__header">
+									<div>
+										<h2 id="weekly-suggestion-title">Sugerencias semanales</h2>
+									</div>
+								</div>
+								<div class="weekly-suggestion__shell">
+									<div class="weekly-suggestion__player">
+										<iframe
+											class="weekly-suggestion__frame"
+											src={weeklyMovieSuggestion.embedUrl}
+											title={`Trailer oficial de ${weeklyMovieSuggestion.title}`}
+											loading="eager"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin"
+											allowfullscreen
+											data-weekly-suggestion-frame
+										></iframe>
+									</div>
+									<div class="weekly-suggestion__content" aria-live="polite">
+										<p class="weekly-suggestion__label">Estreno de los últimos 30 días</p>
+										<h3 data-weekly-suggestion-name>{weeklyMovieSuggestion.title}</h3>
+										<p class="weekly-suggestion__meta">
+											<time
+												datetime={weeklyMovieSuggestion.releaseDate}
+												data-weekly-suggestion-date
+											>
+												{formatUpcomingReleaseDate(weeklyMovieSuggestion.releaseDate)}
+											</time>
+											<span data-weekly-suggestion-year>{weeklyMovieSuggestion.year}</span>
+											<span data-weekly-suggestion-verdict>{weeklyMovieSuggestion.verdictLabel}</span>
+										</p>
+										<p class="weekly-suggestion__synopsis" data-weekly-suggestion-synopsis>
+											{weeklyMovieSuggestion.synopsis}
+										</p>
+										<div class="weekly-suggestion__actions">
+											{
+												weeklyMovieSuggestions.length > 1 && (
+													<div
+														class="weekly-suggestion__nav"
+														role="group"
+														aria-label="Cambiar sugerencia semanal"
+													>
+														<button
+															class="weekly-suggestion__next"
+															type="button"
+															aria-label="Pasar a otra recomendación"
+															data-weekly-suggestion-next
+														>
+															<span>Otra recomendación</span>
+															<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+																<path d="M9 5l7 7-7 7"></path>
+															</svg>
+														</button>
+														<span class="weekly-suggestion__count" data-weekly-suggestion-count>
+															1 de {weeklyMovieSuggestions.length}
+														</span>
+													</div>
+												)
+											}
+											<a
+												class="weekly-suggestion__link"
+												href={weeklyMovieSuggestion.movieUrl}
+												aria-label={`Leer la reseña de ${weeklyMovieSuggestion.title}`}
+												data-weekly-suggestion-review
+											>
+												Leer reseña
+											</a>
+											<a
+												class="weekly-suggestion__youtube"
+												href={weeklyMovieSuggestion.watchUrl}
+												target="_blank"
+												rel="noopener noreferrer"
+												referrerpolicy="no-referrer"
+												data-weekly-suggestion-youtube
+											>
+												Abrir en YouTube
+											</a>
+										</div>
+									</div>
+								</div>
+								<script
+									id="weekly-suggestion-data"
+									type="application/json"
+									is:inline
+									set:html={JSON.stringify(weeklyMovieSuggestions)}
+								></script>
+							</section>
+						)
+					}
+
 					<section class="home-results-tools fade-up" style="--item-delay: 140ms;" aria-labelledby="home-results-tools-title">
 						<div class="home-results-tools__header">
 							<div>
@@ -471,5 +564,6 @@ function formatUpcomingReleaseDate(value: string) {
 
 <!-- Astro 6: page interactivity lives in a typed local module instead of an inline exception block. -->
 <script src="../scripts/editorial-rankings.ts"></script>
+<script src="../scripts/weekly-suggestions.ts"></script>
 <script src="../scripts/home-catalog.ts"></script>
 
