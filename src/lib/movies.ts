@@ -23,6 +23,7 @@ export type RecommendationGenreId =
 	| 'comedia'
 	| 'documental'
 	| 'terror'
+	| 'gore'
 	| 'drama'
 	| 'thriller'
 	| 'sci-fi'
@@ -79,6 +80,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'comedia', label: 'Comedia' },
 	{ id: 'documental', label: 'Documentales' },
 	{ id: 'terror', label: 'Terror' },
+	{ id: 'gore', label: 'Gore' },
 	{ id: 'drama', label: 'Drama' },
 	{ id: 'thriller', label: 'Thriller' },
 	{ id: 'sci-fi', label: 'Sci-Fi' },
@@ -548,6 +550,9 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	}
 	if (normalized.includes('terror') || normalized.includes('horror')) {
 		target.add('terror');
+	}
+	if (normalized.includes('gore') || normalized.includes('splatter')) {
+		target.add('gore');
 	}
 	if (normalized.includes('drama') || normalized.includes('biografic')) {
 		target.add('drama');

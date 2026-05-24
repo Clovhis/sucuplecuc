@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-21. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 876
+Total de peliculas: 895
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -192,6 +192,7 @@ Total de peliculas: 876
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |
 | 2024 | Sueños en Oslo | suenos-de-oslo-2024 | Drama | Cine | +13 |
 | 2024 | Super/Man: La Historia De Christopher Reeve | super-man-the-christopher-reeve-story-2024 | Documental | HBO Max | +13 |
+| 2024 | Terrifier 3 | terrifier-3-2024 | Gore | Otras plataformas | +18 |
 | 2024 | The Apprentice (La historia de Trump) | the-apprentice-2024 | Historia | Otras plataformas | +17 |
 | 2024 | The Beekeeper | the-beekeeper-2024 | Accion | Prime Video + HBO Max | +16 |
 | 2024 | The Brutalist | the-brutalist-2024 | Drama | HBO Max | +16 |
@@ -230,6 +231,7 @@ Total de peliculas: 876
 | 2023 | Poor Things | poor-things-2023 | Comedia | Prime Video | +13 |
 | 2023 | Rascal Does Not Dream of a Sister Venturing Out | rascal-does-not-dream-of-a-sister-venturing-out-2023 | Anime | Crunchyroll | ATP |
 | 2023 | Saltburn | saltburn-2023 | Drama | Prime Video | +15 |
+| 2023 | Saw X | saw-x-2023 | Gore | Otras plataformas | +18 |
 | 2023 | Scream 6 | scream-vi-2023 | Terror | Otras plataformas | +16 |
 | 2023 | Shazam! Fury of the Gods | shazam-fury-of-the-gods-2023 | Accion | Otras plataformas | +13 |
 | 2023 | Spider-Man: Across the Spider-Verse | spider-man-across-the-spider-verse-2023 | Animacion | Otras plataformas | +13 |
@@ -262,6 +264,7 @@ Total de peliculas: 876
 | 2022 | Scream | scream-2022 | Terror | Paramount Plus | +16 |
 | 2022 | Suzume | suzume-2022 | Anime | Crunchyroll | ATP |
 | 2022 | Tár | tar-2022 | Drama | Otras plataformas | +17 |
+| 2022 | Terrifier 2 | terrifier-2-2022 | Gore | Otras plataformas | +18 |
 | 2022 | The Banshees of Inisherin | the-banshees-of-inisherin-2022 | Comedia | Disney Plus | +13 |
 | 2022 | The Batman | the-batman-2022 | Accion | HBO Max | +16 |
 | 2022 | The Fabelmans | the-fabelmans-2022 | Drama | Otras plataformas | +13 |
@@ -296,6 +299,7 @@ Total de peliculas: 876
 | 2021 | Shang-Chi and the Legend of the Ten Rings | shang-chi-and-the-legend-of-the-ten-rings-2021 | Acción | Disney Plus | +13 |
 | 2021 | Space Jam: A New Legacy | space-jam-a-new-legacy-2021 | Animación | HBO Max | ATP |
 | 2021 | Spider-Man: No Way Home | spider-man-no-way-home-2021 | Acción | Otras plataformas | +13 |
+| 2021 | Spiral: From the Book of Saw | spiral-from-the-book-of-saw-2021 | Gore | Otras plataformas | +18 |
 | 2021 | The Matrix Resurrections | the-matrix-resurrections-2021 | Acción | HBO Max | +13 |
 | 2021 | The Power of the Dog | the-power-of-the-dog-2021 | Drama | Netflix | +15 |
 | 2021 | The Suicide Squad | the-suicide-squad-2021 | Acción | HBO Max | +16 |
@@ -359,6 +363,7 @@ Total de peliculas: 876
 | 2017 | Get Out | get-out-2017 | Terror | Otras plataformas | +16 |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus | +13 |
 | 2017 | IT (Eso) | it-2017 | Terror | HBO Max | +16 |
+| 2017 | Jigsaw | jigsaw-2017 | Gore | Otras plataformas | +18 |
 | 2017 | John Wick: Chapter 2 | john-wick-chapter-2-2017 | Accion | Prime Video | +16 |
 | 2017 | Justice League | justice-league-2017 | Accion | Otras plataformas | +13 |
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max | +12 |
@@ -390,6 +395,7 @@ Total de peliculas: 876
 | 2016 | Rogue One: A Star Wars Story | rogue-one-a-star-wars-story-2016 | Ciencia ficcion | Disney Plus | +13 |
 | 2016 | Silencio | silence-2016 | Drama | Otras plataformas | +13 |
 | 2016 | Suicide Squad | suicide-squad-2016 | Accion | Otras plataformas | +13 |
+| 2016 | Terrifier | terrifier-2016 | Gore | Otras plataformas | +18 |
 | 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus | +13 |
 | 2016 | Your Name. | your-name-2016 | Anime | Otras plataformas | ATP |
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus | +13 |
@@ -408,6 +414,7 @@ Total de peliculas: 876
 | 2015 | Star Wars: The Force Awakens | star-wars-episode-vii-the-force-awakens-2015 | Ciencia ficcion | Disney Plus | +13 |
 | 2015 | Terminator Genisys | terminator-genisys-2015 | Accion | Otras plataformas | +13 |
 | 2015 | The Hateful Eight | the-hateful-eight-2015 | Thriller | Prime Video | +17 |
+| 2015 | The Human Centipede 3 (Final Sequence) | the-human-centipede-3-final-sequence-2015 | Gore | Otras plataformas | +18 |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus | +12 |
 | 2014 | Betibú | betibu-2014 | Thriller | Otras plataformas | +12 |
 | 2014 | Big Eyes | big-eyes-2014 | Drama | Otras plataformas | +13 |
@@ -459,6 +466,7 @@ Total de peliculas: 876
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video | +13 |
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Otras plataformas | +13 |
 | 2011 | Harry Potter and the Deathly Hallows: Part 2 | harry-potter-and-the-deathly-hallows-part-2-2011 | Aventura | HBO Max | +12 |
+| 2011 | Hostel: Part III | hostel-part-iii-2011 | Gore | Otras plataformas | +18 |
 | 2011 | Kung Fu Panda 2 | kung-fu-panda-2-2011 | Animacion | Netflix + Prime Video | ATP |
 | 2011 | La invención de Hugo | hugo-2011 | Aventura | Otras plataformas | ATP |
 | 2011 | Las aventuras de Tintín: El secreto del unicornio | the-adventures-of-tintin-2011 | Animacion | Otras plataformas | ATP |
@@ -469,6 +477,7 @@ Total de peliculas: 876
 | 2011 | Rise of the Planet of the Apes | rise-of-the-planet-of-the-apes-2011 | Accion | Disney Plus | +13 |
 | 2011 | Scream 4: grita de nuevo | scream-4-2011 | Terror | Prime Video | +17 |
 | 2011 | The Artist | the-artist-2011 | Comedia | Otras plataformas | ATP |
+| 2011 | The Human Centipede 2 (Full Sequence) | the-human-centipede-2-full-sequence-2011 | Gore | Otras plataformas | +18 |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
 | 2011 | War Horse (Caballo de batalla) | war-horse-2011 | Drama | Otras plataformas | +13 |
@@ -483,6 +492,7 @@ Total de peliculas: 876
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus | +13 |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max | +13 |
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
+| 2010 | Saw 3D | saw-3d-2010 | Gore | Otras plataformas | +18 |
 | 2010 | Shutter Island | shutter-island-2010 | Thriller | Otras plataformas | +17 |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Otras plataformas | +12 |
 | 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
@@ -494,8 +504,10 @@ Total de peliculas: 876
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max | +12 |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix | +16 |
+| 2009 | Saw VI | saw-vi-2009 | Gore | Otras plataformas | +18 |
 | 2009 | Si la cosa funciona | whatever-works-2009 | Comedia | Otras plataformas | +13 |
 | 2009 | Terminator Salvation | terminator-salvation-2009 | Accion | Netflix | +13 |
+| 2009 | The Human Centipede (First Sequence) | the-human-centipede-first-sequence-2009 | Gore | Otras plataformas | +18 |
 | 2009 | Up | up-2009 | Animacion | Disney Plus | ATP |
 | 2009 | Viernes 13 | friday-the-13th-2009 | Terror | Mercado Play | +17 |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max + Mercado Play | +17 |
@@ -506,6 +518,7 @@ Total de peliculas: 876
 | 2008 | Leonera | leonera-2008 | Drama | Netflix | +13 |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Otras plataformas | +17 |
 | 2008 | Quantum of Solace | quantum-of-solace-2008 | Accion | Netflix | +12 |
+| 2008 | Saw V | saw-v-2008 | Gore | Otras plataformas | +18 |
 | 2008 | Shine a Light | shine-a-light-2008 | Documental | Otras plataformas | +13 |
 | 2008 | Slumdog Millionaire | slumdog-millionaire-2008 | Drama | Prime Video | +15 |
 | 2008 | The Dark Knight | the-dark-knight-2008 | Thriller | Otras plataformas | +13 |
@@ -519,9 +532,11 @@ Total de peliculas: 876
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Otras plataformas | +13 |
 | 2007 | Halloween | halloween-2007 | Terror | Otras plataformas | +17 |
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max | +12 |
+| 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
 | 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Otras plataformas | +17 |
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus | +13 |
 | 2007 | Ratatouille | ratatouille-2007 | Animacion | Disney Plus | ATP |
+| 2007 | Saw IV | saw-iv-2007 | Gore | Otras plataformas | +18 |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
 | 2007 | Sweeney Todd: The Demon Barber of Fleet Street | sweeney-todd-the-demon-barber-of-fleet-street-2007 | Musical | Otras plataformas | +17 |
 | 2006 | Casino Royale | casino-royale-2006 | Accion | Netflix | +12 |
@@ -529,6 +544,7 @@ Total de peliculas: 876
 | 2006 | Paprika | paprika-2006 | Anime | Otras plataformas | +13 |
 | 2006 | Pirates of the Caribbean: Dead Man's Chest | pirates-of-the-caribbean-dead-mans-chest-2006 | Aventura | Disney Plus | +13 |
 | 2006 | Rocky Balboa | rocky-balboa-2006 | Drama | Otras plataformas | ATP |
+| 2006 | Saw III | saw-iii-2006 | Gore | Otras plataformas | +18 |
 | 2006 | Scoop | scoop-2006 | Comedia | Otras plataformas | +13 |
 | 2006 | Superman Returns | superman-returns-2006 | Accion | HBO Max | +13 |
 | 2006 | Tales from Earthsea | tales-from-earthsea-2006 | Anime | Netflix | +13 |
@@ -547,10 +563,12 @@ Total de peliculas: 876
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus | +13 |
 | 2005 | Grizzly Man | grizzly-man-2005 | Documental | Otras plataformas | +13 |
 | 2005 | Harry Potter and the Goblet of Fire | harry-potter-and-the-goblet-of-fire-2005 | Aventura | HBO Max | +13 |
+| 2005 | Hostel | hostel-2005 | Gore | Otras plataformas | +18 |
 | 2005 | La guerra de los mundos | war-of-the-worlds-2005 | Ciencia ficcion | Otras plataformas | +13 |
 | 2005 | Match Point | match-point-2005 | Thriller | Otras plataformas | +16 |
 | 2005 | Múnich | munich-2005 | Thriller | Otras plataformas | +17 |
 | 2005 | No Direction Home: Bob Dylan | no-direction-home-bob-dylan-2005 | Documental | Otras plataformas | ATP |
+| 2005 | Saw II | saw-ii-2005 | Gore | Otras plataformas | +18 |
 | 2005 | Star Wars: Episode III - Revenge of the Sith | star-wars-episode-iii-revenge-of-the-sith-2005 | Ciencia ficcion | Disney Plus | +13 |
 | 2005 | Tiempo de valientes | tiempo-de-valientes-2005 | Comedia | Otras plataformas | +13 |
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video | +16 |
@@ -565,6 +583,7 @@ Total de peliculas: 876
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix | +14 |
 | 2004 | Melinda and Melinda | melinda-and-melinda-2004 | Drama | Otras plataformas | +13 |
 | 2004 | Million Dollar Baby | million-dollar-baby-2004 | Drama | Prime Video | +13 |
+| 2004 | Saw | saw-2004 | Gore | Otras plataformas | +18 |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Otras plataformas | ATP |
 | 2004 | The Incredibles | the-incredibles-2004 | Animacion | Disney Plus | ATP |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max | +16 |

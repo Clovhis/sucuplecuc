@@ -3,7 +3,7 @@ type EditorialRankingMovie = {
 	year: number;
 	url: string;
 	verdictLabel: string;
-	meterKind: 'explosiometro' | 'cagazometro' | 'jajametro' | 'lagrimometro';
+	meterKind: 'explosiometro' | 'cagazometro' | 'jajametro' | 'lagrimometro' | 'sangrometro';
 	meterLabel: string;
 	meterScore: number;
 };
@@ -87,7 +87,13 @@ function isRankingMovie(value: unknown): value is EditorialRankingMovie {
 }
 
 function isMeterKind(value: unknown): value is EditorialRankingMovie['meterKind'] {
-	return value === 'explosiometro' || value === 'cagazometro' || value === 'jajametro' || value === 'lagrimometro';
+	return (
+		value === 'explosiometro' ||
+		value === 'cagazometro' ||
+		value === 'jajametro' ||
+		value === 'lagrimometro' ||
+		value === 'sangrometro'
+	);
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {

@@ -552,6 +552,10 @@ function isJajametroCategory(category) {
 	return isComedy && !isLagrimometroCategory(category);
 }
 
+function isSangrometroCategory(category) {
+	return category.includes('gore');
+}
+
 function validateMeterEligibility(movie, candidatePath, findings) {
 	const disallowedMeterFields = [
 		'jajametro',
@@ -566,6 +570,9 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 		'explosiometro',
 		'explosiometroScore',
 		'explosiómetro',
+		'sangrometro',
+		'sangrometroScore',
+		'sangrómetro',
 	];
 	for (const field of disallowedMeterFields) {
 		if (Object.prototype.hasOwnProperty.call(movie, field)) {
@@ -574,20 +581,21 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 				'error',
 				'manual-meter-field',
 				candidatePath,
-				`Do not add "${field}" to movie JSON. Lagrimómetro/Jajámetro/Cagazómetro/Explosiómetro are automatic from primary category.`,
+				`Do not add "${field}" to movie JSON. Lagrimómetro/Jajámetro/Cagazómetro/Explosiómetro/Sangrómetro are automatic from primary category.`,
 			);
 		}
 	}
 
 	const category = normalizeText(movie.category || '');
 	const genres = Array.isArray(movie.genres) ? normalizeText(movie.genres.join(' ')) : '';
-	const primaryShowsLagrimometro = isLagrimometroCategory(category);
+	const primaryShowsSangrometro = isSangrometroCategory(category);
+	const primaryShowsLagrimometro = !primaryShowsSangrometro && isLagrimometroCategory(category);
 	const primaryShowsJajametro = !primaryShowsLagrimometro && isJajametroCategory(category);
-	const primaryShowsCagazometro = !primaryShowsJajametro && !primaryShowsLagrimometro && category.includes('terror');
+	const primaryShowsCagazometro = !primaryShowsSangrometro && !primaryShowsJajametro && !primaryShowsLagrimometro && category.includes('terror');
 	const primaryShowsExplosiometro =
-		!primaryShowsJajametro && !primaryShowsCagazometro && !primaryShowsLagrimometro && category.includes('accion');
+		!primaryShowsSangrometro && !primaryShowsJajametro && !primaryShowsCagazometro && !primaryShowsLagrimometro && category.includes('accion');
 
-	if ([primaryShowsJajametro, primaryShowsLagrimometro, primaryShowsCagazometro, primaryShowsExplosiometro].filter(Boolean).length > 1) {
+	if ([primaryShowsSangrometro, primaryShowsJajametro, primaryShowsLagrimometro, primaryShowsCagazometro, primaryShowsExplosiometro].filter(Boolean).length > 1) {
 		addFinding(findings, 'error', 'conflicting-meter-category', candidatePath, 'Primary category cannot trigger more than one automatic meter.');
 	}
 
@@ -614,7 +622,7 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 		);
 	}
 
-	if (!primaryShowsCagazometro && genres.includes('terror')) {
+	if (!primaryShowsSangrometro && !primaryShowsCagazometro && genres.includes('terror')) {
 		addFinding(
 			findings,
 			'warn',

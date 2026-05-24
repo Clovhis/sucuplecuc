@@ -1791,7 +1791,7 @@ img {
 .editorial-rankings__grid {
 	display: grid;
 	position: relative;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 	gap: 0.85rem;
 	z-index: 1;
 }
@@ -1861,6 +1861,12 @@ img {
 	--ranking-accent: #a99bc7;
 	--ranking-accent-2: #7f88a8;
 	--ranking-tint: rgba(169, 155, 199, 0.085);
+}
+
+.editorial-rankings__card--gore-para-valientes {
+	--ranking-accent: #d75656;
+	--ranking-accent-2: #853232;
+	--ranking-tint: rgba(215, 86, 86, 0.085);
 }
 
 .editorial-rankings__card--comedia-con-jajas {
@@ -4185,6 +4191,208 @@ img {
 
 .movie-detail__jajametro-card .jajametro__note {
 	color: #fff1bd;
+	font-size: 0.94rem;
+}
+
+.movie-detail__sangrometro-card {
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	gap: 0.9rem;
+	scroll-margin-top: 1rem;
+	padding: 1rem;
+	border: 1px solid rgba(235, 64, 64, 0.5);
+	border-radius: 12px;
+	background:
+		radial-gradient(circle at 16% 0%, rgba(255, 71, 71, 0.34), transparent 34%),
+		linear-gradient(135deg, rgba(91, 8, 16, 0.72), rgba(15, 8, 12, 0.96) 58%),
+		rgba(18, 5, 8, 0.94);
+	box-shadow:
+		0 22px 48px rgba(168, 20, 28, 0.3),
+		0 0 0 1px rgba(255, 194, 194, 0.08),
+		inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.movie-detail__sangrometro-card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(120deg, transparent 0 24%, rgba(255, 255, 255, 0.12) 36%, transparent 50%),
+		radial-gradient(circle at 86% 22%, rgba(255, 124, 74, 0.2), transparent 27%),
+		radial-gradient(circle at 78% 86%, rgba(80, 0, 0, 0.4), transparent 32%);
+	pointer-events: none;
+	opacity: 0.85;
+}
+
+.movie-detail__sangrometro-card > * {
+	position: relative;
+	z-index: 1;
+}
+
+.movie-detail__sangrometro-head {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.movie-detail__sangrometro-title {
+	margin: 0;
+	color: #ffffff;
+	font-size: clamp(1.35rem, 3vw, 1.9rem);
+	font-weight: 800;
+	line-height: 1;
+	text-shadow: 0 0 24px rgba(255, 45, 45, 0.38);
+}
+
+.sangrometro {
+	display: grid;
+	gap: 0.45rem;
+	min-width: 0;
+}
+
+.sangrometro__top {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.sangrometro__label {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+.sangrometro__score {
+	flex: 0 0 auto;
+	color: #ff8a8a;
+	font-family: var(--font-mono);
+	font-size: 1.02rem;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 0 18px rgba(255, 64, 64, 0.42);
+}
+
+.sangrometro__track {
+	position: relative;
+	overflow: hidden;
+	height: 1.05rem;
+	border: 1px solid rgba(255, 112, 112, 0.38);
+	border-radius: 999px;
+	background:
+		linear-gradient(180deg, rgba(16, 7, 8, 0.9), rgba(42, 8, 12, 0.82)),
+		rgba(255, 255, 255, 0.04);
+	box-shadow:
+		inset 0 1px 3px rgba(0, 0, 0, 0.62),
+		0 8px 24px rgba(178, 20, 22, 0.18);
+}
+
+.sangrometro__track::before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	border-radius: inherit;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent 52%);
+	pointer-events: none;
+	z-index: 2;
+}
+
+.sangrometro__fill {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: var(--sangrometro-level);
+	min-width: 1.1rem;
+	overflow: hidden;
+	border-radius: inherit;
+	background:
+		linear-gradient(90deg, #4d0509, #b9151c 52%, #ff5a4e),
+		#b9151c;
+	box-shadow:
+		inset 0 -8px 10px rgba(55, 0, 4, 0.4),
+		0 0 22px rgba(231, 35, 35, 0.36);
+	animation: sangrometro-fill 850ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.sangrometro__drip,
+.sangrometro__shine {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.sangrometro__drip {
+	background:
+		radial-gradient(8px 12px at 9px 32%, rgba(255, 218, 218, 0.34), transparent 64%),
+		radial-gradient(10px 9px at 31px 68%, rgba(70, 0, 4, 0.4), transparent 66%),
+		radial-gradient(7px 11px at 49px 48%, rgba(255, 142, 120, 0.28), transparent 62%);
+	background-size: 54px 100%;
+	opacity: 0.9;
+	animation: sangrometro-drip 1.55s linear infinite;
+}
+
+.sangrometro__shine {
+	background:
+		linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+		linear-gradient(180deg, rgba(255, 215, 215, 0.35), transparent 54%);
+	background-size: 14px 100%, 100% 100%;
+	mix-blend-mode: screen;
+	opacity: 0.58;
+}
+
+.sangrometro__drop {
+	position: absolute;
+	top: 50%;
+	left: calc((var(--drop-index) + 0.65) * 10%);
+	width: 0.34rem;
+	height: 0.34rem;
+	border-radius: 50% 50% 55% 45%;
+	background: rgba(255, 235, 235, 0.68);
+	transform: translateY(-50%) rotate(18deg);
+	opacity: 0.62;
+}
+
+.sangrometro__drop:nth-child(2n) {
+	width: 0.25rem;
+	height: 0.25rem;
+	background: rgba(58, 0, 5, 0.58);
+	transform: translateY(-50%) rotate(-14deg);
+}
+
+.sangrometro__note {
+	margin: 0;
+	color: #f0c1c1;
+	font-size: 0.84rem;
+	line-height: 1.35;
+}
+
+.movie-detail__sangrometro-card .sangrometro {
+	gap: 0.65rem;
+}
+
+.movie-detail__sangrometro-card .sangrometro__label {
+	font-size: clamp(1.15rem, 2.7vw, 1.45rem);
+}
+
+.movie-detail__sangrometro-card .sangrometro__score {
+	color: #ffd8d8;
+	font-size: clamp(1.4rem, 4vw, 2.05rem);
+}
+
+.movie-detail__sangrometro-card .sangrometro__track {
+	height: 1.45rem;
+	border-color: rgba(255, 145, 145, 0.58);
+	background:
+		linear-gradient(180deg, rgba(20, 7, 8, 0.98), rgba(52, 8, 12, 0.92)),
+		rgba(255, 255, 255, 0.06);
+	box-shadow:
+		inset 0 1px 4px rgba(0, 0, 0, 0.6),
+		0 12px 30px rgba(197, 31, 31, 0.26);
+}
+
+.movie-detail__sangrometro-card .sangrometro__note {
+	color: #ffdada;
 	font-size: 0.94rem;
 }
 
@@ -7417,6 +7625,26 @@ img {
 	}
 }
 
+@keyframes sangrometro-fill {
+	from {
+		width: 1.1rem;
+	}
+
+	to {
+		width: var(--sangrometro-level);
+	}
+}
+
+@keyframes sangrometro-drip {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 54px 0;
+	}
+}
+
 @keyframes explosiometro-fill {
 	from {
 		width: 1.1rem;
@@ -7534,6 +7762,8 @@ img {
 	.jajametro__wave,
 	.cagazometro__fill,
 	.cagazometro__pulse,
+	.sangrometro__fill,
+	.sangrometro__drip,
 	.explosiometro__fill,
 	.explosiometro__blast {
 		animation: none;

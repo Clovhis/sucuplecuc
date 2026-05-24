@@ -1,0 +1,35 @@
+---
+import { getSangrometroLabel } from '../lib/sangrometro';
+
+interface Props {
+	score: number;
+}
+
+const { score } = Astro.props as Props;
+const label = getSangrometroLabel(score);
+const drops = Array.from({ length: 10 });
+---
+
+<div class="sangrometro" style={`--sangrometro-level: ${score}%;`}>
+	<div class="sangrometro__top">
+		<span class="sangrometro__label">{label}</span>
+		<span class="sangrometro__score">{score}%</span>
+	</div>
+	<div
+		class="sangrometro__track"
+		role="progressbar"
+		aria-label={`Sangrómetro: ${score}%`}
+		aria-valuemin="1"
+		aria-valuemax="99"
+		aria-valuenow={score}
+	>
+		<div class="sangrometro__fill">
+			<span class="sangrometro__drip" aria-hidden="true"></span>
+			<span class="sangrometro__shine" aria-hidden="true"></span>
+			{drops.map((_, index) => (
+				<span class="sangrometro__drop" style={`--drop-index: ${index};`} aria-hidden="true"></span>
+			))}
+		</div>
+	</div>
+	<p class="sangrometro__note">Cuánta sangre, víscera, tortura explícita y enchastre práctico se banca la película.</p>
+</div>

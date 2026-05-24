@@ -3,9 +3,10 @@ import { getCagazometroScore } from './cagazometro';
 import { getExplosiometroScore } from './explosiometro';
 import { getJajametroScore } from './jajametro';
 import { getLagrimometroScore } from './lagrimometro';
+import { getSangrometroScore } from './sangrometro';
 import { getMoviePath, getVerdictLabel } from './movies';
 
-export type EditorialMeterKind = 'explosiometro' | 'cagazometro' | 'jajametro' | 'lagrimometro';
+export type EditorialMeterKind = 'explosiometro' | 'cagazometro' | 'jajametro' | 'lagrimometro' | 'sangrometro';
 
 export interface EditorialRankingMovie {
 	title: string;
@@ -32,6 +33,7 @@ const METER_LABELS: Record<EditorialMeterKind, string> = {
 	cagazometro: 'Cagazómetro',
 	jajametro: 'Jajámetro',
 	lagrimometro: 'Lagrimómetro',
+	sangrometro: 'Sangrómetro',
 };
 
 function toRankingMovie(movie: Movie, meterKind: EditorialMeterKind, meterScore: number): EditorialRankingMovie {
@@ -92,6 +94,17 @@ export function getEditorialRankings(movies: Movie[]): EditorialRanking[] {
 				getExplosiometroScore,
 				usedMovieSlugs,
 				'explosiometro',
+			),
+		},
+		{
+			id: 'gore-para-valientes',
+			title: 'Gore para estómagos entrenados',
+			description: 'Sangre, tripas y tortura de la que no conviene mirar cenando.',
+			...pickMovies(
+				movies,
+				getSangrometroScore,
+				usedMovieSlugs,
+				'sangrometro',
 			),
 		},
 		{

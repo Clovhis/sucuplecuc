@@ -22,12 +22,14 @@ import Lagrimometro from '../../components/Lagrimometro.astro';
 import Jajametro from '../../components/Jajametro.astro';
 import Cagazometro from '../../components/Cagazometro.astro';
 import Explosiometro from '../../components/Explosiometro.astro';
+import Sangrometro from '../../components/Sangrometro.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getMovieTenSecondTake } from '../../lib/editorialCopy';
 import { getLagrimometroScore } from '../../lib/lagrimometro';
 import { getJajametroScore } from '../../lib/jajametro';
 import { getCagazometroScore } from '../../lib/cagazometro';
 import { getExplosiometroScore } from '../../lib/explosiometro';
+import { getSangrometroScore } from '../../lib/sangrometro';
 import { METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
@@ -52,12 +54,18 @@ const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
-const lagrimometroScore = getLagrimometroScore(movie);
-const jajametroScore = lagrimometroScore === undefined ? getJajametroScore(movie) : undefined;
+const sangrometroScore = getSangrometroScore(movie);
+const lagrimometroScore = sangrometroScore === undefined ? getLagrimometroScore(movie) : undefined;
+const jajametroScore = sangrometroScore === undefined && lagrimometroScore === undefined ? getJajametroScore(movie) : undefined;
 const cagazometroScore =
-	lagrimometroScore === undefined && jajametroScore === undefined ? getCagazometroScore(movie) : undefined;
+	sangrometroScore === undefined && lagrimometroScore === undefined && jajametroScore === undefined
+		? getCagazometroScore(movie)
+		: undefined;
 const explosiometroScore =
-	lagrimometroScore === undefined && jajametroScore === undefined && cagazometroScore === undefined
+	sangrometroScore === undefined &&
+	lagrimometroScore === undefined &&
+	jajametroScore === undefined &&
+	cagazometroScore === undefined
 		? getExplosiometroScore(movie)
 		: undefined;
 const currentDate = new Date();
@@ -484,6 +492,16 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						) : (
 							<p class="message-box">Todavía no tenemos trailer cargado.</p>
 						)}
+						{
+							sangrometroScore !== undefined && (
+								<section id="sangrometro" class="movie-detail__sangrometro-card" aria-label="Sangrómetro">
+									<div class="movie-detail__sangrometro-head">
+										<p class="movie-detail__sangrometro-title">Sangrómetro</p>
+									</div>
+									<Sangrometro score={sangrometroScore} />
+								</section>
+							)
+						}
 						{
 							lagrimometroScore !== undefined && (
 								<section id="lagrimometro" class="movie-detail__lagrimometro-card" aria-label="Lagrimómetro">
