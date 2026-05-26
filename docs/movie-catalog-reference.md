@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-05-26. Fuente: src/data/movies/*.json
 
-Total de peliculas: 900
+Total de peliculas: 901
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -64,6 +64,7 @@ Total de peliculas: 900
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Otras plataformas | ATP |
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Cine | ATP |
+| 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | Otras plataformas | +16 |
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Otras plataformas | +12 |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Otras plataformas | +16 |
