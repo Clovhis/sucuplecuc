@@ -254,6 +254,11 @@ function validateMovies(movies: Movie[]): void {
 				throw new Error(`Movie "${slug}" has invalid releaseDate format. Use YYYY-MM-DD.`);
 			}
 		}
+		if (movie.reviewPublishedAt !== undefined) {
+			if (!/^\d{4}-\d{2}-\d{2}$/.test(movie.reviewPublishedAt)) {
+				throw new Error(`Movie "${slug}" has invalid reviewPublishedAt format. Use YYYY-MM-DD.`);
+			}
+		}
 		if (typeof movie.audienceRating !== 'string' || !AUDIENCE_RATING_PATTERN.test(movie.audienceRating.trim())) {
 			throw new Error(`Movie "${slug}" has invalid audienceRating.`);
 		}
@@ -405,6 +410,17 @@ function getMovieSortTimestamp(movie: Pick<Movie, 'year' | 'releaseDate'>): numb
 	return Date.UTC(movie.year, 0, 1);
 }
 
+function getReviewPublishedTimestamp(movie: Pick<Movie, 'year' | 'releaseDate' | 'reviewPublishedAt'>): number {
+	if (movie.reviewPublishedAt) {
+		const reviewPublishedAt = new Date(`${movie.reviewPublishedAt}T00:00:00Z`);
+		if (!Number.isNaN(reviewPublishedAt.getTime())) {
+			return reviewPublishedAt.getTime();
+		}
+	}
+
+	return getMovieSortTimestamp(movie);
+}
+
 function getReferenceDayTimestamp(referenceDate: Date): number {
 	return Date.UTC(
 		referenceDate.getUTCFullYear(),
@@ -447,6 +463,18 @@ export function getMovies(): Movie[] {
 
 	validateMovies(movies);
 	return movies;
+}
+
+export function getLatestReviewMovies(movies: Movie[], limit = 3): Movie[] {
+	return [...movies]
+		.sort(
+			(a, b) =>
+				getReviewPublishedTimestamp(b) - getReviewPublishedTimestamp(a) ||
+				getMovieSortTimestamp(b) - getMovieSortTimestamp(a) ||
+				b.year - a.year ||
+				a.title.localeCompare(b.title, 'es'),
+		)
+		.slice(0, Math.max(0, limit));
 }
 
 export function getWeeklyMovieSuggestion(

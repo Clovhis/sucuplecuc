@@ -7,6 +7,7 @@ import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
+	getLatestReviewMovies,
 	getMovies,
 	getPosterUrl,
 	getPositiveVerdictFilterOptions,
@@ -34,10 +35,10 @@ const editorialRankingPools = editorialRankings.map((ranking) => ({
 const INITIAL_HOME_MOVIE_COUNT = 12;
 const initialHomeMovies = movies.slice(0, INITIAL_HOME_MOVIE_COUNT);
 const deferredHomeMovies = movies.slice(INITIAL_HOME_MOVIE_COUNT);
-const latestReviewCards = movies.slice(0, 3).map((movie) => ({
+const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => ({
 	slug: movie.slug,
 	title: movie.title,
-	releaseDate: movie.releaseDate,
+	publishedAt: movie.reviewPublishedAt ?? movie.releaseDate,
 	year: movie.year,
 	posterUrl: getPosterUrl(movie.poster),
 	url: `${import.meta.env.BASE_URL}peliculas/${movie.slug}/`,
@@ -280,10 +281,10 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 																	<p class="upcoming-release-list__title">{movie.title}</p>
 																	<time
 																		class="upcoming-release-list__date"
-																		datetime={movie.releaseDate}
+																		datetime={movie.publishedAt}
 																	>
-																		{movie.releaseDate
-																			? formatUpcomingReleaseDate(movie.releaseDate)
+																		{movie.publishedAt
+																			? formatUpcomingReleaseDate(movie.publishedAt)
 																			: movie.year}
 																	</time>
 																</div>

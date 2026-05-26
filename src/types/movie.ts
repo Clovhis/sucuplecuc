@@ -43,6 +43,7 @@ export interface Movie {
 	synopsis: string;
 	year: number;
 	releaseDate?: string;
+	reviewPublishedAt?: string;
 	audienceRating: MovieAudienceRating;
 	category: string;
 	genres?: string[];

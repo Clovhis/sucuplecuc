@@ -690,6 +690,28 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		addFinding(findings, 'error', 'invalid-release-date', candidatePath, 'releaseDate must use a real YYYY-MM-DD date.');
 	}
 
+	const normalizedReviewPublishedAt =
+		typeof movie.reviewPublishedAt === 'string' ? movie.reviewPublishedAt.trim() : '';
+	if (movie.reviewPublishedAt !== undefined && !isValidIsoDateString(normalizedReviewPublishedAt)) {
+		addFinding(
+			findings,
+			'error',
+			'invalid-review-published-at',
+			candidatePath,
+			'reviewPublishedAt must use a real YYYY-MM-DD date.',
+		);
+	}
+
+	if (!normalizedReviewPublishedAt) {
+		addFinding(
+			findings,
+			'warn',
+			'missing-review-published-at',
+			candidatePath,
+			'Set reviewPublishedAt on newly published reviews so the homepage block "Últimas reseñas" sorts by publication freshness instead of releaseDate fallback.',
+		);
+	}
+
 	if (Number.isInteger(movie.year) && movie.year >= CURRENT_YEAR && !normalizedReleaseDate) {
 		addFinding(
 			findings,

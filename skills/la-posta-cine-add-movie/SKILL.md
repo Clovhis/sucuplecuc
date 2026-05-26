@@ -168,6 +168,7 @@ Find trustworthy metadata:
 - `originalTitle`
 - `year`
 - `releaseDate` in exact `YYYY-MM-DD` format for any current-year/future title, or any add framed as `reciente` / `estreno`
+- `reviewPublishedAt` in exact `YYYY-MM-DD` format for the date the review is being published to the site
 - `category`
 - `poster`
 - official YouTube trailer id in original language (store only `trailerYoutubeId`)
@@ -190,6 +191,13 @@ Release date policy for Astro 6 (mandatory):
 - If the title is being loaded as `reciente`, `estreno`, `Cine`, or `isPremiere: true`, do not leave `releaseDate` blank.
 - Do not treat `npm run build` as enough validation here: Astro 6 can build successfully while `getMovies()` still hides a current-year movie that lacks `releaseDate`.
 - If the exact date cannot be verified, stop before commit instead of publishing a hidden entry.
+
+Review publication date policy (mandatory):
+
+- Every newly created movie review must set `reviewPublishedAt` to the current local publication date of the load in exact `YYYY-MM-DD` format.
+- This field powers the homepage block `Últimas reseñas`; it must reflect when Cine Posta published the review, not the movie's theatrical/streaming `releaseDate`.
+- Do not copy `releaseDate` into `reviewPublishedAt` unless the review is actually being published on that same date.
+- If the user is backfilling an older review and you cannot verify the intended publication date from repo context, stop and ask instead of inventing one.
 
 Main cast policy (mandatory):
 
