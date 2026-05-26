@@ -8,9 +8,9 @@ import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
 	getMovies,
+	getPosterUrl,
 	getPositiveVerdictFilterOptions,
 	getUpcomingMovieReleases,
-	getWeeklyMovieSuggestions,
 	isAbsoluteCinemaMovie,
 	RECOMMENDATION_GENRE_OPTIONS,
 } from '../lib/movies';
@@ -25,10 +25,8 @@ const platformOptions = getPlatformFilterOptions(movies);
 const absoluteCinemaCount = movies.filter(isAbsoluteCinemaMovie).length;
 const positiveVerdictOptions = getPositiveVerdictFilterOptions(movies);
 const hasSpecialFilters = absoluteCinemaCount > 0 || positiveVerdictOptions.length > 0;
-const upcomingReleases = getUpcomingMovieReleases(new Date(), 3);
+const upcomingReleases = getUpcomingMovieReleases(new Date(), 5);
 const editorialRankings = getEditorialRankings(movies);
-const weeklyMovieSuggestions = getWeeklyMovieSuggestions(movies);
-const weeklyMovieSuggestion = weeklyMovieSuggestions[0] ?? null;
 const editorialRankingPools = editorialRankings.map((ranking) => ({
 	id: ranking.id,
 	movies: ranking.candidateMovies,
@@ -36,6 +34,14 @@ const editorialRankingPools = editorialRankings.map((ranking) => ({
 const INITIAL_HOME_MOVIE_COUNT = 12;
 const initialHomeMovies = movies.slice(0, INITIAL_HOME_MOVIE_COUNT);
 const deferredHomeMovies = movies.slice(INITIAL_HOME_MOVIE_COUNT);
+const latestReviewCards = movies.slice(0, 3).map((movie) => ({
+	slug: movie.slug,
+	title: movie.title,
+	releaseDate: movie.releaseDate,
+	year: movie.year,
+	posterUrl: getPosterUrl(movie.poster),
+	url: `${import.meta.env.BASE_URL}peliculas/${movie.slug}/`,
+}));
 const movieCountLabel = new Intl.NumberFormat('es-AR').format(movies.length);
 const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.length);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de películas';
@@ -56,6 +62,40 @@ function formatUpcomingReleaseDate(value: string) {
 		timeZone: 'UTC',
 	}).format(releaseDate);
 }
+
+function getYoutubeAutoplayEmbedUrlFromVideoUrl(videoUrl: string) {
+	const parsedUrl = new URL(videoUrl);
+	const videoId = parsedUrl.hostname.includes('youtu.be')
+		? parsedUrl.pathname.replace(/^\/+/, '')
+		: parsedUrl.searchParams.get('v');
+
+	if (!videoId) {
+		return '';
+	}
+
+	const params = new URLSearchParams({
+		autoplay: '1',
+		mute: '1',
+		playsinline: '1',
+		rel: '0',
+		modestbranding: '1',
+	});
+
+	return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
+}
+
+const upcomingMovieSuggestions = upcomingReleases
+	.map((release) => ({
+		...release,
+		watchUrl: release.videoUrl,
+		embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl),
+		sourceUrl: release.sourceUrl ?? release.videoUrl,
+		synopsis:
+			release.synopsis ??
+			`Estreno programado para el ${formatUpcomingReleaseDate(release.releaseDate)}.`,
+	}))
+	.filter((release) => release.embedUrl);
+const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
@@ -176,7 +216,7 @@ function formatUpcomingReleaseDate(value: string) {
 
 					<div class="home-catalog__desktop-extra">
 						<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
-							<h2 class="u-visually-hidden">Filtros del catálogo y próximos estrenos</h2>
+							<h2 class="u-visually-hidden">Filtros del catálogo y últimas reseñas</h2>
 							<div class="catalog-shell__main">
 								<div class="catalog-shell__filters">
 									<PostometroTeaser />
@@ -208,44 +248,43 @@ function formatUpcomingReleaseDate(value: string) {
 										)
 									}
 								</div>
-								<aside class="catalog-shell__upcoming" aria-labelledby="upcoming-releases-title">
-									<h3 id="upcoming-releases-title" class="catalog-shell__upcoming-title">
-										Próximos estrenos
+								<aside class="catalog-shell__upcoming" aria-labelledby="latest-reviews-title">
+									<h3 id="latest-reviews-title" class="catalog-shell__upcoming-title">
+										Últimas reseñas
 									</h3>
 									{
-										upcomingReleases.length > 0 ? (
+										latestReviewCards.length > 0 ? (
 											<ol class="upcoming-release-list">
 												{
-													upcomingReleases.map((release) => (
+													latestReviewCards.map((movie) => (
 														<li class="upcoming-release-list__item">
 															<a
 																class="upcoming-release-list__card"
-																href={release.videoUrl}
-																target="_blank"
-																rel="noopener noreferrer"
-																aria-label={`Ver video de ${release.title}`}
-																title={`Ver video de ${release.title}`}
+																href={movie.url}
+																aria-label={`Leer la reseña de ${movie.title}`}
+																title={`Leer la reseña de ${movie.title}`}
 															>
 																<div class="upcoming-release-list__media">
 																	<img
 																		class="upcoming-release-list__image"
-																		src={release.thumbnailUrl}
-																		alt={`Trailer de ${release.title}`}
+																		src={movie.posterUrl}
+																		alt={`Poster de ${movie.title}`}
 																		loading="lazy"
 																		decoding="async"
-																		referrerpolicy="no-referrer"
 																	/>
 																	<span class="upcoming-release-list__play" aria-hidden="true">
-																		Ver video
+																		Leer reseña
 																	</span>
 																</div>
 																<div class="upcoming-release-list__content">
-																	<p class="upcoming-release-list__title">{release.title}</p>
+																	<p class="upcoming-release-list__title">{movie.title}</p>
 																	<time
 																		class="upcoming-release-list__date"
-																		datetime={release.releaseDate}
+																		datetime={movie.releaseDate}
 																	>
-																		{formatUpcomingReleaseDate(release.releaseDate)}
+																		{movie.releaseDate
+																			? formatUpcomingReleaseDate(movie.releaseDate)
+																			: movie.year}
 																	</time>
 																</div>
 															</a>
@@ -254,7 +293,7 @@ function formatUpcomingReleaseDate(value: string) {
 												}
 											</ol>
 										) : (
-											<p class="catalog-shell__upcoming-empty">Estamos acomodando la agenda.</p>
+											<p class="catalog-shell__upcoming-empty">Estamos acomodando el catálogo.</p>
 										)
 									}
 								</aside>
@@ -324,98 +363,96 @@ function formatUpcomingReleaseDate(value: string) {
 					}
 
 					{
-						weeklyMovieSuggestion && (
+						upcomingMovieSuggestion && (
 							<section
 								class="weekly-suggestion fade-up"
 								style="--item-delay: 135ms;"
-								aria-labelledby="weekly-suggestion-title"
-								data-weekly-suggestion-root
+								aria-labelledby="upcoming-suggestion-title"
+								data-upcoming-suggestion-root
+								data-upcoming-active-index="0"
 							>
 								<div class="weekly-suggestion__header">
 									<div>
-										<h2 id="weekly-suggestion-title">Sugerencias semanales</h2>
+										<h2 id="upcoming-suggestion-title">Próximos estrenos</h2>
 									</div>
 								</div>
 								<div class="weekly-suggestion__shell">
 									<div class="weekly-suggestion__player">
 										<iframe
 											class="weekly-suggestion__frame"
-											src={weeklyMovieSuggestion.embedUrl}
-											title={`Trailer oficial de ${weeklyMovieSuggestion.title}`}
+											src={upcomingMovieSuggestions[0].embedUrl}
+											title={`Trailer oficial de ${upcomingMovieSuggestions[0].title}`}
 											loading="eager"
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 											referrerpolicy="strict-origin-when-cross-origin"
 											allowfullscreen
-											data-weekly-suggestion-frame
+											data-upcoming-suggestion-frame
 										></iframe>
 									</div>
 									<div class="weekly-suggestion__content" aria-live="polite">
-										<p class="weekly-suggestion__label">Estreno de los últimos 30 días</p>
-										<h3 data-weekly-suggestion-name>{weeklyMovieSuggestion.title}</h3>
+										<h3 data-upcoming-suggestion-name>{upcomingMovieSuggestions[0].title}</h3>
 										<p class="weekly-suggestion__meta">
 											<time
-												datetime={weeklyMovieSuggestion.releaseDate}
-												data-weekly-suggestion-date
+												datetime={upcomingMovieSuggestions[0].releaseDate}
+												data-upcoming-suggestion-date
 											>
-												{formatUpcomingReleaseDate(weeklyMovieSuggestion.releaseDate)}
+												{formatUpcomingReleaseDate(upcomingMovieSuggestions[0].releaseDate)}
 											</time>
-											<span data-weekly-suggestion-year>{weeklyMovieSuggestion.year}</span>
-											<span data-weekly-suggestion-verdict>{weeklyMovieSuggestion.verdictLabel}</span>
+											<span data-upcoming-suggestion-platform>Cine</span>
 										</p>
-										<p class="weekly-suggestion__synopsis" data-weekly-suggestion-synopsis>
-											{weeklyMovieSuggestion.synopsis}
+										<p class="weekly-suggestion__synopsis" data-upcoming-suggestion-synopsis>
+											{upcomingMovieSuggestions[0].synopsis}
 										</p>
+										<ol class="weekly-suggestion__queue" aria-label="Agenda de próximos estrenos">
+											{
+												upcomingMovieSuggestions.map((release, index) => (
+													<li
+														class={`weekly-suggestion__queue-item${index === 0 ? ' weekly-suggestion__queue-item--active' : ''}`}
+														data-upcoming-suggestion-queue-item
+														data-upcoming-suggestion-queue-index={index}
+														aria-current={index === 0 ? 'true' : undefined}
+													>
+														<span class="weekly-suggestion__queue-title">{release.title}</span>
+														<time class="weekly-suggestion__queue-date" datetime={release.releaseDate}>
+															{formatUpcomingReleaseDate(release.releaseDate)}
+														</time>
+													</li>
+												))
+											}
+										</ol>
 										<div class="weekly-suggestion__actions">
 											{
-												weeklyMovieSuggestions.length > 1 && (
+												upcomingMovieSuggestions.length > 1 && (
 													<div
 														class="weekly-suggestion__nav"
 														role="group"
-														aria-label="Cambiar sugerencia semanal"
+														aria-label="Cambiar próximo estreno"
 													>
 														<button
 															class="weekly-suggestion__next"
 															type="button"
-															aria-label="Pasar a otra recomendación"
-															data-weekly-suggestion-next
+															aria-label="Pasar a otro estreno"
+															data-upcoming-suggestion-next
 														>
-															<span>Otra recomendación</span>
+															<span>Otro estreno</span>
 															<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
 																<path d="M9 5l7 7-7 7"></path>
 															</svg>
 														</button>
-														<span class="weekly-suggestion__count" data-weekly-suggestion-count>
-															1 de {weeklyMovieSuggestions.length}
+														<span class="weekly-suggestion__count" data-upcoming-suggestion-count>
+															1 de {upcomingMovieSuggestions.length}
 														</span>
 													</div>
 												)
 											}
-											<a
-												class="weekly-suggestion__link"
-												href={weeklyMovieSuggestion.movieUrl}
-												aria-label={`Leer la reseña de ${weeklyMovieSuggestion.title}`}
-												data-weekly-suggestion-review
-											>
-												Leer reseña
-											</a>
-											<a
-												class="weekly-suggestion__youtube"
-												href={weeklyMovieSuggestion.watchUrl}
-												target="_blank"
-												rel="noopener noreferrer"
-												referrerpolicy="no-referrer"
-												data-weekly-suggestion-youtube
-											>
-												Abrir en YouTube
-											</a>
 										</div>
 									</div>
 								</div>
 								<script
-									id="weekly-suggestion-data"
+									id="upcoming-suggestion-data"
 									type="application/json"
 									is:inline
-									set:html={JSON.stringify(weeklyMovieSuggestions)}
+									set:html={JSON.stringify(upcomingMovieSuggestions)}
 								></script>
 							</section>
 						)
@@ -564,6 +601,6 @@ function formatUpcomingReleaseDate(value: string) {
 
 <!-- Astro 6: page interactivity lives in a typed local module instead of an inline exception block. -->
 <script src="../scripts/editorial-rankings.ts"></script>
-<script src="../scripts/weekly-suggestions.ts"></script>
+<script src="../scripts/upcoming-suggestions.ts"></script>
 <script src="../scripts/home-catalog.ts"></script>
 

@@ -72,6 +72,7 @@ export interface UpcomingMovieRelease {
 	releaseDate: string;
 	videoUrl: string;
 	thumbnailUrl: string;
+	synopsis?: string;
 	sourceUrl?: string;
 }
 
@@ -514,10 +515,7 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
 	validateMovies(movies);
 
-	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) => {
-		const releaseDate = new Date(`${release.releaseDate}T00:00:00Z`);
-		return !Number.isNaN(releaseDate.getTime()) && releaseDate.getTime() > referenceTimestamp;
-	});
+	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) => isFutureRelease(release.releaseDate, referenceTimestamp));
 
 	const catalogUpcoming = movies
 		.filter((movie) => {
@@ -539,23 +537,14 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			releaseDate: movie.releaseDate!,
 			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
 			thumbnailUrl: getYoutubeThumbnailUrl(movie.trailerYoutubeId),
+			synopsis: movie.synopsis,
+			sourceUrl: getMoviePath(movie.slug),
 		}));
 
 	const releaseBySlug = new Map<string, UpcomingMovieRelease>();
 
-	for (const release of [...generatedUpcoming, ...catalogUpcoming]) {
-		if (!releaseBySlug.has(release.slug)) {
-			releaseBySlug.set(release.slug, release);
-		}
-	}
-
 	for (const fallback of UPCOMING_RELEASE_FALLBACKS) {
-		if (releaseBySlug.has(fallback.slug)) {
-			continue;
-		}
-
-		const releaseDate = new Date(`${fallback.releaseDate}T00:00:00Z`);
-		if (Number.isNaN(releaseDate.getTime()) || releaseDate.getTime() <= referenceTimestamp) {
+		if (!isFutureRelease(fallback.releaseDate, referenceTimestamp)) {
 			continue;
 		}
 
@@ -565,17 +554,33 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			releaseDate: fallback.releaseDate,
 			videoUrl: fallback.trailerUrl,
 			thumbnailUrl: fallback.thumbnailUrl,
+			synopsis: fallback.synopsis,
+			sourceUrl: fallback.sourceUrl,
 		});
 	}
 
-	return Array.from(releaseBySlug.values())
-		.sort(
-			(left, right) =>
-				getMovieSortTimestamp({ year: 0, releaseDate: left.releaseDate }) -
-					getMovieSortTimestamp({ year: 0, releaseDate: right.releaseDate }) ||
-				left.title.localeCompare(right.title, 'es'),
-		)
-		.slice(0, limit);
+	for (const release of [...generatedUpcoming, ...catalogUpcoming]) {
+		if (!releaseBySlug.has(release.slug)) {
+			releaseBySlug.set(release.slug, release);
+			continue;
+		}
+
+		const current = releaseBySlug.get(release.slug)!;
+
+		releaseBySlug.set(release.slug, {
+			...release,
+			...current,
+			sourceUrl: current.sourceUrl ?? release.sourceUrl,
+			synopsis: current.synopsis ?? release.synopsis,
+		});
+	}
+
+	return Array.from(releaseBySlug.values()).slice(0, limit);
+}
+
+function isFutureRelease(releaseDate: string, referenceTimestamp: number): boolean {
+	const timestamp = Date.parse(`${releaseDate}T00:00:00Z`);
+	return !Number.isNaN(timestamp) && timestamp > referenceTimestamp;
 }
 
 export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel' | 'absoluteCinema'>): string {

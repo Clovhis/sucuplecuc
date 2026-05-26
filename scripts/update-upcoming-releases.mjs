@@ -9,6 +9,7 @@ const UPCOMING_URL = 'https://www.themoviedb.org/movie/upcoming';
 const MAX_SOURCE_ITEMS = 12;
 const MAX_RELEASES = 8;
 const STRICT_MODE = process.env.UPCOMING_RELEASES_STRICT === '1';
+const TODAY_TIMESTAMP = Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
 const REQUEST_HEADERS = {
 	'user-agent':
 		'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
@@ -56,7 +57,7 @@ async function fetchHtml(url) {
 
 function extractUpcomingCards(html) {
 	const cardPattern =
-		/<div id=\"[^\"]+\" class=\"comp:poster-card[\s\S]*?<a class=\"flex w-full\"[^>]*href=\"(?<href>\/movie\/[^\"]+)\"[\s\S]*?<img alt=\"(?<alt>[^\"]+)\" class=\"poster w-full block\" loading=\"lazy\"[^>]*src=\"(?<img>[^\"]+)\"[\s\S]*?<h2 class=\"font-semibold text-base m-0 whitespace-normal\"><span>(?<title>[^<]+)<\/span><\/h2>[\s\S]*?<span class=\"subheader font-light\">(?<date>[^<]+)<\/span>/g;
+		/<div id=\"[^\"]+\" class=\"comp:poster-card[\s\S]*?<a class=\"flex w-full\"[^>]*href=\"(?<href>\/movie\/[^\"]+)\"[\s\S]*?<img alt=\"(?<alt>[^\"]+)\" class=\"poster w-full block\" loading=\"lazy\"[^>]*(?:srcset=\"(?<srcset>[^\"]+)\"[^>]*)?src=\"(?<img>[^\"]+)\"[\s\S]*?<h2 class=\"font-semibold [^\"]*m-0 whitespace-normal\"><span>(?<title>[^<]+)<\/span><\/h2>[\s\S]*?<span class=\"subheader font-light\">(?<date>[^<]+)<\/span>/g;
 
 	return [...html.matchAll(cardPattern)].slice(0, MAX_SOURCE_ITEMS).map((match) => ({
 		href: match.groups?.href ?? '',
@@ -67,6 +68,11 @@ function extractUpcomingCards(html) {
 }
 
 function extractIsoReleaseDate(detailHtml, fallbackDisplayDate) {
+	const fallbackDate = parseDisplayReleaseDate(fallbackDisplayDate);
+	if (fallbackDate) {
+		return fallbackDate;
+	}
+
 	const ldJsonBlocks = [...detailHtml.matchAll(/<script type=\"application\/ld\+json\">([\s\S]*?)<\/script>/g)];
 	for (const block of ldJsonBlocks) {
 		const raw = block[1]?.replace(/\/\*[\s\S]*?\*\//g, '').trim();
@@ -85,7 +91,11 @@ function extractIsoReleaseDate(detailHtml, fallbackDisplayDate) {
 		}
 	}
 
-	const fallbackDateMatch = fallbackDisplayDate.match(/(\d{1,2}) de ([A-Za-zÁÉÍÓÚáéíóú]+) de (\d{4})/);
+	return '';
+}
+
+function parseDisplayReleaseDate(displayDate) {
+	const fallbackDateMatch = String(displayDate ?? '').match(/(\d{1,2}) de ([A-Za-zÁÉÍÓÚáéíóú]+) de (\d{4})/);
 	if (!fallbackDateMatch) {
 		return '';
 	}
@@ -112,6 +122,30 @@ function extractIsoReleaseDate(detailHtml, fallbackDisplayDate) {
 	}
 
 	return `${yearRaw}-${month}-${String(dayRaw).padStart(2, '0')}`;
+}
+
+function extractOverview(detailHtml) {
+	const overviewMatch = detailHtml.match(/<div class=\"overview\"[^>]*>\s*<p>([\s\S]*?)<\/p>/i);
+	if (!overviewMatch?.[1]) {
+		const descriptionMatch = detailHtml.match(/<meta name=\"description\" content=\"([^\"]+)\"/i);
+		return truncateSynopsis(decodeHtml(descriptionMatch?.[1] ?? ''));
+	}
+
+	return truncateSynopsis(
+		decodeHtml(overviewMatch[1])
+			.replace(/<[^>]+>/g, ' ')
+			.replace(/\s+/g, ' ')
+			.trim(),
+	);
+}
+
+function truncateSynopsis(value) {
+	const normalized = String(value ?? '').replace(/\s+/g, ' ').trim();
+	if (normalized.length <= 260) {
+		return normalized;
+	}
+
+	return `${normalized.slice(0, 257).replace(/\s+\S*$/, '')}...`;
 }
 
 function extractBackdropUrl(detailHtml, posterUrl) {
@@ -159,6 +193,10 @@ async function buildUpcomingReleases() {
 		if (!videoUrl || !releaseDate) {
 			continue;
 		}
+		const releaseTimestamp = Date.parse(`${releaseDate}T00:00:00Z`);
+		if (Number.isNaN(releaseTimestamp) || releaseTimestamp <= TODAY_TIMESTAMP) {
+			continue;
+		}
 
 		const slug = slugify(card.href.split('/').pop()?.replace(/^\d+-/, '') || card.title);
 		if (!slug || seenSlugs.has(slug)) {
@@ -172,6 +210,7 @@ async function buildUpcomingReleases() {
 			releaseDate,
 			videoUrl,
 			thumbnailUrl: extractBackdropUrl(detailHtml, card.posterUrl),
+			synopsis: extractOverview(detailHtml),
 			sourceUrl: detailUrl,
 		});
 
@@ -193,6 +232,7 @@ function renderModule(releases) {
 \treleaseDate: string;
 \tvideoUrl: string;
 \tthumbnailUrl: string;
+\tsynopsis?: string;
 \tsourceUrl: string;
 }
 
