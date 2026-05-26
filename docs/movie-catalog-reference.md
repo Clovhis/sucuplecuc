@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-24. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-26. Fuente: src/data/movies/*.json
 
-Total de peliculas: 895
+Total de peliculas: 900
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -482,6 +482,7 @@ Total de peliculas: 895
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
 | 2011 | War Horse (Caballo de batalla) | war-horse-2011 | Drama | Otras plataformas | +13 |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus | +13 |
+| 2010 | A Serbian Film | a-serbian-film-2010 | Gore | Otras plataformas | +18 |
 | 2010 | Alice in Wonderland | alice-in-wonderland-2010 | Fantasia | Disney Plus | ATP |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
 | 2010 | Conocerás al hombre de tus sueños | you-will-meet-a-tall-dark-stranger-2010 | Drama | Otras plataformas | +13 |
@@ -516,6 +517,7 @@ Total de peliculas: 895
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus | +13 |
 | 2008 | Kung Fu Panda | kung-fu-panda-2008 | Animacion | Netflix + HBO Max | ATP |
 | 2008 | Leonera | leonera-2008 | Drama | Netflix | +13 |
+| 2008 | Mártires | martires-2008 | Gore | Otras plataformas | +18 |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Otras plataformas | +17 |
 | 2008 | Quantum of Solace | quantum-of-solace-2008 | Accion | Netflix | +12 |
 | 2008 | Saw V | saw-v-2008 | Gore | Otras plataformas | +18 |
@@ -621,6 +623,7 @@ Total de peliculas: 895
 | 2001 | A.I. Inteligencia Artificial | a-i-artificial-intelligence-2001 | Ciencia ficcion | Otras plataformas | +13 |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus | +13 |
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max | ATP |
+| 2001 | Ichi the Killer | ichi-the-killer-2001 | Gore | Otras plataformas | +18 |
 | 2001 | Jason X: Martes 13, parte X | jason-x-2001 | Terror | HBO Max | +17 |
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video | +13 |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video | +13 |
@@ -703,6 +706,7 @@ Total de peliculas: 895
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Otras plataformas | +13 |
 | 1992 | Maridos y esposas | husbands-and-wives-1992 | Drama | Otras plataformas | +16 |
 | 1992 | Reservoir Dogs | reservoir-dogs-1992 | Crimen | Otras plataformas | +18 |
+| 1992 | Tu madre se ha comido a mi perro | tu-madre-se-ha-comido-a-mi-perro-1992 | Gore | Otras plataformas | +18 |
 | 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max | +17 |
 | 1991 | El cabo del miedo | cape-fear-1991 | Thriller | Otras plataformas | +17 |
 | 1991 | Hook (El capitán Garfio) | hook-1991 | Aventura | Otras plataformas | ATP |
@@ -799,6 +803,7 @@ Total de peliculas: 895
 | 1981 | Mad Max 2 | mad-max-2-1981 | Accion | HBO Max | +17 |
 | 1981 | Raiders of the Lost Ark | raiders-of-the-lost-ark-1981 | Aventura | Otras plataformas | ATP |
 | 1981 | Viernes 13, 2ª parte | friday-the-13th-part-2-1981 | Terror | Otras plataformas | +18 |
+| 1980 | Holocausto caníbal | holocausto-canibal-1980 | Gore | Otras plataformas | +18 |
 | 1980 | Ordinary People | ordinary-people-1980 | Drama | Otras plataformas | +17 |
 | 1980 | Recuerdos | stardust-memories-1980 | Comedia | Otras plataformas | +13 |
 | 1980 | Star Wars: Episode V - The Empire Strikes Back | star-wars-episode-v-the-empire-strikes-back-1980 | Ciencia ficcion | Disney Plus | ATP |
