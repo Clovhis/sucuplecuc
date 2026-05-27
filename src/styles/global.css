@@ -2337,6 +2337,55 @@ img {
 	stroke-linejoin: round;
 }
 
+@media (min-width: 46rem) {
+	.weekly-suggestion[data-upcoming-suggestion-root] {
+		min-block-size: 31rem;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__shell {
+		grid-template-columns: minmax(0, 1.36fr) minmax(18rem, 0.74fr);
+		gap: 1rem;
+		align-items: start;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__header {
+		margin-bottom: 0.08rem;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__player {
+		align-self: start;
+		width: 100%;
+		max-width: 100%;
+		min-height: 0;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__content {
+		align-self: start;
+		gap: 0.7rem;
+		min-width: 0;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__content h3 {
+		font-size: clamp(1.45rem, 1.7vw, 2.05rem);
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue {
+		grid-template-columns: 1fr;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue-item {
+		grid-template-columns: minmax(0, 1fr) auto;
+		gap: 0.5rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__shell {
+		grid-template-columns: minmax(0, 1.52fr) minmax(20rem, 0.68fr);
+		gap: 1.12rem;
+	}
+}
+
 .postometro-teaser {
 	display: grid;
 	position: relative;

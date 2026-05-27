@@ -372,11 +372,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 								data-upcoming-suggestion-root
 								data-upcoming-active-index="0"
 							>
-								<div class="weekly-suggestion__header">
-									<div>
-										<h2 id="upcoming-suggestion-title">Próximos estrenos</h2>
-									</div>
-								</div>
 								<div class="weekly-suggestion__shell">
 									<div class="weekly-suggestion__player">
 										<iframe
@@ -391,6 +386,11 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 										></iframe>
 									</div>
 									<div class="weekly-suggestion__content" aria-live="polite">
+										<div class="weekly-suggestion__header">
+											<div>
+												<h2 id="upcoming-suggestion-title">Próximos estrenos</h2>
+											</div>
+										</div>
 										<h3 data-upcoming-suggestion-name>{upcomingMovieSuggestions[0].title}</h3>
 										<p class="weekly-suggestion__meta">
 											<time
