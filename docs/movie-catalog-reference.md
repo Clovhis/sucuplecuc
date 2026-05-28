@@ -1,15 +1,17 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-26. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-28. Fuente: src/data/movies/*.json
 
-Total de peliculas: 901
+Total de peliculas: 908
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Otras plataformas | +16 |
 | 2026 | 53 domingos | 53-domingos-2026 | Comedia | Netflix | +13 |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Otras plataformas | ATP |
+| 2026 | Amarga Navidad | amarga-navidad-2026 | Drama | Cine | +13 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
+| 2026 | Backrooms | backrooms-2026 | Terror | Cine | +13 |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
@@ -19,27 +21,27 @@ Total de peliculas: 901
 | 2026 | Dracula | dracula-2026 | Terror | Otras plataformas | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Cine | +13 |
-| 2026 | El drama | the-drama-2026 | Romance | Cine | +17 |
-| 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Cine | ATP |
+| 2026 | El drama | the-drama-2026 | Romance | Otras plataformas | +17 |
+| 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Otras plataformas | ATP |
 | 2026 | El partido | el-partido-2026 | Documental | Cine | ATP |
 | 2026 | El pasajero del diablo | el-pasajero-del-diablo-2026 | Terror | Cine | +17 |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
-| 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Cine | +17 |
+| 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Otras plataformas | +17 |
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | GOAT | goat-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Otras plataformas | +13 |
-| 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Cine | +17 |
-| 2026 | Hoppers | hoppers-2026 | Animacion | Cine | ATP |
+| 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Otras plataformas | +17 |
+| 2026 | Hoppers | hoppers-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Otras plataformas | +13 |
-| 2026 | La Odisea | the-odyssey-2026 | Aventura | Cine | +13 |
-| 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Cine | +17 |
+| 2026 | La Odisea | the-odyssey-2026 | Aventura | Otras plataformas | +13 |
+| 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Otras plataformas | +17 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
-| 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Cine | ATP |
+| 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Otras plataformas | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
@@ -55,7 +57,7 @@ Total de peliculas: 901
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video | +18 |
 | 2026 | Primate | primate-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Protector | protector-2026 | Accion | Otras plataformas | +16 |
-| 2026 | Proyecto Fin Del Mundo | project-hail-mary-2026 | Ciencia ficcion | Cine | +13 |
+| 2026 | Proyecto Fin Del Mundo | project-hail-mary-2026 | Ciencia ficcion | Otras plataformas | +13 |
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
@@ -78,6 +80,7 @@ Total de peliculas: 901
 | 2025 | ¿Y dónde está el policía? | y-donde-esta-el-policia-2025 | Comedia | Paramount Plus | +13 |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max | +16 |
 | 2025 | A Minecraft Movie | a-minecraft-movie-2025 | Accion | HBO Max | ATP |
+| 2025 | Alpha | alpha-2025 | Drama | Cine | +17 |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Otras plataformas | +13 |
 | 2025 | Back in Action | back-in-action-2025 | Accion | Netflix | +13 |
 | 2025 | Ballerina | ballerina-2025 | Accion | Prime Video | +16 |
@@ -87,11 +90,14 @@ Total de peliculas: 901
 | 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Crunchyroll | +16 |
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Otras plataformas | +13 |
+| 2025 | Dolly - Juega contigo | dolly-juega-contigo-2025 | Terror | Cine | +17 |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max | +13 |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV | +16 |
 | 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Otras plataformas | +16 |
+| 2025 | El gran arco | el-gran-arco-2025 | Drama | Cine | ATP |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
-| 2025 | Exit 8 | exit-8-2025 | Terror | Cine | +13 |
+| 2025 | Ella y su hijo | ella-y-su-hijo-2025 | Drama | Cine | +13 |
+| 2025 | Exit 8 | exit-8-2025 | Terror | Otras plataformas | +13 |
 | 2025 | F1: The Movie | f1-the-movie-2025 | Drama | Apple TV | ATP |
 | 2025 | Fear Street: Prom Queen | fear-street-prom-queen-2025 | Terror | Netflix | +18 |
 | 2025 | Final Destination: Bloodlines | final-destination-bloodlines-2025 | Terror | HBO Max | +16 |
@@ -141,7 +147,8 @@ Total de peliculas: 901
 | 2025 | Weapons | weapons-2025 | Terror | HBO Max | +16 |
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Otras plataformas | ATP |
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max | +17 |
-| 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Otras plataformas | ATP |
+| 2025 | Zona de riesgo | zona-de-riesgo-2025 | Accion | Cine | +17 |
+| 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Cine | ATP |
 | 2024 | 40 Acres | 40-acres-2024 | Thriller | Netflix | +16 |
 | 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Paramount Plus | +13 |
 | 2024 | A Real Pain | a-real-pain-2024 | Comedia | Disney Plus | +13 |
@@ -191,7 +198,7 @@ Total de peliculas: 901
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |
-| 2024 | Sueños en Oslo | suenos-de-oslo-2024 | Drama | Cine | +13 |
+| 2024 | Sueños en Oslo | suenos-de-oslo-2024 | Drama | Otras plataformas | +13 |
 | 2024 | Super/Man: La Historia De Christopher Reeve | super-man-the-christopher-reeve-story-2024 | Documental | HBO Max | +13 |
 | 2024 | Terrifier 3 | terrifier-3-2024 | Gore | Otras plataformas | +18 |
 | 2024 | The Apprentice (La historia de Trump) | the-apprentice-2024 | Historia | Otras plataformas | +17 |
@@ -206,7 +213,7 @@ Total de peliculas: 901
 | 2024 | Transformers Uno | transformers-one-2024 | Acción | Netflix | ATP |
 | 2024 | Turtles All the Way Down | turtles-all-the-way-down-2024 | Drama | HBO Max | +13 |
 | 2024 | Twisters | twisters-2024 | Accion | Netflix | +13 |
-| 2024 | Umamusume: Pretty derby | umamusume-pretty-derby-2024 | Anime | Cine | ATP |
+| 2024 | Umamusume: Pretty derby | umamusume-pretty-derby-2024 | Anime | Otras plataformas | ATP |
 | 2024 | Venom: The Last Dance | venom-the-last-dance-2024 | Accion | HBO Max | +13 |
 | 2024 | Wicked | wicked-2024 | Fantasia | HBO Max | ATP |
 | 2024 | Will y Harper | will-y-harper-2024 | Documental | Netflix | +16 |
@@ -577,9 +584,9 @@ Total de peliculas: 901
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video | +16 |
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix | +13 |
 | 2004 | El aviador | the-aviator-2004 | Drama | Otras plataformas | +13 |
+| 2004 | El castillo ambulante | howls-moving-castle-2004 | Anime | Cine + Netflix | ATP |
 | 2004 | Eternal Sunshine of the Spotless Mind | eternal-sunshine-of-the-spotless-mind-2004 | Romance | Prime Video | +16 |
 | 2004 | Harry Potter and the Prisoner of Azkaban | harry-potter-and-the-prisoner-of-azkaban-2004 | Aventura | HBO Max | ATP |
-| 2004 | Howl's Moving Castle | howls-moving-castle-2004 | Anime | Netflix | ATP |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix | +17 |
 | 2004 | La semilla de Chucky | seed-of-chucky-2004 | Terror | Otras plataformas | +17 |
 | 2004 | La terminal | the-terminal-2004 | Comedia | Otras plataformas | +13 |
