@@ -184,6 +184,14 @@ Find trustworthy metadata:
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
 
+Poster policy (mandatory):
+
+- `poster` must be a real vertical movie poster/key art, not a trailer frame, video thumbnail, backdrop, still, logo, screenshot, or platform tile.
+- Never use YouTube thumbnail URLs in `poster`: reject `i.ytimg.com`, `img.youtube.com`, `hqdefault`, `mqdefault`, `sddefault`, `maxresdefault`, or any `/vi/<id>/...` thumbnail URL. YouTube belongs only in `trailerYoutubeId`.
+- Prefer AR-facing poster assets in this order: `JustWatch AR`, official platform/distributor page, TMDb poster image, IMDb media poster, CinesArgentinos/distributor poster, then Wikimedia official poster for older films.
+- Prefer portrait poster sizes/paths such as JustWatch `/poster/.../s718/...` or TMDb `/t/p/w500/...`. Do not use JustWatch `/backdrop/...`, YouTube thumbnails, or horizontal images as the poster card image.
+- Before commit, visually or structurally verify the poster URL is not a cropped trailer/title-card image. If only a trailer thumbnail is available, stop and keep searching; do not publish with a fake poster.
+
 Release date policy for Astro 6 (mandatory):
 
 - Any movie whose `year` is the current calendar year or in the future must include `releaseDate`.
@@ -662,6 +670,7 @@ Return all of the following:
 - [ ] Review does not lean on verdict-led stock lines (`ZAFA y...`, `PASABLE para...`, `SE DEJA VER si...`) as opener or closer
 - [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 6 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources
+- [ ] `poster` is a vertical poster/key art URL and not a YouTube thumbnail, trailer frame, backdrop, logo, screenshot, or horizontal still
 - [ ] Original title and category from trustworthy sources
 - [ ] Director/main cast/production company from trustworthy sources
 - [ ] `trailerYoutubeId` set to official trailer in original language (or explicit user exception recorded)

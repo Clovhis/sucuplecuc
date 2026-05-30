@@ -110,6 +110,7 @@ The bundled script checks:
 - `releasePlatform` / `releasePlatforms` consistency: no duplicates, max `2` labels total, `releasePlatform` preserved as primary, and `Otras plataformas` kept exclusive
 - Argentine audience title drift: `title` should reflect the name used in Argentina, while `originalTitle` keeps the source/original title
 - catalog sync in `docs/movie-catalog-reference.md`
+- poster source sanity: `poster` must be a real vertical poster/key art and must not be a YouTube trailer thumbnail, backdrop, still, logo, screenshot, or horizontal platform tile
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
 - raw numeric score leakage in reviews
 - forbidden third-party site mentions inside reviews (`Rotten`, `Metacritic`, `IMDb`, etc.)
@@ -157,6 +158,13 @@ The `reviewPublishedAt` check is mandatory for new review loads too:
 - treat malformed `reviewPublishedAt` values as a hard stop
 - for a newly published movie review, require `reviewPublishedAt` in exact `YYYY-MM-DD` format
 - this field tracks when Cine Posta published the review and controls the homepage block `Últimas reseñas`; it is not a substitute for `releaseDate`
+
+The poster source check is mandatory too:
+
+- treat any `poster` URL from `i.ytimg.com`, `img.youtube.com`, or containing YouTube thumbnail filenames such as `hqdefault`, `mqdefault`, `sddefault`, or `maxresdefault` as a hard error
+- treat JustWatch `/backdrop/...` and other obviously horizontal still/backdrop paths as a hard error for movie-card posters
+- prefer replacement poster URLs from JustWatch `/poster/.../s718/...`, TMDb `/t/p/w500/...`, IMDb poster media, CinesArgentinos/distributor poster assets, or official platform/distributor poster art
+- do not approve a batch when the card would display a cropped trailer frame, title card, screenshot, or horizontal still as the poster
 
 The automatic meter check is mandatory too:
 

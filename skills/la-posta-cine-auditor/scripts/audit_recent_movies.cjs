@@ -31,6 +31,9 @@ const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
+const FORBIDDEN_POSTER_URL_PATTERN =
+	/(?:^https?:\/\/(?:i\.ytimg\.com|img\.youtube\.com)\/|\/vi\/[a-z0-9_-]+\/(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png)|(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png))/i;
+const HORIZONTAL_POSTER_PATH_PATTERN = /\/(?:backdrop|still|screenshot|thumbnail)\//i;
 const MAX_REVIEW_AUDIT_BATCH_SIZE = 100;
 const RECOMMENDED_LABEL_PATTERNS = [
 	'recomendada',
@@ -948,6 +951,26 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 
 	if (typeof movie.poster !== 'string' || !/^https?:\/\//.test(movie.poster)) {
 		addFinding(findings, 'warn', 'poster-url', candidatePath, 'poster should use an absolute http(s) URL.');
+	} else {
+		if (FORBIDDEN_POSTER_URL_PATTERN.test(movie.poster)) {
+			addFinding(
+				findings,
+				'error',
+				'poster-youtube-thumbnail',
+				candidatePath,
+				'poster must be real vertical movie poster/key art; do not use YouTube trailer thumbnails such as i.ytimg.com hqdefault/maxresdefault.',
+			);
+		}
+
+		if (HORIZONTAL_POSTER_PATH_PATTERN.test(movie.poster)) {
+			addFinding(
+				findings,
+				'error',
+				'poster-horizontal-asset',
+				candidatePath,
+				'poster appears to be a horizontal backdrop/still/thumbnail path. Use a portrait poster asset instead.',
+			);
+		}
 	}
 
 	if (movie.country === 'AR' && movie.isArgentinian !== true) {
