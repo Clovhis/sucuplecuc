@@ -184,6 +184,13 @@ Find trustworthy metadata:
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
 
+Person portrait and info policy (mandatory):
+
+- Every credited `director` and `mainCast` person must have a `src/data/people.json` entry with `nationalityPrimary`, at least one traceable profile/reference URL, and a local `image` under `public/people/**`.
+- Do not publish a movie while director/cast cards would render initials-only portraits. Search TMDb, IMDb/IMDbPro snippets, official studio/platform pages, festival/press-kit pages, university/theatre bios, reputable outlet profiles, and Plex/JustWatch person data before giving up.
+- Cached portraits must be real human photos/headshots or a tightly cropped verified press/role image of that person. Never use posters, logos, favicons, generic site assets, unrelated stills, or group photos where the credited person is not the clear subject.
+- Add `birthDate` or `birthYear` when a trustworthy public source verifies it. Do not invent exact dates for private/low-profile people; if birth data is not public after a real search, keep the portrait, nationality, and references complete and let the auditor report only the verified birth-data gap.
+
 Poster policy (mandatory):
 
 - `poster` must be a real vertical movie poster/key art, not a trailer frame, video thumbnail, backdrop, still, logo, screenshot, or platform tile.

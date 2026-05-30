@@ -92,6 +92,7 @@ The bundled script checks:
 - people pool coverage in `src/data/people.json` for every credited director/main cast member
 - reconciliation against `docs/person-profile-catalog-reference.md` so any credited person with an exclusive profile keeps the canonical catalog name and can still resolve to `/personas/<slug>/`
 - local cached portrait existence under `public/people/**`
+- local portrait presence as a hard requirement: director/main cast cards must not ship with initials-only placeholders
 - portrait source sanity so cached portraits are real headshots and not logos, posters, favicons or generic site assets
 - birth date/year presence when it can be verified from public sources
 - death year sanity for deceased people and implausibly old profiles
@@ -165,6 +166,13 @@ The poster source check is mandatory too:
 - treat JustWatch `/backdrop/...` and other obviously horizontal still/backdrop paths as a hard error for movie-card posters
 - prefer replacement poster URLs from JustWatch `/poster/.../s718/...`, TMDb `/t/p/w500/...`, IMDb poster media, CinesArgentinos/distributor poster assets, or official platform/distributor poster art
 - do not approve a batch when the card would display a cropped trailer frame, title card, screenshot, or horizontal still as the poster
+
+The people portrait/info check is mandatory too:
+
+- treat a missing `image` for any credited director or `mainCast` person as a hard error, not a warning
+- require `nationalityPrimary` and at least one traceable IMDb, TMDb, Wikidata, Plex, JustWatch, official, university/theatre, festival, or reputable press profile/reference URL
+- cached portraits must be real human photos/headshots or a tightly cropped verified press/role image of the credited person; reject posters, logos, favicons, generic site assets, and unclear group images
+- require `birthDate` or `birthYear` only when a trustworthy public source verifies it; do not fabricate private birth data just to silence the UI
 
 The automatic meter check is mandatory too:
 

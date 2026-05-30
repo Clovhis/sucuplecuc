@@ -168,6 +168,8 @@ const TRUSTED_PERSON_IMAGE_HOSTS = new Set([
 	'firstwind.co.jp',
 	'swallow-p.com',
 	'tn.com.ar',
+	'cdn.milenio.com',
+	'i.guim.co.uk',
 	'www.sonypicturesanimation.com',
 	'sonypicturesanimation.com',
 ]);
@@ -1146,10 +1148,10 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 		if (typeof personEntry.image !== 'string' || personEntry.image.trim().length === 0) {
 			addFinding(
 				findings,
-				'warn',
+				'error',
 				'missing-person-image',
 				candidatePath,
-				`"${personName}" has no trusted cached portrait. Prefer initials fallback over storing a poster, screenshot, or group photo.`,
+				`"${personName}" must include a trusted cached portrait in src/data/people.json. Do not publish credited directors/main cast with initials-only cards.`,
 			);
 		} else {
 			const normalizedImagePath = personEntry.image.replace(/^\/+/, '').replace(/\//g, path.sep);
@@ -1486,7 +1488,16 @@ async function auditCandidates(args) {
 			: listRecentCandidates(args.root, args.baseRef);
 
 	if (candidatePaths.length === 0) {
-		throw new Error('No candidate movie files found to audit.');
+		return {
+			baseRef: args.baseRef,
+			root: args.root,
+			candidates: [],
+			editorialAudit: {
+				status: 'skip',
+				message: 'No candidate movie files found to audit.',
+			},
+			findings: [],
+		};
 	}
 
 	const catalogPath = path.resolve('docs/movie-catalog-reference.md');

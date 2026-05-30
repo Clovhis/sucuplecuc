@@ -337,16 +337,21 @@
 	},
 	"Adrián Vázquez": {
 		"name": "Adrián Vázquez",
-		"nationalityPrimary": "Mexicano",
-		"image": "",
+		"birthDate": "2004-04-19",
+		"birthYear": 2004,
+		"nationalityPrimary": "Español",
+		"image": "/people/adrian-vazquez-nm1281571.jpg",
 		"imdbId": "nm1281571",
 		"imdbUrl": "https://www.imdb.com/name/nm1281571/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/cyhuSSuFA6DYKG3eI9w6VxPaUrs.jpg",
 		"referenceUrls": [
 			"https://www.imdb.com/name/nm1281571/",
-			"https://www.netflix.com/title/81677240"
+			"https://www.netflix.com/title/81677240",
+			"https://www.wikidata.org/wiki/Q133544885",
+			"https://www.themoviedb.org/person/1413394-adrian-vazquez"
 		],
 		"lastVerifiedAt": "2026-05-30",
-		"source": "manual-imdb-cache"
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Adriana Paz": {
 		"name": "Adriana Paz",
@@ -6127,19 +6132,6 @@
 		"lastVerifiedAt": "2026-05-30",
 		"source": "wikidata-imdb-cache"
 	},
-	"Chartayodom Hiranyatithi": {
-		"name": "Chartayodom Hiranyatithi",
-		"birthDate": "1976-08-03",
-		"birthYear": 1976,
-		"nationalityPrimary": "Tailandés",
-		"image": "",
-		"referenceUrls": [
-			"https://www.themoviedb.org/person/1341880-chartayodom-hiranyatithi",
-			"https://sharerice.com/Chai_Chatayodom_Hiranyatithi"
-		],
-		"lastVerifiedAt": "2026-05-30",
-		"source": "manual-tmdb-cache"
-	},
 	"Charles King": {
 		"name": "Charles King",
 		"birthYear": 1886,
@@ -6419,6 +6411,20 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1923-10-04",
 		"deathDate": "2008-04-05"
+	},
+	"Chartayodom Hiranyatithi": {
+		"name": "Chartayodom Hiranyatithi",
+		"birthDate": "1976-08-03",
+		"birthYear": 1976,
+		"nationalityPrimary": "Tailandés",
+		"image": "/people/chartayodom-hiranyatithi-tmdb1341880.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1341880-chartayodom-hiranyatithi",
+			"https://sharerice.com/Chai_Chatayodom_Hiranyatithi"
+		],
+		"lastVerifiedAt": "2026-05-30",
+		"source": "manual-tmdb-cache",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/srsQcBSRLjjyIhSdS72xNPlHhUZ.jpg"
 	},
 	"Chazz Palminteri": {
 		"name": "Chazz Palminteri",
@@ -7394,15 +7400,19 @@
 	"Clark Shotwell": {
 		"name": "Clark Shotwell",
 		"nationalityPrimary": "Estadounidense",
-		"image": "",
+		"image": "/people/clark-shotwell-nm18365459.jpg",
 		"imdbId": "nm18365459",
 		"imdbUrl": "https://www.imdb.com/name/nm18365459/",
 		"referenceUrls": [
 			"https://www.imdb.com/title/tt41367695/",
-			"https://www.apple.com/tv-pr/originals/propeller-one-way-night-coach/cast-crew/"
+			"https://www.apple.com/tv-pr/originals/propeller-one-way-night-coach/cast-crew/",
+			"https://www.theguardian.com/film/2026/may/16/propellor-one-way-night-coach-review-john-travolta-family-plane-fantasy",
+			"https://cdapress.com/news/2025/nov/22/cda-resort-christmas-shows-clark-shotwell-to-play-young-john-travolta-in-upcoming-film/"
 		],
 		"lastVerifiedAt": "2026-05-30",
-		"source": "manual-imdb-cache"
+		"source": "manual-imdb-press-age-derived-cache",
+		"remoteImageUrl": "https://i.guim.co.uk/img/media/5edb2ad20737943fd70c73460766bd96bec15159/145_0_834_667/master/834.jpg?width=700&quality=85&auto=format&fit=max&s=cf57e24b7c11a24528fb1f1ccdfbbd41",
+		"birthYear": 2015
 	},
 	"Claude Lanzmann": {
 		"name": "Claude Lanzmann",
@@ -9232,15 +9242,20 @@
 	"David Gaitán": {
 		"name": "David Gaitán",
 		"nationalityPrimary": "Mexicano",
-		"image": "",
+		"image": "/people/david-gaitan-nm3683445.jpg",
 		"imdbId": "nm3683445",
 		"imdbUrl": "https://www.imdb.com/name/nm3683445/",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q108705231",
-			"https://www.imdb.com/name/nm3683445/"
+			"https://www.imdb.com/name/nm3683445/",
+			"https://www.milenio.com/cultura/azul-bosques-obra-distopica-desobediencia-civil-deseo",
+			"https://www.themoviedb.org/person/1301519-david-gaitan",
+			"https://www.cine.com/actores/david-gaitan"
 		],
 		"lastVerifiedAt": "2026-05-30",
-		"source": "wikidata-imdb-cache"
+		"source": "manual-press-imdb-cache",
+		"birthYear": 1984,
+		"remoteImageUrl": "https://cdn.milenio.com/uploads/media/2026/05/12/david-gaitan-protagoniza-azul-bosques.jpg"
 	},
 	"David Gordon Green": {
 		"name": "David Gordon Green",
@@ -18335,15 +18350,19 @@
 	"Jero Medina": {
 		"name": "Jero Medina",
 		"nationalityPrimary": "Mexicano",
-		"image": "",
+		"image": "/people/jero-medina-nm4416922.jpg",
 		"imdbId": "nm4416922",
 		"imdbUrl": "https://www.imdb.com/name/nm4416922/",
 		"referenceUrls": [
 			"https://www.imdb.com/name/nm4416922/",
-			"https://www.netflix.com/title/81677240"
+			"https://www.netflix.com/title/81677240",
+			"https://www.themoviedb.org/person/2558356-jero-medina",
+			"https://www.sensacine.com.mx/actores/actor-897994/"
 		],
 		"lastVerifiedAt": "2026-05-30",
-		"source": "manual-imdb-cache"
+		"source": "manual-imdb-tmdb-cache",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/A8FWB4dw7qVF4fOrRcbnZM7qgXG.jpg",
+		"birthYear": 1990
 	},
 	"Jeroen Krabbé": {
 		"name": "Jeroen Krabbé",
@@ -22590,6 +22609,25 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1993-08-26"
 	},
+	"Kelly Eviston-Quinnett": {
+		"name": "Kelly Eviston-Quinnett",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/kelly-eviston-quinnett-nm18477569.jpg",
+		"imdbId": "nm18477569",
+		"imdbUrl": "https://www.imdb.com/name/nm18477569/",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm18477569/",
+			"https://www.apple.com/tv-pr/originals/propeller-one-way-night-coach/cast-crew/",
+			"https://www.themoviedb.org/person/1923615-kelly-eviston-quinnett",
+			"https://www.imdb.com/name/nm0263776/bio/",
+			"https://www.uidaho.edu/newsroom/propeller-one-way-night-coach"
+		],
+		"lastVerifiedAt": "2026-05-30",
+		"source": "manual-imdb-tmdb-cache",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/7apdemZBevZ2kpFbaIlNcGUzS08.jpg",
+		"birthDate": "1967-10-14",
+		"birthYear": 1967
+	},
 	"Kelly Marcel": {
 		"name": "Kelly Marcel",
 		"birthYear": 1974,
@@ -22606,19 +22644,6 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-tmdb-cache",
 		"birthDate": "1974-01-10"
-	},
-	"Kelly Eviston-Quinnett": {
-		"name": "Kelly Eviston-Quinnett",
-		"nationalityPrimary": "Estadounidense",
-		"image": "",
-		"imdbId": "nm18477569",
-		"imdbUrl": "https://www.imdb.com/name/nm18477569/",
-		"referenceUrls": [
-			"https://www.imdb.com/name/nm18477569/",
-			"https://www.apple.com/tv-pr/originals/propeller-one-way-night-coach/cast-crew/"
-		],
-		"lastVerifiedAt": "2026-05-30",
-		"source": "manual-imdb-cache"
 	},
 	"Kelsey Mann": {
 		"name": "Kelsey Mann",
@@ -38132,10 +38157,13 @@
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q113471457",
 			"https://www.imdb.com/name/nm1981808/",
-			"https://www.themoviedb.org/person/146515-taweewat-wantha"
+			"https://www.themoviedb.org/person/146515-taweewat-wantha",
+			"https://www.iq.com/actor-info/taweewat-wantha-226764405?lang=en_us"
 		],
 		"lastVerifiedAt": "2026-05-30",
-		"source": "wikidata-imdb-tmdb-cache"
+		"source": "wikidata-imdb-tmdb-iqiyi-cache",
+		"birthDate": "1975-02-02",
+		"birthYear": 1975
 	},
 	"Taylour Paige": {
 		"name": "Taylour Paige",
@@ -40173,6 +40201,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1945-12-31"
 	},
+	"Verónica Bravo": {
+		"name": "Verónica Bravo",
+		"nationalityPrimary": "Mexicana",
+		"image": "/people/veronica-bravo-nm5996108.jpg",
+		"imdbId": "nm5996108",
+		"imdbUrl": "https://www.imdb.com/name/nm5996108/",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm5996108/",
+			"https://www.netflix.com/title/81677240",
+			"https://www.themoviedb.org/person/2448601-veronica-bravo"
+		],
+		"lastVerifiedAt": "2026-05-30",
+		"source": "manual-imdb-tmdb-cache",
+		"birthDate": "1988-03-23",
+		"birthYear": 1988,
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/vwwlZuekgBFeUT1QXGnoSbq0tFD.jpg"
+	},
 	"Veronica Falcón": {
 		"name": "Veronica Falcón",
 		"birthDate": "1966-08-08",
@@ -40189,19 +40234,6 @@
 		],
 		"lastVerifiedAt": "2026-04-20",
 		"source": "wikidata-imdb-cache"
-	},
-	"Verónica Bravo": {
-		"name": "Verónica Bravo",
-		"nationalityPrimary": "Mexicana",
-		"image": "",
-		"imdbId": "nm5996108",
-		"imdbUrl": "https://www.imdb.com/name/nm5996108/",
-		"referenceUrls": [
-			"https://www.imdb.com/name/nm5996108/",
-			"https://www.netflix.com/title/81677240"
-		],
-		"lastVerifiedAt": "2026-05-30",
-		"source": "manual-imdb-cache"
 	},
 	"Verónica Pelaccini": {
 		"name": "Verónica Pelaccini",
