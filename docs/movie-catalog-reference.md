@@ -1,14 +1,15 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-05-28. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-05-30. Fuente: src/data/movies/*.json
 
-Total de peliculas: 908
+Total de peliculas: 918
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Otras plataformas | +16 |
 | 2026 | 53 domingos | 53-domingos-2026 | Comedia | Netflix | +13 |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Otras plataformas | ATP |
+| 2026 | Aída y vuelta | aida-y-vuelta-2026 | Comedia | Prime Video | +13 |
 | 2026 | Amarga Navidad | amarga-navidad-2026 | Drama | Cine | +13 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | Backrooms | backrooms-2026 | Terror | Cine | +13 |
@@ -27,6 +28,7 @@ Total de peliculas: 908
 | 2026 | El pasajero del diablo | el-pasajero-del-diablo-2026 | Terror | Cine | +17 |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
+| 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
 | 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Otras plataformas | +17 |
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
@@ -35,12 +37,14 @@ Total de peliculas: 908
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Otras plataformas | +16 |
+| 2026 | Jack Ryan de Tom Clancy: Guerra Encubierta | jack-ryan-de-tom-clancy-guerra-encubierta-2026 | Accion | Prime Video | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Otras plataformas | +13 |
 | 2026 | La Odisea | the-odyssey-2026 | Aventura | Otras plataformas | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Otras plataformas | +17 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
+| 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Otras plataformas | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
@@ -49,6 +53,7 @@ Total de peliculas: 908
 | 2026 | Michael | michael-2026 | Drama | Cine | +13 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Cine | +17 |
 | 2026 | Nada entre los dos | nada-entre-los-dos-2026 | Romance | Cine | ATP |
+| 2026 | No es país para solteros | no-es-pais-para-solteros-2026 | Comedia romántica | Prime Video | +18 |
 | 2026 | Obsesión | obsesion-2026 | Terror | Cine | +17 |
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
@@ -61,6 +66,7 @@ Total de peliculas: 908
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
+| 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Apple TV | +16 |
 | 2026 | Send Help | send-help-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
@@ -74,6 +80,7 @@ Total de peliculas: 908
 | 2026 | The Punisher: La ultima muerte | the-punisher-one-last-kill-2026 | Accion | Disney Plus | +18 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
+| 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Whistle | whistle-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Yiya Murano: Muerte a la hora del té | yiya-murano-muerte-a-la-hora-del-te-2026 | Documental | Netflix | +12 |
@@ -111,6 +118,7 @@ Total de peliculas: 908
 | 2025 | Jurassic World Rebirth | jurassic-world-rebirth-2025 | Accion | HBO Max | +13 |
 | 2025 | Karate Kid: Legends | karate-kid-legends-2025 | Accion | HBO Max | +13 |
 | 2025 | KPop Demon Hunters | kpop-demon-hunters-2025 | Animacion | Netflix | ATP |
+| 2025 | La larga marcha | la-larga-marcha-2025 | Thriller | Prime Video | +16 |
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Otras plataformas | ATP |
@@ -126,6 +134,8 @@ Total de peliculas: 908
 | 2025 | Opus | opus-2025 | Thriller | HBO Max | +17 |
 | 2025 | Otro viernes de locos | otro-viernes-de-locos-2025 | Comedia | Disney Plus | ATP |
 | 2025 | Padre Madre Hermana Hermano | padre-madre-hermana-hermano-2025 | Drama | Otras plataformas | +13 |
+| 2025 | Playa de lobos | playa-de-lobos-2025 | Thriller | Disney Plus | +13 |
+| 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |
 | 2025 | Scarlet | scarlet-2025 | Anime | Otras plataformas | ATP |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
