@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-06-04. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-06-06. Fuente: src/data/movies/*.json
 
-Total de peliculas: 923
+Total de peliculas: 927
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ Total de peliculas: 923
 | 2026 | GOAT | goat-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Otras plataformas | +17 |
-| 2026 | Hoppers | hoppers-2026 | Animacion | Otras plataformas | ATP |
+| 2026 | Hoppers | hoppers-2026 | Animacion | Disney Plus | ATP |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Jack Ryan de Tom Clancy: Guerra Encubierta | jack-ryan-de-tom-clancy-guerra-encubierta-2026 | Accion | Prime Video | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
@@ -52,12 +52,14 @@ Total de peliculas: 923
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
+| 2026 | México 86 | mexico-86-2026 | Comedia | Netflix | +16 |
 | 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
 | 2026 | Michael | michael-2026 | Drama | Cine | +13 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Cine | +17 |
 | 2026 | Nada entre los dos | nada-entre-los-dos-2026 | Romance | Otras plataformas | ATP |
 | 2026 | No es país para solteros | no-es-pais-para-solteros-2026 | Comedia romántica | Prime Video | +18 |
 | 2026 | Obsesión | obsesion-2026 | Terror | Cine | +17 |
+| 2026 | Office Romance | office-romance-2026 | Comedia | Netflix | +16 |
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
@@ -82,6 +84,7 @@ Total de peliculas: 923
 | 2026 | The Amazing Digital Circus: El último acto | the-amazing-digital-circus-el-ultimo-acto-2026 | Animacion | Cine | +13 |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Otras plataformas | +16 |
 | 2026 | The Mandalorian and Grogu | the-mandalorian-and-grogu-2026 | Ciencia ficcion | Cine | +13 |
+| 2026 | The Marked Woman | the-marked-woman-2026 | Thriller | Netflix | +16 |
 | 2026 | The Punisher: La ultima muerte | the-punisher-one-last-kill-2026 | Accion | Disney Plus | +18 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
@@ -139,9 +142,10 @@ Total de peliculas: 923
 | 2025 | Opus | opus-2025 | Thriller | HBO Max | +17 |
 | 2025 | Otro viernes de locos | otro-viernes-de-locos-2025 | Comedia | Disney Plus | ATP |
 | 2025 | Padre Madre Hermana Hermano | padre-madre-hermana-hermano-2025 | Drama | Otras plataformas | +13 |
+| 2025 | Pillion | pillion-2025 | Drama | HBO Max | +18 |
 | 2025 | Playa de lobos | playa-de-lobos-2025 | Thriller | Disney Plus | +13 |
 | 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |
-| 2025 | Scarlet | scarlet-2025 | Anime | Otras plataformas | ATP |
+| 2025 | Scarlet | scarlet-2025 | Anime | Netflix | +13 |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
 | 2025 | Superman | superman-2025 | Accion | HBO Max | +13 |
