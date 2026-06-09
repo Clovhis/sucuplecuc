@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-06-06. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-06-09. Fuente: src/data/movies/*.json
 
-Total de peliculas: 927
+Total de peliculas: 928
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -80,6 +80,7 @@ Total de peliculas: 927
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Cine | ATP |
 | 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | Otras plataformas | +16 |
+| 2026 | Tetracampeones: Brasil volvió a creer | tetracampeones-brasil-volvio-a-creer-2026 | Documental | Netflix | +13 |
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Otras plataformas | +12 |
 | 2026 | The Amazing Digital Circus: El último acto | the-amazing-digital-circus-el-ultimo-acto-2026 | Animacion | Cine | +13 |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Otras plataformas | +16 |
