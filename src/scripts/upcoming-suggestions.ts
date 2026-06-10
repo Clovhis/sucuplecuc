@@ -1,3 +1,5 @@
+export {};
+
 type UpcomingSuggestion = {
 	title: string;
 	releaseDate: string;

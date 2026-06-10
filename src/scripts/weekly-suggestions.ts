@@ -1,3 +1,5 @@
+export {};
+
 type WeeklySuggestion = {
 	title: string;
 	year: number;
