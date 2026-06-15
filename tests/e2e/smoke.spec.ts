@@ -1,5 +1,23 @@
 import { expect, test } from '@playwright/test';
 
+test('donation prompt appears once per local day', async ({ page }) => {
+  const response = await page.goto('/', { waitUntil: 'networkidle' });
+
+  expect(response?.ok()).toBeTruthy();
+
+  const prompt = page.getByRole('dialog', { name: /Ayudanos a mantener Cine Posta online/i });
+  await expect(prompt).toBeVisible();
+  await expect(
+    prompt.getByRole('link', { name: /Donar un cafecito/i }),
+  ).toHaveAttribute('href', 'https://cafecito.app/cineposta');
+
+  await prompt.getByRole('button', { name: /Ahora no, entrar al sitio/i }).click();
+  await expect(prompt).not.toBeVisible();
+
+  await page.reload({ waitUntil: 'networkidle' });
+  await expect(prompt).not.toBeVisible();
+});
+
 test('home page renders the catalog shell', async ({ page }) => {
   const pageErrors: string[] = [];
   page.on('pageerror', (error) => pageErrors.push(error.message));
