@@ -6,8 +6,8 @@ import { fileURLToPath } from 'node:url';
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'src/data/upcomingReleases.generated.ts');
 const UPCOMING_URL = 'https://www.themoviedb.org/movie/upcoming';
-const MAX_SOURCE_ITEMS = 12;
-const MAX_RELEASES = 8;
+const MAX_SOURCE_ITEMS = 24;
+const MAX_RELEASES = 16;
 const STRICT_MODE = process.env.UPCOMING_RELEASES_STRICT === '1';
 const TODAY_TIMESTAMP = Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
 const REQUEST_HEADERS = {

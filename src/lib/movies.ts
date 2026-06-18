@@ -429,6 +429,122 @@ function getReferenceDayTimestamp(referenceDate: Date): number {
 	);
 }
 
+function getIsoDateTimestamp(value: string): number {
+	return Date.parse(`${value}T00:00:00Z`);
+}
+
+function getNormalizedUpcomingReleaseTitle(title: string): string {
+	return normalizeSearchText(title).replace(/\s+/g, ' ');
+}
+
+function getYoutubeVideoIdFromUrl(value: string): string {
+	const normalizedValue = String(value ?? '').trim();
+	if (!normalizedValue) {
+		return '';
+	}
+
+	try {
+		const parsedUrl = new URL(normalizedValue);
+		if (parsedUrl.hostname.includes('youtu.be')) {
+			return normalizeYoutubeId(parsedUrl.pathname.replace(/^\/+/, ''));
+		}
+		if (parsedUrl.pathname.startsWith('/embed/')) {
+			return normalizeYoutubeId(parsedUrl.pathname.replace(/^\/embed\/+/, ''));
+		}
+		return normalizeYoutubeId(parsedUrl.searchParams.get('v') ?? '');
+	} catch {
+		return '';
+	}
+}
+
+function getCatalogMovieUpcomingIdentityKeys(movie: Pick<Movie, 'title' | 'trailerYoutubeId'>): string[] {
+	const keys = new Set<string>();
+	const normalizedYoutubeId = normalizeYoutubeId(movie.trailerYoutubeId ?? '');
+	if (normalizedYoutubeId) {
+		keys.add(`youtube:${normalizedYoutubeId}`);
+	}
+
+	const normalizedTitle = getNormalizedUpcomingReleaseTitle(movie.title);
+	if (normalizedTitle) {
+		keys.add(`title:${normalizedTitle}`);
+	}
+
+	return Array.from(keys);
+}
+
+function getUpcomingReleaseIdentityKeys(release: Pick<UpcomingMovieRelease, 'title' | 'videoUrl'>): string[] {
+	const keys = new Set<string>();
+	const youtubeId = getYoutubeVideoIdFromUrl(release.videoUrl);
+	if (youtubeId) {
+		keys.add(`youtube:${youtubeId}`);
+	}
+
+	const normalizedTitle = getNormalizedUpcomingReleaseTitle(release.title);
+	if (normalizedTitle) {
+		keys.add(`title:${normalizedTitle}`);
+	}
+
+	return Array.from(keys);
+}
+
+function buildCatalogMovieIdentityIndex(movies: Movie[]): Map<string, Movie> {
+	const movieByIdentity = new Map<string, Movie>();
+
+	for (const movie of movies) {
+		for (const identityKey of getCatalogMovieUpcomingIdentityKeys(movie)) {
+			if (!movieByIdentity.has(identityKey)) {
+				movieByIdentity.set(identityKey, movie);
+			}
+		}
+	}
+
+	return movieByIdentity;
+}
+
+function findMatchingCatalogMovieForUpcomingRelease(
+	release: Pick<UpcomingMovieRelease, 'title' | 'videoUrl'>,
+	movieByIdentity: Map<string, Movie>,
+): Movie | null {
+	for (const identityKey of getUpcomingReleaseIdentityKeys(release)) {
+		const movie = movieByIdentity.get(identityKey);
+		if (movie) {
+			return movie;
+		}
+	}
+
+	return null;
+}
+
+function getUpcomingReleaseMapKey(release: UpcomingMovieRelease): string {
+	return getUpcomingReleaseIdentityKeys(release)[0] ?? `slug:${release.slug}`;
+}
+
+function mergeUpcomingRelease(current: UpcomingMovieRelease, next: UpcomingMovieRelease): UpcomingMovieRelease {
+	return {
+		...current,
+		...next,
+		synopsis: next.synopsis ?? current.synopsis,
+		sourceUrl: next.sourceUrl ?? current.sourceUrl,
+	};
+}
+
+function shouldIncludeExternalUpcomingRelease(
+	release: UpcomingMovieRelease,
+	movieByIdentity: Map<string, Movie>,
+	referenceTimestamp: number,
+): boolean {
+	const matchingCatalogMovie = findMatchingCatalogMovieForUpcomingRelease(release, movieByIdentity);
+	if (!matchingCatalogMovie?.releaseDate?.trim()) {
+		return true;
+	}
+
+	if (!isFutureRelease(matchingCatalogMovie.releaseDate, referenceTimestamp)) {
+		return false;
+	}
+
+	return !matchingCatalogMovie.trailerYoutubeId?.trim();
+}
+
 function getWeeklySuggestionScore(movie: Movie): number {
 	if (isAbsoluteCinemaMovie(movie)) {
 		return WEEKLY_SUGGESTION_LABEL_SCORE.get('absolute cinema')!;
@@ -542,8 +658,11 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 
 	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
 	validateMovies(movies);
+	const movieByIdentity = buildCatalogMovieIdentityIndex(movies);
 
-	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) => isFutureRelease(release.releaseDate, referenceTimestamp));
+	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) =>
+		isFutureRelease(release.releaseDate, referenceTimestamp),
+	);
 
 	const catalogUpcoming = movies
 		.filter((movie) => {
@@ -569,14 +688,14 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			sourceUrl: getMoviePath(movie.slug),
 		}));
 
-	const releaseBySlug = new Map<string, UpcomingMovieRelease>();
+	const priorityReleaseByKey = new Map<string, UpcomingMovieRelease>();
 
 	for (const fallback of UPCOMING_RELEASE_FALLBACKS) {
 		if (!isFutureRelease(fallback.releaseDate, referenceTimestamp)) {
 			continue;
 		}
 
-		releaseBySlug.set(fallback.slug, {
+		const release = {
 			slug: fallback.slug,
 			title: fallback.title,
 			releaseDate: fallback.releaseDate,
@@ -584,30 +703,69 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			thumbnailUrl: fallback.thumbnailUrl,
 			synopsis: fallback.synopsis,
 			sourceUrl: fallback.sourceUrl,
-		});
-	}
+		};
 
-	for (const release of [...generatedUpcoming, ...catalogUpcoming]) {
-		if (!releaseBySlug.has(release.slug)) {
-			releaseBySlug.set(release.slug, release);
+		if (!shouldIncludeExternalUpcomingRelease(release, movieByIdentity, referenceTimestamp)) {
 			continue;
 		}
 
-		const current = releaseBySlug.get(release.slug)!;
-
-		releaseBySlug.set(release.slug, {
-			...release,
-			...current,
-			sourceUrl: current.sourceUrl ?? release.sourceUrl,
-			synopsis: current.synopsis ?? release.synopsis,
-		});
+		priorityReleaseByKey.set(getUpcomingReleaseMapKey(release), release);
 	}
 
-	return Array.from(releaseBySlug.values()).slice(0, limit);
+	for (const release of catalogUpcoming) {
+		const releaseKey = getUpcomingReleaseMapKey(release);
+		const currentRelease = priorityReleaseByKey.get(releaseKey);
+		priorityReleaseByKey.set(
+			releaseKey,
+			currentRelease ? mergeUpcomingRelease(currentRelease, release) : release,
+		);
+	}
+
+	const sortedPriorityReleases = Array.from(priorityReleaseByKey.values()).sort(
+		(left, right) =>
+			getIsoDateTimestamp(left.releaseDate) - getIsoDateTimestamp(right.releaseDate) ||
+			left.title.localeCompare(right.title, 'es'),
+	);
+	if (sortedPriorityReleases.length >= limit) {
+		return sortedPriorityReleases.slice(0, limit);
+	}
+
+	const supplementalReleaseByKey = new Map<string, UpcomingMovieRelease>();
+
+	for (const release of generatedUpcoming) {
+		if (!shouldIncludeExternalUpcomingRelease(release, movieByIdentity, referenceTimestamp)) {
+			continue;
+		}
+
+		const releaseKey = getUpcomingReleaseMapKey(release);
+		if (priorityReleaseByKey.has(releaseKey)) {
+			continue;
+		}
+
+		const currentRelease = supplementalReleaseByKey.get(releaseKey);
+		supplementalReleaseByKey.set(
+			releaseKey,
+			currentRelease ? mergeUpcomingRelease(currentRelease, release) : release,
+		);
+	}
+
+	const sortedSupplementalReleases = Array.from(supplementalReleaseByKey.values()).sort(
+		(left, right) =>
+			getIsoDateTimestamp(left.releaseDate) - getIsoDateTimestamp(right.releaseDate) ||
+			left.title.localeCompare(right.title, 'es'),
+	);
+
+	return [...sortedPriorityReleases, ...sortedSupplementalReleases]
+		.sort(
+			(left, right) =>
+				getIsoDateTimestamp(left.releaseDate) - getIsoDateTimestamp(right.releaseDate) ||
+				left.title.localeCompare(right.title, 'es'),
+		)
+		.slice(0, limit);
 }
 
 function isFutureRelease(releaseDate: string, referenceTimestamp: number): boolean {
-	const timestamp = Date.parse(`${releaseDate}T00:00:00Z`);
+	const timestamp = getIsoDateTimestamp(releaseDate);
 	return !Number.isNaN(timestamp) && timestamp > referenceTimestamp;
 }
 

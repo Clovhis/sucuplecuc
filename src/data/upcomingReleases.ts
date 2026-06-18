@@ -20,16 +20,6 @@ export const UPCOMING_RELEASE_FALLBACKS: UpcomingReleaseFallback[] = [
 		sourceUrl: 'https://www.themoviedb.org/movie/454639-masters-of-the-universe',
 	},
 	{
-		slug: 'toy-story-5',
-		title: 'Toy Story 5',
-		releaseDate: '2026-06-19',
-		trailerUrl: 'https://www.youtube.com/watch?v=c51ND9Hdbw0',
-		thumbnailUrl: 'https://i.ytimg.com/vi/c51ND9Hdbw0/hqdefault.jpg',
-		synopsis:
-			'Woody, Buzz, Jessie y el resto de los juguetes chocan con una nueva amenaza tecnológica.',
-		sourceUrl: 'https://www.pixar.com/toy-story-5',
-	},
-	{
 		slug: 'supergirl',
 		title: 'Supergirl',
 		releaseDate: '2026-06-24',
@@ -57,6 +47,36 @@ export const UPCOMING_RELEASE_FALLBACKS: UpcomingReleaseFallback[] = [
 		thumbnailUrl: 'https://i.ytimg.com/vi/Mzw2ttJD2qQ/hqdefault.jpg',
 		synopsis:
 			'Christopher Nolan lleva el viaje de Odiseo a una escala epica de aventura, mito y regreso imposible.',
+	},
+	{
+		slug: 'spider-man-brand-new-day',
+		title: 'Spider-Man: Brand New Day',
+		releaseDate: '2026-07-31',
+		trailerUrl: 'https://www.youtube.com/watch?v=62bIsvRcPv0',
+		thumbnailUrl: 'https://i.ytimg.com/vi/62bIsvRcPv0/hqdefault.jpg',
+		synopsis:
+			'Peter Parker sigue peleando solo en una ciudad que ya no lo recuerda, mientras una amenaza nueva lo obliga a reinventarse otra vez.',
+		sourceUrl: 'https://www.sonypictures.com/movies/spidermanbrandnewday',
+	},
+	{
+		slug: 'insidious-out-of-the-further',
+		title: 'Insidious: Out of the Further',
+		releaseDate: '2026-08-21',
+		trailerUrl: 'https://www.youtube.com/watch?v=jxU8FU3o75A',
+		thumbnailUrl: 'https://i.ytimg.com/vi/jxU8FU3o75A/hqdefault.jpg',
+		synopsis:
+			'La saga vuelve al Further con una nueva pesadilla sobrenatural que reabre la puerta a otra posesion familiar.',
+		sourceUrl: 'https://www.sonypictures.com/movies/insidiousoutofthefurther',
+	},
+	{
+		slug: 'resident-evil-2026',
+		title: 'Resident Evil',
+		releaseDate: '2026-09-18',
+		trailerUrl: 'https://www.youtube.com/watch?v=SJPu1spHqfk',
+		thumbnailUrl: 'https://i.ytimg.com/vi/SJPu1spHqfk/hqdefault.jpg',
+		synopsis:
+			'Un nuevo reinicio lleva el horror biologico de Resident Evil otra vez al cine con una historia enfocada en supervivencia y contagio.',
+		sourceUrl: 'https://www.sonypictures.com/movies/residentevil8',
 	},
 	{
 		slug: 'star-wars-the-mandalorian-and-grogu',
