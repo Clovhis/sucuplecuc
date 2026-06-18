@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-06-12. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-06-18. Fuente: src/data/movies/*.json
 
-Total de peliculas: 934
+Total de peliculas: 935
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -93,6 +93,7 @@ Total de peliculas: 934
 | 2026 | The Punisher: La ultima muerte | the-punisher-one-last-kill-2026 | Accion | Disney Plus | +18 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
+| 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Cine | ATP |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Whistle | whistle-2026 | Terror | Otras plataformas | +16 |
