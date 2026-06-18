@@ -43,7 +43,7 @@ Total de peliculas: 935
 | 2026 | Jack Ryan de Tom Clancy: Guerra Encubierta | jack-ryan-de-tom-clancy-guerra-encubierta-2026 | Accion | Prime Video | +16 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
-| 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | Otras plataformas | +13 |
+| 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
 | 2026 | La Odisea | the-odyssey-2026 | Aventura | Otras plataformas | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Otras plataformas | +17 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
@@ -385,7 +385,7 @@ Total de peliculas: 935
 | 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus | +13 |
 | 2018 | Mission: Impossible - Fallout | mission-impossible-fallout-2018 | Accion | Otras plataformas | +13 |
 | 2018 | Ready Player One: Comienza el Juego | ready-player-one-2018 | Ciencia ficcion | Otras plataformas | +13 |
-| 2018 | Rojo | rojo-2018 | Thriller | HBO Max | +13 |
+| 2018 | Rojo | rojo-2018 | Thriller | CINE.AR | +13 |
 | 2018 | Solo: A Star Wars Story | solo-a-star-wars-story-2018 | Ciencia ficcion | Disney Plus | +13 |
 | 2018 | Spider-Man: Into the Spider-Verse | spider-man-into-the-spider-verse-2018 | Animacion | Prime Video | +13 |
 | 2018 | Venom | venom-2018 | Accion | Netflix | +13 |
@@ -413,7 +413,7 @@ Total de peliculas: 935
 | 2017 | War for the Planet of the Apes | war-for-the-planet-of-the-apes-2017 | Accion | Disney Plus | +13 |
 | 2017 | Wonder Wheel | wonder-wheel-2017 | Drama | Otras plataformas | +16 |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | HBO Max | +13 |
-| 2017 | Zama | zama-2017 | Drama | Otras plataformas | +18 |
+| 2017 | Zama | zama-2017 | Drama | CINE.AR | +18 |
 | 2016 | A Silent Voice | a-silent-voice-2016 | Anime | Prime Video | +13 |
 | 2016 | Arrival | arrival-2016 | Ciencia ficcion | Otras plataformas | +13 |
 | 2016 | Batman v Superman: Dawn of Justice | batman-v-superman-dawn-of-justice-2016 | Accion | Otras plataformas | +13 |
