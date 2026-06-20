@@ -21,11 +21,44 @@ export const SOURCES_AND_DATA_PATH = '/fuentes-y-datos/';
 export const COPYRIGHT_PATH = '/copyright-y-uso-de-material/';
 export const CONTACT_PATH = '/contacto/';
 export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
+export const PEOPLE_PATH = '/personas/';
 
 type StructuredDataValue = Record<string, unknown>;
 
 function asAbsoluteUrl(value: string): string {
 	return new URL(value, SITE_URL).toString();
+}
+
+function normalizeStructuredDate(value?: string): string | undefined {
+	const trimmedValue = String(value ?? '').trim();
+	if (!trimmedValue) {
+		return undefined;
+	}
+
+	if (/^\d{4}-\d{2}-\d{2}$/.test(trimmedValue)) {
+		return `${trimmedValue}T00:00:00Z`;
+	}
+
+	if (/^\d{4}-\d{2}$/.test(trimmedValue)) {
+		return `${trimmedValue}-01T00:00:00Z`;
+	}
+
+	if (/^\d{4}$/.test(trimmedValue)) {
+		return `${trimmedValue}-01-01T00:00:00Z`;
+	}
+
+	const parsedDate = new Date(trimmedValue);
+	return Number.isNaN(parsedDate.getTime()) ? undefined : parsedDate.toISOString();
+}
+
+export function getBestKnownMoviePublicationDate(
+	movie: Pick<Movie, 'releaseDate' | 'reviewPublishedAt' | 'year'>,
+): string {
+	return (
+		normalizeStructuredDate(movie.reviewPublishedAt) ??
+		normalizeStructuredDate(movie.releaseDate) ??
+		`${movie.year}-01-01T00:00:00Z`
+	);
 }
 
 function getOrganizationId(): string {
@@ -227,6 +260,7 @@ export function createMovieStructuredData(
 		| 'productionCompany'
 		| 'verdict'
 		| 'review'
+		| 'reviewPublishedAt'
 	>,
 	pageTitle: string,
 	pageDescription: string,
@@ -263,10 +297,11 @@ export function createMovieStructuredData(
 	const reviewSchema =
 		typeof movie.review === 'string' && movie.review.trim().length > 0
 			? {
-		'@type': 'Review',
+				'@type': 'Review',
 				name: `Reseña de ${movie.title} (${movie.year})`,
 				inLanguage: SITE_LANGUAGE,
 				reviewBody: movie.review,
+				datePublished: getBestKnownMoviePublicationDate(movie),
 				author: {
 					'@type': 'Organization',
 					'@id': getOrganizationId(),
@@ -337,7 +372,7 @@ export function createMovieStructuredData(
 }
 
 export function createTrailerPageStructuredData(
-	movie: Pick<Movie, 'slug' | 'title' | 'year' | 'synopsis' | 'trailerYoutubeId'>,
+	movie: Pick<Movie, 'slug' | 'title' | 'year' | 'synopsis' | 'trailerYoutubeId' | 'releaseDate' | 'reviewPublishedAt'>,
 	pageTitle: string,
 	pageDescription: string,
 ): StructuredDataValue[] {
@@ -345,6 +380,7 @@ export function createTrailerPageStructuredData(
 	const trailerUrl = asAbsoluteUrl(getMovieTrailerPath(movie.slug));
 	const thumbnailUrl = getYoutubeThumbnailUrl(movie.trailerYoutubeId);
 	const embedUrl = getYoutubeEmbedUrl(movie.trailerYoutubeId);
+	const uploadDate = getBestKnownMoviePublicationDate(movie);
 
 	return [
 		{
@@ -374,7 +410,12 @@ export function createTrailerPageStructuredData(
 			thumbnailUrl: thumbnailUrl ? [thumbnailUrl] : undefined,
 			embedUrl,
 			url: trailerUrl,
+			uploadDate,
+			datePublished: uploadDate,
 			inLanguage: SITE_LANGUAGE,
+			publisher: {
+				'@id': getOrganizationId(),
+			},
 			isPartOf: {
 				'@id': `${trailerUrl}#webpage`,
 			},
