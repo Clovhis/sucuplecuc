@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPersonFilmography, getPersonProfiles } from '../../lib/people';
+import { PEOPLE_PATH, createSimplePageStructuredData } from '../../lib/seo';
+
+const peopleEntries = getPersonProfiles()
+	.map((profile) => {
+		const filmography = getPersonFilmography(profile.name);
+		return {
+			profile,
+			filmography,
+			filmCount: filmography.length,
+			showcaseTitles: filmography
+				.slice(0, 3)
+				.map((entry) => entry.title)
+				.join(' · '),
+			image:
+				profile.profileImage ??
+				profile.image ??
+				profile.remoteImageUrl ??
+				'/posters/poster-no-disponible.svg',
+		};
+	})
+	.sort(
+		(left, right) =>
+			right.filmCount - left.filmCount ||
+			left.profile.name.localeCompare(right.profile.name, 'es'),
+	);
+
+const connectedMovieCount = new Set(
+	peopleEntries.flatMap((entry) => entry.filmography.map((movie) => movie.movieSlug)),
+).size;
+const pageTitle = 'Personas de Cine Posta: actores, directores y perfiles';
+const pageDescription = `Explorá ${peopleEntries.length} perfiles de actores, directores y figuras del catálogo de Cine Posta, conectados con ${connectedMovieCount} películas fichadas.`;
+const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container people-index">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Ir al listado</a>
+		</div>
+
+		<section class="people-index__hero fade-up" style="--item-delay: 0ms;">
+			<p class="people-index__eyebrow">Perfiles conectados</p>
+			<h1 class="people-index__title">Actores, directores y nombres clave del catálogo</h1>
+			<p class="people-index__dek">
+				Cada ficha junta biografía, premios y las pelis donde esa persona aparece dentro de Cine
+				Posta, así que la navegación del sitio y los enlaces entre perfiles quedan mucho más claros.
+			</p>
+			<div class="people-index__stats" aria-label="Resumen del catálogo de personas">
+				<div class="person-page__stat-card">
+					<span>Perfiles</span>
+					<strong>{peopleEntries.length}</strong>
+				</div>
+				<div class="person-page__stat-card">
+					<span>Películas conectadas</span>
+					<strong>{connectedMovieCount}</strong>
+				</div>
+				<div class="person-page__stat-card">
+					<span>Con ficha y filmografía</span>
+					<strong>{peopleEntries.filter((entry) => entry.filmCount > 0).length}</strong>
+				</div>
+			</div>
+		</section>
+
+		<section class="people-index__grid" aria-label="Listado de perfiles">
+			{
+				peopleEntries.map((entry, index) => (
+					<a
+						class="people-index__card fade-up"
+						href={entry.profile.profilePath}
+						style={`--item-delay: ${Math.min(index, 12) * 35}ms;`}
+					>
+						<div class="people-index__portrait-shell">
+							<img
+								src={entry.image}
+								alt={`Retrato de ${entry.profile.name}`}
+								loading="lazy"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+						<div class="people-index__card-copy">
+							<p class="people-index__card-kicker">{entry.profile.roles.join(' · ')}</p>
+							<h2>{entry.profile.name}</h2>
+							<p class="people-index__headline">{entry.profile.headline}</p>
+							<p class="people-index__meta">
+								{entry.filmCount} peli{entry.filmCount === 1 ? '' : 's'} conectada{entry.filmCount === 1 ? '' : 's'}
+							</p>
+							{
+								entry.showcaseTitles && (
+									<p class="people-index__showcase">Lo tenés de: {entry.showcaseTitles}</p>
+								)
+							}
+						</div>
+					</a>
+				))
+			}
+		</section>
+	</main>
+</BaseLayout>

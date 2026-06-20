@@ -5,7 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getPersonEditorialBlocks } from '../../lib/editorialCopy';
 import { getPersonFilmography, getPersonProfileBySlug, getPersonProfiles } from '../../lib/people';
-import { createPersonStructuredData } from '../../lib/seo';
+import { PEOPLE_PATH, createPersonStructuredData } from '../../lib/seo';
 
 export const getStaticPaths: GetStaticPaths = () => {
 	return getPersonProfiles().map((profile) => ({
@@ -109,7 +109,7 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 			<a class="page-action page-action--history" href={import.meta.env.BASE_URL} data-history-back>
 				Volver
 			</a>
-			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Ir al listado</a>
+			<a class="page-action page-action--home" href={PEOPLE_PATH}>Ver todas las fichas</a>
 		</div>
 
 		<section class="person-page__hero fade-up" style="--item-delay: 0ms;">

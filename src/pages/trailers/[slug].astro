@@ -1,12 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
+	getMoviePlatformLabel,
+	getMoviePlatforms,
 	getMoviePath,
 	getMovies,
 	getPosterUrl,
 	getYoutubeEmbedUrl,
 	getYoutubeThumbnailUrl,
 	getYoutubeWatchUrl,
+	getVerdictBadgeClass,
+	getVerdictLabel,
 } from '../../lib/movies';
 import { createTrailerPageStructuredData } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
@@ -28,6 +32,17 @@ const movieUrl = getMoviePath(movie.slug);
 const pageTitle = `Trailer oficial de ${movie.title} (${movie.year}) | Cine Posta`;
 const pageDescription = `Mirá el trailer oficial de ${movie.title} (${movie.year}) y volvés a la reseña completa en Cine Posta.`;
 const structuredData = createTrailerPageStructuredData(movie, pageTitle, pageDescription);
+const verdictClass = getVerdictBadgeClass(movie);
+const moviePlatforms = getMoviePlatforms(movie);
+const moviePlatformLabel = getMoviePlatformLabel(movie);
+const trailerFacts = [
+	{ label: 'Veredicto', value: getVerdictLabel(movie) },
+	{ label: 'Categoría', value: movie.category },
+	{ label: 'Dirección', value: movie.director },
+	{ label: 'Elenco', value: movie.mainCast.slice(0, 3).join(', ') },
+	{ label: 'Duración', value: movie.runtimeMinutes ? `${movie.runtimeMinutes} min` : 'No cargada' },
+	{ label: moviePlatforms.length > 1 ? 'Plataformas' : 'Plataforma', value: moviePlatformLabel || 'No cargada' },
+];
 ---
 
 <BaseLayout
@@ -84,6 +99,42 @@ const structuredData = createTrailerPageStructuredData(movie, pageTitle, pageDes
 						<a href={movieUrl}>reseña de {movie.title}</a>.
 					</p>
 				</div>
+				<div class="trailer-watch__poster-card">
+					<img
+						class="trailer-watch__poster"
+						src={getPosterUrl(movie.poster)}
+						alt={`Poster de ${movie.title}`}
+						loading="lazy"
+						referrerpolicy="no-referrer"
+					/>
+				</div>
+			</section>
+
+			<section class="trailer-watch__summary" aria-label="Ficha rápida y veredicto">
+				<div class="trailer-watch__copy">
+					<p class="trailer-watch__summary-kicker">La posta</p>
+					<h2 class="trailer-watch__subhead">
+						<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
+					</h2>
+					<p class="trailer-watch__summary-text">{movie.review}</p>
+					<p class="trailer-watch__summary-text">
+						Si el trailer te cebó, en la ficha completa tenés el contexto, el veredicto corto y
+						qué otras pelis mirar después.
+					</p>
+					<div class="trailer-watch__actions">
+						<a class="page-action page-action--home" href={movieUrl}>Ir a la reseña completa</a>
+					</div>
+				</div>
+				<dl class="trailer-watch__facts">
+					{
+						trailerFacts.map((fact) => (
+							<div>
+								<dt>{fact.label}</dt>
+								<dd>{fact.value}</dd>
+							</div>
+						))
+					}
+				</dl>
 			</section>
 		</article>
 	</main>
