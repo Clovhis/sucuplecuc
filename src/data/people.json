@@ -639,7 +639,7 @@
 			"https://www.imdb.com/name/nm0000614/",
 			"https://www.themoviedb.org/person/4566-alan-rickman"
 		],
-		"lastVerifiedAt": "2026-04-27",
+		"lastVerifiedAt": "2026-06-21",
 		"source": "wikidata-imdb-cache"
 	},
 	"Alan Ritchson": {
@@ -4609,6 +4609,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1969-09-14"
 	},
+	"Bonnie Bedelia": {
+		"name": "Bonnie Bedelia",
+		"birthDate": "1948-03-25",
+		"birthYear": 1948,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/bonnie-bedelia-nm0000889.jpg",
+		"imdbId": "nm0000889",
+		"imdbUrl": "https://www.imdb.com/name/nm0000889/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonnie%20Bedelia%201974.JPG?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q234997",
+			"https://www.imdb.com/name/nm0000889/",
+			"https://www.themoviedb.org/person/7673-bonnie-bedelia"
+		],
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"Brad Bird": {
 		"name": "Brad Bird",
 		"birthYear": 1957,
@@ -5107,20 +5124,20 @@
 	},
 	"Bruce Willis": {
 		"name": "Bruce Willis",
+		"birthDate": "1955-03-19",
 		"birthYear": 1955,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/bruce-willis-nm0000246.jpg",
 		"imdbId": "nm0000246",
 		"imdbUrl": "https://www.imdb.com/name/nm0000246/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruce%20Willis%20by%20Gage%20Skidmore%203.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruce%20Willis%20by%20Gage%20Skidmore%203.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q2680",
 			"https://www.imdb.com/name/nm0000246/",
 			"https://www.themoviedb.org/person/62-bruce-willis"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1955-03-19"
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Bruna Marquezine": {
 		"name": "Bruna Marquezine",
@@ -10538,6 +10555,23 @@
 		"lastVerifiedAt": "2026-05-24",
 		"source": "tmdb-wikidata-imdb-cache"
 	},
+	"Dillon Freasier": {
+		"name": "Dillon Freasier",
+		"birthDate": "1996",
+		"birthYear": 1996,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/dillon-freasier-nm2827673.jpg",
+		"imdbId": "nm2827673",
+		"imdbUrl": "https://www.imdb.com/name/nm2827673/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/pTm23xcMB2oLu6Mc5LNXkrXVdla.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q5276933",
+			"https://www.imdb.com/name/nm2827673/",
+			"https://www.themoviedb.org/person/52564-dillon-freasier"
+		],
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Djimon Hounsou": {
 		"name": "Djimon Hounsou",
 		"birthDate": "1964-04-24",
@@ -14646,6 +14680,21 @@
 		"lastVerifiedAt": "2026-05-30",
 		"source": "wikidata-imdb-tmdb-cache"
 	},
+	"Giampaolo Manfreda": {
+		"name": "Giampaolo Manfreda",
+		"nationalityPrimary": "Español",
+		"image": "/people/giampaolo-manfreda.jpg",
+		"imdbId": "nm10512604",
+		"imdbUrl": "https://www.imdb.com/name/nm10512604/",
+		"remoteImageUrl": "https://scontent.cdninstagram.com/v/t51.2885-19/362017739_647177220674568_2298305882426838067_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=108&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42NDAuQzMifQ%3D%3D&_nc_ohc=V_Yd0vKbF1MQ7kNvwFFyHmd&_nc_oc=AdpOO3zEe9C9lUxkyX0mSulPIioHzsKd-sry1cXyI82eZoe9M_-hOAZWrEXksIqjk-oMiXl0ZhULOrwQNu9Sstl8&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7c20f&oh=00_Af9kQtSwMxu2fLrNtAZzGqqCGIMCKIgPPvQYYDFw_gTHUw&oe=6A3B3282",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm10512604/",
+			"https://es.linkedin.com/in/giampaolo-manfreda-0195a946",
+			"https://www.atlantico.net/vigo/giampaolo-manfreda-oportunidad-crear-contenido_1_20250405-3477849.html"
+		],
+		"lastVerifiedAt": "2026-06-19",
+		"source": "manual-imdb-linkedin-instagram"
+	},
 	"Giancarlo Esposito": {
 		"name": "Giancarlo Esposito",
 		"birthYear": 1958,
@@ -14734,21 +14783,6 @@
 		],
 		"lastVerifiedAt": "2026-06-19",
 		"source": "wikidata-imdb-cache"
-	},
-	"Giampaolo Manfreda": {
-		"name": "Giampaolo Manfreda",
-		"nationalityPrimary": "Español",
-		"image": "/people/giampaolo-manfreda.jpg",
-		"imdbId": "nm10512604",
-		"imdbUrl": "https://www.imdb.com/name/nm10512604/",
-		"remoteImageUrl": "https://scontent.cdninstagram.com/v/t51.2885-19/362017739_647177220674568_2298305882426838067_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=108&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42NDAuQzMifQ%3D%3D&_nc_ohc=V_Yd0vKbF1MQ7kNvwFFyHmd&_nc_oc=AdpOO3zEe9C9lUxkyX0mSulPIioHzsKd-sry1cXyI82eZoe9M_-hOAZWrEXksIqjk-oMiXl0ZhULOrwQNu9Sstl8&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7c20f&oh=00_Af9kQtSwMxu2fLrNtAZzGqqCGIMCKIgPPvQYYDFw_gTHUw&oe=6A3B3282",
-		"referenceUrls": [
-			"https://www.imdb.com/name/nm10512604/",
-			"https://es.linkedin.com/in/giampaolo-manfreda-0195a946",
-			"https://www.atlantico.net/vigo/giampaolo-manfreda-oportunidad-crear-contenido_1_20250405-3477849.html"
-		],
-		"lastVerifiedAt": "2026-06-19",
-		"source": "manual-imdb-linkedin-instagram"
 	},
 	"Giovanna Antonelli": {
 		"name": "Giovanna Antonelli",
@@ -14919,6 +14953,25 @@
 		"remoteImageUrl": "https://api.screendollars.com/wp-content/uploads/2024/12/Gorô Naya - 05122024.jpeg",
 		"birthDate": "1929-11-17",
 		"deathDate": "2013-03-05"
+	},
+	"Grace Kelly": {
+		"name": "Grace Kelly",
+		"birthDate": "1929-11-12",
+		"birthYear": 1929,
+		"deathDate": "1982-09-14",
+		"deathYear": 1982,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/grace-kelly-nm0000038.jpg",
+		"imdbId": "nm0000038",
+		"imdbUrl": "https://www.imdb.com/name/nm0000038/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gracia%20van%20Monaco%20(1972).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q3925",
+			"https://www.imdb.com/name/nm0000038/",
+			"https://www.themoviedb.org/person/4070-grace-kelly"
+		],
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Graciela Borges": {
 		"name": "Graciela Borges",
@@ -20615,6 +20668,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1953-12-09"
 	},
+	"John McTiernan": {
+		"name": "John McTiernan",
+		"birthDate": "1951-01-08",
+		"birthYear": 1951,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/john-mctiernan-nm0001532.jpg",
+		"imdbId": "nm0001532",
+		"imdbUrl": "https://www.imdb.com/name/nm0001532/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20McTiernan%20Deauville%202014%203.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q270639",
+			"https://www.imdb.com/name/nm0001532/",
+			"https://www.themoviedb.org/person/1090-john-mctiernan"
+		],
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"John Nolan": {
 		"name": "John Nolan",
 		"birthDate": "1938-05-22",
@@ -23659,6 +23729,23 @@
 		],
 		"lastVerifiedAt": "2026-05-24",
 		"source": "wikidata-imdb-cache"
+	},
+	"Kevin J. O'Connor": {
+		"name": "Kevin J. O'Connor",
+		"birthDate": "1963-11-15",
+		"birthYear": 1963,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/kevin-j-oconnor-nm0640413.jpg",
+		"imdbId": "nm0640413",
+		"imdbUrl": "https://www.imdb.com/name/nm0640413/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/9ZO0QYkxjhThd8IVqSJw7gHyQ68.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q721195",
+			"https://www.imdb.com/name/nm0640413/",
+			"https://www.themoviedb.org/person/18916-kevin-j-o-connor"
+		],
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Kevin James": {
 		"name": "Kevin James",
@@ -33996,6 +34083,25 @@
 		"birthDate": "1954-12-18",
 		"deathDate": "2022-05-26"
 	},
+	"Raymond Burr": {
+		"name": "Raymond Burr",
+		"birthDate": "1917-05-21",
+		"birthYear": 1917,
+		"deathDate": "1993-09-12",
+		"deathYear": 1993,
+		"nationalityPrimary": "Canadiense",
+		"image": "/people/raymond-burr-nm0000994.jpg",
+		"imdbId": "nm0000994",
+		"imdbUrl": "https://www.imdb.com/name/nm0000994/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Raymond-Burr-1968-cropped.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q336877",
+			"https://www.imdb.com/name/nm0000994/",
+			"https://en.wikipedia.org/wiki/Raymond_Burr"
+		],
+		"lastVerifiedAt": "2026-06-20",
+		"source": "wikidata-imdb-cache"
+	},
 	"Ray Milland": {
 		"name": "Ray Milland",
 		"birthYear": 1907,
@@ -34118,6 +34224,23 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1970-12-12"
+	},
+	"Reginald VelJohnson": {
+		"name": "Reginald VelJohnson",
+		"birthDate": "1952-08-16",
+		"birthYear": 1952,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/reginald-veljohnson-nm0001817.jpg",
+		"imdbId": "nm0001817",
+		"imdbUrl": "https://www.imdb.com/name/nm0001817/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Reginald%20VelJohnson%2C%202021%20(579134550).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q470153",
+			"https://www.imdb.com/name/nm0001817/",
+			"https://www.themoviedb.org/person/7672-reginald-veljohnson"
+		],
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Reinaldo Marcus Green": {
 		"name": "Reinaldo Marcus Green",
@@ -39789,6 +39912,25 @@
 		"lastVerifiedAt": "2026-05-30",
 		"source": "wikidata-imdb-cache"
 	},
+	"Thelma Ritter": {
+		"name": "Thelma Ritter",
+		"birthDate": "1902-02-14",
+		"birthYear": 1902,
+		"deathDate": "1969-02-05",
+		"deathYear": 1969,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/thelma-ritter-nm0728812.jpg",
+		"imdbId": "nm0728812",
+		"imdbUrl": "https://www.imdb.com/name/nm0728812/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Thelma%20Ritter%20in%20The%20Mating%20Season%20trailer.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q229266",
+			"https://www.imdb.com/name/nm0728812/",
+			"https://www.themoviedb.org/person/7684-thelma-ritter"
+		],
+		"lastVerifiedAt": "2026-06-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"Thelonious Monk": {
 		"name": "Thelonious Monk",
 		"birthDate": "1917-10-10",
@@ -41967,6 +42109,25 @@
 		"birthDate": "1912-08-15",
 		"deathDate": "2003-05-14"
 	},
+	"Wendell Corey": {
+		"name": "Wendell Corey",
+		"birthDate": "1914-03-20",
+		"birthYear": 1914,
+		"deathDate": "1968-11-08",
+		"deathYear": 1968,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/wendell-corey-nm0179819.jpg",
+		"imdbId": "nm0179819",
+		"imdbUrl": "https://www.imdb.com/name/nm0179819/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wendell%20Corey%20in%20The%20Search%20trailer%20(cropped).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q1340156",
+			"https://www.imdb.com/name/nm0179819/",
+			"https://en.wikipedia.org/wiki/Wendell_Corey"
+		],
+		"lastVerifiedAt": "2026-06-20",
+		"source": "wikidata-imdb-cache"
+	},
 	"Werner Herzog": {
 		"name": "Werner Herzog",
 		"birthDate": "1942-09-05",
@@ -42295,7 +42456,7 @@
 			"https://www.imdb.com/name/nm0040472/",
 			"https://www.themoviedb.org/person/7676-william-atherton"
 		],
-		"lastVerifiedAt": "2026-04-29",
+		"lastVerifiedAt": "2026-06-21",
 		"source": "wikidata-imdb-cache"
 	},
 	"William Dieterle": {

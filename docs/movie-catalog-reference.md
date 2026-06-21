@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-06-19. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-06-21. Fuente: src/data/movies/*.json
 
-Total de peliculas: 937
+Total de peliculas: 940
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -574,6 +574,7 @@ Total de peliculas: 937
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
 | 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Otras plataformas | +17 |
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus | +13 |
+| 2007 | Pozos de ambición | pozos-de-ambicion-2007 | Drama | Paramount Plus + Prime Video | +13 |
 | 2007 | Ratatouille | ratatouille-2007 | Animacion | Disney Plus | ATP |
 | 2007 | Saw IV | saw-iv-2007 | Gore | Otras plataformas | +18 |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
@@ -778,6 +779,7 @@ Total de peliculas: 937
 | 1988 | Beetlejuice | beetlejuice-1988 | Comedia | HBO Max | +13 |
 | 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix | +13 |
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Otras plataformas | +17 |
+| 1988 | Jungla de cristal | jungla-de-cristal-1988 | Accion | Disney Plus | +17 |
 | 1988 | La última tentación de Cristo | the-last-temptation-of-christ-1988 | Drama | Otras plataformas | +13 |
 | 1988 | Muñeco diabólico | child-s-play-1988 | Terror | Prime Video | +16 |
 | 1988 | My Neighbor Totoro | my-neighbor-totoro-1988 | Anime | Netflix | ATP |
@@ -912,6 +914,7 @@ Total de peliculas: 937
 | 1957 | The Bridge on the River Kwai | the-bridge-on-the-river-kwai-1957 | Drama | Otras plataformas | ATP |
 | 1956 | Around the World in 80 Days | around-the-world-in-80-days-1956 | Comedia | Otras plataformas | ATP |
 | 1955 | Marty | marty-1955 | Drama | Prime Video | +13 |
+| 1954 | La ventana indiscreta | la-ventana-indiscreta-1954 | Thriller | HBO Max | +13 |
 | 1954 | On the Waterfront | on-the-waterfront-1954 | Drama | Otras plataformas | +16 |
 | 1954 | Seven Samurai | seven-samurai-1954 | Drama | Otras plataformas | +13 |
 | 1953 | From Here to Eternity | from-here-to-eternity-1953 | Romance | Otras plataformas | +13 |
