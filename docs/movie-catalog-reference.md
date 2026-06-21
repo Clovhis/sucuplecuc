@@ -759,7 +759,7 @@ Total de peliculas: 940
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Otras plataformas | +13 |
 | 1990 | Edward Scissorhands | edward-scissorhands-1990 | Fantasia | Otras plataformas | +13 |
 | 1990 | Goodfellas | goodfellas-1990 | Crimen | Netflix + Prime Video | +18 |
-| 1990 | Home Alone | home-alone-1990 | Comedia | Disney Plus | ATP |
+| 1990 | Mi pobre angelito | home-alone-1990 | Comedia | Disney Plus | ATP |
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Otras plataformas | +17 |
 | 1990 | Paris Is Burning | paris-is-burning-1990 | Documental | Otras plataformas | +16 |
 | 1990 | Rocky V | rocky-v-1990 | Drama | Otras plataformas | +13 |
@@ -777,9 +777,9 @@ Total de peliculas: 940
 | 1989 | Viernes 13. Parte VIII: Jason vuelve... para siempre | friday-the-13th-part-viii-jason-takes-manhattan-1989 | Terror | Otras plataformas | +18 |
 | 1988 | Akira | akira-1988 | Anime | Netflix | +17 |
 | 1988 | Beetlejuice | beetlejuice-1988 | Comedia | HBO Max | +13 |
+| 1988 | Duro de matar | jungla-de-cristal-1988 | Accion | Disney Plus | +17 |
 | 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix | +13 |
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Otras plataformas | +17 |
-| 1988 | Jungla de cristal | jungla-de-cristal-1988 | Accion | Disney Plus | +17 |
 | 1988 | La última tentación de Cristo | the-last-temptation-of-christ-1988 | Drama | Otras plataformas | +13 |
 | 1988 | Muñeco diabólico | child-s-play-1988 | Terror | Prime Video | +16 |
 | 1988 | My Neighbor Totoro | my-neighbor-totoro-1988 | Anime | Netflix | ATP |
@@ -831,7 +831,7 @@ Total de peliculas: 940
 | 1983 | Zelig | zelig-1983 | Comedia | Otras plataformas | +13 |
 | 1982 | Blade Runner | blade-runner-1982 | Ciencia ficcion | Prime Video | +17 |
 | 1982 | Comedia sexual de una noche de verano | a-midsummer-night-s-sex-comedy-1982 | Comedia | Otras plataformas | +13 |
-| 1982 | E.T. the Extra-Terrestrial | e-t-the-extra-terrestrial-1982 | Ciencia ficcion | HBO Max | ATP |
+| 1982 | E.T., el extraterrestre | e-t-the-extra-terrestrial-1982 | Ciencia ficcion | HBO Max | ATP |
 | 1982 | El rey de la comedia | the-king-of-comedy-1982 | Comedia | Otras plataformas | ATP |
 | 1982 | Gandhi | gandhi-1982 | Drama | Otras plataformas | ATP |
 | 1982 | Halloween III: El día de la bruja | halloween-iii-season-of-the-witch-1982 | Terror | Otras plataformas | +17 |
@@ -864,15 +864,15 @@ Total de peliculas: 940
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max | ATP |
 | 1978 | The Deer Hunter | the-deer-hunter-1978 | Drama | Otras plataformas | +17 |
 | 1977 | Annie Hall | annie-hall-1977 | Comedia | Otras plataformas | ATP |
-| 1977 | Encuentros en la tercera fase | close-encounters-of-the-third-kind-1977 | Ciencia ficcion | Otras plataformas | ATP |
+| 1977 | Encuentros cercanos del tercer tipo | close-encounters-of-the-third-kind-1977 | Ciencia ficcion | Otras plataformas | ATP |
 | 1977 | New York, New York | new-york-new-york-1977 | Drama | Otras plataformas | ATP |
 | 1977 | Star Wars: Episode IV - A New Hope | star-wars-episode-iv-a-new-hope-1977 | Ciencia ficcion | Disney Plus | ATP |
 | 1976 | Rocky | rocky-1976 | Drama | Otras plataformas | +13 |
 | 1976 | Taxi Driver | taxi-driver-1976 | Thriller | HBO Max | +17 |
 | 1975 | Grey Gardens | grey-gardens-1975 | Documental | Otras plataformas | ATP |
-| 1975 | Jaws | jaws-1975 | Terror | Otras plataformas | +15 |
 | 1975 | La última noche de Boris Grushenko | love-and-death-1975 | Comedia | Otras plataformas | +13 |
 | 1975 | One Flew Over the Cuckoo's Nest | one-flew-over-the-cuckoo-s-nest-1975 | Drama | HBO Max | +17 |
+| 1975 | Tiburón | jaws-1975 | Terror | Otras plataformas | +15 |
 | 1974 | Alicia ya no vive aquí | alice-doesnt-live-here-anymore-1974 | Drama | Otras plataformas | +13 |
 | 1974 | Italoamericano | italianamerican-1974 | Documental | Otras plataformas | ATP |
 | 1974 | Loca evasión | the-sugarland-express-1974 | Drama | Otras plataformas | +13 |
@@ -885,7 +885,7 @@ Total de peliculas: 940
 | 1972 | The Godfather | the-godfather-1972 | Drama | Netflix | +17 |
 | 1972 | Todo lo que usted siempre quiso saber sobre el sexo (pero nunca se atrevió a preguntar) | everything-you-always-wanted-to-know-about-sex-but-were-afraid-to-ask-1972 | Comedia | Otras plataformas | +16 |
 | 1971 | Bananas | bananas-1971 | Comedia | Otras plataformas | ATP |
-| 1971 | Reto a la muerte | duel-1971 | Thriller | Otras plataformas | +13 |
+| 1971 | Reto a muerte | duel-1971 | Thriller | Otras plataformas | +13 |
 | 1971 | The French Connection | the-french-connection-1971 | Crimen | Disney Plus | +17 |
 | 1970 | Escenas callejeras | street-scenes-1970-1970 | Documental | Otras plataformas | ATP |
 | 1970 | Patton | patton-1970 | Drama | Disney Plus | ATP |
