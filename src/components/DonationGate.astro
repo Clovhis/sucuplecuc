@@ -1,11 +1,35 @@
 ---
 const assetBase = import.meta.env.BASE_URL;
 const cafecitoUrl = 'https://cafecito.app/cineposta';
+const donationMessages = [
+	'No seas raton, tiranos unos pesos para mantener los servers corriendo.',
+	'Si te ahorramos dos horas scrolleando basura, convidanos un cafecito.',
+	'Este sitio no se mantiene con buena onda: pone unos mangos antes de que mastiquemos cables.',
+	'Una donacion chica para vos, un salvavidas hermoso para este antro cinefilo.',
+	'Si Cine Posta te salvo de ver una porqueria, ya se pago medio cafecito.',
+	'Ponele unos pesos al algoritmo humano antes de que se convierta en chat de grupo sin criterio.',
+	'Cada cafecito evita que tengamos que criticar peliculas por telepatia.',
+	'No pedimos un Oscar, apenas unos mangos para seguir online.',
+	'Tu donacion mantiene vivo este noble oficio de separar cine posta de humo berreta.',
+	'Si entras, lees y despues te haces el boludo, por lo menos dona con culpa y estilo.',
+	'Este servidor se la banca bastante, pero no da para seguir atandolo con alambre.',
+	'Si no donas vamos a tener que poner publicidad con porno, no hagas que eso ocurra.',
+	'Pone unos mangos y evita que terminemos llenando esto de banners turbios para agrandar cosas imposibles.',
+	'Tu cafecito puede frenar una invasion de publicidades vergonzosas que nadie quiere ver en horario familiar.',
+	'Bancanos con unos pesos y prometemos seguir viendo bodrios por vos.',
+	'Si te gusta que hagamos el laburo sucio de filtrar estrenos, arrimate con un cafecito.',
+	'Tu aporte sostiene reseñas, datos y el fino deporte nacional de bardear con fundamento.',
+	'No hace falta vender un organo: con un cafecito ya ayudas una bocha.',
+	'Este proyecto vive de cine, criterio y gente que no mira para otro lado cuando toca poner.',
+	'Si alguna recomendacion te salvo la noche, no te hagas el sota: devolve gentilezas.',
+	'Pone unos mangos y ayudanos a que el sitio siga mas firme que villano de slasher.',
+];
 ---
 
 <dialog
 	class="donation-gate"
 	data-donation-gate
+	data-donation-gate-messages={JSON.stringify(donationMessages)}
 	aria-labelledby="donation-gate-title"
 	aria-describedby="donation-gate-description"
 >
@@ -37,7 +61,7 @@ const cafecitoUrl = 'https://cafecito.app/cineposta';
 			</div>
 
 			<p class="donation-gate__appeal">
-				Si Cine Posta te ayuda a elegir qué mirar, un cafecito hace una diferencia real.
+				{donationMessages[0]}
 			</p>
 
 			<div class="donation-gate__actions">
@@ -78,6 +102,18 @@ const cafecitoUrl = 'https://cafecito.app/cineposta';
 		return `${year}-${month}-${day}`;
 	}
 
+	function getMessageIndex(dateKey: string, totalMessages: number) {
+		if (totalMessages === 0) {
+			return 0;
+		}
+
+		let hash = 0;
+		for (let index = 0; index < dateKey.length; index += 1) {
+			hash = (hash * 31 + dateKey.charCodeAt(index)) >>> 0;
+		}
+		return hash % totalMessages;
+	}
+
 	function readStoredDate(storage: Storage) {
 		try {
 			return storage.getItem(STORAGE_KEY);
@@ -95,7 +131,15 @@ const cafecitoUrl = 'https://cafecito.app/cineposta';
 	}
 
 	if (gate) {
+		const DONATION_MESSAGES = JSON.parse(gate.dataset.donationGateMessages ?? '[]') as string[];
 		const today = getLocalDateKey();
+		const appeal = gate.querySelector<HTMLElement>('.donation-gate__appeal');
+		const message = DONATION_MESSAGES[getMessageIndex(today, DONATION_MESSAGES.length)];
+
+		if (appeal && message) {
+			appeal.textContent = message;
+		}
+
 		const alreadyShown =
 			readStoredDate(window.localStorage) === today ||
 			readStoredDate(window.sessionStorage) === today;
