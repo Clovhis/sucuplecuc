@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-06-21. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-06-23. Fuente: src/data/movies/*.json
 
-Total de peliculas: 940
+Total de peliculas: 942
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -53,6 +53,7 @@ Total de peliculas: 940
 | 2026 | Los bobos | los-bobos-2026 | Thriller | Cine | +16 |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
+| 2026 | Mensajes de voz para Isabelle | mensajes-de-voz-para-isabelle-2026 | Romance | Netflix | +13 |
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
 | 2026 | México 86 | mexico-86-2026 | Comedia | Netflix | +16 |
 | 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
@@ -154,6 +155,7 @@ Total de peliculas: 940
 | 2025 | Playa de lobos | playa-de-lobos-2025 | Thriller | Disney Plus | +13 |
 | 2025 | Risa y la cabina del viento | risa-y-la-cabina-del-viento-2025 | Drama | Netflix | +12 |
 | 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |
+| 2025 | Sarah's Oil: El oro negro | sarahs-oil-el-oro-negro-2025 | Drama | Prime Video | +13 |
 | 2025 | Scarlet | scarlet-2025 | Anime | Netflix | +13 |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
