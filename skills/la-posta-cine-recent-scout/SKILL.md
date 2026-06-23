@@ -139,7 +139,7 @@ Once a candidate passes the gate, immediately use `la-posta-cine-add-movie`.
 Recommended handoff shape:
 
 ```text
-Usa $la-posta-cine-add-movie para agregar <Title> (<Year>). Es una pelicula reciente confirmada al <today>, con estreno/availability fechado el <release-date>. Contexto: <Cine|platform|multi-platform>. Fuentes para metadata y fecha: <url-1>, <url-2>, <url-3>. Si no hay opinion del usuario, inferi verdict y review desde recepcion critica verificada sin inventar datos.
+Usa $la-posta-cine-add-movie para agregar <Title> (<Year>). Es una pelicula reciente confirmada al <today>, con estreno/availability fechado el <release-date>. Contexto: <Cine|platform|multi-platform>. Fuentes para metadata y fecha: <url-1>, <url-2>, <url-3>. Si no hay opinion del usuario, inferi verdict y review desde recepcion critica verificada sin inventar datos, escribiendo la review desde cero en voz del sitio y sin meter el `verdictLabel` dentro del texto.
 ```
 
 Rules:

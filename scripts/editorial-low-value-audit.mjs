@@ -38,6 +38,13 @@ const TEMPLATE_REVIEW_MARKERS = [
 	'pierde un poco de fuerza',
 	'rinde por tramos',
 ];
+const VERDICT_LABEL_TEMPLATE_PATTERNS = [
+	'<label> porque',
+	'lo que la vuelve <label>',
+	'el veredicto de <label>',
+	'el <label> viene de',
+	'la <label> viene de',
+];
 
 function wordCount(value) {
 	return String(value ?? '')
@@ -189,6 +196,18 @@ function getRepeatedSentenceHits(movie, repeatedSentenceMap) {
 		.sort((left, right) => right.count - left.count || left.sentence.localeCompare(right.sentence, 'es'));
 }
 
+function getVerdictLabelTemplateHits(movie) {
+	const normalizedReview = normalize(movie.review);
+	const normalizedVerdictLabel = normalize(movie.verdictLabel);
+	if (!normalizedReview || !normalizedVerdictLabel) {
+		return [];
+	}
+
+	return VERDICT_LABEL_TEMPLATE_PATTERNS
+		.map((pattern) => pattern.replaceAll('<label>', normalizedVerdictLabel))
+		.filter((pattern) => normalizedReview.includes(pattern));
+}
+
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalize(movie.review);
 	const normalizedDirector = normalize(movie.director);
@@ -279,7 +298,10 @@ for (const { filePath, movie } of entries) {
 	const genres = Array.isArray(movie.genres) ? movie.genres.map((genre) => normalize(genre)).filter(Boolean) : [];
 	const reviewWordCount = wordCount(movie.review);
 	const reviewSentenceCount = rawSentenceCount(movie.review);
-	const templateHits = TEMPLATE_REVIEW_MARKERS.filter((marker) => normalize(movie.review).includes(marker));
+	const templateHits = [
+		...TEMPLATE_REVIEW_MARKERS.filter((marker) => normalize(movie.review).includes(marker)),
+		...getVerdictLabelTemplateHits(movie),
+	];
 
 	if (
 		reviewWordCount < MIN_REVIEW_WORDS ||

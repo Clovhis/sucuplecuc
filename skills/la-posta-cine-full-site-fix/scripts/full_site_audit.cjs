@@ -50,6 +50,10 @@ const CRITIC_LED_REVIEW_PATTERNS = [
 	/\bconsenso favorable\b/i,
 	/\bla devolucion\b/i,
 	/\bsaldo fue claramente positivo\b/i,
+	/\b(?:recomendada|pasable|esta muy bien|esta buena|muy buena|se deja ver|no la mires|mala|malisima|flojisima|un garron)\s+porque\b/i,
+	/\blo que la vuelve\b/i,
+	/\bel veredicto de\b/i,
+	/\bel no la mires viene de\b/i,
 ];
 const BIO_WIKIPEDIA_PATTERNS = [
 	/\bsegun wikipedia\b/i,

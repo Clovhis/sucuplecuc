@@ -512,6 +512,7 @@ Write `review` by combining user feedback + external review enrichment:
 - Honest, colloquial tone
 - Write it manually from scratch for that movie. Do not use templates, fill-in-the-blank structures, or recycled sentence skeletons from previous loads.
 - Never arm the review around reusable verdict scaffolds like `ZAFA y ...`, `PASABLE para ...`, `RECOMENDADA si ...` or any closing that could be pasted onto another title with one noun swap.
+- Never copy the badge into the prose: `verdictLabel` is for UI only and must not appear verbatim inside `review`.
 - Max 5 lines when user provides clear feedback
 - If user provides little/no feedback, you may expand to 6-8 lines to add useful context from verified sources
 - No spoilers
@@ -521,7 +522,7 @@ Write `review` by combining user feedback + external review enrichment:
 - Never write phrases like `en Rotten`, `segun Metacritic`, `IMDb la dejo...` or any other explicit third-party attribution inside the review.
 - Never start the review with labels like `Numeros:` or any score dump template.
 - Every movie review must be unique in wording and structure.
-- Treat any template-shaped wording as forbidden, including reusable scaffolds like `A <titulo> le conviene entrarla por...`, `Hay una version buena de...`, `Lo mejor aparece cuando...`, `La contra suele aparecer cuando...`, `PASABLE porque...`, or equivalent fill-in-the-blank formulas.
+- Treat any template-shaped wording as forbidden, including reusable scaffolds like `A <titulo> le conviene entrarla por...`, `Hay una version buena de...`, `Lo mejor aparece cuando...`, `La contra suele aparecer cuando...`, `PASABLE porque...`, `Lo que la vuelve ESTA MUY BIEN...`, `El veredicto de NO LA MIRES...`, `El NO LA MIRES viene de...`, or equivalent fill-in-the-blank formulas.
 - Avoid repeated openings across a batch (for example reusing `En la critica especializada...` in multiple entries).
 - In multi-movie batches, vary sentence rhythm and vocabulary so entries do not read like a template.
 - Do not reuse stock closing lines across different movies in the same batch (for example repeating `Queda en ese punto medio que no molesta.`).

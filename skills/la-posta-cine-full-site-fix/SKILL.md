@@ -84,6 +84,7 @@ Prefer fixing the smallest correct surface first.
 - Do not anchor the published review in `las resenas`, `la critica`, `consenso`, or similar meta-commentary unless it is truly essential.
 - Do not mention third-party brands in published review copy.
 - Replace vague reception-summary wording with an actual local verdict in the site tone.
+- Do not restate `verdictLabel` inside the review body or use badge-led formulas like `ESTA BUENA porque...`, `Lo que la vuelve RECOMENDADA...` or `El veredicto de NO LA MIRES...`.
 
 ### Synopses
 

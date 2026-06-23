@@ -60,6 +60,13 @@ const VERDICT_LED_SUFFIX_MARKERS = [
 	'si el cuerpo te pide',
 	'para verla si',
 ];
+const VERDICT_LABEL_STOCK_PATTERNS = [
+	'<label> porque',
+	'lo que la vuelve <label>',
+	'el veredicto de <label>',
+	'el <label> viene de',
+	'la <label> viene de',
+];
 
 function parseArgs(argv) {
 	const args = {
@@ -286,6 +293,19 @@ function getVerdictLedTemplateHit(review) {
 	return `verdict-led stock closing :: ${opener} :: ${suffix}`;
 }
 
+function getVerdictLabelStockHits(movie) {
+	const normalizedReview = normalizeText(movie.review);
+	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
+	if (!normalizedReview || !normalizedVerdictLabel) {
+		return [];
+	}
+
+	return VERDICT_LABEL_STOCK_PATTERNS
+		.map((pattern) => pattern.replaceAll('<label>', normalizedVerdictLabel))
+		.filter((pattern) => normalizedReview.includes(pattern))
+		.map((pattern) => `verdict-label stock phrase :: ${pattern}`);
+}
+
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalizeText(movie.review);
 	const normalizedDirector = normalizeText(movie.director);
@@ -297,6 +317,9 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const verdictLedTemplateHit = getVerdictLedTemplateHit(movie.review);
 	if (verdictLedTemplateHit) {
 		markerHits.push(verdictLedTemplateHit);
+	}
+	for (const hit of getVerdictLabelStockHits(movie)) {
+		markerHits.push(hit);
 	}
 	const titleMentions = Math.max(...buildTitleVariants(movie).map((variant) => countPhraseOccurrences(normalizedReview, variant)), 0);
 	const castMatches = getCastMatches(movie, normalizedReview);

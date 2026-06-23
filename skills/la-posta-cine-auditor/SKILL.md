@@ -139,7 +139,8 @@ The short-or-robotized review check is mandatory too:
 
 - treat a review that is too short, underdeveloped, or obviously reusable as a hard stop
 - treat template scaffolds and fill-in-the-blank sentences as a hard stop even if the copy is grammatically correct
-- examples of forbidden reviewer shortcuts: generic closings that only restate the verdict, verdict-led stock lines like `ZAFA y...` / `PASABLE para...`, reusable structures with title/cast swapped in, or copy that could describe another movie unchanged
+- examples of forbidden reviewer shortcuts: generic closings that only restate the verdict, verdict-led stock lines like `ZAFA y...` / `PASABLE para...`, `ESTA MUY BIEN porque...`, `Lo que la vuelve RECOMENDADA...`, `El veredicto de NO LA MIRES...`, reusable structures with title/cast swapped in, or copy that could describe another movie unchanged
+- if the published review repeats `verdictLabel` verbatim inside the prose, treat it as templated copy and rewrite it
 - if the audit reports `short-review`, `underdeveloped-review`, `duplicate-long-sentence`, `reused-opener-pattern`, `generated-review-marker`, or equivalent robotized signals, rewrite the review before signing off
 
 The exclusive profile reconciliation check is mandatory too:
