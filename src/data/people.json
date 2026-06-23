@@ -2771,8 +2771,10 @@
 			"https://www.wikidata.org/wiki/Q31172977",
 			"https://www.imdb.com/name/nm5262787/"
 		],
-		"lastVerifiedAt": "2026-04-29",
-		"source": "wikidata-imdb-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache",
+		"image": "/people/anwar-congo.jpg",
+		"remoteImageUrl": "https://images.mubicdn.net/images/cast_member/509511/cache-274547-1509599472/image-w856.jpg?size=100x"
 	},
 	"Anya Taylor-Joy": {
 		"name": "Anya Taylor-Joy",
@@ -5000,6 +5002,21 @@
 			"https://www.themoviedb.org/person/28004-brian-markinson"
 		],
 		"lastVerifiedAt": "2026-04-29",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Brian Taylor": {
+		"name": "Brian Taylor",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/brian-taylor-nm0962729.jpg",
+		"imdbId": "nm0962729",
+		"imdbUrl": "https://www.imdb.com/name/nm0962729/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/1TXxgF48STiUb3F9cp1L5iEx5Pb.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q913128",
+			"https://www.imdb.com/name/nm0962729/",
+			"https://www.themoviedb.org/person/20192-brian-taylor"
+		],
+		"lastVerifiedAt": "2026-06-23",
 		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Brian Tee": {
@@ -7545,10 +7562,16 @@
 		"birthYear": 1983,
 		"nationalityPrimary": "Estadounidense",
 		"referenceUrls": [
-			"https://www.kinnanebrothers.com/about"
+			"https://www.kinnanebrothers.com/about",
+			"https://www.imdb.com/name/nm3057695/",
+			"https://screendollars.com/celebrity/charles-kinnane/"
 		],
-		"lastVerifiedAt": "2026-03-15",
-		"source": "manual-official-site-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "manual-official-site-cache",
+		"image": "/people/chuck-kinnane.jpg",
+		"imdbId": "nm3057695",
+		"imdbUrl": "https://www.imdb.com/name/nm3057695/",
+		"remoteImageUrl": "https://api.screendollars.com/wp-content/uploads/2025/01/Charles%20Kinnane%20-%2028012025.jpeg"
 	},
 	"Chuck Russell": {
 		"name": "Chuck Russell",
@@ -8756,10 +8779,16 @@
 		"birthYear": 1992,
 		"nationalityPrimary": "Estadounidense",
 		"referenceUrls": [
-			"https://www.kinnanebrothers.com/about"
+			"https://www.kinnanebrothers.com/about",
+			"https://www.imdb.com/name/nm8451296/",
+			"https://screendollars.com/celebrity/daniel-kinnane/"
 		],
-		"lastVerifiedAt": "2026-03-15",
-		"source": "manual-official-site-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "manual-official-site-cache",
+		"image": "/people/dan-kinnane.jpg",
+		"imdbId": "nm8451296",
+		"imdbUrl": "https://www.imdb.com/name/nm8451296/",
+		"remoteImageUrl": "https://api.screendollars.com/wp-content/uploads/2025/01/Daniel%20Kinnane%20-%2029012025.jpeg"
 	},
 	"Dan Mazer": {
 		"name": "Dan Mazer",
@@ -12194,10 +12223,15 @@
 		"birthYear": 2004,
 		"nationalityPrimary": "Estadounidense",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q135825212"
+			"https://www.wikidata.org/wiki/Q135825212",
+			"https://www.imdb.com/name/nm0309558/"
 		],
-		"lastVerifiedAt": "2026-04-29",
-		"source": "wikidata-imdb-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache",
+		"image": "/people/emma-gates.jpg",
+		"imdbId": "nm0309558",
+		"imdbUrl": "https://www.imdb.com/name/nm0309558/",
+		"remoteImageUrl": "https://images.mubicdn.net/images/cast_member/10106/cache-129864-1455980249/image-w856.jpg?size=100x"
 	},
 	"Emma Mackey": {
 		"name": "Emma Mackey",
@@ -15292,10 +15326,15 @@
 		"name": "Gus Rose",
 		"nationalityPrimary": "Estadounidense",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q86423813"
+			"https://www.wikidata.org/wiki/Q86423813",
+			"https://www.imdb.com/name/nm0741410/"
 		],
-		"lastVerifiedAt": "2026-04-29",
-		"source": "wikidata-imdb-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache",
+		"image": "/people/gus-rose.jpg",
+		"imdbId": "nm0741410",
+		"imdbUrl": "https://www.imdb.com/name/nm0741410/",
+		"remoteImageUrl": "https://images.mubicdn.net/images/cast_member/18184/cache-5773-1478101707/image-w856.jpg?size=100x"
 	},
 	"Gus Van Sant": {
 		"name": "Gus Van Sant",
@@ -23624,10 +23663,16 @@
 		"birthYear": 1966,
 		"nationalityPrimary": "Japonés",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q11469260"
+			"https://www.wikidata.org/wiki/Q11469260",
+			"https://myanimelist.net/people/49234/Ken_Yamamoto",
+			"https://www.imdb.com/name/nm9568791/"
 		],
-		"lastVerifiedAt": "2026-05-21",
-		"source": "wikidata-imdb-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache",
+		"image": "/people/ken-yamamoto.jpg",
+		"imdbId": "nm9568791",
+		"imdbUrl": "https://www.imdb.com/name/nm9568791/",
+		"remoteImageUrl": "https://cdn.myanimelist.net/images/voiceactors/2/86062.jpg"
 	},
 	"Kendrick Sampson": {
 		"name": "Kendrick Sampson",
@@ -26899,15 +26944,17 @@
 	"Manuela Menéndez": {
 		"name": "Manuela Menéndez",
 		"nationalityPrimary": "Argentina",
-		"image": "",
+		"image": "/people/manuela-menendez.jpg",
 		"imdbId": "nm13065836",
 		"imdbUrl": "https://www.imdb.com/name/nm13065836/",
 		"referenceUrls": [
-			"https://www.imdb.com/name/nm13065836/"
+			"https://www.imdb.com/name/nm13065836/",
+			"https://www.alternativateatral.com/persona52902-manuela-mendez"
 		],
-		"lastVerifiedAt": "2026-04-17",
+		"lastVerifiedAt": "2026-06-23",
 		"source": "manual-imdb-cache",
-		"notes": "Perfil trazable verificado; no se encontro fecha publica confiable ni retrato individual confiable."
+		"notes": "Perfil trazable verificado; no se encontro fecha publica confiable al 2026-06-23.",
+		"remoteImageUrl": "https://img.alternativateatral.com/scripts/es/fotos/personas/resumen/96/000297496.jpg"
 	},
 	"Mao Ichimichi": {
 		"name": "Mao Ichimichi",
@@ -27501,6 +27548,23 @@
 		],
 		"lastVerifiedAt": "2026-03-15",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Mark Neveldine": {
+		"name": "Mark Neveldine",
+		"birthDate": "1973-05-11",
+		"birthYear": 1973,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/mark-neveldine-nm0004410.jpg",
+		"imdbId": "nm0004410",
+		"imdbUrl": "https://www.imdb.com/name/nm0004410/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mark%20Neveldine%202011.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q1340718",
+			"https://www.imdb.com/name/nm0004410/",
+			"https://www.themoviedb.org/person/20193-mark-neveldine"
+		],
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache"
 	},
 	"Mark O'Brien": {
 		"name": "Mark O'Brien",
@@ -33299,8 +33363,10 @@
 			"https://www.wikidata.org/wiki/Q3507236",
 			"https://www.imdb.com/name/nm0685194/"
 		],
-		"lastVerifiedAt": "2026-05-26",
-		"source": "wikidata-imdb-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache",
+		"image": "/people/perry-pirkanen.jpg",
+		"remoteImageUrl": "https://images.mubicdn.net/images/cast_member/31958/cache-262085-1506716582/image-w856.jpg?size=100x"
 	},
 	"Pete Docter": {
 		"name": "Pete Docter",
@@ -33734,6 +33800,8 @@
 	},
 	"Pierre Leduc": {
 		"name": "Pierre Leduc",
+		"birthDate": "1946-12-20",
+		"birthYear": 1946,
 		"nationalityPrimary": "Francés",
 		"imdbId": "nm2966857",
 		"imdbUrl": "https://www.imdb.com/name/nm2966857/",
@@ -33741,10 +33809,13 @@
 			"https://www.wikidata.org/wiki/Q20656120",
 			"https://www.themoviedb.org/person/1479529-pierre-leduc",
 			"https://www.wikidata.org/wiki/Q65589903",
-			"https://www.imdb.com/name/nm2966857/"
+			"https://www.imdb.com/name/nm2966857/",
+			"https://www.mariowiki.com/Pierre_Leduc"
 		],
-		"lastVerifiedAt": "2026-03-15",
-		"source": "manual-imdb-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache",
+		"image": "/people/pierre-leduc.jpg",
+		"remoteImageUrl": "https://mario.wiki.gallery/images/thumb/1/1d/Pierre_Leduc_Profile.png/200px-Pierre_Leduc_Profile.png"
 	},
 	"Pilar López de Ayala": {
 		"name": "Pilar López de Ayala",
@@ -34094,10 +34165,13 @@
 		"deathYear": 2010,
 		"nationalityPrimary": "Estadounidense",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q7291527"
+			"https://www.wikidata.org/wiki/Q7291527",
+			"https://www.law.northwestern.edu/legalclinic/wrongfulconvictions/exonerations/tx/randall-dale-adams.html"
 		],
-		"lastVerifiedAt": "2026-04-29",
-		"source": "wikidata-imdb-cache"
+		"lastVerifiedAt": "2026-06-23",
+		"source": "wikidata-imdb-cache",
+		"image": "/people/randall-dale-adams.jpg",
+		"remoteImageUrl": "https://www.law.northwestern.edu/legalclinic/wrongfulconvictions/exonerations/graphics/txAdamsRD.jpg"
 	},
 	"Raúl Arévalo": {
 		"name": "Raúl Arévalo",
@@ -39460,11 +39534,14 @@
 		"imdbUrl": "https://www.imdb.com/name/nm12664801/",
 		"referenceUrls": [
 			"https://screendollars.com/celebrity/takashi-katagiri/",
-			"https://www.imdb.com/name/nm12664801/"
+			"https://www.imdb.com/name/nm12664801/",
+			"https://www.animenewsnetwork.com/encyclopedia/people.php?id=157982"
 		],
-		"lastVerifiedAt": "2026-03-15",
+		"lastVerifiedAt": "2026-06-23",
 		"source": "manual-imdb-cache",
-		"notes": "No se verifico un retrato individual confiable ni una fecha de nacimiento publica al 2026-03-15."
+		"notes": "No se verifico una fecha de nacimiento publica confiable al 2026-06-23.",
+		"image": "/people/takashi-katagiri.jpg",
+		"remoteImageUrl": "https://cdn.animenewsnetwork.com/thumbnails/crop150x150gH7/encyc/P157982-3049348378.1620733556.jpg"
 	},
 	"Takashi Miike": {
 		"name": "Takashi Miike",
@@ -41843,15 +41920,17 @@
 	"Verónica Pelaccini": {
 		"name": "Verónica Pelaccini",
 		"nationalityPrimary": "Argentina",
-		"image": "",
+		"image": "/people/veronica-pelaccini.jpg",
 		"imdbId": "nm1011903",
 		"imdbUrl": "https://www.imdb.com/name/nm1011903/",
 		"referenceUrls": [
-			"https://www.imdb.com/name/nm1011903/"
+			"https://www.imdb.com/name/nm1011903/",
+			"https://www.jorgegalli.com.ar/veronica-pelaccini"
 		],
-		"lastVerifiedAt": "2026-04-17",
+		"lastVerifiedAt": "2026-06-23",
 		"source": "manual-imdb-cache",
-		"notes": "Perfil trazable verificado; no se encontro fecha publica confiable ni retrato individual confiable."
+		"notes": "Perfil trazable verificado; no se encontro fecha publica confiable al 2026-06-23.",
+		"remoteImageUrl": "https://www.jorgegalli.com.ar/images/veronica-pelaccini-01.jpg"
 	},
 	"Vicky Jewson": {
 		"name": "Vicky Jewson",
@@ -42908,11 +42987,14 @@
 		"imdbUrl": "https://www.imdb.com/name/nm0452858/",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q11619565",
-			"https://www.imdb.com/name/nm0452858/"
+			"https://www.imdb.com/name/nm0452858/",
+			"https://www.animenewsnetwork.com/encyclopedia/people.php?id=1550"
 		],
-		"lastVerifiedAt": "2026-03-15",
+		"lastVerifiedAt": "2026-06-23",
+		"notes": "No se verifico una fecha de nacimiento mas precisa al 2026-06-23.",
 		"source": "wikidata-imdb-cache",
-		"notes": "No se verifico un retrato individual confiable al 2026-03-15."
+		"image": "/people/yasuhito-kikuchi.jpg",
+		"remoteImageUrl": "https://cdn.animenewsnetwork.com/thumbnails/crop150x150gH7/encyc/P1550-2157762003.1640719617.jpg"
 	},
 	"Yasuko Sawaguchi": {
 		"name": "Yasuko Sawaguchi",
