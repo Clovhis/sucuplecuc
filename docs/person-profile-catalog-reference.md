@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-04-27. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 363
+Total de personas con ficha exclusiva: 367
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -206,6 +206,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Jonah Hill | `jonah-hill` | /personas/jonah-hill/ | Actor | 2 | 4 |
 | Jonathan Bailey | `jonathan-bailey` | /personas/jonathan-bailey/ | Actor | 2 | 3 |
 | Jorge Marrale | `jorge-marrale` | /personas/jorge-marrale/ | Actor | 1 | 2 |
+| Joseph Quinn | `joseph-quinn` | /personas/joseph-quinn/ | Actor | 1 | 3 |
 | Joseph Gordon-Levitt | `joseph-gordon-levitt` | /personas/joseph-gordon-levitt/ | Actor | 2 | 3 |
 | Joseph Kosinski | `joseph-kosinski` | /personas/joseph-kosinski/ | Director | 2 | 3 |
 | Josh Brolin | `josh-brolin` | /personas/josh-brolin/ | Actor | 4 | 3 |
@@ -267,6 +268,8 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Michelle Pfeiffer | `michelle-pfeiffer` | /personas/michelle-pfeiffer/ | Actriz / Productora | 1 | 4 |
 | Michelle Williams | `michelle-williams` | /personas/michelle-williams/ | Actriz | 3 | 3 |
 | Mikey Madison | `mikey-madison` | /personas/mikey-madison/ | Actriz | 1 | 3 |
+| Millie Bobby Brown | `millie-bobby-brown` | /personas/millie-bobby-brown/ | Actriz | 2 | 3 |
+| Milly Alcock | `milly-alcock` | /personas/milly-alcock/ | Actriz | 1 | 3 |
 | Miles Teller | `miles-teller` | /personas/miles-teller/ | Actor | 4 | 3 |
 | Morgan Freeman | `morgan-freeman` | /personas/morgan-freeman/ | Actor | 4 | 3 |
 | Nahuel Pérez Biscayart | `nahuel-perez-biscayart` | /personas/nahuel-perez-biscayart/ | Actor | 1 | 3 |
@@ -320,6 +323,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 3 | 3 |
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 4 | 3 |
 | Sadie Sandler | `sadie-sandler` | /personas/sadie-sandler/ | Actriz | 1 | 6 |
+| Sadie Sink | `sadie-sink` | /personas/sadie-sink/ | Actriz | 1 | 3 |
 | Sam Mendes | `sam-mendes` | /personas/sam-mendes/ | Director | 3 | 3 |
 | Sam Raimi | `sam-raimi` | /personas/sam-raimi/ | Director | 4 | 3 |
 | Sam Rockwell | `sam-rockwell` | /personas/sam-rockwell/ | Actor | 1 | 2 |

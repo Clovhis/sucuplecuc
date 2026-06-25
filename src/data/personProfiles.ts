@@ -10940,6 +10940,28 @@ const bulkRequestedProfiles = {
 			knownFor: ['companion-2025', 'novocaine-2025'],
 		},
 		{
+			slug: 'joseph-quinn',
+			name: 'Joseph Quinn',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Quinn%20en%202022.jpg?width=640',
+			headline:
+				'Actor britanico que paso de la television de epoca y el teatro ingles a convertirse en una cara fuerte del blockbuster actual en muy pocos años.',
+			birthPlace: 'Clapham, Londres, Inglaterra',
+			spotlight:
+				'Su carrera viene acelerando sin perder una base de oficio bastante clara: incluso cuando entra a franquicias grandes, Quinn sigue apoyandose en presencia, voz y una sensibilidad algo fragil que no suele aparecer en heroes o rebeldes genericos.',
+			biography: [
+				'Joseph Quinn nacio el 26 de enero de 1994 en Clapham, al sur de Londres, y crecio dentro de un contexto donde la actuacion no era una fantasia lejana sino un trabajo concreto: su padre estuvo ligado al area de screen and audio performance de LAMDA, y esa cercania con el oficio lo acompaño desde temprano. Estudio en Emanuel School y despues se formo en la London Academy of Music and Dramatic Art, de donde egreso en 2015. Ese dato no es menor, porque buena parte de lo que se ve en pantalla despues ya estaba en la base: manejo del texto, atencion al gesto, una voz muy trabajada y una forma de actuar que puede sonar clasica incluso cuando el proyecto apunta al consumo masivo. Antes de hacerse mundialmente conocido paso varios años construyendo experiencia en teatro y television britanica, un recorrido mucho menos explosivo que el de otras estrellas de internet pero bastante mas solido.',
+				'Su primera etapa profesional tuvo bastante de actor ingles de repertorio contemporaneo. En television aparecio en Dickensian, Howards End, Les Miserables, Catherine the Great, Strike y Small Axe, casi siempre en papeles que le pedian una mezcla de sensibilidad y tension interna mas que puro lucimiento. En paralelo tambien hizo escenario en Londres y fuera de Londres, y ese costado teatral le dio reconocimiento propio: por Wish List gano el premio a mejor actor en produccion de estudio en los Manchester Theatre Awards. En cine fue entrando de a poco, con Overlord, Make Up y Hoard, trabajos que mostraban que podia correrse del uniforme de “promesa joven de serie prestigiosa” y buscar material mas raro o mas fisico. Incluso antes del gran boom, Quinn ya habia armado una trayectoria donde convivian drama de epoca, proyectos de autor y una presencia muy marcada para personajes algo rotos o desplazados.',
+				'La explosion global llego con Eddie Munson en la cuarta temporada de Stranger Things, un personaje que podria haber quedado como alivio comico metalero y termino convertido en fenomeno cultural. Quinn entendio rapido que Eddie necesitaba energia, humor, vulnerabilidad y un punto de tragedia adolescente para no ser puro accesorio nostalgico, y por eso el impacto fue tan grande. Ese trabajo lo volvio una figura reconocible mucho mas alla del publico de series y le dio el premio MTV a actuacion revelacion en 2023. Lo interesante es que, en vez de repetir la misma nota, aprovecho ese envion para meterse en peliculas bien distintas: en A Quiet Place: Day One trabajo desde un registro mas contenido y afectivo; en Gladiator II se movio hacia una zona de crueldad imperial y artificio; despues llegaron Warfare y The Fantastic Four: First Steps, ya directamente en territorio de estudios enormes. En ese salto a la liga industrial alta, Quinn sigue destacandose porque no actua como si la escala resolviera sola al personaje. Tiene algo nervioso y humano que desacomoda un poco el molde, y justamente ahi aparece buena parte de su interes.',
+			],
+			awards: [{ label: 'MTV Movie & TV Award', category: 'Actuacion revelacion', work: 'Stranger Things', year: 2023 }],
+			knownFor: ['a-quiet-place-day-one-2024'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Joseph_Quinn',
+				'https://www.lamda.ac.uk/students-alumni/acting-alumni',
+				'https://www.mtv.com/info-page/x3xmyg/2023-mtv-movie-tv-awards-winners-see-the-full-list',
+			],
+		},
+		{
 			slug: 'john-travolta',
 			name: 'John Travolta',
 			profileImage:
@@ -11215,6 +11237,60 @@ const bulkRequestedProfiles = {
 	]),
 	...buildCatalogBackedProfiles(globalActressDefaults, [
 		{
+			slug: 'millie-bobby-brown',
+			name: 'Millie Bobby Brown',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Millie%20Bobby%20Brown%20-%20MBB%20-%204%20-%20SFM5%20-%20July%2010%2C%202022%20at%20Stranger%20Fan%20Meet%205%20People%20Convention%20(cropped).jpg?width=640',
+			headline:
+				'Actriz britanica convertida en estrella global durante la adolescencia, con un perfil que mezcla franquicia, produccion y cultura pop de alcance masivo.',
+			birthPlace: 'Marbella, Malaga, España',
+			spotlight:
+				'Lo mas llamativo de su carrera es la velocidad con la que paso de revelacion juvenil a figura industrial: Brown no quedo fijada solo a un personaje, sino que empujo muy pronto su propio lugar como protagonista y productora dentro del cine comercial.',
+			biography: [
+				'Millie Bobby Brown nacio el 19 de febrero de 2004 en Marbella, España, dentro de una familia britanica que se movio bastante antes de que su carrera arrancara de verdad. Pasó parte de su infancia entre España, Inglaterra y Estados Unidos, y esa mudanza temprana forma parte de una biografia marcada por un crecimiento acelerado en publico. Empezo a actuar siendo muy chica y sus primeros trabajos fueron apariciones en series como Once Upon a Time in Wonderland, NCIS, Modern Family y Grey’s Anatomy, es decir, el recorrido clasico de una interprete infantil que va aprendiendo el oficio dentro de la maquinaria televisiva norteamericana. Lo singular en su caso es que ese periodo de aprendizaje fue muy corto: antes de llegar a la mayoria de edad ya estaba instalada como una de las caras mas reconocibles de su generacion.',
+				'El punto de quiebre absoluto fue Stranger Things, donde interpreto a Eleven y se convirtio en el centro emocional y visual de una serie que funciono como fenomeno global. El personaje combinaba mutismo, trauma, potencia fisica y una dimension casi iconica, y Brown supo volverlo entrañable sin quitarle rareza. Por ese trabajo recibio dos nominaciones consecutivas al Primetime Emmy como actriz de reparto en drama, una marca muy poco comun para una actriz tan joven. A la vez, su imagen se disparo fuera de la actuacion: en 2018 entro en la lista Time 100 y se convirtio en la persona mas joven designada como embajadora de buena voluntad de UNICEF. Esa mezcla entre exito de streaming, presencia de alfombra roja y visibilidad publica hizo que Brown pasara muy rapido de “promesa” a celebridad de primera linea, algo que muchas carreras no consiguen ni en decadas.',
+				'Lo interesante es que despues no se conformo con repetir la posicion de estrella juvenil. Empezo a expandirse hacia cine de franquicia y aventuras con Godzilla: King of the Monsters, Godzilla vs. Kong, las peliculas de Enola Holmes, Damsel y The Electric State, y en varias de esas producciones tambien asumio un rol como productora. Eso cambia bastante la lectura de su carrera: Brown no aparece solo como rostro util para vender una pelicula, sino como alguien que fue construyendo poder real de decision muy temprano. En el caso de Enola Holmes, por ejemplo, aprovecho su popularidad para ocupar el centro de una saga pensada alrededor de su energia, su velocidad verbal y una idea de protagonismo juvenil bastante activa. En paralelo lanzo Florence by Mills y fortalecio una marca personal propia, algo que puede gustar mas o menos pero que confirma hasta que punto su figura ya excede la actuacion pura.',
+				'En Cine Posta queda unida sobre todo a Godzilla vs. Kong y The Electric State, dos proyectos distintos que igual muestran la misma apuesta industrial: Brown como cara capaz de sostener espectaculo, marketing global y una audiencia muy joven sin desaparecer dentro del aparato. Su fortaleza como interprete no pasa por la transformacion camaleonica sino por una presencia frontal, muy consciente de la camara y del efecto pop de cada personaje. Para una actriz que llego a la fama siendo adolescente, el verdadero desafio siempre fue no quedar congelada en el recuerdo de Eleven. Hasta ahora viene esquivando bastante bien ese peligro, moviendose hacia una zona donde combina blockbuster, produccion y celebridad contemporanea con bastante intuicion.',
+			],
+			awards: [
+				{
+					label: 'Primetime Emmy',
+					category: 'Nominacion a mejor actriz de reparto en serie dramatica',
+					work: 'Stranger Things',
+					year: 2018,
+				},
+			],
+			knownFor: ['godzilla-vs-kong-2021', 'the-electric-state-2025'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Millie_Bobby_Brown',
+				'https://www.televisionacademy.com/bios/millie-bobby-brown',
+				'https://time.com/collections/most-influential-people-2018/5238181/millie-bobby-brown/',
+			],
+		},
+		{
+			slug: 'milly-alcock',
+			name: 'Milly Alcock',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Milly%20alcock%20gcc%202022%202.jpg?width=640',
+			headline:
+				'Actriz australiana que salio del circuito local de series para transformarse en una de las nuevas caras mas visibles de la fantasia y el mainstream global.',
+			birthPlace: 'Sydney, Nueva Gales del Sur, Australia',
+			spotlight:
+				'Alcock transmite una mezcla bastante rara de fragilidad, rebeldia y autoridad juvenil; por eso, incluso en proyectos muy grandes, suele dar la impresion de que siempre hay algo vivo e imprevisible en el centro del personaje.',
+			biography: [
+				'Milly Alcock nacio como Amelia May Alcock el 11 de abril de 2000 en Sydney, y su recorrido profesional arranco dentro de la industria audiovisual australiana mucho antes de que la descubriera el resto del mundo. De chica y de adolescente fue apareciendo en publicidades y despues en series como Wonderland, Janet King, A Place to Call Home, Fighting Season, Pine Gap y Les Norton, una formacion hecha a fuerza de sets, papeles secundarios y aprendizaje practico mas que de un lanzamiento instantaneo. En esa primera etapa ya se veia una cualidad que despues se volvio marca: una pantalla muy viva, con algo medio insolente y al mismo tiempo bastante vulnerable. No daba la sensacion de estar repitiendo modales de “joven promesa”, sino de tener un instinto bastante propio para personajes que parecen a un paso de romperse o de pelearse con el mundo.',
+				'El verdadero salto en Australia llego con Upright, la serie creada y protagonizada por Tim Minchin, donde interpreto a Meg, una adolescente fugitiva que atraviesa el interior del pais en una historia de viaje, duelo y vinculo improbable. El papel le dio una nominacion al AACTA como mejor interprete de comedia en 2020, pero sobre todo le dio una vidriera de actriz principal antes de cumplir veintiun años. En Upright se entendio bien por que funcionaba tanto: Alcock podia ser brusca, graciosa, impulsiva y triste sin sonar calculada, algo fundamental para un personaje que necesitaba desorden emocional real. Despues sumo trabajos como The Gloaming y Reckoning, donde siguio mostrando que no dependia de un solo registro ni de una unica clase de proyecto. Esa base local fue importante porque cuando llego la explosión internacional ya no aparecia como una debutante armada para una franquicia, sino como una actriz que venia curtida por varios años de television.',
+				'La proyeccion global llego con House of the Dragon, donde interpreto a la joven Rhaenyra Targaryen en la primera parte de la serie. No era un papel facil: tenia que cargar sobre los hombros el arranque emocional de una precuela gigantesca, meterse en un universo con fandom feroz y ademas construir una version creible de un personaje que mas adelante cambiaba de actriz. Alcock resolvio todo eso con mucha personalidad. Su Rhaenyra era orgullosa, hiriente, muy intuitiva y bastante mas moderna en energia que el decorado medieval que la rodeaba, y por eso fue una de las primeras grandes conversaciones alrededor de la serie. La repercusion fue tan fuerte que de golpe paso del nicho australiano a la categoria de rostro internacional, con portadas, entrevistas y una industria muy interesada en usar esa mezcla de carisma y filo que habia mostrado en pantalla.',
+				'Desde ahi su carrera entro en una etapa de escala mucho mayor. En 2025 aparecio por primera vez como Kara Zor-El / Supergirl dentro del nuevo universo DC y en 2026 quedo al frente de Supergirl, una posicion que la mueve directo al terreno del blockbuster de franquicia. El detalle importante es que ese salto no contradice lo que traia haciendo, sino que lo amplifica: Alcock funciona bien cuando interpreta mujeres jovenes obligadas a negociar poder, violencia simbolica, soledad o expectativas ajenas demasiado grandes. En Cine Posta, justamente, Supergirl la encuentra en ese punto preciso entre revelacion televisiva y apuesta total de estudio. Si sostiene el personaje en futuras entregas, no va a ser solo porque “le da la cara”, sino porque ya demostro algo mas raro y mas valioso: la capacidad de volver especifico a un papel que podria quedar convertido en puro branding.',
+			],
+			awards: [{ label: 'AACTA Award', category: 'Nominacion a mejor interprete de comedia', work: 'Upright', year: 2020 }],
+			knownFor: ['supergirl-2026'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Milly_Alcock',
+				'https://www.wikidata.org/wiki/Q108816955',
+				'https://www.aacta.org/aacta-awards/winners-and-nominees/2020-aacta-awards/',
+			],
+		},
+		{
 			slug: 'sadie-sandler',
 			name: 'Sadie Sandler',
 			profileImage:
@@ -11238,6 +11314,29 @@ const bulkRequestedProfiles = {
 				'https://en.wikipedia.org/wiki/Roommates_(2026_film)',
 				'https://www.imdb.com/title/tt21276878/awards/',
 				'https://www.imdb.com/name/nm2490721/',
+			],
+		},
+		{
+			slug: 'sadie-sink',
+			name: 'Sadie Sink',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sadie%20Sink%20(43914734441).jpg?width=640',
+			headline:
+				'Actriz estadounidense muy ligada a su generacion, con una mezcla de sensibilidad indie, formacion teatral y presencia fuerte para drama adolescente o emocionalmente filoso.',
+			birthPlace: 'Brenham, Texas, Estados Unidos',
+			spotlight:
+				'Sink tiene una energia distinta a la de muchas estrellas juveniles recientes: no trabaja desde el carisma explosivo sino desde una intensidad contenida que hace que sus personajes parezcan estar pensando algo incluso cuando no hablan.',
+			biography: [
+				'Sadie Sink nacio el 16 de abril de 2002 en Brenham, Texas, y su relacion con la actuacion empezo muy temprano, primero en el ambito local y despues en un recorrido teatral bastante serio para alguien tan chica. Su madre la acompaño en ese interes inicial y la familia termino mudandose temporalmente para que pudiera desarrollar trabajo profesional en escena. Antes de convertirse en un rostro masivo de streaming ya habia pasado por Broadway, donde participo en Annie y mas adelante en The Audience junto a Helen Mirren. Ese arranque es importante para entenderla: Sink no aparecio de golpe como celebridad adolescente fabricada por casting de serie, sino como una actriz formada en disciplina teatral, manejo del cuerpo, escucha y un tipo de concentracion que despues se nota muchisimo en camara.',
+				'Su primera visibilidad fuerte en television llego con papeles en series como American Odyssey, Blue Bloods y American Horror Stories, pero el gran quiebre fue Max Mayfield en Stranger Things. Max entro en la serie en la segunda temporada y enseguida se volvio uno de sus centros afectivos: una chica seca, divertida, enojada y leal, con una vida interior mucho mas compleja de lo que la fachada canchera dejaba ver. Sink supo aprovechar muy bien esa ambiguedad, y por eso su personaje nunca quedo reducido a estereotipo de “nueva integrante cool del grupo”. A medida que la serie avanzó, Max se volvio uno de los roles mas exigentes del elenco joven y Sink respondió con una mezcla muy fuerte de vulnerabilidad y resistencia. Ese trabajo la instalo de lleno en la cultura pop global y la convirtió en una de las caras mas reconocibles de la generacion Stranger Things.',
+				'Lo interesante vino despues, cuando empezo a salir de esa zona sin despegarse del todo de su publico. En Fear Street: Part Two, 1978 trabajo terror slasher con fisico y timing; en All Too Well: The Short Film, dirigida por Taylor Swift, mostro una faceta mas intima y romantica que amplifico muchisimo su visibilidad fuera de la serie; y con The Whale hizo el movimiento que mas peso le dio como actriz de cine. En la pelicula de Darren Aronofsky interpreto a Ellie, la hija del personaje de Brendan Fraser, y el papel le pedia bronca, inteligencia defensiva y dolor acumulado sin volverse ilustrativo. Sink logro que el personaje incomodara de verdad sin quedar encapsulado en la funcion de “adolescente herida”, y esa actuacion fue una de las pruebas mas claras de que podia sostener drama pesado en la pantalla grande.',
+				'En 2025 volvio a reforzar su costado teatral con John Proctor Is the Villain, obra por la que obtuvo una nominacion al Tony como mejor actriz protagonica en obra. Ese dato cierra bastante bien el dibujo de su carrera hasta ahora: una actriz que salio del teatro, exploto en streaming y despues uso esa fama para volver a materiales mas exigentes sin perder centralidad popular. Dentro de Cine Posta, The Whale la muestra en un punto clave de esa transicion, ya lejos de la pura imagen de estrella juvenil y mucho mas cerca de una interprete que quiere elegir batallas con espesor. Sink todavia es joven, pero ya tiene algo que muchas carreras tardan bastante en conseguir: una identidad reconocible que no depende solo de la fama, sino de la clase de intensidad que lleva a cada personaje.',
+			],
+			awards: [{ label: 'Tony', category: 'Nominacion a mejor actriz protagonica en obra', work: 'John Proctor Is the Villain', year: 2025 }],
+			knownFor: ['the-whale-2022'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Sadie_Sink',
+				'https://www.wikidata.org/wiki/Q27452406',
+				'https://www.tonyawards.com/nominees/year/2025/category/actress-leading-role-play/show/any/',
 			],
 		},
 		{
