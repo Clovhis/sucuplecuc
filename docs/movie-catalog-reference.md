@@ -19,7 +19,7 @@ Total de peliculas: 946
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Otras plataformas | +13 |
-| 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | HBO Max | +16 |
+| 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | HBO Max + Apple TV | +16 |
 | 2026 | Dracula | dracula-2026 | Terror | Otras plataformas | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Cine | +13 |
@@ -186,7 +186,7 @@ Total de peliculas: 946
 | 2024 | 40 Acres | 40-acres-2024 | Thriller | Netflix | +16 |
 | 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Paramount Plus | +13 |
 | 2024 | A Real Pain | a-real-pain-2024 | Comedia | Disney Plus | +13 |
-| 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus | +17 |
+| 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus + HBO Max | +17 |
 | 2024 | Am I OK? | am-i-ok-2024 | Comedia | HBO Max | +17 |
 | 2024 | Anora | anora-2024 | Comedia | HBO Max | +16 |
 | 2024 | Aún estoy aquí | aun-estoy-aqui-2024 | Drama | Paramount Plus | +14 |
@@ -215,7 +215,7 @@ Total de peliculas: 946
 | 2024 | Inside Out 2 | inside-out-2-2024 | Animacion | Disney Plus | ATP |
 | 2024 | Jim Henson: la audacia de las ideas | jim-henson-idea-man-2024 | Documental | Disney Plus | ATP |
 | 2024 | Joker: Folie à Deux | joker-folie-a-deux-2024 | Drama | HBO Max | +17 |
-| 2024 | Kingdom of the Planet of the Apes | kingdom-of-the-planet-of-the-apes-2024 | Accion | Disney Plus | +13 |
+| 2024 | Kingdom of the Planet of the Apes | kingdom-of-the-planet-of-the-apes-2024 | Accion | Disney Plus + HBO Max | +13 |
 | 2024 | Kraven the Hunter | kraven-the-hunter-2024 | Accion | HBO Max | +16 |
 | 2024 | Kung Fu Panda 4 | kung-fu-panda-4-2024 | Comedia | Prime Video | ATP |
 | 2024 | La música de John Williams | music-by-john-williams-2024 | Documental | Disney Plus | ATP |
@@ -236,7 +236,7 @@ Total de peliculas: 946
 | 2024 | Super/Man: La Historia De Christopher Reeve | super-man-the-christopher-reeve-story-2024 | Documental | HBO Max | +13 |
 | 2024 | Terrifier 3 | terrifier-3-2024 | Gore | Otras plataformas | +18 |
 | 2024 | The Apprentice (La historia de Trump) | the-apprentice-2024 | Historia | Otras plataformas | +17 |
-| 2024 | The Beekeeper | the-beekeeper-2024 | Accion | Prime Video | +16 |
+| 2024 | The Beekeeper | the-beekeeper-2024 | Accion | Prime Video + HBO Max | +16 |
 | 2024 | The Brutalist | the-brutalist-2024 | Drama | HBO Max | +16 |
 | 2024 | The Fall Guy | the-fall-guy-2024 | Accion | Prime Video | +13 |
 | 2024 | The First Omen | the-first-omen-2024 | Terror | Disney Plus | +16 |
@@ -255,7 +255,7 @@ Total de peliculas: 946
 | 2024 | Wolfs | wolfs-2024 | Comedia | Apple TV | +13 |
 | 2023 | Air | air-2023 | Drama | Prime Video | +17 |
 | 2023 | Ant-Man and the Wasp: Quantumania | ant-man-and-the-wasp-quantumania-2023 | Accion | Disney Plus | +13 |
-| 2023 | Aquaman and the Lost Kingdom | aquaman-and-the-lost-kingdom-2023 | Accion | Netflix | +13 |
+| 2023 | Aquaman and the Lost Kingdom | aquaman-and-the-lost-kingdom-2023 | Accion | Netflix + HBO Max | +13 |
 | 2023 | Barbie | barbie-2023 | Aventura | HBO Max | ATP |
 | 2023 | Blue Beetle | blue-beetle-2023 | Accion | HBO Max | +13 |
 | 2023 | Creed III | creed-iii-2023 | Drama | Otras plataformas | +13 |
@@ -296,13 +296,13 @@ Total de peliculas: 946
 | 2022 | Black Panther: Wakanda Forever | black-panther-wakanda-forever-2022 | Accion | Disney Plus | +13 |
 | 2022 | Bubble | bubble-2022 | Anime | Netflix | ATP |
 | 2022 | Doctor Strange in the Multiverse of Madness | doctor-strange-in-the-multiverse-of-madness-2022 | Accion | Disney Plus | +13 |
-| 2022 | Elvis | elvis-2022 | Drama | Netflix | +15 |
+| 2022 | Elvis | elvis-2022 | Drama | Netflix + HBO Max | +15 |
 | 2022 | Everything Everywhere All at Once | everything-everywhere-all-at-once-2022 | Accion | HBO Max | +17 |
 | 2022 | Fantastic Beasts: The Secrets of Dumbledore | fantastic-beasts-the-secrets-of-dumbledore-2022 | Aventura | HBO Max | +13 |
 | 2022 | Glass Onion: A Knives Out Mystery | glass-onion-a-knives-out-mystery-2022 | Comedia | Netflix | +13 |
 | 2022 | Halloween: El final | halloween-ends-2022 | Terror | Otras plataformas | +17 |
 | 2022 | Jurassic World: Dominion | jurassic-world-dominion-2022 | Accion | Otras plataformas | +13 |
-| 2022 | Morbius | morbius-2022 | Accion | Netflix | +13 |
+| 2022 | Morbius | morbius-2022 | Accion | Netflix + Mercado Play | +13 |
 | 2022 | Nope | nope-2022 | Terror | Otras plataformas | +17 |
 | 2022 | Scream | scream-2022 | Terror | Paramount Plus | +16 |
 | 2022 | Suzume | suzume-2022 | Anime | Crunchyroll | ATP |
@@ -330,7 +330,7 @@ Total de peliculas: 946
 | 2021 | Eternals | eternals-2021 | Acción | Disney Plus | +13 |
 | 2021 | F9: The Fast Saga | f9-the-fast-saga-2021 | Acción | Otras plataformas | +13 |
 | 2021 | Free Guy | free-guy-2021 | Acción | Disney Plus | +13 |
-| 2021 | Godzilla vs. Kong | godzilla-vs-kong-2021 | Acción | Netflix | +13 |
+| 2021 | Godzilla vs. Kong | godzilla-vs-kong-2021 | Acción | Netflix + DGO | +13 |
 | 2021 | Halloween Kills: La noche aún no termina | halloween-kills-2021 | Terror | Otras plataformas | +16 |
 | 2021 | Home Sweet Home Alone | home-sweet-home-alone-2021 | Comedia | Disney Plus | ATP |
 | 2021 | Jungle Cruise | jungle-cruise-2021 | Acción | Disney Plus | +13 |
@@ -355,9 +355,9 @@ Total de peliculas: 946
 | 2020 | Earwig and the Witch | earwig-and-the-witch-2020 | Anime | Netflix | ATP |
 | 2020 | Nomadland | nomadland-2020 | Drama | Disney Plus | +17 |
 | 2020 | Rifkin's Festival | rifkin-s-festival-2020 | Comedia | Otras plataformas | +13 |
-| 2020 | Tenet | tenet-2020 | Ciencia ficcion | HBO Max | +13 |
+| 2020 | Tenet | tenet-2020 | Ciencia ficcion | HBO Max + DGO | +13 |
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus | +13 |
-| 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max | +13 |
+| 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max + DGO | +13 |
 | 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus | +13 |
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus | +13 |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus | +13 |
@@ -374,7 +374,7 @@ Total de peliculas: 946
 | 2019 | Parasite | parasite-2019 | Comedia | Netflix | +15 |
 | 2019 | Rolling Thunder Revue: A Bob Dylan Story by Martin Scorsese | rolling-thunder-revue-a-bob-dylan-story-by-martin-scorsese-2019 | Documental | Otras plataformas | +18 |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix | +13 |
-| 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix | +13 |
+| 2019 | Spider-Man: Far From Home | spider-man-far-from-home-2019 | Accion | Netflix + Mercado Play | +13 |
 | 2019 | Star Wars: The Rise of Skywalker | star-wars-episode-ix-the-rise-of-skywalker-2019 | Ciencia ficcion | Disney Plus | +13 |
 | 2019 | Terminator: Dark Fate | terminator-dark-fate-2019 | Accion | Disney Plus | +17 |
 | 2019 | The Irishman: In Conversation | the-irishman-2019 | Crimen | Otras plataformas | +7 |
@@ -449,7 +449,7 @@ Total de peliculas: 946
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus | +13 |
 | 2015 | Furious 7 | furious-7-2015 | Accion | HBO Max | +13 |
 | 2015 | Irrational Man | irrational-man-2015 | Drama | Otras plataformas | +13 |
-| 2015 | Jurassic World | jurassic-world-2015 | Aventura | Prime Video | +13 |
+| 2015 | Jurassic World | jurassic-world-2015 | Aventura | Prime Video + Netflix | +13 |
 | 2015 | Mad Max: Fury Road | mad-max-fury-road-2015 | Accion | Netflix | +16 |
 | 2015 | Mission: Impossible - Rogue Nation | mission-impossible-rogue-nation-2015 | Accion | Disney Plus | +13 |
 | 2015 | Spectre | spectre-2015 | Accion | Netflix | +12 |
@@ -476,7 +476,7 @@ Total de peliculas: 946
 | 2014 | The Grand Budapest Hotel | the-grand-budapest-hotel-2014 | Comedia | Disney Plus | +13 |
 | 2014 | Whiplash | whiplash-2014 | Drama | HBO Max | +12 |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus | +13 |
-| 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video | +17 |
+| 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video + Paramount Plus | +17 |
 | 2013 | Blue Jasmine | blue-jasmine-2013 | Drama | Otras plataformas | +16 |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max | ATP |
 | 2013 | El lobo de Wall Street | the-wolf-of-wall-street-2013 | Crimen | Otras plataformas | ATP |
@@ -491,7 +491,7 @@ Total de peliculas: 946
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus | +13 |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus | +13 |
 | 2012 | A Roma con amor | to-rome-with-love-2012 | Comedia | Otras plataformas | +13 |
-| 2012 | Argo | argo-2012 | Thriller | Netflix | +17 |
+| 2012 | Argo | argo-2012 | Thriller | Netflix + Mercado Play | +17 |
 | 2012 | Dark Shadows | dark-shadows-2012 | Comedia | Otras plataformas | +13 |
 | 2012 | Django Unchained | django-unchained-2012 | Drama | Prime Video | +16 |
 | 2012 | El acto de matar | the-act-of-killing-2012 | Documental | Otras plataformas | +16 |
@@ -510,7 +510,7 @@ Total de peliculas: 946
 | 2011 | Green Lantern | green-lantern-2011 | Accion | Otras plataformas | +13 |
 | 2011 | Harry Potter and the Deathly Hallows: Part 2 | harry-potter-and-the-deathly-hallows-part-2-2011 | Aventura | HBO Max | +12 |
 | 2011 | Hostel: Part III | hostel-part-iii-2011 | Gore | Otras plataformas | +18 |
-| 2011 | Kung Fu Panda 2 | kung-fu-panda-2-2011 | Animacion | Netflix | ATP |
+| 2011 | Kung Fu Panda 2 | kung-fu-panda-2-2011 | Animacion | Netflix + Prime Video | ATP |
 | 2011 | La invención de Hugo | hugo-2011 | Aventura | Otras plataformas | ATP |
 | 2011 | Las aventuras de Tintín: El secreto del unicornio | the-adventures-of-tintin-2011 | Animacion | Otras plataformas | ATP |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Otras plataformas | +13 |
@@ -532,7 +532,7 @@ Total de peliculas: 946
 | 2010 | Hablar en público | public-speaking-2010 | Documental | Otras plataformas | ATP |
 | 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max | +12 |
 | 2010 | How to Train Your Dragon | how-to-train-your-dragon-2010 | Animacion | Otras plataformas | ATP |
-| 2010 | Inception | inception-2010 | Ciencia ficcion | HBO Max | +13 |
+| 2010 | Inception | inception-2010 | Ciencia ficcion | HBO Max + Prime Video | +13 |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus | +13 |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max | +13 |
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
@@ -554,11 +554,11 @@ Total de peliculas: 946
 | 2009 | The Human Centipede (First Sequence) | the-human-centipede-first-sequence-2009 | Gore | Otras plataformas | +18 |
 | 2009 | Up | up-2009 | Animacion | Disney Plus | ATP |
 | 2009 | Viernes 13 | friday-the-13th-2009 | Terror | Mercado Play | +17 |
-| 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max | +17 |
+| 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max + Mercado Play | +17 |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus | +13 |
 | 2008 | Indiana Jones and the Kingdom of the Crystal Skull | indiana-jones-and-the-kingdom-of-the-crystal-skull-2008 | Aventura | Otras plataformas | +13 |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus | +13 |
-| 2008 | Kung Fu Panda | kung-fu-panda-2008 | Animacion | Netflix | ATP |
+| 2008 | Kung Fu Panda | kung-fu-panda-2008 | Animacion | Netflix + HBO Max | ATP |
 | 2008 | Leonera | leonera-2008 | Drama | Netflix | +13 |
 | 2008 | Mártires | martires-2008 | Gore | Otras plataformas | +18 |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Otras plataformas | +17 |
@@ -580,7 +580,7 @@ Total de peliculas: 946
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
 | 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Otras plataformas | +17 |
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus | +13 |
-| 2007 | Pozos de ambición | pozos-de-ambicion-2007 | Drama | Paramount Plus | +13 |
+| 2007 | Pozos de ambición | pozos-de-ambicion-2007 | Drama | Paramount Plus + Prime Video | +13 |
 | 2007 | Ratatouille | ratatouille-2007 | Animacion | Disney Plus | ATP |
 | 2007 | Saw IV | saw-iv-2007 | Gore | Otras plataformas | +18 |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
@@ -605,7 +605,7 @@ Total de peliculas: 946
 | 2005 | Corpse Bride | corpse-bride-2005 | Animacion | HBO Max | ATP |
 | 2005 | Crash | crash-2005 | Drama | Prime Video | +17 |
 | 2005 | El aura | el-aura-2005 | Thriller | HBO Max | +18 |
-| 2005 | Elektra | elektra-2005 | Accion | Netflix | +13 |
+| 2005 | Elektra | elektra-2005 | Accion | Netflix + Prime Video | +13 |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus | +13 |
 | 2005 | Grizzly Man | grizzly-man-2005 | Documental | Otras plataformas | +13 |
 | 2005 | Harry Potter and the Goblet of Fire | harry-potter-and-the-goblet-of-fire-2005 | Aventura | HBO Max | +13 |
@@ -649,14 +649,14 @@ Total de peliculas: 946
 | 2003 | The Matrix Revolutions | matrix-revolutions-2003 | Ciencia ficcion | Netflix | +17 |
 | 2003 | Todo lo demás | anything-else-2003 | Romance | Otras plataformas | +13 |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus | +13 |
-| 2002 | Atrápame si puedes | atrapame-si-puedes-2002 | Drama | Paramount Plus | +13 |
+| 2002 | Atrápame si puedes | atrapame-si-puedes-2002 | Drama | Paramount Plus + Mercado Play | +13 |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video | +17 |
 | 2002 | Chicago | chicago-2002 | Comedia | Otras plataformas | +13 |
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix | +13 |
 | 2002 | Gangs of New York | gangs-of-new-york-2002 | Drama | Otras plataformas | +17 |
 | 2002 | Halloween: Resurrection | halloween-resurrection-2002 | Terror | Otras plataformas | +17 |
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max | ATP |
-| 2002 | Minority Report | minority-report-2002 | Ciencia ficcion | Paramount Plus | +13 |
+| 2002 | Minority Report | minority-report-2002 | Ciencia ficcion | Paramount Plus + Mercado Play | +13 |
 | 2002 | Noches blancas (Insomnia) | insomnia-2002 | Thriller | Otras plataformas | +13 |
 | 2002 | Spider-Man | spider-man-2002 | Accion | Otras plataformas | +13 |
 | 2002 | Star Wars: Episode II - Attack of the Clones | star-wars-episode-ii-attack-of-the-clones-2002 | Ciencia ficcion | Disney Plus | +13 |
@@ -675,7 +675,7 @@ Total de peliculas: 946
 | 2001 | Millennium Actress | millennium-actress-2001 | Anime | Otras plataformas | +13 |
 | 2001 | Monsters, Inc. | monsters-inc-2001 | Animacion | Disney Plus | ATP |
 | 2001 | Planet of the Apes | planet-of-the-apes-2001 | Ciencia ficcion | Disney Plus | +13 |
-| 2001 | Shrek | shrek-2001 | Animacion | Netflix | ATP |
+| 2001 | Shrek | shrek-2001 | Animacion | Netflix + HBO Max | ATP |
 | 2001 | Spirited Away | spirited-away-2001 | Anime | Netflix | ATP |
 | 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Otras plataformas | +13 |
 | 2001 | The Lord of the Rings: The Fellowship of the Ring | the-lord-of-the-rings-the-fellowship-of-the-ring-2001 | Aventura | Otras plataformas | +13 |
@@ -689,7 +689,7 @@ Total de peliculas: 946
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus | +13 |
 | 1999 | Acordes y desacuerdos | sweet-and-lowdown-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Al límite | bringing-out-the-dead-1999 | Drama | Otras plataformas | +17 |
-| 1999 | American Beauty | american-beauty-1999 | Drama | Paramount Plus | +16 |
+| 1999 | American Beauty | american-beauty-1999 | Drama | Paramount Plus + Mercado Play | +16 |
 | 1999 | Fight Club | fight-club-1999 | Drama | Prime Video | +18 |
 | 1999 | Mi viaje a Italia | my-voyage-to-italy-1999 | Documental | Otras plataformas | ATP |
 | 1999 | Sleepy Hollow | sleepy-hollow-1999 | Terror | Otras plataformas | +17 |
@@ -718,7 +718,7 @@ Total de peliculas: 946
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus | +13 |
 | 1996 | Mars Attacks! | mars-attacks-1996 | Ciencia ficcion | Otras plataformas | +13 |
 | 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Otras plataformas | +13 |
-| 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Paramount Plus | +16 |
+| 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Paramount Plus + Mercado Play | +16 |
 | 1996 | The English Patient | the-english-patient-1996 | Drama | Otras plataformas | +17 |
 | 1996 | Todos dicen I Love You | everyone-says-i-love-you-1996 | Musical | Otras plataformas | +13 |
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix | +13 |
@@ -734,13 +734,13 @@ Total de peliculas: 946
 | 1995 | Un viaje personal con Martin Scorsese a través del cine americano | a-personal-journey-with-martin-scorsese-through-american-movies-1995 | Documental | Otras plataformas | ATP |
 | 1994 | Balas sobre Broadway | bullets-over-broadway-1994 | Comedia | Otras plataformas | +13 |
 | 1994 | Ed Wood | ed-wood-1994 | Biografica | Otras plataformas | +17 |
-| 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Paramount Plus | +13 |
+| 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Paramount Plus + Mercado Play | +13 |
 | 1994 | Hoop Dreams | hoop-dreams-1994 | Documental | Otras plataformas | ATP |
 | 1994 | La nueva pesadilla de Wes Craven | wes-craven-s-new-nightmare-1994 | Terror | Otras plataformas | +17 |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix | +18 |
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
-| 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video | +13 |
+| 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video + Netflix | +13 |
 | 1993 | La edad de la inocencia | the-age-of-innocence-1993 | Drama | Otras plataformas | ATP |
 | 1993 | Misterioso asesinato en Manhattan | manhattan-murder-mystery-1993 | Comedia | Otras plataformas | +13 |
 | 1993 | Schindler's List | schindler-s-list-1993 | Drama | HBO Max | +17 |
@@ -764,7 +764,7 @@ Total de peliculas: 946
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus | +13 |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Otras plataformas | +13 |
 | 1990 | Edward Scissorhands | edward-scissorhands-1990 | Fantasia | Otras plataformas | +13 |
-| 1990 | Goodfellas | goodfellas-1990 | Crimen | Netflix | +18 |
+| 1990 | Goodfellas | goodfellas-1990 | Crimen | Netflix + Prime Video | +18 |
 | 1990 | Mi pobre angelito | home-alone-1990 | Comedia | Disney Plus | ATP |
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Otras plataformas | +17 |
 | 1990 | Paris Is Burning | paris-is-burning-1990 | Documental | Otras plataformas | +16 |
@@ -801,7 +801,7 @@ Total de peliculas: 946
 | 1987 | Septiembre | september-1987 | Drama | Otras plataformas | +13 |
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Otras plataformas | ATP |
 | 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Otras plataformas | +13 |
-| 1986 | Aliens | aliens-1986 | Ciencia ficcion | Disney Plus | +17 |
+| 1986 | Aliens | aliens-1986 | Ciencia ficcion | Disney Plus + HBO Max | +17 |
 | 1986 | Castle in the Sky | castle-in-the-sky-1986 | Anime | Netflix | ATP |
 | 1986 | El color del dinero | the-color-of-money-1986 | Drama | Otras plataformas | +17 |
 | 1986 | Hannah and Her Sisters | hannah-and-her-sisters-1986 | Drama | Otras plataformas | +13 |
@@ -810,7 +810,7 @@ Total de peliculas: 946
 | 1986 | Viernes 13. 6ª parte: Jason vive | friday-the-13th-part-vi-jason-lives-1986 | Terror | Otras plataformas | +18 |
 | 1985 | ¡qué noche! | after-hours-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | A Nightmare on Elm Street 2: Freddy's Revenge | a-nightmare-on-elm-street-2-freddy-s-revenge-1985 | Terror | Otras plataformas | +17 |
-| 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video | ATP |
+| 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video + Netflix | ATP |
 | 1985 | El color púrpura | the-color-purple-1985 | Drama | Otras plataformas | +13 |
 | 1985 | Esperando la carroza | esperando-la-carroza-1985 | Comedia | Prime Video | +13 |
 | 1985 | La historia oficial | la-historia-oficial-1985 | Drama | Otras plataformas | +18 |
@@ -857,7 +857,7 @@ Total de peliculas: 946
 | 1980 | Toro salvaje | raging-bull-1980 | Drama | Otras plataformas | ATP |
 | 1980 | Viernes 13 | friday-the-13th-1980 | Terror | HBO Max | +18 |
 | 1979 | 1941 | 1941-1979 | Comedia | Otras plataformas | +13 |
-| 1979 | Alien | alien-1979 | Ciencia ficcion | Disney Plus | +18 |
+| 1979 | Alien | alien-1979 | Ciencia ficcion | Disney Plus + HBO Max | +18 |
 | 1979 | Apocalypse Now | apocalypse-now-1979 | Drama | Otras plataformas | +18 |
 | 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max | ATP |
 | 1979 | Mad Max | mad-max-1979 | Accion | HBO Max | +18 |
