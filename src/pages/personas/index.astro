@@ -1,13 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getPersonFilmography, getPersonProfiles } from '../../lib/people';
+import { getPersonAge, getPersonAgeLabel, getPersonFilmography, getPersonProfiles } from '../../lib/people';
 import { PEOPLE_PATH, createSimplePageStructuredData } from '../../lib/seo';
 
 const peopleEntries = getPersonProfiles()
 	.map((profile) => {
 		const filmography = getPersonFilmography(profile.name);
+		const age = getPersonAge(profile);
 		return {
 			profile,
+			age,
+			ageLabel: getPersonAgeLabel(profile),
 			filmography,
 			filmCount: filmography.length,
 			showcaseTitles: filmography
@@ -21,11 +24,7 @@ const peopleEntries = getPersonProfiles()
 				'/posters/poster-no-disponible.svg',
 		};
 	})
-	.sort(
-		(left, right) =>
-			right.filmCount - left.filmCount ||
-			left.profile.name.localeCompare(right.profile.name, 'es'),
-	);
+	.sort((left, right) => left.profile.name.localeCompare(right.profile.name, 'es'));
 
 const connectedMovieCount = new Set(
 	peopleEntries.flatMap((entry) => entry.filmography.map((movie) => movie.movieSlug)),
@@ -46,7 +45,8 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 			<h1 class="people-index__title">Actores, directores y nombres clave del catálogo</h1>
 			<p class="people-index__dek">
 				Cada ficha junta biografía, premios y las pelis donde esa persona aparece dentro de Cine
-				Posta, así que la navegación del sitio y los enlaces entre perfiles quedan mucho más claros.
+				Posta. Acá la entrada es más directa: podés recorrer el listado en modo alfabético o por
+				edad, con una lectura continua más parecida a una ladder que a una pared de tarjetas.
 			</p>
 			<div class="people-index__stats" aria-label="Resumen del catálogo de personas">
 				<div class="person-page__stat-card">
@@ -64,38 +64,79 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 			</div>
 		</section>
 
-		<section class="people-index__grid" aria-label="Listado de perfiles">
-			{
-				peopleEntries.map((entry, index) => (
-					<a
-						class="people-index__card fade-up"
-						href={entry.profile.profilePath}
-						style={`--item-delay: ${Math.min(index, 12) * 35}ms;`}
-					>
-						<div class="people-index__portrait-shell">
-							<img
-								src={entry.image}
-								alt={`Retrato de ${entry.profile.name}`}
-								loading="lazy"
-								referrerpolicy="no-referrer"
-							/>
-						</div>
-						<div class="people-index__card-copy">
-							<p class="people-index__card-kicker">{entry.profile.roles.join(' · ')}</p>
-							<h2>{entry.profile.name}</h2>
-							<p class="people-index__headline">{entry.profile.headline}</p>
-							<p class="people-index__meta">
-								{entry.filmCount} peli{entry.filmCount === 1 ? '' : 's'} conectada{entry.filmCount === 1 ? '' : 's'}
-							</p>
-							{
-								entry.showcaseTitles && (
-									<p class="people-index__showcase">Lo tenés de: {entry.showcaseTitles}</p>
-								)
-							}
-						</div>
-					</a>
-				))
-			}
+		<section class="people-index__toolbar fade-up" style="--item-delay: 40ms;" aria-label="Orden del listado">
+			<div class="people-index__sort-group" role="group" aria-label="Cambiar orden del listado">
+				<p class="people-index__sort-label">Ordenar por</p>
+				<button class="people-index__sort-button is-active" type="button" data-people-sort="alpha" aria-pressed="true">
+					A-Z
+				</button>
+				<button class="people-index__sort-button" type="button" data-people-sort="age" aria-pressed="false">
+					Edad
+				</button>
+			</div>
+			<p class="people-index__sort-note" data-people-sort-note aria-live="polite">
+				Orden actual: alfabético.
+			</p>
+		</section>
+
+		<section class="people-index__list-shell" aria-label="Listado de perfiles">
+			<ol class="people-index__ladder">
+				{
+					peopleEntries.map((entry, index) => (
+						<li
+							class="people-index__row fade-up"
+							data-person-row
+							data-name={entry.profile.name}
+							data-age={typeof entry.age === 'number' ? entry.age : ''}
+							data-age-known={typeof entry.age === 'number' ? 'true' : 'false'}
+							style={`--item-delay: ${Math.min(index, 14) * 28}ms;`}
+						>
+							<a class="people-index__row-link" href={entry.profile.profilePath}>
+								<span class="people-index__rank" data-people-rank aria-hidden="true">
+									{String(index + 1).padStart(2, '0')}
+								</span>
+								<div class="people-index__portrait-shell">
+									<img
+										src={entry.image}
+										alt={`Retrato de ${entry.profile.name}`}
+										loading="lazy"
+										referrerpolicy="no-referrer"
+										width="160"
+										height="188"
+									/>
+								</div>
+								<div class="people-index__summary">
+									<p class="people-index__card-kicker">{entry.profile.roles.join(' · ')}</p>
+									<h2>{entry.profile.name}</h2>
+									<p class="people-index__headline">{entry.profile.headline}</p>
+									{
+										entry.showcaseTitles && (
+											<p class="people-index__showcase">Lo tenés de: {entry.showcaseTitles}</p>
+										)
+									}
+								</div>
+								<dl class="people-index__facts">
+									<div class="people-index__fact">
+										<dt>Edad</dt>
+										<dd>{entry.ageLabel}</dd>
+									</div>
+									<div class="people-index__fact">
+										<dt>Catálogo</dt>
+										<dd>
+											{entry.filmCount} peli{entry.filmCount === 1 ? '' : 's'}
+										</dd>
+									</div>
+									<div class="people-index__fact">
+										<dt>Origen</dt>
+										<dd>{entry.profile.nationalityPrimary ?? 'No disponible'}</dd>
+									</div>
+								</dl>
+							</a>
+						</li>
+					))
+				}
+			</ol>
 		</section>
 	</main>
+	<script src="../../scripts/person-index.ts"></script>
 </BaseLayout>

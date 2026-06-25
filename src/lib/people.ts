@@ -76,7 +76,9 @@ function getAgeFromDates(startDate: string, endDate: string): number | undefined
 	return age >= 0 ? age : undefined;
 }
 
-function getPersonAgeLabel(profile: Pick<PersonProfile, 'birthDate' | 'birthYear' | 'deathDate' | 'deathYear'>): string {
+export function getPersonAge(
+	profile: Pick<PersonProfile, 'birthDate' | 'birthYear' | 'deathDate' | 'deathYear'>,
+): number | undefined {
 	const today = new Date();
 	const todayIso = `${today.getUTCFullYear()}-${String(today.getUTCMonth() + 1).padStart(2, '0')}-${String(
 		today.getUTCDate(),
@@ -87,18 +89,25 @@ function getPersonAgeLabel(profile: Pick<PersonProfile, 'birthDate' | 'birthYear
 	if (profile.birthDate && /^\d{4}-\d{2}-\d{2}$/.test(profile.birthDate)) {
 		const exactAge = getAgeFromDates(profile.birthDate, profile.deathDate ?? todayIso);
 		if (typeof exactAge === 'number') {
-			return `${exactAge} años`;
+			return exactAge;
 		}
 	}
 
 	if (typeof birthYear === 'number') {
 		const age = getAgeFromYears(birthYear, endYear);
 		if (typeof age === 'number') {
-			return `${age} años`;
+			return age;
 		}
 	}
 
-	return 'Edad no disponible';
+	return undefined;
+}
+
+export function getPersonAgeLabel(
+	profile: Pick<PersonProfile, 'birthDate' | 'birthYear' | 'deathDate' | 'deathYear'>,
+): string {
+	const age = getPersonAge(profile);
+	return typeof age === 'number' ? `${age} años` : 'Edad no disponible';
 }
 
 export function normalizePersonName(value: string): string {
