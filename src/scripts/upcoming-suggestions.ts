@@ -2,8 +2,10 @@ export {};
 
 type UpcomingSuggestion = {
 	title: string;
+	displayTitle?: string;
 	releaseDate: string;
 	synopsis: string;
+	displaySynopsis?: string;
 	embedUrl: string;
 };
 
@@ -35,14 +37,14 @@ if (root && dataScript) {
 			frame.title = `Trailer oficial de ${suggestion.title}`;
 		}
 		if (title) {
-			title.textContent = suggestion.title;
+			title.textContent = suggestion.displayTitle ?? suggestion.title;
 		}
 		if (date) {
 			date.dateTime = suggestion.releaseDate;
 			date.textContent = formatReleaseDate(suggestion.releaseDate);
 		}
 		if (synopsis) {
-			synopsis.textContent = suggestion.synopsis;
+			synopsis.textContent = suggestion.displaySynopsis ?? suggestion.synopsis;
 		}
 		if (counter) {
 			counter.textContent = `${index + 1} de ${suggestions.length}`;
@@ -80,6 +82,8 @@ function parseSuggestions(raw: string | null): UpcomingSuggestion[] {
 				typeof suggestion.title === 'string' &&
 				typeof suggestion.releaseDate === 'string' &&
 				typeof suggestion.synopsis === 'string' &&
+				(suggestion.displayTitle === undefined || typeof suggestion.displayTitle === 'string') &&
+				(suggestion.displaySynopsis === undefined || typeof suggestion.displaySynopsis === 'string') &&
 				typeof suggestion.embedUrl === 'string',
 		);
 	} catch {

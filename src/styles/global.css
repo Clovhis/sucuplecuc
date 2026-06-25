@@ -2120,6 +2120,12 @@ img {
 	min-width: 0;
 }
 
+.weekly-suggestion__media {
+	display: grid;
+	min-width: 0;
+	align-content: stretch;
+}
+
 .weekly-suggestion__player {
 	overflow: hidden;
 	min-width: 0;
@@ -2339,34 +2345,61 @@ img {
 
 @media (min-width: 46rem) {
 	.weekly-suggestion[data-upcoming-suggestion-root] {
-		min-block-size: 31rem;
+		min-block-size: 34rem;
 	}
 
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__shell {
-		grid-template-columns: minmax(0, 1.36fr) minmax(18rem, 0.74fr);
+		grid-template-columns: minmax(0, 1.52fr) minmax(21rem, 0.7fr);
 		gap: 1rem;
-		align-items: start;
+		align-items: stretch;
 	}
 
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__header {
 		margin-bottom: 0.08rem;
 	}
 
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__media {
+		align-self: stretch;
+		block-size: 100%;
+	}
+
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__player {
-		align-self: start;
+		align-self: stretch;
 		width: 100%;
 		max-width: 100%;
-		min-height: 0;
+		block-size: 100%;
+		min-height: 100%;
+		aspect-ratio: auto;
 	}
 
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__content {
-		align-self: start;
+		display: flex;
+		flex-direction: column;
+		align-self: stretch;
+		block-size: 100%;
 		gap: 0.7rem;
 		min-width: 0;
 	}
 
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__content h3 {
 		font-size: clamp(1.45rem, 1.7vw, 2.05rem);
+		display: -webkit-box;
+		overflow: hidden;
+		block-size: calc(2 * 1.08em);
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__synopsis {
+		display: -webkit-box;
+		overflow: hidden;
+		block-size: calc(5 * 1.55em);
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 5;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__actions {
+		margin-top: auto;
 	}
 
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue {
@@ -2381,7 +2414,7 @@ img {
 
 @media (min-width: 64rem) {
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__shell {
-		grid-template-columns: minmax(0, 1.52fr) minmax(20rem, 0.68fr);
+		grid-template-columns: minmax(0, 1.66fr) minmax(22rem, 0.64fr);
 		gap: 1.12rem;
 	}
 }

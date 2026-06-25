@@ -49,6 +49,8 @@ const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de pel
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
 const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`;
+const UPCOMING_SUGGESTION_TITLE_MAX_CHARS = 40;
+const UPCOMING_SUGGESTION_SYNOPSIS_MAX_CHARS = 170;
 
 function formatUpcomingReleaseDate(value: string) {
 	const releaseDate = new Date(`${value}T00:00:00Z`);
@@ -85,16 +87,34 @@ function getYoutubeAutoplayEmbedUrlFromVideoUrl(videoUrl: string) {
 	return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
 }
 
+function truncateText(value: string, maxChars: number) {
+	if (value.length <= maxChars) {
+		return value;
+	}
+
+	const trimmed = value.slice(0, maxChars + 1).trim();
+	const lastSpaceIndex = trimmed.lastIndexOf(' ');
+	const safeText = lastSpaceIndex > Math.floor(maxChars * 0.6) ? trimmed.slice(0, lastSpaceIndex) : trimmed.slice(0, maxChars);
+
+	return `${safeText.trimEnd()}…`;
+}
+
 const upcomingMovieSuggestions = upcomingReleases
-	.map((release) => ({
-		...release,
-		watchUrl: release.videoUrl,
-		embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl),
-		sourceUrl: release.sourceUrl ?? release.videoUrl,
-		synopsis:
+	.map((release) => {
+		const synopsis =
 			release.synopsis ??
-			`Estreno programado para el ${formatUpcomingReleaseDate(release.releaseDate)}.`,
-	}))
+			`Estreno programado para el ${formatUpcomingReleaseDate(release.releaseDate)}.`;
+
+		return {
+			...release,
+			watchUrl: release.videoUrl,
+			embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl),
+			sourceUrl: release.sourceUrl ?? release.videoUrl,
+			synopsis,
+			displayTitle: truncateText(release.title, UPCOMING_SUGGESTION_TITLE_MAX_CHARS),
+			displaySynopsis: truncateText(synopsis, UPCOMING_SUGGESTION_SYNOPSIS_MAX_CHARS),
+		};
+	})
 	.filter((release) => release.embedUrl);
 const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 ---
@@ -373,17 +393,19 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 								data-upcoming-active-index="0"
 							>
 								<div class="weekly-suggestion__shell">
-									<div class="weekly-suggestion__player">
-										<iframe
-											class="weekly-suggestion__frame"
-											src={upcomingMovieSuggestions[0].embedUrl}
-											title={`Trailer oficial de ${upcomingMovieSuggestions[0].title}`}
-											loading="eager"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-											referrerpolicy="strict-origin-when-cross-origin"
-											allowfullscreen
-											data-upcoming-suggestion-frame
-										></iframe>
+									<div class="weekly-suggestion__media">
+										<div class="weekly-suggestion__player">
+											<iframe
+												class="weekly-suggestion__frame"
+												src={upcomingMovieSuggestions[0].embedUrl}
+												title={`Trailer oficial de ${upcomingMovieSuggestions[0].title}`}
+												loading="eager"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												referrerpolicy="strict-origin-when-cross-origin"
+												allowfullscreen
+												data-upcoming-suggestion-frame
+											></iframe>
+										</div>
 									</div>
 									<div class="weekly-suggestion__content" aria-live="polite">
 										<div class="weekly-suggestion__header">
@@ -391,7 +413,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 												<h2 id="upcoming-suggestion-title">Próximos estrenos</h2>
 											</div>
 										</div>
-										<h3 data-upcoming-suggestion-name>{upcomingMovieSuggestions[0].title}</h3>
+										<h3 data-upcoming-suggestion-name>{upcomingMovieSuggestions[0].displayTitle}</h3>
 										<p class="weekly-suggestion__meta">
 											<time
 												datetime={upcomingMovieSuggestions[0].releaseDate}
@@ -402,7 +424,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 											<span data-upcoming-suggestion-platform>Cine</span>
 										</p>
 										<p class="weekly-suggestion__synopsis" data-upcoming-suggestion-synopsis>
-											{upcomingMovieSuggestions[0].synopsis}
+											{upcomingMovieSuggestions[0].displaySynopsis}
 										</p>
 										<ol class="weekly-suggestion__queue" aria-label="Agenda de próximos estrenos">
 											{
