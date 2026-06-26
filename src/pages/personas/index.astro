@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { normalizeSearchText } from '../../lib/movies';
 import { getPersonAge, getPersonAgeLabel, getPersonFilmography, getPersonProfiles } from '../../lib/people';
 import { PEOPLE_PATH, createSimplePageStructuredData } from '../../lib/seo';
 
@@ -7,12 +8,33 @@ const peopleEntries = getPersonProfiles()
 	.map((profile) => {
 		const filmography = getPersonFilmography(profile.name);
 		const age = getPersonAge(profile);
+		const awardCount = profile.awards.length;
+		const normalizedRoles = profile.roles
+			.map((role) => normalizeSearchText(role).replace(/\s+/g, ' '))
+			.filter(Boolean);
+		const nationalityLabel = profile.nationalityPrimary?.trim() ?? 'No disponible';
+		const nationalityFilter = normalizeSearchText(nationalityLabel).replace(/\s+/g, ' ');
+		const searchableText = normalizeSearchText(
+			[
+				profile.name,
+				profile.headline,
+				profile.roles.join(' '),
+				profile.nationalityPrimary ?? '',
+				profile.birthPlace ?? '',
+				filmography.map((entry) => entry.title).join(' '),
+			].join(' '),
+		).replace(/\s+/g, ' ');
 		return {
 			profile,
 			age,
 			ageLabel: getPersonAgeLabel(profile),
 			filmography,
 			filmCount: filmography.length,
+			awardCount,
+			normalizedRoles,
+			nationalityLabel,
+			nationalityFilter,
+			searchableText,
 			showcaseTitles: filmography
 				.slice(0, 3)
 				.map((entry) => entry.title)
@@ -29,6 +51,24 @@ const peopleEntries = getPersonProfiles()
 const connectedMovieCount = new Set(
 	peopleEntries.flatMap((entry) => entry.filmography.map((movie) => movie.movieSlug)),
 ).size;
+const roleOptions = Array.from(
+	new Map(
+		peopleEntries.flatMap((entry) =>
+			entry.profile.roles.map((role) => [normalizeSearchText(role).replace(/\s+/g, ' '), role] as const),
+		),
+	).entries(),
+)
+	.map(([value, label]) => ({ value, label }))
+	.sort((left, right) => left.label.localeCompare(right.label, 'es'));
+const nationalityOptions = Array.from(
+	new Map(
+		peopleEntries
+			.filter((entry) => entry.nationalityLabel !== 'No disponible')
+			.map((entry) => [entry.nationalityFilter, entry.nationalityLabel] as const),
+	).entries(),
+)
+	.map(([value, label]) => ({ value, label }))
+	.sort((left, right) => left.label.localeCompare(right.label, 'es'));
 const pageTitle = 'Personas de Cine Posta: actores, directores y perfiles';
 const pageDescription = `Explorá ${peopleEntries.length} perfiles de actores, directores y figuras del catálogo de Cine Posta, conectados con ${connectedMovieCount} películas fichadas.`;
 const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pageDescription);
@@ -64,22 +104,138 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 			</div>
 		</section>
 
-		<section class="people-index__toolbar fade-up" style="--item-delay: 40ms;" aria-label="Orden del listado">
-			<div class="people-index__sort-group" role="group" aria-label="Cambiar orden del listado">
-				<p class="people-index__sort-label">Ordenar por</p>
-				<button class="people-index__sort-button is-active" type="button" data-people-sort="alpha" aria-pressed="true">
-					A-Z
-				</button>
-				<button class="people-index__sort-button" type="button" data-people-sort="age" aria-pressed="false">
-					Edad
-				</button>
+		<section class="people-index__toolbar fade-up" style="--item-delay: 40ms;" aria-labelledby="people-explorer-title">
+			<div class="people-index__toolbar-head">
+				<div class="people-index__toolbar-copy">
+					<p class="people-index__eyebrow">Exploración libre</p>
+					<h2 class="people-index__toolbar-title" id="people-explorer-title">
+						Buscá, filtrá y reordená el listado como te resulte más cómodo
+					</h2>
+				</div>
+				<p class="people-index__sort-note" data-people-status aria-live="polite">
+					Mostrando {peopleEntries.length} de {peopleEntries.length} perfiles. Orden actual: A-Z.
+				</p>
 			</div>
-			<p class="people-index__sort-note" data-people-sort-note aria-live="polite">
-				Orden actual: alfabético.
-			</p>
+			<form class="people-index__filters" data-people-controls>
+				<div class="people-index__field people-index__field--search">
+					<label class="people-index__field-label" for="people-search">Buscar</label>
+					<input
+						class="people-index__search-input"
+						id="people-search"
+						name="q"
+						type="search"
+						placeholder="Nombre, rol, país o película"
+						autocomplete="off"
+						spellcheck="false"
+						data-people-filter="query"
+					/>
+					<p class="people-index__field-hint">
+						Podés escribir una persona puntual o mezclar criterios como “director argentino” o
+						“terror”.
+					</p>
+				</div>
+
+				<div class="people-index__field">
+					<label class="people-index__field-label" for="people-sort">Ordenar por</label>
+					<select class="people-index__select" id="people-sort" name="orden" data-people-filter="sort">
+						<option value="alpha-asc">Nombre A-Z</option>
+						<option value="alpha-desc">Nombre Z-A</option>
+						<option value="age-desc">Edad: mayor a menor</option>
+						<option value="age-asc">Edad: menor a mayor</option>
+						<option value="catalog-desc">Más pelis conectadas</option>
+						<option value="catalog-asc">Menos pelis conectadas</option>
+						<option value="awards-desc">Más premios destacados</option>
+						<option value="awards-asc">Menos premios destacados</option>
+					</select>
+				</div>
+
+				<div class="people-index__field">
+					<label class="people-index__field-label" for="people-role">Rol</label>
+					<select class="people-index__select" id="people-role" name="rol" data-people-filter="role">
+						<option value="">Todos</option>
+						{
+							roleOptions.map((option) => (
+								<option value={option.value}>{option.label}</option>
+							))
+						}
+					</select>
+				</div>
+
+				<div class="people-index__field">
+					<label class="people-index__field-label" for="people-nationality">Nacionalidad</label>
+					<select
+						class="people-index__select"
+						id="people-nationality"
+						name="nacionalidad"
+						data-people-filter="nationality"
+					>
+						<option value="">Todas</option>
+						{
+							nationalityOptions.map((option) => (
+								<option value={option.value}>{option.label}</option>
+							))
+						}
+					</select>
+				</div>
+
+				<div class="people-index__field">
+					<label class="people-index__field-label" for="people-age-filter">Edad</label>
+					<select class="people-index__select" id="people-age-filter" name="edad" data-people-filter="age">
+						<option value="">Todas</option>
+						<option value="known">Con edad disponible</option>
+						<option value="unknown">Sin edad disponible</option>
+						<option value="under-40">Menores de 40</option>
+						<option value="40-59">Entre 40 y 59</option>
+						<option value="60-79">Entre 60 y 79</option>
+						<option value="80-plus">80 o más</option>
+					</select>
+				</div>
+
+				<div class="people-index__field">
+					<label class="people-index__field-label" for="people-catalog-filter">Catálogo</label>
+					<select
+						class="people-index__select"
+						id="people-catalog-filter"
+						name="catalogo"
+						data-people-filter="catalog"
+					>
+						<option value="">Cualquier tamaño</option>
+						<option value="with-filmography">Con filmografía conectada</option>
+						<option value="1-2">1 a 2 pelis</option>
+						<option value="3-5">3 a 5 pelis</option>
+						<option value="6-plus">6 o más pelis</option>
+					</select>
+				</div>
+
+				<div class="people-index__field">
+					<label class="people-index__field-label" for="people-awards-filter">Premios</label>
+					<select
+						class="people-index__select"
+						id="people-awards-filter"
+						name="premios"
+						data-people-filter="awards"
+					>
+						<option value="">Todos</option>
+						<option value="with-awards">Con premios destacados</option>
+						<option value="without-awards">Sin premios destacados</option>
+						<option value="1">1 premio destacado</option>
+						<option value="2-3">2 a 3 premios destacados</option>
+						<option value="4-plus">4 o más premios destacados</option>
+					</select>
+				</div>
+
+				<div class="people-index__actions">
+					<button class="people-index__reset-button" type="reset" data-people-reset>
+						Limpiar filtros
+					</button>
+				</div>
+			</form>
 		</section>
 
 		<section class="people-index__list-shell" aria-label="Listado de perfiles">
+			<p class="people-index__empty" data-people-empty hidden>
+				No encontramos perfiles con esa combinación. Probá limpiar algún filtro o buscar otro término.
+			</p>
 			<ol class="people-index__ladder">
 				{
 					peopleEntries.map((entry, index) => (
@@ -87,8 +243,13 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 							class="people-index__row fade-up"
 							data-person-row
 							data-name={entry.profile.name}
+							data-search={entry.searchableText}
+							data-roles={entry.normalizedRoles.join('|')}
+							data-nationality={entry.nationalityFilter}
 							data-age={typeof entry.age === 'number' ? entry.age : ''}
 							data-age-known={typeof entry.age === 'number' ? 'true' : 'false'}
+							data-film-count={entry.filmCount}
+							data-award-count={entry.awardCount}
 							style={`--item-delay: ${Math.min(index, 14) * 28}ms;`}
 						>
 							<a class="people-index__row-link" href={entry.profile.profilePath}>
