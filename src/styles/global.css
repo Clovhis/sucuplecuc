@@ -7839,7 +7839,22 @@ img {
 }
 
 .people-index__select {
+	padding-right: 2.4rem;
+	background:
+		linear-gradient(45deg, transparent 50%, var(--accent-soft) 50%) calc(100% - 18px) 50% / 7px 7px no-repeat,
+		linear-gradient(135deg, var(--accent-soft) 50%, transparent 50%) calc(100% - 13px) 50% / 7px 7px no-repeat,
+		rgba(255, 255, 255, 0.03);
+	color: #f3f6fb;
+	color-scheme: dark;
 	cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+.people-index__select option,
+.people-index__select optgroup {
+	background: #10161f;
+	color: #f3f6fb;
 }
 
 .people-index__search-input::placeholder {
