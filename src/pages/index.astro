@@ -17,7 +17,7 @@ import {
 } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
-import { CONTACT_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
@@ -243,31 +243,33 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 									<PostometroTeaser />
 									{
 										featuredPeople.length > 0 && (
-											<section class="home-people-showcase" aria-label="Qué es Cine Posta">
-												<div class="home-people-showcase__header">
-													<div class="home-people-showcase__heading">
-														<p class="home-people-showcase__eyebrow">Fichas con bio</p>
-													</div>
-													<div class="home-people-showcase__intro" aria-label="Cobertura actual del sitio">
-														<ul class="home-people-showcase__stats">
-															<li class="home-people-showcase__stat">
-																<strong>{movieCountLabel}+</strong>
-																<span>películas</span>
-															</li>
-															<li class="home-people-showcase__stat">
-																<strong>{personCountLabel}+</strong>
-																<span>perfiles</span>
-															</li>
-														</ul>
-														<a class="home-people-showcase__link" href="/sobre-cine-posta">
-															Chusmear
-														</a>
-													</div>
+										<section class="home-people-showcase" aria-label="Base de datos de actrices y actores">
+											<div class="home-people-showcase__header">
+												<div class="home-people-showcase__heading">
+													<p class="home-people-showcase__eyebrow">Base de datos</p>
+													<h3 class="home-people-showcase__title">Actrices y actores del catálogo</h3>
 												</div>
-												<div class="home-people-showcase__grid" data-home-people-grid></div>
-											</section>
-										)
-									}
+												<div class="home-people-showcase__intro" aria-label="Cobertura actual de la base">
+													<ul class="home-people-showcase__stats">
+														<li class="home-people-showcase__stat">
+															<strong>{movieCountLabel}+</strong>
+															<span>películas</span>
+														</li>
+														<li class="home-people-showcase__stat">
+															<strong>{personCountLabel}+</strong>
+															<span>personas</span>
+														</li>
+													</ul>
+													<p class="home-people-showcase__description">
+														Perfiles con bio, edad, origen y filmografía conectada para entrar rápido a
+														cada ficha.
+													</p>
+												</div>
+											</div>
+											<div class="home-people-showcase__grid" data-home-people-grid data-people-index-url={PEOPLE_PATH}></div>
+										</section>
+									)
+								}
 								</div>
 								<aside class="catalog-shell__upcoming" aria-labelledby="latest-reviews-title">
 									<h3 id="latest-reviews-title" class="catalog-shell__upcoming-title">

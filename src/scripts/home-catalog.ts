@@ -237,7 +237,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			return;
 		}
 
-		const showcaseEntries = shuffleEntries(personIndex).slice(0, Math.min(12, personIndex.length));
+		const peopleIndexUrl = peopleShowcaseGrid.dataset.peopleIndexUrl ?? '/personas/';
+		const showcaseEntries = shuffleEntries(personIndex).slice(0, Math.min(10, personIndex.length));
 		const showcaseNodes = showcaseEntries.map((entry) => {
 			const card = document.createElement('a');
 			card.className = 'home-people-showcase__card';
@@ -252,6 +253,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			image.alt = `Retrato de ${entry.title}`;
 			image.loading = 'lazy';
 			image.decoding = 'async';
+			image.width = 320;
+			image.height = 400;
 			image.referrerPolicy = 'no-referrer';
 			portrait.append(image);
 
@@ -280,7 +283,51 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			return card;
 		});
 
-		peopleShowcaseGrid.replaceChildren(...showcaseNodes);
+		const databaseCard = document.createElement('a');
+		databaseCard.className = 'home-people-showcase__card home-people-showcase__card--cta';
+		databaseCard.href = peopleIndexUrl;
+		databaseCard.setAttribute('aria-label', 'Explorar la base de datos de actrices y actores');
+
+		const databaseMedia = document.createElement('span');
+		databaseMedia.className = 'home-people-showcase__portrait home-people-showcase__portrait--cta';
+
+		const databaseTag = document.createElement('span');
+		databaseTag.className = 'home-people-showcase__cta-tag';
+		databaseTag.textContent = 'Base de datos';
+
+		const databaseCount = document.createElement('strong');
+		databaseCount.className = 'home-people-showcase__cta-count';
+		databaseCount.textContent = `${personIndex.length}+`;
+
+		const databaseCaption = document.createElement('span');
+		databaseCaption.className = 'home-people-showcase__cta-caption';
+		databaseCaption.textContent = 'perfiles conectados';
+
+		databaseMedia.append(databaseTag, databaseCount, databaseCaption);
+
+		const databaseBody = document.createElement('span');
+		databaseBody.className = 'home-people-showcase__body home-people-showcase__body--cta';
+
+		const databaseTitle = document.createElement('span');
+		databaseTitle.className = 'home-people-showcase__name';
+		databaseTitle.textContent = 'Actrices y actores';
+
+		const databaseMeta = document.createElement('span');
+		databaseMeta.className = 'home-people-showcase__meta';
+		databaseMeta.textContent = 'Bio, premios y filmografía';
+
+		const databaseButton = document.createElement('span');
+		databaseButton.className = 'home-people-showcase__cta-button';
+		databaseButton.textContent = 'Entrar a personas';
+
+		databaseBody.append(databaseTitle, databaseMeta, databaseButton);
+		databaseCard.append(databaseMedia, databaseBody);
+		databaseCard.addEventListener('click', (event) => {
+			if (!isPlainLeftClick(event)) return;
+			prepareResetOnReturn();
+		});
+
+		peopleShowcaseGrid.replaceChildren(...showcaseNodes, databaseCard);
 	};
 
 	const isPlainLeftClick = (event: MouseEvent): boolean =>
