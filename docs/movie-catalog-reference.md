@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-06-25. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-06-26. Fuente: src/data/movies/*.json
 
-Total de peliculas: 946
+Total de peliculas: 947
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -196,6 +196,7 @@ Total de peliculas: 946
 | 2024 | Carry-On | carry-on-2024 | Accion | Netflix | +13 |
 | 2024 | Challengers | challengers-2024 | Comedia | Otras plataformas | +17 |
 | 2024 | Civil War | civil-war-2024 | Accion | Netflix | +16 |
+| 2024 | Color Book | color-book-2024 | Drama | Netflix | +16 |
 | 2024 | Conclave | conclave-2024 | Thriller | Prime Video | +13 |
 | 2024 | Deadpool & Wolverine | deadpool-and-wolverine-2024 | Accion | Disney Plus | +16 |
 | 2024 | Dune: Part Two | dune-part-two-2024 | Accion | Netflix | +13 |
