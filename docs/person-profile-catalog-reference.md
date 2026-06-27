@@ -1,8 +1,8 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado manualmente el 2026-04-27. Fuente: `src/data/personProfiles.ts`
+Generado manualmente el 2026-06-27. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 367
+Total de personas con ficha exclusiva: 373
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -13,6 +13,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Adria Arjona | `adria-arjona` | /personas/adria-arjona/ | Actriz | 2 | 3 |
 | Adrien Brody | `adrien-brody` | /personas/adrien-brody/ | Actor | 1 | 3 |
 | Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 2 | 3 |
+| Alec Baldwin | `alec-baldwin` | /personas/alec-baldwin/ | Actor | 3 | 3 |
 | Alan Arkin | `alan-arkin` | /personas/alan-arkin/ | Actor | 2 | 3 |
 | Alberto Ammann | `alberto-ammann` | /personas/alberto-ammann/ | Actor | 2 | 3 |
 | Alejandra Flechner | `alejandra-flechner` | /personas/alejandra-flechner/ | Actriz | 1 | 3 |
@@ -26,6 +27,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Anne Hathaway | `anne-hathaway` | /personas/anne-hathaway/ | Actriz | 2 | 3 |
 | Annette Bening | `annette-bening` | /personas/annette-bening/ | Actriz | 2 | 3 |
 | Anthony Mackie | `anthony-mackie` | /personas/anthony-mackie/ | Actor | 2 | 3 |
+| Anthony Hopkins | `anthony-hopkins` | /personas/anthony-hopkins/ | Actor | 3 | 3 |
 | Antonio Banderas | `antonio-banderas` | /personas/antonio-banderas/ | Actor | 3 | 3 |
 | Anya Taylor-Joy | `anya-taylor-joy` | /personas/anya-taylor-joy/ | Actriz | 4 | 3 |
 | Ariana DeBose | `ariana-debose` | /personas/ariana-debose/ | Actriz | 3 | 3 |
@@ -89,6 +91,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Damián Szifron | `damian-szifron` | /personas/damian-szifron/ | Director | 2 | 3 |
 | Damien Chazelle | `damien-chazelle` | /personas/damien-chazelle/ | Director | 1 | 3 |
 | Daniel Craig | `daniel-craig` | /personas/daniel-craig/ | Actor | 3 | 3 |
+| Daniel Day-Lewis | `daniel-day-lewis` | /personas/daniel-day-lewis/ | Actor | 3 | 3 |
 | Daniel Fanego | `daniel-fanego` | /personas/daniel-fanego/ | Actor | 1 | 3 |
 | Daniel Kaluuya | `daniel-kaluuya` | /personas/daniel-kaluuya/ | Actor | 1 | 3 |
 | Daniel Radcliffe | `daniel-radcliffe` | /personas/daniel-radcliffe/ | Actor | 4 | 3 |
@@ -152,6 +155,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Hailee Steinfeld | `hailee-steinfeld` | /personas/hailee-steinfeld/ | Actriz | 3 | 3 |
 | Halle Berry | `halle-berry` | /personas/halle-berry/ | Actriz | 3 | 3 |
 | Harrison Ford | `harrison-ford` | /personas/harrison-ford/ | Actor | 4 | 3 |
+| Harvey Keitel | `harvey-keitel` | /personas/harvey-keitel/ | Actor | 3 | 3 |
 | Hayao Miyazaki | `hayao-miyazaki` | /personas/hayao-miyazaki/ | Director / Guionista / Productor | 4 | 3 |
 | Héctor Alterio | `hector-alterio` | /personas/hector-alterio/ | Actor | 4 | 3 |
 | Helena Bonham Carter | `helena-bonham-carter` | /personas/helena-bonham-carter/ | Actriz | 2 | 3 |
@@ -258,6 +262,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Melissa Barrera | `melissa-barrera` | /personas/melissa-barrera/ | Actriz | 2 | 3 |
 | Mercedes Morán | `mercedes-moran` | /personas/mercedes-moran/ | Actriz | 4 | 3 |
 | Meryl Streep | `meryl-streep` | /personas/meryl-streep/ | Actriz | 3 | 4 |
+| Mia Farrow | `mia-farrow` | /personas/mia-farrow/ | Actriz | 3 | 3 |
 | Michael B. Jordan | `michael-b-jordan` | /personas/michael-b-jordan/ | Actor | 4 | 3 |
 | Michael Caine | `michael-caine` | /personas/michael-caine/ | Actor | 2 | 3 |
 | Michael Clarke Duncan | `michael-clarke-duncan` | /personas/michael-clarke-duncan/ | Actor | 2 | 3 |
@@ -315,6 +320,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Robert Pattinson | `robert-pattinson` | /personas/robert-pattinson/ | Actor | 3 | 3 |
 | Robert Redford | `robert-redford` | /personas/robert-redford/ | Director | 3 | 3 |
 | Robert Zemeckis | `robert-zemeckis` | /personas/robert-zemeckis/ | Director | 5 | 3 |
+| Robin Williams | `robin-williams` | /personas/robin-williams/ | Actor | 3 | 3 |
 | Ron Howard | `ron-howard` | /personas/ron-howard/ | Director | 3 | 3 |
 | Rosamund Pike | `rosamund-pike` | /personas/rosamund-pike/ | Actriz | 1 | 3 |
 | Rupert Grint | `rupert-grint` | /personas/rupert-grint/ | Actor | 4 | 3 |

@@ -11234,6 +11234,122 @@ const bulkRequestedProfiles = {
 				'https://www.imdb.com/name/nm0330687/',
 			],
 		},
+		{
+			slug: 'alec-baldwin',
+			name: 'Alec Baldwin',
+			profileImage: '/people/alec-baldwin-nm0000285.jpg',
+			headline:
+				'Actor de presencia filosa y voz instantaneamente reconocible, capaz de moverse entre comedia, thriller y drama adulto con la misma autoridad.',
+			birthPlace: 'Amityville, Nueva York, Estados Unidos',
+			spotlight:
+				'Su carrera importa porque nunca quedo reducida a un solo molde: Baldwin pudo ser galan de estudio, animal comico, secundario prestigioso y figura televisiva sin perder peso de estrella.',
+			biography: [
+				'Alec Baldwin nacio el 3 de abril de 1958 en Amityville, Long Island, dentro de una familia numerosa que despues tambien se volveria muy ligada a la actuacion. Antes de instalarse como actor estudio ciencias politicas y trabajo un tiempo lejos de la industria, una curva poco recta que ayuda a entender por que su presencia en pantalla nunca tuvo solamente brillo de celebridad sino tambien una cierta dureza concreta, casi de tipo que viene de otro lado. Se formo en la Tisch School of the Arts de la Universidad de Nueva York y muy pronto paso por teatro, television diurna y papeles televisivos de base industrial, el recorrido clasico de quien aprende oficio en ritmo alto y con exigencia real. Esa primera etapa no lo fabrico como idolo juvenil ingenuo: le dio tecnica, voz, disciplina y una soltura para el dialogo rapido que despues termino siendo una de sus marcas mas utiles.',
+				'El salto fuerte en cine llego a fines de los ochenta con Beetlejuice, Working Girl, Married to the Mob y The Hunt for Red October, peliculas que lo ubicaron muy rapido como una cara ideal para el Hollywood adulto de esa epoca. Tenia fisico de protagonista, pero lo interesante era que siempre habia algo apenas ironico o agresivo en la energia que llevaba al plano. No parecia un heroe limpio sino un actor que podia incomodar un poco incluso dentro del aparato mas clasico. Esa cualidad le permitio sostener thrillers, comedias y dramas con una elasticidad rara para una estrella surgida del sistema de estudio tardio. En los noventa siguio ampliando rango con Glengarry Glen Ross, The Cooler, The Edge y Malice, ademas de un trabajo de voz muy caracteristico que reforzo todavia mas su perfil publico. Baldwin nunca fue un actor de desaparicion total dentro del personaje; lo suyo siempre funciono mas como variacion inteligente sobre una presencia muy fuerte.',
+				'Donde la carrera pego un giro decisivo fue en television y comedia de alto nivel verbal. Con 30 Rock encontro un personaje perfecto para su mezcla de soberbia, velocidad y autoparodia, y Jack Donaghy lo volvio otra vez central para una generacion distinta. Ese trabajo no solo le dio multiples Emmy y Globos de Oro: tambien reorganizo la percepcion general sobre su talento comico. A partir de ahi quedo clarisimo que Baldwin podia convertir la arrogancia en musica, sostener escenas enteras desde la respiracion y entrar en registro satirico sin perder volumen humano. Esa habilidad se conecto muy bien con cineastas que necesitan actores capaces de hacer sonar las palabras con precision, desde Woody Allen hasta Martin Scorsese. En Blue Jasmine, The Aviator y To Rome with Love aparece justamente esa version suya: hombres de poder, vanidad, deseo o decadencia construidos con una mezcla muy exacta de encanto y amenaza.',
+				'En Cine Posta queda enlazado a peliculas como Beetlejuice, The Aviator y Blue Jasmine, un recorrido que resume bastante bien las distintas vidas de su carrera. Primero el actor de magnetismo frontal que podia encabezar una fantasia pop o un thriller de gran estudio; despues el interprete mas maduro, ironico y algo venenoso que encaja perfecto en relatos sobre ego, prestigio o ruina emocional. Incluso cuando trabaja en un papel relativamente corto, Baldwin suele dejar una marca clara porque domina algo que no abunda tanto como parece: el arte de convertir la diccion, el tempo y la actitud en puro acontecimiento cinematografico. Por eso sigue siendo una figura importante para el catalogo: no solo por cantidad de titulos conectados, sino porque ayuda a trazar un puente muy nitido entre el star system ochentoso, la comedia moderna de television y el cine adulto de personajes complicados.',
+			],
+			awards: [{ label: 'Primetime Emmy', category: 'Mejor actor en serie de comedia', work: '30 Rock', year: 2008 }],
+			knownFor: ['beetlejuice-1988', 'the-aviator-2004', 'blue-jasmine-2013'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q170572',
+				'https://www.imdb.com/name/nm0000285/',
+				'https://www.themoviedb.org/person/7447-alec-baldwin',
+			],
+		},
+		{
+			slug: 'anthony-hopkins',
+			name: 'Anthony Hopkins',
+			profileImage: '/people/anthony-hopkins-nm0000164.jpg',
+			headline:
+				'Actor monumental de precision tecnica y magnetismo inquietante, una de las grandes figuras del cine y el teatro britanico de las ultimas decadas.',
+			birthPlace: 'Margam, Port Talbot, Gales, Reino Unido',
+			spotlight:
+				'Lo extraordinario de Hopkins es que puede imponer autoridad total con un gesto minimo, pero tambien abrir una fragilidad enorme sin desarmar nunca la composicion.',
+			biography: [
+				'Anthony Hopkins nacio el 31 de diciembre de 1937 en Margam, cerca de Port Talbot, en Gales, y desde muy temprano encontro en la actuacion una salida para una infancia bastante dispersa y poco armonica con la escuela tradicional. Estudio en el Royal Welsh College of Music and Drama y despues continuo su formacion en la Royal Academy of Dramatic Art, un trayecto que lo acerco al gran teatro britanico en una etapa donde la disciplina clasica seguia siendo central para construir carrera. El episodio fundacional fue su ingreso al National Theatre por invitacion de Laurence Olivier, nada menos, a mediados de los sesenta. Ese dato no es accesorio: la precision del habla, la capacidad para sostener Shakespeare o textos de enorme densidad y el control absoluto del cuerpo que se ven en Hopkins vienen de esa escuela fuerte, de actor entrenado para ocupar escenario antes de conquistar la camara. Incluso cuando mas tarde se volvio estrella mundial, nunca perdio esa base teatral durisima.',
+				'Durante los setenta y ochenta fue construyendo una filmografia importante en cine y television, primero con papeles donde se notaba la fibra clasica y el peso de la voz. The Lion in Winter, Magic, The Elephant Man, The Bounty y varias producciones historicas o literarias lo consolidaron como un interprete enorme, pero todavia no como figura pop absoluta. El quiebre llego con The Silence of the Lambs. Hannibal Lecter aparece relativamente poco en pantalla y sin embargo reordena la pelicula entera con una mezcla de inteligencia, humor seco y terror perfectamente calculado. Hopkins entendio que el personaje no necesitaba exceso sino control, y por eso la actuacion quedo como una de las mas citadas del cine contemporaneo. A partir de ahi se volvio una presencia central para Hollywood sin dejar de sostener proyectos de perfil mas clasico o mas severo. Ese equilibrio entre prestigio antiguo y visibilidad masiva explica buena parte de su permanencia.',
+				'Lo notable es que la carrera nunca quedo encerrada en Lecter. Hopkins siguio mostrando un rango enorme en The Remains of the Day, Nixon, Amistad, The Father, Shadowlands, Howards End y una cantidad impresionante de trabajos donde la autoridad verbal, la melancolia o la violencia interior cambian de forma sin repetirse del todo. Puede ser un mayordomo contenido, un presidente invadido por sus fantasmas, un anciano partido por la confusion o un patriarca hiriente con igual credibilidad. En The Father logro algo todavia mas raro: una interpretacion devastadora desde la desorientacion, sin subrayados sentimentales y sin depender de la imagen de actor canonico que ya cargaba encima. Ese trabajo le dio un segundo Oscar como mejor actor y lo confirmo como el ganador de mayor edad en esa categoria. Muy pocos actores atravesaron tantas epocas sin convertirse en una cita de si mismos; Hopkins lo logro porque incluso su costado mas reconocible siempre esta puesto al servicio de la escena y no de la autoparodia.',
+				'Dentro de Cine Posta queda unido a The Silence of the Lambs, Amistad y You Will Meet a Tall Dark Stranger, tres peliculas de escalas muy distintas que igual sirven para leer una misma constante: Hopkins mejora cualquier material porque sabe dar densidad al tiempo dentro del plano. A veces lo hace con amenaza, a veces con cansancio, a veces con una ironia seca que corta el aire. Su grandeza no pasa solo por los premios o por Hannibal Lecter, sino por haber convertido una tecnica casi quirurgica en emocion viva. Cuando actua, da la sensacion de que todo esta decidido al milimetro y al mismo tiempo de que cualquier cosa podria quebrarse. Esa combinacion de control y temblor explica por que sigue siendo una de las figuras mas impresionantes que tiene cargadas el catalogo.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'The Silence of the Lambs', year: 1992 }],
+			knownFor: ['the-silence-of-the-lambs-1991', 'amistad-1997', 'you-will-meet-a-tall-dark-stranger-2010'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q65932',
+				'https://www.imdb.com/name/nm0000164/',
+				'https://www.themoviedb.org/person/4173-anthony-hopkins',
+			],
+		},
+		{
+			slug: 'daniel-day-lewis',
+			name: 'Daniel Day-Lewis',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Day-Lewis%20-%20BFI%20Southbank%20-%20Wednesday%2015th%20October%202025.jpg?width=640',
+			headline:
+				'Actor de leyenda y nivel de exigencia casi mitologico, asociado a una filmografia corta pero decisiva para entender la actuacion moderna.',
+			birthPlace: 'Kensington, Londres, Inglaterra, Reino Unido',
+			spotlight:
+				'Day-Lewis no construyo grandeza por cantidad sino por intensidad, seleccion y una entrega total que hizo de casi cada regreso un evento historico.',
+			biography: [
+				'Daniel Day-Lewis nacio el 29 de abril de 1957 en Londres, hijo del poeta Cecil Day-Lewis y de la actriz Jill Balcon, dentro de un entorno donde la cultura, la literatura y el trabajo artistico no eran adorno sino vida cotidiana. Sin embargo, su camino no fue el del heredero prolijo que simplemente continua una tradicion. Paso por conflictos escolares, trabajos manuales y una relacion bastante compleja con la idea de pertenecer, experiencias que despues muchas veces parecen filtrarse en la forma fisica, tensa y casi obstinada con la que construye personajes. Estudio en la Bristol Old Vic Theatre School y enseguida se formo tambien sobre escenario, primero en teatro y despues en la Royal Shakespeare Company, una base clasica que le dio control del lenguaje y estructura, pero que nunca limito su interes por la transformacion radical. Desde el principio se notaba que no queria resolver un papel desde el brillo facil o la simpatia inmediata: buscaba una inmersion total, una manera de vivir el personaje hasta hacerlo inseparable de su propia energia.',
+				'La primera etapa fuerte en cine incluyo Gandhi, The Bounty, My Beautiful Laundrette, A Room with a View y sobre todo My Left Foot, pelicula por la que gano su primer Oscar como mejor actor. A fines de los ochenta y comienzos de los noventa ya se habia instalado algo que despues se volveria casi folklore: el nivel de preparacion extremo, la obsesion por encontrar una fisicalidad irrepetible y la negativa a trabajar si el proyecto no justificaba ese compromiso. Pero seria un error reducirlo al famoso metodo. Lo que vuelve tan grande a Day-Lewis no es la anecdota del rodaje sino el resultado visible en pantalla: una combinacion dificil de ferocidad, precision verbal y humanidad que nunca parece calculada desde afuera. En The Last of the Mohicans, In the Name of the Father y The Age of Innocence mostro que podia moverse del romantico violento al acusado politico o al aristocrata contenido sin perder verdad ni intensidad.',
+				'La etapa posterior confirmo directamente su lugar de actor historico. Gangs of New York le dio un villano gigantesco, hecho de teatro brutal, humor retorcido y poder fisico; There Will Be Blood lo llevo a una altura casi monstruosa con Daniel Plainview, un personaje donde ambicion, resentimiento y hambre de dominio parecen devorarse el mundo entero; y Lincoln demostro que tambien podia trabajar desde la miniatura, la pausa y la fragilidad de un hombre cargado por la Historia. Con esos trabajos llego a tres Oscar como mejor actor, un record que no es solo estadistica sino prueba de una consistencia casi absurda. Lo extraordinario es que, aun convertido en referente absoluto, Day-Lewis nunca se transformo en maquina de prestigio constante. Se retiro varias veces, eligio poco y protegio su filmografia como si cada pelicula tuviera que justificar su existencia. Esa relacion estricta con el trabajo hizo que cada aparicion suya conservara el peso de un acontecimiento raro.',
+				'En Cine Posta queda vinculado a The Age of Innocence, Gangs of New York, Lincoln y Pozos de ambicion, un bloque que alcanza para leer casi toda su potencia: control clasico, transformacion total, ferocidad fisica y una inteligencia enorme para no actuar nunca por afuera del mundo de la pelicula. Hay actores muy versatiles, actores muy intensos y actores muy inteligentes; Day-Lewis esta entre los pocos que parecen reunir esas tres condiciones al maximo nivel. Incluso quienes discuten el aura construida alrededor de su metodo suelen terminar reconociendo lo mas importante: cuando aparece en pantalla, la gravedad del relato cambia. La escena se organiza distinto, el lenguaje pesa mas y el personaje deja de ser una funcion del guion para convertirse en una presencia irreductible. Por eso su ausencia larga tambien dice algo: no hace falta una filmografia inmensa cuando las peliculas que quedaron ya modificaron el mapa.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'There Will Be Blood', year: 2008 }],
+			knownFor: ['pozos-de-ambicion-2007', 'lincoln-2012', 'gangs-of-new-york-2002'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q166389',
+				'https://www.imdb.com/name/nm0000358/',
+				'https://www.themoviedb.org/person/11856-daniel-day-lewis',
+			],
+		},
+		{
+			slug: 'harvey-keitel',
+			name: 'Harvey Keitel',
+			profileImage: '/people/harvey-keitel-nm0000172.jpg',
+			headline:
+				'Actor fundamental del cine estadounidense de personaje, con una intensidad callejera y herida que marco varias etapas del Nuevo Hollywood en adelante.',
+			birthPlace: 'Brooklyn, Nueva York, Estados Unidos',
+			spotlight:
+				'Keitel encarna como pocos la mezcla de dureza, culpa y vulnerabilidad que hizo del cine criminal y urbano un territorio emocionalmente mas espeso.',
+			biography: [
+				'Harvey Keitel nacio el 13 de mayo de 1939 en Brooklyn, hijo de una familia judia trabajadora, y antes de dedicarse a la actuacion estuvo en los Marines de Estados Unidos. Esa experiencia previa, sumada a la vida de barrio y a una formacion posterior con Stella Adler y Lee Strasberg, ayuda bastante a entender su energia en pantalla: Keitel nunca parece un actor colocado con prolijidad sobre un decorado, sino un cuerpo que trae historia, friccion y calle al interior de la escena. A comienzos de los sesenta empezo a moverse en teatro y en la escena independiente neoyorquina, justo en un momento donde el cine americano estaba por cambiar de tono. Su llegada no fue la del galan tradicional sino la del actor de nervio crudo, muy util para personajes que viven entre culpa, violencia, deseo y contradiccion moral. Esa materia prima lo iba a volver indispensable para varios directores que necesitaban verdad rugosa y no simple fotogenia.',
+				'La sociedad decisiva fue con Martin Scorsese. Whos That Knocking at My Door, Mean Streets, Alice Doesnt Live Here Anymore y mas tarde The Last Temptation of Christ muestran no solo una colaboracion frecuente, sino una afinidad profunda entre actor y cineasta. Keitel entendia perfecto ese universo donde la masculinidad se mezcla con religion, culpa, impulso autodestructivo y deseo de redencion. En Mean Streets, por ejemplo, no interpreta solo a un tipo peligroso: hace visible la confusion interior de una generacion entera de personajes urbanos. Esa intensidad no desaparecio cuando salio de la orbita de Scorsese. En los ochenta y noventa fue pieza clave de cineastas muy distintos, desde Jane Campion hasta Abel Ferrara y Quentin Tarantino. The Piano, Bad Lieutenant y Reservoir Dogs muestran tres versiones suyas igual de potentes: el hombre que contiene, el hombre que se pudre por dentro y el profesional criminal que arrastra toda su biografia en la forma de mirar.',
+				'Lo admirable de Keitel es que nunca se volvio una caricatura de actor duro. Incluso cuando interpreta tipos violentos o moralmente muy comprometidos, casi siempre deja pasar una fragilidad que los vuelve humanos antes que iconicos. Esa cualidad fue crucial tambien para su regreso mas visible al centro del cine popular en los noventa, con Reservoir Dogs y Pulp Fiction como mojones indirectos de una recuperacion fuerte de su figura. Al mismo tiempo siguio trabajando en cine independiente, europeo y de autor, como si nunca hubiera querido elegir entre prestigio artistico y presencia pop. Su filmografia esta llena de secundarios inolvidables justamente porque sabe cargar una escena de pasado sin explicarlo todo. Hay actores que llenan el encuadre con carisma; Keitel lo llena con memoria, cansancio, deseo y una sensacion de peligro que no necesita volverse histerica para hacerse sentir.',
+				'En Cine Posta queda enlazado a Mean Streets, Reservoir Dogs, The Last Temptation of Christ, Alice Doesnt Live Here Anymore y Street Scenes, una combinacion que resume bien su importancia. Estan el actor de la Nueva York quebrada, el interprete indispensable del cine criminal moderno, el rostro de la culpa religiosa y tambien el hombre capaz de humanizar un relato con apenas un par de silencios. Pocos nombres ayudan tanto a leer la evolucion del cine estadounidense entre el Nuevo Hollywood, el indie de los noventa y cierto prestigio internacional posterior. Keitel no necesito convertirse en estrella ornamental porque su lugar siempre fue otro: el del actor que da espesor inmediato, que parece haber vivido diez años mas que el personaje antes incluso de decir una linea. Esa calidad, casi imposible de falsificar, lo vuelve una ausencia demasiado grande cuando no esta cargado en un catalogo serio de cine.',
+			],
+			awards: [{ label: 'Independent Spirit Award', category: 'Mejor actor', work: 'Bad Lieutenant', year: 1993 }],
+			knownFor: ['mean-streets-1973', 'reservoir-dogs-1992', 'the-last-temptation-of-christ-1988'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q191132',
+				'https://www.imdb.com/name/nm0000172/',
+				'https://www.themoviedb.org/person/1037-harvey-keitel',
+			],
+		},
+		{
+			slug: 'robin-williams',
+			name: 'Robin Williams',
+			profileImage: '/people/robin-williams-nm0000245.jpg',
+			headline:
+				'Comediante, actor y fuerza expresiva desbordante que pudo pasar de la euforia mas fisica a la melancolia mas desnuda sin perder verdad.',
+			birthPlace: 'Chicago, Illinois, Estados Unidos',
+			spotlight:
+				'Williams fue mucho mas que velocidad comica: debajo del torbellino habia un interprete de enorme ternura, inteligencia y dolor latente.',
+			biography: [
+				'Robin Williams nacio el 21 de julio de 1951 en Chicago y crecio entre Illinois y California, dentro de una infancia donde el humor, la imitacion y la fantasia funcionaron muy temprano como refugio personal. Se formo primero en Claremont y despues en Juilliard, donde compartio generacion con Christopher Reeve y fue alentado por John Houseman, que entendio rapido que habia algo fuera de escala en esa velocidad mental. Antes de ser estrella de cine ya era un fenomeno en stand-up, capaz de pasar de una voz a otra, de improvisar mundos enteros y de cambiar de tema a una velocidad que parecia imposible de seguir. Esa energia lo hizo explotar en television con Mork & Mindy, pero tambien corria el riesgo de volverlo solo un numero virtuoso. Lo admirable de Williams es que nunca dejo que el talento para la hiperactividad comica lo encerrara. Muy pronto empezo a buscar zonas donde el dolor, la fragilidad y la soledad pudieran convivir con el humor sin que una cosa anulara a la otra.',
+				'En cine construyo una de las trayectorias mas queridas y desparejas en el mejor sentido: Popeye, Good Morning, Vietnam, Dead Poets Society, The Fisher King, Aladdin, Mrs. Doubtfire, Jumanji, Good Will Hunting, Insomnia, One Hour Photo y muchas mas muestran a un actor que iba de la exuberancia absoluta al repliegue inquietante sin perder identidad. Pocos interpretes populares pudieron ser tan familiares para varias generaciones y al mismo tiempo tan raros cuando el material lo pedia. En Good Morning, Vietnam y Mrs. Doubtfire convertia la improvisacion en combustible emocional; en Dead Poets Society y Good Will Hunting encontraba una calidez muy directa; en Insomnia y One Hour Photo dejaba ver un costado oscuro, contenido y profundamente inquietante. Esa amplitud no salia de un truco tecnico sino de una sensibilidad muy expuesta. Williams parecia vivir cada impulso con el cuerpo entero, y por eso tanto la alegria como la tristeza llegaban con una intensidad inmediata.',
+				'El Oscar por Good Will Hunting reconocio finalmente algo que el publico ya sabia: detras del comediante genial habia un actor dramatico extraordinario. Pero incluso esa division entre comediante y actor serio le queda corta. Williams era grande justamente porque mezclaba ambas dimensiones. Podia hacer reir mientras dejaba ver una pena de fondo, o quebrar una escena sentimental con una chispa de humanidad concreta que evitaba el golpe bajo. Su voz, su elasticidad y su capacidad para improvisar quedaron grabadas en la cultura pop, pero su legado mas durable esta tambien en la generosidad con la que escuchaba a otros personajes dentro de la escena. En papeles de maestro, medico, padre, terapeuta, impostor o payaso triste siempre aparecia una voluntad de cuidado, incluso cuando el personaje estaba roto o haciendo dano. Esa mezcla de exuberancia y compasion es dificil de encontrar con tanta potencia en un mismo artista.',
+				'En Cine Posta queda conectado a Hook, Good Will Hunting e Insomnia, tres peliculas que muestran bien sus registros mas fuertes: la fantasia popular, el drama afectivo y la zona oscura del actor contenido. Faltaria medio mapa de su carrera para abarcarlo entero, claro, pero incluso con esas entradas se ve algo esencial: Williams hacia que todo pareciera mas vivo, mas vulnerable y un poco mas imprevisible. No era solo una estrella querida ni solo un improvisador descomunal, sino un interprete que entendia muy bien el valor emocional del riesgo. Su presencia podia empujar una pelicula hacia la ternura, el caos, la tristeza o la rareza en cuestion de segundos. Que un catalogo de cine tenga ya varias peliculas clave suyas y no tuviera todavia una bio completa era una deuda grande. Cargarlo bien no es un gesto decorativo: es reconocer a una de las figuras mas decisivas y queridas del entretenimiento moderno.',
+			],
+			awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'Good Will Hunting', year: 1998 }],
+			knownFor: ['good-will-hunting-1997', 'hook-1991', 'insomnia-2002'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q83338',
+				'https://www.imdb.com/name/nm0000245/',
+				'https://www.themoviedb.org/person/2157-robin-williams',
+			],
+		},
 	]),
 	...buildCatalogBackedProfiles(globalActressDefaults, [
 		{
@@ -11579,6 +11695,29 @@ const bulkRequestedProfiles = {
 				'https://en.wikipedia.org/wiki/Emily_Watson',
 				'https://www.wikidata.org/wiki/Q268735',
 				'https://www.imdb.com/name/nm0914941/',
+			],
+		},
+		{
+			slug: 'mia-farrow',
+			name: 'Mia Farrow',
+			profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pulitzer2018-mia-farrow-20180530-wp.jpg?width=640',
+			headline:
+				'Actriz de fragilidad electrica y enorme inteligencia emocional, central para el cine estadounidense entre la modernidad de los sesenta y el prestigio adulto de los ochenta.',
+			birthPlace: 'Los Angeles, California, Estados Unidos',
+			spotlight:
+				'Farrow construyo una pantalla singularisima: parece eterea y al mismo tiempo filosa, vulnerable pero nunca pasiva, luminosa aunque siempre al borde de algo inquietante.',
+			biography: [
+				'Mia Farrow nacio el 9 de febrero de 1945 en Los Angeles dentro de una familia atravesada de lleno por Hollywood: su padre era el director John Farrow y su madre la actriz Maureen O Sullivan. Esa procedencia podria hacer pensar en un ingreso simple a la industria, pero en su caso lo interesante fue como muy rapido se desvio del modelo clasico de estrella heredera. Su imagen delgada, su corte de pelo celebre y una mezcla muy particular de inocencia, nervio y extraneza la volvieron una presencia absolutamente moderna para el cine de fines de los sesenta. Antes de transformarse en un icono internacional ya habia ganado visibilidad con Peyton Place en television, una experiencia importante porque la puso frente a un publico masivo y le dio el entrenamiento de ritmo industrial. Sin embargo, lo que la diferenciaba era menos el oficio de serie que la cualidad de misterio que llevaba al encuadre: Farrow parecia siempre un poco adelantada o desplazada respecto del mundo que la rodeaba.',
+				'El gran punto de quiebre fue Rosemarys Baby. En esa pelicula de Roman Polanski logro algo dificil de repetir: convertir la fragilidad fisica y la confusion emocional en el centro de un horror absolutamente concreto. Su Rosemary nunca es solo victima; tambien es una inteligencia sitiada, una mujer que percibe demasiado tarde que toda su vida social y domestica esta organizada para traicionarla. Esa actuacion la dejo ligada para siempre al terror psicologico, pero seria injusto reducirla a un solo papel. Durante los setenta y, sobre todo, los ochenta desarrollo una filmografia riquisima que incluye dramas, comedias sofisticadas, peliculas intimistas y relatos de observacion emocional muy fina. En ese recorrido, su larga colaboracion con Woody Allen fue decisiva. Zelig, Broadway Danny Rose, The Purple Rose of Cairo, Hannah and Her Sisters, Radio Days, September, Another Woman, Crimes and Misdemeanors, Alice, Husbands and Wives y Shadows and Fog la mostraron como una interprete capaz de pasar del humor seco a la melancolia, del romanticismo al desgarro, casi siempre con una precision desarmante.',
+				'Lo mas fuerte de Farrow como actriz es que nunca trabaja desde una contundencia obvia. Su potencia nace de lo que parece fragil, interrumpido o apenas a punto de deshacerse. Por eso funciona tan bien en personajes que dudan, que desean salir de su vida, que se descubren engañados o que sobreviven con una mezcla de sensibilidad extrema y lucidez amarga. En Another Woman, por ejemplo, alcanza un registro de introspeccion adulta muy distinto del rostro joven que habia quedado fijado en la cultura pop. En Hannah and Her Sisters y The Purple Rose of Cairo muestra otra de sus grandes virtudes: la capacidad para hacer convivir humor, tristeza y fantasia sin que nada se vuelva subrayado. Farrow puede parecer leve, pero debajo de esa ligereza hay una construccion muy exacta de tono, respiracion y vulnerabilidad. Muchas actrices fueron iconos de una epoca; ella ademas encontro la forma de envejecer artisticamente dentro del cine de autor y de sostener un misterio propio incluso cuando la industria cambiaba por completo alrededor suyo.',
+				'En Cine Posta su falta era demasiado visible porque una zona entera del catalogo de Woody Allen depende de su presencia. Hannah and Her Sisters, The Purple Rose of Cairo, Alice, Crimes and Misdemeanors, Another Woman, Radio Days y varias mas no se entienden del todo sin la clase de sensibilidad que Farrow les aporta. Incluso cuando una pelicula no esta narrada desde su punto de vista, ella suele funcionar como conciencia afectiva del relato o como figura que deja ver lo que el entorno intenta disimular. Su importancia historica no se reduce al imaginario de los sesenta ni a un romance cinefilo con cierto cine neoyorquino: Farrow sigue siendo una de las grandes actrices estadounidenses de interioridad quebradiza, alguien capaz de volver inolvidable la incomodidad, la ternura o el desamparo. Sumarla con bio completa era un faltante critico porque ordena buena parte de la constelacion adulta y sentimental del sitio.',
+			],
+			awards: [{ label: 'BAFTA', category: 'Nominacion a mejor actriz', work: 'The Purple Rose of Cairo', year: 1986 }],
+			knownFor: ['the-purple-rose-of-cairo-1985', 'hannah-and-her-sisters-1986', 'alice-1990'],
+			referenceUrls: [
+				'https://www.wikidata.org/wiki/Q202725',
+				'https://www.imdb.com/name/nm0001201/',
+				'https://www.themoviedb.org/person/12021-mia-farrow',
 			],
 		},
 	]),
