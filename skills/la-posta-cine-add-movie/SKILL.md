@@ -509,8 +509,10 @@ Do not overwrite existing entries without explicit user authorization.
 Write `review` by combining user feedback + external review enrichment:
 
 - Castellano rioplatense
+- Escritura 100% manual, hecha en el momento por la IA para esa película puntual
 - Honest, colloquial tone
 - Write it manually from scratch for that movie. Do not use templates, fill-in-the-blank structures, or recycled sentence skeletons from previous loads.
+- Zero plantillado: no usar borradores base, snippets heredados, "cadáver exquisito" de frases viejas, ni párrafos reacomodados de otra reseña.
 - Never arm the review around reusable verdict scaffolds like `ZAFA y ...`, `PASABLE para ...`, `RECOMENDADA si ...` or any closing that could be pasted onto another title with one noun swap.
 - Never copy the badge into the prose: `verdictLabel` is for UI only and must not appear verbatim inside `review`.
 - Max 5 lines when user provides clear feedback
@@ -527,9 +529,11 @@ Write `review` by combining user feedback + external review enrichment:
 - In multi-movie batches, vary sentence rhythm and vocabulary so entries do not read like a template.
 - Do not reuse stock closing lines across different movies in the same batch (for example repeating `Queda en ese punto medio que no molesta.`).
 - In batch mode, run a final anti-duplication pass at sentence level: no full sentence may appear verbatim in more than one review.
+- In batch mode, stop after each review and ask yourself whether the exact paragraph rhythm or argumentative arc could be reused in the next title. If yes, rewrite before continuing.
 - If a review sounds too generic, rewrite it with movie-specific angle (tone, pacing, performances, direction, genre execution) without spoilers.
 - Do not sign off on a review that could be copy-pasted onto another movie by changing only title, cast, or verdict.
 - Reviews that are too short to carry a movie-specific angle are not acceptable. If the first draft sounds like a card note instead of editorial copy, rewrite it before validation.
+- Treat "written by the AI by hand" as the permanent default behavior for this skill, even when the user does not restate it.
 - Enforce proper Spanish orthography in review text: use `ñ` and accent marks when applicable (for example `reseñas`, not `resenas`).
 - Do not degrade Spanish words to ASCII-only variants in user-facing review copy.
 
@@ -674,7 +678,7 @@ Return all of the following:
 - [ ] No Share UI/assets modified during a content-only load; movie share links derive automatically from slug/canonical URL
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
-- [ ] Review written manually from scratch, without template scaffolds, stock closings, or robotized phrasing that could fit another movie unchanged
+- [ ] Review written manually from scratch by the AI for this exact movie, without template scaffolds, stock closings, inherited paragraph skeletons, or robotized phrasing that could fit another movie unchanged
 - [ ] Review does not lean on verdict-led stock lines (`ZAFA y...`, `PASABLE para...`, `SE DEJA VER si...`) as opener or closer
 - [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 6 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources

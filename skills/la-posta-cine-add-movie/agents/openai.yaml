@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Add Movie"
+  short_description: "Carga una película nueva sin tocar código del sitio"
+  default_prompt: "Usa $la-posta-cine-add-movie en modo silencioso. Toda review debe escribirse 100% a mano por la IA para esa pelicula puntual, desde cero, en castellano rioplatense, sin templates, sin frases heredadas, sin repetir esqueletos de parrafo y sin meter el verdictLabel dentro del texto. Si la reseña suena intercambiable con otra, reescribila antes de validar."

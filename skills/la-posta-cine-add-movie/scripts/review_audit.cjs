@@ -38,6 +38,12 @@ const GENERATED_REVIEW_MARKERS = [
 	'igual entra facil por ritmo elenco o por una idea que',
 	'puede ser mas seca o mas ligera segun el caso',
 	'quiza no sea su titulo mas arrollador pero se sostiene con autoridad de principio a fin',
+	'lo mejor esta en como la pelicula',
+	'no reinventa el genero pero',
+	'tiene personalidad propia',
+	'cuando el relato se pone mas convencional',
+	'si ya estabas adentro',
+	'para el que viene acompanando la saga',
 ];
 const VERDICT_LED_OPENERS = [
 	'zafa',

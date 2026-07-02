@@ -147,6 +147,7 @@ Rules:
 - Do not ask the user for permission between scout and add unless the candidate is ambiguous.
 - Do not pass a duplicate candidate into the add workflow.
 - Do not hand off without exact release-date evidence unless every trustworthy source is still year-only.
+- The downstream review must still be handwritten from scratch by the AI for that exact title: no templates, no recycled paragraphs, no batch scaffolds.
 
 ## Handoff to cartelera revalidation workflow
 
