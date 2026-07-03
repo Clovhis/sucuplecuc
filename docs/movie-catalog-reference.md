@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-02. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-03. Fuente: src/data/movies/*.json
 
-Total de peliculas: 949
+Total de peliculas: 950
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -35,6 +35,7 @@ Total de peliculas: 949
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
 | 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
 | 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Otras plataformas | +17 |
+| 2026 | Enola Holmes 3 | enola-holmes-3-2026 | Aventura | Netflix | +13 |
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | GOAT | goat-2026 | Animacion | Otras plataformas | ATP |
@@ -48,10 +49,10 @@ Total de peliculas: 949
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
 | 2026 | La Odisea | the-odyssey-2026 | Aventura | Otras plataformas | +13 |
-| 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | Otras plataformas | +17 |
+| 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
-| 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Otras plataformas | ATP |
+| 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Cine | +16 |
 | 2026 | Leviticus: Ritual de sangre | leviticus-ritual-de-sangre-2026 | Terror | Cine | +17 |
 | 2026 | Los bobos | los-bobos-2026 | Thriller | Cine | +16 |
@@ -76,7 +77,7 @@ Total de peliculas: 949
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video | +18 |
 | 2026 | Primate | primate-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Protector | protector-2026 | Accion | Otras plataformas | +16 |
-| 2026 | Proyecto Fin Del Mundo | project-hail-mary-2026 | Ciencia ficcion | Otras plataformas | +13 |
+| 2026 | Proyecto Salvación | project-hail-mary-2026 | Ciencia ficcion | Prime Video | +13 |
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
