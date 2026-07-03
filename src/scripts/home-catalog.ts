@@ -290,6 +290,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		const databaseMedia = document.createElement('span');
 		databaseMedia.className = 'home-people-showcase__portrait home-people-showcase__portrait--cta';
+		databaseMedia.append(createDatabaseGraphic());
 
 		const databaseTag = document.createElement('span');
 		databaseTag.className = 'home-people-showcase__cta-tag';
@@ -332,6 +333,53 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	const isPlainLeftClick = (event: MouseEvent): boolean =>
 		event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+
+	const createDatabaseGraphic = (): HTMLElement => {
+		const graphic = document.createElement('span');
+		graphic.className = 'home-people-showcase__cta-graphic';
+		graphic.setAttribute('aria-hidden', 'true');
+		graphic.innerHTML = `
+			<svg class="home-people-showcase__cta-graphic-svg" viewBox="0 0 160 124" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<linearGradient id="homePeopleRack" x1="8" y1="0" x2="104" y2="0" gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#6cb1ff" />
+						<stop offset="1" stop-color="#4f86f8" />
+					</linearGradient>
+					<linearGradient id="homePeopleDisk" x1="82" y1="26" x2="151" y2="106" gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#ffe78f" />
+						<stop offset="0.55" stop-color="#ffd44d" />
+						<stop offset="1" stop-color="#f5b800" />
+					</linearGradient>
+				</defs>
+				<g stroke="#070b12" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+					<rect x="8" y="10" width="98" height="24" rx="9" fill="url(#homePeopleRack)" />
+					<rect x="8" y="40" width="98" height="24" rx="9" fill="url(#homePeopleRack)" />
+					<rect x="8" y="70" width="98" height="24" rx="9" fill="url(#homePeopleRack)" />
+					<ellipse cx="118" cy="44" rx="34" ry="12" fill="#ffd54d" />
+					<path d="M84 44v42c0 6.6 15.2 12 34 12s34-5.4 34-12V44" fill="url(#homePeopleDisk)" />
+					<path d="M84 65c0 6.6 15.2 12 34 12s34-5.4 34-12" fill="none" />
+					<path d="M84 86c0 6.6 15.2 12 34 12s34-5.4 34-12" fill="none" />
+					<path d="M44 18h38" />
+					<path d="M44 48h38" />
+					<path d="M44 78h38" />
+				</g>
+				<g fill="#070b12">
+					<rect x="95" y="55" width="6" height="6" rx="1.5" />
+					<rect x="95" y="76" width="6" height="6" rx="1.5" />
+					<rect x="95" y="97" width="6" height="6" rx="1.5" />
+				</g>
+				<g>
+					<circle class="home-people-showcase__cta-led home-people-showcase__cta-led--1" cx="22" cy="22" r="4.5" fill="#ff8d6d" />
+					<circle class="home-people-showcase__cta-led home-people-showcase__cta-led--2" cx="36" cy="22" r="4.5" fill="#21d5d2" />
+					<circle class="home-people-showcase__cta-led home-people-showcase__cta-led--3" cx="22" cy="52" r="4.5" fill="#ff8d6d" />
+					<circle class="home-people-showcase__cta-led home-people-showcase__cta-led--4" cx="36" cy="52" r="4.5" fill="#21d5d2" />
+					<circle class="home-people-showcase__cta-led home-people-showcase__cta-led--5" cx="22" cy="82" r="4.5" fill="#ff8d6d" />
+					<circle class="home-people-showcase__cta-led home-people-showcase__cta-led--6" cx="36" cy="82" r="4.5" fill="#21d5d2" />
+				</g>
+			</svg>
+		`;
+		return graphic;
+	};
 
 	const getChipLabel = (
 		chips: HTMLButtonElement[],

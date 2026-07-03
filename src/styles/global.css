@@ -1662,9 +1662,12 @@ img {
 
 .home-people-showcase__portrait--cta {
 	display: grid;
+	position: relative;
 	align-content: end;
+	isolation: isolate;
 	gap: 0.45rem;
 	padding: 0.88rem;
+	padding-inline-end: clamp(5.2rem, 36%, 7rem);
 	aspect-ratio: 16 / 10;
 	border-color: rgba(255, 176, 137, 0.28);
 	background:
@@ -1672,10 +1675,91 @@ img {
 		linear-gradient(135deg, rgba(255, 176, 137, 0.18), rgba(30, 38, 66, 0.92));
 }
 
+.home-people-showcase__portrait--cta > :not(.home-people-showcase__cta-graphic) {
+	position: relative;
+	z-index: 1;
+}
+
 .home-people-showcase__card--cta:hover .home-people-showcase__portrait,
 .home-people-showcase__card--cta:focus-visible .home-people-showcase__portrait {
 	border-color: rgba(255, 176, 137, 0.58);
 	box-shadow: 0 18px 32px rgba(8, 12, 22, 0.34);
+}
+
+.home-people-showcase__cta-graphic {
+	position: absolute;
+	inset-block-start: 0.36rem;
+	inset-inline-end: 0.42rem;
+	inline-size: clamp(4.75rem, 39%, 6.7rem);
+	pointer-events: none;
+	filter: drop-shadow(0 10px 14px rgba(7, 11, 18, 0.28));
+	transform-origin: center;
+	transition: transform 0.18s ease;
+}
+
+.home-people-showcase__card--cta:hover .home-people-showcase__cta-graphic,
+.home-people-showcase__card--cta:focus-visible .home-people-showcase__cta-graphic {
+	transform: translateY(-2px) rotate(-2deg);
+}
+
+.home-people-showcase__cta-graphic-svg {
+	display: block;
+	inline-size: 100%;
+	block-size: auto;
+}
+
+.home-people-showcase__cta-led {
+	opacity: 0.22;
+	transform-box: fill-box;
+	transform-origin: center;
+	animation: home-people-showcase-led-blink 1.8s steps(2, end) infinite;
+}
+
+.home-people-showcase__cta-led--1 {
+	animation-delay: 0.08s;
+}
+
+.home-people-showcase__cta-led--2 {
+	animation-delay: 0.42s;
+}
+
+.home-people-showcase__cta-led--3 {
+	animation-delay: 0.18s;
+}
+
+.home-people-showcase__cta-led--4 {
+	animation-delay: 0.66s;
+}
+
+.home-people-showcase__cta-led--5 {
+	animation-delay: 0.3s;
+}
+
+.home-people-showcase__cta-led--6 {
+	animation-delay: 0.92s;
+}
+
+@keyframes home-people-showcase-led-blink {
+	0%,
+	100% {
+		opacity: 0.18;
+		transform: scale(0.92);
+	}
+
+	18%,
+	22%,
+	54%,
+	58%,
+	88% {
+		opacity: 1;
+		transform: scale(1.08);
+	}
+
+	40%,
+	72% {
+		opacity: 0.34;
+		transform: scale(0.96);
+	}
 }
 
 .home-people-showcase__image {
@@ -1766,6 +1850,15 @@ img {
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	font-family: var(--font-mono);
+	box-shadow:
+		0 0 0 1px rgba(255, 176, 137, 0.06),
+		0 8px 18px rgba(7, 11, 18, 0.18);
+	transition:
+		transform 0.16s ease,
+		box-shadow 0.16s ease,
+		border-color 0.16s ease,
+		background-color 0.16s ease,
+		color 0.16s ease;
 }
 
 .home-people-showcase__cta-button::after {
@@ -1777,6 +1870,26 @@ img {
 	border-right: 1px solid currentColor;
 	opacity: 0.8;
 	transform: rotate(45deg);
+}
+
+.home-people-showcase__card--cta:hover .home-people-showcase__cta-button,
+.home-people-showcase__card--cta:focus-visible .home-people-showcase__cta-button {
+	border-color: rgba(255, 196, 162, 0.62);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 176, 137, 0.14));
+	color: #fff8f2;
+	box-shadow:
+		0 0 0 1px rgba(255, 196, 162, 0.16),
+		0 0 18px rgba(255, 176, 137, 0.18),
+		0 10px 24px rgba(7, 11, 18, 0.24);
+	transform: translateY(-1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.home-people-showcase__cta-graphic,
+	.home-people-showcase__cta-led {
+		animation: none;
+		transform: none;
+	}
 }
 
 .editorial-rankings {
@@ -2572,17 +2685,25 @@ img {
 	font-family: var(--font-mono);
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	box-shadow:
+		0 0 0 1px rgba(255, 188, 144, 0.08),
+		0 8px 18px rgba(7, 11, 18, 0.16);
 	transition:
 		transform 0.18s ease,
 		border-color 0.18s ease,
-		box-shadow 0.18s ease;
+		box-shadow 0.18s ease,
+		background-color 0.18s ease,
+		color 0.18s ease;
 }
 
 .postometro-teaser__link:hover,
 .postometro-teaser__link:focus-visible {
 	transform: translateY(-2px);
 	border-color: rgba(255, 188, 144, 0.72);
-	box-shadow: 0 16px 28px rgba(7, 11, 18, 0.24);
+	box-shadow:
+		0 0 0 1px rgba(255, 205, 178, 0.14),
+		0 0 18px rgba(255, 176, 137, 0.16),
+		0 14px 28px rgba(7, 11, 18, 0.24);
 }
 
 @keyframes postometro-teaser-sway {
