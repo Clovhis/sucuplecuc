@@ -51,6 +51,7 @@ const peopleEntries = getPersonProfiles()
 const connectedMovieCount = new Set(
 	peopleEntries.flatMap((entry) => entry.filmography.map((movie) => movie.movieSlug)),
 ).size;
+const unknownAgeCount = peopleEntries.filter((entry) => typeof entry.age !== 'number').length;
 const roleOptions = Array.from(
 	new Map(
 		peopleEntries.flatMap((entry) =>
@@ -69,6 +70,33 @@ const nationalityOptions = Array.from(
 )
 	.map(([value, label]) => ({ value, label }))
 	.sort((left, right) => left.label.localeCompare(right.label, 'es'));
+const sortMetricOptions = [
+	{ value: 'alpha', label: 'Nombre' },
+	{ value: 'age', label: 'Edad' },
+	{ value: 'catalog', label: 'Catálogo' },
+	{ value: 'awards', label: 'Premios' },
+] as const;
+const ageOptions = [
+	{ value: '', label: 'Todas' },
+	{ value: 'under-40', label: 'Menos de 40' },
+	{ value: '40-54', label: '40 a 54' },
+	{ value: '55-69', label: '55 a 69' },
+	{ value: '70-plus', label: '70 o más' },
+] as const;
+const catalogOptions = [
+	{ value: '', label: 'Todos' },
+	{ value: '1-2', label: '1 a 2 pelis' },
+	{ value: '3-5', label: '3 a 5 pelis' },
+	{ value: '6-9', label: '6 a 9 pelis' },
+	{ value: '10-plus', label: '10 o más' },
+] as const;
+const awardsOptions = [
+	{ value: '', label: 'Todos' },
+	{ value: 'with-awards', label: 'Con premios' },
+	{ value: '1', label: '1 premio' },
+	{ value: '2-3', label: '2 a 3 premios' },
+	{ value: '4-plus', label: '4 o más' },
+] as const;
 const pageTitle = 'Personas de Cine Posta: actores, directores y perfiles';
 const pageDescription = `Explorá ${peopleEntries.length} perfiles de actores, directores y figuras del catálogo de Cine Posta, conectados con ${connectedMovieCount} películas fichadas.`;
 const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pageDescription);
@@ -135,98 +163,144 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 					</p>
 				</div>
 
-				<div class="people-index__field">
-					<label class="people-index__field-label" for="people-sort">Ordenar por</label>
-					<select class="people-index__select" id="people-sort" name="orden" data-people-filter="sort">
-						<option value="alpha-asc">Nombre A-Z</option>
-						<option value="alpha-desc">Nombre Z-A</option>
-						<option value="age-desc">Edad: mayor a menor</option>
-						<option value="age-asc">Edad: menor a mayor</option>
-						<option value="catalog-desc">Más pelis conectadas</option>
-						<option value="catalog-asc">Menos pelis conectadas</option>
-						<option value="awards-desc">Más premios destacados</option>
-						<option value="awards-asc">Menos premios destacados</option>
-					</select>
+				<section class="people-index__control-block" aria-labelledby="people-sort-label">
+					<div class="people-index__control-head">
+						<p class="people-index__field-label" id="people-sort-label">Orden</p>
+						<p class="people-index__control-hint">
+							Elegí el criterio y tocá la flecha para invertirlo al instante.
+						</p>
+					</div>
+					<div class="people-index__sort-bar">
+						<div class="people-index__segmented" role="group" aria-labelledby="people-sort-label">
+							{
+								sortMetricOptions.map((option) => (
+									<button
+										class="people-index__segmented-button"
+										type="button"
+										data-people-sort-key={option.value}
+										aria-pressed={option.value === 'alpha' ? 'true' : 'false'}
+									>
+										{option.label}
+									</button>
+								))
+							}
+						</div>
+						<button class="people-index__direction-button" type="button" data-people-sort-direction>
+							<span class="people-index__direction-icon" data-people-sort-direction-icon aria-hidden="true">
+								↑
+							</span>
+							<span data-people-sort-direction-label>A-Z</span>
+						</button>
+						<input type="hidden" name="orden" value="alpha-asc" data-people-filter="sort" />
+					</div>
+				</section>
+
+				<div class="people-index__filter-grid">
+					<div class="people-index__field">
+						<label class="people-index__field-label" for="people-role">Rol</label>
+						<select class="people-index__select" id="people-role" name="rol" data-people-filter="role">
+							<option value="">Todos</option>
+							{
+								roleOptions.map((option) => (
+									<option value={option.value}>{option.label}</option>
+								))
+							}
+						</select>
+					</div>
+
+					<div class="people-index__field">
+						<label class="people-index__field-label" for="people-nationality">Nacionalidad</label>
+						<select
+							class="people-index__select"
+							id="people-nationality"
+							name="nacionalidad"
+							data-people-filter="nationality"
+						>
+							<option value="">Todas</option>
+							{
+								nationalityOptions.map((option) => (
+									<option value={option.value}>{option.label}</option>
+								))
+							}
+						</select>
+					</div>
 				</div>
 
-				<div class="people-index__field">
-					<label class="people-index__field-label" for="people-role">Rol</label>
-					<select class="people-index__select" id="people-role" name="rol" data-people-filter="role">
-						<option value="">Todos</option>
-						{
-							roleOptions.map((option) => (
-								<option value={option.value}>{option.label}</option>
-							))
-						}
-					</select>
+				<div class="people-index__chip-panels">
+					<fieldset class="people-index__chip-group">
+						<legend class="people-index__field-label">Edad</legend>
+						<div class="people-index__chip-list" role="group" aria-label="Filtrar por edad">
+							{
+								ageOptions.map((option) => (
+									<button
+										class="people-index__chip-button"
+										type="button"
+										data-people-chip-group="age"
+										data-people-chip-value={option.value}
+										aria-pressed={option.value === '' ? 'true' : 'false'}
+									>
+										{option.label}
+									</button>
+								))
+							}
+						</div>
+						<p class="people-index__field-hint">
+							{unknownAgeCount > 0
+								? `${unknownAgeCount} perfiles sin edad quedan al final si ordenás por edad.`
+								: 'Todas las fichas del listado tienen edad visible.'}
+						</p>
+						<input type="hidden" name="edad" value="" data-people-filter="age" />
+					</fieldset>
+
+					<fieldset class="people-index__chip-group">
+						<legend class="people-index__field-label">Catálogo</legend>
+						<div class="people-index__chip-list" role="group" aria-label="Filtrar por tamaño de catálogo">
+							{
+								catalogOptions.map((option) => (
+									<button
+										class="people-index__chip-button"
+										type="button"
+										data-people-chip-group="catalog"
+										data-people-chip-value={option.value}
+										aria-pressed={option.value === '' ? 'true' : 'false'}
+									>
+										{option.label}
+									</button>
+								))
+							}
+						</div>
+						<input type="hidden" name="catalogo" value="" data-people-filter="catalog" />
+					</fieldset>
+
+					<fieldset class="people-index__chip-group">
+						<legend class="people-index__field-label">Premios</legend>
+						<div class="people-index__chip-list" role="group" aria-label="Filtrar por premios destacados">
+							{
+								awardsOptions.map((option) => (
+									<button
+										class="people-index__chip-button"
+										type="button"
+										data-people-chip-group="awards"
+										data-people-chip-value={option.value}
+										aria-pressed={option.value === '' ? 'true' : 'false'}
+									>
+										{option.label}
+									</button>
+								))
+							}
+						</div>
+						<input type="hidden" name="premios" value="" data-people-filter="awards" />
+					</fieldset>
 				</div>
 
-				<div class="people-index__field">
-					<label class="people-index__field-label" for="people-nationality">Nacionalidad</label>
-					<select
-						class="people-index__select"
-						id="people-nationality"
-						name="nacionalidad"
-						data-people-filter="nationality"
-					>
-						<option value="">Todas</option>
-						{
-							nationalityOptions.map((option) => (
-								<option value={option.value}>{option.label}</option>
-							))
-						}
-					</select>
-				</div>
-
-				<div class="people-index__field">
-					<label class="people-index__field-label" for="people-age-filter">Edad</label>
-					<select class="people-index__select" id="people-age-filter" name="edad" data-people-filter="age">
-						<option value="">Todas</option>
-						<option value="known">Con edad disponible</option>
-						<option value="unknown">Sin edad disponible</option>
-						<option value="under-40">Menores de 40</option>
-						<option value="40-59">Entre 40 y 59</option>
-						<option value="60-79">Entre 60 y 79</option>
-						<option value="80-plus">80 o más</option>
-					</select>
-				</div>
-
-				<div class="people-index__field">
-					<label class="people-index__field-label" for="people-catalog-filter">Catálogo</label>
-					<select
-						class="people-index__select"
-						id="people-catalog-filter"
-						name="catalogo"
-						data-people-filter="catalog"
-					>
-						<option value="">Cualquier tamaño</option>
-						<option value="with-filmography">Con filmografía conectada</option>
-						<option value="1-2">1 a 2 pelis</option>
-						<option value="3-5">3 a 5 pelis</option>
-						<option value="6-plus">6 o más pelis</option>
-					</select>
-				</div>
-
-				<div class="people-index__field">
-					<label class="people-index__field-label" for="people-awards-filter">Premios</label>
-					<select
-						class="people-index__select"
-						id="people-awards-filter"
-						name="premios"
-						data-people-filter="awards"
-					>
-						<option value="">Todos</option>
-						<option value="with-awards">Con premios destacados</option>
-						<option value="without-awards">Sin premios destacados</option>
-						<option value="1">1 premio destacado</option>
-						<option value="2-3">2 a 3 premios destacados</option>
-						<option value="4-plus">4 o más premios destacados</option>
-					</select>
+				<div class="people-index__active-filters" data-people-active-filters hidden>
+					<p class="people-index__active-label">Filtros activos</p>
+					<div class="people-index__active-list" data-people-active-filter-list></div>
 				</div>
 
 				<div class="people-index__actions">
 					<button class="people-index__reset-button" type="reset" data-people-reset>
-						Limpiar filtros
+						Limpiar todo
 					</button>
 				</div>
 			</form>

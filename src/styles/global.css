@@ -7694,19 +7694,20 @@ img {
 
 .people-index {
 	display: grid;
-	gap: 1.2rem;
+	gap: 1.25rem;
 	padding-bottom: 3rem;
 }
 
 .people-index__hero {
 	display: grid;
-	gap: 0.9rem;
-	padding: 1.4rem;
+	gap: 0.95rem;
+	padding: 1.5rem;
 	border-radius: 24px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	background:
 		linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
-		radial-gradient(circle at top right, rgba(255, 176, 137, 0.12), transparent 30%),
+		radial-gradient(circle at top right, rgba(255, 176, 137, 0.16), transparent 34%),
+		radial-gradient(circle at bottom left, rgba(111, 186, 255, 0.1), transparent 28%),
 		var(--panel);
 	box-shadow: var(--shadow-panel);
 }
@@ -7756,8 +7757,8 @@ img {
 
 .people-index__toolbar {
 	display: grid;
-	gap: 1rem;
-	padding: 1.1rem;
+	gap: 1.05rem;
+	padding: 1.2rem;
 }
 
 .people-index__toolbar-head {
@@ -7771,7 +7772,7 @@ img {
 .people-index__toolbar-copy,
 .people-index__field {
 	display: grid;
-	gap: 0.38rem;
+	gap: 0.42rem;
 }
 
 .people-index__toolbar-copy {
@@ -7780,23 +7781,61 @@ img {
 
 .people-index__toolbar-title {
 	margin: 0;
-	font-size: clamp(1.05rem, 2vw, 1.4rem);
+	font-size: clamp(1.05rem, 2vw, 1.5rem);
 	line-height: 1.1;
 }
 
 .people-index__filters {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 0.9rem;
-	align-items: end;
+	gap: 0.95rem;
 }
 
 .people-index__field {
 	min-width: 0;
 }
 
-.people-index__field--search {
-	grid-column: 1 / -1;
+.people-index__field--search,
+.people-index__control-block,
+.people-index__chip-group,
+.people-index__active-filters {
+	display: grid;
+	gap: 0.75rem;
+	min-width: 0;
+	margin: 0;
+	padding: 1rem 1.05rem 1.05rem;
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+		rgba(7, 11, 18, 0.42);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.people-index__control-head {
+	display: grid;
+	gap: 0.34rem;
+}
+
+.people-index__control-hint {
+	margin: 0;
+	color: var(--muted);
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.people-index__filter-grid,
+.people-index__chip-panels {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.95rem;
+}
+
+.people-index__chip-panels {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.people-index__chip-group legend {
+	padding: 0;
 }
 
 .people-index__field-label {
@@ -7811,14 +7850,18 @@ img {
 .people-index__field-hint {
 	margin: 0;
 	color: var(--muted);
-	font-size: 0.85rem;
+	font-size: 0.86rem;
 	line-height: 1.35;
 }
 
 .people-index__search-input,
 .people-index__select,
+.people-index__segmented-button,
+.people-index__chip-button,
+.people-index__direction-button,
+.people-index__active-pill,
 .people-index__reset-button {
-	min-height: 48px;
+	min-height: 46px;
 	border: 1px solid rgba(255, 255, 255, 0.12);
 	border-radius: 16px;
 	background: rgba(255, 255, 255, 0.03);
@@ -7835,7 +7878,7 @@ img {
 .people-index__search-input,
 .people-index__select {
 	inline-size: 100%;
-	padding: 0.78rem 0.95rem;
+	padding: 0.82rem 0.98rem;
 }
 
 .people-index__select {
@@ -7849,6 +7892,116 @@ img {
 	cursor: pointer;
 	appearance: none;
 	-webkit-appearance: none;
+}
+
+.people-index__sort-bar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.72rem;
+}
+
+.people-index__segmented,
+.people-index__chip-list,
+.people-index__active-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.62rem;
+}
+
+.people-index__segmented {
+	flex: 1 1 28rem;
+}
+
+.people-index__segmented-button,
+.people-index__chip-button,
+.people-index__direction-button,
+.people-index__active-pill,
+.people-index__reset-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.74rem 0.96rem;
+	cursor: pointer;
+}
+
+.people-index__segmented-button,
+.people-index__chip-button,
+.people-index__active-pill,
+.people-index__reset-button {
+	background: rgba(255, 255, 255, 0.025);
+}
+
+.people-index__segmented-button,
+.people-index__direction-button,
+.people-index__reset-button {
+	font-family: var(--font-mono);
+	font-size: 0.79rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.people-index__chip-button,
+.people-index__active-pill {
+	border-radius: 999px;
+	font-size: 0.92rem;
+}
+
+.people-index__segmented-button[aria-pressed='true'],
+.people-index__chip-button[aria-pressed='true'],
+.people-index__direction-button,
+.people-index__active-pill {
+	border-color: rgba(255, 176, 137, 0.26);
+	background:
+		linear-gradient(180deg, rgba(255, 176, 137, 0.15), rgba(255, 176, 137, 0.08)),
+		rgba(255, 176, 137, 0.06);
+	box-shadow: 0 0 0 3px rgba(255, 176, 137, 0.08);
+}
+
+.people-index__segmented-button[aria-pressed='true'],
+.people-index__chip-button[aria-pressed='true'] {
+	color: #fff3ed;
+}
+
+.people-index__direction-button {
+	justify-content: flex-start;
+	min-width: 11.5rem;
+}
+
+.people-index__direction-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.25rem;
+	font-size: 1rem;
+}
+
+.people-index__active-filters {
+	gap: 0.68rem;
+}
+
+.people-index__active-label {
+	margin: 0;
+	font-family: var(--font-mono);
+	font-size: 0.76rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--accent-soft);
+}
+
+.people-index__active-list {
+	align-items: center;
+}
+
+.people-index__active-pill {
+	justify-content: space-between;
+	color: #fff4ee;
+}
+
+.people-index__active-pill span:last-child {
+	font-size: 1rem;
+	line-height: 1;
 }
 
 .people-index__select option,
@@ -7865,6 +8018,14 @@ img {
 .people-index__search-input:focus-visible,
 .people-index__select:hover,
 .people-index__select:focus-visible,
+.people-index__segmented-button:hover,
+.people-index__segmented-button:focus-visible,
+.people-index__chip-button:hover,
+.people-index__chip-button:focus-visible,
+.people-index__direction-button:hover,
+.people-index__direction-button:focus-visible,
+.people-index__active-pill:hover,
+.people-index__active-pill:focus-visible,
 .people-index__reset-button:hover,
 .people-index__reset-button:focus-visible {
 	border-color: rgba(255, 176, 137, 0.32);
@@ -7874,6 +8035,10 @@ img {
 
 .people-index__search-input:focus-visible,
 .people-index__select:focus-visible,
+.people-index__segmented-button:focus-visible,
+.people-index__chip-button:focus-visible,
+.people-index__direction-button:focus-visible,
+.people-index__active-pill:focus-visible,
 .people-index__reset-button:focus-visible {
 	outline: none;
 }
@@ -7881,27 +8046,15 @@ img {
 .people-index__sort-note {
 	margin: 0;
 	color: var(--muted);
-	font-size: 0.92rem;
+	font-size: 0.94rem;
 	max-width: 36rem;
 	line-height: 1.45;
 }
 
 .people-index__actions {
 	display: flex;
-	align-items: end;
-	justify-content: flex-end;
-}
-
-.people-index__reset-button {
-	display: inline-flex;
 	align-items: center;
-	justify-content: center;
-	padding: 0.78rem 1rem;
-	font-family: var(--font-mono);
-	font-size: 0.8rem;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	cursor: pointer;
+	justify-content: flex-start;
 }
 
 .people-index__reset-button:hover,
@@ -8043,8 +8196,15 @@ img {
 }
 
 @media (max-width: 63.99rem) {
-	.people-index__filters {
+	.people-index__chip-panels {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 47.99rem) {
+	.people-index__filter-grid,
+	.people-index__chip-panels {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -8054,26 +8214,40 @@ img {
 	}
 
 	.people-index__toolbar {
-		padding: 0.95rem;
+		padding: 0.98rem;
 	}
 
 	.people-index__toolbar-head {
 		display: grid;
 	}
 
-	.people-index__filters {
-		grid-template-columns: 1fr;
-	}
-
 	.people-index__field--search,
-	.people-index__actions {
-		grid-column: auto;
+	.people-index__control-block,
+	.people-index__chip-group,
+	.people-index__active-filters {
+		padding: 0.92rem;
 	}
 
-	.people-index__actions {
-		justify-content: stretch;
+	.people-index__sort-bar {
+		display: grid;
 	}
 
+	.people-index__segmented {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		padding-bottom: 0.25rem;
+		scrollbar-width: thin;
+	}
+
+	.people-index__segmented-button,
+	.people-index__chip-button,
+	.people-index__direction-button,
+	.people-index__active-pill,
+	.people-index__reset-button {
+		white-space: nowrap;
+	}
+
+	.people-index__direction-button,
 	.people-index__reset-button {
 		inline-size: 100%;
 	}

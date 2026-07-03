@@ -5,6 +5,13 @@ if (peopleList) {
 	const controls = document.querySelector<HTMLFormElement>('[data-people-controls]');
 	const statusNote = document.querySelector<HTMLElement>('[data-people-status]');
 	const emptyState = document.querySelector<HTMLElement>('[data-people-empty]');
+	const activeFiltersShell = document.querySelector<HTMLElement>('[data-people-active-filters]');
+	const activeFiltersList = document.querySelector<HTMLElement>('[data-people-active-filter-list]');
+	const sortButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-people-sort-key]'));
+	const chipButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-people-chip-group]'));
+	const directionButton = document.querySelector<HTMLButtonElement>('[data-people-sort-direction]');
+	const directionIcon = document.querySelector<HTMLElement>('[data-people-sort-direction-icon]');
+	const directionLabel = document.querySelector<HTMLElement>('[data-people-sort-direction-label]');
 	const collator = new Intl.Collator('es', { sensitivity: 'base', numeric: true });
 
 	type SortMode =
@@ -16,10 +23,11 @@ if (peopleList) {
 		| 'catalog-asc'
 		| 'awards-desc'
 		| 'awards-asc';
-
-	type AgeFilter = '' | 'known' | 'unknown' | 'under-40' | '40-59' | '60-79' | '80-plus';
-	type CatalogFilter = '' | 'with-filmography' | '1-2' | '3-5' | '6-plus';
-	type AwardsFilter = '' | 'with-awards' | 'without-awards' | '1' | '2-3' | '4-plus';
+	type SortKey = 'alpha' | 'age' | 'catalog' | 'awards';
+	type SortDirection = 'asc' | 'desc';
+	type AgeFilter = '' | 'under-40' | '40-54' | '55-69' | '70-plus';
+	type CatalogFilter = '' | '1-2' | '3-5' | '6-9' | '10-plus';
+	type AwardsFilter = '' | 'with-awards' | '1' | '2-3' | '4-plus';
 
 	type FilterState = {
 		query: string;
@@ -42,6 +50,8 @@ if (peopleList) {
 		awardCount: number;
 	};
 
+	type FilterKey = keyof Pick<FilterState, 'query' | 'role' | 'nationality' | 'age' | 'catalog' | 'awards'>;
+
 	const DEFAULT_STATE: FilterState = {
 		query: '',
 		sort: 'alpha-asc',
@@ -52,18 +62,117 @@ if (peopleList) {
 		awards: '',
 	};
 
-	const SORT_LABELS: Record<SortMode, string> = {
-		'alpha-asc': 'A-Z',
-		'alpha-desc': 'Z-A',
-		'age-desc': 'edad, de mayor a menor',
-		'age-asc': 'edad, de menor a mayor',
-		'catalog-desc': 'cantidad de pelis, de mayor a menor',
-		'catalog-asc': 'cantidad de pelis, de menor a mayor',
-		'awards-desc': 'premios destacados, de mayor a menor',
-		'awards-asc': 'premios destacados, de menor a mayor',
+	const SORT_CONFIG: Record<
+		SortMode,
+		{
+			key: SortKey;
+			direction: SortDirection;
+			statusLabel: string;
+			directionLabel: string;
+			directionIcon: string;
+		}
+	> = {
+		'alpha-asc': {
+			key: 'alpha',
+			direction: 'asc',
+			statusLabel: 'A-Z',
+			directionLabel: 'A-Z',
+			directionIcon: '↑',
+		},
+		'alpha-desc': {
+			key: 'alpha',
+			direction: 'desc',
+			statusLabel: 'Z-A',
+			directionLabel: 'Z-A',
+			directionIcon: '↓',
+		},
+		'age-asc': {
+			key: 'age',
+			direction: 'asc',
+			statusLabel: 'edad, menor primero',
+			directionLabel: 'Menor primero',
+			directionIcon: '↑',
+		},
+		'age-desc': {
+			key: 'age',
+			direction: 'desc',
+			statusLabel: 'edad, mayor primero',
+			directionLabel: 'Mayor primero',
+			directionIcon: '↓',
+		},
+		'catalog-asc': {
+			key: 'catalog',
+			direction: 'asc',
+			statusLabel: 'catálogo, menos pelis primero',
+			directionLabel: 'Menos pelis',
+			directionIcon: '↑',
+		},
+		'catalog-desc': {
+			key: 'catalog',
+			direction: 'desc',
+			statusLabel: 'catálogo, más pelis primero',
+			directionLabel: 'Más pelis',
+			directionIcon: '↓',
+		},
+		'awards-asc': {
+			key: 'awards',
+			direction: 'asc',
+			statusLabel: 'premios, menos primero',
+			directionLabel: 'Menos premios',
+			directionIcon: '↑',
+		},
+		'awards-desc': {
+			key: 'awards',
+			direction: 'desc',
+			statusLabel: 'premios, más primero',
+			directionLabel: 'Más premios',
+			directionIcon: '↓',
+		},
 	};
 
-	const SORT_VALUES = new Set<SortMode>(Object.keys(SORT_LABELS) as SortMode[]);
+	const SORT_BY_KEY: Record<SortKey, Record<SortDirection, SortMode>> = {
+		alpha: { asc: 'alpha-asc', desc: 'alpha-desc' },
+		age: { asc: 'age-asc', desc: 'age-desc' },
+		catalog: { asc: 'catalog-asc', desc: 'catalog-desc' },
+		awards: { asc: 'awards-asc', desc: 'awards-desc' },
+	};
+
+	const DEFAULT_SORT_BY_KEY: Record<SortKey, SortMode> = {
+		alpha: 'alpha-asc',
+		age: 'age-desc',
+		catalog: 'catalog-desc',
+		awards: 'awards-desc',
+	};
+
+	const FILTER_LABELS = {
+		age: {
+			'': 'Todas',
+			'under-40': 'Menos de 40',
+			'40-54': '40 a 54',
+			'55-69': '55 a 69',
+			'70-plus': '70 o más',
+		},
+		catalog: {
+			'': 'Todos',
+			'1-2': '1 a 2 pelis',
+			'3-5': '3 a 5 pelis',
+			'6-9': '6 a 9 pelis',
+			'10-plus': '10 o más',
+		},
+		awards: {
+			'': 'Todos',
+			'with-awards': 'Con premios',
+			'1': '1 premio',
+			'2-3': '2 a 3 premios',
+			'4-plus': '4 o más',
+		},
+	} as const;
+
+	const SORT_VALUES = new Set<SortMode>(Object.keys(SORT_CONFIG) as SortMode[]);
+	const AGE_VALUES = new Set<AgeFilter>(['', 'under-40', '40-54', '55-69', '70-plus']);
+	const CATALOG_VALUES = new Set<CatalogFilter>(['', '1-2', '3-5', '6-9', '10-plus']);
+	const AWARDS_VALUES = new Set<AwardsFilter>(['', 'with-awards', '1', '2-3', '4-plus']);
+
 	const normalizeText = (value: string): string =>
 		value
 			.normalize('NFD')
@@ -71,6 +180,20 @@ if (peopleList) {
 			.toLowerCase()
 			.replace(/\s+/g, ' ')
 			.trim();
+
+	const normalizeAgeFilter = (value: string): AgeFilter => {
+		if (value === '40-59') return '40-54';
+		if (value === '60-79' || value === '80-plus') return '70-plus';
+		return AGE_VALUES.has(value as AgeFilter) ? (value as AgeFilter) : '';
+	};
+
+	const normalizeCatalogFilter = (value: string): CatalogFilter => {
+		if (value === '6-plus') return '6-9';
+		return CATALOG_VALUES.has(value as CatalogFilter) ? (value as CatalogFilter) : '';
+	};
+
+	const normalizeAwardsFilter = (value: string): AwardsFilter =>
+		AWARDS_VALUES.has(value as AwardsFilter) ? (value as AwardsFilter) : '';
 
 	const personRows: PersonRow[] = rows.map((row) => {
 		const parsedAge = Number(row.dataset.age ?? '');
@@ -88,7 +211,7 @@ if (peopleList) {
 
 	const compareByName = (left: PersonRow, right: PersonRow): number => collator.compare(left.name, right.name);
 
-	const compareByAge = (left: PersonRow, right: PersonRow, direction: 'asc' | 'desc'): number => {
+	const compareByAge = (left: PersonRow, right: PersonRow, direction: SortDirection): number => {
 		const leftKnown = typeof left.age === 'number';
 		const rightKnown = typeof right.age === 'number';
 
@@ -110,7 +233,7 @@ if (peopleList) {
 		left: PersonRow,
 		right: PersonRow,
 		metric: 'filmCount' | 'awardCount',
-		direction: 'asc' | 'desc',
+		direction: SortDirection,
 	): number => {
 		const delta = left[metric] - right[metric];
 		if (delta !== 0) {
@@ -158,14 +281,22 @@ if (peopleList) {
 		});
 	};
 
+	const getField = (key: string): HTMLInputElement | HTMLSelectElement | null =>
+		controls?.querySelector<HTMLInputElement | HTMLSelectElement>(`[data-people-filter="${key}"]`) ?? null;
+
+	const setFieldValue = (key: string, value: string): void => {
+		const field = getField(key);
+		if (field) {
+			field.value = value;
+		}
+	};
+
 	const readStateFromControls = (): FilterState => {
 		if (!controls) {
 			return { ...DEFAULT_STATE };
 		}
 
-		const getValue = (key: string): string =>
-			controls.querySelector<HTMLInputElement | HTMLSelectElement>(`[data-people-filter="${key}"]`)?.value ?? '';
-
+		const getValue = (key: string): string => getField(key)?.value ?? '';
 		const sortValue = getValue('sort');
 
 		return {
@@ -173,9 +304,9 @@ if (peopleList) {
 			sort: SORT_VALUES.has(sortValue as SortMode) ? (sortValue as SortMode) : DEFAULT_STATE.sort,
 			role: normalizeText(getValue('role')),
 			nationality: normalizeText(getValue('nationality')),
-			age: (getValue('age') as AgeFilter) || '',
-			catalog: (getValue('catalog') as CatalogFilter) || '',
-			awards: (getValue('awards') as AwardsFilter) || '',
+			age: normalizeAgeFilter(getValue('age')),
+			catalog: normalizeCatalogFilter(getValue('catalog')),
+			awards: normalizeAwardsFilter(getValue('awards')),
 		};
 	};
 
@@ -184,37 +315,50 @@ if (peopleList) {
 			return;
 		}
 
-		const setValue = (key: string, value: string): void => {
-			const field = controls.querySelector<HTMLInputElement | HTMLSelectElement>(`[data-people-filter="${key}"]`);
-			if (field) {
-				field.value = value;
-			}
-		};
-
-		setValue('query', state.query);
-		setValue('sort', state.sort);
-		setValue('role', state.role);
-		setValue('nationality', state.nationality);
-		setValue('age', state.age);
-		setValue('catalog', state.catalog);
-		setValue('awards', state.awards);
+		setFieldValue('query', state.query);
+		setFieldValue('sort', state.sort);
+		setFieldValue('role', state.role);
+		setFieldValue('nationality', state.nationality);
+		setFieldValue('age', state.age);
+		setFieldValue('catalog', state.catalog);
+		setFieldValue('awards', state.awards);
 	};
 
-	const getControlSummaryLabel = (key: string): string => {
-		if (!controls) {
+	const getSelectLabel = (key: 'role' | 'nationality'): string => {
+		const field = getField(key);
+		return field instanceof HTMLSelectElement ? (field.selectedOptions[0]?.textContent?.trim() ?? '') : '';
+	};
+
+	const getFilterLabel = (key: FilterKey, value: string): string => {
+		if (!value) {
 			return '';
 		}
 
-		const field = controls.querySelector<HTMLInputElement | HTMLSelectElement>(`[data-people-filter="${key}"]`);
-		if (!field) {
+		if (key === 'query') {
+			return `búsqueda: “${value}”`;
+		}
+
+		if (key === 'role') {
+			return `rol: ${getSelectLabel('role')}`;
+		}
+
+		if (key === 'nationality') {
+			return `nacionalidad: ${getSelectLabel('nationality')}`;
+		}
+
+		const labels = FILTER_LABELS[key as keyof typeof FILTER_LABELS] as Record<string, string> | undefined;
+		const label = labels?.[value];
+		if (!label) {
 			return '';
 		}
 
-		if (field instanceof HTMLSelectElement) {
-			return field.selectedOptions[0]?.textContent?.trim() ?? '';
-		}
+		const prefixMap: Record<'age' | 'catalog' | 'awards', string> = {
+			age: 'edad',
+			catalog: 'catálogo',
+			awards: 'premios',
+		};
 
-		return field.value.trim();
+		return `${prefixMap[key as 'age' | 'catalog' | 'awards']}: ${label}`;
 	};
 
 	const updateStatus = (visibleCount: number, totalCount: number, state: FilterState): void => {
@@ -222,17 +366,21 @@ if (peopleList) {
 			return;
 		}
 
-		const detailParts = [
-			state.query ? `búsqueda: “${state.query}”` : '',
-			state.role ? `rol: ${getControlSummaryLabel('role')}` : '',
-			state.nationality ? `nacionalidad: ${getControlSummaryLabel('nationality')}` : '',
-			state.age ? `edad: ${getControlSummaryLabel('age')}` : '',
-			state.catalog ? `catálogo: ${getControlSummaryLabel('catalog')}` : '',
-			state.awards ? `premios: ${getControlSummaryLabel('awards')}` : '',
-		].filter(Boolean);
+		const detailParts = (
+			[
+				['query', state.query],
+				['role', state.role],
+				['nationality', state.nationality],
+				['age', state.age],
+				['catalog', state.catalog],
+				['awards', state.awards],
+			] as Array<[FilterKey, string]>
+		)
+			.map(([key, value]) => getFilterLabel(key, value))
+			.filter(Boolean);
 		const detailText = detailParts.length > 0 ? ` Filtros activos: ${detailParts.join(' · ')}.` : '';
 
-		statusNote.textContent = `Mostrando ${visibleCount} de ${totalCount} perfiles. Orden actual: ${SORT_LABELS[state.sort]}.${detailText}`;
+		statusNote.textContent = `Mostrando ${visibleCount} de ${totalCount} perfiles. Orden actual: ${SORT_CONFIG[state.sort].statusLabel}.${detailText}`;
 	};
 
 	const readStateFromUrl = (): FilterState => {
@@ -244,9 +392,9 @@ if (peopleList) {
 			sort: SORT_VALUES.has(sortParam as SortMode) ? (sortParam as SortMode) : DEFAULT_STATE.sort,
 			role: normalizeText(params.get('rol') ?? ''),
 			nationality: normalizeText(params.get('nacionalidad') ?? ''),
-			age: ((params.get('edad') ?? '') as AgeFilter) || '',
-			catalog: ((params.get('catalogo') ?? '') as CatalogFilter) || '',
-			awards: ((params.get('premios') ?? '') as AwardsFilter) || '',
+			age: normalizeAgeFilter(params.get('edad') ?? ''),
+			catalog: normalizeCatalogFilter(params.get('catalogo') ?? ''),
+			awards: normalizeAwardsFilter(params.get('premios') ?? ''),
 		};
 	};
 
@@ -275,27 +423,24 @@ if (peopleList) {
 
 	const matchesAgeFilter = (entry: PersonRow, filter: AgeFilter): boolean => {
 		if (!filter) return true;
-		if (filter === 'known') return typeof entry.age === 'number';
-		if (filter === 'unknown') return entry.age === null;
 		if (entry.age === null) return false;
 		if (filter === 'under-40') return entry.age < 40;
-		if (filter === '40-59') return entry.age >= 40 && entry.age <= 59;
-		if (filter === '60-79') return entry.age >= 60 && entry.age <= 79;
-		return entry.age >= 80;
+		if (filter === '40-54') return entry.age >= 40 && entry.age <= 54;
+		if (filter === '55-69') return entry.age >= 55 && entry.age <= 69;
+		return entry.age >= 70;
 	};
 
 	const matchesCatalogFilter = (entry: PersonRow, filter: CatalogFilter): boolean => {
 		if (!filter) return true;
-		if (filter === 'with-filmography') return entry.filmCount > 0;
 		if (filter === '1-2') return entry.filmCount >= 1 && entry.filmCount <= 2;
 		if (filter === '3-5') return entry.filmCount >= 3 && entry.filmCount <= 5;
-		return entry.filmCount >= 6;
+		if (filter === '6-9') return entry.filmCount >= 6 && entry.filmCount <= 9;
+		return entry.filmCount >= 10;
 	};
 
 	const matchesAwardsFilter = (entry: PersonRow, filter: AwardsFilter): boolean => {
 		if (!filter) return true;
 		if (filter === 'with-awards') return entry.awardCount > 0;
-		if (filter === 'without-awards') return entry.awardCount === 0;
 		if (filter === '1') return entry.awardCount === 1;
 		if (filter === '2-3') return entry.awardCount >= 2 && entry.awardCount <= 3;
 		return entry.awardCount >= 4;
@@ -325,7 +470,97 @@ if (peopleList) {
 		return matchesAwardsFilter(entry, state.awards);
 	};
 
+	const updateSortUi = (state: FilterState): void => {
+		const currentSort = SORT_CONFIG[state.sort];
+		const nextDirection: SortDirection = currentSort.direction === 'asc' ? 'desc' : 'asc';
+		const nextLabel = SORT_CONFIG[SORT_BY_KEY[currentSort.key][nextDirection]].directionLabel;
+
+		sortButtons.forEach((button) => {
+			const isActive = button.dataset.peopleSortKey === currentSort.key;
+			button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+		});
+
+		if (directionButton) {
+			directionButton.setAttribute('aria-label', `Cambiar orden a ${nextLabel}`);
+		}
+
+		if (directionIcon) {
+			directionIcon.textContent = currentSort.directionIcon;
+		}
+
+		if (directionLabel) {
+			directionLabel.textContent = currentSort.directionLabel;
+		}
+	};
+
+	const updateChipUi = (state: FilterState): void => {
+		chipButtons.forEach((button) => {
+			const key = button.dataset.peopleChipGroup as 'age' | 'catalog' | 'awards' | undefined;
+			if (!key) {
+				return;
+			}
+
+			const buttonValue = button.dataset.peopleChipValue ?? '';
+			const currentValue = state[key];
+			const isActive = currentValue === buttonValue;
+
+			button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+		});
+	};
+
+	const updateActiveFilters = (state: FilterState): void => {
+		if (!activeFiltersShell || !activeFiltersList) {
+			return;
+		}
+
+		activeFiltersList.replaceChildren();
+
+		const activeFilters = (
+			[
+				['query', state.query],
+				['role', state.role],
+				['nationality', state.nationality],
+				['age', state.age],
+				['catalog', state.catalog],
+				['awards', state.awards],
+			] as Array<[FilterKey, string]>
+		)
+			.map(([key, value]) => ({
+				key,
+				value,
+				label: getFilterLabel(key, value),
+			}))
+			.filter((entry) => entry.value && entry.label);
+
+		activeFiltersShell.hidden = activeFilters.length === 0;
+
+		for (const entry of activeFilters) {
+			const button = document.createElement('button');
+			const label = document.createElement('span');
+			const close = document.createElement('span');
+
+			button.type = 'button';
+			button.className = 'people-index__active-pill';
+			button.dataset.peopleRemoveFilter = entry.key;
+			button.setAttribute('aria-label', `Quitar filtro de ${entry.label}`);
+			label.textContent = entry.label;
+			close.textContent = '×';
+			close.setAttribute('aria-hidden', 'true');
+			button.append(label, close);
+			activeFiltersList.appendChild(button);
+		}
+	};
+
+	const syncUiState = (state: FilterState): void => {
+		updateSortUi(state);
+		updateChipUi(state);
+		updateActiveFilters(state);
+	};
+
 	const applyState = (state: FilterState, syncUrl = true): void => {
+		hydrateControls(state);
+		syncUiState(state);
+
 		const sortedRows = [...personRows].sort((left, right) => compareRows(left, right, state.sort));
 		const visibleRows: PersonRow[] = [];
 
@@ -354,17 +589,49 @@ if (peopleList) {
 	if (controls) {
 		controls.addEventListener('input', (event) => {
 			const target = event.target;
-			if (!(target instanceof HTMLInputElement)) {
+			if (!(target instanceof HTMLInputElement) || target.dataset.peopleFilter !== 'query') {
 				return;
 			}
 
-			if (target.dataset.peopleFilter === 'query') {
-				applyState(readStateFromControls());
-			}
+			applyState(readStateFromControls());
 		});
 
 		controls.addEventListener('change', () => {
 			applyState(readStateFromControls());
+		});
+
+		controls.addEventListener('click', (event) => {
+			const target = event.target;
+			const sortButton = target instanceof Element ? target.closest<HTMLButtonElement>('[data-people-sort-key]') : null;
+			if (sortButton) {
+				const state = readStateFromControls();
+				const sortKey = sortButton.dataset.peopleSortKey as SortKey | undefined;
+				if (!sortKey) {
+					return;
+				}
+
+				const currentSort = SORT_CONFIG[state.sort];
+				const nextSort = currentSort.key === sortKey ? state.sort : DEFAULT_SORT_BY_KEY[sortKey];
+				setFieldValue('sort', nextSort);
+				applyState(readStateFromControls());
+				return;
+			}
+
+			const chipButton = target instanceof Element
+				? target.closest<HTMLButtonElement>('[data-people-chip-group][data-people-chip-value]')
+				: null;
+			if (chipButton) {
+				const state = readStateFromControls();
+				const filterKey = chipButton.dataset.peopleChipGroup as 'age' | 'catalog' | 'awards' | undefined;
+				if (!filterKey) {
+					return;
+				}
+
+				const chipValue = chipButton.dataset.peopleChipValue ?? '';
+				const nextValue = state[filterKey] === chipValue ? '' : chipValue;
+				setFieldValue(filterKey, nextValue);
+				applyState(readStateFromControls());
+			}
 		});
 
 		controls.addEventListener('reset', () => {
@@ -374,13 +641,41 @@ if (peopleList) {
 		});
 	}
 
+	if (directionButton) {
+		directionButton.addEventListener('click', () => {
+			const state = readStateFromControls();
+			const currentSort = SORT_CONFIG[state.sort];
+			const nextDirection: SortDirection = currentSort.direction === 'asc' ? 'desc' : 'asc';
+			setFieldValue('sort', SORT_BY_KEY[currentSort.key][nextDirection]);
+			applyState(readStateFromControls());
+		});
+	}
+
+	if (activeFiltersList) {
+		activeFiltersList.addEventListener('click', (event) => {
+			const target = event.target;
+			const removeButton = target instanceof Element
+				? target.closest<HTMLButtonElement>('[data-people-remove-filter]')
+				: null;
+			if (!removeButton) {
+				return;
+			}
+
+			const key = removeButton.dataset.peopleRemoveFilter as FilterKey | undefined;
+			if (!key) {
+				return;
+			}
+
+			setFieldValue(key, '');
+			applyState(readStateFromControls());
+		});
+	}
+
 	const initialState = readStateFromUrl();
-	hydrateControls(initialState);
 	applyState(initialState, false);
 
 	window.addEventListener('popstate', () => {
 		const nextState = readStateFromUrl();
-		hydrateControls(nextState);
 		applyState(nextState, false);
 	});
 }
