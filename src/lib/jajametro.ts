@@ -3,6 +3,10 @@ import type { Movie } from '../types/movie';
 const INCLUDE_CATEGORY_TOKENS = ['comedia', 'comedy'];
 const ROMANCE_CATEGORY_TOKENS = ['romance', 'romantica', 'romantic'];
 const DRAMA_CATEGORY_TOKENS = ['drama', 'dramatic', 'dramatica'];
+const FORCE_SHOW_JAJAMETRO_SLUGS = new Set([
+	'despicable-me-4-2024',
+	'minions-monstruos-2026',
+]);
 
 const SCORE_OVERRIDES: Record<string, number> = {
 	'scary-movie-2000': 90,
@@ -42,7 +46,11 @@ function hasAny(value: string, patterns: RegExp[]): boolean {
 	return patterns.some((pattern) => pattern.test(value));
 }
 
-export function shouldShowJajametro(movie: Pick<Movie, 'category'>): boolean {
+export function shouldShowJajametro(movie: Pick<Movie, 'slug' | 'category'>): boolean {
+	if (FORCE_SHOW_JAJAMETRO_SLUGS.has(movie.slug)) {
+		return true;
+	}
+
 	const category = getPrimaryCategory(movie);
 	const isComedy = INCLUDE_CATEGORY_TOKENS.some((token) => category.includes(token));
 	const leansRomanceOrDrama = [...ROMANCE_CATEGORY_TOKENS, ...DRAMA_CATEGORY_TOKENS].some((token) => category.includes(token));
