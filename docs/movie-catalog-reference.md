@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-03. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-05. Fuente: src/data/movies/*.json
 
-Total de peliculas: 951
+Total de peliculas: 967
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -415,6 +415,7 @@ Total de peliculas: 951
 | 2017 | John Wick: Chapter 2 | john-wick-chapter-2-2017 | Accion | Prime Video | +16 |
 | 2017 | Justice League | justice-league-2017 | Accion | Otras plataformas | +13 |
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max | +12 |
+| 2017 | Lady Bird | lady-bird-2017 | Drama | Otras plataformas | +17 |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus | +17 |
 | 2017 | Los archivos del Pentágono | the-post-2017 | Drama | Otras plataformas | +13 |
 | 2017 | Pirates of the Caribbean: Dead Men Tell No Tales | pirates-of-the-caribbean-dead-men-tell-no-tales-2017 | Aventura | Disney Plus | +13 |
@@ -468,6 +469,7 @@ Total de peliculas: 951
 | 2014 | Big Eyes | big-eyes-2014 | Drama | Otras plataformas | +13 |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus | ATP |
 | 2014 | Birdman or (The Unexpected Virtue of Ignorance) | birdman-or-the-unexpected-virtue-of-ignorance-2014 | Drama | Disney Plus | +16 |
+| 2014 | Boyhood | boyhood-2014 | Drama | Otras plataformas | +17 |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus | +13 |
 | 2014 | Dawn of the Planet of the Apes | dawn-of-the-planet-of-the-apes-2014 | Accion | Disney Plus | +13 |
 | 2014 | El debate de los 50 años | the-50-year-argument-2014 | Documental | Otras plataformas | ATP |
@@ -479,6 +481,7 @@ Total de peliculas: 951
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max | +16 |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus | +13 |
 | 2014 | The Grand Budapest Hotel | the-grand-budapest-hotel-2014 | Comedia | Disney Plus | +13 |
+| 2014 | What We Do in the Shadows | what-we-do-in-the-shadows-2014 | Comedia | Otras plataformas | +17 |
 | 2014 | Whiplash | whiplash-2014 | Drama | HBO Max | +12 |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus | +13 |
 | 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video + Paramount Plus | +17 |
@@ -540,6 +543,7 @@ Total de peliculas: 951
 | 2010 | Inception | inception-2010 | Ciencia ficcion | HBO Max + Prime Video | +13 |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus | +13 |
 | 2010 | Jonah Hex | jonah-hex-2010 | Accion | HBO Max | +13 |
+| 2010 | Machete | machete-2010 | Accion | Otras plataformas | +18 |
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
 | 2010 | Saw 3D | saw-3d-2010 | Gore | Otras plataformas | +18 |
 | 2010 | Shutter Island | shutter-island-2010 | Thriller | Otras plataformas | +17 |
@@ -584,9 +588,12 @@ Total de peliculas: 951
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max | +12 |
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
 | 2007 | No Country for Old Men | no-country-for-old-men-2007 | Western | Otras plataformas | +17 |
+| 2007 | Paranormal Activity | paranormal-activity-2007 | Terror | Otras plataformas | +17 |
 | 2007 | Pirates of the Caribbean: At World's End | pirates-of-the-caribbean-at-worlds-end-2007 | Aventura | Disney Plus | +13 |
+| 2007 | Planet Terror | planet-terror-2007 | Accion | Otras plataformas | +18 |
 | 2007 | Pozos de ambición | pozos-de-ambicion-2007 | Drama | Paramount Plus + Prime Video | +13 |
 | 2007 | Ratatouille | ratatouille-2007 | Animacion | Disney Plus | ATP |
+| 2007 | REC | rec-2007 | Terror | Otras plataformas | +18 |
 | 2007 | Saw IV | saw-iv-2007 | Gore | Otras plataformas | +18 |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
 | 2007 | Sweeney Todd: The Demon Barber of Fleet Street | sweeney-todd-the-demon-barber-of-fleet-street-2007 | Musical | Otras plataformas | +17 |
@@ -684,6 +691,7 @@ Total de peliculas: 951
 | 2001 | Spirited Away | spirited-away-2001 | Anime | Netflix | ATP |
 | 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Otras plataformas | +13 |
 | 2001 | The Lord of the Rings: The Fellowship of the Ring | the-lord-of-the-rings-the-fellowship-of-the-ring-2001 | Aventura | Otras plataformas | +13 |
+| 2001 | The Others | the-others-2001 | Terror | Otras plataformas | +13 |
 | 2000 | Gladiator | gladiator-2000 | Drama | Otras plataformas | +17 |
 | 2000 | Granujas de medio pelo | small-time-crooks-2000 | Comedia | Otras plataformas | +13 |
 | 2000 | Memento | memento-2000 | Thriller | Otras plataformas | +13 |
@@ -699,6 +707,7 @@ Total de peliculas: 951
 | 1999 | Mi viaje a Italia | my-voyage-to-italy-1999 | Documental | Otras plataformas | ATP |
 | 1999 | Sleepy Hollow | sleepy-hollow-1999 | Terror | Otras plataformas | +17 |
 | 1999 | Star Wars: Episode I - The Phantom Menace | star-wars-episode-i-the-phantom-menace-1999 | Ciencia ficcion | Disney Plus | ATP |
+| 1999 | The Blair Witch Project | the-blair-witch-project-1999 | Terror | Otras plataformas | +17 |
 | 1999 | The Matrix | the-matrix-1999 | Ciencia ficcion | Netflix | +13 |
 | 1999 | The Sixth Sense | the-sixth-sense-1999 | Thriller | Otras plataformas | +13 |
 | 1998 | Blade | blade-1998 | Accion | HBO Max | +17 |
@@ -721,6 +730,7 @@ Total de peliculas: 951
 | 1997 | Scream 2 | scream-2-1997 | Terror | Paramount Plus | +16 |
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video | +13 |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus | +13 |
+| 1996 | From Dusk Till Dawn | from-dusk-till-dawn-1996 | Terror | Otras plataformas | +18 |
 | 1996 | Mars Attacks! | mars-attacks-1996 | Ciencia ficcion | Otras plataformas | +13 |
 | 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Otras plataformas | +13 |
 | 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Paramount Plus + Mercado Play | +16 |
@@ -812,6 +822,8 @@ Total de peliculas: 951
 | 1986 | Hannah and Her Sisters | hannah-and-her-sisters-1986 | Drama | Otras plataformas | +13 |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Otras plataformas | ATP |
 | 1986 | Platoon | platoon-1986 | Drama | Otras plataformas | +18 |
+| 1986 | Stand by Me | stand-by-me-1986 | Drama | Otras plataformas | +17 |
+| 1986 | The Fly | the-fly-1986 | Terror | Otras plataformas | +17 |
 | 1986 | Viernes 13. 6ª parte: Jason vive | friday-the-13th-part-vi-jason-lives-1986 | Terror | Otras plataformas | +18 |
 | 1985 | ¡qué noche! | after-hours-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | A Nightmare on Elm Street 2: Freddy's Revenge | a-nightmare-on-elm-street-2-freddy-s-revenge-1985 | Terror | Otras plataformas | +17 |
@@ -825,6 +837,7 @@ Total de peliculas: 951
 | 1985 | Pee-wee's Big Adventure | pee-wees-big-adventure-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | Rocky IV | rocky-iv-1985 | Drama | Otras plataformas | ATP |
 | 1985 | Shoah | shoah-1985 | Documental | Otras plataformas | +16 |
+| 1985 | The Breakfast Club | the-breakfast-club-1985 | Drama | Otras plataformas | +17 |
 | 1985 | Viernes 13. Parte V: Un nuevo comienzo | friday-the-13th-a-new-beginning-1985 | Terror | Otras plataformas | +18 |
 | 1984 | Amadeus | amadeus-1984 | Drama | Otras plataformas | ATP |
 | 1984 | Broadway Danny Rose | broadway-danny-rose-1984 | Comedia | Otras plataformas | +13 |
@@ -835,10 +848,12 @@ Total de peliculas: 951
 | 1984 | Stop Making Sense | stop-making-sense-1984 | Documental | Otras plataformas | ATP |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max | +9 |
 | 1984 | The Terminator | the-terminator-1984 | Accion | Prime Video | +17 |
+| 1984 | This Is Spinal Tap | this-is-spinal-tap-1984 | Comedia | Otras plataformas | +17 |
 | 1984 | Viernes 13. Último capítulo | friday-the-13th-the-final-chapter-1984 | Terror | Otras plataformas | +16 |
 | 1983 | Star Wars: Episode VI - Return of the Jedi | star-wars-episode-vi-return-of-the-jedi-1983 | Ciencia ficcion | Disney Plus | ATP |
 | 1983 | Superman III | superman-iii-1983 | Accion | HBO Max | ATP |
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Otras plataformas | ATP |
+| 1983 | Videodrome | videodrome-1983 | Terror | Otras plataformas | +18 |
 | 1983 | Zelig | zelig-1983 | Comedia | Otras plataformas | +13 |
 | 1982 | Blade Runner | blade-runner-1982 | Ciencia ficcion | Prime Video | +17 |
 | 1982 | Comedia sexual de una noche de verano | a-midsummer-night-s-sex-comedy-1982 | Comedia | Otras plataformas | +13 |
@@ -846,6 +861,7 @@ Total de peliculas: 951
 | 1982 | El rey de la comedia | the-king-of-comedy-1982 | Comedia | Otras plataformas | ATP |
 | 1982 | Gandhi | gandhi-1982 | Drama | Otras plataformas | ATP |
 | 1982 | Halloween III: El día de la bruja | halloween-iii-season-of-the-witch-1982 | Terror | Otras plataformas | +17 |
+| 1982 | Poltergeist | poltergeist-1982 | Terror | Otras plataformas | ATP |
 | 1982 | Rocky III | rocky-iii-1982 | Drama | Otras plataformas | ATP |
 | 1982 | Viernes 13, parte III | friday-the-13th-part-iii-1982 | Terror | Otras plataformas | +18 |
 | 1981 | Chariots of Fire | chariots-of-fire-1981 | Drama | Disney Plus | ATP |
