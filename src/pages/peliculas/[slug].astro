@@ -7,7 +7,9 @@ import {
 	getMovies,
 	getMoviePlatformLabel,
 	getMoviePlatforms,
+	getMovieSubgenres,
 	getPosterUrl,
+	getPrimaryGenreLabel,
 	getMovieTrailerPath,
 	getYoutubeThumbnailUrl,
 	getVerdictBadgeClass,
@@ -54,6 +56,8 @@ const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
+const primaryGenreLabel = getPrimaryGenreLabel(movie);
+const movieSubgenres = getMovieSubgenres(movie);
 const sangrometroScore = getSangrometroScore(movie);
 const lagrimometroScore = sangrometroScore === undefined ? getLagrimometroScore(movie) : undefined;
 const jajametroScore = sangrometroScore === undefined && lagrimometroScore === undefined ? getJajametroScore(movie) : undefined;
@@ -429,46 +433,6 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						</div>
 						<p class="movie-detail__editorial-note">{reviewPurposeNote}</p>
 					</div>
-					<section
-						class="movie-share"
-						aria-labelledby={`share-${movie.slug}`}
-						data-movie-share
-						data-share-url={movieCanonicalUrl}
-						data-share-title={pageTitle}
-						data-share-text={shareText}
-					>
-						<div class="movie-share__top">
-							<p id={`share-${movie.slug}`} class="movie-share__title">Share</p>
-							<p class="movie-share__hint">Pasá esta ficha por mensaje o redes.</p>
-						</div>
-						<div class="movie-share__actions" aria-label={`Compartir ${movie.title}`}>
-							<button class="movie-share__button movie-share__button--primary" type="button" data-native-share hidden>
-								Compartir
-							</button>
-							<a
-								class="movie-share__button movie-share__button--whatsapp"
-								href={whatsappShareUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label={`Compartir ${movie.title} por WhatsApp`}
-							>
-								<img class="movie-share__logo movie-share__logo--whatsapp" src="/brand/social/whatsapp.svg" alt="" aria-hidden="true" loading="lazy" />
-							</a>
-							<a
-								class="movie-share__button movie-share__button--x"
-								href={xShareUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label={`Compartir ${movie.title} en X`}
-							>
-								<img class="movie-share__logo movie-share__logo--x" src="/brand/social/x.svg" alt="" aria-hidden="true" loading="lazy" />
-							</a>
-							<button class="movie-share__button movie-share__button--copy" type="button" data-copy-share-url>
-								Copiar URL
-							</button>
-						</div>
-						<p class="movie-share__status" role="status" aria-live="polite" data-share-status></p>
-					</section>
 				</header>
 				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
 					<div class="movie-detail__hero-stack">
@@ -559,9 +523,68 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							)
 						}
 					</div>
-					{
-						(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
-							<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
+					<div class="movie-detail__side-stack">
+						<section
+							class="movie-share"
+							aria-labelledby={`share-${movie.slug}`}
+							data-movie-share
+							data-share-url={movieCanonicalUrl}
+							data-share-title={pageTitle}
+							data-share-text={shareText}
+						>
+							<div class="movie-share__top">
+								<p id={`share-${movie.slug}`} class="movie-share__title">Share</p>
+								<p class="movie-share__hint">Pasá esta ficha por mensaje o redes.</p>
+							</div>
+							<div class="movie-share__actions" aria-label={`Compartir ${movie.title}`}>
+								<button class="movie-share__button movie-share__button--primary" type="button" data-native-share hidden>
+									Compartir
+								</button>
+								<a
+									class="movie-share__button movie-share__button--whatsapp"
+									href={whatsappShareUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={`Compartir ${movie.title} por WhatsApp`}
+								>
+									<img class="movie-share__logo movie-share__logo--whatsapp" src="/brand/social/whatsapp.svg" alt="" aria-hidden="true" loading="lazy" />
+								</a>
+								<a
+									class="movie-share__button movie-share__button--x"
+									href={xShareUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={`Compartir ${movie.title} en X`}
+								>
+									<img class="movie-share__logo movie-share__logo--x" src="/brand/social/x.svg" alt="" aria-hidden="true" loading="lazy" />
+								</a>
+								<button class="movie-share__button movie-share__button--copy" type="button" data-copy-share-url>
+									Copiar URL
+								</button>
+							</div>
+							<p class="movie-share__status" role="status" aria-live="polite" data-share-status></p>
+						</section>
+						<dl class="movie-detail__taxonomy" aria-label="Género y subgéneros">
+							<div class="movie-detail__taxonomy-item">
+								<dt>Género</dt>
+								<dd>{primaryGenreLabel}</dd>
+							</div>
+							{
+								movieSubgenres.length > 0 && (
+									<div class="movie-detail__taxonomy-item movie-detail__taxonomy-item--subgenres">
+										<dt>{movieSubgenres.length > 1 ? 'Subgéneros' : 'Subgénero'}</dt>
+										<dd class="movie-detail__taxonomy-tags">
+											{movieSubgenres.map((subgenre) => (
+												<span class="movie-detail__taxonomy-tag">{subgenre}</span>
+											))}
+										</dd>
+									</div>
+								)
+							}
+						</dl>
+						{
+							(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
+								<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
 								{
 									peopleGroups.directors.length > 0 && (
 										<div class="movie-detail__people-block">
@@ -765,9 +788,10 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										</div>
 									)
 								}
-							</section>
-						)
-					}
+								</section>
+							)
+						}
+					</div>
 				</section>
 				{
 					groupedAwards.length > 0 && (
@@ -829,9 +853,17 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								<dd>{movie.originalTitle}</dd>
 							</div>
 							<div class="movie-detail__credit-item">
-								<dt>Categoría</dt>
-								<dd>{movie.category}</dd>
+								<dt>Género</dt>
+								<dd>{primaryGenreLabel}</dd>
 							</div>
+							{
+								movieSubgenres.length > 0 && (
+									<div class="movie-detail__credit-item">
+										<dt>{movieSubgenres.length > 1 ? 'Subgéneros' : 'Subgénero'}</dt>
+										<dd class="movie-detail__subgenre-value">{movieSubgenres.join(' · ')}</dd>
+									</div>
+								)
+							}
 							{
 								moviePlatforms.length > 0 && (
 									<div class="movie-detail__credit-item">

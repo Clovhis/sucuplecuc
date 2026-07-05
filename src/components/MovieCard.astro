@@ -2,10 +2,12 @@
 import {
 	getAbsoluteCinemaStickerUrl,
 	getCatalogFilterGenres,
+	getCatalogFilterSubgenres,
+	getMovieSubgenres,
 	getMoviePath,
 	getMoviePlatformLabel,
 	getMoviePlatforms,
-	getPositiveVerdictFilterId,
+	getPrimaryGenreLabel,
 	getPosterUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
@@ -27,6 +29,8 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictLabel = getVerdictLabel(movie);
 const verdictClass = getVerdictBadgeClass(movie);
 const catalogFilterGenres = getCatalogFilterGenres(movie).join(',');
+const catalogFilterSubgenres = getCatalogFilterSubgenres(movie).join(',');
+const movieSubgenres = getMovieSubgenres(movie);
 const entryDelayMs = `${Math.min(index, 11) * 32}ms`;
 const posterLoading = index < 8 ? 'eager' : 'lazy';
 const posterFetchPriority = index < 4 ? 'high' : 'auto';
@@ -34,9 +38,7 @@ const quickCast = movie.mainCast.slice(0, 2).join(', ');
 const moviePlatforms = getMoviePlatforms(movie);
 const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);
 const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
-const positiveVerdictFilterId =
-	movie.verdict === 'recomendada' && !showAbsoluteCinemaSticker ? getPositiveVerdictFilterId(verdictLabel) : '';
-const quickMeta = [String(movie.year), movie.category, getMoviePlatformLabel(movie)]
+const quickMeta = [String(movie.year), getPrimaryGenreLabel(movie), getMoviePlatformLabel(movie)]
 	.filter(Boolean)
 	.join(' · ');
 const searchableText = [
@@ -47,6 +49,7 @@ const searchableText = [
 	movie.category,
 	movie.audienceRating,
 	...moviePlatforms,
+	...movieSubgenres,
 	movie.director,
 	movie.productionCompany,
 	...(movie.mainCast ?? []),
@@ -62,6 +65,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	data-movie-card
 	data-movie-search={searchableTextNormalized}
 	data-movie-genres={catalogFilterGenres}
+	data-movie-subgenres={catalogFilterSubgenres}
 	data-movie-title={movie.title}
 	data-movie-year={movie.year}
 	data-movie-url={movieUrl}
@@ -69,8 +73,6 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	data-movie-meta={quickMeta}
 	data-movie-cast={quickCast}
 	data-movie-platforms={getNormalizedMoviePlatforms(movie).join(',')}
-	data-movie-absolute-cinema={showAbsoluteCinemaSticker ? 'true' : 'false'}
-	data-movie-positive-verdict-id={positiveVerdictFilterId}
 >
 	<a href={movieUrl} class="movie-card__link" aria-label={`Ver detalle de ${movie.title}`}>
 		<div class="movie-card__poster-wrap">

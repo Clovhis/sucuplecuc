@@ -47,6 +47,7 @@ export interface Movie {
 	audienceRating: MovieAudienceRating;
 	category: string;
 	genres?: string[];
+	subgenres?: string[];
 	country?: string;
 	isArgentinian?: boolean;
 	poster: string;

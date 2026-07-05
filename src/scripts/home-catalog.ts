@@ -7,7 +7,7 @@
 
 type StatusMode = 'catalog' | 'search';
 type ReturnBehavior = 'reset';
-type ChipDataKey = 'homeGenreId' | 'homePlatformId' | 'homePositiveVerdictId';
+type ChipDataKey = 'homeGenreId' | 'homeSubgenreId' | 'homePlatformId';
 
 type MovieIndexEntry = {
 	element: HTMLElement | null;
@@ -23,8 +23,7 @@ type MovieIndexEntry = {
 	entryType: 'movie';
 	platforms: Set<string>;
 	genres: Set<string>;
-	absoluteCinema: boolean;
-	positiveVerdict: string;
+	subgenres: Set<string>;
 	poster: HTMLImageElement | null;
 	linkPrepared: boolean;
 };
@@ -46,14 +45,13 @@ type SearchSuggestionEntry = MovieIndexEntry | PersonIndexEntry;
 type HomeState = {
 	query: string;
 	genre: string | null;
+	subgenre: string | null;
 	platform: string | null;
-	absoluteCinema: boolean;
-	positiveVerdict: string | null;
 	scrollY: number;
 	ts: number;
 };
 
-const homeStateKey = 'cineposta:home-list-state:v2';
+const homeStateKey = 'cineposta:home-list-state:v4';
 const homeReturnBehaviorKey = 'cineposta:home-return-behavior:v1';
 const catalogLoadingPhrases = [
 	'Bancá que carga el videoclub...',
@@ -91,11 +89,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const cardTemplates = Array.from(document.querySelectorAll<HTMLTemplateElement>('[data-movie-card-template]'));
 	const people = Array.from(searchRoot.querySelectorAll<HTMLElement>('[data-person-search-entry]'));
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
+	const subgenreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-subgenre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
-	const absoluteCinemaChip = document.querySelector<HTMLButtonElement>('[data-home-absolute-cinema-chip]');
-	const positiveVerdictChips = Array.from(
-		document.querySelectorAll<HTMLButtonElement>('[data-home-positive-verdict-chip]'),
-	);
 	const peopleShowcaseGrid = document.querySelector<HTMLElement>('[data-home-people-grid]');
 	const searchResultsGrid = document.querySelector<HTMLElement>('[data-movie-search-grid]');
 
@@ -140,8 +135,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 					.map((value) => value.trim())
 					.filter(Boolean),
 			),
-			absoluteCinema: card.dataset.movieAbsoluteCinema === 'true',
-			positiveVerdict: card.dataset.moviePositiveVerdictId ?? '',
+			subgenres: new Set(
+				(card.dataset.movieSubgenres ?? '')
+					.split(',')
+					.map((value) => value.trim())
+					.filter(Boolean),
+			),
 			poster: initial && poster instanceof HTMLImageElement ? poster : null,
 			linkPrepared: false,
 		};
@@ -178,14 +177,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	let visibleMovieEntries = movieIndex.filter((entry) => entry.initial);
 	let activeGenre: string | null = null;
+	let activeSubgenre: string | null = null;
 	let activePlatform: string | null = null;
-	let activeAbsoluteCinema = false;
-	let activePositiveVerdict: string | null = null;
 	let lastAppliedQuery = '';
 	let lastAppliedGenre = '';
+	let lastAppliedSubgenre = '';
 	let lastAppliedPlatform = '';
-	let lastAppliedAbsoluteCinema = '';
-	let lastAppliedPositiveVerdict = '';
 	let filterTimer = 0;
 	let filterFrame = 0;
 	let statusRotateTimer = 0;
@@ -216,9 +213,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const hasActiveCatalogQuery = (): boolean =>
 		normalize(input.value).length > 0 ||
 		Boolean(activeGenre) ||
-		Boolean(activePlatform) ||
-		activeAbsoluteCinema ||
-		Boolean(activePositiveVerdict);
+		Boolean(activeSubgenre) ||
+		Boolean(activePlatform);
 
 	const getVisibleEntries = (): MovieIndexEntry[] => visibleMovieEntries;
 
@@ -401,6 +397,19 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		);
 	};
 
+	const getGenreSummaryPart = (): string | null => {
+		if (!activeGenre) return null;
+
+		const activeChip = genreChips.find((chip) => chip.dataset.homeGenreId === activeGenre);
+		const label = getChipLabel(genreChips, 'homeGenreId', activeGenre);
+
+		if (activeChip?.dataset.homeGenreKind === 'editorial') {
+			return `filtro ${label}`;
+		}
+
+		return `género ${label}`;
+	};
+
 	const setReturnBehavior = (behavior: ReturnBehavior | null): void => {
 		try {
 			if (behavior) {
@@ -497,9 +506,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		const shouldShow =
 			input.value.trim().length > 0 ||
 			Boolean(activeGenre) ||
-			Boolean(activePlatform) ||
-			activeAbsoluteCinema ||
-			Boolean(activePositiveVerdict);
+			Boolean(activeSubgenre) ||
+			Boolean(activePlatform);
 		clearButton.hidden = !shouldShow;
 	};
 
@@ -619,11 +627,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		const query = normalize(input.value);
 		const hasQuery = query.length > 0;
 		const hasGenre = Boolean(activeGenre);
+		const hasSubgenre = Boolean(activeSubgenre);
 		const hasPlatform = Boolean(activePlatform);
-		const hasAbsoluteCinema = activeAbsoluteCinema;
-		const hasPositiveVerdict = Boolean(activePositiveVerdict);
 
-		if (!hasQuery && !hasGenre && !hasPlatform && !hasAbsoluteCinema && !hasPositiveVerdict) {
+		if (!hasQuery && !hasGenre && !hasSubgenre && !hasPlatform) {
 			for (const summary of summaries) {
 				summary.textContent = `${visibleCount} títulos recientes visibles de ${totalMovieCount} publicados.`;
 			}
@@ -632,16 +639,16 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		const parts: string[] = [];
 		if (hasGenre) {
-			parts.push(`género ${getChipLabel(genreChips, 'homeGenreId', activeGenre)}`);
+			const genreSummaryPart = getGenreSummaryPart();
+			if (genreSummaryPart) {
+				parts.push(genreSummaryPart);
+			}
+		}
+		if (hasSubgenre) {
+			parts.push(`subgénero ${getChipLabel(subgenreChips, 'homeSubgenreId', activeSubgenre)}`);
 		}
 		if (hasPlatform) {
 			parts.push(`plataforma ${getChipLabel(platformChips, 'homePlatformId', activePlatform)}`);
-		}
-		if (hasAbsoluteCinema) {
-			parts.push('sello Absolute Cinema');
-		}
-		if (hasPositiveVerdict) {
-			parts.push(`veredicto ${getChipLabel(positiveVerdictChips, 'homePositiveVerdictId', activePositiveVerdict)}`);
 		}
 		if (hasQuery) {
 			parts.push(`búsqueda "${input.value.trim()}"`);
@@ -751,9 +758,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			const payload: HomeState = {
 				query: input.value,
 				genre: activeGenre,
+				subgenre: activeSubgenre,
 				platform: activePlatform,
-				absoluteCinema: activeAbsoluteCinema,
-				positiveVerdict: activePositiveVerdict,
 				scrollY: Math.max(0, Math.round(window.scrollY)),
 				ts: Date.now(),
 			};
@@ -770,36 +776,23 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		return activeGenre;
 	};
 
+	const toggleSubgenre = (subgenreId: string | null): string | null => {
+		activeSubgenre = activeSubgenre === subgenreId ? null : subgenreId;
+		updateClearButtonVisibility();
+		return activeSubgenre;
+	};
+
 	const togglePlatform = (platformId: string | null): string | null => {
 		activePlatform = activePlatform === platformId ? null : platformId;
 		updateClearButtonVisibility();
 		return activePlatform;
 	};
 
-	const toggleAbsoluteCinema = (): boolean => {
-		activeAbsoluteCinema = !activeAbsoluteCinema;
-		if (activeAbsoluteCinema) {
-			activePositiveVerdict = null;
-		}
-		updateClearButtonVisibility();
-		return activeAbsoluteCinema;
-	};
-
-	const togglePositiveVerdict = (verdictId: string | null): string | null => {
-		activePositiveVerdict = activePositiveVerdict === verdictId ? null : verdictId;
-		if (activePositiveVerdict) {
-			activeAbsoluteCinema = false;
-		}
-		updateClearButtonVisibility();
-		return activePositiveVerdict;
-	};
-
 	const runFilter = (force = false): number => {
 		const query = normalize(input.value);
 		const genreKey = activeGenre ?? '';
+		const subgenreKey = activeSubgenre ?? '';
 		const platformKey = activePlatform ?? '';
-		const absoluteCinemaKey = activeAbsoluteCinema ? '1' : '';
-		const positiveVerdictKey = activePositiveVerdict ?? '';
 
 		updateClearButtonVisibility();
 
@@ -807,9 +800,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			!force &&
 			query === lastAppliedQuery &&
 			genreKey === lastAppliedGenre &&
-			platformKey === lastAppliedPlatform &&
-			absoluteCinemaKey === lastAppliedAbsoluteCinema &&
-			positiveVerdictKey === lastAppliedPositiveVerdict
+			subgenreKey === lastAppliedSubgenre &&
+			platformKey === lastAppliedPlatform
 		) {
 			const visibleCount = getVisibleEntries().length;
 			renderSuggestions(query, getSuggestionMatches(query, getVisibleEntries()));
@@ -819,9 +811,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		lastAppliedQuery = query;
 		lastAppliedGenre = genreKey;
+		lastAppliedSubgenre = subgenreKey;
 		lastAppliedPlatform = platformKey;
-		lastAppliedAbsoluteCinema = absoluteCinemaKey;
-		lastAppliedPositiveVerdict = positiveVerdictKey;
 
 		const matchingEntries: MovieIndexEntry[] = [];
 		const shouldShowFullCatalogMatches = hasActiveCatalogQuery();
@@ -835,11 +826,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			}
 
 			const genreMatch = !activeGenre || entry.genres.has(activeGenre);
+			const subgenreMatch = !activeSubgenre || entry.subgenres.has(activeSubgenre);
 			const platformMatch = !activePlatform || entry.platforms.has(activePlatform);
-			const absoluteCinemaMatch = !activeAbsoluteCinema || entry.absoluteCinema;
-			const positiveVerdictMatch = !activePositiveVerdict || entry.positiveVerdict === activePositiveVerdict;
 			const queryMatch = query.length === 0 || entry.searchable.includes(query);
-			const show = genreMatch && platformMatch && absoluteCinemaMatch && positiveVerdictMatch && queryMatch;
+			const show = genreMatch && subgenreMatch && platformMatch && queryMatch;
 
 			if (show) {
 				matchingEntries.push(entry);
@@ -867,6 +857,15 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
+	const applySubgenreUI = (): void => {
+		for (const chip of subgenreChips) {
+			const chipSubgenre = chip.dataset.homeSubgenreId;
+			const isActive = Boolean(chipSubgenre && chipSubgenre === activeSubgenre);
+			chip.classList.toggle('is-active', isActive);
+			chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+		}
+	};
+
 	const applyPlatformUI = (): void => {
 		for (const chip of platformChips) {
 			const chipPlatform = chip.dataset.homePlatformId;
@@ -876,33 +875,15 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
-	const applyAbsoluteCinemaUI = (): void => {
-		if (!(absoluteCinemaChip instanceof HTMLButtonElement)) return;
-
-		absoluteCinemaChip.classList.toggle('is-active', activeAbsoluteCinema);
-		absoluteCinemaChip.setAttribute('aria-pressed', activeAbsoluteCinema ? 'true' : 'false');
-	};
-
-	const applyPositiveVerdictUI = (): void => {
-		for (const chip of positiveVerdictChips) {
-			const chipVerdict = chip.dataset.homePositiveVerdictId;
-			const isActive = Boolean(chipVerdict && chipVerdict === activePositiveVerdict);
-			chip.classList.toggle('is-active', isActive);
-			chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-		}
-	};
-
 	const resetCatalog = (mode: StatusMode = 'catalog'): number => {
 		activeGenre = null;
+		activeSubgenre = null;
 		activePlatform = null;
-		activeAbsoluteCinema = false;
-		activePositiveVerdict = null;
 		input.value = '';
 		hideSuggestions();
 		applyGenreUI();
+		applySubgenreUI();
 		applyPlatformUI();
-		applyAbsoluteCinemaUI();
-		applyPositiveVerdictUI();
 		updateClearButtonVisibility();
 		removeStoredHomeState();
 		setReturnBehavior(null);
@@ -989,35 +970,28 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (typeof parsed.genre === 'string' && parsed.genre.length > 0) {
 			activeGenre = parsed.genre;
 		}
+		if (typeof parsed.subgenre === 'string' && parsed.subgenre.length > 0) {
+			activeSubgenre = parsed.subgenre;
+		}
 		if (typeof parsed.platform === 'string' && parsed.platform.length > 0) {
 			activePlatform = parsed.platform;
 		}
-		if (typeof parsed.absoluteCinema === 'boolean') {
-			activeAbsoluteCinema = parsed.absoluteCinema;
-		}
-		if (typeof parsed.positiveVerdict === 'string' && parsed.positiveVerdict.length > 0) {
-			activePositiveVerdict = parsed.positiveVerdict;
-			activeAbsoluteCinema = false;
-		}
 
 		applyGenreUI();
+		applySubgenreUI();
 		applyPlatformUI();
-		applyAbsoluteCinemaUI();
-		applyPositiveVerdictUI();
 		updateClearButtonVisibility();
 
 		lastAppliedQuery = '';
 		lastAppliedGenre = '';
+		lastAppliedSubgenre = '';
 		lastAppliedPlatform = '';
-		lastAppliedAbsoluteCinema = '';
-		lastAppliedPositiveVerdict = '';
 
 		const mode: StatusMode =
 			((typeof parsed.query === 'string' && parsed.query.trim().length > 0) ||
 				Boolean(activeGenre) ||
-				Boolean(activePlatform) ||
-				activeAbsoluteCinema ||
-				Boolean(activePositiveVerdict))
+				Boolean(activeSubgenre) ||
+				Boolean(activePlatform))
 				? 'search'
 				: 'catalog';
 		const visibleCount = runFilter(true);
@@ -1049,6 +1023,22 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		});
 	}
 
+	for (const chip of subgenreChips) {
+		chip.addEventListener('click', () => {
+			const nextSubgenre = chip.dataset.homeSubgenreId ?? null;
+			const isResetInteraction = activeSubgenre === nextSubgenre;
+			toggleSubgenre(nextSubgenre);
+			if (isResetInteraction) {
+				input.value = '';
+			}
+			applySubgenreUI();
+			showStatus(searchLoadingPhrases);
+			const visibleCount = runFilter(true);
+			syncStatusWithVisiblePosters('search', visibleCount);
+			persistHomeState();
+		});
+	}
+
 	for (const chip of platformChips) {
 		chip.addEventListener('click', () => {
 			const nextPlatform = chip.dataset.homePlatformId ?? null;
@@ -1065,41 +1055,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		});
 	}
 
-	absoluteCinemaChip?.addEventListener('click', () => {
-		const isResetInteraction = activeAbsoluteCinema;
-		toggleAbsoluteCinema();
-		if (isResetInteraction) {
-			input.value = '';
-		}
-		applyAbsoluteCinemaUI();
-		applyPositiveVerdictUI();
-		showStatus(searchLoadingPhrases);
-		const visibleCount = runFilter(true);
-		syncStatusWithVisiblePosters('search', visibleCount);
-		persistHomeState();
-	});
-
-	for (const chip of positiveVerdictChips) {
-		chip.addEventListener('click', () => {
-			const nextVerdict = chip.dataset.homePositiveVerdictId ?? null;
-			const isResetInteraction = activePositiveVerdict === nextVerdict;
-			togglePositiveVerdict(nextVerdict);
-			if (isResetInteraction) {
-				input.value = '';
-			}
-			applyAbsoluteCinemaUI();
-			applyPositiveVerdictUI();
-			showStatus(searchLoadingPhrases);
-			const visibleCount = runFilter(true);
-			syncStatusWithVisiblePosters('search', visibleCount);
-			persistHomeState();
-		});
-	}
-
 	applyGenreUI();
+	applySubgenreUI();
 	applyPlatformUI();
-	applyAbsoluteCinemaUI();
-	applyPositiveVerdictUI();
 	updateClearButtonVisibility();
 
 	input.addEventListener('input', () => {

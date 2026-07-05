@@ -10,9 +10,8 @@ import {
 	getLatestReviewMovies,
 	getMovies,
 	getPosterUrl,
-	getPositiveVerdictFilterOptions,
+	getSubgenreFilterOptions,
 	getUpcomingMovieReleases,
-	isAbsoluteCinemaMovie,
 	RECOMMENDATION_GENRE_OPTIONS,
 } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
@@ -23,9 +22,14 @@ const cinemaNews = await getCinemaNews();
 const movies = getMovies();
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
-const absoluteCinemaCount = movies.filter(isAbsoluteCinemaMovie).length;
-const positiveVerdictOptions = getPositiveVerdictFilterOptions(movies);
-const hasSpecialFilters = absoluteCinemaCount > 0 || positiveVerdictOptions.length > 0;
+const subgenreOptions = getSubgenreFilterOptions(movies);
+const editorialGenreFilterIds = new Set(['superheroes', 'oscar-mejor-pelicula', 'pelicula-nacional']);
+const primaryGenreOptions = RECOMMENDATION_GENRE_OPTIONS.filter(
+	(option) => !editorialGenreFilterIds.has(option.id),
+);
+const editorialFilterOptions = RECOMMENDATION_GENRE_OPTIONS.filter((option) =>
+	editorialGenreFilterIds.has(option.id),
+);
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 5);
 const editorialRankings = getEditorialRankings(movies);
 const editorialRankingPools = editorialRankings.map((ranking) => ({
@@ -487,9 +491,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						<div class="home-results-tools__header">
 							<div>
 								<h2 id="home-results-tools-title">Películas publicadas</h2>
-								<p class="home-results-tools__intro">
-									Usá la búsqueda o los filtros para abrir el catálogo completo.
-								</p>
 							</div>
 							<p class="home-results-tools__counter" aria-label={`${movieCountLabel} películas en el catálogo`}>
 								<strong>{movieCountLabel}</strong>
@@ -497,86 +498,105 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 							</p>
 						</div>
 						<div class="home-results-tools__filters">
-							{
-								platformOptions.length > 0 && (
-									<section class="home-platform-filter" data-home-platform-filter>
-										<p class="home-genre-filter__label">Dónde la querés ver</p>
-										<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
-											{
-												platformOptions.map((platform) => (
-													<button
-														type="button"
-														class="home-platform-filter__chip"
-														data-home-platform-chip
-														data-home-platform-id={platform.normalizedLabel}
-														data-home-platform-label={platform.displayLabel}
-														aria-label={`Filtrar por ${platform.displayLabel}`}
-														aria-pressed="false"
-														title={platform.displayLabel}
-													>
-														<PlatformBadge
-															platform={platform.normalizedLabel}
-															className="home-platform-filter__badge"
-														/>
-													</button>
-												))
-											}
-										</div>
-									</section>
-								)
-							}
-							<section class="home-genre-filter" data-home-genre-filter>
-								<p class="home-genre-filter__label">Qué género pinta</p>
-								<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-									{
-										RECOMMENDATION_GENRE_OPTIONS.map((genre) => (
-											<button
-												type="button"
-												class="home-genre-filter__chip"
-												data-home-genre-chip
-												data-home-genre-id={genre.id}
-												aria-pressed="false"
-											>
-												{genre.label}
-											</button>
-										))
-									}
-								</div>
-							</section>
-							{
-								hasSpecialFilters && (
-									<section class="home-special-filter" data-home-special-filter>
+							<div class="home-results-tools__filter-column home-results-tools__filter-column--left">
+								{
+									platformOptions.length > 0 && (
+										<section class="home-platform-filter" data-home-platform-filter>
+											<p class="home-genre-filter__label">Dónde la querés ver</p>
+											<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+												{
+													platformOptions.map((platform) => (
+														<button
+															type="button"
+															class="home-platform-filter__chip"
+															data-home-platform-chip
+															data-home-platform-id={platform.normalizedLabel}
+															data-home-platform-label={platform.displayLabel}
+															aria-label={`Filtrar por ${platform.displayLabel}`}
+															aria-pressed="false"
+															title={platform.displayLabel}
+														>
+															<PlatformBadge
+																platform={platform.normalizedLabel}
+																className="home-platform-filter__badge"
+															/>
+														</button>
+													))
+												}
+											</div>
+										</section>
+									)
+								}
+								{
+									editorialFilterOptions.length > 0 && (
+										<section class="home-genre-filter home-genre-filter--editorial" data-home-editorial-filter>
+											<p class="home-genre-filter__label">Otros filtros</p>
+											<div class="home-genre-filter__chips" role="group" aria-label="Filtros editoriales">
+												{
+													editorialFilterOptions.map((genre) => (
+														<button
+															type="button"
+															class="home-genre-filter__chip home-genre-filter__chip--editorial"
+															data-home-genre-chip
+															data-home-genre-id={genre.id}
+															data-home-genre-kind="editorial"
+															aria-pressed="false"
+														>
+															{genre.label}
+														</button>
+													))
+												}
+											</div>
+										</section>
+									)
+								}
+							</div>
+							<div class="home-results-tools__filter-column home-results-tools__filter-column--right">
+								<section class="home-genre-filter" data-home-genre-filter>
+									<p class="home-genre-filter__label">Qué género pinta</p>
+									<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
 										{
-											absoluteCinemaCount > 0 && (
+											primaryGenreOptions.map((genre) => (
 												<button
 													type="button"
-													class="home-special-filter__chip"
-													data-home-absolute-cinema-chip
+													class="home-genre-filter__chip"
+													data-home-genre-chip
+													data-home-genre-id={genre.id}
+													data-home-genre-kind="genre"
 													aria-pressed="false"
 												>
-													<span>Absolute Cinema</span>
-													<span>{absoluteCinemaCount}</span>
-												</button>
-											)
-										}
-										{
-											positiveVerdictOptions.map((verdictOption) => (
-												<button
-													type="button"
-													class="home-special-filter__chip"
-													data-home-positive-verdict-chip
-													data-home-positive-verdict-id={verdictOption.id}
-													data-home-positive-verdict-label={verdictOption.label}
-													aria-pressed="false"
-												>
-													<span>{verdictOption.label}</span>
-													<span>{verdictOption.count}</span>
+													{genre.label}
 												</button>
 											))
 										}
-									</section>
-								)
-							}
+									</div>
+								</section>
+								{
+									subgenreOptions.length > 0 && (
+										<section class="home-genre-filter home-genre-filter--subgenre" data-home-subgenre-filter>
+											<div class="home-genre-filter__heading">
+												<p class="home-genre-filter__label">Subgéneros</p>
+												<p class="home-genre-filter__hint">Para afinar más la búsqueda</p>
+											</div>
+											<div class="home-genre-filter__chips" role="group" aria-label="Filtros por subgénero">
+												{
+													subgenreOptions.map((subgenre) => (
+														<button
+															type="button"
+															class="home-genre-filter__chip home-genre-filter__chip--subgenre"
+															data-home-subgenre-chip
+															data-home-subgenre-id={subgenre.id}
+															aria-pressed="false"
+														>
+															{subgenre.label}
+														</button>
+													))
+												}
+											</div>
+										</section>
+									)
+								}
+							</div>
 						</div>
 						<div class="home-results-tools__feedback">
 							<div

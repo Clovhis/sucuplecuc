@@ -23,7 +23,6 @@ export type RecommendationGenreId =
 	| 'comedia'
 	| 'documental'
 	| 'terror'
-	| 'gore'
 	| 'drama'
 	| 'thriller'
 	| 'sci-fi'
@@ -45,6 +44,19 @@ export interface PositiveVerdictFilterOption {
 	id: string;
 	label: string;
 	count: number;
+}
+
+export interface SubgenreFilterOption {
+	id: string;
+	label: string;
+	count: number;
+}
+
+interface CanonicalSubgenreDefinition {
+	id: string;
+	label: string;
+	matchers: string[];
+	genreHints?: RecommendationGenreId[];
 }
 
 export interface MovieLinkRecommendation {
@@ -94,7 +106,6 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'comedia', label: 'Comedia' },
 	{ id: 'documental', label: 'Documentales' },
 	{ id: 'terror', label: 'Terror' },
-	{ id: 'gore', label: 'Gore' },
 	{ id: 'drama', label: 'Drama' },
 	{ id: 'thriller', label: 'Thriller' },
 	{ id: 'sci-fi', label: 'Sci-Fi' },
@@ -107,6 +118,93 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'oscar-mejor-pelicula', label: 'Ganadoras del Oscar' },
 	{ id: 'pelicula-nacional', label: 'Cine nacional' },
 ];
+
+const SUBGENRE_DEFINITIONS: CanonicalSubgenreDefinition[] = [
+	{ id: 'gore', label: 'Gore', matchers: ['gore', 'splatter'], genreHints: ['terror'] },
+	{
+		id: 'found-footage',
+		label: 'Found Footage',
+		matchers: ['found footage', 'found-footage'],
+		genreHints: ['terror'],
+	},
+	{ id: 'slasher', label: 'Slasher', matchers: ['slasher'], genreHints: ['terror'] },
+	{
+		id: 'romcom',
+		label: 'RomCom',
+		matchers: ['romcom', 'rom-com', 'rom com', 'comedia romantica', 'romantic comedy'],
+		genreHints: ['comedia', 'romance'],
+	},
+	{
+		id: 'body-horror',
+		label: 'Body Horror',
+		matchers: ['body horror'],
+		genreHints: ['terror'],
+	},
+	{
+		id: 'psychological',
+		label: 'Psicológico',
+		matchers: ['psychological', 'psicologico', 'psicologica'],
+		genreHints: ['thriller'],
+	},
+	{
+		id: 'supernatural',
+		label: 'Sobrenatural',
+		matchers: ['supernatural', 'sobrenatural'],
+		genreHints: ['terror'],
+	},
+	{ id: 'heist', label: 'Heist', matchers: ['heist'], genreHints: ['crimen'] },
+	{
+		id: 'road-movie',
+		label: 'Road Movie',
+		matchers: ['road movie', 'road-movie'],
+		genreHints: ['aventura'],
+	},
+	{
+		id: 'coming-of-age',
+		label: 'Coming of Age',
+		matchers: ['coming of age', 'coming-of-age'],
+		genreHints: ['drama'],
+	},
+	{
+		id: 'mockumentary',
+		label: 'Mockumentary',
+		matchers: ['mockumentary', 'falso documental'],
+		genreHints: ['comedia', 'documental'],
+	},
+	{ id: 'exploitation', label: 'Exploitation', matchers: ['exploitation'], genreHints: ['terror'] },
+];
+
+const SUBGENRE_SORT_ORDER = SUBGENRE_DEFINITIONS.map((definition) => definition.id);
+const GENERIC_SUBGENRE_TOKENS = new Set([
+	'accion',
+	'action',
+	'aventura',
+	'adventure',
+	'anime',
+	'animacion',
+	'animation',
+	'comedia',
+	'comedy',
+	'crimen',
+	'crime',
+	'documental',
+	'documentary',
+	'drama',
+	'fantasia',
+	'fantasy',
+	'horror',
+	'romance',
+	'romantica',
+	'sci fi',
+	'sci-fi',
+	'scifi',
+	'science fiction',
+	'superheroes',
+	'superhero',
+	'suspenso',
+	'terror',
+	'thriller',
+]);
 
 const MAX_VERDICT_LABEL_LENGTH = 21;
 const MAX_SYNOPSIS_LENGTH = 320;
@@ -292,6 +390,17 @@ function validateMovies(movies: Movie[]): void {
 				.filter(Boolean);
 			if (genres.length !== movie.genres.length) {
 				throw new Error(`Movie "${slug}" has empty or invalid genres entries.`);
+			}
+		}
+		if (movie.subgenres !== undefined) {
+			if (!Array.isArray(movie.subgenres)) {
+				throw new Error(`Movie "${slug}" has invalid subgenres format.`);
+			}
+			const subgenres = movie.subgenres
+				.map((subgenre) => (typeof subgenre === 'string' ? subgenre.trim() : ''))
+				.filter(Boolean);
+			if (subgenres.length !== movie.subgenres.length) {
+				throw new Error(`Movie "${slug}" has empty or invalid subgenres entries.`);
 			}
 		}
 		if (movie.country !== undefined && (!movie.country || movie.country.trim().length < 2)) {
@@ -795,6 +904,158 @@ export function normalizeSearchText(value: string): string {
 		.trim();
 }
 
+function cleanMovieTaxonomyList(values: string[] | undefined): string[] {
+	return Array.isArray(values)
+		? values
+				.map((value) => (typeof value === 'string' ? value.trim() : ''))
+				.filter(Boolean)
+		: [];
+}
+
+function splitMovieTaxonomyFragments(value: string): string[] {
+	return value
+		.split(/[,/|]/g)
+		.map((fragment) => fragment.trim())
+		.filter(Boolean);
+}
+
+function getSubgenreDefinition(value: string): CanonicalSubgenreDefinition | undefined {
+	const normalized = normalizeSearchText(value).replace(/\s+/g, ' ');
+	if (!normalized) {
+		return undefined;
+	}
+
+	return SUBGENRE_DEFINITIONS.find((definition) =>
+		definition.matchers.some((matcher) => normalized.includes(matcher)),
+	);
+}
+
+function createFallbackSubgenreLabel(value: string): string {
+	const normalized = String(value ?? '').trim().replace(/\s+/g, ' ');
+	if (!normalized) {
+		return 'Subgénero';
+	}
+
+	return normalized.replace(/\b([a-záéíóúñü])([\p{L}\p{M}]*)/gu, (_, first: string, rest: string) => {
+		const head = first.toLocaleUpperCase('es-AR');
+		return `${head}${rest.toLocaleLowerCase('es-AR')}`;
+	});
+}
+
+function createFallbackSubgenreOption(value: string): { id: string; label: string } | null {
+	const label = createFallbackSubgenreLabel(value);
+	const id = normalizeSearchText(label).replace(/\s+/g, '-');
+
+	if (!label || !id) {
+		return null;
+	}
+
+	return { id, label };
+}
+
+function isGenericSubgenreToken(value: string, normalizedCategory: string): boolean {
+	return value === normalizedCategory || GENERIC_SUBGENRE_TOKENS.has(value);
+}
+
+function getMovieSubgenreOptions(
+	movie: Pick<Movie, 'category' | 'genres' | 'subgenres'>,
+): Array<{ id: string; label: string }> {
+	const optionsById = new Map<string, { id: string; label: string }>();
+	const normalizedCategory = normalizeSearchText(movie.category ?? '').replace(/\s+/g, ' ');
+
+	const addValue = (value: string, allowCustom: boolean): void => {
+		const fragments = [value, ...splitMovieTaxonomyFragments(value)];
+
+		for (const fragment of fragments) {
+			const normalizedFragment = normalizeSearchText(fragment).replace(/\s+/g, ' ');
+			if (!normalizedFragment) {
+				continue;
+			}
+
+			const canonicalOption = getSubgenreDefinition(fragment);
+			if (canonicalOption) {
+				optionsById.set(canonicalOption.id, {
+					id: canonicalOption.id,
+					label: canonicalOption.label,
+				});
+				continue;
+			}
+
+			if (isGenericSubgenreToken(normalizedFragment, normalizedCategory)) {
+				continue;
+			}
+
+			if (!allowCustom) {
+				continue;
+			}
+
+			const fallbackOption = createFallbackSubgenreOption(fragment);
+			if (fallbackOption) {
+				optionsById.set(fallbackOption.id, fallbackOption);
+			}
+		}
+	};
+
+	for (const subgenre of cleanMovieTaxonomyList(movie.subgenres)) {
+		addValue(subgenre, true);
+	}
+
+	for (const genre of cleanMovieTaxonomyList(movie.genres)) {
+		addValue(genre, false);
+	}
+
+	return Array.from(optionsById.values()).sort((left, right) => {
+		const leftRank = SUBGENRE_SORT_ORDER.indexOf(left.id);
+		const rightRank = SUBGENRE_SORT_ORDER.indexOf(right.id);
+		const normalizedLeftRank = leftRank === -1 ? SUBGENRE_SORT_ORDER.length : leftRank;
+		const normalizedRightRank = rightRank === -1 ? SUBGENRE_SORT_ORDER.length : rightRank;
+
+		return normalizedLeftRank - normalizedRightRank || left.label.localeCompare(right.label, 'es');
+	});
+}
+
+export function getMovieSubgenres(movie: Pick<Movie, 'category' | 'genres' | 'subgenres'>): string[] {
+	return getMovieSubgenreOptions(movie).map((option) => option.label);
+}
+
+export function getCatalogFilterSubgenres(movie: Pick<Movie, 'category' | 'genres' | 'subgenres'>): string[] {
+	return getMovieSubgenreOptions(movie).map((option) => option.id);
+}
+
+export function getSubgenreFilterOptions(
+	movies: Pick<Movie, 'category' | 'genres' | 'subgenres'>[],
+): SubgenreFilterOption[] {
+	const countsByOption = new Map<string, SubgenreFilterOption>();
+
+	for (const movie of movies) {
+		for (const option of getMovieSubgenreOptions(movie)) {
+			const current = countsByOption.get(option.id);
+			countsByOption.set(option.id, {
+				id: option.id,
+				label: option.label,
+				count: (current?.count ?? 0) + 1,
+			});
+		}
+	}
+
+	return Array.from(countsByOption.values()).sort((left, right) => {
+		const leftRank = SUBGENRE_SORT_ORDER.indexOf(left.id);
+		const rightRank = SUBGENRE_SORT_ORDER.indexOf(right.id);
+		const normalizedLeftRank = leftRank === -1 ? SUBGENRE_SORT_ORDER.length : leftRank;
+		const normalizedRightRank = rightRank === -1 ? SUBGENRE_SORT_ORDER.length : rightRank;
+
+		return (
+			normalizedLeftRank - normalizedRightRank ||
+			right.count - left.count ||
+			left.label.localeCompare(right.label, 'es')
+		);
+	});
+}
+
+function getGenreFilterOptionById(genreId: RecommendationGenreId): RecommendationGenreOption | undefined {
+	return RECOMMENDATION_GENRE_OPTIONS.find((option) => option.id === genreId);
+}
+
 export function getPositiveVerdictFilterId(value: string): string {
 	return normalizeSearchText(value).replace(/\s+/g, '-');
 }
@@ -848,6 +1109,12 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	if (normalized.includes('accion') || normalized === 'action') {
 		target.add('accion');
 	}
+	const matchingSubgenre = getSubgenreDefinition(normalized);
+	if (matchingSubgenre?.genreHints) {
+		for (const hint of matchingSubgenre.genreHints) {
+			target.add(hint);
+		}
+	}
 	if (normalized.includes('comedia')) {
 		target.add('comedia');
 	}
@@ -856,9 +1123,6 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	}
 	if (normalized.includes('terror') || normalized.includes('horror')) {
 		target.add('terror');
-	}
-	if (normalized.includes('gore') || normalized.includes('splatter')) {
-		target.add('gore');
 	}
 	if (normalized.includes('drama') || normalized.includes('biografic')) {
 		target.add('drama');
@@ -998,8 +1262,8 @@ function hasAnyToken(haystack: string, tokens: string[]): boolean {
 	return tokens.some((token) => haystack.includes(token));
 }
 
-function isAnimationOrAnimeMovie(movie: Pick<Movie, 'category' | 'genres'>): boolean {
-	const genreText = normalizeSearchText([movie.category ?? '', ...(movie.genres ?? [])].join(' '));
+function isAnimationOrAnimeMovie(movie: Pick<Movie, 'category' | 'genres' | 'subgenres'>): boolean {
+	const genreText = normalizeSearchText([movie.category ?? '', ...(movie.genres ?? []), ...(movie.subgenres ?? [])].join(' '));
 	return (
 		genreText.includes('animacion') ||
 		genreText.includes('animation') ||
@@ -1008,7 +1272,7 @@ function isAnimationOrAnimeMovie(movie: Pick<Movie, 'category' | 'genres'>): boo
 }
 
 function isMarvelOrDcSuperheroMovie(
-	movie: Pick<Movie, 'slug' | 'title' | 'originalTitle' | 'category' | 'genres'>,
+	movie: Pick<Movie, 'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'subgenres'>,
 ): boolean {
 	if (isAnimationOrAnimeMovie(movie)) {
 		return false;
@@ -1029,12 +1293,12 @@ function isMarvelOrDcSuperheroMovie(
 export function getRecommendationGenres(
 	movie: Pick<
 		Movie,
-		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'country' | 'isArgentinian' | 'awards'
+		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'subgenres' | 'country' | 'isArgentinian' | 'awards'
 	>,
 ): RecommendationGenreId[] {
 	const genreSet = new Set<RecommendationGenreId>();
 	let hasAnimeToken = false;
-	const sourceGenres = Array.isArray(movie.genres) && movie.genres.length > 0 ? movie.genres : [];
+	const sourceGenres = [...cleanMovieTaxonomyList(movie.genres), ...cleanMovieTaxonomyList(movie.subgenres)];
 
 	const normalizedCategory = normalizeSearchText(movie.category ?? '');
 	if (normalizedCategory.includes('anime')) {
@@ -1082,18 +1346,33 @@ export function getRecommendationGenres(
 export function getCatalogFilterGenres(
 	movie: Pick<
 		Movie,
-		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'country' | 'isArgentinian' | 'awards'
+		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'subgenres' | 'country' | 'isArgentinian' | 'awards'
 	>,
 ): RecommendationGenreId[] {
 	const genreSet = new Set<RecommendationGenreId>();
 	const normalizedCategory = normalizeSearchText(movie.category ?? '');
 	let hasAnimeToken = false;
+	const sourceGenres = [...cleanMovieTaxonomyList(movie.genres), ...cleanMovieTaxonomyList(movie.subgenres)];
 
 	if (normalizedCategory.includes('anime')) {
 		hasAnimeToken = true;
 	}
 
 	mapGenreToken(movie.category ?? '', genreSet);
+	for (const sourceGenre of sourceGenres) {
+		const normalizedGenre = normalizeSearchText(sourceGenre);
+		if (normalizedGenre.includes('anime')) {
+			hasAnimeToken = true;
+		}
+		mapGenreToken(sourceGenre, genreSet);
+		for (const chunk of sourceGenre.split(/[,/|]/g)) {
+			const normalizedChunk = normalizeSearchText(chunk);
+			if (normalizedChunk.includes('anime')) {
+				hasAnimeToken = true;
+			}
+			mapGenreToken(chunk, genreSet);
+		}
+	}
 
 	if (hasAnimeToken && movie.country?.trim().toUpperCase() === 'JP') {
 		// The home filter should keep Japanese anime out of generic animation.
@@ -1116,6 +1395,28 @@ export function getCatalogFilterGenres(
 	return RECOMMENDATION_GENRE_OPTIONS.map((option) => option.id).filter((genreId) =>
 		genreSet.has(genreId),
 	);
+}
+
+export function getPrimaryGenreLabel(
+	movie: Pick<
+		Movie,
+		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'subgenres' | 'country' | 'isArgentinian' | 'awards'
+	>,
+): string {
+	const categoryGenreSet = new Set<RecommendationGenreId>();
+	mapGenreToken(movie.category ?? '', categoryGenreSet);
+	const categoryGenre = RECOMMENDATION_GENRE_OPTIONS.find((option) => categoryGenreSet.has(option.id));
+
+	if (categoryGenre) {
+		return categoryGenre.label;
+	}
+
+	const catalogGenreId = getCatalogFilterGenres(movie)[0];
+	if (catalogGenreId) {
+		return getGenreFilterOptionById(catalogGenreId)?.label ?? movie.category?.trim() ?? 'Sin género';
+	}
+
+	return movie.category?.trim() || 'Sin género';
 }
 
 function getMovieLinkRecommendation(movie: Pick<Movie, 'slug' | 'title' | 'year'>): MovieLinkRecommendation {

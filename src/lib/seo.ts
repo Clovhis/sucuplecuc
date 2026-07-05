@@ -253,6 +253,7 @@ export function createMovieStructuredData(
 		| 'audienceRating'
 		| 'category'
 		| 'genres'
+		| 'subgenres'
 		| 'poster'
 		| 'screenshots'
 		| 'director'
@@ -287,7 +288,9 @@ export function createMovieStructuredData(
 			'@type': 'Person',
 			name: actor,
 		})),
-		genre: movie.genres?.length ? movie.genres : [movie.category],
+		genre: [...(movie.genres ?? []), ...(movie.subgenres ?? [])].length
+			? [...(movie.genres ?? []), ...(movie.subgenres ?? [])]
+			: [movie.category],
 		productionCompany: {
 			'@type': 'Organization',
 			name: movie.productionCompany,
