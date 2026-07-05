@@ -883,7 +883,11 @@ export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel' | 
 		return ABSOLUTE_CINEMA_LABEL;
 	}
 	if (movie.verdictLabel?.trim()) {
-		return movie.verdictLabel.trim();
+		const verdictLabel = movie.verdictLabel.trim();
+		if (normalizeSearchText(verdictLabel).replace(/\s+/g, ' ') === 'se deja ver') {
+			return 'Mas o menos';
+		}
+		return verdictLabel;
 	}
 	return VERDICT_LABELS[movie.verdict] ?? 'Sin definir';
 }
