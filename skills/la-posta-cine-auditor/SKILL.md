@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-auditor
-description: Audit recently added or revalidated La Posta Cine movie entries after `la-posta-cine-add-movie`, `la-posta-cine-cartelera-revalidator`, or any bulk/backfill load. Use when Codex needs to verify newly added or platform-adjusted `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, trailer validity, review quality, awards structure, single or multi-platform labels, catalog sync, and safe diff scope before or after publishing.
+description: Audit recently added or revalidated La Posta Cine movie entries after `la-posta-cine-add-movie`, `la-posta-cine-cartelera-revalidator`, or any bulk/backfill load. Use when Codex needs to verify newly added or platform-adjusted `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, trailer validity, review quality, awards structure, category/genres/subgenres coherence, single or multi-platform labels, catalog sync, and safe diff scope before or after publishing.
 ---
 
 # la-posta-cine-auditor
@@ -100,6 +100,8 @@ The bundled script checks:
 - traceable profile presence for every credited director/main cast member (`IMDb`, `Wikidata`, `TMDb`, `Plex`, `Anime-Planet`, etc.)
 - editorial recommendation completeness for `becauseYouLiked` and `related`
 - editorial recommendation slugs that resolve to real movie entries
+- `subgenres` shape and hygiene: non-empty array strings when present, no broad-genre duplicates, canonical-label preference, and no accidental alias drift
+- explicit subgenre carry-over: if a supported site subgenre is detectable in `category` or `genres`, it must also be mirrored deliberately in `subgenres`
 - manual Share/social fields in movie JSON; Share links derive globally from slug/canonical URL and must not live in movie data
 - automatic meter eligibility, matching the movie detail page priority: primary `Drama`/`Romance`/`Romántica` shows Lagrimómetro; if not, primary laugh-first `Comedia` shows Jajámetro; if neither, primary `Terror` shows Cagazómetro; if none of those, primary `Accion`/`Acción` shows Explosiómetro. Secondary genres alone do not trigger any meter, and movie JSON must not include manual meter fields
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
@@ -181,6 +183,7 @@ The automatic meter check is mandatory too:
 
 - treat any manual `jajametro`, `jajametroScore`, `lagrimometro`, `lagrimometroScore`, `cagazometro`, `cagazometroScore`, `explosiometro`, or `explosiometroScore` field as a hard stop
 - verify the primary `category` is intentional because meters do not activate from secondary `genres`
+- remember that `subgenres` help homepage/detail taxonomy, but they do not replace `category` for automatic meter eligibility
 - apply the same priority as the page: `Drama`/`Romance`/`Romántica` wins first, then laugh-first `Comedia`, then `Terror`, then `Accion`/`Acción`
 - for primary `Drama`, `Romance`, `Romántica`, or `Comedia romántica`, expect only Lagrimómetro; for primary laugh-first `Comedia` with no drama/romance token, expect only Jajámetro; for primary `Terror` with no drama/romance/comedy token, expect only Cagazómetro; for primary `Accion`/`Acción` with no drama/romance/comedy/terror token, expect only Explosiómetro
 - when a meter score seems tonally wrong, verify reception through trustworthy sources such as Rotten Tomatoes, Metacritic, IMDb, reputable critics, or official materials before changing review/category data
@@ -190,6 +193,14 @@ The Share field check is mandatory too:
 - treat any manual `share`, `shareUrl`, `shareText`, `shareLinks`, `social`, `socialLinks`, `whatsapp`, `whatsappUrl`, `xShare`, `xShareUrl`, `twitter`, `twitterUrl`, `instagram`, `instagramUrl`, `tiktok`, `tiktokUrl`, `copyUrl`, or `canonicalUrl` field as a hard stop
 - remove manual Share/social fields from movie JSON because the site-level Share panel is automatic
 - in a content-only audit, treat changes to Share UI/assets as forbidden site-code changes unless explicitly requested by the user
+
+The subgenre check is mandatory too:
+
+- treat malformed `subgenres` values as a hard stop
+- treat broad labels such as `Terror`, `Drama`, `Comedia`, `Acción`, `Thriller`, etc. inside `subgenres` as a hard stop
+- prefer the current canonical labels used by the site filters: `Gore`, `Found Footage`, `Slasher`, `RomCom`, `Body Horror`, `Psicológico`, `Sobrenatural`, `Heist`, `Road Movie`, `Coming of Age`, `Mockumentary`, `Exploitation`
+- if a supported subgenre is only buried in `genres` or `category` (for example `Terror corporal`) and missing from `subgenres`, treat it as a hard stop for new/revalidated loads and mirror it explicitly (`Body Horror` in that example)
+- custom subgenres are allowed only when intentional; if they are outside the canonical list, verify they should ship as custom chips instead of accidental taxonomy noise
 
 If a finding depends on external truth, verify it with primary or trustworthy sources before editing:
 
@@ -223,3 +234,4 @@ Report:
 - explicit confirmation that deceased people do not render as living ages and that animation/anime titles use original voice cast in `mainCast`
 - explicit confirmation that credited people with exclusive profiles still resolve to their dynamic `/personas/<slug>/` pages
 - explicit confirmation that no audited movie JSON contains manual Share/social fields and no Share UI/assets were changed in a content-only audit
+- explicit confirmation that any supported subgenre signal now lives in `subgenres` with deliberate labeling instead of being hidden only in `genres`/`category`

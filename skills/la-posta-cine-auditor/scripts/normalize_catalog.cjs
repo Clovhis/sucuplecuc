@@ -94,11 +94,15 @@ function buildMovieData(rootDir) {
 			const genreTokens = Array.isArray(movie.genres)
 				? movie.genres.flatMap((genre) => normalizeText(genre).split(' ').filter(Boolean))
 				: [];
+			const subgenreTokens = Array.isArray(movie.subgenres)
+				? movie.subgenres.flatMap((subgenre) => normalizeText(subgenre).split(' ').filter(Boolean))
+				: [];
 			return {
 				filePath,
 				movie,
 				categoryTokens,
 				genreTokens,
+				subgenreTokens,
 				director: normalizeText(movie.director),
 				cast: new Set((Array.isArray(movie.mainCast) ? movie.mainCast : []).map((name) => normalizeText(name)).filter(Boolean)),
 				country: normalizeText(movie.country),
@@ -126,11 +130,15 @@ function scorePair(source, target) {
 	let score = 0;
 	const sourceCategories = new Set(source.categoryTokens);
 	const sourceGenres = new Set(source.genreTokens);
+	const sourceSubgenres = new Set(source.subgenreTokens);
 	for (const token of target.categoryTokens) {
 		if (sourceCategories.has(token)) score += 70;
 	}
 	for (const token of target.genreTokens) {
 		if (sourceGenres.has(token)) score += 24;
+	}
+	for (const token of target.subgenreTokens) {
+		if (sourceSubgenres.has(token)) score += 36;
 	}
 	if (source.director && source.director === target.director) score += 60;
 	for (const castMember of target.cast) {

@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance/Romántica, verify automatic jajametro eligibility for primary laugh-first Comedia, verify automatic cagazometro eligibility for primary Terror, verify automatic explosiometro eligibility for primary Accion/Acción, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, keep `category`/`genres` plus explicit `subgenres` aligned with the current site taxonomy, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance/Romántica, verify automatic jajametro eligibility for primary laugh-first Comedia, verify automatic cagazometro eligibility for primary Terror, verify automatic explosiometro eligibility for primary Accion/Acción, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -171,6 +171,7 @@ Find trustworthy metadata:
 - `reviewPublishedAt` in exact `YYYY-MM-DD` format for the date the review is being published to the site
 - `category`
 - `poster`
+- `subgenres` when the movie clearly belongs to one or more supported subgenre chips
 - official YouTube trailer id in original language (store only `trailerYoutubeId`)
 - `audienceRating` normalized as `ATP` or `+<edad>`
 - `director`
@@ -183,6 +184,32 @@ Find trustworthy metadata:
 - death year when the person is deceased, so UI can show `Fallecio en <anio>` instead of a fake living age
 
 Use primary/trustworthy sources (official studio channels, official movie pages, major databases).
+
+Subgenre policy (mandatory):
+
+- The site now has dedicated `subgenres` support on the homepage filters and movie detail pages. Treat subgenres as first-class data, not as an afterthought hidden only inside `genres`.
+- Keep the broad taxonomy split clean:
+  - `category`: primary lane for meters and main classification
+  - `genres`: broad supporting genres
+  - `subgenres`: finer-grain chips when the movie clearly belongs there
+- If the movie clearly matches one of the supported editorial subgenres, always write it explicitly in `subgenres` even if a related token already appears in `genres` or `category`.
+- Current canonical subgenre labels to prefer in JSON are:
+  - `Gore`
+  - `Found Footage`
+  - `Slasher`
+  - `RomCom`
+  - `Body Horror`
+  - `Psicológico`
+  - `Sobrenatural`
+  - `Heist`
+  - `Road Movie`
+  - `Coming of Age`
+  - `Mockumentary`
+  - `Exploitation`
+- Prefer the canonical labels above in `subgenres` instead of loose aliases. Example: if source material says `Terror corporal`, store `subgenres: ["Body Horror"]`.
+- Do not duplicate broad labels such as `Terror`, `Drama`, `Comedia`, `Acción`, `Thriller`, etc. inside `subgenres`.
+- If no supported or clearly intentional custom subgenre applies, omit `subgenres` instead of inventing one.
+- Subgenres never replace the primary `category`. A `Body Horror` movie still needs its correct broad `category`/`genres` (for example `Terror` + `Ciencia ficcion`) plus the explicit `subgenres` entry.
 
 Person portrait and info policy (mandatory):
 
@@ -653,7 +680,7 @@ Return all of the following:
 
 1. Branch created
 2. New file path
-3. Field summary (`title/originalTitle/year/category/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere/releasePlatform/releasePlatforms`)
+3. Field summary (`title/originalTitle/year/category/genres/subgenres/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere/releasePlatform/releasePlatforms`)
 4. `npm run build` result
 5. `git diff --name-only` output
 6. Explicit confirmation: `No se modifico ningun archivo fuera de peliculas, people pool y catalogo`
@@ -682,6 +709,8 @@ Return all of the following:
 - [ ] Review does not lean on verdict-led stock lines (`ZAFA y...`, `PASABLE para...`, `SE DEJA VER si...`) as opener or closer
 - [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 6 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources
+- [ ] If a supported subgenre clearly applies, `subgenres` is present with canonical labels instead of leaving that signal only in `genres` or `category`
+- [ ] `subgenres` does not repeat broad taxonomy like `Terror`, `Drama`, `Comedia`, `Acción` or `Thriller`
 - [ ] `poster` is a vertical poster/key art URL and not a YouTube thumbnail, trailer frame, backdrop, logo, screenshot, or horizontal still
 - [ ] Original title and category from trustworthy sources
 - [ ] Director/main cast/production company from trustworthy sources

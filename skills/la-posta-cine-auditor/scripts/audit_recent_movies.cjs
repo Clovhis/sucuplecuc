@@ -26,6 +26,50 @@ const ALLOWED_PLATFORMS = new Set([
 ]);
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
+const CANONICAL_SUBGENRE_DEFINITIONS = [
+	{ id: 'gore', label: 'Gore', matchers: ['gore', 'splatter'] },
+	{ id: 'found-footage', label: 'Found Footage', matchers: ['found footage', 'found-footage'] },
+	{ id: 'slasher', label: 'Slasher', matchers: ['slasher'] },
+	{ id: 'romcom', label: 'RomCom', matchers: ['romcom', 'rom-com', 'rom com', 'comedia romantica', 'romantic comedy'] },
+	{ id: 'body-horror', label: 'Body Horror', matchers: ['body horror', 'terror corporal', 'horror corporal'] },
+	{ id: 'psychological', label: 'Psicológico', matchers: ['psychological', 'psicologico', 'psicologica'] },
+	{ id: 'supernatural', label: 'Sobrenatural', matchers: ['supernatural', 'sobrenatural'] },
+	{ id: 'heist', label: 'Heist', matchers: ['heist'] },
+	{ id: 'road-movie', label: 'Road Movie', matchers: ['road movie', 'road-movie'] },
+	{ id: 'coming-of-age', label: 'Coming of Age', matchers: ['coming of age', 'coming-of-age'] },
+	{ id: 'mockumentary', label: 'Mockumentary', matchers: ['mockumentary', 'falso documental'] },
+	{ id: 'exploitation', label: 'Exploitation', matchers: ['exploitation'] },
+];
+const GENERIC_SUBGENRE_TOKENS = new Set([
+	'accion',
+	'action',
+	'aventura',
+	'adventure',
+	'anime',
+	'animacion',
+	'animation',
+	'comedia',
+	'comedy',
+	'crimen',
+	'crime',
+	'documental',
+	'documentary',
+	'drama',
+	'fantasia',
+	'fantasy',
+	'horror',
+	'romance',
+	'romantica',
+	'sci fi',
+	'sci-fi',
+	'scifi',
+	'science fiction',
+	'superheroes',
+	'superhero',
+	'suspenso',
+	'terror',
+	'thriller',
+]);
 const MAX_VERDICT_LABEL_LENGTH = 21;
 const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
 const CURRENT_YEAR = new Date().getUTCFullYear();
@@ -276,6 +320,47 @@ function splitCreditNames(value) {
 		.split(/\s*,\s*|\s+y\s+/i)
 		.map((entry) => entry.trim())
 		.filter(Boolean);
+}
+
+function cleanTaxonomyList(values) {
+	return Array.isArray(values)
+		? values.map((value) => (typeof value === 'string' ? value.trim() : '')).filter(Boolean)
+		: [];
+}
+
+function splitTaxonomyFragments(value) {
+	return String(value || '')
+		.split(/[,/|]/g)
+		.map((fragment) => fragment.trim())
+		.filter(Boolean);
+}
+
+function getCanonicalSubgenreDefinition(value) {
+	const normalized = normalizeText(value).replace(/\s+/g, ' ');
+	if (!normalized) {
+		return null;
+	}
+
+	return (
+		CANONICAL_SUBGENRE_DEFINITIONS.find((definition) =>
+			definition.matchers.some((matcher) => normalized.includes(matcher)),
+		) || null
+	);
+}
+
+function collectCanonicalSubgenreDefinitions(values) {
+	const definitions = new Map();
+
+	for (const value of values) {
+		for (const fragment of new Set([value, ...splitTaxonomyFragments(value)])) {
+			const definition = getCanonicalSubgenreDefinition(fragment);
+			if (definition) {
+				definitions.set(definition.id, definition);
+			}
+		}
+	}
+
+	return definitions;
 }
 
 function getHostname(value) {
@@ -592,7 +677,9 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	}
 
 	const category = normalizeText(movie.category || '');
-	const genres = Array.isArray(movie.genres) ? normalizeText(movie.genres.join(' ')) : '';
+	const taxonomyText = normalizeText(
+		[...cleanTaxonomyList(movie.genres), ...cleanTaxonomyList(movie.subgenres)].join(' '),
+	);
 	const primaryShowsSangrometro = isSangrometroCategory(category);
 	const primaryShowsLagrimometro = !primaryShowsSangrometro && isLagrimometroCategory(category);
 	const primaryShowsJajametro = !primaryShowsLagrimometro && isJajametroCategory(category);
@@ -604,46 +691,149 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 		addFinding(findings, 'error', 'conflicting-meter-category', candidatePath, 'Primary category cannot trigger more than one automatic meter.');
 	}
 
-	const genresMentionLagrimometro = isLagrimometroCategory(genres);
-	const genresMentionComedy = genres.includes('comedia') || genres.includes('comedy');
+	const taxonomyMentionsLagrimometro = isLagrimometroCategory(taxonomyText);
+	const taxonomyMentionsComedy = taxonomyText.includes('comedia') || taxonomyText.includes('comedy');
 
-	if (!primaryShowsJajametro && genresMentionComedy && !genresMentionLagrimometro) {
+	if (!primaryShowsJajametro && taxonomyMentionsComedy && !taxonomyMentionsLagrimometro) {
 		addFinding(
 			findings,
 			'warn',
 			'secondary-comedy-meter-hidden',
 			candidatePath,
-			'Comedy appears only in genres; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.',
+			'Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.',
 		);
 	}
 
-	if (!primaryShowsLagrimometro && !primaryShowsJajametro && genresMentionLagrimometro) {
+	if (!primaryShowsLagrimometro && !primaryShowsJajametro && taxonomyMentionsLagrimometro) {
 		addFinding(
 			findings,
 			'warn',
 			'secondary-tear-meter-hidden',
 			candidatePath,
-			'Drama/Romance/Romántica appears only in genres; Lagrimómetro will stay hidden because only primary category activates it.',
+			'Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.',
 		);
 	}
 
-	if (!primaryShowsSangrometro && !primaryShowsCagazometro && genres.includes('terror')) {
+	if (!primaryShowsSangrometro && taxonomyText.includes('gore')) {
+		addFinding(
+			findings,
+			'warn',
+			'secondary-gore-meter-hidden',
+			candidatePath,
+			'Gore appears only in secondary taxonomy; Sangrómetro will stay hidden because only primary category "Gore" activates it.',
+		);
+	}
+
+	if (!primaryShowsSangrometro && !primaryShowsCagazometro && taxonomyText.includes('terror')) {
 		addFinding(
 			findings,
 			'warn',
 			'secondary-horror-meter-hidden',
 			candidatePath,
-			'Terror appears only in genres; Cagazómetro will stay hidden because only primary category "Terror" activates it.',
+			'Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category "Terror" activates it.',
 		);
 	}
 
-	if (!primaryShowsExplosiometro && genres.includes('accion')) {
+	if (!primaryShowsExplosiometro && taxonomyText.includes('accion')) {
 		addFinding(
 			findings,
 			'warn',
 			'secondary-action-meter-hidden',
 			candidatePath,
-			'Action appears only in genres; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.',
+			'Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.',
+		);
+	}
+}
+
+function validateSubgenres(movie, candidatePath, findings) {
+	const normalizedCategory = normalizeText(movie.category || '').replace(/\s+/g, ' ');
+	const explicitValues = cleanTaxonomyList(movie.subgenres);
+	const explicitDefinitions = new Map();
+	const seenRawSubgenres = new Set();
+
+	if (movie.subgenres !== undefined && !Array.isArray(movie.subgenres)) {
+		addFinding(findings, 'error', 'invalid-subgenres-format', candidatePath, 'subgenres must be an array of non-empty strings when present.');
+		return;
+	}
+
+	for (const value of explicitValues) {
+		const normalizedValue = normalizeText(value).replace(/\s+/g, ' ');
+		if (!normalizedValue) {
+			addFinding(findings, 'error', 'invalid-subgenre-entry', candidatePath, 'subgenres cannot contain empty values.');
+			continue;
+		}
+
+		if (seenRawSubgenres.has(normalizedValue)) {
+			addFinding(findings, 'warn', 'duplicate-subgenre-entry', candidatePath, `subgenres repeats "${value}".`);
+		}
+		seenRawSubgenres.add(normalizedValue);
+
+		let matchedCanonical = false;
+		for (const fragment of new Set([value, ...splitTaxonomyFragments(value)])) {
+			const normalizedFragment = normalizeText(fragment).replace(/\s+/g, ' ');
+			if (!normalizedFragment) {
+				continue;
+			}
+
+			if (normalizedFragment === normalizedCategory || GENERIC_SUBGENRE_TOKENS.has(normalizedFragment)) {
+				addFinding(
+					findings,
+					'error',
+					'generic-subgenre-token',
+					candidatePath,
+					`subgenres should not duplicate broad taxonomy like "${fragment}". Use category/genres for broad genres and reserve subgenres for finer labels.`,
+				);
+			}
+
+			const definition = getCanonicalSubgenreDefinition(fragment);
+			if (!definition) {
+				continue;
+			}
+
+			matchedCanonical = true;
+			if (explicitDefinitions.has(definition.id)) {
+				addFinding(findings, 'warn', 'duplicate-subgenre-signal', candidatePath, `subgenres resolves "${fragment}" more than once as "${definition.label}".`);
+			}
+			explicitDefinitions.set(definition.id, definition);
+
+			if (normalizedFragment !== normalizeText(definition.label).replace(/\s+/g, ' ')) {
+				addFinding(
+					findings,
+					'warn',
+					'non-canonical-subgenre-label',
+					candidatePath,
+					`subgenres uses "${fragment}". Prefer canonical label "${definition.label}" for cleaner content loads and easier audits.`,
+				);
+			}
+		}
+
+		if (!matchedCanonical) {
+			addFinding(
+				findings,
+				'warn',
+				'custom-subgenre-label',
+				candidatePath,
+				`subgenres includes "${value}", which is outside the current canonical chip list. Verify that shipping a custom subgenre chip is intentional.`,
+			);
+		}
+	}
+
+	const inferredDefinitions = collectCanonicalSubgenreDefinitions([
+		movie.category,
+		...cleanTaxonomyList(movie.genres),
+	]);
+
+	for (const definition of inferredDefinitions.values()) {
+		if (explicitDefinitions.has(definition.id)) {
+			continue;
+		}
+
+		addFinding(
+			findings,
+			'error',
+			'missing-explicit-subgenre',
+			candidatePath,
+			`Recognized subgenre "${definition.label}" appears in category/genres but is missing from subgenres. Mirror it explicitly so the home subgenre filter and future loads stay consistent.`,
 		);
 	}
 }
@@ -732,6 +922,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	}
 
 	const normalizedCategory = normalizeText(movie.category || '');
+	validateSubgenres(movie, candidatePath, findings);
 	validateShareFields(movie, candidatePath, findings);
 	validateMeterEligibility(movie, candidatePath, findings);
 
