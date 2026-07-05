@@ -137,7 +137,7 @@ const SUBGENRE_DEFINITIONS: CanonicalSubgenreDefinition[] = [
 	{
 		id: 'body-horror',
 		label: 'Body Horror',
-		matchers: ['body horror'],
+		matchers: ['body horror', 'terror corporal', 'horror corporal'],
 		genreHints: ['terror'],
 	},
 	{
