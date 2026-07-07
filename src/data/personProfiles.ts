@@ -9289,6 +9289,111 @@ const bulkTrendProfiles = {
 			awards: [{ label: 'Emmy', category: 'Nominacion a mejor actriz de comedia', work: 'The Great', year: 2022 }],
 			knownFor: ['valor-sentimental-2025'],
 		},
+		{
+			slug: 'julia-garner',
+			name: 'Julia Garner',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Julia%20Garner%20Berlinale%202020%20(cropped)%202.jpg?width=640',
+			headline:
+				'Actriz estadounidense de nervio extraño y muchísima precisión, hoy instalada entre el prestigio televisivo, el terror de alto perfil y la gran maquinaria de estudio.',
+			birthPlace: 'Riverdale, Bronx, Nueva York, Estados Unidos',
+			spotlight:
+				'Su carrera funciona porque nunca parece estar haciendo un personaje de forma obvia: incluso en roles muy marcados, siempre deja una zona inestable, incómoda o impredecible.',
+			biography: [
+				'Julia Garner nació el 1 de febrero de 1994 en el barrio de Riverdale, en el Bronx, dentro de una familia atravesada por el arte y la narración. Su madre, Tamar Gingold, trabajó como actriz y comediante en Israel antes de dedicarse también a la terapia; su padre, Thomas Garner, es pintor y docente de arte. Creció en un entorno judío, escuchando hebreo en su casa y bastante cerca de una sensibilidad visual que después se volvió una marca de su pantalla. Empezó a tomar clases de actuación a los quince años para combatir la timidez, un dato que explica bastante bien uno de los rasgos más atractivos de su trabajo: esa mezcla rara entre fragilidad, reserva y una energía interna que parece siempre a punto de correrse de lugar. Antes de volverse conocida, ya había entrado por la puerta correcta: debutó en cine con Martha Marcy May Marlene, la película de Sean Durkin, y enseguida empezó a sumar títulos donde lo inquietante, lo marginal o lo áspero tenían un peso claro en la construcción del personaje.',
+				'La primera etapa de su carrera muestra un crecimiento muy sostenido. Pasó por Electrick Children, The Last Exorcism Part II, We Are What We Are y Sin City: A Dame to Kill For, pero el gran punto de quiebre llegó cuando Netflix la puso en el centro de Ozark como Ruth Langmore. Ese papel no solo la hizo mundialmente reconocible: también la convirtió en una de las intérpretes más celebradas de su generación dentro de la televisión estadounidense. Ganó tres premios Emmy por la serie y consolidó un registro que parece hecho de contradicciones muy productivas: rudeza, velocidad verbal, vulnerabilidad, inteligencia callejera y una sensibilidad que nunca se vuelve decorativa. En paralelo siguió expandiéndose con The Americans, Maniac, Dirty John y Waco, demostrando que podía moverse con la misma naturalidad entre drama criminal, sátira extraña y thriller psicológico. Cuando en The Assistant bajó toda esa intensidad a un tono mínimo, incómodo y casi silencioso, terminó de confirmar que su valor no estaba atado a un solo tipo de personaje, sino a una forma muy precisa de administrar tensión.',
+				'Los últimos años terminaron de ensancharle el mapa. Inventing Anna la obligó a sostener una serie casi desde el centro absoluto, le dio nuevas nominaciones importantes y la expuso a una performance mucho más ostentosa y performática que la de Ruth. Al mismo tiempo, fue afirmando un vínculo fuerte con cineastas y materiales donde el cuerpo y el clima importan tanto como el texto: ahí entran The Royal Hotel, Wolf Man y Weapons, dos títulos con los que quedó muy bien ubicada dentro del terror y el suspenso de estudio reciente. También lanzó, junto con su productora Alma Margo, una etapa más activa detrás de cámara, mientras Hollywood la fue empujando hacia propiedades cada vez más visibles. En 2026 siguió sumando ruido industrial con Tyrant, el thriller de Amazon MGM en el que comparte elenco con Charlize Theron, al mismo tiempo que su nombre quedó asociado a proyectos de franquicia y de autor con una facilidad poco común. Dentro del sitio, esas conexiones con Weapons y Wolf Man alcanzan para entender por qué hoy es una ficha lógica para Cine Posta: Garner pertenece a ese grupo muy corto de actrices contemporáneas capaces de entrar en cine incómodo, terror, mainstream grande y conversación de premios sin dejar de sentirse singular.',
+			],
+			awards: [{ label: 'Emmy', category: 'Mejor actriz de reparto en drama', work: 'Ozark', year: 2022 }],
+			knownFor: ['weapons-2025', 'wolf-man-2025'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Julia_Garner',
+				'https://www.televisionacademy.com/bios/julia-garner',
+				'https://www.televisionacademy.com/shows/ozark',
+				'https://deadline.com/2026/01/julia-garner-charlize-theron-tyrant-thriller-1236698819/',
+			],
+		},
+		{
+			slug: 'juno-temple',
+			name: 'Juno Temple',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Juno%20Temple%20at%20Sundance%202011.jpg?width=640',
+			headline:
+				'Actriz británica de carrera larguísima y pantalla elástica, capaz de pasar del indie incómodo al streaming masivo sin perder nervio ni rareza.',
+			birthPlace: 'Hammersmith, Londres, Inglaterra',
+			spotlight:
+				'Tiene un talento muy particular para volver memorables a personajes que podrían quedar en un costado: siempre les encuentra humor, tristeza, deseo o una incomodidad muy física.',
+			biography: [
+				'Juno Temple nació el 21 de julio de 1989 en Hammersmith, Londres, en una familia directamente conectada con el cine: es hija del director Julien Temple y de la productora Amanda Pirie. Ese origen no le evitó tener que ganarse una trayectoria propia, pero sí la acercó desde temprano a sets, rodajes y una idea bastante concreta de lo que implica trabajar frente a cámara. Empezó de chica y pasó por un tipo de carrera poco lineal pero muy rica, construida sobre personajes secundarios filosos y películas que pedían más personalidad que brillo estándar. En la segunda mitad de los 2000 ya aparecía en Notes on a Scandal, Atonement, The Other Boleyn Girl, St Trinian\'s y Mr. Nobody, títulos distintos entre sí pero unidos por algo que Temple traía desde temprano: una forma de actuar con fragilidad nerviosa, ironía seca y una sensación de desorden emocional que la volvía inmediatamente visible incluso en escenas breves. Esa primera etapa la dejó muy bien parada para el circuito británico y estadounidense a la vez.',
+				'Cuando entró en la década siguiente, en vez de acomodarse a un solo perfil siguió ensanchando el rango. Dirty Girl, Kaboom, Killer Joe, Little Birds, Jack & Diane y The Dark Knight Rises la mostraron moviéndose entre coming-of-age torcido, thriller, comedia oscura y cine de estudio. En 2013 ganó el BAFTA EE Rising Star Award, un reconocimiento que capturaba bastante bien lo que ya se intuía: Temple no era solo una joven promesa con apellido conocido, sino una intérprete con identidad muy marcada. Después siguió trabajando mucho y sin encasillarse, sumando Black Mass, Vinyl, Dirty John y The Offer, además de una actuación muy celebrada en Lost Transmissions. El momento de popularidad verdaderamente masiva llegó con Keeley Jones en Ted Lasso, un papel que al principio podía parecer apenas encantador y terminó volviéndose una de las piezas afectivas más queridas de la serie. Las nominaciones al Emmy por Ted Lasso y luego por Fargo reforzaron una lectura justa: Temple puede manejar registro cómico, vulnerabilidad, timing romántico y oscuridad emocional con una naturalidad muy poco forzada.',
+				'En esta etapa reciente quedó cada vez más claro que su valor no depende solo del prestigio crítico, sino también de su capacidad para entrar en proyectos muy visibles sin diluirse. En el catálogo de Cine Posta eso se ve bien con Venom: The Last Dance, Roofman, Buena suerte, diviértete, no mueras y Swapped. Son películas diferentes en escala, tono y público, pero todas aprovechan algo de su encanto raro y su expresividad corporal. Swapped, de hecho, volvió a ponerla en circulación fuerte en 2026 con un lanzamiento muy comentado de Netflix y números de audiencia altos según Variety, mientras ella seguía encadenando trabajos que mezclan comedia, animación, thriller y voz de autora en personajes llenos de textura. Temple no es una actriz que viva de una sola explosión de fama; más bien viene construyendo una filmografía con muchísimo oficio, inteligencia y capacidad de adaptación. Por eso tiene sentido sumarla ahora como perfil exclusivo: no está solo “de moda”, sino en un punto donde la actualidad del streaming, la cultura pop y una carrera consistente de casi dos décadas se cruzan de manera bastante ideal para el sitio.',
+			],
+			awards: [{ label: 'BAFTA', category: 'EE Rising Star Award', year: 2013 }],
+			knownFor: [
+				'swapped-2026',
+				'buena-suerte-diviertete-no-mueras-2026',
+				'roofman-un-buen-ladron-2025',
+				'venom-the-last-dance-2024',
+			],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Juno_Temple',
+				'https://www.bafta.org/awards/film/ee-rising-star-award/',
+				'https://www.televisionacademy.com/bios/juno-temple',
+				'https://variety.com/2026/film/news/swapped-ratings-views-netflix-animated-record-1236746285/',
+			],
+		},
+		{
+			slug: 'rachel-brosnahan',
+			name: 'Rachel Brosnahan',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Rachel%20Brosnahan%20(2024).jpg?width=640',
+			headline:
+				'Actriz estadounidense de técnica muy sólida y timing afilado, hoy ubicada entre el prestigio televisivo, Broadway y el nuevo músculo del cine de superhéroes.',
+			birthPlace: 'Milwaukee, Wisconsin, Estados Unidos',
+			spotlight:
+				'Su carrera gana espesor porque nunca quedó atrapada en una sola etiqueta: puede hacer comedia velocísima, drama íntimo, teatro pesado y blockbuster sin perder precisión.',
+			biography: [
+				'Rachel Brosnahan nació el 12 de julio de 1990 en Milwaukee y creció desde muy chica en Highland Park, Illinois, en una familia vinculada al mundo editorial infantil. Antes de que Hollywood la conociera, su formación pasó por un recorrido bastante concreto: musicales escolares, teatro juvenil, un tiempo en el equipo de lucha de su secundaria y después la Tisch School of the Arts de la Universidad de Nueva York, además de estudios en el Lee Strasberg Theatre and Film Institute. Esa combinación entre entrenamiento formal y costado más físico le dio una base muy útil para lo que vendría después. Mientras todavía estaba en la universidad empezó a sumar papeles pequeños en series como Gossip Girl, The Good Wife, Grey\'s Anatomy e In Treatment, y al mismo tiempo consiguió su primer crédito de cine en The Unborn. No era un debut espectacular, pero sí el comienzo de una carrera hecha más de constancia que de golpe de suerte instantáneo.',
+				'El primer salto real ocurrió con House of Cards. Su personaje, Rachel Posner, estaba pensado para durar poco, pero terminó creciendo por el impacto que produjo su trabajo, hasta darle una nominación al Emmy en 2015. Ese período también la encontró en Manhattan, Crisis in Six Scenes y sobre todo en teatro, un territorio clave para entender su oficio. Hizo su debut en Broadway con The Big Knife, interpretó a Desdémona en Othello junto a Daniel Craig y David Oyelowo, y consolidó una presencia escénica que después le serviría muchísimo. Todo eso preparó el terreno para The Marvelous Mrs. Maisel, la serie que la volvió una estrella reconocible a escala mundial. Como Midge Maisel tuvo que sostener velocidad verbal, comedia de época, vulnerabilidad, orgullo y transformación personal durante varias temporadas, y lo hizo con un nivel de control extraordinario. Ese papel le dio el Emmy a mejor actriz principal en comedia, dos Globos de Oro consecutivos, varios premios del sindicato y, sobre todo, una identidad muy fuerte dentro del star system televisivo de fines de los 2010 y principios de los 2020.',
+				'Lo interesante es que no se quedó viviendo de ese éxito. Lanzó su productora Scrap Paper Pictures, protagonizó y produjo I\'m Your Woman, trabajó en The Courier y Dead for a Dollar, y en 2023 volvió a Broadway con The Sign in Sidney Brustein\'s Window junto a Oscar Isaac, una reposición muy celebrada que le sumó otra nominación importante en teatro. A partir de ahí entró en una nueva fase: la de actriz ya consagrada que todavía sabe reubicarse. En el catálogo del sitio eso se nota con The Amateur y, sobre todo, Superman, donde asumió el peso de una Lois Lane en pleno reinicio del universo DC. En 2026, además, siguió visible por la película Saturn Return, confirmada por Netflix con Charles Melton y Will Poulter, y por su permanencia alrededor del nuevo mapa de DC. Sumarlas a sus conexiones locales alcanza para entender por qué hoy es una ausencia que valía corregir: Brosnahan no es solo una cara famosa de series prestigiosas, sino una intérprete que llegó a un punto de madurez donde cine comercial, teatro y prestigio industrial dialogan todo el tiempo.',
+			],
+			awards: [
+				{ label: 'Emmy', category: 'Mejor actriz principal en comedia', work: 'The Marvelous Mrs. Maisel', year: 2018 },
+			],
+			knownFor: ['superman-2025', 'the-amateur-2025'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Rachel_Brosnahan',
+				'https://www.televisionacademy.com/bios/rachel-brosnahan',
+				'https://www.televisionacademy.com/shows/marvelous-mrs-maisel',
+				'https://www.netflix.com/tudum/articles/saturn-return-cast-plot-release-date-news',
+			],
+		},
+		{
+			slug: 'sophie-thatcher',
+			name: 'Sophie Thatcher',
+			profileImage:
+				'https://commons.wikimedia.org/wiki/Special:FilePath/Sophie%20Thatcher%20at%20Sun%20Valley.jpg?width=640',
+			headline:
+				'Una de las caras jóvenes más estimulantes del terror y la ciencia ficción recientes, con una mezcla muy precisa de rareza, fragilidad y determinación.',
+			birthPlace: 'Chicago, Illinois, Estados Unidos',
+			spotlight:
+				'Su mejor rasgo es que nunca actúa la intensidad de manera grandilocuente: parece llevarla por dentro y soltarla justo cuando la escena lo necesita.',
+			biography: [
+				'Sophie Bathsheba Thatcher nació el 18 de octubre de 2000 en Chicago y creció entre Hyde Park, Lake Forest y luego Evanston, dentro de una familia muy atravesada por la música y las artes. Su madre daba clases de piano, ella empezó a cantar desde chica, escribió canciones desde la adolescencia y al mismo tiempo se fue formando como actriz en circuitos escolares y teatrales de Illinois. Esa doble raíz, musical y escénica, sigue notándose en cómo trabaja: tiene sentido del ritmo, mucha atención al tono y una forma bastante orgánica de modular emoción sin que parezca “subrayada”. Empezó a actuar siendo niña, pasó por montajes como The Secret Garden, Oliver!, Seussical, Our Town y The Diary of Anne Frank, y fue acomodando su educación entre escuela tradicional, home schooling y clases más específicas cuando la carrera comenzó a demandarle tiempo real. Después se mudó a Nueva York para estudiar técnica Meisner, una decisión coherente con el tipo de intérprete en que terminó convirtiéndose: alguien interesada en la reacción, el nervio y la verdad incómoda más que en el gesto vistoso.',
+				'Su recorrido en pantalla también fue de crecimiento firme. Apareció en cortos y series como Chicago P.D., Chicago Med y The Exorcist, pero el primer gran paso en cine llegó con Prospect, la película de ciencia ficción donde compartió pantalla con Pedro Pascal. Ahí ya se veía una presencia muy singular: podía parecer una adolescente vulnerable y, al mismo tiempo, la persona más dura del cuadro. Después vinieron The Tomorrow Man, When the Streetlights Go On y, sobre todo, Yellowjackets, la serie que la convirtió en una figura mucho más visible. Como la versión joven de Natalie encontró un personaje perfecto para su registro: herida, impulsiva, filosa y emocionalmente inestable sin perder nunca humanidad. El hecho de que el equipo la eligiera antes incluso de cerrar a Juliette Lewis para el mismo rol habla del peso que tuvo su audición. También se cruzó con el universo Star Wars en The Book of Boba Fett y fue sumando trabajos de género con The Boogeyman, confirmando que su vínculo con el fantástico no era casual sino una zona de rendimiento muy alto.',
+				'El salto de verdad hacia el radar cinéfilo más amplio llegó con Heretic y Companion. En la primera sostuvo, junto a Chloe East y Hugh Grant, un terror teológico bastante incómodo; en la segunda cargó sobre los hombros un thriller sci-fi que dependía muchísimo de su capacidad para ir corriendo el eje del personaje sin romper la empatía del público. Companion le dio además un Critics Choice Super Award y terminó de instalarla como una de las actrices jóvenes más comentadas del género. En 2026 siguió escalando con Her Private Hell de Nicolas Winding Refn, presentada en Cannes, y con anuncios fuertes como Cavendish y The Girl Who Was Plugged In, además de entrar en la lista Forbes 30 Under 30. Todo eso convive con su costado musical, visible en el EP Pivot & Scrape y en colaboraciones recientes. Dentro del sitio, sus conexiones con Heretic y Companion ya justificaban una ficha propia; el contexto actual terminó de confirmarlo. Thatcher está en ese punto exacto donde una carrera todavía joven deja de ser promesa para convertirse en presencia con peso real, especialmente para cualquier lector que venga siguiendo terror, ciencia ficción o intérpretes que crecen desde los márgenes hacia el centro.',
+			],
+			awards: [
+				{ label: 'Critics Choice Super Awards', category: 'Mejor actriz en ciencia ficcion o fantasia', work: 'Companion', year: 2025 },
+			],
+			knownFor: ['companion-2025', 'heretic-2024'],
+			referenceUrls: [
+				'https://en.wikipedia.org/wiki/Sophie_Thatcher',
+				'https://www.criticschoice.com/2025/08/07/winners-announced-for-the-critics-choice-associations-5th-annual-critics-choice-super-awards-honoring-superhero-science-fiction-fantasy-horror-and-action-movies-and-series/',
+				'https://variety.com/2026/film/festivals/sophie-thatcher-her-private-hell-nicolas-winding-refn-1236754654/',
+				'https://deadline.com/2026/05/sophie-thatcher-jennifer-kent-girl-plugged-goodfellas-1236882770/',
+			],
+		},
 	]),
 	...buildBulkProfiles(globalDirectorDefaults, [
 		{

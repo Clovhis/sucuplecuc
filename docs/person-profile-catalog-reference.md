@@ -2,7 +2,7 @@
 
 Generado manualmente el 2026-06-27. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 373
+Total de personas con ficha exclusiva: 377
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -217,9 +217,11 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Josh O'Connor | `josh-o-connor` | /personas/josh-o-connor/ | Actor | 1 | 2 |
 | Juan José Campanella | `juan-jose-campanella` | /personas/juan-jose-campanella/ | Director / Guionista / Productor | 5 | 4 |
 | Jude Law | `jude-law` | /personas/jude-law/ | Actor | 2 | 3 |
+| Julia Garner | `julia-garner` | /personas/julia-garner/ | Actriz | 2 | 4 |
 | Julianne Moore | `julianne-moore` | /personas/julianne-moore/ | Actriz | 2 | 3 |
 | Julieta Díaz | `julieta-diaz` | /personas/julieta-diaz/ | Actriz | 1 | 3 |
 | Julio Chávez | `julio-chavez` | /personas/julio-chavez/ | Actor | 1 | 3 |
+| Juno Temple | `juno-temple` | /personas/juno-temple/ | Actriz | 4 | 4 |
 | Kate Winslet | `kate-winslet` | /personas/kate-winslet/ | Actriz | 1 | 3 |
 | Kathryn Newton | `kathryn-newton` | /personas/kathryn-newton/ | Actriz | 1 | 3 |
 | Ke Huy Quan | `ke-huy-quan` | /personas/ke-huy-quan/ | Actor | 3 | 3 |
@@ -303,6 +305,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Peter O'Toole | `peter-o-toole` | /personas/peter-o-toole/ | Actor | 3 | 3 |
 | Pierce Brosnan | `pierce-brosnan` | /personas/pierce-brosnan/ | Actor | 1 | 3 |
 | Quentin Tarantino | `quentin-tarantino` | /personas/quentin-tarantino/ | Director / Guionista / Productor | 4 | 3 |
+| Rachel Brosnahan | `rachel-brosnahan` | /personas/rachel-brosnahan/ | Actriz | 2 | 4 |
 | Rachel McAdams | `rachel-mcadams` | /personas/rachel-mcadams/ | Actriz | 3 | 3 |
 | Rachel Zegler | `rachel-zegler` | /personas/rachel-zegler/ | Actriz | 2 | 3 |
 | Rafael Ferro | `rafael-ferro` | /personas/rafael-ferro/ | Actor | 1 | 2 |
@@ -345,6 +348,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Shirley MacLaine | `shirley-maclaine` | /personas/shirley-maclaine/ | Actriz / Bailarina / Autora | 3 | 4 |
 | Sigourney Weaver | `sigourney-weaver` | /personas/sigourney-weaver/ | Actriz | 4 | 3 |
 | Soledad Villamil | `soledad-villamil` | /personas/soledad-villamil/ | Actriz | 2 | 3 |
+| Sophie Thatcher | `sophie-thatcher` | /personas/sophie-thatcher/ | Actriz | 2 | 4 |
 | Stanley Kubrick | `stanley-kubrick` | /personas/stanley-kubrick/ | Director / Guionista / Productor | 2 | 3 |
 | Steven Spielberg | `steven-spielberg` | /personas/steven-spielberg/ | Director / Productor / Guionista | 4 | 3 |
 | Steven Yeun | `steven-yeun` | /personas/steven-yeun/ | Actor | 1 | 3 |
