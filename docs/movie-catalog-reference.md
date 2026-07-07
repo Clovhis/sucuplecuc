@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-05. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-07. Fuente: src/data/movies/*.json
 
 Total de peliculas: 967
 
@@ -463,7 +463,7 @@ Total de peliculas: 967
 | 2015 | Star Wars: The Force Awakens | star-wars-episode-vii-the-force-awakens-2015 | Ciencia ficcion | Disney Plus | +13 |
 | 2015 | Terminator Genisys | terminator-genisys-2015 | Accion | Otras plataformas | +13 |
 | 2015 | The Hateful Eight | the-hateful-eight-2015 | Thriller | Prime Video | +17 |
-| 2015 | The Human Centipede 3 (Final Sequence) | the-human-centipede-3-final-sequence-2015 | Gore | Otras plataformas | +18 |
+| 2015 | The Human Centipede 3 (Final Sequence) | the-human-centipede-3-final-sequence-2015 | Terror | Otras plataformas | +18 |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus | +12 |
 | 2014 | Betibú | betibu-2014 | Thriller | Otras plataformas | +12 |
 | 2014 | Big Eyes | big-eyes-2014 | Drama | Otras plataformas | +13 |
@@ -528,7 +528,7 @@ Total de peliculas: 967
 | 2011 | Rise of the Planet of the Apes | rise-of-the-planet-of-the-apes-2011 | Accion | Disney Plus | +13 |
 | 2011 | Scream 4: grita de nuevo | scream-4-2011 | Terror | Prime Video | +17 |
 | 2011 | The Artist | the-artist-2011 | Comedia | Otras plataformas | ATP |
-| 2011 | The Human Centipede 2 (Full Sequence) | the-human-centipede-2-full-sequence-2011 | Gore | Otras plataformas | +18 |
+| 2011 | The Human Centipede 2 (Full Sequence) | the-human-centipede-2-full-sequence-2011 | Terror | Otras plataformas | +18 |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
 | 2011 | War Horse (Caballo de batalla) | war-horse-2011 | Drama | Otras plataformas | +13 |
@@ -560,7 +560,7 @@ Total de peliculas: 967
 | 2009 | Saw VI | saw-vi-2009 | Gore | Otras plataformas | +18 |
 | 2009 | Si la cosa funciona | whatever-works-2009 | Comedia | Otras plataformas | +13 |
 | 2009 | Terminator Salvation | terminator-salvation-2009 | Accion | Netflix | +13 |
-| 2009 | The Human Centipede (First Sequence) | the-human-centipede-first-sequence-2009 | Gore | Otras plataformas | +18 |
+| 2009 | The Human Centipede (First Sequence) | the-human-centipede-first-sequence-2009 | Terror | Otras plataformas | +18 |
 | 2009 | Up | up-2009 | Animacion | Disney Plus | ATP |
 | 2009 | Viernes 13 | friday-the-13th-2009 | Terror | Mercado Play | +17 |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max + Mercado Play | +17 |
