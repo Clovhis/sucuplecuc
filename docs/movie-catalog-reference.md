@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-07. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-08. Fuente: src/data/movies/*.json
 
-Total de peliculas: 967
+Total de peliculas: 970
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -456,6 +456,7 @@ Total de peliculas: 967
 | 2015 | Furious 7 | furious-7-2015 | Accion | HBO Max | +13 |
 | 2015 | Irrational Man | irrational-man-2015 | Drama | Otras plataformas | +13 |
 | 2015 | Jurassic World | jurassic-world-2015 | Aventura | Prime Video + Netflix | +13 |
+| 2015 | La gran apuesta | la-gran-apuesta-2015 | Drama | Prime Video + Paramount Plus | +17 |
 | 2015 | Mad Max: Fury Road | mad-max-fury-road-2015 | Accion | Netflix | +16 |
 | 2015 | Mission: Impossible - Rogue Nation | mission-impossible-rogue-nation-2015 | Accion | Disney Plus | +13 |
 | 2015 | Spectre | spectre-2015 | Accion | Netflix | +12 |
@@ -704,12 +705,14 @@ Total de peliculas: 967
 | 1999 | Al límite | bringing-out-the-dead-1999 | Drama | Otras plataformas | +17 |
 | 1999 | American Beauty | american-beauty-1999 | Drama | Paramount Plus + Mercado Play | +16 |
 | 1999 | Fight Club | fight-club-1999 | Drama | Prime Video | +18 |
+| 1999 | La milla verde | la-milla-verde-1999 | Drama | Prime Video | +17 |
 | 1999 | Mi viaje a Italia | my-voyage-to-italy-1999 | Documental | Otras plataformas | ATP |
 | 1999 | Sleepy Hollow | sleepy-hollow-1999 | Terror | Otras plataformas | +17 |
 | 1999 | Star Wars: Episode I - The Phantom Menace | star-wars-episode-i-the-phantom-menace-1999 | Ciencia ficcion | Disney Plus | ATP |
 | 1999 | The Blair Witch Project | the-blair-witch-project-1999 | Terror | Otras plataformas | +17 |
 | 1999 | The Matrix | the-matrix-1999 | Ciencia ficcion | Netflix | +13 |
 | 1999 | The Sixth Sense | the-sixth-sense-1999 | Thriller | Otras plataformas | +13 |
+| 1999 | Toy Story 2 | toy-story-2-1999 | Animacion | Disney Plus | ATP |
 | 1998 | Blade | blade-1998 | Accion | HBO Max | +17 |
 | 1998 | Celebrity | celebrity-1998 | Comedia | Otras plataformas | +13 |
 | 1998 | Following | following-1998 | Thriller | Otras plataformas | +16 |
