@@ -130,7 +130,7 @@ const SUBGENRE_DEFINITIONS: CanonicalSubgenreDefinition[] = [
 	{ id: 'slasher', label: 'Slasher', matchers: ['slasher'], genreHints: ['terror'] },
 	{
 		id: 'romcom',
-		label: 'RomCom',
+		label: 'Rom-Com',
 		matchers: ['romcom', 'rom-com', 'rom com', 'comedia romantica', 'romantic comedy'],
 		genreHints: ['comedia', 'romance'],
 	},

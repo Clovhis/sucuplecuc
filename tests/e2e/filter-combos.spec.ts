@@ -66,7 +66,7 @@ test.describe('home catalog filters', () => {
     await gotoHome(page);
 
     await page.getByRole('button', { name: /^Documentales$/i }).click();
-    await page.getByRole('button', { name: /^RomCom$/i }).click();
+    await page.getByRole('button', { name: /^Rom-Com$/i }).click();
 
     const emptyState = page.locator('[data-movie-search-empty]');
     await expect(emptyState).toBeVisible();

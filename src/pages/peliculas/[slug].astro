@@ -860,7 +860,11 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								movieSubgenres.length > 0 && (
 									<div class="movie-detail__credit-item">
 										<dt>{movieSubgenres.length > 1 ? 'Subgéneros' : 'Subgénero'}</dt>
-										<dd class="movie-detail__subgenre-value">{movieSubgenres.join(' · ')}</dd>
+										<dd class="movie-detail__taxonomy-tags">
+											{movieSubgenres.map((subgenre) => (
+												<span class="movie-detail__taxonomy-tag">{subgenre}</span>
+											))}
+										</dd>
 									</div>
 								)
 							}
