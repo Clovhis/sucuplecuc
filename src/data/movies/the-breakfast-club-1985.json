@@ -8,9 +8,9 @@
 	"audienceRating": "+17",
 	"category": "Drama",
 	"genres": [
-			"Drama",
-			"Comedia",
-			"Coming of age"
+		"Drama",
+		"Comedia",
+		"Coming of age"
 	],
 	"country": "US",
 	"isArgentinian": false,
@@ -47,5 +47,8 @@
 	},
 	"isPremiere": false,
 	"premiereLabel": "",
-	"review": "John Hughes agarro cinco estereotipos de secundaria y los volvio personas, con broncas, miedos y ternuras que todavia se reconocen al toque. La pelicula tiene chistes, tiene pose ochentosa y tiene discurso, pero lo que la hace durar es como va corriendo la careta de cada uno sin volverse sermon. Sigue funcionando porque entiende que la adolescencia exagera todo, si, pero tambien te deja marcas reales cuando nadie alrededor sabe escucharte."
+	"review": "John Hughes agarro cinco estereotipos de secundaria y los volvio personas, con broncas, miedos y ternuras que todavia se reconocen al toque. La pelicula tiene chistes, tiene pose ochentosa y tiene discurso, pero lo que la hace durar es como va corriendo la careta de cada uno sin volverse sermon. Sigue funcionando porque entiende que la adolescencia exagera todo, si, pero tambien te deja marcas reales cuando nadie alrededor sabe escucharte.",
+	"subgenres": [
+		"Coming of Age"
+	]
 }

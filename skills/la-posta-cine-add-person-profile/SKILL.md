@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-person-profile
-description: Add or update an exclusive actor, actress, or director profile page for Cine Posta from a plain-language request (for example "hacé la ficha de Al Pacino"). Use when the user wants a dedicated bio page reachable from search and movie cast portraits, aligned with Astro 6 and the existing Cine Posta person-profile implementation, with biographies based on real sourced facts instead of generic templates.
+description: Add or update an exclusive actor, actress, or director profile page for Cine Posta from a plain-language request (for example "hacé la ficha de Al Pacino"). Use when the user wants a dedicated bio page reachable from search and movie cast portraits, aligned with Astro 7 and the existing Cine Posta person-profile implementation, with biographies based on real sourced facts instead of generic templates.
 ---
 
 # la-posta-cine-add-person-profile
@@ -95,9 +95,9 @@ node skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --
 
 If the auditor fails, stop and fix the profile data before finishing.
 
-## Astro 6 rules
+## Astro 7 rules
 
-Keep the implementation aligned with Astro 6:
+Keep the implementation aligned with Astro 7:
 
 - Use file-based routing under `src/pages/personas/[slug].astro`
 - Use typed `GetStaticPaths` for static profile generation
@@ -105,7 +105,7 @@ Keep the implementation aligned with Astro 6:
 - Do not introduce deprecated route or client-script patterns
 - Validate with `npm run build`
 
-If there is any doubt about Astro 6 behavior, check the official docs before finishing.
+If there is any doubt about Astro 7 behavior, check the official docs before finishing.
 
 ## Repository pattern to preserve
 

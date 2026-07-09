@@ -226,12 +226,12 @@ Poster policy (mandatory):
 - Prefer portrait poster sizes/paths such as JustWatch `/poster/.../s718/...` or TMDb `/t/p/w500/...`. Do not use JustWatch `/backdrop/...`, YouTube thumbnails, or horizontal images as the poster card image.
 - Before commit, visually or structurally verify the poster URL is not a cropped trailer/title-card image. If only a trailer thumbnail is available, stop and keep searching; do not publish with a fake poster.
 
-Release date policy for Astro 6 (mandatory):
+Release date policy for Astro 7 (mandatory):
 
 - Any movie whose `year` is the current calendar year or in the future must include `releaseDate`.
 - Use an exact `YYYY-MM-DD` date verified from AR-facing evidence when possible: official distributor/platform page, exhibitor/cartelera source, `JustWatch AR`, or equivalent trustworthy source.
 - If the title is being loaded as `reciente`, `estreno`, `Cine`, or `isPremiere: true`, do not leave `releaseDate` blank.
-- Do not treat `npm run build` as enough validation here: Astro 6 can build successfully while `getMovies()` still hides a current-year movie that lacks `releaseDate`.
+- Do not treat `npm run build` as enough validation here: Astro 7 can build successfully while `getMovies()` still hides a current-year movie that lacks `releaseDate`.
 - If the exact date cannot be verified, stop before commit instead of publishing a hidden entry.
 
 Review publication date policy (mandatory):
@@ -707,7 +707,7 @@ Return all of the following:
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
 - [ ] Review written manually from scratch by the AI for this exact movie, without template scaffolds, stock closings, inherited paragraph skeletons, or robotized phrasing that could fit another movie unchanged
 - [ ] Review does not lean on verdict-led stock lines (`ZAFA y...`, `PASABLE para...`, `SE DEJA VER si...`) as opener or closer
-- [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 6 home/search visibility is preserved
+- [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 7 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources
 - [ ] If a supported subgenre clearly applies, `subgenres` is present with canonical labels instead of leaving that signal only in `genres` or `category`
 - [ ] `subgenres` does not repeat broad taxonomy like `Terror`, `Drama`, `Comedia`, `Acción` or `Thriller`

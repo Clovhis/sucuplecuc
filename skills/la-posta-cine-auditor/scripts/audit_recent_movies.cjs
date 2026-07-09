@@ -775,7 +775,11 @@ function validateSubgenres(movie, candidatePath, findings) {
 				continue;
 			}
 
-			if (normalizedFragment === normalizedCategory || GENERIC_SUBGENRE_TOKENS.has(normalizedFragment)) {
+			const definition = getCanonicalSubgenreDefinition(fragment);
+			const duplicatesBroadTaxonomy =
+				GENERIC_SUBGENRE_TOKENS.has(normalizedFragment) ||
+				(normalizedFragment === normalizedCategory && !definition);
+			if (duplicatesBroadTaxonomy) {
 				addFinding(
 					findings,
 					'error',
@@ -785,7 +789,6 @@ function validateSubgenres(movie, candidatePath, findings) {
 				);
 			}
 
-			const definition = getCanonicalSubgenreDefinition(fragment);
 			if (!definition) {
 				continue;
 			}
@@ -913,7 +916,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 			'error',
 			'missing-release-date',
 			candidatePath,
-			`Current-year and future entries must include releaseDate. Astro 6 filters home/search visibility through getMovies(), so a ${CURRENT_YEAR}+ movie without releaseDate can build successfully but stay hidden from the homepage.`,
+			`Current-year and future entries must include releaseDate. Astro 7 filters home/search visibility through getMovies(), so a ${CURRENT_YEAR}+ movie without releaseDate can build successfully but stay hidden from the homepage.`,
 		);
 	}
 

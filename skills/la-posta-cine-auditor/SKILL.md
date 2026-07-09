@@ -86,7 +86,7 @@ The bundled script checks:
 
 - recent candidate detection from `git diff <base>...HEAD`
 - required fields and JSON shape
-- `releaseDate` presence for current-year / future titles so Astro 6 does not leave them hidden from home/search
+- `releaseDate` presence for current-year / future titles so Astro 7 does not leave them hidden from home/search
 - `reviewPublishedAt` format/presence on recent review loads so the homepage block `Últimas reseñas` sorts by publication freshness instead of movie release chronology
 - `mainCast` sanity: enough credited principal performers for the title type, no duplicate names, and no obvious omission of award-winning acting recipients from the credited cast
 - people pool coverage in `src/data/people.json` for every credited director/main cast member
@@ -157,7 +157,7 @@ The current-year `releaseDate` check is mandatory too:
 
 - treat a missing `releaseDate` on any current-year or future entry as a hard stop
 - fill it with an exact `YYYY-MM-DD` date from trustworthy AR-facing release evidence before republishing
-- do not trust `npm run build` as proof here: Astro 6 can still pass build while the movie stays filtered out of home/search
+- do not trust `npm run build` as proof here: Astro 7 can still pass build while the movie stays filtered out of home/search
 
 The `reviewPublishedAt` check is mandatory for new review loads too:
 
