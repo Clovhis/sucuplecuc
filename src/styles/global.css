@@ -8771,8 +8771,15 @@ img {
 .community-movie-summary__body { min-width: 0; }
 .community-movie-summary h1 { margin: 0; font-size: clamp(1.7rem, 4vw, 2.8rem); }
 .community-movie-summary__facts { margin: 0.3rem 0 0; color: #dce4f0; font-family: var(--font-mono); }
-.community-movie-summary__genres { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.75rem 0; }
-.community-movie-summary__genres li { padding: 0.25rem 0.5rem; border: 1px solid rgba(255, 176, 137, 0.3); border-radius: 999px; color: #ffcfb6; font-size: 0.75rem; }
+.community-movie-summary__genres {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	padding: 0;
+	margin: 0.75rem 0;
+	list-style: none;
+}
+.community-movie-summary__genres li { margin: 0; padding: 0.25rem 0.5rem; border: 1px solid rgba(255, 176, 137, 0.3); border-radius: 999px; color: #ffcfb6; font-size: 0.75rem; }
 .community-movie-summary__synopsis { max-width: 75ch; margin: 0.8rem 0; color: #dce4f0; line-height: 1.55; }
 .community-movie-summary__credits { display: grid; gap: 0.35rem; margin: 0.8rem 0; color: #c4cedd; }
 .community-movie-summary__credits div { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 0.6rem; }
