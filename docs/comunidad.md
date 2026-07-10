@@ -1,66 +1,48 @@
 # Comunidad: La Sala
 
-`/comunidad/` es el MVP de conversación pública de Cine Posta. Es una página estática de Astro: no incorpora backend, base de datos, login ni registro propios. La conversación persistente queda a cargo de FastComments.
+La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya usa el sitio para los puntajes: no hay proveedor de comentarios, backend nuevo, cuentas visibles ni perfiles públicos.
 
-## Qué hay implementado
+## Funcionamiento
 
-- La Sala, con tema semanal y reglas de convivencia.
-- Un hilo principal estable: `cineposta-la-sala-principal`. No depende de la URL ni de parámetros del navegador.
-- El widget vanilla de FastComments se carga solamente en esta página y solamente cuando está activado.
-- Estados en español para configuración pendiente, carga, error de red o bloqueo de contenido, además de una alternativa útil sin JavaScript.
-- Preparación mínima para futuros hilos por película mediante `getMovieCommunityThreadId(slug)` en `src/lib/community.ts`. No se agregaron widgets a las fichas existentes.
+- `/comunidad/` muestra discusiones recientes y dirige a la discusión de cada película.
+- Cada ficha tiene el enlace **Abrir discusión**.
+- La ruta `/comunidad/peliculas/<slug>/` es la única discusión para esa película. El primer mensaje crea su hilo y la restricción `unique(movie_slug)` evita duplicados.
+- Las personas escriben un apodo y un mensaje; no se guardan mensajes ni apodos en `localStorage`.
+- Supabase Anonymous Auth crea una identidad técnica por navegador, sin pantalla de login. Sirve exclusivamente para aplicar límites y vincular respuestas.
+- Las respuestas se agrupan debajo del mensaje original y el navegador actualiza la lista cada 25 segundos sin recargar la página.
 
-## Por qué FastComments
+## Retención y límites
 
-FastComments ofrece un widget JavaScript liviano para sitios estáticos, conversaciones persistentes, respuestas y actualizaciones en vivo. Evita que Cine Posta tenga que almacenar mensajes, apodos o credenciales. La integración usa el snippet vanilla oficial, sin paquetes npm extras.
+- Publicación inmediata; no hay cola de revisión.
+- Máximo 3 mensajes por identidad anónima cada 10 minutos.
+- Máximo 600 caracteres por mensaje y 32 por apodo.
+- Sin HTML, adjuntos ni imágenes.
+- Cada hilo conserva como máximo 200 mensajes y los mensajes vencen a los 60 días.
+- El cron diario borra los vencidos. Si `pg_cron` no está activo, el tope de 200 sigue evitando crecimiento indefinido, pero hay que habilitarlo para cumplir la retención exacta.
 
 ## Activación manual
 
-1. Creá la cuenta de Cine Posta en FastComments y agregá como dominios permitidos `www.cineposta.com.ar` y, si corresponde, `cineposta.com.ar`. Para pruebas locales, agregá también el origen exacto que vayas a usar, por ejemplo `http://localhost:4321`.
-2. En el panel de FastComments habilitá comentarios anónimos o sin requerir email. El sitio no implementa SSO ni cuentas de Cine Posta: cada visitante participa con el nombre o apodo que permita el proveedor.
-3. Buscá el **Tenant ID** de FastComments. Es un identificador público de la integración, no una API key. No copies API keys ni secretos al repositorio.
-4. Para desarrollo local, agregá en `.env`:
+1. Abrí el SQL Editor del proyecto Supabase existente y ejecutá [community_messages.sql](../supabase/sql/community_messages.sql).
+2. En Supabase Authentication, habilitá **Anonymous sign-ins**.
+3. Recomendado: activá CAPTCHA de Turnstile en Supabase Auth. Creá un widget gratuito de Cloudflare Turnstile y configurá allí su secret; ese secreto no va al repositorio.
+4. Para desarrollo local, agregá a `.env`:
 
    ```bash
-   PUBLIC_FASTCOMMENTS_ENABLED=true
-   PUBLIC_FASTCOMMENTS_TENANT_ID=tu-tenant-id-publico
+   PUBLIC_COMMUNITY_ENABLED=true
+   PUBLIC_TURNSTILE_SITE_KEY=tu-site-key-publica # opcional, requerida si activaste CAPTCHA
    ```
 
-5. Para GitHub Pages, creá las variables de repositorio (no secretos) `PUBLIC_FASTCOMMENTS_ENABLED=true` y `PUBLIC_FASTCOMMENTS_TENANT_ID=tu-tenant-id-publico`. El workflow de deploy ya las expone durante el build.
-6. Publicá el sitio y comprobá `/comunidad/`. El ID del hilo no debe cambiar si se cambia el dominio o la ruta.
+5. Para GitHub Pages, configurá las variables de repositorio `PUBLIC_COMMUNITY_ENABLED=true` y, si corresponde, `PUBLIC_TURNSTILE_SITE_KEY`. El workflow ya las expone al build.
+6. Reiniciá `npm run dev`, abrí una ficha de película y elegí **Abrir discusión**.
 
-La configuración de código está centralizada en `src/lib/community.ts`; las variables documentadas están en `.env.example`. Para pausar la comunidad, poné `PUBLIC_FASTCOMMENTS_ENABLED=false` o dejá vacío el Tenant ID y reconstruí. La página seguirá visible, sin cargar recursos de FastComments.
+Para desactivarlo temporalmente, usá `PUBLIC_COMMUNITY_ENABLED=false` y reconstruí el sitio. La Sala seguirá navegable, pero no inicializará Supabase ni permitirá publicar.
 
-## Tema semanal
+## Moderación y operación
 
-El texto de **Tema de la semana** está concentrado en `src/pages/comunidad.astro`, junto al contenido de la sección. Cambialo allí para actualizarlo: no exige tocar scripts, estilos ni configuración del proveedor.
+La publicación es instantánea por decisión editorial. Desde el panel de Supabase se puede ocultar un mensaje cambiando `status` a `hidden` o borrándolo. No otorgues a navegadores permisos directos sobre las tablas: la migración revoca esos permisos y sólo expone dos RPCs con validaciones.
 
-## Moderación recomendada
+El límite por identidad no reemplaza un CAPTCHA: sin Turnstile, una persona maliciosa puede crear nuevas identidades anónimas. Revisá periódicamente los mensajes, especialmente al inicio. No expongas nunca la service-role key; el sitio sólo utiliza la publishable/anon key existente y RLS.
 
-Antes de activar la sala, configurá desde el panel de FastComments las opciones disponibles en el plan contratado:
+## Futuro
 
-- protección contra spam y CAPTCHA;
-- moderación previa o revisión de primeros comentarios;
-- restricción de enlaces y filtro de palabras;
-- reportes de usuarios y bloqueo de participantes;
-- límite de frecuencia de publicación;
-- moderadores con acceso al panel, sin compartir credenciales.
-
-Probá una publicación normal, una respuesta, un spoiler marcado, un enlace y un reporte. Revisá también las políticas y controles que ofrezca FastComments antes de comunicar condiciones de privacidad específicas.
-
-## Prueba local
-
-```bash
-npm run dev
-# abrir http://localhost:4321/comunidad/
-```
-
-Para validar sin activar el servicio, dejá las variables de FastComments ausentes o en `false`; debe verse el mensaje de sala pausada y no debe cargarse ningún script de terceros. Para probar error de carga, activá una configuración de prueba y bloqueá `cdn.fastcomments.com` desde las herramientas del navegador: el estado debe finalizar con un mensaje claro, sin cargador infinito.
-
-## Límites conocidos
-
-Sin backend ni login propio, Cine Posta no controla la identidad, los datos ni la moderación de los comentarios. La disponibilidad, las notificaciones y las funciones de anonimato dependen del proveedor y de su plan/configuración. La política de privacidad del sitio menciona prudentemente que este contenido puede ser gestionado por un tercero; no reemplaza las condiciones del proveedor.
-
-## Futuro: conversaciones por película
-
-Cuando se decida habilitarlas, se puede insertar el mismo componente en una ficha y usar `getMovieCommunityThreadId(movie.slug)` como `urlId`, pasando también la URL canónica de la película. Hacerlo solo después de definir la política editorial y la carga de moderación; no migrar ni crear hilos masivamente.
+El esquema ya separa `community_threads` de `community_messages`, por lo que se puede sumar a la portada una lista real de hilos activos, votos o reportes sin migrar contenido. Antes de agregar imágenes, notificaciones o mensajes privados hay que revisar costos, privacidad y moderación.

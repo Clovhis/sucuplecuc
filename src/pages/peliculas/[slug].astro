@@ -33,6 +33,7 @@ import { getCagazometroScore } from '../../lib/cagazometro';
 import { getExplosiometroScore } from '../../lib/explosiometro';
 import { getSangrometroScore } from '../../lib/sangrometro';
 import { METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData } from '../../lib/seo';
+import { getMovieCommunityPath } from '../../lib/community';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -366,6 +367,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				Volver
 			</a>
 			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Ir al listado</a>
+			<a class="page-action" href={getMovieCommunityPath(movie.slug)}>Abrir discusión</a>
 		</div>
 
 		<section class="movie-detail">

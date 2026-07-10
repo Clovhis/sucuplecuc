@@ -1,0 +1,49 @@
+---
+interface Props {
+	enabled: boolean;
+	threadId: string;
+	movieSlug?: string;
+	movieTitle?: string;
+	turnstileSiteKey?: string;
+}
+
+const { enabled, threadId, movieSlug = '', movieTitle = '', turnstileSiteKey = '' } = Astro.props as Props;
+const status = enabled
+	? 'Preparando la charla…'
+	: 'La conversación está pausada mientras terminamos de preparar la sala. Volvé pronto.';
+---
+
+<div
+	class="community-comments"
+	data-community-comments-root
+	data-community-enabled={String(enabled)}
+	data-community-thread-id={threadId}
+	data-community-movie-slug={movieSlug}
+	data-community-movie-title={movieTitle}
+	data-community-turnstile-site-key={turnstileSiteKey}
+>
+	<p class="community-comments__status" data-community-comments-status data-state={enabled ? 'loading' : 'error'} role="status" aria-live="polite">{status}</p>
+	{
+		enabled && (
+			<>
+				<div class="community-comments__captcha" data-community-comments-captcha aria-live="polite"></div>
+				<ol class="community-comments__list" data-community-comments-list aria-label="Mensajes de La Sala"></ol>
+				<form class="community-comments__form" data-community-comments-form>
+					<p class="community-comments__replying" data-community-comments-replying hidden></p>
+					<label for="community-name">Tu nombre o apodo</label>
+					<input id="community-name" name="authorName" type="text" minlength="2" maxlength="32" autocomplete="nickname" required />
+					<label for="community-message">Tu mensaje</label>
+					<textarea id="community-message" name="body" rows="4" minlength="1" maxlength="600" required></textarea>
+					<p class="community-comments__hint">Máximo 600 caracteres. Se publica al instante y se elimina después de un tiempo.</p>
+					<div class="community-comments__form-actions">
+						<button type="submit">Publicar mensaje</button>
+						<button type="button" data-community-comments-cancel hidden>Cancelar respuesta</button>
+					</div>
+				</form>
+			</>
+		)
+	}
+	<noscript><p class="community-comments__noscript">Para participar en La Sala necesitás habilitar JavaScript. Mientras tanto, podés seguir leyendo y volver cuando quieras.</p></noscript>
+</div>
+
+<script src="../scripts/community-comments.ts"></script>
