@@ -499,6 +499,7 @@ img {
 
 .home-community-promo h2 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.6rem); }
 .home-community-promo p:not(.home-community-promo__eyebrow) { margin: 0.25rem 0 0; color: #c4cedd; }
+.home-community-promo__anonymous-note { max-width: 62ch; color: #d9cbff !important; font-size: 0.86rem; }
 
 .home-community-promo a {
 	flex: 0 0 auto;
