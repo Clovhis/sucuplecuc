@@ -166,6 +166,38 @@ Ese script:
 - expone RPCs para leer y votar
 - revoca acceso directo de `anon` a la tabla base
 
+## Comunidad y MCP de Supabase
+
+La comunidad usa Supabase Anonymous Auth para identificar al navegador sin pedir una cuenta. Los mensajes, respuestas, cambios de apodo, spoilers, reacciones y el listado de actividad se sirven mediante RPCs con `security definer`; el navegador no tiene acceso directo a las tablas.
+
+Los esquemas fuente están en `supabase/sql/`:
+
+- `community_messages.sql`: instalación completa de la comunidad.
+- `community_message_reactions.sql`: migración incremental de spoilers, 👍/👎 y autor del último posteo.
+- `community_message_limit_300.sql`: baja el máximo de los mensajes a 300 caracteres.
+- `movie_ratings.sql`: votos de 1 a 5 estrellas compartidos entre ficha y comunidad.
+
+### Conexión MCP para futuras iteraciones
+
+El proyecto de Supabase es `bftcrexcwktyiqsermni`. En Codex, el servidor MCP se configura fuera del repositorio, en `C:\Users\yosoy\.codex\config.toml`:
+
+```toml
+[mcp_servers.supabase]
+command = "npx"
+args = ["-y", "@supabase/mcp-server-supabase", "--project-ref", "bftcrexcwktyiqsermni"]
+startup_timeout_sec = 60
+tool_timeout_sec = 180
+```
+
+El proceso necesita un PAT de Supabase en la variable de entorno `SUPABASE_ACCESS_TOKEN`. Nunca lo agregues al repo, a `.env`, ni a documentación. Si el MCP no aparece entre las herramientas de la conversación, verificá primero que esa variable exista en el proceso de Codex y reiniciá la sesión; el servidor puede luego listar migraciones, ejecutar SQL de lectura y aplicar una migración incremental.
+
+Antes de aplicar cambios de base en producción:
+
+1. Consultá las migraciones existentes y el esquema afectado.
+2. Guardá el delta como un nuevo archivo en `supabase/sql/`; no reejecutes la instalación completa sobre una base existente.
+3. Aplicá esa migración con el MCP y verificá las RPCs/campos públicos que consume el cliente.
+4. Versioná el archivo SQL junto con el cambio de frontend.
+
 ## Deploy
 
 El sitio genera salida estática en `dist/`.

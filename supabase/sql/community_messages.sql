@@ -30,11 +30,23 @@ create table if not exists public.community_messages (
 	parent_id bigint references public.community_messages(id) on delete set null,
 	author_id uuid not null references auth.users(id) on delete cascade,
 	author_name text not null check (char_length(author_name) between 2 and 32 and author_name = btrim(author_name) and author_name !~ '[[:cntrl:]<>]'),
-	body text not null check (char_length(body) between 1 and 600 and body = btrim(body) and body !~ '[[:cntrl:]<>]'),
+	body text not null check (char_length(body) between 1 and 300 and body = btrim(body) and body !~ '[[:cntrl:]<>]'),
 	status public.community_message_status not null default 'approved',
 	created_at timestamptz not null default now(),
 	edited_at timestamptz,
+	is_spoiler boolean not null default false,
 	expires_at timestamptz not null default (now() + interval '60 days')
+);
+
+alter table public.community_messages add column if not exists is_spoiler boolean not null default false;
+
+create table if not exists public.community_message_votes (
+	message_id bigint not null references public.community_messages(id) on delete cascade,
+	author_id uuid not null references auth.users(id) on delete cascade,
+	vote smallint not null check (vote in (-1, 1)),
+	created_at timestamptz not null default now(),
+	updated_at timestamptz not null default now(),
+	primary key (message_id, author_id)
 );
 
 create table if not exists public.community_identities (
@@ -50,11 +62,13 @@ create unique index if not exists idx_community_identities_author_name_unique on
 create index if not exists idx_community_messages_thread_created on public.community_messages(thread_id, created_at);
 create index if not exists idx_community_messages_author_created on public.community_messages(author_id, created_at desc);
 create index if not exists idx_community_messages_expiry on public.community_messages(expires_at);
+create index if not exists idx_community_message_votes_message on public.community_message_votes(message_id);
 
 alter table public.community_threads enable row level security;
 alter table public.community_messages enable row level security;
 alter table public.community_identities enable row level security;
-revoke all on public.community_threads, public.community_messages, public.community_identities from anon, authenticated;
+alter table public.community_message_votes enable row level security;
+revoke all on public.community_threads, public.community_messages, public.community_identities, public.community_message_votes from anon, authenticated;
 
 -- Existing browsers keep the first nickname they used before identities existed.
 insert into public.community_identities (author_id, author_name, created_at)
@@ -72,13 +86,14 @@ as $$
 	select author_name from public.community_identities where author_id = auth.uid();
 $$;
 
-create or replace function public.list_community_discussions(p_limit integer default 24)
-returns table (movie_slug text, movie_title text, last_activity timestamptz, message_count bigint)
+drop function if exists public.list_community_discussions(integer);
+create function public.list_community_discussions(p_limit integer default 24)
+returns table (movie_slug text, movie_title text, last_activity timestamptz, message_count bigint, last_author_name text)
 language sql
 security definer
 set search_path = public
 as $$
-	select t.movie_slug, t.movie_title, max(m.created_at), count(m.id)
+	select t.movie_slug, t.movie_title, max(m.created_at), count(m.id), (array_agg(m.author_name order by m.created_at desc))[1]
 	from public.community_threads as t
 	join public.community_messages as m on m.thread_id = t.id
 	where t.movie_slug is not null
@@ -119,28 +134,34 @@ $$;
 
 drop function if exists public.list_community_messages(text, integer);
 create function public.list_community_messages(p_thread_key text, p_limit integer default 200)
-returns table (id bigint, parent_id bigint, author_name text, body text, created_at timestamptz, edited_at timestamptz, status text, is_mine boolean)
+returns table (id bigint, parent_id bigint, author_name text, body text, created_at timestamptz, edited_at timestamptz, status text, is_mine boolean, is_spoiler boolean, upvotes integer, downvotes integer, my_vote smallint)
 language sql
 security definer
 set search_path = public
 as $$
-	select m.id, m.parent_id, m.author_name, m.body, m.created_at, m.edited_at, m.status::text, coalesce(m.author_id = auth.uid(), false)
+	select m.id, m.parent_id, m.author_name, m.body, m.created_at, m.edited_at, m.status::text, coalesce(m.author_id = auth.uid(), false), m.is_spoiler,
+		count(v.author_id) filter (where v.vote = 1)::integer, count(v.author_id) filter (where v.vote = -1)::integer,
+		coalesce(max(v.vote) filter (where v.author_id = auth.uid()), 0)::smallint
 	from public.community_messages m
 	join public.community_threads t on t.id = m.thread_id
+	left join public.community_message_votes v on v.message_id = m.id
 	where t.thread_key = btrim(coalesce(p_thread_key, ''))
 		and m.expires_at > now()
 		and m.status = 'approved'
+	group by m.id
 	order by m.created_at asc
 	limit greatest(1, least(coalesce(p_limit, 200), 200));
 $$;
 
-create or replace function public.submit_community_message(
+drop function if exists public.submit_community_message(text, text, text, bigint, text, text);
+create function public.submit_community_message(
 	p_thread_key text,
 	p_movie_slug text,
 	p_movie_title text,
 	p_parent_id bigint,
 	p_author_name text,
-	p_body text
+	p_body text,
+	p_is_spoiler boolean default false
 )
 returns table (id bigint, status text)
 language plpgsql
@@ -165,7 +186,7 @@ begin
 		raise exception 'invalid movie discussion';
 	end if;
 	if char_length(normalized_name) not between 2 and 32 or normalized_name ~ '[[:cntrl:]<>]' then raise exception 'invalid author name'; end if;
-	if char_length(normalized_body) not between 1 and 600 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
+	if char_length(normalized_body) not between 1 and 300 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
 	begin
 		insert into public.community_identities (author_id, author_name)
 		values (auth.uid(), normalized_name)
@@ -187,8 +208,8 @@ begin
 	if p_parent_id is not null and not exists (select 1 from public.community_messages as parent_message where parent_message.id = p_parent_id and parent_message.thread_id = thread_record.id and parent_message.expires_at > now()) then
 		raise exception 'invalid parent message';
 	end if;
-	insert into public.community_messages (thread_id, parent_id, author_id, author_name, body)
-	values (thread_record.id, p_parent_id, auth.uid(), normalized_name, normalized_body)
+	insert into public.community_messages (thread_id, parent_id, author_id, author_name, body, is_spoiler)
+	values (thread_record.id, p_parent_id, auth.uid(), normalized_name, normalized_body, coalesce(p_is_spoiler, false))
 	returning * into new_message;
 
 	-- Keep each discussion intentionally short-lived and bounded. A daily cron
@@ -205,6 +226,26 @@ begin
 end;
 $$;
 
+create or replace function public.vote_community_message(p_message_id bigint, p_vote smallint)
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+	if auth.uid() is null then raise exception 'anonymous session is required'; end if;
+	if p_vote not in (-1, 0, 1) then raise exception 'invalid vote'; end if;
+	if not exists (select 1 from public.community_messages where id = p_message_id and status = 'approved' and expires_at > now()) then raise exception 'message not found'; end if;
+	if p_vote = 0 then
+		delete from public.community_message_votes where message_id = p_message_id and author_id = auth.uid();
+		return;
+	end if;
+	insert into public.community_message_votes (message_id, author_id, vote)
+	values (p_message_id, auth.uid(), p_vote)
+	on conflict (message_id, author_id) do update set vote = excluded.vote, updated_at = now();
+end;
+$$;
+
 create or replace function public.update_community_message(p_message_id bigint, p_body text)
 returns table (id bigint, edited_at timestamptz)
 language plpgsql
@@ -215,7 +256,7 @@ declare
 	normalized_body text := btrim(coalesce(p_body, ''));
 begin
 	if auth.uid() is null then raise exception 'anonymous session is required'; end if;
-	if char_length(normalized_body) not between 1 and 600 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
+	if char_length(normalized_body) not between 1 and 300 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
 	return query
 		update public.community_messages as message_to_update
 		set body = normalized_body, edited_at = now()
@@ -244,19 +285,21 @@ end;
 $$;
 
 revoke all on function public.list_community_messages(text, integer) from public;
-revoke all on function public.submit_community_message(text, text, text, bigint, text, text) from public;
+revoke all on function public.submit_community_message(text, text, text, bigint, text, text, boolean) from public;
 revoke all on function public.get_community_nickname() from public;
 revoke all on function public.list_community_discussions(integer) from public;
 revoke all on function public.change_community_nickname(text) from public;
 revoke all on function public.update_community_message(bigint, text) from public;
 revoke all on function public.delete_community_message(bigint) from public;
+revoke all on function public.vote_community_message(bigint, smallint) from public;
 grant execute on function public.list_community_messages(text, integer) to anon, authenticated;
-grant execute on function public.submit_community_message(text, text, text, bigint, text, text) to authenticated;
+grant execute on function public.submit_community_message(text, text, text, bigint, text, text, boolean) to authenticated;
 grant execute on function public.get_community_nickname() to authenticated;
 grant execute on function public.list_community_discussions(integer) to anon, authenticated;
 grant execute on function public.change_community_nickname(text) to authenticated;
 grant execute on function public.update_community_message(bigint, text) to authenticated;
 grant execute on function public.delete_community_message(bigint) to authenticated;
+grant execute on function public.vote_community_message(bigint, smallint) to authenticated;
 
 -- Optional but recommended: enable pg_cron in Database > Extensions, then run
 -- this block to delete messages after their 60-day retention window. Anonymous

@@ -8621,6 +8621,29 @@ img {
 	border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.movie-detail__community-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.75rem;
+	padding: 0.6rem 0.85rem;
+	border: 1px solid rgba(255, 176, 137, 0.55);
+	border-radius: 9px;
+	background: rgba(255, 176, 137, 0.1);
+	color: #fff0e7;
+	font-weight: 700;
+	line-height: 1.3;
+	text-align: center;
+	transition: background 0.16s ease, border-color 0.16s ease, transform 0.16s ease;
+}
+
+.movie-detail__community-link:hover,
+.movie-detail__community-link:focus-visible {
+	border-color: var(--accent-soft);
+	background: rgba(255, 176, 137, 0.2);
+	transform: translateY(-1px);
+}
+
 .community-page {
 	display: grid;
 	gap: 1rem;
@@ -8947,6 +8970,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
+	justify-content: flex-end;
 }
 
 .community-message button,
@@ -8962,6 +8986,66 @@ img {
 	font-size: 0.72rem;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
+}
+
+.community-message__vote {
+	margin-inline-start: 0.1rem;
+	border-color: rgba(143, 197, 255, 0.28) !important;
+	background: rgba(143, 197, 255, 0.07) !important;
+	color: #dcecff !important;
+	transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.community-message__vote.is-active {
+	border-color: rgba(143, 197, 255, 0.8) !important;
+	background: rgba(143, 197, 255, 0.2) !important;
+	color: #ffffff !important;
+}
+
+.community-message__vote:hover,
+.community-message__vote:focus-visible {
+	border-color: rgba(143, 197, 255, 0.92) !important;
+	background: linear-gradient(135deg, rgba(143, 197, 255, 0.32), rgba(255, 176, 137, 0.18)) !important;
+	box-shadow: 0 0.35rem 0.9rem rgba(30, 95, 153, 0.24);
+	transform: translateY(-2px) scale(1.04);
+}
+
+.community-message__vote.is-active:hover,
+.community-message__vote.is-active:focus-visible {
+	background: linear-gradient(135deg, rgba(143, 197, 255, 0.46), rgba(255, 176, 137, 0.25)) !important;
+	box-shadow: 0 0.45rem 1.05rem rgba(90, 170, 255, 0.32);
+}
+
+.community-message__spoiler {
+	position: relative;
+	display: grid;
+	gap: 0.45rem;
+	padding: 0.7rem;
+	border: 1px dashed rgba(255, 189, 159, 0.42);
+	border-radius: 10px;
+	background: rgba(255, 176, 137, 0.05);
+}
+
+.community-message__spoiler > p {
+	filter: blur(0.42rem);
+	user-select: none;
+	transition: filter 0.16s ease;
+}
+
+.community-message__spoiler:hover > p,
+.community-message__spoiler:focus-within > p,
+.community-message__spoiler.is-revealed > p {
+	filter: none;
+	user-select: text;
+}
+
+.community-message__spoiler-reveal {
+	justify-self: start;
+	min-height: 2rem !important;
+	padding: 0.28rem 0.5rem !important;
+	border-color: rgba(255, 189, 159, 0.36) !important;
+	background: rgba(255, 176, 137, 0.08) !important;
+	color: #ffe2d3 !important;
 }
 
 .community-message button:hover,
@@ -9065,6 +9149,8 @@ img {
 .community-comments__form textarea:focus-visible { outline: 3px solid rgba(255, 176, 137, 0.35); outline-offset: 2px; }
 .community-comments__hint,
 .community-comments__replying { margin: 0; color: var(--muted); font-size: 0.82rem; }
+.community-comments__spoiler-toggle { display: flex; align-items: flex-start; gap: 0.55rem; color: #dce4f0 !important; font-size: 0.82rem !important; font-weight: 500 !important; line-height: 1.4; cursor: pointer; }
+.community-comments__spoiler-toggle input { inline-size: 1rem; min-height: 1rem; margin-top: 0.1rem; accent-color: var(--accent-soft); }
 .community-comments__form-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; }
 .community-comments__form-actions button[data-community-comments-cancel] { border-color: rgba(143, 197, 255, 0.36); background: rgba(143, 197, 255, 0.08); color: #e0efff; }
 .community-comments__captcha { min-height: 0; overflow: hidden; }
@@ -9091,6 +9177,14 @@ img {
 }
 
 .community-page__rules li::before { content: '•'; color: var(--accent-soft); }
+
+.community-page__rules .rating-card {
+	display: grid;
+	gap: 0.6rem;
+	margin-top: 1.25rem;
+	padding-top: 1rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .community-page__privacy-note {
 	margin: 0;

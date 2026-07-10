@@ -9,6 +9,10 @@ type CommunityMessage = {
 	edited_at: string | null;
 	status: 'approved' | 'pending';
 	is_mine: boolean;
+	is_spoiler: boolean;
+	upvotes: number;
+	downvotes: number;
+	my_vote: -1 | 0 | 1;
 };
 
 interface TurnstileWindow extends Window {
@@ -123,7 +127,7 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 			setStatus('No pudimos actualizar la charla. Probá de nuevo en un rato.', 'error');
 			return;
 		}
-		renderMessages(listEl, (data ?? []) as CommunityMessage[], setReply, updateMessage, deleteMessage);
+		renderMessages(listEl, (data ?? []) as CommunityMessage[], setReply, updateMessage, deleteMessage, castVote);
 	}
 
 	function setReply(message: CommunityMessage | null): void {
@@ -138,6 +142,7 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		const formData = new FormData(formEl);
 		const authorName = String(formData.get('authorName') ?? '').trim();
 		const body = String(formData.get('body') ?? '').trim();
+		const isSpoiler = formData.get('isSpoiler') === 'on';
 		if (authorName.length < 2 || body.length < 1) {
 			setStatus('Completá tu apodo y el mensaje antes de enviarlo.', 'error');
 			return;
@@ -153,6 +158,7 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 			p_parent_id: replyToId,
 			p_author_name: authorName,
 			p_body: body,
+			p_is_spoiler: isSpoiler,
 		});
 		if (submit) submit.disabled = false;
 		if (error) {
@@ -239,6 +245,15 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		setStatus('Mensaje borrado.', 'ready');
 		await loadMessages();
 	}
+
+	async function castVote(messageId: number, vote: -1 | 0 | 1): Promise<void> {
+		const { error } = await client.rpc('vote_community_message', { p_message_id: messageId, p_vote: vote });
+		if (error) {
+			setStatus('No pudimos guardar tu reacción. Probá de nuevo.', 'error');
+			return;
+		}
+		await loadMessages();
+	}
 }
 
 async function prepareCaptcha(target: HTMLElement | null, siteKey: string): Promise<string | undefined> {
@@ -269,6 +284,7 @@ function renderMessages(
 	onReply: (message: CommunityMessage) => void,
 	onUpdate: (messageId: number, body: string) => Promise<void>,
 	onDelete: (messageId: number) => Promise<void>,
+	onVote: (messageId: number, vote: -1 | 0 | 1) => Promise<void>,
 ): void {
 	list.replaceChildren();
 	if (!messages.length) {
@@ -284,7 +300,7 @@ function renderMessages(
 		byParent.set(parent, [...(byParent.get(parent) ?? []), message]);
 	}
 	for (const message of byParent.get(null) ?? []) {
-		list.append(createMessage(message, byParent, onReply, onUpdate, onDelete));
+		list.append(createMessage(message, byParent, onReply, onUpdate, onDelete, onVote));
 	}
 }
 
@@ -294,6 +310,7 @@ function createMessage(
 	onReply: (message: CommunityMessage) => void,
 	onUpdate: (messageId: number, body: string) => Promise<void>,
 	onDelete: (messageId: number) => Promise<void>,
+	onVote: (messageId: number, vote: -1 | 0 | 1) => Promise<void>,
 ): HTMLLIElement {
 	const item = document.createElement('li');
 	item.className = 'community-message';
@@ -322,6 +339,22 @@ function createMessage(
 	const body = document.createElement('p');
 	body.dir = 'auto';
 	body.textContent = message.body;
+	let messageBody: HTMLElement = body;
+	if (message.is_spoiler) {
+		const spoiler = document.createElement('div');
+		spoiler.className = 'community-message__spoiler';
+		const reveal = document.createElement('button');
+		reveal.type = 'button';
+		reveal.className = 'community-message__spoiler-reveal';
+		reveal.textContent = '⚠ Spoiler · tocá o pasá el mouse para verlo';
+		reveal.setAttribute('aria-expanded', 'false');
+		reveal.addEventListener('click', () => {
+			const isRevealed = spoiler.classList.toggle('is-revealed');
+			reveal.setAttribute('aria-expanded', String(isRevealed));
+		});
+		spoiler.append(reveal, body);
+		messageBody = spoiler;
+	}
 	const reply = document.createElement('button');
 	reply.type = 'button';
 	reply.textContent = 'Responder';
@@ -340,16 +373,32 @@ function createMessage(
 		remove.addEventListener('click', () => void onDelete(message.id));
 		actions.append(edit, remove);
 	}
-	article.append(header, body, actions);
+	actions.append(
+		createVoteButton('👍', 'Me gusta este comentario', Number(message.upvotes ?? 0), message.my_vote === 1, () => void onVote(message.id, message.my_vote === 1 ? 0 : 1)),
+		createVoteButton('👎', 'No me gusta este comentario', Number(message.downvotes ?? 0), message.my_vote === -1, () => void onVote(message.id, message.my_vote === -1 ? 0 : -1)),
+	);
+	article.append(header, messageBody, actions);
 	item.append(article);
 	const replies = byParent.get(message.id) ?? [];
 	if (replies.length) {
 		const nested = document.createElement('ol');
 		nested.className = 'community-message__replies';
-		for (const child of replies) nested.append(createMessage(child, byParent, onReply, onUpdate, onDelete));
+		for (const child of replies) nested.append(createMessage(child, byParent, onReply, onUpdate, onDelete, onVote));
 		item.append(nested);
 	}
 	return item;
+}
+
+function createVoteButton(icon: string, label: string, count: number, active: boolean, onClick: () => void): HTMLButtonElement {
+	const button = document.createElement('button');
+	button.type = 'button';
+	button.className = 'community-message__vote';
+	button.classList.toggle('is-active', active);
+	button.setAttribute('aria-label', label);
+	button.setAttribute('aria-pressed', String(active));
+	button.textContent = `${icon} ${count}`;
+	button.addEventListener('click', onClick);
+	return button;
 }
 
 function openEditor(
@@ -368,7 +417,7 @@ function openEditor(
 	textarea.id = label.htmlFor;
 	textarea.name = 'body';
 	textarea.rows = 3;
-	textarea.maxLength = 600;
+	textarea.maxLength = 300;
 	textarea.required = true;
 	textarea.value = message.body;
 	const save = document.createElement('button');

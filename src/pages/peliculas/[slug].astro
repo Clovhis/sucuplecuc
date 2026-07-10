@@ -521,6 +521,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								<section class="movie-detail__review-card" aria-label="Reseña honesta">
 									<p class="movie-detail__review-kicker">La posta</p>
 									<p class="movie-detail__review">{movie.review}</p>
+									<a class="movie-detail__community-link" href={getMovieCommunityPath(movie.slug)}>💬 ¿La viste? Caé a Foro Cineposta y tirá tu opinión</a>
 								</section>
 							)
 						}

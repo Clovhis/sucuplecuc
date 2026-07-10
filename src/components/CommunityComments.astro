@@ -27,7 +27,7 @@ const status = enabled
 		enabled && (
 			<>
 				<div class="community-comments__captcha" data-community-comments-captcha aria-live="polite"></div>
-				<ol class="community-comments__list" data-community-comments-list aria-label="Mensajes de La Sala"></ol>
+				<ol class="community-comments__list" data-community-comments-list aria-label="Mensajes de Foro Cineposta"></ol>
 				<form class="community-comments__form" data-community-comments-form>
 					<p class="community-comments__replying" data-community-comments-replying hidden></p>
 					<div data-community-comments-nickname-field>
@@ -39,8 +39,9 @@ const status = enabled
 						<button type="button" data-community-comments-change-nickname hidden>Cambiar apodo</button>
 					</div>
 					<label for="community-message">Tu mensaje</label>
-					<textarea id="community-message" name="body" rows="4" minlength="1" maxlength="600" required></textarea>
-					<p class="community-comments__hint">Máximo 600 caracteres. Se publica al instante y se elimina después de un tiempo.</p>
+					<textarea id="community-message" name="body" rows="4" minlength="1" maxlength="300" required></textarea>
+					<label class="community-comments__spoiler-toggle"><input name="isSpoiler" type="checkbox" /> <span>Contiene spoiler: se va a tapar hasta que lo quieran ver.</span></label>
+					<p class="community-comments__hint">Máximo 300 caracteres. Se publica al instante y se elimina después de un tiempo.</p>
 					<div class="community-comments__form-actions">
 						<button type="submit">Publicar mensaje</button>
 						<button type="button" data-community-comments-cancel hidden>Cancelar respuesta</button>
@@ -62,7 +63,7 @@ const status = enabled
 			</>
 		)
 	}
-	<noscript><p class="community-comments__noscript">Para participar en La Sala necesitás habilitar JavaScript. Mientras tanto, podés seguir leyendo y volver cuando quieras.</p></noscript>
+	<noscript><p class="community-comments__noscript">Para participar en Foro Cineposta necesitás habilitar JavaScript. Mientras tanto, podés seguir leyendo y volver cuando quieras.</p></noscript>
 </div>
 
 <script src="../scripts/community-comments.ts"></script>

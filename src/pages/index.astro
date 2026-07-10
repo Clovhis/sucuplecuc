@@ -239,10 +239,10 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 					<section class="home-community-promo fade-up" style="--item-delay: 55ms;" aria-labelledby="home-community-promo-title">
 						<div>
 							<p class="home-community-promo__eyebrow">Comunidad</p>
-							<h2 id="home-community-promo-title">La Sala</h2>
-							<p>Opiniones, recomendaciones y discusiones por película.</p>
+							<h2 id="home-community-promo-title">Foro Cineposta</h2>
+							<p data-community-home-banner>Vení a tirar factos sobre esa película que te dejó pensando.</p>
 						</div>
-						<a href={COMMUNITY_PATH}>Ir a la comunidad</a>
+					<a href={COMMUNITY_PATH}>Ir a la comunidad</a>
 					</section>
 					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 80ms;" aria-label="Qué vemos hoy">
 						<PostometroTeaser compact={true} />
@@ -652,6 +652,8 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 		}
 	</main>
 </BaseLayout>
+
+<script src="../scripts/community-banner.ts"></script>
 
 <!-- Astro 6: page interactivity lives in a typed local module instead of an inline exception block. -->
 <script src="../scripts/editorial-rankings.ts"></script>

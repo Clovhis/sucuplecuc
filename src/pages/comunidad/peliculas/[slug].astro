@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CommunityComments from '../../../components/CommunityComments.astro';
+import MovieRating from '../../../components/MovieRating.astro';
 import { getCommunityCommentsConfig, getMovieCommunityThreadId, COMMUNITY_PATH } from '../../../lib/community';
 import { getMovieCommunityPath } from '../../../lib/community';
 import { formatRuntimeMinutes, getMoviePath, getMovies, getPosterUrl } from '../../../lib/movies';
@@ -16,7 +17,7 @@ const { movie } = Astro.props as { movie: Movie };
 const comments = getCommunityCommentsConfig();
 const discussionPath = getMovieCommunityPath(movie.slug);
 const pageTitle = `Discusión: ${movie.title} (${movie.year}) | ${SITE_NAME}`;
-const pageDescription = `Opiniones, recomendaciones y charla sobre ${movie.title} (${movie.year}) en La Sala de Cine Posta.`;
+const pageDescription = `Opiniones, recomendaciones y charla sobre ${movie.title} (${movie.year}) en Foro Cineposta.`;
 const structuredData = createSimplePageStructuredData(discussionPath, pageTitle, pageDescription);
 const people = getMoviePeopleGroups(movie);
 const cast = people.cast.slice(0, 4);
@@ -26,7 +27,7 @@ const genres = [movie.category, ...(movie.genres ?? [])].filter((genre, index, v
 <BaseLayout title={pageTitle} description={pageDescription} image={getPosterUrl(movie.poster)} structuredData={structuredData} noindex={true} allowAds={false}>
 	<main id="main-content" class="container community-page community-discussion-page">
 		<nav class="community-page__nav" aria-label="Navegación principal">
-			<a class="community-page__home-link" href={COMMUNITY_PATH}>La Sala</a>
+			<a class="community-page__home-link" href={COMMUNITY_PATH}>Foro Cineposta</a>
 			<a class="community-page__home-link" href={getMoviePath(movie.slug)}>Ficha de la película</a>
 		</nav>
 		<article class="community-movie-summary fade-up" style="--item-delay: 0ms;" aria-labelledby="movie-title">
@@ -51,8 +52,9 @@ const genres = [movie.category, ...(movie.genres ?? [])].filter((genre, index, v
 				<CommunityComments enabled={comments.enabled} threadId={getMovieCommunityThreadId(movie.slug)} movieSlug={movie.slug} movieTitle={movie.title} turnstileSiteKey={comments.turnstileSiteKey} />
 			</section>
 			<aside class="community-page__rules fade-up" style="--item-delay: 160ms;" aria-labelledby="reglas-sala">
-				<h2 id="reglas-sala">Reglas</h2>
-				<ul><li>Respetá a los demás.</li><li>Avisá antes de publicar spoilers.</li><li>No publiques spam ni enlaces sospechosos.</li><li>Debatí ideas, no ataques personas.</li></ul>
+				<h2 id="reglas-sala">Código de la sala</h2>
+				<ul><li>Picanteá la discusión, no a la persona del otro lado.</li><li>Si vas a soltar una bomba del final, marcala como spoiler y todos felices.</li><li>Spam, links turbios y cadenas: directo al tacho.</li><li>Podés amar u odiar una peli; tirá argumentos y no patadas.</li></ul>
+				<MovieRating movieSlug={movie.slug} />
 				<p class="community-page__privacy-note">Los mensajes son temporales y cada hilo conserva hasta 200 publicaciones.</p>
 			</aside>
 		</div>

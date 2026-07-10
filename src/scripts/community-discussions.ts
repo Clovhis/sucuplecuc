@@ -5,6 +5,7 @@ type CommunityDiscussion = {
 	movie_title: string;
 	last_activity: string;
 	message_count: number;
+	last_author_name: string;
 };
 
 const list = document.querySelector<HTMLUListElement>('[data-community-discussion-list]');
@@ -45,16 +46,17 @@ function createDiscussionItem(discussion: CommunityDiscussion): HTMLLIElement {
 	title.textContent = discussion.movie_title;
 	const meta = document.createElement('span');
 	const activityIsRecent = Date.now() - new Date(discussion.last_activity).getTime() < 24 * 60 * 60 * 1000;
+	const lastAuthor = discussion.last_author_name?.trim() || 'alguien de la comunidad';
 	if (activityIsRecent) {
 		const indicator = document.createElement('span');
 		indicator.className = 'community-discussion-list__activity';
 		indicator.setAttribute('aria-label', 'Actividad reciente');
 		const dot = document.createElement('span');
 		dot.setAttribute('aria-hidden', 'true');
-		indicator.append(dot, document.createTextNode('Actividad reciente'));
+		indicator.append(dot, document.createTextNode(`Actividad reciente · último posteo por ${lastAuthor}`));
 		meta.append(indicator);
 	} else {
-		meta.textContent = `${discussion.message_count} mensajes`;
+		meta.textContent = `${discussion.message_count} mensajes · último posteo por ${lastAuthor}`;
 	}
 	link.append(title, meta);
 	item.append(link);

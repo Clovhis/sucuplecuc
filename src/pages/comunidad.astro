@@ -4,8 +4,8 @@ import { COMMUNITY_PATH, getMovieCommunityPath } from '../lib/community';
 import { getLatestReviewMovies, getMovies } from '../lib/movies';
 import { createSimplePageStructuredData, SITE_NAME } from '../lib/seo';
 
-const pageTitle = `La Sala | ${SITE_NAME}`;
-const pageDescription = 'La Sala de Cine Posta: un espacio para hablar de películas, compartir recomendaciones y debatir sin vender humo.';
+const pageTitle = `Foro Cineposta | ${SITE_NAME}`;
+const pageDescription = 'Foro Cineposta: el rincón para tirar factos, recomendaciones y opiniones de cine sin vender humo.';
 const discussionMovies = getLatestReviewMovies(getMovies(), 12);
 const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle, pageDescription);
 ---
@@ -17,7 +17,10 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 			<a class="community-page__current-link" href={COMMUNITY_PATH} aria-current="page">Comunidad</a>
 		</nav>
 		<section class="community-page__hero fade-up" style="--item-delay: 0ms;">
-			<h1>La Sala</h1>
+			<p class="community-page__eyebrow">La comunidad de Cine Posta</p>
+			<h1>Foro Cineposta</h1>
+			<p class="community-page__tagline" data-community-banner>Vení a tirar factos sobre esa película que te dejó pensando.</p>
+			<p class="community-page__lead">Una discusión por peli, con gente que también se queda hasta los créditos. Caé con una opinión, una recomendación o una toma polémica.</p>
 		</section>
 		<div class="community-page__content">
 			<section class="community-page__comments fade-up" style="--item-delay: 80ms;" aria-labelledby="conversacion">
@@ -27,8 +30,8 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 				</ul>
 			</section>
 			<aside class="community-page__rules fade-up" style="--item-delay: 160ms;" aria-labelledby="reglas-sala">
-				<h2 id="reglas-sala">Reglas</h2>
-				<ul><li>Respetá a los demás.</li><li>Avisá antes de publicar spoilers.</li><li>No publiques spam ni enlaces sospechosos.</li><li>Debatí ideas, no ataques personas.</li></ul>
+				<h2 id="reglas-sala">Código de la sala</h2>
+				<ul><li>Picanteá la discusión, no a la persona del otro lado.</li><li>Si vas a soltar una bomba del final, marcala como spoiler y todos felices.</li><li>Spam, links turbios y cadenas: directo al tacho.</li><li>Podés amar u odiar una peli; tirá argumentos y no patadas.</li></ul>
 				<p class="community-page__privacy-note">Los mensajes se guardan temporalmente y cada película conserva un solo hilo. Más información en nuestra <a href="/politica-de-privacidad/">política de privacidad</a>.</p>
 			</aside>
 		</div>
@@ -36,3 +39,4 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 </BaseLayout>
 
 <script src="../scripts/community-discussions.ts"></script>
+<script src="../scripts/community-banner.ts"></script>
