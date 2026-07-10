@@ -1281,6 +1281,29 @@ img {
 	padding-inline: 0.56rem;
 }
 
+.home-platform-filter__chip[data-home-platform-id='otras plataformas'] {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+.home-platform-filter__chip[data-home-platform-id='otras plataformas']::before {
+	content: '';
+	position: absolute;
+	inset: -0.25rem -0.45rem;
+	z-index: 0;
+	background: url('/brand/platforms/pirate-flag.svg') center / 6.5rem auto no-repeat;
+	color: #d8e3fb;
+	opacity: 0.3;
+	transform: rotate(-4deg);
+	pointer-events: none;
+}
+
+.home-platform-filter__chip[data-home-platform-id='otras plataformas'] > .platform-chip {
+	position: relative;
+	z-index: 1;
+}
+
 .home-platform-filter__chip:hover,
 .home-platform-filter__chip:focus-visible {
 	transform: translateY(-2px);
@@ -1315,71 +1338,71 @@ img {
 
 .home-platform-filter__badge.platform-chip--brand {
 	padding: 0;
-	--platform-chip-logo-max-height: 1.12rem;
+	--platform-chip-logo-max-height: 1.25rem;
 }
 
 .home-platform-filter__badge .platform-chip__logo {
-	max-height: 1.12rem;
+	max-height: 1.25rem;
 }
 
 .home-platform-filter__badge.platform-chip--cine-ar {
-	--platform-chip-logo-width: 3rem;
-	--platform-chip-logo-max-height: 0.98rem;
+	--platform-chip-logo-width: 3.25rem;
+	--platform-chip-logo-max-height: 1.08rem;
 }
 
 .home-platform-filter__badge.platform-chip--disney-plus .platform-chip__logo {
-	max-height: 1.22rem;
+	max-height: 1.34rem;
 }
 
 .home-platform-filter__badge.platform-chip--netflix {
-	--platform-chip-logo-width: 3.2rem;
+	--platform-chip-logo-width: 3.5rem;
 }
 
 .home-platform-filter__badge.platform-chip--hbo-max {
-	--platform-chip-logo-width: 3.8rem;
-}
-
-.home-platform-filter__badge.platform-chip--paramount-plus {
-	--platform-chip-logo-width: 3.85rem;
-	--platform-chip-logo-max-height: 1.48rem;
-}
-
-.home-platform-filter__badge.platform-chip--disney-plus {
 	--platform-chip-logo-width: 4.15rem;
 }
 
+.home-platform-filter__badge.platform-chip--paramount-plus {
+	--platform-chip-logo-width: 4.2rem;
+	--platform-chip-logo-max-height: 1.58rem;
+}
+
+.home-platform-filter__badge.platform-chip--disney-plus {
+	--platform-chip-logo-width: 4.55rem;
+}
+
 .home-platform-filter__badge.platform-chip--prime-video {
-	--platform-chip-logo-width: 4.25rem;
+	--platform-chip-logo-width: 4.65rem;
 }
 
 .home-platform-filter__badge.platform-chip--apple-tv {
-	--platform-chip-logo-width: 3rem;
+	--platform-chip-logo-width: 3.3rem;
 }
 
 .home-platform-filter__badge.platform-chip--mercado-play {
-	--platform-chip-logo-width: 1.86rem;
+	--platform-chip-logo-width: 2.05rem;
 }
 
 .home-platform-filter__badge.platform-chip--crunchyroll {
-	--platform-chip-logo-width: 4.5rem;
+	--platform-chip-logo-width: 4.95rem;
 }
 
 .home-platform-filter__badge.platform-chip--dgo {
-	--platform-chip-logo-width: 3.25rem;
-	--platform-chip-logo-max-height: 1.2rem;
+	--platform-chip-logo-width: 3.55rem;
+	--platform-chip-logo-max-height: 1.3rem;
 }
 
 .home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo,
 .home-platform-filter__badge.platform-chip--crunchyroll .platform-chip__logo {
-	max-height: 1.04rem;
+	max-height: 1.15rem;
 }
 
 .home-platform-filter__badge.platform-chip--paramount-plus .platform-chip__logo {
-	max-height: 1.42rem;
+	max-height: 1.54rem;
 }
 
 .home-platform-filter__badge.platform-chip--cine .platform-chip__cine-label {
-	font-size: 0.72rem;
+	font-size: 0.78rem;
 }
 
 .home-people-showcase {
