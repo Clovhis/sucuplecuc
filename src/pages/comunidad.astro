@@ -1,12 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { COMMUNITY_PATH, getMovieCommunityPath } from '../lib/community';
-import { getLatestReviewMovies, getMovies } from '../lib/movies';
+import { getLatestReviewMovies, getMovies, getPosterUrl } from '../lib/movies';
 import { createSimplePageStructuredData, SITE_NAME } from '../lib/seo';
 
 const pageTitle = `Foro Cineposta | ${SITE_NAME}`;
 const pageDescription = 'Foro Cineposta: el rincón para tirar factos, recomendaciones y opiniones de cine sin vender humo.';
-const discussionMovies = getLatestReviewMovies(getMovies(), 12);
+const movies = getMovies();
+const discussionMovies = getLatestReviewMovies(movies, 12);
+const communityDiscussionVisuals = Object.fromEntries(movies.map((movie) => [movie.slug, {
+	posterSrc: getPosterUrl(movie.poster),
+	facts: `${movie.category} · ${movie.year}`,
+}]));
+const communityDiscussionVisualsJson = JSON.stringify(communityDiscussionVisuals).replace(/</g, '\\u003c');
 const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle, pageDescription);
 ---
 
@@ -26,7 +32,7 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 			<section class="community-page__comments fade-up" style="--item-delay: 80ms;" aria-labelledby="conversacion">
 				<div class="community-page__section-heading"><div><h2 id="conversacion">Discusiones recientes</h2></div><p>Una discusión por película.</p></div>
 				<ul class="community-discussion-list" data-community-discussion-list aria-live="polite">
-					{discussionMovies.map((movie) => <li data-community-discussion-slug={movie.slug}><a href={getMovieCommunityPath(movie.slug)}><strong>{movie.title}</strong><span>{movie.year} · Abrir discusión</span></a></li>)}
+					{discussionMovies.map((movie) => <li data-community-discussion-slug={movie.slug} data-community-discussion-facts={`${movie.category} · ${movie.year}`}><a href={getMovieCommunityPath(movie.slug)}><img class="community-discussion-list__poster" src={getPosterUrl(movie.poster)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /><span class="community-discussion-list__body"><strong>{movie.title}</strong><span class="community-discussion-list__facts">{movie.category} · {movie.year} · Abrir discusión</span></span></a></li>)}
 				</ul>
 			</section>
 			<aside class="community-page__rules fade-up" style="--item-delay: 160ms;" aria-labelledby="reglas-sala">
@@ -38,5 +44,6 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 	</main>
 </BaseLayout>
 
+<script is:inline id="community-discussion-visuals" type="application/json" set:html={communityDiscussionVisualsJson}></script>
 <script src="../scripts/community-discussions.ts"></script>
 <script src="../scripts/community-banner.ts"></script>

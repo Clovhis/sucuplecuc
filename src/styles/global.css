@@ -8908,24 +8908,58 @@ img {
 
 .community-discussion-list a {
 	display: grid;
-	gap: 0.25rem;
-	padding: 0.88rem;
+	grid-template-columns: 4.4rem minmax(0, 1fr);
+	gap: 0.8rem;
+	align-items: stretch;
+	overflow: hidden;
+	padding: 0;
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 14px;
 	background: rgba(255, 255, 255, 0.025);
 	color: #f6f8ff;
+	transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
 .community-discussion-list a:hover,
 .community-discussion-list a:focus-visible {
 	border-color: rgba(255, 176, 137, 0.56);
 	background: rgba(255, 176, 137, 0.08);
+	transform: translateY(-2px);
 }
 
-.community-discussion-list span {
+.community-discussion-list__poster {
+	align-self: stretch;
+	inline-size: 100%;
+	block-size: 100%;
+	min-block-size: 5.25rem;
+	object-fit: cover;
+	object-position: center 28%;
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.community-discussion-list__body {
+	display: grid;
+	align-content: center;
+	gap: 0.25rem;
+	min-inline-size: 0;
+	padding-block: 0.88rem;
+	padding-inline-end: 0.88rem;
+}
+
+.community-discussion-list__item--without-poster a { grid-template-columns: minmax(0, 1fr); }
+.community-discussion-list__item--without-poster .community-discussion-list__body { padding-inline-start: 0.88rem; }
+
+.community-discussion-list__facts {
 	color: var(--muted);
 	font-family: var(--font-mono);
 	font-size: 0.72rem;
+}
+
+@media (max-width: 30rem) {
+	.community-discussion-list a { grid-template-columns: 3.9rem minmax(0, 1fr); gap: 0.7rem; }
+	.community-discussion-list__poster { min-block-size: 4.85rem; }
+	.community-discussion-list__body { padding-block: 0.72rem; padding-inline-end: 0.72rem; }
+	.community-discussion-list__item--without-poster .community-discussion-list__body { padding-inline-start: 0.72rem; }
 }
 
 .community-comments__list {
