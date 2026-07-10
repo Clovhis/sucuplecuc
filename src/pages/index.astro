@@ -236,6 +236,14 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 		{
 			movies.length > 0 ? (
 				<>
+					<section class="home-community-promo fade-up" style="--item-delay: 55ms;" aria-labelledby="home-community-promo-title">
+						<div>
+							<p class="home-community-promo__eyebrow">Comunidad</p>
+							<h2 id="home-community-promo-title">La Sala</h2>
+							<p>Opiniones, recomendaciones y discusiones por película.</p>
+						</div>
+						<a href={COMMUNITY_PATH}>Ir a la comunidad</a>
+					</section>
 					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 80ms;" aria-label="Qué vemos hoy">
 						<PostometroTeaser compact={true} />
 					</section>
