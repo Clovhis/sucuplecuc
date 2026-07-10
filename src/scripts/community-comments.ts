@@ -437,6 +437,28 @@ function openEditor(
 	textarea.maxLength = 300;
 	textarea.required = true;
 	textarea.value = message.body;
+	const emojiPicker = document.createElement('div');
+	emojiPicker.className = 'community-comments__emoji-picker';
+	emojiPicker.setAttribute('aria-label', 'Agregar un emoji');
+	const emojiLabel = document.createElement('span');
+	emojiLabel.setAttribute('aria-hidden', 'true');
+	emojiLabel.textContent = 'Sumá una reacción:';
+	emojiPicker.append(emojiLabel);
+	for (const [emoji, name] of [
+		['😀', 'sonrisa'],
+		['😂', 'risa'],
+		['😍', 'enamorado'],
+		['😱', 'sorpresa'],
+		['👏', 'aplausos'],
+		['🔥', 'fuego'],
+	]) {
+		const emojiButton = document.createElement('button');
+		emojiButton.type = 'button';
+		emojiButton.textContent = emoji;
+		emojiButton.setAttribute('aria-label', `Agregar emoji ${name}`);
+		emojiButton.addEventListener('click', () => insertEmoji(textarea, emoji));
+		emojiPicker.append(emojiButton);
+	}
 	const save = document.createElement('button');
 	save.type = 'submit';
 	save.textContent = 'Guardar';
@@ -447,7 +469,7 @@ function openEditor(
 	const actions = document.createElement('div');
 	actions.className = 'community-message__actions';
 	actions.append(save, cancel);
-	form.append(label, textarea, actions);
+	form.append(label, textarea, emojiPicker, actions);
 	form.addEventListener('submit', (event) => {
 		event.preventDefault();
 		void onUpdate(message.id, textarea.value);

@@ -9183,7 +9183,8 @@ img {
 .community-comments__form textarea:focus-visible { outline: 3px solid rgba(255, 176, 137, 0.35); outline-offset: 2px; }
 .community-comments__emoji-picker { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
 .community-comments__emoji-picker > span { margin-inline-end: 0.15rem; color: var(--muted); font-size: 0.78rem; }
-.community-comments__form .community-comments__emoji-picker button {
+.community-comments__form .community-comments__emoji-picker button,
+.community-message__editor .community-comments__emoji-picker button {
 	min-width: 2.25rem;
 	min-height: 2.25rem;
 	padding: 0.2rem;
@@ -9196,7 +9197,9 @@ img {
 	text-transform: none;
 }
 .community-comments__form .community-comments__emoji-picker button:hover,
-.community-comments__form .community-comments__emoji-picker button:focus-visible {
+.community-comments__form .community-comments__emoji-picker button:focus-visible,
+.community-message__editor .community-comments__emoji-picker button:hover,
+.community-message__editor .community-comments__emoji-picker button:focus-visible {
 	border-color: rgba(143, 197, 255, 0.78);
 	background: rgba(143, 197, 255, 0.18);
 }
