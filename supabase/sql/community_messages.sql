@@ -99,7 +99,7 @@ begin
 	values (normalized_key, nullif(normalized_slug, ''), nullif(normalized_title, ''))
 	on conflict (thread_key) do update set updated_at = now()
 	returning * into thread_record;
-	if p_parent_id is not null and not exists (select 1 from public.community_messages where id = p_parent_id and thread_id = thread_record.id and expires_at > now()) then
+	if p_parent_id is not null and not exists (select 1 from public.community_messages as parent_message where parent_message.id = p_parent_id and parent_message.thread_id = thread_record.id and parent_message.expires_at > now()) then
 		raise exception 'invalid parent message';
 	end if;
 	insert into public.community_messages (thread_id, parent_id, author_id, author_name, body)
@@ -110,8 +110,8 @@ begin
 	-- below removes expired rows; this cap prevents a long-running thread growing
 	-- beyond 200 messages in between cleanups.
 	delete from public.community_messages
-	where id in (
-		select id from public.community_messages
+	where public.community_messages.id in (
+		select messages_to_remove.id from public.community_messages as messages_to_remove
 		where thread_id = thread_record.id
 		order by created_at desc
 		offset 200
