@@ -34,7 +34,10 @@ const status = enabled
 						<label for="community-name">Tu nombre o apodo</label>
 						<input id="community-name" name="authorName" type="text" minlength="2" maxlength="32" autocomplete="nickname" required />
 					</div>
-					<p class="community-comments__hint" data-community-comments-nickname-hint>Tu apodo queda ligado a este navegador después del primer mensaje.</p>
+					<div class="community-comments__identity" data-community-comments-identity>
+						<p class="community-comments__hint" data-community-comments-nickname-hint>Tu apodo queda ligado a este navegador después del primer mensaje.</p>
+						<button type="button" data-community-comments-change-nickname hidden>Cambiar apodo</button>
+					</div>
 					<label for="community-message">Tu mensaje</label>
 					<textarea id="community-message" name="body" rows="4" minlength="1" maxlength="600" required></textarea>
 					<p class="community-comments__hint">Máximo 600 caracteres. Se publica al instante y se elimina después de un tiempo.</p>
@@ -43,6 +46,19 @@ const status = enabled
 						<button type="button" data-community-comments-cancel hidden>Cancelar respuesta</button>
 					</div>
 				</form>
+				<dialog class="community-comments__nickname-dialog" data-community-comments-nickname-dialog aria-labelledby="community-change-nickname-title">
+					<form method="dialog" data-community-comments-nickname-form>
+						<h2 id="community-change-nickname-title">Cambiar apodo</h2>
+						<p>El cambio actualiza tus mensajes anteriores. Después no vas a poder volver a cambiarlo durante 15 días.</p>
+						<label for="community-new-nickname">Nuevo apodo</label>
+						<input id="community-new-nickname" name="nickname" type="text" minlength="2" maxlength="32" autocomplete="nickname" required />
+						<p data-community-comments-nickname-error role="alert" hidden></p>
+						<div class="community-comments__form-actions">
+							<button type="submit">Confirmar cambio</button>
+							<button type="button" data-community-comments-cancel-nickname>Cancelar</button>
+						</div>
+					</form>
+				</dialog>
 			</>
 		)
 	}

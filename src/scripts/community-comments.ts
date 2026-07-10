@@ -35,11 +35,17 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 	const nicknameInput = root.querySelector<HTMLInputElement>('[name="authorName"]');
 	const nicknameField = root.querySelector<HTMLElement>('[data-community-comments-nickname-field]');
 	const nicknameHint = root.querySelector<HTMLElement>('[data-community-comments-nickname-hint]');
+	const changeNicknameButton = root.querySelector<HTMLButtonElement>('[data-community-comments-change-nickname]');
+	const nicknameDialog = root.querySelector<HTMLDialogElement>('[data-community-comments-nickname-dialog]');
+	const nicknameForm = root.querySelector<HTMLFormElement>('[data-community-comments-nickname-form]');
+	const newNicknameInput = root.querySelector<HTMLInputElement>('[name="nickname"]');
+	const nicknameError = root.querySelector<HTMLElement>('[data-community-comments-nickname-error]');
+	const cancelNickname = root.querySelector<HTMLButtonElement>('[data-community-comments-cancel-nickname]');
 	const captchaTarget = root.querySelector<HTMLElement>('[data-community-comments-captcha]');
 	const replying = root.querySelector<HTMLElement>('[data-community-comments-replying]');
 	const cancelReply = root.querySelector<HTMLButtonElement>('[data-community-comments-cancel]');
 
-	if (!(status && list && form && replying && cancelReply && nicknameInput && nicknameField && nicknameHint)) return;
+	if (!(status && list && form && replying && cancelReply && nicknameInput && nicknameField && nicknameHint && changeNicknameButton && nicknameDialog && nicknameForm && newNicknameInput && nicknameError && cancelNickname)) return;
 	const statusEl = status;
 	const listEl = list;
 	const formEl = form;
@@ -48,6 +54,12 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 	const nicknameInputEl = nicknameInput;
 	const nicknameFieldEl = nicknameField;
 	const nicknameHintEl = nicknameHint;
+	const changeNicknameButtonEl = changeNicknameButton;
+	const nicknameDialogEl = nicknameDialog;
+	const nicknameFormEl = nicknameForm;
+	const newNicknameInputEl = newNicknameInput;
+	const nicknameErrorEl = nicknameError;
+	const cancelNicknameButton = cancelNickname;
 	const setStatus = (message: string, state: 'loading' | 'error' | 'ready') => {
 		statusEl.textContent = message;
 		statusEl.dataset.state = state;
@@ -84,6 +96,17 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		void submitMessage();
 	});
 	cancelReplyButton.addEventListener('click', () => setReply(null));
+	changeNicknameButtonEl.addEventListener('click', () => {
+		newNicknameInputEl.value = nicknameInputEl.value;
+		nicknameErrorEl.hidden = true;
+		nicknameDialogEl.showModal();
+		newNicknameInputEl.focus();
+	});
+	cancelNicknameButton.addEventListener('click', () => nicknameDialogEl.close());
+	nicknameFormEl.addEventListener('submit', (event) => {
+		event.preventDefault();
+		void changeNickname();
+	});
 	document.addEventListener('visibilitychange', () => {
 		if (!document.hidden) void loadMessages();
 	});
@@ -155,6 +178,31 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		nicknameInputEl.readOnly = true;
 		nicknameFieldEl.hidden = true;
 		nicknameHintEl.textContent = `Publicás como ${data}.`;
+		changeNicknameButtonEl.hidden = false;
+	}
+
+	async function changeNickname(): Promise<void> {
+		const newNickname = newNicknameInputEl.value.trim();
+		if (newNickname.length < 2) {
+			nicknameErrorEl.textContent = 'Escribí un apodo de al menos 2 caracteres.';
+			nicknameErrorEl.hidden = false;
+			return;
+		}
+		const submit = nicknameFormEl.querySelector<HTMLButtonElement>('[type="submit"]');
+		if (submit) submit.disabled = true;
+		const { error } = await client.rpc('change_community_nickname', { p_author_name: newNickname });
+		if (submit) submit.disabled = false;
+		if (error) {
+			nicknameErrorEl.textContent = error.message.includes('cooldown')
+				? 'Ya cambiaste el apodo. Podés volver a hacerlo dentro de 15 días.'
+				: 'No pudimos cambiar el apodo. Probá de nuevo.';
+			nicknameErrorEl.hidden = false;
+			return;
+		}
+		nicknameDialogEl.close();
+		await loadNickname();
+		setStatus('Apodo actualizado en tus mensajes.', 'ready');
+		await loadMessages();
 	}
 
 	async function updateMessage(messageId: number, body: string): Promise<void> {

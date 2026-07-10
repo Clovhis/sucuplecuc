@@ -11,6 +11,7 @@ La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya u
 - Supabase Anonymous Auth crea una identidad técnica por navegador, sin pantalla de login. Sirve exclusivamente para aplicar límites y vincular respuestas.
 - Las respuestas se agrupan debajo del mensaje original y el navegador actualiza la lista cada 25 segundos sin recargar la página.
 - Desde el mismo navegador, una persona puede editar o borrar sus propios mensajes. Si borra las cookies o cambia de dispositivo, pierde esa identidad y ya no podrá administrarlos.
+- Puede cambiar su apodo desde **Cambiar apodo**. El cambio actualiza sus mensajes previos y luego queda bloqueado durante 15 días.
 
 ## Retención y límites
 

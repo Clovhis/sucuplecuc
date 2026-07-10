@@ -40,8 +40,11 @@ create table if not exists public.community_messages (
 create table if not exists public.community_identities (
 	author_id uuid primary key references auth.users(id) on delete cascade,
 	author_name text not null check (char_length(author_name) between 2 and 32 and author_name = btrim(author_name) and author_name !~ '[[:cntrl:]<>]'),
-	created_at timestamptz not null default now()
+	created_at timestamptz not null default now(),
+	nickname_changed_at timestamptz
 );
+
+alter table public.community_identities add column if not exists nickname_changed_at timestamptz;
 
 create index if not exists idx_community_messages_thread_created on public.community_messages(thread_id, created_at);
 create index if not exists idx_community_messages_author_created on public.community_messages(author_id, created_at desc);
@@ -66,6 +69,29 @@ security definer
 set search_path = public
 as $$
 	select author_name from public.community_identities where author_id = auth.uid();
+$$;
+
+create or replace function public.change_community_nickname(p_author_name text)
+returns table (author_name text, next_change_at timestamptz)
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+	normalized_name text := btrim(coalesce(p_author_name, ''));
+begin
+	if auth.uid() is null then raise exception 'anonymous session is required'; end if;
+	if char_length(normalized_name) not between 2 and 32 or normalized_name ~ '[[:cntrl:]<>]' then raise exception 'invalid author name'; end if;
+	if exists (select 1 from public.community_identities where author_id = auth.uid() and nickname_changed_at > now() - interval '15 days') then
+		raise exception 'nickname change cooldown';
+	end if;
+	update public.community_identities
+	set author_name = normalized_name, nickname_changed_at = now()
+	where author_id = auth.uid();
+	if not found then raise exception 'community identity not found'; end if;
+	update public.community_messages set author_name = normalized_name where author_id = auth.uid();
+	return query select normalized_name, now() + interval '15 days';
+end;
 $$;
 
 drop function if exists public.list_community_messages(text, integer);
@@ -192,11 +218,13 @@ $$;
 revoke all on function public.list_community_messages(text, integer) from public;
 revoke all on function public.submit_community_message(text, text, text, bigint, text, text) from public;
 revoke all on function public.get_community_nickname() from public;
+revoke all on function public.change_community_nickname(text) from public;
 revoke all on function public.update_community_message(bigint, text) from public;
 revoke all on function public.delete_community_message(bigint) from public;
 grant execute on function public.list_community_messages(text, integer) to anon, authenticated;
 grant execute on function public.submit_community_message(text, text, text, bigint, text, text) to authenticated;
 grant execute on function public.get_community_nickname() to authenticated;
+grant execute on function public.change_community_nickname(text) to authenticated;
 grant execute on function public.update_community_message(bigint, text) to authenticated;
 grant execute on function public.delete_community_message(bigint) to authenticated;
 
