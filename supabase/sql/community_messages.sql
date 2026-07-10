@@ -71,6 +71,23 @@ as $$
 	select author_name from public.community_identities where author_id = auth.uid();
 $$;
 
+create or replace function public.list_community_discussions(p_limit integer default 24)
+returns table (movie_slug text, movie_title text, last_activity timestamptz, message_count bigint)
+language sql
+security definer
+set search_path = public
+as $$
+	select t.movie_slug, t.movie_title, max(m.created_at), count(m.id)
+	from public.community_threads as t
+	join public.community_messages as m on m.thread_id = t.id
+	where t.movie_slug is not null
+		and m.status = 'approved'
+		and m.expires_at > now()
+	group by t.id, t.movie_slug, t.movie_title
+	order by max(m.created_at) desc
+	limit greatest(1, least(coalesce(p_limit, 24), 100));
+$$;
+
 create or replace function public.change_community_nickname(p_author_name text)
 returns table (author_name text, next_change_at timestamptz)
 language plpgsql
@@ -218,12 +235,14 @@ $$;
 revoke all on function public.list_community_messages(text, integer) from public;
 revoke all on function public.submit_community_message(text, text, text, bigint, text, text) from public;
 revoke all on function public.get_community_nickname() from public;
+revoke all on function public.list_community_discussions(integer) from public;
 revoke all on function public.change_community_nickname(text) from public;
 revoke all on function public.update_community_message(bigint, text) from public;
 revoke all on function public.delete_community_message(bigint) from public;
 grant execute on function public.list_community_messages(text, integer) to anon, authenticated;
 grant execute on function public.submit_community_message(text, text, text, bigint, text, text) to authenticated;
 grant execute on function public.get_community_nickname() to authenticated;
+grant execute on function public.list_community_discussions(integer) to anon, authenticated;
 grant execute on function public.change_community_nickname(text) to authenticated;
 grant execute on function public.update_community_message(bigint, text) to authenticated;
 grant execute on function public.delete_community_message(bigint) to authenticated;

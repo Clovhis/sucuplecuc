@@ -8742,6 +8742,31 @@ img {
 	list-style: none;
 }
 
+.community-discussion-list__activity {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: #ffb089;
+}
+
+.community-discussion-list__activity > span {
+	inline-size: 0.55rem;
+	block-size: 0.55rem;
+	border-radius: 50%;
+	background: currentColor;
+	box-shadow: 0 0 0 0 rgba(255, 176, 137, 0.65);
+	animation: community-activity-pulse 1.6s ease-out infinite;
+}
+
+@keyframes community-activity-pulse {
+	70% { box-shadow: 0 0 0 0.42rem rgba(255, 176, 137, 0); }
+	100% { box-shadow: 0 0 0 0 rgba(255, 176, 137, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.community-discussion-list__activity > span { animation: none; }
+}
+
 .community-discussion-list {
 	display: grid;
 	gap: 0.65rem;

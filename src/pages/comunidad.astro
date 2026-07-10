@@ -18,22 +18,15 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 		</nav>
 		<section class="community-page__hero fade-up" style="--item-delay: 0ms;">
 			<h1>La Sala</h1>
-			<p class="community-page__tagline">Hablemos de cine sin vender humo.</p>
-			<p class="community-page__lead">Películas, recomendaciones, estrenos y opiniones. Cada película tiene una discusión.</p>
-		</section>
-		<section class="community-page__featured fade-up" style="--item-delay: 80ms;" aria-labelledby="tema-semana">
-			<h2 id="tema-semana">Tema de la semana</h2>
-			<p class="community-page__featured-question">¿Cuál fue la mejor película que viste últimamente?</p>
-			<p>Contanos cuál fue, dónde la encontraste y qué te dejó pensando. Si hay spoiler, avisá antes.</p>
 		</section>
 		<div class="community-page__content">
-			<section class="community-page__comments fade-up" style="--item-delay: 160ms;" aria-labelledby="conversacion">
+			<section class="community-page__comments fade-up" style="--item-delay: 80ms;" aria-labelledby="conversacion">
 				<div class="community-page__section-heading"><div><h2 id="conversacion">Discusiones recientes</h2></div><p>Una discusión por película.</p></div>
-				<ul class="community-discussion-list">
-					{discussionMovies.map((movie) => <li><a href={getMovieCommunityPath(movie.slug)}><strong>{movie.title}</strong><span>{movie.year} · Abrir discusión</span></a></li>)}
+				<ul class="community-discussion-list" data-community-discussion-list aria-live="polite">
+					{discussionMovies.map((movie) => <li data-community-discussion-slug={movie.slug}><a href={getMovieCommunityPath(movie.slug)}><strong>{movie.title}</strong><span>{movie.year} · Abrir discusión</span></a></li>)}
 				</ul>
 			</section>
-			<aside class="community-page__rules fade-up" style="--item-delay: 240ms;" aria-labelledby="reglas-sala">
+			<aside class="community-page__rules fade-up" style="--item-delay: 160ms;" aria-labelledby="reglas-sala">
 				<h2 id="reglas-sala">Reglas</h2>
 				<ul><li>Respetá a los demás.</li><li>Avisá antes de publicar spoilers.</li><li>No publiques spam ni enlaces sospechosos.</li><li>Debatí ideas, no ataques personas.</li></ul>
 				<p class="community-page__privacy-note">Los mensajes se guardan temporalmente y cada película conserva un solo hilo. Más información en nuestra <a href="/politica-de-privacidad/">política de privacidad</a>.</p>
@@ -41,3 +34,5 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 		</div>
 	</main>
 </BaseLayout>
+
+<script src="../scripts/community-discussions.ts"></script>

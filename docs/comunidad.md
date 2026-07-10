@@ -5,6 +5,7 @@ La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya u
 ## Funcionamiento
 
 - `/comunidad/` muestra discusiones recientes y dirige a la discusión de cada película.
+- Los hilos con mensajes se ordenan por actividad. La portada los actualiza cada 15 segundos y marca con un punto animado los que recibieron comentarios durante las últimas 24 horas.
 - Cada ficha tiene el enlace **Abrir discusión**.
 - La ruta `/comunidad/peliculas/<slug>/` es la única discusión para esa película. El primer mensaje crea su hilo y la restricción `unique(movie_slug)` evita duplicados.
 - Las personas eligen un apodo con su primer mensaje y queda ligado a la identidad anónima de ese navegador; luego el campo se oculta y se muestra el apodo activo. No se guardan mensajes ni apodos en `localStorage`.

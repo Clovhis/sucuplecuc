@@ -9,9 +9,9 @@ test('community forum renders safely while it is not configured', async ({ page 
 	expect(response?.ok()).toBeTruthy();
 	await expect(page).toHaveTitle(/La Sala.*Cine Posta/i);
 	await expect(page.getByRole('heading', { name: 'La Sala' })).toBeVisible();
-	await expect(page.getByRole('heading', { name: 'Tema de la semana' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Discusiones recientes' })).toBeVisible();
 	await expect(page.getByRole('heading', { name: 'Reglas' })).toBeVisible();
-	await expect(page.getByRole('link', { name: /Abrir discusión/i }).first()).toBeVisible();
+	await expect(page.locator('.community-discussion-list a').first()).toBeVisible();
 	await expect(page.getByRole('link', { name: 'Comunidad' }).first()).toHaveAttribute('href', '/comunidad/');
 	expect(pageErrors).toEqual([]);
 });
