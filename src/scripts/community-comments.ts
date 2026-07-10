@@ -221,7 +221,7 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		await loadMessages();
 	}
 
-	async function updateMessage(messageId: number, body: string): Promise<void> {
+	async function updateMessage(messageId: number, body: string, isSpoiler: boolean): Promise<void> {
 		const normalizedBody = body.trim();
 		if (!normalizedBody) {
 			setStatus('El mensaje no puede quedar vacío.', 'error');
@@ -231,6 +231,7 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		const { error } = await client.rpc('update_community_message', {
 			p_message_id: messageId,
 			p_body: normalizedBody,
+			p_is_spoiler: isSpoiler,
 		});
 		if (error) {
 			setStatus('No pudimos guardar los cambios. Probá de nuevo.', 'error');
@@ -299,7 +300,7 @@ function renderMessages(
 	list: HTMLOListElement,
 	messages: CommunityMessage[],
 	onReply: (message: CommunityMessage) => void,
-	onUpdate: (messageId: number, body: string) => Promise<void>,
+	onUpdate: (messageId: number, body: string, isSpoiler: boolean) => Promise<void>,
 	onDelete: (messageId: number) => Promise<void>,
 	onVote: (messageId: number, vote: -1 | 0 | 1) => Promise<void>,
 ): void {
@@ -325,7 +326,7 @@ function createMessage(
 	message: CommunityMessage,
 	byParent: Map<number | null, CommunityMessage[]>,
 	onReply: (message: CommunityMessage) => void,
-	onUpdate: (messageId: number, body: string) => Promise<void>,
+	onUpdate: (messageId: number, body: string, isSpoiler: boolean) => Promise<void>,
 	onDelete: (messageId: number) => Promise<void>,
 	onVote: (messageId: number, vote: -1 | 0 | 1) => Promise<void>,
 ): HTMLLIElement {
@@ -421,7 +422,7 @@ function createVoteButton(icon: string, label: string, count: number, active: bo
 function openEditor(
 	article: HTMLElement,
 	message: CommunityMessage,
-	onUpdate: (messageId: number, body: string) => Promise<void>,
+	onUpdate: (messageId: number, body: string, isSpoiler: boolean) => Promise<void>,
 ): void {
 	if (article.querySelector('[data-community-message-editor]')) return;
 	const form = document.createElement('form');
@@ -459,6 +460,15 @@ function openEditor(
 		emojiButton.addEventListener('click', () => insertEmoji(textarea, emoji));
 		emojiPicker.append(emojiButton);
 	}
+	const spoilerToggle = document.createElement('label');
+	spoilerToggle.className = 'community-comments__spoiler-toggle';
+	const spoilerInput = document.createElement('input');
+	spoilerInput.name = 'isSpoiler';
+	spoilerInput.type = 'checkbox';
+	spoilerInput.checked = message.is_spoiler;
+	const spoilerText = document.createElement('span');
+	spoilerText.textContent = 'Contiene spoiler: se va a tapar hasta que lo quieran ver.';
+	spoilerToggle.append(spoilerInput, spoilerText);
 	const save = document.createElement('button');
 	save.type = 'submit';
 	save.textContent = 'Guardar';
@@ -469,10 +479,10 @@ function openEditor(
 	const actions = document.createElement('div');
 	actions.className = 'community-message__actions';
 	actions.append(save, cancel);
-	form.append(label, textarea, emojiPicker, actions);
+	form.append(label, textarea, emojiPicker, spoilerToggle, actions);
 	form.addEventListener('submit', (event) => {
 		event.preventDefault();
-		void onUpdate(message.id, textarea.value);
+		void onUpdate(message.id, textarea.value, spoilerInput.checked);
 	});
 	article.append(form);
 	textarea.focus();

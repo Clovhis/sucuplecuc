@@ -246,7 +246,8 @@ begin
 end;
 $$;
 
-create or replace function public.update_community_message(p_message_id bigint, p_body text)
+drop function if exists public.update_community_message(bigint, text);
+create function public.update_community_message(p_message_id bigint, p_body text, p_is_spoiler boolean default false)
 returns table (id bigint, edited_at timestamptz)
 language plpgsql
 security definer
@@ -259,7 +260,7 @@ begin
 	if char_length(normalized_body) not between 1 and 300 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
 	return query
 		update public.community_messages as message_to_update
-		set body = normalized_body, edited_at = now()
+		set body = normalized_body, is_spoiler = coalesce(p_is_spoiler, false), edited_at = now()
 		where message_to_update.id = p_message_id
 			and message_to_update.author_id = auth.uid()
 			and message_to_update.status = 'approved'
@@ -289,7 +290,7 @@ revoke all on function public.submit_community_message(text, text, text, bigint,
 revoke all on function public.get_community_nickname() from public;
 revoke all on function public.list_community_discussions(integer) from public;
 revoke all on function public.change_community_nickname(text) from public;
-revoke all on function public.update_community_message(bigint, text) from public;
+revoke all on function public.update_community_message(bigint, text, boolean) from public;
 revoke all on function public.delete_community_message(bigint) from public;
 revoke all on function public.vote_community_message(bigint, smallint) from public;
 grant execute on function public.list_community_messages(text, integer) to anon, authenticated;
@@ -297,7 +298,7 @@ grant execute on function public.submit_community_message(text, text, text, bigi
 grant execute on function public.get_community_nickname() to authenticated;
 grant execute on function public.list_community_discussions(integer) to anon, authenticated;
 grant execute on function public.change_community_nickname(text) to authenticated;
-grant execute on function public.update_community_message(bigint, text) to authenticated;
+grant execute on function public.update_community_message(bigint, text, boolean) to authenticated;
 grant execute on function public.delete_community_message(bigint) to authenticated;
 grant execute on function public.vote_community_message(bigint, smallint) to authenticated;
 
