@@ -22,6 +22,7 @@ export const COPYRIGHT_PATH = '/copyright-y-uso-de-material/';
 export const CONTACT_PATH = '/contacto/';
 export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
 export const PEOPLE_PATH = '/personas/';
+export { COMMUNITY_PATH } from './community';
 
 type StructuredDataValue = Record<string, unknown>;
 

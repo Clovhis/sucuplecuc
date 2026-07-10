@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { stat } from 'node:fs/promises';
 import { getMoviePath, getMovieTrailerPath, getMovies } from '../lib/movies';
 import { getPersonPath, getPersonProfiles } from '../lib/people';
-import { ABOUT_PATH, PEOPLE_PATH, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_URL } from '../lib/seo';
+import { ABOUT_PATH, COMMUNITY_PATH, PEOPLE_PATH, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_URL } from '../lib/seo';
 
 export const prerender = true;
 
@@ -63,6 +63,7 @@ export const GET: APIRoute = async () => {
 			.sort()
 			.at(-1);
 	const aboutLastMod = await getFileLastMod('src/pages/sobre-cine-posta.astro');
+	const communityLastMod = await getFileLastMod('src/pages/comunidad.astro');
 	const peopleIndexLastMod = await getFileLastMod('src/pages/personas/index.astro');
 	const privacyLastMod = await getFileLastMod('src/pages/politica-de-privacidad.astro');
 	const postometroLastMod = await getFileLastMod('src/pages/que-miro-hoy.astro');
@@ -71,6 +72,7 @@ export const GET: APIRoute = async () => {
 		{ pathname: QUE_MIRO_HOY_PATH, lastmod: postometroLastMod },
 		{ pathname: PEOPLE_PATH, lastmod: peopleIndexLastMod },
 		{ pathname: ABOUT_PATH, lastmod: aboutLastMod },
+		{ pathname: COMMUNITY_PATH, lastmod: communityLastMod },
 		{ pathname: PRIVACY_PATH, lastmod: privacyLastMod },
 		...personEntries,
 		...movieEntries,

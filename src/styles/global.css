@@ -429,6 +429,37 @@ img {
 	background: rgba(27, 40, 56, 0.96);
 }
 
+.site-header__community {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.75rem;
+	padding: 0.52rem 0.85rem;
+	border: 1px solid rgba(189, 160, 255, 0.38);
+	border-radius: var(--control-radius);
+	background: rgba(34, 27, 48, 0.92);
+	color: #eee4ff;
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	transition: transform 0.22s ease, border-color 0.22s ease, background-color 0.22s ease;
+}
+
+.site-header__community:hover,
+.site-header__community:focus-visible {
+	transform: translateY(-3px);
+	border-color: rgba(202, 181, 255, 0.72);
+	background: rgba(48, 38, 68, 0.96);
+}
+
+.site-header__community:focus-visible {
+	outline: 3px solid rgba(202, 181, 255, 0.32);
+	outline-offset: 3px;
+}
+
 .home-catalog {
 	display: grid;
 	gap: 1.35rem;
@@ -8531,6 +8562,217 @@ img {
 	border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.community-page {
+	display: grid;
+	gap: 1rem;
+	padding-block: 1.2rem 3.6rem;
+}
+
+.community-page__nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55rem;
+}
+
+.community-page__nav a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 2.5rem;
+	padding: 0.48rem 0.78rem;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: var(--control-radius-tight);
+	color: #e8edf7;
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.community-page__nav a:hover,
+.community-page__nav a:focus-visible {
+	border-color: rgba(255, 176, 137, 0.58);
+	color: #fff1e8;
+}
+
+.community-page__current-link {
+	background: rgba(255, 176, 137, 0.11);
+}
+
+.community-page__hero,
+.community-page__featured,
+.community-page__comments,
+.community-page__rules {
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 24px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)), var(--panel);
+	box-shadow: var(--shadow-panel);
+}
+
+.community-page__hero {
+	padding: clamp(1.25rem, 3vw, 2rem);
+	background:
+		radial-gradient(circle at top right, rgba(255, 176, 137, 0.16), transparent 36%),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+		var(--panel);
+}
+
+.community-page__hero h1,
+.community-page__featured h2,
+.community-page__section-heading h2,
+.community-page__rules h2 {
+	margin: 0;
+}
+
+.community-page__hero h1 {
+	font-size: clamp(2.35rem, 6vw, 4.25rem);
+	line-height: 0.94;
+}
+
+.community-page__tagline {
+	margin: 0.75rem 0 0;
+	color: #fff0e7;
+	font-size: clamp(1.12rem, 2vw, 1.45rem);
+	font-weight: 700;
+}
+
+.community-page__lead {
+	max-width: 68ch;
+	margin: 0.85rem 0 0;
+	color: var(--muted);
+	line-height: 1.65;
+}
+
+.community-page__eyebrow {
+	margin: 0 0 0.45rem;
+	color: var(--accent-soft);
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.community-page__featured {
+	padding: clamp(1.1rem, 2.5vw, 1.45rem);
+	border-color: rgba(255, 176, 137, 0.22);
+}
+
+
+.community-page__featured h2 {
+	color: var(--accent-soft);
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.community-page__featured-question {
+	max-width: 36ch;
+	margin: 0.45rem 0 0;
+	color: #fff6f1;
+	font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.community-page__featured p:last-child {
+	margin: 0.65rem 0 0;
+	color: var(--muted);
+}
+
+.community-page__content {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(240px, 310px);
+	gap: 1rem;
+	align-items: start;
+}
+
+.community-page__comments,
+.community-page__rules {
+	padding: clamp(1rem, 2.4vw, 1.4rem);
+}
+
+.community-page__section-heading {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.7rem 1rem;
+	align-items: end;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.community-page__section-heading > p {
+	max-width: 28ch;
+	margin: 0;
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+
+.community-comments {
+	min-width: 0;
+	padding-top: 1rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.community-comments__status,
+.community-comments__noscript {
+	margin: 0;
+	padding: 0.85rem 1rem;
+	border: 1px dashed rgba(255, 255, 255, 0.18);
+	border-radius: 12px;
+	color: #d7dfed;
+	line-height: 1.5;
+}
+
+.community-comments__status[data-state='loading']::before,
+.community-comments__status[data-state='error']::before {
+	display: inline-block;
+	margin-inline-end: 0.5rem;
+	font-family: var(--font-mono);
+	font-weight: 700;
+}
+
+.community-comments__status[data-state='loading']::before { content: '…'; }
+.community-comments__status[data-state='error']::before { content: '!'; color: #ffbd9f; }
+
+.community-comments__widget {
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+.community-page__rules {
+	position: sticky;
+	top: 1rem;
+}
+
+.community-page__rules ul {
+	display: grid;
+	gap: 0.7rem;
+	margin: 1rem 0;
+	padding: 0;
+	list-style: none;
+}
+
+.community-page__rules li {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	gap: 0.55rem;
+	color: #dbe3ef;
+	line-height: 1.45;
+}
+
+.community-page__rules li::before { content: '•'; color: var(--accent-soft); }
+
+.community-page__privacy-note {
+	margin: 0;
+	padding-top: 1rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	color: var(--muted);
+	font-size: 0.88rem;
+	line-height: 1.5;
+}
+
+.community-page__privacy-note a { color: #ffd1bc; text-decoration: underline; text-underline-offset: 0.2em; }
+
 .site-footer {
 	margin-top: 1.4rem;
 	padding: 2rem 0 2.25rem;
@@ -8962,6 +9204,14 @@ img {
 		grid-template-columns: 1fr;
 	}
 
+	.community-page__content {
+		grid-template-columns: 1fr;
+	}
+
+	.community-page__rules {
+		position: static;
+	}
+
 	.postometro-hero {
 		grid-template-columns: 1fr;
 	}
@@ -9088,7 +9338,8 @@ img {
 	}
 
 	.site-header__donate,
-	.site-header__contact {
+	.site-header__contact,
+	.site-header__community {
 		min-width: 0;
 		justify-content: center;
 	}

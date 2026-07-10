@@ -16,7 +16,7 @@ import {
 } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
-import { CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
@@ -205,6 +205,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						)
 					}
 					<div class="site-header__actions">
+						<a class="site-header__community" href={COMMUNITY_PATH}>Comunidad</a>
 						<a
 							class="site-header__donate"
 							href="https://cafecito.app/cineposta"

@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCommunityCommentsConfig, COMMUNITY_PATH } from '../lib/community';
+import { createSimplePageStructuredData, SITE_NAME, SITE_URL } from '../lib/seo';
+
+const pageTitle = `La Sala | ${SITE_NAME}`;
+const pageDescription = 'La Sala de Cine Posta: un espacio para hablar de películas, compartir recomendaciones y debatir sin vender humo.';
+const communityUrl = new URL(COMMUNITY_PATH, SITE_URL).toString();
+const comments = getCommunityCommentsConfig();
+const commentsStatus = comments.enabled ? 'Cargando la conversación…' : 'La conversación está pausada mientras terminamos de preparar la sala. Volvé pronto.';
+const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData} allowAds={false}>
+	<main id="main-content" class="container community-page">
+		<nav class="community-page__nav" aria-label="Navegación principal">
+			<a class="community-page__home-link" href={import.meta.env.BASE_URL}>Cine Posta</a>
+			<a class="community-page__current-link" href={COMMUNITY_PATH} aria-current="page">Comunidad</a>
+		</nav>
+		<section class="community-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Comunidad Cine Posta</p>
+			<h1>La Sala</h1>
+			<p class="community-page__tagline">Hablemos de cine sin vender humo.</p>
+			<p class="community-page__lead">Un rincón para hablar de películas, tirar recomendaciones, debatir opiniones y comentar estrenos. Vení con un nombre o apodo, cuidá los spoilers y dejá que la charla haga el resto.</p>
+		</section>
+		<section class="community-page__featured fade-up" style="--item-delay: 80ms;" aria-labelledby="tema-semana">
+			<h2 id="tema-semana">Tema de la semana</h2>
+			<p class="community-page__featured-question">¿Cuál fue la mejor película que viste últimamente?</p>
+			<p>Contanos cuál fue, dónde la encontraste y qué te dejó pensando. Si hay spoiler, avisá antes.</p>
+		</section>
+		<div class="community-page__content">
+			<section class="community-page__comments fade-up" style="--item-delay: 160ms;" aria-labelledby="conversacion">
+				<div class="community-page__section-heading"><div><p class="community-page__eyebrow">Conversación abierta</p><h2 id="conversacion">La charla</h2></div><p>Podés participar con un nombre o apodo.</p></div>
+				<div class="community-comments" data-community-comments-root data-comments-enabled={String(comments.enabled)} data-comments-tenant-id={comments.tenantId} data-comments-thread-id={comments.threadId} data-comments-url={communityUrl}>
+					<p class="community-comments__status" data-community-comments-status data-state={comments.enabled ? 'loading' : 'error'} role="status" aria-live="polite">{commentsStatus}</p>
+					<div class="community-comments__widget" data-community-comments-target></div>
+					<noscript><p class="community-comments__noscript">Para participar en La Sala necesitás habilitar JavaScript. Mientras tanto, podés seguir leyendo y volver cuando quieras.</p></noscript>
+				</div>
+			</section>
+			<aside class="community-page__rules fade-up" style="--item-delay: 240ms;" aria-labelledby="reglas-sala">
+				<p class="community-page__eyebrow">Antes de entrar</p><h2 id="reglas-sala">Reglas de convivencia</h2>
+				<ul><li>Respetá a los demás.</li><li>Avisá antes de publicar spoilers.</li><li>No publiques spam ni enlaces sospechosos.</li><li>Debatí ideas, no ataques personas.</li></ul>
+				<p class="community-page__privacy-note">Los comentarios los gestiona un proveedor externo. Más información en nuestra <a href="/politica-de-privacidad/">política de privacidad</a>.</p>
+			</aside>
+		</div>
+	</main>
+	<script src="../scripts/community-comments.ts"></script>
+</BaseLayout>
