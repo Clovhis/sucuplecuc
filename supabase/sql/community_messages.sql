@@ -45,6 +45,7 @@ create table if not exists public.community_identities (
 );
 
 alter table public.community_identities add column if not exists nickname_changed_at timestamptz;
+create unique index if not exists idx_community_identities_author_name_unique on public.community_identities (lower(author_name));
 
 create index if not exists idx_community_messages_thread_created on public.community_messages(thread_id, created_at);
 create index if not exists idx_community_messages_author_created on public.community_messages(author_id, created_at desc);
@@ -98,13 +99,18 @@ declare
 	normalized_name text := btrim(coalesce(p_author_name, ''));
 begin
 	if auth.uid() is null then raise exception 'anonymous session is required'; end if;
+	perform pg_advisory_xact_lock(hashtext(auth.uid()::text));
 	if char_length(normalized_name) not between 2 and 32 or normalized_name ~ '[[:cntrl:]<>]' then raise exception 'invalid author name'; end if;
 	if exists (select 1 from public.community_identities where author_id = auth.uid() and nickname_changed_at > now() - interval '15 days') then
 		raise exception 'nickname change cooldown';
 	end if;
-	update public.community_identities
-	set author_name = normalized_name, nickname_changed_at = now()
-	where author_id = auth.uid();
+	begin
+		update public.community_identities
+		set author_name = normalized_name, nickname_changed_at = now()
+		where author_id = auth.uid();
+	exception when unique_violation then
+		raise exception 'nickname unavailable';
+	end;
 	if not found then raise exception 'community identity not found'; end if;
 	update public.community_messages set author_name = normalized_name where author_id = auth.uid();
 	return query select normalized_name, now() + interval '15 days';
@@ -151,6 +157,7 @@ declare
 	new_message public.community_messages;
 begin
 	if auth.uid() is null then raise exception 'anonymous session is required'; end if;
+	perform pg_advisory_xact_lock(hashtext(auth.uid()::text));
 	if normalized_key = 'cineposta-la-sala-principal' then
 		normalized_slug := '';
 		normalized_title := '';
@@ -159,9 +166,13 @@ begin
 	end if;
 	if char_length(normalized_name) not between 2 and 32 or normalized_name ~ '[[:cntrl:]<>]' then raise exception 'invalid author name'; end if;
 	if char_length(normalized_body) not between 1 and 600 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
-	insert into public.community_identities (author_id, author_name)
-	values (auth.uid(), normalized_name)
-	on conflict (author_id) do nothing;
+	begin
+		insert into public.community_identities (author_id, author_name)
+		values (auth.uid(), normalized_name)
+		on conflict (author_id) do nothing;
+	exception when unique_violation then
+		raise exception 'nickname unavailable';
+	end;
 	select identity_record.author_name into normalized_name
 	from public.community_identities as identity_record
 	where identity_record.author_id = auth.uid();
@@ -257,7 +268,7 @@ begin
 		if exists (select 1 from cron.job where jobname = 'cineposta-purge-community-messages') then
 			perform cron.unschedule((select jobid from cron.job where jobname = 'cineposta-purge-community-messages'));
 		end if;
-		perform cron.schedule('cineposta-purge-community-messages', '17 3 * * *', 'delete from public.community_messages where expires_at <= now();');
+		perform cron.schedule('cineposta-purge-community-messages', '17 3 * * *', 'delete from public.community_messages where expires_at <= now(); delete from public.community_threads as thread_to_remove where not exists (select 1 from public.community_messages where thread_id = thread_to_remove.id);');
 		if exists (select 1 from cron.job where jobname = 'cineposta-purge-community-anonymous-users') then
 			perform cron.unschedule((select jobid from cron.job where jobname = 'cineposta-purge-community-anonymous-users'));
 		end if;

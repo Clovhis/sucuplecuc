@@ -8,7 +8,7 @@ La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya u
 - Los hilos con mensajes se ordenan por actividad. La portada los actualiza cada 15 segundos y marca con un punto animado los que recibieron comentarios durante las últimas 24 horas.
 - Cada ficha tiene el enlace **Abrir discusión**.
 - La ruta `/comunidad/peliculas/<slug>/` es la única discusión para esa película. El primer mensaje crea su hilo y la restricción `unique(movie_slug)` evita duplicados.
-- Las personas eligen un apodo con su primer mensaje y queda ligado a la identidad anónima de ese navegador; luego el campo se oculta y se muestra el apodo activo. No se guardan mensajes ni apodos en `localStorage`.
+- Las personas eligen un apodo único con su primer mensaje y queda ligado a la identidad anónima de ese navegador; luego el campo se oculta y se muestra el apodo activo. No se guardan mensajes ni apodos en `localStorage`.
 - Supabase Anonymous Auth crea una identidad técnica por navegador, sin pantalla de login. Sirve exclusivamente para aplicar límites y vincular respuestas.
 - Las respuestas se agrupan debajo del mensaje original y el navegador actualiza la lista cada 25 segundos sin recargar la página.
 - Desde el mismo navegador, una persona puede editar o borrar sus propios mensajes. Si borra las cookies o cambia de dispositivo, pierde esa identidad y ya no podrá administrarlos.
@@ -21,7 +21,7 @@ La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya u
 - Máximo 600 caracteres por mensaje y 32 por apodo.
 - Sin HTML, adjuntos ni imágenes.
 - Cada hilo conserva como máximo 200 mensajes y los mensajes vencen a los 60 días.
-- El cron diario borra los vencidos y, tras 61 días, las identidades anónimas que ya no tienen mensajes. Supabase no elimina estas identidades automáticamente.
+- El cron diario borra los mensajes vencidos, sus hilos vacíos y, tras 61 días, las identidades anónimas que ya no tienen mensajes. Supabase no elimina estas identidades automáticamente.
 - Si `pg_cron` no está activo, el tope de 200 sigue evitando crecimiento indefinido, pero hay que habilitarlo para cumplir la retención exacta.
 
 ## Activación manual

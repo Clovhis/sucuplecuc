@@ -157,7 +157,9 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		if (submit) submit.disabled = false;
 		if (error) {
 			setStatus(
-				error.message.includes('rate limit')
+				error.message.includes('nickname unavailable')
+					? 'Ese apodo ya está en uso. Elegí otro.'
+					: error.message.includes('rate limit')
 					? 'Esperá unos minutos antes de mandar otro mensaje.'
 					: 'No pudimos enviar tu mensaje. Revisá el texto e intentá de nuevo.',
 				'error',
@@ -195,7 +197,9 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		if (error) {
 			nicknameErrorEl.textContent = error.message.includes('cooldown')
 				? 'Ya cambiaste el apodo. Podés volver a hacerlo dentro de 15 días.'
-				: 'No pudimos cambiar el apodo. Probá de nuevo.';
+				: error.message.includes('nickname unavailable')
+					? 'Ese apodo ya está en uso. Elegí otro.'
+					: 'No pudimos cambiar el apodo. Probá de nuevo.';
 			nicknameErrorEl.hidden = false;
 			return;
 		}
