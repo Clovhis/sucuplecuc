@@ -7,9 +7,10 @@ La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya u
 - `/comunidad/` muestra discusiones recientes y dirige a la discusión de cada película.
 - Cada ficha tiene el enlace **Abrir discusión**.
 - La ruta `/comunidad/peliculas/<slug>/` es la única discusión para esa película. El primer mensaje crea su hilo y la restricción `unique(movie_slug)` evita duplicados.
-- Las personas escriben un apodo y un mensaje; no se guardan mensajes ni apodos en `localStorage`.
+- Las personas eligen un apodo con su primer mensaje y queda ligado a la identidad anónima de ese navegador; luego el campo se oculta y se muestra el apodo activo. No se guardan mensajes ni apodos en `localStorage`.
 - Supabase Anonymous Auth crea una identidad técnica por navegador, sin pantalla de login. Sirve exclusivamente para aplicar límites y vincular respuestas.
 - Las respuestas se agrupan debajo del mensaje original y el navegador actualiza la lista cada 25 segundos sin recargar la página.
+- Desde el mismo navegador, una persona puede editar o borrar sus propios mensajes. Si borra las cookies o cambia de dispositivo, pierde esa identidad y ya no podrá administrarlos.
 
 ## Retención y límites
 
@@ -40,7 +41,38 @@ Para desactivarlo temporalmente, usá `PUBLIC_COMMUNITY_ENABLED=false` y reconst
 
 ## Moderación y operación
 
-La publicación es instantánea por decisión editorial. Desde el panel de Supabase se puede ocultar un mensaje cambiando `status` a `hidden` o borrándolo. No otorgues a navegadores permisos directos sobre las tablas: la migración revoca esos permisos y sólo expone dos RPCs con validaciones.
+La publicación es instantánea por decisión editorial. La moderación de cualquier mensaje se hace desde Supabase, nunca desde la web pública: no hay login de administradores y exponerlo permitiría que cualquiera se hiciera pasar por moderador.
+
+En **Supabase Dashboard → SQL Editor**, ejecutá esta consulta para auditar mensajes actuales:
+
+```sql
+select
+  m.id,
+  t.movie_title as pelicula,
+  m.author_name as apodo,
+  m.body as mensaje,
+  m.created_at,
+  m.edited_at,
+  m.status
+from public.community_messages m
+join public.community_threads t on t.id = m.thread_id
+where m.expires_at > now()
+order by m.created_at desc;
+```
+
+Para ocultar un mensaje sin perderlo, reemplazá `<ID>`:
+
+```sql
+update public.community_messages set status = 'hidden' where id = <ID>;
+```
+
+Para eliminarlo definitivamente:
+
+```sql
+delete from public.community_messages where id = <ID>;
+```
+
+También podés usar **Table Editor → `community_messages`**, buscar por `id` o `author_name`, y editar `status` a `hidden` o borrar la fila. No otorgues a navegadores permisos directos sobre las tablas: la migración revoca esos permisos y sólo expone RPCs con validaciones.
 
 El límite por identidad no reemplaza un CAPTCHA: sin Turnstile, una persona maliciosa puede crear nuevas identidades anónimas. Revisá periódicamente los mensajes, especialmente al inicio. No expongas nunca la service-role key; el sitio sólo utiliza la publishable/anon key existente y RLS.
 

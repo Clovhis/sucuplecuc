@@ -30,8 +30,11 @@ const status = enabled
 				<ol class="community-comments__list" data-community-comments-list aria-label="Mensajes de La Sala"></ol>
 				<form class="community-comments__form" data-community-comments-form>
 					<p class="community-comments__replying" data-community-comments-replying hidden></p>
-					<label for="community-name">Tu nombre o apodo</label>
-					<input id="community-name" name="authorName" type="text" minlength="2" maxlength="32" autocomplete="nickname" required />
+					<div data-community-comments-nickname-field>
+						<label for="community-name">Tu nombre o apodo</label>
+						<input id="community-name" name="authorName" type="text" minlength="2" maxlength="32" autocomplete="nickname" required />
+					</div>
+					<p class="community-comments__hint" data-community-comments-nickname-hint>Tu apodo queda ligado a este navegador después del primer mensaje.</p>
 					<label for="community-message">Tu mensaje</label>
 					<textarea id="community-message" name="body" rows="4" minlength="1" maxlength="600" required></textarea>
 					<p class="community-comments__hint">Máximo 600 caracteres. Se publica al instante y se elimina después de un tiempo.</p>

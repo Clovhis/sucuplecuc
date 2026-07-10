@@ -6,7 +6,9 @@ type CommunityMessage = {
 	author_name: string;
 	body: string;
 	created_at: string;
+	edited_at: string | null;
 	status: 'approved' | 'pending';
+	is_mine: boolean;
 };
 
 interface TurnstileWindow extends Window {
@@ -30,16 +32,22 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 	const status = root.querySelector<HTMLElement>('[data-community-comments-status]');
 	const list = root.querySelector<HTMLOListElement>('[data-community-comments-list]');
 	const form = root.querySelector<HTMLFormElement>('[data-community-comments-form]');
+	const nicknameInput = root.querySelector<HTMLInputElement>('[name="authorName"]');
+	const nicknameField = root.querySelector<HTMLElement>('[data-community-comments-nickname-field]');
+	const nicknameHint = root.querySelector<HTMLElement>('[data-community-comments-nickname-hint]');
 	const captchaTarget = root.querySelector<HTMLElement>('[data-community-comments-captcha]');
 	const replying = root.querySelector<HTMLElement>('[data-community-comments-replying]');
 	const cancelReply = root.querySelector<HTMLButtonElement>('[data-community-comments-cancel]');
 
-	if (!(status && list && form && replying && cancelReply)) return;
+	if (!(status && list && form && replying && cancelReply && nicknameInput && nicknameField && nicknameHint)) return;
 	const statusEl = status;
 	const listEl = list;
 	const formEl = form;
 	const replyingEl = replying;
 	const cancelReplyButton = cancelReply;
+	const nicknameInputEl = nicknameInput;
+	const nicknameFieldEl = nicknameField;
+	const nicknameHintEl = nicknameHint;
 	const setStatus = (message: string, state: 'loading' | 'error' | 'ready') => {
 		statusEl.textContent = message;
 		statusEl.dataset.state = state;
@@ -63,6 +71,7 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 			});
 			if (result.error) throw result.error;
 		}
+		await loadNickname();
 		await loadMessages();
 		setStatus('', 'ready');
 	} catch {
@@ -91,7 +100,7 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 			setStatus('No pudimos actualizar la charla. Probá de nuevo en un rato.', 'error');
 			return;
 		}
-		renderMessages(listEl, (data ?? []) as CommunityMessage[], setReply);
+		renderMessages(listEl, (data ?? []) as CommunityMessage[], setReply, updateMessage, deleteMessage);
 	}
 
 	function setReply(message: CommunityMessage | null): void {
@@ -133,8 +142,49 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 			return;
 		}
 		formEl.reset();
+		await loadNickname();
 		setReply(null);
 		setStatus('Listo: tu mensaje ya está en la charla.', 'ready');
+		await loadMessages();
+	}
+
+	async function loadNickname(): Promise<void> {
+		const { data, error } = await client.rpc('get_community_nickname');
+		if (error || typeof data !== 'string' || !data.trim()) return;
+		nicknameInputEl.value = data;
+		nicknameInputEl.readOnly = true;
+		nicknameFieldEl.hidden = true;
+		nicknameHintEl.textContent = `Publicás como ${data}.`;
+	}
+
+	async function updateMessage(messageId: number, body: string): Promise<void> {
+		const normalizedBody = body.trim();
+		if (!normalizedBody) {
+			setStatus('El mensaje no puede quedar vacío.', 'error');
+			return;
+		}
+		setStatus('Guardando cambios…', 'loading');
+		const { error } = await client.rpc('update_community_message', {
+			p_message_id: messageId,
+			p_body: normalizedBody,
+		});
+		if (error) {
+			setStatus('No pudimos guardar los cambios. Probá de nuevo.', 'error');
+			return;
+		}
+		setStatus('Cambios guardados.', 'ready');
+		await loadMessages();
+	}
+
+	async function deleteMessage(messageId: number): Promise<void> {
+		if (!window.confirm('¿Borrar este mensaje? Esta acción no se puede deshacer.')) return;
+		setStatus('Borrando mensaje…', 'loading');
+		const { error } = await client.rpc('delete_community_message', { p_message_id: messageId });
+		if (error) {
+			setStatus('No pudimos borrar el mensaje. Probá de nuevo.', 'error');
+			return;
+		}
+		setStatus('Mensaje borrado.', 'ready');
 		await loadMessages();
 	}
 }
@@ -165,6 +215,8 @@ function renderMessages(
 	list: HTMLOListElement,
 	messages: CommunityMessage[],
 	onReply: (message: CommunityMessage) => void,
+	onUpdate: (messageId: number, body: string) => Promise<void>,
+	onDelete: (messageId: number) => Promise<void>,
 ): void {
 	list.replaceChildren();
 	if (!messages.length) {
@@ -180,7 +232,7 @@ function renderMessages(
 		byParent.set(parent, [...(byParent.get(parent) ?? []), message]);
 	}
 	for (const message of byParent.get(null) ?? []) {
-		list.append(createMessage(message, byParent, onReply));
+		list.append(createMessage(message, byParent, onReply, onUpdate, onDelete));
 	}
 }
 
@@ -188,6 +240,8 @@ function createMessage(
 	message: CommunityMessage,
 	byParent: Map<number | null, CommunityMessage[]>,
 	onReply: (message: CommunityMessage) => void,
+	onUpdate: (messageId: number, body: string) => Promise<void>,
+	onDelete: (messageId: number) => Promise<void>,
 ): HTMLLIElement {
 	const item = document.createElement('li');
 	item.className = 'community-message';
@@ -201,6 +255,12 @@ function createMessage(
 	time.dateTime = message.created_at;
 	time.textContent = new Intl.DateTimeFormat('es-AR', { dateStyle: 'short', timeStyle: 'short' }).format(new Date(message.created_at));
 	header.append(author, time);
+	if (message.edited_at) {
+		const edited = document.createElement('span');
+		edited.className = 'community-message__edited';
+		edited.textContent = 'Editado';
+		header.append(edited);
+	}
 	if (message.status === 'pending') {
 		const pending = document.createElement('span');
 		pending.className = 'community-message__pending';
@@ -214,14 +274,66 @@ function createMessage(
 	reply.type = 'button';
 	reply.textContent = 'Responder';
 	reply.addEventListener('click', () => onReply(message));
-	article.append(header, body, reply);
+	const actions = document.createElement('div');
+	actions.className = 'community-message__actions';
+	actions.append(reply);
+	if (message.is_mine) {
+		const edit = document.createElement('button');
+		edit.type = 'button';
+		edit.textContent = 'Editar';
+		edit.addEventListener('click', () => openEditor(article, message, onUpdate));
+		const remove = document.createElement('button');
+		remove.type = 'button';
+		remove.textContent = 'Borrar';
+		remove.addEventListener('click', () => void onDelete(message.id));
+		actions.append(edit, remove);
+	}
+	article.append(header, body, actions);
 	item.append(article);
 	const replies = byParent.get(message.id) ?? [];
 	if (replies.length) {
 		const nested = document.createElement('ol');
 		nested.className = 'community-message__replies';
-		for (const child of replies) nested.append(createMessage(child, byParent, onReply));
+		for (const child of replies) nested.append(createMessage(child, byParent, onReply, onUpdate, onDelete));
 		item.append(nested);
 	}
 	return item;
+}
+
+function openEditor(
+	article: HTMLElement,
+	message: CommunityMessage,
+	onUpdate: (messageId: number, body: string) => Promise<void>,
+): void {
+	if (article.querySelector('[data-community-message-editor]')) return;
+	const form = document.createElement('form');
+	form.className = 'community-message__editor';
+	form.dataset.communityMessageEditor = '';
+	const label = document.createElement('label');
+	label.htmlFor = `community-message-edit-${message.id}`;
+	label.textContent = 'Editar mensaje';
+	const textarea = document.createElement('textarea');
+	textarea.id = label.htmlFor;
+	textarea.name = 'body';
+	textarea.rows = 3;
+	textarea.maxLength = 600;
+	textarea.required = true;
+	textarea.value = message.body;
+	const save = document.createElement('button');
+	save.type = 'submit';
+	save.textContent = 'Guardar';
+	const cancel = document.createElement('button');
+	cancel.type = 'button';
+	cancel.textContent = 'Cancelar';
+	cancel.addEventListener('click', () => form.remove());
+	const actions = document.createElement('div');
+	actions.className = 'community-message__actions';
+	actions.append(save, cancel);
+	form.append(label, textarea, actions);
+	form.addEventListener('submit', (event) => {
+		event.preventDefault();
+		void onUpdate(message.id, textarea.value);
+	});
+	article.append(form);
+	textarea.focus();
 }

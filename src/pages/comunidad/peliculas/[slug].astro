@@ -26,18 +26,17 @@ const structuredData = createSimplePageStructuredData(discussionPath, pageTitle,
 			<a class="community-page__home-link" href={getMoviePath(movie.slug)}>Ficha de la película</a>
 		</nav>
 		<section class="community-page__hero fade-up" style="--item-delay: 0ms;">
-			<p class="about-page__kicker">Discusión de película</p>
 			<h1>{movie.title}</h1>
-			<p class="community-page__tagline">{movie.year} · Una sola charla, sin humo.</p>
-			<p class="community-page__lead">Este es el único hilo de {movie.title}. Si nadie habló todavía, mandá el primer mensaje y abrí la discusión.</p>
+			<p class="community-page__tagline">{movie.year}</p>
+			<p class="community-page__lead">El espacio para hablar de {movie.title}. Si nadie comentó todavía, empezá vos.</p>
 		</section>
 		<div class="community-page__content">
 			<section class="community-page__comments fade-up" style="--item-delay: 80ms;" aria-labelledby="conversacion">
-				<div class="community-page__section-heading"><div><p class="community-page__eyebrow">Foro de la película</p><h2 id="conversacion">La charla</h2></div><p>Respuestas, recomendaciones y debate.</p></div>
+				<div class="community-page__section-heading"><div><h2 id="conversacion">Discusión</h2></div><p>Opiniones y recomendaciones.</p></div>
 				<CommunityComments enabled={comments.enabled} threadId={getMovieCommunityThreadId(movie.slug)} movieSlug={movie.slug} movieTitle={movie.title} turnstileSiteKey={comments.turnstileSiteKey} />
 			</section>
 			<aside class="community-page__rules fade-up" style="--item-delay: 160ms;" aria-labelledby="reglas-sala">
-				<p class="community-page__eyebrow">Antes de entrar</p><h2 id="reglas-sala">Reglas de convivencia</h2>
+				<h2 id="reglas-sala">Reglas</h2>
 				<ul><li>Respetá a los demás.</li><li>Avisá antes de publicar spoilers.</li><li>No publiques spam ni enlaces sospechosos.</li><li>Debatí ideas, no ataques personas.</li></ul>
 				<p class="community-page__privacy-note">Los mensajes son temporales y cada hilo conserva hasta 200 publicaciones.</p>
 			</aside>

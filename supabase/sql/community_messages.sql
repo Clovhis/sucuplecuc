@@ -33,7 +33,14 @@ create table if not exists public.community_messages (
 	body text not null check (char_length(body) between 1 and 600 and body = btrim(body) and body !~ '[[:cntrl:]<>]'),
 	status public.community_message_status not null default 'approved',
 	created_at timestamptz not null default now(),
+	edited_at timestamptz,
 	expires_at timestamptz not null default (now() + interval '60 days')
+);
+
+create table if not exists public.community_identities (
+	author_id uuid primary key references auth.users(id) on delete cascade,
+	author_name text not null check (char_length(author_name) between 2 and 32 and author_name = btrim(author_name) and author_name !~ '[[:cntrl:]<>]'),
+	created_at timestamptz not null default now()
 );
 
 create index if not exists idx_community_messages_thread_created on public.community_messages(thread_id, created_at);
@@ -42,15 +49,33 @@ create index if not exists idx_community_messages_expiry on public.community_mes
 
 alter table public.community_threads enable row level security;
 alter table public.community_messages enable row level security;
-revoke all on public.community_threads, public.community_messages from anon, authenticated;
+alter table public.community_identities enable row level security;
+revoke all on public.community_threads, public.community_messages, public.community_identities from anon, authenticated;
 
-create or replace function public.list_community_messages(p_thread_key text, p_limit integer default 200)
-returns table (id bigint, parent_id bigint, author_name text, body text, created_at timestamptz, status text)
+-- Existing browsers keep the first nickname they used before identities existed.
+insert into public.community_identities (author_id, author_name, created_at)
+select distinct on (m.author_id) m.author_id, m.author_name, m.created_at
+from public.community_messages m
+order by m.author_id, m.created_at asc
+on conflict (author_id) do nothing;
+
+create or replace function public.get_community_nickname()
+returns text
 language sql
 security definer
 set search_path = public
 as $$
-	select m.id, m.parent_id, m.author_name, m.body, m.created_at, m.status::text
+	select author_name from public.community_identities where author_id = auth.uid();
+$$;
+
+drop function if exists public.list_community_messages(text, integer);
+create function public.list_community_messages(p_thread_key text, p_limit integer default 200)
+returns table (id bigint, parent_id bigint, author_name text, body text, created_at timestamptz, edited_at timestamptz, status text, is_mine boolean)
+language sql
+security definer
+set search_path = public
+as $$
+	select m.id, m.parent_id, m.author_name, m.body, m.created_at, m.edited_at, m.status::text, coalesce(m.author_id = auth.uid(), false)
 	from public.community_messages m
 	join public.community_threads t on t.id = m.thread_id
 	where t.thread_key = btrim(coalesce(p_thread_key, ''))
@@ -91,6 +116,12 @@ begin
 	end if;
 	if char_length(normalized_name) not between 2 and 32 or normalized_name ~ '[[:cntrl:]<>]' then raise exception 'invalid author name'; end if;
 	if char_length(normalized_body) not between 1 and 600 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
+	insert into public.community_identities (author_id, author_name)
+	values (auth.uid(), normalized_name)
+	on conflict (author_id) do nothing;
+	select identity_record.author_name into normalized_name
+	from public.community_identities as identity_record
+	where identity_record.author_id = auth.uid();
 	if (select count(*) from public.community_messages where author_id = auth.uid() and created_at > now() - interval '10 minutes') >= 3 then
 		raise exception 'rate limit exceeded';
 	end if;
@@ -120,10 +151,54 @@ begin
 end;
 $$;
 
+create or replace function public.update_community_message(p_message_id bigint, p_body text)
+returns table (id bigint, edited_at timestamptz)
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+	normalized_body text := btrim(coalesce(p_body, ''));
+begin
+	if auth.uid() is null then raise exception 'anonymous session is required'; end if;
+	if char_length(normalized_body) not between 1 and 600 or normalized_body ~ '[[:cntrl:]<>]' then raise exception 'invalid message'; end if;
+	return query
+		update public.community_messages as message_to_update
+		set body = normalized_body, edited_at = now()
+		where message_to_update.id = p_message_id
+			and message_to_update.author_id = auth.uid()
+			and message_to_update.status = 'approved'
+			and message_to_update.expires_at > now()
+		returning message_to_update.id, message_to_update.edited_at;
+	if not found then raise exception 'message cannot be edited'; end if;
+end;
+$$;
+
+create or replace function public.delete_community_message(p_message_id bigint)
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+	if auth.uid() is null then raise exception 'anonymous session is required'; end if;
+	delete from public.community_messages as message_to_delete
+	where message_to_delete.id = p_message_id
+		and message_to_delete.author_id = auth.uid();
+	if not found then raise exception 'message cannot be deleted'; end if;
+end;
+$$;
+
 revoke all on function public.list_community_messages(text, integer) from public;
 revoke all on function public.submit_community_message(text, text, text, bigint, text, text) from public;
+revoke all on function public.get_community_nickname() from public;
+revoke all on function public.update_community_message(bigint, text) from public;
+revoke all on function public.delete_community_message(bigint) from public;
 grant execute on function public.list_community_messages(text, integer) to anon, authenticated;
 grant execute on function public.submit_community_message(text, text, text, bigint, text, text) to authenticated;
+grant execute on function public.get_community_nickname() to authenticated;
+grant execute on function public.update_community_message(bigint, text) to authenticated;
+grant execute on function public.delete_community_message(bigint) to authenticated;
 
 -- Optional but recommended: enable pg_cron in Database > Extensions, then run
 -- this block to delete messages after their 60-day retention window. Anonymous
