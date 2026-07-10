@@ -48,13 +48,16 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 	const captchaTarget = root.querySelector<HTMLElement>('[data-community-comments-captcha]');
 	const replying = root.querySelector<HTMLElement>('[data-community-comments-replying]');
 	const cancelReply = root.querySelector<HTMLButtonElement>('[data-community-comments-cancel]');
+	const messageInput = root.querySelector<HTMLTextAreaElement>('[name="body"]');
+	const emojiButtons = root.querySelectorAll<HTMLButtonElement>('[data-community-comments-emoji]');
 
-	if (!(status && list && form && replying && cancelReply && nicknameInput && nicknameField && nicknameHint && changeNicknameButton && nicknameDialog && nicknameForm && newNicknameInput && nicknameError && cancelNickname)) return;
+	if (!(status && list && form && replying && cancelReply && messageInput && nicknameInput && nicknameField && nicknameHint && changeNicknameButton && nicknameDialog && nicknameForm && newNicknameInput && nicknameError && cancelNickname)) return;
 	const statusEl = status;
 	const listEl = list;
 	const formEl = form;
 	const replyingEl = replying;
 	const cancelReplyButton = cancelReply;
+	const messageInputEl = messageInput;
 	const nicknameInputEl = nicknameInput;
 	const nicknameFieldEl = nicknameField;
 	const nicknameHintEl = nicknameHint;
@@ -100,6 +103,9 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		void submitMessage();
 	});
 	cancelReplyButton.addEventListener('click', () => setReply(null));
+	emojiButtons.forEach((button) => {
+		button.addEventListener('click', () => insertEmoji(messageInputEl, button.dataset.communityCommentsEmoji ?? ''));
+	});
 	changeNicknameButtonEl.addEventListener('click', () => {
 		newNicknameInputEl.value = nicknameInputEl.value;
 		nicknameErrorEl.hidden = true;
@@ -254,6 +260,17 @@ async function setupCommunity(root: HTMLElement): Promise<void> {
 		}
 		await loadMessages();
 	}
+}
+
+function insertEmoji(input: HTMLTextAreaElement, emoji: string): void {
+	if (!emoji) return;
+	const start = input.selectionStart;
+	const end = input.selectionEnd;
+	const nextValue = `${input.value.slice(0, start)}${emoji}${input.value.slice(end)}`;
+	if (nextValue.length > input.maxLength) return;
+	input.setRangeText(emoji, start, end, 'end');
+	input.dispatchEvent(new Event('input', { bubbles: true }));
+	input.focus();
 }
 
 async function prepareCaptcha(target: HTMLElement | null, siteKey: string): Promise<string | undefined> {

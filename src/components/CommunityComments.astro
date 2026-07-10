@@ -40,6 +40,15 @@ const status = enabled
 					</div>
 					<label for="community-message">Tu mensaje</label>
 					<textarea id="community-message" name="body" rows="4" minlength="1" maxlength="300" required></textarea>
+					<div class="community-comments__emoji-picker" aria-label="Agregar un emoji">
+						<span aria-hidden="true">Sumá una reacción:</span>
+						<button type="button" data-community-comments-emoji="😀" aria-label="Agregar emoji sonrisa">😀</button>
+						<button type="button" data-community-comments-emoji="😂" aria-label="Agregar emoji risa">😂</button>
+						<button type="button" data-community-comments-emoji="😍" aria-label="Agregar emoji enamorado">😍</button>
+						<button type="button" data-community-comments-emoji="😱" aria-label="Agregar emoji sorpresa">😱</button>
+						<button type="button" data-community-comments-emoji="👏" aria-label="Agregar emoji aplausos">👏</button>
+						<button type="button" data-community-comments-emoji="🔥" aria-label="Agregar emoji fuego">🔥</button>
+					</div>
 					<label class="community-comments__spoiler-toggle"><input name="isSpoiler" type="checkbox" /> <span>Contiene spoiler: se va a tapar hasta que lo quieran ver.</span></label>
 					<p class="community-comments__hint">Máximo 300 caracteres. Se publica al instante y se elimina después de un tiempo.</p>
 					<div class="community-comments__form-actions">
