@@ -246,6 +246,7 @@ function parseArgs(argv) {
 		recent: false,
 		format: 'text',
 		skipYoutube: false,
+		verifyCommunityBuild: false,
 	};
 
 	for (let index = 0; index < argv.length; index += 1) {
@@ -262,6 +263,8 @@ function parseArgs(argv) {
 			args.format = argv[++index];
 		} else if (arg === '--skip-youtube') {
 			args.skipYoutube = true;
+		} else if (arg === '--verify-community-build') {
+			args.verifyCommunityBuild = true;
 		} else if (arg === '--all') {
 			args.all = true;
 		} else if (arg === '--help' || arg === '-h') {
@@ -289,6 +292,7 @@ function usage() {
 			'  --all                Audit every movie JSON file under the root directory.',
 			'  --format <type>      text | json. Default: text',
 			'  --skip-youtube       Skip YouTube oEmbed checks.',
+			'  --verify-community-build  Require the built per-movie Comunidad route in dist/.',
 		].join('\n'),
 	);
 }
@@ -852,6 +856,22 @@ function validateShareFields(movie, candidatePath, findings) {
 				`Do not add "${field}" to movie JSON. The movie detail Share panel derives links from slug/canonical URL.`,
 			);
 		}
+	}
+}
+
+function validateCommunityBuildRoute(movie, candidatePath, findings) {
+	const slug = typeof movie.slug === 'string' ? movie.slug.trim() : '';
+	if (!slug) return;
+
+	const routePath = path.join('dist', 'comunidad', 'peliculas', encodeURIComponent(slug), 'index.html');
+	if (!fs.existsSync(routePath)) {
+		addFinding(
+			findings,
+			'error',
+			'missing-community-route',
+			candidatePath,
+			`Expected built Comunidad discussion route is missing: ${routePath}. Run npm run build and confirm the movie slug is valid.`,
+		);
 	}
 }
 
@@ -1745,6 +1765,9 @@ async function auditCandidates(args) {
 		});
 
 		validateMovieShape(movie, candidate, catalogText, findings, knownMovieSlugs);
+		if (args.verifyCommunityBuild) {
+			validateCommunityBuildRoute(movie, candidate, findings);
+		}
 		validatePeoplePool(movie, candidate, findings, peopleCatalog, peopleCatalogIndex, exclusiveProfileIndex);
 		const trailerId = validateTrailerId(movie, candidate, findings);
 
@@ -1880,3 +1903,4 @@ async function main() {
 }
 
 main();
+

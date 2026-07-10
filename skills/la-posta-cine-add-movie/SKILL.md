@@ -40,6 +40,8 @@ Apply add-only mode by default.
 
 Movie detail pages already include a global Share panel for every `/peliculas/<slug>/` page. The panel is rendered from site code (`src/pages/peliculas/[slug].astro`, `src/scripts/movie-detail.ts`, `src/styles/global.css`) and uses the movie slug/canonical URL plus local social logos under `public/brand/social/`. A normal movie load must not add share/social fields to movie JSON, must not add per-movie share links, and must not modify the Share UI/assets. Correct slug creation is enough for the Share panel to work.
 
+Comunidad is also automatic: `src/pages/comunidad/peliculas/[slug].astro` generates one discussion route for every entry returned by `getMovies()`. A new movie must therefore expose `/comunidad/peliculas/<slug>/` after the build; do not create a Supabase thread, add community fields to movie JSON, or change Comunidad UI/code. The first visitor message creates the unique thread.
+
 Allowed paths:
 
 - `src/data/movies/**`
@@ -633,6 +635,7 @@ Run these checks in order:
 npm run enrich-people -- --movie <slug>
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json
 npm run build
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json --skip-youtube --verify-community-build
 ```
 
 If build fails, abort. Do not edit site code.
@@ -682,19 +685,20 @@ Return all of the following:
 2. New file path
 3. Field summary (`title/originalTitle/year/category/genres/subgenres/poster/trailer/director/mainCast/productionCompany/verdict/review/isPremiere/releasePlatform/releasePlatforms`)
 4. `npm run build` result
-5. `git diff --name-only` output
-6. Explicit confirmation: `No se modifico ningun archivo fuera de peliculas, people pool y catalogo`
-7. Optional PR link or exact command to open PR
-8. External review source used (site + URL) and what was extracted from it
-9. Platform source used for AR (site + URL) and why chosen `releasePlatform` / optional `releasePlatforms` match resolver flow
-10. Awards source used (site + URL), verified premios/galardones found, and exact final `awards.wins` content (including empty array when no wins apply)
-11. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
-12. People pool confirmation with exact credited names added/updated in `src/data/people.json` and cached image paths in `public/people/`
-13. Exclusive profile linkage confirmation for any credited person already present in `docs/person-profile-catalog-reference.md`
-14. Lagrimómetro confirmation: `aplica` or `no aplica`, with primary-category reason
-15. Jajámetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
-16. Cagazómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
-17. Explosiómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
+5. Comunidad confirmation: built route `/comunidad/peliculas/<slug>/` exists, the movie needs no manual Supabase thread, and no Comunidad UI/code was changed
+6. `git diff --name-only` output
+7. Explicit confirmation: `No se modifico ningun archivo fuera de peliculas, people pool y catalogo`
+8. Optional PR link or exact command to open PR
+9. External review source used (site + URL) and what was extracted from it
+10. Platform source used for AR (site + URL) and why chosen `releasePlatform` / optional `releasePlatforms` match resolver flow
+11. Awards source used (site + URL), verified premios/galardones found, and exact final `awards.wins` content (including empty array when no wins apply)
+12. Catalog update confirmation with changed total count in `docs/movie-catalog-reference.md`
+13. People pool confirmation with exact credited names added/updated in `src/data/people.json` and cached image paths in `public/people/`
+14. Exclusive profile linkage confirmation for any credited person already present in `docs/person-profile-catalog-reference.md`
+15. Lagrimómetro confirmation: `aplica` or `no aplica`, with primary-category reason
+16. Jajámetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
+17. Cagazómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
+18. Explosiómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
 
 ## Validation checklist
 
@@ -703,6 +707,7 @@ Return all of the following:
 - [ ] `docs/movie-catalog-reference.md` refreshed and includes new movie slug(s)
 - [ ] No modified files outside allowlist
 - [ ] No Share UI/assets modified during a content-only load; movie share links derive automatically from slug/canonical URL
+- [ ] `npm run build` generated `dist/comunidad/peliculas/<slug>/index.html`; no manual Supabase thread or Comunidad data field was added
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
 - [ ] Review written manually from scratch by the AI for this exact movie, without template scaffolds, stock closings, inherited paragraph skeletons, or robotized phrasing that could fit another movie unchanged
@@ -779,3 +784,4 @@ Expected behavior summary:
 5. Set `verdict: zafa`, `verdictLabel: ZAFA`
 6. Run `npm run build`, show `git diff --name-only`, commit, push
 7. Return pending fields if poster/trailer cannot be confirmed reliably
+

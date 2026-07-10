@@ -113,6 +113,7 @@ The bundled script checks:
 - `releasePlatform` / `releasePlatforms` consistency: no duplicates, max `2` labels total, `releasePlatform` preserved as primary, and `Otras plataformas` kept exclusive
 - Argentine audience title drift: `title` should reflect the name used in Argentina, while `originalTitle` keeps the source/original title
 - catalog sync in `docs/movie-catalog-reference.md`
+- post-build Comunidad route verification: every audited movie must generate `dist/comunidad/peliculas/<slug>/index.html`; the discussion/thread is automatic and must not be represented by manual movie JSON fields or a pre-created Supabase thread
 - poster source sanity: `poster` must be a real vertical poster/key art and must not be a YouTube trailer thumbnail, backdrop, still, logo, screenshot, or horizontal platform tile
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
 - raw numeric score leakage in reviews
@@ -219,7 +220,8 @@ If the script reports fixable issues:
 1. Edit only affected movie JSON files, `src/data/people.json`, local `public/people/**` files and, if needed, `docs/movie-catalog-reference.md`
 2. Re-run the auditor without skipping the mandatory batch score/badge check
 3. Run `npm run build`
-4. Confirm no forbidden path changed
+4. Re-run the candidate audit with `--skip-youtube --verify-community-build` to confirm the built `/comunidad/peliculas/<slug>/` route exists
+5. Confirm no forbidden path changed
 
 ### 5. Output
 
@@ -234,4 +236,6 @@ Report:
 - explicit confirmation that deceased people do not render as living ages and that animation/anime titles use original voice cast in `mainCast`
 - explicit confirmation that credited people with exclusive profiles still resolve to their dynamic `/personas/<slug>/` pages
 - explicit confirmation that no audited movie JSON contains manual Share/social fields and no Share UI/assets were changed in a content-only audit
+- explicit confirmation that every audited movie has its built `/comunidad/peliculas/<slug>/` route, without a manual Supabase thread, custom Comunidad field, or Comunidad UI/code change
 - explicit confirmation that any supported subgenre signal now lives in `subgenres` with deliberate labeling instead of being hidden only in `genres`/`category`
+
