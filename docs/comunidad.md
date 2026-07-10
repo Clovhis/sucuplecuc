@@ -18,7 +18,8 @@ La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya u
 - Máximo 600 caracteres por mensaje y 32 por apodo.
 - Sin HTML, adjuntos ni imágenes.
 - Cada hilo conserva como máximo 200 mensajes y los mensajes vencen a los 60 días.
-- El cron diario borra los vencidos. Si `pg_cron` no está activo, el tope de 200 sigue evitando crecimiento indefinido, pero hay que habilitarlo para cumplir la retención exacta.
+- El cron diario borra los vencidos y, tras 61 días, las identidades anónimas que ya no tienen mensajes. Supabase no elimina estas identidades automáticamente.
+- Si `pg_cron` no está activo, el tope de 200 sigue evitando crecimiento indefinido, pero hay que habilitarlo para cumplir la retención exacta.
 
 ## Activación manual
 

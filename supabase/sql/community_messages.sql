@@ -126,7 +126,9 @@ grant execute on function public.list_community_messages(text, integer) to anon,
 grant execute on function public.submit_community_message(text, text, text, bigint, text, text) to authenticated;
 
 -- Optional but recommended: enable pg_cron in Database > Extensions, then run
--- this block to delete messages after their 60-day retention window.
+-- this block to delete messages after their 60-day retention window. Anonymous
+-- Auth identities are cleaned one day later too: Supabase does not clean them
+-- automatically, and no community content needs to survive that identity.
 do $$
 begin
 	if exists (select 1 from pg_extension where extname = 'pg_cron') then
@@ -134,6 +136,10 @@ begin
 			perform cron.unschedule((select jobid from cron.job where jobname = 'cineposta-purge-community-messages'));
 		end if;
 		perform cron.schedule('cineposta-purge-community-messages', '17 3 * * *', 'delete from public.community_messages where expires_at <= now();');
+		if exists (select 1 from cron.job where jobname = 'cineposta-purge-community-anonymous-users') then
+			perform cron.unschedule((select jobid from cron.job where jobname = 'cineposta-purge-community-anonymous-users'));
+		end if;
+		perform cron.schedule('cineposta-purge-community-anonymous-users', '31 3 * * *', 'delete from auth.users where is_anonymous is true and created_at < now() - interval ''61 days'' and not exists (select 1 from public.community_messages where author_id = auth.users.id);');
 	end if;
 end;
 $$;
