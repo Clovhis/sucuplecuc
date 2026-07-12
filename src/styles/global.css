@@ -10526,3 +10526,41 @@ img {
 		font-size: 0.7rem;
 	}
 }
+
+/* Mobile-only interaction polish: keep primary controls comfortably tappable. */
+@media (max-width: 720px) {
+	.site-header__actions {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.45rem;
+	}
+
+	.site-header__actions > a {
+		width: 100%;
+		min-height: 2.75rem;
+		padding-inline: 0.45rem;
+		font-size: 0.62rem;
+		letter-spacing: 0.045em;
+		text-align: center;
+		white-space: normal;
+	}
+
+	.home-genre-filter__chip,
+	.home-platform-filter__chip,
+	.site-footer__link {
+		min-height: 2.75rem;
+	}
+
+	.site-footer__link {
+		align-items: center;
+	}
+}
+
+@media (max-width: 23.5rem) {
+	.site-header__actions {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.site-header__contact {
+		grid-column: 1 / -1;
+	}
+}
