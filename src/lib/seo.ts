@@ -1,6 +1,6 @@
 import type { Movie, MovieVerdict } from '../types/movie';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
-import { getMoviePath, getMovieTrailerPath, getPosterUrl, getYoutubeEmbedUrl, getYoutubeThumbnailUrl } from './movies';
+import { getMoviePath, getPosterUrl } from './movies';
 import { getPersonPath } from './people';
 
 export const SITE_URL = 'https://www.cineposta.com.ar';
@@ -370,71 +370,6 @@ export function createMovieStructuredData(
 			itemListElement: [
 				createBreadcrumbListItem(1, SITE_NAME, `${SITE_URL}/`),
 				createBreadcrumbListItem(2, movie.title, movieUrl),
-			],
-		},
-	];
-}
-
-export function createTrailerPageStructuredData(
-	movie: Pick<Movie, 'slug' | 'title' | 'year' | 'synopsis' | 'trailerYoutubeId' | 'releaseDate' | 'reviewPublishedAt'>,
-	pageTitle: string,
-	pageDescription: string,
-): StructuredDataValue[] {
-	const movieUrl = asAbsoluteUrl(getMoviePath(movie.slug));
-	const trailerUrl = asAbsoluteUrl(getMovieTrailerPath(movie.slug));
-	const thumbnailUrl = getYoutubeThumbnailUrl(movie.trailerYoutubeId);
-	const embedUrl = getYoutubeEmbedUrl(movie.trailerYoutubeId);
-	const uploadDate = getBestKnownMoviePublicationDate(movie);
-
-	return [
-		{
-			'@context': 'https://schema.org',
-			'@type': 'WebPage',
-			'@id': `${trailerUrl}#webpage`,
-			url: trailerUrl,
-			name: pageTitle,
-			description: pageDescription,
-			inLanguage: SITE_LANGUAGE,
-			isPartOf: {
-				'@id': getWebsiteId(),
-			},
-			about: {
-				'@id': `${movieUrl}#movie`,
-			},
-			mainEntity: {
-				'@id': `${trailerUrl}#video`,
-			},
-		},
-		{
-			'@context': 'https://schema.org',
-			'@type': 'VideoObject',
-			'@id': `${trailerUrl}#video`,
-			name: `Trailer oficial de ${movie.title} (${movie.year})`,
-			description: pageDescription || movie.synopsis,
-			thumbnailUrl: thumbnailUrl ? [thumbnailUrl] : undefined,
-			embedUrl,
-			url: trailerUrl,
-			uploadDate,
-			datePublished: uploadDate,
-			inLanguage: SITE_LANGUAGE,
-			publisher: {
-				'@id': getOrganizationId(),
-			},
-			isPartOf: {
-				'@id': `${trailerUrl}#webpage`,
-			},
-			about: {
-				'@id': `${movieUrl}#movie`,
-			},
-		},
-		{
-			'@context': 'https://schema.org',
-			'@type': 'BreadcrumbList',
-			'@id': `${trailerUrl}#breadcrumb`,
-			itemListElement: [
-				createBreadcrumbListItem(1, SITE_NAME, `${SITE_URL}/`),
-				createBreadcrumbListItem(2, movie.title, movieUrl),
-				createBreadcrumbListItem(3, 'Trailer oficial', trailerUrl),
 			],
 		},
 	];

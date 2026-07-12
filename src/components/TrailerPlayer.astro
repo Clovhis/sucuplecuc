@@ -1,0 +1,54 @@
+---
+import { getYoutubeAutoplayEmbedUrl, getYoutubeWatchUrl } from '../lib/movies';
+
+interface Props {
+	title: string;
+	youtubeId: string;
+	thumbnailUrl: string;
+}
+
+const { title, youtubeId, thumbnailUrl } = Astro.props as Props;
+const embedUrl = getYoutubeAutoplayEmbedUrl(youtubeId);
+const watchUrl = getYoutubeWatchUrl(youtubeId);
+---
+
+{
+	embedUrl && (
+		<section class="trailer-shell trailer-shell--preview" data-trailer-player data-embed-url={embedUrl}>
+			<div class="trailer-preview">
+				<img
+					class="trailer-preview__image"
+					src={thumbnailUrl}
+					alt={`Miniatura del trailer de ${title}`}
+					loading="lazy"
+					referrerpolicy="no-referrer"
+				/>
+				<button class="trailer-preview__play" type="button" aria-label={`Reproducir trailer de ${title}`}>
+					Ver trailer
+				</button>
+			</div>
+			<a class="trailer-shell__external" href={watchUrl} target="_blank" rel="noopener noreferrer">
+				Abrir en YouTube
+			</a>
+		</section>
+	)
+}
+
+<script>
+	document.addEventListener('click', (event) => {
+		const button = (event.target as Element).closest<HTMLButtonElement>('.trailer-preview__play');
+		const player = button?.closest<HTMLElement>('[data-trailer-player]');
+		const embedUrl = player?.dataset.embedUrl;
+
+		if (!button || !player || !embedUrl) return;
+
+		const frame = document.createElement('iframe');
+		frame.className = 'trailer-frame';
+		frame.src = embedUrl;
+		frame.title = button.getAttribute('aria-label')?.replace(/^Reproducir /, '') ?? 'Trailer oficial';
+		frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+		frame.referrerPolicy = 'strict-origin-when-cross-origin';
+		frame.allowFullscreen = true;
+		player.replaceChildren(frame);
+	});
+</script>

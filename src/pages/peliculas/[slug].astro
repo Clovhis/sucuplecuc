@@ -10,7 +10,6 @@ import {
 	getMovieSubgenres,
 	getPosterUrl,
 	getPrimaryGenreLabel,
-	getMovieTrailerPath,
 	getYoutubeThumbnailUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
@@ -24,6 +23,7 @@ import Lagrimometro from '../../components/Lagrimometro.astro';
 import Jajametro from '../../components/Jajametro.astro';
 import Cagazometro from '../../components/Cagazometro.astro';
 import Explosiometro from '../../components/Explosiometro.astro';
+import TrailerPlayer from '../../components/TrailerPlayer.astro';
 import PostCreditsInfo from '../../components/PostCreditsInfo.astro';
 import Sangrometro from '../../components/Sangrometro.astro';
 import { getAwardVisualKey } from '../../lib/awards';
@@ -112,7 +112,6 @@ const screenshotUrls = (movie.screenshots ?? [])
 	.slice(0, 2)
 	.map((value) => getPosterUrl(value));
 const hasScreenshotGallery = screenshotUrls.length >= 2;
-const trailerPageUrl = movie.trailerYoutubeId ? getMovieTrailerPath(movie.slug) : '';
 const trailerThumbnailUrl = getYoutubeThumbnailUrl(movie.trailerYoutubeId) || posterUrl;
 const awardMeta = {
 	oscar: { label: 'Oscar' },
@@ -440,23 +439,12 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				</header>
 				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
 					<div class="movie-detail__hero-stack">
-						{trailerPageUrl ? (
-							<a
-								class="trailer-shell trailer-shell--preview trailer-shell--preview-link"
-								href={trailerPageUrl}
-								aria-label={`Ver trailer de ${movie.title}`}
-							>
-								<div class="trailer-preview">
-									<img
-										class="trailer-preview__image"
-										src={trailerThumbnailUrl}
-										alt={`Miniatura del trailer de ${movie.title}`}
-										loading="lazy"
-										referrerpolicy="no-referrer"
-									/>
-									<span class="trailer-preview__play" aria-hidden="true">Ver trailer</span>
-								</div>
-							</a>
+						{movie.trailerYoutubeId ? (
+							<TrailerPlayer
+								title={movie.title}
+								youtubeId={movie.trailerYoutubeId}
+								thumbnailUrl={trailerThumbnailUrl}
+							/>
 						) : (
 							<p class="message-box">Todavía no tenemos trailer cargado.</p>
 						)}

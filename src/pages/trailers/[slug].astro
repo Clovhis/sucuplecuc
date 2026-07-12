@@ -1,18 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
-	getMoviePlatformLabel,
-	getMoviePlatforms,
 	getMoviePath,
 	getMovies,
-	getPosterUrl,
-	getYoutubeEmbedUrl,
-	getYoutubeThumbnailUrl,
-	getYoutubeWatchUrl,
-	getVerdictBadgeClass,
-	getVerdictLabel,
 } from '../../lib/movies';
-import { createTrailerPageStructuredData } from '../../lib/seo';
+import { SITE_URL } from '../../lib/seo';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -25,117 +17,25 @@ export function getStaticPaths() {
 }
 
 const { movie } = Astro.props as { movie: Movie };
-const trailerEmbedUrl = getYoutubeEmbedUrl(movie.trailerYoutubeId);
-const trailerWatchUrl = getYoutubeWatchUrl(movie.trailerYoutubeId);
-const trailerThumbnailUrl = getYoutubeThumbnailUrl(movie.trailerYoutubeId) || getPosterUrl(movie.poster);
 const movieUrl = getMoviePath(movie.slug);
-const pageTitle = `Trailer oficial de ${movie.title} (${movie.year}) | Cine Posta`;
-const pageDescription = `Mirá el trailer oficial de ${movie.title} (${movie.year}) y volvés a la reseña completa en Cine Posta.`;
-const structuredData = createTrailerPageStructuredData(movie, pageTitle, pageDescription);
-const verdictClass = getVerdictBadgeClass(movie);
-const moviePlatforms = getMoviePlatforms(movie);
-const moviePlatformLabel = getMoviePlatformLabel(movie);
-const trailerFacts = [
-	{ label: 'Veredicto', value: getVerdictLabel(movie) },
-	{ label: 'Categoría', value: movie.category },
-	{ label: 'Dirección', value: movie.director },
-	{ label: 'Elenco', value: movie.mainCast.slice(0, 3).join(', ') },
-	{ label: 'Duración', value: movie.runtimeMinutes ? `${movie.runtimeMinutes} min` : 'No cargada' },
-	{ label: moviePlatforms.length > 1 ? 'Plataformas' : 'Plataforma', value: moviePlatformLabel || 'No cargada' },
-];
+const pageTitle = `Trailer de ${movie.title} | Cine Posta`;
+const pageDescription = `El trailer de ${movie.title} se reproduce dentro de su ficha en Cine Posta.`;
+const movieCanonicalUrl = new URL(movieUrl, SITE_URL).toString();
 ---
 
 <BaseLayout
 	title={pageTitle}
 	description={pageDescription}
-	image={trailerThumbnailUrl}
-	structuredData={structuredData}
+	canonicalUrl={movieCanonicalUrl}
+	noindex={true}
 	allowAds={false}
 >
 	<main id="main-content" class="container">
-		<div class="page-actions">
-			<a class="page-action page-action--history" href={movieUrl}>Volver a la reseña</a>
-			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Ir al listado</a>
-		</div>
-
-		<article class="trailer-watch fade-up" style="--item-delay: 0ms;">
-			<header class="trailer-watch__header">
-				<p class="trailer-watch__eyebrow">Trailer oficial</p>
-				<h1 class="trailer-watch__title">{movie.title}</h1>
-				<p class="trailer-watch__dek">Página de visualización del trailer de {movie.title} ({movie.year}).</p>
-			</header>
-
-			<section class="trailer-shell trailer-shell--watch" aria-label={`Reproductor del trailer de ${movie.title}`}>
-				<iframe
-					class="trailer-frame trailer-frame--watch"
-					src={trailerEmbedUrl}
-					title={`Trailer oficial de ${movie.title}`}
-					loading="eager"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				></iframe>
-				<div class="trailer-watch__actions">
-					<a
-						class="page-action"
-						href={trailerWatchUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						referrerpolicy="no-referrer"
-					>
-						Abrir en YouTube
-					</a>
-					<a class="page-action page-action--home" href={movieUrl}>Leer la reseña</a>
-				</div>
-			</section>
-
-			<section class="trailer-watch__summary" aria-label="Contexto breve de la película">
-				<div class="trailer-watch__copy">
-					<p class="trailer-watch__summary-kicker">Sinopsis</p>
-					<p class="trailer-watch__summary-text">{movie.synopsis}</p>
-					<p class="trailer-watch__summary-text">
-						Si querés el contexto completo y el veredicto, seguí a la
-						{' '}
-						<a href={movieUrl}>reseña de {movie.title}</a>.
-					</p>
-				</div>
-				<div class="trailer-watch__poster-card">
-					<img
-						class="trailer-watch__poster"
-						src={getPosterUrl(movie.poster)}
-						alt={`Poster de ${movie.title}`}
-						loading="lazy"
-						referrerpolicy="no-referrer"
-					/>
-				</div>
-			</section>
-
-			<section class="trailer-watch__summary" aria-label="Ficha rápida y veredicto">
-				<div class="trailer-watch__copy">
-					<p class="trailer-watch__summary-kicker">La posta</p>
-					<h2 class="trailer-watch__subhead">
-						<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
-					</h2>
-					<p class="trailer-watch__summary-text">{movie.review}</p>
-					<p class="trailer-watch__summary-text">
-						Si el trailer te cebó, en la ficha completa tenés el contexto, el veredicto corto y
-						qué otras pelis mirar después.
-					</p>
-					<div class="trailer-watch__actions">
-						<a class="page-action page-action--home" href={movieUrl}>Ir a la reseña completa</a>
-					</div>
-				</div>
-				<dl class="trailer-watch__facts">
-					{
-						trailerFacts.map((fact) => (
-							<div>
-								<dt>{fact.label}</dt>
-								<dd>{fact.value}</dd>
-							</div>
-						))
-					}
-				</dl>
-			</section>
+		<article class="trailer-legacy fade-up" style="--item-delay: 0ms;">
+			<p class="trailer-legacy__eyebrow">Trailer integrado a la ficha</p>
+			<h1>El trailer de {movie.title} ahora está en su reseña.</h1>
+			<p>Para reproducirlo y ver la información de la película, seguí a la ficha principal.</p>
+			<a class="page-action page-action--home" href={movieUrl}>Ir a la ficha de {movie.title}</a>
 		</article>
 	</main>
 </BaseLayout>

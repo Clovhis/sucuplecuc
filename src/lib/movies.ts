@@ -1592,8 +1592,4 @@ export function getMoviePath(slug: string): string {
 	return joinWithBase(`peliculas/${slug}/`);
 }
 
-export function getMovieTrailerPath(slug: string): string {
-	return joinWithBase(`trailers/${slug}/`);
-}
-
 export { getMoviePlatformLabel, getMoviePlatforms } from './platforms';

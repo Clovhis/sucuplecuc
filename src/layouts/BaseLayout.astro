@@ -27,6 +27,7 @@ interface Props {
 	structuredData?: Array<Record<string, unknown>>;
 	noindex?: boolean;
 	allowAds?: boolean;
+	canonicalUrl?: string;
 }
 
 const {
@@ -37,10 +38,11 @@ const {
 	structuredData = [],
 	noindex = false,
 	allowAds = true,
+	canonicalUrl,
 } = Astro.props as Props;
-const canonical = Astro.site
+const canonical = canonicalUrl ?? (Astro.site
 	? new URL(Astro.url.pathname, Astro.site).toString()
-	: Astro.url.toString();
+	: Astro.url.toString());
 const assetBase = import.meta.env.BASE_URL;
 const supabaseOrigin = new URL(import.meta.env.PUBLIC_SUPABASE_URL || DEFAULT_SUPABASE_URL).origin;
 const contentSecurityPolicy = [

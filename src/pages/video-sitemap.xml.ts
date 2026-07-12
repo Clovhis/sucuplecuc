@@ -1,16 +1,11 @@
 import type { APIRoute } from 'astro';
-import { getMovieTrailerPath, getMovies, getYoutubeEmbedUrl, getYoutubeThumbnailUrl } from '../lib/movies';
-import { getBestKnownMoviePublicationDate, SITE_URL } from '../lib/seo';
+import { getMoviePath, getMovies, getYoutubeEmbedUrl, getYoutubeThumbnailUrl } from '../lib/movies';
+import { SITE_URL } from '../lib/seo';
 
 export const prerender = true;
 
 function toAbsoluteUrl(pathname: string): string {
 	return new URL(pathname, SITE_URL).toString();
-}
-
-function shouldIncludePublicationDate(value: string): boolean {
-	const year = Number.parseInt(value.slice(0, 4), 10);
-	return Number.isFinite(year) && year >= 1970;
 }
 
 function escapeXml(value: string): string {
@@ -26,21 +21,17 @@ export const GET: APIRoute = () => {
 	const trailerEntries = getMovies()
 		.filter((movie) => String(movie.trailerYoutubeId ?? '').trim().length > 0)
 		.map((movie) => {
-			const watchPageUrl = toAbsoluteUrl(getMovieTrailerPath(movie.slug));
+			const watchPageUrl = toAbsoluteUrl(getMoviePath(movie.slug));
 			const playerUrl = getYoutubeEmbedUrl(movie.trailerYoutubeId);
 			const thumbnailUrl = getYoutubeThumbnailUrl(movie.trailerYoutubeId);
-			const publicationDate = getBestKnownMoviePublicationDate(movie);
-			const publicationDateTag = shouldIncludePublicationDate(publicationDate)
-				? `\n      <video:publication_date>${escapeXml(publicationDate)}</video:publication_date>`
-				: '';
 			const videoTitle = `Trailer oficial de ${movie.title} (${movie.year})`;
-			const videoDescription = `Mirá el trailer oficial de ${movie.title} (${movie.year}) y volvés a la reseña completa en Cine Posta.`;
+			const videoDescription = `Trailer oficial de ${movie.title} (${movie.year}) disponible dentro de su ficha en Cine Posta.`;
 
 			if (!playerUrl || !thumbnailUrl) {
 				return '';
 			}
 
-			return `  <url>\n    <loc>${escapeXml(watchPageUrl)}</loc>\n    <video:video>\n      <video:thumbnail_loc>${escapeXml(thumbnailUrl)}</video:thumbnail_loc>\n      <video:title>${escapeXml(videoTitle)}</video:title>\n      <video:description>${escapeXml(videoDescription)}</video:description>\n      <video:player_loc>${escapeXml(playerUrl)}</video:player_loc>${publicationDateTag}\n      <video:requires_subscription>no</video:requires_subscription>\n    </video:video>\n  </url>`;
+			return `  <url>\n    <loc>${escapeXml(watchPageUrl)}</loc>\n    <video:video>\n      <video:thumbnail_loc>${escapeXml(thumbnailUrl)}</video:thumbnail_loc>\n      <video:title>${escapeXml(videoTitle)}</video:title>\n      <video:description>${escapeXml(videoDescription)}</video:description>\n      <video:player_loc>${escapeXml(playerUrl)}</video:player_loc>\n      <video:requires_subscription>no</video:requires_subscription>\n    </video:video>\n  </url>`;
 		})
 		.filter(Boolean)
 		.join('\n');
