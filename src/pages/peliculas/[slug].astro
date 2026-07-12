@@ -24,6 +24,7 @@ import Lagrimometro from '../../components/Lagrimometro.astro';
 import Jajametro from '../../components/Jajametro.astro';
 import Cagazometro from '../../components/Cagazometro.astro';
 import Explosiometro from '../../components/Explosiometro.astro';
+import PostCreditsInfo from '../../components/PostCreditsInfo.astro';
 import Sangrometro from '../../components/Sangrometro.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getMovieTenSecondTake } from '../../lib/editorialCopy';
@@ -73,6 +74,7 @@ const explosiometroScore =
 	cagazometroScore === undefined
 		? getExplosiometroScore(movie)
 		: undefined;
+const shouldShowPostCreditsInfo = movie.postCreditsScenes !== undefined;
 const currentDate = new Date();
 type PersonDateParts = {
 	year: number;
@@ -505,6 +507,16 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 										<p class="movie-detail__explosiometro-title">Explosiómetro</p>
 									</div>
 									<Explosiometro score={explosiometroScore} />
+								</section>
+							)
+						}
+						{
+							shouldShowPostCreditsInfo && (
+								<section id="post-credits" class="movie-detail__post-credits-card" aria-label="Escenas post-créditos">
+									<div class="movie-detail__post-credits-head">
+										<p class="movie-detail__post-credits-title">Escenas post-créditos</p>
+									</div>
+									<PostCreditsInfo scenes={movie.postCreditsScenes!} />
 								</section>
 							)
 						}

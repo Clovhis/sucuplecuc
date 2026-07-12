@@ -72,6 +72,7 @@ Campos frecuentes:
 - `runtimeMinutes`
 - `screenshots`
 - `trailerYoutubeId`
+- `postCreditsScenes`
 - `editorial`
 - `awards`
 - `country`
@@ -82,6 +83,7 @@ Notas de taxonomía:
 - `category` es el carril principal de la película.
 - `genres` agrupa señales amplias o secundarias.
 - `subgenres` guarda chips editoriales finos y canónicos como `Gore`, `Found Footage`, `Slasher`, `RomCom`, `Body Horror`, `Psicológico`, `Sobrenatural`, `Heist`, `Road Movie`, `Coming of Age`, `Mockumentary` y `Exploitation`.
+- En películas de superhéroes Marvel/DC, `postCreditsScenes` es obligatorio: guarda el total verificado de escenas durante o después de créditos; `0` significa que no hay ninguna. No se permiten valores pendientes o sin confirmar.
 
 ## Scripts útiles
 

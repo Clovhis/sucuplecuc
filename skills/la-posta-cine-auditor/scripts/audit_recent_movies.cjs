@@ -79,6 +79,11 @@ const FORBIDDEN_POSTER_URL_PATTERN =
 	/(?:^https?:\/\/(?:i\.ytimg\.com|img\.youtube\.com)\/|\/vi\/[a-z0-9_-]+\/(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png)|(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png))/i;
 const HORIZONTAL_POSTER_PATH_PATTERN = /\/(?:backdrop|still|screenshot|thumbnail)\//i;
 const MAX_REVIEW_AUDIT_BATCH_SIZE = 100;
+const SUPERHERO_INCLUDE_TOKENS = [
+	'ant-man', 'aquaman', 'avengers', 'batman', 'batgirl', 'batman v superman', 'birds of prey', 'black adam', 'black panther', 'black widow', 'blade', 'blue beetle', 'captain america', 'captain marvel', 'daredevil', 'deadpool', 'doctor strange', 'elektra', 'eternals', 'fantastic four', 'ghost rider', 'green lantern', 'guardians of the galaxy', 'howard the duck', 'hulk', 'iron man', 'justice league', 'kraven', 'madame web', 'man of steel', 'morbius', 'punisher', 'shang-chi', 'shazam', 'spider-man', 'suicide squad', 'supergirl', 'superman', 'the avengers', 'the flash', 'the incredible hulk', 'the marvels', 'thunderbolts', 'thor', 'venom', 'watchmen', 'wolverine', 'wonder woman', 'x-men', 'zack snyders justice league',
+];
+const SUPERHERO_EXCLUDE_TOKENS = ['big hero 6', 'into the spider-verse', 'across the spider-verse', 'spider-verse', 'mario', 'blade runner'];
+const SUPERHERO_INCLUDED_SLUGS = new Set(['catwoman-2004', 'constantine-2005', 'dark-phoenix-2019', 'jonah-hex-2010', 'logan-2017', 'the-dark-knight-2008', 'the-dark-knight-rises-2012', 'the-new-mutants-2020']);
 const RECOMMENDED_LABEL_PATTERNS = [
 	'recomendada',
 	'esta buena',
@@ -859,6 +864,30 @@ function validateShareFields(movie, candidatePath, findings) {
 	}
 }
 
+function isMarvelOrDcSuperheroMovie(movie) {
+	const taxonomyText = normalizeText([movie.category || '', ...cleanTaxonomyList(movie.genres), ...cleanTaxonomyList(movie.subgenres)].join(' '));
+	if (taxonomyText.includes('animacion') || taxonomyText.includes('animation') || taxonomyText.includes('anime')) return false;
+	if (SUPERHERO_INCLUDED_SLUGS.has(movie.slug)) return true;
+	const heroText = normalizeText([movie.slug, movie.title, movie.originalTitle].join(' '));
+	return !SUPERHERO_EXCLUDE_TOKENS.some((token) => heroText.includes(normalizeText(token))) && SUPERHERO_INCLUDE_TOKENS.some((token) => heroText.includes(normalizeText(token)));
+}
+
+function validatePostCredits(movie, candidatePath, findings) {
+	const isSuperheroMovie = isMarvelOrDcSuperheroMovie(movie);
+	const hasField = Object.prototype.hasOwnProperty.call(movie, 'postCreditsScenes');
+	if (!isSuperheroMovie && hasField) {
+		addFinding(findings, 'error', 'post-credits-non-superhero', candidatePath, 'postCreditsScenes is reserved for Marvel/DC superhero movies.');
+		return;
+	}
+	if (isSuperheroMovie && !hasField) {
+		addFinding(findings, 'error', 'missing-post-credits', candidatePath, 'Marvel/DC superhero movies must declare a verified postCreditsScenes count; use 0 when there are no scenes.');
+		return;
+	}
+	if (hasField && (!Number.isInteger(movie.postCreditsScenes) || movie.postCreditsScenes < 0)) {
+		addFinding(findings, 'error', 'invalid-post-credits', candidatePath, 'postCreditsScenes must be a verified non-negative integer; null is not allowed.');
+	}
+}
+
 function validateCommunityBuildRoute(movie, candidatePath, findings) {
 	const slug = typeof movie.slug === 'string' ? movie.slug.trim() : '';
 	if (!slug) return;
@@ -948,6 +977,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	validateSubgenres(movie, candidatePath, findings);
 	validateShareFields(movie, candidatePath, findings);
 	validateMeterEligibility(movie, candidatePath, findings);
+	validatePostCredits(movie, candidatePath, findings);
 
 	const isAnimatedTitle =
 		normalizedCategory === 'anime' || normalizedCategory === 'animacion' || normalizedCategory === 'animación';

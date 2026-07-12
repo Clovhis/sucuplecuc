@@ -179,6 +179,7 @@ Find trustworthy metadata:
 - `director`
 - `mainCast` (ordered by principal billing; for live-action default to 4-5 core performers unless reliable billing clearly supports fewer)
 - `productionCompany`
+- `postCreditsScenes` for Marvel/DC superhero movies: use `0` when there are none, or the verified total when there are scenes during or after credits
 - IMDb profile trace for the credited director and main cast
 - birth year for each credited director and main cast member
 - primary nationality label in Spanish for each credited director and main cast member (for example `Argentino`, `Britanica`, `Mexicano`)
@@ -517,6 +518,15 @@ Rules:
 - After writing the movie file, mentally verify whether `getExplosiometroScore(movie)` should return a score or `undefined`.
 - In final output, include one line: `Explosiómetro: aplica/no aplica` and the reason based on primary `category` plus the mutual-exclusion rule.
 
+## Información de post-créditos (mandatory for Marvel/DC superheroes)
+
+For live-action Marvel and DC superhero movies, the detail page shows an `Escenas post-créditos` information block so viewers know whether to remain through the credits.
+
+- Set `postCreditsScenes` to the verified total number of scenes appearing during or after the credits. Use `0` when there are none.
+- Do not leave the field pending or unconfirmed. Search reliable spoiler-free coverage and/or verify by direct viewing before publishing; `0` is mandatory when there are no scenes.
+- Do not add this field to non-Marvel/DC superhero movies, animation/anime, or unrelated genre titles.
+- Verify the count through trustworthy sources or a direct viewing; include mid-credit and end-credit scenes in the total.
+
 ## Duplicate protection (mandatory)
 
 Before writing, abort if duplicate by:
@@ -699,6 +709,7 @@ Return all of the following:
 16. Jajámetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
 17. Cagazómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
 18. Explosiómetro confirmation: `aplica` or `no aplica`, with primary-category reason and mutual-exclusion status
+19. Post-credit confirmation for Marvel/DC superheroes: exact `postCreditsScenes` value and source; otherwise confirm it does not apply
 
 ## Validation checklist
 
@@ -729,6 +740,7 @@ Return all of the following:
 - [ ] Jajámetro eligibility checked from primary `category`; no manual jajametro field added; never shown together with lagrimómetro
 - [ ] Cagazómetro eligibility checked from primary `category`; no manual cagazometro field added; never shown together with lagrimómetro or jajámetro
 - [ ] Explosiómetro eligibility checked from primary `category`; no manual explosiometro field added; never shown together with lagrimómetro, jajámetro or cagazómetro
+- [ ] Marvel/DC superhero movies declare a verified `postCreditsScenes` (`0` or count); non-superhero movies omit it
 - [ ] `docs/movie-catalog-reference.md` consulted before adding movies
 - [ ] `docs/movie-catalog-reference.md` updated after adding movies (single or bulk)
 - [ ] `docs/person-profile-catalog-reference.md` consulted before locking credited names

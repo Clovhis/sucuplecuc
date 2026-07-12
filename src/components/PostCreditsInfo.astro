@@ -1,0 +1,22 @@
+---
+interface Props {
+	scenes: number;
+}
+
+const { scenes } = Astro.props as Props;
+const hasScenes = scenes > 0;
+const label = hasScenes
+		? `${scenes} ${scenes === 1 ? 'escena' : 'escenas'} post-créditos`
+		: 'No tiene escenas post-créditos';
+const note = hasScenes
+		? 'Quedate hasta que termine todo: hay material después de los créditos.'
+		: 'Podés levantarte tranquilo cuando arranquen los créditos.';
+---
+
+<div class="post-credits-info" data-status={hasScenes ? 'yes' : 'no'}>
+	<div class="post-credits-info__top">
+		<span class="post-credits-info__label">{label}</span>
+		<span class="post-credits-info__icon" aria-hidden="true">{hasScenes ? '🍿' : '🏁'}</span>
+	</div>
+	<p class="post-credits-info__note">{note}</p>
+</div>

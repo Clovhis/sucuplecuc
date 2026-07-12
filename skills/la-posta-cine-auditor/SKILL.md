@@ -104,6 +104,7 @@ The bundled script checks:
 - explicit subgenre carry-over: if a supported site subgenre is detectable in `category` or `genres`, it must also be mirrored deliberately in `subgenres`
 - manual Share/social fields in movie JSON; Share links derive globally from slug/canonical URL and must not live in movie data
 - automatic meter eligibility, matching the movie detail page priority: primary `Drama`/`Romance`/`Romántica` shows Lagrimómetro; if not, primary laugh-first `Comedia` shows Jajámetro; if neither, primary `Terror` shows Cagazómetro; if none of those, primary `Accion`/`Acción` shows Explosiómetro. Secondary genres alone do not trigger any meter, and movie JSON must not include manual meter fields
+- `postCreditsScenes` coverage for live-action Marvel/DC superhero movies: required as `0` or a verified non-negative count; forbidden on unrelated movies
 - raw HTML entities or scrape artifacts accidentally persisted into JSON fields
 - `awards.wins` structure and supported award types
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
@@ -188,6 +189,13 @@ The automatic meter check is mandatory too:
 - apply the same priority as the page: `Drama`/`Romance`/`Romántica` wins first, then laugh-first `Comedia`, then `Terror`, then `Accion`/`Acción`
 - for primary `Drama`, `Romance`, `Romántica`, or `Comedia romántica`, expect only Lagrimómetro; for primary laugh-first `Comedia` with no drama/romance token, expect only Jajámetro; for primary `Terror` with no drama/romance/comedy token, expect only Cagazómetro; for primary `Accion`/`Acción` with no drama/romance/comedy/terror token, expect only Explosiómetro
 - when a meter score seems tonally wrong, verify reception through trustworthy sources such as Rotten Tomatoes, Metacritic, IMDb, reputable critics, or official materials before changing review/category data
+
+The post-credit information check is mandatory too:
+
+- require `postCreditsScenes` on every live-action Marvel/DC superhero movie; `0` explicitly means there are no scenes during or after credits
+- accept only a non-negative integer: `null`, `pending`, and unconfirmed values are invalid; never infer a count from franchise convention
+- reject the field on non-superhero, animation, and anime entries
+- verify a non-zero count with trustworthy evidence or direct viewing before sign-off
 
 The Share field check is mandatory too:
 

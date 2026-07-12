@@ -53,6 +53,8 @@ export interface Movie {
 	poster: string;
 	screenshots?: string[];
 	trailerYoutubeId: string;
+	/** Verified number of mid/post-credit scenes. */
+	postCreditsScenes?: number;
 	releasePlatform?: string;
 	releasePlatforms?: string[];
 	director: string;

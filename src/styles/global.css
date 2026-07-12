@@ -5511,6 +5511,58 @@ img {
 	font-size: 0.94rem;
 }
 
+.movie-detail__post-credits-card {
+	display: grid;
+	gap: 0.8rem;
+	padding: 1rem;
+	border: 1px solid rgba(130, 213, 255, 0.42);
+	border-radius: 12px;
+	background:
+		radial-gradient(circle at 92% 0%, rgba(122, 214, 255, 0.2), transparent 34%),
+		linear-gradient(135deg, rgba(16, 65, 97, 0.84), rgba(8, 18, 36, 0.96));
+	box-shadow: 0 18px 42px rgba(49, 163, 229, 0.18);
+}
+
+.movie-detail__post-credits-head,
+.post-credits-info__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.8rem;
+}
+
+.movie-detail__post-credits-title,
+.post-credits-info__note {
+	margin: 0;
+}
+
+.movie-detail__post-credits-title {
+	color: #fff;
+	font-size: clamp(1.35rem, 3vw, 1.9rem);
+	font-weight: 800;
+}
+
+.post-credits-info__label {
+	color: #effaff;
+	font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+	font-weight: 750;
+}
+
+.post-credits-info__icon {
+	font-size: 1.65rem;
+}
+
+.post-credits-info__note {
+	color: #c7e9fb;
+	font-size: 0.94rem;
+	line-height: 1.4;
+}
+
+.post-credits-info[data-status='no'] .post-credits-info__label {
+	color: #d7e2e8;
+}
+
+
 .movie-detail__platform-value {
 	display: inline-flex;
 	align-items: center;

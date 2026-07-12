@@ -1253,12 +1253,17 @@ const SUPERHERO_EXCLUDE_TOKENS = [
 	'across the spider-verse',
 	'spider-verse',
 	'mario',
+	'blade runner',
 ];
 
 const SUPERHERO_INCLUDED_SLUGS = new Set([
 	'catwoman-2004',
+	'constantine-2005',
 	'dark-phoenix-2019',
+	'jonah-hex-2010',
 	'logan-2017',
+	'the-dark-knight-2008',
+	'the-dark-knight-rises-2012',
 	'the-new-mutants-2020',
 ]);
 
