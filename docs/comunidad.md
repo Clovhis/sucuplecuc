@@ -1,6 +1,6 @@
-# Comunidad: La Sala
+# Comunidad: Foro Cineposta
 
-La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya usa el sitio para los puntajes: no hay proveedor de comentarios, backend nuevo, cuentas visibles ni perfiles públicos.
+Foro Cineposta es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya usa el sitio para los puntajes: no hay proveedor de comentarios, backend nuevo, cuentas visibles ni perfiles públicos.
 
 ## Funcionamiento
 
@@ -39,7 +39,7 @@ La Sala es el foro temporal de Cine Posta. Se ejecuta sobre el Supabase que ya u
 5. Para GitHub Pages, configurá las variables de repositorio `PUBLIC_COMMUNITY_ENABLED=true` y, si corresponde, `PUBLIC_TURNSTILE_SITE_KEY`. El workflow ya las expone al build.
 6. Reiniciá `npm run dev`, abrí una ficha de película y elegí **Abrir discusión**.
 
-Para desactivarlo temporalmente, usá `PUBLIC_COMMUNITY_ENABLED=false` y reconstruí el sitio. La Sala seguirá navegable, pero no inicializará Supabase ni permitirá publicar.
+Para desactivarlo temporalmente, usá `PUBLIC_COMMUNITY_ENABLED=false` y reconstruí el sitio. Foro Cineposta seguirá navegable, pero no inicializará Supabase ni permitirá publicar.
 
 ## Moderación y operación
 

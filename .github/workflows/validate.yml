@@ -1,8 +1,16 @@
-name: Validate content
+name: Validate site
 
 on:
   pull_request:
+  schedule:
+    - cron: '30 5 * * 1'
   workflow_dispatch:
+    inputs:
+      full_e2e:
+        description: Run the full cross-browser Playwright suite
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -27,5 +35,67 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
+
       - name: Validate content and build
         run: npm run validate:content -- --all --astro-check
+
+  e2e-chromium:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build site
+        run: npm run build
+
+      - name: Run Chromium end-to-end tests
+        run: npx playwright test --project=desktop-chromium
+
+  e2e-cross-browser:
+    if: github.event_name == 'schedule' || github.event.inputs.full_e2e == 'true'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium firefox webkit
+
+      - name: Build site
+        run: npm run build
+
+      - name: Run full cross-browser end-to-end suite
+        run: npx playwright test

@@ -9,7 +9,7 @@ async function dismissDonationPrompt(page: Page): Promise<void> {
 }
 
 async function gotoHome(page: Page): Promise<void> {
-  const response = await page.goto('/', { waitUntil: 'networkidle' });
+  const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
   expect(response?.ok()).toBeTruthy();
   await dismissDonationPrompt(page);
 }

@@ -22,7 +22,7 @@ export default defineConfig({
     video: 'retain-on-failure',
   },
   webServer: {
-    command: `npm run preview -- --host 127.0.0.1 --port ${port}`,
+    command: `node ./scripts/preview-e2e.mjs --host 127.0.0.1 --port ${port}`,
     url: baseURL,
     reuseExistingServer,
     timeout: 120_000,

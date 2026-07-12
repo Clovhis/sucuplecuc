@@ -1,0 +1,50 @@
+name: Refresh upcoming releases
+
+on:
+  schedule:
+    - cron: '40 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-upcoming-releases
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh generated upcoming releases
+        run: npm run update-upcoming-releases
+
+      - name: Open refresh pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: chore/refresh-upcoming-releases
+          delete-branch: true
+          commit-message: 'chore: refresh upcoming releases'
+          title: 'chore: refresh upcoming releases'
+          body: |
+            Automated refresh of `src/data/upcomingReleases.generated.ts`.
+            Review the generated content, then merge to publish it reproducibly.
+          add-paths: src/data/upcomingReleases.generated.ts

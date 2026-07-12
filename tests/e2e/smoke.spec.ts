@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test('donation prompt appears once per local day', async ({ page }) => {
-  const response = await page.goto('/', { waitUntil: 'networkidle' });
+  const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
 
   expect(response?.ok()).toBeTruthy();
 
@@ -14,7 +14,7 @@ test('donation prompt appears once per local day', async ({ page }) => {
   await prompt.getByRole('button', { name: /Ahora no, entrar al sitio/i }).click();
   await expect(prompt).not.toBeVisible();
 
-  await page.reload({ waitUntil: 'networkidle' });
+  await page.reload({ waitUntil: 'domcontentloaded' });
   await expect(prompt).not.toBeVisible();
 });
 
@@ -22,7 +22,7 @@ test('home page renders the catalog shell', async ({ page }) => {
   const pageErrors: string[] = [];
   page.on('pageerror', (error) => pageErrors.push(error.message));
 
-  const response = await page.goto('/', { waitUntil: 'networkidle' });
+  const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
 
   expect(response?.ok()).toBeTruthy();
   await expect(page).toHaveTitle(/Cine|Posta/i);
@@ -35,7 +35,7 @@ test('home page renders the catalog shell', async ({ page }) => {
 });
 
 test('movie detail page renders a known title', async ({ page }) => {
-  const response = await page.goto('/peliculas/akira-1988/', { waitUntil: 'networkidle' });
+  const response = await page.goto('/peliculas/akira-1988/', { waitUntil: 'domcontentloaded' });
 
   expect(response?.ok()).toBeTruthy();
   await expect(page.getByRole('heading', { name: /akira/i }).first()).toBeVisible();

@@ -202,6 +202,8 @@ Antes de aplicar cambios de base en producción:
 
 El sitio genera salida estática en `dist/`.
 
+Los próximos estrenos se generan en `src/data/upcomingReleases.generated.ts`. El workflow diario abre un PR cuando la fuente cambia; el deploy publica únicamente el contenido ya versionado en `main`, por lo que la salida es reproducible desde el commit desplegado.
+
 El workflow de publicación actual vive en:
 
 - `.github/workflows/deploy.yml`

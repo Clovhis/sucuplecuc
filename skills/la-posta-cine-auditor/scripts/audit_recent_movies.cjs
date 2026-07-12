@@ -701,7 +701,7 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	if (!primaryShowsJajametro && taxonomyMentionsComedy && !taxonomyMentionsLagrimometro) {
 		addFinding(
 			findings,
-			'warn',
+			'info',
 			'secondary-comedy-meter-hidden',
 			candidatePath,
 			'Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.',
@@ -711,7 +711,7 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	if (!primaryShowsLagrimometro && !primaryShowsJajametro && taxonomyMentionsLagrimometro) {
 		addFinding(
 			findings,
-			'warn',
+			'info',
 			'secondary-tear-meter-hidden',
 			candidatePath,
 			'Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.',
@@ -721,7 +721,7 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	if (!primaryShowsSangrometro && taxonomyText.includes('gore')) {
 		addFinding(
 			findings,
-			'warn',
+			'info',
 			'secondary-gore-meter-hidden',
 			candidatePath,
 			'Gore appears only in secondary taxonomy; Sangrómetro will stay hidden because only primary category "Gore" activates it.',
@@ -731,7 +731,7 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	if (!primaryShowsSangrometro && !primaryShowsCagazometro && taxonomyText.includes('terror')) {
 		addFinding(
 			findings,
-			'warn',
+			'info',
 			'secondary-horror-meter-hidden',
 			candidatePath,
 			'Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category "Terror" activates it.',
@@ -741,7 +741,7 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	if (!primaryShowsExplosiometro && taxonomyText.includes('accion')) {
 		addFinding(
 			findings,
-			'warn',
+			'info',
 			'secondary-action-meter-hidden',
 			candidatePath,
 			'Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.',
@@ -1848,6 +1848,7 @@ async function auditCandidates(args) {
 function printTextReport(report) {
 	const errors = report.findings.filter((finding) => finding.severity === 'error');
 	const warnings = report.findings.filter((finding) => finding.severity === 'warn');
+	const infos = report.findings.filter((finding) => finding.severity === 'info');
 
 	console.log(`Audited ${report.candidates.length} candidate file(s) from ${report.baseRef} against ${report.root}.`);
 	console.log(`Editorial audit: ${report.editorialAudit.message}`);
@@ -1857,7 +1858,9 @@ function printTextReport(report) {
 		return;
 	}
 
-	if (errors.length === 0) {
+	if (errors.length === 0 && warnings.length === 0) {
+		console.log(`Result: PASS WITH INFO (${infos.length} informational finding(s))`);
+	} else if (errors.length === 0) {
 		console.log(`Result: PASS WITH WARNINGS (${warnings.length} warning(s))`);
 	} else {
 		console.log(`Result: FAIL (${errors.length} error(s), ${warnings.length} warning(s))`);

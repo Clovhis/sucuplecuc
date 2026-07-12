@@ -241,7 +241,7 @@ function parseMovieAuditor(repoRoot) {
 		const payload = JSON.parse(result.stdout);
 		const findings = Array.isArray(payload.findings)
 			? payload.findings.map((finding) => ({
-					severity: finding.severity === 'warn' ? 'warn' : 'error',
+					severity: ['error', 'warn', 'info'].includes(finding.severity) ? finding.severity : 'error',
 					source: 'movie-auditor',
 					scope: finding.file || 'batch',
 					code: finding.code || 'movie-auditor',
@@ -510,6 +510,7 @@ function buildReport(args) {
 function printTextReport(report) {
 	const errors = report.findings.filter((finding) => finding.severity === 'error');
 	const warnings = report.findings.filter((finding) => finding.severity === 'warn');
+	const infos = report.findings.filter((finding) => finding.severity === 'info');
 
 	console.log(`Repo: ${report.repo}`);
 	console.log(`Movies audited: ${report.movieCount}`);
@@ -531,7 +532,8 @@ function printTextReport(report) {
 		return;
 	}
 
-	console.log(`Result: ${errors.length > 0 ? 'FAIL' : 'PASS WITH WARNINGS'} (${errors.length} errors, ${warnings.length} warnings)`);
+	const result = errors.length > 0 ? 'FAIL' : warnings.length > 0 ? 'PASS WITH WARNINGS' : 'PASS WITH INFO';
+	console.log(`Result: ${result} (${errors.length} errors, ${warnings.length} warnings, ${infos.length} informational findings)`);
 	for (const finding of report.findings) {
 		console.log(
 			`[${finding.severity.toUpperCase()}] ${finding.source} :: ${finding.scope} :: ${finding.code} :: ${finding.message}`,
