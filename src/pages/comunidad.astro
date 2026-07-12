@@ -23,10 +23,15 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 			<a class="community-page__current-link" href={COMMUNITY_PATH} aria-current="page">Comunidad</a>
 		</nav>
 		<section class="community-page__hero fade-up" style="--item-delay: 0ms;">
-			<p class="community-page__eyebrow">La comunidad de Cine Posta</p>
-			<h1>Foro Cineposta</h1>
-			<p class="community-page__tagline" data-community-banner>Vení a tirar factos sobre esa película que te dejó pensando.</p>
-			<p class="community-page__lead">Una discusión por peli, con gente que también se queda hasta los créditos. Caé con una opinión, una recomendación o una toma polémica.</p>
+			<div class="community-page__hero-content">
+				<p class="community-page__eyebrow">La comunidad de Cine Posta</p>
+				<h1>Foro Cineposta</h1>
+				<p class="community-page__tagline" data-community-banner>Vení a tirar factos sobre esa película que te dejó pensando.</p>
+				<p class="community-page__lead">Una discusión por peli, con gente que también se queda hasta los créditos. Caé con una opinión, una recomendación o una toma polémica.</p>
+			</div>
+			<div class="community-page__hero-illustration" aria-hidden="true">
+				<img src="/images/community/foro-cineposta-comunidad.png" alt="" width="1536" height="1024" decoding="async" fetchpriority="high" />
+			</div>
 		</section>
 		<div class="community-page__content">
 			<section class="community-page__comments fade-up" style="--item-delay: 80ms;" aria-labelledby="conversacion">
