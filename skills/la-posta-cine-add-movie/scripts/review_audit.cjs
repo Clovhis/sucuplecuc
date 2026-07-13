@@ -7,8 +7,9 @@ const DEFAULT_ROOT = 'src/data/movies';
 const MIN_DUPLICATE_SENTENCE_WORDS = 6;
 const MAX_DUPLICATE_SENTENCE_WORDS = 28;
 const MIN_SHARED_SENTENCE_COUNT = 3;
-const MIN_REVIEW_WORDS = 24;
-const MIN_UNDERDEVELOPED_WORDS = 32;
+const MIN_REVIEW_WORDS = 70;
+const MIN_UNDERDEVELOPED_WORDS = 70;
+const MIN_REVIEW_SENTENCES = 2;
 const MIN_DUPLICATE_SENTENCE_LENGTH = 55;
 const GENERATED_REVIEW_MARKERS = [
 	'tiene esta base narrativa',
@@ -436,7 +437,7 @@ function main() {
 
 		if (reviewWords < MIN_REVIEW_WORDS) {
 			errors.push(`short-review :: ${candidatePath} :: ${reviewWords} words is too short for editorial copy`);
-		} else if (reviewWords < MIN_UNDERDEVELOPED_WORDS && sentenceCount < 2) {
+		} else if (reviewWords < MIN_UNDERDEVELOPED_WORDS || sentenceCount < MIN_REVIEW_SENTENCES) {
 			errors.push(`underdeveloped-review :: ${candidatePath} :: ${reviewWords} words and ${sentenceCount} sentence look too thin`);
 		}
 

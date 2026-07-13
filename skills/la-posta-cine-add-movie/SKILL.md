@@ -547,6 +547,8 @@ Do not overwrite existing entries without explicit user authorization.
 
 Write `review` by combining user feedback + external review enrichment:
 
+- Minimum editorial floor: 70 palabras y al menos dos oraciones completas. La reseña tiene que explicar qué propone la película, cómo funcionan dirección, actuaciones, ritmo y tono, qué acierta o falla, y para quién vale la pena.
+
 - Castellano rioplatense
 - Escritura 100% manual, hecha en el momento por la IA para esa película puntual
 - Honest, colloquial tone

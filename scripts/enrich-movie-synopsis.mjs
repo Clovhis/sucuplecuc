@@ -925,6 +925,9 @@ function isAcceptableSynopsis(value, review = '') {
 	if (synopsis.length < 45) {
 		return false;
 	}
+	if (synopsis.split(/\s+/).filter(Boolean).length < 25) {
+		return false;
+	}
 	if (/\b(?:Dr|Dra|Mr|Mrs|Ms|Sr|Sra|Prof)\.$/.test(synopsis)) {
 		return false;
 	}

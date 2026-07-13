@@ -3,14 +3,23 @@ import { join } from 'node:path';
 
 const MOVIE_DIR = 'src/data/movies';
 const MIN_REVIEW_WORDS = 70;
+const MIN_REVIEW_SENTENCES = 2;
 const MIN_SYNOPSIS_WORDS = 25;
 const MAX_EXAMPLES = 30;
+const FULL_OUTPUT = process.argv.includes('--full');
 const referenceDate = new Date();
 
 function wordCount(value) {
 	return String(value ?? '')
 		.trim()
 		.split(/\s+/)
+		.filter(Boolean).length;
+}
+
+function sentenceCount(value) {
+	return String(value ?? '')
+		.split(/[\n\r]+|(?<=[.!?])\s+/)
+		.map((sentence) => sentence.trim())
 		.filter(Boolean).length;
 }
 
@@ -63,6 +72,7 @@ const movies = movieFiles.map((fileName) => {
 		title: movie.title,
 		released: isReleased(movie),
 		reviewWords: wordCount(movie.review),
+		reviewSentences: sentenceCount(movie.review),
 		synopsisWords: wordCount(movie.synopsis),
 		cutOffSynopsis: hasCutOffSynopsis(movie.synopsis),
 		reviewRepeatsSynopsis: normalize(movie.review).includes(normalize(movie.synopsis)),
@@ -73,8 +83,16 @@ const movies = movieFiles.map((fileName) => {
 
 const releasedMovies = movies.filter((movie) => movie.released);
 const shortReviews = releasedMovies
-	.filter((movie) => movie.reviewWords < MIN_REVIEW_WORDS)
-	.sort((left, right) => left.reviewWords - right.reviewWords || left.slug.localeCompare(right.slug));
+	.filter(
+		(movie) =>
+			movie.reviewWords < MIN_REVIEW_WORDS || movie.reviewSentences < MIN_REVIEW_SENTENCES,
+	)
+	.sort(
+		(left, right) =>
+			left.reviewWords - right.reviewWords ||
+			left.reviewSentences - right.reviewSentences ||
+			left.slug.localeCompare(right.slug),
+	);
 const weakSynopses = releasedMovies
 	.filter((movie) => movie.synopsisWords < MIN_SYNOPSIS_WORDS || movie.cutOffSynopsis || movie.reviewRepeatsSynopsis)
 	.sort((left, right) => left.synopsisWords - right.synopsisWords || left.slug.localeCompare(right.slug));
@@ -88,13 +106,27 @@ const report = {
 	synopsisWords: summarizeWords(releasedMovies.map((movie) => movie.synopsisWords)),
 	shortReviews: {
 		thresholdWords: MIN_REVIEW_WORDS,
+		minimumSentences: MIN_REVIEW_SENTENCES,
+		note: 'Una reseña editorial debe desarrollar una postura; menos de 70 palabras o menos de dos oraciones requiere reescritura manual.',
 		count: shortReviews.length,
 		examples: shortReviews.slice(0, MAX_EXAMPLES).map((movie) => ({
 			slug: movie.slug,
 			title: movie.title,
 			words: movie.reviewWords,
+			sentences: movie.reviewSentences,
 			filePath: movie.filePath,
 		})),
+		...(FULL_OUTPUT
+			? {
+				all: shortReviews.map((movie) => ({
+					slug: movie.slug,
+					title: movie.title,
+					words: movie.reviewWords,
+					sentences: movie.reviewSentences,
+					filePath: movie.filePath,
+				})),
+			}
+			: {}),
 	},
 	weakSynopses: {
 		count: weakSynopses.length,
