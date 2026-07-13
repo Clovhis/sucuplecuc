@@ -27,6 +27,12 @@ export interface PersonAwardHighlight {
 	year?: number;
 }
 
+/**
+ * `approved` is reserved for copy written and manually reviewed by Cine Posta.
+ * Legacy/imported biographies must never be promoted by word count alone.
+ */
+export type PersonEditorialStatus = 'approved' | 'pending' | 'informational';
+
 export interface PersonProfileRecord {
 	slug: string;
 	name: string;
@@ -35,7 +41,14 @@ export interface PersonProfileRecord {
 	roles: string[];
 	birthPlace?: string;
 	spotlight: string;
+	/**
+	 * Historical/imported material retained for editorial reference only. It is
+	 * deliberately not a public-content field.
+	 */
 	biography: string[];
+	/** Original, manually approved Cine Posta biography eligible for public render. */
+	editorialBiography?: string[];
+	editorialStatus?: PersonEditorialStatus;
 	stats?: PersonStat[];
 	awards: PersonAwardHighlight[];
 	knownFor: string[];

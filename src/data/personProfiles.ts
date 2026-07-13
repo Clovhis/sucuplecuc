@@ -1,4 +1,78 @@
 import type { PersonProfileRecord } from '../types/person';
+import peopleCatalog from './people.json' with { type: 'json' };
+import { researchedEditorialBiographies } from './editorialPersonBiographies.ts';
+import { researchedEditorialBiographiesWave2A } from './editorialPersonBiographiesWave2A.ts';
+import { researchedEditorialBiographiesWave2B } from './editorialPersonBiographiesWave2B.ts';
+import { researchedEditorialBiographiesWave2C } from './editorialPersonBiographiesWave2C.ts';
+import { researchedEditorialBiographiesWave3A } from './editorialPersonBiographiesWave3A.ts';
+import { researchedEditorialBiographiesWave3B } from './editorialPersonBiographiesWave3B.ts';
+import { researchedEditorialBiographiesWave3C } from './editorialPersonBiographiesWave3C.ts';
+import { researchedEditorialBiographiesWave4A } from './editorialPersonBiographiesWave4A.ts';
+import { researchedEditorialBiographiesWave4B } from './editorialPersonBiographiesWave4B.ts';
+import { researchedEditorialBiographiesWave4C } from './editorialPersonBiographiesWave4C.ts';
+import { researchedEditorialBiographiesWave5A } from './editorialPersonBiographiesWave5A.ts';
+import { researchedEditorialBiographiesWave5B } from './editorialPersonBiographiesWave5B.ts';
+import { researchedEditorialBiographiesWave5C } from './editorialPersonBiographiesWave5C.ts';
+import { researchedEditorialBiographiesWave6A } from './editorialPersonBiographiesWave6A.ts';
+import { researchedEditorialBiographiesWave6B } from './editorialPersonBiographiesWave6B.ts';
+import { researchedEditorialBiographiesWave6C } from './editorialPersonBiographiesWave6C.ts';
+import { researchedEditorialBiographiesWave7A } from './editorialPersonBiographiesWave7A.ts';
+import { researchedEditorialBiographiesWave7B } from './editorialPersonBiographiesWave7B.ts';
+import { researchedEditorialBiographiesWave7C } from './editorialPersonBiographiesWave7C.ts';
+import { researchedEditorialBiographiesWave8A } from './editorialPersonBiographiesWave8A.ts';
+import { researchedEditorialBiographiesWave8B } from './editorialPersonBiographiesWave8B.ts';
+import { researchedEditorialBiographiesWave8C } from './editorialPersonBiographiesWave8C.ts';
+import { researchedEditorialBiographiesWave9A } from './editorialPersonBiographiesWave9A.ts';
+import { researchedEditorialBiographiesWave9B } from './editorialPersonBiographiesWave9B.ts';
+import { researchedEditorialBiographiesWave9C } from './editorialPersonBiographiesWave9C.ts';
+import { researchedEditorialBiographiesWave10A } from './editorialPersonBiographiesWave10A.ts';
+import { researchedEditorialBiographiesWave10B } from './editorialPersonBiographiesWave10B.ts';
+import { researchedEditorialBiographiesWave10C } from './editorialPersonBiographiesWave10C.ts';
+import { researchedEditorialBiographiesWave11A } from './editorialPersonBiographiesWave11A.ts';
+import { researchedEditorialBiographiesWave11B } from './editorialPersonBiographiesWave11B.ts';
+import { researchedEditorialBiographiesWave11C } from './editorialPersonBiographiesWave11C.ts';
+import { researchedEditorialBiographiesWave12A } from './editorialPersonBiographiesWave12A.ts';
+import { researchedEditorialBiographiesWave12B } from './editorialPersonBiographiesWave12B.ts';
+import { researchedEditorialBiographiesWave12C } from './editorialPersonBiographiesWave12C.ts';
+import { researchedEditorialFinalCorrections } from './editorialFinalCorrections.ts';
+
+const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
+	...researchedEditorialBiographies,
+	...researchedEditorialBiographiesWave2A,
+	...researchedEditorialBiographiesWave2B,
+	...researchedEditorialBiographiesWave2C,
+	...researchedEditorialBiographiesWave3A,
+	...researchedEditorialBiographiesWave3B,
+	...researchedEditorialBiographiesWave3C,
+	...researchedEditorialBiographiesWave4A,
+	...researchedEditorialBiographiesWave4B,
+	...researchedEditorialBiographiesWave4C,
+	...researchedEditorialBiographiesWave5A,
+	...researchedEditorialBiographiesWave5B,
+	...researchedEditorialBiographiesWave5C,
+	...researchedEditorialBiographiesWave6A,
+	...researchedEditorialBiographiesWave6B,
+	...researchedEditorialBiographiesWave6C,
+	...researchedEditorialBiographiesWave7A,
+	...researchedEditorialBiographiesWave7B,
+	...researchedEditorialBiographiesWave7C,
+	...researchedEditorialBiographiesWave8A,
+	...researchedEditorialBiographiesWave8B,
+	...researchedEditorialBiographiesWave8C,
+	...researchedEditorialBiographiesWave9A,
+	...researchedEditorialBiographiesWave9B,
+	...researchedEditorialBiographiesWave9C,
+	...researchedEditorialBiographiesWave10A,
+	...researchedEditorialBiographiesWave10B,
+	...researchedEditorialBiographiesWave10C,
+	...researchedEditorialBiographiesWave11A,
+	...researchedEditorialBiographiesWave11B,
+	...researchedEditorialBiographiesWave11C,
+	...researchedEditorialBiographiesWave12A,
+	...researchedEditorialBiographiesWave12B,
+	...researchedEditorialBiographiesWave12C,
+	...researchedEditorialFinalCorrections,
+};
 
 type ProfileDefaults = {
 	roles: PersonProfileRecord['roles'];
@@ -1097,6 +1171,8 @@ function buildBulkProfile(defaults: ProfileDefaults, seed: ProfileSeed): PersonP
 		roles: defaults.roles,
 		spotlight: seed.spotlight ?? 'Figura conectada al catalogo editorial actual de Cine Posta.',
 		biography: seed.biography ?? [],
+		editorialBiography: seed.editorialBiography ?? [],
+		editorialStatus: seed.editorialStatus ?? 'pending',
 		stats: defaults.stats.map((stat) => ({ ...stat })),
 		referenceUrls: mergeReferenceUrls(seed.referenceUrls, fallbackReferenceUrls),
 	};
@@ -1136,6 +1212,8 @@ function buildCatalogBackedProfile(defaults: ProfileDefaults, seed: ProfileSeed)
 		roles: defaults.roles,
 		spotlight,
 		biography: seed.biography ?? [],
+		editorialBiography: seed.editorialBiography ?? [],
+		editorialStatus: seed.editorialStatus ?? 'pending',
 		stats: defaults.stats.map((stat) => ({ ...stat })),
 		referenceUrls: mergeReferenceUrls(
 			seed.referenceUrls,
@@ -1235,6 +1313,56 @@ function buildCatalogBiography(profile: PersonProfileRecord): string[] {
 const minimumBiographyParagraphs = 3;
 const minimumBiographyCharacters = 2508;
 
+function getDraftHash(value: string): number {
+	return Array.from(value).reduce((hash, character) => ((hash * 31) + character.charCodeAt(0)) >>> 0, 7);
+}
+
+function formatDeathLine(name: string): string | undefined {
+	const person = (peopleCatalog as Record<string, { deathDate?: string; deathYear?: number }>)[name];
+	if (!person?.deathDate && !person?.deathYear) return undefined;
+	if (!person.deathDate) return `Murió en ${person.deathYear}.`;
+
+	const [year, month, day] = person.deathDate.split('-').map(Number);
+	const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+	return year && month && day ? `Murió el ${day} de ${months[month - 1]} de ${year}.` : `Murió en ${person.deathYear ?? year}.`;
+}
+
+function buildEditorialDraft(profile: PersonProfileRecord): string[] {
+	const hash = getDraftHash(profile.slug);
+	const role = profile.roles.join(', ').toLowerCase();
+	const origin = profile.birthPlace ? `Nació en ${profile.birthPlace}. ` : '';
+	const knownFor = formatKnownForList(profile.knownFor);
+	const knownForVerb = profile.knownFor.length === 1 ? 'sirve' : 'sirven';
+	const pronoun = profile.roles.some((entry) => entry.toLowerCase() === 'actriz') ? 'la' : 'lo';
+	const deathLine = formatDeathLine(profile.name);
+	const verb = deathLine ? 'trabajó' : 'trabaja';
+	const identityVerb = deathLine ? 'fue' : 'es';
+	const award = profile.awards[0];
+	const awardFact = award
+		? `${award.label}${award.category ? `: ${award.category}` : ''}${award.work ? ` por ${award.work}` : ''}${award.year ? ` (${award.year})` : ''}`
+		: 'sus créditos destacados';
+	const opening = [
+		`${origin}${profile.name} ${verb} como ${role}. ${profile.headline}`,
+		`${profile.name} ${identityVerb} ${role}.${profile.birthPlace ? ` Su origen está en ${profile.birthPlace}.` : ''} ${profile.headline}`,
+		`${origin}La trayectoria de ${profile.name} reúne trabajo como ${role}. ${profile.headline}`,
+		`${profile.name} construyó una carrera como ${role}.${profile.birthPlace ? ` Nació en ${profile.birthPlace}.` : ''} ${profile.headline}`,
+	][hash % 4];
+	const titleSentence = [
+		`Dentro del catálogo, ${knownFor} ${knownForVerb} para ubicar los títulos que mejor recortan ese recorrido.`,
+		`El catálogo de Cine Posta ${pronoun} conecta especialmente con ${knownFor}, una selección concreta antes que una filmografía interminable.`,
+		`Para seguir esa línea de trabajo, la ficha enlaza ${knownFor}, películas que muestran distintos momentos de su recorrido.`,
+		`Las películas conectadas —${knownFor}— ofrecen una entrada directa a la parte de su carrera que el sitio puede documentar.`,
+	][Math.floor(hash / 5) % 4];
+	const closing = [
+		`${profile.spotlight} Entre los reconocimientos que la ficha registra figura ${awardFact}.`,
+		`${profile.spotlight} Un dato verificable para leer esa trayectoria es ${awardFact}.`,
+		`${profile.spotlight} La ficha destaca ${awardFact}, sin convertir el perfil en una lista de premios.`,
+		`${profile.spotlight} También queda señalado ${awardFact}, como referencia puntual del reconocimiento obtenido.`,
+	][Math.floor(hash / 23) % 4];
+	const individualClosing = closing.startsWith(profile.name) ? closing : `${profile.name}: ${closing}`;
+	return [`${opening} ${titleSentence}`, [individualClosing, deathLine].filter(Boolean).join(' ')];
+}
+
 function ensureBiographyDepth(profile: PersonProfileRecord): PersonProfileRecord {
 	const biography = normalizeBiographyParagraphs(profile.biography);
 	const biographyLength = biography.join(' ').length;
@@ -1243,6 +1371,8 @@ function ensureBiographyDepth(profile: PersonProfileRecord): PersonProfileRecord
 		return {
 			...profile,
 			biography,
+			editorialBiography: profile.editorialBiography?.length ? profile.editorialBiography : buildEditorialDraft(profile),
+			editorialStatus: profile.editorialStatus ?? 'approved',
 		};
 	}
 
@@ -1258,6 +1388,8 @@ function ensureBiographyDepth(profile: PersonProfileRecord): PersonProfileRecord
 	return {
 		...profile,
 		biography: expandedBiography,
+		editorialBiography: profile.editorialBiography?.length ? profile.editorialBiography : buildEditorialDraft(profile),
+		editorialStatus: profile.editorialStatus ?? 'approved',
 	};
 }
 
@@ -1265,6 +1397,10 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 	/* __PERSON_PROFILE_EDITORIAL_OVERRIDES_START__ */
 	'aaron-taylor-johnson': {
 		birthPlace: 'High Wycombe, Buckinghamshire, Inglaterra',
+		editorialBiography: [
+			'Aaron Taylor-Johnson nació en High Wycombe, Inglaterra, y empezó a actuar de chico. El salto que lo volvió visible llegó con Nowhere Boy: interpretar al joven John Lennon le exigió trabajar voz, gestos y presencia, y lo sacó del circuito de promesa británica para ponerlo frente a una audiencia internacional.',
+			'Después eligió no quedar pegado a una sola fórmula. Kick-Ass lo llevó al cine de acción con humor desfachatado; Avengers: Age of Ultron lo metió en una franquicia global, y Nocturnal Animals mostró un costado más áspero que le valió un Globo de Oro. Esa mezcla de riesgo físico, personajes raros y producciones grandes explica una carrera menos previsible de lo que parece.',
+		],
 		biography: [
 			'Aaron Perry Taylor-Johnson (High Wycombe, Buckinghamshire, Inglaterra, 13 de junio de 1990) es un actor, guionista y productor británico. Es más conocido por su interpretación del personaje Dave Lizewski / Kick-Ass en la película homónima Kick-Ass (2010) y su secuela Kick-Ass 2 (2013), y del personaje Pietro Maximoff / Quicksilver en Vengadores: La era de Ultrón (2015).',
 			'Johnson comenzó a actuar de niño y apareció en películas como Shanghai Knights (2003), El ilusionista (2006) y Angus, tangas y besos perfectos (2008).',
@@ -7627,6 +7763,7 @@ function applyPersonProfileEditorialOverrides(
 		Object.entries(profiles).map(([slug, profile]) => {
 			const override = personProfileEditorialOverrides[slug];
 			const wikipediaOverride = wikipediaBiographyOverrides[slug];
+			const researchedEditorialBiography = researchedEditorialBiographyBySlug[slug];
 			const mergedProfile = override
 				? {
 						...profile,
@@ -7639,12 +7776,20 @@ function applyPersonProfileEditorialOverrides(
 				slug,
 				ensureBiographyDepth({
 					...mergedProfile,
+					...(researchedEditorialBiography
+						? {
+							editorialBiography: researchedEditorialBiography.editorialBiography,
+							referenceUrls: researchedEditorialBiography.referenceUrls,
+						}
+						: {}),
 					...(wikipediaOverride
 						? {
 								biography: wikipediaOverride.biography,
-								referenceUrls: mergeReferenceUrls(wikipediaOverride.referenceUrls, mergedProfile.referenceUrls),
+								referenceUrls: mergeReferenceUrls(wikipediaOverride.referenceUrls, researchedEditorialBiography?.referenceUrls ?? mergedProfile.referenceUrls),
 							}
 						: {}),
+					editorialBiography: researchedEditorialBiography?.editorialBiography ?? mergedProfile.editorialBiography ?? [],
+					editorialStatus: mergedProfile.editorialStatus ?? 'approved',
 				}),
 			];
 		}),
@@ -9743,6 +9888,10 @@ const bulkTrendProfiles = {
 			headline: 'Una de las presencias más firmes y sofisticadas del cine argentino, con enorme autoridad para sostener personajes complejos.',
 			spotlight:
 				'Su fuerza está en la precisión: puede endurecer una escena con una mirada o volverla íntima sin necesidad de subrayar nada.',
+			editorialBiography: [
+				'Mercedes Morán nació en Concarán, San Luis. Mientras estudiaba sociología, se anotó en un taller de actuación de Lito Cruz; esa decisión abrió un recorrido que la llevó por el teatro, la televisión y el cine argentino sin quedar atada a un único tipo de personaje. Su modo de actuar no busca llamar la atención: trabaja con silencios, cambios de tono y una observación muy filosa.',
+				'En Luna de Avellaneda encontró uno de sus papeles más populares y ganó el Premio Sur a mejor actriz. Después sostuvo registros muy distintos en La ciénaga, Betibú y El Ángel, siempre con una mezcla de cercanía y distancia que evita el subrayado. Esa elasticidad explica por qué puede entrar en un drama familiar, un policial o una comedia sin que su presencia se vuelva automática.',
+			],
 			biography: [
 				'Mercedes Morán construyó una carrera admirable porque nunca dependió de una sola imagen pública. Supo circular por televisión, cine y teatro con la misma autoridad, pero en el cine argentino encontró un espacio especialmente fértil para desplegar matiz, ironía y densidad afectiva.',
 				'Es una actriz decisiva para entender el puente entre generaciones: puede dialogar con el nuevo cine argentino, con dramas más clásicos o con relatos corales sin perder centro propio. Esa elasticidad la volvió una pieza de enorme valor para distintas etapas del cine nacional.',
@@ -11837,6 +11986,10 @@ const bulkRequestedProfiles = {
 			birthPlace: 'Leytonstone, Essex, Inglaterra',
 			spotlight:
 				'Convirtio el suspenso en una forma de puesta en escena mas que en un simple genero, y esa influencia sigue viva en casi todo thriller moderno.',
+			editorialBiography: [
+				'Alfred Hitchcock nació en Leytonstone, Inglaterra, y entró al cine británico durante la era muda. Su trabajo de los años veinte y treinta lo llevó de los oficios técnicos a la dirección; The Lodger fue el primer aviso de una obsesión que después perfeccionó: decidir qué sabe el espectador y cuándo conviene hacerlo sufrir con esa ventaja.',
+				'En 1939 se instaló en Estados Unidos y Rebecca abrió su etapa hollywoodense. Después llegaron Rear Window, Vertigo, North by Northwest y Psycho, donde el suspenso sale menos del golpe de efecto que del encuadre, el montaje y la espera. Murió el 29 de abril de 1980. La Academia lo distinguió con el Irving G. Thalberg Memorial Award en 1967.',
+			],
 			biography: [
 				'Alfred Hitchcock nacio el 13 de agosto de 1899 en Leytonstone y empezo a trabajar en la industria britanica del cine mudo antes de afirmarse como director en los anos treinta. Ya desde esa etapa quedo claro que pensaba las peliculas desde el punto de vista, la informacion y la manera de administrar el miedo cuadro a cuadro.',
 				'Cuando se traslado a Hollywood llevo esa precision a otro nivel con Rebecca, Shadow of a Doubt, Rear Window, Vertigo, North by Northwest y Psycho. No necesitaba explosiones ni grandilocuencia: le alcanzaba con un encuadre, una escalera o una puerta para instalar paranoia. Por eso sigue siendo una referencia obligatoria mas de medio siglo despues de su ultima gran etapa.',
@@ -12197,6 +12350,10 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 		birthPlace: 'Manhattan, Nueva York, Estados Unidos',
 		spotlight:
 			'Su alianza con Martin Scorsese redefinió el criminal moderno en pantalla y dejó una escuela entera de actuación.',
+		editorialBiography: [
+			'Robert De Niro nació en Manhattan y se formó como actor en Nueva York antes de encontrar en el cine una presencia muy distinta a la del galán clásico: contenida, física y capaz de volverse inquietante sin levantar la voz. Su despegue llegó con Mean Streets; la sociedad con Martin Scorsese terminó de convertirlo en una figura central del cine norteamericano de los setenta.',
+			'Taxi Driver, Raging Bull y Goodfellas muestran cómo trabaja la tensión desde adentro, mientras The Godfather Part II y The Deer Hunter prueban que su registro nunca quedó encerrado en un solo género. Ganó dos Oscars por The Godfather Part II y Raging Bull. Fuera del set, cofundó Tribeca, un proyecto que también empujó la recuperación cultural del bajo Manhattan.',
+		],
 		biography: [
 			'Robert De Niro nació el 17 de agosto de 1943 en Nueva York y se formó dentro de una tradición actoral profundamente ligada al trabajo de observación y composición. Desde muy temprano mostró una capacidad rarísima para desaparecer dentro del personaje.',
 			'Con Mean Streets, Taxi Driver, Raging Bull y Goodfellas quedó asociado para siempre al cine de Scorsese, pero su filmografía es mucho más amplia. También fue central en The Godfather Part II, The Deer Hunter, Heat, Jackie Brown y una buena parte del cine criminal de prestigio.',
@@ -12419,6 +12576,10 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 		birthPlace: 'Summit, Nueva Jersey, Estados Unidos',
 		spotlight:
 			'Puede cambiar acento, registro, edad o tono sin que se note el esfuerzo: su versatilidad quedó como estándar para varias generaciones.',
+		editorialBiography: [
+			'Meryl Streep nació en Summit, Nueva Jersey, estudió en Vassar y completó un MFA en Yale antes de afirmarse en los escenarios neoyorquinos. Su salto fue rapidísimo: debutó en Broadway, ganó un Emmy por Holocaust y recibió una nominación al Oscar por The Deer Hunter dentro de los primeros años de su carrera profesional.',
+			'Kramer vs. Kramer, Sophie’s Choice y The Iron Lady le dieron sus tres Oscars, pero su recorrido se sostiene también en la comedia, el musical y el cine popular: The Devil Wears Prada es un buen ejemplo. Lo distintivo no es sólo el cambio de acento o de apariencia; sabe encontrar la lógica íntima de personajes muy distintos sin convertir la técnica en exhibición.',
+		],
 		biography: [
 			'Meryl Streep nació el 22 de junio de 1949 en Nueva Jersey y pasó del teatro y la formación clásica al cine con una facilidad asombrosa. Ya desde sus primeros trabajos se percibía una combinación infrecuente de inteligencia técnica y emoción limpia.',
 			'Kramer vs. Kramer, Sophie’s Choice, Out of Africa, The Devil Wears Prada, Doubt y The Iron Lady forman apenas una parte de una carrera larguísima y casi siempre al máximo nivel. Streep no se repite tanto como parece: más bien adapta su instrumento al material con una precisión quirúrgica.',

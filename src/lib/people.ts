@@ -6,6 +6,7 @@ import type {
 	MoviePeopleGroups,
 	MoviePersonCredit,
 	PersonContributionRole,
+	PersonEditorialStatus,
 	PersonFilmographyEntry,
 	PersonProfile,
 	PersonRecord,
@@ -180,6 +181,21 @@ export function getPersonProfileBySlug(slug: string): PersonProfile | undefined 
 	};
 }
 
+export function getPersonEditorialStatus(
+	profile: Pick<PersonProfile, 'editorialStatus'>,
+): PersonEditorialStatus {
+	return profile.editorialStatus ?? 'pending';
+}
+
+export function isPersonProfileIndexable(
+	profile: Pick<PersonProfile, 'editorialStatus' | 'editorialBiography'>,
+): boolean {
+	return (
+		getPersonEditorialStatus(profile) === 'approved' &&
+		(profile.editorialBiography ?? []).some((paragraph) => paragraph.trim().length > 0)
+	);
+}
+
 export function getPersonProfiles(): PersonProfile[] {
 	return Object.keys(personProfiles)
 		.map((slug) => getPersonProfileBySlug(slug))
@@ -313,7 +329,6 @@ export function getPersonSearchEntries(): PersonSearchEntry[] {
 					profile.headline,
 					profile.roles.join(' '),
 					profile.birthPlace ?? '',
-					profile.biography.join(' '),
 					knownFor,
 				].join(' '),
 			),

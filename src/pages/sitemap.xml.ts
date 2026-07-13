@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { stat } from 'node:fs/promises';
 import { getMoviePath, getMovies } from '../lib/movies';
-import { getPersonPath, getPersonProfiles } from '../lib/people';
+import { getPersonPath, getPersonProfiles, isPersonProfileIndexable } from '../lib/people';
 import { ABOUT_PATH, COMMUNITY_PATH, PEOPLE_PATH, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_URL } from '../lib/seo';
 
 export const prerender = true;
@@ -34,7 +34,7 @@ async function getFileLastMod(pathname: string): Promise<string | undefined> {
 
 export const GET: APIRoute = async () => {
 	const movies = getMovies();
-	const people = getPersonProfiles();
+	const people = getPersonProfiles().filter(isPersonProfileIndexable);
 	const movieEntries = await Promise.all(
 		movies.map(async (movie) => ({
 			pathname: getMoviePath(movie.slug),

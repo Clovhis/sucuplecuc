@@ -86,6 +86,10 @@ function createBreadcrumbListItem(position: number, name: string, itemUrl: strin
 	};
 }
 
+function uniqueUrls(values: Array<string | undefined>): string[] {
+	return Array.from(new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value))));
+}
+
 function getReviewRatingValue(verdict: MovieVerdict): number {
 	switch (verdict) {
 		case 'recomendada':
@@ -422,12 +426,13 @@ export function createPersonStructuredData(
 						name: person.birthPlace,
 					}
 				: undefined,
-			sameAs: [person.imdbUrl, ...(person.referenceUrls ?? [])].filter(Boolean),
+			// Reference URLs are citations, not claims that the person controls those pages.
+			sameAs: uniqueUrls([person.imdbUrl]),
 			knowsAbout: filmography.slice(0, 6).map((movie) => movie.title),
 		},
 		{
 			'@context': 'https://schema.org',
-			'@type': 'ProfilePage',
+			'@type': 'WebPage',
 			'@id': `${personUrl}#webpage`,
 			url: personUrl,
 			name: pageTitle,
@@ -449,7 +454,8 @@ export function createPersonStructuredData(
 			'@id': `${personUrl}#breadcrumb`,
 			itemListElement: [
 				createBreadcrumbListItem(1, SITE_NAME, `${SITE_URL}/`),
-				createBreadcrumbListItem(2, person.name, personUrl),
+				createBreadcrumbListItem(2, 'Personas', asAbsoluteUrl(PEOPLE_PATH)),
+				createBreadcrumbListItem(3, person.name, personUrl),
 			],
 		},
 	];

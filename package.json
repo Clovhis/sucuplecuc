@@ -21,6 +21,8 @@
     "audit:movies:recent": "node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref main --recent --skip-youtube",
     "audit:movies:all": "node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --all --skip-youtube",
     "audit:profiles": "node ./skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --all",
+
+    "audit:profile-originality": "node --experimental-strip-types ./scripts/validate-person-profile-originality.mjs",
     "validate:content": "node ./scripts/validate-content.mjs",
     "validate:public-output": "node ./scripts/validate-public-output.mjs",
     "playwright:install": "playwright install chromium firefox webkit",

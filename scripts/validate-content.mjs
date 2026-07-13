@@ -155,6 +155,7 @@ function main() {
 
 	run('npm', ['run', 'catalog:movies:check']);
 	run('npm', ['run', 'audit:editorial-low-value']);
+	run('npm', ['run', 'audit:profile-originality']);
 
 	if (args.all) {
 		run('npm', ['run', 'audit:movies:all']);
@@ -185,6 +186,7 @@ function main() {
 
 	if (args.build) {
 		run('npm', ['run', 'build']);
+		run('npm', ['run', 'audit:profile-originality', '--', '--require-dist']);
 		run('npm', ['run', 'validate:public-output']);
 	}
 }

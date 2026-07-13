@@ -7637,6 +7637,19 @@ img {
 	font-size: 0.98rem;
 }
 
+.person-page__source-list {
+	margin: 0;
+	padding-left: 1.1rem;
+	display: grid;
+	gap: 0.55rem;
+}
+
+.person-page__source-list a {
+	color: var(--accent, #f7c948);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+}
+
 .person-page__context-copy {
 	display: grid;
 	gap: 0.65rem;

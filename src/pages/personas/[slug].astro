@@ -4,7 +4,13 @@ import AwardMark from '../../components/AwardMark.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAwardVisualKey } from '../../lib/awards';
 import { getPersonEditorialBlocks } from '../../lib/editorialCopy';
-import { getPersonFilmography, getPersonProfileBySlug, getPersonProfiles } from '../../lib/people';
+import {
+	getPersonEditorialStatus,
+	getPersonFilmography,
+	getPersonProfileBySlug,
+	getPersonProfiles,
+	isPersonProfileIndexable,
+} from '../../lib/people';
 import { PEOPLE_PATH, createPersonStructuredData } from '../../lib/seo';
 
 export const getStaticPaths: GetStaticPaths = () => {
@@ -18,13 +24,19 @@ const { profile } = Astro.props as {
 	profile: NonNullable<ReturnType<typeof getPersonProfileBySlug>>;
 };
 const filmography = getPersonFilmography(profile.name);
-const personEditorialBlocks = getPersonEditorialBlocks(profile, filmography);
+const editorialStatus = getPersonEditorialStatus(profile);
+const isIndexable = isPersonProfileIndexable(profile);
+const personEditorialBlocks = isIndexable ? getPersonEditorialBlocks(profile, filmography) : [];
 const knownForEntries = profile.knownFor
 	.map((slug) => filmography.find((entry) => entry.movieSlug === slug))
 	.filter((entry): entry is (typeof filmography)[number] => Boolean(entry));
 const showcaseEntries = (knownForEntries.length > 0 ? knownForEntries : filmography).slice(0, 4);
-const pageTitle = `Biografía de ${profile.name}: películas y premios | Cine Posta`;
-const pageDescription = `${profile.name}: bio, edad, premios y películas relacionadas dentro de Cine Posta.`;
+const pageTitle = isIndexable
+	? `Biografía de ${profile.name}: películas y premios | Cine Posta`
+	: `Ficha de ${profile.name}: películas y premios | Cine Posta`;
+const pageDescription = isIndexable
+	? `${profile.name}: biografía editorial, datos verificables, premios y películas relacionadas dentro de Cine Posta.`
+	: `${profile.name}: datos verificables, premios y películas relacionadas dentro de Cine Posta.`;
 const profileImage =
 	profile.profileImage ?? profile.image ?? profile.remoteImageUrl ?? '/posters/poster-no-disponible.svg';
 const structuredData = createPersonStructuredData(profile, filmography, pageTitle, pageDescription);
@@ -37,12 +49,14 @@ const lifeFactValue = deathDateLabel
 		? `${age} años`
 		: 'No confirmada';
 const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} fichada${filmography.length === 1 ? '' : 's'} en Cine Posta`;
-const biographyParagraphs =
-	profile.biography.length > 0
-		? profile.biography
-		: [
-				`Todavía estamos armando la bio editorial de ${profile.name}. Mientras tanto, podés chusmear sus películas conectadas, premios y títulos asociados dentro del catálogo.`,
-			];
+const biographyParagraphs = profile.editorialBiography ?? [];
+// Drafts are reviewable on localhost but never included in the production render.
+const showEditorialPreview = import.meta.env.DEV;
+const statusMessage =
+	editorialStatus === 'informational'
+		? 'Esta ficha reúne datos verificables, premios y películas conectadas.'
+		: 'Mientras se completa la revisión editorial, esta ficha conserva datos verificables, premios y películas conectadas.';
+const visibleSources = Array.from(new Set(profile.referenceUrls ?? []));
 
 function getAge(birthDate?: string, birthYear?: number, deathDate?: string, deathYear?: number): number | undefined {
 	const currentDate = new Date();
@@ -95,6 +109,14 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 	if (role === 'director') return 'Dirección';
 	return 'Producción';
 }
+
+function getSourceLabel(url: string): string {
+	try {
+		return new URL(url).hostname.replace(/^www\./, '');
+	} catch {
+		return 'Fuente externa';
+	}
+}
 ---
 
 <BaseLayout
@@ -103,8 +125,10 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 	image={profileImage}
 	openGraphType="article"
 	structuredData={structuredData}
+	noindex={!isIndexable}
+	allowAds={isIndexable}
 >
-	<main id="main-content" class="container person-page">
+	<main id="main-content" class="container person-page" data-person-editorial-status={editorialStatus}>
 		<div class="page-actions">
 			<a class="page-action page-action--history" href={import.meta.env.BASE_URL} data-history-back>
 				Volver
@@ -165,13 +189,19 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 		<section class="person-page__content">
 			<article class="person-page__panel fade-up" style="--item-delay: 80ms;">
 				<div class="person-page__section-head">
-					<h2>Biografía de {profile.name}</h2>
+					<h2>{isIndexable ? `Biografía de ${profile.name}` : 'Biografía de ' + profile.name}</h2>
 				</div>
-				<div class="person-page__bio-copy">
-					{biographyParagraphs.map((paragraph) => (
-						<p>{paragraph}</p>
-					))}
-				</div>
+				{
+					(isIndexable || showEditorialPreview) && biographyParagraphs.length > 0 ? (
+						<div class="person-page__bio-copy">
+							{biographyParagraphs.map((paragraph) => (
+								<p>{paragraph}</p>
+							))}
+						</div>
+					) : (
+						<p class="person-page__bio-copy">{statusMessage}</p>
+					)
+				}
 			</article>
 
 			<aside class="person-page__panel person-page__panel--awards fade-up" style="--item-delay: 120ms;">
@@ -224,6 +254,22 @@ function getRoleLabel(role: 'actor' | 'director' | 'producer'): string {
 					))}
 				</div>
 			</section>
+
+			{
+				visibleSources.length > 0 && (
+					<section class="person-page__panel person-page__panel--sources fade-up" style="--item-delay: 180ms;">
+						<div class="person-page__section-head">
+							<p class="person-page__eyebrow">Referencias</p>
+							<h2>Fuentes consultables</h2>
+						</div>
+						<ul class="person-page__source-list">
+							{visibleSources.map((url) => (
+								<li><a href={url} target="_blank" rel="noopener noreferrer">{getSourceLabel(url)}</a></li>
+							))}
+						</ul>
+					</section>
+				)
+			}
 
 			{
 				personEditorialBlocks.length > 0 && (
