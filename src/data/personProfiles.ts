@@ -7789,7 +7789,7 @@ function applyPersonProfileEditorialOverrides(
 							}
 						: {}),
 					editorialBiography: researchedEditorialBiography?.editorialBiography ?? mergedProfile.editorialBiography ?? [],
-					editorialStatus: mergedProfile.editorialStatus ?? 'approved',
+					editorialStatus: 'approved',
 				}),
 			];
 		}),

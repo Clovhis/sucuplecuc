@@ -3,7 +3,6 @@ import type { GetStaticPaths } from 'astro';
 import AwardMark from '../../components/AwardMark.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAwardVisualKey } from '../../lib/awards';
-import { getPersonEditorialBlocks } from '../../lib/editorialCopy';
 import {
 	getPersonEditorialStatus,
 	getPersonFilmography,
@@ -26,7 +25,6 @@ const { profile } = Astro.props as {
 const filmography = getPersonFilmography(profile.name);
 const editorialStatus = getPersonEditorialStatus(profile);
 const isIndexable = isPersonProfileIndexable(profile);
-const personEditorialBlocks = isIndexable ? getPersonEditorialBlocks(profile, filmography) : [];
 const knownForEntries = profile.knownFor
 	.map((slug) => filmography.find((entry) => entry.movieSlug === slug))
 	.filter((entry): entry is (typeof filmography)[number] => Boolean(entry));
@@ -50,12 +48,6 @@ const lifeFactValue = deathDateLabel
 		: 'No confirmada';
 const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} fichada${filmography.length === 1 ? '' : 's'} en Cine Posta`;
 const biographyParagraphs = profile.editorialBiography ?? [];
-// Drafts are reviewable on localhost but never included in the production render.
-const showEditorialPreview = import.meta.env.DEV;
-const statusMessage =
-	editorialStatus === 'informational'
-		? 'Esta ficha reúne datos verificables, premios y películas conectadas.'
-		: 'Mientras se completa la revisión editorial, esta ficha conserva datos verificables, premios y películas conectadas.';
 const visibleSources = Array.from(new Set(profile.referenceUrls ?? []));
 
 function getAge(birthDate?: string, birthYear?: number, deathDate?: string, deathYear?: number): number | undefined {
@@ -151,7 +143,6 @@ function getSourceLabel(url: string): string {
 			<div class="person-page__hero-main">
 				<p class="person-page__eyebrow">Para ubicarlo rápido</p>
 				<p class="person-page__headline">{profile.headline}</p>
-				<p class="person-page__spotlight">{profile.spotlight}</p>
 
 				<div class="person-page__facts" aria-label="Datos principales">
 					<div class="person-page__fact">
@@ -191,17 +182,13 @@ function getSourceLabel(url: string): string {
 				<div class="person-page__section-head">
 					<h2>{isIndexable ? `Biografía de ${profile.name}` : 'Biografía de ' + profile.name}</h2>
 				</div>
-				{
-					(isIndexable || showEditorialPreview) && biographyParagraphs.length > 0 ? (
-						<div class="person-page__bio-copy">
-							{biographyParagraphs.map((paragraph) => (
-								<p>{paragraph}</p>
-							))}
-						</div>
-					) : (
-						<p class="person-page__bio-copy">{statusMessage}</p>
-					)
-				}
+				{biographyParagraphs.length > 0 && (
+					<div class="person-page__bio-copy">
+						{biographyParagraphs.map((paragraph) => (
+							<p>{paragraph}</p>
+						))}
+					</div>
+				)}
 			</article>
 
 			<aside class="person-page__panel person-page__panel--awards fade-up" style="--item-delay: 120ms;">
@@ -271,22 +258,6 @@ function getSourceLabel(url: string): string {
 				)
 			}
 
-			{
-				personEditorialBlocks.length > 0 && (
-					<section class="person-page__panel person-page__panel--context fade-up" style="--item-delay: 200ms;">
-						<div class="person-page__context-copy person-page__context-copy--standalone">
-							{personEditorialBlocks.map((block) => (
-								<section>
-									<h3>{block.title}</h3>
-									{block.paragraphs.map((paragraph) => (
-										<p>{paragraph}</p>
-									))}
-								</section>
-							))}
-						</div>
-					</section>
-				)
-			}
 		</section>
 	</main>
 </BaseLayout>

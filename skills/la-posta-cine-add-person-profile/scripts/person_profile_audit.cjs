@@ -40,7 +40,7 @@ function parseArgs(argv) {
 				args.repo = path.resolve(repo); index += 1; break;
 			}
 			case '--require-dist': args.requireDist = true; break;
-			case '--help': case '-h': usage(); process.exit(0); break;
+			case '--help': case '-h': usage(); process.exit(0);
 			default: throw new Error(`Unknown argument: ${token}`);
 		}
 	}
