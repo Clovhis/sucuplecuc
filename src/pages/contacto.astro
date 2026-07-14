@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import {
 	CONTACT_EMAIL,
 	CONTACT_PATH,
+	EDITOR_NAME,
+	EDITOR_PATH,
 	SITE_NAME,
 	createSimplePageStructuredData,
 } from '../lib/seo';
@@ -29,6 +31,12 @@ const structuredData = createSimplePageStructuredData(CONTACT_PATH, pageTitle, p
 		</section>
 
 		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 30ms;">
+				<h2>Responsabilidad editorial</h2>
+				<p>
+					El editor responsable de Cine Posta es <a href={EDITOR_PATH}>{EDITOR_NAME}</a>.
+				</p>
+			</article>
 			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
 				<h2>Mail principal</h2>
 				<p>

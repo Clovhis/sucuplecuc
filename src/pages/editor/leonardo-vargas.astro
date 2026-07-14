@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+	EDITOR_NAME,
+	SITE_NAME,
+	createEditorPageStructuredData,
+} from '../../lib/seo';
+
+const pageTitle = `${EDITOR_NAME} | Editor responsable de ${SITE_NAME}`;
+const pageDescription =
+	'Leonardo Vargas es el editor responsable de Cine Posta, proyecto editorial argentino de reseñas breves y recomendaciones de películas.';
+const structuredData = createEditorPageStructuredData(pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container about-page">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Equipo editorial</p>
+			<h1 class="about-page__title">{EDITOR_NAME}</h1>
+			<p class="about-page__lead">Editor responsable de {SITE_NAME}.</p>
+		</section>
+
+		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
+				<h2>Responsabilidad en el proyecto</h2>
+				<p>
+					Leonardo Vargas supervisa la edición y revisión editorial de las reseñas publicadas en Cine Posta.
+				</p>
+				<p>
+					El sitio mantiene una política editorial, una metodología y canales de corrección públicos para que el trabajo pueda revisarse con claridad.
+				</p>
+			</article>
+		</section>
+	</main>
+</BaseLayout>

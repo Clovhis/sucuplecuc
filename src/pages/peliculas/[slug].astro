@@ -33,7 +33,7 @@ import { getJajametroScore } from '../../lib/jajametro';
 import { getCagazometroScore } from '../../lib/cagazometro';
 import { getExplosiometroScore } from '../../lib/explosiometro';
 import { getSangrometroScore } from '../../lib/sangrometro';
-import { METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData } from '../../lib/seo';
+import { EDITOR_NAME, EDITOR_PATH, METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData } from '../../lib/seo';
 import { getMovieCommunityPath } from '../../lib/community';
 import type { Movie } from '../../types/movie';
 
@@ -426,7 +426,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							<PlatformBadgeGroup platforms={moviePlatforms} />
 						</div>
 						<div class="movie-detail__editorial-byline" aria-label="Datos editoriales de la reseña">
-							<span>Por {SITE_NAME}</span>
+							<span>Publicado por {SITE_NAME}</span>
+							<span aria-hidden="true">·</span>
+							<a href={EDITOR_PATH}>Editado y revisado por {EDITOR_NAME}</a>
 							{editorialUpdatedLabel && (
 								<>
 									<span aria-hidden="true">·</span>

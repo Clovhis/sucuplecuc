@@ -1,21 +1,17 @@
 import { expect, test } from '@playwright/test';
 
-test('donation prompt appears once per local day', async ({ page }) => {
+test('donation invitation is visible without blocking navigation', async ({ page }) => {
   const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
 
   expect(response?.ok()).toBeTruthy();
 
-  const prompt = page.getByRole('dialog', { name: /Ayudanos a mantener Cine Posta online/i });
+	const prompt = page.getByRole('complementary', { name: /Apoyá a Cine Posta/i });
   await expect(prompt).toBeVisible();
   await expect(
-    prompt.getByRole('link', { name: /Donar un cafecito/i }),
-  ).toHaveAttribute('href', 'https://cafecito.app/cineposta');
-
-  await prompt.getByRole('button', { name: /Ahora no, entrar al sitio/i }).click();
-  await expect(prompt).not.toBeVisible();
-
-  await page.reload({ waitUntil: 'domcontentloaded' });
-  await expect(prompt).not.toBeVisible();
+		prompt.getByRole('link', { name: /Apoyá con un cafecito/i }),
+	).toHaveAttribute('href', 'https://cafecito.app/cineposta');
+	await expect(page.getByRole('dialog')).toHaveCount(0);
+	await expect(page.getByRole('link', { name: /^Ver detalle de/i }).first()).toBeVisible();
 });
 
 test('home page renders the catalog shell', async ({ page }) => {
@@ -44,11 +40,6 @@ test('movie detail page renders a known title', async ({ page }) => {
 
 test('trailers play in the canonical movie page only after interaction', async ({ page }) => {
   await page.goto('/peliculas/akira-1988/', { waitUntil: 'domcontentloaded' });
-
-  const donationGate = page.getByRole('dialog', { name: /Ayudanos a mantener Cine Posta online/i });
-  if (await donationGate.isVisible()) {
-    await donationGate.getByRole('button', { name: /Ahora no, entrar al sitio/i }).click();
-  }
 
   const player = page.locator('[data-trailer-player]');
   await expect(player).toBeVisible();

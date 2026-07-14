@@ -2,7 +2,20 @@ import type { APIRoute } from 'astro';
 import { stat } from 'node:fs/promises';
 import { getMoviePath, getMovies } from '../lib/movies';
 import { getPersonPath, getPersonProfiles, isPersonProfileIndexable } from '../lib/people';
-import { ABOUT_PATH, COMMUNITY_PATH, PEOPLE_PATH, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_URL } from '../lib/seo';
+import {
+	ABOUT_PATH,
+	COMMUNITY_PATH,
+	CONTACT_PATH,
+	COPYRIGHT_PATH,
+	EDITORIAL_POLICY_PATH,
+	EDITOR_PATH,
+	METHODOLOGY_PATH,
+	PEOPLE_PATH,
+	PRIVACY_PATH,
+	QUE_MIRO_HOY_PATH,
+	SITE_URL,
+	SOURCES_AND_DATA_PATH,
+} from '../lib/seo';
 
 export const prerender = true;
 
@@ -55,15 +68,27 @@ export const GET: APIRoute = async () => {
 			.sort()
 			.at(-1);
 	const aboutLastMod = await getFileLastMod('src/pages/sobre-cine-posta.astro');
+	const contactLastMod = await getFileLastMod('src/pages/contacto.astro');
 	const communityLastMod = await getFileLastMod('src/pages/comunidad.astro');
+	const copyrightLastMod = await getFileLastMod('src/pages/copyright-y-uso-de-material.astro');
+	const editorialPolicyLastMod = await getFileLastMod('src/pages/politica-editorial.astro');
+	const editorLastMod = await getFileLastMod('src/pages/editor/leonardo-vargas.astro');
+	const methodologyLastMod = await getFileLastMod('src/pages/como-funciona.astro');
 	const peopleIndexLastMod = await getFileLastMod('src/pages/personas/index.astro');
 	const privacyLastMod = await getFileLastMod('src/pages/politica-de-privacidad.astro');
+	const sourcesLastMod = await getFileLastMod('src/pages/fuentes-y-datos.astro');
 	const postometroLastMod = await getFileLastMod('src/pages/que-miro-hoy.astro');
 	const entries = [
 		{ pathname: '/', lastmod: homeLastMod },
 		{ pathname: QUE_MIRO_HOY_PATH, lastmod: postometroLastMod },
 		{ pathname: PEOPLE_PATH, lastmod: peopleIndexLastMod },
 		{ pathname: ABOUT_PATH, lastmod: aboutLastMod },
+		{ pathname: METHODOLOGY_PATH, lastmod: methodologyLastMod },
+		{ pathname: EDITORIAL_POLICY_PATH, lastmod: editorialPolicyLastMod },
+		{ pathname: SOURCES_AND_DATA_PATH, lastmod: sourcesLastMod },
+		{ pathname: COPYRIGHT_PATH, lastmod: copyrightLastMod },
+		{ pathname: CONTACT_PATH, lastmod: contactLastMod },
+		{ pathname: EDITOR_PATH, lastmod: editorLastMod },
 		{ pathname: COMMUNITY_PATH, lastmod: communityLastMod },
 		{ pathname: PRIVACY_PATH, lastmod: privacyLastMod },
 		...personEntries,

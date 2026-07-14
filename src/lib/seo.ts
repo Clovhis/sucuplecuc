@@ -9,6 +9,7 @@ export const SITE_ALTERNATE_NAMES = ['Cineposta', 'cineposta', 'cineposta.com.ar
 export const SITE_LOCALE = 'es_AR';
 export const SITE_LANGUAGE = 'es-AR';
 export const CONTACT_EMAIL = 'yosoyvargas@hotmail.com';
+export const EDITOR_NAME = 'Leonardo Vargas';
 export const SITE_DESCRIPTION =
 	'Cine Posta, también conocido como Cineposta, es un sitio argentino con reseñas cortas y al hueso sobre películas, veredictos claros y fichas de actores y directores para decidir rápido qué mirar.';
 export const SITE_LOGO_PATH = '/brand/cineposta-logo-mark.png';
@@ -20,6 +21,7 @@ export const EDITORIAL_POLICY_PATH = '/politica-editorial/';
 export const SOURCES_AND_DATA_PATH = '/fuentes-y-datos/';
 export const COPYRIGHT_PATH = '/copyright-y-uso-de-material/';
 export const CONTACT_PATH = '/contacto/';
+export const EDITOR_PATH = '/editor/leonardo-vargas/';
 export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
 export const PEOPLE_PATH = '/personas/';
 export { COMMUNITY_PATH } from './community';
@@ -68,6 +70,10 @@ function getOrganizationId(): string {
 
 function getWebsiteId(): string {
 	return `${SITE_URL}/#website`;
+}
+
+function getEditorId(): string {
+	return `${asAbsoluteUrl(EDITOR_PATH)}#person`;
 }
 
 function getCollectionPageId(): string {
@@ -138,6 +144,22 @@ function createWebsiteSchema(): StructuredDataValue {
 		inLanguage: SITE_LANGUAGE,
 		publisher: {
 			'@id': getOrganizationId(),
+		},
+	};
+}
+
+function createEditorSchema(): StructuredDataValue {
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		'@id': getEditorId(),
+		url: asAbsoluteUrl(EDITOR_PATH),
+		name: EDITOR_NAME,
+		jobTitle: 'Editor responsable',
+		worksFor: {
+			'@type': 'Organization',
+			'@id': getOrganizationId(),
+			name: SITE_NAME,
 		},
 	};
 }
@@ -246,6 +268,34 @@ export function createSimplePageStructuredData(
 	];
 }
 
+export function createEditorPageStructuredData(
+	pageTitle: string,
+	pageDescription: string,
+): StructuredDataValue[] {
+	const editorUrl = asAbsoluteUrl(EDITOR_PATH);
+
+	return [
+		createOrganizationSchema(),
+		createWebsiteSchema(),
+		createEditorSchema(),
+		{
+			'@context': 'https://schema.org',
+			'@type': 'ProfilePage',
+			'@id': `${editorUrl}#webpage`,
+			url: editorUrl,
+			name: pageTitle,
+			description: pageDescription,
+			inLanguage: SITE_LANGUAGE,
+			isPartOf: {
+				'@id': getWebsiteId(),
+			},
+			mainEntity: {
+				'@id': getEditorId(),
+			},
+		},
+	];
+}
+
 export function createMovieStructuredData(
 	movie: Pick<
 		Movie,
@@ -311,10 +361,16 @@ export function createMovieStructuredData(
 				reviewBody: movie.review,
 				datePublished: getBestKnownMoviePublicationDate(movie),
 				author: {
-					'@type': 'Organization',
-					'@id': getOrganizationId(),
-					name: SITE_NAME,
-					url: `${SITE_URL}/`,
+					'@type': 'Person',
+					'@id': getEditorId(),
+					name: EDITOR_NAME,
+					url: asAbsoluteUrl(EDITOR_PATH),
+				},
+				editor: {
+					'@type': 'Person',
+					'@id': getEditorId(),
+					name: EDITOR_NAME,
+					url: asAbsoluteUrl(EDITOR_PATH),
 				},
 				publisher: {
 					'@type': 'Organization',
@@ -349,6 +405,7 @@ export function createMovieStructuredData(
 
 	return [
 		movieSchema,
+		createEditorSchema(),
 		{
 			'@context': 'https://schema.org',
 			'@type': 'WebPage',

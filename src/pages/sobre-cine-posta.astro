@@ -4,6 +4,8 @@ import {
 	CONTACT_EMAIL,
 	CONTACT_PATH,
 	COPYRIGHT_PATH,
+	EDITOR_NAME,
+	EDITOR_PATH,
 	EDITORIAL_POLICY_PATH,
 	SITE_DESCRIPTION,
 	SITE_NAME,
@@ -31,6 +33,12 @@ const structuredData = createAboutPageStructuredData(pageTitle, pageDescription)
 		</section>
 
 		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 30ms;">
+				<h2>Responsabilidad editorial</h2>
+				<p>
+					<a href={EDITOR_PATH}>{EDITOR_NAME}</a> es el editor responsable del proyecto y revisa la publicación editorial del sitio.
+				</p>
+			</article>
 			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
 				<h2>Qué es Cine Posta</h2>
 				<p>
