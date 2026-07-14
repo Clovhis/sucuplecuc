@@ -8,6 +8,7 @@ const MIN_SYNOPSIS_WORDS = 25;
 const MAX_EXAMPLES = 30;
 const FULL_OUTPUT = process.argv.includes('--full');
 const STRICT = process.argv.includes('--strict');
+const SELF_TEST = process.argv.includes('--self-test');
 const referenceDate = new Date();
 
 function wordCount(value) {
@@ -49,7 +50,7 @@ function hasCutOffSynopsis(value) {
 	return (
 		/[.…]{3}|…/u.test(synopsis) ||
 		!/[.!?][”’\)]?$/.test(synopsis) ||
-		/(?<!\p{L})(?:a|al|ante|bajo|cabe|con|de|del|desde|durante|en|entre|hacia|hasta|para|por|según|sin|sobre|tras|y|e|o|u|que|si|se|su|sus|mi|tu|un|el|la|los|las|lo|le|les|como|cuando|donde|mientras|aunque|pero|porque)\.$/iu.test(synopsis) ||
+		/(?<!\p{L})(?:a|al|ante|bajo|cabe|con|de|del|desde|durante|en|entre|hacia|hasta|para|por|según|sin|sobre|tras|y|e|o|u|que|si|se|su|sus|mi|tu|un|el|la|los|las|lo|le|les|como|cuando|donde|mientras|aunque|pero|porque|es|son|está|están|será|serán|verá|llamado|fuerzas|había|complejo|fracaso)\.$/iu.test(synopsis) ||
 		/[,:;—-]$/.test(synopsis) ||
 		(synopsis.match(/\(/g)?.length ?? 0) !== (synopsis.match(/\)/g)?.length ?? 0) ||
 		(synopsis.match(/[«“]/g)?.length ?? 0) !== (synopsis.match(/[»”]/g)?.length ?? 0) ||
@@ -64,15 +65,29 @@ const MISSING_ACCENT_WORDS = [
 	'dificil', 'clasico', 'epoca', 'genero', 'policia', 'heroe', 'fantasia', 'musica', 'extrano',
 	'sotano', 'muebleria', 'dimension', 'vacios', 'alli', 'construyo',
 	'petroleo', 'psicologico', 'espectaculo', 'todavia', 'presion', 'nacion', 'relacion', 'situacion', 'unico',
-	'ultima', 'mas',
+	'ultima', 'mas', 'anos', 'sudafrica', 'traves', 'britanico', 'tiburon', 'turistica', 'oceanografo',
+	'atomica', 'cientifico', 'politicas', 'sabado', 'conversacion', 'anomalia', 'lideres', 'participacion',
+	'unica', 'vinculos', 'negociacion', 'sovietica', 'fria', 'disenador', 'maquina', 'teletransportacion',
+	'minima', 'biologica', 'transformacion', 'aviacion', 'pequenas',
 ];
 const MISSING_ACCENT_PATTERN = new RegExp(`(?<!\\p{L})(?:${MISSING_ACCENT_WORDS.join('|')})(?!\\p{L})`, 'iu');
-const ACTOR_PARENTHESES_PATTERN = /\b[\p{Lu}][\p{L}'’.-]*(?:\s+[\p{Lu}][\p{L}'’.-]*){0,3}\s+\(([\p{Lu}][\p{L}'’.-]*(?:\s+[\p{Lu}][\p{L}'’.-]*){0,2})\)/u;
+const ACTOR_PARENTHESES_PATTERN = /\(([^()]+)\)/gu;
 const PARENTHETICAL_TITLE_EXCEPTIONS = new Set(['Puñalada']);
+const MISSING_ACCENT_CONTEXT_PATTERNS = [/\besta de repente\b/iu];
 
 function hasActorParentheticalFragment(value) {
 	for (const match of String(value ?? '').matchAll(new RegExp(ACTOR_PARENTHESES_PATTERN, 'gu'))) {
-		if (!PARENTHETICAL_TITLE_EXCEPTIONS.has(match[1])) return true;
+		const parenthetical = match[1].trim();
+		if (
+			PARENTHETICAL_TITLE_EXCEPTIONS.has(parenthetical) ||
+			/^[A-ZÁÉÍÓÚÜÑ]{2,}$/u.test(parenthetical) ||
+			/^en\s+/iu.test(parenthetical) ||
+			/^ficticia$/iu.test(parenthetical) ||
+			/^personas? de la vida real$/iu.test(parenthetical) ||
+			/^encubrimiento no oficial$/iu.test(parenthetical) ||
+			/^en el Little Italy de Nueva York$/iu.test(parenthetical)
+		) continue;
+		if (/^[\p{Lu}][\p{L}'’.-]*(?:\s+[\p{Lu}][\p{L}'’.-]*){0,3}(?:,.*)?$/u.test(parenthetical)) return true;
 	}
 	return false;
 }
@@ -84,10 +99,37 @@ function synopsisHygieneIssues(value) {
 	if (/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F\u200B-\u200D\uFEFF\uFFFD]/u.test(synopsis)) issues.push('invisible-or-control-character');
 	if (/(?:Ã.|Â.|â€|â€™|â€œ|â€)/u.test(synopsis)) issues.push('mojibake-character');
 	if (/\(\s+|\s+\)/.test(synopsis)) issues.push('imported-parenthesis-spacing');
-	if (/&(?:nbsp|amp|quot|lt|gt);|&#(?:\d+|x[\da-f]+);/i.test(synopsis)) issues.push('html-entity');
+	if (/&(?:[a-z][a-z\d]+|#(?:\d+|x[\da-f]+));/iu.test(synopsis)) issues.push('html-entity');
 	if (hasActorParentheticalFragment(synopsis)) issues.push('cast-parenthetical-fragment');
-	if (MISSING_ACCENT_PATTERN.test(synopsis)) issues.push('possible-missing-accent');
+	if (MISSING_ACCENT_PATTERN.test(synopsis) || MISSING_ACCENT_CONTEXT_PATTERNS.some((pattern) => pattern.test(synopsis))) issues.push('possible-missing-accent');
 	return issues;
+}
+
+function assertSelfTest(condition, message) {
+	if (!condition) throw new Error(`Synopsis audit self-test failed: ${message}`);
+}
+
+function runSelfTests() {
+	const brokenFixtures = [
+		['truncated-ending', 'Pete vuelve a la Tierra, pero el único problema es.', (value) => hasCutOffSynopsis(value)],
+		['named-truncated-ending', 'Los jóvenes son perseguidos por un hombre llamado.', (value) => hasCutOffSynopsis(value)],
+		['html-entity', 'Lo que parec&iacute;a una noche más se vuelve una pesadilla para Paul.', (value) => synopsisHygieneIssues(value).includes('html-entity')],
+		['double-html-entity', 'Lo que parec&amp;iacute;a una noche más se vuelve una pesadilla para Paul.', (value) => synopsisHygieneIssues(value).includes('html-entity')],
+		['missing-accent', 'Un tiburon ataca una playa turistica y obliga a todos a huir.', (value) => synopsisHygieneIssues(value).includes('possible-missing-accent')],
+		['actor-credit', 'Batman enfrenta a su enemigo principal (Keaton) en Gotham.', (value) => synopsisHygieneIssues(value).includes('cast-parenthetical-fragment')],
+	];
+	const cleanFixtures = [
+		'Pete vuelve a la Tierra para guiar a un joven piloto y despedirse de la mujer que ama.',
+		'Un tiburón ataca una playa turística y obliga a todos a huir.',
+		'Stud recupera la película Stab (Puñalada) para reconstruir el caso.',
+	];
+
+	for (const [name, synopsis, assertion] of brokenFixtures) assertSelfTest(assertion(synopsis), name);
+	for (const synopsis of cleanFixtures) {
+		assertSelfTest(!hasCutOffSynopsis(synopsis), `clean-ending: ${synopsis}`);
+		assertSelfTest(synopsisHygieneIssues(synopsis).length === 0, `clean-hygiene: ${synopsis}`);
+	}
+	console.log('Synopsis audit self-tests passed.');
 }
 
 function shingles(value, size = 4) {
@@ -243,6 +285,10 @@ const report = {
 	},
 };
 
-console.log(JSON.stringify(report, null, 2));
+if (SELF_TEST) {
+	runSelfTests();
+} else {
+	console.log(JSON.stringify(report, null, 2));
+}
 
 if (STRICT && (weakSynopses.length || synopsisHygiene.length || similarSynopses.length)) process.exit(1);
