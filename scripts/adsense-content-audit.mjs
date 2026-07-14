@@ -7,6 +7,7 @@ const MIN_REVIEW_SENTENCES = 2;
 const MIN_SYNOPSIS_WORDS = 25;
 const MAX_EXAMPLES = 30;
 const FULL_OUTPUT = process.argv.includes('--full');
+const STRICT = process.argv.includes('--strict');
 const referenceDate = new Date();
 
 function wordCount(value) {
@@ -45,9 +46,57 @@ function hasCutOffSynopsis(value) {
 	const synopsis = String(value ?? '').trim();
 	if (!synopsis) return true;
 
-	return /(?:\bcon|\bde|\bla|\bel|\blos|\blas|\by|\bo|\bpara|\bpor|\bcomo|\bque|\bun|\buna)\.$/i.test(
-		synopsis,
+	return (
+		!/[.!?…][”’\)]?$/.test(synopsis) ||
+		/(?<!\p{L})(?:con|de|la|el|los|las|y|o|para|por|como|que|un)\.$/iu.test(synopsis) ||
+		/[,:;—-]$/.test(synopsis) ||
+		(synopsis.match(/\(/g)?.length ?? 0) !== (synopsis.match(/\)/g)?.length ?? 0) ||
+		(synopsis.match(/[«“]/g)?.length ?? 0) !== (synopsis.match(/[»”]/g)?.length ?? 0)
 	);
+}
+
+function synopsisHygieneIssues(value) {
+	const synopsis = String(value ?? '');
+	const issues = [];
+	if (/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F\u200B-\u200D\uFEFF\uFFFD]/u.test(synopsis)) issues.push('invisible-or-control-character');
+	if (/\(\s+|\s+\)/.test(synopsis)) issues.push('imported-parenthesis-spacing');
+	if (/&(?:nbsp|amp|quot|lt|gt);|&#(?:\d+|x[\da-f]+);/i.test(synopsis)) issues.push('html-entity');
+	if (/\b(?:pelicula|accion|tambien|despues|mision|publico|critica|version|continuacion)\b/i.test(synopsis)) issues.push('possible-missing-accent');
+	return issues;
+}
+
+function shingles(value, size = 4) {
+	const tokens = normalize(value).match(/[a-zñ]+/g) ?? [];
+	const result = new Set();
+	for (let index = 0; index <= tokens.length - size; index += 1) result.add(tokens.slice(index, index + size).join(' '));
+	return result;
+}
+
+function findSimilarSynopses(movies) {
+	const index = new Map();
+	const pairs = new Map();
+	for (const movie of movies) {
+		const movieShingles = shingles(movie.synopsis);
+		for (const shingle of movieShingles) {
+			for (const other of index.get(shingle) ?? []) {
+				const key = [other.slug, movie.slug].sort().join('|');
+				pairs.set(key, (pairs.get(key) ?? 0) + 1);
+			}
+			if (!index.has(shingle)) index.set(shingle, []);
+			index.get(shingle).push(movie);
+		}
+	}
+	return [...pairs.entries()]
+		.filter(([, shared]) => shared >= 3)
+		.map(([key, shared]) => {
+			const [leftSlug, rightSlug] = key.split('|');
+			const left = movies.find((movie) => movie.slug === leftSlug);
+			const right = movies.find((movie) => movie.slug === rightSlug);
+			const union = new Set([...shingles(left.synopsis), ...shingles(right.synopsis)]).size;
+			return { left: leftSlug, right: rightSlug, sharedFourWordPhrases: shared, similarity: Number((shared / union).toFixed(2)) };
+		})
+		.filter((pair) => pair.similarity >= 0.2)
+		.sort((left, right) => right.similarity - left.similarity || right.sharedFourWordPhrases - left.sharedFourWordPhrases);
 }
 
 function summarizeWords(values) {
@@ -74,7 +123,9 @@ const movies = movieFiles.map((fileName) => {
 		reviewWords: wordCount(movie.review),
 		reviewSentences: sentenceCount(movie.review),
 		synopsisWords: wordCount(movie.synopsis),
+		synopsis: movie.synopsis,
 		cutOffSynopsis: hasCutOffSynopsis(movie.synopsis),
+		synopsisHygieneIssues: synopsisHygieneIssues(movie.synopsis),
 		reviewRepeatsSynopsis: normalize(movie.review).includes(normalize(movie.synopsis)),
 		posterIsExternal: /^https?:\/\//i.test(String(movie.poster ?? '')),
 		hasScreenshots: Array.isArray(movie.screenshots) && movie.screenshots.length > 0,
@@ -96,6 +147,10 @@ const shortReviews = releasedMovies
 const weakSynopses = releasedMovies
 	.filter((movie) => movie.synopsisWords < MIN_SYNOPSIS_WORDS || movie.cutOffSynopsis || movie.reviewRepeatsSynopsis)
 	.sort((left, right) => left.synopsisWords - right.synopsisWords || left.slug.localeCompare(right.slug));
+const synopsisHygiene = releasedMovies
+	.filter((movie) => movie.synopsisHygieneIssues.length > 0)
+	.sort((left, right) => left.slug.localeCompare(right.slug));
+const similarSynopses = findSimilarSynopses(releasedMovies);
 const externalImageOnly = releasedMovies.filter((movie) => movie.posterIsExternal && !movie.hasScreenshots);
 
 const report = {
@@ -139,6 +194,14 @@ const report = {
 			filePath: movie.filePath,
 		})),
 	},
+	synopsisHygiene: {
+		count: synopsisHygiene.length,
+		examples: synopsisHygiene.slice(0, MAX_EXAMPLES).map((movie) => ({ slug: movie.slug, title: movie.title, issues: movie.synopsisHygieneIssues, filePath: movie.filePath })),
+	},
+	similarSynopses: {
+		count: similarSynopses.length,
+		examples: similarSynopses.slice(0, MAX_EXAMPLES),
+	},
 	externalImageOnly: {
 		count: externalImageOnly.length,
 		note: 'External posters are not automatically a policy issue, but original screenshots or owned assets help the page feel less copied.',
@@ -146,3 +209,5 @@ const report = {
 };
 
 console.log(JSON.stringify(report, null, 2));
+
+if (STRICT && (weakSynopses.length || synopsisHygiene.length || similarSynopses.length)) process.exit(1);
