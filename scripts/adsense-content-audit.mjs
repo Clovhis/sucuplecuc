@@ -47,21 +47,46 @@ function hasCutOffSynopsis(value) {
 	if (!synopsis) return true;
 
 	return (
-		!/[.!?…][”’\)]?$/.test(synopsis) ||
-		/(?<!\p{L})(?:con|de|la|el|los|las|y|o|para|por|como|que|un)\.$/iu.test(synopsis) ||
+		/[.…]{3}|…/u.test(synopsis) ||
+		!/[.!?][”’\)]?$/.test(synopsis) ||
+		/(?<!\p{L})(?:a|al|ante|bajo|cabe|con|de|del|desde|durante|en|entre|hacia|hasta|para|por|según|sin|sobre|tras|y|e|o|u|que|si|se|su|sus|mi|tu|un|el|la|los|las|lo|le|les|como|cuando|donde|mientras|aunque|pero|porque)\.$/iu.test(synopsis) ||
 		/[,:;—-]$/.test(synopsis) ||
 		(synopsis.match(/\(/g)?.length ?? 0) !== (synopsis.match(/\)/g)?.length ?? 0) ||
-		(synopsis.match(/[«“]/g)?.length ?? 0) !== (synopsis.match(/[»”]/g)?.length ?? 0)
+		(synopsis.match(/[«“]/g)?.length ?? 0) !== (synopsis.match(/[»”]/g)?.length ?? 0) ||
+		(synopsis.match(/¿/g)?.length ?? 0) !== (synopsis.match(/\?/g)?.length ?? 0) ||
+		(synopsis.match(/¡/g)?.length ?? 0) !== (synopsis.match(/!/g)?.length ?? 0) ||
+		(synopsis.match(/\[/g)?.length ?? 0) !== (synopsis.match(/\]/g)?.length ?? 0)
 	);
+}
+
+const MISSING_ACCENT_WORDS = [
+	'pelicula', 'accion', 'tambien', 'despues', 'mision', 'publico', 'critica', 'version', 'continuacion',
+	'dificil', 'clasico', 'epoca', 'genero', 'policia', 'heroe', 'fantasia', 'musica', 'extrano',
+	'sotano', 'muebleria', 'dimension', 'vacios', 'alli', 'construyo',
+	'petroleo', 'psicologico', 'espectaculo', 'todavia', 'presion', 'nacion', 'relacion', 'situacion', 'unico',
+	'ultima', 'mas',
+];
+const MISSING_ACCENT_PATTERN = new RegExp(`(?<!\\p{L})(?:${MISSING_ACCENT_WORDS.join('|')})(?!\\p{L})`, 'iu');
+const ACTOR_PARENTHESES_PATTERN = /\b[\p{Lu}][\p{L}'’.-]*(?:\s+[\p{Lu}][\p{L}'’.-]*){0,3}\s+\(([\p{Lu}][\p{L}'’.-]*(?:\s+[\p{Lu}][\p{L}'’.-]*){0,2})\)/u;
+const PARENTHETICAL_TITLE_EXCEPTIONS = new Set(['Puñalada']);
+
+function hasActorParentheticalFragment(value) {
+	for (const match of String(value ?? '').matchAll(new RegExp(ACTOR_PARENTHESES_PATTERN, 'gu'))) {
+		if (!PARENTHETICAL_TITLE_EXCEPTIONS.has(match[1])) return true;
+	}
+	return false;
 }
 
 function synopsisHygieneIssues(value) {
 	const synopsis = String(value ?? '');
 	const issues = [];
+	if (/…|\.\.\./u.test(synopsis)) issues.push('forbidden-ellipsis');
 	if (/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F\u200B-\u200D\uFEFF\uFFFD]/u.test(synopsis)) issues.push('invisible-or-control-character');
+	if (/(?:Ã.|Â.|â€|â€™|â€œ|â€)/u.test(synopsis)) issues.push('mojibake-character');
 	if (/\(\s+|\s+\)/.test(synopsis)) issues.push('imported-parenthesis-spacing');
 	if (/&(?:nbsp|amp|quot|lt|gt);|&#(?:\d+|x[\da-f]+);/i.test(synopsis)) issues.push('html-entity');
-	if (/\b(?:pelicula|accion|tambien|despues|mision|publico|critica|version|continuacion)\b/i.test(synopsis)) issues.push('possible-missing-accent');
+	if (hasActorParentheticalFragment(synopsis)) issues.push('cast-parenthetical-fragment');
+	if (MISSING_ACCENT_PATTERN.test(synopsis)) issues.push('possible-missing-accent');
 	return issues;
 }
 
@@ -197,6 +222,16 @@ const report = {
 	synopsisHygiene: {
 		count: synopsisHygiene.length,
 		examples: synopsisHygiene.slice(0, MAX_EXAMPLES).map((movie) => ({ slug: movie.slug, title: movie.title, issues: movie.synopsisHygieneIssues, filePath: movie.filePath })),
+		...(FULL_OUTPUT
+			? {
+				all: synopsisHygiene.map((movie) => ({
+					slug: movie.slug,
+					title: movie.title,
+					issues: movie.synopsisHygieneIssues,
+					filePath: movie.filePath,
+				})),
+			}
+			: {}),
 	},
 	similarSynopses: {
 		count: similarSynopses.length,
