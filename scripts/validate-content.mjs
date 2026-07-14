@@ -188,6 +188,7 @@ function main() {
 	if (args.build) {
 		run('npm', ['run', 'build']);
 		run('npm', ['run', 'audit:profile-originality', '--', '--require-dist']);
+		run('npm', ['run', 'validate:adsense-coverage']);
 		run('npm', ['run', 'validate:public-output']);
 	}
 }

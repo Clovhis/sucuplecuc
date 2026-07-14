@@ -18,6 +18,7 @@
     "audit:movie-people": "node ./scripts/audit-movie-people.mjs",
     "audit:adsense-content": "node ./scripts/adsense-content-audit.mjs",
     "audit:adsense-content:strict": "node ./scripts/adsense-content-audit.mjs --strict",
+	"validate:adsense-coverage": "node ./scripts/validate-adsense-coverage.mjs",
 	"test:adsense-content-audit": "node ./scripts/adsense-content-audit.test.mjs",
     "audit:editorial-low-value": "node ./scripts/editorial-low-value-audit.mjs",
     "audit:movies:recent": "node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref main --recent --skip-youtube",

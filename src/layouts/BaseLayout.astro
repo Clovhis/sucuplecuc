@@ -92,7 +92,7 @@ const currentYear = new Date().getFullYear();
 		<meta name="author" content={SITE_NAME} />
 		<meta name="referrer" content="strict-origin-when-cross-origin" />
 		{
-			allowAds && (
+			allowAds && !noindex && (
 				<script
 					is:inline
 					async
