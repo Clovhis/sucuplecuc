@@ -69,6 +69,9 @@ const MISSING_ACCENT_WORDS = [
 	'atomica', 'cientifico', 'politicas', 'sabado', 'conversacion', 'anomalia', 'lideres', 'participacion',
 	'unica', 'vinculos', 'negociacion', 'sovietica', 'fria', 'disenador', 'maquina', 'teletransportacion',
 	'minima', 'biologica', 'transformacion', 'aviacion', 'pequenas',
+	'jose', 'politico', 'ambicion', 'desaparicion', 'mexico', 'politica', 'numero', 'television',
+	'parecia', 'musico', 'explosion', 'tension', 'britanica', 'ridiculos', 'transatlantico',
+	'generacion', 'clasica', 'ultimo', 'creia', 'atras', 'imagenes',
 ];
 const MISSING_ACCENT_PATTERN = new RegExp(`(?<!\\p{L})(?:${MISSING_ACCENT_WORDS.join('|')})(?!\\p{L})`, 'iu');
 const ACTOR_PARENTHESES_PATTERN = /\(([^()]+)\)/gu;
@@ -116,6 +119,7 @@ function runSelfTests() {
 		['html-entity', 'Lo que parec&iacute;a una noche más se vuelve una pesadilla para Paul.', (value) => synopsisHygieneIssues(value).includes('html-entity')],
 		['double-html-entity', 'Lo que parec&amp;iacute;a una noche más se vuelve una pesadilla para Paul.', (value) => synopsisHygieneIssues(value).includes('html-entity')],
 		['missing-accent', 'Un tiburon ataca una playa turistica y obliga a todos a huir.', (value) => synopsisHygieneIssues(value).includes('possible-missing-accent')],
+		['remaining-missing-accents', 'Un politico persigue su ambicion y deja un numero de teléfono.', (value) => synopsisHygieneIssues(value).includes('possible-missing-accent')],
 		['actor-credit', 'Batman enfrenta a su enemigo principal (Keaton) en Gotham.', (value) => synopsisHygieneIssues(value).includes('cast-parenthetical-fragment')],
 	];
 	const cleanFixtures = [
