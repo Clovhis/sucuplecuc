@@ -545,6 +545,15 @@ Do not overwrite existing entries without explicit user authorization.
 
 ## Editorial rules (mandatory)
 
+Write `synopsis` manually from scratch as well. It is an editorial page component, not metadata copied from a distributor or database:
+
+- Use 28-90 words in clear rioplatense Spanish. State the premise, central character or group, and the conflict that sets the film in motion.
+- Be specific to this title, factual, concise and spoiler-free. Do not reveal twists, the ending, hidden identities or late-story turns.
+- Do not copy or lightly paraphrase studio blurbs, platform descriptions, Wikipedia, IMDb, TMDb, press kits or another Cine Posta entry.
+- Do not use generic source-shaped openers such as `La película sigue...`, `La trama relata...`, `El filme cuenta...` or a `Sinopsis:` label. Start from the film's own situation instead.
+- Do not put verdicts, critical claims, scores, calls to action, third-party brands or review language in the synopsis. Keep that judgment exclusively in `review`.
+- In a batch, write each synopsis with a distinct entry point and syntax. Run the bundled editorial audit before sign-off; a missing, copied, too-short, overlong or template-shaped synopsis is a hard stop.
+
 Write `review` by combining user feedback + external review enrichment:
 
 - Minimum editorial floor: 70 palabras y al menos dos oraciones completas. La reseña tiene que explicar qué propone la película, cómo funcionan dirección, actuaciones, ritmo y tono, qué acierta o falla, y para quién vale la pena.
@@ -724,6 +733,7 @@ Return all of the following:
 - [ ] Review length rule respected (<=5 with user feedback, or 6-8 without meaningful user feedback), no spoilers
 - [ ] Review grounded on user feedback + external source, without fabricated data and without raw score dump format
 - [ ] Review written manually from scratch by the AI for this exact movie, without template scaffolds, stock closings, inherited paragraph skeletons, or robotized phrasing that could fit another movie unchanged
+- [ ] Synopsis written manually from scratch, 28-90 words, specific, spoiler-free and free of source-shaped/template openers or review language
 - [ ] Review does not lean on verdict-led stock lines (`ZAFA y...`, `PASABLE para...`, `SE DEJA VER si...`) as opener or closer
 - [ ] Current-year / future titles include verified `releaseDate` in `YYYY-MM-DD` so Astro 7 home/search visibility is preserved
 - [ ] Poster/trailer fields from trustworthy sources

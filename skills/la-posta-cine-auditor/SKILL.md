@@ -120,6 +120,7 @@ The bundled script checks:
 - raw numeric score leakage in reviews
 - forbidden third-party site mentions inside reviews (`Rotten`, `Metacritic`, `IMDb`, etc.)
 - review length / underdeveloped copy / template-shaped wording / repeated sentence skeletons by delegating to `skills/la-posta-cine-add-movie/scripts/review_audit.cjs`
+- synopsis presence, useful 28-90 word range, duplicate-copy detection and generic source/template-shaped openers through the same editorial audit
 
 ### 3. Interpret findings
 
@@ -148,6 +149,12 @@ The short-or-robotized review check is mandatory too:
 - if the published review repeats `verdictLabel` verbatim inside the prose, treat it as templated copy and rewrite it
 - if two reviews in the same batch could trade paragraph structure with only noun swaps, treat both as templated and rewrite at least one before sign-off
 - if the audit reports `short-review`, `underdeveloped-review`, `duplicate-long-sentence`, `reused-opener-pattern`, `generated-review-marker`, or equivalent robotized signals, rewrite the review before signing off
+
+The synopsis quality check is mandatory too:
+
+- treat a missing, copied, underdeveloped, overlong or template-shaped synopsis as a hard stop
+- require a concise, title-specific and spoiler-free description of the premise, character/group and initial conflict; it must be written from scratch in rioplatense Spanish
+- never publish copied distributor/database copy, generic source-style openers (`La película sigue...`, `La trama relata...`, `El filme cuenta...`) or verdict/review language in `synopsis`
 
 The exclusive profile reconciliation check is mandatory too:
 

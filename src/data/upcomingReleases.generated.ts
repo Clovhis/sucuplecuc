@@ -8,79 +8,52 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-05-26T13:36:50.487Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-07-15T13:31:39.602Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
-		"slug": "backrooms",
-		"title": "Backrooms",
-		"releaseDate": "2026-05-28",
-		"videoUrl": "https://www.youtube.com/watch?v=0HjdiohVOik",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-		"synopsis": "A strange doorway appears in the basement of a furniture showroom.",
-		"sourceUrl": "https://www.themoviedb.org/movie/1083381-backrooms"
+		"slug": "deep-water",
+		"title": "Deep Water",
+		"releaseDate": "2026-08-06",
+		"videoUrl": "https://www.youtube.com/watch?v=f0ptq0Lzdh8",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/szKv713FcUXx6hcfdY369vtkmzr.jpg",
+		"synopsis": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking...",
+		"sourceUrl": "https://www.themoviedb.org/movie/1127384-deep-water"
 	},
 	{
-		"slug": "masters-of-the-universe",
-		"title": "Masters of the Universe",
-		"releaseDate": "2026-06-04",
-		"videoUrl": "https://www.youtube.com/watch?v=rJSmz-zhDxE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
-		"synopsis": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and...",
-		"sourceUrl": "https://www.themoviedb.org/movie/454639-masters-of-the-universe"
+		"slug": "spider-man-brand-new-day",
+		"title": "Spider-Man: Brand New Day",
+		"releaseDate": "2026-07-30",
+		"videoUrl": "https://www.youtube.com/watch?v=62bIsvRcPv0",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+		"synopsis": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only...",
+		"sourceUrl": "https://www.themoviedb.org/movie/969681-spider-man-brand-new-day"
 	},
 	{
-		"slug": "disclosure-day",
-		"title": "Disclosure Day",
-		"releaseDate": "2026-06-11",
-		"videoUrl": "https://www.youtube.com/watch?v=SCYT8vb2siQ",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/5p6BsJtnPbglYN15MuiUEppPl0f.jpg",
-		"synopsis": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
-		"sourceUrl": "https://www.themoviedb.org/movie/1275779-disclosure-day"
+		"slug": "the-invite",
+		"title": "The Invite",
+		"releaseDate": "2026-08-06",
+		"videoUrl": "https://www.youtube.com/watch?v=nelkiuezJxg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+		"synopsis": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
+		"sourceUrl": "https://www.themoviedb.org/movie/950028-the-invite"
 	},
 	{
-		"slug": "scary-movie",
-		"title": "Scary Movie",
-		"releaseDate": "2026-06-04",
-		"videoUrl": "https://www.youtube.com/watch?v=2aMPPfmP5cY",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/pO7XVtgA6t5JbxY1S8Y4cQEFarR.jpg",
-		"synopsis": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-		"sourceUrl": "https://www.themoviedb.org/movie/1273221-scary-movie"
+		"slug": "pressure",
+		"title": "Pressure",
+		"releaseDate": "2026-08-06",
+		"videoUrl": "https://www.youtube.com/watch?v=EBh1LGRwiis",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
+		"synopsis": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the...",
+		"sourceUrl": "https://www.themoviedb.org/movie/1318413-pressure"
 	},
 	{
-		"slug": "amarga-navidad",
-		"title": "Bitter Christmas",
-		"releaseDate": "2026-05-28",
-		"videoUrl": "https://www.youtube.com/watch?v=7PgPkSpuYpY",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/vkaujALtN1SZGr4M54selGTImVY.jpg",
-		"synopsis": "After her mother dies in December, advertising director Elsa immerses herself in work to cope. When a panic attack forces her to take a break, she decides to travel to Lanzarote with her friend Patricia. The story of these women run parallel to that of a...",
-		"sourceUrl": "https://www.themoviedb.org/movie/1088548-amarga-navidad"
-	},
-	{
-		"slug": "dolly",
-		"title": "Dolly",
-		"releaseDate": "2026-05-28",
-		"videoUrl": "https://www.youtube.com/watch?v=LALT2B-Ubpk",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/rhuEN18ZimDOva3guaWZA4hYgLB.jpg",
-		"synopsis": "Young Macy is abducted by a deranged, monstrous figure who wants to raise her as its child.",
-		"sourceUrl": "https://www.themoviedb.org/movie/1309083-dolly"
-	},
-	{
-		"slug": "fuze",
-		"title": "Fuze",
-		"releaseDate": "2026-05-28",
-		"videoUrl": "https://www.youtube.com/watch?v=1aNywiElPSY",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/8wIaBCeGv3UhIn5CJOWQGHT1Cif.jpg",
-		"synopsis": "An unexploded WWII bomb is discovered on a busy construction site in the centre of London. Chaos ensues as the military and police begin a mass evacuation against a ticking clock.",
-		"sourceUrl": "https://www.themoviedb.org/movie/1242265-fuze"
-	},
-	{
-		"slug": "power-ballad",
-		"title": "Power Ballad",
-		"releaseDate": "2026-06-11",
-		"videoUrl": "https://www.youtube.com/watch?v=t4Grq6r78Sw",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/u1c2DAXhpyAwFK8zljcMc4FFEc3.jpg",
-		"synopsis": "When Rick, a past-his-prime wedding singer, meets fading boy-band star Danny during a gig, the two bond over music and a late-night jam session. But when Danny turns one of Rick’s songs into the hit that reignites his career, Rick sets out to reclaim the...",
-		"sourceUrl": "https://www.themoviedb.org/movie/1284016-power-ballad"
+		"slug": "yon-lapsi",
+		"title": "Nightborn",
+		"releaseDate": "2026-08-06",
+		"videoUrl": "https://www.youtube.com/watch?v=dWePsu_Kd9c",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/jVeYae744cR2ogx9ShQ3qXOcRiZ.jpg",
+		"synopsis": "In Finnish forest, Saga and her husband Jon embark on a new chapter as parents. But Saga's joy is overshadowed by a chilling suspicion about their newborn, unbeknownst to Jon, causing a rift as she alone grapples with the disturbing truth.",
+		"sourceUrl": "https://www.themoviedb.org/movie/964849-yon-lapsi"
 	}
 ];

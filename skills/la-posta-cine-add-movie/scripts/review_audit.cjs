@@ -10,6 +10,8 @@ const MIN_SHARED_SENTENCE_COUNT = 3;
 const MIN_REVIEW_WORDS = 70;
 const MIN_UNDERDEVELOPED_WORDS = 70;
 const MIN_REVIEW_SENTENCES = 2;
+const MIN_SYNOPSIS_WORDS = 28;
+const MAX_SYNOPSIS_WORDS = 90;
 const MIN_DUPLICATE_SENTENCE_LENGTH = 55;
 const GENERATED_REVIEW_MARKERS = [
 	'tiene esta base narrativa',
@@ -73,6 +75,11 @@ const VERDICT_LABEL_STOCK_PATTERNS = [
 	'el veredicto de <label>',
 	'el <label> viene de',
 	'la <label> viene de',
+];
+const SOURCE_LIKE_SYNOPSIS_PATTERNS = [
+	/^la (pelicula|trama|historia) (cuenta|narra|relata|sigue)\b/i,
+	/^el (filme|largometraje) (cuenta|narra|relata|sigue)\b/i,
+	/^sinopsis\s*:/i,
 ];
 
 function parseArgs(argv) {
@@ -401,6 +408,7 @@ function main() {
 	const longSentenceMap = buildLongSentenceMap(corpus);
 	const openerPatternMap = buildOpenerPatternMap(corpus);
 	const fullReviewMap = new Map();
+	const fullSynopsisMap = new Map();
 	const errors = [];
 	const warnings = [];
 
@@ -413,6 +421,14 @@ function main() {
 			fullReviewMap.set(normalizedReview, []);
 		}
 		fullReviewMap.get(normalizedReview).push(entry.filePath);
+
+		const normalizedSynopsis = normalizeText(entry.movie.synopsis);
+		if (normalizedSynopsis) {
+			if (!fullSynopsisMap.has(normalizedSynopsis)) {
+				fullSynopsisMap.set(normalizedSynopsis, []);
+			}
+			fullSynopsisMap.get(normalizedSynopsis).push(entry.filePath);
+		}
 	}
 
 	for (const candidatePath of candidates) {
@@ -429,6 +445,8 @@ function main() {
 		const normalizedReview = normalizeText(review);
 		const reviewWords = wordCount(review);
 		const sentenceCount = rawSentenceCount(review);
+		const synopsis = String(movie.synopsis || '').trim();
+		const synopsisWords = wordCount(synopsis);
 
 		if (!review) {
 			errors.push(`missing review :: ${candidatePath}`);
@@ -474,6 +492,24 @@ function main() {
 
 		if (signals.severity === 'clean' && reviewWords < 40) {
 			warnings.push(`concise-review :: ${candidatePath} :: ${reviewWords} words`);
+		}
+
+		if (!synopsis) {
+			errors.push(`missing-synopsis :: ${candidatePath}`);
+		} else {
+			if (synopsisWords < MIN_SYNOPSIS_WORDS) {
+				errors.push(`short-synopsis :: ${candidatePath} :: ${synopsisWords} words is too short to be useful`);
+			}
+			if (synopsisWords > MAX_SYNOPSIS_WORDS) {
+				errors.push(`long-synopsis :: ${candidatePath} :: ${synopsisWords} words reads more like a plot recap than a synopsis`);
+			}
+			if (SOURCE_LIKE_SYNOPSIS_PATTERNS.some((pattern) => pattern.test(synopsis))) {
+				errors.push(`template-shaped-synopsis :: ${candidatePath} :: rewrite the generic source-like opener from scratch`);
+			}
+			const duplicateSynopsisFiles = [...new Set(fullSynopsisMap.get(normalizeText(synopsis)) || [])];
+			if (duplicateSynopsisFiles.length > 1) {
+				errors.push(`duplicate-synopsis :: ${candidatePath} :: ${duplicateSynopsisFiles.join(', ')}`);
+			}
 		}
 	}
 

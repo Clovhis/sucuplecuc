@@ -40,15 +40,6 @@ export const UPCOMING_RELEASE_FALLBACKS: UpcomingReleaseFallback[] = [
 		sourceUrl: 'https://www.themoviedb.org/movie/1108427-moana',
 	},
 	{
-		slug: 'the-odyssey-2026',
-		title: 'La Odisea',
-		releaseDate: '2026-07-16',
-		trailerUrl: 'https://www.youtube.com/watch?v=Mzw2ttJD2qQ',
-		thumbnailUrl: 'https://i.ytimg.com/vi/Mzw2ttJD2qQ/hqdefault.jpg',
-		synopsis:
-			'Christopher Nolan lleva el viaje de Odiseo a una escala epica de aventura, mito y regreso imposible.',
-	},
-	{
 		slug: 'spider-man-brand-new-day',
 		title: 'Spider-Man: Brand New Day',
 		releaseDate: '2026-07-31',
