@@ -1505,6 +1505,7 @@ img {
 
 .home-people-showcase {
 	display: grid;
+	position: relative;
 	gap: 0.75rem;
 	padding: 0.95rem 0.95rem 0.9rem;
 	border-radius: 20px;
@@ -1514,7 +1515,41 @@ img {
 		rgba(8, 12, 20, 0.52);
 	box-shadow:
 		inset 0 1px 0 rgba(255, 255, 255, 0.04),
-		0 16px 32px rgba(4, 8, 14, 0.18);
+	0 16px 32px rgba(4, 8, 14, 0.18);
+}
+
+.home-character {
+	display: none;
+	pointer-events: none;
+	user-select: none;
+}
+
+.home-character img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 74rem) {
+	.home-character {
+		display: block;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.home-character--peeking {
+		width: clamp(7.8rem, 12vw, 10.5rem);
+		inset-block-start: 2.6rem;
+		inset-inline-start: 39%;
+	}
+
+	.home-people-showcase__header {
+		padding-inline-start: 0.2rem;
+	}
+
+	.home-results-tools {
+		position: relative;
+	}
 }
 
 .home-people-showcase__header {
@@ -6208,10 +6243,10 @@ img {
 }
 
 .postometro-hero {
-	position: relative;
-	display: grid;
-	grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
-	gap: 1.25rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(250px, 0.8fr) minmax(16rem, 0.78fr) minmax(270px, 0.98fr);
+	gap: clamp(0.75rem, 1.8vw, 1.25rem);
 	padding: 1.45rem;
 	align-items: center;
 	overflow: hidden;
@@ -6260,6 +6295,23 @@ img {
 
 .postometro-hero__copy {
 	align-content: center;
+}
+
+.postometro-hero__art {
+	position: relative;
+	z-index: 1;
+	justify-self: center;
+	align-self: end;
+  width: clamp(15.5rem, 25vw, 22rem);
+	margin-block-end: -1.45rem;
+	pointer-events: none;
+	user-select: none;
+}
+
+.postometro-hero__art img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .postometro-hero__eyebrow,
@@ -7121,6 +7173,32 @@ img {
 		radial-gradient(circle at 0 0, rgba(255, 176, 137, 0.14), transparent 0 34%),
 		radial-gradient(circle at 100% 100%, rgba(117, 153, 255, 0.12), transparent 0 38%),
 		rgba(255, 255, 255, 0.03);
+}
+
+.postometro-empty__illustration {
+	display: none;
+}
+
+@media (min-width: 64rem) {
+  .postometro-empty--idle:has(.postometro-empty__illustration) {
+    padding-inline-end: 15rem;
+  }
+
+  .postometro-empty__illustration {
+		display: block;
+		position: absolute;
+    inset-inline-end: -0.15rem;
+    inset-block-start: 0.75rem;
+    width: 14.5rem;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	.postometro-empty__illustration img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 }
 
 .postometro-loading {
@@ -9837,6 +9915,10 @@ img {
 
 	.postometro-hero {
 		grid-template-columns: 1fr;
+	}
+
+	.postometro-hero__art {
+		display: none;
 	}
 
 	.postometro-choice-grid--company {

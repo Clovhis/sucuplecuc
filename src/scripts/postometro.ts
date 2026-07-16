@@ -173,6 +173,9 @@ function initPostometro(
 				<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
 					<h3>Listo para otra búsqueda</h3>
 					<p>Con este combo nuevo, la recomendación cae recién cuando toques <strong>Buscar</strong>.</p>
+					<div class="postometro-empty__illustration" aria-hidden="true">
+						<img src="/images/postometro/postometro-eleccion.webp" alt="" width="330" height="232" loading="lazy" decoding="async" />
+					</div>
 				</section>
 			`;
 			return;
@@ -185,6 +188,9 @@ function initPostometro(
 			<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
 				<h3>La recomendación todavía no bajó</h3>
 				<p>Elegí los filtros y tocá <strong>Buscar</strong> para arrancar.</p>
+				<div class="postometro-empty__illustration" aria-hidden="true">
+					<img src="/images/postometro/postometro-eleccion.webp" alt="" width="330" height="232" loading="lazy" decoding="async" />
+				</div>
 			</section>
 		`;
 	};
