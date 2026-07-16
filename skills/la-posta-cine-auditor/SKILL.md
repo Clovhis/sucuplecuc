@@ -178,8 +178,9 @@ The poster source check is mandatory too:
 
 - treat any `poster` URL from `i.ytimg.com`, `img.youtube.com`, or containing YouTube thumbnail filenames such as `hqdefault`, `mqdefault`, `sddefault`, or `maxresdefault` as a hard error
 - treat JustWatch `/backdrop/...` and other obviously horizontal still/backdrop paths as a hard error for movie-card posters
-- prefer replacement poster URLs from JustWatch `/poster/.../s718/...`, TMDb `/t/p/w500/...`, IMDb poster media, CinesArgentinos/distributor poster assets, or official platform/distributor poster art
-- do not approve a batch when the card would display a cropped trailer frame, title card, screenshot, or horizontal still as the poster
+- prefer replacement poster URLs from official platform/distributor press art, JustWatch `/poster/.../s718/...`, TMDb `/t/p/w780/...` (or `/t/p/w500/...` only if needed), IMDb poster media, or Wikimedia official poster art; use CinesArgentinos only as a last resort
+- reject CinesArgentinos poster derivatives or any other asset with a country flag, badge, watermark, logo overlay, player control, or third-party UI treatment
+- do not approve a batch when the card would display a cropped trailer frame, title card, screenshot, horizontal still, low-resolution derivative, or branded/badged poster
 
 The people portrait/info check is mandatory too:
 

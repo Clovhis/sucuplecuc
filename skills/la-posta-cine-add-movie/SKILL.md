@@ -225,9 +225,10 @@ Poster policy (mandatory):
 
 - `poster` must be a real vertical movie poster/key art, not a trailer frame, video thumbnail, backdrop, still, logo, screenshot, or platform tile.
 - Never use YouTube thumbnail URLs in `poster`: reject `i.ytimg.com`, `img.youtube.com`, `hqdefault`, `mqdefault`, `sddefault`, `maxresdefault`, or any `/vi/<id>/...` thumbnail URL. YouTube belongs only in `trailerYoutubeId`.
-- Prefer AR-facing poster assets in this order: `JustWatch AR`, official platform/distributor page, TMDb poster image, IMDb media poster, CinesArgentinos/distributor poster, then Wikimedia official poster for older films.
-- Prefer portrait poster sizes/paths such as JustWatch `/poster/.../s718/...` or TMDb `/t/p/w500/...`. Do not use JustWatch `/backdrop/...`, YouTube thumbnails, or horizontal images as the poster card image.
-- Before commit, visually or structurally verify the poster URL is not a cropped trailer/title-card image. If only a trailer thumbnail is available, stop and keep searching; do not publish with a fake poster.
+- Prefer clean, high-resolution assets in this order: official platform/distributor press art, `JustWatch AR`, TMDb poster image, IMDb media poster, then Wikimedia official poster for older films. Use CinesArgentinos only as a last resort when no clean alternative exists.
+- Prefer portrait poster sizes/paths such as JustWatch `/poster/.../s718/...` or TMDb `/t/p/w780/...` (use `/t/p/w500/...` only when `w780` is unavailable). Do not use JustWatch `/backdrop/...`, YouTube thumbnails, or horizontal images as the poster card image.
+- Reject a poster that includes a site badge, country flag, watermark, logo overlay, player control, or other third-party UI treatment. In particular, do not use CinesArgentinos' poster derivatives that carry the Argentine flag overlay.
+- Before commit, visually verify the selected source is a full, unbranded vertical poster and not a cropped trailer/title-card image. If only a low-resolution, badged, or trailer-thumbnail image is available, stop and keep searching; do not publish it.
 
 Release date policy for Astro 7 (mandatory):
 
