@@ -17,6 +17,7 @@ import {
 } from '../../lib/movies';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
+import MovieReaction from '../../components/MovieReaction.astro';
 import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
 import Lagrimometro from '../../components/Lagrimometro.astro';
@@ -768,6 +769,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						}
 					</div>
 				</section>
+				<MovieReaction movie={movie} />
 				{
 					groupedAwards.length > 0 && (
 						<section class="movie-detail__awards-card" aria-label="Premios y galardones">

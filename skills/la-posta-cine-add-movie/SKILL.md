@@ -42,6 +42,15 @@ Movie detail pages already include a global Share panel for every `/peliculas/<s
 
 Comunidad is also automatic: `src/pages/comunidad/peliculas/[slug].astro` generates one discussion route for every entry returned by `getMovies()`. A new movie must therefore expose `/comunidad/peliculas/<slug>/` after the build; do not create a Supabase thread, add community fields to movie JSON, or change Comunidad UI/code. The first visitor message creates the unique thread.
 
+La reacción editorial también es automática: cada ficha muestra debajo de la reseña y del elenco un panel ilustrado de ancho completo, resuelto globalmente desde `movie.verdict`. No agregues campos, slugs de reacción, imágenes por película ni texto duplicado al JSON. Elegí correctamente el `verdict`, porque determina el panel que verá el lector:
+
+- `recomendada` → “Mirala”, personajes aprobando / pulgar arriba.
+- `zafa` → “Zafa”, gesto de más o menos.
+- `no_recomendada` → “Mejor pasá”, pulgar abajo o rechazo.
+- `basura_atomica` → “Ni te gastes”, pulgar abajo o rechazo.
+
+La variación de dibujo se selecciona de forma estable con el slug de la película; no hace falta ni corresponde configurarla durante una carga de contenido.
+
 Allowed paths:
 
 - `src/data/movies/**`
@@ -602,6 +611,17 @@ Map user language to internal verdict:
 Keep internal `verdict` stable.
 Use `verdictLabel` for colloquial display override.
 
+### Reacción editorial de ficha (mandatory)
+
+El `verdict` no sólo alimenta la insignia de catálogo: también el panel visual “El equipo dice” de la ficha. Antes de cerrar una carga, verificá que el veredicto elegido refleje honestamente la reseña y la indicación del usuario; no lo cambies para forzar un dibujo o un color. La reacción se deriva siempre de este mapeo global:
+
+- `recomendada` → `Mirala`.
+- `zafa` → `Zafa`.
+- `no_recomendada` → `Mejor pasá`.
+- `basura_atomica` → `Ni te gastes`.
+
+No agregues `reaction`, `reactionSlug`, `reactionImage`, `teamReaction`, textos de “Mirala” ni variantes equivalentes al JSON. Después del build, confirmá que `dist/peliculas/<slug>/index.html` contiene `movie-reaction` y el texto derivado correspondiente.
+
 Score-driven mapping policy (mandatory when a numeric reception score is used in batch updates):
 
 - Normalize external reception score to a `0..10` scale.
@@ -657,7 +677,7 @@ Run these checks in order:
 npm run enrich-people -- --movie <slug>
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json
 npm run build
-node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json --skip-youtube --verify-community-build
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json --skip-youtube --verify-community-build --verify-reaction-build
 ```
 
 If build fails, abort. Do not edit site code.
@@ -749,6 +769,7 @@ Return all of the following:
 - [ ] `releasePlatform` / optional `releasePlatforms` resolved with AR evidence and mapping flow (not defaulted blindly)
 - [ ] Multi-platform titles keep max `2` labels total and never combine another provider with `Otras plataformas`
 - [ ] Slug is unique and stable (required for Supabase rating linkage)
+- [ ] El `verdict` es editorialmente correcto y la ficha construida muestra su reacción automática (`Mirala` / `Zafa` / `Mejor pasá` / `Ni te gastes`), sin campos de reacción en el JSON
 - [ ] Lagrimómetro eligibility checked from primary `category`; no manual lagrimometro field added
 - [ ] Jajámetro eligibility checked from primary `category`; no manual jajametro field added; never shown together with lagrimómetro
 - [ ] Cagazómetro eligibility checked from primary `category`; no manual cagazometro field added; never shown together with lagrimómetro or jajámetro

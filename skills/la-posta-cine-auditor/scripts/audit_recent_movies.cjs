@@ -153,6 +153,21 @@ const DISALLOWED_SHARE_FIELDS = [
 	'copyUrl',
 	'canonicalUrl',
 ];
+const DISALLOWED_REACTION_FIELDS = [
+	'reaction',
+	'reactionSlug',
+	'reactionImage',
+	'reactionCopy',
+	'teamReaction',
+	'teamReactionSlug',
+	'teamReactionImage',
+];
+const REACTION_BY_VERDICT = {
+	recomendada: { label: 'Mirala', kind: 'up' },
+	zafa: { label: 'Zafa', kind: 'meh' },
+	no_recomendada: { label: 'Mejor pasá', kind: 'down' },
+	basura_atomica: { label: 'Ni te gastes', kind: 'down' },
+};
 const OPAQUE_VERDICT_LABEL_TOKENS = [
 	'seca',
 	'calida',
@@ -252,6 +267,7 @@ function parseArgs(argv) {
 		format: 'text',
 		skipYoutube: false,
 		verifyCommunityBuild: false,
+		verifyReactionBuild: false,
 	};
 
 	for (let index = 0; index < argv.length; index += 1) {
@@ -270,6 +286,8 @@ function parseArgs(argv) {
 			args.skipYoutube = true;
 		} else if (arg === '--verify-community-build') {
 			args.verifyCommunityBuild = true;
+		} else if (arg === '--verify-reaction-build') {
+			args.verifyReactionBuild = true;
 		} else if (arg === '--all') {
 			args.all = true;
 		} else if (arg === '--help' || arg === '-h') {
@@ -298,6 +316,7 @@ function usage() {
 			'  --format <type>      text | json. Default: text',
 			'  --skip-youtube       Skip YouTube oEmbed checks.',
 			'  --verify-community-build  Require the built per-movie Comunidad route in dist/.',
+			'  --verify-reaction-build   Require the verdict-derived reaction panel in the built detail route.',
 		].join('\n'),
 	);
 }
@@ -864,6 +883,20 @@ function validateShareFields(movie, candidatePath, findings) {
 	}
 }
 
+function validateReactionFields(movie, candidatePath, findings) {
+	for (const field of DISALLOWED_REACTION_FIELDS) {
+		if (Object.prototype.hasOwnProperty.call(movie, field)) {
+			addFinding(
+				findings,
+				'error',
+				'manual-reaction-field',
+				candidatePath,
+				`Do not add "${field}" to movie JSON. The global reaction panel derives its copy and illustration from verdict and slug.`,
+			);
+		}
+	}
+}
+
 function isMarvelOrDcSuperheroMovie(movie) {
 	const taxonomyText = normalizeText([movie.category || '', ...cleanTaxonomyList(movie.genres), ...cleanTaxonomyList(movie.subgenres)].join(' '));
 	if (taxonomyText.includes('animacion') || taxonomyText.includes('animation') || taxonomyText.includes('anime')) return false;
@@ -904,6 +937,39 @@ function validateCommunityBuildRoute(movie, candidatePath, findings) {
 	}
 }
 
+function validateReactionBuildRoute(movie, candidatePath, findings) {
+	const slug = typeof movie.slug === 'string' ? movie.slug.trim() : '';
+	const reaction = REACTION_BY_VERDICT[movie.verdict];
+	if (!slug || !reaction) return;
+
+	const routePath = path.join('dist', 'peliculas', encodeURIComponent(slug), 'index.html');
+	if (!fs.existsSync(routePath)) {
+		addFinding(
+			findings,
+			'error',
+			'missing-reaction-build-route',
+			candidatePath,
+			`Expected built movie detail route is missing: ${routePath}. Run npm run build and confirm the movie slug is valid.`,
+		);
+		return;
+	}
+
+	const builtHtml = fs.readFileSync(routePath, 'utf8');
+	if (!builtHtml.includes('movie-reaction')) {
+		addFinding(findings, 'error', 'missing-reaction-panel', candidatePath, `Built detail route is missing the global movie-reaction panel: ${routePath}.`);
+		return;
+	}
+	if (!builtHtml.includes(`movie-reaction--${reaction.kind}`) || !builtHtml.includes(reaction.label)) {
+		addFinding(
+			findings,
+			'error',
+			'reaction-panel-mismatch',
+			candidatePath,
+			`Built reaction panel must render "${reaction.label}" with the ${reaction.kind} state for verdict "${movie.verdict}".`,
+		);
+	}
+}
+
 function validateMovieShape(movie, candidatePath, catalogText, findings, knownMovieSlugs) {
 	const requiredStrings = [
 		'slug',
@@ -923,6 +989,8 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 			addFinding(findings, 'error', 'missing-field', candidatePath, `Missing or empty string field "${field}".`);
 		}
 	}
+
+	validateReactionFields(movie, candidatePath, findings);
 
 	if (typeof movie.audienceRating !== 'string' || !AUDIENCE_RATING_PATTERN.test(movie.audienceRating.trim())) {
 		addFinding(findings, 'error', 'invalid-audience-rating', candidatePath, 'audienceRating must be `ATP` or `+<edad>`.');
@@ -1797,6 +1865,9 @@ async function auditCandidates(args) {
 		validateMovieShape(movie, candidate, catalogText, findings, knownMovieSlugs);
 		if (args.verifyCommunityBuild) {
 			validateCommunityBuildRoute(movie, candidate, findings);
+		}
+		if (args.verifyReactionBuild) {
+			validateReactionBuildRoute(movie, candidate, findings);
 		}
 		validatePeoplePool(movie, candidate, findings, peopleCatalog, peopleCatalogIndex, exclusiveProfileIndex);
 		const trailerId = validateTrailerId(movie, candidate, findings);

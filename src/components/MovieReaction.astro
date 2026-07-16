@@ -1,0 +1,86 @@
+---
+import type { Movie } from '../types/movie';
+
+type Props = {
+	movie: Pick<Movie, 'slug' | 'verdict'>;
+};
+
+const { movie } = Astro.props as Props;
+
+const reactionByVerdict = {
+	recomendada: {
+		label: 'Mirala',
+		detail: 'El equipo la banca: pulgar arriba y plan de película resuelto.',
+		kind: 'up',
+		images: [
+			{
+				src: '/images/reactions/recomendada-duo.webp',
+				alt: 'Dos personajes de Cine Posta celebran; uno levanta el pulgar.',
+			},
+			{
+				src: '/images/reactions/recomendada-trio.webp',
+				alt: 'Tres personajes de Cine Posta festejan una recomendación.',
+			},
+		],
+	},
+	zafa: {
+		label: 'Zafa',
+		detail: 'No está mal, pero tampoco es para salir corriendo a verla.',
+		kind: 'meh',
+		images: [
+			{
+				src: '/images/reactions/zafa-duo.webp',
+				alt: 'Dos personajes de Cine Posta hacen un gesto de más o menos.',
+			},
+			{
+				src: '/images/reactions/zafa-solo.webp',
+				alt: 'Un personaje de Cine Posta duda con gesto de más o menos.',
+			},
+		],
+	},
+	no_recomendada: {
+		label: 'Mejor pasá',
+		detail: 'El equipo no la compra: pulgar abajo y a buscar otra.',
+		kind: 'down',
+		images: [
+			{
+				src: '/images/reactions/no-recomendada-duo.webp',
+				alt: 'Personajes de Cine Posta rechazan una película; uno se tapa la nariz y otra hace pulgar abajo.',
+			},
+			{
+				src: '/images/reactions/no-recomendada-solo.webp',
+				alt: 'Un personaje de Cine Posta rechaza una película con pulgar abajo.',
+			},
+		],
+	},
+	basura_atomica: {
+		label: 'Ni te gastes',
+		detail: 'Acá el equipo es unánime: pulgar abajo y a otra cosa.',
+		kind: 'down',
+		images: [
+			{
+				src: '/images/reactions/no-recomendada-duo.webp',
+				alt: 'Personajes de Cine Posta rechazan una película; uno se tapa la nariz y otra hace pulgar abajo.',
+			},
+			{
+				src: '/images/reactions/no-recomendada-solo.webp',
+				alt: 'Un personaje de Cine Posta rechaza una película con pulgar abajo.',
+			},
+		],
+	},
+} as const;
+
+const reaction = reactionByVerdict[movie.verdict];
+const imageIndex = Array.from(movie.slug).reduce((total, character) => total + character.charCodeAt(0), 0) % reaction.images.length;
+const image = reaction.images[imageIndex];
+const headingId = `team-reaction-${movie.slug}`;
+---
+
+<section class={`movie-reaction movie-reaction--${reaction.kind}`} aria-labelledby={headingId}>
+	<div class="movie-reaction__copy">
+		<p class="movie-reaction__kicker">El equipo dice</p>
+		<h2 id={headingId}>{reaction.label}</h2>
+		<p>{reaction.detail}</p>
+	</div>
+	<img class="movie-reaction__art" src={image.src} alt={image.alt} width="1536" height="1024" loading="lazy" decoding="async" />
+</section>

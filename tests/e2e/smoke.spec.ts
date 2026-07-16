@@ -38,6 +38,39 @@ test('movie detail page renders a known title', async ({ page }) => {
   await expect(page.locator('body')).toContainText(/Akira/i);
 });
 
+test('movie detail reaction follows the editorial verdict', async ({ page }) => {
+	const cases = [
+		{ path: '/peliculas/akira-1988/', label: 'Mirala', art: /recomendada-/ },
+		{ path: '/peliculas/1941-1979/', label: 'Zafa', art: /zafa-/ },
+		{ path: '/peliculas/a-minecraft-movie-2025/', label: 'Mejor pasá', art: /no-recomendada-/ },
+	];
+
+	for (const reaction of cases) {
+		const response = await page.goto(reaction.path, { waitUntil: 'domcontentloaded' });
+		expect(response?.ok()).toBeTruthy();
+
+		const card = page.locator('.movie-reaction');
+		await expect(card.getByRole('heading', { name: reaction.label })).toBeVisible();
+		await expect(card.locator('img')).toHaveAttribute('src', reaction.art);
+	}
+});
+
+test('movie reaction follows the review and the featured cast', async ({ page }) => {
+	await page.goto('/peliculas/la-odisea-2026/', { waitUntil: 'domcontentloaded' });
+
+	const readingOrder = await page.locator('.movie-detail__panel').evaluate((panel) =>
+		Array.from(panel.querySelectorAll('.movie-detail__review-card, .movie-detail__people-panel, .movie-reaction')).map((element) =>
+			element.className,
+		),
+	);
+
+	expect(readingOrder).toEqual([
+		'movie-detail__review-card',
+		'movie-detail__people-panel',
+		'movie-reaction movie-reaction--up',
+	]);
+});
+
 test('trailers play in the canonical movie page only after interaction', async ({ page }) => {
   await page.goto('/peliculas/akira-1988/', { waitUntil: 'domcontentloaded' });
 

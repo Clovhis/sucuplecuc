@@ -27,6 +27,8 @@ Use this skill after a movie add/backfill/revalidation workflow, especially when
 
 Movie detail pages have a global Share panel. This auditor treats Share code/assets (`src/pages/peliculas/[slug].astro`, `src/scripts/movie-detail.ts`, `src/styles/global.css`, `public/brand/social/**`) as site-code surface, not movie-content data. For normal movie audits, any diff touching those paths is out of scope unless the user explicitly requested Share/site UI work.
 
+Movie detail pages also have a global illustrated reaction panel (“El equipo dice”) below the review and the featured cast. It is derived exclusively from `verdict` and the movie slug; normal content audits must not add reaction fields, per-movie reaction images or reaction copy to JSON. Expected output mapping is `recomendada` → `Mirala`, `zafa` → `Zafa`, `no_recomendada` → `Mejor pasá`, and `basura_atomica` → `Ni te gastes`.
+
 Allowed fix paths:
 
 - `src/data/movies/**`
@@ -110,6 +112,7 @@ The bundled script checks:
 - `verdictLabel` sanity so the badge reads like a quality signal instead of metadata
 - `verdictLabel` hard cap of `21` visible characters so the card badge never clips
 - `verdictLabel` readability so the badge says clearly if the movie is buena, pasable o mala
+- reaction-panel compatibility: the `verdict` must be one of the supported editorial states, no manual `reaction`, `reactionSlug`, `reactionImage`, `teamReaction` or equivalent reaction fields may exist in movie JSON, and the built detail route must contain the global `movie-reaction` panel with the matching verdict copy
 - platform labels against the site allowlist
 - `releasePlatform` / `releasePlatforms` consistency: no duplicates, max `2` labels total, `releasePlatform` preserved as primary, and `Otras plataformas` kept exclusive
 - Argentine audience title drift: `title` should reflect the name used in Argentina, while `originalTitle` keeps the source/original title
@@ -133,6 +136,13 @@ The `verdictLabel` readability check is mandatory:
 - repetition is allowed when the wording is clear and useful
 - prefer short direct labels like `RECOMENDADA`, `ESTA BUENA`, `PASABLE`, `NO LA MIRES`, `MALA`, `MALISIMA`, `BASURA TOTAL`
 - legendary all-timer movies should be recognized with labels like `LEGENDARIA`, `OBRA MAESTRA` or `CLASICO TOTAL`, not downgraded to a generic `ESTA BUENA`
+
+The reaction-panel check is mandatory too:
+
+- treat an unsupported or missing `verdict` as a hard stop because the detail page cannot communicate the editorial signal correctly
+- treat any manual reaction JSON field (`reaction`, `reactionSlug`, `reactionImage`, `teamReaction`, or equivalent) as a hard stop; the panel is global and derives its content from `verdict`
+- after a successful build, inspect each audited `dist/peliculas/<slug>/index.html` and require `movie-reaction` plus the matching copy: `Mirala` for `recomendada`, `Zafa` for `zafa`, `Mejor pasá` for `no_recomendada`, `Ni te gastes` for `basura_atomica`
+- do not alter the verdict merely to select a different illustration; the review and editorial criteria remain the source of truth
 
 The third-party mention check is also mandatory:
 
@@ -236,7 +246,7 @@ If the script reports fixable issues:
 1. Edit only affected movie JSON files, `src/data/people.json`, local `public/people/**` files and, if needed, `docs/movie-catalog-reference.md`
 2. Re-run the auditor without skipping the mandatory batch score/badge check
 3. Run `npm run build`
-4. Re-run the candidate audit with `--skip-youtube --verify-community-build` to confirm the built `/comunidad/peliculas/<slug>/` route exists
+4. Re-run the candidate audit with `--skip-youtube --verify-community-build --verify-reaction-build` to confirm the built `/comunidad/peliculas/<slug>/` route and verdict-derived reaction panel exist
 5. Confirm no forbidden path changed
 
 ### 5. Output
@@ -254,4 +264,5 @@ Report:
 - explicit confirmation that no audited movie JSON contains manual Share/social fields and no Share UI/assets were changed in a content-only audit
 - explicit confirmation that every audited movie has its built `/comunidad/peliculas/<slug>/` route, without a manual Supabase thread, custom Comunidad field, or Comunidad UI/code change
 - explicit confirmation that any supported subgenre signal now lives in `subgenres` with deliberate labeling instead of being hidden only in `genres`/`category`
+- explicit confirmation that every audited built detail route renders the verdict-derived reaction panel and that no movie JSON contains manual reaction data
 
