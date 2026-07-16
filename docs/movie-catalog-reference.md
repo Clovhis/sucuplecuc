@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-14. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-16. Fuente: src/data/movies/*.json
 
-Total de peliculas: 975
+Total de peliculas: 974
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -50,7 +50,6 @@ Total de peliculas: 975
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
-| 2026 | La Odisea | the-odyssey-2026 | Aventura | Otras plataformas | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
