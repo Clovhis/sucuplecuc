@@ -1,5 +1,4 @@
 import type { APIRoute } from 'astro';
-import { stat } from 'node:fs/promises';
 import { getMoviePath, getMovies } from '../lib/movies';
 import { getPersonPath, getPersonProfiles, isPersonProfileIndexable } from '../lib/people';
 import {
@@ -32,73 +31,29 @@ function escapeXml(value: string): string {
 		.replace(/>/g, '&gt;');
 }
 
-function toLastMod(value: Date): string {
-	return value.toISOString();
-}
-
-async function getFileLastMod(pathname: string): Promise<string | undefined> {
-	try {
-		const fileStats = await stat(pathname);
-		return toLastMod(fileStats.mtime);
-	} catch {
-		return undefined;
-	}
-}
-
 export const GET: APIRoute = async () => {
 	const movies = getMovies();
 	const people = getPersonProfiles().filter(isPersonProfileIndexable);
-	const movieEntries = await Promise.all(
-		movies.map(async (movie) => ({
-			pathname: getMoviePath(movie.slug),
-			lastmod: await getFileLastMod(`src/data/movies/${movie.slug}.json`),
-		})),
-	);
-	const personEntries = await Promise.all(
-		people.map(async (person) => ({
-			pathname: getPersonPath(person.slug),
-			lastmod: await getFileLastMod('src/data/personProfiles.ts'),
-		})),
-	);
-	const homeLastMod =
-		(await getFileLastMod('src/pages/index.astro')) ??
-		movieEntries
-			.map((entry) => entry.lastmod)
-			.filter((value): value is string => Boolean(value))
-			.sort()
-			.at(-1);
-	const aboutLastMod = await getFileLastMod('src/pages/sobre-cine-posta.astro');
-	const contactLastMod = await getFileLastMod('src/pages/contacto.astro');
-	const communityLastMod = await getFileLastMod('src/pages/comunidad.astro');
-	const copyrightLastMod = await getFileLastMod('src/pages/copyright-y-uso-de-material.astro');
-	const editorialPolicyLastMod = await getFileLastMod('src/pages/politica-editorial.astro');
-	const editorLastMod = await getFileLastMod('src/pages/editor/leonardo-vargas.astro');
-	const methodologyLastMod = await getFileLastMod('src/pages/como-funciona.astro');
-	const peopleIndexLastMod = await getFileLastMod('src/pages/personas/index.astro');
-	const privacyLastMod = await getFileLastMod('src/pages/politica-de-privacidad.astro');
-	const sourcesLastMod = await getFileLastMod('src/pages/fuentes-y-datos.astro');
-	const postometroLastMod = await getFileLastMod('src/pages/que-miro-hoy.astro');
 	const entries = [
-		{ pathname: '/', lastmod: homeLastMod },
-		{ pathname: QUE_MIRO_HOY_PATH, lastmod: postometroLastMod },
-		{ pathname: PEOPLE_PATH, lastmod: peopleIndexLastMod },
-		{ pathname: ABOUT_PATH, lastmod: aboutLastMod },
-		{ pathname: METHODOLOGY_PATH, lastmod: methodologyLastMod },
-		{ pathname: EDITORIAL_POLICY_PATH, lastmod: editorialPolicyLastMod },
-		{ pathname: SOURCES_AND_DATA_PATH, lastmod: sourcesLastMod },
-		{ pathname: COPYRIGHT_PATH, lastmod: copyrightLastMod },
-		{ pathname: CONTACT_PATH, lastmod: contactLastMod },
-		{ pathname: EDITOR_PATH, lastmod: editorLastMod },
-		{ pathname: COMMUNITY_PATH, lastmod: communityLastMod },
-		{ pathname: PRIVACY_PATH, lastmod: privacyLastMod },
-		...personEntries,
-		...movieEntries,
+		{ pathname: '/' },
+		{ pathname: QUE_MIRO_HOY_PATH },
+		{ pathname: PEOPLE_PATH },
+		{ pathname: ABOUT_PATH },
+		{ pathname: METHODOLOGY_PATH },
+		{ pathname: EDITORIAL_POLICY_PATH },
+		{ pathname: SOURCES_AND_DATA_PATH },
+		{ pathname: COPYRIGHT_PATH },
+		{ pathname: CONTACT_PATH },
+		{ pathname: EDITOR_PATH },
+		{ pathname: COMMUNITY_PATH },
+		{ pathname: PRIVACY_PATH },
+		...people.map((person) => ({ pathname: getPersonPath(person.slug) })),
+		...movies.map((movie) => ({ pathname: getMoviePath(movie.slug) })),
 	];
 	const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries
 		.map((entry) => {
 			const loc = `  <url><loc>${escapeXml(toAbsoluteUrl(entry.pathname))}</loc>`;
-			const lastmod = entry.lastmod ? `<lastmod>${escapeXml(entry.lastmod)}</lastmod>` : '';
-			return `${loc}${lastmod}</url>`;
+			return `${loc}</url>`;
 		})
 		.join('\n')}\n</urlset>\n`;
 

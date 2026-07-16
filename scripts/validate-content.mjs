@@ -190,6 +190,7 @@ function main() {
 		run('npm', ['run', 'audit:profile-originality', '--', '--require-dist']);
 		run('npm', ['run', 'validate:adsense-coverage']);
 		run('npm', ['run', 'validate:public-output']);
+		run('npm', ['run', 'validate:sitemap-indexability']);
 	}
 }
 

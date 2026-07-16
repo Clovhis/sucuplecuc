@@ -28,6 +28,7 @@
     "audit:profile-originality": "node --experimental-strip-types ./scripts/validate-person-profile-originality.mjs",
     "validate:content": "node ./scripts/validate-content.mjs",
     "validate:public-output": "node ./scripts/validate-public-output.mjs",
+    "validate:sitemap-indexability": "node ./scripts/validate-sitemap-indexability.mjs",
     "playwright:install": "playwright install chromium firefox webkit",
     "playwright:verify": "node ./scripts/verify-playwright.mjs",
     "test:e2e": "npm run build && playwright test",
