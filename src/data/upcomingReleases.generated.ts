@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-07-15T13:31:39.602Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-07-16T15:35:33.431Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -17,8 +17,8 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"releaseDate": "2026-08-06",
 		"videoUrl": "https://www.youtube.com/watch?v=f0ptq0Lzdh8",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/szKv713FcUXx6hcfdY369vtkmzr.jpg",
-		"synopsis": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking...",
-		"sourceUrl": "https://www.themoviedb.org/movie/1127384-deep-water"
+		"synopsis": "Un grupo de pasajeros internacionales que viaja de Los Ángeles a Shanghái debe aterrizar de emergencia en aguas infestadas de tiburones. Para salir con vida del avión que se hunde, tendrán que dejar de lado sus diferencias y organizarse.",
+		"sourceUrl": "https://www.themoviedb.org/movie/1127384-deep-water?language=es-AR&region=AR"
 	},
 	{
 		"slug": "spider-man-brand-new-day",
@@ -26,8 +26,8 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"releaseDate": "2026-07-30",
 		"videoUrl": "https://www.youtube.com/watch?v=62bIsvRcPv0",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
-		"synopsis": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only...",
-		"sourceUrl": "https://www.themoviedb.org/movie/969681-spider-man-brand-new-day"
+		"synopsis": "Peter Parker pelea contra el crimen como Spider-Man en un mundo que ya no lo recuerda. Ver a sus viejos amigos seguir adelante sin él lo empuja a un cambio que quizá no pueda controlar.",
+		"sourceUrl": "https://www.themoviedb.org/movie/969681-spider-man-brand-new-day?language=es-AR&region=AR"
 	},
 	{
 		"slug": "the-invite",
@@ -35,8 +35,8 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"releaseDate": "2026-08-06",
 		"videoUrl": "https://www.youtube.com/watch?v=nelkiuezJxg",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
-		"synopsis": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
-		"sourceUrl": "https://www.themoviedb.org/movie/950028-the-invite"
+		"synopsis": "El matrimonio de Joe y Angela atraviesa un momento frágil. Cuando invitan a cenar a sus enigmáticos vecinos de arriba, la noche toma un rumbo inesperado.",
+		"sourceUrl": "https://www.themoviedb.org/movie/950028-the-invite?language=es-AR&region=AR"
 	},
 	{
 		"slug": "pressure",
@@ -44,8 +44,8 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"releaseDate": "2026-08-06",
 		"videoUrl": "https://www.youtube.com/watch?v=EBh1LGRwiis",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
-		"synopsis": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the...",
-		"sourceUrl": "https://www.themoviedb.org/movie/1318413-pressure"
+		"synopsis": "En las 72 horas previas al Día D, el general Dwight D. Eisenhower y el capitán James Stagg enfrentan una decisión imposible: lanzar la invasión marítima más peligrosa de la historia o arriesgar el destino del mundo libre.",
+		"sourceUrl": "https://www.themoviedb.org/movie/1318413-pressure?language=es-AR&region=AR"
 	},
 	{
 		"slug": "yon-lapsi",
@@ -53,7 +53,8 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"releaseDate": "2026-08-06",
 		"videoUrl": "https://www.youtube.com/watch?v=dWePsu_Kd9c",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/jVeYae744cR2ogx9ShQ3qXOcRiZ.jpg",
-		"synopsis": "In Finnish forest, Saga and her husband Jon embark on a new chapter as parents. But Saga's joy is overshadowed by a chilling suspicion about their newborn, unbeknownst to Jon, causing a rift as she alone grapples with the disturbing truth.",
-		"sourceUrl": "https://www.themoviedb.org/movie/964849-yon-lapsi"
+		"synopsis": "En un bosque finlandés, Saga y su marido Jon empiezan una nueva etapa como padres. Pero una sospecha inquietante sobre su bebé recién nacido se instala en Saga y abre una grieta entre los dos.",
+		"sourceUrl": "https://www.themoviedb.org/movie/964849-yon-lapsi?language=es-AR&region=AR"
 	}
 ];
+

@@ -5,7 +5,9 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'src/data/upcomingReleases.generated.ts');
-const UPCOMING_URL = 'https://www.themoviedb.org/movie/upcoming';
+const TMDB_LANGUAGE = 'es-AR';
+const TMDB_REGION = 'AR';
+const UPCOMING_URL = `https://www.themoviedb.org/movie/upcoming?language=${TMDB_LANGUAGE}&region=${TMDB_REGION}`;
 const MAX_SOURCE_ITEMS = 24;
 const MAX_RELEASES = 16;
 const STRICT_MODE = process.env.UPCOMING_RELEASES_STRICT === '1';
@@ -15,6 +17,33 @@ const REQUEST_HEADERS = {
 		'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
 	'accept-language': 'es-AR,es;q=0.9,en;q=0.8',
 };
+
+// Las fichas de TMDB sin traducción suelen devolver el texto original en inglés,
+// aun cuando se pide la página en español. Estas versiones se revisaron para los
+// estrenos que ya están publicados; para el resto se usa sólo una sinopsis que
+// TMDB entregue efectivamente en castellano.
+const CURATED_SPANISH_SYNOPSES = new Map([
+	[
+		'deep-water',
+		'Un grupo de pasajeros internacionales que viaja de Los Ángeles a Shanghái debe aterrizar de emergencia en aguas infestadas de tiburones. Para salir con vida del avión que se hunde, tendrán que dejar de lado sus diferencias y organizarse.',
+	],
+	[
+		'spider-man-brand-new-day',
+		'Peter Parker pelea contra el crimen como Spider-Man en un mundo que ya no lo recuerda. Ver a sus viejos amigos seguir adelante sin él lo empuja a un cambio que quizá no pueda controlar.',
+	],
+	[
+		'the-invite',
+		'El matrimonio de Joe y Angela atraviesa un momento frágil. Cuando invitan a cenar a sus enigmáticos vecinos de arriba, la noche toma un rumbo inesperado.',
+	],
+	[
+		'pressure',
+		'En las 72 horas previas al Día D, el general Dwight D. Eisenhower y el capitán James Stagg enfrentan una decisión imposible: lanzar la invasión marítima más peligrosa de la historia o arriesgar el destino del mundo libre.',
+	],
+	[
+		'yon-lapsi',
+		'En un bosque finlandés, Saga y su marido Jon empiezan una nueva etapa como padres. Pero una sospecha inquietante sobre su bebé recién nacido se instala en Saga y abre una grieta entre los dos.',
+	],
+]);
 
 function decodeHtml(value = '') {
 	return String(value)
@@ -65,6 +94,13 @@ function extractUpcomingCards(html) {
 		posterUrl: normalizeTmdbImage(match.groups?.img ?? '', 'w500'),
 		displayDate: decodeHtml(match.groups?.date ?? ''),
 	}));
+}
+
+function getLocalizedTmdbUrl(url) {
+	const localizedUrl = new URL(url);
+	localizedUrl.searchParams.set('language', TMDB_LANGUAGE);
+	localizedUrl.searchParams.set('region', TMDB_REGION);
+	return localizedUrl.toString();
 }
 
 function extractIsoReleaseDate(detailHtml, fallbackDisplayDate) {
@@ -139,6 +175,12 @@ function extractOverview(detailHtml) {
 	);
 }
 
+function looksLikeEnglishSynopsis(value) {
+	const normalized = ` ${String(value ?? '').toLowerCase().replace(/[^a-z]+/g, ' ')} `;
+	const englishMarkers = [' the ', ' and ', ' is ', ' are ', ' with ', ' when ', ' from ', ' their ', ' they ', ' his ', ' her '];
+	return englishMarkers.filter((marker) => normalized.includes(marker)).length >= 2;
+}
+
 function truncateSynopsis(value) {
 	const normalized = String(value ?? '').replace(/\s+/g, ' ').trim();
 	if (normalized.length <= 260) {
@@ -185,7 +227,8 @@ async function buildUpcomingReleases() {
 			continue;
 		}
 
-		const detailUrl = new URL(card.href, UPCOMING_URL).toString();
+		const detailPageUrl = new URL(card.href, UPCOMING_URL);
+		const detailUrl = getLocalizedTmdbUrl(detailPageUrl.toString());
 		const detailHtml = await fetchHtml(detailUrl);
 		const videoUrl = extractYoutubeVideoUrl(detailHtml);
 		const releaseDate = extractIsoReleaseDate(detailHtml, card.displayDate);
@@ -198,19 +241,23 @@ async function buildUpcomingReleases() {
 			continue;
 		}
 
-		const slug = slugify(card.href.split('/').pop()?.replace(/^\d+-/, '') || card.title);
+		const slug = slugify(detailPageUrl.pathname.split('/').pop()?.replace(/^\d+-/, '') || card.title);
 		if (!slug || seenSlugs.has(slug)) {
 			continue;
 		}
 
 		seenSlugs.add(slug);
+		const extractedSynopsis = extractOverview(detailHtml);
+		const synopsis = CURATED_SPANISH_SYNOPSES.get(slug) ??
+			(looksLikeEnglishSynopsis(extractedSynopsis) ? undefined : extractedSynopsis || undefined);
+
 		releases.push({
 			slug,
 			title: card.title,
 			releaseDate,
 			videoUrl,
 			thumbnailUrl: extractBackdropUrl(detailHtml, card.posterUrl),
-			synopsis: extractOverview(detailHtml),
+			synopsis,
 			sourceUrl: detailUrl,
 		});
 
@@ -290,3 +337,4 @@ main().catch((error) => {
 	console.error('[upcomingReleases] Error:', error);
 	process.exitCode = 1;
 });
+
