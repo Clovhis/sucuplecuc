@@ -1721,7 +1721,7 @@ img {
 	isolation: isolate;
 	gap: 0.45rem;
 	padding: 0.88rem;
-	padding-inline-end: clamp(5.2rem, 36%, 7rem);
+	padding-inline-end: clamp(5.8rem, 44%, 8rem);
 	aspect-ratio: 16 / 10;
 	border-color: rgba(255, 176, 137, 0.28);
 	background:
@@ -1742,11 +1742,12 @@ img {
 
 .home-people-showcase__cta-graphic {
 	position: absolute;
-	inset-block-start: 0.36rem;
-	inset-inline-end: 0.42rem;
-	inline-size: clamp(4.75rem, 39%, 6.7rem);
+	inset-block: 0;
+	inset-inline-end: -0.4rem;
+	inline-size: clamp(7rem, 68%, 11rem);
+	block-size: 100%;
 	pointer-events: none;
-	filter: drop-shadow(0 10px 14px rgba(7, 11, 18, 0.28));
+	filter: drop-shadow(0 8px 10px rgba(7, 11, 18, 0.24));
 	transform-origin: center;
 	transition: transform 0.18s ease;
 }
@@ -1756,64 +1757,12 @@ img {
 	transform: translateY(-2px) rotate(-2deg);
 }
 
-.home-people-showcase__cta-graphic-svg {
+.home-people-showcase__cta-graphic-image {
 	display: block;
 	inline-size: 100%;
-	block-size: auto;
-}
-
-.home-people-showcase__cta-led {
-	opacity: 0.22;
-	transform-box: fill-box;
-	transform-origin: center;
-	animation: home-people-showcase-led-blink 1.8s steps(2, end) infinite;
-}
-
-.home-people-showcase__cta-led--1 {
-	animation-delay: 0.08s;
-}
-
-.home-people-showcase__cta-led--2 {
-	animation-delay: 0.42s;
-}
-
-.home-people-showcase__cta-led--3 {
-	animation-delay: 0.18s;
-}
-
-.home-people-showcase__cta-led--4 {
-	animation-delay: 0.66s;
-}
-
-.home-people-showcase__cta-led--5 {
-	animation-delay: 0.3s;
-}
-
-.home-people-showcase__cta-led--6 {
-	animation-delay: 0.92s;
-}
-
-@keyframes home-people-showcase-led-blink {
-	0%,
-	100% {
-		opacity: 0.18;
-		transform: scale(0.92);
-	}
-
-	18%,
-	22%,
-	54%,
-	58%,
-	88% {
-		opacity: 1;
-		transform: scale(1.08);
-	}
-
-	40%,
-	72% {
-		opacity: 0.34;
-		transform: scale(0.96);
-	}
+	block-size: 100%;
+	object-fit: contain;
+	object-position: right center;
 }
 
 .home-people-showcase__image {
@@ -8731,7 +8680,31 @@ img {
 }
 
 .about-page__hero {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(13rem, 34%);
+	align-items: center;
+	gap: 1rem;
 	padding: 1.5rem;
+	overflow: hidden;
+}
+
+.about-page__hero-copy {
+	position: relative;
+	z-index: 1;
+}
+
+.about-page__hero-art {
+	align-self: stretch;
+	min-block-size: 10rem;
+	max-block-size: 15rem;
+}
+
+.about-page__hero-art img {
+	display: block;
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: contain;
+	object-position: center;
 }
 
 .about-page__kicker {
@@ -9964,6 +9937,15 @@ img {
 
 	.about-page__grid {
 		grid-template-columns: 1fr;
+	}
+
+	.about-page__hero {
+		grid-template-columns: minmax(0, 1fr) minmax(8.5rem, 38%);
+		gap: 0.5rem;
+	}
+
+	.about-page__hero-art {
+		min-block-size: 8rem;
 	}
 
 	.community-page__content {
