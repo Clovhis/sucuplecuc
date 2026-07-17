@@ -2,6 +2,7 @@ import type { Movie, MovieVerdict } from '../types/movie';
 import { GENERATED_UPCOMING_RELEASES } from '../data/upcomingReleases.generated';
 import { UPCOMING_RELEASE_FALLBACKS } from '../data/upcomingReleases';
 import { generateMovieEditorialRecommendations } from './recommendation-engine';
+import { getMoviePlatforms } from './platforms';
 
 const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) as Record<
 	string,
@@ -86,6 +87,17 @@ export interface UpcomingMovieRelease {
 	thumbnailUrl: string;
 	synopsis?: string;
 	sourceUrl?: string;
+}
+
+export interface CurrentTheatricalMovieRelease {
+	slug: string;
+	title: string;
+	releaseDate: string;
+	posterUrl: string;
+	videoUrl: string;
+	verdictLabel: string;
+	verdictClass: string;
+	platform?: string;
 }
 
 export interface WeeklyMovieSuggestion {
@@ -873,6 +885,98 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 		.slice(0, limit);
 }
 
+/**
+ * Cartelera con ficha publicada en Cine Posta. La ventana corta evita que un
+ * rótulo de cine desactualizado mantenga títulos viejos en la portada.
+ */
+export function getCurrentTheatricalMovieReleases(
+	referenceDate = new Date(),
+	limit = 12,
+	windowDays = 42,
+): CurrentTheatricalMovieRelease[] {
+	const referenceTimestamp = Date.UTC(
+		referenceDate.getUTCFullYear(),
+		referenceDate.getUTCMonth(),
+		referenceDate.getUTCDate(),
+	);
+	const earliestReleaseTimestamp = referenceTimestamp - windowDays * DAY_IN_MS;
+	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
+
+	return movies
+		.filter((movie) => {
+			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) return false;
+			const isInTheaters = movie.releasePlatform === 'Cine' || movie.releasePlatforms?.includes('Cine');
+			const releaseTimestamp = getMovieSortTimestamp(movie);
+			return isInTheaters && releaseTimestamp >= earliestReleaseTimestamp && releaseTimestamp <= referenceTimestamp;
+		})
+		.sort(
+			(left, right) =>
+				getMovieSortTimestamp(right) - getMovieSortTimestamp(left) ||
+				left.title.localeCompare(right.title, 'es'),
+		)
+		.slice(0, Math.max(1, limit))
+		.map((movie) => ({
+			slug: movie.slug,
+			title: movie.title,
+			releaseDate: movie.releaseDate!,
+			posterUrl: getPosterUrl(movie.poster),
+			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
+			verdictLabel: getVerdictLabel(movie),
+			verdictClass: getVerdictBadgeClass(movie),
+		}));
+}
+
+/**
+ * Estrenos de plataformas confirmadas. Se excluyen los rótulos genéricos y
+ * los títulos de cartelera para que las dos filas de la portada no se repitan.
+ */
+export function getCurrentStreamingMovieReleases(
+	referenceDate = new Date(),
+	limit = 12,
+	windowDays = 42,
+): CurrentTheatricalMovieRelease[] {
+	const referenceTimestamp = Date.UTC(
+		referenceDate.getUTCFullYear(),
+		referenceDate.getUTCMonth(),
+		referenceDate.getUTCDate(),
+	);
+	const earliestReleaseTimestamp = referenceTimestamp - windowDays * DAY_IN_MS;
+	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
+
+	return movies
+		.map((movie) => ({ movie, platforms: getMoviePlatforms(movie) }))
+		.filter(({ movie, platforms }) => {
+			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) return false;
+			const hasConfirmedStreamingPlatform = platforms.some(
+				(platform) => platform !== 'Cine' && platform !== 'Otras plataformas',
+			);
+			const isAlsoInTheaters = platforms.includes('Cine');
+			const releaseTimestamp = getMovieSortTimestamp(movie);
+			return (
+				hasConfirmedStreamingPlatform &&
+				!isAlsoInTheaters &&
+				releaseTimestamp >= earliestReleaseTimestamp &&
+				releaseTimestamp <= referenceTimestamp
+			);
+		})
+		.sort(
+			(left, right) =>
+				getMovieSortTimestamp(right.movie) - getMovieSortTimestamp(left.movie) ||
+				left.movie.title.localeCompare(right.movie.title, 'es'),
+		)
+		.slice(0, Math.max(1, limit))
+		.map(({ movie, platforms }) => ({
+			slug: movie.slug,
+			title: movie.title,
+			releaseDate: movie.releaseDate!,
+			posterUrl: getPosterUrl(movie.poster),
+			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
+			verdictLabel: getVerdictLabel(movie),
+			verdictClass: getVerdictBadgeClass(movie),
+			platform: platforms.find((platform) => platform !== 'Cine' && platform !== 'Otras plataformas'),
+		}));
+}
+
 function isFutureRelease(releaseDate: string, referenceTimestamp: number): boolean {
 	const timestamp = getIsoDateTimestamp(releaseDate);
 	return !Number.isNaN(timestamp) && timestamp > referenceTimestamp;
@@ -890,6 +994,19 @@ export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel' | 
 		return verdictLabel;
 	}
 	return VERDICT_LABELS[movie.verdict] ?? 'Sin definir';
+}
+
+export function getCinePostaScore(movie: Pick<Movie, 'verdict'>): number {
+	switch (movie.verdict) {
+		case 'recomendada':
+			return 4;
+		case 'zafa':
+			return 3;
+		case 'no_recomendada':
+			return 2;
+		case 'basura_atomica':
+			return 1;
+	}
 }
 
 export function isAbsoluteCinemaMovie(movie: Pick<Movie, 'verdictLabel' | 'absoluteCinema'>): boolean {

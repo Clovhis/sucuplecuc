@@ -119,6 +119,8 @@ The bundled script checks:
 - catalog sync in `docs/movie-catalog-reference.md`
 - post-build Comunidad route verification: every audited movie must generate `dist/comunidad/peliculas/<slug>/index.html`; the discussion/thread is automatic and must not be represented by manual movie JSON fields or a pre-created Supabase thread
 - poster source sanity: `poster` must be a real vertical poster/key art and must not be a YouTube trailer thumbnail, backdrop, still, logo, screenshot, or horizontal platform tile
+- current-cartelera carousel eligibility: a `Cine` entry released in the last 42 days must have its existing `releaseDate`, vertical `poster`, and `trailerYoutubeId` rendered in the homepage Cartelera carousel after build; no separate carousel data is allowed
+- current-streaming carousel eligibility: a confirmed non-theatrical platform entry released in the last 42 days must render in the homepage `Streaming` carousel after build, with its existing poster, official trailer and editorial verdict; `Otras plataformas` and dual `Cine` titles must not be added as duplicate streaming cards
 - trailer format, YouTube oEmbed reachability, title/year sanity, and YouTube search alignment for ambiguous titles
 - raw numeric score leakage in reviews
 - forbidden third-party site mentions inside reviews (`Rotten`, `Metacritic`, `IMDb`, etc.)
@@ -246,7 +248,7 @@ If the script reports fixable issues:
 1. Edit only affected movie JSON files, `src/data/people.json`, local `public/people/**` files and, if needed, `docs/movie-catalog-reference.md`
 2. Re-run the auditor without skipping the mandatory batch score/badge check
 3. Run `npm run build`
-4. Re-run the candidate audit with `--skip-youtube --verify-community-build --verify-reaction-build` to confirm the built `/comunidad/peliculas/<slug>/` route and verdict-derived reaction panel exist
+4. Re-run the candidate audit with `--skip-youtube --verify-community-build --verify-reaction-build --verify-cinema-carousel-build --verify-streaming-carousel-build` to confirm the built `/comunidad/peliculas/<slug>/` route, verdict-derived reaction panel, and any eligible current Cine or confirmed streaming entry in the homepage carousels
 5. Confirm no forbidden path changed
 
 ### 5. Output

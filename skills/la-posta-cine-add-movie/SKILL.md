@@ -171,6 +171,23 @@ Mandatory chain:
 
 If the movie resolves to a non-theatrical platform from the start, skip the cartelera revalidation and go straight to the auditor.
 
+## Homepage release carousels (mandatory for recent releases)
+
+The homepage carousel `Estrenos de cine en Argentina` is derived from published movie data; never create a second list, carousel-specific JSON field, poster, or trailer URL for it.
+
+- A verified `releasePlatform: "Cine"` (or an eligible `releasePlatforms` value), exact `releaseDate`, existing vertical `poster`, and official `trailerYoutubeId` are the only inputs.
+- Eligible releases are shown automatically for 42 days from their Argentine theatrical date. A cartelera revalidation that changes the platform removes the title automatically.
+- For every current `Cine` load, run the built-home check from the auditor after `npm run build` and confirm the title renders in the carousel.
+
+### Streaming
+
+The `Streaming — Películas para ver ahora mismo en casa` row uses the same movie data and trailer modal.
+
+- A confirmed platform such as `Netflix`, `HBO Max`, `Prime Video`, `Apple TV`, `Disney Plus`, `Paramount Plus`, `Crunchyroll`, `DGO`, `Mercado Play` or `CINE.AR`, an exact `releaseDate`, existing vertical `poster`, and official `trailerYoutubeId` are the only inputs.
+- Eligible non-theatrical releases appear automatically for 42 days from their platform date. Never add carousel-specific data, duplicate posters or a second trailer URL.
+- Do not use `Otras plataformas` to claim a streaming availability. If the title also has `Cine`, it belongs only in Cartelera to avoid a repeated card.
+- For every current confirmed streaming load, run the auditor build check after `npm run build` with `--verify-streaming-carousel-build`.
+
 ## Metadata lookup rules
 
 Find trustworthy metadata:
@@ -677,7 +694,7 @@ Run these checks in order:
 npm run enrich-people -- --movie <slug>
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json
 npm run build
-node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json --skip-youtube --verify-community-build --verify-reaction-build
+node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json --skip-youtube --verify-community-build --verify-reaction-build --verify-cinema-carousel-build --verify-streaming-carousel-build
 ```
 
 If build fails, abort. Do not edit site code.

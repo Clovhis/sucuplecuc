@@ -1,6 +1,6 @@
-import type { Movie, MovieVerdict } from '../types/movie';
+import type { Movie } from '../types/movie';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
-import { getMoviePath, getPosterUrl } from './movies';
+import { getCinePostaScore, getMoviePath, getPosterUrl } from './movies';
 import { getPersonPath } from './people';
 
 export const SITE_URL = 'https://www.cineposta.com.ar';
@@ -94,21 +94,6 @@ function createBreadcrumbListItem(position: number, name: string, itemUrl: strin
 
 function uniqueUrls(values: Array<string | undefined>): string[] {
 	return Array.from(new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value))));
-}
-
-function getReviewRatingValue(verdict: MovieVerdict): number {
-	switch (verdict) {
-		case 'recomendada':
-			return 4;
-		case 'zafa':
-			return 3;
-		case 'no_recomendada':
-			return 2;
-		case 'basura_atomica':
-			return 1;
-		default:
-			return 3;
-	}
 }
 
 function createOrganizationSchema(): StructuredDataValue {
@@ -380,7 +365,7 @@ export function createMovieStructuredData(
 				},
 				reviewRating: {
 					'@type': 'Rating',
-					ratingValue: getReviewRatingValue(movie.verdict),
+				ratingValue: getCinePostaScore(movie),
 					bestRating: 4,
 					worstRating: 1,
 				},

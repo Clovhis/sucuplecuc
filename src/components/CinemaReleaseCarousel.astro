@@ -1,0 +1,129 @@
+---
+import PlatformBadge from './PlatformBadge.astro';
+
+interface CinemaRelease {
+	slug: string;
+	title: string;
+	releaseDate: string;
+	posterUrl: string;
+	embedUrl: string;
+	watchUrl: string;
+	verdictLabel: string;
+	verdictClass: string;
+	platform?: string;
+}
+
+interface Props {
+	releases: CinemaRelease[];
+	sectionId?: string;
+	title?: string;
+	availability?: string;
+	listLabel?: string;
+	showPlatform?: boolean;
+}
+
+const {
+	releases,
+	sectionId = 'cinema-release-carousel',
+	title = 'Cartelera',
+	availability = 'Películas que están ahora mismo en el cine',
+	listLabel = 'Estrenos de cine con trailer disponible',
+	showPlatform = false,
+} = Astro.props as Props;
+const titleId = `${sectionId}-title`;
+const dialogTitleId = `${sectionId}-dialog-title`;
+
+function formatReleaseDate(value: string) {
+	const releaseDate = new Date(`${value}T00:00:00Z`);
+	if (Number.isNaN(releaseDate.getTime())) return value;
+
+	return new Intl.DateTimeFormat('es-AR', {
+		day: 'numeric',
+		month: 'short',
+		timeZone: 'UTC',
+	}).format(releaseDate);
+}
+---
+
+{
+	releases.length > 0 ? (
+		<section class="cinema-release-carousel fade-up" style="--item-delay: 105ms;" aria-labelledby={titleId} data-cinema-release-carousel={sectionId}>
+			<div class="cinema-release-carousel__header">
+				<div class="cinema-release-carousel__heading">
+					<h2 id={titleId}>{title}</h2>
+					<p class="cinema-release-carousel__availability">{availability}</p>
+				</div>
+				<div class="cinema-release-carousel__controls" role="group" aria-label={`Navegar ${title.toLocaleLowerCase('es-AR')}`}>
+					<button class="cinema-release-carousel__arrow" type="button" aria-label="Ver títulos anteriores" data-cinema-release-previous>
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14.5 5-7 7 7 7" /></svg>
+					</button>
+					<button class="cinema-release-carousel__arrow" type="button" aria-label="Ver más títulos" data-cinema-release-next>
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 5 7 7-7 7" /></svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="cinema-release-carousel__viewport" data-cinema-release-viewport>
+				<ol class="cinema-release-carousel__list" aria-label={listLabel}>
+					{releases.map((release) => (
+						<li class="cinema-release-carousel__item">
+							<button
+								class="cinema-release-carousel__card"
+								type="button"
+								aria-label={`Reproducir trailer de ${release.title}`}
+								aria-haspopup="dialog"
+								data-cinema-release-open
+								data-cinema-release-title={release.title}
+								data-cinema-release-date={release.releaseDate}
+								data-cinema-release-embed-url={release.embedUrl}
+								data-cinema-release-watch-url={release.watchUrl}
+							>
+								<span class="cinema-release-carousel__poster-wrap">
+									<img
+										class="cinema-release-carousel__poster"
+										src={release.posterUrl}
+										alt={`Póster de ${release.title}`}
+										width="342"
+										height="513"
+										loading="lazy"
+										decoding="async"
+										referrerpolicy="no-referrer"
+									/>
+									<span class="cinema-release-carousel__play" aria-hidden="true">
+										<svg viewBox="0 0 24 24"><path d="m9 6 8 6-8 6V6Z" /></svg>
+									</span>
+								</span>
+								<span class="cinema-release-carousel__date">Estreno {formatReleaseDate(release.releaseDate)}</span>
+								{showPlatform && release.platform && <PlatformBadge platform={release.platform} className="cinema-release-carousel__platform" />}
+								<span class="cinema-release-carousel__title">{release.title}</span>
+								<span class={`badge cinema-release-carousel__verdict ${release.verdictClass}`}>
+									{release.verdictLabel}
+								</span>
+							</button>
+						</li>
+					))}
+				</ol>
+			</div>
+
+			<dialog class="cinema-release-dialog" aria-labelledby={dialogTitleId} data-cinema-release-dialog>
+				<div class="cinema-release-dialog__shell">
+					<div class="cinema-release-dialog__header">
+						<div>
+							<p class="cinema-release-dialog__eyebrow" data-cinema-release-dialog-date></p>
+						<h3 id={dialogTitleId} data-cinema-release-dialog-title>Trailer oficial</h3>
+						</div>
+						<button class="cinema-release-dialog__close" type="button" aria-label="Cerrar trailer" data-cinema-release-close>
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="cinema-release-dialog__player" data-cinema-release-player></div>
+					<a class="cinema-release-dialog__youtube" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" data-cinema-release-youtube>
+						Abrir en YouTube
+					</a>
+				</div>
+			</dialog>
+		</section>
+	) : null
+}
+
+<script src="../scripts/cinema-release-carousel.ts"></script>

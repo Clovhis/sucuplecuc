@@ -2509,6 +2509,365 @@ img {
 	stroke-linejoin: round;
 }
 
+.cinema-release-carousel {
+	display: grid;
+	gap: 1rem;
+	position: relative;
+	padding: clamp(1rem, 2.4vw, 1.45rem);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	background:
+		radial-gradient(circle at 88% 4%, rgba(255, 150, 76, 0.13), transparent 28%),
+		linear-gradient(155deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.012)),
+		rgba(9, 13, 21, 0.9);
+	box-shadow: 0 20px 52px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+}
+
+.cinema-release-carousel::before {
+	content: '';
+	position: absolute;
+	inset: 0.5px 1.2rem auto;
+	block-size: 2px;
+	border-radius: 999px;
+	background: linear-gradient(90deg, #fca665, #ffdb72 42%, transparent 82%);
+	opacity: 0.82;
+}
+
+.cinema-release-carousel__header {
+	display: flex;
+	gap: 1rem;
+	align-items: end;
+	justify-content: space-between;
+	padding-block-start: 0.2rem;
+}
+
+.cinema-release-dialog__eyebrow {
+	margin: 0 0 0.28rem;
+	color: #ffbd86;
+	font-family: var(--font-mono);
+	font-size: 0.68rem;
+	font-weight: 850;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+}
+
+.cinema-release-carousel__heading {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.42rem 0.7rem;
+	align-items: baseline;
+}
+
+.cinema-release-carousel__header h2 {
+	margin: 0;
+	color: #fff9f4;
+	font-size: clamp(1.25rem, 1.4vw + 0.95rem, 1.8rem);
+	line-height: 1.12;
+}
+
+.cinema-release-carousel__availability {
+	margin: 0;
+	color: #b6c2d5;
+	font-size: clamp(0.82rem, 0.3vw + 0.76rem, 0.95rem);
+	line-height: 1.35;
+}
+
+.cinema-release-carousel__controls {
+	display: flex;
+	flex: 0 0 auto;
+	gap: 0.45rem;
+}
+
+.cinema-release-carousel__arrow,
+.cinema-release-dialog__close {
+	display: inline-grid;
+	place-items: center;
+	inline-size: 2.75rem;
+	block-size: 2.75rem;
+	padding: 0;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.055);
+	color: #fff9f4;
+	cursor: pointer;
+	transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.cinema-release-carousel__arrow svg {
+	inline-size: 1.25rem;
+	block-size: 1.25rem;
+	fill: none;
+	stroke: currentColor;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 2.25;
+}
+
+.cinema-release-carousel__arrow:hover,
+.cinema-release-carousel__arrow:focus-visible,
+.cinema-release-dialog__close:hover,
+.cinema-release-dialog__close:focus-visible {
+	transform: translateY(-1px);
+	border-color: rgba(255, 189, 134, 0.72);
+	background: rgba(255, 157, 95, 0.16);
+}
+
+.cinema-release-carousel__viewport {
+	overflow-x: auto;
+	scrollbar-width: none;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	touch-action: pan-x;
+}
+
+.cinema-release-carousel__viewport::-webkit-scrollbar {
+	display: none;
+}
+
+.cinema-release-carousel__list {
+	display: flex;
+	gap: 1rem;
+	inline-size: max-content;
+	margin: 0;
+	padding: 0.15rem 0.12rem 0.5rem;
+	list-style: none;
+}
+
+.cinema-release-carousel__item {
+	flex: 0 0 clamp(8.7rem, 17vw, 11.3rem);
+	scroll-snap-align: start;
+}
+
+.cinema-release-carousel__card {
+	display: grid;
+	gap: 0.58rem;
+	inline-size: 100%;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	text-align: start;
+	cursor: pointer;
+}
+
+.cinema-release-carousel__poster-wrap {
+	display: grid;
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 2 / 3;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 13px;
+	background: #161c26;
+	box-shadow: 0 12px 22px rgba(0, 0, 0, 0.28);
+	transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.cinema-release-carousel__poster-wrap::after {
+	content: '';
+	position: absolute;
+	inset: 36% 0 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.72));
+	pointer-events: none;
+}
+
+.cinema-release-carousel__poster {
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+	transition: transform 220ms ease;
+}
+
+.cinema-release-carousel__play {
+	display: grid;
+	place-items: center;
+	position: absolute;
+	z-index: 1;
+	inset: auto 0 0.76rem;
+	margin-inline: auto;
+	inline-size: 2.75rem;
+	block-size: 2.75rem;
+	border: 1px solid rgba(255, 255, 255, 0.52);
+	border-radius: 999px;
+	background: rgba(5, 8, 13, 0.78);
+	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.cinema-release-carousel__play svg {
+	inline-size: 1.36rem;
+	block-size: 1.36rem;
+	margin-inline-start: 0.12rem;
+	fill: currentColor;
+}
+
+.cinema-release-carousel__card:hover .cinema-release-carousel__poster-wrap,
+.cinema-release-carousel__card:focus-visible .cinema-release-carousel__poster-wrap {
+	transform: translateY(-4px);
+	border-color: rgba(255, 189, 134, 0.8);
+	box-shadow: 0 18px 30px rgba(0, 0, 0, 0.42);
+}
+
+.cinema-release-carousel__card:hover .cinema-release-carousel__poster,
+.cinema-release-carousel__card:focus-visible .cinema-release-carousel__poster {
+	transform: scale(1.035);
+}
+
+.cinema-release-carousel__card:hover .cinema-release-carousel__play,
+.cinema-release-carousel__card:focus-visible .cinema-release-carousel__play {
+	transform: scale(1.08);
+	background: #ec6f2a;
+}
+
+.cinema-release-carousel__date {
+	color: #ffbe87;
+	font-family: var(--font-mono);
+	font-size: 0.62rem;
+	font-weight: 800;
+	letter-spacing: 0.045em;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.cinema-release-carousel__platform.platform-chip {
+	justify-self: flex-start;
+	inline-size: fit-content;
+}
+
+.cinema-release-carousel__platform .platform-chip__logo {
+	max-block-size: 1rem;
+}
+
+.cinema-release-carousel__title {
+	overflow: hidden;
+	color: #f4f7fc;
+	font-size: 0.91rem;
+	font-weight: 750;
+	line-height: 1.22;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.cinema-release-carousel__verdict {
+	align-self: flex-start;
+	justify-self: flex-start;
+	inline-size: fit-content;
+	max-inline-size: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.cinema-release-dialog {
+	inline-size: min(92vw, 58rem);
+	max-inline-size: none;
+	padding: 0;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 18px;
+	background: #0d121c;
+	box-shadow: 0 32px 90px rgba(0, 0, 0, 0.72);
+	color: #f8fbff;
+}
+
+.cinema-release-dialog::backdrop {
+	background: rgba(2, 5, 10, 0.78);
+	backdrop-filter: blur(5px);
+}
+
+.cinema-release-dialog__shell {
+	display: grid;
+	gap: 1rem;
+	padding: clamp(0.85rem, 2vw, 1.2rem);
+}
+
+.cinema-release-dialog__header {
+	display: flex;
+	gap: 1rem;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.cinema-release-dialog__header h3 {
+	margin: 0;
+	font-size: clamp(1.1rem, 1.4vw + 0.9rem, 1.55rem);
+	line-height: 1.15;
+}
+
+.cinema-release-dialog__eyebrow {
+	margin-block-end: 0.22rem;
+}
+
+.cinema-release-dialog__close {
+	flex: 0 0 auto;
+	font-size: 1.75rem;
+	line-height: 1;
+}
+
+.cinema-release-dialog__player {
+	overflow: hidden;
+	aspect-ratio: 16 / 9;
+	border-radius: 11px;
+	background: #000;
+}
+
+.cinema-release-dialog__player iframe {
+	display: block;
+	inline-size: 100%;
+	block-size: 100%;
+	border: 0;
+}
+
+.cinema-release-dialog__youtube {
+	justify-self: start;
+	padding: 0.62rem 0.8rem;
+	border-radius: 8px;
+	color: #ffcca6;
+	font-family: var(--font-mono);
+	font-size: 0.68rem;
+	font-weight: 800;
+	letter-spacing: 0.045em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.cinema-release-dialog__youtube:hover,
+.cinema-release-dialog__youtube:focus-visible {
+	background: rgba(255, 160, 101, 0.12);
+	color: #fff3e9;
+}
+
+@media (max-width: 34rem) {
+	.cinema-release-carousel__header {
+		align-items: start;
+	}
+
+	.cinema-release-carousel__controls {
+		gap: 0.3rem;
+	}
+
+	.cinema-release-carousel__arrow {
+		inline-size: 2.55rem;
+		block-size: 2.55rem;
+	}
+
+	.cinema-release-carousel__item {
+		flex-basis: 8.2rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cinema-release-carousel__viewport {
+		scroll-behavior: auto;
+	}
+
+	.cinema-release-carousel__arrow,
+	.cinema-release-carousel__poster-wrap,
+	.cinema-release-carousel__poster,
+	.cinema-release-carousel__play {
+		transition: none;
+	}
+}
+
 @media (min-width: 46rem) {
 	.weekly-suggestion[data-upcoming-suggestion-root] {
 		min-block-size: 34rem;

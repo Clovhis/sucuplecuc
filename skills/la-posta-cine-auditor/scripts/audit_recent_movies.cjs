@@ -268,6 +268,8 @@ function parseArgs(argv) {
 		skipYoutube: false,
 		verifyCommunityBuild: false,
 		verifyReactionBuild: false,
+		verifyCinemaCarouselBuild: false,
+		verifyStreamingCarouselBuild: false,
 	};
 
 	for (let index = 0; index < argv.length; index += 1) {
@@ -288,6 +290,10 @@ function parseArgs(argv) {
 			args.verifyCommunityBuild = true;
 		} else if (arg === '--verify-reaction-build') {
 			args.verifyReactionBuild = true;
+		} else if (arg === '--verify-cinema-carousel-build') {
+			args.verifyCinemaCarouselBuild = true;
+		} else if (arg === '--verify-streaming-carousel-build') {
+			args.verifyStreamingCarouselBuild = true;
 		} else if (arg === '--all') {
 			args.all = true;
 		} else if (arg === '--help' || arg === '-h') {
@@ -317,6 +323,8 @@ function usage() {
 			'  --skip-youtube       Skip YouTube oEmbed checks.',
 			'  --verify-community-build  Require the built per-movie Comunidad route in dist/.',
 			'  --verify-reaction-build   Require the verdict-derived reaction panel in the built detail route.',
+			'  --verify-cinema-carousel-build  Require eligible current Cine entries in the homepage trailer carousel.',
+			'  --verify-streaming-carousel-build  Require eligible current streaming entries in the homepage trailer carousel.',
 		].join('\n'),
 	);
 }
@@ -966,6 +974,74 @@ function validateReactionBuildRoute(movie, candidatePath, findings) {
 			'reaction-panel-mismatch',
 			candidatePath,
 			`Built reaction panel must render "${reaction.label}" with the ${reaction.kind} state for verdict "${movie.verdict}".`,
+		);
+	}
+}
+
+function validateCinemaCarouselBuild(movie, candidatePath, findings) {
+	const releaseDate = typeof movie.releaseDate === 'string' ? movie.releaseDate.trim() : '';
+	const releaseTimestamp = Date.parse(`${releaseDate}T00:00:00Z`);
+	const todayTimestamp = Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
+	const windowStartTimestamp = todayTimestamp - 42 * 24 * 60 * 60 * 1000;
+	const isInTheaters = movie.releasePlatform === 'Cine' || (Array.isArray(movie.releasePlatforms) && movie.releasePlatforms.includes('Cine'));
+
+	if (!isInTheaters || Number.isNaN(releaseTimestamp) || releaseTimestamp < windowStartTimestamp || releaseTimestamp > todayTimestamp) {
+		return;
+	}
+
+	const indexPath = path.join('dist', 'index.html');
+	if (!fs.existsSync(indexPath)) {
+		addFinding(findings, 'error', 'missing-cinema-carousel-build', candidatePath, 'Expected built homepage is missing. Run npm run build before verifying the cinema carousel.');
+		return;
+	}
+
+	const builtHtml = fs.readFileSync(indexPath, 'utf8');
+	if (!builtHtml.includes('data-cinema-release-carousel') || !builtHtml.includes(movie.title)) {
+		addFinding(
+			findings,
+			'error',
+			'cinema-carousel-missing-entry',
+			candidatePath,
+			`Current Cine entry "${movie.title}" must render in the built homepage trailer carousel. Check releaseDate, releasePlatform, poster and trailerYoutubeId.`,
+		);
+	}
+}
+
+function validateStreamingCarouselBuild(movie, candidatePath, findings) {
+	const releaseDate = typeof movie.releaseDate === 'string' ? movie.releaseDate.trim() : '';
+	const releaseTimestamp = Date.parse(`${releaseDate}T00:00:00Z`);
+	const todayTimestamp = Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
+	const windowStartTimestamp = todayTimestamp - 42 * 24 * 60 * 60 * 1000;
+	const platforms = Array.isArray(movie.releasePlatforms) && movie.releasePlatforms.length > 0
+		? movie.releasePlatforms
+		: [movie.releasePlatform];
+	const hasConfirmedStreamingPlatform = platforms.some((platform) => platform && platform !== 'Cine' && platform !== 'Otras plataformas');
+	const isAlsoInTheaters = platforms.includes('Cine');
+
+	if (
+		!hasConfirmedStreamingPlatform ||
+		isAlsoInTheaters ||
+		Number.isNaN(releaseTimestamp) ||
+		releaseTimestamp < windowStartTimestamp ||
+		releaseTimestamp > todayTimestamp
+	) {
+		return;
+	}
+
+	const indexPath = path.join('dist', 'index.html');
+	if (!fs.existsSync(indexPath)) {
+		addFinding(findings, 'error', 'missing-streaming-carousel-build', candidatePath, 'Expected built homepage is missing. Run npm run build before verifying the streaming carousel.');
+		return;
+	}
+
+	const builtHtml = fs.readFileSync(indexPath, 'utf8');
+	if (!builtHtml.includes('data-cinema-release-carousel="streaming-release-carousel"') || !builtHtml.includes(movie.title)) {
+		addFinding(
+			findings,
+			'error',
+			'streaming-carousel-missing-entry',
+			candidatePath,
+			`Current streaming entry "${movie.title}" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId.`,
 		);
 	}
 }
@@ -1868,6 +1944,12 @@ async function auditCandidates(args) {
 		}
 		if (args.verifyReactionBuild) {
 			validateReactionBuildRoute(movie, candidate, findings);
+		}
+		if (args.verifyCinemaCarouselBuild) {
+			validateCinemaCarouselBuild(movie, candidate, findings);
+		}
+		if (args.verifyStreamingCarouselBuild) {
+			validateStreamingCarouselBuild(movie, candidate, findings);
 		}
 		validatePeoplePool(movie, candidate, findings, peopleCatalog, peopleCatalogIndex, exclusiveProfileIndex);
 		const trailerId = validateTrailerId(movie, candidate, findings);

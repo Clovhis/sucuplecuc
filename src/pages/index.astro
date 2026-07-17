@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import MovieCard from '../components/MovieCard.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
@@ -10,6 +11,8 @@ import {
 	getLatestReviewMovies,
 	getMovies,
 	getPosterUrl,
+	getCurrentTheatricalMovieReleases,
+	getCurrentStreamingMovieReleases,
 	getSubgenreFilterOptions,
 	getUpcomingMovieReleases,
 	RECOMMENDATION_GENRE_OPTIONS,
@@ -31,6 +34,20 @@ const editorialFilterOptions = RECOMMENDATION_GENRE_OPTIONS.filter((option) =>
 	editorialGenreFilterIds.has(option.id),
 );
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 5);
+const currentTheatricalReleases = getCurrentTheatricalMovieReleases(new Date(), 12)
+	.map((release) => ({
+		...release,
+		embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl, false),
+		watchUrl: release.videoUrl,
+	}))
+	.filter((release) => release.embedUrl);
+const currentStreamingReleases = getCurrentStreamingMovieReleases(new Date(), 12)
+	.map((release) => ({
+		...release,
+		embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl, false),
+		watchUrl: release.videoUrl,
+	}))
+	.filter((release) => release.embedUrl);
 const editorialRankings = getEditorialRankings(movies);
 const editorialRankingPools = editorialRankings.map((ranking) => ({
 	id: ranking.id,
@@ -70,7 +87,7 @@ function formatUpcomingReleaseDate(value: string) {
 	}).format(releaseDate);
 }
 
-function getYoutubeAutoplayEmbedUrlFromVideoUrl(videoUrl: string) {
+function getYoutubeAutoplayEmbedUrlFromVideoUrl(videoUrl: string, autoplay = true) {
 	const parsedUrl = new URL(videoUrl);
 	const videoId = parsedUrl.hostname.includes('youtu.be')
 		? parsedUrl.pathname.replace(/^\/+/, '')
@@ -81,12 +98,14 @@ function getYoutubeAutoplayEmbedUrlFromVideoUrl(videoUrl: string) {
 	}
 
 	const params = new URLSearchParams({
-		autoplay: '1',
-		mute: '1',
 		playsinline: '1',
 		rel: '0',
 		modestbranding: '1',
 	});
+	if (autoplay) {
+		params.set('autoplay', '1');
+		params.set('mute', '1');
+	}
 
 	return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
 }
@@ -112,7 +131,7 @@ const upcomingMovieSuggestions = upcomingReleases
 		return {
 			...release,
 			watchUrl: release.videoUrl,
-			embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl),
+		embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl),
 			sourceUrl: release.sourceUrl ?? release.videoUrl,
 			synopsis,
 			displayTitle: truncateText(release.title, UPCOMING_SUGGESTION_TITLE_MAX_CHARS),
@@ -345,6 +364,16 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 							isFallback={cinemaNews.isFallback}
 						/>
 					</div>
+
+					<CinemaReleaseCarousel releases={currentTheatricalReleases} />
+					<CinemaReleaseCarousel
+						releases={currentStreamingReleases}
+						sectionId="streaming-release-carousel"
+						title="Streaming"
+						availability="Películas para ver ahora mismo en casa"
+						listLabel="Estrenos de streaming con trailer disponible"
+						showPlatform={true}
+					/>
 
 					{
 						editorialRankings.length > 0 && (
