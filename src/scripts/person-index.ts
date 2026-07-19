@@ -7,6 +7,11 @@ if (peopleList) {
 	const emptyState = document.querySelector<HTMLElement>('[data-people-empty]');
 	const activeFiltersShell = document.querySelector<HTMLElement>('[data-people-active-filters]');
 	const activeFiltersList = document.querySelector<HTMLElement>('[data-people-active-filter-list]');
+	const resetShell = document.querySelector<HTMLElement>('[data-people-reset-shell]');
+	const filterToggle = document.querySelector<HTMLButtonElement>('[data-people-filter-toggle]');
+	const filterToggleLabel = document.querySelector<HTMLElement>('[data-people-filter-toggle-label]');
+	const filterCount = document.querySelector<HTMLElement>('[data-people-filter-count]');
+	const filterPanel = document.querySelector<HTMLElement>('[data-people-filter-panel]');
 	const sortButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-people-sort-key]'));
 	const chipButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-people-chip-group]'));
 	const directionButton = document.querySelector<HTMLButtonElement>('[data-people-sort-direction]');
@@ -197,13 +202,14 @@ if (peopleList) {
 
 	const personRows: PersonRow[] = rows.map((row) => {
 		const parsedAge = Number(row.dataset.age ?? '');
+		const hasKnownAge = row.dataset.ageKnown === 'true';
 		return {
 			row,
 			name: row.dataset.name ?? '',
 			search: row.dataset.search ?? '',
 			roles: (row.dataset.roles ?? '').split('|').filter(Boolean),
 			nationality: row.dataset.nationality ?? '',
-			age: Number.isFinite(parsedAge) ? parsedAge : null,
+			age: hasKnownAge && Number.isFinite(parsedAge) ? parsedAge : null,
 			filmCount: Number(row.dataset.filmCount ?? '0') || 0,
 			awardCount: Number(row.dataset.awardCount ?? '0') || 0,
 		};
@@ -533,6 +539,9 @@ if (peopleList) {
 			.filter((entry) => entry.value && entry.label);
 
 		activeFiltersShell.hidden = activeFilters.length === 0;
+		if (resetShell) {
+			resetShell.hidden = activeFilters.length === 0 && state.sort === DEFAULT_STATE.sort;
+		}
 
 		for (const entry of activeFilters) {
 			const button = document.createElement('button');
@@ -551,10 +560,31 @@ if (peopleList) {
 		}
 	};
 
+	const setFilterPanel = (expanded: boolean): void => {
+		if (!filterToggle || !filterPanel) {
+			return;
+		}
+
+		filterToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+		filterPanel.hidden = !expanded;
+		if (filterToggleLabel) {
+			filterToggleLabel.textContent = expanded ? 'Ocultar filtros' : 'Más filtros';
+		}
+	};
+
+	const updateFilterSummary = (state: FilterState): void => {
+		const count = [state.role, state.nationality, state.age, state.catalog, state.awards].filter(Boolean).length;
+		if (filterCount) {
+			filterCount.textContent = String(count);
+			filterCount.hidden = count === 0;
+		}
+	};
+
 	const syncUiState = (state: FilterState): void => {
 		updateSortUi(state);
 		updateChipUi(state);
 		updateActiveFilters(state);
+		updateFilterSummary(state);
 	};
 
 	const applyState = (state: FilterState, syncUrl = true): void => {
@@ -602,6 +632,14 @@ if (peopleList) {
 
 		controls.addEventListener('click', (event) => {
 			const target = event.target;
+			const toggleButton = target instanceof Element
+				? target.closest<HTMLButtonElement>('[data-people-filter-toggle]')
+				: null;
+			if (toggleButton) {
+				setFilterPanel(toggleButton.getAttribute('aria-expanded') !== 'true');
+				return;
+			}
+
 			const sortButton = target instanceof Element ? target.closest<HTMLButtonElement>('[data-people-sort-key]') : null;
 			if (sortButton) {
 				const state = readStateFromControls();
@@ -672,6 +710,15 @@ if (peopleList) {
 	}
 
 	const initialState = readStateFromUrl();
+	setFilterPanel(
+		Boolean(
+			initialState.role ||
+			initialState.nationality ||
+			initialState.age ||
+			initialState.catalog ||
+			initialState.awards,
+		),
+	);
 	applyState(initialState, false);
 
 	window.addEventListener('popstate', () => {

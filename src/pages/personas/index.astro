@@ -70,11 +70,15 @@ const nationalityOptions = Array.from(
 )
 	.map(([value, label]) => ({ value, label }))
 	.sort((left, right) => left.label.localeCompare(right.label, 'es'));
-const sortMetricOptions = [
-	{ value: 'alpha', label: 'Nombre' },
-	{ value: 'age', label: 'Edad' },
-	{ value: 'catalog', label: 'Catálogo' },
-	{ value: 'awards', label: 'Premios' },
+const sortOptions = [
+	{ value: 'alpha-asc', label: 'Nombre · A a Z' },
+	{ value: 'alpha-desc', label: 'Nombre · Z a A' },
+	{ value: 'catalog-desc', label: 'Más películas primero' },
+	{ value: 'catalog-asc', label: 'Menos películas primero' },
+	{ value: 'awards-desc', label: 'Más premios primero' },
+	{ value: 'awards-asc', label: 'Menos premios primero' },
+	{ value: 'age-desc', label: 'Mayor edad primero' },
+	{ value: 'age-asc', label: 'Menor edad primero' },
 ] as const;
 const ageOptions = [
 	{ value: '', label: 'Todas' },
@@ -109,97 +113,88 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 		</div>
 
 		<section class="people-index__hero fade-up" style="--item-delay: 0ms;">
-			<p class="people-index__eyebrow">Perfiles conectados</p>
-			<h1 class="people-index__title">Actores, directores y nombres clave del catálogo</h1>
-			<p class="people-index__dek">
-				Cada ficha junta biografía, premios y las pelis donde esa persona aparece dentro de Cine
-				Posta. Acá la entrada es más directa: podés recorrer el listado en modo alfabético o por
-				edad, con una lectura continua más parecida a una ladder que a una pared de tarjetas.
-			</p>
-			<div class="people-index__stats" aria-label="Resumen del catálogo de personas">
-				<div class="person-page__stat-card">
-					<span>Perfiles</span>
-					<strong>{peopleEntries.length}</strong>
-				</div>
-				<div class="person-page__stat-card">
-					<span>Películas conectadas</span>
-					<strong>{connectedMovieCount}</strong>
-				</div>
-				<div class="person-page__stat-card">
-					<span>Con ficha y filmografía</span>
-					<strong>{peopleEntries.filter((entry) => entry.filmCount > 0).length}</strong>
+			<div class="people-index__hero-copy">
+				<p class="people-index__eyebrow">Archivo de Cine Posta · Personas</p>
+				<h1 class="people-index__title">Encontrá quién está detrás de cada película</h1>
+				<p class="people-index__dek">
+					Actores, actrices, directores y nombres clave, ordenados como un gran fichero de cine.
+					Buscá a alguien o abrí los filtros si querés afinar la pesquisa.
+				</p>
+				<div class="people-index__stats" aria-label="Resumen del archivo">
+					<span><strong>{peopleEntries.length}</strong> perfiles</span>
+					<span><strong>{connectedMovieCount}</strong> películas conectadas</span>
+					<span><strong>{peopleEntries.filter((entry) => entry.filmCount > 0).length}</strong> filmografías</span>
 				</div>
 			</div>
+			<figure class="people-index__hero-art" aria-hidden="true">
+				<img
+					src="/images/people/cineposta-personajes-archivo-90s.webp"
+					alt=""
+					width="1536"
+					height="1024"
+					fetchpriority="high"
+				/>
+			</figure>
 		</section>
 
 		<section class="people-index__toolbar fade-up" style="--item-delay: 40ms;" aria-labelledby="people-explorer-title">
 			<div class="people-index__toolbar-head">
 				<div class="people-index__toolbar-copy">
-					<p class="people-index__eyebrow">Exploración libre</p>
+					<p class="people-index__eyebrow">Buscador del archivo</p>
 					<h2 class="people-index__toolbar-title" id="people-explorer-title">
-						Buscá, filtrá y reordená el listado como te resulte más cómodo
+						¿A quién estás buscando?
 					</h2>
 				</div>
-				<p class="people-index__sort-note" data-people-status aria-live="polite">
-					Mostrando {peopleEntries.length} de {peopleEntries.length} perfiles. Orden actual: A-Z.
-				</p>
 			</div>
 			<form class="people-index__filters" data-people-controls>
-				<div class="people-index__field people-index__field--search">
-					<label class="people-index__field-label" for="people-search">Buscar</label>
-					<input
-						class="people-index__search-input"
-						id="people-search"
-						name="q"
-						type="search"
-						placeholder="Nombre, rol, país o película"
-						autocomplete="off"
-						spellcheck="false"
-						data-people-filter="query"
-					/>
-					<p class="people-index__field-hint">
-						Podés escribir una persona puntual o mezclar criterios como “director argentino” o
-						“terror”.
+				<div class="people-index__primary-controls">
+					<div class="people-index__field people-index__field--search">
+						<label class="people-index__field-label" for="people-search">Nombre, película, rol o país</label>
+						<div class="people-index__search-shell">
+							<span aria-hidden="true">⌕</span>
+							<input
+								class="people-index__search-input"
+								id="people-search"
+								name="q"
+								type="search"
+								placeholder="Ej: Meryl Streep, director argentino..."
+								autocomplete="off"
+								spellcheck="false"
+								data-people-filter="query"
+							/>
+						</div>
+					</div>
+					<div class="people-index__field people-index__field--sort">
+						<label class="people-index__field-label" for="people-sort">Ordenar resultados</label>
+						<select class="people-index__select" id="people-sort" name="orden" data-people-filter="sort">
+							{sortOptions.map((option) => <option value={option.value}>{option.label}</option>)}
+						</select>
+					</div>
+				</div>
+
+				<div class="people-index__filter-actions">
+					<button
+						class="people-index__filter-toggle"
+						type="button"
+						aria-expanded="false"
+						aria-controls="people-extra-filters"
+						data-people-filter-toggle
+					>
+						<span aria-hidden="true">☷</span>
+						<span data-people-filter-toggle-label>Más filtros</span>
+						<span class="people-index__filter-count" data-people-filter-count hidden>0</span>
+					</button>
+					<p class="people-index__sort-note" data-people-status aria-live="polite" aria-atomic="true">
+						Mostrando {peopleEntries.length} de {peopleEntries.length} perfiles.
 					</p>
 				</div>
 
-				<section class="people-index__control-block" aria-labelledby="people-sort-label">
-					<div class="people-index__control-head">
-						<p class="people-index__field-label" id="people-sort-label">Orden</p>
-						<p class="people-index__control-hint">
-							Elegí el criterio y tocá la flecha para invertirlo al instante.
-						</p>
-					</div>
-					<div class="people-index__sort-bar">
-						<div class="people-index__segmented" role="group" aria-labelledby="people-sort-label">
-							{
-								sortMetricOptions.map((option) => (
-									<button
-										class="people-index__segmented-button"
-										type="button"
-										data-people-sort-key={option.value}
-										aria-pressed={option.value === 'alpha' ? 'true' : 'false'}
-									>
-										{option.label}
-									</button>
-								))
-							}
-						</div>
-						<button class="people-index__direction-button" type="button" data-people-sort-direction>
-							<span class="people-index__direction-icon" data-people-sort-direction-icon aria-hidden="true">
-								↑
-							</span>
-							<span data-people-sort-direction-label>A-Z</span>
-						</button>
-						<input type="hidden" name="orden" value="alpha-asc" data-people-filter="sort" />
-					</div>
-				</section>
-
-				<div class="people-index__filter-grid">
+				<div class="people-index__extra-filters" id="people-extra-filters" data-people-filter-panel hidden>
+					<div class="people-index__filter-grid">
 					<div class="people-index__field">
 						<label class="people-index__field-label" for="people-role">Rol</label>
 						<select class="people-index__select" id="people-role" name="rol" data-people-filter="role">
-							<option value="">Todos</option>
+							<option value="">Todos los roles</option>
 							{
 								roleOptions.map((option) => (
 									<option value={option.value}>{option.label}</option>
@@ -216,7 +211,7 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 							name="nacionalidad"
 							data-people-filter="nationality"
 						>
-							<option value="">Todas</option>
+							<option value="">Todas las nacionalidades</option>
 							{
 								nationalityOptions.map((option) => (
 									<option value={option.value}>{option.label}</option>
@@ -224,73 +219,26 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 							}
 						</select>
 					</div>
-				</div>
-
-				<div class="people-index__chip-panels">
-					<fieldset class="people-index__chip-group">
-						<legend class="people-index__field-label">Edad</legend>
-						<div class="people-index__chip-list" role="group" aria-label="Filtrar por edad">
-							{
-								ageOptions.map((option) => (
-									<button
-										class="people-index__chip-button"
-										type="button"
-										data-people-chip-group="age"
-										data-people-chip-value={option.value}
-										aria-pressed={option.value === '' ? 'true' : 'false'}
-									>
-										{option.label}
-									</button>
-								))
-							}
+						<div class="people-index__field">
+							<label class="people-index__field-label" for="people-age">Edad</label>
+							<select class="people-index__select" id="people-age" name="edad" data-people-filter="age">
+								{ageOptions.map((option) => <option value={option.value}>{option.label}</option>)}
+							</select>
+							<p class="people-index__field-hint">{unknownAgeCount} fichas no informan edad.</p>
 						</div>
-						<p class="people-index__field-hint">
-							{unknownAgeCount > 0
-								? `${unknownAgeCount} perfiles sin edad quedan al final si ordenás por edad.`
-								: 'Todas las fichas del listado tienen edad visible.'}
-						</p>
-						<input type="hidden" name="edad" value="" data-people-filter="age" />
-					</fieldset>
-
-					<fieldset class="people-index__chip-group">
-						<legend class="people-index__field-label">Catálogo</legend>
-						<div class="people-index__chip-list" role="group" aria-label="Filtrar por tamaño de catálogo">
-							{
-								catalogOptions.map((option) => (
-									<button
-										class="people-index__chip-button"
-										type="button"
-										data-people-chip-group="catalog"
-										data-people-chip-value={option.value}
-										aria-pressed={option.value === '' ? 'true' : 'false'}
-									>
-										{option.label}
-									</button>
-								))
-							}
+						<div class="people-index__field">
+							<label class="people-index__field-label" for="people-catalog">Presencia en el catálogo</label>
+							<select class="people-index__select" id="people-catalog" name="catalogo" data-people-filter="catalog">
+								{catalogOptions.map((option) => <option value={option.value}>{option.label}</option>)}
+							</select>
 						</div>
-						<input type="hidden" name="catalogo" value="" data-people-filter="catalog" />
-					</fieldset>
-
-					<fieldset class="people-index__chip-group">
-						<legend class="people-index__field-label">Premios</legend>
-						<div class="people-index__chip-list" role="group" aria-label="Filtrar por premios destacados">
-							{
-								awardsOptions.map((option) => (
-									<button
-										class="people-index__chip-button"
-										type="button"
-										data-people-chip-group="awards"
-										data-people-chip-value={option.value}
-										aria-pressed={option.value === '' ? 'true' : 'false'}
-									>
-										{option.label}
-									</button>
-								))
-							}
+						<div class="people-index__field">
+							<label class="people-index__field-label" for="people-awards">Premios destacados</label>
+							<select class="people-index__select" id="people-awards" name="premios" data-people-filter="awards">
+								{awardsOptions.map((option) => <option value={option.value}>{option.label}</option>)}
+							</select>
 						</div>
-						<input type="hidden" name="premios" value="" data-people-filter="awards" />
-					</fieldset>
+					</div>
 				</div>
 
 				<div class="people-index__active-filters" data-people-active-filters hidden>
@@ -298,15 +246,22 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 					<div class="people-index__active-list" data-people-active-filter-list></div>
 				</div>
 
-				<div class="people-index__actions">
+				<div class="people-index__actions" data-people-reset-shell hidden>
 					<button class="people-index__reset-button" type="reset" data-people-reset>
-						Limpiar todo
+						Limpiar búsqueda y filtros
 					</button>
 				</div>
 			</form>
 		</section>
 
-		<section class="people-index__list-shell" aria-label="Listado de perfiles">
+		<section class="people-index__list-shell" aria-labelledby="people-results-title">
+			<div class="people-index__results-head">
+				<div>
+					<p class="people-index__eyebrow">Fichas encontradas</p>
+					<h2 id="people-results-title">Personas del archivo</h2>
+				</div>
+				<p>Seleccioná una ficha para ver su historia y filmografía.</p>
+			</div>
 			<p class="people-index__empty" data-people-empty hidden>
 				No encontramos perfiles con esa combinación. Probá limpiar algún filtro o buscar otro término.
 			</p>
@@ -366,6 +321,7 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 										<dd>{entry.profile.nationalityPrimary ?? 'No disponible'}</dd>
 									</div>
 								</dl>
+								<span class="people-index__open-profile">Abrir ficha <span aria-hidden="true">→</span></span>
 							</a>
 						</li>
 					))

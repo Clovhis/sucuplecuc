@@ -17,6 +17,21 @@ Use this workflow to add or update a dedicated person page in this repository.
 
 Read `docs/person-profile-catalog-reference.md` and the current profile before editing. Do not modify movie reviews, trailers, or unrelated catalog content.
 
+## Person directory integration
+
+`/personas/` is a derived, filterable directory. A profile added to `src/data/personProfiles.ts` appears there through `getPersonProfiles()`; never add a card, filter option, search record, or result count by hand.
+
+Future loads must keep the directory facets useful:
+
+- Use the existing stable vocabulary in `roles`; avoid one-off synonyms that would create confusing duplicate role options.
+- Keep `nationalityPrimary`, birth/death data and the best compact portrait aligned in `src/data/people.json`; nationality and age filters derive from those fields.
+- Keep `knownFor` connected to real movie slugs. The directory derives film count, searchable movie titles and the card showcase from the live filmography graph.
+- Keep verified award highlights in `awards`; award filtering and ordering derive from that array.
+- Define an optimized `profileImage` for the profile hero while preserving the compact person image used by directory cards.
+- Do not edit URL parameters or client-side filter options manually. `src/pages/personas/index.astro` and `src/scripts/person-index.ts` own the directory contract.
+
+Pending and informational profiles remain navigable and may appear in the directory, but the existing publication policy still keeps them `noindex`, outside the sitemap and without advertising. Do not weaken that quarantine to make a profile discoverable.
+
 ## Editorial rules
 
 For a new or revised `editorialBiography`:
@@ -54,6 +69,12 @@ npm run audit:profiles --all -- --require-dist
 npm run audit:profile-originality -- --require-dist
 ```
 
+When a load changes data consumed by the directory, also run:
+
+```bash
+npx playwright test tests/e2e/person-index.spec.ts --project=desktop-chromium
+```
+
 `--candidate` is accepted for compatibility, but still evaluates the complete corpus so similarity and publication controls remain reliable. Do not weaken or duplicate the validator to make a batch pass.
 
 ## Before finishing
@@ -64,5 +85,6 @@ npm run audit:profile-originality -- --require-dist
 4. Confirm pending/informational pages do not load ads and have `noindex, follow`.
 5. Run the complete audit and build chain above.
 6. Review the diff and update the catalog reference if the profile set changed.
+7. Confirm the new profile can be found in `/personas/` by name and remains correctly classified by role, nationality, age, catalog presence and awards.
 
 Report the affected slugs, source strategy, editorial status, validation result and any factual uncertainty that leaves a profile pending.
