@@ -27,7 +27,24 @@ test('home page renders the catalog shell', async ({ page }) => {
 
   const bodyText = await page.locator('body').innerText();
   expect(bodyText.length).toBeGreaterThan(1000);
-  expect(pageErrors).toEqual([]);
+	expect(pageErrors).toEqual([]);
+});
+
+test('home reserves the final four initial cards for the latest catalog loads', async ({ page }) => {
+	await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+	const initialTitles = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
+		cards.map((card) => card.getAttribute('data-movie-title')),
+	);
+
+	expect(initialTitles).toHaveLength(12);
+	expect(initialTitles.slice(-4)).toEqual([
+		'Undertone Frecuencia Maldita',
+		'Christy (El combate de su vida)',
+		'Boulevard',
+		'In the Hand of Dante',
+	]);
+	expect(new Set(initialTitles).size).toBe(initialTitles.length);
 });
 
 test('movie detail page renders a known title', async ({ page }) => {

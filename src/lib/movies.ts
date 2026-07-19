@@ -93,12 +93,18 @@ export interface CurrentTheatricalMovieRelease {
 	slug: string;
 	title: string;
 	releaseDate: string;
+	dateLabel?: string;
 	posterUrl: string;
 	videoUrl: string;
 	verdictLabel: string;
 	verdictClass: string;
 	platform?: string;
 }
+
+const STREAMING_CAROUSEL_MIN_ITEMS = 8;
+const STREAMING_CAROUSEL_MAX_ITEMS = 12;
+const STREAMING_CAROUSEL_RECENT_LOAD_SLOTS = 4;
+const STREAMING_CAROUSEL_RECENT_LOAD_WINDOW_DAYS = 60;
 
 export interface WeeklyMovieSuggestion {
 	slug: string;
@@ -714,6 +720,28 @@ export function getLatestReviewMovies(movies: Movie[], limit = 3): Movie[] {
 		.slice(0, Math.max(0, limit));
 }
 
+/**
+ * Los primeros títulos de la grilla sostienen el pulso de estrenos; los
+ * últimos lugares reservados muestran las fichas publicadas más recientemente.
+ * Así una carga de catálogo de una película vieja no queda escondida por su año.
+ */
+export function getHomeMovieShowcase(
+	movies: Movie[],
+	limit = 12,
+	recentLoadSlots = 4,
+): Movie[] {
+	const showcaseLimit = Math.max(0, limit);
+	const reservedRecentLoadSlots = Math.min(Math.max(0, recentLoadSlots), showcaseLimit);
+	const latestLoads = getLatestReviewMovies(movies, reservedRecentLoadSlots);
+	const latestLoadSlugs = new Set(latestLoads.map((movie) => movie.slug));
+	const newestReleaseSlots = showcaseLimit - latestLoads.length;
+	const newestReleases = movies
+		.filter((movie) => !latestLoadSlugs.has(movie.slug))
+		.slice(0, newestReleaseSlots);
+
+	return [...newestReleases, ...latestLoads];
+}
+
 export function getWeeklyMovieSuggestion(
 	movies: Movie[],
 	referenceDate = new Date(),
@@ -941,9 +969,12 @@ export function getCurrentStreamingMovieReleases(
 		referenceDate.getUTCDate(),
 	);
 	const earliestReleaseTimestamp = referenceTimestamp - windowDays * DAY_IN_MS;
+	const earliestRecentLoadTimestamp = referenceTimestamp - STREAMING_CAROUSEL_RECENT_LOAD_WINDOW_DAYS * DAY_IN_MS;
+	const maximumItems = Math.min(STREAMING_CAROUSEL_MAX_ITEMS, Math.max(1, limit));
+	const minimumItems = Math.min(STREAMING_CAROUSEL_MIN_ITEMS, maximumItems);
+	const recentLoadSlots = Math.min(STREAMING_CAROUSEL_RECENT_LOAD_SLOTS, maximumItems);
 	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
-
-	return movies
+	const candidates = movies
 		.map((movie) => ({ movie, platforms: getMoviePlatforms(movie) }))
 		.filter(({ movie, platforms }) => {
 			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) return false;
@@ -951,30 +982,68 @@ export function getCurrentStreamingMovieReleases(
 				(platform) => platform !== 'Cine' && platform !== 'Otras plataformas',
 			);
 			const isAlsoInTheaters = platforms.includes('Cine');
+			return hasConfirmedStreamingPlatform && !isAlsoInTheaters && isReleased(movie);
+		});
+	const toRelease = ({ movie, platforms }: (typeof candidates)[number], dateLabel?: string) => ({
+		slug: movie.slug,
+		title: movie.title,
+		releaseDate: movie.releaseDate!,
+		dateLabel,
+		posterUrl: getPosterUrl(movie.poster),
+		videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
+		verdictLabel: getVerdictLabel(movie),
+		verdictClass: getVerdictBadgeClass(movie),
+		platform: platforms.find((platform) => platform !== 'Cine' && platform !== 'Otras plataformas'),
+	});
+	const recentLoads = [...candidates]
+		.filter(({ movie }) => {
+			if (!movie.reviewPublishedAt) return false;
+			const reviewPublishedTimestamp = getReviewPublishedTimestamp(movie);
+			return reviewPublishedTimestamp >= earliestRecentLoadTimestamp && reviewPublishedTimestamp <= referenceTimestamp;
+		})
+		.sort(
+			(left, right) =>
+				getReviewPublishedTimestamp(right.movie) - getReviewPublishedTimestamp(left.movie) ||
+				getMovieSortTimestamp(right.movie) - getMovieSortTimestamp(left.movie) ||
+				left.movie.title.localeCompare(right.movie.title, 'es'),
+		)
+		.slice(0, recentLoadSlots);
+	const currentPlatformReleases = candidates
+		.filter(({ movie }) => {
 			const releaseTimestamp = getMovieSortTimestamp(movie);
-			return (
-				hasConfirmedStreamingPlatform &&
-				!isAlsoInTheaters &&
-				releaseTimestamp >= earliestReleaseTimestamp &&
-				releaseTimestamp <= referenceTimestamp
-			);
+			return releaseTimestamp >= earliestReleaseTimestamp && releaseTimestamp <= referenceTimestamp;
 		})
 		.sort(
 			(left, right) =>
 				getMovieSortTimestamp(right.movie) - getMovieSortTimestamp(left.movie) ||
 				left.movie.title.localeCompare(right.movie.title, 'es'),
-		)
-		.slice(0, Math.max(1, limit))
-		.map(({ movie, platforms }) => ({
-			slug: movie.slug,
-			title: movie.title,
-			releaseDate: movie.releaseDate!,
-			posterUrl: getPosterUrl(movie.poster),
-			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
-			verdictLabel: getVerdictLabel(movie),
-			verdictClass: getVerdictBadgeClass(movie),
-			platform: platforms.find((platform) => platform !== 'Cine' && platform !== 'Otras plataformas'),
-		}));
+		);
+	const selected = [...recentLoads, ...currentPlatformReleases];
+	const selectedSlugs = new Set<string>();
+	const uniqueSelected = selected.filter(({ movie }) => {
+		if (selectedSlugs.has(movie.slug)) return false;
+		selectedSlugs.add(movie.slug);
+		return true;
+	});
+
+	if (uniqueSelected.length < minimumItems) {
+		const fallback = [...candidates]
+			.sort(
+				(left, right) =>
+					getReviewPublishedTimestamp(right.movie) - getReviewPublishedTimestamp(left.movie) ||
+					getMovieSortTimestamp(right.movie) - getMovieSortTimestamp(left.movie) ||
+					left.movie.title.localeCompare(right.movie.title, 'es'),
+			)
+			.filter(({ movie }) => !selectedSlugs.has(movie.slug));
+		uniqueSelected.push(...fallback.slice(0, minimumItems - uniqueSelected.length));
+	}
+
+	const recentLoadSlugs = new Set(recentLoads.map(({ movie }) => movie.slug));
+	return uniqueSelected
+		.slice(0, maximumItems)
+		.map((entry) =>
+			toRelease(entry, recentLoadSlugs.has(entry.movie.slug) ? 'Recién agregada' : undefined),
+		);
 }
 
 function isFutureRelease(releaseDate: string, referenceTimestamp: number): boolean {

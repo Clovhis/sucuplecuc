@@ -42,3 +42,16 @@ test('current streaming releases retain their platform and open their own traile
 	await dialog.getByRole('button', { name: /cerrar trailer/i }).click();
 	await expect(dialog).not.toBeVisible();
 });
+
+test('streaming keeps recent catalog uploads even when their original release is older', async ({ page }) => {
+	await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+	const carousel = page.locator('[data-cinema-release-carousel="streaming-release-carousel"]');
+	const cards = carousel.locator('[data-cinema-release-open]');
+	const cardCount = await cards.count();
+	expect(cardCount).toBeGreaterThanOrEqual(8);
+	expect(cardCount).toBeLessThanOrEqual(12);
+	await expect(carousel.getByRole('button', { name: /reproducir trailer de christy/i })).toBeVisible();
+	await expect(carousel.getByRole('button', { name: /reproducir trailer de boulevard/i })).toBeVisible();
+	await expect(carousel.getByText('Recién agregada').first()).toBeVisible();
+});

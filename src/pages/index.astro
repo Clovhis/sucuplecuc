@@ -9,6 +9,7 @@ import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
 	getLatestReviewMovies,
+	getHomeMovieShowcase,
 	getMovies,
 	getPosterUrl,
 	getCurrentTheatricalMovieReleases,
@@ -54,8 +55,10 @@ const editorialRankingPools = editorialRankings.map((ranking) => ({
 	movies: ranking.candidateMovies,
 }));
 const INITIAL_HOME_MOVIE_COUNT = 12;
-const initialHomeMovies = movies.slice(0, INITIAL_HOME_MOVIE_COUNT);
-const deferredHomeMovies = movies.slice(INITIAL_HOME_MOVIE_COUNT);
+const HOME_RECENT_LOAD_SLOTS = 4;
+const initialHomeMovies = getHomeMovieShowcase(movies, INITIAL_HOME_MOVIE_COUNT, HOME_RECENT_LOAD_SLOTS);
+const initialHomeMovieSlugs = new Set(initialHomeMovies.map((movie) => movie.slug));
+const deferredHomeMovies = movies.filter((movie) => !initialHomeMovieSlugs.has(movie.slug));
 const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => ({
 	slug: movie.slug,
 	title: movie.title,
