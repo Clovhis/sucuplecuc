@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-17. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-19. Fuente: src/data/movies/*.json
 
-Total de peliculas: 977
+Total de peliculas: 980
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -108,6 +108,7 @@ Total de peliculas: 977
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Cine | ATP |
+| 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Whistle | whistle-2026 | Terror | Otras plataformas | +16 |
@@ -124,6 +125,7 @@ Total de peliculas: 977
 | 2025 | Black Bag | black-bag-2025 | Thriller | HBO Max | +13 |
 | 2025 | Captain America: Brave New World | captain-america-brave-new-world-2025 | Accion | Disney Plus | +13 |
 | 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Crunchyroll | +16 |
+| 2025 | Christy (El combate de su vida) | christy-el-combate-de-su-vida-2025 | Drama | HBO Max | +17 |
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Otras plataformas | +13 |
 | 2025 | Dolly - Juega contigo | dolly-juega-contigo-2025 | Terror | Otras plataformas | +17 |
@@ -477,6 +479,7 @@ Total de peliculas: 977
 | 2014 | Big Eyes | big-eyes-2014 | Drama | Otras plataformas | +13 |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus | ATP |
 | 2014 | Birdman or (The Unexpected Virtue of Ignorance) | birdman-or-the-unexpected-virtue-of-ignorance-2014 | Drama | Disney Plus | +16 |
+| 2014 | Boulevard | boulevard-2014 | Drama | Prime Video | +17 |
 | 2014 | Boyhood | boyhood-2014 | Drama | Otras plataformas | +17 |
 | 2014 | Captain America: The Winter Soldier | captain-america-the-winter-soldier-2014 | Accion | Disney Plus | +13 |
 | 2014 | Dawn of the Planet of the Apes | dawn-of-the-planet-of-the-apes-2014 | Accion | Disney Plus | +13 |
