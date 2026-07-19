@@ -166,31 +166,33 @@ function initPostometro(
 		state.hasSearched = false;
 
 		if (mode === 'changed') {
-			headline.textContent = 'Cambiaste el combo';
-			diagnosis.textContent = 'La recomendación anterior ya no corre con estos filtros.';
-			subheadline.textContent = 'Buscá de nuevo y sale otra para esta noche.';
+			headline.textContent = 'Cambiaste la selección';
+			diagnosis.textContent = 'La recomendación anterior ya no corresponde a estos ajustes.';
+			subheadline.textContent = 'Volvé a buscar para recibir una nueva opción.';
 			body.innerHTML = `
 				<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
-					<h3>Listo para otra búsqueda</h3>
-					<p>Con este combo nuevo, la recomendación cae recién cuando toques <strong>Buscar</strong>.</p>
-					<div class="postometro-empty__illustration" aria-hidden="true">
-						<img src="/images/postometro/postometro-eleccion.webp" alt="" width="330" height="232" loading="lazy" decoding="async" />
+					<div class="postometro-empty__copy">
+						<span class="postometro-empty__number" aria-hidden="true">3</span>
+						<h3>Listo para otra búsqueda</h3>
+						<p>Con esta selección, la nueva recomendación aparece cuando toques <strong>Recomendame una película</strong>.</p>
 					</div>
+					${renderIdleArt()}
 				</section>
 			`;
 			return;
 		}
 
-		headline.textContent = 'Cuando busques, cae la recomendación';
-		diagnosis.textContent = 'Primero armá el combo de la noche. Después apretás el botón y vemos qué peli te calza mejor.';
-		subheadline.textContent = 'Acá no cae nada hasta que largues la búsqueda.';
+		headline.textContent = 'Acá va a aparecer tu película';
+		diagnosis.textContent = 'Completá las opciones y te mostramos la que mejor calza con esta noche.';
+		subheadline.textContent = 'Podés cambiar cualquier ajuste y volver a buscar.';
 		body.innerHTML = `
 			<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
-				<h3>La recomendación todavía no bajó</h3>
-				<p>Elegí los filtros y tocá <strong>Buscar</strong> para arrancar.</p>
-				<div class="postometro-empty__illustration" aria-hidden="true">
-					<img src="/images/postometro/postometro-eleccion.webp" alt="" width="330" height="232" loading="lazy" decoding="async" />
+				<div class="postometro-empty__copy">
+					<span class="postometro-empty__number" aria-hidden="true">3</span>
+					<h3>La elegida está en algún estante</h3>
+					<p>Cuando termines de ajustar la noche, tocá <strong>Recomendame una película</strong> y la buscamos.</p>
 				</div>
+				${renderIdleArt()}
 			</section>
 		`;
 	};
@@ -221,11 +223,6 @@ function initPostometro(
 
 		body.innerHTML = `
 			<section class="postometro-loading" data-postometro-loading>
-				<div class="postometro-loading__marquee" aria-hidden="true">
-					<span>🎬</span>
-					<span>🍿</span>
-					<span>⚡</span>
-				</div>
 				<p class="postometro-loading__eyebrow">Buscando película</p>
 				<h3>Estamos revolviendo el catálogo para esta noche</h3>
 				<p class="postometro-loading__phrase" data-postometro-loading-phrase></p>
@@ -376,6 +373,10 @@ function initPostometro(
 			state.hasSearched = true;
 			setBusy(false);
 			renderResultSet(trigger, excludedSlug);
+			if (window.matchMedia('(max-width: 1040px)').matches) {
+				const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+				resultsRoot.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+			}
 		}, getRandomInt(LOADING_MIN_MS, LOADING_MAX_MS));
 	};
 
@@ -441,6 +442,21 @@ function initPostometro(
 		saveSeenSlugs(state.seenSlugs);
 		performSearch('dismiss');
 	});
+}
+
+function renderIdleArt(): string {
+	return `
+		<figure class="postometro-empty__art" aria-hidden="true">
+			<img
+				src="/images/postometro/cineposta-personajes-recomendacion.webp"
+				alt=""
+				width="1200"
+				height="900"
+				loading="eager"
+				decoding="async"
+			/>
+		</figure>
+	`;
 }
 
 function parsePayload(raw: string | null): PostometroPayload | null {

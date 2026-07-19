@@ -7821,6 +7821,462 @@ img {
 	}
 }
 
+/* Qué vemos hoy: una interfaz editorial más calma, legible y predecible. */
+.postometro-page {
+	gap: 1.5rem;
+	max-width: 76rem;
+}
+
+.postometro-page::before,
+.postometro-hero::before,
+.postometro-hero::after,
+.postometro-panel::before,
+.postometro-results::before,
+.postometro-fieldset--panel::before {
+	display: none;
+}
+
+.postometro-page .page-actions {
+	margin-block: 0.75rem 0;
+}
+
+.postometro-page .page-action {
+	min-height: 2.75rem;
+}
+
+.postometro-hero,
+.postometro-panel,
+.postometro-results {
+	border-radius: 20px;
+	border-color: rgba(255, 255, 255, 0.1);
+	background: rgba(15, 20, 29, 0.94);
+	box-shadow:
+		0 18px 44px rgba(0, 0, 0, 0.24),
+		0 1px 0 rgba(255, 255, 255, 0.04) inset;
+}
+
+.postometro-hero {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(22rem, 0.85fr);
+	gap: clamp(1.5rem, 4vw, 3rem);
+	padding: clamp(1.5rem, 3.8vw, 3rem);
+	align-items: end;
+	overflow: visible;
+	background:
+		linear-gradient(125deg, rgba(255, 125, 59, 0.1), transparent 46%),
+		rgba(15, 20, 29, 0.96);
+}
+
+.postometro-hero__copy {
+	gap: 0.75rem;
+}
+
+.postometro-hero__title {
+	font-size: clamp(2.35rem, 5vw, 4.25rem);
+	line-height: 0.98;
+	letter-spacing: -0.035em;
+}
+
+.postometro-hero__subtitle {
+	max-width: 39rem;
+	color: #cbd5e5;
+	font-size: clamp(1rem, 0.45vw + 0.92rem, 1.15rem);
+	line-height: 1.6;
+	text-wrap: pretty;
+}
+
+.postometro-hero__steps {
+	display: grid;
+	gap: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	counter-reset: none;
+}
+
+.postometro-hero__steps li {
+	display: grid;
+	grid-template-columns: 2rem minmax(0, 1fr);
+	gap: 0.75rem;
+	align-items: center;
+	min-height: 3.25rem;
+	padding-block: 0.55rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	color: #dce5f4;
+	font-size: 0.92rem;
+	font-weight: 600;
+}
+
+.postometro-hero__steps li:last-child {
+	border-bottom: 0;
+}
+
+.postometro-hero__steps li > span,
+.postometro-form__section-heading > span,
+.postometro-empty__number {
+	display: inline-grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 999px;
+	background: rgba(255, 176, 137, 0.12);
+	border: 1px solid rgba(255, 176, 137, 0.32);
+	color: #ffd8c5;
+	font: 700 0.78rem/1 var(--font-mono);
+}
+
+.postometro-shell {
+	grid-template-columns: minmax(0, 1.18fr) minmax(20rem, 0.82fr);
+	gap: 1.25rem;
+}
+
+.postometro-panel,
+.postometro-results {
+	padding: clamp(1.15rem, 2.2vw, 1.75rem);
+}
+
+.postometro-panel__intro {
+	gap: 0.4rem;
+	padding-block-end: 1.25rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.postometro-panel__intro h2,
+.postometro-results__header h2 {
+	font-size: clamp(1.25rem, 1.4vw, 1.55rem);
+	line-height: 1.2;
+	letter-spacing: -0.015em;
+}
+
+.postometro-form {
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.postometro-form__section-heading {
+	display: grid;
+	grid-template-columns: 2rem minmax(0, 1fr);
+	gap: 0.75rem;
+	align-items: center;
+	margin-block-start: 0.5rem;
+}
+
+.postometro-form__section-heading p,
+.postometro-form__section-heading h3,
+.postometro-form__refinements-copy p,
+.postometro-form__refinements-copy h3 {
+	margin: 0;
+}
+
+.postometro-form__section-heading p {
+	color: #9eabc0;
+	font-size: 0.74rem;
+	font-family: var(--font-mono);
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.postometro-form__section-heading h3,
+.postometro-form__refinements-copy h3 {
+	font-size: 1rem;
+	line-height: 1.35;
+}
+
+.postometro-fieldset--panel {
+	padding: 1rem;
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.025);
+	overflow: visible;
+	transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.postometro-fieldset--panel:hover,
+.postometro-fieldset--panel:focus-within {
+	transform: none;
+	border-color: rgba(255, 176, 137, 0.24);
+	background-color: rgba(255, 255, 255, 0.035);
+}
+
+.postometro-label-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.06);
+	box-shadow: none;
+	font-size: 0.85rem;
+}
+
+.postometro-choice-card__body,
+.postometro-chip-option > span {
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.035);
+	box-shadow: none;
+}
+
+.postometro-choice-card__body {
+	position: relative;
+	min-height: 7.5rem;
+	padding: 0.9rem;
+	padding-inline-end: 2.15rem;
+}
+
+.postometro-choice-card--compact .postometro-choice-card__body {
+	min-height: 7.5rem;
+}
+
+.postometro-choice-card__body::after {
+	content: '✓';
+	position: absolute;
+	inset-block-start: 0.7rem;
+	inset-inline-end: 0.7rem;
+	display: grid;
+	place-items: center;
+	width: 1.35rem;
+	height: 1.35rem;
+	border-radius: 999px;
+	background: #ffb089;
+	color: #17100c;
+	font-size: 0.75rem;
+	font-weight: 800;
+	opacity: 0;
+	transform: scale(0.8);
+	transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.postometro-choice-card input:checked + .postometro-choice-card__body,
+.postometro-choice-card:hover .postometro-choice-card__body,
+.postometro-choice-card:focus-within .postometro-choice-card__body {
+	transform: none;
+	border-color: rgba(255, 176, 137, 0.5);
+	background: rgba(255, 176, 137, 0.09);
+	box-shadow: 0 0 0 1px rgba(255, 176, 137, 0.08);
+}
+
+.postometro-choice-card input:checked + .postometro-choice-card__body::after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.postometro-choice-card input:focus-visible + .postometro-choice-card__body,
+.postometro-chip-option input:focus-visible + span {
+	outline: 3px solid var(--focus-ring);
+	outline-offset: 3px;
+}
+
+.postometro-choice-card input:checked + .postometro-choice-card__body .postometro-choice-card__icon,
+.postometro-choice-card:hover .postometro-choice-card__icon,
+.postometro-choice-card:focus-within .postometro-choice-card__icon {
+	transform: none;
+	background: rgba(255, 176, 137, 0.14);
+}
+
+.postometro-choice-card__icon {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 10px;
+	background: rgba(255, 176, 137, 0.08);
+	box-shadow: none;
+}
+
+.postometro-form__secondary-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.85rem;
+}
+
+.postometro-fieldset--company {
+	grid-column: 1 / -1;
+}
+
+.postometro-chip-grid {
+	grid-template-columns: 1fr;
+	gap: 0.55rem;
+}
+
+.postometro-chip-option > span {
+	min-height: 3rem;
+	padding: 0.65rem 0.75rem;
+	font-size: 0.78rem;
+}
+
+.postometro-chip-option input:checked + span,
+.postometro-chip-option:hover > span,
+.postometro-chip-option:focus-within > span {
+	transform: none;
+	border-color: rgba(117, 153, 255, 0.52);
+	background: rgba(117, 153, 255, 0.12);
+	box-shadow: none;
+}
+
+.postometro-form__refinements {
+	display: grid;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 16px;
+	background: rgba(117, 153, 255, 0.055);
+	border: 1px solid rgba(117, 153, 255, 0.14);
+}
+
+.postometro-form__refinements-copy {
+	display: grid;
+	gap: 0.3rem;
+}
+
+.postometro-form__refinements-copy p {
+	color: #aebbd0;
+	font-size: 0.84rem;
+	line-height: 1.5;
+}
+
+.postometro-select-field select {
+	min-height: 3rem;
+	border-radius: 10px;
+	border-color: rgba(255, 255, 255, 0.14);
+	background-color: #111823;
+}
+
+.postometro-form__actions {
+	grid-template-columns: minmax(0, 1fr) max-content;
+	gap: 0.75rem;
+	padding-block-start: 0.5rem;
+}
+
+.postometro-search-cta {
+	display: inline-flex;
+	min-height: 3.5rem;
+	padding: 0.85rem 1.25rem;
+	border-radius: 12px;
+	background: #f28a55;
+	border-color: #ffb089;
+	color: #160d08;
+	box-shadow: 0 8px 20px rgba(242, 138, 85, 0.18);
+}
+
+.postometro-search-cta strong {
+	font-size: 1rem;
+	line-height: 1.2;
+	letter-spacing: 0;
+}
+
+.postometro-search-cta:hover,
+.postometro-search-cta:focus-visible {
+	transform: translateY(-1px);
+	background: #ff9b68;
+	box-shadow: 0 10px 24px rgba(242, 138, 85, 0.24);
+}
+
+.postometro-results {
+	position: static;
+	gap: 1.25rem;
+	overflow: visible;
+}
+
+.postometro-results__header {
+	gap: 0.65rem;
+	padding-block-end: 1.25rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.postometro-results__diagnosis {
+	color: #dce5f4;
+	font-size: 0.95rem;
+}
+
+.postometro-results__subheadline {
+	font-size: 0.86rem;
+	line-height: 1.5;
+}
+
+.postometro-results__body {
+	min-height: 18rem;
+}
+
+.postometro-empty {
+	min-height: 18rem;
+	padding: 1.25rem;
+	border-style: solid;
+	background: rgba(255, 255, 255, 0.025);
+	overflow: visible;
+}
+
+.postometro-empty::before {
+	display: none;
+}
+
+.postometro-empty__number {
+	margin-block-end: 0.35rem;
+}
+
+.postometro-empty__illustration {
+	display: none !important;
+}
+
+.postometro-pick,
+.postometro-loading {
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.025);
+}
+
+.postometro-pick__actions {
+	grid-template-columns: repeat(2, max-content);
+}
+
+.postometro-cta {
+	min-height: 2.75rem;
+}
+
+@media (max-width: 70rem) {
+	.postometro-hero {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-hero__steps {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.75rem;
+	}
+
+	.postometro-hero__steps li {
+		grid-template-columns: 2rem minmax(0, 1fr);
+		border: 0;
+	}
+}
+
+@media (max-width: 42rem) {
+	.postometro-hero__steps,
+	.postometro-form__secondary-grid,
+	.postometro-form__footer {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-hero__steps {
+		gap: 0;
+	}
+
+	.postometro-hero__steps li {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	}
+
+	.postometro-hero__steps li:last-child {
+		border-bottom: 0;
+	}
+
+	.postometro-fieldset--company {
+		grid-column: auto;
+	}
+
+	.postometro-choice-grid--company {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-form__actions {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-pick__actions {
+		grid-template-columns: 1fr;
+	}
+}
+
 .about-page,
 .privacy-page {
 	display: grid;
@@ -8409,6 +8865,497 @@ img {
 	.person-page__award-year {
 		justify-self: start;
 	}
+}
+
+/* Postómetro · experiencia de videoclub 2026 */
+.postometro-page {
+	max-width: 74rem;
+	gap: clamp(1rem, 2.4vw, 1.75rem);
+}
+
+.postometro-hero {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	min-height: 31rem;
+	padding: 0;
+	align-items: stretch;
+	overflow: hidden;
+	border-radius: 28px;
+	background: #130d28;
+}
+
+.postometro-hero::after {
+	content: '';
+	display: block;
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: none;
+	background: linear-gradient(90deg, #130d28 3%, rgba(19, 13, 40, 0.95) 38%, rgba(19, 13, 40, 0.12) 72%);
+	animation: none;
+}
+
+.postometro-hero__copy {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1rem;
+	max-width: 45rem;
+	padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.postometro-hero__art {
+	display: block;
+	position: absolute;
+	inset: 0 0 0 22%;
+	z-index: 0;
+	width: auto;
+	margin: 0;
+	pointer-events: none;
+}
+
+.postometro-hero__art img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.postometro-hero__title {
+	max-width: 11ch;
+	font-size: clamp(2.65rem, 5.6vw, 4.8rem);
+	line-height: 0.92;
+	letter-spacing: -0.05em;
+}
+
+.postometro-hero__subtitle {
+	max-width: 48ch;
+	color: #d5cee8;
+	font-size: clamp(1rem, 1.5vw, 1.12rem);
+	line-height: 1.55;
+}
+
+.postometro-hero__stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55rem;
+	margin-block-start: 0.25rem;
+}
+
+.postometro-hero__stats span {
+	padding: 0.48rem 0.7rem;
+	border: 1px solid rgba(255, 255, 255, 0.13);
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.07);
+	color: #eee8f7;
+	font-size: 0.8rem;
+	font-weight: 600;
+	backdrop-filter: blur(8px);
+}
+
+.postometro-hero__stats strong {
+	color: #ffb089;
+}
+
+.postometro-shell {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 1.25rem;
+}
+
+.postometro-panel,
+.postometro-results {
+	width: 100%;
+	padding: clamp(1rem, 2.5vw, 1.65rem);
+	border-radius: 24px;
+	background:
+		linear-gradient(135deg, rgba(101, 51, 153, 0.13), transparent 42%),
+		#0d1018;
+}
+
+.postometro-panel {
+	border-color: rgba(255, 176, 137, 0.2);
+}
+
+.postometro-panel__intro {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-block-end: 1rem;
+}
+
+.postometro-panel__intro h2 {
+	font-size: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+.postometro-form {
+	gap: 1rem;
+	margin-block-start: 1.25rem;
+}
+
+.postometro-form__section-heading {
+	margin-block-start: 0.75rem;
+}
+
+.postometro-fieldset--panel {
+	padding: 1rem;
+	border-radius: 18px;
+	background: rgba(255, 255, 255, 0.028);
+}
+
+.postometro-choice-grid--mood {
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	gap: 0.65rem;
+}
+
+.postometro-choice-grid--company {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0.65rem;
+}
+
+.postometro-choice-card__body,
+.postometro-choice-card--compact .postometro-choice-card__body {
+	display: grid;
+	grid-template-columns: 2rem minmax(0, 1fr);
+	grid-template-rows: auto auto;
+	align-content: center;
+	gap: 0.2rem 0.55rem;
+	min-height: 5.5rem;
+	padding: 0.7rem;
+	padding-inline-end: 1.9rem;
+	border-radius: 14px;
+}
+
+.postometro-choice-card__icon {
+	grid-row: 1 / span 2;
+	width: 2rem;
+	height: 2rem;
+}
+
+.postometro-choice-card__body strong {
+	align-self: end;
+	font-size: 0.9rem;
+	line-height: 1.15;
+}
+
+.postometro-choice-card__body .postometro-choice-card__description {
+	display: block;
+	align-self: start;
+	color: #aeb9ca;
+	font-size: 0.72rem;
+	line-height: 1.25;
+	overflow-wrap: normal;
+}
+
+.postometro-choice-card__body::after {
+	inset-block-start: 0.55rem;
+	inset-inline-end: 0.55rem;
+}
+
+.postometro-form__secondary-grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.postometro-fieldset--company {
+	grid-column: 1 / -1;
+}
+
+.postometro-chip-grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.55rem;
+}
+
+.postometro-chip-option > span {
+	min-height: 3rem;
+	padding: 0.6rem 0.72rem;
+	border-radius: 12px;
+	font-size: 0.75rem;
+}
+
+.postometro-form__refinements {
+	grid-template-columns: minmax(13rem, 0.45fr) minmax(0, 1.55fr);
+	align-items: end;
+	padding: 1.15rem;
+	border-radius: 18px;
+}
+
+.postometro-form__footer {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.postometro-form__actions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.75rem;
+	padding-block-start: 0.35rem;
+}
+
+.postometro-search-cta {
+	width: auto;
+	min-width: min(100%, 22rem);
+	min-height: 3.5rem;
+	padding-inline: 1.5rem;
+}
+
+.postometro-form__actions .page-action {
+	width: auto;
+	min-height: 3.5rem;
+	padding-inline: 1rem;
+}
+
+.postometro-results {
+	position: static;
+}
+
+.postometro-results__header {
+	display: grid;
+	grid-template-columns: minmax(15rem, 0.7fr) minmax(0, 1.3fr);
+	column-gap: 2rem;
+	align-items: end;
+	padding-block-end: 1rem;
+}
+
+.postometro-results__eyebrow,
+.postometro-results__header h2 {
+	grid-column: 1;
+}
+
+.postometro-results__diagnosis,
+.postometro-results__subheadline {
+	grid-column: 2;
+}
+
+.postometro-results__diagnosis {
+	grid-row: 1 / span 2;
+	align-self: end;
+}
+
+.postometro-results__subheadline {
+	grid-row: 3;
+}
+
+.postometro-results__body {
+	min-height: 0;
+}
+
+.postometro-empty--idle {
+	display: grid;
+	grid-template-columns: minmax(17rem, 0.72fr) minmax(0, 1.28fr);
+	gap: 0;
+	min-height: 25rem;
+	padding: 0;
+	overflow: hidden;
+	background: #130d28;
+}
+
+.postometro-empty__copy {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.65rem;
+	padding: clamp(1.25rem, 4vw, 2.5rem);
+	background: linear-gradient(90deg, #130d28 70%, rgba(19, 13, 40, 0));
+}
+
+.postometro-empty__copy h3,
+.postometro-empty__copy p {
+	margin: 0;
+}
+
+.postometro-empty__copy h3 {
+	max-width: 18ch;
+	font-size: clamp(1.45rem, 3vw, 2.25rem);
+	line-height: 1.05;
+	letter-spacing: -0.025em;
+}
+
+.postometro-empty__copy p {
+	max-width: 38ch;
+	color: #d5cee8;
+	line-height: 1.55;
+}
+
+.postometro-empty__art {
+	min-width: 0;
+	height: 100%;
+	margin: 0;
+	mask-image: linear-gradient(90deg, transparent, #000 18%);
+	-webkit-mask-image: linear-gradient(90deg, transparent, #000 18%);
+}
+
+.postometro-empty__art img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.postometro-pick__body {
+	grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
+	column-gap: clamp(1.25rem, 3vw, 2.25rem);
+	max-width: none;
+}
+
+.postometro-pick__body > *:not(.postometro-pick__media) {
+	grid-column: 2;
+}
+
+.postometro-pick__media {
+	grid-column: 1;
+	grid-row: 1 / span 9;
+	max-width: none;
+}
+
+@media (max-width: 58rem) {
+	.postometro-hero {
+		min-height: 36rem;
+	}
+
+	.postometro-hero__copy {
+		justify-content: flex-start;
+		max-width: 40rem;
+	}
+
+	.postometro-hero__art {
+		display: block;
+		inset: 31% -20% 0 5%;
+	}
+
+	.postometro-hero::after {
+		display: block;
+		background: linear-gradient(180deg, #130d28 4%, rgba(19, 13, 40, 0.92) 45%, rgba(19, 13, 40, 0.05) 78%);
+	}
+
+	.postometro-choice-grid--mood {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.postometro-choice-grid--company {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.postometro-form__refinements,
+	.postometro-results__header {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-results__eyebrow,
+	.postometro-results__header h2,
+	.postometro-results__diagnosis,
+	.postometro-results__subheadline {
+		grid-column: 1;
+		grid-row: auto;
+	}
+}
+
+@media (max-width: 44rem) {
+	.postometro-hero {
+		min-height: 39rem;
+		border-radius: 22px;
+	}
+
+	.postometro-hero__art {
+		inset: 42% -38% 0 -14%;
+	}
+
+	.postometro-hero__title {
+		font-size: clamp(2.5rem, 13vw, 3.5rem);
+	}
+
+	.postometro-hero__stats span {
+		padding: 0.4rem 0.58rem;
+		font-size: 0.72rem;
+	}
+
+	.postometro-panel,
+	.postometro-results {
+		border-radius: 18px;
+	}
+
+	.postometro-panel__intro {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.postometro-choice-grid--mood,
+	.postometro-choice-grid--company {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.postometro-choice-card__body,
+	.postometro-choice-card--compact .postometro-choice-card__body {
+		grid-template-columns: 1.75rem minmax(0, 1fr);
+		min-height: 5rem;
+		padding: 0.65rem;
+		padding-inline-end: 1.75rem;
+	}
+
+	.postometro-choice-card__icon {
+		width: 1.75rem;
+		height: 1.75rem;
+	}
+
+	.postometro-form__secondary-grid,
+	.postometro-form__footer,
+	.postometro-chip-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-form__actions {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.postometro-search-cta,
+	.postometro-form__actions .page-action {
+		width: 100%;
+	}
+
+	.postometro-empty--idle {
+		grid-template-columns: 1fr;
+		min-height: 0;
+	}
+
+	.postometro-empty__copy {
+		min-height: 15rem;
+		background: linear-gradient(180deg, #130d28 75%, rgba(19, 13, 40, 0));
+	}
+
+	.postometro-empty__art {
+		height: 18rem;
+		mask-image: linear-gradient(180deg, transparent, #000 18%);
+		-webkit-mask-image: linear-gradient(180deg, transparent, #000 18%);
+	}
+
+	.postometro-pick__body {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-pick__body > *:not(.postometro-pick__media),
+	.postometro-pick__media {
+		grid-column: 1;
+		grid-row: auto;
+	}
+
+	.postometro-pick__media {
+		max-width: 18rem;
+	}
+}
+
+.postometro-panel__intro {
+	display: grid;
+	justify-content: stretch;
+	align-items: start;
+	gap: 0.45rem;
 }
 
 .person-page__filmography-grid {
@@ -11156,5 +12103,157 @@ img {
 
 	.site-footer__link {
 		align-items: center;
+	}
+}
+
+.postometro-panel__intro {
+	display: grid;
+	justify-content: stretch;
+	align-items: start;
+	gap: 0.45rem;
+}
+
+/* Mantener la experiencia del Postómetro por encima de los breakpoints heredados. */
+@media (max-width: 58rem) {
+	.postometro-hero {
+		min-height: 36rem;
+	}
+
+	.postometro-hero__copy {
+		justify-content: flex-start;
+		max-width: 40rem;
+	}
+
+	.postometro-hero__art {
+		display: block;
+		position: absolute;
+		inset: 31% -20% 0 5%;
+		width: auto;
+		margin: 0;
+	}
+
+	.postometro-hero::after {
+		display: block;
+		background: linear-gradient(180deg, #130d28 4%, rgba(19, 13, 40, 0.92) 45%, rgba(19, 13, 40, 0.05) 78%);
+	}
+
+	.postometro-choice-grid--mood {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.postometro-choice-grid--company {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.postometro-form__refinements,
+	.postometro-results__header {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-results__eyebrow,
+	.postometro-results__header h2,
+	.postometro-results__diagnosis,
+	.postometro-results__subheadline {
+		grid-column: 1;
+		grid-row: auto;
+	}
+}
+
+@media (max-width: 44rem) {
+	.postometro-hero {
+		min-height: 39rem;
+		padding: 0;
+		border-radius: 22px;
+	}
+
+	.postometro-hero__art {
+		display: block;
+		inset: 42% -38% 0 -14%;
+	}
+
+	.postometro-hero__title {
+		font-size: clamp(2.5rem, 13vw, 3.5rem);
+	}
+
+	.postometro-hero__stats span {
+		padding: 0.4rem 0.58rem;
+		font-size: 0.72rem;
+	}
+
+	.postometro-panel,
+	.postometro-results {
+		padding: 1rem;
+		border-radius: 18px;
+	}
+
+	.postometro-panel__intro {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.postometro-choice-grid--mood,
+	.postometro-choice-grid--company {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.postometro-choice-card__body,
+	.postometro-choice-card--compact .postometro-choice-card__body {
+		grid-template-columns: 1.75rem minmax(0, 1fr);
+		min-height: 5rem;
+		padding: 0.65rem;
+		padding-inline-end: 1.75rem;
+	}
+
+	.postometro-choice-card__icon {
+		width: 1.75rem;
+		height: 1.75rem;
+	}
+
+	.postometro-form__secondary-grid,
+	.postometro-form__footer,
+	.postometro-chip-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-form__actions {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.postometro-search-cta,
+	.postometro-form__actions .page-action {
+		width: 100%;
+	}
+
+	.postometro-empty--idle {
+		grid-template-columns: 1fr;
+		min-height: 0;
+	}
+
+	.postometro-empty__copy {
+		min-height: 15rem;
+		background: linear-gradient(180deg, #130d28 75%, rgba(19, 13, 40, 0));
+	}
+
+	.postometro-empty__art {
+		display: block;
+		height: 18rem;
+		mask-image: linear-gradient(180deg, transparent, #000 18%);
+		-webkit-mask-image: linear-gradient(180deg, transparent, #000 18%);
+	}
+
+	.postometro-pick__body {
+		grid-template-columns: 1fr;
+	}
+
+	.postometro-pick__body > *:not(.postometro-pick__media),
+	.postometro-pick__media {
+		grid-column: 1;
+		grid-row: auto;
+	}
+
+	.postometro-pick__media {
+		max-width: 18rem;
 	}
 }
