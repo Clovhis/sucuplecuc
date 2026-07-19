@@ -4,9 +4,10 @@ const cafecitoUrl = 'https://cafecito.app/cineposta';
 ---
 
 <aside class="donation-invite" aria-label="Apoyá a Cine Posta">
-	<p class="donation-invite__copy">
+	<p class="donation-invite__copy donation-invite__copy--full">
 		Cine Posta es de acceso gratuito. Si te sirve, podés apoyar el trabajo editorial con un cafecito.
 	</p>
+	<p class="donation-invite__copy donation-invite__copy--mobile">Cine Posta es gratis.</p>
 	<a
 		class="donation-invite__link"
 		href={cafecitoUrl}
@@ -34,12 +35,13 @@ const cafecitoUrl = 'https://cafecito.app/cineposta';
 	}
 
 	.donation-invite__copy { margin: 0; }
+	.donation-invite__copy--mobile { display: none; }
 
 	.donation-invite__link {
 		display: inline-flex;
 		align-items: center;
 		gap: 0.38rem;
-		min-height: 2rem;
+		min-height: 2.75rem;
 		padding: 0.3rem 0.65rem;
 		border: 1px solid rgba(255, 176, 137, 0.5);
 		border-radius: 999px;
@@ -56,4 +58,34 @@ const cafecitoUrl = 'https://cafecito.app/cineposta';
 	}
 
 	.donation-invite__link img { width: 1rem; height: 1rem; }
+
+	@media (max-width: 640px), (orientation: landscape) and (max-height: 500px) and (pointer: coarse) {
+		.donation-invite {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			gap: 0.65rem;
+			min-height: 3.5rem;
+			padding: 0.35rem max(0.5rem, env(safe-area-inset-right)) 0.35rem max(0.5rem, env(safe-area-inset-left));
+			font-size: 0.82rem;
+			text-align: start;
+		}
+
+		.donation-invite__copy--full { display: none; }
+		.donation-invite__copy--mobile {
+			display: block;
+			font-weight: 600;
+		}
+
+		.donation-invite__link {
+			flex: 0 0 auto;
+			min-height: 3rem;
+			padding: 0.45rem 0.72rem;
+			font-size: 0.8rem;
+		}
+	}
+
+	@media (max-width: 350px) {
+		.donation-invite__copy--mobile { display: none; }
+		.donation-invite { justify-content: center; }
+	}
 </style>

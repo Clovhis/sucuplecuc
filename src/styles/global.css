@@ -9351,6 +9351,283 @@ img {
 	}
 }
 
+/* Mobile 2026 baseline: comfortable touch, readable metadata and compact task-first layouts. */
+@media (max-width: 720px) {
+	.page-actions {
+		gap: 0.5rem;
+		margin: 0.7rem 0 1rem;
+	}
+
+	.page-action,
+	.community-page__home-link,
+	.community-page__current-link,
+	.trailer-shell__external,
+	.movie-detail__community-link,
+	.movie-detail__ten-second-head a {
+		min-height: 3rem;
+		padding-block: 0.6rem;
+	}
+
+	.site-header__actions > a {
+		font-size: 0.75rem;
+		letter-spacing: 0.035em;
+	}
+
+	.home-community-promo {
+		grid-template-columns: minmax(0, 1fr) 7.5rem;
+		grid-template-rows: auto auto;
+		gap: 0.55rem 0.75rem;
+		min-height: 0;
+		padding: 0.85rem;
+	}
+
+	.home-community-promo__content {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.home-community-promo__content p:not(.home-community-promo__eyebrow) {
+		display: -webkit-box;
+		overflow: hidden;
+		font-size: 0.88rem;
+		line-height: 1.35;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
+
+	.home-community-promo__illustration {
+		grid-column: 2;
+		grid-row: 1 / 3;
+		min-height: 7.25rem;
+	}
+
+	.home-community-promo__illustration img {
+		inset-block-start: 50%;
+		inset-inline-end: -1.5rem;
+		inline-size: 12.5rem;
+		transform: translateY(-50%);
+	}
+
+	.home-community-promo a {
+		grid-column: 1;
+		grid-row: 2;
+		width: fit-content;
+		min-height: 3rem;
+		padding-inline: 0.8rem;
+		font-size: 0.75rem;
+	}
+
+	.cinema-release-carousel__arrow,
+	.cinema-release-dialog__close {
+		inline-size: 3rem;
+		block-size: 3rem;
+	}
+
+	.movie-detail__poster {
+		justify-self: center;
+		width: min(12rem, 58vw);
+		max-height: none;
+	}
+
+	.movie-detail__gallery {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-rows: 1fr;
+		min-height: 11rem;
+		max-height: 14rem;
+	}
+
+	.movie-detail__panel {
+		padding: 1rem;
+	}
+
+	.movie-detail__title {
+		font-size: clamp(1.65rem, 8vw, 2.15rem);
+	}
+
+	.rating-stars {
+		gap: 0.1rem;
+	}
+
+	.rating-stars button {
+		display: inline-grid;
+		place-items: center;
+		min-width: 3rem;
+		min-height: 3rem;
+		padding: 0;
+		font-size: 1.6rem;
+	}
+
+	.community-comments__form .community-comments__emoji-picker button,
+	.community-message__editor .community-comments__emoji-picker button,
+	.community-message button,
+	.community-comments__form button,
+	.community-comments__identity button {
+		min-width: 3rem;
+		min-height: 3rem;
+	}
+
+	.site-footer__link {
+		min-width: 3rem;
+		min-height: 3rem;
+	}
+
+	.badge,
+	.platform-chip,
+	.movie-card__audience-rating,
+	.people-index__rank,
+	.people-index__fact dt,
+	.people-index__open-profile,
+	.movie-detail__editorial-byline,
+	.movie-detail__fact-label,
+	.community-page__home-link,
+	.community-page__current-link {
+		font-size: 0.75rem;
+	}
+
+	.people-index__hero {
+		min-height: 28rem;
+	}
+
+	.people-index__hero-copy {
+		gap: 0.75rem;
+		padding: 1.2rem;
+	}
+
+	.people-index__hero-art {
+		inset: 42% -28% 0 14%;
+	}
+
+	.people-index__title {
+		font-size: clamp(2.1rem, 10.5vw, 2.8rem);
+		line-height: 0.98;
+	}
+
+	.people-index__dek {
+		display: -webkit-box;
+		overflow: hidden;
+		font-size: 0.95rem;
+		line-height: 1.45;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+	}
+
+	.people-index__stats {
+		gap: 0.4rem;
+		margin-top: 0;
+	}
+
+	.people-index__stats span {
+		padding: 0.38rem 0.55rem;
+		font-size: 0.75rem;
+	}
+
+	.postometro-hero {
+		min-height: 26rem;
+	}
+
+	.postometro-hero__copy {
+		gap: 0.75rem;
+		padding: 1.2rem;
+	}
+
+	.postometro-hero__title {
+		font-size: clamp(2.35rem, 12vw, 3.15rem);
+		line-height: 0.96;
+	}
+
+	.postometro-hero__subtitle {
+		font-size: 0.96rem;
+		line-height: 1.45;
+	}
+
+	.postometro-hero__stats {
+		gap: 0.4rem;
+	}
+
+	.postometro-hero__stats span {
+		padding: 0.4rem 0.55rem;
+		font-size: 0.75rem;
+	}
+}
+
+/* Wide phones remain phones in landscape; viewport width alone must not activate desktop-only modules. */
+@media (orientation: landscape) and (max-height: 500px) and (pointer: coarse) {
+	.container,
+	.site-header,
+	.home-catalog {
+		width: min(100%, calc(100vw - 1rem));
+	}
+
+	.site-header {
+		padding: 0.5rem 0 0.65rem;
+	}
+
+	.site-search-bar {
+		grid-template-columns: auto minmax(0, 1fr) auto;
+		padding: 0.55rem;
+	}
+
+	.site-header__actions {
+		display: grid;
+		grid-column: auto;
+		grid-template-columns: repeat(2, minmax(7rem, 1fr));
+		width: auto;
+	}
+
+	.site-header__actions > a,
+	.page-action,
+	.cinema-release-carousel__arrow,
+	.cinema-release-dialog__close,
+	.rating-stars button,
+	.site-footer__link {
+		min-width: 3rem;
+		min-height: 3rem;
+	}
+
+	.site-header__actions > a,
+	.badge,
+	.platform-chip {
+		font-size: 0.75rem;
+	}
+
+	.home-catalog__desktop-extra,
+	.editorial-rankings,
+	.weekly-suggestion {
+		display: none;
+	}
+
+	.home-catalog {
+		overflow-x: clip;
+	}
+
+	.home-results-tools__filters,
+	.movie-detail,
+	.person-page__hero,
+	.person-page__content {
+		grid-template-columns: 1fr;
+	}
+
+	.home-platform-filter__chips {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.movie-detail__poster {
+		justify-self: center;
+		width: min(11rem, 28vw);
+	}
+
+	.movie-detail__gallery {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-rows: 1fr;
+		min-height: 11rem;
+	}
+
+	.people-index__hero,
+	.postometro-hero {
+		min-height: 22rem;
+	}
+}
+
 .postometro-panel__intro {
 	display: grid;
 	justify-content: stretch;

@@ -1,0 +1,150 @@
+/* Mobile-only final cascade. Imported after the shared desktop stylesheet. */
+@media (max-width: 720px) {
+	button,
+	input:not([type='radio']):not([type='checkbox']),
+	select,
+	textarea,
+	summary,
+	.page-action,
+	.site-header__brand,
+	.site-header__actions > a,
+	.site-footer__donate,
+	.site-footer__link,
+	.movie-share__button,
+	.movie-detail__community-link,
+	.community-page__home-link,
+	.community-page__current-link,
+	.community-movie-summary__link {
+		min-height: 48px !important;
+	}
+
+	button {
+		min-width: 48px !important;
+	}
+
+	.movie-share__button--x {
+		min-width: 48px !important;
+	}
+
+	.movie-share__button--x,
+	.community-comments__emoji-picker button {
+		min-width: 48px;
+	}
+
+	.community-comments__spoiler-toggle {
+		min-height: 48px;
+	}
+
+	.site-header__actions > a {
+		font-size: 0.75rem;
+		line-height: 1.15;
+	}
+
+	.people-index__hero {
+		min-height: 28rem;
+	}
+
+	.people-index__hero-copy {
+		max-width: 33rem;
+		padding: 1.4rem;
+	}
+
+	.people-index__title {
+		max-width: 11ch;
+		font-size: clamp(2.65rem, 12vw, 3.35rem);
+		line-height: 0.96;
+	}
+
+	.people-index__dek {
+		max-width: 30rem;
+		font-size: 1rem;
+		line-height: 1.42;
+	}
+
+	.people-index__stats {
+		gap: 0.5rem;
+	}
+
+	.people-index__stats span {
+		padding: 0.5rem 0.7rem;
+		font-size: 0.78rem;
+	}
+
+	.postometro-hero {
+		min-height: 23rem;
+	}
+
+	.postometro-hero__copy {
+		padding: 1.25rem;
+	}
+
+	.postometro-hero__title {
+		font-size: clamp(2.75rem, 13vw, 3.6rem);
+		line-height: 0.92;
+	}
+
+	.postometro-hero__stats {
+		gap: 0.45rem;
+	}
+
+	.postometro-hero__stats span {
+		padding: 0.45rem 0.6rem;
+		font-size: 0.75rem;
+	}
+}
+
+@media (max-width: 350px) {
+	.people-index__hero {
+		min-height: 26rem;
+	}
+
+	.people-index__hero-copy,
+	.postometro-hero__copy {
+		padding: 1rem;
+	}
+
+	.people-index__title,
+	.postometro-hero__title {
+		font-size: 2.45rem;
+	}
+}
+
+@media (orientation: landscape) and (max-height: 500px) and (pointer: coarse) {
+	button,
+	input:not([type='radio']):not([type='checkbox']),
+	select,
+	textarea,
+	summary,
+	.page-action,
+	.site-header__brand,
+	.site-header__actions > a,
+	.site-footer__donate,
+	.site-footer__link,
+	.movie-share__button,
+	.movie-detail__community-link {
+		min-height: 48px !important;
+	}
+
+	button {
+		min-width: 48px !important;
+	}
+
+	.movie-share__button--whatsapp,
+	.movie-share__button--x {
+		min-width: 48px !important;
+	}
+
+	.site-search-bar {
+		grid-template-columns: auto minmax(0, 1fr) auto;
+	}
+
+	.site-header__actions {
+		grid-column: auto;
+		grid-template-columns: repeat(2, minmax(7.5rem, auto));
+	}
+
+	.people-index__hero,
+	.postometro-hero {
+		min-height: 22rem;
+	}
+}
