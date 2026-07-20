@@ -40,6 +40,43 @@
 		line-height: 1.15;
 	}
 
+	.home-welcome {
+		grid-template-columns: minmax(0, 1fr) 7.25rem;
+		min-height: 12rem;
+		padding: 0.85rem;
+		border-radius: 16px;
+	}
+
+	.home-welcome__content {
+		max-width: none;
+	}
+
+	.home-welcome h2 {
+		max-width: 12ch;
+		font-size: clamp(1.22rem, 6.3vw, 1.55rem);
+	}
+
+	.home-welcome__copy {
+		max-width: 30rem;
+		font-size: 0.82rem;
+		line-height: 1.38;
+	}
+
+	.home-welcome__link {
+		min-height: 2.75rem;
+		margin-top: 0.25rem;
+	}
+
+	.home-welcome__art {
+		width: 8.2rem;
+	}
+
+	.home-welcome__art img {
+		inset-inline-end: -2.35rem;
+		inset-block-end: -0.35rem;
+		width: 13.5rem;
+	}
+
 	.people-index__hero {
 		min-height: 28rem;
 	}

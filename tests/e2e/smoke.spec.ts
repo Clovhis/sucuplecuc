@@ -23,6 +23,9 @@ test('home page renders the catalog shell', async ({ page }) => {
   expect(response?.ok()).toBeTruthy();
   await expect(page).toHaveTitle(/Cine|Posta/i);
   await expect(page.locator('body')).toBeVisible();
+	await expect(page.getByRole('heading', { name: '¿Qué somos?' })).toBeVisible();
+	await expect(page.locator('.home-welcome__copy')).toContainText('No alojamos películas, torrents, descargas ni enlaces piratas');
+	await expect(page.getByRole('link', { name: /Conocé cómo funciona/i })).toHaveAttribute('href', '/sobre-cine-posta/');
   await expect(page.getByRole('link', { name: /^Ver detalle de/i }).first()).toBeVisible();
 
   const bodyText = await page.locator('body').innerText();

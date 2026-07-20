@@ -469,6 +469,117 @@ img {
 	display: none;
 }
 
+.home-welcome {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) clamp(18rem, 30vw, 23rem);
+	align-items: center;
+	min-height: 9rem;
+	overflow: hidden;
+	padding: 1rem clamp(1rem, 2.4vw, 1.7rem);
+	border: 1px solid rgba(255, 176, 137, 0.24);
+	border-radius: 18px;
+	background:
+		radial-gradient(circle at 84% 20%, rgba(54, 111, 255, 0.18), transparent 31%),
+		linear-gradient(105deg, rgba(30, 20, 45, 0.96), rgba(13, 20, 31, 0.97));
+	box-shadow: var(--shadow-panel);
+}
+
+.home-welcome::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: repeating-linear-gradient(
+		90deg,
+		transparent 0 3.5rem,
+		rgba(255, 255, 255, 0.018) 3.5rem 3.56rem
+	);
+}
+
+.home-welcome__content {
+	position: relative;
+	z-index: 1;
+	max-width: 46rem;
+}
+
+.home-welcome__eyebrow {
+	margin: 0 0 0.22rem;
+	color: #ffcfbb;
+	font-family: var(--font-mono);
+	font-size: 0.68rem;
+	font-weight: 600;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+}
+
+.home-welcome h2 {
+	margin: 0;
+	color: #fff7f2;
+	font-size: clamp(1.35rem, 2.35vw, 1.85rem);
+	line-height: 1.05;
+}
+
+.home-welcome__copy {
+	max-width: 67ch;
+	margin: 0.42rem 0 0;
+	color: #c7d0df;
+	font-size: 0.9rem;
+	line-height: 1.45;
+}
+
+.home-welcome__copy strong {
+	color: #f6e9e2;
+	font-weight: 600;
+}
+
+.home-welcome__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.38rem;
+	min-height: 2.25rem;
+	margin-top: 0.45rem;
+	color: #ffbd9d;
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.035em;
+	transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.home-welcome__link:hover,
+.home-welcome__link:focus-visible {
+	color: #fff2eb;
+	transform: translateX(2px);
+}
+
+.home-welcome__art {
+	position: absolute;
+	inset-block: 0;
+	inset-inline-end: 0;
+	width: clamp(18rem, 30vw, 23rem);
+	pointer-events: none;
+}
+
+.home-welcome__art::before {
+	content: '';
+	position: absolute;
+	inset: 18% 5% 5%;
+	border-radius: 999px;
+	background: rgba(82, 102, 255, 0.16);
+	filter: blur(24px);
+}
+
+.home-welcome__art img {
+	position: absolute;
+	inset-inline-end: -0.55rem;
+	inset-block-end: -2.6rem;
+	width: clamp(20rem, 32vw, 25rem);
+	height: auto;
+	max-width: none;
+	filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.34));
+}
+
 .home-community-promo {
 	display: grid;
 	grid-template-columns: minmax(18rem, 1fr) clamp(25rem, 38vw, 31rem) auto;
