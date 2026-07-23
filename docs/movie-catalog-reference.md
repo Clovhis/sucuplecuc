@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-07-23. Fuente: src/data/movies/*.json
 
-Total de peliculas: 980
+Total de peliculas: 981
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -61,6 +61,7 @@ Total de peliculas: 980
 | 2026 | Los bobos | los-bobos-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | Los caminantes de la calle | los-caminantes-de-la-calle-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Los colores del tiempo | los-colores-del-tiempo-2026 | Drama | Cine | +13 |
+| 2026 | Los Descendientes: viaje al mundo oscuro | los-descendientes-viaje-al-mundo-oscuro-2026 | Musical | Disney Plus | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mensajes de voz para Isabelle | mensajes-de-voz-para-isabelle-2026 | Romance | Netflix | +13 |
