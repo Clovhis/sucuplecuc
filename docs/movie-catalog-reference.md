@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-19. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-23. Fuente: src/data/movies/*.json
 
 Total de peliculas: 980
 
@@ -168,7 +168,7 @@ Total de peliculas: 980
 | 2025 | Opus | opus-2025 | Thriller | HBO Max | +17 |
 | 2025 | Otro viernes de locos | otro-viernes-de-locos-2025 | Comedia | Disney Plus | ATP |
 | 2025 | Padre Madre Hermana Hermano | padre-madre-hermana-hermano-2025 | Drama | Otras plataformas | +13 |
-| 2025 | Pillion | pillion-2025 | Drama | HBO Max | +18 |
+| 2025 | Pillion | pillion-2025 | Drama | Prime Video | +18 |
 | 2025 | Playa de lobos | playa-de-lobos-2025 | Thriller | Disney Plus | +13 |
 | 2025 | Risa y la cabina del viento | risa-y-la-cabina-del-viento-2025 | Drama | Netflix | +12 |
 | 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |

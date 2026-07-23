@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, keep `category`/`genres` plus explicit `subgenres` aligned with the current site taxonomy, support legal AR multi-platform data (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance/Romántica, verify automatic jajametro eligibility for primary laugh-first Comedia, verify automatic cagazometro eligibility for primary Terror, verify automatic explosiometro eligibility for primary Accion/Acción, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
+description: Add a single movie entry to La posta cine safely from a plain-language request (for example "Agrega X, es malisima"). Use when the user wants to publish a new movie review entry in Clovhis/sucuplecuc. Enforce add-only content edits, create a feature branch from main, fetch trustworthy movie metadata, write one content file, keep `category`/`genres` plus explicit `subgenres` aligned with the current site taxonomy, resolve current legal availability specifically for Argentina (`releasePlatform` + optional `releasePlatforms`), verify automatic lagrimometro eligibility for primary Drama/Romance/Romántica, verify automatic jajametro eligibility for primary laugh-first Comedia, verify automatic cagazometro eligibility for primary Terror, verify automatic explosiometro eligibility for primary Accion/Acción, revalidate any final `Cine` claim through `la-posta-cine-cartelera-revalidator`, run audit/build validation, show diff, and push the new branch without modifying site code.
 ---
 
 # la-posta-cine-add-movie
@@ -187,6 +187,17 @@ The `Streaming — Películas para ver ahora mismo en casa` row uses the same mo
 - Eligible non-theatrical releases appear automatically for 42 days from their platform date. Never add carousel-specific data, duplicate posters or a second trailer URL.
 - Do not use `Otras plataformas` to claim a streaming availability. If the title also has `Cine`, it belongs only in Cartelera to avoid a repeated card.
 - For every current confirmed streaming load, run the auditor build check after `npm run build` with `--verify-streaming-carousel-build`.
+
+## Argentine availability policy (mandatory)
+
+Cine Posta is for audiences in Argentina. `releasePlatform` and `releasePlatforms` are current AR availability claims, not a movie's original distributor, a global platform brand, or availability in another country.
+
+- Verify every platform label on the task date before writing or preserving it. Start with the title's `JustWatch AR` page, then check the official Argentine platform page when the JustWatch result is unclear, stale, or conflicts with it.
+- Record the exact AR evidence URL and the offer type in the task report. Do not accept a US, Spain, generic Latin American, or geo-redirected listing as AR evidence.
+- Prefer a current subscription offer (`FLATRATE`). When no subscription is available but an allowlisted provider offers legal rental or purchase in AR, use that provider only as a transactional availability claim and say so in the report.
+- Do not assign a provider because of studio/franchise ownership, an old press release, a search-result snippet, or a page that does not establish Argentine availability.
+- If no current legal AR offer can be verified, set `releasePlatform: "Otras plataformas"`, omit `releasePlatforms`, and do not keep an unverified `isPremiere` badge solely because the title is available abroad.
+- A second platform is allowed only when two current legal AR offers are explicitly verified; keep the existing maximum of two labels and never combine either with `Otras plataformas`.
 
 ## Metadata lookup rules
 

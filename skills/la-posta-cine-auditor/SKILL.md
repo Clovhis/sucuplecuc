@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-auditor
-description: Audit recently added or revalidated La Posta Cine movie entries after `la-posta-cine-add-movie`, `la-posta-cine-cartelera-revalidator`, or any bulk/backfill load. Use when Codex needs to verify newly added or platform-adjusted `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, trailer validity, review quality, awards structure, category/genres/subgenres coherence, single or multi-platform labels, catalog sync, and safe diff scope before or after publishing.
+description: Audit recently added or revalidated La Posta Cine movie entries after `la-posta-cine-add-movie`, `la-posta-cine-cartelera-revalidator`, or any bulk/backfill load. Use when Codex needs to verify newly added or platform-adjusted `src/data/movies/*.json` files in Clovhis/sucuplecuc for schema correctness, current Argentine platform availability, trailer validity, review quality, awards structure, category/genres/subgenres coherence, single or multi-platform labels, catalog sync, and safe diff scope before or after publishing.
 ---
 
 # la-posta-cine-auditor
@@ -126,6 +126,18 @@ The bundled script checks:
 - forbidden third-party site mentions inside reviews (`Rotten`, `Metacritic`, `IMDb`, etc.)
 - review length / underdeveloped copy / template-shaped wording / repeated sentence skeletons by delegating to `skills/la-posta-cine-add-movie/scripts/review_audit.cjs`
 - synopsis presence, useful 28-90 word range, duplicate-copy detection and generic source/template-shaped openers through the same editorial audit
+
+### Argentine platform verification (mandatory)
+
+Cine Posta serves Argentina. The structural allowlist check is not enough: every audited change to `releasePlatform` or `releasePlatforms` must also be verified as a current legal AR offer on the audit date.
+
+- Check `JustWatch AR` first and retain its direct title URL as evidence. Use the official Argentine platform page as a second source when the result is ambiguous, unavailable, or contradictory.
+- Do not use global, US, Spain, or generic Latin American pages as proof for an AR label. Never infer a provider from franchise ownership, distributor, or a platform page that redirects outside Argentina.
+- Prefer `FLATRATE` subscription offers. A verified AR rental/purchase offer on an allowlisted service is acceptable, but report it as transactional rather than streaming/subscription availability.
+- If no legal AR offer can be verified, the required result is `releasePlatform: "Otras plataformas"` with no `releasePlatforms`. Treat an unsupported AR claim as an `ERROR`, not a warning.
+- For a full-catalog availability audit, check every entry with a provider label, not only `Cine`; `Cine` still additionally requires the live-cartelera revalidation workflow.
+- Include the audit date, evidence URL, provider, and offer type for every changed label in the final report. Do not publish a platform change without this evidence.
+- For a scalable first pass, run `node scripts/audit-ar-platform-availability.mjs --all` in conservative mode. Treat only `mismatch` rows with a matched direct AR URL as candidates for edits; retry `unmatched` or network-error rows with a targeted source check instead of guessing.
 
 ### 3. Interpret findings
 
