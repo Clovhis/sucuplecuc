@@ -59,7 +59,7 @@ Total de peliculas: 980
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Otras plataformas | +16 |
 | 2026 | Leviticus: Ritual de sangre | leviticus-ritual-de-sangre-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Los bobos | los-bobos-2026 | Thriller | Otras plataformas | +16 |
-| 2026 | Los caminantes de la calle | los-caminantes-de-la-calle-2026 | Thriller | Cine | +13 |
+| 2026 | Los caminantes de la calle | los-caminantes-de-la-calle-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Los colores del tiempo | los-colores-del-tiempo-2026 | Drama | Cine | +13 |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
@@ -95,7 +95,7 @@ Total de peliculas: 980
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Otras plataformas | ATP |
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Otras plataformas | ATP |
-| 2026 | Supergirl | supergirl-2026 | Accion | Cine | +13 |
+| 2026 | Supergirl | supergirl-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | HBO Max | +16 |
 | 2026 | Tetracampeones: Brasil volvió a creer | tetracampeones-brasil-volvio-a-creer-2026 | Documental | Netflix | +13 |
