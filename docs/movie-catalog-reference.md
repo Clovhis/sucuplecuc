@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-23. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 981
+Total de peliculas: 983
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -259,6 +259,7 @@ Total de peliculas: 981
 | 2024 | The Instigators | the-instigators-2024 | Comedia | Apple TV | +16 |
 | 2024 | The Substance | the-substance-2024 | Terror | HBO Max | +16 |
 | 2024 | The Wild Robot | the-wild-robot-2024 | Animacion | HBO Max | ATP |
+| 2024 | Thelma: La venganza nunca ha sido tan dulce | thelma-la-venganza-nunca-ha-sido-tan-dulce-2024 | Comedia | Prime Video | +13 |
 | 2024 | Topuria. Matador | topuria-matador-2024 | Documental | Paramount Plus | +14 |
 | 2024 | Transformers Uno | transformers-one-2024 | Acción | Netflix | ATP |
 | 2024 | Turtles All the Way Down | turtles-all-the-way-down-2024 | Drama | HBO Max | +13 |
@@ -341,6 +342,7 @@ Total de peliculas: 981
 | 2021 | Don't Look Up | dont-look-up-2021 | Comedia | Netflix | +16 |
 | 2021 | Dune: Part One | dune-2021 | Acción | HBO Max | +13 |
 | 2021 | El perro que no calla | el-perro-que-no-calla-2021 | Drama | CINE.AR | ATP |
+| 2021 | El último duelo | el-ultimo-duelo-2021 | Drama | Paramount Plus + Disney Plus | +16 |
 | 2021 | Encanto | encanto-2021 | Animación | Disney Plus | ATP |
 | 2021 | Eternals | eternals-2021 | Acción | Disney Plus | +13 |
 | 2021 | F9: The Fast Saga | f9-the-fast-saga-2021 | Acción | Otras plataformas | +13 |
