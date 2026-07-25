@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-24. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 985
+Total de peliculas: 989
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -12,7 +12,7 @@ Total de peliculas: 985
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Aída y vuelta | aida-y-vuelta-2026 | Comedia | Prime Video | +13 |
 | 2026 | Amarga Navidad | amarga-navidad-2026 | Drama | Cine | +13 |
-| 2026 | Amos del Universo | amos-del-universo-2026 | Accion | Otras plataformas | +13 |
+| 2026 | Amos del Universo | amos-del-universo-2026 | Accion | Prime Video | +13 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | Backrooms | backrooms-2026 | Terror | Cine | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
@@ -63,6 +63,7 @@ Total de peliculas: 985
 | 2026 | Los bobos | los-bobos-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | Los caminantes de la calle | los-caminantes-de-la-calle-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Los colores del tiempo | los-colores-del-tiempo-2026 | Drama | Cine | +13 |
+| 2026 | Los creyentes | los-creyentes-2026 | Thriller | Netflix | +16 |
 | 2026 | Los Descendientes: viaje al mundo oscuro | los-descendientes-viaje-al-mundo-oscuro-2026 | Musical | Disney Plus | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
@@ -93,7 +94,7 @@ Total de peliculas: 985
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
 | 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Cine | +17 |
-| 2026 | Scream 7 | scream-7-2026 | Terror | Apple TV | +16 |
+| 2026 | Scream 7 | scream-7-2026 | Terror | Paramount Plus | +16 |
 | 2026 | Send Help | send-help-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Otras plataformas | ATP |
@@ -192,6 +193,7 @@ Total de peliculas: 985
 | 2025 | Thunderbolts* | thunderbolts-2025 | Accion | Disney Plus | +13 |
 | 2025 | Together: Juntos Hasta La Muerte | together-juntos-hasta-la-muerte-2025 | Terror | Prime Video | +16 |
 | 2025 | Tron: Ares | tron-ares-2025 | Ciencia ficcion | Disney Plus | ATP |
+| 2025 | UnMarry | unmarry-2025 | Drama | Netflix | +13 |
 | 2025 | Until Dawn | until-dawn-2025 | Terror | HBO Max | +17 |
 | 2025 | Valor sentimental | valor-sentimental-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Weapons | weapons-2025 | Terror | HBO Max | +16 |
@@ -249,6 +251,7 @@ Total de peliculas: 985
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |
+| 2024 | Sonic 3: La película | sonic-3-la-pelicula-2024 | Accion | Paramount Plus + Netflix | +13 |
 | 2024 | Sueños en Oslo | suenos-de-oslo-2024 | Drama | Otras plataformas | +13 |
 | 2024 | Super/Man: La Historia De Christopher Reeve | super-man-the-christopher-reeve-story-2024 | Documental | HBO Max | +13 |
 | 2024 | Terrifier 3 | terrifier-3-2024 | Gore | Otras plataformas | +18 |
@@ -305,6 +308,7 @@ Total de peliculas: 985
 | 2023 | The Marvels | the-marvels-2023 | Accion | Disney Plus | +13 |
 | 2023 | The Super Mario Bros. Movie | the-super-mario-bros-movie-2023 | Animacion | Netflix | ATP |
 | 2023 | The Zone of Interest | the-zone-of-interest-2023 | Drama | Prime Video | +13 |
+| 2023 | Transformers: El despertar de las bestias | transformers-el-despertar-de-las-bestias-2023 | Accion | Paramount Plus | +13 |
 | 2023 | Wish | wish-2023 | Animacion | Disney Plus | ATP |
 | 2023 | Wonka | wonka-2023 | Fantasia | HBO Max | ATP |
 | 2022 | All Quiet on the Western Front | all-quiet-on-the-western-front-2022 | Drama | Netflix | +16 |
