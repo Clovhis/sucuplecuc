@@ -1,4 +1,4 @@
 interface:
   display_name: "La Posta Cine Recent Scout"
-  short_description: "Detecta estrenos recientes para subir"
-  default_prompt: "Use $la-posta-cine-recent-scout in quiet mode: do not send progress updates unless blocked or failing; find one relevant recent movie not yet in the catalog, trigger the add and audit workflows, and report everything at the end. Any downstream review must be handwritten from scratch by the AI for that exact movie, with zero template wording or recycled paragraph structures."
+  short_description: "Detecta estrenos recientes publicables en Argentina"
+  default_prompt: "Usa $la-posta-cine-recent-scout para encontrar un estreno reciente y pasarlo al flujo de carga."

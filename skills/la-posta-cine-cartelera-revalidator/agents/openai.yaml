@@ -1,4 +1,4 @@
 interface:
   display_name: "La Posta Cine Cartelera Revalidator"
-  short_description: "Revalida cartelera y plataformas AR"
-  default_prompt: "Audita las peliculas marcadas como Cine en modo silencioso: no mandes updates de progreso salvo bloqueo o fallo; corrige plataformas, sincroniza el catalogo, audita y reporta todo junto al final."
+  short_description: "Revalida cartelera y plataformas argentinas"
+  default_prompt: "Usa $la-posta-cine-cartelera-revalidator para revisar cartelera argentina y corregir plataformas."

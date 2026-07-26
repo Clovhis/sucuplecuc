@@ -1,4 +1,4 @@
 interface:
   display_name: "La Posta Cine Full Site Fix"
-  short_description: "Audita y corrige todo el sitio"
-  default_prompt: "Use $la-posta-cine-full-site-fix in quiet mode: do not send progress updates unless blocked or failing; create a fresh fix branch from main, audit the whole site, repair structural and editorial issues, validate the final build, and report everything at the end."
+  short_description: "Repara problemas confirmados de todo el sitio"
+  default_prompt: "Usa $la-posta-cine-full-site-fix para auditar y reparar problemas confirmados en una rama fix."

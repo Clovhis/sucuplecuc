@@ -1,4 +1,4 @@
 interface:
   display_name: "La Posta Cine Add Movie"
-  short_description: "Carga una pel√≠cula nueva sin tocar c√≥digo del sitio, con taxonomy de subg√©neros consistente"
-  default_prompt: "Usa $la-posta-cine-add-movie en modo silencioso. Toda review debe escribirse 100% a mano por la IA para esa pelicula puntual, desde cero, en castellano rioplatense, sin templates, sin frases heredadas, sin repetir esqueletos de parrafo y sin meter el verdictLabel dentro del texto. Si la rese√±a suena intercambiable con otra, reescribila antes de validar. Si aplica un subg√©nero soportado por el sitio, cargalo expl√≠citamente en `subgenres` con label can√≥nico y no lo dejes enterrado solo en `genres`."
+  short_description: "Carga pelÌculas con investigaciÛn AR eficiente"
+  default_prompt: "Usa $la-posta-cine-add-movie para cargar una pelÌcula con investigaciÛn AR acotada y texto original de IA."

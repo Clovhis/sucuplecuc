@@ -102,6 +102,7 @@ Catálogo y contenido:
 ```bash
 npm run catalog:movies
 npm run catalog:movies:check
+npm run new-movie -- --title "Titulo de la pelicula" --year 2026 --dry-run --json
 npm run validate:content
 npm run validate:public-output
 npm run audit:movies:recent
@@ -132,10 +133,11 @@ npm run enrich-people
 
 ## Flujo recomendado para contenido
 
-1. Editar o agregar películas en `src/data/movies`.
-2. Regenerar o chequear el catálogo derivado con `npm run catalog:movies` o `npm run catalog:movies:check`.
-3. Auditar contenido con `npm run audit:movies:recent` o `npm run audit:movies:all`.
-4. Validar salida final con `npm run validate:content`.
+1. Para una alta, ejecutar primero `npm run new-movie -- --title "Titulo de la pelicula" --year 2026 --dry-run --json`: propone un slug y detecta duplicados por slug o título+año sin escribir archivos. Luego crear la entrada con el mismo comando sin `--dry-run`.
+2. Editar o completar películas en `src/data/movies`.
+3. Regenerar o chequear el catálogo derivado con `npm run catalog:movies` o `npm run catalog:movies:check`.
+4. Auditar contenido con `npm run audit:movies:recent` o `npm run audit:movies:all`.
+5. Validar salida final con `npm run validate:content`.
 
 El hook `pre-push`, una vez instalado con `npm run hooks:install`, corre chequeos de catálogo, auditoría de contenido y build antes de empujar.
 

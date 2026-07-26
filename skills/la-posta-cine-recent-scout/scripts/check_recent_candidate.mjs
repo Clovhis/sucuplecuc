@@ -8,7 +8,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 
 function parseArgs(argv) {
 	const args = {
-		recentDays: 90,
+		recentDays: 7,
 		json: false,
 	};
 

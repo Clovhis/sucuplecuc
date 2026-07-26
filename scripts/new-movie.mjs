@@ -10,6 +10,10 @@ function parseArgs(argv) {
 	const result = {};
 	for (let i = 0; i < argv.length; i += 1) {
 		const token = argv[i];
+		if (token === '--dry-run' || token === '--json') {
+			result[token.slice(2)] = true;
+			continue;
+		}
 		if (!token.startsWith('--')) continue;
 		const key = token.slice(2);
 		const value = argv[i + 1];
@@ -22,13 +26,29 @@ function parseArgs(argv) {
 	return result;
 }
 
+function normalizeText(value) {
+	return String(value ?? '')
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, ' ')
+		.trim()
+		.replace(/\s+/g, ' ');
+}
+
+function slugify(value) {
+	return normalizeText(value).replace(/\s+/g, '-');
+}
+
 function assertValidInput(args) {
-	const { slug, title, year } = args;
-	if (!slug || !title || !year) {
+	const { title, year } = args;
+	if (!title || !year) {
 		throw new Error(
-			'Uso: npm run new-movie -- --slug "mi-peli-2026" --title "Mi Peli" --year 2026',
+			'Uso: npm run new-movie -- --title "Mi Peli" --year 2026 [--slug "mi-peli-2026"] [--dry-run]',
 		);
 	}
+	args.slug = String(args.slug ?? `${slugify(title)}-${year}`).trim();
+	const { slug } = args;
 	if (!SLUG_PATTERN.test(slug)) {
 		throw new Error('Slug invalido. Usa solo minusculas, numeros y guiones.');
 	}
@@ -44,17 +64,38 @@ async function loadTemplate() {
 	return JSON.parse(rawTemplate);
 }
 
-async function slugAlreadyExists(newSlug) {
+function sameMovie(candidate, movie) {
+	const sameSlug = movie.slug === candidate.slug;
+	const sameYearAndTitle =
+		Number(movie.year) === Number(candidate.year) &&
+		[movie.title, movie.originalTitle].some((value) => normalizeText(value) === normalizeText(candidate.title));
+	return sameSlug || sameYearAndTitle;
+}
+
+async function findDuplicates(candidate) {
 	const files = await readdir(MOVIES_DIR);
+	const duplicates = [];
 	for (const fileName of files) {
 		if (!fileName.endsWith('.json')) continue;
 		const filePath = path.join(MOVIES_DIR, fileName);
 		const movie = JSON.parse(await readFile(filePath, 'utf8'));
-		if (movie.slug === newSlug) {
-			return filePath;
+		if (sameMovie(candidate, movie)) {
+			duplicates.push(filePath);
 		}
 	}
-	return null;
+	return duplicates;
+}
+
+function printResult(result, asJson) {
+	if (asJson) {
+		console.log(JSON.stringify(result, null, 2));
+		return;
+	}
+
+	console.log(`slug: ${result.slug}`);
+	console.log(`output: ${result.outputPath}`);
+	console.log(`duplicate: ${result.duplicates.length > 0 ? result.duplicates.join(', ') : 'no'}`);
+	console.log(`dry run: ${result.dryRun ? 'yes' : 'no'}`);
 }
 
 async function main() {
@@ -62,12 +103,23 @@ async function main() {
 	const year = assertValidInput(args);
 
 	await mkdir(MOVIES_DIR, { recursive: true });
-	const duplicatePath = await slugAlreadyExists(args.slug);
-	if (duplicatePath) {
-		throw new Error(`Ya existe una pelicula con ese slug: ${duplicatePath}`);
+	const outputPath = path.join(MOVIES_DIR, `${args.slug}.json`);
+	const duplicates = await findDuplicates({ slug: args.slug, title: args.title, year });
+	const result = {
+		slug: args.slug,
+		outputPath: outputPath.replace(/\\/g, '/'),
+		duplicates: duplicates.map((duplicate) => duplicate.replace(/\\/g, '/')),
+		dryRun: Boolean(args['dry-run']),
+	};
+	if (duplicates.length > 0) {
+		printResult(result, args.json);
+		throw new Error('La pelicula ya existe. No se creo ni modifico ningun archivo.');
+	}
+	if (args['dry-run']) {
+		printResult(result, args.json);
+		return;
 	}
 
-	const outputPath = path.join(MOVIES_DIR, `${args.slug}.json`);
 	const template = await loadTemplate();
 	const movieData = {
 		...template,
@@ -86,13 +138,7 @@ async function main() {
 	};
 
 	await writeFile(outputPath, `${JSON.stringify(movieData, null, '\t')}\n`, 'utf8');
-	console.log(`Entrada creada en ${outputPath}`);
-	console.log(
-		'Antes de publicar completa, como minimo, editorial.becauseYouLiked (1-2 slugs) y editorial.related (3-4 slugs).',
-	);
-	console.log('No publiques la entrada sin completar synopsis con de que se trata la pelicula, sin opinion.');
-	console.log(`Despues corre: npm run enrich-people -- --movie ${args.slug} --missing-only`);
-	console.log(`Y valida personas con: npm run audit:movie-people -- --movie ${args.slug}`);
+	printResult(result, args.json);
 }
 
 main().catch((error) => {

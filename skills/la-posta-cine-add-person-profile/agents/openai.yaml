@@ -1,4 +1,4 @@
 interface:
   display_name: "La Posta Cine Add Person Profile"
-  short_description: "Crea o actualiza perfiles exclusivos de actores, actrices y directores"
-  default_prompt: "Usa $la-posta-cine-add-person-profile en modo silencioso. Escribí la biografía desde cero en castellano rioplatense, basada en hechos verificables y fuentes confiables; no uses Wikipedia, plantillas, relleno genérico ni frases intercambiables. Conservá el patrón de perfiles existente, verificá la navegación y SEO, y corré la auditoría antes de reportar."
+  short_description: "Crea perfiles editoriales originales y verificados"
+  default_prompt: "Usa $la-posta-cine-add-person-profile para crear un perfil verificado con biograf�a original de IA."
