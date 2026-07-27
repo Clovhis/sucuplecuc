@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-25. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-27. Fuente: src/data/movies/*.json
 
-Total de peliculas: 989
+Total de peliculas: 990
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -474,6 +474,7 @@ Total de peliculas: 989
 | 2015 | Furious 7 | furious-7-2015 | Accion | HBO Max | +13 |
 | 2015 | Irrational Man | irrational-man-2015 | Drama | Otras plataformas | +13 |
 | 2015 | Jurassic World | jurassic-world-2015 | Aventura | Prime Video + Netflix | +13 |
+| 2015 | La bruja | la-bruja-2015 | Terror | Otras plataformas | +17 |
 | 2015 | La gran apuesta | la-gran-apuesta-2015 | Drama | Prime Video + Paramount Plus | +17 |
 | 2015 | Mad Max: Fury Road | mad-max-fury-road-2015 | Accion | Netflix | +16 |
 | 2015 | Mission: Impossible - Rogue Nation | mission-impossible-rogue-nation-2015 | Accion | Disney Plus | +13 |
