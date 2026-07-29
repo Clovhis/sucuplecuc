@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-27. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-29. Fuente: src/data/movies/*.json
 
-Total de peliculas: 990
+Total de peliculas: 991
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -763,6 +763,7 @@ Total de peliculas: 990
 | 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus | +17 |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Otras plataformas | +13 |
 | 1995 | Casino | casino-1995 | Crimen | Otras plataformas | +18 |
+| 1995 | El día de la bestia | el-dia-de-la-bestia-1995 | Terror | Apple TV | +18 |
 | 1995 | Four Rooms | four-rooms-1995 | Comedia | Otras plataformas | +17 |
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix | +17 |
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Otras plataformas | +17 |
