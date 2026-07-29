@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getMoviePath } from '../../lib/movies';
+import { SITE_URL } from '../../lib/seo';
+
+const moviePath = getMoviePath('la-odisea-2026');
+const canonicalUrl = new URL(moviePath, SITE_URL).toString();
+---
+
+<BaseLayout
+	title="La odisea (2026) | Cine Posta"
+	description="La ficha de La odisea cambió de dirección."
+	canonicalUrl={canonicalUrl}
+	redirectUrl={moviePath}
+	allowAds={false}
+>
+	<main id="main-content" class="container">
+		<article class="trailer-legacy">
+			<h1>La ficha de La odisea cambió de dirección.</h1>
+			<p>Te estamos llevando a la URL actual.</p>
+			<a class="page-action page-action--home" href={moviePath}>Ir a La odisea</a>
+		</article>
+	</main>
+</BaseLayout>
