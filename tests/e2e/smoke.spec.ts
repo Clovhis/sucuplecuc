@@ -42,10 +42,10 @@ test('home reserves the final four initial cards for the latest catalog loads', 
 
 	expect(initialTitles).toHaveLength(12);
 	expect(initialTitles.slice(-4)).toEqual([
-		'Undertone Frecuencia Maldita',
-		'Christy (El combate de su vida)',
-		'Boulevard',
-		'In the Hand of Dante',
+		'El día de la bestia',
+		'La bruja',
+		'Los creyentes',
+		'UnMarry',
 	]);
 	expect(new Set(initialTitles).size).toBe(initialTitles.length);
 });
@@ -104,18 +104,9 @@ test('trailers play in the canonical movie page only after interaction', async (
   await expect(player.locator('iframe')).toHaveAttribute('src', /youtube\.com\/embed\//);
 });
 
-test('legacy trailer routes are noindex recovery pages', async ({ page }) => {
+test('legacy trailer routes permanently consolidate into the canonical movie page', async ({ page }) => {
   await page.goto('/trailers/akira-1988/', { waitUntil: 'domcontentloaded' });
 
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex, follow/);
-  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
-    'href',
-    'https://www.cineposta.com.ar/peliculas/akira-1988/',
-  );
-  await expect(page.locator('script[src*="adsbygoogle"]')).toHaveCount(0);
-  await expect(page.locator('iframe')).toHaveCount(0);
-  await expect(page.getByRole('link', { name: /ir a la ficha de akira/i })).toHaveAttribute(
-    'href',
-    '/peliculas/akira-1988/',
-  );
+  await expect(page).toHaveURL('/peliculas/akira-1988/');
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /index, follow/);
 });

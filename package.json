@@ -37,10 +37,12 @@
     "hooks:install": "node ./scripts/install-hooks.mjs",
     "rewrite:adsense-priority": "node ./scripts/rewrite-priority-adsense-content.mjs",
     "gsc:sites": "node ./scripts/gsc.mjs sites",
+    "gsc:sitemaps": "node ./scripts/gsc.mjs sitemaps",
     "gsc:submit-sitemap": "node ./scripts/gsc.mjs submit-sitemap",
     "gsc:queries": "node ./scripts/gsc.mjs queries",
     "gsc:pages": "node ./scripts/gsc.mjs pages",
-    "gsc:inspect": "node ./scripts/gsc.mjs inspect"
+    "gsc:inspect": "node ./scripts/gsc.mjs inspect",
+    "gsc:inspect-sitemap": "node ./scripts/gsc.mjs inspect-sitemap"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.101.1",

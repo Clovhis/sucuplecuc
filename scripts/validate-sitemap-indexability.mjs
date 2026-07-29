@@ -32,6 +32,18 @@ function isNoindex(html) {
 	return /<meta name="robots" content="[^"]*\bnoindex\b/i.test(html);
 }
 
+function getInternalLinks(html, pageUrl) {
+	return Array.from(html.matchAll(/<a\b[^>]*\bhref="([^"]+)"/gi), ([, rawHref]) => {
+		const href = rawHref.replace(/&amp;/g, '&');
+		try {
+			const url = new URL(href, pageUrl);
+			return url.origin === SITE_ORIGIN ? url : undefined;
+		} catch {
+			return undefined;
+		}
+	}).filter(Boolean);
+}
+
 function checkUnique(values, label, failures) {
 	const duplicates = values.filter((value, index) => values.indexOf(value) !== index);
 	if (duplicates.length > 0) {
@@ -48,6 +60,7 @@ async function main() {
 	const videoSitemapUrls = getLocs(videoSitemap);
 	const sitemapUrlSet = new Set(sitemapUrls);
 	const failures = [];
+	const internalPageUrls = new Set();
 
 	if (sitemapUrls.length === 0) failures.push('sitemap.xml has no URLs.');
 	if (/<lastmod>/i.test(sitemap)) {
@@ -63,8 +76,27 @@ async function main() {
 			if (getCanonical(html) !== url) {
 				failures.push(`Sitemap canonical mismatch for ${url}; found ${getCanonical(html) ?? 'none'}.`);
 			}
+			for (const linkedUrl of getInternalLinks(html, url)) {
+				if (linkedUrl.searchParams.has('backTo')) {
+					failures.push(`Legacy backTo URL linked from ${url}: ${linkedUrl.toString()}`);
+				}
+				if (linkedUrl.pathname.startsWith('/trailers/')) {
+					failures.push(`Legacy trailer URL linked from ${url}: ${linkedUrl.toString()}`);
+				}
+				linkedUrl.search = '';
+				linkedUrl.hash = '';
+				internalPageUrls.add(linkedUrl.toString());
+			}
 		} catch (error) {
 			failures.push(`Could not validate sitemap URL ${url}: ${error.message}`);
+		}
+	}
+
+	for (const url of internalPageUrls) {
+		try {
+			await readHtmlForUrl(url);
+		} catch {
+			failures.push(`Broken internal page link found in a sitemap page: ${url}`);
 		}
 	}
 

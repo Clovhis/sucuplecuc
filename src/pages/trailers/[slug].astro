@@ -27,7 +27,7 @@ const movieCanonicalUrl = new URL(movieUrl, SITE_URL).toString();
 	title={pageTitle}
 	description={pageDescription}
 	canonicalUrl={movieCanonicalUrl}
-	noindex={true}
+	redirectUrl={movieUrl}
 	allowAds={false}
 >
 	<main id="main-content" class="container">
