@@ -7,7 +7,8 @@ const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'
 const OUTPUT_PATH = path.join(ROOT_DIR, 'src/data/upcomingReleases.generated.ts');
 const TMDB_LANGUAGE = 'es-AR';
 const TMDB_REGION = 'AR';
-const UPCOMING_URL = `https://www.themoviedb.org/movie/upcoming?language=${TMDB_LANGUAGE}&region=${TMDB_REGION}`;
+const TMDB_ORIGIN = 'https://www.themoviedb.org';
+const CINES_ARGENTINOS_UPCOMING_URL = 'https://www.cinesargentinos.com.ar/proximos/todos/1/';
 const MAX_SOURCE_ITEMS = 24;
 const MAX_RELEASES = 16;
 const STRICT_MODE = process.env.UPCOMING_RELEASES_STRICT === '1';
@@ -86,48 +87,51 @@ async function fetchHtml(url) {
 
 function extractUpcomingCards(html) {
 	const cardPattern =
-		/<div id=\"[^\"]+\" class=\"comp:poster-card[\s\S]*?<a class=\"flex w-full\"[^>]*href=\"(?<href>\/movie\/[^\"]+)\"[\s\S]*?<img alt=\"(?<alt>[^\"]+)\" class=\"poster w-full block\" loading=\"lazy\"[^>]*(?:srcset=\"(?<srcset>[^\"]+)\"[^>]*)?src=\"(?<img>[^\"]+)\"[\s\S]*?<h2 class=\"font-semibold [^\"]*m-0 whitespace-normal\"><span>(?<title>[^<]+)<\/span><\/h2>[\s\S]*?<span class=\"subheader font-light\">(?<date>[^<]+)<\/span>/g;
+		/<a class="flex w-full"[^>]*href="(?<href>\/movie\/[^\"]+)"[\s\S]*?<img alt="(?<alt>[^\"]+)" class="poster w-full block"[^>]*\bsrc="(?<img>[^\"]+)"[\s\S]*?<h2 class="font-semibold [^\"]*m-0 whitespace-normal">(?:<span>)?(?<title>[^<]+)(?:<\/span>)?<\/h2>/g;
 
-	return [...html.matchAll(cardPattern)].slice(0, MAX_SOURCE_ITEMS).map((match) => ({
+	return [...html.matchAll(cardPattern)].map((match) => ({
 		href: match.groups?.href ?? '',
 		title: decodeHtml(match.groups?.title ?? match.groups?.alt ?? ''),
 		posterUrl: normalizeTmdbImage(match.groups?.img ?? '', 'w500'),
-		displayDate: decodeHtml(match.groups?.date ?? ''),
 	}));
 }
 
-function getLocalizedTmdbUrl(url) {
-	const localizedUrl = new URL(url);
-	localizedUrl.searchParams.set('language', TMDB_LANGUAGE);
-	localizedUrl.searchParams.set('region', TMDB_REGION);
-	return localizedUrl.toString();
+function getCinesArgentinosReleaseDate(value) {
+	const normalized = decodeHtml(value).replace(/\s+/g, ' ').trim();
+	return parseDisplayReleaseDate(normalized.replace(/^(?:lunes|martes|mi[eé]rcoles|jueves|viernes|s[aá]bado|domingo)\s+/i, ''));
 }
 
-function extractIsoReleaseDate(detailHtml, fallbackDisplayDate) {
-	const fallbackDate = parseDisplayReleaseDate(fallbackDisplayDate);
-	if (fallbackDate) {
-		return fallbackDate;
-	}
+function extractCinesArgentinosReleases(html) {
+	const dateMarkers = [...html.matchAll(/<div class="subTitulo">\s*(?<date>[^<]+?)\s*<\/div>/g)]
+		.map((match) => ({
+			index: match.index ?? 0,
+			releaseDate: getCinesArgentinosReleaseDate(match.groups?.date ?? ''),
+		}))
+		.filter((marker) => marker.releaseDate);
+	const entryPattern =
+		/<div class="(?:ultimo )?estrenoDelDia"[\s\S]*?(?=<div class="(?:ultimo )?estrenoDelDia"|<div class="subTitulo"|<div class="paginacion")/g;
+	const releases = [];
 
-	const ldJsonBlocks = [...detailHtml.matchAll(/<script type=\"application\/ld\+json\">([\s\S]*?)<\/script>/g)];
-	for (const block of ldJsonBlocks) {
-		const raw = block[1]?.replace(/\/\*[\s\S]*?\*\//g, '').trim();
-		if (!raw || !raw.includes('"@type":"Movie"')) {
+	for (const entry of html.matchAll(entryPattern)) {
+		const releaseDate = [...dateMarkers].reverse().find((marker) => marker.index <= (entry.index ?? 0))?.releaseDate;
+		const titleMatch = entry[0].match(/<h2 class="lblTitulo"><a href="(?<href>[^"]+)"[^>]*>(?<title>[^<]+)<\/a><\/h2>/);
+		const originalTitleMatch = entry[0].match(/T[ií]tulo original:\s*<\/span>\s*<span class="def">(?<title>[^<]+)<\/span>/);
+
+		if (!releaseDate || !titleMatch?.groups?.href || !titleMatch.groups.title) {
 			continue;
 		}
 
-		try {
-			const parsed = JSON.parse(raw);
-			const startDate = parsed?.releasedEvent?.[0]?.startDate;
-			if (typeof startDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(startDate)) {
-				return startDate;
-			}
-		} catch {
-			// Ignore malformed blocks and keep looking.
-		}
+		const title = decodeHtml(titleMatch.groups.title).trim();
+		const originalTitle = decodeHtml(originalTitleMatch?.groups?.title ?? title).trim();
+		releases.push({
+			title,
+			originalTitle,
+			releaseDate,
+			sourceUrl: new URL(titleMatch.groups.href, CINES_ARGENTINOS_UPCOMING_URL).toString(),
+		});
 	}
 
-	return '';
+	return releases;
 }
 
 function parseDisplayReleaseDate(displayDate) {
@@ -177,7 +181,21 @@ function extractOverview(detailHtml) {
 
 function looksLikeEnglishSynopsis(value) {
 	const normalized = ` ${String(value ?? '').toLowerCase().replace(/[^a-z]+/g, ' ')} `;
-	const englishMarkers = [' the ', ' and ', ' is ', ' are ', ' with ', ' when ', ' from ', ' their ', ' they ', ' his ', ' her '];
+	const englishMarkers = [
+		' the ',
+		' and ',
+		' is ',
+		' are ',
+		' with ',
+		' when ',
+		' from ',
+		' after ',
+		' into ',
+		' their ',
+		' they ',
+		' his ',
+		' her ',
+	];
 	return englishMarkers.filter((marker) => normalized.includes(marker)).length >= 2;
 }
 
@@ -216,32 +234,49 @@ function extractYoutubeVideoUrl(detailHtml) {
 	return `https://www.youtube.com/watch?v=${trailerMatch[1]}`;
 }
 
+async function findTmdbMovieForCinesArgentinosRelease(release) {
+	const searchUrl = new URL('/search/movie', TMDB_ORIGIN);
+	searchUrl.searchParams.set('query', release.originalTitle);
+	searchUrl.searchParams.set('language', TMDB_LANGUAGE);
+	searchUrl.searchParams.set('region', TMDB_REGION);
+	const cards = extractUpcomingCards(await fetchHtml(searchUrl.toString()));
+	const expectedTitle = slugify(release.originalTitle);
+	return cards.find((card) => slugify(card.title) === expectedTitle) ?? cards[0] ?? null;
+}
+
 async function buildUpcomingReleases() {
-	const listHtml = await fetchHtml(UPCOMING_URL);
-	const cards = extractUpcomingCards(listHtml);
+	const cinesArgentinosHtml = await fetchHtml(CINES_ARGENTINOS_UPCOMING_URL);
+	const cinesArgentinosReleases = extractCinesArgentinosReleases(cinesArgentinosHtml);
+	if (cinesArgentinosReleases.length === 0) {
+		throw new Error('No se pudieron leer los próximos estrenos de cine en Argentina.');
+	}
+
 	const releases = [];
 	const seenSlugs = new Set();
 
-	for (const card of cards) {
-		if (!card.href || !card.title) {
-			continue;
-		}
-
-		const detailPageUrl = new URL(card.href, UPCOMING_URL);
-		const detailUrl = getLocalizedTmdbUrl(detailPageUrl.toString());
-		const detailHtml = await fetchHtml(detailUrl);
-		const videoUrl = extractYoutubeVideoUrl(detailHtml);
-		const releaseDate = extractIsoReleaseDate(detailHtml, card.displayDate);
-
-		if (!videoUrl || !releaseDate) {
-			continue;
-		}
-		const releaseTimestamp = Date.parse(`${releaseDate}T00:00:00Z`);
+	for (const cinesArgentinosRelease of cinesArgentinosReleases.slice(0, MAX_SOURCE_ITEMS)) {
+		const releaseTimestamp = Date.parse(`${cinesArgentinosRelease.releaseDate}T00:00:00Z`);
 		if (Number.isNaN(releaseTimestamp) || releaseTimestamp <= TODAY_TIMESTAMP) {
 			continue;
 		}
 
-		const slug = slugify(detailPageUrl.pathname.split('/').pop()?.replace(/^\d+-/, '') || card.title);
+		const card = await findTmdbMovieForCinesArgentinosRelease(cinesArgentinosRelease);
+		if (!card?.href || !card.title) {
+			continue;
+		}
+
+		const detailUrl = new URL(card.href, TMDB_ORIGIN);
+		detailUrl.searchParams.set('language', TMDB_LANGUAGE);
+		detailUrl.searchParams.set('region', TMDB_REGION);
+		const detailHtml = await fetchHtml(detailUrl);
+		const videoUrl = extractYoutubeVideoUrl(detailHtml);
+		const releaseDate = cinesArgentinosRelease.releaseDate;
+
+		if (!videoUrl || !releaseDate) {
+			continue;
+		}
+
+		const slug = slugify(detailUrl.pathname.split('/').pop()?.replace(/^\d+-/, '') || card.title);
 		if (!slug || seenSlugs.has(slug)) {
 			continue;
 		}
@@ -253,12 +288,12 @@ async function buildUpcomingReleases() {
 
 		releases.push({
 			slug,
-			title: card.title,
+			title: cinesArgentinosRelease.title,
 			releaseDate,
 			videoUrl,
 			thumbnailUrl: extractBackdropUrl(detailHtml, card.posterUrl),
 			synopsis,
-			sourceUrl: detailUrl,
+			sourceUrl: cinesArgentinosRelease.sourceUrl,
 		});
 
 		if (releases.length >= MAX_RELEASES) {

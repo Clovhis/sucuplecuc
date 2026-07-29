@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Refresh generated upcoming releases
-        run: npm run update-upcoming-releases
+        run: UPCOMING_RELEASES_STRICT=1 npm run update-upcoming-releases
 
       - name: Open refresh pull request
         uses: peter-evans/create-pull-request@v7

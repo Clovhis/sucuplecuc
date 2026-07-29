@@ -1,6 +1,5 @@
 import type { Movie, MovieVerdict } from '../types/movie';
 import { GENERATED_UPCOMING_RELEASES } from '../data/upcomingReleases.generated';
-import { UPCOMING_RELEASE_FALLBACKS } from '../data/upcomingReleases';
 import { generateMovieEditorialRecommendations } from './recommendation-engine';
 import { getMoviePlatforms } from './platforms';
 
@@ -584,21 +583,6 @@ function getYoutubeVideoIdFromUrl(value: string): string {
 	}
 }
 
-function getCatalogMovieUpcomingIdentityKeys(movie: Pick<Movie, 'title' | 'trailerYoutubeId'>): string[] {
-	const keys = new Set<string>();
-	const normalizedYoutubeId = normalizeYoutubeId(movie.trailerYoutubeId ?? '');
-	if (normalizedYoutubeId) {
-		keys.add(`youtube:${normalizedYoutubeId}`);
-	}
-
-	const normalizedTitle = getNormalizedUpcomingReleaseTitle(movie.title);
-	if (normalizedTitle) {
-		keys.add(`title:${normalizedTitle}`);
-	}
-
-	return Array.from(keys);
-}
-
 function getUpcomingReleaseIdentityKeys(release: Pick<UpcomingMovieRelease, 'title' | 'videoUrl'>): string[] {
 	const keys = new Set<string>();
 	const youtubeId = getYoutubeVideoIdFromUrl(release.videoUrl);
@@ -614,62 +598,8 @@ function getUpcomingReleaseIdentityKeys(release: Pick<UpcomingMovieRelease, 'tit
 	return Array.from(keys);
 }
 
-function buildCatalogMovieIdentityIndex(movies: Movie[]): Map<string, Movie> {
-	const movieByIdentity = new Map<string, Movie>();
-
-	for (const movie of movies) {
-		for (const identityKey of getCatalogMovieUpcomingIdentityKeys(movie)) {
-			if (!movieByIdentity.has(identityKey)) {
-				movieByIdentity.set(identityKey, movie);
-			}
-		}
-	}
-
-	return movieByIdentity;
-}
-
-function findMatchingCatalogMovieForUpcomingRelease(
-	release: Pick<UpcomingMovieRelease, 'title' | 'videoUrl'>,
-	movieByIdentity: Map<string, Movie>,
-): Movie | null {
-	for (const identityKey of getUpcomingReleaseIdentityKeys(release)) {
-		const movie = movieByIdentity.get(identityKey);
-		if (movie) {
-			return movie;
-		}
-	}
-
-	return null;
-}
-
 function getUpcomingReleaseMapKey(release: UpcomingMovieRelease): string {
 	return getUpcomingReleaseIdentityKeys(release)[0] ?? `slug:${release.slug}`;
-}
-
-function mergeUpcomingRelease(current: UpcomingMovieRelease, next: UpcomingMovieRelease): UpcomingMovieRelease {
-	return {
-		...current,
-		...next,
-		synopsis: next.synopsis ?? current.synopsis,
-		sourceUrl: next.sourceUrl ?? current.sourceUrl,
-	};
-}
-
-function shouldIncludeExternalUpcomingRelease(
-	release: UpcomingMovieRelease,
-	movieByIdentity: Map<string, Movie>,
-	referenceTimestamp: number,
-): boolean {
-	const matchingCatalogMovie = findMatchingCatalogMovieForUpcomingRelease(release, movieByIdentity);
-	if (!matchingCatalogMovie?.releaseDate?.trim()) {
-		return true;
-	}
-
-	if (!isFutureRelease(matchingCatalogMovie.releaseDate, referenceTimestamp)) {
-		return false;
-	}
-
-	return !matchingCatalogMovie.trailerYoutubeId?.trim();
 }
 
 function getWeeklySuggestionScore(movie: Movie): number {
@@ -807,11 +737,10 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 
 	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
 	validateMovies(movies);
-	const movieByIdentity = buildCatalogMovieIdentityIndex(movies);
-
 	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) =>
 		isFutureRelease(release.releaseDate, referenceTimestamp),
 	);
+	const generatedUpcomingKeys = new Set(generatedUpcoming.map(getUpcomingReleaseMapKey));
 
 	const catalogUpcoming = movies
 		.filter((movie) => {
@@ -837,80 +766,10 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 			sourceUrl: getMoviePath(movie.slug),
 		}));
 
-	const priorityReleaseByKey = new Map<string, UpcomingMovieRelease>();
-
-	for (const fallback of UPCOMING_RELEASE_FALLBACKS) {
-		if (!isFutureRelease(fallback.releaseDate, referenceTimestamp)) {
-			continue;
-		}
-
-		const release = {
-			slug: fallback.slug,
-			title: fallback.title,
-			releaseDate: fallback.releaseDate,
-			videoUrl: fallback.trailerUrl,
-			thumbnailUrl: fallback.thumbnailUrl,
-			synopsis: fallback.synopsis,
-			sourceUrl: fallback.sourceUrl,
-		};
-
-		if (!shouldIncludeExternalUpcomingRelease(release, movieByIdentity, referenceTimestamp)) {
-			continue;
-		}
-
-		priorityReleaseByKey.set(getUpcomingReleaseMapKey(release), release);
-	}
-
-	for (const release of catalogUpcoming) {
-		const releaseKey = getUpcomingReleaseMapKey(release);
-		const currentRelease = priorityReleaseByKey.get(releaseKey);
-		priorityReleaseByKey.set(
-			releaseKey,
-			currentRelease ? mergeUpcomingRelease(currentRelease, release) : release,
-		);
-	}
-
-	const sortedPriorityReleases = Array.from(priorityReleaseByKey.values()).sort(
-		(left, right) =>
-			getIsoDateTimestamp(left.releaseDate) - getIsoDateTimestamp(right.releaseDate) ||
-			left.title.localeCompare(right.title, 'es'),
-	);
-	if (sortedPriorityReleases.length >= limit) {
-		return sortedPriorityReleases.slice(0, limit);
-	}
-
-	const supplementalReleaseByKey = new Map<string, UpcomingMovieRelease>();
-
-	for (const release of generatedUpcoming) {
-		if (!shouldIncludeExternalUpcomingRelease(release, movieByIdentity, referenceTimestamp)) {
-			continue;
-		}
-
-		const releaseKey = getUpcomingReleaseMapKey(release);
-		if (priorityReleaseByKey.has(releaseKey)) {
-			continue;
-		}
-
-		const currentRelease = supplementalReleaseByKey.get(releaseKey);
-		supplementalReleaseByKey.set(
-			releaseKey,
-			currentRelease ? mergeUpcomingRelease(currentRelease, release) : release,
-		);
-	}
-
-	const sortedSupplementalReleases = Array.from(supplementalReleaseByKey.values()).sort(
-		(left, right) =>
-			getIsoDateTimestamp(left.releaseDate) - getIsoDateTimestamp(right.releaseDate) ||
-			left.title.localeCompare(right.title, 'es'),
-	);
-
-	return [...sortedPriorityReleases, ...sortedSupplementalReleases]
-		.sort(
-			(left, right) =>
-				getIsoDateTimestamp(left.releaseDate) - getIsoDateTimestamp(right.releaseDate) ||
-				left.title.localeCompare(right.title, 'es'),
-		)
-		.slice(0, limit);
+	return [
+		...generatedUpcoming,
+		...catalogUpcoming.filter((release) => !generatedUpcomingKeys.has(getUpcomingReleaseMapKey(release))),
+	].slice(0, limit);
 }
 
 /**
