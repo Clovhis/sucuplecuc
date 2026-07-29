@@ -310,7 +310,53 @@ async function inspectSitemap(args) {
 						languageCode: args.language || 'es-AR',
 					},
 				});
-				results[index] …375 tokens truncated…geState: result.coverageState,
+				results[index] = {
+					url: inspectionUrl,
+					...(response.data.inspectionResult?.indexStatusResult ?? {}),
+				};
+			} catch (error) {
+				results[index] = {
+					url: inspectionUrl,
+					apiError: error instanceof Error ? error.message : String(error),
+				};
+			}
+
+			completed += 1;
+			if (completed % 100 === 0 || completed === urls.length) {
+				console.error(`Inspected ${completed}/${urls.length} URLs...`);
+			}
+		}
+	}
+
+	await Promise.all(Array.from({ length: Math.min(concurrency, urls.length) }, () => worker()));
+
+	const verdicts = {};
+	const coverageStates = {};
+	const fetchStates = {};
+	const indexingStates = {};
+	const issues = [];
+
+	for (const result of results) {
+		incrementCount(verdicts, result.verdict);
+		incrementCount(coverageStates, result.coverageState);
+		incrementCount(fetchStates, result.pageFetchState);
+		incrementCount(indexingStates, result.indexingState);
+
+		const userCanonical = result.userCanonical || result.url;
+		const canonicalMismatch =
+			Boolean(result.googleCanonical) && result.googleCanonical !== userCanonical;
+		const isHealthy =
+			result.verdict === 'PASS' &&
+			result.pageFetchState === 'SUCCESSFUL' &&
+			result.indexingState === 'INDEXING_ALLOWED' &&
+			!canonicalMismatch &&
+			!result.apiError;
+
+		if (!isHealthy) {
+			issues.push({
+				url: result.url,
+				verdict: result.verdict,
+				coverageState: result.coverageState,
 				pageFetchState: result.pageFetchState,
 				indexingState: result.indexingState,
 				lastCrawlTime: result.lastCrawlTime,
