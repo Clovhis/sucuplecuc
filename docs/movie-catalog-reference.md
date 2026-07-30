@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-29. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-07-30. Fuente: src/data/movies/*.json
 
-Total de peliculas: 991
+Total de peliculas: 996
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ Total de peliculas: 991
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | HBO Max + Apple TV | +16 |
 | 2026 | Dink | dink-2026 | Comedia | Apple TV | +13 |
 | 2026 | Dracula | dracula-2026 | Terror | Otras plataformas | +16 |
-| 2026 | El Afinador | el-afinador-2026 | Thriller | Cine | +16 |
+| 2026 | El Afinador | el-afinador-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Cine | +13 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Otras plataformas | +13 |
@@ -56,6 +56,7 @@ Total de peliculas: 991
 | 2026 | La Odisea | la-odisea-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
+| 2026 | La tierra explota | la-tierra-explota-2026 | Documental | Cine | ATP |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Otras plataformas | +16 |
@@ -98,6 +99,7 @@ Total de peliculas: 991
 | 2026 | Send Help | send-help-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Otras plataformas | ATP |
+| 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine | +13 |
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Supergirl | supergirl-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
@@ -115,6 +117,7 @@ Total de peliculas: 991
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
+| 2026 | WHAM! 10 Days in China | wham-10-days-in-china-2026 | Documental | Cine | +13 |
 | 2026 | Whistle | whistle-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Yiya Murano: Muerte a la hora del té | yiya-murano-muerte-a-la-hora-del-te-2026 | Documental | Netflix | +12 |
 | 2026 | Your Fault: London | your-fault-london-2026 | Romance | Prime Video | +16 |
@@ -133,7 +136,7 @@ Total de peliculas: 991
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Otras plataformas | +13 |
 | 2025 | Dolly - Juega contigo | dolly-juega-contigo-2025 | Terror | Otras plataformas | +17 |
-| 2025 | Dos pianos | dos-pianos-2025 | Romance | Cine | ATP |
+| 2025 | Dos pianos | dos-pianos-2025 | Romance | Otras plataformas | ATP |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max | +13 |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV | +16 |
 | 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Otras plataformas | +16 |
@@ -159,6 +162,7 @@ Total de peliculas: 991
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Otras plataformas | +12 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
+| 2025 | Los domingos | los-domingos-2025 | Drama | Cine | +12 |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Otras plataformas | ATP |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
@@ -242,6 +246,7 @@ Total de peliculas: 991
 | 2024 | Look Back | look-back-2024 | Anime | Prime Video | ATP |
 | 2024 | Love Lies Bleeding | love-lies-bleeding-2024 | Thriller | HBO Max | +16 |
 | 2024 | Madame Web | madame-web-2024 | Accion | Prime Video | +13 |
+| 2024 | Marianela y el cadáver | marianela-y-el-cadaver-2024 | Comedia | Cine | +13 |
 | 2024 | Megalopolis | megalopolis-2024 | Drama | Otras plataformas | +13 |
 | 2024 | Moana 2 | moana-2-2024 | Animacion | Disney Plus | ATP |
 | 2024 | Monkey Man | monkey-man-2024 | Accion | Prime Video | +16 |

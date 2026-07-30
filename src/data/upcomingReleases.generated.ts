@@ -8,34 +8,9 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-07-29T01:30:42.550Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-07-30T22:09:01.611Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"slug": "spider-man-brand-new-day",
-		"title": "Spider-Man: Un Nuevo Día",
-		"releaseDate": "2026-07-30",
-		"videoUrl": "https://www.youtube.com/watch?v=P3uI5sLosKU",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/kbvNLChuMl2nyAzPZvqkD8hZGZn.jpg",
-		"synopsis": "Peter Parker pelea contra el crimen como Spider-Man en un mundo que ya no lo recuerda. Ver a sus viejos amigos seguir adelante sin él lo empuja a un cambio que quizá no pueda controlar.",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10185-spider-man-un-nuevo-dia/"
-	},
-	{
-		"slug": "los-domingos",
-		"title": "Los domingos",
-		"releaseDate": "2026-07-30",
-		"videoUrl": "https://www.youtube.com/watch?v=FRwwy6W2xh8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/jVwvhKpw6a7c7JmHhMykKAn7buQ.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10537-los-domingos/"
-	},
-	{
-		"slug": "la-tierra-explota-el-tiempo-se-acaba",
-		"title": "La tierra explota",
-		"releaseDate": "2026-07-30",
-		"videoUrl": "https://www.youtube.com/watch?v=1aMKrv3OmFU",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w500/s2lB1kaYCdGSnZX5meQCiOR6HfX.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10561-la-tierra-explota/"
-	},
 	{
 		"slug": "pressure",
 		"title": "El día D: Bajo presión",
@@ -101,5 +76,29 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=j9TsiTgYZGw",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10560-adolescencia-sexo-y-muerte-en-campamento-miasma/"
+	},
+	{
+		"slug": "the-death-of-robin-hood",
+		"title": "La muerte de Robin Hood",
+		"releaseDate": "2026-08-20",
+		"videoUrl": "https://www.youtube.com/watch?v=tlSDDuWxO_0",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/aM3pduSU53VjcALWOfLWNw8v2TI.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10410-la-muerte-de-robin-hood/"
+	},
+	{
+		"slug": "the-dog-stars",
+		"title": "La guerra de los últimos",
+		"releaseDate": "2026-08-27",
+		"videoUrl": "https://www.youtube.com/watch?v=-xSxaE1ClEE",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10482-la-guerra-de-los-ultimos/"
+	},
+	{
+		"slug": "one-night-only",
+		"title": "Sólo por una noche",
+		"releaseDate": "2026-08-27",
+		"videoUrl": "https://www.youtube.com/watch?v=lDsAVq9lo9g",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/ccoEJ4Rxk9rb5cIrrkpPQDn39MP.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10540-solo-por-una-noche/"
 	}
 ];
