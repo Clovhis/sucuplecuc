@@ -4,6 +4,7 @@ import PlatformBadge from './PlatformBadge.astro';
 interface CinemaRelease {
 	slug: string;
 	title: string;
+	movieUrl: string;
 	releaseDate: string;
 	posterUrl: string;
 	embedUrl: string;
@@ -68,39 +69,49 @@ function formatReleaseDate(value: string) {
 				<ol class="cinema-release-carousel__list" aria-label={listLabel}>
 					{releases.map((release) => (
 						<li class="cinema-release-carousel__item">
-							<button
-								class="cinema-release-carousel__card"
-								type="button"
-								aria-label={`Reproducir trailer de ${release.title}`}
-								aria-haspopup="dialog"
-								data-cinema-release-open
-								data-cinema-release-title={release.title}
-								data-cinema-release-date={release.releaseDate}
-								data-cinema-release-embed-url={release.embedUrl}
-								data-cinema-release-watch-url={release.watchUrl}
-							>
-								<span class="cinema-release-carousel__poster-wrap">
-									<img
-										class="cinema-release-carousel__poster"
-										src={release.posterUrl}
-										alt={`Póster de ${release.title}`}
-										width="342"
-										height="513"
-										loading="lazy"
-										decoding="async"
-										referrerpolicy="no-referrer"
-									/>
-									<span class="cinema-release-carousel__play" aria-hidden="true">
-										<svg viewBox="0 0 24 24"><path d="m9 6 8 6-8 6V6Z" /></svg>
+							<article class="cinema-release-carousel__card">
+								<button
+									class="cinema-release-carousel__trailer"
+									type="button"
+									aria-label={`Reproducir trailer de ${release.title}`}
+									aria-haspopup="dialog"
+									data-cinema-release-open
+									data-cinema-release-title={release.title}
+									data-cinema-release-date={release.releaseDate}
+									data-cinema-release-embed-url={release.embedUrl}
+									data-cinema-release-watch-url={release.watchUrl}
+								>
+									<span class="cinema-release-carousel__poster-wrap">
+										<img
+											class="cinema-release-carousel__poster"
+											src={release.posterUrl}
+											alt={`Póster de ${release.title}`}
+											width="342"
+											height="513"
+											loading="lazy"
+											decoding="async"
+											referrerpolicy="no-referrer"
+										/>
+										<span class="cinema-release-carousel__play" aria-hidden="true">
+											<svg viewBox="0 0 24 24"><path d="m9 6 8 6-8 6V6Z" /></svg>
+										</span>
 									</span>
-								</span>
+								</button>
 								<span class="cinema-release-carousel__date">{release.dateLabel ?? `Estreno ${formatReleaseDate(release.releaseDate)}`}</span>
 								{showPlatform && release.platform && <PlatformBadge platform={release.platform} className="cinema-release-carousel__platform" />}
-								<span class="cinema-release-carousel__title">{release.title}</span>
+								<h3 class="cinema-release-carousel__title">{release.title}</h3>
 								<span class={`badge cinema-release-carousel__verdict ${release.verdictClass}`}>
 									{release.verdictLabel}
 								</span>
-							</button>
+								<a
+									href={release.movieUrl}
+									class="cinema-release-carousel__review-link"
+									aria-label={`Leer la ficha y reseña de ${release.title}`}
+								>
+									<span>Ver ficha</span>
+									<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7" /></svg>
+								</a>
+							</article>
 						</li>
 					))}
 				</ol>
