@@ -51,6 +51,8 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
+    "@emnapi/core": "^1.11.1",
+    "@emnapi/runtime": "^1.11.1",
     "@playwright/test": "^1.60.0",
     "typescript": "^5.9.3"
   },
