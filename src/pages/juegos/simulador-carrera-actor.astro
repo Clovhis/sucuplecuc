@@ -11,14 +11,14 @@ const pageUrl = new URL('/juegos/simulador-carrera-actor/', SITE_URL).toString()
 const assetBase = import.meta.env.BASE_URL;
 const currentYear = new Date().getUTCFullYear();
 const countries = [
-	{ code: 'AR', name: 'Argentina', flag: '🇦🇷' },
-	{ code: 'MX', name: 'México', flag: '🇲🇽' },
-	{ code: 'ES', name: 'España', flag: '🇪🇸' },
-	{ code: 'BR', name: 'Brasil', flag: '🇧🇷' },
-	{ code: 'FR', name: 'Francia', flag: '🇫🇷' },
-	{ code: 'IT', name: 'Italia', flag: '🇮🇹' },
-	{ code: 'US', name: 'Estados Unidos', flag: '🇺🇸' },
-	{ code: 'KR', name: 'Corea del Sur', flag: '🇰🇷' },
+	{ code: 'AR', name: 'Argentina', flag: 'ar.svg' },
+	{ code: 'MX', name: 'México', flag: 'mx.svg' },
+	{ code: 'ES', name: 'España', flag: 'es.svg' },
+	{ code: 'BR', name: 'Brasil', flag: 'br.svg' },
+	{ code: 'FR', name: 'Francia', flag: 'fr.svg' },
+	{ code: 'IT', name: 'Italia', flag: 'it.svg' },
+	{ code: 'US', name: 'Estados Unidos', flag: 'us.svg' },
+	{ code: 'KR', name: 'Corea del Sur', flag: 'kr.svg' },
 ];
 const moviesByYear = new Map<number, ReturnType<typeof getMovies>>();
 for (const movie of getMovies()) {
@@ -153,7 +153,10 @@ const structuredData = [
 						<div class="actor-credit-card__mark" aria-hidden="true">✦</div>
 						<strong data-preview-name>Tu nombre</strong>
 							<span data-preview-profile>ACTUACIÓN · CAMALEÓNICO</span>
-						<small data-preview-country>🇦🇷 ARG</small>
+						<small class="actor-credit-card__country" data-preview-country>
+							<img class="actor-flag" data-country-flag-image src={`${assetBase}images/flags/ar.svg`} alt="" width="28" height="20" />
+							<span data-country-code>ARG</span>
+						</small>
 					</div>
 					<label class="actor-field" for="actor-stage-name">
 						<span>Nombre que aparece en los créditos</span>
@@ -207,7 +210,7 @@ const structuredData = [
 									data-country-name={country.name}
 									data-country-flag={country.flag}
 								>
-									<span aria-hidden="true">{country.flag}</span>
+									<img class="actor-flag" src={`${assetBase}images/flags/${country.flag}`} alt="" width="28" height="20" />
 									<span>{country.name}</span>
 									<span class="actor-country__check" aria-hidden="true">✓</span>
 								</button>
@@ -294,8 +297,11 @@ const structuredData = [
 							<strong data-player-level>54</strong>
 						</div>
 						<div class="actor-player-card__identity">
-							<div class="actor-player-card__chips">
-								<span data-player-country>🇦🇷 ARG</span>
+									<div class="actor-player-card__chips">
+										<span class="actor-player-card__country" data-player-country>
+											<img class="actor-flag" data-country-flag-image src={`${assetBase}images/flags/ar.svg`} alt="" width="28" height="20" />
+											<span data-country-code>ARG</span>
+										</span>
 								<span data-player-profile>CAMaleónico</span>
 							</div>
 							<strong data-player-name>Tu nombre</strong>

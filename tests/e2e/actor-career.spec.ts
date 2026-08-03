@@ -155,4 +155,47 @@ test.describe('simulador de carrera cinematográfica', () => {
 		}));
 		expect(dimensions.document).toBeLessThanOrEqual(dimensions.viewport + 1);
 	});
+
+	test('carga banderas locales visibles en desktop y móvil', async ({ page }) => {
+		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+		await page.getByRole('button', { name: /Empezar carrera/i }).click();
+
+		const flags = page.locator('.actor-country .actor-flag');
+		await expect(flags).toHaveCount(8);
+		await expect(flags.first()).toHaveAttribute('src', /images\/flags\/ar\.svg/);
+		const loadedFlags = await flags.evaluateAll((images) => images.every((image) => (image as HTMLImageElement).naturalWidth > 0));
+		expect(loadedFlags).toBeTruthy();
+
+		await page.locator('[data-country="MX"]').click();
+		await expect(page.locator('[data-preview-country] .actor-flag')).toHaveAttribute('src', /images\/flags\/mx\.svg/);
+		await expect(page.locator('[data-preview-country] [data-country-code]')).toHaveText('MX');
+	});
+
+	test('mantiene el arte de las elecciones dentro de la tarjeta al tocar en móvil', async ({ page }, testInfo) => {
+		test.skip(!testInfo.project.name.startsWith('mobile-'), 'La regresión sólo aplica al comportamiento táctil.');
+		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+		await page.getByRole('button', { name: /Empezar carrera/i }).click();
+		await page.getByLabel(/Nombre que aparece en los créditos/i).fill('Test táctil');
+		await page.getByLabel(/Año de nacimiento/i).fill('1990');
+		await page.getByRole('button', { name: /Confirmar identidad/i }).click();
+
+		const choice = page.locator('[data-choice-index]').first();
+		await expect(choice).toBeVisible();
+		await choice.tap();
+		await page.waitForTimeout(300);
+
+		const dimensions = await choice.evaluate((card) => {
+			const art = card.querySelector<HTMLElement>('.actor-choice-card__art');
+			if (!art) throw new Error('No se encontró el arte de la elección.');
+			return {
+				cardWidth: card.getBoundingClientRect().width,
+				artWidth: art.getBoundingClientRect().width,
+				cardHeight: card.getBoundingClientRect().height,
+				artHeight: art.getBoundingClientRect().height,
+			};
+		});
+
+		expect(dimensions.artWidth).toBeLessThanOrEqual(dimensions.cardWidth + 1);
+		expect(dimensions.artHeight).toBeLessThanOrEqual(dimensions.cardHeight + 1);
+	});
 });

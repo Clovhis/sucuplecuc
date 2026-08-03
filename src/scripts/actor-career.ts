@@ -966,7 +966,7 @@ if (root) {
 	}
 
 	let selectedDifficulty: Difficulty = 'normal';
-	let selectedCountry = { code: 'AR', name: 'Argentina', flag: '🇦🇷' };
+	let selectedCountry = { code: 'AR', name: 'Argentina', flag: 'ar.svg' };
 	let selectedGender: Gender = 'masculino';
 	let selectedProfession: Profession = 'actor';
 	let selectedProfile: Profile = 'camaleonico';
@@ -988,6 +988,18 @@ if (root) {
 			};
 			return replacements[character] ?? character;
 		});
+	}
+
+	function countryFlagUrl(flagAsset: string): string {
+		return `${assetBase}images/flags/${flagAsset}`;
+	}
+
+	function updateCountryBadge(container: HTMLElement | null, flagAsset: string, code: string): void {
+		if (!container) return;
+		const image = container.querySelector<HTMLImageElement>('[data-country-flag-image]');
+		const codeElement = container.querySelector<HTMLElement>('[data-country-code]');
+		if (image) image.src = countryFlagUrl(flagAsset);
+		if (codeElement) codeElement.textContent = code;
 	}
 
 	function clamp(value: number, min: number, max: number): number {
@@ -1176,14 +1188,14 @@ if (root) {
 		const name = stageNameInput?.value.trim() || 'Tu nombre';
 		if (previewName) previewName.textContent = name;
 		if (previewProfile) previewProfile.textContent = `${professionDisplayLabel(selectedProfession, selectedGender)} · ${profileDefinitions[selectedProfile].label}`.toUpperCase();
-		if (previewCountry) previewCountry.textContent = `${selectedCountry.flag} ${selectedCountry.code}`;
+		updateCountryBadge(previewCountry, selectedCountry.flag, selectedCountry.code);
 	}
 
 	function selectCountry(button: HTMLButtonElement): void {
 		selectedCountry = {
 			code: button.dataset.country ?? 'AR',
 			name: button.dataset.countryName ?? 'Argentina',
-			flag: button.dataset.countryFlag ?? '🇦🇷',
+			flag: button.dataset.countryFlag ?? 'ar.svg',
 		};
 		countryButtons.forEach((countryButton) => {
 			const isSelected = countryButton === button;
@@ -1237,7 +1249,7 @@ if (root) {
 		const eventEntry = currentState.history.at(-1);
 		if (playerLevel) playerLevel.textContent = String(currentState.level);
 		if (playerName) playerName.textContent = currentState.name;
-		if (playerCountry) playerCountry.textContent = `${currentState.countryFlag} ${currentState.countryCode}`;
+		updateCountryBadge(playerCountry, currentState.countryFlag, currentState.countryCode);
 		if (playerProfile) playerProfile.textContent = `${professionDisplayLabel(currentState.profession, currentState.gender)} · ${profileDefinitions[currentState.profile].short}`;
 		if (playerProject) playerProject.textContent = eventEntry?.project ?? 'Buscando primer crédito';
 		if (playerAge) playerAge.textContent = String(currentState.ages[Math.min(currentState.currentIndex, currentState.ages.length - 1)]);
@@ -1563,14 +1575,14 @@ if (root) {
 				.join('')}</ul>`
 			: '<p class="actor-summary__empty-awards">Vitrina vacía. A veces una filmografía también se construye sin estatuillas.</p>';
 
-		summaryContent.innerHTML = `<div class="actor-summary"><div class="actor-summary__header"><div><p class="actor-summary__eyebrow">CARRERA FINALIZADA</p><h1 id="actor-summary-title">${escapeHtml(state.name)}</h1><p class="actor-summary__profile"><span>${escapeHtml(state.countryCode)}</span><span>${escapeHtml(professionDisplayLabel(state.profession, state.gender))}</span><span>${escapeHtml(profileDefinitions[state.profile].label)}</span></p></div><div class="actor-summary__headline-metric"><small>NIVEL</small><strong>${state.level}</strong></div><div class="actor-summary__cachet"><small>CACHET FINAL</small><strong>${formatCachet(state)}</strong></div></div><div class="actor-summary__overview"><section class="actor-summary__selection" aria-labelledby="actor-summary-selection"><p class="actor-summary__selection-title" id="actor-summary-selection"><span aria-hidden="true">${state.countryFlag}</span> Selección ${escapeHtml(state.countryName)}</p><p class="actor-summary__selection-copy">Naciste en ${state.birthYear}. Una carrera hecha de decisiones, oportunidades y un poco de suerte.</p><dl class="actor-summary__stats"><div><dt>PELÍCULAS</dt><dd>${state.films}</dd></div><div><dt>CRÉDITOS CLAVE</dt><dd>${state.leads}</dd></div><div><dt>NOMINACIONES</dt><dd>${state.nominations}</dd></div></dl></section><section class="actor-summary__awards" aria-labelledby="actor-summary-awards"><p class="actor-summary__label" id="actor-summary-awards">Premios individuales</p>${awards}</section></div><figure class="actor-summary__art actor-summary__art--${summaryTier}" data-summary-tier="${summaryTier}"><img src="${assetBase}images/actor-career/${summaryArt}" alt="${escapeHtml(`${summaryDefinition.alt} · ${professionDisplayLabel(state.profession, state.gender)}`)}" width="1536" height="1024" loading="eager" decoding="async" /><figcaption><strong>${summaryDefinition.label}</strong><span>${summaryDefinition.caption}</span></figcaption></figure><section class="actor-summary__chapters" aria-labelledby="actor-summary-chapters-title"><h2 id="actor-summary-chapters-title">Los capítulos de tu filmografía</h2><div class="actor-summary__chapter-grid">${chapters}</div></section><div class="actor-summary__actions"><button type="button" class="actor-button actor-button--ghost" data-game-action="restart">↺ Volver a jugar</button></div></div>`;
+		summaryContent.innerHTML = `<div class="actor-summary"><div class="actor-summary__header"><div><p class="actor-summary__eyebrow">CARRERA FINALIZADA</p><h1 id="actor-summary-title">${escapeHtml(state.name)}</h1><p class="actor-summary__profile"><span>${escapeHtml(state.countryCode)}</span><span>${escapeHtml(professionDisplayLabel(state.profession, state.gender))}</span><span>${escapeHtml(profileDefinitions[state.profile].label)}</span></p></div><div class="actor-summary__headline-metric"><small>NIVEL</small><strong>${state.level}</strong></div><div class="actor-summary__cachet"><small>CACHET FINAL</small><strong>${formatCachet(state)}</strong></div></div><div class="actor-summary__overview"><section class="actor-summary__selection" aria-labelledby="actor-summary-selection"><p class="actor-summary__selection-title" id="actor-summary-selection"><img class="actor-flag" src="${countryFlagUrl(escapeHtml(state.countryFlag))}" alt="" width="28" height="20" /> Selección ${escapeHtml(state.countryName)}</p><p class="actor-summary__selection-copy">Naciste en ${state.birthYear}. Una carrera hecha de decisiones, oportunidades y un poco de suerte.</p><dl class="actor-summary__stats"><div><dt>PELÍCULAS</dt><dd>${state.films}</dd></div><div><dt>CRÉDITOS CLAVE</dt><dd>${state.leads}</dd></div><div><dt>NOMINACIONES</dt><dd>${state.nominations}</dd></div></dl></section><section class="actor-summary__awards" aria-labelledby="actor-summary-awards"><p class="actor-summary__label" id="actor-summary-awards">Premios individuales</p>${awards}</section></div><figure class="actor-summary__art actor-summary__art--${summaryTier}" data-summary-tier="${summaryTier}"><img src="${assetBase}images/actor-career/${summaryArt}" alt="${escapeHtml(`${summaryDefinition.alt} · ${professionDisplayLabel(state.profession, state.gender)}`)}" width="1536" height="1024" loading="eager" decoding="async" /><figcaption><strong>${summaryDefinition.label}</strong><span>${summaryDefinition.caption}</span></figcaption></figure><section class="actor-summary__chapters" aria-labelledby="actor-summary-chapters-title"><h2 id="actor-summary-chapters-title">Los capítulos de tu filmografía</h2><div class="actor-summary__chapter-grid">${chapters}</div></section><div class="actor-summary__actions"><button type="button" class="actor-button actor-button--ghost" data-game-action="restart">↺ Volver a jugar</button></div></div>`;
 	}
 
 	function restartGame(): void {
 		if (transitionTimer) window.clearTimeout(transitionTimer);
 		state = null;
 		selectedDifficulty = 'normal';
-		selectedCountry = { code: 'AR', name: 'Argentina', flag: '🇦🇷' };
+		selectedCountry = { code: 'AR', name: 'Argentina', flag: 'ar.svg' };
 		selectedGender = 'masculino';
 		selectedProfession = 'actor';
 		selectedProfile = 'camaleonico';

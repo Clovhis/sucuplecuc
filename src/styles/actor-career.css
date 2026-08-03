@@ -422,9 +422,17 @@
 }
 
 .actor-credit-card small {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
 	margin-top: 0.7rem;
 	color: #f4dfff;
 	font-size: 0.7rem;
+}
+
+.actor-credit-card__country .actor-flag {
+	width: 1.6rem;
+	height: 1.05rem;
 }
 
 .actor-field {
@@ -539,9 +547,19 @@
 	color: #fff;
 }
 
-.actor-country > span:first-child {
-	font-size: 1.2rem;
-	line-height: 1;
+.actor-flag {
+	display: block;
+	flex: 0 0 auto;
+	width: 1.8rem;
+	height: 1.2rem;
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+	object-fit: cover;
+}
+
+.actor-country > .actor-flag {
+	width: 1.8rem;
+	height: 1.2rem;
 }
 
 .actor-country > span:nth-child(2) {
@@ -719,7 +737,9 @@
 	margin-bottom: 0.3rem;
 }
 
-.actor-player-card__chips span {
+.actor-player-card__chips > span {
+	display: inline-flex;
+	align-items: center;
 	padding: 0.2rem 0.42rem;
 	border-radius: 5px;
 	background: rgba(168, 85, 247, 0.54);
@@ -731,8 +751,17 @@
 	text-transform: uppercase;
 }
 
-.actor-player-card__chips span:first-child {
+.actor-player-card__chips > span:first-child {
 	background: rgba(255, 255, 255, 0.13);
+}
+
+.actor-player-card__country {
+	gap: 0.35rem;
+}
+
+.actor-player-card__country .actor-flag {
+	width: 1.2rem;
+	height: 0.8rem;
 }
 
 .actor-player-card__identity > strong {
@@ -1051,12 +1080,20 @@
 	transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
 }
 
-.actor-choice-card:hover,
 .actor-choice-card:focus-visible {
 	transform: translateY(-3px);
 	border-color: rgba(192, 132, 252, 0.6);
 	background: linear-gradient(160deg, rgba(51, 32, 72, 0.95), rgba(22, 15, 34, 0.96));
 	box-shadow: 0 15px 28px rgba(0, 0, 0, 0.26);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.actor-choice-card:hover {
+		transform: translateY(-3px);
+		border-color: rgba(192, 132, 252, 0.6);
+		background: linear-gradient(160deg, rgba(51, 32, 72, 0.95), rgba(22, 15, 34, 0.96));
+		box-shadow: 0 15px 28px rgba(0, 0, 0, 0.26);
+	}
 }
 
 .actor-choice-card:nth-child(2) {
@@ -1079,8 +1116,11 @@
 
 .actor-choice-card__art {
 	display: block;
+	width: 100%;
+	max-width: 100%;
 	aspect-ratio: 3 / 2;
 	min-height: 0;
+	min-width: 0;
 	height: auto;
 	margin-bottom: 1.1rem;
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1103,10 +1143,11 @@
 .actor-choice-card__art--7 { background-position: 50% 100%; }
 .actor-choice-card__art--8 { background-position: 100% 100%; }
 
-.actor-choice-card:hover .actor-choice-card__art,
-.actor-choice-card:focus-visible .actor-choice-card__art {
-	transform: scale(1.035) rotate(-0.35deg);
-	filter: saturate(1.16) contrast(1.04);
+@media (hover: hover) and (pointer: fine) {
+	.actor-choice-card:hover .actor-choice-card__art {
+		transform: scale(1.035) rotate(-0.35deg);
+		filter: saturate(1.16) contrast(1.04);
+	}
 }
 
 .actor-choice-card__movie {
@@ -1834,8 +1875,9 @@
 	font-weight: 800;
 }
 
-.actor-summary__selection-title span:first-child {
-	font-size: 1.35rem;
+.actor-summary__selection-title > .actor-flag {
+	width: 1.45rem;
+	height: 0.95rem;
 }
 
 .actor-summary__selection-copy {
