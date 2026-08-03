@@ -10,6 +10,11 @@ const pageDescription =
 const pageUrl = new URL('/juegos/simulador-carrera-actor/', SITE_URL).toString();
 const assetBase = import.meta.env.BASE_URL;
 const currentYear = new Date().getUTCFullYear();
+const minBirthYear = 1930;
+const minCareerStartAge = 18;
+const maxBirthYear = currentYear - minCareerStartAge;
+const defaultMoviePoolSize = 4;
+const recentMoviePoolSize = 16;
 const countries = [
 	{ code: 'AR', name: 'Argentina', flag: 'ar.svg' },
 	{ code: 'MX', name: 'México', flag: 'mx.svg' },
@@ -34,7 +39,7 @@ const actorMoviePool = [...moviesByYear.entries()]
 	.flatMap(([, yearMovies]) =>
 		yearMovies
 			.sort((left, right) => Number(right.verdict === 'recomendada') - Number(left.verdict === 'recomendada') || left.title.localeCompare(right.title, 'es'))
-			.slice(0, 4)
+			.slice(0, (yearMovies[0]?.year ?? 0) >= currentYear - 2 ? recentMoviePoolSize : defaultMoviePoolSize)
 			.map((movie) => ({
 				slug: movie.slug,
 				title: movie.title,
@@ -138,6 +143,27 @@ const structuredData = [
 			</div>
 		</section>
 
+		<section class="actor-view actor-view--landing actor-high-score" data-view="landing" data-high-score-board aria-labelledby="actor-high-score-title">
+			<div class="actor-high-score__heading">
+				<div>
+					<p class="actor-kicker">ARCADE GLOBAL</p>
+					<h2 id="actor-high-score-title">Salón de la fama</h2>
+				</div>
+				<span class="actor-high-score__badge">TOP 10</span>
+			</div>
+			<p class="actor-high-score__copy">Las mejores carreras de Cine Posta, ordenadas como en una máquina de arcade.</p>
+			<div class="actor-high-score__table-wrap">
+				<table class="actor-high-score__table">
+					<caption class="u-visually-hidden">Top 10 de puntajes de Carrera actoral</caption>
+					<thead>
+						<tr><th scope="col">#</th><th scope="col">JUGADOR</th><th scope="col">PUNTAJE</th><th scope="col">PARTIDA</th></tr>
+					</thead>
+					<tbody data-high-score-list><tr class="actor-high-score__empty"><td colspan="4">Cargando el salón de la fama…</td></tr></tbody>
+				</table>
+			</div>
+			<p class="actor-high-score__status" data-high-score-status role="status" aria-live="polite">Cargando el salón de la fama…</p>
+		</section>
+
 		<section class="actor-view actor-view--identity" data-view="identity" aria-labelledby="actor-identity-title" hidden>
 			<div class="actor-view-heading">
 				<p class="actor-kicker">PRIMER PLANO</p>
@@ -179,8 +205,8 @@ const structuredData = [
 							id="actor-birth-year"
 							name="birthYear"
 							type="number"
-							min="1930"
-							max={currentYear - 18}
+							min={minBirthYear}
+							max={maxBirthYear}
 							value="1990"
 							inputmode="numeric"
 							aria-describedby="actor-birth-year-hint actor-birth-year-error"
@@ -188,7 +214,7 @@ const structuredData = [
 						/>
 					</label>
 					<p id="actor-birth-year-hint" class="actor-field__hint">Tu edad marca cuándo arrancan los primeros castings y qué películas pueden aparecer.</p>
-							<p id="actor-birth-year-error" class="actor-field__error" role="alert" hidden>Elegí un año entre 1930 y {currentYear - 18}.</p>
+						<p id="actor-birth-year-error" class="actor-field__error" role="alert" hidden>Elegí un año entre {minBirthYear} y {maxBirthYear}.</p>
 				</section>
 
 				<section class="actor-identity__panel actor-identity__panel--country" aria-labelledby="actor-country-title">

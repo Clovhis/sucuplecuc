@@ -180,6 +180,7 @@ Los esquemas fuente están en `supabase/sql/`:
 - `community_message_reactions.sql`: migración incremental de spoilers, 👍/👎 y autor del último posteo.
 - `community_message_limit_300.sql`: baja el máximo de los mensajes a 300 caracteres.
 - `movie_ratings.sql`: votos de 1 a 5 estrellas compartidos entre ficha y comunidad.
+- `actor_high_scores.sql`: ranking Arcade del top 10 del simulador de carrera actoral mediante RPCs validadas.
 
 ### Conexión MCP para futuras iteraciones
 

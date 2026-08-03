@@ -1,3 +1,5 @@
+import { isSupabaseConfigured, supabase } from '../lib/supabaseClient';
+
 type Difficulty = 'intensa' | 'normal' | 'expres';
 type Profile = 'camaleonico' | 'drama' | 'comedia' | 'accion';
 type Profession = 'actor' | 'director' | 'assistant' | 'producer';
@@ -117,7 +119,20 @@ interface CareerState {
 	nextDevelopmentAfter: number;
 	awards: AwardId[];
 	history: TimelineEntry[];
+	highScore: number | null;
+	highScoreStatus: HighScoreStatus;
 	finished: boolean;
+}
+
+type HighScoreStatus = 'idle' | 'saving' | 'saved' | 'error';
+
+interface HighScoreEntry {
+	rank: number;
+	player_name: string;
+	score: number;
+	profession: Profession;
+	difficulty: Difficulty;
+	country_code: string;
 }
 
 const root = document.querySelector<HTMLElement>('[data-actor-simulator]');
@@ -168,6 +183,8 @@ if (root) {
 	const movieCatalogElement = document.getElementById('actor-movie-catalog');
 	const movieCatalog = movieCatalogElement?.textContent ? (JSON.parse(movieCatalogElement.textContent) as MovieOffer[]) : [];
 	const currentYear = new Date().getUTCFullYear();
+	const CAREER_START_AGE = 18;
+	const MIN_BIRTH_YEAR = 1930;
 
 	const difficultyConfig: Record<Difficulty, DifficultyConfig> = {
 		intensa: {
@@ -930,15 +947,26 @@ if (root) {
 		return new Set(currentState.history.flatMap((entry) => (entry.movie?.slug ? [entry.movie.slug] : [])));
 	}
 
-	function hasExactMovieAvailable(currentState: CareerState): boolean {
+	function getAvailableMovieCandidates(currentState: CareerState): MovieOffer[] {
 		const careerYear = getCareerYear(currentState);
 		const usedSlugs = getUsedMovieSlugs(currentState);
-		return movieCatalog.some((movie) => movie.year === careerYear && !usedSlugs.has(movie.slug));
+		const availableMovies = movieCatalog.filter((movie) => movie.year <= careerYear && !usedSlugs.has(movie.slug));
+		if (availableMovies.length === 0) return [];
+		const exactYearMovies = availableMovies.filter((movie) => movie.year === careerYear);
+		const latestAvailableYear = Math.max(...availableMovies.map((movie) => movie.year));
+		const targetMovies = exactYearMovies.length > 0
+			? exactYearMovies
+			: availableMovies.filter((movie) => movie.year === latestAvailableYear);
+		return targetMovies.sort((left, right) => getMovieMatchScore(right, currentState, careerYear) - getMovieMatchScore(left, currentState, careerYear));
+	}
+
+	function hasMovieAvailable(currentState: CareerState): boolean {
+		return getAvailableMovieCandidates(currentState).length > 0;
 	}
 
 	function shouldShowDevelopment(currentState: CareerState): boolean {
 		const isFinalTurn = currentState.currentIndex >= currentState.ages.length - 1;
-		return !isFinalTurn && hasExactMovieAvailable(currentState) && currentState.moviesSinceDevelopment >= currentState.nextDevelopmentAfter;
+		return !isFinalTurn && hasMovieAvailable(currentState) && currentState.moviesSinceDevelopment >= currentState.nextDevelopmentAfter;
 	}
 
 	function getDevelopmentChoice(currentState: CareerState): Choice {
@@ -951,7 +979,7 @@ if (root) {
 		return {
 			kicker: 'GIRO DE CARRERA',
 			title: '¿Rodaje o preparación?',
-			copy: 'Hay una película del año exacto, pero también podés invertir en tu oficio. Una buena carrera necesita elegir cuándo exponerse y cuándo crecer.',
+			copy: 'Hay una película para esta etapa, pero también podés invertir en tu oficio. Una buena carrera necesita elegir cuándo exponerse y cuándo crecer.',
 			choices: [getDevelopmentChoice(currentState), movieChoice],
 			mixed: true,
 		};
@@ -961,7 +989,7 @@ if (root) {
 		const isFinalTurn = currentState.currentIndex >= currentState.ages.length - 1;
 		const eventBank = getEventBank(currentState);
 		const baseEvent = isFinalTurn ? finalEvent : eventBank[currentState.currentIndex % eventBank.length];
-		if (!isFinalTurn && !hasExactMovieAvailable(currentState)) return simulationEvents[currentState.profession];
+		if (!isFinalTurn && !hasMovieAvailable(currentState)) return simulationEvents[currentState.profession];
 		return shouldShowDevelopment(currentState) ? getMixedCareerEvent(currentState, baseEvent) : baseEvent;
 	}
 
@@ -990,6 +1018,154 @@ if (root) {
 		});
 	}
 
+	function formatArcadeScore(score: number | null): string {
+		if (score === null || !Number.isFinite(score)) return '------';
+		return Math.max(0, Math.round(score)).toLocaleString('es-AR');
+	}
+
+	function highScoreStatusText(status: HighScoreStatus): string {
+		if (status === 'saving') return 'Guardando tu resultado en el arcade…';
+		if (status === 'saved') return 'Resultado guardado en el salón de la fama.';
+		if (status === 'error') return 'No pudimos guardar el resultado. Podés intentarlo de nuevo más tarde.';
+		return 'Tu resultado se calcula al cerrar la carrera.';
+	}
+
+	function createHighScoreBoardMarkup(titleId: string): string {
+		return `<section class="actor-high-score actor-high-score--summary" data-high-score-board aria-labelledby="${titleId}">
+			<div class="actor-high-score__heading">
+				<div><p class="actor-kicker">ARCADE GLOBAL</p><h2 id="${titleId}">Salón de la fama</h2></div>
+				<span class="actor-high-score__badge">TOP 10</span>
+			</div>
+			<p class="actor-high-score__copy">Las mejores carreras de Cine Posta, ordenadas como en una máquina de arcade.</p>
+			<div class="actor-high-score__table-wrap">
+				<table class="actor-high-score__table">
+					<caption class="u-visually-hidden">Top 10 de puntajes de Carrera actoral</caption>
+					<thead><tr><th scope="col">#</th><th scope="col">JUGADOR</th><th scope="col">PUNTAJE</th><th scope="col">PARTIDA</th></tr></thead>
+					<tbody data-high-score-list><tr class="actor-high-score__empty"><td colspan="4">Cargando el salón de la fama…</td></tr></tbody>
+				</table>
+			</div>
+			<p class="actor-high-score__status" data-high-score-status role="status" aria-live="polite">Cargando el salón de la fama…</p>
+		</section>`;
+	}
+
+	function createSummaryScoreMarkup(currentState: CareerState): string {
+		return `<section class="actor-summary__score-card" aria-labelledby="actor-summary-score-title">
+			<div><p class="actor-summary__label" id="actor-summary-score-title">PUNTAJE ARCADE</p><p>Tu resultado entra al ranking global si la conexión está disponible.</p></div>
+			<div class="actor-summary__score-value"><strong data-summary-score>${formatArcadeScore(currentState.highScore)}</strong><span data-summary-score-status role="status" aria-live="polite">${highScoreStatusText(currentState.highScoreStatus)}</span></div>
+		</section>`;
+	}
+
+	function updateHighScoreUi(currentState: CareerState): void {
+		root!.querySelectorAll<HTMLElement>('[data-summary-score]').forEach((element) => {
+			element.textContent = formatArcadeScore(currentState.highScore);
+		});
+		root!.querySelectorAll<HTMLElement>('[data-summary-score-status]').forEach((element) => {
+			element.textContent = highScoreStatusText(currentState.highScoreStatus);
+		});
+	}
+
+	function setHighScoreStatus(message: string): void {
+		root!.querySelectorAll<HTMLElement>('[data-high-score-status]').forEach((element) => {
+			element.textContent = message;
+		});
+	}
+
+	function professionHighScoreLabel(profession: string): string {
+		return professionDefinitions[profession as Profession]?.short ?? 'Cine';
+	}
+
+	function difficultyHighScoreLabel(difficulty: string): string {
+		return difficultyConfig[difficulty as Difficulty]?.label ?? 'Normal';
+	}
+
+	function renderHighScores(entries: HighScoreEntry[]): void {
+		const lists = Array.from(root!.querySelectorAll<HTMLElement>('[data-high-score-list]'));
+		if (entries.length === 0) {
+			lists.forEach((list) => {
+				list.innerHTML = '<tr class="actor-high-score__empty"><td colspan="4">Todavía no hay puntajes. Sé el primero en entrar.</td></tr>';
+			});
+			setHighScoreStatus('Todavía no hay puntajes. Sé el primero en entrar.');
+			return;
+		}
+
+		const rows = entries.slice(0, 10).map((entry, index) => {
+			const rank = Number.isInteger(entry.rank) ? entry.rank : index + 1;
+			const score = Number.isFinite(Number(entry.score)) ? Number(entry.score) : 0;
+			const playerName = escapeHtml(String(entry.player_name ?? 'Jugador').slice(0, 24));
+			const countryCode = escapeHtml(String(entry.country_code ?? '').slice(0, 2).toUpperCase());
+			const profession = escapeHtml(professionHighScoreLabel(String(entry.profession ?? '')));
+			const difficulty = escapeHtml(difficultyHighScoreLabel(String(entry.difficulty ?? '')));
+			return `<tr class="actor-high-score__row actor-high-score__row--rank-${rank}" data-high-score-rank="${rank}">
+				<th scope="row"><span class="actor-high-score__rank">${rank}</span></th>
+				<td><strong>${playerName}</strong><small>${countryCode}</small></td>
+				<td class="actor-high-score__score" aria-label="${score} puntos">${formatArcadeScore(score)}</td>
+				<td><span>${profession}</span><small>${difficulty}</small></td>
+			</tr>`;
+		});
+		lists.forEach((list) => list.innerHTML = rows.join(''));
+		setHighScoreStatus('Ranking actualizado.');
+	}
+
+	let highScoreRequestId = 0;
+
+	async function refreshHighScores(): Promise<void> {
+		if (!isSupabaseConfigured || !supabase) {
+			setHighScoreStatus('Ranking no disponible en este momento.');
+			return;
+		}
+		const requestId = ++highScoreRequestId;
+		setHighScoreStatus('Cargando el salón de la fama…');
+		const { data, error } = await supabase.rpc('list_actor_high_scores', { p_limit: 10 });
+		if (requestId !== highScoreRequestId) return;
+		if (error) {
+			setHighScoreStatus('No pudimos cargar el ranking ahora.');
+			return;
+		}
+		renderHighScores((data ?? []) as HighScoreEntry[]);
+	}
+
+	async function submitHighScore(currentState: CareerState): Promise<void> {
+		if (!isSupabaseConfigured || !supabase) {
+			currentState.highScoreStatus = 'error';
+			updateHighScoreUi(currentState);
+			return;
+		}
+
+		currentState.highScoreStatus = 'saving';
+		updateHighScoreUi(currentState);
+		setHighScoreStatus('Guardando tu resultado en el arcade…');
+		const { data, error } = await supabase.rpc('submit_actor_high_score', {
+			p_player_name: currentState.name,
+			p_profession: currentState.profession,
+			p_difficulty: currentState.difficulty,
+			p_country_code: currentState.countryCode,
+			p_level: currentState.level,
+			p_films: currentState.films,
+			p_leads: currentState.leads,
+			p_nominations: currentState.nominations,
+			p_awards: currentState.awards.length,
+			p_luck: currentState.luck,
+		});
+		if (error) {
+			currentState.highScoreStatus = 'error';
+			updateHighScoreUi(currentState);
+			setHighScoreStatus('No pudimos guardar el resultado.');
+			return;
+		}
+
+		const submittedScore = Number(Array.isArray(data) ? data[0]?.score : undefined);
+		if (!Number.isFinite(submittedScore)) {
+			currentState.highScoreStatus = 'error';
+			updateHighScoreUi(currentState);
+			setHighScoreStatus('El ranking devolvió un resultado inesperado.');
+			return;
+		}
+		currentState.highScore = submittedScore;
+		currentState.highScoreStatus = 'saved';
+		updateHighScoreUi(currentState);
+		await refreshHighScores();
+	}
+
 	function countryFlagUrl(flagAsset: string): string {
 		return `${assetBase}images/flags/${flagAsset}`;
 	}
@@ -1006,15 +1182,14 @@ if (root) {
 		return Math.min(max, Math.max(min, value));
 	}
 
-	function getCareerAges(birthYear: number, difficulty: Difficulty): number[] {
+	function getCareerAges(difficulty: Difficulty): number[] {
 		const config = difficultyConfig[difficulty];
-		const endAge = Math.min(config.maxAge, currentYear - birthYear);
 		const ages: number[] = [];
-		for (let age = 18; age <= endAge; age += config.step) {
+		for (let age = CAREER_START_AGE; age <= config.maxAge; age += config.step) {
 			ages.push(age);
 		}
-		if (ages.at(-1) !== endAge) {
-			ages.push(endAge);
+		if (ages.at(-1) !== config.maxAge) {
+			ages.push(config.maxAge);
 		}
 		return ages;
 	}
@@ -1114,21 +1289,17 @@ if (root) {
 	}
 
 	function getOfferChoices(currentState: CareerState, event: CareerEvent): OfferChoice[] {
-		const careerYear = getCareerYear(currentState);
-		const usedSlugs = getUsedMovieSlugs(currentState);
-		const exactYearMovies = movieCatalog
-			.filter((movie) => movie.year === careerYear && !usedSlugs.has(movie.slug))
-			.sort((left, right) => getMovieMatchScore(right, currentState, careerYear) - getMovieMatchScore(left, currentState, careerYear));
+		const availableMovieCandidates = getAvailableMovieCandidates(currentState);
 		if (event.mixed) {
 			const developmentChoice = event.choices[0] ?? simulationEvents[currentState.profession].choices[0];
 			const movieChoice = event.choices[1] ?? simulationEvents[currentState.profession].choices[0];
 			const choices: OfferChoice[] = [{ choice: developmentChoice, kind: 'event', simulation: getDevelopmentOffer(currentState, developmentChoice) }];
-			const movie = exactYearMovies[0];
+			const movie = availableMovieCandidates[0];
 			choices.push(movie ? { choice: movieChoice, kind: 'movie', movie } : { choice: movieChoice, kind: 'event', simulation: getSimulationOffer(currentState, 0) });
 			return choices;
 		}
 		return getVisibleChoices(event).map((choice, choiceIndex) => {
-			const movie = exactYearMovies[choiceIndex];
+			const movie = availableMovieCandidates[choiceIndex];
 			return movie ? { choice, kind: 'movie', movie } : { choice, kind: 'event', simulation: getSimulationOffer(currentState, choiceIndex) };
 		});
 	}
@@ -1207,8 +1378,8 @@ if (root) {
 
 	function readBirthYear(): number | null {
 		const value = Number.parseInt(birthYearInput?.value ?? '', 10);
-		const minYear = 1930;
-		const maxYear = currentYear - 18;
+		const minYear = MIN_BIRTH_YEAR;
+		const maxYear = currentYear - CAREER_START_AGE;
 		const valid = Number.isInteger(value) && value >= minYear && value <= maxYear;
 		if (birthYearError) {
 			birthYearError.textContent = valid ? '' : `Elegí un año entre ${minYear} y ${maxYear}.`;
@@ -1229,7 +1400,7 @@ if (root) {
 			profession: selectedProfession,
 			profile: selectedProfile,
 			difficulty: selectedDifficulty,
-			ages: getCareerAges(birthYear, selectedDifficulty),
+			ages: getCareerAges(selectedDifficulty),
 			currentIndex: 0,
 			level: 54,
 			peakLevel: 54,
@@ -1241,6 +1412,8 @@ if (root) {
 			nextDevelopmentAfter: getDevelopmentInterval(),
 			awards: [],
 			history: [],
+			highScore: null,
+			highScoreStatus: 'idle',
 			finished: false,
 		};
 	}
@@ -1379,10 +1552,13 @@ if (root) {
 					const artIndex = (currentState.currentIndex * 2 + choiceIndex) % 9;
 					const work = movie ?? simulation;
 					const workTitle = work?.title ?? 'Año de preparación';
-					const workYear = work?.year ?? getCareerYear(currentState);
+					const careerYear = getCareerYear(currentState);
+					const workYear = kind === 'movie' ? careerYear : work?.year ?? careerYear;
 					const workCategory = work?.category ?? 'Preparación';
 					const workPoster = work?.posterUrl ?? `${assetBase}posters/poster-no-disponible.svg`;
-					const workDetail = movie ? `Dirige ${movie.director}` : simulation?.detail ?? 'Un año para mejorar tu oficio.';
+					const workDetail = movie
+						? `${movie.year === careerYear ? '' : `Película de ${movie.year} · `}Dirige ${movie.director}`
+						: simulation?.detail ?? 'Un año para mejorar tu oficio.';
 					const simulationClass = kind === 'event' ? ' actor-choice-card--simulation actor-choice-card--event' : '';
 					const cardTitle = kind === 'event' ? `Evento: ${workTitle}` : `${getProfessionAction(currentState, choiceIndex)}: ${workTitle}`;
 					const workVisual = kind === 'event'
@@ -1470,6 +1646,9 @@ if (root) {
 	function finishCareer(): void {
 		if (!state) return;
 		state.finished = true;
+		state.highScoreStatus = 'saving';
+		updateHighScoreUi(state);
+		void submitHighScore(state);
 		if (eventKicker) eventKicker.textContent = 'CARRERA FINALIZADA';
 		if (eventTitle) eventTitle.textContent = 'Tu carrera llegó a su fin';
 		if (eventCopy) eventCopy.textContent = 'La pantalla se apaga, pero queda todo lo que elegiste en el camino.';
@@ -1576,6 +1755,14 @@ if (root) {
 			: '<p class="actor-summary__empty-awards">Vitrina vacía. A veces una filmografía también se construye sin estatuillas.</p>';
 
 		summaryContent.innerHTML = `<div class="actor-summary"><div class="actor-summary__header"><div><p class="actor-summary__eyebrow">CARRERA FINALIZADA</p><h1 id="actor-summary-title">${escapeHtml(state.name)}</h1><p class="actor-summary__profile"><span>${escapeHtml(state.countryCode)}</span><span>${escapeHtml(professionDisplayLabel(state.profession, state.gender))}</span><span>${escapeHtml(profileDefinitions[state.profile].label)}</span></p></div><div class="actor-summary__headline-metric"><small>NIVEL</small><strong>${state.level}</strong></div><div class="actor-summary__cachet"><small>CACHET FINAL</small><strong>${formatCachet(state)}</strong></div></div><div class="actor-summary__overview"><section class="actor-summary__selection" aria-labelledby="actor-summary-selection"><p class="actor-summary__selection-title" id="actor-summary-selection"><img class="actor-flag" src="${countryFlagUrl(escapeHtml(state.countryFlag))}" alt="" width="28" height="20" /> Selección ${escapeHtml(state.countryName)}</p><p class="actor-summary__selection-copy">Naciste en ${state.birthYear}. Una carrera hecha de decisiones, oportunidades y un poco de suerte.</p><dl class="actor-summary__stats"><div><dt>PELÍCULAS</dt><dd>${state.films}</dd></div><div><dt>CRÉDITOS CLAVE</dt><dd>${state.leads}</dd></div><div><dt>NOMINACIONES</dt><dd>${state.nominations}</dd></div></dl></section><section class="actor-summary__awards" aria-labelledby="actor-summary-awards"><p class="actor-summary__label" id="actor-summary-awards">Premios individuales</p>${awards}</section></div><figure class="actor-summary__art actor-summary__art--${summaryTier}" data-summary-tier="${summaryTier}"><img src="${assetBase}images/actor-career/${summaryArt}" alt="${escapeHtml(`${summaryDefinition.alt} · ${professionDisplayLabel(state.profession, state.gender)}`)}" width="1536" height="1024" loading="eager" decoding="async" /><figcaption><strong>${summaryDefinition.label}</strong><span>${summaryDefinition.caption}</span></figcaption></figure><section class="actor-summary__chapters" aria-labelledby="actor-summary-chapters-title"><h2 id="actor-summary-chapters-title">Los capítulos de tu filmografía</h2><div class="actor-summary__chapter-grid">${chapters}</div></section><div class="actor-summary__actions"><button type="button" class="actor-button actor-button--ghost" data-game-action="restart">↺ Volver a jugar</button></div></div>`;
+	}
+
+	function renderSummaryExtras(currentState: CareerState): void {
+		if (!summaryContent) return;
+		summaryContent.querySelector<HTMLElement>('.actor-summary__overview')?.insertAdjacentHTML('afterend', createSummaryScoreMarkup(currentState));
+		summaryContent.querySelector<HTMLElement>('.actor-summary__chapters')?.insertAdjacentHTML('afterend', createHighScoreBoardMarkup('actor-summary-high-score-title'));
+		updateHighScoreUi(currentState);
+		void refreshHighScores();
 	}
 
 	function restartGame(): void {
@@ -1720,6 +1907,7 @@ if (root) {
 		const action = actionElement?.dataset.gameAction;
 		if (action === 'summary') {
 			renderSummary();
+			if (state) renderSummaryExtras(state);
 			showView('summary');
 		} else if (action === 'restart') {
 			restartGame();
@@ -1728,4 +1916,5 @@ if (root) {
 
 	updateDifficultyUi();
 	updateIdentityPreview();
+	void refreshHighScores();
 }

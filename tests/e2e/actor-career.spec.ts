@@ -1,6 +1,24 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('simulador de carrera cinematográfica', () => {
+	test.beforeEach(async ({ page }) => {
+		// Keep E2E deterministic and avoid writing test runs into the public leaderboard.
+		await page.route('**/rest/v1/rpc/list_actor_high_scores', (route) =>
+			route.fulfill({
+				status: 200,
+				contentType: 'application/json',
+				body: JSON.stringify([{ rank: 1, player_name: 'Ada Arcade', score: 54321, profession: 'actor', difficulty: 'normal', country_code: 'AR' }]),
+			}),
+		);
+		await page.route('**/rest/v1/rpc/submit_actor_high_score', (route) =>
+			route.fulfill({
+				status: 200,
+				contentType: 'application/json',
+				body: JSON.stringify([{ score: 54321 }]),
+			}),
+		);
+	});
+
 	test('aparece como acceso destacado debajo de Qué somos en el home', async ({ page }) => {
 		const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
 		expect(response?.ok()).toBeTruthy();
@@ -25,7 +43,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 	});
 
 	test('completa una carrera de directora con elecciones, suerte y resumen', async ({ page }) => {
-		test.setTimeout(60_000);
+		test.setTimeout(90_000);
 		const pageErrors: string[] = [];
 		page.on('pageerror', (error) => pageErrors.push(error.message));
 
@@ -52,9 +70,9 @@ test.describe('simulador de carrera cinematográfica', () => {
 		await expect(page.locator('[data-career-log-count]')).toHaveText('0 decisiones');
 		await expect(page.locator('.actor-timeline [data-career-log]')).toBeVisible();
 
-		const seenMovieSlugs = new Set<string>();
+		const selectedMovieSlugs = new Set<string>();
 		let sawMixedTurn = false;
-		for (let turn = 0; turn < 14; turn += 1) {
+		for (let turn = 0; turn < 30; turn += 1) {
 			const choices = page.locator('[data-choice-index]:not([disabled])');
 			if ((await choices.count()) === 0) break;
 			const careerYear = (await page.locator('[data-player-year]').textContent())?.trim();
@@ -68,12 +86,17 @@ test.describe('simulador de carrera cinematográfica', () => {
 				if ((await choice.getAttribute('data-offer-kind')) === 'movie') {
 					const slug = await choice.getAttribute('data-offer-slug');
 					expect(slug).toBeTruthy();
-					expect(seenMovieSlugs.has(slug ?? '')).toBeFalsy();
-					seenMovieSlugs.add(slug ?? '');
 				}
 			}
 
-			await choices.nth(turn % 2).click();
+			const selectedChoice = choices.nth(turn % 2);
+			if ((await selectedChoice.getAttribute('data-offer-kind')) === 'movie') {
+				const selectedSlug = await selectedChoice.getAttribute('data-offer-slug');
+				expect(selectedSlug).toBeTruthy();
+				expect(selectedMovieSlugs.has(selectedSlug ?? '')).toBeFalsy();
+				selectedMovieSlugs.add(selectedSlug ?? '');
+			}
+			await selectedChoice.click();
 			await expect(page.locator('[data-event-result]')).toContainText(/suerte está rodando/i);
 			await expect(page.locator('[data-event-result]')).not.toContainText(/suerte está rodando/i, { timeout: 3_000 });
 			await page.waitForTimeout(1_400);
@@ -85,6 +108,8 @@ test.describe('simulador de carrera cinematográfica', () => {
 		await expect(page.getByRole('button', { name: /Ver resumen/i })).toBeVisible({ timeout: 6_000 });
 		await page.getByRole('button', { name: /Ver resumen/i }).click();
 		await expect(page.getByRole('heading', { name: 'Lola Montaje' })).toBeVisible();
+		await expect(page.locator('[data-summary-score]')).toHaveText('54.321');
+		await expect(page.locator('.actor-summary [data-high-score-list]')).toContainText('Ada Arcade');
 		await expect(page.locator('.actor-summary__chapter-poster').first()).toBeVisible();
 		const summaryArt = page.locator('.actor-summary__art');
 		await expect(summaryArt).toHaveAttribute('data-summary-tier', /^(superstar|mediocre|ruin)$/);
@@ -100,6 +125,19 @@ test.describe('simulador de carrera cinematográfica', () => {
 		expect(Math.abs(artMetrics.naturalRatio - artMetrics.renderedRatio)).toBeLessThan(0.02);
 		await expect(page.getByRole('button', { name: /Volver a jugar/i })).toBeVisible();
 		expect(pageErrors).toEqual([]);
+	});
+
+	test('muestra el top 10 Arcade en la pantalla de inicio', async ({ page }) => {
+		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+
+		const board = page.locator('[data-high-score-board]').first();
+		await expect(board).toBeVisible();
+		await expect(board.getByRole('heading', { name: 'Salón de la fama' })).toBeVisible();
+		await expect(board.locator('[data-high-score-list] [data-high-score-rank]')).toHaveCount(1);
+		await expect(board.locator('[data-high-score-list]')).toContainText('Ada Arcade');
+		await expect(board.locator('[data-high-score-list]')).toContainText('54.321');
+		const dimensions = await page.evaluate(() => ({ viewport: window.innerWidth, document: document.documentElement.scrollWidth }));
+		expect(dimensions.document).toBeLessThanOrEqual(dimensions.viewport + 1);
 	});
 
 	test('el modo normal tiene pico acotado y descenso antes del retiro', async ({ page }, testInfo) => {
@@ -128,6 +166,68 @@ test.describe('simulador de carrera cinematográfica', () => {
 		expect(peak).toBeLessThanOrEqual(87);
 		expect(levels.at(-1)).toBeLessThanOrEqual(63);
 		expect(levels.slice(peakIndex + 1).some((level) => level < peak)).toBeTruthy();
+	});
+
+	test('mantiene la duración de la carrera y limita el nacimiento a una edad adulta', async ({ page }) => {
+		const currentYear = new Date().getUTCFullYear();
+		const maxBirthYear = currentYear - 18;
+		const birthYearInput = page.locator('#actor-birth-year');
+
+		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+		await page.getByRole('button', { name: /Empezar carrera/i }).click();
+		await expect(birthYearInput).toHaveAttribute('max', String(maxBirthYear));
+		await birthYearInput.fill(String(maxBirthYear + 1));
+		await page.getByRole('button', { name: /Confirmar identidad/i }).click();
+		expect(await birthYearInput.evaluate((input) => !(input as HTMLInputElement).validity.valid)).toBeTruthy();
+		await expect(page.getByRole('heading', { name: /Definí tu identidad/i })).toBeVisible();
+
+		for (const birthYear of [1950, maxBirthYear]) {
+			await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+			await page.getByRole('button', { name: /Empezar carrera/i }).click();
+			await expect(page.getByRole('heading', { name: /Definí tu identidad/i })).toBeVisible();
+			const currentNameInput = page.locator('#actor-stage-name');
+			await currentNameInput.fill(`Test ${birthYear}`);
+			await expect(currentNameInput).toHaveValue(`Test ${birthYear}`);
+			const currentBirthYearInput = page.locator('#actor-birth-year');
+			await currentBirthYearInput.fill(String(birthYear));
+			await expect(currentBirthYearInput).toHaveValue(String(birthYear));
+			await page.getByRole('button', { name: /Confirmar identidad/i }).click();
+
+			await expect(page.locator('[data-player-age]')).toHaveText('18');
+			await expect(page.locator('[data-player-year]')).toHaveText(String(birthYear + 18));
+			await expect(page.locator('.actor-timeline__row')).toHaveCount(22);
+		}
+	});
+
+	test('mantiene películas recientes cuando la carrera supera el catálogo futuro', async ({ page }) => {
+		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+		await page.getByRole('button', { name: /Empezar carrera/i }).click();
+		await page.getByLabel(/Nombre que aparece en los créditos/i).fill('Nueva Generación');
+		await page.getByLabel(/Año de nacimiento/i).fill('2007');
+		await page.getByRole('button', { name: /Confirmar identidad/i }).click();
+
+		let movieOfferCount = 0;
+		const selectedMovieSlugs = new Set<string>();
+		for (let turn = 0; turn < 8; turn += 1) {
+			const choices = page.locator('[data-choice-index]:not([disabled])');
+			await expect(choices).toHaveCount(2);
+			const movieChoices = choices.filter({ has: page.locator('.actor-choice-card__poster:not(.actor-choice-card__poster--event)') });
+			movieOfferCount += await movieChoices.count();
+			const selectedChoice = (await movieChoices.count()) > 0 ? movieChoices.last() : choices.last();
+			if (await selectedChoice.getAttribute('data-offer-kind') === 'movie') {
+				const slug = await selectedChoice.getAttribute('data-offer-slug');
+				expect(slug).toBeTruthy();
+				expect(selectedMovieSlugs.has(slug ?? '')).toBeFalsy();
+				selectedMovieSlugs.add(slug ?? '');
+			}
+
+			await selectedChoice.click();
+			await expect(page.locator('[data-event-result]')).not.toContainText(/suerte está rodando/i, { timeout: 3_000 });
+			await page.waitForTimeout(1_400);
+		}
+
+		expect(movieOfferCount).toBeGreaterThanOrEqual(4);
+		expect(selectedMovieSlugs.size).toBeGreaterThanOrEqual(4);
 	});
 
 	test('arranca la carrera actoral con créditos de reparto', async ({ page }) => {
