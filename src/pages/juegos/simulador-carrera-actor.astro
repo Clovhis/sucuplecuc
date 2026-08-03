@@ -1,0 +1,395 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/actor-career.css';
+import { SITE_LANGUAGE, SITE_NAME, SITE_URL } from '../../lib/seo';
+import { getMovies, getPosterUrl } from '../../lib/movies';
+
+const pageTitle = `Simulador de carrera actoral | ${SITE_NAME}`;
+const pageDescription =
+	'Construí una carrera actoral, elegí tus papeles, seguí tu suerte y buscá llegar a Cannes, los Oscars y los grandes premios del cine.';
+const pageUrl = new URL('/juegos/simulador-carrera-actor/', SITE_URL).toString();
+const assetBase = import.meta.env.BASE_URL;
+const currentYear = new Date().getUTCFullYear();
+const countries = [
+	{ code: 'AR', name: 'Argentina', flag: '🇦🇷' },
+	{ code: 'MX', name: 'México', flag: '🇲🇽' },
+	{ code: 'ES', name: 'España', flag: '🇪🇸' },
+	{ code: 'BR', name: 'Brasil', flag: '🇧🇷' },
+	{ code: 'FR', name: 'Francia', flag: '🇫🇷' },
+	{ code: 'IT', name: 'Italia', flag: '🇮🇹' },
+	{ code: 'US', name: 'Estados Unidos', flag: '🇺🇸' },
+	{ code: 'KR', name: 'Corea del Sur', flag: '🇰🇷' },
+];
+const moviesByYear = new Map<number, ReturnType<typeof getMovies>>();
+for (const movie of getMovies()) {
+	if (movie.year < 1940 || movie.year > currentYear || !movie.poster) {
+		continue;
+	}
+	const yearMovies = moviesByYear.get(movie.year) ?? [];
+	yearMovies.push(movie);
+	moviesByYear.set(movie.year, yearMovies);
+}
+const actorMoviePool = [...moviesByYear.entries()]
+	.sort(([leftYear], [rightYear]) => leftYear - rightYear)
+	.flatMap(([, yearMovies]) =>
+		yearMovies
+			.sort((left, right) => Number(right.verdict === 'recomendada') - Number(left.verdict === 'recomendada') || left.title.localeCompare(right.title, 'es'))
+			.slice(0, 4)
+			.map((movie) => ({
+				slug: movie.slug,
+				title: movie.title,
+				year: movie.year,
+				posterUrl: getPosterUrl(movie.poster),
+				director: movie.director,
+				category: movie.category,
+				genres: movie.genres ?? [],
+				isArgentinian: movie.isArgentinian === true,
+				awardTypes: movie.awards?.wins.map((win) => win.award) ?? [],
+			})),
+	);
+
+function serializeJsonForScript(value: unknown): string {
+	return JSON.stringify(value).replace(/[<>&\u2028\u2029]/g, (character) => {
+		const codePoint = character.codePointAt(0)?.toString(16).padStart(4, '0') ?? '';
+		return `\\u${codePoint}`;
+	});
+}
+
+const actorMovieCatalogData = serializeJsonForScript(actorMoviePool);
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		'@id': `${pageUrl}#webpage`,
+		url: pageUrl,
+		name: pageTitle,
+		description: pageDescription,
+		inLanguage: SITE_LANGUAGE,
+		isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		'@id': `${pageUrl}#breadcrumb`,
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: SITE_NAME, item: `${SITE_URL}/` },
+			{ '@type': 'ListItem', position: 2, name: 'Juegos', item: pageUrl },
+			{ '@type': 'ListItem', position: 3, name: 'Simulador de carrera actoral', item: pageUrl },
+		],
+	},
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main
+		id="main-content"
+		class="container actor-simulator"
+		data-actor-simulator
+		data-asset-base={assetBase}
+	>
+		<header class="actor-simulator__topbar">
+			<a class="actor-simulator__brand" href={assetBase} aria-label="Volver al inicio de Cine Posta">
+				<img src={`${assetBase}brand/cineposta-logo-full.png`} alt="Cine Posta" width="286" height="76" />
+			</a>
+			<div class="actor-simulator__topbar-copy">
+				<span>MINIJUEGOS CINE POSTA</span>
+				<span aria-hidden="true">·</span>
+				<span>Una carrera, mil versiones</span>
+			</div>
+			<a class="actor-simulator__return" href={assetBase}>Volver a Cine Posta <span aria-hidden="true">↗</span></a>
+		</header>
+
+		<section class="actor-view actor-view--landing actor-landing" data-view="landing" aria-labelledby="actor-game-title">
+			<div class="actor-landing__art" aria-hidden="true">
+				<img
+					src={`${assetBase}images/actor-career/actor-career-landing.png`}
+					alt=""
+					width="1536"
+					height="1024"
+					fetchpriority="high"
+				/>
+				<div class="actor-landing__art-label">TAKE 01 <span>●</span> ACCIÓN</div>
+			</div>
+			<div class="actor-landing__copy">
+				<p class="actor-kicker">EL JUEGO DE LA INDUSTRIA</p>
+				<h1 id="actor-game-title">Construí tu carrera actoral</h1>
+				<p class="actor-landing__lead">
+					Elegí tus papeles, bancate los castings y dejá que el talento y la suerte te lleven desde el primer crédito hasta las grandes noches del cine.
+				</p>
+
+				<div class="actor-difficulty" aria-labelledby="actor-difficulty-title">
+					<div class="actor-section-heading">
+						<p id="actor-difficulty-title">Ritmo de la carrera</p>
+						<span data-difficulty-description>Decisiones cada 2 años · una experiencia equilibrada.</span>
+					</div>
+					<div class="actor-difficulty__options" role="group" aria-label="Elegir ritmo de carrera">
+						<button type="button" class="actor-segment" data-difficulty="intensa" aria-pressed="false">Intensa</button>
+						<button type="button" class="actor-segment actor-segment--active" data-difficulty="normal" aria-pressed="true">Normal</button>
+						<button type="button" class="actor-segment" data-difficulty="expres" aria-pressed="false">Exprés</button>
+					</div>
+				</div>
+
+				<div class="actor-landing__actions">
+					<button type="button" class="actor-button actor-button--primary" data-start-identity>
+						Empezar carrera <span aria-hidden="true">→</span>
+					</button>
+					<a class="actor-button actor-button--ghost" href={assetBase}>Volver al inicio</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="actor-view actor-view--identity" data-view="identity" aria-labelledby="actor-identity-title" hidden>
+			<div class="actor-view-heading">
+				<p class="actor-kicker">PRIMER PLANO</p>
+				<h1 id="actor-identity-title">Definí tu identidad</h1>
+				<p>Antes de que se prenda la cámara, elegí el nombre y el registro con el que vas a salir a buscar tu primer papel.</p>
+			</div>
+
+			<form class="actor-identity" data-identity-form novalidate>
+				<section class="actor-identity__panel actor-identity__panel--credit" aria-labelledby="actor-credit-title">
+					<h2 id="actor-credit-title">Nombre artístico</h2>
+					<div class="actor-credit-card" data-credit-card>
+						<div class="actor-credit-card__topline"><span>FICHA DE TALENTO</span><span>01 / 01</span></div>
+						<div class="actor-credit-card__mark" aria-hidden="true">✦</div>
+						<strong data-preview-name>Tu nombre</strong>
+							<span data-preview-profile>ACTUACIÓN · CAMALEÓNICO</span>
+						<small data-preview-country>🇦🇷 ARG</small>
+					</div>
+					<label class="actor-field" for="actor-stage-name">
+						<span>Nombre que aparece en los créditos</span>
+						<input
+							id="actor-stage-name"
+							name="stageName"
+							type="text"
+							maxlength="24"
+							placeholder="Ej. Juan"
+							autocomplete="nickname"
+							aria-describedby="actor-stage-name-hint actor-stage-name-error"
+							data-stage-name
+						/>
+					</label>
+					<p id="actor-stage-name-hint" class="actor-field__hint">Puede ser tu nombre real o el que te inventes para la marquesina.</p>
+					<p id="actor-stage-name-error" class="actor-field__error" role="alert" hidden>Escribí un nombre para empezar la carrera.</p>
+					<label class="actor-field actor-field--birth-year" for="actor-birth-year">
+						<span>Año de nacimiento</span>
+						<input
+							id="actor-birth-year"
+							name="birthYear"
+							type="number"
+							min="1930"
+							max={currentYear - 18}
+							value="1990"
+							inputmode="numeric"
+							aria-describedby="actor-birth-year-hint actor-birth-year-error"
+							data-birth-year
+						/>
+					</label>
+					<p id="actor-birth-year-hint" class="actor-field__hint">Tu edad marca cuándo arrancan los primeros castings y qué películas pueden aparecer.</p>
+							<p id="actor-birth-year-error" class="actor-field__error" role="alert" hidden>Elegí un año entre 1930 y {currentYear - 18}.</p>
+				</section>
+
+				<section class="actor-identity__panel actor-identity__panel--country" aria-labelledby="actor-country-title">
+					<h2 id="actor-country-title">Nacionalidad</h2>
+					<label class="actor-field actor-field--search" for="actor-country-search">
+						<span class="u-visually-hidden">Buscar país</span>
+						<span class="actor-field__icon" aria-hidden="true">⌕</span>
+						<input id="actor-country-search" type="search" placeholder="Buscar país" autocomplete="off" data-country-search />
+					</label>
+					<div class="actor-country-list" role="listbox" aria-label="Elegir nacionalidad">
+						{
+							countries.map((country) => (
+								<button
+									type="button"
+									class={`actor-country${country.code === 'AR' ? ' actor-country--selected' : ''}`}
+									role="option"
+									aria-selected={country.code === 'AR' ? 'true' : 'false'}
+									data-country={country.code}
+									data-country-name={country.name}
+									data-country-flag={country.flag}
+								>
+									<span aria-hidden="true">{country.flag}</span>
+									<span>{country.name}</span>
+									<span class="actor-country__check" aria-hidden="true">✓</span>
+								</button>
+							))
+						}
+					</div>
+				</section>
+
+				<fieldset class="actor-identity__panel actor-identity__panel--profile">
+					<legend>Tu lugar en el set</legend>
+					<p class="actor-panel-copy">Elegí el oficio con el que vas a entrar al mundo cinematográfico.</p>
+					<div class="actor-profile-options">
+						<label class="actor-profile-option actor-profile-option--selected">
+							<input type="radio" name="profession" value="actor" checked data-profession />
+							<span class="actor-profile-option__body"><strong>Actuación</strong><small>Tu cara va en pantalla</small></span>
+						</label>
+						<label class="actor-profile-option">
+							<input type="radio" name="profession" value="director" data-profession />
+							<span class="actor-profile-option__body"><strong>Dirección</strong><small>Elegís cada plano</small></span>
+						</label>
+						<label class="actor-profile-option">
+							<input type="radio" name="profession" value="assistant" data-profession />
+							<span class="actor-profile-option__body"><strong>Asistencia</strong><small>El set no se cae</small></span>
+						</label>
+						<label class="actor-profile-option">
+							<input type="radio" name="profession" value="producer" data-profession />
+							<span class="actor-profile-option__body"><strong>Producción</strong><small>Hacés que exista</small></span>
+						</label>
+					</div>
+				</fieldset>
+
+				<fieldset class="actor-identity__panel actor-identity__panel--style">
+					<legend>Registro natural</legend>
+					<p class="actor-panel-copy">Como en una posición de cancha, esto modifica qué oportunidades te llegan primero.</p>
+					<div class="actor-profile-options actor-profile-options--style">
+						<label class="actor-profile-option actor-profile-option--selected">
+							<input type="radio" name="profile" value="camaleonico" checked data-profile />
+							<span class="actor-profile-option__body"><strong>Camaleónico</strong><small>Te adaptás a todo</small></span>
+						</label>
+						<label class="actor-profile-option">
+							<input type="radio" name="profile" value="drama" data-profile />
+							<span class="actor-profile-option__body"><strong>Drama</strong><small>Mirada intensa</small></span>
+						</label>
+						<label class="actor-profile-option">
+							<input type="radio" name="profile" value="comedia" data-profile />
+							<span class="actor-profile-option__body"><strong>Comedia</strong><small>Timing natural</small></span>
+						</label>
+						<label class="actor-profile-option">
+							<input type="radio" name="profile" value="accion" data-profile />
+							<span class="actor-profile-option__body"><strong>Acción</strong><small>Cuerpo y presencia</small></span>
+						</label>
+					</div>
+				</fieldset>
+
+				<fieldset class="actor-identity__panel actor-identity__panel--gender">
+					<legend>Presentación</legend>
+					<p class="actor-panel-copy">Elegí cómo aparece tu personaje en los créditos y en las notas de prensa.</p>
+					<div class="actor-profile-options actor-profile-options--gender">
+						<label class="actor-profile-option actor-profile-option--selected">
+							<input type="radio" name="gender" value="masculino" checked data-gender />
+							<span class="actor-profile-option__body"><strong>Masculino</strong><small>Actor, director, productor</small></span>
+						</label>
+						<label class="actor-profile-option">
+							<input type="radio" name="gender" value="femenino" data-gender />
+							<span class="actor-profile-option__body"><strong>Femenino</strong><small>Actriz, directora, productora</small></span>
+						</label>
+					</div>
+				</fieldset>
+
+				<div class="actor-identity__actions">
+					<button type="button" class="actor-button actor-button--ghost" data-back-landing>Volver</button>
+					<button type="submit" class="actor-button actor-button--primary">Confirmar identidad <span aria-hidden="true">→</span></button>
+				</div>
+			</form>
+		</section>
+
+		<section class="actor-view actor-view--career" data-view="career" aria-labelledby="actor-career-title" hidden>
+			<h1 id="actor-career-title" class="u-visually-hidden">Carrera cinematográfica de tu personaje</h1>
+			<div class="actor-career-layout">
+				<div class="actor-career-main">
+					<section class="actor-player-card" aria-label="Estado actual de la carrera">
+						<div class="actor-player-card__level">
+							<span>NIVEL</span>
+							<strong data-player-level>54</strong>
+						</div>
+						<div class="actor-player-card__identity">
+							<div class="actor-player-card__chips">
+								<span data-player-country>🇦🇷 ARG</span>
+								<span data-player-profile>CAMaleónico</span>
+							</div>
+							<strong data-player-name>Tu nombre</strong>
+							<small data-player-project>Buscando primer crédito</small>
+						</div>
+						<div class="actor-player-card__age"><span>EDAD</span><strong data-player-age>18</strong><small data-player-year>2008</small></div>
+						<div class="actor-player-card__cachet"><span>CACHET</span><strong data-player-cachet>US$120K</strong></div>
+					</section>
+
+					<figure class="actor-state-art" data-state-art>
+						<img
+							data-state-art-image
+							src={`${assetBase}images/actor-career/actor-career-struggling.png`}
+							alt="Dos personas resolviendo un rodaje independiente con pocos recursos"
+							width="1536"
+							height="1024"
+							loading="lazy"
+						/>
+						<figcaption data-state-art-caption>Primeros rodajes, luces prestadas y una oportunidad para no soltar.</figcaption>
+					</figure>
+
+					<dl class="actor-stats" aria-label="Estadísticas de la carrera">
+						<div><dt>PELÍCULAS</dt><dd data-player-films>0</dd></div>
+						<div><dt>CRÉDITOS CLAVE</dt><dd data-player-leads>0</dd></div>
+						<div><dt>NOMINACIONES</dt><dd data-player-nominations>0</dd></div>
+					</dl>
+
+					<section class="actor-awards-shelf" aria-label="Premios ganados" data-awards-shelf>
+						<div class="actor-awards-shelf__empty"><span aria-hidden="true">✦</span><span>La vitrina todavía está vacía</span></div>
+					</section>
+
+					<section class="actor-event-panel" aria-labelledby="actor-event-title" data-event-panel>
+						<div class="actor-event-panel__heading">
+							<div>
+								<p class="actor-kicker" data-event-kicker>PRIMERA OPORTUNIDAD</p>
+								<h2 id="actor-event-title" data-event-title>El primer casting</h2>
+								<p data-event-copy>Todo empieza con una llamada que puede parecer chica.</p>
+							</div>
+							<div class="actor-luck" data-player-luck aria-label="Suerte de la carrera"><span aria-hidden="true">✦</span><span><small>SUERTE</small><strong>50%</strong></span></div>
+						</div>
+						<p class="actor-event-result" data-event-result role="status" hidden></p>
+						<div class="actor-choice-grid" data-choice-grid></div>
+					</section>
+
+				</div>
+
+				<aside class="actor-timeline" aria-labelledby="actor-timeline-title">
+					<div class="actor-timeline__heading">
+						<div>
+							<p class="actor-kicker">LÍNEA DE TIEMPO</p>
+							<h2 id="actor-timeline-title">Tu carrera</h2>
+						</div>
+						<span class="actor-timeline__mode" data-timeline-mode>Normal</span>
+					</div>
+					<div class="actor-timeline__columns" aria-hidden="true"><span>EDAD</span><span>PROYECTO</span><span>NIVEL</span><span>PEL.</span><span>PREM.</span></div>
+					<div class="actor-timeline__rows" role="table" aria-label="Historial de carrera" data-timeline-body></div>
+					<div class="actor-timeline__footer"><span class="actor-timeline__dot actor-timeline__dot--past"></span> Hecho <span class="actor-timeline__dot actor-timeline__dot--current"></span> Próximo paso</div>
+
+					<section class="actor-career-log" aria-labelledby="actor-career-log-title" data-career-log>
+						<div class="actor-career-log__heading">
+							<div class="actor-career-log__intro">
+								<p class="actor-kicker">BITÁCORA DE RODAJE</p>
+								<h2 id="actor-career-log-title">Todo lo que pasó en el camino</h2>
+								<p>Las decisiones quedan guardadas acá para que puedas releer cada giro, cada papel y cada golpe de suerte.</p>
+								<div class="actor-career-log__meta"><span data-career-log-count>0 decisiones</span><span>La más reciente aparece primero</span></div>
+							</div>
+							<figure class="actor-career-log__art" aria-hidden="true">
+								<img
+									src={`${assetBase}images/actor-career/actor-career-log.png`}
+									alt=""
+									width="1384"
+									height="1054"
+									loading="lazy"
+								/>
+								<figcaption>NOTAS DE SET</figcaption>
+							</figure>
+						</div>
+						<div class="actor-career-log__body" data-career-log-body aria-live="polite">
+							<div class="actor-career-log__empty" data-career-log-empty>
+								<span aria-hidden="true">✦</span>
+								<strong>Tu primera toma todavía no está escrita.</strong>
+								<p>Elegí una de las dos oportunidades y acá va a quedar el resultado completo.</p>
+							</div>
+						</div>
+					</section>
+				</aside>
+			</div>
+		</section>
+
+		<section class="actor-view actor-view--summary" data-view="summary" aria-labelledby="actor-summary-title" hidden>
+			<div data-summary-content></div>
+		</section>
+	</main>
+</BaseLayout>
+
+<script id="actor-movie-catalog" type="application/json" is:inline set:html={actorMovieCatalogData}></script>
+<script src="../../scripts/actor-career.ts"></script>

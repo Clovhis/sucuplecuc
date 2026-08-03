@@ -74,6 +74,8 @@ const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
 const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`;
 const welcomeCharacters = `${import.meta.env.BASE_URL}images/home/cineposta-bienvenida-personajes.png`;
+const actorCareerGameArt = `${import.meta.env.BASE_URL}images/home/cineposta-simulador-carrera-actor.png`;
+const actorCareerGamePath = `${import.meta.env.BASE_URL}juegos/simulador-carrera-actor/`;
 const UPCOMING_SUGGESTION_TITLE_MAX_CHARS = 40;
 const UPCOMING_SUGGESTION_SYNOPSIS_MAX_CHARS = 170;
 
@@ -260,6 +262,29 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 					decoding="async"
 				/>
 			</div>
+		</section>
+		<section class="home-actor-game fade-up" style="--item-delay: 50ms;" aria-labelledby="home-actor-game-title" data-home-actor-game>
+			<a class="home-actor-game__link" href={actorCareerGamePath}>
+				<div class="home-actor-game__content">
+					<p class="home-actor-game__eyebrow"><span aria-hidden="true">✦</span> Minijuego nuevo</p>
+					<h2 id="home-actor-game-title">Construí tu carrera en el cine</h2>
+					<p class="home-actor-game__copy">
+						Elegí tu oficio y pasá de un rodaje croto a la alfombra roja.
+					</p>
+					<span class="home-actor-game__cta">Jugar al simulador <span aria-hidden="true">→</span></span>
+				</div>
+				<div class="home-actor-game__art" aria-hidden="true">
+					<span class="home-actor-game__art-label">Del primer casting a los premios</span>
+					<img
+						src={actorCareerGameArt}
+						alt=""
+						width="1536"
+						height="1024"
+						loading="lazy"
+						decoding="async"
+					/>
+				</div>
+			</a>
 		</section>
 		{
 			movies.length > 0 ? (
