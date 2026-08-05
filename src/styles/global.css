@@ -808,16 +808,17 @@ img {
 	align-self: stretch;
 	position: relative;
 	min-height: 9.5rem;
-	overflow: hidden;
+	overflow: visible;
 	pointer-events: none;
 }
 
 .home-community-promo__illustration img {
 	position: absolute;
 	inset-block-start: 0;
+	inset-block-end: auto;
 	inset-inline-end: -1.5rem;
-	inline-size: clamp(25rem, 38vw, 31rem);
-	block-size: auto;
+	inline-size: auto;
+	block-size: calc(100% + 0.9rem);
 	max-inline-size: none;
 }
 
@@ -9157,7 +9158,8 @@ img {
 	}
 
 	.home-community-promo__illustration img {
-		inline-size: 17rem;
+		inline-size: auto;
+		block-size: calc(100% + 0.85rem);
 		inset-inline-end: -1.25rem;
 	}
 
@@ -9783,10 +9785,12 @@ img {
 	}
 
 	.home-community-promo__illustration img {
-		inset-block-start: 50%;
+		inset-block-start: auto;
+		inset-block-end: -0.85rem;
 		inset-inline-end: -1.5rem;
 		inline-size: 12.5rem;
-		transform: translateY(-50%);
+		block-size: auto;
+		transform: none;
 	}
 
 	.home-community-promo a {
