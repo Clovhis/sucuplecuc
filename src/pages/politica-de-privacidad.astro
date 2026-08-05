@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBrandLink from '../components/HomeBrandLink.astro';
 import { CONTACT_EMAIL, PRIVACY_PATH, SITE_LANGUAGE, SITE_NAME, SITE_URL } from '../lib/seo';
 
 const pageTitle = `Política de Privacidad | ${SITE_NAME}`;
@@ -27,7 +28,7 @@ const structuredData = [
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<main id="main-content" class="container privacy-page">
 		<div class="page-actions">
-			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+			<HomeBrandLink className="page-action page-action--home" />
 		</div>
 
 		<section class="about-page__hero privacy-page__hero fade-up" style="--item-delay: 0ms;">

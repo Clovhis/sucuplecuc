@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBrandLink from '../components/HomeBrandLink.astro';
 import {
 	CONTACT_EMAIL,
 	CONTACT_PATH,
@@ -18,7 +19,7 @@ const structuredData = createSimplePageStructuredData(CONTACT_PATH, pageTitle, p
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<main id="main-content" class="container about-page">
 		<div class="page-actions">
-			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+			<HomeBrandLink className="page-action page-action--home" />
 		</div>
 
 		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">

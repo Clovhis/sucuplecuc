@@ -93,6 +93,12 @@ img {
 	display: block;
 }
 
+.home-brand-link__image {
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
 :focus-visible {
 	outline: 3px solid var(--focus-ring);
 	outline-offset: 3px;
@@ -6954,6 +6960,15 @@ img {
 	background: rgba(117, 153, 255, 0.1);
 }
 
+.page-action.home-brand-link {
+	min-height: 2.65rem;
+	padding: 0.18rem 0.4rem;
+}
+
+.page-action.home-brand-link .home-brand-link__image {
+	height: 1.9rem;
+}
+
 .postometro-page {
 	position: relative;
 	display: grid;
@@ -10918,6 +10933,15 @@ img {
 	font-size: 0.72rem;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+}
+
+.community-page__home-link {
+	min-height: 2.65rem;
+	padding: 0.18rem 0.35rem;
+}
+
+.community-page__home-link .home-brand-link__image {
+	height: 1.9rem;
 }
 
 .community-page__nav a:hover,

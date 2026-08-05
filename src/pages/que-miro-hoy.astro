@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBrandLink from '../components/HomeBrandLink.astro';
 import {
 	createPostometroCatalogEntries,
 	DEFAULT_POSTOMETRO_ANSWERS,
@@ -110,7 +111,7 @@ const postometroData = serializeJsonForScript({
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<main id="main-content" class="container postometro-page">
 		<div class="page-actions">
-			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Volver al inicio</a>
+			<HomeBrandLink className="page-action page-action--home" />
 		</div>
 
 		<section class="postometro-hero fade-up" style="--item-delay: 0ms;">

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import {
 	getAbsoluteCinemaStickerUrl,
 	getMovieEditorialSummary,
@@ -338,7 +339,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 			<a class="page-action page-action--history" href={import.meta.env.BASE_URL} data-history-back>
 				Volver
 			</a>
-			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Ir al listado</a>
+			<HomeBrandLink className="page-action page-action--home" label="Volver al inicio de Cine Posta" />
 			<a class="page-action" href={getMovieCommunityPath(movie.slug)}>Abrir discusión</a>
 		</div>
 

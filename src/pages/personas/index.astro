@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import { normalizeSearchText } from '../../lib/movies';
 import { getPersonAge, getPersonAgeLabel, getPersonFilmography, getPersonProfiles } from '../../lib/people';
 import { PEOPLE_PATH, createSimplePageStructuredData } from '../../lib/seo';
@@ -109,7 +110,7 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<main id="main-content" class="container people-index">
 		<div class="page-actions">
-			<a class="page-action page-action--home" href={import.meta.env.BASE_URL}>Ir al listado</a>
+			<HomeBrandLink className="page-action page-action--home" label="Volver al inicio de Cine Posta" />
 		</div>
 
 		<section class="people-index__hero fade-up" style="--item-delay: 0ms;">

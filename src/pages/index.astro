@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBrandLink from '../components/HomeBrandLink.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import MovieCard from '../components/MovieCard.astro';
@@ -72,7 +73,6 @@ const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.le
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
-const siteBrandLogo = `${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`;
 const welcomeCharacters = `${import.meta.env.BASE_URL}images/home/cineposta-bienvenida-personajes.png`;
 const actorCareerGameArt = `${import.meta.env.BASE_URL}images/home/cineposta-simulador-carrera-actor.png`;
 const actorCareerGamePath = `${import.meta.env.BASE_URL}juegos/simulador-carrera-actor/`;
@@ -159,16 +159,12 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 					data-movie-search-root
 					aria-label="Buscar en el catálogo"
 				>
-					<a class="site-header__brand" href="/" aria-label="Cine Posta: reiniciar filtros y volver al inicio">
-						<img
-							class="site-header__brand-logo"
-							src={siteBrandLogo}
-							alt="Cine Posta"
-							width="520"
-							height="168"
-							decoding="async"
-						/>
-					</a>
+					<HomeBrandLink
+						className="site-header__brand"
+						imageClassName="site-header__brand-logo"
+						href="/"
+						label="Cine Posta: reiniciar filtros y volver al inicio"
+					/>
 					<section class="movie-search movie-search--top">
 						<label for="movie-search-input" class="movie-search__label u-visually-hidden">
 							Buscar película

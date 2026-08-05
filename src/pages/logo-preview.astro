@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBrandLink from '../components/HomeBrandLink.astro';
 import '../styles/logo-preview.css';
 
 const pageTitle = 'Opciones de logo | Cine Posta';
@@ -39,7 +40,7 @@ const options = [
 <BaseLayout title={pageTitle} description={pageDescription} noindex={true}>
 	<main id="main-content" class="logo-preview container">
 		<div class="page-actions">
-			<a class="page-action page-action--home" href={assetBase}>Volver al inicio</a>
+			<HomeBrandLink className="page-action page-action--home" href={assetBase} />
 		</div>
 
 		<header class="logo-preview__hero">

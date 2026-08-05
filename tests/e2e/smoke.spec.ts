@@ -14,6 +14,21 @@ test('donation invitation is visible without blocking navigation', async ({ page
 	await expect(page.getByRole('link', { name: /^Ver detalle de/i }).first()).toBeVisible();
 });
 
+test('favicon publishes the transparent glasses mark in browser sizes', async ({ page, request }) => {
+	await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+	const iconHrefs = await page.locator('link[rel="icon"]').evaluateAll((links) => links.map((link) => link.getAttribute('href')));
+	expect(iconHrefs).toEqual(expect.arrayContaining(['/favicon.ico', '/favicon.svg', '/favicon-32x32.png', '/favicon-48x48.png', '/favicon-192x192.png']));
+
+	for (const path of ['/favicon.ico', '/favicon.svg', '/favicon.png', '/favicon-32x32.png', '/favicon-48x48.png', '/favicon-192x192.png', '/favicon-512x512.png', '/apple-touch-icon.png']) {
+		const response = await request.get(path);
+		expect(response.ok()).toBeTruthy();
+	}
+
+	const svg = await (await request.get('/favicon.svg')).text();
+	expect(svg).not.toContain('<rect');
+});
+
 test('home page renders the catalog shell', async ({ page }) => {
   const pageErrors: string[] = [];
   page.on('pageerror', (error) => pageErrors.push(error.message));

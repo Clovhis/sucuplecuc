@@ -1,0 +1,29 @@
+---
+interface Props {
+	className?: string;
+	imageClassName?: string;
+	href?: string;
+	label?: string;
+}
+
+const {
+	className = '',
+	imageClassName = '',
+	href = import.meta.env.BASE_URL,
+	label = 'Volver al inicio de Cine Posta',
+} = Astro.props as Props;
+const linkClasses = ['home-brand-link', className].filter(Boolean).join(' ');
+const imageClasses = ['home-brand-link__image', imageClassName].filter(Boolean).join(' ');
+---
+
+<a class={linkClasses} href={href} aria-label={label}>
+	<img
+		class={imageClasses}
+		src={`${import.meta.env.BASE_URL}brand/cineposta-logo-full.png`}
+		alt=""
+		aria-hidden="true"
+		width="520"
+		height="168"
+		decoding="async"
+	/>
+</a>

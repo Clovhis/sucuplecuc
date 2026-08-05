@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBrandLink from '../components/HomeBrandLink.astro';
 import { COMMUNITY_PATH, getMovieCommunityPath } from '../lib/community';
 import { getLatestReviewMovies, getMovies, getPosterUrl } from '../lib/movies';
 import { createSimplePageStructuredData, SITE_NAME } from '../lib/seo';
@@ -19,7 +20,7 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData} allowAds={false}>
 	<main id="main-content" class="container community-page">
 		<nav class="community-page__nav" aria-label="Navegación principal">
-			<a class="community-page__home-link" href={import.meta.env.BASE_URL}>Cine Posta</a>
+			<HomeBrandLink className="community-page__home-link" label="Cine Posta: volver al inicio" />
 			<a class="community-page__current-link" href={COMMUNITY_PATH} aria-current="page">Comunidad</a>
 		</nav>
 		<section class="community-page__hero fade-up" style="--item-delay: 0ms;">

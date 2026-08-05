@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import '../../styles/actor-career.css';
 import { SITE_LANGUAGE, SITE_NAME, SITE_URL } from '../../lib/seo';
 import { getMovies, getPosterUrl } from '../../lib/movies';
@@ -78,9 +79,7 @@ const structuredData = [
 		data-asset-base={assetBase}
 	>
 		<header class="actor-simulator__topbar">
-			<a class="actor-simulator__brand" href={assetBase} aria-label="Volver al inicio de Cine Posta">
-				<img src={`${assetBase}brand/cineposta-logo-full.png`} alt="Cine Posta" width="520" height="168" />
-			</a>
+			<HomeBrandLink className="actor-simulator__brand" href={assetBase} />
 			<div class="actor-simulator__topbar-copy">
 				<span>MINIJUEGOS CINE POSTA</span>
 				<span aria-hidden="true">·</span>

@@ -12,6 +12,10 @@ test('community forum renders safely while it is not configured', async ({ page 
 	await expect(page.getByRole('heading', { name: 'Discusiones recientes' })).toBeVisible();
 	await expect(page.getByRole('heading', { name: 'Código de la sala' })).toBeVisible();
 	await expect(page.locator('.community-discussion-list a').first()).toBeVisible();
+	const homeBrandLink = page.locator('.community-page__home-link');
+	await expect(homeBrandLink).toHaveAttribute('href', '/');
+	await expect(homeBrandLink).toHaveAttribute('aria-label', 'Cine Posta: volver al inicio');
+	await expect(homeBrandLink.locator('img')).toHaveAttribute('src', '/brand/cineposta-logo-full.png');
 	await expect(page.getByRole('link', { name: 'Comunidad' }).first()).toHaveAttribute('href', '/comunidad/');
 	expect(pageErrors).toEqual([]);
 });
