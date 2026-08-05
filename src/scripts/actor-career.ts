@@ -56,6 +56,10 @@ interface MovieOffer {
 	genres: string[];
 	isArgentinian: boolean;
 	awardTypes: string[];
+	isRemake?: boolean;
+	sourceSlug?: string;
+	sourceTitle?: string;
+	sourceYear?: number;
 }
 
 interface SimulationOffer {
@@ -164,6 +168,7 @@ if (root) {
 	const careerLogBody = root.querySelector<HTMLElement>('[data-career-log-body]');
 	const timelineBody = root.querySelector<HTMLElement>('[data-timeline-body]');
 	const awardsShelf = root.querySelector<HTMLElement>('[data-awards-shelf]');
+	const timelineDetails = root.querySelector<HTMLDetailsElement>('[data-timeline-details]');
 	const playerLevel = root.querySelector<HTMLElement>('[data-player-level]');
 	const playerName = root.querySelector<HTMLElement>('[data-player-name]');
 	const playerCountry = root.querySelector<HTMLElement>('[data-player-country]');
@@ -185,31 +190,34 @@ if (root) {
 	const currentYear = new Date().getUTCFullYear();
 	const CAREER_START_AGE = 18;
 	const MIN_BIRTH_YEAR = 1930;
+	const RESULT_READ_DURATION = 2000;
+	const MAX_REMAKES_PER_SESSION = 2;
+	const REMAKE_MINIMUM_SOURCE_AGE = 15;
 
 	const difficultyConfig: Record<Difficulty, DifficultyConfig> = {
 		intensa: {
 			label: 'Intensa',
-			step: 1,
+			step: 2,
 			maxAge: 60,
 			peakLevel: 88,
 			retirementLevel: 64,
-			description: 'Decisiones cada año · más giros, más chances de meter la pata.',
+			description: 'Decisiones cada 2 años · más giros, más chances de meter la pata.',
 		},
 		normal: {
 			label: 'Normal',
-			step: 2,
+			step: 4,
 			maxAge: 60,
 			peakLevel: 87,
 			retirementLevel: 63,
-			description: 'Decisiones cada 2 años · una experiencia equilibrada.',
+			description: 'Decisiones cada 4 años · una experiencia equilibrada.',
 		},
 		expres: {
 			label: 'Exprés',
-			step: 4,
+			step: 8,
 			maxAge: 60,
 			peakLevel: 86,
 			retirementLevel: 61,
-			description: 'Decisiones cada 4 años · una carrera en pocos minutos.',
+			description: 'Decisiones cada 8 años · una carrera en pocos minutos.',
 		},
 	};
 
@@ -943,21 +951,87 @@ if (root) {
 		return 1 + Math.floor(Math.random() * 3);
 	}
 
-	function getUsedMovieSlugs(currentState: CareerState): Set<string> {
-		return new Set(currentState.history.flatMap((entry) => (entry.movie?.slug ? [entry.movie.slug] : [])));
+	function getMovieSourceSlug(movie: MovieOffer): string {
+		return movie.sourceSlug ?? movie.slug;
+	}
+
+	function getMovieSourceTitle(movie: MovieOffer): string {
+		return movie.sourceTitle ?? (movie.isRemake ? movie.title.replace(/^Remake de\s+/i, '') : movie.title);
+	}
+
+	function getMovieSourceTitleKey(movie: MovieOffer): string {
+		return getMovieSourceTitle(movie).replace(/\s+/g, ' ').trim().toLocaleLowerCase('es-AR');
+	}
+
+	function getUsedMovieKeys(currentState: CareerState): Set<string> {
+		return new Set(
+			currentState.history.flatMap((entry) => (entry.movie ? [getMovieSourceSlug(entry.movie), getMovieSourceTitleKey(entry.movie)] : [])),
+		);
+	}
+
+	function getRemakesUsed(currentState: CareerState): number {
+		return currentState.history.filter((entry) => entry.movie?.isRemake).length;
+	}
+
+	function uniqueMovieSources(movies: MovieOffer[]): MovieOffer[] {
+		const seenTitles = new Set<string>();
+		return movies.filter((movie) => {
+			const titleKey = getMovieSourceTitleKey(movie);
+			if (seenTitles.has(titleKey)) return false;
+			seenTitles.add(titleKey);
+			return true;
+		});
+	}
+
+	function createRemakeOffer(source: MovieOffer, currentState: CareerState): MovieOffer {
+		const sourceTitle = getMovieSourceTitle(source);
+		return {
+			...source,
+			slug: `remake-${source.slug}-${currentState.currentIndex}`,
+			title: `Remake de ${sourceTitle}`,
+			year: getCareerYear(currentState),
+			director: 'un equipo creativo nuevo',
+			isRemake: true,
+			sourceSlug: getMovieSourceSlug(source),
+			sourceTitle,
+			sourceYear: source.sourceYear ?? source.year,
+		};
 	}
 
 	function getAvailableMovieCandidates(currentState: CareerState): MovieOffer[] {
 		const careerYear = getCareerYear(currentState);
-		const usedSlugs = getUsedMovieSlugs(currentState);
-		const availableMovies = movieCatalog.filter((movie) => movie.year <= careerYear && !usedSlugs.has(movie.slug));
-		if (availableMovies.length === 0) return [];
-		const exactYearMovies = availableMovies.filter((movie) => movie.year === careerYear);
-		const latestAvailableYear = Math.max(...availableMovies.map((movie) => movie.year));
+		const usedMovieKeys = getUsedMovieKeys(currentState);
+		const isUsed = (movie: MovieOffer): boolean => usedMovieKeys.has(getMovieSourceSlug(movie)) || usedMovieKeys.has(getMovieSourceTitleKey(movie));
+		const availableOriginals = movieCatalog.filter((movie) => movie.year <= careerYear && !isUsed(movie));
+		const exactYearMovies = availableOriginals.filter((movie) => movie.year === careerYear);
+		const latestAvailableYear = availableOriginals.length > 0 ? Math.max(...availableOriginals.map((movie) => movie.year)) : null;
 		const targetMovies = exactYearMovies.length > 0
 			? exactYearMovies
-			: availableMovies.filter((movie) => movie.year === latestAvailableYear);
-		return targetMovies.sort((left, right) => getMovieMatchScore(right, currentState, careerYear) - getMovieMatchScore(left, currentState, careerYear));
+			: latestAvailableYear === null ? [] : availableOriginals.filter((movie) => movie.year === latestAvailableYear);
+		const originalCandidates = uniqueMovieSources(targetMovies).sort(
+			(left, right) => getMovieMatchScore(right, currentState, careerYear) - getMovieMatchScore(left, currentState, careerYear),
+		);
+		const originalTitles = new Set(originalCandidates.map(getMovieSourceTitleKey));
+		const remakesRemaining = Math.max(0, MAX_REMAKES_PER_SESSION - getRemakesUsed(currentState));
+		const remakesNeeded = Math.max(0, 2 - originalCandidates.length);
+		const remakeCandidates = remakesRemaining > 0 && remakesNeeded > 0
+			? uniqueMovieSources(
+					movieCatalog
+						.filter(
+							(source) =>
+								!isUsed(source)
+								&& !originalTitles.has(getMovieSourceTitleKey(source))
+								&& source.year <= careerYear - REMAKE_MINIMUM_SOURCE_AGE,
+						)
+						.map((source) => createRemakeOffer(source, currentState)),
+				)
+					.sort((left, right) => getMovieMatchScore(right, currentState, careerYear) - getMovieMatchScore(left, currentState, careerYear))
+			: [];
+
+		return [
+			...originalCandidates.slice(0, 2),
+			...remakeCandidates.slice(0, Math.min(remakesRemaining, remakesNeeded)),
+		].slice(0, 4);
 	}
 
 	function hasMovieAvailable(currentState: CareerState): boolean {
@@ -1000,9 +1074,24 @@ if (root) {
 	let selectedProfile: Profile = 'camaleonico';
 	let state: CareerState | null = null;
 	let transitionTimer: number | undefined;
+	let casinoTimer: number | undefined;
 
 	function query<T extends Element>(selector: string): T | null {
 		return root?.querySelector<T>(selector) ?? null;
+	}
+
+	function stopCasinoRoll(): void {
+		if (casinoTimer !== undefined) {
+			window.clearInterval(casinoTimer);
+			casinoTimer = undefined;
+		}
+		root?.querySelectorAll<HTMLElement>('.actor-choice-card__outcome--casino-active').forEach((element) => {
+			element.classList.remove('actor-choice-card__outcome--casino-active');
+		});
+		root?.querySelectorAll<HTMLElement>('.actor-choice-card--rolling').forEach((element) => {
+			element.classList.remove('actor-choice-card--rolling');
+		});
+		eventResult?.classList.remove('actor-event-result--casino-good', 'actor-event-result--casino-bad');
 	}
 
 	function escapeHtml(value: string): string {
@@ -1234,8 +1323,14 @@ if (root) {
 		return outcome.levelDelta < 0 || score < 0 ? ' actor-choice-card__outcome--negative' : score > 0 ? ' actor-choice-card__outcome--positive' : '';
 	}
 
+	function isPositiveOutcome(outcome: Outcome): boolean {
+		const tone = outcomeTone(outcome);
+		return tone.includes('actor-choice-card__outcome--positive')
+			|| (!tone.includes('actor-choice-card__outcome--negative') && outcome.levelDelta >= 0);
+	}
+
 	function normalizeMovieText(movie: MovieOffer): string {
-		return [movie.title, movie.category, ...movie.genres].join(' ').toLocaleLowerCase('es-AR');
+		return [movie.title, movie.sourceTitle ?? '', movie.category, ...movie.genres].join(' ').toLocaleLowerCase('es-AR');
 	}
 
 	function hashText(value: string): number {
@@ -1334,10 +1429,17 @@ if (root) {
 	}
 
 	function showView(viewName: string): void {
+		root!.dataset.activeView = viewName;
 		views.forEach((view) => {
 			view.hidden = view.dataset.view !== viewName;
 		});
+		if (viewName === 'career') syncTimelineDetails();
 		window.scrollTo({ top: 0, behavior: 'auto' });
+	}
+
+	function syncTimelineDetails(): void {
+		if (!timelineDetails) return;
+		timelineDetails.open = !window.matchMedia('(max-width: 1020px)').matches;
 	}
 
 	function updateDifficultyUi(): void {
@@ -1509,6 +1611,26 @@ if (root) {
 				</div>`;
 			})
 			.join('');
+		requestAnimationFrame(() => scrollTimelineToCurrent());
+	}
+
+	function scrollTimelineToCurrent(): void {
+		if (!timelineBody) return;
+		const currentRow = timelineBody.querySelector<HTMLElement>('.actor-timeline__row--current');
+		if (!currentRow) return;
+		const maxScrollTop = Math.max(0, timelineBody.scrollHeight - timelineBody.clientHeight);
+		const targetTop = clamp(currentRow.offsetTop - (timelineBody.clientHeight - currentRow.offsetHeight) / 2, 0, maxScrollTop);
+		const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+		timelineBody.scrollTo({ top: targetTop, behavior });
+	}
+
+	function scrollCareerLogToLatest(): void {
+		if (!careerLogBody) return;
+		requestAnimationFrame(() => {
+			const maxScrollTop = Math.max(0, careerLogBody.scrollHeight - careerLogBody.clientHeight);
+			const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+			careerLogBody.scrollTo({ top: maxScrollTop, behavior });
+		});
 	}
 
 	function renderCareerLog(currentState: CareerState): void {
@@ -1523,8 +1645,6 @@ if (root) {
 		}
 
 		careerLogBody.innerHTML = `<ol class="actor-career-log__list" aria-label="Decisiones tomadas">${currentState.history
-			.slice()
-			.reverse()
 			.map((entry) => {
 				const entryType = entry.simulation ? (entry.simulation.slug.startsWith('evento-') ? 'EVENTO DE OFICIO' : 'AÑO DE PREPARACIÓN') : entry.movie ? 'PELÍCULA' : 'GIRO DE CARRERA';
 				const awardCopy = entry.award ? `<span class="actor-career-log__award">✦ ${escapeHtml(awardDefinitions[entry.award].short)}</span>` : '';
@@ -1541,6 +1661,7 @@ if (root) {
 				</li>`;
 			})
 			.join('')}</ol>`;
+		scrollCareerLogToLatest();
 	}
 
 	function renderChoices(currentState: CareerState, event: CareerEvent): void {
@@ -1557,14 +1678,17 @@ if (root) {
 					const workCategory = work?.category ?? 'Preparación';
 					const workPoster = work?.posterUrl ?? `${assetBase}posters/poster-no-disponible.svg`;
 					const workDetail = movie
-						? `${movie.year === careerYear ? '' : `Película de ${movie.year} · `}Dirige ${movie.director}`
+						? movie.isRemake
+							? `Remake ficticio de ${movie.sourceTitle} · poster original de ${movie.sourceYear}`
+							: `${movie.year === careerYear ? '' : `Película de ${movie.year} · `}Dirige ${movie.director}`
 						: simulation?.detail ?? 'Un año para mejorar tu oficio.';
 					const simulationClass = kind === 'event' ? ' actor-choice-card--simulation actor-choice-card--event' : '';
+					const remakeClass = movie?.isRemake ? ' actor-choice-card--remake' : '';
 					const cardTitle = kind === 'event' ? `Evento: ${workTitle}` : `${getProfessionAction(currentState, choiceIndex)}: ${workTitle}`;
 					const workVisual = kind === 'event'
 						? `<span class="actor-choice-card__poster actor-choice-card__poster--event" aria-hidden="true">${choice.icon}</span>`
 						: `<img class="actor-choice-card__poster" src="${escapeHtml(workPoster)}" alt="" width="68" height="96" loading="lazy" />`;
-					return `<button type="button" class="actor-choice-card${simulationClass}" data-choice-index="${choiceIndex}" data-offer-kind="${kind}" data-offer-year="${workYear}" data-offer-slug="${escapeHtml(work?.slug ?? '')}">
+					return `<button type="button" class="actor-choice-card${simulationClass}${remakeClass}" data-choice-index="${choiceIndex}" data-offer-kind="${kind}" data-offer-year="${workYear}" data-offer-slug="${escapeHtml(work?.slug ?? '')}">
 					<span class="actor-choice-card__top"><span class="actor-choice-card__icon" aria-hidden="true">${choice.icon}</span><span class="actor-choice-card__risk">${escapeHtml(choice.risk)}</span></span>
 					<span class="actor-choice-card__art actor-choice-card__art--${artIndex}" aria-hidden="true"></span>
 					<span class="actor-choice-card__movie">${workVisual}<span class="actor-choice-card__movie-copy"><strong>${escapeHtml(cardTitle)}</strong><span class="actor-choice-card__movie-meta">${workYear} · ${escapeHtml(workCategory)}</span><span class="actor-choice-card__copy">${escapeHtml(choice.copy)}</span><small>${escapeHtml(workDetail)}</small></span></span>
@@ -1581,12 +1705,13 @@ if (root) {
 
 	function renderEvent(currentState: CareerState): void {
 		const event = getCurrentEvent(currentState);
+		stopCasinoRoll();
 		if (eventKicker) eventKicker.textContent = event.kicker;
 		if (eventTitle) eventTitle.textContent = event.title;
 		if (eventCopy) eventCopy.textContent = event.copy;
 		if (eventResult) {
 			eventResult.hidden = true;
-			eventResult.classList.remove('actor-event-result--bad');
+			eventResult.classList.remove('actor-event-result--good', 'actor-event-result--bad');
 			eventResult.classList.remove('actor-event-result--rolling');
 			eventResult.textContent = '';
 		}
@@ -1611,12 +1736,21 @@ if (root) {
 		finishCareer();
 	}
 
-	function resolveOutcome(choice: Choice, currentState: CareerState): Outcome {
-		if (choice.outcomes.length === 1) return choice.outcomes[0];
-		const firstOutcome = choice.outcomes[0];
+	function getOutcomeChance(choice: Choice, currentState: CareerState): number {
+		if (choice.outcomes.length < 2) return 100;
 		const luckBias = (currentState.luck - 50) * 0.18;
-		const adjustedChance = clamp(firstOutcome.chance + luckBias, 8, 92);
-		return Math.random() * 100 <= adjustedChance ? firstOutcome : choice.outcomes[1];
+		return clamp(choice.outcomes[0].chance + luckBias, 8, 92);
+	}
+
+	function getGreenChance(choice: Choice, currentState: CareerState): number {
+		if (choice.outcomes.length < 2) return isPositiveOutcome(choice.outcomes[0]) ? 100 : 0;
+		const firstOutcomeChance = getOutcomeChance(choice, currentState);
+		return isPositiveOutcome(choice.outcomes[0]) ? firstOutcomeChance : 100 - firstOutcomeChance;
+	}
+
+	function resolveOutcome(choice: Choice, currentState: CareerState, roll = Math.random()): Outcome {
+		if (choice.outcomes.length === 1) return choice.outcomes[0];
+		return roll * 100 <= getOutcomeChance(choice, currentState) ? choice.outcomes[0] : choice.outcomes[1];
 	}
 
 	function applyOutcome(outcome: Outcome, currentState: CareerState): Outcome {
@@ -1645,6 +1779,7 @@ if (root) {
 
 	function finishCareer(): void {
 		if (!state) return;
+		stopCasinoRoll();
 		state.finished = true;
 		state.highScoreStatus = 'saving';
 		updateHighScoreUi(state);
@@ -1654,7 +1789,7 @@ if (root) {
 		if (eventCopy) eventCopy.textContent = 'La pantalla se apaga, pero queda todo lo que elegiste en el camino.';
 		if (eventResult) {
 			eventResult.hidden = false;
-			eventResult.classList.remove('actor-event-result--bad');
+			eventResult.classList.remove('actor-event-result--good', 'actor-event-result--bad', 'actor-event-result--rolling');
 			eventResult.textContent = `${state.name} termina con nivel ${state.level}, ${state.films} películas y ${state.awards.length} premio${state.awards.length === 1 ? '' : 's'}.`;
 		}
 		if (choiceGrid) {
@@ -1664,7 +1799,7 @@ if (root) {
 		renderTimeline(state);
 	}
 
-	function selectChoice(choiceIndex: number): void {
+function selectChoice(choiceIndex: number): void {
 		if (!state || state.finished) return;
 		const isFinalTurn = state.currentIndex >= state.ages.length - 1;
 		const event = getCurrentEvent(state);
@@ -1672,27 +1807,53 @@ if (root) {
 		if (!offerChoice) return;
 		const { choice, movie, simulation } = offerChoice;
 		const project = movie?.title ?? simulation?.title ?? 'Año de preparación';
-		const resolvedOutcome = resolveOutcome(choice, state);
-		const outcome = { ...resolvedOutcome, project };
-		const choiceButtons = Array.from(root!.querySelectorAll<HTMLButtonElement>('[data-choice-index]'));
+		const outcomeRoll = Math.random();
+		const resolvedOutcome = resolveOutcome(choice, state, outcomeRoll);
+		const greenChance = getGreenChance(choice, state);
+  const choiceButtons = Array.from(root!.querySelectorAll<HTMLButtonElement>('[data-choice-index]'));
+		const selectedChoiceButton = choiceButtons.find((button) => Number(button.dataset.choiceIndex) === choiceIndex);
 		choiceButtons.forEach((button) => {
 			button.disabled = true;
 		});
-		choiceGrid?.classList.add('actor-choice-grid--rolling');
+		stopCasinoRoll();
+		selectedChoiceButton?.classList.add('actor-choice-card--rolling');
 		eventPanel?.classList.add('actor-event-panel--rolling');
+		const outcomeElements = Array.from(selectedChoiceButton?.querySelectorAll<HTMLElement>('.actor-choice-card__outcome') ?? []);
+		let casinoFrame = 0;
+		const pulseCasino = (forcedGood?: boolean): void => {
+			const showGood = forcedGood ?? Math.random() * 100 < greenChance;
+			const candidates = outcomeElements.filter((element) => element.classList.contains(showGood ? 'actor-choice-card__outcome--positive' : 'actor-choice-card__outcome--negative'));
+			const activeElement = candidates[Math.floor(Math.random() * candidates.length)] ?? outcomeElements[casinoFrame % Math.max(1, outcomeElements.length)];
+			outcomeElements.forEach((element) => element.classList.remove('actor-choice-card__outcome--casino-active'));
+			activeElement?.classList.add('actor-choice-card__outcome--casino-active');
+			if (eventResult) {
+				eventResult.classList.toggle('actor-event-result--casino-good', showGood);
+				eventResult.classList.toggle('actor-event-result--casino-bad', !showGood);
+				eventResult.textContent = showGood ? '🎰 VERDE · el destino te sonríe…' : '🎰 ROJO · todo puede caer…';
+			}
+			casinoFrame += 1;
+		};
 		if (eventResult) {
 			eventResult.hidden = false;
-			eventResult.classList.remove('actor-event-result--bad');
+			eventResult.classList.remove('actor-event-result--good', 'actor-event-result--bad', 'actor-event-result--casino-good', 'actor-event-result--casino-bad');
 			eventResult.classList.add('actor-event-result--rolling');
-			eventResult.textContent = '🎰 La suerte está rodando…';
 		}
+		pulseCasino();
+		casinoTimer = window.setInterval(pulseCasino, 260);
 		if (transitionTimer) window.clearTimeout(transitionTimer);
 		transitionTimer = window.setTimeout(() => {
-			if (!state) return;
+			if (!state) {
+				stopCasinoRoll();
+				return;
+			}
+			pulseCasino(isPositiveOutcome(resolvedOutcome));
+			stopCasinoRoll();
+			const outcome = { ...resolvedOutcome, project };
 			const appliedOutcome = applyOutcome(outcome, state);
 			const resultText = describeResult(choice, appliedOutcome, state);
 			if (eventResult) {
 				eventResult.classList.remove('actor-event-result--rolling');
+				eventResult.classList.toggle('actor-event-result--good', appliedOutcome.levelDelta >= 0);
 				eventResult.classList.toggle('actor-event-result--bad', appliedOutcome.levelDelta < 0);
 				eventResult.textContent = resultText;
 			}
@@ -1720,12 +1881,12 @@ if (root) {
 			renderCareerLog(state);
 			if (choice.retire || isFinalTurn) {
 				state.currentIndex = state.ages.length;
-				transitionTimer = window.setTimeout(finishCareer, 560);
+				transitionTimer = window.setTimeout(finishCareer, RESULT_READ_DURATION);
 				return;
 			}
 			state.currentIndex += 1;
-			transitionTimer = window.setTimeout(renderCareer, 460);
-		}, 820);
+			transitionTimer = window.setTimeout(renderCareer, RESULT_READ_DURATION);
+		}, 1800);
 	}
 
 	function renderSummary(): void {
@@ -1767,6 +1928,7 @@ if (root) {
 
 	function restartGame(): void {
 		if (transitionTimer) window.clearTimeout(transitionTimer);
+		stopCasinoRoll();
 		state = null;
 		selectedDifficulty = 'normal';
 		selectedCountry = { code: 'AR', name: 'Argentina', flag: 'ar.svg' };
@@ -1916,5 +2078,18 @@ if (root) {
 
 	updateDifficultyUi();
 	updateIdentityPreview();
+	root.dataset.activeView = 'landing';
+	syncTimelineDetails();
+	const timelineMediaQuery = window.matchMedia('(max-width: 1020px)');
+	timelineDetails?.addEventListener('toggle', () => {
+		if (!timelineDetails.open) return;
+		requestAnimationFrame(() => {
+			scrollTimelineToCurrent();
+			scrollCareerLogToLatest();
+		});
+	});
+	if (typeof timelineMediaQuery.addEventListener === 'function') {
+		timelineMediaQuery.addEventListener('change', syncTimelineDetails);
+	}
 	void refreshHighScores();
 }

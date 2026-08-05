@@ -66,9 +66,15 @@ test.describe('simulador de carrera cinematográfica', () => {
 		await expect(page.locator('.actor-choice-card__art')).toHaveCount(2);
 		await expect(page.locator('.actor-choice-card__poster')).toHaveCount(2);
 		await expect(page.locator('.actor-choice-card__outcome--negative')).toHaveCount(2);
-		await expect(page.locator('[data-career-log-empty]')).toBeVisible();
 		await expect(page.locator('[data-career-log-count]')).toHaveText('0 decisiones');
-		await expect(page.locator('.actor-timeline [data-career-log]')).toBeVisible();
+		const timelineDetails = page.locator('[data-timeline-details]');
+		const shortViewport = await page.evaluate(() => window.innerHeight <= 768);
+		if (!shortViewport) await expect(page.locator('[data-career-log-empty]')).toBeVisible();
+		if ((page.viewportSize()?.width ?? 0) <= 1020 && !shortViewport) {
+			await expect(timelineDetails).not.toHaveAttribute('open', '');
+			await page.locator('[data-timeline-details] > summary').click();
+		}
+		if (!shortViewport) await expect(page.locator('.actor-timeline [data-career-log]')).toBeVisible();
 
 		const selectedMovieSlugs = new Set<string>();
 		let sawMixedTurn = false;
@@ -128,16 +134,55 @@ test.describe('simulador de carrera cinematográfica', () => {
 	});
 
 	test('muestra el top 10 Arcade en la pantalla de inicio', async ({ page }) => {
+		const viewport = page.viewportSize();
+		if (viewport) await page.setViewportSize({ width: viewport.width, height: Math.max(viewport.height, 844) });
 		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
 
 		const board = page.locator('[data-high-score-board]').first();
 		await expect(board).toBeVisible();
 		await expect(board.getByRole('heading', { name: 'Salón de la fama' })).toBeVisible();
+		await board.locator('summary').click();
 		await expect(board.locator('[data-high-score-list] [data-high-score-rank]')).toHaveCount(1);
 		await expect(board.locator('[data-high-score-list]')).toContainText('Ada Arcade');
 		await expect(board.locator('[data-high-score-list]')).toContainText('54.321');
 		const dimensions = await page.evaluate(() => ({ viewport: window.innerWidth, document: document.documentElement.scrollWidth }));
 		expect(dimensions.document).toBeLessThanOrEqual(dimensions.viewport + 1);
+	});
+
+	test('mantiene la pantalla inicial contenida sin scroll vertical', async ({ page }) => {
+		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+		await page.waitForFunction(() => {
+			const game = document.querySelector('[data-actor-simulator]');
+			const hasCareerStylesheet = Array.from(document.styleSheets).some((sheet) =>
+				sheet.href?.includes('actor-career') || sheet.href?.includes('simulador-carrera-actor'),
+			);
+			return game?.getAttribute('data-active-view') === 'landing' && hasCareerStylesheet;
+		});
+
+		const dimensions = await page.evaluate(() => ({
+			viewport: window.innerHeight,
+			frame: document.querySelector('[data-actor-simulator]')?.getBoundingClientRect(),
+			landing: document.querySelector('.actor-landing')?.getBoundingClientRect().bottom ?? 0,
+		}));
+		expect(dimensions.frame?.bottom ?? 0).toBeLessThanOrEqual(dimensions.viewport + 1);
+		expect(dimensions.landing).toBeLessThanOrEqual(dimensions.viewport + 1);
+	});
+
+	test('mantiene el tablero jugable dentro del viewport', async ({ page }) => {
+		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
+		await page.getByRole('button', { name: /Empezar carrera/i }).click();
+		await page.getByLabel(/Nombre que aparece en los créditos/i).fill('Tablero Compacto');
+		await page.getByLabel(/Año de nacimiento/i).fill('1990');
+		await page.getByRole('button', { name: /Confirmar identidad/i }).click();
+		await expect(page.locator('[data-choice-index]')).toHaveCount(2);
+
+		const dimensions = await page.evaluate(() => ({
+			viewport: window.innerHeight,
+			career: document.querySelector('.actor-career-layout')?.getBoundingClientRect(),
+			frame: document.querySelector('[data-actor-simulator]')?.getBoundingClientRect(),
+		}));
+		expect(dimensions.career?.bottom ?? 0).toBeLessThanOrEqual(dimensions.viewport + 1);
+		expect(dimensions.frame?.bottom ?? 0).toBeLessThanOrEqual(dimensions.viewport + 1);
 	});
 
 	test('el modo normal tiene pico acotado y descenso antes del retiro', async ({ page }, testInfo) => {

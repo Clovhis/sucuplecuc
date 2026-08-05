@@ -2696,3 +2696,1149 @@
 		transition: none;
 	}
 }
+
+/* Compact arcade stage: keep the active turn in one viewport. */
+.actor-high-score {
+	padding: 0;
+}
+
+.actor-high-score--summary {
+	padding: clamp(1rem, 3vw, 1.4rem);
+}
+
+.actor-high-score__summary {
+	display: flex;
+	align-items: center;
+	gap: 0.7rem;
+	padding: 0.85rem 1rem;
+	cursor: pointer;
+	list-style: none;
+}
+
+.actor-high-score__summary::-webkit-details-marker,
+.actor-timeline__heading::-webkit-details-marker {
+	display: none;
+}
+
+.actor-high-score__heading {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.actor-high-score__toggle {
+	display: grid;
+	place-items: center;
+	flex: 0 0 auto;
+	width: 1.8rem;
+	height: 1.8rem;
+	border: 1px solid rgba(246, 198, 78, 0.35);
+	border-radius: 50%;
+	background: rgba(246, 198, 78, 0.08);
+	color: var(--actor-gold);
+	font-family: var(--font-mono);
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.actor-high-score[open] .actor-high-score__toggle {
+	font-size: 0;
+}
+
+.actor-high-score[open] .actor-high-score__toggle::before {
+	content: '−';
+	font-size: 1rem;
+}
+
+.actor-high-score__body {
+	padding: 0 1rem 0.95rem;
+}
+
+.actor-simulator[data-active-view='career'] {
+	padding-block-end: 0.75rem;
+}
+
+.actor-simulator[data-active-view='landing'] {
+	padding-block-end: 0.75rem;
+}
+
+.actor-simulator + .site-footer {
+	display: none;
+}
+
+.actor-landing {
+	min-height: 31rem;
+}
+
+.actor-landing__art {
+	min-height: 31rem;
+}
+
+.actor-landing__copy {
+	padding-block: 2rem;
+}
+
+.actor-landing__copy h1 {
+	font-size: clamp(2.7rem, 4.5vw, 4rem);
+}
+
+.actor-landing__lead {
+	margin-top: 0.95rem;
+	line-height: 1.5;
+}
+
+.actor-difficulty {
+	margin-top: 1.25rem;
+}
+
+.actor-landing__actions {
+	margin-top: 1.25rem;
+}
+
+.actor-career-layout {
+	min-height: 32rem;
+	height: min(42rem, calc(100svh - 11rem));
+}
+
+.actor-career-main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
+}
+
+.actor-player-card {
+	flex: 0 0 auto;
+	min-height: 6.1rem;
+	padding: 0.58rem;
+}
+
+.actor-state-art {
+	display: none;
+}
+
+.actor-stats {
+	flex: 0 0 auto;
+	margin-top: 0.55rem;
+}
+
+.actor-awards-shelf {
+	flex: 0 0 auto;
+	min-height: 3.2rem;
+	margin-top: 0.1rem;
+}
+
+.actor-event-panel {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	min-height: 0;
+	margin-top: 0.75rem;
+	padding: 0.85rem;
+	overflow: hidden;
+}
+
+.actor-event-panel__heading > div {
+	min-width: 0;
+}
+
+.actor-event-panel h2 {
+	font-size: clamp(1.15rem, 2vw, 1.5rem);
+}
+
+.actor-choice-grid {
+	display: grid;
+	flex: 1 1 auto;
+	min-height: 0;
+	gap: 0.7rem;
+	margin-top: 0.8rem;
+}
+
+.actor-choice-card {
+	height: 100%;
+	min-height: 0;
+	padding: 0.8rem;
+}
+
+.actor-choice-card__top {
+	margin-bottom: 0.5rem;
+}
+
+.actor-choice-card__icon {
+	width: 1.7rem;
+	height: 1.7rem;
+	font-size: 0.9rem;
+}
+
+.actor-choice-card__art {
+	aspect-ratio: 16 / 6;
+	margin-bottom: 0.6rem;
+}
+
+.actor-choice-card__movie {
+	grid-template-columns: 3.5rem minmax(0, 1fr);
+	gap: 0.55rem;
+}
+
+.actor-choice-card__poster {
+	width: 3.5rem;
+	height: 5rem;
+}
+
+.actor-choice-card__movie-copy strong {
+	font-size: 0.86rem;
+}
+
+.actor-choice-card__movie-copy small,
+.actor-choice-card__copy {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.actor-choice-card__copy {
+	margin-top: 0.25rem;
+	font-size: 0.72rem;
+	line-height: 1.3;
+}
+
+.actor-choice-card__outcomes {
+	gap: 0.25rem;
+	margin-top: 0.7rem;
+}
+
+.actor-choice-card__outcome {
+	padding: 0.38rem 0.48rem;
+	font-size: 0.64rem;
+}
+
+.actor-timeline {
+	height: 100%;
+	min-height: 0;
+	padding: 0.8rem;
+	overflow: hidden;
+}
+
+.actor-timeline__details {
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
+	align-content: stretch;
+	min-height: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.actor-timeline__heading {
+	display: flex;
+	flex: 0 0 auto;
+	align-items: flex-start;
+	margin-bottom: 0.6rem;
+	cursor: pointer;
+	list-style: none;
+}
+
+.actor-timeline__heading::after {
+	content: '−';
+	display: grid;
+	place-items: center;
+	width: 1.45rem;
+	height: 1.45rem;
+	margin-inline-start: 0.2rem;
+	border: 1px solid rgba(192, 132, 252, 0.3);
+	border-radius: 50%;
+	color: var(--actor-purple-bright);
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	line-height: 1;
+}
+
+.actor-timeline__details:not([open]) .actor-timeline__heading {
+	margin-bottom: 0;
+}
+
+.actor-timeline__details:not([open]) .actor-timeline__heading::after {
+	content: '+';
+}
+
+.actor-timeline__content {
+	display: grid;
+	grid-template-rows: auto minmax(7rem, 0.8fr) auto minmax(11rem, 1.2fr);
+	gap: 0.55rem 0;
+	min-height: 0;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+.actor-high-score:not([open]) > .actor-high-score__body {
+	display: none;
+}
+
+.actor-timeline__rows {
+	flex: 1 1 42%;
+	min-height: 5rem;
+	overflow-y: auto;
+	padding-inline-end: 0.18rem;
+	scrollbar-color: rgba(192, 132, 252, 0.5) transparent;
+}
+
+.actor-timeline__row {
+	min-height: 2.45rem;
+	padding-block: 0.25rem;
+}
+
+.actor-timeline__footer {
+	flex: 0 0 auto;
+	margin-top: 0.55rem;
+}
+
+.actor-career-log {
+	display: flex;
+	flex: 1 1 58%;
+	flex-direction: column;
+	min-height: 0;
+	margin-top: 0.7rem;
+	padding: 0.8rem;
+	overflow: hidden;
+}
+
+.actor-career-log__heading {
+	flex: 0 0 auto;
+	grid-template-columns: minmax(0, 1fr) minmax(6rem, 7rem);
+	gap: 0.6rem;
+}
+
+.actor-career-log h2 {
+	font-size: 1.05rem;
+}
+
+.actor-career-log__intro > p:not(.actor-kicker) {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.actor-career-log__art,
+.actor-career-log__art img {
+	min-height: 0;
+	height: 6rem;
+}
+
+.actor-career-log__body {
+	flex: 1 1 auto;
+	min-height: 0;
+	max-height: none;
+	margin-top: 0.6rem;
+	overflow-y: auto;
+}
+
+@media (max-width: 1020px) {
+	.actor-career-layout {
+		height: auto;
+		min-height: 0;
+	}
+
+	.actor-career-main {
+		height: auto;
+		min-height: min(42rem, calc(100svh - 11rem));
+	}
+
+	.actor-timeline {
+		height: auto;
+		overflow: visible;
+	}
+
+	.actor-timeline__details {
+		height: auto;
+	}
+
+	.actor-timeline__content {
+		height: 36rem;
+	}
+}
+
+@media (max-width: 720px) {
+	.actor-simulator[data-active-view='landing'] {
+		padding-block-end: 0.75rem;
+	}
+
+	.actor-landing__art {
+		height: clamp(9.25rem, 35vw, 11rem);
+		min-height: 0;
+	}
+
+	.actor-landing {
+		min-height: 0;
+	}
+
+	.actor-landing__copy {
+		padding: 1rem 1rem 1.1rem;
+	}
+
+	.actor-landing__copy h1 {
+		font-size: clamp(2.25rem, 11vw, 3.1rem);
+	}
+
+	.actor-landing__lead {
+		margin-top: 0.75rem;
+		font-size: 0.8rem;
+		line-height: 1.45;
+	}
+
+	.actor-difficulty {
+		gap: 0.4rem;
+		margin-top: 1rem;
+	}
+
+	.actor-difficulty__options {
+		width: 100%;
+	}
+
+	.actor-landing__actions {
+		display: grid;
+		grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
+		align-items: stretch;
+		gap: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.actor-landing__actions .actor-button {
+		width: 100%;
+		min-width: 0;
+		min-height: 2.8rem;
+		padding-inline: 0.65rem;
+	}
+
+	.actor-view-heading {
+		margin-bottom: 0.85rem;
+	}
+
+	.actor-view-heading > p:last-child {
+		font-size: 0.78rem;
+		line-height: 1.35;
+	}
+
+	.actor-identity {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.actor-identity__panel {
+		padding: 0.8rem;
+	}
+
+	.actor-identity__panel--credit,
+	.actor-identity__panel--country,
+	.actor-identity__panel--profile,
+	.actor-identity__panel--style {
+		grid-column: span 1;
+	}
+
+	.actor-identity__panel--gender,
+	.actor-identity__actions {
+		grid-column: 1 / -1;
+	}
+
+	.actor-identity__panel h2,
+	.actor-identity__panel legend {
+		margin-bottom: 0.65rem;
+		font-size: 0.82rem;
+	}
+
+	.actor-credit-card {
+		min-height: 9.25rem;
+		margin-bottom: 0.75rem;
+		padding: 0.7rem;
+	}
+
+	.actor-credit-card__mark {
+		font-size: 1.35rem;
+	}
+
+	.actor-credit-card strong {
+		font-size: 1.15rem;
+	}
+
+	.actor-field {
+		gap: 0.28rem;
+		font-size: 0.61rem;
+	}
+
+	.actor-field input {
+		min-height: 2.65rem;
+		padding: 0.45rem 0.6rem;
+		font-size: 0.78rem;
+	}
+
+	.actor-field__hint,
+	.actor-panel-copy {
+		display: none;
+	}
+
+	.actor-country-list {
+		max-height: 10rem;
+		gap: 0.2rem;
+	}
+
+	.actor-country {
+		grid-template-columns: 1.55rem minmax(0, 1fr) auto;
+		gap: 0.35rem;
+		min-height: 2.15rem;
+		padding: 0.3rem 0.35rem;
+		font-size: 0.64rem;
+	}
+
+	.actor-country > .actor-flag {
+		width: 1.55rem;
+		height: 1rem;
+	}
+
+	.actor-profile-options {
+		gap: 0.35rem;
+		margin-top: 0.6rem;
+	}
+
+	.actor-profile-option__body {
+		min-height: 3rem;
+		padding: 0.55rem;
+	}
+
+	.actor-profile-option__body strong {
+		font-size: 0.69rem;
+	}
+
+	.actor-profile-option__body small {
+		font-size: 0.58rem;
+	}
+
+	.actor-identity__actions {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.5rem;
+		padding: 0.7rem 0.8rem;
+	}
+
+	.actor-identity__actions .actor-button {
+		width: 100%;
+		min-width: 0;
+		min-height: 2.8rem;
+		padding-inline: 0.55rem;
+	}
+
+	.actor-career-layout {
+		height: auto;
+	}
+
+	.actor-career-main {
+		min-height: 0;
+	}
+
+	.actor-state-art {
+		display: none;
+	}
+
+	.actor-player-card {
+		min-height: 0;
+		grid-template-columns: 3.6rem minmax(0, 1fr) 2.6rem 4rem;
+		gap: 0.3rem;
+		padding: 0.4rem;
+	}
+
+	.actor-player-card__level strong {
+		font-size: 1.8rem;
+	}
+
+	.actor-player-card__age,
+	.actor-player-card__cachet {
+		grid-column: auto;
+		grid-row: auto;
+		min-width: 0;
+		min-height: 0;
+		padding: 0.25rem;
+		border-top: 0;
+		border-inline-start: 1px solid rgba(255, 255, 255, 0.08);
+	}
+
+	.actor-player-card__age strong,
+	.actor-player-card__cachet strong {
+		font-size: 0.88rem;
+	}
+
+	.actor-player-card__age small {
+		font-size: 0.43rem;
+	}
+
+	.actor-player-card__cachet strong {
+		font-size: 0.82rem;
+	}
+
+	.actor-event-panel {
+		flex: 0 0 auto;
+		padding: 0.7rem;
+		overflow: visible;
+	}
+
+	.actor-event-panel__heading {
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+	.actor-event-panel h2 {
+		font-size: 1.08rem;
+	}
+
+	.actor-event-panel__heading p:last-child {
+		margin-top: 0.25rem;
+		font-size: 0.65rem;
+		line-height: 1.3;
+	}
+
+	.actor-luck {
+		padding: 0.25rem 0.38rem;
+	}
+
+	.actor-choice-grid {
+		flex: 0 0 auto;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.5rem;
+		margin-top: 0.65rem;
+	}
+
+	.actor-choice-card {
+		grid-template-rows: auto 1fr auto;
+		height: auto;
+		padding: 0.55rem;
+	}
+
+	.actor-choice-card__top {
+		margin-bottom: 0.35rem;
+	}
+
+	.actor-choice-card__icon {
+		width: 1.45rem;
+		height: 1.45rem;
+		border-radius: 7px;
+		font-size: 0.78rem;
+	}
+
+	.actor-choice-card__risk {
+		font-size: 0.45rem;
+	}
+
+	.actor-choice-card__art {
+		display: none;
+	}
+
+	.actor-choice-card__movie {
+		grid-template-columns: 2.7rem minmax(0, 1fr);
+		gap: 0.4rem;
+	}
+
+	.actor-choice-card__poster {
+		width: 2.7rem;
+		height: 3.85rem;
+		border-radius: 5px;
+	}
+
+	.actor-choice-card__poster--event {
+		font-size: 1.25rem;
+	}
+
+	.actor-choice-card__movie-copy {
+		gap: 0.12rem;
+	}
+
+	.actor-choice-card__movie-copy strong {
+		font-size: 0.7rem;
+		line-height: 1.12;
+	}
+
+	.actor-choice-card__movie-meta {
+		font-size: 0.47rem;
+	}
+
+	.actor-choice-card__copy {
+		font-size: 0.6rem;
+		line-height: 1.25;
+		-webkit-line-clamp: 2;
+	}
+
+	.actor-choice-card__movie-copy small {
+		display: none;
+	}
+
+	.actor-choice-card__outcomes {
+		gap: 0.2rem;
+		margin-top: 0.45rem;
+	}
+
+	.actor-choice-card__outcome {
+		padding: 0.3rem 0.35rem;
+		font-size: 0.53rem;
+		line-height: 1.15;
+	}
+
+	.actor-choice-card__outcome b {
+		font-size: 0.49rem;
+	}
+
+	.actor-timeline {
+		height: auto;
+		padding: 0.7rem;
+		overflow: visible;
+	}
+
+	.actor-timeline__content {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		overflow: visible;
+	}
+}
+
+@media (max-width: 360px) {
+	.actor-identity {
+		grid-template-columns: 1fr;
+	}
+
+	.actor-identity__panel--credit,
+	.actor-identity__panel--country,
+	.actor-identity__panel--profile,
+	.actor-identity__panel--style,
+	.actor-identity__panel--gender,
+	.actor-identity__actions {
+		grid-column: auto;
+	}
+
+	.actor-identity__actions {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-height: 48rem) and (min-width: 721px) {
+	.actor-simulator[data-active-view='landing'] .actor-high-score {
+		display: none;
+	}
+
+	.actor-choice-card {
+		grid-template-rows: auto 1fr auto;
+	}
+
+	.actor-choice-card__art {
+		display: none;
+	}
+
+	.actor-choice-card__movie {
+		grid-template-columns: 3rem minmax(0, 1fr);
+	}
+
+	.actor-choice-card__poster {
+		width: 3rem;
+		height: 4.25rem;
+	}
+
+	.actor-choice-card__movie-copy small {
+		display: none;
+	}
+}
+
+@media (max-height: 48rem) and (max-width: 720px) {
+	.actor-simulator[data-active-view='landing'] .actor-high-score {
+		display: none;
+	}
+
+	.actor-landing__art {
+		height: 7rem;
+	}
+
+	.actor-landing__copy {
+		padding: 0.7rem 0.9rem 0.8rem;
+	}
+
+	.actor-landing__copy h1 {
+		font-size: clamp(2rem, 10vw, 2.55rem);
+	}
+
+	.actor-landing__lead {
+		margin-top: 0.55rem;
+		font-size: 0.75rem;
+		line-height: 1.35;
+	}
+
+	.actor-difficulty {
+		gap: 0.25rem;
+		margin-top: 0.7rem;
+	}
+
+	.actor-landing__actions {
+		gap: 0.4rem;
+		margin-top: 0.7rem;
+	}
+
+	.actor-landing__actions .actor-button {
+		min-height: 2.65rem;
+		font-size: 0.74rem;
+	}
+
+	.actor-awards-shelf,
+	.actor-timeline {
+		display: none;
+	}
+}
+
+/* Spacious career flow: decisions first, career status underneath. */
+.actor-career-layout {
+	min-height: 58.8rem;
+	height: auto;
+	align-items: stretch;
+}
+
+.actor-career-main {
+	height: auto;
+	min-height: 100%;
+	gap: 1rem;
+}
+
+.actor-event-panel {
+	flex: 0 0 auto;
+	margin-top: 0;
+	padding: 1.15rem;
+	overflow: visible;
+}
+
+.actor-event-panel__heading {
+	gap: 1.25rem;
+}
+
+.actor-choice-grid {
+	flex: 0 0 auto;
+	gap: 1rem;
+	margin-top: 1.1rem;
+}
+
+.actor-choice-card {
+	height: auto;
+	min-height: 32rem;
+	padding: 1.1rem;
+}
+
+.actor-choice-card__art {
+	aspect-ratio: 3 / 2;
+	min-height: 11rem;
+	margin-bottom: 0.9rem;
+}
+
+.actor-choice-card__movie {
+	grid-template-columns: 5.3rem minmax(0, 1fr);
+	gap: 0.85rem;
+}
+
+.actor-choice-card__poster {
+	width: 5.3rem;
+	height: 7.5rem;
+}
+
+.actor-choice-card__copy {
+	font-size: 0.82rem;
+	line-height: 1.42;
+}
+
+.actor-choice-card__outcomes {
+	gap: 0.35rem;
+	margin-top: 0.9rem;
+}
+
+.actor-choice-card__outcome {
+	padding: 0.45rem 0.55rem;
+	font-size: 0.68rem;
+}
+
+.actor-career-summary {
+	display: grid;
+	flex: 0 0 auto;
+	gap: 0.9rem;
+}
+
+.actor-career-summary .actor-player-card {
+	min-height: 7.7rem;
+}
+
+.actor-career-summary .actor-state-art {
+	display: none;
+}
+
+.actor-career-summary .actor-stats {
+	min-height: 5rem;
+	margin-top: 0;
+	padding-block: 0.55rem;
+}
+
+.actor-career-summary .actor-awards-shelf {
+	min-height: 4.6rem;
+	margin-top: 0;
+	padding-block: 0.65rem;
+}
+
+.actor-timeline {
+	height: auto;
+	min-height: 100%;
+}
+
+@media (max-width: 1020px) {
+	.actor-career-layout {
+		min-height: 0;
+		height: auto;
+	}
+
+	.actor-career-main {
+		min-height: 0;
+		gap: 0.9rem;
+	}
+
+	.actor-event-panel {
+		padding: 1rem;
+	}
+
+	.actor-choice-card {
+		min-height: 29rem;
+	}
+
+	.actor-timeline {
+		min-height: 0;
+		height: auto;
+	}
+
+	.actor-timeline__details {
+		height: auto;
+	}
+
+	.actor-timeline__content {
+		height: auto;
+	}
+}
+
+@media (max-width: 720px) {
+	.actor-career-main {
+		gap: 0.8rem;
+	}
+
+	.actor-event-panel {
+		padding: 0.9rem;
+	}
+
+	.actor-event-panel__heading {
+		gap: 0.6rem;
+	}
+
+	.actor-choice-grid {
+		gap: 0.65rem;
+		margin-top: 0.9rem;
+	}
+
+	.actor-choice-card {
+		min-height: 18rem;
+		padding: 0.72rem;
+	}
+
+	.actor-choice-card__top {
+		margin-bottom: 0.5rem;
+	}
+
+	.actor-choice-card__art {
+		display: block;
+		aspect-ratio: 16 / 8;
+		min-height: 0;
+		margin-bottom: 0.7rem;
+	}
+
+	.actor-choice-card__movie {
+		grid-template-columns: 3.2rem minmax(0, 1fr);
+		gap: 0.5rem;
+	}
+
+	.actor-choice-card__poster {
+		width: 3.2rem;
+		height: 4.6rem;
+	}
+
+	.actor-choice-card__movie-copy strong {
+		font-size: 0.76rem;
+		line-height: 1.18;
+	}
+
+	.actor-choice-card__movie-meta {
+		font-size: 0.5rem;
+	}
+
+	.actor-choice-card__copy {
+		display: -webkit-box;
+		margin-top: 0.28rem;
+		overflow: hidden;
+		font-size: 0.68rem;
+		line-height: 1.3;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+	}
+
+	.actor-choice-card__movie-copy small {
+		display: -webkit-box;
+		overflow: hidden;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
+
+	.actor-choice-card__outcomes {
+		gap: 0.25rem;
+		margin-top: 0.7rem;
+	}
+
+	.actor-choice-card__outcome {
+		padding: 0.35rem 0.4rem;
+		font-size: 0.56rem;
+		line-height: 1.2;
+	}
+
+	.actor-career-summary {
+		gap: 0.7rem;
+	}
+
+	.actor-career-summary .actor-stats {
+		min-height: 4.4rem;
+	}
+
+	.actor-career-summary .actor-awards-shelf {
+		min-height: 4rem;
+	}
+}
+
+/* Keep the timeline column fixed while the longer career column continues below. */
+@media (min-width: 1021px) {
+	.actor-timeline {
+		position: sticky;
+		top: 1rem;
+		align-self: start;
+		height: min(52rem, calc(100svh - 2rem));
+		min-height: 0;
+	}
+
+	.actor-timeline__details {
+		height: 100%;
+		min-height: 0;
+	}
+
+	.actor-timeline__content {
+		height: 100%;
+		grid-template-rows: auto minmax(8rem, 0.8fr) auto minmax(12rem, 1.2fr);
+	}
+
+	.actor-timeline__rows,
+	.actor-career-log,
+	.actor-career-log__body {
+		min-height: 0;
+	}
+}
+
+@media (max-width: 1020px) {
+	.actor-timeline {
+		position: static;
+	}
+
+	.actor-timeline__details[open] {
+		display: grid;
+		grid-template-rows: auto minmax(0, 1fr);
+		height: min(42rem, calc(100svh - 5rem));
+		min-height: 0;
+	}
+
+	.actor-timeline__details[open] .actor-timeline__content {
+		height: 100%;
+		min-height: 0;
+		overflow: hidden;
+	}
+
+	.actor-timeline__rows,
+	.actor-career-log,
+	.actor-career-log__body {
+		min-height: 0;
+	}
+}
+
+/* Casino resolution: alternate between a green and red signal before applying the roll. */
+.actor-event-result--good,
+.actor-event-result--casino-good {
+	border-color: rgba(71, 212, 154, 0.55);
+	background: linear-gradient(105deg, rgba(71, 212, 154, 0.2), rgba(28, 92, 76, 0.24));
+	color: #b8f5d5;
+}
+
+.actor-event-result--casino-bad {
+	border-color: rgba(255, 107, 125, 0.62);
+	background: linear-gradient(105deg, rgba(255, 107, 125, 0.2), rgba(103, 35, 61, 0.28));
+	color: #ffd0d7;
+}
+
+.actor-choice-card.actor-choice-card--rolling[disabled] {
+	opacity: 1;
+	transform: translateY(-2px) scale(1.01);
+	filter: saturate(1.05);
+	border-color: rgba(246, 198, 78, 0.55);
+	box-shadow: 0 0 0 1px rgba(246, 198, 78, 0.12), 0 18px 30px rgba(0, 0, 0, 0.24);
+}
+
+.actor-choice-card--remake {
+	border-color: rgba(246, 198, 78, 0.28);
+	background: linear-gradient(160deg, rgba(48, 38, 42, 0.92), rgba(21, 16, 28, 0.94));
+}
+
+.actor-choice-card--remake .actor-choice-card__movie-meta {
+	color: #f6d27c;
+}
+
+.actor-event-result--rolling {
+	animation: actorCasinoResult 260ms ease-in-out infinite alternate;
+}
+
+.actor-choice-card__outcome--casino-active {
+	position: relative;
+	z-index: 1;
+	transform: translateY(-3px) scale(1.035);
+	box-shadow: 0 0 0 1px rgba(246, 198, 78, 0.48), 0 7px 18px rgba(0, 0, 0, 0.24);
+	animation: actorCasinoBounce 240ms cubic-bezier(0.2, 0.9, 0.3, 1.25);
+}
+
+.actor-choice-card__outcome--casino-active.actor-choice-card__outcome--positive {
+	box-shadow: 0 0 0 1px rgba(71, 212, 154, 0.7), 0 0 20px rgba(71, 212, 154, 0.22);
+}
+
+.actor-choice-card__outcome--casino-active.actor-choice-card__outcome--negative {
+	box-shadow: 0 0 0 1px rgba(255, 107, 125, 0.72), 0 0 20px rgba(255, 107, 125, 0.2);
+}
+
+@keyframes actorCasinoResult {
+	from {
+		transform: translateY(1px) scale(0.99);
+	}
+	to {
+		transform: translateY(-2px) scale(1.01);
+	}
+}
+
+@keyframes actorCasinoBounce {
+	0% {
+		transform: translateY(0) scale(0.98);
+	}
+	65% {
+		transform: translateY(-5px) scale(1.06);
+	}
+	100% {
+		transform: translateY(-3px) scale(1.035);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.actor-event-result--rolling,
+	.actor-choice-card__outcome--casino-active {
+		animation: none;
+		transition: none;
+	}
+}
