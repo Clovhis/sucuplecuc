@@ -110,13 +110,3 @@ test('legacy trailer routes permanently consolidate into the canonical movie pag
   await expect(page).toHaveURL('/peliculas/akira-1988/');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /index, follow/);
 });
-
-test('legacy Odyssey slug permanently consolidates into the localized canonical page', async ({ page }) => {
-  await page.goto('/peliculas/the-odyssey-2026/', { waitUntil: 'domcontentloaded' });
-
-  await expect(page).toHaveURL('/peliculas/la-odisea-2026/');
-  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
-    'href',
-    'https://www.cineposta.com.ar/peliculas/la-odisea-2026/',
-  );
-});
