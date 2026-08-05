@@ -11,7 +11,7 @@ export const SITE_LANGUAGE = 'es-AR';
 export const CONTACT_EMAIL = 'yosoyvargas@hotmail.com';
 export const EDITOR_NAME = 'Leonardo Vargas';
 export const SITE_DESCRIPTION =
-	'Cine Posta, también conocido como Cineposta, es un sitio argentino con reseñas cortas y al hueso sobre películas, veredictos claros y fichas de actores y directores para decidir rápido qué mirar.';
+	'Cine Posta, también conocido como Cineposta, es un sitio argentino con reseñas cortas y al hueso para decidir qué mirar. Sin login, sin anuncios y con filtros al final del catálogo.';
 export const SITE_LOGO_PATH = '/brand/cineposta-logo-mark.png';
 export const SITE_IMAGE_PATH = '/brand/cineposta-logo-full.png';
 export const ABOUT_PATH = '/sobre-cine-posta/';

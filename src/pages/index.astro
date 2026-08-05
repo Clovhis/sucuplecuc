@@ -164,6 +164,8 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 							class="site-header__brand-logo"
 							src={siteBrandLogo}
 							alt="Cine Posta"
+							width="520"
+							height="168"
 							decoding="async"
 						/>
 					</a>
@@ -249,9 +251,26 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 				<p class="home-welcome__eyebrow">¿Primera vez por acá?</p>
 				<h2 id="home-welcome-title">¿Qué somos?</h2>
 				<p class="home-welcome__copy">
-					Somos un sitio argentino de reseñas cortas y sin chamuyo para decidir qué mirar. <strong>No alojamos películas, torrents, descargas ni enlaces piratas:</strong> te orientamos hacia opciones oficiales.
+					Somos un sitio argentino de reseñas cortas y sin chamuyo para decidir qué mirar. Entrás, chusmeás y te llevás una señal clara sin vueltas. <strong>No alojamos películas, torrents, descargas ni enlaces piratas:</strong> te orientamos hacia opciones oficiales.
 				</p>
-				<a class="home-welcome__link" href={ABOUT_PATH}>Conocé cómo funciona <span aria-hidden="true">→</span></a>
+				<ul class="home-welcome__details" aria-label="Cómo usar Cine Posta">
+					<li>
+						<strong>Sin login</strong>
+						<span>No hace falta crear usuario ni acordarte de una password.</span>
+					</li>
+					<li>
+						<strong>Sin Ads</strong>
+						<span>La experiencia va al grano, sin banners cortándote la búsqueda.</span>
+					</li>
+					<li>
+						<strong>Filtros al final</strong>
+						<span>Bajá hasta el catálogo y buscá por título, actor, género, plataforma o veredicto.</span>
+					</li>
+				</ul>
+				<div class="home-welcome__actions">
+					<a class="home-welcome__link" href="#catalogo-filtros">Ir al filtro de películas <span aria-hidden="true">↓</span></a>
+					<a class="home-welcome__link home-welcome__link--secondary" href={ABOUT_PATH}>Conocé cómo funciona <span aria-hidden="true">→</span></a>
+				</div>
 			</div>
 			<div class="home-welcome__art" aria-hidden="true">
 				<img
@@ -572,7 +591,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						)
 					}
 
-					<section class="home-results-tools fade-up" style="--item-delay: 140ms;" aria-labelledby="home-results-tools-title">
+					<section id="catalogo-filtros" class="home-results-tools fade-up" style="--item-delay: 140ms;" aria-labelledby="home-results-tools-title">
 						<div class="home-results-tools__header">
 							<div>
 								<h2 id="home-results-tools-title">Películas publicadas</h2>

@@ -41,14 +41,15 @@
 	}
 
 	.home-welcome {
-		grid-template-columns: minmax(0, 1fr) 7.25rem;
-		min-height: 12rem;
+		grid-template-columns: 1fr;
+		min-height: 0;
 		padding: 0.85rem;
 		border-radius: 16px;
 	}
 
 	.home-welcome__content {
 		max-width: none;
+		padding-inline-end: 4.9rem;
 	}
 
 	.home-welcome h2 {
@@ -60,6 +61,28 @@
 		max-width: 30rem;
 		font-size: 0.82rem;
 		line-height: 1.38;
+	}
+
+	.home-welcome__details {
+		grid-template-columns: 1fr;
+		gap: 0.42rem;
+		margin-top: 0.72rem;
+	}
+
+	.home-welcome__details li {
+		padding: 0.48rem 0.58rem;
+	}
+
+	.home-welcome__details strong {
+		font-size: 0.7rem;
+	}
+
+	.home-welcome__details span {
+		font-size: 0.68rem;
+	}
+
+	.home-welcome__actions {
+		gap: 0.35rem 0.7rem;
 	}
 
 	.home-welcome__link {

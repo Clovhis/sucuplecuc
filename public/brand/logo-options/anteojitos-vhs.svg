@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+	<title id="title">Anteojitos 3D, opción VHS</title>
+	<desc id="desc">Anteojos 3D de inspiración VHS con sombras rojas y cyan desplazadas.</desc>
+	<defs>
+		<linearGradient id="lens-red" x1="0" x2="1" y1="0" y2="1">
+			<stop offset="0" stop-color="#ff605d" />
+			<stop offset="1" stop-color="#ac265d" />
+		</linearGradient>
+		<linearGradient id="lens-cyan" x1="0" x2="1" y1="0" y2="1">
+			<stop offset="0" stop-color="#65f4ff" />
+			<stop offset="1" stop-color="#007bbf" />
+		</linearGradient>
+		<filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+			<feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#050812" flood-opacity=".48" />
+		</filter>
+	</defs>
+	<g filter="url(#shadow)" stroke-linejoin="round">
+		<path d="M52 109 22 94M588 109l30-15" fill="none" stroke="#ff4c57" stroke-width="17" stroke-linecap="round" opacity=".75" />
+		<path d="M52 96 22 81M588 96l30-15" fill="none" stroke="#28e6ee" stroke-width="17" stroke-linecap="round" opacity=".75" />
+		<path d="M256 118c30-19 98-19 128 0" fill="none" stroke="#ff4c57" stroke-width="20" stroke-linecap="round" opacity=".8" transform="translate(-7 7)" />
+		<path d="M256 118c30-19 98-19 128 0" fill="none" stroke="#28e6ee" stroke-width="20" stroke-linecap="round" opacity=".8" transform="translate(7 -7)" />
+		<path d="M52 99c0-19 15-32 35-32h139c20 0 34 13 34 32v70c0 19-14 33-34 33H87c-20 0-35-14-35-33Z" fill="#211936" stroke="#fff2df" stroke-width="12" />
+		<path d="M380 99c0-19 14-32 34-32h139c20 0 35 13 35 32v70c0 19-15 33-35 33H414c-20 0-34-14-34-33Z" fill="#211936" stroke="#fff2df" stroke-width="12" />
+		<path d="M73 103c0-8 6-14 15-14h126c9 0 15 6 15 14v62c0 9-6 15-15 15H88c-9 0-15-6-15-15Z" fill="url(#lens-red)" stroke="#0b1020" stroke-width="5" />
+		<path d="M407 103c0-8 6-14 15-14h126c9 0 15 6 15 14v62c0 9-6 15-15 15H422c-9 0-15-6-15-15Z" fill="url(#lens-cyan)" stroke="#0b1020" stroke-width="5" />
+		<path d="M92 105h118M428 105h118" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".45" />
+		<path d="M263 121h114" fill="none" stroke="#fff2df" stroke-width="13" stroke-linecap="round" />
+		<path d="M290 151h60" fill="none" stroke="#fff2df" stroke-width="5" stroke-linecap="round" opacity=".55" />
+	</g>
+</svg>

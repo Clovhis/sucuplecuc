@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+	<title id="title">Anteojitos 3D, opción clásica</title>
+	<desc id="desc">Anteojos retro con marco crema, lente roja a la izquierda y lente cyan a la derecha.</desc>
+	<defs>
+		<linearGradient id="cream" x1="0" x2="0" y1="0" y2="1">
+			<stop offset="0" stop-color="#fff9ed" />
+			<stop offset="1" stop-color="#f0d7c5" />
+		</linearGradient>
+		<linearGradient id="red" x1="0" x2="1" y1="0" y2="1">
+			<stop offset="0" stop-color="#ff6a5e" />
+			<stop offset="1" stop-color="#d72c54" />
+		</linearGradient>
+		<linearGradient id="cyan" x1="0" x2="1" y1="0" y2="1">
+			<stop offset="0" stop-color="#75f2f1" />
+			<stop offset="1" stop-color="#18a9dd" />
+		</linearGradient>
+		<filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+			<feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#050812" flood-opacity=".48" />
+		</filter>
+	</defs>
+	<g filter="url(#shadow)" stroke="#17152a" stroke-linejoin="round">
+		<path d="M60 102H25L13 82" fill="none" stroke="#17152a" stroke-width="18" stroke-linecap="round" />
+		<path d="M580 102h35l12-20" fill="none" stroke="#17152a" stroke-width="18" stroke-linecap="round" />
+		<path d="M260 116c32-22 88-22 120 0" fill="none" stroke="#17152a" stroke-width="22" stroke-linecap="round" />
+		<path d="M52 101c0-21 17-36 39-36h133c22 0 36 15 36 36v66c0 21-14 36-36 36H91c-22 0-39-15-39-36Z" fill="url(#cream)" stroke-width="10" />
+		<path d="M380 101c0-21 14-36 36-36h133c22 0 39 15 39 36v66c0 21-17 36-39 36H416c-22 0-36-15-36-36Z" fill="url(#cream)" stroke-width="10" />
+		<path d="M73 104c0-9 7-16 17-16h126c10 0 17 7 17 16v58c0 10-7 17-17 17H90c-10 0-17-7-17-17Z" fill="url(#red)" stroke-width="6" />
+		<path d="M407 104c0-9 7-16 17-16h126c10 0 17 7 17 16v58c0 10-7 17-17 17H424c-10 0-17-7-17-17Z" fill="url(#cyan)" stroke-width="6" />
+		<path d="M88 101h128" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".35" />
+		<path d="M422 101h128" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".42" />
+		<path d="M272 123h96" fill="none" stroke="url(#cream)" stroke-width="12" stroke-linecap="round" />
+	</g>
+</svg>

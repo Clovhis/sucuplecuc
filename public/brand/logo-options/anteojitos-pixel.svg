@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+	<title id="title">Anteojitos 3D, opción pixel</title>
+	<desc id="desc">Ícono compacto de anteojos 3D con geometría retro y bloques rojos y cyan.</desc>
+	<defs>
+		<filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+			<feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#050812" flood-opacity=".5" />
+		</filter>
+	</defs>
+	<g filter="url(#shadow)" stroke="#101525" stroke-linejoin="round">
+		<path d="M59 104H23M581 104h36" fill="none" stroke="#101525" stroke-width="20" stroke-linecap="square" />
+		<path d="M250 119c31-18 109-18 140 0" fill="none" stroke="#101525" stroke-width="22" stroke-linecap="square" />
+		<path d="M46 91h22V69h165v22h22v91h-22v21H68v-21H46Z" fill="#fff1df" stroke-width="10" />
+		<path d="M385 91h22V69h165v22h22v91h-22v21H407v-21h-22Z" fill="#fff1df" stroke-width="10" />
+		<path d="M78 101h137v70H78Z" fill="#e83956" stroke-width="7" />
+		<path d="M425 101h137v70H425Z" fill="#12c7e7" stroke-width="7" />
+		<path d="M92 115h42v42H92ZM449 115h42v42h-42Z" fill="#ff6b61" opacity=".7" stroke="none" />
+		<path d="M159 115h42v42h-42ZM516 115h42v42h-42Z" fill="#95f5f3" opacity=".72" stroke="none" />
+		<path d="M274 126h92" fill="none" stroke="#fff1df" stroke-width="11" stroke-linecap="square" />
+		<path d="M57 236h526" fill="none" stroke="#e83956" stroke-width="7" opacity=".8" />
+		<path d="M80 246h480" fill="none" stroke="#12c7e7" stroke-width="4" opacity=".8" />
+	</g>
+</svg>

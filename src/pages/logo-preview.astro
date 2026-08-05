@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/logo-preview.css';
+
+const pageTitle = 'Opciones de logo | Cine Posta';
+const pageDescription = 'Tres opciones nuevas de anteojitos 3D en perspectiva para la identidad visual de Cine Posta.';
+const assetBase = import.meta.env.BASE_URL;
+const options = [
+	{
+		id: '01',
+		name: 'Cine Retro',
+		file: 'anteojitos-angle-01-cine-retro.png',
+		width: 1402,
+		height: 1122,
+		copy: 'La versión más fiel a la referencia: marco negro, volumen limpio y una perspectiva 3/4 muy reconocible.',
+		palette: ['#f7f0e3', '#ef251b', '#20c7e5'],
+	},
+	{
+		id: '02',
+		name: 'Cine Posta',
+		file: 'anteojitos-angle-02-cine-posta-white.png',
+		width: 1402,
+		height: 1122,
+		copy: 'La refiné con marco blanco marfil, como los anteojitos del personaje de pelo colorado; el borde violeta mantiene el gesto editorial.',
+		palette: ['#f7f0e3', '#ff211b', '#20bdd8'],
+	},
+	{
+		id: '03',
+		name: 'Cine VHS',
+		file: 'anteojitos-angle-03-cine-vhs.png',
+		width: 1254,
+		height: 1254,
+		copy: 'El más potente y retro: incorpora los rebotes cian/rojo en el marco para una marca con más actitud VHS.',
+		palette: ['#f7f0e3', '#ff3d3a', '#16c9e5'],
+	},
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} noindex={true}>
+	<main id="main-content" class="logo-preview container">
+		<div class="page-actions">
+			<a class="page-action page-action--home" href={assetBase}>Volver al inicio</a>
+		</div>
+
+		<header class="logo-preview__hero">
+			<p class="logo-preview__eyebrow">Nueva identidad visual</p>
+			<h1>Los anteojitos 3D como marca</h1>
+			<p>
+				Preparé tres caminos nuevos tomando la posición de los anteojos de tu referencia: marco con volumen, patillas visibles y lentes rojo/cyan. La opción 02 ahora lleva el marco blanco de nuestros personajes.
+			</p>
+			<p class="logo-preview__note"><strong>La opción 02 quedó elegida.</strong> La pasé a producción con marco blanco marfil, fondo transparente y variantes para header, favicon, manifest y datos estructurados.</p>
+		</header>
+
+		<section class="logo-options" aria-label="Opciones de logo">
+			{options.map((option) => {
+				const logoPath = `${assetBase}brand/logo-options/${option.file}`;
+				return (
+					<article class="logo-option" data-logo-option={option.id}>
+						<div class="logo-option__heading">
+							<p class="logo-option__number">Opción {option.id}</p>
+							<h2>{option.name}</h2>
+						</div>
+						<div class="logo-option__stage">
+						<img class="logo-option__mark" src={logoPath} alt={`Logo ${option.name}: anteojitos 3D retro en perspectiva`} width={option.width} height={option.height} loading="eager" />
+						</div>
+						<div class="logo-option__lockup" aria-label={`Vista de header del logo ${option.name}`}>
+							<img src={logoPath} alt="" aria-hidden="true" width={option.width} height={option.height} />
+							<span>CINE POSTA</span>
+						</div>
+						<p class="logo-option__copy">{option.copy}</p>
+						<div class="logo-option__swatches" aria-label={`Paleta de ${option.name}`}>
+							{option.palette.map((color) => <span role="img" style={`--swatch-color: ${color}`} title={color} aria-label={color}></span>)}
+						</div>
+					</article>
+				);
+			})}
+		</section>
+
+		<section class="logo-preview__footer" aria-labelledby="logo-next-step-title">
+			<p class="logo-preview__eyebrow">Siguiente paso</p>
+			<h2 id="logo-next-step-title">La opción 02 ya está en producción</h2>
+			<p>
+				Generé las variantes necesarias, reemplacé el logo anterior sin romper el responsive, actualicé el logo de Organization/WebSite, favicon, Apple Touch Icon y manifest. Search Console se puede refrescar cuando esta branch quede publicada.
+			</p>
+		</section>
+	</main>
+</BaseLayout>
