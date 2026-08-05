@@ -36,6 +36,7 @@ export const GET: APIRoute = async () => {
 	const people = getPersonProfiles().filter(isPersonProfileIndexable);
 	const entries = [
 		{ pathname: '/' },
+		{ pathname: '/juegos/simulador-carrera-actor/' },
 		{ pathname: QUE_MIRO_HOY_PATH },
 		{ pathname: PEOPLE_PATH },
 		{ pathname: ABOUT_PATH },
