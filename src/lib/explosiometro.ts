@@ -99,8 +99,9 @@ export function getExplosiometroScore(movie: Movie): number | undefined {
 }
 
 export function getExplosiometroLabel(score: number): string {
-	if (score >= 90) return 'Revienta todo, agarrate del sillón';
+	if (score >= 90) return 'Revienta todo: agarrate del sillón';
 	if (score >= 75) return 'Hay quilombo del lindo';
-	if (score >= 55) return 'Trae piñas, tiros y un par de booms';
-	return 'Acción tranqui, no te vuela el flequillo';
+	if (score >= 60) return 'Hay movimiento, pero tranqui';
+	if (score >= 40) return 'Trae algo de acción, sin pasarse';
+	return 'Acción con el freno puesto';
 }

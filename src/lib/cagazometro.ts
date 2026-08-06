@@ -95,8 +95,9 @@ export function getCagazometroScore(movie: Movie): number | undefined {
 }
 
 export function getCagazometroLabel(score: number): string {
-	if (score >= 85) return 'Te cagás en las patas mal';
-	if (score >= 70) return 'Te deja con el culo en la mano';
-	if (score >= 50) return 'Te mantiene medio perseguido';
-	return 'Algún saltito te saca';
+	if (score >= 90) return 'Te cagás en las patas mal';
+	if (score >= 75) return 'Te deja bastante perseguido';
+	if (score >= 60) return 'Te mantiene alerta';
+	if (score >= 40) return 'Algún sustito y nada más';
+	return 'Casi no asusta';
 }

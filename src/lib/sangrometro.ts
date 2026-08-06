@@ -96,8 +96,9 @@ export function getSangrometroScore(movie: Movie): number | undefined {
 }
 
 export function getSangrometroLabel(score: number): string {
-	if (score >= 90) return 'Festival de achuras, mirala con estómago';
+	if (score >= 90) return 'Festival de achuras: mirala con estómago';
 	if (score >= 75) return 'Salpica fuerte y sin pedir permiso';
-	if (score >= 55) return 'Hay sangre para rato';
-	return 'Gore con la canilla medio cerrada';
+	if (score >= 60) return 'Hay sangre, pero se controla';
+	if (score >= 40) return 'Sangre medida';
+	return 'Casi no hay sangre';
 }

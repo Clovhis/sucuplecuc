@@ -111,8 +111,9 @@ export function getJajametroScore(movie: Movie): number | undefined {
 }
 
 export function getJajametroLabel(score: number): string {
-	if (score >= 85) return 'Te meás de risa';
-	if (score >= 70) return 'Viene cargada de jajás';
-	if (score >= 50) return 'Te saca un par de jajás';
-	return 'Algún jaja te roba';
+	if (score >= 90) return 'Te meás de risa';
+	if (score >= 75) return 'Viene cargada de jajás';
+	if (score >= 60) return 'Te hace reír, pero tranqui';
+	if (score >= 40) return 'Algún jaja te saca';
+	return 'No le encontrás la gracia';
 }
