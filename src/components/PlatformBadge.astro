@@ -13,6 +13,7 @@ const { variant, asset: platformAsset, displayLabel, accessibilityLabel, isKnown
 	{ mode },
 );
 const hasStyledVariant = variant !== 'default';
+const isStackedLabel = variant === 'other-platforms';
 
 const rootClasses =
 	mode === 'tile'
@@ -42,7 +43,19 @@ const rootClasses =
 						loading="lazy"
 					/>
 				) : mode === 'tile' ? (
-					<span class="platform-mark__label">{displayLabel}</span>
+					isStackedLabel ? (
+						<span class="platform-mark__label platform-label--stacked" aria-hidden="true">
+							<span>Otras</span>
+							<span>plataformas</span>
+						</span>
+					) : (
+						<span class="platform-mark__label">{displayLabel}</span>
+					)
+				) : isStackedLabel ? (
+					<span class="platform-chip__label platform-label--stacked" aria-hidden="true">
+						<span>Otras</span>
+						<span>plataformas</span>
+					</span>
 				) : (
 					<span>{displayLabel}</span>
 				)

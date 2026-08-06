@@ -4122,6 +4122,43 @@ img {
 	color: #d8e3fb;
 }
 
+.platform-label--stacked {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.04rem;
+	line-height: 1.05;
+	white-space: nowrap;
+}
+
+.platform-label--stacked > span {
+	display: block;
+}
+
+.platform-chip--other-platforms:not(.platform-mark--tile) {
+	inline-size: 4.75rem;
+	min-inline-size: 0;
+	padding-inline: 0.3rem;
+}
+
+.platform-chip--other-platforms:not(.platform-mark--tile) .platform-label--stacked {
+	font-size: 0.62rem;
+	letter-spacing: 0.035em;
+}
+
+.platform-mark--tile.platform-chip--other-platforms {
+	inline-size: clamp(3.75rem, 16vw, 4.5rem);
+	min-inline-size: 0;
+	padding-inline: 0.24rem;
+	overflow: hidden;
+}
+
+.platform-mark--tile.platform-chip--other-platforms .platform-label--stacked {
+	font-size: 0.58rem;
+	letter-spacing: 0.035em;
+}
+
 .platform-chip--cine {
 	background: linear-gradient(180deg, rgba(228, 191, 99, 0.16), rgba(228, 191, 99, 0.06));
 	border-color: rgba(228, 191, 99, 0.32);
