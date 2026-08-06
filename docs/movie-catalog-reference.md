@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-07-31. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-06. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1004
+Total de peliculas: 1009
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -12,9 +12,10 @@ Total de peliculas: 1004
 | 2026 | 72 Hours | 72-hours-2026 | Comedia | Netflix | +17 |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Aída y vuelta | aida-y-vuelta-2026 | Comedia | Prime Video | +13 |
-| 2026 | Amarga Navidad | amarga-navidad-2026 | Drama | Cine | +13 |
+| 2026 | Amarga Navidad | amarga-navidad-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Amos del Universo | amos-del-universo-2026 | Accion | Prime Video | +13 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
+| 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Cine | ATP |
 | 2026 | Backrooms | backrooms-2026 | Terror | Cine | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
@@ -29,7 +30,8 @@ Total de peliculas: 1004
 | 2026 | Dracula | dracula-2026 | Terror | Otras plataformas | +16 |
 | 2026 | El Afinador | el-afinador-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
-| 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Cine | +13 |
+| 2026 | El día D: Bajo presión | el-dia-d-bajo-presion-2026 | Drama | Cine | +13 |
+| 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Otras plataformas | +13 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Disney Plus | +13 |
 | 2026 | El drama | the-drama-2026 | Romance | Otras plataformas | +17 |
 | 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Otras plataformas | ATP |
@@ -41,6 +43,7 @@ Total de peliculas: 1004
 | 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
 | 2026 | Elize: Sombras de una mujer | elize-sombras-de-una-mujer-2026 | Drama | Netflix | +16 |
 | 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Otras plataformas | +17 |
+| 2026 | Engendro | engendro-2026 | Terror | Cine | +17 |
 | 2026 | Enola Holmes 3 | enola-holmes-3-2026 | Aventura | Netflix | +13 |
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Evil Dead: En llamas | evil-dead-en-llamas-2026 | Terror | Cine | +17 |
@@ -60,10 +63,11 @@ Total de peliculas: 1004
 | 2026 | La Boca del Diablo | la-boca-del-diablo-2026 | Terror | Prime Video | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
+| 2026 | La invitación | la-invitacion-2026 | Comedia | Cine | +17 |
 | 2026 | La Odisea | la-odisea-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
-| 2026 | La tierra explota | la-tierra-explota-2026 | Documental | Cine | ATP |
+| 2026 | La tierra explota | la-tierra-explota-2026 | Documental | Otras plataformas | ATP |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Otras plataformas | +16 |
@@ -101,7 +105,7 @@ Total de peliculas: 1004
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
-| 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Cine | +17 |
+| 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Apple TV | +17 |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Paramount Plus | +16 |
 | 2026 | Send Help | send-help-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
@@ -125,7 +129,7 @@ Total de peliculas: 1004
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
-| 2026 | WHAM! 10 Days in China | wham-10-days-in-china-2026 | Documental | Cine | +13 |
+| 2026 | WHAM! 10 Days in China | wham-10-days-in-china-2026 | Documental | Otras plataformas | +13 |
 | 2026 | Whistle | whistle-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Yiya Murano: Muerte a la hora del té | yiya-murano-muerte-a-la-hora-del-te-2026 | Documental | Netflix | +12 |
 | 2026 | Your Fault: London | your-fault-london-2026 | Romance | Prime Video | +16 |
@@ -156,6 +160,7 @@ Total de peliculas: 1004
 | 2025 | Fear Street: Prom Queen | fear-street-prom-queen-2025 | Terror | Netflix | +18 |
 | 2025 | Final Destination: Bloodlines | final-destination-bloodlines-2025 | Terror | HBO Max | +16 |
 | 2025 | Frankenstein | frankenstein-2025 | Terror | Netflix | +16 |
+| 2025 | Franz | franz-2025 | Drama | Cine | ATP |
 | 2025 | G20 | g20-2025 | Accion | Prime Video | +16 |
 | 2025 | Hamnet | hamnet-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Havoc | havoc-2025 | Accion | Netflix | +16 |
@@ -254,7 +259,7 @@ Total de peliculas: 1004
 | 2024 | Look Back | look-back-2024 | Anime | Prime Video | ATP |
 | 2024 | Love Lies Bleeding | love-lies-bleeding-2024 | Thriller | HBO Max | +16 |
 | 2024 | Madame Web | madame-web-2024 | Accion | Prime Video | +13 |
-| 2024 | Marianela y el cadáver | marianela-y-el-cadaver-2024 | Comedia | Cine | +13 |
+| 2024 | Marianela y el cadáver | marianela-y-el-cadaver-2024 | Comedia | Otras plataformas | +13 |
 | 2024 | Megalopolis | megalopolis-2024 | Drama | Otras plataformas | +13 |
 | 2024 | Moana 2 | moana-2-2024 | Animacion | Disney Plus | ATP |
 | 2024 | Monkey Man | monkey-man-2024 | Accion | Prime Video | +16 |
