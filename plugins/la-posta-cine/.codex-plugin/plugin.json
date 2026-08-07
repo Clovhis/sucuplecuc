@@ -1,0 +1,27 @@
+{
+  "name": "la-posta-cine",
+  "version": "0.1.0",
+  "description": "Skills y herramientas de trabajo para mantener el catálogo editorial argentino de Cine Posta.",
+  "author": {
+    "name": "Cine Posta",
+    "url": "https://www.cineposta.com.ar/"
+  },
+  "homepage": "https://www.cineposta.com.ar/",
+  "repository": "https://github.com/Clovhis/sucuplecuc",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "La Posta Cine",
+    "shortDescription": "Catálogo argentino, copy original y auditorías seguras.",
+    "longDescription": "Reúne las skills de Cine Posta para cargar películas, verificar disponibilidad legal en Argentina, mantener perfiles de personas, auditar contenido y operar GitHub con MCP. El paquete es aislado: no modifica el runtime del sitio al estar guardado en plugins/.",
+    "developerName": "Cine Posta",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Write",
+      "Review"
+    ],
+    "websiteURL": "https://www.cineposta.com.ar/",
+    "defaultPrompt": "Usá las skills de La Posta Cine para trabajar de forma segura en el catálogo argentino."
+  }
+}

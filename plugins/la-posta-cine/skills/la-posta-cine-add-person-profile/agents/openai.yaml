@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Add Person Profile"
+  short_description: "Crea perfiles editoriales originales y verificados"
+  default_prompt: "Usa $la-posta-cine-add-person-profile para crear un perfil verificado con biografía original de IA."

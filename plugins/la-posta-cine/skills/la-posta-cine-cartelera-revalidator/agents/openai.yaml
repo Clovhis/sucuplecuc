@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Cartelera Revalidator"
+  short_description: "Revalida cartelera y plataformas argentinas"
+  default_prompt: "Usa $la-posta-cine-cartelera-revalidator para revisar cartelera argentina y corregir plataformas."

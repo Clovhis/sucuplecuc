@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Add Movie"
+  short_description: "Carga películas con investigación AR eficiente"
+  default_prompt: "Usa $la-posta-cine-add-movie para cargar una película con investigación AR acotada y texto original de IA."

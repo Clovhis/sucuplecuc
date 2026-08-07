@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Auditor"
+  short_description: "Audita películas y copy editorial original"
+  default_prompt: "Usa $la-posta-cine-auditor para revisar una carga y rechazar cualquier copy no original."

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "la-posta-cine",
+  "version": "0.1.0",
+  "description": "Skills y herramientas de trabajo para mantener el catálogo editorial argentino de Cine Posta.",
+  "author": {
+    "name": "Cine Posta",
+    "url": "https://www.cineposta.com.ar/"
+  },
+  "homepage": "https://www.cineposta.com.ar/",
+  "repository": "https://github.com/Clovhis/sucuplecuc",
+  "keywords": [
+    "cine",
+    "argentina",
+    "astro",
+    "movie-catalog",
+    "editorial"
+  ]
+}

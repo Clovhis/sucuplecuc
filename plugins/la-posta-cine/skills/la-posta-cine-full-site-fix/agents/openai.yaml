@@ -1,0 +1,4 @@
+interface:
+  display_name: "La Posta Cine Full Site Fix"
+  short_description: "Repara problemas confirmados de todo el sitio"
+  default_prompt: "Usa $la-posta-cine-full-site-fix para auditar y reparar problemas confirmados en una rama fix."
