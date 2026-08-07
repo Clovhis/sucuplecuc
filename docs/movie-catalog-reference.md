@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-06. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-07. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1009
+Total de peliculas: 1028
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -16,11 +16,14 @@ Total de peliculas: 1009
 | 2026 | Amos del Universo | amos-del-universo-2026 | Accion | Prime Video | +13 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Cine | ATP |
+| 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus | ATP |
 | 2026 | Backrooms | backrooms-2026 | Terror | Cine | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
+| 2026 | Carrera de Bestias | carrera-de-bestias-2026 | Accion | Prime Video | +16 |
 | 2026 | Chris y Martina: El set decisivo | chris-y-martina-el-set-decisivo-2026 | Documental | Netflix | +18 |
+| 2026 | Clika | clika-2026 | Drama | HBO Max | +16 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Otras plataformas | +13 |
@@ -34,6 +37,8 @@ Total de peliculas: 1009
 | 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Otras plataformas | +13 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Disney Plus | +13 |
 | 2026 | El drama | the-drama-2026 | Romance | Otras plataformas | +17 |
+| 2026 | El escándalo de Trustor desde dentro | el-escandalo-de-trustor-desde-dentro-2026 | Documental | Netflix | ATP |
+| 2026 | El Huésped Oculto | el-huesped-oculto-2026 | Thriller | HBO Max | +16 |
 | 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Otras plataformas | ATP |
 | 2026 | El partido | el-partido-2026 | Documental | Otras plataformas | ATP |
 | 2026 | El pasajero del diablo | el-pasajero-del-diablo-2026 | Terror | Otras plataformas | +17 |
@@ -68,6 +73,7 @@ Total de peliculas: 1009
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | La tierra explota | la-tierra-explota-2026 | Documental | Otras plataformas | ATP |
+| 2026 | La última casa | la-ultima-casa-2026 | Terror | Netflix | +16 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Otras plataformas | +16 |
@@ -78,6 +84,7 @@ Total de peliculas: 1009
 | 2026 | Los creyentes | los-creyentes-2026 | Thriller | Netflix | +16 |
 | 2026 | Los Descendientes: viaje al mundo oscuro | los-descendientes-viaje-al-mundo-oscuro-2026 | Musical | Disney Plus | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
+| 2026 | Luchadores 2 | luchadores-2-2026 | Comedia | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mensajes de voz para Isabelle | mensajes-de-voz-para-isabelle-2026 | Romance | Netflix | +13 |
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
@@ -100,7 +107,7 @@ Total de peliculas: 1009
 | 2026 | Primate | primate-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Protector | protector-2026 | Accion | Otras plataformas | +16 |
 | 2026 | Proyecto Salvación | project-hail-mary-2026 | Ciencia ficcion | Prime Video | +13 |
-| 2026 | Psycho Killer | psycho-killer-2026 | Terror | Otras plataformas | +17 |
+| 2026 | Psycho Killer | psycho-killer-2026 | Terror | Disney Plus | +17 |
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
@@ -126,6 +133,7 @@ Total de peliculas: 1009
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Cine | ATP |
+| 2026 | Un comeback salvaje | un-comeback-salvaje-2026 | Comedia | Netflix | +13 |
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
@@ -155,13 +163,16 @@ Total de peliculas: 1009
 | 2025 | El gran arco | el-gran-arco-2025 | Drama | Otras plataformas | ATP |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
 | 2025 | Ella y su hijo | ella-y-su-hijo-2025 | Drama | Otras plataformas | +13 |
+| 2025 | Escuadrón letal | escuadron-letal-2025 | Accion | Apple TV | +13 |
 | 2025 | Exit 8 | exit-8-2025 | Terror | Otras plataformas | +13 |
 | 2025 | F1: The Movie | f1-the-movie-2025 | Drama | Apple TV | ATP |
 | 2025 | Fear Street: Prom Queen | fear-street-prom-queen-2025 | Terror | Netflix | +18 |
 | 2025 | Final Destination: Bloodlines | final-destination-bloodlines-2025 | Terror | HBO Max | +16 |
+| 2025 | Five Nights at Freddy's 2 | five-nights-at-freddys-2-2025 | Terror | HBO Max + Apple TV | +16 |
 | 2025 | Frankenstein | frankenstein-2025 | Terror | Netflix | +16 |
 | 2025 | Franz | franz-2025 | Drama | Cine | ATP |
 | 2025 | G20 | g20-2025 | Accion | Prime Video | +16 |
+| 2025 | Guardianes de la noche: Kimetsu no Yaiba La fortaleza infinita | guardianes-de-la-noche-la-fortaleza-infinita-2025 | Anime | Crunchyroll | +13 |
 | 2025 | Hamnet | hamnet-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Havoc | havoc-2025 | Accion | Netflix | +16 |
 | 2025 | Heart Eyes | heart-eyes-2025 | Terror | Netflix | +17 |
@@ -175,8 +186,10 @@ Total de peliculas: 1009
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Otras plataformas | +12 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
+| 2025 | Los aitas | los-aitas-2025 | Comedia | Apple TV | ATP |
 | 2025 | Los domingos | los-domingos-2025 | Drama | Cine | +12 |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Otras plataformas | ATP |
+| 2025 | Los mejores de Manila | los-mejores-de-manila-2025 | Crimen | Netflix | +16 |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
 | 2025 | Me has robado el corazón | me-has-robado-el-corazon-2025 | Comedia romántica | Otras plataformas | +16 |
@@ -216,6 +229,7 @@ Total de peliculas: 1009
 | 2025 | Weapons | weapons-2025 | Terror | HBO Max | +16 |
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Otras plataformas | ATP |
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max | +17 |
+| 2025 | Zombie Land Saga: Yumeginga Paradise | zombie-land-saga-yumeginga-paradise-2025 | Anime | Crunchyroll | +13 |
 | 2025 | Zona de riesgo | zona-de-riesgo-2025 | Accion | Otras plataformas | +17 |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Disney Plus | ATP |
 | 2024 | 40 Acres | 40-acres-2024 | Thriller | Netflix | +16 |
@@ -395,6 +409,7 @@ Total de peliculas: 1009
 | 2020 | Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train | demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020 | Anime | Crunchyroll | +12 |
 | 2020 | Earwig and the Witch | earwig-and-the-witch-2020 | Anime | Netflix | ATP |
 | 2020 | Nomadland | nomadland-2020 | Drama | Disney Plus | +17 |
+| 2020 | Palm Springs | palm-springs-2020 | Comedia romantica | Disney Plus | +16 |
 | 2020 | Rifkin's Festival | rifkin-s-festival-2020 | Comedia | Otras plataformas | +13 |
 | 2020 | Tenet | tenet-2020 | Ciencia ficcion | HBO Max + DGO | +13 |
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus | +13 |
@@ -451,6 +466,7 @@ Total de peliculas: 1009
 | 2017 | John Wick: Chapter 2 | john-wick-chapter-2-2017 | Accion | Prime Video | +16 |
 | 2017 | Justice League | justice-league-2017 | Accion | Otras plataformas | +13 |
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max | +12 |
+| 2017 | La cura siniestra | la-cura-siniestra-2017 | Terror | Prime Video | +16 |
 | 2017 | Lady Bird | lady-bird-2017 | Drama | Otras plataformas | +17 |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus | +17 |
 | 2017 | Los archivos del Pentágono | the-post-2017 | Drama | Otras plataformas | +13 |
@@ -592,6 +608,7 @@ Total de peliculas: 1009
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus | +16 |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix | +13 |
+| 2009 | Fantástico Sr. Fox | fantastico-sr-fox-2009 | Animacion | Prime Video | ATP |
 | 2009 | Fast & Furious | fast-and-furious-2009 | Accion | HBO Max | +13 |
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max | +12 |
@@ -637,6 +654,7 @@ Total de peliculas: 1009
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
 | 2007 | Sweeney Todd: The Demon Barber of Fleet Street | sweeney-todd-the-demon-barber-of-fleet-street-2007 | Musical | Otras plataformas | +17 |
 | 2006 | Casino Royale | casino-royale-2006 | Accion | Netflix | +12 |
+| 2006 | La fuente de la vida | la-fuente-de-la-vida-2006 | Drama | Prime Video | +13 |
 | 2006 | Mission: Impossible III | mission-impossible-iii-2006 | Accion | Disney Plus | +13 |
 | 2006 | Paprika | paprika-2006 | Anime | Otras plataformas | +13 |
 | 2006 | Pirates of the Caribbean: Dead Man's Chest | pirates-of-the-caribbean-dead-mans-chest-2006 | Aventura | Disney Plus | +13 |
@@ -781,6 +799,7 @@ Total de peliculas: 1009
 | 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus | +17 |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Otras plataformas | +13 |
 | 1995 | Casino | casino-1995 | Crimen | Otras plataformas | +18 |
+| 1995 | Días extraños | dias-extranos-1995 | Ciencia ficcion | Disney Plus | +18 |
 | 1995 | El día de la bestia | el-dia-de-la-bestia-1995 | Terror | Apple TV | +18 |
 | 1995 | Four Rooms | four-rooms-1995 | Comedia | Otras plataformas | +17 |
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix | +17 |
