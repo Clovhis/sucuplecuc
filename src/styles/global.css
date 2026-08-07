@@ -467,6 +467,16 @@ img {
 	padding-bottom: 3.6rem;
 }
 
+.home-catalog__primary {
+	display: grid;
+	min-width: 0;
+	gap: 1.35rem;
+}
+
+.home-catalog__primary > * {
+	min-width: 0;
+}
+
 .home-catalog__desktop-extra {
 	display: block;
 }
@@ -648,7 +658,7 @@ img {
 .home-actor-game__link {
 	position: relative;
 	display: grid;
-	grid-template-columns: minmax(0, 0.98fr) minmax(20rem, 1.02fr);
+	grid-template-columns: minmax(0, 0.98fr) minmax(0, 1.02fr);
 	align-items: stretch;
 	min-height: 12.25rem;
 	color: inherit;
@@ -788,7 +798,7 @@ img {
 
 .home-community-promo {
 	display: grid;
-	grid-template-columns: minmax(18rem, 1fr) clamp(25rem, 38vw, 31rem) auto;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) auto;
 	align-items: center;
 	gap: clamp(0.7rem, 1.4vw, 1.1rem);
 	min-height: 12.25rem;
@@ -1153,7 +1163,7 @@ img {
 
 .catalog-shell__main {
 	display: grid;
-	grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr);
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
 	gap: 1rem;
 	align-items: start;
 }
@@ -1386,6 +1396,7 @@ img {
 .home-results-tools {
 	display: grid;
 	gap: 1rem;
+	min-width: 0;
 	padding: 1rem;
 	border-radius: 22px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1451,6 +1462,7 @@ img {
 	grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
 	gap: 1.15rem;
 	align-items: stretch;
+	min-width: 0;
 }
 
 .home-results-tools__filter-column {
@@ -1674,6 +1686,7 @@ img {
 	justify-content: center;
 	width: 100%;
 	min-width: 0;
+	max-width: 100%;
 	min-height: 2.6rem;
 	padding: 0.42rem 0.56rem;
 	border-radius: var(--control-radius);
@@ -1746,6 +1759,8 @@ img {
 }
 
 .home-platform-filter__badge.platform-chip {
+	min-width: 0;
+	max-width: 100%;
 	padding: 0;
 	border: 0;
 	background: transparent;
@@ -1755,6 +1770,12 @@ img {
 .home-platform-filter__badge.platform-chip--brand {
 	padding: 0;
 	--platform-chip-logo-max-height: 1.25rem;
+}
+
+.home-platform-filter__badge.platform-chip--other-platforms {
+	inline-size: auto;
+	max-inline-size: 100%;
+	min-inline-size: 0;
 }
 
 .home-platform-filter__badge .platform-chip__logo {
@@ -2831,6 +2852,9 @@ img {
 	display: grid;
 	gap: 1rem;
 	position: relative;
+	min-width: 0;
+	max-width: 100%;
+	overflow: hidden;
 	padding: clamp(1rem, 2.4vw, 1.45rem);
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 20px;
@@ -2931,6 +2955,9 @@ img {
 }
 
 .cinema-release-carousel__viewport {
+	width: 100%;
+	min-width: 0;
+	max-width: 100%;
 	overflow-x: auto;
 	scrollbar-width: none;
 	scroll-snap-type: x mandatory;
@@ -3060,6 +3087,8 @@ img {
 .cinema-release-carousel__platform.platform-chip {
 	justify-self: flex-start;
 	inline-size: fit-content;
+	max-inline-size: 100%;
+	min-inline-size: 0;
 }
 
 .cinema-release-carousel__platform .platform-chip__logo {
@@ -3943,6 +3972,8 @@ img {
 	grid-row: 1 / span 3;
 	width: 84px;
 	height: 66px;
+	min-width: 0;
+	max-width: 100%;
 	align-self: center;
 	justify-self: end;
 }
@@ -3995,6 +4026,8 @@ img {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	min-width: 0;
+	max-width: 100%;
 	font-size: 0.72rem;
 	line-height: 1;
 	padding: 0.2rem 0.52rem;
@@ -4037,18 +4070,24 @@ img {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	min-width: 0;
+	max-width: 100%;
 	width: 100%;
 	font-size: 0.76rem;
 	font-weight: 700;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	white-space: nowrap;
+	text-align: center;
+	white-space: normal;
+	overflow-wrap: anywhere;
 }
 
 .platform-mark {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	min-width: 0;
+	max-width: 100%;
 }
 
 .platform-badge-group {
@@ -4064,11 +4103,13 @@ img {
 	justify-content: center;
 	width: 100%;
 	height: 100%;
+	min-width: 0;
 	gap: 0.34rem;
 }
 
 .platform-badge-group--tile .platform-badge-group__item {
 	width: 100%;
+	min-width: 0;
 }
 
 .platform-badge-group--tile.platform-badge-group--count-2 .platform-badge-group__item {
@@ -4079,6 +4120,9 @@ img {
 .platform-mark--tile {
 	width: 100%;
 	height: 100%;
+	min-width: 0;
+	max-width: 100%;
+	box-sizing: border-box;
 	padding: 0.45rem 0.5rem;
 	border-radius: 12px;
 	border: 1px solid rgba(147, 160, 184, 0.26);
@@ -4127,9 +4171,12 @@ img {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	max-width: 100%;
 	gap: 0.04rem;
 	line-height: 1.05;
-	white-space: nowrap;
+	text-align: center;
+	white-space: normal;
+	overflow-wrap: anywhere;
 }
 
 .platform-label--stacked > span {
@@ -4142,16 +4189,22 @@ img {
 	padding-inline: 0.3rem;
 }
 
+.home-platform-filter__badge.platform-chip--other-platforms:not(.platform-mark--tile) {
+	inline-size: auto;
+	max-inline-size: 100%;
+}
+
 .platform-chip--other-platforms:not(.platform-mark--tile) .platform-label--stacked {
 	font-size: 0.62rem;
 	letter-spacing: 0.035em;
 }
 
 .platform-mark--tile.platform-chip--other-platforms {
-	inline-size: clamp(3.75rem, 16vw, 4.5rem);
+	inline-size: 100%;
+	max-inline-size: 100%;
 	min-inline-size: 0;
 	padding-inline: 0.24rem;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .platform-mark--tile.platform-chip--other-platforms .platform-label--stacked {

@@ -24,7 +24,7 @@ const cast = people.cast.slice(0, 4);
 const genres = [movie.category, ...(movie.genres ?? [])].filter((genre, index, values) => genre && values.indexOf(genre) === index).slice(0, 3);
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} image={getPosterUrl(movie.poster)} structuredData={structuredData} noindex={true} allowAds={false}>
+<BaseLayout title={pageTitle} description={pageDescription} image={getPosterUrl(movie.poster)} structuredData={structuredData} noindex={true}>
 	<main id="main-content" class="container community-page community-discussion-page">
 		<nav class="community-page__nav" aria-label="Navegación principal">
 			<a class="community-page__home-link" href={COMMUNITY_PATH}>Foro Cineposta</a>

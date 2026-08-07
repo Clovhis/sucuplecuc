@@ -1,0 +1,192 @@
+---
+import MovieCard from './MovieCard.astro';
+import PlatformBadge from './PlatformBadge.astro';
+import type { PlatformFilterOption } from '../lib/platforms';
+import type { Movie } from '../types/movie';
+
+interface FilterOption {
+	id: string;
+	label: string;
+}
+
+interface Props {
+	movies: Movie[];
+	platformOptions: PlatformFilterOption[];
+	editorialFilterOptions: FilterOption[];
+	primaryGenreOptions: FilterOption[];
+	subgenreOptions: FilterOption[];
+	initialHomeMovies: Movie[];
+	deferredHomeMovies: Movie[];
+	movieCountLabel: string;
+}
+
+const {
+	movies,
+	platformOptions,
+	editorialFilterOptions,
+	primaryGenreOptions,
+	subgenreOptions,
+	initialHomeMovies,
+	deferredHomeMovies,
+	movieCountLabel,
+} = Astro.props;
+---
+
+{
+	movies.length > 0 ? (
+		<section class="home-catalog__primary" aria-label="Catálogo principal">
+			<section id="catalogo-filtros" class="home-results-tools fade-up" style="--item-delay: 35ms;" aria-labelledby="home-results-tools-title">
+				<div class="home-results-tools__header">
+					<div>
+						<p class="home-results-tools__kicker">Catálogo argentino</p>
+						<h2 id="home-results-tools-title">Películas publicadas</h2>
+					</div>
+					<p class="home-results-tools__counter" aria-label={`${movieCountLabel} películas en el catálogo`}>
+						<strong>{movieCountLabel}</strong>
+						<span>películas en catálogo</span>
+					</p>
+				</div>
+				<div class="home-results-tools__filters">
+					<div class="home-results-tools__filter-column home-results-tools__filter-column--left">
+						{
+							platformOptions.length > 0 && (
+								<section class="home-platform-filter" data-home-platform-filter>
+									<p class="home-genre-filter__label">Dónde la querés ver</p>
+									<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
+										{
+											platformOptions.map((platform) => (
+												<button
+													type="button"
+													class="home-platform-filter__chip"
+													data-home-platform-chip
+													data-home-platform-id={platform.normalizedLabel}
+													data-home-platform-label={platform.displayLabel}
+													aria-label={`Filtrar por ${platform.displayLabel}`}
+													aria-pressed="false"
+													title={platform.displayLabel}
+												>
+													<PlatformBadge
+														platform={platform.normalizedLabel}
+														className="home-platform-filter__badge"
+													/>
+												</button>
+											))
+										}
+									</div>
+								</section>
+							)
+						}
+						{
+							editorialFilterOptions.length > 0 && (
+								<section class="home-genre-filter home-genre-filter--editorial" data-home-editorial-filter>
+									<p class="home-genre-filter__label">Otros filtros</p>
+									<div class="home-genre-filter__chips" role="group" aria-label="Filtros editoriales">
+										{
+											editorialFilterOptions.map((genre) => (
+												<button
+													type="button"
+													class="home-genre-filter__chip home-genre-filter__chip--editorial"
+													data-home-genre-chip
+													data-home-genre-id={genre.id}
+													data-home-genre-kind="editorial"
+													aria-pressed="false"
+												>
+													{genre.label}
+												</button>
+											))
+										}
+									</div>
+								</section>
+							)
+						}
+					</div>
+					<div class="home-results-tools__filter-column home-results-tools__filter-column--right">
+						<section class="home-genre-filter" data-home-genre-filter>
+							<p class="home-genre-filter__label">Qué género pinta</p>
+							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
+								{
+									primaryGenreOptions.map((genre) => (
+										<button
+											type="button"
+											class="home-genre-filter__chip"
+											data-home-genre-chip
+											data-home-genre-id={genre.id}
+											data-home-genre-kind="genre"
+											aria-pressed="false"
+										>
+											{genre.label}
+										</button>
+									))
+								}
+							</div>
+						</section>
+						{
+							subgenreOptions.length > 0 && (
+								<section class="home-genre-filter home-genre-filter--subgenre" data-home-subgenre-filter>
+									<div class="home-genre-filter__heading">
+										<p class="home-genre-filter__label">Subgéneros</p>
+										<p class="home-genre-filter__hint">Para afinar más la búsqueda</p>
+									</div>
+									<div class="home-genre-filter__chips" role="group" aria-label="Filtros por subgénero">
+										{
+											subgenreOptions.map((subgenre) => (
+												<button
+													type="button"
+													class="home-genre-filter__chip home-genre-filter__chip--subgenre"
+													data-home-subgenre-chip
+													data-home-subgenre-id={subgenre.id}
+													aria-pressed="false"
+												>
+													{subgenre.label}
+												</button>
+											))
+										}
+									</div>
+								</section>
+							)
+						}
+					</div>
+				</div>
+				<div class="home-results-tools__feedback">
+					<div
+						class="movie-search__status"
+						data-movie-search-status
+						role="status"
+						aria-live="polite"
+						aria-atomic="true"
+						hidden
+					>
+						<span class="movie-search__status-spinner" aria-hidden="true"></span>
+						<p class="movie-search__status-copy" data-movie-search-status-copy>
+							Bancá, que estoy acomodando el videoclub...
+						</p>
+					</div>
+					<p class="message-box movie-search__empty" data-movie-search-empty hidden>
+						No apareció nada con ese combo. Probá aflojar algún filtro.
+					</p>
+				</div>
+			</section>
+
+			<section
+				class="movie-grid"
+				aria-label="Películas publicadas"
+				data-movie-search-grid
+				data-movie-initial-count={initialHomeMovies.length}
+				data-movie-total-count={movies.length}
+			>
+				{initialHomeMovies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
+			</section>
+			<div hidden data-movie-card-templates aria-hidden="true">
+				{
+					deferredHomeMovies.map((movie, index) => (
+						<template data-movie-card-template>
+							<MovieCard movie={movie} index={index + initialHomeMovies.length} />
+						</template>
+					))
+				}
+			</div>
+		</section>
+	) : (
+		<p class="message-box">Todavía no cargamos ninguna peli. Meté la primera ficha manual.</p>
+	)
+}

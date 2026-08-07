@@ -3,9 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
-import MovieCard from '../components/MovieCard.astro';
+import HomePrimaryCatalog from '../components/HomePrimaryCatalog.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
-import PlatformBadge from '../components/PlatformBadge.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
@@ -21,7 +20,7 @@ import {
 } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
-import { ABOUT_PATH, COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
@@ -73,7 +72,6 @@ const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.le
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de películas';
 const pageDescription = SITE_DESCRIPTION;
 const structuredData = createHomeStructuredData(movies, pageTitle, pageDescription);
-const welcomeCharacters = `${import.meta.env.BASE_URL}images/home/cineposta-bienvenida-personajes.png`;
 const actorCareerGameArt = `${import.meta.env.BASE_URL}images/home/cineposta-simulador-carrera-actor.png`;
 const actorCareerGamePath = `${import.meta.env.BASE_URL}juegos/simulador-carrera-actor/`;
 const UPCOMING_SUGGESTION_TITLE_MAX_CHARS = 40;
@@ -242,83 +240,19 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 	</header>
 
 	<main id="main-content" class="container home-catalog">
-		<section class="home-welcome fade-up" style="--item-delay: 35ms;" aria-labelledby="home-welcome-title">
-			<div class="home-welcome__content">
-				<p class="home-welcome__eyebrow">¿Primera vez por acá?</p>
-				<h2 id="home-welcome-title">¿Qué somos?</h2>
-				<p class="home-welcome__copy">
-					Somos un sitio argentino de reseñas cortas y sin chamuyo para decidir qué mirar. Entrás, chusmeás y te llevás una señal clara sin vueltas. <strong>No alojamos películas, torrents, descargas ni enlaces piratas:</strong> te orientamos hacia opciones oficiales.
-				</p>
-				<ul class="home-welcome__details" aria-label="Cómo usar Cine Posta">
-					<li>
-						<strong>Sin login</strong>
-						<span>No hace falta crear usuario ni acordarte de una password.</span>
-					</li>
-					<li>
-						<strong>Sin Ads</strong>
-						<span>La experiencia va al grano, sin banners cortándote la búsqueda.</span>
-					</li>
-					<li>
-						<strong>Filtros al final</strong>
-						<span>Bajá hasta el catálogo y buscá por título, actor, género, plataforma o veredicto.</span>
-					</li>
-				</ul>
-				<div class="home-welcome__actions">
-					<a class="home-welcome__link" href="#catalogo-filtros">Ir al filtro de películas <span aria-hidden="true">↓</span></a>
-					<a class="home-welcome__link home-welcome__link--secondary" href={ABOUT_PATH}>Conocé cómo funciona <span aria-hidden="true">→</span></a>
-				</div>
-			</div>
-			<div class="home-welcome__art" aria-hidden="true">
-				<img
-					src={welcomeCharacters}
-					alt=""
-					width="1792"
-					height="896"
-					decoding="async"
-				/>
-			</div>
-		</section>
-		<section class="home-actor-game fade-up" style="--item-delay: 50ms;" aria-labelledby="home-actor-game-title" data-home-actor-game>
-			<a class="home-actor-game__link" href={actorCareerGamePath}>
-				<div class="home-actor-game__content">
-					<p class="home-actor-game__eyebrow"><span aria-hidden="true">✦</span> Minijuego nuevo</p>
-					<h2 id="home-actor-game-title">Construí tu carrera en el cine</h2>
-					<p class="home-actor-game__copy">
-						Elegí tu oficio y pasá de un rodaje croto a la alfombra roja.
-					</p>
-					<span class="home-actor-game__cta">Jugar al simulador <span aria-hidden="true">→</span></span>
-				</div>
-				<div class="home-actor-game__art" aria-hidden="true">
-					<span class="home-actor-game__art-label">Del primer casting a los premios</span>
-					<img
-						src={actorCareerGameArt}
-						alt=""
-						width="1536"
-						height="1024"
-						loading="lazy"
-						decoding="async"
-					/>
-				</div>
-			</a>
-		</section>
+		<HomePrimaryCatalog
+			movies={movies}
+			platformOptions={platformOptions}
+			editorialFilterOptions={editorialFilterOptions}
+			primaryGenreOptions={primaryGenreOptions}
+			subgenreOptions={subgenreOptions}
+			initialHomeMovies={initialHomeMovies}
+			deferredHomeMovies={deferredHomeMovies}
+			movieCountLabel={movieCountLabel}
+		/>
 		{
 			movies.length > 0 ? (
 				<>
-					<section class="home-community-promo fade-up" style="--item-delay: 55ms;" aria-labelledby="home-community-promo-title">
-						<div class="home-community-promo__content">
-							<p class="home-community-promo__eyebrow">Comunidad</p>
-							<h2 id="home-community-promo-title">Foro Cineposta</h2>
-							<p data-community-home-banner>¿La viste? Vení a debatirla sin humo.</p>
-						</div>
-						<div class="home-community-promo__illustration" aria-hidden="true">
-							<img src="/images/community/foro-cineposta-banner-trio-transparent.png" alt="" width="1900" height="828" loading="lazy" decoding="async" />
-						</div>
-						<a href={COMMUNITY_PATH}>Ir a la comunidad</a>
-					</section>
-					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 80ms;" aria-label="Qué vemos hoy">
-						<PostometroTeaser compact={true} />
-					</section>
-
 					<div class="home-catalog__desktop-extra">
 						<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
 							<h2 class="u-visually-hidden">Filtros del catálogo y últimas reseñas</h2>
@@ -587,159 +521,46 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						)
 					}
 
-					<section id="catalogo-filtros" class="home-results-tools fade-up" style="--item-delay: 140ms;" aria-labelledby="home-results-tools-title">
-						<div class="home-results-tools__header">
-							<div>
-								<h2 id="home-results-tools-title">Películas publicadas</h2>
-							</div>
-							<p class="home-results-tools__counter" aria-label={`${movieCountLabel} películas en el catálogo`}>
-								<strong>{movieCountLabel}</strong>
-								<span>películas en catálogo</span>
-							</p>
-						</div>
-						<div class="home-results-tools__filters">
-							<div class="home-results-tools__filter-column home-results-tools__filter-column--left">
-								{
-									platformOptions.length > 0 && (
-										<section class="home-platform-filter" data-home-platform-filter>
-											<p class="home-genre-filter__label">Dónde la querés ver</p>
-											<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
-												{
-													platformOptions.map((platform) => (
-														<button
-															type="button"
-															class="home-platform-filter__chip"
-															data-home-platform-chip
-															data-home-platform-id={platform.normalizedLabel}
-															data-home-platform-label={platform.displayLabel}
-															aria-label={`Filtrar por ${platform.displayLabel}`}
-															aria-pressed="false"
-															title={platform.displayLabel}
-														>
-															<PlatformBadge
-																platform={platform.normalizedLabel}
-																className="home-platform-filter__badge"
-															/>
-														</button>
-													))
-												}
-											</div>
-										</section>
-									)
-								}
-								{
-									editorialFilterOptions.length > 0 && (
-										<section class="home-genre-filter home-genre-filter--editorial" data-home-editorial-filter>
-											<p class="home-genre-filter__label">Otros filtros</p>
-											<div class="home-genre-filter__chips" role="group" aria-label="Filtros editoriales">
-												{
-													editorialFilterOptions.map((genre) => (
-														<button
-															type="button"
-															class="home-genre-filter__chip home-genre-filter__chip--editorial"
-															data-home-genre-chip
-															data-home-genre-id={genre.id}
-															data-home-genre-kind="editorial"
-															aria-pressed="false"
-														>
-															{genre.label}
-														</button>
-													))
-												}
-											</div>
-										</section>
-									)
-								}
-							</div>
-							<div class="home-results-tools__filter-column home-results-tools__filter-column--right">
-								<section class="home-genre-filter" data-home-genre-filter>
-									<p class="home-genre-filter__label">Qué género pinta</p>
-									<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
-										{
-											primaryGenreOptions.map((genre) => (
-												<button
-													type="button"
-													class="home-genre-filter__chip"
-													data-home-genre-chip
-													data-home-genre-id={genre.id}
-													data-home-genre-kind="genre"
-													aria-pressed="false"
-												>
-													{genre.label}
-												</button>
-											))
-										}
-									</div>
-								</section>
-								{
-									subgenreOptions.length > 0 && (
-										<section class="home-genre-filter home-genre-filter--subgenre" data-home-subgenre-filter>
-											<div class="home-genre-filter__heading">
-												<p class="home-genre-filter__label">Subgéneros</p>
-												<p class="home-genre-filter__hint">Para afinar más la búsqueda</p>
-											</div>
-											<div class="home-genre-filter__chips" role="group" aria-label="Filtros por subgénero">
-												{
-													subgenreOptions.map((subgenre) => (
-														<button
-															type="button"
-															class="home-genre-filter__chip home-genre-filter__chip--subgenre"
-															data-home-subgenre-chip
-															data-home-subgenre-id={subgenre.id}
-															aria-pressed="false"
-														>
-															{subgenre.label}
-														</button>
-													))
-												}
-											</div>
-										</section>
-									)
-								}
-							</div>
-						</div>
-						<div class="home-results-tools__feedback">
-							<div
-								class="movie-search__status"
-								data-movie-search-status
-								role="status"
-								aria-live="polite"
-								aria-atomic="true"
-								hidden
-							>
-								<span class="movie-search__status-spinner" aria-hidden="true"></span>
-								<p class="movie-search__status-copy" data-movie-search-status-copy>
-									Bancá, que estoy acomodando el videoclub...
+					<section class="home-actor-game fade-up" style="--item-delay: 150ms;" aria-labelledby="home-actor-game-title" data-home-actor-game>
+						<a class="home-actor-game__link" href={actorCareerGamePath}>
+							<div class="home-actor-game__content">
+								<p class="home-actor-game__eyebrow"><span aria-hidden="true">✦</span> Minijuego nuevo</p>
+								<h2 id="home-actor-game-title">Construí tu carrera en el cine</h2>
+								<p class="home-actor-game__copy">
+									Elegí tu oficio y pasá de un rodaje croto a la alfombra roja.
 								</p>
+								<span class="home-actor-game__cta">Jugar al simulador <span aria-hidden="true">→</span></span>
 							</div>
-							<p class="message-box movie-search__empty" data-movie-search-empty hidden>
-								No apareció nada con ese combo. Probá aflojar algún filtro.
-							</p>
-						</div>
+							<div class="home-actor-game__art" aria-hidden="true">
+								<span class="home-actor-game__art-label">Del primer casting a los premios</span>
+								<img
+									src={actorCareerGameArt}
+									alt=""
+									width="1536"
+									height="1024"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+						</a>
 					</section>
 
-					<section
-						class="movie-grid"
-						aria-label="Películas publicadas"
-						data-movie-search-grid
-						data-movie-initial-count={initialHomeMovies.length}
-						data-movie-total-count={movies.length}
-					>
-						{initialHomeMovies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
+					<section class="home-community-promo fade-up" style="--item-delay: 165ms;" aria-labelledby="home-community-promo-title">
+						<div class="home-community-promo__content">
+							<p class="home-community-promo__eyebrow">Comunidad</p>
+							<h2 id="home-community-promo-title">Foro Cineposta</h2>
+							<p data-community-home-banner>¿La viste? Vení a debatirla sin humo.</p>
+						</div>
+						<div class="home-community-promo__illustration" aria-hidden="true">
+							<img src="/images/community/foro-cineposta-banner-trio-transparent.png" alt="" width="1900" height="828" loading="lazy" decoding="async" />
+						</div>
+						<a href={COMMUNITY_PATH}>Ir a la comunidad</a>
 					</section>
-					<div hidden data-movie-card-templates aria-hidden="true">
-						{
-							deferredHomeMovies.map((movie, index) => (
-								<template data-movie-card-template>
-									<MovieCard movie={movie} index={index + initialHomeMovies.length} />
-								</template>
-							))
-						}
-					</div>
+					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 180ms;" aria-label="Qué vemos hoy">
+						<PostometroTeaser compact={true} />
+					</section>
 				</>
-			) : (
-				<p class="message-box">Todavía no cargamos ninguna peli. Meté la primera ficha manual.</p>
-			)
+			) : null
 		}
 	</main>
 </BaseLayout>

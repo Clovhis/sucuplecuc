@@ -6,9 +6,9 @@ El render público usa exclusivamente `editorialBiography` y sólo cuando `edito
 
 Estados posibles:
 
-- `approved`: texto original de Cine Posta, revisado manualmente, con fuentes específicas. Puede indexarse, aparecer en el sitemap y cargar anuncios.
-- `pending`: la ficha tiene o puede tener material heredado, pero espera investigación y redacción editorial. Sigue navegable, con `noindex, follow`, fuera del sitemap y sin anuncios.
-- `informational`: ficha estable de datos verificables, premios y filmografía interna sin biografía editorial. También es `noindex, follow`, queda fuera del sitemap y sin anuncios.
+- `approved`: texto original de Cine Posta, revisado manualmente, con fuentes específicas. Puede indexarse y aparecer en el sitemap.
+- `pending`: la ficha tiene o puede tener material heredado, pero espera investigación y redacción editorial. Sigue navegable, con `noindex, follow` y fuera del sitemap.
+- `informational`: ficha estable de datos verificables, premios y filmografía interna sin biografía editorial. También es `noindex, follow` y queda fuera del sitemap.
 
 ## Cómo aprobar una biografía
 
@@ -18,4 +18,4 @@ Estados posibles:
 4. Marcá `editorialStatus: 'approved'` sólo después de una revisión humana de originalidad, exactitud, valor editorial y fuentes.
 5. Ejecutá `npm run audit:profile-originality -- --require-dist`, `npm run check`, `npm run build` y las pruebas pertinentes.
 
-La validación bloquea el render de `biography`, la inclusión accidental de fragmentos heredados en la salida construida y cualquier perfil no aprobado que quede indexable, en sitemap o con el cargador de anuncios.
+La validación bloquea el render de `biography`, la inclusión accidental de fragmentos heredados en la salida construida y cualquier perfil no aprobado que quede indexable o en el sitemap.

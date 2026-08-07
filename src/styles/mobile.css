@@ -105,6 +105,28 @@
 		min-height: 0;
 	}
 
+	.home-catalog__primary {
+		gap: 0.8rem;
+	}
+
+	.home-results-tools__header {
+		display: flex;
+		align-items: end;
+		flex-wrap: wrap;
+		gap: 0.65rem;
+		padding-bottom: 0.6rem;
+	}
+
+	.home-results-tools__header > div {
+		min-width: 0;
+		flex: 1 1 12rem;
+	}
+
+	.home-results-tools__counter {
+		justify-content: flex-start;
+		text-align: left;
+	}
+
 	.home-actor-game__content {
 		min-height: 14.5rem;
 		padding: 1.15rem;
@@ -254,5 +276,76 @@
 	.people-index__hero,
 	.postometro-hero {
 		min-height: 22rem;
+	}
+}
+
+/* A phone can report a desktop viewport after "Sitio para computadoras" is enabled. */
+@media (max-width: 68rem) {
+	.site-header,
+	.container,
+	.home-catalog {
+		width: min(100%, calc(100vw - 1rem));
+	}
+
+	.site-search-bar {
+		grid-template-columns: auto minmax(0, 1fr);
+	}
+
+	.site-header__actions {
+		display: grid;
+		grid-column: 1 / -1;
+		justify-self: end;
+	}
+
+	.home-results-tools__filters,
+	.catalog-shell__main {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.home-actor-game__link {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.home-community-promo {
+		grid-template-columns: minmax(0, 1fr) minmax(8rem, 12rem);
+		grid-template-rows: auto auto;
+	}
+
+	.home-community-promo__content {
+		grid-column: 1;
+		grid-row: 1;
+		min-width: 0;
+	}
+
+	.home-community-promo__illustration {
+		grid-column: 2;
+		grid-row: 1 / 3;
+		min-width: 0;
+	}
+
+	.home-community-promo a {
+		grid-column: 1;
+		grid-row: 2;
+		width: fit-content;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 68rem) and (pointer: coarse) {
+	.home-catalog__desktop-extra,
+	.editorial-rankings,
+	.weekly-suggestion {
+		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.site-search-bar {
+		grid-template-columns: 1fr;
+	}
+
+	.site-header__actions {
+		grid-column: 1 / -1;
+		width: 100%;
 	}
 }

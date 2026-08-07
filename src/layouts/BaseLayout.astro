@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import '../styles/mobile.css';
 import DonationGate from '../components/DonationGate.astro';
-import { ADSENSE_CLIENT_ID } from '../lib/adsense';
 import {
 	ABOUT_PATH,
 	COMMUNITY_PATH,
@@ -27,7 +26,6 @@ interface Props {
 	openGraphType?: 'article' | 'website';
 	structuredData?: Array<Record<string, unknown>>;
 	noindex?: boolean;
-	allowAds?: boolean;
 	canonicalUrl?: string;
 	redirectUrl?: string;
 }
@@ -39,7 +37,6 @@ const {
 	openGraphType = 'website',
 	structuredData = [],
 	noindex = false,
-	allowAds = true,
 	canonicalUrl,
 	redirectUrl,
 } = Astro.props as Props;
@@ -95,16 +92,6 @@ const currentYear = new Date().getFullYear();
 		/>
 		<meta name="author" content={SITE_NAME} />
 		<meta name="referrer" content="strict-origin-when-cross-origin" />
-		{
-			allowAds && !noindex && (
-				<script
-					is:inline
-					async
-					src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-					crossorigin="anonymous"
-				></script>
-			)
-		}
 		<meta name="theme-color" content="#06070a" />
 		<meta name="application-name" content={SITE_NAME} />
 		<title>{title}</title>

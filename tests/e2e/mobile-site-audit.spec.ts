@@ -37,10 +37,6 @@ test.describe('mobile-only whole-site audit', () => {
 		mkdirSync(outputDirectory, { recursive: true });
 		const results: unknown[] = [];
 
-		await page.route(/pagead2\.googlesyndication\.com|googleads\.g\.doubleclick\.net/, (route) =>
-			route.fulfill({ status: 204, contentType: 'text/javascript', body: '' }),
-		);
-
 		for (const scenario of scenarios) {
 			await page.setViewportSize(scenario.viewport);
 			const consoleErrors: string[] = [];

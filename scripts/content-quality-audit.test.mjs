@@ -1,7 +1,7 @@
 import { spawnSync } from 'node:child_process';
 import assert from 'node:assert/strict';
 
-const result = spawnSync(process.execPath, ['scripts/adsense-content-audit.mjs', '--self-test'], {
+const result = spawnSync(process.execPath, ['scripts/content-quality-audit.mjs', '--self-test'], {
 	encoding: 'utf8',
 });
 

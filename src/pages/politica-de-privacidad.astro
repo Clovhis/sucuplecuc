@@ -5,7 +5,7 @@ import { CONTACT_EMAIL, PRIVACY_PATH, SITE_LANGUAGE, SITE_NAME, SITE_URL } from 
 
 const pageTitle = `Política de Privacidad | ${SITE_NAME}`;
 const pageDescription =
-	'Política de privacidad de Cine Posta: información clara sobre anuncios de Google AdSense, cookies, medición de anuncios y opciones de consentimiento.';
+	'Política de privacidad de Cine Posta: cómo tratamos los datos técnicos y la participación en la comunidad, sin publicidad personalizada.';
 const privacyUrl = new URL(PRIVACY_PATH, SITE_URL).toString();
 const structuredData = [
 	{
@@ -32,75 +32,60 @@ const structuredData = [
 		</div>
 
 		<section class="about-page__hero privacy-page__hero fade-up" style="--item-delay: 0ms;">
-			<p class="about-page__kicker">Privacidad, anuncios y cookies</p>
+			<p class="about-page__kicker">Privacidad y datos</p>
 			<h1 class="about-page__title">Política de Privacidad</h1>
 			<p class="about-page__lead">
-				En {SITE_NAME} preferimos explicar esto corto y claro: el sitio puede mostrar anuncios, y para eso pueden usarse
-				cookies u otras tecnologías parecidas.
+				En {SITE_NAME} preferimos explicar esto corto y claro: no mostramos anuncios ni usamos plataformas publicitarias.
+				Esta página resume qué puede ocurrir cuando navegás, participás en la comunidad o seguís un enlace externo.
 			</p>
 		</section>
 
 		<article class="about-page__card privacy-page__content fade-up" style="--item-delay: 80ms;">
 			<section class="privacy-page__section">
-				<h2>Anuncios en el sitio</h2>
+				<h2>Datos técnicos del sitio</h2>
 				<p>
-					{SITE_NAME} puede mostrar anuncios mediante Google AdSense. Esos anuncios ayudan a bancar el proyecto
-					y pueden aparecer en distintas partes del sitio.
+					La navegación puede requerir datos técnicos básicos, como el tamaño de pantalla, el navegador o la dirección
+					de la página solicitada, para entregar el sitio, detectar errores y cuidar su funcionamiento.
 				</p>
 				<p>
-					Google y los proveedores terceros de publicidad pueden usar cookies y tecnologías similares para mostrar anuncios,
-					medir su rendimiento, prevenir fraude o limitar la frecuencia con la que ves un mismo aviso.
+					Podemos usar almacenamiento local del navegador para recordar temporalmente preferencias de navegación, como filtros
+					y estado de la interfaz. No usamos esos datos para crear perfiles publicitarios ni para vender información personal.
 				</p>
 			</section>
 
 			<section class="privacy-page__section">
-				<h2>Cookies y medición</h2>
+				<h2>Servicios y enlaces externos</h2>
 				<p>
-					Las cookies son pequeños datos que el navegador guarda para que un sitio o un proveedor externo recuerde
-					cierta información. En el contexto de publicidad, pueden servir para personalizar anuncios, medir anuncios
-					o entender si una campaña funciona.
+					Algunas funciones pueden enlazar con servicios de terceros, como YouTube, Cafecito u otras páginas relacionadas
+					con una película. Al abrirlos, pasás a estar sujeto a las políticas de privacidad y cookies de esos servicios.
 				</p>
 				<p>
-					Google y terceros pueden usar esas tecnologías para seleccionar anuncios personalizados según actividad previa,
-					intereses inferidos o configuraciones de anuncios, cuando la normativa aplicable y tu elección de consentimiento lo permiten.
-					También pueden mostrarse anuncios no personalizados o contextuales.
-				</p>
-				<p>
-					Podés revisar o cambiar la personalización de anuncios de Google desde
-					<a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Configuración de anuncios de Google</a>.
+					Cualquier aporte o transacción iniciada en una plataforma externa se procesa allí y queda sujeta a sus propios
+					términos. Cine Posta no solicita datos de tarjetas dentro del sitio.
 				</p>
 			</section>
 
 			<section class="privacy-page__section">
 				<h2>Comentarios de la comunidad</h2>
 				<p>
-					Si activamos Foro Cineposta, los mensajes se almacenan temporalmente en la infraestructura de datos que usa
-					Cine Posta para sus funciones públicas. La participación no crea perfiles visibles, aunque el navegador
-					puede recibir una identidad técnica anónima para aplicar límites de publicación.
+					Si participás en Foro Cineposta, los mensajes se almacenan temporalmente en la infraestructura de datos que usa
+					Cine Posta para sus funciones públicas. La participación no crea perfiles visibles, aunque el navegador puede
+					recibir una identidad técnica anónima para aplicar límites de publicación.
 				</p>
 			</section>
 
 			<section class="privacy-page__section">
-				<h2>Consentimiento</h2>
+				<h2>Tus opciones</h2>
 				<p>
-					Cuando corresponda, podés gestionar tu consentimiento desde el mensaje de privacidad que aparece en el
-					sitio o desde las opciones de tu navegador.
-				</p>
-				<p>
-					Para usuarios alcanzados por normativa europea, Reino Unido y Suiza, {SITE_NAME} está preparado para mostrar
-					el mensaje de consentimiento de Google y respetar las opciones elegidas para anuncios y cookies cuando aplica.
-				</p>
-				<p>
-					La activación y la configuración del mensaje/CMP se administran en la cuenta de AdSense, dentro de
-					<strong>Privacidad y mensajes</strong>. Esa activación es una acción manual de la cuenta publicadora; esta página
-					no la habilita por sí sola.
+					Podés bloquear o borrar el almacenamiento local y las cookies desde la configuración de tu navegador. Algunas
+					preferencias de la interfaz podrían dejar de conservarse, pero la navegación básica seguirá disponible.
 				</p>
 			</section>
 
 			<section class="privacy-page__section">
 				<h2>Contacto</h2>
 				<p>
-					Si tenés una consulta sobre privacidad, anuncios o cookies en {SITE_NAME}, podés escribir a
+					Si tenés una consulta sobre privacidad, comunidad o enlaces externos en {SITE_NAME}, podés escribir a
 					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Privacidad`}>{CONTACT_EMAIL}</a>.
 				</p>
 			</section>

@@ -19,7 +19,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 		);
 	});
 
-	test('aparece como acceso destacado debajo de Qué somos en el home', async ({ page }) => {
+	test('aparece después del catálogo principal en el home', async ({ page }) => {
 		const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
 		expect(response?.ok()).toBeTruthy();
 
@@ -32,9 +32,17 @@ test.describe('simulador de carrera cinematográfica', () => {
 		);
 		await expect(promo.locator('img')).toHaveAttribute('src', /cineposta-simulador-carrera-actor\.png/);
 
+		const readingOrder = await page.locator('main').evaluate((main) =>
+			Array.from(main.querySelectorAll('[data-movie-search-grid], [data-home-actor-game], .home-community-promo')).map((element) =>
+				element.matches('[data-movie-search-grid]') ? 'catalog' : element.matches('[data-home-actor-game]') ? 'game' : 'community',
+			),
+		);
+		expect(readingOrder.indexOf('catalog')).toBeLessThan(readingOrder.indexOf('game'));
+		expect(readingOrder.indexOf('game')).toBeLessThan(readingOrder.indexOf('community'));
+
 		if ((page.viewportSize()?.width ?? 0) > 720) {
 			const promoHeights = await page
-				.locator('.home-welcome, [data-home-actor-game], .home-community-promo')
+				.locator('[data-home-actor-game], .home-community-promo')
 				.evaluateAll((cards) => cards.map((card) => Math.round(card.getBoundingClientRect().height)));
 			const heightRange = Math.max(...promoHeights) - Math.min(...promoHeights);
 

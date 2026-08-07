@@ -154,13 +154,11 @@ async function main() {
 			continue;
 		}
 		const hasNoindex = /name="robots" content="noindex, follow/.test(page.rawHtml);
-		const hasAdLoader = page.rawHtml.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
 		if (page.status === 'approved') {
 			approvedPaths.push(`/personas/${page.slug}/`);
 			if (hasNoindex) failures.push(`${page.slug}: un perfil aprobado no debe usar noindex.`);
 		} else {
 			if (!hasNoindex) failures.push(`${page.slug}: ${page.status} debe usar noindex, follow.`);
-			if (hasAdLoader) failures.push(`${page.slug}: ${page.status} no puede cargar anuncios.`);
 		}
 		if (!page.rawHtml.includes('Fuentes consultables')) {
 			failures.push(`${page.slug}: faltan fuentes visibles para el visitante.`);

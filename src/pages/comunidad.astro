@@ -17,7 +17,7 @@ const communityDiscussionVisualsJson = JSON.stringify(communityDiscussionVisuals
 const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle, pageDescription);
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData} allowAds={false}>
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<main id="main-content" class="container community-page">
 		<nav class="community-page__nav" aria-label="Navegación principal">
 			<HomeBrandLink className="community-page__home-link" label="Cine Posta: volver al inicio" />

@@ -154,7 +154,7 @@ function main() {
 	console.log(`Changed files detected: ${changedFiles.length}`);
 
 	run('npm', ['run', 'catalog:movies:check']);
-	run('npm', ['run', 'audit:adsense-content:strict', '--', '--full']);
+	run('npm', ['run', 'audit:content-quality:strict', '--', '--full']);
 	run('npm', ['run', 'audit:editorial-low-value']);
 	run('npm', ['run', 'audit:profile-originality']);
 
@@ -188,7 +188,6 @@ function main() {
 	if (args.build) {
 		run('npm', ['run', 'build']);
 		run('npm', ['run', 'audit:profile-originality', '--', '--require-dist']);
-		run('npm', ['run', 'validate:adsense-coverage']);
 		run('npm', ['run', 'validate:public-output']);
 		run('npm', ['run', 'validate:sitemap-indexability']);
 	}

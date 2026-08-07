@@ -8,7 +8,6 @@ test('an approved person profile remains indexable and keeps its editorial biogr
 	await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /index, follow/);
 	await expect(page.getByRole('heading', { name: 'Biografía de Brad Pitt' })).toBeVisible();
 	await expect(page.getByRole('heading', { name: 'Fuentes consultables' })).toBeVisible();
-	await expect(page.locator('script[src*="adsbygoogle"]')).toHaveCount(1);
 });
 
 test('the sitemap includes approved person profiles', async ({ page }) => {

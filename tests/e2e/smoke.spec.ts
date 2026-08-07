@@ -38,13 +38,11 @@ test('home page renders the catalog shell', async ({ page }) => {
   expect(response?.ok()).toBeTruthy();
   await expect(page).toHaveTitle(/Cine|Posta/i);
   await expect(page.locator('body')).toBeVisible();
-	await expect(page.getByRole('heading', { name: '¿Qué somos?' })).toBeVisible();
-	await expect(page.locator('.home-welcome__copy')).toContainText('No alojamos películas, torrents, descargas ni enlaces piratas');
-	await expect(page.locator('.home-welcome__details')).toContainText(/Sin login/i);
-	await expect(page.locator('.home-welcome__details')).toContainText(/Sin Ads/i);
-	await expect(page.locator('.home-welcome__details')).toContainText(/Filtros al final/i);
-	await expect(page.getByRole('link', { name: /Conocé cómo funciona/i })).toHaveAttribute('href', '/sobre-cine-posta/');
-	await expect(page.getByRole('link', { name: /Ir al filtro de películas/i })).toHaveAttribute('href', '#catalogo-filtros');
+	await expect(page.getByRole('heading', { name: 'Películas publicadas' })).toBeVisible();
+	await expect(page.locator('.home-results-tools')).toContainText('Catálogo argentino');
+	await expect(page.locator('[data-movie-search-grid]')).toBeVisible();
+	await expect(page.getByRole('heading', { name: /Construí tu carrera en el cine/i })).toBeVisible();
+	await expect(page.getByRole('link', { name: 'Sobre', exact: true })).toBeVisible();
 	await expect(page.getByRole('link', { name: /^Ver detalle de/i }).first()).toBeVisible();
 
   const bodyText = await page.locator('body').innerText();
@@ -61,10 +59,10 @@ test('home reserves the final four initial cards for the latest catalog loads', 
 
 	expect(initialTitles).toHaveLength(12);
 	expect(initialTitles.slice(-4)).toEqual([
-		'El día de la bestia',
-		'La bruja',
-		'Los creyentes',
-		'UnMarry',
+		'Carrera de Bestias',
+		'El Huésped Oculto',
+		'La última casa',
+		'Escuadrón letal',
 	]);
 	expect(new Set(initialTitles).size).toBe(initialTitles.length);
 });
