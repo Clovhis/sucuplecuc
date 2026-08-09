@@ -8,6 +8,7 @@
 type StatusMode = 'catalog' | 'search';
 type ReturnBehavior = 'reset';
 type ChipDataKey = 'homeGenreId' | 'homeSubgenreId' | 'homePlatformId';
+type HistoryUpdateMode = 'push' | 'replace';
 
 type MovieIndexEntry = {
 	element: HTMLElement | null;
@@ -42,17 +43,28 @@ type PersonIndexEntry = {
 
 type SearchSuggestionEntry = MovieIndexEntry | PersonIndexEntry;
 
-type HomeState = {
+type HomeFilterState = {
 	query: string;
-	genre: string | null;
-	subgenre: string | null;
-	platform: string | null;
+genres: string[];
+	editorialFilters: string[];
+	subgenres: string[];
+	platforms: string[];
+};
+
+type HomeState = HomeFilterState & {
 	scrollY: number;
 	ts: number;
 };
 
-const homeStateKey = 'cineposta:home-list-state:v4';
+type StoredHomeState = Partial<HomeState> & {
+	genre?: unknown;
+	subgenre?: unknown;
+	platform?: unknown;
+};
+
+const homeStateKey = 'cineposta:home-list-state:v5';
 const homeReturnBehaviorKey = 'cineposta:home-return-behavior:v1';
+const homeUrlFilterKeys = ['q', 'genero', 'filtro', 'subgenero', 'plataforma'] as const;
 const catalogLoadingPhrases = [
 	'Bancá que carga el videoclub...',
 	'Estamos acomodando los posters.',
@@ -91,6 +103,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const subgenreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-subgenre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
+	const activeFiltersShell = document.querySelector<HTMLElement>('[data-home-active-filters]');
+	const activeFiltersList = document.querySelector<HTMLElement>('[data-home-active-filter-list]');
+	const filterResetButton = document.querySelector<HTMLButtonElement>('[data-home-filter-reset]');
+	const resultCounter = document.querySelector<HTMLElement>('[data-home-result-counter]');
+	const resultCount = document.querySelector<HTMLElement>('[data-home-result-count]');
+	const resultCountLabel = document.querySelector<HTMLElement>('[data-home-result-count-label]');
 	const peopleShowcaseGrid = document.querySelector<HTMLElement>('[data-home-people-grid]');
 	const searchResultsGrid = document.querySelector<HTMLElement>('[data-movie-search-grid]');
 
@@ -176,11 +194,13 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const totalMovieCount = Number(searchResultsGrid?.dataset.movieTotalCount ?? movieIndex.length);
 
 	let visibleMovieEntries = movieIndex.filter((entry) => entry.initial);
-	let activeGenre: string | null = null;
-	let activeSubgenre: string | null = null;
-	let activePlatform: string | null = null;
+	let activeGenres: string[] = [];
+	let activeEditorialFilters: string[] = [];
+	let activeSubgenres: string[] = [];
+	let activePlatforms: string[] = [];
 	let lastAppliedQuery = '';
 	let lastAppliedGenre = '';
+	let lastAppliedEditorialFilters = '';
 	let lastAppliedSubgenre = '';
 	let lastAppliedPlatform = '';
 	let filterTimer = 0;
@@ -201,6 +221,92 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			.replace(/[\u0300-\u036f]/g, '')
 			.trim();
 
+	const getChipValues = (chips: HTMLButtonElement[], dataKey: ChipDataKey): Set<string> =>
+		new Set(chips.map((chip) => chip.dataset[dataKey]).filter((value): value is string => Boolean(value)));
+
+	const primaryGenreIds = new Set(
+		genreChips
+			.filter((chip) => chip.dataset.homeGenreKind === 'genre')
+			.map((chip) => chip.dataset.homeGenreId)
+			.filter((value): value is string => Boolean(value)),
+	);
+	const editorialFilterIds = new Set(
+		genreChips
+			.filter((chip) => chip.dataset.homeGenreKind === 'editorial')
+			.map((chip) => chip.dataset.homeGenreId)
+			.filter((value): value is string => Boolean(value)),
+	);
+	const subgenreIds = getChipValues(subgenreChips, 'homeSubgenreId');
+	const platformIds = getChipValues(platformChips, 'homePlatformId');
+	const filterListFormatter = new Intl.ListFormat('es-AR', { style: 'long', type: 'disjunction' });
+	const resultCountFormatter = new Intl.NumberFormat('es-AR');
+
+	const formatFilterValues = (values: string[]): string =>
+		filterListFormatter.format(values.filter(Boolean));
+
+	const toggleFilterValue = (values: string[], value: string): void => {
+		const currentIndex = values.indexOf(value);
+		if (currentIndex >= 0) {
+			values.splice(currentIndex, 1);
+			return;
+		}
+
+		values.push(value);
+	};
+
+	const matchesAnyFilterValue = (activeValues: string[], entryValues: Set<string>): boolean =>
+		activeValues.length === 0 || activeValues.some((value) => entryValues.has(value));
+
+	const sanitizeFilterValues = (value: unknown, allowedValues: Set<string>): string[] => {
+		const rawValues = Array.isArray(value) ? value : typeof value === 'string' ? [value] : [];
+		return Array.from(
+			new Set(
+				rawValues
+					.flatMap((rawValue) => String(rawValue).split(','))
+					.map((rawValue) => rawValue.trim())
+					.filter((rawValue) => allowedValues.has(rawValue)),
+			),
+		);
+	};
+
+	const readHomeStateFromUrl = (): HomeFilterState | null => {
+		const params = new URLSearchParams(window.location.search);
+		if (!homeUrlFilterKeys.some((key) => params.has(key))) {
+			return null;
+		}
+
+		return {
+			query: params.get('q')?.trim() ?? '',
+			genres: sanitizeFilterValues(params.getAll('genero'), primaryGenreIds),
+			editorialFilters: sanitizeFilterValues(params.getAll('filtro'), editorialFilterIds),
+			subgenres: sanitizeFilterValues(params.getAll('subgenero'), subgenreIds),
+			platforms: sanitizeFilterValues(params.getAll('plataforma'), platformIds),
+		};
+	};
+
+	const updateHomeUrl = (mode: HistoryUpdateMode): void => {
+		const url = new URL(window.location.href);
+		const params = url.searchParams;
+
+		for (const key of homeUrlFilterKeys) {
+			params.delete(key);
+		}
+
+		const query = input.value.trim();
+		if (query) params.set('q', query);
+		if (activeGenres.length > 0) params.set('genero', activeGenres.join(','));
+		if (activeEditorialFilters.length > 0) params.set('filtro', activeEditorialFilters.join(','));
+		if (activeSubgenres.length > 0) params.set('subgenero', activeSubgenres.join(','));
+		if (activePlatforms.length > 0) params.set('plataforma', activePlatforms.join(','));
+
+		const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+		if (mode === 'push') {
+			window.history.pushState({ homeFilters: true }, '', nextUrl);
+		} else {
+			window.history.replaceState({ homeFilters: true }, '', nextUrl);
+		}
+	};
+
 	const shuffleEntries = <T>(entries: T[]): T[] => {
 		const nextEntries = entries.slice();
 		for (let index = nextEntries.length - 1; index > 0; index -= 1) {
@@ -212,9 +318,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	const hasActiveCatalogQuery = (): boolean =>
 		normalize(input.value).length > 0 ||
-		Boolean(activeGenre) ||
-		Boolean(activeSubgenre) ||
-		Boolean(activePlatform);
+		activeGenres.length > 0 ||
+		activeEditorialFilters.length > 0 ||
+		activeSubgenres.length > 0 ||
+		activePlatforms.length > 0;
 
 	const getVisibleEntries = (): MovieIndexEntry[] => visibleMovieEntries;
 
@@ -348,7 +455,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const getChipLabel = (
 		chips: HTMLButtonElement[],
 		dataKey: ChipDataKey,
-		activeValue: string | null,
+		activeValue: string,
 	): string => {
 		if (!activeValue) return '';
 
@@ -365,17 +472,75 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		);
 	};
 
-	const getGenreSummaryPart = (): string | null => {
-		if (!activeGenre) return null;
+	const getChipLabels = (
+		chips: HTMLButtonElement[],
+		dataKey: ChipDataKey,
+		values: string[],
+	): string[] => values.map((value) => getChipLabel(chips, dataKey, value)).filter(Boolean);
 
-		const activeChip = genreChips.find((chip) => chip.dataset.homeGenreId === activeGenre);
-		const label = getChipLabel(genreChips, 'homeGenreId', activeGenre);
+	const getFilterSummaryPart = (
+		prefix: string,
+		chips: HTMLButtonElement[],
+		dataKey: ChipDataKey,
+		values: string[],
+	): string | null => {
+		const labels = getChipLabels(chips, dataKey, values);
+		return labels.length > 0 ? `${prefix} ${formatFilterValues(labels)}` : null;
+	};
 
-		if (activeChip?.dataset.homeGenreKind === 'editorial') {
-			return `filtro ${label}`;
+	const getActiveFilterEntries = (): Array<{ group: string; value: string; label: string }> => [
+		...activeGenres.map((value) => ({
+			group: 'genre',
+			value,
+			label: `Género: ${getChipLabel(genreChips, 'homeGenreId', value)}`,
+		})),
+		...activeEditorialFilters.map((value) => ({
+			group: 'editorial',
+			value,
+			label: `Filtro: ${getChipLabel(genreChips, 'homeGenreId', value)}`,
+		})),
+		...activeSubgenres.map((value) => ({
+			group: 'subgenre',
+			value,
+			label: `Subgénero: ${getChipLabel(subgenreChips, 'homeSubgenreId', value)}`,
+		})),
+		...activePlatforms.map((value) => ({
+			group: 'platform',
+			value,
+			label: `Plataforma: ${getChipLabel(platformChips, 'homePlatformId', value)}`,
+		})),
+		...(input.value.trim()
+			? [{ group: 'query', value: input.value.trim(), label: `Búsqueda: “${input.value.trim()}”` }]
+			: []),
+	];
+
+	const renderActiveFilters = (): void => {
+		if (!(activeFiltersShell instanceof HTMLElement) || !(activeFiltersList instanceof HTMLElement)) return;
+
+		const activeFilters = getActiveFilterEntries();
+		activeFiltersList.replaceChildren();
+
+		for (const entry of activeFilters) {
+			const button = document.createElement('button');
+			button.type = 'button';
+			button.className = 'home-results-tools__active-pill';
+			button.dataset.homeRemoveFilter = entry.group;
+			button.dataset.homeRemoveFilterValue = entry.value;
+			button.setAttribute('aria-label', `Quitar ${entry.label}`);
+
+			const label = document.createElement('span');
+			label.textContent = entry.label;
+			const close = document.createElement('span');
+			close.textContent = '×';
+			close.setAttribute('aria-hidden', 'true');
+			button.append(label, close);
+			activeFiltersList.appendChild(button);
 		}
 
-		return `género ${label}`;
+		activeFiltersShell.hidden = activeFilters.length === 0;
+		if (filterResetButton instanceof HTMLButtonElement) {
+			filterResetButton.hidden = activeFilters.length === 0;
+		}
 	};
 
 	const setReturnBehavior = (behavior: ReturnBehavior | null): void => {
@@ -469,14 +634,38 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	};
 
 	const updateClearButtonVisibility = (): void => {
-		if (!(clearButton instanceof HTMLButtonElement)) return;
+		const shouldShow = hasActiveCatalogQuery();
+		if (clearButton instanceof HTMLButtonElement) {
+			clearButton.hidden = !shouldShow;
+			clearButton.setAttribute(
+				'aria-label',
+				input.value.trim().length > 0 &&
+					activeGenres.length === 0 &&
+					activeEditorialFilters.length === 0 &&
+					activeSubgenres.length === 0 &&
+					activePlatforms.length === 0
+					? 'Borrar búsqueda'
+					: 'Limpiar filtros y búsqueda',
+			);
+		}
+	};
 
-		const shouldShow =
-			input.value.trim().length > 0 ||
-			Boolean(activeGenre) ||
-			Boolean(activeSubgenre) ||
-			Boolean(activePlatform);
-		clearButton.hidden = !shouldShow;
+	const updateResultCounter = (visibleCount: number): void => {
+		if (
+			!(resultCounter instanceof HTMLElement) ||
+			!(resultCount instanceof HTMLElement) ||
+			!(resultCountLabel instanceof HTMLElement)
+		) return;
+
+		const isFiltered = hasActiveCatalogQuery();
+		const displayedCount = isFiltered ? visibleCount : totalMovieCount;
+		const displayedLabel = isFiltered
+			? `resultado${displayedCount === 1 ? '' : 's'}`
+			: 'películas en catálogo';
+
+		resultCount.textContent = resultCountFormatter.format(displayedCount);
+		resultCountLabel.textContent = displayedLabel;
+		resultCounter.setAttribute('aria-label', `${resultCountFormatter.format(displayedCount)} ${displayedLabel}`);
 	};
 
 	const hideSuggestions = (): void => {
@@ -590,15 +779,19 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	};
 
 	const updateSummary = (visibleCount: number): void => {
+		renderActiveFilters();
+		updateClearButtonVisibility();
+		updateResultCounter(visibleCount);
 		if (summaries.length === 0) return;
 
 		const query = normalize(input.value);
 		const hasQuery = query.length > 0;
-		const hasGenre = Boolean(activeGenre);
-		const hasSubgenre = Boolean(activeSubgenre);
-		const hasPlatform = Boolean(activePlatform);
+		const hasGenre = activeGenres.length > 0;
+		const hasEditorialFilter = activeEditorialFilters.length > 0;
+		const hasSubgenre = activeSubgenres.length > 0;
+		const hasPlatform = activePlatforms.length > 0;
 
-		if (!hasQuery && !hasGenre && !hasSubgenre && !hasPlatform) {
+		if (!hasQuery && !hasGenre && !hasEditorialFilter && !hasSubgenre && !hasPlatform) {
 			for (const summary of summaries) {
 				summary.textContent = `${visibleCount} títulos recientes visibles de ${totalMovieCount} publicados.`;
 			}
@@ -607,16 +800,40 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		const parts: string[] = [];
 		if (hasGenre) {
-			const genreSummaryPart = getGenreSummaryPart();
-			if (genreSummaryPart) {
-				parts.push(genreSummaryPart);
-			}
+			const genreSummaryPart = getFilterSummaryPart(
+				activeGenres.length === 1 ? 'género' : 'géneros',
+				genreChips,
+				'homeGenreId',
+				activeGenres,
+			);
+			if (genreSummaryPart) parts.push(genreSummaryPart);
+		}
+		if (hasEditorialFilter) {
+			const editorialSummaryPart = getFilterSummaryPart(
+				activeEditorialFilters.length === 1 ? 'filtro' : 'filtros',
+				genreChips,
+				'homeGenreId',
+				activeEditorialFilters,
+			);
+			if (editorialSummaryPart) parts.push(editorialSummaryPart);
 		}
 		if (hasSubgenre) {
-			parts.push(`subgénero ${getChipLabel(subgenreChips, 'homeSubgenreId', activeSubgenre)}`);
+			const subgenreSummaryPart = getFilterSummaryPart(
+				activeSubgenres.length === 1 ? 'subgénero' : 'subgéneros',
+				subgenreChips,
+				'homeSubgenreId',
+				activeSubgenres,
+			);
+			if (subgenreSummaryPart) parts.push(subgenreSummaryPart);
 		}
 		if (hasPlatform) {
-			parts.push(`plataforma ${getChipLabel(platformChips, 'homePlatformId', activePlatform)}`);
+			const platformSummaryPart = getFilterSummaryPart(
+				activePlatforms.length === 1 ? 'plataforma' : 'plataformas',
+				platformChips,
+				'homePlatformId',
+				activePlatforms,
+			);
+			if (platformSummaryPart) parts.push(platformSummaryPart);
 		}
 		if (hasQuery) {
 			parts.push(`búsqueda "${input.value.trim()}"`);
@@ -725,9 +942,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		try {
 			const payload: HomeState = {
 				query: input.value,
-				genre: activeGenre,
-				subgenre: activeSubgenre,
-				platform: activePlatform,
+				genres: [...activeGenres],
+				editorialFilters: [...activeEditorialFilters],
+				subgenres: [...activeSubgenres],
+				platforms: [...activePlatforms],
 				scrollY: Math.max(0, Math.round(window.scrollY)),
 				ts: Date.now(),
 			};
@@ -738,29 +956,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
-	const toggleGenre = (genreId: string | null): string | null => {
-		activeGenre = activeGenre === genreId ? null : genreId;
-		updateClearButtonVisibility();
-		return activeGenre;
-	};
-
-	const toggleSubgenre = (subgenreId: string | null): string | null => {
-		activeSubgenre = activeSubgenre === subgenreId ? null : subgenreId;
-		updateClearButtonVisibility();
-		return activeSubgenre;
-	};
-
-	const togglePlatform = (platformId: string | null): string | null => {
-		activePlatform = activePlatform === platformId ? null : platformId;
-		updateClearButtonVisibility();
-		return activePlatform;
-	};
-
 	const runFilter = (force = false): number => {
 		const query = normalize(input.value);
-		const genreKey = activeGenre ?? '';
-		const subgenreKey = activeSubgenre ?? '';
-		const platformKey = activePlatform ?? '';
+		const genreKey = activeGenres.join('|');
+		const editorialFilterKey = activeEditorialFilters.join('|');
+		const subgenreKey = activeSubgenres.join('|');
+		const platformKey = activePlatforms.join('|');
 
 		updateClearButtonVisibility();
 
@@ -768,6 +969,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			!force &&
 			query === lastAppliedQuery &&
 			genreKey === lastAppliedGenre &&
+			editorialFilterKey === lastAppliedEditorialFilters &&
 			subgenreKey === lastAppliedSubgenre &&
 			platformKey === lastAppliedPlatform
 		) {
@@ -779,6 +981,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		lastAppliedQuery = query;
 		lastAppliedGenre = genreKey;
+		lastAppliedEditorialFilters = editorialFilterKey;
 		lastAppliedSubgenre = subgenreKey;
 		lastAppliedPlatform = platformKey;
 
@@ -793,11 +996,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				continue;
 			}
 
-			const genreMatch = !activeGenre || entry.genres.has(activeGenre);
-			const subgenreMatch = !activeSubgenre || entry.subgenres.has(activeSubgenre);
-			const platformMatch = !activePlatform || entry.platforms.has(activePlatform);
+			const genreMatch = matchesAnyFilterValue(activeGenres, entry.genres);
+			const editorialFilterMatch = matchesAnyFilterValue(activeEditorialFilters, entry.genres);
+			const subgenreMatch = matchesAnyFilterValue(activeSubgenres, entry.subgenres);
+			const platformMatch = matchesAnyFilterValue(activePlatforms, entry.platforms);
 			const queryMatch = query.length === 0 || entry.searchable.includes(query);
-			const show = genreMatch && subgenreMatch && platformMatch && queryMatch;
+			const show = genreMatch && editorialFilterMatch && subgenreMatch && platformMatch && queryMatch;
 
 			if (show) {
 				matchingEntries.push(entry);
@@ -819,7 +1023,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const applyGenreUI = (): void => {
 		for (const chip of genreChips) {
 			const chipGenre = chip.dataset.homeGenreId;
-			const isActive = Boolean(chipGenre && chipGenre === activeGenre);
+			const activeValues = chip.dataset.homeGenreKind === 'editorial' ? activeEditorialFilters : activeGenres;
+			const isActive = Boolean(chipGenre && activeValues.includes(chipGenre));
 			chip.classList.toggle('is-active', isActive);
 			chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 		}
@@ -828,7 +1033,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const applySubgenreUI = (): void => {
 		for (const chip of subgenreChips) {
 			const chipSubgenre = chip.dataset.homeSubgenreId;
-			const isActive = Boolean(chipSubgenre && chipSubgenre === activeSubgenre);
+			const isActive = Boolean(chipSubgenre && activeSubgenres.includes(chipSubgenre));
 			chip.classList.toggle('is-active', isActive);
 			chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 		}
@@ -837,21 +1042,23 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const applyPlatformUI = (): void => {
 		for (const chip of platformChips) {
 			const chipPlatform = chip.dataset.homePlatformId;
-			const isActive = Boolean(chipPlatform && chipPlatform === activePlatform);
+			const isActive = Boolean(chipPlatform && activePlatforms.includes(chipPlatform));
 			chip.classList.toggle('is-active', isActive);
 			chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 		}
 	};
 
-	const resetCatalog = (mode: StatusMode = 'catalog'): number => {
-		activeGenre = null;
-		activeSubgenre = null;
-		activePlatform = null;
+	const resetCatalog = (mode: StatusMode = 'catalog', historyMode: HistoryUpdateMode = 'replace'): number => {
+		activeGenres = [];
+		activeEditorialFilters = [];
+		activeSubgenres = [];
+		activePlatforms = [];
 		input.value = '';
 		hideSuggestions();
 		applyGenreUI();
 		applySubgenreUI();
 		applyPlatformUI();
+		updateHomeUrl(historyMode);
 		updateClearButtonVisibility();
 		removeStoredHomeState();
 		setReturnBehavior(null);
@@ -867,6 +1074,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			window.cancelAnimationFrame(filterFrame);
 			filterFrame = window.requestAnimationFrame(() => {
 				const visibleCount = runFilter();
+				updateHomeUrl('replace');
 				persistHomeState();
 				syncStatusWithVisiblePosters('search', visibleCount);
 			});
@@ -897,6 +1105,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		window.cancelAnimationFrame(filterFrame);
 
 		const visibleCount = runFilter(true);
+		updateHomeUrl('replace');
 		persistHomeState();
 		syncStatusWithVisiblePosters('search', visibleCount);
 		hideSuggestions();
@@ -906,64 +1115,87 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
+	const applyHomeFilterState = (state: HomeFilterState): void => {
+		input.value = state.query;
+		activeGenres = sanitizeFilterValues(state.genres, primaryGenreIds);
+		activeEditorialFilters = sanitizeFilterValues(state.editorialFilters, editorialFilterIds);
+		activeSubgenres = sanitizeFilterValues(state.subgenres, subgenreIds);
+		activePlatforms = sanitizeFilterValues(state.platforms, platformIds);
+		applyGenreUI();
+		applySubgenreUI();
+		applyPlatformUI();
+		updateClearButtonVisibility();
+		lastAppliedQuery = '';
+		lastAppliedGenre = '';
+		lastAppliedEditorialFilters = '';
+		lastAppliedSubgenre = '';
+		lastAppliedPlatform = '';
+	};
+
+	const getCurrentFilterMode = (): StatusMode => (hasActiveCatalogQuery() ? 'search' : 'catalog');
+
+	const renderCurrentHomeState = (): void => {
+		const mode = getCurrentFilterMode();
+		const visibleCount = runFilter(true);
+		syncStatusWithVisiblePosters(mode, visibleCount);
+	};
+
+	const restoreUrlHomeState = (): void => {
+		const urlState = readHomeStateFromUrl();
+		applyHomeFilterState(urlState ?? {
+			query: '',
+			genres: [],
+			editorialFilters: [],
+			subgenres: [],
+			platforms: [],
+		});
+		if (urlState) {
+			updateHomeUrl('replace');
+		}
+		renderCurrentHomeState();
+	};
+
 	const restoreHomeState = (): void => {
-		let parsed: Partial<HomeState> | null = null;
+		const urlState = readHomeStateFromUrl();
+		if (urlState) {
+			applyHomeFilterState(urlState);
+			updateHomeUrl('replace');
+			renderCurrentHomeState();
+			return;
+		}
+
+		let parsed: StoredHomeState | null = null;
 
 		try {
 			const raw = sessionStorage.getItem(homeStateKey);
 			if (raw) {
-				parsed = JSON.parse(raw) as Partial<HomeState>;
+				parsed = JSON.parse(raw) as StoredHomeState;
 			}
 		} catch {
 			parsed = null;
 		}
 
 		if (!parsed || typeof parsed !== 'object') {
-			const visibleCount = runFilter(true);
-			syncStatusWithVisiblePosters('catalog', visibleCount);
+			renderCurrentHomeState();
 			return;
 		}
 
 		const ageMs = Date.now() - Number(parsed.ts ?? 0);
 		if (!Number.isFinite(ageMs) || ageMs > 1000 * 60 * 30) {
 			removeStoredHomeState();
-			const visibleCount = runFilter(true);
-			syncStatusWithVisiblePosters('catalog', visibleCount);
+			renderCurrentHomeState();
 			return;
 		}
 
-		if (typeof parsed.query === 'string') {
-			input.value = parsed.query;
-		}
-		if (typeof parsed.genre === 'string' && parsed.genre.length > 0) {
-			activeGenre = parsed.genre;
-		}
-		if (typeof parsed.subgenre === 'string' && parsed.subgenre.length > 0) {
-			activeSubgenre = parsed.subgenre;
-		}
-		if (typeof parsed.platform === 'string' && parsed.platform.length > 0) {
-			activePlatform = parsed.platform;
-		}
-
-		applyGenreUI();
-		applySubgenreUI();
-		applyPlatformUI();
-		updateClearButtonVisibility();
-
-		lastAppliedQuery = '';
-		lastAppliedGenre = '';
-		lastAppliedSubgenre = '';
-		lastAppliedPlatform = '';
-
-		const mode: StatusMode =
-			((typeof parsed.query === 'string' && parsed.query.trim().length > 0) ||
-				Boolean(activeGenre) ||
-				Boolean(activeSubgenre) ||
-				Boolean(activePlatform))
-				? 'search'
-				: 'catalog';
-		const visibleCount = runFilter(true);
-		syncStatusWithVisiblePosters(mode, visibleCount);
+		applyHomeFilterState({
+			query: typeof parsed.query === 'string' ? parsed.query : '',
+			genres: sanitizeFilterValues(parsed.genres ?? parsed.genre, primaryGenreIds),
+			editorialFilters: sanitizeFilterValues(parsed.editorialFilters, editorialFilterIds),
+			subgenres: sanitizeFilterValues(parsed.subgenres ?? parsed.subgenre, subgenreIds),
+			platforms: sanitizeFilterValues(parsed.platforms ?? parsed.platform, platformIds),
+		});
+		updateHomeUrl('replace');
+		renderCurrentHomeState();
 
 		const savedScrollY = Number(parsed.scrollY);
 		if (Number.isFinite(savedScrollY) && savedScrollY > 0) {
@@ -975,53 +1207,70 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		removeStoredHomeState();
 	};
 
+	const applyFilterChange = (): void => {
+		applyGenreUI();
+		applySubgenreUI();
+		applyPlatformUI();
+		showStatus(searchLoadingPhrases);
+		updateHomeUrl('push');
+		const visibleCount = runFilter(true);
+		syncStatusWithVisiblePosters('search', visibleCount);
+		persistHomeState();
+	};
+
 	for (const chip of genreChips) {
 		chip.addEventListener('click', () => {
-			const nextGenre = chip.dataset.homeGenreId ?? null;
-			const isResetInteraction = activeGenre === nextGenre;
-			toggleGenre(nextGenre);
-			if (isResetInteraction) {
-				input.value = '';
-			}
-			applyGenreUI();
-			showStatus(searchLoadingPhrases);
-			const visibleCount = runFilter(true);
-			syncStatusWithVisiblePosters('search', visibleCount);
-			persistHomeState();
+			const nextGenre = chip.dataset.homeGenreId;
+			if (!nextGenre) return;
+			const targetValues = chip.dataset.homeGenreKind === 'editorial' ? activeEditorialFilters : activeGenres;
+			toggleFilterValue(targetValues, nextGenre);
+			applyFilterChange();
 		});
 	}
 
 	for (const chip of subgenreChips) {
 		chip.addEventListener('click', () => {
-			const nextSubgenre = chip.dataset.homeSubgenreId ?? null;
-			const isResetInteraction = activeSubgenre === nextSubgenre;
-			toggleSubgenre(nextSubgenre);
-			if (isResetInteraction) {
-				input.value = '';
-			}
-			applySubgenreUI();
-			showStatus(searchLoadingPhrases);
-			const visibleCount = runFilter(true);
-			syncStatusWithVisiblePosters('search', visibleCount);
-			persistHomeState();
+			const nextSubgenre = chip.dataset.homeSubgenreId;
+			if (!nextSubgenre) return;
+			toggleFilterValue(activeSubgenres, nextSubgenre);
+			applyFilterChange();
 		});
 	}
 
 	for (const chip of platformChips) {
 		chip.addEventListener('click', () => {
-			const nextPlatform = chip.dataset.homePlatformId ?? null;
-			const isResetInteraction = activePlatform === nextPlatform;
-			togglePlatform(nextPlatform);
-			if (isResetInteraction) {
-				input.value = '';
-			}
-			applyPlatformUI();
-			showStatus(searchLoadingPhrases);
-			const visibleCount = runFilter(true);
-			syncStatusWithVisiblePosters('search', visibleCount);
-			persistHomeState();
+			const nextPlatform = chip.dataset.homePlatformId;
+			if (!nextPlatform) return;
+			toggleFilterValue(activePlatforms, nextPlatform);
+			applyFilterChange();
 		});
 	}
+
+	activeFiltersList?.addEventListener('click', (event) => {
+		const target = event.target;
+		const removeButton = target instanceof Element
+			? target.closest<HTMLButtonElement>('[data-home-remove-filter]')
+			: null;
+		if (!(removeButton instanceof HTMLButtonElement)) return;
+
+		const group = removeButton.dataset.homeRemoveFilter;
+		const value = removeButton.dataset.homeRemoveFilterValue ?? '';
+		if (group === 'query') {
+			input.value = '';
+		} else if (group === 'genre') {
+			activeGenres = activeGenres.filter((item) => item !== value);
+		} else if (group === 'editorial') {
+			activeEditorialFilters = activeEditorialFilters.filter((item) => item !== value);
+		} else if (group === 'subgenre') {
+			activeSubgenres = activeSubgenres.filter((item) => item !== value);
+		} else if (group === 'platform') {
+			activePlatforms = activePlatforms.filter((item) => item !== value);
+		} else {
+			return;
+		}
+
+		applyFilterChange();
+	});
 
 	applyGenreUI();
 	applySubgenreUI();
@@ -1131,7 +1380,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	clearButton?.addEventListener('click', () => {
 		showStatus(catalogLoadingPhrases);
-		resetCatalog('catalog');
+		resetCatalog('catalog', 'push');
+		input.focus();
+	});
+
+	filterResetButton?.addEventListener('click', () => {
+		resetCatalog('catalog', 'push');
 		input.focus();
 	});
 
@@ -1164,6 +1418,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	window.addEventListener('pageshow', () => {
 		if (consumeReturnBehavior() !== 'reset') return;
 		resetCatalog('catalog');
+	});
+
+	window.addEventListener('popstate', () => {
+		restoreUrlHomeState();
 	});
 
 	showStatus(catalogLoadingPhrases);

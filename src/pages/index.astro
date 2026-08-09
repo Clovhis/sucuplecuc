@@ -231,7 +231,13 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 							Prensa / Contacto
 						</a>
 					</div>
-					<p class="movie-search__summary u-visually-hidden" data-movie-search-summary>
+					<p
+						class="movie-search__summary u-visually-hidden"
+						data-movie-search-summary
+						role="status"
+						aria-live="polite"
+						aria-atomic="true"
+					>
 						{movies.length} títulos publicados.
 					</p>
 				</section>

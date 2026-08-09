@@ -41,9 +41,13 @@ const {
 						<p class="home-results-tools__kicker">Catálogo argentino</p>
 						<h2 id="home-results-tools-title">Películas publicadas</h2>
 					</div>
-					<p class="home-results-tools__counter" aria-label={`${movieCountLabel} películas en el catálogo`}>
-						<strong>{movieCountLabel}</strong>
-						<span>películas en catálogo</span>
+					<p
+						class="home-results-tools__counter"
+						data-home-result-counter
+						aria-label={`${movieCountLabel} películas en el catálogo`}
+					>
+						<strong data-home-result-count>{movieCountLabel}</strong>
+						<span data-home-result-count-label>películas en catálogo</span>
 					</p>
 				</div>
 				<div class="home-results-tools__filters">
@@ -51,7 +55,10 @@ const {
 						{
 							platformOptions.length > 0 && (
 								<section class="home-platform-filter" data-home-platform-filter>
-									<p class="home-genre-filter__label">Dónde la querés ver</p>
+									<div class="home-genre-filter__heading">
+										<p class="home-genre-filter__label">Dónde la querés ver</p>
+										<p class="home-genre-filter__hint">Podés elegir más de una.</p>
+									</div>
 									<div class="home-platform-filter__chips" role="group" aria-label="Filtros por plataforma">
 										{
 											platformOptions.map((platform) => (
@@ -79,7 +86,10 @@ const {
 						{
 							editorialFilterOptions.length > 0 && (
 								<section class="home-genre-filter home-genre-filter--editorial" data-home-editorial-filter>
-									<p class="home-genre-filter__label">Otros filtros</p>
+									<div class="home-genre-filter__heading">
+										<p class="home-genre-filter__label">Otros filtros</p>
+										<p class="home-genre-filter__hint">Se combinan con el género.</p>
+									</div>
 									<div class="home-genre-filter__chips" role="group" aria-label="Filtros editoriales">
 										{
 											editorialFilterOptions.map((genre) => (
@@ -102,7 +112,10 @@ const {
 					</div>
 					<div class="home-results-tools__filter-column home-results-tools__filter-column--right">
 						<section class="home-genre-filter" data-home-genre-filter>
-							<p class="home-genre-filter__label">Qué género pinta</p>
+							<div class="home-genre-filter__heading">
+								<p class="home-genre-filter__label">Qué género pinta</p>
+								<p class="home-genre-filter__hint">Podés elegir más de uno.</p>
+							</div>
 							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por género">
 								{
 									primaryGenreOptions.map((genre) => (
@@ -125,7 +138,7 @@ const {
 								<section class="home-genre-filter home-genre-filter--subgenre" data-home-subgenre-filter>
 									<div class="home-genre-filter__heading">
 										<p class="home-genre-filter__label">Subgéneros</p>
-										<p class="home-genre-filter__hint">Para afinar más la búsqueda</p>
+										<p class="home-genre-filter__hint">Podés combinar varios para afinar.</p>
 									</div>
 									<div class="home-genre-filter__chips" role="group" aria-label="Filtros por subgénero">
 										{
@@ -146,6 +159,21 @@ const {
 							)
 						}
 					</div>
+				</div>
+				<div
+					class="home-results-tools__active"
+					data-home-active-filters
+					hidden
+					aria-live="polite"
+					aria-atomic="false"
+				>
+					<div class="home-results-tools__active-copy">
+						<p class="home-results-tools__active-label">Filtros activos</p>
+						<div class="home-results-tools__active-list" data-home-active-filter-list></div>
+					</div>
+					<button type="button" class="home-results-tools__reset" data-home-filter-reset hidden>
+						Limpiar todo
+					</button>
 				</div>
 				<div class="home-results-tools__feedback">
 					<div
