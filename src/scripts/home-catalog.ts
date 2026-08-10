@@ -588,7 +588,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		link.addEventListener('click', (event) => {
 			if (!isPlainLeftClick(event)) return;
-			prepareResetOnReturn();
+			persistHomeState();
 		});
 		entry.linkPrepared = true;
 	};
@@ -1327,7 +1327,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (event.key === 'Enter') {
 			if (activeSuggestionIndex >= 0) {
 				event.preventDefault();
-				prepareResetOnReturn();
+				if (currentSuggestions[activeSuggestionIndex]?.entryType === 'movie') {
+					persistHomeState();
+				} else {
+					prepareResetOnReturn();
+				}
 				window.location.href = currentSuggestions[activeSuggestionIndex].url;
 				return;
 			}
@@ -1374,7 +1378,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			if (!(suggestion instanceof HTMLAnchorElement)) return;
 			if (!isPlainLeftClick(event)) return;
 
-			prepareResetOnReturn();
+			const suggestionIndex = Number(suggestion.dataset.suggestionIndex ?? '-1');
+			if (currentSuggestions[suggestionIndex]?.entryType === 'movie') {
+				persistHomeState();
+			} else {
+				prepareResetOnReturn();
+			}
 		});
 	}
 

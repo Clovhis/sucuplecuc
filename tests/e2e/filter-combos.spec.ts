@@ -243,4 +243,25 @@ test.describe('home catalog filters', () => {
     await expect(oscarChip).toHaveAttribute('aria-pressed', 'true');
     await expect(dramaChip).toHaveAttribute('aria-pressed', 'true');
   });
+
+  test('movie detail return preserves the selected platform and genre filters', async ({ page }) => {
+    await gotoHome(page);
+
+    const netflixChip = page.getByRole('button', { name: /Filtrar por Netflix/i });
+    const actionChip = page.locator('[data-home-genre-chip][data-home-genre-id="accion"]');
+
+    await netflixChip.click();
+    await actionChip.click();
+
+    const movieCard = page.locator('[data-movie-card][data-movie-title="Los mejores de Manila"]');
+    await expect(movieCard).toBeVisible();
+    await movieCard.getByRole('link', { name: /Ver detalle de Los mejores de Manila/i }).click();
+    await expect(page).toHaveURL(/\/peliculas\/los-mejores-de-manila-2025\/$/);
+    await expect(page.getByRole('heading', { name: /^Los mejores de Manila$/i })).toBeVisible();
+
+    await page.getByRole('link', { name: 'Volver', exact: true }).click();
+    await expect(page).toHaveURL(/\/\?genero=accion&plataforma=netflix$/);
+    await expect(netflixChip).toHaveAttribute('aria-pressed', 'true');
+    await expect(actionChip).toHaveAttribute('aria-pressed', 'true');
+  });
 });
