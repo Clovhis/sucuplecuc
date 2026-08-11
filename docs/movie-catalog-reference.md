@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-09. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-11. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1053
+Total de peliculas: 1059
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -505,6 +505,7 @@ Total de peliculas: 1053
 | 2015 | Creed | creed-2015 | Drama | Otras plataformas | +13 |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus | +16 |
 | 2015 | El puente de los espías | bridge-of-spies-2015 | Thriller | Otras plataformas | +13 |
+| 2015 | El renacido | el-renacido-2015 | Western | Netflix + Paramount Plus | +16 |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus | +13 |
 | 2015 | Furious 7 | furious-7-2015 | Accion | HBO Max | +13 |
 | 2015 | Irrational Man | irrational-man-2015 | Drama | Otras plataformas | +13 |
@@ -795,11 +796,13 @@ Total de peliculas: 1053
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Otras plataformas | +17 |
 | 1997 | Kundun | kundun-1997 | Drama | Otras plataformas | +13 |
 | 1997 | La vida es bella | la-vida-es-bella-1997 | Drama | Otras plataformas | +13 |
+| 1997 | Los Ángeles al desnudo | los-angeles-al-desnudo-1997 | Crimen | Paramount Plus | +16 |
 | 1997 | Perfect Blue | perfect-blue-1997 | Anime | HBO Max | +16 |
 | 1997 | Princess Mononoke | princess-mononoke-1997 | Anime | Netflix | ATP |
 | 1997 | Scream 2 | scream-2-1997 | Terror | Paramount Plus | +16 |
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video | +13 |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus | +13 |
+| 1996 | Fargo. Secuestro voluntario | fargo-secuestro-voluntario-1996 | Crimen | Prime Video + Apple TV | +18 |
 | 1996 | From Dusk Till Dawn | from-dusk-till-dawn-1996 | Terror | Otras plataformas | +18 |
 | 1996 | Mars Attacks! | mars-attacks-1996 | Ciencia ficcion | Otras plataformas | +13 |
 | 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Otras plataformas | +13 |
@@ -813,6 +816,7 @@ Total de peliculas: 1053
 | 1995 | Días extraños | dias-extranos-1995 | Ciencia ficcion | Disney Plus | +18 |
 | 1995 | El día de la bestia | el-dia-de-la-bestia-1995 | Terror | Apple TV | +18 |
 | 1995 | Four Rooms | four-rooms-1995 | Comedia | Otras plataformas | +17 |
+| 1995 | Fuego contra fuego | fuego-contra-fuego-1995 | Crimen | Apple TV | +16 |
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix | +17 |
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Otras plataformas | +17 |
 | 1995 | Poderosa Afrodita | mighty-aphrodite-1995 | Comedia | Otras plataformas | +13 |
@@ -887,6 +891,8 @@ Total de peliculas: 1053
 | 1987 | Depredador | depredador-1987 | Accion | Disney Plus | +16 |
 | 1987 | Días de radio | radio-days-1987 | Comedia | Otras plataformas | ATP |
 | 1987 | El imperio del sol | empire-of-the-sun-1987 | Drama | Otras plataformas | +13 |
+| 1987 | La chaqueta metálica | la-chaqueta-metalica-1987 | Drama | HBO Max + Apple TV | +18 |
+| 1987 | La princesa prometida | la-princesa-prometida-1987 | Aventura | Apple TV | ATP |
 | 1987 | Los intocables de Eliot Ness | los-intocables-de-eliot-ness-1987 | Crimen | Paramount Plus | +17 |
 | 1987 | RoboCop: El defensor del futuro | robocop-el-defensor-del-futuro-1987 | Accion | Prime Video | +17 |
 | 1987 | Septiembre | september-1987 | Drama | Otras plataformas | +13 |
