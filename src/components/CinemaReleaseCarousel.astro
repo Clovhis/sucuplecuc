@@ -98,7 +98,11 @@ function formatReleaseDate(value: string) {
 									</span>
 								</button>
 								<span class="cinema-release-carousel__date">{release.dateLabel ?? `Estreno ${formatReleaseDate(release.releaseDate)}`}</span>
-								{showPlatform && release.platform && <PlatformBadge platform={release.platform} className="cinema-release-carousel__platform" />}
+								{showPlatform && (
+									<div class="cinema-release-carousel__platform-slot">
+										{release.platform && <PlatformBadge platform={release.platform} className="cinema-release-carousel__platform" />}
+									</div>
+								)}
 								<h3 class="cinema-release-carousel__title">{release.title}</h3>
 								<span class={`badge cinema-release-carousel__verdict ${release.verdictClass}`}>
 									{release.verdictLabel}
@@ -139,3 +143,4 @@ function formatReleaseDate(value: string) {
 }
 
 <script src="../scripts/cinema-release-carousel.ts"></script>
+

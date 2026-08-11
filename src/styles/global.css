@@ -18,6 +18,9 @@
 	--meh: #f3bc3f;
 	--bad: #ec6e59;
 	--trash: #a855f7;
+	--absolute-cinema: hsl(32 92% 59%);
+	--absolute-cinema-soft: hsl(37 100% 80%);
+	--absolute-cinema-glow: hsl(28 100% 58% / 0.32);
 	--control-radius: 10px;
 	--control-radius-tight: 8px;
 	--focus-ring: rgba(255, 176, 137, 0.92);
@@ -3155,6 +3158,12 @@ img {
 	text-transform: uppercase;
 }
 
+.cinema-release-carousel__platform-slot {
+	display: flex;
+	align-items: center;
+	min-block-size: 1.7rem;
+}
+
 .cinema-release-carousel__platform.platform-chip {
 	justify-self: flex-start;
 	inline-size: fit-content;
@@ -3868,7 +3877,7 @@ img {
 }
 
 .movie-card--badge--absolute-cinema {
-	--card-accent: rgba(246, 205, 100, 0.9);
+	--card-accent: hsl(31 94% 59% / 0.94);
 }
 
 .movie-card--badge--zafa {
@@ -4070,9 +4079,17 @@ img {
 }
 
 .badge--absolute-cinema {
-	background: rgba(246, 205, 100, 0.15);
-	border-color: rgba(246, 205, 100, 0.52);
-	color: #ffe08f;
+	background:
+		linear-gradient(135deg, hsl(28 86% 39% / 0.34), hsl(42 84% 48% / 0.14)),
+		rgba(18, 19, 18, 0.78);
+	border-color: color-mix(in srgb, var(--absolute-cinema) 72%, white 28%);
+	color: var(--absolute-cinema-soft);
+	text-shadow: 0 0 9px var(--absolute-cinema-glow);
+	box-shadow:
+		inset 0 1px 0 hsl(42 100% 90% / 0.18),
+		0 10px 18px rgba(0, 0, 0, 0.22),
+		0 0 13px var(--absolute-cinema-glow),
+		0 0 28px hsl(31 96% 54% / 0.14);
 }
 
 .badge--zafa {
