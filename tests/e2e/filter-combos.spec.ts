@@ -50,7 +50,42 @@ test.describe('home catalog filters', () => {
     await page.getByRole('button', { name: /^Road Movie$/i }).click();
     await page.getByRole('button', { name: /Filtrar por Prime Video/i }).click();
 
-    await expectMovieTitles(page, ['Green Book']);
+    await expectMovieTitles(page, ['Green Book', 'Ladrón de bicicletas']);
+  });
+
+  test('every subgenre chip intersects correctly with Netflix', async ({ page }) => {
+    await gotoHome(page);
+
+    const allCatalogCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) => {
+      const templateCards = Array.from(document.querySelectorAll<HTMLTemplateElement>('[data-movie-card-template]'))
+        .flatMap((template) => Array.from(template.content.querySelectorAll<HTMLElement>('[data-movie-card]')));
+
+      return [...cards, ...templateCards].map((card) => ({
+        title: card.getAttribute('data-movie-title')?.trim() ?? '',
+        platforms: card.getAttribute('data-movie-platforms')?.split(',').map((value) => value.trim()) ?? [],
+        subgenres: card.getAttribute('data-movie-subgenres')?.split(',').map((value) => value.trim()) ?? [],
+      }));
+    });
+    const subgenreIds = await page.locator('[data-home-subgenre-chip]').evaluateAll((chips) =>
+      chips
+        .map((chip) => chip.getAttribute('data-home-subgenre-id')?.trim() ?? '')
+        .filter(Boolean),
+    );
+
+    await page.getByRole('button', { name: /Filtrar por Netflix/i }).click();
+
+    for (const subgenreId of subgenreIds) {
+      const expectedTitles = allCatalogCards
+        .filter((card) => card.platforms.includes('netflix') && card.subgenres.includes(subgenreId))
+        .map((card) => card.title);
+      const chip = page.locator(`[data-home-subgenre-chip][data-home-subgenre-id="${subgenreId}"]`);
+
+      await chip.click();
+      await expect(chip).toHaveAttribute('aria-pressed', 'true');
+      await expectMovieTitles(page, expectedTitles);
+      await chip.click();
+      await expect(chip).toHaveAttribute('aria-pressed', 'false');
+    }
   });
 
   test('mockumentary combines cleanly with text search', async ({ page }) => {
