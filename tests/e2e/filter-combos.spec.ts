@@ -50,7 +50,7 @@ test.describe('home catalog filters', () => {
     await page.getByRole('button', { name: /^Road Movie$/i }).click();
     await page.getByRole('button', { name: /Filtrar por Prime Video/i }).click();
 
-    await expectMovieTitles(page, ['Green Book', 'Ladrón de bicicletas']);
+    await expectMovieTitles(page, ['Green Book', 'París, Texas', 'Ladrón de bicicletas']);
   });
 
   test('every subgenre chip intersects correctly with Netflix', async ({ page }) => {
