@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-12. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-13. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1273
+Total de peliculas: 1282
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -11,16 +11,18 @@ Total de peliculas: 1273
 | 2026 | 53 domingos | 53-domingos-2026 | Comedia | Netflix | +13 |
 | 2026 | 72 Hours | 72-hours-2026 | Comedia | Netflix | +17 |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Otras plataformas | ATP |
+| 2026 | Adolescencia, sexo y muerte en Campamento Miasma | adolescencia-sexo-y-muerte-en-campamento-miasma-2026 | Terror | Cine | +17 |
 | 2026 | Aída y vuelta | aida-y-vuelta-2026 | Comedia | Prime Video | +13 |
 | 2026 | Amarga Navidad | amarga-navidad-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Amos del Universo | amos-del-universo-2026 | Accion | Prime Video | +13 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
-| 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Cine | ATP |
+| 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Otras plataformas | ATP |
 | 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus | ATP |
-| 2026 | Backrooms | backrooms-2026 | Terror | Cine | +13 |
+| 2026 | Backrooms | backrooms-2026 | Terror | Apple TV | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
+| 2026 | Canelones | canelones-2026 | Comedia | Cine | ATP |
 | 2026 | Carrera de Bestias | carrera-de-bestias-2026 | Accion | Prime Video | +16 |
 | 2026 | Chris y Martina: El set decisivo | chris-y-martina-el-set-decisivo-2026 | Documental | Netflix | +18 |
 | 2026 | Clika | clika-2026 | Drama | HBO Max | +16 |
@@ -38,6 +40,7 @@ Total de peliculas: 1273
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Disney Plus | +13 |
 | 2026 | El drama | the-drama-2026 | Romance | Otras plataformas | +17 |
 | 2026 | El escándalo de Trustor desde dentro | el-escandalo-de-trustor-desde-dentro-2026 | Documental | Netflix | ATP |
+| 2026 | El final de la calle Oak | el-final-de-la-calle-oak-2026 | Ciencia ficcion | Cine | ATP |
 | 2026 | El Huésped Oculto | el-huesped-oculto-2026 | Thriller | HBO Max | +16 |
 | 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Otras plataformas | ATP |
 | 2026 | El partido | el-partido-2026 | Documental | Otras plataformas | ATP |
@@ -51,7 +54,7 @@ Total de peliculas: 1273
 | 2026 | Engendro | engendro-2026 | Terror | Cine | +17 |
 | 2026 | Enola Holmes 3 | enola-holmes-3-2026 | Aventura | Netflix | +13 |
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
-| 2026 | Evil Dead: En llamas | evil-dead-en-llamas-2026 | Terror | Cine | +17 |
+| 2026 | Evil Dead: En llamas | evil-dead-en-llamas-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | GOAT | goat-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Golden Kamuy: Asalto a la prisión de Abashiri | golden-kamuy-the-abashiri-prison-raid-2026 | Accion | Netflix | +16 |
@@ -61,10 +64,12 @@ Total de peliculas: 1273
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Disney Plus | ATP |
 | 2026 | In the Hand of Dante | in-the-hand-of-dante-2026 | Thriller | Netflix | +16 |
+| 2026 | Insaciable | insaciable-2026 | Terror | Cine | +17 |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Jack Ryan de Tom Clancy: Guerra Encubierta | jack-ryan-de-tom-clancy-guerra-encubierta-2026 | Accion | Prime Video | +16 |
 | 2026 | Jackass: La última y nos vamos | jackass-la-ultima-y-nos-vamos-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
+| 2026 | KATSEYE: Wild Hearts | katseye-wild-hearts-2026 | Musical | Cine | ATP |
 | 2026 | La Boca del Diablo | la-boca-del-diablo-2026 | Terror | Prime Video | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
@@ -101,6 +106,7 @@ Total de peliculas: 1273
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
+| 2026 | PAW Patrol: La Dino Película | paw-patrol-la-dino-pelicula-2026 | Animacion | Cine | ATP |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
 | 2026 | Poldi | poldi-2026 | Documental | Netflix | +13 |
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video | +18 |
@@ -140,6 +146,7 @@ Total de peliculas: 1273
 | 2026 | WHAM! 10 Days in China | wham-10-days-in-china-2026 | Documental | Otras plataformas | +13 |
 | 2026 | Whistle | whistle-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Yiya Murano: Muerte a la hora del té | yiya-murano-muerte-a-la-hora-del-te-2026 | Documental | Netflix | +12 |
+| 2026 | Yo, Narciso | yo-narciso-2026 | Comedia romantica | Cine | ATP |
 | 2026 | Your Fault: London | your-fault-london-2026 | Romance | Prime Video | +16 |
 | 2025 | ¿Y dónde está el policía? | y-donde-esta-el-policia-2025 | Comedia | Paramount Plus | +13 |
 | 2025 | 28 Years Later | 28-years-later-2025 | Terror | HBO Max | +16 |
@@ -170,7 +177,7 @@ Total de peliculas: 1273
 | 2025 | Final Destination: Bloodlines | final-destination-bloodlines-2025 | Terror | HBO Max | +16 |
 | 2025 | Five Nights at Freddy's 2 | five-nights-at-freddys-2-2025 | Terror | HBO Max + Apple TV | +16 |
 | 2025 | Frankenstein | frankenstein-2025 | Terror | Netflix | +16 |
-| 2025 | Franz | franz-2025 | Drama | Cine | ATP |
+| 2025 | Franz | franz-2025 | Drama | Otras plataformas | ATP |
 | 2025 | G20 | g20-2025 | Accion | Prime Video | +16 |
 | 2025 | Guardianes de la noche: Kimetsu no Yaiba La fortaleza infinita | guardianes-de-la-noche-la-fortaleza-infinita-2025 | Anime | Crunchyroll | +13 |
 | 2025 | Hamnet | hamnet-2025 | Drama | Otras plataformas | +13 |
@@ -187,7 +194,7 @@ Total de peliculas: 1273
 | 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Otras plataformas | +12 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
 | 2025 | Los aitas | los-aitas-2025 | Comedia | Apple TV | ATP |
-| 2025 | Los domingos | los-domingos-2025 | Drama | Cine | +12 |
+| 2025 | Los domingos | los-domingos-2025 | Drama | Otras plataformas | +12 |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Otras plataformas | ATP |
 | 2025 | Los mejores de Manila | los-mejores-de-manila-2025 | Crimen | Netflix | +16 |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
@@ -196,6 +203,7 @@ Total de peliculas: 1273
 | 2025 | Mickey 17 | mickey-17-2025 | Aventura | HBO Max | +13 |
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Otras plataformas | +13 |
 | 2025 | Mountainhead | mountainhead-2025 | Drama | HBO Max | +17 |
+| 2025 | Nimrods: A Green Day Comedy | nimrods-a-green-day-comedy-2025 | Comedia | Cine | ATP |
 | 2025 | Novocaine | novocaine-2025 | Accion | Netflix | +16 |
 | 2025 | Nuremberg | nuremberg-2025 | Thriller | Apple TV | +13 |
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max | +16 |
@@ -208,6 +216,7 @@ Total de peliculas: 1273
 | 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |
 | 2025 | Sarah's Oil: El oro negro | sarahs-oil-el-oro-negro-2025 | Drama | Prime Video | +13 |
 | 2025 | Scarlet | scarlet-2025 | Anime | Netflix | +13 |
+| 2025 | Sin ley | sin-ley-2025 | Accion | Cine | ATP |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
 | 2025 | Superman | superman-2025 | Accion | HBO Max | +13 |

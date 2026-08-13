@@ -46,6 +46,13 @@ const CURATED_SPANISH_SYNOPSES = new Map([
 	],
 ]);
 
+// TMDB puede devolver una carga regional del tráiler que queda bloqueada en
+// Argentina. Estas excepciones conservan el tráiler oficial del distribuidor
+// al regenerar el archivo de próximos estrenos.
+const CURATED_TRAILER_IDS = new Map([
+	['one-night-only', 'JRG244IfrRE'],
+]);
+
 function decodeHtml(value = '') {
 	return String(value)
 		.replace(/&#(\d+);/g, (_, numeric) => String.fromCodePoint(Number.parseInt(numeric, 10)))
@@ -269,15 +276,18 @@ async function buildUpcomingReleases() {
 		detailUrl.searchParams.set('language', TMDB_LANGUAGE);
 		detailUrl.searchParams.set('region', TMDB_REGION);
 		const detailHtml = await fetchHtml(detailUrl);
-		const videoUrl = extractYoutubeVideoUrl(detailHtml);
-		const releaseDate = cinesArgentinosRelease.releaseDate;
-
-		if (!videoUrl || !releaseDate) {
+		const slug = slugify(detailUrl.pathname.split('/').pop()?.replace(/^\d+-/, '') || card.title);
+		if (!slug || seenSlugs.has(slug)) {
 			continue;
 		}
 
-		const slug = slugify(detailUrl.pathname.split('/').pop()?.replace(/^\d+-/, '') || card.title);
-		if (!slug || seenSlugs.has(slug)) {
+		const curatedTrailerId = CURATED_TRAILER_IDS.get(slug);
+		const videoUrl = curatedTrailerId
+			? `https://www.youtube.com/watch?v=${curatedTrailerId}`
+			: extractYoutubeVideoUrl(detailHtml);
+		const releaseDate = cinesArgentinosRelease.releaseDate;
+
+		if (!videoUrl || !releaseDate) {
 			continue;
 		}
 
