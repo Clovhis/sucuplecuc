@@ -4,12 +4,14 @@ import '../styles/mobile.css';
 import DonationGate from '../components/DonationGate.astro';
 import {
 	ABOUT_PATH,
+	CONTACT_EMAIL,
 	COMMUNITY_PATH,
 	CONTACT_PATH,
 	COPYRIGHT_PATH,
 	EDITORIAL_POLICY_PATH,
 	METHODOLOGY_PATH,
 	PEOPLE_PATH,
+	PRESS_EMAIL,
 	PRIVACY_PATH,
 	QUE_MIRO_HOY_PATH,
 	SITE_LANGUAGE,
@@ -155,6 +157,31 @@ const currentYear = new Date().getFullYear();
 						Apoyá el sitio
 					</a>
 				</div>
+				<section class="site-footer__contact" aria-labelledby="site-footer-contact-title">
+					<div class="site-footer__contact-intro">
+						<p class="site-footer__eyebrow">Canales oficiales</p>
+						<h2 id="site-footer-contact-title">Hablemos</h2>
+						<p class="site-footer__contact-copy">
+							¿Tenés una consulta sobre el sitio o querés contactarnos por prensa? Elegí el canal correspondiente.
+						</p>
+					</div>
+					<address class="site-footer__channels">
+						<a
+							class="site-footer__channel"
+							href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Consulta%20general`}
+						>
+							<span class="site-footer__channel-label">Contacto</span>
+							<span class="site-footer__channel-email">{CONTACT_EMAIL}</span>
+						</a>
+						<a
+							class="site-footer__channel"
+							href={`mailto:${PRESS_EMAIL}?subject=Cine%20Posta%20-%20Prensa`}
+						>
+							<span class="site-footer__channel-label">Prensa</span>
+							<span class="site-footer__channel-email">{PRESS_EMAIL}</span>
+						</a>
+					</address>
+				</section>
 				<nav class="site-footer__nav" aria-label="Navegación del sitio">
 					{
 						footerLinks.map((link) => (

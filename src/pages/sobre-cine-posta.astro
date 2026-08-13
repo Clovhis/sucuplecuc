@@ -8,6 +8,7 @@ import {
 	EDITOR_NAME,
 	EDITOR_PATH,
 	EDITORIAL_POLICY_PATH,
+	PRESS_EMAIL,
 	SITE_DESCRIPTION,
 	SITE_NAME,
 	SOURCES_AND_DATA_PATH,
@@ -108,8 +109,12 @@ const structuredData = createAboutPageStructuredData(pageTitle, pageDescription)
 			<article id="contacto-y-prensa" class="about-page__card fade-up" style="--item-delay: 240ms;">
 				<h2>Contacto y prensa</h2>
 				<p>
-					Para consultas, prensa o colaboraciones, escribí a
-					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Contacto%20y%20Prensa`}>{CONTACT_EMAIL}</a>.
+					Para consultas generales, correcciones o datos para revisar, escribí a
+					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Consulta%20general`}>{CONTACT_EMAIL}</a>.
+				</p>
+				<p>
+					Para prensa, invitaciones, notas o colaboraciones, escribí a
+					<a href={`mailto:${PRESS_EMAIL}?subject=Cine%20Posta%20-%20Prensa`}>{PRESS_EMAIL}</a>.
 				</p>
 				<p>
 					Si necesitás un canal más específico por correcciones editoriales, copyright o consultas generales, también

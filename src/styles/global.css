@@ -11766,6 +11766,92 @@ img {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.site-footer__contact {
+	display: grid;
+	grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+	gap: 1.25rem 2rem;
+	align-items: center;
+	padding: 1.35rem 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.site-footer__contact-intro {
+	display: grid;
+	gap: 0.35rem;
+}
+
+.site-footer__eyebrow {
+	margin: 0;
+	color: #ffb089;
+	font-family: var(--font-mono);
+	font-size: 0.68rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.site-footer__contact h2 {
+	margin: 0;
+	color: #ffffff;
+	font-size: 1.18rem;
+	line-height: 1.2;
+}
+
+.site-footer__contact-copy {
+	max-width: 42ch;
+	margin: 0;
+	color: #b8c4d6;
+	font-size: 0.88rem;
+	line-height: 1.5;
+}
+
+.site-footer__channels {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.75rem;
+	margin: 0;
+}
+
+.site-footer__channel {
+	display: grid;
+	align-content: center;
+	gap: 0.22rem;
+	min-width: 0;
+	min-height: 4.25rem;
+	padding: 0.82rem 0.95rem;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: var(--control-radius);
+	background: rgba(255, 255, 255, 0.035);
+	color: #f4f7ff;
+	transition:
+		transform 0.18s ease,
+		border-color 0.18s ease,
+		background-color 0.18s ease;
+}
+
+.site-footer__channel:hover,
+.site-footer__channel:focus-visible {
+	transform: translateY(-1px);
+	border-color: rgba(255, 176, 137, 0.55);
+	background: rgba(255, 125, 59, 0.1);
+}
+
+.site-footer__channel-label {
+	color: #ffcfbb;
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.site-footer__channel-email {
+	min-width: 0;
+	color: #ffffff;
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	overflow-wrap: anywhere;
+}
+
 .site-footer__copy,
 .site-footer__legal {
 	margin: 0;
@@ -12227,6 +12313,10 @@ img {
 		display: grid;
 	}
 
+	.site-footer__contact {
+		grid-template-columns: 1fr;
+	}
+
 	.site-footer__nav {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
@@ -12364,6 +12454,10 @@ img {
 
 	.site-footer__brand {
 		gap: 0.9rem;
+	}
+
+	.site-footer__channels {
+		grid-template-columns: 1fr;
 	}
 
 	.site-footer__nav {

@@ -8,7 +8,8 @@ export const SITE_NAME = 'Cine Posta';
 export const SITE_ALTERNATE_NAMES = ['Cineposta', 'cineposta', 'cineposta.com.ar'] as const;
 export const SITE_LOCALE = 'es_AR';
 export const SITE_LANGUAGE = 'es-AR';
-export const CONTACT_EMAIL = 'yosoyvargas@hotmail.com';
+export const CONTACT_EMAIL = 'contacto@cineposta.com.ar';
+export const PRESS_EMAIL = 'prensa@cineposta.com.ar';
 export const EDITOR_NAME = 'Leonardo Vargas';
 export const SITE_DESCRIPTION =
 	'Cine Posta, también conocido como Cineposta, es un sitio argentino con reseñas cortas y al hueso para decidir qué mirar. Sin login, sin anuncios y con filtros al final del catálogo.';
@@ -106,6 +107,20 @@ function createOrganizationSchema(): StructuredDataValue {
 		url: `${SITE_URL}/`,
 		description: SITE_DESCRIPTION,
 		email: `mailto:${CONTACT_EMAIL}`,
+		contactPoint: [
+			{
+				'@type': 'ContactPoint',
+				contactType: 'customer support',
+				email: `mailto:${CONTACT_EMAIL}`,
+				availableLanguage: SITE_LANGUAGE,
+			},
+			{
+				'@type': 'ContactPoint',
+				contactType: 'press',
+				email: `mailto:${PRESS_EMAIL}`,
+				availableLanguage: SITE_LANGUAGE,
+			},
+		],
 		logo: {
 			'@type': 'ImageObject',
 			url: asAbsoluteUrl(SITE_LOGO_PATH),

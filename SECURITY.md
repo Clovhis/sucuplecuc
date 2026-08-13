@@ -8,7 +8,7 @@ Only the current `main` branch is supported for security fixes.
 
 If you find a vulnerability, do not open a public issue with exploit details.
 
-- Contact: `yosoyvargas@hotmail.com`
+- Contact: `contacto@cineposta.com.ar`
 - Subject: `Cine Posta security report`
 
 Include:

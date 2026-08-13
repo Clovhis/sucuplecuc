@@ -50,6 +50,22 @@ test('home page renders the catalog shell', async ({ page }) => {
 	expect(pageErrors).toEqual([]);
 });
 
+test('contact page exposes separate general and press channels', async ({ page }) => {
+	const response = await page.goto('/contacto/', { waitUntil: 'domcontentloaded' });
+
+	expect(response?.ok()).toBeTruthy();
+	await expect(page.getByRole('heading', { name: 'Consultas generales' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Prensa y colaboraciones' })).toBeVisible();
+	await expect(page.locator('a[href="mailto:contacto@cineposta.com.ar?subject=Cine%20Posta%20-%20Consulta%20general"]').first()).toBeVisible();
+	await expect(page.locator('a[href="mailto:prensa@cineposta.com.ar?subject=Cine%20Posta%20-%20Prensa"]').first()).toBeVisible();
+
+	const footer = page.locator('footer.site-footer');
+	await expect(footer.getByRole('heading', { name: 'Hablemos' })).toBeVisible();
+	await expect(footer.locator('a[href^="mailto:contacto@cineposta.com.ar"]').first()).toBeVisible();
+	await expect(footer.locator('a[href^="mailto:prensa@cineposta.com.ar"]').first()).toBeVisible();
+	await expect(page.locator('body')).not.toContainText('yosoyvargas@hotmail.com');
+});
+
 test('home reserves the final four initial cards for the latest catalog loads', async ({ page }) => {
 	await page.goto('/', { waitUntil: 'domcontentloaded' });
 

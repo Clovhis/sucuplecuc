@@ -6,13 +6,14 @@ import {
 	CONTACT_PATH,
 	EDITOR_NAME,
 	EDITOR_PATH,
+	PRESS_EMAIL,
 	SITE_NAME,
 	createSimplePageStructuredData,
 } from '../lib/seo';
 
 const pageTitle = `Contacto | ${SITE_NAME}`;
 const pageDescription =
-	'Contacto de Cine Posta para prensa, correcciones editoriales, consultas generales y revisiones de material o datos.';
+	'Contacto de Cine Posta para consultas generales, prensa, correcciones editoriales y revisiones de material o datos.';
 const structuredData = createSimplePageStructuredData(CONTACT_PATH, pageTitle, pageDescription, 'ContactPage');
 ---
 
@@ -50,20 +51,21 @@ const structuredData = createSimplePageStructuredData(CONTACT_PATH, pageTitle, p
 				</p>
 			</article>
 			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
-				<h2>Mail principal</h2>
+				<h2>Consultas generales</h2>
 				<p>
 					Escribí a
 					<a href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Consulta%20general`}>{CONTACT_EMAIL}</a>.
 				</p>
-				<p>Ese correo sirve para consultas generales, sugerencias, correcciones editoriales y cuestiones comerciales.</p>
+				<p>Este canal sirve para consultas generales, sugerencias y correcciones editoriales.</p>
 			</article>
 
 			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
 				<h2>Prensa y colaboraciones</h2>
 				<p>
-					Para prensa, invitaciones, notas o colaboraciones, usá el asunto
-					<code> Cine Posta - Prensa</code> para ordenar mejor el contacto.
+					Para prensa, invitaciones, notas o colaboraciones, escribí a
+					<a href={`mailto:${PRESS_EMAIL}?subject=Cine%20Posta%20-%20Prensa`}>{PRESS_EMAIL}</a>.
 				</p>
+				<p>Si podés, usá el asunto <code>Cine Posta - Prensa</code> para ordenar mejor el contacto.</p>
 			</article>
 
 			<article class="about-page__card fade-up" style="--item-delay: 180ms;">
