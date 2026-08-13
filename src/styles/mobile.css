@@ -820,3 +820,54 @@
 		font-size: 0.64rem;
 	}
 }
+
+/* Lite home: filters become one deliberate horizontal journey on touch screens;
+ * desktop keeps the full two-column filter layout and every recommendation card. */
+@media (max-width: 68rem) and (pointer: coarse) {
+	.home-results-tools__filters {
+		display: flex;
+		align-items: stretch;
+		gap: 0.65rem;
+		margin-inline: -0.1rem;
+		padding: 0.1rem 0.1rem 0.45rem;
+		overflow-x: auto;
+		overflow-y: hidden;
+		overscroll-behavior-inline: contain;
+		scroll-padding-inline: 0.1rem;
+		scroll-snap-type: inline mandatory;
+		scrollbar-width: none;
+		touch-action: pan-x;
+	}
+
+	.home-results-tools__filters::-webkit-scrollbar {
+		display: none;
+	}
+
+	.home-results-tools__filter-column {
+		display: contents;
+	}
+
+	.home-results-tools__filter-column > .home-platform-filter,
+	.home-results-tools__filter-column > .home-genre-filter {
+		align-self: stretch;
+		flex: 0 0 min(86%, 24rem);
+		width: min(86%, 24rem);
+		scroll-snap-align: start;
+		scroll-snap-stop: always;
+	}
+
+	.home-people-showcase__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.home-people-showcase__card:not(.home-people-showcase__card--cta):nth-child(n + 3),
+	.upcoming-release-list__item:nth-child(n + 3),
+	.editorial-rankings__card:nth-child(n + 3) {
+		display: none;
+	}
+
+	.home-people-showcase__card--cta {
+		grid-column: 1 / -1;
+	}
+}
+

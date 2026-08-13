@@ -95,6 +95,54 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
   expect(cinemaLabels.every((label) => label.whiteSpace === 'nowrap' && label.height <= label.lineHeight * 1.25)).toBeTruthy();
 });
 
+test('mobile home compacts filters and keeps every facet reachable in the carousel', async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.startsWith('mobile-'), 'This compact layout is intentionally mobile-only.');
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+  const carousel = page.locator('[data-home-filter-carousel]');
+  const panels = page.locator('[data-home-filter-panel]');
+  await expect(carousel).toBeVisible();
+  await expect(panels).toHaveCount(4);
+
+  const initialLayout = await carousel.evaluate((element) => {
+    const node = element as HTMLElement;
+    return {
+      clientWidth: node.clientWidth,
+      scrollWidth: node.scrollWidth,
+      touchAction: getComputedStyle(node).touchAction,
+      snapType: getComputedStyle(node).scrollSnapType,
+    };
+  });
+
+  expect(initialLayout.scrollWidth).toBeGreaterThan(initialLayout.clientWidth);
+  expect(initialLayout.touchAction).toBe('pan-x');
+  expect(initialLayout.snapType).toMatch(/x|inline/);
+
+  for (let index = 0; index < 4; index += 1) {
+    await carousel.evaluate((element, panelIndex) => {
+      const node = element as HTMLElement;
+      const panel = node.querySelectorAll<HTMLElement>('[data-home-filter-panel]')[panelIndex];
+      node.scrollTo({ left: panel?.offsetLeft ?? 0, behavior: 'auto' });
+    }, index);
+
+    await expect
+      .poll(() => panels.nth(index).evaluate((element) => {
+        const panel = element.getBoundingClientRect();
+        const viewport = element.closest<HTMLElement>('[data-home-filter-carousel]')?.getBoundingClientRect();
+        return Boolean(viewport && panel.left >= viewport.left - 1 && panel.right <= viewport.right + 1);
+      }))
+      .toBeTruthy();
+  }
+
+  const peopleCards = await page.locator('[data-home-people-grid] .home-people-showcase__card:not(.home-people-showcase__card--cta)').count();
+  expect(peopleCards).toBeGreaterThan(0);
+  await expect(page.locator('[data-home-people-grid] .home-people-showcase__card:visible')).toHaveCount(3);
+  await expect(page.locator('.upcoming-release-list__item:visible')).toHaveCount(2);
+  await expect(page.locator('.editorial-rankings__card:visible')).toHaveCount(2);
+  await expect(page.locator('.home-people-showcase__card--cta:visible')).toContainText('perfiles conectados');
+});
+
 test('mobile layout stays contained when the browser reports a desktop viewport', async ({ page }) => {
   await page.setViewportSize({ width: 980, height: 640 });
   await page.goto('/', { waitUntil: 'domcontentloaded' });
@@ -139,3 +187,13 @@ test('touch landscape keeps the mobile app shell contained', async ({ page }, te
   expect(measurements.navVisible).toBeTruthy();
   expect(measurements.completeFlowVisible).toBeTruthy();
 });
+
+test('desktop keeps the complete home while mobile-only reductions stay hidden', async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.startsWith('desktop-'), 'This regression is intentionally desktop-only.');
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('[data-home-people-grid] .home-people-showcase__card')).toHaveCount(11);
+  await expect(page.locator('.upcoming-release-list__item')).toHaveCount(3);
+  await expect(page.locator('.editorial-rankings__card')).toHaveCount(5);
+  await expect(page.locator('.home-mobile-nav')).toBeHidden();
+});
+

@@ -50,11 +50,16 @@ const {
 						<span data-home-result-count-label>películas en catálogo</span>
 					</p>
 				</div>
-				<div class="home-results-tools__filters">
+				<div
+					class="home-results-tools__filters"
+					data-home-filter-carousel
+					role="region"
+					aria-label="Carrusel de filtros del catálogo"
+				>
 					<div class="home-results-tools__filter-column home-results-tools__filter-column--left">
 						{
 							platformOptions.length > 0 && (
-								<section class="home-platform-filter" data-home-platform-filter>
+								<section class="home-platform-filter" data-home-filter-panel="platform" data-home-platform-filter>
 									<div class="home-genre-filter__heading">
 										<p class="home-genre-filter__label">Dónde la querés ver</p>
 										<p class="home-genre-filter__hint">Podés elegir más de una.</p>
@@ -85,7 +90,7 @@ const {
 						}
 						{
 							editorialFilterOptions.length > 0 && (
-								<section class="home-genre-filter home-genre-filter--editorial" data-home-editorial-filter>
+								<section class="home-genre-filter home-genre-filter--editorial" data-home-filter-panel="editorial" data-home-editorial-filter>
 									<div class="home-genre-filter__heading">
 										<p class="home-genre-filter__label">Otros filtros</p>
 										<p class="home-genre-filter__hint">Se combinan con el género.</p>
@@ -111,7 +116,7 @@ const {
 						}
 					</div>
 					<div class="home-results-tools__filter-column home-results-tools__filter-column--right">
-						<section class="home-genre-filter" data-home-genre-filter>
+						<section class="home-genre-filter" data-home-filter-panel="genre" data-home-genre-filter>
 							<div class="home-genre-filter__heading">
 								<p class="home-genre-filter__label">Qué género pinta</p>
 								<p class="home-genre-filter__hint">Podés elegir más de uno.</p>
@@ -135,7 +140,7 @@ const {
 						</section>
 						{
 							subgenreOptions.length > 0 && (
-								<section class="home-genre-filter home-genre-filter--subgenre" data-home-subgenre-filter>
+								<section class="home-genre-filter home-genre-filter--subgenre" data-home-filter-panel="subgenre" data-home-subgenre-filter>
 									<div class="home-genre-filter__heading">
 										<p class="home-genre-filter__label">Subgéneros</p>
 										<p class="home-genre-filter__hint">Podés combinar varios para afinar.</p>
@@ -218,3 +223,4 @@ const {
 		<p class="message-box">Todavía no cargamos ninguna peli. Meté la primera ficha manual.</p>
 	)
 }
+
