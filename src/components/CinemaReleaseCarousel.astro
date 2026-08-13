@@ -49,7 +49,7 @@ function formatReleaseDate(value: string) {
 
 {
 	releases.length > 0 ? (
-		<section class="cinema-release-carousel fade-up" style="--item-delay: 105ms;" aria-labelledby={titleId} data-cinema-release-carousel={sectionId}>
+		<section id={sectionId} class="cinema-release-carousel fade-up" style="--item-delay: 105ms;" aria-labelledby={titleId} data-cinema-release-carousel={sectionId}>
 			<div class="cinema-release-carousel__header">
 				<div class="cinema-release-carousel__heading">
 					<h2 id={titleId}>{title}</h2>

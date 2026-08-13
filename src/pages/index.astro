@@ -246,6 +246,12 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 	</header>
 
 	<main id="main-content" class="container home-catalog">
+		<nav class="home-mobile-nav" aria-label="Accesos rápidos en el sitio">
+			<a href="#catalogo-filtros">Catálogo</a>
+			<a href="#cinema-release-carousel">En cines</a>
+			<a href="#que-vemos-hoy">Qué vemos hoy</a>
+			<a href="#comunidad-home">Comunidad</a>
+		</nav>
 		<HomePrimaryCatalog
 			movies={movies}
 			platformOptions={platformOptions}
@@ -264,7 +270,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 							<h2 class="u-visually-hidden">Filtros del catálogo y últimas reseñas</h2>
 							<div class="catalog-shell__main">
 								<div class="catalog-shell__filters">
-									<PostometroTeaser />
+									<PostometroTeaser id="que-vemos-hoy" />
 									{
 										featuredPeople.length > 0 && (
 										<section class="home-people-showcase" aria-label="Base de datos de actrices y actores">
@@ -551,7 +557,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						</a>
 					</section>
 
-					<section class="home-community-promo fade-up" style="--item-delay: 165ms;" aria-labelledby="home-community-promo-title">
+					<section id="comunidad-home" class="home-community-promo fade-up" style="--item-delay: 165ms;" aria-labelledby="home-community-promo-title">
 						<div class="home-community-promo__content">
 							<p class="home-community-promo__eyebrow">Comunidad</p>
 							<h2 id="home-community-promo-title">Foro Cineposta</h2>
