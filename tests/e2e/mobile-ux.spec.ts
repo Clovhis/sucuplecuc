@@ -196,4 +196,3 @@ test('desktop keeps the complete home while mobile-only reductions stay hidden',
   await expect(page.locator('.editorial-rankings__card')).toHaveCount(5);
   await expect(page.locator('.home-mobile-nav')).toBeHidden();
 });
-
