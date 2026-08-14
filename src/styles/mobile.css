@@ -821,26 +821,17 @@
 	}
 }
 
-/* Lite home: filters become one deliberate horizontal journey on touch screens;
+/* Lite home: each filter facet gets its own one-line touch carousel;
  * desktop keeps the full two-column filter layout and every recommendation card. */
 @media (max-width: 68rem) and (pointer: coarse) {
 	.home-results-tools__filters {
-		display: flex;
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
 		align-items: stretch;
-		gap: 0.65rem;
-		margin-inline: -0.1rem;
-		padding: 0.1rem 0.1rem 0.45rem;
-		overflow-x: auto;
-		overflow-y: hidden;
-		overscroll-behavior-inline: contain;
-		scroll-padding-inline: 0.1rem;
-		scroll-snap-type: inline mandatory;
-		scrollbar-width: none;
-		touch-action: pan-x;
-	}
-
-	.home-results-tools__filters::-webkit-scrollbar {
-		display: none;
+		gap: 0.75rem;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
 	}
 
 	.home-results-tools__filter-column {
@@ -850,10 +841,198 @@
 	.home-results-tools__filter-column > .home-platform-filter,
 	.home-results-tools__filter-column > .home-genre-filter {
 		align-self: stretch;
-		flex: 0 0 min(86%, 24rem);
-		width: min(86%, 24rem);
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.home-platform-filter__chips,
+	.home-genre-filter__chips {
+		display: flex;
+		align-items: stretch;
+		flex-wrap: nowrap;
+		gap: 0.5rem;
+		margin-inline: -0.2rem;
+		padding: 0.2rem 0.2rem 0.45rem;
+		overflow-x: auto;
+		overflow-y: hidden;
+		overscroll-behavior-inline: contain;
+		scroll-padding-inline: 0.2rem;
+		scroll-snap-type: inline mandatory;
+		scrollbar-width: none;
+		touch-action: pan-x;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.home-platform-filter__chips::-webkit-scrollbar,
+	.home-genre-filter__chips::-webkit-scrollbar {
+		display: none;
+	}
+
+	.home-platform-filter__chip,
+	.home-genre-filter__chip {
+		flex: 0 0 auto;
+		min-width: 4.5rem;
+		max-width: none;
 		scroll-snap-align: start;
-		scroll-snap-stop: always;
+		scroll-snap-stop: normal;
+		white-space: nowrap;
+		text-wrap: nowrap;
+	}
+
+	.home-platform-filter__chip {
+		width: 5.5rem;
+		min-height: 3.5rem;
+	}
+
+	.home-genre-filter__chip {
+		width: max-content;
+		min-height: 3rem;
+		padding-inline: 0.78rem;
+		text-align: center;
+		overflow-wrap: normal;
+	}
+
+	/* Keep the category pill in its grid track so long labels never enter the
+	 * platform tile's column. */
+	.movie-card__footer {
+		grid-template-columns: minmax(0, 1fr) minmax(4.5rem, 5.25rem);
+		grid-template-rows: auto auto auto;
+		min-width: 0;
+	}
+
+	.movie-card__cta,
+	.movie-card__audience-rating {
+		min-width: 0;
+		max-width: 100%;
+		overflow-wrap: anywhere;
+		white-space: normal;
+	}
+
+	.movie-card__cta {
+		inline-size: fit-content;
+		max-inline-size: 100%;
+		text-wrap: balance;
+	}
+
+	.movie-card__platform-mark {
+		grid-column: 2;
+		grid-row: 1 / span 3;
+		inline-size: min(100%, 5.25rem);
+		width: min(100%, 5.25rem);
+		min-width: 0;
+	}
+
+	/* Mobile keeps the five-item desktop data set intact but presents a balanced
+	 * 2x2 agenda, with the script cycling only through these four visible items. */
+	.weekly-suggestion__queue-item:nth-child(n + 5) {
+		display: none;
+	}
+
+	/* These two links are app shortcuts on touch screens, not full feature
+	 * banners. They retain a comfortable tap target while freeing vertical space. */
+	.home-actor-game,
+	.home-community-promo {
+		min-height: 0;
+		border-radius: 15px;
+	}
+
+	.home-actor-game__link {
+		display: flex;
+		align-items: center;
+		min-height: 4.75rem;
+		padding: 0.65rem 0.8rem;
+		gap: 0.75rem;
+	}
+
+	.home-actor-game__content {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		grid-template-areas:
+			'eyebrow cta'
+			'title cta';
+		align-items: center;
+		gap: 0.12rem 0.65rem;
+		width: 100%;
+		max-width: none;
+		min-height: 0;
+		padding: 0;
+	}
+
+	.home-actor-game__eyebrow {
+		grid-area: eyebrow;
+		margin: 0;
+		font-size: 0.56rem;
+		letter-spacing: 0.08em;
+	}
+
+	.home-actor-game__eyebrow span {
+		font-size: 0.72rem;
+	}
+
+	.home-actor-game h2 {
+		grid-area: title;
+		max-width: none;
+		font-size: clamp(0.88rem, 3.8vw, 1.05rem);
+		line-height: 1.08;
+	}
+
+	.home-actor-game__copy,
+	.home-actor-game__art {
+		display: none;
+	}
+
+	.home-actor-game__cta {
+		grid-area: cta;
+		min-height: 3rem;
+		margin: 0;
+		padding: 0.45rem 0.65rem;
+		font-size: 0.58rem;
+		line-height: 1.1;
+		text-align: center;
+	}
+
+	.home-community-promo {
+		grid-template-columns: minmax(0, 1fr) auto;
+		grid-template-rows: auto;
+		align-items: center;
+		gap: 0.65rem;
+		padding: 0.65rem 0.8rem;
+	}
+
+	.home-community-promo__content {
+		grid-column: 1;
+		grid-row: 1;
+		min-width: 0;
+	}
+
+	.home-community-promo__eyebrow {
+		margin-bottom: 0.12rem;
+		font-size: 0.56rem;
+	}
+
+	.home-community-promo h2 {
+		font-size: clamp(0.95rem, 4vw, 1.08rem);
+		line-height: 1.08;
+	}
+
+	.home-community-promo__content p:not(.home-community-promo__eyebrow),
+	.home-community-promo__illustration {
+		display: none;
+	}
+
+	.home-community-promo a {
+		grid-column: 2;
+		grid-row: 1;
+		width: auto;
+		min-height: 3rem;
+		padding: 0.45rem 0.65rem;
+		font-size: 0.58rem;
+		line-height: 1.1;
+		text-align: center;
+	}
+
+	.postometro-teaser__link {
+		min-height: 3rem;
 	}
 
 	.home-people-showcase__grid {

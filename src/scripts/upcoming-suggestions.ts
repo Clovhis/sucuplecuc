@@ -13,7 +13,8 @@ const root = document.querySelector<HTMLElement>('[data-upcoming-suggestion-root
 const dataScript = document.getElementById('upcoming-suggestion-data');
 
 if (root && dataScript) {
-	const suggestions = parseSuggestions(dataScript.textContent);
+	const isCompactTouchLayout = window.matchMedia('(max-width: 68rem) and (pointer: coarse)').matches;
+	const suggestions = parseSuggestions(dataScript.textContent).slice(0, isCompactTouchLayout ? 4 : 5);
 	const frame = root.querySelector<HTMLIFrameElement>('[data-upcoming-suggestion-frame]');
 	const title = root.querySelector<HTMLElement>('[data-upcoming-suggestion-name]');
 	const date = root.querySelector<HTMLTimeElement>('[data-upcoming-suggestion-date]');
@@ -61,6 +62,8 @@ if (root && dataScript) {
 			}
 		});
 	};
+
+	renderSuggestion(0);
 
 	nextButton?.addEventListener('click', () => {
 		if (suggestions.length < 2) return;

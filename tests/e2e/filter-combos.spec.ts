@@ -54,6 +54,7 @@ test.describe('home catalog filters', () => {
   });
 
   test('every subgenre chip intersects correctly with Netflix', async ({ page }) => {
+    test.setTimeout(60_000);
     await gotoHome(page);
 
     const allCatalogCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) => {

@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 
-test('mobile home keeps touch targets and content within the viewport', async ({ page }) => {
+test('mobile home keeps touch targets and content within the viewport', async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.startsWith('mobile-'), 'This layout check is intentionally mobile-only.');
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/', { waitUntil: 'domcontentloaded' });
 
@@ -19,17 +20,27 @@ test('mobile home keeps touch targets and content within the viewport', async ({
     ];
 
     const viewportWidth = window.innerWidth;
-    const platformBounds = [...document.querySelectorAll<HTMLElement>('.home-platform-filter__chip, .movie-card__platform-mark')]
+    const platformBounds = [...document.querySelectorAll<HTMLElement>('.movie-card__platform-mark')]
       .map((element) => {
         const rect = element.getBoundingClientRect();
         return { left: rect.left, right: rect.right, width: rect.width };
       })
       .filter((rect) => rect.width > 0 && (rect.left < -1 || rect.right > viewportWidth + 1));
 
+    const cardCollisions = [...document.querySelectorAll<HTMLElement>('.movie-card')]
+      .map((card) => {
+        const category = card.querySelector<HTMLElement>('.movie-card__cta')?.getBoundingClientRect();
+        const platform = card.querySelector<HTMLElement>('.movie-card__platform-mark')?.getBoundingClientRect();
+        if (!category || !platform) return false;
+        return category.right > platform.left && category.left < platform.right && category.bottom > platform.top && category.top < platform.bottom;
+      })
+      .filter(Boolean);
+
     return {
       contentFits: document.documentElement.scrollWidth <= window.innerWidth,
       controlHeights: controls.map((control) => control.getBoundingClientRect().height),
       platformBounds,
+      cardCollisions,
     };
   });
 
@@ -37,6 +48,7 @@ test('mobile home keeps touch targets and content within the viewport', async ({
   expect(measurements.controlHeights.length).toBeGreaterThan(0);
   expect(Math.min(...measurements.controlHeights)).toBeGreaterThanOrEqual(44);
   expect(measurements.platformBounds).toEqual([]);
+  expect(measurements.cardCollisions).toEqual([]);
 });
 
 test('mobile home exposes the complete app flow and keeps cinema labels on one line', async ({ page }, testInfo) => {
@@ -110,27 +122,52 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
     return {
       clientWidth: node.clientWidth,
       scrollWidth: node.scrollWidth,
-      touchAction: getComputedStyle(node).touchAction,
-      snapType: getComputedStyle(node).scrollSnapType,
+      display: getComputedStyle(node).display,
+      overflowX: getComputedStyle(node).overflowX,
     };
   });
 
-  expect(initialLayout.scrollWidth).toBeGreaterThan(initialLayout.clientWidth);
-  expect(initialLayout.touchAction).toBe('pan-x');
-  expect(initialLayout.snapType).toMatch(/x|inline/);
+  expect(initialLayout.scrollWidth).toBeLessThanOrEqual(initialLayout.clientWidth + 1);
+  expect(initialLayout.display).toBe('grid');
+  expect(initialLayout.overflowX).toBe('visible');
 
-  for (let index = 0; index < 4; index += 1) {
-    await carousel.evaluate((element, panelIndex) => {
+  const rails = carousel.locator('.home-platform-filter__chips, .home-genre-filter__chips');
+  await expect(rails).toHaveCount(4);
+  const railLayouts = await rails.evaluateAll((elements) =>
+    elements.map((element) => {
       const node = element as HTMLElement;
-      const panel = node.querySelectorAll<HTMLElement>('[data-home-filter-panel]')[panelIndex];
-      node.scrollTo({ left: panel?.offsetLeft ?? 0, behavior: 'auto' });
-    }, index);
+      const style = getComputedStyle(node);
+      const chips = [...node.children].map((child) => (child as HTMLElement).getBoundingClientRect());
+      return {
+        clientWidth: node.clientWidth,
+        scrollWidth: node.scrollWidth,
+        clientHeight: node.clientHeight,
+        scrollHeight: node.scrollHeight,
+        touchAction: style.touchAction,
+        snapType: style.scrollSnapType,
+        oneLine: chips.length > 0 && Math.max(...chips.map((rect) => rect.bottom)) - Math.min(...chips.map((rect) => rect.top)) <= node.clientHeight + 1,
+      };
+    }),
+  );
 
+  expect(railLayouts.every((rail) => rail.scrollHeight <= rail.clientHeight + 1)).toBeTruthy();
+  expect(railLayouts.every((rail) => rail.touchAction === 'pan-x' && /x|inline/.test(rail.snapType))).toBeTruthy();
+  expect(railLayouts.every((rail) => rail.oneLine)).toBeTruthy();
+
+  for (let index = 0; index < await rails.count(); index += 1) {
+    const rail = rails.nth(index);
+    await rail.evaluate((element) => {
+      const node = element as HTMLElement;
+      node.scrollTo({ left: node.scrollWidth, behavior: 'auto' });
+    });
     await expect
-      .poll(() => panels.nth(index).evaluate((element) => {
-        const panel = element.getBoundingClientRect();
-        const viewport = element.closest<HTMLElement>('[data-home-filter-carousel]')?.getBoundingClientRect();
-        return Boolean(viewport && panel.left >= viewport.left - 1 && panel.right <= viewport.right + 1);
+      .poll(() => rail.evaluate((element) => {
+        const node = element as HTMLElement;
+        const lastChip = node.lastElementChild as HTMLElement | null;
+        if (!lastChip) return false;
+        const railBounds = node.getBoundingClientRect();
+        const chipBounds = lastChip.getBoundingClientRect();
+        return chipBounds.left >= railBounds.left - 1 && chipBounds.right <= railBounds.right + 1;
       }))
       .toBeTruthy();
   }
@@ -139,8 +176,21 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
   expect(peopleCards).toBeGreaterThan(0);
   await expect(page.locator('[data-home-people-grid] .home-people-showcase__card:visible')).toHaveCount(3);
   await expect(page.locator('.upcoming-release-list__item:visible')).toHaveCount(2);
+  await expect(page.locator('.weekly-suggestion__queue-item:visible')).toHaveCount(4);
+  await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText('1 de 4');
+  const upcomingNext = page.locator('[data-upcoming-suggestion-next]');
+  for (const expectedCount of ['2 de 4', '3 de 4', '4 de 4', '1 de 4']) {
+    await upcomingNext.click();
+    await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText(expectedCount);
+  }
   await expect(page.locator('.editorial-rankings__card:visible')).toHaveCount(2);
   await expect(page.locator('.home-people-showcase__card--cta:visible')).toContainText('perfiles conectados');
+  await expect(page.locator('.postometro-teaser__link').first()).toHaveJSProperty('offsetHeight', 48);
+
+  const compactPromoHeights = await page.locator('[data-home-actor-game], .home-community-promo').evaluateAll((cards) =>
+    cards.map((card) => Math.round(card.getBoundingClientRect().height)),
+  );
+  expect(compactPromoHeights.every((height) => height <= 112)).toBeTruthy();
 });
 
 test('mobile layout stays contained when the browser reports a desktop viewport', async ({ page }) => {
@@ -193,6 +243,8 @@ test('desktop keeps the complete home while mobile-only reductions stay hidden',
   await page.goto('/', { waitUntil: 'domcontentloaded' });
   await expect(page.locator('[data-home-people-grid] .home-people-showcase__card')).toHaveCount(11);
   await expect(page.locator('.upcoming-release-list__item')).toHaveCount(3);
+  await expect(page.locator('.weekly-suggestion__queue-item')).toHaveCount(5);
+  await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText('1 de 5');
   await expect(page.locator('.editorial-rankings__card')).toHaveCount(5);
   await expect(page.locator('.home-mobile-nav')).toBeHidden();
 });
