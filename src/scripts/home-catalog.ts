@@ -25,6 +25,7 @@ type MovieIndexEntry = {
 	platforms: Set<string>;
 	genres: Set<string>;
 	subgenres: Set<string>;
+	primaryGenre: string;
 	poster: HTMLImageElement | null;
 	linkPrepared: boolean;
 };
@@ -159,6 +160,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 					.map((value) => value.trim())
 					.filter(Boolean),
 			),
+			primaryGenre: card.dataset.moviePrimaryGenre ?? '',
 			poster: initial && poster instanceof HTMLImageElement ? poster : null,
 			linkPrepared: false,
 		};
@@ -996,7 +998,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				continue;
 			}
 
-			const genreMatch = matchesAnyFilterValue(activeGenres, entry.genres);
+			const genreMatch = activeGenres.length === 0 || activeGenres.includes(entry.primaryGenre);
 			const editorialFilterMatch = matchesAnyFilterValue(activeEditorialFilters, entry.genres);
 			const subgenreMatch = matchesAnyFilterValue(activeSubgenres, entry.subgenres);
 			const platformMatch = matchesAnyFilterValue(activePlatforms, entry.platforms);

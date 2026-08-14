@@ -53,6 +53,47 @@ test.describe('home catalog filters', () => {
     await expectMovieTitles(page, ['Green Book', 'París, Texas', 'Ladrón de bicicletas']);
   });
 
+  test('primary genre + platform only returns cards in the selected category', async ({ page }) => {
+    await gotoHome(page);
+
+    await page.getByRole('button', { name: /Filtrar por Apple TV\+/i }).click();
+    await page.getByRole('button', { name: /^Drama$/i }).click();
+
+    const cards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((movieCards) =>
+      movieCards.map((card) => ({
+        title: card.getAttribute('data-movie-title') ?? '',
+        primaryGenre: card.getAttribute('data-movie-primary-genre') ?? '',
+        platforms: card.getAttribute('data-movie-platforms')?.split(',').filter(Boolean) ?? [],
+        displayedCategory: card.querySelector('.movie-card__cta')?.textContent?.trim() ?? '',
+      })),
+    );
+
+    expect(cards.length).toBeGreaterThan(0);
+    expect(cards.every((card) => card.primaryGenre === 'drama')).toBeTruthy();
+    expect(cards.every((card) => card.platforms.includes('apple tv'))).toBeTruthy();
+    expect(cards.every((card) => card.displayedCategory.toLocaleLowerCase() === 'drama')).toBeTruthy();
+  });
+
+  test('multiple values stay OR within a facet and AND across facets', async ({ page }) => {
+    await gotoHome(page);
+
+    await page.getByRole('button', { name: /^Comedia$/i }).click();
+    await page.getByRole('button', { name: /^Drama$/i }).click();
+    await page.getByRole('button', { name: /Filtrar por Disney\+/i }).click();
+    await page.getByRole('button', { name: /Filtrar por Prime Video/i }).click();
+
+    const cards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((movieCards) =>
+      movieCards.map((card) => ({
+        primaryGenre: card.getAttribute('data-movie-primary-genre') ?? '',
+        platforms: card.getAttribute('data-movie-platforms')?.split(',').filter(Boolean) ?? [],
+      })),
+    );
+
+    expect(cards.length).toBeGreaterThan(0);
+    expect(cards.every((card) => ['comedia', 'drama'].includes(card.primaryGenre))).toBeTruthy();
+    expect(cards.every((card) => card.platforms.some((platform) => ['disney plus', 'prime video'].includes(platform)))).toBeTruthy();
+  });
+
   test('every subgenre chip intersects correctly with Netflix', async ({ page }) => {
     test.setTimeout(60_000);
     await gotoHome(page);
@@ -81,10 +122,12 @@ test.describe('home catalog filters', () => {
         .map((card) => card.title);
       const chip = page.locator(`[data-home-subgenre-chip][data-home-subgenre-id="${subgenreId}"]`);
 
-      await chip.click();
+      await expect(chip).toBeVisible();
+      await expect(chip).toBeEnabled();
+      await chip.click({ force: true });
       await expect(chip).toHaveAttribute('aria-pressed', 'true');
       await expectMovieTitles(page, expectedTitles);
-      await chip.click();
+      await chip.click({ force: true });
       await expect(chip).toHaveAttribute('aria-pressed', 'false');
     }
   });
@@ -134,7 +177,11 @@ test.describe('home catalog filters', () => {
     const movieGenres = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
       cards.map((card) => card.getAttribute('data-movie-genres')?.split(',') ?? []),
     );
+    const primaryGenres = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
+      cards.map((card) => card.getAttribute('data-movie-primary-genre') ?? ''),
+    );
     expect(movieGenres.every((genres) => genres.includes('oscar-mejor-pelicula') && genres.includes('drama'))).toBeTruthy();
+    expect(primaryGenres.every((genre) => genre === 'drama')).toBeTruthy();
     await expect(page.locator('[data-movie-search-summary]').first()).toContainText(
       'género Drama + filtro Ganadoras del Oscar',
     );
@@ -284,10 +331,10 @@ test.describe('home catalog filters', () => {
     await gotoHome(page);
 
     const netflixChip = page.getByRole('button', { name: /Filtrar por Netflix/i });
-    const actionChip = page.locator('[data-home-genre-chip][data-home-genre-id="accion"]');
+    const crimeChip = page.locator('[data-home-genre-chip][data-home-genre-id="crimen"]');
 
     await netflixChip.click();
-    await actionChip.click();
+    await crimeChip.click();
 
     const movieCard = page.locator('[data-movie-card][data-movie-title="Los mejores de Manila"]');
     await expect(movieCard).toBeVisible();
@@ -296,8 +343,8 @@ test.describe('home catalog filters', () => {
     await expect(page.getByRole('heading', { name: /^Los mejores de Manila$/i })).toBeVisible();
 
     await page.getByRole('link', { name: 'Volver', exact: true }).click();
-    await expect(page).toHaveURL(/\/\?genero=accion&plataforma=netflix$/);
+    await expect(page).toHaveURL(/\/\?genero=crimen&plataforma=netflix$/);
     await expect(netflixChip).toHaveAttribute('aria-pressed', 'true');
-    await expect(actionChip).toHaveAttribute('aria-pressed', 'true');
+    await expect(crimeChip).toHaveAttribute('aria-pressed', 'true');
   });
 });

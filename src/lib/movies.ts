@@ -1454,18 +1454,31 @@ export function getCatalogFilterGenres(
 	);
 }
 
+export function getPrimaryGenreId(
+	movie: Pick<Movie, 'category' | 'country'>,
+): RecommendationGenreId | null {
+	const categoryGenreSet = new Set<RecommendationGenreId>();
+	const normalizedCategory = normalizeSearchText(movie.category ?? '');
+	mapGenreToken(movie.category ?? '', categoryGenreSet);
+
+	if (normalizedCategory.includes('anime') && movie.country?.trim().toUpperCase() === 'JP') {
+		categoryGenreSet.delete('animacion');
+		categoryGenreSet.add('anime');
+	}
+
+	return RECOMMENDATION_GENRE_OPTIONS.find((option) => categoryGenreSet.has(option.id))?.id ?? null;
+}
+
 export function getPrimaryGenreLabel(
 	movie: Pick<
 		Movie,
 		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'subgenres' | 'country' | 'isArgentinian' | 'awards'
 	>,
 ): string {
-	const categoryGenreSet = new Set<RecommendationGenreId>();
-	mapGenreToken(movie.category ?? '', categoryGenreSet);
-	const categoryGenre = RECOMMENDATION_GENRE_OPTIONS.find((option) => categoryGenreSet.has(option.id));
+	const categoryGenre = getPrimaryGenreId(movie);
 
 	if (categoryGenre) {
-		return categoryGenre.label;
+		return getGenreFilterOptionById(categoryGenre)?.label ?? movie.category?.trim() ?? 'Sin género';
 	}
 
 	const catalogGenreId = getCatalogFilterGenres(movie)[0];
