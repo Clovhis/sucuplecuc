@@ -10,6 +10,10 @@ const CONCURRENCY = 1;
 const IMAGE_WIDTH = 640;
 const REQUEST_GAP_MS = Number.parseInt(process.env.PEOPLE_REQUEST_GAP_MS ?? '900', 10);
 const RETRY_BASE_MS = Number.parseInt(process.env.PEOPLE_RETRY_BASE_MS ?? '8000', 10);
+const FETCH_TIMEOUT_MS = Math.max(
+	1000,
+	Number.parseInt(process.env.PEOPLE_FETCH_TIMEOUT_MS ?? '15000', 10) || 15000,
+);
 const VERIFIED_DATE = new Date().toISOString().slice(0, 10);
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const FEMALE_GENDER_ENTITY_ID = 'Q6581072';
@@ -110,6 +114,7 @@ function parseArgs(argv) {
 		people: [],
 		missingPeopleOnly: false,
 		missingOnly: false,
+		strict: false,
 	};
 
 	for (let index = 0; index < argv.length; index += 1) {
@@ -128,6 +133,8 @@ function parseArgs(argv) {
 			args.missingPeopleOnly = true;
 		} else if (arg === '--missing-only') {
 			args.missingOnly = true;
+		} else if (arg === '--strict') {
+			args.strict = true;
 		} else if (arg === '--help' || arg === '-h') {
 			args.help = true;
 		} else {
@@ -149,6 +156,7 @@ function usage() {
 			'  npm run enrich-people -- --movie alien-1979 --movie aliens-1986 --missing-only',
 			'  npm run enrich-people -- --missing-people-only --offset 0 --limit 50',
 			'  npm run enrich-people -- --person "Alan Arkin" --person "Mads Mikkelsen"',
+			'  npm run enrich-people -- --movie <slug> --strict',
 		].join('\n'),
 	);
 }
@@ -268,15 +276,38 @@ async function throttleNetwork() {
 	lastNetworkRequestAt = Date.now();
 }
 
+function requestSignal() {
+	return typeof globalThis.AbortSignal?.timeout === 'function'
+		? globalThis.AbortSignal.timeout(FETCH_TIMEOUT_MS)
+		: undefined;
+}
+
+async function fetchWithTimeout(url, options = {}) {
+	const signal = requestSignal();
+	return fetch(url, {
+		...options,
+		...(signal ? { signal } : {}),
+	});
+}
+
 async function fetchJson(url) {
 	for (let attempt = 1; attempt <= 5; attempt += 1) {
 		await throttleNetwork();
-		const response = await fetch(url, {
-			headers: {
-				accept: 'application/json',
-				'user-agent': USER_AGENT,
-			},
-		});
+		let response;
+		try {
+			response = await fetchWithTimeout(url, {
+				headers: {
+					accept: 'application/json',
+					'user-agent': USER_AGENT,
+				},
+			});
+		} catch (error) {
+			if (attempt === 5) {
+				throw new Error(`Request failed after ${attempt} attempts: ${url}: ${error.message}`);
+			}
+			await sleep(Math.max(RETRY_BASE_MS * attempt, attempt * 3000));
+			continue;
+		}
 
 		if (response.ok) {
 			return response.json();
@@ -800,11 +831,16 @@ function getRemoteImageUrl(fileName) {
 async function fetchTmdbPersonFallback(name) {
 	const searchUrl = `https://www.themoviedb.org/search?query=${encodeURIComponent(name)}`;
 	await throttleNetwork();
-	const searchResponse = await fetch(searchUrl, {
-		headers: {
-			'user-agent': USER_AGENT,
-		},
-	});
+	let searchResponse;
+	try {
+		searchResponse = await fetchWithTimeout(searchUrl, {
+			headers: {
+				'user-agent': USER_AGENT,
+			},
+		});
+	} catch {
+		return null;
+	}
 
 	if (!searchResponse.ok) {
 		return null;
@@ -823,11 +859,16 @@ async function fetchTmdbPersonFallback(name) {
 
 	for (const candidateUrl of candidateUrls) {
 		await throttleNetwork();
-		const pageResponse = await fetch(candidateUrl, {
-			headers: {
-				'user-agent': USER_AGENT,
-			},
-		});
+		let pageResponse;
+		try {
+			pageResponse = await fetchWithTimeout(candidateUrl, {
+				headers: {
+					'user-agent': USER_AGENT,
+				},
+			});
+		} catch {
+			continue;
+		}
 
 		if (!pageResponse.ok) {
 			continue;
@@ -859,11 +900,16 @@ async function fetchTmdbPersonFallback(name) {
 async function fetchPlexPersonFallback(name) {
 	const candidateUrl = `https://watch.plex.tv/person/${slugify(name)}`;
 	await throttleNetwork();
-	const response = await fetch(candidateUrl, {
-		headers: {
-			'user-agent': USER_AGENT,
-		},
-	});
+	let response;
+	try {
+		response = await fetchWithTimeout(candidateUrl, {
+			headers: {
+				'user-agent': USER_AGENT,
+			},
+		});
+	} catch {
+		return null;
+	}
 
 	if (!response.ok) {
 		return null;
@@ -905,6 +951,18 @@ function inferExtension(url, contentType) {
 	return '.img';
 }
 
+function looksLikeImage(bytes, contentType) {
+	if (typeof contentType === 'string' && contentType.toLowerCase().startsWith('image/')) {
+		return true;
+	}
+	return (
+		(bytes.length >= 3 && bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff) ||
+		(bytes.length >= 8 && bytes.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))) ||
+		(bytes.length >= 6 && (bytes.subarray(0, 6).toString('ascii') === 'GIF87a' || bytes.subarray(0, 6).toString('ascii') === 'GIF89a')) ||
+		(bytes.length >= 12 && bytes.subarray(0, 4).toString('ascii') === 'RIFF' && bytes.subarray(8, 12).toString('ascii') === 'WEBP')
+	);
+}
+
 async function downloadPersonImage(name, imdbId, remoteImageUrl) {
 	if (!remoteImageUrl) {
 		return undefined;
@@ -914,11 +972,19 @@ async function downloadPersonImage(name, imdbId, remoteImageUrl) {
 	let response;
 	for (let attempt = 1; attempt <= 5; attempt += 1) {
 		await throttleNetwork();
-		response = await fetch(remoteImageUrl, {
-			headers: {
-				'user-agent': USER_AGENT,
-			},
-		});
+		try {
+			response = await fetchWithTimeout(remoteImageUrl, {
+				headers: {
+					'user-agent': USER_AGENT,
+				},
+			});
+		} catch (error) {
+			if (attempt === 5) {
+				throw new Error(`Image request failed after ${attempt} attempts: ${remoteImageUrl}: ${error.message}`);
+			}
+			await sleep(Math.max(RETRY_BASE_MS * attempt, attempt * 3000));
+			continue;
+		}
 
 		if (response.ok) {
 			break;
@@ -936,11 +1002,15 @@ async function downloadPersonImage(name, imdbId, remoteImageUrl) {
 	}
 
 	const finalUrl = response.url || remoteImageUrl;
-	const extension = inferExtension(finalUrl, response.headers.get('content-type'));
+	const contentType = response.headers.get('content-type');
 	const fileBase = imdbId ? `${slugify(name)}-${imdbId}` : slugify(name);
+	const bytes = Buffer.from(await response.arrayBuffer());
+	if (!looksLikeImage(bytes, contentType)) {
+		throw new Error(`Image response is not an image (${contentType ?? 'unknown content type'}): ${remoteImageUrl}`);
+	}
+	const extension = inferExtension(finalUrl, contentType);
 	const fileName = `${fileBase}${extension}`;
 	const filePath = path.join(PEOPLE_PUBLIC_DIR, fileName);
-	const bytes = Buffer.from(await response.arrayBuffer());
 	await writeFile(filePath, bytes);
 	return `/people/${fileName}`;
 }
@@ -1082,24 +1152,34 @@ async function enrichPersonRecord(personName, catalog, catalogIndex, stats, reso
 		}
 	}
 
+	const referenceUrls = mergeReferenceUrls(
+		existingEntry?.referenceUrls,
+		[`https://www.wikidata.org/wiki/${entity.id}`],
+		imdbId ? [`https://www.imdb.com/name/${imdbId}/`] : [],
+		tmdbFallback?.referenceUrl ? [tmdbFallback.referenceUrl] : [],
+		plexFallback?.referenceUrl ? [plexFallback.referenceUrl] : [],
+	);
+	const finalNationality = nationalityPrimary ?? existingEntry?.nationalityPrimary;
+	const incompleteReasons = [];
+	if (!localImage) incompleteReasons.push('missing local image');
+	if (!finalNationality) incompleteReasons.push('missing nationality');
+	if (referenceUrls.length === 0) incompleteReasons.push('missing traceable reference');
+	if (incompleteReasons.length > 0) {
+		stats.incomplete.push({ movie: 'people-pool', name: personName, reason: incompleteReasons.join(', ') });
+	}
+
 	setCatalogEntry(catalog, catalogIndex, personName, {
 		name: getEntityDisplayName(entity, personName),
 		birthDate,
 		birthYear: birthYear ?? safeExistingBirthYear ?? (birthDate ? Number.parseInt(birthDate.slice(0, 4), 10) : undefined),
 		deathDate,
 		deathYear: deathYear ?? safeExistingDeathYear ?? (deathDate ? Number.parseInt(deathDate.slice(0, 4), 10) : undefined),
-		nationalityPrimary: nationalityPrimary ?? existingEntry?.nationalityPrimary,
+		nationalityPrimary: finalNationality,
 		image: localImage,
 		imdbId,
 		imdbUrl: imdbId ? `https://www.imdb.com/name/${imdbId}/` : existingEntry?.imdbUrl,
 		remoteImageUrl,
-		referenceUrls: mergeReferenceUrls(
-			existingEntry?.referenceUrls,
-			[`https://www.wikidata.org/wiki/${entity.id}`],
-			imdbId ? [`https://www.imdb.com/name/${imdbId}/`] : [],
-			tmdbFallback?.referenceUrl ? [tmdbFallback.referenceUrl] : [],
-			plexFallback?.referenceUrl ? [plexFallback.referenceUrl] : [],
-		),
+		referenceUrls,
 		lastVerifiedAt: VERIFIED_DATE,
 		notes: existingEntry?.notes,
 		source: plexFallback?.imageUrl
@@ -1195,6 +1275,7 @@ async function main() {
 		updated: 0,
 		missing: [],
 		failures: [],
+		incomplete: [],
 	};
 
 	if (args.missingPeopleOnly || explicitPeople.length > 0) {
@@ -1255,6 +1336,13 @@ async function main() {
 	}
 	if (stats.failures.length > 0) {
 		console.log(stats.failures.slice(0, 20).map((entry) => `${entry.movie}:${entry.reason}`).join(', '));
+	}
+	if (stats.incomplete.length > 0) {
+		console.log(stats.incomplete.slice(0, 40).map((entry) => `${entry.movie}:${entry.name}:${entry.reason}`).join(', '));
+	}
+	if (args.strict && (stats.missing.length > 0 || stats.failures.length > 0 || stats.incomplete.length > 0)) {
+		console.error('Strict people enrichment failed: the catalog still has unresolved people data.');
+		process.exitCode = 1;
 	}
 }
 

@@ -13776,6 +13776,38 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 			'https://www.premiosgoya.com/pelicula/torrente-el-brazo-tonto-de-la-ley/',
 		],
 	},
+	'moria-casan': {
+		slug: 'moria-casan',
+		name: 'Moria Casán',
+		profileImage: '/people/moria-casan-nm0145784.jpg',
+		headline: 'Actriz argentina entre el cine, la escena y la cultura popular, con una identidad pública imposible de separar de su oficio.',
+		roles: ['Actriz', 'Productora'],
+		birthPlace: 'Buenos Aires, Argentina',
+		spotlight:
+			'Construyó una presencia que puede ser teatral, popular, irónica o melodramática sin perder nunca la sensación de estar manejando el centro de la escena.',
+		biography: [
+			'Moria Casán nació como Ana María Casanova en Buenos Aires en 1946 y armó una carrera que se expandió mucho más allá de una sola disciplina. Su nombre quedó ligado primero al teatro de revista y al cine popular, pero la amplitud de su recorrido también incluye televisión, producción y una relación muy particular con la conversación pública. Desde sus primeras películas de los años setenta apareció como una presencia que no necesitaba pedir permiso para ocupar el encuadre: tenía una manera frontal de decir, moverse y marcar el tono de una escena que la volvía reconocible incluso cuando el personaje era breve. Esa mezcla de glamour, velocidad verbal y conciencia del espectáculo terminó funcionando como una firma propia dentro de la cultura argentina.',
+			'El cine permite seguir varias etapas de esa firma. Los caballeros de la cama redonda y Clínica con música la ubican en la comedia popular de los setenta; después llegaron títulos que la cruzaron con elencos y directores centrales de la industria argentina. Funes, un gran amor, dirigida por Raúl de la Torre, la llevó hacia un melodrama musical donde su figura podía sostener deseo, artificio y vulnerabilidad en el mismo movimiento. Décadas más tarde, Cruzadas sumó otra capa: además de actuar como Juana Pérez Roble, Moria participó de la producción de una comedia musical dirigida por Diego Rafecas. No son trabajos equivalentes ni conviene forzar una continuidad estética donde no la hay, pero juntos muestran algo valioso: su presencia cinematográfica siempre supo adaptarse al registro de la película sin dejar de ser intensamente Moria.',
+			'La dimensión más singular de su trayectoria aparece en la forma en que el cine, el teatro y la televisión se retroalimentan. Casán no construyó una imagen pública separada del trabajo artístico, sino una persona escénica capaz de convertir la entrevista, el monólogo, la aparición mediática o la conducción en extensiones de la actuación. Esa porosidad explica tanto su enorme popularidad como las discusiones que genera: Moria suele hacer visible el mecanismo del espectáculo mientras participa de él. En el catálogo de Cine Posta queda asociada a dos películas muy distintas, pero su importancia excede esa muestra breve. Mirarla como actriz y productora permite reconocer una trayectoria que atraviesa más de cinco décadas, cambia de formato sin pedir disculpas y conserva una autonomía expresiva muy poco frecuente.',
+		],
+		editorialBiography: [
+			'Moria Casán nació en Buenos Aires en 1946 y construyó una carrera que nunca quedó encerrada en una sola pantalla. Desde el cine popular de los setenta hasta la televisión y el teatro, convirtió la presencia escénica, la ironía y una personalidad imposible de achicar en una firma propia. Compartió época con nombres centrales de la comedia argentina y también exploró papeles donde el artificio de la estrella podía volverse comentario sobre sí mismo.',
+			'En el cine argentino, Cruzadas y Funes, un gran amor muestran dos zonas de su recorrido: en la primera sumó actuación y producción a una comedia musical; en la segunda quedó asociada a un melodrama musical de Raúl de la Torre. Moria llevó una identidad popular, teatral y mediática a distintos formatos sin perder el control del tono. Más que una figura de época, sigue siendo una presencia del espectáculo argentino.',
+		],
+		stats: [
+			{ label: 'Cine argentino', value: '26 películas registradas' },
+			{ label: 'Trayectoria', value: '1973–2026' },
+			{ label: 'Oficio', value: 'Actriz y productora' },
+		],
+		awards: [],
+		knownFor: ['funes-un-gran-amor-1993', 'cruzadas-2011'],
+		editorialStatus: 'approved',
+		referenceUrls: [
+			'https://cinenacional.com/persona/moria-casan',
+			'https://www.wikidata.org/wiki/Q6912134',
+			'https://www.imdb.com/name/nm0145784/',
+		],
+	},
 	...bulkTrendProfiles,
 	...bulkExpansionProfiles,
 	...bulkCompletionProfiles,

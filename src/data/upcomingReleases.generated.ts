@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-13T13:13:42.909Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-14T18:49:52.831Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -83,13 +83,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=NNVKVal7kh8",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
-	},
-	{
-		"slug": "finding-emily",
-		"title": "Emily, ¿dónde estás?",
-		"releaseDate": "2026-09-17",
-		"videoUrl": "https://www.youtube.com/watch?v=-OGuJf70S0s",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
 	}
 ];

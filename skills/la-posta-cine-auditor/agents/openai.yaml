@@ -1,4 +1,5 @@
 interface:
   display_name: "La Posta Cine Auditor"
-  short_description: "Audita películas y copy editorial original"
-  default_prompt: "Usa $la-posta-cine-auditor para revisar una carga y rechazar cualquier copy no original."
+  short_description: "Audita peliculas, personas y plataformas AR"
+  default_prompt: "Usa $la-posta-cine-auditor para revisar peliculas con auditoria de personas, evidencia AR, copy original, derivados y salida publica."
+  brand_color: "#0F766E"

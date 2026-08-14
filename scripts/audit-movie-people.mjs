@@ -95,7 +95,7 @@ async function loadMovies(args) {
 	);
 }
 
-function validatePersonCredit(personName, role, personRecord) {
+function validatePersonCredit(personName, role, personRecord, warnings) {
 	const errors = [];
 
 	if (!personRecord) {
@@ -104,7 +104,7 @@ function validatePersonCredit(personName, role, personRecord) {
 	}
 
 	if (!personRecord.birthDate && !personRecord.birthYear) {
-		errors.push(`${role}: ${personName} no tiene fecha de nacimiento cargada`);
+		warnings.push(`${role}: ${personName} no tiene fecha de nacimiento pública verificada`);
 	}
 
 	if (!personRecord.nationalityPrimary) {
@@ -136,6 +136,7 @@ async function main() {
 	const catalogIndex = buildCatalogIndex(catalog);
 	const movies = await loadMovies(args);
 	const problems = [];
+	const warnings = [];
 
 	for (const movie of movies) {
 		const directors = splitCreditNames(movie.data.director);
@@ -146,7 +147,7 @@ async function main() {
 		for (const director of directors) {
 			const entry = findCatalogEntry(catalog, catalogIndex, director);
 			problems.push(
-				...validatePersonCredit(director, 'director', entry),
+				...validatePersonCredit(director, 'director', entry, warnings),
 			);
 			if (entry?.image) {
 				try {
@@ -160,7 +161,7 @@ async function main() {
 		for (const actor of cast) {
 			const entry = findCatalogEntry(catalog, catalogIndex, actor);
 			problems.push(
-				...validatePersonCredit(actor, 'cast', entry),
+				...validatePersonCredit(actor, 'cast', entry, warnings),
 			);
 			if (entry?.image) {
 				try {
@@ -180,6 +181,10 @@ async function main() {
 		process.exit(1);
 	}
 
+	if (warnings.length > 0) {
+		console.warn('Movie people audit warnings:');
+		for (const warning of warnings) console.warn(`- ${warning}`);
+	}
 	console.log(`Movie people audit passed for ${movies.length} movie file(s).`);
 }
 

@@ -22,17 +22,22 @@ Leé sólo la sección que corresponda al dato que estás resolviendo. El audito
 
 ## Plataforma Argentina
 
-1. Consultar JustWatch AR para título + año. Leer sólo las ofertas AR y preferir `FLATRATE`.
-2. Si es ambiguo o contradictorio, confirmar con la página oficial argentina del proveedor. Para cine, usar el revalidador de cartelera.
+1. Consultar JustWatch AR para título + año. Leer sólo las ofertas AR y preferir `FLATRATE`; registrar aparte `RENT`/`BUY` porque una oferta transaccional no equivale a una suscripción.
+2. En una carga de estrenos o barrido semanal, construir una matriz con todos los proveedores relevantes para AR: Netflix, HBO Max, Prime Video, Disney Plus, Paramount Plus, Apple TV, Crunchyroll, Mercado Play y `Otras plataformas`. Una ausencia en un proveedor no prueba presencia en otro.
+3. Si es ambiguo o contradictorio, confirmar con la página oficial argentina del proveedor. Para cine, usar el revalidador de cartelera.
 3. Etiquetas permitidas: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `CINE.AR`, `Cine`, `Otras plataformas`.
 4. `releasePlatform` es la principal; `releasePlatforms` sólo contiene una segunda oferta AR confirmada (máximo dos en total). `Otras plataformas` es exclusiva y no lleva arreglo.
 5. Una oferta legal sólo transaccional puede usarse, pero indicarla como tal en el informe. Sin evidencia AR vigente: `Otras plataformas`.
 
+No inferir un proveedor por el estudio, la franquicia, el país de producción, una ficha global, una fecha de España/Estados Unidos o una redirección internacional. Conservá en el ledger `título + año -> proveedor AR -> tipo de oferta -> URL -> fecha verificada` para que el auditor pueda reproducir la decisión.
+
 ## Personas y relaciones
 
 - Consultar `docs/person-profile-catalog-reference.md` y `src/data/people.json` antes de crear nombres: reutilizar exactamente los nombres con perfil exclusivo.
-- Para director y elenco principal, preservar o completar en `people.json`: nacionalidad breve en español, URL trazable y retrato local verificable en `public/people/`; agregar nacimiento/muerte sólo cuando esté comprobado. No usar posters, logos, fotogramas ni fotos grupales como retrato.
-- En live action usar 4–5 intérpretes centrales cuando el billing lo permita. En animación/anime usar voces originales, no doblaje ni personajes.
+- Para director y elenco principal, preservar o completar en `people.json`: nacionalidad breve en español, URL trazable y retrato local verificable en `public/people/`; agregar nacimiento/muerte sólo cuando esté comprobado. Verificar cada identidad con dos señales independientes antes de fijar `imdbId` o mezclar datos de homónimos.
+- Inspeccionar visualmente cada retrato nuevo. No usar posters, logos, fotogramas, placeholders ni fotos grupales ambiguas. Una imagen de evento/producción sólo vale si la fuente identifica a la persona y la posición/crop es inequívoca; si no, dejar el gap explícito y no publicar la ficha.
+- En live action usar 4–5 intérpretes centrales cuando el billing lo permita, sin incluir menores o secundarios incidentales sólo para completar el número. Si un menor es realmente central, incluirlo sólo con fuente pública suficiente y sin forzar un perfil propio. En animación/anime usar voces originales, no doblaje ni personajes.
+- Ejecutar `npm run enrich-people -- --movie <slug> --strict`: el proceso tiene timeout de red acotado, reintentos y modo estricto. Después ejecutar `npm run audit:movie-people -- --movie <slug>`. Missing birth data puede quedar como warning si no existe fuente pública confiable; falta de retrato, nacionalidad, referencia o identidad es error.
 - Completar `editorial.becauseYouLiked` con 1–2 slugs reales y `editorial.related` con 3–4, sin repetir ni enlazar al propio slug. Agregar `runtimeMinutes` cuando se pueda verificar.
 
 ## Voz y evidencia
@@ -40,3 +45,9 @@ Leé sólo la sección que corresponda al dato que estás resolviendo. El audito
 - Investigar en dos tandas: primero ficha oficial/base confiable para metadata, tráiler, elenco y arte; después una única búsqueda dirigida para recepción y otra para AR. No abrir más páginas si la evidencia ya es suficiente.
 - Reunir una señal crítica de Variety, THR, IndieWire, RogerEbert, Rotten Tomatoes, Metacritic o IMDb. Es soporte interno: nunca citar la marca ni volcar números en la reseña publicada.
 - Escribir sin copiar: sinopsis de 28–90 palabras, específica y sin spoilers; reseña en español rioplatense, al menos 70 palabras y dos oraciones. Con feedback claro del usuario, mantenerla en hasta 5 líneas; sin feedback, 6–8. No usar plantillas, etiquetas de veredicto, menciones a agregadores ni frases intercambiables.
+
+## Derivados y cierre
+
+- Después de altas o cambios, ejecutar `npm run catalog:movies` y `npm run update-upcoming-releases`; comprobar con `npm run catalog:movies:check` que las referencias versionadas coincidan con las fuentes.
+- Antes de commit, ejecutar `npm run validate:content -- --all --astro-check`, `npm run build`, `npm run validate:public-output`, `npm run validate:sitemap-indexability` y el auditor candidato con sus verificaciones de rutas/carousels. Un build verde no reemplaza la evidencia AR ni el audit de personas.
+- Ejecutar `git diff --check` y confirmar que la diff queda limitada a películas, people/portraits, perfiles y derivados explícitamente autorizados. Nunca arreglar un fallo de contenido tocando UI, rutas o configuración.

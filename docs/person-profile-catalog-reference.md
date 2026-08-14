@@ -1,8 +1,8 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado manualmente el 2026-06-27. Fuente: `src/data/personProfiles.ts`
+Generado manualmente el 2026-08-14. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 377
+Total de personas con ficha exclusiva: 378
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -279,6 +279,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Milly Alcock | `milly-alcock` | /personas/milly-alcock/ | Actriz | 1 | 3 |
 | Miles Teller | `miles-teller` | /personas/miles-teller/ | Actor | 4 | 3 |
 | Morgan Freeman | `morgan-freeman` | /personas/morgan-freeman/ | Actor | 4 | 3 |
+| Moria Casán | `moria-casan` | /personas/moria-casan/ | Actriz / Productora | 2 | 3 |
 | Nahuel Pérez Biscayart | `nahuel-perez-biscayart` | /personas/nahuel-perez-biscayart/ | Actor | 1 | 3 |
 | Natalia Oreiro | `natalia-oreiro` | /personas/natalia-oreiro/ | Actriz | 1 | 2 |
 | Natalie Portman | `natalie-portman` | /personas/natalie-portman/ | Actriz / Productora | 4 | 3 |

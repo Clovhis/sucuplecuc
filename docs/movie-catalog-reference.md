@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-13. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-14. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1282
+Total de peliculas: 1295
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -22,6 +22,7 @@ Total de peliculas: 1282
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
+| 2026 | Camp Rock 3 | camp-rock-3-2026 | Musical | Disney Plus | ATP |
 | 2026 | Canelones | canelones-2026 | Comedia | Cine | ATP |
 | 2026 | Carrera de Bestias | carrera-de-bestias-2026 | Accion | Prime Video | +16 |
 | 2026 | Chris y Martina: El set decisivo | chris-y-martina-el-set-decisivo-2026 | Documental | Netflix | +18 |
@@ -46,6 +47,7 @@ Total de peliculas: 1282
 | 2026 | El partido | el-partido-2026 | Documental | Otras plataformas | ATP |
 | 2026 | El pasajero del diablo | el-pasajero-del-diablo-2026 | Terror | Otras plataformas | +17 |
 | 2026 | El pequeño ninja: El origen | el-pequeno-ninja-el-origen-2026 | Animacion | Otras plataformas | ATP |
+| 2026 | El turno del papá | el-turno-del-papa-2026 | Comedia | Netflix | ATP |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
 | 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
@@ -53,6 +55,7 @@ Total de peliculas: 1282
 | 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Otras plataformas | +17 |
 | 2026 | Engendro | engendro-2026 | Terror | Cine | +17 |
 | 2026 | Enola Holmes 3 | enola-holmes-3-2026 | Aventura | Netflix | +13 |
+| 2026 | Esto, aquello y todo lo demás | esto-aquello-y-todo-lo-demas-2026 | Drama | Netflix | ATP |
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Evil Dead: En llamas | evil-dead-en-llamas-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
@@ -73,6 +76,7 @@ Total de peliculas: 1282
 | 2026 | La Boca del Diablo | la-boca-del-diablo-2026 | Terror | Prime Video | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
+| 2026 | La heroína del lazo | la-heroina-del-lazo-2026 | Anime | Netflix | +13 |
 | 2026 | La invitación | la-invitacion-2026 | Comedia | Cine | +17 |
 | 2026 | La Odisea | la-odisea-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
@@ -90,6 +94,7 @@ Total de peliculas: 1282
 | 2026 | Los Descendientes: viaje al mundo oscuro | los-descendientes-viaje-al-mundo-oscuro-2026 | Musical | Disney Plus | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
 | 2026 | Luchadores 2 | luchadores-2-2026 | Comedia | Netflix | +13 |
+| 2026 | Main Vaapas Aaunga | main-vaapas-aaunga-2026 | Drama | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
 | 2026 | Mensajes de voz para Isabelle | mensajes-de-voz-para-isabelle-2026 | Romance | Netflix | +13 |
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
@@ -99,8 +104,12 @@ Total de peliculas: 1282
 | 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Cine | ATP |
 | 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Cine | ATP |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Otras plataformas | +17 |
+| 2026 | My Best Friend, His Girlfriend and Me | my-best-friend-his-girlfriend-and-me-2026 | Comedia | Netflix | +16 |
+| 2026 | MYSTERY ARENA | mystery-arena-2026 | Thriller | Prime Video | ATP |
 | 2026 | Nada entre los dos | nada-entre-los-dos-2026 | Romance | Otras plataformas | ATP |
+| 2026 | Nando entre dos mundos | nando-entre-dos-mundos-2026 | Crimen | Netflix | ATP |
 | 2026 | No es país para solteros | no-es-pais-para-solteros-2026 | Comedia romántica | Prime Video | +18 |
+| 2026 | No se desea buena suerte | no-se-desea-buena-suerte-2026 | Comedia | Netflix | +13 |
 | 2026 | Obsesión | obsesion-2026 | Terror | Cine | +17 |
 | 2026 | Office Romance | office-romance-2026 | Comedia | Netflix | +16 |
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
@@ -139,7 +148,9 @@ Total de peliculas: 1282
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Cine | ATP |
+| 2026 | Travis Barker: Más allá del miedo | travis-barker-mas-alla-del-miedo-2026 | Documental | Disney Plus | +7 |
 | 2026 | Un comeback salvaje | un-comeback-salvaje-2026 | Comedia | Netflix | +13 |
+| 2026 | Un hijo propio | un-hijo-propio-2026 | Documental | Netflix | +16 |
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
@@ -658,6 +669,7 @@ Total de peliculas: 1282
 | 2012 | The Master | the-master-2012 | Drama | Otras plataformas | +16 |
 | 2012 | Wolf Children | wolf-children-2012 | Anime | HBO Max | ATP |
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus | +13 |
+| 2011 | Cruzadas | cruzadas-2011 | Comedia | Otras plataformas | +13 |
 | 2011 | Fast Five | fast-five-2011 | Accion | Otras plataformas | +13 |
 | 2011 | George Harrison: Living in the Material World | george-harrison-living-in-the-material-world-2011 | Documental | Otras plataformas | ATP |
 | 2011 | Ghost Rider: Spirit of Vengeance | ghost-rider-spirit-of-vengeance-2011 | Accion | Prime Video | +13 |
@@ -977,6 +989,7 @@ Total de peliculas: 1282
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
+| 1993 | Funes, un gran amor | funes-un-gran-amor-1993 | Drama | Otras plataformas | +18 |
 | 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video + Netflix | +13 |
 | 1993 | La edad de la inocencia | the-age-of-innocence-1993 | Drama | Otras plataformas | ATP |
 | 1993 | Misterioso asesinato en Manhattan | manhattan-murder-mystery-1993 | Comedia | Otras plataformas | +13 |
