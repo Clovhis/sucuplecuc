@@ -25,11 +25,21 @@ Leé sólo la sección que corresponda al dato que estás resolviendo. El audito
 1. Consultar JustWatch AR para título + año. Leer sólo las ofertas AR y preferir `FLATRATE`; registrar aparte `RENT`/`BUY` porque una oferta transaccional no equivale a una suscripción.
 2. En una carga de estrenos o barrido semanal, construir una matriz con todos los proveedores relevantes para AR: Netflix, HBO Max, Prime Video, Disney Plus, Paramount Plus, Apple TV, Crunchyroll, Mercado Play y `Otras plataformas`. Una ausencia en un proveedor no prueba presencia en otro.
 3. Si es ambiguo o contradictorio, confirmar con la página oficial argentina del proveedor. Para cine, usar el revalidador de cartelera.
-3. Etiquetas permitidas: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `CINE.AR`, `Cine`, `Otras plataformas`.
-4. `releasePlatform` es la principal; `releasePlatforms` sólo contiene una segunda oferta AR confirmada (máximo dos en total). `Otras plataformas` es exclusiva y no lleva arreglo.
-5. Una oferta legal sólo transaccional puede usarse, pero indicarla como tal en el informe. Sin evidencia AR vigente: `Otras plataformas`.
+4. Etiquetas permitidas: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `CINE.AR`, `Cine`, `Otras plataformas`.
+5. `releasePlatform` es la principal; `releasePlatforms` sólo contiene una segunda oferta AR confirmada (máximo dos en total). `Otras plataformas` es exclusiva y no lleva arreglo.
+6. Una oferta legal sólo transaccional puede usarse, pero indicarla como tal en el informe. Sin evidencia AR vigente: `Otras plataformas`.
 
 No inferir un proveedor por el estudio, la franquicia, el país de producción, una ficha global, una fecha de España/Estados Unidos o una redirección internacional. Conservá en el ledger `título + año -> proveedor AR -> tipo de oferta -> URL -> fecha verificada` para que el auditor pueda reproducir la decisión.
+
+## Contrato de batch
+
+- Crear antes de escribir un manifiesto explícito de candidatos con `title`, `year`, `slug`, resultado del dry-run y URLs de evidencia. El manifiesto debe ser la fuente de la lista final, no un glob de archivos ni la memoria del agente.
+- Para cada candidato, ejecutar `new-movie --dry-run --json` pasando también `--original-title` cuando difiera del título argentino; confirmar slug y cualquier variante normalizada de título/original-title+año contra catálogo y JSON fuente, y recién después crear el starter. Un título igual con otro año debe quedar anotado como vecino, no descartarse como duplicado.
+- No usar filtros automáticos para quitar créditos cuyo enrichment falló. El reparto se decide por billing confiable antes de enriquecer; un crédito no resoluble detiene esa ficha hasta que se verifique, reemplace con evidencia o se documente un motivo editorial real.
+- La secuencia de trailers es obligatoria: auditoría con YouTube habilitado antes del build, corrección de cualquier error de título/año/oEmbed, nueva auditoría habilitada, build y recién entonces auditoría post-build con `--skip-youtube` para Comunidad/Reacciones. `--skip-youtube` no es una validación primaria.
+- Las respuestas HTTP 3xx, timeouts o bloqueos regionales son advertencias de evidencia externa y deben quedar reportadas; nunca justifican aceptar un ID que el auditor marca como trailer equivocado.
+- En batches, verificar cada poster remoto por HTTP, `Content-Type`, dimensiones y orientación vertical, además del control visual de fuentes ambiguas. El patrón de URL no demuestra que la imagen exista ni que sea un poster usable.
+- Ejecutar el auditor con todos los candidatos explícitos, comparar el conteo del manifiesto con los archivos nuevos reales y repetir el chequeo de duplicados antes del commit.
 
 ## Personas y relaciones
 
@@ -49,5 +59,5 @@ No inferir un proveedor por el estudio, la franquicia, el país de producción, 
 ## Derivados y cierre
 
 - Después de altas o cambios, ejecutar `npm run catalog:movies` y `npm run update-upcoming-releases`; comprobar con `npm run catalog:movies:check` que las referencias versionadas coincidan con las fuentes.
-- Antes de commit, ejecutar `npm run validate:content -- --all --astro-check`, `npm run build`, `npm run validate:public-output`, `npm run validate:sitemap-indexability` y el auditor candidato con sus verificaciones de rutas/carousels. Un build verde no reemplaza la evidencia AR ni el audit de personas.
+- Antes de commit, ejecutar el auditor candidato con YouTube habilitado, `npm run validate:content -- --all --astro-check`, `npm run check`, `npm run build`, el auditor candidato con `--skip-youtube --verify-community-build --verify-reaction-build` y sus verificaciones de rutas/carousels, `npm run validate:public-output` y `npm run validate:sitemap-indexability`. Un build verde no reemplaza la evidencia AR, el audit de personas ni la validación primaria del trailer.
 - Ejecutar `git diff --check` y confirmar que la diff queda limitada a películas, people/portraits, perfiles y derivados explícitamente autorizados. Nunca arreglar un fallo de contenido tocando UI, rutas o configuración.

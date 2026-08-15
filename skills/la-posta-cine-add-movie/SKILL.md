@@ -1,11 +1,11 @@
 ---
 name: la-posta-cine-add-movie
-description: Add one new La Posta Cine movie safely and efficiently from a plain-language request. Use for requests to publish a movie review in this repo; perform duplicate-first intake, evidence-led AR availability research, identity-safe bounded people enrichment, original AI-written copy, deterministic audit, and content-only validation without modifying site code.
+description: Add one or more La Posta Cine movie entries safely from a plain-language request. Use for single loads and explicit batches; perform duplicate-first intake, evidence-led AR availability research, identity-safe bounded people enrichment, original AI-written copy, deterministic trailer/content audits, and content-only validation without modifying site code.
 ---
 
 # la-posta-cine-add-movie
 
-Create one movie entry only. Work quietly; send one acknowledgement, then report only blockers, changed plans, or a final result.
+Create one movie entry or an explicitly requested batch. Work quietly; send one acknowledgement, then report only blockers, changed plans, or a final result.
 
 ## Scope
 
@@ -29,6 +29,21 @@ Create one movie entry only. Work quietly; send one acknowledgement, then report
 
 - Missing birth data is a reported, verified gap when no trustworthy public source exposes it; never invent it to make the audit green. Missing identity, nationality, traceable reference or local portrait remains a hard stop.
 - If the load also creates/updates a person profile, chain `la-posta-cine-add-person-profile` and apply its two-paragraph/originality/build gates before signing off the movie.
+
+## Batch mode contract
+
+Activate this section whenever the request says `batch`, `bulk`, `mínimo N`, `al menos N`, or asks for several movies.
+
+- Freeze an explicit candidate manifest before writing. For every title, record `title`, `year`, `slug`, duplicate-check result, and the source URLs for AR availability, poster, trailer, awards, and people identity. Do not rely on a generated list, memory, or a search result as the final candidate set.
+- Run `npm run new-movie -- --title "…" --original-title "…" --year YYYY --dry-run --json` for every candidate before creating any JSON; pass `--original-title` whenever the Argentine title differs from the source title. Stop the whole batch if any slug or normalized title/original-title + year already exists in the catalog or source files. A same title with a different year is not a duplicate, but record it explicitly for review.
+- Create each starter with `npm run new-movie`; do not use an ad-hoc bulk generator that bypasses the repository template. If automation is used for repetitive fields, it must still leave every candidate auditable individually and must not invent metadata or copy editorial text.
+- Resolve director and `mainCast` from verified billing before freezing the JSON. Never filter, delete, rename, or replace an unresolved credit merely to make strict enrichment pass. Replace a credit only after confirming a different principal credit from a source and record the decision; otherwise stop that candidate.
+- Run strict people enrichment and `npm run audit:movie-people -- --movie <slug>` for every candidate in bounded chunks. Collect every failure and do not sign off a partial batch because another candidate passed.
+- Run the candidate auditor **without** `--skip-youtube` before the build and again after every trailer change. A `youtube-title-mismatch`, `youtube-year-mismatch`, `youtube-search-mismatch`, or oEmbed error is a hard stop: replace the ID with a verified official/authoritative trailer and rerun. Use `--skip-youtube` only for the post-build route/reaction check, never as the first or only trailer validation.
+- Distinguish external YouTube 3xx/timeouts from content errors: retry with the bounded auditor, keep the exact warning and source evidence in the ledger, and never convert a title/year mismatch into a warning just because search is blocked.
+- Check every stored poster URL directly for HTTP success, image content type, usable dimensions, and vertical orientation; visually inspect any ambiguous source. A static URL pattern check alone is insufficient for a bulk load.
+- Run the editorial audit over the complete manifest and perform a sentence-level duplicate pass across all reviews and synopses. A short, generic, recycled, or structurally interchangeable entry blocks the batch.
+- Before commit, compare the manifest count with the number of files actually added, run the duplicate scan again against both `docs/movie-catalog-reference.md` and `src/data/movies`, and retain the exact candidate paths for the final auditor command.
 
 ## Low-token intake
 
@@ -75,6 +90,7 @@ node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate sr
 npm run catalog:movies
 npm run catalog:movies:check
 npm run update-upcoming-releases
+npm run check
 npm run audit:movie-people -- --movie <slug>
 npm run validate:content
 npm run build
@@ -89,6 +105,6 @@ Abort rather than repair site code when a check fails. Confirm every changed fil
 
 ## Final response
 
-Report the branch, file, validation results, the per-title platform evidence ledger with AR offer type, editorial source URLs, people/catalog changes, meter applicability, warnings that remain, and `git diff --name-only`. State explicitly that both editorial texts were written from scratch by AI and that no site-code/Share/Comunidad/reaction files changed. When publishing is explicitly requested, verify the pushed SHA, the workflow result and the live slugs before claiming success; then leave `main` clean and aligned with `origin/main`.
+Report the branch, file or batch count, explicit candidate paths, validation results, the per-title platform evidence ledger with AR offer type, editorial source URLs, trailer oEmbed/search status, people/catalog changes, meter applicability, and warnings that remain. State explicitly that both editorial texts were written from scratch by AI and that no site-code/Share/Comunidad/reaction files changed. For a batch, distinguish files added in this run from inherited files and report any same-title/different-year neighbor. When publishing is explicitly requested, verify the pushed SHA, the workflow result and the live slugs before claiming success; then leave `main` clean and aligned with `origin/main`.
 
 For an explicit request to publish to `main`, also wait for the matching GitHub Actions success and confirm the slug is present on the live site before claiming publication succeeded.

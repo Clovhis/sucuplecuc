@@ -44,7 +44,7 @@ function assertValidInput(args) {
 	const { title, year } = args;
 	if (!title || !year) {
 		throw new Error(
-			'Uso: npm run new-movie -- --title "Mi Peli" --year 2026 [--slug "mi-peli-2026"] [--dry-run]',
+			'Uso: npm run new-movie -- --title "Mi Peli" --year 2026 [--original-title "Original Title"] [--slug "mi-peli-2026"] [--dry-run]',
 		);
 	}
 	args.slug = String(args.slug ?? `${slugify(title)}-${year}`).trim();
@@ -66,9 +66,11 @@ async function loadTemplate() {
 
 function sameMovie(candidate, movie) {
 	const sameSlug = movie.slug === candidate.slug;
+	const candidateTitles = [candidate.title, candidate.originalTitle].map(normalizeText).filter(Boolean);
+	const movieTitles = [movie.title, movie.originalTitle].map(normalizeText).filter(Boolean);
 	const sameYearAndTitle =
 		Number(movie.year) === Number(candidate.year) &&
-		[movie.title, movie.originalTitle].some((value) => normalizeText(value) === normalizeText(candidate.title));
+		candidateTitles.some((candidateTitle) => movieTitles.includes(candidateTitle));
 	return sameSlug || sameYearAndTitle;
 }
 
@@ -104,7 +106,12 @@ async function main() {
 
 	await mkdir(MOVIES_DIR, { recursive: true });
 	const outputPath = path.join(MOVIES_DIR, `${args.slug}.json`);
-	const duplicates = await findDuplicates({ slug: args.slug, title: args.title, year });
+	const duplicates = await findDuplicates({
+		slug: args.slug,
+		title: args.title,
+		originalTitle: args['original-title'],
+		year,
+	});
 	const result = {
 		slug: args.slug,
 		outputPath: outputPath.replace(/\\/g, '/'),
@@ -130,6 +137,10 @@ async function main() {
 		},
 		slug: args.slug,
 		title: args.title,
+		originalTitle:
+			typeof args['original-title'] === 'string' && args['original-title'].trim().length > 0
+				? args['original-title'].trim()
+				: template.originalTitle,
 		year,
 		synopsis:
 			typeof args.synopsis === 'string' && args.synopsis.trim().length > 0

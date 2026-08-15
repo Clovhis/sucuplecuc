@@ -1863,6 +1863,89 @@ function loadKnownMovieSlugs(rootDir) {
 	return knownMovieSlugs;
 }
 
+function validateCatalogUniqueness(rootDir, candidatePaths, findings) {
+	const candidateAbsolutePaths = new Set(candidatePaths.map((candidate) => path.resolve(candidate)));
+	const indexes = new Map();
+	const titleIndexes = new Map();
+
+	for (const entry of fs.readdirSync(rootDir, { withFileTypes: true })) {
+		if (!entry.isFile() || !entry.name.endsWith('.json')) {
+			continue;
+		}
+
+		const filePath = path.join(rootDir, entry.name);
+		let movie;
+		try {
+			movie = readJson(filePath);
+		} catch {
+			continue;
+		}
+
+		const keys = [];
+		if (typeof movie.slug === 'string' && movie.slug.trim().length > 0) {
+			keys.push(`slug:${normalizeText(movie.slug)}`);
+		}
+		if (Number.isInteger(movie.year)) {
+			for (const titleVariant of [movie.title, movie.originalTitle]) {
+				const normalizedTitle = normalizeText(titleVariant);
+				if (normalizedTitle) {
+					keys.push(`title-year:${movie.year}:${normalizedTitle}`);
+					const titleOwners = titleIndexes.get(normalizedTitle) || new Map();
+					titleOwners.set(path.resolve(filePath), movie.year);
+					titleIndexes.set(normalizedTitle, titleOwners);
+				}
+			}
+		}
+
+		for (const key of new Set(keys)) {
+			const owners = indexes.get(key) || new Set();
+			owners.add(path.resolve(filePath));
+			indexes.set(key, owners);
+		}
+	}
+
+	for (const [key, owners] of indexes) {
+		if (owners.size < 2) {
+			continue;
+		}
+
+		const ownerList = [...owners].sort();
+		for (const owner of ownerList) {
+			if (!candidateAbsolutePaths.has(owner)) {
+				continue;
+			}
+			const otherOwners = ownerList.filter((other) => other !== owner);
+			addFinding(
+				findings,
+				'error',
+				'duplicate-catalog-entry',
+				owner,
+				`Candidate conflicts with ${otherOwners.join(', ')} on ${key}. Keep only one source entry or correct the title/year/slug before publication.`,
+			);
+		}
+	}
+
+	for (const [normalizedTitle, owners] of titleIndexes) {
+		const years = new Set(owners.values());
+		if (years.size < 2) {
+			continue;
+		}
+
+		for (const owner of owners.keys()) {
+			if (!candidateAbsolutePaths.has(owner)) {
+				continue;
+			}
+			addFinding(
+				findings,
+				'info',
+				'same-title-different-year',
+				owner,
+				`Catalog also contains the normalized title "${normalizedTitle}" in year(s) ${[...years].sort().join(', ')}. Confirm this is a distinct remake or release before publication.`,
+			);
+		}
+	}
+}
+
 async function auditCandidates(args) {
 	const rootDir = path.resolve(args.root);
 	if (!fs.existsSync(rootDir)) {
@@ -1897,6 +1980,7 @@ async function auditCandidates(args) {
 	const exclusiveProfileIndex = buildExclusiveProfileIndex(exclusiveProfileCatalog);
 	const findings = [];
 	const candidateMovies = [];
+	validateCatalogUniqueness(rootDir, candidatePaths, findings);
 
 	const committedChanges = listCommittedChanges(args.baseRef);
 	const normalizedRoot = args.root.replace(/\\/g, '/').replace(/\/+$/, '');
@@ -1911,7 +1995,7 @@ async function auditCandidates(args) {
 		if (normalizedPath.startsWith('public/people/')) {
 			return false;
 		}
-		return normalizedPath !== 'docs/movie-catalog-reference.md';
+		return normalizedPath !== 'docs/movie-catalog-reference.md' && normalizedPath !== 'src/data/upcomingReleases.generated.ts';
 	});
 
 	for (const filePath of unexpectedCommittedChanges) {
