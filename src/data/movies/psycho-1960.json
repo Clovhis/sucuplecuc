@@ -1,20 +1,22 @@
 {
 	"slug": "psycho-1960",
-	"title": "Psycho",
+	"title": "Psicosis",
 	"originalTitle": "Psycho",
 	"year": 1960,
 	"releaseDate": "1960-06-22",
 	"category": "Terror",
-	"subgenres": ["Psicológico"],
+	"subgenres": [
+		"Psicológico"
+	],
 	"genres": [
 		"Terror",
-		"Misterio & Suspense",
-		"Drama"
+		"Drama",
+		"Thriller"
 	],
 	"country": "Estados Unidos",
-	"poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg/960px-Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg",
+	"poster": "https://images.justwatch.com/poster/313454717/s718/psicosis.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "D90QhegiVvo",
+	"trailerYoutubeId": "Wz719b9QUqY",
 	"releasePlatform": "HBO Max",
 	"director": "Alfred Hitchcock",
 	"mainCast": [
@@ -24,7 +26,7 @@
 	],
 	"productionCompany": "Shamley Productions, Paramount Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "LEGENDARIA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": []
 	},
@@ -42,7 +44,14 @@
 		]
 	},
 	"review": "Psycho empieza siguiendo a una mujer que roba dinero y, cuando parece que ya entendiste la película, Hitchcock te cambia el piso con una precisión feroz. La dirección usa encuadres, cortes y silencios para que el motel Bates parezca ordinario hasta que deja de serlo; Janet Leigh transmite ansiedad sin sobreactuar y Anthony Perkins mezcla timidez con algo cada vez más inquietante. La explicación final puede sentirse demasiado literal hoy, pero no anula el golpe de las escenas anteriores. Es un thriller fundamental porque maneja la mirada del espectador mejor que casi cualquiera.",
-  "synopsis": "Marion Crane abandona su rutina con una suma de dinero ajena y busca refugio en un motel apartado. Allí conoce al amable Norman Bates, cuya relación con su madre vuelve cada conversación más incómoda y peligrosa.",
-	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-10"
+	"synopsis": "Marion Crane abandona su rutina con una suma de dinero ajena y busca refugio en un motel apartado. Allí conoce al amable Norman Bates, cuya relación con su madre vuelve cada conversación más incómoda y peligrosa.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-10",
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

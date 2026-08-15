@@ -1,29 +1,37 @@
 {
 	"slug": "moonlight-2016",
-	"title": "Moonlight",
+	"title": "Luz de luna",
 	"originalTitle": "Moonlight",
 	"year": 2016,
 	"category": "Drama",
 	"poster": "https://images.justwatch.com/poster/301577219/s718/moonlight.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "eVjyW9EJOTI",
+	"trailerYoutubeId": "9NJj12tJzqc",
 	"releasePlatform": "Prime Video",
 	"director": "Barry Jenkins",
 	"mainCast": [
 		"Trevante Rhodes",
 		"André Holland",
-		"Janelle Monáe"
+		"Janelle Monáe",
+		"Ashton Sanders",
+		"Mahershala Ali"
 	],
-	"productionCompany": "A24, Plan B Entertainment, Pastel Productions",
+	"productionCompany": "A24, Plan B Entertainment",
 	"verdict": "recomendada",
-	"verdictLabel": "BUENISIMA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 2017,
-				"recipient": "Adele Romanski, Dede Gardner, Jeremy Kleiner"
+				"recipient": "Adele Romanski, Dede Gardner y Jeremy Kleiner",
+				"year": 2017
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor actor de reparto",
+				"recipient": "Mahershala Ali",
+				"year": 2017
 			}
 		]
 	},
@@ -32,7 +40,7 @@
 		"Drama"
 	],
 	"runtimeMinutes": 111,
-  "review": "Barry Jenkins acompaña a Chiron en tres momentos de su vida sin convertir su dolor en una lección subrayada. La dirección trabaja con silencios, música y primeros planos para mostrar cómo pesan el barrio, la masculinidad impuesta y el deseo cuando no hay lugar para nombrarlo. Los tres actores que lo encarnan mantienen una continuidad emocional admirable, y Mahershala Ali deja una marca enorme con poco tiempo en pantalla. Avanza con calma, pero cada gesto está cargado: es íntima, precisa y pega fuerte.",
+	"review": "Barry Jenkins acompaña a Chiron en tres momentos de su vida sin convertir su dolor en una lección subrayada. La dirección trabaja con silencios, música y primeros planos para mostrar cómo pesan el barrio, la masculinidad impuesta y el deseo cuando no hay lugar para nombrarlo. Los tres actores que lo encarnan mantienen una continuidad emocional admirable, y Mahershala Ali deja una marca enorme con poco tiempo en pantalla. Avanza con calma, pero cada gesto está cargado: es íntima, precisa y pega fuerte.",
 	"editorial": {
 		"becauseYouLiked": [
 			"green-book-2018",
@@ -46,6 +54,11 @@
 		]
 	},
 	"synopsis": "En Liberty City, Miami, en el apogeo de la epidemia de crack, el narcotraficante afrocubano Juan encuentra a Chiron, un niño retraído que se hace llamar \"Pequeño\", escondiéndose de los matones en una casa de crack.",
-	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"subgenres": [],
+	"country": "Estados Unidos",
+	"isArgentinian": false,
+	"isPremiere": false,
+	"premiereLabel": ""
 }

@@ -1,32 +1,56 @@
 {
 	"slug": "el-bueno-el-feo-y-el-malo-1966",
-	"title": "El bueno, el feo y el malo",
+	"title": "El bueno, el malo y el feo",
 	"originalTitle": "Il buono, il brutto, il cattivo",
 	"synopsis": "Durante la Guerra de Secesión, tres pistoleros descubren que un tesoro enterrado depende de que cada uno conserve una parte distinta de la información. Sus alianzas cambian a cada rato, pero los tres avanzan hacia el mismo cementerio y un duelo que se volvió historia del western.",
 	"year": 1966,
 	"reviewPublishedAt": "2026-08-09",
-	"audienceRating": "+16",
+	"audienceRating": "+13",
 	"category": "Western",
-	"genres": ["Western", "Aventura"],
+	"genres": [
+		"Western",
+		"Accion",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Italia, España, Alemania Occidental",
+	"country": "Alemania",
 	"isArgentinian": false,
-	"poster": "https://media.themoviedb.org/t/p/w780/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+	"poster": "https://images.justwatch.com/poster/249120593/s718/el-bueno-el-feo-y-el-malo.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "_lUFcPOQ2Gs",
+	"trailerYoutubeId": "exJOy6uTkek",
 	"releasePlatform": "Prime Video",
 	"director": "Sergio Leone",
-	"mainCast": ["Clint Eastwood", "Eli Wallach", "Lee Van Cleef", "Aldo Giuffrè"],
-	"productionCompany": "United Artists, Produzioni Europee Associate",
+	"mainCast": [
+		"Clint Eastwood",
+		"Eli Wallach",
+		"Lee Van Cleef",
+		"Aldo Giuffrè"
+	],
+	"productionCompany": "United Artists, Constantin Film",
 	"verdict": "recomendada",
-	"verdictLabel": "LEGENDARIA",
-	"awards": { "wins": [] },
+	"verdictLabel": "OBRA MAESTRA",
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 161,
 	"editorial": {
-		"becauseYouLiked": ["unforgiven-1992", "django-unchained-2012"],
-		"related": ["no-country-for-old-men-2007", "pozos-de-ambicion-2007", "the-godfather-1972", "apocalypse-now-1979"]
+		"becauseYouLiked": [
+			"unforgiven-1992",
+			"django-unchained-2012"
+		],
+		"related": [
+			"no-country-for-old-men-2007",
+			"pozos-de-ambicion-2007",
+			"the-godfather-1972",
+			"apocalypse-now-1979"
+		]
 	},
 	"review": "Sergio Leone estira los silencios, los primeros planos y la música de Ennio Morricone hasta hacerlos parte del duelo. Clint Eastwood aporta una calma insolente, Lee Van Cleef una amenaza seca y Eli Wallach una energía que puede ser cómica o miserable en la misma escena. La historia del tesoro es apenas el hilo para atravesar paisajes enormes, cadáveres y traiciones con una puesta en escena monumental. Es un western largo, sí, pero cada pausa prepara una explosión y cada mirada tiene peso. El tiempo la convirtió en una obra de referencia, y se entiende por qué.",
 	"isPremiere": false,
-	"premiereLabel": ""
+	"premiereLabel": "",
+	"releaseDate": "1966-12-23",
+	"releasePlatforms": [
+		"Prime Video",
+		"Apple TV"
+	]
 }

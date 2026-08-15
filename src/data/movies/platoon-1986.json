@@ -1,35 +1,43 @@
 {
 	"slug": "platoon-1986",
-	"title": "Platoon",
+	"title": "Pelotón",
 	"originalTitle": "Platoon",
 	"year": 1986,
 	"category": "Drama",
 	"poster": "https://images.justwatch.com/poster/272950334/s718/platoon.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "upVe9OVC_N4",
-	"releasePlatform": "Otras plataformas",
+	"trailerYoutubeId": "R8weLPF4qBQ",
+	"releasePlatform": "Apple TV",
 	"director": "Oliver Stone",
 	"mainCast": [
 		"Charlie Sheen",
 		"Willem Dafoe",
-		"Tom Berenger"
+		"Tom Berenger",
+		"Forest Whitaker"
 	],
-	"productionCompany": "Hemdale Film Corporation",
+	"productionCompany": "Hemdale Film Corporation, Orion Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "RECOMENDADA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 1987,
-				"recipient": "Arnold Kopelson"
+				"recipient": "Arnold Kopelson",
+				"year": 1987
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Oliver Stone",
+				"year": 1987
 			}
 		]
 	},
 	"releaseDate": "1986-12-19",
 	"genres": [
 		"Drama",
+		"Accion",
 		"Guerra"
 	],
 	"runtimeMinutes": 115,
@@ -46,7 +54,12 @@
 			"the-best-years-of-our-lives-1946"
 		]
 	},
-  "synopsis": "En 1967, Chris Taylor se ofrece como voluntario y llega a un pelotón estadounidense en Vietnam. Mientras sobrevive a la selva y al combate, queda atrapado entre dos sargentos con visiones opuestas, un conflicto que pone a prueba su conciencia.",
-	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-03-08"
+	"synopsis": "En 1967, Chris Taylor se ofrece como voluntario y llega a un pelotón estadounidense en Vietnam. Mientras sobrevive a la selva y al combate, queda atrapado entre dos sargentos con visiones opuestas, un conflicto que pone a prueba su conciencia.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"subgenres": [],
+	"country": "Reino Unido",
+	"isArgentinian": false,
+	"isPremiere": false,
+	"premiereLabel": ""
 }

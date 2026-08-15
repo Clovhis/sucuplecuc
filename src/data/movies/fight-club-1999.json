@@ -1,41 +1,58 @@
 {
-  "slug": "fight-club-1999",
-  "title": "Fight Club",
-  "originalTitle": "Fight Club",
-  "year": 1999,
-  "category": "Drama",
-  "subgenres": ["Psicológico"],
-  "poster": "https://images.justwatch.com/poster/128723874/s718/el-club-de-la-lucha.jpg",
-  "screenshots": [],
-  "trailerYoutubeId": "qtRKdVHc-cE",
-  "releasePlatform": "Prime Video",
-  "director": "David Fincher",
-  "mainCast": [
-    "Brad Pitt",
-    "Edward Norton",
-    "Helena Bonham Carter"
-  ],
-  "productionCompany": "Fox 2000 Pictures, Regency Enterprises, Linson Films",
-  "verdict": "recomendada",
-  "verdictLabel": "CLASICO TOTAL",
-  "runtimeMinutes": 139,
-  "awards": {
-    "wins": []
-  },
-  "editorial": {
-    "becauseYouLiked": [
-      "se7en-1995",
-      "the-killer-2023"
-    ],
-    "related": [
-      "alien-3-1992",
-      "inglourious-basterds-2009",
-      "the-king-s-speech-2010",
-      "once-upon-a-time-in-hollywood-2019"
-    ]
-  },
-  "review": "David Fincher convierte el insomnio y la alienación de un empleado sin nombre en una fantasía agresiva sobre consumo, masculinidad y ganas de romper todo. Edward Norton juega muy bien la incomodidad del narrador, mientras Brad Pitt entra como Tyler Durden con un carisma que explica por qué su veneno resulta tan seductor. La dirección tiene montaje, sonido y humor negro para quemar; el ritmo nunca pierde esa sensación de espiral. A veces la película disfruta tanto de su provocación que puede confundir crítica con pose, pero esa ambigüedad es parte de su golpe. Vale verla con distancia, porque sigue siendo filosa y discutible.",
-  "synopsis": "Un empleado de oficina insomne encuentra alivio en grupos de apoyo hasta que conoce al imprevisible Tyler Durden. Juntos crean un club secreto donde hombres frustrados se golpean para escapar de una vida dominada por el consumo y la rutina.",
-  "audienceRating": "+18",
-  "reviewPublishedAt": "2026-03-11"
+	"slug": "fight-club-1999",
+	"title": "El club de la pelea",
+	"originalTitle": "Fight Club",
+	"year": 1999,
+	"category": "Drama",
+	"subgenres": [
+		"Psicológico"
+	],
+	"poster": "https://images.justwatch.com/poster/128723874/s718/el-club-de-la-lucha.jpg",
+	"screenshots": [],
+	"trailerYoutubeId": "qtRKdVHc-cE",
+	"releasePlatform": "Paramount Plus",
+	"director": "David Fincher",
+	"mainCast": [
+		"Edward Norton",
+		"Brad Pitt",
+		"Helena Bonham Carter",
+		"Jared Leto"
+	],
+	"productionCompany": "Fox 2000 Pictures, Regency Enterprises",
+	"verdict": "recomendada",
+	"verdictLabel": "RECOMENDADA",
+	"runtimeMinutes": 139,
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"se7en-1995",
+			"the-killer-2023"
+		],
+		"related": [
+			"alien-3-1992",
+			"inglourious-basterds-2009",
+			"the-king-s-speech-2010",
+			"once-upon-a-time-in-hollywood-2019"
+		]
+	},
+	"review": "David Fincher convierte el insomnio y la alienación de un empleado sin nombre en una fantasía agresiva sobre consumo, masculinidad y ganas de romper todo. Edward Norton juega muy bien la incomodidad del narrador, mientras Brad Pitt entra como Tyler Durden con un carisma que explica por qué su veneno resulta tan seductor. La dirección tiene montaje, sonido y humor negro para quemar; el ritmo nunca pierde esa sensación de espiral. A veces la película disfruta tanto de su provocación que puede confundir crítica con pose, pero esa ambigüedad es parte de su golpe. Vale verla con distancia, porque sigue siendo filosa y discutible.",
+	"synopsis": "Un empleado de oficina insomne encuentra alivio en grupos de apoyo hasta que conoce al imprevisible Tyler Durden. Juntos crean un club secreto donde hombres frustrados se golpean para escapar de una vida dominada por el consumo y la rutina.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-11",
+	"releaseDate": "1999-10-15",
+	"genres": [
+		"Drama",
+		"Crimen",
+		"Thriller"
+	],
+	"country": "Alemania",
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Paramount Plus",
+		"Prime Video"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

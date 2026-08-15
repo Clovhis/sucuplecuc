@@ -1,14 +1,13 @@
 {
 	"slug": "con-faldas-y-a-lo-loco-1959",
-	"title": "Con faldas y a lo loco",
+	"title": "Una Eva y dos Adanes",
 	"originalTitle": "Some Like It Hot",
 	"year": 1959,
-	"audienceRating": "+18",
-	"category": "Comedia",
+	"audienceRating": "+13",
+	"category": "Comedia romantica",
 	"genres": [
 		"Comedia",
-		"Crimen",
-		"Música"
+		"Romance"
 	],
 	"poster": "https://images.justwatch.com/poster/176241490/s718/con-faldas-y-a-lo-loco.jpg",
 	"screenshots": [],
@@ -16,11 +15,13 @@
 	"director": "Billy Wilder",
 	"mainCast": [
 		"Tony Curtis",
-		"Jack Lemmon"
+		"Jack Lemmon",
+		"Marilyn Monroe",
+		"George Raft"
 	],
-	"productionCompany": "The Mirisch Company",
+	"productionCompany": "Ashton Productions, United Artists",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO TOTAL",
+	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 123,
 	"editorial": {
 		"becauseYouLiked": [
@@ -41,5 +42,10 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "Estados Unidos",
+	"releaseDate": "1959-03-19",
+	"subgenres": [
+		"RomCom"
+	],
+	"isArgentinian": false
 }

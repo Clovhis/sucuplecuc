@@ -1,37 +1,46 @@
 {
 	"slug": "lawrence-of-arabia-1962",
-	"title": "Lawrence of Arabia",
+	"title": "Lawrence de Arabia",
 	"originalTitle": "Lawrence of Arabia",
 	"year": 1962,
-	"category": "Historia",
-	"poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Lawrence_of_arabia_ver3_xxlg.jpg/960px-Lawrence_of_arabia_ver3_xxlg.jpg",
+	"category": "Drama",
+	"poster": "https://images.justwatch.com/poster/136422664/s718/lawrence-de-arabia.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "nqhjCrQrxow",
+	"trailerYoutubeId": "_AznzZAlwVA",
 	"releasePlatform": "Netflix",
 	"director": "David Lean",
 	"mainCast": [
 		"Peter O'Toole",
 		"Alec Guinness",
-		"Omar Sharif"
+		"Omar Sharif",
+		"Anthony Quinn",
+		"Jack Hawkins"
 	],
-	"productionCompany": "Horizon Pictures",
+	"productionCompany": "Horizon Pictures, Columbia Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "ESTA BUENA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 1963,
-				"recipient": "Sam Spiegel"
+				"recipient": "Sam Spiegel",
+				"year": 1963
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "David Lean",
+				"year": 1963
 			}
 		]
 	},
 	"releaseDate": "1962-12-11",
 	"genres": [
+		"Drama",
 		"Historia",
 		"Guerra",
-		"Acción & Aventura"
+		"Aventura"
 	],
 	"runtimeMinutes": 216,
 	"review": "David Lean usa el desierto como paisaje y como espejo de un oficial británico que se enamora de su propia leyenda mientras lidera una revuelta árabe. Peter O'Toole hace de Lawrence una figura fascinante porque mezcla encanto, fragilidad y una crueldad que asoma cuando nadie la espera; Omar Sharif le aporta una presencia serena y decisiva. La dirección privilegia planos enormes, silencios y transiciones que convierten el viaje en experiencia física. Dura mucho y no corre para complacer, además de mirar la región desde una perspectiva británica marcada. Si aceptás ese ritmo, es una épica absorbente y mucho más ambigua que su fama de postal.",
@@ -48,6 +57,15 @@
 		]
 	},
 	"synopsis": "Durante la Primera Guerra Mundial, el oficial británico T. E. Lawrence es enviado al desierto árabe para contactar a líderes locales. Su participación en la revuelta contra el Imperio otomano lo vuelve una figura clave y lo enfrenta a sus propias contradicciones.",
-	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"subgenres": [],
+	"country": "Reino Unido",
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Netflix",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

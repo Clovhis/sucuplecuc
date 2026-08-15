@@ -1,18 +1,18 @@
 {
 	"slug": "alien-1979",
-	"title": "Alien",
+	"title": "Alien: El octavo pasajero",
 	"originalTitle": "Alien",
 	"year": 1979,
 	"releaseDate": "1979-05-25",
-	"category": "Ciencia ficcion",
+	"category": "Terror",
 	"genres": [
 		"Terror",
-		"Ciencia ficción"
+		"Ciencia ficcion"
 	],
-	"country": "Reino Unido, Estados Unidos",
+	"country": "Reino Unido",
 	"poster": "https://images.justwatch.com/poster/9890794/s718/alien-el-octavo-pasajero.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "jQ5lPt9edzQ",
+	"trailerYoutubeId": "4lRNBd8Vook",
 	"releasePlatform": "Disney Plus",
 	"releasePlatforms": [
 		"Disney Plus",
@@ -20,19 +20,21 @@
 	],
 	"director": "Ridley Scott",
 	"mainCast": [
-		"Sigourney Weaver",
 		"Tom Skerritt",
+		"Sigourney Weaver",
+		"Veronica Cartwright",
+		"Harry Dean Stanton",
 		"John Hurt"
 	],
-	"productionCompany": "Brandywine Productions, 20th Century Fox",
+	"productionCompany": "20th Century Fox, Brandywine Productions",
 	"verdict": "recomendada",
-	"verdictLabel": "LEGENDARIA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejores efectos visuales",
-				"recipient": "H.R. Giger, Carlo Rambaldi, Brian Johnson, Nick Allder y Dennis Ayling",
+				"recipient": "Brian Johnson, Richard Edlund, Dennis Muren y Carlo Rambaldi",
 				"year": 1980
 			}
 		]
@@ -51,7 +53,13 @@
 		]
 	},
 	"review": "Ridley Scott agarra una misión de carga bastante rutinaria y la vuelve una pesadilla industrial: pasillos húmedos, máquinas que zumban y una tripulación que no tiene épica de sobra. La dirección administra la información con paciencia y hace que cada puerta abierta pese; Sigourney Weaver se impone sin grandilocuencia, mientras el diseño de Giger le da a la criatura una rareza física que todavía incomoda. Va despacio al principio, pero ese tiempo construye encierro de verdad. Si buscás terror espacial con clima, ideas visuales y nervio, sigue siendo una fija.",
-  "synopsis": "La tripulación del carguero Nostromo responde a una señal desconocida y lleva a bordo una criatura que crece dentro de sus víctimas. Aislados en el espacio, deberán sobrevivir a su propia nave.",
-	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-03-10"
+	"synopsis": "La tripulación del carguero Nostromo responde a una señal desconocida y lleva a bordo una criatura que crece dentro de sus víctimas. Aislados en el espacio, deberán sobrevivir a su propia nave.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-10",
+	"subgenres": [
+		"Body Horror"
+	],
+	"isArgentinian": false,
+	"isPremiere": false,
+	"premiereLabel": ""
 }

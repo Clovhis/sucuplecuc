@@ -1,29 +1,36 @@
 {
 	"slug": "schindler-s-list-1993",
-	"title": "Schindler's List",
+	"title": "La lista de Schindler",
 	"originalTitle": "Schindler's List",
 	"year": 1993,
 	"category": "Drama",
 	"poster": "https://images.justwatch.com/poster/62741080/s718/la-lista-de-schindler.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "W9vj2Wf57rQ",
+	"trailerYoutubeId": "gG22XNhtnoY",
 	"releasePlatform": "HBO Max",
 	"director": "Steven Spielberg",
 	"mainCast": [
 		"Liam Neeson",
 		"Ben Kingsley",
-		"Ralph Fiennes"
+		"Ralph Fiennes",
+		"Caroline Goodall"
 	],
-	"productionCompany": "Universal Pictures, Amblin Entertainment",
+	"productionCompany": "Amblin Entertainment, Universal Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "LEGENDARIA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 1994,
-				"recipient": "Steven Spielberg, Gerald R. Molen, Branko Lustig"
+				"recipient": "Steven Spielberg, Gerald R. Molen y Branko Lustig",
+				"year": 1994
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Steven Spielberg",
+				"year": 1994
 			}
 		]
 	},
@@ -48,6 +55,15 @@
 		]
 	},
 	"synopsis": "Dirigido y coproducido por Steven Spielberg, con guion de Steven Zaillian, el filme relata un período de la vida de Oskar Schindler, un empresario de etnia alemana que salvó de morir en el Holocausto a más de mil judíos polacos durante la Segunda Guerra Mundial empleándolos como trabajadores de sus fábricas.",
-	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"subgenres": [],
+	"country": "Estados Unidos",
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

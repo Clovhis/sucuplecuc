@@ -1,34 +1,43 @@
 {
 	"slug": "the-matrix-1999",
-	"title": "The Matrix",
+	"title": "Matrix",
 	"originalTitle": "The Matrix",
 	"year": 1999,
 	"releaseDate": "1999-03-31",
 	"category": "Ciencia ficcion",
 	"genres": [
-		"Ciencia ficción",
-		"Acción & Aventura"
+		"Ciencia ficcion",
+		"Accion",
+		"Thriller"
 	],
 	"country": "Estados Unidos",
-	"poster": "https://images.justwatch.com/poster/133799107/s718/matrix.jpg",
+	"poster": "https://images.justwatch.com/poster/306311161/s718/matrix.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "tGgCqGm_6Hs",
-	"releasePlatform": "Netflix",
-	"director": "Lana Wachowski, Lilly Wachowski",
+	"trailerYoutubeId": "vKQi3bBA1y8",
+	"releasePlatform": "HBO Max",
+	"director": "Lana Wachowski",
 	"mainCast": [
 		"Keanu Reeves",
 		"Laurence Fishburne",
-		"Carrie-Anne Moss"
+		"Carrie-Anne Moss",
+		"Hugo Weaving",
+		"Gloria Foster"
 	],
-	"productionCompany": "Village Roadshow Pictures, Silver Pictures",
+	"productionCompany": "Warner Bros. Pictures, Village Roadshow Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
+				"category": "Mejor montaje",
+				"recipient": "Zach Staenberg",
+				"year": 2000
+			},
+			{
+				"award": "oscar",
 				"category": "Mejores efectos visuales",
-				"recipient": "John Gaeta, Janek Sirrs, Steve Courtley, Jon Thum",
+				"recipient": "John Gaeta, Janek Sirrs, Steve Courtley y Jon Thum",
 				"year": 2000
 			}
 		]
@@ -47,7 +56,15 @@
 		]
 	},
 	"review": "The Matrix mezcla una pregunta de ciencia ficción sencilla —qué pasa si el mundo no es real— con una puesta que le dio una forma nueva a la acción de Hollywood. Las Wachowski ordenan ideas filosóficas, kung fu, cuero negro y efectos digitales con una claridad sorprendente; cada regla de ese universo se vuelve combustible para una escena memorable. Keanu Reeves funciona justamente por su desconcierto, mientras Laurence Fishburne le da gravedad a Morpheus y Carrie-Anne Moss pura presencia a Trinity. Algunas explicaciones hoy suenan más solemnes, pero la película sigue siendo filosa, visualmente precisa y tremendamente disfrutable.",
-  "synopsis": "Neo, un programador que siente que algo no cierra en su mundo, descubre que vive dentro de una simulación creada por máquinas y debe decidir si se suma a la resistencia humana.",
+	"synopsis": "Neo, un programador que siente que algo no cierra en su mundo, descubre que vive dentro de una simulación creada por máquinas y debe decidir si se suma a la resistencia humana.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"subgenres": [],
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

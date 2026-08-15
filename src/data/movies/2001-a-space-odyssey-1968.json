@@ -1,34 +1,36 @@
 {
 	"slug": "2001-a-space-odyssey-1968",
-	"title": "2001: A Space Odyssey",
+	"title": "2001: Odisea del espacio",
 	"originalTitle": "2001: A Space Odyssey",
 	"year": 1968,
 	"releaseDate": "1968-04-02",
 	"category": "Ciencia ficcion",
 	"genres": [
-		"Misterio & Suspense",
-		"Acción & Aventura",
-		"Ciencia ficción"
+		"Ciencia ficcion",
+		"Drama",
+		"Thriller"
 	],
-	"country": "Reino Unido, Estados Unidos",
-	"poster": "https://images.justwatch.com/poster/9065741/s718/2001-una-odisea-del-espacio.jpg",
+	"country": "Reino Unido",
+	"poster": "https://images.justwatch.com/poster/167085609/s718/2001-una-odisea-del-espacio.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "oR_e9y-bka0",
+	"trailerYoutubeId": "5iGJ8z_4bTg",
 	"releasePlatform": "HBO Max",
 	"director": "Stanley Kubrick",
 	"mainCast": [
 		"Keir Dullea",
 		"Gary Lockwood",
-		"William Sylvester"
+		"William Sylvester",
+		"Douglas Rain",
+		"Daniel Richter"
 	],
 	"productionCompany": "Stanley Kubrick Productions, Metro-Goldwyn-Mayer",
 	"verdict": "recomendada",
-	"verdictLabel": "LEGENDARIA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
-				"category": "Efectos visuales especiales",
+				"category": "Mejores efectos visuales",
 				"recipient": "Stanley Kubrick",
 				"year": 1969
 			}
@@ -47,8 +49,16 @@
 			"terminator-3-rise-of-the-machines-2003"
 		]
 	},
-  "review": "Kubrick no cuenta una aventura espacial al uso: ordena imágenes, silencios y saltos de tiempo para que el espectador complete el sentido. La dirección es de una precisión casi hipnótica, con naves que parecen bailar y una puesta que vuelve gigantescos incluso los gestos mínimos. Ese control también explica su distancia emocional y un tramo final que puede resultar impenetrable. Pero si se entra en su frecuencia, es ciencia ficción que no ilustra ideas: las hace sentir.",
+	"review": "Kubrick no cuenta una aventura espacial al uso: ordena imágenes, silencios y saltos de tiempo para que el espectador complete el sentido. La dirección es de una precisión casi hipnótica, con naves que parecen bailar y una puesta que vuelve gigantescos incluso los gestos mínimos. Ese control también explica su distancia emocional y un tramo final que puede resultar impenetrable. Pero si se entra en su frecuencia, es ciencia ficción que no ilustra ideas: las hace sentir.",
 	"synopsis": "Un misterioso monolito altera a unos homínidos y, millones de años después, vuelve a aparecer cerca de la Luna. La misión Discovery viaja hacia Júpiter mientras la computadora HAL 9000 empieza a desafiar a la tripulación.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-10"
+	"reviewPublishedAt": "2026-03-10",
+	"subgenres": [],
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

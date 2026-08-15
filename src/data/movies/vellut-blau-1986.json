@@ -1,9 +1,9 @@
 {
 	"slug": "vellut-blau-1986",
-	"title": "Vellut blau",
+	"title": "Terciopelo azul",
 	"originalTitle": "Blue Velvet",
 	"year": 1986,
-	"audienceRating": "+18",
+	"audienceRating": "+13",
 	"category": "Thriller",
 	"genres": [
 		"Thriller",
@@ -19,11 +19,13 @@
 	"director": "David Lynch",
 	"mainCast": [
 		"Isabella Rossellini",
-		"Kyle MacLachlan"
+		"Kyle MacLachlan",
+		"Dennis Hopper",
+		"Laura Dern"
 	],
 	"productionCompany": "De Laurentiis Entertainment Group",
 	"verdict": "recomendada",
-	"verdictLabel": "RECOMENDADA",
+	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 120,
 	"editorial": {
 		"becauseYouLiked": [
@@ -44,5 +46,7 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "Estados Unidos",
+	"releaseDate": "1986-10-23",
+	"isArgentinian": false
 }

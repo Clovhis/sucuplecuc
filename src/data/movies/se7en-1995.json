@@ -1,23 +1,25 @@
 {
 	"slug": "se7en-1995",
-	"title": "Se7en",
+	"title": "Seven",
 	"originalTitle": "Se7en",
 	"year": 1995,
 	"category": "Thriller",
-	"subgenres": ["Psicológico"],
+	"subgenres": [
+		"Psicológico"
+	],
 	"poster": "https://images.justwatch.com/poster/169579701/s718/seven.jpg",
 	"screenshots": [],
 	"trailerYoutubeId": "znmZoVkCjpI",
 	"releasePlatform": "HBO Max",
 	"director": "David Fincher",
 	"mainCast": [
-		"Brad Pitt",
 		"Morgan Freeman",
+		"Brad Pitt",
 		"Gwyneth Paltrow"
 	],
-	"productionCompany": "Arnold Kopelson Productions, New Line Cinema",
+	"productionCompany": "New Line Cinema, Juno Pix",
 	"verdict": "recomendada",
-	"verdictLabel": "IMPERDIBLE",
+	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 127,
 	"awards": {
 		"wins": []
@@ -36,6 +38,20 @@
 	},
 	"review": "Se7en sigue a dos detectives que persiguen a un asesino que ordena sus crímenes según los pecados capitales. David Fincher dirige la ciudad como una pesadilla húmeda y sin salida, y el ritmo avanza con una precisión que no necesita sustos fáciles; Morgan Freeman aporta cansancio y método, mientras Brad Pitt empuja la impulsividad del caso. La violencia se sugiere más de lo que se muestra, pero el tono es implacable y el final justifica esa oscuridad. Vale por su atmósfera, su construcción de tensión y un thriller que todavía no perdió capacidad de incomodar.",
 	"synopsis": "Al detective de homicidios William R. Somerset, que está a punto de retirarse, le es asignado como compañero el joven e impulsivo detective David Mills, recientemente transferido. Los detectives empiezan a investigar una serie de asesinatos relacionados con los siete pecados capitales.",
-	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-03-11"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-11",
+	"releaseDate": "1995-09-22",
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Drama"
+	],
+	"country": "Estados Unidos",
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

@@ -1,25 +1,26 @@
 {
 	"slug": "chinatown-1974",
-	"title": "Chinatown",
+	"title": "Barrio chino",
 	"originalTitle": "Chinatown",
 	"year": 1974,
-	"audienceRating": "+17",
-	"category": "Thriller",
+	"audienceRating": "+13",
+	"category": "Crimen",
 	"genres": [
-		"Thriller",
 		"Crimen",
-		"Drama"
+		"Drama",
+		"Thriller"
 	],
-	"subgenres": [
-		"Psicológico"
-	],
+	"subgenres": [],
 	"poster": "https://images.justwatch.com/poster/202436136/s718/chinatown.jpg",
 	"screenshots": [],
 	"trailerYoutubeId": "T37QkBc4IGY",
 	"director": "Roman Polanski",
 	"mainCast": [
 		"Jack Nicholson",
-		"Faye Dunaway"
+		"Faye Dunaway",
+		"John Huston",
+		"Perry Lopez",
+		"Burt Young"
 	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "recomendada",
@@ -51,5 +52,7 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "Estados Unidos",
+	"releaseDate": "1974-06-20",
+	"isArgentinian": false
 }

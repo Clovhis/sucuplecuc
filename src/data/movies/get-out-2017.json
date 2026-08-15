@@ -1,44 +1,38 @@
 {
 	"slug": "get-out-2017",
-	"title": "Get Out",
+	"title": "¡Huye!",
 	"originalTitle": "Get Out",
 	"synopsis": "Un joven afroamericano visita por primera vez a la familia de su novia blanca y descubre que la incomodidad social de la reunión es apenas la superficie de algo mucho más siniestro.",
 	"year": 2017,
 	"releaseDate": "2017-02-24",
-	"audienceRating": "+16",
+	"audienceRating": "+13",
 	"category": "Terror",
-	"subgenres": ["Psicológico"],
+	"subgenres": [
+		"Psicológico"
+	],
 	"genres": [
 		"Terror",
-		"Thriller",
-		"Misterio"
+		"Thriller"
 	],
 	"country": "Estados Unidos",
 	"isArgentinian": false,
-	"poster": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
+	"poster": "https://images.justwatch.com/poster/137428092/s718/get-out.jpg",
 	"screenshots": [],
 	"trailerYoutubeId": "DzfpyUB60YY",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Prime Video",
 	"director": "Jordan Peele",
 	"mainCast": [
 		"Daniel Kaluuya",
 		"Allison Williams",
-		"Bradley Whitford",
 		"Catherine Keener",
+		"Bradley Whitford",
 		"Caleb Landry Jones"
 	],
-	"productionCompany": "Blumhouse Productions, QC Entertainment, Monkeypaw Productions",
+	"productionCompany": "Blumhouse Productions, QC Entertainment",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
 	"awards": {
-		"wins": [
-			{
-				"award": "oscar",
-				"category": "Mejor guion original",
-				"recipient": "Jordan Peele",
-				"year": 2018
-			}
-		]
+		"wins": []
 	},
 	"runtimeMinutes": 104,
 	"editorial": {
@@ -56,5 +50,9 @@
 	"review": "Get Out usa una visita a los suegros para construir terror desde situaciones que primero parecen apenas incómodas. Jordan Peele dosifica la información con mucha precisión: los silencios, las preguntas fuera de lugar y las sonrisas tensas van cerrando la trampa sin necesidad de subrayado. Daniel Kaluuya sostiene el punto de vista con una mezcla de alerta y desconcierto que hace creíble cada giro. Allison Williams y Bradley Whitford juegan bien con la cortesía que esconde algo siniestro. El final explica más de la cuenta, pero el ritmo, la sátira y el suspenso convierten su comentario social en una película verdaderamente inquietante.",
 	"isPremiere": false,
 	"premiereLabel": "",
-	"reviewPublishedAt": "2026-04-26"
+	"reviewPublishedAt": "2026-04-26",
+	"releasePlatforms": [
+		"Prime Video",
+		"HBO Max"
+	]
 }

@@ -1,38 +1,48 @@
 {
 	"slug": "the-silence-of-the-lambs-1991",
-	"title": "The Silence of the Lambs",
+	"title": "El silencio de los inocentes",
 	"originalTitle": "The Silence of the Lambs",
 	"year": 1991,
-	"category": "Crimen",
-	"subgenres": ["Psicológico"],
+	"category": "Terror",
+	"subgenres": [
+		"Psicológico"
+	],
 	"poster": "https://images.justwatch.com/poster/65513666/s718/el-silencio-de-los-corderos.jpg",
 	"screenshots": [],
 	"trailerYoutubeId": "6iB21hsprAQ",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Paramount Plus",
 	"director": "Jonathan Demme",
 	"mainCast": [
 		"Jodie Foster",
 		"Anthony Hopkins",
-		"Scott Glenn"
+		"Scott Glenn",
+		"Anthony Heald"
 	],
-	"productionCompany": "Strong Heart Productions",
+	"productionCompany": "Orion Pictures",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO TOTAL",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 1992,
-				"recipient": "Kenneth Utt, Edward Saxon, Ron Bozman"
+				"recipient": "Edward Saxon, Kenneth Utt y Ron Bozman",
+				"year": 1992
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Jonathan Demme",
+				"year": 1992
 			}
 		]
 	},
 	"releaseDate": "1991-02-14",
 	"genres": [
+		"Terror",
 		"Crimen",
-		"Misterio & Suspense",
-		"Drama"
+		"Drama",
+		"Thriller"
 	],
 	"runtimeMinutes": 118,
 	"review": "El silencio de los inocentes arma un policial de terror donde la investigación importa tanto como el miedo que provoca cada entrevista. Jonathan Demme filma a Clarice Starling de frente, encerrada por miradas masculinas y pasillos angostos, y Jodie Foster convierte esa vulnerabilidad en decisión. Anthony Hopkins usa poco tiempo en pantalla, pero su Hannibal Lecter queda grabado por la calma y la precisión, no por el exceso. Ted Levine también aporta una incomodidad menos vistosa como Buffalo Bill. El caso avanza con tensión real y la película nunca olvida quién está pagando el costo.",
@@ -49,6 +59,14 @@
 		]
 	},
 	"synopsis": "La agente del FBI Clarice Starling intenta atrapar a un asesino serial que secuestra mujeres. Para acercarse a el, debe pedir ayuda al brillante y perturbador Hannibal Lecter.",
-	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"country": "Estados Unidos",
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Paramount Plus",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

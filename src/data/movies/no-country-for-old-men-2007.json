@@ -1,40 +1,48 @@
 {
 	"slug": "no-country-for-old-men-2007",
-	"title": "No Country for Old Men",
+	"title": "Sin lugar para los débiles",
 	"originalTitle": "No Country for Old Men",
 	"year": 2007,
-	"category": "Western",
+	"category": "Crimen",
 	"poster": "https://images.justwatch.com/poster/151901090/s718/no-es-pais-para-viejos.jpg",
 	"screenshots": [],
 	"trailerYoutubeId": "38A__WT3-o0",
-	"releasePlatform": "Otras plataformas",
-	"director": "Joel Coen",
+	"releasePlatform": "Netflix",
+	"director": "Ethan Coen",
 	"mainCast": [
 		"Javier Bardem",
 		"Tommy Lee Jones",
-		"Josh Brolin"
+		"Josh Brolin",
+		"Woody Harrelson"
 	],
-	"productionCompany": "Paramount Vantage, Miramax Films, Scott Rudin Productions, Mike Zoss Productions",
+	"productionCompany": "Paramount Vantage, Miramax Films",
 	"verdict": "recomendada",
-	"verdictLabel": "ESTA BUENA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 2008,
-				"recipient": "Scott Rudin, Ethan Coen, Joel Coen"
+				"recipient": "Joel Coen, Ethan Coen y Scott Rudin",
+				"year": 2008
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Joel Coen y Ethan Coen",
+				"year": 2008
 			}
 		]
 	},
 	"releaseDate": "2007-11-09",
 	"genres": [
-		"Western",
-		"Misterio & Suspense",
-		"Crimen"
+		"Crimen",
+		"Drama",
+		"Thriller",
+		"Western"
 	],
 	"runtimeMinutes": 122,
-  "review": "Los Coen convierten una persecución por dinero en una película sobre gente que ya no entiende el mundo que habita. La dirección evita la música explicativa y confía en silencios, espacios abiertos y ruidos mínimos para sostener una tensión casi física. Javier Bardem hace de Anton Chigurh una amenaza precisa, sin grandilocuencia, mientras Josh Brolin le da cuerpo a un tipo que toma una mala decisión y no puede deshacerla. El final puede dejar descolocado a quien espere un cierre clásico, pero es justamente lo que vuelve tan filosa a esta pesadilla moral.",
+	"review": "Los Coen convierten una persecución por dinero en una película sobre gente que ya no entiende el mundo que habita. La dirección evita la música explicativa y confía en silencios, espacios abiertos y ruidos mínimos para sostener una tensión casi física. Javier Bardem hace de Anton Chigurh una amenaza precisa, sin grandilocuencia, mientras Josh Brolin le da cuerpo a un tipo que toma una mala decisión y no puede deshacerla. El final puede dejar descolocado a quien espere un cierre clásico, pero es justamente lo que vuelve tan filosa a esta pesadilla moral.",
 	"editorial": {
 		"becauseYouLiked": [
 			"the-departed-2006",
@@ -48,6 +56,15 @@
 		]
 	},
 	"synopsis": "Llewelyn Moss encuentra dinero junto a los restos de un negocio de drogas y decide quedárselo. Su decisión desata la persecución de Anton Chigurh, un asesino implacable, mientras un sheriff veterano intenta entender una violencia que parece haber superado su tiempo.",
-	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"subgenres": [],
+	"country": "Estados Unidos",
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Netflix",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

@@ -1,37 +1,43 @@
 {
 	"slug": "the-apartment-1960",
-	"title": "The Apartment",
+	"title": "El apartamento",
 	"originalTitle": "The Apartment",
 	"year": 1960,
-	"category": "Drama",
+	"category": "Comedia romantica",
 	"poster": "https://images.justwatch.com/poster/240783852/s718/el-apartamento.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "DUok8EBsw6g",
-	"releasePlatform": "Otras plataformas",
+	"trailerYoutubeId": "OcslkrBMLGc",
+	"releasePlatform": "Apple TV",
 	"director": "Billy Wilder",
 	"mainCast": [
 		"Jack Lemmon",
 		"Shirley MacLaine",
 		"Fred MacMurray"
 	],
-	"productionCompany": "The Mirisch Company",
+	"productionCompany": "The Mirisch Company, United Artists",
 	"verdict": "recomendada",
-	"verdictLabel": "ESTA BUENA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 1961,
-				"recipient": "Billy Wilder"
+				"recipient": "The Mirisch Company",
+				"year": 1961
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Billy Wilder",
+				"year": 1961
 			}
 		]
 	},
 	"releaseDate": "1960-06-21",
 	"genres": [
+		"Comedia",
 		"Drama",
-		"Romance",
-		"Comedia"
+		"Romance"
 	],
 	"runtimeMinutes": 125,
 	"review": "The Apartment sigue a un empleado que presta su departamento a los jefes para que tengan aventuras y descubre el costo emocional de esa estrategia cuando se enamora de una ascensorista. Billy Wilder mezcla sátira laboral, romance y tristeza con una precisión admirable; Jack Lemmon hace de C.C. Baxter un tipo servil pero querible, y Shirley MacLaine le da a Fran una vulnerabilidad que nunca se vuelve decorativa. El ritmo avanza con una ligereza engañosa hasta tocar zonas muy oscuras. Vale muchísimo por cómo hace reír sin minimizar la soledad ni la crueldad de su mundo.",
@@ -48,6 +54,13 @@
 		]
 	},
 	"synopsis": "Un oficinista solitario presta su departamento a los jefes de la empresa para sus aventuras amorosas con la esperanza de ascender. Todo se complica cuando se enamora de una ascensorista vinculada a uno de ellos.",
-	"audienceRating": "+14",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"subgenres": [
+		"RomCom"
+	],
+	"country": "Estados Unidos",
+	"isArgentinian": false,
+	"isPremiere": false,
+	"premiereLabel": ""
 }

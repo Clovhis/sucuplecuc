@@ -1,32 +1,46 @@
 {
 	"slug": "the-exorcist-1973",
-	"title": "The Exorcist",
+	"title": "El exorcista",
 	"originalTitle": "The Exorcist",
 	"year": 1973,
 	"releaseDate": "1973-12-26",
 	"category": "Terror",
-	"subgenres": ["Sobrenatural"],
-	"genres": [
-		"Terror",
-		"Drama"
+	"subgenres": [
+		"Sobrenatural"
 	],
-	"country": "US",
+	"genres": [
+		"Terror"
+	],
+	"country": "Estados Unidos",
 	"isArgentinian": false,
-	"poster": "https://upload.wikimedia.org/wikipedia/en/7/7b/Exorcist_ver2.jpg",
+	"poster": "https://images.justwatch.com/poster/310426120/s718/el-exorcista.jpg",
 	"screenshots": [],
 	"trailerYoutubeId": "BU2eYAO31Cc",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "HBO Max",
 	"director": "William Friedkin",
 	"mainCast": [
 		"Ellen Burstyn",
 		"Max von Sydow",
 		"Lee J. Cobb"
 	],
-	"productionCompany": "Warner Bros. Entertainment",
+	"productionCompany": "Warner Bros. Pictures, Hoya Productions",
 	"verdict": "recomendada",
-	"verdictLabel": "CLASICO TOTAL",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
-		"wins": []
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor guion adaptado",
+				"recipient": "William Peter Blatty",
+				"year": 1974
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor sonido",
+				"recipient": "Robert Knudson y Christopher Newman",
+				"year": 1974
+			}
+		]
 	},
 	"runtimeMinutes": 122,
 	"editorial": {
@@ -43,6 +57,12 @@
 	},
 	"review": "The Exorcist sigue a una actriz desesperada cuando su hija empieza a comportarse de manera inexplicable, y a dos sacerdotes que deben enfrentar una posesión que desafía todo lo que creen. William Friedkin filma el caso con una seriedad casi documental, acumulando consultas médicas, dudas y silencios antes de soltar el horror más directo. Ellen Burstyn transmite una desesperación terrenal, mientras Linda Blair hace que Regan sea mucho más que una cara poseída. Sigue siendo incómoda porque no depende sólo del golpe de efecto: su clima y su angustia la vuelven más dura que gran parte del género.",
 	"synopsis": "En el norte de Irak, el sacerdote Lankester Merrin participa en una excavación arqueológica en las antiguas ruinas de Hatra. Durante la excavación, encuentra un talismán de piedra de un ser alado que evoca una expresión de preocupación en su rostro.",
-	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-03-13"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-13",
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
+	"isPremiere": false,
+	"premiereLabel": ""
 }

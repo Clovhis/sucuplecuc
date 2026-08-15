@@ -1,22 +1,24 @@
 {
 	"slug": "american-beauty-1999",
-	"title": "American Beauty",
+	"title": "Belleza americana",
 	"originalTitle": "American Beauty",
 	"year": 1999,
 	"category": "Drama",
 	"poster": "https://images.justwatch.com/poster/341845803/s718/american-beauty.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "ID8Z5qYSyI4",
+	"trailerYoutubeId": "Ly7rq5EsTC8",
 	"releasePlatform": "Paramount Plus",
 	"releasePlatforms": [
 		"Paramount Plus",
-		"Mercado Play"
+		"Apple TV"
 	],
 	"director": "Sam Mendes",
 	"mainCast": [
 		"Kevin Spacey",
 		"Annette Bening",
-		"Thora Birch"
+		"Thora Birch",
+		"Wes Bentley",
+		"Mena Suvari"
 	],
 	"productionCompany": "DreamWorks Pictures, Jinks/Cohen Company",
 	"verdict": "recomendada",
@@ -26,8 +28,14 @@
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 2000,
-				"recipient": "Bruce Cohen, Dan Jinks"
+				"recipient": "Bruce Cohen y Dan Jinks",
+				"year": 2000
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Sam Mendes",
+				"year": 2000
 			}
 		]
 	},
@@ -50,6 +58,13 @@
 		]
 	},
 	"synopsis": "Un ejecutivo de publicidad atrapado en una vida suburbana impecable empieza a rebelarse contra su rutina, su matrimonio y la mirada de sus vecinos. El deseo por una amiga de su hija acelera una crisis que también expone el malestar de toda la familia.",
-	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"subgenres": [
+		"Psicológico"
+	],
+	"country": "United States",
+	"isArgentinian": false,
+	"isPremiere": false,
+	"premiereLabel": ""
 }

@@ -1,6 +1,6 @@
 {
 	"slug": "fellini-ocho-y-medio-1963",
-	"title": "Fellini, ocho y medio",
+	"title": "Ocho y medio",
 	"originalTitle": "8½",
 	"synopsis": "Un director bloqueado se retira a un balneario para preparar su próxima película y termina mezclando recuerdos, fantasías, amores y miedos en una sola puesta. La tensión también expone las decisiones que nadie quiere tomar.",
 	"year": 1963,
@@ -9,15 +9,16 @@
 	"audienceRating": "+13",
 	"category": "Drama",
 	"genres": [
-		"Drama",
-		"Europeas"
+		"Drama"
 	],
-	"subgenres": [],
-	"country": "FR, IT",
+	"subgenres": [
+		"Psicológico"
+	],
+	"country": "Francia",
 	"isArgentinian": false,
-	"poster": "https://media.themoviedb.org/t/p/w780/23VIf7zNxAgaXwIlvzd3IvOd9sY.jpg",
+	"poster": "https://images.justwatch.com/poster/305922519/s718/fellini-ocho-y-medio.jpg",
 	"screenshots": [],
-	"trailerYoutubeId": "PTmiA-uNSD8",
+	"trailerYoutubeId": "Y6CgmY5_fyY",
 	"releasePlatform": "Otras plataformas",
 	"director": "Federico Fellini",
 	"mainCast": [
@@ -27,16 +28,16 @@
 		"Sandra Milo",
 		"Rossella Falk"
 	],
-	"productionCompany": "Cineriz",
+	"productionCompany": "Cineriz, Francinex",
 	"verdict": "recomendada",
-	"verdictLabel": "CLÁSICO TOTAL",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película internacional",
-				"year": 1964,
-				"recipient": "Italia"
+				"recipient": "Italia",
+				"year": 1964
 			}
 		]
 	},

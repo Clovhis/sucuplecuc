@@ -1,10 +1,10 @@
 {
 	"slug": "all-about-eve-1950",
-	"title": "All About Eve",
+	"title": "Eva al desnudo",
 	"originalTitle": "All About Eve",
 	"year": 1950,
 	"category": "Drama",
-	"poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/All_About_Eve_%281950_poster_-_retouch%29.jpg/960px-All_About_Eve_%281950_poster_-_retouch%29.jpg",
+	"poster": "https://commons.wikimedia.org/wiki/Special:FilePath/All_About_Eve_(1950_poster).jpg?width=780",
 	"screenshots": [],
 	"trailerYoutubeId": "uRjKPLH2OaQ",
 	"releasePlatform": "Otras plataformas",
@@ -12,18 +12,26 @@
 	"mainCast": [
 		"Bette Davis",
 		"Anne Baxter",
-		"George Sanders"
+		"George Sanders",
+		"Celeste Holm",
+		"Gary Merrill"
 	],
-	"productionCompany": "20th Century-Fox",
+	"productionCompany": "20th Century Fox",
 	"verdict": "recomendada",
-	"verdictLabel": "MUY BUENA",
+	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
 			{
 				"award": "oscar",
 				"category": "Mejor película",
-				"year": 1951,
-				"recipient": "Darryl F. Zanuck"
+				"recipient": "20th Century Fox",
+				"year": 1951
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Joseph L. Mankiewicz",
+				"year": 1951
 			}
 		]
 	},
@@ -42,6 +50,14 @@
 		]
 	},
 	"synopsis": "En la ceremonia del premio Sarah Siddons en honor a la actriz en ascenso Eve Harrington, la narración del mordaz crítico de teatro Addison DeWitt presenta a los asistentes e insinúa que hay más en la historia de Eve. La narración cambia a Karen Richards, esposa del dramaturgo Lloyd Richards.",
-	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-08"
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"genres": [
+		"Drama"
+	],
+	"subgenres": [],
+	"country": "Estados Unidos",
+	"isArgentinian": false,
+	"isPremiere": false,
+	"premiereLabel": ""
 }
