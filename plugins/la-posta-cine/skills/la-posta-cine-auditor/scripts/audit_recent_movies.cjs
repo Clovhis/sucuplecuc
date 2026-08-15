@@ -79,6 +79,8 @@ const FORBIDDEN_POSTER_URL_PATTERN =
 	/(?:^https?:\/\/(?:i\.ytimg\.com|img\.youtube\.com)\/|\/vi\/[a-z0-9_-]+\/(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png)|(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png))/i;
 const HORIZONTAL_POSTER_PATH_PATTERN = /\/(?:backdrop|still|screenshot|thumbnail)\//i;
 const MAX_REVIEW_AUDIT_BATCH_SIZE = 100;
+const WAR_FILTER_LABEL = 'Bélica';
+const WAR_FILTER_EVIDENCE_PATTERN = /\b(?:guerra|war|frente|soldad\w*|ejercit\w*|militar\w*|combate\w*|batall\w*|trincher\w*|ocupacion\w*|invasion\w*|desembarco\w*|normandia|vietnam|irak|iraq|conflicto\w*|aliad\w*|prisioner\w*)\b/i;
 const SUPERHERO_INCLUDE_TOKENS = [
 	'ant-man', 'aquaman', 'avengers', 'batman', 'batgirl', 'batman v superman', 'birds of prey', 'black adam', 'black panther', 'black widow', 'blade', 'blue beetle', 'captain america', 'captain marvel', 'daredevil', 'deadpool', 'doctor strange', 'elektra', 'eternals', 'fantastic four', 'ghost rider', 'green lantern', 'guardians of the galaxy', 'howard the duck', 'hulk', 'iron man', 'justice league', 'kraven', 'madame web', 'man of steel', 'morbius', 'punisher', 'shang-chi', 'shazam', 'spider-man', 'suicide squad', 'supergirl', 'superman', 'the avengers', 'the flash', 'the incredible hulk', 'the marvels', 'thunderbolts', 'thor', 'venom', 'watchmen', 'wolverine', 'wonder woman', 'x-men', 'zack snyders justice league',
 ];
@@ -781,6 +783,63 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	}
 }
 
+function validateWarFilterTaxonomy(movie, candidatePath, findings) {
+	const genres = cleanTaxonomyList(movie.genres);
+	const subgenres = cleanTaxonomyList(movie.subgenres);
+	const explicitWarGenres = genres.filter((value) => normalizeText(value) === 'belica');
+	const warSubgenres = subgenres.filter((value) => normalizeText(value) === 'belica');
+
+	for (const value of explicitWarGenres) {
+		if (value !== WAR_FILTER_LABEL) {
+			addFinding(
+				findings,
+				'error',
+				'non-canonical-war-filter-tag',
+				candidatePath,
+				`Use the exact "${WAR_FILTER_LABEL}" label in genres; found "${value}".`,
+			);
+		}
+	}
+
+	if (warSubgenres.length > 0) {
+		addFinding(
+			findings,
+			'error',
+			'war-filter-tag-in-subgenres',
+			candidatePath,
+			`"${WAR_FILTER_LABEL}" belongs in genres, not subgenres, because it powers the editorial Guerra filter.`,
+		);
+	}
+
+	const broadWarSignal = [movie.category, ...genres, ...subgenres].some((value) => {
+		const normalized = normalizeText(value);
+		return normalized === 'guerra' || normalized === 'war' || normalized.includes('guerra belica');
+	});
+
+	if (broadWarSignal && explicitWarGenres.length === 0) {
+		addFinding(
+			findings,
+			'warn',
+			'war-filter-review-needed',
+			candidatePath,
+			`This entry uses a broad Guerra/war taxonomy without "${WAR_FILTER_LABEL}". Decide explicitly whether the conflict is central enough for the home filter; context-only films should remain excluded.`,
+		);
+	}
+
+	if (explicitWarGenres.length > 0) {
+		const evidenceText = normalizeText([movie.title, movie.originalTitle, movie.category, movie.synopsis, movie.review].join(' '));
+		if (!WAR_FILTER_EVIDENCE_PATTERN.test(evidenceText)) {
+			addFinding(
+				findings,
+				'error',
+				'war-filter-tag-without-evidence',
+				candidatePath,
+				`"${WAR_FILTER_LABEL}" requires premise or editorial evidence that the war/conflict is central, not only a taxonomy label.`,
+			);
+		}
+	}
+}
+
 function validateSubgenres(movie, candidatePath, findings) {
 	const normalizedCategory = normalizeText(movie.category || '').replace(/\s+/g, ' ');
 	const explicitValues = cleanTaxonomyList(movie.subgenres);
@@ -1119,6 +1178,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 
 	const normalizedCategory = normalizeText(movie.category || '');
 	validateSubgenres(movie, candidatePath, findings);
+	validateWarFilterTaxonomy(movie, candidatePath, findings);
 	validateShareFields(movie, candidatePath, findings);
 	validateMeterEligibility(movie, candidatePath, findings);
 	validatePostCredits(movie, candidatePath, findings);

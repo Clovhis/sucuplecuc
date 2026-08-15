@@ -133,6 +133,9 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
 
   const rails = carousel.locator('.home-platform-filter__chips, .home-genre-filter__chips');
   await expect(rails).toHaveCount(4);
+  const editorialRail = carousel.locator('[data-home-filter-panel="editorial"] .home-genre-filter__chips');
+  await expect(editorialRail.locator('[data-home-genre-chip]')).toHaveCount(4);
+  await expect(editorialRail.locator('[data-home-genre-chip]').last()).toHaveText('Guerra');
   const railLayouts = await rails.evaluateAll((elements) =>
     elements.map((element) => {
       const node = element as HTMLElement;

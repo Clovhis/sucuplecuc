@@ -33,7 +33,8 @@ export type RecommendationGenreId =
 	| 'crimen'
 	| 'aventura'
 	| 'oscar-mejor-pelicula'
-	| 'pelicula-nacional';
+	| 'pelicula-nacional'
+	| 'guerra';
 
 export interface RecommendationGenreOption {
 	id: RecommendationGenreId;
@@ -135,6 +136,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'aventura', label: 'Aventura' },
 	{ id: 'oscar-mejor-pelicula', label: 'Ganadoras del Oscar' },
 	{ id: 'pelicula-nacional', label: 'Cine nacional' },
+	{ id: 'guerra', label: 'Guerra' },
 ];
 
 const SUBGENRE_DEFINITIONS: CanonicalSubgenreDefinition[] = [
@@ -1242,6 +1244,14 @@ function isOscarBestPictureWinner(movie: Pick<Movie, 'awards'>): boolean {
 	});
 }
 
+// "Guerra" is already used broadly in the inherited catalog, including films
+// where the conflict is only a setting. "Bélica" is the explicit editorial
+// signal for the home filter: it must be reserved for films whose war effort,
+// front, operation or military experience is central to the story.
+function hasExplicitWarFilmTag(values: string[]): boolean {
+	return values.some((value) => normalizeSearchText(value) === 'belica');
+}
+
 const SUPERHERO_INCLUDE_TOKENS = [
 	'ant-man',
 	'aquaman',
@@ -1410,6 +1420,7 @@ export function getCatalogFilterGenres(
 	const normalizedCategory = normalizeSearchText(movie.category ?? '');
 	let hasAnimeToken = false;
 	const sourceGenres = [...cleanMovieTaxonomyList(movie.genres), ...cleanMovieTaxonomyList(movie.subgenres)];
+	const explicitWarGenres = cleanMovieTaxonomyList(movie.genres);
 
 	if (normalizedCategory.includes('anime')) {
 		hasAnimeToken = true;
@@ -1447,6 +1458,10 @@ export function getCatalogFilterGenres(
 
 	if (isMarvelOrDcSuperheroMovie(movie)) {
 		genreSet.add('superheroes');
+	}
+
+	if (hasExplicitWarFilmTag(explicitWarGenres)) {
+		genreSet.add('guerra');
 	}
 
 	return RECOMMENDATION_GENRE_OPTIONS.map((option) => option.id).filter((genreId) =>

@@ -44,6 +44,68 @@ test.describe('home catalog filters', () => {
     );
   });
 
+  test('war editorial filter returns only movies tagged as war', async ({ page }) => {
+    await gotoHome(page);
+
+    const warChip = page.getByRole('button', { name: /^Guerra$/i });
+    await expect(warChip).toHaveCount(1);
+    await expect(warChip).toHaveAttribute('data-home-genre-kind', 'editorial');
+
+    await warChip.click();
+    await expect(warChip).toHaveAttribute('aria-pressed', 'true');
+    await expect
+      .poll(() => visibleMovieTitles(page), {
+        message: 'El filtro Guerra debería devolver películas',
+      })
+      .not.toEqual([]);
+
+    const cards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((movieCards) =>
+      movieCards.map((card) => ({
+        genres: card.getAttribute('data-movie-genres')?.split(',').filter(Boolean) ?? [],
+      })),
+    );
+
+    expect(cards.length).toBeGreaterThan(0);
+    expect(cards.every((card) => card.genres.includes('guerra'))).toBeTruthy();
+    for (const title of ['El día D: Bajo presión', 'Inglourious Basterds', 'Saving Private Ryan']) {
+      await expect(page.locator(`[data-movie-card][data-movie-title="${title}"]`)).toBeVisible();
+    }
+    for (const title of ['Casablanca', 'El puente de los espías', 'Dr. Insólito', 'El laberinto del fauno']) {
+      await expect(page.locator(`[data-movie-card][data-movie-title="${title}"]`)).toBeHidden();
+    }
+    expect(new URL(page.url()).searchParams.get('filtro')).toBe('guerra');
+    await expect(page.locator('[data-movie-search-summary]').first()).toContainText('filtro Guerra');
+  });
+
+  test('war editorial filter fits the desktop panel without horizontal overflow', async ({ page }, testInfo) => {
+    test.skip(testInfo.project.name.startsWith('mobile-'), 'Desktop layout assertion');
+    await gotoHome(page);
+
+    const layout = await page.locator('[data-home-filter-panel="editorial"]').evaluate((panel) => {
+      const rail = panel.querySelector<HTMLElement>('.home-genre-filter__chips');
+      const chips = Array.from(panel.querySelectorAll<HTMLElement>('[data-home-genre-chip]'));
+      const panelRect = panel.getBoundingClientRect();
+      const chipRects = chips.map((chip) => chip.getBoundingClientRect());
+      const rowTops = new Set(chipRects.map((rect) => Math.round(rect.top)));
+
+      return {
+        chipCount: chips.length,
+        railOverflow: Boolean(rail && rail.scrollWidth > rail.clientWidth + 1),
+        chipRows: rowTops.size,
+        chipsInsidePanel: chipRects.every(
+          (rect) => rect.left >= panelRect.left - 1 && rect.right <= panelRect.right + 1,
+        ),
+        pageOverflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+      };
+    });
+
+    expect(layout.chipCount).toBe(4);
+    expect(layout.railOverflow).toBeFalsy();
+    expect(layout.chipRows).toBe(1);
+    expect(layout.chipsInsidePanel).toBeTruthy();
+    expect(layout.pageOverflow).toBeFalsy();
+  });
+
   test('road movie + platform narrows correctly', async ({ page }) => {
     await gotoHome(page);
 

@@ -17,7 +17,9 @@ node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <p
 
 Do not read whole catalogs or manually repeat passing checks. For each failure, open only the target JSON and the source needed to fix it.
 
-2. Treat these as hard stops: malformed schema; unverified/missing AR platform; invalid poster/trailer; missing current-year release date; bad people provenance; incorrect broad/subgenre taxonomy; unsupported awards; manual Share/reaction/meter fields; bad recommendation slugs; stale catalog; and any forbidden diff.
+2. Treat these as hard stops: malformed schema; unverified/missing AR platform; invalid poster/trailer; missing current-year release date; bad people provenance; incorrect broad/subgenre taxonomy; an invalid `Bélica` war-filter tag; unsupported awards; manual Share/reaction/meter fields; bad recommendation slugs; stale catalog; and any forbidden diff.
+
+   For the home `Guerra` filter, `Bélica` must be an exact value in `genres`, never a `subgenres` value. A broad `Guerra` tag without `Bélica` produces a deliberate-review finding: decide from the premise and copy whether the conflict is central (add `Bélica`) or only contextual (leave it out and retain the evidence-led omission). Do not approve a `Bélica` tag that is supported only by a title or an incidental war reference; do not use it for *El planeta de los simios*-style non-war stories.
 
    Before interpreting the bundled output, run `npm run audit:movie-people -- --movie <slug>`. Missing local portrait, nationality, traceable reference or an unresolved identity is an error. Missing public birth data is a warning only when the gap is real and is not filled with an invented date.
 
@@ -49,6 +51,8 @@ npm run validate:sitemap-indexability
 git diff --check
 git diff --name-only
 ```
+
+The same candidate list must also be checked for the `Guerra` filter. Confirm that every intentional `Bélica` inclusion is rendered by the `guerra` catalog facet and that context-only titles remain excluded; do not fix a taxonomy finding by editing site code.
 
 Report candidate paths, failures/fixes, platform evidence matrix, people-audit result, validations, and explicit confirmation that source copy was not reused and no forbidden paths changed. Do not hide nonblocking birth-date or image-host warnings: classify them and link them to the evidence ledger. If publication was requested, verify the remote SHA/workflow/live slug and finish on a clean synchronized `main`.
 
