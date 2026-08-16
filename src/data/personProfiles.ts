@@ -35,6 +35,8 @@ import { researchedEditorialBiographiesWave12A } from './editorialPersonBiograph
 import { researchedEditorialBiographiesWave12B } from './editorialPersonBiographiesWave12B.ts';
 import { researchedEditorialBiographiesWave12C } from './editorialPersonBiographiesWave12C.ts';
 import { researchedEditorialFinalCorrections } from './editorialFinalCorrections.ts';
+import { famousPersonProfilesWave13 } from './personProfilesWave13.ts';
+import { requestedPersonProfilesWave14 } from './personProfilesWave14.ts';
 
 const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
 	...researchedEditorialBiographies,
@@ -13812,4 +13814,6 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 	...bulkExpansionProfiles,
 	...bulkCompletionProfiles,
 	...bulkRequestedProfiles,
+	...famousPersonProfilesWave13,
+	...requestedPersonProfilesWave14,
 });

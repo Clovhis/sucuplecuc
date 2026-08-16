@@ -1,8 +1,8 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado manualmente el 2026-08-14. Fuente: `src/data/personProfiles.ts`
+Generado manualmente el 2026-08-15. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 378
+Total de personas con ficha exclusiva: 493
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -386,3 +386,133 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Zazie Beetz | `zazie-beetz` | /personas/zazie-beetz/ | Actriz | 2 | 3 |
 | Zendaya | `zendaya` | /personas/zendaya/ | Actriz | 4 | 3 |
 | Zoe Saldaña | `zoe-saldana` | /personas/zoe-saldana/ | Actriz | 4 | 3 |
+
+## Fichas incorporadas en esta branch
+
+| Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
+| --- | --- | --- | --- | ---: | ---: |
+| Bruce Willis | `bruce-willis` | /personas/bruce-willis/ | Actor | 3 | 4 |
+| Milla Jovovich | `milla-jovovich` | /personas/milla-jovovich/ | Actriz | 2 | 4 |
+| Tobin Bell | `tobin-bell` | /personas/tobin-bell/ | Actor | 4 | 3 |
+| Michelle Rodriguez | `michelle-rodriguez` | /personas/michelle-rodriguez/ | Actriz | 4 | 3 |
+| Tony Leung Chiu-wai | `tony-leung-chiu-wai` | /personas/tony-leung-chiu-wai/ | Actor | 4 | 2 |
+| Ellen Burstyn | `ellen-burstyn` | /personas/ellen-burstyn/ | Actriz | 4 | 4 |
+| Jason Statham | `jason-statham` | /personas/jason-statham/ | Actor | 4 | 4 |
+| Juliette Lewis | `juliette-lewis` | /personas/juliette-lewis/ | Actriz | 4 | 4 |
+| Kurt Russell | `kurt-russell` | /personas/kurt-russell/ | Actor | 4 | 3 |
+| Bill Murray | `bill-murray` | /personas/bill-murray/ | Actor | 4 | 4 |
+| Carl Weathers | `carl-weathers` | /personas/carl-weathers/ | Actor | 4 | 3 |
+| Dan Aykroyd | `dan-aykroyd` | /personas/dan-aykroyd/ | Actor | 4 | 3 |
+| Ethan Hawke | `ethan-hawke` | /personas/ethan-hawke/ | Actor | 4 | 4 |
+| Geena Davis | `geena-davis` | /personas/geena-davis/ | Actriz | 3 | 4 |
+| Guy Pearce | `guy-pearce` | /personas/guy-pearce/ | Actor | 4 | 3 |
+| Idris Elba | `idris-elba` | /personas/idris-elba/ | Actor | 4 | 3 |
+| John Hurt | `john-hurt` | /personas/john-hurt/ | Actor | 4 | 3 |
+| John Turturro | `john-turturro` | /personas/john-turturro/ | Actor | 4 | 3 |
+| Malcolm McDowell | `malcolm-mcdowell` | /personas/malcolm-mcdowell/ | Actor | 4 | 3 |
+| Matthew McConaughey | `matthew-mcconaughey` | /personas/matthew-mcconaughey/ | Actor | 4 | 4 |
+| Michael Biehn | `michael-biehn` | /personas/michael-biehn/ | Actor | 4 | 3 |
+| Rachel Weisz | `rachel-weisz` | /personas/rachel-weisz/ | Actriz | 4 | 3 |
+| Steve Carell | `steve-carell` | /personas/steve-carell/ | Actor | 4 | 4 |
+| Tilda Swinton | `tilda-swinton` | /personas/tilda-swinton/ | Actriz | 4 | 4 |
+| Tim Robbins | `tim-robbins` | /personas/tim-robbins/ | Actor | 4 | 4 |
+| William Holden | `william-holden` | /personas/william-holden/ | Actor | 4 | 4 |
+| Alicia Vikander | `alicia-vikander` | /personas/alicia-vikander/ | Actriz | 3 | 4 |
+| Drew Barrymore | `drew-barrymore` | /personas/drew-barrymore/ | Actriz | 3 | 3 |
+| Elijah Wood | `elijah-wood` | /personas/elijah-wood/ | Actor | 3 | 3 |
+| Faye Dunaway | `faye-dunaway` | /personas/faye-dunaway/ | Actriz | 3 | 4 |
+| Frances McDormand | `frances-mcdormand` | /personas/frances-mcdormand/ | Actriz | 3 | 4 |
+| Holly Hunter | `holly-hunter` | /personas/holly-hunter/ | Actriz | 3 | 4 |
+| Hugo Weaving | `hugo-weaving` | /personas/hugo-weaving/ | Actor | 3 | 3 |
+| Humphrey Bogart | `humphrey-bogart` | /personas/humphrey-bogart/ | Actor | 3 | 3 |
+| Jackie Chan | `jackie-chan` | /personas/jackie-chan/ | Actor | 3 | 3 |
+| James Stewart | `james-stewart` | /personas/james-stewart/ | Actor | 3 | 3 |
+| Jessica Alba | `jessica-alba` | /personas/jessica-alba/ | Actriz | 3 | 3 |
+| Jessica Lange | `jessica-lange` | /personas/jessica-lange/ | Actriz | 3 | 4 |
+| Michelle Yeoh | `michelle-yeoh` | /personas/michelle-yeoh/ | Actriz | 3 | 4 |
+| Nicole Kidman | `nicole-kidman` | /personas/nicole-kidman/ | Actriz | 3 | 2 |
+| Philip Seymour Hoffman | `philip-seymour-hoffman` | /personas/philip-seymour-hoffman/ | Actor | 3 | 4 |
+| Richard Dreyfuss | `richard-dreyfuss` | /personas/richard-dreyfuss/ | Actor | 3 | 4 |
+| Robin Wright | `robin-wright` | /personas/robin-wright/ | Actriz | 3 | 3 |
+| Sam Neill | `sam-neill` | /personas/sam-neill/ | Actor | 3 | 3 |
+| Sean Penn | `sean-penn` | /personas/sean-penn/ | Actor | 3 | 4 |
+| Susan Sarandon | `susan-sarandon` | /personas/susan-sarandon/ | Actriz | 3 | 4 |
+| Alan Rickman | `alan-rickman` | /personas/alan-rickman/ | Actor | 2 | 3 |
+| Andy Garcia | `andy-garcia` | /personas/andy-garcia/ | Actor | 2 | 3 |
+| Anjelica Huston | `anjelica-huston` | /personas/anjelica-huston/ | Actriz | 2 | 4 |
+| Audrey Hepburn | `audrey-hepburn` | /personas/audrey-hepburn/ | Actriz | 2 | 4 |
+| Bryan Cranston | `bryan-cranston` | /personas/bryan-cranston/ | Actor | 2 | 3 |
+| Cary Grant | `cary-grant` | /personas/cary-grant/ | Actor | 1 | 4 |
+| Catherine Deneuve | `catherine-deneuve` | /personas/catherine-deneuve/ | Actriz | 1 | 1 |
+| Clive Owen | `clive-owen` | /personas/clive-owen/ | Actor | 1 | 3 |
+| Danny Glover | `danny-glover` | /personas/danny-glover/ | Actor | 2 | 3 |
+| Emma Thompson | `emma-thompson` | /personas/emma-thompson/ | Actriz | 2 | 4 |
+| Julia Roberts | `julia-roberts` | /personas/julia-roberts/ | Actriz | 1 | 4 |
+| Michael Douglas | `michael-douglas` | /personas/michael-douglas/ | Actor | 1 | 3 |
+| Naomi Watts | `naomi-watts` | /personas/naomi-watts/ | Actriz | 1 | 3 |
+| Salma Hayek | `salma-hayek` | /personas/salma-hayek/ | Actriz | 1 | 4 |
+| Sandra Bullock | `sandra-bullock` | /personas/sandra-bullock/ | Actriz | 1 | 4 |
+| Sharon Stone | `sharon-stone` | /personas/sharon-stone/ | Actriz | 2 | 3 |
+| Steven Seagal | `steven-seagal` | /personas/steven-seagal/ | Actor | 1 | 3 |
+| Val Kilmer | `val-kilmer` | /personas/val-kilmer/ | Actor | 2 | 3 |
+| Kevin Spacey | `kevin-spacey` | /personas/kevin-spacey/ | Actor | 4 | 4 |
+| Mia Goth | `mia-goth` | /personas/mia-goth/ | Actriz | 4 | 3 |
+| Amanda Seyfried | `amanda-seyfried` | /personas/amanda-seyfried/ | Actriz | 3 | 3 |
+
+### Segunda tanda de figuras conocidas
+
+| Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
+| --- | --- | --- | --- | ---: | ---: |
+| Lupita Nyong'o | `lupita-nyongo` | /personas/lupita-nyongo/ | Actriz | 4 | 3 |
+| Diego Luna | `diego-luna` | /personas/diego-luna/ | Actor | 4 | 3 |
+| Ian Holm | `ian-holm` | /personas/ian-holm/ | Actor | 4 | 3 |
+| Dave Bautista | `dave-bautista` | /personas/dave-bautista/ | Actor | 4 | 3 |
+| Alan Alda | `alan-alda` | /personas/alan-alda/ | Actor | 4 | 3 |
+| Dianne Wiest | `dianne-wiest` | /personas/dianne-wiest/ | Actriz | 4 | 4 |
+| Morena Baccarin | `morena-baccarin` | /personas/morena-baccarin/ | Actriz | 4 | 3 |
+| Alexander Skarsgård | `alexander-skarsgard` | /personas/alexander-skarsgard/ | Actor | 4 | 3 |
+| Max von Sydow | `max-von-sydow` | /personas/max-von-sydow/ | Actor | 4 | 3 |
+| Ciarán Hinds | `ciaran-hinds` | /personas/ciaran-hinds/ | Actor | 4 | 3 |
+| Jon Bernthal | `jon-bernthal` | /personas/jon-bernthal/ | Actor | 4 | 3 |
+| Ernest Borgnine | `ernest-borgnine` | /personas/ernest-borgnine/ | Actor | 3 | 4 |
+| Heather Langenkamp | `heather-langenkamp` | /personas/heather-langenkamp/ | Actriz | 3 | 3 |
+| Rooney Mara | `rooney-mara` | /personas/rooney-mara/ | Actriz | 3 | 3 |
+| Mary Elizabeth Mastrantonio | `mary-elizabeth-mastrantonio` | /personas/mary-elizabeth-mastrantonio/ | Actriz | 3 | 3 |
+| Ron Perlman | `ron-perlman` | /personas/ron-perlman/ | Actor | 3 | 3 |
+| Jennifer Jason Leigh | `jennifer-jason-leigh` | /personas/jennifer-jason-leigh/ | Actriz | 3 | 3 |
+| Maggie Cheung | `maggie-cheung` | /personas/maggie-cheung/ | Actriz | 3 | 3 |
+| Catherine O'Hara | `catherine-ohara` | /personas/catherine-ohara/ | Actriz | 3 | 3 |
+| Danny Huston | `danny-huston` | /personas/danny-huston/ | Actor | 3 | 3 |
+| Bob Hoskins | `bob-hoskins` | /personas/bob-hoskins/ | Actor | 3 | 3 |
+| Mark Rylance | `mark-rylance` | /personas/mark-rylance/ | Actor | 3 | 3 |
+| John Cusack | `john-cusack` | /personas/john-cusack/ | Actor | 3 | 3 |
+| James Woods | `james-woods` | /personas/james-woods/ | Actor | 3 | 3 |
+| Stanley Tucci | `stanley-tucci` | /personas/stanley-tucci/ | Actor | 3 | 3 |
+| Will Ferrell | `will-ferrell` | /personas/will-ferrell/ | Actor | 3 | 3 |
+| Charlotte Rampling | `charlotte-rampling` | /personas/charlotte-rampling/ | Actriz | 3 | 3 |
+| Domhnall Gleeson | `domhnall-gleeson` | /personas/domhnall-gleeson/ | Actor | 3 | 3 |
+| Martin Landau | `martin-landau` | /personas/martin-landau/ | Actor | 3 | 4 |
+| Bruce Campbell | `bruce-campbell` | /personas/bruce-campbell/ | Actor | 3 | 3 |
+| Richard E. Grant | `richard-e-grant` | /personas/richard-e-grant/ | Actor | 3 | 3 |
+| Peter O'Toole | `peter-otoole` | /personas/peter-otoole/ | Actor | 3 | 3 |
+| Toshirō Mifune | `toshiro-mifune` | /personas/toshiro-mifune/ | Actor | 3 | 2 |
+| Jessica Harper | `jessica-harper` | /personas/jessica-harper/ | Actriz | 3 | 3 |
+| Simon Pegg | `simon-pegg` | /personas/simon-pegg/ | Actor | 3 | 3 |
+| Freida Pinto | `freida-pinto` | /personas/freida-pinto/ | Actriz | 3 | 3 |
+| Zachary Levi | `zachary-levi` | /personas/zachary-levi/ | Actor | 3 | 3 |
+| Margot Kidder | `margot-kidder` | /personas/margot-kidder/ | Actriz | 3 | 3 |
+| Tim Allen | `tim-allen` | /personas/tim-allen/ | Actor | 3 | 3 |
+| Haley Joel Osment | `haley-joel-osment` | /personas/haley-joel-osment/ | Actor | 2 | 3 |
+| Henry Fonda | `henry-fonda` | /personas/henry-fonda/ | Actor | 2 | 3 |
+| Tom Skerritt | `tom-skerritt` | /personas/tom-skerritt/ | Actor | 2 | 3 |
+| Harry Dean Stanton | `harry-dean-stanton` | /personas/harry-dean-stanton/ | Actor | 2 | 3 |
+| Charles Dance | `charles-dance` | /personas/charles-dance/ | Actor | 2 | 3 |
+
+### Tanda solicitada de figuras de Platoon
+
+| Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
+| --- | --- | --- | --- | ---: | ---: |
+| Charlie Sheen | `charlie-sheen` | /personas/charlie-sheen/ | Actor | 1 | 4 |
+| Oliver Stone | `oliver-stone` | /personas/oliver-stone/ | Director, Guionista, Productor | 1 | 4 |
+| Forest Whitaker | `forest-whitaker` | /personas/forest-whitaker/ | Actor | 2 | 4 |
+| Tom Berenger | `tom-berenger` | /personas/tom-berenger/ | Actor | 1 | 4 |
