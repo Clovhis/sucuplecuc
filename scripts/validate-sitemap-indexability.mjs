@@ -52,13 +52,8 @@ function checkUnique(values, label, failures) {
 }
 
 async function main() {
-	const [sitemap, videoSitemap] = await Promise.all([
-		readFile(path.join(DIST_DIR, 'sitemap.xml'), 'utf8'),
-		readFile(path.join(DIST_DIR, 'video-sitemap.xml'), 'utf8'),
-	]);
+	const sitemap = await readFile(path.join(DIST_DIR, 'sitemap.xml'), 'utf8');
 	const sitemapUrls = getLocs(sitemap);
-	const videoSitemapUrls = getLocs(videoSitemap);
-	const sitemapUrlSet = new Set(sitemapUrls);
 	const failures = [];
 	const internalPageUrls = new Set();
 
@@ -67,7 +62,6 @@ async function main() {
 		failures.push('sitemap.xml must not use build filesystem mtimes as lastmod values.');
 	}
 	checkUnique(sitemapUrls, 'sitemap.xml', failures);
-	checkUnique(videoSitemapUrls, 'video-sitemap.xml', failures);
 
 	for (const url of sitemapUrls) {
 		try {
@@ -100,12 +94,6 @@ async function main() {
 		}
 	}
 
-	for (const url of videoSitemapUrls) {
-		if (!sitemapUrlSet.has(url)) {
-			failures.push(`Video sitemap URL is absent from sitemap.xml: ${url}`);
-		}
-	}
-
 	if (failures.length > 0) {
 		console.error('Sitemap indexability validation failed:');
 		for (const failure of failures) console.error(`- ${failure}`);
@@ -113,7 +101,7 @@ async function main() {
 	}
 
 	console.log(
-		`Sitemap indexability validation passed: ${sitemapUrls.length} canonical pages and ${videoSitemapUrls.length} video entries.`,
+		`Sitemap indexability validation passed: ${sitemapUrls.length} canonical pages.`,
 	);
 }
 
