@@ -48,7 +48,8 @@ Activate this section whenever the request says `batch`, `bulk`, `mínimo N`, `a
 - Run strict people enrichment and `npm run audit:movie-people -- --movie <slug>` for every candidate in bounded chunks. Collect every failure and do not sign off a partial batch because another candidate passed.
 - Run the candidate auditor **without** `--skip-youtube` before the build and again after every trailer change. A `youtube-title-mismatch`, `youtube-year-mismatch`, `youtube-search-mismatch`, or oEmbed error is a hard stop: replace the ID with a verified official/authoritative trailer and rerun. Use `--skip-youtube` only for the post-build route/reaction check, never as the first or only trailer validation.
 - Distinguish external YouTube 3xx/timeouts from content errors: retry with the bounded auditor, keep the exact warning and source evidence in the ledger, and never convert a title/year mismatch into a warning just because search is blocked.
-- Check every stored poster URL directly for HTTP success, image content type, usable dimensions, and vertical orientation; visually inspect any ambiguous source. A static URL pattern check alone is insufficient for a bulk load.
+- Check every stored poster URL directly with the exact URL saved in JSON. Run `node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate <path>` before the candidate auditor; it follows redirects, reads the final response, requires `2xx + image/*`, parses raster dimensions, and rejects `401/403/404`, invalid image bodies, and horizontal assets. The verifier retries `429/5xx` and timeouts with bounded backoff, then reports them as external warnings rather than silently treating them as broken or valid.
+- Poster identity is a separate editorial gate: a filename, slug, first image-search result, or successful HTTP response does not prove the film, year, language, or market. Record a canonical source page that names the movie and year, compare the artwork visually, and reject badges, backdrops, stills, cropped title cards, wrong films, and Spain/LatAm-localized art when Argentine evidence does not support it. Keep the original/neutral poster when title localization is uncertain; never auto-replace every Spanish-looking asset.
 - Run the editorial audit over the complete manifest and perform a sentence-level duplicate pass across all reviews and synopses. A short, generic, recycled, or structurally interchangeable entry blocks the batch.
 - Before commit, compare the manifest count with the number of files actually added, run the duplicate scan again against both `docs/movie-catalog-reference.md` and `src/data/movies`, and retain the exact candidate paths for the final auditor command.
 
@@ -66,6 +67,8 @@ Stop with `La pelicula ya existe` if it reports a duplicate. When it passes, res
 2. Open JustWatch AR for title + year. Open one official Argentina platform page only if the AR offer is unclear or conflicts. Open one specialized review source for editorial support.
 
 Do not reopen sources merely to reconfirm facts. Keep an evidence ledger of compact `field → URL → fact` notes; pass only that ledger to chained skills. Read [movie-load-contract.md](references/movie-load-contract.md) only for the relevant unresolved area (platform, people, taxonomy, or editorial rules), not wholesale.
+
+For a poster, the ledger must contain `poster URL → final HTTP status/content-type/dimensions → canonical identity/year source → visual identity and Argentina-market decision`. Do not use a platform page, an image filename, or a search-result thumbnail as the only identity evidence.
 
 ## Create and enrich
 
@@ -94,6 +97,7 @@ Run the candidate checks; they enforce schema, originality, people, taxonomy, ge
 
 ```bash
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json
+node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate src/data/movies/<slug>.json
 npm run catalog:movies
 npm run catalog:movies:check
 npm run update-upcoming-releases
@@ -107,6 +111,10 @@ npm run validate:sitemap-indexability
 git diff --check
 git diff --name-only
 ```
+
+After the build, use Playwright against the actual movie route(s), not only the source JSON or an HTTP `HEAD`: scroll the poster into view and assert `complete === true`, `currentSrc` equals the stored URL (or its expected redirect), and `naturalWidth > 0` / `naturalHeight > naturalWidth`. For a bulk, keep the same explicit manifest and report `total`, `loaded`, and `bad` counts.
+
+When the candidate files are still uncommitted, pass them explicitly. `npm run validate:content` compares `origin/main...HEAD` and can report zero changed movie files while the working tree contains the real candidate set; never use that base diff as the only batch-count check. If a full auditor exposes pre-existing trailer/content errors, compare the baseline findings with the candidate findings and block only new regressions for a poster-only revalidation while reporting inherited defects unchanged.
 
 Abort rather than repair site code when a check fails. Confirm every changed file is in scope, inspect the focused diff, then stage only the allowed change set. Commit/push only if the user requested publishing; otherwise leave the validated branch ready for review.
 

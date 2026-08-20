@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { spawnSync } = require('child_process');
+const { verifyPosterUrls } = require('./verify_posters.cjs');
 
 const DEFAULT_ROOT = 'src/data/movies';
 const DEFAULT_BASE_REF = 'main';
@@ -2096,6 +2097,30 @@ async function auditCandidates(args) {
 			validateStreamingCarouselBuild(movie, candidate, findings);
 		}
 		validatePeoplePool(movie, candidate, findings, peopleCatalog, peopleCatalogIndex, exclusiveProfileIndex);
+	}
+
+	const posterVerification = await verifyPosterUrls(candidateMovies);
+	for (const result of posterVerification) {
+		if (result.severity === 'pass') {
+			continue;
+		}
+
+		const details = [
+			result.status ? `HTTP ${result.status}` : null,
+			result.contentType ? `content-type ${result.contentType}` : null,
+			result.width && result.height ? `${result.width}x${result.height}` : null,
+			result.finalUrl && result.finalUrl !== result.poster ? `final URL ${result.finalUrl}` : null,
+		].filter(Boolean).join(', ');
+		addFinding(
+			findings,
+			result.severity,
+			result.code,
+			result.filePath,
+			`${result.message}${details ? ` (${details})` : ''}`,
+		);
+	}
+
+	for (const { filePath: candidate, movie } of candidateMovies) {
 		const trailerId = validateTrailerId(movie, candidate, findings);
 
 		if (trailerId && !args.skipYoutube) {
@@ -2167,6 +2192,15 @@ async function auditCandidates(args) {
 		baseRef: args.baseRef,
 		root: args.root,
 		candidates: candidatePaths,
+		posterVerification: {
+			results: posterVerification,
+			summary: {
+				total: posterVerification.length,
+				passed: posterVerification.filter((result) => result.severity === 'pass').length,
+				warnings: posterVerification.filter((result) => result.severity === 'warn').length,
+				errors: posterVerification.filter((result) => result.severity === 'error').length,
+			},
+		},
 		editorialAudit,
 		findings,
 	};
