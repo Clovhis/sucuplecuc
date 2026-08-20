@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-15. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-20. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1320
+Total de peliculas: 1325
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -78,6 +78,8 @@ Total de peliculas: 1320
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
 | 2026 | La heroína del lazo | la-heroina-del-lazo-2026 | Anime | Netflix | +13 |
 | 2026 | La invitación | la-invitacion-2026 | Comedia | Cine | +17 |
+| 2026 | La muerte de Robin Hood | la-muerte-de-robin-hood-2026 | Drama | Cine | +17 |
+| 2026 | La noche del demonio: Están entre nosotros | la-noche-del-demonio-estan-entre-nosotros-2026 | Terror | Cine | +17 |
 | 2026 | La Odisea | la-odisea-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
@@ -89,7 +91,7 @@ Total de peliculas: 1320
 | 2026 | Leviticus: Ritual de sangre | leviticus-ritual-de-sangre-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Los bobos | los-bobos-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | Los caminantes de la calle | los-caminantes-de-la-calle-2026 | Thriller | Otras plataformas | +13 |
-| 2026 | Los colores del tiempo | los-colores-del-tiempo-2026 | Drama | Cine | +13 |
+| 2026 | Los colores del tiempo | los-colores-del-tiempo-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Los creyentes | los-creyentes-2026 | Thriller | Netflix | +16 |
 | 2026 | Los Descendientes: viaje al mundo oscuro | los-descendientes-viaje-al-mundo-oscuro-2026 | Musical | Disney Plus | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
@@ -149,6 +151,7 @@ Total de peliculas: 1320
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Cine | ATP |
 | 2026 | Travis Barker: Más allá del miedo | travis-barker-mas-alla-del-miedo-2026 | Documental | Disney Plus | +7 |
+| 2026 | Tu corazón será destrozado | tu-corazon-sera-destrozado-2026 | Romance | Cine | +17 |
 | 2026 | Un comeback salvaje | un-comeback-salvaje-2026 | Comedia | Netflix | +13 |
 | 2026 | Un hijo propio | un-hijo-propio-2026 | Documental | Netflix | +16 |
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
@@ -179,6 +182,7 @@ Total de peliculas: 1320
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV | +16 |
 | 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Otras plataformas | +16 |
 | 2025 | El gran arco | el-gran-arco-2025 | Drama | Otras plataformas | ATP |
+| 2025 | El gran falsificador | el-gran-falsificador-2025 | Drama | Cine | +13 |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
 | 2025 | Ella y su hijo | ella-y-su-hijo-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Escuadrón letal | escuadron-letal-2025 | Accion | Apple TV | +13 |
@@ -214,7 +218,7 @@ Total de peliculas: 1320
 | 2025 | Mickey 17 | mickey-17-2025 | Aventura | HBO Max | +13 |
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Otras plataformas | +13 |
 | 2025 | Mountainhead | mountainhead-2025 | Drama | HBO Max | +17 |
-| 2025 | Nimrods: A Green Day Comedy | nimrods-a-green-day-comedy-2025 | Comedia | Cine | ATP |
+| 2025 | Nimrods: A Green Day Comedy | nimrods-a-green-day-comedy-2025 | Comedia | Otras plataformas | ATP |
 | 2025 | Novocaine | novocaine-2025 | Accion | Netflix | +16 |
 | 2025 | Nuremberg | nuremberg-2025 | Thriller | Apple TV | +13 |
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max | +16 |
@@ -227,7 +231,7 @@ Total de peliculas: 1320
 | 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |
 | 2025 | Sarah's Oil: El oro negro | sarahs-oil-el-oro-negro-2025 | Drama | Prime Video | +13 |
 | 2025 | Scarlet | scarlet-2025 | Anime | Netflix | +13 |
-| 2025 | Sin ley | sin-ley-2025 | Accion | Cine | ATP |
+| 2025 | Sin ley | sin-ley-2025 | Accion | Otras plataformas | ATP |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
 | 2025 | Superman | superman-2025 | Accion | HBO Max | +13 |
@@ -325,6 +329,7 @@ Total de peliculas: 1320
 | 2024 | Turtles All the Way Down | turtles-all-the-way-down-2024 | Drama | HBO Max | +13 |
 | 2024 | Twisters | twisters-2024 | Accion | Netflix | +13 |
 | 2024 | Umamusume: Pretty derby | umamusume-pretty-derby-2024 | Anime | Otras plataformas | ATP |
+| 2024 | Un trago de infierno | un-trago-de-infierno-2024 | Terror | Cine | +17 |
 | 2024 | Venom: The Last Dance | venom-the-last-dance-2024 | Accion | HBO Max | +13 |
 | 2024 | Wicked | wicked-2024 | Fantasia | HBO Max | ATP |
 | 2024 | Will y Harper | will-y-harper-2024 | Documental | Netflix | +16 |
@@ -1068,8 +1073,8 @@ Total de peliculas: 1320
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Otras plataformas | +17 |
 | 1988 | Inseparables | inseparables-1988 | Terror | Prime Video | +18 |
 | 1988 | La última tentación de Cristo | the-last-temptation-of-christ-1988 | Drama | Otras plataformas | +13 |
+| 1988 | Mi vecino Totoro | my-neighbor-totoro-1988 | Anime | Cine | ATP |
 | 1988 | Muñeco diabólico | child-s-play-1988 | Terror | Prime Video | +16 |
-| 1988 | My Neighbor Totoro | my-neighbor-totoro-1988 | Anime | Netflix | ATP |
 | 1988 | Otra mujer | another-woman-1988 | Drama | Otras plataformas | +13 |
 | 1988 | Pesadilla en Elm Street 4 El amo del sueño | a-nightmare-on-elm-street-4-the-dream-master-1988 | Terror | Otras plataformas | +17 |
 | 1988 | Rain Man | rain-man-1988 | Drama | Prime Video | +17 |

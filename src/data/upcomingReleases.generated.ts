@@ -8,25 +8,9 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-15T22:01:55.007Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-20T14:25:51.772Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"slug": "the-death-of-robin-hood",
-		"title": "La muerte de Robin Hood",
-		"releaseDate": "2026-08-20",
-		"videoUrl": "https://www.youtube.com/watch?v=tlSDDuWxO_0",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10410-la-muerte-de-robin-hood/"
-	},
-	{
-		"slug": "insidious-out-of-the-further",
-		"title": "La noche del demonio: Están entre nosotros",
-		"releaseDate": "2026-08-20",
-		"videoUrl": "https://www.youtube.com/watch?v=gXjurDkYnEM",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10564-la-noche-del-demonio-estan-entre-nosotros/"
-	},
 	{
 		"slug": "the-dog-stars",
 		"title": "La guerra de los últimos",
@@ -83,5 +67,21 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=NNVKVal7kh8",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
+	},
+	{
+		"slug": "finding-emily",
+		"title": "Emily, ¿dónde estás?",
+		"releaseDate": "2026-09-17",
+		"videoUrl": "https://www.youtube.com/watch?v=-OGuJf70S0s",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
+	},
+	{
+		"slug": "the-get-out",
+		"title": "El último gran golpe",
+		"releaseDate": "2026-09-24",
+		"videoUrl": "https://www.youtube.com/watch?v=oB6HNuKxLmo",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/mDVnHFcxxUJC9TQFVeKh1TJNBzh.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10544-el-ultimo-gran-golpe/"
 	}
 ];
