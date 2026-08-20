@@ -66,21 +66,25 @@ test('contact page exposes separate general and press channels', async ({ page }
 	await expect(page.locator('body')).not.toContainText('yosoyvargas@hotmail.com');
 });
 
-test('home reserves the final four initial cards for the latest catalog loads', async ({ page }) => {
+test('home separates the initial cards into cinema and platform releases', async ({ page }) => {
 	await page.goto('/', { waitUntil: 'domcontentloaded' });
 
-	const initialTitles = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
-		cards.map((card) => card.getAttribute('data-movie-title')),
+	const initialMovies = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
+		cards.map((card) => ({
+			title: card.getAttribute('data-movie-title'),
+			platforms: (card.getAttribute('data-movie-platforms') ?? '').split(',').filter(Boolean),
+		})),
 	);
 
-	expect(initialTitles).toHaveLength(12);
-	expect(initialTitles.slice(-4)).toEqual([
-		'Carrera de Bestias',
-		'El Huésped Oculto',
-		'La última casa',
-		'Escuadrón letal',
-	]);
-	expect(new Set(initialTitles).size).toBe(initialTitles.length);
+	expect(initialMovies).toHaveLength(12);
+	expect(initialMovies.slice(0, 8).every(({ platforms }) => platforms.includes('cine'))).toBeTruthy();
+	expect(
+		initialMovies.slice(8).every(
+			({ platforms }) =>
+				platforms.length > 0 && !platforms.includes('cine') && !platforms.includes('otras plataformas'),
+		),
+	).toBeTruthy();
+	expect(new Set(initialMovies.map(({ title }) => title)).size).toBe(initialMovies.length);
 });
 
 test('movie detail page renders a known title', async ({ page }) => {
@@ -143,3 +147,4 @@ test('legacy trailer routes permanently consolidate into the canonical movie pag
   await expect(page).toHaveURL('/peliculas/akira-1988/');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /index, follow/);
 });
+

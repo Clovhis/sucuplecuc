@@ -55,8 +55,8 @@ const editorialRankingPools = editorialRankings.map((ranking) => ({
 	movies: ranking.candidateMovies,
 }));
 const INITIAL_HOME_MOVIE_COUNT = 12;
-const HOME_RECENT_LOAD_SLOTS = 4;
-const initialHomeMovies = getHomeMovieShowcase(movies, INITIAL_HOME_MOVIE_COUNT, HOME_RECENT_LOAD_SLOTS);
+const HOME_PLATFORM_SLOTS = 4;
+const initialHomeMovies = getHomeMovieShowcase(movies, INITIAL_HOME_MOVIE_COUNT, HOME_PLATFORM_SLOTS);
 const initialHomeMovieSlugs = new Set(initialHomeMovies.map((movie) => movie.slug));
 const deferredHomeMovies = movies.filter((movie) => !initialHomeMovieSlugs.has(movie.slug));
 const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => ({
@@ -583,4 +583,5 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 <script src="../scripts/editorial-rankings.ts"></script>
 <script src="../scripts/upcoming-suggestions.ts"></script>
 <script src="../scripts/home-catalog.ts"></script>
+
 

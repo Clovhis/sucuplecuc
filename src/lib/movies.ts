@@ -653,26 +653,38 @@ export function getLatestReviewMovies(movies: Movie[], limit = 3): Movie[] {
 		.slice(0, Math.max(0, limit));
 }
 
+function isTheatricalRelease(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): boolean {
+	return getMoviePlatforms(movie).includes('Cine');
+}
+
+function hasConfirmedStreamingPlatform(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): boolean {
+	return getMoviePlatforms(movie).some((platform) => platform !== 'Cine' && platform !== 'Otras plataformas');
+}
+
 /**
- * Los primeros títulos de la grilla sostienen el pulso de estrenos; los
- * últimos lugares reservados muestran las fichas publicadas más recientemente.
- * Así una carga de catálogo de una película vieja no queda escondida por su año.
+ * La grilla inicial separa los estrenos argentinos por ventana de exhibición:
+ * primero van los títulos más nuevos de cine y al final los más nuevos de
+ * plataformas confirmadas. Así una carga reciente no pisa la composición
+ * editorial de la portada.
  */
 export function getHomeMovieShowcase(
 	movies: Movie[],
 	limit = 12,
-	recentLoadSlots = 4,
+	platformSlots = 4,
 ): Movie[] {
 	const showcaseLimit = Math.max(0, limit);
-	const reservedRecentLoadSlots = Math.min(Math.max(0, recentLoadSlots), showcaseLimit);
-	const latestLoads = getLatestReviewMovies(movies, reservedRecentLoadSlots);
-	const latestLoadSlugs = new Set(latestLoads.map((movie) => movie.slug));
-	const newestReleaseSlots = showcaseLimit - latestLoads.length;
-	const newestReleases = movies
-		.filter((movie) => !latestLoadSlugs.has(movie.slug))
-		.slice(0, newestReleaseSlots);
+	const reservedPlatformSlots = Math.min(Math.max(0, platformSlots), showcaseLimit);
+	const reservedTheatricalSlots = showcaseLimit - reservedPlatformSlots;
+	const newestTheatricalReleases = movies
+		.filter((movie) => isTheatricalRelease(movie))
+		.slice(0, reservedTheatricalSlots);
+	const selectedSlugs = new Set(newestTheatricalReleases.map((movie) => movie.slug));
+	const newestStreamingReleases = movies
+		.filter((movie) => hasConfirmedStreamingPlatform(movie) && !isTheatricalRelease(movie))
+		.filter((movie) => !selectedSlugs.has(movie.slug))
+		.slice(0, reservedPlatformSlots);
 
-	return [...newestReleases, ...latestLoads];
+	return [...newestTheatricalReleases, ...newestStreamingReleases];
 }
 
 export function getWeeklyMovieSuggestion(
@@ -795,7 +807,7 @@ export function getCurrentTheatricalMovieReleases(
 	return movies
 		.filter((movie) => {
 			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) return false;
-			const isInTheaters = movie.releasePlatform === 'Cine' || movie.releasePlatforms?.includes('Cine');
+			const isInTheaters = isTheatricalRelease(movie);
 			const releaseTimestamp = getMovieSortTimestamp(movie);
 			return isInTheaters && releaseTimestamp >= earliestReleaseTimestamp && releaseTimestamp <= referenceTimestamp;
 		})
@@ -839,13 +851,10 @@ export function getCurrentStreamingMovieReleases(
 	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
 	const candidates = movies
 		.map((movie) => ({ movie, platforms: getMoviePlatforms(movie) }))
-		.filter(({ movie, platforms }) => {
+		.filter(({ movie }) => {
 			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) return false;
-			const hasConfirmedStreamingPlatform = platforms.some(
-				(platform) => platform !== 'Cine' && platform !== 'Otras plataformas',
-			);
-			const isAlsoInTheaters = platforms.includes('Cine');
-			return hasConfirmedStreamingPlatform && !isAlsoInTheaters && isReleased(movie);
+			const isAlsoInTheaters = isTheatricalRelease(movie);
+			return hasConfirmedStreamingPlatform(movie) && !isAlsoInTheaters && isReleased(movie);
 		});
 	const toRelease = ({ movie, platforms }: (typeof candidates)[number], dateLabel?: string) => ({
 		slug: movie.slug,
@@ -1669,3 +1678,4 @@ export function getMoviePath(slug: string): string {
 }
 
 export { getMoviePlatformLabel, getMoviePlatforms } from './platforms';
+
