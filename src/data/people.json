@@ -844,6 +844,21 @@
 		"source": "plex-cache",
 		"nationalityPrimary": "Nacionalidad no informada"
 	},
+	"Aidan Delbis": {
+		"name": "Aidan Delbis",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/aidan-delbis-nm16696974.jpg",
+		"imdbId": "nm16696974",
+		"imdbUrl": "https://www.imdb.com/name/nm16696974/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/k9xKpm9cVryO3dgdsyxvC46FyBW.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q135456821",
+			"https://www.imdb.com/name/nm16696974/",
+			"https://www.themoviedb.org/person/5212114-aidan-delbis"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Aishwarya Lekshmi": {
 		"name": "Aishwarya Lekshmi",
 		"birthDate": "1990-07-26",
@@ -1744,6 +1759,20 @@
 		"remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F7%2Fpeople%2F7672f6d7d9d46163e919de573716ad1b.jpg",
 		"source": "plex-cache"
 	},
+	"Aleshea Harris": {
+		"name": "Aleshea Harris",
+		"birthDate": "1981",
+		"birthYear": 1981,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/aleshea-harris.jpg",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aleshea%20Harris%20(Artist).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q47488366",
+			"https://www.themoviedb.org/person/3876244-aleshea-harris"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"Alex Abbad": {
 		"name": "Alex Abbad",
 		"birthDate": "1978-06-18",
@@ -2295,7 +2324,7 @@
 			"https://www.imdb.com/name/nm0000224/",
 			"https://www.themoviedb.org/person/5588-alicia-silverstone"
 		],
-		"lastVerifiedAt": "2026-08-12",
+		"lastVerifiedAt": "2026-08-21",
 		"source": "wikidata-imdb-cache"
 	},
 	"Alicia Vikander": {
@@ -17315,6 +17344,40 @@
 		"source": "wikidata-imdb-tmdb-cache",
 		"birthDate": "1956-01-13"
 	},
+	"Dylan Baker": {
+		"name": "Dylan Baker",
+		"birthDate": "1959-10-07",
+		"birthYear": 1959,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/dylan-baker-nm0048414.jpg",
+		"imdbId": "nm0048414",
+		"imdbUrl": "https://www.imdb.com/name/nm0048414/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/DylanBakerFeb08.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q726128",
+			"https://www.imdb.com/name/nm0048414/",
+			"https://www.themoviedb.org/person/19152-dylan-baker"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
+	},
+	"Dylan Gelula": {
+		"name": "Dylan Gelula",
+		"birthDate": "1994-05-07",
+		"birthYear": 1994,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/dylan-gelula-nm3871647.jpg",
+		"imdbId": "nm3871647",
+		"imdbUrl": "https://www.imdb.com/name/nm3871647/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/nqXd0gVNlma8knaykJh5ArXSYqy.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q18206549",
+			"https://www.imdb.com/name/nm3871647/",
+			"https://www.themoviedb.org/person/1308373-dylan-gelula"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Dylan O'Brien": {
 		"name": "Dylan O'Brien",
 		"birthYear": 1991,
@@ -19041,20 +19104,20 @@
 	},
 	"Emma Stone": {
 		"name": "Emma Stone",
+		"birthDate": "1988-11-06",
 		"birthYear": 1988,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/emma-stone-nm1297015.jpg",
 		"imdbId": "nm1297015",
 		"imdbUrl": "https://www.imdb.com/name/nm1297015/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Emma%20Stone%20at%20the%202025%20Cannes%20Film%20Festival%2004.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Emma%20Stone%20at%20the%202025%20Cannes%20Film%20Festival%2004.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q147077",
 			"https://www.imdb.com/name/nm1297015/",
 			"https://www.themoviedb.org/person/54693-emma-stone"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1988-11-06"
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Emma Tammi": {
 		"name": "Emma Tammi",
@@ -19476,6 +19539,23 @@
 		"lastVerifiedAt": "2026-08-11",
 		"image": "/people/erich-von-stroheim-8630.jpg",
 		"source": "tmdb-cache"
+	},
+	"Erika Alexander": {
+		"name": "Erika Alexander",
+		"birthDate": "1969-11-19",
+		"birthYear": 1969,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/erika-alexander-nm0004697.jpg",
+		"imdbId": "nm0004697",
+		"imdbUrl": "https://www.imdb.com/name/nm0004697/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Erika%20Alexander.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q291628",
+			"https://www.imdb.com/name/nm0004697/",
+			"https://www.themoviedb.org/person/33655-erika-alexander"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Erika Anderson": {
 		"name": "Erika Anderson",
@@ -28564,20 +28644,20 @@
 	},
 	"Janelle Monáe": {
 		"name": "Janelle Monáe",
+		"birthDate": "1985-12-01",
 		"birthYear": 1985,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/janelle-monae-nm1847117.jpg",
 		"imdbId": "nm1847117",
 		"imdbUrl": "https://www.imdb.com/name/nm1847117/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Janelle%20Monae%20Paris%20Fashion%20Week%20Autumn%20Winter%202019%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Janelle%20Monae%20Paris%20Fashion%20Week%20Autumn%20Winter%202019%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q234356",
 			"https://www.imdb.com/name/nm1847117/",
 			"https://www.themoviedb.org/person/1005852-janelle-monae"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1985-12-01"
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Janet Leigh": {
 		"name": "Janet Leigh",
@@ -30444,20 +30524,20 @@
 	},
 	"Jesse Plemons": {
 		"name": "Jesse Plemons",
+		"birthDate": "1988-04-02",
 		"birthYear": 1988,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/jesse-plemons-nm0687146.jpg",
 		"imdbId": "nm0687146",
 		"imdbUrl": "https://www.imdb.com/name/nm0687146/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jesse%20Plemons%20(20769593584).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jesse%20Plemons%20(20769593584).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q1138674",
 			"https://www.imdb.com/name/nm0687146/",
 			"https://www.themoviedb.org/person/88124-jesse-plemons"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1988-04-02"
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Jesse Ventura": {
 		"name": "Jesse Ventura",
@@ -35017,6 +35097,23 @@
 		"lastVerifiedAt": "2026-08-11",
 		"source": "wikidata-imdb-cache"
 	},
+	"Julianne Nicholson": {
+		"name": "Julianne Nicholson",
+		"birthDate": "1971-07-01",
+		"birthYear": 1971,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/julianne-nicholson-nm0629855.jpg",
+		"imdbId": "nm0629855",
+		"imdbUrl": "https://www.imdb.com/name/nm0629855/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Julianne%20Nicholson%20at%20the%20premiere%20of%20August%20--%20Osage%20County%2C%20Toronto%20Film%20Festival%202013%20-a.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q259663",
+			"https://www.imdb.com/name/nm0629855/",
+			"https://www.themoviedb.org/person/86034-julianne-nicholson"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"Juliano Krue Valdi": {
 		"name": "Juliano Krue Valdi",
 		"birthDate": "2014-04-08",
@@ -35844,6 +35941,21 @@
 		"lastVerifiedAt": "2026-08-11",
 		"source": "plex-cache",
 		"nationalityPrimary": "Nacionalidad no informada"
+	},
+	"Kara Young": {
+		"name": "Kara Young",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/kara-young-nm4526977.jpg",
+		"imdbId": "nm4526977",
+		"imdbUrl": "https://www.imdb.com/name/nm4526977/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kara%20Young%202025%20Tony%20Awards.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q118134506",
+			"https://www.imdb.com/name/nm4526977/",
+			"https://www.themoviedb.org/person/1964315-kara-young"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Karan Gill": {
 		"name": "Karan Gill",
@@ -38096,13 +38208,13 @@
 		"image": "/people/kristoffer-borgli-nm5589501.jpg",
 		"imdbId": "nm5589501",
 		"imdbUrl": "https://www.imdb.com/name/nm5589501/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristoffer%20Borgli.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristoffer%20Borgli.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q118504431",
 			"https://www.imdb.com/name/nm5589501/",
 			"https://www.themoviedb.org/person/1280021-kristoffer-borgli"
 		],
-		"lastVerifiedAt": "2026-04-11",
+		"lastVerifiedAt": "2026-08-21",
 		"source": "wikidata-imdb-cache"
 	},
 	"Krysten Ritter": {
@@ -41958,6 +42070,21 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1978-05-12"
 	},
+	"Mallori Johnson": {
+		"name": "Mallori Johnson",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/mallori-johnson-nm12761494.jpg",
+		"imdbId": "nm12761494",
+		"imdbUrl": "https://www.imdb.com/name/nm12761494/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/gP9sIAP3aflFbogBWRZGLJXiPJl.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q124293620",
+			"https://www.imdb.com/name/nm12761494/",
+			"https://www.themoviedb.org/person/3308114-mallori-johnson"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Mami Koyama": {
 		"name": "Mami Koyama",
 		"birthYear": 1955,
@@ -45673,6 +45800,23 @@
 		"lastVerifiedAt": "2026-08-11",
 		"source": "wikidata-imdb-cache"
 	},
+	"Michael Cera": {
+		"name": "Michael Cera",
+		"birthDate": "1988-06-07",
+		"birthYear": 1988,
+		"nationalityPrimary": "Canadiense",
+		"image": "/people/michael-cera-nm0148418.jpg",
+		"imdbId": "nm0148418",
+		"imdbUrl": "https://www.imdb.com/name/nm0148418/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Cera%202012%20(Cropped).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q309555",
+			"https://www.imdb.com/name/nm0148418/",
+			"https://www.themoviedb.org/person/39995-michael-cera"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"Michael Chabon": {
 		"name": "Michael Chabon",
 		"birthDate": "1963-05-24",
@@ -47811,6 +47955,23 @@
 		"lastVerifiedAt": "2026-03-31",
 		"source": "wikidata-imdb-cache"
 	},
+	"Mykelti Williamson": {
+		"name": "Mykelti Williamson",
+		"birthDate": "1957-03-04",
+		"birthYear": 1957,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/mykelti-williamson-nm0932112.jpg",
+		"imdbId": "nm0932112",
+		"imdbUrl": "https://www.imdb.com/name/nm0932112/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mykelti%20Williamson%202003%20(cropped).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q741555",
+			"https://www.imdb.com/name/nm0932112/",
+			"https://www.themoviedb.org/person/34-mykelti-williamson"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"Mykola Hrynko": {
 		"name": "Nikolai Grinko",
 		"birthDate": "1920-05-22",
@@ -49042,7 +49203,7 @@
 			"https://www.imdb.com/name/nm0000115/",
 			"https://www.themoviedb.org/person/2963-nicolas-cage"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-08-21",
 		"source": "wikidata-imdb-cache"
 	},
 	"Nicolas Winding Refn": {
@@ -60144,6 +60305,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1960-11-11"
 	},
+	"Stavros Halkias": {
+		"name": "Stavros Halkias",
+		"birthDate": "1989-02-11",
+		"birthYear": 1989,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/stavros-halkias-nm6254064.jpg",
+		"imdbId": "nm6254064",
+		"imdbUrl": "https://www.imdb.com/name/nm6254064/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stavros%20Halkias%2C%20circa%20October%202024%20(cropped).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q111366943",
+			"https://www.imdb.com/name/nm6254064/",
+			"https://www.themoviedb.org/person/1400595-stavros-halkias"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
+	},
 	"Stefania Casini": {
 		"name": "Stefania Casini",
 		"birthDate": "1948-09-04",
@@ -60431,6 +60609,23 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1931-05-19"
+	},
+	"Sterling K. Brown": {
+		"name": "Sterling K. Brown",
+		"birthDate": "1976-04-05",
+		"birthYear": 1976,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/sterling-k-brown-nm1250791.jpg",
+		"imdbId": "nm1250791",
+		"imdbUrl": "https://www.imdb.com/name/nm1250791/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sterling%20K%20Brown%20-%20Paradise.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q3295000",
+			"https://www.imdb.com/name/nm1250791/",
+			"https://www.themoviedb.org/person/1225953-sterling-k-brown"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Steve Blum": {
 		"name": "Steve Blum",
@@ -62593,6 +62788,23 @@
 		"lastVerifiedAt": "2026-03-15",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1946-04-19"
+	},
+	"Tim Meadows": {
+		"name": "Tim Meadows",
+		"birthDate": "1961-02-05",
+		"birthYear": 1961,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/tim-meadows-nm0005218.jpg",
+		"imdbId": "nm0005218",
+		"imdbUrl": "https://www.imdb.com/name/nm0005218/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim%20Meadows%20by%20Gage%20Skidmore.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q1322660",
+			"https://www.imdb.com/name/nm0005218/",
+			"https://www.themoviedb.org/person/51857-tim-meadows"
+		],
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Tim Miller": {
 		"name": "Tim Miller",
@@ -66893,19 +67105,19 @@
 	},
 	"Yorgos Lanthimos": {
 		"name": "Yorgos Lanthimos",
+		"birthDate": "1973-09-23",
 		"birthYear": 1973,
-		"nationalityPrimary": "Griego",
+		"nationalityPrimary": "Grecia",
 		"image": "/people/yorgos-lanthimos-nm0487166.jpg",
 		"imdbId": "nm0487166",
 		"imdbUrl": "https://www.imdb.com/name/nm0487166/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yorgos%20Lanthimos%2C%20THE%20LOBSTER%2C%20Fantastic%20Fest%202015%20-9674%20(27161878820)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yorgos%20Lanthimos%2C%20THE%20LOBSTER%2C%20Fantastic%20Fest%202015%20-9674%20(27161878820)%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q975410",
 			"https://www.imdb.com/name/nm0487166/"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1973-09-23"
+		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
 	},
 	"Yoshiko Shinohara": {
 		"name": "Yoshiko Shinohara",

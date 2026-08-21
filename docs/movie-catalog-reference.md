@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-21. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1370
+Total de peliculas: 1373
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -39,7 +39,7 @@ Total de peliculas: 1370
 | 2026 | El día D: Bajo presión | el-dia-d-bajo-presion-2026 | Drama | Cine | +13 |
 | 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Otras plataformas | +13 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Disney Plus | +13 |
-| 2026 | El drama | the-drama-2026 | Romance | Otras plataformas | +17 |
+| 2026 | El drama | the-drama-2026 | Romance | Prime Video | +17 |
 | 2026 | El escándalo de Trustor desde dentro | el-escandalo-de-trustor-desde-dentro-2026 | Documental | Netflix | ATP |
 | 2026 | El final de la calle Oak | el-final-de-la-calle-oak-2026 | Ciencia ficcion | Cine | ATP |
 | 2026 | El Huésped Oculto | el-huesped-oculto-2026 | Thriller | HBO Max | +16 |
@@ -64,7 +64,7 @@ Total de peliculas: 1370
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Hasta el final | hasta-el-final-2026 | Drama | Netflix | +16 |
 | 2026 | Heartstopper para siempre | heartstopper-para-siempre-2026 | Romance | Netflix | +16 |
-| 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Otras plataformas | +17 |
+| 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Prime Video | +17 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Disney Plus | ATP |
 | 2026 | In the Hand of Dante | in-the-hand-of-dante-2026 | Thriller | Netflix | +16 |
 | 2026 | Insaciable | insaciable-2026 | Terror | Cine | +17 |
@@ -85,6 +85,7 @@ Total de peliculas: 1370
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | La tierra explota | la-tierra-explota-2026 | Documental | Otras plataformas | ATP |
 | 2026 | La última casa | la-ultima-casa-2026 | Terror | Netflix | +16 |
+| 2026 | La voluntad de Dios | la-voluntad-de-dios-2026 | Drama | Prime Video | +17 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Otras plataformas | +16 |
@@ -171,6 +172,7 @@ Total de peliculas: 1370
 | 2025 | Ballerina | ballerina-2025 | Accion | Prime Video | +16 |
 | 2025 | Belén | belen-2025 | Drama | Prime Video | +17 |
 | 2025 | Black Bag | black-bag-2025 | Thriller | HBO Max | +13 |
+| 2025 | Bugonia | bugonia-2025 | Ciencia ficcion | HBO Max | +17 |
 | 2025 | Captain America: Brave New World | captain-america-brave-new-world-2025 | Accion | Disney Plus | +13 |
 | 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Crunchyroll | +16 |
 | 2025 | Christy (El combate de su vida) | christy-el-combate-de-su-vida-2025 | Drama | HBO Max | +17 |
@@ -348,6 +350,7 @@ Total de peliculas: 1370
 | 2023 | Días perfectos | dias-perfectos-2023 | Drama | Netflix + Apple TV | ATP |
 | 2023 | El asesino | the-killer-2023 | Thriller | Netflix | +13 |
 | 2023 | El clan de hierro | el-clan-de-hierro-2023 | Drama | Apple TV | +16 |
+| 2023 | El hombre de los sueños | el-hombre-de-los-suenos-2023 | Comedia | Prime Video | +13 |
 | 2023 | El mal no existe | el-mal-no-existe-2023 | Drama | Otras plataformas | +13 |
 | 2023 | Fast X | fast-x-2023 | Accion | Netflix | +13 |
 | 2023 | Golpe de suerte | coup-de-chance-2023 | Thriller | Otras plataformas | +16 |
