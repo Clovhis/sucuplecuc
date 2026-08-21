@@ -36,16 +36,18 @@ test('2027 agenda is visible as text without links on every viewport', async ({ 
 
 test('mobile 2027 agenda stays contained without a disclosure', async ({ page }, testInfo) => {
 	test.skip(!testInfo.project.name.startsWith('mobile-'), 'This interaction is intentionally mobile-only.');
-	await page.setViewportSize({ width: 390, height: 844 });
-	await page.goto('/', { waitUntil: 'domcontentloaded' });
+	for (const width of [390, 320]) {
+		await page.setViewportSize({ width, height: 844 });
+		await page.goto('/', { waitUntil: 'domcontentloaded' });
 
-	const section = page.locator(agenda);
-	await expect(section.locator(`${items}:visible`)).toHaveCount(10);
-	await expect(section.locator('summary, [data-upcoming-2027-disclosure]')).toHaveCount(0);
+		const section = page.locator(agenda);
+		await expect(section.locator(`${items}:visible`)).toHaveCount(10);
+		await expect(section.locator('summary, [data-upcoming-2027-disclosure]')).toHaveCount(0);
 
-	const metrics = await page.evaluate(() => ({
-		contentFits: document.documentElement.scrollWidth <= window.innerWidth + 1,
-	}));
+		const metrics = await page.evaluate(() => ({
+			contentFits: document.documentElement.scrollWidth <= window.innerWidth + 1,
+		}));
 
-	expect(metrics.contentFits).toBeTruthy();
+		expect(metrics.contentFits, `Agenda overflows at ${width}px`).toBeTruthy();
+	}
 });
