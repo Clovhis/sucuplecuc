@@ -1,0 +1,123 @@
+---
+import {
+	UPCOMING_RELEASES_2027,
+	UPCOMING_RELEASES_2027_UPDATED_AT,
+} from '../data/upcomingReleases2027';
+
+const releaseDateFormatter = new Intl.DateTimeFormat('es-AR', {
+	day: 'numeric',
+	month: 'long',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
+const updatedAtFormatter = new Intl.DateTimeFormat('es-AR', {
+	day: 'numeric',
+	month: 'short',
+	year: 'numeric',
+	timeZone: 'UTC',
+});
+
+function formatReleaseDate(value: string) {
+	return releaseDateFormatter.format(new Date(`${value}T00:00:00Z`));
+}
+
+function formatUpdatedAt(value: string) {
+	return updatedAtFormatter.format(new Date(`${value}T00:00:00Z`));
+}
+
+function getReleaseHalf(value: string) {
+	return Number.parseInt(value.slice(5, 7), 10) <= 6 ? 'first' : 'second';
+}
+
+const releaseCount = UPCOMING_RELEASES_2027.length;
+---
+
+<section
+	class="upcoming-releases-2027"
+	aria-labelledby="upcoming-releases-2027-title"
+	data-upcoming-2027-root
+>
+	<div class="upcoming-releases-2027__head">
+		<div class="upcoming-releases-2027__intro">
+			<p class="upcoming-releases-2027__eyebrow">Agenda 2027</p>
+			<h2 id="upcoming-releases-2027-title" class="upcoming-releases-2027__heading">Las grandes que vienen</h2>
+			<p class="upcoming-releases-2027__copy">
+				Una selección corta de películas que ya tienen fecha o ventana prevista para llegar a los cines.
+			</p>
+		</div>
+		<div class="upcoming-releases-2027__tools" role="search" aria-label="Buscar en la agenda de estrenos 2027">
+			<div class="upcoming-releases-2027__field">
+				<label class="upcoming-releases-2027__label" for="upcoming-2027-search">Buscar película</label>
+				<input
+					id="upcoming-2027-search"
+					class="upcoming-releases-2027__input"
+					type="search"
+					placeholder="Título o saga"
+					autocomplete="off"
+					data-upcoming-2027-search
+					aria-controls="upcoming-2027-list"
+				/>
+			</div>
+			<div class="upcoming-releases-2027__field">
+				<label class="upcoming-releases-2027__label" for="upcoming-2027-period">Momento del año</label>
+				<select id="upcoming-2027-period" class="upcoming-releases-2027__select" data-upcoming-2027-period>
+					<option value="all">Todo 2027</option>
+					<option value="first">Primer semestre</option>
+					<option value="second">Segundo semestre</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<details class="upcoming-releases-2027__disclosure" open data-upcoming-2027-disclosure>
+		<summary class="upcoming-releases-2027__summary">
+			<span class="upcoming-releases-2027__summary-label">Agenda completa</span>
+			<span class="upcoming-releases-2027__summary-count" data-upcoming-2027-count>
+				{releaseCount} títulos
+			</span>
+		</summary>
+		<div class="upcoming-releases-2027__body">
+			<p class="upcoming-releases-2027__status" role="status" aria-live="polite" data-upcoming-2027-status>
+				{releaseCount} títulos destacados
+			</p>
+			<ol
+				id="upcoming-2027-list"
+				class="upcoming-releases-2027__list"
+				aria-label="Películas destacadas con estreno previsto para 2027"
+				data-upcoming-2027-list
+			>
+				{
+					UPCOMING_RELEASES_2027.map((release, index) => (
+						<li
+							class="upcoming-releases-2027__item"
+							data-upcoming-2027-item
+							data-upcoming-2027-title={release.title}
+							data-upcoming-2027-half={getReleaseHalf(release.releaseDate)}
+						>
+							<span class="upcoming-releases-2027__number" aria-hidden="true">
+								{String(index + 1).padStart(2, '0')}
+							</span>
+							<div class="upcoming-releases-2027__item-copy">
+								<h3 class="upcoming-releases-2027__item-title">{release.title}</h3>
+								<p class="upcoming-releases-2027__item-meta">
+									<time datetime={release.releaseDate}>{formatReleaseDate(release.releaseDate)}</time>
+									<span aria-hidden="true">·</span>
+									<span>{release.status === 'anunciada' ? 'Fecha anunciada' : 'Fecha prevista'}</span>
+								</p>
+							</div>
+						</li>
+					))
+				}
+			</ol>
+			<p class="upcoming-releases-2027__empty" data-upcoming-2027-empty hidden>
+				No encontramos una película con ese filtro. Probá con otro título o período.
+			</p>
+		</div>
+	</details>
+
+	<p class="upcoming-releases-2027__note">
+		Fechas internacionales anunciadas o previstas; el estreno en Argentina puede cambiar. Revisión: {formatUpdatedAt(UPCOMING_RELEASES_2027_UPDATED_AT)}.
+	</p>
+</section>
+
+<script src="../scripts/upcoming-releases-2027.ts"></script>

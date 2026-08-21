@@ -223,6 +223,61 @@
 	}
 }
 
+@media (max-width: 720px) {
+	.upcoming-releases-2027 {
+		gap: 0.85rem;
+		padding: 1.1rem 0 1.25rem;
+	}
+
+	.upcoming-releases-2027__heading {
+		font-size: 1.35rem;
+	}
+
+	.upcoming-releases-2027__copy {
+		font-size: 0.84rem;
+	}
+
+	.upcoming-releases-2027__tools {
+		grid-template-columns: 1fr;
+		gap: 0.55rem;
+		max-width: none;
+	}
+
+	.upcoming-releases-2027__input,
+	.upcoming-releases-2027__select {
+		min-height: 3rem;
+	}
+
+	.upcoming-releases-2027__summary {
+		min-height: 3rem;
+		padding: 0.7rem 0.1rem;
+	}
+
+	.upcoming-releases-2027__summary-count {
+		text-align: end;
+	}
+
+	.upcoming-releases-2027__body {
+		padding-bottom: 0.2rem;
+	}
+
+	.upcoming-releases-2027__list {
+		grid-template-columns: 1fr;
+	}
+
+	.upcoming-releases-2027__item {
+		padding: 0.78rem 0;
+	}
+
+	.upcoming-releases-2027__item-title {
+		font-size: 0.9rem;
+	}
+
+	.upcoming-releases-2027__note {
+		font-size: 0.7rem;
+	}
+}
+
 @media (max-width: 350px) {
 	.people-index__hero {
 		min-height: 26rem;

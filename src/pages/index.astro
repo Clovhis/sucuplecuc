@@ -5,6 +5,7 @@ import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import HomePrimaryCatalog from '../components/HomePrimaryCatalog.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
+import UpcomingReleases2027 from '../components/UpcomingReleases2027.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
@@ -568,6 +569,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						</div>
 						<a href={COMMUNITY_PATH}>Ir a la comunidad</a>
 					</section>
+					<UpcomingReleases2027 />
 					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 180ms;" aria-label="Qué vemos hoy">
 						<PostometroTeaser compact={true} />
 					</section>
