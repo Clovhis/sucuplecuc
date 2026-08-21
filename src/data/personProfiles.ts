@@ -12247,6 +12247,92 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 			'https://www.goldenglobes.com/person/brad-pitt',
 		],
 	},
+	'adam-sandler': {
+		slug: 'adam-sandler',
+		name: 'Adam Sandler',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Jackie%20Sandler%20Adam%20Sandler%20Jay%20Kelly-36%20(3x4).jpg?width=640',
+		headline:
+			'Comediante, actor y productor que convirtió la energía de la stand up y el absurdo noventoso en una carrera capaz de doblar hacia el drama.',
+		roles: ['Actor', 'Comediante', 'Productor'],
+		birthPlace: 'Brooklyn, Nueva York, Estados Unidos',
+		spotlight:
+			'Sandler puede pasar de la pavada más gritona a una actuación quebrada sin pedir permiso, y ahí aparece una carrera bastante más amplia que la etiqueta de comediante de estudio.',
+		biography: [
+			'Adam Richard Sandler nació el 9 de septiembre de 1966 en Brooklyn, Nueva York, y creció en Manchester, New Hampshire. Estudió en la Tisch School of the Arts de la Universidad de Nueva York y empezó a probar la comedia en clubes cuando todavía estaba buscando una forma propia de estar en escena. Esa mezcla de canción absurda, personaje acelerado y observación cotidiana apareció muy temprano y terminó siendo la base de una identidad reconocible mucho antes de que el cine la convirtiera en marca.',
+			'Dennis Miller lo recomendó para Saturday Night Live y Sandler pasó por el programa como guionista y luego como intérprete entre 1990 y 1995. Allí armó canciones, voces y criaturas que no necesitaban una explicación larga para quedar en la memoria. Su debut cinematográfico en Going Overboard fue pequeño y desprolijo, pero Billy Madison y Happy Gilmore le dieron una plataforma mucho más clara: protagonistas inmaduros, agresivos y tiernos a la vez, capaces de convertir un problema mínimo en una catástrofe física.',
+			'Durante la segunda mitad de los noventa y el comienzo de los 2000, Sandler construyó una filmografía de comedias populares con The Wedding Singer, The Waterboy, Big Daddy, Little Nicky, Mr. Deeds, Anger Management y 50 First Dates. Sin embargo, la carrera también se abrió hacia zonas que desarmaban el personaje conocido. Punch-Drunk Love, Reign Over Me, Funny People, The Meyerowitz Stories, Uncut Gems, Hustle y Spaceman muestran distintas maneras de trabajar la ansiedad, el duelo, la obsesión, la paternidad y la necesidad de volver a empezar.',
+			'Como productor, Sandler sostuvo durante años el funcionamiento de Happy Madison y participó en proyectos propios y ajenos, mientras la música y el stand up siguieron formando parte de su recorrido. También encontró una segunda vida como actor de voz, sobre todo como Drácula en Hotel Transylvania, y una relación sostenida con Netflix que amplió su alcance internacional. Su regreso como Happy Gilmore en Happy Gilmore 2 resume esa continuidad: vuelve a un personaje querido, pero lo coloca frente al paso del tiempo y a una responsabilidad familiar distinta.',
+		],
+		editorialBiography: [
+			'Adam Sandler se formó entre el stand up, las canciones absurdas y la escritura de Saturday Night Live, donde fue guionista e intérprete entre 1990 y 1995. Billy Madison, Happy Gilmore y The Wedding Singer lo instalaron en los noventa como una figura popular, capaz de convertir una voz nasal, una canción ridícula o un ataque de furia en una marca propia. En 1999 fundó Happy Madison Productions y pasó a controlar buena parte del tono y las alianzas de sus comedias.',
+			'Lo interesante aparece cuando esa máscara se resquebraja: Punch-Drunk Love, Reign Over Me, Funny People y Uncut Gems lo llevaron a trabajar ansiedad, duelo y obsesión con una intensidad que sus comedias dejaban asomar. Su voz como Drácula en Hotel Transylvania y su vínculo con Netflix ampliaron su público. El Mark Twain Prize de 2023 reconoció una carrera que convive con el chiste bruto y el riesgo actoral.',
+		],
+		stats: [
+			{ label: 'Debut cinematográfico', value: '1989' },
+			{ label: 'Marca', value: 'Comedia + riesgo' },
+			{ label: 'Premio Mark Twain', value: '2023' },
+		],
+		awards: [
+			{ label: 'Independent Spirit Award', category: 'Mejor actor', work: 'Uncut Gems', year: 2020 },
+			{ label: 'Mark Twain Prize', category: 'American Humor', year: 2023 },
+			{ label: 'Hollywood Walk of Fame', category: 'Estrella', year: 2011 },
+		],
+		knownFor: [
+			'happy-gilmore-1996',
+			'the-wedding-singer-1998',
+			'punch-drunk-love-2002',
+			'the-meyerowitz-stories-2017',
+			'uncut-gems-2019',
+			'happy-gilmore-2-2025',
+		],
+		referenceUrls: [
+			'https://www.televisionacademy.com/bios/adam-sandler',
+			'https://tisch.nyu.edu/drama/news/tisch-drama-alum-adam-sandler-awarded-the-mark-twain-prize',
+			'https://en.wikipedia.org/wiki/Adam_Sandler',
+			'https://en.wikipedia.org/wiki/Adam_Sandler_filmography',
+			'https://www.wikidata.org/wiki/Q132952',
+			'https://www.imdb.com/name/nm0001191/',
+			'https://walkoffame.com/adam-sandler/',
+			'https://apnews.com/article/4f61c58e83b62d0470c48594cf204265',
+		],
+	},
+	'sunny-sandler': {
+		slug: 'sunny-sandler',
+		name: 'Sunny Sandler',
+		profileImage:
+			'https://commons.wikimedia.org/wiki/Special:FilePath/Sunny%20Sandler%20(cropped).jpg?width=640',
+		headline:
+			'Actriz estadounidense que empezó con participaciones familiares y encontró un papel propio como Vienna Gilmore en Happy Gilmore 2.',
+		roles: ['Actriz', 'Actriz de voz'],
+		birthPlace: 'California, Estados Unidos',
+		spotlight:
+			'Su recorrido todavía es breve, pero ya combina comedia familiar, voz y un personaje con peso narrativo dentro de una franquicia popular.',
+		biography: [
+			'Sunny Madeline Sandler nació el 2 de noviembre de 2008 en California. Es hija de Adam Sandler y Jackie Sandler, y hermana menor de Sadie Sandler. Su entrada a la pantalla ocurrió dentro de un entorno familiar de cine y comedia, aunque ese dato no alcanza para explicar su presencia: desde chica fue sumando créditos en producciones donde debía encontrar un gesto, una voz o una reacción precisa dentro de elencos muy cargados.',
+			'Sus primeros trabajos quedaron ligados a películas de tono familiar y de reparto coral, entre ellas Grown Ups y Pixels. También participó en proyectos animados y prestó su voz en Leo, una película donde el humor escolar convive con una historia de despedidas y crecimiento. Esos papeles todavía son breves, pero muestran un recorrido que se mueve entre la actuación frente a cámara y el trabajo vocal, dos registros que exigen ritmos muy distintos.',
+			'En 2023 apareció en You Are So Not Invited to My Bat Mitzvah, una comedia adolescente que amplió su contacto con personajes jóvenes y conflictos de pertenencia. El interés de esa etapa está en verla crecer dentro de materiales que no dependen sólo del apellido: la cámara empieza a pedirle una energía más específica, menos ligada al cameo y más atenta a cómo un personaje se ubica dentro del grupo.',
+			'El salto más visible llegó con Happy Gilmore 2, donde interpreta a Vienna Gilmore, la hija menor de Happy y una chica con un sueño propio que empuja el regreso de su padre al golf. El papel le permite salir del fondo de la escena y participar del conflicto emocional de la secuela. Sunny todavía está construyendo su camino, pero esa combinación de humor, vulnerabilidad y presencia familiar abre una puerta interesante para sus próximos trabajos.',
+		],
+		editorialBiography: [
+			'Sunny Sandler viene de una familia muy ligada al cine, pero sus créditos ya empiezan a armar un recorrido propio. Pasó por comedias familiares, puso voz en Leo y encontró una participación con peso en Happy Gilmore 2, donde interpreta a Vienna Gilmore.',
+			'El perfil todavía está en construcción y justamente por eso conviene mirarlo sin apuro: hay una actriz joven probando registros, aprendiendo a ocupar la escena y buscando que cada papel sea algo más que una aparición familiar.',
+		],
+		stats: [
+			{ label: 'Nacimiento', value: '2008' },
+			{ label: 'Registro', value: 'Cámara + voz' },
+			{ label: 'Papel destacado', value: 'Vienna Gilmore' },
+		],
+		awards: [],
+		knownFor: ['grown-ups-2010', 'pixels-2015', 'leo-2023', 'happy-gilmore-2-2025'],
+		referenceUrls: [
+			'https://en.wikipedia.org/wiki/Sunny_Sandler',
+			'https://www.wikidata.org/wiki/Q47892618',
+			'https://www.imdb.com/name/nm3927383/',
+			'https://www.netflix.com/at/title/81696722',
+			'https://en.wikipedia.org/wiki/Happy_Gilmore_2',
+		],
+	},
 	'al-pacino': {
 		slug: 'al-pacino',
 		name: 'Al Pacino',

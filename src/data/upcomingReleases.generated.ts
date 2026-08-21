@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-20T14:25:51.772Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-21T03:19:48.177Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -61,6 +61,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10272-pinocho-desatado/"
 	},
 	{
+		"slug": "the-thing-with-feathers",
+		"title": "Esa cosa con alas",
+		"releaseDate": "2026-09-03",
+		"videoUrl": "https://www.youtube.com/watch?v=13xzmFy2z8Y",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yzgTMSFkhMdCG1VtMnChGI6rKxF.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10573-esa-cosa-con-alas/"
+	},
+	{
 		"slug": "practical-magic-2",
 		"title": "Hechizo de Amor: La magia continúa",
 		"releaseDate": "2026-09-10",
@@ -75,13 +83,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=-OGuJf70S0s",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
-	},
-	{
-		"slug": "the-get-out",
-		"title": "El último gran golpe",
-		"releaseDate": "2026-09-24",
-		"videoUrl": "https://www.youtube.com/watch?v=oB6HNuKxLmo",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/mDVnHFcxxUJC9TQFVeKh1TJNBzh.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10544-el-ultimo-gran-golpe/"
 	}
 ];

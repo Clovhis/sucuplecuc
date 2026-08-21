@@ -1,8 +1,8 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado manualmente el 2026-08-15. Fuente: `src/data/personProfiles.ts`
+Generado manualmente el 2026-08-20. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 493
+Total de personas con ficha exclusiva: 495
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -10,6 +10,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | --- | --- | --- | --- | ---: | ---: |
 | Aaron Taylor-Johnson | `aaron-taylor-johnson` | /personas/aaron-taylor-johnson/ | Actor | 3 | 3 |
 | Adam Driver | `adam-driver` | /personas/adam-driver/ | Actor | 2 | 3 |
+| Adam Sandler | `adam-sandler` | /personas/adam-sandler/ | Actor / Comediante / Productor | 6 | 6 |
 | Adria Arjona | `adria-arjona` | /personas/adria-arjona/ | Actriz | 2 | 3 |
 | Adrien Brody | `adrien-brody` | /personas/adrien-brody/ | Actor | 1 | 3 |
 | Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 2 | 3 |
@@ -334,6 +335,7 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 4 | 3 |
 | Sadie Sandler | `sadie-sandler` | /personas/sadie-sandler/ | Actriz | 1 | 6 |
 | Sadie Sink | `sadie-sink` | /personas/sadie-sink/ | Actriz | 1 | 3 |
+| Sunny Sandler | `sunny-sandler` | /personas/sunny-sandler/ | Actriz / Actriz de voz | 4 | 5 |
 | Sam Mendes | `sam-mendes` | /personas/sam-mendes/ | Director | 3 | 3 |
 | Sam Raimi | `sam-raimi` | /personas/sam-raimi/ | Director | 4 | 3 |
 | Sam Rockwell | `sam-rockwell` | /personas/sam-rockwell/ | Actor | 1 | 2 |
