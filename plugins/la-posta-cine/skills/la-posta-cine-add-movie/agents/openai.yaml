@@ -1,4 +1,5 @@
 interface:
   display_name: "La Posta Cine Add Movie"
-  short_description: "Carga películas con investigación AR eficiente"
-  default_prompt: "Usa $la-posta-cine-add-movie para cargar una película con investigación AR acotada y texto original de IA."
+  short_description: "Carga peliculas o batches con evidencia AR"
+  default_prompt: "Usa $la-posta-cine-add-movie para cargar una pelicula o un batch con manifiesto de candidatos, duplicados verificados, evidencia AR por proveedor, trailers auditados sin skip, enrichment estricto de personas, retratos verificados y copy original de IA."
+  brand_color: "#D97706"

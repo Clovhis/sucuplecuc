@@ -112,7 +112,7 @@ Total de peliculas: 1398
 | 2026 | Nada entre los dos | nada-entre-los-dos-2026 | Romance | Otras plataformas | ATP |
 | 2026 | Nando entre dos mundos | nando-entre-dos-mundos-2026 | Crimen | Netflix | ATP |
 | 2026 | No es país para solteros | no-es-pais-para-solteros-2026 | Comedia romántica | Prime Video | +18 |
-| 2026 | No se desea buena suerte | no-se-desea-buena-suerte-2026 | Comedia | Netflix | +13 |
+| 2026 | No se desea buena suerte | no-se-desea-buena-suerte-2026 | Drama | Netflix | +13 |
 | 2026 | Obsesión | obsesion-2026 | Terror | Cine | +17 |
 | 2026 | Office Romance | office-romance-2026 | Comedia | Netflix | +16 |
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
@@ -218,7 +218,7 @@ Total de peliculas: 1398
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
 | 2025 | Me has robado el corazón | me-has-robado-el-corazon-2025 | Comedia romántica | Otras plataformas | +16 |
-| 2025 | Mickey 17 | mickey-17-2025 | Aventura | HBO Max | +13 |
+| 2025 | Mickey 17 | mickey-17-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Otras plataformas | +13 |
 | 2025 | Mountainhead | mountainhead-2025 | Drama | HBO Max | +17 |
 | 2025 | Nimrods: A Green Day Comedy | nimrods-a-green-day-comedy-2025 | Comedia | Otras plataformas | ATP |
@@ -260,7 +260,7 @@ Total de peliculas: 1398
 | 2025 | Zona de riesgo | zona-de-riesgo-2025 | Accion | Otras plataformas | +17 |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Disney Plus | ATP |
 | 2024 | 40 Acres | 40-acres-2024 | Thriller | Netflix | +16 |
-| 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Drama | Paramount Plus | +13 |
+| 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Terror | Paramount Plus | +13 |
 | 2024 | A Real Pain | a-real-pain-2024 | Comedia | Disney Plus | +13 |
 | 2024 | Alien: Romulus | alien-romulus-2024 | Terror | Disney Plus + HBO Max | +17 |
 | 2024 | Am I OK? | am-i-ok-2024 | Comedia | HBO Max | +17 |
@@ -270,7 +270,7 @@ Total de peliculas: 1398
 | 2024 | Beetlejuice Beetlejuice | beetlejuice-beetlejuice-2024 | Comedia | HBO Max | +13 |
 | 2024 | Beverly Hills Cop: Axel F | beverly-hills-cop-axel-f-2024 | Accion | Netflix | +16 |
 | 2024 | Carry-On | carry-on-2024 | Accion | Netflix | +13 |
-| 2024 | Challengers | challengers-2024 | Comedia | Otras plataformas | +17 |
+| 2024 | Challengers | challengers-2024 | Drama | Otras plataformas | +17 |
 | 2024 | Civil War | civil-war-2024 | Accion | Netflix | +16 |
 | 2024 | Color Book | color-book-2024 | Drama | Netflix | +16 |
 | 2024 | Conclave | conclave-2024 | Thriller | Prime Video | +13 |
@@ -310,7 +310,7 @@ Total de peliculas: 1398
 | 2024 | Moana 2 | moana-2-2024 | Animacion | Disney Plus | ATP |
 | 2024 | Monkey Man | monkey-man-2024 | Accion | Prime Video | +16 |
 | 2024 | My Hero Academia: You're Next | my-hero-academia-youre-next-2024 | Anime | Crunchyroll | ATP |
-| 2024 | Nosferatu | nosferatu-2024 | Fantasia | HBO Max | +16 |
+| 2024 | Nosferatu | nosferatu-2024 | Terror | HBO Max | +16 |
 | 2024 | OVERLORD: El Reino Sagrado | overlord-el-reino-sagrado-2024 | Anime | Netflix | +17 |
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
@@ -342,7 +342,7 @@ Total de peliculas: 1398
 | 2023 | Anatomía de una caída | anatomia-de-una-caida-2023 | Thriller | Prime Video + Apple TV | +13 |
 | 2023 | Ant-Man and the Wasp: Quantumania | ant-man-and-the-wasp-quantumania-2023 | Accion | Disney Plus | +13 |
 | 2023 | Aquaman and the Lost Kingdom | aquaman-and-the-lost-kingdom-2023 | Accion | Netflix + HBO Max | +13 |
-| 2023 | Barbie | barbie-2023 | Aventura | HBO Max | ATP |
+| 2023 | Barbie | barbie-2023 | Comedia | HBO Max | ATP |
 | 2023 | Blue Beetle | blue-beetle-2023 | Accion | HBO Max | +13 |
 | 2023 | Creed III | creed-iii-2023 | Drama | Otras plataformas | +13 |
 | 2023 | Cuando acecha la maldad | cuando-acecha-la-maldad-2023 | Terror | Netflix | +16 |
@@ -389,8 +389,8 @@ Total de peliculas: 1398
 | 2023 | Wonka | wonka-2023 | Fantasia | HBO Max | ATP |
 | 2022 | Aftersun | aftersun-2022 | Drama | Otras plataformas | +13 |
 | 2022 | All Quiet on the Western Front | all-quiet-on-the-western-front-2022 | Drama | Netflix | +16 |
-| 2022 | Argentina, 1985 | argentina-1985-2022 | Crimen | Prime Video | +17 |
-| 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Animacion | Disney Plus | +13 |
+| 2022 | Argentina, 1985 | argentina-1985-2022 | Drama | Prime Video | +17 |
+| 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Ciencia ficcion | Disney Plus | +13 |
 | 2022 | Black Adam | black-adam-2022 | Accion | HBO Max | +13 |
 | 2022 | Black Panther: Wakanda Forever | black-panther-wakanda-forever-2022 | Accion | Disney Plus | +13 |
 | 2022 | Bubble | bubble-2022 | Anime | Netflix | ATP |
@@ -469,7 +469,7 @@ Total de peliculas: 1398
 | 2021 | Thunder Force | thunder-force-2021 | Acción | Netflix | +13 |
 | 2021 | Titane | titane-2021 | Terror | Otras plataformas | +18 |
 | 2021 | Venom: Let There Be Carnage | venom-let-there-be-carnage-2021 | Acción | Otras plataformas | +13 |
-| 2021 | West Side Story | west-side-story-2021 | Crimen | Disney Plus | +13 |
+| 2021 | West Side Story | west-side-story-2021 | Musical | Disney Plus | +13 |
 | 2021 | Zack Snyder's Justice League | zack-snyder-s-justice-league-2021 | Fantasia | HBO Max | +16 |
 | 2020 | Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) | birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn-2020 | Crimen | Otras plataformas | +16 |
 | 2020 | Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train | demon-slayer-kimetsu-no-yaiba-the-movie-mugen-train-2020 | Anime | Crunchyroll | +12 |
@@ -522,7 +522,7 @@ Total de peliculas: 1398
 | 2019 | Star Wars: The Rise of Skywalker | star-wars-episode-ix-the-rise-of-skywalker-2019 | Ciencia ficcion | Disney Plus | +13 |
 | 2019 | Terminator: Dark Fate | terminator-dark-fate-2019 | Accion | Disney Plus | +17 |
 | 2019 | The assistant | the-assistant-2019 | Drama | Apple TV | +13 |
-| 2019 | The Irishman: In Conversation | the-irishman-2019 | Crimen | Otras plataformas | +7 |
+| 2019 | The Irishman: In Conversation | the-irishman-2019 | Documental | Otras plataformas | +7 |
 | 2019 | The Vast of Night | the-vast-of-night-2019 | Ciencia ficcion | Otras plataformas | +13 |
 | 2019 | Un día lluvioso en Nueva York | a-rainy-day-in-new-york-2019 | Romance | Otras plataformas | +13 |
 | 2019 | Velvet Buzzsaw | velvet-buzzsaw-2019 | Terror | Netflix | +16 |
@@ -848,7 +848,7 @@ Total de peliculas: 1398
 | 2006 | The Fast and the Furious: Tokyo Drift | the-fast-and-the-furious-tokyo-drift-2006 | Accion | HBO Max | +13 |
 | 2006 | The Girl Who Leapt Through Time | the-girl-who-leapt-through-time-2006 | Anime | Otras plataformas | +13 |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus | +13 |
-| 2005 | Batman Begins | batman-begins-2005 | Drama | Netflix | +13 |
+| 2005 | Batman Begins | batman-begins-2005 | Accion | Netflix | +13 |
 | 2005 | Charlie and the Chocolate Factory | charlie-and-the-chocolate-factory-2005 | Fantasia | HBO Max | ATP |
 | 2005 | Constantine | constantine-2005 | Terror | HBO Max | +17 |
 | 2005 | Corpse Bride | corpse-bride-2005 | Animacion | HBO Max | ATP |

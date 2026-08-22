@@ -5,7 +5,7 @@ description: Audit recent, revalidated, or bulk-loaded La Posta Cine movie JSON 
 
 # la-posta-cine-auditor
 
-Use the bundled audit as the primary signal. Work quietly and edit only movie data, people cache/portraits, and generated catalogs; never auto-fix site code.
+Use the bundled audit as the primary signal. Work quietly and edit only movie data, people cache/portraits, and generated catalogs; never auto-fix site code. The only code exception is an explicit user request for a title-specific editorial-meter score: keep that score in the central meter override map plus a regression test, never in movie JSON.
 
 ## Compact flow
 
@@ -24,6 +24,17 @@ Do not read whole catalogs or manually repeat passing checks. For each failure, 
    For the home `Guerra` filter, `Bélica` must be an exact value in `genres`, never a `subgenres` value. A broad `Guerra` tag without `Bélica` produces a deliberate-review finding: decide from the premise and copy whether the conflict is central (add `Bélica`) or only contextual (leave it out and retain the evidence-led omission). Do not approve a `Bélica` tag that is supported only by a title or an incidental war reference; do not use it for *El planeta de los simios*-style non-war stories.
 
    Before interpreting the bundled output, run `npm run audit:movie-people -- --movie <slug>`. Missing local portrait, nationality, traceable reference or an unresolved identity is an error. Missing public birth data is a warning only when the gap is real and is not filled with an invented date.
+
+## Full-catalog genre review
+
+When the request says `total`, `todo el catálogo`, `full catalog` or equivalent, run `audit_recent_movies.cjs --all` and record the candidate count; do not substitute a recent-branch audit. The bundled auditor establishes structural coherence, but it cannot prove that the primary genre is semantically correct. Add a compact semantic matrix with `slug/title/year`, current `category`, `genres`, synopsis/review signals, trustworthy source URL and proposed category/confidence.
+
+- Treat `category` as the primary editorial lane, not as the first item in `genres` and not as a value chosen to activate a meter. A category may coexist with secondary genres, but it must agree with the film's narrative/marketing framing and medium.
+- Prioritize high-confidence contradictions: live action in `Animacion`/`Anime`, a documentary or making-of special in a fiction lane, or a title whose authoritative genre framing and own synopsis/review clearly point to another primary lane. Do not mass-fill optional `genres`, normalize every title to the first external genre, or rewrite an intentional ambiguous classification from a weak signal.
+- For every accepted correction, update `category` and supporting `genres` coherently, preserve intentional `subgenres` blanks, and re-check meter priority. Secondary `genres` never activate a meter and a meter request never justifies a wrong category.
+- If the user explicitly supplies a score for a named movie, verify the category first, then add only a bounded slug-based entry to the relevant central `src/lib/*metro.ts` override map and a regression assertion in `scripts/editorial-meters.test.mjs`. Never add a per-movie score field.
+
+Large `--all` passes can spend most of their time on sequential third-party YouTube checks. After bounded retry, classify those timeouts as external findings and complete the deterministic catalog pass with `--all --skip-youtube`; retain the no-skip result for trailer evidence and do not downgrade title/year mismatches.
 
 3. Editorial originality is a hard stop. Every `synopsis` and `review` must be 100% AI-written from scratch for its movie: source material can establish facts, never supply prose. Reject copied, translated, close-paraphrased, template-shaped, verdict-led, recycled, or interchangeable copy. The audit script's duplicate and marker findings require a rewrite, not a waiver.
 
@@ -45,6 +56,7 @@ Do not read whole catalogs or manually repeat passing checks. For each failure, 
 node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate <path>
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <path>
 npm run check
+npm run test:editorial-meters
 npm run catalog:movies
 npm run catalog:movies:check
 npm run update-upcoming-releases
@@ -61,7 +73,7 @@ After `npm run build`, use Playwright on the actual movie route(s), scrolling ea
 
 The same candidate list must also be checked for the `Guerra` filter. Confirm that every intentional `Bélica` inclusion is rendered by the `guerra` catalog facet and that context-only titles remain excluded; do not fix a taxonomy finding by editing site code.
 
-Report candidate paths, failures/fixes, platform evidence matrix, people-audit result, validations, and explicit confirmation that source copy was not reused and no forbidden paths changed. Do not hide nonblocking birth-date or image-host warnings: classify them and link them to the evidence ledger. If publication was requested, verify the remote SHA/workflow/live slug and finish on a clean synchronized `main`.
+Report candidate paths, total-catalog count when applicable, the semantic genre matrix and confidence decisions, failures/fixes, platform evidence matrix, people-audit result, validations, and explicit confirmation that source copy was not reused and no forbidden paths changed. Do not hide nonblocking birth-date or image-host warnings: classify them and link them to the evidence ledger. If publication was requested, verify the remote SHA/workflow/live slug and finish on a clean synchronized `main`.
 
 For a batch, pass every candidate explicitly; do not let an untracked-file glob silently decide the audit set. Keep the same list for the pre-build no-skip audit and the post-build route audit, and report agreement between manifest count, source-file count, and audited candidate count.
 

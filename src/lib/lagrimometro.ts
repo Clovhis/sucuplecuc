@@ -17,6 +17,7 @@ const SCORE_OVERRIDES: Record<string, number> = {
 	'the-shawshank-redemption-1994': 83,
 	'the-whale-2022': 93,
 	'titanic-1997': 96,
+	'no-se-desea-buena-suerte-2026': 99,
 	'terms-of-endearment-1983': 97,
 	'up-2009': 88,
 };

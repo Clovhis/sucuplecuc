@@ -3,7 +3,11 @@ import assert from 'node:assert/strict';
 import { getCagazometroLabel } from '../src/lib/cagazometro.ts';
 import { getExplosiometroLabel } from '../src/lib/explosiometro.ts';
 import { getJajametroLabel } from '../src/lib/jajametro.ts';
-import { getLagrimometroLabel } from '../src/lib/lagrimometro.ts';
+import {
+	getLagrimometroLabel,
+	getLagrimometroScore,
+	shouldShowLagrimometro,
+} from '../src/lib/lagrimometro.ts';
 import { getSangrometroLabel } from '../src/lib/sangrometro.ts';
 
 const meterCases = [
@@ -84,5 +88,13 @@ for (const { name, getLabel, labels } of meterCases) {
 		assert.equal(getLabel(score), expected, `${name} ${score}%`);
 	}
 }
+
+const noSeDeseaBuenaSuerte = {
+	slug: 'no-se-desea-buena-suerte-2026',
+	category: 'Drama',
+	genres: ['Drama', 'Comedia', 'Música'],
+};
+assert.equal(shouldShowLagrimometro(noSeDeseaBuenaSuerte), true);
+assert.equal(getLagrimometroScore(noSeDeseaBuenaSuerte), 99);
 
 console.log('Editorial meter label self-tests passed.');

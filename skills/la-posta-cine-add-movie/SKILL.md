@@ -9,7 +9,7 @@ Create one movie entry or an explicitly requested batch. Work quietly; send one 
 
 ## Scope
 
-- Edit only `src/data/movies/**`, `src/data/people.json`, `public/people/**`, and generated catalog references. Never change UI, routes, styles, build config, workflow files, Share, Comunidad, or reaction assets for a movie load.
+- Edit only `src/data/movies/**`, `src/data/people.json`, `public/people/**`, and generated catalog references. Never change UI, routes, styles, build config, workflow files, Share, Comunidad, or reaction assets for a movie load. A title-specific meter score explicitly requested by the user is the sole code exception: update only the central `src/lib/*metro.ts` override map and its regression test, never a per-movie meter field.
 - Create a `feature/movie-<slug>` branch from an up-to-date `main`; never commit directly to `main`. Do not stash or overwrite unrelated changes.
 - A correct slug automatically enables Share, Comunidad, ratings, recommendation blocks, and the verdict reaction. Do not create per-movie fields or external records for any of them.
 - If title/year is ambiguous, ask one question before researching. Otherwise extract feedback, requested platform/premiere intent, and an explicit verdict label from the request.
@@ -20,6 +20,14 @@ Create one movie entry or an explicitly requested batch. Work quietly; send one 
 - `Guerra` by itself is an inherited broad/context tag and does not activate the home filter. Never add `Bélica` from a title or a passing mention of conflict. Validate the complete premise and editorial text first.
 - Include world wars, Vietnam and other conflicts or operations such as *Black Hawk Down* when the military conflict is the actual subject. Leave the tag out of romances, espionage or political dramas, comedies, science-fiction/superhero stories, and films where war is only the backdrop or historical setting.
 - For an existing movie revalidation, preserve an intentional omission and flag the decision in the evidence ledger when the conflict is incidental. For a new true war film, add `Bélica` to `genres`, run the auditor, and confirm that the Guerra result includes the title without pulling in context-only entries.
+
+## Primary genre semantics
+
+- Treat `category` as the primary editorial lane. It is not automatically the first `genres` value, and it must never be selected only to make Lagrimómetro, Jajámetro, Cagazómetro or Explosiómetro appear.
+- Before creating or revalidating a title, record `category`, supporting `genres`, the synopsis/review signals, and one trustworthy source for the film's framing. Use the source plus the film's actual narrative and medium to decide the primary lane.
+- Correct high-confidence contradictions such as live action classified as `Animacion`/`Anime`, a documentary or making-of special classified as fiction, or a source-and-copy consensus that clearly identifies another primary lane. Preserve ambiguous but defensible choices; do not mass-fill optional `genres` or normalize every title to the first external genre.
+- When a correction is approved, change `category` and supporting `genres` together, preserve intentional `subgenres` blanks, and rerun the full candidate audit. Secondary genres can improve precision but never activate a meter.
+- For a request to review the complete catalog, freeze an all-files manifest, run `audit_recent_movies.cjs --all`, and keep a semantic evidence matrix instead of treating the structural auditor's pass as proof of genre correctness.
 
 ## Anti-regression gates
 
@@ -102,6 +110,7 @@ npm run catalog:movies
 npm run catalog:movies:check
 npm run update-upcoming-releases
 npm run check
+npm run test:editorial-meters
 npm run audit:movie-people -- --movie <slug>
 npm run validate:content
 npm run build
@@ -117,6 +126,8 @@ After the build, use Playwright against the actual movie route(s), not only the 
 When the candidate files are still uncommitted, pass them explicitly. `npm run validate:content` compares `origin/main...HEAD` and can report zero changed movie files while the working tree contains the real candidate set; never use that base diff as the only batch-count check. If a full auditor exposes pre-existing trailer/content errors, compare the baseline findings with the candidate findings and block only new regressions for a poster-only revalidation while reporting inherited defects unchanged.
 
 Abort rather than repair site code when a check fails. Confirm every changed file is in scope, inspect the focused diff, then stage only the allowed change set. Commit/push only if the user requested publishing; otherwise leave the validated branch ready for review.
+
+If the user explicitly supplies a score for a named movie during a revalidation, verify the primary category first. Keep the score bounded and slug-specific in the central meter override map, add a regression assertion to `scripts/editorial-meters.test.mjs`, and rerun `npm run test:editorial-meters`; never put `lagrimometroScore` or an equivalent field in the movie JSON.
 
 ## Final response
 

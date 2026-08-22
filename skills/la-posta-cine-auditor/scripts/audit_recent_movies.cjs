@@ -1746,7 +1746,14 @@ function analyzeYoutubeTitle(movie, embedTitle) {
 			};
 		})
 		.filter((entry) => entry.title);
-	const mentionedYears = [...String(embedTitle || '').matchAll(/\b(19|20)\d{2}\b/g)].map((match) => Number(match[0]));
+	const titleYears = new Set(
+		titleAnalyses.flatMap((entry) => [...String(entry.title || '').matchAll(/\b(19|20)\d{2}\b/g)].map((match) => Number(match[0]))),
+	);
+	// A year embedded in the film title (for example, "Argentina, 1985" or "1917")
+	// identifies the title and is not evidence that the trailer belongs to that release year.
+	const mentionedYears = [...String(embedTitle || '').matchAll(/\b(19|20)\d{2}\b/g)]
+		.map((match) => Number(match[0]))
+		.filter((year) => !titleYears.has(year));
 	const matchedVariant = titleAnalyses.find((entry) => entry.titleLooksRelated);
 
 	return {
