@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-22. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1398
+Total de peliculas: 1412
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -183,6 +183,7 @@ Total de peliculas: 1398
 | 2025 | Drop | drop-2025 | Thriller | HBO Max | +13 |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV | +16 |
 | 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Otras plataformas | +16 |
+| 2025 | El conjuro 4: Últimos ritos | el-conjuro-4-ultimos-ritos-2025 | Terror | HBO Max | +13 |
 | 2025 | El gran arco | el-gran-arco-2025 | Drama | Otras plataformas | ATP |
 | 2025 | El gran falsificador | el-gran-falsificador-2025 | Drama | Cine | +13 |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
@@ -440,6 +441,7 @@ Total de peliculas: 1398
 | 2021 | Drive my car | drive-my-car-2021 | Drama | Apple TV | +13 |
 | 2021 | Dune: Part One | dune-2021 | Acción | HBO Max | +13 |
 | 2021 | El Caballero Verde | el-caballero-verde-2021 | Fantasia | Prime Video + HBO Max | +18 |
+| 2021 | El conjuro 3: El diablo me obligó a hacerlo | el-conjuro-3-el-diablo-me-obligo-a-hacerlo-2021 | Terror | HBO Max | +13 |
 | 2021 | El perro que no calla | el-perro-que-no-calla-2021 | Drama | CINE.AR | ATP |
 | 2021 | El último duelo | el-ultimo-duelo-2021 | Drama | Paramount Plus + Disney Plus | +16 |
 | 2021 | Encanto | encanto-2021 | Animación | Disney Plus | ATP |
@@ -454,6 +456,7 @@ Total de peliculas: 1398
 | 2021 | Jungle Cruise | jungle-cruise-2021 | Acción | Disney Plus | +13 |
 | 2021 | King Richard | king-richard-2021 | Biográfica | HBO Max | +13 |
 | 2021 | La peor persona del mundo | la-peor-persona-del-mundo-2021 | Drama | Prime Video | +16 |
+| 2021 | La purga por siempre | la-purga-por-siempre-2021 | Terror | HBO Max | +16 |
 | 2021 | Luca | luca-2021 | Animación | Disney Plus | ATP |
 | 2021 | Memoria | memoria-2021 | Drama | Prime Video | +13 |
 | 2021 | Nightmare Alley | nightmare-alley-2021 | Crimen | Disney Plus | +16 |
@@ -526,6 +529,7 @@ Total de peliculas: 1398
 | 2019 | The Vast of Night | the-vast-of-night-2019 | Ciencia ficcion | Otras plataformas | +13 |
 | 2019 | Un día lluvioso en Nueva York | a-rainy-day-in-new-york-2019 | Romance | Otras plataformas | +13 |
 | 2019 | Velvet Buzzsaw | velvet-buzzsaw-2019 | Terror | Netflix | +16 |
+| 2018 | 12 horas para sobrevivir: El inicio | 12-horas-para-sobrevivir-el-inicio-2018 | Terror | Apple TV | +16 |
 | 2018 | Aniquilación | aniquilacion-2018 | Ciencia ficcion | Apple TV | +16 |
 | 2018 | Ant-Man and the Wasp | ant-man-and-the-wasp-2018 | Accion | Disney Plus | +13 |
 | 2018 | Aquaman | aquaman-2018 | Accion | HBO Max | +13 |
@@ -589,6 +593,7 @@ Total de peliculas: 1398
 | 2017 | Wonder Wheel | wonder-wheel-2017 | Drama | Otras plataformas | +16 |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | HBO Max | +13 |
 | 2017 | Zama | zama-2017 | Drama | CINE.AR | +18 |
+| 2016 | 12 horas para sobrevivir: El año de la elección | 12-horas-para-sobrevivir-el-ano-de-la-eleccion-2016 | Terror | HBO Max | +16 |
 | 2016 | A Silent Voice | a-silent-voice-2016 | Anime | Prime Video | +13 |
 | 2016 | Arrival | arrival-2016 | Ciencia ficcion | Otras plataformas | +13 |
 | 2016 | Batman v Superman: Dawn of Justice | batman-v-superman-dawn-of-justice-2016 | Accion | Otras plataformas | +13 |
@@ -599,6 +604,7 @@ Total de peliculas: 1398
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus | +17 |
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus | +13 |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus | +13 |
+| 2016 | El conjuro 2 | el-conjuro-2-2016 | Terror | HBO Max | +16 |
 | 2016 | Fantastic Beasts and Where to Find Them | fantastic-beasts-and-where-to-find-them-2016 | Fantasia | HBO Max | +12 |
 | 2016 | La doncella | la-doncella-2016 | Thriller | Otras plataformas | +18 |
 | 2016 | La La Land | la-la-land-2016 | Musical | Prime Video | +13 |
@@ -642,6 +648,7 @@ Total de peliculas: 1398
 | 2015 | The Human Centipede 3 (Final Sequence) | the-human-centipede-3-final-sequence-2015 | Terror | Otras plataformas | +18 |
 | 2015 | The Ridiculous 6 | the-ridiculous-6-2015 | Comedia | Netflix | +16 |
 | 2015 | Truman | truman-2015 | Drama | Disney Plus | +12 |
+| 2014 | 12 horas para sobrevivir | 12-horas-para-sobrevivir-2014 | Terror | HBO Max | +16 |
 | 2014 | Betibú | betibu-2014 | Thriller | Otras plataformas | +12 |
 | 2014 | Big Eyes | big-eyes-2014 | Drama | Otras plataformas | +13 |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus | ATP |
@@ -674,6 +681,7 @@ Total de peliculas: 1398
 | 2013 | Blue Jasmine | blue-jasmine-2013 | Drama | Otras plataformas | +16 |
 | 2013 | Coherencia | coherencia-2013 | Ciencia ficcion | Apple TV | +13 |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max | ATP |
+| 2013 | El conjuro | el-conjuro-2013 | Terror | HBO Max | +16 |
 | 2013 | El increíble Burt Wonderstone | el-increible-burt-wonderstone-2013 | Comedia | Apple TV | +13 |
 | 2013 | El lobo de Wall Street | the-wolf-of-wall-street-2013 | Crimen | Otras plataformas | ATP |
 | 2013 | Enemy | enemy-2013 | Thriller | Otras plataformas | +16 |
@@ -682,6 +690,7 @@ Total de peliculas: 1398
 | 2013 | Her | her-2013 | Romance | HBO Max + Apple TV | +13 |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus | +13 |
 | 2013 | La maldición de Chucky | curse-of-chucky-2013 | Terror | HBO Max | +17 |
+| 2013 | La noche de la expiación | la-noche-de-la-expiacion-2013 | Terror | HBO Max | +16 |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max | +13 |
 | 2013 | Sharknado | sharknado-2013 | Terror | Prime Video | +13 |
@@ -711,6 +720,7 @@ Total de peliculas: 1398
 | 2012 | Wolf Children | wolf-children-2012 | Anime | HBO Max | ATP |
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus | +13 |
 | 2011 | Cruzadas | cruzadas-2011 | Comedia | Otras plataformas | +13 |
+| 2011 | Destino final 5 | destino-final-5-2011 | Terror | HBO Max | +16 |
 | 2011 | Drive | drive-2011 | Accion | Paramount Plus + Prime Video | +13 |
 | 2011 | Fast Five | fast-five-2011 | Accion | Otras plataformas | +13 |
 | 2011 | George Harrison: Living in the Material World | george-harrison-living-in-the-material-world-2011 | Documental | Otras plataformas | ATP |
@@ -759,6 +769,7 @@ Total de peliculas: 1398
 | 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
 | 2010 | Una carta a Elia | a-letter-to-elia-2010 | Documental | Otras plataformas | ATP |
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
+| 2009 | Destino final 4 | destino-final-4-2009 | Terror | HBO Max | +16 |
 | 2009 | Distrito 9 | districte-9-2009 | Ciencia ficcion | HBO Max + Apple TV | +13 |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus | +16 |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix | +13 |
@@ -829,6 +840,7 @@ Total de peliculas: 1398
 | 2007 | Yo los declaro marido y Larry | i-now-pronounce-you-chuck-and-larry-2007 | Comedia | Apple TV | +13 |
 | 2006 | Casino Royale | casino-royale-2006 | Accion | Netflix | +12 |
 | 2006 | Click | click-2006 | Comedia | Apple TV + HBO Max | +17 |
+| 2006 | Destino final 3 | destino-final-3-2006 | Terror | HBO Max | +13 |
 | 2006 | El gran truco | the-prestige-2006 | Thriller | Apple TV | +13 |
 | 2006 | El laberinto del fauno | el-laberinto-del-fauno-2006 | Fantasia | Otras plataformas | +18 |
 | 2006 | La fuente de la vida | la-fuente-de-la-vida-2006 | Drama | Prime Video | +13 |
@@ -899,6 +911,7 @@ Total de peliculas: 1398
 | 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Otras plataformas | +13 |
 | 2003 | Big Fish | big-fish-2003 | Drama | Otras plataformas | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
+| 2003 | Destino final 2 | destino-final-2-2003 | Terror | HBO Max | +16 |
 | 2003 | Elephant | elephant-2003 | Drama | HBO Max | +16 |
 | 2003 | Finding Nemo | finding-nemo-2003 | Animacion | Disney Plus | ATP |
 | 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | HBO Max | +17 |
@@ -966,6 +979,7 @@ Total de peliculas: 1398
 | 2000 | Amores perros | amores-perros-2000 | Drama | Netflix | +18 |
 | 2000 | Casi famosos | casi-famosos-2000 | Drama | Apple TV | +13 |
 | 2000 | Deseando amar | deseando-amar-2000 | Romance | Otras plataformas | +13 |
+| 2000 | Destino final | destino-final-2000 | Terror | HBO Max | +13 |
 | 2000 | El Grinch | el-grinch-2000 | Fantasia | HBO Max | ATP |
 | 2000 | El hijo del Diablo | little-nicky-2000 | Comedia | Apple TV + HBO Max | +13 |
 | 2000 | Gladiator | gladiator-2000 | Drama | Otras plataformas | +17 |
