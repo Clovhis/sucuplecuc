@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-21. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-22. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1373
+Total de peliculas: 1398
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -413,6 +413,7 @@ Total de peliculas: 1373
 | 2022 | Pearl | pearl-2022 | Terror | Otras plataformas | +13 |
 | 2022 | Saint Omer, el pueblo contra Laurence Coly | saint-omer-el-pueblo-contra-laurence-coly-2022 | Drama | Otras plataformas | +16 |
 | 2022 | Scream | scream-2022 | Terror | Paramount Plus | +16 |
+| 2022 | Sonic 2: La película | sonic-2-la-pelicula-2022 | Accion | Otras plataformas | ATP |
 | 2022 | Suzume | suzume-2022 | Anime | Crunchyroll | ATP |
 | 2022 | Tár | tar-2022 | Drama | Otras plataformas | +17 |
 | 2022 | Terrifier 2 | terrifier-2-2022 | Gore | Otras plataformas | +18 |
@@ -484,6 +485,7 @@ Total de peliculas: 1373
 | 2020 | Nomadland | nomadland-2020 | Drama | Disney Plus | +17 |
 | 2020 | Palm Springs | palm-springs-2020 | Comedia romantica | Disney Plus | +16 |
 | 2020 | Rifkin's Festival | rifkin-s-festival-2020 | Comedia | Otras plataformas | +13 |
+| 2020 | Sonic: La película | sonic-la-pelicula-2020 | Accion | Paramount Plus | ATP |
 | 2020 | Tenet | tenet-2020 | Ciencia ficcion | HBO Max + DGO | +13 |
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus | +13 |
 | 2020 | Wolfwalkers: Espíritu de lobo | wolfwalkers-espiritu-de-lobo-2020 | Animacion | Apple TV | ATP |
@@ -593,6 +595,7 @@ Total de peliculas: 1373
 | 2016 | Café Society | cafe-society-2016 | Drama | Otras plataformas | +13 |
 | 2016 | Capitán Kóblic | capitan-koblic-2016 | Drama | Otras plataformas | +16 |
 | 2016 | Captain America: Civil War | captain-america-civil-war-2016 | Accion | Disney Plus | +13 |
+| 2016 | Crímenes oscuros | crimenes-oscuros-2016 | Thriller | Otras plataformas | +18 |
 | 2016 | Deadpool | deadpool-2016 | Accion | Disney Plus | +17 |
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus | +13 |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus | +13 |
@@ -663,6 +666,7 @@ Total de peliculas: 1373
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max | +16 |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus | +13 |
 | 2014 | The Grand Budapest Hotel | the-grand-budapest-hotel-2014 | Comedia | Disney Plus | +13 |
+| 2014 | Tonto y retonto 2 | tonto-y-retonto-2-2014 | Comedia | Otras plataformas | +13 |
 | 2014 | What We Do in the Shadows | what-we-do-in-the-shadows-2014 | Comedia | Otras plataformas | +17 |
 | 2014 | Whiplash: Música y obsesión | whiplash-2014 | Drama | HBO Max + Apple TV | +13 |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus | +13 |
@@ -670,6 +674,7 @@ Total de peliculas: 1373
 | 2013 | Blue Jasmine | blue-jasmine-2013 | Drama | Otras plataformas | +16 |
 | 2013 | Coherencia | coherencia-2013 | Ciencia ficcion | Apple TV | +13 |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max | ATP |
+| 2013 | El increíble Burt Wonderstone | el-increible-burt-wonderstone-2013 | Comedia | Apple TV | +13 |
 | 2013 | El lobo de Wall Street | the-wolf-of-wall-street-2013 | Crimen | Otras plataformas | ATP |
 | 2013 | Enemy | enemy-2013 | Thriller | Otras plataformas | +16 |
 | 2013 | Fast & Furious 6 | fast-and-furious-6-2013 | Accion | Otras plataformas | +13 |
@@ -718,6 +723,7 @@ Total de peliculas: 1373
 | 2011 | La invención de Hugo | hugo-2011 | Aventura | Otras plataformas | ATP |
 | 2011 | La piel que habito | la-piel-que-habito-2011 | Terror | Netflix | +16 |
 | 2011 | Las aventuras de Tintín: El secreto del unicornio | the-adventures-of-tintin-2011 | Animacion | Otras plataformas | ATP |
+| 2011 | Los pingüinos de papá | los-pinguinos-de-papa-2011 | Comedia | Otras plataformas | ATP |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Otras plataformas | +13 |
 | 2011 | Medianoche en París | midnight-in-paris-2011 | Fantasia | Otras plataformas | +13 |
 | 2011 | Mission: Impossible - Ghost Protocol | mission-impossible-ghost-protocol-2011 | Accion | Disney Plus | +13 |
@@ -761,9 +767,11 @@ Total de peliculas: 1373
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max | +12 |
 | 2009 | Hazme reír | funny-people-2009 | Drama | Apple TV | +17 |
+| 2009 | I Love You Phillip Morris | i-love-you-phillip-morris-2009 | Drama | Otras plataformas | +16 |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix | +16 |
 | 2009 | Jennifer's Body | jennifer-s-body-2009 | Terror | Disney Plus + Netflix | +16 |
 | 2009 | La cinta blanca | la-cinta-blanca-2009 | Drama | Apple TV | +17 |
+| 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
 | 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Apple TV | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
 | 2009 | Saw VI | saw-vi-2009 | Gore | Otras plataformas | +18 |
@@ -774,8 +782,10 @@ Total de peliculas: 1373
 | 2009 | Viernes 13 | friday-the-13th-2009 | Terror | Mercado Play | +17 |
 | 2009 | Watchmen | watchmen-2009 | Thriller | HBO Max + Mercado Play | +17 |
 | 2009 | X-Men Origins: Wolverine | x-men-origins-wolverine-2009 | Accion | Disney Plus | +13 |
+| 2008 | ¡Sí, señor! | si-senor-2008 | Comedia | Otras plataformas | +13 |
 | 2008 | Cuentos que no son cuento | bedtime-stories-2008 | Fantasia | Disney Plus | ATP |
 | 2008 | Gran Torino | gran-torino-2008 | Drama | Netflix + Prime Video | +13 |
+| 2008 | Horton y el mundo de los Quién | horton-y-el-mundo-de-los-quien-2008 | Animacion | Disney Plus | ATP |
 | 2008 | Indiana Jones and the Kingdom of the Crystal Skull | indiana-jones-and-the-kingdom-of-the-crystal-skull-2008 | Aventura | Otras plataformas | +13 |
 | 2008 | Ip Man | ip-man-2008 | Accion | Otras plataformas | +13 |
 | 2008 | Iron Man | iron-man-2008 | Accion | Disney Plus | +13 |
@@ -803,6 +813,7 @@ Total de peliculas: 1373
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max | +12 |
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
 | 2007 | La esperanza vive en mí | reign-over-me-2007 | Drama | Apple TV + Netflix | +17 |
+| 2007 | Número 23: La revelación | numero-23-la-revelacion-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Paranormal Activity | paranormal-activity-2007 | Terror | Otras plataformas | +17 |
 | 2007 | Persépolis | persepolis-2007 | Animacion | Apple TV | +13 |
 | 2007 | Petróleo sangriento | pozos-de-ambicion-2007 | Drama | Paramount Plus + Apple TV | +13 |
@@ -851,6 +862,7 @@ Total de peliculas: 1373
 | 2005 | Hostel | hostel-2005 | Gore | Otras plataformas | +18 |
 | 2005 | La guerra de los mundos | war-of-the-worlds-2005 | Ciencia ficcion | Otras plataformas | +13 |
 | 2005 | La propuesta | la-propuesta-2005 | Western | Prime Video | +13 |
+| 2005 | Las locuras de Dick y Jane | las-locuras-de-dick-y-jane-2005 | Comedia | Otras plataformas | +13 |
 | 2005 | Match Point | match-point-2005 | Thriller | Otras plataformas | +16 |
 | 2005 | Múnich | munich-2005 | Thriller | Otras plataformas | +17 |
 | 2005 | No Direction Home: Bob Dylan | no-direction-home-bob-dylan-2005 | Documental | Otras plataformas | ATP |
@@ -883,6 +895,7 @@ Total de peliculas: 1373
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Otras plataformas | ATP |
 | 2004 | The Incredibles | the-incredibles-2004 | Animacion | Disney Plus | ATP |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max | +16 |
+| 2004 | Una serie de eventos desafortunados | una-serie-de-eventos-desafortunados-2004 | Fantasia | Otras plataformas | ATP |
 | 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Otras plataformas | +13 |
 | 2003 | Big Fish | big-fish-2003 | Drama | Otras plataformas | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
@@ -903,6 +916,7 @@ Total de peliculas: 1373
 | 2003 | The Matrix Reloaded | matrix-reloaded-2003 | Ciencia ficcion | HBO Max | +17 |
 | 2003 | The Matrix Revolutions | matrix-revolutions-2003 | Ciencia ficcion | Netflix | +17 |
 | 2003 | Todo lo demás | anything-else-2003 | Romance | Otras plataformas | +13 |
+| 2003 | Todopoderoso | todopoderoso-2003 | Comedia | Disney Plus | ATP |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus | +13 |
 | 2002 | Adaptation. El ladrón de orquídeas | adaptation-el-ladron-de-orquideas-2002 | Comedia | Apple TV | +13 |
 | 2002 | Atrápame si puedes | atrapame-si-puedes-2002 | Drama | Paramount Plus + Mercado Play | +13 |
@@ -947,10 +961,12 @@ Total de peliculas: 1373
 | 2001 | Spirited Away | spirited-away-2001 | Anime | Netflix | ATP |
 | 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Otras plataformas | +13 |
 | 2001 | The Lord of the Rings: The Fellowship of the Ring | the-lord-of-the-rings-the-fellowship-of-the-ring-2001 | Aventura | Otras plataformas | +13 |
+| 2001 | The Majestic | the-majestic-2001 | Drama | Apple TV | ATP |
 | 2001 | The Others | the-others-2001 | Terror | Otras plataformas | +13 |
 | 2000 | Amores perros | amores-perros-2000 | Drama | Netflix | +18 |
 | 2000 | Casi famosos | casi-famosos-2000 | Drama | Apple TV | +13 |
 | 2000 | Deseando amar | deseando-amar-2000 | Romance | Otras plataformas | +13 |
+| 2000 | El Grinch | el-grinch-2000 | Fantasia | HBO Max | ATP |
 | 2000 | El hijo del Diablo | little-nicky-2000 | Comedia | Apple TV + HBO Max | +13 |
 | 2000 | Gladiator | gladiator-2000 | Drama | Otras plataformas | +17 |
 | 2000 | Granujas de medio pelo | small-time-crooks-2000 | Comedia | Otras plataformas | +13 |
@@ -965,6 +981,7 @@ Total de peliculas: 1373
 | 2000 | Tigre y dragón | tigre-y-dragon-2000 | Accion | Netflix | +13 |
 | 2000 | Very Important Perros | very-important-perros-2000 | Comedia | Apple TV | ATP |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus | +13 |
+| 2000 | Yo, yo mismo e Irene | yo-yo-mismo-e-irene-2000 | Comedia | Disney Plus | +16 |
 | 1999 | Acordes y desacuerdos | sweet-and-lowdown-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Al límite | bringing-out-the-dead-1999 | Drama | Otras plataformas | +17 |
 | 1999 | Belleza americana | american-beauty-1999 | Drama | Paramount Plus + Apple TV | +13 |
@@ -974,6 +991,7 @@ Total de peliculas: 1373
 | 1999 | Garage Olimpo | garage-olimpo-1999 | Drama | CINE.AR | +18 |
 | 1999 | La milla verde | la-milla-verde-1999 | Drama | Prime Video | +17 |
 | 1999 | Magnolia | magnolia-1999 | Drama | Netflix + HBO Max | +13 |
+| 1999 | Man on the Moon | man-on-the-moon-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Matrix | the-matrix-1999 | Ciencia ficcion | HBO Max + Apple TV | +13 |
 | 1999 | Mi viaje a Italia | my-voyage-to-italy-1999 | Documental | Otras plataformas | ATP |
 | 1999 | Mundo grúa | mundo-grua-1999 | Drama | Netflix | +13 |
@@ -1011,12 +1029,14 @@ Total de peliculas: 1373
 | 1997 | Kundun | kundun-1997 | Drama | Otras plataformas | +13 |
 | 1997 | La vida es bella | la-vida-es-bella-1997 | Drama | Otras plataformas | +13 |
 | 1997 | Los Ángeles al desnudo | los-angeles-al-desnudo-1997 | Crimen | Paramount Plus | +16 |
+| 1997 | Mentiroso, mentiroso | mentiroso-mentiroso-1997 | Comedia | Apple TV | +13 |
 | 1997 | Perfect Blue | perfect-blue-1997 | Anime | HBO Max | +16 |
 | 1997 | Princess Mononoke | princess-mononoke-1997 | Anime | Netflix | ATP |
 | 1997 | Scream 2 | scream-2-1997 | Terror | Paramount Plus | +16 |
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video | +13 |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus | +13 |
 | 1996 | A prueba de balas | bulletproof-1996 | Accion | Apple TV | +17 |
+| 1996 | El insoportable | el-insoportable-1996 | Comedia | Apple TV | +13 |
 | 1996 | Fargo. Secuestro voluntario | fargo-secuestro-voluntario-1996 | Crimen | Prime Video + Apple TV | +18 |
 | 1996 | From Dusk Till Dawn | from-dusk-till-dawn-1996 | Terror | Otras plataformas | +18 |
 | 1996 | Happy Gilmore | happy-gilmore-1996 | Comedia | Apple TV | +13 |
@@ -1026,6 +1046,7 @@ Total de peliculas: 1373
 | 1996 | The English Patient | the-english-patient-1996 | Drama | Otras plataformas | +17 |
 | 1996 | Todos dicen I Love You | everyone-says-i-love-you-1996 | Musical | Otras plataformas | +13 |
 | 1996 | Trainspotting | trainspotting-1996 | Drama | Netflix | +13 |
+| 1995 | Ace Ventura, un loco en África | ace-ventura-un-loco-en-africa-1995 | Comedia | Apple TV | +13 |
 | 1995 | Antes de amanecer | antes-de-amanecer-1995 | Romance | Apple TV | ATP |
 | 1995 | Batman Forever | batman-forever-1995 | Accion | Netflix | +13 |
 | 1995 | Billy Madison | billy-madison-1995 | Comedia | Apple TV | +13 |
@@ -1044,16 +1065,19 @@ Total de peliculas: 1373
 | 1995 | Showgirls | showgirls-1995 | Drama | Prime Video + Apple TV | +18 |
 | 1995 | Toy Story | toy-story-1995 | Animacion | Disney Plus | ATP |
 | 1995 | Un viaje personal con Martin Scorsese a través del cine americano | a-personal-journey-with-martin-scorsese-through-american-movies-1995 | Documental | Otras plataformas | ATP |
+| 1994 | Ace Ventura, un detective diferente | ace-ventura-un-detective-diferente-1994 | Comedia | Netflix | +13 |
 | 1994 | Balas sobre Broadway | bullets-over-broadway-1994 | Comedia | Otras plataformas | +13 |
 | 1994 | Chungking Express | chungking-express-1994 | Romance | Otras plataformas | +13 |
 | 1994 | Dependientes | dependientes-1994 | Comedia | Apple TV | +16 |
 | 1994 | Ed Wood | ed-wood-1994 | Biografica | Otras plataformas | +17 |
 | 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Paramount Plus + Mercado Play | +13 |
 | 1994 | Hoop Dreams | hoop-dreams-1994 | Documental | Otras plataformas | ATP |
+| 1994 | La máscara | la-mascara-1994 | Comedia | Prime Video + HBO Max | ATP |
 | 1994 | La nueva pesadilla de Wes Craven | wes-craven-s-new-nightmare-1994 | Terror | Otras plataformas | +17 |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix | +18 |
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
+| 1994 | Tonto y retonto | tonto-y-retonto-1994 | Comedia | Apple TV | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
 | 1993 | Funes, un gran amor | funes-un-gran-amor-1993 | Drama | Otras plataformas | +18 |
 | 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video + Netflix | +13 |
@@ -1167,6 +1191,7 @@ Total de peliculas: 1373
 | 1985 | Los Goonies | los-goonies-1985 | Aventura | Apple TV | ATP |
 | 1985 | Mad Max Beyond Thunderdome | mad-max-beyond-thunderdome-1985 | Accion | HBO Max | +15 |
 | 1985 | Masacre (Ven y mira) | masacre-ven-y-mira-1985 | Drama | Otras plataformas | +18 |
+| 1985 | Mordiscos peligrosos | mordiscos-peligrosos-1985 | Comedia | Otras plataformas | +13 |
 | 1985 | Out of Africa | out-of-africa-1985 | Drama | Otras plataformas | ATP |
 | 1985 | Pee-wee's Big Adventure | pee-wees-big-adventure-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | Rocky IV | rocky-iv-1985 | Drama | Otras plataformas | ATP |
