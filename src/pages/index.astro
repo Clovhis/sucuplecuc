@@ -6,21 +6,30 @@ import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import HomePrimaryCatalog from '../components/HomePrimaryCatalog.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
 import UpcomingReleases2027 from '../components/UpcomingReleases2027.astro';
+import WeeklyRecommendationsCarousel from '../components/WeeklyRecommendationsCarousel.astro';
+import { WEEKLY_RECOMMENDATIONS } from '../data/weeklyRecommendations.generated';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
 	getLatestReviewMovies,
 	getHomeMovieShowcase,
 	getMovies,
+	getMoviePath,
 	getPosterUrl,
 	getCurrentTheatricalMovieReleases,
 	getCurrentStreamingMovieReleases,
 	getSubgenreFilterOptions,
 	getUpcomingMovieReleases,
+	getVerdictBadgeClass,
+	getVerdictLabel,
 	RECOMMENDATION_GENRE_OPTIONS,
 } from '../lib/movies';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
+import {
+	WEEKLY_RECOMMENDATION_ERA_LABELS,
+	getWeeklyRecommendationPlatform,
+} from '../lib/weekly-recommendations';
 import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
@@ -68,6 +77,27 @@ const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => ({
 	posterUrl: getPosterUrl(movie.poster),
 	url: `${import.meta.env.BASE_URL}peliculas/${movie.slug}/`,
 }));
+const weeklyRecommendations = WEEKLY_RECOMMENDATIONS.recommendations.flatMap((entry) => {
+	const movie = movies.find((candidate) => candidate.slug === entry.slug);
+	const platform = movie ? getWeeklyRecommendationPlatform(movie) : null;
+	if (!movie || !platform) {
+		return [];
+	}
+
+	return [
+		{
+			slug: movie.slug,
+			title: movie.title,
+			year: movie.year,
+			posterUrl: getPosterUrl(movie.poster),
+			movieUrl: getMoviePath(movie.slug),
+			platform,
+			verdictLabel: getVerdictLabel(movie),
+			verdictClass: getVerdictBadgeClass(movie),
+			eraLabel: WEEKLY_RECOMMENDATION_ERA_LABELS[entry.era],
+		},
+	];
+});
 const movieCountLabel = new Intl.NumberFormat('es-AR').format(movies.length);
 const personCountLabel = new Intl.NumberFormat('es-AR').format(featuredPeople.length);
 const pageTitle = 'Cine Posta (Cineposta) | Reseñas cortas y sin chamuyo de películas';
@@ -433,6 +463,12 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 									set:html={JSON.stringify(editorialRankingPools)}
 								></script>
 							</section>
+						)
+					}
+
+					{
+						weeklyRecommendations.length > 0 && (
+							<WeeklyRecommendationsCarousel recommendations={weeklyRecommendations} />
 						)
 					}
 

@@ -1,0 +1,133 @@
+---
+import '../styles/weekly-recommendations.css';
+import PlatformBadge from './PlatformBadge.astro';
+
+interface WeeklyRecommendationCard {
+	slug: string;
+	title: string;
+	year: number;
+	posterUrl: string;
+	movieUrl: string;
+	platform: string;
+	verdictLabel: string;
+	verdictClass: string;
+	eraLabel: string;
+}
+
+interface Props {
+	recommendations: WeeklyRecommendationCard[];
+	sectionId?: string;
+}
+
+const { recommendations, sectionId = 'weekly-recommendations' } = Astro.props as Props;
+const titleId = `${sectionId}-title`;
+---
+
+{
+	recommendations.length > 0 && (
+		<section
+			id={sectionId}
+			class="weekly-recommendations fade-up"
+			style="--item-delay: 135ms;"
+			aria-labelledby={titleId}
+			data-weekly-recommendations-carousel
+		>
+			<header class="weekly-recommendations__header">
+				<div class="weekly-recommendations__heading">
+					<p class="weekly-recommendations__eyebrow">Selección semanal</p>
+					<h2 id={titleId}>Recomendadas de la semana</h2>
+					<p class="weekly-recommendations__description">
+						Mezclando novedades y películas que siguen garpando con los años.
+					</p>
+				</div>
+				<div
+					class="weekly-recommendations__controls"
+					role="group"
+					aria-label="Navegar recomendaciones de la semana"
+				>
+					<button
+						class="weekly-recommendations__arrow"
+						type="button"
+						aria-label="Ver recomendaciones anteriores"
+						data-weekly-recommendations-previous
+					>
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14.5 5-7 7 7 7" /></svg>
+					</button>
+					<button
+						class="weekly-recommendations__arrow"
+						type="button"
+						aria-label="Ver más recomendaciones"
+						data-weekly-recommendations-next
+					>
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 5 7 7-7 7" /></svg>
+					</button>
+				</div>
+			</header>
+
+			<div
+				class="weekly-recommendations__viewport"
+				data-weekly-recommendations-viewport
+				tabindex="0"
+				role="region"
+				aria-label="Carrusel de películas recomendadas de la semana"
+			>
+				<ol class="weekly-recommendations__list" aria-label="Películas recomendadas de la semana">
+					{recommendations.map((recommendation) => (
+						<li class="weekly-recommendations__item">
+							<article
+								class="weekly-recommendations__card"
+								data-weekly-recommendation-card
+								data-weekly-recommendation-era={recommendation.eraLabel}
+								data-weekly-recommendation-verdict={recommendation.verdictLabel}
+								data-weekly-recommendation-platform={recommendation.platform}
+							>
+								<a
+									class="weekly-recommendations__poster-link"
+									href={recommendation.movieUrl}
+									aria-label={`Ver la ficha de ${recommendation.title}`}
+									data-weekly-recommendation-poster
+								>
+									<span class="weekly-recommendations__poster-frame">
+										<img
+											class="weekly-recommendations__poster"
+											src={recommendation.posterUrl}
+											alt={`Póster de ${recommendation.title}`}
+											width="342"
+											height="513"
+											loading="lazy"
+											decoding="async"
+											referrerpolicy="no-referrer"
+										/>
+										<span class="weekly-recommendations__poster-shine" aria-hidden="true"></span>
+										<span class="weekly-recommendations__era">{recommendation.eraLabel}</span>
+									</span>
+								</a>
+
+								<div class="weekly-recommendations__body">
+									<div class="weekly-recommendations__meta">
+										<span>{recommendation.year}</span>
+										<span class="weekly-recommendations__dot" aria-hidden="true"></span>
+										<span>Plataforma</span>
+									</div>
+									<PlatformBadge platform={recommendation.platform} className="weekly-recommendations__platform" />
+									<h3 class="weekly-recommendations__title">
+										<a href={recommendation.movieUrl}>{recommendation.title}</a>
+									</h3>
+									<span class={`badge weekly-recommendations__verdict ${recommendation.verdictClass}`}>
+										{recommendation.verdictLabel}
+									</span>
+									<a class="weekly-recommendations__review-link" href={recommendation.movieUrl}>
+										<span>Ver ficha</span>
+										<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7" /></svg>
+									</a>
+								</div>
+							</article>
+						</li>
+					))}
+				</ol>
+			</div>
+		</section>
+	)
+}
+
+<script src="../scripts/weekly-recommendations.ts"></script>
