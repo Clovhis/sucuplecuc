@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1565
+Total de peliculas: 1570
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -503,6 +503,7 @@ Total de peliculas: 1565
 | 2020 | The New Mutants | the-new-mutants-2020 | Accion | Disney Plus | +13 |
 | 2020 | Wolfwalkers: Espíritu de lobo | wolfwalkers-espiritu-de-lobo-2020 | Animacion | Apple TV | ATP |
 | 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max + DGO | +13 |
+| 2019 | Aladdín | aladdin-2019 | Fantasía | Disney Plus | +13 |
 | 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus | +13 |
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus | +13 |
 | 2019 | Cats | cats-2019 | Musical | Apple TV | ATP |
@@ -619,6 +620,7 @@ Total de peliculas: 1565
 | 2016 | A Silent Voice | a-silent-voice-2016 | Anime | Prime Video | +13 |
 | 2016 | Arrival | arrival-2016 | Ciencia ficcion | Otras plataformas | +13 |
 | 2016 | Batman v Superman: Dawn of Justice | batman-v-superman-dawn-of-justice-2016 | Accion | Otras plataformas | +13 |
+| 2016 | Belleza inesperada | belleza-inesperada-2016 | Drama | Apple TV | +13 |
 | 2016 | Café Society | cafe-society-2016 | Drama | Otras plataformas | +13 |
 | 2016 | Capitán Kóblic | capitan-koblic-2016 | Drama | Otras plataformas | +16 |
 | 2016 | Captain America: Civil War | captain-america-civil-war-2016 | Accion | Disney Plus | +13 |
@@ -1019,6 +1021,7 @@ Total de peliculas: 1565
 | 2003 | Big Fish | big-fish-2003 | Drama | Otras plataformas | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
 | 2003 | Destino final 2 | destino-final-2-2003 | Terror | HBO Max | +16 |
+| 2003 | Dos policías rebeldes II | dos-policias-rebeldes-ii-2003 | Crimen | HBO Max + Apple TV | +17 |
 | 2003 | Elephant | elephant-2003 | Drama | HBO Max | +16 |
 | 2003 | Finding Nemo | finding-nemo-2003 | Animacion | Disney Plus | ATP |
 | 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | HBO Max | +17 |
@@ -1070,6 +1073,7 @@ Total de peliculas: 1565
 | 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max | +13 |
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Otras plataformas | +13 |
 | 2001 | A.I. Inteligencia Artificial | a-i-artificial-intelligence-2001 | Ciencia ficcion | Otras plataformas | +13 |
+| 2001 | Ali | ali-2001 | Biográfica | Otras plataformas | +13 |
 | 2001 | Amélie | amelie-2001 | Comedia romántica | Otras plataformas | ATP |
 | 2001 | Buffalo Soldiers | buffalo-soldiers-2001 | Comedia | Otras plataformas | +16 |
 | 2001 | Día de entrenamiento | dia-de-entrenamiento-2001 | Crimen | HBO Max + Apple TV | +17 |
@@ -1243,6 +1247,7 @@ Total de peliculas: 1565
 | 1993 | La edad de la inocencia | the-age-of-innocence-1993 | Drama | Otras plataformas | ATP |
 | 1993 | La lista de Schindler | schindler-s-list-1993 | Drama | HBO Max + Apple TV | +13 |
 | 1993 | Misterioso asesinato en Manhattan | manhattan-murder-mystery-1993 | Comedia | Otras plataformas | +13 |
+| 1993 | Seis grados de separación | seis-grados-de-separacion-1993 | Drama | Apple TV | +13 |
 | 1993 | Super Mario Bros: La película | super-mario-bros-la-pelicula-1993 | Fantasia | Apple TV | ATP |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Otras plataformas | +13 |
 | 1993 | Viernes 13 - Parte 9: Jason se va al Infierno | jason-goes-to-hell-the-final-friday-1993 | Terror | Otras plataformas | +17 |
