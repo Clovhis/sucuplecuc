@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1508
+Total de peliculas: 1520
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -435,6 +435,7 @@ Total de peliculas: 1508
 | 2021 | Belfast | belfast-2021 | Biográfica | Otras plataformas | +13 |
 | 2021 | Belle | belle-2021 | Anime | Disney Plus | ATP |
 | 2021 | Black Widow | black-widow-2021 | Acción | Disney Plus | +13 |
+| 2021 | C’mon C’mon: Siempre adelante | c-mon-c-mon-siempre-adelante-2021 | Drama | Prime Video + HBO Max | +13 |
 | 2021 | Censor | censor-2021 | Terror | Prime Video | +13 |
 | 2021 | CODA | coda-2021 | Comedia | Prime Video | +13 |
 | 2021 | Competencia oficial | competencia-oficial-2021 | Comedia | Disney Plus | +13 |
@@ -558,6 +559,7 @@ Total de peliculas: 1508
 | 2018 | Mandy | mandy-2018 | Terror | Apple TV | +16 |
 | 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus | +13 |
 | 2018 | Mission: Impossible - Fallout | mission-impossible-fallout-2018 | Accion | Otras plataformas | +13 |
+| 2018 | No te preocupes, no llegará lejos a pie | no-te-preocupes-no-llegara-lejos-a-pie-2018 | Drama | Prime Video | +13 |
 | 2018 | Perdona que te moleste | perdona-que-te-moleste-2018 | Comedia | Otras plataformas | +17 |
 | 2018 | Ready Player One: Comienza el Juego | ready-player-one-2018 | Ciencia ficcion | Otras plataformas | +13 |
 | 2018 | Rojo | rojo-2018 | Thriller | CINE.AR | +13 |
@@ -587,6 +589,7 @@ Total de peliculas: 1508
 | 2017 | Logan | logan-2017 | Accion | Disney Plus | +17 |
 | 2017 | Los archivos del Pentágono | the-post-2017 | Drama | Otras plataformas | +13 |
 | 2017 | Los Meyerowitz: La familia no se elige | the-meyerowitz-stories-2017 | Drama | Netflix | +13 |
+| 2017 | Nunca estarás a salvo | nunca-estaras-a-salvo-2017 | Thriller | Otras plataformas | +16 |
 | 2017 | Pequeña gran vida | pequena-gran-vida-2017 | Ciencia ficcion | Paramount Plus | +17 |
 | 2017 | Pirates of the Caribbean: Dead Men Tell No Tales | pirates-of-the-caribbean-dead-men-tell-no-tales-2017 | Aventura | Disney Plus | +13 |
 | 2017 | Sandy Wexler | sandy-wexler-2017 | Comedia | Netflix | +16 |
@@ -648,6 +651,7 @@ Total de peliculas: 1508
 | 2015 | La invitación | la-invitacion-2015 | Thriller | Prime Video | +16 |
 | 2015 | Langosta | langosta-2015 | Ciencia ficcion | Apple TV | +13 |
 | 2015 | Mad Max: Fury Road | mad-max-fury-road-2015 | Accion | Netflix | +16 |
+| 2015 | Misión rescate | mision-rescate-2015 | Ciencia ficcion | Disney Plus | +13 |
 | 2015 | Mission: Impossible - Rogue Nation | mission-impossible-rogue-nation-2015 | Accion | Disney Plus | +13 |
 | 2015 | Pixels | pixels-2015 | Ciencia ficcion | Apple TV + HBO Max | ATP |
 | 2015 | Spectre | spectre-2015 | Accion | Netflix | +12 |
@@ -689,6 +693,7 @@ Total de peliculas: 1508
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus | +13 |
 | 2014 | The Grand Budapest Hotel | the-grand-budapest-hotel-2014 | Comedia | Disney Plus | +13 |
 | 2014 | Tonto y retonto 2 | tonto-y-retonto-2-2014 | Comedia | Otras plataformas | +13 |
+| 2014 | Vicio propio | vicio-propio-2014 | Crimen | Apple TV | +16 |
 | 2014 | What We Do in the Shadows | what-we-do-in-the-shadows-2014 | Comedia | Otras plataformas | +17 |
 | 2014 | Whiplash: Música y obsesión | whiplash-2014 | Drama | HBO Max + Apple TV | +13 |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus | +13 |
@@ -742,6 +747,7 @@ Total de peliculas: 1508
 | 2012 | The Avengers | the-avengers-2012 | Accion | Disney Plus | +13 |
 | 2012 | The Dark Knight Rises | the-dark-knight-rises-2012 | Accion | Otras plataformas | +13 |
 | 2012 | The Master | the-master-2012 | Drama | Otras plataformas | +16 |
+| 2012 | Tierra prometida | tierra-prometida-2012 | Drama | Apple TV | +17 |
 | 2012 | Wolf Children | wolf-children-2012 | Anime | HBO Max | ATP |
 | 2011 | Captain America: The First Avenger | captain-america-the-first-avenger-2011 | Accion | Disney Plus | +13 |
 | 2011 | Cruzadas | cruzadas-2011 | Comedia | Otras plataformas | +13 |
@@ -789,6 +795,7 @@ Total de peliculas: 1508
 | 2010 | Hablar en público | public-speaking-2010 | Documental | Otras plataformas | ATP |
 | 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max | +12 |
 | 2010 | How to Train Your Dragon | how-to-train-your-dragon-2010 | Animacion | Otras plataformas | ATP |
+| 2010 | I'm Still Here | i-m-still-here-2010 | Documental | Otras plataformas | +16 |
 | 2010 | Imparable | imparable-2010 | Accion | Disney Plus | +13 |
 | 2010 | Inception | inception-2010 | Ciencia ficcion | HBO Max + Prime Video | +13 |
 | 2010 | Iron Man 2 | iron-man-2-2010 | Accion | Disney Plus | +13 |
@@ -893,6 +900,7 @@ Total de peliculas: 1508
 | 2006 | Click | click-2006 | Comedia | Apple TV + HBO Max | +17 |
 | 2006 | Déjà Vu | deja-vu-2006 | Accion | Disney Plus | +13 |
 | 2006 | Destino final 3 | destino-final-3-2006 | Terror | HBO Max | +13 |
+| 2006 | El buen pastor | el-buen-pastor-2006 | Drama | Otras plataformas | +17 |
 | 2006 | El código Da Vinci | el-codigo-da-vinci-2006 | Thriller | HBO Max | +17 |
 | 2006 | El gran truco | the-prestige-2006 | Thriller | Apple TV | +13 |
 | 2006 | El laberinto del fauno | el-laberinto-del-fauno-2006 | Fantasia | Otras plataformas | +18 |
@@ -930,6 +938,7 @@ Total de peliculas: 1508
 | 2005 | Grizzly Man | grizzly-man-2005 | Documental | Otras plataformas | +13 |
 | 2005 | Harry Potter and the Goblet of Fire | harry-potter-and-the-goblet-of-fire-2005 | Aventura | HBO Max | +13 |
 | 2005 | Hostel | hostel-2005 | Gore | Otras plataformas | +18 |
+| 2005 | Johnny & June: Pasión y locura | johnny-june-pasion-y-locura-2005 | Biografica | Disney Plus | +13 |
 | 2005 | La guerra de los mundos | war-of-the-worlds-2005 | Ciencia ficcion | Otras plataformas | +13 |
 | 2005 | La propuesta | la-propuesta-2005 | Western | Prime Video | +13 |
 | 2005 | Las locuras de Dick y Jane | las-locuras-de-dick-y-jane-2005 | Comedia | Otras plataformas | +13 |
@@ -990,6 +999,7 @@ Total de peliculas: 1508
 | 2003 | The Lord of the Rings: The Return of the King | the-lord-of-the-rings-the-return-of-the-king-2003 | Drama | Prime Video | +13 |
 | 2003 | The Matrix Reloaded | matrix-reloaded-2003 | Ciencia ficcion | HBO Max | +17 |
 | 2003 | The Matrix Revolutions | matrix-revolutions-2003 | Ciencia ficcion | Netflix | +17 |
+| 2003 | Tierra de osos | tierra-de-osos-2003 | Animacion | Disney Plus | ATP |
 | 2003 | Todo lo demás | anything-else-2003 | Romance | Otras plataformas | +13 |
 | 2003 | Todopoderoso | todopoderoso-2003 | Comedia | Disney Plus | ATP |
 | 2003 | X2 | x2-2003 | Accion | Disney Plus | +13 |
@@ -1023,6 +1033,7 @@ Total de peliculas: 1508
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Otras plataformas | +13 |
 | 2001 | A.I. Inteligencia Artificial | a-i-artificial-intelligence-2001 | Ciencia ficcion | Otras plataformas | +13 |
 | 2001 | Amélie | amelie-2001 | Comedia romántica | Otras plataformas | ATP |
+| 2001 | Buffalo Soldiers | buffalo-soldiers-2001 | Comedia | Otras plataformas | +16 |
 | 2001 | Día de entrenamiento | dia-de-entrenamiento-2001 | Crimen | HBO Max + Apple TV | +17 |
 | 2001 | Donnie Darko | donnie-darko-2001 | Ciencia ficcion | Prime Video | +13 |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus | +13 |
@@ -1074,6 +1085,7 @@ Total de peliculas: 1508
 | 1999 | El club de la pelea | fight-club-1999 | Drama | Paramount Plus + Prime Video | +13 |
 | 1999 | El gigante de hierro | el-gigante-de-hierro-1999 | Animacion | Apple TV | ATP |
 | 1999 | El informante | el-informante-1999 | Drama | Otras plataformas | +13 |
+| 1999 | El talento de Mr. Ripley | el-talento-de-mr-ripley-1999 | Thriller | Apple TV | +17 |
 | 1999 | Garage Olimpo | garage-olimpo-1999 | Drama | CINE.AR | +18 |
 | 1999 | Huracán Carter | huracan-carter-1999 | Drama | Prime Video + Apple TV | +13 |
 | 1999 | La milla verde | la-milla-verde-1999 | Drama | Prime Video | +17 |
