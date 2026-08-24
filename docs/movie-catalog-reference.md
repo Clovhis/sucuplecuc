@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1520
+Total de peliculas: 1521
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1126,6 +1126,7 @@ Total de peliculas: 1520
 | 1997 | Carretera perdida | carretera-perdida-1997 | Terror | Otras plataformas | +16 |
 | 1997 | Contacto | contacto-1997 | Ciencia ficcion | Apple TV | +13 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
+| 1997 | El poder de la justicia | el-poder-de-la-justicia-1997 | Drama | Netflix | +13 |
 | 1997 | El quinto elemento | el-quinto-elemento-1997 | Ciencia ficcion | Otras plataformas | +13 |
 | 1997 | Gattaca | gattaca-1997 | Ciencia ficcion | HBO Max | +13 |
 | 1997 | Good Will Hunting | good-will-hunting-1997 | Drama | Otras plataformas | +17 |
