@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1486
+Total de peliculas: 1492
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -886,6 +886,7 @@ Total de peliculas: 1486
 | 2006 | El código Da Vinci | el-codigo-da-vinci-2006 | Thriller | HBO Max | +17 |
 | 2006 | El gran truco | the-prestige-2006 | Thriller | Apple TV | +13 |
 | 2006 | El laberinto del fauno | el-laberinto-del-fauno-2006 | Fantasia | Otras plataformas | +18 |
+| 2006 | Firewall | firewall-2006 | Thriller | Otras plataformas | +13 |
 | 2006 | Invencible | invencible-2006 | Drama | Disney Plus | ATP |
 | 2006 | La fuente de la vida | la-fuente-de-la-vida-2006 | Drama | Prime Video | +13 |
 | 2006 | La vida de los otros | la-vida-de-los-otros-2006 | Drama | Otras plataformas | +13 |
@@ -1162,6 +1163,7 @@ Total de peliculas: 1486
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
 | 1994 | Tonto y retonto | tonto-y-retonto-1994 | Comedia | Apple TV | +13 |
+| 1993 | El fugitivo | el-fugitivo-1993 | Acción | HBO Max | +13 |
 | 1993 | El informe Pelícano | el-informe-pelicano-1993 | Thriller | Apple TV | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
 | 1993 | Funes, un gran amor | funes-un-gran-amor-1993 | Drama | Otras plataformas | +18 |
@@ -1193,6 +1195,7 @@ Total de peliculas: 1486
 | 1991 | Sombras y niebla | shadows-and-fog-1991 | Thriller | Otras plataformas | +16 |
 | 1991 | Terminator 2: Judgment Day | terminator-2-judgment-day-1991 | Accion | Otras plataformas | +17 |
 | 1991 | Thelma y Louise | thelma-y-louise-1991 | Drama | Apple TV | +16 |
+| 1991 | Una segunda oportunidad | una-segunda-oportunidad-1991 | Drama | Otras plataformas | +13 |
 | 1990 | Alice | alice-1990 | Fantasia | Otras plataformas | +13 |
 | 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Otras plataformas | ATP |
 | 1990 | Buenos muchachos | goodfellas-1990 | Crimen | Prime Video + HBO Max | +13 |
@@ -1227,6 +1230,7 @@ Total de peliculas: 1486
 | 1988 | Agárralo como puedas | agarralo-como-puedas-1988 | Comedia | Paramount Plus | +13 |
 | 1988 | Akira | akira-1988 | Anime | Netflix | +17 |
 | 1988 | Beetlejuice | beetlejuice-1988 | Comedia | HBO Max | +13 |
+| 1988 | Búsqueda frenética | busqueda-frenetica-1988 | Thriller | Otras plataformas | +17 |
 | 1988 | Cinema Paradiso | cinema-paradiso-1988 | Drama | Apple TV | +13 |
 | 1988 | Desaparecida | desaparecida-1988 | Thriller | Otras plataformas | +16 |
 | 1988 | Duro de matar | jungla-de-cristal-1988 | Accion | Disney Plus | +17 |
@@ -1261,6 +1265,7 @@ Total de peliculas: 1486
 | 1986 | Golpe en la pequeña China | golpe-en-la-pequena-china-1986 | Accion | Disney Plus | +13 |
 | 1986 | Hannah and Her Sisters | hannah-and-her-sisters-1986 | Drama | Otras plataformas | +13 |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Otras plataformas | ATP |
+| 1986 | La costa Mosquito | la-costa-mosquito-1986 | Drama | Otras plataformas | +13 |
 | 1986 | La mosca | la-mosca-1986 | Terror | Disney Plus | +16 |
 | 1986 | La Noche de los Lápices | la-noche-de-los-lapices-1986 | Drama | Otras plataformas | +18 |
 | 1986 | Pelotón | platoon-1986 | Drama | Apple TV | +13 |
@@ -1284,6 +1289,7 @@ Total de peliculas: 1486
 | 1985 | Pee-wee's Big Adventure | pee-wees-big-adventure-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | Rocky IV | rocky-iv-1985 | Drama | Otras plataformas | ATP |
 | 1985 | Shoah | shoah-1985 | Documental | Otras plataformas | +16 |
+| 1985 | Testigo en peligro | testigo-en-peligro-1985 | Drama | Otras plataformas | +17 |
 | 1985 | Viernes 13. Parte V: Un nuevo comienzo | friday-the-13th-a-new-beginning-1985 | Terror | Otras plataformas | +18 |
 | 1984 | Amadeus | amadeus-1984 | Drama | Otras plataformas | ATP |
 | 1984 | Broadway Danny Rose | broadway-danny-rose-1984 | Comedia | Otras plataformas | +13 |
