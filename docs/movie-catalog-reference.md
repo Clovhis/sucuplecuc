@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1559
+Total de peliculas: 1565
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -513,6 +513,7 @@ Total de peliculas: 1559
 | 2019 | El faro | el-faro-2019 | Terror | Prime Video | +16 |
 | 2019 | El sonido del metal | el-sonido-del-metal-2019 | Drama | Prime Video + Apple TV | +17 |
 | 2019 | Fast & Furious Presents: Hobbs & Shaw | fast-and-furious-presents-hobbs-and-shaw-2019 | Accion | Prime Video | +13 |
+| 2019 | Glass (Cristal) | glass-cristal-2019 | Thriller | Disney Plus | +13 |
 | 2019 | How to Train Your Dragon: The Hidden World | how-to-train-your-dragon-the-hidden-world-2019 | Animacion | Otras plataformas | ATP |
 | 2019 | IT: Capítulo 2 | it-chapter-two-2019 | Terror | Netflix | +17 |
 | 2019 | John Wick: Chapter 3 - Parabellum | john-wick-chapter-3-parabellum-2019 | Accion | Mercado Play | +16 |
@@ -578,6 +579,7 @@ Total de peliculas: 1559
 | 2017 | Coco | coco-2017 | Animacion | Disney Plus | ATP |
 | 2017 | Dunkirk | dunkirk-2017 | Drama | Otras plataformas | +13 |
 | 2017 | El culto de Chucky | cult-of-chucky-2017 | Terror | Otras plataformas | +18 |
+| 2017 | El otro guardaespaldas | el-otro-guardaespaldas-2017 | Acción | Netflix | +16 |
 | 2017 | El Proyecto Florida | el-proyecto-florida-2017 | Drama | Otras plataformas | +16 |
 | 2017 | El reverendo | el-reverendo-2017 | Drama | Apple TV | +16 |
 | 2017 | El ritual | el-ritual-2017 | Terror | Apple TV | +16 |
@@ -893,6 +895,7 @@ Total de peliculas: 1559
 | 2008 | Vicky Cristina Barcelona | vicky-cristina-barcelona-2008 | Romance | Otras plataformas | +16 |
 | 2008 | WALL-E | wall-e-2008 | Animacion | Disney Plus | ATP |
 | 2007 | American Gangster | american-gangster-2007 | Crimen | Netflix + Prime Video | +16 |
+| 2007 | Cleaner | cleaner-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Crimen perfecto | crimen-perfecto-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Death Proof | death-proof-2007 | Thriller | Otras plataformas | +16 |
 | 2007 | El asesinato de Jesse James por el cobarde Robert Ford | el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007 | Western | HBO Max + Apple TV | +17 |
@@ -1148,6 +1151,7 @@ Total de peliculas: 1559
 | 1998 | El aguador | the-waterboy-1998 | Comedia | Disney Plus | +13 |
 | 1998 | El gran Lebowski | el-gran-lebowski-1998 | Comedia | Apple TV | +17 |
 | 1998 | El show de Truman | the-truman-show-1998 | Comedia | Paramount Plus + Apple TV | ATP |
+| 1998 | Esfera | esfera-1998 | Ciencia ficcion | Apple TV | +13 |
 | 1998 | Following | following-1998 | Thriller | Otras plataformas | +16 |
 | 1998 | Halloween: H20. Veinte años después | halloween-h20-20-years-later-1998 | Terror | Otras plataformas | +17 |
 | 1998 | La delgada línea roja | la-delgada-linea-roja-1998 | Drama | Disney Plus | +13 |
@@ -1191,6 +1195,7 @@ Total de peliculas: 1559
 | 1996 | Romeo + Julieta de William Shakespeare | romeo-julieta-de-william-shakespeare-1996 | Romance | Disney Plus | +13 |
 | 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Paramount Plus + Mercado Play | +16 |
 | 1996 | The English Patient | the-english-patient-1996 | Drama | Otras plataformas | +17 |
+| 1996 | Tiempo de matar | tiempo-de-matar-1996 | Drama | Netflix | +17 |
 | 1996 | Todos dicen I Love You | everyone-says-i-love-you-1996 | Musical | Otras plataformas | +13 |
 | 1996 | Trainspotting | trainspotting-1996 | Drama | Netflix | +13 |
 | 1995 | Ace Ventura, un loco en África | ace-ventura-un-loco-en-africa-1995 | Comedia | Apple TV | +13 |
@@ -1209,6 +1214,7 @@ Total de peliculas: 1559
 | 1995 | Fuego contra fuego | fuego-contra-fuego-1995 | Crimen | Apple TV | +16 |
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix | +17 |
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Otras plataformas | +17 |
+| 1995 | Jungla de cristal: la venganza | jungla-de-cristal-la-venganza-1995 | Acción | Disney Plus | +13 |
 | 1995 | Marea roja | marea-roja-1995 | Accion | Disney Plus | +13 |
 | 1995 | Poderosa Afrodita | mighty-aphrodite-1995 | Comedia | Otras plataformas | +13 |
 | 1995 | Rob Roy, la pasión de un rebelde | rob-roy-la-pasion-de-un-rebelde-1995 | Aventura | Apple TV | +16 |
