@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1496
+Total de peliculas: 1499
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -700,6 +700,7 @@ Total de peliculas: 1496
 | 2013 | El increíble Burt Wonderstone | el-increible-burt-wonderstone-2013 | Comedia | Apple TV | +13 |
 | 2013 | El lobo de Wall Street | the-wolf-of-wall-street-2013 | Crimen | Otras plataformas | ATP |
 | 2013 | El único superviviente | el-unico-superviviente-2013 | Accion | Apple TV + Prime Video | +17 |
+| 2013 | Elysium | elysium-2013 | Accion | HBO Max | +17 |
 | 2013 | Enemy | enemy-2013 | Thriller | Otras plataformas | +16 |
 | 2013 | Fast & Furious 6 | fast-and-furious-6-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Frozen | frozen-2013 | Animacion | Disney Plus | ATP |
@@ -755,6 +756,7 @@ Total de peliculas: 1496
 | 2011 | La invención de Hugo | hugo-2011 | Aventura | Otras plataformas | ATP |
 | 2011 | La piel que habito | la-piel-que-habito-2011 | Terror | Netflix | +16 |
 | 2011 | Las aventuras de Tintín: El secreto del unicornio | the-adventures-of-tintin-2011 | Animacion | Otras plataformas | ATP |
+| 2011 | Los agentes del destino | los-agentes-del-destino-2011 | Ciencia ficcion | HBO Max | +13 |
 | 2011 | Los pingüinos de papá | los-pinguinos-de-papa-2011 | Comedia | Otras plataformas | ATP |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Otras plataformas | +13 |
 | 2011 | Medianoche en París | midnight-in-paris-2011 | Fantasia | Otras plataformas | +13 |
@@ -770,6 +772,7 @@ Total de peliculas: 1496
 | 2011 | The Human Centipede 2 (Full Sequence) | the-human-centipede-2-full-sequence-2011 | Terror | Otras plataformas | +18 |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
+| 2011 | Un zoológico en casa | un-zoologico-en-casa-2011 | Drama | Disney Plus | ATP |
 | 2011 | Una esposa de mentira | just-go-with-it-2011 | Comedia | Apple TV + HBO Max | +17 |
 | 2011 | War Horse (Caballo de batalla) | war-horse-2011 | Drama | Otras plataformas | +13 |
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus | +13 |
