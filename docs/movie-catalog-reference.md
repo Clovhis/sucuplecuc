@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1493
+Total de peliculas: 1494
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -944,6 +944,7 @@ Total de peliculas: 1493
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix | +17 |
 | 2004 | La niña santa | la-nina-santa-2004 | Drama | Prime Video | +13 |
 | 2004 | La semilla de Chucky | seed-of-chucky-2004 | Terror | Otras plataformas | +17 |
+| 2004 | La supremacía de Bourne | la-supremacia-de-bourne-2004 | Accion | HBO Max | +13 |
 | 2004 | La terminal | the-terminal-2004 | Comedia | Otras plataformas | +13 |
 | 2004 | Life Aquatic | life-aquatic-2004 | Comedia | Disney Plus | +13 |
 | 2004 | Luna de Avellaneda | luna-de-avellaneda-2004 | Drama | Netflix | +14 |
