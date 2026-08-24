@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1528
+Total de peliculas: 1544
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -391,6 +391,7 @@ Total de peliculas: 1528
 | 2023 | Wonka | wonka-2023 | Fantasia | HBO Max | ATP |
 | 2022 | Aftersun | aftersun-2022 | Drama | Otras plataformas | +13 |
 | 2022 | All Quiet on the Western Front | all-quiet-on-the-western-front-2022 | Drama | Netflix | +16 |
+| 2022 | Ambulance: Plan de huida | ambulance-plan-de-huida-2022 | Acción | Otras plataformas | +17 |
 | 2022 | Ámsterdam | amsterdam-2022 | Comedia | Otras plataformas | +13 |
 | 2022 | Argentina, 1985 | argentina-1985-2022 | Drama | Prime Video | +17 |
 | 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Ciencia ficcion | Disney Plus | +13 |
@@ -441,6 +442,7 @@ Total de peliculas: 1528
 | 2021 | CODA | coda-2021 | Comedia | Prime Video | +13 |
 | 2021 | Competencia oficial | competencia-oficial-2021 | Comedia | Disney Plus | +13 |
 | 2021 | Cruella | cruella-2021 | Aventura | Disney Plus | +13 |
+| 2021 | Culpable | culpable-2021 | Thriller | Netflix | +17 |
 | 2021 | Don't Look Up | dont-look-up-2021 | Comedia | Netflix | +16 |
 | 2021 | Drive my car | drive-my-car-2021 | Drama | Apple TV | +13 |
 | 2021 | Dune: Part One | dune-2021 | Acción | HBO Max | +13 |
@@ -587,10 +589,12 @@ Total de peliculas: 1528
 | 2017 | La cordillera | la-cordillera-2017 | Drama | HBO Max | +12 |
 | 2017 | La cura siniestra | la-cura-siniestra-2017 | Terror | Prime Video | +16 |
 | 2017 | Lady Bird | lady-bird-2017 | Drama | Otras plataformas | +17 |
+| 2017 | Life: Vida | life-vida-2017 | Ciencia ficción | Apple TV | +17 |
 | 2017 | Llega de noche | llega-de-noche-2017 | Terror | Otras plataformas | +13 |
 | 2017 | Logan | logan-2017 | Accion | Disney Plus | +17 |
 | 2017 | Los archivos del Pentágono | the-post-2017 | Drama | Otras plataformas | +13 |
 | 2017 | Los Meyerowitz: La familia no se elige | the-meyerowitz-stories-2017 | Drama | Netflix | +13 |
+| 2017 | Más fuerte que el destino | mas-fuerte-que-el-destino-2017 | Drama | Apple TV | +17 |
 | 2017 | Nunca estarás a salvo | nunca-estaras-a-salvo-2017 | Thriller | Otras plataformas | +16 |
 | 2017 | Pequeña gran vida | pequena-gran-vida-2017 | Ciencia ficcion | Paramount Plus | +17 |
 | 2017 | Pirates of the Caribbean: Dead Men Tell No Tales | pirates-of-the-caribbean-dead-men-tell-no-tales-2017 | Aventura | Disney Plus | +13 |
@@ -643,6 +647,7 @@ Total de peliculas: 1528
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus | +16 |
 | 2015 | El puente de los espías | bridge-of-spies-2015 | Thriller | Otras plataformas | +13 |
 | 2015 | El renacido | el-renacido-2015 | Western | Netflix + Paramount Plus | +16 |
+| 2015 | Everest | everest-2015 | Aventura | HBO Max | +13 |
 | 2015 | Fantastic Four | fantastic-four-2015 | Accion | Disney Plus | +13 |
 | 2015 | Furious 7 | furious-7-2015 | Accion | HBO Max | +13 |
 | 2015 | Hotel Transilvania 2 | hotel-transylvania-2-2015 | Animación | HBO Max + Prime Video | ATP |
@@ -691,6 +696,7 @@ Total de peliculas: 1528
 | 2014 | Magia a la luz de la luna | magic-in-the-moonlight-2014 | Romance | Otras plataformas | +13 |
 | 2014 | Noé | noe-2014 | Drama | Netflix | +13 |
 | 2014 | Non-Stop (Sin escalas) | non-stop-sin-escalas-2014 | Thriller | Apple TV | +13 |
+| 2014 | Primicia mortal | primicia-mortal-2014 | Thriller | Prime Video | +17 |
 | 2014 | Redada Asesina 2 | redada-asesina-2-2014 | Accion | Apple TV | +18 |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max | +16 |
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus | +13 |
@@ -721,6 +727,7 @@ Total de peliculas: 1528
 | 2013 | La noche de la expiación | la-noche-de-la-expiacion-2013 | Terror | HBO Max | +16 |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Oblivion | oblivion-2013 | Ciencia ficcion | HBO Max | +13 |
+| 2013 | Prisioneros | prisioneros-2013 | Thriller | Otras plataformas | +17 |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max | +13 |
 | 2013 | Sharknado | sharknado-2013 | Terror | Prime Video | +13 |
 | 2013 | Son como niños 2 | grown-ups-2-2013 | Comedia | Apple TV + HBO Max | +13 |
@@ -746,6 +753,7 @@ Total de peliculas: 1528
 | 2012 | Lincoln | lincoln-2012 | Drama | Otras plataformas | +13 |
 | 2012 | Los miserables | los-miserables-2012 | Musical | Otras plataformas | +13 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
+| 2012 | Sin tregua | sin-tregua-2012 | Acción | Otras plataformas | +17 |
 | 2012 | Skyfall | skyfall-2012 | Accion | Netflix | +12 |
 | 2012 | Ted | ted-2012 | Comedia | Prime Video + Apple TV | +16 |
 | 2012 | The Amazing Spider-Man | the-amazing-spider-man-2012 | Accion | Prime Video | +13 |
@@ -793,10 +801,12 @@ Total de peliculas: 1528
 | 2011 | X-Men: First Class | x-men-first-class-2011 | Accion | Disney Plus | +13 |
 | 2010 | A Serbian Film | a-serbian-film-2010 | Gore | Otras plataformas | +18 |
 | 2010 | Alice in Wonderland | alice-in-wonderland-2010 | Fantasia | Disney Plus | ATP |
+| 2010 | Amor y otras drogas | amor-y-otras-drogas-2010 | Romance | Prime Video | +17 |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
 | 2010 | Conocerás al hombre de tus sueños | you-will-meet-a-tall-dark-stranger-2010 | Drama | Otras plataformas | +13 |
 | 2010 | El equipo A | el-equipo-a-2010 | Accion | Disney Plus | +13 |
 | 2010 | El libro de Eli | el-libro-de-eli-2010 | Accion | HBO Max + Apple TV | +16 |
+| 2010 | El príncipe de Persia: Las arenas del tiempo | el-principe-de-persia-las-arenas-del-tiempo-2010 | Acción | Disney Plus | +13 |
 | 2010 | Hablar en público | public-speaking-2010 | Documental | Otras plataformas | ATP |
 | 2010 | Harry Potter and the Deathly Hallows: Part 1 | harry-potter-and-the-deathly-hallows-part-1-2010 | Aventura | HBO Max | +12 |
 | 2010 | How to Train Your Dragon | how-to-train-your-dragon-2010 | Animacion | Otras plataformas | ATP |
@@ -830,6 +840,7 @@ Total de peliculas: 1528
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max | +12 |
 | 2009 | Hazme reír | funny-people-2009 | Drama | Apple TV | +17 |
+| 2009 | Hermanos | hermanos-2009 | Drama | Otras plataformas | +17 |
 | 2009 | I Love You Phillip Morris | i-love-you-phillip-morris-2009 | Drama | Otras plataformas | +16 |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix | +16 |
 | 2009 | Jennifer's Body | jennifer-s-body-2009 | Terror | Disney Plus + Netflix | +16 |
@@ -879,6 +890,7 @@ Total de peliculas: 1528
 | 2007 | El orfanato | el-orfanato-2007 | Terror | Prime Video | +13 |
 | 2007 | El sueño de Casandra | cassandra-s-dream-2007 | Drama | Otras plataformas | +16 |
 | 2007 | El ultimátum de Bourne | el-ultimatum-de-bourne-2007 | Accion | HBO Max | +13 |
+| 2007 | Expediente Anwar | expediente-anwar-2007 | Drama | Otras plataformas | +17 |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus | ATP |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Otras plataformas | +13 |
 | 2007 | Halloween | halloween-2007 | Terror | Otras plataformas | +17 |
@@ -902,6 +914,7 @@ Total de peliculas: 1528
 | 2007 | Sunshine | sunshine-2007 | Ciencia ficcion | Disney Plus | +13 |
 | 2007 | Sweeney Todd: The Demon Barber of Fleet Street | sweeney-todd-the-demon-barber-of-fleet-street-2007 | Musical | Otras plataformas | +17 |
 | 2007 | Yo los declaro marido y Larry | i-now-pronounce-you-chuck-and-larry-2007 | Comedia | Apple TV | +13 |
+| 2007 | Zodíaco | zodiaco-2007 | Thriller | HBO Max | +17 |
 | 2006 | Casino Royale | casino-royale-2006 | Accion | Netflix | +12 |
 | 2006 | Click | click-2006 | Comedia | Apple TV + HBO Max | +17 |
 | 2006 | Déjà Vu | deja-vu-2006 | Accion | Disney Plus | +13 |
@@ -944,6 +957,7 @@ Total de peliculas: 1528
 | 2005 | Grizzly Man | grizzly-man-2005 | Documental | Otras plataformas | +13 |
 | 2005 | Harry Potter and the Goblet of Fire | harry-potter-and-the-goblet-of-fire-2005 | Aventura | HBO Max | +13 |
 | 2005 | Hostel | hostel-2005 | Gore | Otras plataformas | +18 |
+| 2005 | Jarhead, el infierno espera | jarhead-el-infierno-espera-2005 | Drama | HBO Max | +17 |
 | 2005 | Johnny & June: Pasión y locura | johnny-june-pasion-y-locura-2005 | Biografica | Disney Plus | +13 |
 | 2005 | La guerra de los mundos | war-of-the-worlds-2005 | Ciencia ficcion | Otras plataformas | +13 |
 | 2005 | La propuesta | la-propuesta-2005 | Western | Prime Video | +13 |
@@ -963,6 +977,7 @@ Total de peliculas: 1528
 | 2004 | El abrazo partido | el-abrazo-partido-2004 | Comedia | HBO Max | +13 |
 | 2004 | El aviador | the-aviator-2004 | Drama | Otras plataformas | +13 |
 | 2004 | El castillo ambulante | howls-moving-castle-2004 | Anime | Netflix | ATP |
+| 2004 | El día de mañana | el-dia-de-manana-2004 | Acción | Disney Plus | +13 |
 | 2004 | El fuego de la venganza | el-fuego-de-la-venganza-2004 | Accion | Netflix + Paramount Plus | +16 |
 | 2004 | Espanglish | spanglish-2004 | Drama | Apple TV + HBO Max | +13 |
 | 2004 | Eterno resplandor de una mente sin recuerdos | eternal-sunshine-of-the-spotless-mind-2004 | Romance | HBO Max + Apple TV | +13 |
@@ -1088,6 +1103,7 @@ Total de peliculas: 1528
 | 1999 | Acordes y desacuerdos | sweet-and-lowdown-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Al límite | bringing-out-the-dead-1999 | Drama | Otras plataformas | +17 |
 | 1999 | Belleza americana | american-beauty-1999 | Drama | Paramount Plus + Apple TV | +13 |
+| 1999 | Cielo de octubre | cielo-de-octubre-1999 | Drama | Apple TV | ATP |
 | 1999 | Cómo ser John Malkovich | como-ser-john-malkovich-1999 | Comedia | Apple TV | +16 |
 | 1999 | El club de la pelea | fight-club-1999 | Drama | Paramount Plus + Prime Video | +13 |
 | 1999 | El gigante de hierro | el-gigante-de-hierro-1999 | Animacion | Apple TV | ATP |
