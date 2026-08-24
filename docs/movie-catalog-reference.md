@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1500
+Total de peliculas: 1506
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -709,6 +709,7 @@ Total de peliculas: 1500
 | 2013 | La maldición de Chucky | curse-of-chucky-2013 | Terror | HBO Max | +17 |
 | 2013 | La noche de la expiación | la-noche-de-la-expiacion-2013 | Terror | HBO Max | +16 |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Otras plataformas | +13 |
+| 2013 | Oblivion | oblivion-2013 | Ciencia ficcion | HBO Max | +13 |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max | +13 |
 | 2013 | Sharknado | sharknado-2013 | Terror | Prime Video | +13 |
 | 2013 | Son como niños 2 | grown-ups-2-2013 | Comedia | Apple TV + HBO Max | +13 |
@@ -729,6 +730,7 @@ Total de peliculas: 1500
 | 2012 | Frankenweenie | frankenweenie-2012 | Animacion | Disney Plus | ATP |
 | 2012 | Hotel Transilvania | hotel-transylvania-2012 | Animación | HBO Max + Prime Video | ATP |
 | 2012 | Infierno blanco | infierno-blanco-2012 | Thriller | Prime Video + HBO Max | +16 |
+| 2012 | Jack Reacher: bajo la mira | jack-reacher-bajo-la-mira-2012 | Accion | Paramount Plus | +13 |
 | 2012 | La caza | la-caza-2012 | Drama | Prime Video | +16 |
 | 2012 | Lincoln | lincoln-2012 | Drama | Otras plataformas | +13 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
@@ -842,6 +844,7 @@ Total de peliculas: 1500
 | 2008 | Leonera | leonera-2008 | Drama | Netflix | +13 |
 | 2008 | Mártires | martires-2008 | Gore | Otras plataformas | +18 |
 | 2008 | No te metas con Zohan | you-dont-mess-with-the-zohan-2008 | Comedia | HBO Max + Netflix | +16 |
+| 2008 | Operación Valquiria | operacion-valquiria-2008 | Drama | Otras plataformas | +13 |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Otras plataformas | +17 |
 | 2008 | Quantum of Solace | quantum-of-solace-2008 | Accion | Netflix | +12 |
 | 2008 | Red de mentiras | red-de-mentiras-2008 | Accion | HBO Max + Apple TV | +17 |
@@ -1039,6 +1042,7 @@ Total de peliculas: 1500
 | 2001 | The Lord of the Rings: The Fellowship of the Ring | the-lord-of-the-rings-the-fellowship-of-the-ring-2001 | Aventura | Otras plataformas | +13 |
 | 2001 | The Majestic | the-majestic-2001 | Drama | Apple TV | ATP |
 | 2001 | The Others | the-others-2001 | Terror | Otras plataformas | +13 |
+| 2001 | Vanilla Sky | vanilla-sky-2001 | Drama | Paramount Plus | +13 |
 | 2000 | Amores perros | amores-perros-2000 | Drama | Netflix | +18 |
 | 2000 | Casi famosos | casi-famosos-2000 | Drama | Apple TV | +13 |
 | 2000 | Deseando amar | deseando-amar-2000 | Romance | Otras plataformas | +13 |
@@ -1076,6 +1080,7 @@ Total de peliculas: 1500
 | 1999 | Matrix | the-matrix-1999 | Ciencia ficcion | HBO Max + Apple TV | +13 |
 | 1999 | Mi viaje a Italia | my-voyage-to-italy-1999 | Documental | Otras plataformas | ATP |
 | 1999 | Mundo grúa | mundo-grua-1999 | Drama | Netflix | +13 |
+| 1999 | Ojos bien cerrados | ojos-bien-cerrados-1999 | Drama | Netflix | +13 |
 | 1999 | Silvia Prieto | silvia-prieto-1999 | Comedia | Otras plataformas | +13 |
 | 1999 | Sleepy Hollow | sleepy-hollow-1999 | Terror | Otras plataformas | +17 |
 | 1999 | Star Wars: Episode I - The Phantom Menace | star-wars-episode-i-the-phantom-menace-1999 | Ciencia ficcion | Disney Plus | ATP |
@@ -1210,6 +1215,7 @@ Total de peliculas: 1500
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus | +13 |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Otras plataformas | +13 |
 | 1990 | Darkman | darkman-1990 | Accion | Apple TV | +16 |
+| 1990 | Días de trueno | dias-de-trueno-1990 | Accion | Apple TV | +13 |
 | 1990 | Edward Scissorhands | edward-scissorhands-1990 | Fantasia | Otras plataformas | +13 |
 | 1990 | Mi pobre angelito | home-alone-1990 | Comedia | Disney Plus | ATP |
 | 1990 | Muerte entre las flores | muerte-entre-las-flores-1990 | Drama | Disney Plus | +16 |
