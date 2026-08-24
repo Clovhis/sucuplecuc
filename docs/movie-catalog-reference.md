@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1506
+Total de peliculas: 1508
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -587,10 +587,12 @@ Total de peliculas: 1506
 | 2017 | Logan | logan-2017 | Accion | Disney Plus | +17 |
 | 2017 | Los archivos del Pentágono | the-post-2017 | Drama | Otras plataformas | +13 |
 | 2017 | Los Meyerowitz: La familia no se elige | the-meyerowitz-stories-2017 | Drama | Netflix | +13 |
+| 2017 | Pequeña gran vida | pequena-gran-vida-2017 | Ciencia ficcion | Paramount Plus | +17 |
 | 2017 | Pirates of the Caribbean: Dead Men Tell No Tales | pirates-of-the-caribbean-dead-men-tell-no-tales-2017 | Aventura | Disney Plus | +13 |
 | 2017 | Sandy Wexler | sandy-wexler-2017 | Comedia | Netflix | +16 |
 | 2017 | Spider-Man: Homecoming | spider-man-homecoming-2017 | Accion | HBO Max | +13 |
 | 2017 | Star Wars: The Last Jedi | star-wars-episode-viii-the-last-jedi-2017 | Ciencia ficcion | Disney Plus | +13 |
+| 2017 | Suburbicon | suburbicon-2017 | Thriller | Otras plataformas | +17 |
 | 2017 | The Breadwinner (El pan de la guerra) | the-breadwinner-el-pan-de-la-guerra-2017 | Animacion | Prime Video | +13 |
 | 2017 | The Fate of the Furious | the-fate-of-the-furious-2017 | Accion | HBO Max | +13 |
 | 2017 | The Shape of Water | the-shape-of-water-2017 | Drama | Disney Plus | +17 |
