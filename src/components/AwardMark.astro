@@ -1,5 +1,5 @@
 ---
-import { getAwardVisualMeta, type AwardVisualKey } from '../lib/awards';
+import { getAwardVisualKey, getAwardVisualMeta, type AwardVisualKey } from '../lib/awards';
 
 type Props = {
 	award: string | AwardVisualKey;
@@ -16,12 +16,15 @@ const {
 	label,
 	size = 28,
 } = Astro.props as Props;
-const meta = getAwardVisualMeta(String(award));
+const visualKey = getAwardVisualKey(String(award));
+const meta = getAwardVisualMeta(visualKey);
+const assetPath = meta.assetPath ?? '/brand/awards/illustrated/generic.webp';
 ---
 
 <img
-	class:list={['award-mark', className]}
-	src={meta.assetPath}
+	class:list={['award-mark', 'award-mark--image', className]}
+	data-award-visual={visualKey}
+	src={assetPath}
 	alt={decorative ? '' : label ?? meta.alt}
 	width={size}
 	height={size}

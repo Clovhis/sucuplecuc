@@ -198,11 +198,11 @@ function getSourceLabel(url: string): string {
 				<ul class="person-page__award-list">
 					{profile.awards.map((award) => (
 						<li class="person-page__award-item" data-award={getAwardVisualKey(award.label)}>
-							<div>
+							<span class="person-page__award-mark-shell" aria-hidden="true">
+								<AwardMark award={award.label} class="person-page__award-mark" size={128} />
+							</span>
+							<div class="person-page__award-copy">
 								<div class="person-page__award-head">
-									<span class="person-page__award-mark-shell" aria-hidden="true">
-										<AwardMark award={award.label} class="person-page__award-mark" size={30} />
-									</span>
 									<p class="person-page__award-label">{award.label}</p>
 								</div>
 								<p class="person-page__award-category">{award.category}</p>

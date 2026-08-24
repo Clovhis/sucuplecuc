@@ -267,12 +267,12 @@ if (root) {
 		'mar-del-plata': {
 			label: 'Premio del público · Mar del Plata',
 			short: 'Mar del Plata',
-			asset: 'generic-award.svg',
+			asset: 'illustrated/generic.webp',
 		},
-		goya: { label: 'Premio Goya', short: 'Goya', asset: 'generic-award.svg' },
-		cannes: { label: 'Palma de Oro · Cannes', short: 'Cannes', asset: 'cannes.svg' },
-		'golden-globe': { label: 'Globo de Oro', short: 'Globo de Oro', asset: 'golden-globe.svg' },
-		oscar: { label: 'Premio Oscar', short: 'Oscar', asset: 'oscar.svg' },
+		goya: { label: 'Premio Goya', short: 'Goya', asset: 'illustrated/goya.webp' },
+		cannes: { label: 'Palma de Oro · Cannes', short: 'Cannes', asset: 'illustrated/cannes.webp' },
+		'golden-globe': { label: 'Globo de Oro', short: 'Globo de Oro', asset: 'illustrated/golden-globe.webp' },
+		oscar: { label: 'Premio Oscar', short: 'Oscar', asset: 'illustrated/oscar.webp' },
 	};
 
 	const careerEvents: CareerEvent[] = [
