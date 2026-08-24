@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1521
+Total de peliculas: 1526
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -391,6 +391,7 @@ Total de peliculas: 1521
 | 2023 | Wonka | wonka-2023 | Fantasia | HBO Max | ATP |
 | 2022 | Aftersun | aftersun-2022 | Drama | Otras plataformas | +13 |
 | 2022 | All Quiet on the Western Front | all-quiet-on-the-western-front-2022 | Drama | Netflix | +16 |
+| 2022 | Ámsterdam | amsterdam-2022 | Comedia | Otras plataformas | +13 |
 | 2022 | Argentina, 1985 | argentina-1985-2022 | Drama | Prime Video | +17 |
 | 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Ciencia ficcion | Disney Plus | +13 |
 | 2022 | Black Adam | black-adam-2022 | Accion | HBO Max | +13 |
@@ -547,6 +548,7 @@ Total de peliculas: 1521
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus | +17 |
 | 2018 | El Ángel | el-angel-2018 | Crimen | Otras plataformas | +16 |
 | 2018 | El pasajero | el-pasajero-2018 | Thriller | Apple TV + Prime Video | +13 |
+| 2018 | El vicepresidente: Más allá del poder | el-vicepresidente-mas-alla-del-poder-2018 | Comedia | Otras plataformas | +17 |
 | 2018 | Fantastic Beasts: The Crimes of Grindelwald | fantastic-beasts-the-crimes-of-grindelwald-2018 | Fantasia | HBO Max | +13 |
 | 2018 | Green Book | green-book-2018 | Drama | Prime Video | +13 |
 | 2018 | Hereditary | hereditary-2018 | Terror | Prime Video + Apple TV | +16 |
@@ -636,6 +638,7 @@ Total de peliculas: 1521
 | 2015 | Anomalisa | anomalisa-2015 | Animacion | Apple TV | +16 |
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus | +13 |
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus | +20 |
+| 2015 | Caballero de copas | caballero-de-copas-2015 | Drama | Otras plataformas | +13 |
 | 2015 | Creed | creed-2015 | Drama | Otras plataformas | +13 |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus | +16 |
 | 2015 | El puente de los espías | bridge-of-spies-2015 | Thriller | Otras plataformas | +13 |
@@ -709,6 +712,7 @@ Total de peliculas: 1521
 | 2013 | El único superviviente | el-unico-superviviente-2013 | Accion | Apple TV + Prime Video | +17 |
 | 2013 | Elysium | elysium-2013 | Accion | HBO Max | +17 |
 | 2013 | Enemy | enemy-2013 | Thriller | Otras plataformas | +16 |
+| 2013 | Escándalo americano | escandalo-americano-2013 | Comedia | Otras plataformas | +13 |
 | 2013 | Fast & Furious 6 | fast-and-furious-6-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Frozen | frozen-2013 | Animacion | Disney Plus | ATP |
 | 2013 | Her | her-2013 | Romance | HBO Max + Apple TV | +13 |
@@ -819,6 +823,7 @@ Total de peliculas: 1521
 | 2009 | Distrito 9 | districte-9-2009 | Ciencia ficcion | HBO Max + Apple TV | +13 |
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus | +16 |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix | +13 |
+| 2009 | Enemigos públicos | enemigos-publicos-2009 | Crimen | Otras plataformas | +13 |
 | 2009 | Fantástico Sr. Fox | fantastico-sr-fox-2009 | Animacion | Prime Video | ATP |
 | 2009 | Fast & Furious | fast-and-furious-2009 | Accion | HBO Max | +13 |
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
