@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1494
+Total de peliculas: 1495
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -856,6 +856,7 @@ Total de peliculas: 1494
 | 2007 | El asesinato de Jesse James por el cobarde Robert Ford | el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007 | Western | HBO Max + Apple TV | +17 |
 | 2007 | El orfanato | el-orfanato-2007 | Terror | Prime Video | +13 |
 | 2007 | El sueño de Casandra | cassandra-s-dream-2007 | Drama | Otras plataformas | +16 |
+| 2007 | El ultimátum de Bourne | el-ultimatum-de-bourne-2007 | Accion | HBO Max | +13 |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus | ATP |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Otras plataformas | +13 |
 | 2007 | Halloween | halloween-2007 | Terror | Otras plataformas | +17 |
