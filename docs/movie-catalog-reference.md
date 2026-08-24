@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1544
+Total de peliculas: 1559
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -402,6 +402,7 @@ Total de peliculas: 1544
 | 2022 | Doctor Strange in the Multiverse of Madness | doctor-strange-in-the-multiverse-of-madness-2022 | Accion | Disney Plus | +13 |
 | 2022 | EGO | ego-2022 | Terror | Netflix | +16 |
 | 2022 | El hombre del norte | el-hombre-del-norte-2022 | Accion | Netflix + Apple TV | +16 |
+| 2022 | El hombre gris | el-hombre-gris-2022 | Accion | Netflix | +13 |
 | 2022 | El menú | el-menu-2022 | Terror | Prime Video + Disney Plus | +13 |
 | 2022 | El sastre de la mafia | el-sastre-de-la-mafia-2022 | Crimen | Apple TV | +17 |
 | 2022 | El suplente | el-suplente-2022 | Drama | Netflix | +13 |
@@ -550,6 +551,7 @@ Total de peliculas: 1544
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus | +17 |
 | 2018 | El Ángel | el-angel-2018 | Crimen | Otras plataformas | +16 |
 | 2018 | El pasajero | el-pasajero-2018 | Thriller | Apple TV + Prime Video | +13 |
+| 2018 | El primer hombre en la Luna | el-primer-hombre-en-la-luna-2018 | Drama | Otras plataformas | +13 |
 | 2018 | El vicepresidente: Más allá del poder | el-vicepresidente-mas-alla-del-poder-2018 | Comedia | Otras plataformas | +17 |
 | 2018 | Fantastic Beasts: The Crimes of Grindelwald | fantastic-beasts-the-crimes-of-grindelwald-2018 | Fantasia | HBO Max | +13 |
 | 2018 | Green Book | green-book-2018 | Drama | Prime Video | +13 |
@@ -721,6 +723,7 @@ Total de peliculas: 1544
 | 2013 | Escándalo americano | escandalo-americano-2013 | Comedia | Otras plataformas | +13 |
 | 2013 | Fast & Furious 6 | fast-and-furious-6-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Frozen | frozen-2013 | Animacion | Disney Plus | ATP |
+| 2013 | Fuerza antigángster | fuerza-antigangster-2013 | Accion | Otras plataformas | +16 |
 | 2013 | Her | her-2013 | Romance | HBO Max + Apple TV | +13 |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus | +13 |
 | 2013 | La maldición de Chucky | curse-of-chucky-2013 | Terror | HBO Max | +17 |
@@ -730,6 +733,7 @@ Total de peliculas: 1544
 | 2013 | Prisioneros | prisioneros-2013 | Thriller | Otras plataformas | +17 |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max | +13 |
 | 2013 | Sharknado | sharknado-2013 | Terror | Prime Video | +13 |
+| 2013 | Sólo Dios perdona | solo-dios-perdona-2013 | Crimen | Otras plataformas | +16 |
 | 2013 | Son como niños 2 | grown-ups-2-2013 | Comedia | Apple TV + HBO Max | +13 |
 | 2013 | Tesis sobre un homicidio | tesis-sobre-un-homicidio-2013 | Thriller | HBO Max | +16 |
 | 2013 | The Tale of the Princess Kaguya | the-tale-of-the-princess-kaguya-2013 | Anime | Netflix | ATP |
@@ -779,7 +783,9 @@ Total de peliculas: 1544
 | 2011 | La invención de Hugo | hugo-2011 | Aventura | Otras plataformas | ATP |
 | 2011 | La piel que habito | la-piel-que-habito-2011 | Terror | Netflix | +16 |
 | 2011 | Las aventuras de Tintín: El secreto del unicornio | the-adventures-of-tintin-2011 | Animacion | Otras plataformas | ATP |
+| 2011 | Loco y estúpido amor | loco-y-estupido-amor-2011 | Comedia romantica | Otras plataformas | +13 |
 | 2011 | Los agentes del destino | los-agentes-del-destino-2011 | Ciencia ficcion | HBO Max | +13 |
+| 2011 | Los idus de marzo | los-idus-de-marzo-2011 | Thriller | Otras plataformas | +13 |
 | 2011 | Los pingüinos de papá | los-pinguinos-de-papa-2011 | Comedia | Otras plataformas | ATP |
 | 2011 | Medianeras | medianeras-2011 | Comedia romántica | Otras plataformas | +13 |
 | 2011 | Medianoche en París | midnight-in-paris-2011 | Fantasia | Otras plataformas | +13 |
@@ -802,8 +808,10 @@ Total de peliculas: 1544
 | 2010 | A Serbian Film | a-serbian-film-2010 | Gore | Otras plataformas | +18 |
 | 2010 | Alice in Wonderland | alice-in-wonderland-2010 | Fantasia | Disney Plus | ATP |
 | 2010 | Amor y otras drogas | amor-y-otras-drogas-2010 | Romance | Prime Video | +17 |
+| 2010 | Blue Valentine | blue-valentine-2010 | Romance | Prime Video | +16 |
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
 | 2010 | Conocerás al hombre de tus sueños | you-will-meet-a-tall-dark-stranger-2010 | Drama | Otras plataformas | +13 |
+| 2010 | Crimen en familia | crimen-en-familia-2010 | Crimen | Otras plataformas | +16 |
 | 2010 | El equipo A | el-equipo-a-2010 | Accion | Disney Plus | +13 |
 | 2010 | El libro de Eli | el-libro-de-eli-2010 | Accion | HBO Max + Apple TV | +16 |
 | 2010 | El príncipe de Persia: Las arenas del tiempo | el-principe-de-persia-las-arenas-del-tiempo-2010 | Acción | Disney Plus | +13 |
@@ -885,6 +893,7 @@ Total de peliculas: 1544
 | 2008 | Vicky Cristina Barcelona | vicky-cristina-barcelona-2008 | Romance | Otras plataformas | +16 |
 | 2008 | WALL-E | wall-e-2008 | Animacion | Disney Plus | ATP |
 | 2007 | American Gangster | american-gangster-2007 | Crimen | Netflix + Prime Video | +16 |
+| 2007 | Crimen perfecto | crimen-perfecto-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Death Proof | death-proof-2007 | Thriller | Otras plataformas | +16 |
 | 2007 | El asesinato de Jesse James por el cobarde Robert Ford | el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007 | Western | HBO Max + Apple TV | +17 |
 | 2007 | El orfanato | el-orfanato-2007 | Terror | Prime Video | +13 |
@@ -899,6 +908,7 @@ Total de peliculas: 1544
 | 2007 | La esperanza vive en mí | reign-over-me-2007 | Drama | Apple TV + Netflix | +17 |
 | 2007 | La guerra de Charlie Wilson | la-guerra-de-charlie-wilson-2007 | Comedia | Netflix + HBO Max | +17 |
 | 2007 | La noche es nuestra | la-noche-es-nuestra-2007 | Crimen | Prime Video | +13 |
+| 2007 | Lars y la chica real | lars-y-la-chica-real-2007 | Drama | Prime Video | ATP |
 | 2007 | Número 23: La revelación | numero-23-la-revelacion-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Paranormal Activity | paranormal-activity-2007 | Terror | Otras plataformas | +17 |
 | 2007 | Persépolis | persepolis-2007 | Animacion | Apple TV | +13 |
@@ -926,6 +936,7 @@ Total de peliculas: 1544
 | 2006 | Firewall | firewall-2006 | Thriller | Otras plataformas | +13 |
 | 2006 | Invencible | invencible-2006 | Drama | Disney Plus | ATP |
 | 2006 | La fuente de la vida | la-fuente-de-la-vida-2006 | Drama | Prime Video | +13 |
+| 2006 | La otra cara de Nelson | la-otra-cara-de-nelson-2006 | Drama | Otras plataformas | +16 |
 | 2006 | La vida de los otros | la-vida-de-los-otros-2006 | Drama | Otras plataformas | +13 |
 | 2006 | Mission: Impossible III | mission-impossible-iii-2006 | Accion | Disney Plus | +13 |
 | 2006 | Niños del hombre | hijos-de-los-hombres-2006 | Ciencia ficcion | HBO Max + Apple TV | +13 |
@@ -951,6 +962,7 @@ Total de peliculas: 1544
 | 2005 | Crash | crash-2005 | Drama | Prime Video | +17 |
 | 2005 | Cuatro hermanos | cuatro-hermanos-2005 | Accion | Prime Video + Apple TV | +17 |
 | 2005 | El aura | el-aura-2005 | Thriller | HBO Max | +18 |
+| 2005 | El umbral | el-umbral-2005 | Thriller | Otras plataformas | +16 |
 | 2005 | Elektra | elektra-2005 | Accion | Netflix + Prime Video | +13 |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus | +13 |
 | 2005 | Golpe bajo: El juego final | the-longest-yard-2005 | Comedia | HBO Max + Netflix | +13 |
@@ -974,6 +986,7 @@ Total de peliculas: 1544
 | 2004 | Blade: Trinity | blade-trinity-2004 | Accion | Prime Video | +16 |
 | 2004 | Catwoman | catwoman-2004 | Accion | Netflix | +13 |
 | 2004 | Como si fuera la primera vez | 50-first-dates-2004 | Comedia | Apple TV + Prime Video | ATP |
+| 2004 | Diario de una pasión | diario-de-una-pasion-2004 | Romance | Otras plataformas | +13 |
 | 2004 | El abrazo partido | el-abrazo-partido-2004 | Comedia | HBO Max | +13 |
 | 2004 | El aviador | the-aviator-2004 | Drama | Otras plataformas | +13 |
 | 2004 | El castillo ambulante | howls-moving-castle-2004 | Anime | Netflix | ATP |
@@ -1027,6 +1040,7 @@ Total de peliculas: 1544
 | 2002 | Adaptation. El ladrón de orquídeas | adaptation-el-ladron-de-orquideas-2002 | Comedia | Apple TV | +13 |
 | 2002 | Atrápame si puedes | atrapame-si-puedes-2002 | Drama | Paramount Plus + Mercado Play | +13 |
 | 2002 | Blade II | blade-ii-2002 | Accion | Prime Video | +17 |
+| 2002 | Cálculo mortal | calculo-mortal-2002 | Thriller | Otras plataformas | +16 |
 | 2002 | Camino a la perdición | camino-a-la-perdicion-2002 | Drama | Disney Plus | +13 |
 | 2002 | Chicago | chicago-2002 | Comedia | Otras plataformas | +13 |
 | 2002 | Ciudad de Dios | ciudad-de-dios-2002 | Drama | HBO Max | +16 |
@@ -1057,6 +1071,7 @@ Total de peliculas: 1544
 | 2001 | Buffalo Soldiers | buffalo-soldiers-2001 | Comedia | Otras plataformas | +16 |
 | 2001 | Día de entrenamiento | dia-de-entrenamiento-2001 | Crimen | HBO Max + Apple TV | +17 |
 | 2001 | Donnie Darko | donnie-darko-2001 | Ciencia ficcion | Prime Video | +13 |
+| 2001 | El creyente | el-creyente-2001 | Drama | Otras plataformas | +16 |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus | +13 |
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max | ATP |
 | 2001 | Ichi the Killer | ichi-the-killer-2001 | Gore | Otras plataformas | +18 |
