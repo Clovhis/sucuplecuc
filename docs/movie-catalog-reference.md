@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1495
+Total de peliculas: 1496
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -797,6 +797,7 @@ Total de peliculas: 1495
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Otras plataformas | +12 |
 | 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
 | 2010 | Una carta a Elia | a-letter-to-elia-2010 | Documental | Otras plataformas | ATP |
+| 2010 | Zona verde | zona-verde-2010 | Accion | Apple TV | +17 |
 | 2009 | Asalto al tren Pelham 123 | asalto-al-tren-pelham-123-2009 | Crimen | Prime Video + HBO Max | +16 |
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Desde mi cielo | desde-mi-cielo-2009 | Drama | Prime Video + Apple TV | +13 |
