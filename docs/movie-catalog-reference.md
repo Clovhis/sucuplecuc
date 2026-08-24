@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1526
+Total de peliculas: 1528
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -744,6 +744,7 @@ Total de peliculas: 1526
 | 2012 | Jack Reacher: bajo la mira | jack-reacher-bajo-la-mira-2012 | Accion | Paramount Plus | +13 |
 | 2012 | La caza | la-caza-2012 | Drama | Prime Video | +16 |
 | 2012 | Lincoln | lincoln-2012 | Drama | Otras plataformas | +13 |
+| 2012 | Los miserables | los-miserables-2012 | Musical | Otras plataformas | +13 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
 | 2012 | Skyfall | skyfall-2012 | Accion | Netflix | +12 |
 | 2012 | Ted | ted-2012 | Comedia | Prime Video + Apple TV | +16 |
@@ -1046,6 +1047,7 @@ Total de peliculas: 1526
 | 2001 | Ichi the Killer | ichi-the-killer-2001 | Gore | Otras plataformas | +18 |
 | 2001 | Jason X: Martes 13, parte X | jason-x-2001 | Terror | HBO Max | +17 |
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video | +13 |
+| 2001 | Kate & Leopold | kate-leopold-2001 | Comedia romántica | Apple TV | ATP |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video | +13 |
 | 2001 | La maldición del escorpión de jade | the-curse-of-the-jade-scorpion-2001 | Comedia | Otras plataformas | +13 |
 | 2001 | La pianista | la-pianista-2001 | Drama | Otras plataformas | +18 |
