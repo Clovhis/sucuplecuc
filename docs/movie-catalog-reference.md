@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1499
+Total de peliculas: 1500
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -910,6 +910,7 @@ Total de peliculas: 1499
 | 2006 | The Fall: El sueño de Alexandria | the-fall-el-sueno-de-alexandria-2006 | Fantasia | Apple TV | +13 |
 | 2006 | The Fast and the Furious: Tokyo Drift | the-fast-and-the-furious-tokyo-drift-2006 | Accion | HBO Max | +13 |
 | 2006 | The Girl Who Leapt Through Time | the-girl-who-leapt-through-time-2006 | Anime | Otras plataformas | +13 |
+| 2006 | Una mirada en la oscuridad | una-mirada-en-la-oscuridad-2006 | Ciencia ficcion | Otras plataformas | +16 |
 | 2006 | X-Men: The Last Stand | x-men-the-last-stand-2006 | Accion | Disney Plus | +13 |
 | 2005 | Batman Begins | batman-begins-2005 | Accion | Netflix | +13 |
 | 2005 | Charlie and the Chocolate Factory | charlie-and-the-chocolate-factory-2005 | Fantasia | HBO Max | ATP |
