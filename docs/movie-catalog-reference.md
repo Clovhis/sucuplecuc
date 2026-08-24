@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1492
+Total de peliculas: 1493
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -994,6 +994,7 @@ Total de peliculas: 1492
 | 2002 | Halloween: Resurrection | halloween-resurrection-2002 | Terror | Otras plataformas | +17 |
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max | ATP |
 | 2002 | Hero | hero-2002 | Accion | Apple TV | +13 |
+| 2002 | Identidad desconocida | identidad-desconocida-2002 | Accion | HBO Max | +13 |
 | 2002 | John Q, situación extrema | john-q-situacion-extrema-2002 | Drama | Apple TV | +13 |
 | 2002 | Juego sucio (Infernal Affairs) | juego-sucio-infernal-affairs-2002 | Crimen | Otras plataformas | +16 |
 | 2002 | K-19: The Widowmaker | k-19-the-widowmaker-2002 | Drama | Prime Video + Apple TV | +13 |
