@@ -1148,7 +1148,7 @@
 			"https://www.imdb.com/name/nm0000199/",
 			"https://www.themoviedb.org/person/1158-al-pacino"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-08-24",
 		"source": "wikidata-imdb-cache"
 	},
 	"Alain Delon": {
@@ -12475,22 +12475,22 @@
 	},
 	"Christopher Plummer": {
 		"name": "Christopher Plummer",
+		"birthDate": "1929-12-13",
 		"birthYear": 1929,
+		"deathDate": "2021-02-05",
 		"deathYear": 2021,
 		"nationalityPrimary": "Canadiense",
 		"image": "/people/christopher-plummer-nm0001626.jpg",
 		"imdbId": "nm0001626",
 		"imdbUrl": "https://www.imdb.com/name/nm0001626/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Plummer%201964.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Plummer%201964.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q190523",
 			"https://www.imdb.com/name/nm0001626/",
 			"https://www.themoviedb.org/person/290-christopher-plummer"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1929-12-13",
-		"deathDate": "2021-02-05"
+		"lastVerifiedAt": "2026-08-24",
+		"source": "wikidata-imdb-cache"
 	},
 	"Christopher Reeve": {
 		"name": "Christopher Reeve",
@@ -17316,6 +17316,23 @@
 			"https://www.themoviedb.org/person/5131-diane-salinger"
 		],
 		"lastVerifiedAt": "2026-04-27",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Diane Venora": {
+		"name": "Diane Venora",
+		"birthDate": "1952-08-10",
+		"birthYear": 1952,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/diane-venora-nm0893204.jpg",
+		"imdbId": "nm0893204",
+		"imdbUrl": "https://www.imdb.com/name/nm0893204/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/mZWVEZ18jMiJuS3A56tejPipdo8.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q162554",
+			"https://www.imdb.com/name/nm0893204/",
+			"https://www.themoviedb.org/person/6200-diane-venora"
+		],
+		"lastVerifiedAt": "2026-08-24",
 		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Dianne Wiest": {
@@ -39446,6 +39463,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1965-04-26"
 	},
+	"Kevin Macdonald": {
+		"name": "Kevin Macdonald",
+		"birthDate": "1967-10-28",
+		"birthYear": 1967,
+		"nationalityPrimary": "Británico",
+		"image": "/people/kevin-macdonald-nm0531817.jpg",
+		"imdbId": "nm0531817",
+		"imdbUrl": "https://www.imdb.com/name/nm0531817/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kevin%20Macdonald%20(cropped).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q1344373",
+			"https://www.imdb.com/name/nm0531817/",
+			"https://www.themoviedb.org/person/17350-kevin-macdonald"
+		],
+		"lastVerifiedAt": "2026-08-24",
+		"source": "wikidata-imdb-cache"
+	},
 	"Kevin Nealon": {
 		"name": "Kevin Nealon",
 		"birthDate": "1953-11-18",
@@ -48853,7 +48887,7 @@
 			"https://www.imdb.com/name/nm0000520/",
 			"https://www.themoviedb.org/person/638-michael-mann"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-08-24",
 		"source": "wikidata-imdb-cache"
 	},
 	"Michael McKean": {
@@ -49033,14 +49067,14 @@
 		"image": "/people/michael-rispoli-nm0728346.jpg",
 		"imdbId": "nm0728346",
 		"imdbUrl": "https://www.imdb.com/name/nm0728346/",
-    "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/4rtCKJTtPq9cSHFQqZSbyCLLWCO.jpg",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/4rtCKJTtPq9cSHFQqZSbyCLLWCO.jpg",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q1189681",
 			"https://www.imdb.com/name/nm0728346/",
 			"https://www.themoviedb.org/person/18313-michael-rispoli"
 		],
 		"lastVerifiedAt": "2026-08-23",
-    "source": "wikidata-imdb-tmdb-cache"
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Michael Sacks": {
 		"name": "Michael Sacks",
@@ -55575,7 +55609,7 @@
 			"https://www.imdb.com/name/nm0001311/",
 			"https://www.themoviedb.org/person/4492-philip-baker-hall"
 		],
-		"lastVerifiedAt": "2026-08-22",
+		"lastVerifiedAt": "2026-08-24",
 		"source": "wikidata-imdb-cache"
 	},
 	"Philip Barantini": {
@@ -59677,7 +59711,7 @@
 			"https://www.imdb.com/name/nm0000128/",
 			"https://www.themoviedb.org/person/934-russell-crowe"
 		],
-		"lastVerifiedAt": "2026-08-23",
+		"lastVerifiedAt": "2026-08-24",
 		"source": "wikidata-imdb-cache"
 	},
 	"Russell Todd": {

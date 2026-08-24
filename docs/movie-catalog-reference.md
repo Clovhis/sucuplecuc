@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-23. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1482
+Total de peliculas: 1486
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -680,6 +680,7 @@ Total de peliculas: 1482
 | 2014 | La canción del mar | la-cancion-del-mar-2014 | Animacion | Apple TV | ATP |
 | 2014 | Luna de miel en familia | blended-2014 | Comedia | Apple TV + HBO Max | +13 |
 | 2014 | Magia a la luz de la luna | magic-in-the-moonlight-2014 | Romance | Otras plataformas | +13 |
+| 2014 | Noé | noe-2014 | Drama | Netflix | +13 |
 | 2014 | Non-Stop (Sin escalas) | non-stop-sin-escalas-2014 | Thriller | Apple TV | +13 |
 | 2014 | Redada Asesina 2 | redada-asesina-2-2014 | Accion | Apple TV | +18 |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max | +16 |
@@ -788,6 +789,7 @@ Total de peliculas: 1482
 | 2010 | Los otros dos | los-otros-dos-2010 | Comedia | HBO Max + Apple TV | +17 |
 | 2010 | Machete | machete-2010 | Accion | Otras plataformas | +18 |
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
+| 2010 | Robin Hood | robin-hood-2010 | Drama | Netflix | +13 |
 | 2010 | Saw 3D | saw-3d-2010 | Gore | Otras plataformas | +18 |
 | 2010 | Shutter Island | shutter-island-2010 | Thriller | Otras plataformas | +17 |
 | 2010 | Son como niños | grown-ups-2010 | Comedia | Prime Video + Netflix | ATP |
@@ -813,6 +815,7 @@ Total de peliculas: 1482
 | 2009 | La cinta blanca | la-cinta-blanca-2009 | Drama | Apple TV | +17 |
 | 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
 | 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Apple TV | +13 |
+| 2009 | Los secretos del poder | los-secretos-del-poder-2009 | Drama | Apple TV | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
 | 2009 | Saw VI | saw-vi-2009 | Gore | Otras plataformas | +18 |
 | 2009 | Si la cosa funciona | whatever-works-2009 | Comedia | Otras plataformas | +13 |
@@ -1055,6 +1058,7 @@ Total de peliculas: 1482
 | 1999 | Cómo ser John Malkovich | como-ser-john-malkovich-1999 | Comedia | Apple TV | +16 |
 | 1999 | El club de la pelea | fight-club-1999 | Drama | Paramount Plus + Prime Video | +13 |
 | 1999 | El gigante de hierro | el-gigante-de-hierro-1999 | Animacion | Apple TV | ATP |
+| 1999 | El informante | el-informante-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Garage Olimpo | garage-olimpo-1999 | Drama | CINE.AR | +18 |
 | 1999 | Huracán Carter | huracan-carter-1999 | Drama | Prime Video + Apple TV | +13 |
 | 1999 | La milla verde | la-milla-verde-1999 | Drama | Prime Video | +17 |

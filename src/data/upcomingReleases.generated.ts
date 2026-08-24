@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-23T16:12:34.948Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-24T22:15:25.079Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -16,7 +16,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "La guerra de los últimos",
 		"releaseDate": "2026-08-27",
 		"videoUrl": "https://www.youtube.com/watch?v=-xSxaE1ClEE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yhCHnkidQdR3lksbdyFxduRXFPK.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10482-la-guerra-de-los-ultimos/"
 	},
 	{
@@ -77,11 +77,19 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
 	},
 	{
-		"slug": "finding-emily",
-		"title": "Emily, ¿dónde estás?",
-		"releaseDate": "2026-09-17",
-		"videoUrl": "https://www.youtube.com/watch?v=-OGuJf70S0s",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
+		"slug": "oasis-don-t-look-back-in-anger",
+		"title": "Oasis: Don't look back in anger",
+		"releaseDate": "2026-09-10",
+		"videoUrl": "https://www.youtube.com/watch?v=6z_0B_lyRTo",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ud7QIJo21odjCaev6V4md9sK16.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10545-oasis-don-t-look-back-in-anger/"
+	},
+	{
+		"slug": "mutiny",
+		"title": "Código: Venganza",
+		"releaseDate": "2026-09-10",
+		"videoUrl": "https://www.youtube.com/watch?v=2Iqvbe98Gb4",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10574-codigo-venganza/"
 	}
 ];
