@@ -75892,5 +75892,43 @@
 		],
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
+	},
+	"Bob Rafelson": {
+		"name": "Bob Rafelson",
+		"birthDate": "1933-02-21",
+		"birthYear": 1933,
+		"deathDate": "2022-07-23",
+		"deathYear": 2022,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/bob-rafelson-nm0706182.jpg",
+		"imdbId": "nm0706182",
+		"imdbUrl": "https://www.imdb.com/name/nm0706182/",
+		"remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fd%2Fpeople%2Fd417e5b36f8263e96cbbffb007df0fdc.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q95039",
+			"https://www.imdb.com/name/nm0706182/",
+			"https://www.themoviedb.org/person/19450-bob-rafelson"
+		],
+		"lastVerifiedAt": "2026-08-25",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Carrie Snodgress": {
+		"name": "Carrie Snodgress",
+		"birthDate": "1945-10-27",
+		"birthYear": 1945,
+		"deathDate": "2004-04-01",
+		"deathYear": 2004,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/carrie-snodgress-nm0811202.jpg",
+		"imdbId": "nm0811202",
+		"imdbUrl": "https://www.imdb.com/name/nm0811202/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrie%20Snodgress%20(1970).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q266425",
+			"https://www.imdb.com/name/nm0811202/",
+			"https://www.themoviedb.org/person/44831-carrie-snodgress"
+		],
+		"lastVerifiedAt": "2026-08-25",
+		"source": "wikidata-imdb-tmdb-cache"
 	}
 }
