@@ -36276,7 +36276,7 @@
 			"https://www.imdb.com/name/nm0000518/",
 			"https://www.themoviedb.org/person/6949-john-malkovich"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
 	"John McEnroe": {
@@ -44662,6 +44662,23 @@
 		"lastVerifiedAt": "2026-04-17",
 		"source": "wikidata-imdb-tmdb-cache",
 		"nationalityPrimary": "Estadounidense"
+	},
+	"Lindsay Crouse": {
+		"name": "Lindsay Crouse",
+		"birthDate": "1948-05-12",
+		"birthYear": 1948,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/lindsay-crouse-nm0001080.jpg",
+		"imdbId": "nm0001080",
+		"imdbUrl": "https://www.imdb.com/name/nm0001080/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/p9xfNphbZNvSfqxGA4za87VKuQI.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q238912",
+			"https://www.imdb.com/name/nm0001080/",
+			"https://www.themoviedb.org/person/32225-lindsay-crouse"
+		],
+		"lastVerifiedAt": "2026-08-25",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Lindsay Lohan": {
 		"name": "Lindsay Lohan",
@@ -61395,7 +61412,9 @@
 	},
 	"Robert Benton": {
 		"name": "Robert Benton",
+		"birthDate": "1932-09-29",
 		"birthYear": 1932,
+		"deathDate": "2025-05-11",
 		"deathYear": 2025,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/robert-benton-nm0000914.jpg",
@@ -61407,10 +61426,8 @@
 			"https://www.imdb.com/name/nm0000914/",
 			"https://www.themoviedb.org/person/6729-robert-benton"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-tmdb-cache",
-		"birthDate": "1932-09-29",
-		"deathDate": "2025-05-11"
+		"lastVerifiedAt": "2026-08-25",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Robert Blake": {
 		"name": "Robert Blake",
@@ -63641,7 +63658,7 @@
 			"https://www.imdb.com/name/nm0000398/",
 			"https://www.themoviedb.org/person/35-sally-field"
 		],
-		"lastVerifiedAt": "2026-05-08",
+		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
 	"Sally Hawkins": {
