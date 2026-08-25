@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1705
+Total de peliculas: 1712
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1082,6 +1082,7 @@ Total de peliculas: 1705
 | 2003 | Elephant | elephant-2003 | Drama | HBO Max | +16 |
 | 2003 | Finding Nemo | finding-nemo-2003 | Animacion | Disney Plus | ATP |
 | 2003 | Freddy contra Jason | freddy-vs-jason-2003 | Terror | HBO Max | +17 |
+| 2003 | Hollywood: Departamento de homicidios | hollywood-departamento-de-homicidios-2003 | Comedia | HBO Max | +13 |
 | 2003 | Hulk | hulk-2003 | Accion | Prime Video | +13 |
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix | +18 |
 | 2003 | La estafa maestra | la-estafa-maestra-2003 | Accion | Netflix + Prime Video | +13 |
@@ -1179,6 +1180,7 @@ Total de peliculas: 1705
 | 2000 | Gladiator | gladiator-2000 | Drama | Otras plataformas | +17 |
 | 2000 | Granujas de medio pelo | small-time-crooks-2000 | Comedia | Otras plataformas | +13 |
 | 2000 | La tormenta perfecta | la-tormenta-perfecta-2000 | Drama | Prime Video + HBO Max | +13 |
+| 2000 | Lo que la verdad esconde | lo-que-la-verdad-esconde-2000 | Terror | Disney Plus | +13 |
 | 2000 | Memento | memento-2000 | Thriller | Otras plataformas | +13 |
 | 2000 | Mission: Impossible II | mission-impossible-ii-2000 | Accion | Otras plataformas | +13 |
 | 2000 | Náufrago | naufrago-2000 | Drama | Paramount Plus | +13 |
@@ -1241,6 +1243,7 @@ Total de peliculas: 1705
 | 1998 | Poseídos | poseidos-1998 | Thriller | HBO Max + Apple TV | +16 |
 | 1998 | Ronin | ronin-1998 | Acción | Prime Video + Apple TV | +16 |
 | 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix | +16 |
+| 1998 | Seis días y siete noches | seis-dias-y-siete-noches-1998 | Comedia romántica | Disney Plus | +13 |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Otras plataformas | +17 |
 | 1998 | Un romance peligroso | un-romance-peligroso-1998 | Drama | Apple TV | +13 |
 | 1997 | Alien Resurrection | alien-resurrection-1997 | Ciencia ficcion | Disney Plus | +17 |
@@ -1314,6 +1317,7 @@ Total de peliculas: 1705
 | 1995 | Nixon | nixon-1995 | Drama | Disney Plus | +13 |
 | 1995 | Poderosa Afrodita | mighty-aphrodite-1995 | Comedia | Otras plataformas | +13 |
 | 1995 | Rob Roy, la pasión de un rebelde | rob-roy-la-pasion-de-un-rebelde-1995 | Aventura | Apple TV | +16 |
+| 1995 | Sabrina (y sus amores) | sabrina-y-sus-amores-1995 | Comedia romántica | Prime Video | ATP |
 | 1995 | Seven | se7en-1995 | Thriller | HBO Max + Apple TV | +13 |
 | 1995 | Showgirls | showgirls-1995 | Drama | Prime Video + Apple TV | +18 |
 | 1995 | Toy Story | toy-story-1995 | Animacion | Disney Plus | ATP |
@@ -1328,6 +1332,7 @@ Total de peliculas: 1705
 | 1994 | Hoop Dreams | hoop-dreams-1994 | Documental | Otras plataformas | ATP |
 | 1994 | La máscara | la-mascara-1994 | Comedia | Prime Video + HBO Max | ATP |
 | 1994 | La nueva pesadilla de Wes Craven | wes-craven-s-new-nightmare-1994 | Terror | Otras plataformas | +17 |
+| 1994 | Peligro inminente | peligro-inminente-1994 | Acción | Prime Video | +13 |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix | +18 |
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
@@ -1361,6 +1366,7 @@ Total de peliculas: 1705
 | 1992 | El último mohicano | el-ultimo-mohicano-1992 | Acción | Netflix + Otras plataformas | +13 |
 | 1992 | Éxito a cualquier precio | exito-a-cualquier-precio-1992 | Drama | Otras plataformas | +17 |
 | 1992 | Hard Boiled | hard-boiled-1992 | Accion | Otras plataformas | +16 |
+| 1992 | Juego de patriotas | juego-de-patriotas-1992 | Acción | Prime Video | +13 |
 | 1992 | La muerte le sienta bien | la-muerte-le-sienta-bien-1992 | Comedia | HBO Max | +13 |
 | 1992 | Malcolm X | malcolm-x-1992 | Drama | Apple TV | +16 |
 | 1992 | Maridos y esposas | husbands-and-wives-1992 | Drama | Otras plataformas | +16 |
@@ -1553,6 +1559,7 @@ Total de peliculas: 1705
 | 1979 | Apocalipsis ahora | apocalypse-now-1979 | Drama | Prime Video | +13 |
 | 1979 | Empieza el espectáculo | empieza-el-espectaculo-1979 | Drama | Otras plataformas | +16 |
 | 1979 | Kramer vs. Kramer | kramer-vs-kramer-1979 | Drama | HBO Max | ATP |
+| 1979 | La calle del adiós | la-calle-del-adios-1979 | Drama | Otras plataformas | +13 |
 | 1979 | La vida de Brian | la-vida-de-brian-1979 | Comedia | Otras plataformas | +13 |
 | 1979 | Mad Max | mad-max-1979 | Accion | HBO Max | +18 |
 | 1979 | Manhattan | manhattan-1979 | Romance | Otras plataformas | +13 |
