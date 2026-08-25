@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1611
+Total de peliculas: 1616
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -819,6 +819,7 @@ Total de peliculas: 1611
 | 2011 | The Human Centipede 2 (Full Sequence) | the-human-centipede-2-full-sequence-2011 | Terror | Otras plataformas | +18 |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
+| 2011 | Un golpe de altura | un-golpe-de-altura-2011 | Comedia | Apple TV | +13 |
 | 2011 | Un zoológico en casa | un-zoologico-en-casa-2011 | Drama | Disney Plus | ATP |
 | 2011 | Una esposa de mentira | just-go-with-it-2011 | Comedia | Apple TV + HBO Max | +17 |
 | 2011 | War Horse (Caballo de batalla) | war-horse-2011 | Drama | Otras plataformas | +13 |
@@ -846,6 +847,7 @@ Total de peliculas: 1611
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
 | 2010 | Robin Hood | robin-hood-2010 | Drama | Netflix | +13 |
 | 2010 | Saw 3D | saw-3d-2010 | Gore | Otras plataformas | +18 |
+| 2010 | Shrek, felices para siempre | shrek-felices-para-siempre-2010 | Animacion | Prime Video + Disney Plus | ATP |
 | 2010 | Shutter Island | shutter-island-2010 | Thriller | Otras plataformas | +17 |
 | 2010 | Son como niños | grown-ups-2010 | Comedia | Prime Video + Netflix | ATP |
 | 2010 | The Fighter | the-fighter-2010 | Drama | Otras plataformas | +16 |
@@ -1031,6 +1033,7 @@ Total de peliculas: 1611
 | 2004 | Napoleon Dynamite | napoleon-dynamite-2004 | Comedia | Otras plataformas | +13 |
 | 2004 | Primer | primer-2004 | Drama | Otras plataformas | +13 |
 | 2004 | Saw | saw-2004 | Gore | Otras plataformas | +18 |
+| 2004 | Shrek 2 | shrek-2-2004 | Animacion | Prime Video + Disney Plus | ATP |
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Otras plataformas | ATP |
 | 2004 | The Incredibles | the-incredibles-2004 | Animacion | Disney Plus | ATP |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max | +16 |
@@ -1335,6 +1338,7 @@ Total de peliculas: 1611
 | 1989 | Halloween 5: La venganza de Michael Myers | halloween-5-the-revenge-of-michael-myers-1989 | Terror | Otras plataformas | +17 |
 | 1989 | Indiana Jones and the Last Crusade | indiana-jones-and-the-last-crusade-1989 | Aventura | Otras plataformas | +13 |
 | 1989 | Nicky, la aprendiz de bruja | nicky-la-aprendiz-de-bruja-1989 | Animacion | Netflix | ATP |
+| 1989 | Noches de Harlem | noches-de-harlem-1989 | Comedia | Otras plataformas | +13 |
 | 1989 | Nunca fuimos ángeles | nunca-fuimos-angeles-1989 | Comedia | Prime Video + Apple TV | +13 |
 | 1989 | Pesadilla en Elm Street 5: El niño de los sueños | a-nightmare-on-elm-street-5-the-dream-child-1989 | Terror | Otras plataformas | +17 |
 | 1989 | Santa Sangre | santa-sangre-1989 | Terror | Apple TV | +18 |
@@ -1435,6 +1439,7 @@ Total de peliculas: 1611
 | 1982 | Gandhi | gandhi-1982 | Drama | Otras plataformas | ATP |
 | 1982 | Halloween III: El día de la bruja | halloween-iii-season-of-the-witch-1982 | Terror | Otras plataformas | +17 |
 | 1982 | La cosa | la-cosa-el-enigma-de-otro-mundo-1982 | Terror | HBO Max + Apple TV | +13 |
+| 1982 | Límite: 48 horas | limite-48-horas-1982 | Accion | Apple TV | +16 |
 | 1982 | Poltergeist | poltergeist-1982 | Terror | Otras plataformas | ATP |
 | 1982 | Rocky III | rocky-iii-1982 | Drama | Otras plataformas | ATP |
 | 1982 | Viernes 13, parte III | friday-the-13th-part-iii-1982 | Terror | Otras plataformas | +18 |
