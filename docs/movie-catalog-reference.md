@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1652
+Total de peliculas: 1659
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -885,6 +885,7 @@ Total de peliculas: 1652
 | 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Apple TV | +13 |
 | 2009 | Los secretos del poder | los-secretos-del-poder-2009 | Drama | Apple TV | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
+| 2009 | Nine | nine-2009 | Drama | Apple TV + Otras plataformas | +13 |
 | 2009 | Saw VI | saw-vi-2009 | Gore | Otras plataformas | +18 |
 | 2009 | Si la cosa funciona | whatever-works-2009 | Comedia | Otras plataformas | +13 |
 | 2009 | Terminator Salvation | terminator-salvation-2009 | Accion | Netflix | +13 |
@@ -1008,6 +1009,7 @@ Total de peliculas: 1652
 | 2005 | Hostel | hostel-2005 | Gore | Otras plataformas | +18 |
 | 2005 | Jarhead, el infierno espera | jarhead-el-infierno-espera-2005 | Drama | HBO Max | +17 |
 | 2005 | Johnny & June: Pasión y locura | johnny-june-pasion-y-locura-2005 | Biografica | Disney Plus | +13 |
+| 2005 | La balada de Jack y Rose | la-balada-de-jack-y-rose-2005 | Drama | Apple TV | +16 |
 | 2005 | La guerra de los mundos | war-of-the-worlds-2005 | Ciencia ficcion | Otras plataformas | +13 |
 | 2005 | La propuesta | la-propuesta-2005 | Western | Prime Video | +13 |
 | 2005 | Las locuras de Dick y Jane | las-locuras-de-dick-y-jane-2005 | Comedia | Otras plataformas | +13 |
@@ -1223,6 +1225,7 @@ Total de peliculas: 1652
 | 1997 | Contacto | contacto-1997 | Ciencia ficcion | Apple TV | +13 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
 | 1997 | Donnie Brasco | donnie-brasco-1997 | Drama | Otras plataformas | +17 |
+| 1997 | El boxeador | el-boxeador-1997 | Drama | Apple TV | +16 |
 | 1997 | El coleccionista de amantes | el-coleccionista-de-amantes-1997 | Drama | Otras plataformas | +16 |
 | 1997 | El pacificador | el-pacificador-1997 | Accion | Paramount Plus | +13 |
 | 1997 | El poder de la justicia | el-poder-de-la-justicia-1997 | Drama | Netflix | +13 |
@@ -1241,6 +1244,7 @@ Total de peliculas: 1652
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video | +13 |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus | +13 |
 | 1996 | A prueba de balas | bulletproof-1996 | Accion | Apple TV | +17 |
+| 1996 | El crisol | el-crisol-1996 | Drama | Disney Plus + Otras plataformas | +16 |
 | 1996 | El insoportable | el-insoportable-1996 | Comedia | Apple TV | +13 |
 | 1996 | En honor a la verdad | en-honor-a-la-verdad-1996 | Drama | Disney Plus | +13 |
 | 1996 | Fanático | fanatico-1996 | Thriller | Netflix + HBO Max | +16 |
@@ -1301,6 +1305,7 @@ Total de peliculas: 1652
 | 1993 | El fugitivo | el-fugitivo-1993 | Acción | HBO Max | +13 |
 | 1993 | El informe Pelícano | el-informe-pelicano-1993 | Thriller | Apple TV | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
+| 1993 | En el nombre del padre | en-el-nombre-del-padre-1993 | Drama | Apple TV | +16 |
 | 1993 | Funes, un gran amor | funes-un-gran-amor-1993 | Drama | Otras plataformas | +18 |
 | 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video + Netflix | +13 |
 | 1993 | La chica del gángster | la-chica-del-gangster-1993 | Comedia | Apple TV | +16 |
@@ -1319,6 +1324,7 @@ Total de peliculas: 1652
 | 1992 | Drácula de Bram Stoker | dracula-de-bram-stoker-1992 | Terror | Netflix | +18 |
 | 1992 | El ejército de las tinieblas | el-ejercito-de-las-tinieblas-1992 | Comedia | Prime Video + Apple TV | +17 |
 | 1992 | El juego de Hollywood | el-juego-de-hollywood-1992 | Drama | Otras plataformas | +13 |
+| 1992 | El último mohicano | el-ultimo-mohicano-1992 | Acción | Netflix + Otras plataformas | +13 |
 | 1992 | Éxito a cualquier precio | exito-a-cualquier-precio-1992 | Drama | Otras plataformas | +17 |
 | 1992 | Hard Boiled | hard-boiled-1992 | Accion | Otras plataformas | +16 |
 | 1992 | Malcolm X | malcolm-x-1992 | Drama | Apple TV | +16 |
@@ -1386,6 +1392,7 @@ Total de peliculas: 1652
 | 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix | +13 |
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Otras plataformas | +17 |
 | 1988 | Inseparables | inseparables-1988 | Terror | Prime Video | +18 |
+| 1988 | La insoportable levedad del ser | la-insoportable-levedad-del-ser-1988 | Drama | Apple TV | +16 |
 | 1988 | La última tentación de Cristo | the-last-temptation-of-christ-1988 | Drama | Otras plataformas | +13 |
 | 1988 | Los búfalos de Durham | los-bufalos-de-durham-1988 | Comedia romántica | Otras plataformas | +16 |
 | 1988 | Mi vecino Totoro | my-neighbor-totoro-1988 | Anime | Cine | ATP |
