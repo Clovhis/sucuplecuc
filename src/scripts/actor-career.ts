@@ -1736,21 +1736,20 @@ if (root) {
 		finishCareer();
 	}
 
-	function getOutcomeChance(choice: Choice, currentState: CareerState): number {
+	function getOutcomeChance(choice: Choice): number {
 		if (choice.outcomes.length < 2) return 100;
-		const luckBias = (currentState.luck - 50) * 0.18;
-		return clamp(choice.outcomes[0].chance + luckBias, 8, 92);
+		return clamp(choice.outcomes[0].chance, 0, 100);
 	}
 
-	function getGreenChance(choice: Choice, currentState: CareerState): number {
+	function getGreenChance(choice: Choice): number {
 		if (choice.outcomes.length < 2) return isPositiveOutcome(choice.outcomes[0]) ? 100 : 0;
-		const firstOutcomeChance = getOutcomeChance(choice, currentState);
+		const firstOutcomeChance = getOutcomeChance(choice);
 		return isPositiveOutcome(choice.outcomes[0]) ? firstOutcomeChance : 100 - firstOutcomeChance;
 	}
 
-	function resolveOutcome(choice: Choice, currentState: CareerState, roll = Math.random()): Outcome {
+	function resolveOutcome(choice: Choice, roll = Math.random()): Outcome {
 		if (choice.outcomes.length === 1) return choice.outcomes[0];
-		return roll * 100 <= getOutcomeChance(choice, currentState) ? choice.outcomes[0] : choice.outcomes[1];
+		return roll * 100 < getOutcomeChance(choice) ? choice.outcomes[0] : choice.outcomes[1];
 	}
 
 	function applyOutcome(outcome: Outcome, currentState: CareerState): Outcome {
@@ -1758,7 +1757,9 @@ if (root) {
 		const nextIndex = Math.min(currentState.currentIndex + 1, currentState.ages.length - 1);
 		const careerCeiling = getCareerLevelCeiling(currentState, nextIndex);
 		const levelAfterDecision = currentState.level + outcome.levelDelta;
-		currentState.level = clamp(Math.min(levelAfterDecision, careerCeiling), 1, 99);
+		// The career curve is a growth ceiling only; it must never turn a resolved outcome into a loss.
+		const levelLimit = Math.max(currentState.level, careerCeiling);
+		currentState.level = clamp(Math.min(levelAfterDecision, levelLimit), 1, 99);
 		currentState.peakLevel = Math.max(currentState.peakLevel, currentState.level);
 		currentState.films = Math.max(0, currentState.films + outcome.filmsDelta);
 		currentState.leads = Math.max(0, currentState.leads + outcome.leadsDelta);
@@ -1808,8 +1809,8 @@ function selectChoice(choiceIndex: number): void {
 		const { choice, movie, simulation } = offerChoice;
 		const project = movie?.title ?? simulation?.title ?? 'Año de preparación';
 		const outcomeRoll = Math.random();
-		const resolvedOutcome = resolveOutcome(choice, state, outcomeRoll);
-		const greenChance = getGreenChance(choice, state);
+		const resolvedOutcome = resolveOutcome(choice, outcomeRoll);
+		const greenChance = getGreenChance(choice);
   const choiceButtons = Array.from(root!.querySelectorAll<HTMLButtonElement>('[data-choice-index]'));
 		const selectedChoiceButton = choiceButtons.find((button) => Number(button.dataset.choiceIndex) === choiceIndex);
 		choiceButtons.forEach((button) => {
@@ -2093,3 +2094,4 @@ function selectChoice(choiceIndex: number): void {
 	}
 	void refreshHighScores();
 }
+
