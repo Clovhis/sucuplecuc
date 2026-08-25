@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1668
+Total de peliculas: 1673
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -753,6 +753,7 @@ Total de peliculas: 1668
 | 2013 | Oblivion | oblivion-2013 | Ciencia ficcion | HBO Max | +13 |
 | 2013 | Plan en Las Vegas | plan-en-las-vegas-2013 | Comedia | Apple TV | +13 |
 | 2013 | Prisioneros | prisioneros-2013 | Thriller | Otras plataformas | +17 |
+| 2013 | Red 2 | red-2-2013 | Accion | Apple TV | +13 |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max | +13 |
 | 2013 | Sharknado | sharknado-2013 | Terror | Prime Video | +13 |
 | 2013 | Sólo Dios perdona | solo-dios-perdona-2013 | Crimen | Otras plataformas | +16 |
@@ -779,6 +780,7 @@ Total de peliculas: 1668
 | 2012 | La caza | la-caza-2012 | Drama | Prime Video | +16 |
 | 2012 | La vida de Flynn | la-vida-de-flynn-2012 | Drama | Apple TV | +16 |
 | 2012 | Lincoln | lincoln-2012 | Drama | Otras plataformas | +13 |
+| 2012 | Looper | looper-2012 | Ciencia ficcion | Otras plataformas | +17 |
 | 2012 | Los miserables | los-miserables-2012 | Musical | Otras plataformas | +13 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
 | 2012 | Sin tregua | sin-tregua-2012 | Acción | Otras plataformas | +17 |
@@ -886,6 +888,7 @@ Total de peliculas: 1668
 | 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
 | 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Apple TV | +13 |
 | 2009 | Los secretos del poder | los-secretos-del-poder-2009 | Drama | Apple TV | +13 |
+| 2009 | Los sustitutos | los-sustitutos-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
 | 2009 | Nine | nine-2009 | Drama | Apple TV + Otras plataformas | +13 |
 | 2009 | Saw VI | saw-vi-2009 | Gore | Otras plataformas | +18 |
@@ -1096,6 +1099,7 @@ Total de peliculas: 1668
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix | +13 |
 | 2002 | El pianista | el-pianista-2002 | Drama | Otras plataformas | +15 |
 | 2002 | Embriagado de amor | punch-drunk-love-2002 | Drama | Apple TV | +13 |
+| 2002 | En defensa del honor | en-defensa-del-honor-2002 | Drama | Apple TV | +17 |
 | 2002 | Gangs of New York | gangs-of-new-york-2002 | Drama | Otras plataformas | +17 |
 | 2002 | Halloween: Resurrection | halloween-resurrection-2002 | Terror | Otras plataformas | +17 |
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max | ATP |
@@ -1334,6 +1338,7 @@ Total de peliculas: 1668
 | 1992 | El último mohicano | el-ultimo-mohicano-1992 | Acción | Netflix + Otras plataformas | +13 |
 | 1992 | Éxito a cualquier precio | exito-a-cualquier-precio-1992 | Drama | Otras plataformas | +17 |
 | 1992 | Hard Boiled | hard-boiled-1992 | Accion | Otras plataformas | +16 |
+| 1992 | La muerte le sienta bien | la-muerte-le-sienta-bien-1992 | Comedia | HBO Max | +13 |
 | 1992 | Malcolm X | malcolm-x-1992 | Drama | Apple TV | +16 |
 | 1992 | Maridos y esposas | husbands-and-wives-1992 | Drama | Otras plataformas | +16 |
 | 1992 | Reservoir Dogs | reservoir-dogs-1992 | Crimen | Otras plataformas | +18 |
