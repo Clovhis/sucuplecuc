@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1681
+Total de peliculas: 1683
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1488,6 +1488,7 @@ Total de peliculas: 1681
 | 1984 | This Is Spinal Tap | this-is-spinal-tap-1984 | Comedia | Otras plataformas | +17 |
 | 1984 | Viernes 13. Último capítulo | friday-the-13th-the-final-chapter-1984 | Terror | Otras plataformas | +16 |
 | 1983 | El precio del poder | el-precio-del-poder-1983 | Crimen | Netflix + Prime Video | +18 |
+| 1983 | La zona muerta | la-zona-muerta-1983 | Terror | Otras plataformas | +17 |
 | 1983 | Star Wars: Episode VI - Return of the Jedi | star-wars-episode-vi-return-of-the-jedi-1983 | Ciencia ficcion | Disney Plus | ATP |
 | 1983 | Superman III | superman-iii-1983 | Accion | HBO Max | ATP |
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Otras plataformas | ATP |
@@ -1518,6 +1519,7 @@ Total de peliculas: 1681
 | 1980 | Aterriza como puedas | aterriza-como-puedas-1980 | Comedia | Apple TV | +13 |
 | 1980 | El hombre elefante | el-hombre-elefante-1980 | Drama | HBO Max | +13 |
 | 1980 | Holocausto caníbal | holocausto-canibal-1980 | Gore | Otras plataformas | +18 |
+| 1980 | Los perros de la guerra | los-perros-de-la-guerra-1980 | Accion | Otras plataformas | +13 |
 | 1980 | Ordinary People | ordinary-people-1980 | Drama | Otras plataformas | +17 |
 | 1980 | Recuerdos | stardust-memories-1980 | Comedia | Otras plataformas | +13 |
 | 1980 | Star Wars: Episode V - The Empire Strikes Back | star-wars-episode-v-the-empire-strikes-back-1980 | Ciencia ficcion | Disney Plus | ATP |
