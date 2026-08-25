@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1712
+Total de peliculas: 1719
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -273,6 +273,7 @@ Total de peliculas: 1712
 | 2024 | Bad Boys: Hasta la muerte | bad-boys-ride-or-die-2024 | Crimen | Prime Video | +17 |
 | 2024 | Beetlejuice Beetlejuice | beetlejuice-beetlejuice-2024 | Comedia | HBO Max | +13 |
 | 2024 | Beverly Hills Cop: Axel F | beverly-hills-cop-axel-f-2024 | Accion | Netflix | +16 |
+| 2024 | Borderlands: El destino del universo está en juego | borderlands-el-destino-del-universo-esta-en-juego-2024 | Drama | Otras plataformas | +13 |
 | 2024 | Carry-On | carry-on-2024 | Accion | Netflix | +13 |
 | 2024 | Challengers | challengers-2024 | Drama | Otras plataformas | +17 |
 | 2024 | Civil War | civil-war-2024 | Accion | Netflix | +16 |
@@ -573,6 +574,7 @@ Total de peliculas: 1712
 | 2018 | Hotel Transylvania 3: Monstruos de vacaciones | hotel-transylvania-3-summer-vacation-2018 | Animación | Apple TV | +13 |
 | 2018 | Jurassic World: Fallen Kingdom | jurassic-world-fallen-kingdom-2018 | Aventura | Prime Video | +13 |
 | 2018 | La favorita | la-favorita-2018 | Drama | Disney Plus | +13 |
+| 2018 | La mula | la-mula-2018 | Drama | Otras plataformas | +16 |
 | 2018 | La noche de 12 años | la-noche-de-12-anos-2018 | Drama | Otras plataformas | +16 |
 | 2018 | La noche de Halloween | halloween-2018 | Terror | Netflix | +16 |
 | 2018 | La peor semana | the-week-of-2018 | Comedia | Netflix | +13 |
@@ -580,6 +582,7 @@ Total de peliculas: 1712
 | 2018 | Mi obra maestra | mi-obra-maestra-2018 | Comedia | Disney Plus | +13 |
 | 2018 | Mission: Impossible - Fallout | mission-impossible-fallout-2018 | Accion | Otras plataformas | +13 |
 | 2018 | No te preocupes, no llegará lejos a pie | no-te-preocupes-no-llegara-lejos-a-pie-2018 | Drama | Prime Video | +13 |
+| 2018 | Ocean's 8: Las estafadoras | ocean-s-8-las-estafadoras-2018 | Drama | HBO Max | +13 |
 | 2018 | Perdona que te moleste | perdona-que-te-moleste-2018 | Comedia | Otras plataformas | +17 |
 | 2018 | Ready Player One: Comienza el Juego | ready-player-one-2018 | Ciencia ficcion | Otras plataformas | +13 |
 | 2018 | Rojo | rojo-2018 | Thriller | CINE.AR | +13 |
@@ -665,6 +668,7 @@ Total de peliculas: 1712
 | 2015 | Ant-Man | ant-man-2015 | Accion | Disney Plus | +13 |
 | 2015 | Avengers: Age of Ultron | avengers-age-of-ultron-2015 | Accion | Disney Plus | +20 |
 | 2015 | Caballero de copas | caballero-de-copas-2015 | Drama | Otras plataformas | +13 |
+| 2015 | Carol | carol-2015 | Drama | Prime Video | +16 |
 | 2015 | Creed | creed-2015 | Drama | Otras plataformas | +13 |
 | 2015 | El becario | el-becario-2015 | Comedia | HBO Max + Apple TV | ATP |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus | +16 |
@@ -948,6 +952,7 @@ Total de peliculas: 1712
 | 2007 | El orfanato | el-orfanato-2007 | Terror | Prime Video | +13 |
 | 2007 | El sueño de Casandra | cassandra-s-dream-2007 | Drama | Otras plataformas | +16 |
 | 2007 | El ultimátum de Bourne | el-ultimatum-de-bourne-2007 | Accion | HBO Max | +13 |
+| 2007 | Elizabeth: La edad de oro | elizabeth-la-edad-de-oro-2007 | Drama | Otras plataformas | +13 |
 | 2007 | Expediente Anwar | expediente-anwar-2007 | Drama | Otras plataformas | +17 |
 | 2007 | Fantastic Four: Rise of the Silver Surfer | fantastic-four-rise-of-the-silver-surfer-2007 | Accion | Disney Plus | ATP |
 | 2007 | Ghost Rider | ghost-rider-2007 | Accion | Otras plataformas | +13 |
@@ -1077,6 +1082,7 @@ Total de peliculas: 1712
 | 2003 | Big Fish | big-fish-2003 | Drama | Otras plataformas | +13 |
 | 2003 | Crueldad intolerable | crueldad-intolerable-2003 | Comedia | Apple TV | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
+| 2003 | Desapariciones | desapariciones-2003 | Drama | Otras plataformas | +13 |
 | 2003 | Destino final 2 | destino-final-2-2003 | Terror | HBO Max | +16 |
 | 2003 | Dos policías rebeldes II | dos-policias-rebeldes-ii-2003 | Crimen | HBO Max + Apple TV | +17 |
 | 2003 | Elephant | elephant-2003 | Drama | HBO Max | +16 |
@@ -1232,6 +1238,7 @@ Total de peliculas: 1712
 | 1998 | El aguador | the-waterboy-1998 | Comedia | Disney Plus | +13 |
 | 1998 | El gran Lebowski | el-gran-lebowski-1998 | Comedia | Apple TV | +17 |
 | 1998 | El show de Truman | the-truman-show-1998 | Comedia | Paramount Plus + Apple TV | ATP |
+| 1998 | Elizabeth | elizabeth-1998 | Drama | Otras plataformas | +13 |
 | 1998 | Esfera | esfera-1998 | Ciencia ficcion | Apple TV | +13 |
 | 1998 | Following | following-1998 | Thriller | Otras plataformas | +16 |
 | 1998 | Halloween: H20. Veinte años después | halloween-h20-20-years-later-1998 | Terror | Otras plataformas | +17 |
