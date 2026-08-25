@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1801
+Total de peliculas: 1812
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -756,6 +756,7 @@ Total de peliculas: 1801
 | 2013 | Blue Jasmine | blue-jasmine-2013 | Drama | Otras plataformas | +16 |
 | 2013 | Coherencia | coherencia-2013 | Ciencia ficcion | Apple TV | +13 |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max | ATP |
+| 2013 | Crystal Fairy y el cactus mágico | crystal-fairy-y-el-cactus-magico-2013 | Drama | Apple TV | +17 |
 | 2013 | Dolor y dinero | dolor-y-dinero-2013 | Comedia | Prime Video + Apple TV | +17 |
 | 2013 | El conjuro | el-conjuro-2013 | Terror | HBO Max | +16 |
 | 2013 | El gran Gatsby | el-gran-gatsby-2013 | Drama | Prime Video + Apple TV | +13 |
@@ -886,6 +887,7 @@ Total de peliculas: 1801
 | 2010 | Pesadilla en Elm Street: El origen | a-nightmare-on-elm-street-2010 | Terror | HBO Max | +17 |
 | 2010 | Robin Hood | robin-hood-2010 | Drama | Netflix | +13 |
 | 2010 | Saw 3D | saw-3d-2010 | Gore | Otras plataformas | +18 |
+| 2010 | Scott Pilgrim contra el mundo | scott-pilgrim-contra-el-mundo-2010 | Accion | HBO Max | +13 |
 | 2010 | Shrek, felices para siempre | shrek-felices-para-siempre-2010 | Animacion | Prime Video + Disney Plus | ATP |
 | 2010 | Shutter Island | shutter-island-2010 | Thriller | Otras plataformas | +17 |
 | 2010 | Son como niños | grown-ups-2010 | Comedia | Prime Video + Netflix | ATP |
@@ -898,6 +900,7 @@ Total de peliculas: 1801
 | 2010 | Zona verde | zona-verde-2010 | Accion | Apple TV | +17 |
 | 2009 | Amor sin escalas | amor-sin-escalas-2009 | Drama | Apple TV | +13 |
 | 2009 | Ángeles y demonios | angeles-y-demonios-2009 | Thriller | Prime Video | +13 |
+| 2009 | Año uno | ano-uno-2009 | Comedia | Netflix + HBO Max | +13 |
 | 2009 | Asalto al tren Pelham 123 | asalto-al-tren-pelham-123-2009 | Crimen | Prime Video + HBO Max | +16 |
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Desde mi cielo | desde-mi-cielo-2009 | Drama | Prime Video + Apple TV | +13 |
@@ -923,6 +926,7 @@ Total de peliculas: 1801
 | 2009 | Los sustitutos | los-sustitutos-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
 | 2009 | Nine | nine-2009 | Drama | Apple TV + Otras plataformas | +13 |
+| 2009 | Rebelión adolescente | rebelion-adolescente-2009 | Comedia | Otras plataformas | +13 |
 | 2009 | Saw VI | saw-vi-2009 | Gore | Otras plataformas | +18 |
 | 2009 | Si la cosa funciona | whatever-works-2009 | Comedia | Otras plataformas | +13 |
 | 2009 | Terminator Salvation | terminator-salvation-2009 | Accion | Netflix | +13 |
@@ -947,6 +951,7 @@ Total de peliculas: 1801
 | 2008 | Kung Fu Panda | kung-fu-panda-2008 | Animacion | Netflix + HBO Max | ATP |
 | 2008 | Leonera | leonera-2008 | Drama | Netflix | +13 |
 | 2008 | Mártires | martires-2008 | Gore | Otras plataformas | +18 |
+| 2008 | Nick y Norah: Una noche de música y amor | nick-y-norah-una-noche-de-musica-y-amor-2008 | Comedia | Apple TV | +17 |
 | 2008 | No te metas con Zohan | you-dont-mess-with-the-zohan-2008 | Comedia | HBO Max + Netflix | +16 |
 | 2008 | Operación Valquiria | operacion-valquiria-2008 | Drama | Otras plataformas | +13 |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Otras plataformas | +17 |
@@ -979,6 +984,7 @@ Total de peliculas: 1801
 | 2007 | Halloween | halloween-2007 | Terror | Otras plataformas | +17 |
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max | +12 |
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
+| 2007 | Juno. Embarazada por accidente | juno-embarazada-por-accidente-2007 | Drama | Prime Video | +16 |
 | 2007 | La esperanza vive en mí | reign-over-me-2007 | Drama | Apple TV + Netflix | +17 |
 | 2007 | La extraña que hay en ti | la-extrana-que-hay-en-ti-2007 | Thriller | HBO Max | +16 |
 | 2007 | La guerra de Charlie Wilson | la-guerra-de-charlie-wilson-2007 | Comedia | Netflix + HBO Max | +17 |
@@ -1002,6 +1008,7 @@ Total de peliculas: 1801
 | 2007 | Sin lugar para los débiles | no-country-for-old-men-2007 | Crimen | Netflix + Apple TV | +13 |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
 | 2007 | Sunshine | sunshine-2007 | Ciencia ficcion | Disney Plus | +13 |
+| 2007 | Supersalidos | supersalidos-2007 | Comedia | Apple TV | +17 |
 | 2007 | Sweeney Todd: The Demon Barber of Fleet Street | sweeney-todd-the-demon-barber-of-fleet-street-2007 | Musical | Otras plataformas | +17 |
 | 2007 | Yo los declaro marido y Larry | i-now-pronounce-you-chuck-and-larry-2007 | Comedia | Apple TV | +13 |
 | 2007 | Zodíaco | zodiaco-2007 | Thriller | HBO Max | +17 |
@@ -1487,6 +1494,7 @@ Total de peliculas: 1801
 | 1989 | Going Overboard | going-overboard-1989 | Comedia | Otras plataformas | +17 |
 | 1989 | Halloween 5: La venganza de Michael Myers | halloween-5-the-revenge-of-michael-myers-1989 | Terror | Otras plataformas | +17 |
 | 1989 | Indiana Jones and the Last Crusade | indiana-jones-and-the-last-crusade-1989 | Aventura | Otras plataformas | +13 |
+| 1989 | Karate Kid III. El desafío final | karate-kid-iii-el-desafio-final-1989 | Accion | HBO Max | ATP |
 | 1989 | La guerra de los Rose | la-guerra-de-los-rose-1989 | Comedia | Disney Plus | +16 |
 | 1989 | Nicky, la aprendiz de bruja | nicky-la-aprendiz-de-bruja-1989 | Animacion | Netflix | ATP |
 | 1989 | Noches de Harlem | noches-de-harlem-1989 | Comedia | Otras plataformas | +13 |
@@ -1541,11 +1549,13 @@ Total de peliculas: 1801
 | 1987 | Wall Street | wall-street-1987 | Drama | Disney Plus | +16 |
 | 1986 | Aliens | aliens-1986 | Ciencia ficcion | Disney Plus + HBO Max | +17 |
 | 1986 | Castle in the Sky | castle-in-the-sky-1986 | Anime | Netflix | ATP |
+| 1986 | Crossroads | crossroads-1986 | Drama | Otras plataformas | +17 |
 | 1986 | Cuenta conmigo | stand-by-me-1986 | Drama | Otras plataformas | ATP |
 | 1986 | El color del dinero | the-color-of-money-1986 | Drama | Otras plataformas | +17 |
 | 1986 | Golpe en la pequeña China | golpe-en-la-pequena-china-1986 | Accion | Disney Plus | +13 |
 | 1986 | Hannah and Her Sisters | hannah-and-her-sisters-1986 | Drama | Otras plataformas | +13 |
 | 1986 | Howard the Duck | howard-the-duck-1986 | Accion | Otras plataformas | ATP |
+| 1986 | Karate Kid II, la historia continúa | karate-kid-ii-la-historia-continua-1986 | Accion | Otras plataformas | ATP |
 | 1986 | La costa Mosquito | la-costa-mosquito-1986 | Drama | Otras plataformas | +13 |
 | 1986 | La misión | la-mision-1986 | Drama | Prime Video | +13 |
 | 1986 | La mosca | la-mosca-1986 | Terror | Disney Plus | +16 |
@@ -1586,6 +1596,7 @@ Total de peliculas: 1801
 | 1984 | Enamorarse | enamorarse-1984 | Romance | Prime Video + Apple TV | +13 |
 | 1984 | Érase una vez en América | erase-una-vez-en-america-1984 | Drama | Otras plataformas | +16 |
 | 1984 | Indiana Jones and the Temple of Doom | indiana-jones-and-the-temple-of-doom-1984 | Aventura | Otras plataformas | ATP |
+| 1984 | Karate Kid, el momento de la verdad | karate-kid-el-momento-de-la-verdad-1984 | Accion | Netflix | ATP |
 | 1984 | La historia sin fin | la-historia-sin-fin-1984 | Fantasia | Apple TV | ATP |
 | 1984 | Nausicaa of the Valley of the Wind | nausicaa-of-the-valley-of-the-wind-1984 | Anime | Netflix | ATP |
 | 1984 | París, Texas | paris-texas-1984 | Drama | Prime Video | +18 |
