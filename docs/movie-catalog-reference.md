@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1646
+Total de peliculas: 1650
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1192,6 +1192,7 @@ Total de peliculas: 1646
 | 1999 | Toy Story 2 | toy-story-2-1999 | Animacion | Disney Plus | ATP |
 | 1999 | Trabajo basura | trabajo-basura-1999 | Comedia | Disney Plus | +13 |
 | 1999 | Tres reyes | tres-reyes-1999 | Accion | Apple TV | +17 |
+| 1999 | Un domingo cualquiera | un-domingo-cualquiera-1999 | Drama | Otras plataformas | +17 |
 | 1999 | Un papá genial | big-daddy-1999 | Comedia | Apple TV + HBO Max | +13 |
 | 1999 | Una terapia peligrosa | una-terapia-peligrosa-1999 | Comedia | Apple TV | +13 |
 | 1998 | Blade | blade-1998 | Accion | HBO Max | +17 |
@@ -1220,6 +1221,7 @@ Total de peliculas: 1646
 | 1997 | Carretera perdida | carretera-perdida-1997 | Terror | Otras plataformas | +16 |
 | 1997 | Contacto | contacto-1997 | Ciencia ficcion | Apple TV | +13 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
+| 1997 | Donnie Brasco | donnie-brasco-1997 | Drama | Otras plataformas | +17 |
 | 1997 | El coleccionista de amantes | el-coleccionista-de-amantes-1997 | Drama | Otras plataformas | +16 |
 | 1997 | El pacificador | el-pacificador-1997 | Accion | Paramount Plus | +13 |
 | 1997 | El poder de la justicia | el-poder-de-la-justicia-1997 | Drama | Netflix | +13 |
@@ -1315,6 +1317,7 @@ Total de peliculas: 1646
 | 1992 | Candyman | candyman-1992 | Terror | Prime Video + Apple TV | +16 |
 | 1992 | El ejército de las tinieblas | el-ejercito-de-las-tinieblas-1992 | Comedia | Prime Video + Apple TV | +17 |
 | 1992 | El juego de Hollywood | el-juego-de-hollywood-1992 | Drama | Otras plataformas | +13 |
+| 1992 | Éxito a cualquier precio | exito-a-cualquier-precio-1992 | Drama | Otras plataformas | +17 |
 | 1992 | Hard Boiled | hard-boiled-1992 | Accion | Otras plataformas | +16 |
 | 1992 | Malcolm X | malcolm-x-1992 | Drama | Apple TV | +16 |
 | 1992 | Maridos y esposas | husbands-and-wives-1992 | Drama | Otras plataformas | +16 |
@@ -1342,6 +1345,7 @@ Total de peliculas: 1646
 | 1990 | Despertares | despertares-1990 | Drama | Apple TV | +13 |
 | 1990 | Días de trueno | dias-de-trueno-1990 | Accion | Apple TV | +13 |
 | 1990 | Edward Scissorhands | edward-scissorhands-1990 | Fantasia | Otras plataformas | +13 |
+| 1990 | El padrino. Parte III | el-padrino-parte-iii-1990 | Drama | Otras plataformas | +17 |
 | 1990 | Mi pobre angelito | home-alone-1990 | Comedia | Disney Plus | ATP |
 | 1990 | Muerte entre las flores | muerte-entre-las-flores-1990 | Drama | Disney Plus | +16 |
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Otras plataformas | +17 |

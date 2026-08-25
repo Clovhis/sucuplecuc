@@ -8,11 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-<<<<<<< HEAD
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-25T00:52:12.175Z";
-=======
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-25T00:54:23.854Z";
->>>>>>> 2c8d09b1 (feat: add Dustin Hoffman filmography entry)
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-25T01:04:26.256Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
