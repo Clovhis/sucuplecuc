@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1616
+Total de peliculas: 1631
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -205,6 +205,7 @@ Total de peliculas: 1616
 | 2025 | Heart Eyes | heart-eyes-2025 | Terror | Netflix | +17 |
 | 2025 | Homo Argentum | homo-argentum-2025 | Comedia | Disney Plus | +14 |
 | 2025 | How to Train Your Dragon | how-to-train-your-dragon-2025 | Aventura | HBO Max | ATP |
+| 2025 | Jay Kelly | jay-kelly-2025 | Drama | Netflix | +13 |
 | 2025 | Jurassic World Rebirth | jurassic-world-rebirth-2025 | Accion | HBO Max | +13 |
 | 2025 | Karate Kid: Legends | karate-kid-legends-2025 | Accion | HBO Max | +13 |
 | 2025 | Kobayashi-san Chi no Maid Dragon: Samishigariya no Ryuu | kobayashi-san-chi-no-maid-dragon-samishigariya-no-ryuu-2025 | Anime | Crunchyroll | +15 |
@@ -636,6 +637,7 @@ Total de peliculas: 1616
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus | +13 |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus | +13 |
 | 2016 | El conjuro 2 | el-conjuro-2-2016 | Terror | HBO Max | +16 |
+| 2016 | El maestro del dinero | el-maestro-del-dinero-2016 | Thriller | Apple TV | +13 |
 | 2016 | Fantastic Beasts and Where to Find Them | fantastic-beasts-and-where-to-find-them-2016 | Fantasia | HBO Max | +12 |
 | 2016 | La doncella | la-doncella-2016 | Thriller | Otras plataformas | +18 |
 | 2016 | La La Land | la-la-land-2016 | Musical | Prime Video | +13 |
@@ -711,6 +713,7 @@ Total de peliculas: 1616
 | 2014 | Magia a la luz de la luna | magic-in-the-moonlight-2014 | Romance | Otras plataformas | +13 |
 | 2014 | Noé | noe-2014 | Drama | Netflix | +13 |
 | 2014 | Non-Stop (Sin escalas) | non-stop-sin-escalas-2014 | Thriller | Apple TV | +13 |
+| 2014 | Operación Monumento | operacion-monumento-2014 | Aventura | Disney Plus | +13 |
 | 2014 | Primicia mortal | primicia-mortal-2014 | Thriller | Prime Video | +17 |
 | 2014 | Redada Asesina 2 | redada-asesina-2-2014 | Accion | Apple TV | +18 |
 | 2014 | Relatos salvajes | relatos-salvajes-2014 | Thriller | HBO Max | +16 |
@@ -737,6 +740,7 @@ Total de peliculas: 1616
 | 2013 | Fast & Furious 6 | fast-and-furious-6-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Frozen | frozen-2013 | Animacion | Disney Plus | ATP |
 | 2013 | Fuerza antigángster | fuerza-antigangster-2013 | Accion | Otras plataformas | +16 |
+| 2013 | Gravedad | gravedad-2013 | Drama | HBO Max | +13 |
 | 2013 | Her | her-2013 | Romance | HBO Max + Apple TV | +13 |
 | 2013 | Iron Man 3 | iron-man-3-2013 | Accion | Disney Plus | +13 |
 | 2013 | La gran revancha | la-gran-revancha-2013 | Comedia | Apple TV | +13 |
@@ -831,6 +835,7 @@ Total de peliculas: 1616
 | 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
 | 2010 | Conocerás al hombre de tus sueños | you-will-meet-a-tall-dark-stranger-2010 | Drama | Otras plataformas | +13 |
 | 2010 | Crimen en familia | crimen-en-familia-2010 | Crimen | Otras plataformas | +16 |
+| 2010 | El americano | el-americano-2010 | Thriller | Apple TV | +13 |
 | 2010 | El equipo A | el-equipo-a-2010 | Accion | Disney Plus | +13 |
 | 2010 | El libro de Eli | el-libro-de-eli-2010 | Accion | HBO Max + Apple TV | +16 |
 | 2010 | El príncipe de Persia: Las arenas del tiempo | el-principe-de-persia-las-arenas-del-tiempo-2010 | Acción | Disney Plus | +13 |
@@ -855,6 +860,7 @@ Total de peliculas: 1616
 | 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
 | 2010 | Una carta a Elia | a-letter-to-elia-2010 | Documental | Otras plataformas | ATP |
 | 2010 | Zona verde | zona-verde-2010 | Accion | Apple TV | +17 |
+| 2009 | Amor sin escalas | amor-sin-escalas-2009 | Drama | Apple TV | +13 |
 | 2009 | Asalto al tren Pelham 123 | asalto-al-tren-pelham-123-2009 | Crimen | Prime Video + HBO Max | +16 |
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Desde mi cielo | desde-mi-cielo-2009 | Drama | Prime Video + Apple TV | +13 |
@@ -905,6 +911,7 @@ Total de peliculas: 1616
 | 2008 | Operación Valquiria | operacion-valquiria-2008 | Drama | Otras plataformas | +13 |
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Otras plataformas | +17 |
 | 2008 | Quantum of Solace | quantum-of-solace-2008 | Accion | Netflix | +12 |
+| 2008 | Quémese después de leerse | quemese-despues-de-leerse-2008 | Comedia | Apple TV | +13 |
 | 2008 | Red de mentiras | red-de-mentiras-2008 | Accion | HBO Max + Apple TV | +17 |
 | 2008 | Saw V | saw-v-2008 | Gore | Otras plataformas | +18 |
 | 2008 | Shine a Light | shine-a-light-2008 | Documental | Otras plataformas | +13 |
@@ -916,6 +923,7 @@ Total de peliculas: 1616
 | 2008 | Venganza | venganza-2008 | Accion | Disney Plus | +16 |
 | 2008 | Vicky Cristina Barcelona | vicky-cristina-barcelona-2008 | Romance | Otras plataformas | +16 |
 | 2008 | WALL-E | wall-e-2008 | Animacion | Disney Plus | ATP |
+| 2007 | Ahora son 13 | ahora-son-13-2007 | Accion | HBO Max | +13 |
 | 2007 | American Gangster | american-gangster-2007 | Crimen | Netflix + Prime Video | +16 |
 | 2007 | Cleaner | cleaner-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Crimen perfecto | crimen-perfecto-2007 | Thriller | Otras plataformas | +13 |
@@ -954,6 +962,7 @@ Total de peliculas: 1616
 | 2006 | Click | click-2006 | Comedia | Apple TV + HBO Max | +17 |
 | 2006 | Déjà Vu | deja-vu-2006 | Accion | Disney Plus | +13 |
 | 2006 | Destino final 3 | destino-final-3-2006 | Terror | HBO Max | +13 |
+| 2006 | El buen alemán | el-buen-aleman-2006 | Thriller | Apple TV | +13 |
 | 2006 | El buen pastor | el-buen-pastor-2006 | Drama | Otras plataformas | +17 |
 | 2006 | El código Da Vinci | el-codigo-da-vinci-2006 | Thriller | HBO Max | +17 |
 | 2006 | El gran truco | the-prestige-2006 | Thriller | Apple TV | +13 |
@@ -1023,6 +1032,7 @@ Total de peliculas: 1616
 | 2004 | Harry Potter and the Prisoner of Azkaban | harry-potter-and-the-prisoner-of-azkaban-2004 | Aventura | HBO Max | ATP |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix | +17 |
 | 2004 | La niña santa | la-nina-santa-2004 | Drama | Prime Video | +13 |
+| 2004 | La nueva gran estafa | la-nueva-gran-estafa-2004 | Accion | HBO Max | +13 |
 | 2004 | La semilla de Chucky | seed-of-chucky-2004 | Terror | Otras plataformas | +17 |
 | 2004 | La supremacía de Bourne | la-supremacia-de-bourne-2004 | Accion | HBO Max | +13 |
 | 2004 | La terminal | the-terminal-2004 | Comedia | Otras plataformas | +13 |
@@ -1041,6 +1051,7 @@ Total de peliculas: 1616
 | 2004 | Una serie de eventos desafortunados | una-serie-de-eventos-desafortunados-2004 | Fantasia | Otras plataformas | ATP |
 | 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Otras plataformas | +13 |
 | 2003 | Big Fish | big-fish-2003 | Drama | Otras plataformas | +13 |
+| 2003 | Crueldad intolerable | crueldad-intolerable-2003 | Comedia | Apple TV | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
 | 2003 | Destino final 2 | destino-final-2-2003 | Terror | HBO Max | +16 |
 | 2003 | Dos policías rebeldes II | dos-policias-rebeldes-ii-2003 | Crimen | HBO Max + Apple TV | +17 |
@@ -1111,6 +1122,7 @@ Total de peliculas: 1616
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video | +13 |
 | 2001 | Kate & Leopold | kate-leopold-2001 | Comedia romántica | Apple TV | ATP |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video | +13 |
+| 2001 | La gran estafa | la-gran-estafa-2001 | Accion | HBO Max | +13 |
 | 2001 | La hora de la araña | la-hora-de-la-arana-2001 | Drama | Otras plataformas | +13 |
 | 2001 | La maldición del escorpión de jade | the-curse-of-the-jade-scorpion-2001 | Comedia | Otras plataformas | +13 |
 | 2001 | La pianista | la-pianista-2001 | Drama | Otras plataformas | +18 |
@@ -1127,6 +1139,7 @@ Total de peliculas: 1616
 | 2001 | The Others | the-others-2001 | Terror | Otras plataformas | +13 |
 | 2001 | The Score (Un golpe maestro) | the-score-un-golpe-maestro-2001 | Thriller | Prime Video + Apple TV | +13 |
 | 2001 | Vanilla Sky | vanilla-sky-2001 | Drama | Paramount Plus | +13 |
+| 2000 | ¿Dónde estás, hermano? | donde-estas-hermano-2000 | Aventura | Apple TV | +13 |
 | 2000 | Amores perros | amores-perros-2000 | Drama | Netflix | +18 |
 | 2000 | Casi famosos | casi-famosos-2000 | Drama | Apple TV | +13 |
 | 2000 | Deseando amar | deseando-amar-2000 | Romance | Otras plataformas | +13 |
@@ -1196,6 +1209,7 @@ Total de peliculas: 1616
 | 1998 | Ronin | ronin-1998 | Acción | Prime Video + Apple TV | +16 |
 | 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix | +16 |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Otras plataformas | +17 |
+| 1998 | Un romance peligroso | un-romance-peligroso-1998 | Drama | Apple TV | +13 |
 | 1997 | Alien Resurrection | alien-resurrection-1997 | Ciencia ficcion | Disney Plus | +17 |
 | 1997 | Amistad | amistad-1997 | Drama | Otras plataformas | +17 |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video | +13 |
@@ -1204,6 +1218,7 @@ Total de peliculas: 1616
 | 1997 | Contacto | contacto-1997 | Ciencia ficcion | Apple TV | +13 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
 | 1997 | El coleccionista de amantes | el-coleccionista-de-amantes-1997 | Drama | Otras plataformas | +16 |
+| 1997 | El pacificador | el-pacificador-1997 | Accion | Paramount Plus | +13 |
 | 1997 | El poder de la justicia | el-poder-de-la-justicia-1997 | Drama | Netflix | +13 |
 | 1997 | El quinto elemento | el-quinto-elemento-1997 | Ciencia ficcion | Otras plataformas | +13 |
 | 1997 | Gattaca | gattaca-1997 | Ciencia ficcion | HBO Max | +13 |
