@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1697
+Total de peliculas: 1703
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -422,6 +422,7 @@ Total de peliculas: 1697
 | 2022 | Morbius | morbius-2022 | Accion | Netflix + Mercado Play | +13 |
 | 2022 | Nope | nope-2022 | Terror | Otras plataformas | +17 |
 | 2022 | Pearl | pearl-2022 | Terror | Otras plataformas | +13 |
+| 2022 | Pinocho | pinocho-2022 | Fantasia | Disney Plus | ATP |
 | 2022 | Saint Omer, el pueblo contra Laurence Coly | saint-omer-el-pueblo-contra-laurence-coly-2022 | Drama | Otras plataformas | +16 |
 | 2022 | Scream | scream-2022 | Terror | Paramount Plus | +16 |
 | 2022 | Sonic 2: La película | sonic-2-la-pelicula-2022 | Accion | Otras plataformas | ATP |
@@ -548,6 +549,7 @@ Total de peliculas: 1697
 | 2019 | The assistant | the-assistant-2019 | Drama | Apple TV | +13 |
 | 2019 | The Irishman: In Conversation | the-irishman-2019 | Documental | Otras plataformas | +7 |
 | 2019 | The Vast of Night | the-vast-of-night-2019 | Ciencia ficcion | Otras plataformas | +13 |
+| 2019 | Toy Story 4 | toy-story-4-2019 | Animación | Disney Plus | ATP |
 | 2019 | Un día lluvioso en Nueva York | a-rainy-day-in-new-york-2019 | Romance | Otras plataformas | +13 |
 | 2019 | Velvet Buzzsaw | velvet-buzzsaw-2019 | Terror | Netflix | +16 |
 | 2019 | Venganza bajo cero | venganza-bajo-cero-2019 | Crimen | Netflix | +16 |
@@ -866,10 +868,12 @@ Total de peliculas: 1697
 | 2010 | The Fighter | the-fighter-2010 | Drama | Otras plataformas | +16 |
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Otras plataformas | +12 |
 | 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
+| 2010 | Toy Story 3 | toy-story-3-2010 | Animación | Disney Plus | ATP |
 | 2010 | Una carta a Elia | a-letter-to-elia-2010 | Documental | Otras plataformas | ATP |
 | 2010 | Valor de ley | valor-de-ley-2010 | Drama | Paramount Plus + Apple TV | +13 |
 | 2010 | Zona verde | zona-verde-2010 | Accion | Apple TV | +17 |
 | 2009 | Amor sin escalas | amor-sin-escalas-2009 | Drama | Apple TV | +13 |
+| 2009 | Ángeles y demonios | angeles-y-demonios-2009 | Thriller | Prime Video | +13 |
 | 2009 | Asalto al tren Pelham 123 | asalto-al-tren-pelham-123-2009 | Crimen | Prime Video + HBO Max | +16 |
 | 2009 | Avatar | avatar-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Desde mi cielo | desde-mi-cielo-2009 | Drama | Prime Video + Apple TV | +13 |
@@ -1176,6 +1180,7 @@ Total de peliculas: 1697
 | 2000 | La tormenta perfecta | la-tormenta-perfecta-2000 | Drama | Prime Video + HBO Max | +13 |
 | 2000 | Memento | memento-2000 | Thriller | Otras plataformas | +13 |
 | 2000 | Mission: Impossible II | mission-impossible-ii-2000 | Accion | Otras plataformas | +13 |
+| 2000 | Náufrago | naufrago-2000 | Drama | Paramount Plus | +13 |
 | 2000 | Nueve reinas | nueve-reinas-2000 | Crimen | Disney Plus | +13 |
 | 2000 | Plata quemada | plata-quemada-2000 | Crimen | Otras plataformas | +18 |
 | 2000 | Psicópata americano | psicopata-americano-2000 | Thriller | Netflix | +18 |
@@ -1333,6 +1338,7 @@ Total de peliculas: 1697
 | 1993 | El informe Pelícano | el-informe-pelicano-1993 | Thriller | Apple TV | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
 | 1993 | En el nombre del padre | en-el-nombre-del-padre-1993 | Drama | Apple TV | +16 |
+| 1993 | Filadelfia | filadelfia-1993 | Drama | Otras plataformas | +13 |
 | 1993 | Funes, un gran amor | funes-un-gran-amor-1993 | Drama | Otras plataformas | +18 |
 | 1993 | Jurassic Park | jurassic-park-1993 | Aventura | Prime Video + Netflix | +13 |
 | 1993 | La chica del gángster | la-chica-del-gangster-1993 | Comedia | Apple TV | +16 |
