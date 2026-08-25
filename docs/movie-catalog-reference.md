@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1679
+Total de peliculas: 1681
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -864,6 +864,7 @@ Total de peliculas: 1679
 | 2010 | The King's Speech | the-king-s-speech-2010 | Drama | Otras plataformas | +12 |
 | 2010 | The Social Network | the-social-network-2010 | Drama | HBO Max | +13 |
 | 2010 | Una carta a Elia | a-letter-to-elia-2010 | Documental | Otras plataformas | ATP |
+| 2010 | Valor de ley | valor-de-ley-2010 | Drama | Paramount Plus + Apple TV | +13 |
 | 2010 | Zona verde | zona-verde-2010 | Accion | Apple TV | +17 |
 | 2009 | Amor sin escalas | amor-sin-escalas-2009 | Drama | Apple TV | +13 |
 | 2009 | Asalto al tren Pelham 123 | asalto-al-tren-pelham-123-2009 | Crimen | Prime Video + HBO Max | +16 |
@@ -1314,6 +1315,7 @@ Total de peliculas: 1679
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
 | 1994 | Tonto y retonto | tonto-y-retonto-1994 | Comedia | Apple TV | +13 |
+| 1994 | Volar por los aires | volar-por-los-aires-1994 | Accion | Apple TV + Otras plataformas | +13 |
 | 1994 | Wyatt Earp | wyatt-earp-1994 | Western | Apple TV | +13 |
 | 1993 | Atrapado por su pasado | atrapado-por-su-pasado-1993 | Crimen | Apple TV | +16 |
 | 1993 | El fugitivo | el-fugitivo-1993 | Acción | HBO Max | +13 |
