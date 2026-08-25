@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-24. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1570
+Total de peliculas: 1580
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -350,6 +350,7 @@ Total de peliculas: 1570
 | 2023 | Desconocidos | desconocidos-2023 | Drama | Disney Plus | +16 |
 | 2023 | Días perfectos | dias-perfectos-2023 | Drama | Netflix + Apple TV | ATP |
 | 2023 | El asesino | the-killer-2023 | Thriller | Netflix | +13 |
+| 2023 | El asesino del ritual | el-asesino-del-ritual-2023 | Drama | Prime Video | +16 |
 | 2023 | El clan de hierro | el-clan-de-hierro-2023 | Drama | Apple TV | +16 |
 | 2023 | El hombre de los sueños | el-hombre-de-los-suenos-2023 | Comedia | Prime Video | +13 |
 | 2023 | El mal no existe | el-mal-no-existe-2023 | Drama | Otras plataformas | +13 |
@@ -481,6 +482,7 @@ Total de peliculas: 1570
 | 2021 | The Suicide Squad | the-suicide-squad-2021 | Acción | HBO Max | +16 |
 | 2021 | Thunder Force | thunder-force-2021 | Acción | Netflix | +13 |
 | 2021 | Titane | titane-2021 | Terror | Otras plataformas | +18 |
+| 2021 | Una noche de venganza | una-noche-de-venganza-2021 | Drama | Otras plataformas | +16 |
 | 2021 | Venom: Let There Be Carnage | venom-let-there-be-carnage-2021 | Acción | Otras plataformas | +13 |
 | 2021 | West Side Story | west-side-story-2021 | Musical | Disney Plus | +13 |
 | 2021 | Zack Snyder's Justice League | zack-snyder-s-justice-league-2021 | Fantasia | HBO Max | +16 |
@@ -576,6 +578,7 @@ Total de peliculas: 1570
 | 2018 | Venom | venom-2018 | Accion | Netflix | +13 |
 | 2017 | ¡Huye! | get-out-2017 | Terror | Prime Video + HBO Max | +13 |
 | 2017 | Alien: Covenant | alien-covenant-2017 | Ciencia ficcion | Disney Plus | +17 |
+| 2017 | Bienvenidos a Villa Capri | bienvenidos-a-villa-capri-2017 | Drama | HBO Max | +13 |
 | 2017 | Blade Runner 2049 | blade-runner-2049-2017 | Ciencia ficcion | Otras plataformas | +17 |
 | 2017 | Coco | coco-2017 | Animacion | Disney Plus | ATP |
 | 2017 | Dunkirk | dunkirk-2017 | Drama | Otras plataformas | +13 |
@@ -612,6 +615,7 @@ Total de peliculas: 1570
 | 2017 | The Shape of Water | the-shape-of-water-2017 | Drama | Disney Plus | +17 |
 | 2017 | The Square | the-square-2017 | Comedia | Netflix | +16 |
 | 2017 | Thor: Ragnarok | thor-ragnarok-2017 | Accion | Disney Plus | +13 |
+| 2017 | Un golpe con estilo | un-golpe-con-estilo-2017 | Drama | HBO Max | +13 |
 | 2017 | War for the Planet of the Apes | war-for-the-planet-of-the-apes-2017 | Accion | Disney Plus | +13 |
 | 2017 | Wonder Wheel | wonder-wheel-2017 | Drama | Otras plataformas | +16 |
 | 2017 | Wonder Woman | wonder-woman-2017 | Fantasia | HBO Max | +13 |
@@ -750,6 +754,7 @@ Total de peliculas: 1570
 | 2012 | Dark Shadows | dark-shadows-2012 | Comedia | Otras plataformas | +13 |
 | 2012 | Django Unchained | django-unchained-2012 | Drama | Prime Video | +16 |
 | 2012 | El acto de matar | the-act-of-killing-2012 | Documental | Otras plataformas | +16 |
+| 2012 | El verano de sus vidas | el-verano-de-sus-vidas-2012 | Drama | Otras plataformas | ATP |
 | 2012 | El vuelo | el-vuelo-2012 | Drama | Paramount Plus + Apple TV | +16 |
 | 2012 | Elefante blanco | elefante-blanco-2012 | Drama | Disney Plus + Netflix | +16 |
 | 2012 | Ese es mi hijo | thats-my-boy-2012 | Comedia | Apple TV | +16 |
@@ -855,6 +860,7 @@ Total de peliculas: 1570
 | 2009 | Hermanos | hermanos-2009 | Drama | Otras plataformas | +17 |
 | 2009 | I Love You Phillip Morris | i-love-you-phillip-morris-2009 | Drama | Otras plataformas | +16 |
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix | +16 |
+| 2009 | Invictus | invictus-2009 | Drama | Netflix + HBO Max | +13 |
 | 2009 | Jennifer's Body | jennifer-s-body-2009 | Terror | Disney Plus + Netflix | +16 |
 | 2009 | La cinta blanca | la-cinta-blanca-2009 | Drama | Apple TV | +17 |
 | 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
@@ -1086,6 +1092,7 @@ Total de peliculas: 1570
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video | +13 |
 | 2001 | Kate & Leopold | kate-leopold-2001 | Comedia romántica | Apple TV | ATP |
 | 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video | +13 |
+| 2001 | La hora de la araña | la-hora-de-la-arana-2001 | Drama | Otras plataformas | +13 |
 | 2001 | La maldición del escorpión de jade | the-curse-of-the-jade-scorpion-2001 | Comedia | Otras plataformas | +13 |
 | 2001 | La pianista | la-pianista-2001 | Drama | Otras plataformas | +18 |
 | 2001 | Millennium Actress | millennium-actress-2001 | Anime | Otras plataformas | +13 |
@@ -1161,6 +1168,7 @@ Total de peliculas: 1570
 | 1998 | La delgada línea roja | la-delgada-linea-roja-1998 | Drama | Disney Plus | +13 |
 | 1998 | La mejor de mis bodas | the-wedding-singer-1998 | Comedia | Apple TV | ATP |
 | 1998 | La novia de Chucky | bride-of-chucky-1998 | Terror | Prime Video | +13 |
+| 1998 | Lluvia permanente | lluvia-permanente-1998 | Drama | Netflix | +16 |
 | 1998 | Los miserables: La leyenda nunca muere | los-miserables-la-leyenda-nunca-muere-1998 | Drama | Apple TV | +13 |
 | 1998 | Poseídos | poseidos-1998 | Thriller | HBO Max + Apple TV | +16 |
 | 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix | +16 |
@@ -1172,6 +1180,7 @@ Total de peliculas: 1570
 | 1997 | Carretera perdida | carretera-perdida-1997 | Terror | Otras plataformas | +16 |
 | 1997 | Contacto | contacto-1997 | Ciencia ficcion | Apple TV | +13 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
+| 1997 | El coleccionista de amantes | el-coleccionista-de-amantes-1997 | Drama | Otras plataformas | +16 |
 | 1997 | El poder de la justicia | el-poder-de-la-justicia-1997 | Drama | Netflix | +13 |
 | 1997 | El quinto elemento | el-quinto-elemento-1997 | Ciencia ficcion | Otras plataformas | +13 |
 | 1997 | Gattaca | gattaca-1997 | Ciencia ficcion | HBO Max | +13 |
@@ -1296,6 +1305,7 @@ Total de peliculas: 1570
 | 1989 | Do the Right Thing | do-the-right-thing-1989 | Drama | Otras plataformas | +16 |
 | 1989 | Driving Miss Daisy | driving-miss-daisy-1989 | Drama | Otras plataformas | ATP |
 | 1989 | El cocinero, el ladrón, su mujer y su amante | el-cocinero-el-ladron-su-mujer-y-su-amante-1989 | Drama | Apple TV | +18 |
+| 1989 | Escuela de rebeldes | escuela-de-rebeldes-1989 | Drama | Otras plataformas | +13 |
 | 1989 | Going Overboard | going-overboard-1989 | Comedia | Otras plataformas | +17 |
 | 1989 | Halloween 5: La venganza de Michael Myers | halloween-5-the-revenge-of-michael-myers-1989 | Terror | Otras plataformas | +17 |
 | 1989 | Indiana Jones and the Last Crusade | indiana-jones-and-the-last-crusade-1989 | Aventura | Otras plataformas | +13 |
