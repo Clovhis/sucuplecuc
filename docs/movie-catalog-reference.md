@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1665
+Total de peliculas: 1668
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1225,6 +1225,7 @@ Total de peliculas: 1665
 | 1997 | Amistad | amistad-1997 | Drama | Otras plataformas | +17 |
 | 1997 | Batman & Robin | batman-and-robin-1997 | Accion | Prime Video | +13 |
 | 1997 | Boogie nights | boogie-nights-1997 | Drama | HBO Max + Apple TV | +17 |
+| 1997 | Cara a cara | cara-a-cara-1997 | Accion | Disney Plus | +17 |
 | 1997 | Carretera perdida | carretera-perdida-1997 | Terror | Otras plataformas | +16 |
 | 1997 | Contacto | contacto-1997 | Ciencia ficcion | Apple TV | +13 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
@@ -1274,6 +1275,7 @@ Total de peliculas: 1665
 | 1995 | Braveheart | braveheart-1995 | Drama | Disney Plus | +17 |
 | 1995 | Caballos salvajes | caballos-salvajes-1995 | Drama | Otras plataformas | +13 |
 | 1995 | Casino | casino-1995 | Crimen | Otras plataformas | +18 |
+| 1995 | Cómo conquistar Hollywood | como-conquistar-hollywood-1995 | Comedia | Otras plataformas | +17 |
 | 1995 | Días extraños | dias-extranos-1995 | Ciencia ficcion | Disney Plus | +18 |
 | 1995 | El demonio vestido de azul | el-demonio-vestido-de-azul-1995 | Crimen | Otras plataformas | +16 |
 | 1995 | El día de la bestia | el-dia-de-la-bestia-1995 | Terror | Apple TV | +18 |
@@ -1531,6 +1533,7 @@ Total de peliculas: 1665
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max | ATP |
 | 1977 | Annie Hall | annie-hall-1977 | Comedia | Otras plataformas | ATP |
 | 1977 | Encuentros cercanos del tercer tipo | close-encounters-of-the-third-kind-1977 | Ciencia ficcion | Otras plataformas | ATP |
+| 1977 | Fiebre del sábado noche | fiebre-del-sabado-noche-1977 | Drama | Otras plataformas | +17 |
 | 1977 | House | house-1977 | Terror | Otras plataformas | +16 |
 | 1977 | New York, New York | new-york-new-york-1977 | Drama | Otras plataformas | ATP |
 | 1977 | Star Wars: Episode IV - A New Hope | star-wars-episode-iv-a-new-hope-1977 | Ciencia ficcion | Disney Plus | ATP |
