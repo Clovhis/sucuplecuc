@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1719
+Total de peliculas: 1735
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -456,6 +456,7 @@ Total de peliculas: 1719
 | 2021 | Dune: Part One | dune-2021 | Acción | HBO Max | +13 |
 | 2021 | El Caballero Verde | el-caballero-verde-2021 | Fantasia | Prime Video + HBO Max | +18 |
 | 2021 | El conjuro 3: El diablo me obligó a hacerlo | el-conjuro-3-el-diablo-me-obligo-a-hacerlo-2021 | Terror | HBO Max | +13 |
+| 2021 | El mauritano | el-mauritano-2021 | Drama | Prime Video | +16 |
 | 2021 | El perro que no calla | el-perro-que-no-calla-2021 | Drama | CINE.AR | ATP |
 | 2021 | El protector | el-protector-2021 | Accion | Netflix + Prime Video | +13 |
 | 2021 | El último duelo | el-ultimo-duelo-2021 | Drama | Paramount Plus + Disney Plus | +16 |
@@ -571,6 +572,7 @@ Total de peliculas: 1719
 | 2018 | Fantastic Beasts: The Crimes of Grindelwald | fantastic-beasts-the-crimes-of-grindelwald-2018 | Fantasia | HBO Max | +13 |
 | 2018 | Green Book | green-book-2018 | Drama | Prime Video | +13 |
 | 2018 | Hereditary | hereditary-2018 | Terror | Prime Video + Apple TV | +16 |
+| 2018 | Hotel de criminales | hotel-de-criminales-2018 | Accion | Otras plataformas | +16 |
 | 2018 | Hotel Transylvania 3: Monstruos de vacaciones | hotel-transylvania-3-summer-vacation-2018 | Animación | Apple TV | +13 |
 | 2018 | Jurassic World: Fallen Kingdom | jurassic-world-fallen-kingdom-2018 | Aventura | Prime Video | +13 |
 | 2018 | La favorita | la-favorita-2018 | Drama | Disney Plus | +13 |
@@ -806,6 +808,7 @@ Total de peliculas: 1719
 | 2011 | Cruzadas | cruzadas-2011 | Comedia | Otras plataformas | +13 |
 | 2011 | Destino final 5 | destino-final-5-2011 | Terror | HBO Max | +16 |
 | 2011 | Drive | drive-2011 | Accion | Paramount Plus + Prime Video | +13 |
+| 2011 | El castor | el-castor-2011 | Drama | Otras plataformas | +13 |
 | 2011 | El juego de la fortuna | el-juego-de-la-fortuna-2011 | Drama | Apple TV | ATP |
 | 2011 | Fast Five | fast-five-2011 | Accion | Otras plataformas | +13 |
 | 2011 | George Harrison: Living in the Material World | george-harrison-living-in-the-material-world-2011 | Documental | Otras plataformas | ATP |
@@ -837,6 +840,7 @@ Total de peliculas: 1719
 | 2011 | The Human Centipede 2 (Full Sequence) | the-human-centipede-2-full-sequence-2011 | Terror | Otras plataformas | +18 |
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
+| 2011 | Un dios salvaje | un-dios-salvaje-2011 | Comedia | Otras plataformas | +13 |
 | 2011 | Un golpe de altura | un-golpe-de-altura-2011 | Comedia | Apple TV | +13 |
 | 2011 | Un lugar donde quedarse | un-lugar-donde-quedarse-2011 | Drama | Prime Video | +13 |
 | 2011 | Un zoológico en casa | un-zoologico-en-casa-2011 | Drama | Disney Plus | ATP |
@@ -960,6 +964,7 @@ Total de peliculas: 1719
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max | +12 |
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
 | 2007 | La esperanza vive en mí | reign-over-me-2007 | Drama | Apple TV + Netflix | +17 |
+| 2007 | La extraña que hay en ti | la-extrana-que-hay-en-ti-2007 | Thriller | HBO Max | +16 |
 | 2007 | La guerra de Charlie Wilson | la-guerra-de-charlie-wilson-2007 | Comedia | Netflix + HBO Max | +17 |
 | 2007 | La huella | la-huella-2007 | Drama | Apple TV | +13 |
 | 2007 | La noche es nuestra | la-noche-es-nuestra-2007 | Crimen | Prime Video | +13 |
@@ -993,6 +998,7 @@ Total de peliculas: 1719
 | 2006 | El laberinto del fauno | el-laberinto-del-fauno-2006 | Fantasia | Otras plataformas | +18 |
 | 2006 | Firewall | firewall-2006 | Thriller | Otras plataformas | +13 |
 | 2006 | Invencible | invencible-2006 | Drama | Disney Plus | ATP |
+| 2006 | La casa del lago | la-casa-del-lago-2006 | Romance | HBO Max | +13 |
 | 2006 | La fuente de la vida | la-fuente-de-la-vida-2006 | Drama | Prime Video | +13 |
 | 2006 | La otra cara de Nelson | la-otra-cara-de-nelson-2006 | Drama | Otras plataformas | +16 |
 | 2006 | La vida de los otros | la-vida-de-los-otros-2006 | Drama | Otras plataformas | +13 |
@@ -1039,6 +1045,7 @@ Total de peliculas: 1719
 | 2005 | Match Point | match-point-2005 | Thriller | Otras plataformas | +16 |
 | 2005 | Múnich | munich-2005 | Thriller | Otras plataformas | +17 |
 | 2005 | No Direction Home: Bob Dylan | no-direction-home-bob-dylan-2005 | Documental | Otras plataformas | ATP |
+| 2005 | Plan de vuelo | plan-de-vuelo-2005 | Thriller | Apple TV | +13 |
 | 2005 | Saw II | saw-ii-2005 | Gore | Otras plataformas | +18 |
 | 2005 | Secreto en la montaña | secreto-en-la-montana-2005 | Drama | Apple TV | +13 |
 | 2005 | Star Wars: Episode III - Revenge of the Sith | star-wars-episode-iii-revenge-of-the-sith-2005 | Ciencia ficcion | Disney Plus | +13 |
@@ -1132,6 +1139,7 @@ Total de peliculas: 1719
 | 2002 | Juego sucio (Infernal Affairs) | juego-sucio-infernal-affairs-2002 | Crimen | Otras plataformas | +16 |
 | 2002 | K-19: The Widowmaker | k-19-the-widowmaker-2002 | Drama | Prime Video + Apple TV | +13 |
 | 2002 | Kamchatka | kamchatka-2002 | Drama | Otras plataformas | +16 |
+| 2002 | La habitación del pánico | la-habitacion-del-panico-2002 | Thriller | HBO Max | +13 |
 | 2002 | La herencia del Sr. Deeds | mr-deeds-2002 | Comedia | Apple TV + HBO Max | +16 |
 | 2002 | Minority Report | minority-report-2002 | Ciencia ficcion | Paramount Plus + Mercado Play | +13 |
 | 2002 | Noches blancas (Insomnia) | insomnia-2002 | Thriller | Otras plataformas | +13 |
@@ -1211,6 +1219,7 @@ Total de peliculas: 1719
 | 1999 | El informante | el-informante-1999 | Drama | Otras plataformas | +13 |
 | 1999 | El talento de Mr. Ripley | el-talento-de-mr-ripley-1999 | Thriller | Apple TV | +17 |
 | 1999 | Garage Olimpo | garage-olimpo-1999 | Drama | CINE.AR | +18 |
+| 1999 | Héroes fuera de órbita | heroes-fuera-de-orbita-1999 | Comedia | Apple TV | ATP |
 | 1999 | Huracán Carter | huracan-carter-1999 | Drama | Prime Video + Apple TV | +13 |
 | 1999 | La milla verde | la-milla-verde-1999 | Drama | Prime Video | +17 |
 | 1999 | Magnolia | magnolia-1999 | Drama | Netflix + HBO Max | +13 |
@@ -1320,6 +1329,7 @@ Total de peliculas: 1719
 | 1995 | Jungla de cristal: la venganza | jungla-de-cristal-la-venganza-1995 | Acción | Disney Plus | +13 |
 | 1995 | Lancelot, el primer caballero | lancelot-el-primer-caballero-1995 | Aventura | Apple TV | +13 |
 | 1995 | Marea roja | marea-roja-1995 | Accion | Disney Plus | +13 |
+| 1995 | Mientras dormías | mientras-dormias-1995 | Comedia | Disney Plus | ATP |
 | 1995 | Mundo acuático | mundo-acuatico-1995 | Ciencia ficcion | Apple TV | +13 |
 | 1995 | Nixon | nixon-1995 | Drama | Disney Plus | +13 |
 | 1995 | Poderosa Afrodita | mighty-aphrodite-1995 | Comedia | Otras plataformas | +13 |
@@ -1339,6 +1349,7 @@ Total de peliculas: 1719
 | 1994 | Hoop Dreams | hoop-dreams-1994 | Documental | Otras plataformas | ATP |
 | 1994 | La máscara | la-mascara-1994 | Comedia | Prime Video + HBO Max | ATP |
 | 1994 | La nueva pesadilla de Wes Craven | wes-craven-s-new-nightmare-1994 | Terror | Otras plataformas | +17 |
+| 1994 | Maverick | maverick-1994 | Comedia | Apple TV | ATP |
 | 1994 | Peligro inminente | peligro-inminente-1994 | Acción | Prime Video | +13 |
 | 1994 | Pulp Fiction | pulp-fiction-1994 | Thriller | Netflix | +18 |
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
@@ -1347,6 +1358,7 @@ Total de peliculas: 1719
 | 1994 | Volar por los aires | volar-por-los-aires-1994 | Accion | Apple TV + Otras plataformas | +13 |
 | 1994 | Wyatt Earp | wyatt-earp-1994 | Western | Apple TV | +13 |
 | 1993 | Atrapado por su pasado | atrapado-por-su-pasado-1993 | Crimen | Apple TV | +16 |
+| 1993 | El demoledor | el-demoledor-1993 | Acción | Otras plataformas | +16 |
 | 1993 | El fugitivo | el-fugitivo-1993 | Acción | HBO Max | +13 |
 | 1993 | El informe Pelícano | el-informe-pelicano-1993 | Thriller | Apple TV | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
@@ -1383,6 +1395,7 @@ Total de peliculas: 1719
 | 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max | +17 |
 | 1991 | Barton Fink | barton-fink-1991 | Drama | Otras plataformas | +16 |
 | 1991 | El cabo del miedo | cape-fear-1991 | Thriller | Otras plataformas | +17 |
+| 1991 | El pequeño Tate | el-pequeno-tate-1991 | Drama | Prime Video | +13 |
 | 1991 | El silencio de los inocentes | the-silence-of-the-lambs-1991 | Terror | Paramount Plus + Apple TV | +13 |
 | 1991 | Hook (El capitán Garfio) | hook-1991 | Aventura | Otras plataformas | ATP |
 | 1991 | JFK: Caso abierto | jfk-caso-abierto-1991 | Thriller | Prime Video | +13 |
@@ -1433,8 +1446,10 @@ Total de peliculas: 1719
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus | +17 |
 | 1989 | Tiempos de gloria | tiempos-de-gloria-1989 | Drama | Apple TV | +16 |
 | 1989 | Viernes 13. Parte VIII: Jason vuelve... para siempre | friday-the-13th-part-viii-jason-takes-manhattan-1989 | Terror | Otras plataformas | +18 |
+| 1988 | Acusados | acusados-1988 | Drama | Apple TV | +18 |
 | 1988 | Agárralo como puedas | agarralo-como-puedas-1988 | Comedia | Paramount Plus | +13 |
 | 1988 | Akira | akira-1988 | Anime | Netflix | +17 |
+| 1988 | Armas de mujer | armas-de-mujer-1988 | Comedia | Disney Plus | +16 |
 | 1988 | Beetlejuice | beetlejuice-1988 | Comedia | HBO Max | +13 |
 | 1988 | Búsqueda frenética | busqueda-frenetica-1988 | Thriller | Otras plataformas | +17 |
 | 1988 | Cinema Paradiso | cinema-paradiso-1988 | Drama | Apple TV | +13 |
@@ -1532,6 +1547,7 @@ Total de peliculas: 1719
 | 1982 | Blade Runner | blade-runner-1982 | Ciencia ficcion | Prime Video | +17 |
 | 1982 | Comedia sexual de una noche de verano | a-midsummer-night-s-sex-comedy-1982 | Comedia | Otras plataformas | +13 |
 | 1982 | E.T., el extraterrestre | e-t-the-extra-terrestrial-1982 | Ciencia ficcion | HBO Max | ATP |
+| 1982 | El año que vivimos peligrosamente | el-ano-que-vivimos-peligrosamente-1982 | Drama | Apple TV | ATP |
 | 1982 | El rey de la comedia | the-king-of-comedy-1982 | Comedia | Otras plataformas | ATP |
 | 1982 | Gandhi | gandhi-1982 | Drama | Otras plataformas | ATP |
 | 1982 | Halloween III: El día de la bruja | halloween-iii-season-of-the-witch-1982 | Terror | Otras plataformas | +17 |
