@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1703
+Total de peliculas: 1705
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -540,6 +540,7 @@ Total de peliculas: 1703
 | 2019 | Muñeco diabólico | child-s-play-2019 | Terror | Otras plataformas | +17 |
 | 2019 | Once Upon a Time in Hollywood | once-upon-a-time-in-hollywood-2019 | Drama | Netflix | +16 |
 | 2019 | Parasite | parasite-2019 | Comedia | Netflix | +15 |
+| 2019 | Puñales por la espalda | punales-por-la-espalda-2019 | Drama | Apple TV | +13 |
 | 2019 | Retrato de una mujer en llamas | retrato-de-una-mujer-en-llamas-2019 | Romance | Apple TV | +16 |
 | 2019 | Rolling Thunder Revue: A Bob Dylan Story by Martin Scorsese | rolling-thunder-revue-a-bob-dylan-story-by-martin-scorsese-2019 | Documental | Otras plataformas | +18 |
 | 2019 | Shazam! | shazam-2019 | Accion | Netflix | +13 |
@@ -1375,6 +1376,7 @@ Total de peliculas: 1703
 | 1991 | Muñeco diabólico 3 | child-s-play-3-1991 | Terror | Otras plataformas | +17 |
 | 1991 | Pesadilla final: La muerte de Freddy | freddy-s-dead-the-final-nightmare-1991 | Terror | Otras plataformas | +17 |
 | 1991 | Sombras y niebla | shadows-and-fog-1991 | Thriller | Otras plataformas | +16 |
+| 1991 | Star Trek VI. Aquel país desconocido | star-trek-vi-aquel-pais-desconocido-1991 | Ciencia ficcion | Apple TV | ATP |
 | 1991 | Terminator 2: Judgment Day | terminator-2-judgment-day-1991 | Accion | Otras plataformas | +17 |
 | 1991 | Thelma y Louise | thelma-y-louise-1991 | Drama | Apple TV | +16 |
 | 1991 | Una segunda oportunidad | una-segunda-oportunidad-1991 | Drama | Otras plataformas | +13 |
