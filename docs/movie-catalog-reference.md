@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1651
+Total de peliculas: 1652
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -522,6 +522,7 @@ Total de peliculas: 1651
 | 2019 | Fast & Furious Presents: Hobbs & Shaw | fast-and-furious-presents-hobbs-and-shaw-2019 | Accion | Prime Video | +13 |
 | 2019 | Glass (Cristal) | glass-cristal-2019 | Thriller | Disney Plus | +13 |
 | 2019 | How to Train Your Dragon: The Hidden World | how-to-train-your-dragon-the-hidden-world-2019 | Animacion | Otras plataformas | ATP |
+| 2019 | Huérfanos de Brooklyn | huerfanos-de-brooklyn-2019 | Crimen | HBO Max | +17 |
 | 2019 | IT: Capítulo 2 | it-chapter-two-2019 | Terror | Netflix | +17 |
 | 2019 | John Wick: Chapter 3 - Parabellum | john-wick-chapter-3-parabellum-2019 | Accion | Mercado Play | +16 |
 | 2019 | Joker | joker-2019 | Drama | HBO Max | +16 |

@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-25T01:08:54.348Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-25T01:22:22.997Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
