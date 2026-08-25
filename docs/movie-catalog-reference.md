@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1631
+Total de peliculas: 1641
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -942,6 +942,7 @@ Total de peliculas: 1631
 | 2007 | La guerra de Charlie Wilson | la-guerra-de-charlie-wilson-2007 | Comedia | Netflix + HBO Max | +17 |
 | 2007 | La noche es nuestra | la-noche-es-nuestra-2007 | Crimen | Prime Video | +13 |
 | 2007 | Lars y la chica real | lars-y-la-chica-real-2007 | Drama | Prime Video | ATP |
+| 2007 | Mr. Brooks | mr-brooks-2007 | Thriller | Prime Video | +16 |
 | 2007 | Número 23: La revelación | numero-23-la-revelacion-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Paranormal Activity | paranormal-activity-2007 | Terror | Otras plataformas | +17 |
 | 2007 | Persépolis | persepolis-2007 | Animacion | Apple TV | +13 |
@@ -1066,6 +1067,7 @@ Total de peliculas: 1631
 | 2003 | Memories of Murder (Crónica de un asesino en serie) | memories-of-murder-cronica-de-un-asesino-en-serie-2003 | Crimen | Otras plataformas | +18 |
 | 2003 | Oldboy | oldboy-2003 | Thriller | Otras plataformas | +18 |
 | 2003 | Ong Bak: El guerrero Muay Thai | ong-bak-el-guerrero-muay-thai-2003 | Accion | Otras plataformas | +16 |
+| 2003 | Pacto de justicia | pacto-de-justicia-2003 | Western | Otras plataformas | +16 |
 | 2003 | Pirates of the Caribbean: The Curse of the Black Pearl | pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003 | Aventura | Disney Plus | ATP |
 | 2003 | Sentirse como en casa | the-blues-feel-like-going-home-2003 | Documental | Otras plataformas | ATP |
 | 2003 | Terminator 3: Rise of the Machines | terminator-3-rise-of-the-machines-2003 | Accion | Otras plataformas | +17 |
@@ -1177,6 +1179,7 @@ Total de peliculas: 1631
 | 1999 | Magnolia | magnolia-1999 | Drama | Netflix + HBO Max | +13 |
 | 1999 | Man on the Moon | man-on-the-moon-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Matrix | the-matrix-1999 | Ciencia ficcion | HBO Max + Apple TV | +13 |
+| 1999 | Mensaje en una botella | mensaje-en-una-botella-1999 | Romance | Apple TV | +13 |
 | 1999 | Mi viaje a Italia | my-voyage-to-italy-1999 | Documental | Otras plataformas | ATP |
 | 1999 | Mundo grúa | mundo-grua-1999 | Drama | Netflix | +13 |
 | 1999 | Nadie es perfecto | flawless-1999 | Drama | Prime Video + Apple TV | +16 |
@@ -1249,6 +1252,7 @@ Total de peliculas: 1631
 | 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Paramount Plus + Mercado Play | +16 |
 | 1996 | The English Patient | the-english-patient-1996 | Drama | Otras plataformas | +17 |
 | 1996 | Tiempo de matar | tiempo-de-matar-1996 | Drama | Netflix | +17 |
+| 1996 | Tin Cup | tin-cup-1996 | Comedia romántica | Apple TV | +13 |
 | 1996 | Todos dicen I Love You | everyone-says-i-love-you-1996 | Musical | Otras plataformas | +13 |
 | 1996 | Trainspotting | trainspotting-1996 | Drama | Netflix | +13 |
 | 1995 | Ace Ventura, un loco en África | ace-ventura-un-loco-en-africa-1995 | Comedia | Apple TV | +13 |
@@ -1269,6 +1273,7 @@ Total de peliculas: 1631
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Otras plataformas | +17 |
 | 1995 | Jungla de cristal: la venganza | jungla-de-cristal-la-venganza-1995 | Acción | Disney Plus | +13 |
 | 1995 | Marea roja | marea-roja-1995 | Accion | Disney Plus | +13 |
+| 1995 | Mundo acuático | mundo-acuatico-1995 | Ciencia ficcion | Apple TV | +13 |
 | 1995 | Poderosa Afrodita | mighty-aphrodite-1995 | Comedia | Otras plataformas | +13 |
 | 1995 | Rob Roy, la pasión de un rebelde | rob-roy-la-pasion-de-un-rebelde-1995 | Aventura | Apple TV | +16 |
 | 1995 | Seven | se7en-1995 | Thriller | HBO Max + Apple TV | +13 |
@@ -1289,6 +1294,7 @@ Total de peliculas: 1631
 | 1994 | The Lion King | the-lion-king-1994 | Animacion | Disney Plus | ATP |
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
 | 1994 | Tonto y retonto | tonto-y-retonto-1994 | Comedia | Apple TV | +13 |
+| 1994 | Wyatt Earp | wyatt-earp-1994 | Western | Apple TV | +13 |
 | 1993 | El fugitivo | el-fugitivo-1993 | Acción | HBO Max | +13 |
 | 1993 | El informe Pelícano | el-informe-pelicano-1993 | Thriller | Apple TV | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
@@ -1301,6 +1307,7 @@ Total de peliculas: 1631
 | 1993 | Seis grados de separación | seis-grados-de-separacion-1993 | Drama | Apple TV | +13 |
 | 1993 | Super Mario Bros: La película | super-mario-bros-la-pelicula-1993 | Fantasia | Apple TV | ATP |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Otras plataformas | +13 |
+| 1993 | Un mundo perfecto | un-mundo-perfecto-1993 | Drama | HBO Max | +13 |
 | 1993 | Viernes 13 - Parte 9: Jason se va al Infierno | jason-goes-to-hell-the-final-friday-1993 | Terror | Otras plataformas | +17 |
 | 1992 | Alien 3 | alien-3-1992 | Ciencia ficcion | Disney Plus | +17 |
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Otras plataformas | +13 |
@@ -1318,6 +1325,7 @@ Total de peliculas: 1631
 | 1991 | El cabo del miedo | cape-fear-1991 | Thriller | Otras plataformas | +17 |
 | 1991 | El silencio de los inocentes | the-silence-of-the-lambs-1991 | Terror | Paramount Plus + Apple TV | +13 |
 | 1991 | Hook (El capitán Garfio) | hook-1991 | Aventura | Otras plataformas | ATP |
+| 1991 | JFK: Caso abierto | jfk-caso-abierto-1991 | Thriller | Prime Video | +13 |
 | 1991 | Muñeco diabólico 3 | child-s-play-3-1991 | Terror | Otras plataformas | +17 |
 | 1991 | Pesadilla final: La muerte de Freddy | freddy-s-dead-the-final-nightmare-1991 | Terror | Otras plataformas | +17 |
 | 1991 | Sombras y niebla | shadows-and-fog-1991 | Thriller | Otras plataformas | +16 |
@@ -1371,6 +1379,7 @@ Total de peliculas: 1631
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Otras plataformas | +17 |
 | 1988 | Inseparables | inseparables-1988 | Terror | Prime Video | +18 |
 | 1988 | La última tentación de Cristo | the-last-temptation-of-christ-1988 | Drama | Otras plataformas | +13 |
+| 1988 | Los búfalos de Durham | los-bufalos-de-durham-1988 | Comedia romántica | Otras plataformas | +16 |
 | 1988 | Mi vecino Totoro | my-neighbor-totoro-1988 | Anime | Cine | ATP |
 | 1988 | Muñeco diabólico | child-s-play-1988 | Terror | Prime Video | +16 |
 | 1988 | Otra mujer | another-woman-1988 | Drama | Otras plataformas | +13 |
@@ -1423,6 +1432,7 @@ Total de peliculas: 1631
 | 1985 | Pee-wee's Big Adventure | pee-wees-big-adventure-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | Rocky IV | rocky-iv-1985 | Drama | Otras plataformas | ATP |
 | 1985 | Shoah | shoah-1985 | Documental | Otras plataformas | +16 |
+| 1985 | Silverado | silverado-1985 | Western | Netflix | +14 |
 | 1985 | Testigo en peligro | testigo-en-peligro-1985 | Drama | Otras plataformas | +17 |
 | 1985 | Viernes 13. Parte V: Un nuevo comienzo | friday-the-13th-a-new-beginning-1985 | Terror | Otras plataformas | +18 |
 | 1984 | Amadeus | amadeus-1984 | Drama | Otras plataformas | ATP |
