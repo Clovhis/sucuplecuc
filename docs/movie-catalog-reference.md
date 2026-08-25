@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1694
+Total de peliculas: 1697
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -954,6 +954,7 @@ Total de peliculas: 1694
 | 2007 | La huella | la-huella-2007 | Drama | Apple TV | +13 |
 | 2007 | La noche es nuestra | la-noche-es-nuestra-2007 | Crimen | Prime Video | +13 |
 | 2007 | Lars y la chica real | lars-y-la-chica-real-2007 | Drama | Prime Video | ATP |
+| 2007 | Leones por corderos | leones-por-corderos-2007 | Drama | Prime Video + Apple TV | +17 |
 | 2007 | Mr. Brooks | mr-brooks-2007 | Thriller | Prime Video | +16 |
 | 2007 | Número 23: La revelación | numero-23-la-revelacion-2007 | Thriller | Otras plataformas | +13 |
 | 2007 | Paranormal Activity | paranormal-activity-2007 | Terror | Otras plataformas | +17 |
@@ -1486,6 +1487,7 @@ Total de peliculas: 1694
 | 1984 | Broadway Danny Rose | broadway-danny-rose-1984 | Comedia | Otras plataformas | +13 |
 | 1984 | Camila | camila-1984 | Romance | Prime Video | +13 |
 | 1984 | Cazafantasmas | cazafantasmas-1984 | Comedia | HBO Max | ATP |
+| 1984 | El mejor | el-mejor-1984 | Drama | Apple TV | ATP |
 | 1984 | Enamorarse | enamorarse-1984 | Romance | Prime Video + Apple TV | +13 |
 | 1984 | Érase una vez en América | erase-una-vez-en-america-1984 | Drama | Otras plataformas | +16 |
 | 1984 | Indiana Jones and the Temple of Doom | indiana-jones-and-the-temple-of-doom-1984 | Aventura | Otras plataformas | ATP |
@@ -1604,6 +1606,7 @@ Total de peliculas: 1694
 | 1970 | Escenas callejeras | street-scenes-1970-1970 | Documental | Otras plataformas | ATP |
 | 1970 | Hola, mamá | hola-mama-1970 | Comedia | Otras plataformas | +18 |
 | 1970 | Patton | patton-1970 | Drama | Disney Plus | ATP |
+| 1969 | Dos hombres y un destino | dos-hombres-y-un-destino-1969 | Crimen | Disney Plus | ATP |
 | 1969 | El incinerador de cadáveres | el-incinerador-de-cadaveres-1969 | Terror | Otras plataformas | +18 |
 | 1969 | Grupo salvaje | grupo-salvaje-1969 | Drama | Otras plataformas | +18 |
 | 1969 | Midnight Cowboy | midnight-cowboy-1969 | Drama | Otras plataformas | +17 |
