@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1641
+Total de peliculas: 1642
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1500,6 +1500,7 @@ Total de peliculas: 1641
 | 1979 | Stalker | stalker-1979 | Ciencia ficcion | Otras plataformas | +13 |
 | 1979 | The Warriors (Los amos de la noche) | the-warriors-los-amos-de-la-noche-1979 | Accion | Apple TV | +16 |
 | 1978 | American Boy: perfil de Steven Prince | american-boy-a-profile-of-steven-prince-1978 | Documental | Otras plataformas | ATP |
+| 1978 | Camino del sur | camino-del-sur-1978 | Western | Otras plataformas | +14 |
 | 1978 | Días del cielo | dias-del-cielo-1978 | Drama | Apple TV | +13 |
 | 1978 | El cazador | the-deer-hunter-1978 | Drama | Apple TV | +13 |
 | 1978 | El último vals | the-last-waltz-1978 | Documental | Otras plataformas | ATP |
