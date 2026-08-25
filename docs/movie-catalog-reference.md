@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1687
+Total de peliculas: 1694
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -405,6 +405,7 @@ Total de peliculas: 1687
 | 2022 | Decisión de partir | decision-de-partir-2022 | Thriller | Apple TV | +16 |
 | 2022 | Doctor Strange in the Multiverse of Madness | doctor-strange-in-the-multiverse-of-madness-2022 | Accion | Disney Plus | +13 |
 | 2022 | EGO | ego-2022 | Terror | Netflix | +16 |
+| 2022 | El hijo | el-hijo-2022 | Drama | Prime Video | +16 |
 | 2022 | El hombre del norte | el-hombre-del-norte-2022 | Accion | Netflix + Apple TV | +16 |
 | 2022 | El hombre gris | el-hombre-gris-2022 | Accion | Netflix | +13 |
 | 2022 | El menú | el-menu-2022 | Terror | Prime Video + Disney Plus | +13 |
@@ -531,6 +532,7 @@ Total de peliculas: 1687
 | 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus | +13 |
 | 2019 | Las buenas intenciones | las-buenas-intenciones-2019 | Comedia | CINE.AR | +13 |
 | 2019 | Lazos De Familia | lazos-de-familia-2019 | Drama | Otras plataformas | +13 |
+| 2019 | Los dos Papas | los-dos-papas-2019 | Drama | Netflix | +13 |
 | 2019 | Los sonámbulos | los-sonambulos-2019 | Drama | Otras plataformas | +16 |
 | 2019 | Midsommar: El terror no espera la noche | midsommar-el-terror-no-espera-la-noche-2019 | Terror | Apple TV | +16 |
 | 2019 | Misterio a bordo | murder-mystery-2019 | Comedia | Netflix | +13 |
@@ -774,6 +776,7 @@ Total de peliculas: 1687
 | 2012 | Elefante blanco | elefante-blanco-2012 | Drama | Disney Plus + Netflix | +16 |
 | 2012 | Ese es mi hijo | thats-my-boy-2012 | Comedia | Apple TV | +16 |
 | 2012 | Frankenweenie | frankenweenie-2012 | Animacion | Disney Plus | ATP |
+| 2012 | Hitchcock | hitchcock-2012 | Drama | Disney Plus | +13 |
 | 2012 | Hotel Transilvania | hotel-transylvania-2012 | Animación | HBO Max + Prime Video | ATP |
 | 2012 | Infierno blanco | infierno-blanco-2012 | Thriller | Prime Video + HBO Max | +16 |
 | 2012 | Jack Reacher: bajo la mira | jack-reacher-bajo-la-mira-2012 | Accion | Paramount Plus | +13 |
@@ -1077,6 +1080,7 @@ Total de peliculas: 1687
 | 2003 | Kill Bill: Vol. 1 | kill-bill-vol-1-2003 | Accion | Netflix | +18 |
 | 2003 | La estafa maestra | la-estafa-maestra-2003 | Accion | Netflix + Prime Video | +13 |
 | 2003 | La habitación (The room) | la-habitacion-the-room-2003 | Drama | Apple TV | +17 |
+| 2003 | La mancha humana | la-mancha-humana-2003 | Drama | Otras plataformas | +18 |
 | 2003 | Locos de ira | anger-management-2003 | Comedia | Apple TV + HBO Max | +13 |
 | 2003 | Memories of Murder (Crónica de un asesino en serie) | memories-of-murder-cronica-de-un-asesino-en-serie-2003 | Crimen | Otras plataformas | +18 |
 | 2003 | Oldboy | oldboy-2003 | Thriller | Otras plataformas | +18 |
@@ -1102,6 +1106,7 @@ Total de peliculas: 1687
 | 2002 | Ciudad de Dios | ciudad-de-dios-2002 | Drama | HBO Max | +16 |
 | 2002 | Condenado | condenado-2002 | Drama | Otras plataformas | +16 |
 | 2002 | El bonaerense | el-bonaerense-2002 | Crimen | Netflix | +13 |
+| 2002 | El dragón rojo | el-dragon-rojo-2002 | Crimen | HBO Max | +16 |
 | 2002 | El pianista | el-pianista-2002 | Drama | Otras plataformas | +15 |
 | 2002 | Embriagado de amor | punch-drunk-love-2002 | Drama | Apple TV | +13 |
 | 2002 | En defensa del honor | en-defensa-del-honor-2002 | Drama | Apple TV | +17 |
@@ -1134,6 +1139,7 @@ Total de peliculas: 1687
 | 2001 | Donnie Darko | donnie-darko-2001 | Ciencia ficcion | Prime Video | +13 |
 | 2001 | El creyente | el-creyente-2001 | Drama | Otras plataformas | +16 |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus | +13 |
+| 2001 | Hannibal | hannibal-2001 | Terror | HBO Max | +16 |
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max | ATP |
 | 2001 | Ichi the Killer | ichi-the-killer-2001 | Gore | Otras plataformas | +18 |
 | 2001 | Jason X: Martes 13, parte X | jason-x-2001 | Terror | HBO Max | +17 |
@@ -1298,6 +1304,7 @@ Total de peliculas: 1687
 | 1995 | Lancelot, el primer caballero | lancelot-el-primer-caballero-1995 | Aventura | Apple TV | +13 |
 | 1995 | Marea roja | marea-roja-1995 | Accion | Disney Plus | +13 |
 | 1995 | Mundo acuático | mundo-acuatico-1995 | Ciencia ficcion | Apple TV | +13 |
+| 1995 | Nixon | nixon-1995 | Drama | Disney Plus | +13 |
 | 1995 | Poderosa Afrodita | mighty-aphrodite-1995 | Comedia | Otras plataformas | +13 |
 | 1995 | Rob Roy, la pasión de un rebelde | rob-roy-la-pasion-de-un-rebelde-1995 | Aventura | Apple TV | +16 |
 | 1995 | Seven | se7en-1995 | Thriller | HBO Max + Apple TV | +13 |
