@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1659
+Total de peliculas: 1665
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -663,6 +663,7 @@ Total de peliculas: 1659
 | 2015 | Creed | creed-2015 | Drama | Otras plataformas | +13 |
 | 2015 | El becario | el-becario-2015 | Comedia | HBO Max + Apple TV | ATP |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus | +16 |
+| 2015 | El francotirador | el-francotirador-2015 | Accion | HBO Max | +16 |
 | 2015 | El puente de los espías | bridge-of-spies-2015 | Thriller | Otras plataformas | +13 |
 | 2015 | El renacido | el-renacido-2015 | Western | Netflix + Paramount Plus | +16 |
 | 2015 | Everest | everest-2015 | Aventura | HBO Max | +13 |
@@ -825,6 +826,7 @@ Total de peliculas: 1659
 | 2011 | Thor | thor-2011 | Accion | Disney Plus | +13 |
 | 2011 | Un cuento chino | un-cuento-chino-2011 | Comedia | Disney Plus | ATP |
 | 2011 | Un golpe de altura | un-golpe-de-altura-2011 | Comedia | Apple TV | +13 |
+| 2011 | Un lugar donde quedarse | un-lugar-donde-quedarse-2011 | Drama | Prime Video | +13 |
 | 2011 | Un zoológico en casa | un-zoologico-en-casa-2011 | Drama | Disney Plus | ATP |
 | 2011 | Una esposa de mentira | just-go-with-it-2011 | Comedia | Apple TV + HBO Max | +17 |
 | 2011 | War Horse (Caballo de batalla) | war-horse-2011 | Drama | Otras plataformas | +13 |
@@ -1054,6 +1056,7 @@ Total de peliculas: 1659
 | 2004 | Troya | troya-2004 | Accion | Prime Video + HBO Max | +16 |
 | 2004 | Una serie de eventos desafortunados | una-serie-de-eventos-desafortunados-2004 | Fantasia | Otras plataformas | ATP |
 | 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Otras plataformas | +13 |
+| 2003 | 21 gramos | 21-gramos-2003 | Drama | HBO Max | +16 |
 | 2003 | Big Fish | big-fish-2003 | Drama | Otras plataformas | +13 |
 | 2003 | Crueldad intolerable | crueldad-intolerable-2003 | Comedia | Apple TV | +13 |
 | 2003 | Daredevil | daredevil-2003 | Accion | Disney Plus | +13 |
@@ -1072,6 +1075,7 @@ Total de peliculas: 1659
 | 2003 | Ong Bak: El guerrero Muay Thai | ong-bak-el-guerrero-muay-thai-2003 | Accion | Otras plataformas | +16 |
 | 2003 | Pacto de justicia | pacto-de-justicia-2003 | Western | Otras plataformas | +16 |
 | 2003 | Pirates of the Caribbean: The Curse of the Black Pearl | pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003 | Aventura | Disney Plus | ATP |
+| 2003 | Río místico | rio-mistico-2003 | Crimen | HBO Max | +16 |
 | 2003 | Sentirse como en casa | the-blues-feel-like-going-home-2003 | Documental | Otras plataformas | ATP |
 | 2003 | Terminator 3: Rise of the Machines | terminator-3-rise-of-the-machines-2003 | Accion | Otras plataformas | +17 |
 | 2003 | The Lord of the Rings: The Return of the King | the-lord-of-the-rings-the-return-of-the-king-2003 | Drama | Prime Video | +13 |
@@ -1302,6 +1306,7 @@ Total de peliculas: 1659
 | 1994 | The Shawshank Redemption | the-shawshank-redemption-1994 | Drama | HBO Max | +13 |
 | 1994 | Tonto y retonto | tonto-y-retonto-1994 | Comedia | Apple TV | +13 |
 | 1994 | Wyatt Earp | wyatt-earp-1994 | Western | Apple TV | +13 |
+| 1993 | Atrapado por su pasado | atrapado-por-su-pasado-1993 | Crimen | Apple TV | +16 |
 | 1993 | El fugitivo | el-fugitivo-1993 | Acción | HBO Max | +13 |
 | 1993 | El informe Pelícano | el-informe-pelicano-1993 | Thriller | Apple TV | +13 |
 | 1993 | El piano | el-piano-1993 | Drama | Prime Video | +16 |
@@ -1473,6 +1478,7 @@ Total de peliculas: 1659
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Otras plataformas | ATP |
 | 1983 | Videodrome | videodrome-1983 | Terror | Otras plataformas | +18 |
 | 1983 | Zelig | zelig-1983 | Comedia | Otras plataformas | +13 |
+| 1982 | Aquel excitante curso | aquel-excitante-curso-1982 | Comedia | Apple TV | +16 |
 | 1982 | Blade Runner | blade-runner-1982 | Ciencia ficcion | Prime Video | +17 |
 | 1982 | Comedia sexual de una noche de verano | a-midsummer-night-s-sex-comedy-1982 | Comedia | Otras plataformas | +13 |
 | 1982 | E.T., el extraterrestre | e-t-the-extra-terrestrial-1982 | Ciencia ficcion | HBO Max | ATP |
