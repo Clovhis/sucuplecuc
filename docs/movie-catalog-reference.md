@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1683
+Total de peliculas: 1684
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -948,6 +948,7 @@ Total de peliculas: 1683
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
 | 2007 | La esperanza vive en mí | reign-over-me-2007 | Drama | Apple TV + Netflix | +17 |
 | 2007 | La guerra de Charlie Wilson | la-guerra-de-charlie-wilson-2007 | Comedia | Netflix + HBO Max | +17 |
+| 2007 | La huella | la-huella-2007 | Drama | Apple TV | +13 |
 | 2007 | La noche es nuestra | la-noche-es-nuestra-2007 | Crimen | Prime Video | +13 |
 | 2007 | Lars y la chica real | lars-y-la-chica-real-2007 | Drama | Prime Video | ATP |
 | 2007 | Mr. Brooks | mr-brooks-2007 | Thriller | Prime Video | +16 |
