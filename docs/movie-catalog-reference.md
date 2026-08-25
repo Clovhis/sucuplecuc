@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1673
+Total de peliculas: 1679
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1005,6 +1005,8 @@ Total de peliculas: 1673
 | 2005 | Cuatro hermanos | cuatro-hermanos-2005 | Accion | Prime Video + Apple TV | +17 |
 | 2005 | El aura | el-aura-2005 | Thriller | HBO Max | +18 |
 | 2005 | El escondite | el-escondite-2005 | Terror | Disney Plus | +16 |
+| 2005 | El hombre del tiempo | el-hombre-del-tiempo-2005 | Drama | Apple TV | +13 |
+| 2005 | El señor de la guerra | el-senor-de-la-guerra-2005 | Crimen | Prime Video | +18 |
 | 2005 | El umbral | el-umbral-2005 | Thriller | Otras plataformas | +16 |
 | 2005 | Elektra | elektra-2005 | Accion | Netflix + Prime Video | +13 |
 | 2005 | Fantastic Four | fantastic-four-2005 | Accion | Disney Plus | +13 |
@@ -1260,6 +1262,7 @@ Total de peliculas: 1673
 | 1996 | Fargo. Secuestro voluntario | fargo-secuestro-voluntario-1996 | Crimen | Prime Video + Apple TV | +18 |
 | 1996 | From Dusk Till Dawn | from-dusk-till-dawn-1996 | Terror | Otras plataformas | +18 |
 | 1996 | Happy Gilmore | happy-gilmore-1996 | Comedia | Apple TV | +13 |
+| 1996 | La roca | la-roca-1996 | Accion | Disney Plus | +13 |
 | 1996 | Mars Attacks! | mars-attacks-1996 | Ciencia ficcion | Otras plataformas | +13 |
 | 1996 | Michael Collins | michael-collins-1996 | Drama | Apple TV | +16 |
 | 1996 | Mission: Impossible | mission-impossible-1996 | Accion | Otras plataformas | +13 |
@@ -1360,6 +1363,7 @@ Total de peliculas: 1673
 | 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Otras plataformas | ATP |
 | 1990 | Buenos muchachos | goodfellas-1990 | Crimen | Prime Video + HBO Max | +13 |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus | +13 |
+| 1990 | Corazón salvaje | corazon-salvaje-1990 | Drama | Prime Video | +16 |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Otras plataformas | +13 |
 | 1990 | Darkman | darkman-1990 | Accion | Apple TV | +16 |
 | 1990 | Despertares | despertares-1990 | Drama | Apple TV | +13 |
@@ -1415,6 +1419,7 @@ Total de peliculas: 1673
 | 1988 | The Thin Blue Line | the-thin-blue-line-1988 | Documental | Otras plataformas | +13 |
 | 1988 | Viernes 13. 7ª parte: Sangre nueva | friday-the-13th-part-vii-the-new-blood-1988 | Terror | Otras plataformas | +17 |
 | 1987 | A Nightmare on Elm Street 3: Dream Warriors | a-nightmare-on-elm-street-3-dream-warriors-1987 | Terror | Otras plataformas | +17 |
+| 1987 | Arizona Baby | arizona-baby-1987 | Comedia | Disney Plus | +13 |
 | 1987 | Depredador | depredador-1987 | Accion | Disney Plus | +16 |
 | 1987 | Días de radio | radio-days-1987 | Comedia | Otras plataformas | ATP |
 | 1987 | El cielo sobre Berlín | el-cielo-sobre-berlin-1987 | Drama | Otras plataformas | +13 |
@@ -1439,6 +1444,7 @@ Total de peliculas: 1673
 | 1986 | La misión | la-mision-1986 | Drama | Prime Video | +13 |
 | 1986 | La mosca | la-mosca-1986 | Terror | Disney Plus | +16 |
 | 1986 | La Noche de los Lápices | la-noche-de-los-lapices-1986 | Drama | Otras plataformas | +18 |
+| 1986 | Peggy Sue se casó | peggy-sue-se-caso-1986 | Comedia | Apple TV | ATP |
 | 1986 | Pelotón | platoon-1986 | Drama | Apple TV | +13 |
 | 1986 | Terciopelo azul | vellut-blau-1986 | Thriller | Apple TV | +13 |
 | 1986 | Viernes 13. 6ª parte: Jason vive | friday-the-13th-part-vi-jason-lives-1986 | Terror | Otras plataformas | +18 |
