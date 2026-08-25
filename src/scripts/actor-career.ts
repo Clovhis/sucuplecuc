@@ -2094,4 +2094,3 @@ function selectChoice(choiceIndex: number): void {
 	}
 	void refreshHighScores();
 }
-
