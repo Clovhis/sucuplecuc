@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1642
+Total de peliculas: 1643
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1546,6 +1546,7 @@ Total de peliculas: 1642
 | 1971 | Bananas | bananas-1971 | Comedia | Otras plataformas | ATP |
 | 1971 | La naranja mecánica | la-naranja-mecanica-1971 | Crimen | HBO Max + Apple TV | +13 |
 | 1971 | La última película | la-ultima-pelicula-1971 | Drama | Otras plataformas | +16 |
+| 1971 | Perros de paja | perros-de-paja-1971 | Thriller | Otras plataformas | +18 |
 | 1971 | Reto a muerte | duel-1971 | Thriller | Otras plataformas | +13 |
 | 1971 | The French Connection | the-french-connection-1971 | Crimen | Disney Plus | +17 |
 | 1970 | El Topo | el-topo-1970 | Drama | Apple TV | +18 |
