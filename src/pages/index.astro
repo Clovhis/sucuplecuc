@@ -37,7 +37,13 @@ const movies = getMovies();
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
 const subgenreOptions = getSubgenreFilterOptions(movies);
-const editorialGenreFilterIds = new Set(['superheroes', 'oscar-mejor-pelicula', 'pelicula-nacional', 'guerra']);
+const editorialGenreFilterIds = new Set([
+	'superheroes',
+	'oscar-mejor-pelicula',
+	'pelicula-nacional',
+	'guerra',
+	'culto',
+]);
 const primaryGenreOptions = RECOMMENDATION_GENRE_OPTIONS.filter(
 	(option) => !editorialGenreFilterIds.has(option.id),
 );

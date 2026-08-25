@@ -77,14 +77,50 @@ test.describe('home catalog filters', () => {
     await expect(page.locator('[data-movie-search-summary]').first()).toContainText('filtro Guerra');
   });
 
-  test('war editorial filter fits the desktop panel without horizontal overflow', async ({ page }, testInfo) => {
+  test('cult editorial filter returns only curated cult films', async ({ page }) => {
+    await gotoHome(page);
+
+    const cultChip = page.getByRole('button', { name: /^De culto$/i });
+    await expect(cultChip).toHaveCount(1);
+    await expect(cultChip).toHaveAttribute('data-home-genre-id', 'culto');
+    await expect(cultChip).toHaveAttribute('data-home-genre-kind', 'editorial');
+
+    await cultChip.click();
+    await expect(cultChip).toHaveAttribute('aria-pressed', 'true');
+    await expect
+      .poll(() => visibleMovieTitles(page), {
+        message: 'El filtro De culto debería devolver películas',
+      })
+      .not.toEqual([]);
+
+    const cards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((movieCards) =>
+      movieCards.map((card) => ({
+        title: card.getAttribute('data-movie-title') ?? '',
+        genres: card.getAttribute('data-movie-genres')?.split(',').filter(Boolean) ?? [],
+      })),
+    );
+
+    expect(cards.length).toBeGreaterThan(0);
+    expect(cards.every((card) => card.genres.includes('culto'))).toBeTruthy();
+    for (const title of ['El espectáculo de imágenes de terror de Rocky', 'La habitación (The room)', 'Troll 2']) {
+      await expect(page.locator(`[data-movie-card][data-movie-title="${title}"]`)).toBeVisible();
+    }
+    await expect(page.locator('[data-movie-search-summary]').first()).toContainText('filtro De culto');
+    expect(new URL(page.url()).searchParams.get('filtro')).toBe('culto');
+  });
+
+  test('editorial filters stay aligned in one desktop row without horizontal overflow', async ({ page }, testInfo) => {
     test.skip(testInfo.project.name.startsWith('mobile-'), 'Desktop layout assertion');
     await gotoHome(page);
 
     const layout = await page.locator('[data-home-filter-panel="editorial"]').evaluate((panel) => {
       const rail = panel.querySelector<HTMLElement>('.home-genre-filter__chips');
       const chips = Array.from(panel.querySelectorAll<HTMLElement>('[data-home-genre-chip]'));
+      const heading = panel.querySelector<HTMLElement>('.home-genre-filter__heading');
+      const subgenrePanel = document.querySelector<HTMLElement>('[data-home-filter-panel="subgenre"]');
       const panelRect = panel.getBoundingClientRect();
+      const headingRect = heading?.getBoundingClientRect();
+      const subgenreRect = subgenrePanel?.getBoundingClientRect();
       const chipRects = chips.map((chip) => chip.getBoundingClientRect());
       const rowTops = new Set(chipRects.map((rect) => Math.round(rect.top)));
 
@@ -95,14 +131,22 @@ test.describe('home catalog filters', () => {
         chipsInsidePanel: chipRects.every(
           (rect) => rect.left >= panelRect.left - 1 && rect.right <= panelRect.right + 1,
         ),
+        editorialChipDecorations: chips.map((chip) => getComputedStyle(chip, '::after').display),
+        editorialChipGap: headingRect && chipRects[0] ? chipRects[0].top - headingRect.bottom : Number.POSITIVE_INFINITY,
+        editorialPanelHeight: panelRect.height,
+        panelBottomDelta: subgenreRect ? Math.abs(panelRect.bottom - subgenreRect.bottom) : Number.POSITIVE_INFINITY,
         pageOverflow: document.documentElement.scrollWidth > window.innerWidth + 1,
       };
     });
 
-    expect(layout.chipCount).toBe(4);
+    expect(layout.chipCount).toBe(5);
     expect(layout.railOverflow).toBeFalsy();
     expect(layout.chipRows).toBe(1);
     expect(layout.chipsInsidePanel).toBeTruthy();
+    expect(layout.editorialChipDecorations.every((display) => display === 'none')).toBeTruthy();
+    expect(layout.editorialChipGap).toBeLessThanOrEqual(12);
+    expect(layout.editorialPanelHeight).toBeCloseTo(128, 0);
+    expect(layout.panelBottomDelta).toBeLessThanOrEqual(1);
     expect(layout.pageOverflow).toBeFalsy();
   });
 

@@ -1609,6 +1609,26 @@ img {
 		rgba(8, 12, 20, 0.4);
 }
 
+/* The editorial rail stays a single visual row as its catalog grows. */
+@media (min-width: 721px) {
+	.home-genre-filter--editorial .home-genre-filter__chips {
+		gap: 0.3rem;
+	}
+
+	.home-genre-filter--editorial {
+		min-height: 8rem;
+		grid-template-rows: auto auto;
+		align-content: start;
+		row-gap: 0.45rem;
+	}
+
+	.home-genre-filter--editorial .home-genre-filter__chip {
+		padding-inline: 0.5rem;
+		font-size: 0.76rem;
+		white-space: nowrap;
+	}
+}
+
 .home-genre-filter__chip {
 	position: relative;
 	isolation: isolate;
@@ -1648,6 +1668,10 @@ img {
 	);
 	opacity: 0.62;
 	pointer-events: none;
+}
+
+.home-genre-filter--editorial .home-genre-filter__chip::after {
+	display: none;
 }
 
 .home-genre-filter__chip:hover,

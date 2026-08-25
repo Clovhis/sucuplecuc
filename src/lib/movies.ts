@@ -34,7 +34,8 @@ export type RecommendationGenreId =
 	| 'aventura'
 	| 'oscar-mejor-pelicula'
 	| 'pelicula-nacional'
-	| 'guerra';
+	| 'guerra'
+	| 'culto';
 
 export interface RecommendationGenreOption {
 	id: RecommendationGenreId;
@@ -137,6 +138,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'oscar-mejor-pelicula', label: 'Ganadoras del Oscar' },
 	{ id: 'pelicula-nacional', label: 'Cine nacional' },
 	{ id: 'guerra', label: 'Guerra' },
+	{ id: 'culto', label: 'De culto' },
 ];
 
 const SUBGENRE_DEFINITIONS: CanonicalSubgenreDefinition[] = [
@@ -1334,6 +1336,67 @@ const SUPERHERO_INCLUDED_SLUGS = new Set([
 	'the-new-mutants-2020',
 ]);
 
+// Curated from the cult-film criteria and examples in the linked Wikipedia
+// article, plus catalog titles whose long-term cult status is explicit in
+// their editorial treatment. Keep this as a title-level signal: the word
+// "culto" can also describe a plot, a character or an actor and is not a
+// reliable taxonomy on its own.
+const CULT_MOVIE_SLUGS = new Set([
+	'nosferatu-1922',
+	'metropolis-1927',
+	'the-wizard-of-oz-1939',
+	'casablanca-1943',
+	'seven-samurai-1954',
+	'la-noche-del-cazador-1955',
+	'psycho-1960',
+	'la-dolce-vita-1960',
+	'hola-mama-1970',
+	'la-naranja-mecanica-1971',
+	'el-hombre-de-mimbre-1973',
+	'mean-streets-1973',
+	'el-espectaculo-de-imagenes-de-terror-de-rocky-1975',
+	'taxi-driver-1976',
+	'suspiria-1977',
+	'the-warriors-los-amos-de-la-noche-1979',
+	'the-shining-1980',
+	'los-perros-de-la-guerra-1980',
+	'1997-rescate-en-nueva-york-1981',
+	'the-evil-dead-1981',
+	'blade-runner-1982',
+	'grease-2-1982',
+	'la-cosa-el-enigma-de-otro-mundo-1982',
+	'el-ansia-1983',
+	'el-precio-del-poder-1983',
+	'the-terminator-1984',
+	'brazil-la-pelicula-1985',
+	'golpe-en-la-pequena-china-1986',
+	'vellut-blau-1986',
+	'terrorificamente-muertos-1987',
+	'beetlejuice-1988',
+	'reservoir-dogs-1992',
+	'troll-2-1990',
+	'el-demoledor-1993',
+	'dependientes-1994',
+	'pulp-fiction-1994',
+	'tonto-y-retonto-1994',
+	'mundo-acuatico-1995',
+	'showgirls-1995',
+	'trainspotting-1996',
+	'dark-city-1998',
+	'el-gran-lebowski-1998',
+	'fight-club-1999',
+	'the-matrix-1999',
+	'trabajo-basura-1999',
+	'psicopata-americano-2000',
+	'donnie-darko-2001',
+	'mulholland-drive-2001',
+	'la-habitacion-the-room-2003',
+	'napoleon-dynamite-2004',
+	'the-descent-2005',
+	'death-proof-2007',
+	'scott-pilgrim-contra-el-mundo-2010',
+]);
+
 function hasAnyToken(haystack: string, tokens: string[]): boolean {
 	return tokens.some((token) => haystack.includes(token));
 }
@@ -1471,6 +1534,10 @@ export function getCatalogFilterGenres(
 
 	if (hasExplicitWarFilmTag(explicitWarGenres)) {
 		genreSet.add('guerra');
+	}
+
+	if (CULT_MOVIE_SLUGS.has(movie.slug)) {
+		genreSet.add('culto');
 	}
 
 	return RECOMMENDATION_GENRE_OPTIONS.map((option) => option.id).filter((genreId) =>
