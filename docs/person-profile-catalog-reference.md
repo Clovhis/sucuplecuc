@@ -1,8 +1,8 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado manualmente el 2026-08-20. Fuente: `src/data/personProfiles.ts`
+Actualizado manualmente el 2026-08-25. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 495
+Total de personas con ficha exclusiva: 525
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -518,3 +518,38 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Oliver Stone | `oliver-stone` | /personas/oliver-stone/ | Director, Guionista, Productor | 1 | 4 |
 | Forest Whitaker | `forest-whitaker` | /personas/forest-whitaker/ | Actor | 2 | 4 |
 | Tom Berenger | `tom-berenger` | /personas/tom-berenger/ | Actor | 1 | 4 |
+
+### Tercera tanda de figuras relevantes del catálogo
+
+| Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
+| --- | --- | --- | --- | ---: | ---: |
+| Helen Mirren | `helen-mirren` | /personas/helen-mirren/ | Actriz | 4 | 6 |
+| Robert Duvall | `robert-duvall` | /personas/robert-duvall/ | Actor, Productor | 4 | 5 |
+| Jennifer Aniston | `jennifer-aniston` | /personas/jennifer-aniston/ | Actriz, Productora | 4 | 5 |
+| John Leguizamo | `john-leguizamo` | /personas/john-leguizamo/ | Actor, Comediante, Productor | 4 | 5 |
+| Steve Buscemi | `steve-buscemi` | /personas/steve-buscemi/ | Actor, Director | 4 | 6 |
+| Joan Allen | `joan-allen` | /personas/joan-allen/ | Actriz | 4 | 5 |
+| Richard Gere | `richard-gere` | /personas/richard-gere/ | Actor | 4 | 5 |
+| Rene Russo | `rene-russo` | /personas/rene-russo/ | Actriz | 4 | 4 |
+| Vera Farmiga | `vera-farmiga` | /personas/vera-farmiga/ | Actriz, Directora | 4 | 5 |
+| Jeremy Irons | `jeremy-irons` | /personas/jeremy-irons/ | Actor | 4 | 5 |
+| Dakota Fanning | `dakota-fanning` | /personas/dakota-fanning/ | Actriz | 4 | 4 |
+| Goldie Hawn | `goldie-hawn` | /personas/goldie-hawn/ | Actriz, Productora | 4 | 5 |
+| Maggie Smith | `maggie-smith` | /personas/maggie-smith/ | Actriz | 4 | 6 |
+| Sean Connery | `sean-connery` | /personas/sean-connery/ | Actor | 4 | 5 |
+| Kevin Bacon | `kevin-bacon` | /personas/kevin-bacon/ | Actor | 4 | 4 |
+| Tony Scott | `tony-scott` | /personas/tony-scott/ | Director, Productor | 4 | 5 |
+| David Yates | `david-yates` | /personas/david-yates/ | Director, Productor | 4 | 4 |
+| Joel Schumacher | `joel-schumacher` | /personas/joel-schumacher/ | Director, Guionista, Productor | 4 | 5 |
+| Steven Soderbergh | `steven-soderbergh` | /personas/steven-soderbergh/ | Director, Productor, Guionista | 4 | 5 |
+| Barry Levinson | `barry-levinson` | /personas/barry-levinson/ | Director, Guionista, Productor | 4 | 5 |
+| Brian De Palma | `brian-de-palma` | /personas/brian-de-palma/ | Director, Guionista, Productor | 4 | 5 |
+| Chris Columbus | `chris-columbus` | /personas/chris-columbus/ | Director, Guionista, Productor | 4 | 4 |
+| James Wan | `james-wan` | /personas/james-wan/ | Director, Productor, Guionista | 4 | 5 |
+| John G. Avildsen | `john-g-avildsen` | /personas/john-g-avildsen/ | Director | 4 | 5 |
+| Pablo Trapero | `pablo-trapero` | /personas/pablo-trapero/ | Director, Guionista, Productor | 4 | 5 |
+| Wes Craven | `wes-craven` | /personas/wes-craven/ | Director, Guionista, Productor | 4 | 5 |
+| Baz Luhrmann | `baz-luhrmann` | /personas/baz-luhrmann/ | Director, Guionista, Productor | 4 | 5 |
+| David Lynch | `david-lynch` | /personas/david-lynch/ | Director, Guionista, Productor | 4 | 5 |
+| Gus Van Sant | `gus-van-sant` | /personas/gus-van-sant/ | Director, Guionista, Productor | 4 | 5 |
+| Akira Kurosawa | `akira-kurosawa` | /personas/akira-kurosawa/ | Director, Guionista | 3 | 4 |
