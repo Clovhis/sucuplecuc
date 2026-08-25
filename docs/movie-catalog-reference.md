@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1643
+Total de peliculas: 1646
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1307,6 +1307,7 @@ Total de peliculas: 1643
 | 1993 | Seis grados de separación | seis-grados-de-separacion-1993 | Drama | Apple TV | +13 |
 | 1993 | Super Mario Bros: La película | super-mario-bros-la-pelicula-1993 | Fantasia | Apple TV | ATP |
 | 1993 | Tango feroz: La leyenda de Tanguito | tango-feroz-la-leyenda-de-tanguito-1993 | Drama | Otras plataformas | +13 |
+| 1993 | Un día de furia | un-dia-de-furia-1993 | Drama | Apple TV | +16 |
 | 1993 | Un mundo perfecto | un-mundo-perfecto-1993 | Drama | HBO Max | +13 |
 | 1993 | Viernes 13 - Parte 9: Jason se va al Infierno | jason-goes-to-hell-the-final-friday-1993 | Terror | Otras plataformas | +17 |
 | 1992 | Alien 3 | alien-3-1992 | Ciencia ficcion | Disney Plus | +17 |
@@ -1360,6 +1361,7 @@ Total de peliculas: 1643
 | 1989 | Going Overboard | going-overboard-1989 | Comedia | Otras plataformas | +17 |
 | 1989 | Halloween 5: La venganza de Michael Myers | halloween-5-the-revenge-of-michael-myers-1989 | Terror | Otras plataformas | +17 |
 | 1989 | Indiana Jones and the Last Crusade | indiana-jones-and-the-last-crusade-1989 | Aventura | Otras plataformas | +13 |
+| 1989 | La guerra de los Rose | la-guerra-de-los-rose-1989 | Comedia | Disney Plus | +16 |
 | 1989 | Nicky, la aprendiz de bruja | nicky-la-aprendiz-de-bruja-1989 | Animacion | Netflix | ATP |
 | 1989 | Noches de Harlem | noches-de-harlem-1989 | Comedia | Otras plataformas | +13 |
 | 1989 | Nunca fuimos ángeles | nunca-fuimos-angeles-1989 | Comedia | Prime Video + Apple TV | +13 |
@@ -1400,6 +1402,7 @@ Total de peliculas: 1643
 | 1987 | Superman IV: The Quest for Peace | superman-iv-the-quest-for-peace-1987 | Accion | Otras plataformas | ATP |
 | 1987 | Terroríficamente muertos | terrorificamente-muertos-1987 | Comedia | Apple TV | +17 |
 | 1987 | The Last Emperor | the-last-emperor-1987 | Drama | Otras plataformas | +13 |
+| 1987 | Wall Street | wall-street-1987 | Drama | Disney Plus | +16 |
 | 1986 | Aliens | aliens-1986 | Ciencia ficcion | Disney Plus + HBO Max | +17 |
 | 1986 | Castle in the Sky | castle-in-the-sky-1986 | Anime | Netflix | ATP |
 | 1986 | Cuenta conmigo | stand-by-me-1986 | Drama | Otras plataformas | ATP |
