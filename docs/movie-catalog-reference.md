@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1686
+Total de peliculas: 1687
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1379,6 +1379,7 @@ Total de peliculas: 1686
 | 1990 | Muerte entre las flores | muerte-entre-las-flores-1990 | Drama | Disney Plus | +16 |
 | 1990 | Muñeco diabólico 2 | child-s-play-2-1990 | Terror | Otras plataformas | +17 |
 | 1990 | Paris Is Burning | paris-is-burning-1990 | Documental | Otras plataformas | +16 |
+| 1990 | Postales desde el filo | postales-desde-el-filo-1990 | Drama | Netflix | +13 |
 | 1990 | Rocky V | rocky-v-1990 | Drama | Otras plataformas | +13 |
 | 1990 | Stephen King's IT | it-1990 | Terror | Otras plataformas | +16 |
 | 1990 | Troll 2 | troll-2-1990 | Terror | Prime Video | +13 |
