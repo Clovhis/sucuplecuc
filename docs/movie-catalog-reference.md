@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1650
+Total de peliculas: 1651
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1315,6 +1315,7 @@ Total de peliculas: 1650
 | 1992 | Alien 3 | alien-3-1992 | Ciencia ficcion | Disney Plus | +17 |
 | 1992 | Batman Returns | batman-returns-1992 | Accion | Otras plataformas | +13 |
 | 1992 | Candyman | candyman-1992 | Terror | Prime Video + Apple TV | +16 |
+| 1992 | Drácula de Bram Stoker | dracula-de-bram-stoker-1992 | Terror | Netflix | +18 |
 | 1992 | El ejército de las tinieblas | el-ejercito-de-las-tinieblas-1992 | Comedia | Prime Video + Apple TV | +17 |
 | 1992 | El juego de Hollywood | el-juego-de-hollywood-1992 | Drama | Otras plataformas | +13 |
 | 1992 | Éxito a cualquier precio | exito-a-cualquier-precio-1992 | Drama | Otras plataformas | +17 |
