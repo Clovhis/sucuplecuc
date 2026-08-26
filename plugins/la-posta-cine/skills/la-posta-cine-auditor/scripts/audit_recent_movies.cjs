@@ -1173,29 +1173,18 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		);
 	}
 
-	if (!Array.isArray(movie.mainCast) || movie.mainCast.length < 2) {
-		addFinding(findings, 'error', 'invalid-cast', candidatePath, 'mainCast must contain at least two credited performers.');
+	const principalCastNames = Array.isArray(movie.mainCast)
+		? movie.mainCast.flatMap((entry) => splitCreditNames(entry)).filter(Boolean)
+		: [];
+	if (principalCastNames.length < 2) {
+		addFinding(findings, 'error', 'invalid-cast', candidatePath, 'mainCast must contain at least two verified principal performers.');
 	}
 
-	const normalizedCategory = normalizeText(movie.category || '');
 	validateSubgenres(movie, candidatePath, findings);
 	validateWarFilterTaxonomy(movie, candidatePath, findings);
 	validateShareFields(movie, candidatePath, findings);
 	validateMeterEligibility(movie, candidatePath, findings);
 	validatePostCredits(movie, candidatePath, findings);
-
-	const isAnimatedTitle =
-		normalizedCategory === 'anime' || normalizedCategory === 'animacion' || normalizedCategory === 'animación';
-	const isDocumentaryTitle = normalizedCategory === 'documental';
-	if (Array.isArray(movie.mainCast) && !isAnimatedTitle && !isDocumentaryTitle && movie.mainCast.length < 3) {
-		addFinding(
-			findings,
-			'warn',
-			'short-principal-cast',
-			candidatePath,
-			'Live-action entries should usually carry at least 3 principal performers in mainCast unless reliable official billing clearly supports fewer.',
-		);
-	}
 
 	if (Array.isArray(movie.mainCast)) {
 		const seenCast = new Set();

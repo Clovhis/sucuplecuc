@@ -117,6 +117,20 @@ function validatePersonCredit(personName, role, personRecord, warnings) {
 	return errors;
 }
 
+function validateMovieCreditMinimum(movie, problems) {
+	const directors = splitCreditNames(movie.director);
+	const cast = Array.isArray(movie.mainCast)
+		? movie.mainCast.flatMap((entry) => splitCreditNames(entry))
+		: [];
+
+	if (directors.length < 1) {
+		problems.push('director: la película debe conservar al menos un director verificado');
+	}
+	if (cast.length < 2) {
+		problems.push('cast: la película debe conservar al menos dos intérpretes principales verificados');
+	}
+}
+
 async function main() {
 	let args;
 	try {
@@ -139,6 +153,7 @@ async function main() {
 	const warnings = [];
 
 	for (const movie of movies) {
+		validateMovieCreditMinimum(movie.data, problems);
 		const directors = splitCreditNames(movie.data.director);
 		const cast = Array.isArray(movie.data.mainCast)
 			? movie.data.mainCast.flatMap((entry) => splitCreditNames(entry))
