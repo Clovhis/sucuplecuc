@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-26T12:24:24.964Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-26T15:13:28.261Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -24,7 +24,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Hechizo de Amor: La magia continúa",
 		"releaseDate": "2026-09-10",
 		"videoUrl": "https://www.youtube.com/watch?v=Ho10_4IX1jE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/wE6syT1vv6W24iLGfhR4kQHnIDN.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
 	},
 	{

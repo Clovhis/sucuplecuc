@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-26. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1883
+Total de peliculas: 1884
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -249,6 +249,7 @@ Total de peliculas: 1883
 | 2025 | Scarlet | scarlet-2025 | Anime | Netflix | +13 |
 | 2025 | Sin ley | sin-ley-2025 | Accion | Otras plataformas | ATP |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
+| 2025 | Sintió algo verdadero | sintio-algo-verdadero-2025 | Drama | CINE.AR | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
 | 2025 | Song Sung Blue - Canción para dos | song-sung-blue-cancion-para-dos-2025 | Musical | HBO Max | ATP |
 | 2025 | Superman | superman-2025 | Accion | HBO Max | +13 |
