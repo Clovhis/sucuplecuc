@@ -8,58 +8,9 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-25T15:12:41.739Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-26T12:24:24.964Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"slug": "the-dog-stars",
-		"title": "La guerra de los últimos",
-		"releaseDate": "2026-08-27",
-		"videoUrl": "https://www.youtube.com/watch?v=-xSxaE1ClEE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10482-la-guerra-de-los-ultimos/"
-	},
-	{
-		"slug": "one-night-only",
-		"title": "Sólo por una noche",
-		"releaseDate": "2026-08-27",
-		"videoUrl": "https://www.youtube.com/watch?v=JRG244IfrRE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10540-solo-por-una-noche/"
-	},
-	{
-		"slug": "deep-water",
-		"title": "Impacto mortal",
-		"releaseDate": "2026-08-27",
-		"videoUrl": "https://www.youtube.com/watch?v=f0ptq0Lzdh8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/szKv713FcUXx6hcfdY369vtkmzr.jpg",
-		"synopsis": "Un grupo de pasajeros internacionales que viaja de Los Ángeles a Shanghái debe aterrizar de emergencia en aguas infestadas de tiburones. Para salir con vida del avión que se hunde, tendrán que dejar de lado sus diferencias y organizarse.",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/9765-impacto-mortal/"
-	},
-	{
-		"slug": "rietland",
-		"title": "Tierra de crimen",
-		"releaseDate": "2026-08-27",
-		"videoUrl": "https://www.youtube.com/watch?v=15NVHX_kM_Y",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/bEimEeWa8aj9bulpmbCql2tsMbM.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10559-tierra-de-crimen/"
-	},
-	{
-		"slug": "harry-potter-and-the-philosopher-s-stone",
-		"title": "Harry Potter y la Piedra Filosofal",
-		"releaseDate": "2026-08-27",
-		"videoUrl": "https://www.youtube.com/watch?v=l91Km49W9qI",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/825-harry-potter-y-la-piedra-filosofal/"
-	},
-	{
-		"slug": "pinocchio-unstrung",
-		"title": "Pinocho desatado",
-		"releaseDate": "2026-08-27",
-		"videoUrl": "https://www.youtube.com/watch?v=_VHIU9dIAWQ",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10272-pinocho-desatado/"
-	},
 	{
 		"slug": "the-thing-with-feathers",
 		"title": "Esa cosa con alas",
@@ -72,7 +23,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "practical-magic-2",
 		"title": "Hechizo de Amor: La magia continúa",
 		"releaseDate": "2026-09-10",
-		"videoUrl": "https://www.youtube.com/watch?v=NNVKVal7kh8",
+		"videoUrl": "https://www.youtube.com/watch?v=Ho10_4IX1jE",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
 	},
@@ -91,5 +42,45 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=2Iqvbe98Gb4",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10574-codigo-venganza/"
+	},
+	{
+		"slug": "finding-emily",
+		"title": "Emily, ¿dónde estás?",
+		"releaseDate": "2026-09-17",
+		"videoUrl": "https://www.youtube.com/watch?v=-OGuJf70S0s",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
+	},
+	{
+		"slug": "the-get-out",
+		"title": "El último gran golpe",
+		"releaseDate": "2026-09-24",
+		"videoUrl": "https://www.youtube.com/watch?v=oB6HNuKxLmo",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/mDVnHFcxxUJC9TQFVeKh1TJNBzh.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10544-el-ultimo-gran-golpe/"
+	},
+	{
+		"slug": "forgotten-island",
+		"title": "La isla olvidada",
+		"releaseDate": "2026-09-24",
+		"videoUrl": "https://www.youtube.com/watch?v=f7mFVeWnVLw",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/obsM8IyBz3jn8hbru8V5btBRSBk.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10448-la-isla-olvidada/"
+	},
+	{
+		"slug": "digger",
+		"title": "DIGGER",
+		"releaseDate": "2026-10-01",
+		"videoUrl": "https://www.youtube.com/watch?v=qORTe1wW3Wg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10364-digger/"
+	},
+	{
+		"slug": "fall-2-deadpoint",
+		"title": "Vértigo 2",
+		"releaseDate": "2026-10-01",
+		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
 	}
 ];

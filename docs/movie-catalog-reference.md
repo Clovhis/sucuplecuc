@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-08-26. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1861
+Total de peliculas: 1883
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -15,10 +15,12 @@ Total de peliculas: 1861
 | 2026 | Aída y vuelta | aida-y-vuelta-2026 | Comedia | Prime Video | +13 |
 | 2026 | Amarga Navidad | amarga-navidad-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Amos del Universo | amos-del-universo-2026 | Accion | Prime Video | +13 |
+| 2026 | Animales | animales-2026 | Drama | Disney Plus | +16 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Otras plataformas | ATP |
 | 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus | ATP |
 | 2026 | Backrooms | backrooms-2026 | Terror | Apple TV | +13 |
+| 2026 | Batman: Knightfall - Part 1: Knightfall | batman-knightfall-part-1-knightfall-2026 | Animacion | Apple TV | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
@@ -90,6 +92,7 @@ Total de peliculas: 1861
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Otras plataformas | +16 |
 | 2026 | Leviticus: Ritual de sangre | leviticus-ritual-de-sangre-2026 | Terror | Otras plataformas | +17 |
+| 2026 | Lipán | lipan-2026 | Documental | CINE.AR | ATP |
 | 2026 | Los bobos | los-bobos-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | Los caminantes de la calle | los-caminantes-de-la-calle-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Los colores del tiempo | los-colores-del-tiempo-2026 | Drama | Otras plataformas | +13 |
@@ -129,16 +132,20 @@ Total de peliculas: 1861
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
+| 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | Otras plataformas | +16 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
 | 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Apple TV | +17 |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Paramount Plus | +16 |
+| 2026 | Secretos del deporte: El testimonio de Vince Young | secretos-del-deporte-el-testimonio-de-vince-young-2026 | Documental | Netflix | +13 |
 | 2026 | Send Help | send-help-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Otras plataformas | ATP |
 | 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine | +13 |
+| 2026 | Sunrise: El último amanecer | sunrise-el-ultimo-amanecer-2026 | Romance | Prime Video | +13 |
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Supergirl | supergirl-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Susana y Elvira: Sin plan B | susana-y-elvira-sin-plan-b-2026 | Comedia romántica | Netflix | +16 |
+| 2026 | Susurran tu nombre | susurran-tu-nombre-2026 | Thriller | Netflix | +16 |
 | 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | HBO Max | +16 |
 | 2026 | Tetracampeones: Brasil volvió a creer | tetracampeones-brasil-volvio-a-creer-2026 | Documental | Netflix | +13 |
@@ -212,6 +219,7 @@ Total de peliculas: 1861
 | 2025 | Kobayashi-san Chi no Maid Dragon: Samishigariya no Ryuu | kobayashi-san-chi-no-maid-dragon-samishigariya-no-ryuu-2025 | Anime | Crunchyroll | +15 |
 | 2025 | KPop Demon Hunters | kpop-demon-hunters-2025 | Animacion | Netflix | ATP |
 | 2025 | La larga marcha | la-larga-marcha-2025 | Thriller | Prime Video | +16 |
+| 2025 | La Máquina: The Smashing Machine | la-maquina-the-smashing-machine-2025 | Drama | Prime Video | +16 |
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Otras plataformas | +12 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
@@ -226,6 +234,7 @@ Total de peliculas: 1861
 | 2025 | Mission: Impossible - The Final Reckoning | mission-impossible-the-final-reckoning-2025 | Accion | Otras plataformas | +13 |
 | 2025 | Mountainhead | mountainhead-2025 | Drama | HBO Max | +17 |
 | 2025 | Nimrods: A Green Day Comedy | nimrods-a-green-day-comedy-2025 | Comedia | Otras plataformas | ATP |
+| 2025 | Noche de Paz, Noche de Muerte | noche-de-paz-noche-de-muerte-2025 | Terror | Prime Video | +16 |
 | 2025 | Novocaine | novocaine-2025 | Accion | Netflix | +16 |
 | 2025 | Nuremberg | nuremberg-2025 | Thriller | Apple TV | +13 |
 | 2025 | One Battle After Another | one-battle-after-another-2025 | Accion | HBO Max | +16 |
@@ -241,6 +250,7 @@ Total de peliculas: 1861
 | 2025 | Sin ley | sin-ley-2025 | Accion | Otras plataformas | ATP |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
+| 2025 | Song Sung Blue - Canción para dos | song-sung-blue-cancion-para-dos-2025 | Musical | HBO Max | ATP |
 | 2025 | Superman | superman-2025 | Accion | HBO Max | +13 |
 | 2025 | The Accountant 2 | the-accountant-2-2025 | Accion | Prime Video | +16 |
 | 2025 | The Alto Knights: Mafia y poder | the-alto-knights-mafia-y-poder-2025 | Drama | HBO Max + Apple TV | +16 |
@@ -271,6 +281,7 @@ Total de peliculas: 1861
 | 2024 | Am I OK? | am-i-ok-2024 | Comedia | HBO Max | +17 |
 | 2024 | Anora | anora-2024 | Comedia | HBO Max | +16 |
 | 2024 | Aún estoy aquí | aun-estoy-aqui-2024 | Drama | Paramount Plus | +14 |
+| 2024 | Back to Black | back-to-black-2024 | Biografica | Netflix | +16 |
 | 2024 | Bad Boys: Hasta la muerte | bad-boys-ride-or-die-2024 | Crimen | Prime Video | +17 |
 | 2024 | Beetlejuice Beetlejuice | beetlejuice-beetlejuice-2024 | Comedia | HBO Max | +13 |
 | 2024 | Beverly Hills Cop: Axel F | beverly-hills-cop-axel-f-2024 | Accion | Netflix | +16 |
@@ -310,6 +321,7 @@ Total de peliculas: 1861
 | 2024 | Longlegs | longlegs-2024 | Terror | Prime Video | +16 |
 | 2024 | Look Back | look-back-2024 | Anime | Prime Video | ATP |
 | 2024 | Los chicos de la Nickel | los-chicos-de-la-nickel-2024 | Drama | Prime Video | +16 |
+| 2024 | Los justos | los-justos-2024 | Comedia | CINE.AR | +13 |
 | 2024 | Love Lies Bleeding | love-lies-bleeding-2024 | Thriller | HBO Max | +16 |
 | 2024 | Madame Web | madame-web-2024 | Accion | Prime Video | +13 |
 | 2024 | Marianela y el cadáver | marianela-y-el-cadaver-2024 | Comedia | Otras plataformas | +13 |
@@ -329,7 +341,7 @@ Total de peliculas: 1861
 | 2024 | The Apprentice (La historia de Trump) | the-apprentice-2024 | Historia | Otras plataformas | +17 |
 | 2024 | The Beekeeper | the-beekeeper-2024 | Accion | Prime Video + HBO Max | +16 |
 | 2024 | The Brutalist | the-brutalist-2024 | Drama | HBO Max | +16 |
-| 2024 | The Fall Guy | the-fall-guy-2024 | Accion | Prime Video | +13 |
+| 2024 | The Fall Guy | the-fall-guy-2024 | Accion | Netflix | +13 |
 | 2024 | The First Omen | the-first-omen-2024 | Terror | Disney Plus | +16 |
 | 2024 | The Idea of You | the-idea-of-you-2024 | Romance | Prime Video | +17 |
 | 2024 | The Instigators | the-instigators-2024 | Comedia | Apple TV | +16 |
@@ -376,6 +388,7 @@ Total de peliculas: 1861
 | 2023 | Mission: Impossible - Dead Reckoning Part One | mission-impossible-dead-reckoning-part-one-2023 | Accion | Otras plataformas | +13 |
 | 2023 | Misterio a la vista | murder-mystery-2-2023 | Comedia | Netflix | +13 |
 | 2023 | Napoleon | napoleon-2023 | Accion | Apple TV | +13 |
+| 2023 | Ninja Turtles: Caos mutante | ninja-turtles-caos-mutante-2023 | Animacion | Paramount Plus | ATP |
 | 2023 | Oppenheimer | oppenheimer-2023 | Drama | Netflix | +13 |
 | 2023 | Piscina infinita | piscina-infinita-2023 | Ciencia ficcion | Apple TV | +18 |
 | 2023 | Pobres criaturas | poor-things-2023 | Drama | Disney Plus | +13 |
@@ -405,6 +418,7 @@ Total de peliculas: 1861
 | 2022 | Ámsterdam | amsterdam-2022 | Comedia | Otras plataformas | +13 |
 | 2022 | Argentina, 1985 | argentina-1985-2022 | Drama | Prime Video | +17 |
 | 2022 | Avatar: The Way of Water | avatar-the-way-of-water-2022 | Ciencia ficcion | Disney Plus | +13 |
+| 2022 | Barbarian | barbarian-2022 | Terror | Paramount Plus | +16 |
 | 2022 | Black Adam | black-adam-2022 | Accion | HBO Max | +13 |
 | 2022 | Black Panther: Wakanda Forever | black-panther-wakanda-forever-2022 | Accion | Disney Plus | +13 |
 | 2022 | Bubble | bubble-2022 | Anime | Netflix | ATP |
@@ -419,6 +433,7 @@ Total de peliculas: 1861
 | 2022 | El sastre de la mafia | el-sastre-de-la-mafia-2022 | Crimen | Apple TV | +17 |
 | 2022 | El suplente | el-suplente-2022 | Drama | Netflix | +13 |
 | 2022 | El triángulo de la tristeza | el-triangulo-de-la-tristeza-2022 | Comedia | Prime Video + HBO Max | +13 |
+| 2022 | Ella Dijo | ella-dijo-2022 | Drama | HBO Max | +13 |
 | 2022 | Elvis | elvis-2022 | Drama | Netflix + HBO Max | +15 |
 | 2022 | Fantastic Beasts: The Secrets of Dumbledore | fantastic-beasts-the-secrets-of-dumbledore-2022 | Aventura | HBO Max | +13 |
 | 2022 | Garra | hustle-2022 | Drama | Netflix | +16 |
@@ -477,6 +492,7 @@ Total de peliculas: 1861
 | 2021 | Home Sweet Home Alone | home-sweet-home-alone-2021 | Comedia | Disney Plus | ATP |
 | 2021 | Ice Road | ice-road-2021 | Accion | Netflix | +13 |
 | 2021 | Juegos Inocentes | juegos-inocentes-2021 | Terror | Apple TV | +16 |
+| 2021 | Jujutsu Kaisen 0 | jujutsu-kaisen-0-2021 | Animacion | Crunchyroll | +13 |
 | 2021 | Jungle Cruise | jungle-cruise-2021 | Acción | Disney Plus | +13 |
 | 2021 | King Richard | king-richard-2021 | Biográfica | HBO Max | +13 |
 | 2021 | La peor persona del mundo | la-peor-persona-del-mundo-2021 | Drama | Prime Video | +16 |
@@ -546,6 +562,7 @@ Total de peliculas: 1861
 | 2019 | Las buenas intenciones | las-buenas-intenciones-2019 | Comedia | CINE.AR | +13 |
 | 2019 | Lazos De Familia | lazos-de-familia-2019 | Drama | Otras plataformas | +13 |
 | 2019 | Los dos Papas | los-dos-papas-2019 | Drama | Netflix | +13 |
+| 2019 | Los muertos no mueren | los-muertos-no-mueren-2019 | Terror | Disney Plus | +16 |
 | 2019 | Los sonámbulos | los-sonambulos-2019 | Drama | Otras plataformas | +16 |
 | 2019 | Midsommar: El terror no espera la noche | midsommar-el-terror-no-espera-la-noche-2019 | Terror | Apple TV | +16 |
 | 2019 | Misterio a bordo | murder-mystery-2019 | Comedia | Netflix | +13 |
@@ -615,6 +632,7 @@ Total de peliculas: 1861
 | 2017 | El ritual | el-ritual-2017 | Terror | Apple TV | +16 |
 | 2017 | El sacrificio de un ciervo sagrado | el-sacrificio-de-un-ciervo-sagrado-2017 | Terror | Apple TV | +16 |
 | 2017 | Fireworks | fireworks-2017 | Anime | Otras plataformas | +13 |
+| 2017 | Good Time: Viviendo al límite | good-time-viviendo-al-limite-2017 | Thriller | Prime Video | +16 |
 | 2017 | Guardians of the Galaxy Vol. 2 | guardians-of-the-galaxy-vol-2-2017 | Accion | Disney Plus | +13 |
 | 2017 | IT (Eso) | it-2017 | Terror | HBO Max | +16 |
 | 2017 | Jigsaw | jigsaw-2017 | Gore | Otras plataformas | +18 |
@@ -679,6 +697,7 @@ Total de peliculas: 1861
 | 2016 | Terrifier | terrifier-2016 | Gore | Otras plataformas | +18 |
 | 2016 | The Do-Over | the-do-over-2016 | Comedia | Netflix | +16 |
 | 2016 | The Love Witch | the-love-witch-2016 | Terror | Prime Video | +13 |
+| 2016 | Triple 9 | triple-9-2016 | Accion | Netflix | +16 |
 | 2016 | X-Men: Apocalypse | x-men-apocalypse-2016 | Accion | Disney Plus | +13 |
 | 2016 | Your Name. | your-name-2016 | Anime | Otras plataformas | ATP |
 | 2015 | Anomalisa | anomalisa-2015 | Animacion | Apple TV | +16 |
@@ -921,6 +940,7 @@ Total de peliculas: 1861
 | 2009 | Enter the Void | enter-the-void-2009 | Drama | Otras plataformas | +18 |
 | 2009 | Fantástico Sr. Fox | fantastico-sr-fox-2009 | Animacion | Prime Video | ATP |
 | 2009 | Fast & Furious | fast-and-furious-2009 | Accion | HBO Max | +13 |
+| 2009 | Guerra de novias | guerra-de-novias-2009 | Comedia | Paramount Plus | ATP |
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
 | 2009 | Harry Potter and the Half-Blood Prince | harry-potter-and-the-half-blood-prince-2009 | Aventura | HBO Max | +12 |
 | 2009 | Hazme reír | funny-people-2009 | Drama | Apple TV | +17 |
@@ -1303,6 +1323,7 @@ Total de peliculas: 1861
 | 1999 | Una terapia peligrosa | una-terapia-peligrosa-1999 | Comedia | Apple TV | +13 |
 | 1998 | Blade | blade-1998 | Accion | HBO Max | +17 |
 | 1998 | Celebrity | celebrity-1998 | Comedia | Otras plataformas | +13 |
+| 1998 | Corre, Lola, corre | corre-lola-corre-1998 | Accion | HBO Max | +13 |
 | 1998 | Dark City | dark-city-1998 | Ciencia ficcion | Apple TV | +13 |
 | 1998 | El aguador | the-waterboy-1998 | Comedia | Disney Plus | +13 |
 | 1998 | El círculo | el-circulo-1998 | Terror | Prime Video + Apple TV | +16 |
@@ -1319,6 +1340,7 @@ Total de peliculas: 1861
 | 1998 | Los miserables: La leyenda nunca muere | los-miserables-la-leyenda-nunca-muere-1998 | Drama | Apple TV | +13 |
 | 1998 | Pi: Fe en el caos | pi-fe-en-el-caos-1998 | Thriller | Otras plataformas | +16 |
 | 1998 | Poseídos | poseidos-1998 | Thriller | HBO Max + Apple TV | +16 |
+| 1998 | Prácticamente magia | practicamente-magia-1998 | Fantasia | Apple TV | +13 |
 | 1998 | Quédate a mi lado | quedate-a-mi-lado-1998 | Drama | Otras plataformas | +13 |
 | 1998 | Ronin | ronin-1998 | Acción | Prime Video + Apple TV | +16 |
 | 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix | +16 |
