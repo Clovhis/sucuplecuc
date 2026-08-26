@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-25. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-26. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1812
+Total de peliculas: 1861
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -573,6 +573,7 @@ Total de peliculas: 1812
 | 2018 | Avengers: Infinity War | avengers-infinity-war-2018 | Accion | Disney Plus | +13 |
 | 2018 | Black Panther | black-panther-2018 | Accion | Disney Plus | +13 |
 | 2018 | Burning | burning-2018 | Drama | Otras plataformas | +16 |
+| 2018 | Climax | climax-2018 | Drama | Otras plataformas | +18 |
 | 2018 | Creed II | creed-ii-2018 | Drama | Otras plataformas | +13 |
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus | +17 |
 | 2018 | El Ángel | el-angel-2018 | Crimen | Otras plataformas | +16 |
@@ -636,6 +637,7 @@ Total de peliculas: 1812
 | 2017 | Star Wars: The Last Jedi | star-wars-episode-viii-the-last-jedi-2017 | Ciencia ficcion | Disney Plus | +13 |
 | 2017 | Suburbicon | suburbicon-2017 | Thriller | Otras plataformas | +17 |
 | 2017 | The Breadwinner (El pan de la guerra) | the-breadwinner-el-pan-de-la-guerra-2017 | Animacion | Prime Video | +13 |
+| 2017 | The Disaster Artist | the-disaster-artist-2017 | Comedia | Otras plataformas | +16 |
 | 2017 | The Fate of the Furious | the-fate-of-the-furious-2017 | Accion | HBO Max | +13 |
 | 2017 | The Shape of Water | the-shape-of-water-2017 | Drama | Disney Plus | +17 |
 | 2017 | The Square | the-square-2017 | Comedia | Netflix | +16 |
@@ -658,8 +660,10 @@ Total de peliculas: 1812
 | 2016 | Doctor Strange | doctor-strange-2016 | Accion | Disney Plus | +13 |
 | 2016 | El ciudadano ilustre | el-ciudadano-ilustre-2016 | Comedia | Disney Plus | +13 |
 | 2016 | El conjuro 2 | el-conjuro-2-2016 | Terror | HBO Max | +16 |
+| 2016 | El extraño | el-extrano-2016 | Terror | Apple TV | +18 |
 | 2016 | El maestro del dinero | el-maestro-del-dinero-2016 | Thriller | Apple TV | +13 |
 | 2016 | El plan de Maggie | el-plan-de-maggie-2016 | Comedia | HBO Max | +16 |
+| 2016 | El vacío | el-vacio-2016 | Terror | Apple TV | +18 |
 | 2016 | Fantastic Beasts and Where to Find Them | fantastic-beasts-and-where-to-find-them-2016 | Fantasia | HBO Max | +12 |
 | 2016 | La doncella | la-doncella-2016 | Thriller | Otras plataformas | +18 |
 | 2016 | La La Land | la-la-land-2016 | Musical | Prime Video | +13 |
@@ -717,6 +721,7 @@ Total de peliculas: 1812
 | 2015 | Una noche para sobrevivir | una-noche-para-sobrevivir-2015 | Accion | HBO Max + Apple TV | +16 |
 | 2014 | 12 horas para sobrevivir | 12-horas-para-sobrevivir-2014 | Terror | HBO Max | +16 |
 | 2014 | Así nos va | asi-nos-va-2014 | Romance | Apple TV | +13 |
+| 2014 | Babadook | babadook-2014 | Terror | Otras plataformas | +16 |
 | 2014 | Betibú | betibu-2014 | Thriller | Otras plataformas | +12 |
 | 2014 | Big Eyes | big-eyes-2014 | Drama | Otras plataformas | +13 |
 | 2014 | Big Hero 6 | big-hero-6-2014 | Animacion | Disney Plus | ATP |
@@ -748,11 +753,13 @@ Total de peliculas: 1812
 | 2014 | The Amazing Spider-Man 2 | the-amazing-spider-man-2-2014 | Accion | Disney Plus | +13 |
 | 2014 | The Grand Budapest Hotel | the-grand-budapest-hotel-2014 | Comedia | Disney Plus | +13 |
 | 2014 | Tonto y retonto 2 | tonto-y-retonto-2-2014 | Comedia | Otras plataformas | +13 |
+| 2014 | Una chica vuelve a casa sola de noche | una-chica-vuelve-a-casa-sola-de-noche-2014 | Terror | Otras plataformas | +16 |
 | 2014 | Vicio propio | vicio-propio-2014 | Crimen | Apple TV | +16 |
 | 2014 | What We Do in the Shadows | what-we-do-in-the-shadows-2014 | Comedia | Otras plataformas | +17 |
 | 2014 | Whiplash: Música y obsesión | whiplash-2014 | Drama | HBO Max + Apple TV | +13 |
 | 2014 | X-Men: Days of Future Past | x-men-days-of-future-past-2014 | Accion | Disney Plus | +13 |
 | 2013 | 12 Years a Slave | 12-years-a-slave-2013 | Drama | Prime Video + Paramount Plus | +17 |
+| 2013 | Bienvenidos al fin del mundo | bienvenidos-al-fin-del-mundo-2013 | Comedia | Otras plataformas | +16 |
 | 2013 | Blue Jasmine | blue-jasmine-2013 | Drama | Otras plataformas | +16 |
 | 2013 | Coherencia | coherencia-2013 | Ciencia ficcion | Apple TV | +13 |
 | 2013 | Corazón de león | corazon-de-leon-2013 | Comedia romántica | HBO Max | ATP |
@@ -789,6 +796,7 @@ Total de peliculas: 1812
 | 2013 | The Tale of the Princess Kaguya | the-tale-of-the-princess-kaguya-2013 | Anime | Netflix | ATP |
 | 2013 | The Wolverine | the-wolverine-2013 | Accion | Disney Plus | +13 |
 | 2013 | Thor: The Dark World | thor-the-dark-world-2013 | Accion | Disney Plus | +13 |
+| 2013 | Under the Skin | under-the-skin-2013 | Ciencia ficcion | Otras plataformas | +18 |
 | 2012 | A Roma con amor | to-rome-with-love-2012 | Comedia | Otras plataformas | +13 |
 | 2012 | Argo | argo-2012 | Thriller | Netflix + Mercado Play | +17 |
 | 2012 | Contraband | contraband-2012 | Accion | HBO Max + Apple TV | +17 |
@@ -805,6 +813,7 @@ Total de peliculas: 1812
 | 2012 | Hotel Transilvania | hotel-transylvania-2012 | Animación | HBO Max + Prime Video | ATP |
 | 2012 | Infierno blanco | infierno-blanco-2012 | Thriller | Prime Video + HBO Max | +16 |
 | 2012 | Jack Reacher: bajo la mira | jack-reacher-bajo-la-mira-2012 | Accion | Paramount Plus | +13 |
+| 2012 | La cabaña del terror | la-cabana-del-terror-2012 | Terror | Otras plataformas | +16 |
 | 2012 | La caza | la-caza-2012 | Drama | Prime Video | +16 |
 | 2012 | La vida de Flynn | la-vida-de-flynn-2012 | Drama | Apple TV | +16 |
 | 2012 | Lincoln | lincoln-2012 | Drama | Otras plataformas | +13 |
@@ -909,6 +918,7 @@ Total de peliculas: 1812
 | 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus | +16 |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix | +13 |
 | 2009 | Enemigos públicos | enemigos-publicos-2009 | Crimen | Otras plataformas | +13 |
+| 2009 | Enter the Void | enter-the-void-2009 | Drama | Otras plataformas | +18 |
 | 2009 | Fantástico Sr. Fox | fantastico-sr-fox-2009 | Animacion | Prime Video | ATP |
 | 2009 | Fast & Furious | fast-and-furious-2009 | Accion | HBO Max | +13 |
 | 2009 | Halloween II | halloween-ii-2009 | Terror | Prime Video | +17 |
@@ -919,6 +929,7 @@ Total de peliculas: 1812
 | 2009 | Inglourious Basterds | inglourious-basterds-2009 | Drama | Netflix | +16 |
 | 2009 | Invictus | invictus-2009 | Drama | Netflix + HBO Max | +13 |
 | 2009 | Jennifer's Body | jennifer-s-body-2009 | Terror | Disney Plus + Netflix | +16 |
+| 2009 | La casa del diablo | the-house-of-the-devil-2009 | Terror | Otras plataformas | +18 |
 | 2009 | La cinta blanca | la-cinta-blanca-2009 | Drama | Apple TV | +17 |
 | 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
 | 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Apple TV | +13 |
@@ -941,6 +952,7 @@ Total de peliculas: 1812
 | 2008 | Asesinato justo | asesinato-justo-2008 | Thriller | Otras plataformas | +16 |
 | 2008 | Australia | australia-2008 | Drama | Otras plataformas | +13 |
 | 2008 | Cuentos que no son cuento | bedtime-stories-2008 | Fantasia | Disney Plus | ATP |
+| 2008 | Déjame entrar | dejame-entrar-2008 | Terror | Otras plataformas | +16 |
 | 2008 | El curioso caso de Benjamin Button | el-curioso-caso-de-benjamin-button-2008 | Drama | Netflix + HBO Max | +13 |
 | 2008 | El incidente | el-incidente-2008 | Ciencia ficcion | Otras plataformas | +17 |
 | 2008 | Gran Torino | gran-torino-2008 | Drama | Netflix + Prime Video | +13 |
@@ -957,6 +969,7 @@ Total de peliculas: 1812
 | 2008 | Punisher: War Zone | punisher-war-zone-2008 | Accion | Otras plataformas | +17 |
 | 2008 | Quantum of Solace | quantum-of-solace-2008 | Accion | Netflix | +12 |
 | 2008 | Quémese después de leerse | quemese-despues-de-leerse-2008 | Comedia | Apple TV | +13 |
+| 2008 | Rebobine, por favor | rebobine-por-favor-2008 | Comedia | Otras plataformas | ATP |
 | 2008 | Red de mentiras | red-de-mentiras-2008 | Accion | HBO Max + Apple TV | +17 |
 | 2008 | Saw V | saw-v-2008 | Gore | Otras plataformas | +18 |
 | 2008 | Shine a Light | shine-a-light-2008 | Documental | Otras plataformas | +13 |
@@ -984,6 +997,7 @@ Total de peliculas: 1812
 | 2007 | Halloween | halloween-2007 | Terror | Otras plataformas | +17 |
 | 2007 | Harry Potter and the Order of the Phoenix | harry-potter-and-the-order-of-the-phoenix-2007 | Aventura | HBO Max | +12 |
 | 2007 | Hostel: Part II | hostel-part-ii-2007 | Gore | Otras plataformas | +18 |
+| 2007 | Inside | inside-2007 | Terror | Otras plataformas | +18 |
 | 2007 | Juno. Embarazada por accidente | juno-embarazada-por-accidente-2007 | Drama | Prime Video | +16 |
 | 2007 | La esperanza vive en mí | reign-over-me-2007 | Drama | Apple TV + Netflix | +17 |
 | 2007 | La extraña que hay en ti | la-extrana-que-hay-en-ti-2007 | Thriller | HBO Max | +16 |
@@ -1069,6 +1083,7 @@ Total de peliculas: 1812
 | 2005 | La joya de la familia | la-joya-de-la-familia-2005 | Comedia | Netflix + Disney Plus | +13 |
 | 2005 | La propuesta | la-propuesta-2005 | Western | Prime Video | +13 |
 | 2005 | Las locuras de Dick y Jane | las-locuras-de-dick-y-jane-2005 | Comedia | Otras plataformas | +13 |
+| 2005 | Los renegados del diablo | los-renegados-del-diablo-2005 | Terror | Otras plataformas | +18 |
 | 2005 | Match Point | match-point-2005 | Thriller | Otras plataformas | +16 |
 | 2005 | Múnich | munich-2005 | Thriller | Otras plataformas | +17 |
 | 2005 | No Direction Home: Bob Dylan | no-direction-home-bob-dylan-2005 | Documental | Otras plataformas | ATP |
@@ -1089,10 +1104,12 @@ Total de peliculas: 1812
 | 2004 | El castillo ambulante | howls-moving-castle-2004 | Anime | Netflix | ATP |
 | 2004 | El día de mañana | el-dia-de-manana-2004 | Acción | Disney Plus | +13 |
 | 2004 | El fuego de la venganza | el-fuego-de-la-venganza-2004 | Accion | Netflix + Paramount Plus | +16 |
+| 2004 | El maquinista | el-maquinista-2004 | Thriller | Otras plataformas | +16 |
 | 2004 | Espanglish | spanglish-2004 | Drama | Apple TV + HBO Max | +13 |
 | 2004 | Eterno resplandor de una mente sin recuerdos | eternal-sunshine-of-the-spotless-mind-2004 | Romance | HBO Max + Apple TV | +13 |
 | 2004 | Harry Potter and the Prisoner of Azkaban | harry-potter-and-the-prisoner-of-azkaban-2004 | Aventura | HBO Max | ATP |
 | 2004 | Kill Bill: Vol. 2 | kill-bill-vol-2-2004 | Accion | Netflix | +17 |
+| 2004 | Kung Fu Sion | kung-fu-sion-2004 | Accion | Otras plataformas | +13 |
 | 2004 | La niña santa | la-nina-santa-2004 | Drama | Prime Video | +13 |
 | 2004 | La nueva gran estafa | la-nueva-gran-estafa-2004 | Accion | HBO Max | +13 |
 | 2004 | La semilla de Chucky | seed-of-chucky-2004 | Terror | Otras plataformas | +17 |
@@ -1111,6 +1128,7 @@ Total de peliculas: 1812
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max | +16 |
 | 2004 | Troya | troya-2004 | Accion | Prime Video + HBO Max | +16 |
 | 2004 | Una serie de eventos desafortunados | una-serie-de-eventos-desafortunados-2004 | Fantasia | Otras plataformas | ATP |
+| 2004 | Zombies Party: Una noche de muerte | shaun-of-the-dead-2004 | Comedia | Otras plataformas | +16 |
 | 2003 | 2 Fast 2 Furious | 2-fast-2-furious-2003 | Accion | Otras plataformas | +13 |
 | 2003 | 21 gramos | 21-gramos-2003 | Drama | HBO Max | +16 |
 | 2003 | Big Fish | big-fish-2003 | Drama | Otras plataformas | +13 |
@@ -1160,6 +1178,7 @@ Total de peliculas: 1812
 | 2002 | El pianista | el-pianista-2002 | Drama | Otras plataformas | +15 |
 | 2002 | Embriagado de amor | punch-drunk-love-2002 | Drama | Apple TV | +13 |
 | 2002 | En defensa del honor | en-defensa-del-honor-2002 | Drama | Apple TV | +17 |
+| 2002 | Exterminio | exterminio-2002 | Terror | Otras plataformas | +18 |
 | 2002 | Gangs of New York | gangs-of-new-york-2002 | Drama | Otras plataformas | +17 |
 | 2002 | Halloween: Resurrection | halloween-resurrection-2002 | Terror | Otras plataformas | +17 |
 | 2002 | Harry Potter and the Chamber of Secrets | harry-potter-and-the-chamber-of-secrets-2002 | Aventura | HBO Max | ATP |
@@ -1192,6 +1211,7 @@ Total de peliculas: 1812
 | 2001 | Donnie Darko | donnie-darko-2001 | Ciencia ficcion | Prime Video | +13 |
 | 2001 | El creyente | el-creyente-2001 | Drama | Otras plataformas | +16 |
 | 2001 | El hijo de la novia | el-hijo-de-la-novia-2001 | Drama | Disney Plus | +13 |
+| 2001 | Ghost World | ghost-world-2001 | Comedia | Otras plataformas | +13 |
 | 2001 | Gosford Park: Crimen de medianoche | gosford-park-crimen-de-medianoche-2001 | Drama | Otras plataformas | +13 |
 | 2001 | Hannibal | hannibal-2001 | Terror | HBO Max | +16 |
 | 2001 | Harry Potter and the Sorcerer's Stone | harry-potter-and-the-sorcerers-stone-2001 | Aventura | HBO Max | ATP |
@@ -1221,6 +1241,7 @@ Total de peliculas: 1812
 | 2001 | Yo soy Sam | yo-soy-sam-2001 | Drama | Apple TV | +13 |
 | 2000 | ¿Dónde estás, hermano? | donde-estas-hermano-2000 | Aventura | Apple TV | +13 |
 | 2000 | Amores perros | amores-perros-2000 | Drama | Netflix | +18 |
+| 2000 | Battle Royale | battle-royale-2000 | Accion | Otras plataformas | +18 |
 | 2000 | Casi famosos | casi-famosos-2000 | Drama | Apple TV | +13 |
 | 2000 | Colgadas | colgadas-2000 | Drama | Otras plataformas | +13 |
 | 2000 | Deseando amar | deseando-amar-2000 | Romance | Otras plataformas | +13 |
@@ -1248,6 +1269,7 @@ Total de peliculas: 1812
 | 2000 | Yo, yo mismo e Irene | yo-yo-mismo-e-irene-2000 | Comedia | Disney Plus | +16 |
 | 1999 | Acordes y desacuerdos | sweet-and-lowdown-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Al límite | bringing-out-the-dead-1999 | Drama | Otras plataformas | +17 |
+| 1999 | Audition | audition-1999 | Terror | Otras plataformas | +18 |
 | 1999 | Belleza americana | american-beauty-1999 | Drama | Paramount Plus + Apple TV | +13 |
 | 1999 | Cielo de octubre | cielo-de-octubre-1999 | Drama | Apple TV | ATP |
 | 1999 | Cómo ser John Malkovich | como-ser-john-malkovich-1999 | Comedia | Apple TV | +16 |
@@ -1255,6 +1277,7 @@ Total de peliculas: 1812
 | 1999 | El gigante de hierro | el-gigante-de-hierro-1999 | Animacion | Apple TV | ATP |
 | 1999 | El informante | el-informante-1999 | Drama | Otras plataformas | +13 |
 | 1999 | El talento de Mr. Ripley | el-talento-de-mr-ripley-1999 | Thriller | Apple TV | +17 |
+| 1999 | eXistenZ | existenz-1999 | Ciencia ficcion | Otras plataformas | +18 |
 | 1999 | Garage Olimpo | garage-olimpo-1999 | Drama | CINE.AR | +18 |
 | 1999 | Héroes fuera de órbita | heroes-fuera-de-orbita-1999 | Comedia | Apple TV | ATP |
 | 1999 | Huracán Carter | huracan-carter-1999 | Drama | Prime Video + Apple TV | +13 |
@@ -1282,6 +1305,7 @@ Total de peliculas: 1812
 | 1998 | Celebrity | celebrity-1998 | Comedia | Otras plataformas | +13 |
 | 1998 | Dark City | dark-city-1998 | Ciencia ficcion | Apple TV | +13 |
 | 1998 | El aguador | the-waterboy-1998 | Comedia | Disney Plus | +13 |
+| 1998 | El círculo | el-circulo-1998 | Terror | Prime Video + Apple TV | +16 |
 | 1998 | El gran Lebowski | el-gran-lebowski-1998 | Comedia | Apple TV | +17 |
 | 1998 | El show de Truman | the-truman-show-1998 | Comedia | Paramount Plus + Apple TV | ATP |
 | 1998 | Elizabeth | elizabeth-1998 | Drama | Otras plataformas | +13 |
@@ -1293,12 +1317,14 @@ Total de peliculas: 1812
 | 1998 | La novia de Chucky | bride-of-chucky-1998 | Terror | Prime Video | +13 |
 | 1998 | Lluvia permanente | lluvia-permanente-1998 | Drama | Netflix | +16 |
 | 1998 | Los miserables: La leyenda nunca muere | los-miserables-la-leyenda-nunca-muere-1998 | Drama | Apple TV | +13 |
+| 1998 | Pi: Fe en el caos | pi-fe-en-el-caos-1998 | Thriller | Otras plataformas | +16 |
 | 1998 | Poseídos | poseidos-1998 | Thriller | HBO Max + Apple TV | +16 |
 | 1998 | Quédate a mi lado | quedate-a-mi-lado-1998 | Drama | Otras plataformas | +13 |
 | 1998 | Ronin | ronin-1998 | Acción | Prime Video + Apple TV | +16 |
 | 1998 | Saving Private Ryan | saving-private-ryan-1998 | Drama | Netflix | +16 |
 | 1998 | Seis días y siete noches | seis-dias-y-siete-noches-1998 | Comedia romántica | Disney Plus | +13 |
 | 1998 | Shakespeare in Love | shakespeare-in-love-1998 | Romance | Otras plataformas | +17 |
+| 1998 | The Faculty | the-faculty-1998 | Terror | Otras plataformas | +16 |
 | 1998 | Un romance peligroso | un-romance-peligroso-1998 | Drama | Apple TV | +13 |
 | 1997 | Alien Resurrection | alien-resurrection-1997 | Ciencia ficcion | Disney Plus | +17 |
 | 1997 | Amistad | amistad-1997 | Drama | Otras plataformas | +17 |
@@ -1307,6 +1333,7 @@ Total de peliculas: 1812
 | 1997 | Cara a cara | cara-a-cara-1997 | Accion | Disney Plus | +17 |
 | 1997 | Carretera perdida | carretera-perdida-1997 | Terror | Otras plataformas | +16 |
 | 1997 | Contacto | contacto-1997 | Ciencia ficcion | Apple TV | +13 |
+| 1997 | Cube | cube-1997 | Ciencia ficcion | Apple TV | +16 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
 | 1997 | Donnie Brasco | donnie-brasco-1997 | Drama | Otras plataformas | +17 |
 | 1997 | El boxeador | el-boxeador-1997 | Drama | Apple TV | +16 |
@@ -1316,6 +1343,8 @@ Total de peliculas: 1812
 | 1997 | El quinto elemento | el-quinto-elemento-1997 | Ciencia ficcion | Otras plataformas | +13 |
 | 1997 | Gattaca | gattaca-1997 | Ciencia ficcion | HBO Max | +13 |
 | 1997 | Good Will Hunting | good-will-hunting-1997 | Drama | Otras plataformas | +17 |
+| 1997 | Gummo | gummo-1997 | Drama | Otras plataformas | +18 |
+| 1997 | Horizonte final | horizonte-final-1997 | Terror | Prime Video + Apple TV | +18 |
 | 1997 | Jackie Brown | jackie-brown-1997 | Crimen | Otras plataformas | +17 |
 | 1997 | Kundun | kundun-1997 | Drama | Otras plataformas | +13 |
 | 1997 | La cortina de humo | la-cortina-de-humo-1997 | Comedia | Apple TV | +13 |
@@ -1328,6 +1357,7 @@ Total de peliculas: 1812
 | 1997 | The Lost World: Jurassic Park | the-lost-world-jurassic-park-1997 | Aventura | Prime Video | +13 |
 | 1997 | Titanic | titanic-1997 | Drama | Disney Plus | +13 |
 | 1996 | A prueba de balas | bulletproof-1996 | Accion | Apple TV | +17 |
+| 1996 | Crash: Extraños placeres | crash-extranos-placeres-1996 | Drama | Otras plataformas | +18 |
 | 1996 | El club de las Primeras Esposas | el-club-de-las-primeras-esposas-1996 | Comedia | Apple TV | ATP |
 | 1996 | El crisol | el-crisol-1996 | Drama | Disney Plus + Otras plataformas | +16 |
 | 1996 | El insoportable | el-insoportable-1996 | Comedia | Apple TV | +13 |
@@ -1336,6 +1366,7 @@ Total de peliculas: 1812
 | 1996 | Fargo. Secuestro voluntario | fargo-secuestro-voluntario-1996 | Crimen | Prime Video + Apple TV | +18 |
 | 1996 | From Dusk Till Dawn | from-dusk-till-dawn-1996 | Terror | Otras plataformas | +18 |
 | 1996 | Happy Gilmore | happy-gilmore-1996 | Comedia | Apple TV | +13 |
+| 1996 | Jóvenes y brujas | jovenes-y-brujas-1996 | Terror | Otras plataformas | +13 |
 | 1996 | La habitación de Marvin | la-habitacion-de-marvin-1996 | Drama | Apple TV | +13 |
 | 1996 | La roca | la-roca-1996 | Accion | Disney Plus | +13 |
 | 1996 | Mars Attacks! | mars-attacks-1996 | Ciencia ficcion | Otras plataformas | +13 |
@@ -1369,6 +1400,7 @@ Total de peliculas: 1812
 | 1995 | Ghost in the Shell | ghost-in-the-shell-1995 | Anime | Netflix | +17 |
 | 1995 | Halloween 6: La maldición de Michael Myers | halloween-the-curse-of-michael-myers-1995 | Terror | Otras plataformas | +17 |
 | 1995 | Jungla de cristal: la venganza | jungla-de-cristal-la-venganza-1995 | Acción | Disney Plus | +13 |
+| 1995 | La ciudad de los niños perdidos | la-ciudad-de-los-ninos-perdidos-1995 | Fantasia | Otras plataformas | +13 |
 | 1995 | Lancelot, el primer caballero | lancelot-el-primer-caballero-1995 | Aventura | Apple TV | +13 |
 | 1995 | Marea roja | marea-roja-1995 | Accion | Disney Plus | +13 |
 | 1995 | Mientras dormías | mientras-dormias-1995 | Comedia | Disney Plus | ATP |
@@ -1389,6 +1421,7 @@ Total de peliculas: 1812
 | 1994 | Dependientes | dependientes-1994 | Comedia | Apple TV | +16 |
 | 1994 | Ed Wood | ed-wood-1994 | Biografica | Otras plataformas | +17 |
 | 1994 | El cliente | el-cliente-1994 | Drama | Netflix | +13 |
+| 1994 | El cuervo | el-cuervo-1994 | Accion | Otras plataformas | +18 |
 | 1994 | El especialista | el-especialista-1994 | Accion | Apple TV | +16 |
 | 1994 | Forrest Gump | forrest-gump-1994 | Comedia | Paramount Plus + Mercado Play | +13 |
 | 1994 | Frankenstein de Mary Shelley | frankenstein-de-mary-shelley-1994 | Drama | Apple TV | +13 |
@@ -1448,6 +1481,8 @@ Total de peliculas: 1812
 | 1992 | Un lugar en el mundo | un-lugar-en-el-mundo-1992 | Drama | Otras plataformas | +13 |
 | 1992 | Unforgiven | unforgiven-1992 | Western | HBO Max | +17 |
 | 1991 | Barton Fink | barton-fink-1991 | Drama | Otras plataformas | +16 |
+| 1991 | Delicatessen | delicatessen-1991 | Comedia | Otras plataformas | +16 |
+| 1991 | El almuerzo desnudo | el-almuerzo-desnudo-1991 | Drama | Otras plataformas | +18 |
 | 1991 | El cabo del miedo | cape-fear-1991 | Thriller | Otras plataformas | +17 |
 | 1991 | El pequeño Tate | el-pequeno-tate-1991 | Drama | Prime Video | +13 |
 | 1991 | El silencio de los inocentes | the-silence-of-the-lambs-1991 | Terror | Paramount Plus + Apple TV | +13 |
@@ -1469,10 +1504,12 @@ Total de peliculas: 1812
 | 1990 | Corazón salvaje | corazon-salvaje-1990 | Drama | Prime Video | +16 |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Otras plataformas | +13 |
 | 1990 | Darkman | darkman-1990 | Accion | Apple TV | +16 |
+| 1990 | Desafío total | desafio-total-1990 | Ciencia ficcion | Otras plataformas | +16 |
 | 1990 | Despertares | despertares-1990 | Drama | Apple TV | +13 |
 | 1990 | Días de trueno | dias-de-trueno-1990 | Accion | Apple TV | +13 |
 | 1990 | Edward Scissorhands | edward-scissorhands-1990 | Fantasia | Otras plataformas | +13 |
 | 1990 | El padrino. Parte III | el-padrino-parte-iii-1990 | Drama | Otras plataformas | +17 |
+| 1990 | La escalera de Jacob | la-escalera-de-jacob-1990 | Terror | Otras plataformas | +18 |
 | 1990 | Mi pobre angelito | home-alone-1990 | Comedia | Disney Plus | ATP |
 | 1990 | Muerte entre las flores | muerte-entre-las-flores-1990 | Drama | Disney Plus | +16 |
 | 1990 | Mujer bonita | mujer-bonita-1990 | Romance | Disney Plus | +13 |
@@ -1501,6 +1538,7 @@ Total de peliculas: 1812
 | 1989 | Nunca fuimos ángeles | nunca-fuimos-angeles-1989 | Comedia | Prime Video + Apple TV | +13 |
 | 1989 | Pesadilla en Elm Street 5: El niño de los sueños | a-nightmare-on-elm-street-5-the-dream-child-1989 | Terror | Otras plataformas | +17 |
 | 1989 | Santa Sangre | santa-sangre-1989 | Terror | Apple TV | +18 |
+| 1989 | Tetsuo: The Iron Man | tetsuo-the-iron-man-1989 | Terror | Otras plataformas | +18 |
 | 1989 | The Punisher | the-punisher-1989 | Accion | Disney Plus | +17 |
 | 1989 | Tiempos de gloria | tiempos-de-gloria-1989 | Drama | Apple TV | +16 |
 | 1989 | Viernes 13. Parte VIII: Jason vuelve... para siempre | friday-the-13th-part-viii-jason-takes-manhattan-1989 | Terror | Otras plataformas | +18 |
@@ -1517,6 +1555,7 @@ Total de peliculas: 1812
 | 1988 | Duro de matar | jungla-de-cristal-1988 | Accion | Disney Plus | +17 |
 | 1988 | El sendero de la traición | el-sendero-de-la-traicion-1988 | Thriller | Prime Video | +16 |
 | 1988 | El turista accidental | el-turista-accidental-1988 | Drama | Apple TV | ATP |
+| 1988 | Están vivos | estan-vivos-1988 | Ciencia ficcion | Apple TV | +16 |
 | 1988 | Grave of the Fireflies | grave-of-the-fireflies-1988 | Anime | Netflix | +13 |
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Otras plataformas | +17 |
 | 1988 | Inseparables | inseparables-1988 | Terror | Prime Video | +18 |
@@ -1582,6 +1621,7 @@ Total de peliculas: 1812
 | 1985 | Mordiscos peligrosos | mordiscos-peligrosos-1985 | Comedia | Otras plataformas | +13 |
 | 1985 | Out of Africa | out-of-africa-1985 | Drama | Otras plataformas | ATP |
 | 1985 | Pee-wee's Big Adventure | pee-wees-big-adventure-1985 | Comedia | Otras plataformas | ATP |
+| 1985 | Re-Animator | re-animator-1985 | Terror | Otras plataformas | +18 |
 | 1985 | Rocky IV | rocky-iv-1985 | Drama | Otras plataformas | ATP |
 | 1985 | Shoah | shoah-1985 | Documental | Otras plataformas | +16 |
 | 1985 | Silverado | silverado-1985 | Western | Netflix | +14 |
@@ -1604,6 +1644,7 @@ Total de peliculas: 1812
 | 1984 | Stop Making Sense | stop-making-sense-1984 | Documental | Otras plataformas | ATP |
 | 1984 | Supergirl | supergirl-1984 | Accion | HBO Max | +9 |
 | 1984 | The Terminator | the-terminator-1984 | Accion | Prime Video | +17 |
+| 1984 | The Toxic Avenger | the-toxic-avenger-1984 | Terror | Otras plataformas | +18 |
 | 1984 | This Is Spinal Tap | this-is-spinal-tap-1984 | Comedia | Otras plataformas | +17 |
 | 1984 | Viernes 13. Último capítulo | friday-the-13th-the-final-chapter-1984 | Terror | Otras plataformas | +16 |
 | 1983 | El ansia | el-ansia-1983 | Terror | Otras plataformas | +16 |
@@ -1615,6 +1656,7 @@ Total de peliculas: 1812
 | 1983 | Videodrome | videodrome-1983 | Terror | Otras plataformas | +18 |
 | 1983 | Zelig | zelig-1983 | Comedia | Otras plataformas | +13 |
 | 1982 | Aquel excitante curso | aquel-excitante-curso-1982 | Comedia | Apple TV | +16 |
+| 1982 | Basket Case | basket-case-1982 | Terror | Otras plataformas | +18 |
 | 1982 | Blade Runner | blade-runner-1982 | Ciencia ficcion | Prime Video | +17 |
 | 1982 | Comedia sexual de una noche de verano | a-midsummer-night-s-sex-comedy-1982 | Comedia | Otras plataformas | +13 |
 | 1982 | E.T., el extraterrestre | e-t-the-extra-terrestrial-1982 | Ciencia ficcion | HBO Max | ATP |
@@ -1628,18 +1670,21 @@ Total de peliculas: 1812
 | 1982 | Oficial y caballero | oficial-y-caballero-1982 | Drama | Apple TV | +13 |
 | 1982 | Poltergeist | poltergeist-1982 | Terror | Otras plataformas | ATP |
 | 1982 | Rocky III | rocky-iii-1982 | Drama | Otras plataformas | ATP |
+| 1982 | The Dark Crystal | the-dark-crystal-1982 | Fantasia | Otras plataformas | ATP |
 | 1982 | Tootsie | tootsie-1982 | Comedia | Otras plataformas | ATP |
 | 1982 | Viernes 13, parte III | friday-the-13th-part-iii-1982 | Terror | Otras plataformas | +18 |
 | 1981 | 1997: Rescate en Nueva York | 1997-rescate-en-nueva-york-1981 | Accion | Otras plataformas | +16 |
 | 1981 | Chariots of Fire | chariots-of-fire-1981 | Drama | Disney Plus | ATP |
 | 1981 | Confesiones verdaderas | confesiones-verdaderas-1981 | Drama | Prime Video + Apple TV | +16 |
 | 1981 | El cartero siempre llama dos veces | el-cartero-siempre-llama-dos-veces-1981 | Thriller | Apple TV | +18 |
+| 1981 | El más allá | el-mas-alla-1981 | Terror | Otras plataformas | +18 |
 | 1981 | Halloween II: Sanguinario | halloween-ii-1981 | Terror | Otras plataformas | +17 |
 | 1981 | Impacto | impacto-1981 | Thriller | Otras plataformas | +18 |
 | 1981 | La posesión | la-posesion-1981 | Terror | Otras plataformas | +18 |
 | 1981 | Mad Max 2 | mad-max-2-1981 | Accion | HBO Max | +17 |
 | 1981 | Posesión infernal | the-evil-dead-1981 | Terror | HBO Max + Apple TV | +18 |
 | 1981 | Raiders of the Lost Ark | raiders-of-the-lost-ark-1981 | Aventura | Otras plataformas | ATP |
+| 1981 | Scanners | scanners-1981 | Terror | Otras plataformas | +18 |
 | 1981 | Viernes 13, 2ª parte | friday-the-13th-part-2-1981 | Terror | Otras plataformas | +18 |
 | 1980 | Aterriza como puedas | aterriza-como-puedas-1980 | Comedia | Apple TV | +13 |
 | 1980 | El hombre elefante | el-hombre-elefante-1980 | Drama | HBO Max | +13 |
@@ -1664,6 +1709,7 @@ Total de peliculas: 1812
 | 1979 | Manhattan | manhattan-1979 | Romance | Otras plataformas | +13 |
 | 1979 | Rocky II | rocky-ii-1979 | Drama | Otras plataformas | ATP |
 | 1979 | Stalker | stalker-1979 | Ciencia ficcion | Otras plataformas | +13 |
+| 1979 | The Brood | the-brood-1979 | Terror | Otras plataformas | +18 |
 | 1979 | The Warriors (Los amos de la noche) | the-warriors-los-amos-de-la-noche-1979 | Accion | Apple TV | +16 |
 | 1978 | American Boy: perfil de Steven Prince | american-boy-a-profile-of-steven-prince-1978 | Documental | Otras plataformas | ATP |
 | 1978 | Camino del sur | camino-del-sur-1978 | Western | Otras plataformas | +14 |
@@ -1674,6 +1720,7 @@ Total de peliculas: 1812
 | 1978 | La noche de Halloween | halloween-1978 | Terror | Otras plataformas | +17 |
 | 1978 | Superman | superman-1978 | Ciencia ficcion | HBO Max | ATP |
 | 1977 | Annie Hall | annie-hall-1977 | Comedia | Otras plataformas | ATP |
+| 1977 | Cabeza borradora | cabeza-borradora-1977 | Terror | Otras plataformas | +18 |
 | 1977 | Encuentros cercanos del tercer tipo | close-encounters-of-the-third-kind-1977 | Ciencia ficcion | Otras plataformas | ATP |
 | 1977 | Fiebre del sábado noche | fiebre-del-sabado-noche-1977 | Drama | Otras plataformas | +17 |
 | 1977 | House | house-1977 | Terror | Otras plataformas | +16 |
@@ -1707,6 +1754,7 @@ Total de peliculas: 1812
 | 1973 | Sleeper | sleeper-1973 | Ciencia ficcion | Otras plataformas | ATP |
 | 1973 | The Sting | the-sting-1973 | Crimen | Otras plataformas | ATP |
 | 1972 | El tren de Bertha | boxcar-bertha-1972 | Crimen | Otras plataformas | +17 |
+| 1972 | Pink Flamingos | pink-flamingos-1972 | Comedia | Otras plataformas | +18 |
 | 1972 | Solaris | solaris-1972 | Ciencia ficcion | Otras plataformas | +13 |
 | 1972 | Sueños de un seductor | suenos-de-un-seductor-1972 | Comedia | Apple TV | ATP |
 | 1972 | The Godfather | the-godfather-1972 | Drama | Netflix | +17 |
@@ -1807,6 +1855,7 @@ Total de peliculas: 1812
 | 1935 | Mutiny on the Bounty | mutiny-on-the-bounty-1935 | Drama | Otras plataformas | +15 |
 | 1934 | It Happened One Night | it-happened-one-night-1934 | Comedia | Otras plataformas | ATP |
 | 1933 | Cavalcade | cavalcade-1933 | Drama | Otras plataformas | +12 |
+| 1932 | Freaks | freaks-1932 | Drama | Otras plataformas | +18 |
 | 1932 | Grand Hotel | grand-hotel-1932 | Drama | Otras plataformas | ATP |
 | 1931 | Cimarron | cimarron-1931 | Western | Prime Video | +12 |
 | 1931 | M, el vampiro de Düsseldorf | m-el-vampiro-de-dusseldorf-1931 | Crimen | Otras plataformas | +13 |

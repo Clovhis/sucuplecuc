@@ -105,6 +105,7 @@ test.describe('home catalog filters', () => {
     for (const title of ['El espectáculo de imágenes de terror de Rocky', 'La habitación (The room)', 'Troll 2']) {
       await expect(page.locator(`[data-movie-card][data-movie-title="${title}"]`)).toBeVisible();
     }
+    await expect(page.locator('[data-movie-card][data-movie-title="Battle Royale"]')).toBeVisible();
     await expect(page.locator('[data-movie-search-summary]').first()).toContainText('filtro De culto');
     expect(new URL(page.url()).searchParams.get('filtro')).toBe('culto');
   });
@@ -156,7 +157,13 @@ test.describe('home catalog filters', () => {
     await page.getByRole('button', { name: /^Road Movie$/i }).click();
     await page.getByRole('button', { name: /Filtrar por Prime Video/i }).click();
 
-    await expectMovieTitles(page, ['Green Book', 'París, Texas', 'Ladrón de bicicletas']);
+    await expectMovieTitles(page, [
+      'La voluntad de Dios',
+      'C’mon C’mon: Siempre adelante',
+      'Green Book',
+      'París, Texas',
+      'Ladrón de bicicletas',
+    ]);
   });
 
   test('primary genre + platform only returns cards in the selected category', async ({ page }) => {
