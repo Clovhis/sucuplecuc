@@ -3,6 +3,7 @@ import { getAwardVisualKey, getAwardVisualMeta, type AwardVisualKey } from '../l
 
 type Props = {
 	award: string | AwardVisualKey;
+	category?: string;
 	class?: string;
 	decorative?: boolean;
 	label?: string;
@@ -11,12 +12,13 @@ type Props = {
 
 const {
 	award,
+	category,
 	class: className,
 	decorative = true,
 	label,
 	size = 28,
 } = Astro.props as Props;
-const visualKey = getAwardVisualKey(String(award));
+const visualKey = getAwardVisualKey(String(award), category);
 const meta = getAwardVisualMeta(visualKey);
 const assetPath = meta.assetPath ?? '/brand/awards/illustrated/generic.webp';
 ---

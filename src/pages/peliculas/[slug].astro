@@ -804,9 +804,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 									<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
 										<span
 											class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}
-											data-award={getAwardVisualKey(award.label)}
+											data-award={getAwardVisualKey(award.label, award.category)}
 										>
-											<AwardMark award={award.label} class="movie-detail__award-tag-icon" size={16} />
+											<AwardMark award={award.label} category={award.category} class="movie-detail__award-tag-icon" size={16} />
 											<span>{award.label}</span>
 										</span>
 										<span>{award.category}</span>

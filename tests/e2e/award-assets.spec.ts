@@ -105,6 +105,53 @@ test('generic award illustration loads as a transparent asset for the simulator'
 	expect(metrics).toEqual({ complete: true, naturalHeight: 256, naturalWidth: 256, cornerAlpha: 0 });
 });
 
+test('separa un Oscar ganado de una nominación en una ficha de persona', async ({ page }) => {
+	const response = await page.goto('/personas/juan-jose-campanella/', { waitUntil: 'domcontentloaded' });
+
+	expect(response?.ok()).toBeTruthy();
+	const awards = page.locator('.person-page__award-item');
+	await expect(awards).toHaveCount(2);
+
+	const winner = awards.nth(0);
+	await expect(winner).toHaveAttribute('data-award', 'oscar');
+	await expect(winner.locator('.person-page__award-label')).toHaveText('Oscar');
+	await expect(winner.locator('[data-award-visual="oscar"]')).toHaveAttribute(
+		'src',
+		'/brand/awards/illustrated/oscar.webp',
+	);
+
+	const nomination = awards.nth(1);
+	await expect(nomination).toHaveAttribute('data-award', 'oscar-nomination');
+	await expect(nomination.locator('.person-page__award-label')).toHaveText('Nominación al Oscar');
+	const nominationImage = nomination.locator('[data-award-visual="oscar-nomination"]');
+	await expect(nominationImage).toHaveAttribute('src', '/brand/awards/illustrated/oscar-nomination.webp');
+	await nominationImage.scrollIntoViewIfNeeded();
+	await expect
+		.poll(async () =>
+			nominationImage.evaluate((element) => {
+				const image = element as HTMLImageElement;
+				return { complete: image.complete, naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight };
+			}),
+		)
+		.toEqual({ complete: true, naturalWidth: 256, naturalHeight: 256 });
+
+	const transparency = await nominationImage.evaluate((element) => {
+		const image = element as HTMLImageElement;
+		const canvas = document.createElement('canvas');
+		canvas.width = image.naturalWidth;
+		canvas.height = image.naturalHeight;
+		const context = canvas.getContext('2d');
+		if (!context) return null;
+		context.drawImage(image, 0, 0);
+		return {
+			cornerAlpha: context.getImageData(0, 0, 1, 1).data[3],
+			centerAlpha: context.getImageData(128, 128, 1, 1).data[3],
+		};
+	});
+
+	expect(transparency).toEqual({ cornerAlpha: 0, centerAlpha: 255 });
+});
+
 test('less frequent awards use dedicated transparent illustrations', async ({ page }) => {
 	const response = await page.goto('/personas/melissa-barrera/', { waitUntil: 'domcontentloaded' });
 

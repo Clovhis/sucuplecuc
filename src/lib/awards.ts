@@ -1,5 +1,6 @@
 export type AwardVisualKey =
 	| 'oscar'
+	| 'oscar-nomination'
 	| 'golden-globe'
 	| 'bafta'
 	| 'emmy'
@@ -62,6 +63,12 @@ export const awardVisuals: Record<AwardVisualKey, AwardVisualMeta> = {
 		'oscar',
 		'Ilustración editorial de una estatuilla cinematográfica dorada sobre un pedestal, inspirada en el Oscar',
 		'#d5ba6d',
+	),
+	'oscar-nomination': illustrated(
+		'Nominación al Oscar',
+		'oscar-nomination',
+		'Ilustración editorial de una carta de nominación con una firma y un pequeño dibujo dorado de una estatuilla cinematográfica, inspirada en una nominación al Oscar',
+		'#cdb77c',
 	),
 	'golden-globe': illustrated(
 		'Golden Globe',
@@ -309,11 +316,18 @@ function normalizeAwardName(value: string): string {
 		.trim();
 }
 
-export function getAwardVisualKey(value?: string): AwardVisualKey {
+function isNominationText(value?: string): boolean {
+	const normalized = normalizeAwardName(String(value ?? ''));
+	return /\b(nominacion(?:es)?|nomination(?:s)?|nominad[oa]s?|nominated|nominee(?:s)?)\b/.test(normalized);
+}
+
+export function getAwardVisualKey(value?: string, category?: string): AwardVisualKey {
 	const normalized = normalizeAwardName(String(value ?? ''));
 
 	if (!normalized) return 'generic';
-	if (normalized.includes('oscar')) return 'oscar';
+	if (normalized.includes('oscar')) {
+		return isNominationText(`${value ?? ''} ${category ?? ''}`) ? 'oscar-nomination' : 'oscar';
+	}
 	if (normalized.includes('golden globe')) return 'golden-globe';
 	if (normalized.includes('bafta')) return 'bafta';
 	if (normalized.includes('emmy')) return 'emmy';
@@ -354,6 +368,10 @@ export function getAwardVisualKey(value?: string): AwardVisualKey {
 	if (normalized.includes('hasty pudding')) return 'hasty-pudding';
 
 	return 'generic';
+}
+
+export function getAwardDisplayLabel(value?: string, category?: string): string {
+	return getAwardVisualKey(value, category) === 'oscar-nomination' ? 'Nominación al Oscar' : String(value ?? '');
 }
 
 export function getAwardVisualMeta(value?: string): AwardVisualMeta {
