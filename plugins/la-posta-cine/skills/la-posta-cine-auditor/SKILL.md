@@ -38,6 +38,13 @@ Large `--all` passes can spend most of their time on sequential third-party YouT
 
 3. Editorial originality is a hard stop. Every `synopsis` and `review` must be 100% AI-written from scratch for its movie: source material can establish facts, never supply prose. Reject copied, translated, close-paraphrased, template-shaped, verdict-led, recycled, or interchangeable copy. The audit script's duplicate and marker findings require a rewrite, not a waiver.
 
+## De culto sticker integrity
+
+- Treat `CULT_MOVIE_SLUGS` / `isCultMovie` in `src/lib/movies.ts` as the sole source of truth for the `De culto` facet and sticker eligibility. Do not accept a movie as cult from a broad genre or a manual JSON flag alone.
+- Every curated cult movie is required to render `public/DeCulto.png` in the movie-card and detail-poster surfaces, with `alt="De culto"`, the same size as `Absolute Cinema`, no rotation, right alignment, and a base 10% above `Absolute Cinema`. This is an audit gate, not a cosmetic optional.
+- After the build, use browser checks on at least one cult route in every affected responsive profile to prove the asset loads, “De culto” is readable, the sticker stays right/straight, and it does not overlap `Absolute Cinema`. Check the filtered home cards as well when the candidate is part of a load.
+- A curated cult movie without the sticker is an `ERROR`; a non-curated movie with the sticker is also an `ERROR`. Do not repair this by adding per-movie sticker fields or image paths to JSON. If the curated membership is wrong or missing, report the taxonomy/site-code gap and require the source-list change before sign-off.
+
 4. If a candidate claims `Cine` without same-run live verification, invoke `la-posta-cine-cartelera-revalidator` before sign-off. For external evidence retain only `field → URL → fact`, with JustWatch AR first and official AR source only when needed.
 
    For a platform batch, require an evidence matrix covering every relevant AR provider and the offer type (`FLATRATE`, `RENT` or `BUY`). Never accept a provider inferred from a global page, another country, a studio, a franchise or an empty search result.

@@ -3,6 +3,7 @@ import {
 	getAbsoluteCinemaStickerUrl,
 	getCatalogFilterGenres,
 	getCatalogFilterSubgenres,
+	getCultMovieStickerUrl,
 	getMovieSubgenres,
 	getMoviePath,
 	getMoviePlatformLabel,
@@ -13,6 +14,7 @@ import {
 	getVerdictBadgeClass,
 	getVerdictLabel,
 	isAbsoluteCinemaMovie,
+	isCultMovie,
 	normalizeSearchText,
 } from '../lib/movies';
 import { getNormalizedMoviePlatforms } from '../lib/platforms';
@@ -40,6 +42,8 @@ const quickCast = movie.mainCast.slice(0, 2).join(', ');
 const moviePlatforms = getMoviePlatforms(movie);
 const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);
 const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
+const showCultMovieSticker = isCultMovie(movie);
+const cultMovieStickerUrl = getCultMovieStickerUrl();
 const quickMeta = [String(movie.year), getPrimaryGenreLabel(movie), getMoviePlatformLabel(movie)]
 	.filter(Boolean)
 	.join(' · ');
@@ -92,9 +96,22 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 			{
 				showAbsoluteCinemaSticker && (
 					<img
-						class="absolute-cinema-sticker movie-card__absolute-cinema-sticker"
+						class="absolute-cinema-sticker movie-sticker movie-card__absolute-cinema-sticker"
 						src={absoluteCinemaStickerUrl}
 						alt="Absolute Cinema"
+						loading={posterLoading}
+						decoding="async"
+						width="1254"
+						height="1254"
+					/>
+				)
+			}
+			{
+				showCultMovieSticker && (
+					<img
+						class="cult-movie-sticker movie-sticker movie-card__cult-movie-sticker"
+						src={cultMovieStickerUrl}
+						alt="De culto"
 						loading={posterLoading}
 						decoding="async"
 						width="1254"

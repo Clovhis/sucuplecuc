@@ -21,6 +21,14 @@ Create one movie entry or an explicitly requested batch. Work quietly; send one 
 - Include world wars, Vietnam and other conflicts or operations such as *Black Hawk Down* when the military conflict is the actual subject. Leave the tag out of romances, espionage or political dramas, comedies, science-fiction/superhero stories, and films where war is only the backdrop or historical setting.
 - For an existing movie revalidation, preserve an intentional omission and flag the decision in the evidence ledger when the conflict is incidental. For a new true war film, add `Bélica` to `genres`, run the auditor, and confirm that the Guerra result includes the title without pulling in context-only entries.
 
+## Editorial filter: De culto and mandatory sticker
+
+- The `De culto` facet is a curated editorial classification backed by exact slug membership in `CULT_MOVIE_SLUGS` / `isCultMovie` from `src/lib/movies.ts`; do not infer it from a broad genre, a title, or a passing cult reference.
+- Every movie included in that curated source must render the transparent `public/DeCulto.png` sticker in both movie cards and the movie detail poster. It must remain the same size as `Absolute Cinema`, stay straight, sit on the right side, and have its base 10% above the `Absolute Cinema` sticker so the two never overlap.
+- Never add `sticker`, `cultSticker`, `isCult`, an image path, or an equivalent per-movie field to JSON. Sticker rendering is derived from the shared curated source and must use the readable `De culto` alt label.
+- When a requested cult title is not in the curated source, treat it as a taxonomy/site-code gap: do not publish it as a complete cult load until the curated source is explicitly updated, then rerun the auditor and browser route checks. A non-cult title must not receive the sticker.
+- For every cult candidate, after the build verify the actual card/detail route in a browser: `/DeCulto.png` loads, `alt="De culto"` is present, the sticker is right-aligned and straight, its readable label is visible, and it does not overlap `Absolute Cinema` at desktop or mobile widths.
+
 ## Primary genre semantics
 
 - Treat `category` as the primary editorial lane. It is not automatically the first `genres` value, and it must never be selected only to make Lagrimómetro, Jajámetro, Cagazómetro or Explosiómetro appear.

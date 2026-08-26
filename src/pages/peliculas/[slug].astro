@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import {
 	getAbsoluteCinemaStickerUrl,
+	getCultMovieStickerUrl,
 	getMovieEditorialSummary,
 	getMoviePath,
 	getMovies,
@@ -15,6 +16,7 @@ import {
 	getVerdictBadgeClass,
 	getVerdictLabel,
 	isAbsoluteCinemaMovie,
+	isCultMovie,
 } from '../../lib/movies';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
@@ -55,6 +57,8 @@ const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);
 const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
+const showCultMovieSticker = isCultMovie(movie);
+const cultMovieStickerUrl = getCultMovieStickerUrl();
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
 const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
@@ -360,9 +364,20 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						))}
 						{showAbsoluteCinemaSticker && (
 							<img
-								class="absolute-cinema-sticker movie-detail__absolute-cinema-sticker"
+								class="absolute-cinema-sticker movie-sticker movie-detail__absolute-cinema-sticker"
 								src={absoluteCinemaStickerUrl}
 								alt="Absolute Cinema"
+								loading="eager"
+								decoding="async"
+								width="1254"
+								height="1254"
+							/>
+						)}
+						{showCultMovieSticker && (
+							<img
+								class="cult-movie-sticker movie-sticker movie-detail__cult-movie-sticker"
+								src={cultMovieStickerUrl}
+								alt="De culto"
 								loading="eager"
 								decoding="async"
 								width="1254"
@@ -375,9 +390,20 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						<img src={posterUrl} alt={`Poster de ${movie.title}`} referrerpolicy="no-referrer" />
 						{showAbsoluteCinemaSticker && (
 							<img
-								class="absolute-cinema-sticker movie-detail__absolute-cinema-sticker"
+								class="absolute-cinema-sticker movie-sticker movie-detail__absolute-cinema-sticker"
 								src={absoluteCinemaStickerUrl}
 								alt="Absolute Cinema"
+								loading="eager"
+								decoding="async"
+								width="1254"
+								height="1254"
+							/>
+						)}
+						{showCultMovieSticker && (
+							<img
+								class="cult-movie-sticker movie-sticker movie-detail__cult-movie-sticker"
+								src={cultMovieStickerUrl}
+								alt="De culto"
 								loading="eager"
 								decoding="async"
 								width="1254"

@@ -16,6 +16,7 @@ const VERDICT_LABELS: Record<MovieVerdict, string> = {
 };
 
 export const ABSOLUTE_CINEMA_LABEL = 'Absolute Cinema';
+export const CULT_MOVIE_LABEL = 'De culto';
 const ABSOLUTE_CINEMA_SOURCE_LABELS = new Set(['legendaria', 'obra maestra', 'clasico total']);
 
 export type RecommendationGenreId =
@@ -138,7 +139,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'oscar-mejor-pelicula', label: 'Ganadoras del Oscar' },
 	{ id: 'pelicula-nacional', label: 'Cine nacional' },
 	{ id: 'guerra', label: 'Guerra' },
-	{ id: 'culto', label: 'De culto' },
+	{ id: 'culto', label: CULT_MOVIE_LABEL },
 ];
 
 const SUBGENRE_DEFINITIONS: CanonicalSubgenreDefinition[] = [
@@ -1467,6 +1468,10 @@ const CULT_MOVIE_SLUGS = new Set([
 	'after-hours-1985',
 ]);
 
+export function isCultMovie(movie: Pick<Movie, 'slug'>): boolean {
+	return CULT_MOVIE_SLUGS.has(movie.slug);
+}
+
 function hasAnyToken(haystack: string, tokens: string[]): boolean {
 	return tokens.some((token) => haystack.includes(token));
 }
@@ -1606,7 +1611,7 @@ export function getCatalogFilterGenres(
 		genreSet.add('guerra');
 	}
 
-	if (CULT_MOVIE_SLUGS.has(movie.slug)) {
+	if (isCultMovie(movie)) {
 		genreSet.add('culto');
 	}
 
@@ -1766,6 +1771,10 @@ export function getVerdictBadgeClass(movie: Pick<Movie, 'verdict' | 'verdictLabe
 
 export function getAbsoluteCinemaStickerUrl(): string {
 	return joinWithBase('AbsoluteCinema.png');
+}
+
+export function getCultMovieStickerUrl(): string {
+	return joinWithBase('DeCulto.png');
 }
 
 export function getPosterUrl(poster: string): string {
