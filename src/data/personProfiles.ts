@@ -133,7 +133,7 @@ const catalogBackedProfileMeta: Record<string, { profileImage?: string; referenc
 		referenceUrls: ['https://www.wikidata.org/wiki/Q3840847', 'https://www.imdb.com/name/nm2143282/'],
 	},
 	'emily-blunt': {
-		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emily%20Blunt%20at%202026%20Golden%20Globes%2001%20(cropped).jpg?width=640',
+		profileImage: '/people/emily-blunt-nm1289434.jpg',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q193517', 'https://www.imdb.com/name/nm1289434/', 'https://www.themoviedb.org/person/5081-emily-blunt'],
 	},
 	'amy-adams': {
