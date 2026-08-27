@@ -53,7 +53,7 @@ Create one movie entry or an explicitly requested batch. Work quietly; send one 
   npm run audit:movie-people -- --movie <slug>
   ```
 
-- Missing birth data is a reported, verified gap when no trustworthy public source exposes it; never invent it to make the audit green. Missing identity, nationality, traceable reference or local portrait remains a hard stop for the director, the two-person minimum and every retained credit. An unresolved optional credit is omitted and reported, never waived while still published.
+- Missing birth data is a reported, verified gap when no trustworthy public source exposes it; never invent it to make the audit green. In every person card or profile surface, omit the birth/age line entirely when the data is absent; never write a generic missing-birth placeholder into that UI row or person data. Missing identity, nationality, traceable reference or local portrait remains a hard stop for the director, the two-person minimum and every retained credit. An unresolved optional credit is omitted and reported, never waived while still published.
 - If the load also creates/updates a person profile, chain `la-posta-cine-add-person-profile` and apply its two-paragraph/originality/build gates before signing off the movie.
 
 ## Batch mode contract

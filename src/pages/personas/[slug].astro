@@ -39,13 +39,14 @@ const profileImage =
 	profile.profileImage ?? profile.image ?? profile.remoteImageUrl ?? '/posters/poster-no-disponible.svg';
 const structuredData = createPersonStructuredData(profile, filmography, pageTitle, pageDescription);
 const age = getAge(profile.birthDate, profile.birthYear, profile.deathDate, profile.deathYear);
+const birthLabel = formatPersonDate(profile.birthDate) ?? profile.birthYear;
 const deathDateLabel = formatPersonDate(profile.deathDate) ?? profile.deathYear;
 const lifeFactLabel = deathDateLabel ? 'Fallecimiento' : 'Edad';
 const lifeFactValue = deathDateLabel
 	? `${deathDateLabel}${age ? ` · ${age} años` : ''}`
-	: age
+	: typeof age === 'number'
 		? `${age} años`
-		: 'No confirmada';
+		: undefined;
 const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} fichada${filmography.length === 1 ? '' : 's'} en Cine Posta`;
 const biographyParagraphs = profile.editorialBiography ?? [];
 const visibleSources = Array.from(new Set(profile.referenceUrls ?? []));
@@ -144,14 +145,18 @@ function getSourceLabel(url: string): string {
 				<p class="person-page__headline">{profile.headline}</p>
 
 				<div class="person-page__facts" aria-label="Datos principales">
-					<div class="person-page__fact">
-						<span class="person-page__fact-label">Nacimiento</span>
-						<strong>{formatPersonDate(profile.birthDate) ?? profile.birthYear ?? 'No cargado'}</strong>
-					</div>
-					<div class="person-page__fact">
-						<span class="person-page__fact-label">{lifeFactLabel}</span>
-						<strong>{lifeFactValue}</strong>
-					</div>
+					{birthLabel !== undefined && (
+						<div class="person-page__fact">
+							<span class="person-page__fact-label">Nacimiento</span>
+							<strong>{birthLabel}</strong>
+						</div>
+					)}
+					{lifeFactValue !== undefined && (
+						<div class="person-page__fact">
+							<span class="person-page__fact-label">{lifeFactLabel}</span>
+							<strong>{lifeFactValue}</strong>
+						</div>
+					)}
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">Origen</span>
 						<strong>{profile.birthPlace ?? profile.nationalityPrimary ?? 'No cargado'}</strong>

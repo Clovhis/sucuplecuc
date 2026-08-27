@@ -591,10 +591,10 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								{
 									peopleGroups.directors.length > 0 && (
 										<div class="movie-detail__people-block">
-											<p class="movie-detail__people-title">
+											<h2 class="movie-detail__people-title">
 												{peopleGroups.directors.length > 1 ? 'Dirección' : 'Director'}
-											</p>
-									<ul class="movie-detail__people-grid" role="list">
+											</h2>
+											<ul class="movie-detail__people-grid" role="list">
 												{peopleGroups.directors.map((person) => (
 													<li>
 														<article
@@ -634,8 +634,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																)
 															}
 															<div class="movie-detail__person-copy">
-																<p class="movie-detail__person-role">Dirección</p>
-																<p class="movie-detail__person-name">
+																<h3 class="movie-detail__person-name">
 																	{
 																		person.profilePath ? (
 																			<a
@@ -648,7 +647,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																			person.creditedName
 																		)
 																	}
-																</p>
+																</h3>
 																{
 																	person.profilePath && (
 																		<p class="movie-detail__person-badge-row">
@@ -656,33 +655,35 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																		</p>
 																	)
 																}
-																<p class="movie-detail__person-meta">
-																	{getBirthSummary(person) ? (
-																		<>
-																			<span>{getBirthSummary(person)}</span>
-																			{person.deathDate || person.deathYear ? (
-																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																			) : shouldHideLivingAge(person) ? (
-																				<span>Edad no confirmada</span>
-																			) : (
-																				<span
-																					class="movie-detail__person-age"
-																					data-birth-date={person.birthDate}
-																					data-birth-year={person.birthYear}
-																				>
-																					{getPersonAge(person)} años
-																				</span>
-																			)}
-																		</>
-																	) : person.deathDate || person.deathYear ? (
-																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																	) : (
-																		<span>Nacimiento no cargado</span>
-																	)}
-																</p>
 																<p class="movie-detail__person-origin">
 																	{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
 																</p>
+																{
+																	(getBirthSummary(person) || getDeathSummary(person)) && (
+																		<p class="movie-detail__person-meta">
+																			{getBirthSummary(person) ? (
+																				<>
+																					<span>{getBirthSummary(person)}</span>
+																					{person.deathDate || person.deathYear ? (
+																						<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																					) : shouldHideLivingAge(person) ? (
+																						<span>Edad no confirmada</span>
+																					) : (
+																						<span
+																							class="movie-detail__person-age"
+																							data-birth-date={person.birthDate}
+																							data-birth-year={person.birthYear}
+																						>
+																							{getPersonAge(person)} años
+																						</span>
+																					)}
+																				</>
+																			) : (
+																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																			)}
+																		</p>
+																	)
+																}
 															</div>
 														</article>
 													</li>
@@ -694,8 +695,8 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								{
 									peopleGroups.cast.length > 0 && (
 										<div class="movie-detail__people-block">
-											<p class="movie-detail__people-title">{castSectionTitle}</p>
-									<ul class="movie-detail__people-grid" role="list">
+											<h2 class="movie-detail__people-title">{castSectionTitle}</h2>
+											<ul class="movie-detail__people-grid" role="list">
 												{peopleGroups.cast.map((person) => (
 													<li>
 														<article
@@ -735,14 +736,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																)
 															}
 															<div class="movie-detail__person-copy">
-																{
-																	person.profilePath && (
-																		<p class="movie-detail__person-badge-row">
-																			<span class="movie-detail__person-flag">Tiene ficha</span>
-																		</p>
-																	)
-																}
-																<p class="movie-detail__person-name">
+																<h3 class="movie-detail__person-name">
 																	{
 																		person.profilePath ? (
 																			<a
@@ -755,34 +749,43 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																			person.creditedName
 																		)
 																	}
-																</p>
-																<p class="movie-detail__person-meta">
-																	{getBirthSummary(person) ? (
-																		<>
-																			<span>{getBirthSummary(person)}</span>
-																			{person.deathDate || person.deathYear ? (
-																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																			) : shouldHideLivingAge(person) ? (
-																				<span>Edad no confirmada</span>
-																			) : (
-																				<span
-																					class="movie-detail__person-age"
-																					data-birth-date={person.birthDate}
-																					data-birth-year={person.birthYear}
-																				>
-																					{getPersonAge(person)} años
-																				</span>
-																			)}
-																		</>
-																	) : person.deathDate || person.deathYear ? (
-																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																	) : (
-																		<span>Nacimiento no cargado</span>
-																	)}
-																</p>
+																</h3>
+																{
+																	person.profilePath && (
+																		<p class="movie-detail__person-badge-row">
+																			<span class="movie-detail__person-flag">Tiene ficha</span>
+																		</p>
+																	)
+																}
 																<p class="movie-detail__person-origin">
 																	{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
 																</p>
+																{
+																	(getBirthSummary(person) || getDeathSummary(person)) && (
+																		<p class="movie-detail__person-meta">
+																			{getBirthSummary(person) ? (
+																				<>
+																					<span>{getBirthSummary(person)}</span>
+																					{person.deathDate || person.deathYear ? (
+																						<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																					) : shouldHideLivingAge(person) ? (
+																						<span>Edad no confirmada</span>
+																					) : (
+																						<span
+																							class="movie-detail__person-age"
+																							data-birth-date={person.birthDate}
+																							data-birth-year={person.birthYear}
+																						>
+																							{getPersonAge(person)} años
+																						</span>
+																					)}
+																				</>
+																			) : (
+																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																			)}
+																		</p>
+																	)
+																}
 															</div>
 														</article>
 													</li>

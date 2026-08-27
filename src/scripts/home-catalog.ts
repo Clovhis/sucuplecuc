@@ -36,7 +36,7 @@ type PersonIndexEntry = {
 	url: string;
 	posterUrl: string;
 	meta: string;
-	ageLabel: string;
+	ageLabel?: string;
 	nationalityLabel: string;
 	cast: string;
 	entryType: 'person';
@@ -370,15 +370,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			title.className = 'home-people-showcase__name';
 			title.textContent = entry.title;
 
-			const meta = document.createElement('span');
-			meta.className = 'home-people-showcase__meta';
-			meta.textContent = entry.ageLabel || 'Edad no disponible';
-
 			const nationality = document.createElement('span');
 			nationality.className = 'home-people-showcase__nationality';
 			nationality.textContent = entry.nationalityLabel || 'Nacionalidad no disponible';
 
-			body.append(title, meta, nationality);
+			body.append(title, nationality);
+			if (entry.ageLabel) {
+				const meta = document.createElement('span');
+				meta.className = 'home-people-showcase__meta';
+				meta.textContent = entry.ageLabel;
+				body.append(meta);
+			}
 
 			card.append(portrait, body);
 			card.addEventListener('click', (event) => {

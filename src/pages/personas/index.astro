@@ -307,10 +307,12 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 									}
 								</div>
 								<dl class="people-index__facts">
-									<div class="people-index__fact">
-										<dt>Edad</dt>
-										<dd>{entry.ageLabel}</dd>
-									</div>
+									{entry.ageLabel && (
+										<div class="people-index__fact">
+											<dt>Edad</dt>
+											<dd>{entry.ageLabel}</dd>
+										</div>
+									)}
 									<div class="people-index__fact">
 										<dt>Catálogo</dt>
 										<dd>

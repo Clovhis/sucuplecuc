@@ -106,9 +106,9 @@ export function getPersonAge(
 
 export function getPersonAgeLabel(
 	profile: Pick<PersonProfile, 'birthDate' | 'birthYear' | 'deathDate' | 'deathYear'>,
-): string {
+): string | undefined {
 	const age = getPersonAge(profile);
-	return typeof age === 'number' ? `${age} años` : 'Edad no disponible';
+	return typeof age === 'number' ? `${age} años` : undefined;
 }
 
 export function normalizePersonName(value: string): string {

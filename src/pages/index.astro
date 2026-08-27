@@ -251,7 +251,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 											data-person-url={person.url}
 											data-person-poster-url={person.posterUrl}
 											data-person-meta={person.meta}
-											data-person-age={person.ageLabel}
+											data-person-age={person.ageLabel ?? ''}
 											data-person-nationality={person.nationalityLabel}
 											data-person-known-for={person.knownFor}
 										>
