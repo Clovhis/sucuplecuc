@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-27. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-08-28. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1893
+Total de peliculas: 1905
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -20,6 +20,7 @@ Total de peliculas: 1893
 | 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Otras plataformas | ATP |
 | 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus | ATP |
 | 2026 | Backrooms | backrooms-2026 | Terror | Apple TV | +13 |
+| 2026 | Barreda | barreda-2026 | Drama | Prime Video | +18 |
 | 2026 | Batman: Knightfall - Part 1: Knightfall | batman-knightfall-part-1-knightfall-2026 | Animacion | Apple TV | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
@@ -63,6 +64,7 @@ Total de peliculas: 1893
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Evil Dead: En llamas | evil-dead-en-llamas-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
+| 2026 | Gintama, la película: Yoshiwara en llamas | gintama-la-pelicula-yoshiwara-en-llamas-2026 | Anime | Netflix | ATP |
 | 2026 | GOAT | goat-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Golden Kamuy: Asalto a la prisión de Abashiri | golden-kamuy-the-abashiri-prison-raid-2026 | Accion | Netflix | +16 |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Otras plataformas | +13 |
@@ -93,6 +95,7 @@ Total de peliculas: 1893
 | 2026 | La princesa Kaguya del cosmos | la-princesa-kaguya-del-cosmos-2026 | Anime | Netflix | +13 |
 | 2026 | La tierra explota | la-tierra-explota-2026 | Documental | Otras plataformas | ATP |
 | 2026 | La última casa | la-ultima-casa-2026 | Terror | Netflix | +16 |
+| 2026 | La última escena | la-ultima-escena-2026 | Romance | Disney Plus | +16 |
 | 2026 | La voluntad de Dios | la-voluntad-de-dios-2026 | Drama | Prime Video | +17 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
@@ -155,6 +158,7 @@ Total de peliculas: 1893
 | 2026 | Susana y Elvira: Sin plan B | susana-y-elvira-sin-plan-b-2026 | Comedia romántica | Netflix | +16 |
 | 2026 | Susurran tu nombre | susurran-tu-nombre-2026 | Thriller | Netflix | +16 |
 | 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
+| 2026 | Te Extraño, Te Amo | te-extrano-te-amo-2026 | Drama | HBO Max | +13 |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | HBO Max | +16 |
 | 2026 | Tetracampeones: Brasil volvió a creer | tetracampeones-brasil-volvio-a-creer-2026 | Documental | Netflix | +13 |
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Otras plataformas | +12 |
@@ -171,6 +175,7 @@ Total de peliculas: 1893
 | 2026 | Tu corazón será destrozado | tu-corazon-sera-destrozado-2026 | Romance | Otras plataformas | +17 |
 | 2026 | Un comeback salvaje | un-comeback-salvaje-2026 | Comedia | Netflix | +13 |
 | 2026 | Un hijo propio | un-hijo-propio-2026 | Documental | Netflix | +16 |
+| 2026 | Una mujer sin pasado (The Secret Woman) | una-mujer-sin-pasado-2026 | Drama | Netflix | +13 |
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
@@ -232,6 +237,7 @@ Total de peliculas: 1893
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Otras plataformas | +12 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
+| 2025 | Llámame madre | llamame-madre-2025 | Comedia | Netflix | +13 |
 | 2025 | Los aitas | los-aitas-2025 | Comedia | Apple TV | ATP |
 | 2025 | Los domingos | los-domingos-2025 | Drama | Otras plataformas | +12 |
 | 2025 | Los ilusionistas 3 | los-ilusionistas-3-2025 | Accion | Otras plataformas | ATP |
@@ -275,6 +281,7 @@ Total de peliculas: 1893
 | 2025 | Thunderbolts* | thunderbolts-2025 | Accion | Disney Plus | +13 |
 | 2025 | Together: Juntos Hasta La Muerte | together-juntos-hasta-la-muerte-2025 | Terror | Prime Video | +16 |
 | 2025 | Tron: Ares | tron-ares-2025 | Ciencia ficcion | Disney Plus | ATP |
+| 2025 | Turbulencias | turbulencias-2025 | Thriller | Prime Video | +16 |
 | 2025 | UnMarry | unmarry-2025 | Drama | Netflix | +13 |
 | 2025 | Until Dawn | until-dawn-2025 | Terror | HBO Max | +17 |
 | 2025 | Valor sentimental | valor-sentimental-2025 | Drama | Otras plataformas | +13 |
@@ -496,6 +503,7 @@ Total de peliculas: 1893
 | 2021 | Eternals | eternals-2021 | Acción | Disney Plus | +13 |
 | 2021 | F9: The Fast Saga | f9-the-fast-saga-2021 | Acción | Otras plataformas | +13 |
 | 2021 | Free Guy | free-guy-2021 | Acción | Disney Plus | +13 |
+| 2021 | Frente al tornado | frente-al-tornado-2021 | Accion | Netflix | +13 |
 | 2021 | Fue la mano de Dios | fue-la-mano-de-dios-2021 | Drama | Netflix | +16 |
 | 2021 | Godzilla vs. Kong | godzilla-vs-kong-2021 | Acción | Netflix + DGO | +13 |
 | 2021 | Halloween Kills: La noche aún no termina | halloween-kills-2021 | Terror | Otras plataformas | +16 |
@@ -716,6 +724,7 @@ Total de peliculas: 1893
 | 2015 | Caballero de copas | caballero-de-copas-2015 | Drama | Otras plataformas | +13 |
 | 2015 | Carol | carol-2015 | Drama | Prime Video | +16 |
 | 2015 | Creed | creed-2015 | Drama | Otras plataformas | +13 |
+| 2015 | Demonic | demonic-2015 | Terror | Prime Video + Paramount Plus | +13 |
 | 2015 | El becario | el-becario-2015 | Comedia | HBO Max + Apple TV | ATP |
 | 2015 | El clan | el-clan-2015 | Crimen | Disney Plus | +16 |
 | 2015 | El francotirador | el-francotirador-2015 | Accion | HBO Max | +16 |
@@ -771,6 +780,7 @@ Total de peliculas: 1893
 | 2014 | Interstellar | interstellar-2014 | Ciencia ficcion | Prime Video | +13 |
 | 2014 | John Wick | john-wick-2014 | Accion | Otras plataformas | +18 |
 | 2014 | La canción del mar | la-cancion-del-mar-2014 | Animacion | Apple TV | ATP |
+| 2014 | Los maratones Barkley: La carrera que devora a sus crías | the-barkley-marathons-the-race-that-eats-its-young-2014 | Documental | Prime Video + Apple TV | ATP |
 | 2014 | Luna de miel en familia | blended-2014 | Comedia | Apple TV + HBO Max | +13 |
 | 2014 | Magia a la luz de la luna | magic-in-the-moonlight-2014 | Romance | Otras plataformas | +13 |
 | 2014 | Noé | noe-2014 | Drama | Netflix | +13 |
@@ -863,6 +873,7 @@ Total de peliculas: 1893
 | 2011 | Destino final 5 | destino-final-5-2011 | Terror | HBO Max | +16 |
 | 2011 | Drive | drive-2011 | Accion | Paramount Plus + Prime Video | +13 |
 | 2011 | El castor | el-castor-2011 | Drama | Otras plataformas | +13 |
+| 2011 | El gato con botas | el-gato-con-botas-2011 | Animacion | Netflix + Disney Plus | ATP |
 | 2011 | El juego de la fortuna | el-juego-de-la-fortuna-2011 | Drama | Apple TV | ATP |
 | 2011 | Fast Five | fast-five-2011 | Accion | Otras plataformas | +13 |
 | 2011 | George Harrison: Living in the Material World | george-harrison-living-in-the-material-world-2011 | Documental | Otras plataformas | ATP |
@@ -1049,6 +1060,7 @@ Total de peliculas: 1893
 | 2007 | Saw IV | saw-iv-2007 | Gore | Otras plataformas | +18 |
 | 2007 | Seduciendo a un extraño | seduciendo-a-un-extrano-2007 | Thriller | Prime Video | +16 |
 | 2007 | Shooter: El tirador | shooter-el-tirador-2007 | Accion | Netflix + Prime Video | +17 |
+| 2007 | Shrek tercero | shrek-tercero-2007 | Animacion | Netflix + Prime Video | ATP |
 | 2007 | Sin lugar para los débiles | no-country-for-old-men-2007 | Crimen | Netflix + Apple TV | +13 |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
 | 2007 | Sunshine | sunshine-2007 | Ciencia ficcion | Disney Plus | +13 |

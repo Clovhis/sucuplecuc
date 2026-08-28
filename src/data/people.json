@@ -2637,6 +2637,23 @@
 		"source": "tmdb-cache",
 		"nationalityPrimary": "Nacionalidad no informada"
 	},
+	"Ali Bilgin": {
+		"name": "Ali Bilgin",
+		"birthDate": "1981-01-11",
+		"birthYear": 1981,
+		"nationalityPrimary": "Turquía",
+		"image": "/people/ali-bilgin-nm5514626.jpg",
+		"imdbId": "nm5514626",
+		"imdbUrl": "https://www.imdb.com/name/nm5514626/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/hh3OKZWqgfBXP3i9bEEIiE0dO01.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q17045476",
+			"https://www.imdb.com/name/nm5514626/",
+			"https://www.themoviedb.org/person/1618322-ali-bilgin"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Ali Larter": {
 		"name": "Ali Larter",
 		"birthDate": "1976-02-28",
@@ -3023,7 +3040,7 @@
 			"https://www.imdb.com/name/nm0005049/",
 			"https://www.themoviedb.org/person/19-allison-janney"
 		],
-		"lastVerifiedAt": "2026-08-27",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Allison Strong": {
@@ -4223,6 +4240,23 @@
 		"lastVerifiedAt": "2026-08-12",
 		"source": "wikidata-imdb-cache"
 	},
+	"Andrew Rannells": {
+		"name": "Andrew Rannells",
+		"birthDate": "1978-08-23",
+		"birthYear": 1978,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/andrew-rannells-nm0710330.jpg",
+		"imdbId": "nm0710330",
+		"imdbUrl": "https://www.imdb.com/name/nm0710330/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/AndrewRannells-byPhilipRomano.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q560516",
+			"https://www.imdb.com/name/nm0710330/",
+			"https://www.themoviedb.org/person/990369-andrew-rannells"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Andrew Ridgeley": {
 		"name": "Andrew Ridgeley",
 		"birthDate": "1963-01-26",
@@ -5053,7 +5087,7 @@
 			"https://www.imdb.com/name/nm0000162/",
 			"https://www.themoviedb.org/person/8256-anne-heche"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Anne Marit Jacobsen": {
@@ -5125,6 +5159,22 @@
 		"lastVerifiedAt": "2026-08-11",
 		"image": "/people/annie-girardot-plex.jpg",
 		"source": "plex-cache"
+	},
+	"Annika Iltis": {
+		"name": "Annika Iltis",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/annika-iltis-nm1710153.jpg",
+		"imdbId": "nm1710153",
+		"imdbUrl": "https://www.imdb.com/name/nm1710153/",
+		"remoteImageUrl": "https://images.squarespace-cdn.com/content/v1/5d3b808d91442c0001e680ae/1564426363609-P6PFOSVXZQNISJ9VGPHO/annika_set.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q115183266",
+			"https://www.imdb.com/name/nm1710153/",
+			"https://www.annikailtis.com/about",
+			"https://barkleymovie.com/about"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Annika Wedderkopp": {
 		"name": "Annika Wedderkopp",
@@ -5628,20 +5678,20 @@
 	},
 	"Antonio Banderas": {
 		"name": "Antonio Banderas",
+		"birthDate": "1960-08-10",
 		"birthYear": 1960,
 		"nationalityPrimary": "Español",
 		"image": "/people/antonio-banderas-nm0000104.jpg",
 		"imdbId": "nm0000104",
 		"imdbUrl": "https://www.imdb.com/name/nm0000104/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Banderas%202020.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Banderas%202020.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q41548",
 			"https://www.imdb.com/name/nm0000104/",
 			"https://www.themoviedb.org/person/3131-antonio-banderas"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1960-08-10"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
 	},
 	"Antonio Calloni": {
 		"name": "Antonio Calloni",
@@ -7014,6 +7064,23 @@
 		],
 		"lastVerifiedAt": "2026-08-15",
 		"source": "wikidata-imdb-cache"
+	},
+	"Barbara Topsøe-Rothenborg": {
+		"name": "Barbara Topsøe-Rothenborg",
+		"birthDate": "1979-08-29",
+		"birthYear": 1979,
+		"nationalityPrimary": "Reino de Dinamarca",
+		"image": "/people/barbara-tops-e-rothenborg-nm0867784.jpg",
+		"imdbId": "nm0867784",
+		"imdbUrl": "https://www.imdb.com/name/nm0867784/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/9cdWDHNRylYtfNb5OFH6iGDIoDX.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q12302875",
+			"https://www.imdb.com/name/nm0867784/",
+			"https://www.themoviedb.org/person/127723-barbara-topsoe-rothenborg"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Barbara West": {
 		"name": "Barbara West",
@@ -9098,7 +9165,7 @@
 			"https://www.imdb.com/name/nm0001372/",
 			"https://www.themoviedb.org/person/5149-bonnie-hunt"
 		],
-		"lastVerifiedAt": "2026-07-08",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Boots Riley": {
@@ -10851,7 +10918,7 @@
 			"https://www.imdb.com/name/nm0000139/",
 			"https://www.themoviedb.org/person/6941-cameron-diaz"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Camila Mendes": {
@@ -11147,6 +11214,23 @@
 			"https://www.themoviedb.org/person/1571950-carla-gutierrez"
 		],
 		"lastVerifiedAt": "2026-04-06",
+		"source": "wikidata-imdb-cache"
+	},
+	"Carla Peterson": {
+		"name": "Carla Peterson",
+		"birthDate": "1974-04-06",
+		"birthYear": 1974,
+		"nationalityPrimary": "Argentina",
+		"image": "/people/carla-peterson-nm0677056.jpg",
+		"imdbId": "nm0677056",
+		"imdbUrl": "https://www.imdb.com/name/nm0677056/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carla%20Peterson%202014.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q858561",
+			"https://www.imdb.com/name/nm0677056/",
+			"https://www.themoviedb.org/person/562364-carla-peterson"
+		],
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Carlos Areces": {
@@ -13541,6 +13625,23 @@
 		"lastVerifiedAt": "2026-08-06",
 		"source": "wikidata-imdb-cache"
 	},
+	"Chris Miller": {
+		"name": "Chris Miller",
+		"birthDate": "1968-01-20",
+		"birthYear": 1968,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/chris-miller-nm1844237.jpg",
+		"imdbId": "nm1844237",
+		"imdbUrl": "https://www.imdb.com/name/nm1844237/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chris%20Miller%202011%20Puss%20in%20Boots%20Australia.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q283700",
+			"https://www.imdb.com/name/nm1844237/",
+			"https://www.themoviedb.org/person/12098-chris-miller"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Chris O'Donnell": {
 		"name": "Chris O'Donnell",
 		"birthYear": 1970,
@@ -14424,7 +14525,7 @@
 		"name": "Claes Bang",
 		"birthDate": "1967-04-28",
 		"birthYear": 1967,
-		"nationalityPrimary": "Danés",
+		"nationalityPrimary": "Reino de Dinamarca",
 		"image": "/people/claes-bang-nm0051903.jpg",
 		"imdbId": "nm0051903",
 		"imdbUrl": "https://www.imdb.com/name/nm0051903/",
@@ -14434,7 +14535,7 @@
 			"https://www.imdb.com/name/nm0051903/",
 			"https://www.themoviedb.org/person/150802-claes-bang"
 		],
-		"lastVerifiedAt": "2026-04-28",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Claire Bloom": {
@@ -14748,6 +14849,23 @@
 		],
 		"lastVerifiedAt": "2026-07-31",
 		"source": "wikidata-imdb-cache"
+	},
+	"Claudio Fäh": {
+		"name": "Claudio Fäh",
+		"birthDate": "1975-03-29",
+		"birthYear": 1975,
+		"nationalityPrimary": "Suizo",
+		"image": "/people/claudio-fah-nm0299603.jpg",
+		"imdbId": "nm0299603",
+		"imdbUrl": "https://www.imdb.com/name/nm0299603/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/wWfVF4n6P9o4MRytVlKAE1qOaiz.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q5129366",
+			"https://www.imdb.com/name/nm0299603/",
+			"https://www.themoviedb.org/person/56533-claudio-fah"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Claudio Fragasso": {
 		"name": "Claudio Fragasso",
@@ -15986,6 +16104,22 @@
 		"source": "wikidata-imdb-plex-cache",
 		"birthDate": "1989-09-07"
 	},
+	"Daisuke Sakaguchi": {
+		"name": "Daisuke Sakaguchi",
+		"birthDate": "1973-10-11",
+		"birthYear": 1973,
+		"nationalityPrimary": "Japonés",
+		"image": "/people/daisuke-sakaguchi-nm1160233.jpg",
+		"imdbId": "nm1160233",
+		"imdbUrl": "https://www.imdb.com/name/nm1160233/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FanimeCon%202016%20(Daisuke%20Sakaguchi).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q1155626",
+			"https://www.imdb.com/name/nm1160233/"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Daisy Edgar-Jones": {
 		"name": "Daisy Edgar-Jones",
 		"birthYear": 1998,
@@ -16981,6 +17115,23 @@
 		],
 		"lastVerifiedAt": "2026-08-13",
 		"source": "wikidata-imdb-cache"
+	},
+	"Daniela Goggi": {
+		"name": "Daniela Goggi",
+		"birthDate": "1953-07-21",
+		"birthYear": 1953,
+		"nationalityPrimary": "Italiana",
+		"image": "/people/daniela-goggi-nm1361712.jpg",
+		"imdbId": "nm1361712",
+		"imdbUrl": "https://www.imdb.com/name/nm1361712/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/5X1a95b0wgQjHvoXCOVbhVMpJR7.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q3701801",
+			"https://www.imdb.com/name/nm1361712/",
+			"https://www.themoviedb.org/person/3729192-daniela-goggi"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Danielle Bisutti": {
 		"name": "Danielle Bisutti",
@@ -20710,6 +20861,23 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Dustin Milligan": {
+		"name": "Dustin Milligan",
+		"birthDate": "1985-07-28",
+		"birthYear": 1985,
+		"nationalityPrimary": "Canadiense",
+		"image": "/people/dustin-milligan-nm1682420.jpg",
+		"imdbId": "nm1682420",
+		"imdbUrl": "https://www.imdb.com/name/nm1682420/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dustin%20Milligan%20at%20home.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q286745",
+			"https://www.imdb.com/name/nm1682420/",
+			"https://www.themoviedb.org/person/53117-dustin-milligan"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Dwayne Johnson": {
 		"name": "Dwayne Johnson",
 		"birthDate": "1972-05-02",
@@ -21028,20 +21196,20 @@
 	},
 	"Eddie Murphy": {
 		"name": "Eddie Murphy",
+		"birthDate": "1961-04-03",
 		"birthYear": 1961,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/eddie-murphy-nm0000552.jpg",
 		"imdbId": "nm0000552",
 		"imdbUrl": "https://www.imdb.com/name/nm0000552/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddie%20Murphy%20by%20David%20Shankbone.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddie%20Murphy%20by%20David%20Shankbone.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q43874",
 			"https://www.imdb.com/name/nm0000552/",
 			"https://www.themoviedb.org/person/776-eddie-murphy"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1961-04-03"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
 	},
 	"Eddie Redmayne": {
 		"name": "Eddie Redmayne",
@@ -25413,7 +25581,7 @@
 			"https://www.imdb.com/name/nm0342029/",
 			"https://www.themoviedb.org/person/81685-frank-grillo"
 		],
-		"lastVerifiedAt": "2026-08-22",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Frank Henenlotter": {
@@ -30609,6 +30777,23 @@
 		"image": "/people/hidetoshi-nishijima-plex.jpg",
 		"source": "plex-cache"
 	},
+	"Hilal Altınbilek": {
+		"name": "Hilal Altınbilek",
+		"birthDate": "1991-02-11",
+		"birthYear": 1991,
+		"nationalityPrimary": "Turquía",
+		"image": "/people/hilal-alt-nbilek-nm4337355.jpg",
+		"imdbId": "nm4337355",
+		"imdbUrl": "https://www.imdb.com/name/nm4337355/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/hRR5QT5OP5ivyJdLyeOpyVRbfgs.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q65219989",
+			"https://www.imdb.com/name/nm4337355/",
+			"https://www.themoviedb.org/person/1672907-hilal-altinbilek"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Hilary Swank": {
 		"name": "Hilary Swank",
 		"birthYear": 1974,
@@ -34176,6 +34361,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1974-06-12"
 	},
+	"Jared Campbell": {
+		"name": "Jared Campbell",
+		"birthDate": "1989-08-30",
+		"birthYear": 1989,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/jared-campbell-nm5965765.png",
+		"imdbId": "nm5965765",
+		"imdbUrl": "https://www.imdb.com/name/nm5965765/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jared%20Quay%20at%20NewFronts.png?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q41187603",
+			"https://www.imdb.com/name/nm5965765/",
+			"https://www.themoviedb.org/person/4202683-jared-campbell"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Jared Hess": {
 		"name": "Jared Hess",
 		"birthDate": "1979-07-18",
@@ -36015,20 +36217,20 @@
 	},
 	"Jeremy Irvine": {
 		"name": "Jeremy Irvine",
+		"birthDate": "1990-06-18",
 		"birthYear": 1990,
 		"nationalityPrimary": "Británico",
 		"image": "/people/jeremy-irvine-nm3528539.jpg",
 		"imdbId": "nm3528539",
 		"imdbUrl": "https://www.imdb.com/name/nm3528539/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Irvine%202011.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Irvine%202011.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q542571",
 			"https://www.imdb.com/name/nm3528539/",
 			"https://www.themoviedb.org/person/225692-jeremy-irvine"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1990-06-18"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
 	},
 	"Jeremy McWilliams": {
 		"name": "Jeremy McWilliams",
@@ -36801,6 +37003,23 @@
 			"https://www.themoviedb.org/person/4429-jim-jarmusch"
 		],
 		"lastVerifiedAt": "2026-08-26",
+		"source": "wikidata-imdb-cache"
+	},
+	"Jim Rash": {
+		"name": "Jim Rash",
+		"birthDate": "1971-07-15",
+		"birthYear": 1971,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/jim-rash-nm0711110.jpg",
+		"imdbId": "nm0711110",
+		"imdbUrl": "https://www.imdb.com/name/nm0711110/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim%20Rash%202011.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q591785",
+			"https://www.imdb.com/name/nm0711110/",
+			"https://www.themoviedb.org/person/161932-jim-rash"
+		],
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Jim Sharman": {
@@ -42020,6 +42239,23 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Jun Robles Lana": {
+		"name": "Jun Lana",
+		"birthDate": "1972-10-10",
+		"birthYear": 1972,
+		"nationalityPrimary": "Filipino",
+		"image": "/people/jun-robles-lana-nm0484073.png",
+		"imdbId": "nm0484073",
+		"imdbUrl": "https://www.imdb.com/name/nm0484073/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jun%20Lana%20in%202023%20MMFF.png?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q2870425",
+			"https://www.imdb.com/name/nm0484073/",
+			"https://www.themoviedb.org/person/591994-jun-robles-lana"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Jun Shison": {
 		"name": "Jun Shison",
 		"birthYear": 1995,
@@ -43962,7 +44198,7 @@
 			"https://www.imdb.com/name/nm0001288/",
 			"https://www.themoviedb.org/person/7090-kelsey-grammer"
 		],
-		"lastVerifiedAt": "2026-07-08",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Kelsey Mann": {
@@ -46411,6 +46647,18 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Lazarus Lake": {
+		"name": "Lazarus Lake",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/lazarus-lake.jpg",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lighting%20the%20cigarette%20to%20start%20Barkley.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q91603313",
+			"https://www.themoviedb.org/person/4139056-lazarus-lake"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Léa Seydoux": {
 		"name": "Léa Seydoux",
 		"birthYear": 1985,
@@ -47744,6 +47992,21 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-tmdb-cache"
 	},
+	"Lindsay Gossling": {
+		"name": "Lindsay Gossling",
+		"nationalityPrimary": "Canadiense",
+		"image": "/people/lindsay-gossling-nm1761263.jpg",
+		"imdbId": "nm1761263",
+		"imdbUrl": "https://www.imdb.com/name/nm1761263/",
+		"remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Ff%2Fpeople%2Ff058664ab4b90803d419b442e80554ae.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q117862246",
+			"https://www.imdb.com/name/nm1761263/",
+			"https://watch.plex.tv/person/lindsay-gossling"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-plex-cache"
+	},
 	"Lindsay Lohan": {
 		"name": "Lindsay Lohan",
 		"birthYear": 1986,
@@ -48967,6 +49230,7 @@
 	},
 	"Luis Machín": {
 		"name": "Luis Machin",
+		"birthDate": "1968-04-10",
 		"birthYear": 1968,
 		"nationalityPrimary": "Argentino",
 		"image": "/people/luis-machin-nm0532721.jpg",
@@ -48978,9 +49242,8 @@
 			"https://www.imdb.com/name/nm0532721/",
 			"https://www.themoviedb.org/person/225408-luis-machin"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-tmdb-cache",
-		"birthDate": "1968-04-10"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Luis Mandoki": {
 		"name": "Luis Mandoki",
@@ -50953,7 +51216,7 @@
 			"https://www.imdb.com/name/nm0004742/",
 			"https://www.themoviedb.org/person/49-maria-bello"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"María Cecilia Botero": {
@@ -54183,20 +54446,20 @@
 	},
 	"Mercedes Morán": {
 		"name": "Mercedes Moran",
+		"birthDate": "1955-09-21",
 		"birthYear": 1955,
 		"nationalityPrimary": "Argentina",
 		"image": "/people/mercedes-moran-nm0608187.jpg",
 		"imdbId": "nm0608187",
 		"imdbUrl": "https://www.imdb.com/name/nm0608187/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malaga%20Film%20Festival%202025%20-%20Mercedes%20Mor%C3%A1n%2003%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malaga%20Film%20Festival%202025%20-%20Mercedes%20Mor%C3%A1n%2003%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q3306307",
 			"https://www.imdb.com/name/nm0608187/",
 			"https://www.themoviedb.org/person/18499-mercedes-moran"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1955-09-21"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
 	},
 	"Merritt Wever": {
 		"name": "Merritt Wever",
@@ -55924,15 +56187,21 @@
 	},
 	"Mike Myers": {
 		"name": "Mike Myers",
-		"nationalityPrimary": "Británico",
-		"image": "/people/mike-myers.jpg",
-		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/gjfDl52Kk02MPgUYFjs9bOy33OY.jpg",
+		"birthDate": "1963-05-25",
+		"birthYear": 1963,
+		"nationalityPrimary": "Canadiense",
+		"image": "/people/mike-myers-nm0000196.jpg",
+		"imdbId": "nm0000196",
+		"imdbUrl": "https://www.imdb.com/name/nm0000196/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mike%20Myers%202017%20(37220071326)%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q113901426",
-			"https://www.themoviedb.org/person/12073-mike-myers"
+			"https://www.themoviedb.org/person/12073-mike-myers",
+			"https://www.wikidata.org/wiki/Q185724",
+			"https://www.imdb.com/name/nm0000196/"
 		],
-		"lastVerifiedAt": "2026-03-15",
-		"source": "wikidata-imdb-tmdb-cache"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
 	},
 	"Mike Newell": {
 		"name": "Mike Newell",
@@ -57233,6 +57502,23 @@
 		"lastVerifiedAt": "2026-07-09",
 		"source": "wikidata-imdb-cache"
 	},
+	"Nadine Lustre": {
+		"name": "Nadine Lustre",
+		"birthDate": "1993-10-31",
+		"birthYear": 1993,
+		"nationalityPrimary": "Filipina",
+		"image": "/people/nadine-lustre-nm4122772.jpg",
+		"imdbId": "nm4122772",
+		"imdbUrl": "https://www.imdb.com/name/nm4122772/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/20240315%20Nadine%20Lustre%20at%20BVLGARI%2005.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q6957803",
+			"https://www.imdb.com/name/nm4122772/",
+			"https://www.themoviedb.org/person/1319222-nadine-lustre"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Nagore Aranburu": {
 		"name": "Nagore Aranburu",
 		"birthDate": "1976",
@@ -57503,6 +57789,20 @@
 		"lastVerifiedAt": "2026-08-26",
 		"source": "wikidata-imdb-cache"
 	},
+	"Naoya Ando": {
+		"name": "Naoya Ando",
+		"nationalityPrimary": "Japonés",
+		"image": "/people/naoya-ando.jpg",
+		"remoteImageUrl": "https://img2.animatetimes.com/2026/02/619be520fdbedcef5b81766d577e72ba698ed0e4efda25_05302430_b9849dd6aefbb136bb9d69066f1eabe16e761af5.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q102211945",
+			"https://www.anime-gintama.com/movie2026/caststaff/",
+			"https://ananweb.jp/categories/entertainment/83591",
+			"https://www.animatetimes.com/news/details.php?id=1770967227"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Naoyuki Ito": {
 		"name": "Naoyuki Itō",
 		"nationalityPrimary": "Japonés",
@@ -57650,6 +57950,23 @@
 		],
 		"lastVerifiedAt": "2026-04-20",
 		"source": "manual-imdb-actorsaccess-plex"
+	},
+	"Natalie Madueño": {
+		"name": "Natalie Madueño",
+		"birthDate": "1987-11-07",
+		"birthYear": 1987,
+		"nationalityPrimary": "Reino de Dinamarca",
+		"image": "/people/natalie-madueno-nm2550903.jpg",
+		"imdbId": "nm2550903",
+		"imdbUrl": "https://www.imdb.com/name/nm2550903/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/gdl4TUomjJiWBiHz6DbWeXGubQZ.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q28759508",
+			"https://www.imdb.com/name/nm2550903/",
+			"https://www.themoviedb.org/person/1437417-natalie-madueno"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Natalie Martinez": {
 		"name": "Natalie Martinez",
@@ -59543,19 +59860,19 @@
 	},
 	"Olga Kurylenko": {
 		"name": "Olga Kurylenko",
+		"birthDate": "1979-11-14",
 		"birthYear": 1979,
 		"nationalityPrimary": "Soviética",
 		"image": "/people/olga-kurylenko-nm1385871.jpg",
 		"imdbId": "nm1385871",
 		"imdbUrl": "https://www.imdb.com/name/nm1385871/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Olga%20Kurylenko%20(54104595735)%20(cropped2).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Festival%20de%20Cinema%20de%20Sitges%202019%20(49500414408)%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q164730",
 			"https://www.imdb.com/name/nm1385871/"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1979-11-14"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
 	},
 	"Olga Mironova": {
 		"name": "Olga Mironova",
@@ -60482,6 +60799,23 @@
 			"https://www.themoviedb.org/person/14887-paddy-considine"
 		],
 		"lastVerifiedAt": "2026-08-25",
+		"source": "wikidata-imdb-cache"
+	},
+	"Pål Sverre Hagen": {
+		"name": "Pål Sverre Hagen",
+		"birthDate": "1980-11-06",
+		"birthYear": 1980,
+		"nationalityPrimary": "Noruego",
+		"image": "/people/pal-sverre-hagen-nm1914298.jpg",
+		"imdbId": "nm1914298",
+		"imdbUrl": "https://www.imdb.com/name/nm1914298/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A5l%20Sverre%20Valheim%20Hagen.JPG?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q2013068",
+			"https://www.imdb.com/name/nm1914298/",
+			"https://www.themoviedb.org/person/76556-pal-sverre-hagen"
+		],
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Pam Grier": {
@@ -65317,6 +65651,22 @@
 		"lastVerifiedAt": "2026-08-27",
 		"source": "wikidata-imdb-cache"
 	},
+	"Rie Kugimiya": {
+		"name": "Rie Kugimiya",
+		"birthDate": "1979-05-30",
+		"birthYear": 1979,
+		"nationalityPrimary": "Japonesa",
+		"image": "/people/rie-kugimiya-nm1069584.jpg",
+		"imdbId": "nm1069584",
+		"imdbUrl": "https://www.imdb.com/name/nm1069584/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rie%20kugimiya%20in%2026th%20Tokyo%20International%20Film%20Festival.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q49554",
+			"https://www.imdb.com/name/nm1069584/"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Riisa Naka": {
 		"name": "Riisa Naka",
 		"birthYear": 1989,
@@ -68226,7 +68576,7 @@
 			"https://www.imdb.com/name/nm0000161/",
 			"https://www.themoviedb.org/person/3136-salma-hayek-pinault"
 		],
-		"lastVerifiedAt": "2026-08-21",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Salvatore Cascio": {
@@ -69814,6 +70164,23 @@
 		],
 		"lastVerifiedAt": "2026-08-09",
 		"source": "wikidata-imdb-cache"
+	},
+	"Serkan Çayoğlu": {
+		"name": "Serkan Çayoğlu",
+		"birthDate": "1987-05-31",
+		"birthYear": 1987,
+		"nationalityPrimary": "Turquía",
+		"image": "/people/serkan-cayoglu-nm6751009.jpg",
+		"imdbId": "nm6751009",
+		"imdbUrl": "https://www.imdb.com/name/nm6751009/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/ryi7hQzOvxEzuy2Vr7DC378LlhR.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q19936977",
+			"https://www.imdb.com/name/nm6751009/",
+			"https://www.themoviedb.org/person/1445032-serkan-cayoglu"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Seth Gordon": {
 		"name": "Seth Gordon",
@@ -74708,7 +75075,7 @@
 			"https://www.imdb.com/name/nm0000301/",
 			"https://www.themoviedb.org/person/2155-thora-birch"
 		],
-		"lastVerifiedAt": "2026-08-15",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-cache"
 	},
 	"Thorbjørn Christoffersen": {
@@ -75025,6 +75392,22 @@
 		"lastVerifiedAt": "2026-08-11",
 		"image": "/people/timothy-bottoms-19207.jpg",
 		"source": "tmdb-cache"
+	},
+	"Timothy James Kane": {
+		"name": "Timothy James Kane",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/timothy-james-kane-nm0437452.jpg",
+		"imdbId": "nm0437452",
+		"imdbUrl": "https://www.imdb.com/name/nm0437452/",
+		"remoteImageUrl": "https://rmwfilm.org/wp-content/uploads/Kane_Timothy.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q115183267",
+			"https://www.imdb.com/name/nm0437452/",
+			"https://barkleymovie.com/about",
+			"https://rmwfilm.org/filmmakers/timothy-james-kane/"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Timothy Spall": {
 		"name": "Timothy Spall",
@@ -76150,7 +76533,7 @@
 			"https://www.imdb.com/name/nm0837523/",
 			"https://watch.plex.tv/person/tomokazu-sugita"
 		],
-		"lastVerifiedAt": "2026-08-26",
+		"lastVerifiedAt": "2026-08-28",
 		"source": "wikidata-imdb-plex-cache"
 	},
 	"Tomori Kusunoki": {
@@ -77694,6 +78077,23 @@
 		"lastVerifiedAt": "2026-08-20",
 		"source": "movie-imdb-tmdb-cache"
 	},
+	"Vice Ganda": {
+		"name": "Vice Ganda",
+		"birthDate": "1976-03-31",
+		"birthYear": 1976,
+		"nationalityPrimary": "Filipino",
+		"image": "/people/vice-ganda-nm2769248.jpg",
+		"imdbId": "nm2769248",
+		"imdbUrl": "https://www.imdb.com/name/nm2769248/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leni%20Republika%20rally%20Malolos%20Sports%20Complex%20Vice%20Ganda%20(Bulacan%3B%2004-27-2022)%20(cropped).jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q7925032",
+			"https://www.imdb.com/name/nm2769248/",
+			"https://www.themoviedb.org/person/227376-vice-ganda"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
+	},
 	"Vicellous Shannon": {
 		"name": "Vicellous Reon Shannon",
 		"birthDate": "1971-04-11",
@@ -78870,6 +79270,21 @@
 		],
 		"lastVerifiedAt": "2026-08-22",
 		"source": "wikidata-imdb-cache"
+	},
+	"Will Canon": {
+		"name": "Will Canon",
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/will-canon-nm1949943.jpg",
+		"imdbId": "nm1949943",
+		"imdbUrl": "https://www.imdb.com/name/nm1949943/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/qU4LuPlEE4ejdW7VABth5G7sp56.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q114496962",
+			"https://www.imdb.com/name/nm1949943/",
+			"https://www.themoviedb.org/person/223098-will-canon"
+		],
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Will Catlett": {
 		"name": "Will Catlett",
@@ -80433,20 +80848,20 @@
 	},
 	"Zach Galifianakis": {
 		"name": "Zach Galifianakis",
+		"birthDate": "1969-10-01",
 		"birthYear": 1969,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/zach-galifianakis-nm0302108.jpg",
 		"imdbId": "nm0302108",
 		"imdbUrl": "https://www.imdb.com/name/nm0302108/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zach%20Galifianakis%202012%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zach%20Galifianakis%202012%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q139325",
 			"https://www.imdb.com/name/nm0302108/",
 			"https://www.themoviedb.org/person/58225-zach-galifianakis"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1969-10-01"
+		"lastVerifiedAt": "2026-08-28",
+		"source": "wikidata-imdb-cache"
 	},
 	"Zach Gilford": {
 		"name": "Zach Gilford",

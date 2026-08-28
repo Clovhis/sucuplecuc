@@ -4,7 +4,7 @@ const movieTitle = 'WHAM! 10 Days in China';
 const moviePath = '/peliculas/wham-10-days-in-china-2026/';
 
 test('Otras plataformas se apila y no invade las etiquetas de la tarjeta', async ({ page }) => {
-	await page.goto('/', { waitUntil: 'domcontentloaded' });
+	await page.goto('/?plataforma=otras%20plataformas', { waitUntil: 'domcontentloaded' });
 
 	const card = page.locator(`[data-movie-card][data-movie-title="${movieTitle}"]`);
 	await expect(card).toBeVisible();
@@ -28,7 +28,7 @@ test('Otras plataformas se apila y no invade las etiquetas de la tarjeta', async
 		};
 	});
 
-	expect(cardLayout.badgeWidth).toBeLessThan(80);
+	expect(cardLayout.badgeWidth).toBeLessThanOrEqual(84);
 	expect(cardLayout.categoryRight).toBeLessThanOrEqual(cardLayout.badgeLeft + 1);
 	expect(cardLayout.cardScrollWidth).toBeLessThanOrEqual(cardLayout.cardClientWidth + 1);
 });

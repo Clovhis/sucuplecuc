@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-27T16:39:09.182Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-28T21:10:48.792Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -24,7 +24,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Hechizo de Amor: La magia continúa",
 		"releaseDate": "2026-09-10",
 		"videoUrl": "https://www.youtube.com/watch?v=Ho10_4IX1jE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/wE6syT1vv6W24iLGfhR4kQHnIDN.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/Ao7Q6CMDiVheAqVyKV8vUI8yata.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
 	},
 	{
@@ -72,7 +72,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "DIGGER",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=qORTe1wW3Wg",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10364-digger/"
 	},
 	{
@@ -82,5 +82,13 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
+	},
+	{
+		"slug": "1375646",
+		"title": "Zona Cero",
+		"releaseDate": "2026-10-01",
+		"videoUrl": "https://www.youtube.com/watch?v=LW6dpj1uCK8",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10499-zona-cero/"
 	}
 ];
