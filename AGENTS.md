@@ -23,4 +23,5 @@
 
 - Cada PR valida contenido, build, dependencias productivas y e2e en Chromium.
 - La cobertura completa de navegadores corre semanalmente o con `workflow_dispatch` y `full_e2e`.
-- Los próximos estrenos se actualizan en un PR automatizado; el deploy sólo publica lo ya versionado en `main`.
+- Los próximos estrenos, sus trailers y las recomendaciones semanales se actualizan automáticamente, se validan y se versionan directamente en `main`; el deploy publica esos cambios y también refresca el Radar de cine al reconstruir el sitio.
+
