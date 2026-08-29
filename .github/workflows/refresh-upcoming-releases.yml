@@ -7,11 +7,10 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
-  group: refresh-upcoming-releases
-  cancel-in-progress: true
+  group: refresh-generated-content
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -21,8 +20,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 0
-          persist-credentials: false
+          persist-credentials: true
 
       - name: Setup Node
         uses: actions/setup-node@v6
@@ -36,15 +36,32 @@ jobs:
       - name: Refresh generated upcoming releases
         run: UPCOMING_RELEASES_STRICT=1 npm run update-upcoming-releases
 
-      - name: Open refresh pull request
-        uses: peter-evans/create-pull-request@v8
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: chore/refresh-upcoming-releases
-          delete-branch: true
-          commit-message: 'chore: refresh upcoming releases'
-          title: 'chore: refresh upcoming releases'
-          body: |
-            Automated refresh of `src/data/upcomingReleases.generated.ts`.
-            Review the generated content, then merge to publish it reproducibly.
-          add-paths: src/data/upcomingReleases.generated.ts
+      - name: Validate generated content
+        run: npm run validate:content -- --astro-check
+
+      - name: Validate production build
+        run: npm run build
+
+      - name: Commit refreshed upcoming releases to main
+        run: |
+          expected_file='src/data/upcomingReleases.generated.ts'
+          unexpected_files=$(git diff --name-only | grep -v "^${expected_file}$" || true)
+          if [ -n "$unexpected_files" ]; then
+            echo "Unexpected files changed by the refresh:"
+            echo "$unexpected_files"
+            exit 1
+          fi
+
+          if git diff --quiet -- "$expected_file"; then
+            echo "No upcoming release changes to publish."
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$expected_file"
+          git commit -m 'chore: refresh upcoming releases'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
