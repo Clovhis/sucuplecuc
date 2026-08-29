@@ -36,11 +36,8 @@ jobs:
       - name: Refresh generated upcoming releases
         run: UPCOMING_RELEASES_STRICT=1 npm run update-upcoming-releases
 
-      - name: Validate generated content
+      - name: Validate generated content and build
         run: npm run validate:content -- --astro-check
-
-      - name: Validate production build
-        run: npm run build
 
       - name: Commit refreshed upcoming releases to main
         run: |

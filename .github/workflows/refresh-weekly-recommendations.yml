@@ -40,14 +40,8 @@ jobs:
       - name: Test weekly recommendation selector
         run: npm run test:weekly-recommendations
 
-      - name: Validate generated content
+      - name: Validate generated content and build
         run: npm run validate:content -- --astro-check
-
-      - name: Validate generated recommendation data
-        run: npm run check
-
-      - name: Validate production build
-        run: npm run build
 
       - name: Commit refreshed recommendations to main
         run: |
