@@ -1830,7 +1830,9 @@ function selectChoice(choiceIndex: number): void {
 			if (eventResult) {
 				eventResult.classList.toggle('actor-event-result--casino-good', showGood);
 				eventResult.classList.toggle('actor-event-result--casino-bad', !showGood);
-				eventResult.textContent = showGood ? '🎰 VERDE · el destino te sonríe…' : '🎰 ROJO · todo puede caer…';
+				eventResult.textContent = showGood
+					? '🎰 La suerte está rodando… VERDE · el destino te sonríe…'
+					: '🎰 La suerte está rodando… ROJO · todo puede caer…';
 			}
 			casinoFrame += 1;
 		};
@@ -2094,3 +2096,4 @@ function selectChoice(choiceIndex: number): void {
 	}
 	void refreshHighScores();
 }
+

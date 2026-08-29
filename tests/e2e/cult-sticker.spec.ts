@@ -7,9 +7,22 @@ async function dismissDonationPrompt(page: Page): Promise<void> {
 	}
 }
 
+async function waitForSiteStyles(page: Page): Promise<void> {
+	await page.waitForFunction(() =>
+		Array.from(document.styleSheets).some((sheet) => {
+			try {
+				return sheet.cssRules.length > 0;
+			} catch {
+				return false;
+			}
+		}),
+	);
+}
+
 test.describe('sticker De culto', () => {
 	test('se ubica a la derecha, recto y 10% por encima de Absolute cinema', async ({ page }) => {
 		await page.goto('/peliculas/pulp-fiction-1994/', { waitUntil: 'domcontentloaded' });
+		await waitForSiteStyles(page);
 		await dismissDonationPrompt(page);
 
 		const host = page.locator('.movie-detail__poster, .movie-detail__gallery').first();
@@ -61,6 +74,7 @@ test.describe('sticker De culto', () => {
 
 	test('el filtro De culto muestra el sticker en todas sus tarjetas visibles', async ({ page }) => {
 		await page.goto('/', { waitUntil: 'domcontentloaded' });
+		await waitForSiteStyles(page);
 		await dismissDonationPrompt(page);
 
 		await page.getByRole('button', { name: /^De culto$/i }).click();
@@ -78,8 +92,10 @@ test.describe('sticker De culto', () => {
 
 	test('una película fuera del filtro De culto no recibe el sticker', async ({ page }) => {
 		await page.goto('/peliculas/venom-2018/', { waitUntil: 'domcontentloaded' });
+		await waitForSiteStyles(page);
 		await dismissDonationPrompt(page);
 
 		await expect(page.locator('.movie-detail__cult-movie-sticker')).toHaveCount(0);
 	});
 });
+

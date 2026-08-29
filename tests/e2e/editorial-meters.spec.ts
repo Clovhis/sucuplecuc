@@ -49,6 +49,7 @@ test('meter cards do not create horizontal overflow on a narrow phone', async ({
 	test.skip(!testInfo.project.name.startsWith('mobile-'), 'This layout check is intentionally mobile-only.');
 	await page.setViewportSize({ width: 320, height: 568 });
 	await page.goto('/peliculas/gladiator-2000/', { waitUntil: 'domcontentloaded' });
+	await expect(page.locator('.home-brand-link__image')).toHaveCSS('display', 'block');
 
 	const dimensions = await page.evaluate(() => ({
 		documentWidth: document.documentElement.scrollWidth,
@@ -59,3 +60,4 @@ test('meter cards do not create horizontal overflow on a narrow phone', async ({
 	expect(dimensions.documentWidth).toBeLessThanOrEqual(dimensions.viewportWidth + 1);
 	expect(dimensions.labelWidth).toBeGreaterThan(0);
 });
+

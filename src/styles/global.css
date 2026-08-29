@@ -1612,6 +1612,8 @@ img {
 /* The editorial rail stays a single visual row as its catalog grows. */
 @media (min-width: 721px) {
 	.home-genre-filter--editorial .home-genre-filter__chips {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(0, 1fr));
 		gap: 0.3rem;
 	}
 
@@ -1623,8 +1625,11 @@ img {
 	}
 
 	.home-genre-filter--editorial .home-genre-filter__chip {
-		padding-inline: 0.5rem;
-		font-size: 0.76rem;
+		min-width: 0;
+		padding-inline: 0.25rem;
+		font-size: 0.7rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
 }
@@ -13483,3 +13488,4 @@ img {
 		max-width: 18rem;
 	}
 }
+

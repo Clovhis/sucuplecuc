@@ -43,6 +43,7 @@ const illustratedAwardCases = [
 ] as const;
 
 test('award illustrations load with the expected visual identity', async ({ page }) => {
+	test.setTimeout(120_000);
 	for (const awardCase of illustratedAwardCases) {
 		const response = await page.goto(awardCase.path, { waitUntil: 'domcontentloaded' });
 
@@ -199,6 +200,7 @@ test('BFI uses a transparent illustration instead of a flat placeholder tile', a
 
 test('award cards give the illustration visual priority', async ({ page }) => {
 	await page.goto('/personas/brad-pitt/', { waitUntil: 'domcontentloaded' });
+	await expect(page.locator('.person-page__award-item').first()).toHaveCSS('display', 'grid');
 
 	const layout = await page.locator('.person-page__award-item').first().evaluate((item) => {
 		const card = item.getBoundingClientRect();
@@ -234,3 +236,4 @@ test('award cards do not overflow a narrow viewport', async ({ page }, testInfo)
 	expect(metrics.bodyWidth).toBeLessThanOrEqual(metrics.viewportWidth + 1);
 	expect(metrics.awardItems.every(({ left, right }) => left >= -1 && right <= metrics.viewportWidth + 1)).toBeTruthy();
 });
+

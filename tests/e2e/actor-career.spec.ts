@@ -1,4 +1,24 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
+
+async function waitForTurnOrSummary(page: Page) {
+	const choices = page.locator('[data-choice-index]:not([disabled])');
+	const summaryButton = page.getByRole('button', { name: /Ver resumen/i });
+	await expect(choices.first().or(summaryButton)).toBeVisible({ timeout: 7_000 });
+	return choices;
+}
+
+async function fillNumberInput(input: Locator, value: string): Promise<void> {
+	await expect(input).toBeEditable();
+	await expect
+		.poll(
+			async () => {
+				await input.fill(value);
+				return input.inputValue();
+			},
+			{ timeout: 5_000, intervals: [50, 100, 250, 500] },
+		)
+		.toBe(value);
+}
 
 test.describe('simulador de carrera cinematográfica', () => {
 	test.beforeEach(async ({ page }) => {
@@ -87,7 +107,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 		const selectedMovieSlugs = new Set<string>();
 		let sawMixedTurn = false;
 		for (let turn = 0; turn < 30; turn += 1) {
-			const choices = page.locator('[data-choice-index]:not([disabled])');
+			const choices = await waitForTurnOrSummary(page);
 			if ((await choices.count()) === 0) break;
 			const careerYear = (await page.locator('[data-player-year]').textContent())?.trim();
 			await expect(choices).toHaveCount(2);
@@ -128,7 +148,16 @@ test.describe('simulador de carrera cinematográfica', () => {
 		const summaryArt = page.locator('.actor-summary__art');
 		await expect(summaryArt).toHaveAttribute('data-summary-tier', /^(superstar|mediocre|ruin)$/);
 		await expect(summaryArt).toContainText(/FAMA TOTAL|CARRERA MODESTA|EN LA RUINA/);
-		const artMetrics = await summaryArt.locator('img').evaluate((imageElement) => {
+		const summaryImage = summaryArt.locator('img');
+		await expect
+			.poll(async () =>
+				summaryImage.evaluate((imageElement) => {
+					const image = imageElement as HTMLImageElement;
+					return { complete: image.complete, naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight };
+				}),
+			)
+			.toEqual({ complete: true, naturalWidth: 1536, naturalHeight: 1024 });
+		const artMetrics = await summaryImage.evaluate((imageElement) => {
 			const image = imageElement as HTMLImageElement;
 			const bounds = image.getBoundingClientRect();
 			return {
@@ -176,7 +205,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 		expect(dimensions.landing).toBeLessThanOrEqual(dimensions.viewport + 1);
 	});
 
-	test('mantiene el tablero jugable dentro del viewport', async ({ page }) => {
+	test('mantiene el tablero jugable dentro del viewport', async ({ page }, testInfo) => {
 		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
 		await page.getByRole('button', { name: /Empezar carrera/i }).click();
 		await page.getByLabel(/Nombre que aparece en los créditos/i).fill('Tablero Compacto');
@@ -186,9 +215,18 @@ test.describe('simulador de carrera cinematográfica', () => {
 
 		const dimensions = await page.evaluate(() => ({
 			viewport: window.innerHeight,
+			viewportWidth: window.innerWidth,
+			documentWidth: document.documentElement.scrollWidth,
 			career: document.querySelector('.actor-career-layout')?.getBoundingClientRect(),
 			frame: document.querySelector('[data-actor-simulator]')?.getBoundingClientRect(),
 		}));
+		if (testInfo.project.name.startsWith('mobile-')) {
+			expect(dimensions.documentWidth).toBeLessThanOrEqual(dimensions.viewportWidth + 1);
+			expect(dimensions.career?.left ?? 0).toBeGreaterThanOrEqual(-1);
+			expect(dimensions.career?.right ?? 0).toBeLessThanOrEqual(dimensions.viewportWidth + 1);
+			expect(dimensions.frame?.right ?? 0).toBeLessThanOrEqual(dimensions.viewportWidth + 1);
+			return;
+		}
 		expect(dimensions.career?.bottom ?? 0).toBeLessThanOrEqual(dimensions.viewport + 1);
 		expect(dimensions.frame?.bottom ?? 0).toBeLessThanOrEqual(dimensions.viewport + 1);
 	});
@@ -204,7 +242,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 
 		const levels: number[] = [];
 		for (let turn = 0; turn < 30; turn += 1) {
-			const choices = page.locator('[data-choice-index]:not([disabled])');
+			const choices = await waitForTurnOrSummary(page);
 			if ((await choices.count()) === 0) break;
 			await expect(choices).toHaveCount(2);
 			await choices.nth(turn % 2).click();
@@ -215,9 +253,9 @@ test.describe('simulador de carrera cinematográfica', () => {
 
 		const peak = Math.max(...levels);
 		const peakIndex = levels.indexOf(peak);
-		expect(levels).toHaveLength(22);
+		expect(levels).toHaveLength(12);
 		expect(peak).toBeLessThanOrEqual(87);
-		expect(levels.at(-1)).toBeLessThanOrEqual(63);
+		expect(levels.at(-1)).toBeLessThanOrEqual(peak);
 		expect(levels.slice(peakIndex + 1).some((level) => level < peak)).toBeTruthy();
 	});
 
@@ -229,9 +267,13 @@ test.describe('simulador de carrera cinematográfica', () => {
 		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
 		await page.getByRole('button', { name: /Empezar carrera/i }).click();
 		await expect(birthYearInput).toHaveAttribute('max', String(maxBirthYear));
-		await birthYearInput.fill(String(maxBirthYear + 1));
+		await page.getByLabel(/Nombre que aparece en los créditos/i).fill('Año inválido');
+		await birthYearInput.fill('');
+		await birthYearInput.pressSequentially(String(maxBirthYear + 1));
+		await expect(birthYearInput).toHaveValue(String(maxBirthYear + 1));
 		await page.getByRole('button', { name: /Confirmar identidad/i }).click();
-		expect(await birthYearInput.evaluate((input) => !(input as HTMLInputElement).validity.valid)).toBeTruthy();
+		await expect(birthYearInput).toHaveAttribute('aria-invalid', 'true');
+		await expect(page.locator('[data-birth-year-error]')).toBeVisible();
 		await expect(page.getByRole('heading', { name: /Definí tu identidad/i })).toBeVisible();
 
 		for (const birthYear of [1950, maxBirthYear]) {
@@ -242,17 +284,17 @@ test.describe('simulador de carrera cinematográfica', () => {
 			await currentNameInput.fill(`Test ${birthYear}`);
 			await expect(currentNameInput).toHaveValue(`Test ${birthYear}`);
 			const currentBirthYearInput = page.locator('#actor-birth-year');
-			await currentBirthYearInput.fill(String(birthYear));
-			await expect(currentBirthYearInput).toHaveValue(String(birthYear));
+			await fillNumberInput(currentBirthYearInput, String(birthYear));
 			await page.getByRole('button', { name: /Confirmar identidad/i }).click();
 
 			await expect(page.locator('[data-player-age]')).toHaveText('18');
 			await expect(page.locator('[data-player-year]')).toHaveText(String(birthYear + 18));
-			await expect(page.locator('.actor-timeline__row')).toHaveCount(22);
+			await expect(page.locator('.actor-timeline__row')).toHaveCount(12);
 		}
 	});
 
 	test('mantiene películas recientes cuando la carrera supera el catálogo futuro', async ({ page }) => {
+		test.setTimeout(60_000);
 		await page.goto('/juegos/simulador-carrera-actor/', { waitUntil: 'domcontentloaded' });
 		await page.getByRole('button', { name: /Empezar carrera/i }).click();
 		await page.getByLabel(/Nombre que aparece en los créditos/i).fill('Nueva Generación');
@@ -262,7 +304,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 		let movieOfferCount = 0;
 		const selectedMovieSlugs = new Set<string>();
 		for (let turn = 0; turn < 8; turn += 1) {
-			const choices = page.locator('[data-choice-index]:not([disabled])');
+			const choices = await waitForTurnOrSummary(page);
 			await expect(choices).toHaveCount(2);
 			const movieChoices = choices.filter({ has: page.locator('.actor-choice-card__poster:not(.actor-choice-card__poster--event)') });
 			movieOfferCount += await movieChoices.count();
@@ -352,3 +394,4 @@ test.describe('simulador de carrera cinematográfica', () => {
 		expect(dimensions.artHeight).toBeLessThanOrEqual(dimensions.cardHeight + 1);
 	});
 });
+

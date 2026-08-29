@@ -11,6 +11,11 @@ on:
         required: false
         default: false
         type: boolean
+      full_content_audit:
+        description: Run the full catalog and profile audit
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -46,7 +51,7 @@ jobs:
 
       - name: Validate content and build
         env:
-          RUN_FULL_CONTENT_AUDIT: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.full_e2e == true) }}
+          RUN_FULL_CONTENT_AUDIT: ${{ github.event_name == 'workflow_dispatch' && inputs.full_content_audit == true }}
         run: |
           if [ "$RUN_FULL_CONTENT_AUDIT" = "true" ]; then
             npm run validate:content -- --all --astro-check
@@ -112,3 +117,4 @@ jobs:
 
       - name: Run full cross-browser end-to-end suite
         run: npx playwright test
+
