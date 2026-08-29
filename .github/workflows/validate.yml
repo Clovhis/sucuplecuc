@@ -89,7 +89,9 @@ jobs:
         run: npx playwright test --project=desktop-chromium
 
   e2e-cross-browser:
-    if: github.event_name == 'schedule' || github.event.inputs.full_e2e == 'true'
+    # Keep the exhaustive browser matrix opt-in: the weekly validation still runs
+    # content checks and Chromium, while WebKit's long-running cases remain manual.
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.full_e2e == 'true'
     needs: validate
     runs-on: ubuntu-latest
     timeout-minutes: 30
