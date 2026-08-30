@@ -76,6 +76,25 @@ const VERDICT_LABEL_STOCK_PATTERNS = [
 	'el <label> viene de',
 	'la <label> viene de',
 ];
+const MECHANICAL_VERDICT_LABELS = [
+	'NO RECOMENDADA',
+	'NO VA',
+	'BASURA ATOMICA',
+	'BASURA TOTAL',
+	'MALISIMA',
+	'MALA',
+	'PASABLE',
+	'SE DEJA VER',
+	'MUY RECOMENDADA',
+	'RECOMENDADA',
+	'MUY BUENA',
+	'ESTA MUY BIEN',
+	'ESTA BUENA',
+	'ESTA OK',
+	'ZAFABLE',
+	'ZAFA',
+	'MAS O MENOS',
+];
 const SOURCE_LIKE_SYNOPSIS_PATTERNS = [
 	/^la (pelicula|trama|historia) (cuenta|narra|relata|sigue)\b/i,
 	/^el (filme|largometraje) (cuenta|narra|relata|sigue)\b/i,
@@ -320,6 +339,26 @@ function getVerdictLabelStockHits(movie) {
 		.map((pattern) => `verdict-label stock phrase :: ${pattern}`);
 }
 
+function getVerdictLabelFormattingHits(movie) {
+	const review = String(movie.review || '');
+	if (!review) {
+		return [];
+	}
+
+	const labels = [...new Set([movie.verdictLabel, ...MECHANICAL_VERDICT_LABELS].map((value) => String(value || '').trim()).filter(Boolean))];
+	const matchingLabels = labels
+		.filter((label) => new RegExp(`\\b${escapeRegex(label)}\\s*:`, 'iu').test(review))
+		.sort((left, right) => right.length - left.length || left.localeCompare(right, 'es'));
+	return matchingLabels
+		.filter(
+			(label) =>
+				!matchingLabels.some(
+					(otherLabel) => otherLabel.length > label.length && normalizeText(otherLabel).endsWith(normalizeText(label)),
+				),
+		)
+		.map((label) => `verdict-label colon :: ${label}`);
+}
+
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalizeText(movie.review);
 	const normalizedDirector = normalizeText(movie.director);
@@ -333,6 +372,9 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 		markerHits.push(verdictLedTemplateHit);
 	}
 	for (const hit of getVerdictLabelStockHits(movie)) {
+		markerHits.push(hit);
+	}
+	for (const hit of getVerdictLabelFormattingHits(movie)) {
 		markerHits.push(hit);
 	}
 	const titleMentions = Math.max(...buildTitleVariants(movie).map((variant) => countPhraseOccurrences(normalizedReview, variant)), 0);

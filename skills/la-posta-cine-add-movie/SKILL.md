@@ -101,6 +101,8 @@ Fill the template with verified data. Follow the contract for field semantics, A
 
 Mandatory editorial rule: write `synopsis` and `review` 100% from scratch with AI for this exact movie. Sources may establish facts and reception but are never draft material: do not copy, translate, close-paraphrase, synonym-swap, or reshape source copy. Do not use reusable scaffolds, sentence skeletons, verdict-led openings/closings, or recycled paragraphs. If it could fit another title after changing a name, rewrite it.
 
+Treat `verdict` and `verdictLabel` as UI metadata, never as prose. A review must not contain an all-caps or mechanical label such as `RECOMENDADA:`, `NO RECOMENDADA:`, `ZAFA:` or `<verdictLabel> porque`; it must arrive at its judgement through a film-specific argument. Before drafting, choose a fresh critical angle grounded in this title's particular direction, performances, structure, imagery, sound, genre use or cultural context. Write in natural Argentine Rioplatense Spanish, with varied rhythm and vocabulary; do not finish with a generic consumption recommendation. Run the editorial auditor against the explicit candidate and rewrite every marker finding before proceeding. There is no authorized automatic review generator: each review must be drafted uniquely for its film.
+
 Before person research, consult the compact person-profile catalog and `people.json`; preserve existing canonical names and data. Then run:
 
 ```bash

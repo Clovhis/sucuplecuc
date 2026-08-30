@@ -36,7 +36,9 @@ When the request says `total`, `todo el catálogo`, `full catalog` or equivalent
 
 Large `--all` passes can spend most of their time on sequential third-party YouTube checks. After bounded retry, classify those timeouts as external findings and complete the deterministic catalog pass with `--all --skip-youtube`; retain the no-skip result for trailer evidence and do not downgrade title/year mismatches.
 
-3. Editorial originality is a hard stop. Every `synopsis` and `review` must be 100% AI-written from scratch for its movie: source material can establish facts, never supply prose. Reject copied, translated, close-paraphrased, template-shaped, verdict-led, recycled, or interchangeable copy. The audit script's duplicate and marker findings require a rewrite, not a waiver.
+3. Editorial originality is a hard stop. Every `synopsis` and `review` must be 100% AI-written from scratch for its movie: source material can establish facts, never supply prose. Reject copied, translated, close-paraphrased, template-shaped, verdict-led, recycled, or interchangeable copy. A `verdictLabel` rendered mechanically in review prose—especially forms like `RECOMENDADA:`, `NO RECOMENDADA:`, `ZAFA:` or `<verdictLabel> porque`—is a template finding even if the preceding sentences are otherwise specific. The audit script's duplicate and marker findings require a rewrite, not a waiver.
+
+Audit the reasoning as well as the wording: the review needs a title-specific critical angle and a grounded judgment about its filmmaking, performances, construction, imagery, sound, genre use or context. It may use Argentine Rioplatense voice, but must not collapse into stock “plan” advice, an interchangeable genre adjective, or a metadata-shaped sign-off. There is no authorized automatic review generator: each review must be drafted uniquely for its film.
 
 ## De culto sticker integrity
 

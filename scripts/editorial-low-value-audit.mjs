@@ -45,6 +45,25 @@ const VERDICT_LABEL_TEMPLATE_PATTERNS = [
 	'el <label> viene de',
 	'la <label> viene de',
 ];
+const MECHANICAL_VERDICT_LABELS = [
+	'NO RECOMENDADA',
+	'NO VA',
+	'BASURA ATOMICA',
+	'BASURA TOTAL',
+	'MALISIMA',
+	'MALA',
+	'PASABLE',
+	'SE DEJA VER',
+	'MUY RECOMENDADA',
+	'RECOMENDADA',
+	'MUY BUENA',
+	'ESTA MUY BIEN',
+	'ESTA BUENA',
+	'ESTA OK',
+	'ZAFABLE',
+	'ZAFA',
+	'MAS O MENOS',
+];
 
 function wordCount(value) {
 	return String(value ?? '')
@@ -203,9 +222,23 @@ function getVerdictLabelTemplateHits(movie) {
 		return [];
 	}
 
-	return VERDICT_LABEL_TEMPLATE_PATTERNS
+	const stockPhraseHits = VERDICT_LABEL_TEMPLATE_PATTERNS
 		.map((pattern) => pattern.replaceAll('<label>', normalizedVerdictLabel))
 		.filter((pattern) => normalizedReview.includes(pattern));
+	const review = String(movie.review ?? '');
+	const labels = [...new Set([movie.verdictLabel, ...MECHANICAL_VERDICT_LABELS].map((value) => String(value ?? '').trim()).filter(Boolean))];
+	const matchingLabels = labels
+		.filter((label) => new RegExp(`\\b${escapeRegex(label)}\\s*:`, 'iu').test(review))
+		.sort((left, right) => right.length - left.length || left.localeCompare(right, 'es'));
+	const colonHits = matchingLabels
+		.filter(
+			(label) =>
+				!matchingLabels.some(
+					(otherLabel) => otherLabel.length > label.length && normalize(otherLabel).endsWith(normalize(label)),
+				),
+		)
+		.map((label) => `verdict-label colon :: ${label}`);
+	return [...stockPhraseHits, ...colonHits];
 }
 
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
