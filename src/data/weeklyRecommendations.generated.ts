@@ -8,28 +8,28 @@ export const WEEKLY_RECOMMENDATIONS: WeeklyRecommendationManifest = {
 	"weekKey": "2026-08-30",
 	"recommendations": [
 		{
-			"slug": "emilia-perez-2024",
+			"slug": "anatomia-de-una-caida-2023",
 			"era": "nueva"
 		},
 		{
-			"slug": "el-piano-1993",
+			"slug": "the-apartment-1960",
 			"era": "clasica"
 		},
 		{
-			"slug": "mad-max-fury-road-2015",
-			"era": "para-descubrir"
-		},
-		{
-			"slug": "one-battle-after-another-2025",
+			"slug": "the-housemaid-2025",
 			"era": "nueva"
 		},
 		{
-			"slug": "the-deer-hunter-1978",
+			"slug": "no-country-for-old-men-2007",
 			"era": "clasica"
 		},
 		{
-			"slug": "el-renacido-2015",
-			"era": "para-descubrir"
+			"slug": "platoon-1986",
+			"era": "clasica"
+		},
+		{
+			"slug": "los-angeles-al-desnudo-1997",
+			"era": "clasica"
 		}
 	]
 };
