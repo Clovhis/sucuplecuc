@@ -173,7 +173,7 @@ function getSourceLabel(url: string): string {
 				<div class="person-page__showcase-grid">
 					{showcaseEntries.map((entry) => (
 						<a class="person-page__showcase-card" href={entry.url}>
-							<img src={entry.poster} alt={`Poster de ${entry.title}`} loading="lazy" referrerpolicy="no-referrer" />
+							<img src={entry.poster} alt={`Poster de ${entry.title}`} loading="lazy" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={entry.title} data-poster-search-year={entry.year} />
 							<span>{entry.title}</span>
 						</a>
 					))}
@@ -228,7 +228,7 @@ function getSourceLabel(url: string): string {
 					{filmography.map((entry) => (
 						<a class="person-page__film-card" href={entry.url}>
 							<div class="person-page__film-poster">
-								<img src={entry.poster} alt={`Poster de ${entry.title}`} loading="lazy" referrerpolicy="no-referrer" />
+								<img src={entry.poster} alt={`Poster de ${entry.title}`} loading="lazy" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={entry.title} data-poster-search-year={entry.year} />
 							</div>
 							<div class="person-page__film-copy">
 								<div class="person-page__film-topline">

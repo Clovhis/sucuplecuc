@@ -4,6 +4,7 @@ import PlatformBadge from './PlatformBadge.astro';
 interface CinemaRelease {
 	slug: string;
 	title: string;
+	year: number;
 	movieUrl: string;
 	releaseDate: string;
 	posterUrl: string;
@@ -91,6 +92,9 @@ function formatReleaseDate(value: string) {
 											loading="lazy"
 											decoding="async"
 											referrerpolicy="no-referrer"
+											data-cineposta-poster
+											data-poster-search-title={release.title}
+											data-poster-search-year={release.year}
 										/>
 										<span class="cinema-release-carousel__play" aria-hidden="true">
 											<svg viewBox="0 0 24 24"><path d="m9 6 8 6-8 6V6Z" /></svg>

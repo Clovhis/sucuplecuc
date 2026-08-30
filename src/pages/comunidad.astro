@@ -11,6 +11,8 @@ const movies = getMovies();
 const discussionMovies = getLatestReviewMovies(movies, 12);
 const communityDiscussionVisuals = Object.fromEntries(movies.map((movie) => [movie.slug, {
 	posterSrc: getPosterUrl(movie.poster),
+	title: movie.title,
+	year: movie.year,
 	facts: `${movie.category} · ${movie.year}`,
 }]));
 const communityDiscussionVisualsJson = JSON.stringify(communityDiscussionVisuals).replace(/</g, '\\u003c');
@@ -38,7 +40,7 @@ const structuredData = createSimplePageStructuredData(COMMUNITY_PATH, pageTitle,
 			<section class="community-page__comments fade-up" style="--item-delay: 80ms;" aria-labelledby="conversacion">
 				<div class="community-page__section-heading"><div><h2 id="conversacion">Discusiones recientes</h2></div><p>Una discusión por película.</p></div>
 				<ul class="community-discussion-list" data-community-discussion-list aria-live="polite">
-					{discussionMovies.map((movie) => <li data-community-discussion-slug={movie.slug} data-community-discussion-facts={`${movie.category} · ${movie.year}`}><a href={getMovieCommunityPath(movie.slug)}><img class="community-discussion-list__poster" src={getPosterUrl(movie.poster)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /><span class="community-discussion-list__body"><strong>{movie.title}</strong><span class="community-discussion-list__facts">{movie.category} · {movie.year} · Abrir discusión</span></span></a></li>)}
+					{discussionMovies.map((movie) => <li data-community-discussion-slug={movie.slug} data-community-discussion-facts={`${movie.category} · ${movie.year}`}><a href={getMovieCommunityPath(movie.slug)}><img class="community-discussion-list__poster" src={getPosterUrl(movie.poster)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={movie.title} data-poster-search-year={movie.year} /><span class="community-discussion-list__body"><strong>{movie.title}</strong><span class="community-discussion-list__facts">{movie.category} · {movie.year} · Abrir discusión</span></span></a></li>)}
 				</ul>
 			</section>
 			<aside class="community-page__rules fade-up" style="--item-delay: 160ms;" aria-labelledby="reglas-sala">

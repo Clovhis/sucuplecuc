@@ -318,6 +318,9 @@ function initPostometro(
 								loading="eager"
 								decoding="async"
 								referrerpolicy="no-referrer"
+								data-cineposta-poster
+								data-poster-search-title="${escapeHtml(primary.title)}"
+								data-poster-search-year="${primary.year}"
 							/>
 						</div>
 						${renderCredits(primary)}

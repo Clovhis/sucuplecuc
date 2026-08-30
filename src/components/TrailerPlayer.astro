@@ -3,11 +3,12 @@ import { getYoutubeAutoplayEmbedUrl, getYoutubeWatchUrl } from '../lib/movies';
 
 interface Props {
 	title: string;
+	year?: number;
 	youtubeId: string;
 	thumbnailUrl: string;
 }
 
-const { title, youtubeId, thumbnailUrl } = Astro.props as Props;
+const { title, year, youtubeId, thumbnailUrl } = Astro.props as Props;
 const embedUrl = getYoutubeAutoplayEmbedUrl(youtubeId);
 const watchUrl = getYoutubeWatchUrl(youtubeId);
 ---
@@ -22,6 +23,9 @@ const watchUrl = getYoutubeWatchUrl(youtubeId);
 					alt={`Miniatura del trailer de ${title}`}
 					loading="lazy"
 					referrerpolicy="no-referrer"
+					data-cineposta-poster
+					data-poster-search-title={title}
+					data-poster-search-year={year}
 				/>
 				<button class="trailer-preview__play" type="button" aria-label={`Reproducir trailer de ${title}`}>
 					Ver trailer

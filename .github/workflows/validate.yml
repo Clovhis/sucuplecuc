@@ -46,6 +46,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Audit all external posters
+        if: github.event_name == 'schedule'
+        run: node ./skills/la-posta-cine-auditor/scripts/verify_posters.cjs --all --timeout-ms 15000 --retries 2 --per-host-concurrency 2 --global-concurrency 8 --host-spacing-ms 200
+
       - name: Audit production dependencies
         run: npm audit --omit=dev --audit-level=high
 

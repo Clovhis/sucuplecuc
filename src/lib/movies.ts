@@ -94,6 +94,7 @@ export interface UpcomingMovieRelease {
 export interface CurrentTheatricalMovieRelease {
 	slug: string;
 	title: string;
+	year: number;
 	movieUrl: string;
 	releaseDate: string;
 	dateLabel?: string;
@@ -823,6 +824,7 @@ export function getCurrentTheatricalMovieReleases(
 		.map((movie) => ({
 			slug: movie.slug,
 			title: movie.title,
+			year: movie.year,
 			movieUrl: getMoviePath(movie.slug),
 			releaseDate: movie.releaseDate!,
 			posterUrl: getPosterUrl(movie.poster),
@@ -862,6 +864,7 @@ export function getCurrentStreamingMovieReleases(
 	const toRelease = ({ movie, platforms }: (typeof candidates)[number], dateLabel?: string) => ({
 		slug: movie.slug,
 		title: movie.title,
+		year: movie.year,
 		movieUrl: getMoviePath(movie.slug),
 		releaseDate: movie.releaseDate!,
 		dateLabel,

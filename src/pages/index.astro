@@ -371,6 +371,9 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 																		alt={`Poster de ${movie.title}`}
 																		loading="lazy"
 																		decoding="async"
+																		data-cineposta-poster
+																		data-poster-search-title={movie.title}
+																		data-poster-search-year={movie.year}
 																	/>
 																	<span class="upcoming-release-list__play" aria-hidden="true">
 																		Leer reseña

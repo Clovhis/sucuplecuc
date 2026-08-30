@@ -1687,7 +1687,7 @@ if (root) {
 					const cardTitle = kind === 'event' ? `Evento: ${workTitle}` : `${getProfessionAction(currentState, choiceIndex)}: ${workTitle}`;
 					const workVisual = kind === 'event'
 						? `<span class="actor-choice-card__poster actor-choice-card__poster--event" aria-hidden="true">${choice.icon}</span>`
-						: `<img class="actor-choice-card__poster" src="${escapeHtml(workPoster)}" alt="" width="68" height="96" loading="lazy" />`;
+						: `<img class="actor-choice-card__poster" src="${escapeHtml(workPoster)}" alt="" width="68" height="96" loading="lazy" data-cineposta-poster data-poster-search-title="${escapeHtml(workTitle)}" data-poster-search-year="${workYear}" />`;
 					return `<button type="button" class="actor-choice-card${simulationClass}${remakeClass}" data-choice-index="${choiceIndex}" data-offer-kind="${kind}" data-offer-year="${workYear}" data-offer-slug="${escapeHtml(work?.slug ?? '')}">
 					<span class="actor-choice-card__top"><span class="actor-choice-card__icon" aria-hidden="true">${choice.icon}</span><span class="actor-choice-card__risk">${escapeHtml(choice.risk)}</span></span>
 					<span class="actor-choice-card__art actor-choice-card__art--${artIndex}" aria-hidden="true"></span>
@@ -1906,7 +1906,7 @@ function selectChoice(choiceIndex: number): void {
 					: entry.simulation
 						? `${professionDisplayLabel(currentState.profession, currentState.gender)} · ${entry.simulation.category}`
 						: 'Un capítulo más en la carrera';
-				return `<article class="actor-summary__chapter">${posterUrl ? `<img class="actor-summary__chapter-poster" src="${escapeHtml(posterUrl)}" alt="" width="90" height="126" loading="lazy" />` : ''}<span class="actor-summary__chapter-age">${entry.year} · ${entry.age} AÑOS</span><h3>${escapeHtml(entry.project)}</h3><p>${escapeHtml(creditCopy)}${entry.award ? ` · ${escapeHtml(awardDefinitions[entry.award].label)}` : ''}</p><div class="actor-summary__chapter-stats"><span>NIVEL ${entry.level}</span><span>${entry.films} CRÉD.</span><span>${entry.awards} PREM.</span></div></article>`;
+				return `<article class="actor-summary__chapter">${posterUrl ? `<img class="actor-summary__chapter-poster" src="${escapeHtml(posterUrl)}" alt="" width="90" height="126" loading="lazy" data-cineposta-poster data-poster-search-title="${escapeHtml(entry.project)}" data-poster-search-year="${entry.year}" />` : ''}<span class="actor-summary__chapter-age">${entry.year} · ${entry.age} AÑOS</span><h3>${escapeHtml(entry.project)}</h3><p>${escapeHtml(creditCopy)}${entry.award ? ` · ${escapeHtml(awardDefinitions[entry.award].label)}` : ''}</p><div class="actor-summary__chapter-stats"><span>NIVEL ${entry.level}</span><span>${entry.films} CRÉD.</span><span>${entry.awards} PREM.</span></div></article>`;
 			})
 			.join('');
 		const awards = state.awards.length

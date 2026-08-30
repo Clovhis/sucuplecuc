@@ -32,7 +32,7 @@ const genres = [movie.category, ...(movie.genres ?? [])].filter((genre, index, v
 		</nav>
 		<article class="community-movie-summary fade-up" style="--item-delay: 0ms;" aria-labelledby="movie-title">
 			<a class="community-movie-summary__poster" href={getMoviePath(movie.slug)} aria-label={`Ver ficha de ${movie.title}`}>
-				<img src={getPosterUrl(movie.poster)} alt={`Póster de ${movie.title}`} loading="eager" fetchpriority="high" referrerpolicy="no-referrer" />
+				<img src={getPosterUrl(movie.poster)} alt={`Póster de ${movie.title}`} loading="eager" fetchpriority="high" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={movie.title} data-poster-search-year={movie.year} />
 			</a>
 			<div class="community-movie-summary__body">
 				<h1 id="movie-title">{movie.title}</h1>

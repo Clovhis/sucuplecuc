@@ -10,6 +10,8 @@ type CommunityDiscussion = {
 
 type DiscussionVisual = {
 	posterSrc: string;
+	title: string;
+	year: number;
 	facts: string;
 };
 
@@ -23,6 +25,8 @@ const discussionVisuals = new Map<string, DiscussionVisual>(
 				element.dataset.communityDiscussionSlug ?? '',
 				{
 					posterSrc: element.querySelector<HTMLImageElement>('.community-discussion-list__poster')?.src ?? '',
+					title: element.querySelector('strong')?.textContent?.trim() ?? '',
+					year: Number.parseInt(element.dataset.communityDiscussionFacts?.match(/\d{4}/)?.[0] ?? '', 10),
 					facts: element.dataset.communityDiscussionFacts ?? '',
 				},
 			];
@@ -86,6 +90,9 @@ function createDiscussionItem(discussion: CommunityDiscussion): HTMLLIElement {
 		poster.className = 'community-discussion-list__poster';
 		poster.src = visual.posterSrc;
 		poster.alt = '';
+		poster.dataset.cinepostaPoster = 'true';
+		poster.dataset.posterSearchTitle = discussion.movie_title || visual.title;
+		if (Number.isInteger(visual.year)) poster.dataset.posterSearchYear = String(visual.year);
 		poster.loading = 'lazy';
 		poster.decoding = 'async';
 		poster.referrerPolicy = 'no-referrer';

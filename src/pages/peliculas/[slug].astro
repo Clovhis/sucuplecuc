@@ -387,7 +387,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					</div>
 				) : (
 					<div class="movie-detail__poster fade-up" style="--item-delay: 0ms;">
-						<img src={posterUrl} alt={`Poster de ${movie.title}`} referrerpolicy="no-referrer" />
+						<img src={posterUrl} alt={`Poster de ${movie.title}`} referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={movie.title} data-poster-search-year={movie.year} />
 						{showAbsoluteCinemaSticker && (
 							<img
 								class="absolute-cinema-sticker movie-sticker movie-detail__absolute-cinema-sticker"
@@ -442,6 +442,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						{movie.trailerYoutubeId ? (
 							<TrailerPlayer
 								title={movie.title}
+								year={movie.year}
 								youtubeId={movie.trailerYoutubeId}
 								thumbnailUrl={trailerThumbnailUrl}
 							/>

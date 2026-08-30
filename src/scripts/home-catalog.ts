@@ -742,6 +742,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 			const poster = document.createElement('img');
 			poster.className = 'movie-search__suggestion-poster';
+			if (entry.entryType === 'movie') {
+				poster.dataset.cinepostaPoster = 'true';
+				poster.dataset.posterSearchTitle = entry.title;
+				poster.dataset.posterSearchYear = entry.year;
+			}
 			poster.src = entry.posterUrl;
 			poster.alt = '';
 			poster.loading = 'lazy';
