@@ -2,7 +2,7 @@
 
 Actualizado manualmente el 2026-08-30. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 528
+Total de personas con ficha exclusiva: 529
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -559,3 +559,9 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | David Lynch | `david-lynch` | /personas/david-lynch/ | Director, Guionista, Productor | 4 | 5 |
 | Gus Van Sant | `gus-van-sant` | /personas/gus-van-sant/ | Director, Guionista, Productor | 4 | 5 |
 | Akira Kurosawa | `akira-kurosawa` | /personas/akira-kurosawa/ | Director, Guionista | 3 | 4 |
+
+### Bio Extendida incorporada en esta branch
+
+| Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
+| --- | --- | --- | --- | ---: | ---: |
+| Adrián Suar | `adrian-suar` | /personas/adrian-suar/ | Actor / Director / Productor | 1 | 11 |
