@@ -68,4 +68,37 @@ const forcedSlugs = forcedManifest.recommendations.map(({ slug }) => slug);
 assert.ok(!forcedSlugs.includes('nueva-1'), 'la rotación forzada debe excluir la edición vigente');
 assert.ok(!forcedSlugs.includes('clasica-1'), 'la rotación forzada debe excluir la edición vigente');
 
+const rotationPool = [
+	...Array.from({ length: 12 }, (_, index) =>
+		createMovie({
+			slug: `rotation-new-${index + 1}`,
+			year: 2025,
+			releaseDate: '2025-01-01',
+			releasePlatform: 'Netflix',
+		}),
+	),
+	...Array.from({ length: 12 }, (_, index) =>
+		createMovie({
+			slug: `rotation-classic-${index + 1}`,
+			year: 1980,
+			releasePlatform: 'Netflix',
+		}),
+	),
+];
+
+const firstWeek = getWeeklyRecommendationManifest(rotationPool, new Date('2026-08-23T12:00:00Z'));
+const sameWeek = getWeeklyRecommendationManifest(rotationPool, new Date('2026-08-23T18:00:00Z'));
+const nextWeek = getWeeklyRecommendationManifest(rotationPool, new Date('2026-08-30T12:00:00Z'));
+const firstWeekSlugs = firstWeek.recommendations.map(({ slug }) => slug);
+const nextWeekSlugs = nextWeek.recommendations.map(({ slug }) => slug);
+const repeatedSlugs = nextWeekSlugs.filter((slug) => firstWeekSlugs.includes(slug));
+
+assert.deepEqual(
+	sameWeek.recommendations,
+	firstWeek.recommendations,
+	'la edición debe ser estable durante la misma semana',
+);
+assert.equal(repeatedSlugs.length, 0, 'la edición siguiente no debe repetir la anterior si hay candidatos suficientes');
+assert.notDeepEqual(nextWeek.recommendations, firstWeek.recommendations, 'la semana siguiente debe rotar la selección');
+
 console.log('weekly recommendations: ok');

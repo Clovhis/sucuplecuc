@@ -7,7 +7,6 @@ import HomePrimaryCatalog from '../components/HomePrimaryCatalog.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
 import UpcomingReleases2027 from '../components/UpcomingReleases2027.astro';
 import WeeklyRecommendationsCarousel from '../components/WeeklyRecommendationsCarousel.astro';
-import { WEEKLY_RECOMMENDATIONS } from '../data/weeklyRecommendations.generated';
 import { getCinemaNews } from '../lib/cinemaNews';
 import { getEditorialRankings } from '../lib/editorialRankings';
 import {
@@ -28,6 +27,7 @@ import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
 import {
 	WEEKLY_RECOMMENDATION_ERA_LABELS,
+	getWeeklyRecommendationManifest,
 	getWeeklyRecommendationPlatform,
 } from '../lib/weekly-recommendations';
 import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
@@ -83,7 +83,11 @@ const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => ({
 	posterUrl: getPosterUrl(movie.poster),
 	url: `${import.meta.env.BASE_URL}peliculas/${movie.slug}/`,
 }));
-const weeklyRecommendations = WEEKLY_RECOMMENDATIONS.recommendations.flatMap((entry) => {
+// The generated snapshot is kept for the scheduled refresh audit, but the
+// homepage derives the current edition from the catalog at build time. This
+// prevents a later content branch from restoring an older snapshot.
+const weeklyManifest = getWeeklyRecommendationManifest(movies, new Date());
+const weeklyRecommendations = weeklyManifest.recommendations.flatMap((entry) => {
 	const movie = movies.find((candidate) => candidate.slug === entry.slug);
 	const platform = movie ? getWeeklyRecommendationPlatform(movie) : null;
 	if (!movie || !platform) {
