@@ -1327,6 +1327,7 @@ const SUPERHERO_EXCLUDE_TOKENS = [
 	'spider-verse',
 	'mario',
 	'blade runner',
+	'ricki and the flash',
 ];
 
 const SUPERHERO_INCLUDED_SLUGS = new Set([

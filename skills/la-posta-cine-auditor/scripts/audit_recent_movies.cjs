@@ -85,7 +85,7 @@ const WAR_FILTER_EVIDENCE_PATTERN = /\b(?:guerra|war|frente|soldad\w*|ejercit\w*
 const SUPERHERO_INCLUDE_TOKENS = [
 	'ant-man', 'aquaman', 'avengers', 'batman', 'batgirl', 'batman v superman', 'birds of prey', 'black adam', 'black panther', 'black widow', 'blade', 'blue beetle', 'captain america', 'captain marvel', 'daredevil', 'deadpool', 'doctor strange', 'elektra', 'eternals', 'fantastic four', 'ghost rider', 'green lantern', 'guardians of the galaxy', 'howard the duck', 'hulk', 'iron man', 'justice league', 'kraven', 'madame web', 'man of steel', 'morbius', 'punisher', 'shang-chi', 'shazam', 'spider-man', 'suicide squad', 'supergirl', 'superman', 'the avengers', 'the flash', 'the incredible hulk', 'the marvels', 'thunderbolts', 'thor', 'venom', 'watchmen', 'wolverine', 'wonder woman', 'x-men', 'zack snyders justice league',
 ];
-const SUPERHERO_EXCLUDE_TOKENS = ['big hero 6', 'into the spider-verse', 'across the spider-verse', 'spider-verse', 'mario', 'blade runner'];
+const SUPERHERO_EXCLUDE_TOKENS = ['big hero 6', 'into the spider-verse', 'across the spider-verse', 'spider-verse', 'mario', 'blade runner', 'ricki and the flash'];
 const SUPERHERO_INCLUDED_SLUGS = new Set(['catwoman-2004', 'constantine-2005', 'dark-phoenix-2019', 'jonah-hex-2010', 'logan-2017', 'the-dark-knight-2008', 'the-dark-knight-rises-2012', 'the-new-mutants-2020']);
 const RECOMMENDED_LABEL_PATTERNS = [
 	'recomendada',
