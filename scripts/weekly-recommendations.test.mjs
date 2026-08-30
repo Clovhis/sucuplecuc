@@ -58,4 +58,14 @@ assert.ok(!selectedSlugs.includes('cine'), 'no debe incluir películas de cine')
 assert.ok(!selectedSlugs.includes('cine-y-streaming'), 'no debe incluir títulos mixtos cine/plataforma');
 assert.ok(!selectedSlugs.includes('sin-proveedor-confirmado'), 'no debe incluir disponibilidad no confirmada');
 
+const forcedManifest = getWeeklyRecommendationManifest(
+	movies,
+	new Date('2026-08-23T12:00:00Z'),
+	3,
+	new Set(['nueva-1', 'clasica-1']),
+);
+const forcedSlugs = forcedManifest.recommendations.map(({ slug }) => slug);
+assert.ok(!forcedSlugs.includes('nueva-1'), 'la rotación forzada debe excluir la edición vigente');
+assert.ok(!forcedSlugs.includes('clasica-1'), 'la rotación forzada debe excluir la edición vigente');
+
 console.log('weekly recommendations: ok');

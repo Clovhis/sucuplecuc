@@ -3,12 +3,16 @@ import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 
-import { getWeeklyRecommendationManifest } from '../src/lib/weekly-recommendations.ts';
+import { WEEKLY_RECOMMENDATION_LIMIT, getWeeklyRecommendationManifest } from '../src/lib/weekly-recommendations.ts';
+import { WEEKLY_RECOMMENDATIONS } from '../src/data/weeklyRecommendations.generated.ts';
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MOVIES_DIR = path.join(ROOT_DIR, 'src/data/movies');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'src/data/weeklyRecommendations.generated.ts');
 const REFERENCE_DATE_VALUE = process.env.WEEKLY_RECOMMENDATIONS_DATE ?? new Date().toISOString().slice(0, 10);
+const FORCE_ROTATION = new Set(['1', 'true', 'yes']).has(
+	String(process.env.WEEKLY_RECOMMENDATIONS_FORCE_ROTATION ?? '').trim().toLowerCase(),
+);
 
 function parseReferenceDate(value) {
 	const referenceDate = new Date(`${value}T12:00:00Z`);
@@ -41,7 +45,17 @@ function renderGeneratedFile(manifest) {
 async function main() {
 	const movies = await loadMovies();
 	const referenceDate = parseReferenceDate(REFERENCE_DATE_VALUE);
-	const manifest = getWeeklyRecommendationManifest(movies, referenceDate);
+	const currentWeek = getWeeklyRecommendationManifest(movies, referenceDate, 0).weekKey;
+	const shouldExcludeCurrentEdition = FORCE_ROTATION || WEEKLY_RECOMMENDATIONS.weekKey !== currentWeek;
+	const excludedSlugs = shouldExcludeCurrentEdition
+		? new Set(WEEKLY_RECOMMENDATIONS.recommendations.map(({ slug }) => slug))
+		: new Set();
+	const manifest = getWeeklyRecommendationManifest(
+		movies,
+		referenceDate,
+		WEEKLY_RECOMMENDATION_LIMIT,
+		excludedSlugs,
+	);
 
 	if (manifest.recommendations.length === 0) {
 		throw new Error('No se encontraron películas recomendadas de plataformas para la edición semanal.');
@@ -54,6 +68,8 @@ async function main() {
 				generatedAt: manifest.generatedAt,
 				weekKey: manifest.weekKey,
 				count: manifest.recommendations.length,
+				forceRotation: FORCE_ROTATION,
+				excludedCount: excludedSlugs.size,
 				slugs: manifest.recommendations.map(({ slug }) => slug),
 			},
 			null,

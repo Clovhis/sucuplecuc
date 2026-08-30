@@ -189,27 +189,7 @@ function rankCandidates(candidates: Candidate[], weekKey: string): Candidate[] {
 	});
 }
 
-export function getWeeklyRecommendationManifest(
-	movies: Movie[],
-	referenceDate = new Date(),
-	limit = WEEKLY_RECOMMENDATION_LIMIT,
-): WeeklyRecommendationManifest {
-	const normalizedLimit = Math.max(0, Math.floor(limit));
-	const weekKey = getWeekKey(referenceDate);
-	const candidates = rankCandidates(
-		movies
-			.filter(
-				(movie) =>
-					isReleasedForWeeklyRecommendations(movie, referenceDate) && isHighQualityMovie(movie),
-			)
-			.map((movie) => ({
-				movie,
-				era: getWeeklyRecommendationEra(movie, referenceDate),
-				qualityScore: getQualityScore(movie),
-			})),
-		weekKey,
-	);
-
+function selectCandidates(candidates: Candidate[], limit: number): Candidate[] {
 	const selectedByEra: Record<WeeklyRecommendationEra, Candidate[]> = {
 		nueva: [],
 		clasica: [],
@@ -231,12 +211,12 @@ export function getWeeklyRecommendationManifest(
 		}
 	};
 
-	const targetEraCount = Math.min(2, Math.ceil(normalizedLimit / 3));
+	const targetEraCount = Math.min(2, Math.ceil(limit / 3));
 	pickFromEra('nueva', targetEraCount);
 	pickFromEra('clasica', targetEraCount);
 
 	for (const candidate of candidates) {
-		if (selectedSlugs.size >= normalizedLimit || selectedSlugs.has(candidate.movie.slug)) {
+		if (selectedSlugs.size >= limit || selectedSlugs.has(candidate.movie.slug)) {
 			continue;
 		}
 
@@ -245,7 +225,7 @@ export function getWeeklyRecommendationManifest(
 	}
 
 	const selected: Candidate[] = [];
-	for (let index = 0; selected.length < normalizedLimit; index += 1) {
+	for (let index = 0; selected.length < limit; index += 1) {
 		let addedAtThisIndex = false;
 		for (const era of ['nueva', 'clasica', 'para-descubrir'] as WeeklyRecommendationEra[]) {
 			const candidate = selectedByEra[era][index];
@@ -255,7 +235,7 @@ export function getWeeklyRecommendationManifest(
 
 			selected.push(candidate);
 			addedAtThisIndex = true;
-			if (selected.length >= normalizedLimit) {
+			if (selected.length >= limit) {
 				break;
 			}
 		}
@@ -263,6 +243,39 @@ export function getWeeklyRecommendationManifest(
 		if (!addedAtThisIndex) {
 			break;
 		}
+	}
+
+	return selected;
+}
+
+export function getWeeklyRecommendationManifest(
+	movies: Movie[],
+	referenceDate = new Date(),
+	limit = WEEKLY_RECOMMENDATION_LIMIT,
+	excludedSlugs: ReadonlySet<string> = new Set(),
+): WeeklyRecommendationManifest {
+	const normalizedLimit = Math.max(0, Math.floor(limit));
+	const weekKey = getWeekKey(referenceDate);
+	const rankedCandidates = rankCandidates(
+		movies
+			.filter(
+				(movie) =>
+					isReleasedForWeeklyRecommendations(movie, referenceDate) && isHighQualityMovie(movie),
+			)
+			.map((movie) => ({
+				movie,
+				era: getWeeklyRecommendationEra(movie, referenceDate),
+				qualityScore: getQualityScore(movie),
+			})),
+		weekKey,
+	);
+	const freshCandidates = rankedCandidates.filter((candidate) => !excludedSlugs.has(candidate.movie.slug));
+	const selected = selectCandidates(freshCandidates, normalizedLimit);
+
+	if (selected.length < normalizedLimit) {
+		const selectedSlugs = new Set(selected.map((candidate) => candidate.movie.slug));
+		const fallbackCandidates = rankedCandidates.filter((candidate) => !selectedSlugs.has(candidate.movie.slug));
+		selected.push(...selectCandidates(fallbackCandidates, normalizedLimit - selected.length));
 	}
 
 	return {

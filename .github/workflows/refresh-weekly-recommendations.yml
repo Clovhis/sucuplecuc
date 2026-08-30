@@ -5,6 +5,12 @@ on:
     # 09:30 Argentina (ART, UTC-3) every Sunday.
     - cron: '30 12 * * 0'
   workflow_dispatch:
+    inputs:
+      force_rotation:
+        description: 'Forzar una selección distinta a la edición vigente'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -35,6 +41,8 @@ jobs:
         run: npm ci
 
       - name: Generate weekly recommendations
+        env:
+          WEEKLY_RECOMMENDATIONS_FORCE_ROTATION: ${{ inputs.force_rotation || false }}
         run: npm run refresh:weekly-recommendations
 
       - name: Test weekly recommendation selector
