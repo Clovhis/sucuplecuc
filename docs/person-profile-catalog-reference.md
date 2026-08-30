@@ -1,8 +1,8 @@
 # Catalogo de personas con ficha exclusiva
 
-Actualizado manualmente el 2026-08-25. Fuente: `src/data/personProfiles.ts`
+Actualizado manualmente el 2026-08-30. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 525
+Total de personas con ficha exclusiva: 528
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -390,6 +390,12 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Zoe Saldaña | `zoe-saldana` | /personas/zoe-saldana/ | Actriz | 4 | 3 |
 
 ## Fichas incorporadas en esta branch
+
+| Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
+| --- | --- | --- | --- | ---: | ---: |
+| Karl Urban | `karl-urban` | /personas/karl-urban/ | Actor | 4 | 4 |
+| Liv Tyler | `liv-tyler` | /personas/liv-tyler/ | Actriz | 4 | 5 |
+| Sean Astin | `sean-astin` | /personas/sean-astin/ | Actor / Director / Productor | 3 | 5 |
 
 | Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
 | --- | --- | --- | --- | ---: | ---: |

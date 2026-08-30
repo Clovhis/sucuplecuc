@@ -38,6 +38,7 @@ import { researchedEditorialFinalCorrections } from './editorialFinalCorrections
 import { famousPersonProfilesWave13 } from './personProfilesWave13.ts';
 import { requestedPersonProfilesWave14 } from './personProfilesWave14.ts';
 import { catalogGapPersonProfilesWave15 } from './personProfilesWave15.ts';
+import { requestedLotrPersonProfilesWave16 } from './personProfilesWave16.ts';
 
 const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
 	...researchedEditorialBiographies,
@@ -11014,7 +11015,12 @@ const bulkCompletionProfiles = {
 			name: 'Andy Serkis',
 			headline: 'Pionero absoluto de la captura de movimiento y actor clave para entender el blockbuster digital del siglo XXI.',
 			awards: [{ label: 'Saturn Award', category: 'Mejor actor de reparto', work: 'The Lord of the Rings: The Return of the King', year: 2004 }],
-			knownFor: ['dawn-of-the-planet-of-the-apes-2014', 'war-for-the-planet-of-the-apes-2017'],
+			knownFor: [
+				'the-lord-of-the-rings-the-two-towers-2002',
+				'the-lord-of-the-rings-the-return-of-the-king-2003',
+				'dawn-of-the-planet-of-the-apes-2014',
+				'war-for-the-planet-of-the-apes-2017',
+			],
 		},
 		{
 			slug: 'michael-caine',
@@ -13904,4 +13910,5 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 	...famousPersonProfilesWave13,
 	...requestedPersonProfilesWave14,
 	...catalogGapPersonProfilesWave15,
+	...requestedLotrPersonProfilesWave16,
 });
