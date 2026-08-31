@@ -819,11 +819,16 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'París, Francia',
 		headline: 'Actriz francesa de elegancia fría y gran libertad, capaz de pasar del musical al fantástico y al drama político.',
 		spotlight: 'Su distancia nunca es vacío: suele contener deseo, ironía y una decisión que el personaje todavía no comparte.',
-		awards: [],
+		awards: [{ label: 'César', category: 'Mejor actriz', work: 'Le Dernier Métro', year: 1981 }],
 		knownFor: ['persepolis-2007'],
 		editorialBiography: [
 			'Catherine Deneuve hizo de la ambigüedad una forma de magnetismo. En Persépolis presta una voz que combina humor, autoridad y afecto, pero su trayectoria también incluye melodrama, musical, policial y fantasía.',
 			'La imagen de estrella clásica nunca la dejó quieta. Deneuve puede actuar desde el control o dejar que una emoción rompa la superficie, y esa capacidad explica por qué su presencia sigue funcionando incluso cuando la película decide burlarse de ella.',
+		],
+		sourceUrls: [
+			'https://www.wikidata.org/wiki/Q106418',
+			'https://www.academie-cinema.org/evenements/ceremonie-des-cesar-1981/',
+			'https://www.academie-cinema.org/personnes/catherine-deneuve-174246/',
 		],
 	},
 	{
@@ -1030,21 +1035,6 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 ];
 
 const additionalFamousProfileSeedsA: FamousProfileSeed[] = [
-	{
-		slug: 'lupita-nyongo',
-		name: "Lupita Nyong'o",
-		roles: ['Actriz'],
-		birthPlace: 'Ciudad de México, México',
-		headline: 'Actriz de presencia luminosa y enorme precisión, capaz de pasar del drama histórico al terror y el espectáculo popular.',
-		spotlight: 'Su calidez nunca borra la tensión: incluso en una sonrisa puede aparecer el esfuerzo de alguien que está resistiendo.',
-		awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: '12 Years a Slave', year: 2014 }],
-		knownFor: ['12-years-a-slave-2013', 'a-quiet-place-day-one-2024', 'black-panther-2018', 'black-panther-wakanda-forever-2022'],
-		editorialBiography: [
-			"Lupita Nyong'o llegó al cine internacional con una actuación que convertía el dolor histórico en una experiencia íntima. En 12 años de esclavitud su personaje no es una alegoría distante: es una mujer cuya mirada sigue buscando un espacio de decisión dentro de un sistema diseñado para quitárselo.",
-			"Pantera negra y Un lugar en silencio: Día uno muestran otras herramientas. Nyong'o puede sostener una superproducción desde la fisicidad, la voz o el silencio, y hacer que el espectáculo conserve una emoción concreta. Su presencia parece abierta, pero siempre guarda una reserva de fuerza.",
-		],
-		sourceUrls: ['https://www.oscars.org/oscars/ceremonies/2014'],
-	},
 	{
 		slug: 'diego-luna',
 		name: 'Diego Luna',
@@ -1289,20 +1279,6 @@ const additionalFamousProfileSeedsB: FamousProfileSeed[] = [
 		],
 	},
 	{
-		slug: 'catherine-ohara',
-		name: "Catherine O'Hara",
-		roles: ['Actriz'],
-		birthPlace: 'Toronto, Ontario, Canadá',
-		headline: 'Actriz y comediante de imaginación desbordada, capaz de convertir una reacción cotidiana en una escena completa.',
-		spotlight: 'Su humor nace del compromiso absoluto: O’Hara nunca parece saber que está exagerando, y por eso todo resulta más gracioso.',
-		awards: [],
-		knownFor: ['beetlejuice-1988', 'beetlejuice-beetlejuice-2024', 'frankenweenie-2012'],
-		editorialBiography: [
-			"Catherine O'Hara trabaja con una libertad cómica poco común. En Beetlejuice y su continuación interpreta el desconcierto familiar como una forma de energía; en Frankenweenie, su voz vuelve cálida una rareza gótica.",
-			'Su carrera está construida sobre la capacidad de escuchar el absurdo y responderle con absoluta seriedad. O’Hara puede robar una escena sin cerrarla: deja espacio para que el resto del elenco siga jugando. La exageración, en sus manos, siempre conserva una lógica afectiva.',
-		],
-	},
-	{
 		slug: 'danny-huston',
 		name: 'Danny Huston',
 		roles: ['Actor'],
@@ -1473,21 +1449,6 @@ const additionalFamousProfileSeedsC: FamousProfileSeed[] = [
 			'Richard E. Grant lleva a la pantalla una relación muy consciente con el estilo. Logan lo ubica en un mundo de mutantes y desgaste; sus trabajos recientes conservan la capacidad de volver distinguido a un personaje aun cuando está rodeado de caos.',
 			'Puede ser venenoso, cómico o sorprendentemente tierno. Grant nunca abandona del todo la teatralidad, pero la usa para revelar cuánto necesita el personaje que los demás crean en su versión de los hechos.',
 		],
-	},
-	{
-		slug: 'peter-otoole',
-		name: "Peter O'Toole",
-		roles: ['Actor'],
-		birthPlace: 'Connemara, Irlanda',
-		headline: 'Actor de magnetismo desmesurado, capaz de combinar belleza, ironía y una profunda sensación de desgaste.',
-		spotlight: 'Su grandeza nunca es lisa: O’Toole hacía visible el costo de ser una figura demasiado intensa para su propia vida.',
-		awards: [{ label: 'Oscar', category: 'Premio honorario', work: 'Trayectoria cinematográfica', year: 2003 }],
-		knownFor: ['lawrence-of-arabia-1962', 'supergirl-1984', 'the-last-emperor-1987'],
-		editorialBiography: [
-			'Peter O’Toole convirtió Lawrence de Arabia en una mezcla de aventura, misticismo y peligro narcisista. Su presencia podía llenar el desierto, pero también sugería que el personaje estaba empezando a perderse dentro de su propia leyenda.',
-			'En Supergirl y El último emperador aparece otra relación con la escala, más cercana al cuento y a la memoria histórica. O’Toole sabía ser grandioso sin dejar de parecer frágil. La cámara lo sigue como si temiera que pudiera desaparecer.',
-		],
-		sourceUrls: ['https://www.oscars.org/oscars/ceremonies/2003'],
 	},
 	{
 		slug: 'toshiro-mifune',

@@ -626,7 +626,7 @@
 	"Adrián Caetano": {
 		"name": "Adrián Caetano",
 		"birthYear": 1969,
-		"nationalityPrimary": "Argentino",
+		"nationalityPrimary": "Uruguayo",
 		"image": "/people/adrian-caetano-nm0128382.jpg",
 		"imdbId": "nm0128382",
 		"imdbUrl": "https://www.imdb.com/name/nm0128382/",
@@ -636,9 +636,10 @@
 			"https://www.imdb.com/name/nm0128382/",
 			"https://www.themoviedb.org/person/230217-adrian-caetano"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1969"
+		"birthDate": "1969-12-20",
+		"notes": "Director uruguayo-argentino; nació en Montevideo y desarrolló su carrera en Argentina."
 	},
 	"Adrian Chiarella": {
 		"name": "Adrian Chiarella",
@@ -7328,9 +7329,9 @@
 			"https://www.imdb.com/name/nm4422686/",
 			"https://www.themoviedb.org/person/1290466-barry-keoghan"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1992-10-17"
+		"birthDate": "1992-10-18"
 	},
 	"Barry Levinson": {
 		"name": "Barry Levinson",
@@ -11004,16 +11005,16 @@
 		"name": "Caitríona Balfe",
 		"birthYear": 1979,
 		"nationalityPrimary": "Irlandesa",
-		"image": "/people/caitriona-balfe-nm2928020.jpg",
-		"imdbId": "nm2928020",
-		"imdbUrl": "https://www.imdb.com/name/nm2928020/",
+		"image": "/people/caitriona-balfe-nm1495520.jpg",
+		"imdbId": "nm1495520",
+		"imdbUrl": "https://www.imdb.com/name/nm1495520/",
 		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caitriona%20Balfe%20at%20the%202024%20Toronto%20International%20Film%20Festival%20(crop).jpg?width=120",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q2933352",
-			"https://www.imdb.com/name/nm2928020/",
+			"https://www.imdb.com/name/nm1495520/",
 			"https://www.themoviedb.org/person/147056-caitr-ona-balfe"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1979-10-04"
 	},
@@ -11957,14 +11958,20 @@
 	},
 	"Catherine Deneuve": {
 		"name": "Catherine Deneuve",
+		"birthDate": "1943-10-22",
+		"birthYear": 1943,
+		"nationalityPrimary": "Francesa",
 		"image": "/people/catherine-deneuve-50.jpg",
+		"imdbId": "nm0000130",
+		"imdbUrl": "https://www.imdb.com/name/nm0000130/",
 		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/oDaIezXUMXr1KPLCjnyeA2koAnV.jpg",
 		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q106418",
+			"https://www.imdb.com/name/nm0000130/",
 			"https://www.themoviedb.org/person/50-catherine-deneuve"
 		],
-		"lastVerifiedAt": "2026-08-11",
-		"source": "tmdb-cache",
-		"nationalityPrimary": "Nacionalidad no informada"
+		"lastVerifiedAt": "2026-08-31",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Catherine Hicks": {
 		"name": "Catherine Hicks",
@@ -13535,16 +13542,16 @@
 		"name": "Chloé Zhao",
 		"birthYear": 1982,
 		"nationalityPrimary": "China",
-		"image": "/people/chloe-zhao-nm3144293.jpg",
-		"imdbId": "nm3144293",
-		"imdbUrl": "https://www.imdb.com/name/nm3144293/",
+		"image": "/people/chloe-zhao-nm2125482.jpg",
+		"imdbId": "nm2125482",
+		"imdbUrl": "https://www.imdb.com/name/nm2125482/",
 		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chloe%20Zhao.jpg?width=120",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q21078321",
-			"https://www.imdb.com/name/nm3144293/",
+			"https://www.imdb.com/name/nm2125482/",
 			"https://www.themoviedb.org/person/1395183-chloe-zhao"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1982-03-31"
 	},
@@ -14500,9 +14507,9 @@
 			"https://www.imdb.com/name/nm0003160/",
 			"https://www.themoviedb.org/person/9033-christopher-mcquarrie"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1968"
+		"birthDate": "1968-10-25"
 	},
 	"Christopher Miller": {
 		"name": "Christopher Miller",
@@ -21732,7 +21739,7 @@
 	"Edward Berger": {
 		"name": "Edward Berger",
 		"birthYear": 1970,
-		"nationalityPrimary": "Austriaco",
+		"nationalityPrimary": "Austriaco y suizo",
 		"image": "/people/edward-berger-nm0074163.jpg",
 		"imdbId": "nm0074163",
 		"imdbUrl": "https://www.imdb.com/name/nm0074163/",
@@ -21742,9 +21749,9 @@
 			"https://www.imdb.com/name/nm0074163/",
 			"https://www.themoviedb.org/person/221522-edward-berger"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1970"
+		"birthDate": "1970-03-06"
 	},
 	"Edward Burns": {
 		"name": "Edward Burns",
@@ -24975,8 +24982,8 @@
 	},
 	"Federico Luppi": {
 		"name": "Federico Luppi",
-		"birthDate": "1934-02-23",
-		"birthYear": 1934,
+		"birthDate": "1936-02-23",
+		"birthYear": 1936,
 		"deathDate": "2017-10-20",
 		"deathYear": 2017,
 		"nationalityPrimary": "Argentino",
@@ -24989,7 +24996,7 @@
 			"https://www.imdb.com/name/nm0527002/",
 			"https://www.themoviedb.org/person/17094-federico-luppi"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache"
 	},
 	"Felicity Jones": {
@@ -34511,9 +34518,9 @@
 	},
 	"James Wan": {
 		"name": "James Wan",
-		"birthDate": "1977-02-27",
+		"birthDate": "1977-02-26",
 		"birthYear": 1977,
-		"nationalityPrimary": "Malayo",
+		"nationalityPrimary": "Australiano",
 		"image": "/people/james-wan-nm1490123.jpg",
 		"imdbId": "nm1490123",
 		"imdbUrl": "https://www.imdb.com/name/nm1490123/",
@@ -34523,7 +34530,7 @@
 			"https://www.imdb.com/name/nm1490123/",
 			"https://www.themoviedb.org/person/2127-james-wan"
 		],
-		"lastVerifiedAt": "2026-08-22",
+		"lastVerifiedAt": "2026-08-31",
 		"source": "wikidata-imdb-cache"
 	},
 	"James Ward Byrkit": {
@@ -39148,9 +39155,8 @@
 		"imdbUrl": "https://www.imdb.com/name/nm0000422/",
 		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Goodman%202014.jpg?width=640",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q112002270",
-			"https://www.themoviedb.org/person/1230-john-goodman",
 			"https://www.wikidata.org/wiki/Q215072",
+			"https://www.themoviedb.org/person/1230-john-goodman",
 			"https://www.imdb.com/name/nm0000422/"
 		],
 		"lastVerifiedAt": "2026-08-25",
@@ -39496,8 +39502,8 @@
 	},
 	"John Leguizamo": {
 		"name": "John Leguizamo",
-		"birthYear": 1960,
-		"nationalityPrimary": "Estadounidense",
+		"birthYear": 1964,
+		"nationalityPrimary": "Colombiano-estadounidense",
 		"image": "/people/john-leguizamo-nm0000491.jpg",
 		"imdbId": "nm0000491",
 		"imdbUrl": "https://www.imdb.com/name/nm0000491/",
@@ -39505,11 +39511,14 @@
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q295233",
 			"https://www.imdb.com/name/nm0000491/",
-			"https://www.themoviedb.org/person/5723-john-leguizamo"
+			"https://www.themoviedb.org/person/5723-john-leguizamo",
+			"https://www.proimagenescolombia.com/secciones/cine_colombiano/perfiles/perfil_persona.php?id_perfil=3800",
+			"https://www.ibdb.com/broadway-cast-staff/john-leguizamo-6851"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1960-07-22"
+		"lastVerifiedAt": "2026-08-31",
+		"source": "wikidata-ibdb-proimagenes-imdb-cache",
+		"birthDate": "1964-07-22",
+		"notes": "Proimágenes Colombia e IBDB consignan 22 de julio de 1964; IMDb mantiene 1960, una discrepancia pública que conviene conservar documentada."
 	},
 	"John Lithgow": {
 		"name": "John Lithgow",
@@ -50034,13 +50043,13 @@
 		"imdbUrl": "https://www.imdb.com/name/nm1166781/",
 		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/h3HwOm9QwkusqUrImb8kQJsGTiN.jpg",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q122884193",
 			"https://www.themoviedb.org/person/1079506-luis-ortega",
 			"https://www.wikidata.org/wiki/Q2843557",
 			"https://www.imdb.com/name/nm1166781/"
 		],
-		"lastVerifiedAt": "2026-03-15",
-		"source": "wikidata-imdb-tmdb-cache"
+		"lastVerifiedAt": "2026-08-31",
+		"source": "wikidata-imdb-tmdb-cache",
+		"birthDate": "1980-07-12"
 	},
 	"Luis Puenzo": {
 		"name": "Luis Puenzo",

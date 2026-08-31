@@ -43,27 +43,31 @@ test('omite la línea de nacimiento cuando una persona no tiene ese dato', async
 	expect(nationalityBeforeBirth).toBe(true);
 });
 
-test('omite los datos de nacimiento ausentes en el directorio y la ficha individual', async ({ page }) => {
+test('muestra los datos de nacimiento verificados en el directorio y la ficha individual', async ({ page }) => {
+	const today = new Date();
+	const expectedAge =
+		today.getUTCFullYear() - 1943 -
+		(today.getUTCMonth() + 1 < 10 || (today.getUTCMonth() + 1 === 10 && today.getUTCDate() < 22) ? 1 : 0);
+
 	await page.goto('/personas/', { waitUntil: 'load' });
 
 	const catherineRow = page.locator('[data-person-row]').filter({ hasText: 'Catherine Deneuve' });
 	await expect(catherineRow).toBeVisible();
-	await expect(catherineRow.locator('.people-index__fact').filter({ hasText: 'Edad' })).toHaveCount(0);
-	await expect(catherineRow).not.toContainText('Edad no disponible');
+	await expect(catherineRow.locator('.people-index__fact').filter({ hasText: 'Edad' })).toContainText(`${expectedAge} años`);
 
 	await page.goto('/personas/catherine-deneuve/', { waitUntil: 'load' });
 
 	const facts = page.locator('.person-page__facts');
-	await expect(facts.locator('.person-page__fact').filter({ hasText: 'Nacimiento' })).toHaveCount(0);
-	await expect(facts.locator('.person-page__fact').filter({ hasText: 'Edad' })).toHaveCount(0);
+	await expect(facts.locator('.person-page__fact').filter({ hasText: 'Nacimiento' })).toContainText('22 de octubre de 1943');
+	await expect(facts.locator('.person-page__fact').filter({ hasText: 'Edad' })).toContainText(`${expectedAge} años`);
 	await expect(facts).not.toContainText(/No cargado|No confirmada/);
 });
 
-test('no serializa un fallback de edad faltante en el buscador de la home', async ({ page }) => {
+test('serializa la edad verificada en el buscador de la home', async ({ page }) => {
 	await page.goto('/', { waitUntil: 'load' });
 
 	const catherineEntry = page.locator('[data-person-search-entry][data-person-title="Catherine Deneuve"]');
-	await expect(catherineEntry).toHaveAttribute('data-person-age', '');
+	await expect(catherineEntry).toHaveAttribute('data-person-age', /\d+/);
 
 	const personShowcaseCard = page.locator('.home-people-showcase__card:not(.home-people-showcase__card--cta)').first();
 	await expect(personShowcaseCard).toBeVisible();

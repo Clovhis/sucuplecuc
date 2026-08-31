@@ -154,6 +154,8 @@ function main() {
 	console.log(`Changed files detected: ${changedFiles.length}`);
 
 	run('npm', ['run', 'catalog:movies:check']);
+	run('npm', ['run', 'catalog:people:check']);
+	run('npm', ['run', 'catalog:people:reference:check']);
 	run('npm', ['run', 'audit:content-quality:strict', '--', '--full']);
 	run('npm', ['run', 'audit:editorial-low-value']);
 	run('npm', ['run', 'audit:profile-originality']);

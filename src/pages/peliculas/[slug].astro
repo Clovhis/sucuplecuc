@@ -237,12 +237,17 @@ function getPersonAge(person: {
 	deathDate?: string;
 	deathYear?: number;
 }): number | undefined {
-	const birthParts =
-		parsePersonDate(person.birthDate) ??
-		(person.birthYear ? { year: person.birthYear, precision: 1 } : undefined);
-	const endParts =
-		parsePersonDate(person.deathDate) ??
-		(person.deathYear ? { year: person.deathYear, precision: 1 } : currentDateParts);
+	const birthParts = parsePersonDate(person.birthDate);
+	if (!birthParts || birthParts.precision < 3) {
+		return undefined;
+	}
+
+	const deathParts = parsePersonDate(person.deathDate);
+	if ((person.deathDate || person.deathYear) && (!deathParts || deathParts.precision < 3)) {
+		return undefined;
+	}
+
+	const endParts = deathParts ?? currentDateParts;
 
 	if (!birthParts || !endParts || endParts.year < birthParts.year) {
 		return undefined;

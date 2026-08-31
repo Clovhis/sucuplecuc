@@ -41,6 +41,7 @@ import { catalogGapPersonProfilesWave15 } from './personProfilesWave15.ts';
 import { requestedLotrPersonProfilesWave16 } from './personProfilesWave16.ts';
 import { requestedArgentinePersonProfilesWave17 } from './personProfilesWave17.ts';
 import { requestedArgentinePersonProfilesWave18 } from './personProfilesWave18.ts';
+import { personProfileCatalogCredits } from './personProfileCatalogCredits.generated.ts';
 
 const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
 	...researchedEditorialBiographies,
@@ -209,7 +210,7 @@ const catalogBackedProfileMeta: Record<string, { profileImage?: string; referenc
 	},
 	'caitriona-balfe': {
 		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caitriona%20Balfe%20at%20the%202024%20Toronto%20International%20Film%20Festival%20(crop).jpg?width=640',
-		referenceUrls: ['https://www.wikidata.org/wiki/Q2933352', 'https://www.imdb.com/name/nm2928020/', 'https://www.themoviedb.org/person/147056-caitr-ona-balfe'],
+		referenceUrls: ['https://www.wikidata.org/wiki/Q2933352', 'https://www.imdb.com/name/nm1495520/', 'https://www.themoviedb.org/person/147056-caitr-ona-balfe'],
 	},
 	'kristen-wiig': {
 		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kristin%20Wiig%202013.jpg?width=640',
@@ -353,7 +354,7 @@ const catalogBackedProfileMeta: Record<string, { profileImage?: string; referenc
 	},
 	'chloe-zhao': {
 		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chloe%20Zhao.jpg?width=640',
-		referenceUrls: ['https://www.wikidata.org/wiki/Q21078321', 'https://www.imdb.com/name/nm3144293/', 'https://www.themoviedb.org/person/1395183-chloe-zhao'],
+		referenceUrls: ['https://www.wikidata.org/wiki/Q21078321', 'https://www.imdb.com/name/nm2125482/', 'https://www.themoviedb.org/person/1395183-chloe-zhao'],
 	},
 	'sam-mendes': {
 		profileImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Mendes%20in%202022%20(cropped).jpg?width=640',
@@ -1537,7 +1538,7 @@ const personProfileEditorialOverrides: Record<string, Partial<PersonProfileRecor
 			'Dublín, 18 de octubre de 1992) es un actor irlandés.',
 			'Ha recibido varios reconocimientos, incluido un premio BAFTA, y ha sido nominado a un premio Óscar y dos premios Globo de Oro. Keoghan comenzó a actuar en 2011 y obtuvo reconocimiento en 2017 por sus papeles en Dunkerque (2017) y The Killing of a Sacred Deer (2017).',
 			'Obtuvo elogios por sus actuaciones en la película policial irlandesa Calm with Horses (2019) y en la película de fantasía The Green Knight (2021).',
-			'Barry Keoghan nació el 17 de octubre de 1992 en Summerhill.'
+			'Barry Keoghan nació el 18 de octubre de 1992 en Summerhill.'
 		],
 	},
 	'ben-affleck': {
@@ -3340,7 +3341,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://en.wikipedia.org/wiki/Caitr%C3%ADona_Balfe",
 			"https://www.wikidata.org/wiki/Q2933352",
-			"https://www.imdb.com/name/nm2928020/",
+			"https://www.imdb.com/name/nm1495520/",
 			"https://www.themoviedb.org/person/147056-caitr-ona-balfe"
 		],
 	},
@@ -3465,7 +3466,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/Charlton_Heston",
 			"https://en.wikipedia.org/wiki/Charlton_Heston",
-			"https://www.wikidata.org/wiki/Q104094",
+			"https://www.wikidata.org/wiki/Q80739",
 			"https://www.oscars.org/oscars/ceremonies/1960"
 		],
 	},
@@ -3505,7 +3506,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/Chlo%C3%A9_Zhao",
 			"https://www.wikidata.org/wiki/Q21078321",
-			"https://www.imdb.com/name/nm3144293/",
+			"https://www.imdb.com/name/nm2125482/",
 			"https://www.themoviedb.org/person/1395183-chloe-zhao"
 		],
 	},
@@ -4257,7 +4258,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/Emily_Watson",
 			"https://en.wikipedia.org/wiki/Emily_Watson",
-			"https://www.wikidata.org/wiki/Q268735",
+			"https://www.wikidata.org/wiki/Q229535",
 			"https://www.imdb.com/name/nm0914941/"
 		],
 	},
@@ -4341,7 +4342,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/Eva_Marie_Saint",
 			"https://en.wikipedia.org/wiki/Eva_Marie_Saint",
-			"https://www.wikidata.org/wiki/Q233248",
+			"https://www.wikidata.org/wiki/Q228928",
 			"https://www.imdb.com/name/nm0001710/"
 		],
 	},
@@ -5325,7 +5326,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/Joe_Pesci",
 			"https://en.wikipedia.org/wiki/Joe_Pesci",
-			"https://www.wikidata.org/wiki/Q203900",
+			"https://www.wikidata.org/wiki/Q20178",
 			"https://www.oscars.org/oscars/ceremonies/1991/A"
 		],
 	},
@@ -5367,7 +5368,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/John_Lithgow",
 			"https://en.wikipedia.org/wiki/John_Lithgow",
-			"https://www.wikidata.org/wiki/Q212064",
+			"https://www.wikidata.org/wiki/Q311271",
 			"https://www.televisionacademy.com/bios/john-lithgow"
 		],
 	},
@@ -7365,7 +7366,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/Talia_Shire",
 			"https://en.wikipedia.org/wiki/Talia_Shire",
-			"https://www.wikidata.org/wiki/Q228998",
+			"https://www.wikidata.org/wiki/Q108622",
 			"https://www.imdb.com/name/nm0001735/"
 		],
 	},
@@ -7672,7 +7673,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/William_Wyler",
 			"https://www.britannica.com/biography/William-Wyler",
-			"https://www.wikidata.org/wiki/Q51540",
+			"https://www.wikidata.org/wiki/Q51495",
 			"https://www.oscars.org/oscars/ceremonies/1960"
 		],
 	},
@@ -7686,7 +7687,7 @@ const wikipediaBiographyOverrides: Record<string, Pick<PersonProfileRecord, 'bio
 		referenceUrls: [
 			"https://es.wikipedia.org/wiki/Winona_Ryder",
 			"https://en.wikipedia.org/wiki/Winona_Ryder",
-			"https://www.wikidata.org/wiki/Q106175",
+			"https://www.wikidata.org/wiki/Q101797",
 			"https://goldenglobes.com/film/age-of-innocence-the/"
 		],
 	},
@@ -7800,6 +7801,20 @@ function applyPersonProfileEditorialOverrides(
 			];
 		}),
 	);
+}
+
+function mergeCatalogKnownFor(profile: PersonProfileRecord, catalogCredits: string[]): string[] {
+	const knownFor = [...profile.knownFor];
+	const seen = new Set(knownFor);
+
+	for (const movieSlug of catalogCredits) {
+		if (!seen.has(movieSlug)) {
+			seen.add(movieSlug);
+			knownFor.push(movieSlug);
+		}
+	}
+
+	return knownFor;
 }
 
 const bulkTrendProfiles = {
@@ -11932,7 +11947,7 @@ const bulkRequestedProfiles = {
 			knownFor: ['on-the-waterfront-1954', 'north-by-northwest-1959'],
 			referenceUrls: [
 				'https://en.wikipedia.org/wiki/Eva_Marie_Saint',
-				'https://www.wikidata.org/wiki/Q233248',
+			'https://www.wikidata.org/wiki/Q228928',
 				'https://www.imdb.com/name/nm0001710/',
 			],
 		},
@@ -11945,7 +11960,7 @@ const bulkRequestedProfiles = {
 			knownFor: ['rocky-1976', 'rocky-ii-1979', 'rocky-v-1990'],
 			referenceUrls: [
 				'https://en.wikipedia.org/wiki/Talia_Shire',
-				'https://www.wikidata.org/wiki/Q228998',
+				'https://www.wikidata.org/wiki/Q108622',
 				'https://www.imdb.com/name/nm0001735/',
 			],
 		},
@@ -11958,7 +11973,7 @@ const bulkRequestedProfiles = {
 			knownFor: ['corpse-bride-2005', 'hamnet-2025'],
 			referenceUrls: [
 				'https://en.wikipedia.org/wiki/Emily_Watson',
-				'https://www.wikidata.org/wiki/Q268735',
+				'https://www.wikidata.org/wiki/Q229535',
 				'https://www.imdb.com/name/nm0914941/',
 			],
 		},
@@ -12215,7 +12230,7 @@ const bulkRequestedProfiles = {
 	]),
 };
 
-export const personProfiles: Record<string, PersonProfileRecord> = applyPersonProfileEditorialOverrides({
+const personProfilesWithEditorialOverrides = applyPersonProfileEditorialOverrides({
 	'brad-pitt': {
 		slug: 'brad-pitt',
 		name: 'Brad Pitt',
@@ -13587,7 +13602,7 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 		knownFor: ['beetlejuice-beetlejuice-2024', 'alien-resurrection-1997'],
 		referenceUrls: [
 			'https://en.wikipedia.org/wiki/Winona_Ryder',
-			'https://www.wikidata.org/wiki/Q106175',
+			'https://www.wikidata.org/wiki/Q101797',
 			'https://goldenglobes.com/film/age-of-innocence-the/',
 		],
 	},
@@ -13615,7 +13630,7 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 		knownFor: ['goodfellas-1990', 'home-alone-1990'],
 		referenceUrls: [
 			'https://en.wikipedia.org/wiki/Joe_Pesci',
-			'https://www.wikidata.org/wiki/Q203900',
+			'https://www.wikidata.org/wiki/Q20178',
 			'https://www.oscars.org/oscars/ceremonies/1991/A',
 		],
 	},
@@ -13644,7 +13659,7 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 		knownFor: ['conclave-2024', 'rise-of-the-planet-of-the-apes-2011'],
 		referenceUrls: [
 			'https://en.wikipedia.org/wiki/John_Lithgow',
-			'https://www.wikidata.org/wiki/Q212064',
+			'https://www.wikidata.org/wiki/Q311271',
 			'https://www.televisionacademy.com/bios/john-lithgow',
 		],
 	},
@@ -13672,7 +13687,7 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 		knownFor: ['ben-hur-1959', 'the-greatest-show-on-earth-1952'],
 		referenceUrls: [
 			'https://en.wikipedia.org/wiki/Charlton_Heston',
-			'https://www.wikidata.org/wiki/Q104094',
+			'https://www.wikidata.org/wiki/Q80739',
 			'https://www.oscars.org/oscars/ceremonies/1960',
 		],
 	},
@@ -13762,7 +13777,7 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 		knownFor: ['ben-hur-1959', 'mrs-miniver-1942', 'the-best-years-of-our-lives-1946'],
 		referenceUrls: [
 			'https://www.britannica.com/biography/William-Wyler',
-			'https://www.wikidata.org/wiki/Q51540',
+			'https://www.wikidata.org/wiki/Q51495',
 			'https://www.oscars.org/oscars/ceremonies/1960',
 		],
 	},
@@ -13916,3 +13931,13 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 	...requestedArgentinePersonProfilesWave17,
 	...requestedArgentinePersonProfilesWave18,
 });
+
+export const personProfiles: Record<string, PersonProfileRecord> = Object.fromEntries(
+	Object.entries(personProfilesWithEditorialOverrides).map(([slug, profile]) => [
+		slug,
+		{
+			...profile,
+			knownFor: mergeCatalogKnownFor(profile, personProfileCatalogCredits[slug] ?? []),
+		},
+	]),
+) as Record<string, PersonProfileRecord>;

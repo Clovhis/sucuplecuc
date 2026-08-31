@@ -38,7 +38,7 @@ const pageDescription = isIndexable
 const profileImage =
 	profile.profileImage ?? profile.image ?? profile.remoteImageUrl ?? '/posters/poster-no-disponible.svg';
 const structuredData = createPersonStructuredData(profile, filmography, pageTitle, pageDescription);
-const age = getAge(profile.birthDate, profile.birthYear, profile.deathDate, profile.deathYear);
+const age = getAge(profile.birthDate, profile.deathDate, profile.deathYear);
 const birthLabel = formatPersonDate(profile.birthDate) ?? profile.birthYear;
 const deathDateLabel = formatPersonDate(profile.deathDate) ?? profile.deathYear;
 const lifeFactLabel = deathDateLabel ? 'Fallecimiento' : 'Edad';
@@ -51,15 +51,18 @@ const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '
 const biographyParagraphs = profile.editorialBiography ?? [];
 const visibleSources = Array.from(new Set(profile.referenceUrls ?? []));
 
-function getAge(birthDate?: string, birthYear?: number, deathDate?: string, deathYear?: number): number | undefined {
+function getAge(birthDate?: string, deathDate?: string, deathYear?: number): number | undefined {
 	const currentDate = new Date();
-	if (!birthDate && !birthYear) {
+	if (!birthDate || !/^\d{4}-\d{2}-\d{2}$/.test(birthDate)) {
+		return undefined;
+	}
+	if (deathYear && (!deathDate || !/^\d{4}-\d{2}-\d{2}$/.test(deathDate))) {
 		return undefined;
 	}
 
-	const year = birthDate ? Number.parseInt(birthDate.slice(0, 4), 10) : birthYear;
-	const month = birthDate ? Number.parseInt(birthDate.slice(5, 7), 10) : 1;
-	const day = birthDate ? Number.parseInt(birthDate.slice(8, 10), 10) : 1;
+	const year = Number.parseInt(birthDate.slice(0, 4), 10);
+	const month = Number.parseInt(birthDate.slice(5, 7), 10);
+	const day = Number.parseInt(birthDate.slice(8, 10), 10);
 	const endYear = deathDate ? Number.parseInt(deathDate.slice(0, 4), 10) : (deathYear ?? currentDate.getUTCFullYear());
 	const endMonth = deathDate ? Number.parseInt(deathDate.slice(5, 7), 10) : (deathYear ? 1 : currentDate.getUTCMonth() + 1);
 	const endDay = deathDate ? Number.parseInt(deathDate.slice(8, 10), 10) : (deathYear ? 1 : currentDate.getUTCDate());

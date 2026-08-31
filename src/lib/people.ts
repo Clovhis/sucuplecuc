@@ -35,27 +35,6 @@ function normalizeWhitespace(value: string): string {
 	return value.replace(/\s+/g, ' ').trim();
 }
 
-function parseYear(value?: string): number | undefined {
-	if (!value) {
-		return undefined;
-	}
-
-	const match = value.match(/^(\d{4})/);
-	if (!match) {
-		return undefined;
-	}
-
-	return Number.parseInt(match[1] ?? '', 10);
-}
-
-function getAgeFromYears(startYear: number, endYear: number): number | undefined {
-	if (!Number.isFinite(startYear) || !Number.isFinite(endYear) || endYear < startYear) {
-		return undefined;
-	}
-
-	return endYear - startYear;
-}
-
 function getAgeFromDates(startDate: string, endDate: string): number | undefined {
 	const birthDate = new Date(`${startDate}T00:00:00Z`);
 	const targetDate = new Date(`${endDate}T00:00:00Z`);
@@ -84,24 +63,15 @@ export function getPersonAge(
 	const todayIso = `${today.getUTCFullYear()}-${String(today.getUTCMonth() + 1).padStart(2, '0')}-${String(
 		today.getUTCDate(),
 	).padStart(2, '0')}`;
-	const birthYear = profile.birthYear ?? parseYear(profile.birthDate);
-	const endYear = profile.deathYear ?? parseYear(profile.deathDate) ?? today.getUTCFullYear();
-
-	if (profile.birthDate && /^\d{4}-\d{2}-\d{2}$/.test(profile.birthDate)) {
-		const exactAge = getAgeFromDates(profile.birthDate, profile.deathDate ?? todayIso);
-		if (typeof exactAge === 'number') {
-			return exactAge;
-		}
+	if (!profile.birthDate || !/^\d{4}-\d{2}-\d{2}$/.test(profile.birthDate)) {
+		return undefined;
 	}
 
-	if (typeof birthYear === 'number') {
-		const age = getAgeFromYears(birthYear, endYear);
-		if (typeof age === 'number') {
-			return age;
-		}
+	if (profile.deathYear && (!profile.deathDate || !/^\d{4}-\d{2}-\d{2}$/.test(profile.deathDate))) {
+		return undefined;
 	}
 
-	return undefined;
+	return getAgeFromDates(profile.birthDate, profile.deathDate ?? todayIso);
 }
 
 export function getPersonAgeLabel(

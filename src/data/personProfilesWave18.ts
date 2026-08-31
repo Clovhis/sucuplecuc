@@ -154,12 +154,19 @@ const seeds: ArgentineProfileSeed[] = [
 	},
 	{
 		slug: 'adrian-caetano', name: 'Adrián Caetano', roles: ['Director', 'Guionista'],
-		headline: 'Director y guionista argentino asociado a un cine de nervio urbano, personajes al límite y realismo sin maquillaje.',
+		headline: 'Director y guionista uruguayo-argentino asociado a un cine de nervio urbano, personajes al límite y realismo sin maquillaje.',
 		spotlight: 'Encuentra tensión moral en el barrio, el trabajo precario y las decisiones de quienes viven al margen de cualquier épica.',
 		legacyFocus: 'la dirección y el guion de relatos urbanos de fuerte realismo social',
 		legacyDetail: 'Un oso rojo sigue a un exconvicto que busca recuperar un vínculo familiar mientras vuelve a quedar atrapado por el delito.',
 		editorialBiography: ['Adrián Caetano es una referencia ineludible del cine argentino que volvió a mirar la ciudad desde sus márgenes. Un oso rojo sigue a un hombre que sale de prisión y quiere recuperar a su hija, pero encuentra que el pasado, la pobreza y el delito organizan cada posibilidad. El thriller conserva una crudeza que nunca se confunde con espectáculo vacío.', 'Caetano dirige a sus personajes sin romantizar sus actos ni negarles humanidad. Las calles, los autos y las conversaciones cortadas por la urgencia forman un mundo reconocible, donde la ternura siempre convive con el peligro. Su ficha conecta una película central de ese recorrido: un cine que volvió material dramático a la supervivencia cotidiana.'],
-		stats: [{ label: 'Pelis conectadas', value: '1' }, { label: 'Registro', value: 'Realismo urbano' }], awards: [], knownFor: ['un-oso-rojo-2002'],
+		stats: [{ label: 'Pelis conectadas', value: '1' }, { label: 'Registro', value: 'Realismo urbano' }],
+		awards: [{ label: 'Cóndor de Plata', category: 'Mejor director', work: 'Un oso rojo', year: 2003 }],
+		knownFor: ['un-oso-rojo-2002'],
+		sourceUrls: [
+			'https://cinenacional.com/persona/israel-adrian-caetano',
+			'https://icau.mec.gub.uy/innovaportal/file/106986/1/adrian-caetano-bio-publicar.pdf',
+			'https://www.fundacionkonex.org/b4346-israel-adrian-caetano',
+		],
 	},
 	{
 		slug: 'daniel-burman', name: 'Daniel Burman', roles: ['Director', 'Guionista', 'Productor'],
