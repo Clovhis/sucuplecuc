@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-30T20:27:31.376Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-31T11:08:39.623Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -88,7 +88,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Zona Cero",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=LW6dpj1uCK8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/bC2Ho27PQDAVVVmFe285ClOEyGm.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10499-zona-cero/"
 	}
 ];
