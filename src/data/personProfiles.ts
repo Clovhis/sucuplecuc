@@ -40,6 +40,7 @@ import { requestedPersonProfilesWave14 } from './personProfilesWave14.ts';
 import { catalogGapPersonProfilesWave15 } from './personProfilesWave15.ts';
 import { requestedLotrPersonProfilesWave16 } from './personProfilesWave16.ts';
 import { requestedArgentinePersonProfilesWave17 } from './personProfilesWave17.ts';
+import { requestedArgentinePersonProfilesWave18 } from './personProfilesWave18.ts';
 
 const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
 	...researchedEditorialBiographies,
@@ -13913,4 +13914,5 @@ export const personProfiles: Record<string, PersonProfileRecord> = applyPersonPr
 	...catalogGapPersonProfilesWave15,
 	...requestedLotrPersonProfilesWave16,
 	...requestedArgentinePersonProfilesWave17,
+	...requestedArgentinePersonProfilesWave18,
 });

@@ -1,8 +1,8 @@
 # Catalogo de personas con ficha exclusiva
 
-Actualizado manualmente el 2026-08-30. Fuente: `src/data/personProfiles.ts`
+Actualizado manualmente el 2026-08-31. Fuente: `src/data/personProfiles.ts`
 
-Total de personas con ficha exclusiva: 529
+Total de personas con ficha exclusiva: 558
 
 Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el sitio.
 
@@ -565,3 +565,32 @@ Si un nombre no aparece en esta lista, todavia no tiene pagina propia en el siti
 | Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
 | --- | --- | --- | --- | ---: | ---: |
 | Adrián Suar | `adrian-suar` | /personas/adrian-suar/ | Actor / Director / Productor | 1 | 11 |
+| Adolfo Aristarain | `adolfo-aristarain` | /personas/adolfo-aristarain/ | Director / Guionista | 1 | 4 |
+| Adrián Caetano | `adrian-caetano` | /personas/adrian-caetano/ | Director / Guionista | 1 | 4 |
+| Adriana Aizemberg | `adriana-aizemberg` | /personas/adriana-aizemberg/ | Actriz | 2 | 4 |
+| Alejandro Doria | `alejandro-doria` | /personas/alejandro-doria/ | Director / Guionista | 1 | 4 |
+| Andrea Del Boca | `andrea-del-boca` | /personas/andrea-del-boca/ | Actriz | 1 | 4 |
+| Andy Muschietti | `andy-muschietti` | /personas/andy-muschietti/ | Director / Guionista | 3 | 4 |
+| Antonio Gasalla | `antonio-gasalla` | /personas/antonio-gasalla/ | Actor / Comediante / Guionista | 1 | 5 |
+| Ariel Winograd | `ariel-winograd` | /personas/ariel-winograd/ | Director / Guionista | 1 | 4 |
+| Arturo Puig | `arturo-puig` | /personas/arturo-puig/ | Actor | 2 | 4 |
+| Benjamín Naishtat | `benjamin-naishtat` | /personas/benjamin-naishtat/ | Director / Guionista | 2 | 4 |
+| Carlos Belloso | `carlos-belloso` | /personas/carlos-belloso/ | Actor | 1 | 4 |
+| Carla Peterson | `carla-peterson` | /personas/carla-peterson/ | Actriz | 1 | 4 |
+| Cecilia Roth | `cecilia-roth` | /personas/cecilia-roth/ | Actriz | 2 | 5 |
+| Claudio Rissi | `claudio-rissi` | /personas/claudio-rissi/ | Actor | 2 | 4 |
+| Daniel Burman | `daniel-burman` | /personas/daniel-burman/ | Director / Guionista / Productor | 1 | 4 |
+| Demián Rugna | `demian-rugna` | /personas/demian-rugna/ | Director / Guionista | 1 | 4 |
+| Fabián Bielinsky | `fabian-bielinsky` | /personas/fabian-bielinsky/ | Director / Guionista | 2 | 4 |
+| Federico Luppi | `federico-luppi` | /personas/federico-luppi/ | Actor | 2 | 4 |
+| Héctor Olivera | `hector-olivera` | /personas/hector-olivera/ | Director / Productor | 2 | 4 |
+| Juan Minujín | `juan-minujin` | /personas/juan-minujin/ | Actor | 4 | 4 |
+| Luis Luque | `luis-luque` | /personas/luis-luque/ | Actor | 3 | 4 |
+| Luis Machín | `luis-machin` | /personas/luis-machin/ | Actor | 2 | 4 |
+| Luis Ortega | `luis-ortega` | /personas/luis-ortega/ | Director / Guionista | 2 | 4 |
+| Luis Puenzo | `luis-puenzo` | /personas/luis-puenzo/ | Director / Guionista / Productor | 1 | 5 |
+| Marcelo Piñeyro | `marcelo-pineyro` | /personas/marcelo-pineyro/ | Director / Guionista | 4 | 4 |
+| María Luisa Bemberg | `maria-luisa-bemberg` | /personas/maria-luisa-bemberg/ | Directora / Guionista | 1 | 4 |
+| Pablo Rago | `pablo-rago` | /personas/pablo-rago/ | Actor | 2 | 4 |
+| Pepe Soriano | `pepe-soriano` | /personas/pepe-soriano/ | Actor / Director / Guionista | 2 | 5 |
+| Sebastián Borensztein | `sebastian-borensztein` | /personas/sebastian-borensztein/ | Director / Guionista | 3 | 4 |
