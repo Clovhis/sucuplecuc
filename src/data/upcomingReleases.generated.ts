@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-08-31T11:08:39.623Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-01T09:35:56.623Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -44,12 +44,28 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10574-codigo-venganza/"
 	},
 	{
+		"slug": "ice-cream-man",
+		"title": "El heladero",
+		"releaseDate": "2026-09-10",
+		"videoUrl": "https://www.youtube.com/watch?v=Cgw3zNmFtRo",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10566-el-heladero/"
+	},
+	{
 		"slug": "finding-emily",
 		"title": "Emily, ¿dónde estás?",
 		"releaseDate": "2026-09-17",
 		"videoUrl": "https://www.youtube.com/watch?v=-OGuJf70S0s",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
+	},
+	{
+		"slug": "the-magic-faraway-tree",
+		"title": "El árbol mágico",
+		"releaseDate": "2026-09-17",
+		"videoUrl": "https://www.youtube.com/watch?v=PAUEwUhAjzg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/l2Iv2JVEvzlDu7Hxm7ZCm9QprqR.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10511-el-arbol-magico/"
 	},
 	{
 		"slug": "the-get-out",
@@ -82,13 +98,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
-	},
-	{
-		"slug": "1375646",
-		"title": "Zona Cero",
-		"releaseDate": "2026-10-01",
-		"videoUrl": "https://www.youtube.com/watch?v=LW6dpj1uCK8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/bC2Ho27PQDAVVVmFe285ClOEyGm.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10499-zona-cero/"
 	}
 ];
