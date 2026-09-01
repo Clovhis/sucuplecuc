@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { expect, test } from '@playwright/test';
 
 const repairedPosterRoutes = [
+	'pulp-fiction-1994',
 	'saltburn-2023',
 	'gintama-la-pelicula-yoshiwara-en-llamas-2026',
 	'atrapame-si-puedes-2002',
