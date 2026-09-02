@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-08-31. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-02. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 555
-Total de vínculos de películas del catálogo: 3604
+Total de vínculos de películas del catálogo: 3606
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -202,7 +202,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Frances McDormand | `frances-mcdormand` | /personas/frances-mcdormand/ | Actriz | 11 | 4 |
 | Francis Ford Coppola | `francis-ford-coppola` | /personas/francis-ford-coppola/ | Director / Guionista / Productor | 9 | 7 |
 | Freida Pinto | `freida-pinto` | /personas/freida-pinto/ | Actriz | 3 | 3 |
-| Gal Gadot | `gal-gadot` | /personas/gal-gadot/ | Actriz | 6 | 6 |
+| Gal Gadot | `gal-gadot` | /personas/gal-gadot/ | Actriz | 7 | 6 |
 | Gary Oldman | `gary-oldman` | /personas/gary-oldman/ | Actor | 10 | 7 |
 | Gastón Pauls | `gaston-pauls` | /personas/gaston-pauls/ | Actor | 1 | 7 |
 | Geena Davis | `geena-davis` | /personas/geena-davis/ | Actriz | 5 | 4 |
@@ -314,7 +314,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Joseph Gordon-Levitt | `joseph-gordon-levitt` | /personas/joseph-gordon-levitt/ | Actor | 5 | 7 |
 | Joseph Kosinski | `joseph-kosinski` | /personas/joseph-kosinski/ | Director | 3 | 7 |
 | Joseph Quinn | `joseph-quinn` | /personas/joseph-quinn/ | Actor | 1 | 3 |
-| Josh Brolin | `josh-brolin` | /personas/josh-brolin/ | Actor | 13 | 7 |
+| Josh Brolin | `josh-brolin` | /personas/josh-brolin/ | Actor | 14 | 7 |
 | Josh O'Connor | `josh-o-connor` | /personas/josh-o-connor/ | Actor | 2 | 6 |
 | Juan José Campanella | `juan-jose-campanella` | /personas/juan-jose-campanella/ | Director / Guionista / Productor | 5 | 6 |
 | Juan Minujín | `juan-minujin` | /personas/juan-minujin/ | Actor | 4 | 4 |

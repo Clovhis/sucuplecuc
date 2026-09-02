@@ -1492,6 +1492,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "slumdog-millionaire-2008"
   ],
   "gal-gadot": [
+    "carrera-contra-el-tiempo-2026",
     "in-the-hand-of-dante-2026",
     "snow-white-2025",
     "red-notice-2021",
@@ -2468,6 +2469,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "josh-brolin": [
     "la-guerra-de-los-ultimos-2026",
+    "momentos-decisivos-generacion-11-s-2026",
     "weapons-2025",
     "deadpool-2-2018",
     "everest-2015",

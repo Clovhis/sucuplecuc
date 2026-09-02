@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-08-30. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-02. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1937
+Total de peliculas: 1940
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -27,6 +27,7 @@ Total de peliculas: 1937
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
 | 2026 | Camp Rock 3 | camp-rock-3-2026 | Musical | Disney Plus | ATP |
 | 2026 | Canelones | canelones-2026 | Comedia | Cine | ATP |
+| 2026 | Carrera contra el tiempo | carrera-contra-el-tiempo-2026 | Thriller | Prime Video | +13 |
 | 2026 | Carrera de Bestias | carrera-de-bestias-2026 | Accion | Prime Video | +16 |
 | 2026 | Chris y Martina: El set decisivo | chris-y-martina-el-set-decisivo-2026 | Documental | Netflix | +18 |
 | 2026 | CIN3 FILI4 | cin3-fili4-2026 | Drama | Cine | ATP |
@@ -100,6 +101,7 @@ Total de peliculas: 1937
 | 2026 | La voluntad de Dios | la-voluntad-de-dios-2026 | Drama | Prime Video | +17 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
+| 2026 | LEGO Star Wars: The Mandalorian | lego-star-wars-the-mandalorian-2026 | Animacion | Disney Plus | ATP |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Otras plataformas | +16 |
 | 2026 | Leviticus: Ritual de sangre | leviticus-ritual-de-sangre-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Lipán | lipan-2026 | Documental | CINE.AR | ATP |
@@ -120,6 +122,7 @@ Total de peliculas: 1937
 | 2026 | Michael | michael-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Cine | ATP |
 | 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Otras plataformas | ATP |
+| 2026 | Momentos decisivos: Generación 11-S | momentos-decisivos-generacion-11-s-2026 | Documental | Netflix | +16 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Otras plataformas | +17 |
 | 2026 | My Best Friend, His Girlfriend and Me | my-best-friend-his-girlfriend-and-me-2026 | Comedia | Netflix | +16 |
 | 2026 | MYSTERY ARENA | mystery-arena-2026 | Thriller | Prime Video | ATP |
@@ -165,7 +168,7 @@ Total de peliculas: 1937
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Otras plataformas | +12 |
 | 2026 | The Amazing Digital Circus: El último acto | the-amazing-digital-circus-el-ultimo-acto-2026 | Animacion | Otras plataformas | +13 |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Otras plataformas | +16 |
-| 2026 | The Mandalorian and Grogu | the-mandalorian-and-grogu-2026 | Ciencia ficcion | Otras plataformas | +13 |
+| 2026 | The Mandalorian and Grogu | the-mandalorian-and-grogu-2026 | Ciencia ficcion | Disney Plus | +13 |
 | 2026 | The Marked Woman | the-marked-woman-2026 | Thriller | Netflix | +16 |
 | 2026 | The Punisher: La ultima muerte | the-punisher-one-last-kill-2026 | Accion | Disney Plus | +18 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
