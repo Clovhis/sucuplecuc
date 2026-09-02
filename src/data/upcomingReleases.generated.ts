@@ -8,23 +8,15 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-01T09:35:56.623Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-02T09:02:26.413Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"slug": "the-thing-with-feathers",
-		"title": "Esa cosa con alas",
-		"releaseDate": "2026-09-03",
-		"videoUrl": "https://www.youtube.com/watch?v=13xzmFy2z8Y",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yzgTMSFkhMdCG1VtMnChGI6rKxF.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10573-esa-cosa-con-alas/"
-	},
 	{
 		"slug": "practical-magic-2",
 		"title": "Hechizo de Amor: La magia continúa",
 		"releaseDate": "2026-09-10",
 		"videoUrl": "https://www.youtube.com/watch?v=Ho10_4IX1jE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/Ao7Q6CMDiVheAqVyKV8vUI8yata.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/wE6syT1vv6W24iLGfhR4kQHnIDN.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
 	},
 	{
@@ -98,5 +90,13 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
+	},
+	{
+		"slug": "1375646",
+		"title": "Zona Cero",
+		"releaseDate": "2026-10-01",
+		"videoUrl": "https://www.youtube.com/watch?v=LW6dpj1uCK8",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10499-zona-cero/"
 	}
 ];
