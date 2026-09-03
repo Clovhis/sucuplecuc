@@ -115,7 +115,6 @@ test.describe('home catalog filters', () => {
     await gotoHome(page);
 
     const layout = await page.locator('[data-home-filter-panel="editorial"]').evaluate((panel) => {
-      const rail = panel.querySelector<HTMLElement>('.home-genre-filter__chips');
       const chips = Array.from(panel.querySelectorAll<HTMLElement>('[data-home-genre-chip]'));
       const heading = panel.querySelector<HTMLElement>('.home-genre-filter__heading');
       const subgenrePanel = document.querySelector<HTMLElement>('[data-home-filter-panel="subgenre"]');
@@ -124,14 +123,18 @@ test.describe('home catalog filters', () => {
       const subgenreRect = subgenrePanel?.getBoundingClientRect();
       const chipRects = chips.map((chip) => chip.getBoundingClientRect());
       const rowTops = new Set(chipRects.map((rect) => Math.round(rect.top)));
+      const labelRects = chips.map((chip) => chip.querySelector<HTMLElement>('.home-genre-filter__chip-label')?.getBoundingClientRect());
 
       return {
         chipCount: chips.length,
-        railOverflow: Boolean(rail && rail.scrollWidth > rail.clientWidth + 1),
         chipRows: rowTops.size,
         chipsInsidePanel: chipRects.every(
           (rect) => rect.left >= panelRect.left - 1 && rect.right <= panelRect.right + 1,
         ),
+        labelsInsideTheirChips: labelRects.every((rect, index) => {
+          if (!rect) return false;
+          return rect.left >= chipRects[index].left - 1 && rect.right <= chipRects[index].right + 1;
+        }),
         editorialChipDecorations: chips.map((chip) => getComputedStyle(chip, '::after').display),
         editorialChipGap: headingRect && chipRects[0] ? chipRects[0].top - headingRect.bottom : Number.POSITIVE_INFINITY,
         editorialPanelHeight: panelRect.height,
@@ -141,9 +144,9 @@ test.describe('home catalog filters', () => {
     });
 
     expect(layout.chipCount).toBe(5);
-    expect(layout.railOverflow).toBeFalsy();
     expect(layout.chipRows).toBe(1);
     expect(layout.chipsInsidePanel).toBeTruthy();
+    expect(layout.labelsInsideTheirChips).toBeTruthy();
     expect(layout.editorialChipDecorations.every((display) => display === 'none')).toBeTruthy();
     expect(layout.editorialChipGap).toBeLessThanOrEqual(12);
     expect(layout.editorialPanelHeight).toBeCloseTo(128, 0);

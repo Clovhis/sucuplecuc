@@ -1626,11 +1626,18 @@ img {
 
 	.home-genre-filter--editorial .home-genre-filter__chip {
 		min-width: 0;
-		padding-inline: 0.25rem;
+		padding-inline: 0.4rem;
 		font-size: 0.7rem;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
+		line-height: 1.2;
+		text-align: center;
+		white-space: normal;
+	}
+
+	.home-genre-filter--editorial .home-genre-filter__chip-label {
+		display: block;
+		min-inline-size: 0;
+		max-inline-size: 100%;
+		overflow-wrap: anywhere;
 	}
 }
 
