@@ -1732,6 +1732,62 @@ img {
 		0 0 0 1px rgba(110, 214, 188, 0.12);
 }
 
+/* These definitions are useful with a mouse, but would interrupt the compact
+ * touch chip rail. Keyboard focus receives the same desktop affordance. */
+@media (min-width: 721px) and (hover: hover) and (pointer: fine) {
+	.home-genre-filter__chip[data-filter-description] {
+		overflow: visible;
+		--filter-tooltip-border: rgba(110, 214, 188, 0.34);
+		--filter-tooltip-text: #e5f8f0;
+	}
+
+	.home-genre-filter__chip--editorial[data-filter-description] {
+		--filter-tooltip-border: rgba(117, 153, 255, 0.38);
+		--filter-tooltip-text: #e8eeff;
+	}
+
+	.home-genre-filter__chip[data-filter-description]::before {
+		content: attr(data-filter-description);
+		position: absolute;
+		z-index: 2;
+		inset-inline-start: 50%;
+		inset-block-end: calc(100% + 0.55rem);
+		width: max-content;
+		max-width: min(17rem, calc(100vw - 2rem));
+		padding: 0.42rem 0.56rem;
+		border: 1px solid var(--filter-tooltip-border);
+		border-radius: 0.5rem;
+		background: rgba(8, 14, 23, 0.97);
+		box-shadow: 0 10px 22px rgba(2, 5, 10, 0.3);
+		color: var(--filter-tooltip-text);
+		font-size: 0.71rem;
+		font-weight: 500;
+		line-height: 1.35;
+		text-align: start;
+		text-transform: none;
+		letter-spacing: normal;
+		white-space: normal;
+		pointer-events: none;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(-50%, 0.24rem);
+		transition: opacity 0.14s ease, transform 0.14s ease, visibility 0s linear 0.14s;
+	}
+
+	.home-genre-filter__chip[data-filter-description]:hover,
+	.home-genre-filter__chip[data-filter-description]:focus-visible {
+		z-index: 1;
+	}
+
+	.home-genre-filter__chip[data-filter-description]:hover::before,
+	.home-genre-filter__chip[data-filter-description]:focus-visible::before {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(-50%, 0);
+		transition-delay: 0s;
+	}
+}
+
 .home-genre-filter__chip--editorial {
 	background:
 		linear-gradient(90deg, rgba(117, 153, 255, 0.14), transparent 0.42rem),

@@ -151,6 +151,45 @@ test.describe('home catalog filters', () => {
     expect(layout.pageOverflow).toBeFalsy();
   });
 
+  test('subgenre and editorial chips show their concise definition only with a desktop cursor', async ({ page }, testInfo) => {
+    await gotoHome(page);
+
+    const chips = [
+      {
+        selector: '[data-home-subgenre-id="heist"]',
+        label: 'Heist',
+        description: 'Un golpe planificado, con robo, equipo y estrategia.',
+      },
+      {
+        selector: '[data-home-genre-kind="editorial"][data-home-genre-id="guerra"]',
+        label: 'Guerra',
+        description: 'Conflictos armados y sus efectos en quienes los atraviesan.',
+      },
+    ];
+
+    for (const { selector, label, description } of chips) {
+      const chip = page.locator(selector);
+      await expect(chip).toHaveAccessibleName(label);
+      await expect(chip).toHaveAttribute('data-filter-description', description);
+
+      const tooltipState = async () => chip.evaluate((element) => {
+        const styles = getComputedStyle(element, '::before');
+        return { content: styles.content, opacity: styles.opacity, visibility: styles.visibility };
+      });
+
+      if (testInfo.project.name.startsWith('mobile-')) {
+        await expect.poll(tooltipState).toEqual({ content: 'none', opacity: '1', visibility: 'visible' });
+        continue;
+      }
+
+      await expect.poll(tooltipState).toMatchObject({ opacity: '0', visibility: 'hidden' });
+      const box = await chip.boundingBox();
+      expect(box).not.toBeNull();
+      await page.mouse.move(box!.x + box!.width / 2, box!.y + box!.height / 2);
+      await expect.poll(tooltipState).toMatchObject({ opacity: '1', visibility: 'visible' });
+    }
+  });
+
   test('road movie + platform narrows correctly', async ({ page }) => {
     await gotoHome(page);
 

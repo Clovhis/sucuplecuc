@@ -7,6 +7,7 @@ import type { Movie } from '../types/movie';
 interface FilterOption {
 	id: string;
 	label: string;
+	description?: string;
 }
 
 interface Props {
@@ -103,6 +104,8 @@ const {
 													data-home-genre-chip
 													data-home-genre-id={genre.id}
 													data-home-genre-kind="editorial"
+													data-filter-description={genre.description}
+													aria-label={genre.label}
 													aria-pressed="false"
 												>
 													{genre.label}
@@ -147,15 +150,20 @@ const {
 									<div class="home-genre-filter__chips" role="group" aria-label="Filtros por subgénero">
 										{
 											subgenreOptions.map((subgenre) => (
-												<button
-													type="button"
-													class="home-genre-filter__chip home-genre-filter__chip--subgenre"
+												<>
+													<button
+														type="button"
+														class="home-genre-filter__chip home-genre-filter__chip--subgenre"
 													data-home-subgenre-chip
 													data-home-subgenre-id={subgenre.id}
-													aria-pressed="false"
-												>
-													{subgenre.label}
-												</button>
+													data-subgenre-description={subgenre.description}
+													data-filter-description={subgenre.description}
+													aria-label={subgenre.label}
+														aria-pressed="false"
+													>
+														{subgenre.label}
+													</button>
+												</>
 											))
 										}
 									</div>

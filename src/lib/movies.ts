@@ -41,6 +41,7 @@ export type RecommendationGenreId =
 export interface RecommendationGenreOption {
 	id: RecommendationGenreId;
 	label: string;
+	description?: string;
 }
 
 export interface PositiveVerdictFilterOption {
@@ -52,12 +53,14 @@ export interface PositiveVerdictFilterOption {
 export interface SubgenreFilterOption {
 	id: string;
 	label: string;
+	description: string;
 	count: number;
 }
 
 interface CanonicalSubgenreDefinition {
 	id: string;
 	label: string;
+	description: string;
 	matchers: string[];
 	genreHints?: RecommendationGenreId[];
 }
@@ -131,71 +134,123 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'drama', label: 'Drama' },
 	{ id: 'thriller', label: 'Thriller' },
 	{ id: 'sci-fi', label: 'Sci-Fi' },
-	{ id: 'superheroes', label: 'Superhéroes' },
+	{
+		id: 'superheroes',
+		label: 'Superhéroes',
+		description: 'Historias de héroes con poderes, identidades secretas y grandes amenazas.',
+	},
 	{ id: 'animacion', label: 'Animación' },
 	{ id: 'anime', label: 'Anime' },
 	{ id: 'romance', label: 'Romance' },
 	{ id: 'crimen', label: 'Crimen' },
 	{ id: 'aventura', label: 'Aventura' },
-	{ id: 'oscar-mejor-pelicula', label: 'Ganadoras del Oscar' },
-	{ id: 'pelicula-nacional', label: 'Cine nacional' },
-	{ id: 'guerra', label: 'Guerra' },
-	{ id: 'culto', label: CULT_MOVIE_LABEL },
+	{
+		id: 'oscar-mejor-pelicula',
+		label: 'Ganadoras del Oscar',
+		description: 'Películas que ganaron el Oscar a Mejor película.',
+	},
+	{
+		id: 'pelicula-nacional',
+		label: 'Cine nacional',
+		description: 'Películas argentinas para mirar lo nuestro.',
+	},
+	{
+		id: 'guerra',
+		label: 'Guerra',
+		description: 'Conflictos armados y sus efectos en quienes los atraviesan.',
+	},
+	{
+		id: 'culto',
+		label: CULT_MOVIE_LABEL,
+		description: 'Películas con fanáticos fieles y una identidad fuera de serie.',
+	},
 ];
 
 const SUBGENRE_DEFINITIONS: CanonicalSubgenreDefinition[] = [
-	{ id: 'gore', label: 'Gore', matchers: ['gore', 'splatter'], genreHints: ['terror'] },
+	{
+		id: 'gore',
+		label: 'Gore',
+		description: 'Terror explícito, con sangre y efectos viscerales.',
+		matchers: ['gore', 'splatter'],
+		genreHints: ['terror'],
+	},
 	{
 		id: 'found-footage',
 		label: 'Found Footage',
+		description: 'La historia parece material encontrado y filmado en primera persona.',
 		matchers: ['found footage', 'found-footage'],
 		genreHints: ['terror'],
 	},
-	{ id: 'slasher', label: 'Slasher', matchers: ['slasher'], genreHints: ['terror'] },
+	{
+		id: 'slasher',
+		label: 'Slasher',
+		description: 'Un asesino acecha a un grupo entre suspenso y muertes.',
+		matchers: ['slasher'],
+		genreHints: ['terror'],
+	},
 	{
 		id: 'romcom',
 		label: 'Rom-Com',
+		description: 'Comedia romántica: amor, enredos y humor.',
 		matchers: ['romcom', 'rom-com', 'rom com', 'comedia romantica', 'romantic comedy'],
 		genreHints: ['comedia', 'romance'],
 	},
 	{
 		id: 'body-horror',
 		label: 'Body Horror',
+		description: 'Terror sobre cuerpos que se deforman o transforman.',
 		matchers: ['body horror', 'terror corporal', 'horror corporal'],
 		genreHints: ['terror'],
 	},
 	{
 		id: 'psychological',
 		label: 'Psicológico',
+		description: 'Tensión nacida de la mente, la percepción o la obsesión.',
 		matchers: ['psychological', 'psicologico', 'psicologica'],
 		genreHints: ['thriller'],
 	},
 	{
 		id: 'supernatural',
 		label: 'Sobrenatural',
+		description: 'Miedos que vienen de fuerzas fuera de lo real.',
 		matchers: ['supernatural', 'sobrenatural'],
 		genreHints: ['terror'],
 	},
-	{ id: 'heist', label: 'Heist', matchers: ['heist'], genreHints: ['crimen'] },
+	{
+		id: 'heist',
+		label: 'Heist',
+		description: 'Un golpe planificado, con robo, equipo y estrategia.',
+		matchers: ['heist'],
+		genreHints: ['crimen'],
+	},
 	{
 		id: 'road-movie',
 		label: 'Road Movie',
+		description: 'Un viaje en ruta que cambia a quienes lo hacen.',
 		matchers: ['road movie', 'road-movie'],
 		genreHints: ['aventura'],
 	},
 	{
 		id: 'coming-of-age',
 		label: 'Coming of Age',
+		description: 'El paso a la adultez, entre cambios y descubrimientos.',
 		matchers: ['coming of age', 'coming-of-age'],
 		genreHints: ['drama'],
 	},
 	{
 		id: 'mockumentary',
 		label: 'Mockumentary',
+		description: 'Un falso documental que imita la realidad, generalmente con humor.',
 		matchers: ['mockumentary', 'falso documental'],
 		genreHints: ['comedia', 'documental'],
 	},
-	{ id: 'exploitation', label: 'Exploitation', matchers: ['exploitation'], genreHints: ['terror'] },
+	{
+		id: 'exploitation',
+		label: 'Exploitation',
+		description: 'Cine de impacto, provocación y excesos deliberados.',
+		matchers: ['exploitation'],
+		genreHints: ['terror'],
+	},
 ];
 
 const SUBGENRE_SORT_ORDER = SUBGENRE_DEFINITIONS.map((definition) => definition.id);
@@ -1099,9 +1154,11 @@ export function getSubgenreFilterOptions(
 	for (const movie of movies) {
 		for (const option of getMovieSubgenreOptions(movie)) {
 			const current = countsByOption.get(option.id);
+			const description = getSubgenreDefinition(option.id)?.description ?? 'Películas que comparten este subgénero.';
 			countsByOption.set(option.id, {
 				id: option.id,
 				label: option.label,
+				description,
 				count: (current?.count ?? 0) + 1,
 			});
 		}
