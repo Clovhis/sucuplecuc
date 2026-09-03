@@ -3,7 +3,7 @@
 Generado automaticamente el 2026-09-03. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 555
-Total de vínculos de películas del catálogo: 3610
+Total de vínculos de películas del catálogo: 3614
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -219,7 +219,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Graciela Borges | `graciela-borges` | /personas/graciela-borges/ | Actriz | 4 | 7 |
 | Greta Gerwig | `greta-gerwig` | /personas/greta-gerwig/ | Director | 4 | 7 |
 | Guillermo del Toro | `guillermo-del-toro` | /personas/guillermo-del-toro/ | Director / Guionista / Productor | 5 | 7 |
-| Guillermo Francella | `guillermo-francella` | /personas/guillermo-francella/ | Actor | 6 | 7 |
+| Guillermo Francella | `guillermo-francella` | /personas/guillermo-francella/ | Actor | 10 | 7 |
 | Gus Van Sant | `gus-van-sant` | /personas/gus-van-sant/ | Director / Guionista / Productor | 6 | 5 |
 | Guy Pearce | `guy-pearce` | /personas/guy-pearce/ | Actor | 7 | 3 |
 | Gwyneth Paltrow | `gwyneth-paltrow` | /personas/gwyneth-paltrow/ | Actriz | 6 | 7 |

@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-09-03. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1946
+Total de peliculas: 1950
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1569,6 +1569,7 @@ Total de peliculas: 1946
 | 1991 | El cabo del miedo | cape-fear-1991 | Thriller | Otras plataformas | +17 |
 | 1991 | El pequeño Tate | el-pequeno-tate-1991 | Drama | Prime Video | +13 |
 | 1991 | El silencio de los inocentes | the-silence-of-the-lambs-1991 | Terror | Paramount Plus + Apple TV | +13 |
+| 1991 | Extermineitors III: La gran pelea final | extermineitors-iii-la-gran-pelea-final-1991 | Comedia | Otras plataformas | ATP |
 | 1991 | Hook (El capitán Garfio) | hook-1991 | Aventura | Otras plataformas | ATP |
 | 1991 | JFK: Caso abierto | jfk-caso-abierto-1991 | Thriller | Prime Video | +13 |
 | 1991 | Morir todavía | morir-todavia-1991 | Drama | Apple TV | +13 |
@@ -1592,6 +1593,7 @@ Total de peliculas: 1946
 | 1990 | Días de trueno | dias-de-trueno-1990 | Accion | Apple TV | +13 |
 | 1990 | Edward Scissorhands | edward-scissorhands-1990 | Fantasia | Otras plataformas | +13 |
 | 1990 | El padrino. Parte III | el-padrino-parte-iii-1990 | Drama | Otras plataformas | +17 |
+| 1990 | Extermineitors II: La venganza del dragón | extermineitors-ii-la-venganza-del-dragon-1990 | Comedia | Otras plataformas | ATP |
 | 1990 | La escalera de Jacob | la-escalera-de-jacob-1990 | Terror | Otras plataformas | +18 |
 | 1990 | Mi pobre angelito | home-alone-1990 | Comedia | Disney Plus | ATP |
 | 1990 | Muerte entre las flores | muerte-entre-las-flores-1990 | Drama | Disney Plus | +16 |
@@ -1605,6 +1607,7 @@ Total de peliculas: 1946
 | 1989 | Abyss | abyss-1989 | Ciencia ficcion | Disney Plus | +13 |
 | 1989 | Always (Para Siempre) | always-1989 | Romance | Otras plataformas | +13 |
 | 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video | ATP |
+| 1989 | Bañeros II: La playa loca | baneros-ii-la-playa-loca-1989 | Comedia | Otras plataformas | ATP |
 | 1989 | Batman | batman-1989 | Fantasia | HBO Max | +13 |
 | 1989 | Delitos y faltas | crimes-and-misdemeanors-1989 | Drama | Otras plataformas | +16 |
 | 1989 | Do the Right Thing | do-the-right-thing-1989 | Drama | Otras plataformas | +16 |
@@ -1616,6 +1619,7 @@ Total de peliculas: 1946
 | 1989 | Indiana Jones and the Last Crusade | indiana-jones-and-the-last-crusade-1989 | Aventura | Otras plataformas | +13 |
 | 1989 | Karate Kid III. El desafío final | karate-kid-iii-el-desafio-final-1989 | Accion | HBO Max | ATP |
 | 1989 | La guerra de los Rose | la-guerra-de-los-rose-1989 | Comedia | Disney Plus | +16 |
+| 1989 | Los extermineitors | los-extermineitors-1989 | Comedia | Otras plataformas | ATP |
 | 1989 | Nicky, la aprendiz de bruja | nicky-la-aprendiz-de-bruja-1989 | Animacion | Netflix | ATP |
 | 1989 | Noches de Harlem | noches-de-harlem-1989 | Comedia | Otras plataformas | +13 |
 | 1989 | Nunca fuimos ángeles | nunca-fuimos-angeles-1989 | Comedia | Prime Video + Apple TV | +13 |

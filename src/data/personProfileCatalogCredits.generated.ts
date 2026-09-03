@@ -1647,7 +1647,11 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-robo-del-siglo-2020",
     "mi-obra-maestra-2018",
     "el-clan-2015",
-    "corazon-de-leon-2013"
+    "corazon-de-leon-2013",
+    "extermineitors-iii-la-gran-pelea-final-1991",
+    "extermineitors-ii-la-venganza-del-dragon-1990",
+    "baneros-ii-la-playa-loca-1989",
+    "los-extermineitors-1989"
   ],
   "gus-van-sant": [
     "la-negociacion-2025",
