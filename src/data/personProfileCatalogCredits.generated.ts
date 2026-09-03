@@ -93,6 +93,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "rashomon-1950"
   ],
   "al-pacino": [
+    "la-negociacion-2025",
     "the-alto-knights-mafia-y-poder-2025",
     "the-irishman-2019",
     "jack-and-jill-2011",
@@ -407,6 +408,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "gandhi-1982"
   ],
   "benedict-cumberbatch": [
+    "esa-cosa-con-alas-2025",
     "doctor-strange-in-the-multiverse-of-madness-2022",
     "el-mauritano-2021",
     "spider-man-no-way-home-2021",
@@ -899,6 +901,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "colman-domingo": [
     "el-dia-de-la-revelacion-2026",
     "michael-2026",
+    "la-negociacion-2025",
     "sing-sing-2024"
   ],
   "coralie-fargeat": [
@@ -1647,6 +1650,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "corazon-de-leon-2013"
   ],
   "gus-van-sant": [
+    "la-negociacion-2025",
     "no-te-preocupes-no-llegara-lejos-a-pie-2018",
     "tierra-prometida-2012",
     "elephant-2003",

@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-02. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-03. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 555
-Total de vínculos de películas del catálogo: 3606
+Total de vínculos de películas del catálogo: 3610
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -19,7 +19,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Adriana Aizemberg | `adriana-aizemberg` | /personas/adriana-aizemberg/ | Actriz | 2 | 4 |
 | Adrien Brody | `adrien-brody` | /personas/adrien-brody/ | Actor | 3 | 7 |
 | Akira Kurosawa | `akira-kurosawa` | /personas/akira-kurosawa/ | Director / Guionista | 3 | 4 |
-| Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 17 | 7 |
+| Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 18 | 7 |
 | Alan Alda | `alan-alda` | /personas/alan-alda/ | Actor | 4 | 3 |
 | Alan Arkin | `alan-arkin` | /personas/alan-arkin/ | Actor | 7 | 6 |
 | Alan Rickman | `alan-rickman` | /personas/alan-rickman/ | Actor | 7 | 3 |
@@ -62,7 +62,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Baz Luhrmann | `baz-luhrmann` | /personas/baz-luhrmann/ | Director / Guionista / Productor | 5 | 5 |
 | Ben Affleck | `ben-affleck` | /personas/ben-affleck/ | Actor | 11 | 7 |
 | Ben Kingsley | `ben-kingsley` | /personas/ben-kingsley/ | Actor | 6 | 7 |
-| Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 5 | 7 |
+| Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 6 | 7 |
 | Benjamín Naishtat | `benjamin-naishtat` | /personas/benjamin-naishtat/ | Director / Guionista | 2 | 4 |
 | Bill Murray | `bill-murray` | /personas/bill-murray/ | Actor | 7 | 4 |
 | Billy Wilder | `billy-wilder` | /personas/billy-wilder/ | Director | 5 | 5 |
@@ -126,7 +126,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Clive Owen | `clive-owen` | /personas/clive-owen/ | Actor | 4 | 3 |
 | Colin Farrell | `colin-farrell` | /personas/colin-farrell/ | Actor | 7 | 7 |
 | Colin Firth | `colin-firth` | /personas/colin-firth/ | Actor | 5 | 7 |
-| Colman Domingo | `colman-domingo` | /personas/colman-domingo/ | Actor | 3 | 7 |
+| Colman Domingo | `colman-domingo` | /personas/colman-domingo/ | Actor | 4 | 7 |
 | Coralie Fargeat | `coralie-fargeat` | /personas/coralie-fargeat/ | Director | 2 | 7 |
 | Courteney Cox | `courteney-cox` | /personas/courteney-cox/ | Actriz | 7 | 7 |
 | Cynthia Erivo | `cynthia-erivo` | /personas/cynthia-erivo/ | Actriz | 3 | 7 |
@@ -220,7 +220,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Greta Gerwig | `greta-gerwig` | /personas/greta-gerwig/ | Director | 4 | 7 |
 | Guillermo del Toro | `guillermo-del-toro` | /personas/guillermo-del-toro/ | Director / Guionista / Productor | 5 | 7 |
 | Guillermo Francella | `guillermo-francella` | /personas/guillermo-francella/ | Actor | 6 | 7 |
-| Gus Van Sant | `gus-van-sant` | /personas/gus-van-sant/ | Director / Guionista / Productor | 5 | 5 |
+| Gus Van Sant | `gus-van-sant` | /personas/gus-van-sant/ | Director / Guionista / Productor | 6 | 5 |
 | Guy Pearce | `guy-pearce` | /personas/guy-pearce/ | Actor | 7 | 3 |
 | Gwyneth Paltrow | `gwyneth-paltrow` | /personas/gwyneth-paltrow/ | Actriz | 6 | 7 |
 | Hailee Steinfeld | `hailee-steinfeld` | /personas/hailee-steinfeld/ | Actriz | 4 | 6 |

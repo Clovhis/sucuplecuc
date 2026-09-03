@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-02. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-03. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1940
+Total de peliculas: 1946
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -26,12 +26,13 @@ Total de peliculas: 1940
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
 | 2026 | Camp Rock 3 | camp-rock-3-2026 | Musical | Disney Plus | ATP |
-| 2026 | Canelones | canelones-2026 | Comedia | Cine | ATP |
+| 2026 | Canelones | canelones-2026 | Comedia | Otras plataformas | ATP |
 | 2026 | Carrera contra el tiempo | carrera-contra-el-tiempo-2026 | Thriller | Prime Video | +13 |
 | 2026 | Carrera de Bestias | carrera-de-bestias-2026 | Accion | Prime Video | +16 |
 | 2026 | Chris y Martina: El set decisivo | chris-y-martina-el-set-decisivo-2026 | Documental | Netflix | +18 |
-| 2026 | CIN3 FILI4 | cin3-fili4-2026 | Drama | Cine | ATP |
+| 2026 | CIN3 FILI4 | cin3-fili4-2026 | Drama | Otras plataformas | ATP |
 | 2026 | Clika | clika-2026 | Drama | HBO Max | +16 |
+| 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Cine | +16 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Coyote vs. Acme | coyote-vs-acme-2026 | Comedia | Cine | ATP |
@@ -82,15 +83,15 @@ Total de peliculas: 1940
 | 2026 | Jackass: La última y nos vamos | jackass-la-ultima-y-nos-vamos-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | KATSEYE: Wild Hearts | katseye-wild-hearts-2026 | Musical | Otras plataformas | ATP |
-| 2026 | La asistente de la morgue | la-asistente-de-la-morgue-2026 | Terror | Cine | +17 |
+| 2026 | La asistente de la morgue | la-asistente-de-la-morgue-2026 | Terror | Otras plataformas | +17 |
 | 2026 | La Boca del Diablo | la-boca-del-diablo-2026 | Terror | Prime Video | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
 | 2026 | La guerra de los últimos | la-guerra-de-los-ultimos-2026 | Ciencia ficción | Cine | +17 |
 | 2026 | La heroína del lazo | la-heroina-del-lazo-2026 | Anime | Netflix | +13 |
 | 2026 | La invitación | la-invitacion-2026 | Comedia | Cine | +17 |
-| 2026 | La muerte de Robin Hood | la-muerte-de-robin-hood-2026 | Drama | Cine | +17 |
-| 2026 | La niña | la-nina-del-azucar-2026 | Terror | Cine | +17 |
+| 2026 | La muerte de Robin Hood | la-muerte-de-robin-hood-2026 | Drama | Otras plataformas | +17 |
+| 2026 | La niña | la-nina-del-azucar-2026 | Terror | Otras plataformas | +17 |
 | 2026 | La noche del demonio: Están entre nosotros | la-noche-del-demonio-estan-entre-nosotros-2026 | Terror | Cine | +17 |
 | 2026 | La Odisea | la-odisea-2026 | Aventura | Cine | +13 |
 | 2026 | La posesión de la momia | la-posesion-de-la-momia-2026 | Terror | HBO Max | +16 |
@@ -111,7 +112,7 @@ Total de peliculas: 1940
 | 2026 | Los creyentes | los-creyentes-2026 | Thriller | Netflix | +16 |
 | 2026 | Los Descendientes: viaje al mundo oscuro | los-descendientes-viaje-al-mundo-oscuro-2026 | Musical | Disney Plus | ATP |
 | 2026 | Los hermanos demolición | the-wrecking-crew-2026 | Accion | Prime Video | +18 |
-| 2026 | Lu & Pau | lu-pau-2026 | Crimen | Cine | +13 |
+| 2026 | Lu & Pau | lu-pau-2026 | Crimen | Otras plataformas | +13 |
 | 2026 | Luchadores 2 | luchadores-2-2026 | Comedia | Netflix | +13 |
 | 2026 | Main Vaapas Aaunga | main-vaapas-aaunga-2026 | Drama | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
@@ -120,7 +121,7 @@ Total de peliculas: 1940
 | 2026 | México 86 | mexico-86-2026 | Comedia | Netflix | +16 |
 | 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
 | 2026 | Michael | michael-2026 | Drama | Otras plataformas | +13 |
-| 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Cine | ATP |
+| 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Otras plataformas | ATP |
 | 2026 | Momentos decisivos: Generación 11-S | momentos-decisivos-generacion-11-s-2026 | Documental | Netflix | +16 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Otras plataformas | +17 |
@@ -137,6 +138,7 @@ Total de peliculas: 1940
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
 | 2026 | PAW Patrol: La Dino Película | paw-patrol-la-dino-pelicula-2026 | Animacion | Cine | ATP |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
+| 2026 | Pepita la pistolera | pepita-la-pistolera-2026 | Crimen | Cine | +17 |
 | 2026 | Poldi | poldi-2026 | Documental | Netflix | +13 |
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video | +18 |
 | 2026 | Primate | primate-2026 | Terror | Otras plataformas | +16 |
@@ -172,7 +174,7 @@ Total de peliculas: 1940
 | 2026 | The Marked Woman | the-marked-woman-2026 | Thriller | Netflix | +16 |
 | 2026 | The Punisher: La ultima muerte | the-punisher-one-last-kill-2026 | Accion | Disney Plus | +18 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
-| 2026 | Tierra de crimen | tierra-de-crimen-2026 | Drama | Cine | +17 |
+| 2026 | Tierra de crimen | tierra-de-crimen-2026 | Drama | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Cine | ATP |
 | 2026 | Travis Barker: Más allá del miedo | travis-barker-mas-alla-del-miedo-2026 | Documental | Disney Plus | +7 |
@@ -217,6 +219,7 @@ Total de peliculas: 1940
 | 2025 | El gran falsificador | el-gran-falsificador-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
 | 2025 | Ella y su hijo | ella-y-su-hijo-2025 | Drama | Otras plataformas | +13 |
+| 2025 | Esa cosa con alas | esa-cosa-con-alas-2025 | Drama | Cine | +13 |
 | 2025 | Escuadrón letal | escuadron-letal-2025 | Accion | Apple TV | +13 |
 | 2025 | Exit 8 | exit-8-2025 | Terror | Otras plataformas | +13 |
 | 2025 | F1: The Movie | f1-the-movie-2025 | Drama | Apple TV | ATP |
@@ -240,6 +243,7 @@ Total de peliculas: 1940
 | 2025 | KPop Demon Hunters | kpop-demon-hunters-2025 | Animacion | Netflix | ATP |
 | 2025 | La larga marcha | la-larga-marcha-2025 | Thriller | Prime Video | +16 |
 | 2025 | La Máquina: The Smashing Machine | la-maquina-the-smashing-machine-2025 | Drama | Prime Video | +16 |
+| 2025 | La negociación | la-negociacion-2025 | Drama | Cine | +13 |
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Otras plataformas | +12 |
 | 2025 | Lilo & Stitch | lilo-and-stitch-2025 | Aventura | Disney Plus | ATP |
@@ -379,7 +383,7 @@ Total de peliculas: 1940
 | 2024 | Turtles All the Way Down | turtles-all-the-way-down-2024 | Drama | HBO Max | +13 |
 | 2024 | Twisters | twisters-2024 | Accion | Netflix | +13 |
 | 2024 | Umamusume: Pretty derby | umamusume-pretty-derby-2024 | Anime | Otras plataformas | ATP |
-| 2024 | Un trago de infierno | un-trago-de-infierno-2024 | Terror | Cine | +17 |
+| 2024 | Un trago de infierno | un-trago-de-infierno-2024 | Terror | Otras plataformas | +17 |
 | 2024 | Venom: The Last Dance | venom-the-last-dance-2024 | Accion | HBO Max | +13 |
 | 2024 | Wicked | wicked-2024 | Fantasia | HBO Max | ATP |
 | 2024 | Will y Harper | will-y-harper-2024 | Documental | Netflix | +16 |
@@ -416,6 +420,7 @@ Total de peliculas: 1940
 | 2023 | Los olvidados: Cicatrices | los-olvidados-cicatrices-2023 | Terror | Prime Video | +18 |
 | 2023 | Los que se quedan | the-holdovers-2023 | Comedia | Netflix + Apple TV | +13 |
 | 2023 | Maestro | maestro-2023 | Drama | Netflix | +16 |
+| 2023 | Masha y los osos: La película | masha-y-los-osos-la-pelicula-2023 | Animacion | Cine | ATP |
 | 2023 | Mission: Impossible - Dead Reckoning Part One | mission-impossible-dead-reckoning-part-one-2023 | Accion | Otras plataformas | +13 |
 | 2023 | Misterio a la vista | murder-mystery-2-2023 | Comedia | Netflix | +13 |
 | 2023 | Napoleon | napoleon-2023 | Accion | Apple TV | +13 |
@@ -884,6 +889,7 @@ Total de peliculas: 1940
 | 2012 | Looper | looper-2012 | Ciencia ficcion | Otras plataformas | +17 |
 | 2012 | Los miserables | los-miserables-2012 | Musical | Otras plataformas | +13 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
+| 2012 | Puella Magi Madoka Magica: La película - Parte 1 | puella-magi-madoka-magica-la-pelicula-parte-1-2012 | Anime | Cine | +13 |
 | 2012 | Sin tregua | sin-tregua-2012 | Acción | Otras plataformas | +17 |
 | 2012 | Skyfall | skyfall-2012 | Accion | Netflix | +12 |
 | 2012 | Ted | ted-2012 | Comedia | Prime Video + Apple TV | +16 |
@@ -1570,7 +1576,7 @@ Total de peliculas: 1940
 | 1991 | Pesadilla final: La muerte de Freddy | freddy-s-dead-the-final-nightmare-1991 | Terror | Otras plataformas | +17 |
 | 1991 | Sombras y niebla | shadows-and-fog-1991 | Thriller | Otras plataformas | +16 |
 | 1991 | Star Trek VI. Aquel país desconocido | star-trek-vi-aquel-pais-desconocido-1991 | Ciencia ficcion | Apple TV | ATP |
-| 1991 | Terminator 2: Judgment Day | terminator-2-judgment-day-1991 | Accion | Otras plataformas | +17 |
+| 1991 | Terminator 2: El juicio final | terminator-2-judgment-day-1991 | Accion | Cine | +17 |
 | 1991 | Thelma y Louise | thelma-y-louise-1991 | Drama | Apple TV | +16 |
 | 1991 | Una segunda oportunidad | una-segunda-oportunidad-1991 | Drama | Otras plataformas | +13 |
 | 1990 | Alice | alice-1990 | Fantasia | Otras plataformas | +13 |
