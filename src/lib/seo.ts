@@ -10,7 +10,9 @@ export const SITE_LOCALE = 'es_AR';
 export const SITE_LANGUAGE = 'es-AR';
 export const CONTACT_EMAIL = 'contacto@cineposta.com.ar';
 export const PRESS_EMAIL = 'prensa@cineposta.com.ar';
-export const EDITOR_NAME = 'Leonardo Vargas';
+export const EDITORIAL_TEAM_NAME = 'El equipo de Cine Posta';
+export const EDITORIAL_TEAM_DESCRIPTION =
+	'El equipo de Cine Posta es una mesa editorial argentina que selecciona, revisa y publica reseñas breves y datos de películas para ayudarte a decidir qué mirar.';
 export const SITE_DESCRIPTION =
 	'Cine Posta, también conocido como Cineposta, es un sitio argentino con reseñas cortas y al hueso para decidir qué mirar. Sin login, sin anuncios y con filtros al final del catálogo.';
 export const SITE_LOGO_PATH = '/brand/cineposta-logo-mark.png';
@@ -22,7 +24,7 @@ export const EDITORIAL_POLICY_PATH = '/politica-editorial/';
 export const SOURCES_AND_DATA_PATH = '/fuentes-y-datos/';
 export const COPYRIGHT_PATH = '/copyright-y-uso-de-material/';
 export const CONTACT_PATH = '/contacto/';
-export const EDITOR_PATH = '/editor/leonardo-vargas/';
+export const EDITORIAL_TEAM_PATH = '/equipo/';
 export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
 export const PEOPLE_PATH = '/personas/';
 export { COMMUNITY_PATH } from './community';
@@ -73,8 +75,8 @@ function getWebsiteId(): string {
 	return `${SITE_URL}/#website`;
 }
 
-function getEditorId(): string {
-	return `${asAbsoluteUrl(EDITOR_PATH)}#person`;
+function getEditorialTeamId(): string {
+	return `${asAbsoluteUrl(EDITORIAL_TEAM_PATH)}#editorial-team`;
 }
 
 function getCollectionPageId(): string {
@@ -148,18 +150,27 @@ function createWebsiteSchema(): StructuredDataValue {
 	};
 }
 
-function createEditorSchema(): StructuredDataValue {
+function createEditorialTeamReference(): StructuredDataValue {
+	return {
+		'@type': 'Organization',
+		'@id': getEditorialTeamId(),
+		url: asAbsoluteUrl(EDITORIAL_TEAM_PATH),
+		name: EDITORIAL_TEAM_NAME,
+	};
+}
+
+function createEditorialTeamSchema(): StructuredDataValue {
 	return {
 		'@context': 'https://schema.org',
-		'@type': 'Person',
-		'@id': getEditorId(),
-		url: asAbsoluteUrl(EDITOR_PATH),
-		name: EDITOR_NAME,
-		jobTitle: 'Editor responsable',
-		worksFor: {
-			'@type': 'Organization',
+		...createEditorialTeamReference(),
+		description: EDITORIAL_TEAM_DESCRIPTION,
+		alternateName: ['Equipo Cine Posta', 'Equipo editorial de Cine Posta'],
+		areaServed: {
+			'@type': 'Country',
+			name: 'Argentina',
+		},
+		parentOrganization: {
 			'@id': getOrganizationId(),
-			name: SITE_NAME,
 		},
 	};
 }
@@ -268,21 +279,21 @@ export function createSimplePageStructuredData(
 	];
 }
 
-export function createEditorPageStructuredData(
+export function createEditorialTeamPageStructuredData(
 	pageTitle: string,
 	pageDescription: string,
 ): StructuredDataValue[] {
-	const editorUrl = asAbsoluteUrl(EDITOR_PATH);
+	const teamUrl = asAbsoluteUrl(EDITORIAL_TEAM_PATH);
 
 	return [
 		createOrganizationSchema(),
 		createWebsiteSchema(),
-		createEditorSchema(),
+		createEditorialTeamSchema(),
 		{
 			'@context': 'https://schema.org',
-			'@type': 'ProfilePage',
-			'@id': `${editorUrl}#webpage`,
-			url: editorUrl,
+			'@type': 'AboutPage',
+			'@id': `${teamUrl}#webpage`,
+			url: teamUrl,
 			name: pageTitle,
 			description: pageDescription,
 			inLanguage: SITE_LANGUAGE,
@@ -290,7 +301,7 @@ export function createEditorPageStructuredData(
 				'@id': getWebsiteId(),
 			},
 			mainEntity: {
-				'@id': getEditorId(),
+				'@id': getEditorialTeamId(),
 			},
 		},
 	];
@@ -360,18 +371,8 @@ export function createMovieStructuredData(
 				inLanguage: SITE_LANGUAGE,
 				reviewBody: movie.review,
 				datePublished: getBestKnownMoviePublicationDate(movie),
-				author: {
-					'@type': 'Person',
-					'@id': getEditorId(),
-					name: EDITOR_NAME,
-					url: asAbsoluteUrl(EDITOR_PATH),
-				},
-				editor: {
-					'@type': 'Person',
-					'@id': getEditorId(),
-					name: EDITOR_NAME,
-					url: asAbsoluteUrl(EDITOR_PATH),
-				},
+				author: createEditorialTeamReference(),
+				editor: createEditorialTeamReference(),
 				publisher: {
 					'@type': 'Organization',
 					'@id': getOrganizationId(),
@@ -405,7 +406,7 @@ export function createMovieStructuredData(
 
 	return [
 		movieSchema,
-		createEditorSchema(),
+		createEditorialTeamSchema(),
 		{
 			'@context': 'https://schema.org',
 			'@type': 'WebPage',

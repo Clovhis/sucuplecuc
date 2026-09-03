@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeBrandLink from '../components/HomeBrandLink.astro';
+import {
+	EDITORIAL_TEAM_DESCRIPTION,
+	EDITORIAL_TEAM_NAME,
+	SITE_NAME,
+	createEditorialTeamPageStructuredData,
+} from '../lib/seo';
+
+const pageTitle = `${EDITORIAL_TEAM_NAME} | ${SITE_NAME}`;
+const pageDescription = EDITORIAL_TEAM_DESCRIPTION;
+const structuredData = createEditorialTeamPageStructuredData(pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container about-page">
+		<div class="page-actions">
+			<HomeBrandLink className="page-action page-action--home" />
+		</div>
+
+		<section class="about-page__hero fade-up" style="--item-delay: 0ms;">
+			<p class="about-page__kicker">Equipo editorial</p>
+			<h1 class="about-page__title">{EDITORIAL_TEAM_NAME}</h1>
+			<p class="about-page__lead">Una mesa de gente cinéfila que selecciona, escribe, revisa y mantiene Cine Posta en movimiento.</p>
+		</section>
+
+		<section class="about-page__grid">
+			<article class="about-page__card fade-up" style="--item-delay: 30ms;">
+				<h2>Una firma colectiva</h2>
+				<p>
+					Cine Posta no depende de una firma individual. Las reseñas, las fichas y las herramientas del sitio salen de un
+					trabajo editorial compartido, con una voz común y ganas de ir directo al punto.
+				</p>
+				<p>
+					Así podemos discutir una recomendación, corregir un dato o mejorar una pantalla sin perder de vista lo importante:
+					ayudarte a decidir qué mirar.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
+				<h2>Curaduría y criterio</h2>
+				<p>
+					Recorremos estrenos, clásicos, cine argentino y rarezas para armar un catálogo con personalidad. No se trata de
+					juntar títulos porque sí: cada ficha tiene que encontrar un lugar y decir algo útil.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 90ms;">
+				<h2>Redacción y edición</h2>
+				<p>
+					Escribimos reseñas originales, breves y en criollo. Después las pasamos por una segunda mirada para que el veredicto
+					sea claro, el tono tenga onda y el texto no se convierta en una sinopsis eterna.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 120ms;">
+				<h2>Datos y fuentes</h2>
+				<p>
+					Las fichas, los créditos, los premios y la disponibilidad en Argentina se revisan con fuentes y criterios públicos.
+					Cuando un dato no está confirmado, lo dejamos dicho.
+				</p>
+			</article>
+
+			<article class="about-page__card fade-up" style="--item-delay: 150ms;">
+				<h2>Producto y comunidad</h2>
+				<p>
+					También hacemos que el sitio sea cómodo de usar: filtros, recomendaciones, perfiles, accesibilidad y controles de
+					calidad forman parte del mismo laburo de equipo.
+				</p>
+			</article>
+		</section>
+	</main>
+</BaseLayout>

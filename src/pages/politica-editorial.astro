@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
 import {
 	CONTACT_EMAIL,
-	EDITOR_NAME,
-	EDITOR_PATH,
+	EDITORIAL_TEAM_NAME,
+	EDITORIAL_TEAM_PATH,
 	EDITORIAL_POLICY_PATH,
 	SITE_NAME,
 	createSimplePageStructuredData,
@@ -33,10 +33,11 @@ const structuredData = createSimplePageStructuredData(EDITORIAL_POLICY_PATH, pag
 
 		<section class="about-page__grid">
 			<article class="about-page__card fade-up" style="--item-delay: 30ms;">
-				<h2>Responsable editorial</h2>
+				<h2>Equipo editorial</h2>
 				<p>
-					La responsabilidad editorial del proyecto corresponde a <a href={EDITOR_PATH}>{EDITOR_NAME}</a>.
+					La responsabilidad editorial del proyecto corresponde a <a href={EDITORIAL_TEAM_PATH}>{EDITORIAL_TEAM_NAME}</a>.
 				</p>
+				<p>La firma es colectiva: la curaduría, la redacción, la revisión de datos y el mantenimiento del sitio se trabajan como parte de una misma mesa editorial.</p>
 			</article>
 			<article class="about-page__card fade-up" style="--item-delay: 60ms;">
 				<h2>Qué publica Cine Posta</h2>

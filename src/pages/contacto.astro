@@ -4,8 +4,8 @@ import HomeBrandLink from '../components/HomeBrandLink.astro';
 import {
 	CONTACT_EMAIL,
 	CONTACT_PATH,
-	EDITOR_NAME,
-	EDITOR_PATH,
+	EDITORIAL_TEAM_NAME,
+	EDITORIAL_TEAM_PATH,
 	PRESS_EMAIL,
 	SITE_NAME,
 	createSimplePageStructuredData,
@@ -47,7 +47,7 @@ const structuredData = createSimplePageStructuredData(CONTACT_PATH, pageTitle, p
 			<article class="about-page__card fade-up" style="--item-delay: 30ms;">
 				<h2>Responsabilidad editorial</h2>
 				<p>
-					El editor responsable de Cine Posta es <a href={EDITOR_PATH}>{EDITOR_NAME}</a>.
+					La responsabilidad editorial de Cine Posta está a cargo de <a href={EDITORIAL_TEAM_PATH}>{EDITORIAL_TEAM_NAME}</a>.
 				</p>
 			</article>
 			<article class="about-page__card fade-up" style="--item-delay: 60ms;">

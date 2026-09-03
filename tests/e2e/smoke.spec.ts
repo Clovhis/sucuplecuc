@@ -63,7 +63,35 @@ test('contact page exposes separate general and press channels', async ({ page }
 	await expect(footer.getByRole('heading', { name: 'Hablemos' })).toBeVisible();
 	await expect(footer.locator('a[href^="mailto:contacto@cineposta.com.ar"]').first()).toBeVisible();
 	await expect(footer.locator('a[href^="mailto:prensa@cineposta.com.ar"]').first()).toBeVisible();
-	await expect(page.locator('body')).not.toContainText('yosoyvargas@hotmail.com');
+	const contactHtml = await page.content();
+	expect(contactHtml).not.toMatch(/@hotmail\./i);
+});
+
+test('editorial identity is presented as a team', async ({ page }) => {
+	const response = await page.goto('/equipo/', { waitUntil: 'domcontentloaded' });
+
+	expect(response?.ok()).toBeTruthy();
+	await expect(page).toHaveTitle(/El equipo de Cine Posta/i);
+	await expect(page.getByRole('heading', { name: 'El equipo de Cine Posta' })).toBeVisible();
+	await expect(page.getByRole('link', { name: 'Equipo', exact: true })).toBeVisible();
+	await expect(page.locator('body')).toContainText('Una firma colectiva');
+	const teamStructuredData = await page.locator('script[type="application/ld+json"]').allTextContents();
+	const teamEntities = teamStructuredData.map((entry) => JSON.parse(entry) as Record<string, unknown>);
+	expect(teamEntities).toEqual(
+		expect.arrayContaining([
+			expect.objectContaining({ '@type': 'Organization', name: 'El equipo de Cine Posta' }),
+		]),
+	);
+	const hasHorizontalOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+	expect(hasHorizontalOverflow).toBeFalsy();
+
+	for (const path of ['/', '/sobre-cine-posta/', '/politica-editorial/', '/contacto/', '/peliculas/akira-1988/']) {
+		await page.goto(path, { waitUntil: 'domcontentloaded' });
+		const html = await page.content();
+		expect(html, `La identidad personal no debe aparecer en ${path}`).not.toMatch(
+			/\/editor\//i,
+		);
+	}
 });
 
 test('home separates the initial cards into cinema and platform releases', async ({ page }) => {
