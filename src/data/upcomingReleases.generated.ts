@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-02T09:02:26.413Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-03T09:11:33.902Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -16,7 +16,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Hechizo de Amor: La magia continúa",
 		"releaseDate": "2026-09-10",
 		"videoUrl": "https://www.youtube.com/watch?v=Ho10_4IX1jE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/wE6syT1vv6W24iLGfhR4kQHnIDN.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
 	},
 	{
@@ -72,7 +72,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "La isla olvidada",
 		"releaseDate": "2026-09-24",
 		"videoUrl": "https://www.youtube.com/watch?v=f7mFVeWnVLw",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/obsM8IyBz3jn8hbru8V5btBRSBk.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qhWwvo77nXAdiWuL4eP7JXLWErs.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10448-la-isla-olvidada/"
 	},
 	{
@@ -92,11 +92,11 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
 	},
 	{
-		"slug": "1375646",
-		"title": "Zona Cero",
-		"releaseDate": "2026-10-01",
-		"videoUrl": "https://www.youtube.com/watch?v=LW6dpj1uCK8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10499-zona-cero/"
+		"slug": "street-fighter",
+		"title": "Street Fighter",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/bA6twMcGZtV2cQRQA3ZTMQPJznU.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10217-street-fighter/"
 	}
 ];
