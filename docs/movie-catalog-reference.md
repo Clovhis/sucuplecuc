@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-03. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-04. Fuente: src/data/movies/*.json
 
-Total de peliculas: 1950
+Total de peliculas: 1952
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -66,6 +66,8 @@ Total de peliculas: 1950
 | 2026 | Esto, aquello y todo lo demás | esto-aquello-y-todo-lo-demas-2026 | Drama | Netflix | ATP |
 | 2026 | Eternidad | eternity-2026 | Romance | Apple TV | +13 |
 | 2026 | Evil Dead: En llamas | evil-dead-en-llamas-2026 | Terror | Otras plataformas | +17 |
+| 2026 | Fito Páez: El mundo cabe en una canción | fito-paez-el-mundo-cabe-en-una-cancion-2026 | Documental | Netflix | +13 |
+| 2026 | Gandhari | gandhari-2026 | Thriller | Netflix | +16 |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | Gintama, la película: Yoshiwara en llamas | gintama-la-pelicula-yoshiwara-en-llamas-2026 | Anime | Netflix | ATP |
 | 2026 | GOAT | goat-2026 | Animacion | Otras plataformas | ATP |
