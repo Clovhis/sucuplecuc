@@ -125,7 +125,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-gran-revancha-2013",
     "argo-2012",
     "expediente-anwar-2007",
-    "gattaca-1997"
+    "gattaca-1997",
+    "el-ultimo-unicornio-1982"
   ],
   "alan-rickman": [
     "sweeney-todd-the-demon-barber-of-fleet-street-2007",
@@ -141,9 +142,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "tesis-sobre-un-homicidio-2013"
   ],
   "alec-baldwin": [
+    "un-jefe-en-panales-2-negocios-de-familia-2021",
     "huerfanos-de-brooklyn-2019",
+    "un-jefe-en-panales-2017",
     "blue-jasmine-2013",
     "to-rome-with-love-2012",
+    "el-origen-de-los-guardianes-2012",
     "el-buen-pastor-2006",
     "las-locuras-de-dick-y-jane-2005",
     "the-aviator-2004",
@@ -178,6 +182,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "amanda-seyfried": [
     "the-housemaid-2025",
     "el-reverendo-2017",
+    "epic-el-mundo-secreto-2013",
     "los-miserables-2012",
     "jennifer-s-body-2009"
   ],
@@ -255,7 +260,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "ocean-s-8-las-estafadoras-2018",
     "el-becario-2015",
     "interstellar-2014",
+    "rio-2-2014",
     "los-miserables-2012",
+    "rio-2011",
     "alice-in-wonderland-2010",
     "amor-y-otras-drogas-2010",
     "guerra-de-novias-2009",
@@ -295,6 +302,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "antonio-banderas": [
     "indiana-jones-and-the-dial-of-destiny-2023",
+    "el-gato-con-botas-el-ultimo-deseo-2022",
     "uncharted-2022",
     "competencia-oficial-2021",
     "caballero-de-copas-2015",
@@ -357,6 +365,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "awkwafina": [
     "kung-fu-panda-4-2024",
+    "raya-y-el-ultimo-dragon-2021",
     "shang-chi-and-the-legend-of-the-ten-rings-2021",
     "la-despedida-2019"
   ],
@@ -401,6 +410,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "ben-kingsley": [
     "impacto-mortal-2026",
+    "los-boxtrolls-2014",
     "hugo-2011",
     "el-principe-de-persia-las-arenas-del-tiempo-2010",
     "shutter-island-2010",
@@ -413,6 +423,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-mauritano-2021",
     "spider-man-no-way-home-2021",
     "the-power-of-the-dog-2021",
+    "el-grinch-2018",
     "doctor-strange-2016"
   ],
   "benjamin-naishtat": [
@@ -449,6 +460,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "memories-of-murder-cronica-de-un-asesino-en-serie-2003"
   ],
   "brad-bird": [
+    "los-increibles-2-2018",
     "mission-impossible-ghost-protocol-2011",
     "ratatouille-2007",
     "the-incredibles-2004",
@@ -471,6 +483,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-gran-apuesta-2015",
     "corazones-de-hierro-2014",
     "el-juego-de-la-fortuna-2011",
+    "megamente-2010",
     "inglourious-basterds-2009",
     "el-curioso-caso-de-benjamin-button-2008",
     "quemese-despues-de-leerse-2008",
@@ -478,6 +491,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007",
     "la-nueva-gran-estafa-2004",
     "troya-2004",
+    "sinbad-la-leyenda-de-los-siete-mares-2003",
     "la-gran-estafa-2001",
     "fight-club-1999",
     "se7en-1995"
@@ -506,6 +520,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "macbeth-2021",
     "la-cancion-del-mar-2014",
     "zona-verde-2010",
+    "el-secreto-de-kells-2009",
     "exterminio-2002"
   ],
   "brian-de-palma": [
@@ -520,6 +535,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "godzilla-x-kong-the-new-empire-2024",
     "transformers-one-2024",
     "spider-man-across-the-spider-verse-2023",
+    "vivo-2021",
     "hotel-de-criminales-2018"
   ],
   "brie-larson": [
@@ -540,14 +556,18 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "los-sustitutos-2009",
     "algo-pasa-en-hollywood-2008",
     "seduciendo-a-un-extrano-2007",
+    "vecinos-invasores-2006",
     "en-defensa-del-honor-2002",
     "the-sixth-sense-1999",
     "el-quinto-elemento-1997",
+    "beavis-y-butt-head-recorren-america-1996",
     "jungla-de-cristal-la-venganza-1995",
     "la-muerte-le-sienta-bien-1992",
     "jungla-de-cristal-1988"
   ],
   "bryan-cranston": [
+    "isla-de-perros-2018",
+    "kung-fu-panda-3-2016",
     "argo-2012",
     "drive-2011"
   ],
@@ -642,6 +662,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "beetlejuice-beetlejuice-2024",
     "frankenweenie-2012",
     "una-serie-de-eventos-desafortunados-2004",
+    "el-extrano-mundo-de-jack-1993",
     "beetlejuice-1988"
   ],
   "cecilia-dopazo": [
@@ -667,6 +688,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "charlize-theron": [
     "apex-2026",
     "the-fate-of-the-furious-2017",
+    "kubo-y-la-busqueda-del-samurai-2016",
     "mad-max-fury-road-2015",
     "prometheus-2012",
     "la-estafa-maestra-2003"
@@ -714,6 +736,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "chris-evans": [
     "el-hombre-gris-2022",
+    "lightyear-2022",
     "avengers-endgame-2019",
     "punales-por-la-espalda-2019",
     "captain-america-civil-war-2016",
@@ -740,6 +763,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "wish-2023",
     "wonder-woman-1984-2020",
     "wonder-woman-2017",
+    "el-origen-de-los-guardianes-2012",
     "imparable-2010"
   ],
   "chris-pratt": [
@@ -749,10 +773,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "guardians-of-the-galaxy-vol-3-2023",
     "the-super-mario-bros-movie-2023",
     "jurassic-world-dominion-2022",
+    "unidos-2020",
+    "la-gran-aventura-lego-2-2019",
     "jurassic-world-fallen-kingdom-2018",
     "guardians-of-the-galaxy-vol-2-2017",
     "jurassic-world-2015",
     "guardians-of-the-galaxy-2014",
+    "la-gran-aventura-lego-2014",
     "her-2013",
     "el-juego-de-la-fortuna-2011",
     "guerra-de-novias-2009"
@@ -887,6 +914,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "dumbo-2019",
     "el-sacrificio-de-un-ciervo-sagrado-2017",
     "langosta-2015",
+    "epic-el-mundo-secreto-2013",
     "cassandra-s-dream-2007",
     "en-defensa-del-honor-2002",
     "minority-report-2002"
@@ -1003,9 +1031,11 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "danny-devito": [
     "dumbo-2019",
+    "el-lorax-en-busca-de-la-trufula-perdida-2012",
     "anything-else-2003",
     "man-on-the-moon-1999",
     "el-poder-de-la-justicia-1997",
+    "hercules-1997",
     "mars-attacks-1996",
     "como-conquistar-hollywood-1995",
     "junior-1994",
@@ -1076,6 +1106,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "demi-moore": [
     "the-substance-2024",
     "mr-brooks-2007",
+    "el-jorobado-de-notre-dame-1996",
     "nunca-fuimos-angeles-1989"
   ],
   "demian-rugna": [
@@ -1152,6 +1183,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "mexico-86-2026",
     "a-rainy-day-in-new-york-2019",
     "rogue-one-a-star-wars-story-2016",
+    "el-libro-de-la-vida-2014",
     "elysium-2013",
     "the-terminal-2004"
   ],
@@ -1218,10 +1250,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-maquina-the-smashing-machine-2025",
     "moana-2-2024",
     "black-adam-2022",
+    "dc-liga-de-supermascotas-2022",
     "jungle-cruise-2021",
     "red-notice-2021",
     "fast-and-furious-presents-hobbs-and-shaw-2019",
     "the-fate-of-the-furious-2017",
+    "moana-2016",
     "furious-7-2015",
     "dolor-y-dinero-2013",
     "fast-and-furious-6-2013",
@@ -1258,6 +1292,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "shrek-2-2004",
     "showtime-2002",
     "shrek-2001",
+    "mulan-1998",
     "noches-de-harlem-1989",
     "limite-48-horas-1982"
   ],
@@ -1331,12 +1366,14 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "bugonia-2025",
     "poor-things-2023",
     "cruella-2021",
+    "los-croods-una-nueva-era-2020",
     "la-favorita-2018",
     "la-la-land-2016",
     "irrational-man-2015",
     "birdman-or-the-unexpected-virtue-of-ignorance-2014",
     "the-amazing-spider-man-2-2014",
     "fuerza-antigangster-2013",
+    "los-croods-2013",
     "the-amazing-spider-man-2012",
     "loco-y-estupido-amor-2011",
     "spider-man-2002"
@@ -1346,6 +1383,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "buena-suerte-leo-grande-2022",
     "cruella-2021",
     "the-meyerowitz-stories-2017",
+    "valiente-2012",
     "love-actually-2003",
     "carrington-1995",
     "sentido-y-sensibilidad-1995",
@@ -1413,10 +1451,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "ewan-mcgregor": [
     "el-final-de-la-calle-oak-2026",
+    "pinocho-de-guillermo-del-toro-2022",
     "angeles-y-demonios-2009",
     "i-love-you-phillip-morris-2009",
     "cassandra-s-dream-2007",
     "el-umbral-2005",
+    "robots-2005",
     "star-wars-episode-iii-revenge-of-the-sith-2005",
     "big-fish-2003",
     "star-wars-episode-ii-attack-of-the-clones-2002",
@@ -1468,6 +1508,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "frances-mcdormand": [
     "macbeth-2021",
     "nomadland-2020",
+    "un-gran-dinosaurio-2015",
     "tierra-prometida-2012",
     "un-lugar-donde-quedarse-2011",
     "quemese-despues-de-leerse-2008",
@@ -1617,6 +1658,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "gore-verbinski": [
     "buena-suerte-diviertete-no-mueras-2026",
     "la-cura-siniestra-2017",
+    "rango-2011",
     "pirates-of-the-caribbean-at-worlds-end-2007",
     "pirates-of-the-caribbean-dead-mans-chest-2006",
     "el-hombre-del-tiempo-2005",
@@ -1636,6 +1678,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "guillermo-del-toro": [
     "frankenstein-2025",
+    "pinocho-de-guillermo-del-toro-2022",
     "nightmare-alley-2021",
     "the-shape-of-water-2017",
     "el-laberinto-del-fauno-2006",
@@ -1693,6 +1736,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "lo-que-perdimos-en-el-camino-2007",
     "seduciendo-a-un-extrano-2007",
     "x-men-the-last-stand-2006",
+    "robots-2005",
     "catwoman-2004",
     "espiritus-ocultos-2003"
   ],
@@ -1747,9 +1791,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "hayao-miyazaki": [
     "the-boy-and-the-heron-2023",
+    "se-levanta-el-viento-2013",
+    "ponyo-y-el-secreto-de-la-sirenita-2008",
     "howls-moving-castle-2004",
     "spirited-away-2001",
     "princess-mononoke-1997",
+    "porco-rosso-1992",
     "nicky-la-aprendiz-de-bruja-1989",
     "my-neighbor-totoro-1988",
     "castle-in-the-sky-1986",
@@ -1795,6 +1842,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "sweeney-todd-the-demon-barber-of-fleet-street-2007",
     "charlie-and-the-chocolate-factory-2005",
     "corpse-bride-2005",
+    "wallace-y-gromit-la-batalla-de-los-vegetales-2005",
     "big-fish-2003",
     "planet-of-the-apes-2001",
     "fight-club-1999",
@@ -1815,6 +1863,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "12-angry-men-1957"
   ],
   "holly-hunter": [
+    "los-increibles-2-2018",
     "the-incredibles-2004",
     "donde-estas-hermano-2000",
     "crash-extranos-placeres-1996",
@@ -1844,6 +1893,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "x-men-origins-wolverine-2009",
     "australia-2008",
     "the-prestige-2006",
+    "flushed-away-lo-que-el-agua-se-llevo-2006",
     "la-fuente-de-la-vida-2006",
     "scoop-2006",
     "x-men-the-last-stand-2006",
@@ -1898,6 +1948,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "a-minecraft-movie-2025",
     "kung-fu-panda-4-2024",
     "no-te-preocupes-no-llegara-lejos-a-pie-2018",
+    "kung-fu-panda-3-2016",
     "kung-fu-panda-2-2011",
     "ano-uno-2009",
     "kung-fu-panda-2008",
@@ -1936,6 +1987,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "en-la-zona-gris-2026",
     "road-house-2024",
     "ambulance-plan-de-huida-2022",
+    "mundo-extrano-2022",
     "culpable-2021",
     "spider-man-far-from-home-2019",
     "velvet-buzzsaw-2019",
@@ -1995,6 +2047,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "it-chapter-two-2019",
     "x-men-apocalypse-2016",
     "x-men-days-of-future-past-2014",
+    "arthur-christmas-operacion-regalo-2011",
     "x-men-first-class-2011"
   ],
   "james-stewart": [
@@ -2021,6 +2074,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "jamie-foxx": [
     "agente-infiltrado-2025",
     "back-in-action-2025",
+    "soul-2020",
     "the-amazing-spider-man-2-2014",
     "django-unchained-2012",
     "jarhead-el-infierno-espera-2005",
@@ -2103,6 +2157,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "jeffrey-wright": [
     "el-mago-de-kremlin-2026",
     "the-batman-2022",
+    "un-gran-dinosaurio-2015",
     "ali-2001"
   ],
   "jenna-ortega": [
@@ -2176,7 +2231,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "a-real-pain-2024",
     "batman-v-superman-dawn-of-justice-2016",
     "cafe-society-2016",
+    "rio-2-2014",
     "to-rome-with-love-2012",
+    "rio-2011",
     "the-social-network-2010"
   ],
   "jesse-plemons": [
@@ -2325,6 +2382,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "john-cusack": [
     "2012-2009",
     "como-ser-john-malkovich-1999",
+    "anastasia-1997",
     "bullets-over-broadway-1994",
     "shadows-and-fog-1991"
   ],
@@ -2343,10 +2401,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "john-goodman": [
     "operacion-monumento-2014",
+    "monsters-university-2013",
     "el-vuelo-2012",
     "the-artist-2011",
     "monsters-inc-2001",
     "donde-estas-hermano-2000",
+    "las-locuras-del-emperador-2000",
     "bringing-out-the-dead-1999",
     "el-gran-lebowski-1998",
     "poseidos-1998",
@@ -2358,13 +2418,20 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "v-de-vendetta-2005",
     "contacto-1997",
     "rob-roy-la-pasion-de-un-rebelde-1995",
+    "taron-y-el-caldero-magico-1985",
     "el-hombre-elefante-1980",
-    "alien-1979"
+    "alien-1979",
+    "watership-down-1978"
   ],
   "john-leguizamo": [
     "agente-infiltrado-2025",
     "encanto-2021",
+    "la-era-de-hielo-choque-de-mundos-2016",
+    "la-era-de-hielo-4-la-formacion-de-los-continentes-2012",
+    "la-era-de-hielo-3-el-origen-de-los-dinosaurios-2009",
     "el-incidente-2008",
+    "la-era-de-hielo-2-2006",
+    "la-era-de-hielo-2002",
     "moulin-rouge-2001",
     "fanatico-1996",
     "romeo-julieta-de-william-shakespeare-1996",
@@ -2390,6 +2457,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "john-travolta": [
     "ven-a-volar-conmigo-2026",
     "asalto-al-tren-pelham-123-2009",
+    "bolt-un-perro-fuera-de-serie-2008",
     "the-punisher-2004",
     "cara-a-cara-1997",
     "como-conquistar-hollywood-1995",
@@ -2414,6 +2482,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "pirates-of-the-caribbean-dead-men-tell-no-tales-2017",
     "dark-shadows-2012",
     "pirates-of-the-caribbean-on-stranger-tides-2011",
+    "rango-2011",
     "alice-in-wonderland-2010",
     "enemigos-publicos-2009",
     "pirates-of-the-caribbean-at-worlds-end-2007",
@@ -2465,7 +2534,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "pinocho-2022",
     "lincoln-2012",
     "looper-2012",
-    "inception-2010"
+    "inception-2010",
+    "el-planeta-del-tesoro-2002"
   ],
   "joseph-kosinski": [
     "f1-the-movie-2025",
@@ -2591,6 +2661,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "triple-9-2016",
     "un-dios-salvaje-2011",
     "solo-un-sueno-2008",
+    "flushed-away-lo-que-el-agua-se-llevo-2006",
     "eternal-sunshine-of-the-spotless-mind-2004",
     "titanic-1997",
     "sentido-y-sensibilidad-1995"
@@ -2634,6 +2705,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003"
   ],
   "keke-palmer": [
+    "lightyear-2022",
     "nope-2022",
     "cleaner-2007"
   ],
@@ -2644,6 +2716,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "thor-2011",
     "operacion-valquiria-2008",
     "la-huella-2007",
+    "el-camino-hacia-el-dorado-2000",
     "celebrity-1998",
     "frankenstein-de-mary-shelley-1994",
     "mucho-ruido-y-pocas-nueces-1993",
@@ -2674,6 +2747,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "luna-2009",
     "superman-returns-2006",
     "american-beauty-1999",
+    "bichos-una-aventura-en-miniatura-1998",
     "los-angeles-al-desnudo-1997",
     "tiempo-de-matar-1996"
   ],
@@ -2708,7 +2782,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "despicable-me-4-2024",
     "will-y-harper-2024",
     "wonder-woman-1984-2020",
-    "pequena-gran-vida-2017"
+    "mi-villano-favorito-3-2017",
+    "pequena-gran-vida-2017",
+    "mi-villano-favorito-2-2013"
   ],
   "kurt-russell": [
     "the-hateful-eight-2015",
@@ -2716,7 +2792,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "conexion-tequila-1988",
     "golpe-en-la-pequena-china-1986",
     "la-cosa-el-enigma-de-otro-mundo-1982",
-    "1997-rescate-en-nueva-york-1981"
+    "1997-rescate-en-nueva-york-1981",
+    "el-zorro-y-el-sabueso-1981"
   ],
   "laura-dern": [
     "jay-kelly-2025",
@@ -2880,6 +2957,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "malcolm-mcdowell": [
     "psycho-killer-2026",
     "halloween-ii-2009",
+    "bolt-un-perro-fuera-de-serie-2008",
     "halloween-2007",
     "la-naranja-mecanica-1971"
   ],
@@ -3053,6 +3131,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-nueva-gran-estafa-2004",
     "la-supremacia-de-bourne-2004",
     "identidad-desconocida-2002",
+    "spirit-el-corcel-indomable-2002",
     "la-gran-estafa-2001",
     "el-talento-de-mr-ripley-1999",
     "saving-private-ryan-1998",
@@ -3066,6 +3145,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "dawn-of-the-planet-of-the-apes-2014"
   ],
   "matthew-mcconaughey": [
+    "sing-2-ven-y-canta-de-nuevo-2021",
+    "sing-ven-y-canta-2016",
     "interstellar-2014",
     "the-wolf-of-wall-street-2013",
     "amistad-1997",
@@ -3083,7 +3164,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "mel-gibson": [
     "el-castor-2011",
+    "pollitos-en-fuga-2000",
     "braveheart-1995",
+    "pocahontas-1995",
     "maverick-1994",
     "conexion-tequila-1988",
     "mad-max-beyond-thunderdome-1985",
@@ -3136,6 +3219,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "broadway-danny-rose-1984",
     "zelig-1983",
     "a-midsummer-night-s-sex-comedy-1982",
+    "el-ultimo-unicornio-1982",
     "el-bebe-de-rosemary-1968"
   ],
   "mia-goth": [
@@ -3162,6 +3246,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "michael-caine": [
     "un-golpe-con-estilo-2017",
+    "cars-2-2011",
     "la-huella-2007",
     "the-prestige-2006",
     "hijos-de-los-hombres-2006",
@@ -3195,6 +3280,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "x-men-first-class-2011"
   ],
   "michael-j-fox": [
+    "atlantis-el-imperio-perdido-2001",
     "back-to-the-future-part-iii-1990",
     "back-to-the-future-part-ii-1989",
     "back-to-the-future-1985"
@@ -3358,7 +3444,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "nicolas-cage": [
     "longlegs-2024",
     "el-hombre-de-los-suenos-2023",
+    "los-croods-una-nueva-era-2020",
     "mandy-2018",
+    "los-croods-2013",
     "ghost-rider-spirit-of-vengeance-2011",
     "ghost-rider-2007",
     "el-hombre-del-tiempo-2005",
@@ -3595,7 +3683,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "conclave-2024",
     "el-menu-2022",
     "the-grand-budapest-hotel-2014",
+    "wallace-y-gromit-la-batalla-de-los-vegetales-2005",
     "el-dragon-rojo-2002",
+    "el-principe-de-egipto-1998",
     "the-english-patient-1996",
     "dias-extranos-1995",
     "schindler-s-list-1993"
@@ -3713,6 +3803,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "asesinato-justo-2008",
     "el-buen-pastor-2006",
     "el-escondite-2005",
+    "shark-tale-2004",
     "condenado-2002",
     "showtime-2002",
     "15-minutos-2001",
@@ -3824,6 +3915,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "boulevard-2014",
     "insomnia-2002",
     "good-will-hunting-1997",
+    "aladdin-1992",
     "hook-1991",
     "despertares-1990"
   ],
@@ -3848,6 +3940,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "ron-perlman": [
     "transformers-el-despertar-de-las-bestias-2023",
+    "pinocho-de-guillermo-del-toro-2022",
     "blade-ii-2002",
     "alien-resurrection-1997",
     "la-ciudad-de-los-ninos-perdidos-1995"
@@ -3973,6 +4066,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "sam-rockwell": [
     "buena-suerte-diviertete-no-mueras-2026",
+    "los-tipos-malos-2-2025",
+    "los-tipos-malos-2022",
     "el-vicepresidente-mas-alla-del-poder-2018",
     "luna-2009",
     "todos-estan-bien-2009",
@@ -4007,6 +4102,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "sandra-bullock": [
     "ocean-s-8-las-estafadoras-2018",
+    "minions-2015",
     "gravedad-2013",
     "la-casa-del-lago-2006",
     "crash-2005",
@@ -4089,6 +4185,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "sharon-stone": [
     "catwoman-2004",
+    "antz-hormiguitaz-1998",
     "esfera-1998",
     "casino-1995",
     "el-especialista-1994",
@@ -4121,6 +4218,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-adventures-of-tintin-2011",
     "mission-impossible-ghost-protocol-2011",
     "burke-and-hare-2010",
+    "la-era-de-hielo-3-el-origen-de-los-dinosaurios-2009",
     "shaun-of-the-dead-2004"
   ],
   "soledad-villamil": [
@@ -4144,6 +4242,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "stanley-tucci": [
     "el-diablo-viste-a-la-moda-2-2026",
     "conclave-2024",
+    "las-aventuras-de-peabody-y-sherman-2014",
     "desde-mi-cielo-2009",
     "bailamos-2004",
     "the-terminal-2004"
@@ -4163,12 +4262,17 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "steve-carell": [
     "mountainhead-2025",
     "despicable-me-4-2024",
+    "minions-nace-un-villano-2022",
     "el-vicepresidente-mas-alla-del-poder-2018",
+    "mi-villano-favorito-3-2017",
     "cafe-society-2016",
     "la-gran-apuesta-2015",
     "el-increible-burt-wonderstone-2013",
+    "mi-villano-favorito-2-2013",
     "loco-y-estupido-amor-2011",
+    "mi-villano-favorito-2010",
     "horton-y-el-mundo-de-los-quien-2008",
+    "vecinos-invasores-2006",
     "todopoderoso-2003"
   ],
   "steven-seagal": [
@@ -4437,6 +4541,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "spider-man-brand-new-day-2026",
     "uncharted-2022",
     "spider-man-no-way-home-2021",
+    "unidos-2020",
     "spider-man-far-from-home-2019",
     "spider-man-homecoming-2017",
     "child-s-play-1988"
@@ -4501,6 +4606,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "val-kilmer": [
     "deja-vu-2006",
+    "el-principe-de-egipto-1998",
     "batman-forever-1995",
     "fuego-contra-fuego-1995"
   ],
@@ -4542,6 +4648,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "los-sustitutos-2009",
     "i-now-pronounce-you-chuck-and-larry-2007",
     "mission-impossible-iii-2006",
+    "lilo-stitch-2002",
     "bringing-out-the-dead-1999",
     "un-romance-peligroso-1998"
   ],
@@ -4575,6 +4682,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "despicable-me-4-2024",
     "will-y-harper-2024",
     "los-otros-dos-2010",
+    "megamente-2010",
     "melinda-and-melinda-2004"
   ],
   "will-smith": [
@@ -4583,6 +4691,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "aladdin-2019",
     "belleza-inesperada-2016",
     "suicide-squad-2016",
+    "shark-tale-2004",
     "dos-policias-rebeldes-ii-2003",
     "ali-2001",
     "seis-grados-de-separacion-1993"
@@ -4650,6 +4759,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-curse-of-the-jade-scorpion-2001",
     "small-time-crooks-2000",
     "sweet-and-lowdown-1999",
+    "antz-hormiguitaz-1998",
     "celebrity-1998",
     "deconstructing-harry-1997",
     "everyone-says-i-love-you-1996",
@@ -4700,9 +4810,11 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "zachary-levi": [
     "sarahs-oil-el-oro-negro-2025",
     "harold-y-el-lapiz-magico-2024",
+    "pollitos-en-fuga-el-origen-2023",
     "shazam-fury-of-the-gods-2023",
     "el-mauritano-2021",
-    "shazam-2019"
+    "shazam-2019",
+    "enredados-2010"
   ],
   "zazie-beetz": [
     "buena-suerte-diviertete-no-mueras-2026",
@@ -4722,6 +4834,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "elio-2025",
     "emilia-perez-2024",
     "avatar-the-way-of-water-2022",
+    "vivo-2021",
     "guardians-of-the-galaxy-vol-2-2017",
     "guardians-of-the-galaxy-2014",
     "avatar-2009"
