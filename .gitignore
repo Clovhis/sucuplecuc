@@ -16,6 +16,9 @@ test-results/
 playwright-report/
 pnpm-debug.log*
 
+# locally generated asset-migration diagnostics
+reports/local-posters-migration.json
+
 
 # environment variables
 .env

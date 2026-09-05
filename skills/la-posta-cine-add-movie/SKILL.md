@@ -9,7 +9,7 @@ Create one movie entry or an explicitly requested batch. Work quietly; send one 
 
 ## Scope
 
-- Edit only `src/data/movies/**`, `src/data/people.json`, `public/people/**`, and generated catalog references. Never change UI, routes, styles, build config, workflow files, Share, Comunidad, or reaction assets for a movie load. A title-specific meter score explicitly requested by the user is the sole code exception: update only the central `src/lib/*metro.ts` override map and its regression test, never a per-movie meter field.
+- Edit only `src/data/movies/**`, `src/data/people.json`, `public/people/**`, `public/assets/posters/**`, and generated catalog references. Never change UI, routes, styles, build config, workflow files, Share, Comunidad, or reaction assets for a movie load. A title-specific meter score explicitly requested by the user is the sole code exception: update only the central `src/lib/*metro.ts` override map and its regression test, never a per-movie meter field.
 - Create a `feature/movie-<slug>` branch from an up-to-date `main`; never commit directly to `main`. Do not stash or overwrite unrelated changes.
 - A correct slug automatically enables Share, Comunidad, ratings, recommendation blocks, and the verdict reaction. Do not create per-movie fields or external records for any of them.
 - If title/year is ambiguous, ask one question before researching. Otherwise extract feedback, requested platform/premiere intent, and an explicit verdict label from the request.
@@ -25,7 +25,7 @@ Esta política aplica a toda alta o reemplazo bajo `public/people/**`: retratos 
   ```
 
 - No reimplementes conversiones, límites, compresión, limpieza de metadata ni actualización de referencias con scripts ad hoc o llamadas directas a `sharp`: `images:people:optimize` es la única fuente de verdad. `npm run images:people:check` se corre siempre al final como hard gate global; un exit code distinto de cero impide dar por terminada la carga, incluso si el auditor de personas pasó.
-- Esta regla sólo abarca archivos locales de personas. La política de posters externos de películas no cambia: no los descargues, conviertas ni optimices como parte de este paso; seguí usando `verify_posters.cjs` con la URL externa guardada.
+- Esta regla sólo abarca archivos locales de personas. Todo póster de película es local: una vez verificada la URL fuente y antes del auditor, ejecutá `npm run posters:localize -- --movie <slug>`. El comando descarga, convierte a WebP, conserva la proporción dentro de 480x720, escribe `public/assets/posters/<año>/<slug>.webp` y reemplaza `poster` por la ruta local. Si devuelve código 2 dejó el fallback local por una fuente fallida: no publiques hasta conseguir un arte correcto y volver a ejecutarlo.
 
 ## Editorial filter: Guerra
 
@@ -80,7 +80,7 @@ Activate this section whenever the request says `batch`, `bulk`, `mínimo N`, `a
 - Run strict people enrichment and `npm run audit:movie-people -- --movie <slug>` for every candidate in bounded chunks against that final list. Collect every failure; a retained-credit failure blocks the candidate, while an omitted optional-credit gap is reported as an intentional exclusion rather than converted into a fake person record.
 - Run the candidate auditor **without** `--skip-youtube` before the build and again after every trailer change. A `youtube-title-mismatch`, `youtube-year-mismatch`, `youtube-search-mismatch`, or oEmbed error is a hard stop: replace the ID with a verified official/authoritative trailer and rerun. Use `--skip-youtube` only for the post-build route/reaction check, never as the first or only trailer validation.
 - Distinguish external YouTube 3xx/timeouts from content errors: retry with the bounded auditor, keep the exact warning and source evidence in the ledger, and never convert a title/year mismatch into a warning just because search is blocked.
-- Check every stored poster URL directly with the exact URL saved in JSON. Run `node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate <path>` before the candidate auditor; it follows redirects, reads the final response, requires `2xx + image/*`, parses raster dimensions, and rejects `401/403/404`, invalid image bodies, and horizontal assets. The verifier retries `429/5xx` and timeouts with bounded backoff, then reports them as external warnings rather than silently treating them as broken or valid.
+- Después de verificar visualmente e identitariamente la URL fuente, localizá el póster con `npm run posters:localize -- --movie <slug>`. La ficha debe conservar sólo `assets/posters/<año>/<slug>.webp`; nunca guardes una URL externa. El verificador local rechaza rutas inexistentes, recursos fuera de `public/`, formatos distintos de WebP, pósters horizontales, dimensiones mayores a 480x720 y archivos mayores a 100 KiB; 40–80 KiB es la meta.
 - Poster identity is a separate editorial gate: a filename, slug, first image-search result, or successful HTTP response does not prove the film, year, language, or market. Record a canonical source page that names the movie and year, compare the artwork visually, and reject badges, backdrops, stills, cropped title cards, wrong films, and Spain/LatAm-localized art when Argentine evidence does not support it. Keep the original/neutral poster when title localization is uncertain; never auto-replace every Spanish-looking asset.
 - Run the editorial audit over the complete manifest and perform a sentence-level duplicate pass across all reviews and synopses. A short, generic, recycled, or structurally interchangeable entry blocks the batch.
 - Before commit, compare the manifest count with the number of files actually added, run the duplicate scan again against both `docs/movie-catalog-reference.md` and `src/data/movies`, and retain the exact candidate paths for the final auditor command.
@@ -100,7 +100,7 @@ Stop with `La pelicula ya existe` if it reports a duplicate. When it passes, res
 
 Do not reopen sources merely to reconfirm facts. Keep an evidence ledger of compact `field → URL → fact` notes; pass only that ledger to chained skills. Read [movie-load-contract.md](references/movie-load-contract.md) only for the relevant unresolved area (platform, people, taxonomy, or editorial rules), not wholesale.
 
-For a poster, the ledger must contain `poster URL → final HTTP status/content-type/dimensions → canonical identity/year source → visual identity and Argentina-market decision`. Do not use a platform page, an image filename, or a search-result thumbnail as the only identity evidence.
+For a poster, the ledger must contain `source URL → final HTTP status/content-type/dimensions → canonical identity/year source → visual identity and Argentina-market decision → local assets/posters/<year>/<slug>.webp`. Do not use a platform page, an image filename, or a search-result thumbnail as the only identity evidence.
 
 ## Create and enrich
 
@@ -110,7 +110,11 @@ Create the starter only after the intake passes:
 npm run new-movie -- --title "<title>" --year <year> --slug <slug>
 ```
 
+Si ya está verificada la fuente del arte, pasá `--poster-url "https://…"` al crear el starter: `new-movie` descarga y localiza el WebP antes de devolver el control. Si la fuente se conoce después, cargala y corré el localizador explícito antes del auditor.
+
 Fill the template with verified data. Follow the contract for field semantics, Argentine naming/platforms, taxonomy, people, awards, recommendations, posters, trailers, and meters.
+
+Cuando la URL fuente del póster ya fue verificada, corré `npm run posters:localize -- --movie <slug>` antes de cualquier auditoría. No cierres una carga con `assets/posters/poster-fallback.webp`: eso señala una fuente que no pudo convertirse y debe resolverse.
 
 Mandatory editorial rule: write `synopsis` and `review` 100% from scratch with AI for this exact movie. Sources may establish facts and reception but are never draft material: do not copy, translate, close-paraphrase, synonym-swap, or reshape source copy. Do not use reusable scaffolds, sentence skeletons, verdict-led openings/closings, or recycled paragraphs. If it could fit another title after changing a name, rewrite it.
 
@@ -133,6 +137,7 @@ Run the candidate checks; they enforce schema, originality, people, taxonomy, ge
 
 ```bash
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json
+npm run posters:localize -- --movie <slug>
 node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate src/data/movies/<slug>.json
 npm run catalog:movies
 npm run catalog:movies:check

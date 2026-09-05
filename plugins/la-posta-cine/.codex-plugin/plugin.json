@@ -1,7 +1,7 @@
 {
   "name": "la-posta-cine",
-  "version": "0.1.0",
-  "description": "Skills y herramientas de trabajo para mantener el catálogo editorial argentino de Cine Posta.",
+  "version": "0.1.0+codex.20260905214016",
+  "description": "Skills y herramientas de trabajo para mantener el cat\u00e1logo editorial argentino de Cine Posta.",
   "author": {
     "name": "Cine Posta",
     "url": "https://www.cineposta.com.ar/"
@@ -12,8 +12,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "La Posta Cine",
-    "shortDescription": "Catálogo argentino, copy original y auditorías seguras.",
-    "longDescription": "Reúne las skills de Cine Posta para cargar películas, verificar disponibilidad legal en Argentina, mantener perfiles de personas, auditar contenido y operar GitHub con MCP. El paquete es aislado: no modifica el runtime del sitio al estar guardado en plugins/.",
+    "shortDescription": "Cat\u00e1logo argentino, copy original y auditor\u00edas seguras.",
+    "longDescription": "Re\u00fane las skills de Cine Posta para cargar pel\u00edculas, verificar disponibilidad legal en Argentina, mantener perfiles de personas, auditar contenido y operar GitHub con MCP. El paquete es aislado: no modifica el runtime del sitio al estar guardado en plugins/.",
     "developerName": "Cine Posta",
     "category": "Productivity",
     "capabilities": [
@@ -22,6 +22,6 @@
       "Review"
     ],
     "websiteURL": "https://www.cineposta.com.ar/",
-    "defaultPrompt": "Usá las skills de La Posta Cine para trabajar de forma segura en el catálogo argentino."
+    "defaultPrompt": "Us\u00e1 las skills de La Posta Cine para trabajar de forma segura en el cat\u00e1logo argentino."
   }
 }

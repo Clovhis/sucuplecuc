@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-auditor
-description: Audit recent, revalidated, or bulk-loaded La Posta Cine movie JSON files for deterministic duplicate/content integrity, identity-safe people enrichment, original AI-written editorial copy, Argentine platforms, trailer validity, generated output, catalog sync, and safe diff scope. Use after movie adds, backfills, or platform changes without modifying site code.
+description: Audit recent, revalidated, or bulk-loaded La Posta Cine movie JSON files for deterministic duplicate/content integrity, local WebP poster integrity, identity-safe people enrichment, original AI-written editorial copy, Argentine platforms, trailer validity, generated output, catalog sync, and safe diff scope. Use after movie adds, backfills, or platform changes without modifying site code.
 ---
 
 # la-posta-cine-auditor
@@ -19,7 +19,7 @@ Do not read whole catalogs or manually repeat passing checks. For each failure, 
 
 2. Treat these as hard stops: malformed schema; unverified/missing AR platform; invalid poster/trailer; missing current-year release date; bad people provenance for the required or retained credits; fewer than one verified director plus two verified performers; incorrect broad/subgenre taxonomy; an invalid `Bélica` war-filter tag; unsupported awards; manual Share/reaction/meter fields; bad recommendation slugs; stale catalog; and any forbidden diff. Exactly one director plus two retained principal performers is sufficient; the auditor must not impose a hidden three-performer minimum.
 
-   The bundled audit now verifies the exact stored `poster` URL at the byte level. It follows redirects, requires an accepted `2xx` response and `image/*` content type, parses dimensions, and rejects unavailable (`401/403/404`), non-image, unparseable, or horizontal assets. It uses bounded retries/backoff, per-host concurrency and host spacing; exhausted `429/5xx` or timeout failures remain explicit external warnings. A URL-pattern check alone is not a poster audit.
+   The bundled audit verifies the local `poster` asset at the byte level. It requires `assets/posters/<año>/<slug>.webp` (or the explicit local fallback), an existing regular file below `public/`, parseable WebP bytes, portrait dimensions no greater than 480x720 and no more than 100 KiB. The 40–80 KiB band is reported as an optimization warning. An external URL, missing file, non-WebP resource, traversal attempt or horizontal asset is a hard error. Before auditing a new title, run `npm run posters:localize -- --movie <slug>` after validating its source artwork.
 
    For the home `Guerra` filter, `Bélica` must be an exact value in `genres`, never a `subgenres` value. A broad `Guerra` tag without `Bélica` produces a deliberate-review finding: decide from the premise and copy whether the conflict is central (add `Bélica`) or only contextual (leave it out and retain the evidence-led omission). Do not approve a `Bélica` tag that is supported only by a title or an incidental war reference; do not use it for *El planeta de los simios*-style non-war stories.
 
@@ -57,11 +57,12 @@ Audit the reasoning as well as the wording: the review needs a title-specific cr
 
    The first trailer audit must run with YouTube checks enabled. `--skip-youtube` is allowed only after a successful no-skip audit and build, for route/reaction validation. Title/year mismatch, wrong-title match, or oEmbed failure remains an error; transient 3xx/timeouts may be reported as external warnings only after bounded retry.
 
-   Poster identity and market are manual evidence gates in addition to byte validation: a successful URL, filename, search-result position, or Spanish text does not prove the film, year, language, or Argentina suitability. Require a canonical page naming the movie/year plus visual comparison. Keep neutral/original art when the Argentine localization is uncertain, and do not replace every Spanish-looking poster automatically.
+   Poster identity and market are manual evidence gates before localization: a successful source URL, filename, search-result position, or Spanish text does not prove the film, year, language, or Argentina suitability. Require a canonical page naming the movie/year plus visual comparison. Keep neutral/original art when the Argentine localization is uncertain, and do not replace every Spanish-looking poster automatically.
 
 5. After safe fixes, run:
 
 ```bash
+npm run posters:localize -- --movie <slug>
 node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate <path>
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <path>
 npm run check
@@ -78,7 +79,7 @@ git diff --check
 git diff --name-only
 ```
 
-After `npm run build`, use Playwright on the actual movie route(s), scrolling each poster into view and asserting `complete`, exact `currentSrc` (or the expected final redirect), `naturalWidth > 0`, and `naturalHeight > naturalWidth`. For a batch, report the explicit manifest count and the browser `total/loaded/bad` result; source inspection or an HTTP status alone is not sufficient.
+After `npm run build`, use Playwright on the actual movie route(s), scrolling each poster into view and asserting `complete`, exact local `currentSrc`, `naturalWidth > 0`, and `naturalHeight > naturalWidth`. For a batch, report the explicit manifest count and the browser `total/loaded/bad` result; source inspection or an HTTP status alone is not sufficient.
 
 The same candidate list must also be checked for the `Guerra` filter. Confirm that every intentional `Bélica` inclusion is rendered by the `guerra` catalog facet and that context-only titles remain excluded; do not fix a taxonomy finding by editing site code.
 

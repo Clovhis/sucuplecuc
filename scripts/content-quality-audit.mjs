@@ -198,7 +198,7 @@ const movies = movieFiles.map((fileName) => {
 		cutOffSynopsis: hasCutOffSynopsis(movie.synopsis),
 		synopsisHygieneIssues: synopsisHygieneIssues(movie.synopsis),
 		reviewRepeatsSynopsis: normalize(movie.review).includes(normalize(movie.synopsis)),
-		posterIsExternal: /^https?:\/\//i.test(String(movie.poster ?? '')),
+		posterIsLocal: /^assets\/posters\/(?:poster-fallback|\d{4}\/[a-z0-9]+(?:-[a-z0-9]+)*)\.webp$/i.test(String(movie.poster ?? '')),
 		hasScreenshots: Array.isArray(movie.screenshots) && movie.screenshots.length > 0,
 	};
 });
@@ -222,7 +222,7 @@ const synopsisHygiene = releasedMovies
 	.filter((movie) => movie.synopsisHygieneIssues.length > 0)
 	.sort((left, right) => left.slug.localeCompare(right.slug));
 const similarSynopses = findSimilarSynopses(releasedMovies);
-const externalImageOnly = releasedMovies.filter((movie) => movie.posterIsExternal && !movie.hasScreenshots);
+const invalidPosterPaths = releasedMovies.filter((movie) => !movie.posterIsLocal);
 
 const report = {
 	referenceDate: referenceDate.toISOString(),
@@ -283,9 +283,9 @@ const report = {
 		count: similarSynopses.length,
 		examples: similarSynopses.slice(0, MAX_EXAMPLES),
 	},
-	externalImageOnly: {
-		count: externalImageOnly.length,
-		note: 'External posters are not automatically a policy issue, but original screenshots or owned assets help the page feel less copied.',
+	invalidPosterPaths: {
+		count: invalidPosterPaths.length,
+		note: 'Movie posters must use the local assets/posters/<year>/<slug>.webp convention; validate bytes and files with npm run posters:check.',
 	},
 };
 

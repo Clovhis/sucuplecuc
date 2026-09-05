@@ -1840,10 +1840,7 @@ export function getCultMovieStickerUrl(): string {
 
 export function getPosterUrl(poster: string): string {
 	if (!poster) {
-		return joinWithBase('posters/poster-no-disponible.svg');
-	}
-	if (/^https?:\/\//i.test(poster)) {
-		return poster;
+		return joinWithBase('assets/posters/poster-fallback.webp');
 	}
 	return joinWithBase(poster);
 }

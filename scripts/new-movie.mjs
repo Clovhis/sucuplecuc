@@ -1,4 +1,5 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import process from 'node:process';
 
@@ -44,7 +45,7 @@ function assertValidInput(args) {
 	const { title, year } = args;
 	if (!title || !year) {
 		throw new Error(
-			'Uso: npm run new-movie -- --title "Mi Peli" --year 2026 [--original-title "Original Title"] [--slug "mi-peli-2026"] [--dry-run]',
+			'Uso: npm run new-movie -- --title "Mi Peli" --year 2026 [--original-title "Original Title"] [--slug "mi-peli-2026"] [--poster-url "https://…"] [--dry-run]',
 		);
 	}
 	args.slug = String(args.slug ?? `${slugify(title)}-${year}`).trim();
@@ -55,6 +56,9 @@ function assertValidInput(args) {
 	const numericYear = Number(year);
 	if (!Number.isInteger(numericYear) || numericYear < 1888 || numericYear > 2100) {
 		throw new Error('Year invalido. Debe ser un entero entre 1888 y 2100.');
+	}
+	if (args['poster-url'] && !/^https?:\/\//i.test(args['poster-url'])) {
+		throw new Error('--poster-url debe ser una URL http(s) de la fuente de arte verificada.');
 	}
 	return numericYear;
 }
@@ -141,6 +145,7 @@ async function main() {
 			typeof args['original-title'] === 'string' && args['original-title'].trim().length > 0
 				? args['original-title'].trim()
 				: template.originalTitle,
+		poster: typeof args['poster-url'] === 'string' ? args['poster-url'].trim() : template.poster,
 		year,
 		synopsis:
 			typeof args.synopsis === 'string' && args.synopsis.trim().length > 0
@@ -149,6 +154,14 @@ async function main() {
 	};
 
 	await writeFile(outputPath, `${JSON.stringify(movieData, null, '\t')}\n`, 'utf8');
+	if (args['poster-url']) {
+		const localized = spawnSync(process.execPath, ['scripts/localize-movie-posters.mjs', '--candidate', outputPath], {
+			stdio: 'inherit',
+		});
+		if (localized.status !== 0) {
+			throw new Error('No se pudo localizar el poster: la ficha no debe continuar con una URL externa.');
+		}
+	}
 	printResult(result, args.json);
 }
 
