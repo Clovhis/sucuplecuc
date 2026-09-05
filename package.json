@@ -25,7 +25,10 @@
     "audit:content-quality": "node ./scripts/content-quality-audit.mjs",
     "audit:content-quality:strict": "node ./scripts/content-quality-audit.mjs --strict",
 	"test:content-quality": "node ./scripts/content-quality-audit.test.mjs",
-	"test:review-audit": "node ./scripts/review-audit.test.cjs",
+    "test:review-audit": "node ./scripts/review-audit.test.cjs",
+    "images:people:optimize": "node ./scripts/optimize-people-images.mjs --write",
+    "images:people:check": "node ./scripts/optimize-people-images.mjs --check",
+    "test:people-images": "node ./scripts/optimize-people-images.test.mjs",
     "test:editorial-meters": "node --experimental-strip-types ./scripts/editorial-meters.test.mjs",
     "audit:editorial-low-value": "node ./scripts/editorial-low-value-audit.mjs",
     "audit:movies:recent": "node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref main --recent --skip-youtube",
@@ -61,6 +64,7 @@
     "@emnapi/core": "^1.11.1",
     "@emnapi/runtime": "^1.11.1",
     "@playwright/test": "^1.60.0",
+    "sharp": "^0.35.3",
     "typescript": "^5.9.3"
   },
   "overrides": {

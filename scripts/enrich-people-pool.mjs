@@ -1,5 +1,6 @@
 import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { optimizePersonImage } from './optimize-people-images.mjs';
 
 const MOVIES_DIR = path.resolve('src/data/movies');
 const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
@@ -7,7 +8,7 @@ const PEOPLE_PUBLIC_DIR = path.resolve('public/people');
 const USER_AGENT = 'cine-posta-people-pool/1.0';
 const SEARCH_LIMIT = 5;
 const CONCURRENCY = 1;
-const IMAGE_WIDTH = 640;
+const IMAGE_WIDTH = 1200;
 const REQUEST_GAP_MS = Number.parseInt(process.env.PEOPLE_REQUEST_GAP_MS ?? '900', 10);
 const RETRY_BASE_MS = Number.parseInt(process.env.PEOPLE_RETRY_BASE_MS ?? '8000', 10);
 const FETCH_TIMEOUT_MS = Math.max(
@@ -1012,7 +1013,8 @@ async function downloadPersonImage(name, imdbId, remoteImageUrl) {
 	const fileName = `${fileBase}${extension}`;
 	const filePath = path.join(PEOPLE_PUBLIC_DIR, fileName);
 	await writeFile(filePath, bytes);
-	return `/people/${fileName}`;
+	const optimized = await optimizePersonImage(filePath);
+	return `/people/${path.basename(optimized.outputPath)}`;
 }
 
 async function fileExists(filePath) {
