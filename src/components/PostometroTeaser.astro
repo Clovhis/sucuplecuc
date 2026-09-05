@@ -10,17 +10,27 @@ interface Props {
 const { compact = false, className = '', id } = Astro.props as Props;
 const classes = ['postometro-teaser', compact ? 'postometro-teaser--compact' : '', className].filter(Boolean).join(' ');
 const titleId = compact ? 'postometro-teaser-title-compact' : 'postometro-teaser-title';
+const characterSources = [
+	'/images/home/cineposta-personaje-3d.webp',
+	'/images/home/cineposta-personaje-3d-cinefila.webp',
+	'/images/home/cineposta-personaje-3d-cineasta.webp',
+	'/images/home/cineposta-personaje-3d-remotera.webp',
+	'/images/home/cineposta-personaje-3d-cineclub.webp',
+	'/images/home/cineposta-personaje-3d-inclusiva.webp',
+];
 ---
 
 <section id={id} class={classes} aria-labelledby={titleId}>
 	<div class="postometro-teaser__art" aria-hidden="true">
 		<img
-			src="/images/home/cineposta-personaje-3d.webp"
+			src={characterSources[0]}
 			alt=""
 			width="290"
 			height="328"
 			loading="lazy"
 			decoding="async"
+			data-postometro-character={!compact ? true : undefined}
+			data-postometro-character-sources={!compact ? JSON.stringify(characterSources) : undefined}
 		/>
 	</div>
 	<div class="postometro-teaser__copy">
@@ -37,3 +47,5 @@ const titleId = compact ? 'postometro-teaser-title-compact' : 'postometro-teaser
 		</a>
 	</div>
 </section>
+
+{!compact && <script src="../scripts/postometro-character.ts"></script>}

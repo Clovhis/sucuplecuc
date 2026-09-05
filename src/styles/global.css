@@ -3653,6 +3653,12 @@ img {
 	}
 }
 
+@media (prefers-reduced-motion: reduce) {
+	.postometro-teaser__art img {
+		animation: none;
+	}
+}
+
 .movie-search__label {
 	font-size: 0.78rem;
 	color: #d2dae8;
