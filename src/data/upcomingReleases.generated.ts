@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-04T23:10:00.817Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-05T08:35:36.127Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -96,7 +96,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Street Fighter",
 		"releaseDate": "2026-10-15",
 		"videoUrl": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/bA6twMcGZtV2cQRQA3ZTMQPJznU.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10217-street-fighter/"
 	}
 ];
