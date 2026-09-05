@@ -14,6 +14,19 @@ Create one movie entry or an explicitly requested batch. Work quietly; send one 
 - A correct slug automatically enables Share, Comunidad, ratings, recommendation blocks, and the verdict reaction. Do not create per-movie fields or external records for any of them.
 - If title/year is ambiguous, ask one question before researching. Otherwise extract feedback, requested platform/premiere intent, and an explicit verdict label from the request.
 
+## Política canónica para retratos locales
+
+Esta política aplica a toda alta o reemplazo bajo `public/people/**`: retratos descargados por `enrich-people`, correcciones manuales del caché `people.json` y retratos que también vayan a usarse como `profileImage` en un perfil extendido.
+
+- `enrich-people` ya invoca el optimizador canónico para cada descarga. No lances otra pasada global sólo porque se ejecutó el enriquecimiento: primero revisá `git status --short -- public/people`. Si hay una alta o reemplazo (`A`, `M` o `??`) corré la pasada canónica para cubrir también copias/manuales y actualizar referencias si cambia una extensión:
+
+  ```bash
+  npm run images:people:optimize
+  ```
+
+- No reimplementes conversiones, límites, compresión, limpieza de metadata ni actualización de referencias con scripts ad hoc o llamadas directas a `sharp`: `images:people:optimize` es la única fuente de verdad. `npm run images:people:check` se corre siempre al final como hard gate global; un exit code distinto de cero impide dar por terminada la carga, incluso si el auditor de personas pasó.
+- Esta regla sólo abarca archivos locales de personas. La política de posters externos de películas no cambia: no los descargues, conviertas ni optimices como parte de este paso; seguí usando `verify_posters.cjs` con la URL externa guardada.
+
 ## Editorial filter: Guerra
 
 - The home button is `Guerra`, but its source signal is the exact `Bélica` label in `genres`. Add `Bélica` only when the war, front, military operation or combat experience is central to the film; keep `category` as the primary lane and do not put this broad signal in `subgenres`.
@@ -127,6 +140,7 @@ npm run update-upcoming-releases
 npm run check
 npm run test:editorial-meters
 npm run audit:movie-people -- --movie <slug>
+npm run images:people:check
 npm run validate:content
 npm run build
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate src/data/movies/<slug>.json --skip-youtube --verify-community-build --verify-reaction-build --verify-cinema-carousel-build --verify-streaming-carousel-build

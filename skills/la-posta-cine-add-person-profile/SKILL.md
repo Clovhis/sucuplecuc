@@ -7,6 +7,13 @@ description: Add or update a Cine Posta person profile with identity-safe sourci
 
 Use `src/data/people.json` for factual cache and `src/data/personProfiles.ts` for extended profiles. Read only the target profile and its row in `docs/person-profile-catalog-reference.md`; do not scan unrelated filmography or movie files.
 
+- Para todo retrato local nuevo o reemplazado en `public/people/**` —tanto el compacto de `people.json` como `profileImage` de un perfil extendido, o una corrección manual posterior a `enrich-people`— usá exclusivamente el flujo canónico. `enrich-people` ya optimiza cada descarga: no hagas una pasada global sólo por haberlo ejecutado. Revisá `git status --short -- public/people` y, únicamente si hay una alta o reemplazo (`A`, `M` o `??`), corré:
+
+  ```bash
+  npm run images:people:optimize
+  ```
+
+  La pasada completa absorbe además reemplazos manuales y actualiza referencias si una conversión cambia la extensión. No reproduzcas la lógica con conversiones ad hoc o llamadas directas a `sharp`. `npm run images:people:check` se ejecuta siempre al final como hard gate global: si falla, el perfil o la carga no está terminada. Esto no modifica ni cubre posters externos de películas.
 - Preserve `biography` only as contamination evidence. Public text is exclusively `editorialBiography`; never render, search, summarize, translate, paraphrase, or use legacy biography text as a draft.
 - Research with a compact evidence ledger from official biographies, award bodies, reputable references, or direct interviews. Write exactly two original paragraphs of 70–150 words total in Rioplatense Spanish. It must be AI-written from scratch for that person, factual, specific, and not template-shaped or source-derived.
 - Verify identity with at least two independent signals before saving an IMDb/Wikidata/TMDb identifier: exact name plus filmography, nationality, date, official agency/production credit, or another disambiguator. Do not trust the first search result for a homonymous person.
@@ -22,6 +29,7 @@ Run the canonical full-corpus checks because originality is comparative:
 ```bash
 npm run audit:profiles --all
 npm run audit:profile-originality
+npm run images:people:check
 npm run build
 npm run audit:profiles --all -- --require-dist
 npm run audit:profile-originality -- --require-dist
