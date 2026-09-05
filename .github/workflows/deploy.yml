@@ -53,6 +53,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check local posters
+        run: npm run posters:check
+
       - name: Build site
         run: npm run build
 
