@@ -37,13 +37,20 @@ function getOutputPath(inputPath, hasTransparency) {
 
 async function isOptimized(input, metadata, filePath) {
 	const limit = getDimensionLimit(metadata);
-	const expectedExtension = getOutputExtension(await hasVisibleTransparency(input, metadata));
+	const hasTransparency = await hasVisibleTransparency(input, metadata);
+	const expectedExtension = getOutputExtension(hasTransparency);
 	const hasEmbeddedMetadata = Boolean(metadata.exif || metadata.icc || metadata.iptc || metadata.xmp);
+	const hasOrientationToApply = Boolean(metadata.orientation && metadata.orientation !== 1);
+	const hasExpectedEncoding = hasTransparency
+		? metadata.format === 'png'
+		: metadata.format === 'jpeg' && metadata.isProgressive === true && metadata.chromaSubsampling === '4:4:4';
 	return (
 		path.extname(filePath).toLowerCase() === expectedExtension &&
 		metadata.width <= limit.width &&
 		metadata.height <= limit.height &&
-		!hasEmbeddedMetadata
+		!hasEmbeddedMetadata &&
+		!hasOrientationToApply &&
+		hasExpectedEncoding
 	);
 }
 
@@ -54,6 +61,20 @@ export async function optimizePersonImage(inputPath, { dryRun = false } = {}) {
 	const metadata = await source.metadata();
 	if (!metadata.width || !metadata.height) {
 		throw new Error(`No se pudieron leer las dimensiones de ${inputPath}`);
+	}
+
+	const sourceStats = await stat(inputPath);
+	if (await isOptimized(input, metadata, inputPath)) {
+		return {
+			inputPath,
+			outputPath: inputPath,
+			inputBytes: sourceStats.size,
+			outputBytes: sourceStats.size,
+			width: metadata.width,
+			height: metadata.height,
+			outputExtension: path.extname(inputPath),
+			changed: false,
+		};
 	}
 
 	const hasTransparency = await hasVisibleTransparency(input, metadata);
@@ -67,7 +88,6 @@ export async function optimizePersonImage(inputPath, { dryRun = false } = {}) {
 	const output = hasTransparency
 		? await pipeline.png({ compressionLevel: 9, palette: false }).toBuffer()
 		: await pipeline.jpeg(JPEG_OPTIONS).toBuffer();
-	const sourceStats = await stat(inputPath);
 
 	if (!dryRun) {
 		await writeFile(outputPath, output);
@@ -84,6 +104,7 @@ export async function optimizePersonImage(inputPath, { dryRun = false } = {}) {
 		width: metadata.width,
 		height: metadata.height,
 		outputExtension: path.extname(outputPath),
+		changed: true,
 	};
 }
 
@@ -160,6 +181,7 @@ async function optimizePeopleImages({ dryRun, extensions }) {
 		JSON.stringify(
 			{
 				files: results.length,
+				changedFiles: results.filter((result) => result.changed).length,
 				inputBytes,
 				outputBytes,
 				savedBytes: inputBytes - outputBytes,

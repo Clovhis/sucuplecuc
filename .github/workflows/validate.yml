@@ -53,6 +53,9 @@ jobs:
       - name: Audit production dependencies
         run: npm audit --omit=dev --audit-level=high
 
+      - name: Validate people image policy
+        run: npm run images:people:check
+
       - name: Validate content and build
         env:
           RUN_FULL_CONTENT_AUDIT: ${{ github.event_name == 'workflow_dispatch' && inputs.full_content_audit == true }}
