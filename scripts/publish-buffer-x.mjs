@@ -127,10 +127,12 @@ async function bufferRequest(apiKey, query, variables = {}) {
 }
 
 async function getXChannel(apiKey) {
-	const organizations = await bufferRequest(apiKey, 'query { account { organizations { id name } } }');
 	const expectedChannelId = process.env.BUFFER_X_CHANNEL_ID?.trim();
+	const configuredOrganizationId = process.env.BUFFER_ORGANIZATION_ID?.trim();
+	if (configuredOrganizationId && expectedChannelId) return { organizationId: configuredOrganizationId, channel: { id: expectedChannelId, name: '@cineposta' } };
+	const organizations = await bufferRequest(apiKey, 'query { account { organizations { id name } } }');
 	for (const organization of organizations.account.organizations) {
-		const data = await bufferRequest(apiKey, 'query Channels($organizationId: String!) { channels(input: { organizationId: $organizationId }) { id name service } }', { organizationId: organization.id });
+		const data = await bufferRequest(apiKey, 'query Channels($organizationId: OrganizationId!) { channels(input: { organizationId: $organizationId }) { id name service } }', { organizationId: organization.id });
 		const twitterChannels = data.channels.filter((channel) => channel.service === 'twitter');
 		const exact = twitterChannels.find((channel) => channel.id === expectedChannelId || /^@?cineposta$/iu.test(channel.name.trim()));
 		if (exact) return { organizationId: organization.id, channel: exact };
@@ -140,7 +142,7 @@ async function getXChannel(apiKey) {
 }
 
 async function getBufferPostGuard(apiKey, organizationId, channelId, dueAt) {
-	const query = 'query ExistingPosts($organizationId: String!, $channelIds: [String!]!) { posts(first: 100, input: { organizationId: $organizationId, filter: { status: [sent, scheduled, draft, needs_approval], channelIds: $channelIds } }) { edges { node { text dueAt } } } }';
+	const query = 'query ExistingPosts($organizationId: OrganizationId!, $channelIds: [ChannelId!]) { posts(first: 100, input: { organizationId: $organizationId, filter: { status: [sent, scheduled, draft, needs_approval], channelIds: $channelIds } }) { edges { node { text dueAt } } } }';
 	const data = await bufferRequest(apiKey, query, { organizationId, channelIds: [channelId] });
 	const slugs = new Set();
 	let targetSlotOccupied = false;

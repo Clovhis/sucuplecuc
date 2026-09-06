@@ -16,7 +16,7 @@ Es el modo por defecto y no lee la clave ni llama a Buffer. Muestra el texto, el
 
 1. Revocá la clave que se compartió por chat y creá una nueva en Buffer, con nombre `GitHub Actions Cine Posta X` y sólo los permisos `postsRead` y `postsWrite`.
 2. En `Clovhis/sucuplecuc` → Settings → Secrets and variables → Actions, creá el secret `BUFFER_API_KEY` con esa nueva clave. Nunca lo guardes en un archivo del repositorio.
-3. Confirmá que `@cineposta` esté conectado en Buffer. El script lo busca por nombre y por servicio `twitter`. Si el nombre de canal difiere, agregá la variable de repositorio `BUFFER_X_CHANNEL_ID` con el ID del canal que muestra Buffer.
+3. Confirmá que `@cineposta` esté conectado en Buffer y configurá las variables de repositorio `BUFFER_ORGANIZATION_ID` y `BUFFER_X_CHANNEL_ID` con sus IDs de Buffer. De ese modo la clave queda limitada a `posts:read` y `posts:write`; no necesita leer datos de cuenta para descubrirlos. Si omitís alguna, el script intenta descubrir el canal, lo que requiere además `account:read`.
 4. Ejecutá manualmente el workflow con `mode: dry-run` y revisá el log. Esa opción no se comunica con Buffer.
 5. Cuando la vista previa esté aprobada, agregá la variable de repositorio `BUFFER_X_AUTOPUBLISH_ENABLED=true`. El schedule queda activo todos los días a las 18:30 ART y Buffer recibe una publicación con hora fija 19:00 ART (22:00 UTC).
 
