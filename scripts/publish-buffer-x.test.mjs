@@ -7,7 +7,7 @@ assert.match(text, /^Si buscás algo de ciencia ficción, Akira \(1988\) recién
 assert.match(text, /Veredicto Cine Posta: BUENISIMA\./u);
 assert.match(text, /Nuestra reseña:/u);
 assert.match(text, /https:\/\/www\.cineposta\.com\.ar\/peliculas\/akira-1988\//u);
-assert.ok(weightedXLength(text) <= 280);
+assert.ok(weightedXLength(text) <= 250);
 const selection = selectMovie([{ movie, posterUrl: 'https://www.cineposta.com.ar/assets/posters/1988/akira-1988.webp' }, { movie: { ...movie, slug: 'paprika-2006', title: 'Paprika' }, posterUrl: 'https://www.cineposta.com.ar/assets/posters/2006/paprika-2006.webp' }], { version: 1, posts: [{ slug: 'akira-1988' }] });
 assert.equal(selection.movie.slug, 'paprika-2006');
 assert.equal(nextDueAt(new Date('2026-09-06T21:30:00.000Z')), '2026-09-06T22:00:00.000Z');

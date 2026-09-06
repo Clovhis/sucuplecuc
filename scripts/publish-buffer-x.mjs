@@ -7,7 +7,9 @@ const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'
 const MOVIES_DIR = path.join(ROOT_DIR, 'src/data/movies');
 const DEFAULT_HISTORY_PATH = path.join(ROOT_DIR, '.github/cineposta-buffer-x-history.json');
 const SITE_URL = 'https://www.cineposta.com.ar';
-const MAX_X_WEIGHTED_LENGTH = 280;
+// Buffer/X can add URL normalization overhead beyond the public t.co estimate.
+// Keep a deliberate margin so a valid preview is never rejected at scheduling time.
+const MAX_X_WEIGHTED_LENGTH = 250;
 const URL_WEIGHT = 23;
 const RECENT_PREMIERE_DAYS = 90;
 
