@@ -1,6 +1,6 @@
 # Publicación diaria en X con Buffer
 
-El workflow `.github/workflows/publish-buffer-x.yml` toma únicamente películas reales de `src/data/movies`. Exige título, año, reseña, veredicto y un póster local existente en `public/assets/posters`. Arma una publicación corta desde la primera oración de la reseña, conserva el veredicto y enlaza la ficha por su `slug`.
+El workflow `.github/workflows/publish-buffer-x.yml` toma únicamente estrenos recientes reales de `src/data/movies`: marcados como estreno, publicados en los últimos 90 días, con disponibilidad confirmada y sin la etiqueta conservadora `Otras plataformas`. Exige título, año, reseña, veredicto y un póster local existente en `public/assets/posters`. El formato es breve y rioplatense: disponibilidad, una línea editorial concreta, veredicto y enlace directo a la ficha.
 
 El script no modifica contenido editorial. Su historial operativo está en `.github/cineposta-buffer-x-history.json`; una película queda excluida apenas se programa. Antes de crear una publicación, también revisa los últimos 100 posteos de Buffer, reconoce los enlaces de Cine Posta y confirma que la franja de las 19:00 ART esté libre. Así un reintento no duplica el post ni crea un segundo post del día aunque falle el commit del historial.
 

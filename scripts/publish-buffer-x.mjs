@@ -9,6 +9,7 @@ const DEFAULT_HISTORY_PATH = path.join(ROOT_DIR, '.github/cineposta-buffer-x-his
 const SITE_URL = 'https://www.cineposta.com.ar';
 const MAX_X_WEIGHTED_LENGTH = 280;
 const URL_WEIGHT = 23;
+const RECENT_PREMIERE_DAYS = 90;
 
 function parseArguments(argumentsList) {
 	const values = new Map();
@@ -32,6 +33,19 @@ function verdictLabel(movie) {
 	return ({ recomendada: 'MIRALA', zafa: 'ZAFA', 'no-recomendada': 'MEJOR PASÁ' })[movie.verdict] ?? String(movie.verdict ?? '').trim().toUpperCase();
 }
 
+function moviePlatforms(movie) {
+	const values = Array.isArray(movie.releasePlatforms) ? movie.releasePlatforms : [movie.releasePlatform];
+	return values.filter((value) => typeof value === 'string' && value.trim() && value !== 'Otras plataformas').map((value) => value.trim());
+}
+
+function availabilityLabel(movie) {
+	const platforms = moviePlatforms(movie);
+	if (platforms.includes('Cine')) return 'en cines de Argentina';
+	if (platforms.length === 1) return `en ${platforms[0]}`;
+	if (platforms.length === 2) return `en ${platforms[0]} y ${platforms[1]}`;
+	return `en ${platforms.slice(0, -1).join(', ')} y ${platforms.at(-1)}`;
+}
+
 async function localPosterUrl(movie) {
 	const poster = requiredString(movie.poster, 'poster', movie);
 	if (!poster.startsWith('assets/posters/')) return null;
@@ -46,7 +60,7 @@ function firstSentence(value) {
 	return normalized.match(/^(.+?[.!?…])(?:\s|$)/u)?.[1] ?? normalized;
 }
 
-function weightedXLength(text) {
+export function weightedXLength(text) {
 	const urls = text.match(/https?:\/\/[^\s]+/gu) ?? [];
 	return [...text].length - urls.reduce((total, url) => total + [...url].length, 0) + urls.length * URL_WEIGHT;
 }
@@ -62,8 +76,9 @@ export function renderPostText(movie) {
 	if (!Number.isInteger(movie.year)) throw new Error(`La película ${movie.slug} no tiene un año válido.`);
 	const label = requiredString(verdictLabel(movie), 'veredicto', movie);
 	const url = movieUrl(requiredString(movie.slug, 'slug', movie));
-	const prefix = `${title} (${movie.year})\n\n`;
-	const suffix = `\n\nVeredicto Cine Posta: ${label}.\n${url}`;
+	const category = typeof movie.category === 'string' && movie.category.trim() ? `Si buscás algo de ${movie.category.trim().toLocaleLowerCase('es-AR')}, ` : '';
+	const prefix = `${category}${title} (${movie.year}) recién llegó ${availabilityLabel(movie)}.\n\n`;
+	const suffix = `\n\nVeredicto Cine Posta: ${label}.\nNuestra reseña: ${url}`;
 	const excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(prefix) - weightedXLength(suffix);
 	if (excerptBudget < 24) throw new Error(`El título de ${movie.slug} no deja espacio suficiente para una publicación en X.`);
 	return `${prefix}${shorten(firstSentence(review), excerptBudget)}${suffix}`;
@@ -102,10 +117,18 @@ export function nextDueAt(now = new Date()) {
 	return new Date(now.getTime() < sevenPmArgentina.getTime() ? sevenPmArgentina : sevenPmArgentina.getTime() + 86_400_000).toISOString();
 }
 
-async function eligibleMovies(movies) {
+function isRecentPremiere(movie, today = argentinaDate()) {
+	if (movie?.isPremiere !== true || !/^\d{4}-\d{2}-\d{2}$/u.test(movie.releaseDate ?? '')) return false;
+	const releaseAt = new Date(`${movie.releaseDate}T00:00:00.000Z`);
+	const todayAt = new Date(`${today}T00:00:00.000Z`);
+	const oldestAt = new Date(todayAt.getTime() - RECENT_PREMIERE_DAYS * 86_400_000);
+	return releaseAt <= todayAt && releaseAt >= oldestAt && moviePlatforms(movie).length > 0;
+}
+
+async function eligibleMovies(movies, today) {
 	const eligible = [];
 	for (const movie of movies) {
-		if (!movie?.slug || !movie?.title || !movie?.review || !movie?.year || !verdictLabel(movie)) continue;
+		if (!movie?.slug || !movie?.title || !movie?.review || !movie?.year || !verdictLabel(movie) || !isRecentPremiere(movie, today)) continue;
 		const posterUrl = await localPosterUrl(movie);
 		if (posterUrl) eligible.push({ movie, posterUrl });
 	}
@@ -116,7 +139,7 @@ export function selectMovie(eligible, history, externallyUsedSlugs = new Set()) 
 	const usedSlugs = new Set([...history.posts.map(({ slug }) => slug), ...externallyUsedSlugs]);
 	const candidates = eligible.filter(({ movie }) => !usedSlugs.has(movie.slug));
 	if (candidates.length === 0) throw new Error('No quedan películas elegibles sin publicar en Buffer. Revisá el historial antes de habilitar un nuevo ciclo.');
-	return candidates.sort((left, right) => hash(left.movie.slug) - hash(right.movie.slug) || left.movie.slug.localeCompare(right.movie.slug))[0];
+	return candidates.sort((left, right) => right.movie.releaseDate.localeCompare(left.movie.releaseDate) || hash(left.movie.slug) - hash(right.movie.slug) || left.movie.slug.localeCompare(right.movie.slug))[0];
 }
 
 async function bufferRequest(apiKey, query, variables = {}) {
