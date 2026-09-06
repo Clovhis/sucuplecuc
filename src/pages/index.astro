@@ -34,6 +34,7 @@ import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME,
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
+const assetBase = import.meta.env.BASE_URL;
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
 const subgenreOptions = getSubgenreFilterOptions(movies);
@@ -267,7 +268,16 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						)
 					}
 					<div class="site-header__actions">
-						<a class="site-header__community" href={COMMUNITY_PATH}>Comunidad</a>
+						<a
+							class="site-header__x"
+							href="https://x.com/cineposta"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Seguir a Cine Posta en X (se abre en una pestaña nueva)"
+						>
+							<img class="site-header__x-icon" src={`${assetBase}brand/x-logo.svg`} alt="" />
+							<span>@cineposta</span>
+						</a>
 						<a class="site-header__contact" href={CONTACT_PATH}>
 							Prensa / Contacto
 						</a>

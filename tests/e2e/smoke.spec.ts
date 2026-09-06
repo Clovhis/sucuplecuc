@@ -43,6 +43,11 @@ test('home page renders the catalog shell', async ({ page }) => {
 	await expect(page.locator('[data-movie-search-grid]')).toBeVisible();
 	await expect(page.getByRole('heading', { name: /Construí tu carrera en el cine/i })).toBeVisible();
 	await expect(page.getByRole('link', { name: 'Sobre', exact: true })).toBeVisible();
+	const headerXLink = page.locator('.site-header__x');
+	await expect(headerXLink).toBeVisible();
+	await expect(headerXLink).toHaveAttribute('href', 'https://x.com/cineposta');
+	await expect(headerXLink).toHaveAttribute('target', '_blank');
+	await expect(headerXLink.locator('img')).toHaveAttribute('src', '/brand/x-logo.svg');
 	await expect(page.getByRole('link', { name: /^Ver detalle de/i }).first()).toBeVisible();
 
   const bodyText = await page.locator('body').innerText();
@@ -63,6 +68,17 @@ test('contact page exposes separate general and press channels', async ({ page }
 	await expect(footer.getByRole('heading', { name: 'Hablemos' })).toBeVisible();
 	await expect(footer.locator('a[href^="mailto:contacto@cineposta.com.ar"]').first()).toBeVisible();
 	await expect(footer.locator('a[href^="mailto:prensa@cineposta.com.ar"]').first()).toBeVisible();
+	const xLink = footer.getByRole('link', { name: /Seguir a Cine Posta en X/i });
+	await expect(xLink).toBeVisible();
+	await expect(xLink).toHaveAttribute('href', 'https://x.com/cineposta');
+	await expect(xLink).toHaveAttribute('target', '_blank');
+	await expect(xLink).toHaveAttribute('rel', 'noopener noreferrer');
+	await expect(xLink.locator('img')).toHaveAttribute('src', '/brand/x-logo.svg');
+	const xLinkBox = await xLink.boundingBox();
+	expect(xLinkBox?.width).toBeGreaterThanOrEqual(44);
+	expect(xLinkBox?.height).toBeGreaterThanOrEqual(44);
+	const hasHorizontalOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+	expect(hasHorizontalOverflow).toBeFalsy();
 	const contactHtml = await page.content();
 	expect(contactHtml).not.toMatch(/@hotmail\./i);
 });

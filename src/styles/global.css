@@ -433,17 +433,18 @@ img {
 	background: rgba(27, 40, 56, 0.96);
 }
 
-.site-header__community {
+.site-header__x {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	gap: 0.45rem;
 	min-height: 2.75rem;
 	padding: 0.52rem 0.85rem;
-	border: 1px solid rgba(189, 160, 255, 0.38);
+	border: 1px solid rgba(231, 237, 246, 0.3);
 	border-radius: var(--control-radius);
-	background: rgba(34, 27, 48, 0.92);
-	color: #eee4ff;
+	background: rgba(29, 35, 45, 0.92);
+	color: #f7f9fc;
 	font-family: var(--font-mono);
 	font-size: 0.7rem;
 	letter-spacing: 0.075em;
@@ -452,16 +453,22 @@ img {
 	transition: transform 0.22s ease, border-color 0.22s ease, background-color 0.22s ease;
 }
 
-.site-header__community:hover,
-.site-header__community:focus-visible {
+.site-header__x:hover,
+.site-header__x:focus-visible {
 	transform: translateY(-3px);
-	border-color: rgba(202, 181, 255, 0.72);
-	background: rgba(48, 38, 68, 0.96);
+	border-color: rgba(255, 255, 255, 0.62);
+	background: rgba(48, 56, 69, 0.96);
 }
 
-.site-header__community:focus-visible {
-	outline: 3px solid rgba(202, 181, 255, 0.32);
+.site-header__x:focus-visible {
+	outline: 3px solid rgba(231, 237, 246, 0.3);
 	outline-offset: 3px;
+}
+
+.site-header__x-icon {
+	width: 0.82rem;
+	height: 0.82rem;
+	flex: 0 0 auto;
 }
 
 .home-catalog {
@@ -11999,7 +12006,7 @@ img {
 
 .site-footer__channels {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
 	gap: 0.75rem;
 	margin: 0;
 }
@@ -12042,6 +12049,40 @@ img {
 	font-family: var(--font-mono);
 	font-size: 0.78rem;
 	overflow-wrap: anywhere;
+}
+
+.site-footer__channel--x {
+	grid-template-columns: auto minmax(0, 1fr);
+	column-gap: 0.7rem;
+	align-items: center;
+}
+
+.site-footer__channel-icon {
+	display: grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 0.58rem;
+	background: rgba(255, 255, 255, 0.06);
+	color: #ffffff;
+}
+
+.site-footer__channel-icon img {
+	width: 0.92rem;
+	height: 0.92rem;
+}
+
+.site-footer__channel-content {
+	display: grid;
+	gap: 0.22rem;
+	min-width: 0;
+}
+
+.site-footer__channel--x:hover .site-footer__channel-icon,
+.site-footer__channel--x:focus-visible .site-footer__channel-icon {
+	border-color: rgba(255, 207, 187, 0.55);
+	background: rgba(255, 255, 255, 0.11);
 }
 
 .site-footer__copy,
@@ -12791,7 +12832,7 @@ img {
 	}
 
 	.site-header__contact,
-	.site-header__community {
+	.site-header__x {
 		min-width: 0;
 		justify-content: center;
 	}
