@@ -1,0 +1,84 @@
+name: Publish daily Cine Posta post to X
+
+on:
+  schedule:
+    # 18:30 Argentina (ART, UTC-3). Buffer publishes the post at 19:00 ART.
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'dry-run never contacts Buffer; publish schedules exactly one post.'
+        required: true
+        default: dry-run
+        type: choice
+        options:
+          - dry-run
+          - publish
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cineposta-buffer-x
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # A schedule remains inert until the repository variable is explicitly enabled.
+    if: ${{ github.event_name != 'schedule' || vars.BUFFER_X_AUTOPUBLISH_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify post generator
+        run: npm run test:buffer:x
+
+      - name: Generate a safe preview
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run' }}
+        run: npm run buffer:x
+
+      - name: Schedule post in Buffer
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_X_CHANNEL_ID: ${{ vars.BUFFER_X_CHANNEL_ID }}
+        run: npm run buffer:x -- --publish
+
+      - name: Commit operational publication history
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        run: |
+          expected_file='.github/cineposta-buffer-x-history.json'
+          unexpected_files=$(git diff --name-only | grep -v "^${expected_file}$" || true)
+          if [ -n "$unexpected_files" ]; then
+            echo 'Unexpected files changed by the publisher:'
+            echo "$unexpected_files"
+            exit 1
+          fi
+
+          if git diff --quiet -- "$expected_file"; then
+            echo 'The publisher did not change its operational history.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$expected_file"
+          git commit -m 'chore: record Buffer X publication'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

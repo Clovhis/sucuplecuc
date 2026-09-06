@@ -18,6 +18,8 @@
     "update-upcoming-releases": "node ./scripts/update-upcoming-releases.mjs",
     "refresh:weekly-recommendations": "node --experimental-strip-types ./scripts/refresh-weekly-recommendations.mjs",
     "test:weekly-recommendations": "node --experimental-strip-types ./scripts/weekly-recommendations.test.mjs",
+	"buffer:x": "node ./scripts/publish-buffer-x.mjs",
+	"test:buffer:x": "node ./scripts/publish-buffer-x.test.mjs",
     "enrich-synopsis": "node ./scripts/enrich-movie-synopsis.mjs",
     "enrich-editorial": "node ./scripts/enrich-movie-editorial.mjs",
     "enrich-people": "node ./scripts/enrich-people-pool.mjs",
