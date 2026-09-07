@@ -121,6 +121,30 @@ npm run test:e2e:desktop
 npm run test:e2e:mobile
 ```
 
+## Publicación diaria en X con Buffer
+
+La cuenta `@cineposta` publica automáticamente una película reciente del catálogo cada día. La automatización vive en estos archivos:
+
+- `scripts/publish-buffer-x.mjs`: elige una película apta, compone el copy y la agenda en Buffer.
+- `.github/workflows/publish-buffer-x.yml`: ejecuta el proceso desde GitHub Actions, incluso con la computadora apagada o VS Code cerrado.
+- `.github/cineposta-buffer-x-history.json`: registra qué películas ya se programaron y los estilos recientes de copy.
+- `docs/buffer-x-automation.md`: guía operativa, habilitación, pausa y recuperación.
+
+El schedule de Actions corre a las 18:30 ART (`30 21 * * *` en UTC) y Buffer recibe una publicación `customScheduled` para las 19:00 ART (22:00 UTC). Antes de programarla, se controla que la franja esté libre y que la película no esté ni en el historial ni entre las últimas 100 publicaciones de Buffer. El post incluye póster local, enlace directo a la ficha y un máximo interno de 250 caracteres ponderados para no exceder el límite de X.
+
+El copy conserva el tono corto y rioplatense, pero combina 12 arranques, 4 formulaciones de disponibilidad, 10 entradas editoriales, 8 veredictos y 8 cierres con enlace: más de 30.000 combinaciones. El estilo se elige de forma determinista para que un dry-run sea reproducible y el historial evita repetir arranque, veredicto o cierre durante las tres publicaciones siguientes. El contenido editorial de las películas no se modifica.
+
+Para revisar el próximo mensaje sin acceder a Buffer ni publicar nada:
+
+```bash
+npm run test:buffer:x
+npm run buffer:x
+```
+
+El workflow manual ofrece `dry-run` (sin contacto con Buffer) y `publish`. El schedule sólo publica si la variable del repositorio `BUFFER_X_AUTOPUBLISH_ENABLED` vale `true`. Sus credenciales se mantienen fuera del repo: `BUFFER_API_KEY` es un secret de Actions y `BUFFER_ORGANIZATION_ID` y `BUFFER_X_CHANNEL_ID` son variables del repositorio.
+
+La conexión MCP de Buffer es una herramienta externa para operar o inspeccionar Buffer desde Codex; está configurada globalmente en `C:\Users\yosoy\.codex\config.toml` con `https://mcp.buffer.com/mcp` y usa la misma variable de entorno `BUFFER_API_KEY`. No se versiona ni se necesita para que corra la publicación automática: Actions usa la API GraphQL de Buffer directamente. Nunca agregues la clave al repositorio, `.env` ni documentación.
+
 Otros:
 
 ```bash

@@ -12,6 +12,60 @@ const SITE_URL = 'https://www.cineposta.com.ar';
 const MAX_X_WEIGHTED_LENGTH = 250;
 const URL_WEIGHT = 23;
 const RECENT_PREMIERE_DAYS = 90;
+const COPY_VARIANT_HISTORY_SIZE = 3;
+
+const OPENING_TEMPLATES = [
+	({ title, availability }) => `${title} ${availability}.`,
+	({ title, availability, genre }) => `Si buscás algo de ${genre}, ${title} ${availability}.`,
+	({ title, availability, genre }) => `¿Con ganas de ${genre}? ${title} ${availability}.`,
+	({ title, availability }) => `Una para agendar: ${title} ${availability}.`,
+	({ title, availability, genre }) => `Para una noche de ${genre}, ${title} ${availability}.`,
+	({ title, availability }) => `Atenti con ${title}: ${availability}.`,
+	({ title, availability, genre }) => `Si te pinta ${genre}, ${title} ${availability}.`,
+	({ title, availability }) => `Plan de peli: ${title} ${availability}.`,
+	({ title, availability, genre }) => `¿Qué mirar si te gusta ${genre}? ${title} ${availability}.`,
+	({ title, availability }) => `Para sumar a la lista: ${title} ${availability}.`,
+	({ title, availability, genre }) => `Para quienes vienen buscando ${genre}, ${title} ${availability}.`,
+	({ title, availability }) => `Anotá esta: ${title} ${availability}.`,
+];
+
+const EDITORIAL_INTROS = [
+	'',
+	'La posta: ',
+	'En la reseña, ',
+	'Lo que nos dejó: ',
+	'Va por acá: ',
+	'Para tener en cuenta: ',
+	'La mirada de Cine Posta: ',
+	'¿Qué propone? ',
+	'El foco está puesto en esto: ',
+	'Un adelanto de nuestra reseña: ',
+];
+
+const VERDICT_TEMPLATES = [
+	(label) => `Nuestro veredicto: ${label}.`,
+	(label) => `Veredicto Cine Posta: ${label}.`,
+	(label) => `Balance final: ${label}.`,
+	(label) => `Para Cine Posta: ${label}.`,
+	(label) => `¿La recomendamos? ${label}.`,
+	(label) => `El veredicto queda así: ${label}.`,
+	(label) => `La posta del equipo: ${label}.`,
+	(label) => `${label}, según Cine Posta.`,
+];
+
+const LINK_TEMPLATES = [
+	(url) => `La reseña completa: ${url}`,
+	(url) => `Ficha y reseña: ${url}`,
+	(url) => `Leé la reseña: ${url}`,
+	(url) => `La tenés acá: ${url}`,
+	(url) => `Todo el detalle: ${url}`,
+	(url) => `Pasá por la ficha: ${url}`,
+	(url) => `La crítica completa: ${url}`,
+	(url) => `Más sobre la peli: ${url}`,
+];
+
+const ANTI_REPEAT_COMPONENTS = ['opening', 'verdict', 'link'];
+const COPY_COMPONENT_TEMPLATES = { opening: OPENING_TEMPLATES, verdict: VERDICT_TEMPLATES, link: LINK_TEMPLATES };
 
 function parseArguments(argumentsList) {
 	const values = new Map();
@@ -40,12 +94,12 @@ function moviePlatforms(movie) {
 	return values.filter((value) => typeof value === 'string' && value.trim() && value !== 'Otras plataformas').map((value) => value.trim());
 }
 
-function availabilityLabel(movie) {
+function availabilityLabels(movie) {
 	const platforms = moviePlatforms(movie);
-	if (platforms.includes('Cine')) return 'en cines de Argentina';
-	if (platforms.length === 1) return `en ${platforms[0]}`;
-	if (platforms.length === 2) return `en ${platforms[0]} y ${platforms[1]}`;
-	return `en ${platforms.slice(0, -1).join(', ')} y ${platforms.at(-1)}`;
+	if (platforms.includes('Cine')) return ['ya está en cines de Argentina', 'acaba de llegar a los cines argentinos', 'ya se puede ver en salas argentinas', 'se estrenó en los cines argentinos'];
+	const platformLabel = platforms.length === 1 ? platforms[0] : platforms.length === 2 ? `${platforms[0]} y ${platforms[1]}` : `${platforms.slice(0, -1).join(', ')} y ${platforms.at(-1)}`;
+	const catalogLabel = platforms.length === 1 ? `al catálogo de ${platformLabel}` : `a los catálogos de ${platformLabel}`;
+	return [`ya está disponible en ${platformLabel}`, `acaba de sumarse a ${platformLabel}`, `ya la encontrás en ${platformLabel}`, `llegó ${catalogLabel}`];
 }
 
 async function localPosterUrl(movie) {
@@ -72,18 +126,57 @@ function shorten(text, maximumLength) {
 	return `${[...text].slice(0, Math.max(1, maximumLength - 1)).join('').trimEnd()}…`;
 }
 
-export function renderPostText(movie) {
+function pickVariant(values, index) {
+	return values[((index % values.length) + values.length) % values.length];
+}
+
+function isCopyStyle(value) {
+	return value && ['opening', 'availability', 'editorial', 'verdict', 'link'].every((key) => Number.isInteger(value[key]));
+}
+
+function defaultCopyStyle(movie) {
+	return {
+		opening: hash(`${movie.slug}:opening`),
+		availability: hash(`${movie.slug}:availability`),
+		editorial: hash(`${movie.slug}:editorial`),
+		verdict: hash(`${movie.slug}:verdict`),
+		link: hash(`${movie.slug}:link`),
+	};
+}
+
+export function chooseCopyStyle(movie, history = { posts: [] }) {
+	const recentStyles = history.posts.slice(-COPY_VARIANT_HISTORY_SIZE).map(({ copyStyle }) => copyStyle).filter(isCopyStyle);
+	const baseStyle = defaultCopyStyle(movie);
+	for (let offset = 0; offset < 64; offset += 1) {
+		const style = Object.fromEntries(Object.entries(baseStyle).map(([key, value]) => [key, value + offset]));
+		const repeatsRecentStyle = recentStyles.some((recent) => ANTI_REPEAT_COMPONENTS.some((key) => pickVariant(COPY_COMPONENT_TEMPLATES[key], recent[key]) === pickVariant(COPY_COMPONENT_TEMPLATES[key], style[key])));
+		if (!repeatsRecentStyle) return style;
+	}
+	return baseStyle;
+}
+
+export function renderPostText(movie, copyStyle = defaultCopyStyle(movie)) {
 	const title = requiredString(movie.title, 'título', movie);
 	const review = requiredString(movie.review, 'reseña', movie);
 	if (!Number.isInteger(movie.year)) throw new Error(`La película ${movie.slug} no tiene un año válido.`);
 	const label = requiredString(verdictLabel(movie), 'veredicto', movie);
 	const url = movieUrl(requiredString(movie.slug, 'slug', movie));
-	const category = typeof movie.category === 'string' && movie.category.trim() ? `Si buscás algo de ${movie.category.trim().toLocaleLowerCase('es-AR')}, ` : '';
-	const prefix = `${category}${title} (${movie.year}) recién llegó ${availabilityLabel(movie)}.\n\n`;
-	const suffix = `\n\nVeredicto Cine Posta: ${label}.\nNuestra reseña: ${url}`;
-	const excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(prefix) - weightedXLength(suffix);
+	const category = typeof movie.category === 'string' && movie.category.trim() ? movie.category.trim().toLocaleLowerCase('es-AR') : 'buen cine';
+	const style = isCopyStyle(copyStyle) ? copyStyle : defaultCopyStyle(movie);
+	const availability = pickVariant(availabilityLabels(movie), style.availability);
+	let opening = pickVariant(OPENING_TEMPLATES, style.opening)({ title: `${title} (${movie.year})`, genre: category, availability });
+	let editorialIntro = pickVariant(EDITORIAL_INTROS, style.editorial);
+	const suffix = `\n\n${pickVariant(VERDICT_TEMPLATES, style.verdict)(label)}\n${pickVariant(LINK_TEMPLATES, style.link)(url)}`;
+	let excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(`${opening}\n\n${editorialIntro}`) - weightedXLength(suffix);
+	// Some real release titles are very long. Keep their post readable instead of
+	// failing the whole daily run because a decorative template consumed the excerpt.
+	if (excerptBudget < 24) {
+		opening = `${title} ${availability}.`;
+		editorialIntro = '';
+		excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(`${opening}\n\n`) - weightedXLength(suffix);
+	}
 	if (excerptBudget < 24) throw new Error(`El título de ${movie.slug} no deja espacio suficiente para una publicación en X.`);
-	return `${prefix}${shorten(firstSentence(review), excerptBudget)}${suffix}`;
+	return `${opening}\n\n${editorialIntro}${shorten(firstSentence(review), excerptBudget)}${suffix}`;
 }
 
 function hash(value) {
@@ -197,8 +290,8 @@ async function writeHistory(historyPath, history) {
 export async function buildPlan({ historyPath = DEFAULT_HISTORY_PATH, dueAt } = {}) {
 	const [movies, history] = await Promise.all([loadMovies(), readHistory(historyPath)]);
 	const selected = selectMovie(await eligibleMovies(movies), history);
-	const plan = { ...selected, dueAt: new Date(dueAt ?? nextDueAt()).toISOString() };
-	plan.text = renderPostText(plan.movie);
+	const plan = { ...selected, dueAt: new Date(dueAt ?? nextDueAt()).toISOString(), copyStyle: chooseCopyStyle(selected.movie, history) };
+	plan.text = renderPostText(plan.movie, plan.copyStyle);
 	if (weightedXLength(plan.text) > MAX_X_WEIGHTED_LENGTH) throw new Error(`La publicación de ${plan.movie.slug} supera el límite de X.`);
 	return { history, plan };
 }
@@ -223,10 +316,11 @@ async function main() {
 	if (externallyUsedSlugs.has(plan.movie.slug)) {
 		plan = selectMovie(await eligibleMovies(await loadMovies()), history, externallyUsedSlugs);
 		plan.dueAt = initialPlan.dueAt;
-		plan.text = renderPostText(plan.movie);
+		plan.copyStyle = chooseCopyStyle(plan.movie, history);
+		plan.text = renderPostText(plan.movie, plan.copyStyle);
 	}
 	const post = await createPost(apiKey, channel.id, plan);
-	history.posts.push({ slug: plan.movie.slug, bufferPostId: post.id, dueAt: post.dueAt, scheduledAt: new Date().toISOString() });
+	history.posts.push({ slug: plan.movie.slug, bufferPostId: post.id, dueAt: post.dueAt, scheduledAt: new Date().toISOString(), copyStyle: plan.copyStyle });
 	await writeHistory(options.historyPath, history);
 	console.log(JSON.stringify({ mode: 'scheduled', channel: channel.name, slug: plan.movie.slug, bufferPostId: post.id, dueAt: post.dueAt, xWeightedLength: weightedXLength(plan.text) }, null, 2));
 }
