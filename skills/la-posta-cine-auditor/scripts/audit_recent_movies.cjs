@@ -23,6 +23,7 @@ const ALLOWED_PLATFORMS = new Set([
 	'Mercado Play',
 	'Crunchyroll',
 	'DGO',
+	'Flow',
 	'Otras plataformas',
 ]);
 const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);

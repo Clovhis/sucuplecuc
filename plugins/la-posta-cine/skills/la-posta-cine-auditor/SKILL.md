@@ -49,7 +49,7 @@ Audit the reasoning as well as the wording: the review needs a title-specific cr
 
 4. If a candidate claims `Cine` without same-run live verification, invoke `la-posta-cine-cartelera-revalidator` before sign-off. For external evidence retain only `field → URL → fact`, with JustWatch AR first and official AR source only when needed.
 
-   For a platform batch, require an evidence matrix covering every relevant AR provider and the offer type (`FLATRATE`, `RENT` or `BUY`). Never accept a provider inferred from a global page, another country, a studio, a franchise or an empty search result.
+   For a platform batch, require an evidence matrix covering every relevant AR provider — including Flow — and the offer type (`FLATRATE`, `RENT` or `BUY`). Never accept a provider inferred from a global page, another country, a studio, a franchise or an empty search result. JustWatch Argentina does not expose Flow as an indexed provider, so the generic JustWatch audit cannot confirm or reject a Flow claim: require title-specific evidence from Flow/Personal Argentina or a current Argentina-specific Flow release communication, and record the URL and verification date. Do not treat HBO, Paramount+, Disney+ or Netflix content surfaced inside a Flow bundle as native Flow availability. If Flow is the only claimed provider, classify the generic JustWatch result as requiring manual Flow evidence rather than as a mismatch.
 
    For a batch, require an explicit candidate manifest and compare it with the actual added/modified movie files. Run the duplicate check against both the generated catalog reference and all source JSON files; same normalized title plus year or same slug is an error, while same title with a different year must be reported as a deliberate neighbor.
 

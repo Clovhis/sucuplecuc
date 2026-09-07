@@ -25,11 +25,12 @@ Leé sólo la sección que corresponda al dato que estás resolviendo. El audito
 ## Plataforma Argentina
 
 1. Consultar JustWatch AR para título + año. Leer sólo las ofertas AR y preferir `FLATRATE`; registrar aparte `RENT`/`BUY` porque una oferta transaccional no equivale a una suscripción.
-2. En una carga de estrenos o barrido semanal, construir una matriz con todos los proveedores relevantes para AR: Netflix, HBO Max, Prime Video, Disney Plus, Paramount Plus, Apple TV, Crunchyroll, Mercado Play y `Otras plataformas`. Una ausencia en un proveedor no prueba presencia en otro.
-3. Si es ambiguo o contradictorio, confirmar con la página oficial argentina del proveedor. Para cine, usar el revalidador de cartelera.
-4. Etiquetas permitidas: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `CINE.AR`, `Cine`, `Otras plataformas`.
-5. `releasePlatform` es la principal; `releasePlatforms` sólo contiene una segunda oferta AR confirmada (máximo dos en total). `Otras plataformas` es exclusiva y no lleva arreglo.
-6. Una oferta legal sólo transaccional puede usarse, pero indicarla como tal en el informe. Sin evidencia AR vigente: `Otras plataformas`.
+2. En una carga de estrenos o barrido semanal, construir una matriz con todos los proveedores relevantes para AR: Netflix, HBO Max, Prime Video, Disney Plus, Paramount Plus, Apple TV, Crunchyroll, Mercado Play, Flow y `Otras plataformas`. Una ausencia en un proveedor no prueba presencia en otro.
+3. Flow no figura como proveedor indexado en JustWatch AR. Para marcar `Flow`, exigir evidencia específica del título en el catálogo oficial de Flow/Personal Argentina o en una vista autenticada; si el catálogo no es públicamente consultable, puede usarse una comunicación vigente y específica de Flow para Argentina, dejando el tipo de oferta y la fecha verificada en el ledger. No inferir Flow por bundles de HBO, Paramount+, Disney+ o Netflix dentro de Flow.
+4. Si es ambiguo o contradictorio, confirmar con la página oficial argentina del proveedor. Para cine, usar el revalidador de cartelera.
+5. Etiquetas permitidas: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `Flow`, `CINE.AR`, `Cine`, `Otras plataformas`.
+6. `releasePlatform` es la principal; `releasePlatforms` sólo contiene una segunda oferta AR confirmada (máximo dos en total). `Otras plataformas` es exclusiva y no lleva arreglo.
+7. Una oferta legal sólo transaccional puede usarse, pero indicarla como tal en el informe. Sin evidencia AR vigente: `Otras plataformas`.
 
 No inferir un proveedor por el estudio, la franquicia, el país de producción, una ficha global, una fecha de España/Estados Unidos o una redirección internacional. Conservá en el ledger `título + año -> proveedor AR -> tipo de oferta -> URL -> fecha verificada` para que el auditor pueda reproducir la decisión.
 

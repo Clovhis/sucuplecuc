@@ -154,6 +154,79 @@ test.describe('home catalog filters', () => {
     expect(layout.pageOverflow).toBeFalsy();
   });
 
+  test('platform grid replaces DGO with Flow and keeps desktop 4x3 plus mobile containment', async ({ page }, testInfo) => {
+    await gotoHome(page);
+
+    const platformPanel = page.locator('[data-home-filter-panel="platform"]');
+    const flowChip = page.getByRole('button', { name: /Filtrar por Flow/i });
+
+    await expect(platformPanel.locator('[data-home-platform-chip]')).toHaveCount(12);
+    await expect(flowChip).toHaveCount(1);
+    const flowLogo = flowChip.locator('img');
+    await expect(flowLogo).toHaveAttribute('src', '/brand/platforms/flow.svg');
+    await expect(page.getByRole('button', { name: /Filtrar por DGO/i })).toHaveCount(0);
+    await flowLogo.evaluate((image) => image.scrollIntoView({ block: 'center', inline: 'center', behavior: 'auto' }));
+    await expect(flowLogo).toHaveJSProperty('complete', true);
+
+    const flowVisual = await flowLogo.evaluate((image) => {
+      const chip = image.closest('button');
+      if (!chip) return null;
+
+      const imageRect = image.getBoundingClientRect();
+      const chipRect = chip.getBoundingClientRect();
+      return {
+        width: imageRect.width,
+        height: imageRect.height,
+        centerDelta: Math.abs((imageRect.left + imageRect.right) / 2 - (chipRect.left + chipRect.right) / 2),
+      };
+    });
+
+    expect(flowVisual?.width ?? 0).toBeGreaterThanOrEqual(48);
+    expect(flowVisual?.height ?? 0).toBeGreaterThanOrEqual(18);
+    expect(flowVisual?.centerDelta ?? Number.POSITIVE_INFINITY).toBeLessThanOrEqual(1);
+
+    if (!testInfo.project.name.startsWith('mobile-')) {
+      const layout = await platformPanel.locator('[data-home-platform-chip]').evaluateAll((chips) => {
+        const rowCounts = new Map<number, number>();
+        for (const chip of chips) {
+          const rowTop = Math.round(chip.getBoundingClientRect().top);
+          rowCounts.set(rowTop, (rowCounts.get(rowTop) ?? 0) + 1);
+        }
+
+        return {
+          rows: rowCounts.size,
+          rowCounts: [...rowCounts.values()],
+        };
+      });
+
+      expect(layout.rows).toBe(3);
+      expect(layout.rowCounts).toEqual([4, 4, 4]);
+    }
+
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();
+
+    await flowChip.click();
+    await expect(flowChip).toHaveAttribute('aria-pressed', 'true');
+    expect(new URL(page.url()).searchParams.get('plataforma')).toBe('flow');
+    await expect(page.locator('[data-movie-search-grid] [data-movie-card]')).toHaveCount(10);
+    for (const title of ['El Ángel', 'Mundo grúa', 'La ciénaga', 'El hombre de al lado']) {
+      await expect(page.locator(`[data-movie-card][data-movie-title="${title}"]`)).toBeVisible();
+    }
+    await expect(page.locator('[data-movie-search-empty]')).toBeHidden();
+  });
+
+  test('legacy DGO movies remain available through the Otras plataformas filter', async ({ page }) => {
+    await gotoHome(page);
+
+    await page.getByRole('button', { name: /Filtrar por Otras plataformas/i }).click();
+
+    for (const title of ['Godzilla vs. Kong', 'Tenet', 'Wonder Woman 1984']) {
+      const card = page.locator(`[data-movie-card][data-movie-title="${title}"]`);
+      await expect(card).toBeVisible();
+      await expect(card.locator('.platform-chip--dgo')).toHaveAttribute('aria-label', 'Plataforma: DGO');
+    }
+  });
+
   test('subgenre and editorial chips show their concise definition only with a desktop cursor', async ({ page }, testInfo) => {
     await gotoHome(page);
 

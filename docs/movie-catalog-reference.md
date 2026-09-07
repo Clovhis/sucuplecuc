@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-04. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-07. Fuente: src/data/movies/*.json
 
 Total de peliculas: 2113
 
@@ -584,7 +584,7 @@ Total de peliculas: 2113
 | 2020 | El Halloween de Hubie | hubie-halloween-2020 | Comedia | Netflix | +13 |
 | 2020 | El padre | el-padre-2020 | Drama | Apple TV | +13 |
 | 2020 | El prófugo | el-profugo-2020 | Thriller | Disney Plus | +13 |
-| 2020 | El robo del siglo | el-robo-del-siglo-2020 | Crimen | Otras plataformas | +16 |
+| 2020 | El robo del siglo | el-robo-del-siglo-2020 | Crimen | Flow | +16 |
 | 2020 | Estoy pensando en dejarlo | estoy-pensando-en-dejarlo-2020 | Drama | Netflix | +16 |
 | 2020 | La casa oscura | la-casa-oscura-2020 | Terror | Disney Plus | +13 |
 | 2020 | La última estafa | la-ultima-estafa-2020 | Comedia | Apple TV | +13 |
@@ -612,7 +612,7 @@ Total de peliculas: 2113
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus | +13 |
 | 2019 | Diamantes en bruto | uncut-gems-2019 | Crimen | Netflix | +16 |
 | 2019 | Dumbo | dumbo-2019 | Fantasia | Disney Plus | ATP |
-| 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Otras plataformas | +13 |
+| 2019 | El cuento de las comadrejas | el-cuento-de-las-comadrejas-2019 | Comedia | Flow | +13 |
 | 2019 | El faro | el-faro-2019 | Terror | Prime Video | +16 |
 | 2019 | El sonido del metal | el-sonido-del-metal-2019 | Drama | Prime Video + Apple TV | +17 |
 | 2019 | El tiempo contigo | el-tiempo-contigo-2019 | Anime | Otras plataformas | ATP |
@@ -627,9 +627,9 @@ Total de peliculas: 2113
 | 2019 | La cabaña siniestra | la-cabana-siniestra-2019 | Terror | Apple TV | +17 |
 | 2019 | La despedida | la-despedida-2019 | Drama | Otras plataformas | +13 |
 | 2019 | La gran aventura LEGO 2 | la-gran-aventura-lego-2-2019 | Animacion | Disney Plus + HBO Max | ATP |
-| 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus | +13 |
+| 2019 | La odisea de los giles | la-odisea-de-los-giles-2019 | Comedia | Disney Plus + Flow | +13 |
 | 2019 | La vida secreta de tus mascotas 2 | la-vida-secreta-de-tus-mascotas-2-2019 | Animacion | Prime Video + Disney Plus | ATP |
-| 2019 | Las buenas intenciones | las-buenas-intenciones-2019 | Comedia | CINE.AR | +13 |
+| 2019 | Las buenas intenciones | las-buenas-intenciones-2019 | Comedia | CINE.AR + Flow | +13 |
 | 2019 | Lazos De Familia | lazos-de-familia-2019 | Drama | Otras plataformas | +13 |
 | 2019 | Los dos Papas | los-dos-papas-2019 | Drama | Netflix | +13 |
 | 2019 | Los muertos no mueren | los-muertos-no-mueren-2019 | Terror | Disney Plus | +16 |
@@ -666,7 +666,7 @@ Total de peliculas: 2113
 | 2018 | Creed II | creed-ii-2018 | Drama | Otras plataformas | +13 |
 | 2018 | Deadpool 2 | deadpool-2-2018 | Accion | Disney Plus | +17 |
 | 2018 | Dragon Ball Super: Broly | dragon-ball-super-broly-2018 | Anime | Otras plataformas | +13 |
-| 2018 | El Ángel | el-angel-2018 | Crimen | Otras plataformas | +16 |
+| 2018 | El Ángel | el-angel-2018 | Crimen | Flow | +16 |
 | 2018 | El Grinch | el-grinch-2018 | Animacion | HBO Max + Apple TV | ATP |
 | 2018 | El pasajero | el-pasajero-2018 | Thriller | Apple TV + Prime Video | +13 |
 | 2018 | El primer hombre en la Luna | el-primer-hombre-en-la-luna-2018 | Drama | Otras plataformas | +13 |
@@ -1030,7 +1030,7 @@ Total de peliculas: 2113
 | 2010 | Arrietty y el mundo de los diminutos | arrietty-y-el-mundo-de-los-diminutos-2010 | Anime | Netflix | ATP |
 | 2010 | Blue Valentine | blue-valentine-2010 | Romance | Prime Video | +16 |
 | 2010 | Burke and Hare | burke-and-hare-2010 | Comedia | Prime Video | +16 |
-| 2010 | Carancho | carancho-2010 | Crimen | Disney Plus | +17 |
+| 2010 | Carancho | carancho-2010 | Crimen | Disney Plus + Flow | +17 |
 | 2010 | Conocerás al hombre de tus sueños | you-will-meet-a-tall-dark-stranger-2010 | Drama | Otras plataformas | +13 |
 | 2010 | Crimen en familia | crimen-en-familia-2010 | Crimen | Otras plataformas | +16 |
 | 2010 | El americano | el-americano-2010 | Thriller | Apple TV | +13 |
@@ -1075,7 +1075,7 @@ Total de peliculas: 2113
 | 2009 | Desde mi cielo | desde-mi-cielo-2009 | Drama | Prime Video + Apple TV | +13 |
 | 2009 | Destino final 4 | destino-final-4-2009 | Terror | HBO Max | +16 |
 | 2009 | Distrito 9 | districte-9-2009 | Ciencia ficcion | HBO Max + Apple TV | +13 |
-| 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus | +16 |
+| 2009 | El hombre de al lado | el-hombre-de-al-lado-2009 | Drama | Disney Plus + Flow | +16 |
 | 2009 | El secreto de Kells | el-secreto-de-kells-2009 | Animacion | Otras plataformas | ATP |
 | 2009 | El secreto de sus ojos | el-secreto-de-sus-ojos-2009 | Thriller | Netflix | +13 |
 | 2009 | Enemigos públicos | enemigos-publicos-2009 | Crimen | Otras plataformas | +13 |
@@ -1391,7 +1391,7 @@ Total de peliculas: 2113
 | 2002 | The Banger Sisters | the-banger-sisters-2002 | Drama | Otras plataformas | +13 |
 | 2002 | The Lord of the Rings: The Two Towers | the-lord-of-the-rings-the-two-towers-2002 | Aventura | Otras plataformas | +13 |
 | 2002 | Un final made in Hollywood | hollywood-ending-2002 | Comedia | Otras plataformas | +13 |
-| 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max | +13 |
+| 2002 | Un oso rojo | un-oso-rojo-2002 | Crimen | HBO Max + Flow | +13 |
 | 2001 | 15 minutos | 15-minutos-2001 | Thriller | Netflix + Apple TV | +16 |
 | 2001 | A Beautiful Mind | a-beautiful-mind-2001 | Drama | Otras plataformas | +13 |
 | 2001 | A.I. Inteligencia Artificial | a-i-artificial-intelligence-2001 | Ciencia ficcion | Otras plataformas | +13 |
@@ -1411,7 +1411,7 @@ Total de peliculas: 2113
 | 2001 | Jason X: Martes 13, parte X | jason-x-2001 | Terror | HBO Max | +17 |
 | 2001 | Jurassic Park III | jurassic-park-iii-2001 | Aventura | Prime Video | +13 |
 | 2001 | Kate & Leopold | kate-leopold-2001 | Comedia romántica | Apple TV | ATP |
-| 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video | +13 |
+| 2001 | La ciénaga | la-cienaga-2001 | Drama | Prime Video + Flow | +13 |
 | 2001 | La gran estafa | la-gran-estafa-2001 | Accion | HBO Max | +13 |
 | 2001 | La hora de la araña | la-hora-de-la-arana-2001 | Drama | Otras plataformas | +13 |
 | 2001 | La maldición del escorpión de jade | the-curse-of-the-jade-scorpion-2001 | Comedia | Otras plataformas | +13 |
@@ -1484,7 +1484,7 @@ Total de peliculas: 2113
 | 1999 | Matrix | the-matrix-1999 | Ciencia ficcion | HBO Max + Apple TV | +13 |
 | 1999 | Mensaje en una botella | mensaje-en-una-botella-1999 | Romance | Apple TV | +13 |
 | 1999 | Mi viaje a Italia | my-voyage-to-italy-1999 | Documental | Otras plataformas | ATP |
-| 1999 | Mundo grúa | mundo-grua-1999 | Drama | Netflix | +13 |
+| 1999 | Mundo grúa | mundo-grua-1999 | Drama | Netflix + Flow | +13 |
 | 1999 | Nadie es perfecto | flawless-1999 | Drama | Prime Video + Apple TV | +16 |
 | 1999 | Ojos bien cerrados | ojos-bien-cerrados-1999 | Drama | Netflix | +13 |
 | 1999 | Silvia Prieto | silvia-prieto-1999 | Comedia | Otras plataformas | +13 |

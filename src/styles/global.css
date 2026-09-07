@@ -1952,49 +1952,58 @@ img {
 }
 
 .home-platform-filter__badge .platform-chip__logo {
-	max-height: 1.25rem;
+	max-height: 1.4rem;
 }
 
 .home-platform-filter__badge.platform-chip--cine-ar {
-	--platform-chip-logo-width: 3.25rem;
+	--platform-chip-logo-width: 3.5rem;
 	--platform-chip-logo-max-height: 1.08rem;
 }
 
 .home-platform-filter__badge.platform-chip--disney-plus .platform-chip__logo {
-	max-height: 1.34rem;
+	max-height: 1.62rem;
 }
 
 .home-platform-filter__badge.platform-chip--netflix {
-	--platform-chip-logo-width: 3.5rem;
+	--platform-chip-logo-width: 3.8rem;
 }
 
 .home-platform-filter__badge.platform-chip--hbo-max {
-	--platform-chip-logo-width: 4.15rem;
+	--platform-chip-logo-width: 4.4rem;
 }
 
 .home-platform-filter__badge.platform-chip--paramount-plus {
-	--platform-chip-logo-width: 4.2rem;
-	--platform-chip-logo-max-height: 1.58rem;
+	--platform-chip-logo-width: 4.5rem;
+	--platform-chip-logo-max-height: 1.68rem;
 }
 
 .home-platform-filter__badge.platform-chip--disney-plus {
-	--platform-chip-logo-width: 4.55rem;
+	--platform-chip-logo-width: 4.8rem;
 }
 
 .home-platform-filter__badge.platform-chip--prime-video {
-	--platform-chip-logo-width: 4.65rem;
+	--platform-chip-logo-width: 4.9rem;
 }
 
 .home-platform-filter__badge.platform-chip--apple-tv {
-	--platform-chip-logo-width: 3.3rem;
+	--platform-chip-logo-width: 3.7rem;
 }
 
 .home-platform-filter__badge.platform-chip--mercado-play {
-	--platform-chip-logo-width: 2.05rem;
+	--platform-chip-logo-width: 2.5rem;
 }
 
 .home-platform-filter__badge.platform-chip--crunchyroll {
 	--platform-chip-logo-width: 4.95rem;
+}
+
+.home-platform-filter__badge.platform-chip--flow {
+	--platform-chip-logo-width: 4.5rem;
+	--platform-chip-logo-max-height: 1.4rem;
+}
+
+.home-platform-filter__badge.platform-chip--flow .platform-chip__logo {
+	max-height: 1.4rem;
 }
 
 .home-platform-filter__badge.platform-chip--dgo {
@@ -2002,13 +2011,16 @@ img {
 	--platform-chip-logo-max-height: 1.3rem;
 }
 
-.home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo,
 .home-platform-filter__badge.platform-chip--crunchyroll .platform-chip__logo {
 	max-height: 1.15rem;
 }
 
+.home-platform-filter__badge.platform-chip--prime-video .platform-chip__logo {
+	max-height: 1.28rem;
+}
+
 .home-platform-filter__badge.platform-chip--paramount-plus .platform-chip__logo {
-	max-height: 1.54rem;
+	max-height: 1.68rem;
 }
 
 .home-platform-filter__badge.platform-chip--cine .platform-chip__cine-label {
@@ -4521,6 +4533,16 @@ img {
 	color: #ffb16a;
 	background: rgba(244, 117, 33, 0.12);
 	border-color: rgba(244, 117, 33, 0.34);
+}
+
+.platform-chip--flow {
+	--platform-chip-logo-width: 3.75rem;
+	--platform-chip-logo-max-height: 1rem;
+	--platform-tile-logo-width: 4.35rem;
+	--platform-tile-logo-max-height: 1.16rem;
+	color: #72e8ca;
+	background: linear-gradient(180deg, rgba(24, 196, 154, 0.18), rgba(24, 196, 154, 0.06));
+	border-color: rgba(24, 196, 154, 0.34);
 }
 
 .platform-chip--dgo {
@@ -13196,7 +13218,7 @@ img {
 	}
 
 	.home-platform-filter__badge .platform-chip__logo {
-		max-height: 1.06rem;
+		max-height: 1.25rem;
 	}
 
 	.upcoming-release-list__item {

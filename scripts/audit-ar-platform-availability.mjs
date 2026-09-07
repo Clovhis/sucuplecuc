@@ -47,6 +47,11 @@ const PROVIDER_MAP = [
 	[/cine\.ar|cine ar/i, 'CINE.AR'],
 ];
 
+// Flow is not exposed as a JustWatch AR package. Flow claims need
+// title-specific evidence from Flow/Personal Argentina and cannot be
+// verified by this generic JustWatch-only pass.
+const JUSTWATCH_UNINDEXED_PROVIDERS = new Set(['Flow']);
+
 const SUBSCRIPTION_TYPES = new Set(['FLATRATE', 'FLATRATE_AND_BUY', 'ADS', 'FREE', 'FAST']);
 
 function normalize(value = '') {
@@ -130,6 +135,15 @@ function classify(entry, availability) {
 	if (availability.status !== 'matched') return { status: availability.status };
 	const labels = new Set([entry.movie.releasePlatform, ...(entry.movie.releasePlatforms ?? [])]);
 	const verified = new Set(availability.providers.map((provider) => provider.provider));
+	const manualProviders = [...labels].filter((label) => JUSTWATCH_UNINDEXED_PROVIDERS.has(label));
+	if (manualProviders.length > 0) {
+		return {
+			status: 'manual-required',
+			manualProviders,
+			verifiedProviders: [...labels].filter((label) => verified.has(label)),
+			reason: 'Flow is not indexed as a JustWatch AR provider; verify title-specific Flow/Personal Argentina evidence.',
+		};
+	}
 	if ([...labels].some((label) => verified.has(label))) return { status: 'verified' };
 	if (labels.has('Otras plataformas') && verified.size === 0) return { status: 'verified' };
 	return { status: 'mismatch', expected: expectedPlatform(availability.providers) };
@@ -156,7 +170,7 @@ await Promise.all(
 );
 
 results.sort((left, right) => left.file.localeCompare(right.file));
-const summary = Object.fromEntries(['verified', 'mismatch', 'unmatched', 'error'].map((status) => [status, results.filter((result) => result.status === status).length]));
+const summary = Object.fromEntries(['verified', 'mismatch', 'manual-required', 'unmatched', 'error'].map((status) => [status, results.filter((result) => result.status === status).length]));
 const auditDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Argentina/Buenos_Aires' }).format(new Date());
 const output = { auditDate, checked: results.length, summary, results };
 if (JSON_OUTPUT) console.log(JSON.stringify(output, null, 2));
@@ -166,6 +180,7 @@ else {
 	const reportedResults = ONLY_MISMATCHES ? results.filter((result) => result.status === 'mismatch') : results.filter((result) => result.status !== 'verified');
 	for (const result of reportedResults) {
 		const providers = result.availability?.providers?.map((provider) => `${provider.provider} (${provider.kind})`).join(', ') || 'none';
-		console.log(`${result.status.toUpperCase()} | ${result.file} | ${result.current} -> ${result.expected ?? '-'} | ${providers} | ${result.availability?.url ?? result.error ?? ''}`);
+		const evidence = result.reason ?? result.availability?.url ?? result.error ?? '';
+		console.log(`${result.status.toUpperCase()} | ${result.file} | ${result.current} -> ${result.expected ?? '-'} | ${providers} | ${evidence}`);
 	}
 }

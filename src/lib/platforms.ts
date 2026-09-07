@@ -13,6 +13,7 @@ export type PlatformVariant =
 	| 'mercado-play'
 	| 'crunchyroll'
 	| 'dgo'
+	| 'flow'
 	| 'other-platforms';
 
 export interface PlatformAsset {
@@ -53,6 +54,7 @@ const PLATFORM_DISPLAY_LABELS: Partial<Record<PlatformVariant, string>> = {
 	'mercado-play': 'Mercado Play',
 	crunchyroll: 'Crunchyroll',
 	dgo: 'DGO',
+	flow: 'Flow',
 	'other-platforms': 'Otras plataformas',
 };
 
@@ -72,6 +74,9 @@ const PLATFORM_VARIANTS_BY_LABEL: Record<string, PlatformVariant> = {
 	crunchyroll: 'crunchyroll',
 	dgo: 'dgo',
 	'directv go': 'dgo',
+	flow: 'flow',
+	'flow argentina': 'flow',
+	'personal flow': 'flow',
 	'otras plataformas': 'other-platforms',
 	'otros plataformas': 'other-platforms',
 	'otras plataformas online': 'other-platforms',
@@ -91,7 +96,7 @@ const PLATFORM_FILTER_ORDER = [
 	'mercado play',
 	'apple tv',
 	'crunchyroll',
-	'dgo',
+	'flow',
 	'cine',
 	'cine.ar',
 	UNCONFIRMED_PLATFORM_FILTER_LABEL,
@@ -136,6 +141,11 @@ export const PLATFORM_ASSETS: Partial<Record<Exclude<PlatformVariant, 'default' 
 	},
 	crunchyroll: {
 		src: '/brand/platforms/crunchyroll.svg',
+		wide: true,
+	},
+	flow: {
+		// Official current Flow mark served by Personal Argentina.
+		src: '/brand/platforms/flow.svg',
 		wide: true,
 	},
 	dgo: {
@@ -229,8 +239,16 @@ export function getMoviePlatforms(movie: Pick<Movie, 'releasePlatform' | 'releas
 	return normalizePlatformList(primaryPlatforms.map((platform) => toPublicPlatformLabel(platform))).slice(0, 2);
 }
 
+function getPlatformFilterLabel(presentation: PlatformPresentation): string {
+	// Keep legacy DGO data and presentation badges, but expose it through the
+	// neutral fallback now that DGO is no longer a featured home filter.
+	return presentation.variant === 'dgo' ? UNCONFIRMED_PLATFORM_FILTER_LABEL : presentation.normalizedLabel;
+}
+
 export function getNormalizedMoviePlatforms(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string[] {
-	return getPlatformPresentations(getMoviePlatforms(movie)).map((platform) => platform.normalizedLabel).filter(Boolean);
+	return [
+		...new Set(getPlatformPresentations(getMoviePlatforms(movie)).map(getPlatformFilterLabel).filter(Boolean)),
+	];
 }
 
 export function getMoviePlatformLabel(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): string {
@@ -263,14 +281,26 @@ export function getPlatformFilterOptions(
 	}
 
 	for (const movie of movies) {
-		for (const presentation of getPlatformPresentations(getMoviePlatforms(movie))) {
-			if (!presentation.normalizedLabel) continue;
+		const presentations = getPlatformPresentations(getMoviePlatforms(movie));
+		const movieFilterLabels = new Set(presentations.map(getPlatformFilterLabel).filter(Boolean));
 
-			const existing = optionsByLabel.get(presentation.normalizedLabel);
+		for (const normalizedLabel of movieFilterLabels) {
+			if (!normalizedLabel) continue;
+
+			const existing = optionsByLabel.get(normalizedLabel);
 			if (existing) {
 				existing.count += 1;
 				continue;
 			}
+
+			const originalPresentation = presentations.find(
+				(presentation) => getPlatformFilterLabel(presentation) === normalizedLabel,
+			);
+			const presentation =
+				originalPresentation && originalPresentation.normalizedLabel === normalizedLabel
+					? originalPresentation
+					: getPlatformPresentation(normalizedLabel);
+			if (!presentation.normalizedLabel) continue;
 
 			optionsByLabel.set(presentation.normalizedLabel, {
 				...presentation,
