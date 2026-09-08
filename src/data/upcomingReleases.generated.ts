@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-07T09:44:15.789Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-08T09:06:16.434Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -47,7 +47,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "finding-emily",
 		"title": "Emily, ¿dónde estás?",
 		"releaseDate": "2026-09-17",
-		"videoUrl": "https://www.youtube.com/watch?v=-OGuJf70S0s",
+		"videoUrl": "https://www.youtube.com/watch?v=wc2UjmPzN8c",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
 	},
@@ -92,11 +92,11 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
 	},
 	{
-		"slug": "street-fighter",
-		"title": "Street Fighter",
-		"releaseDate": "2026-10-15",
-		"videoUrl": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10217-street-fighter/"
+		"slug": "cars",
+		"title": "Cars",
+		"releaseDate": "2026-10-08",
+		"videoUrl": "https://www.youtube.com/watch?v=XszNWHhpaTc",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/sOLgkBKf1gjMRc4yXxM5aciXdfr.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/1761-cars/"
 	}
 ];
