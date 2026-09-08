@@ -2711,6 +2711,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "kenneth-branagh": [
     "el-diablo-viste-a-la-moda-2-2026",
+    "mayday-2026",
     "belfast-2021",
     "dunkirk-2017",
     "thor-2011",
@@ -4016,6 +4017,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-creyente-2001"
   ],
   "ryan-reynolds": [
+    "mayday-2026",
     "deadpool-and-wolverine-2024",
     "free-guy-2021",
     "red-notice-2021",

@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-04. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-08. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 555
-Total de vínculos de películas del catálogo: 3727
+Total de vínculos de películas del catálogo: 3729
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -334,7 +334,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Keegan-Michael Key | `keegan-michael-key` | /personas/keegan-michael-key/ | Actor | 2 | 7 |
 | Keira Knightley | `keira-knightley` | /personas/keira-knightley/ | Actriz | 3 | 5 |
 | Keke Palmer | `keke-palmer` | /personas/keke-palmer/ | Actriz | 3 | 7 |
-| Kenneth Branagh | `kenneth-branagh` | /personas/kenneth-branagh/ | Director | 12 | 5 |
+| Kenneth Branagh | `kenneth-branagh` | /personas/kenneth-branagh/ | Director | 13 | 5 |
 | Kevin Bacon | `kevin-bacon` | /personas/kevin-bacon/ | Actor | 4 | 4 |
 | Kevin Costner | `kevin-costner` | /personas/kevin-costner/ | Actor | 12 | 6 |
 | Kevin Spacey | `kevin-spacey` | /personas/kevin-spacey/ | Actor | 6 | 4 |
@@ -478,7 +478,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Russell Crowe | `russell-crowe` | /personas/russell-crowe/ | Actor | 12 | 5 |
 | Ryan Coogler | `ryan-coogler` | /personas/ryan-coogler/ | Director | 4 | 7 |
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 23 | 6 |
-| Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 10 | 6 |
+| Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 11 | 6 |
 | Sadie Sandler | `sadie-sandler` | /personas/sadie-sandler/ | Actriz | 2 | 9 |
 | Sadie Sink | `sadie-sink` | /personas/sadie-sink/ | Actriz | 2 | 3 |
 | Salma Hayek | `salma-hayek` | /personas/salma-hayek/ | Actriz | 2 | 4 |

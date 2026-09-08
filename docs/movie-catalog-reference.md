@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-07. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-08. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2113
+Total de peliculas: 2114
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -118,6 +118,7 @@ Total de peliculas: 2113
 | 2026 | Luchadores 2 | luchadores-2-2026 | Comedia | Netflix | +13 |
 | 2026 | Main Vaapas Aaunga | main-vaapas-aaunga-2026 | Drama | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
+| 2026 | Mayday | mayday-2026 | Accion | Apple TV | +13 |
 | 2026 | Mensajes de voz para Isabelle | mensajes-de-voz-para-isabelle-2026 | Romance | Netflix | +13 |
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
 | 2026 | México 86 | mexico-86-2026 | Comedia | Netflix | +16 |
@@ -302,7 +303,7 @@ Total de peliculas: 2113
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Otras plataformas | ATP |
 | 2025 | Wolf Man | wolf-man-2025 | Terror | HBO Max | +17 |
 | 2025 | Zombie Land Saga: Yumeginga Paradise | zombie-land-saga-yumeginga-paradise-2025 | Anime | Crunchyroll | +13 |
-| 2025 | Zona de riesgo | zona-de-riesgo-2025 | Accion | Otras plataformas | +17 |
+| 2025 | Zona de riesgo | zona-de-riesgo-2025 | Accion | Prime Video | +17 |
 | 2025 | Zootopia 2 | zootopia-2-2025 | Animacion | Disney Plus | ATP |
 | 2024 | 40 Acres | 40-acres-2024 | Thriller | Netflix | +16 |
 | 2024 | A Quiet Place: Day One | a-quiet-place-day-one-2024 | Terror | Paramount Plus | +13 |
