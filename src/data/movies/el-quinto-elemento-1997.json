@@ -23,9 +23,17 @@
 	"awards": { "wins": [] },
 	"runtimeMinutes": 126,
 	"editorial": {
-		"becauseYouLiked": ["the-matrix-1999", "back-to-the-future-1985"],
-		"related": ["alien-1979", "star-wars-episode-iv-a-new-hope-1977", "inception-2010", "interstellar-2014"]
-	},
+	"becauseYouLiked": [
+		"looper-2012",
+		"a-i-artificial-intelligence-2001"
+	],
+	"related": [
+		"war-of-the-worlds-2005",
+		"minority-report-2002",
+		"back-to-the-future-part-ii-1989",
+		"buena-suerte-diviertete-no-mueras-2026"
+	]
+},
 	"review": "Korben Dallas maneja un taxi volador, se cruza con una heroína de pelo naranja y termina cargando el destino del universo sin haberlo pedido. Luc Besson arma una ciencia ficción de colores saturados, criaturas raras y diseños imposibles, más cerca de la historieta que del realismo espacial. Bruce Willis pone cansancio al héroe, Milla Jovovich encuentra una energía física enorme y Gary Oldman disfruta un villano que parece salido de una ópera pop. La película fue dividida por su humor y su exceso, pero justamente ese exceso la volvió reconocible: no se parece demasiado a ninguna otra superproducción.",
 	"isPremiere": false,
 	"premiereLabel": ""

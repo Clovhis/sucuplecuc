@@ -60,6 +60,19 @@ const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
 const showCultMovieSticker = isCultMovie(movie);
 const cultMovieStickerUrl = getCultMovieStickerUrl();
 const editorialSummary = getMovieEditorialSummary(movie, allMovies);
+const relatedAffinityCounts = new Map<string, number>();
+for (const recommendation of editorialSummary.related) {
+	if (recommendation.affinity) {
+		relatedAffinityCounts.set(recommendation.affinity, (relatedAffinityCounts.get(recommendation.affinity) ?? 0) + 1);
+	}
+}
+const relatedRecommendations = editorialSummary.related.map((recommendation) => ({
+	...recommendation,
+	affinity:
+		recommendation.affinity && relatedAffinityCounts.get(recommendation.affinity) === 1
+			? recommendation.affinity
+			: undefined,
+}));
 const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
@@ -153,7 +166,7 @@ const awardCategories = groupedAwards.flatMap((group) =>
 		year: win.year,
 	})),
 );
-const relatedIntro = `Si ${movie.title} te gustó, seguí por acá.`;
+const relatedIntro = `Elegidas por género, tono y mirada: no por repetir la misma franquicia.`;
 const movieCanonicalUrl = new URL(getMoviePath(movie.slug), SITE_URL).toString();
 const shareText = `Mirá la reseña de ${movie.title} (${movie.year}) en ${SITE_NAME}`;
 const whatsappShareUrl = `https://wa.me/?${new URLSearchParams({
@@ -898,17 +911,41 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							</div>
 						</dl>
 						{
-							editorialSummary.related.length > 0 && (
-								<section class="movie-detail__editorial-card movie-detail__editorial-card--related">
+							relatedRecommendations.length > 0 && (
+								<section
+									class="movie-detail__editorial-card movie-detail__editorial-card--related"
+									aria-labelledby={`related-${movie.slug}`}
+									data-movie-related-recommendations
+								>
+									<header class="movie-detail__related-head">
+										<div>
+											<p class="movie-detail__editorial-kicker">Después de los créditos</p>
+											<h2 id={`related-${movie.slug}`}>Si te quedó ganas de más, seguí por acá</h2>
+										</div>
+										<span class="movie-detail__related-spark" aria-hidden="true">✦</span>
+									</header>
 									<p class="movie-detail__editorial-copy">{relatedIntro}</p>
-									<div class="movie-detail__related-list">
-										{editorialSummary.related.map((recommendation) => (
-											<a class="movie-detail__related-link" href={recommendation.url}>
-												<span>{recommendation.title}</span>
-												<span>{recommendation.year}</span>
-											</a>
+									<ol class="movie-detail__related-list" aria-label={`Recomendaciones para después de ${movie.title}`}>
+										{relatedRecommendations.map((recommendation, index) => (
+											<li>
+												<a class="movie-detail__related-link" href={recommendation.url}>
+													<span class="movie-detail__related-order" aria-hidden="true">
+														{String(index + 1).padStart(2, '0')}
+													</span>
+													<span class="movie-detail__related-copy">
+														<span class="movie-detail__related-title">{recommendation.title}</span>
+														{recommendation.affinity && (
+															<span class="movie-detail__related-affinity">{recommendation.affinity}</span>
+														)}
+													</span>
+													<span class="movie-detail__related-year">{recommendation.year}</span>
+													<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+														<path d="m6 3 5 5-5 5" />
+													</svg>
+												</a>
+											</li>
 										))}
-									</div>
+									</ol>
 								</section>
 							)
 						}

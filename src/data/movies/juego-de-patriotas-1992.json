@@ -29,13 +29,17 @@
   "verdictLabel": "ZAFA",
   "awards": { "wins": [] },
   "editorial": {
-    "becauseYouLiked": ["raiders-of-the-lost-ark-1981", "the-prestige-2006"],
-    "related": [
-      "peligro-inminente-1994",
-      "blade-runner-1982",
-      "indiana-jones-and-the-last-crusade-1989"
-    ]
-  },
+	"becauseYouLiked": [
+		"peligro-inminente-1994",
+		"robocop-el-defensor-del-futuro-1987"
+	],
+	"related": [
+		"la-roca-1996",
+		"el-fuego-de-la-venganza-2004",
+		"una-noche-para-sobrevivir-2015",
+		"depredador-1987"
+	]
+},
   "runtimeMinutes": 117,
   "review": "Juego de patriotas entiende muy bien qué clase de estrella necesitaba su Jack Ryan: Harrison Ford transmite autoridad sin convertir al personaje en un superhéroe invulnerable. La primera mitad apuesta por la tensión política y el procedimiento, mientras la segunda acelera hacia una persecución familiar más convencional. Phillip Noyce filma los ataques con claridad y le da peso a la lógica de inteligencia, aunque algunos villanos quedan dibujados con trazos gruesos. Como thriller de comienzos de los noventa funciona por su ritmo, por la presencia de Ford y por la sensación de que el peligro puede llegar hasta la puerta de casa."
 }

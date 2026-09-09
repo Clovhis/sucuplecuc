@@ -18,6 +18,7 @@
     "update-upcoming-releases": "node ./scripts/update-upcoming-releases.mjs",
     "refresh:weekly-recommendations": "node --experimental-strip-types ./scripts/refresh-weekly-recommendations.mjs",
     "test:weekly-recommendations": "node --experimental-strip-types ./scripts/weekly-recommendations.test.mjs",
+	"test:movie-recommendations": "node --experimental-strip-types ./scripts/movie-recommendations.test.mjs",
 	"buffer:x": "node ./scripts/publish-buffer-x.mjs",
 	"test:buffer:x": "node ./scripts/publish-buffer-x.test.mjs",
     "enrich-synopsis": "node ./scripts/enrich-movie-synopsis.mjs",

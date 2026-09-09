@@ -1,6 +1,6 @@
 import type { Movie, MovieVerdict } from '../types/movie';
 import { GENERATED_UPCOMING_RELEASES } from '../data/upcomingReleases.generated';
-import { generateMovieEditorialRecommendations } from './recommendation-engine';
+import { generateMovieEditorialRecommendations, getMovieRecommendationAffinity } from './recommendation-engine';
 import { getMoviePlatforms } from './platforms';
 
 const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) as Record<
@@ -70,6 +70,7 @@ export interface MovieLinkRecommendation {
 	title: string;
 	year: number;
 	url: string;
+	affinity?: string;
 }
 
 export interface MovieRuntimeSummary {
@@ -1716,12 +1717,13 @@ export function getPrimaryGenreLabel(
 	return movie.category?.trim() || 'Sin género';
 }
 
-function getMovieLinkRecommendation(movie: Pick<Movie, 'slug' | 'title' | 'year'>): MovieLinkRecommendation {
+function getMovieLinkRecommendation(movie: Movie, sourceMovie?: Movie): MovieLinkRecommendation {
 	return {
 		slug: movie.slug,
 		title: movie.title,
 		year: movie.year,
 		url: getMoviePath(movie.slug),
+		affinity: sourceMovie ? getMovieRecommendationAffinity(sourceMovie, movie)?.reason : undefined,
 	};
 }
 
@@ -1777,7 +1779,7 @@ function getBridgeAnchorCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
 }
 
 export function getBridgeRecommendations(movie: Movie, allMovies: Movie[]): MovieLinkRecommendation[] {
-	return getBridgeAnchorCandidates(movie, allMovies).map((candidate) => getMovieLinkRecommendation(candidate));
+	return getBridgeAnchorCandidates(movie, allMovies).map((candidate) => getMovieLinkRecommendation(candidate, movie));
 }
 
 function getRelatedMovieCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
@@ -1798,7 +1800,7 @@ function getRelatedMovieCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
 }
 
 export function getRelatedRecommendations(movie: Movie, allMovies: Movie[]): MovieLinkRecommendation[] {
-	return getRelatedMovieCandidates(movie, allMovies).map((candidate) => getMovieLinkRecommendation(candidate));
+	return getRelatedMovieCandidates(movie, allMovies).map((candidate) => getMovieLinkRecommendation(candidate, movie));
 }
 
 export function getMovieEditorialSummary(movie: Movie, allMovies: Movie[]): MovieEditorialSummary {

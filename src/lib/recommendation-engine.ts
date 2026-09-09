@@ -15,35 +15,50 @@ export type RecommendationGenreId =
 	| 'romance'
 	| 'crimen'
 	| 'aventura'
+	| 'fantasia'
+	| 'familia'
+	| 'musical'
+	| 'western'
+	| 'guerra'
+	| 'misterio'
+	| 'biografica'
+	| 'deportes'
+	| 'politica'
+	| 'historia'
+	| 'gore'
 	| 'oscar-mejor-pelicula'
 	| 'pelicula-nacional';
 
 const RECOMMENDATION_GENRE_WEIGHTS: Record<RecommendationGenreId, number> = {
-	accion: 8,
-	comedia: 8,
-	documental: 11,
-	terror: 11,
-	drama: 3,
-	thriller: 10,
-	'sci-fi': 11,
-	superheroes: 12,
-	animacion: 10,
-	anime: 13,
-	romance: 8,
-	crimen: 10,
-	aventura: 8,
-	'oscar-mejor-pelicula': 5,
-	'pelicula-nacional': 16,
+	accion: 13,
+	comedia: 13,
+	documental: 18,
+	terror: 16,
+	drama: 6,
+	thriller: 15,
+	'sci-fi': 17,
+	superheroes: 14,
+	animacion: 15,
+	anime: 20,
+	romance: 13,
+	crimen: 16,
+	aventura: 12,
+	fantasia: 16,
+	familia: 14,
+	musical: 18,
+	western: 19,
+	guerra: 17,
+	misterio: 15,
+	biografica: 11,
+	deportes: 15,
+	politica: 16,
+	historia: 9,
+	gore: 14,
+	'oscar-mejor-pelicula': 4,
+	'pelicula-nacional': 8,
 };
 
-const LOW_SIGNAL_GENRE_IDS = new Set<RecommendationGenreId>(['drama', 'oscar-mejor-pelicula']);
-const LOW_SIGNAL_AFFINITY_TOKENS = new Set([
-	'drama',
-	'ficcion',
-	'movie',
-	'pelicula',
-	'science',
-]);
+const LOW_SIGNAL_GENRE_IDS = new Set<RecommendationGenreId>(['drama', 'historia', 'biografica', 'oscar-mejor-pelicula']);
 const TITLE_TOKEN_STOP_WORDS = new Set([
 	'a',
 	'al',
@@ -64,6 +79,69 @@ const TITLE_TOKEN_STOP_WORDS = new Set([
 	'vol',
 	'y',
 ]);
+const FRANCHISE_GENERIC_TITLE_TOKENS = new Set([
+	'after',
+	'black',
+	'blue',
+	'chapter',
+	'chronicles',
+	'dark',
+	'day',
+	'dead',
+	'final',
+	'last',
+	'new',
+	'night',
+	'part',
+	'return',
+	'rise',
+	'star',
+	'the',
+]);
+const FRANCHISE_SHORT_TOKENS = new Set(['dc', 'it', 'ip', 'mib', 'xmen']);
+const SUBGENRE_LABELS: Record<string, string> = {
+	'body horror': 'body horror',
+	'coming of age': 'coming of age',
+	exploitation: 'exploitation',
+	'found footage': 'found footage',
+	gore: 'gore',
+	heist: 'heist',
+	mockumentary: 'mockumentary',
+	psicologico: 'suspenso psicológico',
+	'road movie': 'road movie',
+	romcom: 'comedia romántica',
+	slasher: 'slasher',
+	sobrenatural: 'terror sobrenatural',
+};
+const RECOMMENDATION_GENRE_LABELS: Partial<Record<RecommendationGenreId, string>> = {
+	accion: 'acción',
+	aventura: 'aventura',
+	comedia: 'comedia',
+	crimen: 'crimen',
+	documental: 'documental',
+	fantasia: 'fantasía',
+	guerra: 'guerra',
+	misterio: 'misterio',
+	romance: 'romance',
+	'sci-fi': 'ciencia ficción',
+	superheroes: 'superhéroes',
+	terror: 'terror',
+	thriller: 'thriller',
+};
+const EDITORIAL_THEME_PATTERNS: Array<[string, RegExp]> = [
+	['crimen', /\b(atraco|asesin[oa]|chantaje|crimen|criminal|detective|estafa|mafia|polici[ai]|robo|secuestro)\b/],
+	['poder', /\b(corrupci[oó]n|dictadura|gobierno|militar|poder|pol[ií]tica)\b/],
+	['familia', /\b(familia|herman[oa]s?|madre|maternidad|padre|paternidad)\b/],
+	['crecimiento', /\b(adolescencia|crecer|infancia|juventud|madurar)\b/],
+	['miedo', /\b(demonio|fantasma|maldici[oó]n|monstruo|pesadilla|posesi[oó]n|vampir[oa]|zombie)\b/],
+	['ciencia-ficcion', /\b(distop[ií]a|espacio|extraterrestre|futuro|inteligencia artificial|planeta|robot|viaje temporal)\b/],
+	['supervivencia', /\b(escape|huida|perseguir|supervivencia)\b/],
+];
+const RECOMMENDATION_GENRE_CACHE = new WeakMap<object, RecommendationGenreId[]>();
+const SUBGENRE_SIGNAL_CACHE = new WeakMap<object, string[]>();
+const EDITORIAL_THEME_CACHE = new WeakMap<object, string[]>();
+const TITLE_TOKEN_CACHE = new WeakMap<object, string[]>();
+const PRIMARY_GENRE_CACHE = new WeakMap<object, RecommendationGenreId[]>();
 const SUPERHERO_INCLUDE_TOKENS = [
 	'ant-man',
 	'aquaman',
@@ -123,6 +201,7 @@ const SUPERHERO_EXCLUDE_TOKENS = [
 	'spider-verse',
 	'mario',
 	'blade runner',
+	'tetsuo',
 ];
 const SUPERHERO_INCLUDED_SLUGS = new Set([
 	'catwoman-2004',
@@ -191,6 +270,10 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	if (normalized.includes('terror') || normalized.includes('horror')) {
 		target.add('terror');
 	}
+	if (normalized.includes('gore') || normalized.includes('splatter') || normalized.includes('tortura')) {
+		target.add('gore');
+		target.add('terror');
+	}
 	if (normalized.includes('drama') || normalized.includes('biografic')) {
 		target.add('drama');
 	}
@@ -221,11 +304,39 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	}
 	if (
 		normalized.includes('aventura') ||
-		normalized.includes('adventure') ||
-		normalized.includes('fantasia') ||
-		normalized.includes('fantasy')
+		normalized.includes('adventure')
 	) {
 		target.add('aventura');
+	}
+	if (normalized.includes('fantasia') || normalized.includes('fantasy')) {
+		target.add('fantasia');
+	}
+	if (normalized.includes('familia') || normalized.includes('familiar') || normalized.includes('family')) {
+		target.add('familia');
+	}
+	if (normalized.includes('musical') || normalized.includes('musica') || normalized.includes('music')) {
+		target.add('musical');
+	}
+	if (normalized.includes('western')) {
+		target.add('western');
+	}
+	if (normalized.includes('belica') || normalized.includes('guerra') || normalized.includes('war')) {
+		target.add('guerra');
+	}
+	if (normalized.includes('misterio') || normalized.includes('mystery')) {
+		target.add('misterio');
+	}
+	if (normalized.includes('biografic') || normalized.includes('biopic') || normalized.includes('biografia')) {
+		target.add('biografica');
+	}
+	if (normalized.includes('deporte') || normalized.includes('sport')) {
+		target.add('deportes');
+	}
+	if (normalized.includes('politic')) {
+		target.add('politica');
+	}
+	if (normalized.includes('historia') || normalized.includes('historical')) {
+		target.add('historia');
 	}
 }
 
@@ -257,6 +368,9 @@ function getRecommendationGenres(
 		'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'country' | 'isArgentinian' | 'awards'
 	>,
 ): RecommendationGenreId[] {
+	const cached = RECOMMENDATION_GENRE_CACHE.get(movie);
+	if (cached) return cached;
+
 	const genreSet = new Set<RecommendationGenreId>();
 	let hasAnimeToken = false;
 	const sourceGenres = Array.isArray(movie.genres) && movie.genres.length > 0 ? movie.genres : [];
@@ -298,9 +412,11 @@ function getRecommendationGenres(
 		genreSet.add('superheroes');
 	}
 
-	return Object.keys(RECOMMENDATION_GENRE_WEIGHTS).filter((genreId) =>
+	const genres = Object.keys(RECOMMENDATION_GENRE_WEIGHTS).filter((genreId) =>
 		genreSet.has(genreId as RecommendationGenreId),
 	) as RecommendationGenreId[];
+	RECOMMENDATION_GENRE_CACHE.set(movie, genres);
+	return genres;
 }
 
 function getNormalizedTitleTokens(movie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>): string[] {
@@ -313,48 +429,127 @@ function getNormalizedTitleTokens(movie: Pick<Movie, 'title' | 'originalTitle' |
 	return Array.from(new Set(source));
 }
 
-function getSharedTitleTokenCount(
-	sourceMovie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>,
-	candidateMovie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>,
-): number {
-	const sourceTokens = new Set(getNormalizedTitleTokens(sourceMovie));
-	if (sourceTokens.size === 0) {
-		return 0;
-	}
+function getSubgenreSignals(movie: Pick<Movie, 'subgenres'>): string[] {
+	const cached = SUBGENRE_SIGNAL_CACHE.get(movie);
+	if (cached) return cached;
 
-	return getNormalizedTitleTokens(candidateMovie).filter((token) => sourceTokens.has(token)).length;
-}
-
-function getAffinityTokens(movie: Pick<Movie, 'category' | 'genres'>): string[] {
-	const values = [movie.category ?? '', ...(movie.genres ?? [])];
-	const tokenSet = new Set<string>();
-
-	for (const value of values) {
-		for (const token of normalizeSearchText(value)
-			.replace(/[^a-z0-9\s]/g, ' ')
-			.split(/\s+/)) {
-			if (token.length < 4 || LOW_SIGNAL_AFFINITY_TOKENS.has(token)) {
-				continue;
-			}
-			tokenSet.add(token);
+	const signals = new Set<string>();
+	for (const subgenre of movie.subgenres ?? []) {
+		const normalized = normalizeSearchText(subgenre).replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+		if (normalized) {
+			signals.add(normalized);
 		}
 	}
-
-	return [...tokenSet];
+	const result = [...signals];
+	SUBGENRE_SIGNAL_CACHE.set(movie, result);
+	return result;
 }
 
-function scoreSharedAffinityTokens(source: Pick<Movie, 'category' | 'genres'>, candidate: Pick<Movie, 'category' | 'genres'>) {
-	const sourceTokens = new Set(getAffinityTokens(source));
-	const sharedTokens = getAffinityTokens(candidate).filter((token) => sourceTokens.has(token));
-	return {
-		count: sharedTokens.length,
-		score: sharedTokens.length * 4,
-	};
+function getEditorialThemes(movie: Pick<Movie, 'synopsis' | 'review'>): string[] {
+	const cached = EDITORIAL_THEME_CACHE.get(movie);
+	if (cached) return cached;
+
+	const text = normalizeSearchText(`${movie.synopsis ?? ''} ${movie.review ?? ''}`);
+	const themes = EDITORIAL_THEME_PATTERNS.filter(([, pattern]) => pattern.test(text)).map(([theme]) => theme);
+	EDITORIAL_THEME_CACHE.set(movie, themes);
+	return themes;
 }
 
-function scoreMovieAffinity(source: Movie, candidate: Movie): number {
+function getSharedValues(sourceValues: string[], candidateValues: string[]): string[] {
+	const sourceSet = new Set(sourceValues);
+	return candidateValues.filter((value) => sourceSet.has(value));
+}
+
+function getComparableTitleTokens(movie: Pick<Movie, 'title' | 'originalTitle' | 'slug'>): string[] {
+	const cached = TITLE_TOKEN_CACHE.get(movie);
+	if (cached) return cached;
+
+	const tokens = getNormalizedTitleTokens(movie).filter(
+		(token) =>
+			!FRANCHISE_GENERIC_TITLE_TOKENS.has(token) &&
+			(token.length >= 5 || FRANCHISE_SHORT_TOKENS.has(token)),
+	);
+	TITLE_TOKEN_CACHE.set(movie, tokens);
+	return tokens;
+}
+
+function areSameFranchise(source: Pick<Movie, 'title' | 'originalTitle' | 'slug'>, candidate: Pick<Movie, 'title' | 'originalTitle' | 'slug'>): boolean {
+	const sourceTokens = getComparableTitleTokens(source);
+	const candidateTokens = getComparableTitleTokens(candidate);
+	if (sourceTokens.length === 0 || candidateTokens.length === 0) {
+		return false;
+	}
+
+	const shared = sourceTokens.filter((token) => candidateTokens.includes(token));
+	if (shared.length >= 2) {
+		return true;
+	}
+
+	const [sourceLead] = sourceTokens;
+	const [candidateLead] = candidateTokens;
+	return sourceLead === candidateLead && sourceLead.length >= 5;
+}
+
+export interface MovieRecommendationAffinity {
+	score: number;
+	reason?: string;
+}
+
+function getPrimaryGenreMatches(source: Movie, candidate: Movie): RecommendationGenreId[] {
+	function getPrimaryGenres(movie: Movie): RecommendationGenreId[] {
+		const cached = PRIMARY_GENRE_CACHE.get(movie);
+		if (cached) return cached;
+		const genres = new Set<RecommendationGenreId>();
+		mapGenreToken(movie.category, genres);
+		const result = [...genres];
+		PRIMARY_GENRE_CACHE.set(movie, result);
+		return result;
+	}
+
+	const sourcePrimary = new Set(getPrimaryGenres(source));
+	const candidatePrimary = new Set(getPrimaryGenres(candidate));
+	return [...sourcePrimary].filter((genreId) => candidatePrimary.has(genreId));
+}
+
+function getRecommendationReason({
+	sharedSubgenres,
+	sharedThemes,
+	sharedGenres,
+	sameDirector,
+	sharedCastCount,
+	bothArgentinian: _bothArgentinian,
+}: {
+	sharedSubgenres: string[];
+	sharedThemes: string[];
+	sharedGenres: RecommendationGenreId[];
+	sameDirector: boolean;
+	sharedCastCount: number;
+	bothArgentinian: boolean;
+}): string | undefined {
+	const labelGenre = (genre: RecommendationGenreId | undefined) =>
+		genre ? RECOMMENDATION_GENRE_LABELS[genre] ?? genre : 'mismo clima';
+	const labelTheme = (theme: string) => (theme === 'ciencia-ficcion' ? 'ciencia ficción' : theme);
+
+	if (sameDirector) return 'Otra mirada del mismo director';
+	if (sharedSubgenres.length > 0) return SUBGENRE_LABELS[sharedSubgenres[0]] ?? sharedSubgenres[0];
+	if (sharedThemes.length > 0 && sharedGenres.length > 0) {
+		return `${labelGenre(sharedGenres[0])} · ${labelTheme(sharedThemes[0])}`;
+	}
+	if (sharedCastCount > 0) return 'Un puente en el elenco';
+	return undefined;
+}
+
+export function getMovieRecommendationAffinity(source: Movie, candidate: Movie): MovieRecommendationAffinity | null {
 	if (source.slug === candidate.slug) {
-		return Number.NEGATIVE_INFINITY;
+		return null;
+	}
+
+	if (areSameFranchise(source, candidate)) {
+		return null;
+	}
+
+	if (candidate.verdict !== 'recomendada') {
+		return null;
 	}
 
 	const sourceGenres = getRecommendationGenres(source);
@@ -362,7 +557,7 @@ function scoreMovieAffinity(source: Movie, candidate: Movie): number {
 	const sharedGenres = candidateGenres.filter((genreId) => sourceGenres.includes(genreId));
 	const genreScore = sharedGenres.reduce((total, genreId) => total + RECOMMENDATION_GENRE_WEIGHTS[genreId], 0);
 	const hasSpecificGenreMatch = sharedGenres.some((genreId) => !LOW_SIGNAL_GENRE_IDS.has(genreId));
-	const sharedTitleTokens = getSharedTitleTokenCount(source, candidate);
+	const sharedPrimaryGenres = getPrimaryGenreMatches(source, candidate);
 	const sameDirector = normalizeSearchText(source.director) === normalizeSearchText(candidate.director);
 	const sourceCast = new Set(source.mainCast.map((castMember) => normalizeSearchText(castMember)));
 	const sharedCastCount = candidate.mainCast.filter((castMember) =>
@@ -372,36 +567,34 @@ function scoreMovieAffinity(source: Movie, candidate: Movie): number {
 	const candidateCountry = normalizeSearchText(candidate.country ?? '');
 	const sameCountry = Boolean(sourceCountry) && sourceCountry === candidateCountry;
 	const bothArgentinian = isArgentinianMovie(source) && isArgentinianMovie(candidate);
-	const sharedAffinityTokens = scoreSharedAffinityTokens(source, candidate);
+	const sharedSubgenres = getSharedValues(getSubgenreSignals(source), getSubgenreSignals(candidate));
+	const sharedThemes = getSharedValues(getEditorialThemes(source), getEditorialThemes(candidate));
 	const yearDistance = Math.abs(source.year - candidate.year);
-	const sameUniverse = sharedTitleTokens >= 2;
 	const hasMeaningfulLink =
 		sameDirector ||
 		sharedCastCount > 0 ||
-		sharedTitleTokens > 0 ||
 		hasSpecificGenreMatch ||
-		sharedAffinityTokens.count > 0 ||
-		bothArgentinian;
+		sharedSubgenres.length > 0 ||
+		sharedThemes.length > 0 ||
+		sharedPrimaryGenres.length > 0;
 
-	if (!hasMeaningfulLink && sharedGenres.length === 0) {
-		return Number.NEGATIVE_INFINITY;
+	if (!hasMeaningfulLink) {
+		return null;
 	}
 
 	let score = genreScore;
-	score += sharedAffinityTokens.score;
-	score += sharedTitleTokens * 14;
-	score += sharedCastCount * 10;
+	score += sharedPrimaryGenres.length * 12;
+	score += sharedSubgenres.length * 24;
+	score += sharedThemes.length * 7;
+	score += sharedCastCount * 8;
 
-	if (sameUniverse) {
-		score += 28;
-	}
 	if (sameDirector) {
-		score += 30;
+		score += 18;
 	}
 	if (bothArgentinian) {
-		score += 18;
+		score += hasSpecificGenreMatch || sharedThemes.length > 0 ? 8 : 2;
 	} else if (sameCountry) {
-		score += 7;
+		score += 4;
 	}
 	if (moviesSharePlatform(source, candidate)) {
 		score += 2;
@@ -415,47 +608,47 @@ function scoreMovieAffinity(source: Movie, candidate: Movie): number {
 	} else if (yearDistance <= 15) {
 		score += 1;
 	}
-	if (candidate.verdict === source.verdict) {
-		score += 2;
-	}
-	if (candidate.verdict === 'recomendada') {
-		score += 1;
-	}
-
 	if (
 		sharedGenres.length === 1 &&
 		sharedGenres[0] === 'drama' &&
 		!sameDirector &&
 		sharedCastCount === 0 &&
-		sharedTitleTokens === 0 &&
-		sharedAffinityTokens.count === 0
+		sharedSubgenres.length === 0 &&
+		sharedThemes.length === 0
 	) {
-		score -= bothArgentinian ? 4 : 22;
+		score -= 22;
 	}
 
 	if (
 		sourceGenres.includes('pelicula-nacional') &&
 		!candidateGenres.includes('pelicula-nacional') &&
 		!sameDirector &&
-		sharedCastCount === 0 &&
-		sharedTitleTokens === 0
+		sharedCastCount === 0
 	) {
-		score -= 14;
-	}
-
-	if (sourceGenres.includes('anime') !== candidateGenres.includes('anime')) {
-		score -= 12;
-	}
-
-	if (sourceGenres.includes('superheroes') !== candidateGenres.includes('superheroes')) {
 		score -= 10;
 	}
 
-	if (!hasMeaningfulLink) {
-		score -= 18;
+	if (sourceGenres.includes('anime') !== candidateGenres.includes('anime')) {
+		score -= 28;
 	}
 
-	return score;
+	if (sourceGenres.includes('superheroes') !== candidateGenres.includes('superheroes')) {
+		score -= 32;
+	} else if (sourceGenres.includes('superheroes')) {
+		score += 20;
+	}
+
+	return {
+		score,
+		reason: getRecommendationReason({
+			sharedSubgenres,
+			sharedThemes,
+			sharedGenres,
+			sameDirector,
+			sharedCastCount,
+			bothArgentinian,
+		}),
+	};
 }
 
 export function generateMovieEditorialRecommendations(
@@ -464,14 +657,11 @@ export function generateMovieEditorialRecommendations(
 ): { becauseYouLiked: string[]; related: string[] } {
 	const ranked = allMovies
 		.filter((candidate) => candidate.slug !== movie.slug)
-		.map((candidate) => ({
-			candidate,
-			score: scoreMovieAffinity(movie, candidate),
-		}))
-		.filter((entry) => Number.isFinite(entry.score))
+		.map((candidate) => ({ candidate, affinity: getMovieRecommendationAffinity(movie, candidate) }))
+		.filter((entry): entry is { candidate: Movie; affinity: MovieRecommendationAffinity } => entry.affinity !== null)
 		.sort(
 			(left, right) =>
-				right.score - left.score ||
+				right.affinity.score - left.affinity.score ||
 				Math.abs(left.candidate.year - movie.year) - Math.abs(right.candidate.year - movie.year) ||
 				left.candidate.title.localeCompare(right.candidate.title, 'es'),
 		);

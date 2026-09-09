@@ -4,6 +4,9 @@ import path from 'node:path';
 import { generateMovieEditorialRecommendations } from '../src/lib/recommendation-engine.ts';
 
 const MOVIES_DIR = path.resolve('src/data/movies');
+const PRESERVE_SOURCE_DIR = process.env.MOVIE_RECOMMENDATIONS_PRESERVE_SOURCE_DIR
+	? path.resolve(process.env.MOVIE_RECOMMENDATIONS_PRESERVE_SOURCE_DIR)
+	: null;
 
 async function loadMovies() {
 	const fileNames = (await readdir(MOVIES_DIR)).filter((fileName) => fileName.endsWith('.json')).sort();
@@ -16,6 +19,59 @@ async function loadMovies() {
 	}
 
 	return movies;
+}
+
+function findEditorialObjectRange(source, filePath) {
+	const propertyPattern = /"editorial"\s*:\s*/g;
+	let property = null;
+	for (let match = propertyPattern.exec(source); match; match = propertyPattern.exec(source)) {
+		property = match;
+	}
+	if (!property) {
+		throw new Error(`No se encontró editorial en ${filePath}.`);
+	}
+
+	const start = property.index + property[0].length;
+	if (source[start] !== '{') {
+		throw new Error(`editorial no es un objeto en ${filePath}.`);
+	}
+
+	let depth = 0;
+	let inString = false;
+	let escaped = false;
+	for (let index = start; index < source.length; index += 1) {
+		const character = source[index];
+		if (inString) {
+			if (escaped) {
+				escaped = false;
+			} else if (character === '\\') {
+				escaped = true;
+			} else if (character === '"') {
+				inString = false;
+			}
+			continue;
+		}
+		if (character === '"') {
+			inString = true;
+		} else if (character === '{') {
+			depth += 1;
+		} else if (character === '}') {
+			depth -= 1;
+			if (depth === 0) {
+				return { start, end: index + 1 };
+			}
+		}
+	}
+
+	throw new Error(`editorial quedó sin cerrar en ${filePath}.`);
+}
+
+function replaceEditorial(source, filePath, editorial) {
+	const { start, end } = findEditorialObjectRange(source, filePath);
+	const previousEditorial = source.slice(start, end);
+	const indentation = previousEditorial.includes('\n') ? '\t' : undefined;
+	const nextEditorial = JSON.stringify(editorial, null, indentation);
+	return `${source.slice(0, start)}${nextEditorial}${source.slice(end)}`;
 }
 
 async function main() {
@@ -31,16 +87,20 @@ async function main() {
 			related: recommendations.related,
 		};
 
-		const currentEditorial = entry.movie.editorial ?? {};
+		const relativeFilePath = path.relative(process.cwd(), entry.filePath);
+		const sourcePath = PRESERVE_SOURCE_DIR ? path.join(PRESERVE_SOURCE_DIR, relativeFilePath) : entry.filePath;
+		const source = await readFile(sourcePath, 'utf8');
+		const sourceMovie = JSON.parse(source);
+		const currentEditorial = sourceMovie.editorial ?? {};
 		if (
 			JSON.stringify(currentEditorial.becauseYouLiked ?? []) === JSON.stringify(nextEditorial.becauseYouLiked) &&
-			JSON.stringify(currentEditorial.related ?? []) === JSON.stringify(nextEditorial.related)
+			JSON.stringify(currentEditorial.related ?? []) === JSON.stringify(nextEditorial.related) &&
+			sourcePath === entry.filePath
 		) {
 			continue;
 		}
 
-		entry.movie.editorial = nextEditorial;
-		await writeFile(entry.filePath, `${JSON.stringify(entry.movie, null, '\t')}\n`, 'utf8');
+		await writeFile(entry.filePath, replaceEditorial(source, entry.filePath, nextEditorial), 'utf8');
 		updatedCount += 1;
 	}
 

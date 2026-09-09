@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-08. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-09. Fuente: src/data/movies/*.json
 
 Total de peliculas: 2114
 
