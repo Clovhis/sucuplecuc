@@ -8,49 +8,9 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-08T09:06:16.434Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-09T09:11:23.136Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"slug": "practical-magic-2",
-		"title": "Hechizo de Amor: La magia continúa",
-		"releaseDate": "2026-09-10",
-		"videoUrl": "https://www.youtube.com/watch?v=Ho10_4IX1jE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10476-hechizo-de-amor-la-magia-continua/"
-	},
-	{
-		"slug": "oasis-don-t-look-back-in-anger",
-		"title": "Oasis: Don't look back in anger",
-		"releaseDate": "2026-09-10",
-		"videoUrl": "https://www.youtube.com/watch?v=6z_0B_lyRTo",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ud7QIJo21odjCaev6V4md9sK16.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10545-oasis-don-t-look-back-in-anger/"
-	},
-	{
-		"slug": "mutiny",
-		"title": "Código: Venganza",
-		"releaseDate": "2026-09-10",
-		"videoUrl": "https://www.youtube.com/watch?v=2Iqvbe98Gb4",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10574-codigo-venganza/"
-	},
-	{
-		"slug": "ice-cream-man",
-		"title": "El heladero",
-		"releaseDate": "2026-09-10",
-		"videoUrl": "https://www.youtube.com/watch?v=Cgw3zNmFtRo",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10566-el-heladero/"
-	},
-	{
-		"slug": "finding-emily",
-		"title": "Emily, ¿dónde estás?",
-		"releaseDate": "2026-09-17",
-		"videoUrl": "https://www.youtube.com/watch?v=wc2UjmPzN8c",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7Ja28gO6OwncmCA94q2qPyeRrsA.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10445-emily-donde-estas-/"
-	},
 	{
 		"slug": "the-magic-faraway-tree",
 		"title": "El árbol mágico",
@@ -71,7 +31,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "forgotten-island",
 		"title": "La isla olvidada",
 		"releaseDate": "2026-09-24",
-		"videoUrl": "https://www.youtube.com/watch?v=f7mFVeWnVLw",
+		"videoUrl": "https://www.youtube.com/watch?v=PhgY8cOJiQA",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qhWwvo77nXAdiWuL4eP7JXLWErs.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10448-la-isla-olvidada/"
 	},
@@ -88,7 +48,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Vértigo 2",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yQXU4rgJ5LVCzn16SeIg34T35lV.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
 	},
 	{
@@ -98,5 +58,45 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=XszNWHhpaTc",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/sOLgkBKf1gjMRc4yXxM5aciXdfr.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/1761-cars/"
+	},
+	{
+		"slug": "street-fighter",
+		"title": "Street Fighter",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10217-street-fighter/"
+	},
+	{
+		"slug": "the-hunger-games",
+		"title": "Los Juegos del Hambre",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=qoUT7q2iTbQ",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/3sndNmvdF0R8AeyCmVoNv8LKtNy.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/3972-los-juegos-del-hambre/"
+	},
+	{
+		"slug": "the-hunger-games-catching-fire",
+		"title": "Los Juegos del Hambre: En llamas",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=zoKj7TdJk98",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/eHaazLxM5LRMh0ySkVy7SK6wUWt.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4386-los-juegos-del-hambre-en-llamas/"
+	},
+	{
+		"slug": "the-hunger-games-mockingjay-part-1",
+		"title": "Los Juegos del Hambre: Sinsajo Parte 1",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=IXshQ5mv1K8",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4387-los-juegos-del-hambre-sinsajo-parte-1/"
+	},
+	{
+		"slug": "the-hunger-games-mockingjay-part-2",
+		"title": "Los Juegos del Hambre: Sinsajo Parte 2",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=SoKIqLEGhI0",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qVgLMRVNB5bHU0inmRa0ueShacN.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4591-los-juegos-del-hambre-sinsajo-parte-2/"
 	}
 ];
