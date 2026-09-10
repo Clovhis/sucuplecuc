@@ -13,6 +13,68 @@ const MAX_X_WEIGHTED_LENGTH = 250;
 const URL_WEIGHT = 23;
 const RECENT_PREMIERE_DAYS = 90;
 const COPY_VARIANT_HISTORY_SIZE = 3;
+const MAX_TYPE_HASHTAGS = 2;
+
+// Keep these short, searchable and unaccented: the catalog contains legacy
+// spellings with and without accents, while X discovery benefits from one
+// stable tag for the same kind of movie.
+const TYPE_HASHTAGS = new Map([
+	['accion', '#CineDeAccion'],
+	['accion aventura', '#CineDeAccion'],
+	['animacion', '#Animacion'],
+	['anime', '#Anime'],
+	['atracos', '#Heist'],
+	['aventura', '#Aventura'],
+	['belica', '#CineBelico'],
+	['biografia', '#Biopic'],
+	['biografica', '#Biopic'],
+	['body horror', '#BodyHorror'],
+	['ciencia ficcion', '#CienciaFiccion'],
+	['cine adolescente', '#ComingOfAge'],
+	['cine de misterio', '#Misterio'],
+	['cine de suspenso', '#Suspenso'],
+	['cine de terror', '#Terror'],
+	['cine lgbt', '#CineLGBT'],
+	['comedia', '#Comedia'],
+	['comedia negra', '#ComediaNegra'],
+	['comedia romantica', '#RomCom'],
+	['coming of age', '#ComingOfAge'],
+	['crimen', '#CinePolicial'],
+	['cyberpunk', '#Cyberpunk'],
+	['documental', '#Documental'],
+	['drama', '#Drama'],
+	['drama psicologico', '#DramaPsicologico'],
+	['espionaje', '#Espionaje'],
+	['familia', '#CineFamiliar'],
+	['familiar', '#CineFamiliar'],
+	['fantasia', '#Fantasia'],
+	['found footage', '#FoundFootage'],
+	['gore', '#CineDeTerror'],
+	['guerra', '#CineBelico'],
+	['heist', '#Heist'],
+	['historia', '#CineHistorico'],
+	['historia argentina', '#CineArgentino'],
+	['historica', '#CineHistorico'],
+	['historico', '#CineHistorico'],
+	['lgbtq', '#CineLGBT'],
+	['misterio', '#Misterio'],
+	['musica', '#Musical'],
+	['musical', '#Musical'],
+	['policial', '#CinePolicial'],
+	['romance', '#Romance'],
+	['romantica', '#RomCom'],
+	['sci fi', '#CienciaFiccion'],
+	['slasher', '#Slasher'],
+	['sobrenatural', '#Sobrenatural'],
+	['suspense', '#Suspenso'],
+	['suspenso', '#Suspenso'],
+	['terror', '#Terror'],
+	['terror corporal', '#BodyHorror'],
+	['thriller', '#Thriller'],
+	['thriller psicologico', '#ThrillerPsicologico'],
+	['western', '#Western'],
+	['zombis', '#Zombies'],
+]);
 
 const OPENING_TEMPLATES = [
 	({ title, availability }) => `${title} ${availability}.`,
@@ -116,6 +178,21 @@ function firstSentence(value) {
 	return normalized.match(/^(.+?[.!?…])(?:\s|$)/u)?.[1] ?? normalized;
 }
 
+function normalizeTaxonomyTerm(value) {
+	return String(value ?? '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase('es-AR').replace(/[^\p{Letter}\p{Number}]+/gu, ' ').trim();
+}
+
+export function movieHashtags(movie) {
+	const taxonomy = [movie?.category, ...(Array.isArray(movie?.genres) ? movie.genres : []), ...(Array.isArray(movie?.subgenres) ? movie.subgenres : [])];
+	const hashtags = [];
+	for (const term of taxonomy) {
+		const hashtag = TYPE_HASHTAGS.get(normalizeTaxonomyTerm(term));
+		if (hashtag && !hashtags.includes(hashtag)) hashtags.push(hashtag);
+		if (hashtags.length === MAX_TYPE_HASHTAGS) break;
+	}
+	return hashtags.length > 0 ? hashtags : ['#Cine'];
+}
+
 export function weightedXLength(text) {
 	const urls = text.match(/https?:\/\/[^\s]+/gu) ?? [];
 	return [...text].length - urls.reduce((total, url) => total + [...url].length, 0) + urls.length * URL_WEIGHT;
@@ -166,7 +243,8 @@ export function renderPostText(movie, copyStyle = defaultCopyStyle(movie)) {
 	const availability = pickVariant(availabilityLabels(movie), style.availability);
 	let opening = pickVariant(OPENING_TEMPLATES, style.opening)({ title: `${title} (${movie.year})`, genre: category, availability });
 	let editorialIntro = pickVariant(EDITORIAL_INTROS, style.editorial);
-	const suffix = `\n\n${pickVariant(VERDICT_TEMPLATES, style.verdict)(label)}\n${pickVariant(LINK_TEMPLATES, style.link)(url)}`;
+	const hashtags = movieHashtags(movie).join(' ');
+	const suffix = `\n\n${pickVariant(VERDICT_TEMPLATES, style.verdict)(label)}\n${pickVariant(LINK_TEMPLATES, style.link)(url)}\n${hashtags}`;
 	let excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(`${opening}\n\n${editorialIntro}`) - weightedXLength(suffix);
 	// Some real release titles are very long. Keep their post readable instead of
 	// failing the whole daily run because a decorative template consumed the excerpt.

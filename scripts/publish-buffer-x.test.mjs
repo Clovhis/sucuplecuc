@@ -1,12 +1,17 @@
 import assert from 'node:assert/strict';
-import { chooseCopyStyle, nextDueAt, renderPostText, selectMovie, weightedXLength } from './publish-buffer-x.mjs';
+import { chooseCopyStyle, movieHashtags, nextDueAt, renderPostText, selectMovie, weightedXLength } from './publish-buffer-x.mjs';
 
 const movie = { slug: 'akira-1988', title: 'Akira', year: 1988, category: 'Ciencia ficción', releaseDate: '2026-09-05', releasePlatform: 'Netflix', poster: 'assets/posters/1988/akira-1988.webp', verdict: 'recomendada', verdictLabel: 'BUENISIMA', review: 'Akira arranca con una pandilla de adolescentes en un Neo-Tokio explosivo y usa la transformación de Tetsuo para hablar de poder, violencia y una ciudad que no termina de curarse. Katsuhiro Otomo dirige con una energía desatada.' };
 const text = renderPostText(movie);
 assert.match(text, /Akira \(1988\)/u);
 assert.match(text, /BUENISIMA/u);
 assert.match(text, /https:\/\/www\.cineposta\.com\.ar\/peliculas\/akira-1988\//u);
+assert.match(text, /#CienciaFiccion/u);
 assert.ok(weightedXLength(text) <= 250);
+
+assert.deepEqual(movieHashtags({ category: 'Ciencia ficcion', genres: ['Cyberpunk', 'Anime'] }), ['#CienciaFiccion', '#Cyberpunk'], 'normaliza categorías sin tilde y suma una señal de género');
+assert.deepEqual(movieHashtags({ category: 'Terror', genres: ['cine de terror', 'Slasher'], subgenres: ['Slasher'] }), ['#Terror', '#Slasher'], 'evita etiquetas duplicadas y prioriza el subtipo');
+assert.deepEqual(movieHashtags({ category: 'Experimental' }), ['#Cine'], 'mantiene una etiqueta segura si una taxonomía aún no tiene mapeo');
 
 const styles = Array.from({ length: 24 }, (_, index) => ({ opening: index, availability: index, editorial: index, verdict: index, link: index }));
 const variants = styles.map((style, index) => renderPostText({ ...movie, slug: `akira-1988-${index}` }, style));
@@ -17,6 +22,7 @@ assert.equal(new Set(endings.map(([verdict]) => verdict)).size, 8, 'los veredict
 for (const variant of variants) {
 	assert.ok(weightedXLength(variant) <= 250);
 	assert.match(variant, /Akira arranca con una pandilla/u);
+	assert.match(variant, /#CienciaFiccion/u);
 }
 
 const longTitleMovie = { ...movie, slug: 'adolescencia-sexo-y-muerte-en-campamento-miasma-2026', title: 'Adolescencia, sexo y muerte en campamento Miasma: una historia extraordinariamente larga', verdictLabel: 'RECOMENDADISIMA' };
