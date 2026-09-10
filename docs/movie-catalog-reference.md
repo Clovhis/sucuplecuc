@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-09. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-10. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2114
+Total de peliculas: 2120
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ Total de peliculas: 2114
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Otras plataformas | ATP |
 | 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus | ATP |
-| 2026 | Backrooms | backrooms-2026 | Terror | Apple TV | +13 |
+| 2026 | Backrooms | backrooms-2026 | Terror | Cine | +13 |
 | 2026 | Barreda | barreda-2026 | Drama | Prime Video | +18 |
 | 2026 | Batman: Knightfall - Part 1: Knightfall | batman-knightfall-part-1-knightfall-2026 | Animacion | Apple TV | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
@@ -32,6 +32,7 @@ Total de peliculas: 2114
 | 2026 | Chris y Martina: El set decisivo | chris-y-martina-el-set-decisivo-2026 | Documental | Netflix | +18 |
 | 2026 | CIN3 FILI4 | cin3-fili4-2026 | Drama | Otras plataformas | ATP |
 | 2026 | Clika | clika-2026 | Drama | HBO Max | +16 |
+| 2026 | Código: Venganza | codigo-venganza-2026 | Accion | Cine | +13 |
 | 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Cine | +16 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
@@ -45,11 +46,12 @@ Total de peliculas: 2114
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El día D: Bajo presión | el-dia-d-bajo-presion-2026 | Drama | Otras plataformas | +13 |
 | 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Otras plataformas | +13 |
-| 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Disney Plus | +13 |
+| 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Cine | +13 |
 | 2026 | El drama | the-drama-2026 | Romance | Prime Video | +17 |
 | 2026 | El escándalo de Trustor desde dentro | el-escandalo-de-trustor-desde-dentro-2026 | Documental | Netflix | ATP |
 | 2026 | El falsario | el-falsario-2026 | Drama | Netflix | +16 |
 | 2026 | El final de la calle Oak | el-final-de-la-calle-oak-2026 | Ciencia ficcion | Cine | ATP |
+| 2026 | El heladero | el-heladero-2026 | Terror | Cine | +17 |
 | 2026 | El Huésped Oculto | el-huesped-oculto-2026 | Thriller | HBO Max | +16 |
 | 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Otras plataformas | ATP |
 | 2026 | El partido | el-partido-2026 | Documental | Otras plataformas | ATP |
@@ -75,8 +77,9 @@ Total de peliculas: 2114
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Hasta el final | hasta-el-final-2026 | Drama | Netflix | +16 |
 | 2026 | Heartstopper para siempre | heartstopper-para-siempre-2026 | Romance | Netflix | +16 |
+| 2026 | Hechizo de Amor: La magia continúa | hechizo-de-amor-la-magia-continua-2026 | Fantasia | Cine | +13 |
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Prime Video | +17 |
-| 2026 | Hoppers | hoppers-2026 | Animacion | Disney Plus | ATP |
+| 2026 | Hoppers | hoppers-2026 | Animacion | Cine | ATP |
 | 2026 | Impacto mortal | impacto-mortal-2026 | Thriller | Cine | +13 |
 | 2026 | In the Hand of Dante | in-the-hand-of-dante-2026 | Thriller | Netflix | +16 |
 | 2026 | Insaciable | insaciable-2026 | Terror | Otras plataformas | +17 |
@@ -123,7 +126,7 @@ Total de peliculas: 2114
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
 | 2026 | México 86 | mexico-86-2026 | Comedia | Netflix | +16 |
 | 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
-| 2026 | Michael | michael-2026 | Drama | Otras plataformas | +13 |
+| 2026 | Michael | michael-2026 | Drama | Cine | +13 |
 | 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Otras plataformas | ATP |
 | 2026 | Momentos decisivos: Generación 11-S | momentos-decisivos-generacion-11-s-2026 | Documental | Netflix | +16 |
@@ -134,6 +137,7 @@ Total de peliculas: 2114
 | 2026 | Nando entre dos mundos | nando-entre-dos-mundos-2026 | Crimen | Netflix | ATP |
 | 2026 | No es país para solteros | no-es-pais-para-solteros-2026 | Comedia romántica | Prime Video | +18 |
 | 2026 | No se desea buena suerte | no-se-desea-buena-suerte-2026 | Drama | Netflix | +13 |
+| 2026 | Oasis: Don't Look Back in Anger | oasis-don-t-look-back-in-anger-2026 | Documental | Cine | ATP |
 | 2026 | Obsesión | obsesion-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Office Romance | office-romance-2026 | Comedia | Netflix | +16 |
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
@@ -153,7 +157,7 @@ Total de peliculas: 2114
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
 | 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | Otras plataformas | +16 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
-| 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Apple TV | +17 |
+| 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Cine | +17 |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Paramount Plus | +16 |
 | 2026 | Secretos del deporte: El testimonio de Vince Young | secretos-del-deporte-el-testimonio-de-vince-young-2026 | Documental | Netflix | +13 |
 | 2026 | Send Help | send-help-2026 | Thriller | Otras plataformas | +13 |
@@ -162,11 +166,12 @@ Total de peliculas: 2114
 | 2026 | Sólo por una noche | solo-por-una-noche-2026 | Comedia romántica | Cine | +13 |
 | 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine | +13 |
 | 2026 | Sunrise: El último amanecer | sunrise-el-ultimo-amanecer-2026 | Romance | Prime Video | +13 |
-| 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Otras plataformas | ATP |
+| 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Cine | ATP |
 | 2026 | Supergirl | supergirl-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Susana y Elvira: Sin plan B | susana-y-elvira-sin-plan-b-2026 | Comedia romántica | Netflix | +16 |
 | 2026 | Susurran tu nombre | susurran-tu-nombre-2026 | Thriller | Netflix | +16 |
 | 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
+| 2026 | Tadeo El Explorador y la Lámpara Maravillosa | tadeo-el-explorador-y-la-lampara-maravillosa-2026 | Animacion | Cine | ATP |
 | 2026 | Te Extraño, Te Amo | te-extrano-te-amo-2026 | Drama | HBO Max | +13 |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | HBO Max | +16 |
 | 2026 | Tetracampeones: Brasil volvió a creer | tetracampeones-brasil-volvio-a-creer-2026 | Documental | Netflix | +13 |
@@ -869,7 +874,7 @@ Total de peliculas: 2114
 | 2014 | La canción del mar | la-cancion-del-mar-2014 | Animacion | Apple TV | ATP |
 | 2014 | La gran aventura LEGO | la-gran-aventura-lego-2014 | Animacion | Prime Video + Disney Plus | ATP |
 | 2014 | Las aventuras de Peabody y Sherman | las-aventuras-de-peabody-y-sherman-2014 | Animacion | Apple TV | ATP |
-| 2014 | Los Boxtrolls | los-boxtrolls-2014 | Animacion | Apple TV | +7 |
+| 2014 | Los Boxtrolls | los-boxtrolls-2014 | Animacion | Cine | +7 |
 | 2014 | Los maratones Barkley: La carrera que devora a sus crías | the-barkley-marathons-the-race-that-eats-its-young-2014 | Documental | Prime Video + Apple TV | ATP |
 | 2014 | Los pingüinos de Madagascar | los-pinguinos-de-madagascar-2014 | Animacion | Prime Video + HBO Max | ATP |
 | 2014 | Luna de miel en familia | blended-2014 | Comedia | Apple TV + HBO Max | +13 |
@@ -962,9 +967,10 @@ Total de peliculas: 2114
 | 2012 | Lincoln | lincoln-2012 | Drama | Otras plataformas | +13 |
 | 2012 | Looper | looper-2012 | Ciencia ficcion | Otras plataformas | +17 |
 | 2012 | Los miserables | los-miserables-2012 | Musical | Otras plataformas | +13 |
-| 2012 | ParaNorman | paranorman-2012 | Animacion | Apple TV | +7 |
+| 2012 | ParaNorman | paranorman-2012 | Animacion | Cine | +7 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
 | 2012 | Puella Magi Madoka Magica: La película - Parte 1 | puella-magi-madoka-magica-la-pelicula-parte-1-2012 | Anime | Cine | +13 |
+| 2012 | Puella Magi Madoka Magica: La película - Parte 2 | puella-magi-madoka-magica-la-pelicula-parte-2-2012 | Anime | Cine | +13 |
 | 2012 | Sin tregua | sin-tregua-2012 | Acción | Otras plataformas | +17 |
 | 2012 | Skyfall | skyfall-2012 | Accion | Netflix | +12 |
 | 2012 | Ted | ted-2012 | Comedia | Prime Video + Apple TV | +16 |
@@ -1098,7 +1104,7 @@ Total de peliculas: 2114
 | 2009 | La princesa y el sapo | la-princesa-y-el-sapo-2009 | Animacion | Disney Plus | ATP |
 | 2009 | Lluvia de hamburguesas | lluvia-de-hamburguesas-2009 | Animacion | Netflix + Apple TV | ATP |
 | 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
-| 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Apple TV | +13 |
+| 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Cine | +13 |
 | 2009 | Los secretos del poder | los-secretos-del-poder-2009 | Drama | Apple TV | +13 |
 | 2009 | Los sustitutos | los-sustitutos-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
@@ -1423,9 +1429,9 @@ Total de peliculas: 2114
 | 2001 | Mulholland Drive | mulholland-drive-2001 | Thriller | Apple TV | +16 |
 | 2001 | Planet of the Apes | planet-of-the-apes-2001 | Ciencia ficcion | Disney Plus | +13 |
 | 2001 | Rock Star | rock-star-2001 | Drama | Apple TV | +17 |
-| 2001 | Shrek | shrek-2001 | Animacion | Netflix + HBO Max | ATP |
+| 2001 | Shrek | shrek-2001 | Animacion | Cine | ATP |
 | 2001 | Spirited Away | spirited-away-2001 | Anime | Netflix | ATP |
-| 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Otras plataformas | +13 |
+| 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Cine | +13 |
 | 2001 | The Lord of the Rings: The Fellowship of the Ring | the-lord-of-the-rings-the-fellowship-of-the-ring-2001 | Aventura | Otras plataformas | +13 |
 | 2001 | The Majestic | the-majestic-2001 | Drama | Apple TV | ATP |
 | 2001 | The Others | the-others-2001 | Terror | Otras plataformas | +13 |
@@ -1721,7 +1727,7 @@ Total de peliculas: 2114
 | 1991 | Thelma y Louise | thelma-y-louise-1991 | Drama | Apple TV | +16 |
 | 1991 | Una segunda oportunidad | una-segunda-oportunidad-1991 | Drama | Otras plataformas | +13 |
 | 1990 | Alice | alice-1990 | Fantasia | Otras plataformas | +13 |
-| 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Otras plataformas | ATP |
+| 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Cine | ATP |
 | 1990 | Buenos muchachos | goodfellas-1990 | Crimen | Prime Video + HBO Max | +13 |
 | 1990 | Calda emoción | calda-emocion-1990 | Drama | Otras plataformas | +16 |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus | +13 |
@@ -1747,7 +1753,7 @@ Total de peliculas: 2114
 | 1990 | Troll 2 | troll-2-1990 | Terror | Prime Video | +13 |
 | 1989 | Abyss | abyss-1989 | Ciencia ficcion | Disney Plus | +13 |
 | 1989 | Always (Para Siempre) | always-1989 | Romance | Otras plataformas | +13 |
-| 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video | ATP |
+| 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Cine | ATP |
 | 1989 | Bañeros II: La playa loca | baneros-ii-la-playa-loca-1989 | Comedia | Otras plataformas | ATP |
 | 1989 | Batman | batman-1989 | Fantasia | HBO Max | +13 |
 | 1989 | Delitos y faltas | crimes-and-misdemeanors-1989 | Drama | Otras plataformas | +16 |
@@ -1773,7 +1779,7 @@ Total de peliculas: 2114
 | 1989 | Viernes 13. Parte VIII: Jason vuelve... para siempre | friday-the-13th-part-viii-jason-takes-manhattan-1989 | Terror | Otras plataformas | +18 |
 | 1988 | Acusados | acusados-1988 | Drama | Apple TV | +18 |
 | 1988 | Agárralo como puedas | agarralo-como-puedas-1988 | Comedia | Paramount Plus | +13 |
-| 1988 | Akira | akira-1988 | Anime | Netflix | +17 |
+| 1988 | Akira | akira-1988 | Anime | Cine | +17 |
 | 1988 | Armas de mujer | armas-de-mujer-1988 | Comedia | Disney Plus | +16 |
 | 1988 | Arturo, el millonario seductor 2 | arturo-el-millonario-seductor-2-1988 | Comedia | Apple TV | ATP |
 | 1988 | Beetlejuice | beetlejuice-1988 | Comedia | HBO Max | +13 |
@@ -1839,7 +1845,7 @@ Total de peliculas: 2114
 | 1985 | ¡qué noche! | after-hours-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | A Nightmare on Elm Street 2: Freddy's Revenge | a-nightmare-on-elm-street-2-freddy-s-revenge-1985 | Terror | Otras plataformas | +17 |
 | 1985 | Armas invencibles (Police Story) | armas-invencibles-police-story-1985 | Accion | Otras plataformas | +13 |
-| 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video + Netflix | ATP |
+| 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Cine | ATP |
 | 1985 | Brazil... La película | brazil-la-pelicula-1985 | Ciencia ficcion | Prime Video | +13 |
 | 1985 | El club de los cinco | the-breakfast-club-1985 | Comedia | Apple TV | +13 |
 | 1985 | El color púrpura | the-color-purple-1985 | Drama | Otras plataformas | +13 |

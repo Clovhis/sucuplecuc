@@ -2122,6 +2122,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "aquaman-2018"
   ],
   "jason-statham": [
+    "codigo-venganza-2026",
     "shelter-2026",
     "the-beekeeper-2024",
     "fast-and-furious-presents-hobbs-and-shaw-2019",
@@ -3461,6 +3462,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "peggy-sue-se-caso-1986"
   ],
   "nicole-kidman": [
+    "hechizo-de-amor-la-magia-continua-2026",
     "el-hombre-del-norte-2022",
     "el-sacrificio-de-un-ciervo-sagrado-2017",
     "la-reina-del-desierto-2015",
@@ -4103,6 +4105,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "pulp-fiction-1994"
   ],
   "sandra-bullock": [
+    "hechizo-de-amor-la-magia-continua-2026",
     "ocean-s-8-las-estafadoras-2018",
     "minions-2015",
     "gravedad-2013",

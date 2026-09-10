@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-08. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-10. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 555
-Total de vínculos de películas del catálogo: 3729
+Total de vínculos de películas del catálogo: 3732
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -264,7 +264,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jared Leto | `jared-leto` | /personas/jared-leto/ | Actor | 9 | 7 |
 | Jason Bateman | `jason-bateman` | /personas/jason-bateman/ | Actor | 6 | 7 |
 | Jason Momoa | `jason-momoa` | /personas/jason-momoa/ | Actor | 7 | 7 |
-| Jason Statham | `jason-statham` | /personas/jason-statham/ | Actor | 6 | 4 |
+| Jason Statham | `jason-statham` | /personas/jason-statham/ | Actor | 7 | 4 |
 | Javier Bardem | `javier-bardem` | /personas/javier-bardem/ | Actor | 6 | 7 |
 | Jeff Bridges | `jeff-bridges` | /personas/jeff-bridges/ | Actor | 7 | 7 |
 | Jeff Goldblum | `jeff-goldblum` | /personas/jeff-goldblum/ | Actor | 6 | 7 |
@@ -418,7 +418,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Neve Campbell | `neve-campbell` | /personas/neve-campbell/ | Actriz | 6 | 7 |
 | Nicholas Hoult | `nicholas-hoult` | /personas/nicholas-hoult/ | Actor | 6 | 6 |
 | Nicolas Cage | `nicolas-cage` | /personas/nicolas-cage/ | Actor | 16 | 6 |
-| Nicole Kidman | `nicole-kidman` | /personas/nicole-kidman/ | Actriz | 15 | 3 |
+| Nicole Kidman | `nicole-kidman` | /personas/nicole-kidman/ | Actriz | 16 | 3 |
 | Norma Aleandro | `norma-aleandro` | /personas/norma-aleandro/ | Actriz | 2 | 7 |
 | Oliver Stone | `oliver-stone` | /personas/oliver-stone/ | Director / Guionista / Productor | 5 | 4 |
 | Orlando Bloom | `orlando-bloom` | /personas/orlando-bloom/ | Actor | 7 | 6 |
@@ -489,7 +489,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Sam Worthington | `sam-worthington` | /personas/sam-worthington/ | Actor | 5 | 7 |
 | Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 1 | 7 |
 | Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 15 | 7 |
-| Sandra Bullock | `sandra-bullock` | /personas/sandra-bullock/ | Actriz | 10 | 4 |
+| Sandra Bullock | `sandra-bullock` | /personas/sandra-bullock/ | Actriz | 11 | 4 |
 | Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 3 | 7 |
 | Santiago Mitre | `santiago-mitre` | /personas/santiago-mitre/ | Director | 2 | 7 |
 | Santiago Segura | `santiago-segura` | /personas/santiago-segura/ | Director / Actor / Guionista / Productor | 2 | 7 |
