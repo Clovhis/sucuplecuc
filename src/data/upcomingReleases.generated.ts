@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-09T09:11:23.136Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-10T09:11:25.616Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -32,14 +32,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "La isla olvidada",
 		"releaseDate": "2026-09-24",
 		"videoUrl": "https://www.youtube.com/watch?v=PhgY8cOJiQA",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qhWwvo77nXAdiWuL4eP7JXLWErs.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10448-la-isla-olvidada/"
 	},
 	{
 		"slug": "digger",
 		"title": "DIGGER",
 		"releaseDate": "2026-10-01",
-		"videoUrl": "https://www.youtube.com/watch?v=qORTe1wW3Wg",
+		"videoUrl": "https://www.youtube.com/watch?v=job8V254NAE",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10364-digger/"
 	},
@@ -48,7 +48,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Vértigo 2",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yQXU4rgJ5LVCzn16SeIg34T35lV.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
 	},
 	{
