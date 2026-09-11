@@ -98,6 +98,8 @@ Stop with `La pelicula ya existe` if it reports a duplicate. When it passes, res
 1. Open one official/distributor or authoritative metadata page and the official original-language trailer. Capture all film facts possible from those pages.
 2. Open JustWatch AR for title + year. Open one official Argentina platform page only if the AR offer is unclear or conflicts. Open one specialized review source for editorial support.
 
+If a non-editorial metadata field remains unresolved after the primary source and TMDb, use Watchmode only as an optional, bounded fallback. Read the `Watchmode` section of [movie-load-contract.md](references/movie-load-contract.md) before doing so. Its absence, an API failure, or a mismatch never blocks the existing flow and never replaces an already verified source.
+
 Do not reopen sources merely to reconfirm facts. Keep an evidence ledger of compact `field → URL → fact` notes; pass only that ledger to chained skills. Read [movie-load-contract.md](references/movie-load-contract.md) only for the relevant unresolved area (platform, people, taxonomy, or editorial rules), not wholesale.
 
 For a poster, the ledger must contain `source URL → final HTTP status/content-type/dimensions → canonical identity/year source → visual identity and Argentina-market decision → local assets/posters/<year>/<slug>.webp`. Do not use a platform page, an image filename, or a search-result thumbnail as the only identity evidence.

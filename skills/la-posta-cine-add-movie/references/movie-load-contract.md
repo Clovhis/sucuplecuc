@@ -12,6 +12,14 @@ Leé sólo la sección que corresponda al dato que estás resolviendo. El audito
 - Guardar sólo el ID de un tráiler oficial en idioma original en `trailerYoutubeId`; si no se encuentra, pedir excepción antes de publicar.
 - Incluir `awards: { "wins": [] }`. Registrar únicamente victorias verificadas de Oscar, Grammy o Cannes con `award`, `category`, `recipient` y `year`.
 
+## Watchmode: fallback opcional de metadata
+
+- Watchmode es una capa complementaria, no una sustitución de la ficha oficial, TMDb, JustWatch AR, la plataforma argentina, los scripts ni las auditorías existentes. Consultarlo sólo si, después de la fuente primaria y TMDb, falta o hace falta contrastar un campo no editorial. Si no hay `WATCHMODE_API_KEY`, la API falla, se agota la cuota o no hay una coincidencia inequívoca, continuar con el flujo vigente.
+- Obtener la clave gratuita fuera del repositorio y exponerla sólo como `WATCHMODE_API_KEY` en el entorno seguro de la sesión. Enviar la clave mediante el header `X-API-Key`; nunca agregarla a `.env.example`, JSON, código, ledger, URL, historial de comandos ni logs. La cuenta gratuita tiene cuota y países habilitados limitados: no hacer barridos, reintentos abiertos ni consultas para reconfirmar datos ya verificados.
+- Hacer como máximo una búsqueda exacta por título + año + tipo `movie`, confirmar el resultado con año y, si existe, `imdb_id` o `tmdb_id`, y recién entonces pedir los detalles por el ID de Watchmode. Registrar en el ledger la URL sin clave, el ID, las señales de match y los campos usados. Si hay homónimos, año discordante o identidad incierta, descartar la respuesta.
+- Puede aportar pistas para título original/localizado, año, duración, fecha global, géneros, IDs, tráiler y créditos. Verificar el tráiler, personas, taxonomía y cualquier fecha argentina con las fuentes y gates ya obligatorios antes de persistirlos. No usar `plot_overview`, `will_you_like_this` ni `review_summary` para la sinopsis o reseña: ambos textos siguen siendo originales y escritos desde cero.
+- No usar imágenes de Watchmode como fuente de póster ni sus fuentes de streaming como prueba de `releasePlatform`, `releasePlatforms`, `releaseDate` AR o cartelera. Una respuesta con `regions=AR` puede orientar una búsqueda, pero JustWatch AR y, si hace falta, la página oficial argentina siguen siendo la evidencia final. Las discrepancias se resuelven a favor de la fuente ya verificada y se anotan sin sobrescribirla.
+
 ## Taxonomía, medidores y veredicto
 
 - `category` es el carril principal; `genres` agrega géneros amplios; `subgenres` agrega chips finos. No cambiar `category` para forzar un medidor.
