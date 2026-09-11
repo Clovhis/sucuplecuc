@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-10T11:52:33.661Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-11T09:09:35.543Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -16,7 +16,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "El árbol mágico",
 		"releaseDate": "2026-09-17",
 		"videoUrl": "https://www.youtube.com/watch?v=PAUEwUhAjzg",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/l2Iv2JVEvzlDu7Hxm7ZCm9QprqR.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/3o7t1gF0wbXAtELCkIcYyPXoIxA.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10511-el-arbol-magico/"
 	},
 	{
@@ -90,13 +90,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=IXshQ5mv1K8",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4387-los-juegos-del-hambre-sinsajo-parte-1/"
-	},
-	{
-		"slug": "the-hunger-games-mockingjay-part-2",
-		"title": "Los Juegos del Hambre: Sinsajo Parte 2",
-		"releaseDate": "2026-10-15",
-		"videoUrl": "https://www.youtube.com/watch?v=SoKIqLEGhI0",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qVgLMRVNB5bHU0inmRa0ueShacN.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4591-los-juegos-del-hambre-sinsajo-parte-2/"
 	}
 ];
