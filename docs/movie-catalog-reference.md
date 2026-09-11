@@ -1,11 +1,13 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-10. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-11. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2120
+Total de peliculas: 2124
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
+| 2026 | ¡Llama a mi agente!: La película | llama-a-mi-agente-la-pelicula-2026 | Comedia | Netflix | +13 |
+| 2026 | ¿Por qué me casé, entonces? | por-que-me-case-entonces-2026 | Comedia | Netflix | +16 |
 | 2026 | 23 000 vidas | 23-000-vidas-2026 | Drama | Netflix | +16 |
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | Otras plataformas | +16 |
 | 2026 | 53 domingos | 53-domingos-2026 | Comedia | Netflix | +13 |
@@ -63,6 +65,7 @@ Total de peliculas: 2120
 | 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
 | 2026 | Elize: Sombras de una mujer | elize-sombras-de-una-mujer-2026 | Drama | Netflix | +16 |
 | 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Otras plataformas | +17 |
+| 2026 | Enfrentados: Marfil | enfrentados-marfil-2026 | Romance | Prime Video | +16 |
 | 2026 | Engendro | engendro-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Enola Holmes 3 | enola-holmes-3-2026 | Aventura | Netflix | +13 |
 | 2026 | Esto, aquello y todo lo demás | esto-aquello-y-todo-lo-demas-2026 | Drama | Netflix | ATP |
@@ -74,6 +77,7 @@ Total de peliculas: 2120
 | 2026 | Gintama, la película: Yoshiwara en llamas | gintama-la-pelicula-yoshiwara-en-llamas-2026 | Anime | Netflix | ATP |
 | 2026 | GOAT | goat-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Golden Kamuy: Asalto a la prisión de Abashiri | golden-kamuy-the-abashiri-prison-raid-2026 | Accion | Netflix | +16 |
+| 2026 | Gracias, equipo | gracias-equipo-2026 | Comedia | Netflix | +16 |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Hasta el final | hasta-el-final-2026 | Drama | Netflix | +16 |
 | 2026 | Heartstopper para siempre | heartstopper-para-siempre-2026 | Romance | Netflix | +16 |
@@ -167,7 +171,7 @@ Total de peliculas: 2120
 | 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine | +13 |
 | 2026 | Sunrise: El último amanecer | sunrise-el-ultimo-amanecer-2026 | Romance | Prime Video | +13 |
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Cine | ATP |
-| 2026 | Supergirl | supergirl-2026 | Accion | Otras plataformas | +13 |
+| 2026 | Supergirl | supergirl-2026 | Accion | HBO Max + Apple TV | +13 |
 | 2026 | Susana y Elvira: Sin plan B | susana-y-elvira-sin-plan-b-2026 | Comedia romántica | Netflix | +16 |
 | 2026 | Susurran tu nombre | susurran-tu-nombre-2026 | Thriller | Netflix | +16 |
 | 2026 | Swapped | swapped-2026 | Animacion | Netflix | ATP |
