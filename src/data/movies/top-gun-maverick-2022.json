@@ -3,11 +3,13 @@
   "title": "Top Gun: Maverick",
   "originalTitle": "Top Gun: Maverick",
   "year": 2022,
+  "releaseDate": "2026-09-09",
   "category": "Accion",
   "poster": "assets/posters/2022/top-gun-maverick-2022.webp",
   "screenshots": [],
   "trailerYoutubeId": "qSqVVswa420",
-  "releasePlatform": "Otras plataformas",
+  "releasePlatform": "Paramount Plus",
+  "releasePlatforms": ["Paramount Plus"],
   "director": "Joseph Kosinski",
   "mainCast": [
     "Tom Cruise",
@@ -15,6 +17,8 @@
     "Miles Teller"
   ],
   "productionCompany": "Paramount Pictures",
+  "isPremiere": true,
+  "premiereLabel": "ESTRENO",
   "verdict": "recomendada",
   "verdictLabel": "RECOMENDADA",
   "awards": {

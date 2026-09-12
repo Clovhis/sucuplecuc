@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-11T09:09:35.543Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-12T02:40:37.844Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -48,7 +48,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Vértigo 2",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yQXU4rgJ5LVCzn16SeIg34T35lV.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
 	},
 	{

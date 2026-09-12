@@ -7,7 +7,8 @@
 	"poster": "assets/posters/1974/the-godfather-part-ii-1974.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "tF_v4ZZkQWE",
-	"releasePlatform": "Netflix",
+	"releasePlatform": "Paramount Plus",
+	"releasePlatforms": ["Paramount Plus", "Netflix"],
 	"director": "Francis Ford Coppola",
 	"mainCast": [
 		"Al Pacino",
@@ -27,12 +28,14 @@
 			}
 		]
 	},
-	"releaseDate": "1974-12-20",
+	"releaseDate": "2026-09-08",
 	"genres": [
 		"Drama",
 		"Crimen"
 	],
 	"runtimeMinutes": 202,
+	"isPremiere": true,
+	"premiereLabel": "ESTRENO",
 	"review": "El padrino II no repite el golpe de la primera: lo desarma desde adentro, alternando el nacimiento de Vito Corleone como inmigrante con el aislamiento cada vez más feroz de Michael. Francis Ford Coppola usa ese espejo para mostrar que el poder puede fundar una familia y, al mismo tiempo, vaciarla por completo. Al Pacino hace de Michael una presencia helada y dolorosa; Robert De Niro compone a Vito con una serenidad que no imita a Brando. Dura mucho, pero cada línea temporal empuja a la otra. Es una secuela monumental porque encuentra una herida nueva.",
 	"editorial": {
 	"becauseYouLiked": [
