@@ -5,7 +5,7 @@ test('movie detail renders the verified production nationality with a flag', asy
 
 	expect(response?.ok()).toBeTruthy();
 	const sidebarNationality = page.locator('.movie-detail__taxonomy--nationality');
-	await expect(sidebarNationality.getByText('Nacionalidad', { exact: true })).toBeVisible();
+	await expect(sidebarNationality.getByText('Países productores', { exact: true })).toBeVisible();
 	await expect(sidebarNationality.locator('[data-country-code="MY"]')).toContainText('Malasia');
 	const malaysianFlag = sidebarNationality.locator('.movie-detail__taxonomy-nationality-flag');
 	await expect(malaysianFlag).toHaveAttribute('src', '/images/flags/my.svg');
@@ -28,3 +28,4 @@ test('co-productions retain each verified nationality', async ({ page }) => {
 	await expect(britishFlag).toHaveAttribute('src', '/images/flags/gb.svg');
 	expect(await britishFlag.evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
 });
+

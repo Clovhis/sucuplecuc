@@ -606,9 +606,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								)
 							}
 						</dl>
-						<dl class="movie-detail__taxonomy movie-detail__taxonomy--nationality" aria-label="Nacionalidad">
+						<dl class="movie-detail__taxonomy movie-detail__taxonomy--nationality" aria-label="Países productores">
 							<div class="movie-detail__taxonomy-item movie-detail__taxonomy-item--nationality">
-								<dt>Nacionalidad</dt>
+								<dt>Países productores</dt>
 								<dd class="movie-detail__taxonomy-nationality-list">
 									{movieCountries.map((country) => (
 										<span class="movie-detail__taxonomy-nationality" data-country-code={country.code}>
@@ -898,7 +898,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								<dd>{primaryGenreLabel}</dd>
 							</div>
 							<div class="movie-detail__credit-item movie-detail__credit-item--nationality">
-								<dt>Nacionalidad</dt>
+								<dt>Países productores</dt>
 								<dd class="movie-detail__nationality-list">
 									{movieCountries.map((country) => (
 										<span class="movie-detail__nationality" data-country-code={country.code}>
@@ -1023,3 +1023,4 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 
 <!-- Astro 6: keep ficha-detail browser logic in a typed local module so checks stay meaningful. -->
 <script src="../../scripts/movie-detail.ts"></script>
+
