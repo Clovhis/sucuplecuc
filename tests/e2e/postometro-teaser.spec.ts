@@ -1,26 +1,19 @@
 import { expect, test } from '@playwright/test';
 
-const characterSources = [
-	/cineposta-personaje-3d\.webp$/,
-	/cineposta-personaje-3d-cinefila\.webp$/,
-	/cineposta-personaje-3d-cineasta\.webp$/,
-	/cineposta-personaje-3d-remotera\.webp$/,
-	/cineposta-personaje-3d-cineclub\.webp$/,
-	/cineposta-personaje-3d-inclusiva\.webp$/,
-];
-
-test('Qué vemos hoy muestra la serie de personajes con el vaivén original', async ({ page }) => {
+test('Qué vemos hoy presenta un selector editorial y su ilustración grupal exclusiva', async ({ page }) => {
 	await page.goto('/', { waitUntil: 'domcontentloaded' });
 
 	const teaser = page.locator('#que-vemos-hoy');
-	const character = teaser.locator('[data-postometro-character]');
+	const illustration = teaser.locator('.postometro-teaser__art img');
 
-	await character.evaluate((image) => image.scrollIntoView({ block: 'center', behavior: 'auto' }));
-	await expect(character).toHaveAttribute('alt', '');
-	await expect(character).toHaveAttribute('data-postometro-character-index', /\d/);
-	await expect(character).toHaveJSProperty('complete', true);
+	await illustration.evaluate((image) => image.scrollIntoView({ block: 'center', behavior: 'auto' }));
+	await expect(illustration).toHaveAttribute('alt', '');
+	await expect(illustration).toHaveAttribute('src', /cineposta-que-vemos-hoy-grupo\.webp$/);
+	await expect(illustration).toHaveJSProperty('complete', true);
+	await expect(teaser.getByText('Selector de la noche')).toBeVisible();
+	await expect(teaser.getByRole('link', { name: 'Encontrá qué ver' })).toBeVisible();
 
-	const details = await character.evaluate((image) => {
+	const details = await illustration.evaluate((image) => {
 		const styles = getComputedStyle(image);
 		return {
 			animationName: styles.animationName,
@@ -29,31 +22,7 @@ test('Qué vemos hoy muestra la serie de personajes con el vaivén original', as
 		};
 	});
 
-	expect(details.animationName).toBe('postometro-teaser-sway');
+	expect(details.animationName).toBe('none');
 	expect(details.naturalWidth).toBeGreaterThan(0);
 	expect(details.naturalHeight).toBeGreaterThan(0);
-
-	const source = await character.getAttribute('src');
-	expect(characterSources.some((pattern) => pattern.test(source ?? ''))).toBeTruthy();
-});
-
-test('Qué vemos hoy cambia de personaje al volver a entrar', async ({ page }) => {
-	await page.goto('/', { waitUntil: 'domcontentloaded' });
-	const character = page.locator('#que-vemos-hoy [data-postometro-character]');
-	await expect(character).toHaveAttribute('data-postometro-character-index', /\d/);
-	const firstSource = await character.getAttribute('src');
-
-	await page.reload({ waitUntil: 'domcontentloaded' });
-	await expect(character).toHaveAttribute('data-postometro-character-index', /\d/);
-	const secondSource = await character.getAttribute('src');
-
-	expect(firstSource).not.toBe(secondSource);
-});
-
-test('Qué vemos hoy respeta la reducción de movimiento', async ({ page }) => {
-	await page.emulateMedia({ reducedMotion: 'reduce' });
-	await page.goto('/', { waitUntil: 'domcontentloaded' });
-
-	const character = page.locator('#que-vemos-hoy [data-postometro-character]');
-	await expect(character).toHaveCSS('animation-name', 'none');
 });

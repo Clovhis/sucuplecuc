@@ -10,42 +10,39 @@ interface Props {
 const { compact = false, className = '', id } = Astro.props as Props;
 const classes = ['postometro-teaser', compact ? 'postometro-teaser--compact' : '', className].filter(Boolean).join(' ');
 const titleId = compact ? 'postometro-teaser-title-compact' : 'postometro-teaser-title';
-const characterSources = [
-	'/images/home/cineposta-personaje-3d.webp',
-	'/images/home/cineposta-personaje-3d-cinefila.webp',
-	'/images/home/cineposta-personaje-3d-cineasta.webp',
-	'/images/home/cineposta-personaje-3d-remotera.webp',
-	'/images/home/cineposta-personaje-3d-cineclub.webp',
-	'/images/home/cineposta-personaje-3d-inclusiva.webp',
-];
 ---
 
 <section id={id} class={classes} aria-labelledby={titleId}>
 	<div class="postometro-teaser__art" aria-hidden="true">
 		<img
-			src={characterSources[0]}
+			src="/images/home/cineposta-que-vemos-hoy-grupo.webp"
 			alt=""
-			width="290"
-			height="328"
+			width="1536"
+			height="1024"
 			loading="lazy"
 			decoding="async"
-			data-postometro-character={!compact ? true : undefined}
-			data-postometro-character-sources={!compact ? JSON.stringify(characterSources) : undefined}
 		/>
 	</div>
 	<div class="postometro-teaser__copy">
+		<p class="postometro-teaser__eyebrow">Selector de la noche</p>
 		<h2 id={titleId} class="postometro-teaser__title">
 			¿Qué vemos hoy?
 		</h2>
 		<p class="postometro-teaser__lead">
-			¿No sabés qué mirar hoy? Armá la noche en 20 segundos: ánimo, tiempo, compañía, plataforma y cuánto peso querés bancarte.
+			Decinos cómo viene la noche y te acercamos una película que tenga sentido.
 		</p>
+		<ul class="postometro-teaser__steps" aria-label="Cómo funciona">
+			<li>Elegí el plan</li>
+			<li>Encontrá tu peli</li>
+		</ul>
 	</div>
 	<div class="postometro-teaser__actions">
+		<span class="postometro-teaser__time">En 20 segundos</span>
 		<a class="postometro-teaser__link" href={QUE_MIRO_HOY_PATH}>
-			Ver qué pinta
+			Encontrá qué ver
+			<svg aria-hidden="true" viewBox="0 0 16 16" focusable="false">
+				<path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" />
+			</svg>
 		</a>
 	</div>
 </section>
-
-{!compact && <script src="../scripts/postometro-character.ts"></script>}

@@ -30,7 +30,7 @@ import {
 	getWeeklyRecommendationManifest,
 	getWeeklyRecommendationPlatform,
 } from '../lib/weekly-recommendations';
-import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, QUE_MIRO_HOY_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
@@ -300,7 +300,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 		<nav class="home-mobile-nav" aria-label="Accesos rápidos en el sitio">
 			<a href="#catalogo-filtros">Catálogo</a>
 			<a href="#cinema-release-carousel">En cines</a>
-			<a href="#que-vemos-hoy">Qué vemos hoy</a>
+			<a href={QUE_MIRO_HOY_PATH}>Qué vemos hoy</a>
 			<a href="#comunidad-home">Comunidad</a>
 		</nav>
 		<HomePrimaryCatalog
