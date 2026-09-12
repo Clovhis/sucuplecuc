@@ -8,9 +8,15 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama", "Romance"],
-	"subgenres": ["RomCom"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Romance"
+	],
+	"subgenres": [
+		"RomCom"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"runtimeMinutes": 103,
 	"poster": "assets/posters/1995/mientras-dormias-1995.webp",
@@ -18,12 +24,31 @@
 	"trailerYoutubeId": "nsJxyUvkB_E",
 	"releasePlatform": "Disney Plus",
 	"director": "Jon Turteltaub",
-	"mainCast": ["Sandra Bullock", "Bill Pullman", "Peter Gallagher"],
+	"mainCast": [
+		"Sandra Bullock",
+		"Bill Pullman",
+		"Peter Gallagher"
+	],
 	"productionCompany": "Hollywood Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "BUENA",
-	"awards": {"wins": []},
-	"editorial": {"becauseYouLiked":["loco-y-estupido-amor-2011","el-plan-de-maggie-2016"],"related":["tootsie-1982","the-apartment-1960","tin-cup-1996","the-wedding-singer-1998"]},
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"loco-y-estupido-amor-2011",
+			"el-plan-de-maggie-2016"
+		],
+		"related": [
+			"tootsie-1982",
+			"the-apartment-1960",
+			"tin-cup-1996",
+			"the-wedding-singer-1998"
+		]
+	},
 	"review": "Mientras dormías entiende que una comedia romántica necesita algo más que una pareja simpática: necesita un mundo al que dé gusto volver. Bullock sostiene a Lucy con una mezcla precisa de torpeza y calidez, mientras Pullman aporta una melancolía tranquila que evita que Jack sea apenas el premio final. La confusión central hoy se ve más incómoda, pero el elenco familiar y el ritmo navideño siguen haciendo que la película abrace sin empalagar.",
-	"releasePlatforms": ["Disney Plus"]
+	"releasePlatforms": [
+		"Disney Plus"
+	]
 }

@@ -7,33 +7,44 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+18",
 	"category": "Drama",
-	"genres": ["Drama", "Thriller", "Crimen"],
+	"genres": [
+		"Drama",
+		"Thriller",
+		"Crimen"
+	],
 	"subgenres": [],
-	"country": "México",
+	"country": "MX",
 	"isArgentinian": false,
 	"poster": "assets/posters/2000/amores-perros-2000.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "_P29GF_NbDc",
 	"releasePlatform": "Netflix",
 	"director": "Alejandro González Iñárritu",
-	"mainCast": ["Emilio Echevarría", "Gael Garcia Bernal", "Goya Toledo", "Álvaro Guerrero"],
+	"mainCast": [
+		"Emilio Echevarría",
+		"Gael Garcia Bernal",
+		"Goya Toledo",
+		"Álvaro Guerrero"
+	],
 	"productionCompany": "Zeta Film, AltaVista Films",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 154,
 	"editorial": {
-	"becauseYouLiked": [
-		"21-gramos-2003",
-		"el-poder-de-la-justicia-1997"
-	],
-	"related": [
-		"fight-club-1999",
-		"elephant-2003",
-		"tiempo-de-matar-1996",
-		"el-cliente-1994"
-	]
-},
+		"becauseYouLiked": [
+			"21-gramos-2003",
+			"el-poder-de-la-justicia-1997"
+		],
+		"related": [
+			"fight-club-1999",
+			"elephant-2003",
+			"tiempo-de-matar-1996",
+			"el-cliente-1994"
+		]
+	},
 	"review": "Un choque de autos abre una herida que Amores perros no deja cerrar, y Alejandro González Iñárritu organiza tres historias alrededor de esa violencia como si fueran vasos comunicantes. La cámara corre, se pega a los cuerpos y no suaviza las peleas de perros ni el daño que dejan en las personas. Gael García Bernal y Goya Toledo encuentran matices dentro de personajes que podrían quedar atrapados en el melodrama, mientras la estructura salta en el tiempo sin perder el pulso. La recepción la reconoció como un debut de enorme energía; también es una película que puede resultar demasiado cruel para ciertos espectadores.",
 	"isPremiere": false,
 	"premiereLabel": ""

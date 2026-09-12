@@ -7,9 +7,13 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Animación",
-	"genres": ["Animación", "Aventura", "Familiar"],
+	"genres": [
+		"Animación",
+		"Aventura",
+		"Familiar"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"runtimeMinutes": 100,
 	"poster": "assets/posters/2019/toy-story-4-2019.webp",
@@ -17,22 +21,27 @@
 	"trailerYoutubeId": "c-m62S9xrZo",
 	"releasePlatform": "Disney Plus",
 	"director": "Josh Cooley",
-	"mainCast": ["Tom Hanks", "Tim Allen"],
+	"mainCast": [
+		"Tom Hanks",
+		"Tim Allen"
+	],
 	"productionCompany": "Pixar Animation Studios, Walt Disney Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "BUENA",
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"abominable-2019",
-		"la-gran-aventura-lego-2-2019"
-	],
-	"related": [
-		"la-vida-secreta-de-tus-mascotas-2-2019",
-		"isla-de-perros-2018",
-		"los-croods-una-nueva-era-2020",
-		"los-increibles-2-2018"
-	]
-},
+		"becauseYouLiked": [
+			"abominable-2019",
+			"la-gran-aventura-lego-2-2019"
+		],
+		"related": [
+			"la-vida-secreta-de-tus-mascotas-2-2019",
+			"isla-de-perros-2018",
+			"los-croods-una-nueva-era-2020",
+			"los-increibles-2-2018"
+		]
+	},
 	"review": "Toy Story 4 llega después de una despedida que parecía definitiva y encuentra su razón en una pregunta más íntima: qué pasa cuando cuidar a otros deja de ser la única forma de sentirse necesario. Josh Cooley arma una aventura con feria, tormenta y juguetes nuevos, pero el centro está en Woody y en la posibilidad de elegir un camino propio. Tom Hanks mantiene la calidez del personaje sin convertirlo en estatua, y Tim Allen conserva el nervio cómico de Buzz. No tiene la sorpresa de la tercera, aunque su epílogo es coherente y emotivo."
 }

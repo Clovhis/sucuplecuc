@@ -4,7 +4,9 @@
 	"originalTitle": "Turtles All the Way Down",
 	"year": 2024,
 	"category": "Drama",
-	"subgenres": ["Coming of Age"],
+	"subgenres": [
+		"Coming of Age"
+	],
 	"poster": "assets/posters/2024/turtles-all-the-way-down-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "9XBFNmV0Bzc",
@@ -23,18 +25,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"c-mon-c-mon-siempre-adelante-2021",
-		"los-domingos-2025"
-	],
-	"related": [
-		"fue-la-mano-de-dios-2021",
-		"lady-bird-2017",
-		"boyhood-2014",
-		"juno-embarazada-por-accidente-2007"
-	]
-},
-  "synopsis": "Aza, una adolescente con trastorno obsesivo-compulsivo, retoma contacto con el hijo de un multimillonario desaparecido mientras intenta seguir una pista por la recompensa sin quedar atrapada en sus pensamientos.",
+		"becauseYouLiked": [
+			"c-mon-c-mon-siempre-adelante-2021",
+			"los-domingos-2025"
+		],
+		"related": [
+			"fue-la-mano-de-dios-2021",
+			"lady-bird-2017",
+			"boyhood-2014",
+			"juno-embarazada-por-accidente-2007"
+		]
+	},
+	"synopsis": "Aza, una adolescente con trastorno obsesivo-compulsivo, retoma contacto con el hijo de un multimillonario desaparecido mientras intenta seguir una pista por la recompensa sin quedar atrapada en sus pensamientos.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-28"
+	"reviewPublishedAt": "2026-02-28",
+	"country": "US",
+	"isArgentinian": false
 }

@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-09-11",
 	"audienceRating": "+16",
 	"category": "Romance",
-	"genres": ["Romance", "Drama", "Thriller"],
+	"genres": [
+		"Romance",
+		"Drama",
+		"Thriller"
+	],
 	"subgenres": [],
-	"country": "España",
+	"country": "ES",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/enfrentados-marfil-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "kW46T6F_edo",
 	"releasePlatform": "Prime Video",
 	"director": "Óscar Pedraza",
-	"mainCast": ["Ester Expósito", "Hugo Diego García", "Pablo Molinero", "Eric Masip"],
+	"mainCast": [
+		"Ester Expósito",
+		"Hugo Diego García",
+		"Pablo Molinero",
+		"Eric Masip"
+	],
 	"productionCompany": "Amazon MGM Studios",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -26,8 +35,16 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["your-fault-london-2026", "zona-de-riesgo-2025"],
-		"related": ["culpable-2021", "peligrosamente-juntos-1986", "un-romance-peligroso-1998", "afterburn-zona-cero-2025"]
+		"becauseYouLiked": [
+			"your-fault-london-2026",
+			"zona-de-riesgo-2025"
+		],
+		"related": [
+			"culpable-2021",
+			"peligrosamente-juntos-1986",
+			"un-romance-peligroso-1998",
+			"afterburn-zona-cero-2025"
+		]
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",

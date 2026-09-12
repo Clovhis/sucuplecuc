@@ -8,16 +8,28 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Accion",
-	"genres": ["Accion", "Crimen", "Comedia"],
-	"subgenres": ["Heist"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Accion",
+		"Crimen",
+		"Comedia"
+	],
+	"subgenres": [
+		"Heist"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2004/la-nueva-gran-estafa-2004.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "k9uhRSLMORw",
 	"releasePlatform": "HBO Max",
 	"director": "Steven Soderbergh",
-	"mainCast": ["George Clooney", "Brad Pitt", "Matt Damon", "Catherine Zeta-Jones", "Julia Roberts"],
+	"mainCast": [
+		"George Clooney",
+		"Brad Pitt",
+		"Matt Damon",
+		"Catherine Zeta-Jones",
+		"Julia Roberts"
+	],
 	"productionCompany": "Warner Bros. Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -25,16 +37,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"fast-five-2011",
-		"el-robo-del-siglo-2020"
-	],
-	"related": [
-		"un-romance-peligroso-1998",
-		"zona-de-riesgo-2025",
-		"snatch-cerdos-y-diamantes-2000",
-		"la-estafa-maestra-2003"
-	]
-},
+		"becauseYouLiked": [
+			"fast-five-2011",
+			"el-robo-del-siglo-2020"
+		],
+		"related": [
+			"un-romance-peligroso-1998",
+			"zona-de-riesgo-2025",
+			"snatch-cerdos-y-diamantes-2000",
+			"la-estafa-maestra-2003"
+		]
+	},
 	"review": "La segunda estafa cambia Las Vegas por Europa y apuesta más fuerte por el juego de estilos que por la claridad del golpe. Soderbergh filma hoteles, estaciones y museos con una elegancia constante, mientras la banda vuelve a funcionar como una reunión de amigos con talentos muy específicos. No todos los trucos tienen el mismo peso y el relato se permite caprichos, pero Clooney, Pitt, Damon y compañía mantienen la película en movimiento. Es una secuela irregular, simpática y consciente de que su mayor atracción es el elenco."
 }

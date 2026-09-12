@@ -10,7 +10,7 @@
 		"Ciencia ficción",
 		"Fantasía"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/1977/star-wars-episode-iv-a-new-hope-1977.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "vZ734NWnAHA",
@@ -36,19 +36,20 @@
 	},
 	"runtimeMinutes": 121,
 	"editorial": {
-	"becauseYouLiked": [
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"e-t-the-extra-terrestrial-1982"
-	],
-	"related": [
-		"avatar-the-way-of-water-2022",
-		"amos-del-universo-2026",
-		"back-to-the-future-1985",
-		"rogue-one-a-star-wars-story-2016"
-	]
-},
+		"becauseYouLiked": [
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"e-t-the-extra-terrestrial-1982"
+		],
+		"related": [
+			"avatar-the-way-of-water-2022",
+			"amos-del-universo-2026",
+			"back-to-the-future-1985",
+			"rogue-one-a-star-wars-story-2016"
+		]
+	},
 	"review": "Star Wars: Episode IV - A New Hope funciona porque George Lucas toma aventuras espaciales, westerns y cuentos de héroes, y los mezcla con una claridad que todavía da gusto ver. La dirección no se enreda en explicar cada planeta: presenta a Luke, Han y Leia con dos gestos y deja que el viaje los defina. Ford aporta cinismo, Fisher carácter y Hamill la inocencia necesaria para que el relato avance. Algunos efectos y diálogos hoy tienen una ingenuidad evidente, pero el ritmo, las maquetas y la música de Williams siguen haciendo que la aventura despegue de inmediato.",
 	"synopsis": "Ambientada en una galaxia ficticia bajo el gobierno del tiránico Imperio Galáctico, la película sigue un movimiento de resistencia, llamado Alianza Rebelde, que tiene como objetivo destruir el arma definitiva del Imperio, la Estrella de la Muerte.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

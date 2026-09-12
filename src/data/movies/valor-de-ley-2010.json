@@ -8,17 +8,29 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Western", "Aventura"],
+	"genres": [
+		"Drama",
+		"Western",
+		"Aventura"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2010/valor-de-ley-2010.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "Q5fEgKj9QNs",
 	"releasePlatform": "Paramount Plus",
-	"releasePlatforms": ["Paramount Plus", "Apple TV"],
+	"releasePlatforms": [
+		"Paramount Plus",
+		"Apple TV"
+	],
 	"director": "Ethan Coen, Joel Coen",
-	"mainCast": ["Jeff Bridges", "Hailee Steinfeld", "Matt Damon", "Josh Brolin"],
+	"mainCast": [
+		"Jeff Bridges",
+		"Hailee Steinfeld",
+		"Matt Damon",
+		"Josh Brolin"
+	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
@@ -26,17 +38,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"no-country-for-old-men-2007",
-		"el-renacido-2015"
-	],
-	"related": [
-		"la-voluntad-de-dios-2026",
-		"django-unchained-2012",
-		"la-costa-mosquito-1986",
-		"mision-rescate-2015"
-	]
-},
+		"becauseYouLiked": [
+			"no-country-for-old-men-2007",
+			"el-renacido-2015"
+		],
+		"related": [
+			"la-voluntad-de-dios-2026",
+			"django-unchained-2012",
+			"la-costa-mosquito-1986",
+			"mision-rescate-2015"
+		]
+	},
 	"review": "Los hermanos Coen filman este western como una historia de carácter, no como una carrera hacia el duelo final. Hailee Steinfeld sostiene a Mattie con una inteligencia seca y una voluntad que no necesita discursos, mientras Jeff Bridges convierte a Rooster Cogburn en un hombre brutal, borracho y sorprendentemente protector. Los paisajes tienen una belleza fría y el humor aparece en lugares incómodos, sin pinchar la tensión. La película avanza con paciencia, pero cada conversación va construyendo una relación que termina pesando más que la venganza.",
 	"runtimeMinutes": 110
 }

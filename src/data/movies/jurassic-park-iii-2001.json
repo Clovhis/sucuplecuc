@@ -1,47 +1,48 @@
 {
-  "slug": "jurassic-park-iii-2001",
-  "title": "Jurassic Park III",
-  "originalTitle": "Jurassic Park III",
-  "year": 2001,
-  "releaseDate": "2001-07-18",
-  "category": "Aventura",
-  "genres": [
-    "Misterio & Suspense",
-    "Acción & Aventura",
-    "Ciencia ficción"
-  ],
-  "country": "Estados Unidos",
-  "poster": "assets/posters/2001/jurassic-park-iii-2001.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "Tjp3BA9e7BI",
-  "releasePlatform": "Prime Video",
-  "director": "Joe Johnston",
-  "mainCast": [
-    "Sam Neill",
-    "William H. Macy",
-    "Téa Leoni"
-  ],
-  "productionCompany": "Amblin Entertainment, Universal Pictures",
-  "verdict": "no_recomendada",
-  "verdictLabel": "MUY FLOJA",
-  "awards": {
-    "wins": []
-  },
-  "runtimeMinutes": 92,
-  "editorial": {
-	"becauseYouLiked": [
-		"war-of-the-worlds-2005",
-		"terminator-dark-fate-2019"
+	"slug": "jurassic-park-iii-2001",
+	"title": "Jurassic Park III",
+	"originalTitle": "Jurassic Park III",
+	"year": 2001,
+	"releaseDate": "2001-07-18",
+	"category": "Aventura",
+	"genres": [
+		"Misterio & Suspense",
+		"Acción & Aventura",
+		"Ciencia ficción"
 	],
-	"related": [
-		"matrix-reloaded-2003",
-		"the-terminator-1984",
-		"terminator-3-rise-of-the-machines-2003",
-		"terminator-2-judgment-day-1991"
-	]
-},
-  "review": "Jurassic Park III abandona la ambición épica y se concentra en llevar a Alan Grant otra vez a una isla llena de dinosaurios, esta vez para encontrar a un chico perdido. Joe Johnston dirige con un ritmo directo y no se demora demasiado en explicaciones, algo que le viene bien a una película de apenas hora y media. Sam Neill retoma al personaje con la seriedad necesaria y los animales siguen teniendo un par de apariciones efectivas, en especial cuando el peligro se siente cerca. La trama familiar es básica, los secundarios no tienen mucho para hacer y la resolución llega demasiado rápido. Como aventura de supervivencia zafa; como continuación, tiene menos imaginación que las anteriores.",
-  "synopsis": "El paleontólogo Alan Grant acepta sobrevolar Isla Sorna, aunque la excursión termina en un aterrizaje forzoso. Atrapado entre dinosaurios y junto a una pareja que busca a su hijo desaparecido, deberá encontrar una salida antes de que sea tarde.",
-  "audienceRating": "+13",
-  "reviewPublishedAt": "2026-03-09"
+	"country": "US",
+	"poster": "assets/posters/2001/jurassic-park-iii-2001.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "Tjp3BA9e7BI",
+	"releasePlatform": "Prime Video",
+	"director": "Joe Johnston",
+	"mainCast": [
+		"Sam Neill",
+		"William H. Macy",
+		"Téa Leoni"
+	],
+	"productionCompany": "Amblin Entertainment, Universal Pictures",
+	"verdict": "no_recomendada",
+	"verdictLabel": "MUY FLOJA",
+	"awards": {
+		"wins": []
+	},
+	"runtimeMinutes": 92,
+	"editorial": {
+		"becauseYouLiked": [
+			"war-of-the-worlds-2005",
+			"terminator-dark-fate-2019"
+		],
+		"related": [
+			"matrix-reloaded-2003",
+			"the-terminator-1984",
+			"terminator-3-rise-of-the-machines-2003",
+			"terminator-2-judgment-day-1991"
+		]
+	},
+	"review": "Jurassic Park III abandona la ambición épica y se concentra en llevar a Alan Grant otra vez a una isla llena de dinosaurios, esta vez para encontrar a un chico perdido. Joe Johnston dirige con un ritmo directo y no se demora demasiado en explicaciones, algo que le viene bien a una película de apenas hora y media. Sam Neill retoma al personaje con la seriedad necesaria y los animales siguen teniendo un par de apariciones efectivas, en especial cuando el peligro se siente cerca. La trama familiar es básica, los secundarios no tienen mucho para hacer y la resolución llega demasiado rápido. Como aventura de supervivencia zafa; como continuación, tiene menos imaginación que las anteriores.",
+	"synopsis": "El paleontólogo Alan Grant acepta sobrevolar Isla Sorna, aunque la excursión termina en un aterrizaje forzoso. Atrapado entre dinosaurios y junto a una pareja que busca a su hijo desaparecido, deberá encontrar una salida antes de que sea tarde.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

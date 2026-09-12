@@ -8,32 +8,44 @@
 	"reviewPublishedAt": "2026-08-14",
 	"audienceRating": "+13",
 	"category": "Anime",
-	"genres": ["Anime", "Animacion", "Accion", "Fantasia"],
+	"genres": [
+		"Anime",
+		"Animacion",
+		"Accion",
+		"Fantasia"
+	],
 	"subgenres": [],
-	"country": "Japón",
+	"country": "JP",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/la-heroina-del-lazo-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "oJL-llloz24",
 	"director": "Yuki Igarashi",
-	"mainCast": ["Saaya", "Seiran Kobayashi", "Koki Uchiyama", "Mayumi Shintani"],
+	"mainCast": [
+		"Saaya",
+		"Seiran Kobayashi",
+		"Koki Uchiyama",
+		"Mayumi Shintani"
+	],
 	"productionCompany": "OUTLINE y Twin Engine",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 112,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"overlord-el-reino-sagrado-2024",
-		"guardianes-de-la-noche-la-fortaleza-infinita-2025"
-	],
-	"related": [
-		"jujutsu-kaisen-0-2021",
-		"wolfwalkers-espiritu-de-lobo-2020",
-		"amos-del-universo-2026",
-		"gintama-la-pelicula-yoshiwara-en-llamas-2026"
-	]
-},
+		"becauseYouLiked": [
+			"overlord-el-reino-sagrado-2024",
+			"guardianes-de-la-noche-la-fortaleza-infinita-2025"
+		],
+		"related": [
+			"jujutsu-kaisen-0-2021",
+			"wolfwalkers-espiritu-de-lobo-2020",
+			"amos-del-universo-2026",
+			"gintama-la-pelicula-yoshiwara-en-llamas-2026"
+		]
+	},
 	"review": "La heroína del lazo tiene una idea visual de esas que entran rápido: un objeto doméstico, una identidad en formación y una ciudad que necesita una figura capaz de plantarse. Yuki Igarashi le da a la aventura un pulso liviano, con colores vivos y una energía de animé juvenil que no se avergüenza de ser directa.\n\nNo todo el desarrollo tiene la misma inventiva y algunos conflictos se resuelven con demasiada comodidad, pero el encanto está en la mezcla de fantasía, compañerismo y acción limpia. Es una película de origen simpática, hecha para dejar ganas de seguir viendo qué puede hacer su heroína cuando el lazo deje de ser sólo una promesa.",
 	"releasePlatform": "Netflix",
 	"isPremiere": true,

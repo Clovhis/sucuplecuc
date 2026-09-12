@@ -11,7 +11,7 @@
 		"Aventura"
 	],
 	"subgenres": [],
-	"country": "Francia, Alemania, España",
+	"country": "FR, ES",
 	"audienceRating": "+13",
 	"runtimeMinutes": 112,
 	"poster": "assets/posters/1995/la-ciudad-de-los-ninos-perdidos-1995.webp",
@@ -34,17 +34,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"e-t-the-extra-terrestrial-1982",
-		"star-wars-episode-vii-the-force-awakens-2015"
-	],
-	"related": [
-		"avatar-the-way-of-water-2022",
-		"una-serie-de-eventos-desafortunados-2004",
-		"the-wizard-of-oz-1939",
-		"star-wars-episode-ii-attack-of-the-clones-2002"
-	]
-},
+		"becauseYouLiked": [
+			"e-t-the-extra-terrestrial-1982",
+			"star-wars-episode-vii-the-force-awakens-2015"
+		],
+		"related": [
+			"avatar-the-way-of-water-2022",
+			"una-serie-de-eventos-desafortunados-2004",
+			"the-wizard-of-oz-1939",
+			"star-wars-episode-ii-attack-of-the-clones-2002"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

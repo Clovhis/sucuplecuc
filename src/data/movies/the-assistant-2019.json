@@ -24,17 +24,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 124,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-reverendo-2017",
-		"funny-people-2009"
-	],
-	"related": [
-		"climax-2018",
-		"la-noche-de-12-anos-2018",
-		"estoy-pensando-en-dejarlo-2020",
-		"the-meyerowitz-stories-2017"
-	]
-},
+		"becauseYouLiked": [
+			"el-reverendo-2017",
+			"funny-people-2009"
+		],
+		"related": [
+			"climax-2018",
+			"la-noche-de-12-anos-2018",
+			"estoy-pensando-en-dejarlo-2020",
+			"the-meyerowitz-stories-2017"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -44,5 +44,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

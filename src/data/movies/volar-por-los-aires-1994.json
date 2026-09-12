@@ -8,17 +8,29 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Accion",
-	"genres": ["Accion", "Thriller", "Crimen"],
+	"genres": [
+		"Accion",
+		"Thriller",
+		"Crimen"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1994/volar-por-los-aires-1994.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "f3N-e9BLZFo",
 	"releasePlatform": "Apple TV",
-	"releasePlatforms": ["Apple TV", "Otras plataformas"],
+	"releasePlatforms": [
+		"Apple TV",
+		"Otras plataformas"
+	],
 	"director": "Stephen Hopkins",
-	"mainCast": ["Jeff Bridges", "Tommy Lee Jones", "Lloyd Bridges", "Forest Whitaker"],
+	"mainCast": [
+		"Jeff Bridges",
+		"Tommy Lee Jones",
+		"Lloyd Bridges",
+		"Forest Whitaker"
+	],
 	"productionCompany": "Metro-Goldwyn-Mayer",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -26,17 +38,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"jungla-de-cristal-la-venganza-1995",
-		"hard-boiled-1992"
-	],
-	"related": [
-		"identidad-desconocida-2002",
-		"una-noche-para-sobrevivir-2015",
-		"el-fuego-de-la-venganza-2004",
-		"la-supremacia-de-bourne-2004"
-	]
-},
+		"becauseYouLiked": [
+			"jungla-de-cristal-la-venganza-1995",
+			"hard-boiled-1992"
+		],
+		"related": [
+			"identidad-desconocida-2002",
+			"una-noche-para-sobrevivir-2015",
+			"el-fuego-de-la-venganza-2004",
+			"la-supremacia-de-bourne-2004"
+		]
+	},
 	"review": "Volar por los aires es un thriller de los noventa que se toma muy en serio sus explosiones y su duelo de especialistas. Jeff Bridges le da peso al experto que intenta reconstruir su vida mientras Tommy Lee Jones disfruta cada gesto de villano metódico. La película tiene oficio, escenarios potentes y una tensión que funciona cuando se concentra en el trabajo con explosivos. También acumula coincidencias, diálogos grandilocuentes y una venganza demasiado ordenada. Es un entretenimiento de acción sólido, aunque lejos de ser una joya escondida.",
 	"runtimeMinutes": 121
 }

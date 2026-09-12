@@ -8,39 +8,63 @@
 	"reviewPublishedAt": "2026-08-10",
 	"audienceRating": "+18",
 	"category": "Crimen",
-	"genres": ["Crimen", "Drama", "Comedia", "Misterio & Suspense"],
+	"genres": [
+		"Crimen",
+		"Drama",
+		"Comedia",
+		"Misterio & Suspense"
+	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos",
+	"country": "GB, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1996/fargo-secuestro-voluntario-1996.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "ju75Sd4yAZw",
 	"releasePlatform": "Prime Video",
-	"releasePlatforms": ["Prime Video", "Apple TV"],
+	"releasePlatforms": [
+		"Prime Video",
+		"Apple TV"
+	],
 	"director": "Joel Coen, Ethan Coen",
-	"mainCast": ["Frances McDormand", "William H. Macy", "Steve Buscemi", "Peter Stormare", "Harve Presnell"],
+	"mainCast": [
+		"Frances McDormand",
+		"William H. Macy",
+		"Steve Buscemi",
+		"Peter Stormare",
+		"Harve Presnell"
+	],
 	"productionCompany": "Gramercy Pictures, PolyGram Filmed Entertainment",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
 	"awards": {
 		"wins": [
-			{ "award": "oscar", "category": "Mejor actriz", "year": 1997, "recipient": "Frances McDormand" },
-			{ "award": "oscar", "category": "Mejor guion original", "year": 1997, "recipient": "Ethan Coen, Joel Coen" }
+			{
+				"award": "oscar",
+				"category": "Mejor actriz",
+				"year": 1997,
+				"recipient": "Frances McDormand"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor guion original",
+				"year": 1997,
+				"recipient": "Ethan Coen, Joel Coen"
+			}
 		]
 	},
 	"runtimeMinutes": 98,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-gran-lebowski-1998",
-		"vicio-propio-2014"
-	],
-	"related": [
-		"punales-por-la-espalda-2019",
-		"el-demonio-vestido-de-azul-1995",
-		"los-angeles-al-desnudo-1997",
-		"rio-mistico-2003"
-	]
-},
+		"becauseYouLiked": [
+			"el-gran-lebowski-1998",
+			"vicio-propio-2014"
+		],
+		"related": [
+			"punales-por-la-espalda-2019",
+			"el-demonio-vestido-de-azul-1995",
+			"los-angeles-al-desnudo-1997",
+			"rio-mistico-2003"
+		]
+	},
 	"review": "Los hermanos Coen encuentran una forma rarísima de mezclar brutalidad y cortesía sin que una borre a la otra. La nieve vuelve chiquita a la gente, pero no achica sus ambiciones: William H. Macy actúa la desesperación de un hombre mediocre que cree tener un plan, mientras Steve Buscemi y Peter Stormare convierten el fracaso en una amenaza concreta. En el centro, Frances McDormand compone a Marge con una calma inteligente que nunca necesita subrayarse. El humor es seco, la violencia cae de golpe y el ritmo deja que cada silencio acumule un poquito más de desastre.",
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO"

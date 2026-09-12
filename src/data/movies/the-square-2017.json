@@ -25,17 +25,17 @@
 	"verdictLabel": "ZAFA",
 	"runtimeMinutes": 151,
 	"editorial": {
-	"becauseYouLiked": [
-		"zelig-1983",
-		"what-we-do-in-the-shadows-2014"
-	],
-	"related": [
-		"el-triangulo-de-la-tristeza-2022",
-		"very-important-perros-2000",
-		"this-is-spinal-tap-1984",
-		"take-the-money-and-run-1969"
-	]
-},
+		"becauseYouLiked": [
+			"zelig-1983",
+			"what-we-do-in-the-shadows-2014"
+		],
+		"related": [
+			"el-triangulo-de-la-tristeza-2022",
+			"very-important-perros-2000",
+			"this-is-spinal-tap-1984",
+			"take-the-money-and-run-1969"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -45,5 +45,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
-	"country": "Alemania"
+	"country": "DE",
+	"isArgentinian": false
 }

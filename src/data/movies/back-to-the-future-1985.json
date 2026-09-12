@@ -10,7 +10,7 @@
 		"Comedia",
 		"Ciencia ficción"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/1985/back-to-the-future-1985.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "WRrCVyT09ow",
@@ -39,19 +39,20 @@
 	},
 	"runtimeMinutes": 116,
 	"editorial": {
-	"becauseYouLiked": [
-		"e-t-the-extra-terrestrial-1982",
-		"star-wars-episode-iv-a-new-hope-1977"
-	],
-	"related": [
-		"rogue-one-a-star-wars-story-2016",
-		"star-wars-episode-vi-return-of-the-jedi-1983",
-		"everything-everywhere-all-at-once-2022",
-		"star-wars-episode-v-the-empire-strikes-back-1980"
-	]
-},
+		"becauseYouLiked": [
+			"e-t-the-extra-terrestrial-1982",
+			"star-wars-episode-iv-a-new-hope-1977"
+		],
+		"related": [
+			"rogue-one-a-star-wars-story-2016",
+			"star-wars-episode-vi-return-of-the-jedi-1983",
+			"everything-everywhere-all-at-once-2022",
+			"star-wars-episode-v-the-empire-strikes-back-1980"
+		]
+	},
 	"review": "Back to the Future tiene una premisa fantástica, pero Robert Zemeckis la hace funcionar porque cada detalle vuelve después con una consecuencia clara. El viaje de Marty a 1955 mezcla comedia adolescente, ciencia ficción y romance familiar sin perder el hilo ni un minuto. Michael J. Fox lleva el ritmo con naturalidad y Christopher Lloyd convierte a Doc Brown en un torbellino entrañable. La película es muy popular, sí, pero también está construida con una precisión admirable: presenta, complica y paga sus ideas sin relleno. Quizás su mirada de época se note en algunos chistes, pero sigue siendo una aventura irresistible.",
 	"synopsis": "En 1985, Marty McFly viaja accidentalmente a 1955 en un DeLorean construido por Doc Brown. Allí altera el primer encuentro de sus padres y tiene que arreglar la línea temporal antes de desaparecer y poder volver a su propia época.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

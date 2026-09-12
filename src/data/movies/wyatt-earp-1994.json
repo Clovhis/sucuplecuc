@@ -1,38 +1,49 @@
 {
-  "slug": "wyatt-earp-1994",
-  "title": "Wyatt Earp",
-  "originalTitle": "Wyatt Earp",
-  "synopsis": "Wyatt Earp crece entre la disciplina familiar y la violencia de la frontera hasta convertirse en sheriff. La película recorre sus decisiones, amistades y pérdidas mientras el hombre que busca imponer la ley termina quedando unido para siempre a la leyenda de Tombstone.",
-  "year": 1994,
-  "releaseDate": "1994-06-24",
-  "reviewPublishedAt": "2026-08-24",
-  "audienceRating": "+13",
-  "category": "Western",
-  "genres": ["Western", "Drama", "Historia"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/1994/wyatt-earp-1994.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "3deAQVbaqlY",
-  "releasePlatform": "Apple TV",
-  "director": "Lawrence Kasdan",
-  "mainCast": ["Kevin Costner", "Dennis Quaid", "Gene Hackman", "Michael Madsen"],
-  "productionCompany": "Warner Bros. Pictures, Tig Productions",
-  "verdict": "zafa",
-  "verdictLabel": "PASABLE",
-  "awards": {"wins": []},
-  "editorial": {
-	"becauseYouLiked": [
-		"silverado-1985",
-		"pacto-de-justicia-2003"
+	"slug": "wyatt-earp-1994",
+	"title": "Wyatt Earp",
+	"originalTitle": "Wyatt Earp",
+	"synopsis": "Wyatt Earp crece entre la disciplina familiar y la violencia de la frontera hasta convertirse en sheriff. La película recorre sus decisiones, amistades y pérdidas mientras el hombre que busca imponer la ley termina quedando unido para siempre a la leyenda de Tombstone.",
+	"year": 1994,
+	"releaseDate": "1994-06-24",
+	"reviewPublishedAt": "2026-08-24",
+	"audienceRating": "+13",
+	"category": "Western",
+	"genres": [
+		"Western",
+		"Drama",
+		"Historia"
 	],
-	"related": [
-		"unforgiven-1992",
-		"el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007",
-		"hasta-que-llego-su-hora-1968",
-		"el-bueno-el-feo-y-el-malo-1966"
-	]
-},
-  "review": "Wyatt Earp quiere ser una biografía de frontera y una película de escala monumental al mismo tiempo. El resultado tiene una duración exigente, pero también una atención poco común a los años que convierten a un hombre en una figura pública. Costner interpreta a Earp como alguien que aprende a endurecerse mientras pierde partes de sí mismo, y Dennis Quaid le da a Doc Holliday una energía febril que rompe la solemnidad. El relato es irregular, aunque sus duelos, paisajes y vínculos familiares tienen verdadero peso."
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/1994/wyatt-earp-1994.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "3deAQVbaqlY",
+	"releasePlatform": "Apple TV",
+	"director": "Lawrence Kasdan",
+	"mainCast": [
+		"Kevin Costner",
+		"Dennis Quaid",
+		"Gene Hackman",
+		"Michael Madsen"
+	],
+	"productionCompany": "Warner Bros. Pictures, Tig Productions",
+	"verdict": "zafa",
+	"verdictLabel": "PASABLE",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"silverado-1985",
+			"pacto-de-justicia-2003"
+		],
+		"related": [
+			"unforgiven-1992",
+			"el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007",
+			"hasta-que-llego-su-hora-1968",
+			"el-bueno-el-feo-y-el-malo-1966"
+		]
+	},
+	"review": "Wyatt Earp quiere ser una biografía de frontera y una película de escala monumental al mismo tiempo. El resultado tiene una duración exigente, pero también una atención poco común a los años que convierten a un hombre en una figura pública. Costner interpreta a Earp como alguien que aprende a endurecerse mientras pierde partes de sí mismo, y Dennis Quaid le da a Doc Holliday una energía febril que rompe la solemnidad. El relato es irregular, aunque sus duelos, paisajes y vínculos familiares tienen verdadero peso."
 }

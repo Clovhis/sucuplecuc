@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Comedia", "Romance", "Ciencia ficción"],
+	"genres": [
+		"Comedia",
+		"Romance",
+		"Ciencia ficción"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1994/junior-1994.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "49HEz0kfiJ0",
 	"releasePlatform": "Apple TV",
 	"director": "Ivan Reitman",
-	"mainCast": ["Emma Thompson", "Arnold Schwarzenegger", "Danny DeVito", "Frank Langella"],
+	"mainCast": [
+		"Emma Thompson",
+		"Arnold Schwarzenegger",
+		"Danny DeVito",
+		"Frank Langella"
+	],
 	"productionCompany": "Universal Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,16 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"poor-things-2023",
-		"mucho-ruido-y-pocas-nueces-1993"
-	],
-	"related": [
-		"los-amigos-de-peter-1992",
-		"love-actually-2003",
-		"el-turista-accidental-1988",
-		"buena-suerte-leo-grande-2022"
-	]
-},
+		"becauseYouLiked": [
+			"poor-things-2023",
+			"mucho-ruido-y-pocas-nueces-1993"
+		],
+		"related": [
+			"los-amigos-de-peter-1992",
+			"love-actually-2003",
+			"el-turista-accidental-1988",
+			"buena-suerte-leo-grande-2022"
+		]
+	},
 	"review": "Junior es una comedia de premisa imposible que abraza su propia pavada con bastante honestidad. Arnold Schwarzenegger pone el cuerpo al chiste, Danny DeVito acelera el caos y Emma Thompson funciona como el contrapunto científico y romántico que le da una dirección a la historia. La película se pasa de simpática y sus efectos son de otra época, pero el elenco entiende que la ternura también es parte del gag. Un disparate amable, ideal para una noche sin pretensiones."
 }

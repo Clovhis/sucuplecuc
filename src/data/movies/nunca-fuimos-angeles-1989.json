@@ -8,22 +8,46 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Comedia",
-	"genres": ["Comedia", "Crimen"],
+	"genres": [
+		"Comedia",
+		"Crimen"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1989/nunca-fuimos-angeles-1989.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "I5I2PvGbZRA",
 	"releasePlatform": "Prime Video",
-	"releasePlatforms": ["Prime Video", "Apple TV"],
+	"releasePlatforms": [
+		"Prime Video",
+		"Apple TV"
+	],
 	"director": "Neil Jordan",
-	"mainCast": ["Robert De Niro", "Sean Penn", "Demi Moore", "Ray McAnally"],
+	"mainCast": [
+		"Robert De Niro",
+		"Sean Penn",
+		"Demi Moore",
+		"Ray McAnally"
+	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "Zafa",
-	"awards": {"wins": []},
-	"editorial": {"becauseYouLiked":["una-terapia-peligrosa-1999","the-king-of-comedy-1982"],"related":["arizona-baby-1987","after-hours-1985","ace-ventura-un-detective-diferente-1994","bullets-over-broadway-1994"]},
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"una-terapia-peligrosa-1999",
+			"the-king-of-comedy-1982"
+		],
+		"related": [
+			"arizona-baby-1987",
+			"after-hours-1985",
+			"ace-ventura-un-detective-diferente-1994",
+			"bullets-over-broadway-1994"
+		]
+	},
 	"review": "Nunca fuimos ángeles tiene una premisa de farsa y un corazón bastante más tierno de lo que anuncia su fuga carcelaria. De Niro y Sean Penn aprovechan el contraste entre el pícaro que quiere sobrevivir y el compañero que empieza a creer en la identidad prestada, mientras Demi Moore sostiene la dimensión humana del pueblo. Neil Jordan filma el choque entre religión, frontera y culpa con una ligereza que a veces se desarma en chistes previsibles, pero la dupla central mantiene el viaje en pie. No es una comedia tan filosa como podría ser, aunque sabe encontrar calidez en personajes que llegan al lugar equivocado y terminan haciendo algo correcto. Ideal para una tarde de humor amable con un giro espiritual.",
 	"runtimeMinutes": 106
 }

@@ -4,7 +4,9 @@
 	"originalTitle": "Mad Max",
 	"year": 1979,
 	"category": "Accion",
-	"subgenres": ["Road Movie"],
+	"subgenres": [
+		"Road Movie"
+	],
 	"poster": "assets/posters/1979/mad-max-1979.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "76jy3zJ9_PE",
@@ -23,19 +25,21 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"mad-max-2-1981",
-		"mad-max-fury-road-2015"
-	],
-	"related": [
-		"furiosa-a-mad-max-saga-2024",
-		"furious-7-2015",
-		"una-noche-para-sobrevivir-2015",
-		"tonto-y-retonto-1994"
-	]
-},
+		"becauseYouLiked": [
+			"mad-max-2-1981",
+			"mad-max-fury-road-2015"
+		],
+		"related": [
+			"furiosa-a-mad-max-saga-2024",
+			"furious-7-2015",
+			"una-noche-para-sobrevivir-2015",
+			"tonto-y-retonto-1994"
+		]
+	},
 	"review": "George Miller arranca con un policía de ruta que intenta cuidar a su familia mientras el orden social se desarma alrededor suyo. Con muy pocos recursos, la dirección inventa una violencia seca y una velocidad que se sienten peligrosas: los autos pesan, los choques duelen y el paisaje ya parece abandonado. Mel Gibson todavía no es el ícono invencible de las secuelas; le sirve que Max sea primero un hombre quebrado. El ritmo tarda en encender y la trama es mínima, pero esa aspereza punk explica por qué el mundo de la saga quedó grabado. Vale por su energía cruda.",
-  "synopsis": "En una Australia cercana al colapso, el policía Max Rockatansky persigue bandas violentas que dominan las rutas. Cuando la violencia golpea a su familia, su búsqueda de justicia lo empuja a cruzar un límite irreversible.",
+	"synopsis": "En una Australia cercana al colapso, el policía Max Rockatansky persigue bandas violentas que dominan las rutas. Cuando la violencia golpea a su familia, su búsqueda de justicia lo empuja a cruzar un límite irreversible.",
 	"audienceRating": "+18",
-	"reviewPublishedAt": "2026-03-11"
+	"reviewPublishedAt": "2026-03-11",
+	"country": "AU",
+	"isArgentinian": false
 }

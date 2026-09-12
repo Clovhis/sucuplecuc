@@ -22,17 +22,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 121,
 	"editorial": {
-	"becauseYouLiked": [
-		"whiplash-2014",
-		"gloria-bell-2019"
-	],
-	"related": [
-		"green-book-2018",
-		"casi-famosos-2000",
-		"climax-2018",
-		"dias-perfectos-2023"
-	]
-},
+		"becauseYouLiked": [
+			"whiplash-2014",
+			"gloria-bell-2019"
+		],
+		"related": [
+			"green-book-2018",
+			"casi-famosos-2000",
+			"climax-2018",
+			"dias-perfectos-2023"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 		"Prime Video",
 		"Apple TV"
 	],
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

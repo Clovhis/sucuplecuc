@@ -4,7 +4,9 @@
 	"originalTitle": "Mad Max 2",
 	"year": 1981,
 	"category": "Accion",
-	"subgenres": ["Road Movie"],
+	"subgenres": [
+		"Road Movie"
+	],
 	"poster": "assets/posters/1981/mad-max-2-1981.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "UlwtiOyaoo0",
@@ -23,19 +25,21 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"mad-max-1979",
-		"mad-max-fury-road-2015"
-	],
-	"related": [
-		"furiosa-a-mad-max-saga-2024",
-		"thelma-y-louise-1991",
-		"1997-rescate-en-nueva-york-1981",
-		"limite-48-horas-1982"
-	]
-},
+		"becauseYouLiked": [
+			"mad-max-1979",
+			"mad-max-fury-road-2015"
+		],
+		"related": [
+			"furiosa-a-mad-max-saga-2024",
+			"thelma-y-louise-1991",
+			"1997-rescate-en-nueva-york-1981",
+			"limite-48-horas-1982"
+		]
+	},
 	"review": "Mad Max 2 encuentra a Max vagando por un desierto donde una comunidad con combustible intenta sobrevivir al asedio de una banda de saqueadores. George Miller toma una premisa mínima y la vuelve cine de acción puro: cada vehículo tiene carácter, la geografía se entiende y la carretera funciona como campo de batalla. Mel Gibson habla poco y deja que el cuerpo cansado del personaje cuente la historia, mientras el elenco de villanos suma una violencia casi de cómic. Es seca, feroz y decisiva para el imaginario postapocalíptico; su persecución final sigue siendo una clase de montaje.",
-  "synopsis": "En una Australia devastada por la escasez, Max encuentra una comunidad que defiende su última refinería con desesperación. Para conseguir combustible y seguir su camino, acepta enfrentar a una horda de saqueadores liderada por un señor de la guerra.",
+	"synopsis": "En una Australia devastada por la escasez, Max encuentra una comunidad que defiende su última refinería con desesperación. Para conseguir combustible y seguir su camino, acepta enfrentar a una horda de saqueadores liderada por un señor de la guerra.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-11"
+	"reviewPublishedAt": "2026-03-11",
+	"country": "AU",
+	"isArgentinian": false
 }

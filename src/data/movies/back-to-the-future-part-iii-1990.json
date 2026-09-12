@@ -10,7 +10,7 @@
 		"Comedia",
 		"Ciencia ficción"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/1990/back-to-the-future-part-iii-1990.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "WmBX7CA-AAc",
@@ -29,19 +29,20 @@
 	},
 	"runtimeMinutes": 119,
 	"editorial": {
-	"becauseYouLiked": [
-		"a-i-artificial-intelligence-2001",
-		"war-of-the-worlds-2005"
-	],
-	"related": [
-		"star-wars-episode-vi-return-of-the-jedi-1983",
-		"e-t-the-extra-terrestrial-1982",
-		"heroes-fuera-de-orbita-1999",
-		"looper-2012"
-	]
-},
-  "review": "La tercera cambia el laboratorio por el western y, en lugar de repetir la fórmula, aprovecha el nuevo paisaje para despedir a Marty y Doc con afecto. Robert Zemeckis filma el pueblo de 1885 como una aventura juguetona, con una persecución de tren que justifica el viaje y detalles que dialogan con las dos anteriores. Michael J. Fox vuelve a manejar bien el humor impulsivo de Marty, mientras Christopher Lloyd encuentra un costado romántico muy simpático. Es menos sorprendente que la original y tiene un tramo central más calmo, pero cierra la trilogía con corazón y oficio.",
+		"becauseYouLiked": [
+			"a-i-artificial-intelligence-2001",
+			"war-of-the-worlds-2005"
+		],
+		"related": [
+			"star-wars-episode-vi-return-of-the-jedi-1983",
+			"e-t-the-extra-terrestrial-1982",
+			"heroes-fuera-de-orbita-1999",
+			"looper-2012"
+		]
+	},
+	"review": "La tercera cambia el laboratorio por el western y, en lugar de repetir la fórmula, aprovecha el nuevo paisaje para despedir a Marty y Doc con afecto. Robert Zemeckis filma el pueblo de 1885 como una aventura juguetona, con una persecución de tren que justifica el viaje y detalles que dialogan con las dos anteriores. Michael J. Fox vuelve a manejar bien el humor impulsivo de Marty, mientras Christopher Lloyd encuentra un costado romántico muy simpático. Es menos sorprendente que la original y tiene un tramo central más calmo, pero cierra la trilogía con corazón y oficio.",
 	"synopsis": "En noviembre de 1955, momentos después de presenciar la desaparición de Emmett \"Doc\" Brown en su DeLorean, Marty McFly se entera de que Doc fue enviado hace 70 años a 1885. Utilizando información de la carta de Doc de 1885, Marty y el Doc de 1955 encuentran y reparan el DeLorean para que Marty pueda regresar a 1985.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

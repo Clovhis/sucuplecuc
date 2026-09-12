@@ -13,7 +13,7 @@
 	"subgenres": [
 		"Coming of Age"
 	],
-	"country": "Japón",
+	"country": "JP",
 	"audienceRating": "+18",
 	"runtimeMinutes": 114,
 	"poster": "assets/posters/2000/battle-royale-2000.webp",
@@ -37,17 +37,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-demoledor-1993",
-		"terminator-dark-fate-2019"
-	],
-	"related": [
-		"terminator-3-rise-of-the-machines-2003",
-		"karate-kid-el-momento-de-la-verdad-1984",
-		"1997-rescate-en-nueva-york-1981",
-		"sonic-2-la-pelicula-2022"
-	]
-},
+		"becauseYouLiked": [
+			"el-demoledor-1993",
+			"terminator-dark-fate-2019"
+		],
+		"related": [
+			"terminator-3-rise-of-the-machines-2003",
+			"karate-kid-el-momento-de-la-verdad-1984",
+			"1997-rescate-en-nueva-york-1981",
+			"sonic-2-la-pelicula-2022"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

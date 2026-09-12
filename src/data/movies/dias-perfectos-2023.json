@@ -22,17 +22,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 124,
 	"editorial": {
-	"becauseYouLiked": [
-		"michael-2026",
-		"el-sonido-del-metal-2019"
-	],
-	"related": [
-		"paris-texas-1984",
-		"whiplash-2014",
-		"gloria-bell-2019",
-		"climax-2018"
-	]
-},
+		"becauseYouLiked": [
+			"michael-2026",
+			"el-sonido-del-metal-2019"
+		],
+		"related": [
+			"paris-texas-1984",
+			"whiplash-2014",
+			"gloria-bell-2019",
+			"climax-2018"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 		"Netflix",
 		"Apple TV"
 	],
-	"country": "Alemania"
+	"country": "DE",
+	"isArgentinian": false
 }

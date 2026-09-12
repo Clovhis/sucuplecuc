@@ -8,16 +8,23 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama"],
+	"genres": [
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1989/escuela-de-rebeldes-1989.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "evA9nkdOhKU",
 	"releasePlatform": "Otras plataformas",
 	"director": "John G. Avildsen",
-	"mainCast": ["Morgan Freeman", "Beverly Todd", "Robert Guillaume", "Ethan Phillips"],
+	"mainCast": [
+		"Morgan Freeman",
+		"Beverly Todd",
+		"Robert Guillaume",
+		"Ethan Phillips"
+	],
 	"productionCompany": "Warner Bros. Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,18 +32,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"rocky-1976",
-		"tiempos-de-gloria-1989"
-	],
-	"related": [
-		"driving-miss-daisy-1989",
-		"amistad-1997",
-		"the-shawshank-redemption-1994",
-		"karate-kid-el-momento-de-la-verdad-1984"
-	]
-},
+		"becauseYouLiked": [
+			"rocky-1976",
+			"tiempos-de-gloria-1989"
+		],
+		"related": [
+			"driving-miss-daisy-1989",
+			"amistad-1997",
+			"the-shawshank-redemption-1994",
+			"karate-kid-el-momento-de-la-verdad-1984"
+		]
+	},
 	"runtimeMinutes": 108,
-	"editorial": {"becauseYouLiked":["rocky-1976","tiempos-de-gloria-1989"],"related":["driving-miss-daisy-1989","amistad-1997","the-shawshank-redemption-1994","karate-kid-el-momento-de-la-verdad-1984"]},
 	"review": "Escuela de rebeldes tiene una energía frontal, casi de arenga, que podría haberla dejado en simple propaganda escolar. Pero Morgan Freeman le da a Joe Clark una autoridad áspera y contradictoria: no llega a caer simpático, llega a hacerse cargo. John G. Avildsen filma los pasillos como un territorio en guerra y encuentra emoción cuando la épica baja a una conversación con un alumno. El mensaje es subrayado y algunas soluciones envejecieron, aunque la actuación central y el pulso de la transformación siguen sosteniendo la película. Recomendada por su corazón combativo, incluso cuando se pasa de volumen."
 }

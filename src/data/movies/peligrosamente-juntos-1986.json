@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Comedia",
-	"genres": ["Comedia", "Crimen", "Romance"],
+	"genres": [
+		"Comedia",
+		"Crimen",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1986/peligrosamente-juntos-1986.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "eYeCMPG7qIk",
 	"releasePlatform": "Apple TV",
 	"director": "Ivan Reitman",
-	"mainCast": ["Robert Redford", "Debra Winger", "Daryl Hannah", "Brian Dennehy"],
+	"mainCast": [
+		"Robert Redford",
+		"Debra Winger",
+		"Daryl Hannah",
+		"Brian Dennehy"
+	],
 	"productionCompany": "Universal Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -25,17 +34,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"roofman-un-buen-ladron-2025",
-		"arizona-baby-1987"
-	],
-	"related": [
-		"ace-ventura-un-detective-diferente-1994",
-		"los-otros-dos-2010",
-		"small-time-crooks-2000",
-		"agarralo-como-puedas-1988"
-	]
-},
+		"becauseYouLiked": [
+			"roofman-un-buen-ladron-2025",
+			"arizona-baby-1987"
+		],
+		"related": [
+			"ace-ventura-un-detective-diferente-1994",
+			"los-otros-dos-2010",
+			"small-time-crooks-2000",
+			"agarralo-como-puedas-1988"
+		]
+	},
 	"runtimeMinutes": 116,
 	"review": "La película quiere ser thriller legal, comedia romántica y aventura de museo al mismo tiempo, y esa mezcla explica tanto su encanto como sus tropiezos. Redford aporta el aplomo del fiscal que descubre que el reglamento no alcanza, mientras Debra Winger se divierte con una abogada que parece vivir siempre dos pasos adelante. El misterio tiene vueltas bastante caprichosas, pero el choque entre sus protagonistas y la estética de gran producción sostienen un entretenimiento liviano, con más energía que precisión."
 }

@@ -1,52 +1,54 @@
 {
-  "slug": "marty-1955",
-  "title": "Marty",
-  "originalTitle": "Marta",
-  "year": 1955,
-  "category": "Drama",
-  "poster": "assets/posters/1955/marty-1955.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "SHWWuBGybJQ",
-  "releasePlatform": "Prime Video",
-  "director": "Delbert Mann",
-  "mainCast": [
-    "Ernest Borgnine",
-    "Betsy Blair",
-    "Esther Minciotti"
-  ],
-  "productionCompany": "Producciones Cinematográficas Amílcar",
-  "verdict": "recomendada",
-  "verdictLabel": "MUY BUENA",
-  "awards": {
-    "wins": [
-      {
-        "award": "oscar",
-        "category": "Mejor película",
-        "year": 1956,
-        "recipient": "Producciones Cinematográficas Amílcar"
-      }
-    ]
-  },
-  "releaseDate": "1955-04-11",
-  "genres": [
-    "Drama",
-    "Romance"
-  ],
-  "runtimeMinutes": 91,
-  "review": "Marty acompaña a un carnicero soltero del Bronx que, cansado de que su familia y sus amigos le recuerden que está solo, conoce a una maestra igualmente insegura. Delbert Mann filma esa cita con una sencillez poco común, atento a silencios, llamadas telefónicas y prejuicios familiares en lugar de grandes declaraciones románticas. Ernest Borgnine hace de Marty un hombre común con una ternura enorme y sin ninguna pose de galán. Es pequeña y directa, pero por eso el romance pega tanto: muestra cómo un encuentro mínimo puede cambiar la idea que alguien tiene de sí mismo.",
-  "editorial": {
-	"becauseYouLiked": [
-		"mrs-miniver-1942",
-		"the-broadway-melody-1929"
+	"slug": "marty-1955",
+	"title": "Marty",
+	"originalTitle": "Marta",
+	"year": 1955,
+	"category": "Drama",
+	"poster": "assets/posters/1955/marty-1955.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "SHWWuBGybJQ",
+	"releasePlatform": "Prime Video",
+	"director": "Delbert Mann",
+	"mainCast": [
+		"Ernest Borgnine",
+		"Betsy Blair",
+		"Esther Minciotti"
 	],
-	"related": [
-		"corazon-salvaje-1990",
-		"la-nina-santa-2004",
-		"juno-embarazada-por-accidente-2007",
-		"alice-doesnt-live-here-anymore-1974"
-	]
-},
-  "synopsis": "Marty es un carnicero soltero del Bronx que ha perdido la esperanza de encontrar pareja. Durante una noche cualquiera conoce a Clara, una maestra tímida, y ambos descubren una conexión que desafía las expectativas de sus familias.",
-  "audienceRating": "+13",
-  "reviewPublishedAt": "2026-03-08"
+	"productionCompany": "Producciones Cinematográficas Amílcar",
+	"verdict": "recomendada",
+	"verdictLabel": "MUY BUENA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película",
+				"year": 1956,
+				"recipient": "Producciones Cinematográficas Amílcar"
+			}
+		]
+	},
+	"releaseDate": "1955-04-11",
+	"genres": [
+		"Drama",
+		"Romance"
+	],
+	"runtimeMinutes": 91,
+	"review": "Marty acompaña a un carnicero soltero del Bronx que, cansado de que su familia y sus amigos le recuerden que está solo, conoce a una maestra igualmente insegura. Delbert Mann filma esa cita con una sencillez poco común, atento a silencios, llamadas telefónicas y prejuicios familiares en lugar de grandes declaraciones románticas. Ernest Borgnine hace de Marty un hombre común con una ternura enorme y sin ninguna pose de galán. Es pequeña y directa, pero por eso el romance pega tanto: muestra cómo un encuentro mínimo puede cambiar la idea que alguien tiene de sí mismo.",
+	"editorial": {
+		"becauseYouLiked": [
+			"mrs-miniver-1942",
+			"the-broadway-melody-1929"
+		],
+		"related": [
+			"corazon-salvaje-1990",
+			"la-nina-santa-2004",
+			"juno-embarazada-por-accidente-2007",
+			"alice-doesnt-live-here-anymore-1974"
+		]
+	},
+	"synopsis": "Marty es un carnicero soltero del Bronx que ha perdido la esperanza de encontrar pareja. Durante una noche cualquiera conoce a Clara, una maestra tímida, y ambos descubren una conexión que desafía las expectativas de sus familias.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-08",
+	"country": "ES",
+	"isArgentinian": false
 }

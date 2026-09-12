@@ -1,38 +1,49 @@
 {
-  "slug": "silverado-1985",
-  "title": "Silverado",
-  "originalTitle": "Silverado",
-  "synopsis": "Cuatro hombres llegan por caminos distintos a Silverado, una ciudad fronteriza donde la ley está al servicio de los poderosos. Emmett, Paden, Mal y Jake deberán decidir qué clase de alianza quieren formar antes de enfrentarse a un sheriff corrupto y a sus viejas cuentas pendientes.",
-  "year": 1985,
-  "releaseDate": "1985-07-10",
-  "reviewPublishedAt": "2026-08-24",
-  "audienceRating": "+14",
-  "category": "Western",
-  "genres": ["Western", "Acción", "Drama"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/1985/silverado-1985.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "ozlnGrH94Rc",
-  "releasePlatform": "Netflix",
-  "director": "Lawrence Kasdan",
-  "mainCast": ["Kevin Kline", "Scott Glenn", "Danny Glover", "Kevin Costner"],
-  "productionCompany": "Columbia Pictures",
-  "verdict": "recomendada",
-  "verdictLabel": "CLASICO TOTAL",
-  "awards": {"wins": []},
-  "editorial": {
-	"becauseYouLiked": [
-		"pacto-de-justicia-2003",
-		"el-renacido-2015"
+	"slug": "silverado-1985",
+	"title": "Silverado",
+	"originalTitle": "Silverado",
+	"synopsis": "Cuatro hombres llegan por caminos distintos a Silverado, una ciudad fronteriza donde la ley está al servicio de los poderosos. Emmett, Paden, Mal y Jake deberán decidir qué clase de alianza quieren formar antes de enfrentarse a un sheriff corrupto y a sus viejas cuentas pendientes.",
+	"year": 1985,
+	"releaseDate": "1985-07-10",
+	"reviewPublishedAt": "2026-08-24",
+	"audienceRating": "+14",
+	"category": "Western",
+	"genres": [
+		"Western",
+		"Acción",
+		"Drama"
 	],
-	"related": [
-		"el-bueno-el-feo-y-el-malo-1966",
-		"unforgiven-1992",
-		"grupo-salvaje-1969",
-		"maverick-1994"
-	]
-},
-  "review": "Silverado entiende el western como una película de amigos, códigos y entradas triunfales, pero no se queda en la postal polvorienta. Lawrence Kasdan arma un relato coral donde cada personaje llega con su propia herida y encuentra una razón concreta para plantarse frente al abuso. Kevin Costner aparece con energía juvenil y un encanto todavía desprolijo, bien acompañado por un elenco que sabe vender rivalidades y camaradería. Hay exceso, humor y melodrama, aunque el pulso aventurero nunca se cae."
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/1985/silverado-1985.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "ozlnGrH94Rc",
+	"releasePlatform": "Netflix",
+	"director": "Lawrence Kasdan",
+	"mainCast": [
+		"Kevin Kline",
+		"Scott Glenn",
+		"Danny Glover",
+		"Kevin Costner"
+	],
+	"productionCompany": "Columbia Pictures",
+	"verdict": "recomendada",
+	"verdictLabel": "CLASICO TOTAL",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"pacto-de-justicia-2003",
+			"el-renacido-2015"
+		],
+		"related": [
+			"el-bueno-el-feo-y-el-malo-1966",
+			"unforgiven-1992",
+			"grupo-salvaje-1969",
+			"maverick-1994"
+		]
+	},
+	"review": "Silverado entiende el western como una película de amigos, códigos y entradas triunfales, pero no se queda en la postal polvorienta. Lawrence Kasdan arma un relato coral donde cada personaje llega con su propia herida y encuentra una razón concreta para plantarse frente al abuso. Kevin Costner aparece con energía juvenil y un encanto todavía desprolijo, bien acompañado por un elenco que sabe vender rivalidades y camaradería. Hay exceso, humor y melodrama, aunque el pulso aventurero nunca se cae."
 }

@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Western", "Misterio"],
+	"genres": [
+		"Drama",
+		"Western",
+		"Misterio"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2003/desapariciones-2003.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "d5r56olqELU",
 	"releasePlatform": "Otras plataformas",
 	"director": "Ron Howard",
-	"mainCast": ["Cate Blanchett", "Tommy Lee Jones", "Evan Rachel Wood", "Jenna Boyd", "Aaron Eckhart"],
+	"mainCast": [
+		"Cate Blanchett",
+		"Tommy Lee Jones",
+		"Evan Rachel Wood",
+		"Jenna Boyd",
+		"Aaron Eckhart"
+	],
 	"productionCompany": "Revolution Studios, Imagine Entertainment",
 	"verdict": "zafa",
 	"verdictLabel": "CUMPLE",
@@ -25,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"la-voluntad-de-dios-2026",
-		"requiem-por-un-sueno-2000"
-	],
-	"related": [
-		"valor-de-ley-2010",
-		"camino-a-la-perdicion-2002",
-		"la-costa-mosquito-1986",
-		"testigo-en-peligro-1985"
-	]
-},
+		"becauseYouLiked": [
+			"la-voluntad-de-dios-2026",
+			"requiem-por-un-sueno-2000"
+		],
+		"related": [
+			"valor-de-ley-2010",
+			"camino-a-la-perdicion-2002",
+			"la-costa-mosquito-1986",
+			"testigo-en-peligro-1985"
+		]
+	},
 	"runtimeMinutes": 135,
 	"review": "Desapariciones cruza western, drama familiar y relato de frontera sin convertir el paisaje en una postal. Ron Howard sostiene la persecución sobre dos padres obligados a cooperar, mientras Cate Blanchett le da a Maggie una dureza nacida del dolor y Tommy Lee Jones aporta una culpa más silenciosa. El guion se demora en algunos rodeos y carga demasiado las explicaciones, pero la tensión moral de la búsqueda mantiene el viaje en pie."
 }

@@ -7,16 +7,25 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia", "Historia"],
+	"genres": [
+		"Drama",
+		"Comedia",
+		"Historia"
+	],
 	"subgenres": [],
-	"country": "Reino Unido",
+	"country": "GB",
 	"isArgentinian": false,
 	"poster": "assets/posters/1994/la-locura-del-rey-jorge-1994.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "BHNSAK8d3qc",
 	"releasePlatform": "Prime Video",
 	"director": "Nicholas Hytner",
-	"mainCast": ["Nigel Hawthorne", "Helen Mirren", "Ian Holm", "Rupert Everett"],
+	"mainCast": [
+		"Nigel Hawthorne",
+		"Helen Mirren",
+		"Ian Holm",
+		"Rupert Everett"
+	],
 	"productionCompany": "Channel Four Films, Close Call Films",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
@@ -25,16 +34,16 @@
 	},
 	"runtimeMinutes": 110,
 	"editorial": {
-	"becauseYouLiked": [
-		"una-dama-sobre-ruedas-2015",
-		"la-favorita-2018"
-	],
-	"related": [
-		"el-crisol-1996",
-		"la-vida-es-bella-1997",
-		"el-juego-de-hollywood-1992",
-		"boogie-nights-1997"
-	]
-},
+		"becauseYouLiked": [
+			"una-dama-sobre-ruedas-2015",
+			"la-favorita-2018"
+		],
+		"related": [
+			"el-crisol-1996",
+			"la-vida-es-bella-1997",
+			"el-juego-de-hollywood-1992",
+			"boogie-nights-1997"
+		]
+	},
 	"review": "La película convierte una crisis de salud mental en un drama de poder, pero nunca pierde de vista el costo íntimo de la corona. Nigel Hawthorne le da al rey una mezcla incómoda de autoridad, miedo y ternura; Helen Mirren, en cambio, arma una reina Charlotte que no es decoración cortesana sino una mujer negociando cuánto puede proteger a su marido. Nicholas Hytner conserva el pulso teatral sin encerrar la puesta, y el humor negro oxigena una historia cada vez más dolorosa."
 }

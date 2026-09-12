@@ -7,16 +7,25 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Historia"],
+	"genres": [
+		"Drama",
+		"Historia"
+	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos, Alemania, Austria",
+	"country": "GB, US, AT",
 	"isArgentinian": false,
 	"poster": "assets/posters/2015/la-dama-de-oro-2015.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "CxVpdTxiMGA",
 	"releasePlatform": "Otras plataformas",
 	"director": "Simon Curtis",
-	"mainCast": ["Helen Mirren", "Ryan Reynolds", "Tatiana Maslany", "Katie Holmes", "Jonathan Pryce"],
+	"mainCast": [
+		"Helen Mirren",
+		"Ryan Reynolds",
+		"Tatiana Maslany",
+		"Katie Holmes",
+		"Jonathan Pryce"
+	],
 	"productionCompany": "BBC Films, Origin Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "ZAFABLE",
@@ -25,16 +34,16 @@
 	},
 	"runtimeMinutes": 109,
 	"editorial": {
-	"becauseYouLiked": [
-		"hitchcock-2012",
-		"mas-fuerte-que-el-destino-2017"
-	],
-	"related": [
-		"los-dos-papas-2019",
-		"el-pianista-2002",
-		"no-odiaras-2020",
-		"el-clan-de-hierro-2023"
-	]
-},
+		"becauseYouLiked": [
+			"hitchcock-2012",
+			"mas-fuerte-que-el-destino-2017"
+		],
+		"related": [
+			"los-dos-papas-2019",
+			"el-pianista-2002",
+			"no-odiaras-2020",
+			"el-clan-de-hierro-2023"
+		]
+	},
 	"review": "La dama de oro encuentra su mejor tono cuando entiende que el cuadro no es sólo una pieza de museo: es una puerta de regreso a una familia desarmada por la persecución. Helen Mirren le presta a Maria Altmann una ironía filosa y una tristeza que aparece sin pedir permiso, mientras Ryan Reynolds funciona como contrapunto más torpe y persistente. El relato judicial avanza con claridad y algún subrayado sentimental, pero el duelo por lo perdido termina teniendo más peso que el trámite legal."
 }

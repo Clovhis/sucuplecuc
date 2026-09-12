@@ -24,17 +24,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 172,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-ultimo-mohicano-1992",
-		"tres-reyes-1999"
-	],
-	"related": [
-		"el-unico-superviviente-2013",
-		"marea-roja-1995",
-		"war-horse-2011",
-		"corazones-de-hierro-2014"
-	]
-},
+		"becauseYouLiked": [
+			"el-ultimo-mohicano-1992",
+			"tres-reyes-1999"
+		],
+		"related": [
+			"el-unico-superviviente-2013",
+			"marea-roja-1995",
+			"war-horse-2011",
+			"corazones-de-hierro-2014"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -44,5 +44,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

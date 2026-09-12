@@ -7,39 +7,63 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+18",
 	"category": "Fantasia",
-	"genres": ["Fantasia", "Drama", "Guerra"],
+	"genres": [
+		"Fantasia",
+		"Drama",
+		"Guerra"
+	],
 	"subgenres": [],
-	"country": "España, México, Estados Unidos",
+	"country": "ES, MX, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2006/el-laberinto-del-fauno-2006.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "gpEh4O8Hb5Y",
 	"releasePlatform": "Otras plataformas",
 	"director": "Guillermo del Toro",
-	"mainCast": ["Ivana Baquero", "Sergi López", "Maribel Verdú", "Doug Jones"],
+	"mainCast": [
+		"Ivana Baquero",
+		"Sergi López",
+		"Maribel Verdú",
+		"Doug Jones"
+	],
 	"productionCompany": "Estudios Picasso, Tequila Gang, Esperanto Filmoj",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
-			{ "award": "oscar", "category": "Mejor fotografía", "recipient": "Guillermo Navarro", "year": 2007 },
-			{ "award": "oscar", "category": "Mejor dirección de arte", "recipient": "Eugenio Caballero y Pilar Revuelta", "year": 2007 },
-			{ "award": "oscar", "category": "Mejor maquillaje", "recipient": "David Martí y Montse Ribé", "year": 2007 }
+			{
+				"award": "oscar",
+				"category": "Mejor fotografía",
+				"recipient": "Guillermo Navarro",
+				"year": 2007
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor dirección de arte",
+				"recipient": "Eugenio Caballero y Pilar Revuelta",
+				"year": 2007
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor maquillaje",
+				"recipient": "David Martí y Montse Ribé",
+				"year": 2007
+			}
 		]
 	},
 	"runtimeMinutes": 118,
 	"editorial": {
-	"becauseYouLiked": [
-		"ip-man-2008",
-		"una-serie-de-eventos-desafortunados-2004"
-	],
-	"related": [
-		"the-shape-of-water-2017",
-		"the-fall-el-sueno-de-alexandria-2006",
-		"la-ciudad-de-los-ninos-perdidos-1995",
-		"edward-scissorhands-1990"
-	]
-},
+		"becauseYouLiked": [
+			"ip-man-2008",
+			"una-serie-de-eventos-desafortunados-2004"
+		],
+		"related": [
+			"the-shape-of-water-2017",
+			"the-fall-el-sueno-de-alexandria-2006",
+			"la-ciudad-de-los-ninos-perdidos-1995",
+			"edward-scissorhands-1990"
+		]
+	},
 	"review": "Del Toro pone a una nena frente a un mundo de adultos fascistas y le da a la fantasía una textura tan hermosa como peligrosa. Ivana Baquero sostiene el relato con una mezcla de curiosidad y miedo, mientras Sergi López convierte al capitán Vidal en una presencia insoportable sin necesidad de exagerar. Los monstruos no funcionan como simple decoración: cada uno refleja una forma de obediencia, hambre o crueldad. La película es brutal, poética y muy precisa en el cruce entre historia y mito. La recepción la ubicó entre las grandes fantasías modernas, y su imaginación sigue intacta.",
 	"isPremiere": false,
 	"premiereLabel": ""

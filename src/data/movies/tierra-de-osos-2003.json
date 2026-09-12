@@ -8,32 +8,46 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Animacion",
-	"genres": ["Animación", "Aventura", "Comedia", "Familia", "Fantasía"],
+	"genres": [
+		"Animación",
+		"Aventura",
+		"Comedia",
+		"Familia",
+		"Fantasía"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2003/tierra-de-osos-2003.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "znDpEzcuBzc",
 	"releasePlatform": "Disney Plus",
 	"director": "Robert Walker, Aaron Blaise",
-	"mainCast": ["Joaquin Phoenix", "Jeremy Suarez", "Jason Raize", "Rick Moranis", "Dave Thomas"],
+	"mainCast": [
+		"Joaquin Phoenix",
+		"Jeremy Suarez",
+		"Jason Raize",
+		"Rick Moranis",
+		"Dave Thomas"
+	],
 	"productionCompany": "Walt Disney Feature Animation",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 85,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-gato-con-botas-2011",
-		"minions-monstruos-2026"
-	],
-	"related": [
-		"swapped-2026",
-		"toy-story-5-2026",
-		"toy-story-1995",
-		"lego-star-wars-the-mandalorian-2026"
-	]
-},
+		"becauseYouLiked": [
+			"el-gato-con-botas-2011",
+			"minions-monstruos-2026"
+		],
+		"related": [
+			"swapped-2026",
+			"toy-story-5-2026",
+			"toy-story-1995",
+			"lego-star-wars-the-mandalorian-2026"
+		]
+	},
 	"review": "Tierra de osos trabaja una idea clásica de Disney —aprender a ponerse en el lugar del otro— con un cambio de perspectiva sencillo y bastante eficaz. La relación entre Kenai y Koda sostiene la película, sobre todo cuando el humor de los alces afloja una historia que también habla de duelo y culpa. La animación tiene fondos preciosos y una escala naturalista que le da identidad, aunque el conflicto avanza por caminos previsibles. Es una aventura amable, musical y algo subestimada, más fuerte en el vínculo entre los personajes que en su moraleja."
 }

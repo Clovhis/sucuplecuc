@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-09-11",
 	"audienceRating": "+16",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama", "Romance"],
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/por-que-me-case-entonces-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "t_QUYXwkwss",
 	"releasePlatform": "Netflix",
 	"director": "Tyler Perry",
-	"mainCast": ["Tyler Perry", "Taraji P. Henson", "Jill Scott", "Richard T. Jones"],
+	"mainCast": [
+		"Tyler Perry",
+		"Taraji P. Henson",
+		"Jill Scott",
+		"Richard T. Jones"
+	],
 	"productionCompany": "Tyler Perry Studios y Netflix",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -26,8 +35,16 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["office-romance-2026", "peligrosamente-juntos-1986"],
-		"related": ["loco-y-estupido-amor-2011", "50-first-dates-2004", "love-actually-2003", "a-real-pain-2024"]
+		"becauseYouLiked": [
+			"office-romance-2026",
+			"peligrosamente-juntos-1986"
+		],
+		"related": [
+			"loco-y-estupido-amor-2011",
+			"50-first-dates-2004",
+			"love-actually-2003",
+			"a-real-pain-2024"
+		]
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",

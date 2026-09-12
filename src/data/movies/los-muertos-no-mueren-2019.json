@@ -8,32 +8,45 @@
 	"reviewPublishedAt": "2026-08-26",
 	"audienceRating": "+16",
 	"category": "Terror",
-	"genres": ["Terror", "Comedia", "Fantasía", "Ciencia ficcion"],
+	"genres": [
+		"Terror",
+		"Comedia",
+		"Fantasía",
+		"Ciencia ficcion"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos, Suecia y Japón",
+	"country": "US, SE, JP",
 	"isArgentinian": false,
-  "poster": "assets/posters/2019/los-muertos-no-mueren-2019.webp",
+	"poster": "assets/posters/2019/los-muertos-no-mueren-2019.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "teOGqx26lBA",
 	"releasePlatform": "Disney Plus",
 	"director": "Jim Jarmusch",
-	"mainCast": ["Bill Murray", "Adam Driver", "Chloë Sevigny", "Tilda Swinton", "Steve Buscemi"],
+	"mainCast": [
+		"Bill Murray",
+		"Adam Driver",
+		"Chloë Sevigny",
+		"Tilda Swinton",
+		"Steve Buscemi"
+	],
 	"productionCompany": "Focus Features, Animal Kingdom y CG Cinema",
 	"verdict": "recomendada",
 	"verdictLabel": "RARA Y BUENA",
 	"runtimeMinutes": 104,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"la-zona-muerta-1983",
-		"house-1977"
-	],
-	"related": [
-		"el-faro-2019",
-		"titane-2021",
-		"mandy-2018",
-		"juegos-inocentes-2021"
-	]
-},
+		"becauseYouLiked": [
+			"la-zona-muerta-1983",
+			"house-1977"
+		],
+		"related": [
+			"el-faro-2019",
+			"titane-2021",
+			"mandy-2018",
+			"juegos-inocentes-2021"
+		]
+	},
 	"review": "Los muertos no mueren usa el apocalipsis zombi para mirar una comunidad que ya estaba agotada antes de que aparecieran los cadáveres. El humor seco, las conversaciones desconcertadas y la repetición de gestos cotidianos construyen una parodia que no necesita correr para ser incómoda.\n\nNo busca el suspenso clásico ni una explicación prolija: prefiere dejar que los personajes acepten lo imposible con la misma apatía con la que enfrentan una jornada laboral. Esa decisión puede frustrar si esperás acción, pero resulta muy coherente con su mundo. RARA Y BUENA, especialmente cuando el absurdo deja asomar una crítica bastante amarga."
 }

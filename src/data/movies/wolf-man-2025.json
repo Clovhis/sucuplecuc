@@ -4,7 +4,7 @@
 	"originalTitle": "Wolf Man",
 	"year": 2025,
 	"category": "Terror",
-  "poster": "assets/posters/2025/wolf-man-2025.webp",
+	"poster": "assets/posters/2025/wolf-man-2025.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "kAw4PH2IQgo",
 	"releasePlatform": "HBO Max",
@@ -23,18 +23,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"dolly-juega-contigo-2025",
-		"engendro-2026"
-	],
-	"related": [
-		"llega-de-noche-2017",
-		"curse-of-chucky-2013",
-		"weapons-2025",
-		"la-cabana-siniestra-2019"
-	]
-},
+		"becauseYouLiked": [
+			"dolly-juega-contigo-2025",
+			"engendro-2026"
+		],
+		"related": [
+			"llega-de-noche-2017",
+			"curse-of-chucky-2013",
+			"weapons-2025",
+			"la-cabana-siniestra-2019"
+		]
+	},
 	"synopsis": "En 1995, la desaparición de un excursionista en las remotas montañas de Oregón genera especulaciones sobre un virus transmitido por la fauna de la región, apodado \"fiebre de las colinas\" por los lugareños pero llamado ma'iingan odengwaan, o \"Cara del lobo\", por las tribus nativas americanas anteriores.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"country": "US",
+	"isArgentinian": false
 }

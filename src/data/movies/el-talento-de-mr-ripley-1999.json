@@ -7,16 +7,27 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+17",
 	"category": "Thriller",
-	"genres": ["Thriller", "Drama", "Crimen", "Romance"],
+	"genres": [
+		"Thriller",
+		"Drama",
+		"Crimen",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1999/el-talento-de-mr-ripley-1999.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "DIrSEJLBd0c",
 	"releasePlatform": "Apple TV",
 	"director": "Anthony Minghella",
-	"mainCast": ["Matt Damon", "Jude Law", "Gwyneth Paltrow", "Cate Blanchett", "Philip Seymour Hoffman"],
+	"mainCast": [
+		"Matt Damon",
+		"Jude Law",
+		"Gwyneth Paltrow",
+		"Cate Blanchett",
+		"Philip Seymour Hoffman"
+	],
 	"productionCompany": "Miramax, Paramount Pictures, Mirage Enterprises",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY RECOMENDADA",
@@ -24,16 +35,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-cartero-siempre-llama-dos-veces-1981",
-		"se7en-1995"
-	],
-	"related": [
-		"el-afinador-2026",
-		"the-departed-2006",
-		"decision-de-partir-2022",
-		"la-habitacion-del-panico-2002"
-	]
-},
+		"becauseYouLiked": [
+			"el-cartero-siempre-llama-dos-veces-1981",
+			"se7en-1995"
+		],
+		"related": [
+			"el-afinador-2026",
+			"the-departed-2006",
+			"decision-de-partir-2022",
+			"la-habitacion-del-panico-2002"
+		]
+	},
 	"review": "Minghella convierte el Mediterráneo en una vidriera hermosa donde todo puede quebrarse. Damon se anima a hacer de Ripley un protagonista incómodo: busca pertenecer, pero también disfruta demasiado del disfraz. Law le da a Dickie una mezcla de magnetismo y crueldad que explica la obsesión sin justificarla. El lujo, el jazz y los silencios construyen una tensión elegante, sostenida por un elenco que entiende que cada gesto puede ser una mentira."
 }

@@ -7,16 +7,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Accion",
-	"genres": ["Acción", "Thriller", "Crimen"],
+	"genres": [
+		"Acción",
+		"Thriller",
+		"Crimen"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2007/el-ultimatum-de-bourne-2007.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "zIcxxtpdwEk",
 	"releasePlatform": "HBO Max",
 	"director": "Paul Greengrass",
-	"mainCast": ["Matt Damon", "Julia Stiles", "Joan Allen", "David Strathairn", "Edgar Ramírez"],
+	"mainCast": [
+		"Matt Damon",
+		"Julia Stiles",
+		"Joan Allen",
+		"David Strathairn",
+		"Edgar Ramírez"
+	],
 	"productionCompany": "Universal Pictures, The Kennedy/Marshall Company",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
@@ -24,16 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"la-supremacia-de-bourne-2004",
-		"identidad-desconocida-2002"
-	],
-	"related": [
-		"el-fuego-de-la-venganza-2004",
-		"una-noche-para-sobrevivir-2015",
-		"furious-7-2015",
-		"fast-five-2011"
-	]
-},
+		"becauseYouLiked": [
+			"la-supremacia-de-bourne-2004",
+			"identidad-desconocida-2002"
+		],
+		"related": [
+			"el-fuego-de-la-venganza-2004",
+			"una-noche-para-sobrevivir-2015",
+			"furious-7-2015",
+			"fast-five-2011"
+		]
+	},
 	"review": "La tercera entrega lleva el estilo Bourne al límite: cámara inquieta, montaje cortante y persecuciones que parecen ocurrir medio segundo antes de que el espectador pueda acomodarse. El truco no sería suficiente si Damon no mantuviera la humanidad de Jason en el centro, incluso cuando pelea como una máquina. La trama ata cabos con eficacia y el cierre tiene peso emocional. Es puro cine de acción, pero no vacío: cada escape modifica al personaje."
 }

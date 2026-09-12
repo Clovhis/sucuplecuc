@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 108,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-extrano-2016",
-		"la-escalera-de-jacob-1990"
-	],
-	"related": [
-		"hereditary-2018",
-		"el-profugo-2020",
-		"la-bruja-2015",
-		"babadook-2014"
-	]
-},
+		"becauseYouLiked": [
+			"el-extrano-2016",
+			"la-escalera-de-jacob-1990"
+		],
+		"related": [
+			"hereditary-2018",
+			"el-profugo-2020",
+			"la-bruja-2015",
+			"babadook-2014"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

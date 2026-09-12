@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 102,
 	"editorial": {
-	"becauseYouLiked": [
-		"rashomon-1950",
-		"fight-club-1999"
-	],
-	"related": [
-		"nader-y-simin-una-separacion-2011",
-		"cruce-de-caminos-2012",
-		"camino-a-la-perdicion-2002",
-		"testigo-en-peligro-1985"
-	]
-},
+		"becauseYouLiked": [
+			"rashomon-1950",
+			"fight-club-1999"
+		],
+		"related": [
+			"nader-y-simin-una-separacion-2011",
+			"cruce-de-caminos-2012",
+			"camino-a-la-perdicion-2002",
+			"testigo-en-peligro-1985"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

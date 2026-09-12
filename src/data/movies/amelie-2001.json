@@ -7,33 +7,45 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "ATP",
 	"category": "Comedia romántica",
-	"genres": ["Comedia", "Romance"],
-	"subgenres": ["RomCom"],
-	"country": "Francia, Alemania",
+	"genres": [
+		"Comedia",
+		"Romance"
+	],
+	"subgenres": [
+		"RomCom"
+	],
+	"country": "FR",
 	"isArgentinian": false,
 	"poster": "assets/posters/2001/amelie-2001.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "555A7T_kmIc",
 	"releasePlatform": "Otras plataformas",
 	"director": "Jean-Pierre Jeunet",
-	"mainCast": ["Audrey Tautou", "Mathieu Kassovitz", "Rufus", "Serge Merlin"],
+	"mainCast": [
+		"Audrey Tautou",
+		"Mathieu Kassovitz",
+		"Rufus",
+		"Serge Merlin"
+	],
 	"productionCompany": "UGC, Tapioca Films",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 122,
 	"editorial": {
-	"becauseYouLiked": [
-		"loco-y-estupido-amor-2011",
-		"medianeras-2011"
-	],
-	"related": [
-		"los-bufalos-de-durham-1988",
-		"tin-cup-1996",
-		"me-has-robado-el-corazon-2025",
-		"solo-mio-2026"
-	]
-},
+		"becauseYouLiked": [
+			"loco-y-estupido-amor-2011",
+			"medianeras-2011"
+		],
+		"related": [
+			"los-bufalos-de-durham-1988",
+			"tin-cup-1996",
+			"me-has-robado-el-corazon-2025",
+			"solo-mio-2026"
+		]
+	},
 	"review": "Amélie convierte París en un tablero de coincidencias, objetos perdidos y secretos mínimos, y Audrey Tautou le pone una mezcla irresistible de pudor, picardía y melancolía. Jean-Pierre Jeunet llena cada plano de color y movimiento, pero la película no se queda en la decoración: debajo de la fantasía hay una chica que se esconde detrás de ayudar a los demás. El romance con Nino tarda en arrancar y a veces el narrador subraya demasiado la magia, aunque el encanto visual y el humor seco mantienen la experiencia viva. Es una comedia romántica con corazón, rareza y una identidad muy propia.",
 	"isPremiere": false,
 	"premiereLabel": ""

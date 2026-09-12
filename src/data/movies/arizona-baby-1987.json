@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Comedia",
-	"genres": ["Comedia", "Crimen"],
+	"genres": [
+		"Comedia",
+		"Crimen"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1987/arizona-baby-1987.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "9ZS8BMKw-JY",
 	"releasePlatform": "Disney Plus",
 	"director": "Joel Coen",
-	"mainCast": ["Nicolas Cage", "Holly Hunter", "John Goodman", "William Forsythe", "Frances McDormand"],
+	"mainCast": [
+		"Nicolas Cage",
+		"Holly Hunter",
+		"John Goodman",
+		"William Forsythe",
+		"Frances McDormand"
+	],
 	"productionCompany": "Circle Films, 20th Century Fox",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,7 +34,17 @@
 	"awards": {
 		"wins": []
 	},
-	"editorial": {"becauseYouLiked":["el-gran-lebowski-1998","adaptation-el-ladron-de-orquideas-2002"],"related":["ace-ventura-un-detective-diferente-1994","small-time-crooks-2000","quemese-despues-de-leerse-2008","agarralo-como-puedas-1988"]},
-	"review": "Los hermanos Coen convierten una historia de secuestro en una persecución de dibujos animados con polvo, acentos imposibles y una imaginación visual que no afloja. Nicolas Cage y Holly Hunter forman una pareja desesperada pero querible, y John Goodman entra como una fuerza de caos que parece llegada de otra película. El relato corre con una velocidad alegre, aunque debajo de los chistes hay una pregunta concreta sobre el deseo de formar una familia y la fantasía de empezar de nuevo. Tiene exageraciones que podrían cansar, pero su mundo es tan preciso que la comedia no pierde identidad.",
-	"awards": {"wins": []}
+	"editorial": {
+		"becauseYouLiked": [
+			"el-gran-lebowski-1998",
+			"adaptation-el-ladron-de-orquideas-2002"
+		],
+		"related": [
+			"ace-ventura-un-detective-diferente-1994",
+			"small-time-crooks-2000",
+			"quemese-despues-de-leerse-2008",
+			"agarralo-como-puedas-1988"
+		]
+	},
+	"review": "Los hermanos Coen convierten una historia de secuestro en una persecución de dibujos animados con polvo, acentos imposibles y una imaginación visual que no afloja. Nicolas Cage y Holly Hunter forman una pareja desesperada pero querible, y John Goodman entra como una fuerza de caos que parece llegada de otra película. El relato corre con una velocidad alegre, aunque debajo de los chistes hay una pregunta concreta sobre el deseo de formar una familia y la fantasía de empezar de nuevo. Tiene exageraciones que podrían cansar, pero su mundo es tan preciso que la comedia no pierde identidad."
 }

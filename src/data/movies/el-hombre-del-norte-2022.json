@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 137,
 	"editorial": {
-	"becauseYouLiked": [
-		"mandy-2018",
-		"el-ultimo-mohicano-1992"
-	],
-	"related": [
-		"amos-del-universo-2026",
-		"avatar-the-way-of-water-2022",
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"harry-potter-and-the-sorcerers-stone-2001"
-	]
-},
+		"becauseYouLiked": [
+			"mandy-2018",
+			"el-ultimo-mohicano-1992"
+		],
+		"related": [
+			"amos-del-universo-2026",
+			"avatar-the-way-of-water-2022",
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"harry-potter-and-the-sorcerers-stone-2001"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -50,5 +50,6 @@
 		"Netflix",
 		"Apple TV"
 	],
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

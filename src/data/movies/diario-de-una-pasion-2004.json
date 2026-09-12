@@ -1,27 +1,49 @@
 {
-  "slug": "diario-de-una-pasion-2004",
-  "title": "Diario de una pasión",
-  "originalTitle": "The Notebook",
-  "synopsis": "Noah y Allie se enamoran durante un verano, pero las diferencias sociales y las decisiones familiares los separan. Años después, un hombre lee una historia de amor en un cuaderno para una mujer cuya memoria se escapa, mientras el pasado insiste en volver.",
-  "year": 2004,
-  "audienceRating": "+13",
-  "category": "Romance",
-  "genres": ["Romance", "Drama"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/2004/diario-de-una-pasion-2004.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "BjJcYdEOI0k",
-  "releasePlatform": "Otras plataformas",
-  "director": "Nick Cassavetes",
-  "mainCast": ["Ryan Gosling", "Rachel McAdams", "James Garner", "Gena Rowlands", "James Marsden"],
-  "productionCompany": "New Line Cinema",
-  "verdict": "recomendada",
-  "verdictLabel": "RECOMENDADA",
-  "awards": {"wins": []},
-  "editorial": {"becauseYouLiked":["loco-y-estupido-amor-2011","blue-valentine-2010"],"related":["eternal-sunshine-of-the-spotless-mind-2004","always-1989","moulin-rouge-2001","romeo-julieta-de-william-shakespeare-1996"]},
-  "review": "Diario de una pasión abraza el melodrama sin pedir disculpas: cartas, lluvia, reencuentros y una memoria que se vuelve el último territorio compartido. Nick Cassavetes alterna dos tiempos con una eficacia clásica y deja que Gosling y McAdams construyan una pareja de química evidente, aunque el guion empuja algunas lágrimas con demasiada fuerza. Su mejor idea está en el vínculo entre la historia contada y la historia vivida. Es sentimental, sí, pero sabe por qué funciona.",
-  "runtimeMinutes": 123,
-  "reviewPublishedAt": "2026-08-24"
+	"slug": "diario-de-una-pasion-2004",
+	"title": "Diario de una pasión",
+	"originalTitle": "The Notebook",
+	"synopsis": "Noah y Allie se enamoran durante un verano, pero las diferencias sociales y las decisiones familiares los separan. Años después, un hombre lee una historia de amor en un cuaderno para una mujer cuya memoria se escapa, mientras el pasado insiste en volver.",
+	"year": 2004,
+	"audienceRating": "+13",
+	"category": "Romance",
+	"genres": [
+		"Romance",
+		"Drama"
+	],
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/2004/diario-de-una-pasion-2004.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "BjJcYdEOI0k",
+	"releasePlatform": "Otras plataformas",
+	"director": "Nick Cassavetes",
+	"mainCast": [
+		"Ryan Gosling",
+		"Rachel McAdams",
+		"James Garner",
+		"Gena Rowlands",
+		"James Marsden"
+	],
+	"productionCompany": "New Line Cinema",
+	"verdict": "recomendada",
+	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"loco-y-estupido-amor-2011",
+			"blue-valentine-2010"
+		],
+		"related": [
+			"eternal-sunshine-of-the-spotless-mind-2004",
+			"always-1989",
+			"moulin-rouge-2001",
+			"romeo-julieta-de-william-shakespeare-1996"
+		]
+	},
+	"review": "Diario de una pasión abraza el melodrama sin pedir disculpas: cartas, lluvia, reencuentros y una memoria que se vuelve el último territorio compartido. Nick Cassavetes alterna dos tiempos con una eficacia clásica y deja que Gosling y McAdams construyan una pareja de química evidente, aunque el guion empuja algunas lágrimas con demasiada fuerza. Su mejor idea está en el vínculo entre la historia contada y la historia vivida. Es sentimental, sí, pero sabe por qué funciona.",
+	"runtimeMinutes": 123,
+	"reviewPublishedAt": "2026-08-24"
 }

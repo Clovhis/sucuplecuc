@@ -10,8 +10,8 @@
 		"Ciencia ficción",
 		"Acción & Aventura"
 	],
-	"country": "Estados Unidos",
-  "poster": "assets/posters/1982/e-t-the-extra-terrestrial-1982.webp",
+	"country": "US",
+	"poster": "assets/posters/1982/e-t-the-extra-terrestrial-1982.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "DSx8Jobx-Gs",
 	"releasePlatform": "HBO Max",
@@ -36,19 +36,20 @@
 	},
 	"runtimeMinutes": 115,
 	"editorial": {
-	"becauseYouLiked": [
-		"star-wars-episode-iv-a-new-hope-1977",
-		"a-i-artificial-intelligence-2001"
-	],
-	"related": [
-		"war-of-the-worlds-2005",
-		"star-wars-episode-v-the-empire-strikes-back-1980",
-		"minority-report-2002",
-		"star-wars-episode-vii-the-force-awakens-2015"
-	]
-},
-  "review": "Spielberg mira la llegada de un extraterrestre desde la altura emocional de un chico, y por eso E.T. nunca se siente como una película de efectos. La dirección encuentra aventura en una bicicleta, una cocina y un cuarto oscuro, mientras Henry Thomas hace creíble una amistad que podría haber caído en el almíbar. El ritmo se toma su tiempo para construir la casa y la familia antes de correr hacia el rescate. Es sentimental, sí, pero con una honestidad que todavía pega fuerte.",
+		"becauseYouLiked": [
+			"star-wars-episode-iv-a-new-hope-1977",
+			"a-i-artificial-intelligence-2001"
+		],
+		"related": [
+			"war-of-the-worlds-2005",
+			"star-wars-episode-v-the-empire-strikes-back-1980",
+			"minority-report-2002",
+			"star-wars-episode-vii-the-force-awakens-2015"
+		]
+	},
+	"review": "Spielberg mira la llegada de un extraterrestre desde la altura emocional de un chico, y por eso E.T. nunca se siente como una película de efectos. La dirección encuentra aventura en una bicicleta, una cocina y un cuarto oscuro, mientras Henry Thomas hace creíble una amistad que podría haber caído en el almíbar. El ritmo se toma su tiempo para construir la casa y la familia antes de correr hacia el rescate. Es sentimental, sí, pero con una honestidad que todavía pega fuerte.",
 	"synopsis": "Elliott encuentra a un extraterrestre perdido y lo esconde en su casa mientras intenta ayudarlo a volver con los suyos. La amistad entre los dos crece justo cuando el gobierno empieza a acercarse demasiado.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-10"
+	"reviewPublishedAt": "2026-03-10",
+	"isArgentinian": false
 }

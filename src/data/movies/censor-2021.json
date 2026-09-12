@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 84,
 	"editorial": {
-	"becauseYouLiked": [
-		"hereditary-2018",
-		"el-orfanato-2007"
-	],
-	"related": [
-		"la-casa-oscura-2020",
-		"the-shining-1980",
-		"midsommar-el-terror-no-espera-la-noche-2019",
-		"la-cabana-siniestra-2019"
-	]
-},
+		"becauseYouLiked": [
+			"hereditary-2018",
+			"el-orfanato-2007"
+		],
+		"related": [
+			"la-casa-oscura-2020",
+			"the-shining-1980",
+			"midsommar-el-terror-no-espera-la-noche-2019",
+			"la-cabana-siniestra-2019"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

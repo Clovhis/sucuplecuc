@@ -10,7 +10,7 @@
 		"Ciencia ficción",
 		"Fantasía"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/2015/star-wars-episode-vii-the-force-awakens-2015.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "5eKLdSDGh9k",
@@ -29,19 +29,20 @@
 	},
 	"runtimeMinutes": 138,
 	"editorial": {
-	"becauseYouLiked": [
-		"star-wars-episode-vi-return-of-the-jedi-1983",
-		"star-wars-episode-v-the-empire-strikes-back-1980"
-	],
-	"related": [
-		"star-wars-episode-iv-a-new-hope-1977",
-		"star-wars-episode-viii-the-last-jedi-2017",
-		"avatar-the-way-of-water-2022",
-		"e-t-the-extra-terrestrial-1982"
-	]
-},
+		"becauseYouLiked": [
+			"star-wars-episode-vi-return-of-the-jedi-1983",
+			"star-wars-episode-v-the-empire-strikes-back-1980"
+		],
+		"related": [
+			"star-wars-episode-iv-a-new-hope-1977",
+			"star-wars-episode-viii-the-last-jedi-2017",
+			"avatar-the-way-of-water-2022",
+			"e-t-the-extra-terrestrial-1982"
+		]
+	},
 	"review": "El despertar de la Fuerza revive Star Wars con la inteligencia de no arrancar negando lo que el público amaba: aventura espacial, humor entre compañeros y un villano que entra haciendo ruido. J. J. Abrams copia demasiados movimientos de Una nueva esperanza, y esa prudencia le quita sorpresa a la estructura. Pero Daisy Ridley y John Boyega transmiten curiosidad y nervio, mientras Adam Driver vuelve a Kylo Ren bastante más inestable que un antagonista de cartón. La dirección mantiene la energía y hace que cada descubrimiento se sienta físico. Es una vuelta segura, aunque genuinamente divertida.",
 	"synopsis": "Treinta años después de la Batalla de Endor, la Primera Orden se ha levantado del caído Imperio Galáctico y busca poner fin a la Nueva República. La Resistencia liderada por la General Leia Organa se opone a la Primera Orden. Leia también busca a su hermano gemelo perdido Luke Skywalker.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

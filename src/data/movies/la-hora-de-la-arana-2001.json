@@ -8,36 +8,43 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Thriller", "Crimen", "Drama"],
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2001/la-hora-de-la-arana-2001.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "rJsAVoKlbLk",
 	"releasePlatform": "Otras plataformas",
 	"director": "Lee Tamahori",
-	"mainCast": ["Morgan Freeman", "Monica Potter", "Michael Wincott", "Dylan Baker"],
+	"mainCast": [
+		"Morgan Freeman",
+		"Monica Potter",
+		"Michael Wincott",
+		"Dylan Baker"
+	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "zafa",
-	"verdictLabel": "",
+	"verdictLabel": "ZAFA",
 	"awards": {
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"un-dia-de-furia-1993",
-		"cassandra-s-dream-2007"
-	],
-	"related": [
-		"se7en-1995",
-		"el-cliente-1994",
-		"el-silencio-de-un-hombre-1967",
-		"la-negociacion-2025"
-	]
-},
-	"verdictLabel": "ZAFA",
+		"becauseYouLiked": [
+			"un-dia-de-furia-1993",
+			"cassandra-s-dream-2007"
+		],
+		"related": [
+			"se7en-1995",
+			"el-cliente-1994",
+			"el-silencio-de-un-hombre-1967",
+			"la-negociacion-2025"
+		]
+	},
 	"runtimeMinutes": 104,
-	"editorial": {"becauseYouLiked":["un-dia-de-furia-1993","cassandra-s-dream-2007"],"related":["se7en-1995","el-cliente-1994","el-silencio-de-un-hombre-1967","la-negociacion-2025"]},
 	"review": "La hora de la araña entiende que Alex Cross funciona mejor cuando piensa antes de disparar. Morgan Freeman vuelve a darle gravedad al detective, mientras Monica Potter aporta una agente marcada por la culpa y Michael Wincott disfruta cada pliegue de un villano que quiere convertir el crimen en espectáculo. Lee Tamahori sostiene un ritmo firme y filma bien las persecuciones, aunque el guion se estira con pistas demasiado convenientes y vueltas que no siempre cierran. No alcanza la tensión de los mejores thrillers del género, pero tiene oficio, oscuridad y una pareja central que mantiene el interés. Zafa, sobre todo para una noche de policial clásico."
 }

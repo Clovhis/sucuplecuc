@@ -10,7 +10,7 @@
 		"Ciencia ficcion"
 	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos, Japón",
+	"country": "GB, US, JP",
 	"audienceRating": "+16",
 	"runtimeMinutes": 109,
 	"poster": "assets/posters/2013/bienvenidos-al-fin-del-mundo-2013.webp",
@@ -35,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"shaun-of-the-dead-2004",
-		"perdona-que-te-moleste-2018"
-	],
-	"related": [
-		"palm-springs-2020",
-		"heroes-fuera-de-orbita-1999",
-		"the-truman-show-1998",
-		"loco-y-estupido-amor-2011"
-	]
-},
+		"becauseYouLiked": [
+			"shaun-of-the-dead-2004",
+			"perdona-que-te-moleste-2018"
+		],
+		"related": [
+			"palm-springs-2020",
+			"heroes-fuera-de-orbita-1999",
+			"the-truman-show-1998",
+			"loco-y-estupido-amor-2011"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

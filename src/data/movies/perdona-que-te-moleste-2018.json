@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 105,
 	"editorial": {
-	"becauseYouLiked": [
-		"langosta-2015",
-		"delicatessen-1991"
-	],
-	"related": [
-		"the-truman-show-1998",
-		"palm-springs-2020",
-		"el-espectaculo-de-imagenes-de-terror-de-rocky-1975",
-		"bienvenidos-al-fin-del-mundo-2013"
-	]
-},
+		"becauseYouLiked": [
+			"langosta-2015",
+			"delicatessen-1991"
+		],
+		"related": [
+			"the-truman-show-1998",
+			"palm-springs-2020",
+			"el-espectaculo-de-imagenes-de-terror-de-rocky-1975",
+			"bienvenidos-al-fin-del-mundo-2013"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

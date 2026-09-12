@@ -7,9 +7,12 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Supervivencia"],
+	"genres": [
+		"Drama",
+		"Supervivencia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"runtimeMinutes": 143,
 	"poster": "assets/posters/2000/naufrago-2000.webp",
@@ -17,22 +20,27 @@
 	"trailerYoutubeId": "qGuOZPwLayY",
 	"releasePlatform": "Paramount Plus",
 	"director": "Robert Zemeckis",
-	"mainCast": ["Tom Hanks", "Helen Hunt"],
+	"mainCast": [
+		"Tom Hanks",
+		"Helen Hunt"
+	],
 	"productionCompany": "20th Century Fox, DreamWorks Pictures, ImageMovers",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-vuelo-2012",
-		"atrapame-si-puedes-2002"
-	],
-	"related": [
-		"forrest-gump-1994",
-		"la-milla-verde-1999",
-		"camino-a-la-perdicion-2002",
-		"saving-private-ryan-1998"
-	]
-},
+		"becauseYouLiked": [
+			"el-vuelo-2012",
+			"atrapame-si-puedes-2002"
+		],
+		"related": [
+			"forrest-gump-1994",
+			"la-milla-verde-1999",
+			"camino-a-la-perdicion-2002",
+			"saving-private-ryan-1998"
+		]
+	},
 	"review": "La isla de Náufrago no funciona como una postal de aventura, sino como una máquina que le va quitando a Chuck todos los apoyos conocidos. Robert Zemeckis entiende que la tensión nace de tareas pequeñas —encender fuego, conseguir agua, sostener un calendario— y deja que el aislamiento cambie el ritmo de la película. Tom Hanks se banca largos tramos sin diálogo y convierte el cuerpo, la barba y la respiración en relato. El regreso agrega un tono más melancólico que triunfal: sobrevivir no alcanza para recuperar la vida anterior."
 }

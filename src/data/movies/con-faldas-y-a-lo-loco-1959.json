@@ -24,17 +24,17 @@
 	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 123,
 	"editorial": {
-	"becauseYouLiked": [
-		"the-apartment-1960",
-		"tin-cup-1996"
-	],
-	"related": [
-		"los-bufalos-de-durham-1988",
-		"loco-y-estupido-amor-2011",
-		"palm-springs-2020",
-		"amelie-2001"
-	]
-},
+		"becauseYouLiked": [
+			"the-apartment-1960",
+			"tin-cup-1996"
+		],
+		"related": [
+			"los-bufalos-de-durham-1988",
+			"loco-y-estupido-amor-2011",
+			"palm-springs-2020",
+			"amelie-2001"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -44,7 +44,7 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos",
+	"country": "US",
 	"releaseDate": "1959-03-19",
 	"subgenres": [
 		"RomCom"

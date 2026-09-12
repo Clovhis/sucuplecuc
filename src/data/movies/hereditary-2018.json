@@ -14,7 +14,7 @@
 		"Sobrenatural",
 		"Psicológico"
 	],
-  "poster": "assets/posters/2018/hereditary-2018.webp",
+	"poster": "assets/posters/2018/hereditary-2018.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "V6wWKNij_1M",
 	"director": "Ari Aster",
@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 128,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-orfanato-2007",
-		"la-casa-oscura-2020"
-	],
-	"related": [
-		"la-cabana-siniestra-2019",
-		"midsommar-el-terror-no-espera-la-noche-2019",
-		"la-bruja-2015",
-		"candyman-1992"
-	]
-},
+		"becauseYouLiked": [
+			"el-orfanato-2007",
+			"la-casa-oscura-2020"
+		],
+		"related": [
+			"la-cabana-siniestra-2019",
+			"midsommar-el-terror-no-espera-la-noche-2019",
+			"la-bruja-2015",
+			"candyman-1992"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -51,5 +51,6 @@
 		"Prime Video",
 		"Apple TV"
 	],
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

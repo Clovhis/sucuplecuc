@@ -8,34 +8,47 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+17",
 	"category": "Accion",
-	"genres": ["Accion", "Thriller", "Ciencia ficcion"],
+	"genres": [
+		"Accion",
+		"Thriller",
+		"Ciencia ficcion"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos, Reino Unido, Alemania",
+	"country": "US, GB",
 	"isArgentinian": false,
 	"poster": "assets/posters/2005/v-de-vendetta-2005.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "3ge0navn9E0",
 	"releasePlatform": "Netflix",
-	"releasePlatforms": ["Netflix", "Apple TV"],
+	"releasePlatforms": [
+		"Netflix",
+		"Apple TV"
+	],
 	"director": "James McTeigue",
-	"mainCast": ["Natalie Portman", "Hugo Weaving", "John Hurt"],
+	"mainCast": [
+		"Natalie Portman",
+		"Hugo Weaving",
+		"John Hurt"
+	],
 	"productionCompany": "Warner Bros. Pictures, Village Roadshow Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 132,
 	"editorial": {
-	"becauseYouLiked": [
-		"deja-vu-2006",
-		"darkman-1990"
-	],
-	"related": [
-		"el-demoledor-1993",
-		"the-matrix-1999",
-		"depredador-1987",
-		"robocop-el-defensor-del-futuro-1987"
-	]
-},
+		"becauseYouLiked": [
+			"deja-vu-2006",
+			"darkman-1990"
+		],
+		"related": [
+			"el-demoledor-1993",
+			"the-matrix-1999",
+			"depredador-1987",
+			"robocop-el-defensor-del-futuro-1987"
+		]
+	},
 	"review": "Una máscara de Guy Fawkes, una voz teatral y una ciudad controlada por el miedo alcanzan para que V de Vendetta construya un blockbuster político bastante más filoso de lo que suele ser el género. Natalie Portman sostiene la transformación de Evey con una vulnerabilidad que evita que todo sea discurso, y Hugo Weaving le presta al protagonista una presencia sin rostro. James McTeigue combina ideas potentes con escenas de acción muy eficaces, aunque el guion explica algunas consignas de más. Sus pronunciamientos políticos pueden incomodar, pero la película todavía entretiene y deja preguntas incómodas.",
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO"

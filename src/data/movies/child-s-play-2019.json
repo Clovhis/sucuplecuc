@@ -5,13 +5,15 @@
 	"year": 2019,
 	"releaseDate": "2019-06-21",
 	"category": "Terror",
-	"subgenres": ["Slasher"],
+	"subgenres": [
+		"Slasher"
+	],
 	"genres": [
 		"Misterio & Suspense",
 		"Terror",
 		"Drama"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2019/child-s-play-2019.webp",
 	"screenshots": [],
@@ -31,19 +33,19 @@
 	},
 	"runtimeMinutes": 90,
 	"editorial": {
-	"becauseYouLiked": [
-		"cult-of-chucky-2017",
-		"halloween-2018"
-	],
-	"related": [
-		"curse-of-chucky-2013",
-		"scream-2022",
-		"scream-vi-2023",
-		"scream-2-1997"
-	]
-},
+		"becauseYouLiked": [
+			"cult-of-chucky-2017",
+			"halloween-2018"
+		],
+		"related": [
+			"curse-of-chucky-2013",
+			"scream-2022",
+			"scream-vi-2023",
+			"scream-2-1997"
+		]
+	},
 	"review": "Muñeco diabólico cambia la maldición vudú por un asistente tecnológico defectuoso y encuentra ahí una razón atendible para existir lejos de la original. Lars Klevberg explota con gracia la idea de una casa llena de dispositivos que escuchan, obedecen y pueden salir muy mal. Mark Hamill le da a Buddi una voz infantil que vuelve más incómodo su aprendizaje de la violencia, mientras Gabriel Bateman sostiene el desconcierto del chico. El tono oscila entre sátira y gore sin dominar siempre ninguno de los dos. Aun así, es un remake con una amenaza doméstica concreta y varias ocurrencias propias.",
-  "synopsis": "Karen le regala a Andy un muñeco Buddi conectado a todos los dispositivos de la casa. Cuando el juguete aprende a eliminar lo que considera amenazas, la amistad se vuelve una pesadilla.",
+	"synopsis": "Karen le regala a Andy un muñeco Buddi conectado a todos los dispositivos de la casa. Cuando el juguete aprende a eliminar lo que considera amenazas, la amistad se vuelve una pesadilla.",
 	"audienceRating": "+17",
 	"reviewPublishedAt": "2026-03-09"
 }

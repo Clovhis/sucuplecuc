@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Acción", "Ciencia ficción", "Comedia"],
+	"genres": [
+		"Acción",
+		"Ciencia ficción",
+		"Comedia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos, Luxemburgo",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2024/borderlands-el-destino-del-universo-esta-en-juego-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "Zusyjsct4WA",
 	"releasePlatform": "Otras plataformas",
 	"director": "Eli Roth",
-	"mainCast": ["Cate Blanchett", "Kevin Hart", "Edgar Ramírez", "Jamie Lee Curtis", "Ariana Greenblatt"],
+	"mainCast": [
+		"Cate Blanchett",
+		"Kevin Hart",
+		"Edgar Ramírez",
+		"Jamie Lee Curtis",
+		"Ariana Greenblatt"
+	],
 	"productionCompany": "Lionsgate, Arad Productions, Picturestart",
 	"verdict": "no_recomendada",
 	"verdictLabel": "MUY FLOJA",
@@ -25,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"everything-everywhere-all-at-once-2022",
-		"poor-things-2023"
-	],
-	"related": [
-		"sonic-3-la-pelicula-2024",
-		"sonic-2-la-pelicula-2022",
-		"junior-1994",
-		"lego-star-wars-the-mandalorian-2026"
-	]
-},
+		"becauseYouLiked": [
+			"everything-everywhere-all-at-once-2022",
+			"poor-things-2023"
+		],
+		"related": [
+			"sonic-3-la-pelicula-2024",
+			"sonic-2-la-pelicula-2022",
+			"junior-1994",
+			"lego-star-wars-the-mandalorian-2026"
+		]
+	},
 	"runtimeMinutes": 102,
 	"review": "Borderlands llega con la energía de una adaptación que quiere resumir un videojuego entero en una sola misión. Cate Blanchett sostiene a Lilith con oficio y el elenco tiene química suficiente para algunos chistes, pero el guion apila criaturas, explicaciones y referencias sin darles ritmo propio. La aventura se deja ver por su color y su reparto, aunque rara vez encuentra una razón cinematográfica para existir más allá de la franquicia."
 }

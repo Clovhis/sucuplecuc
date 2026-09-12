@@ -1,55 +1,57 @@
 {
-  "slug": "inception-2010",
-  "title": "Inception",
-  "originalTitle": "Inception",
-  "year": 2010,
-  "category": "Ciencia ficcion",
-  "poster": "assets/posters/2010/inception-2010.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "YoHD9XEInc0",
-  "releasePlatform": "HBO Max",
-  "releasePlatforms": [
-    "HBO Max",
-    "Prime Video"
-  ],
-  "director": "Christopher Nolan",
-  "mainCast": [
-    "Leonardo DiCaprio",
-    "Joseph Gordon-Levitt",
-    "Marion Cotillard"
-  ],
-  "productionCompany": "Legendary Pictures, Syncopy",
-  "verdict": "recomendada",
-  "verdictLabel": "LEGENDARIA",
-  "runtimeMinutes": 148,
-  "awards": {
-    "wins": [
-      {
-        "award": "oscar",
-        "category": "Mejor fotografía",
-        "year": 2011
-      },
-      {
-        "award": "oscar",
-        "category": "Mejores efectos visuales",
-        "year": 2011
-      }
-    ]
-  },
-  "editorial": {
-	"becauseYouLiked": [
-		"interstellar-2014",
-		"looper-2012"
+	"slug": "inception-2010",
+	"title": "Inception",
+	"originalTitle": "Inception",
+	"year": 2010,
+	"category": "Ciencia ficcion",
+	"poster": "assets/posters/2010/inception-2010.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "YoHD9XEInc0",
+	"releasePlatform": "HBO Max",
+	"releasePlatforms": [
+		"HBO Max",
+		"Prime Video"
 	],
-	"related": [
-		"the-prestige-2006",
-		"districte-9-2009",
-		"avatar-2009",
-		"luna-2009"
-	]
-},
-  "review": "Inception sigue a un ladrón que entra en sueños ajenos y recibe la misión de implantar una idea en lugar de robarla. Christopher Nolan arma el rompecabezas con reglas claras, persecuciones y niveles temporales que sostienen el vértigo sin perder del todo la emoción; Leonardo DiCaprio le da al protagonista una melancolía que evita que sea puro cerebro. El reparto funciona como equipo de asalto y las imágenes de ciudades que se doblan siguen impresionando. A veces explica de más, pero el ritmo no afloja. Vale por un espectáculo complejo que también sabe cargar cada sueño con una pérdida.",
-  "synopsis": "Dom Cobb roba secretos al infiltrarse en los sueños de otras personas. Para recuperar su vida, acepta una misión casi imposible: implantar una idea en la mente de un heredero, junto a un equipo que deberá atravesar varios niveles de realidad.",
-  "audienceRating": "+13",
-  "reviewPublishedAt": "2026-03-11"
+	"director": "Christopher Nolan",
+	"mainCast": [
+		"Leonardo DiCaprio",
+		"Joseph Gordon-Levitt",
+		"Marion Cotillard"
+	],
+	"productionCompany": "Legendary Pictures, Syncopy",
+	"verdict": "recomendada",
+	"verdictLabel": "LEGENDARIA",
+	"runtimeMinutes": 148,
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor fotografía",
+				"year": 2011
+			},
+			{
+				"award": "oscar",
+				"category": "Mejores efectos visuales",
+				"year": 2011
+			}
+		]
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"interstellar-2014",
+			"looper-2012"
+		],
+		"related": [
+			"the-prestige-2006",
+			"districte-9-2009",
+			"avatar-2009",
+			"luna-2009"
+		]
+	},
+	"review": "Inception sigue a un ladrón que entra en sueños ajenos y recibe la misión de implantar una idea en lugar de robarla. Christopher Nolan arma el rompecabezas con reglas claras, persecuciones y niveles temporales que sostienen el vértigo sin perder del todo la emoción; Leonardo DiCaprio le da al protagonista una melancolía que evita que sea puro cerebro. El reparto funciona como equipo de asalto y las imágenes de ciudades que se doblan siguen impresionando. A veces explica de más, pero el ritmo no afloja. Vale por un espectáculo complejo que también sabe cargar cada sueño con una pérdida.",
+	"synopsis": "Dom Cobb roba secretos al infiltrarse en los sueños de otras personas. Para recuperar su vida, acepta una misión casi imposible: implantar una idea en la mente de un heredero, junto a un equipo que deberá atravesar varios niveles de realidad.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-03-11",
+	"country": "GB, US",
+	"isArgentinian": false
 }

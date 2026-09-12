@@ -5,13 +5,15 @@
 	"year": 2019,
 	"releaseDate": "2019-09-04",
 	"category": "Terror",
-	"subgenres": ["Sobrenatural"],
+	"subgenres": [
+		"Sobrenatural"
+	],
 	"genres": [
 		"Terror",
 		"Misterio & Suspense",
 		"Drama"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/2019/it-chapter-two-2019.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "xhJ5P7Up3jA",
@@ -30,19 +32,20 @@
 	},
 	"runtimeMinutes": 169,
 	"editorial": {
-	"becauseYouLiked": [
-		"it-2017",
-		"el-ritual-2017"
-	],
-	"related": [
-		"it-1990",
-		"midsommar-el-terror-no-espera-la-noche-2019",
-		"hereditary-2018",
-		"la-casa-oscura-2020"
-	]
-},
+		"becauseYouLiked": [
+			"it-2017",
+			"el-ritual-2017"
+		],
+		"related": [
+			"it-1990",
+			"midsommar-el-terror-no-espera-la-noche-2019",
+			"hereditary-2018",
+			"la-casa-oscura-2020"
+		]
+	},
 	"review": "IT: Capítulo 2 recupera a los Perdedores adultos y acierta al mostrar cómo cada uno sigue cargando el miedo de Derry, pero convierte ese reencuentro en una película demasiado larga. Muschietti tiene mano para las imágenes pesadillescas y para el afecto entre el grupo; Bill Hader y James Ransone le dan una energía muy viva a las escenas compartidas. El problema es el ritmo: repite la estructura de susto, recuerdo y susto hasta desgastarla. Cuando se concentra en la amistad y la culpa funciona; cuando infla el monstruo digital, pierde la precisión y la tristeza de la primera parte.",
 	"synopsis": "Ambientada 27 años después de los acontecimientos de la primera película, la historia se centra en el Club de los Perdedores y sus relaciones mientras se reúnen para destruirlo de una vez por todas.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-14"
+	"reviewPublishedAt": "2026-03-14",
+	"isArgentinian": false
 }

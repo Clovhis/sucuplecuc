@@ -7,33 +7,44 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+13",
 	"category": "Ciencia ficcion",
-	"genres": ["Ciencia ficcion", "Accion", "Aventura"],
+	"genres": [
+		"Ciencia ficcion",
+		"Accion",
+		"Aventura"
+	],
 	"subgenres": [],
-	"country": "Francia, Reino Unido, Estados Unidos",
+	"country": "FR, GB, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1997/el-quinto-elemento-1997.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "5Sg2RkdkSvk",
 	"releasePlatform": "Otras plataformas",
 	"director": "Luc Besson",
-	"mainCast": ["Bruce Willis", "Milla Jovovich", "Gary Oldman", "Ian Holm"],
+	"mainCast": [
+		"Bruce Willis",
+		"Milla Jovovich",
+		"Gary Oldman",
+		"Ian Holm"
+	],
 	"productionCompany": "Gaumont, Columbia Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 126,
 	"editorial": {
-	"becauseYouLiked": [
-		"looper-2012",
-		"a-i-artificial-intelligence-2001"
-	],
-	"related": [
-		"war-of-the-worlds-2005",
-		"minority-report-2002",
-		"back-to-the-future-part-ii-1989",
-		"buena-suerte-diviertete-no-mueras-2026"
-	]
-},
+		"becauseYouLiked": [
+			"looper-2012",
+			"a-i-artificial-intelligence-2001"
+		],
+		"related": [
+			"war-of-the-worlds-2005",
+			"minority-report-2002",
+			"back-to-the-future-part-ii-1989",
+			"buena-suerte-diviertete-no-mueras-2026"
+		]
+	},
 	"review": "Korben Dallas maneja un taxi volador, se cruza con una heroína de pelo naranja y termina cargando el destino del universo sin haberlo pedido. Luc Besson arma una ciencia ficción de colores saturados, criaturas raras y diseños imposibles, más cerca de la historieta que del realismo espacial. Bruce Willis pone cansancio al héroe, Milla Jovovich encuentra una energía física enorme y Gary Oldman disfruta un villano que parece salido de una ópera pop. La película fue dividida por su humor y su exceso, pero justamente ese exceso la volvió reconocible: no se parece demasiado a ninguna otra superproducción.",
 	"isPremiere": false,
 	"premiereLabel": ""

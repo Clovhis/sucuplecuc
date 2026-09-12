@@ -7,33 +7,45 @@
 	"reviewPublishedAt": "2026-08-10",
 	"audienceRating": "+16",
 	"category": "Crimen",
-	"genres": ["Crimen", "Drama", "Accion"],
+	"genres": [
+		"Crimen",
+		"Drama",
+		"Accion"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
-  "poster": "assets/posters/1995/fuego-contra-fuego-1995.webp",
+	"poster": "assets/posters/1995/fuego-contra-fuego-1995.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "PpAhjOvQVj0",
 	"releasePlatform": "Apple TV",
 	"director": "Michael Mann",
-	"mainCast": ["Al Pacino", "Robert De Niro", "Val Kilmer", "Jon Voight", "Tom Sizemore"],
+	"mainCast": [
+		"Al Pacino",
+		"Robert De Niro",
+		"Val Kilmer",
+		"Jon Voight",
+		"Tom Sizemore"
+	],
 	"productionCompany": "New Century Productions, Regency Enterprises, Forward Pass, Warner Bros.",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 170,
 	"editorial": {
-	"becauseYouLiked": [
-		"enemigos-publicos-2009",
-		"el-precio-del-poder-1983"
-	],
-	"related": [
-		"dia-de-entrenamiento-2001",
-		"casino-1995",
-		"el-demonio-vestido-de-azul-1995",
-		"atrapado-por-su-pasado-1993"
-	]
-},
+		"becauseYouLiked": [
+			"enemigos-publicos-2009",
+			"el-precio-del-poder-1983"
+		],
+		"related": [
+			"dia-de-entrenamiento-2001",
+			"casino-1995",
+			"el-demonio-vestido-de-azul-1995",
+			"atrapado-por-su-pasado-1993"
+		]
+	},
 	"review": "Michael Mann convierte una cacería policial en un duelo de profesionales que se reconocen incluso cuando están a punto de destruirse. Al Pacino y Robert De Niro trabajan desde registros opuestos, pero la película les da una intimidad inesperada en esa conversación que parece un descanso y en realidad funciona como declaración de principios. La ciudad nocturna, los vidrios, el ruido de las armas y la precisión de cada golpe construyen una tensión física enorme. Es larga, sí, pero cada desvío sobre la lealtad, el laburo y la soledad agranda el choque central en vez de distraerlo.",
 	"isPremiere": false,
 	"premiereLabel": ""

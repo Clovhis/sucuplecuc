@@ -7,16 +7,26 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+16",
 	"category": "Accion",
-	"genres": ["Acción & Aventura", "Misterio & Suspense", "Drama"],
+	"genres": [
+		"Acción & Aventura",
+		"Misterio & Suspense",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1994/el-especialista-1994.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "Jz5qa2091n0",
 	"releasePlatform": "Apple TV",
 	"director": "Luis Llosa",
-	"mainCast": ["Sylvester Stallone", "Sharon Stone", "James Woods", "Rod Steiger", "Eric Roberts"],
+	"mainCast": [
+		"Sylvester Stallone",
+		"Sharon Stone",
+		"James Woods",
+		"Rod Steiger",
+		"Eric Roberts"
+	],
 	"productionCompany": "Jerry Weintraub Productions, Warner Bros. Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "CUMPLE",
@@ -24,16 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"mission-impossible-fallout-2018",
-		"el-fugitivo-1993"
-	],
-	"related": [
-		"mission-impossible-1996",
-		"terminator-3-rise-of-the-machines-2003",
-		"el-ultimo-mohicano-1992",
-		"the-terminator-1984"
-	]
-},
+		"becauseYouLiked": [
+			"mission-impossible-fallout-2018",
+			"el-fugitivo-1993"
+		],
+		"related": [
+			"mission-impossible-1996",
+			"terminator-3-rise-of-the-machines-2003",
+			"el-ultimo-mohicano-1992",
+			"the-terminator-1984"
+		]
+	},
 	"review": "El especialista es acción noventera en estado concentrado: explosiones, mafiosos, romances de revancha y una banda sonora que no pide permiso. Sylvester Stallone funciona como héroe lacónico, mientras Sharon Stone le da a May Munro una mezcla efectiva de fragilidad, cálculo y deseo de justicia. Luis Llosa encadena set pieces vistosas y golpes de efecto sin buscar demasiada sutileza; el resultado es irregular, pero tiene la clase de exceso físico que define a su época."
 }

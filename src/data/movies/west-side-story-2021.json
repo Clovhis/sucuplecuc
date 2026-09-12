@@ -4,7 +4,11 @@
 	"originalTitle": "West Side Story",
 	"year": 2021,
 	"category": "Musical",
-	"genres": ["Musical", "Romance", "Drama"],
+	"genres": [
+		"Musical",
+		"Romance",
+		"Drama"
+	],
 	"poster": "assets/posters/2021/west-side-story-2021.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "A5GJLwWiYSg",
@@ -31,18 +35,20 @@
 	"runtimeMinutes": 156,
 	"review": "West Side Story retoma el musical clásico sin tratarlo como una pieza de museo. Steven Spielberg filma los bailes con espacio, movimiento y una energía que hace que los cuerpos cuenten la pelea entre bandas antes de que hablen. Rachel Zegler tiene presencia y vulnerabilidad como María; Ariana DeBose se come sus escenas con una bronca muy viva. El romance sigue siendo más idealizado que complejo y el metraje podría apretar un poco, pero la dirección encuentra tensión incluso en una esquina o una escalera. Vale por la puesta, las actuaciones y el modo en que actualiza el conflicto sin subrayarlo todo.",
 	"editorial": {
-	"becauseYouLiked": [
-		"la-la-land-2016",
-		"los-miserables-2012"
-	],
-	"related": [
-		"everyone-says-i-love-you-1996",
-		"the-great-ziegfeld-1936",
-		"the-terminal-2004",
-		"la-pianista-2001"
-	]
-},
+		"becauseYouLiked": [
+			"la-la-land-2016",
+			"los-miserables-2012"
+		],
+		"related": [
+			"everyone-says-i-love-you-1996",
+			"the-great-ziegfeld-1936",
+			"the-terminal-2004",
+			"la-pianista-2001"
+		]
+	},
 	"synopsis": "En el West Side neoyorquino de 1957, los Jets y los Sharks se disputan el barrio mientras sus familias enfrentan desalojos y racismo. Tony, ex Jet, se enamora de María, hermana del líder rival, y enciende un conflicto imposible de frenar.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

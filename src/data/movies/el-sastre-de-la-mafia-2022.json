@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 105,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-robo-del-siglo-2020",
-		"crime-101-2026"
-	],
-	"related": [
-		"tarde-de-perros-1975",
-		"plan-oculto-2006",
-		"nueve-reinas-2000",
-		"lu-pau-2026"
-	]
-},
+		"becauseYouLiked": [
+			"el-robo-del-siglo-2020",
+			"crime-101-2026"
+		],
+		"related": [
+			"tarde-de-perros-1975",
+			"plan-oculto-2006",
+			"nueve-reinas-2000",
+			"lu-pau-2026"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

@@ -48,7 +48,8 @@ export interface Movie {
 	category: string;
 	genres?: string[];
 	subgenres?: string[];
-	country?: string;
+	/** ISO 3166-1 alpha-2 production-country codes, comma-separated for co-productions. */
+	country: string;
 	isArgentinian?: boolean;
 	poster: string;
 	screenshots?: string[];

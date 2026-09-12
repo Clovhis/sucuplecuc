@@ -4,7 +4,7 @@
 	"originalTitle": "Blade Runner 2049",
 	"year": 2017,
 	"category": "Ciencia ficcion",
-  "poster": "assets/posters/2017/blade-runner-2049-2017.webp",
+	"poster": "assets/posters/2017/blade-runner-2049-2017.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "q6hl9G8LP6s",
 	"releasePlatform": "Otras plataformas",
@@ -34,19 +34,21 @@
 		]
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"arrival-2016",
-		"looper-2012"
-	],
-	"related": [
-		"buena-suerte-diviertete-no-mueras-2026",
-		"una-mirada-en-la-oscuridad-2006",
-		"war-of-the-worlds-2005",
-		"sunshine-2007"
-	]
-},
+		"becauseYouLiked": [
+			"arrival-2016",
+			"looper-2012"
+		],
+		"related": [
+			"buena-suerte-diviertete-no-mueras-2026",
+			"una-mirada-en-la-oscuridad-2006",
+			"war-of-the-worlds-2005",
+			"sunshine-2007"
+		]
+	},
 	"review": "Blade Runner 2049 sigue a un replicante policía que descubre una pista capaz de alterar el orden entre humanos y máquinas, pero su interés real está en la soledad de ese investigador. Denis Villeneuve estira el tiempo con confianza y construye un futuro enorme, silencioso y melancólico; Ryan Gosling trabaja desde la contención y Harrison Ford entra cuando la historia ya ganó peso. La fotografía y el sonido son descomunales, aunque el metraje largo puede sentirse pesado si no conectás con su clima contemplativo. Vale verla por su mundo y por una secuela que piensa antes de disparar.",
 	"synopsis": "En 2049, un tipo de androide bioingenieril similar al ser humano y conocido como replicante se ha integrado en la sociedad, ya que la vida vinculada a la bioingeniería resultó ser necesaria para asegurar la supervivencia de la humanidad.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-11"
+	"reviewPublishedAt": "2026-03-11",
+	"country": "CA, GB, HU, US",
+	"isArgentinian": false
 }

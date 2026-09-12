@@ -10,7 +10,7 @@
 		"Ciencia ficción",
 		"Acción & Aventura"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/2015/terminator-genisys-2015.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "9_GfCsZd34A",
@@ -29,19 +29,20 @@
 	},
 	"runtimeMinutes": 126,
 	"editorial": {
-	"becauseYouLiked": [
-		"war-of-the-worlds-2005",
-		"mission-impossible-fallout-2018"
-	],
-	"related": [
-		"jurassic-park-1993",
-		"jurassic-world-2015",
-		"sonic-2-la-pelicula-2022",
-		"mission-impossible-rogue-nation-2015"
-	]
-},
+		"becauseYouLiked": [
+			"war-of-the-worlds-2005",
+			"mission-impossible-fallout-2018"
+		],
+		"related": [
+			"jurassic-park-1993",
+			"jurassic-world-2015",
+			"sonic-2-la-pelicula-2022",
+			"mission-impossible-rogue-nation-2015"
+		]
+	},
 	"review": "Terminator Genisys intenta reordenar toda la cronología con viajes en el tiempo, versiones alternativas y guiños a las películas anteriores. Alan Taylor arranca con energía cuando recrea momentos conocidos y Arnold Schwarzenegger vuelve a vender muy bien al T-800, ahora con una veta protectora inesperada. El problema aparece cuando la película necesita explicar sus propias reglas: acumula cambios, villanos y revelaciones sin dejar que ninguno pese demasiado. Emilia Clarke y Jai Courtney cumplen, pero la relación central no termina de prender. Tiene un par de ideas divertidas, aunque el remix queda más aparatoso que emocionante.",
 	"synopsis": "John Connor envia a Kyle Reese al pasado para proteger a Sarah Connor, pero la linea temporal que encuentra no se parece a la esperada. Con un Terminator viejo como aliado, deben frenar una amenaza que mezcla pasado, presente y futuro.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

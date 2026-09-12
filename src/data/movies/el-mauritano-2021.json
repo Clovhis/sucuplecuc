@@ -8,17 +8,27 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Drama", "Thriller"],
+	"genres": [
+		"Drama",
+		"Thriller"
+	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos",
+	"country": "GB, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2021/el-mauritano-2021.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "74CP7BvQ1aE",
 	"releasePlatform": "Prime Video",
-	"releasePlatforms": ["Prime Video"],
+	"releasePlatforms": [
+		"Prime Video"
+	],
 	"director": "Kevin Macdonald",
-	"mainCast": ["Tahar Rahim", "Jodie Foster", "Benedict Cumberbatch", "Zachary Levi"],
+	"mainCast": [
+		"Tahar Rahim",
+		"Jodie Foster",
+		"Benedict Cumberbatch",
+		"Zachary Levi"
+	],
 	"productionCompany": "STXfilms",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -26,16 +36,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"los-secretos-del-poder-2009",
-		"memoria-2021"
-	],
-	"related": [
-		"acusados-1988",
-		"el-ultimo-duelo-2021",
-		"estoy-pensando-en-dejarlo-2020",
-		"las-siamesas-2020"
-	]
-},
+		"becauseYouLiked": [
+			"los-secretos-del-poder-2009",
+			"memoria-2021"
+		],
+		"related": [
+			"acusados-1988",
+			"el-ultimo-duelo-2021",
+			"estoy-pensando-en-dejarlo-2020",
+			"las-siamesas-2020"
+		]
+	},
 	"review": "Kevin Macdonald sostiene la película sobre una tensión que no necesita golpes de efecto: un hombre permanece encerrado mientras el expediente se estira y las instituciones cambian de versión. Tahar Rahim hace visible el desgaste sin convertirlo en una sola nota, y Jodie Foster le da a Nancy Hollander una mezcla de obstinación, precisión y cansancio moral. El film puede explicar de más algunos pasajes, pero conserva una indignación sobria y una defensa clara del derecho a ser juzgado."
 }

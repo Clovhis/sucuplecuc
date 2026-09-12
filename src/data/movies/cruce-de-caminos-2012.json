@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 140,
 	"editorial": {
-	"becauseYouLiked": [
-		"rashomon-1950",
-		"la-doncella-2016"
-	],
-	"related": [
-		"requiem-por-un-sueno-2000",
-		"prisioneros-2013",
-		"un-romance-peligroso-1998",
-		"nader-y-simin-una-separacion-2011"
-	]
-},
+		"becauseYouLiked": [
+			"rashomon-1950",
+			"la-doncella-2016"
+		],
+		"related": [
+			"requiem-por-un-sueno-2000",
+			"prisioneros-2013",
+			"un-romance-peligroso-1998",
+			"nader-y-simin-una-separacion-2011"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

@@ -35,18 +35,20 @@
 		"Romance"
 	],
 	"editorial": {
-	"becauseYouLiked": [
-		"mrs-miniver-1942",
-		"the-best-years-of-our-lives-1946"
-	],
-	"related": [
-		"gone-with-the-wind-1939",
-		"the-english-patient-1996",
-		"from-here-to-eternity-1953",
-		"patton-1970"
-	]
-},
+		"becauseYouLiked": [
+			"mrs-miniver-1942",
+			"the-best-years-of-our-lives-1946"
+		],
+		"related": [
+			"gone-with-the-wind-1939",
+			"the-english-patient-1996",
+			"from-here-to-eternity-1953",
+			"patton-1970"
+		]
+	},
 	"synopsis": "En la Casablanca de la Segunda Guerra Mundial, Rick Blaine dirige un café que recibe refugiados y oportunistas. La llegada de Ilsa, su antiguo amor, lo obliga a elegir entre recuperar una historia perdida o ayudarla a escapar con un líder de la resistencia.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-08"
+	"reviewPublishedAt": "2026-03-08",
+	"country": "US",
+	"isArgentinian": false
 }

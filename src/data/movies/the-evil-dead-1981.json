@@ -7,34 +7,48 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+18",
 	"category": "Terror",
-	"genres": ["Terror"],
-	"subgenres": ["Gore", "Sobrenatural"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Terror"
+	],
+	"subgenres": [
+		"Gore",
+		"Sobrenatural"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1981/the-evil-dead-1981.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "D0IzN6NZkqY",
 	"releasePlatform": "HBO Max",
-	"releasePlatforms": ["HBO Max", "Apple TV"],
+	"releasePlatforms": [
+		"HBO Max",
+		"Apple TV"
+	],
 	"director": "Sam Raimi",
-	"mainCast": ["Bruce Campbell", "Ellen Sandweiss", "Betsy Baker"],
+	"mainCast": [
+		"Bruce Campbell",
+		"Ellen Sandweiss",
+		"Betsy Baker"
+	],
 	"productionCompany": "Renaissance Pictures, New Line Cinema",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 85,
 	"editorial": {
-	"becauseYouLiked": [
-		"terrorificamente-muertos-1987",
-		"the-descent-2005"
-	],
-	"related": [
-		"el-mas-alla-1981",
-		"mandy-2018",
-		"evil-dead-en-llamas-2026",
-		"el-ejercito-de-las-tinieblas-1992"
-	]
-},
+		"becauseYouLiked": [
+			"terrorificamente-muertos-1987",
+			"the-descent-2005"
+		],
+		"related": [
+			"el-mas-alla-1981",
+			"mandy-2018",
+			"evil-dead-en-llamas-2026",
+			"el-ejercito-de-las-tinieblas-1992"
+		]
+	},
 	"review": "Una cabaña, un grabador y cinco amigos con muy malas decisiones: Sam Raimi usa esos elementos baratos como combustible para una película que parece filmada con una cámara poseída. Bruce Campbell todavía está encontrando a Ash, pero su cuerpo ya funciona como instrumento de slapstick, pánico y supervivencia. La cámara se mueve por el bosque, atraviesa paredes y convierte cada golpe en una idea formal. Tiene una crudeza evidente y algunas decisiones envejecieron mal, aunque la imaginación visual, el maquillaje artesanal y el ritmo explican su lugar de culto. Es un debut desprolijo, feroz y sorprendentemente inventivo.",
 	"isPremiere": false,
 	"premiereLabel": ""

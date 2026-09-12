@@ -8,35 +8,59 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+16",
 	"category": "Thriller",
-	"genres": ["Thriller psicológico", "Crimen", "Drama", "Acción"],
-	"subgenres": ["Psicológico"],
-	"country": "Francia, Reino Unido",
+	"genres": [
+		"Thriller psicológico",
+		"Crimen",
+		"Drama",
+		"Acción"
+	],
+	"subgenres": [
+		"Psicológico"
+	],
+	"country": "FR, GB",
 	"isArgentinian": false,
 	"poster": "assets/posters/2017/nunca-estaras-a-salvo-2017.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "R8oYYg75Qvg",
 	"releasePlatform": "Otras plataformas",
 	"director": "Lynne Ramsay",
-	"mainCast": ["Joaquin Phoenix", "Judith Roberts", "John Doman", "Alessandro Nivola"],
+	"mainCast": [
+		"Joaquin Phoenix",
+		"Judith Roberts",
+		"John Doman",
+		"Alessandro Nivola"
+	],
 	"productionCompany": "Film4, Why Not Productions, Element Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
-	"awards": {"wins": [
-		{"award": "cannes", "category": "Mejor actor", "recipient": "Joaquin Phoenix", "year": 2017},
-		{"award": "cannes", "category": "Mejor guion", "recipient": "Lynne Ramsay", "year": 2017}
-	]},
+	"awards": {
+		"wins": [
+			{
+				"award": "cannes",
+				"category": "Mejor actor",
+				"recipient": "Joaquin Phoenix",
+				"year": 2017
+			},
+			{
+				"award": "cannes",
+				"category": "Mejor guion",
+				"recipient": "Lynne Ramsay",
+				"year": 2017
+			}
+		]
+	},
 	"runtimeMinutes": 89,
 	"editorial": {
-	"becauseYouLiked": [
-		"prisioneros-2013",
-		"culpable-2021"
-	],
-	"related": [
-		"zodiaco-2007",
-		"se7en-1995",
-		"la-doncella-2016",
-		"primicia-mortal-2014"
-	]
-},
+		"becauseYouLiked": [
+			"prisioneros-2013",
+			"culpable-2021"
+		],
+		"related": [
+			"zodiaco-2007",
+			"se7en-1995",
+			"la-doncella-2016",
+			"primicia-mortal-2014"
+		]
+	},
 	"review": "Lynne Ramsay cuenta este descenso criminal como una serie de impactos, recuerdos y sonidos que llegan antes que la explicación. Phoenix hace de Joe un hombre enorme y quebrado, alguien capaz de una violencia brutal y, al mismo tiempo, de una ternura que apenas se permite mostrar. La película corta la acción en el momento menos esperado y convierte la elipsis en una forma de trauma. Su duración breve no la vuelve ligera: es seca, perturbadora y muy precisa en la manera de sugerir que el pasado nunca desaparece, sólo cambia de habitación."
 }

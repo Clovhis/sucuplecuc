@@ -25,17 +25,17 @@
 	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 121,
 	"editorial": {
-	"becauseYouLiked": [
-		"tango-feroz-la-leyenda-de-tanguito-1993",
-		"retrato-de-una-dama-1996"
-	],
-	"related": [
-		"sweet-and-lowdown-1999",
-		"la-pianista-2001",
-		"las-zapatillas-rojas-1948",
-		"johnny-june-pasion-y-locura-2005"
-	]
-},
+		"becauseYouLiked": [
+			"tango-feroz-la-leyenda-de-tanguito-1993",
+			"retrato-de-una-dama-1996"
+		],
+		"related": [
+			"sweet-and-lowdown-1999",
+			"la-pianista-2001",
+			"las-zapatillas-rojas-1948",
+			"johnny-june-pasion-y-locura-2005"
+		]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -64,5 +64,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Australia"
+	"country": "AU",
+	"isArgentinian": false
 }

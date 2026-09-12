@@ -4,8 +4,10 @@
 	"originalTitle": "Memento",
 	"year": 2000,
 	"category": "Thriller",
-	"subgenres": ["Psicológico"],
-  "poster": "assets/posters/2000/memento-2000.webp",
+	"subgenres": [
+		"Psicológico"
+	],
+	"poster": "assets/posters/2000/memento-2000.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "4CV41hoyS8A",
 	"releasePlatform": "Otras plataformas",
@@ -23,19 +25,21 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"psicopata-americano-2000",
-		"pi-fe-en-el-caos-1998"
-	],
-	"related": [
-		"mulholland-drive-2001",
-		"el-maquinista-2004",
-		"shutter-island-2010",
-		"desaparecida-1988"
-	]
-},
-  "review": "Christopher Nolan cuenta la búsqueda de Leonard con escenas que avanzan hacia atrás y otras que van hacia adelante, una estructura que reproduce la desorientación de un hombre sin memoria reciente. Guy Pearce sostiene la película desde la vulnerabilidad y la obsesión, sin hacer de Leonard un simple rompecabezas. La puesta es seca y clara incluso cuando el relato complica las piezas, y Carrie-Anne Moss y Joe Pantoliano aprovechan bien la ambigüedad. El truco formal tiene sentido: obliga a desconfiar de la información y de quien la cuenta.",
+		"becauseYouLiked": [
+			"psicopata-americano-2000",
+			"pi-fe-en-el-caos-1998"
+		],
+		"related": [
+			"mulholland-drive-2001",
+			"el-maquinista-2004",
+			"shutter-island-2010",
+			"desaparecida-1988"
+		]
+	},
+	"review": "Christopher Nolan cuenta la búsqueda de Leonard con escenas que avanzan hacia atrás y otras que van hacia adelante, una estructura que reproduce la desorientación de un hombre sin memoria reciente. Guy Pearce sostiene la película desde la vulnerabilidad y la obsesión, sin hacer de Leonard un simple rompecabezas. La puesta es seca y clara incluso cuando el relato complica las piezas, y Carrie-Anne Moss y Joe Pantoliano aprovechan bien la ambigüedad. El truco formal tiene sentido: obliga a desconfiar de la información y de quien la cuenta.",
 	"synopsis": "Leonard no puede crear recuerdos nuevos desde el ataque en que murió su esposa y usa fotos, notas y tatuajes para perseguir al responsable sin saber en quién confiar.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-11"
+	"reviewPublishedAt": "2026-03-11",
+	"country": "US",
+	"isArgentinian": false
 }

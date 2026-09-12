@@ -8,31 +8,44 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "ATP",
 	"category": "Fantasia",
-	"genres": ["Fantasia", "Aventura", "Romance", "Drama"],
+	"genres": [
+		"Fantasia",
+		"Aventura",
+		"Romance",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1985/lady-halcon-1985.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "b0BTs66JAgM",
 	"releasePlatform": "Disney Plus",
 	"director": "Richard Donner",
-	"mainCast": ["Matthew Broderick", "Rutger Hauer", "Michelle Pfeiffer", "Alfred Molina", "John Wood"],
+	"mainCast": [
+		"Matthew Broderick",
+		"Rutger Hauer",
+		"Michelle Pfeiffer",
+		"Alfred Molina",
+		"John Wood"
+	],
 	"productionCompany": "20th Century Fox",
 	"verdict": "recomendada",
 	"verdictLabel": "BUENA AVENTURA",
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-caballero-verde-2021",
-		"los-goonies-1985"
-	],
-	"related": [
-		"the-purple-rose-of-cairo-1985",
-		"la-historia-sin-fin-1984",
-		"the-fall-el-sueno-de-alexandria-2006",
-		"la-princesa-prometida-1987"
-	]
-},
+		"becauseYouLiked": [
+			"el-caballero-verde-2021",
+			"los-goonies-1985"
+		],
+		"related": [
+			"the-purple-rose-of-cairo-1985",
+			"la-historia-sin-fin-1984",
+			"the-fall-el-sueno-de-alexandria-2006",
+			"la-princesa-prometida-1987"
+		]
+	},
 	"review": "Lady Halcón mezcla aventura medieval, romance imposible y fantasía sobrenatural con una convicción visual que todavía la distingue. Richard Donner construye un mundo de castillos, bosques y cielos nublados donde la maldición de Isabeau y Navarre nunca es sólo un truco de guion: es la forma concreta que toma una separación injusta. Michelle Pfeiffer aporta una presencia delicada pero firme, mientras Rutger Hauer y Matthew Broderick sostienen el tono de leyenda y camaradería. Hay exceso de solemnidad y una banda sonora muy de su época, pero el corazón de la historia sigue latiendo."
 }

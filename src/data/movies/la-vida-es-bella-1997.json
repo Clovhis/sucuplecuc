@@ -7,40 +7,69 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia", "Historia"],
+	"genres": [
+		"Drama",
+		"Comedia",
+		"Historia"
+	],
 	"subgenres": [],
-	"country": "Italia",
+	"country": "IT",
 	"isArgentinian": false,
 	"poster": "assets/posters/1997/la-vida-es-bella-1997.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "e-Z062tRdbQ",
 	"releasePlatform": "Otras plataformas",
 	"director": "Roberto Benigni",
-	"mainCast": ["Roberto Benigni", "Nicoletta Braschi", "Giorgio Cantarini", "Giustino Durano"],
+	"mainCast": [
+		"Roberto Benigni",
+		"Nicoletta Braschi",
+		"Giorgio Cantarini",
+		"Giustino Durano"
+	],
 	"productionCompany": "Cecchi Gori Group Tiger Cinematografica, Miramax",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
 	"awards": {
 		"wins": [
-			{ "award": "oscar", "category": "Mejor actor", "recipient": "Roberto Benigni", "year": 1999 },
-			{ "award": "oscar", "category": "Mejor película de habla no inglesa", "recipient": "Italia", "year": 1999 },
-			{ "award": "oscar", "category": "Mejor banda sonora original dramática", "recipient": "Nicola Piovani", "year": 1999 },
-			{ "award": "cannes", "category": "Gran Premio", "recipient": "Roberto Benigni", "year": 1998 }
+			{
+				"award": "oscar",
+				"category": "Mejor actor",
+				"recipient": "Roberto Benigni",
+				"year": 1999
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor película de habla no inglesa",
+				"recipient": "Italia",
+				"year": 1999
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor banda sonora original dramática",
+				"recipient": "Nicola Piovani",
+				"year": 1999
+			},
+			{
+				"award": "cannes",
+				"category": "Gran Premio",
+				"recipient": "Roberto Benigni",
+				"year": 1998
+			}
 		]
 	},
 	"runtimeMinutes": 116,
 	"editorial": {
-	"becauseYouLiked": [
-		"terms-of-endearment-1983",
-		"boogie-nights-1997"
-	],
-	"related": [
-		"la-locura-del-rey-jorge-1994",
-		"going-my-way-1944",
-		"fue-la-mano-de-dios-2021",
-		"hannah-and-her-sisters-1986"
-	]
-},
+		"becauseYouLiked": [
+			"terms-of-endearment-1983",
+			"boogie-nights-1997"
+		],
+		"related": [
+			"la-locura-del-rey-jorge-1994",
+			"going-my-way-1944",
+			"fue-la-mano-de-dios-2021",
+			"hannah-and-her-sisters-1986"
+		]
+	},
 	"review": "Guido entra a la primera mitad de la película como un torbellino de gestos, coincidencias y frases imposibles, y Roberto Benigni consigue que esa energía no parezca un simple truco. Después, el relato cambia de tono y usa el juego como una forma desesperada de cuidado, una decisión que emocionó a muchísima gente y también generó discusiones sobre cómo representar el Holocausto. La transición no es sutil y por momentos el humor queda al borde del golpe bajo, pero la relación entre padre e hijo tiene una sinceridad que sostiene el conjunto. Es una película sentimental, discutible y muy difícil de olvidar.",
 	"isPremiere": false,
 	"premiereLabel": ""

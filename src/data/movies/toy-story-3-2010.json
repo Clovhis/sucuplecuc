@@ -7,9 +7,13 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Animación",
-	"genres": ["Animación", "Aventura", "Familiar"],
+	"genres": [
+		"Animación",
+		"Aventura",
+		"Familiar"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"runtimeMinutes": 103,
 	"poster": "assets/posters/2010/toy-story-3-2010.webp",
@@ -17,22 +21,29 @@
 	"trailerYoutubeId": "ewlGsj7S3nA",
 	"releasePlatform": "Disney Plus",
 	"director": "Lee Unkrich",
-	"mainCast": ["Tom Hanks", "Tim Allen", "Joan Cusack", "Wallace Shawn"],
+	"mainCast": [
+		"Tom Hanks",
+		"Tim Allen",
+		"Joan Cusack",
+		"Wallace Shawn"
+	],
 	"productionCompany": "Pixar Animation Studios, Walt Disney Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "IMPERDIBLE",
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"atlantis-el-imperio-perdido-2001",
-		"vecinos-invasores-2006"
-	],
-	"related": [
-		"enredados-2010",
-		"megamente-2010",
-		"mi-villano-favorito-2010",
-		"cars-2-2011"
-	]
-},
+		"becauseYouLiked": [
+			"atlantis-el-imperio-perdido-2001",
+			"vecinos-invasores-2006"
+		],
+		"related": [
+			"enredados-2010",
+			"megamente-2010",
+			"mi-villano-favorito-2010",
+			"cars-2-2011"
+		]
+	},
 	"review": "Toy Story 3 toma una despedida que podría haber sido puro cálculo comercial y la convierte en una película sobre soltar sin borrar lo vivido. Lee Unkrich equilibra la aventura de escape con una melancolía muy concreta: los juguetes ya no pertenecen al cuarto de Andy, pero tampoco dejan de ser quienes fueron allí. La animación mantiene el vértigo de la saga y suma una secuencia de peligro que pega más fuerte de lo esperable. Woody, con la voz de Tom Hanks, sigue siendo el corazón; esta vez su heroísmo consiste en aceptar que el grupo necesita otro destino."
 }

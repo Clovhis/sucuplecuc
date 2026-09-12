@@ -8,17 +8,30 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Ciencia ficcion",
-	"genres": ["Ciencia ficcion", "Accion", "Thriller"],
+	"genres": [
+		"Ciencia ficcion",
+		"Accion",
+		"Thriller"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1991/star-trek-vi-aquel-pais-desconocido-1991.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "RYA2q2Sm_Jo",
 	"releasePlatform": "Netflix",
-	"releasePlatforms": ["Netflix", "Apple TV"],
+	"releasePlatforms": [
+		"Netflix",
+		"Apple TV"
+	],
 	"director": "Nicholas Meyer",
-	"mainCast": ["William Shatner", "Leonard Nimoy", "Christopher Plummer", "David Warner", "Kim Cattrall"],
+	"mainCast": [
+		"William Shatner",
+		"Leonard Nimoy",
+		"Christopher Plummer",
+		"David Warner",
+		"Kim Cattrall"
+	],
 	"productionCompany": "Paramount Pictures",
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
@@ -28,16 +41,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"estan-vivos-1988",
-		"districte-9-2009"
-	],
-	"related": [
-		"desafio-total-1990",
-		"the-matrix-1999",
-		"looper-2012",
-		"robocop-el-defensor-del-futuro-1987"
-	]
-},
+		"becauseYouLiked": [
+			"estan-vivos-1988",
+			"districte-9-2009"
+		],
+		"related": [
+			"desafio-total-1990",
+			"the-matrix-1999",
+			"looper-2012",
+			"robocop-el-defensor-del-futuro-1987"
+		]
+	},
 	"review": "Nicholas Meyer convierte la despedida de la tripulación clásica en una aventura de ciencia ficción con peso político. La tensión entre Kirk y los klingon funciona porque el conflicto no depende sólo de torpedos: habla de prejuicios, represalias y de la incomodidad que produce cambiar de época. Christopher Plummer compone un villano solemne y peligroso, mientras David Warner le da una dimensión trágica a la negociación. Hay diálogos algo enfáticos y una puesta en escena hija de su tiempo, pero la película sostiene el misterio, el humor de la tripulación y una sensación genuina de cierre."
 }

@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 167,
 	"editorial": {
-	"becauseYouLiked": [
-		"tierra-de-crimen-2026",
-		"el-reverendo-2017"
-	],
-	"related": [
-		"fight-club-1999",
-		"estoy-pensando-en-dejarlo-2020",
-		"las-siamesas-2020",
-		"la-caza-2012"
-	]
-},
+		"becauseYouLiked": [
+			"tierra-de-crimen-2026",
+			"el-reverendo-2017"
+		],
+		"related": [
+			"fight-club-1999",
+			"estoy-pensando-en-dejarlo-2020",
+			"las-siamesas-2020",
+			"la-caza-2012"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Alemania"
+	"country": "DE",
+	"isArgentinian": false
 }

@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 144,
 	"editorial": {
-	"becauseYouLiked": [
-		"la-pianista-2001",
-		"la-semilla-del-fruto-sagrado-2024"
-	],
-	"related": [
-		"la-noche-de-12-anos-2018",
-		"funny-people-2009",
-		"enter-the-void-2009",
-		"reign-over-me-2007"
-	]
-},
+		"becauseYouLiked": [
+			"la-pianista-2001",
+			"la-semilla-del-fruto-sagrado-2024"
+		],
+		"related": [
+			"la-noche-de-12-anos-2018",
+			"funny-people-2009",
+			"enter-the-void-2009",
+			"reign-over-me-2007"
+		]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -53,5 +53,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Austria"
+	"country": "AT",
+	"isArgentinian": false
 }

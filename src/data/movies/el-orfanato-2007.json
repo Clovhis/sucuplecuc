@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 105,
 	"editorial": {
-	"becauseYouLiked": [
-		"hereditary-2018",
-		"la-casa-oscura-2020"
-	],
-	"related": [
-		"candyman-1992",
-		"lo-que-la-verdad-esconde-2000",
-		"babadook-2014",
-		"la-bruja-2015"
-	]
-},
+		"becauseYouLiked": [
+			"hereditary-2018",
+			"la-casa-oscura-2020"
+		],
+		"related": [
+			"candyman-1992",
+			"lo-que-la-verdad-esconde-2000",
+			"babadook-2014",
+			"la-bruja-2015"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "España"
+	"country": "ES",
+	"isArgentinian": false
 }

@@ -7,17 +7,30 @@
 	"reviewPublishedAt": "2026-08-23",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"genres": ["Thriller", "Misterio", "Accion"],
+	"genres": [
+		"Thriller",
+		"Misterio",
+		"Accion"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2018/el-pasajero-2018.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "g1RMoMrr3SM",
 	"releasePlatform": "Apple TV",
-	"releasePlatforms": ["Apple TV", "Prime Video"],
+	"releasePlatforms": [
+		"Apple TV",
+		"Prime Video"
+	],
 	"director": "Jaume Collet-Serra",
-	"mainCast": ["Liam Neeson", "Vera Farmiga", "Patrick Wilson", "Sam Neill", "Jonathan Banks"],
+	"mainCast": [
+		"Liam Neeson",
+		"Vera Farmiga",
+		"Patrick Wilson",
+		"Sam Neill",
+		"Jonathan Banks"
+	],
 	"productionCompany": "StudioCanal, The Picture Company",
 	"verdict": "zafa",
 	"verdictLabel": "SE DEJA VER",
@@ -26,17 +39,17 @@
 	},
 	"runtimeMinutes": 105,
 	"editorial": {
-	"becauseYouLiked": [
-		"una-noche-para-sobrevivir-2015",
-		"munich-2005"
-	],
-	"related": [
-		"duel-1971",
-		"infierno-blanco-2012",
-		"bridge-of-spies-2015",
-		"jurassic-park-1993"
-	]
-},
+		"becauseYouLiked": [
+			"una-noche-para-sobrevivir-2015",
+			"munich-2005"
+		],
+		"related": [
+			"duel-1971",
+			"infierno-blanco-2012",
+			"bridge-of-spies-2015",
+			"jurassic-park-1993"
+		]
+	},
 	"review": "El pasajero vuelve a juntar a Liam Neeson y Jaume Collet-Serra para un acertijo en espacio reducido, esta vez arriba de un tren repleto de gente que puede estar mintiendo. La película se divierte con esa condición de juego y Vera Farmiga abre el conflicto con una serenidad que incomoda. Neeson vende bien el agotamiento de Michael, un hombre común que no entiende la escala de lo que aceptó. La explicación final se enreda más de la cuenta y algunas escenas de acción rozan lo imposible, pero el viaje sostiene la curiosidad hasta la última estación.",
 	"isPremiere": false,
 	"premiereLabel": ""

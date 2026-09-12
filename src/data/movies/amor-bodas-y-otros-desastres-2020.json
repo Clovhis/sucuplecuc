@@ -8,23 +8,41 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Comedia",
-	"genres": ["Comedia", "Romance"],
+	"genres": [
+		"Comedia",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2020/amor-bodas-y-otros-desastres-2020.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "GkKenPum1ts",
 	"releasePlatform": "Apple TV",
 	"director": "Dennis Dugan",
-	"mainCast": ["Maggie Grace", "Jeremy Irons", "Diane Keaton"],
+	"mainCast": [
+		"Maggie Grace",
+		"Jeremy Irons",
+		"Diane Keaton"
+	],
 	"productionCompany": "Wrigley Pictures",
 	"verdict": "no_recomendada",
 	"verdictLabel": "MALA",
 	"awards": {
 		"wins": []
 	},
-	"editorial": {"becauseYouLiked":["annie-hall-1977","baby-tu-vales-mucho-1987"],"related":["suenos-de-un-seductor-1972","la-joya-de-la-familia-2005","aquel-excitante-curso-1982","loco-y-estupido-amor-2011"]},
+	"editorial": {
+		"becauseYouLiked": [
+			"annie-hall-1977",
+			"baby-tu-vales-mucho-1987"
+		],
+		"related": [
+			"suenos-de-un-seductor-1972",
+			"la-joya-de-la-familia-2005",
+			"aquel-excitante-curso-1982",
+			"loco-y-estupido-amor-2011"
+		]
+	},
 	"review": "Amor, bodas y otros desastres arma una comedia coral alrededor de gente que vende finales felices mientras no sabe qué hacer con sus propios vínculos. Diane Keaton tiene una presencia reconocible dentro del conjunto, pero el guion reparte tantas historias y chistes que casi ninguna logra crecer. Hay una intención amable y algún momento simpático, aunque la suma se siente mecánica y demasiado dependiente de personajes dibujados con pocas líneas.",
 	"runtimeMinutes": 96
 }

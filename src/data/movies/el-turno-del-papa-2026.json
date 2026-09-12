@@ -8,32 +8,42 @@
 	"reviewPublishedAt": "2026-08-14",
 	"audienceRating": "ATP",
 	"category": "Comedia",
-	"genres": ["Comedia", "Familia"],
+	"genres": [
+		"Comedia",
+		"Familia"
+	],
 	"subgenres": [],
-	"country": "Brasil",
+	"country": "BR",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/el-turno-del-papa-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "f1Gt9HgmgYc",
 	"director": "Carol Durão",
-	"mainCast": ["Rafael Infante", "Dani Calabresa", "Xande Valois", "Bella Alelaf"],
+	"mainCast": [
+		"Rafael Infante",
+		"Dani Calabresa",
+		"Xande Valois",
+		"Bella Alelaf"
+	],
 	"productionCompany": "Glaz Entretenimento, +Galeria y Telefilms",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
 	"runtimeMinutes": 102,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"marianela-y-el-cadaver-2024",
-		"home-alone-1990"
-	],
-	"related": [
-		"coyote-vs-acme-2026",
-		"las-ovejas-detectives-2026",
-		"babe-el-cerdito-valiente-1995",
-		"53-domingos-2026"
-	]
-},
+		"becauseYouLiked": [
+			"marianela-y-el-cadaver-2024",
+			"home-alone-1990"
+		],
+		"related": [
+			"coyote-vs-acme-2026",
+			"las-ovejas-detectives-2026",
+			"babe-el-cerdito-valiente-1995",
+			"53-domingos-2026"
+		]
+	},
 	"review": "El turno del papá sabe qué comedia familiar quiere ser: una sucesión de pequeños desastres que obliga a un adulto seguro de sí mismo a aceptar que cuidar también significa improvisar y pedir ayuda. Carol Durão mantiene el caos en un registro amable, con ritmo de sitcom y bastante cariño por el agotamiento cotidiano de una casa llena de chicos.\n\nRafael Infante y Dani Calabresa sostienen una pareja creíble incluso cuando la película los separa, y el elenco infantil aporta energía sin cargar con todo el peso del chiste. No busca una mirada nueva sobre la crianza, pero encuentra un par de situaciones honestas entre los golpes de efecto y deja una comedia liviana para ver en familia.",
 	"releasePlatform": "Netflix",
 	"isPremiere": true,

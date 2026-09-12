@@ -5,11 +5,13 @@
 	"year": 1984,
 	"releaseDate": "1984-01-01",
 	"category": "Terror",
-	"subgenres": ["Slasher"],
+	"subgenres": [
+		"Slasher"
+	],
 	"genres": [
 		"Terror"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1984/a-nightmare-on-elm-street-1984.webp",
 	"screenshots": [],
@@ -30,19 +32,19 @@
 	},
 	"runtimeMinutes": 91,
 	"editorial": {
-	"becauseYouLiked": [
-		"scream-1996",
-		"scream-2-1997"
-	],
-	"related": [
-		"scream-4-2011",
-		"halloween-2018",
-		"dolly-juega-contigo-2025",
-		"child-s-play-1988"
-	]
-},
-  "review": "Wes Craven mezcla el slasher con una idea mucho más inquietante: nadie está a salvo porque el asesino entra cuando los personajes se duermen. La dirección aprovecha casas, pasillos y objetos cotidianos para volver borrosa la frontera entre sueño y vigilia, sin depender de grandes efectos. Heather Langenkamp le da a Nancy una inteligencia poco habitual para el género, y Robert Englund aparece lo justo para fijar a Freddy como pesadilla. Es imaginativa, tensa y todavía tiene imágenes que no se gastaron.",
-  "synopsis": "Nancy y sus amigos comienzan a sufrir pesadillas idénticas protagonizadas por un asesino de rostro quemado. Cuando descubren que las muertes en sueños tienen consecuencias reales, Nancy intenta encontrar la forma de enfrentarlo antes de que vuelva a dormir.",
+		"becauseYouLiked": [
+			"scream-1996",
+			"scream-2-1997"
+		],
+		"related": [
+			"scream-4-2011",
+			"halloween-2018",
+			"dolly-juega-contigo-2025",
+			"child-s-play-1988"
+		]
+	},
+	"review": "Wes Craven mezcla el slasher con una idea mucho más inquietante: nadie está a salvo porque el asesino entra cuando los personajes se duermen. La dirección aprovecha casas, pasillos y objetos cotidianos para volver borrosa la frontera entre sueño y vigilia, sin depender de grandes efectos. Heather Langenkamp le da a Nancy una inteligencia poco habitual para el género, y Robert Englund aparece lo justo para fijar a Freddy como pesadilla. Es imaginativa, tensa y todavía tiene imágenes que no se gastaron.",
+	"synopsis": "Nancy y sus amigos comienzan a sufrir pesadillas idénticas protagonizadas por un asesino de rostro quemado. Cuando descubren que las muertes en sueños tienen consecuencias reales, Nancy intenta encontrar la forma de enfrentarlo antes de que vuelva a dormir.",
 	"audienceRating": "+18",
 	"reviewPublishedAt": "2026-03-09"
 }

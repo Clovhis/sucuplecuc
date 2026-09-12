@@ -22,17 +22,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 138,
 	"editorial": {
-	"becauseYouLiked": [
-		"pozos-de-ambicion-2007",
-		"punch-drunk-love-2002"
-	],
-	"related": [
-		"magnolia-1999",
-		"boogie-nights-1997",
-		"vicio-propio-2014",
-		"lincoln-2012"
-	]
-},
+		"becauseYouLiked": [
+			"pozos-de-ambicion-2007",
+			"punch-drunk-love-2002"
+		],
+		"related": [
+			"magnolia-1999",
+			"boogie-nights-1997",
+			"vicio-propio-2014",
+			"lincoln-2012"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -42,5 +42,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

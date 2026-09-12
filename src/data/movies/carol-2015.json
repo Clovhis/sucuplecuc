@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Drama", "Romance"],
+	"genres": [
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos",
+	"country": "GB, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2015/carol-2015.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "2DmchKO2U_0",
 	"releasePlatform": "Prime Video",
 	"director": "Todd Haynes",
-	"mainCast": ["Cate Blanchett", "Rooney Mara", "Kyle Chandler", "Sarah Paulson", "John Magaro"],
+	"mainCast": [
+		"Cate Blanchett",
+		"Rooney Mara",
+		"Kyle Chandler",
+		"Sarah Paulson",
+		"John Magaro"
+	],
 	"productionCompany": "Number 9 Films, Film4, Killer Films",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY RECOMENDADA",
@@ -25,17 +34,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"slumdog-millionaire-2008",
-		"el-curioso-caso-de-benjamin-button-2008"
-	],
-	"related": [
-		"secretos-de-un-escandalo-2023",
-		"un-romance-peligroso-1998",
-		"mucho-ruido-y-pocas-nueces-1993",
-		"cafe-society-2016"
-	]
-},
+		"becauseYouLiked": [
+			"slumdog-millionaire-2008",
+			"el-curioso-caso-de-benjamin-button-2008"
+		],
+		"related": [
+			"secretos-de-un-escandalo-2023",
+			"un-romance-peligroso-1998",
+			"mucho-ruido-y-pocas-nueces-1993",
+			"cafe-society-2016"
+		]
+	},
 	"runtimeMinutes": 118,
 	"review": "Carol cuenta un deseo prohibido con una puesta en escena que parece contener la respiración. Todd Haynes usa vidrios, ventanas y reflejos para mostrar cuánto vigila la sociedad a sus protagonistas, y Cate Blanchett compone a Carol desde una elegancia que también es estrategia de supervivencia. Rooney Mara aporta una emoción más abierta y el contraste entre ambas vuelve cada gesto decisivo. Es un romance de ritmo paciente, preciso y muy sensible."
 }

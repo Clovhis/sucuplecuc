@@ -7,37 +7,50 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Romance"],
+	"genres": [
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Italia, Francia",
+	"country": "IT, FR",
 	"isArgentinian": false,
 	"poster": "assets/posters/1988/cinema-paradiso-1988.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "JMyVSD6OvO8",
 	"releasePlatform": "Apple TV",
 	"director": "Giuseppe Tornatore",
-	"mainCast": ["Philippe Noiret", "Jacques Perrin", "Salvatore Cascio", "Marco Leonardi"],
+	"mainCast": [
+		"Philippe Noiret",
+		"Jacques Perrin",
+		"Salvatore Cascio",
+		"Marco Leonardi"
+	],
 	"productionCompany": "TF1 Films Production, Les Films Ariane",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
-			{ "award": "oscar", "category": "Mejor película de habla no inglesa", "recipient": "Italia", "year": 1990 }
+			{
+				"award": "oscar",
+				"category": "Mejor película de habla no inglesa",
+				"recipient": "Italia",
+				"year": 1990
+			}
 		]
 	},
 	"runtimeMinutes": 124,
 	"editorial": {
-	"becauseYouLiked": [
-		"la-insoportable-levedad-del-ser-1988",
-		"el-ano-que-vivimos-peligrosamente-1982"
-	],
-	"related": [
-		"oficial-y-caballero-1982",
-		"the-shape-of-water-2017",
-		"casablanca-1943",
-		"lo-que-queda-del-dia-1993"
-	]
-},
+		"becauseYouLiked": [
+			"la-insoportable-levedad-del-ser-1988",
+			"el-ano-que-vivimos-peligrosamente-1982"
+		],
+		"related": [
+			"oficial-y-caballero-1982",
+			"the-shape-of-water-2017",
+			"casablanca-1943",
+			"lo-que-queda-del-dia-1993"
+		]
+	},
 	"review": "El chico que limpia la sala, el proyeccionista que conoce todos los secretos y una pantalla que parece contener el mundo forman el corazón de Cinema Paradiso. Giuseppe Tornatore trabaja con una nostalgia frontal, pero Philippe Noiret y Salvatore Cascio le dan a esa nostalgia una relación concreta, hecha de consejos, peleas y cariño mal expresado. La música empuja bastante las emociones y el montaje puede subrayar lo que ya entendimos, aunque la película conoce el poder de una imagen compartida. Su homenaje al cine no habla sólo de películas: habla de lo que una comunidad arma alrededor de ellas.",
 	"isPremiere": false,
 	"premiereLabel": ""

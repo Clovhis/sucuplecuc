@@ -8,22 +8,45 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+16",
 	"category": "Thriller",
-	"genres": ["Thriller", "Drama"],
+	"genres": [
+		"Thriller",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1996/fanatico-1996.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "OJhwzOqqdqU",
 	"releasePlatform": "Netflix",
-	"releasePlatforms": ["Netflix", "HBO Max"],
+	"releasePlatforms": [
+		"Netflix",
+		"HBO Max"
+	],
 	"director": "Tony Scott",
-	"mainCast": ["Robert De Niro", "Wesley Snipes", "John Leguizamo"],
+	"mainCast": [
+		"Robert De Niro",
+		"Wesley Snipes",
+		"John Leguizamo"
+	],
 	"productionCompany": "TriStar Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "Zafa",
-	"awards": {"wins": []},
-	"editorial": {"becauseYouLiked":["marea-roja-1995","cape-fear-1991"],"related":["el-fuego-de-la-venganza-2004","se7en-1995","taxi-driver-1976","pi-fe-en-el-caos-1998"]},
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"marea-roja-1995",
+			"cape-fear-1991"
+		],
+		"related": [
+			"el-fuego-de-la-venganza-2004",
+			"se7en-1995",
+			"taxi-driver-1976",
+			"pi-fe-en-el-caos-1998"
+		]
+	},
 	"review": "Fanático entiende que el terror no está sólo en un admirador que cruza límites, sino en la fantasía de que una celebridad le debe algo a quien la consume. Robert De Niro lleva a Gil con una mezcla de ternura rota y amenaza creciente, mientras Wesley Snipes interpreta al ídolo como alguien que también queda atrapado en el personaje público. Tony Scott carga la imagen de reflejos, estadios y colores agresivos, una estilización que le da velocidad al thriller pero también exagera algunas decisiones. El guion subraya demasiado su tesis y el desenlace no siempre encuentra la proporción justa, aunque la incomodidad permanece porque la obsesión nunca aparece de golpe: se arma con pequeños permisos. Un thriller nervioso y áspero.",
 	"runtimeMinutes": 116
 }

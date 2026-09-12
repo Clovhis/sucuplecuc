@@ -7,34 +7,50 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+17",
 	"category": "Comedia",
-	"genres": ["Comedia", "Terror", "Fantasia"],
-	"subgenres": ["Sobrenatural"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Comedia",
+		"Terror",
+		"Fantasia"
+	],
+	"subgenres": [
+		"Sobrenatural"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1992/el-ejercito-de-las-tinieblas-1992.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "j588xonGeuk",
 	"releasePlatform": "Prime Video",
-	"releasePlatforms": ["Prime Video", "Apple TV"],
+	"releasePlatforms": [
+		"Prime Video",
+		"Apple TV"
+	],
 	"director": "Sam Raimi",
-	"mainCast": ["Bruce Campbell", "Embeth Davidtz", "Marcus Gilbert", "Ian Abercrombie"],
+	"mainCast": [
+		"Bruce Campbell",
+		"Embeth Davidtz",
+		"Marcus Gilbert",
+		"Ian Abercrombie"
+	],
 	"productionCompany": "Renaissance Pictures, Dino De Laurentiis Company",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 81,
 	"editorial": {
-	"becauseYouLiked": [
-		"terrorificamente-muertos-1987",
-		"las-brujas-de-eastwick-1987"
-	],
-	"related": [
-		"the-evil-dead-1981",
-		"beetlejuice-1988",
-		"cazafantasmas-1984",
-		"swiss-army-man-2016"
-	]
-},
+		"becauseYouLiked": [
+			"terrorificamente-muertos-1987",
+			"las-brujas-de-eastwick-1987"
+		],
+		"related": [
+			"the-evil-dead-1981",
+			"beetlejuice-1988",
+			"cazafantasmas-1984",
+			"swiss-army-man-2016"
+		]
+	},
 	"review": "Ash cae en la Edad Media con una escopeta, una motosierra y una confianza que no está respaldada por sus capacidades diplomáticas. Sam Raimi abandona casi por completo el encierro de las películas anteriores y arma una aventura de fantasía con esqueletos, miniaturas y chistes que van directo al absurdo. Bruce Campbell entiende que el personaje funciona mejor cuando se cree más importante de lo que es. Hay menos terror y más dibujo animado con presupuesto de serie B, pero la energía visual y la inventiva de los efectos siguen haciendo que el viaje valga la pena. Es un cierre juguetón para una trilogía muy particular.",
 	"isPremiere": false,
 	"premiereLabel": ""

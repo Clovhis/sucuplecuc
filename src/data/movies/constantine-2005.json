@@ -4,7 +4,9 @@
 	"originalTitle": "Constantine",
 	"year": 2005,
 	"category": "Terror",
-	"subgenres": ["Sobrenatural"],
+	"subgenres": [
+		"Sobrenatural"
+	],
 	"poster": "assets/posters/2005/constantine-2005.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "DEa508Xmmio",
@@ -23,20 +25,22 @@
 		"wins": []
 	},
 	"runtimeMinutes": 116,
-  "review": "Constantine no adapta de manera fiel al personaje de los cómics, pero construye una Los Ángeles infernal con una mística urbana que sigue teniendo encanto. Francis Lawrence mezcla policial, terror religioso y fantasía de blockbuster con imágenes muy concretas: demonios en el tránsito, exorcismos de barrio y un infierno reconocible por sus ruinas. Keanu Reeves funciona desde el cansancio y el cinismo, mientras Rachel Weisz sostiene el costado emocional sin volverlo empalagoso. Algunas explicaciones son pesadas y el final tiene excesos, pero la atmósfera y sus secundarios la vuelven una rareza muy querible.",
+	"review": "Constantine no adapta de manera fiel al personaje de los cómics, pero construye una Los Ángeles infernal con una mística urbana que sigue teniendo encanto. Francis Lawrence mezcla policial, terror religioso y fantasía de blockbuster con imágenes muy concretas: demonios en el tránsito, exorcismos de barrio y un infierno reconocible por sus ruinas. Keanu Reeves funciona desde el cansancio y el cinismo, mientras Rachel Weisz sostiene el costado emocional sin volverlo empalagoso. Algunas explicaciones son pesadas y el final tiene excesos, pero la atmósfera y sus secundarios la vuelven una rareza muy querible.",
 	"editorial": {
-	"becauseYouLiked": [
-		"the-dark-knight-2008",
-		"batman-1989"
-	],
-	"related": [
-		"superman-1978",
-		"ant-man-2015",
-		"batman-returns-1992",
-		"birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn-2020"
-	]
-},
-  "synopsis": "John Constantine, un exorcista condenado a ir al infierno, investiga el suicidio de una policía y descubre un intento de romper el equilibrio entre el cielo y la Tierra.",
+		"becauseYouLiked": [
+			"the-dark-knight-2008",
+			"batman-1989"
+		],
+		"related": [
+			"superman-1978",
+			"ant-man-2015",
+			"batman-returns-1992",
+			"birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn-2020"
+		]
+	},
+	"synopsis": "John Constantine, un exorcista condenado a ir al infierno, investiga el suicidio de una policía y descubre un intento de romper el equilibrio entre el cielo y la Tierra.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-06"
+	"reviewPublishedAt": "2026-03-06",
+	"country": "AU, DE, GB, US",
+	"isArgentinian": false
 }

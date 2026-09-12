@@ -13,7 +13,7 @@
 	"subgenres": [
 		"Psicológico"
 	],
-  "poster": "assets/posters/2020/estoy-pensando-en-dejarlo-2020.webp",
+	"poster": "assets/posters/2020/estoy-pensando-en-dejarlo-2020.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "cDTg62vsV4U",
 	"director": "Charlie Kaufman",
@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 134,
 	"editorial": {
-	"becauseYouLiked": [
-		"tierra-de-crimen-2026",
-		"tenemos-que-hablar-de-kevin-2011"
-	],
-	"related": [
-		"shutter-island-2010",
-		"las-siamesas-2020",
-		"enemy-2013",
-		"trenque-lauquen-2022"
-	]
-},
+		"becauseYouLiked": [
+			"tierra-de-crimen-2026",
+			"tenemos-que-hablar-de-kevin-2011"
+		],
+		"related": [
+			"shutter-island-2010",
+			"las-siamesas-2020",
+			"enemy-2013",
+			"trenque-lauquen-2022"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

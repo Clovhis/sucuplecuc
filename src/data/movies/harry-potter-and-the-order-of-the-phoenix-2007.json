@@ -10,7 +10,7 @@
 		"Acción & Aventura",
 		"Familia"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/2007/harry-potter-and-the-order-of-the-phoenix-2007.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "wmef9GgR3T4",
@@ -29,19 +29,20 @@
 	},
 	"runtimeMinutes": 139,
 	"editorial": {
-	"becauseYouLiked": [
-		"hook-1991",
-		"the-bfg-2016"
-	],
-	"related": [
-		"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
-		"the-lord-of-the-rings-the-two-towers-2002",
-		"the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
-		"la-odisea-2026"
-	]
-},
+		"becauseYouLiked": [
+			"hook-1991",
+			"the-bfg-2016"
+		],
+		"related": [
+			"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
+			"the-lord-of-the-rings-the-two-towers-2002",
+			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
+			"la-odisea-2026"
+		]
+	},
 	"review": "Harry Potter and the Order of the Phoenix convierte el regreso a Hogwarts en una historia de vigilancia, negación institucional y bronca adolescente. David Yates le da un tono más seco a la saga y administra bien la sensación de que Harry no puede confiar en los adultos. Daniel Radcliffe transmite el enojo del personaje sin perder fragilidad, y Imelda Staunton hace de Umbridge una villana insoportable con una sonrisa perfecta. La adaptación recorta mucho del libro y algunos vínculos quedan apurados, pero el Ejército de Dumbledore y el conflicto con el Ministerio le dan un impulso político y emocional muy efectivo.",
 	"synopsis": "Mientras se alojan en casa de los Dursley, Harry Potter y Dudley Dursley son atacados por dementores. Harry los repele usando un hechizo Patronus. El Ministerio de Magia detecta a Harry usando magia y lo expulsa de Hogwarts, aunque luego es exonerado.",
 	"audienceRating": "+12",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

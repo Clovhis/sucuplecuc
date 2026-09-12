@@ -8,33 +8,50 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia", "Misterio & Suspense", "Europeas"],
+	"genres": [
+		"Drama",
+		"Comedia",
+		"Misterio & Suspense",
+		"Europeas"
+	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos",
+	"country": "GB, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2001/gosford-park-crimen-de-medianoche-2001.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "o0m00hg1PKY",
 	"releasePlatform": "Otras plataformas",
 	"director": "Robert Altman",
-	"mainCast": ["Maggie Smith", "Michael Gambon", "Helen Mirren", "Emily Watson"],
+	"mainCast": [
+		"Maggie Smith",
+		"Michael Gambon",
+		"Helen Mirren",
+		"Emily Watson"
+	],
 	"productionCompany": "USA Films, Capitol Films y Sandcastle 5",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY RECOMENDADA",
 	"awards": {
-		"wins": [{"award": "oscar", "category": "Mejor guion original", "recipient": "Julian Fellowes", "year": 2002}]
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor guion original",
+				"recipient": "Julian Fellowes",
+				"year": 2002
+			}
+		]
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"punales-por-la-espalda-2019",
-		"el-juego-de-hollywood-1992"
-	],
-	"related": [
-		"fargo-secuestro-voluntario-1996",
-		"camino-a-la-perdicion-2002",
-		"la-costa-mosquito-1986",
-		"scoop-2006"
-	]
-},
+		"becauseYouLiked": [
+			"punales-por-la-espalda-2019",
+			"el-juego-de-hollywood-1992"
+		],
+		"related": [
+			"fargo-secuestro-voluntario-1996",
+			"camino-a-la-perdicion-2002",
+			"la-costa-mosquito-1986",
+			"scoop-2006"
+		]
+	},
 	"review": "Robert Altman arma un policial de época donde el crimen importa tanto como el sistema de clases que lo rodea. La mansión funciona como un tablero lleno de pasillos, silencios y alianzas, y el elenco coral convierte cada conversación en una pista posible. Maggie Smith compone a una aristócrata venenosa con una precisión deliciosa, mientras la película cambia de perspectiva sin perder el hilo. Puede pedir atención por la cantidad de personajes, pero la recompensa está en cómo el misterio termina revelando una estructura social entera. Elegante, mordaz y todavía muy entretenida."
 }

@@ -7,40 +7,68 @@
 	"reviewPublishedAt": "2026-08-10",
 	"audienceRating": "+16",
 	"category": "Western",
-	"genres": ["Western", "Accion", "Aventura", "Drama"],
+	"genres": [
+		"Western",
+		"Accion",
+		"Aventura",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Canadá, Hong Kong, Taiwán, Estados Unidos",
+	"country": "CA, HK, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2015/el-renacido-2015.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "LoebZZ8K5N0",
 	"releasePlatform": "Netflix",
-	"releasePlatforms": ["Netflix", "Paramount Plus"],
+	"releasePlatforms": [
+		"Netflix",
+		"Paramount Plus"
+	],
 	"director": "Alejandro González Iñárritu",
-	"mainCast": ["Leonardo DiCaprio", "Tom Hardy", "Domhnall Gleeson", "Will Poulter"],
+	"mainCast": [
+		"Leonardo DiCaprio",
+		"Tom Hardy",
+		"Domhnall Gleeson",
+		"Will Poulter"
+	],
 	"productionCompany": "Regency Enterprises, RatPac-Dune Entertainment, Anonymous Content, Appian Way",
 	"verdict": "recomendada",
 	"verdictLabel": "IMPERDIBLE",
 	"awards": {
 		"wins": [
-			{ "award": "oscar", "category": "Mejor actor", "year": 2016, "recipient": "Leonardo DiCaprio" },
-			{ "award": "oscar", "category": "Mejor fotografía", "year": 2016, "recipient": "Emmanuel Lubezki" },
-			{ "award": "oscar", "category": "Mejor dirección", "year": 2016, "recipient": "Alejandro González Iñárritu" }
+			{
+				"award": "oscar",
+				"category": "Mejor actor",
+				"year": 2016,
+				"recipient": "Leonardo DiCaprio"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor fotografía",
+				"year": 2016,
+				"recipient": "Emmanuel Lubezki"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor dirección",
+				"year": 2016,
+				"recipient": "Alejandro González Iñárritu"
+			}
 		]
 	},
 	"runtimeMinutes": 156,
 	"editorial": {
-	"becauseYouLiked": [
-		"silverado-1985",
-		"pacto-de-justicia-2003"
-	],
-	"related": [
-		"el-bueno-el-feo-y-el-malo-1966",
-		"valor-de-ley-2010",
-		"el-ultimo-mohicano-1992",
-		"el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007"
-	]
-},
+		"becauseYouLiked": [
+			"silverado-1985",
+			"pacto-de-justicia-2003"
+		],
+		"related": [
+			"el-bueno-el-feo-y-el-malo-1966",
+			"valor-de-ley-2010",
+			"el-ultimo-mohicano-1992",
+			"el-asesinato-de-jesse-james-por-el-cobarde-robert-ford-2007"
+		]
+	},
 	"review": "La fuerza de El renacido está en hacer que el frío, el barro y la respiración parezcan parte del elenco. Iñárritu filma la naturaleza como una belleza que no consuela, y Leonardo DiCaprio sostiene al protagonista con el cuerpo antes que con los discursos: cada arrastre, cada herida y cada mirada cuentan el precio de seguir. Tom Hardy le da a la amenaza una calma desagradable, sin volverla un villano de historieta. El relato de venganza es sencillo, pero la puesta lo vuelve una experiencia áspera, enorme y por momentos hipnótica, con una ambición visual que se siente en cada plano.",
 	"isPremiere": false,
 	"premiereLabel": ""

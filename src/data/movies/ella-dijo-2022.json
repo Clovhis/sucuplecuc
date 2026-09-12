@@ -8,32 +8,43 @@
 	"reviewPublishedAt": "2026-08-26",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Crimen", "Historia"],
+	"genres": [
+		"Drama",
+		"Crimen",
+		"Historia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos y Japón",
+	"country": "US, JP",
 	"isArgentinian": false,
 	"poster": "assets/posters/2022/ella-dijo-2022.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "nW1AVSBvvYc",
 	"releasePlatform": "HBO Max",
 	"director": "Maria Schrader",
-	"mainCast": ["Carey Mulligan", "Zoe Kazan", "Patricia Clarkson", "Andre Braugher"],
+	"mainCast": [
+		"Carey Mulligan",
+		"Zoe Kazan",
+		"Patricia Clarkson",
+		"Andre Braugher"
+	],
 	"productionCompany": "Plan B Entertainment, Annapurna Pictures y Universal Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
 	"runtimeMinutes": 129,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"argentina-1985-2022",
-		"los-colonos-2023"
-	],
-	"related": [
-		"no-odiaras-2020",
-		"el-gran-falsificador-2025",
-		"barreda-2026",
-		"el-falsario-2026"
-	]
-},
+		"becauseYouLiked": [
+			"argentina-1985-2022",
+			"los-colonos-2023"
+		],
+		"related": [
+			"no-odiaras-2020",
+			"el-gran-falsificador-2025",
+			"barreda-2026",
+			"el-falsario-2026"
+		]
+	},
 	"review": "Ella Dijo arma su tensión con llamadas, documentos, puertas que se cierran y conversaciones en las que una pausa vale tanto como una declaración. La investigación avanza porque las periodistas escuchan, dudan y vuelven a comprobar, no porque aparezca una revelación mágica que ordene el mundo.\n\nEl film evita convertir a las sobrevivientes en simples piezas de una pesquisa y entiende que publicar también puede ser una forma de devolverles la palabra. A veces su solemnidad se nota demasiado, pero la claridad narrativa y las actuaciones la sostienen."
 }

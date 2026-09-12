@@ -7,23 +7,44 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+17",
 	"category": "Drama",
-	"genres": ["Drama", "Guerra", "Bélica", "Thriller"],
+	"genres": [
+		"Drama",
+		"Guerra",
+		"Bélica",
+		"Thriller"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2002/en-defensa-del-honor-2002.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "TcRuFgqFLrA",
 	"releasePlatform": "Apple TV",
 	"director": "Gregory Hoblit",
-	"mainCast": ["Bruce Willis", "Colin Farrell", "Terrence Howard", "Cole Hauser"],
+	"mainCast": [
+		"Bruce Willis",
+		"Colin Farrell",
+		"Terrence Howard",
+		"Cole Hauser"
+	],
 	"productionCompany": "Metro-Goldwyn-Mayer, Paramount Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "ZAFA",
 	"awards": {
 		"wins": []
 	},
-	"editorial": {"becauseYouLiked":["k-19-the-widowmaker-2002","en-honor-a-la-verdad-1996"],"related":["michael-collins-1996","cassandra-s-dream-2007","masacre-ven-y-mira-1985","el-vuelo-2012"]},
+	"editorial": {
+		"becauseYouLiked": [
+			"k-19-the-widowmaker-2002",
+			"en-honor-a-la-verdad-1996"
+		],
+		"related": [
+			"michael-collins-1996",
+			"cassandra-s-dream-2007",
+			"masacre-ven-y-mira-1985",
+			"el-vuelo-2012"
+		]
+	},
 	"runtimeMinutes": 125,
 	"review": "Hart's War usa el juicio militar como una caja de presión dentro de un campo de prisioneros, y ahí encuentra su mejor tensión. Colin Farrell lleva la mirada del joven abogado que aprende a desconfiar de las órdenes, mientras Bruce Willis construye un coronel que administra el poder con una mezcla de cálculo y cansancio. La película quiere ser drama de guerra, thriller judicial y relato de camaradería al mismo tiempo; esa ambición a veces la vuelve subrayada, pero también le da un pulso narrativo firme. Las actuaciones sostienen los cambios de tono y el conflicto racial evita que el procedimiento sea solamente decorativo."
 }

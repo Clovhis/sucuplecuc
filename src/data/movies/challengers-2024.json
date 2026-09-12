@@ -4,7 +4,11 @@
 	"originalTitle": "Challengers",
 	"year": 2024,
 	"category": "Drama",
-	"genres": ["Drama", "Romance", "Deportes"],
+	"genres": [
+		"Drama",
+		"Romance",
+		"Deportes"
+	],
 	"poster": "assets/posters/2024/challengers-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "VobTTbg-te0",
@@ -24,18 +28,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-boxeador-1997",
-		"la-luz-que-imaginamos-2024"
-	],
-	"related": [
-		"suenos-de-oslo-2024",
-		"christy-el-combate-de-su-vida-2025",
-		"el-clan-de-hierro-2023",
-		"la-maquina-the-smashing-machine-2025"
-	]
-},
+		"becauseYouLiked": [
+			"el-boxeador-1997",
+			"la-luz-que-imaginamos-2024"
+		],
+		"related": [
+			"suenos-de-oslo-2024",
+			"christy-el-combate-de-su-vida-2025",
+			"el-clan-de-hierro-2023",
+			"la-maquina-the-smashing-machine-2025"
+		]
+	},
 	"synopsis": "Tashi, ex promesa del tenis convertida en entrenadora, prepara a su marido para recuperar la confianza en la cancha. Cuando él enfrenta a Patrick, su ex mejor amigo y antiguo novio de Tashi, el partido reabre una rivalidad afectiva que lleva años creciendo.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

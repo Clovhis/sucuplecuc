@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 87,
 	"editorial": {
-	"becauseYouLiked": [
-		"engendro-2026",
-		"juegos-inocentes-2021"
-	],
-	"related": [
-		"titane-2021",
-		"marianela-y-el-cadaver-2024",
-		"inseparables-1988",
-		"cabeza-borradora-1977"
-	]
-},
+		"becauseYouLiked": [
+			"engendro-2026",
+			"juegos-inocentes-2021"
+		],
+		"related": [
+			"titane-2021",
+			"marianela-y-el-cadaver-2024",
+			"inseparables-1988",
+			"cabeza-borradora-1977"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
-	"country": "Bélgica"
+	"country": "BE",
+	"isArgentinian": false
 }

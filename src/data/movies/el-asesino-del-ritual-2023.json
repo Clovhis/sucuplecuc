@@ -8,37 +8,43 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Thriller", "Crimen", "Terror"],
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Terror"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos, Italia",
+	"country": "US, IT",
 	"isArgentinian": false,
 	"poster": "assets/posters/2023/el-asesino-del-ritual-2023.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "4_ynBw-IDDs",
 	"releasePlatform": "Prime Video",
 	"director": "George Gallo",
-	"mainCast": ["Morgan Freeman", "Cole Hauser", "Peter Stormare", "Vernon Davis"],
+	"mainCast": [
+		"Morgan Freeman",
+		"Cole Hauser",
+		"Peter Stormare",
+		"Vernon Davis"
+	],
 	"productionCompany": "Black Diamond Films, Iervolino & Lady Bacardi Entertainment",
-	"verdict": "zafa",
-	"verdictLabel": "",
+	"verdict": "no_recomendada",
+	"verdictLabel": "NO LA MIRES",
 	"awards": {
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"burning-2018",
-		"barreda-2026"
-	],
-	"related": [
-		"la-negociacion-2025",
-		"el-falsario-2026",
-		"the-silence-of-the-lambs-1991",
-		"cassandra-s-dream-2007"
-	]
-},
-	"verdict": "no_recomendada",
-	"verdictLabel": "NO LA MIRES",
+		"becauseYouLiked": [
+			"burning-2018",
+			"barreda-2026"
+		],
+		"related": [
+			"la-negociacion-2025",
+			"el-falsario-2026",
+			"the-silence-of-the-lambs-1991",
+			"cassandra-s-dream-2007"
+		]
+	},
 	"runtimeMinutes": 92,
-	"editorial": {"becauseYouLiked":["burning-2018","barreda-2026"],"related":["la-negociacion-2025","el-falsario-2026","the-silence-of-the-lambs-1991","cassandra-s-dream-2007"]},
 	"review": "El asesino del ritual tiene una idea de policial sobrenatural que podría haber encontrado una identidad propia, pero la película la trata como un atajo para encadenar escenas de investigación y sustos sin peso. Cole Hauser corre detrás de pistas obvias, Morgan Freeman aparece con la gravedad de siempre y Peter Stormare aporta una amenaza más interesante que el guion. George Gallo no ordena bien los saltos entre Estados Unidos e Italia, y la mitología queda explicada a los empujones. Hay imágenes de ritual y una atmósfera que prometen algo más oscuro, pero se desarman rápido. No la mires buscando otro thriller memorable de Freeman."
 }

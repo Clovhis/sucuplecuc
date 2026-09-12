@@ -8,31 +8,44 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+16",
 	"category": "Comedia",
-	"genres": ["Comedia", "Fantasia", "Terror"],
-	"subgenres": ["Sobrenatural"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Comedia",
+		"Fantasia",
+		"Terror"
+	],
+	"subgenres": [
+		"Sobrenatural"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1987/las-brujas-de-eastwick-1987.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "mLs1y_KSTKk",
 	"releasePlatform": "HBO Max",
 	"director": "George Miller",
-	"mainCast": ["Jack Nicholson", "Susan Sarandon", "Michelle Pfeiffer", "Veronica Cartwright"],
+	"mainCast": [
+		"Jack Nicholson",
+		"Susan Sarandon",
+		"Michelle Pfeiffer",
+		"Veronica Cartwright"
+	],
 	"productionCompany": "Warner Bros., Guber-Peters Company",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"terrorificamente-muertos-1987",
-		"el-ejercito-de-las-tinieblas-1992"
-	],
-	"related": [
-		"beetlejuice-1988",
-		"cazafantasmas-1984",
-		"swiss-army-man-2016",
-		"los-mundos-de-coraline-2009"
-	]
-},
+		"becauseYouLiked": [
+			"terrorificamente-muertos-1987",
+			"el-ejercito-de-las-tinieblas-1992"
+		],
+		"related": [
+			"beetlejuice-1988",
+			"cazafantasmas-1984",
+			"swiss-army-man-2016",
+			"los-mundos-de-coraline-2009"
+		]
+	},
 	"review": "Las brujas de Eastwick convierte una fantasía de emancipación en una comedia negra con perfume de pesadilla. Cher, Susan Sarandon y Michelle Pfeiffer funcionan como un trío con deseos y temperamentos distintos, y la película entiende que su alianza es más interesante que el demonio que llega a desordenarles la vida. Jack Nicholson juega al exceso con una energía casi teatral, mientras George Miller mezcla erotismo, humor y horror sin buscar una tonalidad prolija. Hay escenas que hoy se sienten desparejas, pero la imaginación visual y el placer de ver a esas tres mujeres recuperar el control siguen intactos."
 }

@@ -4,7 +4,9 @@
 	"originalTitle": "Sinners",
 	"year": 2025,
 	"category": "Terror",
-	"subgenres": ["Sobrenatural"],
+	"subgenres": [
+		"Sobrenatural"
+	],
 	"poster": "assets/posters/2025/sinners-2025.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "bKGxHflevuk",
@@ -50,18 +52,20 @@
 		]
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"evil-dead-en-llamas-2026",
-		"smile-2-2024"
-	],
-	"related": [
-		"the-first-omen-2024",
-		"cuando-acecha-la-maldad-2023",
-		"el-conjuro-2-2016",
-		"el-conjuro-2013"
-	]
-},
+		"becauseYouLiked": [
+			"evil-dead-en-llamas-2026",
+			"smile-2-2024"
+		],
+		"related": [
+			"the-first-omen-2024",
+			"cuando-acecha-la-maldad-2023",
+			"el-conjuro-2-2016",
+			"el-conjuro-2013"
+		]
+	},
 	"synopsis": "En 1932, los gemelos idénticos y veteranos de la Primera Guerra Mundial Elijah (\"Smoke\") y Elias (\"Stack\") Moore regresan al Delta del Misisipi tras años trabajando para la mafia en Chicago.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-26"
+	"reviewPublishedAt": "2026-02-26",
+	"country": "US",
+	"isArgentinian": false
 }

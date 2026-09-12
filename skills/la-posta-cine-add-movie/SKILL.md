@@ -53,6 +53,7 @@ Esta política aplica a toda alta o reemplazo bajo `public/people/**`: retratos 
 ## Anti-regression gates
 
 - Begin with `npm run new-movie -- --title "<title>" --year <year> --dry-run --json`; do not create a file before the duplicate check passes. For a batch, repeat the check for every title and keep a candidate list instead of trusting memory or a search result.
+- Nationality is mandatory movie metadata. During the authoritative-metadata pass, verify the production country or countries, record `country → URL → fact` in the ledger, and store canonical ISO 3166-1 alpha-2 codes in `country` (`MY` for Malasia; `AR, ES` for a coproduction). Do not use a filming location, a performer/director nationality, distributor territory, language, or an inferred studio country. The detail page renders the localized name and a local SVG flag from these codes; never add a flag URL, emoji or presentation-only field to movie JSON. Run `npm run flags:sync` before the audit when the title introduces a country not already represented in the catalog.
 - Keep a compact evidence ledger per title: `field -> URL -> verified fact`. For streaming sweeps, check every relevant AR provider (Netflix, HBO Max, Prime Video, Disney Plus, Paramount Plus, Apple TV, Crunchyroll, Mercado Play, Flow and `Otras plataformas`) and distinguish subscription from rent/buy. A Spain/US result, a studio brand, or an empty JustWatch result is not AR availability. JustWatch Argentina does not index Flow as a provider: a Flow claim requires title-specific evidence from the official Flow/Personal Argentina catalog or authenticated catalog view, or a current Argentina-specific Flow release communication when the catalog is not publicly accessible. Never infer Flow from a Flow bundle containing HBO, Paramount+, Disney+ or Netflix.
 - Lock people only after comparing the exact credited name with `docs/person-profile-catalog-reference.md` and `src/data/people.json`. Verify an `imdbId` with two independent identity signals (name plus title/filmography, country or official profile); never persist the first search suggestion blindly.
 - Resolve credits in two passes: first freeze the trustworthy billing, then try bounded identity and portrait enrichment. The publication minimum is exactly a count threshold of one verified director plus at least two verified principal performers in `mainCast`; three performers is not a hard requirement. Aim for four or five when the remaining credits can be resolved safely. For animation/anime, those performers are original-language voice credits.
@@ -109,7 +110,8 @@ For a poster, the ledger must contain `source URL → final HTTP status/content-
 Create the starter only after the intake passes:
 
 ```bash
-npm run new-movie -- --title "<title>" --year <year> --slug <slug>
+npm run new-movie -- --title "<title>" --year <year> --slug <slug> --country <ISO[, ISO]>
+npm run flags:sync
 ```
 
 Si ya está verificada la fuente del arte, pasá `--poster-url "https://…"` al crear el starter: `new-movie` descarga y localiza el WebP antes de devolver el control. Si la fuente se conoce después, cargala y corré el localizador explícito antes del auditor.

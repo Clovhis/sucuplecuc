@@ -2,16 +2,18 @@
 	"slug": "beetlejuice-1988",
 	"title": "Beetlejuice",
 	"originalTitle": "Beetlejuice",
-  "synopsis": "Barbara y Adam mueren y quedan atrapados en su propia casa, ahora ocupada por una familia insoportable. Para espantarlos contratan a Beetlejuice, un bioexorcista tan peligroso como imprevisible.",
+	"synopsis": "Barbara y Adam mueren y quedan atrapados en su propia casa, ahora ocupada por una familia insoportable. Para espantarlos contratan a Beetlejuice, un bioexorcista tan peligroso como imprevisible.",
 	"year": 1988,
 	"audienceRating": "+13",
 	"category": "Comedia",
-	"subgenres": ["Sobrenatural"],
+	"subgenres": [
+		"Sobrenatural"
+	],
 	"genres": [
 		"Comedia",
 		"Fantasia"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1988/beetlejuice-1988.webp",
 	"screenshots": [],
@@ -40,17 +42,17 @@
 		]
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"las-brujas-de-eastwick-1987",
-		"terrorificamente-muertos-1987"
-	],
-	"related": [
-		"cazafantasmas-1984",
-		"el-ejercito-de-las-tinieblas-1992",
-		"sleepy-hollow-1999",
-		"swiss-army-man-2016"
-	]
-},
+		"becauseYouLiked": [
+			"las-brujas-de-eastwick-1987",
+			"terrorificamente-muertos-1987"
+		],
+		"related": [
+			"cazafantasmas-1984",
+			"el-ejercito-de-las-tinieblas-1992",
+			"sleepy-hollow-1999",
+			"swiss-army-man-2016"
+		]
+	},
 	"runtimeMinutes": 92,
 	"review": "Beetlejuice sigue a un matrimonio muerto que intenta espantar a la familia que compra su casa, pero termina recurriendo a un bioexorcista mucho más problemático que los vivos. Tim Burton la filma como si estuviera hecha con cables pelados: maquetas, maquillaje y reglas del más allá que cambian a cada rato con una energía rara y veloz. Michael Keaton entra poco, pero se adueña de cada escena con un descontrol perfectamente medido. La historia se desarma un poco en el final, aunque su fiesta macabra y sus ideas visuales siguen levantando cualquier momento torcido.",
 	"reviewPublishedAt": "2026-04-27"

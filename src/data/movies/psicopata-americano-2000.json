@@ -7,33 +7,46 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+18",
 	"category": "Thriller",
-	"genres": ["Thriller", "Drama", "Crimen"],
-	"subgenres": ["Psicológico"],
-	"country": "Estados Unidos, Canadá",
+	"genres": [
+		"Thriller",
+		"Drama",
+		"Crimen"
+	],
+	"subgenres": [
+		"Psicológico"
+	],
+	"country": "US, CA",
 	"isArgentinian": false,
 	"poster": "assets/posters/2000/psicopata-americano-2000.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "81mibtQWWBg",
 	"releasePlatform": "Netflix",
 	"director": "Mary Harron",
-	"mainCast": ["Christian Bale", "Justin Theroux", "Josh Lucas", "Willem Dafoe"],
+	"mainCast": [
+		"Christian Bale",
+		"Justin Theroux",
+		"Josh Lucas",
+		"Willem Dafoe"
+	],
 	"productionCompany": "Lions Gate Films, Edward R. Pressman Film",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 102,
 	"editorial": {
-	"becauseYouLiked": [
-		"se7en-1995",
-		"zodiaco-2007"
-	],
-	"related": [
-		"culpable-2021",
-		"prisioneros-2013",
-		"primicia-mortal-2014",
-		"vellut-blau-1986"
-	]
-},
+		"becauseYouLiked": [
+			"se7en-1995",
+			"zodiaco-2007"
+		],
+		"related": [
+			"culpable-2021",
+			"prisioneros-2013",
+			"primicia-mortal-2014",
+			"vellut-blau-1986"
+		]
+	},
 	"review": "Patrick Bateman habla de música pop, compra ropa carísima y ensaya su sonrisa mientras Mary Harron lo observa como una pieza más de la maquinaria que pretende satirizar. Christian Bale entiende que el personaje no necesita ser simpático: lo vuelve una máscara perfecta, irritante y cada vez más hueca. La película mezcla humor negro, violencia y una ambigüedad que no siempre cierra con elegancia, pero sí sostiene su lectura sobre el ego masculino y el consumo como identidad. La recepción quedó dividida por su brutalidad; con los años, el filo de la sátira se volvió más evidente que el shock.",
 	"isPremiere": false,
 	"premiereLabel": ""

@@ -4,7 +4,7 @@
 	"originalTitle": "Howard the Duck",
 	"year": 1986,
 	"category": "Accion",
-  "poster": "assets/posters/1986/howard-the-duck-1986.webp",
+	"poster": "assets/posters/1986/howard-the-duck-1986.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "yeU4UlDWfKI",
 	"postCreditsScenes": 1,
@@ -22,20 +22,22 @@
 		"wins": []
 	},
 	"runtimeMinutes": 110,
-  "review": "Howard the Duck tira a un pato sarcástico de otro planeta en Cleveland y nunca termina de decidir si es una comedia para chicos, una sátira adulta o una aventura de monstruos. Willard Huyck filma esa mezcla con una energía extraña, pero el disfraz del protagonista y los chistes de doble sentido envejecieron peor que el maquillaje de los villanos. Lea Thompson le pone onda a Beverly, mientras Tim Robbins se entrega al delirio. Sale mal casi todo, aunque su fracaso es tan singular que resulta difícil olvidarla.",
+	"review": "Howard the Duck tira a un pato sarcástico de otro planeta en Cleveland y nunca termina de decidir si es una comedia para chicos, una sátira adulta o una aventura de monstruos. Willard Huyck filma esa mezcla con una energía extraña, pero el disfraz del protagonista y los chistes de doble sentido envejecieron peor que el maquillaje de los villanos. Lea Thompson le pone onda a Beverly, mientras Tim Robbins se entrega al delirio. Sale mal casi todo, aunque su fracaso es tan singular que resulta difícil olvidarla.",
 	"editorial": {
-	"becauseYouLiked": [
-		"spider-man-3-2007",
-		"the-avengers-2012"
-	],
-	"related": [
-		"captain-america-the-winter-soldier-2014",
-		"x-men-days-of-future-past-2014",
-		"avengers-age-of-ultron-2015",
-		"guardians-of-the-galaxy-vol-2-2017"
-	]
-},
+		"becauseYouLiked": [
+			"spider-man-3-2007",
+			"the-avengers-2012"
+		],
+		"related": [
+			"captain-america-the-winter-soldier-2014",
+			"x-men-days-of-future-past-2014",
+			"avengers-age-of-ultron-2015",
+			"guardians-of-the-galaxy-vol-2-2017"
+		]
+	},
 	"synopsis": "En Duckworld, un planeta parecido a la Tierra habitado por patos antropomórficos, Howard el Pato es impulsado fuera de su edificio de apartamentos hacia el espacio exterior; aterriza en la Tierra, en Cleveland, Ohio.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-06"
+	"reviewPublishedAt": "2026-03-06",
+	"country": "GB, US",
+	"isArgentinian": false
 }

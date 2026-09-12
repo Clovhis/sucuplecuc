@@ -8,34 +8,46 @@
 	"reviewPublishedAt": "2026-08-26",
 	"audienceRating": "+13",
 	"category": "Animacion",
-	"genres": ["Animación", "Acción", "Crimen", "Drama"],
+	"genres": [
+		"Animación",
+		"Acción",
+		"Crimen",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos y Corea del Sur",
+	"country": "US, KR",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/batman-knightfall-part-1-knightfall-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "k-L3KdJIm_w",
 	"releasePlatform": "Apple TV",
 	"director": "Jeff Wamester",
-	"mainCast": ["Anson Mount", "Michael Mando", "Pablo Schreiber", "Bruce Boxleitner"],
+	"mainCast": [
+		"Anson Mount",
+		"Michael Mando",
+		"Pablo Schreiber",
+		"Bruce Boxleitner"
+	],
 	"productionCompany": "Warner Bros. Animation y DC Entertainment",
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
 	"runtimeMinutes": 79,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"wolfwalkers-espiritu-de-lobo-2020",
-		"el-pequeno-ninja-el-origen-2026"
-	],
-	"related": [
-		"goat-2026",
-		"lego-star-wars-the-mandalorian-2026",
-		"ninja-turtles-caos-mutante-2023",
-		"jujutsu-kaisen-0-2021"
-	]
-},
+		"becauseYouLiked": [
+			"wolfwalkers-espiritu-de-lobo-2020",
+			"el-pequeno-ninja-el-origen-2026"
+		],
+		"related": [
+			"goat-2026",
+			"lego-star-wars-the-mandalorian-2026",
+			"ninja-turtles-caos-mutante-2023",
+			"jujutsu-kaisen-0-2021"
+		]
+	},
 	"review": "Batman: Knightfall - Part 1: Knightfall entiende que el cansancio también puede ser una amenaza. La ciudad se llena de enemigos, el héroe empieza a tomar malas decisiones y la historia mira con interés el momento en que una rutina de control deja de alcanzar.\n\nLa animación es funcional y el relato sabe repartir golpes, persecuciones y discusiones sobre el legado del personaje. Como primera parte, sin embargo, guarda demasiado para después y se siente más como un tramo de una historia extensa que como una película completamente cerrada."
 }

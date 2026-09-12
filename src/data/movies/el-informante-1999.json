@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Thriller", "Política"],
+	"genres": [
+		"Drama",
+		"Thriller",
+		"Política"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1999/el-informante-1999.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "MGOb29aePyc",
 	"releasePlatform": "Otras plataformas",
 	"director": "Michael Mann",
-	"mainCast": ["Russell Crowe", "Al Pacino", "Christopher Plummer", "Diane Venora", "Philip Baker Hall"],
+	"mainCast": [
+		"Russell Crowe",
+		"Al Pacino",
+		"Christopher Plummer",
+		"Diane Venora",
+		"Philip Baker Hall"
+	],
 	"productionCompany": "Touchstone Pictures, Blue Lion Entertainment",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
@@ -25,16 +35,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"los-secretos-del-poder-2009",
-		"ali-2001"
-	],
-	"related": [
-		"los-idus-de-marzo-2011",
-		"el-creyente-2001",
-		"el-poder-de-la-justicia-1997",
-		"en-honor-a-la-verdad-1996"
-	]
-},
+		"becauseYouLiked": [
+			"los-secretos-del-poder-2009",
+			"ali-2001"
+		],
+		"related": [
+			"los-idus-de-marzo-2011",
+			"el-creyente-2001",
+			"el-poder-de-la-justicia-1997",
+			"en-honor-a-la-verdad-1996"
+		]
+	},
 	"review": "Michael Mann filma el periodismo como un thriller de presión sostenida: cada llamada, reunión y silencio puede cambiar el destino del informe. Russell Crowe trabaja desde la contención y Al Pacino aporta la urgencia de un productor que entiende que publicar también es exponerse. La película es larga y deliberadamente densa, pero encuentra tensión en los procedimientos, en la ética y en el precio íntimo de sostener una verdad incómoda."
 }

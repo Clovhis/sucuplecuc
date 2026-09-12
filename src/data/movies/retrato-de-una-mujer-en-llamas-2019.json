@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 121,
 	"editorial": {
-	"becauseYouLiked": [
-		"antes-de-amanecer-1995",
-		"heartstopper-para-siempre-2026"
-	],
-	"related": [
-		"loco-y-estupido-amor-2011",
-		"blue-valentine-2010",
-		"mujer-bonita-1990",
-		"you-can-t-take-it-with-you-1938"
-	]
-},
+		"becauseYouLiked": [
+			"antes-de-amanecer-1995",
+			"heartstopper-para-siempre-2026"
+		],
+		"related": [
+			"loco-y-estupido-amor-2011",
+			"blue-valentine-2010",
+			"mujer-bonita-1990",
+			"you-can-t-take-it-with-you-1938"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }

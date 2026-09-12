@@ -8,23 +8,42 @@
 	"reviewPublishedAt": "2026-09-11",
 	"audienceRating": "+13",
 	"category": "Aventura",
-	"genres": ["Aventura", "Accion", "Fantasia"],
+	"genres": [
+		"Aventura",
+		"Accion",
+		"Fantasia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1999/la-momia-1999.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "CT6yWV9e4Ig",
 	"releasePlatform": "Prime Video",
 	"director": "Stephen Sommers",
-	"mainCast": ["Brendan Fraser", "Rachel Weisz", "John Hannah"],
+	"mainCast": [
+		"Brendan Fraser",
+		"Rachel Weisz",
+		"John Hannah"
+	],
 	"productionCompany": "Universal Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 125,
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"awards": {"wins": []},
-	"editorial": {"becauseYouLiked": ["el-caballero-verde-2021"], "related": ["atlantis-el-imperio-perdido-2001", "el-codigo-da-vinci-2006", "depredador-1987"]},
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"el-caballero-verde-2021"
+		],
+		"related": [
+			"atlantis-el-imperio-perdido-2001",
+			"el-codigo-da-vinci-2006",
+			"depredador-1987"
+		]
+	},
 	"review": "Stephen Sommers entiende que una aventura de momias necesita arena, peligro y un poco de descaro, y arma un parque de diversiones que todavía se mueve con ritmo. Brendan Fraser le pone humanidad al héroe sin convertirlo en un payaso, mientras Rachel Weisz sostiene la parte curiosa y valiente del relato. Los efectos tienen el encanto de su época y la película abraza el exceso con una honestidad que la vuelve más simpática que solemne."
 }

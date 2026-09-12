@@ -1,4 +1,5 @@
 import type { Movie } from '../types/movie';
+import { hasMovieCountry } from './countries';
 import { moviesSharePlatform } from './platforms.ts';
 
 export type RecommendationGenreId =
@@ -359,7 +360,7 @@ function isArgentinianMovie(movie: Pick<Movie, 'country' | 'isArgentinian'>): bo
 	if (movie.isArgentinian === true) {
 		return true;
 	}
-	return movie.country?.trim().toUpperCase() === 'AR';
+	return hasMovieCountry(movie.country, 'AR');
 }
 
 function getRecommendationGenres(

@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia"],
+	"genres": [
+		"Drama",
+		"Comedia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos, Emiratos Árabes Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2011/el-castor-2011.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "3dR4Sfe48iA",
 	"releasePlatform": "Otras plataformas",
 	"director": "Jodie Foster",
-	"mainCast": ["Mel Gibson", "Jodie Foster", "Anton Yelchin", "Jennifer Lawrence", "Cherry Jones"],
+	"mainCast": [
+		"Mel Gibson",
+		"Jodie Foster",
+		"Anton Yelchin",
+		"Jennifer Lawrence",
+		"Cherry Jones"
+	],
 	"productionCompany": "Summit Entertainment",
 	"verdict": "zafa",
 	"verdictLabel": "ZAFABLE",
@@ -25,16 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-pequeno-tate-1991",
-		"funny-people-2009"
-	],
-	"related": [
-		"lady-bird-2017",
-		"la-despedida-2019",
-		"suenos-de-oslo-2024",
-		"la-vida-es-bella-1997"
-	]
-},
+		"becauseYouLiked": [
+			"el-pequeno-tate-1991",
+			"funny-people-2009"
+		],
+		"related": [
+			"lady-bird-2017",
+			"la-despedida-2019",
+			"suenos-de-oslo-2024",
+			"la-vida-es-bella-1997"
+		]
+	},
 	"review": "El castor se anima a contar la depresión como una comedia de objeto extraño y después deja que el chiste se vuelva incómodo. Mel Gibson encuentra una fragilidad áspera en Walter, mientras Jodie Foster filma la familia desde la paciencia agotada de quien quiere ayudar sin saber cómo. La alegoría no siempre tiene la misma fuerza y algunas vueltas son demasiado prolijas, pero queda una película imperfecta y honesta sobre la dependencia, el lenguaje y la posibilidad de pedir ayuda."
 }

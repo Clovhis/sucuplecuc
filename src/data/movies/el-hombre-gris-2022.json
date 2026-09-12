@@ -1,27 +1,48 @@
 {
-  "slug": "el-hombre-gris-2022",
-  "title": "El hombre gris",
-  "originalTitle": "The Gray Man",
-  "synopsis": "Court Gentry es un agente de la CIA reclutado desde una prisión y convertido en uno de los operativos más eficientes de la agencia. Cuando descubre un secreto interno, su antiguo compañero Lloyd Hansen recibe la orden de perseguirlo por medio mundo.",
-  "year": 2022,
-  "audienceRating": "+13",
-  "category": "Accion",
-  "genres": ["Accion", "Thriller"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/2022/el-hombre-gris-2022.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "BmllggGO4pM",
-  "releasePlatform": "Netflix",
-  "director": "Anthony Russo y Joe Russo",
-  "mainCast": ["Ryan Gosling", "Chris Evans", "Ana de Armas", "Jessica Henwick"],
-  "productionCompany": "Netflix",
-  "verdict": "zafa",
-  "verdictLabel": "PASABLE",
-  "awards": {"wins": []},
-  "editorial": {"becauseYouLiked":["una-noche-para-sobrevivir-2015","drive-2011"],"related":["el-fuego-de-la-venganza-2004","the-fate-of-the-furious-2017","furious-7-2015","fast-and-furious-6-2013"]},
-  "review": "El hombre gris es una superproducción de acción que confía en el movimiento, la química del elenco y una colección de ciudades para no quedarse quieta. Los hermanos Russo le dan a Ryan Gosling un héroe lacónico y a Chris Evans un villano juguetón, mientras Ana de Armas roba varias escenas con precisión física. La historia de espías es intercambiable y el espectáculo se estira, pero las persecuciones tienen claridad y el tono de aventura funciona como entretenimiento directo.",
-  "runtimeMinutes": 128,
-  "reviewPublishedAt": "2026-08-24"
+	"slug": "el-hombre-gris-2022",
+	"title": "El hombre gris",
+	"originalTitle": "The Gray Man",
+	"synopsis": "Court Gentry es un agente de la CIA reclutado desde una prisión y convertido en uno de los operativos más eficientes de la agencia. Cuando descubre un secreto interno, su antiguo compañero Lloyd Hansen recibe la orden de perseguirlo por medio mundo.",
+	"year": 2022,
+	"audienceRating": "+13",
+	"category": "Accion",
+	"genres": [
+		"Accion",
+		"Thriller"
+	],
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/2022/el-hombre-gris-2022.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "BmllggGO4pM",
+	"releasePlatform": "Netflix",
+	"director": "Anthony Russo y Joe Russo",
+	"mainCast": [
+		"Ryan Gosling",
+		"Chris Evans",
+		"Ana de Armas",
+		"Jessica Henwick"
+	],
+	"productionCompany": "Netflix",
+	"verdict": "zafa",
+	"verdictLabel": "PASABLE",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"una-noche-para-sobrevivir-2015",
+			"drive-2011"
+		],
+		"related": [
+			"el-fuego-de-la-venganza-2004",
+			"the-fate-of-the-furious-2017",
+			"furious-7-2015",
+			"fast-and-furious-6-2013"
+		]
+	},
+	"review": "El hombre gris es una superproducción de acción que confía en el movimiento, la química del elenco y una colección de ciudades para no quedarse quieta. Los hermanos Russo le dan a Ryan Gosling un héroe lacónico y a Chris Evans un villano juguetón, mientras Ana de Armas roba varias escenas con precisión física. La historia de espías es intercambiable y el espectáculo se estira, pero las persecuciones tienen claridad y el tono de aventura funciona como entretenimiento directo.",
+	"runtimeMinutes": 128,
+	"reviewPublishedAt": "2026-08-24"
 }

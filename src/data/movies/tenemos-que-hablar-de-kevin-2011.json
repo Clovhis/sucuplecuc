@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 113,
 	"editorial": {
-	"becauseYouLiked": [
-		"estoy-pensando-en-dejarlo-2020",
-		"tierra-de-crimen-2026"
-	],
-	"related": [
-		"nunca-estaras-a-salvo-2017",
-		"shutter-island-2010",
-		"enemy-2013",
-		"la-caza-2012"
-	]
-},
+		"becauseYouLiked": [
+			"estoy-pensando-en-dejarlo-2020",
+			"tierra-de-crimen-2026"
+		],
+		"related": [
+			"nunca-estaras-a-salvo-2017",
+			"shutter-island-2010",
+			"enemy-2013",
+			"la-caza-2012"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

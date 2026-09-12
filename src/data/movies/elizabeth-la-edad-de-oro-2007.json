@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Historia", "Romance"],
+	"genres": [
+		"Drama",
+		"Historia",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Reino Unido",
+	"country": "GB",
 	"isArgentinian": false,
 	"poster": "assets/posters/2007/elizabeth-la-edad-de-oro-2007.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "90IeKk7bSOE",
 	"releasePlatform": "Otras plataformas",
 	"director": "Shekhar Kapur",
-	"mainCast": ["Cate Blanchett", "Clive Owen", "Geoffrey Rush", "Abbie Cornish", "Samantha Morton"],
+	"mainCast": [
+		"Cate Blanchett",
+		"Clive Owen",
+		"Geoffrey Rush",
+		"Abbie Cornish",
+		"Samantha Morton"
+	],
 	"productionCompany": "Working Title Films, Universal Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "CUMPLE",
@@ -25,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-curioso-caso-de-benjamin-button-2008",
-		"sweet-and-lowdown-1999"
-	],
-	"related": [
-		"lo-que-queda-del-dia-1993",
-		"hitchcock-2012",
-		"the-king-s-speech-2010",
-		"carol-2015"
-	]
-},
+		"becauseYouLiked": [
+			"el-curioso-caso-de-benjamin-button-2008",
+			"sweet-and-lowdown-1999"
+		],
+		"related": [
+			"lo-que-queda-del-dia-1993",
+			"hitchcock-2012",
+			"the-king-s-speech-2010",
+			"carol-2015"
+		]
+	},
 	"runtimeMinutes": 114,
 	"review": "La edad de oro vuelve a la corte de Elizabeth con una escala más grande y un tono más solemne. La amenaza española y la tensión religiosa arman un espectáculo vistoso, mientras Cate Blanchett encuentra en la reina una mezcla interesante de autoridad, celos y cansancio. El romance y las intrigas no siempre tienen el mismo pulso, pero la película funciona cuando convierte la imagen de una soberana invencible en una armadura que pesa."
 }

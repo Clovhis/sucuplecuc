@@ -25,17 +25,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 123,
 	"editorial": {
-	"becauseYouLiked": [
-		"requiem-por-un-sueno-2000",
-		"cruce-de-caminos-2012"
-	],
-	"related": [
-		"fight-club-1999",
-		"rashomon-1950",
-		"prisioneros-2013",
-		"enter-the-void-2009"
-	]
-},
+		"becauseYouLiked": [
+			"requiem-por-un-sueno-2000",
+			"cruce-de-caminos-2012"
+		],
+		"related": [
+			"fight-club-1999",
+			"rashomon-1950",
+			"prisioneros-2013",
+			"enter-the-void-2009"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -45,5 +45,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }

@@ -12,7 +12,7 @@
 	"subgenres": [
 		"Coming of Age"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"audienceRating": "+16",
 	"runtimeMinutes": 104,
 	"poster": "assets/posters/1998/the-faculty-1998.webp",
@@ -35,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"jovenes-y-brujas-1996",
-		"jennifer-s-body-2009"
-	],
-	"related": [
-		"tetsuo-the-iron-man-1989",
-		"dejame-entrar-2008",
-		"la-zona-muerta-1983",
-		"battle-royale-2000"
-	]
-},
+		"becauseYouLiked": [
+			"jovenes-y-brujas-1996",
+			"jennifer-s-body-2009"
+		],
+		"related": [
+			"tetsuo-the-iron-man-1989",
+			"dejame-entrar-2008",
+			"la-zona-muerta-1983",
+			"battle-royale-2000"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

@@ -4,7 +4,10 @@
 	"originalTitle": "Nosferatu",
 	"year": 2024,
 	"category": "Terror",
-	"genres": ["Terror", "Fantasía"],
+	"genres": [
+		"Terror",
+		"Fantasía"
+	],
 	"poster": "assets/posters/2024/nosferatu-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "nulvWqYUM8k",
@@ -23,18 +26,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-faro-2019",
-		"ego-2022"
-	],
-	"related": [
-		"juegos-inocentes-2021",
-		"la-bruja-2015",
-		"los-muertos-no-mueren-2019",
-		"mandy-2018"
-	]
-},
+		"becauseYouLiked": [
+			"el-faro-2019",
+			"ego-2022"
+		],
+		"related": [
+			"juegos-inocentes-2021",
+			"la-bruja-2015",
+			"los-muertos-no-mueren-2019",
+			"mandy-2018"
+		]
+	},
 	"synopsis": "Una joven llamada Ellen reza por un compañero que alivie su soledad. Sin darse cuenta, contacta con un ser poderoso conocido como Nosferatu, forjando un vínculo psíquico entre ellos. En 1838, Ellen se casó con Thomas Hutter y viven en Wisburg, Alemania.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

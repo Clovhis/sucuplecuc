@@ -18,23 +18,25 @@
 	"verdict": "no_recomendada",
 	"verdictLabel": "MALISIMA",
 	"runtimeMinutes": 154,
-  "review": "James Mangold encuentra una entrada interesante al mostrar a Indy viejo, malhumorado y fuera de época en 1969, pero después la aventura se alarga más de lo necesario. Harrison Ford aprovecha ese cansancio para darle gravedad al personaje, mientras Phoebe Waller-Bridge aporta una energía más ladrona y movediza. Hay una persecución urbana muy buena y el tramo final se anima a una idea extraña, aunque los efectos digitales y la repetición de situaciones le quitan frescura. Es una despedida afectuosa, no una de las grandes aventuras de la saga.",
+	"review": "James Mangold encuentra una entrada interesante al mostrar a Indy viejo, malhumorado y fuera de época en 1969, pero después la aventura se alarga más de lo necesario. Harrison Ford aprovecha ese cansancio para darle gravedad al personaje, mientras Phoebe Waller-Bridge aporta una energía más ladrona y movediza. Hay una persecución urbana muy buena y el tramo final se anima a una idea extraña, aunque los efectos digitales y la repetición de situaciones le quitan frescura. Es una despedida afectuosa, no una de las grandes aventuras de la saga.",
 	"awards": {
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"uncharted-2022",
-		"peligro-inminente-1994"
-	],
-	"related": [
-		"el-fugitivo-1993",
-		"john-wick-chapter-4-2023",
-		"mission-impossible-dead-reckoning-part-one-2023",
-		"kingdom-of-the-planet-of-the-apes-2024"
-	]
-},
+		"becauseYouLiked": [
+			"uncharted-2022",
+			"peligro-inminente-1994"
+		],
+		"related": [
+			"el-fugitivo-1993",
+			"john-wick-chapter-4-2023",
+			"mission-impossible-dead-reckoning-part-one-2023",
+			"kingdom-of-the-planet-of-the-apes-2024"
+		]
+	},
 	"synopsis": "Ambientada en 1969, la película sigue a Jones y su ahijada separada, Helena, quienes intentan localizar un poderoso artefacto ante el Dr. Jürgen Voller, un nazi convertido en científico de la NASA, que planea usarlo para alterar el resultado de la Segunda Guerra Mundial.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

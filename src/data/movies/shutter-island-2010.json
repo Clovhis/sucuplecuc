@@ -7,13 +7,15 @@
 	"releaseDate": "2010-02-14",
 	"audienceRating": "+17",
 	"category": "Thriller",
-	"subgenres": ["Psicológico"],
+	"subgenres": [
+		"Psicológico"
+	],
 	"genres": [
 		"Drama",
 		"Suspense",
 		"Misterio"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2010/shutter-island-2010.webp",
 	"screenshots": [],
@@ -35,17 +37,17 @@
 	},
 	"runtimeMinutes": 138,
 	"editorial": {
-	"becauseYouLiked": [
-		"cape-fear-1991",
-		"enemy-2013"
-	],
-	"related": [
-		"the-departed-2006",
-		"zodiaco-2007",
-		"mulholland-drive-2001",
-		"estoy-pensando-en-dejarlo-2020"
-	]
-},
+		"becauseYouLiked": [
+			"cape-fear-1991",
+			"enemy-2013"
+		],
+		"related": [
+			"the-departed-2006",
+			"zodiaco-2007",
+			"mulholland-drive-2001",
+			"estoy-pensando-en-dejarlo-2020"
+		]
+	},
 	"review": "Shutter Island lleva a un agente federal a investigar una desaparición en un hospital psiquiátrico aislado, donde cada pista parece confirmar que algo no cierra. Martin Scorsese dirige el thriller como un noir enfermo, con tormentas, música amenazante y una puesta que desconfía de todo lo que muestra; Leonardo DiCaprio sostiene la obsesión con una intensidad que no se relaja. El giro final puede adivinarse y el exceso de señales le quita sutileza, pero la atmósfera sigue funcionando. Vale por su pesadilla de posguerra y por una tristeza que permanece después del misterio.",
 	"reviewPublishedAt": "2026-04-30"
 }

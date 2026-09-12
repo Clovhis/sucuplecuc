@@ -8,16 +8,24 @@
 	"reviewPublishedAt": "2026-09-11",
 	"audienceRating": "+16",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama"],
+	"genres": [
+		"Comedia",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "España",
+	"country": "ES",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/gracias-equipo-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "5A4KIsKBC5k",
 	"releasePlatform": "Netflix",
 	"director": "Diego Núñez Irigoyen",
-	"mainCast": ["Alexandra Jiménez", "Maribel Verdú", "Pedro Casablanc", "Raúl Tejón"],
+	"mainCast": [
+		"Alexandra Jiménez",
+		"Maribel Verdú",
+		"Pedro Casablanc",
+		"Raúl Tejón"
+	],
 	"productionCompany": "Zeta Studios",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -26,8 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["aida-y-vuelta-2026", "office-romance-2026"],
-		"related": ["53-domingos-2026", "competencia-oficial-2021", "el-plan-de-maggie-2016", "after-hours-1985"]
+		"becauseYouLiked": [
+			"aida-y-vuelta-2026",
+			"office-romance-2026"
+		],
+		"related": [
+			"53-domingos-2026",
+			"competencia-oficial-2021",
+			"el-plan-de-maggie-2016",
+			"after-hours-1985"
+		]
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",

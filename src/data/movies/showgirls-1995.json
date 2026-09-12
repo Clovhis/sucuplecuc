@@ -25,17 +25,17 @@
 	"verdictLabel": "ZAFA",
 	"runtimeMinutes": 131,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-piano-1993",
-		"el-espectaculo-de-imagenes-de-terror-de-rocky-1975"
-	],
-	"related": [
-		"funes-un-gran-amor-1993",
-		"tango-feroz-la-leyenda-de-tanguito-1993",
-		"casi-famosos-2000",
-		"sweet-and-lowdown-1999"
-	]
-},
+		"becauseYouLiked": [
+			"el-piano-1993",
+			"el-espectaculo-de-imagenes-de-terror-de-rocky-1975"
+		],
+		"related": [
+			"funes-un-gran-amor-1993",
+			"tango-feroz-la-leyenda-de-tanguito-1993",
+			"casi-famosos-2000",
+			"sweet-and-lowdown-1999"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -49,5 +49,6 @@
 		"Prime Video",
 		"Apple TV"
 	],
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }

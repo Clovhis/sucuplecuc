@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 117,
 	"editorial": {
-	"becauseYouLiked": [
-		"lady-halcon-1985",
-		"charlie-and-the-chocolate-factory-2005"
-	],
-	"related": [
-		"la-historia-sin-fin-1984",
-		"el-caballero-verde-2021",
-		"the-bfg-2016",
-		"una-serie-de-eventos-desafortunados-2004"
-	]
-},
+		"becauseYouLiked": [
+			"lady-halcon-1985",
+			"charlie-and-the-chocolate-factory-2005"
+		],
+		"related": [
+			"la-historia-sin-fin-1984",
+			"el-caballero-verde-2021",
+			"the-bfg-2016",
+			"una-serie-de-eventos-desafortunados-2004"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

@@ -57,6 +57,12 @@ function assertValidInput(args) {
 	if (!Number.isInteger(numericYear) || numericYear < 1888 || numericYear > 2100) {
 		throw new Error('Year invalido. Debe ser un entero entre 1888 y 2100.');
 	}
+	if (args.country && !/^[A-Za-z]{2}(?:\s*,\s*[A-Za-z]{2})*$/.test(args.country.trim())) {
+		throw new Error('--country debe usar códigos ISO de dos letras, por ejemplo MY o AR, ES.');
+	}
+	if (!args['dry-run'] && !args.country) {
+		throw new Error('Para crear una ficha usá --country con la nacionalidad ISO verificada, por ejemplo --country MY.');
+	}
 	if (args['poster-url'] && !/^https?:\/\//i.test(args['poster-url'])) {
 		throw new Error('--poster-url debe ser una URL http(s) de la fuente de arte verificada.');
 	}
@@ -146,6 +152,7 @@ async function main() {
 				? args['original-title'].trim()
 				: template.originalTitle,
 		poster: typeof args['poster-url'] === 'string' ? args['poster-url'].trim() : template.poster,
+		country: typeof args.country === 'string' ? args.country.trim().toUpperCase().replace(/\s*,\s*/g, ', ') : template.country,
 		year,
 		synopsis:
 			typeof args.synopsis === 'string' && args.synopsis.trim().length > 0

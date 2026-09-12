@@ -7,16 +7,24 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Historia", "Bélica"],
+	"genres": [
+		"Drama",
+		"Historia",
+		"Bélica"
+	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos",
+	"country": "GB, US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2023/golda-2023.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "unW5w6JCEb8",
 	"releasePlatform": "Prime Video",
 	"director": "Guy Nattiv",
-	"mainCast": ["Helen Mirren", "Liev Schreiber", "Camille Cottin"],
+	"mainCast": [
+		"Helen Mirren",
+		"Liev Schreiber",
+		"Camille Cottin"
+	],
 	"productionCompany": "Qwerty Films, MetFilm Production",
 	"verdict": "zafa",
 	"verdictLabel": "ZAFABLE",
@@ -25,16 +33,16 @@
 	},
 	"runtimeMinutes": 100,
 	"editorial": {
-	"becauseYouLiked": [
-		"the-swedish-connection-2026",
-		"the-post-2017"
-	],
-	"related": [
-		"k-19-the-widowmaker-2002",
-		"lincoln-2012",
-		"war-horse-2011",
-		"el-pianista-2002"
-	]
-},
+		"becauseYouLiked": [
+			"the-swedish-connection-2026",
+			"the-post-2017"
+		],
+		"related": [
+			"k-19-the-widowmaker-2002",
+			"lincoln-2012",
+			"war-horse-2011",
+			"el-pianista-2002"
+		]
+	},
 	"review": "Golda trabaja la guerra como una sucesión de decisiones, silencios y cuerpos agotados más que como un espectáculo de combate. Helen Mirren construye a Meir desde la dureza de una dirigente que no puede permitirse quebrarse, pero también desde la culpa que se filtra en cada conversación privada. El encierro de las salas de mando concentra la tensión y vuelve concreto el peso de las cifras, aunque el guion a veces explica demasiado lo que la actuación ya había dejado claro."
 }

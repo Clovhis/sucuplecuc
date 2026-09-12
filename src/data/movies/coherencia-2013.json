@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 89,
 	"editorial": {
-	"becauseYouLiked": [
-		"ex-machina-2014",
-		"donnie-darko-2001"
-	],
-	"related": [
-		"piscina-infinita-2023",
-		"cube-1997",
-		"existenz-1999",
-		"luna-2009"
-	]
-},
+		"becauseYouLiked": [
+			"ex-machina-2014",
+			"donnie-darko-2001"
+		],
+		"related": [
+			"piscina-infinita-2023",
+			"cube-1997",
+			"existenz-1999",
+			"luna-2009"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

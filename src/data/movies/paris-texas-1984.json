@@ -12,7 +12,7 @@
 	"subgenres": [
 		"Road Movie"
 	],
-  "poster": "assets/posters/1984/paris-texas-1984.webp",
+	"poster": "assets/posters/1984/paris-texas-1984.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "HaoKIfDfDxc",
 	"director": "Wim Wenders",
@@ -25,17 +25,17 @@
 	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 145,
 	"editorial": {
-	"becauseYouLiked": [
-		"un-lugar-en-el-mundo-1992",
-		"ladron-de-bicicletas-1948"
-	],
-	"related": [
-		"c-mon-c-mon-siempre-adelante-2021",
-		"la-voluntad-de-dios-2026",
-		"camino-a-la-perdicion-2002",
-		"crossroads-1986"
-	]
-},
+		"becauseYouLiked": [
+			"un-lugar-en-el-mundo-1992",
+			"ladron-de-bicicletas-1948"
+		],
+		"related": [
+			"c-mon-c-mon-siempre-adelante-2021",
+			"la-voluntad-de-dios-2026",
+			"camino-a-la-perdicion-2002",
+			"crossroads-1986"
+		]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -52,5 +52,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Alemania"
+	"country": "DE",
+	"isArgentinian": false
 }

@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 90,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-extrano-2016",
-		"la-cabana-siniestra-2019"
-	],
-	"related": [
-		"lo-que-la-verdad-esconde-2000",
-		"enemy-2013",
-		"el-profugo-2020",
-		"la-escalera-de-jacob-1990"
-	]
-},
+		"becauseYouLiked": [
+			"el-extrano-2016",
+			"la-cabana-siniestra-2019"
+		],
+		"related": [
+			"lo-que-la-verdad-esconde-2000",
+			"enemy-2013",
+			"el-profugo-2020",
+			"la-escalera-de-jacob-1990"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Japón"
+	"country": "JP",
+	"isArgentinian": false
 }

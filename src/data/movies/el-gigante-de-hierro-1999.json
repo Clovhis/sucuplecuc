@@ -23,17 +23,17 @@
 	"verdictLabel": "IMPERDIBLE",
 	"runtimeMinutes": 86,
 	"editorial": {
-	"becauseYouLiked": [
-		"los-increibles-2-2018",
-		"lego-star-wars-the-mandalorian-2026"
-	],
-	"related": [
-		"ratatouille-2007",
-		"tarzan-1999",
-		"el-planeta-salvaje-1973",
-		"las-locuras-del-emperador-2000"
-	]
-},
+		"becauseYouLiked": [
+			"los-increibles-2-2018",
+			"lego-star-wars-the-mandalorian-2026"
+		],
+		"related": [
+			"ratatouille-2007",
+			"tarzan-1999",
+			"el-planeta-salvaje-1973",
+			"las-locuras-del-emperador-2000"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

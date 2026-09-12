@@ -8,16 +8,27 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "ATP",
 	"category": "Accion",
-	"genres": ["Accion", "Drama", "Familia", "Deporte"],
+	"genres": [
+		"Accion",
+		"Drama",
+		"Familia",
+		"Deporte"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1986/karate-kid-ii-la-historia-continua-1986.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "V-T0ajeo7xQ",
 	"releasePlatform": "Otras plataformas",
 	"director": "John G. Avildsen",
-	"mainCast": ["Ralph Macchio", "Pat Morita", "Tamlyn Tomita", "Yuji Okumoto", "Danny Kamekona"],
+	"mainCast": [
+		"Ralph Macchio",
+		"Pat Morita",
+		"Tamlyn Tomita",
+		"Yuji Okumoto",
+		"Danny Kamekona"
+	],
 	"productionCompany": "Columbia Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -26,16 +37,16 @@
 	},
 	"runtimeMinutes": 113,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-ultimo-mohicano-1992",
-		"hook-1991"
-	],
-	"related": [
-		"rocky-1976",
-		"el-fuego-de-la-venganza-2004",
-		"el-hombre-del-norte-2022",
-		"el-cuervo-1994"
-	]
-},
+		"becauseYouLiked": [
+			"el-ultimo-mohicano-1992",
+			"hook-1991"
+		],
+		"related": [
+			"rocky-1976",
+			"el-fuego-de-la-venganza-2004",
+			"el-hombre-del-norte-2022",
+			"el-cuervo-1994"
+		]
+	},
 	"review": "La segunda parte cambia el gimnasio por Okinawa y aprovecha el viaje para darle a Miyagi una historia que la primera película apenas insinuaba. Pat Morita queda en el centro y es, lejos, lo mejor de la película: su humor se mezcla con culpa, amor y una deuda que nunca terminó de saldar. Daniel funciona como acompañante y aprendiz, aunque el conflicto adolescente es menos fresco y algunas peleas parecen estiradas. Aun así, la relación entre maestro y alumno conserva calidez, y el paisaje abre una etapa distinta sin romper el corazón de la saga."
 }

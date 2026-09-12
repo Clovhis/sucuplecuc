@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 139,
 	"editorial": {
-	"becauseYouLiked": [
-		"la-doncella-2016",
-		"culpable-2021"
-	],
-	"related": [
-		"nunca-estaras-a-salvo-2017",
-		"se7en-1995",
-		"prisioneros-2013",
-		"zodiaco-2007"
-	]
-},
+		"becauseYouLiked": [
+			"la-doncella-2016",
+			"culpable-2021"
+		],
+		"related": [
+			"nunca-estaras-a-salvo-2017",
+			"se7en-1995",
+			"prisioneros-2013",
+			"zodiaco-2007"
+		]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -53,5 +53,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Corea del Sur"
+	"country": "KR",
+	"isArgentinian": false
 }

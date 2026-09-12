@@ -21,17 +21,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 115,
 	"editorial": {
-	"becauseYouLiked": [
-		"c-mon-c-mon-siempre-adelante-2021",
-		"punales-por-la-espalda-2019"
-	],
-	"related": [
-		"mas-fuerte-que-el-destino-2017",
-		"secretos-de-un-escandalo-2023",
-		"el-padre-2020",
-		"no-odiaras-2020"
-	]
-},
+		"becauseYouLiked": [
+			"c-mon-c-mon-siempre-adelante-2021",
+			"punales-por-la-espalda-2019"
+		],
+		"related": [
+			"mas-fuerte-que-el-destino-2017",
+			"secretos-de-un-escandalo-2023",
+			"el-padre-2020",
+			"no-odiaras-2020"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -45,5 +45,6 @@
 		"Prime Video",
 		"Apple TV"
 	],
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

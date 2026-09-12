@@ -8,16 +8,24 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"genres": ["Thriller", "Misterio", "Drama"],
+	"genres": [
+		"Thriller",
+		"Misterio",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2005/plan-de-vuelo-2005.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "uspPRaCMb4o",
 	"releasePlatform": "Apple TV",
 	"director": "Robert Schwentke",
-	"mainCast": ["Jodie Foster", "Peter Sarsgaard", "Erika Christensen"],
+	"mainCast": [
+		"Jodie Foster",
+		"Peter Sarsgaard",
+		"Erika Christensen"
+	],
 	"productionCompany": "Touchstone Pictures",
 	"verdict": "zafa",
 	"verdictLabel": "ZAFABLE",
@@ -25,16 +33,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"munich-2005",
-		"el-informe-pelicano-1993"
-	],
-	"related": [
-		"shutter-island-2010",
-		"bridge-of-spies-2015",
-		"cape-fear-1991",
-		"the-departed-2006"
-	]
-},
+		"becauseYouLiked": [
+			"munich-2005",
+			"el-informe-pelicano-1993"
+		],
+		"related": [
+			"shutter-island-2010",
+			"bridge-of-spies-2015",
+			"cape-fear-1991",
+			"the-departed-2006"
+		]
+	},
 	"review": "Plan de vuelo sabe aprovechar la claustrofobia de un avión lleno para convertir una búsqueda familiar en un misterio de pasillo. Jodie Foster carga la película con una energía directa, casi desesperada, y el diseño del espacio le da algo concreto contra lo que pelear: puertas, filas, baños y cámaras que nunca alcanzan. El guion juega con trucos conocidos y algunas explicaciones flojean, pero el ritmo mantiene el pulso hasta un aterrizaje efectivo."
 }

@@ -7,16 +7,27 @@
 	"reviewPublishedAt": "2026-08-23",
 	"audienceRating": "+16",
 	"category": "Aventura",
-	"genres": ["Aventura", "Drama", "Accion", "Historia"],
+	"genres": [
+		"Aventura",
+		"Drama",
+		"Accion",
+		"Historia"
+	],
 	"subgenres": [],
-	"country": "Reino Unido",
+	"country": "GB",
 	"isArgentinian": false,
 	"poster": "assets/posters/1995/rob-roy-la-pasion-de-un-rebelde-1995.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "p76fH8_a32Y",
 	"releasePlatform": "Apple TV",
 	"director": "Michael Caton-Jones",
-	"mainCast": ["Liam Neeson", "Jessica Lange", "John Hurt", "Tim Roth", "Eric Stoltz"],
+	"mainCast": [
+		"Liam Neeson",
+		"Jessica Lange",
+		"John Hurt",
+		"Tim Roth",
+		"Eric Stoltz"
+	],
 	"productionCompany": "United Artists, Talisman Productions",
 	"verdict": "recomendada",
 	"verdictLabel": "IMPERDIBLE",
@@ -25,17 +36,17 @@
 	},
 	"runtimeMinutes": 139,
 	"editorial": {
-	"becauseYouLiked": [
-		"harry-potter-and-the-deathly-hallows-part-1-2010",
-		"ben-hur-1959"
-	],
-	"related": [
-		"hook-1991",
-		"harry-potter-and-the-sorcerers-stone-2001",
-		"harry-potter-and-the-chamber-of-secrets-2002",
-		"la-odisea-2026"
-	]
-},
+		"becauseYouLiked": [
+			"harry-potter-and-the-deathly-hallows-part-1-2010",
+			"ben-hur-1959"
+		],
+		"related": [
+			"hook-1991",
+			"harry-potter-and-the-sorcerers-stone-2001",
+			"harry-potter-and-the-chamber-of-secrets-2002",
+			"la-odisea-2026"
+		]
+	},
 	"review": "Rob Roy no depende sólo de los paisajes y los kilts: Michael Caton-Jones hace que el conflicto por una deuda se vuelva una herida de clase, honor y familia. Liam Neeson interpreta al héroe sin convertirlo en estatua, con una mezcla muy terrenal de paciencia, furia y cansancio. Jessica Lange sostiene el costado doméstico con carácter, mientras Tim Roth disfruta cada gesto venenoso de su rival. Tiene romance, barro y aventura histórica, pero también una pelea final filmada con una precisión física que sigue dejando sin aire.",
 	"isPremiere": false,
 	"premiereLabel": ""

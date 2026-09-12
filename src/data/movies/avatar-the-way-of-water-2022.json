@@ -4,7 +4,12 @@
 	"originalTitle": "Avatar: The Way of Water",
 	"year": 2022,
 	"category": "Ciencia ficcion",
-	"genres": ["Ciencia ficción", "Aventura", "Acción", "Fantasía"],
+	"genres": [
+		"Ciencia ficción",
+		"Aventura",
+		"Acción",
+		"Fantasía"
+	],
 	"poster": "assets/posters/2022/avatar-the-way-of-water-2022.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "d9MyW72ELq0",
@@ -31,18 +36,20 @@
 	"runtimeMinutes": 192,
 	"review": "Avatar: The Way of Water vuelve a Pandora para contar un conflicto familiar bastante clásico, pero James Cameron lo convierte en una experiencia física. El agua, las criaturas y las batallas tienen una claridad visual que hace que cada plano se entienda aun cuando todo se vuelve gigantesco. Sam Worthington y Zoe Saldaña le dan peso al costado de padres desplazados; el problema es que algunas subtramas adolescentes repiten ideas y alargan demasiado el viaje. Vale si querés cine de aventura a escala bestial: la historia no siempre sorprende, pero la dirección sabe exactamente dónde poner los ojos.",
 	"editorial": {
-	"becauseYouLiked": [
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"e-t-the-extra-terrestrial-1982"
-	],
-	"related": [
-		"star-wars-episode-viii-the-last-jedi-2017",
-		"star-wars-episode-iii-revenge-of-the-sith-2005",
-		"star-wars-episode-ii-attack-of-the-clones-2002",
-		"star-wars-episode-vi-return-of-the-jedi-1983"
-	]
-},
+		"becauseYouLiked": [
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"e-t-the-extra-terrestrial-1982"
+		],
+		"related": [
+			"star-wars-episode-viii-the-last-jedi-2017",
+			"star-wars-episode-iii-revenge-of-the-sith-2005",
+			"star-wars-episode-ii-attack-of-the-clones-2002",
+			"star-wars-episode-vi-return-of-the-jedi-1983"
+		]
+	},
 	"synopsis": "Jake Sully y Neytiri buscan refugio con el clan marino Metkayina cuando los humanos regresan a Pandora para perseguirlos. Lejos de su hogar, su familia debe adaptarse a una nueva cultura y proteger a los suyos de una guerra que vuelve a alcanzarlos.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

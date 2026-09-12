@@ -8,16 +8,27 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "ATP",
 	"category": "Accion",
-	"genres": ["Accion", "Drama", "Familia", "Deporte"],
+	"genres": [
+		"Accion",
+		"Drama",
+		"Familia",
+		"Deporte"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1989/karate-kid-iii-el-desafio-final-1989.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "42xkTso8krA",
 	"releasePlatform": "HBO Max",
 	"director": "John G. Avildsen",
-	"mainCast": ["Ralph Macchio", "Pat Morita", "Robyn Lively", "Thomas Ian Griffith", "Martin Kove"],
+	"mainCast": [
+		"Ralph Macchio",
+		"Pat Morita",
+		"Robyn Lively",
+		"Thomas Ian Griffith",
+		"Martin Kove"
+	],
 	"productionCompany": "Columbia Pictures",
 	"verdict": "no_recomendada",
 	"verdictLabel": "MUY FLOJA",
@@ -26,16 +37,16 @@
 	},
 	"runtimeMinutes": 112,
 	"editorial": {
-	"becauseYouLiked": [
-		"rocky-1976",
-		"el-ultimo-mohicano-1992"
-	],
-	"related": [
-		"el-fugitivo-1993",
-		"el-cuervo-1994",
-		"marea-roja-1995",
-		"tres-reyes-1999"
-	]
-},
+		"becauseYouLiked": [
+			"rocky-1976",
+			"el-ultimo-mohicano-1992"
+		],
+		"related": [
+			"el-fugitivo-1993",
+			"el-cuervo-1994",
+			"marea-roja-1995",
+			"tres-reyes-1999"
+		]
+	},
 	"review": "Karate Kid III conserva la pareja de Daniel y Miyagi, pero reemplaza el conflicto humano de las anteriores por una conspiración de villanos que gritan demasiado y explican todo dos veces. Ralph Macchio todavía tiene presencia, y Pat Morita intenta sostener la paciencia del maestro, aunque el guion obliga a ambos a repetir aprendizajes ya conquistados. Hay algún entrenamiento simpático y la nostalgia puede empujarla, pero la película confunde subir las apuestas con inflar el melodrama. Como cierre de la trilogía original, deja más ruido que emoción y se siente claramente por debajo de sus predecesoras."
 }

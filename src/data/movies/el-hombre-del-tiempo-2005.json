@@ -8,16 +8,24 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia"],
+	"genres": [
+		"Drama",
+		"Comedia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2005/el-hombre-del-tiempo-2005.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "vZIIKsnM6MM",
 	"releasePlatform": "Apple TV",
 	"director": "Gore Verbinski",
-	"mainCast": ["Nicolas Cage", "Michael Caine", "Hope Davis", "Nicholas Hoult"],
+	"mainCast": [
+		"Nicolas Cage",
+		"Michael Caine",
+		"Hope Davis",
+		"Nicholas Hoult"
+	],
 	"productionCompany": "Paramount Pictures, Escape Artists",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,7 +33,17 @@
 	"awards": {
 		"wins": []
 	},
-	"editorial": {"becauseYouLiked":["hannah-and-her-sisters-1986","spanglish-2004"],"related":["lars-y-la-chica-real-2007","boogie-nights-1997","un-equipo-muy-especial-1992","punales-por-la-espalda-2019"]},
-	"review": "Gore Verbinski deja que la vida de David Spritz se vuelva incómoda sin convertirlo en un villano doméstico ni en una víctima simpática. Nicolas Cage encuentra el tono exacto para un hombre que repite frases de optimismo mientras se le cae todo alrededor, y Michael Caine aporta la sombra de un padre cuya aprobación parece imposible de alcanzar. Hope Davis y Nicholas Hoult sostienen el conflicto familiar con una sequedad que evita el sentimentalismo. Es una comedia oscura de ritmo paciente, más interesada en la vergüenza cotidiana que en una gran redención.",
-	"awards": {"wins": []}
+	"editorial": {
+		"becauseYouLiked": [
+			"hannah-and-her-sisters-1986",
+			"spanglish-2004"
+		],
+		"related": [
+			"lars-y-la-chica-real-2007",
+			"boogie-nights-1997",
+			"un-equipo-muy-especial-1992",
+			"punales-por-la-espalda-2019"
+		]
+	},
+	"review": "Gore Verbinski deja que la vida de David Spritz se vuelva incómoda sin convertirlo en un villano doméstico ni en una víctima simpática. Nicolas Cage encuentra el tono exacto para un hombre que repite frases de optimismo mientras se le cae todo alrededor, y Michael Caine aporta la sombra de un padre cuya aprobación parece imposible de alcanzar. Hope Davis y Nicholas Hoult sostienen el conflicto familiar con una sequedad que evita el sentimentalismo. Es una comedia oscura de ritmo paciente, más interesada en la vergüenza cotidiana que en una gran redención."
 }

@@ -7,16 +7,27 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+16",
 	"category": "Terror",
-	"genres": ["Terror", "Ciencia ficcion", "Drama"],
-	"subgenres": ["Body Horror"],
-	"country": "Estados Unidos, Reino Unido, Canadá",
+	"genres": [
+		"Terror",
+		"Ciencia ficcion",
+		"Drama"
+	],
+	"subgenres": [
+		"Body Horror"
+	],
+	"country": "US, GB, CA",
 	"isArgentinian": false,
 	"poster": "assets/posters/1986/la-mosca-1986.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "YPhM5T1DViw",
 	"releasePlatform": "Disney Plus",
 	"director": "David Cronenberg",
-	"mainCast": ["Jeff Goldblum", "Geena Davis", "John Getz", "Joy Boushel"],
+	"mainCast": [
+		"Jeff Goldblum",
+		"Geena Davis",
+		"John Getz",
+		"Joy Boushel"
+	],
 	"productionCompany": "Brooksfilms, 20th Century Fox",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
@@ -32,17 +43,17 @@
 	},
 	"runtimeMinutes": 96,
 	"editorial": {
-	"becauseYouLiked": [
-		"videodrome-1983",
-		"scanners-1981"
-	],
-	"related": [
-		"the-brood-1979",
-		"inseparables-1988",
-		"cabeza-borradora-1977",
-		"titane-2021"
-	]
-},
+		"becauseYouLiked": [
+			"videodrome-1983",
+			"scanners-1981"
+		],
+		"related": [
+			"the-brood-1979",
+			"inseparables-1988",
+			"cabeza-borradora-1977",
+			"titane-2021"
+		]
+	},
 	"review": "Seth Brundle empieza como un científico excéntrico y termina enfrentando una mutación que David Cronenberg filma con una mezcla incómoda de fascinación y tristeza. Jeff Goldblum no se limita a actuar el deterioro físico: deja que el personaje se vuelva más arrogante, más desesperado y finalmente más consciente de lo que está perdiendo. Geena Davis sostiene el costado emocional sin convertirlo en melodrama fácil. El maquillaje es brutal, pero la película no depende sólo del asco; su verdadero golpe está en ver una historia de amor transformarse en un duelo por el cuerpo y la identidad.",
 	"isPremiere": false,
 	"premiereLabel": ""

@@ -26,17 +26,17 @@
 	"verdictLabel": "IMPERDIBLE",
 	"runtimeMinutes": 151,
 	"editorial": {
-	"becauseYouLiked": [
-		"culpable-2021",
-		"primicia-mortal-2014"
-	],
-	"related": [
-		"nunca-estaras-a-salvo-2017",
-		"se7en-1995",
-		"vellut-blau-1986",
-		"la-conversacion-1974"
-	]
-},
+		"becauseYouLiked": [
+			"culpable-2021",
+			"primicia-mortal-2014"
+		],
+		"related": [
+			"nunca-estaras-a-salvo-2017",
+			"se7en-1995",
+			"vellut-blau-1986",
+			"la-conversacion-1974"
+		]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -57,5 +57,6 @@
 		"Prime Video",
 		"Apple TV"
 	],
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }

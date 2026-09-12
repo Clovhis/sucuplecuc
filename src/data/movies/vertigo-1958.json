@@ -7,13 +7,15 @@
 	"releaseDate": "1958-05-09",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"subgenres": ["Psicológico"],
+	"subgenres": [
+		"Psicológico"
+	],
 	"genres": [
 		"Thriller",
 		"Misterio",
 		"Romance"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1958/vertigo-1958.webp",
 	"screenshots": [],
@@ -34,17 +36,17 @@
 	},
 	"runtimeMinutes": 128,
 	"editorial": {
-	"becauseYouLiked": [
-		"rebecca-1940",
-		"desaparecida-1988"
-	],
-	"related": [
-		"la-ventana-indiscreta-1954",
-		"la-doncella-2016",
-		"decision-de-partir-2022",
-		"impacto-1981"
-	]
-},
+		"becauseYouLiked": [
+			"rebecca-1940",
+			"desaparecida-1988"
+		],
+		"related": [
+			"la-ventana-indiscreta-1954",
+			"la-doncella-2016",
+			"decision-de-partir-2022",
+			"impacto-1981"
+		]
+	},
 	"review": "Vertigo arranca como un caso de seguimiento y, de a poco, deja ver que lo importante no es resolver un misterio sino mirar cómo un hombre convierte a otra persona en una imagen imposible. Hitchcock usa San Francisco, los verdes y rojos, los silencios y la música de Bernard Herrmann para que el vértigo sea mental antes que físico. James Stewart se corre de su comodidad habitual y hace que la obsesión de Scottie sea cada vez más desagradable; Kim Novak responde con una presencia que la película carga de misterio y tristeza. El ritmo es paciente y su giro cambia por completo el sentido de lo visto. Vale muchísimo por esa puesta en escena precisa y por lo incómoda que resulta su historia de control.",
 	"isPremiere": false,
 	"premiereLabel": "",

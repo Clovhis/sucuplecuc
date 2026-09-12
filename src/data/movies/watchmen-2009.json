@@ -28,18 +28,20 @@
 	"runtimeMinutes": 162,
 	"review": "Zack Snyder se toma en serio el mundo desencantado de Watchmen: héroes rotos, paranoia nuclear y violencia que jamás se presenta como una fiesta limpia. La recreación visual es minuciosa y la música ayuda a darle una identidad rara, mientras Patrick Wilson y Billy Crudup encuentran humanidad bajo personajes deliberadamente extraños. El problema es que el relato acumula información y algunas escenas confunden solemnidad con profundidad. Aun con ese lastre, tiene una ambición incómoda y una mirada política que la separan de la aventura superheroica promedio.",
 	"editorial": {
-	"becauseYouLiked": [
-		"the-dark-knight-2008",
-		"zack-snyder-s-justice-league-2021"
-	],
-	"related": [
-		"the-punisher-one-last-kill-2026",
-		"iron-man-2008",
-		"iron-man-2-2010",
-		"the-incredible-hulk-2008"
-	]
-},
-  "synopsis": "En una versión alternativa de 1985, el asesinato de un antiguo héroe enmascarado lleva a Rorschach a sospechar de una conspiración. Mientras crece la tensión nuclear, sus excompañeros descubren que alguien busca alterar el destino del mundo.",
+		"becauseYouLiked": [
+			"the-dark-knight-2008",
+			"zack-snyder-s-justice-league-2021"
+		],
+		"related": [
+			"the-punisher-one-last-kill-2026",
+			"iron-man-2008",
+			"iron-man-2-2010",
+			"the-incredible-hulk-2008"
+		]
+	},
+	"synopsis": "En una versión alternativa de 1985, el asesinato de un antiguo héroe enmascarado lleva a Rorschach a sospechar de una conspiración. Mientras crece la tensión nuclear, sus excompañeros descubren que alguien busca alterar el destino del mundo.",
 	"audienceRating": "+17",
-	"reviewPublishedAt": "2026-03-06"
+	"reviewPublishedAt": "2026-03-06",
+	"country": "US",
+	"isArgentinian": false
 }

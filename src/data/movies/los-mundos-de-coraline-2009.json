@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 100,
 	"editorial": {
-	"becauseYouLiked": [
-		"las-brujas-de-eastwick-1987",
-		"mandy-2018"
-	],
-	"related": [
-		"nosferatu-1922",
-		"el-ejercito-de-las-tinieblas-1992",
-		"terrorificamente-muertos-1987",
-		"sleepy-hollow-1999"
-	]
-},
+		"becauseYouLiked": [
+			"las-brujas-de-eastwick-1987",
+			"mandy-2018"
+		],
+		"related": [
+			"nosferatu-1922",
+			"el-ejercito-de-las-tinieblas-1992",
+			"terrorificamente-muertos-1987",
+			"sleepy-hollow-1999"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Cine",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

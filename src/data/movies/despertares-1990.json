@@ -8,22 +8,45 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Biografía"],
+	"genres": [
+		"Drama",
+		"Biografía"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1990/despertares-1990.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "7exeVt7CaE4",
 	"releasePlatform": "Apple TV",
-	"releasePlatforms": ["Apple TV"],
+	"releasePlatforms": [
+		"Apple TV"
+	],
 	"director": "Penny Marshall",
-	"mainCast": ["Robert De Niro", "Robin Williams", "John Heard", "Julie Kavner"],
+	"mainCast": [
+		"Robert De Niro",
+		"Robin Williams",
+		"John Heard",
+		"Julie Kavner"
+	],
 	"productionCompany": "Columbia Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY RECOMENDADA",
-	"awards": {"wins": []},
-	"editorial": {"becauseYouLiked":["un-equipo-muy-especial-1992","malcolm-x-1992"],"related":["huracan-carter-1999","una-mujer-audaz-2000","ed-wood-1994","el-juego-de-la-fortuna-2011"]},
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"un-equipo-muy-especial-1992",
+			"malcolm-x-1992"
+		],
+		"related": [
+			"huracan-carter-1999",
+			"una-mujer-audaz-2000",
+			"ed-wood-1994",
+			"el-juego-de-la-fortuna-2011"
+		]
+	},
 	"review": "Despertares evita que el milagro médico sea el final de la historia. El despertar de Leonard abre una ventana a la alegría, al deseo y también a la conciencia de todo lo que se perdió, y Robert De Niro convierte cada gesto recuperado en algo frágil, nunca en una simple exhibición de virtuosismo. Robin Williams acompaña desde una timidez muy distinta a sus papeles más expansivos, como si el asombro del médico también necesitara aprender a hablar. Penny Marshall busca la emoción de frente y a veces la música empuja demasiado, pero el conflicto central conserva una honestidad difícil de sacudir. Es una película que duele por lo que devuelve y por lo que, inevitablemente, vuelve a quitar.",
 	"runtimeMinutes": 120
 }

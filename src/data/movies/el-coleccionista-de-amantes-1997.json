@@ -8,36 +8,44 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Thriller", "Crimen", "Drama"],
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1997/el-coleccionista-de-amantes-1997.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "duTNQE0NnlI",
 	"releasePlatform": "Otras plataformas",
 	"director": "Gary Fleder",
-	"mainCast": ["Morgan Freeman", "Ashley Judd", "Cary Elwes", "Alex McArthur", "Tony Goldwyn"],
+	"mainCast": [
+		"Morgan Freeman",
+		"Ashley Judd",
+		"Cary Elwes",
+		"Alex McArthur",
+		"Tony Goldwyn"
+	],
 	"productionCompany": "Paramount Pictures",
 	"verdict": "zafa",
-	"verdictLabel": "",
+	"verdictLabel": "ZAFA",
 	"awards": {
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-silencio-de-un-hombre-1967",
-		"un-dia-de-furia-1993"
-	],
-	"related": [
-		"se7en-1995",
-		"el-cliente-1994",
-		"el-poder-de-la-justicia-1997",
-		"cassandra-s-dream-2007"
-	]
-},
-	"verdictLabel": "ZAFA",
+		"becauseYouLiked": [
+			"el-silencio-de-un-hombre-1967",
+			"un-dia-de-furia-1993"
+		],
+		"related": [
+			"se7en-1995",
+			"el-cliente-1994",
+			"el-poder-de-la-justicia-1997",
+			"cassandra-s-dream-2007"
+		]
+	},
 	"runtimeMinutes": 115,
-	"editorial": {"becauseYouLiked":["el-silencio-de-un-hombre-1967","un-dia-de-furia-1993"],"related":["se7en-1995","el-cliente-1994","el-poder-de-la-justicia-1997","cassandra-s-dream-2007"]},
 	"review": "El coleccionista de amantes arranca con una premisa oscura y sabe que el caso se vuelve personal apenas aparece la sobrina de Alex Cross. Morgan Freeman lleva la investigación con una calma que contrasta bien con la desesperación de Ashley Judd, y Gary Fleder arma una atmósfera de thriller noventoso, húmeda y bastante incómoda. El problema es que el misterio pierde fuerza cuando necesita explicar demasiado y el cierre acomoda varias piezas con apuro. Aun así, el duelo entre intuición policial y supervivencia mantiene la atención, y la dupla protagonista tiene peso suficiente para atravesar los baches. Zafa como policial de clima fuerte y ejecución irregular."
 }

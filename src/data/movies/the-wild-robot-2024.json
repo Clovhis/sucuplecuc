@@ -23,18 +23,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"los-croods-2013",
-		"the-super-mario-bros-movie-2023"
-	],
-	"related": [
-		"lego-batman-la-pelicula-2017",
-		"mi-villano-favorito-3-2017",
-		"los-croods-una-nueva-era-2020",
-		"the-breadwinner-el-pan-de-la-guerra-2017"
-	]
-},
+		"becauseYouLiked": [
+			"los-croods-2013",
+			"the-super-mario-bros-movie-2023"
+		],
+		"related": [
+			"lego-batman-la-pelicula-2017",
+			"mi-villano-favorito-3-2017",
+			"los-croods-una-nueva-era-2020",
+			"the-breadwinner-el-pan-de-la-guerra-2017"
+		]
+	},
 	"synopsis": "Sigue a un robot de servicio que naufraga en una isla y que debe adaptarse a su entorno, entablar relaciones con la fauna local y convertirse en la madre adoptiva de un ganso huérfano.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

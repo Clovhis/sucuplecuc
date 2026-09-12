@@ -28,17 +28,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 122,
 	"editorial": {
-	"becauseYouLiked": [
-		"the-descent-2005",
-		"el-mas-alla-1981"
-	],
-	"related": [
-		"midsommar-el-terror-no-espera-la-noche-2019",
-		"terrorificamente-muertos-1987",
-		"the-love-witch-2016",
-		"evil-dead-en-llamas-2026"
-	]
-},
+		"becauseYouLiked": [
+			"the-descent-2005",
+			"el-mas-alla-1981"
+		],
+		"related": [
+			"midsommar-el-terror-no-espera-la-noche-2019",
+			"terrorificamente-muertos-1987",
+			"the-love-witch-2016",
+			"evil-dead-en-llamas-2026"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -48,5 +48,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Bélgica"
+	"country": "BE",
+	"isArgentinian": false
 }

@@ -8,32 +8,44 @@
 	"reviewPublishedAt": "2026-08-26",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Drama", "Deporte", "Biografica"],
+	"genres": [
+		"Drama",
+		"Deporte",
+		"Biografica"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2025/la-maquina-the-smashing-machine-2025.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "BSub_UWqyU0",
 	"releasePlatform": "Prime Video",
 	"director": "Benny Safdie",
-	"mainCast": ["Dwayne Johnson", "Emily Blunt", "Ryan Bader", "Bas Rutten", "Oleksandr Usyk"],
+	"mainCast": [
+		"Dwayne Johnson",
+		"Emily Blunt",
+		"Ryan Bader",
+		"Bas Rutten",
+		"Oleksandr Usyk"
+	],
 	"productionCompany": "A24, Seven Bucks Productions y FlynnPictureCo.",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
 	"runtimeMinutes": 123,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"christy-el-combate-de-su-vida-2025",
-		"huracan-carter-1999"
-	],
-	"related": [
-		"el-juego-de-la-fortuna-2011",
-		"the-fighter-2010",
-		"invencible-2006",
-		"ali-2001"
-	]
-},
+		"becauseYouLiked": [
+			"christy-el-combate-de-su-vida-2025",
+			"huracan-carter-1999"
+		],
+		"related": [
+			"el-juego-de-la-fortuna-2011",
+			"the-fighter-2010",
+			"invencible-2006",
+			"ali-2001"
+		]
+	},
 	"review": "La Máquina: The Smashing Machine no filma el deporte como una escalera hacia el triunfo, sino como un modo de vida que se mete en cada conversación y cada silencio. Las peleas importan, pero pesan más los momentos en que el cuerpo del campeón deja de obedecerle y la pareja intenta seguir siendo un refugio.\n\nLa puesta evita el bronce y trabaja con una incomodidad seca, casi doméstica. El protagonista se entrega a una vulnerabilidad que desarma su imagen pública, mientras la relación encuentra fuerza en los gestos pequeños."
 }

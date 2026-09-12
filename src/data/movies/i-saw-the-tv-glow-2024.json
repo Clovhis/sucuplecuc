@@ -4,7 +4,9 @@
 	"originalTitle": "I Saw the TV Glow",
 	"year": 2024,
 	"category": "Drama",
-	"subgenres": ["Psicológico"],
+	"subgenres": [
+		"Psicológico"
+	],
 	"poster": "assets/posters/2024/i-saw-the-tv-glow-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "kymDzCgPwj0",
@@ -24,18 +26,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"tierra-de-crimen-2026",
-		"estoy-pensando-en-dejarlo-2020"
-	],
-	"related": [
-		"la-semilla-del-fruto-sagrado-2024",
-		"trenque-lauquen-2022",
-		"esa-cosa-con-alas-2025",
-		"jay-kelly-2025"
-	]
-},
-  "synopsis": "En un suburbio gris, Owen y Maddy se conocen gracias a una serie nocturna que parece hablarles directamente. Años después, la cancelación del programa reabre una amistad quebrada y una inquietante crisis de identidad.",
+		"becauseYouLiked": [
+			"tierra-de-crimen-2026",
+			"estoy-pensando-en-dejarlo-2020"
+		],
+		"related": [
+			"la-semilla-del-fruto-sagrado-2024",
+			"trenque-lauquen-2022",
+			"esa-cosa-con-alas-2025",
+			"jay-kelly-2025"
+		]
+	},
+	"synopsis": "En un suburbio gris, Owen y Maddy se conocen gracias a una serie nocturna que parece hablarles directamente. Años después, la cancelación del programa reabre una amistad quebrada y una inquietante crisis de identidad.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"country": "US",
+	"isArgentinian": false
 }

@@ -10,7 +10,7 @@
 		"Acción & Aventura",
 		"Familia"
 	],
-	"country": "Reino Unido",
+	"country": "GB",
 	"poster": "assets/posters/2011/harry-potter-and-the-deathly-hallows-part-2-2011.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "HguSMW8XveQ",
@@ -29,19 +29,20 @@
 	},
 	"runtimeMinutes": 134,
 	"editorial": {
-	"becauseYouLiked": [
-		"hook-1991",
-		"the-bfg-2016"
-	],
-	"related": [
-		"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
-		"the-lord-of-the-rings-the-two-towers-2002",
-		"the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
-		"la-odisea-2026"
-	]
-},
+		"becauseYouLiked": [
+			"hook-1991",
+			"the-bfg-2016"
+		],
+		"related": [
+			"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
+			"the-lord-of-the-rings-the-two-towers-2002",
+			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
+			"la-odisea-2026"
+		]
+	},
 	"review": "Las reliquias de la muerte: Parte 2 concentra años de personajes, pistas y rivalidades en una batalla que por fin permite ver las consecuencias de todo lo acumulado. David Yates dirige con oscuridad y escala, pero no pierde de vista los gestos pequeños que vuelven dolorosas las despedidas. Daniel Radcliffe, Emma Watson y Rupert Grint llegan al cierre con una soltura que la saga se ganó con el tiempo. La película depende mucho de haber recorrido el camino anterior y alguna resolución corre más de la cuenta. Como final, sin embargo, entrega emoción, épica y un adiós convincente.",
 	"synopsis": "Después de enterrar a Dobby, Harry Potter le pide al duende Griphook que lo ayude a él, a Ron Weasley y a Hermione Granger a entrar en la bóveda de Bellatrix Lestrange en el banco Gringotts, sospechando que hay un Horrocrux allí. Griphook acepta, a cambio de la Espada de Gryffindor.",
 	"audienceRating": "+12",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

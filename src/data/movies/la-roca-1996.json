@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Accion",
-	"genres": ["Accion", "Thriller", "Aventura"],
+	"genres": [
+		"Accion",
+		"Thriller",
+		"Aventura"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1996/la-roca-1996.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "yYXlDplZHfA",
 	"releasePlatform": "Disney Plus",
 	"director": "Michael Bay",
-	"mainCast": ["Nicolas Cage", "Sean Connery", "Ed Harris", "William Forsythe", "Michael Biehn"],
+	"mainCast": [
+		"Nicolas Cage",
+		"Sean Connery",
+		"Ed Harris",
+		"William Forsythe",
+		"Michael Biehn"
+	],
 	"productionCompany": "Hollywood Pictures, Don Simpson/Jerry Bruckheimer Films",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,7 +35,17 @@
 	"awards": {
 		"wins": []
 	},
-	"editorial": {"becauseYouLiked":["depredador-1987","peligro-inminente-1994"],"related":["redada-asesina-the-raid-2011","robocop-el-defensor-del-futuro-1987","una-noche-para-sobrevivir-2015","the-fate-of-the-furious-2017"]},
-	"review": "Michael Bay arma una máquina de acción de dos horas que sabe exactamente qué quiere vender: una isla imposible, un villano con discurso y una pareja de héroes que no debería funcionar tan bien. Nicolas Cage aporta nervio y humor al científico que debe aprender a moverse en territorio militar, mientras Sean Connery le da gravedad al exconvicto convocado como guía. Ed Harris evita que el antagonista sea apenas una caricatura. La lógica se desarma seguido, pero el montaje, la música y el reparto convierten el disparate en entretenimiento sólido.",
-	"awards": {"wins": []}
+	"editorial": {
+		"becauseYouLiked": [
+			"depredador-1987",
+			"peligro-inminente-1994"
+		],
+		"related": [
+			"redada-asesina-the-raid-2011",
+			"robocop-el-defensor-del-futuro-1987",
+			"una-noche-para-sobrevivir-2015",
+			"the-fate-of-the-furious-2017"
+		]
+	},
+	"review": "Michael Bay arma una máquina de acción de dos horas que sabe exactamente qué quiere vender: una isla imposible, un villano con discurso y una pareja de héroes que no debería funcionar tan bien. Nicolas Cage aporta nervio y humor al científico que debe aprender a moverse en territorio militar, mientras Sean Connery le da gravedad al exconvicto convocado como guía. Ed Harris evita que el antagonista sea apenas una caricatura. La lógica se desarma seguido, pero el montaje, la música y el reparto convierten el disparate en entretenimiento sólido."
 }

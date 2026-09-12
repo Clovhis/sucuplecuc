@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 101,
 	"editorial": {
-	"becauseYouLiked": [
-		"looper-2012",
-		"jungla-de-cristal-1988"
-	],
-	"related": [
-		"fast-five-2011",
-		"jack-reacher-bajo-la-mira-2012",
-		"fast-and-furious-6-2013",
-		"una-noche-para-sobrevivir-2015"
-	]
-},
+		"becauseYouLiked": [
+			"looper-2012",
+			"jungla-de-cristal-1988"
+		],
+		"related": [
+			"fast-five-2011",
+			"jack-reacher-bajo-la-mira-2012",
+			"fast-and-furious-6-2013",
+			"una-noche-para-sobrevivir-2015"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }

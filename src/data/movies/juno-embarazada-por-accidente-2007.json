@@ -8,36 +8,53 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia", "Romance"],
-	"subgenres": ["Coming of Age"],
-	"country": "Estados Unidos, Canadá",
+	"genres": [
+		"Drama",
+		"Comedia",
+		"Romance"
+	],
+	"subgenres": [
+		"Coming of Age"
+	],
+	"country": "US, CA",
 	"isArgentinian": false,
 	"poster": "assets/posters/2007/juno-embarazada-por-accidente-2007.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "Nj0gq4LiSHY",
 	"releasePlatform": "Prime Video",
 	"director": "Jason Reitman",
-	"mainCast": ["Elliot Page", "Michael Cera", "Jennifer Garner", "Jason Bateman", "J.K. Simmons"],
+	"mainCast": [
+		"Elliot Page",
+		"Michael Cera",
+		"Jennifer Garner",
+		"Jason Bateman",
+		"J.K. Simmons"
+	],
 	"productionCompany": "Fox Searchlight Pictures, Mandate Pictures, Mr. Mudd",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
 	"awards": {
 		"wins": [
-			{"award": "oscar", "category": "Mejor guion original", "recipient": "Diablo Cody", "year": 2008}
+			{
+				"award": "oscar",
+				"category": "Mejor guion original",
+				"recipient": "Diablo Cody",
+				"year": 2008
+			}
 		]
 	},
 	"runtimeMinutes": 96,
 	"editorial": {
-	"becauseYouLiked": [
-		"amor-sin-escalas-2009",
-		"nick-y-norah-una-noche-de-musica-y-amor-2008"
-	],
-	"related": [
-		"el-graduado-1967",
-		"lady-bird-2017",
-		"fue-la-mano-de-dios-2021",
-		"spanglish-2004"
-	]
-},
+		"becauseYouLiked": [
+			"amor-sin-escalas-2009",
+			"nick-y-norah-una-noche-de-musica-y-amor-2008"
+		],
+		"related": [
+			"el-graduado-1967",
+			"lady-bird-2017",
+			"fue-la-mano-de-dios-2021",
+			"spanglish-2004"
+		]
+	},
 	"review": "Juno tiene un tono muy reconocible: diálogos rápidos, canciones que entran justo cuando hace falta y una protagonista que usa el sarcasmo como escudo. Pero la película no se queda en la ocurrencia. La mirada de Jason Reitman deja que cada adulto tenga deseos contradictorios, y eso evita convertir el embarazo en una simple lección edificante. Elliot Page sostiene el centro con inteligencia y fragilidad, mientras Michael Cera encuentra en Bleeker una dulzura torpe, casi sin defensas. El resultado es una historia de crecimiento que puede ser graciosa y dolorosa en la misma escena, sin subestimar a nadie."
 }

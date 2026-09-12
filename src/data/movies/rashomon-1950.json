@@ -26,17 +26,17 @@
 	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 88,
 	"editorial": {
-	"becauseYouLiked": [
-		"requiem-por-un-sueno-2000",
-		"m-el-vampiro-de-dusseldorf-1931"
-	],
-	"related": [
-		"cruce-de-caminos-2012",
-		"tierra-de-crimen-2026",
-		"on-the-waterfront-1954",
-		"testigo-en-peligro-1985"
-	]
-},
+		"becauseYouLiked": [
+			"requiem-por-un-sueno-2000",
+			"m-el-vampiro-de-dusseldorf-1931"
+		],
+		"related": [
+			"cruce-de-caminos-2012",
+			"tierra-de-crimen-2026",
+			"on-the-waterfront-1954",
+			"testigo-en-peligro-1985"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Japón"
+	"country": "JP",
+	"isArgentinian": false
 }

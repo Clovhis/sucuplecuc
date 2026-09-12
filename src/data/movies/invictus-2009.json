@@ -8,17 +8,29 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Historia"],
+	"genres": [
+		"Drama",
+		"Historia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2009/invictus-2009.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "o2isdUuHmFY",
 	"releasePlatform": "Netflix",
-	"releasePlatforms": ["Netflix", "HBO Max"],
+	"releasePlatforms": [
+		"Netflix",
+		"HBO Max"
+	],
 	"director": "Clint Eastwood",
-	"mainCast": ["Morgan Freeman", "Matt Damon", "Tony Kgoroge", "Patrick Mofokeng", "Adjoa Andoh"],
+	"mainCast": [
+		"Morgan Freeman",
+		"Matt Damon",
+		"Tony Kgoroge",
+		"Patrick Mofokeng",
+		"Adjoa Andoh"
+	],
 	"productionCompany": "Warner Bros. Pictures, Spyglass Entertainment, Revelations Entertainment",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -26,18 +38,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"sully-2016",
-		"million-dollar-baby-2004"
-	],
-	"related": [
-		"el-ultimo-duelo-2021",
-		"gran-torino-2008",
-		"lincoln-2012",
-		"the-master-2012"
-	]
-},
+		"becauseYouLiked": [
+			"sully-2016",
+			"million-dollar-baby-2004"
+		],
+		"related": [
+			"el-ultimo-duelo-2021",
+			"gran-torino-2008",
+			"lincoln-2012",
+			"the-master-2012"
+		]
+	},
 	"runtimeMinutes": 134,
-	"editorial": {"becauseYouLiked":["sully-2016","million-dollar-baby-2004"],"related":["el-ultimo-duelo-2021","gran-torino-2008","lincoln-2012","the-master-2012"]},
 	"review": "Invictus apuesta a que un partido puede ser una herramienta política sin dejar de ser un partido. Clint Eastwood filma esa tensión con una puesta clásica, sobria y paciente, y Morgan Freeman construye un Mandela que escucha tanto como habla. Matt Damon funciona muy bien como contrapunto: su capitán aprende que conducir un equipo también puede significar cambiar la mirada de un país. La película simplifica conflictos enormes y por momentos subraya cada emoción, pero su sinceridad no es poca cosa. El rugby, la música y la actuación de Freeman le dan un pulso cálido a un relato de reconciliación. Recomendada por su humanidad, aunque no sea un retrato histórico exhaustivo."
 }

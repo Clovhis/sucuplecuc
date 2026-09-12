@@ -8,16 +8,27 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+17",
 	"category": "Drama",
-	"genres": ["Drama", "Musica"],
-	"subgenres": ["Road Movie"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Drama",
+		"Musica"
+	],
+	"subgenres": [
+		"Road Movie"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1986/crossroads-1986.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "AVJCvIdVY4w",
 	"releasePlatform": "Otras plataformas",
 	"director": "Walter Hill",
-	"mainCast": ["Ralph Macchio", "Joe Seneca", "Jami Gertz", "Joe Morton", "Steve Vai"],
+	"mainCast": [
+		"Ralph Macchio",
+		"Joe Seneca",
+		"Jami Gertz",
+		"Joe Morton",
+		"Steve Vai"
+	],
 	"productionCompany": "Columbia Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -26,16 +37,16 @@
 	},
 	"runtimeMinutes": 99,
 	"editorial": {
-	"becauseYouLiked": [
-		"green-book-2018",
-		"un-mundo-perfecto-1993"
-	],
-	"related": [
-		"donde-estas-hermano-2000",
-		"paris-texas-1984",
-		"un-lugar-en-el-mundo-1992",
-		"camino-a-la-perdicion-2002"
-	]
-},
+		"becauseYouLiked": [
+			"green-book-2018",
+			"un-mundo-perfecto-1993"
+		],
+		"related": [
+			"donde-estas-hermano-2000",
+			"paris-texas-1984",
+			"un-lugar-en-el-mundo-1992",
+			"camino-a-la-perdicion-2002"
+		]
+	},
 	"review": "Crossroads es una película de iniciación con barro en los zapatos y una guitarra eléctrica esperando el momento de hablar. Ralph Macchio juega bien la mezcla de soberbia y fascinación de Eugene, un virtuoso de conservatorio que todavía no entiende el alma de la música que quiere tocar. Joe Seneca le da a Willie Brown una ironía cansada, de tipo que ya vio demasiados jóvenes buscando atajos. El viaje tiene estructura de cuento y algunos desvíos desparejos, pero Walter Hill filma el duelo final con una tensión musical que justifica toda la ruta."
 }

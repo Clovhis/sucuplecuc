@@ -10,7 +10,7 @@
 		"Acción & Aventura",
 		"Familia"
 	],
-	"country": "Reino Unido",
+	"country": "GB",
 	"poster": "assets/posters/2004/harry-potter-and-the-prisoner-of-azkaban-2004.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "cUtaBkW1MKo",
@@ -29,19 +29,20 @@
 	},
 	"runtimeMinutes": 141,
 	"editorial": {
-	"becauseYouLiked": [
-		"hook-1991",
-		"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003"
-	],
-	"related": [
-		"the-lord-of-the-rings-the-two-towers-2002",
-		"the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
-		"the-bfg-2016",
-		"la-odisea-2026"
-	]
-},
+		"becauseYouLiked": [
+			"hook-1991",
+			"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003"
+		],
+		"related": [
+			"the-lord-of-the-rings-the-two-towers-2002",
+			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001",
+			"the-bfg-2016",
+			"la-odisea-2026"
+		]
+	},
 	"review": "El prisionero de Azkaban es el momento en que Harry Potter deja de mirar Hogwarts como un parque de diversiones y empieza a sentirlo como un lugar lleno de secretos. Alfonso Cuarón cambia la luz, mueve la cámara y permite que el clima tenga tanta importancia como la trama. Daniel Radcliffe, Emma Watson y Rupert Grint ya se ven más cómodos con sus personajes, mientras Gary Oldman aporta misterio sin convertir a Sirius en una figura obvia. El viaje temporal del final exige atención, pero está resuelto con una elegancia juguetona. Es una entrega más oscura, más libre y visualmente hermosa.",
 	"synopsis": "Narra el tercer año de Harry en Hogwarts y su búsqueda para descubrir la verdad sobre su pasado, incluida la conexión que Sirius Black, prisionero recientemente escapado de Azkaban, tiene con Harry y sus padres fallecidos.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

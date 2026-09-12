@@ -7,33 +7,45 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+16",
 	"category": "Terror",
-	"genres": ["Terror", "Drama", "Fantasia"],
-	"subgenres": ["Psicológico"],
-	"country": "Estados Unidos, Canadá",
+	"genres": [
+		"Terror",
+		"Drama",
+		"Fantasia"
+	],
+	"subgenres": [
+		"Psicológico"
+	],
+	"country": "US, CA",
 	"isArgentinian": false,
 	"poster": "assets/posters/2019/el-faro-2019.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "42_UHhpq530",
 	"releasePlatform": "Prime Video",
 	"director": "Robert Eggers",
-	"mainCast": ["Robert Pattinson", "Willem Dafoe", "Valeriia Karaman"],
+	"mainCast": [
+		"Robert Pattinson",
+		"Willem Dafoe",
+		"Valeriia Karaman"
+	],
 	"productionCompany": "A24, Regency Enterprises, RT Features",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 109,
 	"editorial": {
-	"becauseYouLiked": [
-		"la-bruja-2015",
-		"el-hombre-de-los-suenos-2023"
-	],
-	"related": [
-		"la-cabana-siniestra-2019",
-		"hereditary-2018",
-		"censor-2021",
-		"nosferatu-2024"
-	]
-},
+		"becauseYouLiked": [
+			"la-bruja-2015",
+			"el-hombre-de-los-suenos-2023"
+		],
+		"related": [
+			"la-cabana-siniestra-2019",
+			"hereditary-2018",
+			"censor-2021",
+			"nosferatu-2024"
+		]
+	},
 	"review": "Dos fareros, una isla y un temporal bastan para que Robert Eggers convierta la convivencia en una guerra de mitologías. Robert Pattinson está lleno de resentimiento y Willem Dafoe habla como si cada frase viniera de una obra maldita; juntos sostienen un duelo de actuaciones que puede ser ridículo y aterrador en la misma respiración. El blanco y negro, el formato casi cuadrado y el sonido del mar hacen que el encierro se sienta físico. No busca explicar cada símbolo, y ahí está parte de su fuerza: es una experiencia áspera, hipnótica y bastante incómoda que recompensa dejarse llevar.",
 	"isPremiere": false,
 	"premiereLabel": ""

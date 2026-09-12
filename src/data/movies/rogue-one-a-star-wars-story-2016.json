@@ -9,7 +9,7 @@
 		"Ciencia ficción",
 		"Acción & Aventura"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/2016/rogue-one-a-star-wars-story-2016.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "5zbTqDkHOjs",
@@ -28,19 +28,20 @@
 	},
 	"runtimeMinutes": 133,
 	"editorial": {
-	"becauseYouLiked": [
-		"resistencia-2023",
-		"star-wars-episode-iv-a-new-hope-1977"
-	],
-	"related": [
-		"back-to-the-future-1985",
-		"e-t-the-extra-terrestrial-1982",
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"star-wars-episode-viii-the-last-jedi-2017"
-	]
-},
-  "review": "Rogue One baja Star Wars al barro de una operación militar donde nadie parece protegido por el destino. Gareth Edwards privilegia texturas de guerra, espacios enormes y una escala visual que hace sentir chico al grupo de rebeldes; Felicity Jones sostiene a Jyn desde la obstinación y Diego Luna le da un filo más turbio a Cassian. El primer tramo demora en reunir sus piezas y varios personajes quedan apenas esbozados, pero cuando la misión llega a Scarif la película encuentra una fuerza tremenda. Su tono grave no siempre es ágil, aunque le permite contar una historia de sacrificio con peso propio.",
+		"becauseYouLiked": [
+			"resistencia-2023",
+			"star-wars-episode-iv-a-new-hope-1977"
+		],
+		"related": [
+			"back-to-the-future-1985",
+			"e-t-the-extra-terrestrial-1982",
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"star-wars-episode-viii-the-last-jedi-2017"
+		]
+	},
+	"review": "Rogue One baja Star Wars al barro de una operación militar donde nadie parece protegido por el destino. Gareth Edwards privilegia texturas de guerra, espacios enormes y una escala visual que hace sentir chico al grupo de rebeldes; Felicity Jones sostiene a Jyn desde la obstinación y Diego Luna le da un filo más turbio a Cassian. El primer tramo demora en reunir sus piezas y varios personajes quedan apenas esbozados, pero cuando la misión llega a Scarif la película encuentra una fuerza tremenda. Su tono grave no siempre es ágil, aunque le permite contar una historia de sacrificio con peso propio.",
 	"synopsis": "Ambientada una semana antes de Una nueva esperanza, la trama sigue a un grupo de rebeldes que se unen para robar planos de la Estrella de la Muerte, el arma definitiva del Imperio Galáctico.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

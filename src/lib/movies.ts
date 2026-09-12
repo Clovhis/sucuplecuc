@@ -2,6 +2,7 @@ import type { Movie, MovieVerdict } from '../types/movie';
 import { GENERATED_UPCOMING_RELEASES } from '../data/upcomingReleases.generated';
 import { generateMovieEditorialRecommendations, getMovieRecommendationAffinity } from './recommendation-engine';
 import { getMoviePlatforms } from './platforms';
+import { hasMovieCountry, isValidMovieCountryValue } from './countries';
 
 const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) as Record<
 	string,
@@ -483,8 +484,8 @@ function validateMovies(movies: Movie[]): void {
 				throw new Error(`Movie "${slug}" has empty or invalid subgenres entries.`);
 			}
 		}
-		if (movie.country !== undefined && (!movie.country || movie.country.trim().length < 2)) {
-			throw new Error(`Movie "${slug}" has invalid country.`);
+		if (!isValidMovieCountryValue(movie.country)) {
+			throw new Error(`Movie "${slug}" must define one or more valid ISO country codes.`);
 		}
 		if (movie.isArgentinian !== undefined && typeof movie.isArgentinian !== 'boolean') {
 			throw new Error(`Movie "${slug}" has invalid isArgentinian flag.`);
@@ -1299,7 +1300,7 @@ export function isArgentinianMovie(movie: Pick<Movie, 'country' | 'isArgentinian
 	if (movie.isArgentinian === true) {
 		return true;
 	}
-	return movie.country?.trim().toUpperCase() === 'AR';
+	return hasMovieCountry(movie.country, 'AR');
 }
 
 function isOscarBestPictureWinner(movie: Pick<Movie, 'awards'>): boolean {

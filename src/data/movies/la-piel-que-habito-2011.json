@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 120,
 	"editorial": {
-	"becauseYouLiked": [
-		"scanners-1981",
-		"inseparables-1988"
-	],
-	"related": [
-		"the-brood-1979",
-		"la-posesion-1981",
-		"cabeza-borradora-1977",
-		"piscina-infinita-2023"
-	]
-},
+		"becauseYouLiked": [
+			"scanners-1981",
+			"inseparables-1988"
+		],
+		"related": [
+			"the-brood-1979",
+			"la-posesion-1981",
+			"cabeza-borradora-1977",
+			"piscina-infinita-2023"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
-	"country": "España"
+	"country": "ES",
+	"isArgentinian": false
 }

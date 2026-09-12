@@ -22,17 +22,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 140,
 	"editorial": {
-	"becauseYouLiked": [
-		"apolo-13-1995",
-		"raging-bull-1980"
-	],
-	"related": [
-		"sarahs-oil-el-oro-negro-2025",
-		"cosas-pequenas-como-estas-2024",
-		"el-ano-que-vivimos-peligrosamente-1982",
-		"aun-estoy-aqui-2024"
-	]
-},
+		"becauseYouLiked": [
+			"apolo-13-1995",
+			"raging-bull-1980"
+		],
+		"related": [
+			"sarahs-oil-el-oro-negro-2025",
+			"cosas-pequenas-como-estas-2024",
+			"el-ano-que-vivimos-peligrosamente-1982",
+			"aun-estoy-aqui-2024"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -42,5 +42,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

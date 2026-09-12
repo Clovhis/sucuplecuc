@@ -7,38 +7,58 @@
 	"reviewPublishedAt": "2026-08-10",
 	"audienceRating": "+16",
 	"category": "Crimen",
-	"genres": ["Crimen", "Drama", "Misterio & Suspense"],
+	"genres": [
+		"Crimen",
+		"Drama",
+		"Misterio & Suspense"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
-  "poster": "assets/posters/1997/los-angeles-al-desnudo-1997.webp",
+	"poster": "assets/posters/1997/los-angeles-al-desnudo-1997.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "kF2btFEyKrA",
 	"releasePlatform": "Paramount Plus",
 	"director": "Curtis Hanson",
-	"mainCast": ["Kevin Spacey", "Russell Crowe", "Guy Pearce", "Kim Basinger", "James Cromwell"],
+	"mainCast": [
+		"Kevin Spacey",
+		"Russell Crowe",
+		"Guy Pearce",
+		"Kim Basinger",
+		"James Cromwell"
+	],
 	"productionCompany": "Regency Enterprises, Warner Bros.",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
-			{ "award": "oscar", "category": "Mejor actriz de reparto", "year": 1998, "recipient": "Kim Basinger" },
-			{ "award": "oscar", "category": "Mejor guion adaptado", "year": 1998, "recipient": "Brian Helgeland, Curtis Hanson" }
+			{
+				"award": "oscar",
+				"category": "Mejor actriz de reparto",
+				"year": 1998,
+				"recipient": "Kim Basinger"
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor guion adaptado",
+				"year": 1998,
+				"recipient": "Brian Helgeland, Curtis Hanson"
+			}
 		]
 	},
 	"runtimeMinutes": 138,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-demonio-vestido-de-azul-1995",
-		"vicio-propio-2014"
-	],
-	"related": [
-		"rio-mistico-2003",
-		"fargo-secuestro-voluntario-1996",
-		"caminando-entre-las-tumbas-2014",
-		"mean-streets-1973"
-	]
-},
+		"becauseYouLiked": [
+			"el-demonio-vestido-de-azul-1995",
+			"vicio-propio-2014"
+		],
+		"related": [
+			"rio-mistico-2003",
+			"fargo-secuestro-voluntario-1996",
+			"caminando-entre-las-tumbas-2014",
+			"mean-streets-1973"
+		]
+	},
 	"review": "Curtis Hanson arma un rompecabezas policial que nunca confunde complejidad con puro ruido. La gracia está en cómo cada detective mira la ciudad desde un ángulo distinto: la ambición de Exley, la violencia protectora de White y el cinismo mediático de Vincennes van chocando hasta revelar una misma maquinaria de corrupción. Guy Pearce y Russell Crowe sostienen una rivalidad que se vuelve alianza sin perder asperezas, mientras Kim Basinger encuentra humanidad en medio de tanta pose. El guion pide atención, pero devuelve una intriga sólida, filosa y con una atmósfera de policial negro extraordinaria.",
 	"isPremiere": false,
 	"premiereLabel": ""

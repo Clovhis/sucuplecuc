@@ -22,20 +22,22 @@
 		"wins": []
 	},
 	"runtimeMinutes": 120,
-  "review": "Justice League tiene la tarea simpática de juntar héroes con registros muy distintos, y los cruces entre Batman, Flash, Aquaman y Wonder Woman dejan varios momentos con chispa. El problema es que la película se siente intervenida: cambia de tono, acelera presentaciones importantes y llega al villano sin darle peso dramático. Ezra Miller aporta ligereza y Gal Gadot sostiene la parte más firme del grupo, mientras la dirección alterna imágenes potentes con efectos digitales poco terminados. Como entretenimiento pasa rápido; como película de equipo, nunca encuentra una identidad coherente.",
+	"review": "Justice League tiene la tarea simpática de juntar héroes con registros muy distintos, y los cruces entre Batman, Flash, Aquaman y Wonder Woman dejan varios momentos con chispa. El problema es que la película se siente intervenida: cambia de tono, acelera presentaciones importantes y llega al villano sin darle peso dramático. Ezra Miller aporta ligereza y Gal Gadot sostiene la parte más firme del grupo, mientras la dirección alterna imágenes potentes con efectos digitales poco terminados. Como entretenimiento pasa rápido; como película de equipo, nunca encuentra una identidad coherente.",
 	"editorial": {
-	"becauseYouLiked": [
-		"guardians-of-the-galaxy-vol-2-2017",
-		"logan-2017"
-	],
-	"related": [
-		"spider-man-homecoming-2017",
-		"thor-ragnarok-2017",
-		"aquaman-2018",
-		"avengers-infinity-war-2018"
-	]
-},
+		"becauseYouLiked": [
+			"guardians-of-the-galaxy-vol-2-2017",
+			"logan-2017"
+		],
+		"related": [
+			"spider-man-homecoming-2017",
+			"thor-ragnarok-2017",
+			"aquaman-2018",
+			"avengers-infinity-war-2018"
+		]
+	},
 	"synopsis": "Steppenwolf and his legions of Parademons attempt to take over the Earth using the combined energies of the three Mother Boxes. El intento es frustrado por una alianza unificada que incluye a los dioses olímpicos, las amazonas, los atlantes, la humanidad y los seres extraterrestres.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-06"
+	"reviewPublishedAt": "2026-03-06",
+	"country": "US",
+	"isArgentinian": false
 }

@@ -8,16 +8,27 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia"],
-	"subgenres": ["Psicologico"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Drama",
+		"Comedia"
+	],
+	"subgenres": [
+		"Psicologico"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2025/jay-kelly-2025.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "I8GbcVkqZwQ",
 	"releasePlatform": "Netflix",
 	"director": "Noah Baumbach",
-	"mainCast": ["George Clooney", "Adam Sandler", "Laura Dern", "Billy Crudup", "Riley Keough"],
+	"mainCast": [
+		"George Clooney",
+		"Adam Sandler",
+		"Laura Dern",
+		"Billy Crudup",
+		"Riley Keough"
+	],
 	"productionCompany": "Netflix",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,16 +36,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"the-meyerowitz-stories-2017",
-		"funny-people-2009"
-	],
-	"related": [
-		"secretos-de-un-escandalo-2023",
-		"seis-grados-de-separacion-1993",
-		"reign-over-me-2007",
-		"el-hombre-de-los-suenos-2023"
-	]
-},
+		"becauseYouLiked": [
+			"the-meyerowitz-stories-2017",
+			"funny-people-2009"
+		],
+		"related": [
+			"secretos-de-un-escandalo-2023",
+			"seis-grados-de-separacion-1993",
+			"reign-over-me-2007",
+			"el-hombre-de-los-suenos-2023"
+		]
+	},
 	"review": "Noah Baumbach usa el viaje de una estrella de cine como una comedia de observación sobre el ego, el trabajo y el miedo a quedar fuera de cuadro. George Clooney puede hacer visible el cansancio detrás del encanto, mientras Adam Sandler encuentra una vulnerabilidad distinta como el representante que conoce todas sus versiones. El reparto alrededor suma capas sin tapar la relación central. Es una película adulta, más interesada en las conversaciones y los silencios que en el golpe de efecto, y ahí encuentra su mejor tono."
 }

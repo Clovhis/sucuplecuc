@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 103,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-robo-del-siglo-2020",
-		"la-gran-estafa-2001"
-	],
-	"related": [
-		"la-estafa-maestra-2003",
-		"lu-pau-2026",
-		"the-sting-1973",
-		"dos-hombres-y-un-destino-1969"
-	]
-},
+		"becauseYouLiked": [
+			"el-robo-del-siglo-2020",
+			"la-gran-estafa-2001"
+		],
+		"related": [
+			"la-estafa-maestra-2003",
+			"lu-pau-2026",
+			"the-sting-1973",
+			"dos-hombres-y-un-destino-1969"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -50,5 +50,6 @@
 		"HBO Max",
 		"Apple TV"
 	],
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

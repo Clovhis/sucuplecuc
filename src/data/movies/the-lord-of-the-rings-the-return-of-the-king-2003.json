@@ -44,18 +44,20 @@
 	"runtimeMinutes": 200,
 	"review": "The Lord of the Rings: The Return of the King lleva a Frodo y Sam al tramo final de su viaje mientras el resto de la Tierra Media resiste el ataque de Sauron. Peter Jackson dirige la épica con una escala enorme, pero no pierde de vista el cansancio de los hobbits ni la tensión entre Aragorn, Gandalf y sus ejércitos; Elijah Wood, Sean Astin y Viggo Mortensen sostienen el peso emocional entre batallas gigantes. El cierre tiene varios falsos finales y puede parecer excesivo, aunque la película se ganó ese tiempo. Vale por una conclusión espectacular que realmente paga lo construido en la trilogía.",
 	"editorial": {
-	"becauseYouLiked": [
-		"the-lord-of-the-rings-the-two-towers-2002",
-		"the-lord-of-the-rings-the-fellowship-of-the-ring-2001"
-	],
-	"related": [
-		"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
-		"harry-potter-and-the-prisoner-of-azkaban-2004",
-		"gladiator-2000",
-		"amos-del-universo-2026"
-	]
-},
+		"becauseYouLiked": [
+			"the-lord-of-the-rings-the-two-towers-2002",
+			"the-lord-of-the-rings-the-fellowship-of-the-ring-2001"
+		],
+		"related": [
+			"pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
+			"harry-potter-and-the-prisoner-of-azkaban-2004",
+			"gladiator-2000",
+			"amos-del-universo-2026"
+		]
+	},
 	"synopsis": "Mientras Frodo y Sam avanzan hacia Mordor con Gollum como guía incierta, Aragorn asume el peso de su destino para reunir a los pueblos libres contra Sauron. El cierre de la guerra del Anillo define el futuro de la Tierra Media en una batalla total.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-08"
+	"reviewPublishedAt": "2026-03-08",
+	"country": "US",
+	"isArgentinian": false
 }

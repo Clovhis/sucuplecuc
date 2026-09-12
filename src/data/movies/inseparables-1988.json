@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 115,
 	"editorial": {
-	"becauseYouLiked": [
-		"scanners-1981",
-		"the-brood-1979"
-	],
-	"related": [
-		"cabeza-borradora-1977",
-		"la-piel-que-habito-2011",
-		"la-posesion-1981",
-		"la-cabana-siniestra-2019"
-	]
-},
+		"becauseYouLiked": [
+			"scanners-1981",
+			"the-brood-1979"
+		],
+		"related": [
+			"cabeza-borradora-1977",
+			"la-piel-que-habito-2011",
+			"la-posesion-1981",
+			"la-cabana-siniestra-2019"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Canadá"
+	"country": "CA",
+	"isArgentinian": false
 }

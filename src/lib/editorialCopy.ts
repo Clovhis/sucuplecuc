@@ -1,4 +1,5 @@
 import type { Movie } from '../types/movie';
+import { getMovieCountries } from './countries';
 import type { PersonFilmographyEntry, PersonProfile } from '../types/person';
 import { getVerdictLabel, isAbsoluteCinemaMovie } from './movies';
 import { getMoviePlatformLabel } from './platforms';
@@ -146,7 +147,9 @@ function getIdentityValue(movie: Movie): string {
 
 function getIdentityDetail(movie: Movie): string | undefined {
 	const detailParts = [];
-	const country = String(movie.country ?? '').trim();
+	const country = getMovieCountries(movie.country)
+		.map((entry) => entry.label)
+		.join(', ');
 
 	if (movie.isArgentinian) {
 		detailParts.push(country ? `Cine argentino · ${country}` : 'Cine argentino');

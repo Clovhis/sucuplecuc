@@ -10,7 +10,7 @@
 		"Acción & Aventura",
 		"Ciencia ficción"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/2015/jurassic-world-2015.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "zfURZ-Vb8_E",
@@ -33,19 +33,20 @@
 	},
 	"runtimeMinutes": 124,
 	"editorial": {
-	"becauseYouLiked": [
-		"terminator-dark-fate-2019",
-		"the-terminator-1984"
-	],
-	"related": [
-		"war-of-the-worlds-2005",
-		"matrix-reloaded-2003",
-		"terminator-3-rise-of-the-machines-2003",
-		"terminator-2-judgment-day-1991"
-	]
-},
-  "review": "Jurassic World acierta al mostrar primero un parque de dinosaurios ya convertido en negocio: las colas, los sponsors y el público aburrido hacen que el desastre tenga una ironía bastante clara. Colin Trevorrow dirige las secuencias de fuga como una montaña rusa eficaz y Chris Pratt sabe llevar el costado aventurero sin demasiada solemnidad. El Indominus Rex cumple como amenaza, aunque la película depende demasiado de explicar sus habilidades y sus personajes humanos son desparejos. No recupera el asombro ni la precisión de Spielberg, pero entrega espectáculo grande y varias escenas que justifican volver al parque.",
+		"becauseYouLiked": [
+			"terminator-dark-fate-2019",
+			"the-terminator-1984"
+		],
+		"related": [
+			"war-of-the-worlds-2005",
+			"matrix-reloaded-2003",
+			"terminator-3-rise-of-the-machines-2003",
+			"terminator-2-judgment-day-1991"
+		]
+	},
+	"review": "Jurassic World acierta al mostrar primero un parque de dinosaurios ya convertido en negocio: las colas, los sponsors y el público aburrido hacen que el desastre tenga una ironía bastante clara. Colin Trevorrow dirige las secuencias de fuga como una montaña rusa eficaz y Chris Pratt sabe llevar el costado aventurero sin demasiada solemnidad. El Indominus Rex cumple como amenaza, aunque la película depende demasiado de explicar sus habilidades y sus personajes humanos son desparejos. No recupera el asombro ni la precisión de Spielberg, pero entrega espectáculo grande y varias escenas que justifican volver al parque.",
 	"synopsis": "Un parque de dinosaurios funciona con éxito en la isla Nublar hasta que sus responsables crean una especie híbrida para atraer visitantes. Cuando el animal escapa, una encargada del parque y un entrenador de velociraptores deben proteger a miles de personas.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

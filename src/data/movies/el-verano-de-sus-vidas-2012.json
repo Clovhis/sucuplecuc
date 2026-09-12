@@ -8,36 +8,42 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Drama",
-	"genres": ["Drama", "Comedia"],
+	"genres": [
+		"Drama",
+		"Comedia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2012/el-verano-de-sus-vidas-2012.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "9U48idiNWvA",
 	"releasePlatform": "Otras plataformas",
 	"director": "Rob Reiner",
-	"mainCast": ["Morgan Freeman", "Virginia Madsen", "Emma Fuhrmann", "Madeline Carroll"],
+	"mainCast": [
+		"Morgan Freeman",
+		"Virginia Madsen",
+		"Emma Fuhrmann",
+		"Madeline Carroll"
+	],
 	"productionCompany": "Castle Rock Entertainment",
 	"verdict": "zafa",
-	"verdictLabel": "",
+	"verdictLabel": "ZAFA",
 	"awards": {
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"stand-by-me-1986",
-		"driving-miss-daisy-1989"
-	],
-	"related": [
-		"amor-sin-escalas-2009",
-		"funny-people-2009",
-		"la-gran-apuesta-2015",
-		"melinda-and-melinda-2004"
-	]
-},
-	"verdictLabel": "ZAFA",
+		"becauseYouLiked": [
+			"stand-by-me-1986",
+			"driving-miss-daisy-1989"
+		],
+		"related": [
+			"amor-sin-escalas-2009",
+			"funny-people-2009",
+			"la-gran-apuesta-2015",
+			"melinda-and-melinda-2004"
+		]
+	},
 	"runtimeMinutes": 109,
-	"editorial": {"becauseYouLiked":["stand-by-me-1986","driving-miss-daisy-1989"],"related":["amor-sin-escalas-2009","funny-people-2009","la-gran-apuesta-2015","melinda-and-melinda-2004"]},
 	"review": "El verano de sus vidas es una película pequeña que entiende que Morgan Freeman no necesita grandes discursos para llenar una escena. Su escritor llega al lago cargando duelo, malhumor y una página en blanco; el guion lo va sacando de ahí a través de Virginia Madsen, unas vecinas con carácter y una nena que inventa historias. Rob Reiner trabaja con una calidez deliberada y a veces demasiado prolija, pero la relación entre los personajes tiene una ternura genuina. No reinventa el drama de reparación ni busca conflictos filosos: prefiere el abrazo, la charla y el paisaje. Zafa como refugio amable para una tarde tranquila."
 }

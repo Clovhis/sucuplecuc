@@ -23,18 +23,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"shutter-island-2010",
-		"the-departed-2006"
-	],
-	"related": [
-		"cape-fear-1991",
-		"taxi-driver-1976",
-		"anatomia-de-una-caida-2023",
-		"the-killer-2023"
-	]
-},
+		"becauseYouLiked": [
+			"shutter-island-2010",
+			"the-departed-2006"
+		],
+		"related": [
+			"cape-fear-1991",
+			"taxi-driver-1976",
+			"anatomia-de-una-caida-2023",
+			"the-killer-2023"
+		]
+	},
 	"synopsis": "Ambientada en Oklahoma en la década de 1920, se centra en una serie de asesinatos de miembros y parientes de Osage en la Nación Osage después de que se descubriera petróleo en tierras tribales.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

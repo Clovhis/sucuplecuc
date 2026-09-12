@@ -26,17 +26,17 @@
 	"verdictLabel": "CLASICO TOTAL",
 	"runtimeMinutes": 110,
 	"editorial": {
-	"becauseYouLiked": [
-		"rashomon-1950",
-		"requiem-por-un-sueno-2000"
-	],
-	"related": [
-		"tierra-de-crimen-2026",
-		"se7en-1995",
-		"la-naranja-mecanica-1971",
-		"mean-streets-1973"
-	]
-},
+		"becauseYouLiked": [
+			"rashomon-1950",
+			"requiem-por-un-sueno-2000"
+		],
+		"related": [
+			"tierra-de-crimen-2026",
+			"se7en-1995",
+			"la-naranja-mecanica-1971",
+			"mean-streets-1973"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Alemania"
+	"country": "DE",
+	"isArgentinian": false
 }

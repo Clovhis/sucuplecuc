@@ -9,7 +9,7 @@
 		"Acción & Aventura",
 		"Misterio & Suspense"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/1996/mission-impossible-1996.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "1MEc_YwdDXI",
@@ -28,19 +28,20 @@
 	},
 	"runtimeMinutes": 111,
 	"editorial": {
-	"becauseYouLiked": [
-		"the-terminator-1984",
-		"terminator-3-rise-of-the-machines-2003"
-	],
-	"related": [
-		"terminator-dark-fate-2019",
-		"war-of-the-worlds-2005",
-		"terminator-2-judgment-day-1991",
-		"el-fugitivo-1993"
-	]
-},
+		"becauseYouLiked": [
+			"the-terminator-1984",
+			"terminator-3-rise-of-the-machines-2003"
+		],
+		"related": [
+			"terminator-dark-fate-2019",
+			"war-of-the-worlds-2005",
+			"terminator-2-judgment-day-1991",
+			"el-fugitivo-1993"
+		]
+	},
 	"review": "La primera Mission: Impossible es menos acrobática que sus continuaciones y bastante más paranoica. Brian De Palma dirige la conspiración con reflejos, pantallas, identidades dudosas y encuadres que obligan a mirar dos veces; por momentos la trama se enreda demasiado, pero esa confusión es parte de su juego. Tom Cruise sostiene a Ethan Hunt como un agente ágil antes que invencible, y la infiltración a Langley sigue siendo una clase de suspenso sin una palabra de más. No tiene la velocidad de la saga posterior, pero conserva una elegancia fría muy particular.",
 	"synopsis": "Después de terminar una misión en Kiev, el agente del FMI Jim Phelps y su último equipo son enviados a Praga para impedir que el agente rebelde Alexander Golitsyn robe la lista NOC (encubrimiento no oficial) de la CIA, que revela las identidades de todos sus agentes encubiertos en Europa.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

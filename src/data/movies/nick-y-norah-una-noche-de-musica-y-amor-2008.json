@@ -8,16 +8,29 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+17",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama", "Musica", "Romance"],
-	"subgenres": ["Coming of Age"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Musica",
+		"Romance"
+	],
+	"subgenres": [
+		"Coming of Age"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2008/nick-y-norah-una-noche-de-musica-y-amor-2008.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "TEzwnFbVLMg",
 	"releasePlatform": "Apple TV",
 	"director": "Peter Sollett",
-	"mainCast": ["Michael Cera", "Kat Dennings", "Aaron Yoo", "Rafi Gavron", "Ari Graynor"],
+	"mainCast": [
+		"Michael Cera",
+		"Kat Dennings",
+		"Aaron Yoo",
+		"Rafi Gavron",
+		"Ari Graynor"
+	],
 	"productionCompany": "Columbia Pictures, Mandate Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -26,16 +39,16 @@
 	},
 	"runtimeMinutes": 89,
 	"editorial": {
-	"becauseYouLiked": [
-		"juno-embarazada-por-accidente-2007",
-		"supersalidos-2007"
-	],
-	"related": [
-		"el-graduado-1967",
-		"ghost-world-2001",
-		"the-breakfast-club-1985",
-		"gloria-bell-2019"
-	]
-},
+		"becauseYouLiked": [
+			"juno-embarazada-por-accidente-2007",
+			"supersalidos-2007"
+		],
+		"related": [
+			"el-graduado-1967",
+			"ghost-world-2001",
+			"the-breakfast-club-1985",
+			"gloria-bell-2019"
+		]
+	},
 	"review": "La película entiende algo clave de las historias románticas adolescentes: a veces una ciudad entera parece diseñada para que dos personas se encuentren, pero el encuentro no arregla automáticamente lo que traen encima. La noche de Nick y Norah avanza entre bares, subtes y recitales con una banda sonora que no funciona como decoración, sino como idioma compartido. Michael Cera interpreta la timidez sin volverla una pose, y Kat Dennings le responde con una energía más seca y movediza. Hay desvíos de comedia bastante livianos, pero el recorrido central tiene encanto y una melancolía genuina."
 }

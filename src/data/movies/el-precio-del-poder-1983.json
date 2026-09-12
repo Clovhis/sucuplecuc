@@ -7,34 +7,48 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+18",
 	"category": "Crimen",
-	"genres": ["Accion", "Drama", "Crimen"],
+	"genres": [
+		"Accion",
+		"Drama",
+		"Crimen"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1983/el-precio-del-poder-1983.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "lZMIrD36MG8",
 	"releasePlatform": "Netflix",
-	"releasePlatforms": ["Netflix", "Prime Video"],
+	"releasePlatforms": [
+		"Netflix",
+		"Prime Video"
+	],
 	"director": "Brian De Palma",
-	"mainCast": ["Al Pacino", "Steven Bauer", "Michelle Pfeiffer", "Mary Elizabeth Mastrantonio"],
+	"mainCast": [
+		"Al Pacino",
+		"Steven Bauer",
+		"Michelle Pfeiffer",
+		"Mary Elizabeth Mastrantonio"
+	],
 	"productionCompany": "Universal Pictures, Martin Bregman Productions",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 170,
 	"editorial": {
-	"becauseYouLiked": [
-		"atrapado-por-su-pasado-1993",
-		"fuego-contra-fuego-1995"
-	],
-	"related": [
-		"los-intocables-de-eliot-ness-1987",
-		"dia-de-entrenamiento-2001",
-		"el-robo-del-siglo-2020",
-		"tarde-de-perros-1975"
-	]
-},
+		"becauseYouLiked": [
+			"atrapado-por-su-pasado-1993",
+			"fuego-contra-fuego-1995"
+		],
+		"related": [
+			"los-intocables-de-eliot-ness-1987",
+			"dia-de-entrenamiento-2001",
+			"el-robo-del-siglo-2020",
+			"tarde-de-perros-1975"
+		]
+	},
 	"review": "Tony Montana entra a Miami con una ambición que no entra en ningún living y Brian De Palma filma ese ascenso como una fiebre de colores, cocaína y violencia. Al Pacino trabaja al personaje desde el exceso, pero también deja ver el miedo que hay debajo del grito; Michelle Pfeiffer y Mary Elizabeth Mastrantonio funcionan como contrapesos a ese mundo de hombres que se creen invencibles. La película fue discutida por su brutalidad, aunque el tiempo terminó reconociendo su energía visual y su influencia cultural. Es larga, desbordada y bastante misógina, pero tiene una potencia de saga criminal que todavía pega.",
 	"isPremiere": false,
 	"premiereLabel": ""

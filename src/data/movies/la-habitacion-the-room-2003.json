@@ -22,17 +22,17 @@
 	"verdictLabel": "ZAFA",
 	"runtimeMinutes": 100,
 	"editorial": {
-	"becauseYouLiked": [
-		"la-mancha-humana-2003",
-		"love-actually-2003"
-	],
-	"related": [
-		"punch-drunk-love-2002",
-		"spanglish-2004",
-		"secreto-en-la-montana-2005",
-		"infiel-2002"
-	]
-},
+		"becauseYouLiked": [
+			"la-mancha-humana-2003",
+			"love-actually-2003"
+		],
+		"related": [
+			"punch-drunk-love-2002",
+			"spanglish-2004",
+			"secreto-en-la-montana-2005",
+			"infiel-2002"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -42,5 +42,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Bélgica"
+	"country": "BE",
+	"isArgentinian": false
 }

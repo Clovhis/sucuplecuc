@@ -7,16 +7,26 @@
 	"reviewPublishedAt": "2026-08-23",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"genres": ["Thriller", "Accion", "Misterio"],
+	"genres": [
+		"Thriller",
+		"Accion",
+		"Misterio"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2014/non-stop-sin-escalas-2014.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "XSF6GPNXr9Y",
 	"releasePlatform": "Apple TV",
 	"director": "Jaume Collet-Serra",
-	"mainCast": ["Liam Neeson", "Julianne Moore", "Scoot McNairy", "Michelle Dockery", "Nate Parker"],
+	"mainCast": [
+		"Liam Neeson",
+		"Julianne Moore",
+		"Scoot McNairy",
+		"Michelle Dockery",
+		"Nate Parker"
+	],
 	"productionCompany": "Universal Pictures, StudioCanal",
 	"verdict": "zafa",
 	"verdictLabel": "CUMPLE",
@@ -25,17 +35,17 @@
 	},
 	"runtimeMinutes": 106,
 	"editorial": {
-	"becauseYouLiked": [
-		"una-noche-para-sobrevivir-2015",
-		"munich-2005"
-	],
-	"related": [
-		"duel-1971",
-		"infierno-blanco-2012",
-		"bridge-of-spies-2015",
-		"caminando-entre-las-tumbas-2014"
-	]
-},
+		"becauseYouLiked": [
+			"una-noche-para-sobrevivir-2015",
+			"munich-2005"
+		],
+		"related": [
+			"duel-1971",
+			"infierno-blanco-2012",
+			"bridge-of-spies-2015",
+			"caminando-entre-las-tumbas-2014"
+		]
+	},
 	"review": "Jaume Collet-Serra aprovecha un avión lleno como si fuera un tablero cerrado: cada asiento puede guardar una pista, una mentira o un próximo problema. Liam Neeson hace funcionar a Bill Marks porque no lo presenta como una máquina de resolver todo; está cansado, duda y tiene que recuperar la confianza de quienes lo rodean. Julianne Moore suma una presencia inquieta que mantiene viva la sospecha. El misterio se vuelve bastante disparatado cuando explica sus cartas, pero el recorrido administra bien el encierro y el reloj en contra.",
 	"isPremiere": false,
 	"premiereLabel": ""

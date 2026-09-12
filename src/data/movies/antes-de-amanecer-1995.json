@@ -22,17 +22,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 105,
 	"editorial": {
-	"becauseYouLiked": [
-		"retrato-de-una-mujer-en-llamas-2019",
-		"mujer-bonita-1990"
-	],
-	"related": [
-		"blue-valentine-2010",
-		"loco-y-estupido-amor-2011",
-		"heartstopper-para-siempre-2026",
-		"you-can-t-take-it-with-you-1938"
-	]
-},
+		"becauseYouLiked": [
+			"retrato-de-una-mujer-en-llamas-2019",
+			"mujer-bonita-1990"
+		],
+		"related": [
+			"blue-valentine-2010",
+			"loco-y-estupido-amor-2011",
+			"heartstopper-para-siempre-2026",
+			"you-can-t-take-it-with-you-1938"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -42,5 +42,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Austria"
+	"country": "AT",
+	"isArgentinian": false
 }

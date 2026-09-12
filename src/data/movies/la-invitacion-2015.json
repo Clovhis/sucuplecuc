@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 100,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-profugo-2020",
-		"llega-de-noche-2017"
-	],
-	"related": [
-		"primicia-mortal-2014",
-		"get-out-2017",
-		"prisioneros-2013",
-		"the-silence-of-the-lambs-1991"
-	]
-},
+		"becauseYouLiked": [
+			"el-profugo-2020",
+			"llega-de-noche-2017"
+		],
+		"related": [
+			"primicia-mortal-2014",
+			"get-out-2017",
+			"prisioneros-2013",
+			"the-silence-of-the-lambs-1991"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

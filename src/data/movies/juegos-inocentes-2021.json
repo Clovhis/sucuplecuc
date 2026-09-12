@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 117,
 	"editorial": {
-	"becauseYouLiked": [
-		"jovenes-y-brujas-1996",
-		"jennifer-s-body-2009"
-	],
-	"related": [
-		"dejame-entrar-2008",
-		"ego-2022",
-		"mandy-2018",
-		"sleepy-hollow-1999"
-	]
-},
+		"becauseYouLiked": [
+			"jovenes-y-brujas-1996",
+			"jennifer-s-body-2009"
+		],
+		"related": [
+			"dejame-entrar-2008",
+			"ego-2022",
+			"mandy-2018",
+			"sleepy-hollow-1999"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Dinamarca"
+	"country": "DK",
+	"isArgentinian": false
 }

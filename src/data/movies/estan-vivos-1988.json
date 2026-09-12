@@ -11,7 +11,7 @@
 		"Thriller"
 	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"audienceRating": "+16",
 	"runtimeMinutes": 94,
 	"poster": "assets/posters/1988/estan-vivos-1988.webp",
@@ -35,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"star-trek-vi-aquel-pais-desconocido-1991",
-		"la-cosa-el-enigma-de-otro-mundo-1982"
-	],
-	"related": [
-		"districte-9-2009",
-		"desafio-total-1990",
-		"1997-rescate-en-nueva-york-1981",
-		"the-matrix-1999"
-	]
-},
+		"becauseYouLiked": [
+			"star-trek-vi-aquel-pais-desconocido-1991",
+			"la-cosa-el-enigma-de-otro-mundo-1982"
+		],
+		"related": [
+			"districte-9-2009",
+			"desafio-total-1990",
+			"1997-rescate-en-nueva-york-1981",
+			"the-matrix-1999"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

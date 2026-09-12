@@ -1,51 +1,55 @@
 {
-  "slug": "top-gun-maverick-2022",
-  "title": "Top Gun: Maverick",
-  "originalTitle": "Top Gun: Maverick",
-  "year": 2022,
-  "releaseDate": "2026-09-09",
-  "category": "Accion",
-  "poster": "assets/posters/2022/top-gun-maverick-2022.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "qSqVVswa420",
-  "releasePlatform": "Paramount Plus",
-  "releasePlatforms": ["Paramount Plus"],
-  "director": "Joseph Kosinski",
-  "mainCast": [
-    "Tom Cruise",
-    "Jennifer Connelly",
-    "Miles Teller"
-  ],
-  "productionCompany": "Paramount Pictures",
-  "isPremiere": true,
-  "premiereLabel": "ESTRENO",
-  "verdict": "recomendada",
-  "verdictLabel": "RECOMENDADA",
-  "awards": {
-    "wins": [
-      {
-        "award": "oscar",
-        "category": "Mejor sonido",
-        "year": 2023,
-        "recipient": "Mark Weingarten, James H. Mather, Al Nelson, Chris Burdon, Mark Taylor"
-      }
-    ]
-  },
-  "runtimeMinutes": 130,
-  "review": "Top Gun: Maverick encuentra una razón concreta para volver: no se trata sólo de ver a Tom Cruise en campera otra vez, sino de enfrentar a Pete Mitchell con el tiempo y con las consecuencias de su forma de vivir. Joseph Kosinski filma los vuelos desde la cabina y deja que la velocidad, la respiración y los errores pesen de verdad; Miles Teller funciona como el vínculo emocional que obliga a Maverick a cambiar. El libreto es simple y la misión roza lo imposible, pero está narrada con una claridad admirable. Es cine de espectáculo clásico, físico y generoso, que usa la nostalgia sin quedarse a vivir de ella.",
-  "editorial": {
-	"becauseYouLiked": [
-		"mission-impossible-dead-reckoning-part-one-2023",
-		"mission-impossible-the-final-reckoning-2025"
+	"slug": "top-gun-maverick-2022",
+	"title": "Top Gun: Maverick",
+	"originalTitle": "Top Gun: Maverick",
+	"year": 2022,
+	"releaseDate": "2026-09-09",
+	"category": "Accion",
+	"poster": "assets/posters/2022/top-gun-maverick-2022.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "qSqVVswa420",
+	"releasePlatform": "Paramount Plus",
+	"releasePlatforms": [
+		"Paramount Plus"
 	],
-	"related": [
-		"mission-impossible-fallout-2018",
-		"mission-impossible-rogue-nation-2015",
-		"mission-impossible-1996",
-		"jack-reacher-bajo-la-mira-2012"
-	]
-},
-  "audienceRating": "+13",
-  "reviewPublishedAt": "2026-02-27",
-  "synopsis": "Pete «Maverick» Mitchell vuelve a Top Gun para entrenar a un grupo de jóvenes pilotos para una misión casi imposible. Entre ellos está el hijo de su antiguo compañero Goose, cuya presencia reabre heridas que nunca terminó de resolver."
+	"director": "Joseph Kosinski",
+	"mainCast": [
+		"Tom Cruise",
+		"Jennifer Connelly",
+		"Miles Teller"
+	],
+	"productionCompany": "Paramount Pictures",
+	"isPremiere": true,
+	"premiereLabel": "ESTRENO",
+	"verdict": "recomendada",
+	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor sonido",
+				"year": 2023,
+				"recipient": "Mark Weingarten, James H. Mather, Al Nelson, Chris Burdon, Mark Taylor"
+			}
+		]
+	},
+	"runtimeMinutes": 130,
+	"review": "Top Gun: Maverick encuentra una razón concreta para volver: no se trata sólo de ver a Tom Cruise en campera otra vez, sino de enfrentar a Pete Mitchell con el tiempo y con las consecuencias de su forma de vivir. Joseph Kosinski filma los vuelos desde la cabina y deja que la velocidad, la respiración y los errores pesen de verdad; Miles Teller funciona como el vínculo emocional que obliga a Maverick a cambiar. El libreto es simple y la misión roza lo imposible, pero está narrada con una claridad admirable. Es cine de espectáculo clásico, físico y generoso, que usa la nostalgia sin quedarse a vivir de ella.",
+	"editorial": {
+		"becauseYouLiked": [
+			"mission-impossible-dead-reckoning-part-one-2023",
+			"mission-impossible-the-final-reckoning-2025"
+		],
+		"related": [
+			"mission-impossible-fallout-2018",
+			"mission-impossible-rogue-nation-2015",
+			"mission-impossible-1996",
+			"jack-reacher-bajo-la-mira-2012"
+		]
+	},
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-02-27",
+	"synopsis": "Pete «Maverick» Mitchell vuelve a Top Gun para entrenar a un grupo de jóvenes pilotos para una misión casi imposible. Entre ellos está el hijo de su antiguo compañero Goose, cuya presencia reabre heridas que nunca terminó de resolver.",
+	"country": "US",
+	"isArgentinian": false
 }

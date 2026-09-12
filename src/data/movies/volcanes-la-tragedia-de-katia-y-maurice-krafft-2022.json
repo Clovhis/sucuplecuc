@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 98,
 	"editorial": {
-	"becauseYouLiked": [
-		"personality-crisis-one-night-only-2022",
-		"poor-things-2023"
-	],
-	"related": [
-		"jim-henson-idea-man-2024",
-		"music-by-john-williams-2024",
-		"palm-springs-2020",
-		"frida-2024"
-	]
-},
+		"becauseYouLiked": [
+			"personality-crisis-one-night-only-2022",
+			"poor-things-2023"
+		],
+		"related": [
+			"jim-henson-idea-man-2024",
+			"music-by-john-williams-2024",
+			"palm-springs-2020",
+			"frida-2024"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Disney Plus",
-	"country": "Canadá"
+	"country": "CA",
+	"isArgentinian": false
 }

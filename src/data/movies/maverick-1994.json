@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Comedia",
-	"genres": ["Comedia", "Accion", "Western"],
+	"genres": [
+		"Comedia",
+		"Accion",
+		"Western"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1994/maverick-1994.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "FrUOD4i8sOQ",
 	"releasePlatform": "Apple TV",
 	"director": "Richard Donner",
-	"mainCast": ["Mel Gibson", "Jodie Foster", "James Garner", "Graham Greene", "Alfred Molina"],
+	"mainCast": [
+		"Mel Gibson",
+		"Jodie Foster",
+		"James Garner",
+		"Graham Greene",
+		"Alfred Molina"
+	],
 	"productionCompany": "Warner Bros.",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,16 +35,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"heroes-fuera-de-orbita-1999",
-		"los-otros-dos-2010"
-	],
-	"related": [
-		"el-maquinista-de-la-general-1926",
-		"tiempo-de-valientes-2005",
-		"what-s-up-tiger-lily-1966",
-		"thelma-la-venganza-nunca-ha-sido-tan-dulce-2024"
-	]
-},
+		"becauseYouLiked": [
+			"heroes-fuera-de-orbita-1999",
+			"los-otros-dos-2010"
+		],
+		"related": [
+			"el-maquinista-de-la-general-1926",
+			"tiempo-de-valientes-2005",
+			"what-s-up-tiger-lily-1966",
+			"thelma-la-venganza-nunca-ha-sido-tan-dulce-2024"
+		]
+	},
 	"review": "Richard Donner entiende que un western de póquer tiene que moverse con la ligereza de una buena trampa. Mel Gibson aporta el encanto canchero de un jugador que siempre parece estar improvisando, mientras Jodie Foster disfruta a Annabelle como una fuerza de caos, picardía y vestidos imposibles. La película no pretende reinventar el género: lo pasea por un parque de diversiones de timos, caballos y remates, y justamente ahí encuentra su gracia."
 }

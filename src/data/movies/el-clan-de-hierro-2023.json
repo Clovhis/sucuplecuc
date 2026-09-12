@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 133,
 	"editorial": {
-	"becauseYouLiked": [
-		"raging-bull-1980",
-		"invencible-2006"
-	],
-	"related": [
-		"ali-2001",
-		"titanes-hicieron-historia-2000",
-		"huracan-carter-1999",
-		"un-equipo-muy-especial-1992"
-	]
-},
+		"becauseYouLiked": [
+			"raging-bull-1980",
+			"invencible-2006"
+		],
+		"related": [
+			"ali-2001",
+			"titanes-hicieron-historia-2000",
+			"huracan-carter-1999",
+			"un-equipo-muy-especial-1992"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

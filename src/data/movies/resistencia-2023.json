@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 134,
 	"editorial": {
-	"becauseYouLiked": [
-		"rogue-one-a-star-wars-story-2016",
-		"a-i-artificial-intelligence-2001"
-	],
-	"related": [
-		"buena-suerte-diviertete-no-mueras-2026",
-		"solo-a-star-wars-story-2018",
-		"looper-2012",
-		"war-of-the-worlds-2005"
-	]
-},
+		"becauseYouLiked": [
+			"rogue-one-a-star-wars-story-2016",
+			"a-i-artificial-intelligence-2001"
+		],
+		"related": [
+			"buena-suerte-diviertete-no-mueras-2026",
+			"solo-a-star-wars-story-2018",
+			"looper-2012",
+			"war-of-the-worlds-2005"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
-	"country": "Canadá"
+	"country": "CA",
+	"isArgentinian": false
 }

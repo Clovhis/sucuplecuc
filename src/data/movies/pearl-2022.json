@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 82,
 	"editorial": {
-	"becauseYouLiked": [
-		"the-house-of-the-devil-2009",
-		"censor-2021"
-	],
-	"related": [
-		"la-cabana-siniestra-2019",
-		"llega-de-noche-2017",
-		"la-bruja-2015",
-		"babadook-2014"
-	]
-},
+		"becauseYouLiked": [
+			"the-house-of-the-devil-2009",
+			"censor-2021"
+		],
+		"related": [
+			"la-cabana-siniestra-2019",
+			"llega-de-noche-2017",
+			"la-bruja-2015",
+			"babadook-2014"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Suiza"
+	"country": "CH",
+	"isArgentinian": false
 }

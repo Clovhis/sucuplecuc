@@ -8,32 +8,44 @@
 	"reviewPublishedAt": "2026-08-26",
 	"audienceRating": "+16",
 	"category": "Accion",
-	"genres": ["Acción", "Crimen", "Thriller"],
+	"genres": [
+		"Acción",
+		"Crimen",
+		"Thriller"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2016/triple-9-2016.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "vOFqiwmnOYE",
 	"releasePlatform": "Netflix",
 	"director": "John Hillcoat",
-	"mainCast": ["Casey Affleck", "Chiwetel Ejiofor", "Anthony Mackie", "Kate Winslet", "Woody Harrelson"],
+	"mainCast": [
+		"Casey Affleck",
+		"Chiwetel Ejiofor",
+		"Anthony Mackie",
+		"Kate Winslet",
+		"Woody Harrelson"
+	],
 	"productionCompany": "Worldview Entertainment, Sierra/Affinity y Anonymous Content",
 	"verdict": "zafa",
 	"verdictLabel": "ZAFA",
 	"runtimeMinutes": 115,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"una-noche-para-sobrevivir-2015",
-		"el-fuego-de-la-venganza-2004"
-	],
-	"related": [
-		"el-ultimatum-de-bourne-2007",
-		"furious-7-2015",
-		"redada-asesina-2-2014",
-		"kill-bill-vol-1-2003"
-	]
-},
+		"becauseYouLiked": [
+			"una-noche-para-sobrevivir-2015",
+			"el-fuego-de-la-venganza-2004"
+		],
+		"related": [
+			"el-ultimatum-de-bourne-2007",
+			"furious-7-2015",
+			"redada-asesina-2-2014",
+			"kill-bill-vol-1-2003"
+		]
+	},
 	"review": "Triple 9 quiere ser una película de policías podridos, barrios en guerra y decisiones tomadas con la espalda contra la pared. Tiene una energía áspera y una ciudad filmada como si cada esquina escondiera una deuda, además de un elenco que entiende muy bien el tono de tragedia criminal.\n\nLa puesta de John Hillcoat sabe vender el peligro, pero el guion acumula personajes y traiciones hasta volverlos intercambiables. Algunas vueltas son efectivas y otras parecen elegidas para subir el volumen. ZAFA como policial sucio y musculoso, más interesante por su clima que por la precisión de su historia."
 }

@@ -1,27 +1,50 @@
 {
-  "slug": "amsterdam-2022",
-  "title": "Ámsterdam",
-  "originalTitle": "Amsterdam",
-  "synopsis": "Tres amigos se conocen en la guerra y vuelven a encontrarse años después cuando quedan involucrados en la muerte sospechosa de un general. La investigación los lleva a una conspiración política mientras intentan sostener la amistad que los unió.",
-  "year": 2022,
-  "releaseDate": "2022-10-07",
-  "reviewPublishedAt": "2026-08-24",
-  "audienceRating": "+13",
-  "category": "Comedia",
-  "genres": ["Comedia", "Drama", "Misterio", "Historia"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/2022/amsterdam-2022.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "GLs2xxM0e78",
-  "releasePlatform": "Otras plataformas",
-  "director": "David O. Russell",
-  "mainCast": ["Christian Bale", "Margot Robbie", "John David Washington", "Robert De Niro"],
-  "productionCompany": "New Regency",
-  "verdict": "zafa",
-  "verdictLabel": "PASABLE",
-  "awards": {"wins": []},
-  "editorial": {"becauseYouLiked":["escandalo-americano-2013","the-king-of-comedy-1982"],"related":["la-guerra-de-charlie-wilson-2007","after-hours-1985","parasite-2019","la-cortina-de-humo-1997"]},
-  "review": "Ámsterdam tiene una idea atractiva sobre amistad, guerra y conspiraciones políticas, pero la película la cuenta con una confianza que no siempre se transforma en claridad. Christian Bale, Margot Robbie y John David Washington encuentran química como trío, y el diseño de época sostiene una sensación de fábula extravagante. David O. Russell acumula personajes, giros y discursos hasta que el misterio pierde peso. Hay escenas encantadoras y actuaciones con mucha energía, pero el conjunto queda atrapado entre la comedia absurda, el drama histórico y una denuncia que llega demasiado tarde."
+	"slug": "amsterdam-2022",
+	"title": "Ámsterdam",
+	"originalTitle": "Amsterdam",
+	"synopsis": "Tres amigos se conocen en la guerra y vuelven a encontrarse años después cuando quedan involucrados en la muerte sospechosa de un general. La investigación los lleva a una conspiración política mientras intentan sostener la amistad que los unió.",
+	"year": 2022,
+	"releaseDate": "2022-10-07",
+	"reviewPublishedAt": "2026-08-24",
+	"audienceRating": "+13",
+	"category": "Comedia",
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Misterio",
+		"Historia"
+	],
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/2022/amsterdam-2022.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "GLs2xxM0e78",
+	"releasePlatform": "Otras plataformas",
+	"director": "David O. Russell",
+	"mainCast": [
+		"Christian Bale",
+		"Margot Robbie",
+		"John David Washington",
+		"Robert De Niro"
+	],
+	"productionCompany": "New Regency",
+	"verdict": "zafa",
+	"verdictLabel": "PASABLE",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"escandalo-americano-2013",
+			"the-king-of-comedy-1982"
+		],
+		"related": [
+			"la-guerra-de-charlie-wilson-2007",
+			"after-hours-1985",
+			"parasite-2019",
+			"la-cortina-de-humo-1997"
+		]
+	},
+	"review": "Ámsterdam tiene una idea atractiva sobre amistad, guerra y conspiraciones políticas, pero la película la cuenta con una confianza que no siempre se transforma en claridad. Christian Bale, Margot Robbie y John David Washington encuentran química como trío, y el diseño de época sostiene una sensación de fábula extravagante. David O. Russell acumula personajes, giros y discursos hasta que el misterio pierde peso. Hay escenas encantadoras y actuaciones con mucha energía, pero el conjunto queda atrapado entre la comedia absurda, el drama histórico y una denuncia que llega demasiado tarde."
 }

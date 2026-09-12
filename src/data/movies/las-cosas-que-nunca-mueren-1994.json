@@ -7,34 +7,49 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Romance"],
+	"genres": [
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1994/las-cosas-que-nunca-mueren-1994.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "DEumw-eXW7w",
 	"releasePlatform": "Prime Video",
 	"director": "Tony Richardson",
-	"mainCast": ["Jessica Lange", "Tommy Lee Jones", "Powers Boothe", "Carrie Snodgress"],
+	"mainCast": [
+		"Jessica Lange",
+		"Tommy Lee Jones",
+		"Powers Boothe",
+		"Carrie Snodgress"
+	],
 	"productionCompany": "Orion Pictures, Robert H. Solo Productions",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
 	"awards": {
-		"wins": [{"award": "oscar", "category": "Mejor actriz", "year": 1995, "recipient": "Jessica Lange"}]
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor actriz",
+				"year": 1995,
+				"recipient": "Jessica Lange"
+			}
+		]
 	},
 	"runtimeMinutes": 101,
 	"editorial": {
-	"becauseYouLiked": [
-		"la-insoportable-levedad-del-ser-1988",
-		"oficial-y-caballero-1982"
-	],
-	"related": [
-		"caballos-salvajes-1995",
-		"lo-que-queda-del-dia-1993",
-		"junior-1994",
-		"nixon-1995"
-	]
-},
+		"becauseYouLiked": [
+			"la-insoportable-levedad-del-ser-1988",
+			"oficial-y-caballero-1982"
+		],
+		"related": [
+			"caballos-salvajes-1995",
+			"lo-que-queda-del-dia-1993",
+			"junior-1994",
+			"nixon-1995"
+		]
+	},
 	"review": "Las cosas que nunca mueren encuentra su mejor material en la contradicción de Carly: una mujer expansiva, divertida y herida que intenta respirar dentro de una vida regida por secretos militares. Jessica Lange evita convertirla en caricatura y hace que cada impulso tenga un costo afectivo. El drama familiar y la trama de encubrimiento no siempre se mezclan con la misma fuerza, pero Tony Richardson construye una atmósfera triste y luminosa, con una protagonista que desborda la pantalla."
 }

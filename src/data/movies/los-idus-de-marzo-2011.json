@@ -1,27 +1,49 @@
 {
-  "slug": "los-idus-de-marzo-2011",
-  "title": "Los idus de marzo",
-  "originalTitle": "The Ides of March",
-  "synopsis": "Stephen Meyers trabaja como asesor de un candidato presidencial que parece representar una política distinta. Una reunión con un rival y una información privada lo arrastran a una cadena de lealtades rotas donde la ambición vale más que cualquier discurso.",
-  "year": 2011,
-  "audienceRating": "+13",
-  "category": "Thriller",
-  "genres": ["Thriller", "Drama", "Política"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/2011/los-idus-de-marzo-2011.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "Uha0XfGBdMw",
-  "releasePlatform": "Otras plataformas",
-  "director": "George Clooney",
-  "mainCast": ["Ryan Gosling", "George Clooney", "Philip Seymour Hoffman", "Paul Giamatti"],
-  "productionCompany": "Columbia Pictures",
-  "verdict": "recomendada",
-  "verdictLabel": "RECOMENDADA",
-  "awards": {"wins": []},
-  "editorial": {"becauseYouLiked":["crimen-perfecto-2007","los-secretos-del-poder-2009"],"related":["el-talento-de-mr-ripley-1999","la-doncella-2016","nunca-estaras-a-salvo-2017","el-informante-1999"]},
-  "review": "Los idus de marzo entiende la política como una máquina de fabricar idealistas cansados. George Clooney arma un thriller sobrio y deja que el elenco convierta cada conversación en una negociación: Gosling empieza creyendo en las reglas y termina aprendiendo cuánto cuestan, mientras Hoffman y Giamatti juegan el partido desde extremos opuestos. La película explica algunas maniobras más de la cuenta, pero su retrato de la ambición y la información como armas sigue siendo filoso.",
-  "runtimeMinutes": 101,
-  "reviewPublishedAt": "2026-08-24"
+	"slug": "los-idus-de-marzo-2011",
+	"title": "Los idus de marzo",
+	"originalTitle": "The Ides of March",
+	"synopsis": "Stephen Meyers trabaja como asesor de un candidato presidencial que parece representar una política distinta. Una reunión con un rival y una información privada lo arrastran a una cadena de lealtades rotas donde la ambición vale más que cualquier discurso.",
+	"year": 2011,
+	"audienceRating": "+13",
+	"category": "Thriller",
+	"genres": [
+		"Thriller",
+		"Drama",
+		"Política"
+	],
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/2011/los-idus-de-marzo-2011.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "Uha0XfGBdMw",
+	"releasePlatform": "Otras plataformas",
+	"director": "George Clooney",
+	"mainCast": [
+		"Ryan Gosling",
+		"George Clooney",
+		"Philip Seymour Hoffman",
+		"Paul Giamatti"
+	],
+	"productionCompany": "Columbia Pictures",
+	"verdict": "recomendada",
+	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"crimen-perfecto-2007",
+			"los-secretos-del-poder-2009"
+		],
+		"related": [
+			"el-talento-de-mr-ripley-1999",
+			"la-doncella-2016",
+			"nunca-estaras-a-salvo-2017",
+			"el-informante-1999"
+		]
+	},
+	"review": "Los idus de marzo entiende la política como una máquina de fabricar idealistas cansados. George Clooney arma un thriller sobrio y deja que el elenco convierta cada conversación en una negociación: Gosling empieza creyendo en las reglas y termina aprendiendo cuánto cuestan, mientras Hoffman y Giamatti juegan el partido desde extremos opuestos. La película explica algunas maniobras más de la cuenta, pero su retrato de la ambición y la información como armas sigue siendo filoso.",
+	"runtimeMinutes": 101,
+	"reviewPublishedAt": "2026-08-24"
 }

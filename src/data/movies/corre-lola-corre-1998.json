@@ -8,32 +8,44 @@
 	"reviewPublishedAt": "2026-08-26",
 	"audienceRating": "+13",
 	"category": "Accion",
-	"genres": ["Acción", "Crimen", "Drama", "Europeas"],
+	"genres": [
+		"Acción",
+		"Crimen",
+		"Drama",
+		"Europeas"
+	],
 	"subgenres": [],
-	"country": "Alemania",
+	"country": "DE",
 	"isArgentinian": false,
 	"poster": "assets/posters/1998/corre-lola-corre-1998.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "Wt_OGB5suQg",
 	"releasePlatform": "HBO Max",
 	"director": "Tom Tykwer",
-	"mainCast": ["Franka Potente", "Moritz Bleibtreu", "Herbert Knaup", "Nina Petri"],
+	"mainCast": [
+		"Franka Potente",
+		"Moritz Bleibtreu",
+		"Herbert Knaup",
+		"Nina Petri"
+	],
 	"productionCompany": "X-Filme Creative Pool, WDR y Arte",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
 	"runtimeMinutes": 80,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"identidad-desconocida-2002",
-		"la-supremacia-de-bourne-2004"
-	],
-	"related": [
-		"el-fugitivo-1993",
-		"el-fuego-de-la-venganza-2004",
-		"kill-bill-vol-2-2004",
-		"sin-tregua-2012"
-	]
-},
+		"becauseYouLiked": [
+			"identidad-desconocida-2002",
+			"la-supremacia-de-bourne-2004"
+		],
+		"related": [
+			"el-fugitivo-1993",
+			"el-fuego-de-la-venganza-2004",
+			"kill-bill-vol-2-2004",
+			"sin-tregua-2012"
+		]
+	},
 	"review": "Corre, Lola, corre convierte una urgencia amorosa en una máquina de ritmo. La carrera de Lola atraviesa teléfonos, bancos, calles y encuentros fugaces, y cada repetición cambia la historia lo suficiente como para que el azar parezca una fuerza con sentido propio.\n\nLa película puede verse como thriller, romance, videojuego o experimento formal sin dejar de ser accesible. Su estética de fines de los noventa tiene una energía que todavía contagia, porque la música y el montaje no decoran la persecución: la empujan. CLÁSICO TOTAL para volver a una película que entiende que unos segundos pueden cambiarlo todo."
 }

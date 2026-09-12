@@ -23,17 +23,17 @@
 	"verdictLabel": "ZAFA",
 	"runtimeMinutes": 93,
 	"editorial": {
-	"becauseYouLiked": [
-		"hook-1991",
-		"el-caballero-verde-2021"
-	],
-	"related": [
-		"overlord-el-reino-sagrado-2024",
-		"e-t-the-extra-terrestrial-1982",
-		"charlie-and-the-chocolate-factory-2005",
-		"the-bfg-2016"
-	]
-},
+		"becauseYouLiked": [
+			"hook-1991",
+			"el-caballero-verde-2021"
+		],
+		"related": [
+			"overlord-el-reino-sagrado-2024",
+			"e-t-the-extra-terrestrial-1982",
+			"charlie-and-the-chocolate-factory-2005",
+			"the-bfg-2016"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Japón"
+	"country": "JP",
+	"isArgentinian": false
 }

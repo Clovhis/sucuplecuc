@@ -11,7 +11,7 @@
 		"Thriller"
 	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"audienceRating": "+16",
 	"runtimeMinutes": 113,
 	"poster": "assets/posters/1990/desafio-total-1990.webp",
@@ -35,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"robocop-el-defensor-del-futuro-1987",
-		"star-trek-vi-aquel-pais-desconocido-1991"
-	],
-	"related": [
-		"estan-vivos-1988",
-		"looper-2012",
-		"the-matrix-1999",
-		"el-dia-de-la-revelacion-2026"
-	]
-},
+		"becauseYouLiked": [
+			"robocop-el-defensor-del-futuro-1987",
+			"star-trek-vi-aquel-pais-desconocido-1991"
+		],
+		"related": [
+			"estan-vivos-1988",
+			"looper-2012",
+			"the-matrix-1999",
+			"el-dia-de-la-revelacion-2026"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

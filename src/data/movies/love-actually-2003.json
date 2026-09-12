@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Comedia", "Drama", "Romance"],
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Reino Unido, Estados Unidos, Francia",
+	"country": "GB, US, FR",
 	"isArgentinian": false,
 	"poster": "assets/posters/2003/love-actually-2003.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "KdzH6a-XEGM",
 	"releasePlatform": "Otras plataformas",
 	"director": "Richard Curtis",
-	"mainCast": ["Emma Thompson", "Hugh Grant", "Alan Rickman", "Liam Neeson", "Colin Firth"],
+	"mainCast": [
+		"Emma Thompson",
+		"Hugh Grant",
+		"Alan Rickman",
+		"Liam Neeson",
+		"Colin Firth"
+	],
 	"productionCompany": "Working Title Films",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
@@ -25,16 +35,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"sentido-y-sensibilidad-1995",
-		"los-amigos-de-peter-1992"
-	],
-	"related": [
-		"junior-1994",
-		"mucho-ruido-y-pocas-nueces-1993",
-		"buena-suerte-leo-grande-2022",
-		"lo-que-queda-del-dia-1993"
-	]
-},
+		"becauseYouLiked": [
+			"sentido-y-sensibilidad-1995",
+			"los-amigos-de-peter-1992"
+		],
+		"related": [
+			"junior-1994",
+			"mucho-ruido-y-pocas-nueces-1993",
+			"buena-suerte-leo-grande-2022",
+			"lo-que-queda-del-dia-1993"
+		]
+	},
 	"review": "Love Actually arma una postal navideña con muchas ventanas abiertas a la vez: algunas dan a una comedia encantadora y otras a situaciones bastante más incómodas. Emma Thompson encuentra el registro más humano del conjunto en una mujer que intenta sostener la dignidad mientras todo se le mueve debajo de los pies. Richard Curtis maneja el mosaico con ritmo y oído para el remate, aunque varias historias se apoyan demasiado en la idealización. Funciona mejor cuando acepta que el amor también puede ser torpe, desigual y doloroso."
 }

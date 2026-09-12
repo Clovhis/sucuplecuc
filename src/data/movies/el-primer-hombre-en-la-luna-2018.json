@@ -1,27 +1,56 @@
 {
-  "slug": "el-primer-hombre-en-la-luna-2018",
-  "title": "El primer hombre en la Luna",
-  "originalTitle": "First Man",
-  "synopsis": "Neil Armstrong atraviesa años de pruebas, pérdidas y entrenamiento dentro del programa espacial estadounidense. Mientras la NASA prepara la misión Apolo 11, el astronauta intenta sostener su vida familiar y el silencio con el que procesa una sucesión de riesgos extraordinarios.",
-  "year": 2018,
-  "audienceRating": "+13",
-  "category": "Drama",
-  "genres": ["Drama", "Historia"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/2018/el-primer-hombre-en-la-luna-2018.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "PSoRx87OO6k",
-  "releasePlatform": "Otras plataformas",
-  "director": "Damien Chazelle",
-  "mainCast": ["Ryan Gosling", "Claire Foy", "Jason Clarke", "Kyle Chandler", "Corey Stoll"],
-  "productionCompany": "Universal Pictures",
-  "verdict": "recomendada",
-  "verdictLabel": "RECOMENDADA",
-  "awards": {"wins": [{"award": "oscar", "category": "Mejores efectos visuales", "recipient": "Paul Lambert, Ian Hunter, Tristan Myles y J.D. Schwalm", "year": 2019}]},
-  "editorial": {"becauseYouLiked":["whiplash-2014","la-la-land-2016"],"related":["the-post-2017","silence-2016","la-noche-de-12-anos-2018","sully-2016"]},
-  "review": "El primer hombre en la Luna evita convertir a Neil Armstrong en una estatua y encuentra su drama en lo que el astronauta no puede decir. Damien Chazelle filma los despegues con una violencia física que hace temblar la pantalla, pero reserva el centro para el duelo, el matrimonio y la culpa. Ryan Gosling trabaja desde la contención y Claire Foy le da a Janet una fuerza que no necesita discursos grandilocuentes. Es épica por escala y profundamente íntima por mirada.",
-  "runtimeMinutes": 141,
-  "reviewPublishedAt": "2026-08-24"
+	"slug": "el-primer-hombre-en-la-luna-2018",
+	"title": "El primer hombre en la Luna",
+	"originalTitle": "First Man",
+	"synopsis": "Neil Armstrong atraviesa años de pruebas, pérdidas y entrenamiento dentro del programa espacial estadounidense. Mientras la NASA prepara la misión Apolo 11, el astronauta intenta sostener su vida familiar y el silencio con el que procesa una sucesión de riesgos extraordinarios.",
+	"year": 2018,
+	"audienceRating": "+13",
+	"category": "Drama",
+	"genres": [
+		"Drama",
+		"Historia"
+	],
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/2018/el-primer-hombre-en-la-luna-2018.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "PSoRx87OO6k",
+	"releasePlatform": "Otras plataformas",
+	"director": "Damien Chazelle",
+	"mainCast": [
+		"Ryan Gosling",
+		"Claire Foy",
+		"Jason Clarke",
+		"Kyle Chandler",
+		"Corey Stoll"
+	],
+	"productionCompany": "Universal Pictures",
+	"verdict": "recomendada",
+	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejores efectos visuales",
+				"recipient": "Paul Lambert, Ian Hunter, Tristan Myles y J.D. Schwalm",
+				"year": 2019
+			}
+		]
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"whiplash-2014",
+			"la-la-land-2016"
+		],
+		"related": [
+			"the-post-2017",
+			"silence-2016",
+			"la-noche-de-12-anos-2018",
+			"sully-2016"
+		]
+	},
+	"review": "El primer hombre en la Luna evita convertir a Neil Armstrong en una estatua y encuentra su drama en lo que el astronauta no puede decir. Damien Chazelle filma los despegues con una violencia física que hace temblar la pantalla, pero reserva el centro para el duelo, el matrimonio y la culpa. Ryan Gosling trabaja desde la contención y Claire Foy le da a Janet una fuerza que no necesita discursos grandilocuentes. Es épica por escala y profundamente íntima por mirada.",
+	"runtimeMinutes": 141,
+	"reviewPublishedAt": "2026-08-24"
 }

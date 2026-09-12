@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 119,
 	"editorial": {
-	"becauseYouLiked": [
-		"palm-springs-2020",
-		"poor-things-2023"
-	],
-	"related": [
-		"bugonia-2025",
-		"perdona-que-te-moleste-2018",
-		"el-plan-de-maggie-2016",
-		"the-love-witch-2016"
-	]
-},
+		"becauseYouLiked": [
+			"palm-springs-2020",
+			"poor-things-2023"
+		],
+		"related": [
+			"bugonia-2025",
+			"perdona-que-te-moleste-2018",
+			"el-plan-de-maggie-2016",
+			"the-love-witch-2016"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }

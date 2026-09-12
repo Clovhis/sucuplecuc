@@ -8,32 +8,43 @@
 	"reviewPublishedAt": "2026-07-31",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Drama", "Social"],
+	"genres": [
+		"Drama",
+		"Social"
+	],
 	"subgenres": [],
-	"country": "Alemania",
+	"country": "DE",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/23-000-vidas-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "89dugTvBEWw",
 	"releasePlatform": "Netflix",
 	"director": "Markus Goller",
-	"mainCast": ["Louis Hofmann", "Mala Emde", "Katharina Stark", "Frederick Lau", "Maria Dragus"],
+	"mainCast": [
+		"Louis Hofmann",
+		"Mala Emde",
+		"Katharina Stark",
+		"Frederick Lau",
+		"Maria Dragus"
+	],
 	"productionCompany": "Neue Flimmer GmbH, Sunnysideup Film GmbH, Lazy Film",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
 	"runtimeMinutes": 112,
-	"awards": {"wins": []},
+	"awards": {
+		"wins": []
+	},
 	"editorial": {
-	"becauseYouLiked": [
-		"dias-perfectos-2023",
-		"el-falsario-2026"
-	],
-	"related": [
-		"the-swedish-connection-2026",
-		"remarkably-bright-creatures-2026",
-		"la-semilla-del-fruto-sagrado-2024",
-		"barreda-2026"
-	]
-},
+		"becauseYouLiked": [
+			"dias-perfectos-2023",
+			"el-falsario-2026"
+		],
+		"related": [
+			"the-swedish-connection-2026",
+			"remarkably-bright-creatures-2026",
+			"la-semilla-del-fruto-sagrado-2024",
+			"barreda-2026"
+		]
+	},
 	"review": "23 000 vidas parte de una idea urgente: qué significa ayudar cuando el sufrimiento deja de ser una noticia y aparece delante tuyo. Markus Goller sigue al grupo con una mirada accesible, apoyada en el impulso juvenil y en la incomodidad de quienes descubren que la buena intención no alcanza para resolver una tragedia.\n\nEl film tiene escenas de tensión bien planteadas y un elenco que sostiene el costado humano, pero su mensaje queda demasiado explicado. Los personajes funcionan más como posiciones dentro de un debate que como personas llenas de contradicciones. Es un drama honesto y necesario, aunque su manera de subrayar la emoción le resta fuerza a varias situaciones."
 }

@@ -27,17 +27,17 @@
 	"verdictLabel": "ZAFA",
 	"runtimeMinutes": 87,
 	"editorial": {
-	"becauseYouLiked": [
-		"mandy-2018",
-		"la-matanza-de-texas-1974"
-	],
-	"related": [
-		"the-descent-2005",
-		"planet-terror-2007",
-		"the-love-witch-2016",
-		"posesion-infernal-2013"
-	]
-},
+		"becauseYouLiked": [
+			"mandy-2018",
+			"la-matanza-de-texas-1974"
+		],
+		"related": [
+			"the-descent-2005",
+			"planet-terror-2007",
+			"the-love-witch-2016",
+			"posesion-infernal-2013"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

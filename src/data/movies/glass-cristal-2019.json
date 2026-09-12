@@ -8,16 +8,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"genres": ["Thriller", "Drama", "Ciencia ficcion"],
+	"genres": [
+		"Thriller",
+		"Drama",
+		"Ciencia ficcion"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2019/glass-cristal-2019.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "95ghQs5AmNk",
 	"releasePlatform": "Disney Plus",
 	"director": "M. Night Shyamalan",
-	"mainCast": ["James McAvoy", "Bruce Willis", "Samuel L. Jackson", "Anya Taylor-Joy", "Sarah Paulson"],
+	"mainCast": [
+		"James McAvoy",
+		"Bruce Willis",
+		"Samuel L. Jackson",
+		"Anya Taylor-Joy",
+		"Sarah Paulson"
+	],
 	"productionCompany": "Blumhouse Productions",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -25,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"the-sixth-sense-1999",
-		"la-larga-marcha-2025"
-	],
-	"related": [
-		"the-prestige-2006",
-		"arrival-2016",
-		"looper-2012",
-		"ex-machina-2014"
-	]
-},
+		"becauseYouLiked": [
+			"the-sixth-sense-1999",
+			"la-larga-marcha-2025"
+		],
+		"related": [
+			"the-prestige-2006",
+			"arrival-2016",
+			"looper-2012",
+			"ex-machina-2014"
+		]
+	},
 	"review": "Glass cierra la trilogía de M. Night Shyamalan como una conversación dramática que de pronto se acuerda de que también es película de superhéroes. James McAvoy vuelve a cambiar de registro con una energía impresionante, Bruce Willis aporta gravedad y Samuel L. Jackson convierte cada silencio de Elijah en una pieza de ajedrez. El problema es que la película subraya sus ideas hasta quitarles aire y el clímax divide más de lo que conmueve. Aun así, su apuesta por el diálogo y la identidad resulta bastante más singular que su recepción inicial.",
 	"runtimeMinutes": 129
 }

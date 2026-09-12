@@ -8,16 +8,27 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Romance", "Comedia"],
-	"subgenres": ["RomCom"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Drama",
+		"Romance",
+		"Comedia"
+	],
+	"subgenres": [
+		"RomCom"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2009/amor-sin-escalas-2009.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "En0DYdjMVoY",
 	"releasePlatform": "Apple TV",
 	"director": "Jason Reitman",
-	"mainCast": ["George Clooney", "Vera Farmiga", "Anna Kendrick", "Jason Bateman"],
+	"mainCast": [
+		"George Clooney",
+		"Vera Farmiga",
+		"Anna Kendrick",
+		"Jason Bateman"
+	],
 	"productionCompany": "DreamWorks Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY RECOMENDADA",
@@ -25,16 +36,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"juno-embarazada-por-accidente-2007",
-		"loco-y-estupido-amor-2011"
-	],
-	"related": [
-		"punch-drunk-love-2002",
-		"el-plan-de-maggie-2016",
-		"the-apartment-1960",
-		"mientras-dormias-1995"
-	]
-},
+		"becauseYouLiked": [
+			"juno-embarazada-por-accidente-2007",
+			"loco-y-estupido-amor-2011"
+		],
+		"related": [
+			"punch-drunk-love-2002",
+			"el-plan-de-maggie-2016",
+			"the-apartment-1960",
+			"mientras-dormias-1995"
+		]
+	},
 	"review": "Amor sin escalas hace de los aeropuertos un paisaje emocional: lugares de tránsito donde el protagonista puede no comprometerse con nada. Clooney sostiene a Ryan con una mezcla justa de encanto, cansancio y negación, mientras Vera Farmiga y Anna Kendrick le devuelven dos versiones posibles de la vida que evita. Jason Reitman no convierte el cambio personal en una receta sencilla y deja que la melancolía aparezca en los detalles. Es una comedia dramática elegante, bastante más triste de lo que promete el equipaje de mano."
 }

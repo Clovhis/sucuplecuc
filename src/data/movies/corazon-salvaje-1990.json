@@ -8,24 +8,50 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+16",
 	"category": "Drama",
-	"genres": ["Drama", "Thriller", "Romance"],
+	"genres": [
+		"Drama",
+		"Thriller",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1990/corazon-salvaje-1990.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "dQIdBfrF0Ik",
 	"releasePlatform": "Prime Video",
 	"director": "David Lynch",
-	"mainCast": ["Nicolas Cage", "Laura Dern", "Willem Dafoe", "Diane Ladd", "Harry Dean Stanton"],
+	"mainCast": [
+		"Nicolas Cage",
+		"Laura Dern",
+		"Willem Dafoe",
+		"Diane Ladd",
+		"Harry Dean Stanton"
+	],
 	"productionCompany": "PolyGram Filmed Entertainment",
 	"verdict": "recomendada",
 	"verdictLabel": "RARA Y BUENA",
 	"runtimeMinutes": 125,
 	"awards": {
-		"wins": []
+		"wins": [
+			{
+				"award": "cannes",
+				"category": "Palma de Oro",
+				"year": 1990
+			}
+		]
 	},
-	"editorial": {"becauseYouLiked":["vellut-blau-1986","un-mundo-perfecto-1993"],"related":["un-dia-de-furia-1993","testigo-en-peligro-1985","alice-doesnt-live-here-anymore-1974","barreda-2026"]},
-	"review": "David Lynch convierte la fuga de Sailor y Lula en una road movie que funciona con lógica de sueño, melodrama y pesadilla criminal al mismo tiempo. Nicolas Cage abraza el exceso con una seguridad que hace creíble tanto el romanticismo como la violencia, mientras Laura Dern sostiene el corazón vulnerable de la pareja. Willem Dafoe entra en escena para deformar todavía más el paisaje y Diane Ladd dispara la energía desde el otro lado de la familia. Puede resultar despareja, pero su mezcla de Elvis, fuego y fatalidad tiene una personalidad que no se parece a nada.",
-	"awards": {"wins": [{"award": "cannes", "category": "Palma de Oro", "year": 1990}]}
+	"editorial": {
+		"becauseYouLiked": [
+			"vellut-blau-1986",
+			"un-mundo-perfecto-1993"
+		],
+		"related": [
+			"un-dia-de-furia-1993",
+			"testigo-en-peligro-1985",
+			"alice-doesnt-live-here-anymore-1974",
+			"barreda-2026"
+		]
+	},
+	"review": "David Lynch convierte la fuga de Sailor y Lula en una road movie que funciona con lógica de sueño, melodrama y pesadilla criminal al mismo tiempo. Nicolas Cage abraza el exceso con una seguridad que hace creíble tanto el romanticismo como la violencia, mientras Laura Dern sostiene el corazón vulnerable de la pareja. Willem Dafoe entra en escena para deformar todavía más el paisaje y Diane Ladd dispara la energía desde el otro lado de la familia. Puede resultar despareja, pero su mezcla de Elvis, fuego y fatalidad tiene una personalidad que no se parece a nada."
 }

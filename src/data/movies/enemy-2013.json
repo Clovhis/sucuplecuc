@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 91,
 	"editorial": {
-	"becauseYouLiked": [
-		"prisioneros-2013",
-		"el-profugo-2020"
-	],
-	"related": [
-		"lo-que-la-verdad-esconde-2000",
-		"shutter-island-2010",
-		"mulholland-drive-2001",
-		"hereditary-2018"
-	]
-},
+		"becauseYouLiked": [
+			"prisioneros-2013",
+			"el-profugo-2020"
+		],
+		"related": [
+			"lo-que-la-verdad-esconde-2000",
+			"shutter-island-2010",
+			"mulholland-drive-2001",
+			"hereditary-2018"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Canadá"
+	"country": "CA",
+	"isArgentinian": false
 }

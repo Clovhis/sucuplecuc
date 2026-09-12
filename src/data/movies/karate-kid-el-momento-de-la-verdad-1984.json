@@ -8,16 +8,29 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "ATP",
 	"category": "Accion",
-	"genres": ["Accion", "Drama", "Familia", "Deporte"],
-	"subgenres": ["Coming of Age"],
-	"country": "Estados Unidos",
+	"genres": [
+		"Accion",
+		"Drama",
+		"Familia",
+		"Deporte"
+	],
+	"subgenres": [
+		"Coming of Age"
+	],
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1984/karate-kid-el-momento-de-la-verdad-1984.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "r_8Rw16uscg",
 	"releasePlatform": "Netflix",
 	"director": "John G. Avildsen",
-	"mainCast": ["Ralph Macchio", "Pat Morita", "Elisabeth Shue", "William Zabka", "Martin Kove"],
+	"mainCast": [
+		"Ralph Macchio",
+		"Pat Morita",
+		"Elisabeth Shue",
+		"William Zabka",
+		"Martin Kove"
+	],
 	"productionCompany": "Columbia Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
@@ -26,16 +39,16 @@
 	},
 	"runtimeMinutes": 127,
 	"editorial": {
-	"becauseYouLiked": [
-		"battle-royale-2000",
-		"los-domingos-2025"
-	],
-	"related": [
-		"el-ultimo-mohicano-1992",
-		"marianela-y-el-cadaver-2024",
-		"el-fuego-de-la-venganza-2004",
-		"el-hombre-del-norte-2022"
-	]
-},
+		"becauseYouLiked": [
+			"battle-royale-2000",
+			"los-domingos-2025"
+		],
+		"related": [
+			"el-ultimo-mohicano-1992",
+			"marianela-y-el-cadaver-2024",
+			"el-fuego-de-la-venganza-2004",
+			"el-hombre-del-norte-2022"
+		]
+	},
 	"review": "Karate Kid no necesita adornarse para explicar por qué quedó grabada: cuenta una historia simple de mudanza, acoso y aprendizaje, pero entiende que el verdadero entrenamiento ocurre cuando Daniel deja de reaccionar a cada provocación. Ralph Macchio sostiene al protagonista con una mezcla de bronca y vulnerabilidad que todavía resulta cercana. Pat Morita, por su parte, transforma al señor Miyagi en algo más complejo que un maestro simpático: tiene humor, dolor y una manera paciente de ordenar el mundo. El montaje del entrenamiento, el torneo y la idea de que la disciplina también puede ser cariño siguen funcionando de maravilla."
 }

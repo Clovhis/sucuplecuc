@@ -8,17 +8,29 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"genres": ["Thriller", "Crimen", "Drama"],
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2002/la-habitacion-del-panico-2002.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "lA8OOSkMYAU",
 	"releasePlatform": "HBO Max",
-	"releasePlatforms": ["HBO Max"],
+	"releasePlatforms": [
+		"HBO Max"
+	],
 	"director": "David Fincher",
-	"mainCast": ["Jodie Foster", "Kristen Stewart", "Forest Whitaker", "Dwight Yoakam", "Jared Leto"],
+	"mainCast": [
+		"Jodie Foster",
+		"Kristen Stewart",
+		"Forest Whitaker",
+		"Dwight Yoakam",
+		"Jared Leto"
+	],
 	"productionCompany": "Columbia Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -26,16 +38,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"zodiaco-2007",
-		"se7en-1995"
-	],
-	"related": [
-		"the-killer-2023",
-		"fight-club-1999",
-		"la-extrana-que-hay-en-ti-2007",
-		"cape-fear-1991"
-	]
-},
+		"becauseYouLiked": [
+			"zodiaco-2007",
+			"se7en-1995"
+		],
+		"related": [
+			"the-killer-2023",
+			"fight-club-1999",
+			"la-extrana-que-hay-en-ti-2007",
+			"cape-fear-1991"
+		]
+	},
 	"review": "David Fincher convierte una casa de lujo en un organismo hostil y filma cada pasillo como si tuviera memoria propia. Jodie Foster sostiene la tensión desde el cuerpo: Meg no es una heroína de acción, es una madre que aprende a leer cámaras, cables y puntos ciegos porque no le queda otra. El juego de perspectivas puede ser calculado, pero la puesta encuentra una precisión física que vuelve inquietante hasta el silencio entre dos habitaciones."
 }

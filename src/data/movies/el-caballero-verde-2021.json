@@ -13,7 +13,7 @@
 	"subgenres": [
 		"Sobrenatural"
 	],
-  "poster": "assets/posters/2021/el-caballero-verde-2021.webp",
+	"poster": "assets/posters/2021/el-caballero-verde-2021.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "sS6ksY8xWCY",
 	"director": "David Lowery",
@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 130,
 	"editorial": {
-	"becauseYouLiked": [
-		"mandy-2018",
-		"the-descent-2005"
-	],
-	"related": [
-		"the-bfg-2016",
-		"lady-halcon-1985",
-		"juegos-inocentes-2021",
-		"overlord-el-reino-sagrado-2024"
-	]
-},
+		"becauseYouLiked": [
+			"mandy-2018",
+			"the-descent-2005"
+		],
+		"related": [
+			"the-bfg-2016",
+			"lady-halcon-1985",
+			"juegos-inocentes-2021",
+			"overlord-el-reino-sagrado-2024"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -50,5 +50,6 @@
 		"Prime Video",
 		"HBO Max"
 	],
-	"country": "Canadá"
+	"country": "CA",
+	"isArgentinian": false
 }

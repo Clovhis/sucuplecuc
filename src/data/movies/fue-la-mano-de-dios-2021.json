@@ -25,17 +25,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 130,
 	"editorial": {
-	"becauseYouLiked": [
-		"lady-bird-2017",
-		"juno-embarazada-por-accidente-2007"
-	],
-	"related": [
-		"c-mon-c-mon-siempre-adelante-2021",
-		"el-graduado-1967",
-		"los-domingos-2025",
-		"boyhood-2014"
-	]
-},
+		"becauseYouLiked": [
+			"lady-bird-2017",
+			"juno-embarazada-por-accidente-2007"
+		],
+		"related": [
+			"c-mon-c-mon-siempre-adelante-2021",
+			"el-graduado-1967",
+			"los-domingos-2025",
+			"boyhood-2014"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -45,5 +45,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Netflix",
-	"country": "Italia"
+	"country": "IT",
+	"isArgentinian": false
 }

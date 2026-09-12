@@ -39,6 +39,7 @@ import { getExplosiometroScore } from '../../lib/explosiometro';
 import { getSangrometroScore } from '../../lib/sangrometro';
 import { EDITORIAL_TEAM_NAME, EDITORIAL_TEAM_PATH, METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData } from '../../lib/seo';
 import { getMovieCommunityPath } from '../../lib/community';
+import { getMovieCountries } from '../../lib/countries';
 import type { Movie } from '../../types/movie';
 
 export function getStaticPaths() {
@@ -78,6 +79,7 @@ const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
 const primaryGenreLabel = getPrimaryGenreLabel(movie);
+const movieCountries = getMovieCountries(movie.country);
 const movieSubgenres = getMovieSubgenres(movie);
 const sangrometroScore = getSangrometroScore(movie);
 const lagrimometroScore = sangrometroScore === undefined ? getLagrimometroScore(movie) : undefined;
@@ -604,6 +606,19 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								)
 							}
 						</dl>
+						<dl class="movie-detail__taxonomy movie-detail__taxonomy--nationality" aria-label="Nacionalidad">
+							<div class="movie-detail__taxonomy-item movie-detail__taxonomy-item--nationality">
+								<dt>Nacionalidad</dt>
+								<dd class="movie-detail__taxonomy-nationality-list">
+									{movieCountries.map((country) => (
+										<span class="movie-detail__taxonomy-nationality" data-country-code={country.code}>
+											<img class="movie-detail__taxonomy-nationality-flag" src={`/images/flags/${country.flagCode}.svg`} alt="" width="20" height="15" loading="lazy" />
+											<span>{country.label}</span>
+										</span>
+									))}
+								</dd>
+							</div>
+						</dl>
 						{
 							(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
 								<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
@@ -881,6 +896,17 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							<div class="movie-detail__credit-item">
 								<dt>Género</dt>
 								<dd>{primaryGenreLabel}</dd>
+							</div>
+							<div class="movie-detail__credit-item movie-detail__credit-item--nationality">
+								<dt>Nacionalidad</dt>
+								<dd class="movie-detail__nationality-list">
+									{movieCountries.map((country) => (
+										<span class="movie-detail__nationality" data-country-code={country.code}>
+											<img class="movie-detail__nationality-flag" src={`/images/flags/${country.flagCode}.svg`} alt="" width="20" height="15" loading="lazy" />
+											<span>{country.label}</span>
+										</span>
+									))}
+								</dd>
 							</div>
 							{
 								movieSubgenres.length > 0 && (

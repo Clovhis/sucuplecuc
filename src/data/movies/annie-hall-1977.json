@@ -1,53 +1,55 @@
 {
-  "slug": "annie-hall-1977",
-  "title": "Annie Hall",
-  "originalTitle": "Annie Hall",
-  "year": 1977,
-  "category": "Comedia",
+	"slug": "annie-hall-1977",
+	"title": "Annie Hall",
+	"originalTitle": "Annie Hall",
+	"year": 1977,
+	"category": "Comedia",
 	"poster": "assets/posters/1977/annie-hall-1977.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "OqVgCfZX-yE",
-  "releasePlatform": "Otras plataformas",
-  "director": "Woody Allen",
-  "mainCast": [
-    "Woody Allen",
-    "Diane Keaton",
-    "Tony Roberts"
-  ],
-  "productionCompany": "A Jack Rollins and Charles H. Joffe Production",
-  "verdict": "recomendada",
-  "verdictLabel": "LEGENDARIA",
-  "awards": {
-    "wins": [
-      {
-        "award": "oscar",
-        "category": "Mejor película",
-        "year": 1978,
-        "recipient": "Charles H. Joffe, Jack Rollins, (uncredited)"
-      }
-    ]
-  },
-  "releaseDate": "1977-04-19",
-  "genres": [
-    "Comedia",
-    "Drama",
-    "Romance"
-  ],
-  "runtimeMinutes": 93,
-  "review": "Annie Hall reconstruye la relación entre Alvy Singer y una cantante insegura a través de recuerdos, discusiones, fantasías y chistes que rompen cualquier forma tradicional de contar un romance. Woody Allen dirige con libertad total, pero nunca pierde de vista la tristeza de dos personas que se quieren y no saben convivir. Diane Keaton le da a Annie una electricidad irrepetible, entre torpeza, inteligencia y deseo de crecer fuera de la pareja. Es brillante y graciosa sin idealizar el amor; por eso sigue sintiéndose más viva que muchas comedias románticas modernas.",
-  "editorial": {
-	"becauseYouLiked": [
-		"love-and-death-1975",
-		"a-midsummer-night-s-sex-comedy-1982"
+	"screenshots": [],
+	"trailerYoutubeId": "OqVgCfZX-yE",
+	"releasePlatform": "Otras plataformas",
+	"director": "Woody Allen",
+	"mainCast": [
+		"Woody Allen",
+		"Diane Keaton",
+		"Tony Roberts"
 	],
-	"related": [
-		"manhattan-1979",
-		"stardust-memories-1980",
-		"mighty-aphrodite-1995",
-		"suenos-de-un-seductor-1972"
-	]
-},
-  "synopsis": "Alvy Singer, un comediante neoyorquino lleno de inseguridades, recuerda su relación con Annie Hall, una aspirante a cantante. Entre recuerdos, fantasías y conversaciones directas al público, intenta entender por qué un amor tan intenso no logró sostenerse.",
-  "audienceRating": "ATP",
-  "reviewPublishedAt": "2026-03-08"
+	"productionCompany": "A Jack Rollins and Charles H. Joffe Production",
+	"verdict": "recomendada",
+	"verdictLabel": "LEGENDARIA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película",
+				"year": 1978,
+				"recipient": "Charles H. Joffe, Jack Rollins, (uncredited)"
+			}
+		]
+	},
+	"releaseDate": "1977-04-19",
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Romance"
+	],
+	"runtimeMinutes": 93,
+	"review": "Annie Hall reconstruye la relación entre Alvy Singer y una cantante insegura a través de recuerdos, discusiones, fantasías y chistes que rompen cualquier forma tradicional de contar un romance. Woody Allen dirige con libertad total, pero nunca pierde de vista la tristeza de dos personas que se quieren y no saben convivir. Diane Keaton le da a Annie una electricidad irrepetible, entre torpeza, inteligencia y deseo de crecer fuera de la pareja. Es brillante y graciosa sin idealizar el amor; por eso sigue sintiéndose más viva que muchas comedias románticas modernas.",
+	"editorial": {
+		"becauseYouLiked": [
+			"love-and-death-1975",
+			"a-midsummer-night-s-sex-comedy-1982"
+		],
+		"related": [
+			"manhattan-1979",
+			"stardust-memories-1980",
+			"mighty-aphrodite-1995",
+			"suenos-de-un-seductor-1972"
+		]
+	},
+	"synopsis": "Alvy Singer, un comediante neoyorquino lleno de inseguridades, recuerda su relación con Annie Hall, una aspirante a cantante. Entre recuerdos, fantasías y conversaciones directas al público, intenta entender por qué un amor tan intenso no logró sostenerse.",
+	"audienceRating": "ATP",
+	"reviewPublishedAt": "2026-03-08",
+	"country": "US",
+	"isArgentinian": false
 }

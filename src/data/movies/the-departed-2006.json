@@ -1,53 +1,55 @@
 {
-  "slug": "the-departed-2006",
-  "title": "The Departed",
-  "originalTitle": "The Departed",
-  "year": 2006,
-  "category": "Thriller",
-  "poster": "assets/posters/2006/the-departed-2006.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "iQpb1LoeVUc",
-  "releasePlatform": "HBO Max",
-  "director": "Martin Scorsese",
-  "mainCast": [
-    "Leonardo DiCaprio",
-    "Matt Damon",
-    "Jack Nicholson"
-  ],
-  "productionCompany": "Plan B Entertainment, Initial Entertainment Group, Vertigo Entertainment, Media Asia Films",
-  "verdict": "recomendada",
-  "verdictLabel": "MUY BUENA",
-  "awards": {
-    "wins": [
-      {
-        "award": "oscar",
-        "category": "Mejor película",
-        "year": 2007,
-        "recipient": "Brad Pitt, Brad Grey, Graham King"
-      }
-    ]
-  },
-  "releaseDate": "2006-10-04",
-  "genres": [
-    "Misterio & Suspense",
-    "Drama",
-    "Crimen"
-  ],
-  "runtimeMinutes": 151,
-  "review": "The Departed mete a un policía infiltrado en la mafia y a un mafioso dentro de la policía, y Scorsese explota esa simetría hasta que todos viven con el teléfono pegado al cuerpo. La dirección es veloz, violenta y muy clara incluso cuando las lealtades se cruzan. Leonardo DiCaprio trabaja la ansiedad hasta el límite; Matt Damon hace más inquietante a su traidor cuanto más tranquilo parece, y Jack Nicholson aporta una amenaza desatada. El final puede sentirse brutalmente mecánico, pero encaja con un policial donde nadie puede sostener una máscara para siempre. Es tensa, sucia y muy entretenida.",
-  "editorial": {
-	"becauseYouLiked": [
-		"cape-fear-1991",
-		"shutter-island-2010"
+	"slug": "the-departed-2006",
+	"title": "The Departed",
+	"originalTitle": "The Departed",
+	"year": 2006,
+	"category": "Thriller",
+	"poster": "assets/posters/2006/the-departed-2006.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "iQpb1LoeVUc",
+	"releasePlatform": "HBO Max",
+	"director": "Martin Scorsese",
+	"mainCast": [
+		"Leonardo DiCaprio",
+		"Matt Damon",
+		"Jack Nicholson"
 	],
-	"related": [
-		"taxi-driver-1976",
-		"el-informe-pelicano-1993",
-		"busqueda-frenetica-1988",
-		"perros-de-paja-1971"
-	]
-},
-  "audienceRating": "+16",
-  "reviewPublishedAt": "2026-03-08",
-  "synopsis": "La policía de Boston infiltra a Billy Costigan en la organización del mafioso Frank Costello, sin saber que Costello tiene a Colin Sullivan dentro de la fuerza. Ambos agentes encubiertos intentan descubrir la identidad del otro antes de ser expuestos."
+	"productionCompany": "Plan B Entertainment, Initial Entertainment Group, Vertigo Entertainment, Media Asia Films",
+	"verdict": "recomendada",
+	"verdictLabel": "MUY BUENA",
+	"awards": {
+		"wins": [
+			{
+				"award": "oscar",
+				"category": "Mejor película",
+				"year": 2007,
+				"recipient": "Brad Pitt, Brad Grey, Graham King"
+			}
+		]
+	},
+	"releaseDate": "2006-10-04",
+	"genres": [
+		"Misterio & Suspense",
+		"Drama",
+		"Crimen"
+	],
+	"runtimeMinutes": 151,
+	"review": "The Departed mete a un policía infiltrado en la mafia y a un mafioso dentro de la policía, y Scorsese explota esa simetría hasta que todos viven con el teléfono pegado al cuerpo. La dirección es veloz, violenta y muy clara incluso cuando las lealtades se cruzan. Leonardo DiCaprio trabaja la ansiedad hasta el límite; Matt Damon hace más inquietante a su traidor cuanto más tranquilo parece, y Jack Nicholson aporta una amenaza desatada. El final puede sentirse brutalmente mecánico, pero encaja con un policial donde nadie puede sostener una máscara para siempre. Es tensa, sucia y muy entretenida.",
+	"editorial": {
+		"becauseYouLiked": [
+			"cape-fear-1991",
+			"shutter-island-2010"
+		],
+		"related": [
+			"taxi-driver-1976",
+			"el-informe-pelicano-1993",
+			"busqueda-frenetica-1988",
+			"perros-de-paja-1971"
+		]
+	},
+	"audienceRating": "+16",
+	"reviewPublishedAt": "2026-03-08",
+	"synopsis": "La policía de Boston infiltra a Billy Costigan en la organización del mafioso Frank Costello, sin saber que Costello tiene a Colin Sullivan dentro de la fuerza. Ambos agentes encubiertos intentan descubrir la identidad del otro antes de ser expuestos.",
+	"country": "US",
+	"isArgentinian": false
 }

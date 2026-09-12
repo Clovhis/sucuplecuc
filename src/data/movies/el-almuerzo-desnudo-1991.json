@@ -13,7 +13,7 @@
 		"Psicológico",
 		"Body Horror"
 	],
-	"country": "Canadá, Reino Unido, Japón",
+	"country": "CA, GB, JP",
 	"audienceRating": "+18",
 	"runtimeMinutes": 115,
 	"poster": "assets/posters/1991/el-almuerzo-desnudo-1991.webp",
@@ -37,17 +37,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"existenz-1999",
-		"scanners-1981"
-	],
-	"related": [
-		"the-brood-1979",
-		"inseparables-1988",
-		"cabeza-borradora-1977",
-		"la-mosca-1986"
-	]
-},
+		"becauseYouLiked": [
+			"existenz-1999",
+			"scanners-1981"
+		],
+		"related": [
+			"the-brood-1979",
+			"inseparables-1988",
+			"cabeza-borradora-1977",
+			"la-mosca-1986"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

@@ -7,16 +7,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Ciencia ficcion",
-	"genres": ["Ciencia ficción", "Drama", "Aventura"],
+	"genres": [
+		"Ciencia ficción",
+		"Drama",
+		"Aventura"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2015/mision-rescate-2015.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "ej3ioOneTy8",
 	"releasePlatform": "Disney Plus",
 	"director": "Ridley Scott",
-	"mainCast": ["Matt Damon", "Jessica Chastain", "Chiwetel Ejiofor", "Jeff Daniels", "Kate Mara"],
+	"mainCast": [
+		"Matt Damon",
+		"Jessica Chastain",
+		"Chiwetel Ejiofor",
+		"Jeff Daniels",
+		"Kate Mara"
+	],
 	"productionCompany": "20th Century Fox, Scott Free Productions",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY RECOMENDADA",
@@ -24,16 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"looper-2012",
-		"star-wars-episode-vii-the-force-awakens-2015"
-	],
-	"related": [
-		"war-of-the-worlds-2005",
-		"blade-runner-1982",
-		"a-i-artificial-intelligence-2001",
-		"rogue-one-a-star-wars-story-2016"
-	]
-},
+		"becauseYouLiked": [
+			"looper-2012",
+			"star-wars-episode-vii-the-force-awakens-2015"
+		],
+		"related": [
+			"war-of-the-worlds-2005",
+			"blade-runner-1982",
+			"a-i-artificial-intelligence-2001",
+			"rogue-one-a-star-wars-story-2016"
+		]
+	},
 	"review": "El gran acierto de Misión rescate es que convierte la supervivencia en una cadena de problemas concretos, sin perder de vista la emoción. Damon lleva casi solo el peso de la pantalla y hace que la inteligencia práctica de Watney sea carisma, no una clase de ingeniería. Scott filma Marte con escala y claridad, mientras el elenco terrestre transforma el rescate en una tarea colectiva. Tiene optimismo de manual, sí, pero lo vuelve contagioso sin caer en la pavada."
 }

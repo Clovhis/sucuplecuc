@@ -1,37 +1,50 @@
 {
-  "slug": "ali-2001",
-  "title": "Ali",
-  "originalTitle": "Ali",
-  "year": 2001,
-  "category": "Biográfica",
-  "genres": ["Biográfica", "Drama", "Deporte", "Historia"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "poster": "assets/posters/2001/ali-2001.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "STuHQ5HpmEE",
-  "releasePlatform": "Otras plataformas",
-  "director": "Michael Mann",
-  "mainCast": ["Will Smith", "Jon Voight", "Jamie Foxx", "Jeffrey Wright"],
-  "productionCompany": "Columbia Pictures, Forward Pass",
-  "verdict": "recomendada",
-  "verdictLabel": "MUY BUENA",
-  "awards": { "wins": [] },
-  "editorial": {
-	"becauseYouLiked": [
-		"invencible-2006",
-		"una-mujer-audaz-2000"
+	"slug": "ali-2001",
+	"title": "Ali",
+	"originalTitle": "Ali",
+	"year": 2001,
+	"category": "Biográfica",
+	"genres": [
+		"Biográfica",
+		"Drama",
+		"Deporte",
+		"Historia"
 	],
-	"related": [
-		"huracan-carter-1999",
-		"the-fighter-2010",
-		"titanes-hicieron-historia-2000",
-		"malcolm-x-1992"
-	]
-},
-  "review": "Michael Mann no intenta resumir la vida de Muhammad Ali en una colección prolija de estampitas: elige momentos de presión, cambios de nombre y discusiones donde la política pesa tanto como el boxeo. Will Smith trabaja el cuerpo, la voz y el humor del campeón con una entrega que evita la imitación fácil. Jon Voight encuentra una tensión incómoda en Howard Cosell y Jamie Foxx aparece con una energía muy precisa. La película es extensa y fragmentaria, pero tiene nervio y una ambición formal poco común.",
-  "synopsis": "La película recorre la transformación de Cassius Clay en Muhammad Ali, desde su ascenso en el boxeo hasta sus conflictos políticos, religiosos y personales. El campeón debe defender su identidad dentro y fuera del ring.",
-  "audienceRating": "+13",
-  "reviewPublishedAt": "2026-08-24",
-  "runtimeMinutes": 157
+	"subgenres": [],
+	"country": "US",
+	"poster": "assets/posters/2001/ali-2001.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "STuHQ5HpmEE",
+	"releasePlatform": "Otras plataformas",
+	"director": "Michael Mann",
+	"mainCast": [
+		"Will Smith",
+		"Jon Voight",
+		"Jamie Foxx",
+		"Jeffrey Wright"
+	],
+	"productionCompany": "Columbia Pictures, Forward Pass",
+	"verdict": "recomendada",
+	"verdictLabel": "MUY BUENA",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"invencible-2006",
+			"una-mujer-audaz-2000"
+		],
+		"related": [
+			"huracan-carter-1999",
+			"the-fighter-2010",
+			"titanes-hicieron-historia-2000",
+			"malcolm-x-1992"
+		]
+	},
+	"review": "Michael Mann no intenta resumir la vida de Muhammad Ali en una colección prolija de estampitas: elige momentos de presión, cambios de nombre y discusiones donde la política pesa tanto como el boxeo. Will Smith trabaja el cuerpo, la voz y el humor del campeón con una entrega que evita la imitación fácil. Jon Voight encuentra una tensión incómoda en Howard Cosell y Jamie Foxx aparece con una energía muy precisa. La película es extensa y fragmentaria, pero tiene nervio y una ambición formal poco común.",
+	"synopsis": "La película recorre la transformación de Cassius Clay en Muhammad Ali, desde su ascenso en el boxeo hasta sus conflictos políticos, religiosos y personales. El campeón debe defender su identidad dentro y fuera del ring.",
+	"audienceRating": "+13",
+	"reviewPublishedAt": "2026-08-24",
+	"runtimeMinutes": 157,
+	"isArgentinian": false
 }

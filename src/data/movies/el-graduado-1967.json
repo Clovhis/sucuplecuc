@@ -26,17 +26,17 @@
 	"verdictLabel": "CLASICO TOTAL",
 	"runtimeMinutes": 107,
 	"editorial": {
-	"becauseYouLiked": [
-		"juno-embarazada-por-accidente-2007",
-		"nick-y-norah-una-noche-de-musica-y-amor-2008"
-	],
-	"related": [
-		"cielo-de-octubre-1999",
-		"lady-bird-2017",
-		"fue-la-mano-de-dios-2021",
-		"armas-de-mujer-1988"
-	]
-},
+		"becauseYouLiked": [
+			"juno-embarazada-por-accidente-2007",
+			"nick-y-norah-una-noche-de-musica-y-amor-2008"
+		],
+		"related": [
+			"cielo-de-octubre-1999",
+			"lady-bird-2017",
+			"fue-la-mano-de-dios-2021",
+			"armas-de-mujer-1988"
+		]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -53,5 +53,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

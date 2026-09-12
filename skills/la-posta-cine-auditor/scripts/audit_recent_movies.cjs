@@ -11,6 +11,7 @@ const DEFAULT_BASE_REF = 'main';
 const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
 const PERSON_PROFILE_CATALOG_PATH = path.resolve('docs/person-profile-catalog-reference.md');
 const PEOPLE_PUBLIC_ROOT = path.resolve('public');
+const COUNTRY_FLAGS_PUBLIC_ROOT = path.resolve('public/images/flags');
 const ALLOWED_PLATFORMS = new Set([
 	'Netflix',
 	'HBO Max',
@@ -1414,11 +1415,35 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		}
 	}
 
-	if (movie.country === 'AR' && movie.isArgentinian !== true) {
+	if (typeof movie.country !== 'string' || !/^[A-Z]{2}(?:, [A-Z]{2})*$/.test(movie.country)) {
+		addFinding(
+			findings,
+			'error',
+			'invalid-country',
+			candidatePath,
+			'country is required and must use canonical ISO codes, for example "MY" or "AR, ES".',
+		);
+	}
+
+	const countryCodes = typeof movie.country === 'string' ? movie.country.split(', ') : [];
+	for (const countryCode of countryCodes) {
+		const flagCode = countryCode === 'XC' ? 'cz' : countryCode.toLowerCase();
+		if (!fs.existsSync(path.join(COUNTRY_FLAGS_PUBLIC_ROOT, `${flagCode}.svg`))) {
+			addFinding(
+				findings,
+				'error',
+				'missing-country-flag',
+				candidatePath,
+				`missing local flag asset public/images/flags/${flagCode}.svg for country ${countryCode}; run npm run flags:sync.`,
+			);
+		}
+	}
+
+	if (countryCodes.includes('AR') && movie.isArgentinian !== true) {
 		addFinding(findings, 'warn', 'argentina-flag', candidatePath, 'country is AR but isArgentinian is not true.');
 	}
 
-	if (movie.isArgentinian === true && movie.country !== 'AR') {
+	if (movie.isArgentinian === true && !countryCodes.includes('AR')) {
 		addFinding(findings, 'warn', 'argentina-country', candidatePath, 'isArgentinian is true but country is not AR.');
 	}
 

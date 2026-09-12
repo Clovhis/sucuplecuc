@@ -27,17 +27,17 @@
 	"verdictLabel": "IMPERDIBLE",
 	"runtimeMinutes": 145,
 	"editorial": {
-	"becauseYouLiked": [
-		"decision-de-partir-2022",
-		"nunca-estaras-a-salvo-2017"
-	],
-	"related": [
-		"el-aura-2005",
-		"vertigo-1958",
-		"prisioneros-2013",
-		"culpable-2021"
-	]
-},
+		"becauseYouLiked": [
+			"decision-de-partir-2022",
+			"nunca-estaras-a-salvo-2017"
+		],
+		"related": [
+			"el-aura-2005",
+			"vertigo-1958",
+			"prisioneros-2013",
+			"culpable-2021"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Corea del Sur"
+	"country": "KR",
+	"isArgentinian": false
 }

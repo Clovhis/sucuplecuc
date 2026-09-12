@@ -1,27 +1,49 @@
 {
-  "slug": "blue-valentine-2010",
-  "title": "Blue Valentine",
-  "originalTitle": "Blue Valentine",
-  "synopsis": "Dean y Cindy se conocen, se enamoran y construyen una familia, pero con el tiempo el afecto queda cubierto por el cansancio y las decisiones que no pudieron compartir. La película salta entre el comienzo luminoso y una noche en la que intentan salvar lo que queda.",
-  "year": 2010,
-  "audienceRating": "+16",
-  "category": "Romance",
-  "genres": ["Romance", "Drama"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/2010/blue-valentine-2010.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "aILx69WrRhQ",
-  "releasePlatforms": ["Prime Video"],
-  "director": "Derek Cianfrance",
-  "mainCast": ["Ryan Gosling", "Michelle Williams", "John Doman"],
-  "productionCompany": "Hunting Lane Films",
-  "verdict": "recomendada",
-  "verdictLabel": "RECOMENDADA",
-  "awards": {"wins": []},
-  "editorial": {"becauseYouLiked":["loco-y-estupido-amor-2011","diario-de-una-pasion-2004"],"related":["cruce-de-caminos-2012","roofman-un-buen-ladron-2025","her-2013","retrato-de-una-mujer-en-llamas-2019"]},
-  "review": "Blue Valentine observa una pareja sin repartir culpas fáciles. Derek Cianfrance arma el presente y el recuerdo como dos fuerzas que se atraen y se contradicen, y deja que Michelle Williams y Ryan Gosling trabajen con cuerpos, silencios y pequeñas humillaciones domésticas. Algunas escenas buscan la herida de manera evidente, pero la película nunca reduce el amor a una moraleja. Es áspera, íntima y honesta sobre la distancia entre querer a alguien y saber cómo seguir con esa persona.",
-  "runtimeMinutes": 112,
-  "reviewPublishedAt": "2026-08-24"
+	"slug": "blue-valentine-2010",
+	"title": "Blue Valentine",
+	"originalTitle": "Blue Valentine",
+	"synopsis": "Dean y Cindy se conocen, se enamoran y construyen una familia, pero con el tiempo el afecto queda cubierto por el cansancio y las decisiones que no pudieron compartir. La película salta entre el comienzo luminoso y una noche en la que intentan salvar lo que queda.",
+	"year": 2010,
+	"audienceRating": "+16",
+	"category": "Romance",
+	"genres": [
+		"Romance",
+		"Drama"
+	],
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/2010/blue-valentine-2010.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "aILx69WrRhQ",
+	"releasePlatforms": [
+		"Prime Video"
+	],
+	"director": "Derek Cianfrance",
+	"mainCast": [
+		"Ryan Gosling",
+		"Michelle Williams",
+		"John Doman"
+	],
+	"productionCompany": "Hunting Lane Films",
+	"verdict": "recomendada",
+	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"loco-y-estupido-amor-2011",
+			"diario-de-una-pasion-2004"
+		],
+		"related": [
+			"cruce-de-caminos-2012",
+			"roofman-un-buen-ladron-2025",
+			"her-2013",
+			"retrato-de-una-mujer-en-llamas-2019"
+		]
+	},
+	"review": "Blue Valentine observa una pareja sin repartir culpas fáciles. Derek Cianfrance arma el presente y el recuerdo como dos fuerzas que se atraen y se contradicen, y deja que Michelle Williams y Ryan Gosling trabajen con cuerpos, silencios y pequeñas humillaciones domésticas. Algunas escenas buscan la herida de manera evidente, pero la película nunca reduce el amor a una moraleja. Es áspera, íntima y honesta sobre la distancia entre querer a alguien y saber cómo seguir con esa persona.",
+	"runtimeMinutes": 112,
+	"reviewPublishedAt": "2026-08-24"
 }

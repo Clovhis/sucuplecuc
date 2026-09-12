@@ -10,7 +10,7 @@
 		"Ciencia ficción",
 		"Fantasía"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/1980/star-wars-episode-v-the-empire-strikes-back-1980.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "xr3hPFJAHO4",
@@ -36,19 +36,20 @@
 	},
 	"runtimeMinutes": 124,
 	"editorial": {
-	"becauseYouLiked": [
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"e-t-the-extra-terrestrial-1982"
-	],
-	"related": [
-		"avatar-the-way-of-water-2022",
-		"solo-a-star-wars-story-2018",
-		"back-to-the-future-part-ii-1989",
-		"a-i-artificial-intelligence-2001"
-	]
-},
+		"becauseYouLiked": [
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"e-t-the-extra-terrestrial-1982"
+		],
+		"related": [
+			"avatar-the-way-of-water-2022",
+			"solo-a-star-wars-story-2018",
+			"back-to-the-future-part-ii-1989",
+			"a-i-artificial-intelligence-2001"
+		]
+	},
 	"review": "El Imperio contraataca toma la aventura luminosa de Star Wars y la somete a una derrota tras otra sin perder el asombro. Irvin Kershner le da más aire a los personajes: Han y Leia ganan fricción, Luke se enfrenta a su propia impaciencia y Darth Vader deja de ser sólo una presencia imponente. Las batallas sobre Hoth y el entrenamiento con Yoda amplían el mundo con imaginación, no sólo con escala. El tramo final en Ciudad Nube es una clase de tensión y revelaciones. Es más oscura que la primera, pero también más rica y emocionante.",
 	"synopsis": "Tres años después de la destrucción de la Estrella de la Muerte, la flota imperial, liderada por Darth Vader, envía droides sonda por toda la galaxia en busca de la Alianza Rebelde. Una sonda localiza la base rebelde en el planeta helado Hoth.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

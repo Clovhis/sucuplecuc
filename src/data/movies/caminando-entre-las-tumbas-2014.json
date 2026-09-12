@@ -7,16 +7,27 @@
 	"reviewPublishedAt": "2026-08-23",
 	"audienceRating": "+16",
 	"category": "Crimen",
-	"genres": ["Crimen", "Drama", "Misterio", "Thriller"],
+	"genres": [
+		"Crimen",
+		"Drama",
+		"Misterio",
+		"Thriller"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2014/caminando-entre-las-tumbas-2014.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "aTKBowDjMQg",
 	"releasePlatform": "Prime Video",
 	"director": "Scott Frank",
-	"mainCast": ["Liam Neeson", "Dan Stevens", "David Harbour", "Boyd Holbrook", "Ólafur Darri Ólafsson"],
+	"mainCast": [
+		"Liam Neeson",
+		"Dan Stevens",
+		"David Harbour",
+		"Boyd Holbrook",
+		"Ólafur Darri Ólafsson"
+	],
 	"productionCompany": "Cross Creek Pictures, Jersey Films",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
@@ -25,17 +36,17 @@
 	},
 	"runtimeMinutes": 114,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-demonio-vestido-de-azul-1995",
-		"vicio-propio-2014"
-	],
-	"related": [
-		"la-noche-es-nuestra-2007",
-		"plan-oculto-2006",
-		"no-country-for-old-men-2007",
-		"the-departed-2006"
-	]
-},
+		"becauseYouLiked": [
+			"el-demonio-vestido-de-azul-1995",
+			"vicio-propio-2014"
+		],
+		"related": [
+			"la-noche-es-nuestra-2007",
+			"plan-oculto-2006",
+			"no-country-for-old-men-2007",
+			"the-departed-2006"
+		]
+	},
 	"review": "Scott Frank recupera el tono del policial duro sin disfrazarlo de nostalgia prolija. Nueva York aparece llena de estaciones vacías, sótanos y calles en las que nadie parece llegar a tiempo, un clima ideal para el detective agotado de Liam Neeson. La película se toma en serio la oscuridad del caso y deja que la investigación avance por observación, no sólo por golpes. Dan Stevens, David Harbour y los antagonistas suman presencias fuertes alrededor de Scudder. Es áspera y a veces demasiado calculada, pero tiene personalidad y un pulso de novela negra poco común.",
 	"isPremiere": false,
 	"premiereLabel": ""

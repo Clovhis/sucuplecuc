@@ -5,12 +5,14 @@
 	"year": 1981,
 	"releaseDate": "1981-01-01",
 	"category": "Terror",
-	"subgenres": ["Slasher"],
+	"subgenres": [
+		"Slasher"
+	],
 	"genres": [
 		"Misterio & Suspense",
 		"Terror"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1981/halloween-ii-1981.webp",
 	"screenshots": [],
@@ -30,17 +32,17 @@
 	},
 	"runtimeMinutes": 92,
 	"editorial": {
-	"becauseYouLiked": [
-		"halloween-2018",
-		"child-s-play-1988"
-	],
-	"related": [
-		"cult-of-chucky-2017",
-		"child-s-play-2019",
-		"scream-1996",
-		"curse-of-chucky-2013"
-	]
-},
+		"becauseYouLiked": [
+			"halloween-2018",
+			"child-s-play-1988"
+		],
+		"related": [
+			"cult-of-chucky-2017",
+			"child-s-play-2019",
+			"scream-1996",
+			"curse-of-chucky-2013"
+		]
+	},
 	"review": "Halloween II retoma la misma noche y encierra a Laurie en un hospital casi vacío, una decisión que le da pasillos fríos y sensación de pesadilla extendida. Rick Rosenthal conserva parte del clima de la original, aunque la producción de Carpenter empuja más sangre y explica de más la conexión entre víctima y asesino. Jamie Lee Curtis pasa demasiado tiempo sedada, por lo que el relato pierde a su mejor punto de vista, pero Donald Pleasence sostiene la urgencia como Loomis. Es menos fina que la primera, aunque tiene atmósfera nocturna y un final de fuego memorable.",
 	"synopsis": "Ambientada la misma noche del 31 de octubre de 1978, Michael Myers sigue a la superviviente Laurie Strode a un hospital cercano, mientras que el Dr. Sam Loomis aún persigue a su paciente.",
 	"audienceRating": "+17",

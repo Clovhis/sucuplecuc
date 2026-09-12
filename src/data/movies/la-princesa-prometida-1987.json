@@ -7,33 +7,46 @@
 	"reviewPublishedAt": "2026-08-10",
 	"audienceRating": "ATP",
 	"category": "Aventura",
-	"genres": ["Aventura", "Comedia", "Fantasia", "Romance"],
+	"genres": [
+		"Aventura",
+		"Comedia",
+		"Fantasia",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
-  "poster": "assets/posters/1987/la-princesa-prometida-1987.webp",
+	"poster": "assets/posters/1987/la-princesa-prometida-1987.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "O3CIXEAjcc8",
 	"releasePlatform": "Apple TV",
 	"director": "Rob Reiner",
-	"mainCast": ["Cary Elwes", "Robin Wright", "Mandy Patinkin", "Chris Sarandon", "Christopher Guest"],
+	"mainCast": [
+		"Cary Elwes",
+		"Robin Wright",
+		"Mandy Patinkin",
+		"Chris Sarandon",
+		"Christopher Guest"
+	],
 	"productionCompany": "Act III Productions, The Princess Bride Ltd., 20th Century Fox",
 	"verdict": "recomendada",
 	"verdictLabel": "CLASICO TOTAL",
-	"awards": { "wins": [] },
+	"awards": {
+		"wins": []
+	},
 	"runtimeMinutes": 99,
 	"editorial": {
-	"becauseYouLiked": [
-		"los-goonies-1985",
-		"hook-1991"
-	],
-	"related": [
-		"peggy-sue-se-caso-1986",
-		"the-purple-rose-of-cairo-1985",
-		"alice-1990",
-		"lady-halcon-1985"
-	]
-},
+		"becauseYouLiked": [
+			"los-goonies-1985",
+			"hook-1991"
+		],
+		"related": [
+			"peggy-sue-se-caso-1986",
+			"the-purple-rose-of-cairo-1985",
+			"alice-1990",
+			"lady-halcon-1985"
+		]
+	},
 	"review": "Rob Reiner entiende que una aventura romántica puede ser luminosa sin volverse boba. La historia avanza con una velocidad envidiable: cuando parece que toca un duelo, aparece una discusión; cuando llega el peligro, alguien lo desarma con una ocurrencia. Cary Elwes y Robin Wright sostienen el corazón de la película, mientras Mandy Patinkin convierte la venganza en una emoción legible y Christopher Guest aprovecha cada gesto de villano. Tiene espadas, gigantes y romance, pero su verdadero truco está en tratar al público como cómplice de un cuento que conoce de memoria y todavía puede sorprenderlo.",
 	"isPremiere": false,
 	"premiereLabel": ""

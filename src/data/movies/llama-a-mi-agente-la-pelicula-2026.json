@@ -8,16 +8,24 @@
 	"reviewPublishedAt": "2026-09-11",
 	"audienceRating": "+13",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama"],
+	"genres": [
+		"Comedia",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Francia",
+	"country": "FR",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/llama-a-mi-agente-la-pelicula-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "afCKKmg_BaQ",
 	"releasePlatform": "Netflix",
 	"director": "Émilie Noblet",
-	"mainCast": ["Camille Cottin", "Laure Calamy", "Thibault de Montalembert", "Grégory Montel"],
+	"mainCast": [
+		"Camille Cottin",
+		"Laure Calamy",
+		"Thibault de Montalembert",
+		"Grégory Montel"
+	],
 	"productionCompany": "Mediawan, Mon Voisin Productions y Mother Production",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -26,8 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-		"becauseYouLiked": ["aida-y-vuelta-2026", "53-domingos-2026"],
-		"related": ["adaptation-el-ladron-de-orquideas-2002", "algo-pasa-en-hollywood-2008", "office-romance-2026", "after-hours-1985"]
+		"becauseYouLiked": [
+			"aida-y-vuelta-2026",
+			"53-domingos-2026"
+		],
+		"related": [
+			"adaptation-el-ladron-de-orquideas-2002",
+			"algo-pasa-en-hollywood-2008",
+			"office-romance-2026",
+			"after-hours-1985"
+		]
 	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",

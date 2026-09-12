@@ -8,16 +8,24 @@
 	"reviewPublishedAt": "2026-08-25",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Romance"],
+	"genres": [
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1982/oficial-y-caballero-1982.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "FtwT67SC-_4",
 	"releasePlatform": "Apple TV",
 	"director": "Taylor Hackford",
-	"mainCast": ["Richard Gere", "Debra Winger", "Louis Gossett Jr.", "David Keith"],
+	"mainCast": [
+		"Richard Gere",
+		"Debra Winger",
+		"Louis Gossett Jr.",
+		"David Keith"
+	],
 	"productionCompany": "Lorimar Productions",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY BUENA",
@@ -25,17 +33,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-ano-que-vivimos-peligrosamente-1982",
-		"la-insoportable-levedad-del-ser-1988"
-	],
-	"related": [
-		"dias-del-cielo-1978",
-		"las-cosas-que-nunca-mueren-1994",
-		"cinema-paradiso-1988",
-		"testigo-en-peligro-1985"
-	]
-},
+		"becauseYouLiked": [
+			"el-ano-que-vivimos-peligrosamente-1982",
+			"la-insoportable-levedad-del-ser-1988"
+		],
+		"related": [
+			"dias-del-cielo-1978",
+			"las-cosas-que-nunca-mueren-1994",
+			"cinema-paradiso-1988",
+			"testigo-en-peligro-1985"
+		]
+	},
 	"runtimeMinutes": 124,
 	"review": "El entrenamiento militar es el motor visible, pero la película funciona mejor cuando muestra cómo el orgullo se desarma a fuerza de disciplina, deseo y duelo. Richard Gere sostiene a un protagonista que tarda en dejar de actuar para los demás, mientras Debra Winger le da a Paula una firmeza que evita que el romance quede como simple premio. El tono ochentoso puede ser directo hasta el exceso, aunque el duelo entre cadete e instructor conserva una potencia emocional enorme."
 }

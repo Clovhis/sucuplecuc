@@ -1,25 +1,49 @@
 {
-  "slug": "el-mejor-1984",
-  "title": "El mejor",
-  "originalTitle": "The Natural",
-  "year": 1984,
-  "category": "Drama",
-  "genres": ["Drama", "Deporte", "Fantasia"],
-  "poster": "assets/posters/1984/el-mejor-1984.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "rgzypQRl6Lc",
-  "releasePlatform": "Apple TV",
-  "director": "Barry Levinson",
-  "audienceRating": "ATP",
-  "mainCast": ["Robert Redford", "Glenn Close", "Robert Duvall", "Kim Basinger"],
-  "productionCompany": "TriStar Pictures",
-  "verdict": "recomendada",
-  "verdictLabel": "RECOMENDADA",
-  "awards": {"wins": []},
-  "releaseDate": "1984-05-11",
-  "runtimeMinutes": 138,
-  "reviewPublishedAt": "2026-08-24",
-  "synopsis": "Roy Hobbs reaparece en el béisbol profesional después de años lejos de las canchas, con un talento que parece intacto y un pasado que nadie conoce completo. Mientras intenta recuperar el lugar que cree merecer, debe enfrentar a empresarios, rivales y decisiones que ponen a prueba su idea de grandeza.",
-  "review": "Barry Levinson filma El mejor como una fábula deportiva con luces doradas, música enorme y una nostalgia que no pide disculpas. Redford entiende que Roy Hobbs es menos un personaje realista que una figura mítica, pero le suma una tristeza seca que evita que todo quede en postal. Glenn Close y Robert Duvall aportan humanidad a un relato lleno de símbolos, mientras el béisbol se vuelve escenario para hablar de talento, arrepentimiento y deseo de volver a empezar. La película puede pasarse de solemne y no siempre equilibra sus subtramas, aunque cuando conecta el swing con la emoción tiene una potencia difícil de discutir.",
-  "editorial": {"becauseYouLiked":["el-cielo-sobre-berlin-1987","rain-man-1988"],"related":["chariots-of-fire-1981","un-equipo-muy-especial-1992","el-boxeador-1997","huracan-carter-1999"]}
+	"slug": "el-mejor-1984",
+	"title": "El mejor",
+	"originalTitle": "The Natural",
+	"year": 1984,
+	"category": "Drama",
+	"genres": [
+		"Drama",
+		"Deporte",
+		"Fantasia"
+	],
+	"poster": "assets/posters/1984/el-mejor-1984.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "rgzypQRl6Lc",
+	"releasePlatform": "Apple TV",
+	"director": "Barry Levinson",
+	"audienceRating": "ATP",
+	"mainCast": [
+		"Robert Redford",
+		"Glenn Close",
+		"Robert Duvall",
+		"Kim Basinger"
+	],
+	"productionCompany": "TriStar Pictures",
+	"verdict": "recomendada",
+	"verdictLabel": "RECOMENDADA",
+	"awards": {
+		"wins": []
+	},
+	"releaseDate": "1984-05-11",
+	"runtimeMinutes": 138,
+	"reviewPublishedAt": "2026-08-24",
+	"synopsis": "Roy Hobbs reaparece en el béisbol profesional después de años lejos de las canchas, con un talento que parece intacto y un pasado que nadie conoce completo. Mientras intenta recuperar el lugar que cree merecer, debe enfrentar a empresarios, rivales y decisiones que ponen a prueba su idea de grandeza.",
+	"review": "Barry Levinson filma El mejor como una fábula deportiva con luces doradas, música enorme y una nostalgia que no pide disculpas. Redford entiende que Roy Hobbs es menos un personaje realista que una figura mítica, pero le suma una tristeza seca que evita que todo quede en postal. Glenn Close y Robert Duvall aportan humanidad a un relato lleno de símbolos, mientras el béisbol se vuelve escenario para hablar de talento, arrepentimiento y deseo de volver a empezar. La película puede pasarse de solemne y no siempre equilibra sus subtramas, aunque cuando conecta el swing con la emoción tiene una potencia difícil de discutir.",
+	"editorial": {
+		"becauseYouLiked": [
+			"el-cielo-sobre-berlin-1987",
+			"rain-man-1988"
+		],
+		"related": [
+			"chariots-of-fire-1981",
+			"un-equipo-muy-especial-1992",
+			"el-boxeador-1997",
+			"huracan-carter-1999"
+		]
+	},
+	"country": "US",
+	"isArgentinian": false
 }

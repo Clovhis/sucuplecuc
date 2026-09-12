@@ -23,17 +23,17 @@
 	"verdictLabel": "NO LA MIRES",
 	"runtimeMinutes": 121,
 	"editorial": {
-	"becauseYouLiked": [
-		"los-descendientes-viaje-al-mundo-oscuro-2026",
-		"everyone-says-i-love-you-1996"
-	],
-	"related": [
-		"an-american-in-paris-1951",
-		"gloria-bell-2019",
-		"los-muertos-no-mueren-2019",
-		"green-book-2018"
-	]
-},
+		"becauseYouLiked": [
+			"los-descendientes-viaje-al-mundo-oscuro-2026",
+			"everyone-says-i-love-you-1996"
+		],
+		"related": [
+			"an-american-in-paris-1951",
+			"gloria-bell-2019",
+			"los-muertos-no-mueren-2019",
+			"green-book-2018"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

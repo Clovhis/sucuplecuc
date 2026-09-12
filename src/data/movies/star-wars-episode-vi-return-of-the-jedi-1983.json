@@ -10,7 +10,7 @@
 		"Ciencia ficción",
 		"Fantasía"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/1983/star-wars-episode-vi-return-of-the-jedi-1983.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "yhuKapE-Bio",
@@ -36,19 +36,20 @@
 	},
 	"runtimeMinutes": 134,
 	"editorial": {
-	"becauseYouLiked": [
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"e-t-the-extra-terrestrial-1982"
-	],
-	"related": [
-		"avatar-the-way-of-water-2022",
-		"back-to-the-future-1985",
-		"back-to-the-future-part-ii-1989",
-		"back-to-the-future-part-iii-1990"
-	]
-},
+		"becauseYouLiked": [
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"e-t-the-extra-terrestrial-1982"
+		],
+		"related": [
+			"avatar-the-way-of-water-2022",
+			"back-to-the-future-1985",
+			"back-to-the-future-part-ii-1989",
+			"back-to-the-future-part-iii-1990"
+		]
+	},
 	"review": "Return of the Jedi cierra la trilogía apostando a la aventura pura, con rescate, persecución y una batalla espacial que todavía sabe ordenar muy bien sus frentes. Richard Marquand maneja la escala con soltura, aunque el tramo de Endor se pasa de simpático y los ewoks le bajan un poco el peligro al asunto. Mark Hamill está más oscuro y Harrison Ford recupera la picardía de Han. No tiene la tensión perfecta de El imperio contraataca, pero el conflicto entre Luke, Vader y el Emperador le da un final emotivo y merecido.",
-  "synopsis": "Luke intenta rescatar a Han y enfrentar a Darth Vader, mientras la Alianza Rebelde prepara un ataque desesperado contra la nueva Estrella de la Muerte antes de que el Imperio la active.",
+	"synopsis": "Luke intenta rescatar a Han y enfrentar a Darth Vader, mientras la Alianza Rebelde prepara un ataque desesperado contra la nueva Estrella de la Muerte antes de que el Imperio la active.",
 	"audienceRating": "ATP",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

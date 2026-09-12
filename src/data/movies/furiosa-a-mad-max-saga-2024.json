@@ -4,7 +4,9 @@
 	"originalTitle": "Furiosa: A Mad Max Saga",
 	"year": 2024,
 	"category": "Accion",
-	"subgenres": ["Road Movie"],
+	"subgenres": [
+		"Road Movie"
+	],
 	"poster": "assets/posters/2024/furiosa-a-mad-max-saga-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "XJMuhwVlca4",
@@ -24,18 +26,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"mad-max-fury-road-2015",
-		"mad-max-2-1981"
-	],
-	"related": [
-		"mad-max-1979",
-		"transformers-one-2024",
-		"apex-2026",
-		"thelma-y-louise-1991"
-	]
-},
+		"becauseYouLiked": [
+			"mad-max-fury-road-2015",
+			"mad-max-2-1981"
+		],
+		"related": [
+			"mad-max-1979",
+			"transformers-one-2024",
+			"apex-2026",
+			"thelma-y-louise-1991"
+		]
+	},
 	"synopsis": "Secuestrada de su hogar cuando era chica, Furiosa crece entre las bandas del páramo y el dominio de Dementus mientras busca una forma de volver a la tierra verde que perdió.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "AU, US",
+	"isArgentinian": false
 }

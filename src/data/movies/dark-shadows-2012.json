@@ -2,17 +2,19 @@
 	"slug": "dark-shadows-2012",
 	"title": "Dark Shadows",
 	"originalTitle": "Dark Shadows",
-  "synopsis": "Barnabas Collins despierta en 1972 después de dos siglos encerrado y vuelve a la mansión de su familia, en decadencia. Allí deberá enfrentar a la bruja que lo convirtió en vampiro y aún lo persigue.",
+	"synopsis": "Barnabas Collins despierta en 1972 después de dos siglos encerrado y vuelve a la mansión de su familia, en decadencia. Allí deberá enfrentar a la bruja que lo convirtió en vampiro y aún lo persigue.",
 	"year": 2012,
 	"audienceRating": "+13",
 	"category": "Comedia",
-	"subgenres": ["Sobrenatural"],
+	"subgenres": [
+		"Sobrenatural"
+	],
 	"genres": [
 		"Comedia",
 		"Fantasia",
 		"Terror"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2012/dark-shadows-2012.webp",
 	"screenshots": [],
@@ -33,17 +35,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"las-brujas-de-eastwick-1987",
-		"beetlejuice-1988"
-	],
-	"related": [
-		"sleepy-hollow-1999",
-		"el-ejercito-de-las-tinieblas-1992",
-		"terrorificamente-muertos-1987",
-		"los-mundos-de-coraline-2009"
-	]
-},
+		"becauseYouLiked": [
+			"las-brujas-de-eastwick-1987",
+			"beetlejuice-1988"
+		],
+		"related": [
+			"sleepy-hollow-1999",
+			"el-ejercito-de-las-tinieblas-1992",
+			"terrorificamente-muertos-1987",
+			"los-mundos-de-coraline-2009"
+		]
+	},
 	"runtimeMinutes": 113,
 	"review": "Tim Burton revive a un vampiro del siglo XVIII que vuelve en los años setenta para ordenar una familia excéntrica y enfrentar a una bruja que no lo soltó. Johnny Depp maneja el gesto de pez fuera del agua, y Eva Green se entrega a la villana con una energía que la película necesita. La dirección tiene decorados góticos, colores y canciones con mucho estilo, pero el tono salta entre comedia, romance y horror sin encontrar un piso firme. El ritmo es irregular. Vale por su fachada visual, no porque todos sus chistes muerdan.",
 	"reviewPublishedAt": "2026-04-27"

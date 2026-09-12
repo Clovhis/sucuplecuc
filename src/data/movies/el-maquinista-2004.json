@@ -12,7 +12,7 @@
 	"subgenres": [
 		"Psicológico"
 	],
-	"country": "España, Francia, Reino Unido, Estados Unidos",
+	"country": "ES, FR, GB, US",
 	"audienceRating": "+16",
 	"runtimeMinutes": 101,
 	"poster": "assets/posters/2004/el-maquinista-2004.webp",
@@ -36,17 +36,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"psicopata-americano-2000",
-		"mulholland-drive-2001"
-	],
-	"related": [
-		"zodiaco-2007",
-		"pi-fe-en-el-caos-1998",
-		"shutter-island-2010",
-		"enemy-2013"
-	]
-},
+		"becauseYouLiked": [
+			"psicopata-americano-2000",
+			"mulholland-drive-2001"
+		],
+		"related": [
+			"zodiaco-2007",
+			"pi-fe-en-el-caos-1998",
+			"shutter-island-2010",
+			"enemy-2013"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

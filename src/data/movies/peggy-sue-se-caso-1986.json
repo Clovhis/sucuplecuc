@@ -8,16 +8,27 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "ATP",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama", "Fantasia", "Romance"],
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Fantasia",
+		"Romance"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1986/peggy-sue-se-caso-1986.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "V8laaOwPFtM",
 	"releasePlatform": "Apple TV",
 	"director": "Francis Ford Coppola",
-	"mainCast": ["Kathleen Turner", "Nicolas Cage", "Barry Miller", "Catherine Hicks", "Joan Allen"],
+	"mainCast": [
+		"Kathleen Turner",
+		"Nicolas Cage",
+		"Barry Miller",
+		"Catherine Hicks",
+		"Joan Allen"
+	],
 	"productionCompany": "Zoetrope Studios, TriStar Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,7 +36,17 @@
 	"awards": {
 		"wins": []
 	},
-	"editorial": {"becauseYouLiked":["la-guerra-de-los-rose-1989","la-mascara-1994"],"related":["el-hombre-de-los-suenos-2023","como-ser-john-malkovich-1999","mentiroso-mentiroso-1997","the-terminal-2004"]},
-	"review": "Francis Ford Coppola usa el viaje temporal de Peggy Sue para hablar de la nostalgia sin convertirla en una postal cómoda. Kathleen Turner lleva la película con una mezcla precisa de desconcierto y experiencia, y Nicolas Cage compone a Charlie desde una energía juvenil que no oculta su fragilidad. El reparto secundario llena el pasado de vínculos posibles, no sólo de decorado adolescente. La estructura a veces explica de más lo que la protagonista ya entendió, pero conserva una calidez genuina y una pregunta difícil: si pudiéramos volver, ¿cambiaríamos realmente lo que nos hizo ser quienes somos?",
-	"awards": {"wins": []}
+	"editorial": {
+		"becauseYouLiked": [
+			"la-guerra-de-los-rose-1989",
+			"la-mascara-1994"
+		],
+		"related": [
+			"el-hombre-de-los-suenos-2023",
+			"como-ser-john-malkovich-1999",
+			"mentiroso-mentiroso-1997",
+			"the-terminal-2004"
+		]
+	},
+	"review": "Francis Ford Coppola usa el viaje temporal de Peggy Sue para hablar de la nostalgia sin convertirla en una postal cómoda. Kathleen Turner lleva la película con una mezcla precisa de desconcierto y experiencia, y Nicolas Cage compone a Charlie desde una energía juvenil que no oculta su fragilidad. El reparto secundario llena el pasado de vínculos posibles, no sólo de decorado adolescente. La estructura a veces explica de más lo que la protagonista ya entendió, pero conserva una calidez genuina y una pregunta difícil: si pudiéramos volver, ¿cambiaríamos realmente lo que nos hizo ser quienes somos?"
 }

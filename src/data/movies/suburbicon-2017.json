@@ -7,16 +7,26 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+17",
 	"category": "Thriller",
-	"genres": ["Thriller", "Crimen", "Comedia"],
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Comedia"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2017/suburbicon-2017.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "IYga2m0V2O0",
 	"releasePlatform": "Otras plataformas",
 	"director": "George Clooney",
-	"mainCast": ["Matt Damon", "Julianne Moore", "Noah Jupe", "Oscar Isaac", "Glenn Fleshler"],
+	"mainCast": [
+		"Matt Damon",
+		"Julianne Moore",
+		"Noah Jupe",
+		"Oscar Isaac",
+		"Glenn Fleshler"
+	],
 	"productionCompany": "Paramount Pictures, Black Bear Pictures, Smokehouse Pictures",
 	"verdict": "no_recomendada",
 	"verdictLabel": "MUY FLOJA",
@@ -24,16 +34,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"prisioneros-2013",
-		"good-time-viviendo-al-limite-2017"
-	],
-	"related": [
-		"the-departed-2006",
-		"nunca-estaras-a-salvo-2017",
-		"los-otros-dos-2010",
-		"crimen-perfecto-2007"
-	]
-},
+		"becauseYouLiked": [
+			"prisioneros-2013",
+			"good-time-viviendo-al-limite-2017"
+		],
+		"related": [
+			"the-departed-2006",
+			"nunca-estaras-a-salvo-2017",
+			"los-otros-dos-2010",
+			"crimen-perfecto-2007"
+		]
+	},
 	"review": "Suburbicon tiene una idea potente: la fachada blanca y ordenada puede esconder una violencia doméstica, económica y racial mucho más profunda. El problema es que la película divide esa energía entre una comedia negra de los Coen y una denuncia histórica que queda demasiado apartada. Damon juega bien la cobardía de Gardner, y Moore se divierte con el doble papel, pero el mecanismo se vuelve obvio. Hay cuadros filosos y escenas logradas, aunque el conjunto no termina de morder."
 }

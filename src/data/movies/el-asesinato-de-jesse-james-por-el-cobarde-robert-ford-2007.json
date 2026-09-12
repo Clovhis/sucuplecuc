@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 160,
 	"editorial": {
-	"becauseYouLiked": [
-		"la-propuesta-2005",
-		"unforgiven-1992"
-	],
-	"related": [
-		"pacto-de-justicia-2003",
-		"el-renacido-2015",
-		"hasta-que-llego-su-hora-1968",
-		"el-bueno-el-feo-y-el-malo-1966"
-	]
-},
+		"becauseYouLiked": [
+			"la-propuesta-2005",
+			"unforgiven-1992"
+		],
+		"related": [
+			"pacto-de-justicia-2003",
+			"el-renacido-2015",
+			"hasta-que-llego-su-hora-1968",
+			"el-bueno-el-feo-y-el-malo-1966"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 		"HBO Max",
 		"Apple TV"
 	],
-	"country": "Canadá"
+	"country": "CA",
+	"isArgentinian": false
 }

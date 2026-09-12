@@ -4,7 +4,9 @@
 	"originalTitle": "The First Omen",
 	"year": 2024,
 	"category": "Terror",
-	"subgenres": ["Sobrenatural"],
+	"subgenres": [
+		"Sobrenatural"
+	],
 	"poster": "assets/posters/2024/the-first-omen-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "lmN1Op8ygno",
@@ -24,18 +26,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"la-bruja-2015",
-		"cuando-acecha-la-maldad-2023"
-	],
-	"related": [
-		"sinners-2025",
-		"evil-dead-en-llamas-2026",
-		"la-cabana-siniestra-2019",
-		"hereditary-2018"
-	]
-},
+		"becauseYouLiked": [
+			"la-bruja-2015",
+			"cuando-acecha-la-maldad-2023"
+		],
+		"related": [
+			"sinners-2025",
+			"evil-dead-en-llamas-2026",
+			"la-cabana-siniestra-2019",
+			"hereditary-2018"
+		]
+	},
 	"synopsis": "En Roma, 1971, el padre Brennan presiona al padre Harris sobre una conspiración oculta; Harris le da una fotografía de un bebé con el nombre \"Scianna\" inscrito. Harris muere cuando una tubería cae del andamio de construcción de una iglesia y le abre la cabeza.",
 	"audienceRating": "+16",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"country": "US",
+	"isArgentinian": false
 }

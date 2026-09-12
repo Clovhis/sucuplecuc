@@ -10,7 +10,7 @@
 		"Acción & Aventura",
 		"Fantasía"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/2017/star-wars-episode-viii-the-last-jedi-2017.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "76ZEIEbjlEg",
@@ -29,19 +29,20 @@
 	},
 	"runtimeMinutes": 152,
 	"editorial": {
-	"becauseYouLiked": [
-		"star-wars-episode-vii-the-force-awakens-2015",
-		"looper-2012"
-	],
-	"related": [
-		"avatar-the-way-of-water-2022",
-		"e-t-the-extra-terrestrial-1982",
-		"rogue-one-a-star-wars-story-2016",
-		"solo-a-star-wars-story-2018"
-	]
-},
+		"becauseYouLiked": [
+			"star-wars-episode-vii-the-force-awakens-2015",
+			"looper-2012"
+		],
+		"related": [
+			"avatar-the-way-of-water-2022",
+			"e-t-the-extra-terrestrial-1982",
+			"rogue-one-a-star-wars-story-2016",
+			"solo-a-star-wars-story-2018"
+		]
+	},
 	"review": "The Last Jedi discute el legado de Star Wars desde adentro: Rian Johnson toma héroes venerados, errores heredados y la idea misma de destino para empujarla hacia otro lugar. La dirección tiene imágenes bellísimas y sabe construir tensión en los duelos, mientras Mark Hamill encuentra un Luke amargado pero reconocible. Daisy Ridley y Adam Driver hacen que el vínculo entre Rey y Kylo tenga una electricidad inesperada. Algunas líneas narrativas, sobre todo la misión paralela, frenan el ritmo y no todo el humor entra igual. Aun así, es una entrega con ideas propias, no un refrito obediente.",
 	"synopsis": "Tras la muerte de Han Solo y el avance de la Primera Orden, Rey viaja a Ahch-To para pedirle ayuda a Luke Skywalker. Mientras la Resistencia intenta sobrevivir a la persecución enemiga, cada personaje debe decidir qué legado quiere sostener y cuál está dispuesto a romper.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

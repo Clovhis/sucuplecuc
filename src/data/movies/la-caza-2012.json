@@ -25,17 +25,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 115,
 	"editorial": {
-	"becauseYouLiked": [
-		"tenemos-que-hablar-de-kevin-2011",
-		"fight-club-1999"
-	],
-	"related": [
-		"el-reverendo-2017",
-		"estoy-pensando-en-dejarlo-2020",
-		"las-siamesas-2020",
-		"la-semilla-del-fruto-sagrado-2024"
-	]
-},
+		"becauseYouLiked": [
+			"tenemos-que-hablar-de-kevin-2011",
+			"fight-club-1999"
+		],
+		"related": [
+			"el-reverendo-2017",
+			"estoy-pensando-en-dejarlo-2020",
+			"las-siamesas-2020",
+			"la-semilla-del-fruto-sagrado-2024"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -45,5 +45,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Dinamarca"
+	"country": "DK",
+	"isArgentinian": false
 }

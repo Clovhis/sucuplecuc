@@ -23,17 +23,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 124,
 	"editorial": {
-	"becauseYouLiked": [
-		"corazon-salvaje-1990",
-		"nixon-1995"
-	],
-	"related": [
-		"amistad-1997",
-		"raging-bull-1980",
-		"lo-que-queda-del-dia-1993",
-		"hitchcock-2012"
-	]
-},
+		"becauseYouLiked": [
+			"corazon-salvaje-1990",
+			"nixon-1995"
+		],
+		"related": [
+			"amistad-1997",
+			"raging-bull-1980",
+			"lo-que-queda-del-dia-1993",
+			"hitchcock-2012"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -44,5 +44,6 @@
 	"premiereLabel": "",
 	"postCreditsScenes": 0,
 	"releasePlatform": "HBO Max",
-	"country": "Estados Unidos"
+	"country": "US",
+	"isArgentinian": false
 }

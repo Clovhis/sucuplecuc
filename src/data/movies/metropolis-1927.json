@@ -10,7 +10,7 @@
 		"Drama",
 		"Europeas"
 	],
-  "poster": "assets/posters/1927/metropolis-1927.webp",
+	"poster": "assets/posters/1927/metropolis-1927.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "YEotzg8Q9DA",
 	"director": "Fritz Lang",
@@ -23,17 +23,17 @@
 	"verdictLabel": "CLASICO TOTAL",
 	"runtimeMinutes": 148,
 	"editorial": {
-	"becauseYouLiked": [
-		"a-i-artificial-intelligence-2001",
-		"war-of-the-worlds-2005"
-	],
-	"related": [
-		"e-t-the-extra-terrestrial-1982",
-		"hijos-de-los-hombres-2006",
-		"sleeper-1973",
-		"solaris-1972"
-	]
-},
+		"becauseYouLiked": [
+			"a-i-artificial-intelligence-2001",
+			"war-of-the-worlds-2005"
+		],
+		"related": [
+			"e-t-the-extra-terrestrial-1982",
+			"hijos-de-los-hombres-2006",
+			"sleeper-1973",
+			"solaris-1972"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Alemania"
+	"country": "DE",
+	"isArgentinian": false
 }

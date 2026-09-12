@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 100,
 	"editorial": {
-	"becauseYouLiked": [
-		"mandy-2018",
-		"the-evil-dead-1981"
-	],
-	"related": [
-		"el-mas-alla-1981",
-		"evil-dead-en-llamas-2026",
-		"venganza-nunca-subestimes-a-una-mujer-2017",
-		"el-dia-de-la-bestia-1995"
-	]
-},
+		"becauseYouLiked": [
+			"mandy-2018",
+			"the-evil-dead-1981"
+		],
+		"related": [
+			"el-mas-alla-1981",
+			"evil-dead-en-llamas-2026",
+			"venganza-nunca-subestimes-a-una-mujer-2017",
+			"el-dia-de-la-bestia-1995"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -51,5 +51,6 @@
 		"Prime Video",
 		"Apple TV"
 	],
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

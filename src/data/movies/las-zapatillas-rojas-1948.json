@@ -24,17 +24,17 @@
 	"verdictLabel": "IMPERDIBLE",
 	"runtimeMinutes": 133,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-piano-1993",
-		"tango-feroz-la-leyenda-de-tanguito-1993"
-	],
-	"related": [
-		"sweet-and-lowdown-1999",
-		"la-pianista-2001",
-		"johnny-june-pasion-y-locura-2005",
-		"gloria-bell-2019"
-	]
-},
+		"becauseYouLiked": [
+			"el-piano-1993",
+			"tango-feroz-la-leyenda-de-tanguito-1993"
+		],
+		"related": [
+			"sweet-and-lowdown-1999",
+			"la-pianista-2001",
+			"johnny-june-pasion-y-locura-2005",
+			"gloria-bell-2019"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -44,5 +44,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Prime Video",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

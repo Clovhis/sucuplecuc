@@ -1,40 +1,42 @@
 {
-  "slug": "rocky-iii-1982",
-  "title": "Rocky III",
-  "originalTitle": "Rocky III",
-  "year": 1982,
-  "category": "Drama",
-  "poster": "assets/posters/1982/rocky-iii-1982.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "o7vbDPUMWDc",
-  "releasePlatform": "Otras plataformas",
-  "director": "Sylvester Stallone",
-  "mainCast": [
-    "Sylvester Stallone",
-    "Mr. T",
-    "Carl Weathers"
-  ],
-  "productionCompany": "United Artists, Chartoff-Winkler Productions",
-  "verdict": "recomendada",
-  "verdictLabel": "MUY BUENA",
-  "runtimeMinutes": 100,
-  "awards": {
-    "wins": []
-  },
-  "editorial": {
-	"becauseYouLiked": [
-		"creed-2015",
-		"creed-ii-2018"
+	"slug": "rocky-iii-1982",
+	"title": "Rocky III",
+	"originalTitle": "Rocky III",
+	"year": 1982,
+	"category": "Drama",
+	"poster": "assets/posters/1982/rocky-iii-1982.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "o7vbDPUMWDc",
+	"releasePlatform": "Otras plataformas",
+	"director": "Sylvester Stallone",
+	"mainCast": [
+		"Sylvester Stallone",
+		"Mr. T",
+		"Carl Weathers"
 	],
-	"related": [
-		"el-demoledor-1993",
-		"depredador-1987",
-		"happy-gilmore-1996",
-		"gandhi-1982"
-	]
-},
-  "review": "Sylvester Stallone enfrenta a Rocky con Clubber Lang después de mostrar que el éxito también puede volver blando a un campeón acostumbrado a sufrir. Stallone dirige una entrega más pop y rápida, con entrenamiento, canciones y golpes diseñados para subir la adrenalina; Mr. T hace de Lang un motor de choque perfecto. La relación con Apollo suma humor y una nueva forma de pelear, aunque el drama tiene menos peso que antes. El ritmo va de frente y no pretende otra cosa. Vale como espectáculo de revancha, más liviano pero muy efectivo.",
-  "synopsis": "Convertido en campeón mundial, Rocky Balboa se confía después de varias defensas fáciles. La derrota frente al agresivo Clubber Lang lo obliga a recuperar la disciplina y a aceptar la ayuda de Apollo Creed.",
-  "audienceRating": "ATP",
-  "reviewPublishedAt": "2026-03-11"
+	"productionCompany": "United Artists, Chartoff-Winkler Productions",
+	"verdict": "recomendada",
+	"verdictLabel": "MUY BUENA",
+	"runtimeMinutes": 100,
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"creed-2015",
+			"creed-ii-2018"
+		],
+		"related": [
+			"el-demoledor-1993",
+			"depredador-1987",
+			"happy-gilmore-1996",
+			"gandhi-1982"
+		]
+	},
+	"review": "Sylvester Stallone enfrenta a Rocky con Clubber Lang después de mostrar que el éxito también puede volver blando a un campeón acostumbrado a sufrir. Stallone dirige una entrega más pop y rápida, con entrenamiento, canciones y golpes diseñados para subir la adrenalina; Mr. T hace de Lang un motor de choque perfecto. La relación con Apollo suma humor y una nueva forma de pelear, aunque el drama tiene menos peso que antes. El ritmo va de frente y no pretende otra cosa. Vale como espectáculo de revancha, más liviano pero muy efectivo.",
+	"synopsis": "Convertido en campeón mundial, Rocky Balboa se confía después de varias defensas fáciles. La derrota frente al agresivo Clubber Lang lo obliga a recuperar la disciplina y a aceptar la ayuda de Apollo Creed.",
+	"audienceRating": "ATP",
+	"reviewPublishedAt": "2026-03-11",
+	"country": "US",
+	"isArgentinian": false
 }

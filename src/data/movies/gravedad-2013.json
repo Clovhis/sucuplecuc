@@ -8,16 +8,24 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Drama", "Thriller", "Ciencia ficcion"],
+	"genres": [
+		"Drama",
+		"Thriller",
+		"Ciencia ficcion"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2013/gravedad-2013.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "OiTiKOy59o4",
 	"releasePlatform": "HBO Max",
 	"director": "Alfonso Cuarón",
-	"mainCast": ["Sandra Bullock", "George Clooney", "Ed Harris"],
+	"mainCast": [
+		"Sandra Bullock",
+		"George Clooney",
+		"Ed Harris"
+	],
 	"productionCompany": "Warner Bros. Pictures",
 	"verdict": "recomendada",
 	"verdictLabel": "MUY RECOMENDADA",
@@ -25,16 +33,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"el-demoledor-1993",
-		"ex-machina-2014"
-	],
-	"related": [
-		"arrival-2016",
-		"hijos-de-los-hombres-2006",
-		"memoria-2021",
-		"dias-extranos-1995"
-	]
-},
+		"becauseYouLiked": [
+			"el-demoledor-1993",
+			"ex-machina-2014"
+		],
+		"related": [
+			"arrival-2016",
+			"hijos-de-los-hombres-2006",
+			"memoria-2021",
+			"dias-extranos-1995"
+		]
+	},
 	"review": "Alfonso Cuarón convierte la órbita terrestre en un espacio de belleza y terror físico. Cada giro de Sandra Bullock, cada respiración y cada silencio tiene una consecuencia concreta, mientras Clooney aporta una calma que hace más fuerte la soledad posterior. La película combina espectáculo y supervivencia sin perder de vista el cuerpo humano, su fragilidad y su voluntad de seguir. Pocas veces el 3D y el diseño sonoro estuvieron tan integrados a la narración: no decoran el vacío, lo vuelven una amenaza palpable."
 }

@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"genres": ["Thriller", "Crimen", "Drama"],
+	"genres": [
+		"Thriller",
+		"Crimen",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2007/cleaner-2007.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "M1pWjYNiOFo",
 	"releasePlatform": "Otras plataformas",
 	"director": "Renny Harlin",
-	"mainCast": ["Samuel L. Jackson", "Ed Harris", "Eva Mendes", "Keke Palmer"],
+	"mainCast": [
+		"Samuel L. Jackson",
+		"Ed Harris",
+		"Eva Mendes",
+		"Keke Palmer"
+	],
 	"productionCompany": "New Line Cinema",
 	"verdict": "zafa",
 	"verdictLabel": "PASABLE",
@@ -25,17 +34,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"crimen-perfecto-2007",
-		"zodiaco-2007"
-	],
-	"related": [
-		"pulp-fiction-1994",
-		"prisioneros-2013",
-		"la-extrana-que-hay-en-ti-2007",
-		"la-noche-es-nuestra-2007"
-	]
-},
+		"becauseYouLiked": [
+			"crimen-perfecto-2007",
+			"zodiaco-2007"
+		],
+		"related": [
+			"pulp-fiction-1994",
+			"prisioneros-2013",
+			"la-extrana-que-hay-en-ti-2007",
+			"la-noche-es-nuestra-2007"
+		]
+	},
 	"review": "Cleaner trabaja mejor cuando se concentra en el oficio de Tom Cutler: baldes, guantes y protocolos para borrar una violencia que otros prefieren no mirar. El misterio policial es bastante convencional, pero Samuel L. Jackson le da al protagonista una dignidad cansada que sostiene la película cuando el guion pisa terreno conocido. Ed Harris aporta una amenaza seca y Eva Mendes una presencia más humana que ornamental. No reinventa el thriller, aunque encuentra un pulso prolijo y una suciedad moral interesante en su premisa.",
 	"runtimeMinutes": 88
 }

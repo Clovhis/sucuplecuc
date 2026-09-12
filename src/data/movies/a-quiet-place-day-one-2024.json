@@ -4,7 +4,11 @@
 	"originalTitle": "A Quiet Place: Day One",
 	"year": 2024,
 	"category": "Terror",
-	"genres": ["Terror", "Ciencia ficción", "Thriller"],
+	"genres": [
+		"Terror",
+		"Ciencia ficción",
+		"Thriller"
+	],
 	"poster": "assets/posters/2024/a-quiet-place-day-one-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "YPY7J-flzE8",
@@ -24,18 +28,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"28-years-later-the-bone-temple-2026",
-		"titane-2021"
-	],
-	"related": [
-		"la-zona-muerta-1983",
-		"la-cosa-el-enigma-de-otro-mundo-1982",
-		"scanners-1981",
-		"piscina-infinita-2023"
-	]
-},
-  "synopsis": "El día que criaturas ciegas invaden Nueva York, Sam abandona el hospicio con su gato Frodo y cruza una ciudad en ruinas en busca de un último recuerdo que todavía le importa.",
+		"becauseYouLiked": [
+			"28-years-later-the-bone-temple-2026",
+			"titane-2021"
+		],
+		"related": [
+			"la-zona-muerta-1983",
+			"la-cosa-el-enigma-de-otro-mundo-1982",
+			"scanners-1981",
+			"piscina-infinita-2023"
+		]
+	},
+	"synopsis": "El día que criaturas ciegas invaden Nueva York, Sam abandona el hospicio con su gato Frodo y cruza una ciudad en ruinas en busca de un último recuerdo que todavía le importa.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-02-27"
+	"reviewPublishedAt": "2026-02-27",
+	"country": "US",
+	"isArgentinian": false
 }

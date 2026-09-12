@@ -26,17 +26,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 97,
 	"editorial": {
-	"becauseYouLiked": [
-		"ex-machina-2014",
-		"coherencia-2013"
-	],
-	"related": [
-		"spaceman-2024",
-		"under-the-skin-2013",
-		"donnie-darko-2001",
-		"enter-the-void-2009"
-	]
-},
+		"becauseYouLiked": [
+			"ex-machina-2014",
+			"coherencia-2013"
+		],
+		"related": [
+			"spaceman-2024",
+			"under-the-skin-2013",
+			"donnie-darko-2001",
+			"enter-the-void-2009"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -46,5 +46,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Reino Unido"
+	"country": "GB",
+	"isArgentinian": false
 }

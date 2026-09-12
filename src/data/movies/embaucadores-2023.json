@@ -1,41 +1,53 @@
 {
-  "slug": "embaucadores-2023",
-  "title": "Embaucadores",
-  "originalTitle": "Sharper",
-  "synopsis": "En Nueva York, una estudiante que necesita dinero entra en la órbita de un seductor profesional y descubre que cada gesto amable puede ser parte de una estafa. El juego se vuelve cada vez más peligroso cuando los planes de varios embaucadores empiezan a cruzarse.",
-  "year": 2023,
-  "releaseDate": "2023-02-17",
-  "reviewPublishedAt": "2026-08-25",
-  "audienceRating": "+13",
-  "category": "Crimen",
-  "genres": ["Crimen", "Drama", "Misterio"],
-  "subgenres": [],
-  "country": "Estados Unidos",
-  "isArgentinian": false,
-  "poster": "assets/posters/2023/embaucadores-2023.webp",
-  "screenshots": [],
-  "trailerYoutubeId": "X5kSYHYEnB0",
-  "releasePlatform": "Apple TV",
-  "director": "Benjamin Caron",
-  "mainCast": ["Julianne Moore", "Sebastian Stan", "Justice Smith", "Briana Middleton", "John Lithgow"],
-  "productionCompany": "Apple Original Films, Picturestart, New Regency",
-  "verdict": "zafa",
-  "verdictLabel": "ZAFA",
-  "awards": {"wins": []},
-  "runtimeMinutes": 116,
-  "editorial": {
-	"becauseYouLiked": [
-		"vicio-propio-2014",
-		"el-halcon-maltes-1941"
+	"slug": "embaucadores-2023",
+	"title": "Embaucadores",
+	"originalTitle": "Sharper",
+	"synopsis": "En Nueva York, una estudiante que necesita dinero entra en la órbita de un seductor profesional y descubre que cada gesto amable puede ser parte de una estafa. El juego se vuelve cada vez más peligroso cuando los planes de varios embaucadores empiezan a cruzarse.",
+	"year": 2023,
+	"releaseDate": "2023-02-17",
+	"reviewPublishedAt": "2026-08-25",
+	"audienceRating": "+13",
+	"category": "Crimen",
+	"genres": [
+		"Crimen",
+		"Drama",
+		"Misterio"
 	],
-	"related": [
-		"caminando-entre-las-tumbas-2014",
-		"rio-mistico-2003",
-		"los-angeles-al-desnudo-1997",
-		"el-demonio-vestido-de-azul-1995"
-	]
-},
-  "review": "Benjamin Caron arma un rompecabezas de estafas con departamentos elegantes, identidades cambiantes y una ciudad donde todos parecen estar vendiendo algo. La película disfruta sus giros y encuentra una energía liviana en la competencia entre tramposos, mientras Julianne Moore y Sebastian Stan le dan al duelo central una mezcla de cálculo y deseo. No todas las sorpresas tienen el mismo peso y el mecanismo se nota antes de tiempo, pero el reparto sostiene el entretenimiento y el diseño visual le pone brillo a una historia que sabe que está jugando con las convenciones del thriller de lujo.",
-  "isPremiere": false,
-  "premiereLabel": ""
+	"subgenres": [],
+	"country": "US",
+	"isArgentinian": false,
+	"poster": "assets/posters/2023/embaucadores-2023.webp",
+	"screenshots": [],
+	"trailerYoutubeId": "X5kSYHYEnB0",
+	"releasePlatform": "Apple TV",
+	"director": "Benjamin Caron",
+	"mainCast": [
+		"Julianne Moore",
+		"Sebastian Stan",
+		"Justice Smith",
+		"Briana Middleton",
+		"John Lithgow"
+	],
+	"productionCompany": "Apple Original Films, Picturestart, New Regency",
+	"verdict": "zafa",
+	"verdictLabel": "ZAFA",
+	"awards": {
+		"wins": []
+	},
+	"runtimeMinutes": 116,
+	"editorial": {
+		"becauseYouLiked": [
+			"vicio-propio-2014",
+			"el-halcon-maltes-1941"
+		],
+		"related": [
+			"caminando-entre-las-tumbas-2014",
+			"rio-mistico-2003",
+			"los-angeles-al-desnudo-1997",
+			"el-demonio-vestido-de-azul-1995"
+		]
+	},
+	"review": "Benjamin Caron arma un rompecabezas de estafas con departamentos elegantes, identidades cambiantes y una ciudad donde todos parecen estar vendiendo algo. La película disfruta sus giros y encuentra una energía liviana en la competencia entre tramposos, mientras Julianne Moore y Sebastian Stan le dan al duelo central una mezcla de cálculo y deseo. No todas las sorpresas tienen el mismo peso y el mecanismo se nota antes de tiempo, pero el reparto sostiene el entretenimiento y el diseño visual le pone brillo a una historia que sabe que está jugando con las convenciones del thriller de lujo.",
+	"isPremiere": false,
+	"premiereLabel": ""
 }

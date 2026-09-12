@@ -7,40 +7,70 @@
 	"reviewPublishedAt": "2026-08-09",
 	"audienceRating": "+15",
 	"category": "Drama",
-	"genres": ["Drama", "Historia", "Guerra", "Bélica"],
+	"genres": [
+		"Drama",
+		"Historia",
+		"Guerra",
+		"Bélica"
+	],
 	"subgenres": [],
-	"country": "Francia, Polonia, Alemania, Reino Unido",
+	"country": "FR, GB",
 	"isArgentinian": false,
 	"poster": "assets/posters/2002/el-pianista-2002.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "og9hFxxdSOg",
 	"releasePlatform": "Otras plataformas",
 	"director": "Roman Polanski",
-	"mainCast": ["Adrien Brody", "Thomas Kretschmann", "Frank Finlay", "Emilia Fox"],
+	"mainCast": [
+		"Adrien Brody",
+		"Thomas Kretschmann",
+		"Frank Finlay",
+		"Emilia Fox"
+	],
 	"productionCompany": "R.P. Productions, Studio Babelsberg, Runteam",
 	"verdict": "recomendada",
 	"verdictLabel": "OBRA MAESTRA",
 	"awards": {
 		"wins": [
-			{ "award": "oscar", "category": "Mejor director", "recipient": "Roman Polanski", "year": 2003 },
-			{ "award": "oscar", "category": "Mejor actor", "recipient": "Adrien Brody", "year": 2003 },
-			{ "award": "oscar", "category": "Mejor guion adaptado", "recipient": "Ronald Harwood", "year": 2003 },
-			{ "award": "cannes", "category": "Palma de Oro", "recipient": "Roman Polanski", "year": 2002 }
+			{
+				"award": "oscar",
+				"category": "Mejor director",
+				"recipient": "Roman Polanski",
+				"year": 2003
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor actor",
+				"recipient": "Adrien Brody",
+				"year": 2003
+			},
+			{
+				"award": "oscar",
+				"category": "Mejor guion adaptado",
+				"recipient": "Ronald Harwood",
+				"year": 2003
+			},
+			{
+				"award": "cannes",
+				"category": "Palma de Oro",
+				"recipient": "Roman Polanski",
+				"year": 2002
+			}
 		]
 	},
 	"runtimeMinutes": 150,
 	"editorial": {
-	"becauseYouLiked": [
-		"k-19-the-widowmaker-2002",
-		"war-horse-2011"
-	],
-	"related": [
-		"lincoln-2012",
-		"the-post-2017",
-		"la-delgada-linea-roja-1998",
-		"michael-collins-1996"
-	]
-},
+		"becauseYouLiked": [
+			"k-19-the-widowmaker-2002",
+			"war-horse-2011"
+		],
+		"related": [
+			"lincoln-2012",
+			"the-post-2017",
+			"la-delgada-linea-roja-1998",
+			"michael-collins-1996"
+		]
+	},
 	"review": "Władysław Szpilman no es presentado como un héroe de guerra sino como un músico que intenta seguir vivo, y esa elección vuelve más devastador cada silencio. Roman Polanski filma el gueto y sus ruinas sin convertir el sufrimiento en espectáculo, mientras Adrien Brody deja que el cuerpo cuente el hambre, el miedo y el aislamiento. La película tiene una distancia fría que a veces duele, pero también evita fabricar consuelo barato. La actuación ganó el centro de la conversación crítica y es fácil entenderlo: la mirada perdida de Brody sostiene una historia histórica enorme desde una escala íntima.",
 	"isPremiere": false,
 	"premiereLabel": ""

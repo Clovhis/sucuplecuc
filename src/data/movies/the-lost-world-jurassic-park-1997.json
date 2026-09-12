@@ -9,7 +9,7 @@
 		"Ciencia ficción",
 		"Acción & Aventura"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"poster": "assets/posters/1997/the-lost-world-jurassic-park-1997.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "KI4FMhFCU7c",
@@ -28,19 +28,20 @@
 	},
 	"runtimeMinutes": 129,
 	"editorial": {
-	"becauseYouLiked": [
-		"jurassic-park-1993",
-		"a-i-artificial-intelligence-2001"
-	],
-	"related": [
-		"minority-report-2002",
-		"war-of-the-worlds-2005",
-		"e-t-the-extra-terrestrial-1982",
-		"ready-player-one-2018"
-	]
-},
+		"becauseYouLiked": [
+			"jurassic-park-1993",
+			"a-i-artificial-intelligence-2001"
+		],
+		"related": [
+			"minority-report-2002",
+			"war-of-the-worlds-2005",
+			"e-t-the-extra-terrestrial-1982",
+			"ready-player-one-2018"
+		]
+	},
 	"review": "The Lost World deja la fascinación científica de la primera y apuesta por una expedición más oscura, con cazadores, campamentos y dinosaurios que ya no parecen una maravilla segura. Spielberg maneja muy bien el suspenso físico, sobre todo cuando los personajes quedan expuestos en campo abierto o cuelgan sobre el vacío. Jeff Goldblum conserva su ironía, aunque la historia le da menos material que antes y varias subtramas no terminan de cuajar. La recta final en San Diego divide aguas, pero los grandes ataques todavía muestran oficio de sobra. No iguala al original, aunque tampoco es una secuela descartable.",
-  "synopsis": "Cuatro años después de Jurassic Park, Ian Malcolm viaja a Isla Sorna para documentar dinosaurios en libertad, pero una expedición rival pone en riesgo tanto a los animales como a los visitantes.",
+	"synopsis": "Cuatro años después de Jurassic Park, Ian Malcolm viaja a Isla Sorna para documentar dinosaurios en libertad, pero una expedición rival pone en riesgo tanto a los animales como a los visitantes.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-09"
+	"reviewPublishedAt": "2026-03-09",
+	"isArgentinian": false
 }

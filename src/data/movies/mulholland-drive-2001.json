@@ -26,17 +26,17 @@
 	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 147,
 	"editorial": {
-	"becauseYouLiked": [
-		"vellut-blau-1986",
-		"shutter-island-2010"
-	],
-	"related": [
-		"enemy-2013",
-		"desaparecida-1988",
-		"impacto-1981",
-		"vertigo-1958"
-	]
-},
+		"becauseYouLiked": [
+			"vellut-blau-1986",
+			"shutter-island-2010"
+		],
+		"related": [
+			"enemy-2013",
+			"desaparecida-1988",
+			"impacto-1981",
+			"vertigo-1958"
+		]
+	},
 	"awards": {
 		"wins": [
 			{
@@ -53,5 +53,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }

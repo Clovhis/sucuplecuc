@@ -12,7 +12,7 @@
 	"subgenres": [
 		"Coming of Age"
 	],
-	"country": "Estados Unidos",
+	"country": "US",
 	"audienceRating": "+13",
 	"runtimeMinutes": 111,
 	"poster": "assets/posters/2001/ghost-world-2001.webp",
@@ -36,17 +36,17 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"the-breakfast-club-1985",
-		"supersalidos-2007"
-	],
-	"related": [
-		"nick-y-norah-una-noche-de-musica-y-amor-2008",
-		"lady-bird-2017",
-		"marianela-y-el-cadaver-2024",
-		"fue-la-mano-de-dios-2021"
-	]
-},
+		"becauseYouLiked": [
+			"the-breakfast-club-1985",
+			"supersalidos-2007"
+		],
+		"related": [
+			"nick-y-norah-una-noche-de-musica-y-amor-2008",
+			"lady-bird-2017",
+			"marianela-y-el-cadaver-2024",
+			"fue-la-mano-de-dios-2021"
+		]
+	},
 	"isPremiere": false,
 	"premiereLabel": ""
 }

@@ -27,17 +27,17 @@
 	"verdictLabel": "RECOMENDADA",
 	"runtimeMinutes": 118,
 	"editorial": {
-	"becauseYouLiked": [
-		"scanners-1981",
-		"existenz-1999"
-	],
-	"related": [
-		"the-brood-1979",
-		"inseparables-1988",
-		"cabeza-borradora-1977",
-		"la-piel-que-habito-2011"
-	]
-},
+		"becauseYouLiked": [
+			"scanners-1981",
+			"existenz-1999"
+		],
+		"related": [
+			"the-brood-1979",
+			"inseparables-1988",
+			"cabeza-borradora-1977",
+			"la-piel-que-habito-2011"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -47,5 +47,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Apple TV",
-	"country": "Canadá"
+	"country": "CA",
+	"isArgentinian": false
 }

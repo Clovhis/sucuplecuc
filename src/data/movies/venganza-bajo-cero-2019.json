@@ -7,16 +7,26 @@
 	"reviewPublishedAt": "2026-08-23",
 	"audienceRating": "+16",
 	"category": "Crimen",
-	"genres": ["Crimen", "Accion", "Drama"],
+	"genres": [
+		"Crimen",
+		"Accion",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2019/venganza-bajo-cero-2019.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "0phuNQQ_gHI",
 	"releasePlatform": "Netflix",
 	"director": "Hans Petter Moland",
-	"mainCast": ["Liam Neeson", "Laura Dern", "Emmy Rossum", "Tom Bateman", "Tom Jackson"],
+	"mainCast": [
+		"Liam Neeson",
+		"Laura Dern",
+		"Emmy Rossum",
+		"Tom Bateman",
+		"Tom Jackson"
+	],
 	"productionCompany": "Summit Entertainment, StudioCanal",
 	"verdict": "zafa",
 	"verdictLabel": "SE DEJA VER",
@@ -25,17 +35,17 @@
 	},
 	"runtimeMinutes": 119,
 	"editorial": {
-	"becauseYouLiked": [
-		"el-precio-del-poder-1983",
-		"enemigos-publicos-2009"
-	],
-	"related": [
-		"el-robo-del-siglo-2020",
-		"bull-2021",
-		"dia-de-entrenamiento-2001",
-		"fuego-contra-fuego-1995"
-	]
-},
+		"becauseYouLiked": [
+			"el-precio-del-poder-1983",
+			"enemigos-publicos-2009"
+		],
+		"related": [
+			"el-robo-del-siglo-2020",
+			"bull-2021",
+			"dia-de-entrenamiento-2001",
+			"fuego-contra-fuego-1995"
+		]
+	},
 	"review": "Hans Petter Moland no hace una venganza de manual: deja que el duelo de Nels conviva con chistes secos, nombres ridículos y criminales que se toman demasiado en serio. Liam Neeson juega la tristeza con una seriedad útil, mientras el resto de la película se permite correrse hacia una violencia casi de fábula negra. El paisaje blanco ayuda a que cada encuentro parezca aislado del mundo. No todas las líneas secundarias tienen el mismo filo y la mezcla de tonos puede descolocar, pero su rareza es justamente lo que evita que sea otra copia de Taken.",
 	"isPremiere": false,
 	"premiereLabel": ""

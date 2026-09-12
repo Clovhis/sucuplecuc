@@ -4,7 +4,7 @@
 	"originalTitle": "Hit Man",
 	"year": 2024,
 	"category": "Comedia",
-  "poster": "assets/posters/2024/hit-man-2024.webp",
+	"poster": "assets/posters/2024/hit-man-2024.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "0g4cJ4NE8HA",
 	"releasePlatform": "Prime Video",
@@ -22,18 +22,20 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"thelma-la-venganza-nunca-ha-sido-tan-dulce-2024",
-		"los-justos-2024"
-	],
-	"related": [
-		"roofman-un-buen-ladron-2025",
-		"y-donde-esta-el-policia-2025",
-		"letras-robadas-2026",
-		"la-odisea-de-los-giles-2019"
-	]
-},
+		"becauseYouLiked": [
+			"thelma-la-venganza-nunca-ha-sido-tan-dulce-2024",
+			"los-justos-2024"
+		],
+		"related": [
+			"roofman-un-buen-ladron-2025",
+			"y-donde-esta-el-policia-2025",
+			"letras-robadas-2026",
+			"la-odisea-de-los-giles-2019"
+		]
+	},
 	"synopsis": "Sigue a un contratista encubierto de la policía de Nueva Orleans que se hace pasar por un asesino a sueldo confiable mientras intenta salvar a una mujer necesitada.",
 	"audienceRating": "+13",
-	"reviewPublishedAt": "2026-03-04"
+	"reviewPublishedAt": "2026-03-04",
+	"country": "US",
+	"isArgentinian": false
 }

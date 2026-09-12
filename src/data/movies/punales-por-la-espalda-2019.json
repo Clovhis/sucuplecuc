@@ -8,16 +8,27 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+13",
 	"category": "Drama",
-	"genres": ["Misterio & Suspense", "Comedia", "Crimen"],
+	"genres": [
+		"Misterio & Suspense",
+		"Comedia",
+		"Crimen"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2019/punales-por-la-espalda-2019.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "qGqiHJTsRkQ",
 	"releasePlatform": "Apple TV",
 	"director": "Rian Johnson",
-	"mainCast": ["Daniel Craig", "Chris Evans", "Ana de Armas", "Christopher Plummer", "Jamie Lee Curtis", "Michael Shannon"],
+	"mainCast": [
+		"Daniel Craig",
+		"Chris Evans",
+		"Ana de Armas",
+		"Christopher Plummer",
+		"Jamie Lee Curtis",
+		"Michael Shannon"
+	],
 	"productionCompany": "Lionsgate",
 	"verdict": "recomendada",
 	"verdictLabel": "RECOMENDADA",
@@ -25,16 +36,16 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"camino-a-la-perdicion-2002",
-		"testigo-en-peligro-1985"
-	],
-	"related": [
-		"fargo-secuestro-voluntario-1996",
-		"vicio-propio-2014",
-		"the-sugarland-express-1974",
-		"in-the-heat-of-the-night-1967"
-	]
-},
+		"becauseYouLiked": [
+			"camino-a-la-perdicion-2002",
+			"testigo-en-peligro-1985"
+		],
+		"related": [
+			"fargo-secuestro-voluntario-1996",
+			"vicio-propio-2014",
+			"the-sugarland-express-1974",
+			"in-the-heat-of-the-night-1967"
+		]
+	},
 	"review": "Rian Johnson entiende que un whodunit necesita tanto una trama ingeniosa como personajes con los que dé gusto desconfiar. Puñales por la espalda juega con la tradición de Agatha Christie, pero la vuelve una sátira filosa sobre privilegio, dinero y discursos familiares. El elenco se divierte sin convertir el misterio en una simple payasada: Daniel Craig encuentra un registro excéntrico, Ana de Armas sostiene el centro emocional y Christopher Plummer domina incluso desde una presencia acotada pero decisiva. Hay giros de más y algún remate demasiado subrayado, aunque el ritmo, la puesta y el placer de armar el rompecabezas funcionan de punta a punta."
 }

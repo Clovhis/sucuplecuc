@@ -8,21 +8,41 @@
 	"reviewPublishedAt": "2026-08-24",
 	"audienceRating": "+18",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama"],
+	"genres": [
+		"Comedia",
+		"Drama"
+	],
 	"subgenres": [],
-	"country": "Estados Unidos",
+	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/1970/hola-mama-1970.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "joIXI9VWZlE",
 	"releasePlatform": "Otras plataformas",
 	"director": "Brian De Palma",
-	"mainCast": ["Robert De Niro", "Allen Garfield", "Charles Durning"],
+	"mainCast": [
+		"Robert De Niro",
+		"Allen Garfield",
+		"Charles Durning"
+	],
 	"productionCompany": "Sigma III Corporation",
 	"verdict": "zafa",
 	"verdictLabel": "Zafa",
-	"awards": {"wins": []},
-	"editorial": {"becauseYouLiked":["la-cortina-de-humo-1997","the-king-of-comedy-1982"],"related":["tootsie-1982","perdona-que-te-moleste-2018","el-becario-2015","bananas-1971"]},
+	"awards": {
+		"wins": []
+	},
+	"editorial": {
+		"becauseYouLiked": [
+			"la-cortina-de-humo-1997",
+			"the-king-of-comedy-1982"
+		],
+		"related": [
+			"tootsie-1982",
+			"perdona-que-te-moleste-2018",
+			"el-becario-2015",
+			"bananas-1971"
+		]
+	},
 	"review": "Hola, mamá tiene la energía de una película que quiere probar hasta dónde puede empujar al espectador antes de que abandone la sala. De Palma usa la cámara dentro de la cámara para mezclar comedia negra, sátira mediática y una mirada incómoda sobre el deseo de observar a los demás. Robert De Niro encuentra en Jon Rubin una mezcla extraña de ingenuidad y oportunismo, un personaje que parece estar jugando a la provocación hasta que la realidad le devuelve el golpe. No todo el experimento conserva la misma fuerza y algunos desvíos se sienten caprichosos, pero su inventiva formal sigue siendo contagiosa. Es una rareza de culto para entrar con paciencia y salir con varias imágenes dando vueltas.",
 	"runtimeMinutes": 87
 }

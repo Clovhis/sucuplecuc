@@ -23,17 +23,17 @@
 	"verdictLabel": "OBRA MAESTRA",
 	"runtimeMinutes": 81,
 	"editorial": {
-	"becauseYouLiked": [
-		"mutiny-on-the-bounty-1935",
-		"the-life-of-emile-zola-1937"
-	],
-	"related": [
-		"ben-hur-1959",
-		"la-patagonia-rebelde-1974",
-		"raging-bull-1980",
-		"gandhi-1982"
-	]
-},
+		"becauseYouLiked": [
+			"mutiny-on-the-bounty-1935",
+			"the-life-of-emile-zola-1937"
+		],
+		"related": [
+			"ben-hur-1959",
+			"la-patagonia-rebelde-1974",
+			"raging-bull-1980",
+			"gandhi-1982"
+		]
+	},
 	"awards": {
 		"wins": []
 	},
@@ -43,5 +43,6 @@
 	"isPremiere": false,
 	"premiereLabel": "",
 	"releasePlatform": "Otras plataformas",
-	"country": "Francia"
+	"country": "FR",
+	"isArgentinian": false
 }
