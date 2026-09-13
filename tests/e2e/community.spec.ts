@@ -26,7 +26,21 @@ test('movie discussion is a static route with a safe community state', async ({ 
 	const response = await page.goto('/comunidad/peliculas/akira-1988/', { waitUntil: 'domcontentloaded' });
 
 	expect(response?.ok()).toBeTruthy();
+	await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /index, follow/);
+	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+		'href',
+		'https://www.cineposta.com.ar/comunidad/peliculas/akira-1988/',
+	);
 	await expect(page.getByRole('heading', { name: 'Akira' })).toBeVisible();
 	await expect(page.locator('[data-community-comments-status]')).toHaveCount(1);
 	expect(pageErrors).toEqual([]);
+});
+
+test('the sitemap includes indexable movie discussions', async ({ page }) => {
+	const response = await page.goto('/sitemap.xml');
+
+	expect(response?.ok()).toBeTruthy();
+	await expect(page.locator('body')).toContainText(
+		'https://www.cineposta.com.ar/comunidad/peliculas/akira-1988/',
+	);
 });

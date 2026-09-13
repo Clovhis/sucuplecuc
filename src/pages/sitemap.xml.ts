@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { getMovieCommunityPath } from '../lib/community';
 import { getMoviePath, getMovies } from '../lib/movies';
 import { getPersonPath, getPersonProfiles, isPersonProfileIndexable } from '../lib/people';
 import {
@@ -50,6 +51,7 @@ export const GET: APIRoute = async () => {
 		{ pathname: PRIVACY_PATH },
 		...people.map((person) => ({ pathname: getPersonPath(person.slug) })),
 		...movies.map((movie) => ({ pathname: getMoviePath(movie.slug) })),
+		...movies.map((movie) => ({ pathname: getMovieCommunityPath(movie.slug) })),
 	];
 	const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries
 		.map((entry) => {
