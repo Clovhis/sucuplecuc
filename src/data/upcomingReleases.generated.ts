@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-12T08:50:12.388Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-14T10:07:50.868Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -40,7 +40,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "DIGGER",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=job8V254NAE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/b7PtCwsuMw84REQq15nmQgT9UXN.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10364-digger/"
 	},
 	{
