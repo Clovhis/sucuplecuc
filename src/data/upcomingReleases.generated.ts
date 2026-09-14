@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-14T10:07:50.868Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-14T20:59:49.821Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -18,6 +18,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=PAUEwUhAjzg",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/3o7t1gF0wbXAtELCkIcYyPXoIxA.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10511-el-arbol-magico/"
+	},
+	{
+		"slug": "avengers-endgame",
+		"title": "Avengers: Endgame",
+		"releaseDate": "2026-09-24",
+		"videoUrl": "https://www.youtube.com/watch?v=L2NAh3CIdig",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/5906-avengers-endgame/"
 	},
 	{
 		"slug": "the-get-out",
@@ -66,29 +74,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10217-street-fighter/"
-	},
-	{
-		"slug": "the-hunger-games",
-		"title": "Los Juegos del Hambre",
-		"releaseDate": "2026-10-15",
-		"videoUrl": "https://www.youtube.com/watch?v=qoUT7q2iTbQ",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/3sndNmvdF0R8AeyCmVoNv8LKtNy.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/3972-los-juegos-del-hambre/"
-	},
-	{
-		"slug": "the-hunger-games-catching-fire",
-		"title": "Los Juegos del Hambre: En llamas",
-		"releaseDate": "2026-10-15",
-		"videoUrl": "https://www.youtube.com/watch?v=zoKj7TdJk98",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/eHaazLxM5LRMh0ySkVy7SK6wUWt.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4386-los-juegos-del-hambre-en-llamas/"
-	},
-	{
-		"slug": "the-hunger-games-mockingjay-part-1",
-		"title": "Los Juegos del Hambre: Sinsajo Parte 1",
-		"releaseDate": "2026-10-15",
-		"videoUrl": "https://www.youtube.com/watch?v=IXshQ5mv1K8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4387-los-juegos-del-hambre-sinsajo-parte-1/"
 	}
 ];

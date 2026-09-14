@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-12. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-14. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2198
+Total de peliculas: 2199
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -100,6 +100,7 @@ Total de peliculas: 2198
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | KATSEYE: Wild Hearts | katseye-wild-hearts-2026 | Musical | Otras plataformas | ATP |
 | 2026 | La ambición de los Savage | la-ambicion-de-los-savage-2026 | Comedia | Apple TV | +16 |
+| 2026 | La apuesta más alta | la-apuesta-mas-alta-2026 | Thriller | Paramount Plus | +17 |
 | 2026 | La asistente de la morgue | la-asistente-de-la-morgue-2026 | Terror | Otras plataformas | +17 |
 | 2026 | La Boca del Diablo | la-boca-del-diablo-2026 | Terror | Prime Video | +16 |
 | 2026 | La caja azul | la-caja-azul-2026 | Thriller | Prime Video | +16 |
