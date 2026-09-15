@@ -10982,7 +10982,10 @@ const bulkCompletionProfiles = {
 			slug: 'michael-j-fox',
 			name: 'Michael J. Fox',
 			headline: 'Icono total de los ochenta, inseparable de la aventura pop y del carisma comico que hizo enorme a Volver al futuro.',
-			awards: [{ label: 'Golden Globe', category: 'Mejor actor en serie de comedia', work: 'Spin City', year: 2000 }],
+			awards: [
+				{ label: 'Golden Globe', category: 'Mejor actor en serie de comedia', work: 'Spin City', year: 2000 },
+				{ label: 'Premio Humanitario Bob Hope', category: 'Reconocimiento especial de la Television Academy', year: 2026 },
+			],
 			knownFor: ['back-to-the-future-1985', 'back-to-the-future-part-ii-1989', 'back-to-the-future-part-iii-1990'],
 		},
 		{

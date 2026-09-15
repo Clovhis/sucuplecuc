@@ -121,7 +121,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Hong Kong',
 		headline: 'Actor hongkonés de mirada magnética, capaz de sostener romance, policial, wuxia y superproducción con la misma densidad.',
 		spotlight: 'Su actuación suele trabajar desde lo que el personaje calla: una inclinación de cabeza o un silencio pueden cargar toda la escena.',
-		awards: [],
+		awards: [{ label: 'Festival de Cannes', category: 'Mejor actor', work: 'Deseando amar', year: 2000 }],
 		knownFor: ['chungking-express-1994', 'deseando-amar-2000', 'hard-boiled-1992', 'hero-2002'],
 		editorialBiography: [
 			'Tony Leung Chiu-wai es una de las caras centrales del cine de Hong Kong y un intérprete especialmente asociado a la sensibilidad de Wong Kar-wai. En Chungking Express y Deseando amar trabaja el deseo desde la distancia, el gesto retenido y la imposibilidad de decir a tiempo lo que importa. En Hard Boiled y Hero aparece otra dimensión: precisión física, autoridad y una presencia capaz de ordenar el movimiento.',
@@ -267,7 +267,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Ely, Cambridgeshire, Inglaterra',
 		headline: 'Actor australiano de enorme elasticidad, especialmente valioso para personajes que esconden una segunda versión de sí mismos.',
 		spotlight: 'Pearce puede parecer transparente y confiable hasta que una mínima fisura cambia la lectura de toda la escena.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor de reparto en miniserie o telefilme', work: 'Mildred Pierce', year: 2011 }],
 		knownFor: ['la-propuesta-2005', 'los-angeles-al-desnudo-1997', 'memento-2000', 'the-brutalist-2024'],
 		editorialBiography: [
 			'Guy Pearce pasó de la televisión australiana al cine internacional con una capacidad muy concreta para transformar la identidad de sus personajes. Los Ángeles al desnudo lo ubicó dentro del policial clásico; Memento le pidió construir una actuación atravesada por la pérdida de memoria, donde cada gesto podía tener una explicación distinta según el orden de la historia.',
@@ -295,7 +295,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Chesterfield, Derbyshire, Inglaterra',
 		headline: 'Actor británico de registro extraordinario, capaz de volver inolvidable un personaje frágil, monstruoso, elegante o condenado.',
 		spotlight: 'Su voz tenía una cualidad narrativa única: incluso cuando hablaba poco, parecía cargar una historia completa detrás de cada palabra.',
-		awards: [],
+		awards: [{ label: 'BAFTA', category: 'Mejor actor', work: 'El hombre elefante', year: 1981 }],
 		knownFor: ['alien-1979', 'contacto-1997', 'el-hombre-elefante-1980', 'v-de-vendetta-2005'],
 		editorialBiography: [
 			'John Hurt trabajó con una libertad poco común entre el cine de autor, el terror, la ciencia ficción y el espectáculo popular. Alien lo convirtió en una presencia inolvidable desde una escena que todavía se recuerda por su violencia; El hombre elefante, en cambio, le pidió construir humanidad desde el cuerpo oculto y la mirada de los demás.',
@@ -309,7 +309,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Brooklyn, Nueva York, Estados Unidos',
 		headline: 'Actor de carácter y director de mirada singular, capaz de volver complejos a personajes nerviosos, orgullosos o aparentemente comunes.',
 		spotlight: 'Su comicidad siempre conserva algo de peligro: una frase demasiado enfática puede revelar un mundo entero de inseguridades.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor invitado en serie de comedia', work: 'Monk', year: 2004 }],
 		knownFor: ['barton-fink-1991', 'do-the-right-thing-1989', 'muerte-entre-las-flores-1990', 'the-color-of-money-1986'],
 		editorialBiography: [
 			'John Turturro construyó una filmografía donde el gesto raro nunca es un adorno. En Do the Right Thing y Muerte entre las flores trabaja dentro de universos muy precisos; Barton Fink le permite convertir la ansiedad creativa en una presencia física, incómoda y profundamente cómica.',
@@ -366,7 +366,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Westminster, Londres, Inglaterra',
 		headline: 'Actriz de inteligencia serena, capaz de combinar aventura, romance y ambigüedad moral con una presencia muy concreta.',
 		spotlight: 'Su elegancia nunca es decorativa: suele esconder una voluntad firme y una capacidad para cambiar el centro de gravedad de la historia.',
-		awards: [],
+		awards: [{ label: 'Oscar', category: 'Mejor actriz de reparto', work: 'El jardinero fiel', year: 2006 }],
 		knownFor: ['constantine-2005', 'la-favorita-2018', 'la-fuente-de-la-vida-2006', 'langosta-2015'],
 		editorialBiography: [
 			'Rachel Weisz puede entrar en una película de fantasía, como Constantine, y sostenerla desde una emoción reconocible. En La fuente de la vida y La langosta trabaja con mundos más extraños, donde el amor y la pérdida necesitan una actuación contenida para no volverse explicación.',
@@ -542,7 +542,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Nueva York, Nueva York, Estados Unidos',
 		headline: 'Ícono del cine clásico, dueño de una voz seca y una vulnerabilidad escondida detrás de la máscara del profesional cínico.',
 		spotlight: 'Su dureza nunca cancela el romanticismo: a menudo parece proteger una esperanza que no se permite nombrar.',
-		awards: [],
+		awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'La reina de África', year: 1952 }],
 		knownFor: ['casablanca-1943', 'el-halcon-maltes-1941', 'el-sueno-eterno-1946'],
 		editorialBiography: [
 			'Humphrey Bogart convirtió al hombre duro en una figura llena de contradicciones. En Casablanca el cinismo se enfrenta con la memoria y la decisión moral; en El halcón maltés y El sueño eterno, la inteligencia parece el único escudo contra un mundo corrupto.',
@@ -571,7 +571,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Indiana, Pensilvania, Estados Unidos',
 		headline: 'Estrella clásica de voz quebrada y humanidad transparente, capaz de revelar obsesión detrás de la amabilidad.',
 		spotlight: 'Su timidez aparente hace más inquietantes sus cambios: cuando Stewart pierde el equilibrio, la película también parece inclinarse.',
-		awards: [],
+		awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'The Philadelphia Story', year: 1941 }],
 		knownFor: ['la-ventana-indiscreta-1954', 'vertigo-1958', 'you-can-t-take-it-with-you-1938'],
 		editorialBiography: [
 			'James Stewart hizo de la honestidad una superficie dramática muy poderosa. En La ventana indiscreta observa el mundo desde una limitación física; en Vértigo transforma esa curiosidad en obsesión, deseo y una necesidad de controlar la imagen de otra persona.',
@@ -790,7 +790,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'Hollywood, California, Estados Unidos',
 		headline: 'Actor de enorme control tonal, capaz de transformar la comedia doméstica en drama moral y amenaza.',
 		spotlight: 'Su rostro puede parecer corriente hasta que una decisión lo cambia: entonces aparece todo lo que el personaje venía ocultando.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor en serie dramática', work: 'Breaking Bad', year: 2008 }],
 		knownFor: ['argo-2012', 'drive-2011'],
 		editorialBiography: [
 			'Bryan Cranston construyó durante años una carrera de actor de carácter antes de que el drama televisivo revelara su capacidad para cambiar de escala. En Argo y Drive usa esa experiencia para aportar ironía, método y peligro a personajes que no necesitan demasiadas explicaciones.',
@@ -896,7 +896,7 @@ const famousProfileSeeds: FamousProfileSeed[] = [
 		birthPlace: 'New Brunswick, Nueva Jersey, Estados Unidos',
 		headline: 'Actor y productor de presencia elegante, especialmente eficaz como hombre de poder cuando el control empieza a resquebrajarse.',
 		spotlight: 'Su aplomo tiene una tensión interna: parece dominar la situación, pero la película siempre encuentra el precio de esa seguridad.',
-		awards: [],
+		awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'Wall Street', year: 1988 }],
 		knownFor: ['ant-man-and-the-wasp-quantumania-2023'],
 		editorialBiography: [
 			'Michael Douglas heredó una tradición de estrella, pero la volvió más áspera y contemporánea. Incluso dentro de una aventura como Ant-Man and the Wasp: Quantumania, su autoridad funciona mejor cuando deja ver orgullo, cansancio y una necesidad de proteger a los demás.',
@@ -1056,7 +1056,7 @@ const additionalFamousProfileSeedsA: FamousProfileSeed[] = [
 		birthPlace: 'Goodmayes, Essex, Inglaterra',
 		headline: 'Actor británico de gran sutileza, capaz de volver inolvidables a científicos, hobbits, androides y hombres corrientes.',
 		spotlight: 'Su fragilidad aparente era una herramienta: Holm podía esconder una amenaza o una inteligencia enorme detrás de un cuerpo pequeño.',
-		awards: [],
+		awards: [{ label: 'BAFTA', category: 'Mejor actor de reparto', work: 'Carros de fuego', year: 1982 }],
 		knownFor: ['another-woman-1988', 'brazil-la-pelicula-1985', 'el-quinto-elemento-1997', 'ratatouille-2007'],
 		editorialBiography: [
 			'Ian Holm llevó al cine una técnica teatral sin volverla visible como artificio. En Brazil y El quinto elemento interpreta hombres atrapados dentro de sistemas absurdos; en Ratatouille presta una voz cálida a una autoridad que también sabe escuchar.',
@@ -1084,7 +1084,7 @@ const additionalFamousProfileSeedsA: FamousProfileSeed[] = [
 		birthPlace: 'Bronx, Nueva York, Estados Unidos',
 		headline: 'Actor, director y guionista de inteligencia cálida, capaz de usar la conversación como humor, defensa y conflicto moral.',
 		spotlight: 'Su simpatía nunca es ingenua: Alda puede hacer que una frase amable revele una estrategia o una decepción.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor de comedia', work: 'M*A*S*H', year: 1974 }],
 		knownFor: ['bridge-of-spies-2015', 'crimes-and-misdemeanors-1989', 'everyone-says-i-love-you-1996', 'manhattan-murder-mystery-1993'],
 		editorialBiography: [
 			'Alan Alda construyó personajes que piensan mientras hablan y hablan mientras intentan no mostrar miedo. En Manhattan Murder Mystery y Todos dicen I Love You usa el humor como una forma de observación; en Puente de espías, la cortesía convive con el cálculo político.',
@@ -1127,7 +1127,7 @@ const additionalFamousProfileSeedsA: FamousProfileSeed[] = [
 		birthPlace: 'Estocolmo, Suecia',
 		headline: 'Actor sueco de presencia física y registro inquietante, capaz de pasar del romance al terror y la sátira.',
 		spotlight: 'Su imagen de héroe clásico suele esconder una violencia o una incomodidad que la película va dejando salir.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor de reparto en miniserie o telefilme', work: 'Big Little Lies', year: 2018 }],
 		knownFor: ['el-hombre-del-norte-2022', 'godzilla-vs-kong-2021', 'pillion-2025', 'piscina-infinita-2023'],
 		editorialBiography: [
 			'Alexander Skarsgård usa su físico como una superficie que puede romperse. El hombre del norte lo lleva a un imaginario de saga y venganza; Godzilla vs. Kong lo coloca en el espectáculo, donde su tarea es mantener humana una escala descomunal.',
@@ -1215,7 +1215,7 @@ const additionalFamousProfileSeedsB: FamousProfileSeed[] = [
 		birthPlace: 'Bedford, Nueva York, Estados Unidos',
 		headline: 'Actriz de intensidad contenida, capaz de hacer que el silencio parezca una decisión y no una ausencia.',
 		spotlight: 'Sus personajes suelen observar antes de actuar, y esa espera acumula una tensión que la escena no puede ignorar.',
-		awards: [],
+		awards: [{ label: 'Festival de Cannes', category: 'Mejor actriz', work: 'Carol', year: 2015 }],
 		knownFor: ['a-nightmare-on-elm-street-2010', 'her-2013', 'the-social-network-2010'],
 		editorialBiography: [
 			'Rooney Mara trabaja desde la concentración. En La red social y Her participa de mundos atravesados por la tecnología, pero su presencia sigue siendo corporal, hecha de pausas, incomodidad y deseo de conectar.',
@@ -1271,7 +1271,7 @@ const additionalFamousProfileSeedsB: FamousProfileSeed[] = [
 		birthPlace: 'Hong Kong',
 		headline: 'Actriz hongkonesa de enorme elegancia y precisión, capaz de unir acción, melodrama y silencio con una presencia inolvidable.',
 		spotlight: 'Su movimiento cuenta tanto como su rostro: Cheung hace que el espacio revele lo que el personaje no se permite decir.',
-		awards: [],
+		awards: [{ label: 'Festival de Cannes', category: 'Mejor actriz', work: 'Clean', year: 2004 }],
 		knownFor: ['armas-invencibles-police-story-1985', 'deseando-amar-2000', 'hero-2002'],
 		editorialBiography: [
 			'Maggie Cheung puede sostener una pelea, un romance imposible o un gesto de duelo con la misma precisión. Police Story aprovecha su velocidad; Deseando amar la encuentra en el territorio de lo que se repite y nunca termina de decirse.',
@@ -1299,7 +1299,7 @@ const additionalFamousProfileSeedsB: FamousProfileSeed[] = [
 		birthPlace: 'Bury St Edmunds, Inglaterra',
 		headline: 'Actor británico de gran calidez y dureza, capaz de hacer que un hombre común parezca protagonista de una leyenda.',
 		spotlight: 'Su cuerpo pequeño no reducía su presencia: Hoskins podía dominar una escena desde la voz, el temperamento y la mirada.',
-		awards: [],
+		awards: [{ label: 'BAFTA', category: 'Mejor actor', work: 'Mona Lisa', year: 1987 }],
 		knownFor: ['brazil-la-pelicula-1985', 'hook-1991', 'super-mario-bros-la-pelicula-1993'],
 		editorialBiography: [
 			'Bob Hoskins llevó una humanidad muy terrenal a mundos imposibles. En Brazil y Hook su reacción frente a lo fantástico funciona como ancla; incluso cuando la película se vuelve enorme, él conserva la lógica de alguien que tiene que resolver el problema concreto de hoy.',
@@ -1313,7 +1313,7 @@ const additionalFamousProfileSeedsB: FamousProfileSeed[] = [
 		birthPlace: 'Ashford, Kent, Inglaterra',
 		headline: 'Actor teatral de sutileza extraordinaria, capaz de volver inquietantes la amabilidad, la cortesía y el silencio.',
 		spotlight: 'Su suavidad nunca es simple: detrás de una voz baja puede haber cálculo, dolor o una imaginación enorme.',
-		awards: [],
+		awards: [{ label: 'Oscar', category: 'Mejor actor de reparto', work: 'El puente de los espías', year: 2016 }],
 		knownFor: ['bridge-of-spies-2015', 'el-sastre-de-la-mafia-2022', 'the-bfg-2016'],
 		editorialBiography: [
 			'Mark Rylance hace que escuchar parezca una acción dramática. En Puente de espías su calma organiza un conflicto de espionaje; en El gran gigante bonachón usa la voz y el cuerpo para volver tierno un personaje de escala fantástica.',
@@ -1344,7 +1344,7 @@ const additionalFamousProfileSeedsC: FamousProfileSeed[] = [
 		birthPlace: 'Vernal, Utah, Estados Unidos',
 		headline: 'Actor de inteligencia eléctrica, especialmente eficaz como hombre brillante que convierte la lucidez en una forma de peligro.',
 		spotlight: 'Su velocidad verbal parece una defensa: cuanto más habla, más claro se vuelve que hay algo que no quiere sentir.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor en miniserie o telefilme', work: 'Promise', year: 1987 }],
 		knownFor: ['casino-1995', 'contacto-1997', 'videodrome-1983'],
 		editorialBiography: [
 			'James Woods trabaja con una energía que puede ser encantadora o agotadora en la misma escena. Casino lo ubica dentro de un sistema criminal; Contacto y Videodrome aprovechan su capacidad para hacer que la inteligencia parezca un riesgo físico.',
@@ -1358,7 +1358,7 @@ const additionalFamousProfileSeedsC: FamousProfileSeed[] = [
 		birthPlace: 'Peekskill, Nueva York, Estados Unidos',
 		headline: 'Actor, director y guionista de enorme precisión, capaz de hacer inolvidable a un personaje cordial, cruel o excéntrico.',
 		spotlight: 'Su elegancia nunca es neutral: Tucci usa la cortesía para revelar deseo, peligro o una inteligencia que juega con los demás.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor en miniserie o telefilme', work: 'Winchell', year: 1999 }],
 		knownFor: ['conclave-2024', 'el-diablo-viste-a-la-moda-2-2026', 'the-terminal-2004'],
 		editorialBiography: [
 			'Stanley Tucci tiene el don de hacer que una escena parezca más inteligente sin reclamarla para sí. En El diablo viste a la moda y The Terminal trabaja con el ritmo de la conversación; Cónclave lo ubica en un mundo de poder, dudas y ceremonias.',
@@ -1572,7 +1572,7 @@ const additionalFamousProfileSeedsD: FamousProfileSeed[] = [
 		birthPlace: 'Grand Island, Nebraska, Estados Unidos',
 		headline: 'Estrella clásica de honestidad aparente, capaz de volver inquietante la distancia entre una cara confiable y una decisión moral.',
 		spotlight: 'Su serenidad parecía democrática hasta que el personaje revelaba cuánto poder podía contener.',
-		awards: [],
+		awards: [{ label: 'Oscar', category: 'Mejor actor', work: 'En el estanque dorado', year: 1982 }],
 		knownFor: ['12-angry-men-1957', 'hasta-que-llego-su-hora-1968'],
 		editorialBiography: [
 			'Henry Fonda convirtió la razón y la decencia en fuerzas dramáticas. 12 hombres en pugna lo presenta como alguien dispuesto a sostener una duda cuando todos quieren cerrar el caso; Hasta que llegó su hora subvierte esa confianza y la vuelve amenaza.',
@@ -1586,7 +1586,7 @@ const additionalFamousProfileSeedsD: FamousProfileSeed[] = [
 		birthPlace: 'Detroit, Míchigan, Estados Unidos',
 		headline: 'Actor de presencia confiable, capaz de hacer que la autoridad, la amistad y el peligro convivan sin demasiadas explicaciones.',
 		spotlight: 'Su calma parece práctica, no heroica; por eso el desastre se vuelve más concreto cuando el personaje decide actuar.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor en serie dramática', work: 'Picket Fences', year: 1993 }],
 		knownFor: ['alien-1979', 'contacto-1997'],
 		editorialBiography: [
 			'Tom Skerritt aporta una autoridad terrestre a películas que podrían volverse abstractas. En Alien forma parte de una tripulación que trabaja como un equipo real; en Contacto sostiene un mundo de científicos y decisiones políticas desde la experiencia.',

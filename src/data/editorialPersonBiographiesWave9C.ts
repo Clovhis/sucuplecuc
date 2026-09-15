@@ -2,12 +2,13 @@ export const researchedEditorialBiographiesWave9C = {
   'michael-j-fox': {
     editorialBiography: [
       'Nació en Edmonton, Alberta, en 1961 y se fogueó muy joven en la televisión canadiense antes de probar suerte en Los Ángeles. La sitcom Family Ties le dio una presencia popular como Alex P. Keaton, pero el salto que lo volvió inconfundible llegó cuando reemplazó a Eric Stoltz como Marty McFly en Volver al futuro. La energía nerviosa y el timing físico que llevó a ese personaje quedaron como marca de una generación.',
-      'En los ochenta sostuvo a la vez la serie y la trilogía, además de títulos como El secreto de mi éxito. A los 29 años recibió el diagnóstico de Parkinson; lo hizo público en 1998 y en 2000 creó la Michael J. Fox Foundation para financiar investigación. Desde entonces, actuación, escritura y activismo quedaron ligados en una carrera que siguió encontrando nuevas formas de estar en pantalla.',
+      'En los ochenta sostuvo la serie y la trilogía, además de El secreto de mi éxito. A los 29 años recibió el diagnóstico de Parkinson; lo hizo público en 1998 y en 2000 creó la Michael J. Fox Foundation para financiar investigación. El 14 de septiembre de 2026 la Television Academy le entregó el Premio Humanitario Bob Hope por esa labor. Desde entonces, actuación y activismo siguieron ligados.',
     ],
     referenceUrls: [
       'https://www.michaeljfox.org/bio/michael-j-fox',
       'https://www.michaeljfox.org/michaels-story',
       'https://apnews.com/article/6bdd5edf39c6ab279fbb676f4b55a156',
+      'https://www.televisionacademy.com/features/news/awards-news/78th-emmy-awards-release',
     ],
   },
   'michael-keaton': {

@@ -1,6 +1,6 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-12. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-15. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 555
 Total de vínculos de películas del catálogo: 3760
@@ -396,7 +396,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Michael Clarke Duncan | `michael-clarke-duncan` | /personas/michael-clarke-duncan/ | Actor | 3 | 7 |
 | Michael Douglas | `michael-douglas` | /personas/michael-douglas/ | Actor | 8 | 3 |
 | Michael Fassbender | `michael-fassbender` | /personas/michael-fassbender/ | Actor | 9 | 6 |
-| Michael J. Fox | `michael-j-fox` | /personas/michael-j-fox/ | Actor | 4 | 7 |
+| Michael J. Fox | `michael-j-fox` | /personas/michael-j-fox/ | Actor | 4 | 8 |
 | Michael Keaton | `michael-keaton` | /personas/michael-keaton/ | Actor | 12 | 7 |
 | Michael Shannon | `michael-shannon` | /personas/michael-shannon/ | Actor | 4 | 5 |
 | Michelle Pfeiffer | `michelle-pfeiffer` | /personas/michelle-pfeiffer/ | Actriz / Productora | 11 | 6 |

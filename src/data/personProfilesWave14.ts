@@ -108,7 +108,7 @@ const requestedProfileSeeds: RequestedProfileSeed[] = [
 		birthPlace: 'Chicago, Illinois, Estados Unidos',
 		headline: 'Actor de carácter que hizo de la autoridad, el desgaste y la amenaza contenida una marca reconocible del cine estadounidense.',
 		spotlight: 'Su presencia puede ordenar una escena o volverla incómoda: parece conocer las reglas del mundo incluso cuando está a punto de romperlas.',
-		awards: [],
+		awards: [{ label: 'Emmy', category: 'Mejor actor de reparto en miniserie o telefilme', work: 'Hatfields & McCoys', year: 2012 }],
 		knownFor: ['platoon-1986'],
 		editorialBiography: [
 			'Tom Berenger encontró uno de sus papeles decisivos en Pelotón, donde el sargento Barnes convierte la experiencia de combate en una lógica brutal y cada vez más difícil de justificar. Antes y después de esa película trabajó con igual soltura en dramas, thrillers, bélicos y comedias como The Big Chill, Major League y Sniper. Su especialidad no es sólo interpretar hombres duros: es mostrar el precio de esa dureza.',
