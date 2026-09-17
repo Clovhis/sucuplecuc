@@ -188,13 +188,14 @@ const editorialUpdatedLabel = movie.releaseDate
 			timeZone: 'UTC',
 		}).format(new Date(`${movie.releaseDate}T00:00:00Z`))
 	: '';
-const tenSecondRows = [
-	{ label: 'Veredicto', fact: tenSecondTake.verdict },
-	{ label: 'Qué es', fact: tenSecondTake.identity },
-	{ label: 'Ritmo', fact: tenSecondTake.pace },
-	{ label: 'Antes de darle play', fact: tenSecondTake.plan },
-	{ label: 'Intensidad', fact: tenSecondTake.intensity },
-];
+const tenSecondRows = tenSecondTake
+	? [
+			{ label: 'Qué vas a ver', value: tenSecondTake.whatToExpect },
+			{ label: 'Ritmo', value: tenSecondTake.pace },
+			{ label: 'Intensidad', value: tenSecondTake.intensity },
+			{ label: 'En la práctica', value: tenSecondTake.practicalContext },
+		]
+	: [];
 
 function getPersonProfileHref(profilePath?: string): string | undefined {
 	if (!profilePath) {
@@ -994,27 +995,41 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							<p class="movie-detail__audience-rating-value">{getAudienceRatingLabel(movie.audienceRating)}</p>
 						</section>
 					</div>
-					<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
-						<div class="movie-detail__ten-second-head">
-							<p class="movie-detail__ten-second-kicker">La Posta en 10 segundos</p>
-							<a href={METHODOLOGY_PATH}>Cómo evaluamos las pelis</a>
-						</div>
-						<p class="movie-detail__ten-second-intro">
-							Cinco señales rápidas para ubicarte: qué onda la peli, cuánto pide y con qué ánimo entra mejor.
-						</p>
-						<h2 id={`ten-second-${movie.slug}`} class="u-visually-hidden">La Posta en 10 segundos de {movie.title}</h2>
-						<dl class="movie-detail__ten-second-list">
-							{tenSecondRows.map((row) => (
-								<div class="movie-detail__ten-second-row">
-									<dt>{row.label}</dt>
-									<dd>
-										<span class="movie-detail__ten-second-value">{row.fact.value}</span>
-										{row.fact.detail && <span class="movie-detail__ten-second-detail">{row.fact.detail}</span>}
-									</dd>
+					{
+						tenSecondTake && (
+							<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
+								<div class="movie-detail__ten-second-head">
+									<div>
+										<p class="movie-detail__ten-second-kicker">La Posta en 10 segundos</p>
+										<h2 id={`ten-second-${movie.slug}`}>¿La miro?</h2>
+									</div>
+									<a href={METHODOLOGY_PATH}>Cómo evaluamos las pelis</a>
 								</div>
-							))}
-						</dl>
-					</section>
+								<div class="movie-detail__ten-second-verdict">
+									<p>Veredicto</p>
+									<strong>{tenSecondTake.verdict}</strong>
+								</div>
+								<dl class="movie-detail__ten-second-list">
+									{tenSecondRows.map((row) => (
+										<div class="movie-detail__ten-second-row">
+											<dt>{row.label}</dt>
+											<dd>{row.value}</dd>
+										</div>
+									))}
+								</dl>
+								<div class="movie-detail__ten-second-fit">
+									<div class="movie-detail__ten-second-fit-item movie-detail__ten-second-fit-item--yes">
+										<p>Te va a gustar si</p>
+										<span>{tenSecondTake.forFansOf}</span>
+									</div>
+									<div class="movie-detail__ten-second-fit-item movie-detail__ten-second-fit-item--no">
+										<p>Quizás no es para vos si</p>
+										<span>{tenSecondTake.notForYouIf}</span>
+									</div>
+								</div>
+							</section>
+						)
+					}
 				</section>
 			</div>
 		</section>

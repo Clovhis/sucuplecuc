@@ -563,11 +563,24 @@ function validateMovies(movies: Movie[]): void {
 					throw new Error(`Movie "${slug}" has invalid editorial.tenSecondTake.`);
 				}
 
-				for (const key of ['verdict', 'identity', 'lane', 'pace', 'subgenres', 'plan', 'intensity'] as const) {
+				const tenSecondTakeKeys = [
+					'verdict',
+					'whatToExpect',
+					'pace',
+					'intensity',
+					'practicalContext',
+					'forFansOf',
+					'notForYouIf',
+				] as const;
+				for (const key of tenSecondTakeKeys) {
 					const value = movie.editorial.tenSecondTake[key];
-					if (value !== undefined && (typeof value !== 'string' || value.trim().length === 0)) {
+					if (typeof value !== 'string' || value.trim().length === 0 || value.trim().length > 300) {
 						throw new Error(`Movie "${slug}" has invalid editorial.tenSecondTake.${key}.`);
 					}
+				}
+
+				if (Object.keys(movie.editorial.tenSecondTake).some((key) => !tenSecondTakeKeys.includes(key as (typeof tenSecondTakeKeys)[number]))) {
+					throw new Error(`Movie "${slug}" has unsupported editorial.tenSecondTake fields.`);
 				}
 			}
 		}

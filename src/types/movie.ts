@@ -19,21 +19,25 @@ export interface MovieAwards {
 	wins: MovieAwardWin[];
 }
 
-export interface MovieTenSecondTakeOverrides {
-	verdict?: string;
-	identity?: string;
-	lane?: string;
-	pace?: string;
-	subgenres?: string;
-	plan?: string;
-	intensity?: string;
+/**
+ * Micro-guía editorial escrita para esta película. No admite valores derivados
+ * de la ficha: cada campo es una conclusión original y específica.
+ */
+export interface MovieTenSecondTake {
+	verdict: string;
+	whatToExpect: string;
+	pace: string;
+	intensity: string;
+	practicalContext: string;
+	forFansOf: string;
+	notForYouIf: string;
 }
 
 export interface MovieEditorial {
 	runtimeComment?: string;
 	becauseYouLiked?: string[];
 	related?: string[];
-	tenSecondTake?: MovieTenSecondTakeOverrides;
+	tenSecondTake?: MovieTenSecondTake;
 }
 
 export interface Movie {

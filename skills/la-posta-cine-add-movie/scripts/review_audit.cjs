@@ -12,6 +12,26 @@ const MIN_UNDERDEVELOPED_WORDS = 70;
 const MIN_REVIEW_SENTENCES = 2;
 const MIN_SYNOPSIS_WORDS = 28;
 const MAX_SYNOPSIS_WORDS = 90;
+const TEN_SECOND_TAKE_FIELDS = [
+	'verdict',
+	'whatToExpect',
+	'pace',
+	'intensity',
+	'practicalContext',
+	'forFansOf',
+	'notForYouIf',
+];
+const TEN_SECOND_TAKE_GENERIC_MARKERS = [
+	'depende bastante de tu animo',
+	'sin pedirte media vida',
+	'tiene lo suyo',
+	'no vuela pero tampoco se queda clavada',
+	'mejor agarrarla con tiempo de sobra',
+	'resumen rapido para decidir',
+	'plan sin datos extra',
+	'entra bastante derecho desde el arranque',
+	'se deja ver liviana',
+];
 const MIN_DUPLICATE_SENTENCE_LENGTH = 55;
 const GENERATED_REVIEW_MARKERS = [
 	'tiene esta base narrativa',
@@ -113,6 +133,8 @@ function parseArgs(argv) {
 			args.root = argv[++index];
 		} else if (arg === '--candidate') {
 			args.candidates.push(argv[++index]);
+		} else if (arg === '--require-ten-second-take') {
+			args.requireTenSecondTake = true;
 		} else if (arg === '--help' || arg === '-h') {
 			args.help = true;
 		} else {
@@ -129,6 +151,7 @@ function usage() {
 			'Usage:',
 			'  node review_audit.cjs --root src/data/movies',
 			'  node review_audit.cjs --root src/data/movies --candidate src/data/movies/foo-2024.json',
+			'  node review_audit.cjs --root src/data/movies --require-ten-second-take',
 		].join('\n'),
 	);
 }
@@ -294,6 +317,66 @@ function buildOpenerPatternMap(entries) {
 	return openerMap;
 }
 
+function buildTenSecondTakeFieldMap(entries) {
+	const fieldMap = new Map();
+	for (const entry of entries) {
+		const take = entry.movie.editorial?.tenSecondTake;
+		if (!take || typeof take !== 'object') continue;
+		for (const field of TEN_SECOND_TAKE_FIELDS) {
+			const value = normalizeText(take[field]);
+			if (!value) continue;
+			const key = `${field}::${value}`;
+			fieldMap.set(key, [...(fieldMap.get(key) || []), entry.filePath]);
+		}
+	}
+	return fieldMap;
+}
+
+function getTenSecondTakeIssues(movie, fieldMap) {
+	const take = movie.editorial?.tenSecondTake;
+	if (!take || typeof take !== 'object' || Array.isArray(take)) {
+		return ['missing ten-second take'];
+	}
+
+	const issues = [];
+	const keys = Object.keys(take);
+	for (const field of TEN_SECOND_TAKE_FIELDS) {
+		const value = take[field];
+		const words = wordCount(value);
+		if (typeof value !== 'string' || !value.trim()) {
+			issues.push(`missing ten-second field :: ${field}`);
+			continue;
+		}
+		if (words < 5 || words > 60) issues.push(`thin-or-long ten-second field :: ${field} :: ${words} words`);
+		const normalized = normalizeText(value);
+		for (const marker of TEN_SECOND_TAKE_GENERIC_MARKERS) {
+			if (normalized.includes(marker)) issues.push(`generic ten-second marker :: ${field} :: ${marker}`);
+		}
+		const matchingFiles = [...new Set(fieldMap.get(`${field}::${normalized}`) || [])];
+		if (matchingFiles.length > 1) {
+			issues.push(`reused ten-second field :: ${field} :: ${matchingFiles.join(', ')}`);
+		}
+	}
+
+	for (const key of keys) {
+		if (!TEN_SECOND_TAKE_FIELDS.includes(key)) issues.push(`unsupported ten-second field :: ${key}`);
+	}
+
+	const normalizedValues = TEN_SECOND_TAKE_FIELDS.map((field) => normalizeText(take[field])).filter(Boolean);
+	if (new Set(normalizedValues).size !== normalizedValues.length) issues.push('repeated ten-second field within movie');
+	const allText = normalizedValues.join(' ');
+	const specificityTerms = [...new Set([movie.title, movie.originalTitle, movie.director, ...(movie.mainCast || [])]
+		.map((value) => normalizeText(value))
+		.filter((value) => value.length > 2))];
+	const specificityHits = specificityTerms.filter((term) => allText.includes(term));
+	if (specificityHits.length < 2) issues.push(`ten-second take lacks film-specific anchors :: ${specificityHits.length}/2`);
+	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
+	if (normalizedVerdictLabel && allText.includes(normalizedVerdictLabel)) {
+		issues.push('ten-second take repeats verdictLabel instead of explaining the judgement');
+	}
+	return issues;
+}
+
 function decorateMarker(marker, movie) {
 	if (!marker.includes('<title>')) {
 		return marker;
@@ -449,6 +532,7 @@ function main() {
 	const repeatedSentenceMap = buildRepeatedSentenceMap(corpus);
 	const longSentenceMap = buildLongSentenceMap(corpus);
 	const openerPatternMap = buildOpenerPatternMap(corpus);
+	const tenSecondTakeFieldMap = buildTenSecondTakeFieldMap(corpus);
 	const fullReviewMap = new Map();
 	const fullSynopsisMap = new Map();
 	const errors = [];
@@ -489,6 +573,17 @@ function main() {
 		const sentenceCount = rawSentenceCount(review);
 		const synopsis = String(movie.synopsis || '').trim();
 		const synopsisWords = wordCount(synopsis);
+		const tenSecondTakeIssues = getTenSecondTakeIssues(movie, tenSecondTakeFieldMap);
+		const requiresTenSecondTake = args.requireTenSecondTake || args.candidates.length > 0;
+		if (tenSecondTakeIssues.length > 0) {
+			for (const issue of tenSecondTakeIssues) {
+				if (issue === 'missing ten-second take' && !requiresTenSecondTake) {
+					warnings.push(`legacy ${issue} :: ${candidatePath}`);
+				} else {
+					errors.push(`${issue} :: ${candidatePath}`);
+				}
+			}
+		}
 
 		if (!review) {
 			errors.push(`missing review :: ${candidatePath}`);
