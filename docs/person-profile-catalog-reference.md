@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-15. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-17. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 555
-Total de vínculos de películas del catálogo: 3760
+Total de vínculos de películas del catálogo: 3763
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -35,7 +35,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Amy Adams | `amy-adams` | /personas/amy-adams/ | Actriz | 10 | 6 |
 | Ana de Armas | `ana-de-armas` | /personas/ana-de-armas/ | Actriz | 5 | 7 |
 | Andrea Del Boca | `andrea-del-boca` | /personas/andrea-del-boca/ | Actriz | 1 | 4 |
-| Andrew Garfield | `andrew-garfield` | /personas/andrew-garfield/ | Actor | 6 | 7 |
+| Andrew Garfield | `andrew-garfield` | /personas/andrew-garfield/ | Actor | 7 | 7 |
 | Andy Garcia | `andy-garcia` | /personas/andy-garcia/ | Actor | 5 | 3 |
 | Andy Muschietti | `andy-muschietti` | /personas/andy-muschietti/ | Director / Guionista | 3 | 4 |
 | Andy Serkis | `andy-serkis` | /personas/andy-serkis/ | Actor | 7 | 6 |
@@ -248,7 +248,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jack Black | `jack-black` | /personas/jack-black/ | Actor | 10 | 7 |
 | Jack Nicholson | `jack-nicholson` | /personas/jack-nicholson/ | Actor | 11 | 6 |
 | Jack Quaid | `jack-quaid` | /personas/jack-quaid/ | Actor | 2 | 7 |
-| Jackie Chan | `jackie-chan` | /personas/jackie-chan/ | Actor | 3 | 3 |
+| Jackie Chan | `jackie-chan` | /personas/jackie-chan/ | Actor | 4 | 3 |
 | Jacob Elordi | `jacob-elordi` | /personas/jacob-elordi/ | Actor | 4 | 7 |
 | Jake Gyllenhaal | `jake-gyllenhaal` | /personas/jake-gyllenhaal/ | Actor | 24 | 7 |
 | James Cameron | `james-cameron` | /personas/james-cameron/ | Director / Guionista / Productor | 8 | 5 |
@@ -451,7 +451,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Rafael Ferro | `rafael-ferro` | /personas/rafael-ferro/ | Actor | 2 | 5 |
 | Ralph Fiennes | `ralph-fiennes` | /personas/ralph-fiennes/ | Actor | 11 | 7 |
 | Rami Malek | `rami-malek` | /personas/rami-malek/ | Actor | 4 | 7 |
-| Rebecca Ferguson | `rebecca-ferguson` | /personas/rebecca-ferguson/ | Actriz | 5 | 7 |
+| Rebecca Ferguson | `rebecca-ferguson` | /personas/rebecca-ferguson/ | Actriz | 6 | 7 |
 | Rebecca Hall | `rebecca-hall` | /personas/rebecca-hall/ | Actriz | 6 | 7 |
 | Renate Reinsve | `renate-reinsve` | /personas/renate-reinsve/ | Actriz | 3 | 7 |
 | Rene Russo | `rene-russo` | /personas/rene-russo/ | Actriz | 7 | 4 |

@@ -214,6 +214,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "funes-un-gran-amor-1993"
   ],
   "andrew-garfield": [
+    "el-arbol-magico-2026",
     "silence-2016",
     "the-amazing-spider-man-2-2014",
     "the-amazing-spider-man-2012",
@@ -1986,6 +1987,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "novocaine-2025"
   ],
   "jackie-chan": [
+    "panda-plan-2-la-tribu-magica-2026",
     "escuadron-letal-2025",
     "karate-kid-legends-2025",
     "armas-invencibles-police-story-1985"
@@ -3721,6 +3723,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "pequenos-detalles-2021"
   ],
   "rebecca-ferguson": [
+    "el-arbol-magico-2026",
     "mercy-2026",
     "peaky-blinders-the-immortal-man-2026",
     "dune-part-two-2024",
