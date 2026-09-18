@@ -55,6 +55,7 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 						<span data-home-result-count-label>películas en catálogo</span>
 					</p>
 				</div>
+				<div class="home-results-tools__primary-filters">
 				<section class="home-genre-filter home-quick-filters" aria-labelledby="home-quick-filters-title">
 					<div class="home-genre-filter__heading">
 						<p id="home-quick-filters-title" class="home-genre-filter__label">Para elegir rápido</p>
@@ -66,35 +67,41 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="recommended" aria-pressed="false">👍 Recomendadas</button>
 					</div>
 				</section>
-				<div
-					class="home-results-tools__filters"
-					data-home-filter-carousel
-					role="region"
-					aria-label="Carrusel de filtros del catálogo"
-				>
-					<div class="home-results-tools__filter-column home-results-tools__filter-column--left">
-						<section class="home-genre-filter home-genre-filter--verdict" data-home-filter-panel="verdict">
-							<div class="home-genre-filter__heading">
-								<p class="home-genre-filter__label">Qué te pareció</p>
-								<p class="home-genre-filter__hint">Elegí uno o varios.</p>
-							</div>
-							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por valoración editorial">
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-absolute-cinema-chip aria-pressed="false">Absolute Cinema</button>
-								{verdictFilterOptions.map((option) => (
-									<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-verdict-chip data-home-verdict-id={option.id} aria-pressed="false">{option.id === 'basura_atomica' ? 'Basura' : option.label}</button>
-								))}
-							</div>
-							<label class="home-filter-select">
-								<span>Ordenar por</span>
-								<select data-home-sort aria-label="Ordenar películas">
-									<option value="newest">Más nuevas</option>
-									<option value="oldest">Más viejas</option>
-									<option value="most-recommended">Las que más recomendamos</option>
-									<option value="least-recommended">Las que menos recomendamos</option>
-									<option value="title">A-Z</option>
-								</select>
-							</label>
-						</section>
+				<section class="home-genre-filter home-genre-filter--verdict" data-home-filter-panel="verdict">
+					<div class="home-genre-filter__heading">
+						<p class="home-genre-filter__label">El veredicto de Cine Posta</p>
+						<p class="home-genre-filter__hint">Elegí uno o varios.</p>
+					</div>
+					<div class="home-genre-filter__chips" role="group" aria-label="Filtros por valoración editorial">
+						<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-absolute-cinema-chip aria-pressed="false">Absolute Cinema</button>
+						{verdictFilterOptions.map((option) => (
+							<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-verdict-chip data-home-verdict-id={option.id} aria-pressed="false">{option.id === 'basura_atomica' ? 'Basura' : option.label}</button>
+						))}
+					</div>
+					<label class="home-filter-select">
+						<span>Ordenar por</span>
+						<select data-home-sort aria-label="Ordenar películas">
+							<option value="newest">Más nuevas</option>
+							<option value="oldest">Más viejas</option>
+							<option value="most-recommended">Mejor valoradas</option>
+							<option value="least-recommended" hidden>Menos valoradas</option>
+							<option value="title">A-Z</option>
+						</select>
+					</label>
+				</section>
+				</div>
+				<details class="home-advanced-filters" data-home-advanced-filters>
+					<summary class="home-advanced-filters__summary">
+						<span class="home-advanced-filters__label" data-home-advanced-filter-label>Filtros avanzados</span>
+						<span class="home-advanced-filters__indicator" aria-hidden="true"></span>
+					</summary>
+					<div
+						class="home-results-tools__filters"
+						data-home-filter-carousel
+						role="region"
+						aria-label="Filtros avanzados del catálogo"
+					>
+						<div class="home-results-tools__filter-column home-results-tools__filter-column--left">
 						{
 							platformOptions.length > 0 && (
 								<section class="home-platform-filter" data-home-filter-panel="platform" data-home-platform-filter>
@@ -126,59 +133,32 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 								</section>
 							)
 						}
-						{
-							editorialFilterOptions.length > 0 && (
-								<section class="home-genre-filter home-genre-filter--editorial" data-home-filter-panel="editorial" data-home-editorial-filter>
+						<section class="home-genre-filter home-genre-filter--year" data-home-filter-panel="year">
 									<div class="home-genre-filter__heading">
-										<p class="home-genre-filter__label">Otros filtros</p>
+										<p class="home-genre-filter__label">De qué época</p>
+										<p class="home-genre-filter__hint">Podés combinar décadas o ir a un año puntual.</p>
 									</div>
-									<div class="home-genre-filter__chips" role="group" aria-label="Filtros editoriales">
-										{
-											editorialFilterOptions.map((genre) => (
-												<button
-													type="button"
-													class="home-genre-filter__chip home-genre-filter__chip--editorial"
-													data-home-genre-chip
-													data-home-genre-id={genre.id}
-													data-home-genre-kind="editorial"
-													data-filter-description={genre.description}
-													aria-label={genre.label}
-													aria-pressed="false"
-												>
-													<span class="home-genre-filter__chip-label">{genre.label}</span>
-												</button>
-											))
-										}
+									<div class="home-genre-filter__chips" role="group" aria-label="Filtros por década">
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="2020s" aria-pressed="false">2020s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="2010s" aria-pressed="false">2010s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="2000s" aria-pressed="false">2000s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1990s" aria-pressed="false">90s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1980s" aria-pressed="false">80s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1970s" aria-pressed="false">70s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1960s" aria-pressed="false">60s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1950s" aria-pressed="false">50s</button>
+										<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="before-1950" aria-pressed="false">Antes de 1950</button>
 									</div>
-								</section>
-							)
-						}
+									<label class="home-filter-select">
+										<span>O elegí un año</span>
+										<select data-home-specific-year aria-label="Elegí un año específico">
+											<option value="">Todos los años</option>
+											{specificYearOptions.map((year) => <option value={`year-${year}`}>{year}</option>)}
+										</select>
+									</label>
+						</section>
 					</div>
 					<div class="home-results-tools__filter-column home-results-tools__filter-column--right">
-						<section class="home-genre-filter home-genre-filter--year" data-home-filter-panel="year">
-							<div class="home-genre-filter__heading">
-								<p class="home-genre-filter__label">De qué época</p>
-								<p class="home-genre-filter__hint">Podés combinar décadas o ir a un año puntual.</p>
-							</div>
-							<div class="home-genre-filter__chips" role="group" aria-label="Filtros por década">
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="2020s" aria-pressed="false">2020s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="2010s" aria-pressed="false">2010s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="2000s" aria-pressed="false">2000s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1990s" aria-pressed="false">90s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1980s" aria-pressed="false">80s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1970s" aria-pressed="false">70s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1960s" aria-pressed="false">60s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="1950s" aria-pressed="false">50s</button>
-								<button type="button" class="home-genre-filter__chip home-genre-filter__chip--year" data-home-year-chip data-home-year-id="before-1950" aria-pressed="false">Antes de 1950</button>
-							</div>
-							<label class="home-filter-select">
-								<span>O elegí un año</span>
-								<select data-home-specific-year aria-label="Elegí un año específico">
-									<option value="">Todos los años</option>
-									{specificYearOptions.map((year) => <option value={`year-${year}`}>{year}</option>)}
-								</select>
-							</label>
-						</section>
 						<section class="home-genre-filter" data-home-filter-panel="genre" data-home-genre-filter>
 							<div class="home-genre-filter__heading">
 								<p class="home-genre-filter__label">Qué género pinta</p>
@@ -231,7 +211,39 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 								</section>
 							)
 						}
+						{
+							editorialFilterOptions.length > 0 && (
+								<section class="home-genre-filter home-genre-filter--editorial" data-home-filter-panel="editorial" data-home-editorial-filter>
+									<div class="home-genre-filter__heading">
+										<p class="home-genre-filter__label">Otros filtros</p>
+									</div>
+									<div class="home-genre-filter__chips" role="group" aria-label="Filtros editoriales">
+										{
+											editorialFilterOptions.map((genre) => (
+												<button
+													type="button"
+													class="home-genre-filter__chip home-genre-filter__chip--editorial"
+													data-home-genre-chip
+													data-home-genre-id={genre.id}
+													data-home-genre-kind="editorial"
+													data-filter-description={genre.description}
+													aria-label={genre.label}
+													aria-pressed="false"
+												>
+													<span class="home-genre-filter__chip-label">{genre.label}</span>
+												</button>
+											))
+										}
+									</div>
+								</section>
+							)
+						}
 					</div>
+					</div>
+				</details>
+				<div class="home-advanced-filters__active" data-home-advanced-active-filters hidden aria-live="polite">
+					<p class="sr-only">Filtros avanzados activos</p>
+					<div class="home-advanced-filters__active-list" data-home-advanced-active-filter-list></div>
 				</div>
 				<div
 					class="home-results-tools__active"
@@ -240,7 +252,7 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 					aria-live="polite"
 					aria-atomic="false"
 				>
-					<div class="home-results-tools__active-copy">
+					<div class="home-results-tools__active-copy" data-home-active-filter-copy>
 						<p class="home-results-tools__active-label">Filtros activos</p>
 						<div class="home-results-tools__active-list" data-home-active-filter-list></div>
 					</div>

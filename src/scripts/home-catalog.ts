@@ -125,7 +125,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const specificYearSelect = document.querySelector<HTMLSelectElement>('[data-home-specific-year]');
 	const sortSelect = document.querySelector<HTMLSelectElement>('[data-home-sort]');
 	const activeFiltersShell = document.querySelector<HTMLElement>('[data-home-active-filters]');
+	const activeFiltersCopy = document.querySelector<HTMLElement>('[data-home-active-filter-copy]');
 	const activeFiltersList = document.querySelector<HTMLElement>('[data-home-active-filter-list]');
+	const advancedFilters = document.querySelector<HTMLDetailsElement>('[data-home-advanced-filters]');
+	const advancedFilterLabel = document.querySelector<HTMLElement>('[data-home-advanced-filter-label]');
+	const advancedActiveFiltersShell = document.querySelector<HTMLElement>('[data-home-advanced-active-filters]');
+	const advancedActiveFiltersList = document.querySelector<HTMLElement>('[data-home-advanced-active-filter-list]');
 	const filterResetButton = document.querySelector<HTMLButtonElement>('[data-home-filter-reset]');
 	const resultCounter = document.querySelector<HTMLElement>('[data-home-result-counter]');
 	const resultCount = document.querySelector<HTMLElement>('[data-home-result-count]');
@@ -601,30 +606,49 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			: []),
 	];
 
+	const advancedFilterGroups = new Set(['genre', 'editorial', 'subgenre', 'platform', 'year']);
+
+	const createActiveFilterPill = (entry: { group: string; value: string; label: string }): HTMLButtonElement => {
+		const button = document.createElement('button');
+		button.type = 'button';
+		button.className = 'home-results-tools__active-pill';
+		button.dataset.homeRemoveFilter = entry.group;
+		button.dataset.homeRemoveFilterValue = entry.value;
+		button.setAttribute('aria-label', `Quitar ${entry.label}`);
+
+		const label = document.createElement('span');
+		label.textContent = entry.label;
+		const close = document.createElement('span');
+		close.textContent = '×';
+		close.setAttribute('aria-hidden', 'true');
+		button.append(label, close);
+		return button;
+	};
+
 	const renderActiveFilters = (): void => {
-		if (!(activeFiltersShell instanceof HTMLElement) || !(activeFiltersList instanceof HTMLElement)) return;
-
 		const activeFilters = getActiveFilterEntries();
-		activeFiltersList.replaceChildren();
+		const advancedEntries = activeFilters.filter((entry) => advancedFilterGroups.has(entry.group));
+		const visibleEntries = activeFilters.filter((entry) => !advancedFilterGroups.has(entry.group));
 
-		for (const entry of activeFilters) {
-			const button = document.createElement('button');
-			button.type = 'button';
-			button.className = 'home-results-tools__active-pill';
-			button.dataset.homeRemoveFilter = entry.group;
-			button.dataset.homeRemoveFilterValue = entry.value;
-			button.setAttribute('aria-label', `Quitar ${entry.label}`);
-
-			const label = document.createElement('span');
-			label.textContent = entry.label;
-			const close = document.createElement('span');
-			close.textContent = '×';
-			close.setAttribute('aria-hidden', 'true');
-			button.append(label, close);
-			activeFiltersList.appendChild(button);
+		if (advancedFilterLabel instanceof HTMLElement) {
+			advancedFilterLabel.textContent = advancedEntries.length > 0
+				? `Filtros avanzados · ${advancedEntries.length}`
+				: 'Filtros avanzados';
 		}
 
-		activeFiltersShell.hidden = activeFilters.length === 0;
+		if (advancedActiveFiltersShell instanceof HTMLElement && advancedActiveFiltersList instanceof HTMLElement) {
+			advancedActiveFiltersList.replaceChildren(...advancedEntries.map(createActiveFilterPill));
+			advancedActiveFiltersShell.hidden = advancedEntries.length === 0;
+		}
+
+		if (activeFiltersShell instanceof HTMLElement && activeFiltersList instanceof HTMLElement) {
+			activeFiltersList.replaceChildren(...visibleEntries.map(createActiveFilterPill));
+			activeFiltersShell.hidden = activeFilters.length === 0;
+			if (activeFiltersCopy instanceof HTMLElement) {
+				activeFiltersCopy.hidden = visibleEntries.length === 0;
+			}
+		}
+
 		if (filterResetButton instanceof HTMLButtonElement) {
 			filterResetButton.hidden = activeFilters.length === 0;
 		}
@@ -1513,7 +1537,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		});
 	}
 
-	activeFiltersList?.addEventListener('click', (event) => {
+	const removeActiveFilter = (event: Event): void => {
 		const target = event.target;
 		const removeButton = target instanceof Element
 			? target.closest<HTMLButtonElement>('[data-home-remove-filter]')
@@ -1547,7 +1571,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 
 		applyFilterChange();
-	});
+	};
+
+	activeFiltersList?.addEventListener('click', removeActiveFilter);
+	advancedActiveFiltersList?.addEventListener('click', removeActiveFilter);
+	advancedFilters?.addEventListener('toggle', renderActiveFilters);
 
 	applyGenreUI();
 	applySubgenreUI();

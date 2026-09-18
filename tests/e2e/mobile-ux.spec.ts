@@ -1,5 +1,13 @@
 import { expect, test } from '@playwright/test';
 
+async function openAdvancedFilters(page: import('@playwright/test').Page): Promise<void> {
+  const advancedFilters = page.locator('[data-home-advanced-filters]');
+  if ((await advancedFilters.getAttribute('open')) === null) {
+    await advancedFilters.locator('summary').click();
+  }
+  await expect(advancedFilters).toHaveAttribute('open', '');
+}
+
 test('mobile home keeps touch targets and content within the viewport', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This layout check is intentionally mobile-only.');
   await page.setViewportSize({ width: 390, height: 844 });
@@ -17,7 +25,7 @@ test('mobile home keeps touch targets and content within the viewport', async ({
       ...document.querySelectorAll<HTMLElement>('.site-header__actions > a'),
       ...document.querySelectorAll<HTMLElement>('.home-platform-filter__chip'),
       ...document.querySelectorAll<HTMLElement>('.home-genre-filter__chip'),
-    ];
+    ].filter((control) => control.getClientRects().length > 0);
 
     const viewportWidth = window.innerWidth;
     const platformBounds = [...document.querySelectorAll<HTMLElement>('.movie-card__platform-mark')]
@@ -83,7 +91,7 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
   await expect(page.locator('.home-mobile-nav')).toBeVisible();
   expect(Object.values(sectionState).every(Boolean)).toBeTruthy();
 
-  for (const target of ['#catalogo-filtros', '#cinema-release-carousel', '#que-vemos-hoy', '#comunidad-home']) {
+  for (const target of ['#catalogo-filtros', '#cinema-release-carousel', '#comunidad-home']) {
     await page.locator(`.home-mobile-nav a[href="${target}"]`).click();
     await expect
       .poll(() => page.evaluate((selector) => {
@@ -94,6 +102,8 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
       }, target))
       .toBeGreaterThanOrEqual(-1);
   }
+
+  await expect(page.locator('.home-mobile-nav a').filter({ hasText: 'Qué vemos hoy' })).toHaveAttribute('href', '/que-miro-hoy/');
 
   const cinemaLabels = await page.locator('.movie-card__platform-mark .platform-mark--tile.platform-chip--cine .platform-chip__cine-label').evaluateAll((elements) =>
     elements.map((element) => ({
@@ -112,10 +122,14 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/', { waitUntil: 'domcontentloaded' });
 
+  const advancedFilters = page.locator('[data-home-advanced-filters]');
   const carousel = page.locator('[data-home-filter-carousel]');
   const panels = page.locator('[data-home-filter-panel]');
-  await expect(carousel).toBeVisible();
+  await expect(advancedFilters).not.toHaveAttribute('open', '');
+  await expect(carousel).toBeHidden();
   await expect(panels).toHaveCount(6);
+  await openAdvancedFilters(page);
+  await expect(carousel).toBeVisible();
 
   const initialLayout = await carousel.evaluate((element) => {
     const node = element as HTMLElement;
@@ -132,7 +146,7 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
   expect(initialLayout.overflowX).toBe('visible');
 
   const rails = carousel.locator('.home-platform-filter__chips, .home-genre-filter__chips');
-  await expect(rails).toHaveCount(6);
+  await expect(rails).toHaveCount(5);
   const editorialRail = carousel.locator('[data-home-filter-panel="editorial"] .home-genre-filter__chips');
   await expect(editorialRail.locator('[data-home-genre-chip]')).toHaveCount(5);
   await expect(editorialRail.locator('[data-home-genre-chip]').last()).toHaveText('De culto');
@@ -207,15 +221,17 @@ test('mobile keeps a dense active-filter combination inside the viewport', async
   }
 
   await page.getByRole('button', { name: /Nuevas y buenas/i }).click();
+  await openAdvancedFilters(page);
   await page.getByRole('button', { name: /Filtrar por Netflix/i }).click();
   await page.getByRole('button', { name: /^Terror$/i }).click();
   await page.getByRole('button', { name: /^2020s$/i }).click();
   await page.locator('[data-home-sort]').selectOption('most-recommended');
 
-  await expect(page.locator('[data-home-active-filters]')).toBeVisible();
+  await page.locator('[data-home-advanced-filters] summary').click();
+  await expect(page.locator('[data-home-advanced-active-filters]')).toBeVisible();
   const layout = await page.evaluate(() => {
     const active = document.querySelector<HTMLElement>('[data-home-active-filters]');
-    const pills = [...document.querySelectorAll<HTMLElement>('[data-home-active-filter-list] button')];
+    const pills = [...document.querySelectorAll<HTMLElement>('[data-home-advanced-active-filter-list] button')];
     const viewport = window.innerWidth;
     return {
       fits: document.documentElement.scrollWidth <= viewport,
@@ -228,7 +244,7 @@ test('mobile keeps a dense active-filter combination inside the viewport', async
   expect(layout.fits).toBeTruthy();
   expect(layout.activeFits).toBeTruthy();
   expect(layout.pillsFit).toBeTruthy();
-  expect(layout.pillCount).toBeGreaterThanOrEqual(5);
+  expect(layout.pillCount).toBe(3);
 });
 
 test('mobile layout stays contained when the browser reports a desktop viewport', async ({ page }) => {

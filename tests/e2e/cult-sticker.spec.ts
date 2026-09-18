@@ -76,6 +76,7 @@ test.describe('sticker De culto', () => {
 		await page.goto('/', { waitUntil: 'domcontentloaded' });
 		await waitForSiteStyles(page);
 		await dismissDonationPrompt(page);
+		await page.locator('[data-home-advanced-filters] summary').click();
 
 		await page.getByRole('button', { name: /^De culto$/i }).click();
 		const cards = page.locator('[data-movie-search-grid] [data-movie-card]:visible');
