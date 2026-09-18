@@ -205,11 +205,19 @@ test.describe('home catalog filters', () => {
     const sort = page.locator('[data-home-sort]');
     await sort.selectOption('oldest');
 		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);
-    const oldestTimestamps = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
-      nodes.map((card) => Number(card.getAttribute('data-movie-release-timestamp'))),
+    const oldestYears = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => Number(card.getAttribute('data-movie-year'))),
     );
-    expect(oldestTimestamps.every((timestamp, index) => index === 0 || oldestTimestamps[index - 1] <= timestamp)).toBeTruthy();
+    expect(oldestYears.every((year, index) => index === 0 || oldestYears[index - 1] <= year)).toBeTruthy();
     expect(new URL(page.url()).searchParams.get('orden')).toBe('oldest');
+
+    await sort.selectOption('newest');
+		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);
+    const newestYears = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => Number(card.getAttribute('data-movie-year'))),
+    );
+    expect(newestYears.every((year, index) => index === 0 || newestYears[index - 1] >= year)).toBeTruthy();
+    expect(new URL(page.url()).searchParams.has('orden')).toBeFalsy();
 
     await sort.selectOption('most-recommended');
 		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);

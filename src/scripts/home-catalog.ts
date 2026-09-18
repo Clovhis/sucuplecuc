@@ -1146,7 +1146,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 
 		matchingEntries.sort((left, right) => {
-			const newestFirst = right.releaseTimestamp - left.releaseTimestamp || Number(right.year) - Number(left.year);
+			const newestFirst =
+				Number(right.year) - Number(left.year) || right.releaseTimestamp - left.releaseTimestamp;
 			if (activeSort === 'newest') return newestFirst || left.title.localeCompare(right.title, 'es');
 			if (activeSort === 'oldest') return -newestFirst || left.title.localeCompare(right.title, 'es');
 			if (activeSort === 'title') return left.title.localeCompare(right.title, 'es');
