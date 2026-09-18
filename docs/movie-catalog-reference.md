@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-17. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-18. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2204
+Total de peliculas: 2205
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -176,7 +176,7 @@ Total de peliculas: 2204
 | 2026 | Resident Evil: Noche Cero | resident-evil-noche-cero-2026 | Terror | Cine | +17 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
-| 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | Otras plataformas | +16 |
+| 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | Apple TV | +16 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
 | 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Paramount Plus | +16 |
@@ -263,7 +263,7 @@ Total de peliculas: 2204
 | 2025 | Franz | franz-2025 | Drama | Otras plataformas | ATP |
 | 2025 | G20 | g20-2025 | Accion | Prime Video | +16 |
 | 2025 | Guardianes de la noche: Kimetsu no Yaiba La fortaleza infinita | guardianes-de-la-noche-la-fortaleza-infinita-2025 | Anime | Crunchyroll | +13 |
-| 2025 | Hamnet | hamnet-2025 | Drama | Otras plataformas | +13 |
+| 2025 | Hamnet | hamnet-2025 | Drama | HBO Max + Apple TV | +13 |
 | 2025 | Happy Gilmore 2 | happy-gilmore-2-2025 | Comedia | Netflix | +13 |
 | 2025 | Havoc | havoc-2025 | Accion | Netflix | +16 |
 | 2025 | Heart Eyes | heart-eyes-2025 | Terror | Netflix | +17 |
@@ -408,6 +408,7 @@ Total de peliculas: 2204
 | 2024 | Pintor at Paraluman | pintor-at-paraluman-2024 | Romance | Prime Video | +13 |
 | 2024 | Raíces | raices-2024 | Drama | Apple TV | +16 |
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |
+| 2024 | Septiembre 5 | septiembre-5-2024 | Drama | Paramount Plus + Netflix | +13 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |
 | 2024 | Sonic 3: La película | sonic-3-la-pelicula-2024 | Accion | Paramount Plus + Netflix | +13 |
@@ -597,7 +598,7 @@ Total de peliculas: 2204
 | 2021 | Home Sweet Home Alone | home-sweet-home-alone-2021 | Comedia | Disney Plus | ATP |
 | 2021 | Ice Road | ice-road-2021 | Accion | Netflix | +13 |
 | 2021 | Juegos Inocentes | juegos-inocentes-2021 | Terror | Apple TV | +16 |
-| 2021 | Jujutsu Kaisen 0 | jujutsu-kaisen-0-2021 | Animacion | Crunchyroll | +13 |
+| 2021 | Jujutsu Kaisen 0 | jujutsu-kaisen-0-2021 | Animacion | Disney Plus + Crunchyroll | +13 |
 | 2021 | Jungle Cruise | jungle-cruise-2021 | Acción | Disney Plus | +13 |
 | 2021 | King Richard | king-richard-2021 | Biográfica | HBO Max | +13 |
 | 2021 | La encomienda | la-encomienda-2021 | Drama | Flow | +13 |
