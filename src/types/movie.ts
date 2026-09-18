@@ -47,6 +47,9 @@ export interface Movie {
 	synopsis: string;
 	year: number;
 	releaseDate?: string;
+	/** Señala un estreno vigente; la fecha argentina de salida vive en releaseDate. */
+	isPremiere?: boolean;
+	premiereLabel?: string;
 	reviewPublishedAt?: string;
 	audienceRating: MovieAudienceRating;
 	category: string;

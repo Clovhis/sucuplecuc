@@ -8,6 +8,7 @@ import {
 	getMoviePath,
 	getMoviePlatformLabel,
 	getMoviePlatforms,
+	getMovieSortTimestamp,
 	getPrimaryGenreId,
 	getPrimaryGenreLabel,
 	getPosterUrl,
@@ -15,6 +16,7 @@ import {
 	getVerdictLabel,
 	isAbsoluteCinemaMovie,
 	isCultMovie,
+	isRecentPremiere,
 	normalizeSearchText,
 } from '../lib/movies';
 import { getNormalizedMoviePlatforms } from '../lib/platforms';
@@ -44,6 +46,8 @@ const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);
 const absoluteCinemaStickerUrl = getAbsoluteCinemaStickerUrl();
 const showCultMovieSticker = isCultMovie(movie);
 const cultMovieStickerUrl = getCultMovieStickerUrl();
+const movieReleaseTimestamp = getMovieSortTimestamp(movie);
+const isRecentMoviePremiere = isRecentPremiere(movie);
 const quickMeta = [String(movie.year), getPrimaryGenreLabel(movie), getMoviePlatformLabel(movie)]
 	.filter(Boolean)
 	.join(' · ');
@@ -75,6 +79,10 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	data-movie-primary-genre={catalogPrimaryGenre}
 	data-movie-title={movie.title}
 	data-movie-year={movie.year}
+	data-movie-release-timestamp={movieReleaseTimestamp}
+	data-movie-recent-premiere={isRecentMoviePremiere ? 'true' : 'false'}
+	data-movie-verdict={movie.verdict}
+	data-movie-absolute-cinema={showAbsoluteCinemaSticker ? 'true' : 'false'}
 	data-movie-url={movieUrl}
 	data-movie-poster-url={posterUrl}
 	data-movie-meta={quickMeta}

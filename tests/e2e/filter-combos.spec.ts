@@ -31,6 +31,135 @@ async function expectMovieTitles(page: Page, expectedTitles: string[]): Promise<
 }
 
 test.describe('home catalog filters', () => {
+  test('verdict filters keep Absolute Cinema beside Basura on desktop', async ({ page }, testInfo) => {
+    test.skip(testInfo.project.name.startsWith('mobile-'), 'Desktop alignment assertion');
+    await gotoHome(page);
+
+    const verdictPanel = page.locator('[data-home-filter-panel="verdict"]');
+    const layout = await verdictPanel.locator('[data-home-verdict-chip], [data-home-absolute-cinema-chip]').evaluateAll((chips) => {
+      const rects = chips.map((chip) => chip.getBoundingClientRect());
+		const rail = chips[0]?.parentElement?.getBoundingClientRect();
+      return {
+        count: rects.length,
+        rows: new Set(rects.map((rect) => Math.round(rect.top))).size,
+        labels: chips.map((chip) => chip.textContent?.trim()),
+		fits: chips.every((chip) => (chip as HTMLElement).scrollWidth <= (chip as HTMLElement).clientWidth),
+		fillsRail: Boolean(rail && rects[0] && rects.at(-1) && Math.abs(rects[0].left - rail.left) <= 1 && Math.abs(rects.at(-1)!.right - rail.right) <= 1),
+      };
+    });
+
+    expect(layout.count).toBe(5);
+    expect(layout.rows).toBe(1);
+    expect(layout.labels).toEqual(['Absolute Cinema', 'Está buena', 'Zafa', 'No va', 'Basura']);
+		expect(layout.fits).toBeTruthy();
+		expect(layout.fillsRail).toBeTruthy();
+  });
+
+  test('quick filters reuse verdict, premiere and sort state while preserving refinements', async ({ page }) => {
+    await gotoHome(page);
+
+    const quickFilter = page.getByRole('button', { name: /Nuevas y buenas/i });
+    const netflix = page.getByRole('button', { name: /Filtrar por Netflix/i });
+    const terror = page.getByRole('button', { name: /^Terror$/i });
+
+    await quickFilter.click();
+    await expect(quickFilter).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: /^Está buena$/i })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: /Quitar Estrenos recientes/i })).toBeVisible();
+    expect(new URL(page.url()).searchParams.get('valoracion')).toBe('recomendada');
+    expect(new URL(page.url()).searchParams.get('estreno')).toBe('reciente');
+
+    const newAndGoodCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => ({
+        title: card.getAttribute('data-movie-title'),
+        year: Number(card.getAttribute('data-movie-year')),
+        recent: card.getAttribute('data-movie-recent-premiere'),
+      })),
+    );
+    const currentYear = new Date().getUTCFullYear();
+    expect(newAndGoodCards.length).toBeGreaterThan(0);
+    expect(newAndGoodCards.every((card) => card.recent === 'true' && card.year >= currentYear - 1 && card.year <= currentYear)).toBeTruthy();
+    expect(newAndGoodCards.some((card) => card.title === 'V de Vendetta')).toBeFalsy();
+
+    await netflix.click();
+    await terror.click();
+    const cards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => ({
+        verdict: card.getAttribute('data-movie-verdict'),
+        recent: card.getAttribute('data-movie-recent-premiere'),
+        platforms: card.getAttribute('data-movie-platforms')?.split(',') ?? [],
+        genre: card.getAttribute('data-movie-primary-genre'),
+      })),
+    );
+    expect(cards.every((card) => card.verdict === 'recomendada' && card.recent === 'true' && card.platforms.includes('netflix') && card.genre === 'terror')).toBeTruthy();
+  });
+
+  test('verdict and year facets group catalog movies without reading verdict labels', async ({ page }) => {
+		test.slow();
+    await gotoHome(page);
+
+    await page.getByRole('button', { name: /^Está buena$/i }).click();
+    await page.getByRole('button', { name: /^80s$/i }).click();
+		await expect.poll(async () => page.locator('[data-movie-search-grid] [data-movie-card]').count(), { timeout: 15_000 }).toBeGreaterThan(0);
+
+    const recommendedEighties = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => ({ verdict: card.getAttribute('data-movie-verdict'), year: Number(card.getAttribute('data-movie-year')) })),
+    );
+    expect(recommendedEighties.length).toBeGreaterThan(0);
+    expect(recommendedEighties.every((card) => card.verdict === 'recomendada' && card.year >= 1980 && card.year <= 1989)).toBeTruthy();
+
+    await page.getByRole('button', { name: /^Limpiar todo$/i }).click();
+    await page.getByRole('button', { name: /^No va$/i }).click();
+    await page.getByRole('button', { name: /^2000s$/i }).click();
+		await expect.poll(async () => page.locator('[data-movie-search-grid] [data-movie-card]').count(), { timeout: 15_000 }).toBeGreaterThan(0);
+    const rejectedTwoThousands = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => ({ verdict: card.getAttribute('data-movie-verdict'), year: Number(card.getAttribute('data-movie-year')) })),
+    );
+    expect(rejectedTwoThousands.length).toBeGreaterThan(0);
+    expect(rejectedTwoThousands.every((card) => card.verdict === 'no_recomendada' && card.year >= 2000 && card.year <= 2009)).toBeTruthy();
+
+    await page.getByRole('button', { name: /^Limpiar todo$/i }).click();
+    const absoluteCinema = page.locator('[data-home-absolute-cinema-chip]');
+    await absoluteCinema.click();
+    await expect(absoluteCinema).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: /Absolute Cinema/i }).first()).toHaveAttribute('aria-pressed', 'true');
+		await expect.poll(async () => page.locator('[data-movie-search-grid] [data-movie-card]').count(), { timeout: 15_000 }).toBeGreaterThan(0);
+    const absoluteCinemaCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => card.getAttribute('data-movie-absolute-cinema')),
+    );
+    expect(absoluteCinemaCards.length).toBeGreaterThan(0);
+    expect(absoluteCinemaCards.every((value) => value === 'true')).toBeTruthy();
+    expect(new URL(page.url()).searchParams.get('absolute-cinema')).toBe('true');
+  });
+
+  test('date and recommendation sorting are deterministic and URL-backed', async ({ page }) => {
+		test.slow();
+    await gotoHome(page);
+
+    const sort = page.locator('[data-home-sort]');
+    await sort.selectOption('oldest');
+		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);
+    const oldestTimestamps = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => Number(card.getAttribute('data-movie-release-timestamp'))),
+    );
+    expect(oldestTimestamps.every((timestamp, index) => index === 0 || oldestTimestamps[index - 1] <= timestamp)).toBeTruthy();
+    expect(new URL(page.url()).searchParams.get('orden')).toBe('oldest');
+
+    await sort.selectOption('most-recommended');
+		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);
+    const rankedCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+      nodes.map((card) => ({
+        verdict: card.getAttribute('data-movie-verdict'),
+        absolute: card.getAttribute('data-movie-absolute-cinema') === 'true',
+        release: Number(card.getAttribute('data-movie-release-timestamp')),
+      })),
+    );
+    const score = (card: { verdict: string | null; absolute: boolean }) =>
+      ({ recomendada: 4, zafa: 3, no_recomendada: 2, basura_atomica: 1 }[card.verdict ?? ''] ?? 0) + (card.absolute ? 0.5 : 0);
+    expect(rankedCards.every((card, index) => index === 0 || score(rankedCards[index - 1]) >= score(card))).toBeTruthy();
+    expect(new URL(page.url()).searchParams.get('orden')).toBe('most-recommended');
+  });
+
   test('editorial + subgenre + platform resolves to a single argentinian heist movie', async ({ page }) => {
     await gotoHome(page);
 

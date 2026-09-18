@@ -18,6 +18,7 @@ import {
 	getCurrentTheatricalMovieReleases,
 	getCurrentStreamingMovieReleases,
 	getSubgenreFilterOptions,
+	getVerdictFilterOptions,
 	getUpcomingMovieReleases,
 	getVerdictBadgeClass,
 	getVerdictLabel,
@@ -38,6 +39,7 @@ const assetBase = import.meta.env.BASE_URL;
 const featuredPeople = getPersonSearchEntries();
 const platformOptions = getPlatformFilterOptions(movies);
 const subgenreOptions = getSubgenreFilterOptions(movies);
+const verdictFilterOptions = getVerdictFilterOptions(movies);
 const editorialGenreFilterIds = new Set([
 	'superheroes',
 	'oscar-mejor-pelicula',
@@ -306,6 +308,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 		<HomePrimaryCatalog
 			movies={movies}
 			platformOptions={platformOptions}
+			verdictFilterOptions={verdictFilterOptions}
 			editorialFilterOptions={editorialFilterOptions}
 			primaryGenreOptions={primaryGenreOptions}
 			subgenreOptions={subgenreOptions}

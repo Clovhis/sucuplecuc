@@ -45,8 +45,8 @@ export interface RecommendationGenreOption {
 	description?: string;
 }
 
-export interface PositiveVerdictFilterOption {
-	id: string;
+export interface VerdictFilterOption {
+	id: MovieVerdict;
 	label: string;
 	count: number;
 }
@@ -290,14 +290,20 @@ const GENERIC_SUBGENRE_TOKENS = new Set([
 const MAX_VERDICT_LABEL_LENGTH = 21;
 const MAX_SYNOPSIS_LENGTH = 320;
 const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
-const POSITIVE_VERDICT_FILTER_ORDER = [
-	'recontra garpa',
-	'muy buena',
-	'esta muy bien',
-	'esta buena',
-	'recomendada',
+export const VERDICT_FILTER_OPTIONS: ReadonlyArray<Omit<VerdictFilterOption, 'count'>> = [
+	{ id: 'recomendada', label: 'Está buena' },
+	{ id: 'zafa', label: 'Zafa' },
+	{ id: 'no_recomendada', label: 'No va' },
+	{ id: 'basura_atomica', label: 'Basura atómica' },
 ];
-const POSITIVE_VERDICT_FILTER_LABELS = new Set(POSITIVE_VERDICT_FILTER_ORDER);
+export const RECENT_PREMIERE_WINDOW_DAYS = 90;
+/**
+ * `releaseDate` registra la llegada vigente a Argentina (cine o plataforma),
+ * por lo que una película vieja puede tener una fecha reciente al reingresar
+ * a un servicio. Para el acceso de novedades también exigimos que la película
+ * sea de este año o del anterior.
+ */
+export const RECENT_MOVIE_RELEASE_YEAR_WINDOW = 1;
 const WEEKLY_SUGGESTION_LABEL_SCORE = new Map<string, number>([
 	['absolute cinema', 100],
 	['recontra garpa', 95],
@@ -602,7 +608,7 @@ function isReleased(movie: Pick<Movie, 'year' | 'releaseDate'>): boolean {
 	return movie.year < currentYear;
 }
 
-function getMovieSortTimestamp(movie: Pick<Movie, 'year' | 'releaseDate'>): number {
+export function getMovieSortTimestamp(movie: Pick<Movie, 'year' | 'releaseDate'>): number {
 	if (movie.releaseDate) {
 		const releaseDate = new Date(`${movie.releaseDate}T00:00:00Z`);
 		if (!Number.isNaN(releaseDate.getTime())) {
@@ -725,6 +731,32 @@ export function getLatestReviewMovies(movies: Movie[], limit = 3): Movie[] {
 				a.title.localeCompare(b.title, 'es'),
 		)
 		.slice(0, Math.max(0, limit));
+}
+
+/**
+ * Estreno de una película realmente nueva que todavía integra la ventana corta
+ * de novedades del catálogo. `releaseDate` mantiene la semántica de estreno
+ * vigente en Argentina, mientras que `year` evita tratar como nueva una
+ * película vieja que simplemente volvió a una plataforma.
+ */
+export function isRecentPremiere(
+	movie: Pick<Movie, 'isPremiere' | 'releaseDate' | 'year'>,
+	referenceDate = new Date(),
+	windowDays = RECENT_PREMIERE_WINDOW_DAYS,
+): boolean {
+	if (!movie.isPremiere || !movie.releaseDate?.trim()) {
+		return false;
+	}
+
+	const referenceTimestamp = getReferenceDayTimestamp(referenceDate);
+	const earliestMovieReleaseYear = referenceDate.getUTCFullYear() - RECENT_MOVIE_RELEASE_YEAR_WINDOW;
+	if (movie.year < earliestMovieReleaseYear || movie.year > referenceDate.getUTCFullYear()) {
+		return false;
+	}
+
+	const releaseTimestamp = getMovieSortTimestamp(movie);
+	const earliestReleaseTimestamp = referenceTimestamp - Math.max(0, windowDays) * DAY_IN_MS;
+	return releaseTimestamp >= earliestReleaseTimestamp && releaseTimestamp <= referenceTimestamp;
 }
 
 function isTheatricalRelease(movie: Pick<Movie, 'releasePlatform' | 'releasePlatforms'>): boolean {
@@ -1197,50 +1229,16 @@ function getGenreFilterOptionById(genreId: RecommendationGenreId): Recommendatio
 	return RECOMMENDATION_GENRE_OPTIONS.find((option) => option.id === genreId);
 }
 
-export function getPositiveVerdictFilterId(value: string): string {
-	return normalizeSearchText(value).replace(/\s+/g, '-');
-}
-
-function getPositiveVerdictFilterRank(label: string): number {
-	const normalizedLabel = normalizeSearchText(label).replace(/\s+/g, ' ');
-	const orderIndex = POSITIVE_VERDICT_FILTER_ORDER.indexOf(normalizedLabel);
-	return orderIndex === -1 ? POSITIVE_VERDICT_FILTER_ORDER.length : orderIndex;
-}
-
-export function getPositiveVerdictFilterOptions(movies: Movie[]): PositiveVerdictFilterOption[] {
-	const countsByLabel = new Map<string, number>();
-
+export function getVerdictFilterOptions(movies: Pick<Movie, 'verdict'>[]): VerdictFilterOption[] {
+	const counts = new Map<MovieVerdict, number>();
 	for (const movie of movies) {
-		if (movie.verdict !== 'recomendada' || isAbsoluteCinemaMovie(movie)) {
-			continue;
-		}
-
-		const label = getVerdictLabel(movie).trim();
-		if (!label) {
-			continue;
-		}
-		const normalizedLabel = normalizeSearchText(label).replace(/\s+/g, ' ');
-		if (!POSITIVE_VERDICT_FILTER_LABELS.has(normalizedLabel)) {
-			continue;
-		}
-
-		countsByLabel.set(label, (countsByLabel.get(label) ?? 0) + 1);
+		counts.set(movie.verdict, (counts.get(movie.verdict) ?? 0) + 1);
 	}
 
-	return Array.from(countsByLabel.entries())
-		.map(([label, count]) => ({
-			id: getPositiveVerdictFilterId(label),
-			label,
-			count,
-		}))
-		.sort((left, right) => {
-			const rankDelta = getPositiveVerdictFilterRank(left.label) - getPositiveVerdictFilterRank(right.label);
-			if (rankDelta !== 0) {
-				return rankDelta;
-			}
-
-			return right.count - left.count || left.label.localeCompare(right.label, 'es');
-		});
+	return VERDICT_FILTER_OPTIONS.map((option) => ({
+		...option,
+		count: counts.get(option.id) ?? 0,
+	}));
 }
 
 function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void {

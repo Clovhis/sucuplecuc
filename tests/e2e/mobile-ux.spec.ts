@@ -115,7 +115,7 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
   const carousel = page.locator('[data-home-filter-carousel]');
   const panels = page.locator('[data-home-filter-panel]');
   await expect(carousel).toBeVisible();
-  await expect(panels).toHaveCount(4);
+  await expect(panels).toHaveCount(6);
 
   const initialLayout = await carousel.evaluate((element) => {
     const node = element as HTMLElement;
@@ -132,7 +132,7 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
   expect(initialLayout.overflowX).toBe('visible');
 
   const rails = carousel.locator('.home-platform-filter__chips, .home-genre-filter__chips');
-  await expect(rails).toHaveCount(4);
+  await expect(rails).toHaveCount(6);
   const editorialRail = carousel.locator('[data-home-filter-panel="editorial"] .home-genre-filter__chips');
   await expect(editorialRail.locator('[data-home-genre-chip]')).toHaveCount(5);
   await expect(editorialRail.locator('[data-home-genre-chip]').last()).toHaveText('De culto');
@@ -194,6 +194,41 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
     cards.map((card) => Math.round(card.getBoundingClientRect().height)),
   );
   expect(compactPromoHeights.every((height) => height <= 112)).toBeTruthy();
+});
+
+test('mobile keeps a dense active-filter combination inside the viewport', async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.startsWith('mobile-'), 'This containment check is intentionally mobile-only.');
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+  const donationGate = page.getByRole('dialog', { name: /Ayudanos a mantener Cine Posta online/i });
+  if (await donationGate.isVisible()) {
+    await donationGate.getByRole('button', { name: /Ahora no, entrar al sitio/i }).click();
+  }
+
+  await page.getByRole('button', { name: /Nuevas y buenas/i }).click();
+  await page.getByRole('button', { name: /Filtrar por Netflix/i }).click();
+  await page.getByRole('button', { name: /^Terror$/i }).click();
+  await page.getByRole('button', { name: /^2020s$/i }).click();
+  await page.locator('[data-home-sort]').selectOption('most-recommended');
+
+  await expect(page.locator('[data-home-active-filters]')).toBeVisible();
+  const layout = await page.evaluate(() => {
+    const active = document.querySelector<HTMLElement>('[data-home-active-filters]');
+    const pills = [...document.querySelectorAll<HTMLElement>('[data-home-active-filter-list] button')];
+    const viewport = window.innerWidth;
+    return {
+      fits: document.documentElement.scrollWidth <= viewport,
+      activeFits: !active || (active.getBoundingClientRect().left >= -1 && active.getBoundingClientRect().right <= viewport + 1),
+      pillsFit: pills.every((pill) => pill.getBoundingClientRect().left >= -1 && pill.getBoundingClientRect().right <= viewport + 1),
+      pillCount: pills.length,
+    };
+  });
+
+  expect(layout.fits).toBeTruthy();
+  expect(layout.activeFits).toBeTruthy();
+  expect(layout.pillsFit).toBeTruthy();
+  expect(layout.pillCount).toBeGreaterThanOrEqual(5);
 });
 
 test('mobile layout stays contained when the browser reports a desktop viewport', async ({ page }) => {

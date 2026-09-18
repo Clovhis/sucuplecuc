@@ -1830,6 +1830,80 @@ img {
 		0 0 0 1px rgba(117, 153, 255, 0.12);
 }
 
+.home-quick-filters {
+	gap: 0.7rem;
+	border-color: rgba(255, 176, 137, 0.2);
+	background:
+		radial-gradient(circle at top right, rgba(255, 143, 91, 0.12), transparent 34%),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012)),
+		rgba(8, 12, 20, 0.42);
+}
+
+.home-quick-filters__chip {
+	font-size: 0.8rem;
+}
+
+.home-genre-filter--verdict {
+	border-color: rgba(255, 176, 137, 0.18);
+}
+
+@media (min-width: 60rem) {
+	.home-genre-filter--verdict .home-genre-filter__chips {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(max-content, 1fr));
+		gap: 0.35rem;
+	}
+
+	.home-genre-filter--verdict .home-genre-filter__chip {
+		width: 100%;
+		min-width: 0;
+		padding-inline: 0.56rem;
+		font-size: 0.7rem;
+		text-align: center;
+		white-space: nowrap;
+	}
+}
+
+.home-genre-filter--year {
+	border-color: rgba(169, 194, 255, 0.18);
+}
+
+.home-filter-select {
+	display: grid;
+	gap: 0.38rem;
+	min-width: 0;
+	color: #aebbd0;
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.home-filter-select select {
+	min-width: 0;
+	min-height: 2.75rem;
+	padding: 0.42rem 2.25rem 0.42rem 0.72rem;
+	border: 1px solid rgba(180, 198, 228, 0.2);
+	border-radius: var(--control-radius-tight);
+	appearance: none;
+	background:
+		linear-gradient(45deg, transparent 50%, #ffb08e 50%) calc(100% - 1rem) 50% / 0.38rem 0.38rem no-repeat,
+		linear-gradient(135deg, #ffb08e 50%, transparent 50%) calc(100% - 0.68rem) 50% / 0.38rem 0.38rem no-repeat,
+		linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+		rgba(7, 12, 21, 0.72);
+	color: #f4f7ff;
+	font: 600 0.78rem/1.2 var(--font-sans);
+	cursor: pointer;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 8px 18px rgba(4, 8, 14, 0.12);
+}
+
+.home-filter-select select:hover,
+.home-filter-select select:focus-visible {
+	border-color: rgba(255, 176, 137, 0.6);
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(255, 176, 137, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
 .home-platform-filter {
 	display: grid;
 	gap: 0.65rem;

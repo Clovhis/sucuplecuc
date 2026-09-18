@@ -964,6 +964,27 @@
 		display: none;
 	}
 
+	.home-quick-filters .home-genre-filter__chips {
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		scroll-snap-type: none;
+		touch-action: manipulation;
+	}
+
+	.home-quick-filters .home-genre-filter__chip {
+		width: auto;
+		min-width: 0;
+		white-space: normal;
+		text-wrap: wrap;
+	}
+
+	.home-filter-select select {
+		width: 100%;
+		min-height: 3rem;
+	}
+
 	.home-platform-filter__chip,
 	.home-genre-filter__chip {
 		flex: 0 0 auto;
