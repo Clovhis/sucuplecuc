@@ -59,12 +59,20 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 				<section class="home-genre-filter home-quick-filters" aria-labelledby="home-quick-filters-title">
 					<div class="home-genre-filter__heading">
 						<p id="home-quick-filters-title" class="home-genre-filter__label">Para elegir rápido</p>
-						<p class="home-genre-filter__hint">Arrancá por acá y después afiná lo que quieras.</p>
 					</div>
 					<div class="home-genre-filter__chips" role="group" aria-label="Accesos rápidos al catálogo">
-						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="new-and-good" aria-pressed="false">🔥 Nuevas y buenas</button>
-						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="premieres" aria-pressed="false">🆕 Estrenos</button>
-						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="recommended" aria-pressed="false">👍 Recomendadas</button>
+						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="new-and-good" aria-pressed="false">
+							<span class="home-quick-filters__chip-label">Nuevas y buenas</span>
+							<img class="home-quick-filters__art" src="/images/home/cineposta-filtro-nuevas-buenas.png" alt="" width="512" height="512" aria-hidden="true" />
+						</button>
+						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="premieres" aria-pressed="false">
+							<span class="home-quick-filters__chip-label">Estrenos</span>
+							<img class="home-quick-filters__art" src="/images/home/cineposta-filtro-estrenos.png" alt="" width="512" height="512" aria-hidden="true" />
+						</button>
+						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="recommended" aria-pressed="false">
+							<span class="home-quick-filters__chip-label">Recomendadas</span>
+							<img class="home-quick-filters__art" src="/images/home/cineposta-filtro-recomendadas.png" alt="" width="512" height="512" aria-hidden="true" />
+						</button>
 					</div>
 				</section>
 				<section class="home-genre-filter home-genre-filter--verdict" data-home-filter-panel="verdict">
