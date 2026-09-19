@@ -59,6 +59,52 @@ test('mobile home keeps touch targets and content within the viewport', async ({
   expect(measurements.cardCollisions).toEqual([]);
 });
 
+test('mobile quick filters stay equal, aligned, and contained at narrow widths', async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.startsWith('mobile-'), 'This layout check is intentionally mobile-only.');
+
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 844 });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+    const layout = await page.locator('.home-quick-filters').evaluate((section) => {
+      const buttons = [...section.querySelectorAll<HTMLElement>('.home-quick-filters__chip')];
+      const buttonRects = buttons.map((button) => button.getBoundingClientRect());
+      const artworkContained = buttons.every((button) => {
+        const buttonRect = button.getBoundingClientRect();
+        const artworkRect = button.querySelector<HTMLElement>('.home-quick-filters__art')?.getBoundingClientRect();
+        return Boolean(
+          artworkRect &&
+          artworkRect.left >= buttonRect.left - 1 &&
+          artworkRect.right <= buttonRect.right + 1 &&
+          artworkRect.top >= buttonRect.top - 1 &&
+          artworkRect.bottom <= buttonRect.bottom + 1,
+        );
+      });
+
+      return {
+        count: buttons.length,
+        widths: buttonRects.map((rect) => Math.round(rect.width)),
+        heights: buttonRects.map((rect) => Math.round(rect.height)),
+        tops: buttonRects.map((rect) => Math.round(rect.top)),
+        sectionCenter: section.getBoundingClientRect().left + section.getBoundingClientRect().width / 2,
+        lastButtonCenter: buttonRects.at(-1) ? buttonRects.at(-1)!.left + buttonRects.at(-1)!.width / 2 : 0,
+        artworkContained,
+        pageContained: document.documentElement.scrollWidth <= window.innerWidth + 1,
+      };
+    });
+
+    expect(layout.count).toBe(3);
+    expect(Math.max(...layout.widths) - Math.min(...layout.widths)).toBeLessThanOrEqual(1);
+    expect(Math.max(...layout.heights) - Math.min(...layout.heights)).toBeLessThanOrEqual(1);
+    expect(layout.tops[0]).toBe(layout.tops[1]);
+    expect(layout.tops[2]).toBeGreaterThan(layout.tops[0]);
+    expect(Math.abs(layout.lastButtonCenter - layout.sectionCenter)).toBeLessThanOrEqual(1);
+    expect(Math.min(...layout.heights)).toBeGreaterThanOrEqual(44);
+    expect(layout.artworkContained).toBeTruthy();
+    expect(layout.pageContained).toBeTruthy();
+  }
+});
+
 test('mobile home exposes the complete app flow and keeps cinema labels on one line', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This flow is intentionally mobile-only.');
   await page.setViewportSize({ width: 390, height: 844 });

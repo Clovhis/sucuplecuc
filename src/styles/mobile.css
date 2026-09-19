@@ -920,11 +920,41 @@
 	}
 
 	.home-quick-filters .home-quick-filters__chip {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-rows: 3.5rem auto;
+		justify-items: center;
+		gap: 0.2rem;
 		width: 100%;
+		min-width: 0;
+		min-height: 6.5rem;
+		padding: 0.35rem 0.25rem 0.55rem;
+		text-align: center;
 	}
 
 	.home-quick-filters .home-quick-filters__chip:last-child {
 		grid-column: 1 / -1;
+		width: calc((100% - 0.5rem) / 2);
+		justify-self: center;
+	}
+
+	.home-quick-filters__chip-label {
+		grid-row: 2;
+		align-self: center;
+	}
+
+	.home-quick-filters__art {
+		grid-row: 1;
+		width: 3.75rem;
+		height: 3.75rem;
+		justify-self: center;
+		transform: scale(1.04);
+	}
+
+	.home-quick-filters__chip:hover .home-quick-filters__art,
+	.home-quick-filters__chip:focus-visible .home-quick-filters__art,
+	.home-quick-filters__chip.is-active .home-quick-filters__art {
+		transform: scale(1.1);
 	}
 }
 
@@ -1006,8 +1036,6 @@
 	}
 
 	.home-quick-filters .home-genre-filter__chips {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
 		flex-wrap: unset;
 		margin: 0;
 		padding: 0;
