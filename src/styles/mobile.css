@@ -1051,6 +1051,23 @@
 		text-wrap: wrap;
 	}
 
+	.home-genre-filter--verdict .home-genre-filter__chips {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		touch-action: manipulation;
+	}
+
+	.home-genre-filter--verdict .home-genre-filter__chip,
+	.home-genre-filter--verdict .home-verdict-cta {
+		width: 100%;
+		min-width: 0;
+		white-space: normal;
+	}
+
 	.home-filter-select select {
 		width: 100%;
 		min-height: 3rem;

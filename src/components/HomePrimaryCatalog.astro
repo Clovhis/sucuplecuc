@@ -3,6 +3,7 @@ import MovieCard from './MovieCard.astro';
 import PlatformBadge from './PlatformBadge.astro';
 import type { PlatformFilterOption } from '../lib/platforms';
 import type { VerdictFilterOption } from '../lib/movies';
+import { QUE_MIRO_HOY_PATH } from '../lib/seo';
 import type { Movie } from '../types/movie';
 
 interface FilterOption {
@@ -35,6 +36,7 @@ const {
 	movieCountLabel,
 } = Astro.props;
 const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year))).sort((left, right) => right - left);
+const visibleVerdictFilterOptions = verdictFilterOptions.filter((option) => option.id === 'recomendada' || option.id === 'zafa');
 ---
 
 {
@@ -78,13 +80,22 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 				<section class="home-genre-filter home-genre-filter--verdict" data-home-filter-panel="verdict">
 					<div class="home-genre-filter__heading">
 						<p class="home-genre-filter__label">El veredicto de Cine Posta</p>
-						<p class="home-genre-filter__hint">Elegí uno o varios.</p>
+						<p class="home-genre-filter__hint">Filtrá por nuestra mirada o dejá que el selector elija por vos.</p>
 					</div>
-					<div class="home-genre-filter__chips" role="group" aria-label="Filtros por valoración editorial">
+					<div class="home-genre-filter__chips" role="group" aria-label="Filtros por valoración editorial y acceso al selector">
 						<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-absolute-cinema-chip aria-pressed="false">Absolute Cinema</button>
-						{verdictFilterOptions.map((option) => (
-							<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-verdict-chip data-home-verdict-id={option.id} aria-pressed="false">{option.id === 'basura_atomica' ? 'Basura' : option.label}</button>
+						{visibleVerdictFilterOptions.map((option) => (
+							<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-verdict-chip data-home-verdict-id={option.id} aria-pressed="false">{option.label}</button>
 						))}
+						<a class="home-verdict-cta" href={QUE_MIRO_HOY_PATH}>
+							<span class="home-verdict-cta__copy">
+								<strong>Encontrá qué ver</strong>
+								<small>Selector · 20 segundos</small>
+							</span>
+							<svg aria-hidden="true" viewBox="0 0 20 20" focusable="false">
+								<path d="M4 10h11M11 6l4 4-4 4" />
+							</svg>
+						</a>
 					</div>
 					<label class="home-filter-select">
 						<span>Ordenar por</span>
