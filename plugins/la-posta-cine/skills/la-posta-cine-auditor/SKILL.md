@@ -19,7 +19,7 @@ Do not read whole catalogs or manually repeat passing checks. For each failure, 
 
 2. Treat these as hard stops: malformed schema; unverified/missing AR platform; invalid poster/trailer; missing current-year release date; bad people provenance for the required or retained credits; fewer than one verified director plus two verified performers; incorrect broad/subgenre taxonomy; an invalid `Bélica` war-filter tag; unsupported awards; manual Share/reaction/meter fields; bad recommendation slugs; stale catalog; and any forbidden diff. Exactly one director plus two retained principal performers is sufficient; the auditor must not impose a hidden three-performer minimum.
 
-   The bundled audit verifies the local `poster` asset at the byte level. It requires `assets/posters/<año>/<slug>.webp` (or the explicit local fallback), an existing regular file below `public/`, parseable WebP bytes, portrait dimensions no greater than 480x720 and no more than 100 KiB. The 40–80 KiB band is reported as an optimization warning. An external URL, missing file, non-WebP resource, traversal attempt or horizontal asset is a hard error. Before auditing a new title, run `npm run posters:localize -- --movie <slug>` after validating its source artwork.
+   The bundled audit verifies the local `poster` asset at the byte level. It requires `assets/posters/<año>/<slug>.webp` (or the explicit local fallback), an existing regular file below `public/`, parseable WebP bytes, portrait dimensions no greater than 480x720 and no more than 100 KiB. The 40–80 KiB band is reported as an optimization warning. An external URL, missing file, non-WebP resource, traversal attempt or horizontal asset is a hard error. Before auditing a new title, run `npm run posters:localize -- --movie <slug>` after validating source artwork of at least 720x1000; the localizer rejects smaller sources instead of upscaling them.
 
    For the home `Guerra` filter, `Bélica` must be an exact value in `genres`, never a `subgenres` value. A broad `Guerra` tag without `Bélica` produces a deliberate-review finding: decide from the premise and copy whether the conflict is central (add `Bélica`) or only contextual (leave it out and retain the evidence-led omission). Do not approve a `Bélica` tag that is supported only by a title or an incidental war reference; do not use it for *El planeta de los simios*-style non-war stories.
 
@@ -57,12 +57,15 @@ Audit the reasoning as well as the wording: the review needs a title-specific cr
 
    The first trailer audit must run with YouTube checks enabled. `--skip-youtube` is allowed only after a successful no-skip audit and build, for route/reaction validation. Title/year mismatch, wrong-title match, or oEmbed failure remains an error; transient 3xx/timeouts may be reported as external warnings only after bounded retry.
 
-   Poster identity and market are manual evidence gates before localization: a successful source URL, filename, search-result position, or Spanish text does not prove the film, year, language, or Argentina suitability. Require a canonical page naming the movie/year plus visual comparison. Keep neutral/original art when the Argentine localization is uncertain, and do not replace every Spanish-looking poster automatically.
+   Poster identity, market and visual quality are manual evidence gates before localization: a successful source URL, filename, search-result position, or Spanish text does not prove the film, year, language, Argentina suitability, or usable quality. Require a canonical page naming the movie/year plus full-size visual comparison before and after localization. Reject blur, heavy compression, pixelation, upscales, watermarks, third-party logos, country flags/maps, promotional badges, corner overlays, stills and cropped title cards. The localized poster must remain sharp/readable at 480px width. Keep neutral/original art when Argentine localization is uncertain.
+
+   `cinesargentinos.com.ar` and every subdomain are forbidden poster-image sources because their poster endpoints have baked an Argentine flag/map into the lower-right corner. Require `npm run test:poster-source-policy`; a `blocked-poster-source` or `low-resolution-poster-source` result is a hard stop. The domain may still be used for current Argentine theatrical evidence, never as artwork provenance.
 
 5. After safe fixes, run:
 
 ```bash
 npm run posters:localize -- --movie <slug>
+npm run test:poster-source-policy
 node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate <path>
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <path>
 npm run check

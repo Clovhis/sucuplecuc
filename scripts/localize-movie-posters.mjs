@@ -4,6 +4,7 @@ import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import sharp from 'sharp';
+import { assertPosterSourceAllowed, assertPosterSourceDimensions } from './poster-source-policy.mjs';
 
 const MOVIES_ROOT = path.resolve('src/data/movies');
 const PUBLIC_ROOT = path.resolve('public');
@@ -80,6 +81,7 @@ async function fetchSource(url) {
 				headers: { accept: 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8', 'user-agent': 'CinePosta-local-poster-migration/1.0' },
 				signal: controller.signal,
 			});
+			assertPosterSourceAllowed(response.url);
 			if (!response.ok) throw new Error(`HTTP ${response.status}`);
 			const type = response.headers.get('content-type') ?? '';
 			if (!/^image\//i.test(type)) throw new Error(`expected image/*, got ${type || 'missing content-type'}`);
@@ -101,6 +103,7 @@ async function optimizePoster(source) {
 	if (!metadata.width || !metadata.height || metadata.height <= metadata.width) {
 		throw new Error(`source is not a portrait raster (${metadata.width ?? '?'}x${metadata.height ?? '?'})`);
 	}
+	assertPosterSourceDimensions(metadata);
 
 	let smallest = null;
 	for (const quality of QUALITY_STEPS) {
@@ -155,6 +158,7 @@ async function migrateOne(filePath, args) {
 	}
 
 	if (!isHttpUrl(sourceUrl)) throw new Error('movie poster must be an http(s) source URL before localization.');
+	assertPosterSourceAllowed(sourceUrl);
 	try {
 		const source = await fetchSource(sourceUrl);
 		const optimized = await optimizePoster(source);
