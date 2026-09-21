@@ -4000,6 +4000,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "russell-crowe": [
     "nuremberg-2025",
+    "sombras-del-pasado-2024",
     "noe-2014",
     "man-of-steel-2013",
     "los-miserables-2012",

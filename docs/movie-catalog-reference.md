@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-20. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-21. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2205
+Total de peliculas: 2212
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -44,6 +44,7 @@ Total de peliculas: 2205
 | 2026 | Couture: Vidas entrelazadas | couture-vidas-entrelazadas-2026 | Drama | Apple TV | +13 |
 | 2026 | Coyote vs. Acme | coyote-vs-acme-2026 | Comedia | Cine | ATP |
 | 2026 | Crime 101 | crime-101-2026 | Crimen | Otras plataformas | +13 |
+| 2026 | Cuatro historias de deseo 3 | cuatro-historias-de-deseo-3-2026 | Drama | Netflix | +16 |
 | 2026 | Cumbres Borrascosas | cumbres-borrascosas-2026 | Drama | HBO Max + Apple TV | +16 |
 | 2026 | Deseo | deseo-2026 | Thriller | Netflix | +16 |
 | 2026 | Dink | dink-2026 | Comedia | Apple TV | +13 |
@@ -95,6 +96,7 @@ Total de peliculas: 2205
 | 2026 | In the Hand of Dante | in-the-hand-of-dante-2026 | Thriller | Netflix | +16 |
 | 2026 | Insaciable | insaciable-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Iron Lung | iron-lung-2026 | Terror | Otras plataformas | +16 |
+| 2026 | Irumudi | irumudi-2026 | Drama | Netflix | +16 |
 | 2026 | Italiana | italiana-2026 | Comedia romantica | Apple TV | +13 |
 | 2026 | Jack Ryan de Tom Clancy: Guerra Encubierta | jack-ryan-de-tom-clancy-guerra-encubierta-2026 | Accion | Apple TV + Prime Video | +16 |
 | 2026 | Jackass: La última y nos vamos | jackass-la-ultima-y-nos-vamos-2026 | Comedia | Otras plataformas | +17 |
@@ -269,6 +271,7 @@ Total de peliculas: 2205
 | 2025 | Heart Eyes | heart-eyes-2025 | Terror | Netflix | +17 |
 | 2025 | Homo Argentum | homo-argentum-2025 | Comedia | Disney Plus | +14 |
 | 2025 | How to Train Your Dragon | how-to-train-your-dragon-2025 | Aventura | HBO Max | ATP |
+| 2025 | Incógnito | incognito-2025 | Drama | Flow | +16 |
 | 2025 | Jay Kelly | jay-kelly-2025 | Drama | Netflix | +13 |
 | 2025 | Jurassic World Rebirth | jurassic-world-rebirth-2025 | Accion | HBO Max | +13 |
 | 2025 | Karate Kid: Legends | karate-kid-legends-2025 | Accion | HBO Max | +13 |
@@ -312,6 +315,7 @@ Total de peliculas: 2205
 | 2025 | Sarah's Oil: El oro negro | sarahs-oil-el-oro-negro-2025 | Drama | Prime Video | +13 |
 | 2025 | Scarlet | scarlet-2025 | Anime | Netflix | +13 |
 | 2025 | Sin ley | sin-ley-2025 | Accion | Otras plataformas | ATP |
+| 2025 | Sin rastro | sin-rastro-2025 | Thriller | Apple TV | +16 |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Sintió algo verdadero | sintio-algo-verdadero-2025 | Drama | CINE.AR | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
@@ -328,6 +332,7 @@ Total de peliculas: 2205
 | 2025 | The Plague | the-plague-2025 | Thriller | Otras plataformas | +17 |
 | 2025 | The Woman in the Yard | the-woman-in-the-yard-2025 | Terror | HBO Max | +13 |
 | 2025 | Thunderbolts* | thunderbolts-2025 | Accion | Disney Plus | +13 |
+| 2025 | Tiburón blanco: La bestia del mar | tiburon-blanco-la-bestia-del-mar-2025 | Terror | HBO Max | +16 |
 | 2025 | Together: Juntos Hasta La Muerte | together-juntos-hasta-la-muerte-2025 | Terror | Prime Video | +16 |
 | 2025 | Tres adioses | tres-adioses-2025 | Drama | Cine | ATP |
 | 2025 | Tron: Ares | tron-ares-2025 | Ciencia ficcion | Disney Plus | ATP |
@@ -411,6 +416,7 @@ Total de peliculas: 2205
 | 2024 | Septiembre 5 | septiembre-5-2024 | Drama | Paramount Plus + Netflix | +13 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |
+| 2024 | Sombras del pasado | sombras-del-pasado-2024 | Thriller | Prime Video | +16 |
 | 2024 | Sonic 3: La película | sonic-3-la-pelicula-2024 | Accion | Paramount Plus + Netflix | +13 |
 | 2024 | Sueños en Oslo | suenos-de-oslo-2024 | Drama | Otras plataformas | +13 |
 | 2024 | Super/Man: La Historia De Christopher Reeve | super-man-the-christopher-reeve-story-2024 | Documental | HBO Max | +13 |
@@ -995,6 +1001,7 @@ Total de peliculas: 2205
 | 2013 | Plan en Las Vegas | plan-en-las-vegas-2013 | Comedia | Apple TV | +13 |
 | 2013 | Posesión infernal | posesion-infernal-2013 | Terror | HBO Max | +18 |
 | 2013 | Prisioneros | prisioneros-2013 | Thriller | Otras plataformas | +17 |
+| 2013 | Puella Magi Madoka Magica: La Rebelión | puella-magi-madoka-magica-la-rebelion-2013 | Anime | Cine | +13 |
 | 2013 | Red 2 | red-2-2013 | Accion | Apple TV | +13 |
 | 2013 | Se levanta el viento | se-levanta-el-viento-2013 | Anime | Netflix + Apple TV | ATP |
 | 2013 | Séptimo | septimo-2013 | Thriller | HBO Max | +13 |
