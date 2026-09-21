@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import { chooseCopyStyle, movieHashtags, nextDueAt, renderPostText, selectMovie, weightedXLength } from './publish-buffer-x.mjs';
 
-const movie = { slug: 'akira-1988', title: 'Akira', year: 1988, category: 'Ciencia ficción', releaseDate: '2026-09-05', releasePlatform: 'Netflix', poster: 'assets/posters/1988/akira-1988.webp', verdict: 'recomendada', verdictLabel: 'BUENISIMA', review: 'Akira arranca con una pandilla de adolescentes en un Neo-Tokio explosivo y usa la transformación de Tetsuo para hablar de poder, violencia y una ciudad que no termina de curarse. Katsuhiro Otomo dirige con una energía desatada.' };
+const movie = { slug: 'akira-1988', title: 'Akira', year: 1988, category: 'Ciencia ficción', releaseDate: '2026-09-05', releasePlatform: 'Netflix', poster: 'assets/posters/1988/akira-1988.webp', cinepostaScore: 8, review: 'Akira arranca con una pandilla de adolescentes en un Neo-Tokio explosivo y usa la transformación de Tetsuo para hablar de poder, violencia y una ciudad que no termina de curarse. Katsuhiro Otomo dirige con una energía desatada.' };
 const text = renderPostText(movie);
 assert.match(text, /Akira \(1988\)/u);
-assert.match(text, /BUENISIMA/u);
+assert.match(text, /8 · Excelente/u);
 assert.match(text, /https:\/\/www\.cineposta\.com\.ar\/peliculas\/akira-1988\//u);
 assert.match(text, /#CienciaFiccion/u);
 assert.ok(weightedXLength(text) <= 250);
@@ -25,7 +25,7 @@ for (const variant of variants) {
 	assert.match(variant, /#CienciaFiccion/u);
 }
 
-const longTitleMovie = { ...movie, slug: 'adolescencia-sexo-y-muerte-en-campamento-miasma-2026', title: 'Adolescencia, sexo y muerte en campamento Miasma: una historia extraordinariamente larga', verdictLabel: 'RECOMENDADISIMA' };
+const longTitleMovie = { ...movie, slug: 'adolescencia-sexo-y-muerte-en-campamento-miasma-2026', title: 'Adolescencia, sexo y muerte en campamento Miasma: una historia extraordinariamente larga', cinepostaScore: 9 };
 const compactText = renderPostText(longTitleMovie, { opening: 10, availability: 3, editorial: 9, verdict: 7, link: 7 });
 assert.ok(weightedXLength(compactText) <= 250, 'los títulos largos deben conservar el margen de X');
 assert.match(compactText, /Adolescencia, sexo y muerte/u);

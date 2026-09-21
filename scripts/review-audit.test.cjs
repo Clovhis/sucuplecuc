@@ -46,7 +46,7 @@ try {
 	writeMovie('original.json', {
 		title: 'La calle vacía',
 		originalTitle: 'La calle vacía',
-		verdictLabel: 'RECOMENDADA',
+		cinepostaScore: 7,
 		director: 'Ana Pérez',
 		mainCast: ['Lucía Díaz', 'Marta Sosa'],
 		editorial: { tenSecondTake: originalTenSecondTake },
@@ -57,13 +57,13 @@ try {
 	writeMovie('template.json', {
 		title: 'El planeta de vidrio',
 		originalTitle: 'El planeta de vidrio',
-		verdictLabel: 'NO RECOMENDADA',
+		cinepostaScore: 4,
 		director: 'Bruno Vega',
 		mainCast: ['Lara Paz', 'Nico Ruiz'],
 		editorial: { tenSecondTake: templateTenSecondTake },
 		synopsis: templateSynopsis,
 		review:
-			'El planeta de vidrio tiene una premisa que podría explorar la soledad de una colonia aislada, pero el guion la reduce a una sucesión de sobresaltos sin peso. Bruno Vega arma escenas prolijas y el elenco intenta sostener la tensión, aunque los personajes se vuelven cada vez más intercambiables. El desastre final llega sin modificar esa inercia y deja una sensación clara de oportunidad perdida. NO RECOMENDADA: ciencia ficción de consumo rápido, con más ruido que imaginación y poco interés por sus propias ideas.',
+			'El planeta de vidrio tiene una premisa que podría explorar la soledad de una colonia aislada, pero el guion la reduce a una sucesión de sobresaltos sin peso. Bruno Vega arma escenas prolijas y el elenco intenta sostener la tensión, aunque los personajes se vuelven cada vez más intercambiables. El desastre final llega sin modificar esa inercia y deja una sensación clara de oportunidad perdida. MALA: ciencia ficción de consumo rápido, con más ruido que imaginación y poco interés por sus propias ideas.',
 	});
 
 	const originalResult = runAudit(path.join(tempDir, 'original.json'));
@@ -72,14 +72,14 @@ try {
 	const templateResult = runAudit(path.join(tempDir, 'template.json'));
 	assert.notEqual(templateResult.status, 0, 'A verdict-label template must fail the review audit.');
 	assert.ok(
-		templateResult.stderr.includes('verdict-label colon :: NO RECOMENDADA'),
+		templateResult.stderr.includes('verdict-label colon :: Mala'),
 		templateResult.stderr,
 	);
 
 	writeMovie('missing-ten-second-take.json', {
 		title: 'La casa quieta',
 		originalTitle: 'La casa quieta',
-		verdictLabel: 'RECOMENDADA',
+		cinepostaScore: 7,
 		director: 'Ana Pérez',
 		mainCast: ['Lucía Díaz', 'Marta Sosa'],
 		synopsis: originalSynopsis,
@@ -93,7 +93,7 @@ try {
 	writeMovie('generic-ten-second-take.json', {
 		title: 'El patio de Ana',
 		originalTitle: 'El patio de Ana',
-		verdictLabel: 'RECOMENDADA',
+		cinepostaScore: 7,
 		director: 'Ana Pérez',
 		mainCast: ['Lucía Díaz', 'Marta Sosa'],
 		editorial: {

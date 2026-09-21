@@ -4,6 +4,8 @@ export type MovieVerdict =
 	| 'no_recomendada'
 	| 'basura_atomica';
 
+export type CinePostaScore = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+
 export type MovieAudienceRating = 'ATP' | `+${number}`;
 
 export type MovieAwardType = 'oscar' | 'grammy' | 'cannes';
@@ -68,8 +70,13 @@ export interface Movie {
 	director: string;
 	mainCast: string[];
 	productionCompany: string;
-	verdict: MovieVerdict;
+	/** Canonical Cine Posta editorial rating. Omit only while a movie remains unranked. */
+	cinepostaScore?: CinePostaScore | null;
+	/** Compatibility metadata; ranking and filtering must use cinepostaScore. */
+	verdict?: MovieVerdict;
+	/** Historical label; display labels are derived from cinepostaScore. */
 	verdictLabel?: string;
+	/** Compatibility metadata; Absolute Cinema is exactly cinepostaScore 10. */
 	absoluteCinema?: boolean;
 	awards?: MovieAwards;
 	runtimeMinutes?: number;

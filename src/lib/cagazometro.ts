@@ -72,10 +72,11 @@ export function getCagazometroScore(movie: Movie): number | undefined {
 	if (context.includes('psicologico') || context.includes('misterio')) score += 6;
 	if (context.includes('comedia') || context.includes('satira')) score -= 10;
 	if (context.includes('familia') || context.includes('animacion')) score -= 12;
-	if (movie.verdict === 'recomendada') score += 5;
-	if (movie.verdict === 'zafa') score -= 3;
-	if (movie.verdict === 'no_recomendada') score -= 12;
-	if (movie.verdict === 'basura_atomica') score -= 22;
+	const cinepostaScore = movie.cinepostaScore ?? 0;
+	if (cinepostaScore >= 7) score += 5;
+	else if (cinepostaScore >= 5) score -= 3;
+	else if (cinepostaScore >= 2) score -= 12;
+	else if (cinepostaScore === 1) score -= 22;
 	if ((movie.runtimeMinutes ?? 0) > 125) score -= 3;
 
 	if (hasAny(text, [/\b(aterradora|aterrador|terror puro|miedo fuerte|no te deja respirar|pesadilla|pesadillesca)\b/])) score += 17;

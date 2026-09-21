@@ -7,6 +7,7 @@ Sitio estático de reseñas cortas sobre películas, construido con Astro y alim
 - catálogo estático en `src/data/movies/*.json`
 - páginas individuales de películas y personas
 - búsqueda, filtros y subgéneros en cliente
+- score editorial Cine Posta del 1 al 10, con etiquetas canónicas y filtros por umbral
 - trailers de YouTube
 - medidores editoriales automáticos según taxonomía (`Lagrimómetro`, `Jajámetro`, `Cagazómetro`, `Explosiómetro`, `Sangrómetro`)
 - rating público `1..5` con Supabase
@@ -57,8 +58,7 @@ Campos base:
 - `mainCast`
 - `productionCompany`
 - `audienceRating`
-- `verdict`
-- `verdictLabel`
+- `cinepostaScore`
 - `review`
 
 Campos frecuentes:
@@ -84,6 +84,25 @@ Notas de taxonomía:
 - `genres` agrupa señales amplias o secundarias.
 - `subgenres` guarda chips editoriales finos y canónicos como `Gore`, `Found Footage`, `Slasher`, `RomCom`, `Body Horror`, `Psicológico`, `Sobrenatural`, `Heist`, `Road Movie`, `Coming of Age`, `Mockumentary` y `Exploitation`.
 - En películas de superhéroes Marvel/DC, `postCreditsScenes` es obligatorio: guarda el total verificado de escenas durante o después de créditos; `0` significa que no hay ninguna. No se permiten valores pendientes o sin confirmar.
+
+## Score editorial de Cine Posta
+
+`cinepostaScore` es la única fuente de verdad para la valoración editorial, los rankings, el orden “Mejor valoradas”, los filtros y las automatizaciones. Si una película todavía no fue valorada, no se inventa una nota. Las etiquetas visibles se derivan del número y no se guardan por separado:
+
+| Score | Etiqueta |
+| ---: | --- |
+| 1 | Basura total |
+| 2 | Pésima |
+| 3 | Muy mala |
+| 4 | Mala |
+| 5 | Regular |
+| 6 | Buena |
+| 7 | Muy buena |
+| 8 | Excelente |
+| 9 | Obra maestra |
+| 10 | Absolute Cinema |
+
+Las superficies públicas muestran siempre `score · etiqueta`, por ejemplo `8 · Excelente`. En el home, los presets `7+`, `8+`, `9+` y `10` funcionan como score mínimo y se combinan con año, estreno, género, plataforma, duración y el resto de los filtros.
 
 ## Scripts útiles
 
@@ -132,7 +151,7 @@ La cuenta `@cineposta` publica automáticamente una película reciente del catá
 
 El schedule de Actions corre a las 18:30 ART (`30 21 * * *` en UTC) y Buffer recibe una publicación `customScheduled` para las 19:00 ART (22:00 UTC). Antes de programarla, se controla que la franja esté libre y que la película no esté ni en el historial ni entre las últimas 100 publicaciones de Buffer. El post incluye póster local, enlace directo a la ficha y un máximo interno de 250 caracteres ponderados para no exceder el límite de X.
 
-El copy conserva el tono corto y rioplatense, pero combina 12 arranques, 4 formulaciones de disponibilidad, 10 entradas editoriales, 8 veredictos y 8 cierres con enlace: más de 30.000 combinaciones. El estilo se elige de forma determinista para que un dry-run sea reproducible y el historial evita repetir arranque, veredicto o cierre durante las tres publicaciones siguientes. El contenido editorial de las películas no se modifica.
+El copy conserva el tono corto y rioplatense, muestra el score canónico —por ejemplo `8 · Excelente`— y combina 12 arranques, 4 formulaciones de disponibilidad, 10 entradas editoriales, 8 formas de presentar la nota y 8 cierres con enlace: más de 30.000 combinaciones. El estilo se elige de forma determinista para que un dry-run sea reproducible y el historial evita repetir arranque, formulación de score o cierre durante las tres publicaciones siguientes. El contenido editorial de las películas no se modifica.
 
 Para revisar el próximo mensaje sin acceder a Buffer ni publicar nada:
 

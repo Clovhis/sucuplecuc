@@ -146,9 +146,11 @@ function requiredString(value, field, movie) {
 	return value.trim();
 }
 
+const CINEPOSTA_SCORE_LABELS = ['Basura total', 'Pésima', 'Muy mala', 'Mala', 'Regular', 'Buena', 'Muy buena', 'Excelente', 'Obra maestra', 'Absolute Cinema'];
+
 function verdictLabel(movie) {
-	if (typeof movie.verdictLabel === 'string' && movie.verdictLabel.trim()) return movie.verdictLabel.trim();
-	return ({ recomendada: 'MIRALA', zafa: 'ZAFA', 'no-recomendada': 'MEJOR PASÁ' })[movie.verdict] ?? String(movie.verdict ?? '').trim().toUpperCase();
+	const score = Number(movie.cinepostaScore);
+	return Number.isInteger(score) && score >= 1 && score <= 10 ? `${score} · ${CINEPOSTA_SCORE_LABELS[score - 1]}` : '';
 }
 
 function moviePlatforms(movie) {

@@ -10,6 +10,12 @@ const MIN_REVIEW_WORDS = 24;
 const MIN_UNDERDEVELOPED_WORDS = 32;
 const FULL_OUTPUT = process.argv.includes('--full');
 const referenceDate = new Date();
+const CINEPOSTA_SCORE_LABELS = ['Basura total', 'Pésima', 'Muy mala', 'Mala', 'Regular', 'Buena', 'Muy buena', 'Excelente', 'Obra maestra', 'Absolute Cinema'];
+
+function getCinePostaScoreLabel(movie) {
+	const score = Number(movie.cinepostaScore);
+	return Number.isInteger(score) && score >= 1 && score <= 10 ? CINEPOSTA_SCORE_LABELS[score - 1] : '';
+}
 
 const GENERATED_REVIEW_MARKERS = [
 	'tiene esta base narrativa',
@@ -217,7 +223,8 @@ function getRepeatedSentenceHits(movie, repeatedSentenceMap) {
 
 function getVerdictLabelTemplateHits(movie) {
 	const normalizedReview = normalize(movie.review);
-	const normalizedVerdictLabel = normalize(movie.verdictLabel);
+	const scoreLabel = getCinePostaScoreLabel(movie);
+	const normalizedVerdictLabel = normalize(scoreLabel);
 	if (!normalizedReview || !normalizedVerdictLabel) {
 		return [];
 	}
@@ -226,7 +233,7 @@ function getVerdictLabelTemplateHits(movie) {
 		.map((pattern) => pattern.replaceAll('<label>', normalizedVerdictLabel))
 		.filter((pattern) => normalizedReview.includes(pattern));
 	const review = String(movie.review ?? '');
-	const labels = [...new Set([movie.verdictLabel, ...MECHANICAL_VERDICT_LABELS].map((value) => String(value ?? '').trim()).filter(Boolean))];
+	const labels = [...new Set([scoreLabel, ...MECHANICAL_VERDICT_LABELS].map((value) => String(value ?? '').trim()).filter(Boolean))];
 	const matchingLabels = labels
 		.filter((label) => new RegExp(`\\b${escapeRegex(label)}\\s*:`, 'iu').test(review))
 		.sort((left, right) => right.length - left.length || left.localeCompare(right, 'es'));
@@ -244,7 +251,7 @@ function getVerdictLabelTemplateHits(movie) {
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalize(movie.review);
 	const normalizedDirector = normalize(movie.director);
-	const normalizedVerdictLabel = normalize(movie.verdictLabel);
+	const normalizedVerdictLabel = normalize(getCinePostaScoreLabel(movie));
 	const normalizedPlatform = normalize(movie.releasePlatform);
 	const markerHits = GENERATED_REVIEW_MARKERS.filter((marker) => normalizedReview.includes(marker));
 	const titleMentions = Math.max(...getTitleVariants(movie).map((titleVariant) => countPhraseOccurrences(normalizedReview, titleVariant)), 0);

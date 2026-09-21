@@ -18,17 +18,6 @@ export interface WeeklyRecommendationManifest {
 const DAY_IN_MS = 24 * 60 * 60 * 1000;
 const RECENT_YEAR_WINDOW = 3;
 const CLASSIC_YEAR_GAP = 15;
-const PREMIUM_LABELS = new Set([
-	'buenisima',
-	'buenisimo',
-	'clasico total',
-	'imperdible',
-	'legendaria',
-	'muy recomendada',
-	'obra maestra',
-	'recontra garpa',
-]);
-
 export const WEEKLY_RECOMMENDATION_ERA_LABELS: Record<WeeklyRecommendationEra, string> = {
 	nueva: 'Novedad',
 	clasica: 'Clásica',
@@ -119,25 +108,11 @@ export function getWeeklyRecommendationEra(
 }
 
 function isHighQualityMovie(movie: Movie): boolean {
-	return movie.verdict === 'recomendada' && getConfirmedStreamingPlatforms(movie).length > 0;
+	return (movie.cinepostaScore ?? 0) >= 7 && getConfirmedStreamingPlatforms(movie).length > 0;
 }
 
 function getQualityScore(movie: Movie): number {
-	const normalizedLabel = normalizeSearchText(movie.verdictLabel);
-	let score = 100;
-
-	if (movie.absoluteCinema || PREMIUM_LABELS.has(normalizedLabel)) {
-		score += 30;
-	}
-	if (normalizedLabel.includes('imperdible') || normalizedLabel.includes('obra maestra')) {
-		score += 12;
-	}
-	if (normalizedLabel.includes('buenis')) {
-		score += 10;
-	}
-	if (normalizedLabel.includes('recomend')) {
-		score += 8;
-	}
+	let score = (movie.cinepostaScore ?? 0) * 100;
 
 	const awardCount = movie.awards?.wins?.length ?? 0;
 	return score + Math.min(12, awardCount * 2);

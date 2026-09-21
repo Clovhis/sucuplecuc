@@ -325,6 +325,7 @@ export function createMovieStructuredData(
 		| 'director'
 		| 'mainCast'
 		| 'productionCompany'
+		| 'cinepostaScore'
 		| 'verdict'
 		| 'review'
 		| 'reviewPublishedAt'
@@ -382,7 +383,7 @@ export function createMovieStructuredData(
 				reviewRating: {
 					'@type': 'Rating',
 				ratingValue: getCinePostaScore(movie),
-					bestRating: 4,
+					bestRating: 10,
 					worstRating: 1,
 				},
 			}

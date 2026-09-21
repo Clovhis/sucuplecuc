@@ -26,7 +26,7 @@ const countries = [
 ];
 const actorMoviePool = getMovies()
 	.filter((movie) => movie.year <= currentYear && Boolean(movie.poster))
-	.sort((left, right) => left.year - right.year || Number(right.verdict === 'recomendada') - Number(left.verdict === 'recomendada') || left.title.localeCompare(right.title, 'es'))
+	.sort((left, right) => left.year - right.year || (right.cinepostaScore ?? 0) - (left.cinepostaScore ?? 0) || left.title.localeCompare(right.title, 'es'))
 	.map((movie) => ({
 		slug: movie.slug,
 		title: movie.title,

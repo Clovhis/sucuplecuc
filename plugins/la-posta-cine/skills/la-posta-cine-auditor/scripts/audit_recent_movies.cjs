@@ -11,6 +11,7 @@ const DEFAULT_BASE_REF = 'main';
 const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
 const PERSON_PROFILE_CATALOG_PATH = path.resolve('docs/person-profile-catalog-reference.md');
 const PEOPLE_PUBLIC_ROOT = path.resolve('public');
+const COUNTRY_FLAGS_PUBLIC_ROOT = path.resolve('public/images/flags');
 const ALLOWED_PLATFORMS = new Set([
 	'Netflix',
 	'HBO Max',
@@ -26,7 +27,7 @@ const ALLOWED_PLATFORMS = new Set([
 	'Flow',
 	'Otras plataformas',
 ]);
-const ALLOWED_VERDICTS = new Set(['recomendada', 'zafa', 'no_recomendada', 'basura_atomica']);
+const CINEPOSTA_SCORE_LABELS = ['Basura total', 'Pésima', 'Muy mala', 'Mala', 'Regular', 'Buena', 'Muy buena', 'Excelente', 'Obra maestra', 'Absolute Cinema'];
 const ALLOWED_AWARDS = new Set(['oscar', 'grammy', 'cannes']);
 const CANONICAL_SUBGENRE_DEFINITIONS = [
 	{ id: 'gore', label: 'Gore', matchers: ['gore', 'splatter'] },
@@ -72,7 +73,6 @@ const GENERIC_SUBGENRE_TOKENS = new Set([
 	'terror',
 	'thriller',
 ]);
-const MAX_VERDICT_LABEL_LENGTH = 21;
 const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
@@ -88,45 +88,6 @@ const SUPERHERO_INCLUDE_TOKENS = [
 ];
 const SUPERHERO_EXCLUDE_TOKENS = ['big hero 6', 'into the spider-verse', 'across the spider-verse', 'spider-verse', 'mario', 'blade runner', 'ricki and the flash'];
 const SUPERHERO_INCLUDED_SLUGS = new Set(['catwoman-2004', 'constantine-2005', 'dark-phoenix-2019', 'jonah-hex-2010', 'logan-2017', 'the-dark-knight-2008', 'the-dark-knight-rises-2012', 'the-new-mutants-2020']);
-const RECOMMENDED_LABEL_PATTERNS = [
-	'recomendada',
-	'esta buena',
-	'muy buena',
-	'imperdible',
-	'esta muy bien',
-	'buenisima',
-	'garpa',
-	'buena',
-	'legendaria',
-	'obra maestra',
-	'clasico total',
-];
-const PASSABLE_LABEL_PATTERNS = [
-	'pasable',
-	'zafa',
-	'esta ok',
-	'se deja ver',
-	'cumple',
-	'mas o menos',
-];
-const NEGATIVE_LABEL_PATTERNS = [
-	'no la mires',
-	'mala',
-	'malisima',
-	'es una verga',
-	'un garron',
-	'flojisima',
-	'no va',
-	'plomazo',
-	'aburrida',
-	'muy floja',
-	'se cae',
-	'basura total',
-	'ni la pongas',
-	'horrible',
-	'desastre',
-	'todo mal',
-];
 const FORBIDDEN_REVIEW_SITE_REFERENCES = [
 	'rotten tomatoes',
 	'rotten',
@@ -172,59 +133,6 @@ const REACTION_BY_VERDICT = {
 	no_recomendada: { label: 'Mejor pasá', kind: 'down' },
 	basura_atomica: { label: 'Ni te gastes', kind: 'down' },
 };
-const OPAQUE_VERDICT_LABEL_TOKENS = [
-	'seca',
-	'calida',
-	'visceral',
-	'noble',
-	'turbia',
-	'suelta',
-	'pura',
-	'moderna',
-	'clasica',
-	'noir',
-	'epica',
-	'oscura',
-	'de autor',
-	'de culto',
-	'de peso',
-	'de pulso',
-	'de golpe',
-	'de riesgo',
-	'de viaje',
-	'de trauma',
-	'luminosa',
-	'juguetona',
-	'salvaje',
-	'retorcida',
-	'directa',
-	'macabra',
-	'brava',
-	'mental',
-	'argenta',
-	'japo',
-	'noventera',
-	'ochentosa',
-	'dosmilera',
-	'actual',
-];
-const LEGENDARY_MOVIE_SLUGS = new Set([
-	'the-godfather-1972',
-	'the-godfather-part-ii-1974',
-	'casablanca-1943',
-	'schindler-s-list-1993',
-	'the-lord-of-the-rings-the-return-of-the-king-2003',
-	'spirited-away-2001',
-	'the-dark-knight-2008',
-	'pulp-fiction-1994',
-	'parasite-2019',
-	'back-to-the-future-1985',
-	'terminator-2-judgment-day-1991',
-	'the-silence-of-the-lambs-1991',
-	'star-wars-episode-v-the-empire-strikes-back-1980',
-	'the-matrix-1999',
-]);
-const LEGENDARY_LABEL_PATTERNS = ['legendaria', 'obra maestra', 'clasico total'];
 const TRUSTED_PERSON_IMAGE_HOSTS = new Set([
 	'commons.wikimedia.org',
 	'images.plex.tv',
@@ -519,10 +427,6 @@ function listCommittedChanges(baseRef) {
 		.split(/\r?\n/)
 		.map((line) => line.trim())
 		.filter(Boolean);
-}
-
-function isLegendaryMovie(movie) {
-	return LEGENDARY_MOVIE_SLUGS.has(String(movie.slug || ''));
 }
 
 function listAllCandidates(rootDir) {
@@ -953,6 +857,11 @@ function validateShareFields(movie, candidatePath, findings) {
 }
 
 function validateReactionFields(movie, candidatePath, findings) {
+	for (const field of ['verdict', 'verdictLabel', 'absoluteCinema']) {
+		if (Object.prototype.hasOwnProperty.call(movie, field)) {
+			addFinding(findings, 'error', 'legacy-rating-field', candidatePath, `Do not add "${field}". cinepostaScore is the only rating source of truth and its label is derived.`);
+		}
+	}
 	for (const field of DISALLOWED_REACTION_FIELDS) {
 		if (Object.prototype.hasOwnProperty.call(movie, field)) {
 			addFinding(
@@ -960,7 +869,7 @@ function validateReactionFields(movie, candidatePath, findings) {
 				'error',
 				'manual-reaction-field',
 				candidatePath,
-				`Do not add "${field}" to movie JSON. The global reaction panel derives its copy and illustration from verdict and slug.`,
+				`Do not add "${field}" to movie JSON. The global reaction panel derives its copy and illustration from cinepostaScore and slug.`,
 			);
 		}
 	}
@@ -1008,7 +917,9 @@ function validateCommunityBuildRoute(movie, candidatePath, findings) {
 
 function validateReactionBuildRoute(movie, candidatePath, findings) {
 	const slug = typeof movie.slug === 'string' ? movie.slug.trim() : '';
-	const reaction = REACTION_BY_VERDICT[movie.verdict];
+	const score = Number(movie.cinepostaScore);
+	const derivedVerdict = score >= 7 ? 'recomendada' : score >= 5 ? 'zafa' : score >= 2 ? 'no_recomendada' : 'basura_atomica';
+	const reaction = REACTION_BY_VERDICT[derivedVerdict];
 	if (!slug || !reaction) return;
 
 	const routePath = path.join('dist', 'peliculas', encodeURIComponent(slug), 'index.html');
@@ -1034,7 +945,7 @@ function validateReactionBuildRoute(movie, candidatePath, findings) {
 			'error',
 			'reaction-panel-mismatch',
 			candidatePath,
-			`Built reaction panel must render "${reaction.label}" with the ${reaction.kind} state for verdict "${movie.verdict}".`,
+			`Built reaction panel must render "${reaction.label}" with the ${reaction.kind} state for Cine Posta score ${String(score)}.`,
 		);
 	}
 }
@@ -1116,8 +1027,6 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		'poster',
 		'director',
 		'productionCompany',
-		'verdict',
-		'verdictLabel',
 		'review',
 	];
 
@@ -1289,53 +1198,10 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		}
 	}
 
-	if (!ALLOWED_VERDICTS.has(movie.verdict)) {
-		addFinding(findings, 'error', 'invalid-verdict', candidatePath, `Unsupported verdict "${String(movie.verdict)}".`);
-	}
-
-	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
-	const normalizedMovieTitle = normalizeText(movie.title);
-	if (movie.verdictLabel.trim().length > MAX_VERDICT_LABEL_LENGTH) {
-		addFinding(
-			findings,
-			'error',
-			'verdict-label-too-long',
-			candidatePath,
-			`verdictLabel must stay within ${String(MAX_VERDICT_LABEL_LENGTH)} visible characters so the card badge does not clip.`,
-		);
-	}
-
-	if (/\b(19|20)\d{2}\b/.test(movie.verdictLabel)) {
-		addFinding(findings, 'warn', 'verdict-label-noisy', candidatePath, 'verdictLabel should read like a short user-facing quality signal, not metadata.');
-	}
-
-	if (
-		normalizedMovieTitle &&
-		normalizedMovieTitle
-			.split(' ')
-			.some((token) => token.length >= 4 && normalizedVerdictLabel.includes(token))
-	) {
-		addFinding(findings, 'warn', 'verdict-label-title-leak', candidatePath, 'verdictLabel should not repeat the movie title.');
-	}
-
-	if (movie.verdict === 'recomendada' && !RECOMMENDED_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
-		addFinding(findings, 'warn', 'verdict-label-tone', candidatePath, 'recomendada entries should use a clearly positive verdictLabel.');
-	}
-
-	if (isLegendaryMovie(movie) && !LEGENDARY_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
-		addFinding(findings, 'error', 'legendary-verdict-label', candidatePath, 'legendary movies should use a verdictLabel that explicitly recognizes their status, like LEGENDARIA or OBRA MAESTRA.');
-	}
-
-	if (movie.verdict === 'zafa' && !PASSABLE_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
-		addFinding(findings, 'error', 'verdict-label-tone', candidatePath, 'zafa entries should use a clearly passable verdictLabel.');
-	}
-
-	if ((movie.verdict === 'no_recomendada' || movie.verdict === 'basura_atomica') && !NEGATIVE_LABEL_PATTERNS.some((pattern) => normalizedVerdictLabel.includes(pattern))) {
-		addFinding(findings, 'error', 'verdict-label-tone', candidatePath, 'negative entries should use a clearly negative verdictLabel.');
-	}
-
-	if (OPAQUE_VERDICT_LABEL_TOKENS.some((token) => normalizedVerdictLabel.includes(token))) {
-		addFinding(findings, 'error', 'opaque-verdict-label', candidatePath, 'verdictLabel should be direct and easy to understand, not a cryptic adjective mashup.');
+	if (!Number.isInteger(movie.cinepostaScore) || movie.cinepostaScore < 1 || movie.cinepostaScore > 10) {
+		addFinding(findings, 'error', 'invalid-cineposta-score', candidatePath, 'cinepostaScore is required for a ranked movie and must be an integer from 1 to 10.');
+	} else if (!CINEPOSTA_SCORE_LABELS[movie.cinepostaScore - 1]) {
+		addFinding(findings, 'error', 'invalid-cineposta-score-label', candidatePath, 'cinepostaScore must resolve to the canonical Cine Posta label.');
 	}
 
 	if (movie.releasePlatform !== undefined && !ALLOWED_PLATFORMS.has(movie.releasePlatform)) {
@@ -1414,11 +1280,35 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		}
 	}
 
-	if (movie.country === 'AR' && movie.isArgentinian !== true) {
+	if (typeof movie.country !== 'string' || !/^[A-Z]{2}(?:, [A-Z]{2})*$/.test(movie.country)) {
+		addFinding(
+			findings,
+			'error',
+			'invalid-country',
+			candidatePath,
+			'country is required and must use canonical ISO codes, for example "MY" or "AR, ES".',
+		);
+	}
+
+	const countryCodes = typeof movie.country === 'string' ? movie.country.split(', ') : [];
+	for (const countryCode of countryCodes) {
+		const flagCode = countryCode === 'XC' ? 'cz' : countryCode.toLowerCase();
+		if (!fs.existsSync(path.join(COUNTRY_FLAGS_PUBLIC_ROOT, `${flagCode}.svg`))) {
+			addFinding(
+				findings,
+				'error',
+				'missing-country-flag',
+				candidatePath,
+				`missing local flag asset public/images/flags/${flagCode}.svg for country ${countryCode}; run npm run flags:sync.`,
+			);
+		}
+	}
+
+	if (countryCodes.includes('AR') && movie.isArgentinian !== true) {
 		addFinding(findings, 'warn', 'argentina-flag', candidatePath, 'country is AR but isArgentinian is not true.');
 	}
 
-	if (movie.isArgentinian === true && movie.country !== 'AR') {
+	if (movie.isArgentinian === true && !countryCodes.includes('AR')) {
 		addFinding(findings, 'warn', 'argentina-country', candidatePath, 'isArgentinian is true but country is not AR.');
 	}
 

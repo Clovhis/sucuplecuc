@@ -1,15 +1,15 @@
 ---
 import type { Movie } from '../types/movie';
+import { formatCinePostaScore, getMovieCinePostaScore, getMovieLegacyVerdict } from '../lib/cineposta-score';
 
 type Props = {
-	movie: Pick<Movie, 'slug' | 'verdict'>;
+	movie: Pick<Movie, 'slug' | 'cinepostaScore' | 'verdict'>;
 };
 
 const { movie } = Astro.props as Props;
 
 const reactionByVerdict = {
 	recomendada: {
-		label: 'Mirala',
 		detail: 'El equipo la banca: pulgar arriba y plan de película resuelto.',
 		kind: 'up',
 		images: [
@@ -24,7 +24,6 @@ const reactionByVerdict = {
 		],
 	},
 	zafa: {
-		label: 'Zafa',
 		detail: 'No está mal, pero tampoco es para salir corriendo a verla.',
 		kind: 'meh',
 		images: [
@@ -39,7 +38,6 @@ const reactionByVerdict = {
 		],
 	},
 	no_recomendada: {
-		label: 'Mejor pasá',
 		detail: 'El equipo no la compra: pulgar abajo y a buscar otra.',
 		kind: 'down',
 		images: [
@@ -54,7 +52,6 @@ const reactionByVerdict = {
 		],
 	},
 	basura_atomica: {
-		label: 'Ni te gastes',
 		detail: 'Acá el equipo es unánime: pulgar abajo y a otra cosa.',
 		kind: 'down',
 		images: [
@@ -70,7 +67,9 @@ const reactionByVerdict = {
 	},
 } as const;
 
-const reaction = reactionByVerdict[movie.verdict];
+const reaction = reactionByVerdict[getMovieLegacyVerdict(movie) ?? 'zafa'];
+const score = getMovieCinePostaScore(movie);
+const scoreLabel = score === null ? 'Sin valorar' : formatCinePostaScore(score);
 const imageIndex = Array.from(movie.slug).reduce((total, character) => total + character.charCodeAt(0), 0) % reaction.images.length;
 const image = reaction.images[imageIndex];
 const headingId = `team-reaction-${movie.slug}`;
@@ -79,7 +78,7 @@ const headingId = `team-reaction-${movie.slug}`;
 <section class={`movie-reaction movie-reaction--${reaction.kind}`} aria-labelledby={headingId}>
 	<div class="movie-reaction__copy">
 		<p class="movie-reaction__kicker">El equipo dice</p>
-		<h2 id={headingId}>{reaction.label}</h2>
+		<h2 id={headingId}>{scoreLabel}</h2>
 		<p>{reaction.detail}</p>
 	</div>
 	<img class="movie-reaction__art" src={image.src} alt={image.alt} width="1536" height="1024" loading="lazy" decoding="async" />

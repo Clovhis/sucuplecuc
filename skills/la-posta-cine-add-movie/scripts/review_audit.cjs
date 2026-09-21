@@ -21,6 +21,12 @@ const TEN_SECOND_TAKE_FIELDS = [
 	'forFansOf',
 	'notForYouIf',
 ];
+const CINEPOSTA_SCORE_LABELS = ['Basura total', 'Pésima', 'Muy mala', 'Mala', 'Regular', 'Buena', 'Muy buena', 'Excelente', 'Obra maestra', 'Absolute Cinema'];
+
+function getCinePostaScoreLabel(movie) {
+	const score = Number(movie.cinepostaScore);
+	return Number.isInteger(score) && score >= 1 && score <= 10 ? CINEPOSTA_SCORE_LABELS[score - 1] : '';
+}
 const TEN_SECOND_TAKE_GENERIC_MARKERS = [
 	'depende bastante de tu animo',
 	'sin pedirte media vida',
@@ -370,9 +376,13 @@ function getTenSecondTakeIssues(movie, fieldMap) {
 		.filter((value) => value.length > 2))];
 	const specificityHits = specificityTerms.filter((term) => allText.includes(term));
 	if (specificityHits.length < 2) issues.push(`ten-second take lacks film-specific anchors :: ${specificityHits.length}/2`);
-	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
-	if (normalizedVerdictLabel && allText.includes(normalizedVerdictLabel)) {
-		issues.push('ten-second take repeats verdictLabel instead of explaining the judgement');
+	const normalizedVerdictLabel = normalizeText(getCinePostaScoreLabel(movie));
+	const normalizedTakeVerdict = normalizeText(take.verdict);
+	if (
+		normalizedVerdictLabel &&
+		(normalizedTakeVerdict === normalizedVerdictLabel || normalizedTakeVerdict.startsWith(`${normalizedVerdictLabel} porque`))
+	) {
+		issues.push('ten-second take repeats the canonical score label instead of explaining the judgement');
 	}
 	return issues;
 }
@@ -411,7 +421,7 @@ function getVerdictLedTemplateHit(review) {
 
 function getVerdictLabelStockHits(movie) {
 	const normalizedReview = normalizeText(movie.review);
-	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
+	const normalizedVerdictLabel = normalizeText(getCinePostaScoreLabel(movie));
 	if (!normalizedReview || !normalizedVerdictLabel) {
 		return [];
 	}
@@ -428,7 +438,7 @@ function getVerdictLabelFormattingHits(movie) {
 		return [];
 	}
 
-	const labels = [...new Set([movie.verdictLabel, ...MECHANICAL_VERDICT_LABELS].map((value) => String(value || '').trim()).filter(Boolean))];
+	const labels = [...new Set([getCinePostaScoreLabel(movie), ...MECHANICAL_VERDICT_LABELS].map((value) => String(value || '').trim()).filter(Boolean))];
 	const matchingLabels = labels
 		.filter((label) => new RegExp(`\\b${escapeRegex(label)}\\s*:`, 'iu').test(review))
 		.sort((left, right) => right.length - left.length || left.localeCompare(right, 'es'));
@@ -445,7 +455,7 @@ function getVerdictLabelFormattingHits(movie) {
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalizeText(movie.review);
 	const normalizedDirector = normalizeText(movie.director);
-	const normalizedVerdictLabel = normalizeText(movie.verdictLabel);
+	const normalizedVerdictLabel = normalizeText(getCinePostaScoreLabel(movie));
 	const normalizedPlatform = normalizeText(movie.releasePlatform);
 	const markerHits = GENERATED_REVIEW_MARKERS.filter((marker) =>
 		normalizedReview.includes(decorateMarker(marker, movie)),

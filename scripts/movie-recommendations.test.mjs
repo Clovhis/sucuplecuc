@@ -22,7 +22,7 @@ function movie(overrides = {}) {
 		director: 'Richard Donner',
 		mainCast: ['Christopher Reeve'],
 		productionCompany: 'Test',
-		verdict: 'recomendada',
+		cinepostaScore: 7,
 		review: 'Una aventura de superhéroes con esperanza y corazón.',
 		...overrides,
 	};
@@ -63,7 +63,7 @@ const rejected = movie({
 	slug: 'bad-superhero',
 	title: 'Another Hero',
 	originalTitle: 'Another Hero',
-	verdict: 'no_recomendada',
+	cinepostaScore: 4,
 });
 
 assert.equal(

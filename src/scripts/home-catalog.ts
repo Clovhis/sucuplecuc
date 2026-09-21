@@ -7,7 +7,7 @@
 
 type StatusMode = 'catalog' | 'search';
 type ReturnBehavior = 'reset';
-type ChipDataKey = 'homeGenreId' | 'homeSubgenreId' | 'homePlatformId' | 'homeVerdictId' | 'homeYearId';
+type ChipDataKey = 'homeGenreId' | 'homeSubgenreId' | 'homePlatformId' | 'homeYearId';
 type HistoryUpdateMode = 'push' | 'replace';
 type MovieSort = 'newest' | 'oldest' | 'most-recommended' | 'least-recommended' | 'title';
 
@@ -20,8 +20,7 @@ type MovieIndexEntry = {
 	year: string;
 	releaseTimestamp: number;
 	recentPremiere: boolean;
-	verdict: string;
-	absoluteCinema: boolean;
+	score: number | null;
 	url: string;
 	posterUrl: string;
 	meta: string;
@@ -55,10 +54,9 @@ genres: string[];
 	editorialFilters: string[];
 	subgenres: string[];
 	platforms: string[];
-	verdicts: string[];
+	minScore: number | null;
 	years: string[];
 	recentPremiere: boolean;
-	absoluteCinema: boolean;
 	sort: MovieSort;
 };
 
@@ -72,13 +70,16 @@ type StoredHomeState = Partial<HomeState> & {
 	subgenre?: unknown;
 	platform?: unknown;
 	verdict?: unknown;
+	verdicts?: unknown;
+	absoluteCinema?: unknown;
+	minScore?: unknown;
 	year?: unknown;
 	sort?: unknown;
 };
 
-const homeStateKey = 'cineposta:home-list-state:v6';
+const homeStateKey = 'cineposta:home-list-state:v7';
 const homeReturnBehaviorKey = 'cineposta:home-return-behavior:v1';
-const homeUrlFilterKeys = ['q', 'genero', 'filtro', 'subgenero', 'plataforma', 'valoracion', 'anio', 'estreno', 'absolute-cinema', 'orden'] as const;
+const homeUrlFilterKeys = ['q', 'genero', 'filtro', 'subgenero', 'plataforma', 'score', 'valoracion', 'anio', 'estreno', 'absolute-cinema', 'orden'] as const;
 const sortOptions: ReadonlyArray<MovieSort> = ['newest', 'oldest', 'most-recommended', 'least-recommended', 'title'];
 const catalogLoadingPhrases = [
 	'Bancá que carga el videoclub...',
@@ -118,8 +119,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const subgenreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-subgenre-chip]'));
 	const platformChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-platform-chip]'));
-	const verdictChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-verdict-chip]'));
-	const absoluteCinemaChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-absolute-cinema-chip]'));
+	const scoreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-score-chip]'));
 	const yearChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-year-chip]'));
 	const quickFilterChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-quick-filter]'));
 	const specificYearSelect = document.querySelector<HTMLSelectElement>('[data-home-specific-year]');
@@ -162,8 +162,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			year: card.dataset.movieYear ?? '',
 			releaseTimestamp: Number(card.dataset.movieReleaseTimestamp ?? 0),
 			recentPremiere: card.dataset.movieRecentPremiere === 'true',
-			verdict: card.dataset.movieVerdict ?? '',
-			absoluteCinema: card.dataset.movieAbsoluteCinema === 'true',
+			score: Number.isInteger(Number(card.dataset.movieScore)) && Number(card.dataset.movieScore) >= 1
+				? Number(card.dataset.movieScore)
+				: null,
 			url: card.dataset.movieUrl ?? (link instanceof HTMLAnchorElement ? link.href : ''),
 			posterUrl:
 				card.dataset.moviePosterUrl ??
@@ -229,20 +230,18 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	let activeEditorialFilters: string[] = [];
 	let activeSubgenres: string[] = [];
 	let activePlatforms: string[] = [];
-	let activeVerdicts: string[] = [];
+	let activeMinScore: number | null = null;
 	let activeYears: string[] = [];
 	let activeRecentPremiere = false;
-	let activeAbsoluteCinema = false;
 	let activeSort: MovieSort = 'newest';
 	let lastAppliedQuery = '';
 	let lastAppliedGenre = '';
 	let lastAppliedEditorialFilters = '';
 	let lastAppliedSubgenre = '';
 	let lastAppliedPlatform = '';
-	let lastAppliedVerdicts = '';
+	let lastAppliedMinScore: number | null = null;
 	let lastAppliedYears = '';
 	let lastAppliedRecentPremiere = false;
-	let lastAppliedAbsoluteCinema = false;
 	let lastAppliedSort: MovieSort = 'newest';
 	let filterTimer = 0;
 	let filterFrame = 0;
@@ -279,7 +278,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	);
 	const subgenreIds = getChipValues(subgenreChips, 'homeSubgenreId');
 	const platformIds = getChipValues(platformChips, 'homePlatformId');
-	const verdictIds = getChipValues(verdictChips, 'homeVerdictId');
 	const yearIds = new Set([
 		...getChipValues(yearChips, 'homeYearId'),
 		...(specificYearSelect instanceof HTMLSelectElement
@@ -329,6 +327,20 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			),
 		);
 	};
+	const sanitizeMinScore = (value: unknown): number | null => {
+		const score = Number(value);
+		return Number.isInteger(score) && score >= 1 && score <= 10 ? score : null;
+	};
+	const getLegacyUrlMinScore = (params: URLSearchParams): number | null => {
+		if (params.get('absolute-cinema') === 'true') return 10;
+		const legacyScores = params.getAll('valoracion').flatMap((value) => value.split(',')).map((value) => ({
+			recomendada: 7,
+			zafa: 5,
+			no_recomendada: 2,
+			basura_atomica: 1,
+		})[value]).filter((value): value is number => Number.isInteger(value));
+		return legacyScores.length > 0 ? Math.min(...legacyScores) : null;
+	};
 
 	const readHomeStateFromUrl = (): HomeFilterState | null => {
 		const params = new URLSearchParams(window.location.search);
@@ -343,10 +355,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			editorialFilters: sanitizeFilterValues(params.getAll('filtro'), editorialFilterIds),
 			subgenres: sanitizeFilterValues(params.getAll('subgenero'), subgenreIds),
 			platforms: sanitizeFilterValues(params.getAll('plataforma'), platformIds),
-			verdicts: sanitizeFilterValues(params.getAll('valoracion'), verdictIds),
+			minScore: sanitizeMinScore(params.get('score')) ?? getLegacyUrlMinScore(params),
 			years: sanitizeFilterValues(params.getAll('anio'), yearIds),
 			recentPremiere: params.get('estreno') === 'reciente',
-			absoluteCinema: params.get('absolute-cinema') === 'true',
 			sort: isMovieSort(sort) ? sort : 'newest',
 		};
 	};
@@ -365,10 +376,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (activeEditorialFilters.length > 0) params.set('filtro', activeEditorialFilters.join(','));
 		if (activeSubgenres.length > 0) params.set('subgenero', activeSubgenres.join(','));
 		if (activePlatforms.length > 0) params.set('plataforma', activePlatforms.join(','));
-		if (activeVerdicts.length > 0) params.set('valoracion', activeVerdicts.join(','));
+		if (activeMinScore !== null) params.set('score', String(activeMinScore));
 		if (activeYears.length > 0) params.set('anio', activeYears.join(','));
 		if (activeRecentPremiere) params.set('estreno', 'reciente');
-		if (activeAbsoluteCinema) params.set('absolute-cinema', 'true');
 		if (activeSort !== 'newest') params.set('orden', activeSort);
 
 		const nextUrl = `${url.pathname}${url.search}${url.hash}`;
@@ -394,10 +404,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		activeEditorialFilters.length > 0 ||
 		activeSubgenres.length > 0 ||
 		activePlatforms.length > 0 ||
-		activeVerdicts.length > 0 ||
+		activeMinScore !== null ||
 		activeYears.length > 0 ||
 		activeRecentPremiere ||
-		activeAbsoluteCinema ||
 		activeSort !== 'newest';
 
 	const getVisibleEntries = (): MovieIndexEntry[] => visibleMovieEntries;
@@ -588,18 +597,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			value,
 			label: `Plataforma: ${getChipLabel(platformChips, 'homePlatformId', value)}`,
 		})),
-		...activeVerdicts.map((value) => ({
-			group: 'verdict',
-			value,
-			label: `Valoración: ${getChipLabel(verdictChips, 'homeVerdictId', value)}`,
-		})),
+		...(activeMinScore !== null ? [{
+			group: 'score',
+			value: String(activeMinScore),
+			label: `Score CinePosta: ${activeMinScore}${activeMinScore < 10 ? '+' : ''}`,
+		}] : []),
 		...activeYears.map((value) => ({
 			group: 'year',
 			value,
 			label: `Año: ${getChipLabel(yearChips, 'homeYearId', value) === value ? value.replace('year-', '') : getChipLabel(yearChips, 'homeYearId', value)}`,
 		})),
 		...(activeRecentPremiere ? [{ group: 'premiere', value: 'reciente', label: 'Estrenos recientes' }] : []),
-		...(activeAbsoluteCinema ? [{ group: 'absolute-cinema', value: 'true', label: 'Absolute Cinema' }] : []),
 		...(activeSort !== 'newest' ? [{ group: 'sort', value: activeSort, label: `Orden: ${sortSelect?.selectedOptions[0]?.textContent?.trim() ?? activeSort}` }] : []),
 		...(input.value.trim()
 			? [{ group: 'query', value: input.value.trim(), label: `Búsqueda: “${input.value.trim()}”` }]
@@ -1062,10 +1070,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				editorialFilters: [...activeEditorialFilters],
 				subgenres: [...activeSubgenres],
 				platforms: [...activePlatforms],
-				verdicts: [...activeVerdicts],
+				minScore: activeMinScore,
 				years: [...activeYears],
 				recentPremiere: activeRecentPremiere,
-				absoluteCinema: activeAbsoluteCinema,
 				sort: activeSort,
 				scrollY: Math.max(0, Math.round(window.scrollY)),
 				ts: Date.now(),
@@ -1083,7 +1090,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		const editorialFilterKey = activeEditorialFilters.join('|');
 		const subgenreKey = activeSubgenres.join('|');
 		const platformKey = activePlatforms.join('|');
-		const verdictKey = activeVerdicts.join('|');
 		const yearKey = activeYears.join('|');
 
 		updateClearButtonVisibility();
@@ -1095,10 +1101,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			editorialFilterKey === lastAppliedEditorialFilters &&
 			subgenreKey === lastAppliedSubgenre &&
 			platformKey === lastAppliedPlatform
-			&& verdictKey === lastAppliedVerdicts
+			&& activeMinScore === lastAppliedMinScore
 			&& yearKey === lastAppliedYears
 			&& activeRecentPremiere === lastAppliedRecentPremiere
-			&& activeAbsoluteCinema === lastAppliedAbsoluteCinema
 			&& activeSort === lastAppliedSort
 		) {
 			const visibleCount = getVisibleEntries().length;
@@ -1112,10 +1117,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		lastAppliedEditorialFilters = editorialFilterKey;
 		lastAppliedSubgenre = subgenreKey;
 		lastAppliedPlatform = platformKey;
-		lastAppliedVerdicts = verdictKey;
+		lastAppliedMinScore = activeMinScore;
 		lastAppliedYears = yearKey;
 		lastAppliedRecentPremiere = activeRecentPremiere;
-		lastAppliedAbsoluteCinema = activeAbsoluteCinema;
 		lastAppliedSort = activeSort;
 
 		const matchingEntries: MovieIndexEntry[] = [];
@@ -1133,12 +1137,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			const editorialFilterMatch = matchesAnyFilterValue(activeEditorialFilters, entry.genres);
 			const subgenreMatch = matchesAnyFilterValue(activeSubgenres, entry.subgenres);
 			const platformMatch = matchesAnyFilterValue(activePlatforms, entry.platforms);
-			const verdictMatch = activeVerdicts.length === 0 || activeVerdicts.includes(entry.verdict);
+			const scoreMatch = activeMinScore === null || (entry.score !== null && entry.score >= activeMinScore);
 			const yearMatch = isMovieYearMatch(entry.year, activeYears);
 			const premiereMatch = !activeRecentPremiere || entry.recentPremiere;
-			const absoluteCinemaMatch = !activeAbsoluteCinema || entry.absoluteCinema;
 			const queryMatch = query.length === 0 || entry.searchable.includes(query);
-			const show = genreMatch && editorialFilterMatch && subgenreMatch && platformMatch && verdictMatch && yearMatch && premiereMatch && absoluteCinemaMatch && queryMatch;
+			const show = genreMatch && editorialFilterMatch && subgenreMatch && platformMatch && scoreMatch && yearMatch && premiereMatch && queryMatch;
 
 			if (show) {
 				matchingEntries.push(entry);
@@ -1151,11 +1154,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			if (activeSort === 'newest') return newestFirst || left.title.localeCompare(right.title, 'es');
 			if (activeSort === 'oldest') return -newestFirst || left.title.localeCompare(right.title, 'es');
 			if (activeSort === 'title') return left.title.localeCompare(right.title, 'es');
-			const rank = (entry: MovieIndexEntry): number => {
-				const base = { recomendada: 4, zafa: 3, no_recomendada: 2, basura_atomica: 1 }[entry.verdict] ?? 0;
-				return activeSort === 'most-recommended' && entry.absoluteCinema ? base + 0.5 : base;
-			};
-			const rankDelta = rank(right) - rank(left);
+			const rankDelta = (right.score ?? 0) - (left.score ?? 0);
 			return (activeSort === 'most-recommended' ? rankDelta : -rankDelta) || newestFirst || left.title.localeCompare(right.title, 'es');
 		});
 
@@ -1199,16 +1198,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
-	const applyVerdictUI = (): void => {
-		for (const chip of verdictChips) {
-			const value = chip.dataset.homeVerdictId;
-			const isActive = Boolean(value && activeVerdicts.includes(value));
+	const applyScoreUI = (): void => {
+		for (const chip of scoreChips) {
+			const value = sanitizeMinScore(chip.dataset.homeScoreMin);
+			const isActive = value === activeMinScore;
 			chip.classList.toggle('is-active', isActive);
 			chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-		}
-		for (const chip of absoluteCinemaChips) {
-			chip.classList.toggle('is-active', activeAbsoluteCinema);
-			chip.setAttribute('aria-pressed', activeAbsoluteCinema ? 'true' : 'false');
 		}
 	};
 
@@ -1229,9 +1224,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		for (const chip of quickFilterChips) {
 			const quickFilter = chip.dataset.homeQuickFilter;
 			const isActive =
-				(quickFilter === 'new-and-good' && activeRecentPremiere && activeVerdicts.includes('recomendada') && activeSort === 'newest') ||
+				(quickFilter === 'new-and-good' && activeRecentPremiere && activeMinScore === 7 && activeSort === 'newest') ||
 				(quickFilter === 'premieres' && activeRecentPremiere && activeSort === 'newest') ||
-				(quickFilter === 'recommended' && activeVerdicts.includes('recomendada'));
+				(quickFilter === 'recommended' && activeMinScore === 7);
 			chip.classList.toggle('is-active', isActive);
 			chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 		}
@@ -1246,17 +1241,16 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		activeEditorialFilters = [];
 		activeSubgenres = [];
 		activePlatforms = [];
-		activeVerdicts = [];
+		activeMinScore = null;
 		activeYears = [];
 		activeRecentPremiere = false;
-		activeAbsoluteCinema = false;
 		activeSort = 'newest';
 		input.value = '';
 		hideSuggestions();
 		applyGenreUI();
 		applySubgenreUI();
 		applyPlatformUI();
-		applyVerdictUI();
+		applyScoreUI();
 		applyYearUI();
 		applyQuickFilterUI();
 		applySortUI();
@@ -1323,15 +1317,14 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		activeEditorialFilters = sanitizeFilterValues(state.editorialFilters, editorialFilterIds);
 		activeSubgenres = sanitizeFilterValues(state.subgenres, subgenreIds);
 		activePlatforms = sanitizeFilterValues(state.platforms, platformIds);
-		activeVerdicts = sanitizeFilterValues(state.verdicts, verdictIds);
+		activeMinScore = sanitizeMinScore(state.minScore);
 		activeYears = sanitizeFilterValues(state.years, yearIds);
 		activeRecentPremiere = state.recentPremiere;
-		activeAbsoluteCinema = state.absoluteCinema;
 		activeSort = state.sort;
 		applyGenreUI();
 		applySubgenreUI();
 		applyPlatformUI();
-		applyVerdictUI();
+		applyScoreUI();
 		applyYearUI();
 		applyQuickFilterUI();
 		applySortUI();
@@ -1341,10 +1334,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		lastAppliedEditorialFilters = '';
 		lastAppliedSubgenre = '';
 		lastAppliedPlatform = '';
-		lastAppliedVerdicts = '';
+		lastAppliedMinScore = null;
 		lastAppliedYears = '';
 		lastAppliedRecentPremiere = false;
-		lastAppliedAbsoluteCinema = false;
 		lastAppliedSort = 'newest';
 	};
 
@@ -1364,10 +1356,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			editorialFilters: [],
 			subgenres: [],
 			platforms: [],
-			verdicts: [],
+			minScore: null,
 			years: [],
 			recentPremiere: false,
-			absoluteCinema: false,
 			sort: 'newest',
 		});
 		if (urlState) {
@@ -1414,10 +1405,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			editorialFilters: sanitizeFilterValues(parsed.editorialFilters, editorialFilterIds),
 			subgenres: sanitizeFilterValues(parsed.subgenres ?? parsed.subgenre, subgenreIds),
 			platforms: sanitizeFilterValues(parsed.platforms ?? parsed.platform, platformIds),
-			verdicts: sanitizeFilterValues(parsed.verdicts ?? parsed.verdict, verdictIds),
+			minScore: sanitizeMinScore(parsed.minScore) ?? (parsed.absoluteCinema === true ? 10 : null),
 			years: sanitizeFilterValues(parsed.years ?? parsed.year, yearIds),
 			recentPremiere: parsed.recentPremiere === true,
-			absoluteCinema: parsed.absoluteCinema === true,
 			sort: isMovieSort(parsed.sort) ? parsed.sort : 'newest',
 		});
 		updateHomeUrl('replace');
@@ -1437,7 +1427,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		applyGenreUI();
 		applySubgenreUI();
 		applyPlatformUI();
-		applyVerdictUI();
+		applyScoreUI();
 		applyYearUI();
 		applyQuickFilterUI();
 		applySortUI();
@@ -1476,18 +1466,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		});
 	}
 
-	for (const chip of verdictChips) {
+	for (const chip of scoreChips) {
 		chip.addEventListener('click', () => {
-			const verdict = chip.dataset.homeVerdictId;
-			if (!verdict) return;
-			toggleFilterValue(activeVerdicts, verdict);
-			applyFilterChange();
-		});
-	}
-
-	for (const chip of absoluteCinemaChips) {
-		chip.addEventListener('click', () => {
-			activeAbsoluteCinema = !activeAbsoluteCinema;
+			activeMinScore = sanitizeMinScore(chip.dataset.homeScoreMin);
 			applyFilterChange();
 		});
 	}
@@ -1518,17 +1499,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			switch (chip.dataset.homeQuickFilter) {
 				case 'new-and-good':
 					activeRecentPremiere = true;
-					activeVerdicts = ['recomendada'];
+					activeMinScore = 7;
 					activeSort = 'newest';
 					break;
 				case 'premieres':
 					activeRecentPremiere = true;
-					activeVerdicts = [];
+					activeMinScore = null;
 					activeSort = 'newest';
 					break;
 				case 'recommended':
 					activeRecentPremiere = false;
-					activeVerdicts = ['recomendada'];
+					activeMinScore = 7;
 					activeSort = 'newest';
 					break;
 				default:
@@ -1557,14 +1538,12 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			activeSubgenres = activeSubgenres.filter((item) => item !== value);
 		} else if (group === 'platform') {
 			activePlatforms = activePlatforms.filter((item) => item !== value);
-		} else if (group === 'verdict') {
-			activeVerdicts = activeVerdicts.filter((item) => item !== value);
+		} else if (group === 'score') {
+			activeMinScore = null;
 		} else if (group === 'year') {
 			activeYears = activeYears.filter((item) => item !== value);
 		} else if (group === 'premiere') {
 			activeRecentPremiere = false;
-		} else if (group === 'absolute-cinema') {
-			activeAbsoluteCinema = false;
 		} else if (group === 'sort') {
 			activeSort = 'newest';
 		} else {
@@ -1581,7 +1560,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	applyGenreUI();
 	applySubgenreUI();
 	applyPlatformUI();
-	applyVerdictUI();
+	applyScoreUI();
 	applyYearUI();
 	applyQuickFilterUI();
 	applySortUI();

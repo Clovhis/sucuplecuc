@@ -40,24 +40,24 @@ async function expectMovieTitles(page: Page, expectedTitles: string[]): Promise<
 }
 
 test.describe('home catalog filters', () => {
-  test('quick picks and verdict controls share a compact desktop row', async ({ page }, testInfo) => {
-    test.skip(testInfo.project.name.startsWith('mobile-'), 'Desktop hierarchy assertion');
-    await gotoHome(page, { openAdvanced: false });
+	test('quick picks and score controls share a compact desktop row', async ({ page }, testInfo) => {
+		test.skip(testInfo.project.name.startsWith('mobile-'), 'Desktop hierarchy assertion');
+		await gotoHome(page, { openAdvanced: false });
 
-    const layout = await page.locator('.home-results-tools__primary-filters').evaluate((container) => {
-      const quick = container.querySelector<HTMLElement>('.home-quick-filters');
-      const verdict = container.querySelector<HTMLElement>('[data-home-filter-panel="verdict"]');
-      const containerRect = container.getBoundingClientRect();
-      const quickRect = quick?.getBoundingClientRect();
-      const verdictRect = verdict?.getBoundingClientRect();
+		const layout = await page.locator('.home-results-tools__primary-filters').evaluate((container) => {
+			const quick = container.querySelector<HTMLElement>('.home-quick-filters');
+			const score = container.querySelector<HTMLElement>('[data-home-filter-panel="score"]');
+			const containerRect = container.getBoundingClientRect();
+			const quickRect = quick?.getBoundingClientRect();
+			const scoreRect = score?.getBoundingClientRect();
 			const quickChipRows = new Set(
 				Array.from(quick?.querySelectorAll<HTMLElement>('.home-quick-filters__chip') ?? []).map((chip) =>
 					Math.round(chip.getBoundingClientRect().top),
 				),
 			).size;
-      return {
-        sameRow: Boolean(quickRect && verdictRect && Math.abs(quickRect.top - verdictRect.top) <= 1),
-        ordered: Boolean(quickRect && verdictRect && quickRect.right < verdictRect.left),
+			return {
+				sameRow: Boolean(quickRect && scoreRect && Math.abs(quickRect.top - scoreRect.top) <= 1),
+				ordered: Boolean(quickRect && scoreRect && quickRect.right < scoreRect.left),
         fits: containerRect.right <= window.innerWidth + 1,
 			quickChipRows,
       };
@@ -97,12 +97,12 @@ test.describe('home catalog filters', () => {
     expect(new URL(page.url()).searchParams.get('genero')).toBe('terror');
   });
 
-  test('verdict filters give the movie selector a prominent desktop slot', async ({ page }, testInfo) => {
+  test('score presets form a compact desktop rail above ordering', async ({ page }, testInfo) => {
     test.skip(testInfo.project.name.startsWith('mobile-'), 'Desktop alignment assertion');
     await gotoHome(page);
 
-    const verdictPanel = page.locator('[data-home-filter-panel="verdict"]');
-    const layout = await verdictPanel.locator('[data-home-verdict-chip], [data-home-absolute-cinema-chip], .home-verdict-cta').evaluateAll((controls) => {
+		const verdictPanel = page.locator('[data-home-filter-panel="score"]');
+		const layout = await verdictPanel.locator('[data-home-score-chip]').evaluateAll((controls) => {
       const rects = controls.map((control) => control.getBoundingClientRect());
       const rail = controls[0]?.parentElement?.getBoundingClientRect();
       return {
@@ -110,42 +110,58 @@ test.describe('home catalog filters', () => {
         rows: new Set(rects.map((rect) => Math.round(rect.top))).size,
         labels: controls.map((control) => control.textContent?.trim().replace(/\s+/g, ' ')),
         fits: controls.every((control) => (control as HTMLElement).scrollWidth <= (control as HTMLElement).clientWidth),
-        fillsRail: Boolean(rail && rects[0] && rects.at(-1) && Math.abs(rects[0].left - rail.left) <= 1 && Math.abs(rects.at(-1)!.right - rail.right) <= 1),
+		fillsRail: Boolean(rail && rects[0] && rects.at(-1) && Math.abs(rects[0].left - rail.left) <= 1 && Math.abs(rects.at(-1)!.right - rail.right) <= 1),
       };
     });
 
-    expect(layout.count).toBe(4);
+		expect(layout.count).toBe(5);
     expect(layout.rows).toBe(1);
-    expect(layout.labels).toEqual(['Absolute Cinema', 'Está buena', 'Zafa', 'Encontrá qué ver Selector · 20 segundos']);
+		expect(layout.labels).toEqual(['Todos', '7+ Muy buenas', '8+ Excelentes', '9+ Obras maestras', '10 Absolute Cinema']);
     expect(layout.fits).toBeTruthy();
     expect(layout.fillsRail).toBeTruthy();
-    await expect(verdictPanel.getByRole('button', { name: /^No va$/i })).toHaveCount(0);
-    await expect(verdictPanel.getByRole('button', { name: /^Basura$/i })).toHaveCount(0);
+		await expect(verdictPanel.getByText('Ordenar por')).toBeVisible();
     await expect(verdictPanel.getByRole('link', { name: /Encontrá qué ver/i })).toHaveAttribute('href', '/que-miro-hoy/');
   });
 
-  test('verdict controls form a touch-safe 2x2 grid on mobile', async ({ page }, testInfo) => {
+	test('score presets stay touch-safe in a contained horizontal rail on mobile', async ({ page }, testInfo) => {
     test.skip(!testInfo.project.name.startsWith('mobile-'), 'Mobile layout assertion');
     await gotoHome(page, { openAdvanced: false });
 
-    const verdictPanel = page.locator('[data-home-filter-panel="verdict"]');
+		const verdictPanel = page.locator('[data-home-filter-panel="score"]');
     await verdictPanel.scrollIntoViewIfNeeded();
-    const layout = await verdictPanel.locator('[data-home-verdict-chip], [data-home-absolute-cinema-chip], .home-verdict-cta').evaluateAll((controls) => {
+		const layout = await verdictPanel.locator('[data-home-score-chip]').evaluateAll((controls) => {
       const rects = controls.map((control) => control.getBoundingClientRect());
+		const rail = controls[0]?.parentElement;
       return {
         count: rects.length,
         rows: new Set(rects.map((rect) => Math.round(rect.top))).size,
         touchSafe: rects.every((rect) => rect.width >= 44 && rect.height >= 44),
-        insideViewport: rects.every((rect) => rect.left >= 0 && rect.right <= window.innerWidth),
+		canScroll: Boolean(rail && rail.scrollWidth > rail.clientWidth),
         noPageOverflow: document.documentElement.scrollWidth <= window.innerWidth,
       };
     });
 
-    expect(layout).toEqual({ count: 4, rows: 2, touchSafe: true, insideViewport: true, noPageOverflow: true });
+		expect(layout).toEqual({ count: 5, rows: 1, touchSafe: true, canScroll: true, noPageOverflow: true });
     await expect(verdictPanel.getByRole('link', { name: /Encontrá qué ver/i })).toBeVisible();
   });
 
-  test('quick filters reuse verdict, premiere and sort state while preserving refinements', async ({ page }) => {
+	test('score presets can be applied and removed with the keyboard', async ({ page }) => {
+		await gotoHome(page, { openAdvanced: false });
+
+		const excellent = page.getByRole('button', { name: /8\+ Excelentes/i });
+		await excellent.focus();
+		await page.keyboard.press('Enter');
+		await expect(excellent).toHaveAttribute('aria-pressed', 'true');
+		expect(new URL(page.url()).searchParams.get('score')).toBe('8');
+
+		const allScores = page.getByRole('button', { name: /^Todos$/i });
+		await allScores.focus();
+		await page.keyboard.press('Space');
+		await expect(allScores).toHaveAttribute('aria-pressed', 'true');
+		expect(new URL(page.url()).searchParams.has('score')).toBeFalsy();
+	});
+
+  test('quick filters reuse score, premiere and sort state while preserving refinements', async ({ page }) => {
     await gotoHome(page);
 
     const quickFilter = page.getByRole('button', { name: /Nuevas y buenas/i });
@@ -154,9 +170,9 @@ test.describe('home catalog filters', () => {
 
     await quickFilter.click();
     await expect(quickFilter).toHaveAttribute('aria-pressed', 'true');
-    await expect(page.getByRole('button', { name: /^Está buena$/i })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: /7\+ Muy buenas/i })).toHaveAttribute('aria-pressed', 'true');
     await expect(page.getByRole('button', { name: /Quitar Estrenos recientes/i })).toBeVisible();
-    expect(new URL(page.url()).searchParams.get('valoracion')).toBe('recomendada');
+    expect(new URL(page.url()).searchParams.get('score')).toBe('7');
     expect(new URL(page.url()).searchParams.get('estreno')).toBe('reciente');
 
     const newAndGoodCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
@@ -175,51 +191,60 @@ test.describe('home catalog filters', () => {
     await terror.click();
     const cards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
       nodes.map((card) => ({
-        verdict: card.getAttribute('data-movie-verdict'),
+        score: Number(card.getAttribute('data-movie-score')),
         recent: card.getAttribute('data-movie-recent-premiere'),
         platforms: card.getAttribute('data-movie-platforms')?.split(',') ?? [],
         genre: card.getAttribute('data-movie-primary-genre'),
       })),
     );
-    expect(cards.every((card) => card.verdict === 'recomendada' && card.recent === 'true' && card.platforms.includes('netflix') && card.genre === 'terror')).toBeTruthy();
+    expect(cards.every((card) => card.score >= 7 && card.recent === 'true' && card.platforms.includes('netflix') && card.genre === 'terror')).toBeTruthy();
   });
 
-  test('verdict and year facets group catalog movies without reading verdict labels', async ({ page }) => {
+	test('8+ preset keeps newest-first ordering in one click', async ({ page }) => {
+		await gotoHome(page);
+
+		await page.getByRole('button', { name: /8\+ Excelentes/i }).click();
+		const cards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+			nodes.map((card) => ({
+				score: Number(card.getAttribute('data-movie-score')),
+				year: Number(card.getAttribute('data-movie-year')),
+			})),
+		);
+
+		expect(cards.length).toBeGreaterThan(0);
+		expect(cards.every((card) => card.score >= 8)).toBeTruthy();
+		expect(cards.every((card, index) => index === 0 || cards[index - 1].year >= card.year)).toBeTruthy();
+		expect(new URL(page.url()).searchParams.get('score')).toBe('8');
+	});
+
+	test('score thresholds combine with year and can be cleared without stale state', async ({ page }) => {
 		test.slow();
     await gotoHome(page);
 
-    await page.getByRole('button', { name: /^Está buena$/i }).click();
+		await page.getByRole('button', { name: /8\+ Excelentes/i }).click();
     await page.getByRole('button', { name: /^80s$/i }).click();
 		await expect.poll(async () => page.locator('[data-movie-search-grid] [data-movie-card]').count(), { timeout: 15_000 }).toBeGreaterThan(0);
 
     const recommendedEighties = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
-      nodes.map((card) => ({ verdict: card.getAttribute('data-movie-verdict'), year: Number(card.getAttribute('data-movie-year')) })),
+		nodes.map((card) => ({ score: Number(card.getAttribute('data-movie-score')), year: Number(card.getAttribute('data-movie-year')) })),
     );
     expect(recommendedEighties.length).toBeGreaterThan(0);
-    expect(recommendedEighties.every((card) => card.verdict === 'recomendada' && card.year >= 1980 && card.year <= 1989)).toBeTruthy();
+    expect(recommendedEighties.every((card) => card.score >= 8 && card.year >= 1980 && card.year <= 1989)).toBeTruthy();
+	expect(new URL(page.url()).searchParams.get('score')).toBe('8');
 
     await page.getByRole('button', { name: /^Limpiar todo$/i }).click();
-    await page.getByRole('button', { name: /^Zafa$/i }).click();
-    await page.getByRole('button', { name: /^2000s$/i }).click();
-		await expect.poll(async () => page.locator('[data-movie-search-grid] [data-movie-card]').count(), { timeout: 15_000 }).toBeGreaterThan(0);
-    const mixedTwoThousands = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
-      nodes.map((card) => ({ verdict: card.getAttribute('data-movie-verdict'), year: Number(card.getAttribute('data-movie-year')) })),
-    );
-    expect(mixedTwoThousands.length).toBeGreaterThan(0);
-    expect(mixedTwoThousands.every((card) => card.verdict === 'zafa' && card.year >= 2000 && card.year <= 2009)).toBeTruthy();
-
-    await page.getByRole('button', { name: /^Limpiar todo$/i }).click();
-    const absoluteCinema = page.locator('[data-home-absolute-cinema-chip]');
+		const absoluteCinema = page.getByRole('button', { name: /10 Absolute Cinema/i });
     await absoluteCinema.click();
     await expect(absoluteCinema).toHaveAttribute('aria-pressed', 'true');
-    await expect(page.getByRole('button', { name: /Absolute Cinema/i }).first()).toHaveAttribute('aria-pressed', 'true');
 		await expect.poll(async () => page.locator('[data-movie-search-grid] [data-movie-card]').count(), { timeout: 15_000 }).toBeGreaterThan(0);
     const absoluteCinemaCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
       nodes.map((card) => card.getAttribute('data-movie-absolute-cinema')),
     );
     expect(absoluteCinemaCards.length).toBeGreaterThan(0);
     expect(absoluteCinemaCards.every((value) => value === 'true')).toBeTruthy();
-    expect(new URL(page.url()).searchParams.get('absolute-cinema')).toBe('true');
+		expect(new URL(page.url()).searchParams.get('score')).toBe('10');
+		await page.getByRole('button', { name: /^Todos$/i }).click();
+		expect(new URL(page.url()).searchParams.has('score')).toBeFalsy();
   });
 
   test('date and recommendation sorting are deterministic and URL-backed', async ({ page }) => {
@@ -247,14 +272,11 @@ test.describe('home catalog filters', () => {
 		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);
     const rankedCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
       nodes.map((card) => ({
-        verdict: card.getAttribute('data-movie-verdict'),
-        absolute: card.getAttribute('data-movie-absolute-cinema') === 'true',
+		score: Number(card.getAttribute('data-movie-score')),
         release: Number(card.getAttribute('data-movie-release-timestamp')),
       })),
     );
-    const score = (card: { verdict: string | null; absolute: boolean }) =>
-      ({ recomendada: 4, zafa: 3, no_recomendada: 2, basura_atomica: 1 }[card.verdict ?? ''] ?? 0) + (card.absolute ? 0.5 : 0);
-    expect(rankedCards.every((card, index) => index === 0 || score(rankedCards[index - 1]) >= score(card))).toBeTruthy();
+		expect(rankedCards.every((card, index) => index === 0 || rankedCards[index - 1].score >= card.score)).toBeTruthy();
     expect(new URL(page.url()).searchParams.get('orden')).toBe('most-recommended');
   });
 
@@ -575,7 +597,7 @@ test.describe('home catalog filters', () => {
 
     await page.getByRole('button', { name: /Filtrar por Netflix/i }).click();
 
-    for (const subgenreId of subgenreIds) {
+	for (const subgenreId of subgenreIds) {
       const expectedTitles = allCatalogCards
         .filter((card) => card.platforms.includes('netflix') && card.subgenres.includes(subgenreId))
         .map((card) => card.title);
@@ -583,7 +605,7 @@ test.describe('home catalog filters', () => {
 
       await expect(chip).toBeVisible();
       await expect(chip).toBeEnabled();
-      await chip.scrollIntoViewIfNeeded();
+		await chip.evaluate((element) => element.scrollIntoView({ block: 'center', behavior: 'instant' }));
       await chip.click();
       await expect(chip).toHaveAttribute('aria-pressed', 'true');
       await expectMovieTitles(page, expectedTitles);

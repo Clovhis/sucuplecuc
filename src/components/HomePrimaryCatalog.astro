@@ -2,7 +2,6 @@
 import MovieCard from './MovieCard.astro';
 import PlatformBadge from './PlatformBadge.astro';
 import type { PlatformFilterOption } from '../lib/platforms';
-import type { VerdictFilterOption } from '../lib/movies';
 import { QUE_MIRO_HOY_PATH } from '../lib/seo';
 import type { Movie } from '../types/movie';
 
@@ -15,7 +14,6 @@ interface FilterOption {
 interface Props {
 	movies: Movie[];
 	platformOptions: PlatformFilterOption[];
-	verdictFilterOptions: VerdictFilterOption[];
 	editorialFilterOptions: FilterOption[];
 	primaryGenreOptions: FilterOption[];
 	subgenreOptions: FilterOption[];
@@ -27,7 +25,6 @@ interface Props {
 const {
 	movies,
 	platformOptions,
-	verdictFilterOptions,
 	editorialFilterOptions,
 	primaryGenreOptions,
 	subgenreOptions,
@@ -36,7 +33,6 @@ const {
 	movieCountLabel,
 } = Astro.props;
 const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year))).sort((left, right) => right - left);
-const visibleVerdictFilterOptions = verdictFilterOptions.filter((option) => option.id === 'recomendada' || option.id === 'zafa');
 ---
 
 {
@@ -77,16 +73,29 @@ const visibleVerdictFilterOptions = verdictFilterOptions.filter((option) => opti
 						</button>
 					</div>
 				</section>
-				<section class="home-genre-filter home-genre-filter--verdict" data-home-filter-panel="verdict">
+				<section class="home-genre-filter home-genre-filter--verdict home-score-filter" data-home-filter-panel="score">
 					<div class="home-genre-filter__heading">
-						<p class="home-genre-filter__label">El veredicto de Cine Posta</p>
-						<p class="home-genre-filter__hint">Filtrá por nuestra mirada o dejá que el selector elija por vos.</p>
+						<p class="home-genre-filter__label">Score CinePosta</p>
+						<p class="home-genre-filter__hint">Elegí la nota mínima. Se combina con todos los demás filtros.</p>
 					</div>
-					<div class="home-genre-filter__chips" role="group" aria-label="Filtros por valoración editorial y acceso al selector">
-						<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-absolute-cinema-chip aria-pressed="false">Absolute Cinema</button>
-						{visibleVerdictFilterOptions.map((option) => (
-							<button type="button" class="home-genre-filter__chip home-genre-filter__chip--verdict" data-home-verdict-chip data-home-verdict-id={option.id} aria-pressed="false">{option.label}</button>
-						))}
+					<div class="home-genre-filter__chips home-score-filter__presets" role="group" aria-label="Score mínimo de CinePosta">
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="" aria-pressed="true">Todos</button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="7" aria-pressed="false"><strong>7+</strong> Muy buenas</button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="8" aria-pressed="false"><strong>8+</strong> Excelentes</button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="9" aria-pressed="false"><strong>9+</strong> Obras maestras</button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="10" aria-pressed="false"><strong>10</strong> Absolute Cinema</button>
+					</div>
+					<div class="home-score-filter__footer">
+						<label class="home-filter-select home-score-filter__sort">
+							<span>Ordenar por</span>
+							<select data-home-sort aria-label="Ordenar películas">
+								<option value="newest">Más nuevas</option>
+								<option value="oldest">Más viejas</option>
+								<option value="most-recommended">Mejor valoradas</option>
+								<option value="least-recommended" hidden>Menos valoradas</option>
+								<option value="title">A-Z</option>
+							</select>
+						</label>
 						<a class="home-verdict-cta" href={QUE_MIRO_HOY_PATH}>
 							<span class="home-verdict-cta__copy">
 								<strong>Encontrá qué ver</strong>
@@ -97,16 +106,6 @@ const visibleVerdictFilterOptions = verdictFilterOptions.filter((option) => opti
 							</svg>
 						</a>
 					</div>
-					<label class="home-filter-select">
-						<span>Ordenar por</span>
-						<select data-home-sort aria-label="Ordenar películas">
-							<option value="newest">Más nuevas</option>
-							<option value="oldest">Más viejas</option>
-							<option value="most-recommended">Mejor valoradas</option>
-							<option value="least-recommended" hidden>Menos valoradas</option>
-							<option value="title">A-Z</option>
-						</select>
-					</label>
 				</section>
 				</div>
 				<details class="home-advanced-filters" data-home-advanced-filters>

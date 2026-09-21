@@ -80,10 +80,11 @@ export function getExplosiometroScore(movie: Movie): number | undefined {
 	if (context.includes('familia') || context.includes('animacion') || context.includes('anime')) score -= 8;
 	if (context.includes('drama')) score -= 3;
 	if (context.includes('comedia')) score -= 4;
-	if (movie.verdict === 'recomendada') score += 4;
-	if (movie.verdict === 'zafa') score -= 3;
-	if (movie.verdict === 'no_recomendada') score -= 10;
-	if (movie.verdict === 'basura_atomica') score -= 18;
+	const cinepostaScore = movie.cinepostaScore ?? 0;
+	if (cinepostaScore >= 7) score += 4;
+	else if (cinepostaScore >= 5) score -= 3;
+	else if (cinepostaScore >= 2) score -= 10;
+	else if (cinepostaScore === 1) score -= 18;
 	if ((movie.runtimeMinutes ?? 0) >= 135) score += 3;
 
 	if (hasAny(text, [/\b(explosion|explosiones|explota|explotan|bomba|bombas|misil|misiles|granada|granadas|dinamita)\b/])) score += 15;

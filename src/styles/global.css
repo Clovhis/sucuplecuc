@@ -2051,8 +2051,37 @@ img {
 
 .home-genre-filter--verdict .home-genre-filter__chips {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: repeat(5, minmax(0, 1fr));
 	gap: 0.5rem;
+}
+
+.home-score-filter__chip {
+	min-height: 2.75rem;
+	padding-inline: 0.72rem;
+	font-size: 0.7rem;
+	line-height: 1.12;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.home-score-filter__chip strong {
+	display: inline-block;
+	margin-inline-end: 0.2rem;
+	color: #fff1e8;
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	font-variant-numeric: tabular-nums;
+}
+
+.home-score-filter__chip.is-active strong {
+	color: inherit;
+}
+
+.home-score-filter__footer {
+	display: grid;
+	grid-template-columns: minmax(12rem, 0.75fr) minmax(12rem, 1fr);
+	gap: 0.65rem;
+	align-items: end;
 }
 
 .home-verdict-cta {
@@ -2139,7 +2168,6 @@ img {
 
 @media (min-width: 60rem) {
 	.home-genre-filter--verdict .home-genre-filter__chips {
-		display: grid;
 		grid-template-columns: repeat(5, minmax(max-content, 1fr));
 		gap: 0.35rem;
 	}
@@ -2153,9 +2181,6 @@ img {
 		white-space: nowrap;
 	}
 
-	.home-genre-filter--verdict .home-verdict-cta {
-		grid-column: span 2;
-	}
 }
 
 .home-genre-filter--year {

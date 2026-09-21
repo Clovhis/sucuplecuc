@@ -1,5 +1,5 @@
 import type { Movie } from '../types/movie';
-import { hasMovieCountry } from './countries';
+import { hasMovieCountry } from './countries.ts';
 import { moviesSharePlatform } from './platforms.ts';
 
 export type RecommendationGenreId =
@@ -549,7 +549,7 @@ export function getMovieRecommendationAffinity(source: Movie, candidate: Movie):
 		return null;
 	}
 
-	if (candidate.verdict !== 'recomendada') {
+	if ((candidate.cinepostaScore ?? 0) < 7) {
 		return null;
 	}
 

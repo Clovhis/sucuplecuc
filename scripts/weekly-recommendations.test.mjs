@@ -22,22 +22,21 @@ function createMovie(overrides) {
 		director: 'Directora de prueba',
 		mainCast: [],
 		productionCompany: 'Productora de prueba',
-		verdict: overrides.verdict ?? 'recomendada',
-		verdictLabel: overrides.verdictLabel ?? 'Recomendada',
+		cinepostaScore: overrides.cinepostaScore ?? 7,
 		review: 'Reseña de prueba.',
 	};
 }
 
 const movies = [
-	createMovie({ slug: 'nueva-1', year: 2026, releaseDate: '2026-08-01', releasePlatform: 'Netflix', verdictLabel: 'Imperdible' }),
-	createMovie({ slug: 'nueva-2', year: 2025, releaseDate: '2025-10-01', releasePlatform: 'HBO Max', verdictLabel: 'Muy buena' }),
-	createMovie({ slug: 'clasica-1', year: 1985, releasePlatform: 'Disney Plus', verdictLabel: 'Clásico total' }),
-	createMovie({ slug: 'clasica-2', year: 2000, releasePlatform: 'Apple TV', verdictLabel: 'Muy recomendada' }),
-	createMovie({ slug: 'intermedia', year: 2015, releasePlatform: 'Prime Video', verdictLabel: 'Recomendada' }),
-	createMovie({ slug: 'zafa', year: 2024, releaseDate: '2024-08-01', releasePlatform: 'Netflix', verdict: 'zafa', verdictLabel: 'Zafa' }),
-	createMovie({ slug: 'cine', year: 2024, releaseDate: '2024-08-01', releasePlatform: 'Cine', verdictLabel: 'Imperdible' }),
-	createMovie({ slug: 'cine-y-streaming', year: 2024, releaseDate: '2024-08-01', releasePlatforms: ['Netflix', 'Cine'], verdictLabel: 'Imperdible' }),
-	createMovie({ slug: 'sin-proveedor-confirmado', year: 2024, releaseDate: '2024-08-01', releasePlatform: 'Otras plataformas', verdictLabel: 'Imperdible' }),
+	createMovie({ slug: 'nueva-1', year: 2026, releaseDate: '2026-08-01', releasePlatform: 'Netflix', cinepostaScore: 9 }),
+	createMovie({ slug: 'nueva-2', year: 2025, releaseDate: '2025-10-01', releasePlatform: 'HBO Max', cinepostaScore: 8 }),
+	createMovie({ slug: 'clasica-1', year: 1985, releasePlatform: 'Disney Plus', cinepostaScore: 10 }),
+	createMovie({ slug: 'clasica-2', year: 2000, releasePlatform: 'Apple TV', cinepostaScore: 8 }),
+	createMovie({ slug: 'intermedia', year: 2015, releasePlatform: 'Prime Video', cinepostaScore: 7 }),
+	createMovie({ slug: 'zafa', year: 2024, releaseDate: '2024-08-01', releasePlatform: 'Netflix', cinepostaScore: 5 }),
+	createMovie({ slug: 'cine', year: 2024, releaseDate: '2024-08-01', releasePlatform: 'Cine', cinepostaScore: 9 }),
+	createMovie({ slug: 'cine-y-streaming', year: 2024, releaseDate: '2024-08-01', releasePlatforms: ['Netflix', 'Cine'], cinepostaScore: 9 }),
+	createMovie({ slug: 'sin-proveedor-confirmado', year: 2024, releaseDate: '2024-08-01', releasePlatform: 'Otras plataformas', cinepostaScore: 9 }),
 ];
 
 assert.deepEqual(getConfirmedStreamingPlatforms(movies[0]), ['Netflix']);

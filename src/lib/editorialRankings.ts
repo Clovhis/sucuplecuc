@@ -1,4 +1,4 @@
-import type { Movie, MovieVerdict } from '../types/movie';
+import type { Movie } from '../types/movie';
 import { getCagazometroScore } from './cagazometro';
 import { getExplosiometroScore } from './explosiometro';
 import { getJajametroScore } from './jajametro';
@@ -25,8 +25,6 @@ export interface EditorialRanking {
 	movies: EditorialRankingMovie[];
 	candidateMovies: EditorialRankingMovie[];
 }
-
-const POSITIVE_VERDICTS = new Set<MovieVerdict>(['recomendada', 'zafa']);
 
 const METER_LABELS: Record<EditorialMeterKind, string> = {
 	explosiometro: 'Explosiómetro',
@@ -64,7 +62,7 @@ function pickMovies(
 		.filter(
 			(entry): entry is { movie: Movie; meterScore: number } =>
 				entry.meterScore !== undefined &&
-				POSITIVE_VERDICTS.has(entry.movie.verdict) &&
+				(entry.movie.cinepostaScore ?? 0) >= 5 &&
 				!usedMovieSlugs.has(entry.movie.slug),
 		)
 		.sort((left, right) => right.movie.year - left.movie.year || left.movie.title.localeCompare(right.movie.title, 'es'))

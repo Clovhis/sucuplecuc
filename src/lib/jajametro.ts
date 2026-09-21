@@ -88,10 +88,11 @@ export function getJajametroScore(movie: Movie): number | undefined {
 	if (context.includes('familia') || context.includes('animacion')) score += 2;
 	if (context.includes('drama')) score -= 6;
 	if (context.includes('documental') || context.includes('documentary')) score -= 12;
-	if (movie.verdict === 'recomendada') score += 6;
-	if (movie.verdict === 'zafa') score -= 4;
-	if (movie.verdict === 'no_recomendada') score -= 12;
-	if (movie.verdict === 'basura_atomica') score -= 24;
+	const cinepostaScore = movie.cinepostaScore ?? 0;
+	if (cinepostaScore >= 7) score += 6;
+	else if (cinepostaScore >= 5) score -= 4;
+	else if (cinepostaScore >= 2) score -= 12;
+	else if (cinepostaScore === 1) score -= 24;
 	if ((movie.runtimeMinutes ?? 0) > 125) score -= 4;
 	if ((movie.runtimeMinutes ?? 0) > 0 && (movie.runtimeMinutes ?? 0) <= 100) score += 2;
 

@@ -4,29 +4,6 @@ const fs = require('fs');
 const path = require('path');
 
 const DEFAULT_ROOT = 'src/data/movies';
-const LEGENDARY_MOVIE_SLUGS = new Set([
-	'the-godfather-1972',
-	'the-godfather-part-ii-1974',
-	'casablanca-1943',
-	'schindler-s-list-1993',
-	'the-lord-of-the-rings-the-return-of-the-king-2003',
-	'spirited-away-2001',
-	'the-dark-knight-2008',
-	'pulp-fiction-1994',
-	'parasite-2019',
-	'back-to-the-future-1985',
-	'terminator-2-judgment-day-1991',
-	'the-silence-of-the-lambs-1991',
-	'star-wars-episode-v-the-empire-strikes-back-1980',
-	'the-matrix-1999',
-]);
-const LABEL_POOLS = {
-	recomendada: ['RECOMENDADA', 'ESTA BUENA', 'MUY BUENA', 'IMPERDIBLE', 'ESTA MUY BIEN', 'BUENISIMA'],
-	zafa: ['PASABLE', 'ZAFA', 'ESTA OK', 'SE DEJA VER', 'CUMPLE', 'MAS O MENOS'],
-	no_recomendada: ['NO LA MIRES', 'MALA', 'MALISIMA', 'ES UNA VERGA', 'UN GARRON', 'MUY FLOJA'],
-	basura_atomica: ['BASURA TOTAL', 'NI LA PONGAS', 'HORRIBLE', 'DESASTRE', 'TODO MAL'],
-	legendaria: ['LEGENDARIA', 'OBRA MAESTRA', 'CLASICO TOTAL'],
-};
 
 function parseArgs(argv) {
 	const args = { root: DEFAULT_ROOT };
@@ -55,23 +32,6 @@ function normalizeText(value) {
 		.replace(/[^a-z0-9\s]/g, ' ')
 		.replace(/\s+/g, ' ')
 		.trim();
-}
-
-function stableHash(value) {
-	let hash = 0;
-	const text = String(value || '');
-	for (let index = 0; index < text.length; index += 1) {
-		hash = (hash * 31 + text.charCodeAt(index)) >>> 0;
-	}
-	return hash;
-}
-
-function rotate(values, offset) {
-	if (values.length === 0) {
-		return values;
-	}
-	const safeOffset = ((offset % values.length) + values.length) % values.length;
-	return values.slice(safeOffset).concat(values.slice(0, safeOffset));
 }
 
 function getNormalizedPlatforms(movie) {
@@ -110,16 +70,6 @@ function buildMovieData(rootDir) {
 			};
 		})
 		.sort((left, right) => String(left.movie.slug).localeCompare(String(right.movie.slug)));
-}
-
-function buildLabelPool(movieData) {
-	if (LEGENDARY_MOVIE_SLUGS.has(String(movieData.movie.slug || ''))) {
-		return rotate(LABEL_POOLS.legendaria, stableHash(movieData.movie.slug));
-	}
-	const verdict = movieData.movie.verdict;
-	const hash = stableHash(movieData.movie.slug);
-	const pool = LABEL_POOLS[verdict] || LABEL_POOLS.no_recomendada;
-	return rotate(pool, hash);
 }
 
 function scorePair(source, target) {
@@ -197,7 +147,6 @@ function main() {
 	}
 
 	const movies = buildMovieData(rootDir);
-	let labelsChanged = 0;
 	let editorialChanged = 0;
 	let awardsChanged = 0;
 
@@ -219,13 +168,6 @@ function main() {
 		delete nextEditorial.idealFor;
 		movie.editorial = nextEditorial;
 
-		const labelPool = buildLabelPool(movieData);
-		const chosenLabel = labelPool[0];
-		if (movie.verdictLabel !== chosenLabel) {
-			movie.verdictLabel = chosenLabel;
-			labelsChanged += 1;
-		}
-
 		if (JSON.stringify(movie) !== original) {
 			if (JSON.stringify(movie.editorial) !== JSON.stringify((JSON.parse(original).editorial))) {
 				editorialChanged += 1;
@@ -238,7 +180,6 @@ function main() {
 		JSON.stringify(
 			{
 				movies: movies.length,
-				labelsChanged,
 				editorialChanged,
 				awardsChanged,
 			},

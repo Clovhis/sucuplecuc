@@ -139,11 +139,11 @@ test('movie detail page renders a known title', async ({ page }) => {
   await expect(page.locator('body')).toContainText(/Akira/i);
 });
 
-test('movie detail reaction follows the editorial verdict', async ({ page }) => {
+test('movie detail reaction follows the CinePosta score', async ({ page }) => {
 	const cases = [
-		{ path: '/peliculas/akira-1988/', label: 'Mirala', art: /recomendada-/ },
-		{ path: '/peliculas/1941-1979/', label: 'Zafa', art: /zafa-/ },
-		{ path: '/peliculas/a-minecraft-movie-2025/', label: 'Mejor pasá', art: /no-recomendada-/ },
+		{ path: '/peliculas/akira-1988/', label: '8 · Excelente', art: /recomendada-/ },
+		{ path: '/peliculas/1941-1979/', label: '5 · Regular', art: /zafa-/ },
+		{ path: '/peliculas/a-minecraft-movie-2025/', label: '3 · Muy mala', art: /no-recomendada-/ },
 	];
 
 	for (const reaction of cases) {

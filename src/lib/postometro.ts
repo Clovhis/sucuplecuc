@@ -10,6 +10,7 @@ import {
 	normalizeSearchText,
 } from './movies';
 import { getNormalizedMoviePlatforms, getPlatformFilterOptions } from './platforms';
+import { getMovieLegacyVerdict } from './cineposta-score';
 
 export * from './postometro-engine';
 
@@ -326,7 +327,7 @@ function inferFamilyReadiness(
 	moods: PostometroMoodId[],
 	intensities: PostometroIntensityId[],
 ): boolean {
-	if (movie.verdict === 'no_recomendada' || movie.verdict === 'basura_atomica') {
+	if ((movie.cinepostaScore ?? 0) < 5) {
 		return false;
 	}
 
@@ -469,7 +470,8 @@ export function createPostometroCatalogEntries(movies: Movie[]): PostometroCatal
 				.filter(Boolean),
 			platformLabel: getMoviePlatformLabel(movie) || 'Plataforma no cargada',
 			platforms: getNormalizedMoviePlatforms(movie),
-			verdict: movie.verdict,
+			cinepostaScore: movie.cinepostaScore ?? 1,
+			verdict: getMovieLegacyVerdict(movie) ?? 'zafa',
 			verdictLabel: getVerdictLabel(movie),
 			runtimeMinutes: movie.runtimeMinutes ?? null,
 			runtimeLabel: movie.runtimeMinutes ? formatRuntimeMinutes(movie.runtimeMinutes) : 'Duración no cargada',

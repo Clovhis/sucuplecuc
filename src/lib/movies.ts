@@ -1,24 +1,22 @@
-import type { Movie, MovieVerdict } from '../types/movie';
+import type { CinePostaScore, Movie } from '../types/movie';
 import { GENERATED_UPCOMING_RELEASES } from '../data/upcomingReleases.generated';
 import { generateMovieEditorialRecommendations, getMovieRecommendationAffinity } from './recommendation-engine';
 import { getMoviePlatforms } from './platforms';
 import { hasMovieCountry, isValidMovieCountryValue } from './countries';
+import {
+	formatCinePostaScore,
+	getLegacyVerdictFromScore,
+	getMovieCinePostaScore,
+	isCinePostaScore,
+} from './cineposta-score';
 
 const movieModules = import.meta.glob('../data/movies/*.json', { eager: true }) as Record<
 	string,
 	{ default: Movie }
 >;
 
-const VERDICT_LABELS: Record<MovieVerdict, string> = {
-	recomendada: 'Recomendada',
-	zafa: 'Zafa',
-	no_recomendada: 'Malísima',
-	basura_atomica: 'Basura atómica',
-};
-
 export const ABSOLUTE_CINEMA_LABEL = 'Absolute Cinema';
 export const CULT_MOVIE_LABEL = 'De culto';
-const ABSOLUTE_CINEMA_SOURCE_LABELS = new Set(['legendaria', 'obra maestra', 'clasico total']);
 
 export type RecommendationGenreId =
 	| 'accion'
@@ -43,12 +41,6 @@ export interface RecommendationGenreOption {
 	id: RecommendationGenreId;
 	label: string;
 	description?: string;
-}
-
-export interface VerdictFilterOption {
-	id: MovieVerdict;
-	label: string;
-	count: number;
 }
 
 export interface SubgenreFilterOption {
@@ -287,15 +279,8 @@ const GENERIC_SUBGENRE_TOKENS = new Set([
 	'thriller',
 ]);
 
-const MAX_VERDICT_LABEL_LENGTH = 21;
 const MAX_SYNOPSIS_LENGTH = 320;
 const AUDIENCE_RATING_PATTERN = /^(ATP|\+\d{1,2})$/;
-export const VERDICT_FILTER_OPTIONS: ReadonlyArray<Omit<VerdictFilterOption, 'count'>> = [
-	{ id: 'recomendada', label: 'Está buena' },
-	{ id: 'zafa', label: 'Zafa' },
-	{ id: 'no_recomendada', label: 'No va' },
-	{ id: 'basura_atomica', label: 'Basura atómica' },
-];
 export const RECENT_PREMIERE_WINDOW_DAYS = 90;
 /**
  * `releaseDate` registra la llegada vigente a Argentina (cine o plataforma),
@@ -304,21 +289,6 @@ export const RECENT_PREMIERE_WINDOW_DAYS = 90;
  * sea de este año o del anterior.
  */
 export const RECENT_MOVIE_RELEASE_YEAR_WINDOW = 1;
-const WEEKLY_SUGGESTION_LABEL_SCORE = new Map<string, number>([
-	['absolute cinema', 100],
-	['recontra garpa', 95],
-	['obra maestra', 94],
-	['clasico total', 93],
-	['muy buena', 88],
-	['garpa mal', 86],
-	['garpa fuerte', 84],
-	['recomendada', 82],
-	['esta muy bien', 80],
-	['esta buena', 78],
-	['dura y buena', 76],
-	['se deja ver', 56],
-	['pasable', 52],
-]);
 const WEEKLY_SUGGESTION_WINDOW_DAYS = 30;
 const DAY_IN_MS = 24 * 60 * 60 * 1000;
 const REVIEWISH_SYNOPSIS_PATTERNS = [
@@ -426,13 +396,8 @@ function validateMovies(movies: Movie[]): void {
 		if (!movie.productionCompany?.trim()) {
 			throw new Error(`Movie "${slug}" is missing productionCompany.`);
 		}
-		if (!movie.verdictLabel?.trim()) {
-			throw new Error(`Movie "${slug}" is missing verdictLabel.`);
-		}
-		if (movie.verdictLabel.trim().length > MAX_VERDICT_LABEL_LENGTH) {
-			throw new Error(
-				`Movie "${slug}" has verdictLabel longer than ${String(MAX_VERDICT_LABEL_LENGTH)} characters.`,
-			);
+		if (!isCinePostaScore(movie.cinepostaScore)) {
+			throw new Error(`Movie "${slug}" is missing a valid cinepostaScore from 1 to 10.`);
 		}
 		if (movie.releaseDate !== undefined) {
 			if (!/^\d{4}-\d{2}-\d{2}$/.test(movie.releaseDate)) {
@@ -686,24 +651,7 @@ function getUpcomingReleaseMapKey(release: UpcomingMovieRelease): string {
 }
 
 function getWeeklySuggestionScore(movie: Movie): number {
-	if (isAbsoluteCinemaMovie(movie)) {
-		return WEEKLY_SUGGESTION_LABEL_SCORE.get('absolute cinema')!;
-	}
-
-	const label = normalizeSearchText(getVerdictLabel(movie)).replace(/\s+/g, ' ');
-	const labelScore = WEEKLY_SUGGESTION_LABEL_SCORE.get(label);
-	if (labelScore !== undefined) {
-		return labelScore;
-	}
-
-	if (movie.verdict === 'recomendada') {
-		return 72;
-	}
-	if (movie.verdict === 'zafa') {
-		return 48;
-	}
-
-	return 0;
+	return (movie.cinepostaScore ?? 0) * 10;
 }
 
 export function getMovies(): Movie[] {
@@ -1032,39 +980,19 @@ function isFutureRelease(releaseDate: string, referenceTimestamp: number): boole
 	return !Number.isNaN(timestamp) && timestamp > referenceTimestamp;
 }
 
-export function getVerdictLabel(movie: Pick<Movie, 'verdict' | 'verdictLabel' | 'absoluteCinema'>): string {
-	if (isAbsoluteCinemaMovie(movie)) {
-		return ABSOLUTE_CINEMA_LABEL;
-	}
-	if (movie.verdictLabel?.trim()) {
-		const verdictLabel = movie.verdictLabel.trim();
-		if (normalizeSearchText(verdictLabel).replace(/\s+/g, ' ') === 'se deja ver') {
-			return 'Mas o menos';
-		}
-		return verdictLabel;
-	}
-	return VERDICT_LABELS[movie.verdict] ?? 'Sin definir';
+export function getVerdictLabel(movie: Pick<Movie, 'cinepostaScore'>): string {
+	const score = getMovieCinePostaScore(movie);
+	return score === null ? 'Sin valorar' : formatCinePostaScore(score);
 }
 
-export function getCinePostaScore(movie: Pick<Movie, 'verdict'>): number {
-	switch (movie.verdict) {
-		case 'recomendada':
-			return 4;
-		case 'zafa':
-			return 3;
-		case 'no_recomendada':
-			return 2;
-		case 'basura_atomica':
-			return 1;
-	}
+export function getCinePostaScore(movie: Pick<Movie, 'cinepostaScore'>): CinePostaScore {
+	const score = getMovieCinePostaScore(movie);
+	if (score === null) throw new Error('Movie does not have a Cine Posta score.');
+	return score;
 }
 
-export function isAbsoluteCinemaMovie(movie: Pick<Movie, 'verdictLabel' | 'absoluteCinema'>): boolean {
-	if (movie.absoluteCinema) {
-		return true;
-	}
-	const normalizedLabel = normalizeSearchText(movie.verdictLabel ?? '').replace(/\s+/g, ' ');
-	return ABSOLUTE_CINEMA_SOURCE_LABELS.has(normalizedLabel);
+export function isAbsoluteCinemaMovie(movie: Pick<Movie, 'cinepostaScore'>): boolean {
+	return getMovieCinePostaScore(movie) === 10;
 }
 
 export function normalizeSearchText(value: string): string {
@@ -1227,18 +1155,6 @@ export function getSubgenreFilterOptions(
 
 function getGenreFilterOptionById(genreId: RecommendationGenreId): RecommendationGenreOption | undefined {
 	return RECOMMENDATION_GENRE_OPTIONS.find((option) => option.id === genreId);
-}
-
-export function getVerdictFilterOptions(movies: Pick<Movie, 'verdict'>[]): VerdictFilterOption[] {
-	const counts = new Map<MovieVerdict, number>();
-	for (const movie of movies) {
-		counts.set(movie.verdict, (counts.get(movie.verdict) ?? 0) + 1);
-	}
-
-	return VERDICT_FILTER_OPTIONS.map((option) => ({
-		...option,
-		count: counts.get(option.id) ?? 0,
-	}));
 }
 
 function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void {
@@ -1748,7 +1664,7 @@ export function formatRuntimeMinutes(minutes: number): string {
 	return remainingMinutes === 0 ? `${hours}h` : `${hours}h ${remainingMinutes}m`;
 }
 
-export function getRuntimeComment(movie: Pick<Movie, 'runtimeMinutes' | 'verdict' | 'editorial'>): string | undefined {
+export function getRuntimeComment(movie: Pick<Movie, 'runtimeMinutes' | 'cinepostaScore' | 'editorial'>): string | undefined {
 	if (movie.editorial?.runtimeComment?.trim()) {
 		return movie.editorial.runtimeComment.trim();
 	}
@@ -1765,12 +1681,12 @@ export function getRuntimeComment(movie: Pick<Movie, 'runtimeMinutes' | 'verdict
 		return 'va rapido y no se hace pesada';
 	}
 	if (runtimeMinutes <= 132) {
-		return movie.verdict === 'recomendada' ? 'tiene buen ritmo y no se hace pesada' : 'dura lo suyo pero va bien';
+		return (movie.cinepostaScore ?? 0) >= 7 ? 'tiene buen ritmo y no se hace pesada' : 'dura lo suyo pero va bien';
 	}
 	if (runtimeMinutes <= 150) {
-		return movie.verdict === 'recomendada' ? 'es larguita pero va bien' : 'dura bastante y se siente';
+		return (movie.cinepostaScore ?? 0) >= 7 ? 'es larguita pero va bien' : 'dura bastante y se siente';
 	}
-	return movie.verdict === 'recomendada' ? 'es larguisima pero no te aburre nunca' : 'es larga y se hace notar';
+	return (movie.cinepostaScore ?? 0) >= 7 ? 'es larguisima pero no te aburre nunca' : 'es larga y se hace notar';
 }
 
 function getBridgeAnchorCandidates(movie: Movie, allMovies: Movie[]): Movie[] {
@@ -1833,15 +1749,11 @@ export function getMovieEditorialSummary(movie: Movie, allMovies: Movie[]): Movi
 	};
 }
 
-export function getVerdictBadgeClass(movie: Pick<Movie, 'verdict' | 'verdictLabel' | 'absoluteCinema'>): string {
-	if (isAbsoluteCinemaMovie(movie)) {
-		return 'badge--absolute-cinema';
-	}
-	const normalizedLabel = normalizeSearchText(getVerdictLabel(movie));
-	if (normalizedLabel.includes('mediocre')) {
-		return 'badge--zafa';
-	}
-	return `badge--${movie.verdict}`;
+export function getVerdictBadgeClass(movie: Pick<Movie, 'cinepostaScore'>): string {
+	const score = getMovieCinePostaScore(movie);
+	if (score === null) return 'badge--unrated';
+	if (score === 10) return 'badge--absolute-cinema';
+	return `badge--${getLegacyVerdictFromScore(score)}`;
 }
 
 export function getAbsoluteCinemaStickerUrl(): string {

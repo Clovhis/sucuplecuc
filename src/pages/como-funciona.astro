@@ -1,34 +1,30 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
+import { CINEPOSTA_SCORES, formatCinePostaScore } from '../lib/cineposta-score';
 import { SITE_NAME } from '../lib/seo';
 
-const pageTitle = `Cómo funciona ${SITE_NAME} | Veredictos y metodología`;
+const pageTitle = `Cómo funciona ${SITE_NAME} | Scores y metodología`;
 const pageDescription =
-	'Cine Posta explica cómo arma sus reseñas breves, sus veredictos y su criterio editorial: una guía argentina, directa y práctica para decidir qué mirar.';
+	'Cine Posta explica cómo arma sus reseñas breves, su score del 1 al 10 y su criterio editorial: una guía argentina, directa y práctica para decidir qué mirar.';
 
-const verdicts = [
-	{
-		name: 'Absolute Cinema',
-		copy: 'Es el sello máximo. Acá entran las obras maestras, los clásicos totales y esas pelis que no solo recomendamos: las defendemos a muerte.',
-	},
-	{
-		name: 'Recomendada',
-		copy: 'Está buena de verdad. Si ya te llama un poco, hay muchas chances de que te guste.',
-	},
-	{
-		name: 'Zafa',
-		copy: 'Tiene algo para ofrecer, pero no es prioridad. Puede entrar justo según tu mood, el género o el elenco.',
-	},
-	{
-		name: 'Malísima',
-		copy: 'No alcanza. Puede tener alguna idea o algún momento suelto, pero en conjunto no levanta.',
-	},
-	{
-		name: 'Basura atómica',
-		copy: 'Nivel desastre. Solo suma si vas por morbo, completismo o para verla y putearla con amigos.',
-	},
-];
+const scoreDescriptions = {
+	1: 'Un desastre de punta a punta. Puede servir para el morbo, el completismo o una noche de verla y putearla con amigos.',
+	2: 'Casi nada funciona y lo poco rescatable no alcanza para sostenerla.',
+	3: 'Tiene alguna idea o momento suelto, pero el conjunto sigue quedando muy abajo.',
+	4: 'Falla más de lo que acierta. Solo entra si el género, el elenco o la curiosidad te tiran fuerte.',
+	5: 'Mitad y mitad: puede acompañar un rato, aunque no es una prioridad.',
+	6: 'Cumple lo que promete y deja una experiencia positiva, sin llegar a destacarse demasiado.',
+	7: 'Está muy bien y la recomendamos con confianza. Es el primer umbral fuerte para elegir qué ver.',
+	8: 'Se destaca de verdad: una recomendación clara, sólida y con bastante para recordar.',
+	9: 'Una obra maestra. De esas películas que justifican buscarles un lugar cuanto antes.',
+	10: 'El sello máximo de Cine Posta: películas extraordinarias que defendemos a muerte.',
+} as const;
+
+const scores = CINEPOSTA_SCORES.map((score) => ({
+	name: formatCinePostaScore(score),
+	copy: scoreDescriptions[score],
+}));
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
@@ -69,7 +65,7 @@ const verdicts = [
 			<article class="about-page__card fade-up" style="--item-delay: 200ms;">
 				<h2>Qué no hacemos</h2>
 				<p>
-					No puntuamos como una planilla, no fingimos neutralidad absoluta y no estiramos reseñas para rellenar.
+					El número no reemplaza la reseña ni finge una neutralidad absoluta: resume un criterio editorial, no una cuenta matemática.
 				</p>
 				<p>
 					Si una película es chica, rara, fallida o incómoda, igual puede entrar. Lo importante es decir con claridad para quién puede funcionar.
@@ -80,13 +76,13 @@ const verdicts = [
 		<section class="methodology-page__verdicts fade-up" style="--item-delay: 260ms;" aria-labelledby="verdictos-title">
 			<div class="methodology-page__section-head">
 				<p class="about-page__kicker">Diccionario posta</p>
-				<h2 id="verdictos-title">Qué significa cada veredicto</h2>
+				<h2 id="verdictos-title">Qué significa cada score</h2>
 				<p>
-					A veces el badge cambia y dice cosas como "Muy buena", "Imperdible" u "Obra maestra", pero abajo de eso estos son los escalones reales con los que ordenamos el veredicto.
+					El número es la fuente de verdad y siempre aparece con su nombre. Así podés comparar, ordenar y filtrar sin perder la lectura humana de la nota.
 				</p>
 			</div>
 			<div class="methodology-page__verdict-grid">
-				{verdicts.map((verdict) => (
+				{scores.map((verdict) => (
 					<article class="methodology-page__verdict-card">
 						<h3>{verdict.name}</h3>
 						<p>{verdict.copy}</p>

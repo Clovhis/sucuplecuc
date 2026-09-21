@@ -1,4 +1,4 @@
-import type { MovieVerdict } from '../types/movie';
+import type { CinePostaScore, MovieVerdict } from '../types/movie';
 
 export type PostometroMoodId =
 	| 'risas'
@@ -55,6 +55,7 @@ export interface PostometroCatalogEntry {
 	mainCast: string[];
 	platformLabel: string;
 	platforms: string[];
+	cinepostaScore: CinePostaScore;
 	verdict: MovieVerdict;
 	verdictLabel: string;
 	runtimeMinutes: number | null;
@@ -293,11 +294,17 @@ const intensityAdjacency: Record<PostometroIntensityId, PostometroIntensityId[]>
 	densa: ['intensa'],
 };
 
-const verdictBaseScore: Record<MovieVerdict, number> = {
-	recomendada: 100,
-	zafa: 72,
-	no_recomendada: 18,
-	basura_atomica: -50,
+const cinepostaBaseScore: Record<CinePostaScore, number> = {
+	1: -50,
+	2: -30,
+	3: -15,
+	4: 0,
+	5: 30,
+	6: 50,
+	7: 72,
+	8: 84,
+	9: 94,
+	10: 100,
 };
 
 const moodPrimaryReasons: Record<PostometroMoodId, string> = {
@@ -862,7 +869,7 @@ function getExtraScore(entry: PostometroCatalogEntry, answers: PostometroAnswers
 }
 
 function scoreMovie(entry: PostometroCatalogEntry, answers: PostometroAnswers): number {
-	let score = verdictBaseScore[entry.verdict] ?? 0;
+	let score = cinepostaBaseScore[entry.cinepostaScore] ?? 0;
 
 	score += getMoodScore(entry, answers.mood);
 	score += getMoodIntentScore(entry, answers.mood);
@@ -1188,7 +1195,7 @@ export function getPostometroResultSet(
 		.sort(
 			(left, right) =>
 				right.score - left.score ||
-				verdictBaseScore[right.entry.verdict] - verdictBaseScore[left.entry.verdict] ||
+				right.entry.cinepostaScore - left.entry.cinepostaScore ||
 				right.entry.year - left.entry.year ||
 				left.entry.title.localeCompare(right.entry.title, 'es'),
 		)

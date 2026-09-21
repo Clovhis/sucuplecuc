@@ -13,11 +13,11 @@ export const WEEKLY_RECOMMENDATIONS: WeeklyRecommendationManifest = {
 			"era": "nueva"
 		},
 		{
-			"slug": "invencible-2006",
+			"slug": "el-hombre-elefante-1980",
 			"era": "clasica"
 		},
 		{
-			"slug": "the-breadwinner-el-pan-de-la-guerra-2017",
+			"slug": "la-caza-2012",
 			"era": "para-descubrir"
 		},
 		{
@@ -25,11 +25,11 @@ export const WEEKLY_RECOMMENDATIONS: WeeklyRecommendationManifest = {
 			"era": "nueva"
 		},
 		{
-			"slug": "el-graduado-1967",
+			"slug": "one-flew-over-the-cuckoo-s-nest-1975",
 			"era": "clasica"
 		},
 		{
-			"slug": "kung-fu-panda-3-2016",
+			"slug": "coco-2017",
 			"era": "para-descubrir"
 		}
 	]
