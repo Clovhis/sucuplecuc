@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-auditor
-description: Audit recent, revalidated, or bulk-loaded La Posta Cine movie JSON files for deterministic duplicate/content integrity, local WebP poster integrity, identity-safe people enrichment, original AI-written editorial copy, Argentine platforms, trailer validity, generated output, catalog sync, and safe diff scope. Use after movie adds, backfills, or platform changes without modifying site code.
+description: Audit recent, revalidated, or bulk-loaded La Posta Cine movie JSON files for the canonical 1–10 Cine Posta score, duplicate/content integrity, local WebP poster integrity, identity-safe people enrichment, original editorial copy, Argentine platforms, trailer validity, generated output, catalog sync, and safe diff scope.
 ---
 
 # la-posta-cine-auditor

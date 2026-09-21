@@ -104,6 +104,14 @@ Notas de taxonomía:
 
 Las superficies públicas muestran siempre `score · etiqueta`, por ejemplo `8 · Excelente`. En el home, los presets `7+`, `8+`, `9+` y `10` funcionan como score mínimo y se combinan con año, estreno, género, plataforma, duración y el resto de los filtros.
 
+Las skills de carga y auditoría aplican el mismo contrato: prohíben persistir `verdict`, `verdictLabel`, `absoluteCinema` o etiquetas personalizadas; tampoco convierten ratings externos o categorías antiguas mecánicamente. La fuente versionada vive en `skills/`, la copia distribuible en `plugins/la-posta-cine/skills/` y la instalación local se puede alinear explícitamente con:
+
+```bash
+node plugins/la-posta-cine/scripts/sync-from-repo.mjs --install
+```
+
+Sin `--install`, el comando sólo actualiza el paquete versionado del plugin.
+
 ## Scripts útiles
 
 Desarrollo:

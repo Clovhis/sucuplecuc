@@ -25,4 +25,5 @@
 - Cada PR valida contenido, build, dependencias productivas y e2e en Chromium.
 - La cobertura completa de navegadores corre semanalmente o con `workflow_dispatch` y `full_e2e`.
 - Los próximos estrenos, sus trailers y las recomendaciones semanales se actualizan automáticamente, se validan y se versionan directamente en `main`; el deploy publica esos cambios y también refresca el Radar de cine al reconstruir el sitio.
+- `skills/` es la fuente versionada de las skills de Cine Posta. Después de modificarlas, ejecutá `node plugins/la-posta-cine/scripts/sync-from-repo.mjs` para actualizar el plugin; usá `--install` sólo cuando también corresponda actualizar la instalación local de Codex. Validá la fuente, el plugin y la instalación antes de publicar.
 

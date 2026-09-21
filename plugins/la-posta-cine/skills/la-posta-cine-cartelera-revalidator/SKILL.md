@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-cartelera-revalidator
-description: "Revalidate La Posta Cine entries claiming `releasePlatform: \"Cine\"` against current Argentine theatrical and legal AR availability. Use for stale cinema badges or after a movie load resolves to Cine; make content-only platform changes, refresh the catalog, and hand affected files to the auditor."
+description: "Revalidate La Posta Cine entries claiming `releasePlatform: \"Cine\"` against current Argentine theatrical and legal AR availability. Use for stale cinema badges or after a movie load resolves to Cine; preserve the canonical 1–10 score, make content-only platform changes, refresh the catalog, and hand affected files to the auditor."
 ---
 
 # la-posta-cine-cartelera-revalidator
@@ -20,7 +20,7 @@ Use those outputs before opening any movie files. Keep `Cine` only if the title 
 
 3. Resolve to one allowed label: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `CINE.AR`, `Cine`, or `Otras plataformas`. A second verified AR offer may go in `releasePlatforms` (two labels total). `Otras plataformas` is exclusive. On ambiguous evidence, prefer it over a stale `Cine` claim.
 
-4. Modify only changed entries, then regenerate and audit the affected paths:
+4. Modify only changed entries. Preserve `cinepostaScore` exactly unless the user separately authorized an editorial rerating; never add `verdict`, `verdictLabel`, `absoluteCinema`, or a custom score label during a platform revalidation. Then regenerate and audit the affected paths:
 
 ```bash
 npm run catalog:movies

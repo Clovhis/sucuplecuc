@@ -127,12 +127,12 @@ const DISALLOWED_REACTION_FIELDS = [
 	'teamReactionSlug',
 	'teamReactionImage',
 ];
-const REACTION_BY_VERDICT = {
-	recomendada: { label: 'Mirala', kind: 'up' },
-	zafa: { label: 'Zafa', kind: 'meh' },
-	no_recomendada: { label: 'Mejor pasá', kind: 'down' },
-	basura_atomica: { label: 'Ni te gastes', kind: 'down' },
-};
+function getReactionForCinePostaScore(score) {
+	if (score >= 7) return { label: 'Mirala', kind: 'up' };
+	if (score >= 5) return { label: 'Zafa', kind: 'meh' };
+	if (score >= 2) return { label: 'Mejor pasá', kind: 'down' };
+	return { label: 'Ni te gastes', kind: 'down' };
+}
 const TRUSTED_PERSON_IMAGE_HOSTS = new Set([
 	'commons.wikimedia.org',
 	'images.plex.tv',
@@ -234,7 +234,7 @@ function usage() {
 			'  --format <type>      text | json. Default: text',
 			'  --skip-youtube       Skip YouTube oEmbed checks.',
 			'  --verify-community-build  Require the built per-movie Comunidad route in dist/.',
-			'  --verify-reaction-build   Require the verdict-derived reaction panel in the built detail route.',
+			'  --verify-reaction-build   Require the score-derived reaction panel in the built detail route.',
 			'  --verify-cinema-carousel-build  Require eligible current Cine entries in the homepage trailer carousel.',
 			'  --verify-streaming-carousel-build  Require eligible current streaming entries in the homepage trailer carousel.',
 		].join('\n'),
@@ -918,9 +918,8 @@ function validateCommunityBuildRoute(movie, candidatePath, findings) {
 function validateReactionBuildRoute(movie, candidatePath, findings) {
 	const slug = typeof movie.slug === 'string' ? movie.slug.trim() : '';
 	const score = Number(movie.cinepostaScore);
-	const derivedVerdict = score >= 7 ? 'recomendada' : score >= 5 ? 'zafa' : score >= 2 ? 'no_recomendada' : 'basura_atomica';
-	const reaction = REACTION_BY_VERDICT[derivedVerdict];
-	if (!slug || !reaction) return;
+	if (!slug || !Number.isInteger(score) || score < 1 || score > 10) return;
+	const reaction = getReactionForCinePostaScore(score);
 
 	const routePath = path.join('dist', 'peliculas', encodeURIComponent(slug), 'index.html');
 	if (!fs.existsSync(routePath)) {

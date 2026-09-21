@@ -95,14 +95,14 @@ const VERDICT_LED_SUFFIX_MARKERS = [
 	'si el cuerpo te pide',
 	'para verla si',
 ];
-const VERDICT_LABEL_STOCK_PATTERNS = [
+const SCORE_LABEL_STOCK_PATTERNS = [
 	'<label> porque',
 	'lo que la vuelve <label>',
 	'el veredicto de <label>',
 	'el <label> viene de',
 	'la <label> viene de',
 ];
-const MECHANICAL_VERDICT_LABELS = [
+const MECHANICAL_SCORE_LABELS = [
 	'NO RECOMENDADA',
 	'NO VA',
 	'BASURA ATOMICA',
@@ -376,11 +376,11 @@ function getTenSecondTakeIssues(movie, fieldMap) {
 		.filter((value) => value.length > 2))];
 	const specificityHits = specificityTerms.filter((term) => allText.includes(term));
 	if (specificityHits.length < 2) issues.push(`ten-second take lacks film-specific anchors :: ${specificityHits.length}/2`);
-	const normalizedVerdictLabel = normalizeText(getCinePostaScoreLabel(movie));
+	const normalizedScoreLabel = normalizeText(getCinePostaScoreLabel(movie));
 	const normalizedTakeVerdict = normalizeText(take.verdict);
 	if (
-		normalizedVerdictLabel &&
-		(normalizedTakeVerdict === normalizedVerdictLabel || normalizedTakeVerdict.startsWith(`${normalizedVerdictLabel} porque`))
+		normalizedScoreLabel &&
+		(normalizedTakeVerdict === normalizedScoreLabel || normalizedTakeVerdict.startsWith(`${normalizedScoreLabel} porque`))
 	) {
 		issues.push('ten-second take repeats the canonical score label instead of explaining the judgement');
 	}
@@ -419,26 +419,26 @@ function getVerdictLedTemplateHit(review) {
 	return `verdict-led stock closing :: ${opener} :: ${suffix}`;
 }
 
-function getVerdictLabelStockHits(movie) {
+function getScoreLabelStockHits(movie) {
 	const normalizedReview = normalizeText(movie.review);
-	const normalizedVerdictLabel = normalizeText(getCinePostaScoreLabel(movie));
-	if (!normalizedReview || !normalizedVerdictLabel) {
+	const normalizedScoreLabel = normalizeText(getCinePostaScoreLabel(movie));
+	if (!normalizedReview || !normalizedScoreLabel) {
 		return [];
 	}
 
-	return VERDICT_LABEL_STOCK_PATTERNS
-		.map((pattern) => pattern.replaceAll('<label>', normalizedVerdictLabel))
+	return SCORE_LABEL_STOCK_PATTERNS
+		.map((pattern) => pattern.replaceAll('<label>', normalizedScoreLabel))
 		.filter((pattern) => normalizedReview.includes(pattern))
-		.map((pattern) => `verdict-label stock phrase :: ${pattern}`);
+		.map((pattern) => `score-label stock phrase :: ${pattern}`);
 }
 
-function getVerdictLabelFormattingHits(movie) {
+function getScoreLabelFormattingHits(movie) {
 	const review = String(movie.review || '');
 	if (!review) {
 		return [];
 	}
 
-	const labels = [...new Set([getCinePostaScoreLabel(movie), ...MECHANICAL_VERDICT_LABELS].map((value) => String(value || '').trim()).filter(Boolean))];
+	const labels = [...new Set([getCinePostaScoreLabel(movie), ...MECHANICAL_SCORE_LABELS].map((value) => String(value || '').trim()).filter(Boolean))];
 	const matchingLabels = labels
 		.filter((label) => new RegExp(`\\b${escapeRegex(label)}\\s*:`, 'iu').test(review))
 		.sort((left, right) => right.length - left.length || left.localeCompare(right, 'es'));
@@ -449,13 +449,13 @@ function getVerdictLabelFormattingHits(movie) {
 					(otherLabel) => otherLabel.length > label.length && normalizeText(otherLabel).endsWith(normalizeText(label)),
 				),
 		)
-		.map((label) => `verdict-label colon :: ${label}`);
+		.map((label) => `score-label colon :: ${label}`);
 }
 
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalizeText(movie.review);
 	const normalizedDirector = normalizeText(movie.director);
-	const normalizedVerdictLabel = normalizeText(getCinePostaScoreLabel(movie));
+	const normalizedScoreLabel = normalizeText(getCinePostaScoreLabel(movie));
 	const normalizedPlatform = normalizeText(movie.releasePlatform);
 	const markerHits = GENERATED_REVIEW_MARKERS.filter((marker) =>
 		normalizedReview.includes(decorateMarker(marker, movie)),
@@ -464,10 +464,10 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	if (verdictLedTemplateHit) {
 		markerHits.push(verdictLedTemplateHit);
 	}
-	for (const hit of getVerdictLabelStockHits(movie)) {
+	for (const hit of getScoreLabelStockHits(movie)) {
 		markerHits.push(hit);
 	}
-	for (const hit of getVerdictLabelFormattingHits(movie)) {
+	for (const hit of getScoreLabelFormattingHits(movie)) {
 		markerHits.push(hit);
 	}
 	const titleMentions = Math.max(...buildTitleVariants(movie).map((variant) => countPhraseOccurrences(normalizedReview, variant)), 0);
@@ -477,7 +477,7 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const runtimeHit =
 		Number.isInteger(movie.runtimeMinutes) && normalizedReview.includes(`${String(movie.runtimeMinutes)} minutos`);
 	const platformHit = normalizedPlatform ? normalizedReview.includes(normalizedPlatform) : false;
-	const verdictLabelHit = normalizedVerdictLabel ? normalizedReview.includes(normalizedVerdictLabel) : false;
+	const scoreLabelHit = normalizedScoreLabel ? normalizedReview.includes(normalizedScoreLabel) : false;
 	const ellipsisHit = String(movie.review || '').includes('...');
 	const openerPattern = buildOpenerPattern(movie);
 	const openerPatternCount = (openerPatternMap.get(openerPattern) || []).length;
@@ -495,7 +495,7 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	score += directorHit && castHits >= 2 ? 2 : directorHit || castHits >= 2 ? 1 : 0;
 	score += runtimeHit ? 1 : 0;
 	score += platformHit ? 1 : 0;
-	score += verdictLabelHit ? 1 : 0;
+	score += scoreLabelHit ? 1 : 0;
 	score += ellipsisHit ? 1 : 0;
 	score += openerPatternCount >= 4 ? 2 : openerPatternCount >= 3 ? 1 : 0;
 

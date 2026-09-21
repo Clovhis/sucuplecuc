@@ -1,4 +1,5 @@
 import { cp, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { homedir } from 'node:os';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -6,6 +7,12 @@ const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = resolve(scriptDirectory, '..', '..', '..');
 const sourceSkills = resolve(repositoryRoot, 'skills');
 const packagedSkills = resolve(scriptDirectory, '..', 'skills');
+const installRequested = process.argv.slice(2).includes('--install');
+const unknownArguments = process.argv.slice(2).filter((argument) => argument !== '--install');
+
+if (unknownArguments.length > 0) {
+	throw new Error(`Unknown argument(s): ${unknownArguments.join(', ')}. Supported option: --install`);
+}
 
 await mkdir(packagedSkills, { recursive: true });
 await cp(sourceSkills, packagedSkills, { recursive: true, force: true });
@@ -37,3 +44,11 @@ try {
 }
 
 console.log(`Synced Cine Posta skills from ${sourceSkills}`);
+
+if (installRequested) {
+	const codexRoot = process.env.CODEX_HOME?.trim() || resolve(homedir(), '.codex');
+	const installedSkills = resolve(codexRoot, 'skills');
+	await mkdir(installedSkills, { recursive: true });
+	await cp(sourceSkills, installedSkills, { recursive: true, force: true });
+	console.log(`Installed Cine Posta skills in ${installedSkills}`);
+}

@@ -70,9 +70,9 @@ try {
 	assert.equal(originalResult.status, 0, originalResult.stderr || originalResult.stdout);
 
 	const templateResult = runAudit(path.join(tempDir, 'template.json'));
-	assert.notEqual(templateResult.status, 0, 'A verdict-label template must fail the review audit.');
+	assert.notEqual(templateResult.status, 0, 'A score-label template must fail the review audit.');
 	assert.ok(
-		templateResult.stderr.includes('verdict-label colon :: Mala'),
+		templateResult.stderr.includes('score-label colon :: Mala'),
 		templateResult.stderr,
 	);
 

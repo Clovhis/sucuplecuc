@@ -17,6 +17,8 @@ Este directorio no es parte del build de Astro ni de la salida pública. La fuen
 
 El MCP de GitHub sólo declara un endpoint. La autenticación la gestiona el cliente que instala el plugin; no se guardan tokens, claves ni archivos `.env` aquí. Los MCP personales de Notion, Azure, Supabase, Discord, Zammad y el runtime local no se incluyen.
 
+Las skills de películas comparten el contrato editorial vigente: `cinepostaScore` es la única fuente de verdad para títulos valorados, siempre como entero de 1 a 10, y la etiqueta canónica se deriva. No se persisten `verdict`, `verdictLabel`, `absoluteCinema` ni etiquetas personalizadas, y no se inventa un score para una película todavía no rankeada.
+
 ## Sincronizar skills
 
 Desde la raíz del repositorio:
@@ -25,4 +27,10 @@ Desde la raíz del repositorio:
 node plugins/la-posta-cine/scripts/sync-from-repo.mjs
 ```
 
-Después de sincronizar, validá el manifiesto del plugin y las checks normales del repositorio antes de publicarlo.
+Para alinear además las skills locales de Codex con la fuente versionada:
+
+```bash
+node plugins/la-posta-cine/scripts/sync-from-repo.mjs --install
+```
+
+`--install` copia las siete skills de Cine Posta a `$CODEX_HOME/skills` o, si esa variable no está definida, a la carpeta `.codex/skills` del usuario actual. No modifica otras skills instaladas. Después de sincronizar, validá cada skill, el manifiesto del plugin y las checks normales del repositorio antes de publicarlo.

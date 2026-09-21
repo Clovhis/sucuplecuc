@@ -44,14 +44,14 @@ const TEMPLATE_REVIEW_MARKERS = [
 	'pierde un poco de fuerza',
 	'rinde por tramos',
 ];
-const VERDICT_LABEL_TEMPLATE_PATTERNS = [
+const SCORE_LABEL_TEMPLATE_PATTERNS = [
 	'<label> porque',
 	'lo que la vuelve <label>',
 	'el veredicto de <label>',
 	'el <label> viene de',
 	'la <label> viene de',
 ];
-const MECHANICAL_VERDICT_LABELS = [
+const MECHANICAL_SCORE_LABELS = [
 	'NO RECOMENDADA',
 	'NO VA',
 	'BASURA ATOMICA',
@@ -221,19 +221,19 @@ function getRepeatedSentenceHits(movie, repeatedSentenceMap) {
 		.sort((left, right) => right.count - left.count || left.sentence.localeCompare(right.sentence, 'es'));
 }
 
-function getVerdictLabelTemplateHits(movie) {
+function getScoreLabelTemplateHits(movie) {
 	const normalizedReview = normalize(movie.review);
 	const scoreLabel = getCinePostaScoreLabel(movie);
-	const normalizedVerdictLabel = normalize(scoreLabel);
-	if (!normalizedReview || !normalizedVerdictLabel) {
+	const normalizedScoreLabel = normalize(scoreLabel);
+	if (!normalizedReview || !normalizedScoreLabel) {
 		return [];
 	}
 
-	const stockPhraseHits = VERDICT_LABEL_TEMPLATE_PATTERNS
-		.map((pattern) => pattern.replaceAll('<label>', normalizedVerdictLabel))
+	const stockPhraseHits = SCORE_LABEL_TEMPLATE_PATTERNS
+		.map((pattern) => pattern.replaceAll('<label>', normalizedScoreLabel))
 		.filter((pattern) => normalizedReview.includes(pattern));
 	const review = String(movie.review ?? '');
-	const labels = [...new Set([scoreLabel, ...MECHANICAL_VERDICT_LABELS].map((value) => String(value ?? '').trim()).filter(Boolean))];
+	const labels = [...new Set([scoreLabel, ...MECHANICAL_SCORE_LABELS].map((value) => String(value ?? '').trim()).filter(Boolean))];
 	const matchingLabels = labels
 		.filter((label) => new RegExp(`\\b${escapeRegex(label)}\\s*:`, 'iu').test(review))
 		.sort((left, right) => right.length - left.length || left.localeCompare(right, 'es'));
@@ -244,14 +244,14 @@ function getVerdictLabelTemplateHits(movie) {
 					(otherLabel) => otherLabel.length > label.length && normalize(otherLabel).endsWith(normalize(label)),
 				),
 		)
-		.map((label) => `verdict-label colon :: ${label}`);
+		.map((label) => `score-label colon :: ${label}`);
 	return [...stockPhraseHits, ...colonHits];
 }
 
 function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const normalizedReview = normalize(movie.review);
 	const normalizedDirector = normalize(movie.director);
-	const normalizedVerdictLabel = normalize(getCinePostaScoreLabel(movie));
+	const normalizedScoreLabel = normalize(getCinePostaScoreLabel(movie));
 	const normalizedPlatform = normalize(movie.releasePlatform);
 	const markerHits = GENERATED_REVIEW_MARKERS.filter((marker) => normalizedReview.includes(marker));
 	const titleMentions = Math.max(...getTitleVariants(movie).map((titleVariant) => countPhraseOccurrences(normalizedReview, titleVariant)), 0);
@@ -261,7 +261,7 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	const runtimeHit =
 		Number.isInteger(movie.runtimeMinutes) && normalizedReview.includes(`${String(movie.runtimeMinutes)} minutos`);
 	const platformHit = normalizedPlatform ? normalizedReview.includes(normalizedPlatform) : false;
-	const verdictLabelHit = normalizedVerdictLabel ? normalizedReview.includes(normalizedVerdictLabel) : false;
+	const scoreLabelHit = normalizedScoreLabel ? normalizedReview.includes(normalizedScoreLabel) : false;
 	const ellipsisHit = String(movie.review ?? '').includes('...');
 	const openerPattern = buildOpenerPattern(movie, movie.review);
 	const openerPatternCount = getRepeatedEntryCount(openerPatternMap, openerPattern);
@@ -273,7 +273,7 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 	score += directorHit && castHits >= 2 ? 2 : directorHit || castHits >= 2 ? 1 : 0;
 	score += runtimeHit ? 1 : 0;
 	score += platformHit ? 1 : 0;
-	score += verdictLabelHit ? 1 : 0;
+	score += scoreLabelHit ? 1 : 0;
 	score += ellipsisHit ? 1 : 0;
 	score += openerPatternCount >= 4 ? 2 : openerPatternCount >= 3 ? 1 : 0;
 
@@ -296,7 +296,7 @@ function getSuspectSignals(movie, repeatedSentenceMap, openerPatternMap) {
 		castMatches,
 		runtimeHit,
 		platformHit,
-		verdictLabelHit,
+		scoreLabelHit,
 		ellipsisHit,
 		openerPattern,
 		openerPatternCount,
@@ -340,7 +340,7 @@ for (const { filePath, movie } of entries) {
 	const reviewSentenceCount = rawSentenceCount(movie.review);
 	const templateHits = [
 		...TEMPLATE_REVIEW_MARKERS.filter((marker) => normalize(movie.review).includes(marker)),
-		...getVerdictLabelTemplateHits(movie),
+		...getScoreLabelTemplateHits(movie),
 	];
 
 	if (
@@ -380,7 +380,7 @@ for (const { filePath, movie } of entries) {
 			castMatches: signals.castMatches,
 			runtimeHit: signals.runtimeHit,
 			platformHit: signals.platformHit,
-			verdictLabelHit: signals.verdictLabelHit,
+			scoreLabelHit: signals.scoreLabelHit,
 			ellipsisHit: signals.ellipsisHit,
 			openerPattern: signals.openerPattern,
 			openerPatternCount: signals.openerPatternCount,
