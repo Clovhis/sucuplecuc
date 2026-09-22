@@ -41,6 +41,7 @@ import { catalogGapPersonProfilesWave15 } from './personProfilesWave15.ts';
 import { requestedLotrPersonProfilesWave16 } from './personProfilesWave16.ts';
 import { requestedArgentinePersonProfilesWave17 } from './personProfilesWave17.ts';
 import { requestedArgentinePersonProfilesWave18 } from './personProfilesWave18.ts';
+import { famousDirectorProfilesWave19 } from './personProfilesWave19.ts';
 import { personProfileCatalogCredits } from './personProfileCatalogCredits.generated.ts';
 
 const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
@@ -13933,6 +13934,7 @@ const personProfilesWithEditorialOverrides = applyPersonProfileEditorialOverride
 	...requestedLotrPersonProfilesWave16,
 	...requestedArgentinePersonProfilesWave17,
 	...requestedArgentinePersonProfilesWave18,
+	...famousDirectorProfilesWave19,
 });
 
 export const personProfiles: Record<string, PersonProfileRecord> = Object.fromEntries(
