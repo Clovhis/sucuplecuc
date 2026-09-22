@@ -8,6 +8,17 @@ type Props = {
 
 const { movie } = Astro.props as Props;
 
+const barelyGoodReaction = {
+	detail: 'Aprobó raspando: es buena, aunque llegó con lo justo.',
+	kind: 'pass',
+	images: [
+		{
+			src: '/images/reactions/buena-raspando-duo.webp',
+			alt: 'Dos personajes de Cine Posta muestran alivio por una película que aprobó con lo justo.',
+		},
+	],
+} as const;
+
 const reactionByVerdict = {
 	recomendada: {
 		detail: 'El equipo la banca: pulgar arriba y plan de película resuelto.',
@@ -67,8 +78,8 @@ const reactionByVerdict = {
 	},
 } as const;
 
-const reaction = reactionByVerdict[getMovieLegacyVerdict(movie) ?? 'zafa'];
 const score = getMovieCinePostaScore(movie);
+const reaction = score === 6 ? barelyGoodReaction : reactionByVerdict[getMovieLegacyVerdict(movie) ?? 'zafa'];
 const scoreLabel = score === null ? 'Sin valorar' : formatCinePostaScore(score);
 const imageIndex = Array.from(movie.slug).reduce((total, character) => total + character.charCodeAt(0), 0) % reaction.images.length;
 const image = reaction.images[imageIndex];

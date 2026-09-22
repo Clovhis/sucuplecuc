@@ -1753,6 +1753,7 @@ export function getVerdictBadgeClass(movie: Pick<Movie, 'cinepostaScore'>): stri
 	const score = getMovieCinePostaScore(movie);
 	if (score === null) return 'badge--unrated';
 	if (score === 10) return 'badge--absolute-cinema';
+	if (score === 6) return 'badge--buena';
 	return `badge--${getLegacyVerdictFromScore(score)}`;
 }
 

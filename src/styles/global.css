@@ -4425,6 +4425,10 @@ img {
 	--card-accent: rgba(49, 179, 109, 0.85);
 }
 
+.movie-card--badge--buena {
+	--card-accent: rgba(80, 193, 121, 0.85);
+}
+
 .movie-card--badge--absolute-cinema {
 	--card-accent: hsl(31 94% 59% / 0.94);
 }
@@ -4639,6 +4643,12 @@ img {
 	background: rgba(49, 179, 109, 0.14);
 	border-color: rgba(49, 179, 109, 0.45);
 	color: #80f3b0;
+}
+
+.badge--buena {
+	background: rgba(80, 193, 121, 0.14);
+	border-color: rgba(80, 193, 121, 0.48);
+	color: #8ce7ae;
 }
 
 .badge--absolute-cinema {
@@ -5833,6 +5843,11 @@ img {
 .movie-reaction--up {
 	--reaction-accent: #66d6a4;
 	--reaction-glow: rgba(102, 214, 164, 0.2);
+}
+
+.movie-reaction--pass {
+	--reaction-accent: #78d79c;
+	--reaction-glow: rgba(120, 215, 156, 0.18);
 }
 
 .movie-reaction--meh {

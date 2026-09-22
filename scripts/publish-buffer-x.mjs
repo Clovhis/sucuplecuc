@@ -150,7 +150,7 @@ const CINEPOSTA_SCORE_LABELS = ['Basura total', 'Pésima', 'Muy mala', 'Mala', '
 
 function verdictLabel(movie) {
 	const score = Number(movie.cinepostaScore);
-	return Number.isInteger(score) && score >= 1 && score <= 10 ? `${score} · ${CINEPOSTA_SCORE_LABELS[score - 1]}` : '';
+	return Number.isInteger(score) && score >= 1 && score <= 10 ? `${score} - ${CINEPOSTA_SCORE_LABELS[score - 1]}` : '';
 }
 
 function moviePlatforms(movie) {

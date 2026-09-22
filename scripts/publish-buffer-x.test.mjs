@@ -4,10 +4,23 @@ import { chooseCopyStyle, movieHashtags, nextDueAt, renderPostText, selectMovie,
 const movie = { slug: 'akira-1988', title: 'Akira', year: 1988, category: 'Ciencia ficción', releaseDate: '2026-09-05', releasePlatform: 'Netflix', poster: 'assets/posters/1988/akira-1988.webp', cinepostaScore: 8, review: 'Akira arranca con una pandilla de adolescentes en un Neo-Tokio explosivo y usa la transformación de Tetsuo para hablar de poder, violencia y una ciudad que no termina de curarse. Katsuhiro Otomo dirige con una energía desatada.' };
 const text = renderPostText(movie);
 assert.match(text, /Akira \(1988\)/u);
-assert.match(text, /8 · Excelente/u);
+assert.match(text, /8 - Excelente/u);
 assert.match(text, /https:\/\/www\.cineposta\.com\.ar\/peliculas\/akira-1988\//u);
 assert.match(text, /#CienciaFiccion/u);
 assert.ok(weightedXLength(text) <= 250);
+
+const scoreLabels = ['Basura total', 'Pésima', 'Muy mala', 'Mala', 'Regular', 'Buena', 'Muy buena', 'Excelente', 'Obra maestra', 'Absolute Cinema'];
+for (const [index, label] of scoreLabels.entries()) {
+	const score = index + 1;
+	for (let verdict = 0; verdict < 8; verdict += 1) {
+		const scoreText = renderPostText(
+			{ ...movie, slug: `score-${score}-${verdict}`, cinepostaScore: score },
+			{ opening: 0, availability: 0, editorial: 0, verdict, link: 0 },
+		);
+		assert.ok(scoreText.includes(`${score} - ${label}`), `el score ${score} debe conservar número y nombre en la variante ${verdict}`);
+		assert.ok(weightedXLength(scoreText) <= 250, `el score ${score} no debe superar el margen de X en la variante ${verdict}`);
+	}
+}
 
 assert.deepEqual(movieHashtags({ category: 'Ciencia ficcion', genres: ['Cyberpunk', 'Anime'] }), ['#CienciaFiccion', '#Cyberpunk'], 'normaliza categorías sin tilde y suma una señal de género');
 assert.deepEqual(movieHashtags({ category: 'Terror', genres: ['cine de terror', 'Slasher'], subgenres: ['Slasher'] }), ['#Terror', '#Slasher'], 'evita etiquetas duplicadas y prioriza el subtipo');

@@ -142,6 +142,7 @@ test('movie detail page renders a known title', async ({ page }) => {
 test('movie detail reaction follows the CinePosta score', async ({ page }) => {
 	const cases = [
 		{ path: '/peliculas/akira-1988/', label: '8 · Excelente', art: /recomendada-/ },
+		{ path: '/peliculas/abyss-1989/', label: '6 · Buena', art: /buena-raspando-/ },
 		{ path: '/peliculas/1941-1979/', label: '5 · Regular', art: /zafa-/ },
 		{ path: '/peliculas/a-minecraft-movie-2025/', label: '3 · Muy mala', art: /no-recomendada-/ },
 	];
@@ -153,6 +154,10 @@ test('movie detail reaction follows the CinePosta score', async ({ page }) => {
 		const card = page.locator('.movie-reaction');
 		await expect(card.getByRole('heading', { name: reaction.label })).toBeVisible();
 		await expect(card.locator('img')).toHaveAttribute('src', reaction.art);
+		if (reaction.label === '6 · Buena') {
+			await expect(card).toHaveClass(/movie-reaction--pass/);
+			await expect(page.locator('.movie-detail__meta .badge')).toHaveClass(/badge--buena/);
+		}
 	}
 });
 
