@@ -8,33 +8,9 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-22T09:28:56.231Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-23T09:32:44.412Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"slug": "avengers-endgame",
-		"title": "Avengers: Endgame",
-		"releaseDate": "2026-09-24",
-		"videoUrl": "https://www.youtube.com/watch?v=L2NAh3CIdig",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/5906-avengers-endgame/"
-	},
-	{
-		"slug": "the-get-out",
-		"title": "El último gran golpe",
-		"releaseDate": "2026-09-24",
-		"videoUrl": "https://www.youtube.com/watch?v=oB6HNuKxLmo",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/mDVnHFcxxUJC9TQFVeKh1TJNBzh.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10544-el-ultimo-gran-golpe/"
-	},
-	{
-		"slug": "forgotten-island",
-		"title": "La isla olvidada",
-		"releaseDate": "2026-09-24",
-		"videoUrl": "https://www.youtube.com/watch?v=PhgY8cOJiQA",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10448-la-isla-olvidada/"
-	},
 	{
 		"slug": "digger",
 		"title": "DIGGER",
@@ -90,5 +66,29 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=IXshQ5mv1K8",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4387-los-juegos-del-hambre-sinsajo-parte-1/"
+	},
+	{
+		"slug": "the-hunger-games-mockingjay-part-2",
+		"title": "Los Juegos del Hambre: Sinsajo Parte 2",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=SoKIqLEGhI0",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qVgLMRVNB5bHU0inmRa0ueShacN.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4591-los-juegos-del-hambre-sinsajo-parte-2/"
+	},
+	{
+		"slug": "clayface",
+		"title": "Clayface",
+		"releaseDate": "2026-10-22",
+		"videoUrl": "https://www.youtube.com/watch?v=OGO4Mqvo3jI",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/pwWR1DRjoFxwdH0jI2elBdXTF1F.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10474-clayface/"
+	},
+	{
+		"slug": "beware-boiuna",
+		"title": "Terror en el Amazonas",
+		"releaseDate": "2026-10-22",
+		"videoUrl": "https://www.youtube.com/watch?v=4fn4UcgzRhg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yMFUD7P43VYkFZDCwKlQe6NTHu1.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10583-terror-en-el-amazonas/"
 	}
 ];
