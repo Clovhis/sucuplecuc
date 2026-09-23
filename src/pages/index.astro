@@ -23,6 +23,7 @@ import {
 	getVerdictLabel,
 	RECOMMENDATION_GENRE_OPTIONS,
 } from '../lib/movies';
+import { getCinePostaScoreLabel, getMovieCinePostaScore } from '../lib/cineposta-score';
 import { getPersonSearchEntries } from '../lib/people';
 import { getPlatformFilterOptions } from '../lib/platforms';
 import {
@@ -76,14 +77,21 @@ const HOME_PLATFORM_SLOTS = 4;
 const initialHomeMovies = getHomeMovieShowcase(movies, INITIAL_HOME_MOVIE_COUNT, HOME_PLATFORM_SLOTS);
 const initialHomeMovieSlugs = new Set(initialHomeMovies.map((movie) => movie.slug));
 const deferredHomeMovies = movies.filter((movie) => !initialHomeMovieSlugs.has(movie.slug));
-const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => ({
-	slug: movie.slug,
-	title: movie.title,
-	publishedAt: movie.reviewPublishedAt ?? movie.releaseDate,
-	year: movie.year,
-	posterUrl: getPosterUrl(movie.poster),
-	url: `${import.meta.env.BASE_URL}peliculas/${movie.slug}/`,
-}));
+const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => {
+	const score = getMovieCinePostaScore(movie);
+	const genres = Array.from(new Set([movie.category, ...(movie.genres ?? [])])).slice(0, 3);
+
+	return {
+		slug: movie.slug,
+		title: movie.title,
+		publishedAt: movie.reviewPublishedAt ?? movie.releaseDate,
+		year: movie.year,
+		genresLabel: genres.join(' · '),
+		scoreLabel: score === null ? 'Sin valorar' : `${score}/10 · ${getCinePostaScoreLabel(score)}`,
+		posterUrl: getPosterUrl(movie.poster),
+		url: `${import.meta.env.BASE_URL}peliculas/${movie.slug}/`,
+	};
+});
 // The generated snapshot is kept for the scheduled refresh audit, but the
 // homepage derives the current edition from the catalog at build time. This
 // prevents a later content branch from restoring an older snapshot.
@@ -395,6 +403,8 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 																</div>
 																<div class="upcoming-release-list__content">
 																	<p class="upcoming-release-list__title">{movie.title}</p>
+																	<p class="upcoming-release-list__genres">Género · {movie.genresLabel}</p>
+																	<p class="upcoming-release-list__score">Score · {movie.scoreLabel}</p>
 																	<time
 																		class="upcoming-release-list__date"
 																		datetime={movie.publishedAt}
