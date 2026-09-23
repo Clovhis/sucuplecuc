@@ -3927,7 +3927,7 @@ img {
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__synopsis {
 		display: -webkit-box;
 		overflow: hidden;
-		block-size: calc(5 * 1.55em);
+		max-block-size: calc(5 * 1.55em);
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 5;
 	}
@@ -3938,11 +3938,37 @@ img {
 
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue {
 		grid-template-columns: 1fr;
+		grid-template-rows: repeat(5, minmax(2.6rem, 1fr));
+		flex: 1 1 auto;
+		min-block-size: 0;
+		counter-reset: upcoming-suggestion;
 	}
 
 	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue-item {
-		grid-template-columns: minmax(0, 1fr) auto;
+		grid-template-columns: 1.6rem minmax(0, 1fr) auto;
 		gap: 0.5rem;
+		align-content: center;
+		min-block-size: 2.6rem;
+		padding: 0.48rem 0.65rem;
+		border-radius: 12px;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue-item::before {
+		content: counter(upcoming-suggestion, decimal-leading-zero);
+		counter-increment: upcoming-suggestion;
+		color: #93a1b7;
+		font-family: var(--font-mono);
+		font-size: 0.62rem;
+		font-variant-numeric: tabular-nums;
+		letter-spacing: 0.04em;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue-item--active::before {
+		color: #ffbd9a;
+	}
+
+	.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue-item--active .weekly-suggestion__queue-title {
+		color: #fff8f3;
 	}
 }
 
