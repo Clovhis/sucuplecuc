@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-21. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2212
+Total de peliculas: 2213
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -110,6 +110,7 @@ Total de peliculas: 2212
 | 2026 | La casaca de Dios | la-casaca-de-dios-2026 | Comedia | CINE.AR | +13 |
 | 2026 | La guerra de los últimos | la-guerra-de-los-ultimos-2026 | Ciencia ficción | Otras plataformas | +17 |
 | 2026 | La heroína del lazo | la-heroina-del-lazo-2026 | Anime | Netflix | +13 |
+| 2026 | La hipótesis del amor | la-hipotesis-del-amor-2026 | Comedia romantica | Prime Video | +16 |
 | 2026 | La invitación | la-invitacion-2026 | Comedia | Cine | +17 |
 | 2026 | La muerte de Robin Hood | la-muerte-de-robin-hood-2026 | Drama | Otras plataformas | +17 |
 | 2026 | La niña | la-nina-del-azucar-2026 | Terror | Otras plataformas | +17 |

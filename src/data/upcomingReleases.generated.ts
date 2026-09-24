@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-23T09:32:44.412Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-24T01:24:32.926Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -87,7 +87,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "beware-boiuna",
 		"title": "Terror en el Amazonas",
 		"releaseDate": "2026-10-22",
-		"videoUrl": "https://www.youtube.com/watch?v=4fn4UcgzRhg",
+		"videoUrl": "https://www.youtube.com/watch?v=MQKqgFVU4dQ",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yMFUD7P43VYkFZDCwKlQe6NTHu1.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10583-terror-en-el-amazonas/"
 	}
