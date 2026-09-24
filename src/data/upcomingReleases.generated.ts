@@ -8,9 +8,17 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-24T09:32:13.336Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-24T16:33:04.785Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
+	{
+		"slug": "linkin-park-unshatter",
+		"title": "Linkin Park: Unshatter",
+		"releaseDate": "2026-09-30",
+		"videoUrl": "https://www.youtube.com/watch?v=K9Lpxc7bVTM",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/sEpHqsxIhAo7Q7fNZ4G60RxUgrP.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10600-linkin-park-unshatter/"
+	},
 	{
 		"slug": "digger",
 		"title": "DIGGER",
@@ -79,7 +87,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "clayface",
 		"title": "Clayface",
 		"releaseDate": "2026-10-22",
-		"videoUrl": "https://www.youtube.com/watch?v=OGO4Mqvo3jI",
+		"videoUrl": "https://www.youtube.com/watch?v=KCR-rz0YfD4",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/pwWR1DRjoFxwdH0jI2elBdXTF1F.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10474-clayface/"
 	},

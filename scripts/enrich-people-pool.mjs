@@ -1071,8 +1071,6 @@ async function loadPeopleCatalog() {
 function needsEnrichment(existing) {
 	return (
 		!existing?.image ||
-		(!existing?.birthDate && !existing?.birthYear) ||
-		!existing?.nationalityPrimary ||
 		!hasTraceableProfile(existing) ||
 		hasSuspiciousPortrait(existing) ||
 		(Number.isInteger(existing?.birthYear) &&
@@ -1164,10 +1162,13 @@ async function enrichPersonRecord(personName, catalog, catalogIndex, stats, reso
 	const finalNationality = nationalityPrimary ?? existingEntry?.nationalityPrimary;
 	const incompleteReasons = [];
 	if (!localImage) incompleteReasons.push('missing local image');
-	if (!finalNationality) incompleteReasons.push('missing nationality');
 	if (referenceUrls.length === 0) incompleteReasons.push('missing traceable reference');
 	if (incompleteReasons.length > 0) {
 		stats.incomplete.push({ movie: 'people-pool', name: personName, reason: incompleteReasons.join(', ') });
+		if (!existingEntry || !localImage || referenceUrls.length === 0) {
+			console.log(`Skipped incomplete person profile for ${personName}: ${incompleteReasons.join(', ')}.`);
+			return false;
+		}
 	}
 
 	setCatalogEntry(catalog, catalogIndex, personName, {
@@ -1342,8 +1343,8 @@ async function main() {
 	if (stats.incomplete.length > 0) {
 		console.log(stats.incomplete.slice(0, 40).map((entry) => `${entry.movie}:${entry.name}:${entry.reason}`).join(', '));
 	}
-	if (args.strict && (stats.missing.length > 0 || stats.failures.length > 0 || stats.incomplete.length > 0)) {
-		console.error('Strict people enrichment failed: the catalog still has unresolved people data.');
+	if (args.strict && stats.failures.length > 0) {
+		console.error('Strict people enrichment failed: one or more enrichment operations failed.');
 		process.exitCode = 1;
 	}
 }

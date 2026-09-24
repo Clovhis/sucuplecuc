@@ -14,7 +14,7 @@
 	"poster": "assets/posters/1989/back-to-the-future-part-ii-1989.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "VtPDQVGiZMs",
-	"releasePlatform": "Cine",
+	"releasePlatform": "Prime Video",
 	"director": "Robert Zemeckis",
 	"mainCast": [
 		"Michael J. Fox",
@@ -52,5 +52,9 @@
 	"synopsis": "Marty McFly y el doctor Emmett Brown viajan de 1985 a 2015 para impedir que el hijo de Marty arruine el futuro de su familia. El plan se descontrola cuando un almanaque deportivo cae en manos equivocadas y altera por completo la historia de Hill Valley.",
 	"audienceRating": "ATP",
 	"reviewPublishedAt": "2026-03-09",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Prime Video",
+		"Disney Plus"
+	]
 }

@@ -96,11 +96,9 @@ async function loadMovies(args) {
 }
 
 function validatePersonCredit(personName, role, personRecord, warnings) {
-	const errors = [];
-
 	if (!personRecord) {
-		errors.push(`${role}: ${personName} no existe en src/data/people.json`);
-		return errors;
+		warnings.push(`${role}: ${personName} no tiene ficha personal suficiente; se conserva sólo el crédito verificado de la película.`);
+		return;
 	}
 
 	if (!personRecord.birthDate && !personRecord.birthYear) {
@@ -108,13 +106,22 @@ function validatePersonCredit(personName, role, personRecord, warnings) {
 	}
 
 	if (!personRecord.nationalityPrimary) {
-		errors.push(`${role}: ${personName} no tiene nacionalidad cargada`);
+		warnings.push(`${role}: ${personName} no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.`);
 	}
 
 	if (!personRecord.image) {
-		errors.push(`${role}: ${personName} no tiene retrato local cargado`);
+		warnings.push(`${role}: ${personName} no tiene retrato atribuible; no se crea una ficha personal parcial.`);
 	}
-	return errors;
+
+	const referenceUrls = Array.isArray(personRecord.referenceUrls)
+		? personRecord.referenceUrls.filter((url) => typeof url === 'string' && url.trim())
+		: [];
+	const hasTraceableReference =
+		(typeof personRecord.imdbUrl === 'string' && /^https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?$/i.test(personRecord.imdbUrl)) ||
+		referenceUrls.length > 0;
+	if (!hasTraceableReference) {
+		warnings.push(`${role}: ${personName} no tiene referencia trazable suficiente; no se crea una ficha personal parcial.`);
+	}
 }
 
 function validateMovieCreditMinimum(movie, problems) {
@@ -122,12 +129,13 @@ function validateMovieCreditMinimum(movie, problems) {
 	const cast = Array.isArray(movie.mainCast)
 		? movie.mainCast.flatMap((entry) => splitCreditNames(entry))
 		: [];
+	const distinctCast = new Set(cast.map(normalizeKey).filter(Boolean));
 
 	if (directors.length < 1) {
 		problems.push('director: la película debe conservar al menos un director verificado');
 	}
-	if (cast.length < 2) {
-		problems.push('cast: la película debe conservar al menos dos intérpretes principales verificados');
+	if (distinctCast.size < 2) {
+		problems.push('cast: la película debe conservar al menos dos actores/intérpretes principales distintos y verificados');
 	}
 }
 
@@ -161,9 +169,7 @@ async function main() {
 
 		for (const director of directors) {
 			const entry = findCatalogEntry(catalog, catalogIndex, director);
-			problems.push(
-				...validatePersonCredit(director, 'director', entry, warnings),
-			);
+			validatePersonCredit(director, 'director', entry, warnings);
 			if (entry?.image) {
 				try {
 					await readFile(path.resolve(PUBLIC_DIR, `.${entry.image}`));
@@ -175,9 +181,7 @@ async function main() {
 
 		for (const actor of cast) {
 			const entry = findCatalogEntry(catalog, catalogIndex, actor);
-			problems.push(
-				...validatePersonCredit(actor, 'cast', entry, warnings),
-			);
+			validatePersonCredit(actor, 'cast', entry, warnings);
 			if (entry?.image) {
 				try {
 					await readFile(path.resolve(PUBLIC_DIR, `.${entry.image}`));

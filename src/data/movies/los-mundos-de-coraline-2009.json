@@ -55,5 +55,9 @@
 	"premiereLabel": "",
 	"releasePlatform": "Cine",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Cine",
+		"Apple TV"
+	]
 }

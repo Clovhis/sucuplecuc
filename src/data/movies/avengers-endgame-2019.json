@@ -8,7 +8,7 @@
 	"screenshots": [],
 	"trailerYoutubeId": "TcMBFSGVi1c",
 	"postCreditsScenes": 0,
-	"releasePlatform": "Disney Plus",
+	"releasePlatform": "Cine",
 	"director": "Anthony Russo",
 	"mainCast": [
 		"Robert Downey Jr.",
@@ -47,5 +47,9 @@
 	"audienceRating": "+13",
 	"reviewPublishedAt": "2026-03-06",
 	"country": "US",
-	"isArgentinian": false
+	"isArgentinian": false,
+	"releasePlatforms": [
+		"Cine",
+		"Disney Plus"
+	]
 }

@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-09-24. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2213
+Total de peliculas: 2221
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -52,6 +52,7 @@ Total de peliculas: 2213
 | 2026 | El Afinador | el-afinador-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | El árbol mágico | el-arbol-magico-2026 | Aventura | Cine | ATP |
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
+| 2026 | El corazón de la bestia | el-corazon-de-la-bestia-2026 | Aventura | Cine | +13 |
 | 2026 | El día D: Bajo presión | el-dia-d-bajo-presion-2026 | Drama | Otras plataformas | +13 |
 | 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Apple TV | +13 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Otras plataformas | +13 |
@@ -67,6 +68,7 @@ Total de peliculas: 2213
 | 2026 | El pequeño ninja: El origen | el-pequeno-ninja-el-origen-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | El turno del papá | el-turno-del-papa-2026 | Comedia | Netflix | ATP |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
+| 2026 | El último gran golpe | el-ultimo-gran-golpe-2026 | Thriller | Cine | +13 |
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
 | 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
 | 2026 | Elize: Sombras de una mujer | elize-sombras-de-una-mujer-2026 | Drama | Netflix | +16 |
@@ -92,6 +94,7 @@ Total de peliculas: 2213
 | 2026 | Hechizo de Amor: La magia continúa | hechizo-de-amor-la-magia-continua-2026 | Fantasia | Cine | +13 |
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Prime Video | +17 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Otras plataformas | ATP |
+| 2026 | Hospital Británico | hospital-britanico-2026 | Documental | Cine | ATP |
 | 2026 | Impacto mortal | impacto-mortal-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | In the Hand of Dante | in-the-hand-of-dante-2026 | Thriller | Netflix | +16 |
 | 2026 | Insaciable | insaciable-2026 | Terror | Otras plataformas | +17 |
@@ -112,6 +115,7 @@ Total de peliculas: 2213
 | 2026 | La heroína del lazo | la-heroina-del-lazo-2026 | Anime | Netflix | +13 |
 | 2026 | La hipótesis del amor | la-hipotesis-del-amor-2026 | Comedia romantica | Prime Video | +16 |
 | 2026 | La invitación | la-invitacion-2026 | Comedia | Cine | +17 |
+| 2026 | La isla olvidada | la-isla-olvidada-2026 | Animacion | Cine | ATP |
 | 2026 | La muerte de Robin Hood | la-muerte-de-robin-hood-2026 | Drama | Otras plataformas | +17 |
 | 2026 | La niña | la-nina-del-azucar-2026 | Terror | Otras plataformas | +17 |
 | 2026 | La noche del demonio: Están entre nosotros | la-noche-del-demonio-estan-entre-nosotros-2026 | Terror | Cine | +17 |
@@ -191,6 +195,7 @@ Total de peliculas: 2213
 | 2026 | Sólo por una noche | solo-por-una-noche-2026 | Comedia romántica | Otras plataformas | +13 |
 | 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine | +13 |
 | 2026 | Stavros Halkias: Uncle Stav | stavros-halkias-uncle-stav-2026 | Comedia | Netflix | +16 |
+| 2026 | Su propio infierno | su-propio-infierno-2026 | Terror | Cine | +17 |
 | 2026 | Sunrise: El último amanecer | sunrise-el-ultimo-amanecer-2026 | Romance | Prime Video | +13 |
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Supergirl | supergirl-2026 | Accion | HBO Max + Apple TV | +13 |
@@ -234,6 +239,7 @@ Total de peliculas: 2213
 | 2025 | Aniversario | aniversario-2025 | Thriller | Prime Video + Apple TV | +16 |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Otras plataformas | +13 |
 | 2025 | Back in Action | back-in-action-2025 | Accion | Netflix | +13 |
+| 2025 | Bajo tus pies | bajo-tus-pies-2025 | Terror | Cine | +13 |
 | 2025 | Ballerina | ballerina-2025 | Accion | Prime Video | +16 |
 | 2025 | Belén | belen-2025 | Drama | Prime Video | +17 |
 | 2025 | Black Bag | black-bag-2025 | Thriller | HBO Max | +13 |
@@ -255,6 +261,7 @@ Total de peliculas: 2213
 | 2025 | El gran falsificador | el-gran-falsificador-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
 | 2025 | Ella y su hijo | ella-y-su-hijo-2025 | Drama | Otras plataformas | +13 |
+| 2025 | Encantador | encantador-2025 | Terror | Cine | +17 |
 | 2025 | Esa cosa con alas | esa-cosa-con-alas-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Escuadrón letal | escuadron-letal-2025 | Accion | Apple TV | +13 |
 | 2025 | Exit 8 | exit-8-2025 | Terror | Otras plataformas | +13 |
@@ -400,6 +407,7 @@ Total de peliculas: 2213
 | 2024 | Las corredoras | las-corredoras-2024 | Comedia negra | Flow | +13 |
 | 2024 | Longlegs | longlegs-2024 | Terror | Prime Video | +16 |
 | 2024 | Look Back | look-back-2024 | Anime | Prime Video | ATP |
+| 2024 | Los calvos | los-calvos-2024 | Documental | Cine | ATP |
 | 2024 | Los chicos de la Nickel | los-chicos-de-la-nickel-2024 | Drama | Prime Video | +16 |
 | 2024 | Los justos | los-justos-2024 | Comedia | CINE.AR | +13 |
 | 2024 | Love Lies Bleeding | love-lies-bleeding-2024 | Thriller | HBO Max | +16 |
@@ -672,7 +680,7 @@ Total de peliculas: 2213
 | 2020 | Wonder Woman 1984 | wonder-woman-1984-2020 | Accion | HBO Max + DGO | +13 |
 | 2019 | Abominable | abominable-2019 | Animacion | Prime Video + Disney Plus | ATP |
 | 2019 | Aladdín | aladdin-2019 | Fantasía | Disney Plus | +13 |
-| 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Disney Plus | +13 |
+| 2019 | Avengers: Endgame | avengers-endgame-2019 | Accion | Cine + Disney Plus | +13 |
 | 2019 | Captain Marvel | captain-marvel-2019 | Accion | Disney Plus | +13 |
 | 2019 | Cats | cats-2019 | Musical | Apple TV | ATP |
 | 2019 | Dark Phoenix | dark-phoenix-2019 | Accion | Disney Plus | +13 |
@@ -1180,7 +1188,7 @@ Total de peliculas: 2213
 | 2009 | La princesa y el sapo | la-princesa-y-el-sapo-2009 | Animacion | Disney Plus | ATP |
 | 2009 | Lluvia de hamburguesas | lluvia-de-hamburguesas-2009 | Animacion | Netflix + Apple TV | ATP |
 | 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
-| 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Cine | +13 |
+| 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Cine + Apple TV | +13 |
 | 2009 | Los secretos del poder | los-secretos-del-poder-2009 | Drama | Apple TV | +13 |
 | 2009 | Los sustitutos | los-sustitutos-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
@@ -1817,7 +1825,7 @@ Total de peliculas: 2213
 | 1991 | Thelma y Louise | thelma-y-louise-1991 | Drama | Apple TV | +16 |
 | 1991 | Una segunda oportunidad | una-segunda-oportunidad-1991 | Drama | Otras plataformas | +13 |
 | 1990 | Alice | alice-1990 | Fantasia | Otras plataformas | +13 |
-| 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Cine | ATP |
+| 1990 | Back to the Future Part III | back-to-the-future-part-iii-1990 | Ciencia ficcion | Disney Plus + HBO Max | ATP |
 | 1990 | Buenos muchachos | goodfellas-1990 | Crimen | Prime Video + HBO Max | +13 |
 | 1990 | Calda emoción | calda-emocion-1990 | Drama | Otras plataformas | +16 |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus | +13 |
@@ -1843,7 +1851,7 @@ Total de peliculas: 2213
 | 1990 | Troll 2 | troll-2-1990 | Terror | Prime Video | +13 |
 | 1989 | Abyss | abyss-1989 | Ciencia ficcion | Disney Plus | +13 |
 | 1989 | Always (Para Siempre) | always-1989 | Romance | Otras plataformas | +13 |
-| 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Cine | ATP |
+| 1989 | Back to the Future Part II | back-to-the-future-part-ii-1989 | Ciencia ficcion | Prime Video + Disney Plus | ATP |
 | 1989 | Bañeros II: La playa loca | baneros-ii-la-playa-loca-1989 | Comedia | Otras plataformas | ATP |
 | 1989 | Batman | batman-1989 | Fantasia | HBO Max | +13 |
 | 1989 | Delitos y faltas | crimes-and-misdemeanors-1989 | Drama | Otras plataformas | +16 |

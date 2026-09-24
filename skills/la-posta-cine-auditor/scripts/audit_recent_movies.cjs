@@ -1085,8 +1085,9 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	const principalCastNames = Array.isArray(movie.mainCast)
 		? movie.mainCast.flatMap((entry) => splitCreditNames(entry)).filter(Boolean)
 		: [];
-	if (principalCastNames.length < 2) {
-		addFinding(findings, 'error', 'invalid-cast', candidatePath, 'mainCast must contain at least two verified principal performers.');
+	const distinctPrincipalCast = new Set(principalCastNames.map(normalizeText).filter(Boolean));
+	if (distinctPrincipalCast.size < 2) {
+		addFinding(findings, 'error', 'invalid-cast', candidatePath, 'mainCast must contain at least two distinct, source-verified principal actors/performers.');
 	}
 
 	validateSubgenres(movie, candidatePath, findings);
@@ -1384,10 +1385,10 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 		if (!personEntry || typeof personEntry !== 'object') {
 			addFinding(
 				findings,
-				'error',
+				'warn',
 				'missing-person-entry',
 				candidatePath,
-				`"${personName}" is missing from src/data/people.json.`,
+				`"${personName}" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json.`,
 			);
 			continue;
 		}
@@ -1466,20 +1467,20 @@ function validatePeoplePool(movie, candidatePath, findings, peopleCatalog, peopl
 		if (typeof personEntry.nationalityPrimary !== 'string' || personEntry.nationalityPrimary.trim().length === 0) {
 			addFinding(
 				findings,
-				'error',
+				'warn',
 				'missing-person-nationality',
 				candidatePath,
-				`"${personName}" must include nationalityPrimary in src/data/people.json.`,
+				`"${personName}" has no verified public nationality; leave nationalityPrimary absent rather than infer it.`,
 			);
 		}
 
 		if (typeof personEntry.image !== 'string' || personEntry.image.trim().length === 0) {
 			addFinding(
 				findings,
-				'error',
+				'warn',
 				'missing-person-image',
 				candidatePath,
-				`"${personName}" must include a trusted cached portrait in src/data/people.json. Do not publish credited directors/main cast with initials-only cards.`,
+				`"${personName}" has no safely attributable portrait; omit the person profile and retain only the verified movie credit.`,
 			);
 		} else {
 			const normalizedImagePath = personEntry.image.replace(/^\/+/, '').replace(/\//g, path.sep);

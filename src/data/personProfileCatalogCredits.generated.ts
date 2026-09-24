@@ -374,6 +374,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-terminator-1984"
   ],
   "arturo-puig": [
+    "encantador-2025",
     "los-justos-2024",
     "tesis-sobre-un-homicidio-2013"
   ],
@@ -498,6 +499,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "one-flew-over-the-cuckoo-s-nest-1975"
   ],
   "brad-pitt": [
+    "el-corazon-de-la-bestia-2026",
     "f1-the-movie-2025",
     "wolfs-2024",
     "once-upon-a-time-in-hollywood-2019",
@@ -4079,6 +4081,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "harry-potter-and-the-sorcerers-stone-2001"
   ],
   "russell-crowe": [
+    "el-ultimo-gran-golpe-2026",
     "nuremberg-2025",
     "sombras-del-pasado-2024",
     "noe-2014",
@@ -4344,6 +4347,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "un-oso-rojo-2002"
   ],
   "sophie-thatcher": [
+    "su-propio-infierno-2026",
     "companion-2025",
     "heretic-2024"
   ],

@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-22. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-24. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 570
-Total de vínculos de películas del catálogo: 3830
+Total de vínculos de películas del catálogo: 3834
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -55,7 +55,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Ariana Grande | `ariana-grande` | /personas/ariana-grande/ | Actriz | 2 | 7 |
 | Ariel Winograd | `ariel-winograd` | /personas/ariel-winograd/ | Director / Guionista | 1 | 4 |
 | Arnold Schwarzenegger | `arnold-schwarzenegger` | /personas/arnold-schwarzenegger/ | Actor | 11 | 6 |
-| Arturo Puig | `arturo-puig` | /personas/arturo-puig/ | Actor | 2 | 4 |
+| Arturo Puig | `arturo-puig` | /personas/arturo-puig/ | Actor | 3 | 4 |
 | Audrey Hepburn | `audrey-hepburn` | /personas/audrey-hepburn/ | Actriz | 2 | 4 |
 | Austin Butler | `austin-butler` | /personas/austin-butler/ | Actor | 1 | 6 |
 | Awkwafina | `awkwafina` | /personas/awkwafina/ | Actriz | 4 | 6 |
@@ -73,7 +73,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Bong Joon-ho | `bong-joon-ho` | /personas/bong-joon-ho/ | Director | 3 | 6 |
 | Brad Bird | `brad-bird` | /personas/brad-bird/ | Director | 5 | 5 |
 | Brad Dourif | `brad-dourif` | /personas/brad-dourif/ | Actor | 8 | 7 |
-| Brad Pitt | `brad-pitt` | /personas/brad-pitt/ | Actor / Productor | 18 | 6 |
+| Brad Pitt | `brad-pitt` | /personas/brad-pitt/ | Actor / Productor | 19 | 6 |
 | Bradley Cooper | `bradley-cooper` | /personas/bradley-cooper/ | Actor | 8 | 7 |
 | Brady Corbet | `brady-corbet` | /personas/brady-corbet/ | Director | 1 | 7 |
 | Brendan Fraser | `brendan-fraser` | /personas/brendan-fraser/ | Actor | 5 | 7 |
@@ -487,7 +487,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Rooney Mara | `rooney-mara` | /personas/rooney-mara/ | Actriz | 5 | 3 |
 | Rosamund Pike | `rosamund-pike` | /personas/rosamund-pike/ | Actriz | 5 | 6 |
 | Rupert Grint | `rupert-grint` | /personas/rupert-grint/ | Actor | 9 | 6 |
-| Russell Crowe | `russell-crowe` | /personas/russell-crowe/ | Actor | 14 | 5 |
+| Russell Crowe | `russell-crowe` | /personas/russell-crowe/ | Actor | 15 | 5 |
 | Ryan Coogler | `ryan-coogler` | /personas/ryan-coogler/ | Director | 4 | 7 |
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 23 | 6 |
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 11 | 6 |
@@ -518,7 +518,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Sigourney Weaver | `sigourney-weaver` | /personas/sigourney-weaver/ | Actriz | 13 | 6 |
 | Simon Pegg | `simon-pegg` | /personas/simon-pegg/ | Actor | 7 | 3 |
 | Soledad Villamil | `soledad-villamil` | /personas/soledad-villamil/ | Actriz | 2 | 7 |
-| Sophie Thatcher | `sophie-thatcher` | /personas/sophie-thatcher/ | Actriz | 2 | 3 |
+| Sophie Thatcher | `sophie-thatcher` | /personas/sophie-thatcher/ | Actriz | 3 | 3 |
 | Spike Lee | `spike-lee` | /personas/spike-lee/ | Director / Guionista / Productor / Actor | 3 | 6 |
 | Stanley Kubrick | `stanley-kubrick` | /personas/stanley-kubrick/ | Director / Guionista / Productor | 8 | 6 |
 | Stanley Tucci | `stanley-tucci` | /personas/stanley-tucci/ | Actor | 6 | 3 |
