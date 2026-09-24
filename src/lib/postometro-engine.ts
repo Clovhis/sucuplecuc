@@ -56,6 +56,7 @@ export interface PostometroCatalogEntry {
 	platformLabel: string;
 	platforms: string[];
 	cinepostaScore: CinePostaScore;
+	displayScore: CinePostaScore | null;
 	verdict: MovieVerdict;
 	verdictLabel: string;
 	runtimeMinutes: number | null;
@@ -87,6 +88,8 @@ export interface PostometroResultCard {
 	director: string;
 	mainCast: string[];
 	platformLabel: string;
+	platforms: string[];
+	displayScore: CinePostaScore | null;
 	runtimeLabel: string;
 	verdictLabel: string;
 	reasons: string[];
@@ -958,6 +961,8 @@ function buildResultCard(entry: PostometroCatalogEntry, answers: PostometroAnswe
 		director: entry.director,
 		mainCast: entry.mainCast,
 		platformLabel: entry.platformLabel,
+		platforms: entry.platforms,
+		displayScore: entry.displayScore,
 		runtimeLabel: entry.runtimeLabel,
 		verdictLabel: entry.verdictLabel,
 		reasons: buildReasons(entry, answers),

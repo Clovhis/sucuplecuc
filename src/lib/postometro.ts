@@ -471,6 +471,7 @@ export function createPostometroCatalogEntries(movies: Movie[]): PostometroCatal
 			platformLabel: getMoviePlatformLabel(movie) || 'Plataforma no cargada',
 			platforms: getNormalizedMoviePlatforms(movie),
 			cinepostaScore: movie.cinepostaScore ?? 1,
+			displayScore: movie.cinepostaScore ?? null,
 			verdict: getMovieLegacyVerdict(movie) ?? 'zafa',
 			verdictLabel: getVerdictLabel(movie),
 			runtimeMinutes: movie.runtimeMinutes ?? null,

@@ -5,6 +5,8 @@ import {
 	type PostometroResultCard,
 	getPostometroResultSet,
 } from '../lib/postometro-engine';
+import { getPlatformPresentation } from '../lib/platforms';
+import { getCinePostaScoreLabel } from '../lib/cineposta-score';
 
 type PostometroPayload = {
 	catalog: PostometroCatalogEntry[];
@@ -325,9 +327,10 @@ function initPostometro(
 						</div>
 						${renderCredits(primary)}
 					</div>
+					${renderAtAGlance(primary)}
 					<p class="postometro-pick__review">${escapeHtml(primary.review)}</p>
 					<ul class="postometro-badge-list">
-						${primary.badges.map((badge) => `<li>${escapeHtml(badge)}</li>`).join('')}
+						${primary.badges.slice(1, 3).map((badge) => `<li>${escapeHtml(badge)}</li>`).join('')}
 					</ul>
 					<ul class="postometro-reason-list">
 						${primary.reasons.map((reason) => `<li>${escapeHtml(reason)}</li>`).join('')}
@@ -610,6 +613,35 @@ function renderCredits(primary: PostometroResultCard): string {
 			${director ? renderCreditRow('Direccion', director) : ''}
 			${cast.length > 0 ? renderCreditRow('Elenco', buildCastSummary(cast)) : ''}
 		</dl>
+	`;
+}
+
+function renderAtAGlance(primary: PostometroResultCard): string {
+	const platforms = primary.platforms.length > 0 ? primary.platforms : [primary.platformLabel];
+	const platformMarks = platforms.map((platform) => {
+		const presentation = getPlatformPresentation(platform);
+		const label = escapeHtml(presentation.accessibilityLabel);
+		const logo = presentation.asset
+			? `<img src="${escapeHtml(presentation.asset.src)}" alt="" loading="eager" decoding="async">`
+			: '';
+		return `<span class="postometro-pick__platform" aria-label="${label}">${logo}<span>${label}</span></span>`;
+	}).join('');
+	const score = primary.displayScore;
+	const scoreValue = score === null
+		? '<span class="postometro-pick__score-unrated">Sin puntaje</span>'
+		: `<strong class="postometro-pick__score-number">${score}<span>/10</span></strong><span class="postometro-pick__score-verdict">${escapeHtml(getCinePostaScoreLabel(score))}</span>`;
+
+	return `
+		<div class="postometro-pick__at-a-glance">
+			<div class="postometro-pick__fact postometro-pick__fact--platform">
+				<span class="postometro-pick__fact-label">Disponibilidad en Argentina</span>
+				<div class="postometro-pick__platforms">${platformMarks}</div>
+			</div>
+			<div class="postometro-pick__fact postometro-pick__fact--score" aria-label="Puntaje Cine Posta: ${score === null ? 'sin puntaje' : `${score} de 10, ${escapeHtml(getCinePostaScoreLabel(score))}`}">
+				<span class="postometro-pick__fact-label">Puntaje Cine Posta</span>
+				<div class="postometro-pick__score-value">${scoreValue}</div>
+			</div>
+		</div>
 	`;
 }
 
