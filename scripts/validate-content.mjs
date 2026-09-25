@@ -1,4 +1,5 @@
 import { spawnSync } from 'node:child_process';
+import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -104,7 +105,7 @@ function getChangedFiles(base) {
 		return [];
 	}
 
-	const result = git(['diff', '--name-only', '--diff-filter=AM', `${base}...HEAD`], { allowFailure: true });
+	const result = git(['diff', '--name-only', '--diff-filter=AM', base], { allowFailure: true });
 	if (result.status !== 0) {
 		return [];
 	}
@@ -113,6 +114,43 @@ function getChangedFiles(base) {
 		.split(/\r?\n/)
 		.map((line) => line.trim().replace(/\\/g, '/'))
 		.filter(Boolean);
+}
+
+function getMovieFilesNotInBase(base) {
+	if (!base) {
+		return [];
+	}
+
+	const result = git(['ls-tree', '-r', '--name-only', base, '--', 'src/data/movies'], { allowFailure: true });
+	if (result.status !== 0) {
+		return [];
+	}
+
+	const baseFiles = new Set(result.stdout
+		.split(/\r?\n/)
+		.map((line) => line.trim().replace(/\\/g, '/'))
+		.filter(Boolean));
+	return readdirSync(path.join(ROOT_DIR, 'src/data/movies'), { withFileTypes: true })
+		.filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
+		.map((entry) => `src/data/movies/${entry.name}`)
+		.filter((file) => !baseFiles.has(file));
+}
+
+function getMoviesWithChangedPeopleCredits(base, files) {
+	if (!base) return files.filter((file) => file.startsWith('src/data/movies/'));
+	return files.filter((file) => {
+		if (!file.startsWith('src/data/movies/') || !file.endsWith('.json')) return false;
+		const previous = git(['show', `${base}:${file}`], { allowFailure: true });
+		if (previous.status !== 0) return true;
+		try {
+			const before = JSON.parse(previous.stdout);
+			const after = JSON.parse(readFileSync(path.join(ROOT_DIR, file), 'utf8'));
+			return JSON.stringify([before.director ?? '', before.mainCast ?? []]) !==
+				JSON.stringify([after.director ?? '', after.mainCast ?? []]);
+		} catch {
+			return true;
+		}
+	});
 }
 
 function hasAny(files, predicate) {
@@ -130,7 +168,10 @@ function main() {
 	}
 
 	const base = resolveBase(args.base);
-	const changedFiles = getChangedFiles(base);
+	const newlyAddedMovieFiles = getMovieFilesNotInBase(base);
+	const changedFiles = [...new Set([...getChangedFiles(base), ...newlyAddedMovieFiles])];
+	const peopleCreditChangedFiles = getMoviesWithChangedPeopleCredits(base, changedFiles);
+	const moviePeopleAuditFiles = [...new Set([...newlyAddedMovieFiles, ...peopleCreditChangedFiles])];
 	const movieContentChanged = hasAny(
 		changedFiles,
 		(file) =>
@@ -156,6 +197,15 @@ function main() {
 	run('npm', ['run', 'catalog:movies:check']);
 	run('npm', ['run', 'catalog:people:check']);
 	run('npm', ['run', 'catalog:people:reference:check']);
+	if (moviePeopleAuditFiles.length > 0) {
+		console.log(`Checking portraits for ${moviePeopleAuditFiles.length} new or people-credit-changed movie file(s).`);
+		run('node', [
+			'./scripts/audit-movie-people.mjs',
+			...moviePeopleAuditFiles.flatMap((file) => ['--file', file]),
+		]);
+	} else {
+		console.log('Movie people portrait gate skipped: no new files or changed director/mainCast credits.');
+	}
 	run('npm', ['run', 'audit:content-quality:strict', '--', '--full']);
 	run('npm', ['run', 'audit:editorial-low-value']);
 	run('npm', ['run', 'audit:profile-originality']);

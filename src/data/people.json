@@ -7803,6 +7803,24 @@
 		"source": "tmdb-cache",
 		"nationalityPrimary": "Nacionalidad no informada"
 	},
+	"Babu Santana": {
+		"name": "Babu Santana",
+		"birthDate": "1979-12-10",
+		"birthYear": 1979,
+		"nationalityPrimary": "Brasileño",
+		"image": "/people/babu-santana-nm1229757.jpg",
+		"imdbId": "nm1229757",
+		"imdbUrl": "https://www.imdb.com/name/nm1229757/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Babu%20Santana%20(cropped).png?width=1200",
+		"referenceUrls": [
+			"https://commons.wikimedia.org/wiki/File:Babu_Santana_(cropped).png",
+			"https://www.wikidata.org/wiki/Q6093859",
+			"https://www.imdb.com/name/nm1229757/",
+			"https://www.themoviedb.org/person/558258-babu-santana"
+		],
+		"lastVerifiedAt": "2026-09-25",
+		"source": "wikidata-imdb-cache"
+	},
 	"Bagavathi Perumal": {
 		"name": "Bagavathi Perumal",
 		"birthDate": "1978-07-23",
@@ -14901,10 +14919,14 @@
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q16200882",
 			"https://www.imdb.com/name/nm5736441/",
-			"https://www.themoviedb.org/person/1321712-chetan"
+			"https://www.themoviedb.org/person/1321712-chetan",
+			"https://cbfcindia.gov.in/cbfcAdmin/search-result.php?recid=Q0EwMzA4MDgyMDI2MDAxOTM%3D"
 		],
 		"lastVerifiedAt": "2026-09-25",
-		"source": "wikidata-imdb-cache"
+		"source": "wikidata-imdb-cache",
+		"aliases": [
+			"Chetan"
+		]
 	},
 	"Chhaya Kadam": {
 		"name": "Chhaya Kadam",
@@ -16492,21 +16514,23 @@
 		"source": "wikidata-imdb-cache"
 	},
 	"Chunky Panday": {
-		"name": "Chunky Pandey",
+		"name": "Chunky Panday",
 		"birthDate": "1962-09-26",
 		"birthYear": 1962,
 		"nationalityPrimary": "Indio",
-		"image": "/people/chunky-panday-nm0659233.jpg",
+		"image": "/people/chunky-panday-indiatoday.jpg",
 		"imdbId": "nm0659233",
 		"imdbUrl": "https://www.imdb.com/name/nm0659233/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chunky%20pandey%20forest%20success.jpg?width=1200",
+		"remoteImageUrl": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201207/chunky-pandey_660_071712024930.jpg?VersionId=FFjTICavhKgXrECU7Q_VQf3Pzs_X2yOY",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q3676086",
-			"https://www.imdb.com/name/nm0659233/",
-			"https://www.themoviedb.org/person/81983-chunky-pandey"
+			"https://www.indiatoday.in/movies/bollywood/story/chunky-pandey-aakhri-pasta-baba-3g-kyaa-super-kool-hain-hum-109838-2012-07-16",
+			"https://www.imdb.com/name/nm0659233/"
 		],
 		"lastVerifiedAt": "2026-09-25",
-		"source": "wikidata-imdb-cache"
+		"source": "wikidata-imdb-cache",
+		"aliases": [
+			"Chunky Pandey"
+		]
 	},
 	"Chus Gutiérrez": {
 		"name": "Chus Gutiérrez",
@@ -27691,21 +27715,25 @@
 		"source": "wikidata-imdb-cache"
 	},
 	"Farah Khalid": {
-		"name": "Farah X",
+		"name": "Farah Khalid",
 		"birthDate": "1976-12-27",
 		"birthYear": 1976,
 		"nationalityPrimary": "Estadounidense",
-		"image": "/people/farah-khalid-nm1065686.jpg",
+		"image": "/people/farah-khalid-imdb.jpg",
 		"imdbId": "nm1065686",
 		"imdbUrl": "https://www.imdb.com/name/nm1065686/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Farah%20X.jpg?width=1200",
+		"remoteImageUrl": "https://m.media-amazon.com/images/M/MV5BZWJjZDAzNzgtODg2Yy00YTAxLWExZDItMGY5NjZkNzQyMGRlXkEyXkFqcGc%40._V1_.jpg",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q97855071",
 			"https://www.imdb.com/name/nm1065686/",
-			"https://www.themoviedb.org/person/2444301-farah-khalid"
+			"https://farahx.com/about-farah-x/",
+			"https://www.bbfc.co.uk/release/stray-kids-q29sbgvjdglvbjpwwc0xmdq4mze0"
 		],
 		"lastVerifiedAt": "2026-09-25",
-		"source": "wikidata-imdb-cache"
+		"source": "wikidata-imdb-cache",
+		"aliases": [
+			"Farah X",
+			"Farah Zeb Khalid"
+		]
 	},
 	"Fawn Veerasunthorn": {
 		"name": "Fawn Veerasunthorn",
@@ -56991,6 +57019,23 @@
 		"image": "/people/marcello-mastroianni-5676.jpg",
 		"source": "tmdb-cache"
 	},
+	"Marcelo Adnet": {
+		"name": "Marcelo Adnet",
+		"birthDate": "1981-09-05",
+		"birthYear": 1981,
+		"nationalityPrimary": "Brasileño",
+		"image": "/people/marcelo-adnet-folha.jpg",
+		"imdbId": "nm2367991",
+		"imdbUrl": "https://www.imdb.com/name/nm2367991/",
+		"remoteImageUrl": "https://f.i.uol.com.br/fotografia/2021/05/31/162251059760b58c0593b2f_1622510597_3x2_xl.jpg",
+		"referenceUrls": [
+			"https://f5.folha.uol.com.br/televisao/2021/05/marcelo-adnet-ganha-programa-na-globoplay-para-narrar-a-cpi-da-covid.shtml",
+			"https://www.imdb.com/name/nm2367991/",
+			"https://www.themoviedb.org/person/225082-marcelo-adnet"
+		],
+		"lastVerifiedAt": "2026-09-25",
+		"source": "wikidata-imdb-cache"
+	},
 	"Marcelo Piñeyro": {
 		"name": "Marcelo Piñeyro",
 		"birthDate": "1953-03-05",
@@ -74967,6 +75012,21 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1975-08-22"
 	},
+	"Rodrigo Van Der Put": {
+		"name": "Rodrigo Van Der Put",
+		"nationalityPrimary": "Brasileño",
+		"image": "/people/rodrigo-van-der-put-nm8198619.jpg",
+		"imdbId": "nm8198619",
+		"imdbUrl": "https://www.imdb.com/name/nm8198619/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/pS7KC2Fy4Yyordlvjfmqqbs0X7Z.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q106265028",
+			"https://www.imdb.com/name/nm8198619/",
+			"https://www.themoviedb.org/person/2196395-rodrigo-van-der-put"
+		],
+		"lastVerifiedAt": "2026-09-25",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Roger Allers": {
 		"name": "Roger Allers",
 		"birthYear": 1949,
@@ -79613,14 +79673,14 @@
 		"birthDate": "1981-10-31",
 		"birthYear": 1981,
 		"nationalityPrimary": "Indio",
-		"image": "/people/sikandar-kher-nm3071488.jpg",
+		"image": "/people/sikandar-kher-indulgexpress.jpg",
 		"imdbId": "nm3071488",
 		"imdbUrl": "https://www.imdb.com/name/nm3071488/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sikander%20Kher%20promoting%20Tere%20Bin%20Laden%202%20(cropped).jpg?width=1200",
+		"remoteImageUrl": "https://media.indulgexpress.com/indulgexpress%2F2025-03-25%2Foula7xd1%2FWhatsApp-Image-2025-03-25-at-13.50.06.jpeg?auto=format%2Ccompress&fit=crop&h=900&rect=0%2C201%2C1060%2C795&w=1200",
 		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q7513553",
+			"https://www.indulgexpress.com/entertainment/cinema/2025/Mar/25/i-dont-have-the-luxury-of-doing-just-one-film-at-a-time-says-sikandar-kher",
 			"https://www.imdb.com/name/nm3071488/",
-			"https://www.themoviedb.org/person/229123-sikandar-kher"
+			"https://www.imdb.com/title/tt37544992/"
 		],
 		"lastVerifiedAt": "2026-09-25",
 		"source": "wikidata-imdb-cache"
@@ -90680,5 +90740,95 @@
 		],
 		"lastVerifiedAt": "2026-08-22",
 		"source": "wikidata-imdb-cache"
+	},
+	"Nachiket Samant": {
+		"name": "Nachiket Samant",
+		"image": "/people/nachiket-samant-ie.jpg",
+		"remoteImageUrl": "https://images.indianexpress.com/2026/07/Nachiket-Samant.jpg",
+		"referenceUrls": [
+			"https://indianexpress.com/article/express-sunday-eye/inside-baby-do-die-do-why-huma-qureshis-assassin-doesnt-speak-10780541/",
+			"https://www.imdb.com/name/nm6294157/",
+			"https://www.imdb.com/title/tt37544992/"
+		],
+		"lastVerifiedAt": "2026-09-25",
+		"imdbId": "nm6294157",
+		"imdbUrl": "https://www.imdb.com/name/nm6294157/"
+	},
+	"Rachit Singh": {
+		"name": "Rachit Singh",
+		"image": "/people/rachit-singh-filmfare-crop.jpg",
+		"imdbId": "nm11642062",
+		"imdbUrl": "https://www.imdb.com/name/nm11642062/",
+		"remoteImageUrl": "https://filmfare.wwmindia.com/content/2025/dec/thammathuu1765378691.jpg",
+		"referenceUrls": [
+			"https://www.filmfare.com/news/bollywood/thamma-fame-rachit-singh-aneet-paddas-acting-coach-has-this-to-say-about-saiyaara-stars-success-79977.html",
+			"https://www.imdb.com/name/nm11642062/",
+			"https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/huma-qureshis-rumoured-beau-rachit-singh-opens-up-on-landing-siddhus-role-in-baby-do-die-do/articleshow/132305351.cms"
+		],
+		"lastVerifiedAt": "2026-09-25"
+	},
+	"Raja Karuppasamy": {
+		"name": "Raja Karuppasamy",
+		"image": "/people/raja-karuppasamy-crop.jpg",
+		"remoteImageUrl": "https://cf-images.assettype.com/cinemaexpress%2F2026-09-03%2Fnxf8twok%2FSTR-Raja-Karuppasamy.png?auto=format%2Ccompress&fit=max&w=1200",
+		"referenceUrls": [
+			"https://www.cinemaexpress.com/tamil/news/2026/Sep/03/director-raja-karuppasamy-on-silambarasan-trs-note-on-modha-rathiri-i-get-goosebumps-thinking-about-it",
+			"https://cbfcindia.gov.in/cbfcAdmin/search-result.php?recid=Q0EwMzA4MDgyMDI2MDAxOTM%3D"
+		],
+		"lastVerifiedAt": "2026-09-25"
+	},
+	"Eduardo Vaisman": {
+		"name": "Eduardo Vaisman",
+		"image": "/people/duda-vaisman-adc.jpg",
+		"remoteImageUrl": "https://br.web.img3.acsta.net/c_310_420/pictures/18/11/01/21/20/2381249.jpg",
+		"referenceUrls": [
+			"https://www.adorocinema.com/personalidades/personalidade-812887/"
+		],
+		"lastVerifiedAt": "2026-09-25"
+	},
+	"Lina Flor": {
+		"name": "Lina Flor MacNiven",
+		"aliases": [
+			"Lina Flor"
+		],
+		"image": "/people/lina-flor-macniven.jpg",
+		"remoteImageUrl": "https://curingaagenciamento.com.br/wp-content/uploads/2026/03/Foto-Lina1.jpg",
+		"referenceUrls": [
+			"https://curingaagenciamento.com.br/lina-flor",
+			"https://www.adorocinema.com/filmes/filme-1000023352/"
+		],
+		"lastVerifiedAt": "2026-09-25"
+	},
+	"Mike E. Sandejas": {
+		"name": "Mike E. Sandejas",
+		"image": "/people/mike-e-sandejas-imdb.jpg",
+		"imdbId": "nm1520619",
+		"imdbUrl": "https://www.imdb.com/name/nm1520619/",
+		"remoteImageUrl": "https://m.media-amazon.com/images/M/MV5BMmQ3OTI1MDYtZDFhZC00OTk4LWIwY2ItY2YxZWZjMjE1NWRlXkEyXkFqcGc%40._V1_.jpg",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm1520619/",
+			"https://www.pep.ph/news/local/mike-sandejas-sinagtala-director-a746-20250329-lfrm"
+		],
+		"lastVerifiedAt": "2026-09-25"
+	},
+	"Han": {
+		"name": "Han",
+		"image": "/people/han-yonhap.jpg",
+		"remoteImageUrl": "https://img2.yna.co.kr/etc/inner/EN/2025/09/14/AEN20250914002600315_02_i_P4.jpg",
+		"referenceUrls": [
+			"https://en.yna.co.kr/view/AEN20250914002600315",
+			"https://straykids.jype.com/profile?Idx=6"
+		],
+		"lastVerifiedAt": "2026-09-25"
+	},
+	"Felix Lee": {
+		"name": "Felix Lee",
+		"image": "/people/felix-soompi.jpg",
+		"remoteImageUrl": "https://0.soompi.io/wp-content/uploads/2025/02/16151352/Felix_fff002.jpg",
+		"referenceUrls": [
+			"https://www.soompi.com/article/1723267wpp/jyp-shares-update-on-stray-kids-felixs-health-after-minor-car-accident",
+			"https://straykids.jype.com/profile?Idx=6"
+		],
+		"lastVerifiedAt": "2026-09-25"
 	}
 }

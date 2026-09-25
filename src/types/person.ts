@@ -1,5 +1,6 @@
 export interface PersonRecord {
 	name: string;
+	aliases?: string[];
 	birthDate?: string;
 	birthYear?: number;
 	deathDate?: string;

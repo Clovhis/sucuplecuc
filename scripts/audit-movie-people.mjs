@@ -1,10 +1,12 @@
-import { readFile } from 'node:fs/promises';
+import { lstat, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import sharp from 'sharp';
 
 const MOVIES_DIR = path.resolve('src/data/movies');
 const PEOPLE_CATALOG_PATH = path.resolve('src/data/people.json');
 const PUBLIC_DIR = path.resolve('public');
+const PEOPLE_PUBLIC_DIR = path.resolve(PUBLIC_DIR, 'people');
 
 function parseArgs(argv) {
 	const args = {
@@ -95,10 +97,44 @@ async function loadMovies(args) {
 	);
 }
 
-function validatePersonCredit(personName, role, personRecord, warnings) {
+function hasFirstAndLastName(value) {
+	const words = normalizeKey(value)
+		.split(' ')
+		.filter((word) => word.replace(/[^a-z']/g, '').length > 1);
+	return words.length >= 2;
+}
+
+function resolveLocalPortraitPath(personRecord) {
+	const image = typeof personRecord?.image === 'string' ? personRecord.image.trim() : '';
+	if (!/^\/people\/(?:[^/\\]+\/)*[^/\\]+\.(?:jpe?g|png|webp)$/i.test(image)) {
+		return null;
+	}
+
+	const imagePath = path.resolve(PUBLIC_DIR, `.${image}`);
+	const peopleRoot = `${PEOPLE_PUBLIC_DIR}${path.sep}`;
+	if (!imagePath.startsWith(peopleRoot)) {
+		return null;
+	}
+	return imagePath;
+}
+
+async function validatePersonCredit(personName, role, personRecord, problems, warnings) {
 	if (!personRecord) {
-		warnings.push(`${role}: ${personName} no tiene ficha personal suficiente; se conserva sólo el crédito verificado de la película.`);
-		return;
+		problems.push(`${role}: ${personName} no tiene una ficha personal con nombre y retrato local verificado; completarla o quitar ese crédito de la película.`);
+		return { qualifiesForMinimum: false };
+	}
+
+	const displayName = normalizeWhitespace(personRecord.name);
+	const aliases = Array.isArray(personRecord.aliases)
+		? personRecord.aliases.filter((alias) => typeof alias === 'string').map(normalizeKey)
+		: [];
+	const normalizedCredit = normalizeKey(personName);
+	const nameMatchesCredit = Boolean(displayName) &&
+		(normalizeKey(displayName) === normalizedCredit || aliases.includes(normalizedCredit));
+	if (!displayName) {
+		problems.push(`${role}: ${personName} no tiene un nombre visible en people.json`);
+	} else if (!nameMatchesCredit) {
+		problems.push(`${role}: el nombre de people.json (${displayName}) ni sus aliases coinciden con el crédito ${personName}`);
 	}
 
 	if (!personRecord.birthDate && !personRecord.birthYear) {
@@ -109,33 +145,85 @@ function validatePersonCredit(personName, role, personRecord, warnings) {
 		warnings.push(`${role}: ${personName} no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.`);
 	}
 
-	if (!personRecord.image) {
-		warnings.push(`${role}: ${personName} no tiene retrato atribuible; no se crea una ficha personal parcial.`);
+	const portraitPath = resolveLocalPortraitPath(personRecord);
+	let hasLocalPortrait = false;
+	if (!portraitPath) {
+		problems.push(`${role}: ${personName} necesita un retrato local válido en public/people`);
+	} else {
+		try {
+			const imageStat = await lstat(portraitPath);
+			if (!imageStat.isFile()) {
+				throw new Error('portrait path is not a regular file');
+			}
+			const image = await readFile(portraitPath);
+			const metadata = await sharp(image, { animated: false, failOn: 'warning' }).metadata();
+			if (!['jpeg', 'png', 'webp'].includes(metadata.format) || !metadata.width || !metadata.height) {
+				throw new Error('portrait is not a decodable raster image');
+			}
+			await sharp(image, { animated: false, failOn: 'warning' }).resize(1, 1).toBuffer();
+			if (metadata.width < 200 || metadata.height < 250) {
+				problems.push(`${role}: ${personName} necesita un retrato local de al menos 200x250 px (actual ${metadata.width}x${metadata.height})`);
+			} else {
+				hasLocalPortrait = true;
+			}
+		} catch {
+			problems.push(`${role}: ${personName} no tiene un archivo local de retrato válido en ${personRecord.image}`);
+		}
 	}
 
 	const referenceUrls = Array.isArray(personRecord.referenceUrls)
-		? personRecord.referenceUrls.filter((url) => typeof url === 'string' && url.trim())
+		? personRecord.referenceUrls.filter((url) => {
+			if (typeof url !== 'string') return false;
+			try {
+				return ['http:', 'https:'].includes(new URL(url).protocol);
+			} catch {
+				return false;
+			}
+		})
 		: [];
 	const hasTraceableReference =
 		(typeof personRecord.imdbUrl === 'string' && /^https?:\/\/(?:www\.)?imdb\.com\/name\/nm\d+\/?$/i.test(personRecord.imdbUrl)) ||
 		referenceUrls.length > 0;
 	if (!hasTraceableReference) {
-		warnings.push(`${role}: ${personName} no tiene referencia trazable suficiente; no se crea una ficha personal parcial.`);
+		problems.push(`${role}: ${personName} necesita al menos una referencia trazable para validar identidad y retrato`);
 	}
+
+	return {
+		qualifiesForMinimum:
+			nameMatchesCredit &&
+			hasFirstAndLastName(displayName) &&
+			hasFirstAndLastName(personName) &&
+			hasLocalPortrait &&
+			hasTraceableReference,
+		personIdentity: normalizeKey(displayName),
+	};
 }
 
-function validateMovieCreditMinimum(movie, problems) {
-	const directors = splitCreditNames(movie.director);
-	const cast = Array.isArray(movie.mainCast)
-		? movie.mainCast.flatMap((entry) => splitCreditNames(entry))
-		: [];
-	const distinctCast = new Set(cast.map(normalizeKey).filter(Boolean));
+function validateMovieCreditMinimum(directorChecks, castChecks, problems) {
+	const directors = new Set(directorChecks.map(({ name }) => normalizeKey(name)).filter(Boolean));
+	const cast = new Set(castChecks.map(({ name }) => normalizeKey(name)).filter(Boolean));
+	const fullyNamedDirectors = new Set(
+		directorChecks
+			.filter(({ result }) => result.qualifiesForMinimum)
+			.map(({ result }) => result.personIdentity),
+	);
+	const fullyNamedActors = new Set(
+		castChecks
+			.filter(({ result }) => result.qualifiesForMinimum)
+			.map(({ result }) => result.personIdentity),
+	);
 
-	if (directors.length < 1) {
+	if (directors.size < 1) {
 		problems.push('director: la película debe conservar al menos un director verificado');
 	}
-	if (distinctCast.size < 2) {
+	if (fullyNamedDirectors.size < 1) {
+		problems.push('director: al menos un director debe tener nombre y apellido, referencia trazable y retrato local');
+	}
+	if (cast.size < 2) {
 		problems.push('cast: la película debe conservar al menos dos actores/intérpretes principales distintos y verificados');
+	}
+	if (fullyNamedActors.size < 2) {
+		problems.push('cast: al menos dos actores/intérpretes deben tener nombre y apellido, referencia trazable y retrato local');
 	}
 }
 
@@ -161,35 +249,26 @@ async function main() {
 	const warnings = [];
 
 	for (const movie of movies) {
-		validateMovieCreditMinimum(movie.data, problems);
 		const directors = splitCreditNames(movie.data.director);
 		const cast = Array.isArray(movie.data.mainCast)
 			? movie.data.mainCast.flatMap((entry) => splitCreditNames(entry))
 			: [];
+		const directorChecks = [];
+		const castChecks = [];
 
 		for (const director of directors) {
 			const entry = findCatalogEntry(catalog, catalogIndex, director);
-			validatePersonCredit(director, 'director', entry, warnings);
-			if (entry?.image) {
-				try {
-					await readFile(path.resolve(PUBLIC_DIR, `.${entry.image}`));
-				} catch {
-					problems.push(`director: ${director} no tiene archivo de retrato en ${entry.image}`);
-				}
-			}
+			const result = await validatePersonCredit(director, 'director', entry, problems, warnings);
+			directorChecks.push({ name: director, result });
 		}
 
 		for (const actor of cast) {
 			const entry = findCatalogEntry(catalog, catalogIndex, actor);
-			validatePersonCredit(actor, 'cast', entry, warnings);
-			if (entry?.image) {
-				try {
-					await readFile(path.resolve(PUBLIC_DIR, `.${entry.image}`));
-				} catch {
-					problems.push(`cast: ${actor} no tiene archivo de retrato en ${entry.image}`);
-				}
-			}
+			const result = await validatePersonCredit(actor, 'cast', entry, problems, warnings);
+			castChecks.push({ name: actor, result });
 		}
+
+		validateMovieCreditMinimum(directorChecks, castChecks, problems);
 	}
 
 	if (problems.length > 0) {
