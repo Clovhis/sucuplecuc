@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-24. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-25. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2221
+Total de peliculas: 2227
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -21,6 +21,7 @@ Total de peliculas: 2221
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Otras plataformas | ATP |
 | 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus | ATP |
+| 2026 | Baby Do Die Do | baby-do-die-do-2026 | Accion | Netflix | +16 |
 | 2026 | Backrooms | backrooms-2026 | Terror | Otras plataformas | +13 |
 | 2026 | Ballena asesina | ballena-asesina-2026 | Terror | Apple TV | +16 |
 | 2026 | Band of Brothers: Legacy | band-of-brothers-legacy-2026 | Documental | HBO Max | +13 |
@@ -54,8 +55,9 @@ Total de peliculas: 2221
 | 2026 | El Botin (The Rip) | el-botin-the-rip-2026 | Thriller | Netflix | +16 |
 | 2026 | El corazón de la bestia | el-corazon-de-la-bestia-2026 | Aventura | Cine | +13 |
 | 2026 | El día D: Bajo presión | el-dia-d-bajo-presion-2026 | Drama | Otras plataformas | +13 |
-| 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Apple TV | +13 |
+| 2026 | El día de la revelación | el-dia-de-la-revelacion-2026 | Ciencia ficcion | Apple TV + Flow | +13 |
 | 2026 | El diablo viste a la moda 2 | el-diablo-viste-a-la-moda-2-2026 | Comedia | Otras plataformas | +13 |
+| 2026 | El Diario de Pilar en Amazonas | el-diario-de-pilar-en-amazonas-2026 | Animacion | Disney Plus | +6 |
 | 2026 | El drama | the-drama-2026 | Romance | Prime Video | +17 |
 | 2026 | El escándalo de Trustor desde dentro | el-escandalo-de-trustor-desde-dentro-2026 | Documental | Netflix | ATP |
 | 2026 | El falsario | el-falsario-2026 | Drama | Netflix | +16 |
@@ -152,6 +154,7 @@ Total de peliculas: 2221
 | 2026 | Michael | michael-2026 | Drama | Apple TV | +13 |
 | 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Otras plataformas | ATP |
+| 2026 | Modha Rathri | modha-rathri-2026 | Comedia | Netflix | +13 |
 | 2026 | Momentos decisivos: Generación 11-S | momentos-decisivos-generacion-11-s-2026 | Documental | Netflix | +16 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Otras plataformas | +17 |
 | 2026 | Moscas | moscas-2026 | Comedia | Apple TV | +16 |
@@ -195,6 +198,7 @@ Total de peliculas: 2221
 | 2026 | Sólo por una noche | solo-por-una-noche-2026 | Comedia romántica | Otras plataformas | +13 |
 | 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine | +13 |
 | 2026 | Stavros Halkias: Uncle Stav | stavros-halkias-uncle-stav-2026 | Comedia | Netflix | +16 |
+| 2026 | Stray Kids: The dominATE Experience | stray-kids-the-dominate-experience-2026 | Documental | HBO Max + Apple TV | ATP |
 | 2026 | Su propio infierno | su-propio-infierno-2026 | Terror | Cine | +17 |
 | 2026 | Sunrise: El último amanecer | sunrise-el-ultimo-amanecer-2026 | Romance | Prime Video | +13 |
 | 2026 | Super Mario Galaxy | super-mario-galaxy-2026 | Animacion | Otras plataformas | ATP |
@@ -215,7 +219,7 @@ Total de peliculas: 2221
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Tierra de crimen | tierra-de-crimen-2026 | Drama | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
-| 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Cine | ATP |
+| 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Disney Plus + Cine | ATP |
 | 2026 | Travis Barker: Más allá del miedo | travis-barker-mas-alla-del-miedo-2026 | Documental | Disney Plus | +7 |
 | 2026 | Tu corazón será destrozado | tu-corazon-sera-destrozado-2026 | Romance | Otras plataformas | +17 |
 | 2026 | Un comeback salvaje | un-comeback-salvaje-2026 | Comedia | Netflix | +13 |
@@ -237,6 +241,7 @@ Total de peliculas: 2221
 | 2025 | Agente infiltrado | agente-infiltrado-2025 | Acción | Prime Video + Apple TV | +16 |
 | 2025 | Alpha | alpha-2025 | Drama | Otras plataformas | +17 |
 | 2025 | Aniversario | aniversario-2025 | Thriller | Prime Video + Apple TV | +16 |
+| 2025 | Autos, Mota y Rocanrol | autos-mota-y-rocanrol-2025 | Comedia | Prime Video | +15 |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Otras plataformas | +13 |
 | 2025 | Back in Action | back-in-action-2025 | Accion | Netflix | +13 |
 | 2025 | Bajo tus pies | bajo-tus-pies-2025 | Terror | Cine | +13 |
@@ -324,6 +329,7 @@ Total de peliculas: 2221
 | 2025 | Scarlet | scarlet-2025 | Anime | Netflix | +13 |
 | 2025 | Sin ley | sin-ley-2025 | Accion | Otras plataformas | ATP |
 | 2025 | Sin rastro | sin-rastro-2025 | Thriller | Apple TV | +16 |
+| 2025 | Sinagtala | sinagtala-2025 | Drama | Netflix | +13 |
 | 2025 | Sinners | sinners-2025 | Terror | HBO Max | +13 |
 | 2025 | Sintió algo verdadero | sintio-algo-verdadero-2025 | Drama | CINE.AR | +13 |
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
