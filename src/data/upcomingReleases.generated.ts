@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-24T16:33:04.785Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-25T09:47:53.357Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -24,7 +24,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "DIGGER",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=job8V254NAE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/b7PtCwsuMw84REQq15nmQgT9UXN.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/u3EtxdmZeiliW98c5Oegk5LIGZa.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10364-digger/"
 	},
 	{
@@ -96,7 +96,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Terror en el Amazonas",
 		"releaseDate": "2026-10-22",
 		"videoUrl": "https://www.youtube.com/watch?v=MQKqgFVU4dQ",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yMFUD7P43VYkFZDCwKlQe6NTHu1.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/9nU0FKNefmhbgi2xXlvZchZsqwm.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10583-terror-en-el-amazonas/"
 	}
 ];
