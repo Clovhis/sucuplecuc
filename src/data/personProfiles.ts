@@ -43,6 +43,14 @@ import { requestedArgentinePersonProfilesWave17 } from './personProfilesWave17.t
 import { requestedArgentinePersonProfilesWave18 } from './personProfilesWave18.ts';
 import { famousDirectorProfilesWave19 } from './personProfilesWave19.ts';
 import { catalogGapActorProfilesWave20 } from './personProfilesWave20.ts';
+import { argentinePublicFiguresProfilesWave21A } from './personProfilesWave21A.ts';
+import { argentineContemporaryPerformersProfilesWave21B } from './personProfilesWave21B.ts';
+import { argentineDirectorsProfilesWave21C } from './personProfilesWave21C.ts';
+import { argentineEstablishedPerformersProfilesWave21D } from './personProfilesWave21D.ts';
+import { argentineCatalogPerformersAndDirectorsProfilesWave21E } from './personProfilesWave21E.ts';
+import { argentineCatalogActorsAndDirectorsProfilesWave21F } from './personProfilesWave21F.ts';
+import { argentineCatalogActorsAndDirectorsProfilesWave21G } from './personProfilesWave21G.ts';
+import { argentineCatalogActorsAndDirectorsProfilesWave21H } from './personProfilesWave21H.ts';
 import { personProfileCatalogCredits } from './personProfileCatalogCredits.generated.ts';
 
 const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
@@ -371,7 +379,7 @@ const catalogBackedProfileMeta: Record<string, { profileImage?: string; referenc
 		referenceUrls: ['https://www.wikidata.org/wiki/Q2576722', 'https://www.imdb.com/name/nm0022765/', 'https://www.themoviedb.org/person/59136-hector-alterio'],
 	},
 	'luis-brandoni': {
-		profileImage: '/people/luis-brandoni-2024.jpg',
+		profileImage: '/people/luis-brandoni-q6700387.jpg',
 		referenceUrls: ['https://www.wikidata.org/wiki/Q6700387', 'https://www.imdb.com/name/nm0104809/', 'https://www.themoviedb.org/person/74896-luis-brandoni'],
 	},
 	'oscar-martinez': {
@@ -13937,6 +13945,14 @@ const personProfilesWithEditorialOverrides = applyPersonProfileEditorialOverride
 	...requestedArgentinePersonProfilesWave18,
 	...famousDirectorProfilesWave19,
 	...catalogGapActorProfilesWave20,
+	...argentinePublicFiguresProfilesWave21A,
+	...argentineContemporaryPerformersProfilesWave21B,
+	...argentineDirectorsProfilesWave21C,
+	...argentineEstablishedPerformersProfilesWave21D,
+	...argentineCatalogPerformersAndDirectorsProfilesWave21E,
+	...argentineCatalogActorsAndDirectorsProfilesWave21F,
+	...argentineCatalogActorsAndDirectorsProfilesWave21G,
+	...argentineCatalogActorsAndDirectorsProfilesWave21H,
 });
 
 export const personProfiles: Record<string, PersonProfileRecord> = Object.fromEntries(
