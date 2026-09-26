@@ -269,7 +269,11 @@ test.describe('simulador de carrera cinematográfica', () => {
 		await expect(birthYearInput).toHaveAttribute('max', String(maxBirthYear));
 		await page.getByLabel(/Nombre que aparece en los créditos/i).fill('Año inválido');
 		await birthYearInput.fill('');
-		await birthYearInput.pressSequentially(String(maxBirthYear + 1));
+		await birthYearInput.evaluate((input, invalidYear) => {
+			const field = input as HTMLInputElement;
+			field.value = invalidYear;
+			field.dispatchEvent(new Event('input', { bubbles: true }));
+		}, String(maxBirthYear + 1));
 		await expect(birthYearInput).toHaveValue(String(maxBirthYear + 1));
 		await page.getByRole('button', { name: /Confirmar identidad/i }).click();
 		await expect(birthYearInput).toHaveAttribute('aria-invalid', 'true');
