@@ -46,6 +46,9 @@ test.describe('mobile-only whole-site audit', () => {
 			page.on('console', onConsole);
 
 			const response = await page.goto(scenario.path, { waitUntil: 'domcontentloaded' });
+			if (scenario.id === 'trailer') {
+				await page.waitForURL('**/peliculas/12-angry-men-1957/', { waitUntil: 'load' });
+			}
 			await page.evaluate(() => window.scrollTo(0, 0));
 			await page.waitForTimeout(350);
 

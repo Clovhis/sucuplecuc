@@ -58,6 +58,7 @@ genres: string[];
 	years: string[];
 	recentPremiere: boolean;
 	sort: MovieSort;
+	sortExplicit?: boolean;
 };
 
 type HomeState = HomeFilterState & {
@@ -75,6 +76,7 @@ type StoredHomeState = Partial<HomeState> & {
 	minScore?: unknown;
 	year?: unknown;
 	sort?: unknown;
+	sortExplicit?: unknown;
 };
 
 const homeStateKey = 'cineposta:home-list-state:v7';
@@ -234,6 +236,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	let activeYears: string[] = [];
 	let activeRecentPremiere = false;
 	let activeSort: MovieSort = 'newest';
+	let activeSortExplicit = false;
 	let lastAppliedQuery = '';
 	let lastAppliedGenre = '';
 	let lastAppliedEditorialFilters = '';
@@ -243,8 +246,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	let lastAppliedYears = '';
 	let lastAppliedRecentPremiere = false;
 	let lastAppliedSort: MovieSort = 'newest';
+	let lastAppliedSortExplicit = false;
 	let filterTimer = 0;
 	let filterFrame = 0;
+	let filterScheduleVersion = 0;
 	let statusRotateTimer = 0;
 	let statusHideTimer = 0;
 	let statusToken = 0;
@@ -253,6 +258,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	let activeStatusIndex = 0;
 	let activeSuggestionIndex = -1;
 	let currentSuggestions: SearchSuggestionEntry[] = [];
+	let suggestionsDismissed = false;
 
 	const normalize = (value: string): string =>
 		value
@@ -349,6 +355,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 
 		const sort = params.get('orden');
+		const validSort = isMovieSort(sort);
 		return {
 			query: params.get('q')?.trim() ?? '',
 			genres: sanitizeFilterValues(params.getAll('genero'), primaryGenreIds),
@@ -358,7 +365,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			minScore: sanitizeMinScore(params.get('score')) ?? getLegacyUrlMinScore(params),
 			years: sanitizeFilterValues(params.getAll('anio'), yearIds),
 			recentPremiere: params.get('estreno') === 'reciente',
-			sort: isMovieSort(sort) ? sort : 'newest',
+			sort: validSort ? sort : 'newest',
+			sortExplicit: params.has('orden') && validSort,
 		};
 	};
 
@@ -379,7 +387,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (activeMinScore !== null) params.set('score', String(activeMinScore));
 		if (activeYears.length > 0) params.set('anio', activeYears.join(','));
 		if (activeRecentPremiere) params.set('estreno', 'reciente');
-		if (activeSort !== 'newest') params.set('orden', activeSort);
+		if (activeSort !== 'newest' || activeSortExplicit) params.set('orden', activeSort);
 
 		const nextUrl = `${url.pathname}${url.search}${url.hash}`;
 		if (mode === 'push') {
@@ -407,7 +415,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		activeMinScore !== null ||
 		activeYears.length > 0 ||
 		activeRecentPremiere ||
-		activeSort !== 'newest';
+		activeSort !== 'newest' ||
+		activeSortExplicit;
 
 	const getVisibleEntries = (): MovieIndexEntry[] => visibleMovieEntries;
 
@@ -608,7 +617,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			label: `Año: ${getChipLabel(yearChips, 'homeYearId', value) === value ? value.replace('year-', '') : getChipLabel(yearChips, 'homeYearId', value)}`,
 		})),
 		...(activeRecentPremiere ? [{ group: 'premiere', value: 'reciente', label: 'Estrenos recientes' }] : []),
-		...(activeSort !== 'newest' ? [{ group: 'sort', value: activeSort, label: `Orden: ${sortSelect?.selectedOptions[0]?.textContent?.trim() ?? activeSort}` }] : []),
+		...(activeSort !== 'newest' || activeSortExplicit ? [{ group: 'sort', value: activeSort, label: `Orden: ${sortSelect?.selectedOptions[0]?.textContent?.trim() ?? activeSort}` }] : []),
 		...(input.value.trim()
 			? [{ group: 'query', value: input.value.trim(), label: `Búsqueda: “${input.value.trim()}”` }]
 			: []),
@@ -829,6 +838,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	const renderSuggestions = (query: string, matchingEntries: SearchSuggestionEntry[]): void => {
 		if (!(suggestionsBox && suggestionsList && suggestionsCopy)) {
+			return;
+		}
+		if (suggestionsDismissed) {
+			hideSuggestions();
 			return;
 		}
 
@@ -1074,6 +1087,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				years: [...activeYears],
 				recentPremiere: activeRecentPremiere,
 				sort: activeSort,
+				sortExplicit: activeSortExplicit,
 				scrollY: Math.max(0, Math.round(window.scrollY)),
 				ts: Date.now(),
 			};
@@ -1105,6 +1119,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			&& yearKey === lastAppliedYears
 			&& activeRecentPremiere === lastAppliedRecentPremiere
 			&& activeSort === lastAppliedSort
+			&& activeSortExplicit === lastAppliedSortExplicit
 		) {
 			const visibleCount = getVisibleEntries().length;
 			renderSuggestions(query, getSuggestionMatches(query, getVisibleEntries()));
@@ -1121,6 +1136,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		lastAppliedYears = yearKey;
 		lastAppliedRecentPremiere = activeRecentPremiere;
 		lastAppliedSort = activeSort;
+		lastAppliedSortExplicit = activeSortExplicit;
 
 		const matchingEntries: MovieIndexEntry[] = [];
 		const shouldShowFullCatalogMatches = hasActiveCatalogQuery();
@@ -1148,15 +1164,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			}
 		}
 
-		matchingEntries.sort((left, right) => {
-			const newestFirst =
-				Number(right.year) - Number(left.year) || right.releaseTimestamp - left.releaseTimestamp;
-			if (activeSort === 'newest') return newestFirst || left.title.localeCompare(right.title, 'es');
-			if (activeSort === 'oldest') return -newestFirst || left.title.localeCompare(right.title, 'es');
-			if (activeSort === 'title') return left.title.localeCompare(right.title, 'es');
-			const rankDelta = (right.score ?? 0) - (left.score ?? 0);
-			return (activeSort === 'most-recommended' ? rankDelta : -rankDelta) || newestFirst || left.title.localeCompare(right.title, 'es');
-		});
+		if (shouldShowFullCatalogMatches) {
+			matchingEntries.sort((left, right) => {
+				const newestFirst =
+					Number(right.year) - Number(left.year) || right.releaseTimestamp - left.releaseTimestamp;
+				if (activeSort === 'newest') return newestFirst || left.title.localeCompare(right.title, 'es');
+				if (activeSort === 'oldest') return -newestFirst || left.title.localeCompare(right.title, 'es');
+				if (activeSort === 'title') return left.title.localeCompare(right.title, 'es');
+				const rankDelta = (right.score ?? 0) - (left.score ?? 0);
+				return (activeSort === 'most-recommended' ? rankDelta : -rankDelta) || newestFirst || left.title.localeCompare(right.title, 'es');
+			});
+		}
 
 		renderMovieGrid(matchingEntries);
 		const visibleCount = matchingEntries.length;
@@ -1245,6 +1263,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		activeYears = [];
 		activeRecentPremiere = false;
 		activeSort = 'newest';
+		activeSortExplicit = false;
 		input.value = '';
 		hideSuggestions();
 		applyGenreUI();
@@ -1263,12 +1282,34 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		return visibleCount;
 	};
 
-	const scheduleFilter = (): void => {
-		showStatus(searchLoadingPhrases);
+	const settleSearchAndHideSuggestions = (): void => {
+		suggestionsDismissed = true;
+		filterScheduleVersion += 1;
 		window.clearTimeout(filterTimer);
+		window.cancelAnimationFrame(filterFrame);
+		filterTimer = 0;
+		filterFrame = 0;
+
+		const visibleCount = runFilter(true);
+		updateHomeUrl('replace');
+		persistHomeState();
+		syncStatusWithVisiblePosters('search', visibleCount);
+		hideSuggestions();
+	};
+
+	const scheduleFilter = (): void => {
+		window.clearTimeout(filterTimer);
+		window.cancelAnimationFrame(filterFrame);
+		filterTimer = 0;
+		filterFrame = 0;
+		const scheduleVersion = ++filterScheduleVersion;
+		showStatus(searchLoadingPhrases);
 		filterTimer = window.setTimeout(() => {
-			window.cancelAnimationFrame(filterFrame);
+			if (scheduleVersion !== filterScheduleVersion) return;
+			filterTimer = 0;
 			filterFrame = window.requestAnimationFrame(() => {
+				if (scheduleVersion !== filterScheduleVersion) return;
+				filterFrame = 0;
 				const visibleCount = runFilter();
 				updateHomeUrl('replace');
 				persistHomeState();
@@ -1297,6 +1338,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const confirmDesktopSearch = (): void => {
 		if (!isDesktopSearchLayout() || input.value.trim().length === 0) return;
 
+		suggestionsDismissed = true;
+		filterScheduleVersion += 1;
 		window.clearTimeout(filterTimer);
 		window.cancelAnimationFrame(filterFrame);
 
@@ -1321,6 +1364,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		activeYears = sanitizeFilterValues(state.years, yearIds);
 		activeRecentPremiere = state.recentPremiere;
 		activeSort = state.sort;
+		activeSortExplicit = state.sortExplicit ?? state.sort !== 'newest';
 		applyGenreUI();
 		applySubgenreUI();
 		applyPlatformUI();
@@ -1338,6 +1382,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		lastAppliedYears = '';
 		lastAppliedRecentPremiere = false;
 		lastAppliedSort = 'newest';
+		lastAppliedSortExplicit = false;
 	};
 
 	const getCurrentFilterMode = (): StatusMode => (hasActiveCatalogQuery() ? 'search' : 'catalog');
@@ -1360,6 +1405,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			years: [],
 			recentPremiere: false,
 			sort: 'newest',
+			sortExplicit: false,
 		});
 		if (urlState) {
 			updateHomeUrl('replace');
@@ -1409,6 +1455,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			years: sanitizeFilterValues(parsed.years ?? parsed.year, yearIds),
 			recentPremiere: parsed.recentPremiere === true,
 			sort: isMovieSort(parsed.sort) ? parsed.sort : 'newest',
+			sortExplicit:
+				typeof parsed.sortExplicit === 'boolean'
+					? parsed.sortExplicit
+					: isMovieSort(parsed.sort) && parsed.sort !== 'newest',
 		});
 		updateHomeUrl('replace');
 		renderCurrentHomeState();
@@ -1491,6 +1541,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	sortSelect?.addEventListener('change', () => {
 		activeSort = isMovieSort(sortSelect.value) ? sortSelect.value : 'newest';
+		activeSortExplicit = true;
 		applyFilterChange();
 	});
 
@@ -1501,16 +1552,19 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 					activeRecentPremiere = true;
 					activeMinScore = 7;
 					activeSort = 'newest';
+					activeSortExplicit = false;
 					break;
 				case 'premieres':
 					activeRecentPremiere = true;
 					activeMinScore = null;
 					activeSort = 'newest';
+					activeSortExplicit = false;
 					break;
 				case 'recommended':
 					activeRecentPremiere = false;
 					activeMinScore = 7;
 					activeSort = 'newest';
+					activeSortExplicit = false;
 					break;
 				default:
 					return;
@@ -1546,6 +1600,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			activeRecentPremiere = false;
 		} else if (group === 'sort') {
 			activeSort = 'newest';
+			activeSortExplicit = false;
 		} else {
 			return;
 		}
@@ -1567,6 +1622,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	updateClearButtonVisibility();
 
 	input.addEventListener('input', () => {
+		suggestionsDismissed = false;
 		scheduleFilter();
 	});
 
@@ -1574,6 +1630,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (
 			input.value.trim().length > 0 &&
 			currentSuggestions.length > 0 &&
+			!suggestionsDismissed &&
 			suggestionsBox instanceof HTMLElement
 		) {
 			suggestionsBox.hidden = false;
@@ -1594,7 +1651,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		if (currentSuggestions.length === 0) {
 			if (event.key === 'Escape') {
-				hideSuggestions();
+				settleSearchAndHideSuggestions();
 			}
 			return;
 		}
@@ -1639,7 +1696,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 
 		if (event.key === 'Escape') {
-			hideSuggestions();
+			settleSearchAndHideSuggestions();
 		}
 	});
 

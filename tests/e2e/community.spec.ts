@@ -40,7 +40,5 @@ test('the sitemap includes indexable movie discussions', async ({ page }) => {
 	const response = await page.goto('/sitemap.xml');
 
 	expect(response?.ok()).toBeTruthy();
-	await expect(page.locator('body')).toContainText(
-		'https://www.cineposta.com.ar/comunidad/peliculas/akira-1988/',
-	);
+	expect(await response?.text()).toContain('https://www.cineposta.com.ar/comunidad/peliculas/akira-1988/');
 });

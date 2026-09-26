@@ -56,7 +56,7 @@ test('home page renders the catalog shell', async ({ page }) => {
 });
 
 test('contact page exposes separate general and press channels', async ({ page }) => {
-	const response = await page.goto('/contacto/', { waitUntil: 'domcontentloaded' });
+	const response = await page.goto('/contacto/', { waitUntil: 'load' });
 
 	expect(response?.ok()).toBeTruthy();
 	await expect(page.getByRole('heading', { name: 'Consultas generales' })).toBeVisible();
@@ -84,7 +84,7 @@ test('contact page exposes separate general and press channels', async ({ page }
 });
 
 test('editorial identity is presented as a team', async ({ page }) => {
-	const response = await page.goto('/equipo/', { waitUntil: 'domcontentloaded' });
+	const response = await page.goto('/equipo/', { waitUntil: 'load' });
 
 	expect(response?.ok()).toBeTruthy();
 	await expect(page).toHaveTitle(/El equipo de Cine Posta/i);
@@ -137,6 +137,20 @@ test('movie detail page renders a known title', async ({ page }) => {
   expect(response?.ok()).toBeTruthy();
   await expect(page.getByRole('heading', { name: /akira/i }).first()).toBeVisible();
   await expect(page.locator('body')).toContainText(/Akira/i);
+});
+
+test('Superbad title and local poster stay aligned', async ({ page }) => {
+	const response = await page.goto('/peliculas/supersalidos-2007/', { waitUntil: 'domcontentloaded' });
+
+	expect(response?.ok()).toBeTruthy();
+	await expect(page.getByRole('heading', { name: 'Superbad', exact: true }).first()).toBeVisible();
+
+	const poster = page.locator('.movie-detail__poster img[data-cineposta-poster]').first();
+	await expect(poster).toHaveAttribute('src', '/assets/posters/2007/supersalidos-2007.webp');
+	await expect.poll(() => poster.evaluate((element) => {
+		const image = element as HTMLImageElement;
+		return { complete: image.complete, naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight };
+	})).toEqual({ complete: true, naturalWidth: 480, naturalHeight: 720 });
 });
 
 test('movie detail reaction follows the CinePosta score', async ({ page }) => {

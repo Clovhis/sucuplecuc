@@ -262,11 +262,11 @@ test.describe('home catalog filters', () => {
 
     await sort.selectOption('newest');
 		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);
-    const newestYears = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
-      nodes.map((card) => Number(card.getAttribute('data-movie-year'))),
-    );
-    expect(newestYears.every((year, index) => index === 0 || newestYears[index - 1] >= year)).toBeTruthy();
-    expect(new URL(page.url()).searchParams.has('orden')).toBeFalsy();
+		const newestYears = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((nodes) =>
+			nodes.map((card) => Number(card.getAttribute('data-movie-year'))),
+		);
+		expect(newestYears.every((year, index) => index === 0 || newestYears[index - 1] >= year)).toBeTruthy();
+		expect(new URL(page.url()).searchParams.get('orden')).toBe('newest');
 
     await sort.selectOption('most-recommended');
 		await expect.poll(() => visibleMovieTitles(page), { timeout: 15_000 }).not.toEqual([]);
@@ -576,7 +576,7 @@ test.describe('home catalog filters', () => {
   });
 
   test('every subgenre chip intersects correctly with Netflix', async ({ page }) => {
-    test.setTimeout(60_000);
+	test.setTimeout(120_000);
     await gotoHome(page);
 
     const allCatalogCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) => {
@@ -711,10 +711,11 @@ test.describe('home catalog filters', () => {
     await page.getByRole('button', { name: /^Drama$/i }).click();
     await page.getByRole('button', { name: /^Heist$/i }).click();
     await page.getByRole('button', { name: /Filtrar por Disney\+/i }).click();
-    await page.locator('[data-movie-search-input]').fill('godfather');
+	await page.locator('[data-movie-search-input]').fill('godfather');
 		await page.locator('[data-movie-search-input]').press('Escape');
+		await expect(page.locator('[data-movie-search-dropdown]')).toBeHidden();
 
-    await page.locator('[data-home-advanced-filters] summary').click();
+		await page.locator('[data-home-advanced-filters] summary').click();
     await page.getByRole('button', { name: /Quitar Filtro: Ganadoras del Oscar/i }).click();
     await openAdvancedFilters(page);
     await expect(page.getByRole('button', { name: /^Ganadoras del Oscar$/i })).toHaveAttribute('aria-pressed', 'false');

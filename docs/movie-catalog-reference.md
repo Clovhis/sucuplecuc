@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-25. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-26. Fuente: src/data/movies/*.json
 
 Total de peliculas: 2227
 
@@ -1295,7 +1295,7 @@ Total de peliculas: 2227
 | 2007 | Sin lugar para los débiles | no-country-for-old-men-2007 | Crimen | Netflix + Apple TV | +13 |
 | 2007 | Spider-Man 3 | spider-man-3-2007 | Accion | Prime Video | +13 |
 | 2007 | Sunshine | sunshine-2007 | Ciencia ficcion | Disney Plus | +13 |
-| 2007 | Supersalidos | supersalidos-2007 | Comedia | Apple TV | +17 |
+| 2007 | Superbad | supersalidos-2007 | Comedia | Apple TV | +17 |
 | 2007 | Sweeney Todd: The Demon Barber of Fleet Street | sweeney-todd-the-demon-barber-of-fleet-street-2007 | Musical | Otras plataformas | +17 |
 | 2007 | Yo los declaro marido y Larry | i-now-pronounce-you-chuck-and-larry-2007 | Comedia | Apple TV | +13 |
 | 2007 | Zodíaco | zodiaco-2007 | Thriller | HBO Max | +17 |
@@ -1883,7 +1883,6 @@ Total de peliculas: 2227
 | 1989 | Tiempos de gloria | tiempos-de-gloria-1989 | Drama | Apple TV | +16 |
 | 1989 | Viernes 13. Parte VIII: Jason vuelve... para siempre | friday-the-13th-part-viii-jason-takes-manhattan-1989 | Terror | Otras plataformas | +18 |
 | 1988 | Acusados | acusados-1988 | Drama | Apple TV | +18 |
-| 1988 | Agárralo como puedas | agarralo-como-puedas-1988 | Comedia | Paramount Plus | +13 |
 | 1988 | Akira | akira-1988 | Anime | Apple TV | +17 |
 | 1988 | Armas de mujer | armas-de-mujer-1988 | Comedia | Disney Plus | +16 |
 | 1988 | Arturo, el millonario seductor 2 | arturo-el-millonario-seductor-2-1988 | Comedia | Apple TV | ATP |
@@ -1901,6 +1900,7 @@ Total de peliculas: 2227
 | 1988 | Halloween 4: El regreso de Michael Myers | halloween-4-the-return-of-michael-myers-1988 | Terror | Otras plataformas | +17 |
 | 1988 | Inseparables | inseparables-1988 | Terror | Prime Video | +18 |
 | 1988 | La insoportable levedad del ser | la-insoportable-levedad-del-ser-1988 | Drama | Apple TV | +16 |
+| 1988 | La pistola desnuda | agarralo-como-puedas-1988 | Comedia | Paramount Plus | +13 |
 | 1988 | La última tentación de Cristo | the-last-temptation-of-christ-1988 | Drama | Otras plataformas | +13 |
 | 1988 | Los búfalos de Durham | los-bufalos-de-durham-1988 | Comedia romántica | Otras plataformas | +16 |
 | 1988 | Mi vecino Totoro | my-neighbor-totoro-1988 | Anime | Otras plataformas | ATP |
@@ -2001,7 +2001,6 @@ Total de peliculas: 2227
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Otras plataformas | ATP |
 | 1983 | Videodrome | videodrome-1983 | Terror | Otras plataformas | +18 |
 | 1983 | Zelig | zelig-1983 | Comedia | Otras plataformas | +13 |
-| 1982 | Aquel excitante curso | aquel-excitante-curso-1982 | Comedia | Apple TV | +16 |
 | 1982 | Basket Case | basket-case-1982 | Terror | Otras plataformas | +18 |
 | 1982 | Blade Runner | blade-runner-1982 | Ciencia ficcion | Prime Video | +17 |
 | 1982 | Comedia sexual de una noche de verano | a-midsummer-night-s-sex-comedy-1982 | Comedia | Otras plataformas | +13 |
@@ -2016,6 +2015,7 @@ Total de peliculas: 2227
 | 1982 | La cosa | la-cosa-el-enigma-de-otro-mundo-1982 | Terror | HBO Max + Apple TV | +13 |
 | 1982 | Límite: 48 horas | limite-48-horas-1982 | Accion | Apple TV | +16 |
 | 1982 | Oficial y caballero | oficial-y-caballero-1982 | Drama | Apple TV | +13 |
+| 1982 | Picardías estudiantiles | aquel-excitante-curso-1982 | Comedia | Apple TV | +16 |
 | 1982 | Poltergeist | poltergeist-1982 | Terror | Otras plataformas | ATP |
 | 1982 | Rocky III | rocky-iii-1982 | Drama | Otras plataformas | ATP |
 | 1982 | The Dark Crystal | the-dark-crystal-1982 | Fantasia | Otras plataformas | ATP |
@@ -2036,7 +2036,7 @@ Total de peliculas: 2227
 | 1981 | Raiders of the Lost Ark | raiders-of-the-lost-ark-1981 | Aventura | Otras plataformas | ATP |
 | 1981 | Scanners | scanners-1981 | Terror | Otras plataformas | +18 |
 | 1981 | Viernes 13, 2ª parte | friday-the-13th-part-2-1981 | Terror | Otras plataformas | +18 |
-| 1980 | Aterriza como puedas | aterriza-como-puedas-1980 | Comedia | Apple TV | +13 |
+| 1980 | ¿Y dónde está el piloto? | aterriza-como-puedas-1980 | Comedia | Apple TV | +13 |
 | 1980 | El hombre elefante | el-hombre-elefante-1980 | Drama | HBO Max | +13 |
 | 1980 | Holocausto caníbal | holocausto-canibal-1980 | Gore | Otras plataformas | +18 |
 | 1980 | Los perros de la guerra | los-perros-de-la-guerra-1980 | Accion | Otras plataformas | +13 |

@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const ts = require('typescript');
 const vm = require('vm');
+const { createRequire } = require('node:module');
 const { spawnSync } = require('child_process');
 
 const DEFAULT_REPO = process.cwd();
@@ -177,13 +178,14 @@ function loadPersonProfiles(repoRoot) {
 		compilerOptions: {
 			module: ts.ModuleKind.CommonJS,
 			target: ts.ScriptTarget.ES2020,
+			esModuleInterop: true,
 		},
 	}).outputText;
 
 	const sandbox = {
 		module: { exports: {} },
 		exports: {},
-		require,
+		require: createRequire(filePath),
 		console,
 	};
 	sandbox.exports = sandbox.module.exports;
@@ -207,6 +209,7 @@ function runNodeScript(repoRoot, relativeScriptPath, extraArgs) {
 	const result = spawnSync(process.execPath, [scriptPath, ...extraArgs], {
 		cwd: repoRoot,
 		encoding: 'utf8',
+		maxBuffer: 64 * 1024 * 1024,
 	});
 
 	return {

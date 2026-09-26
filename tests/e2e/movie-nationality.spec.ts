@@ -10,7 +10,10 @@ test('movie detail renders the verified production nationality with a flag', asy
 	const malaysianFlag = sidebarNationality.locator('.movie-detail__taxonomy-nationality-flag');
 	await expect(malaysianFlag).toHaveAttribute('src', '/images/flags/my.svg');
 	await expect(malaysianFlag).toBeVisible();
-	expect(await malaysianFlag.evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+	await malaysianFlag.scrollIntoViewIfNeeded();
+	await expect
+		.poll(() => malaysianFlag.evaluate((image) => (image as HTMLImageElement).naturalWidth), { timeout: 15_000 })
+		.toBeGreaterThan(0);
 
 	const technicalNationality = page.locator('.movie-detail__credit-item--nationality');
 	await expect(technicalNationality.locator('[data-country-code="MY"]')).toContainText('Malasia');
@@ -26,6 +29,9 @@ test('co-productions retain each verified nationality', async ({ page }) => {
 	await expect(nationality.locator('[data-country-code="CH"]')).toContainText('Suiza');
 	const britishFlag = nationality.locator('[data-country-code="GB"] .movie-detail__taxonomy-nationality-flag');
 	await expect(britishFlag).toHaveAttribute('src', '/images/flags/gb.svg');
-	expect(await britishFlag.evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+	await britishFlag.scrollIntoViewIfNeeded();
+	await expect
+		.poll(() => britishFlag.evaluate((image) => (image as HTMLImageElement).naturalWidth), { timeout: 15_000 })
+		.toBeGreaterThan(0);
 });
 

@@ -295,7 +295,7 @@ test('mobile keeps a dense active-filter combination inside the viewport', async
 
 test('mobile layout stays contained when the browser reports a desktop viewport', async ({ page }) => {
   await page.setViewportSize({ width: 980, height: 640 });
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await page.goto('/', { waitUntil: 'load' });
 
   const measurements = await page.evaluate(() => {
     const top = (selector: string) => document.querySelector<HTMLElement>(selector)?.getBoundingClientRect().top ?? Number.POSITIVE_INFINITY;
