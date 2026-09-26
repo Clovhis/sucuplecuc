@@ -1683,6 +1683,7 @@ Total de peliculas: 2227
 | 1996 | El crisol | el-crisol-1996 | Drama | Disney Plus + Otras plataformas | +16 |
 | 1996 | El insoportable | el-insoportable-1996 | Comedia | Apple TV | +13 |
 | 1996 | El jorobado de Notre Dame | el-jorobado-de-notre-dame-1996 | Animacion | Disney Plus | +7 |
+| 1996 | El paciente inglés | the-english-patient-1996 | Drama | Apple TV + Prime Video | +17 |
 | 1996 | En honor a la verdad | en-honor-a-la-verdad-1996 | Drama | Disney Plus | +13 |
 | 1996 | Fanático | fanatico-1996 | Thriller | Netflix + HBO Max | +16 |
 | 1996 | Fargo. Secuestro voluntario | fargo-secuestro-voluntario-1996 | Crimen | Prime Video + Apple TV | +18 |
@@ -1698,7 +1699,6 @@ Total de peliculas: 2227
 | 1996 | Retrato de una dama | retrato-de-una-dama-1996 | Drama | Otras plataformas | +13 |
 | 1996 | Romeo + Julieta de William Shakespeare | romeo-julieta-de-william-shakespeare-1996 | Romance | Disney Plus | +13 |
 | 1996 | Scream (Vigila quién llama) | scream-1996 | Terror | Paramount Plus + Mercado Play | +16 |
-| 1996 | The English Patient | the-english-patient-1996 | Drama | Otras plataformas | +17 |
 | 1996 | Tiempo de matar | tiempo-de-matar-1996 | Drama | Netflix | +17 |
 | 1996 | Tin Cup | tin-cup-1996 | Comedia romántica | Apple TV | +13 |
 | 1996 | Todos dicen I Love You | everyone-says-i-love-you-1996 | Musical | Otras plataformas | +13 |

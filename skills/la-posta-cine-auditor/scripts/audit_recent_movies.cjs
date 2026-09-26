@@ -79,6 +79,7 @@ const HTML_ENTITY_PATTERN = /&(?:#x?[0-9a-f]+|amp|quot|lt|gt|nbsp);/i;
 const SCRAPE_ARTIFACT_PATTERN = /\[\s*,?\s*[0-9a-z]+\s*,?\s*\]/i;
 const FORBIDDEN_POSTER_URL_PATTERN =
 	/(?:^https?:\/\/(?:i\.ytimg\.com|img\.youtube\.com)\/|\/vi\/[a-z0-9_-]+\/(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png)|(?:hqdefault|mqdefault|sddefault|maxresdefault)\.(?:jpg|webp|avif|png))/i;
+const LOCAL_POSTER_PATTERN = /^assets\/posters\/(?:poster-fallback|\d{4}\/[a-z0-9]+(?:-[a-z0-9]+)*)\.webp$/i;
 const HORIZONTAL_POSTER_PATH_PATTERN = /\/(?:backdrop|still|screenshot|thumbnail)\//i;
 const MAX_REVIEW_AUDIT_BATCH_SIZE = 100;
 const WAR_FILTER_LABEL = 'Bélica';
@@ -1256,7 +1257,9 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 		);
 	}
 
-	if (typeof movie.poster !== 'string' || !/^https?:\/\//.test(movie.poster)) {
+	if (typeof movie.poster === 'string' && LOCAL_POSTER_PATTERN.test(movie.poster)) {
+		// Local poster paths are validated against their bytes by verify_posters.cjs.
+	} else if (typeof movie.poster !== 'string' || !/^https?:\/\//.test(movie.poster)) {
 		addFinding(findings, 'warn', 'poster-url', candidatePath, 'poster should use an absolute http(s) URL.');
 	} else {
 		if (FORBIDDEN_POSTER_URL_PATTERN.test(movie.poster)) {

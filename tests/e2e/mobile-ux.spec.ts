@@ -11,7 +11,7 @@ async function openAdvancedFilters(page: import('@playwright/test').Page): Promi
 test('mobile home keeps touch targets and content within the viewport', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This layout check is intentionally mobile-only.');
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
+	await page.goto('/', { waitUntil: 'load' });
 
   const donationGate = page.getByRole('dialog', { name: /Ayudanos a mantener Cine Posta online/i });
   if (await donationGate.isVisible()) {
@@ -64,7 +64,7 @@ test('mobile quick filters stay equal, aligned, and contained at narrow widths',
 
   for (const width of [390, 320]) {
     await page.setViewportSize({ width, height: 844 });
-    await page.goto('/', { waitUntil: 'domcontentloaded' });
+	await page.goto('/', { waitUntil: 'load' });
 
     const layout = await page.locator('.home-quick-filters').evaluate((section) => {
       const buttons = [...section.querySelectorAll<HTMLElement>('.home-quick-filters__chip')];
@@ -108,8 +108,7 @@ test('mobile quick filters stay equal, aligned, and contained at narrow widths',
 test('mobile home exposes the complete app flow and keeps cinema labels on one line', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This flow is intentionally mobile-only.');
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(350);
+  await page.goto('/', { waitUntil: 'load' });
 
   const sectionState = await page.evaluate(() => {
     const selectors = [
@@ -166,7 +165,7 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
 test('mobile home compacts filters and keeps every facet reachable in the carousel', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This compact layout is intentionally mobile-only.');
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await page.goto('/', { waitUntil: 'load' });
 
   const advancedFilters = page.locator('[data-home-advanced-filters]');
   const carousel = page.locator('[data-home-filter-carousel]');
@@ -259,7 +258,7 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
 test('mobile keeps a dense active-filter combination inside the viewport', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This containment check is intentionally mobile-only.');
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await page.goto('/', { waitUntil: 'load' });
 
   const donationGate = page.getByRole('dialog', { name: /Ayudanos a mantener Cine Posta online/i });
   if (await donationGate.isVisible()) {
@@ -318,8 +317,7 @@ test('mobile layout stays contained when the browser reports a desktop viewport'
 test('touch landscape keeps the mobile app shell contained', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This flow is intentionally touch-only.');
   await page.setViewportSize({ width: 844, height: 390 });
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(350);
+  await page.goto('/', { waitUntil: 'load' });
 
   const measurements = await page.evaluate(() => ({
     contentFits: document.documentElement.scrollWidth <= window.innerWidth,
@@ -340,7 +338,7 @@ test('touch landscape keeps the mobile app shell contained', async ({ page }, te
 
 test('desktop keeps the complete home while mobile-only reductions stay hidden', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('desktop-'), 'This regression is intentionally desktop-only.');
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await page.goto('/', { waitUntil: 'load' });
   await expect(page.locator('[data-home-people-grid] .home-people-showcase__card')).toHaveCount(11);
   await expect(page.locator('.upcoming-release-list__item')).toHaveCount(3);
   await expect(page.locator('.weekly-suggestion__queue-item')).toHaveCount(5);

@@ -102,7 +102,7 @@ test('editorial identity is presented as a team', async ({ page }) => {
 	expect(hasHorizontalOverflow).toBeFalsy();
 
 	for (const path of ['/', '/sobre-cine-posta/', '/politica-editorial/', '/contacto/', '/peliculas/akira-1988/']) {
-		await page.goto(path, { waitUntil: 'domcontentloaded' });
+		await page.goto(path, { waitUntil: 'load' });
 		const html = await page.content();
 		expect(html, `La identidad personal no debe aparecer en ${path}`).not.toMatch(
 			/\/editor\//i,
@@ -111,7 +111,7 @@ test('editorial identity is presented as a team', async ({ page }) => {
 });
 
 test('home separates the initial cards into cinema and platform releases', async ({ page }) => {
-	await page.goto('/', { waitUntil: 'domcontentloaded' });
+	await page.goto('/', { waitUntil: 'load' });
 
 	const initialMovies = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
 		cards.map((card) => ({

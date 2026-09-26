@@ -2042,6 +2042,19 @@ img {
 	}
 }
 
+@media (min-width: 45.0625rem) and (max-width: 68rem) {
+	.home-quick-filters .home-genre-filter__chips {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.home-quick-filters .home-quick-filters__chip {
+		width: 100%;
+		min-width: 0;
+		white-space: normal;
+	}
+}
+
 .home-genre-filter--verdict {
 	position: relative;
 	isolation: isolate;

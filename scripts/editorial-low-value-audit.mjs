@@ -44,6 +44,19 @@ const TEMPLATE_REVIEW_MARKERS = [
 	'pierde un poco de fuerza',
 	'rinde por tramos',
 ];
+const FORMULAIC_REVIEW_ENDING_MARKERS = [
+	'la friccion entre su idea central y los personajes que deben atravesarla',
+	'la energia fisica el riesgo y la claridad de sus enfrentamientos no aparece como simple decoracion de genero',
+	'la forma en que la imaginacion vuelve visible el conflicto y sus consecuencias',
+	'se vuelve parte de su manera de mirar el mundo',
+	'queda claro que la friccion entre su idea central',
+	'deja una impresion propia',
+	'queda claro que la forma en que',
+	'una decision que le da espesor mas alla del argumento',
+	'termina de darle una identidad que no depende solo de la premisa',
+	'importa tanto como lo que la historia cuenta',
+	'la recepcion la ubico entre las grandes fantasias modernas',
+];
 const SCORE_LABEL_TEMPLATE_PATTERNS = [
 	'<label> porque',
 	'lo que la vuelve <label>',
@@ -340,6 +353,7 @@ for (const { filePath, movie } of entries) {
 	const reviewSentenceCount = rawSentenceCount(movie.review);
 	const templateHits = [
 		...TEMPLATE_REVIEW_MARKERS.filter((marker) => normalize(movie.review).includes(marker)),
+		...FORMULAIC_REVIEW_ENDING_MARKERS.filter((marker) => normalize(movie.review).includes(marker)),
 		...getScoreLabelTemplateHits(movie),
 	];
 

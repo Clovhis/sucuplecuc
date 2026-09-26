@@ -199,7 +199,7 @@ test('BFI uses a transparent illustration instead of a flat placeholder tile', a
 });
 
 test('award cards give the illustration visual priority', async ({ page }) => {
-	await page.goto('/personas/brad-pitt/', { waitUntil: 'domcontentloaded' });
+	await page.goto('/personas/brad-pitt/', { waitUntil: 'load' });
 	await expect(page.locator('.person-page__award-item').first()).toHaveCSS('display', 'grid');
 
 	const layout = await page.locator('.person-page__award-item').first().evaluate((item) => {
@@ -223,7 +223,7 @@ test('award cards give the illustration visual priority', async ({ page }) => {
 test('award cards do not overflow a narrow viewport', async ({ page }, testInfo) => {
 	test.skip(!testInfo.project.name.startsWith('mobile'), 'Narrow layout is covered by the mobile projects.');
 
-	await page.goto('/personas/brad-pitt/', { waitUntil: 'domcontentloaded' });
+	await page.goto('/personas/brad-pitt/', { waitUntil: 'load' });
 	const metrics = await page.evaluate(() => ({
 		bodyWidth: document.body.scrollWidth,
 		viewportWidth: window.innerWidth,

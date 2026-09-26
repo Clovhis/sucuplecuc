@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test('La Posta en 10 segundos shows only explicit, film-specific editorial copy', async ({ page }) => {
-	await page.goto('/peliculas/un-cuento-chino-2011/', { waitUntil: 'domcontentloaded' });
+	await page.goto('/peliculas/un-cuento-chino-2011/', { waitUntil: 'load' });
 
 	const take = page.locator('.movie-detail__ten-second-card');
 	await expect(take).toBeVisible();
