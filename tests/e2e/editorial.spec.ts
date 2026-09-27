@@ -9,7 +9,8 @@ test('editorial connects home, index and movie without replacing its review', as
   await expect(home.getByRole('heading', { name: entry.title })).toBeVisible();
   await home.getByRole('link', { name: 'Todas las publicaciones' }).click();
   await expect(page).toHaveURL(/\/editorial\/$/);
-  await expect(page.getByText('5 min de lectura')).toBeVisible();
+  const indexedEntry = page.locator('.editorial-card').filter({ hasText: entry.title });
+  await expect(indexedEntry.getByText('5 min de lectura')).toBeVisible();
   await page.getByRole('heading', { name: entry.title }).click();
   await expect(page).toHaveURL(path);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(entry.title);
