@@ -1,0 +1,4 @@
+interface:
+  display_name: "CinePosta Editorial"
+  short_description: "Columnas rioplatenses con imágenes e integración web"
+  default_prompt: "Usá $cineposta-editorial para crear una editorial para esta película a partir de mis ideas."

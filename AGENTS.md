@@ -20,6 +20,13 @@
 7. Antes de publicar o cambiar una plataforma, verificá la disponibilidad legal en AR en la fecha de trabajo: primero JustWatch AR y luego la página oficial argentina de la plataforma cuando haga falta confirmar. Guardá la URL y el dato comprobado en el reporte de la tarea.
 8. No inferir una plataforma por el estudio, la franquicia, una ficha global ni un enlace que redirige a otro país. Priorizá suscripción (`FLATRATE`); si sólo hay alquiler/compra legal en AR, se puede usar ese proveedor, dejando explícito que es transaccional. Si no hay evidencia AR vigente, usá `Otras plataformas` y no combines esa etiqueta con otra.
 
+## Notas y editoriales de CinePosta
+
+- Para crear o editar editoriales, notas, especiales u opiniones, usá siempre la skill [`cineposta-editorial`](skills/cineposta-editorial/SKILL.md), aunque el pedido sólo diga «Creá una editorial para esta película. Estas son mis ideas…». Leela antes de redactar; allí están las reglas de voz, estructura, imágenes, integración, validación y publicación.
+- La nota de [Resident Evil: Noche Cero](src/data/editorials/resident-evil-noche-cero-la-veria-99-veces.json) es la referencia aprobada de tono, ritmo y relación entre texto e imágenes. Conservá ese criterio, con texto original y una idea central propia para cada nueva publicación.
+- Las publicaciones viven en `src/data/editorials/*.json`; `src/lib/editorial.ts` calcula la lectura y vincula `movieSlug` con las fichas. Reutilizá `/editorial/`, “Desde CinePosta” y los componentes editoriales sin reemplazar reseñas ni modificar Score CinePosta.
+- Mantené la skill disponible en el repositorio, en `plugins/la-posta-cine/skills/cineposta-editorial/` y en la instalación global de Codex (`$CODEX_HOME/skills/cineposta-editorial/`, o `~/.codex/skills/cineposta-editorial/`). Al actualizarla, sincronizá y validá las tres copias. Una prueba en DEV no autoriza publicar; un pedido explícito de publicación sí.
+
 ## Automatización
 
 - Cada PR valida contenido, build, dependencias productivas y e2e en Chromium.

@@ -20,6 +20,7 @@ import {
 } from '../../lib/movies';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
+import MovieEditorialLinks from '../../components/MovieEditorialLinks.astro';
 import MovieReaction from '../../components/MovieReaction.astro';
 import AwardMark from '../../components/AwardMark.astro';
 import PlatformBadgeGroup from '../../components/PlatformBadgeGroup.astro';
@@ -549,6 +550,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						}
 					</div>
 					<div class="movie-detail__side-stack">
+						<MovieEditorialLinks movieSlug={movie.slug} />
 						<section
 							class="movie-share"
 							aria-labelledby={`share-${movie.slug}`}

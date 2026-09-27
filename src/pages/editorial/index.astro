@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeBrandLink from '../../components/HomeBrandLink.astro';
+import EditorialCard from '../../components/EditorialCard.astro';
+import { getEditorials } from '../../lib/editorial';
+const entries = getEditorials();
+---
+<BaseLayout title="Editorial CinePosta | Historias y opiniones de cine" description="Editoriales, notas, especiales y opiniones de CinePosta. Cine para seguir conversando después de los créditos.">
+  <main id="main-content" class="container editorial-index">
+    <div class="page-actions"><HomeBrandLink className="page-action page-action--home" /></div>
+    <header><p class="kicker">Desde CinePosta</p><h1>Editorial CinePosta</h1><p>Lo que nos queda dando vueltas después de los créditos.</p></header>
+    <section aria-label="Publicaciones"><h2 class="section-title">Editoriales, notas, especiales y opiniones</h2><div class="grid">{entries.map((entry) => <EditorialCard entry={entry} />)}</div></section>
+  </main>
+</BaseLayout>
+<style>
+  .editorial-index { padding-block: 2rem 4rem; }
+  header { max-width: 760px; margin-block: 2rem 3rem; }
+  .kicker { color: var(--accent-soft); text-transform: uppercase; font: .8rem var(--font-mono); }
+  h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.15; margin-block: .8rem; }
+  header > p:last-child { color: var(--muted); font-size: 1.2rem; }
+  .section-title { font-size: 1rem; color: var(--muted); font-weight: 400; margin-bottom: 1.5rem; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+  @media (max-width: 1000px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+</style>

@@ -1,0 +1,28 @@
+---
+import { editorialAsset, formatEditorialDate, getEditorialPath, type Editorial } from '../lib/editorial';
+interface Props { entry: Editorial; }
+const { entry } = Astro.props;
+---
+<article class="editorial-card">
+  <a href={getEditorialPath(entry.slug)}>
+    <img src={editorialAsset(entry.cover.srcSmall ?? entry.cover.src)} alt={entry.cover.alt} width={entry.cover.width} height={entry.cover.height} loading="lazy" decoding="async" />
+    <div class="editorial-card__body">
+      <span class="editorial-card__type">{entry.type}</span>
+      <h3>{entry.title}</h3>
+      <p>{entry.excerpt}</p>
+      <small><time datetime={entry.date}>{formatEditorialDate(entry.date)}</time> · {entry.readingTime} min de lectura</small>
+    </div>
+  </a>
+</article>
+<style>
+  .editorial-card { min-width: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); }
+  a { display: block; height: 100%; text-decoration: none; color: var(--text); }
+  a:hover h3, a:focus-visible h3 { color: var(--accent-soft); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+  img { width: 100%; height: auto; aspect-ratio: 2.23; object-fit: cover; display: block; }
+  .editorial-card__body { padding: 1.25rem; }
+  .editorial-card__type { text-transform: uppercase; font-family: var(--font-mono); color: var(--accent-soft); font-size: .75rem; }
+  h3 { font-size: 1.3rem; line-height: 1.3; margin: .65rem 0; text-wrap: balance; }
+  p { color: var(--muted); margin: 0 0 1rem; }
+  small { color: var(--muted); }
+</style>

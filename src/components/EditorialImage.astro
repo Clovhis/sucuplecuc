@@ -1,0 +1,15 @@
+---
+import { editorialAsset, type EditorialImage } from '../lib/editorial';
+interface Props { image: EditorialImage; eager?: boolean; }
+const { image, eager = false } = Astro.props;
+---
+<figure>
+  <img src={editorialAsset(image.src)} srcset={image.srcSmall ? `${editorialAsset(image.srcSmall)} 640w, ${editorialAsset(image.src)} ${image.width}w` : undefined} sizes="(max-width: 800px) calc(100vw - 40px), 760px" alt={image.alt} width={image.width} height={image.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+  {(image.caption || image.source) && <figcaption>{image.caption}{image.source && <> <a href={image.source} rel="noopener noreferrer">Fuente oficial</a></>}</figcaption>}
+</figure>
+<style>
+  figure { margin: 2.5rem 0; }
+  img { display: block; width: 100%; height: auto; border-radius: var(--control-radius); }
+  figcaption { margin-top: .65rem; color: var(--muted); font-size: .8rem; line-height: 1.6; }
+  a { color: var(--accent-soft); }
+</style>

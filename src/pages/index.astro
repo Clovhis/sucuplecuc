@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import EditorialHighlights from '../components/EditorialHighlights.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
@@ -319,6 +320,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 			deferredHomeMovies={deferredHomeMovies}
 			movieCountLabel={movieCountLabel}
 		/>
+		<EditorialHighlights />
 		{
 			movies.length > 0 ? (
 				<>

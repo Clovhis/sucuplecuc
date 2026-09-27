@@ -1,0 +1,18 @@
+---
+import { getMovieEditorials, getEditorialPath } from '../lib/editorial';
+interface Props { movieSlug: string; }
+const entries = getMovieEditorials(Astro.props.movieSlug);
+---
+{entries.map((entry) => <aside class="movie-editorial" aria-label="Editorial CinePosta">
+  <p class="movie-editorial__label">EDITORIAL CINEPOSTA</p>
+  <h2>{entry.title}</h2>
+  <p>{entry.excerpt}</p>
+  <a href={getEditorialPath(entry.slug)}>Leer editorial →</a>
+</aside>)}
+<style>
+  .movie-editorial { padding: 1.25rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--surface); }
+  .movie-editorial__label { font: .75rem var(--font-mono); color: var(--accent-soft); letter-spacing: .06em; }
+  h2 { font-size: 1.2rem; line-height: 1.4; margin: .6rem 0; }
+  p { color: var(--muted); }
+  a { color: var(--accent-soft); display: inline-block; padding-block: .7rem; }
+</style>
