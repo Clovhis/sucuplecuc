@@ -10,19 +10,27 @@ const entries = fs
   .readdirSync(MOVIE_DIR)
   .filter((file) => file.endsWith('.json'))
   .map((file) => JSON.parse(fs.readFileSync(path.join(MOVIE_DIR, file), 'utf8')))
-  .filter((movie) => movie.releasePlatform === 'Cine')
-  .sort((left, right) => {
-    const leftDate = left.releaseDate || '';
-    const rightDate = right.releaseDate || '';
-    return leftDate.localeCompare(rightDate) || left.title.localeCompare(right.title, 'es', { sensitivity: 'base' });
-  })
   .map((movie) => ({
+    movie,
+    platforms: [...new Set([movie.releasePlatform, ...(Array.isArray(movie.releasePlatforms) ? movie.releasePlatforms : [])].filter(Boolean))],
+  }))
+  .filter(({ platforms }) => platforms.includes('Cine'))
+  .sort((left, right) => {
+    const leftDate = left.movie.releaseDate || '';
+    const rightDate = right.movie.releaseDate || '';
+    return (
+      leftDate.localeCompare(rightDate) ||
+      left.movie.title.localeCompare(right.movie.title, 'es', { sensitivity: 'base' })
+    );
+  })
+  .map(({ movie, platforms }) => ({
     title: movie.title,
     originalTitle: movie.originalTitle || '',
     slug: movie.slug,
     year: movie.year,
     releaseDate: movie.releaseDate || '',
     category: movie.category || '',
+    platforms,
   }));
 
 if (asJson) {

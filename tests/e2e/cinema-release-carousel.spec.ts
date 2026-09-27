@@ -1,4 +1,52 @@
 import { expect, test } from '@playwright/test';
+import { readFileSync, readdirSync } from 'node:fs';
+import path from 'node:path';
+
+function getCurrentTheatricalMovieSlugs() {
+	const now = new Date();
+	const referenceTimestamp = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+	const movieDirectory = path.join(process.cwd(), 'src/data/movies');
+
+	return readdirSync(movieDirectory)
+		.filter((file) => file.endsWith('.json'))
+		.map((file) => JSON.parse(readFileSync(path.join(movieDirectory, file), 'utf8')))
+		.filter((movie) => {
+			const platforms =
+				Array.isArray(movie.releasePlatforms) && movie.releasePlatforms.length > 0
+					? movie.releasePlatforms
+					: [movie.releasePlatform];
+			if (!platforms.includes('Cine')) return false;
+
+			const releaseTimestamp = movie.releaseDate
+				? new Date(`${movie.releaseDate}T00:00:00Z`).getTime()
+				: Date.UTC(movie.year, 0, 1);
+			return Number.isFinite(releaseTimestamp) && releaseTimestamp <= referenceTimestamp;
+		})
+		.map((movie) => movie.slug)
+		.sort();
+}
+
+test('Cartelera renders every current catalog film marked Cine', async ({ page }) => {
+	await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+	const carousel = page.locator('[data-cinema-release-carousel="cinema-release-carousel"]');
+	const displayedSlugs = await carousel
+		.locator('[data-cinema-release-slug]')
+		.evaluateAll((elements) => elements.map((element) => element.getAttribute('data-cinema-release-slug') ?? '').sort());
+
+	expect(displayedSlugs).toEqual(getCurrentTheatricalMovieSlugs());
+	expect(displayedSlugs.length).toBeGreaterThan(12);
+	for (const slug of [
+		'resident-evil-noche-cero-2026',
+		'el-final-de-la-calle-oak-2026',
+		'hospital-britanico-2026',
+		'los-calvos-2024',
+		'avengers-endgame-2019',
+		'toy-story-5-2026',
+	]) {
+		expect(displayedSlugs).toContain(slug);
+	}
+});
 
 test('current cinema releases open their trailer in a dialog on demand', async ({ page }) => {
 	await page.goto('/', { waitUntil: 'domcontentloaded' });

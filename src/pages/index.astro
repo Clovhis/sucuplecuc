@@ -53,13 +53,11 @@ const editorialFilterOptions = RECOMMENDATION_GENRE_OPTIONS.filter((option) =>
 	editorialGenreFilterIds.has(option.id),
 );
 const upcomingReleases = getUpcomingMovieReleases(new Date(), 5);
-const currentTheatricalReleases = getCurrentTheatricalMovieReleases(new Date(), 12)
-	.map((release) => ({
-		...release,
-		embedUrl: getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl, false),
-		watchUrl: release.videoUrl,
-	}))
-	.filter((release) => release.embedUrl);
+const currentTheatricalReleases = getCurrentTheatricalMovieReleases(new Date()).map((release) => ({
+	...release,
+	embedUrl: release.videoUrl ? getYoutubeAutoplayEmbedUrlFromVideoUrl(release.videoUrl, false) : '',
+	watchUrl: release.videoUrl,
+}));
 const currentStreamingReleases = getCurrentStreamingMovieReleases(new Date(), 12)
 	.map((release) => ({
 		...release,
@@ -437,7 +435,10 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						/>
 					</div>
 
-					<CinemaReleaseCarousel releases={currentTheatricalReleases} />
+					<CinemaReleaseCarousel
+	releases={currentTheatricalReleases}
+	listLabel="Películas actualmente en cartelera"
+/>
 					<CinemaReleaseCarousel
 						releases={currentStreamingReleases}
 						sectionId="streaming-release-carousel"

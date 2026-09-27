@@ -3617,6 +3617,7 @@ img {
 	text-align: start;
 	cursor: pointer;
 	font: inherit;
+	text-decoration: none;
 }
 
 .cinema-release-carousel__poster-wrap {

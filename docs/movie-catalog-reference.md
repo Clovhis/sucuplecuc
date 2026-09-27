@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-26. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-27. Fuente: src/data/movies/*.json
 
 Total de peliculas: 2227
 
@@ -1194,7 +1194,7 @@ Total de peliculas: 2227
 | 2009 | La princesa y el sapo | la-princesa-y-el-sapo-2009 | Animacion | Disney Plus | ATP |
 | 2009 | Lluvia de hamburguesas | lluvia-de-hamburguesas-2009 | Animacion | Netflix + Apple TV | ATP |
 | 2009 | Los fantasmas de Scrooge | los-fantasmas-de-scrooge-2009 | Animacion | Otras plataformas | ATP |
-| 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Cine + Apple TV | +13 |
+| 2009 | Los mundos de Coraline | los-mundos-de-coraline-2009 | Animacion | Apple TV | +13 |
 | 2009 | Los secretos del poder | los-secretos-del-poder-2009 | Drama | Apple TV | +13 |
 | 2009 | Los sustitutos | los-sustitutos-2009 | Ciencia ficcion | Disney Plus | +13 |
 | 2009 | Luna | luna-2009 | Ciencia ficcion | Apple TV | +13 |
@@ -1951,7 +1951,7 @@ Total de peliculas: 2227
 | 1985 | ¡qué noche! | after-hours-1985 | Comedia | Otras plataformas | ATP |
 | 1985 | A Nightmare on Elm Street 2: Freddy's Revenge | a-nightmare-on-elm-street-2-freddy-s-revenge-1985 | Terror | Otras plataformas | +17 |
 | 1985 | Armas invencibles (Police Story) | armas-invencibles-police-story-1985 | Accion | Otras plataformas | +13 |
-| 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Cine | ATP |
+| 1985 | Back to the Future | back-to-the-future-1985 | Ciencia ficcion | Prime Video | ATP |
 | 1985 | Brazil... La película | brazil-la-pelicula-1985 | Ciencia ficcion | Prime Video | +13 |
 | 1985 | El club de los cinco | the-breakfast-club-1985 | Comedia | Apple TV | +13 |
 | 1985 | El color púrpura | the-color-purple-1985 | Drama | Otras plataformas | +13 |

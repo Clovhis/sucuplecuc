@@ -30,7 +30,7 @@ const {
 	sectionId = 'cinema-release-carousel',
 	title = 'Cartelera',
 	availability = 'Películas que están ahora mismo en el cine',
-	listLabel = 'Estrenos de cine con trailer disponible',
+	listLabel = 'Películas actualmente en cartelera',
 	showPlatform = false,
 } = Astro.props as Props;
 const titleId = `${sectionId}-title`;
@@ -69,38 +69,62 @@ function formatReleaseDate(value: string) {
 			<div class="cinema-release-carousel__viewport" data-cinema-release-viewport>
 				<ol class="cinema-release-carousel__list" aria-label={listLabel}>
 					{releases.map((release) => (
-						<li class="cinema-release-carousel__item">
+						<li class="cinema-release-carousel__item" data-cinema-release-slug={release.slug}>
 							<article class="cinema-release-carousel__card">
-								<button
-									class="cinema-release-carousel__trailer"
-									type="button"
-									aria-label={`Reproducir trailer de ${release.title}`}
-									aria-haspopup="dialog"
-									data-cinema-release-open
-									data-cinema-release-title={release.title}
-									data-cinema-release-date={release.releaseDate}
-									data-cinema-release-embed-url={release.embedUrl}
-									data-cinema-release-watch-url={release.watchUrl}
-								>
-									<span class="cinema-release-carousel__poster-wrap">
-										<img
-											class="cinema-release-carousel__poster"
-											src={release.posterUrl}
-											alt={`Póster de ${release.title}`}
-											width="342"
-											height="513"
-											loading="lazy"
-											decoding="async"
-											referrerpolicy="no-referrer"
-											data-cineposta-poster
-											data-poster-search-title={release.title}
-											data-poster-search-year={release.year}
-										/>
-										<span class="cinema-release-carousel__play" aria-hidden="true">
-											<svg viewBox="0 0 24 24"><path d="m9 6 8 6-8 6V6Z" /></svg>
+								{release.embedUrl && release.watchUrl ? (
+									<button
+										class="cinema-release-carousel__trailer"
+										type="button"
+										aria-label={`Reproducir trailer de ${release.title}`}
+										aria-haspopup="dialog"
+										data-cinema-release-open
+										data-cinema-release-title={release.title}
+										data-cinema-release-date={release.releaseDate}
+										data-cinema-release-embed-url={release.embedUrl}
+										data-cinema-release-watch-url={release.watchUrl}
+									>
+										<span class="cinema-release-carousel__poster-wrap">
+											<img
+												class="cinema-release-carousel__poster"
+												src={release.posterUrl}
+												alt={`Póster de ${release.title}`}
+												width="342"
+												height="513"
+												loading="lazy"
+												decoding="async"
+												referrerpolicy="no-referrer"
+												data-cineposta-poster
+												data-poster-search-title={release.title}
+												data-poster-search-year={release.year}
+											/>
+											<span class="cinema-release-carousel__play" aria-hidden="true">
+												<svg viewBox="0 0 24 24"><path d="m9 6 8 6-8 6V6Z" /></svg>
+											</span>
 										</span>
-									</span>
-								</button>
+									</button>
+								) : (
+									<a
+										class="cinema-release-carousel__trailer"
+										href={release.movieUrl}
+										aria-label={`Ver la ficha de ${release.title}`}
+									>
+										<span class="cinema-release-carousel__poster-wrap">
+											<img
+												class="cinema-release-carousel__poster"
+												src={release.posterUrl}
+												alt={`Póster de ${release.title}`}
+												width="342"
+												height="513"
+												loading="lazy"
+												decoding="async"
+												referrerpolicy="no-referrer"
+												data-cineposta-poster
+												data-poster-search-title={release.title}
+												data-poster-search-year={release.year}
+											/>
+										</span>
+									</a>
+								)}
 								<span class="cinema-release-carousel__date">{release.dateLabel ?? `Estreno ${formatReleaseDate(release.releaseDate)}`}</span>
 								{showPlatform && (
 									<div class="cinema-release-carousel__platform-slot">

@@ -7,8 +7,11 @@ const CARTELERA_SOURCES = [
     key: 'cinesargentinos',
     url: 'https://m.cinesargentinos.com.ar/cartelera/',
     extractTitles(html) {
-      const matches = [...html.matchAll(/<h3 class="movie-item__title">([\s\S]*?)<\/h3>/g)];
-      return matches.map((match) => decodeEntities(match[1])).filter(Boolean);
+      const matches = [...html.matchAll(/<h3\b([^>]*)>([\s\S]*?)<\/h3>/gi)];
+      return matches
+        .filter((match) => /class=["'][^"']*(?:movie-item__title|news-item__head-title)[^"']*["']/i.test(match[1]))
+        .map((match) => decodeEntities(match[2]))
+        .filter(Boolean);
     },
   },
   {

@@ -2,8 +2,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const Module = require('module');
 const ts = require('typescript');
-const vm = require('vm');
 const { spawnSync } = require('child_process');
 
 const DEFAULT_REPO = process.cwd();
@@ -172,24 +172,23 @@ function loadMovies(repoRoot) {
 
 function loadPersonProfiles(repoRoot) {
 	const filePath = path.join(repoRoot, PERSON_PROFILES_PATH);
-	const source = fs.readFileSync(filePath, 'utf8');
-	const transformed = ts.transpileModule(source, {
-		compilerOptions: {
-			module: ts.ModuleKind.CommonJS,
-			target: ts.ScriptTarget.ES2020,
-		},
-	}).outputText;
+	if (!Module._extensions['.ts']) {
+		Module._extensions['.ts'] = (loadedModule, modulePath) => {
+			const source = fs.readFileSync(modulePath, 'utf8');
+			const transformed = ts.transpileModule(source, {
+				compilerOptions: {
+					module: ts.ModuleKind.CommonJS,
+					target: ts.ScriptTarget.ES2020,
+					esModuleInterop: true,
+				},
+			}).outputText;
+			loadedModule._compile(transformed, modulePath);
+		};
+	}
 
-	const sandbox = {
-		module: { exports: {} },
-		exports: {},
-		require,
-		console,
-	};
-	sandbox.exports = sandbox.module.exports;
-
-	vm.runInNewContext(transformed, sandbox, { filename: filePath });
-	return sandbox.module.exports.personProfiles || sandbox.exports.personProfiles || {};
+	const profileRequire = Module.createRequire(filePath);
+	const profileModule = profileRequire(filePath);
+	return profileModule.personProfiles || {};
 }
 
 function runNodeScript(repoRoot, relativeScriptPath, extraArgs) {
@@ -207,6 +206,7 @@ function runNodeScript(repoRoot, relativeScriptPath, extraArgs) {
 	const result = spawnSync(process.execPath, [scriptPath, ...extraArgs], {
 		cwd: repoRoot,
 		encoding: 'utf8',
+		maxBuffer: 64 * 1024 * 1024,
 	});
 
 	return {

@@ -842,43 +842,38 @@ export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4):
 }
 
 /**
- * Cartelera con ficha publicada en Cine Posta. La ventana corta evita que un
- * rótulo de cine desactualizado mantenga títulos viejos en la portada.
+ * Cartelera con ficha publicada en Cine Posta. La vigencia se valida en los
+ * datos de la película; la portada no recorta por antigüedad ni por cantidad.
  */
 export function getCurrentTheatricalMovieReleases(
 	referenceDate = new Date(),
-	limit = 12,
-	windowDays = 42,
 ): CurrentTheatricalMovieRelease[] {
 	const referenceTimestamp = Date.UTC(
 		referenceDate.getUTCFullYear(),
 		referenceDate.getUTCMonth(),
 		referenceDate.getUTCDate(),
 	);
-	const earliestReleaseTimestamp = referenceTimestamp - windowDays * DAY_IN_MS;
 	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
 
 	return movies
 		.filter((movie) => {
-			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) return false;
-			const isInTheaters = isTheatricalRelease(movie);
-			const releaseTimestamp = getMovieSortTimestamp(movie);
-			return isInTheaters && releaseTimestamp >= earliestReleaseTimestamp && releaseTimestamp <= referenceTimestamp;
+			if (!isTheatricalRelease(movie)) return false;
+			return getMovieSortTimestamp(movie) <= referenceTimestamp;
 		})
 		.sort(
 			(left, right) =>
 				getMovieSortTimestamp(right) - getMovieSortTimestamp(left) ||
 				left.title.localeCompare(right.title, 'es'),
 		)
-		.slice(0, Math.max(1, limit))
 		.map((movie) => ({
 			slug: movie.slug,
 			title: movie.title,
 			year: movie.year,
 			movieUrl: getMoviePath(movie.slug),
-			releaseDate: movie.releaseDate!,
+			releaseDate: movie.releaseDate ?? '',
+			dateLabel: 'En cartelera',
 			posterUrl: getPosterUrl(movie.poster),
-			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
+			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId ?? ''),
 			verdictLabel: getVerdictLabel(movie),
 			verdictClass: getVerdictBadgeClass(movie),
 		}));
