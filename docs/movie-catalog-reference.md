@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-09-27. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-09-28. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2227
+Total de peliculas: 2228
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -225,6 +225,7 @@ Total de peliculas: 2227
 | 2026 | Un comeback salvaje | un-comeback-salvaje-2026 | Comedia | Netflix | +13 |
 | 2026 | Un hijo propio | un-hijo-propio-2026 | Documental | Netflix | +16 |
 | 2026 | Una mujer sin pasado (The Secret Woman) | una-mujer-sin-pasado-2026 | Drama | Netflix | +13 |
+| 2026 | Unabomber | unabomber-2026 | Drama | Netflix | +16 |
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |

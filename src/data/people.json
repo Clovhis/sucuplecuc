@@ -37324,13 +37324,14 @@
 		"image": "/people/jacob-tremblay-nm5016878.jpg",
 		"imdbId": "nm5016878",
 		"imdbUrl": "https://www.imdb.com/name/nm5016878/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20Tremblay%20by%20Gage%20Skidmore.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20Tremblay%20by%20Gage%20Skidmore.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q20965633",
 			"https://www.imdb.com/name/nm5016878/",
-			"https://www.themoviedb.org/person/1277188-jacob-tremblay"
+			"https://www.themoviedb.org/person/1277188-jacob-tremblay",
+			"https://www.netflix.com/ar/title/82010386"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-09-27",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "2006-10-05"
 	},
@@ -90838,5 +90839,47 @@
 			"https://straykids.jype.com/profile?Idx=6"
 		],
 		"lastVerifiedAt": "2026-09-25"
+	},
+	"Janus Metz": {
+		"name": "Janus Metz",
+		"birthDate": "1974-09",
+		"birthYear": 1974,
+		"nationalityPrimary": "Reino de Dinamarca",
+		"image": "/people/janus-metz-nm2178458.jpg",
+		"imdbId": "nm2178458",
+		"imdbUrl": "https://www.imdb.com/name/nm2178458/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Janus%20Metz%20cropped.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm2178458/",
+			"https://www.dfi.dk/en/viden-om-film/filmdatabasen/person/janus-metz",
+			"https://www.lex.dk/Janus_Metz",
+			"https://www.rottentomatoes.com/m/unabomber",
+			"https://www.wikidata.org/wiki/Q6155953",
+			"https://www.themoviedb.org/person/118606-janus-metz",
+			"https://www.netflix.com/tudum/articles/unabomber-release-date-cast-news?inapp=true",
+			"https://www.netflix.com/ar/title/82010386"
+		],
+		"lastVerifiedAt": "2026-09-27",
+		"source": "wikidata-imdb-cache"
+	},
+	"Shailene Woodley": {
+		"name": "Shailene Woodley",
+		"birthDate": "1991-11-15",
+		"birthYear": 1991,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/shailene-woodley-nm0940362.jpg",
+		"imdbId": "nm0940362",
+		"imdbUrl": "https://www.imdb.com/name/nm0940362/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shailene%20Woodley%202018%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.imdb.com/name/nm0940362/",
+			"https://goldenglobes.com/person/shailene-woodley/",
+			"https://www.netflix.com/ar/title/82010386",
+			"https://www.rottentomatoes.com/m/unabomber",
+			"https://www.wikidata.org/wiki/Q231058",
+			"https://www.themoviedb.org/person/94185-shailene-woodley"
+		],
+		"lastVerifiedAt": "2026-09-27",
+		"source": "wikidata-imdb-cache"
 	}
 }

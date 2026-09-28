@@ -4793,6 +4793,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "russell-crowe": [
     "el-ultimo-gran-golpe-2026",
+    "unabomber-2026",
     "nuremberg-2025",
     "sombras-del-pasado-2024",
     "noe-2014",

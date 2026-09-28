@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-26. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-09-28. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4236
+Total de vínculos de películas del catálogo: 4237
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -659,7 +659,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Rosamund Pike | `rosamund-pike` | /personas/rosamund-pike/ | Actriz | 5 | 6 |
 | Rosario Bléfari | `rosario-blefari` | /personas/rosario-blefari/ | Actriz / Cantante / Escritora | 1 | 5 |
 | Rupert Grint | `rupert-grint` | /personas/rupert-grint/ | Actor | 9 | 6 |
-| Russell Crowe | `russell-crowe` | /personas/russell-crowe/ | Actor | 15 | 5 |
+| Russell Crowe | `russell-crowe` | /personas/russell-crowe/ | Actor | 16 | 5 |
 | Ryan Coogler | `ryan-coogler` | /personas/ryan-coogler/ | Director | 4 | 7 |
 | Ryan Gosling | `ryan-gosling` | /personas/ryan-gosling/ | Actor | 23 | 6 |
 | Ryan Reynolds | `ryan-reynolds` | /personas/ryan-reynolds/ | Actor | 11 | 6 |
