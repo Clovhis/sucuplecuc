@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-28T11:14:11.862Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-29T10:55:35.094Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -24,8 +24,24 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "DIGGER",
 		"releaseDate": "2026-10-01",
 		"videoUrl": "https://www.youtube.com/watch?v=job8V254NAE",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/u3EtxdmZeiliW98c5Oegk5LIGZa.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10364-digger/"
+	},
+	{
+		"slug": "verity",
+		"title": "Verity: La sombra de un engaño",
+		"releaseDate": "2026-10-01",
+		"videoUrl": "https://www.youtube.com/watch?v=xdPMKhjMSFs",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10613-verity-la-sombra-de-un-engano/"
+	},
+	{
+		"slug": "spa-weekend",
+		"title": "Relajadas y muy peligrosas",
+		"releaseDate": "2026-10-01",
+		"videoUrl": "https://www.youtube.com/watch?v=AhsA9ZqRAXQ",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/8NGPUlR4xKQfgLaWCeXALGF3i27.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10614-relajadas-y-muy-peligrosas/"
 	},
 	{
 		"slug": "fall-2-deadpoint",
@@ -34,6 +50,23 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10526-vertigo-2/"
+	},
+	{
+		"slug": "hangar-rojo",
+		"title": "Hangar Rojo",
+		"releaseDate": "2026-10-01",
+		"videoUrl": "https://www.youtube.com/watch?v=XT0Dd_ZUj9g",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/7dvto6jc3R9w46uphDkupiLvqnv.jpg",
+		"synopsis": "Chile, 1973. The military coup will force Jorge Silva, an Air Force captain, to face the unfolding horror. Inside a military base, he must choose between becoming part of the repression or helping those fighting to stay alive.",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10615-hangar-rojo/"
+	},
+	{
+		"slug": "other-mommy",
+		"title": "Madre siniestra",
+		"releaseDate": "2026-10-08",
+		"videoUrl": "https://www.youtube.com/watch?v=-mnTITqqiT0",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10616-madre-siniestra/"
 	},
 	{
 		"slug": "cars",
@@ -66,37 +99,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=zoKj7TdJk98",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/eHaazLxM5LRMh0ySkVy7SK6wUWt.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4386-los-juegos-del-hambre-en-llamas/"
-	},
-	{
-		"slug": "the-hunger-games-mockingjay-part-1",
-		"title": "Los Juegos del Hambre: Sinsajo Parte 1",
-		"releaseDate": "2026-10-15",
-		"videoUrl": "https://www.youtube.com/watch?v=IXshQ5mv1K8",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4387-los-juegos-del-hambre-sinsajo-parte-1/"
-	},
-	{
-		"slug": "the-hunger-games-mockingjay-part-2",
-		"title": "Los Juegos del Hambre: Sinsajo Parte 2",
-		"releaseDate": "2026-10-15",
-		"videoUrl": "https://www.youtube.com/watch?v=SoKIqLEGhI0",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/qVgLMRVNB5bHU0inmRa0ueShacN.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4591-los-juegos-del-hambre-sinsajo-parte-2/"
-	},
-	{
-		"slug": "clayface",
-		"title": "Clayface",
-		"releaseDate": "2026-10-22",
-		"videoUrl": "https://www.youtube.com/watch?v=KCR-rz0YfD4",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/pwWR1DRjoFxwdH0jI2elBdXTF1F.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10474-clayface/"
-	},
-	{
-		"slug": "beware-boiuna",
-		"title": "Terror en el Amazonas",
-		"releaseDate": "2026-10-22",
-		"videoUrl": "https://www.youtube.com/watch?v=MQKqgFVU4dQ",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/9nU0FKNefmhbgi2xXlvZchZsqwm.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10583-terror-en-el-amazonas/"
 	}
 ];
