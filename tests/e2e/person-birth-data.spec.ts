@@ -1,5 +1,26 @@
 import { expect, test } from '@playwright/test';
 
+for (const person of [
+	{ movie: 'hangar-rojo-2026', name: 'Juan Pablo Sallato', year: 1978 },
+	{ movie: 'una-quinta-en-portugal-2025', name: 'Avelina Prat', year: 1972 },
+	{ movie: 'will-y-harper-2024', name: 'Harper Steele', year: 1961 },
+]) {
+	test(`conserva el año sin mostrar una edad vacía para ${person.name}`, async ({ page }) => {
+		await page.goto(`/peliculas/${person.movie}/`);
+		const card = page.locator('.movie-detail__person-card').filter({ hasText: person.name });
+		await expect(card).toBeVisible();
+		await expect(card.locator('.movie-detail__person-meta')).toHaveText(`Nació en ${person.year}`);
+		await expect(card.locator('.movie-detail__person-age')).toHaveCount(0);
+	});
+}
+
+test('muestra la edad al fallecer en lugar de una edad actual', async ({ page }) => {
+	await page.goto('/peliculas/una-quinta-en-portugal-2025/');
+	const card = page.locator('.movie-detail__person-card').filter({ hasText: 'Manolo Solo' });
+	await expect(card.locator('.movie-detail__person-death')).toHaveText(/^Falleció el .*2026 a los 62 años$/);
+	await expect(card.locator('.movie-detail__person-age')).toHaveCount(0);
+});
+
 test('omite la línea de nacimiento cuando una persona no tiene ese dato', async ({ page }) => {
 	const response = await page.goto('/peliculas/la-asistente-de-la-morgue-2026/', { waitUntil: 'load' });
 

@@ -308,7 +308,9 @@ function formatPersonDate(value?: string): string | undefined {
 }
 
 function getBirthSummary(person: { birthDate?: string; birthYear?: number }): string | undefined {
-	const formattedDate = formatPersonDate(person.birthDate);
+	const formattedDate = /^\d{4}-\d{2}-\d{2}$/.test(person.birthDate ?? '')
+		? formatPersonDate(person.birthDate)
+		: undefined;
 	if (formattedDate) {
 		return `Nació el ${formattedDate}`;
 	}
@@ -705,7 +707,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																						<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
 																					) : shouldHideLivingAge(person) ? (
 																						<span>Edad no confirmada</span>
-																					) : (
+																					) : getPersonAge(person) !== undefined ? (
 																						<span
 																							class="movie-detail__person-age"
 																							data-birth-date={person.birthDate}
@@ -713,7 +715,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																						>
 																							{getPersonAge(person)} años
 																						</span>
-																					)}
+																					) : null}
 																				</>
 																			) : (
 																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
@@ -807,7 +809,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																						<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
 																					) : shouldHideLivingAge(person) ? (
 																						<span>Edad no confirmada</span>
-																					) : (
+																					) : getPersonAge(person) !== undefined ? (
 																						<span
 																							class="movie-detail__person-age"
 																							data-birth-date={person.birthDate}
@@ -815,7 +817,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																						>
 																							{getPersonAge(person)} años
 																						</span>
-																					)}
+																					) : null}
 																				</>
 																			) : (
 																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
