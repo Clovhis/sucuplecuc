@@ -1,0 +1,3349 @@
+{
+  "date": "2026-10-01",
+  "market": "AR",
+  "branch": "feature/movie-cartelera-ar-2026-10-01",
+  "base": "b4159cc4",
+  "scores": [
+    {
+      "slug": "la-invitacion-2026",
+      "source": "https://www.rottentomatoes.com/m/the_invite",
+      "title": "The Invite",
+      "raw": 89,
+      "scale": 100,
+      "type": "audience",
+      "votes": "1,000+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 7,
+      "calculation": "round(89 * 10 / 100) = 9"
+    },
+    {
+      "slug": "avengers-endgame-2019",
+      "source": "https://www.rottentomatoes.com/m/avengers_endgame",
+      "title": "Avengers: Endgame",
+      "raw": 96,
+      "scale": 100,
+      "type": "audience",
+      "votes": "2,500+ Verified Ratings",
+      "score": 10,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(96 * 10 / 100) = 10"
+    },
+    {
+      "slug": "la-odisea-2026",
+      "source": "https://www.rottentomatoes.com/m/the_odyssey_2026",
+      "title": "The Odyssey (2026)",
+      "raw": 96,
+      "scale": 100,
+      "type": "audience",
+      "votes": "25,000+ Verified Ratings",
+      "score": 10,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(96 * 10 / 100) = 10"
+    },
+    {
+      "slug": "el-final-de-la-calle-oak-2026",
+      "source": "https://www.rottentomatoes.com/m/the_end_of_oak_street",
+      "title": "The End of Oak Street",
+      "raw": 76,
+      "scale": 100,
+      "type": "audience",
+      "votes": "2,500+ Verified Ratings",
+      "score": 8,
+      "date": "2026-10-01",
+      "previous": 7,
+      "calculation": "round(76 * 10 / 100) = 8"
+    },
+    {
+      "slug": "toy-story-5-2026",
+      "source": "https://www.rottentomatoes.com/m/toy_story_5",
+      "title": "Toy Story 5",
+      "raw": 94,
+      "scale": 100,
+      "type": "audience",
+      "votes": "10,000+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(94 * 10 / 100) = 9"
+    },
+    {
+      "slug": "spider-man-brand-new-day-2026",
+      "source": "https://www.rottentomatoes.com/m/spider_man_brand_new_day",
+      "title": "Spider-Man: Brand New Day",
+      "raw": 97,
+      "scale": 100,
+      "type": "audience",
+      "votes": "25,000+ Verified Ratings",
+      "score": 10,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(97 * 10 / 100) = 10"
+    },
+    {
+      "slug": "pepita-la-pistolera-2026",
+      "source": "https://www.imdb.com/title/tt29943166/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 5.9,
+      "scale": 10,
+      "type": "audience",
+      "votes": 74,
+      "score": 6,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(5.9 * 10 / 10) = 6"
+    },
+    {
+      "slug": "paw-patrol-la-dino-pelicula-2026",
+      "source": "https://www.rottentomatoes.com/m/paw_patrol_the_dino_movie",
+      "title": "PAW Patrol: The Dino Movie",
+      "raw": 95,
+      "scale": 100,
+      "type": "audience",
+      "votes": "500+ Verified Ratings",
+      "score": 10,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(95 * 10 / 100) = 10"
+    },
+    {
+      "slug": "colony-zona-cero-2026",
+      "source": "https://www.rottentomatoes.com/m/colony",
+      "title": "Colony",
+      "raw": 93,
+      "scale": 100,
+      "type": "audience",
+      "votes": "250+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(93 * 10 / 100) = 9"
+    },
+    {
+      "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+      "source": "https://www.rottentomatoes.com/m/insidious_out_of_the_further",
+      "title": "Insidious: Out of the Further",
+      "raw": 69,
+      "scale": 100,
+      "type": "audience",
+      "votes": "1,000+ Verified Ratings",
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(69 * 10 / 100) = 7"
+    },
+    {
+      "slug": "coyote-vs-acme-2026",
+      "source": "https://www.rottentomatoes.com/m/coyote_vs_acme",
+      "title": "Coyote vs. Acme",
+      "raw": 94,
+      "scale": 100,
+      "type": "audience",
+      "votes": "2,500+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(94 * 10 / 100) = 9"
+    },
+    {
+      "slug": "yo-narciso-2026",
+      "source": "https://www.imdb.com/title/tt38573778/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 5.6,
+      "scale": 10,
+      "type": "audience",
+      "votes": 187,
+      "score": 6,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(5.6 * 10 / 10) = 6"
+    },
+    {
+      "slug": "tadeo-el-explorador-y-la-lampara-maravillosa-2026",
+      "source": "https://www.imdb.com/title/tt36164852/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 6.5,
+      "scale": 10,
+      "type": "audience",
+      "votes": 229,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(6.5 * 10 / 10) = 7"
+    },
+    {
+      "slug": "codigo-venganza-2026",
+      "source": "https://www.rottentomatoes.com/m/mutiny_2026",
+      "title": "Mutiny (2026)",
+      "raw": 85,
+      "scale": 100,
+      "type": "audience",
+      "votes": "1,000+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(85 * 10 / 100) = 9"
+    },
+    {
+      "slug": "oasis-don-t-look-back-in-anger-2026",
+      "source": "https://www.rottentomatoes.com/m/oasis_dont_look_back_in_anger",
+      "title": "Oasis: Don't Look Back in Anger",
+      "raw": 98,
+      "scale": 100,
+      "type": "audience",
+      "votes": "250+ Verified Ratings",
+      "score": 10,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(98 * 10 / 100) = 10"
+    },
+    {
+      "slug": "el-heladero-2026",
+      "source": "https://www.rottentomatoes.com/m/ice_cream_man_2026",
+      "title": "Ice Cream Man (2026)",
+      "raw": 46,
+      "scale": 100,
+      "type": "audience",
+      "votes": "100+ Verified Ratings",
+      "score": 5,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(46 * 10 / 100) = 5"
+    },
+    {
+      "slug": "hechizo-de-amor-la-magia-continua-2026",
+      "source": "https://www.rottentomatoes.com/m/practical_magic_2",
+      "title": "Practical Magic 2",
+      "raw": 91,
+      "scale": 100,
+      "type": "audience",
+      "votes": "2,500+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(91 * 10 / 100) = 9"
+    },
+    {
+      "slug": "el-arbol-magico-2026",
+      "source": "https://www.rottentomatoes.com/m/the_magic_faraway_tree",
+      "title": "The Magic Faraway Tree",
+      "raw": 81,
+      "scale": 100,
+      "type": "audience",
+      "votes": "250+ Verified Ratings",
+      "score": 8,
+      "date": "2026-10-01",
+      "previous": 7,
+      "calculation": "round(81 * 10 / 100) = 8"
+    },
+    {
+      "slug": "bajo-tus-pies-2025",
+      "source": "https://www.imdb.com/title/tt6215522/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 4,
+      "scale": 10,
+      "type": "audience",
+      "votes": 271,
+      "score": 4,
+      "date": "2026-10-01",
+      "previous": 4,
+      "calculation": "round(4 * 10 / 10) = 4"
+    },
+    {
+      "slug": "resident-evil-noche-cero-2026",
+      "source": "https://www.rottentomatoes.com/m/resident_evil_2026",
+      "title": "Resident Evil (2026)",
+      "raw": 91,
+      "scale": 100,
+      "type": "audience",
+      "votes": "5,000+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(91 * 10 / 100) = 9"
+    },
+    {
+      "slug": "one-piece-la-pelicula-2000",
+      "source": "https://www.imdb.com/title/tt0814243/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 6.8,
+      "scale": 10,
+      "type": "audience",
+      "votes": 10181,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(6.8 * 10 / 10) = 7"
+    },
+    {
+      "slug": "puella-magi-madoka-magica-la-rebelion-2013",
+      "source": "https://www.rottentomatoes.com/m/puella_magi_madoka_magica_the_movie_rebellion",
+      "title": "Puella Magi Madoka Magica the Movie: Rebellion",
+      "raw": 89,
+      "scale": 100,
+      "type": "audience",
+      "votes": "250+ Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(89 * 10 / 100) = 9"
+    },
+    {
+      "slug": "tres-adioses-2025",
+      "source": "https://www.imdb.com/title/tt35705184/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 7.1,
+      "scale": 10,
+      "type": "audience",
+      "votes": 1388,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": 7,
+      "calculation": "round(7.1 * 10 / 10) = 7"
+    },
+    {
+      "slug": "panda-plan-2-la-tribu-magica-2026",
+      "source": "https://www.imdb.com/title/tt35514520/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 4.4,
+      "scale": 10,
+      "type": "audience",
+      "votes": 687,
+      "score": 4,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(4.4 * 10 / 10) = 4"
+    },
+    {
+      "slug": "hospital-britanico-2026",
+      "source": "https://www.escribiendocine.com/noticias/2026/09/22/25345-critica-de-hospital-britanico-una-pelicula-de-gloria-peirano-y-gustavo-fontan-sobre-el-poeta-hector-viel-temperley",
+      "raw": 7,
+      "scale": 10,
+      "type": "single-critic",
+      "critic": "Juan Pablo Russo",
+      "votes": 1,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": 7,
+      "calculation": "round(7 * 10 / 10) = 7"
+    },
+    {
+      "slug": "el-corazon-de-la-bestia-2026",
+      "source": "https://www.rottentomatoes.com/m/heart_of_the_beast",
+      "title": "Heart of the Beast",
+      "raw": 94,
+      "scale": 100,
+      "type": "audience",
+      "votes": "1,000+ Verified Ratings",
+      "score": 9,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(94 * 10 / 100) = 9"
+    },
+    {
+      "slug": "el-ultimo-gran-golpe-2026",
+      "source": "https://www.rottentomatoes.com/m/the_get_out",
+      "title": "The Get Out",
+      "raw": 50,
+      "scale": 100,
+      "type": "audience",
+      "votes": "50+ Ratings",
+      "score": 5,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(50 * 10 / 100) = 5"
+    },
+    {
+      "slug": "los-calvos-2024",
+      "source": "https://www.filmweb.pl/film/Łysi-2024-10062259",
+      "raw": 4.8,
+      "scale": 10,
+      "type": "audience",
+      "votes": 12,
+      "score": 5,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(4.8 * 10 / 10) = 5"
+    },
+    {
+      "slug": "la-isla-olvidada-2026",
+      "source": "https://www.rottentomatoes.com/m/forgotten_island",
+      "title": "Forgotten Island",
+      "raw": 96,
+      "scale": 100,
+      "type": "audience",
+      "votes": "500+ Verified Ratings",
+      "score": 10,
+      "date": "2026-10-01",
+      "previous": 8,
+      "calculation": "round(96 * 10 / 100) = 10"
+    },
+    {
+      "slug": "encantador-2025",
+      "source": "https://www.imdb.com/title/tt27673624/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 5.3,
+      "scale": 10,
+      "type": "audience",
+      "votes": 62,
+      "score": 5,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(5.3 * 10 / 10) = 5"
+    },
+    {
+      "slug": "relajadas-y-muy-peligrosas-2026",
+      "source": "https://www.rottentomatoes.com/m/spa_weekend",
+      "title": "Spa Weekend",
+      "raw": 73,
+      "scale": 100,
+      "type": "audience",
+      "votes": "250+ Verified Ratings",
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(73 * 10 / 100) = 7"
+    },
+    {
+      "slug": "vertigo-2-punto-muerto-2026",
+      "source": "https://www.rottentomatoes.com/m/fall_2_deadpoint",
+      "title": "Fall 2: Deadpoint",
+      "raw": 63,
+      "scale": 100,
+      "type": "audience",
+      "votes": "250+ Verified Ratings",
+      "score": 6,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(63 * 10 / 100) = 6"
+    },
+    {
+      "slug": "verity-la-sombra-de-un-engano-2026",
+      "source": "https://letterboxd.com/film/verity-2026/",
+      "raw": 2.82,
+      "scale": 5,
+      "type": "audience",
+      "votes": 15547,
+      "score": 6,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(2.82 * 10 / 5) = 6"
+    },
+    {
+      "slug": "digger-2026",
+      "source": "https://letterboxd.com/film/digger-2026/",
+      "raw": 3.66,
+      "scale": 5,
+      "type": "audience",
+      "votes": 9631,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(3.66 * 10 / 5) = 7"
+    },
+    {
+      "slug": "su-propio-infierno-2026",
+      "source": "https://www.rottentomatoes.com/m/her_private_hell",
+      "title": "Her Private Hell",
+      "raw": 35,
+      "scale": 100,
+      "type": "audience",
+      "votes": "100+ Verified Ratings",
+      "score": 4,
+      "date": "2026-10-01",
+      "previous": 4,
+      "calculation": "round(35 * 10 / 100) = 4"
+    },
+    {
+      "slug": "guardianes-del-museo-2-2026",
+      "source": "https://www.imdb.com/title/tt30224625/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 5.2,
+      "scale": 10,
+      "type": "audience",
+      "votes": 74,
+      "score": 5,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(5.2 * 10 / 10) = 5"
+    },
+    {
+      "slug": "cuentos-del-jardin-magico-2025",
+      "source": "https://www.imdb.com/title/tt10312938/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 6.7,
+      "scale": 10,
+      "type": "audience",
+      "votes": 150,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(6.7 * 10 / 10) = 7"
+    },
+    {
+      "slug": "linkin-park-unshatter-2026",
+      "source": "https://www.rottentomatoes.com/m/linkin_park_unshatter",
+      "title": "LINKIN PARK: UNSHATTER",
+      "raw": 98,
+      "scale": 100,
+      "type": "audience",
+      "votes": "100+ Ratings",
+      "score": 10,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(98 * 10 / 100) = 10"
+    },
+    {
+      "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+      "source": "https://www.imdb.com/title/tt14521412/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 7.7,
+      "scale": 10,
+      "type": "audience",
+      "votes": 185,
+      "score": 8,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(7.7 * 10 / 10) = 8"
+    },
+    {
+      "slug": "hangar-rojo-2026",
+      "source": "https://www.imdb.com/title/tt37664358/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 7.3,
+      "scale": 10,
+      "type": "audience",
+      "votes": 219,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(7.3 * 10 / 10) = 7"
+    },
+    {
+      "slug": "escondida-en-mi-cabeza-2026",
+      "source": "https://www.escribiendocine.com/noticias/2026/09/29/25546-critica-de-escondida-en-mi-cabeza-nicolas-furtado-entre-las-segundas-oportunidades-y-el-paso-a-la-adultez",
+      "raw": 5,
+      "scale": 10,
+      "type": "single-critic",
+      "critic": "Laia Cabuli",
+      "votes": 1,
+      "score": 5,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(5 * 10 / 10) = 5"
+    },
+    {
+      "slug": "romeo-y-ofelia-2024",
+      "source": "https://cinefreaks.net/2026/09/10/romeo-y-ofelia-los-colores-de-la-maldad/",
+      "raw": 7,
+      "scale": 10,
+      "type": "single-critic",
+      "votes": 1,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": null,
+      "critic": "Maximiliano Curcio",
+      "calculation": "round(7 * 10 / 10) = 7"
+    },
+    {
+      "slug": "islandia-2025",
+      "source": "https://www.escribiendocine.com/noticias/2026/09/10/25007-critica-de-islandia-el-lugar-donde-la-musica-se-vuelve-paisaje",
+      "raw": 6,
+      "scale": 10,
+      "type": "single-critic",
+      "critic": "Juan Pablo Russo",
+      "votes": 1,
+      "score": 6,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(6 * 10 / 10) = 6"
+    },
+    {
+      "slug": "canelones-2026",
+      "source": "https://www.imdb.com/title/tt16155872/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 6,
+      "scale": 10,
+      "type": "audience",
+      "votes": 179,
+      "score": 6,
+      "date": "2026-10-01",
+      "previous": 5,
+      "calculation": "round(6 * 10 / 10) = 6"
+    },
+    {
+      "slug": "los-domingos-2025",
+      "source": "https://www.imdb.com/title/tt35513027/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 7.3,
+      "scale": 10,
+      "type": "audience",
+      "votes": 5422,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": 9,
+      "calculation": "round(7.3 * 10 / 10) = 7"
+    },
+    {
+      "slug": "una-quinta-en-portugal-2025",
+      "source": "https://www.imdb.com/title/tt28090350/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 6.9,
+      "scale": 10,
+      "type": "audience",
+      "votes": 1681,
+      "score": 7,
+      "date": "2026-10-01",
+      "previous": null,
+      "calculation": "round(6.9 * 10 / 10) = 7"
+    }
+  ],
+  "availability": [
+    {
+      "slug": "la-invitacion-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "avengers-endgame-2019",
+      "platforms": [
+        "Cine",
+        "Disney Plus"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "la-odisea-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "el-final-de-la-calle-oak-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://atlascines.com/cartelera/cartelera",
+        "https://www.justwatch.com/ar/pelicula/the-end-of-oak-street"
+      ],
+      "verified": "Cartelera oficial de Atlas y tickets AR de Cinemacenter/Showcase."
+    },
+    {
+      "slug": "toy-story-5-2026",
+      "platforms": [
+        "Disney Plus",
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinemacenter.com.ar/",
+        "https://www.justwatch.com/ar/pelicula/toy-story-5"
+      ],
+      "verified": "Cartelera oficial de Cinemacenter al 01/10; conserva Cine y Disney+ ya existentes."
+    },
+    {
+      "slug": "spider-man-brand-new-day-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "pepita-la-pistolera-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinemacenter.com.ar/",
+        "https://m.cinesargentinos.com.ar/cartelera/"
+      ],
+      "verified": "Cartelera oficial de Cinemacenter vigente; conserva Cine."
+    },
+    {
+      "slug": "paw-patrol-la-dino-pelicula-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "colony-zona-cero-2026",
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.justwatch.com/ar/pelicula/colony",
+        "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6000",
+        "https://www.cinemark.com.ar/elegi-pelicula",
+        "https://www.cinemacenter.com.ar/"
+      ],
+      "verified": "Tickets de JustWatch desactualizados al 24/09. Showcase sin funciones; ausente de carteleras oficiales actuales. Última función observada en Abasto: 30/09. Sin oferta streaming AR comprobada: Otras plataformas."
+    },
+    {
+      "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "coyote-vs-acme-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "yo-narciso-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "tadeo-el-explorador-y-la-lampara-maravillosa-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "codigo-venganza-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "oasis-don-t-look-back-in-anger-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "el-heladero-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "hechizo-de-amor-la-magia-continua-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "el-arbol-magico-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "bajo-tus-pies-2025",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "resident-evil-noche-cero-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "one-piece-la-pelicula-2000",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "puella-magi-madoka-magica-la-rebelion-2013",
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinemark.com.ar/elegi-pelicula",
+        "https://www.justwatch.com/ar/pelicula/puella-magi-madoka-magica-the-movie-part-iii-rebellion"
+      ],
+      "verified": "La exhibición anterior termina el 30/09. Cinemark anuncia Walpurgisnacht Rising, otra película. Sin oferta legal AR comprobada para La Rebelión: Otras plataformas."
+    },
+    {
+      "slug": "tres-adioses-2025",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "panda-plan-2-la-tribu-magica-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "hospital-britanico-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://complejoteatral.gob.ar/ver/Hospital-Brit%C3%A1nico"
+      ],
+      "verified": "Sala Leopoldo Lugones, función del 01/10 a las 18:00."
+    },
+    {
+      "slug": "el-corazon-de-la-bestia-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "el-ultimo-gran-golpe-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "los-calvos-2024",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinegaumont.ar/",
+        "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=01/10/2026"
+      ],
+      "verified": "Gaumont, programación 01/10/2026 con horarios confirmados por página visible y API oficial Cinexo."
+    },
+    {
+      "slug": "la-isla-olvidada-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "encantador-2025",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "relajadas-y-muy-peligrosas-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "vertigo-2-punto-muerto-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "verity-la-sombra-de-un-engano-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "digger-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "su-propio-infierno-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "guardianes-del-museo-2-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "cuentos-del-jardin-magico-2025",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "linkin-park-unshatter-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinemark.com.ar/elegi-pelicula",
+        "https://www.cineya.com.ar/cines/cinemark-hoyts-abasto/"
+      ],
+      "verified": "Evento de estreno del 30/09 con función vigente hasta el 03/10 en Abasto."
+    },
+    {
+      "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "hangar-rojo-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "escondida-en-mi-cabeza-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://m.cinesargentinos.com.ar/cartelera/",
+        "https://www.cinemark.com.ar/elegi-pelicula"
+      ],
+      "verified": "Presente en la cartelera argentina actual relevada; corroboración por listado y ficha localizada."
+    },
+    {
+      "slug": "romeo-y-ofelia-2024",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://elcairocinepublico.gob.ar/pelicula-de-sala/romeo-y-ofelia/2026-10-01/"
+      ],
+      "verified": "El Cairo, Rosario: funciones programadas entre el 01 y el 04/10."
+    },
+    {
+      "slug": "islandia-2025",
+      "platforms": [
+        "Otras plataformas"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.justwatch.com/ar/pelicula/islandia",
+        "https://cineartecacodelphia.com.ar/",
+        "https://cartelera.ar/cine/cinearte-cacodelphia"
+      ],
+      "verified": "Estreno limitado de septiembre; el listado amplio de Cines Argentinos todavía la incluye. No se confirmó función vigente de octubre ni streaming AR: Otras plataformas, excluida del carrusel. Esto no prueba ausencia absoluta en todo el país."
+    },
+    {
+      "slug": "canelones-2026",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinegaumont.ar/",
+        "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=01/10/2026"
+      ],
+      "verified": "Gaumont, programación 01/10/2026 con horarios confirmados por página visible y API oficial Cinexo."
+    },
+    {
+      "slug": "los-domingos-2025",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinegaumont.ar/",
+        "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=01/10/2026"
+      ],
+      "verified": "Gaumont, programación 01/10/2026 con horarios confirmados por página visible y API oficial Cinexo."
+    },
+    {
+      "slug": "una-quinta-en-portugal-2025",
+      "platforms": [
+        "Cine"
+      ],
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.cinegaumont.ar/",
+        "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=01/10/2026"
+      ],
+      "verified": "Gaumont, programación 01/10/2026 con horarios confirmados por página visible y API oficial Cinexo."
+    }
+  ],
+  "intake": [
+    {
+      "title": "Digger",
+      "originalTitle": "Digger",
+      "year": 2026,
+      "country": "US",
+      "slug": "digger-2026",
+      "director": "Alejandro González Iñárritu",
+      "mainCast": [
+        "Tom Cruise",
+        "Riz Ahmed",
+        "John Goodman",
+        "Sandra Hüller"
+      ],
+      "category": "Comedia",
+      "genres": [
+        "Comedia",
+        "Drama"
+      ],
+      "score": 7,
+      "runtime": 129,
+      "source": "10364-digger",
+      "posterSource": "https://resizing.flixster.com/hJ5-hs_bgt6swaqejfSKV__V6LU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2MzYWEzZGU3LTgzMWQtNDlhMy1iMjM2LTViNmZlMTUxZWUwOC5qcGc=",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10364-digger/",
+      "trailerYoutubeId": "adddAyopq5A",
+      "posterDimensions": [
+        2764,
+        4096
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "ATP",
+      "productionCompany": "Legendary Pictures, Warner Bros. Pictures",
+      "runtimeMinutes": 129,
+      "localPoster": "assets/posters/2026/digger-2026.webp"
+    },
+    {
+      "title": "Verity: La sombra de un engaño",
+      "originalTitle": "Verity",
+      "year": 2026,
+      "country": "US",
+      "slug": "verity-la-sombra-de-un-engano-2026",
+      "director": "Michael Showalter",
+      "mainCast": [
+        "Anne Hathaway",
+        "Dakota Johnson",
+        "Josh Hartnett"
+      ],
+      "category": "Thriller",
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
+      "score": 6,
+      "runtime": 114,
+      "source": "10613-verity-la-sombra-de-un-engano",
+      "posterSource": "https://resizing.flixster.com/plveNrwTDzd10Gy_RUo82ixooWI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk2ZDhhYWE1LTcwYzItNGIzOS1iYmM3LTg3ODQ3ODY2NjE3NS5qcGc=",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10613-verity-la-sombra-de-un-engano/",
+      "trailerYoutubeId": "UdiWMHwobtE",
+      "posterDimensions": [
+        1080,
+        1350
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "+17",
+      "productionCompany": "Eat the Cat, Semi-Formal Productions, Shiny Penny, Somewhere Pictures, Heartbones Entertainment",
+      "runtimeMinutes": 114,
+      "localPoster": "assets/posters/2026/verity-la-sombra-de-un-engano-2026.webp"
+    },
+    {
+      "title": "Relajadas y muy peligrosas",
+      "originalTitle": "Spa Weekend",
+      "year": 2026,
+      "country": "AU, US",
+      "slug": "relajadas-y-muy-peligrosas-2026",
+      "director": "Scott Moore",
+      "mainCast": [
+        "Anna Faris",
+        "Isla Fisher",
+        "Leslie Mann",
+        "Michelle Buteau"
+      ],
+      "category": "Comedia",
+      "genres": [
+        "Comedia"
+      ],
+      "score": 7,
+      "runtime": 97,
+      "source": "10614-relajadas-y-muy-peligrosas",
+      "posterSource": "https://resizing.flixster.com/xgIXY_tAMRLidUslawC6PpU2K38=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzYxOGE5NDRkLTQ3ZTEtNDAyYy05ZGFjLWMwMzNkYTA2ZjI5ZC5qcGc=",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10614-relajadas-y-muy-peligrosas/",
+      "trailerYoutubeId": "bvRtuWs2F7E",
+      "posterDimensions": [
+        2000,
+        2963
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "+13",
+      "productionCompany": "Black Bear",
+      "runtimeMinutes": 97,
+      "localPoster": "assets/posters/2026/relajadas-y-muy-peligrosas-2026.webp"
+    },
+    {
+      "title": "Vértigo 2: Punto muerto",
+      "originalTitle": "Fall 2: Deadpoint",
+      "year": 2026,
+      "country": "US",
+      "slug": "vertigo-2-punto-muerto-2026",
+      "director": "Michael Spierig, Peter Spierig",
+      "mainCast": [
+        "Harriet Slater",
+        "Arsema Thomas",
+        "Tom Brittney"
+      ],
+      "category": "Thriller",
+      "genres": [
+        "Thriller",
+        "Aventura"
+      ],
+      "score": 6,
+      "runtime": 100,
+      "source": "10526-vertigo-2",
+      "posterSource": "https://resizing.flixster.com/92ZvjGYbRpPIN7ErefimAWVN1qM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzI2YTgyNGY1LWY3ZDQtNDVkMC1hYTNjLWJjODE5MWU0ZmVmNy5qcGc=",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10526-vertigo-2/",
+      "trailerYoutubeId": "IRJGXHvc-Hs",
+      "posterDimensions": [
+        2000,
+        3000
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "+13",
+      "productionCompany": "Tea Shop Productions, Capstone Pictures, Flawless",
+      "runtimeMinutes": 100,
+      "localPoster": "assets/posters/2026/vertigo-2-punto-muerto-2026.webp"
+    },
+    {
+      "title": "Guardianes del museo 2",
+      "originalTitle": "Cats in the Museum 2",
+      "year": 2026,
+      "country": "RU",
+      "slug": "guardianes-del-museo-2-2026",
+      "director": "Vasiliy Rovenskiy",
+      "mainCast": [
+        "Pavel Priluchnyy",
+        "Roman Kurtsyn",
+        "Polina Gagarina"
+      ],
+      "category": "Animacion",
+      "genres": [
+        "Animación",
+        "Aventura",
+        "Fantasía"
+      ],
+      "score": 5,
+      "runtime": 89,
+      "source": "10408-guardianes-del-museo-2",
+      "posterSource": "https://m.media-amazon.com/images/M/MV5BZDI4ZjY2MWUtOTgzNS00MmNlLTgyYjAtOGM4MWYyODZjYTkyXkEyXkFqcGc@._V1_.jpg",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10408-guardianes-del-museo-2/",
+      "trailerYoutubeId": "WJaWzgZ7Rkg",
+      "posterDimensions": [
+        2109,
+        3000
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "ATP",
+      "productionCompany": "Licensing Brands",
+      "runtimeMinutes": 89,
+      "localPoster": "assets/posters/2026/guardianes-del-museo-2-2026.webp"
+    },
+    {
+      "title": "Cuentos del jardín mágico",
+      "originalTitle": "Pohádky po babičce",
+      "year": 2025,
+      "country": "CZ, SK, SI, FR",
+      "slug": "cuentos-del-jardin-magico-2025",
+      "director": "David Súkup",
+      "mainCast": [
+        "Arnošt Goldflam",
+        "Zuzana Krónerová"
+      ],
+      "category": "Animacion",
+      "genres": [
+        "Animación",
+        "Fantasía"
+      ],
+      "score": 7,
+      "runtime": 71,
+      "source": "10594-cuentos-del-jardin-magico",
+      "posterSource": "https://m.media-amazon.com/images/M/MV5BNDgzZjBkYzQtZDk3YS00YTM5LWE4Y2UtMmE5YWFiMzg3NTU0XkEyXkFqcGc@._V1_.jpg",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10594-cuentos-del-jardin-magico/",
+      "trailerYoutubeId": "UVj--K7FfWw",
+      "posterDimensions": [
+        2740,
+        3732
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "ATP",
+      "productionCompany": "MAUR Film, Artichoke, ZVVIKS, Vivement Lundi !",
+      "runtimeMinutes": 71,
+      "localPoster": "assets/posters/2025/cuentos-del-jardin-magico-2025.webp"
+    },
+    {
+      "title": "Hangar Rojo",
+      "originalTitle": "Hangar Rojo",
+      "year": 2026,
+      "country": "CL, IT, AR",
+      "slug": "hangar-rojo-2026",
+      "director": "Juan Pablo Sallato",
+      "mainCast": [
+        "Nicolás Zárate",
+        "Boris Quercia",
+        "Marcial Tagle"
+      ],
+      "category": "Thriller",
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
+      "score": 7,
+      "runtime": 82,
+      "source": "10615-hangar-rojo",
+      "posterSource": "https://resizing.flixster.com/4P6_g3bAzRi2JCs3O3zo5LO7zeU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzYxMzRkZjQ5LWEzM2QtNGJlMi04ZTJjLTE4YjJjY2NhYjc0Yi5qcGc=",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10615-hangar-rojo/",
+      "trailerYoutubeId": "1h14Wb_mhlk",
+      "posterDimensions": [
+        736,
+        1054
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "+13",
+      "productionCompany": "Villano, Brava Cine, Rain Dogs, Caraván, Berta Film, TVN",
+      "runtimeMinutes": 82,
+      "localPoster": "assets/posters/2026/hangar-rojo-2026.webp"
+    },
+    {
+      "title": "Escondida en mi cabeza",
+      "originalTitle": "Escondida en mi cabeza",
+      "year": 2026,
+      "country": "AR, UY",
+      "slug": "escondida-en-mi-cabeza-2026",
+      "director": "Lucas Vivo García Lagos",
+      "mainCast": [
+        "Nicolás Furtado",
+        "Agustina Suásquita",
+        "Alejandra Flechner"
+      ],
+      "category": "Comedia",
+      "genres": [
+        "Comedia"
+      ],
+      "score": 5,
+      "runtime": 99,
+      "source": "10612-escondida-en-mi-cabeza",
+      "posterSource": "https://m.media-amazon.com/images/M/MV5BMjczZjhkYzItZTUyZC00M2EzLTg1NmItMmI4ZmY5Y2EwZDYzXkEyXkFqcGc@._V1_.jpg",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10612-escondida-en-mi-cabeza/",
+      "trailerYoutubeId": "3kFtLMkRL04",
+      "posterDimensions": [
+        1118,
+        1407
+      ],
+      "releaseDate": "2026-10-01",
+      "audienceRating": "+13",
+      "productionCompany": "Navajo Films, 16:9 Cine, Buena Vista International",
+      "runtimeMinutes": 99,
+      "localPoster": "assets/posters/2026/escondida-en-mi-cabeza-2026.webp"
+    },
+    {
+      "title": "Linkin Park: Unshatter",
+      "originalTitle": "Linkin Park: Unshatter",
+      "year": 2026,
+      "country": "US",
+      "slug": "linkin-park-unshatter-2026",
+      "director": "Joseph Hahn",
+      "mainCast": [
+        "Emily Armstrong",
+        "Mike Shinoda",
+        "Chester Bennington"
+      ],
+      "category": "Documental",
+      "genres": [
+        "Documental",
+        "Música"
+      ],
+      "score": 10,
+      "runtime": 107,
+      "source": "10600-linkin-park-unshatter",
+      "releaseDate": "2026-09-30",
+      "posterSource": "https://resizing.flixster.com/X6IIPsOYQsQ9zUmlYMwwx9AyK4c=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzY3YjJiZmEyLTc0NWEtNDdhMS1iMzI3LWE2NDA2MDJiZWQ3ZC5qcGc=",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10600-linkin-park-unshatter/",
+      "trailerYoutubeId": "K9Lpxc7bVTM",
+      "posterDimensions": [
+        2765,
+        4096
+      ],
+      "audienceRating": "ATP",
+      "productionCompany": "CJ 4DPLEX",
+      "runtimeMinutes": 107,
+      "localPoster": "assets/posters/2026/linkin-park-unshatter-2026.webp"
+    },
+    {
+      "title": "Romeo y Ofelia",
+      "originalTitle": "Romeo y Ofelia",
+      "year": 2024,
+      "country": "AR",
+      "slug": "romeo-y-ofelia-2024",
+      "director": "Gustavo Postiglione",
+      "mainCast": [
+        "Guillermo Pfening",
+        "Antonella Costa"
+      ],
+      "category": "Drama",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "score": 7,
+      "runtime": 122,
+      "source": "10586-romeo-y-ofelia",
+      "releaseDate": "2026-09-10",
+      "posterSource": "https://m.media-amazon.com/images/M/MV5BZWVjOTUwZjItODhkNi00OTQ3LWI3YTctYWIzYzY2NWJlMTA2XkEyXkFqcGc@._V1_.jpg",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10586-romeo-y-ofelia/",
+      "trailerYoutubeId": "YckfmO0fN_A",
+      "posterDimensions": [
+        1080,
+        1350
+      ],
+      "audienceRating": "+13",
+      "productionCompany": "2779 Home Movies, Complejo Cultural Atlas",
+      "runtimeMinutes": 122,
+      "localPoster": "assets/posters/2024/romeo-y-ofelia-2024.webp"
+    },
+    {
+      "title": "Islandia",
+      "originalTitle": "Islandia",
+      "year": 2025,
+      "country": "AR",
+      "slug": "islandia-2025",
+      "director": "Leandro Cerro",
+      "mainCast": [
+        "Leandro Cerro",
+        "Georg Hólm",
+        "Sigtryggur Baldursson"
+      ],
+      "category": "Documental",
+      "genres": [
+        "Documental",
+        "Música"
+      ],
+      "score": 6,
+      "runtime": 93,
+      "source": "10584-islandia",
+      "releaseDate": "2026-09-11",
+      "posterSource": "https://m.media-amazon.com/images/M/MV5BYjVmNjliZWUtYzU4MC00NDI4LWIzM2YtM2YzNjY5Mzg3NWY4XkEyXkFqcGc@._V1_.jpg",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10584-islandia/",
+      "trailerYoutubeId": "PHiYHrq54pk",
+      "posterDimensions": [
+        2450,
+        3500
+      ],
+      "audienceRating": "+13",
+      "productionCompany": "Runa Films",
+      "runtimeMinutes": 93,
+      "localPoster": "assets/posters/2025/islandia-2025.webp"
+    },
+    {
+      "title": "Puella Magi Madoka Magica: Walpurgisnacht Rising",
+      "originalTitle": "Gekijōban Mahō Shōjo Madoka Magica: Walpurgis no Kaiten",
+      "year": 2026,
+      "country": "JP",
+      "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+      "director": "Akiyuki Shinbo, Yukihiro Miyamoto",
+      "mainCast": [
+        "Aoi Yūki",
+        "Chiwa Saitō",
+        "Eri Kitamura"
+      ],
+      "category": "Anime",
+      "genres": [
+        "Anime",
+        "Fantasía",
+        "Drama"
+      ],
+      "score": 8,
+      "runtime": 120,
+      "releaseDate": "2026-10-01",
+      "sourceUrl": "https://www.cinemark.com.ar/elegi-pelicula",
+      "posterSource": "https://m.media-amazon.com/images/M/MV5BNjliZjkyNGQtMDgxOS00N2I1LWFmODAtMGQ0OTI4MGNiZjRlXkEyXkFqcGc@._V1_.jpg",
+      "posterDimensions": [
+        850,
+        1200
+      ],
+      "trailerYoutubeId": "g0CsWEIb6D4",
+      "audienceRating": "+13",
+      "productionCompany": "Shaft, Aniplex",
+      "runtimeMinutes": 120,
+      "localPoster": "assets/posters/2026/puella-magi-madoka-magica-walpurgisnacht-rising-2026.webp"
+    },
+    {
+      "title": "Una quinta en Portugal",
+      "originalTitle": "Una quinta portuguesa",
+      "year": 2025,
+      "country": "ES, PT",
+      "slug": "una-quinta-en-portugal-2025",
+      "director": "Avelina Prat",
+      "mainCast": [
+        "Manolo Solo",
+        "Maria de Medeiros"
+      ],
+      "category": "Drama",
+      "genres": [
+        "Drama"
+      ],
+      "score": 7,
+      "runtime": 114,
+      "releaseDate": "2026-09-03",
+      "sourceUrl": "https://m.cinesargentinos.com.ar/pelicula/10569-una-quinta-en-portugal/",
+      "posterSource": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p30207850_p_v8_ab.jpg",
+      "trailerYoutubeId": "IuwkNMWifhg",
+      "posterDimensions": [
+        960,
+        1440
+      ],
+      "audienceRating": "ATP",
+      "productionCompany": "Distinto Films, Jaibo Films, O Som e a Fúria",
+      "runtimeMinutes": 114,
+      "localPoster": "assets/posters/2025/una-quinta-en-portugal-2025.webp"
+    }
+  ],
+  "people": [
+    {
+      "credit": "Scott Moore",
+      "key": "Scott Moore",
+      "name": "Scott Moore",
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/scott-moore-nm0601859.jpg",
+      "imdbId": "nm0601859",
+      "imdbUrl": "https://www.imdb.com/name/nm0601859/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/sTQIuWximQiT9vzLd08i02tMEgm.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q7436898",
+        "https://www.imdb.com/name/nm0601859/",
+        "https://www.themoviedb.org/person/52115-scott-moore"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-tmdb-cache"
+    },
+    {
+      "credit": "Anna Faris",
+      "key": "Anna Faris",
+      "name": "Anna Faris",
+      "birthDate": "1976-11-29",
+      "birthYear": 1976,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/anna-faris-nm0267506.jpg",
+      "imdbId": "nm0267506",
+      "imdbUrl": "https://www.imdb.com/name/nm0267506/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Feed%20America%2C%20Cloudy%20with%20a%20Chance%20of%20Meatballs%202%2C%20Anna%20Faris%20(cropped).jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q4491",
+        "https://www.imdb.com/name/nm0267506/",
+        "https://www.themoviedb.org/person/1772-anna-faris"
+      ],
+      "lastVerifiedAt": "2026-06-04",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Isla Fisher",
+      "key": "Isla Fisher",
+      "name": "Isla Fisher",
+      "birthYear": 1976,
+      "nationalityPrimary": "Australiana",
+      "image": "/people/isla-fisher-nm0279545.jpg",
+      "imdbId": "nm0279545",
+      "imdbUrl": "https://www.imdb.com/name/nm0279545/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Isla%20Fisher.jpg?width=960",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q228638",
+        "https://www.imdb.com/name/nm0279545/",
+        "https://www.themoviedb.org/person/52848-isla-fisher"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache",
+      "birthDate": "1976-02-03"
+    },
+    {
+      "credit": "Leslie Mann",
+      "key": "Leslie Mann",
+      "name": "Leslie Mann",
+      "birthDate": "1972-03-26",
+      "birthYear": 1972,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/leslie-mann-nm0005182.jpg",
+      "imdbId": "nm0005182",
+      "imdbUrl": "https://www.imdb.com/name/nm0005182/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leslie%20Mann%20at%20premiere%20of%20BLOCKERS%20(39852917225)%20(cropped).jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q229011",
+        "https://www.imdb.com/name/nm0005182/",
+        "https://www.themoviedb.org/person/41087-leslie-mann"
+      ],
+      "lastVerifiedAt": "2026-08-21",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Michelle Buteau",
+      "key": "Michelle Buteau",
+      "name": "Michelle Buteau",
+      "birthDate": "1977-07-24",
+      "birthYear": 1977,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/michelle-buteau-nm2345104.jpg",
+      "imdbId": "nm2345104",
+      "imdbUrl": "https://www.imdb.com/name/nm2345104/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MichelleButeau-byPhilipRomano.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q54861496",
+        "https://www.imdb.com/name/nm2345104/",
+        "https://www.themoviedb.org/person/1475128-michelle-buteau"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Michael Spierig",
+      "key": "Michael Spierig",
+      "name": "Michael Spierig",
+      "birthDate": "1976-04-29",
+      "birthYear": 1976,
+      "nationalityPrimary": "Australiano",
+      "image": "/people/michael-spierig-nm1294961.jpg",
+      "imdbId": "nm1294961",
+      "imdbUrl": "https://www.imdb.com/name/nm1294961/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/hDj7wXT937jZZjU7lJ8aTuKoBg5.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q23836180",
+        "https://www.imdb.com/name/nm1294961/",
+        "https://www.themoviedb.org/person/56501-michael-spierig"
+      ],
+      "lastVerifiedAt": "2026-05-24",
+      "source": "tmdb-wikidata-imdb-cache"
+    },
+    {
+      "credit": "Peter Spierig",
+      "key": "Peter Spierig",
+      "name": "Peter Spierig",
+      "birthDate": "1976-04-29",
+      "birthYear": 1976,
+      "nationalityPrimary": "Australiano",
+      "image": "/people/peter-spierig-nm1294962.jpg",
+      "imdbId": "nm1294962",
+      "imdbUrl": "https://www.imdb.com/name/nm1294962/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/1M1FX7YR9Dq0DhawzQ0vT0tx678.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q23836181",
+        "https://www.imdb.com/name/nm1294962/",
+        "https://www.themoviedb.org/person/56502-peter-spierig"
+      ],
+      "lastVerifiedAt": "2026-05-24",
+      "source": "tmdb-wikidata-imdb-cache"
+    },
+    {
+      "credit": "Harriet Slater",
+      "key": "Harriet Slater",
+      "name": "Harriet Slater",
+      "birthDate": "1994-02-18",
+      "birthYear": 1994,
+      "nationalityPrimary": "Británica",
+      "image": "/people/harriet-slater-nm9980137.jpg",
+      "imdbId": "nm9980137",
+      "imdbUrl": "https://www.imdb.com/name/nm9980137/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harriet%20Slater%20by%20Gage%20Skidmore.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q113126052",
+        "https://www.imdb.com/name/nm9980137/",
+        "https://www.themoviedb.org/person/2480853-harriet-slater"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Arsema Thomas",
+      "key": "Arsema Thomas",
+      "name": "Arsema Thomas",
+      "image": "/people/arsema-thomas-nm9160593.jpg",
+      "imdbId": "nm9160593",
+      "imdbUrl": "https://www.imdb.com/name/nm9160593/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/lvzhZIbkWIVLSRHsOICs9o37g2I.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q115990371",
+        "https://www.imdb.com/name/nm9160593/",
+        "https://www.themoviedb.org/person/3486664-arsema-thomas"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-tmdb-cache"
+    },
+    {
+      "credit": "Tom Brittney",
+      "key": "Tom Brittney",
+      "name": "Tom Brittney",
+      "birthDate": "1990-10-26",
+      "birthYear": 1990,
+      "nationalityPrimary": "Británico",
+      "image": "/people/tom-brittney-nm5938631.jpg",
+      "imdbId": "nm5938631",
+      "imdbUrl": "https://www.imdb.com/name/nm5938631/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q18221462",
+        "https://www.imdb.com/name/nm5938631/",
+        "https://www.themoviedb.org/person/1626604-tom-brittney"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-tmdb-cache"
+    },
+    {
+      "credit": "Michael Showalter",
+      "key": "Michael Showalter",
+      "name": "Michael Showalter",
+      "birthYear": 1970,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/michael-showalter-nm0795290.jpg",
+      "imdbId": "nm0795290",
+      "imdbUrl": "https://www.imdb.com/name/nm0795290/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Showalter.jpg?width=960",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q2092899",
+        "https://www.imdb.com/name/nm0795290/",
+        "https://www.themoviedb.org/person/22215-michael-showalter"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache",
+      "birthDate": "1970-06-17"
+    },
+    {
+      "credit": "Anne Hathaway",
+      "key": "Anne Hathaway",
+      "name": "Anne Hathaway",
+      "birthDate": "1982-11-12",
+      "birthYear": 1982,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/anne-hathaway-nm0004266.jpg",
+      "imdbId": "nm0004266",
+      "imdbUrl": "https://www.imdb.com/name/nm0004266/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/AnneHathaway-byPhilipRomano3.jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q36301",
+        "https://www.imdb.com/name/nm0004266/",
+        "https://www.themoviedb.org/person/1813-anne-hathaway"
+      ],
+      "lastVerifiedAt": "2026-08-26",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Dakota Johnson",
+      "key": "Dakota Johnson",
+      "name": "Dakota Johnson",
+      "birthYear": 1989,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/dakota-johnson-nm0424848.jpg",
+      "imdbId": "nm0424848",
+      "imdbUrl": "https://www.imdb.com/name/nm0424848/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/59th%20Karlovy%20Vary%20International%20Film%20Festival%2C%20Dakota%20Johnson%2001%20(cropped).jpg?width=960",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q2315802",
+        "https://www.imdb.com/name/nm0424848/",
+        "https://www.themoviedb.org/person/118545-dakota-johnson"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache",
+      "birthDate": "1989-10-04"
+    },
+    {
+      "credit": "Josh Hartnett",
+      "key": "Josh Hartnett",
+      "name": "Josh Hartnett",
+      "birthDate": "1978-07-21",
+      "birthYear": 1978,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/josh-hartnett-nm0001326.jpg",
+      "imdbId": "nm0001326",
+      "imdbUrl": "https://www.imdb.com/name/nm0001326/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Hartnett%20SDCC%202014.jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q303957",
+        "https://www.imdb.com/name/nm0001326/",
+        "https://www.themoviedb.org/person/2299-josh-hartnett"
+      ],
+      "lastVerifiedAt": "2026-08-25",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Alejandro González Iñárritu",
+      "key": "Alejandro González Iñárritu",
+      "name": "Alejandro González Iñárritu",
+      "birthDate": "1963-08-15",
+      "birthYear": 1963,
+      "nationalityPrimary": "Mexicano",
+      "image": "/people/alejandro-gonzalez-inarritu-nm0327944.jpg",
+      "imdbId": "nm0327944",
+      "imdbUrl": "https://www.imdb.com/name/nm0327944/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alejandro%20Gonz%C3%A1lez%20I%C3%B1%C3%A1rritu%202014.jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q55215",
+        "https://www.imdb.com/name/nm0327944/",
+        "https://www.themoviedb.org/person/223-alejandro-gonzalez-inarritu"
+      ],
+      "lastVerifiedAt": "2026-08-11",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Tom Cruise",
+      "key": "Tom Cruise",
+      "name": "Tom Cruise",
+      "birthDate": "1962-07-03",
+      "birthYear": 1962,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/tom-cruise-nm0000129.jpg",
+      "imdbId": "nm0000129",
+      "imdbUrl": "https://www.imdb.com/name/nm0000129/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Cruise%20at%2053rd%20Saturn%20Awards%202026-01.jpg?width=960",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q37079",
+        "https://www.imdb.com/name/nm0000129/",
+        "https://www.themoviedb.org/person/500-tom-cruise"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Riz Ahmed",
+      "key": "Riz Ahmed",
+      "name": "Riz Ahmed",
+      "birthDate": "1982-12-01",
+      "birthYear": 1982,
+      "nationalityPrimary": "Británico",
+      "image": "/people/riz-ahmed-nm1981893.jpg",
+      "imdbId": "nm1981893",
+      "imdbUrl": "https://www.imdb.com/name/nm1981893/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Riz%20Ahmed%20at%20the%20Rogue%20One%20-%20A%20Star%20Wars%20Story%20-%20World%20Premeire%20Red%20Carpet%20-%20DSC%200437%20(31547570706)%20(cropped).jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q1861917",
+        "https://www.imdb.com/name/nm1981893/",
+        "https://www.themoviedb.org/person/53240-riz-ahmed"
+      ],
+      "lastVerifiedAt": "2026-08-24",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "John Goodman",
+      "key": "John Goodman",
+      "name": "John Goodman",
+      "birthDate": "1952-06-20",
+      "birthYear": 1952,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/john-goodman-nm0000422.jpg",
+      "imdbId": "nm0000422",
+      "imdbUrl": "https://www.imdb.com/name/nm0000422/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Goodman%202014.jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q215072",
+        "https://www.themoviedb.org/person/1230-john-goodman",
+        "https://www.imdb.com/name/nm0000422/"
+      ],
+      "lastVerifiedAt": "2026-08-25",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Sandra Hüller",
+      "key": "Sandra Hüller",
+      "name": "Sandra Hüller",
+      "birthYear": 1978,
+      "nationalityPrimary": "Alemana",
+      "image": "/people/sandra-huller-nm1197689.jpg",
+      "imdbId": "nm1197689",
+      "imdbUrl": "https://www.imdb.com/name/nm1197689/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MKr23529%20Sandra%20H%C3%BCller%20(Sisi%20%26%20Ich%2C%20Berlinale%202023).jpg?width=960",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q70003",
+        "https://www.imdb.com/name/nm1197689/",
+        "https://www.themoviedb.org/person/7152-sandra-huller"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache",
+      "birthDate": "1978-04-30"
+    },
+    {
+      "credit": "Vasiliy Rovenskiy",
+      "key": "Vasiliy Rovenskiy",
+      "name": "Vasiliy Rovenskiy",
+      "image": "/people/vasiliy-rovenskiy-nm2669989.jpg",
+      "remoteImageUrl": "https://www.acmodasi.com.ua/amdb/images/persons/w360/126/51/vasiliy-rovenskiy-98197.webp",
+      "referenceUrls": [
+        "https://www.acmodasi.com.ua/amdb/movie/1381777-the-treasures-of-the-gnomes-2025/crew",
+        "https://www.imdb.com/name/nm2669989/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "verified-manual-public-source",
+      "imdbId": "nm2669989",
+      "imdbUrl": "https://www.imdb.com/name/nm2669989/"
+    },
+    {
+      "credit": "Pavel Priluchnyy",
+      "key": "Pavel Priluchnyy",
+      "name": "Pavel Priluchny",
+      "birthDate": "1987-11-05",
+      "birthYear": 1987,
+      "image": "/people/pavel-priluchnyy-nm3488770.jpg",
+      "imdbId": "nm3488770",
+      "imdbUrl": "https://www.imdb.com/name/nm3488770/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D1%80%D0%B8%D0%BB%D1%83%D1%87%D0%BD%D1%8B%D0%B9%20%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q4378600",
+        "https://www.imdb.com/name/nm3488770/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache",
+      "aliases": [
+        "Pavel Priluchnyy"
+      ]
+    },
+    {
+      "credit": "Roman Kurtsyn",
+      "key": "Roman Kurtsyn",
+      "name": "Roman Kurtsyn",
+      "birthDate": "1985-03-14",
+      "birthYear": 1985,
+      "nationalityPrimary": "Ruso",
+      "image": "/people/roman-kurtsyn-nm3406682.jpg",
+      "imdbId": "nm3406682",
+      "imdbUrl": "https://www.imdb.com/name/nm3406682/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/gvcPUusj3CFikNRyqquE4o5byjH.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q4249008",
+        "https://www.imdb.com/name/nm3406682/",
+        "https://www.themoviedb.org/person/1257180-roman-kurtsyn"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-tmdb-cache"
+    },
+    {
+      "credit": "Polina Gagarina",
+      "key": "Polina Gagarina",
+      "name": "Polina Gagarina",
+      "birthDate": "1987-03-27",
+      "birthYear": 1987,
+      "nationalityPrimary": "Rusa",
+      "image": "/people/polina-gagarina-nm2447656.jpg",
+      "imdbId": "nm2447656",
+      "imdbUrl": "https://www.imdb.com/name/nm2447656/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0%20%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D0%B0%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B5%D1%81%D1%81%D0%B2%D0%BE%D0%BB%D0%B5%20%D0%BD%D0%B0%20Big%20Love%20Show%202018%20%D0%B2%20%D0%A1%D0%9F%D0%B1.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q4131386",
+        "https://www.imdb.com/name/nm2447656/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "David Súkup",
+      "key": "David Súkup",
+      "name": "David Súkup",
+      "image": "/people/david-sukup-nm1037515.jpg",
+      "remoteImageUrl": "https://cdn.festival-cannes.com/media/uploads/2023/03/81820.jpg",
+      "referenceUrls": [
+        "https://www.festival-cannes.com/en/p/david-sukup/",
+        "https://www.filmcenter.gov.cz/en/people/4967-david-sukup"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "verified-manual-public-source",
+      "imdbId": "nm1037515",
+      "imdbUrl": "https://www.imdb.com/name/nm1037515/"
+    },
+    {
+      "credit": "Arnošt Goldflam",
+      "key": "Arnošt Goldflam",
+      "name": "Arnošt Goldflam",
+      "birthDate": "1946-09-22",
+      "birthYear": 1946,
+      "nationalityPrimary": "Checo",
+      "image": "/people/arnost-goldflam-nm0325611.jpg",
+      "imdbId": "nm0325611",
+      "imdbUrl": "https://www.imdb.com/name/nm0325611/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Goldflam%202010.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q3646680",
+        "https://www.imdb.com/name/nm0325611/",
+        "https://www.themoviedb.org/person/133559-arnost-goldflam"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Zuzana Krónerová",
+      "key": "Zuzana Krónerová",
+      "name": "Zuzana Kronerová",
+      "birthDate": "1952-04-17",
+      "birthYear": 1952,
+      "nationalityPrimary": "Eslovaca",
+      "image": "/people/zuzana-kronerova-nm0472173.jpg",
+      "imdbId": "nm0472173",
+      "imdbUrl": "https://www.imdb.com/name/nm0472173/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zuzana%20Kronerova%202017%20crop%2002.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q10861544",
+        "https://www.imdb.com/name/nm0472173/",
+        "https://www.themoviedb.org/person/550394-zuzana-kronerova"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Joseph Hahn",
+      "key": "Joseph Hahn",
+      "name": "Joe Hahn",
+      "birthDate": "1977-03-15",
+      "birthYear": 1977,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/joseph-hahn-nm1060386.jpg",
+      "imdbId": "nm1060386",
+      "imdbUrl": "https://www.imdb.com/name/nm1060386/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Linkin%20Park%20-%20From%20Zero%20Lead%20Press%20Photo%20-%20James%20Minchin%20III%20(Joe%20Hahn%20headshot).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q19200",
+        "https://www.imdb.com/name/nm1060386/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache",
+      "aliases": [
+        "Joseph Hahn"
+      ]
+    },
+    {
+      "credit": "Emily Armstrong",
+      "key": "Emily Armstrong",
+      "name": "Emily Armstrong",
+      "birthDate": "1986-05-06",
+      "birthYear": 1986,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/emily-armstrong-nm2612923.jpg",
+      "imdbId": "nm2612923",
+      "imdbUrl": "https://www.imdb.com/name/nm2612923/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lead%20Press%20Photo%20-%20James%20Minchin%20III%20(cropped%20to%20Emily%20Armstrong).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q130242447",
+        "https://www.imdb.com/name/nm2612923/",
+        "https://www.themoviedb.org/person/2748374-emily-armstrong"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Mike Shinoda",
+      "key": "Mike Shinoda",
+      "name": "Mike Shinoda",
+      "birthDate": "1977-02-11",
+      "birthYear": 1977,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/mike-shinoda-nm1060557.jpg",
+      "imdbId": "nm1060557",
+      "imdbUrl": "https://www.imdb.com/name/nm1060557/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Linkin%20Park%20-%20From%20Zero%20Lead%20Press%20Photo%20-%20James%20Minchin%20III%20(Mike%20Shinoda).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q19201",
+        "https://www.imdb.com/name/nm1060557/",
+        "https://www.themoviedb.org/person/214830-mike-shinoda"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Chester Bennington",
+      "key": "Chester Bennington",
+      "name": "Chester Bennington",
+      "birthDate": "1976-03-20",
+      "birthYear": 1976,
+      "deathDate": "2017-07-20",
+      "deathYear": 2017,
+      "nationalityPrimary": "Estadounidense",
+      "image": "/people/chester-bennington-nm1057933.jpg",
+      "imdbId": "nm1057933",
+      "imdbUrl": "https://www.imdb.com/name/nm1057933/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Linkin%20Park-Rock%20im%20Park%202014-%20by%202eight%203SC0327.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q19198",
+        "https://www.imdb.com/name/nm1057933/",
+        "https://www.themoviedb.org/person/108661-chester-bennington"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Akiyuki Shinbo",
+      "key": "Akiyuki Shinbo",
+      "name": "Akiyuki Shinbo",
+      "birthDate": "1961-09-27",
+      "birthYear": 1961,
+      "nationalityPrimary": "Japonés",
+      "image": "/people/akiyuki-shinbo-nm0793840.jpg",
+      "imdbId": "nm0793840",
+      "imdbUrl": "https://www.imdb.com/name/nm0793840/",
+      "remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fc%2Fpeople%2Fc9ffdd4ef34e29077aa532ffdf38560e.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q50036",
+        "https://www.imdb.com/name/nm0793840/",
+        "https://watch.plex.tv/person/akiyuki-shinbo"
+      ],
+      "lastVerifiedAt": "2026-09-21",
+      "source": "wikidata-imdb-plex-cache"
+    },
+    {
+      "credit": "Yukihiro Miyamoto",
+      "key": "Yukihiro Miyamoto",
+      "name": "Yukihiro Miyamoto",
+      "birthDate": "1977-11-21",
+      "birthYear": 1977,
+      "nationalityPrimary": "Japonés",
+      "image": "/people/yukihiro-miyamoto-nm3578010.jpg",
+      "imdbId": "nm3578010",
+      "imdbUrl": "https://www.imdb.com/name/nm3578010/",
+      "remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F5%2Fpeople%2F5f0a0e03c29e0c62295d2df2fa0ff336.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q9007810",
+        "https://www.imdb.com/name/nm3578010/",
+        "https://watch.plex.tv/person/yukihiro-miyamoto"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-plex-cache"
+    },
+    {
+      "credit": "Aoi Yūki",
+      "key": "Aoi Yūki",
+      "name": "Aoi Yūki",
+      "birthDate": "1992-03-27",
+      "birthYear": 1992,
+      "nationalityPrimary": "Japonesa",
+      "image": "/people/aoi-yuki-nm2976492.jpg",
+      "imdbId": "nm2976492",
+      "imdbUrl": "https://www.imdb.com/name/nm2976492/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aoi%20Yuki%202021.png?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q1347031",
+        "https://www.imdb.com/name/nm2976492/",
+        "https://screendollars.com/celebrity/aoi-yuki/"
+      ],
+      "lastVerifiedAt": "2026-09-21",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Chiwa Saitō",
+      "key": "Chiwa Saito",
+      "name": "Chiwa Saitō",
+      "birthDate": "1981-03-12",
+      "birthYear": 1981,
+      "nationalityPrimary": "Japonesa",
+      "image": "/people/chiwa-saito-nm1543455.jpg",
+      "imdbId": "nm1543455",
+      "imdbUrl": "https://www.imdb.com/name/nm1543455/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Saito%20Chiwa%20at%20Anime%20Festival%20Asia%202011-11-23.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q50027",
+        "https://www.imdb.com/name/nm1543455/"
+      ],
+      "lastVerifiedAt": "2026-09-21",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Eri Kitamura",
+      "key": "Eri Kitamura",
+      "name": "Eri Kitamura",
+      "birthDate": "1987-08-16",
+      "birthYear": 1987,
+      "nationalityPrimary": "Japonesa",
+      "image": "/people/eri-kitamura-nm1543296.jpg",
+      "imdbId": "nm1543296",
+      "imdbUrl": "https://www.imdb.com/name/nm1543296/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eri%20Kitamura.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q665398",
+        "https://www.imdb.com/name/nm1543296/"
+      ],
+      "lastVerifiedAt": "2026-09-21",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Juan Pablo Sallato",
+      "key": "Juan Pablo Sallato",
+      "name": "Juan Pablo Sallato",
+      "image": "/people/juan-pablo-sallato-nm1892106.jpg",
+      "remoteImageUrl": "https://dmovies.org/wp-content/uploads/2026/02/RedHangarDirector2-800450.jpg",
+      "referenceUrls": [
+        "https://dmovies.org/2026/02/18/our-dirty-questions-to-juan-pablo-sallato/",
+        "https://cinechile.cl/persona/juan-pablo-sallato/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "verified-manual-public-source",
+      "imdbId": "nm1892106",
+      "imdbUrl": "https://www.imdb.com/name/nm1892106/"
+    },
+    {
+      "credit": "Nicolás Zárate",
+      "key": "Nicolás Zárate",
+      "name": "Nicolás Zárate",
+      "image": "/people/nicolas-zarate-nm1882450.jpg",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Málaga Film Festival 2026 - Nicolás Zárate - 1.jpg?width=960",
+      "referenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Málaga_Film_Festival_2026_-_Nicolás_Zárate_-_1.jpg",
+        "https://www.imdb.com/name/nm1882450/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "verified-manual-public-source",
+      "imdbId": "nm1882450",
+      "imdbUrl": "https://www.imdb.com/name/nm1882450/"
+    },
+    {
+      "credit": "Boris Quercia",
+      "key": "Boris Quercia",
+      "name": "Boris Quercia",
+      "birthDate": "1966-08-26",
+      "birthYear": 1966,
+      "nationalityPrimary": "Chileno",
+      "image": "/people/boris-quercia-nm0703253.jpg",
+      "imdbId": "nm0703253",
+      "imdbUrl": "https://www.imdb.com/name/nm0703253/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Quercia%2C%20Boris%20-FILSA%2020171110%20fRF06.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q2842719",
+        "https://www.imdb.com/name/nm0703253/",
+        "https://www.themoviedb.org/person/590990-boris-quercia"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Marcial Tagle",
+      "key": "Marcial Tagle",
+      "name": "Marcial Tagle",
+      "birthDate": "1963-01-03",
+      "birthYear": 1963,
+      "nationalityPrimary": "Chileno",
+      "image": "/people/marcial-tagle-nm1855459.jpg",
+      "imdbId": "nm1855459",
+      "imdbUrl": "https://www.imdb.com/name/nm1855459/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/sveAdNSZir3JX6DAKUYIwA8dJZh.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q5996138",
+        "https://www.imdb.com/name/nm1855459/",
+        "https://www.themoviedb.org/person/590883-marcial-tagle"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-tmdb-cache"
+    },
+    {
+      "credit": "Lucas Vivo García Lagos",
+      "key": "Lucas Vivo García Lagos",
+      "name": "Lucas Vivo García Lagos",
+      "image": "/people/lucas-vivo-garcia-lagos-nm9321294.jpg",
+      "remoteImageUrl": "https://fotos.perfil.com/2022/06/28/960/0/lucas-vivo-director-de-cine-uruguayo-1378261.jpg",
+      "referenceUrls": [
+        "https://www.caras.uy/noticias/nueva-edicion/lucas-vivo-el-uruguayo-que-dirige-franklin-la-historia-de-un-billete2.phtml",
+        "https://m.cinesargentinos.com.ar/pelicula/10612-escondida-en-mi-cabeza/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "verified-manual-public-source",
+      "imdbId": "nm9321294",
+      "imdbUrl": "https://www.imdb.com/name/nm9321294/"
+    },
+    {
+      "credit": "Nicolás Furtado",
+      "key": "Nicolás Furtado",
+      "name": "Nicolas Furtado",
+      "birthDate": "1988-02-06",
+      "birthYear": 1988,
+      "nationalityPrimary": "Uruguayo",
+      "image": "/people/nicolas-furtado-nm3014594.jpg",
+      "imdbId": "nm3014594",
+      "imdbUrl": "https://www.imdb.com/name/nm3014594/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20Furtado%20Entrevista%20(cropped).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q27907221",
+        "https://www.imdb.com/name/nm3014594/",
+        "https://www.themoviedb.org/person/1263585-nicolas-furtado"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Agustina Suásquita",
+      "key": "Agustina Suásquita",
+      "name": "Agustina Suásquita",
+      "image": "/people/agustina-suasquita-nm8570602.jpg",
+      "imdbId": "nm8570602",
+      "imdbUrl": "https://www.imdb.com/name/nm8570602/",
+      "remoteImageUrl": "https://www.revistagente.com/wp-content/uploads/2025/05/AGUSTINA-SUASQUITA-RED-CARPET-1-819x1024.jpg.webp",
+      "referenceUrls": [
+        "https://www.revistagente.com/galerias/entre-galas-sunsets-y-moda-las-45-mejores-fotos-de-las-celebridades-argentinas-en-cannes-2025-de-flavia-palmiero-a-brenda-gandini-y-oriana-sabatini/",
+        "https://es.wikipedia.org/wiki/Agustina_Suásquita",
+        "https://m.cinesargentinos.com.ar/pelicula/10612-escondida-en-mi-cabeza/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "verified-manual-public-source"
+    },
+    {
+      "credit": "Alejandra Flechner",
+      "key": "Alejandra Flechner",
+      "name": "Alejandra Flechner",
+      "birthDate": "1961-11-04",
+      "birthYear": 1961,
+      "nationalityPrimary": "Argentina",
+      "image": "/people/alejandra-flechner-nm0281371.jpg",
+      "imdbId": "nm0281371",
+      "imdbUrl": "https://www.imdb.com/name/nm0281371/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alejandra%20Flechner%20(cropped).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q2844031",
+        "https://www.imdb.com/name/nm0281371/",
+        "https://www.themoviedb.org/person/239252-alejandra-flechner"
+      ],
+      "lastVerifiedAt": "2026-09-12",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Gustavo Postiglione",
+      "key": "Gustavo Postiglione",
+      "name": "Gustavo Postiglione",
+      "birthDate": "1963",
+      "birthYear": 1963,
+      "nationalityPrimary": "Argentino",
+      "image": "/people/gustavo-postiglione-nm0692939.jpg",
+      "imdbId": "nm0692939",
+      "imdbUrl": "https://www.imdb.com/name/nm0692939/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/hBB8WVl9eSw4kf0vhNrpSCm5vLn.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q11860840",
+        "https://www.imdb.com/name/nm0692939/",
+        "https://www.themoviedb.org/person/1667418-gustavo-postiglione"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-tmdb-cache"
+    },
+    {
+      "credit": "Guillermo Pfening",
+      "key": "Guillermo Pfening",
+      "name": "Guillermo Pfening",
+      "birthDate": "1978-12-09",
+      "birthYear": 1978,
+      "nationalityPrimary": "Argentino",
+      "image": "/people/guillermo-pfening-nm1166977.jpg",
+      "imdbId": "nm1166977",
+      "imdbUrl": "https://www.imdb.com/name/nm1166977/",
+      "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/8Q4XjLrKdxqmFmUgdYoL2rbsH1Y.jpg",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q5888808",
+        "https://www.imdb.com/name/nm1166977/",
+        "https://www.themoviedb.org/person/81155-guillermo-pfening"
+      ],
+      "lastVerifiedAt": "2026-08-11",
+      "source": "wikidata-imdb-tmdb-cache"
+    },
+    {
+      "credit": "Antonella Costa",
+      "key": "Antonella Costa",
+      "name": "Antonella Costa",
+      "birthDate": "1980-03-19",
+      "birthYear": 1980,
+      "nationalityPrimary": "Argentina",
+      "image": "/people/antonella-costa-nm0182074.jpg",
+      "imdbId": "nm0182074",
+      "imdbUrl": "https://www.imdb.com/name/nm0182074/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonella%20Costa%20(Encuentro%20con%20los%20medios).jpg?width=640",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q425792",
+        "https://www.imdb.com/name/nm0182074/",
+        "https://www.themoviedb.org/person/125493-antonella-costa"
+      ],
+      "lastVerifiedAt": "2026-08-11",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Leandro Cerro",
+      "key": "Leandro Cerro",
+      "name": "Leandro Cerro",
+      "image": "/people/leandro-cerro.jpg",
+      "remoteImageUrl": "https://cdn.davinci.thinkion.com.ar/dvcdn/persons/6accb70a20176df5565efa006c496c21.jpg",
+      "referenceUrls": [
+        "https://davinci.thinkion.com.ar/carreras/cine-y-nuevos-formatos-audiovisuales",
+        "https://www.tiempoar.com.ar/ta_article/se-estrena-islandia/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "verified-manual-public-source"
+    },
+    {
+      "credit": "Georg Hólm",
+      "key": "Georg Hólm",
+      "name": "Georg Hólm",
+      "birthDate": "1976-04-06",
+      "birthYear": 1976,
+      "nationalityPrimary": "Islandés",
+      "image": "/people/georg-holm-nm1743730.jpg",
+      "imdbId": "nm1743730",
+      "imdbUrl": "https://www.imdb.com/name/nm1743730/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Georg%20H%C3%B3lm%2C%20Sigur%20R%C3%B3s.jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q2087790",
+        "https://www.imdb.com/name/nm1743730/",
+        "https://www.themoviedb.org/person/123294-georg-holm"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Sigtryggur Baldursson",
+      "key": "Sigtryggur Baldursson",
+      "name": "Sigtryggur Baldursson",
+      "birthDate": "1962-10-02",
+      "birthYear": 1962,
+      "nationalityPrimary": "Islandés",
+      "image": "/people/sigtryggur-baldursson-nm1924217.jpg",
+      "imdbId": "nm1924217",
+      "imdbUrl": "https://www.imdb.com/name/nm1924217/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sigtryggur%20Baldursson%20-%20PopTech%202012%20(1).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q3481422",
+        "https://www.imdb.com/name/nm1924217/"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Avelina Prat",
+      "key": "Avelina Prat",
+      "name": "Avelina Prat García",
+      "birthDate": "1972",
+      "birthYear": 1972,
+      "nationalityPrimary": "Española",
+      "image": "/people/avelina-prat-nm2767715.jpg",
+      "imdbId": "nm2767715",
+      "imdbUrl": "https://www.imdb.com/name/nm2767715/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malaga%20Film%20Festival%202025%20-%20Avelina%20Prat-2%20(3x4%20cropped).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q115035297",
+        "https://www.imdb.com/name/nm2767715/",
+        "https://www.themoviedb.org/person/1616022-avelina-prat"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache",
+      "aliases": [
+        "Avelina Prat"
+      ]
+    },
+    {
+      "credit": "Manolo Solo",
+      "key": "Manolo Solo",
+      "name": "Manolo Solo",
+      "birthDate": "1964-01-11",
+      "birthYear": 1964,
+      "deathDate": "2026-07-30",
+      "deathYear": 2026,
+      "nationalityPrimary": "Español",
+      "image": "/people/manolo-solo-nm1254805.jpg",
+      "imdbId": "nm1254805",
+      "imdbUrl": "https://www.imdb.com/name/nm1254805/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Premios%20Goya%202026%20-%20Manolo%20Solo%20(cropped).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q23055064",
+        "https://www.imdb.com/name/nm1254805/",
+        "https://www.themoviedb.org/person/592709-manolo-solo"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    },
+    {
+      "credit": "Maria de Medeiros",
+      "key": "Maria de Medeiros",
+      "name": "Maria de Medeiros",
+      "birthDate": "1965-08-19",
+      "birthYear": 1965,
+      "nationalityPrimary": "Portugal",
+      "image": "/people/maria-de-medeiros-nm0210218.jpg",
+      "imdbId": "nm0210218",
+      "imdbUrl": "https://www.imdb.com/name/nm0210218/",
+      "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maria%20de%20Medeiros%20-%20IndieLisboa%20-%202011%20(52451634)%20(cropped).jpg?width=1200",
+      "referenceUrls": [
+        "https://www.wikidata.org/wiki/Q235115",
+        "https://www.imdb.com/name/nm0210218/",
+        "https://www.themoviedb.org/person/2319-maria-de-medeiros"
+      ],
+      "lastVerifiedAt": "2026-10-01",
+      "source": "wikidata-imdb-cache"
+    }
+  ],
+  "blocked": [
+    {
+      "slug": "retrato-de-un-pianista-2025",
+      "date": "2026-10-01",
+      "availability": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=01/10/2026",
+      "time": "20:00",
+      "reason": "No individual verified director portrait; minimum people gate unmet."
+    },
+    {
+      "slug": "la-noche-esta-marchandose-ya-2025",
+      "date": "2026-10-01",
+      "availability": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=01/10/2026",
+      "time": "14:00",
+      "source": "https://www.imdb.com/title/tt38689439/",
+      "dataset": "https://datasets.imdbws.com/title.ratings.tsv.gz",
+      "raw": 7.3,
+      "scale": 10,
+      "votes": 80,
+      "calculation": "round(7.3) = 7",
+      "reason": "Only one safe pictured lead performer; Juana Oviedo photo is nofoto.jpg."
+    }
+  ],
+  "gaumont": [
+    {
+      "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=01/10/2026",
+      "data": {
+        "success": true,
+        "message": "Datos obtenidos correctamente",
+        "data": {
+          "datos": [
+            {
+              "peliculas_codigo": "507",
+              "peliculas_nombre": "Los Calvos",
+              "peliculas_duracion": "80",
+              "peliculas_genero": "Comedia",
+              "peliculas_clasificacion": "ATP",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Elias Gismondi",
+              "actores": "Carlos Iñiguez Raúl Ekerman Sergio Aispurúa Martín Carlos Viguela Jorge Mossello",
+              "peliculas_sinopsis": "En un pueblo inhóspito y árido del norte de Argentina llamado Tostado, un grupo de pintorescos personajes calvos indagan sobre su calvicie y la importancia del cabello en sus vidas. \r\n",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "24/09/2026",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F507%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F507%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "475",
+              "peliculas_nombre": "La odisea 2D",
+              "peliculas_duracion": "175",
+              "peliculas_genero": "Fantasía",
+              "peliculas_clasificacion": "+13",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": "https://www.youtube.com/embed/uNSLlgesWB0",
+              "director": "Christopher Nolan",
+              "actores": "Matt Damon, Tom Holland, Anne Hathaway, Robert Pattinson y Lupita Nyong’o, Zendaya, Charlize Theron",
+              "peliculas_sinopsis": "Una epopeya mitológica que sigue la historia de Odiseo y su largo viaje a casa, de 10 años de duración, tras la guerra de Troya.",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "16/07/2026",
+              "peliculaUltracineId": "64260170",
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F475%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F475%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "490",
+              "peliculas_nombre": "Yo, Narciso",
+              "peliculas_duracion": "95",
+              "peliculas_genero": "Comedia",
+              "peliculas_clasificacion": "+13",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Adrián Suar",
+              "actores": "Adrián Suar, Natalia Oreiro, Julieta Zylberberg",
+              "peliculas_sinopsis": "Rocío Flores (Natalia Oreiro), profesora universitaria de sociología, escribe un libro sobre el narcisismo moderno. Para entender mejor a su “sujeto”, decide estudiarlo desde adentro y elige como caso a Máximo Rey (Adrián Suar), un carismático cirujano plástico. Bajo una falsa identidad, Rocío se hará pasar por una paciente interesada en un retoque estético, y de esta manera busca observar y analizar a Máximo sin ser descubierta. Pero las consultas pronto se convierten en citas donde él despliega todo su encanto. Rocío, decidida a mantener el vínculo sin caer en su juego, inventa excusas cada vez más absurdas para mantenerlo a raya. Cuando Máximo descubre que se ha enamorado de ella, “el experimento” se descontrola. ¿Podrá Rocío completar su investigación sin convertirse en víctima de su propio plan? Yo, narciso es una comedia de enredos. La película satiriza la obsesión por la imagen, el ego masculino y los límites del deseo.",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "13/08/2026",
+              "peliculaUltracineId": "25264072",
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F490%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F490%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "500",
+              "peliculas_nombre": "Pepita la pistolera",
+              "peliculas_duracion": "103",
+              "peliculas_genero": "Thriller",
+              "peliculas_clasificacion": "+16",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": "https://www.youtube.com/watch?v=eo4d1S9FMvc",
+              "director": "Lucía Puenzo",
+              "actores": "Luisana Lopilato, Camila Peralta, Gustavo Bassani, Esteban Bigliardi, Alberto Ajaka, Erica Rivas, Marcelo Subiotto, Charo López, Claudio Tolcachir, Sebastian D&#39;Aquino",
+              "peliculas_sinopsis": "En 1985 una madre de un recién nacido mata a tiros a tres delincuentes que irrumpen en su casa. El caso se vuelve muy mediático y ella es bautizada Pepita, la pistolera. Pero no es la mujer inocente y vulnerable que todos creen. Antes de convertirse en asesina, Margarita Di Tullio ya era una ladrona profesional y una maestra del engaño. También, la madama más glamorosa de Mar del Plata en un mundo dominado por hombres. El triple crimen sólo hace crecer el mito de esta reina del hampa, la mujer más famosa de la historia criminal argentina.",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "03/09/2026",
+              "peliculaUltracineId": "25260030",
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F500%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F500%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "18",
+              "peliculas_nombre": "HANGAR ROJO",
+              "peliculas_duracion": "82",
+              "peliculas_genero": "Thriller",
+              "peliculas_clasificacion": "+13",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": "https://www.youtube.com/watch?v=kVqC-SoBlSQ",
+              "director": "Juan Pablo Sallato",
+              "actores": "Nicolás Zárate Silva Boris Quercia Soler Marcial Tagle Jahn Catalina Stuardo Rosa Aron Hernández Hernández Francisco Carrasco Carrasco Juan Cano Mujica",
+              "peliculas_sinopsis": "Santiago de Chile, 11 de Septiembre de 1973. Mientras el golpe militar se despliega por el país,\r\nel capitán Jorge Silva, ex jefe de Inteligencia de la Fuerza Aérea, recibe una orden que cambiará su vida para siempre: transformar la Escuela de Aviación, donde hoy enseña a jóvenes cadetes,\r\nen un centro de detención y tortura. Silva intenta\r\nmantenerse al margen, pero la llegada del coronel Jahn, un antiguo rival que regresa con poder y cuentas pendientes, lo obliga a enfrentar no sólo su pasado, sino también sus propias convicciones. A medida que los camiones comienzan a llenar de prisioneros el hangar, y la lógica del poder se vuelve más brutal, Silva se ve atrapado en una encrucijada: desobedecer puede costarle la vida... pero obedecer también.",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "01/10/2026",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F18%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F18%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "522",
+              "peliculas_nombre": "UNA PELÍCULA DE PARQUE CHAS",
+              "peliculas_duracion": "64",
+              "peliculas_genero": "Documental",
+              "peliculas_clasificacion": "G",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Ayelén Laura Redigonda",
+              "actores": "-",
+              "peliculas_sinopsis": "Una película de Parque Chas, es un ensayo documental donde los habitantes del barrio Parque Chas de la Ciudad de Buenos Aires, cuentan su historia y la del barrio. Se cruzan, se alejan, cantan, conviven y se pierden. Cada cual la cuenta como quiere y al contarla se encuentran.",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "01/10/2026",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F522%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F522%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "519",
+              "peliculas_nombre": "CROTOS LIBRES",
+              "peliculas_duracion": "64",
+              "peliculas_genero": "Documental",
+              "peliculas_clasificacion": "G",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Magalí Flaks",
+              "actores": "",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F519%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F519%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "513",
+              "peliculas_nombre": "BAJO TUS PIES ",
+              "peliculas_duracion": "94",
+              "peliculas_genero": "Suspenso",
+              "peliculas_clasificacion": "R-13",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Cristian Bernard",
+              "actores": "varios",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F513%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F513%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "514",
+              "peliculas_nombre": "UNA QUINTA EN PORTUGAL",
+              "peliculas_duracion": "114",
+              "peliculas_genero": "Drama",
+              "peliculas_clasificacion": "SP",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Avelina Prat",
+              "actores": "varios",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F514%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F514%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "511",
+              "peliculas_nombre": "LOS DOMINGOS",
+              "peliculas_duracion": "116",
+              "peliculas_genero": "Comedia",
+              "peliculas_clasificacion": "SP",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Alauda Ruiz de Azúa",
+              "actores": "varios ",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F511%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F511%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "524",
+              "peliculas_nombre": "SOY ELLA",
+              "peliculas_duracion": "86",
+              "peliculas_genero": "Documental",
+              "peliculas_clasificacion": "R-13",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Cecilia Pinotti",
+              "actores": "varios",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F524%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F524%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "520",
+              "peliculas_nombre": "ROCAMBOLE",
+              "peliculas_duracion": "89",
+              "peliculas_genero": "Documental",
+              "peliculas_clasificacion": "G",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Marcia Paradiso, Matías González",
+              "actores": "varios",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F520%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F520%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "508",
+              "peliculas_nombre": "CANELONES",
+              "peliculas_duracion": "92",
+              "peliculas_genero": "Drama",
+              "peliculas_clasificacion": "SP",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Christian Basilis, Ana Laura Gussoni ",
+              "actores": "varios",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F508%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F508%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "518",
+              "peliculas_nombre": "RETRATO DE UN PIANISTA",
+              "peliculas_duracion": "69",
+              "peliculas_genero": "Documental",
+              "peliculas_clasificacion": "G",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "José Luis Nacci, Elena Konieczny",
+              "actores": "varios",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F518%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F518%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "510",
+              "peliculas_nombre": "LA NOCHE ESTÁ MARCHÁNDOSE YA",
+              "peliculas_duracion": "105",
+              "peliculas_genero": "Comedia",
+              "peliculas_clasificacion": "R-13",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "Ezequiel Salinas, Ramiro Sonzini",
+              "actores": "varios ",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F510%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F510%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "517",
+              "peliculas_nombre": "ENCANTADOR",
+              "peliculas_duracion": "100",
+              "peliculas_genero": "Terror",
+              "peliculas_clasificacion": "R-17",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": "José María Cicala",
+              "actores": "varios ",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F517%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F517%2Fprimario.png?alt=media"
+                }
+              ]
+            },
+            {
+              "peliculas_codigo": "512",
+              "peliculas_nombre": "ESCONDIDA EN MI CABEZA ",
+              "peliculas_duracion": "99",
+              "peliculas_genero": "Comedia",
+              "peliculas_clasificacion": "R-13",
+              "peliculas_cartelera": "1",
+              "peliculas_trailer": " ",
+              "director": " Lucas Vivo García Lagos",
+              "actores": "varios",
+              "peliculas_sinopsis": " ",
+              "peliculas_tipo": "2D",
+              "idUltracine": "372001",
+              "fecha_estreno": "-",
+              "peliculaUltracineId": null,
+              "imagen": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F512%2Fprimario.png?alt=media",
+              "peliculas_imagenes": [
+                {
+                  "url": "https://firebasestorage.googleapis.com/v0/b/cinexo-lastipas.appspot.com/o/Peliculas%2F372001%2F512%2Fprimario.png?alt=media"
+                }
+              ]
+            }
+          ],
+          "funciones": [
+            {
+              "trasnoche": "0",
+              "codPelicula": "18",
+              "_id": "108",
+              "hora": "19:00",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "490",
+              "_id": "36",
+              "hora": "18:30",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "500",
+              "_id": "66",
+              "hora": "16:00",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "500",
+              "_id": "67",
+              "hora": "22:00",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "507",
+              "_id": "80",
+              "hora": "18:15",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "508",
+              "_id": "23",
+              "hora": "14:30",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "510",
+              "_id": "52",
+              "hora": "14:00",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "511",
+              "_id": "94",
+              "hora": "14:15",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "512",
+              "_id": "30",
+              "hora": "16:30",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "512",
+              "_id": "41",
+              "hora": "20:30",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "513",
+              "_id": "115",
+              "hora": "21:30",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "514",
+              "_id": "101",
+              "hora": "16:45",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "517",
+              "_id": "46",
+              "hora": "22:30",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            },
+            {
+              "trasnoche": "0",
+              "codPelicula": "518",
+              "_id": "87",
+              "hora": "20:00",
+              "subtitulada": "0",
+              "idUltracine": "372001",
+              "formato": "2D",
+              "TipoSala": "2"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "validation": {
+    "content": "pass",
+    "buildPages": 7500,
+    "publicOutput": "pass",
+    "sitemapCanonicalPages": 5258,
+    "astroCheck": "pass",
+    "peopleImageCount": 5426,
+    "prebuild": {
+      "candidates": 46,
+      "warnings": 108,
+      "result": "pass-with-warnings",
+      "youtubeSearch": "HTTP 302 warnings; title/oEmbed checks passed"
+    },
+    "postbuild": {
+      "candidates": 46,
+      "result": "pass-with-warnings",
+      "warnings": 75
+    },
+    "legacyReactionCheck": {
+      "result": "fail",
+      "falsePositiveCount": 44,
+      "reason": "Auditor expects Mirala/Zafa legacy labels and meh tone at 6; site uses canonical 1-10 score labels and pass at 6.",
+      "currentContractRoutesVerified": 46
+    },
+    "playwright": {
+      "passed": 8,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ]
+    },
+    "browser": {
+      "total": 26,
+      "loaded": 26,
+      "bad": 0,
+      "carousel": 43,
+      "reactionRoutes": 46,
+      "results": [
+        {
+          "mode": "desktop",
+          "slug": "digger-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/digger-2026.webp",
+          "width": 480,
+          "height": 711
+        },
+        {
+          "mode": "desktop",
+          "slug": "verity-la-sombra-de-un-engano-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/verity-la-sombra-de-un-engano-2026.webp",
+          "width": 480,
+          "height": 600
+        },
+        {
+          "mode": "desktop",
+          "slug": "relajadas-y-muy-peligrosas-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/relajadas-y-muy-peligrosas-2026.webp",
+          "width": 480,
+          "height": 711
+        },
+        {
+          "mode": "desktop",
+          "slug": "vertigo-2-punto-muerto-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/vertigo-2-punto-muerto-2026.webp",
+          "width": 480,
+          "height": 720
+        },
+        {
+          "mode": "desktop",
+          "slug": "guardianes-del-museo-2-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/guardianes-del-museo-2-2026.webp",
+          "width": 480,
+          "height": 683
+        },
+        {
+          "mode": "desktop",
+          "slug": "cuentos-del-jardin-magico-2025",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2025/cuentos-del-jardin-magico-2025.webp",
+          "width": 480,
+          "height": 654
+        },
+        {
+          "mode": "desktop",
+          "slug": "hangar-rojo-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/hangar-rojo-2026.webp",
+          "width": 480,
+          "height": 687
+        },
+        {
+          "mode": "desktop",
+          "slug": "escondida-en-mi-cabeza-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/escondida-en-mi-cabeza-2026.webp",
+          "width": 480,
+          "height": 604
+        },
+        {
+          "mode": "desktop",
+          "slug": "linkin-park-unshatter-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/linkin-park-unshatter-2026.webp",
+          "width": 480,
+          "height": 711
+        },
+        {
+          "mode": "desktop",
+          "slug": "romeo-y-ofelia-2024",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2024/romeo-y-ofelia-2024.webp",
+          "width": 480,
+          "height": 600
+        },
+        {
+          "mode": "desktop",
+          "slug": "islandia-2025",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2025/islandia-2025.webp",
+          "width": 480,
+          "height": 686
+        },
+        {
+          "mode": "desktop",
+          "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/puella-magi-madoka-magica-walpurgisnacht-rising-2026.webp",
+          "width": 480,
+          "height": 678
+        },
+        {
+          "mode": "desktop",
+          "slug": "una-quinta-en-portugal-2025",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2025/una-quinta-en-portugal-2025.webp",
+          "width": 480,
+          "height": 720
+        },
+        {
+          "mode": "mobile",
+          "slug": "digger-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/digger-2026.webp",
+          "width": 480,
+          "height": 711
+        },
+        {
+          "mode": "mobile",
+          "slug": "verity-la-sombra-de-un-engano-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/verity-la-sombra-de-un-engano-2026.webp",
+          "width": 480,
+          "height": 600
+        },
+        {
+          "mode": "mobile",
+          "slug": "relajadas-y-muy-peligrosas-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/relajadas-y-muy-peligrosas-2026.webp",
+          "width": 480,
+          "height": 711
+        },
+        {
+          "mode": "mobile",
+          "slug": "vertigo-2-punto-muerto-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/vertigo-2-punto-muerto-2026.webp",
+          "width": 480,
+          "height": 720
+        },
+        {
+          "mode": "mobile",
+          "slug": "guardianes-del-museo-2-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/guardianes-del-museo-2-2026.webp",
+          "width": 480,
+          "height": 683
+        },
+        {
+          "mode": "mobile",
+          "slug": "cuentos-del-jardin-magico-2025",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2025/cuentos-del-jardin-magico-2025.webp",
+          "width": 480,
+          "height": 654
+        },
+        {
+          "mode": "mobile",
+          "slug": "hangar-rojo-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/hangar-rojo-2026.webp",
+          "width": 480,
+          "height": 687
+        },
+        {
+          "mode": "mobile",
+          "slug": "escondida-en-mi-cabeza-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/escondida-en-mi-cabeza-2026.webp",
+          "width": 480,
+          "height": 604
+        },
+        {
+          "mode": "mobile",
+          "slug": "linkin-park-unshatter-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/linkin-park-unshatter-2026.webp",
+          "width": 480,
+          "height": 711
+        },
+        {
+          "mode": "mobile",
+          "slug": "romeo-y-ofelia-2024",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2024/romeo-y-ofelia-2024.webp",
+          "width": 480,
+          "height": 600
+        },
+        {
+          "mode": "mobile",
+          "slug": "islandia-2025",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2025/islandia-2025.webp",
+          "width": 480,
+          "height": 686
+        },
+        {
+          "mode": "mobile",
+          "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2026/puella-magi-madoka-magica-walpurgisnacht-rising-2026.webp",
+          "width": 480,
+          "height": 678
+        },
+        {
+          "mode": "mobile",
+          "slug": "una-quinta-en-portugal-2025",
+          "complete": true,
+          "currentSrc": "http://127.0.0.1:43211/assets/posters/2025/una-quinta-en-portugal-2025.webp",
+          "width": 480,
+          "height": 720
+        }
+      ]
+    }
+  }
+}

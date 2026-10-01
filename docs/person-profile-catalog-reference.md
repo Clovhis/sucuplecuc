@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-09-28. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-01. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4237
+Total de vínculos de películas del catálogo: 4247
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -33,11 +33,11 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Alberto Ajaka | `alberto-ajaka` | /personas/alberto-ajaka/ | Actor | 1 | 5 |
 | Alberto Ammann | `alberto-ammann` | /personas/alberto-ammann/ | Actor | 2 | 6 |
 | Alec Baldwin | `alec-baldwin` | /personas/alec-baldwin/ | Actor | 12 | 3 |
-| Alejandra Flechner | `alejandra-flechner` | /personas/alejandra-flechner/ | Actriz | 2 | 7 |
+| Alejandra Flechner | `alejandra-flechner` | /personas/alejandra-flechner/ | Actriz | 3 | 7 |
 | Alejandro Agresti | `alejandro-agresti` | /personas/alejandro-agresti/ | Director / Guionista | 1 | 5 |
 | Alejandro Doria | `alejandro-doria` | /personas/alejandro-doria/ | Director / Guionista | 1 | 5 |
 | Alejandro Fiore | `alejandro-fiore` | /personas/alejandro-fiore/ | Actor / Productor | 0 | 6 |
-| Alejandro González Iñárritu | `alejandro-gonzalez-inarritu` | /personas/alejandro-gonzalez-inarritu/ | Director / Guionista / Productor | 4 | 7 |
+| Alejandro González Iñárritu | `alejandro-gonzalez-inarritu` | /personas/alejandro-gonzalez-inarritu/ | Director / Guionista / Productor | 5 | 7 |
 | Alejandro Hartmann | `alejandro-hartmann` | /personas/alejandro-hartmann/ | Director / Guionista | 1 | 5 |
 | Alejo Garcia Pintos | `alejo-garcia-pintos` | /personas/alejo-garcia-pintos/ | Actor | 2 | 5 |
 | Alexander Skarsgård | `alexander-skarsgard` | /personas/alexander-skarsgard/ | Actor | 4 | 3 |
@@ -60,13 +60,13 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Angela Lansbury | `angela-lansbury` | /personas/angela-lansbury/ | Actriz | 3 | 6 |
 | Angelina Jolie | `angelina-jolie` | /personas/angelina-jolie/ | Actriz / Directora | 5 | 7 |
 | Anjelica Huston | `anjelica-huston` | /personas/anjelica-huston/ | Actriz | 3 | 4 |
-| Anna Faris | `anna-faris` | /personas/anna-faris/ | Actriz | 3 | 6 |
+| Anna Faris | `anna-faris` | /personas/anna-faris/ | Actriz | 4 | 6 |
 | Anna Kendrick | `anna-kendrick` | /personas/anna-kendrick/ | Actriz | 6 | 6 |
-| Anne Hathaway | `anne-hathaway` | /personas/anne-hathaway/ | Actriz | 15 | 5 |
+| Anne Hathaway | `anne-hathaway` | /personas/anne-hathaway/ | Actriz | 16 | 5 |
 | Annette Bening | `annette-bening` | /personas/annette-bening/ | Actriz | 3 | 7 |
 | Anthony Hopkins | `anthony-hopkins` | /personas/anthony-hopkins/ | Actor | 16 | 3 |
 | Anthony Mackie | `anthony-mackie` | /personas/anthony-mackie/ | Actor | 6 | 6 |
-| Antonella Costa | `antonella-costa` | /personas/antonella-costa/ | Actriz | 1 | 5 |
+| Antonella Costa | `antonella-costa` | /personas/antonella-costa/ | Actriz | 2 | 5 |
 | Antonio Banderas | `antonio-banderas` | /personas/antonio-banderas/ | Actor | 13 | 7 |
 | Antonio Gasalla | `antonio-gasalla` | /personas/antonio-gasalla/ | Actor / Comediante / Guionista | 1 | 5 |
 | Anya Taylor-Joy | `anya-taylor-joy` | /personas/anya-taylor-joy/ | Actriz | 8 | 6 |
@@ -299,7 +299,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Greta Lee | `greta-lee` | /personas/greta-lee/ | Actriz | 4 | 6 |
 | Guillermo del Toro | `guillermo-del-toro` | /personas/guillermo-del-toro/ | Director / Guionista / Productor | 6 | 7 |
 | Guillermo Francella | `guillermo-francella` | /personas/guillermo-francella/ | Actor | 10 | 7 |
-| Guillermo Pfening | `guillermo-pfening` | /personas/guillermo-pfening/ | Actor / Director | 1 | 5 |
+| Guillermo Pfening | `guillermo-pfening` | /personas/guillermo-pfening/ | Actor / Director | 2 | 5 |
 | Gus Van Sant | `gus-van-sant` | /personas/gus-van-sant/ | Director / Guionista / Productor | 6 | 5 |
 | Gustavo Taretto | `gustavo-taretto` | /personas/gustavo-taretto/ | Director / Guionista | 1 | 5 |
 | Guy Pearce | `guy-pearce` | /personas/guy-pearce/ | Actor | 7 | 3 |
@@ -390,7 +390,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | John Cusack | `john-cusack` | /personas/john-cusack/ | Actor | 5 | 3 |
 | John David Washington | `john-david-washington` | /personas/john-david-washington/ | Actor | 3 | 7 |
 | John G. Avildsen | `john-g-avildsen` | /personas/john-g-avildsen/ | Director | 6 | 5 |
-| John Goodman | `john-goodman` | /personas/john-goodman/ | Actor | 13 | 6 |
+| John Goodman | `john-goodman` | /personas/john-goodman/ | Actor | 14 | 6 |
 | John Hurt | `john-hurt` | /personas/john-hurt/ | Actor | 7 | 3 |
 | John Leguizamo | `john-leguizamo` | /personas/john-leguizamo/ | Actor / Comediante / Productor | 13 | 7 |
 | John Lithgow | `john-lithgow` | /personas/john-lithgow/ | Actor / Autor | 3 | 7 |
@@ -462,7 +462,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Leonardo DiCaprio | `leonardo-dicaprio` | /personas/leonardo-dicaprio/ | Actor / Productor | 21 | 5 |
 | Leonardo Sbaraglia | `leonardo-sbaraglia` | /personas/leonardo-sbaraglia/ | Actor | 6 | 6 |
 | Leonor Benedetto | `leonor-benedetto` | /personas/leonor-benedetto/ | Actriz / Directora | 1 | 5 |
-| Leslie Mann | `leslie-mann` | /personas/leslie-mann/ | Actriz | 4 | 5 |
+| Leslie Mann | `leslie-mann` | /personas/leslie-mann/ | Actriz | 5 | 5 |
 | Leticia Brédice | `leticia-bredice` | /personas/leticia-bredice/ | Actriz | 1 | 5 |
 | Liam Neeson | `liam-neeson` | /personas/liam-neeson/ | Actor | 25 | 6 |
 | Linda Hamilton | `linda-hamilton` | /personas/linda-hamilton/ | Actriz | 3 | 6 |
@@ -674,7 +674,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 1 | 7 |
 | Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 15 | 7 |
 | Sandra Bullock | `sandra-bullock` | /personas/sandra-bullock/ | Actriz | 11 | 4 |
-| Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 3 | 7 |
+| Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 4 | 7 |
 | Santiago Mitre | `santiago-mitre` | /personas/santiago-mitre/ | Director | 2 | 7 |
 | Santiago Segura | `santiago-segura` | /personas/santiago-segura/ | Director / Actor / Guionista / Productor | 2 | 7 |
 | Sarah Paulson | `sarah-paulson` | /personas/sarah-paulson/ | Actriz | 4 | 6 |
@@ -724,7 +724,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Timothy Spall | `timothy-spall` | /personas/timothy-spall/ | Actor | 4 | 6 |
 | Tobin Bell | `tobin-bell` | /personas/tobin-bell/ | Actor | 8 | 3 |
 | Tom Berenger | `tom-berenger` | /personas/tom-berenger/ | Actor | 4 | 4 |
-| Tom Cruise | `tom-cruise` | /personas/tom-cruise/ | Actor | 22 | 7 |
+| Tom Cruise | `tom-cruise` | /personas/tom-cruise/ | Actor | 23 | 7 |
 | Tom Hanks | `tom-hanks` | /personas/tom-hanks/ | Actor / Productor | 24 | 6 |
 | Tom Hardy | `tom-hardy` | /personas/tom-hardy/ | Actor | 8 | 7 |
 | Tom Hiddleston | `tom-hiddleston` | /personas/tom-hiddleston/ | Actor | 4 | 7 |

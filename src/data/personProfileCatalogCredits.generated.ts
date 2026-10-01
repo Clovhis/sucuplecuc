@@ -189,6 +189,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "beetlejuice-1988"
   ],
   "alejandra-flechner": [
+    "escondida-en-mi-cabeza-2026",
     "las-corredoras-2024",
     "argentina-1985-2022"
   ],
@@ -200,6 +201,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "alejandro-fiore": [],
   "alejandro-gonzalez-inarritu": [
+    "digger-2026",
     "el-renacido-2015",
     "birdman-or-the-unexpected-virtue-of-ignorance-2014",
     "21-gramos-2003",
@@ -337,6 +339,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-cartero-siempre-llama-dos-veces-1981"
   ],
   "anna-faris": [
+    "relajadas-y-muy-peligrosas-2026",
     "scary-movie-6-2026",
     "lluvia-de-hamburguesas-2-2013",
     "lluvia-de-hamburguesas-2009"
@@ -353,6 +356,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-diablo-viste-a-la-moda-2-2026",
     "el-final-de-la-calle-oak-2026",
     "la-odisea-2026",
+    "verity-la-sombra-de-un-engano-2026",
     "the-idea-of-you-2024",
     "ocean-s-8-las-estafadoras-2018",
     "el-becario-2015",
@@ -398,6 +402,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-otra-cara-de-nelson-2006"
   ],
   "antonella-costa": [
+    "romeo-y-ofelia-2024",
     "garage-olimpo-1999"
   ],
   "antonio-banderas": [
@@ -2062,6 +2067,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "los-extermineitors-1989"
   ],
   "guillermo-pfening": [
+    "romeo-y-ofelia-2024",
     "el-patron-radiografia-de-un-crimen-2014"
   ],
   "gus-van-sant": [
@@ -2830,6 +2836,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "rocky-1976"
   ],
   "john-goodman": [
+    "digger-2026",
     "operacion-monumento-2014",
     "monsters-university-2013",
     "el-vuelo-2012",
@@ -3372,6 +3379,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "un-lugar-en-el-mundo-1992"
   ],
   "leslie-mann": [
+    "relajadas-y-muy-peligrosas-2026",
     "17-otra-vez-2009",
     "funny-people-2009",
     "i-love-you-phillip-morris-2009",
@@ -4940,6 +4948,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-demoledor-1993"
   ],
   "sandra-huller": [
+    "digger-2026",
     "project-hail-mary-2026",
     "anatomia-de-una-caida-2023",
     "the-zone-of-interest-2023"
@@ -5349,6 +5358,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "los-perros-de-la-guerra-1980"
   ],
   "tom-cruise": [
+    "digger-2026",
     "mission-impossible-the-final-reckoning-2025",
     "mission-impossible-dead-reckoning-part-one-2023",
     "top-gun-maverick-2022",
