@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-09-30T10:44:49.092Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-01T11:11:03.478Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -72,7 +72,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Clayface",
 		"releaseDate": "2026-10-22",
 		"videoUrl": "https://www.youtube.com/watch?v=KCR-rz0YfD4",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/1A7s8zG4PF6YoJrncrTO6N4r0Sx.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10474-clayface/"
 	},
 	{
