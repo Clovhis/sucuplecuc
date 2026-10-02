@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { chooseCopyStyle, movieHashtags, nextDueAt, renderPostText, selectMovie, weightedXLength } from './publish-buffer-x.mjs';
+import { chooseCopyStyle, movieHashtags, nextDueAt, postKind, renderPostText, selectMovie, weightedXLength } from './publish-buffer-x.mjs';
 
 const movie = { slug: 'akira-1988', title: 'Akira', year: 1988, category: 'Ciencia ficción', releaseDate: '2026-09-05', releasePlatform: 'Netflix', poster: 'assets/posters/1988/akira-1988.webp', cinepostaScore: 8, review: 'Akira arranca con una pandilla de adolescentes en un Neo-Tokio explosivo y usa la transformación de Tetsuo para hablar de poder, violencia y una ciudad que no termina de curarse. Katsuhiro Otomo dirige con una energía desatada.' };
 const text = renderPostText(movie);
@@ -44,6 +44,40 @@ assert.ok(weightedXLength(compactText) <= 250, 'los títulos largos deben conser
 assert.match(compactText, /Adolescencia, sexo y muerte/u);
 assert.match(compactText, /Akira arranca con una pandilla/u);
 
+const recommendationLanguage = /¿Qué mirar|Si buscás|¿Con ganas|Una para agendar|Para una noche|Si te pinta|Plan de peli|Para sumar a la lista|Para quienes vienen buscando|Anotá esta|¿La recomendamos\?/u;
+for (let score = 1; score <= 10; score += 1) {
+	assert.equal(postKind({ ...movie, cinepostaScore: score }), score >= 6 ? 'recommendation' : 'negative-review');
+	for (let opening = 0; opening < 12; opening += 1) {
+		for (let verdict = 0; verdict < 8; verdict += 1) {
+			const variant = renderPostText({ ...movie, cinepostaScore: score }, { opening, availability: opening % 4, editorial: opening % 10, verdict, link: verdict });
+			assert.ok(variant.includes(`${score} - ${scoreLabels[score - 1]}`));
+			assert.ok(weightedXLength(variant) <= 250);
+			if (score < 6) {
+				assert.doesNotMatch(variant, recommendationLanguage);
+				assert.match(variant.split('\n\n')[0], score === 5 ? /mediocre/u : score <= 3 ? /malísima/u : /mala/u);
+			}
+		}
+	}
+}
+for (const invalidScore of [undefined, null, '6', 0, 11, 5.5, NaN]) {
+	assert.throws(() => postKind({ ...movie, cinepostaScore: invalidScore }), /score válido/u);
+	assert.throws(() => renderPostText({ ...movie, cinepostaScore: invalidScore }), /veredicto/u);
+}
+for (const score of [3, 4, 5]) {
+	const negativeCompact = renderPostText({ ...longTitleMovie, cinepostaScore: score }, { opening: 10, availability: 3, editorial: 9, verdict: 4, link: 7 });
+	assert.ok(weightedXLength(negativeCompact) <= 250);
+	assert.doesNotMatch(negativeCompact, recommendationLanguage);
+	assert.match(negativeCompact.split('\n\n')[0], score === 5 ? /mediocre/u : score === 3 ? /malísima/u : /mala/u);
+	assert.match(negativeCompact, /No la recomendamos/u);
+}
+
+// Keep the reported regression stable if the live catalog changes its score.
+const bajoTusPies = { ...movie, slug: 'bajo-tus-pies-2025', title: 'Bajo tus pies', year: 2025, category: 'Terror', releasePlatform: 'Cine', cinepostaScore: 4, review: 'Cristian Bernard usa el edificio como una presión que se filtra en la vida cotidiana de Isabel y sus hijos.' };
+const correctedPost = renderPostText(bajoTusPies, { opening: 8, availability: 3, editorial: 1, verdict: 5, link: 4 });
+assert.match(correctedPost.split('\n\n')[0], /Bajo tus pies.*mala/u);
+assert.doesNotMatch(correctedPost, recommendationLanguage);
+assert.match(correctedPost, /4 - Mala/u);
+
 const historyWithRecentStyles = { version: 1, posts: styles.slice(0, 3).map((copyStyle, index) => ({ slug: `anterior-${index}`, copyStyle })) };
 const freshStyle = chooseCopyStyle(movie, historyWithRecentStyles);
 for (const previous of historyWithRecentStyles.posts) {
@@ -54,6 +88,18 @@ for (const previous of historyWithRecentStyles.posts) {
 
 const selection = selectMovie([{ movie, posterUrl: 'https://www.cineposta.com.ar/assets/posters/1988/akira-1988.webp' }, { movie: { ...movie, slug: 'paprika-2006', title: 'Paprika' }, posterUrl: 'https://www.cineposta.com.ar/assets/posters/2006/paprika-2006.webp' }], { version: 1, posts: [{ slug: 'akira-1988' }] });
 assert.equal(selection.movie.slug, 'paprika-2006');
+const candidate = (slug, cinepostaScore, releaseDate) => ({ movie: { ...movie, slug, cinepostaScore, releaseDate }, posterUrl: 'https://www.cineposta.com.ar/poster.webp' });
+const bad = candidate('bad', 4, '2026-10-01');
+const mediocre = candidate('mediocre', 5, '2026-09-30');
+const good = candidate('good', 6, '2026-09-01');
+const excellent = candidate('excellent', 9, '2026-08-01');
+const emptyHistory = { version: 1, posts: [] };
+assert.equal(selectMovie([bad, mediocre, excellent, good], emptyHistory).movie.slug, 'good', 'un 6 debe tener prioridad sobre un 4 o 5 más reciente');
+assert.equal(selectMovie([bad, mediocre, excellent, good], { posts: [{ slug: 'good' }] }).movie.slug, 'excellent', 'el historial se aplica antes de buscar recomendaciones');
+assert.equal(selectMovie([bad, mediocre, good], emptyHistory, new Set(['good'])).movie.slug, 'bad', 'el fallback negativo respeta las exclusiones de Buffer');
+assert.equal(selectMovie([bad, mediocre], { posts: [{ slug: 'bad' }] }).movie.slug, 'mediocre', 'un 5 sólo se usa como crítica cuando no quedan recomendaciones');
+assert.throws(() => selectMovie([candidate('unrated', undefined, '2026-10-02')], emptyHistory), /No quedan películas elegibles/u);
+assert.throws(() => selectMovie([good], emptyHistory, new Set(['good'])), /No quedan películas elegibles/u);
 assert.equal(nextDueAt(new Date('2026-09-06T21:30:00.000Z')), '2026-09-06T22:00:00.000Z');
 assert.equal(nextDueAt(new Date('2026-09-06T22:00:00.000Z')), '2026-09-07T22:00:00.000Z');
 console.log('Buffer X publisher tests passed.');

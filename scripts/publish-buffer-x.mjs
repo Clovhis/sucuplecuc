@@ -13,6 +13,7 @@ const MAX_X_WEIGHTED_LENGTH = 250;
 const URL_WEIGHT = 23;
 const RECENT_PREMIERE_DAYS = 90;
 const COPY_VARIANT_HISTORY_SIZE = 3;
+const MIN_RECOMMENDATION_SCORE = 6;
 const MAX_TYPE_HASHTAGS = 2;
 
 // Keep these short, searchable and unaccented: the catalog contains legacy
@@ -91,6 +92,22 @@ const OPENING_TEMPLATES = [
 	({ title, availability }) => `Anotá esta: ${title} ${availability}.`,
 ];
 
+// Low scores are criticism, even when the review excerpt describes the premise.
+const NEGATIVE_OPENING_TEMPLATES = [
+	({ title, availability, assessment }) => `${title}: ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `La posta sobre ${title}: ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `No la recomendamos: ${title} es ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `${title} ${availability}, pero es ${assessment}.`,
+	({ title, availability, assessment }) => `Nuestro balance de ${title}: ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `Atenti: ${title} es ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `¿Vale la pena ${title}? Es ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `Hoy, una crítica: ${title} es ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `${title} es ${assessment}, aunque ${availability}.`,
+	({ title, availability, assessment }) => `Esta no: ${title} es ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `Una decepción: ${title} es ${assessment}. ${availability}.`,
+	({ title, availability, assessment }) => `Para nosotros, ${title} es ${assessment}. ${availability}.`,
+];
+
 const EDITORIAL_INTROS = [
 	'',
 	'La posta: ',
@@ -149,8 +166,17 @@ function requiredString(value, field, movie) {
 const CINEPOSTA_SCORE_LABELS = ['Basura total', 'Pésima', 'Muy mala', 'Mala', 'Regular', 'Buena', 'Muy buena', 'Excelente', 'Obra maestra', 'Absolute Cinema'];
 
 function verdictLabel(movie) {
-	const score = Number(movie.cinepostaScore);
+	const score = movie.cinepostaScore;
 	return Number.isInteger(score) && score >= 1 && score <= 10 ? `${score} - ${CINEPOSTA_SCORE_LABELS[score - 1]}` : '';
+}
+
+export function postKind(movie) {
+	if (!verdictLabel(movie)) throw new Error(`La película ${movie?.slug ?? '(sin slug)'} no tiene un score válido.`);
+	return movie.cinepostaScore >= MIN_RECOMMENDATION_SCORE ? 'recommendation' : 'negative-review';
+}
+
+function negativeAssessment(movie) {
+	return movie.cinepostaScore === 5 ? 'mediocre' : movie.cinepostaScore <= 3 ? 'malísima' : 'mala';
 }
 
 function moviePlatforms(movie) {
@@ -239,19 +265,21 @@ export function renderPostText(movie, copyStyle = defaultCopyStyle(movie)) {
 	const review = requiredString(movie.review, 'reseña', movie);
 	if (!Number.isInteger(movie.year)) throw new Error(`La película ${movie.slug} no tiene un año válido.`);
 	const label = requiredString(verdictLabel(movie), 'veredicto', movie);
+	const negativeReview = postKind(movie) === 'negative-review';
 	const url = movieUrl(requiredString(movie.slug, 'slug', movie));
 	const category = typeof movie.category === 'string' && movie.category.trim() ? movie.category.trim().toLocaleLowerCase('es-AR') : 'buen cine';
 	const style = isCopyStyle(copyStyle) ? copyStyle : defaultCopyStyle(movie);
 	const availability = pickVariant(availabilityLabels(movie), style.availability);
-	let opening = pickVariant(OPENING_TEMPLATES, style.opening)({ title: `${title} (${movie.year})`, genre: category, availability });
+	let opening = pickVariant(negativeReview ? NEGATIVE_OPENING_TEMPLATES : OPENING_TEMPLATES, style.opening)({ title: `${title} (${movie.year})`, genre: category, availability, assessment: negativeAssessment(movie) });
 	let editorialIntro = pickVariant(EDITORIAL_INTROS, style.editorial);
 	const hashtags = movieHashtags(movie).join(' ');
-	const suffix = `\n\n${pickVariant(VERDICT_TEMPLATES, style.verdict)(label)}\n${pickVariant(LINK_TEMPLATES, style.link)(url)}\n${hashtags}`;
+	const verdict = negativeReview && pickVariant(VERDICT_TEMPLATES, style.verdict) === VERDICT_TEMPLATES[4] ? `No la recomendamos: ${label}.` : pickVariant(VERDICT_TEMPLATES, style.verdict)(label);
+	const suffix = `\n\n${verdict}\n${pickVariant(LINK_TEMPLATES, style.link)(url)}\n${hashtags}`;
 	let excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(`${opening}\n\n${editorialIntro}`) - weightedXLength(suffix);
 	// Some real release titles are very long. Keep their post readable instead of
 	// failing the whole daily run because a decorative template consumed the excerpt.
 	if (excerptBudget < 24) {
-		opening = `${title} ${availability}.`;
+		opening = negativeReview ? `${title}: ${negativeAssessment(movie)}. ${availability}.` : `${title} ${availability}.`;
 		editorialIntro = '';
 		excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(`${opening}\n\n`) - weightedXLength(suffix);
 	}
@@ -312,9 +340,11 @@ async function eligibleMovies(movies, today) {
 
 export function selectMovie(eligible, history, externallyUsedSlugs = new Set()) {
 	const usedSlugs = new Set([...history.posts.map(({ slug }) => slug), ...externallyUsedSlugs]);
-	const candidates = eligible.filter(({ movie }) => !usedSlugs.has(movie.slug));
+	const candidates = eligible.filter(({ movie }) => verdictLabel(movie) && !usedSlugs.has(movie.slug));
 	if (candidates.length === 0) throw new Error('No quedan películas elegibles sin publicar en Buffer. Revisá el historial antes de habilitar un nuevo ciclo.');
-	return candidates.sort((left, right) => right.movie.releaseDate.localeCompare(left.movie.releaseDate) || hash(left.movie.slug) - hash(right.movie.slug) || left.movie.slug.localeCompare(right.movie.slug))[0];
+	const recommendations = candidates.filter(({ movie }) => postKind(movie) === 'recommendation');
+	const pool = recommendations.length > 0 ? recommendations : candidates;
+	return pool.sort((left, right) => right.movie.releaseDate.localeCompare(left.movie.releaseDate) || hash(left.movie.slug) - hash(right.movie.slug) || left.movie.slug.localeCompare(right.movie.slug))[0];
 }
 
 async function bufferRequest(apiKey, query, variables = {}) {

@@ -4,6 +4,14 @@ El workflow `.github/workflows/publish-buffer-x.yml` toma únicamente estrenos r
 
 El script no modifica contenido editorial. Su historial operativo está en `.github/cineposta-buffer-x-history.json`; una película queda excluida apenas se programa. Antes de crear una publicación, también revisa los últimos 100 posteos de Buffer, reconoce los enlaces de Cine Posta y confirma que la franja de las 19:00 ART esté libre. Así un reintento no duplica el post ni crea un segundo post del día aunque falle el commit del historial.
 
+## Recomendaciones y críticas negativas
+
+La selección prioriza películas con `cinepostaScore` de **6 a 10** entre los estrenos elegibles que todavía no se publicaron. Dentro de ese grupo mantiene el orden por fecha de estreno. Un estreno de 1 a 5 nunca desplaza a una recomendación disponible, aunque sea más reciente.
+
+Sólo si no quedan películas elegibles sin publicar con 6 o más, usa una de 1 a 5 como **crítica negativa**. El arranque dice explícitamente «mediocre» para un 5, «mala» para un 4 y «malísima» para un 1 a 3. Esas publicaciones no usan invitaciones como «¿Qué mirar?», «Plan de peli» o «Anotá esta»; el formato abreviado para títulos largos conserva la crítica. Siempre mantiene el score y su nombre canónico, por ejemplo `5 - Regular`, sin inventar una valoración nueva. Las películas sin score entero de 1 a 10 quedan excluidas.
+
+El historial y las exclusiones de Buffer se aplican antes de decidir si hay recomendaciones disponibles. El cambio del generador se aplica a futuros posteos; los que ya están programados conservan su texto.
+
 ## Vista previa local
 
 ```bash
