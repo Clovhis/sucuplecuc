@@ -15,21 +15,20 @@ test('Otras plataformas se apila y no invade las etiquetas de la tarjeta', async
 
 	const cardLayout = await badge.evaluate((element) => {
 		const card = element.closest('[data-movie-card]');
-		const category = card?.querySelector('.movie-card__cta');
+		const category = card?.querySelector('.movie-card__genres');
 		const badgeRect = element.getBoundingClientRect();
 		const categoryRect = category?.getBoundingClientRect();
 
 		return {
 			badgeWidth: badgeRect.width,
-			categoryRight: categoryRect?.right ?? 0,
-			badgeLeft: badgeRect.left,
+			overlapsGenres: Boolean(categoryRect && categoryRect.right > badgeRect.left && categoryRect.left < badgeRect.right && categoryRect.bottom > badgeRect.top && categoryRect.top < badgeRect.bottom),
 			cardScrollWidth: card?.scrollWidth ?? 0,
 			cardClientWidth: card?.clientWidth ?? 0,
 		};
 	});
 
 	expect(cardLayout.badgeWidth).toBeLessThanOrEqual(84);
-	expect(cardLayout.categoryRight).toBeLessThanOrEqual(cardLayout.badgeLeft + 1);
+	expect(cardLayout.overlapsGenres).toBeFalsy();
 	expect(cardLayout.cardScrollWidth).toBeLessThanOrEqual(cardLayout.cardClientWidth + 1);
 });
 

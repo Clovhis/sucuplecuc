@@ -293,6 +293,98 @@ test.describe('home catalog filters', () => {
     );
   });
 
+  test('Musical filters narrative musicals and preserves combined URL state', async ({ page }) => {
+    await gotoHome(page);
+    const expectedMusicals = await page.evaluate(() => {
+      const cards = [
+        ...document.querySelectorAll<HTMLElement>('[data-movie-search-grid] [data-movie-card]'),
+        ...Array.from(document.querySelectorAll<HTMLTemplateElement>('[data-movie-card-template]')).flatMap((template) =>
+          Array.from(template.content.querySelectorAll<HTMLElement>('[data-movie-card]')),
+        ),
+      ];
+      return cards.filter((card) => card.dataset.movieGenres?.split(',').includes('musical')).map((card) => card.dataset.movieTitle ?? '').sort();
+    });
+    expect(expectedMusicals.length).toBeGreaterThan(80);
+    const musical = page.getByRole('button', { name: 'Musical', exact: true });
+    await expect(musical).toHaveAttribute('data-home-genre-kind', 'genre');
+    await musical.focus();
+    await page.keyboard.press('Enter');
+    await expect(musical).toHaveAttribute('aria-pressed', 'true');
+    expect(new URL(page.url()).searchParams.get('genero')).toBe('musical');
+    await expect.poll(() => visibleMovieTitles(page)).not.toEqual([]);
+    await expect.poll(async () => (await visibleMovieTitles(page)).sort()).toEqual(expectedMusicals);
+    for (const title of ['Chicago', 'La La Land', 'Encanto']) {
+      await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"]`)).toBeVisible();
+      await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"]`)).toHaveAttribute('data-movie-meta', /Musical/);
+      await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"] .movie-card__cta`).filter({ hasText: /^Musical$/ })).toBeVisible();
+    }
+    for (const title of ['Whiplash: Música y obsesión', 'Casi famosos', 'Back to Black', 'Stop Making Sense']) {
+      await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"]`)).toBeHidden();
+    }
+    const genres = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) =>
+      cards.map((card) => card.getAttribute('data-movie-genres')?.split(',') ?? []),
+    );
+    expect(genres.every((values) => values.includes('musical'))).toBeTruthy();
+    const musicalCount = genres.length;
+    await expect(page.locator('[data-movie-search-summary]').first()).toContainText('género Musical');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
+
+    await page.getByRole('button', { name: 'Drama', exact: true }).click();
+    expect(new URL(page.url()).searchParams.get('genero')?.split(',')).toEqual(['musical', 'drama']);
+    await expect.poll(async () => (await visibleMovieTitles(page)).length).toBeGreaterThan(musicalCount);
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await dismissDonationPrompt(page);
+    await openAdvancedFilters(page);
+    await expect(musical).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: 'Drama', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await page.locator('[data-home-advanced-filters] summary').click();
+    await page.getByRole('button', { name: 'Quitar Género: Musical', exact: true }).click();
+    expect(new URL(page.url()).searchParams.get('genero')).toBe('drama');
+    await openAdvancedFilters(page);
+    await expect(musical).toHaveAttribute('aria-pressed', 'false');
+    await page.goto('/peliculas/chicago-2002/', { waitUntil: 'domcontentloaded' });
+    await dismissDonationPrompt(page);
+    await expect(page.locator('.movie-detail__taxonomy-item').filter({ has: page.locator('dt', { hasText: /^Géneros$/ }) }).first()).toContainText('Comedia · Musical');
+  });
+
+  test('Musical genre badges stay readable and aligned across card widths', async ({ page }, testInfo) => {
+    for (const width of testInfo.project.name.startsWith('mobile-') ? [320, 390, 430] : [768, 1024, 1280]) {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto('/?genero=musical', { waitUntil: 'domcontentloaded' });
+      await dismissDonationPrompt(page);
+      await expect(page.locator('[data-movie-search-grid] [data-movie-card][data-movie-title="Chicago"]')).toBeVisible();
+      const layout = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) => {
+        const failures: string[] = [];
+        for (const card of cards) {
+          const title = card.getAttribute('data-movie-title') ?? '';
+          const group = card.querySelector<HTMLElement>('.movie-card__genres');
+          const labels = Array.from(group?.querySelectorAll<HTMLElement>('.movie-card__cta') ?? []);
+          const groupRect = group?.getBoundingClientRect();
+          const platformRect = card.querySelector('.movie-card__platform-mark')?.getBoundingClientRect();
+          const bodyRect = card.querySelector('.movie-card__body')?.getBoundingClientRect();
+          if (labels.filter((label) => label.textContent?.trim() === 'Musical').length !== 1) failures.push(`${title}: Musical label`);
+          if (groupRect && platformRect && groupRect.bottom > platformRect.top + 1) failures.push(`${title}: platform overlap`);
+          for (const label of labels) {
+            const rect = label.getBoundingClientRect();
+            const style = getComputedStyle(label);
+            const singleLineHeight = parseFloat(style.lineHeight) + parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + 2;
+            if (rect.height > singleLineHeight + 1 || label.scrollWidth > label.clientWidth + 1) failures.push(`${title}: wrapped or clipped label`);
+            if (bodyRect && (rect.left < bodyRect.left || rect.right > bodyRect.right)) failures.push(`${title}: outside card`);
+          }
+          if (labels.length === 2) {
+            const first = labels[0].getBoundingClientRect();
+            const second = labels[1].getBoundingClientRect();
+            if (Math.abs(first.left - second.left) > 1 || Math.abs(second.top - first.bottom - 4) > 1 || Math.abs(first.height - second.height) > 1) failures.push(`${title}: inconsistent stack`);
+          }
+        }
+        return { count: cards.length, failures, fits: document.documentElement.scrollWidth <= window.innerWidth };
+      });
+      expect(layout.count).toBeGreaterThan(80);
+      expect(layout.failures, `Genre badges at ${width}px`).toEqual([]);
+      expect(layout.fits).toBeTruthy();
+    }
+  });
+
   test('war editorial filter returns only movies tagged as war', async ({ page }) => {
     await gotoHome(page);
 
@@ -545,14 +637,15 @@ test.describe('home catalog filters', () => {
         title: card.getAttribute('data-movie-title') ?? '',
         primaryGenre: card.getAttribute('data-movie-primary-genre') ?? '',
         platforms: card.getAttribute('data-movie-platforms')?.split(',').filter(Boolean) ?? [],
-        displayedCategory: card.querySelector('.movie-card__cta')?.textContent?.trim() ?? '',
+        displayedCategory: Array.from(card.querySelectorAll('.movie-card__cta')).map((label) => label.textContent?.trim() ?? '').join(' · '),
+        genres: card.getAttribute('data-movie-genres')?.split(',').filter(Boolean) ?? [],
       })),
     );
 
     expect(cards.length).toBeGreaterThan(0);
     expect(cards.every((card) => card.primaryGenre === 'drama')).toBeTruthy();
     expect(cards.every((card) => card.platforms.includes('apple tv'))).toBeTruthy();
-    expect(cards.every((card) => card.displayedCategory.toLocaleLowerCase() === 'drama')).toBeTruthy();
+    expect(cards.every((card) => card.displayedCategory.toLocaleLowerCase() === (card.genres.includes('musical') ? 'drama · musical' : 'drama'))).toBeTruthy();
   });
 
   test('multiple values stay OR within a facet and AND across facets', async ({ page }) => {

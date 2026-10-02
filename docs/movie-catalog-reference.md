@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-01. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-02. Fuente: src/data/movies/*.json
 
 Total de peliculas: 2241
 
@@ -19,7 +19,7 @@ Total de peliculas: 2241
 | 2026 | Amos del Universo | amos-del-universo-2026 | Accion | Prime Video | +13 |
 | 2026 | Animales | animales-2026 | Drama | Disney Plus | +16 |
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
-| 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Musical | Otras plataformas | ATP |
+| 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Documental | Otras plataformas | ATP |
 | 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus | ATP |
 | 2026 | Baby Do Die Do | baby-do-die-do-2026 | Accion | Netflix | +16 |
 | 2026 | Backrooms | backrooms-2026 | Terror | Otras plataformas | +13 |
@@ -110,7 +110,7 @@ Total de peliculas: 2241
 | 2026 | Jack Ryan de Tom Clancy: Guerra Encubierta | jack-ryan-de-tom-clancy-guerra-encubierta-2026 | Accion | Apple TV + Prime Video | +16 |
 | 2026 | Jackass: La última y nos vamos | jackass-la-ultima-y-nos-vamos-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Jugada Maestra | jugada-maestra-2026 | Thriller | Otras plataformas | +16 |
-| 2026 | KATSEYE: Wild Hearts | katseye-wild-hearts-2026 | Musical | Otras plataformas | ATP |
+| 2026 | KATSEYE: Wild Hearts | katseye-wild-hearts-2026 | Documental | Otras plataformas | ATP |
 | 2026 | La ambición de los Savage | la-ambicion-de-los-savage-2026 | Comedia | Apple TV | +16 |
 | 2026 | La apuesta más alta | la-apuesta-mas-alta-2026 | Thriller | Paramount Plus | +17 |
 | 2026 | La asistente de la morgue | la-asistente-de-la-morgue-2026 | Terror | Otras plataformas | +17 |

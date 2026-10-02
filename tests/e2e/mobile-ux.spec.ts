@@ -37,7 +37,7 @@ test('mobile home keeps touch targets and content within the viewport', async ({
 
     const cardCollisions = [...document.querySelectorAll<HTMLElement>('.movie-card')]
       .map((card) => {
-        const category = card.querySelector<HTMLElement>('.movie-card__cta')?.getBoundingClientRect();
+        const category = card.querySelector<HTMLElement>('.movie-card__genres')?.getBoundingClientRect();
         const platform = card.querySelector<HTMLElement>('.movie-card__platform-mark')?.getBoundingClientRect();
         if (!category || !platform) return false;
         return category.right > platform.left && category.left < platform.right && category.bottom > platform.top && category.top < platform.bottom;

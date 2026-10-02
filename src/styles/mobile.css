@@ -1109,8 +1109,7 @@
 		overflow-wrap: normal;
 	}
 
-	/* Keep the category pill in its grid track so long labels never enter the
-	 * platform tile's column. */
+	/* Genres use their own row; the platform tile shares the year/rating rows. */
 	.movie-card__footer {
 		grid-template-columns: minmax(0, 1fr) minmax(4.5rem, 5.25rem);
 		grid-template-rows: auto auto auto;
@@ -1132,8 +1131,7 @@
 	}
 
 	.movie-card__platform-mark {
-		grid-column: 2;
-		grid-row: 1 / span 3;
+		grid-area: platform;
 		inline-size: min(100%, 5.25rem);
 		width: min(100%, 5.25rem);
 		min-width: 0;

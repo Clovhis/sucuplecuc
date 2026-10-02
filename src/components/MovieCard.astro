@@ -10,7 +10,7 @@ import {
 	getMoviePlatforms,
 	getMovieSortTimestamp,
 	getPrimaryGenreId,
-	getPrimaryGenreLabel,
+	getMovieGenreLabels,
 	getPosterUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
@@ -48,7 +48,9 @@ const showCultMovieSticker = isCultMovie(movie);
 const cultMovieStickerUrl = getCultMovieStickerUrl();
 const movieReleaseTimestamp = getMovieSortTimestamp(movie);
 const isRecentMoviePremiere = isRecentPremiere(movie);
-const quickMeta = [String(movie.year), getPrimaryGenreLabel(movie), getMoviePlatformLabel(movie)]
+const genreLabels = getMovieGenreLabels(movie);
+const cardGenreLabels = genreLabels.includes('Musical') ? genreLabels : [movie.category];
+const quickMeta = [String(movie.year), ...genreLabels, getMoviePlatformLabel(movie)]
 	.filter(Boolean)
 	.join(' · ');
 const searchableText = [
@@ -140,7 +142,9 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 				<div class="movie-card__meta">
 					<p class="movie-card__year">{movie.year}</p>
 				</div>
-				<p class="movie-card__cta">{movie.category}</p>
+				<div class:list={['movie-card__genres', { 'movie-card__genres--multiple': cardGenreLabels.length > 1 }]} aria-label="Géneros">
+					{cardGenreLabels.map((label) => <p class="movie-card__cta">{label}</p>)}
+				</div>
 				<p class="movie-card__audience-rating">{movie.audienceRating}</p>
 				<PlatformBadgeGroup platforms={moviePlatforms} mode="tile" className="movie-card__platform-mark" />
 			</div>

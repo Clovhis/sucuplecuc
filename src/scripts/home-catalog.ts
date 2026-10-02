@@ -1149,7 +1149,10 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				continue;
 			}
 
-			const genreMatch = activeGenres.length === 0 || activeGenres.includes(entry.primaryGenre);
+			// Musical also applies to films in other primary lanes, such as animation or comedy.
+			const genreMatch = activeGenres.length === 0 || activeGenres.some((genre) =>
+				genre === 'musical' ? entry.genres.has(genre) : entry.primaryGenre === genre,
+			);
 			const editorialFilterMatch = matchesAnyFilterValue(activeEditorialFilters, entry.genres);
 			const subgenreMatch = matchesAnyFilterValue(activeSubgenres, entry.subgenres);
 			const platformMatch = matchesAnyFilterValue(activePlatforms, entry.platforms);

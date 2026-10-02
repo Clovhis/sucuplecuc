@@ -30,6 +30,7 @@ export type RecommendationGenreId =
 	| 'animacion'
 	| 'anime'
 	| 'romance'
+	| 'musical'
 	| 'crimen'
 	| 'aventura'
 	| 'oscar-mejor-pelicula'
@@ -136,6 +137,7 @@ export const RECOMMENDATION_GENRE_OPTIONS: RecommendationGenreOption[] = [
 	{ id: 'animacion', label: 'Animación' },
 	{ id: 'anime', label: 'Anime' },
 	{ id: 'romance', label: 'Romance' },
+	{ id: 'musical', label: 'Musical' },
 	{ id: 'crimen', label: 'Crimen' },
 	{ id: 'aventura', label: 'Aventura' },
 	{
@@ -268,6 +270,7 @@ const GENERIC_SUBGENRE_TOKENS = new Set([
 	'horror',
 	'romance',
 	'romantica',
+	'musical',
 	'sci fi',
 	'sci-fi',
 	'scifi',
@@ -1198,6 +1201,9 @@ function mapGenreToken(token: string, target: Set<RecommendationGenreId>): void 
 	if (normalized.includes('animacion') || normalized.includes('animation')) {
 		target.add('animacion');
 	}
+	if (normalized === 'musical') {
+		target.add('musical');
+	}
 	if (
 		normalized.includes('romance') ||
 		normalized.includes('romantica') ||
@@ -1618,6 +1624,15 @@ export function getPrimaryGenreId(
 	}
 
 	return RECOMMENDATION_GENRE_OPTIONS.find((option) => categoryGenreSet.has(option.id))?.id ?? null;
+}
+
+export function getMovieGenreLabels(
+	movie: Pick<Movie, 'slug' | 'title' | 'originalTitle' | 'category' | 'genres' | 'subgenres' | 'country' | 'isArgentinian' | 'awards'>,
+): string[] {
+	const primaryLabel = getPrimaryGenreLabel(movie);
+	return getCatalogFilterGenres(movie).includes('musical') && primaryLabel !== 'Musical'
+		? [primaryLabel, 'Musical']
+		: [primaryLabel];
 }
 
 export function getPrimaryGenreLabel(

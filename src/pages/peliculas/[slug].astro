@@ -11,7 +11,7 @@ import {
 	getMoviePlatforms,
 	getMovieSubgenres,
 	getPosterUrl,
-	getPrimaryGenreLabel,
+	getMovieGenreLabels,
 	getYoutubeThumbnailUrl,
 	getVerdictBadgeClass,
 	getVerdictLabel,
@@ -79,7 +79,7 @@ const tenSecondTake = getMovieTenSecondTake(movie);
 const peopleGroups = getMoviePeopleGroups(movie);
 const moviePlatforms = getMoviePlatforms(movie);
 const moviePlatformLabel = getMoviePlatformLabel(movie);
-const primaryGenreLabel = getPrimaryGenreLabel(movie);
+const movieGenreLabels = getMovieGenreLabels(movie);
 const movieCountries = getMovieCountries(movie.country);
 const movieSubgenres = getMovieSubgenres(movie);
 const sangrometroScore = getSangrometroScore(movie);
@@ -595,8 +595,8 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						</section>
 						<dl class="movie-detail__taxonomy" aria-label="Género y subgéneros">
 							<div class="movie-detail__taxonomy-item">
-								<dt>Género</dt>
-								<dd>{primaryGenreLabel}</dd>
+								<dt>{movieGenreLabels.length > 1 ? 'Géneros' : 'Género'}</dt>
+								<dd>{movieGenreLabels.join(' · ')}</dd>
 							</div>
 							{
 								movieSubgenres.length > 0 && (
@@ -899,8 +899,8 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								<dd>{movie.originalTitle}</dd>
 							</div>
 							<div class="movie-detail__credit-item">
-								<dt>Género</dt>
-								<dd>{primaryGenreLabel}</dd>
+								<dt>{movieGenreLabels.length > 1 ? 'Géneros' : 'Género'}</dt>
+								<dd>{movieGenreLabels.join(' · ')}</dd>
 							</div>
 							<div class="movie-detail__credit-item movie-detail__credit-item--nationality">
 								<dt>Países productores</dt>

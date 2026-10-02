@@ -62,6 +62,7 @@ const GENERIC_SUBGENRE_TOKENS = new Set([
 	'fantasy',
 	'horror',
 	'romance',
+	'musical',
 	'romantica',
 	'sci fi',
 	'sci-fi',
@@ -690,6 +691,21 @@ function validateMeterEligibility(movie, candidatePath, findings) {
 	}
 }
 
+function validateMusicalFilterTaxonomy(movie, candidatePath, findings) {
+	const genres = cleanTaxonomyList(movie.genres);
+	for (const value of genres.filter((value) => normalizeText(value) === 'musical')) {
+		if (value !== 'Musical') {
+			addFinding(findings, 'error', 'non-canonical-musical-filter-tag', candidatePath, 'Use the exact "Musical" label in genres.');
+		}
+	}
+	if (cleanTaxonomyList(movie.subgenres).some((value) => normalizeText(value) === 'musical')) {
+		addFinding(findings, 'error', 'musical-filter-tag-in-subgenres', candidatePath, '"Musical" belongs in genres, not subgenres.');
+	}
+	if (normalizeText(movie.category || '') === 'musical' && !genres.includes('Musical')) {
+		addFinding(findings, 'error', 'missing-musical-filter-tag', candidatePath, 'A primary Musical category also requires the canonical "Musical" tag in genres.');
+	}
+}
+
 function validateWarFilterTaxonomy(movie, candidatePath, findings) {
 	const genres = cleanTaxonomyList(movie.genres);
 	const subgenres = cleanTaxonomyList(movie.subgenres);
@@ -1092,6 +1108,7 @@ function validateMovieShape(movie, candidatePath, catalogText, findings, knownMo
 	}
 
 	validateSubgenres(movie, candidatePath, findings);
+	validateMusicalFilterTaxonomy(movie, candidatePath, findings);
 	validateWarFilterTaxonomy(movie, candidatePath, findings);
 	validateShareFields(movie, candidatePath, findings);
 	validateMeterEligibility(movie, candidatePath, findings);
