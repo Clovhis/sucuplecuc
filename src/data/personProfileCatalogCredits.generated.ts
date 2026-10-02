@@ -2408,6 +2408,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "cielo-de-octubre-1999"
   ],
   "james-cameron": [
+    "disney-creadores-de-mundos-2026",
     "avatar-fuego-y-cenizas-2025",
     "avatar-the-way-of-water-2022",
     "avatar-2009",

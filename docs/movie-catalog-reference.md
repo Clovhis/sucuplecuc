@@ -2,10 +2,11 @@
 
 Generado automaticamente el 2026-10-02. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2241
+Total de peliculas: 2253
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
+| 2026 | ¡Ay, mi perro! | ay-mi-perro-2026 | Drama | Netflix | +13 |
 | 2026 | ¡Llama a mi agente!: La película | llama-a-mi-agente-la-pelicula-2026 | Comedia | Netflix | +13 |
 | 2026 | ¿Por qué me casé, entonces? | por-que-me-case-entonces-2026 | Comedia | Netflix | +16 |
 | 2026 | 23 000 vidas | 23-000-vidas-2026 | Drama | Netflix | +16 |
@@ -31,6 +32,7 @@ Total de peliculas: 2241
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
+| 2026 | Cable mortal | cable-mortal-2026 | Thriller | Apple TV | +16 |
 | 2026 | Camp Rock 3 | camp-rock-3-2026 | Musical | Disney Plus | ATP |
 | 2026 | Canelones | canelones-2026 | Comedia | Cine | ATP |
 | 2026 | Carrera contra el tiempo | carrera-contra-el-tiempo-2026 | Thriller | Prime Video | +13 |
@@ -50,6 +52,7 @@ Total de peliculas: 2241
 | 2026 | Deseo | deseo-2026 | Thriller | Netflix | +16 |
 | 2026 | Digger | digger-2026 | Comedia | Cine | ATP |
 | 2026 | Dink | dink-2026 | Comedia | Apple TV | +13 |
+| 2026 | Disney: Creadores de mundos | disney-creadores-de-mundos-2026 | Documental | Disney Plus | +7 |
 | 2026 | Dracula | dracula-2026 | Terror | Otras plataformas | +16 |
 | 2026 | El Afinador | el-afinador-2026 | Thriller | Otras plataformas | +16 |
 | 2026 | El árbol mágico | el-arbol-magico-2026 | Aventura | Cine | ATP |
@@ -70,6 +73,7 @@ Total de peliculas: 2241
 | 2026 | El pasajero del diablo | el-pasajero-del-diablo-2026 | Terror | Otras plataformas | +17 |
 | 2026 | El pequeño ninja: El origen | el-pequeno-ninja-el-origen-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | El turno del papá | el-turno-del-papa-2026 | Comedia | Netflix | ATP |
+| 2026 | El último desafío: K2 en invierno | el-ultimo-desafio-k2-en-invierno-2026 | Documental | Apple TV | +13 |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
 | 2026 | El último gran golpe | el-ultimo-gran-golpe-2026 | Thriller | Cine | +13 |
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
@@ -157,16 +161,19 @@ Total de peliculas: 2241
 | 2026 | México 86 | mexico-86-2026 | Comedia | Netflix | +16 |
 | 2026 | Mi querida señorita | mi-querida-senorita-2026 | Drama | Netflix | +16 |
 | 2026 | Michael | michael-2026 | Drama | Apple TV | +13 |
+| 2026 | Midnight Girls | midnight-girls-2026 | Drama | Netflix | +13 |
 | 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Otras plataformas | ATP |
 | 2026 | Modha Rathri | modha-rathri-2026 | Comedia | Netflix | +13 |
 | 2026 | Momentos decisivos: Generación 11-S | momentos-decisivos-generacion-11-s-2026 | Documental | Netflix | +16 |
+| 2026 | Mononoke III: La maldición de la serpiente | mononoke-iii-la-maldicion-de-la-serpiente-2026 | Anime | Netflix | +13 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Otras plataformas | +17 |
 | 2026 | Moscas | moscas-2026 | Comedia | Apple TV | +16 |
 | 2026 | My Best Friend, His Girlfriend and Me | my-best-friend-his-girlfriend-and-me-2026 | Comedia | Netflix | +16 |
 | 2026 | MYSTERY ARENA | mystery-arena-2026 | Thriller | Prime Video | ATP |
 | 2026 | Nada entre los dos | nada-entre-los-dos-2026 | Romance | Otras plataformas | ATP |
 | 2026 | Nando entre dos mundos | nando-entre-dos-mundos-2026 | Crimen | Netflix | ATP |
+| 2026 | Ninja Wars: BlackFox vs Shogun’s Ninja | ninja-wars-blackfox-vs-shoguns-ninja-2026 | Acción | Prime Video | +16 |
 | 2026 | No es país para solteros | no-es-pais-para-solteros-2026 | Comedia romántica | Prime Video | +18 |
 | 2026 | No se desea buena suerte | no-se-desea-buena-suerte-2026 | Drama | Netflix | +13 |
 | 2026 | Nosotros al final | nosotros-al-final-2026 | Romance | Netflix | +13 |
@@ -176,6 +183,7 @@ Total de peliculas: 2241
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Panda Plan 2: La tribu mágica | panda-plan-2-la-tribu-magica-2026 | Aventura | Cine | ATP |
+| 2026 | Papá a cargo | papa-a-cargo-2026 | Comedia | Apple TV | ATP |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
 | 2026 | PAW Patrol: La Dino Película | paw-patrol-la-dino-pelicula-2026 | Animacion | Cine | ATP |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
@@ -192,6 +200,7 @@ Total de peliculas: 2241
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Resident Evil: Noche Cero | resident-evil-noche-cero-2026 | Terror | Cine | +17 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
+| 2026 | Ricos sin dinero | ricos-sin-dinero-2026 | Comedia | Netflix | +13 |
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
 | 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | Apple TV | +16 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
@@ -203,6 +212,7 @@ Total de peliculas: 2241
 | 2026 | Shelter | shelter-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Otras plataformas | ATP |
 | 2026 | Sólo por una noche | solo-por-una-noche-2026 | Comedia romántica | Otras plataformas | +13 |
+| 2026 | Soulm8te | soulm8te-2026 | Terror | Disney Plus | +16 |
 | 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine | +13 |
 | 2026 | Stavros Halkias: Uncle Stav | stavros-halkias-uncle-stav-2026 | Comedia | Netflix | +16 |
 | 2026 | Stray Kids: The dominATE Experience | stray-kids-the-dominate-experience-2026 | Documental | HBO Max + Apple TV | ATP |
@@ -220,10 +230,12 @@ Total de peliculas: 2241
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Otras plataformas | +12 |
 | 2026 | The Amazing Digital Circus: El último acto | the-amazing-digital-circus-el-ultimo-acto-2026 | Animacion | Otras plataformas | +13 |
 | 2026 | The Bride! | the-bride-2026 | Fantasia | Otras plataformas | +16 |
+| 2026 | The Furious: Pertaruhan Maruah | the-furious-pertaruhan-maruah-2026 | Acción | Netflix | +13 |
 | 2026 | The Mandalorian and Grogu | the-mandalorian-and-grogu-2026 | Ciencia ficcion | Disney Plus | +13 |
 | 2026 | The Marked Woman | the-marked-woman-2026 | Thriller | Netflix | +16 |
 | 2026 | The Punisher: La ultima muerte | the-punisher-one-last-kill-2026 | Accion | Disney Plus | +18 |
 | 2026 | The Strangers: Chapter 3 | the-strangers-chapter-3-2026 | Terror | Otras plataformas | +17 |
+| 2026 | The Swan: El reality más extremo | the-swan-el-reality-mas-extremo-2026 | Documental | Disney Plus | +16 |
 | 2026 | Tierra de crimen | tierra-de-crimen-2026 | Drama | Otras plataformas | +17 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Disney Plus + Cine | ATP |

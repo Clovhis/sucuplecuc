@@ -7,14 +7,18 @@ const repositoryRoot = path.resolve(scriptDirectory, '..', '..', '..');
 const API_ORIGIN = 'https://api.watchmode.com/v1';
 
 function usage() {
-	console.error('Uso: node skills/la-posta-cine-add-movie/scripts/watchmode-metadata.mjs --title "Titulo AR" --year YYYY [--original-title "Titulo original"] [--imdb-id tt...] [--tmdb-id N]');
+	console.error('Uso: node skills/la-posta-cine-add-movie/scripts/watchmode-metadata.mjs --title "Titulo AR" --year YYYY [--original-title "Titulo original"] [--imdb-id tt...] [--tmdb-id N] [--include-ratings]');
 }
 
-function parseArgs(argv) {
+export function parseArgs(argv) {
 	const args = {};
 	for (let index = 0; index < argv.length; index += 1) {
 		const argument = argv[index];
 		if (argument === '--help' || argument === '-h') return { help: true };
+		if (argument === '--include-ratings') {
+			args.includeRatings = true;
+			continue;
+		}
 		if (!['--title', '--original-title', '--year', '--imdb-id', '--tmdb-id'].includes(argument)) throw new Error(`Argumento desconocido: ${argument}`);
 		const value = argv[index + 1];
 		if (!value || value.startsWith('--')) throw new Error(`Falta el valor de ${argument}`);
@@ -32,6 +36,7 @@ function parseArgs(argv) {
 		year: Number.parseInt(args.year, 10),
 		imdbId: args['imdb-id'] ?? null,
 		tmdbId: args['tmdb-id'] ? Number.parseInt(args['tmdb-id'], 10) : null,
+		includeRatings: args.includeRatings ?? false,
 	};
 }
 
@@ -81,12 +86,20 @@ async function fetchJson(url, apiKey) {
 	return response.json();
 }
 
-function selectTitleMatch(results, { title, originalTitle, year, imdbId, tmdbId }) {
+export function buildSearchUrl({ title, imdbId, tmdbId }) {
+	const url = new URL(`${API_ORIGIN}/search/`);
+	url.searchParams.set('search_field', imdbId ? 'imdb_id' : tmdbId ? 'tmdb_movie_id' : 'name');
+	url.searchParams.set('search_value', imdbId ?? (tmdbId != null ? String(tmdbId) : title));
+	url.searchParams.set('types', 'movie');
+	return url;
+}
+
+export function selectTitleMatch(results, { title, originalTitle, year, imdbId, tmdbId }) {
 	const normalizedTitles = new Set([title, originalTitle].filter(Boolean).map(normalizeTitle));
 	const candidates = (results.title_results ?? []).filter((candidate) =>
 		candidate?.type === 'movie' &&
 		candidate.year === year &&
-		normalizedTitles.has(normalizeTitle(candidate.name ?? '')) &&
+		((imdbId || tmdbId) || normalizedTitles.has(normalizeTitle(candidate.name ?? ''))) &&
 		(!imdbId || candidate.imdb_id === imdbId) &&
 		(!tmdbId || candidate.tmdb_id === tmdbId),
 	);
@@ -96,8 +109,21 @@ function selectTitleMatch(results, { title, originalTitle, year, imdbId, tmdbId 
 	return candidates[0];
 }
 
-function toOutput(match, details, searchUrl, detailsUrl) {
-	return {
+export function validateDetails(match, details) {
+	if (details.id !== match.id || details.type !== 'movie' || details.year !== match.year ||
+		(match.imdb_id && details.imdb_id !== match.imdb_id) ||
+		(match.tmdb_id && details.tmdb_id !== match.tmdb_id)) {
+		throw new Error('Los detalles de Watchmode no coinciden con la identidad, el año o el tipo verificados.');
+	}
+}
+
+function numericRating(value, maximum) {
+	return typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= maximum ? value : null;
+}
+
+export function toOutput(match, details, searchUrl, detailsUrl, { includeRatings = false } = {}) {
+	validateDetails(match, details);
+	const output = {
 		provider: 'Watchmode',
 		queries: {
 			searchUrl: searchUrl.toString(),
@@ -133,6 +159,25 @@ function toOutput(match, details, searchUrl, detailsUrl) {
 			})),
 		},
 	};
+	if (includeRatings) {
+		output.ratings = {
+			source: 'Watchmode',
+			audience: { value: numericRating(details.user_rating, 10), scale: 10, voteCount: null },
+			critics: { value: numericRating(details.critic_score, 100), scale: 100 },
+		};
+	}
+	return output;
+}
+
+export async function lookupMetadata(args, apiKey) {
+	const searchUrl = buildSearchUrl(args);
+	const results = await fetchJson(searchUrl, apiKey);
+	const match = selectTitleMatch(results, args);
+	const detailsUrl = new URL(`${API_ORIGIN}/title/${match.id}/details/`);
+	detailsUrl.searchParams.set('append_to_response', 'cast-crew');
+	detailsUrl.searchParams.set('language', 'es');
+	const details = await fetchJson(detailsUrl, apiKey);
+	return toOutput(match, details, searchUrl, detailsUrl, args);
 }
 
 async function main() {
@@ -141,21 +186,13 @@ async function main() {
 		usage();
 		return;
 	}
-
-	const apiKey = await readApiKey();
-	const searchUrl = new URL(`${API_ORIGIN}/search/`);
-	searchUrl.searchParams.set('search_field', 'name');
-	searchUrl.searchParams.set('search_value', args.title);
-	const results = await fetchJson(searchUrl, apiKey);
-	const match = selectTitleMatch(results, args);
-	const detailsUrl = new URL(`${API_ORIGIN}/title/${match.id}/details/`);
-	detailsUrl.searchParams.set('append_to_response', 'cast-crew');
-	detailsUrl.searchParams.set('language', 'es');
-	const details = await fetchJson(detailsUrl, apiKey);
-	console.log(JSON.stringify(toOutput(match, details, searchUrl, detailsUrl), null, 2));
+	const output = await lookupMetadata(args, await readApiKey());
+	console.log(JSON.stringify(output, null, 2));
 }
 
-main().catch((error) => {
-	console.error(error.message);
-	process.exitCode = 1;
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+	main().catch((error) => {
+		console.error(error.message);
+		process.exitCode = 1;
+	});
+}

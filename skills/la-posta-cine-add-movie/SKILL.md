@@ -1,6 +1,6 @@
 ---
 name: la-posta-cine-add-movie
-description: Add one or more La Posta Cine movie entries safely from a plain-language request. Use for single loads and explicit batches; research and normalize public audience/critic ratings into the Cine Posta 1–10 score, and enforce duplicate-first intake, evidence-led AR availability, identity-safe people enrichment, original copy, and content-only validation.
+description: Add one or more La Posta Cine movie entries safely from a plain-language request. Use for single loads and explicit batches; research and normalize public ratings into the Cine Posta 1–10 score, automatically exhaust targeted IMDb, Metacritic, Watchmode and media fallbacks before declaring candidates pending, and enforce duplicate-first intake, evidence-led AR availability, verified people, original copy, and content-only validation.
 ---
 
 # la-posta-cine-add-movie
@@ -108,11 +108,17 @@ Stop with `La pelicula ya existe` if it reports a duplicate. When it passes, res
 1. Open one official/distributor or authoritative metadata page and the official original-language trailer. Capture all film facts possible from those pages.
 2. Open JustWatch AR for title + year. Open one official Argentina platform page only if the AR offer is unclear or conflicts. Open one specialized review source for editorial support.
 
-If a non-editorial metadata field remains unresolved after the primary source and TMDb, use Watchmode only as an optional, bounded fallback. Run `node skills/la-posta-cine-add-movie/scripts/watchmode-metadata.mjs --title "<title AR>" --original-title "<original title>" --year YYYY` when both title forms are known, and read the `Watchmode` section of [movie-load-contract.md](references/movie-load-contract.md) before using its output. Its absence, an API failure, or a mismatch never blocks the existing flow and never replaces an already verified source.
+If any required field remains unresolved after these passes, enrichment or audit, automatically execute the targeted contingency below. Watchmode is a supporting source to attempt when a local key is configured; its absence or failure means continue with the other sources, never stop research or replace already verified evidence.
 
 Do not reopen sources merely to reconfirm facts. Keep an evidence ledger of compact `field → URL → fact` notes; pass only that ledger to chained skills. Read [movie-load-contract.md](references/movie-load-contract.md) only for the relevant unresolved area (platform, people, taxonomy, or editorial rules), not wholesale.
 
 For a poster, the ledger must contain `source URL → final HTTP status/content-type/dimensions → canonical identity/year source → visual identity and Argentina-market decision → local assets/posters/<year>/<slug>.webp`. Do not use a platform page, an image filename, or a search-result thumbnail as the only identity evidence.
+
+## Automatic contingency before declaring a candidate pending
+
+- Before reporting a title as pending, blocked or omitted for missing score, identity, portraits, trailer, poster or required metadata, read and execute [intake-contingency.md](references/intake-contingency.md) for each missing field. This is mandatory for single loads and batches; do not wait for another user prompt to search IMDb, Metacritic, Watchmode or complementary primary sources.
+- Keep the same candidate manifest and branch. Search only unresolved fields, reuse verified IDs and same-run responses, and record `field -> attempted source/query -> result -> decision`. Do not rerun an exhausted contingency without a new lead or changed evidence.
+- A recovered field returns the candidate to the normal load and audit gates. A genuinely unresolved field remains a publication blocker with the attempted sources and exact missing evidence in the final report; unavailable access is different from an absent rating or asset. Never invent scores, weaken portrait/credit floors or substitute a different film's media to clear the batch.
 
 ## Create and enrich
 
@@ -138,7 +144,7 @@ Mandatory editorial rule: write `synopsis` and `review` 100% from scratch with A
 For every new or explicitly revalidated candidate, search for a current, title-and-year-matched public rating and record `source URL → exact displayed value → rating type and vote count → retrieval date → conversion → cinepostaScore` in the task evidence ledger. Apply audience ratings before critic ratings across all services:
 
 1. Rotten Tomatoes Popcornmeter/Audience Score.
-2. If RT has no usable numeric audience score, continue searching public audience aggregates such as IMDb, TMDb, Letterboxd, Filmweb and Metacritic User Score. Check for these before selecting any critics' metric, even when RT already shows a Tomatometer.
+2. If RT has no usable numeric audience score, continue searching public audience aggregates such as IMDb, TMDb, Letterboxd, Filmweb and Metacritic User Score. If these do not resolve the score, automatically run the score contingency, including Watchmode audience ratings when configured. Check these before selecting any critics' metric, even when RT already shows a Tomatometer. Attribute Watchmode ratings to Watchmode, never to IMDb; its response does not provide a vote count or guarantee a minimum audience size.
 3. Only when no title-matched public audience aggregate has a numeric score, use Rotten Tomatoes Tomatometer, then Metacritic Metascore or another public critic aggregate.
 4. If no public aggregate publishes a numeric score, a named professional critic's explicit numerical review rating may be the final fallback; identify it as one critic's rating, not an audience consensus, and never calculate an average from a handful of visible reviews.
 

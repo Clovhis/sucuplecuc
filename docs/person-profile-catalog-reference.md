@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-01. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-02. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4247
+Total de vínculos de películas del catálogo: 4248
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -338,7 +338,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jackie Chan | `jackie-chan` | /personas/jackie-chan/ | Actor | 4 | 3 |
 | Jacob Elordi | `jacob-elordi` | /personas/jacob-elordi/ | Actor | 4 | 7 |
 | Jake Gyllenhaal | `jake-gyllenhaal` | /personas/jake-gyllenhaal/ | Actor | 24 | 7 |
-| James Cameron | `james-cameron` | /personas/james-cameron/ | Director / Guionista / Productor | 8 | 5 |
+| James Cameron | `james-cameron` | /personas/james-cameron/ | Director / Guionista / Productor | 9 | 5 |
 | James Franco | `james-franco` | /personas/james-franco/ | Actor | 6 | 7 |
 | James Gunn | `james-gunn` | /personas/james-gunn/ | Director | 5 | 7 |
 | James Mangold | `james-mangold` | /personas/james-mangold/ | Director | 6 | 7 |
