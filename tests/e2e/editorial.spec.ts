@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import residentEvil from '../../src/data/editorials/resident-evil-noche-cero-la-veria-99-veces.json' with { type: 'json' };
 import miasma from '../../src/data/editorials/campamento-miasma-si-venis-por-jason-preparate-para-el-delirio.json' with { type: 'json' };
 import colony from '../../src/data/editorials/colony-zona-cero-me-gusto-pero-no-me-volo-la-peluca.json' with { type: 'json' };
+import cancelados from '../../src/data/editorials/cancelados-por-hollywood-estrellas-cima-exilio.json' with { type: 'json' };
 
 for (const { entry, movieTitle, featured, sourcePattern } of [
   { entry: residentEvil, movieTitle: 'Resident Evil: Noche Cero', featured: false, sourcePattern: /^https:\/\/residentevil\.movie\// },
@@ -48,7 +49,7 @@ for (const { entry, movieTitle, featured, sourcePattern } of [
       expect(await image.evaluate((node: HTMLImageElement) => Math.abs(node.width / node.height - node.naturalWidth / node.naturalHeight))).toBeLessThan(.03);
       expect(await figure.evaluate(node => node.previousElementSibling?.tagName)).toBe('P');
       expect(await figure.evaluate(node => node.nextElementSibling?.tagName)).toBe('P');
-      await expect(figure.getByRole('link', { name: 'Fuente oficial' })).toHaveAttribute('href', sourcePattern);
+      await expect(figure.getByRole('link', { name: 'Fuente de la imagen' })).toHaveAttribute('href', sourcePattern);
     }
     await page.screenshot({ path: testInfo.outputPath('editorial-full.png'), fullPage: true });
     await page.setViewportSize({ width: 320, height: 760 });
@@ -61,3 +62,69 @@ for (const { entry, movieTitle, featured, sourcePattern } of [
     expect(errors).toEqual([]);
   });
 }
+
+const canceladosPath = `/editorial/${cancelados.slug}/`;
+const actorCases = [
+  'Kevin Spacey', 'Johnny Depp', 'Amber Heard', 'Ezra Miller', 'Jonathan Majors', 'Armie Hammer',
+  'Mel Gibson', 'Gina Carano', 'James Franco', 'Shia LaBeouf', 'Danny Masterson', 'Will Smith',
+];
+const expectedMinutes = Math.max(1, Math.ceil(
+  cancelados.content.flatMap(block => block.type === 'paragraph' && typeof block.text === 'string' ? block.text.split(/\s+/u) : []).length / 220,
+));
+const expectedBios = ['kevin-spacey', 'johnny-depp', 'mel-gibson', 'james-franco', 'will-smith'];
+
+test(`${cancelados.slug}: note, internal biographies, SEO and images render on desktop and mobile`, async ({ page }, testInfo) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+
+  await page.goto('/');
+  const home = page.getByRole('region', { name: 'Desde CinePosta' });
+  const homeCard = home.locator('.editorial-card').filter({ hasText: cancelados.title });
+  await expect(homeCard).toBeVisible();
+  await home.getByRole('link', { name: 'Todas las publicaciones' }).click();
+  await expect(page).toHaveURL(/\/editorial\/$/);
+  const indexCard = page.locator('.editorial-card').filter({ hasText: cancelados.title });
+  await expect(indexCard.getByText(`${expectedMinutes} min de lectura`)).toBeVisible();
+  await indexCard.getByRole('heading', { name: cancelados.title }).click();
+  await expect(page).toHaveURL(canceladosPath);
+
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(cancelados.title);
+  await expect(page.locator('time')).toHaveAttribute('datetime', cancelados.date);
+  await expect(page.locator('.editorial-body h2').first()).toHaveText(actorCases[0]);
+  await expect(page.locator('.editorial-body h2').nth(11)).toHaveText(actorCases[11]);
+  await expect(page.locator('.editorial-body h2')).toHaveCount(13);
+
+  const bioLinks = page.locator('.editorial-body__bio a');
+  await expect(bioLinks).toHaveCount(expectedBios.length);
+  const hrefs = await bioLinks.evaluateAll(links => links.map(link => (link as HTMLAnchorElement).getAttribute('href')));
+  expect(hrefs).toEqual(expectedBios.map(slug => expect.stringMatching(new RegExp(`/personas/${slug}/$`))));
+  for (const href of hrefs) {
+    const response = await page.request.get(new URL(href!, page.url()).toString());
+    expect(response.ok()).toBe(true);
+  }
+
+  const figures = page.locator('.editorial-body figure');
+  await expect(figures).toHaveCount(11);
+  for (const figure of await figures.all()) {
+    await figure.scrollIntoViewIfNeeded();
+    const image = figure.locator('img');
+    await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0)).toBe(true);
+    await expect(figure.getByRole('link', { name: 'Fuente de la imagen' })).toHaveAttribute('href', /^https:\/\//);
+    expect(await image.evaluate((node: HTMLImageElement) => Math.abs(node.width / node.height - node.naturalWidth / node.naturalHeight))).toBeLessThan(.03);
+  }
+  await expect(page.locator('.editorial-body figure a', { hasText: 'Licencia de uso' })).toHaveCount(3);
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://www.cineposta.com.ar${canceladosPath}`);
+  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute('content', new RegExp(cancelados.title));
+  const schema = await page.locator('script[type="application/ld+json"]').first().textContent();
+  expect(JSON.parse(schema!).timeRequired).toBe(`PT${expectedMinutes}M`);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: testInfo.outputPath('cancelados-desktop-viewport.png') });
+  await page.screenshot({ path: testInfo.outputPath('cancelados-desktop.png'), fullPage: true });
+
+  await page.setViewportSize({ width: 320, height: 760 });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: testInfo.outputPath('cancelados-mobile-320-viewport.png') });
+  await page.screenshot({ path: testInfo.outputPath('cancelados-mobile-320.png'), fullPage: true });
+  expect(errors).toEqual([]);
+});

@@ -5,7 +5,7 @@ const { image, eager = false } = Astro.props;
 ---
 <figure>
   <img src={editorialAsset(image.src)} srcset={image.srcSmall ? `${editorialAsset(image.srcSmall)} 640w, ${editorialAsset(image.src)} ${image.width}w` : undefined} sizes="(max-width: 800px) calc(100vw - 40px), 760px" alt={image.alt} width={image.width} height={image.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
-  {(image.caption || image.source) && <figcaption>{image.caption}{image.source && <> <a href={image.source} rel="noopener noreferrer">Fuente oficial</a></>}</figcaption>}
+  {(image.caption || image.source || image.license) && <figcaption>{image.caption}{image.source && <> <a href={image.source} rel="noopener noreferrer">Fuente de la imagen</a></>}{image.license && <> · <a href={image.license} rel="noopener noreferrer">Licencia de uso</a></>}</figcaption>}
 </figure>
 <style>
   figure { margin: 2.5rem 0; }

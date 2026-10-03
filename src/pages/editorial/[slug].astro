@@ -4,6 +4,7 @@ import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import EditorialImage from '../../components/EditorialImage.astro';
 import { editorialAsset, formatEditorialDate, getEditorials, getEditorialPath, type Editorial } from '../../lib/editorial';
 import { getMovies, getMoviePath } from '../../lib/movies';
+import { getPersonPath } from '../../lib/people';
 export function getStaticPaths() { return getEditorials().map((entry) => ({ params: { slug: entry.slug }, props: { entry } })); }
 interface Props { entry: Editorial; }
 const { entry } = Astro.props;
@@ -16,7 +17,12 @@ const structuredData = [{ '@context': 'https://schema.org', '@type': 'Article', 
     <nav class="page-actions" aria-label="Navegación editorial"><HomeBrandLink className="page-action page-action--home" /><a class="page-action" href={`${import.meta.env.BASE_URL}editorial/`}>Editorial CinePosta</a></nav>
     <article>
       <header><p class="kicker">{entry.type} · CinePosta</p><h1>{entry.title}</h1><p class="excerpt">{entry.excerpt}</p><p class="meta">Por {entry.author} · <time datetime={entry.date}>{formatEditorialDate(entry.date)}</time> · {entry.readingTime} min de lectura</p><p class="meta">{entry.spoilers ? 'Contiene spoilers' : 'Sin spoilers fuertes'}</p></header>
-      <div class="editorial-body">{entry.content.map((block) => block.type === 'paragraph' ? <p>{block.text}</p> : <EditorialImage image={block} />)}</div>
+      <div class="editorial-body">{entry.content.map((block) => {
+        if (block.type === 'paragraph') return <p>{block.text}</p>;
+        if (block.type === 'heading') return block.level === 2 ? <h2>{block.text}</h2> : <h3>{block.text}</h3>;
+        if (block.type === 'bioLink') return <p class="editorial-body__bio"><a href={getPersonPath(block.slug)}>{block.label} →</a></p>;
+        return <EditorialImage image={block} />;
+      })}</div>
       <footer><ul aria-label="Temas">{entry.tags.map((tag) => <li>{tag}</li>)}</ul>{movie && <aside class="movie-link"><span>La película en CinePosta</span><a href={getMoviePath(movie.slug)}>Ver ficha de {movie.title} →</a></aside>}<a class="back" href={`${import.meta.env.BASE_URL}editorial/`}>Volver a Editorial CinePosta →</a></footer>
     </article>
   </main>
@@ -30,6 +36,10 @@ const structuredData = [{ '@context': 'https://schema.org', '@type': 'Article', 
   .meta { font-size: .85rem; color: var(--muted); }
   header { padding-bottom: 1.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); }
   .editorial-body > p { font-size: clamp(1.0625rem, 2vw, 1.1875rem); line-height: 1.85; margin: 0 0 1.5rem; }
+  .editorial-body > h2 { margin: 3.25rem 0 1.25rem; padding-top: 1.5rem; border-top: 1px solid var(--line); font-size: clamp(1.6rem, 3.5vw, 2.1rem); line-height: 1.2; text-wrap: balance; }
+  .editorial-body > h3 { margin: 1.9rem 0 .7rem; color: var(--accent-soft); font-size: 1.15rem; line-height: 1.35; }
+  .editorial-body > .editorial-body__bio { margin: -.15rem 0 2.5rem; font-size: .95rem; line-height: 1.55; }
+  .editorial-body__bio a { text-underline-offset: .2em; }
   footer { border-top: 1px solid var(--line); padding-top: 1.5rem; margin-top: 2rem; }
   ul { display: flex; gap: .6rem; flex-wrap: wrap; list-style: none; padding: 0; }
   li { padding: .3rem .7rem; background: var(--surface); border-radius: 6px; color: var(--muted); font-size: .8rem; }

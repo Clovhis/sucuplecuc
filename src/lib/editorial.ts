@@ -1,5 +1,6 @@
 import { z } from 'astro/zod';
 import { getMovies } from './movies';
+import { personProfiles } from '../data/personProfiles';
 
 const localImage = z.string().regex(/^assets\/editorial\/[a-z0-9/-]+\.(webp|avif)$/);
 const imageSchema = z.object({
@@ -10,6 +11,17 @@ const imageSchema = z.object({
   height: z.number().int().positive(),
   caption: z.string().optional(),
   source: z.url().refine((url) => url.startsWith('https://')).optional(),
+  license: z.url().refine((url) => url.startsWith('https://')).optional(),
+});
+const headingSchema = z.object({
+  type: z.literal('heading'),
+  level: z.union([z.literal(2), z.literal(3)]),
+  text: z.string().trim().min(1),
+});
+const bioLinkSchema = z.object({
+  type: z.literal('bioLink'),
+  slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+  label: z.string().trim().min(1),
 });
 const schema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
@@ -28,6 +40,8 @@ const schema = z.object({
   cover: imageSchema,
   content: z.array(z.discriminatedUnion('type', [
     z.object({ type: z.literal('paragraph'), text: z.string().trim().min(1) }),
+    headingSchema,
+    bioLinkSchema,
     imageSchema.extend({ type: z.literal('image') }),
   ])).min(1).refine((blocks) => blocks.some((block) => block.type === 'paragraph'), 'Falta texto'),
 });
@@ -42,6 +56,11 @@ const entries: Editorial[] = Object.entries(files).map(([path, data]) => {
   if (slugs.has(entry.slug)) throw new Error(`Editorial duplicada: ${entry.slug}`);
   if (!path.endsWith(`/${entry.slug}.json`)) throw new Error(`Slug y archivo no coinciden: ${path}`);
   if (entry.movieSlug && !movieSlugs.has(entry.movieSlug)) throw new Error(`Película inexistente: ${entry.movieSlug}`);
+  for (const block of entry.content) {
+    if (block.type === 'bioLink' && !personProfiles[block.slug]) {
+      throw new Error(`Biografía inexistente: ${block.slug}`);
+    }
+  }
   slugs.add(entry.slug);
   const words = entry.content.flatMap((block) => block.type === 'paragraph' ? block.text.split(/\s+/u) : []).length;
   return { ...entry, readingTime: Math.max(1, Math.ceil(words / 220)) };
