@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	sourceUrl: string;
 }
 
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-02T14:07:05.189Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-03T10:03:24.836Z";
 
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
@@ -16,7 +16,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"title": "Madre siniestra",
 		"releaseDate": "2026-10-08",
 		"videoUrl": "https://www.youtube.com/watch?v=-mnTITqqiT0",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/smZ8BT4Vzw4iCEppTLCnN8jNYtn.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10616-madre-siniestra/"
 	},
 	{
@@ -34,6 +34,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=U6sbm1OaJb8",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10217-street-fighter/"
+	},
+	{
+		"slug": "i-want-your-sex",
+		"title": "Quiero tu sexo",
+		"releaseDate": "2026-10-15",
+		"videoUrl": "https://www.youtube.com/watch?v=q5oWCPS3akw",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/gQsjbxdjJUam7buy4U2TpVTiGSO.jpg",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10563-quiero-tu-sexo/"
 	},
 	{
 		"slug": "the-hunger-games",
@@ -76,6 +84,15 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10474-clayface/"
 	},
 	{
+		"slug": "pour-le-plaisir",
+		"title": "Buenas vibraciones",
+		"releaseDate": "2026-10-22",
+		"videoUrl": "https://www.youtube.com/watch?v=oW-0f8c2izY",
+		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
+		"synopsis": "Based on the true story of a married couple who invented a groundbreaking sex toy heralded as forever changing the way women experience pleasure.",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10617-buenas-vibraciones/"
+	},
+	{
 		"slug": "beware-boiuna",
 		"title": "Terror en el Amazonas",
 		"releaseDate": "2026-10-22",
@@ -98,13 +115,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"videoUrl": "https://www.youtube.com/watch?v=bJQGtSeLPII",
 		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10500-el-bosque-salvaje-wildwood/"
-	},
-	{
-		"slug": "pinocchio-unstrung",
-		"title": "Pinocho desatado",
-		"releaseDate": "2026-10-29",
-		"videoUrl": "https://www.youtube.com/watch?v=_VHIU9dIAWQ",
-		"thumbnailUrl": "https://media.themoviedb.org/t/p/w780/vgZDb7kmaxP24cFbt1KJdMLlHFZ.jpg",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10272-pinocho-desatado/"
 	}
 ];
