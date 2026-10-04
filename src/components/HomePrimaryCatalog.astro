@@ -4,6 +4,7 @@ import PlatformBadge from './PlatformBadge.astro';
 import type { PlatformFilterOption } from '../lib/platforms';
 import { QUE_MIRO_HOY_PATH } from '../lib/seo';
 import type { Movie } from '../types/movie';
+import { createHomeMovieRecord } from '../lib/home-catalog';
 
 interface FilterOption {
 	id: string;
@@ -18,7 +19,6 @@ interface Props {
 	primaryGenreOptions: FilterOption[];
 	subgenreOptions: FilterOption[];
 	initialHomeMovies: Movie[];
-	deferredHomeMovies: Movie[];
 	movieCountLabel: string;
 }
 
@@ -29,10 +29,10 @@ const {
 	primaryGenreOptions,
 	subgenreOptions,
 	initialHomeMovies,
-	deferredHomeMovies,
 	movieCountLabel,
 } = Astro.props;
 const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year))).sort((left, right) => right - left);
+const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace(/</g, '\\u003c');
 ---
 
 {
@@ -307,15 +307,12 @@ const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year)
 			>
 				{initialHomeMovies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
 			</section>
-			<div hidden data-movie-card-templates aria-hidden="true">
-				{
-					deferredHomeMovies.map((movie, index) => (
-						<template data-movie-card-template>
-							<MovieCard movie={movie} index={index + initialHomeMovies.length} />
-						</template>
-					))
-				}
-			</div>
+			<nav class="home-catalog-pagination" data-home-pagination aria-label="Páginas de películas" hidden>
+				<button type="button" class="home-results-tools__reset" data-home-page-previous>Anterior</button>
+				<p data-home-page-summary role="status" aria-live="polite"></p>
+				<button type="button" class="home-results-tools__reset" data-home-page-next>Siguiente</button>
+			</nav>
+			<script is:inline type="application/json" data-home-movie-index set:html={movieIndexJson}></script>
 		</section>
 	) : (
 		<p class="message-box">Todavía no cargamos ninguna peli. Meté la primera ficha manual.</p>

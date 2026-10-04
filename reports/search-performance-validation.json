@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-04",
+  "branch": "fix/search-performance-20261004",
+  "base": "e679196a",
+  "build": {
+    "exitCode": 0,
+    "pages": 7539
+  },
+  "check": {
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "contentValidation": "passed --skip-build",
+  "unitTests": [
+    "test:movie-recommendations passed",
+    "test:editorial-meters passed"
+  ],
+  "publicOutput": "passed",
+  "sitemap": {
+    "canonicalPages": 5285
+  },
+  "profiles": {
+    "approved": 759,
+    "nonIndexable": 0
+  },
+  "fullMatrix": {
+    "total": 640,
+    "passed": 576,
+    "skipped": 54,
+    "failed": 10,
+    "workers": 3,
+    "notes": "Two hung WebKit badge-test workers were stopped. Test fixtures were corrected for pagination, painted scroll hit-testing and the screenshot DPR limit."
+  },
+  "repeatFailed": {
+    "passed": 5,
+    "failed": 5,
+    "notes": "All five badge-layout tests passed; the five editorial tests were fixed and covered by the final full editorial suite."
+  },
+  "finalEditorialSuite": {
+    "passed": 35,
+    "failed": 0,
+    "workers": 1
+  },
+  "combinedCoverage": {
+    "passed": 586,
+    "skipped": 54,
+    "unresolvedFailures": 0,
+    "notes": "Combined matrix and successful targeted repeats, not a fresh clean full matrix."
+  },
+  "newSearchTests": {
+    "passed": 30,
+    "projects": [
+      "desktop-chromium",
+      "desktop-firefox",
+      "desktop-webkit",
+      "mobile-chromium",
+      "mobile-webkit"
+    ]
+  },
+  "pending": [
+    "Native Safari on a physical iPhone",
+    "CPU 4x stress shows long tasks up to 198ms; normal runs are below 23ms and Chromium records no long tasks."
+  ]
+}

@@ -75,6 +75,7 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 	class={`movie-card movie-card--${verdictClass} fade-up`}
 	style={`--item-delay: ${entryDelayMs};`}
 	data-movie-card
+	data-movie-slug={movie.slug}
 	data-movie-search={searchableTextNormalized}
 	data-movie-genres={catalogFilterGenres}
 	data-movie-subgenres={catalogFilterSubgenres}
@@ -99,6 +100,8 @@ const searchableTextNormalized = normalizeSearchText(searchableText);
 				alt={`Poster de ${movie.title}`}
 				loading={posterLoading}
 				decoding="async"
+				width="480"
+				height="720"
 				fetchpriority={posterFetchPriority}
 				referrerpolicy="no-referrer"
 				data-movie-poster

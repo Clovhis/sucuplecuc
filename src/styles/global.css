@@ -4457,6 +4457,27 @@ img {
 	margin-top: 0.25rem;
 }
 
+.home-catalog-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-block: 1.5rem;
+}
+
+.home-catalog-pagination[hidden] { display: none; }
+.home-catalog-pagination p { margin: 0; color: var(--muted); }
+.home-catalog-pagination button { min-height: 44px; }
+.home-catalog-pagination button:disabled { opacity: 0.45; cursor: default; }
+
+/* The paginated grid has at most 36 cards. Lay them out fully so skipped
+   intrinsic heights can't move pagination or links underneath a click. */
+[data-movie-search-grid] .movie-card {
+	content-visibility: visible;
+	contain-intrinsic-size: none;
+}
+
 .movie-card {
 	--card-accent: rgba(255, 255, 255, 0.18);
 	position: relative;

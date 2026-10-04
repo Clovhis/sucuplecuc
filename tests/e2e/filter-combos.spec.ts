@@ -31,11 +31,27 @@ async function visibleMovieTitles(page: Page): Promise<string[]> {
   );
 }
 
+async function allMovieTitles(page: Page): Promise<string[]> {
+  const titles: string[] = [];
+  const next = page.locator('[data-home-page-next]');
+  const previous = page.locator('[data-home-page-previous]');
+  do {
+    titles.push(...await visibleMovieTitles(page));
+    if (!await next.isVisible() || !await next.isEnabled()) break;
+    const oldPage = await page.locator('[data-home-page-summary]').textContent();
+    await next.click();
+    await expect(page.locator('[data-home-page-summary]')).not.toHaveText(oldPage ?? '');
+  } while (true);
+  while (await previous.isVisible() && await previous.isEnabled()) {
+    const oldPage = await page.locator('[data-home-page-summary]').textContent();
+    await previous.click();
+    await expect(page.locator('[data-home-page-summary]')).not.toHaveText(oldPage ?? '');
+  }
+  return titles;
+}
+
 async function expectMovieTitles(page: Page, expectedTitles: string[]): Promise<void> {
-  await expect
-    .poll(() => visibleMovieTitles(page), {
-      message: `Esperaba ${expectedTitles.join(', ')}`,
-    })
+  await expect.poll(() => allMovieTitles(page), { message: `Esperaba ${expectedTitles.join(', ')}` })
     .toEqual(expectedTitles);
 }
 
@@ -296,13 +312,8 @@ test.describe('home catalog filters', () => {
   test('Musical filters narrative musicals and preserves combined URL state', async ({ page }) => {
     await gotoHome(page);
     const expectedMusicals = await page.evaluate(() => {
-      const cards = [
-        ...document.querySelectorAll<HTMLElement>('[data-movie-search-grid] [data-movie-card]'),
-        ...Array.from(document.querySelectorAll<HTMLTemplateElement>('[data-movie-card-template]')).flatMap((template) =>
-          Array.from(template.content.querySelectorAll<HTMLElement>('[data-movie-card]')),
-        ),
-      ];
-      return cards.filter((card) => card.dataset.movieGenres?.split(',').includes('musical')).map((card) => card.dataset.movieTitle ?? '').sort();
+      const records = JSON.parse(document.querySelector('[data-home-movie-index]')?.textContent ?? '[]') as Array<{ genres: string[]; title: string }>;
+      return records.filter((record) => record.genres.includes('musical')).map((record) => record.title).sort();
     });
     expect(expectedMusicals.length).toBeGreaterThan(80);
     const musical = page.getByRole('button', { name: 'Musical', exact: true });
@@ -312,12 +323,15 @@ test.describe('home catalog filters', () => {
     await expect(musical).toHaveAttribute('aria-pressed', 'true');
     expect(new URL(page.url()).searchParams.get('genero')).toBe('musical');
     await expect.poll(() => visibleMovieTitles(page)).not.toEqual([]);
-    await expect.poll(async () => (await visibleMovieTitles(page)).sort()).toEqual(expectedMusicals);
+    await expect.poll(async () => (await allMovieTitles(page)).sort(), { timeout: 15_000 }).toEqual(expectedMusicals);
     for (const title of ['Chicago', 'La La Land', 'Encanto']) {
+      await page.locator('[data-movie-search-input]').fill(title);
       await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"]`)).toBeVisible();
       await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"]`)).toHaveAttribute('data-movie-meta', /Musical/);
       await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"] .movie-card__cta`).filter({ hasText: /^Musical$/ })).toBeVisible();
     }
+    await page.locator('[data-movie-search-input]').fill('');
+    await expect.poll(() => visibleMovieTitles(page)).toHaveLength(36);
     for (const title of ['Whiplash: Música y obsesión', 'Casi famosos', 'Back to Black', 'Stop Making Sense']) {
       await expect(page.locator(`[data-movie-search-grid] [data-movie-card][data-movie-title="${title}"]`)).toBeHidden();
     }
@@ -325,13 +339,13 @@ test.describe('home catalog filters', () => {
       cards.map((card) => card.getAttribute('data-movie-genres')?.split(',') ?? []),
     );
     expect(genres.every((values) => values.includes('musical'))).toBeTruthy();
-    const musicalCount = genres.length;
+    const musicalCount = Number((await page.locator('[data-home-result-count]').textContent())?.replace(/\D/g, ''));
     await expect(page.locator('[data-movie-search-summary]').first()).toContainText('género Musical');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
 
     await page.getByRole('button', { name: 'Drama', exact: true }).click();
     expect(new URL(page.url()).searchParams.get('genero')?.split(',')).toEqual(['musical', 'drama']);
-    await expect.poll(async () => (await visibleMovieTitles(page)).length).toBeGreaterThan(musicalCount);
+    await expect.poll(async () => Number((await page.locator('[data-home-result-count]').textContent())?.replace(/\D/g, ''))).toBeGreaterThan(musicalCount);
     await page.reload({ waitUntil: 'domcontentloaded' });
     await dismissDonationPrompt(page);
     await openAdvancedFilters(page);
@@ -352,36 +366,53 @@ test.describe('home catalog filters', () => {
       await page.setViewportSize({ width, height: 900 });
       await page.goto('/?genero=musical', { waitUntil: 'domcontentloaded' });
       await dismissDonationPrompt(page);
-      await expect(page.locator('[data-movie-search-grid] [data-movie-card][data-movie-title="Chicago"]')).toBeVisible();
-      const layout = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) => {
-        const failures: string[] = [];
-        for (const card of cards) {
-          const title = card.getAttribute('data-movie-title') ?? '';
-          const group = card.querySelector<HTMLElement>('.movie-card__genres');
-          const labels = Array.from(group?.querySelectorAll<HTMLElement>('.movie-card__cta') ?? []);
-          const groupRect = group?.getBoundingClientRect();
-          const platformRect = card.querySelector('.movie-card__platform-mark')?.getBoundingClientRect();
-          const bodyRect = card.querySelector('.movie-card__body')?.getBoundingClientRect();
-          if (labels.filter((label) => label.textContent?.trim() === 'Musical').length !== 1) failures.push(`${title}: Musical label`);
-          if (groupRect && platformRect && groupRect.bottom > platformRect.top + 1) failures.push(`${title}: platform overlap`);
-          for (const label of labels) {
-            const rect = label.getBoundingClientRect();
-            const style = getComputedStyle(label);
-            const singleLineHeight = parseFloat(style.lineHeight) + parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + 2;
-            if (rect.height > singleLineHeight + 1 || label.scrollWidth > label.clientWidth + 1) failures.push(`${title}: wrapped or clipped label`);
-            if (bodyRect && (rect.left < bodyRect.left || rect.right > bodyRect.right)) failures.push(`${title}: outside card`);
+      await expect(page.locator('[data-movie-search-summary]').first()).toContainText('género Musical');
+      let checkedCount = 0;
+      do {
+        const layout = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) => {
+          const failures: string[] = [];
+          for (const card of cards) {
+            const title = card.getAttribute('data-movie-title') ?? '';
+            const group = card.querySelector<HTMLElement>('.movie-card__genres');
+            const labels = Array.from(group?.querySelectorAll<HTMLElement>('.movie-card__cta') ?? []);
+            const groupRect = group?.getBoundingClientRect();
+            const platformRect = card.querySelector('.movie-card__platform-mark')?.getBoundingClientRect();
+            const bodyRect = card.querySelector('.movie-card__body')?.getBoundingClientRect();
+            if (labels.filter((label) => label.textContent?.trim() === 'Musical').length !== 1) failures.push(`${title}: Musical label`);
+            if (groupRect && platformRect && groupRect.bottom > platformRect.top + 1) failures.push(`${title}: platform overlap`);
+            for (const label of labels) {
+              const rect = label.getBoundingClientRect();
+              const style = getComputedStyle(label);
+              const singleLineHeight = parseFloat(style.lineHeight) + parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + 2;
+              if (rect.height > singleLineHeight + 1 || label.scrollWidth > label.clientWidth + 1) failures.push(`${title}: wrapped or clipped label`);
+              if (bodyRect && (rect.left < bodyRect.left || rect.right > bodyRect.right)) failures.push(`${title}: outside card`);
+            }
+            if (labels.length === 2) {
+              const first = labels[0].getBoundingClientRect();
+              const second = labels[1].getBoundingClientRect();
+              if (Math.abs(first.left - second.left) > 1 || Math.abs(second.top - first.bottom - 4) > 1 || Math.abs(first.height - second.height) > 1) failures.push(`${title}: inconsistent stack`);
+            }
           }
-          if (labels.length === 2) {
-            const first = labels[0].getBoundingClientRect();
-            const second = labels[1].getBoundingClientRect();
-            if (Math.abs(first.left - second.left) > 1 || Math.abs(second.top - first.bottom - 4) > 1 || Math.abs(first.height - second.height) > 1) failures.push(`${title}: inconsistent stack`);
-          }
-        }
-        return { count: cards.length, failures, fits: document.documentElement.scrollWidth <= window.innerWidth };
-      });
-      expect(layout.count).toBeGreaterThan(80);
-      expect(layout.failures, `Genre badges at ${width}px`).toEqual([]);
-      expect(layout.fits).toBeTruthy();
+          return { count: cards.length, failures, fits: document.documentElement.scrollWidth <= window.innerWidth };
+        });
+        expect(layout.count).toBeGreaterThan(0);
+        expect(layout.failures, `Genre badges at ${width}px`).toEqual([]);
+        expect(layout.fits).toBeTruthy();
+        checkedCount += layout.count;
+        const next = page.locator('[data-home-page-next]');
+        if (!await next.isVisible() || !await next.isEnabled()) break;
+        const oldPage = await page.locator('[data-home-page-summary]').textContent();
+        await next.click();
+        await expect(page.locator('[data-home-page-summary]')).not.toHaveText(oldPage ?? '');
+      } while (true);
+      expect(checkedCount).toBeGreaterThan(80);
+      // Each viewport checks the whole result set, including after saved-page restoration.
+      const previous = page.locator('[data-home-page-previous]');
+      while (await previous.isEnabled()) {
+        const oldPage = await page.locator('[data-home-page-summary]').textContent();
+        await previous.click();
+        await expect(page.locator('[data-home-page-summary]')).not.toHaveText(oldPage ?? '');
+      }
     }
   });
 
@@ -444,8 +475,10 @@ test.describe('home catalog filters', () => {
     expect(cards.length).toBeGreaterThan(0);
     expect(cards.every((card) => card.genres.includes('culto'))).toBeTruthy();
     for (const title of ['El espectáculo de imágenes de terror de Rocky', 'La habitación (The room)', 'Troll 2']) {
+      await page.locator('[data-movie-search-input]').fill(title);
       await expect(page.locator(`[data-movie-card][data-movie-title="${title}"]`)).toBeVisible();
     }
+    await page.locator('[data-movie-search-input]').fill('Battle Royale');
     await expect(page.locator('[data-movie-card][data-movie-title="Battle Royale"]')).toBeVisible();
     await expect(page.locator('[data-movie-search-summary]').first()).toContainText('filtro De culto');
     expect(new URL(page.url()).searchParams.get('filtro')).toBe('culto');
@@ -565,6 +598,7 @@ test.describe('home catalog filters', () => {
     await page.getByRole('button', { name: /Filtrar por Otras plataformas/i }).click();
 
     for (const title of ['Godzilla vs. Kong', 'Tenet', 'Wonder Woman 1984']) {
+      await page.locator('[data-movie-search-input]').fill(title);
       const card = page.locator(`[data-movie-card][data-movie-title="${title}"]`);
       await expect(card).toBeVisible();
       await expect(card.locator('.platform-chip--dgo')).toHaveAttribute('aria-label', 'Plataforma: DGO');
@@ -672,16 +706,9 @@ test.describe('home catalog filters', () => {
 	test.setTimeout(120_000);
     await gotoHome(page);
 
-    const allCatalogCards = await page.locator('[data-movie-search-grid] [data-movie-card]').evaluateAll((cards) => {
-      const templateCards = Array.from(document.querySelectorAll<HTMLTemplateElement>('[data-movie-card-template]'))
-        .flatMap((template) => Array.from(template.content.querySelectorAll<HTMLElement>('[data-movie-card]')));
-
-      return [...cards, ...templateCards].map((card) => ({
-        title: card.getAttribute('data-movie-title')?.trim() ?? '',
-        platforms: card.getAttribute('data-movie-platforms')?.split(',').map((value) => value.trim()) ?? [],
-        subgenres: card.getAttribute('data-movie-subgenres')?.split(',').map((value) => value.trim()) ?? [],
-      }));
-    });
+    const allCatalogCards = await page.evaluate(() =>
+      JSON.parse(document.querySelector('[data-home-movie-index]')?.textContent ?? '[]') as Array<{ title: string; platforms: string[]; subgenres: string[] }>,
+    );
     const subgenreIds = await page.locator('[data-home-subgenre-chip]').evaluateAll((chips) =>
       chips
         .map((chip) => chip.getAttribute('data-home-subgenre-id')?.trim() ?? '')

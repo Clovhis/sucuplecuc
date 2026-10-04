@@ -5,36 +5,26 @@
  * deduplicate, and typecheck it.
  */
 
+import type { HomeMovieRecord } from '../types/home-catalog';
+import { createHomeMovieCard } from './home-movie-card';
+
 type StatusMode = 'catalog' | 'search';
 type ReturnBehavior = 'reset';
 type ChipDataKey = 'homeGenreId' | 'homeSubgenreId' | 'homePlatformId' | 'homeYearId';
 type HistoryUpdateMode = 'push' | 'replace';
 type MovieSort = 'newest' | 'oldest' | 'most-recommended' | 'least-recommended' | 'title';
 
-type MovieIndexEntry = {
+type MovieIndexEntry = HomeMovieRecord & {
 	element: HTMLElement | null;
-	template: HTMLTemplateElement | null;
 	initial: boolean;
-	searchable: string;
-	title: string;
-	year: string;
-	releaseTimestamp: number;
-	recentPremiere: boolean;
-	score: number | null;
-	url: string;
-	posterUrl: string;
-	meta: string;
-	cast: string;
 	entryType: 'movie';
-	platforms: Set<string>;
-	genres: Set<string>;
-	subgenres: Set<string>;
-	primaryGenre: string;
 	poster: HTMLImageElement | null;
 	linkPrepared: boolean;
 };
 
 type PersonIndexEntry = {
+	normalizedTitle: string;
+	normalizedMeta: string;
 	searchable: string;
 	title: string;
 	url: string;
@@ -62,6 +52,8 @@ genres: string[];
 };
 
 type HomeState = HomeFilterState & {
+	page: number;
+	url: string;
 	scrollY: number;
 	ts: number;
 };
@@ -116,7 +108,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const suggestionsCopy = searchRoot.querySelector<HTMLElement>('[data-movie-search-dropdown-copy]');
 	const suggestionsList = searchRoot.querySelector<HTMLElement>('[data-movie-search-suggestions]');
 	const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-movie-card]'));
-	const cardTemplates = Array.from(document.querySelectorAll<HTMLTemplateElement>('[data-movie-card-template]'));
+	const indexData = document.querySelector<HTMLScriptElement>('[data-home-movie-index]');
 	const people = Array.from(searchRoot.querySelectorAll<HTMLElement>('[data-person-search-entry]'));
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const subgenreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-subgenre-chip]'));
@@ -139,72 +131,30 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const resultCountLabel = document.querySelector<HTMLElement>('[data-home-result-count-label]');
 	const peopleShowcaseGrid = document.querySelector<HTMLElement>('[data-home-people-grid]');
 	const searchResultsGrid = document.querySelector<HTMLElement>('[data-movie-search-grid]');
+	const pagination = document.querySelector<HTMLElement>('[data-home-pagination]');
+	const previousPage = document.querySelector<HTMLButtonElement>('[data-home-page-previous]');
+	const nextPage = document.querySelector<HTMLButtonElement>('[data-home-page-next]');
+	const pageSummary = document.querySelector<HTMLElement>('[data-home-page-summary]');
+	const pageSize = 36;
+	const titleCollator = new Intl.Collator('es');
 
 	if (!(input instanceof HTMLInputElement)) {
 		return;
 	}
 
-	const getTemplateCard = (template: HTMLTemplateElement): HTMLElement | null =>
-		template.content.querySelector<HTMLElement>('[data-movie-card]');
-
-	const createMovieIndexEntry = (
-		card: HTMLElement,
-		template: HTMLTemplateElement | null,
-		initial: boolean,
-	): MovieIndexEntry => {
-		const poster = card.querySelector('[data-movie-poster]');
-		const link = card.querySelector('a');
-
+	const normalize = (value: string): string =>
+		value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+	const initialCards = new Map(cards.map((card) => [card.dataset.movieSlug, card]));
+	const initialOrder = new Map(cards.map((card, index) => [card.dataset.movieSlug, index]));
+	const records = JSON.parse(indexData?.textContent ?? '[]') as HomeMovieRecord[];
+	const movieIndex: MovieIndexEntry[] = records.map((record) => {
+		const card = initialCards.get(record.slug) ?? null;
 		return {
-			element: initial ? card : null,
-			template,
-			initial,
-			searchable: card.dataset.movieSearch ?? '',
-			title: card.dataset.movieTitle ?? '',
-			year: card.dataset.movieYear ?? '',
-			releaseTimestamp: Number(card.dataset.movieReleaseTimestamp ?? 0),
-			recentPremiere: card.dataset.movieRecentPremiere === 'true',
-			score: Number.isInteger(Number(card.dataset.movieScore)) && Number(card.dataset.movieScore) >= 1
-				? Number(card.dataset.movieScore)
-				: null,
-			url: card.dataset.movieUrl ?? (link instanceof HTMLAnchorElement ? link.href : ''),
-			posterUrl:
-				card.dataset.moviePosterUrl ??
-				(poster instanceof HTMLImageElement ? poster.currentSrc || poster.src : ''),
-			meta: card.dataset.movieMeta ?? '',
-			cast: card.dataset.movieCast ?? '',
-			entryType: 'movie',
-			platforms: new Set(
-				(card.dataset.moviePlatforms ?? '')
-					.split(',')
-					.map((value) => value.trim())
-					.filter(Boolean),
-			),
-			genres: new Set(
-				(card.dataset.movieGenres ?? '')
-					.split(',')
-					.map((value) => value.trim())
-					.filter(Boolean),
-			),
-			subgenres: new Set(
-				(card.dataset.movieSubgenres ?? '')
-					.split(',')
-					.map((value) => value.trim())
-					.filter(Boolean),
-			),
-			primaryGenre: card.dataset.moviePrimaryGenre ?? '',
-			poster: initial && poster instanceof HTMLImageElement ? poster : null,
+			...record, element: card, initial: card !== null, entryType: 'movie',
+			poster: card?.querySelector<HTMLImageElement>('[data-movie-poster]') ?? null,
 			linkPrepared: false,
 		};
-	};
-
-	const movieIndex = [
-		...cards.map((card) => createMovieIndexEntry(card, null, true)),
-		...cardTemplates.flatMap((template): MovieIndexEntry[] => {
-			const card = getTemplateCard(template);
-			return card instanceof HTMLElement ? [createMovieIndexEntry(card, template, false)] : [];
-		}),
-	];
+	});
 	const personIndex = people.flatMap((person): PersonIndexEntry[] => {
 		const url = person.dataset.personUrl ?? '';
 		const title = person.dataset.personTitle ?? '';
@@ -215,6 +165,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		return [{
 			searchable: person.dataset.personSearch ?? '',
+			normalizedTitle: normalize(title),
+			normalizedMeta: normalize(`${person.dataset.personMeta ?? ''} ${person.dataset.personKnownFor ?? ''}`),
 			title,
 			url,
 			posterUrl: person.dataset.personPosterUrl ?? '',
@@ -226,8 +178,26 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}];
 	});
 	const totalMovieCount = Number(searchResultsGrid?.dataset.movieTotalCount ?? movieIndex.length);
+	const orderedCatalogs = new Map<MovieSort, MovieIndexEntry[]>();
+	const getOrderedCatalog = (sort: MovieSort): MovieIndexEntry[] => {
+		const cached = orderedCatalogs.get(sort);
+		if (cached) return cached;
+		const entries = movieIndex.slice().sort((left, right) => {
+			const newestFirst = Number(right.year) - Number(left.year) || right.releaseTimestamp - left.releaseTimestamp;
+			if (sort === 'newest') return newestFirst || titleCollator.compare(left.title, right.title);
+			if (sort === 'oldest') return -newestFirst || titleCollator.compare(left.title, right.title);
+			if (sort === 'title') return titleCollator.compare(left.title, right.title);
+			const rank = (right.score ?? 0) - (left.score ?? 0);
+			return (sort === 'most-recommended' ? rank : -rank) || newestFirst || titleCollator.compare(left.title, right.title);
+		});
+		orderedCatalogs.set(sort, entries);
+		return entries;
+	};
 
 	let visibleMovieEntries = movieIndex.filter((entry) => entry.initial);
+	let matchingMovieEntries = visibleMovieEntries;
+	let currentPage = 0;
+	const suggestionScores = new Map<SearchSuggestionEntry, number>();
 	let activeGenres: string[] = [];
 	let activeEditorialFilters: string[] = [];
 	let activeSubgenres: string[] = [];
@@ -237,7 +207,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	let activeRecentPremiere = false;
 	let activeSort: MovieSort = 'newest';
 	let activeSortExplicit = false;
-	let lastAppliedQuery = '';
+	let lastAppliedQuery = '\u0000';
 	let lastAppliedGenre = '';
 	let lastAppliedEditorialFilters = '';
 	let lastAppliedSubgenre = '';
@@ -259,13 +229,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	let activeSuggestionIndex = -1;
 	let currentSuggestions: SearchSuggestionEntry[] = [];
 	let suggestionsDismissed = false;
-
-	const normalize = (value: string): string =>
-		value
-			.toLowerCase()
-			.normalize('NFD')
-			.replace(/[\u0300-\u036f]/g, '')
-			.trim();
 
 	const getChipValues = (chips: HTMLButtonElement[], dataKey: ChipDataKey): Set<string> =>
 		new Set(chips.map((chip) => chip.dataset[dataKey]).filter((value): value is string => Boolean(value)));
@@ -306,8 +269,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		values.push(value);
 	};
 
-	const matchesAnyFilterValue = (activeValues: string[], entryValues: Set<string>): boolean =>
-		activeValues.length === 0 || activeValues.some((value) => entryValues.has(value));
+	const matchesAnyFilterValue = (activeValues: string[], entryValues: string[]): boolean =>
+		activeValues.length === 0 || activeValues.some((value) => entryValues.includes(value));
 	const isMovieYearMatch = (year: string, activeValues: string[]): boolean => {
 		if (activeValues.length === 0) return true;
 		const numericYear = Number(year);
@@ -727,15 +690,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			return entry.element;
 		}
 
-		if (!(entry.template instanceof HTMLTemplateElement)) {
-			return null;
-		}
-
-		const card = entry.template.content.firstElementChild?.cloneNode(true);
-		if (!(card instanceof HTMLElement)) {
-			return null;
-		}
-
+		const card = createHomeMovieCard(entry);
 		entry.element = card;
 		const poster = card.querySelector('[data-movie-poster]');
 		entry.poster = poster instanceof HTMLImageElement ? poster : null;
@@ -749,6 +704,15 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			return;
 		}
 
+		// Release cards from previous pages. Keep only the original showcase and current page.
+		const retained = new Set(entries);
+		for (const entry of visibleMovieEntries) {
+			if (!entry.initial && !retained.has(entry)) {
+				entry.element = null;
+				entry.poster = null;
+				entry.linkPrepared = false;
+			}
+		}
 		const elements = entries
 			.map((entry) => ensureCardElement(entry))
 			.filter((element): element is HTMLElement => element instanceof HTMLElement);
@@ -757,8 +721,19 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			element.hidden = false;
 		}
 
-		searchResultsGrid.replaceChildren(...elements);
+		if (elements.length !== visibleMovieEntries.length || entries.some((entry, index) => entry !== visibleMovieEntries[index])) {
+			searchResultsGrid.replaceChildren(...elements);
+		}
 		visibleMovieEntries = entries.filter((entry) => entry.element instanceof HTMLElement);
+	};
+
+	const renderResultPage = (): void => {
+		const start = currentPage * pageSize;
+		renderMovieGrid(matchingMovieEntries.slice(start, start + pageSize));
+		if (pagination) pagination.hidden = matchingMovieEntries.length <= pageSize;
+		if (previousPage) previousPage.disabled = currentPage === 0;
+		if (nextPage) nextPage.disabled = start + pageSize >= matchingMovieEntries.length;
+		if (pageSummary) pageSummary.textContent = `${start + 1}–${Math.min(start + pageSize, matchingMovieEntries.length)} de ${resultCountFormatter.format(matchingMovieEntries.length)}`;
 	};
 
 	const updateClearButtonVisibility = (): void => {
@@ -819,8 +794,11 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	};
 
 	const getSuggestionScore = (entry: SearchSuggestionEntry, query: string): number => {
-		const normalizedTitle = normalize(entry.title);
-		const normalizedMeta = normalize(`${entry.meta} ${entry.cast}`);
+		const cached = suggestionScores.get(entry);
+		if (cached !== undefined) return cached;
+		const normalizedTitle = entry.entryType === 'movie' && entry.normalizedOriginalTitle.includes(query) && !entry.normalizedTitle.includes(query)
+			? entry.normalizedOriginalTitle : entry.normalizedTitle;
+		const normalizedMeta = entry.normalizedMeta;
 		let score = 300;
 
 		if (entry.entryType === 'person') score -= 35;
@@ -833,6 +811,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		if (entry.entryType === 'movie' && entry.year === query) score -= 35;
 		if (normalizedMeta.includes(query)) score -= 20;
 
+		suggestionScores.set(entry, score);
 		return score;
 	};
 
@@ -850,10 +829,19 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			return;
 		}
 
-		const suggestions = matchingEntries
-			.slice()
-			.sort((left, right) => getSuggestionScore(left, query) - getSuggestionScore(right, query))
-			.slice(0, 6);
+		// Select six suggestions in one pass; don't sort/normalize the entire pool.
+		const suggestions: SearchSuggestionEntry[] = [];
+		for (const entry of matchingEntries) {
+			const score = getSuggestionScore(entry, query);
+			const position = suggestions.findIndex((other) => score < getSuggestionScore(other, query));
+			if (position >= 0) suggestions.splice(position, 0, entry);
+			else if (suggestions.length < 6) suggestions.push(entry);
+			if (suggestions.length > 6) suggestions.pop();
+		}
+		if (currentSuggestions.length === suggestions.length && suggestions.every((entry, index) => entry === currentSuggestions[index])) {
+			suggestionsBox.hidden = false;
+			return;
+		}
 
 		currentSuggestions = suggestions;
 		activeSuggestionIndex = -1;
@@ -879,6 +867,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			poster.alt = '';
 			poster.loading = 'lazy';
 			poster.decoding = 'async';
+			poster.width = 48;
+			poster.height = 72;
 
 			const body = document.createElement('span');
 			body.className = 'movie-search__suggestion-body';
@@ -1088,6 +1078,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				recentPremiere: activeRecentPremiere,
 				sort: activeSort,
 				sortExplicit: activeSortExplicit,
+				page: currentPage,
+				url: window.location.pathname + window.location.search,
 				scrollY: Math.max(0, Math.round(window.scrollY)),
 				ts: Date.now(),
 			};
@@ -1098,7 +1090,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 	};
 
-	const runFilter = (force = false): number => {
+	const runFilter = (): number => {
 		const query = normalize(input.value);
 		const genreKey = activeGenres.join('|');
 		const editorialFilterKey = activeEditorialFilters.join('|');
@@ -1109,7 +1101,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		updateClearButtonVisibility();
 
 		if (
-			!force &&
 			query === lastAppliedQuery &&
 			genreKey === lastAppliedGenre &&
 			editorialFilterKey === lastAppliedEditorialFilters &&
@@ -1121,8 +1112,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			&& activeSort === lastAppliedSort
 			&& activeSortExplicit === lastAppliedSortExplicit
 		) {
-			const visibleCount = getVisibleEntries().length;
-			renderSuggestions(query, getSuggestionMatches(query, getVisibleEntries()));
+			const visibleCount = matchingMovieEntries.length;
+			renderSuggestions(query, getSuggestionMatches(query, matchingMovieEntries));
 			updateSummary(visibleCount);
 			return visibleCount;
 		}
@@ -1137,11 +1128,17 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		lastAppliedRecentPremiere = activeRecentPremiere;
 		lastAppliedSort = activeSort;
 		lastAppliedSortExplicit = activeSortExplicit;
+		suggestionScores.clear();
+		performance.clearMeasures('cineposta:search');
+		performance.mark('cineposta:search:start');
 
-		const matchingEntries: MovieIndexEntry[] = [];
+		let matchingEntries: MovieIndexEntry[] = [];
 		const shouldShowFullCatalogMatches = hasActiveCatalogQuery();
+		const rankByRelevance = Boolean(query) && !activeSortExplicit;
+		const relevanceBuckets = new Map<number, MovieIndexEntry[]>();
+		const catalog = shouldShowFullCatalogMatches ? getOrderedCatalog(activeSort) : movieIndex;
 
-		for (const entry of movieIndex) {
+		for (const entry of catalog) {
 			if (!shouldShowFullCatalogMatches) {
 				if (entry.initial) {
 					matchingEntries.push(entry);
@@ -1151,7 +1148,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 			// Musical also applies to films in other primary lanes, such as animation or comedy.
 			const genreMatch = activeGenres.length === 0 || activeGenres.some((genre) =>
-				genre === 'musical' ? entry.genres.has(genre) : entry.primaryGenre === genre,
+				genre === 'musical' ? entry.genres.includes(genre) : entry.primaryGenre === genre,
 			);
 			const editorialFilterMatch = matchesAnyFilterValue(activeEditorialFilters, entry.genres);
 			const subgenreMatch = matchesAnyFilterValue(activeSubgenres, entry.subgenres);
@@ -1163,23 +1160,26 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			const show = genreMatch && editorialFilterMatch && subgenreMatch && platformMatch && scoreMatch && yearMatch && premiereMatch && queryMatch;
 
 			if (show) {
-				matchingEntries.push(entry);
+				if (rankByRelevance) {
+					const rank = getSuggestionScore(entry, query);
+					const bucket = relevanceBuckets.get(rank);
+					if (bucket) bucket.push(entry);
+					else relevanceBuckets.set(rank, [entry]);
+				} else matchingEntries.push(entry);
 			}
 		}
 
-		if (shouldShowFullCatalogMatches) {
-			matchingEntries.sort((left, right) => {
-				const newestFirst =
-					Number(right.year) - Number(left.year) || right.releaseTimestamp - left.releaseTimestamp;
-				if (activeSort === 'newest') return newestFirst || left.title.localeCompare(right.title, 'es');
-				if (activeSort === 'oldest') return -newestFirst || left.title.localeCompare(right.title, 'es');
-				if (activeSort === 'title') return left.title.localeCompare(right.title, 'es');
-				const rankDelta = (right.score ?? 0) - (left.score ?? 0);
-				return (activeSort === 'most-recommended' ? rankDelta : -rankDelta) || newestFirst || left.title.localeCompare(right.title, 'es');
-			});
+		if (rankByRelevance) {
+			// Relevance has a small, fixed set of numeric ranks. Preserve cached catalog order
+			// within each bucket, sorting only those ranks rather than thousands of records.
+			matchingEntries = [...relevanceBuckets.keys()].sort((a, b) => a - b).flatMap((rank) => relevanceBuckets.get(rank) ?? []);
+		} else if (!shouldShowFullCatalogMatches) {
+			matchingEntries.sort((left, right) => (initialOrder.get(left.slug) ?? 0) - (initialOrder.get(right.slug) ?? 0));
 		}
 
-		renderMovieGrid(matchingEntries);
+		matchingMovieEntries = matchingEntries;
+		currentPage = 0;
+		renderResultPage();
 		const visibleCount = matchingEntries.length;
 
 		if (emptyState instanceof HTMLElement) {
@@ -1188,6 +1188,8 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		renderSuggestions(query, getSuggestionMatches(query, matchingEntries));
 		updateSummary(visibleCount);
+		performance.measure('cineposta:search', 'cineposta:search:start');
+		performance.clearMarks('cineposta:search:start');
 		return visibleCount;
 	};
 
@@ -1258,6 +1260,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	};
 
 	const resetCatalog = (mode: StatusMode = 'catalog', historyMode: HistoryUpdateMode = 'replace'): number => {
+		filterScheduleVersion += 1;
+		window.clearTimeout(filterTimer);
+		window.cancelAnimationFrame(filterFrame);
 		activeGenres = [];
 		activeEditorialFilters = [];
 		activeSubgenres = [];
@@ -1280,7 +1285,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		updateClearButtonVisibility();
 		removeStoredHomeState();
 		setReturnBehavior(null);
-		const visibleCount = runFilter(true);
+		const visibleCount = runFilter();
 		syncStatusWithVisiblePosters(mode, visibleCount);
 		return visibleCount;
 	};
@@ -1293,7 +1298,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		filterTimer = 0;
 		filterFrame = 0;
 
-		const visibleCount = runFilter(true);
+		const visibleCount = runFilter();
 		updateHomeUrl('replace');
 		persistHomeState();
 		syncStatusWithVisiblePosters('search', visibleCount);
@@ -1318,7 +1323,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 				persistHomeState();
 				syncStatusWithVisiblePosters('search', visibleCount);
 			});
-		}, 120);
+		}, 175);
 	};
 
 	const scrollToVisibleSearchResults = (): void => {
@@ -1346,7 +1351,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		window.clearTimeout(filterTimer);
 		window.cancelAnimationFrame(filterFrame);
 
-		const visibleCount = runFilter(true);
+		const visibleCount = runFilter();
 		updateHomeUrl('replace');
 		persistHomeState();
 		syncStatusWithVisiblePosters('search', visibleCount);
@@ -1358,6 +1363,9 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	};
 
 	const applyHomeFilterState = (state: HomeFilterState): void => {
+		filterScheduleVersion += 1;
+		window.clearTimeout(filterTimer);
+		window.cancelAnimationFrame(filterFrame);
 		input.value = state.query;
 		activeGenres = sanitizeFilterValues(state.genres, primaryGenreIds);
 		activeEditorialFilters = sanitizeFilterValues(state.editorialFilters, editorialFilterIds);
@@ -1376,7 +1384,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		applyQuickFilterUI();
 		applySortUI();
 		updateClearButtonVisibility();
-		lastAppliedQuery = '';
+		lastAppliedQuery = '\u0000';
 		lastAppliedGenre = '';
 		lastAppliedEditorialFilters = '';
 		lastAppliedSubgenre = '';
@@ -1392,7 +1400,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	const renderCurrentHomeState = (): void => {
 		const mode = getCurrentFilterMode();
-		const visibleCount = runFilter(true);
+		const visibleCount = runFilter();
 		syncStatusWithVisiblePosters(mode, visibleCount);
 	};
 
@@ -1418,13 +1426,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	const restoreHomeState = (): void => {
 		const urlState = readHomeStateFromUrl();
-		if (urlState) {
-			applyHomeFilterState(urlState);
-			updateHomeUrl('replace');
-			renderCurrentHomeState();
-			return;
-		}
-
 		let parsed: StoredHomeState | null = null;
 
 		try {
@@ -1434,6 +1435,22 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			}
 		} catch {
 			parsed = null;
+		}
+		const restorePage = (): void => {
+			if (!parsed || parsed.url !== window.location.pathname + window.location.search) return;
+			const page = Number(parsed.page);
+			const age = Date.now() - Number(parsed.ts ?? 0);
+			if (!Number.isInteger(page) || page <= 0 || page * pageSize >= matchingMovieEntries.length || !Number.isFinite(age) || age > 30 * 60 * 1000) return;
+			currentPage = page;
+			renderResultPage();
+			syncStatusWithVisiblePosters(getCurrentFilterMode(), matchingMovieEntries.length);
+		};
+		if (urlState) {
+			applyHomeFilterState(urlState);
+			updateHomeUrl('replace');
+			renderCurrentHomeState();
+			restorePage();
+			return;
 		}
 
 		if (!parsed || typeof parsed !== 'object') {
@@ -1465,6 +1482,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		});
 		updateHomeUrl('replace');
 		renderCurrentHomeState();
+		restorePage();
 
 		const savedScrollY = Number(parsed.scrollY);
 		if (Number.isFinite(savedScrollY) && savedScrollY > 0) {
@@ -1486,7 +1504,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		applySortUI();
 		showStatus(searchLoadingPhrases);
 		updateHomeUrl('push');
-		const visibleCount = runFilter(true);
+		const visibleCount = runFilter();
 		syncStatusWithVisiblePosters('search', visibleCount);
 		persistHomeState();
 	};
@@ -1626,8 +1644,24 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	input.addEventListener('input', () => {
 		suggestionsDismissed = false;
+		// Keyboard navigation must never activate suggestions from the previous query.
+		hideSuggestions();
+		updateClearButtonVisibility();
 		scheduleFilter();
 	});
+
+	const changePage = (direction: number): void => {
+		const page = currentPage + direction;
+		if (page < 0 || page * pageSize >= matchingMovieEntries.length) return;
+		currentPage = page;
+		renderResultPage();
+		persistHomeState();
+		syncStatusWithVisiblePosters(getCurrentFilterMode(), matchingMovieEntries.length);
+		// Put keyboard and touch users at the beginning of the new page.
+		searchResultsGrid?.scrollIntoView({ block: 'start', behavior: 'auto' });
+	};
+	previousPage?.addEventListener('click', () => changePage(-1));
+	nextPage?.addEventListener('click', () => changePage(1));
 
 	input.addEventListener('focus', () => {
 		if (
@@ -1654,6 +1688,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		if (currentSuggestions.length === 0) {
 			if (event.key === 'Escape') {
+				event.preventDefault();
 				settleSearchAndHideSuggestions();
 			}
 			return;
@@ -1699,6 +1734,7 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		}
 
 		if (event.key === 'Escape') {
+			event.preventDefault();
 			settleSearchAndHideSuggestions();
 		}
 	});

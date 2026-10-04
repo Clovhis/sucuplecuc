@@ -1,8 +1,18 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 import residentEvil from '../../src/data/editorials/resident-evil-noche-cero-la-veria-99-veces.json' with { type: 'json' };
 import miasma from '../../src/data/editorials/campamento-miasma-si-venis-por-jason-preparate-para-el-delirio.json' with { type: 'json' };
 import colony from '../../src/data/editorials/colony-zona-cero-me-gusto-pero-no-me-volo-la-peluca.json' with { type: 'json' };
 import cancelados from '../../src/data/editorials/cancelados-por-hollywood-estrellas-cima-exilio.json' with { type: 'json' };
+
+async function openEditorialIndex(page: Page): Promise<void> {
+  const link = page.getByRole('region', { name: 'Desde CinePosta' }).getByRole('link', { name: 'Todas las publicaciones' });
+  await link.scrollIntoViewIfNeeded();
+  // WebKit can hit-test the previous painted position immediately after a large
+  // programmatic scroll. Let that scroll paint before pressing the actual link.
+  await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
+  await link.click();
+  await expect(page).toHaveURL(/\/editorial\/$/);
+}
 
 for (const { entry, movieTitle, featured, sourcePattern } of [
   { entry: residentEvil, movieTitle: 'Resident Evil: Noche Cero', featured: false, sourcePattern: /^https:\/\/residentevil\.movie\// },
@@ -16,8 +26,7 @@ for (const { entry, movieTitle, featured, sourcePattern } of [
     const home = page.getByRole('region', { name: 'Desde CinePosta' });
     await expect(home.locator('.editorial-card')).toHaveCount(3);
     if (featured) await expect(home.getByRole('heading', { name: entry.title })).toBeVisible();
-    await home.getByRole('link', { name: 'Todas las publicaciones' }).click();
-    await expect(page).toHaveURL(/\/editorial\/$/);
+    await openEditorialIndex(page);
     const indexedEntry = page.locator('.editorial-card').filter({ hasText: entry.title });
     await expect(indexedEntry.getByText('5 min de lectura')).toBeVisible();
     await page.getByRole('heading', { name: entry.title }).click();
@@ -81,8 +90,7 @@ test(`${cancelados.slug}: note, internal biographies, SEO and images render on d
   const home = page.getByRole('region', { name: 'Desde CinePosta' });
   const homeCard = home.locator('.editorial-card').filter({ hasText: cancelados.title });
   await expect(homeCard).toBeVisible();
-  await home.getByRole('link', { name: 'Todas las publicaciones' }).click();
-  await expect(page).toHaveURL(/\/editorial\/$/);
+  await openEditorialIndex(page);
   const indexCard = page.locator('.editorial-card').filter({ hasText: cancelados.title });
   await expect(indexCard.getByText(`${expectedMinutes} min de lectura`)).toBeVisible();
   await indexCard.getByRole('heading', { name: cancelados.title }).click();
@@ -119,12 +127,12 @@ test(`${cancelados.slug}: note, internal biographies, SEO and images render on d
   expect(JSON.parse(schema!).timeRequired).toBe(`PT${expectedMinutes}M`);
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: testInfo.outputPath('cancelados-desktop-viewport.png') });
-  await page.screenshot({ path: testInfo.outputPath('cancelados-desktop.png'), fullPage: true });
+  await page.screenshot({ path: testInfo.outputPath('cancelados-desktop.png'), fullPage: true, scale: 'css' });
 
   await page.setViewportSize({ width: 320, height: 760 });
   await page.evaluate(() => window.scrollTo(0, 0));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath('cancelados-mobile-320-viewport.png') });
-  await page.screenshot({ path: testInfo.outputPath('cancelados-mobile-320.png'), fullPage: true });
+  await page.screenshot({ path: testInfo.outputPath('cancelados-mobile-320.png'), fullPage: true, scale: 'css' });
   expect(errors).toEqual([]);
 });

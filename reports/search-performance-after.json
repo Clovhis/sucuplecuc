@@ -1,0 +1,4816 @@
+{
+  "date": "2026-10-04",
+  "baseURL": "http://127.0.0.1:43210",
+  "scenarios": [
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "mobile": false,
+      "size": 2253,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 329,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 2253,
+              "ms": 0.8999999761581421
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.30000001192092896,
+              "inputToCommitMs": 193.90000000596046
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9000000059604645,
+            17.700000017881393,
+            1.9000000059604645,
+            1.800000011920929
+          ],
+          "nodes": 3682,
+          "cards": 36,
+          "searchMeasures": [
+            6.5999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 10.35,
+            "LayoutDuration": 11.809,
+            "RecalcStyleDuration": 5.898,
+            "TaskDuration": 133.077
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 256,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.800000011920929,
+              "inputToCommitMs": 198.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            16.099999994039536,
+            1.899999976158142,
+            1.300000011920929,
+            0.9000000059604645
+          ],
+          "nodes": 3687,
+          "cards": 36,
+          "searchMeasures": [
+            6.5
+          ],
+          "cpu": {
+            "ScriptDuration": 10.201,
+            "LayoutDuration": 11.286999999999999,
+            "RecalcStyleDuration": 5.410000000000001,
+            "TaskDuration": 136.22600000000003
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 195,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 202.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            16.30000001192093,
+            1.5,
+            0.5999999940395355,
+            0.699999988079071
+          ],
+          "nodes": 3686,
+          "cards": 36,
+          "searchMeasures": [
+            5.600000023841858
+          ],
+          "cpu": {
+            "ScriptDuration": 8.917000000000002,
+            "LayoutDuration": 10.242,
+            "RecalcStyleDuration": 6.292999999999998,
+            "TaskDuration": 130.37900000000002
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 74,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 16,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 201.40000000596046
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            10.199999988079071,
+            1.300000011920929,
+            1
+          ],
+          "nodes": 3302,
+          "cards": 16,
+          "searchMeasures": [
+            4.199999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 7.288999999999997,
+            "LayoutDuration": 7.119000000000001,
+            "RecalcStyleDuration": 4.239,
+            "TaskDuration": 130.76199999999994
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.4000000059604645,
+              "inputToCommitMs": 199.7000000178814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            13.899999976158142,
+            2.600000023841858,
+            1.5,
+            0.5999999940395355,
+            0.7000000178813934
+          ],
+          "nodes": 3671,
+          "cards": 36,
+          "searchMeasures": [
+            4.5999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 8.107000000000003,
+            "LayoutDuration": 11.966999999999999,
+            "RecalcStyleDuration": 5.659999999999998,
+            "TaskDuration": 138.77700000000004
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 40,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 15,
+              "ms": 0.7000000178813934,
+              "inputToCommitMs": 195.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            7.699999988079071,
+            1,
+            0.9000000059604645,
+            0.5999999940395355
+          ],
+          "nodes": 3278,
+          "cards": 15,
+          "searchMeasures": [
+            2.699999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 6.192000000000003,
+            "LayoutDuration": 5.756999999999998,
+            "RecalcStyleDuration": 4.775000000000001,
+            "TaskDuration": 130.23700000000005
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 297,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.4000000059604645,
+              "inputToCommitMs": 202.2000000178814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.7999999821186066,
+            13.5,
+            2.2000000178813934,
+            1,
+            0.9000000059604645
+          ],
+          "nodes": 3675,
+          "cards": 36,
+          "searchMeasures": [
+            6
+          ],
+          "cpu": {
+            "ScriptDuration": 9.662999999999998,
+            "LayoutDuration": 9.431000000000008,
+            "RecalcStyleDuration": 6.558000000000002,
+            "TaskDuration": 152.43200000000002
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 301,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.7000000178813934,
+              "inputToCommitMs": 201
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            13.300000011920929,
+            2.699999988079071,
+            1.300000011920929
+          ],
+          "nodes": 3668,
+          "cards": 36,
+          "searchMeasures": [
+            5.0999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 8.108999999999998,
+            "LayoutDuration": 10.075000000000001,
+            "RecalcStyleDuration": 5.130999999999997,
+            "TaskDuration": 131.656
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 322,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 198.69999998807907
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            13.5,
+            1.9000000059604645,
+            1.699999988079071,
+            1.199999988079071
+          ],
+          "nodes": 3678,
+          "cards": 36,
+          "searchMeasures": [
+            5.200000017881393
+          ],
+          "cpu": {
+            "ScriptDuration": 8.170999999999998,
+            "LayoutDuration": 10.519,
+            "RecalcStyleDuration": 5.638000000000004,
+            "TaskDuration": 134.99900000000008
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 2,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 195.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            4.4000000059604645,
+            1.0999999940395355
+          ],
+          "nodes": 3014,
+          "cards": 2,
+          "searchMeasures": [
+            2.5999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 5.470000000000002,
+            "LayoutDuration": 2.872999999999987,
+            "RecalcStyleDuration": 4.042999999999998,
+            "TaskDuration": 95.46999999999994
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0.10000002384185791
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0.09999999403953552,
+              "inputToCommitMs": 194.80000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            4.0999999940395355
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            0.5
+          ],
+          "cpu": {
+            "ScriptDuration": 3.849000000000005,
+            "LayoutDuration": 2.627000000000004,
+            "RecalcStyleDuration": 9.508000000000003,
+            "TaskDuration": 111.25800000000008
+          }
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "mobile": false,
+      "size": 5000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 307,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 5000,
+              "ms": 2.2000000178813934
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.29999998211860657,
+              "inputToCommitMs": 192.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9000000059604645,
+            17.900000005960464,
+            2.4000000059604645,
+            1.199999988079071,
+            1.2999999821186066,
+            0.800000011920929
+          ],
+          "nodes": 3688,
+          "cards": 36,
+          "searchMeasures": [
+            8.5
+          ],
+          "cpu": {
+            "ScriptDuration": 12.869,
+            "LayoutDuration": 12.501999999999999,
+            "RecalcStyleDuration": 5.518999999999999,
+            "TaskDuration": 132.554
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 282,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 207.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            19.599999994039536,
+            2.7000000178813934,
+            1.7999999821186066,
+            0.5999999940395355
+          ],
+          "nodes": 3685,
+          "cards": 36,
+          "searchMeasures": [
+            8.699999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 12.630999999999998,
+            "LayoutDuration": 13.129000000000001,
+            "RecalcStyleDuration": 6.9639999999999995,
+            "TaskDuration": 144.18900000000002
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 246,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.7999999821186066,
+              "inputToCommitMs": 203.39999997615814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            16.299999982118607,
+            2.4000000059604645,
+            1.300000011920929
+          ],
+          "nodes": 3682,
+          "cards": 36,
+          "searchMeasures": [
+            7.899999976158142
+          ],
+          "cpu": {
+            "ScriptDuration": 11.358000000000004,
+            "LayoutDuration": 10.324,
+            "RecalcStyleDuration": 4.951000000000002,
+            "TaskDuration": 121.88399999999999
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 208,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 34,
+              "ms": 0.7000000178813934,
+              "inputToCommitMs": 197.59999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            15.099999994039536,
+            2,
+            1
+          ],
+          "nodes": 3648,
+          "cards": 34,
+          "searchMeasures": [
+            6.299999982118607
+          ],
+          "cpu": {
+            "ScriptDuration": 9.384999999999998,
+            "LayoutDuration": 9.917999999999996,
+            "RecalcStyleDuration": 5.303999999999999,
+            "TaskDuration": 139.81000000000006
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 199.59999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            12.900000005960464,
+            2.5999999940395355,
+            1.2999999821186066,
+            0.7999999821186066
+          ],
+          "nodes": 3674,
+          "cards": 36,
+          "searchMeasures": [
+            4.799999982118607
+          ],
+          "cpu": {
+            "ScriptDuration": 8.490000000000004,
+            "LayoutDuration": 10.895000000000001,
+            "RecalcStyleDuration": 5.155,
+            "TaskDuration": 133.44899999999993
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 70,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 31,
+              "ms": 0.800000011920929,
+              "inputToCommitMs": 194.2000000178814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.800000011920929,
+            10.400000005960464,
+            1.0999999940395355,
+            0.699999988079071
+          ],
+          "nodes": 3579,
+          "cards": 31,
+          "searchMeasures": [
+            4.200000017881393
+          ],
+          "cpu": {
+            "ScriptDuration": 7.545999999999998,
+            "LayoutDuration": 6.9450000000000065,
+            "RecalcStyleDuration": 5.392000000000001,
+            "TaskDuration": 134.9999999999999
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 311,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 196
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9000000059604645,
+            14.900000005960464,
+            2.7000000178813934,
+            1.0999999940395355
+          ],
+          "nodes": 3693,
+          "cards": 36,
+          "searchMeasures": [
+            7.4000000059604645
+          ],
+          "cpu": {
+            "ScriptDuration": 10.993999999999996,
+            "LayoutDuration": 9.645999999999988,
+            "RecalcStyleDuration": 6.218000000000002,
+            "TaskDuration": 134.05100000000004
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 392,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 191.2999999821186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            12,
+            2.300000011920929
+          ],
+          "nodes": 3685,
+          "cards": 36,
+          "searchMeasures": [
+            5.799999982118607
+          ],
+          "cpu": {
+            "ScriptDuration": 8.799000000000001,
+            "LayoutDuration": 7.737000000000008,
+            "RecalcStyleDuration": 4.7029999999999985,
+            "TaskDuration": 130.38299999999992
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 303,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.7999999821186066,
+              "inputToCommitMs": 190.69999998807907
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            15.599999994039536,
+            1.699999988079071,
+            1,
+            1.199999988079071
+          ],
+          "nodes": 3676,
+          "cards": 36,
+          "searchMeasures": [
+            7.199999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 11.763999999999996,
+            "LayoutDuration": 9.748999999999993,
+            "RecalcStyleDuration": 7.934999999999998,
+            "TaskDuration": 148.528
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 6,
+              "ms": 0.6000000238418579,
+              "inputToCommitMs": 199.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            6.300000011920929,
+            0.5999999940395355
+          ],
+          "nodes": 3103,
+          "cards": 6,
+          "searchMeasures": [
+            3.9000000059604645
+          ],
+          "cpu": {
+            "ScriptDuration": 6.957000000000005,
+            "LayoutDuration": 3.1100000000000017,
+            "RecalcStyleDuration": 4.755000000000003,
+            "TaskDuration": 118.68300000000009
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0.19999998807907104,
+              "inputToCommitMs": 201.69999998807907
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.6000000238418579,
+            4.5,
+            0.6000000238418579
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            0.699999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 3.937999999999997,
+            "LayoutDuration": 2.732999999999999,
+            "RecalcStyleDuration": 9.276999999999994,
+            "TaskDuration": 100.07199999999995
+          }
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "mobile": false,
+      "size": 10000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3171,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 283,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 10000,
+              "ms": 5.300000011920929
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.29999998211860657,
+              "inputToCommitMs": 211.7999999821186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9000000059604645,
+            24.80000001192093,
+            2,
+            1.4000000059604645,
+            0.9000000059604645
+          ],
+          "nodes": 3678,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": 17.671,
+            "LayoutDuration": 12.274000000000001,
+            "RecalcStyleDuration": 5.577,
+            "TaskDuration": 138.463
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 281,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 204.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9000000059604645,
+            22.799999982118607,
+            2,
+            1.800000011920929,
+            0.800000011920929
+          ],
+          "nodes": 3699,
+          "cards": 36,
+          "searchMeasures": [
+            12
+          ],
+          "cpu": {
+            "ScriptDuration": 15.279000000000002,
+            "LayoutDuration": 12.635,
+            "RecalcStyleDuration": 6.116999999999999,
+            "TaskDuration": 130.713
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 350,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.800000011920929,
+              "inputToCommitMs": 205.60000002384186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            17.19999998807907,
+            2.7000000178813934,
+            1.699999988079071
+          ],
+          "nodes": 3698,
+          "cards": 36,
+          "searchMeasures": [
+            9.699999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 12.992999999999997,
+            "LayoutDuration": 9.939999999999998,
+            "RecalcStyleDuration": 4.623000000000002,
+            "TaskDuration": 121.90100000000004
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 134,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.800000011920929,
+              "inputToCommitMs": 205
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            17.900000005960464,
+            1.4000000059604645
+          ],
+          "nodes": 3703,
+          "cards": 36,
+          "searchMeasures": [
+            10
+          ],
+          "cpu": {
+            "ScriptDuration": 13.024000000000001,
+            "LayoutDuration": 8.408,
+            "RecalcStyleDuration": 4.611999999999998,
+            "TaskDuration": 116.91399999999996
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 285,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 192
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.800000011920929,
+            15.599999994039536,
+            2.4000000059604645,
+            2,
+            0.7999999821186066
+          ],
+          "nodes": 3676,
+          "cards": 36,
+          "searchMeasures": [
+            6.5999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 9.827999999999996,
+            "LayoutDuration": 11.825000000000003,
+            "RecalcStyleDuration": 5.679,
+            "TaskDuration": 133.286
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 58,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 199
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.7000000178813934,
+            11.599999994039536,
+            1,
+            1.100000023841858
+          ],
+          "nodes": 3660,
+          "cards": 36,
+          "searchMeasures": [
+            5
+          ],
+          "cpu": {
+            "ScriptDuration": 8.069000000000006,
+            "LayoutDuration": 7.043000000000001,
+            "RecalcStyleDuration": 4.924999999999999,
+            "TaskDuration": 137.81600000000006
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 357,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.7999999821186066,
+              "inputToCommitMs": 197.69999998807907
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            17.30000001192093,
+            2.399999976158142,
+            1.4000000059604645
+          ],
+          "nodes": 3699,
+          "cards": 36,
+          "searchMeasures": [
+            10.199999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 13.502,
+            "LayoutDuration": 9.215000000000002,
+            "RecalcStyleDuration": 5.278000000000005,
+            "TaskDuration": 124.413
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 330,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 203.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9000000059604645,
+            12.900000005960464,
+            3
+          ],
+          "nodes": 3654,
+          "cards": 36,
+          "searchMeasures": [
+            7.5
+          ],
+          "cpu": {
+            "ScriptDuration": 10.231000000000003,
+            "LayoutDuration": 7.48,
+            "RecalcStyleDuration": 4.511999999999995,
+            "TaskDuration": 110.0660000000001
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 279,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5,
+              "inputToCommitMs": 199.7000000178814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            17.400000005960464,
+            1.699999988079071,
+            0.9000000059604645
+          ],
+          "nodes": 3668,
+          "cards": 36,
+          "searchMeasures": [
+            9.899999976158142
+          ],
+          "cpu": {
+            "ScriptDuration": 12.845999999999997,
+            "LayoutDuration": 7.935999999999998,
+            "RecalcStyleDuration": 5.384,
+            "TaskDuration": 134.2970000000001
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 10,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 196.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            9.400000005960464,
+            0.5999999940395355
+          ],
+          "nodes": 3174,
+          "cards": 10,
+          "searchMeasures": [
+            6.100000023841858
+          ],
+          "cpu": {
+            "ScriptDuration": 9.870000000000005,
+            "LayoutDuration": 3.253000000000006,
+            "RecalcStyleDuration": 4.096000000000003,
+            "TaskDuration": 106.48400000000002
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0.19999998807907104,
+              "inputToCommitMs": 194.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.7000000178813934,
+            4.699999988079071
+          ],
+          "nodes": 3171,
+          "cards": 12,
+          "searchMeasures": [
+            0.8999999761581421
+          ],
+          "cpu": {
+            "ScriptDuration": 3.919000000000006,
+            "LayoutDuration": 2.6029999999999944,
+            "RecalcStyleDuration": 8.996999999999998,
+            "TaskDuration": 97.46600000000005
+          }
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "mobile": true,
+      "size": 2253,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 329,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 2253,
+              "ms": 0.7999999821186066
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.30000001192092896,
+              "inputToCommitMs": 189.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            2.300000011920929,
+            15.099999994039536,
+            1.199999988079071,
+            0.699999988079071,
+            0.8999999761581421
+          ],
+          "nodes": 3682,
+          "cards": 36,
+          "searchMeasures": [
+            5.699999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 8.475,
+            "LayoutDuration": 11.494000000000002,
+            "RecalcStyleDuration": 4.094,
+            "TaskDuration": 107.05400000000002
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 256,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 199.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            17.30000001192093,
+            1.9000000059604645,
+            1.2000000178813934,
+            1.2999999821186066
+          ],
+          "nodes": 3687,
+          "cards": 36,
+          "searchMeasures": [
+            6.399999976158142
+          ],
+          "cpu": {
+            "ScriptDuration": 9.489999999999998,
+            "LayoutDuration": 12.083,
+            "RecalcStyleDuration": 5.044,
+            "TaskDuration": 126.41600000000003
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 195,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 191
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            15.700000017881393,
+            1.2999999821186066
+          ],
+          "nodes": 3686,
+          "cards": 36,
+          "searchMeasures": [
+            5.5
+          ],
+          "cpu": {
+            "ScriptDuration": 8.444,
+            "LayoutDuration": 9.754,
+            "RecalcStyleDuration": 4.33,
+            "TaskDuration": 91.12599999999999
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 74,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 16,
+              "ms": 0.800000011920929,
+              "inputToCommitMs": 191.10000002384186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            10.199999988079071,
+            1,
+            0.800000011920929
+          ],
+          "nodes": 3302,
+          "cards": 16,
+          "searchMeasures": [
+            4.0999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 6.4780000000000015,
+            "LayoutDuration": 6.692999999999998,
+            "RecalcStyleDuration": 2.7669999999999986,
+            "TaskDuration": 58.45
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.29999998211860657,
+              "inputToCommitMs": 191.2999999821186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            13.199999988079071,
+            2.5999999940395355,
+            0.800000011920929,
+            0.5999999940395355
+          ],
+          "nodes": 3671,
+          "cards": 36,
+          "searchMeasures": [
+            4.800000011920929
+          ],
+          "cpu": {
+            "ScriptDuration": 7.524999999999997,
+            "LayoutDuration": 10.557000000000004,
+            "RecalcStyleDuration": 3.979,
+            "TaskDuration": 137.26
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 40,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 15,
+              "ms": 0.800000011920929,
+              "inputToCommitMs": 197.2000000178814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            7.299999982118607,
+            0.800000011920929,
+            0.5999999940395355
+          ],
+          "nodes": 3278,
+          "cards": 15,
+          "searchMeasures": [
+            2.5
+          ],
+          "cpu": {
+            "ScriptDuration": 5.0560000000000045,
+            "LayoutDuration": 5.143999999999996,
+            "RecalcStyleDuration": 2.937000000000002,
+            "TaskDuration": 61.278999999999975
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 297,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.4000000059604645,
+              "inputToCommitMs": 198.7000000178814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            15.099999994039536,
+            1.7999999821186066,
+            0.5999999940395355
+          ],
+          "nodes": 3675,
+          "cards": 36,
+          "searchMeasures": [
+            5.700000017881393
+          ],
+          "cpu": {
+            "ScriptDuration": 8.771999999999995,
+            "LayoutDuration": 9.493000000000002,
+            "RecalcStyleDuration": 5.7209999999999965,
+            "TaskDuration": 140.4749999999999
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 301,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.6000000238418579,
+              "inputToCommitMs": 196.60000002384186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            12.699999988079071,
+            2.5,
+            0.800000011920929
+          ],
+          "nodes": 3668,
+          "cards": 36,
+          "searchMeasures": [
+            4.799999982118607
+          ],
+          "cpu": {
+            "ScriptDuration": 7.363000000000001,
+            "LayoutDuration": 9.552000000000005,
+            "RecalcStyleDuration": 3.9490000000000047,
+            "TaskDuration": 114.69200000000002
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 322,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 195.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            13.800000011920929,
+            1.199999988079071,
+            0.800000011920929,
+            1.0999999940395355
+          ],
+          "nodes": 3678,
+          "cards": 36,
+          "searchMeasures": [
+            5.300000011920929
+          ],
+          "cpu": {
+            "ScriptDuration": 7.836000000000003,
+            "LayoutDuration": 9.411000000000003,
+            "RecalcStyleDuration": 4.499999999999997,
+            "TaskDuration": 74.21600000000007
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 2,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 194.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            4.199999988079071,
+            0.6000000238418579
+          ],
+          "nodes": 3014,
+          "cards": 2,
+          "searchMeasures": [
+            2.399999976158142
+          ],
+          "cpu": {
+            "ScriptDuration": 4.496,
+            "LayoutDuration": 2.3099999999999925,
+            "RecalcStyleDuration": 2.3120000000000016,
+            "TaskDuration": 56.37900000000007
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0.10000002384185791
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0.09999999403953552,
+              "inputToCommitMs": 188.59999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            3.300000011920929
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            0.5
+          ],
+          "cpu": {
+            "ScriptDuration": 2.5499999999999967,
+            "LayoutDuration": 1.9389999999999963,
+            "RecalcStyleDuration": 6.152999999999999,
+            "TaskDuration": 44.094999999999885
+          }
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "mobile": true,
+      "size": 5000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3171,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 307,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 5000,
+              "ms": 2
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.30000001192092896,
+              "inputToCommitMs": 191
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            2.4000000059604645,
+            18.200000017881393,
+            1.5,
+            1.0999999940395355
+          ],
+          "nodes": 3687,
+          "cards": 36,
+          "searchMeasures": [
+            8.199999988079071
+          ],
+          "cpu": {
+            "ScriptDuration": 11.254,
+            "LayoutDuration": 12.075000000000001,
+            "RecalcStyleDuration": 4.326,
+            "TaskDuration": 108.96700000000001
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 282,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.7000000178813934,
+              "inputToCommitMs": 210
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            19.399999976158142,
+            2.4000000059604645,
+            1.199999988079071
+          ],
+          "nodes": 3684,
+          "cards": 36,
+          "searchMeasures": [
+            8.299999982118607
+          ],
+          "cpu": {
+            "ScriptDuration": 11.295,
+            "LayoutDuration": 12.106,
+            "RecalcStyleDuration": 4.961,
+            "TaskDuration": 125.20700000000001
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 246,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 191.90000000596046
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            16.400000005960464,
+            1.7000000178813934
+          ],
+          "nodes": 3681,
+          "cards": 36,
+          "searchMeasures": [
+            6.9000000059604645
+          ],
+          "cpu": {
+            "ScriptDuration": 9.54,
+            "LayoutDuration": 9.371999999999998,
+            "RecalcStyleDuration": 3.528,
+            "TaskDuration": 82.15700000000001
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 208,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 34,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 206.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            14.200000017881393,
+            1.2000000178813934,
+            0.5999999940395355
+          ],
+          "nodes": 3647,
+          "cards": 34,
+          "searchMeasures": [
+            6.0999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 8.713999999999999,
+            "LayoutDuration": 8.292000000000002,
+            "RecalcStyleDuration": 3.9760000000000004,
+            "TaskDuration": 70.18999999999997
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 193
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            15.299999982118607,
+            1.5999999940395355,
+            0.9000000059604645,
+            0.5999999940395355
+          ],
+          "nodes": 3673,
+          "cards": 36,
+          "searchMeasures": [
+            5
+          ],
+          "cpu": {
+            "ScriptDuration": 7.718000000000003,
+            "LayoutDuration": 10.930000000000001,
+            "RecalcStyleDuration": 4.577000000000001,
+            "TaskDuration": 134.71499999999997
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 70,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 31,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 198.80000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            10.200000017881393,
+            1.199999988079071
+          ],
+          "nodes": 3578,
+          "cards": 31,
+          "searchMeasures": [
+            3.4000000059604645
+          ],
+          "cpu": {
+            "ScriptDuration": 6.0269999999999975,
+            "LayoutDuration": 6.592999999999995,
+            "RecalcStyleDuration": 3.757,
+            "TaskDuration": 66.1480000000001
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 311,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 198.7999999821186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            18.299999982118607,
+            1.600000023841858
+          ],
+          "nodes": 3692,
+          "cards": 36,
+          "searchMeasures": [
+            8.599999994039536
+          ],
+          "cpu": {
+            "ScriptDuration": 11.508000000000004,
+            "LayoutDuration": 9.066999999999998,
+            "RecalcStyleDuration": 5.686999999999998,
+            "TaskDuration": 130.36899999999997
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 392,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.6000000238418579,
+              "inputToCommitMs": 189.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.699999988079071,
+            12.200000017881393,
+            2.300000011920929,
+            0.9000000059604645
+          ],
+          "nodes": 3684,
+          "cards": 36,
+          "searchMeasures": [
+            6.0999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 8.562,
+            "LayoutDuration": 8.088999999999999,
+            "RecalcStyleDuration": 3.5620000000000025,
+            "TaskDuration": 114.11799999999994
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 303,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 189.69999998807907
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            13.599999994039536,
+            1.699999988079071,
+            0.8999999761581421
+          ],
+          "nodes": 3675,
+          "cards": 36,
+          "searchMeasures": [
+            6.5999999940395355
+          ],
+          "cpu": {
+            "ScriptDuration": 9.121999999999991,
+            "LayoutDuration": 7.908999999999999,
+            "RecalcStyleDuration": 3.6580000000000017,
+            "TaskDuration": 63.06400000000001
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 6,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 201.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            6.800000011920929
+          ],
+          "nodes": 3102,
+          "cards": 6,
+          "searchMeasures": [
+            3.9000000059604645
+          ],
+          "cpu": {
+            "ScriptDuration": 6.190000000000001,
+            "LayoutDuration": 3.0150000000000037,
+            "RecalcStyleDuration": 2.7449999999999974,
+            "TaskDuration": 42.278999999999954
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0.29999998211860657,
+              "inputToCommitMs": 193.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.7000000178813934,
+            3.4000000059604645
+          ],
+          "nodes": 3171,
+          "cards": 12,
+          "searchMeasures": [
+            0.5
+          ],
+          "cpu": {
+            "ScriptDuration": 2.868000000000009,
+            "LayoutDuration": 2.0060000000000078,
+            "RecalcStyleDuration": 6.8160000000000025,
+            "TaskDuration": 56.18600000000007
+          }
+        }
+      ]
+    },
+    {
+      "engine": "chromium",
+      "browserVersion": "148.0.7778.96",
+      "mobile": true,
+      "size": 10000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 283,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 10000,
+              "ms": 4.700000017881393
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5,
+              "inputToCommitMs": 194.40000000596046
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            2.2000000178813934,
+            21.69999998807907,
+            1.2999999821186066,
+            1
+          ],
+          "nodes": 3679,
+          "cards": 36,
+          "searchMeasures": [
+            12.800000011920929
+          ],
+          "cpu": {
+            "ScriptDuration": 16.046000000000003,
+            "LayoutDuration": 10.651000000000002,
+            "RecalcStyleDuration": 4.4479999999999995,
+            "TaskDuration": 111.99100000000001
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 281,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5,
+              "inputToCommitMs": 194.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.6000000238418579,
+            21.099999994039536,
+            1.9000000059604645,
+            1.9000000059604645
+          ],
+          "nodes": 3700,
+          "cards": 36,
+          "searchMeasures": [
+            11.299999982118607
+          ],
+          "cpu": {
+            "ScriptDuration": 14.629999999999997,
+            "LayoutDuration": 10.699999999999998,
+            "RecalcStyleDuration": 5.553,
+            "TaskDuration": 127.87199999999999
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 350,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 211.19999998807907
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            17.400000005960464,
+            1.7999999821186066,
+            0.699999988079071
+          ],
+          "nodes": 3699,
+          "cards": 36,
+          "searchMeasures": [
+            9.300000011920929
+          ],
+          "cpu": {
+            "ScriptDuration": 11.685000000000004,
+            "LayoutDuration": 9.316,
+            "RecalcStyleDuration": 3.439000000000001,
+            "TaskDuration": 84.38699999999999
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 134,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 207.19999998807907
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            15.599999994039536,
+            1
+          ],
+          "nodes": 3704,
+          "cards": 36,
+          "searchMeasures": [
+            7.600000023841858
+          ],
+          "cpu": {
+            "ScriptDuration": 10.033999999999994,
+            "LayoutDuration": 7.634000000000002,
+            "RecalcStyleDuration": 3.192,
+            "TaskDuration": 66.216
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 285,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1.0999999940395355,
+              "inputToCommitMs": 196.2000000178814
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            18.900000005960464,
+            1.7000000178813934,
+            0.9000000059604645,
+            0.5999999940395355
+          ],
+          "nodes": 3677,
+          "cards": 36,
+          "searchMeasures": [
+            8.200000017881393
+          ],
+          "cpu": {
+            "ScriptDuration": 11.136000000000006,
+            "LayoutDuration": 11.553999999999995,
+            "RecalcStyleDuration": 4.8629999999999995,
+            "TaskDuration": 116.51199999999994
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 58,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.699999988079071,
+              "inputToCommitMs": 204.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9000000059604645,
+            11.099999994039536,
+            1.0999999940395355,
+            0.9000000059604645
+          ],
+          "nodes": 3661,
+          "cards": 36,
+          "searchMeasures": [
+            4.5
+          ],
+          "cpu": {
+            "ScriptDuration": 6.943999999999992,
+            "LayoutDuration": 7.425000000000001,
+            "RecalcStyleDuration": 3.5920000000000014,
+            "TaskDuration": 71.39499999999998
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 357,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.7000000178813934,
+              "inputToCommitMs": 206.60000002384186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            16.299999982118607,
+            1.5999999940395355,
+            1
+          ],
+          "nodes": 3700,
+          "cards": 36,
+          "searchMeasures": [
+            9
+          ],
+          "cpu": {
+            "ScriptDuration": 11.795,
+            "LayoutDuration": 8.614999999999998,
+            "RecalcStyleDuration": 4.371999999999997,
+            "TaskDuration": 121.90400000000001
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 330,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.5999999940395355,
+              "inputToCommitMs": 191.30000001192093
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            13,
+            0.7999999821186066
+          ],
+          "nodes": 3655,
+          "cards": 36,
+          "searchMeasures": [
+            7
+          ],
+          "cpu": {
+            "ScriptDuration": 9.248000000000006,
+            "LayoutDuration": 5.998000000000003,
+            "RecalcStyleDuration": 3.7519999999999984,
+            "TaskDuration": 117.73299999999998
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 279,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.7000000178813934,
+              "inputToCommitMs": 204.90000000596046
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            17.600000023841858,
+            1.199999988079071,
+            0.5999999940395355
+          ],
+          "nodes": 3669,
+          "cards": 36,
+          "searchMeasures": [
+            10.100000023841858
+          ],
+          "cpu": {
+            "ScriptDuration": 12.438999999999991,
+            "LayoutDuration": 7.170999999999997,
+            "RecalcStyleDuration": 4.265000000000005,
+            "TaskDuration": 61.04600000000004
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 10,
+              "ms": 0.800000011920929,
+              "inputToCommitMs": 199.5
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            10.599999994039536,
+            0.7000000178813934,
+            0.6000000238418579
+          ],
+          "nodes": 3175,
+          "cards": 10,
+          "searchMeasures": [
+            7
+          ],
+          "cpu": {
+            "ScriptDuration": 9.346000000000007,
+            "LayoutDuration": 4.13200000000001,
+            "RecalcStyleDuration": 2.7599999999999985,
+            "TaskDuration": 50.57199999999995
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0.29999998211860657,
+              "inputToCommitMs": 186.09999999403954
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.5999999940395355,
+            4
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            1
+          ],
+          "cpu": {
+            "ScriptDuration": 3.0929999999999986,
+            "LayoutDuration": 1.9489999999999923,
+            "RecalcStyleDuration": 5.921999999999997,
+            "TaskDuration": 56.12799999999996
+          }
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "mobile": false,
+      "size": 2253,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 329,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 2253,
+              "ms": 1
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.9999999999995453,
+              "inputToCommitMs": 209
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            13,
+            1,
+            1.0000000000004547,
+            1,
+            1,
+            1.0000000000004547,
+            1,
+            1,
+            0.9999999999995453,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3682,
+          "cards": 36,
+          "searchMeasures": [
+            12
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 256,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 0.9999999999995453,
+              "inputToCommitMs": 200
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9999999999995453,
+            0.9999999999995453,
+            1,
+            0.9999999999995453,
+            1.0000000000004547,
+            10.999999999999545,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0.9999999999995453,
+            1,
+            1
+          ],
+          "nodes": 3687,
+          "cards": 36,
+          "searchMeasures": [
+            10.999999999999545
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 195,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 223
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            9,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1.0000000000009095,
+            1,
+            1,
+            18,
+            1
+          ],
+          "nodes": 3686,
+          "cards": 36,
+          "searchMeasures": [
+            9
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 74,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 16,
+              "ms": 2,
+              "inputToCommitMs": 188
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1.0000000000009095,
+            1,
+            1,
+            5,
+            1,
+            1,
+            1,
+            1,
+            0.9999999999990905,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3302,
+          "cards": 16,
+          "searchMeasures": [
+            4
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1.0000000000009095,
+              "inputToCommitMs": 196.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9999999999990905,
+            1.0000000000009095,
+            0.9999999999990905,
+            0.9999999999990905,
+            16,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0.9999999999990905,
+            1.0000000000009095,
+            1,
+            1
+          ],
+          "nodes": 3671,
+          "cards": 36,
+          "searchMeasures": [
+            16
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 40,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 15,
+              "ms": 3,
+              "inputToCommitMs": 195.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1.000000000001819,
+            1.0000000000009095,
+            0.9999999999990905,
+            1,
+            1
+          ],
+          "nodes": 3278,
+          "cards": 15,
+          "searchMeasures": [
+            6
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 297,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 212
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            10,
+            1,
+            0.999999999998181,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            10,
+            0.999999999998181,
+            0.999999999998181
+          ],
+          "nodes": 3675,
+          "cards": 36,
+          "searchMeasures": [
+            9
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 301,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 226
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.999999999998181,
+            1,
+            9.999999999998181,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0.999999999998181,
+            1
+          ],
+          "nodes": 3668,
+          "cards": 36,
+          "searchMeasures": [
+            9.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 322,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1.000000000001819,
+              "inputToCommitMs": 209.00000000000182
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            11,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1.000000000001819,
+            0.999999999998181,
+            0.999999999998181,
+            1,
+            9.999999999998181
+          ],
+          "nodes": 3678,
+          "cards": 36,
+          "searchMeasures": [
+            11
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 2,
+              "ms": 1,
+              "inputToCommitMs": 190
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1.000000000001819,
+            1,
+            1,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3014,
+          "cards": 2,
+          "searchMeasures": [
+            3
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 3,
+              "inputToCommitMs": 189
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1.000000000001819,
+            1,
+            1,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1.000000000001819,
+            2,
+            0.999999999998181,
+            1.000000000001819,
+            7,
+            7,
+            7,
+            7.000000000001819,
+            7,
+            7,
+            7
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            3
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "mobile": false,
+      "size": 5000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 307,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 5000,
+              "ms": 3
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 244
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9999999999995453,
+            1,
+            1,
+            1,
+            1,
+            14,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1.0000000000004547,
+            1,
+            1.0000000000004547,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3688,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 282,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2.0000000000004547,
+              "inputToCommitMs": 209.00000000000045
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9999999999995453,
+            1,
+            2.0000000000004547,
+            13.999999999999545,
+            1.0000000000004547,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1.0000000000004547,
+            1.0000000000004547,
+            1,
+            0.9999999999990905,
+            1
+          ],
+          "nodes": 3685,
+          "cards": 36,
+          "searchMeasures": [
+            13.999999999999545
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 246,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2.0000000000009095,
+              "inputToCommitMs": 248.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            0.9999999999990905,
+            1,
+            1.0000000000009095,
+            8.99999999999909,
+            1.0000000000009095,
+            1,
+            1,
+            1.0000000000009095,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3682,
+          "cards": 36,
+          "searchMeasures": [
+            8.99999999999909
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 208,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 34,
+              "ms": 1,
+              "inputToCommitMs": 207
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            2,
+            9,
+            1,
+            1,
+            1,
+            1.0000000000009095,
+            0.9999999999990905,
+            0.9999999999990905,
+            1,
+            1.0000000000009095,
+            1.0000000000009095,
+            1,
+            1
+          ],
+          "nodes": 3648,
+          "cards": 34,
+          "searchMeasures": [
+            9
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 4.0000000000009095,
+              "inputToCommitMs": 217.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1.0000000000009095,
+            1,
+            14,
+            1,
+            1,
+            0.9999999999990905,
+            1,
+            0.9999999999990905,
+            0.9999999999990905,
+            1,
+            1,
+            1.0000000000009095,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3674,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 70,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 31,
+              "ms": 1,
+              "inputToCommitMs": 191
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.9999999999990905,
+            0.9999999999990905,
+            1,
+            1.0000000000009095,
+            5.9999999999990905,
+            0.9999999999990905,
+            0.9999999999990905,
+            1.0000000000009095,
+            0.9999999999990905,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3579,
+          "cards": 31,
+          "searchMeasures": [
+            5.9999999999990905
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 311,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 198.99999999999818
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            0.999999999998181,
+            1,
+            0.999999999998181,
+            13,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0.999999999998181,
+            1,
+            1,
+            1,
+            1,
+            1.000000000001819,
+            9,
+            1,
+            1
+          ],
+          "nodes": 3693,
+          "cards": 36,
+          "searchMeasures": [
+            13
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 392,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 224
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1.000000000001819,
+            8.999999999998181,
+            1.000000000001819,
+            1,
+            0.999999999998181,
+            1,
+            1,
+            1,
+            0.999999999998181
+          ],
+          "nodes": 3685,
+          "cards": 36,
+          "searchMeasures": [
+            8.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 303,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 225
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            0.999999999998181,
+            12,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            9
+          ],
+          "nodes": 3676,
+          "cards": 36,
+          "searchMeasures": [
+            12
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 6,
+              "ms": 3,
+              "inputToCommitMs": 210
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            6,
+            0.999999999998181,
+            1,
+            1,
+            1.000000000001819,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1.000000000001819,
+            1
+          ],
+          "nodes": 3103,
+          "cards": 6,
+          "searchMeasures": [
+            5
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 1,
+              "inputToCommitMs": 212
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            0.999999999998181,
+            1,
+            1.000000000001819,
+            1,
+            1,
+            0.999999999998181,
+            0.999999999998181,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6,
+            6,
+            6.999999999998181,
+            7,
+            5.999999999998181,
+            7,
+            7.000000000001819,
+            6
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            1
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "mobile": false,
+      "size": 10000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3171,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 283,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 10000,
+              "ms": 6
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 256
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            22,
+            0.9999999999995453,
+            1,
+            1.0000000000004547,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0.9999999999995453
+          ],
+          "nodes": 3678,
+          "cards": 36,
+          "searchMeasures": [
+            22
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 281,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 238
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1,
+            20,
+            1,
+            0.9999999999995453,
+            1,
+            1,
+            1.0000000000004547,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0.9999999999990905,
+            1
+          ],
+          "nodes": 3699,
+          "cards": 36,
+          "searchMeasures": [
+            20
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 350,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 3.0000000000009095,
+              "inputToCommitMs": 201.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            0.9999999999990905,
+            16,
+            0.9999999999990905,
+            1,
+            1,
+            1,
+            0.9999999999990905,
+            1,
+            1,
+            0.9999999999990905
+          ],
+          "nodes": 3698,
+          "cards": 36,
+          "searchMeasures": [
+            16
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 134,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 224.9999999999991
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            0.9999999999990905,
+            15.00000000000091,
+            1,
+            1,
+            1,
+            1,
+            1.0000000000009095,
+            1,
+            1,
+            1.0000000000009095,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3703,
+          "cards": 36,
+          "searchMeasures": [
+            15.00000000000091
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 285,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 3,
+              "inputToCommitMs": 199
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1.0000000000009095,
+            1.0000000000009095,
+            1.0000000000009095,
+            12.99999999999909,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0.9999999999990905,
+            1,
+            1,
+            1,
+            1,
+            0.9999999999990905
+          ],
+          "nodes": 3676,
+          "cards": 36,
+          "searchMeasures": [
+            12.99999999999909
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 58,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 200
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            0.9999999999990905,
+            9,
+            0.9999999999990905,
+            1,
+            0.9999999999990905,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            0.999999999998181,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3660,
+          "cards": 36,
+          "searchMeasures": [
+            8
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 357,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 197
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            0.999999999998181,
+            12,
+            1,
+            2,
+            1,
+            1,
+            1.000000000001819,
+            1,
+            1,
+            0.999999999998181,
+            1,
+            1
+          ],
+          "nodes": 3699,
+          "cards": 36,
+          "searchMeasures": [
+            12
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 330,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 206
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            10,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nodes": 3654,
+          "cards": 36,
+          "searchMeasures": [
+            10
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 279,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 4,
+              "inputToCommitMs": 216
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            14,
+            0.999999999998181,
+            1,
+            1,
+            1,
+            0.999999999998181,
+            1,
+            1.000000000001819,
+            1,
+            1,
+            1,
+            1,
+            1,
+            8.999999999998181
+          ],
+          "nodes": 3668,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 10,
+              "ms": 1,
+              "inputToCommitMs": 192.99999999999818
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1.000000000001819,
+            4.999999999998181,
+            1,
+            1,
+            1,
+            1,
+            0.999999999998181,
+            0.999999999998181,
+            1,
+            1
+          ],
+          "nodes": 3174,
+          "cards": 10,
+          "searchMeasures": [
+            4.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0.999999999998181,
+              "inputToCommitMs": 188
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            1,
+            1.000000000001819,
+            0.999999999998181,
+            0.999999999998181,
+            1,
+            1.000000000001819,
+            0.999999999998181,
+            0.999999999998181,
+            1,
+            2,
+            2,
+            2,
+            7,
+            7.000000000001819,
+            6,
+            6,
+            6.999999999998181,
+            7,
+            7.000000000001819
+          ],
+          "nodes": 3171,
+          "cards": 12,
+          "searchMeasures": [
+            0.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "mobile": true,
+      "size": 2253,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3171,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 329,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 2253,
+              "ms": 1
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 251
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            15
+          ],
+          "nodes": 3681,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 256,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1.0000000000004547,
+              "inputToCommitMs": 325.00000000000045
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1.0000000000004547,
+            11
+          ],
+          "nodes": 3686,
+          "cards": 36,
+          "searchMeasures": [
+            11
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 195,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 191
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            8
+          ],
+          "nodes": 3685,
+          "cards": 36,
+          "searchMeasures": [
+            8
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 74,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 16,
+              "ms": 2,
+              "inputToCommitMs": 284
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            6
+          ],
+          "nodes": 3301,
+          "cards": 16,
+          "searchMeasures": [
+            5
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2.0000000000009095,
+              "inputToCommitMs": 241.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            16
+          ],
+          "nodes": 3670,
+          "cards": 36,
+          "searchMeasures": [
+            15.00000000000091
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 40,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 15,
+              "ms": 3,
+              "inputToCommitMs": 194
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            6
+          ],
+          "nodes": 3277,
+          "cards": 15,
+          "searchMeasures": [
+            6
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 297,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 323
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            9
+          ],
+          "nodes": 3674,
+          "cards": 36,
+          "searchMeasures": [
+            9
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 301,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 198
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            9
+          ],
+          "nodes": 3667,
+          "cards": 36,
+          "searchMeasures": [
+            9
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 322,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 208
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            12
+          ],
+          "nodes": 3677,
+          "cards": 36,
+          "searchMeasures": [
+            11
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 2,
+              "ms": 3,
+              "inputToCommitMs": 193
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            4
+          ],
+          "nodes": 3013,
+          "cards": 2,
+          "searchMeasures": [
+            4
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0,
+              "inputToCommitMs": 315.9999999999982
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1
+          ],
+          "nodes": 3171,
+          "cards": 12,
+          "searchMeasures": [
+            1
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "mobile": true,
+      "size": 5000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 307,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 5000,
+              "ms": 2
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 265
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            15
+          ],
+          "nodes": 3688,
+          "cards": 36,
+          "searchMeasures": [
+            13
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 282,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 198
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            14
+          ],
+          "nodes": 3685,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 246,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 3.0000000000009095,
+              "inputToCommitMs": 202
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            10
+          ],
+          "nodes": 3682,
+          "cards": 36,
+          "searchMeasures": [
+            9.00000000000091
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 208,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 34,
+              "ms": 2,
+              "inputToCommitMs": 194
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            7
+          ],
+          "nodes": 3648,
+          "cards": 34,
+          "searchMeasures": [
+            7
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 305,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 4,
+              "inputToCommitMs": 198
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            11
+          ],
+          "nodes": 3674,
+          "cards": 36,
+          "searchMeasures": [
+            11
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 70,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 31,
+              "ms": 2,
+              "inputToCommitMs": 189
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            6
+          ],
+          "nodes": 3579,
+          "cards": 31,
+          "searchMeasures": [
+            5.0000000000009095
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 311,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 198
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            13
+          ],
+          "nodes": 3693,
+          "cards": 36,
+          "searchMeasures": [
+            12
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 392,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 212
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            1,
+            9
+          ],
+          "nodes": 3685,
+          "cards": 36,
+          "searchMeasures": [
+            9
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 303,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 3,
+              "inputToCommitMs": 197
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            10.999999999998181
+          ],
+          "nodes": 3676,
+          "cards": 36,
+          "searchMeasures": [
+            10.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 6,
+              "ms": 1,
+              "inputToCommitMs": 215
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            4
+          ],
+          "nodes": 3103,
+          "cards": 6,
+          "searchMeasures": [
+            4
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0.999999999998181
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 0,
+              "inputToCommitMs": 186
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            0.999999999998181
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            0.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.4",
+      "mobile": true,
+      "size": 10000,
+      "throttle": 1,
+      "initial": {
+        "nodes": 3172,
+        "templateNodes": 0,
+        "cards": 12
+      },
+      "queries": [
+        {
+          "query": "a",
+          "normalize": 283,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 9,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 17,
+              "ms": 0
+            },
+            {
+              "size": 10000,
+              "ms": 6
+            }
+          ],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 222
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            20
+          ],
+          "nodes": 3679,
+          "cards": 36,
+          "searchMeasures": [
+            20
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "al",
+          "normalize": 281,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 214.99999999999955
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1.0000000000004547,
+            16
+          ],
+          "nodes": 3700,
+          "cards": 36,
+          "searchMeasures": [
+            14.999999999999545
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "ali",
+          "normalize": 350,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1.0000000000009095,
+              "inputToCommitMs": 218.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            11
+          ],
+          "nodes": 3699,
+          "cards": 36,
+          "searchMeasures": [
+            11
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "alien",
+          "normalize": 134,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 199.9999999999991
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            12
+          ],
+          "nodes": 3704,
+          "cards": 36,
+          "searchMeasures": [
+            11
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "bat",
+          "normalize": 285,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 4.0000000000009095,
+              "inputToCommitMs": 202
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            14
+          ],
+          "nodes": 3677,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "batman",
+          "normalize": 58,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 1,
+              "inputToCommitMs": 319.0000000000009
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            7
+          ],
+          "nodes": 3661,
+          "cards": 36,
+          "searchMeasures": [
+            7
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "the",
+          "normalize": 357,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 198
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            14
+          ],
+          "nodes": 3700,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "star",
+          "normalize": 330,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 2,
+              "inputToCommitMs": 195
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            11
+          ],
+          "nodes": 3655,
+          "cards": 36,
+          "searchMeasures": [
+            11
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "res",
+          "normalize": 279,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 36,
+              "ms": 3,
+              "inputToCommitMs": 201
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1,
+            14
+          ],
+          "nodes": 3669,
+          "cards": 36,
+          "searchMeasures": [
+            14
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "resident evil",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [],
+          "grids": [
+            {
+              "cards": 10,
+              "ms": 0.999999999998181,
+              "inputToCommitMs": 334
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            4.999999999998181
+          ],
+          "nodes": 3175,
+          "cards": 10,
+          "searchMeasures": [
+            4.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        },
+        {
+          "query": "",
+          "normalize": 10,
+          "clones": 0,
+          "sorts": [
+            {
+              "size": 12,
+              "ms": 0
+            }
+          ],
+          "grids": [
+            {
+              "cards": 12,
+              "ms": 1,
+              "inputToCommitMs": 314
+            }
+          ],
+          "longTasks": [],
+          "filterFramesMs": [
+            1.999999999998181
+          ],
+          "nodes": 3172,
+          "cards": 12,
+          "searchMeasures": [
+            1.999999999998181
+          ],
+          "cpu": {
+            "ScriptDuration": null,
+            "LayoutDuration": null,
+            "RecalcStyleDuration": null,
+            "TaskDuration": null
+          }
+        }
+      ]
+    }
+  ]
+}
