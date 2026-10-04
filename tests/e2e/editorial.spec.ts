@@ -3,6 +3,7 @@ import residentEvil from '../../src/data/editorials/resident-evil-noche-cero-la-
 import miasma from '../../src/data/editorials/campamento-miasma-si-venis-por-jason-preparate-para-el-delirio.json' with { type: 'json' };
 import colony from '../../src/data/editorials/colony-zona-cero-me-gusto-pero-no-me-volo-la-peluca.json' with { type: 'json' };
 import cancelados from '../../src/data/editorials/cancelados-por-hollywood-estrellas-cima-exilio.json' with { type: 'json' };
+import insaciable from '../../src/data/editorials/insaciable-body-horror-en-modo-facil.json' with { type: 'json' };
 
 async function openEditorialIndex(page: Page): Promise<void> {
   const link = page.getByRole('region', { name: 'Desde CinePosta' }).getByRole('link', { name: 'Todas las publicaciones' });
@@ -17,7 +18,8 @@ async function openEditorialIndex(page: Page): Promise<void> {
 for (const { entry, movieTitle, featured, sourcePattern } of [
   { entry: residentEvil, movieTitle: 'Resident Evil: Noche Cero', featured: false, sourcePattern: /^https:\/\/residentevil\.movie\// },
   { entry: miasma, movieTitle: 'Adolescencia, sexo y muerte en Campamento Miasma', featured: true, sourcePattern: /^https:\/\/(trailers\.mubicdn\.net|www\.steinbrennermueller\.de)\// },
-  { entry: colony, movieTitle: 'Colony: Zona Cero', featured: true, sourcePattern: /^https:\/\/wellgousa\.com\// },
+  { entry: colony, movieTitle: 'Colony: Zona Cero', featured: false, sourcePattern: /^https:\/\/wellgousa\.com\// },
+  { entry: insaciable, movieTitle: 'Insaciable', featured: true, sourcePattern: /^https:\/\/www\.independentfilmco\.com\/films\/saccharine$/ },
 ]) {
   const path = `/editorial/${entry.slug}/`;
 
@@ -47,7 +49,8 @@ for (const { entry, movieTitle, featured, sourcePattern } of [
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(path);
     const figures = page.locator('.editorial-body figure');
-    await expect(figures).toHaveCount(5);
+    const expectedBodyImageCount = entry.content.filter(block => block.type === 'image').length;
+    await expect(figures).toHaveCount(expectedBodyImageCount);
     for (const figure of await figures.all()) {
       await figure.scrollIntoViewIfNeeded();
       const image = figure.locator('img');
