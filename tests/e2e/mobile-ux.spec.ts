@@ -59,7 +59,7 @@ test('mobile home keeps touch targets and content within the viewport', async ({
   expect(measurements.cardCollisions).toEqual([]);
 });
 
-test('mobile quick filters stay equal, aligned, and contained at narrow widths', async ({ page }, testInfo) => {
+test('mobile quick filters stay aligned and legible at narrow widths', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith('mobile-'), 'This layout check is intentionally mobile-only.');
 
   for (const width of [390, 320]) {
@@ -69,38 +69,43 @@ test('mobile quick filters stay equal, aligned, and contained at narrow widths',
     const layout = await page.locator('.home-quick-filters').evaluate((section) => {
       const buttons = [...section.querySelectorAll<HTMLElement>('.home-quick-filters__chip')];
       const buttonRects = buttons.map((button) => button.getBoundingClientRect());
-      const artworkContained = buttons.every((button) => {
+      const labelsContained = buttons.every((button) => {
         const buttonRect = button.getBoundingClientRect();
-        const artworkRect = button.querySelector<HTMLElement>('.home-quick-filters__art')?.getBoundingClientRect();
+        const label = button.querySelector<HTMLElement>('.home-quick-filters__chip-label');
+        const labelRect = label?.getBoundingClientRect();
         return Boolean(
-          artworkRect &&
-          artworkRect.left >= buttonRect.left - 1 &&
-          artworkRect.right <= buttonRect.right + 1 &&
-          artworkRect.top >= buttonRect.top - 1 &&
-          artworkRect.bottom <= buttonRect.bottom + 1,
-        );
+          labelRect &&
+          labelRect.left >= buttonRect.left - 1 &&
+          labelRect.right <= buttonRect.right + 1 &&
+          labelRect.top >= buttonRect.top - 1 &&
+          labelRect.bottom <= buttonRect.bottom + 1,
+        ) && Boolean(label && label.scrollWidth <= label.clientWidth + 1);
       });
 
       return {
         count: buttons.length,
-        widths: buttonRects.map((rect) => Math.round(rect.width)),
         heights: buttonRects.map((rect) => Math.round(rect.height)),
         tops: buttonRects.map((rect) => Math.round(rect.top)),
-        sectionCenter: section.getBoundingClientRect().left + section.getBoundingClientRect().width / 2,
-        lastButtonCenter: buttonRects.at(-1) ? buttonRects.at(-1)!.left + buttonRects.at(-1)!.width / 2 : 0,
-        artworkContained,
+        labelsContained,
+        scores: [...document.querySelectorAll<HTMLElement>('[data-home-score-chip]')].map((chip) => {
+          const rect = chip.getBoundingClientRect();
+          const label = chip.querySelector<HTMLElement>('span');
+          const labelRect = label?.getBoundingClientRect();
+          const labelFits = !label || Boolean(labelRect && labelRect.left >= rect.left && labelRect.right <= rect.right && labelRect.top >= rect.top && labelRect.bottom <= rect.bottom && label.scrollWidth <= label.clientWidth + 1);
+          return { left: rect.left, right: rect.right, height: rect.height, labelFits };
+        }),
         pageContained: document.documentElement.scrollWidth <= window.innerWidth + 1,
       };
     });
 
     expect(layout.count).toBe(3);
-    expect(Math.max(...layout.widths) - Math.min(...layout.widths)).toBeLessThanOrEqual(1);
     expect(Math.max(...layout.heights) - Math.min(...layout.heights)).toBeLessThanOrEqual(1);
     expect(layout.tops[0]).toBe(layout.tops[1]);
-    expect(layout.tops[2]).toBeGreaterThan(layout.tops[0]);
-    expect(Math.abs(layout.lastButtonCenter - layout.sectionCenter)).toBeLessThanOrEqual(1);
+    expect(layout.tops[2]).toBe(layout.tops[0]);
     expect(Math.min(...layout.heights)).toBeGreaterThanOrEqual(44);
-    expect(layout.artworkContained).toBeTruthy();
+    expect(layout.labelsContained).toBeTruthy();
+    expect(layout.scores).toHaveLength(5);
+    expect(layout.scores.every((rect) => rect.left >= 0 && rect.right <= width && rect.height >= 44 && rect.labelFits)).toBeTruthy();
     expect(layout.pageContained).toBeTruthy();
   }
 });

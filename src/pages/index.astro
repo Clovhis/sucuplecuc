@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/home-editorial.css';
 import EditorialHighlights from '../components/EditorialHighlights.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
@@ -193,8 +194,8 @@ const upcomingMovieSuggestions = upcomingReleases
 const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
-	<header class="site-header container">
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData} bodyClass="home-edition">
+	<header class="site-header home-masthead container">
 		<h1 class="u-visually-hidden">{SITE_NAME}: reseñas súper cortas y sin chamuyo de películas</h1>
 		{
 			movies.length > 0 && (

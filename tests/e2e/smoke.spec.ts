@@ -38,8 +38,8 @@ test('home page renders the catalog shell', async ({ page }) => {
   expect(response?.ok()).toBeTruthy();
   await expect(page).toHaveTitle(/Cine|Posta/i);
   await expect(page.locator('body')).toBeVisible();
-	await expect(page.getByRole('heading', { name: 'Películas publicadas' })).toBeVisible();
-	await expect(page.locator('.home-results-tools')).toContainText('Catálogo argentino');
+	await expect(page.getByRole('heading', { name: 'Películas', exact: true })).toBeVisible();
+	await expect(page.locator('.site-header__brand img')).toHaveAttribute('src', '/brand/cineposta-logo-full.png');
 	await expect(page.locator('[data-movie-search-grid]')).toBeVisible();
 	await expect(page.getByRole('heading', { name: /Construí tu carrera en el cine/i })).toBeVisible();
 	await expect(page.getByRole('link', { name: 'Sobre', exact: true })).toBeVisible();

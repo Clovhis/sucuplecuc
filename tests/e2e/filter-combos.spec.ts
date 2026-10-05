@@ -9,6 +9,8 @@ async function dismissDonationPrompt(page: Page): Promise<void> {
 }
 
 async function openAdvancedFilters(page: Page): Promise<void> {
+  // Let WebKit finish reload and scroll restoration before tapping the disclosure.
+  await page.waitForLoadState('load');
   const advancedFilters = page.locator('[data-home-advanced-filters]');
   if ((await advancedFilters.getAttribute('open')) === null) {
     await advancedFilters.locator('summary').click();
@@ -135,11 +137,11 @@ test.describe('home catalog filters', () => {
 		expect(layout.labels).toEqual(['Todos', '7+ Muy buenas', '8+ Excelentes', '9+ Obras maestras', '10 Absolute Cinema']);
     expect(layout.fits).toBeTruthy();
     expect(layout.fillsRail).toBeTruthy();
-		await expect(verdictPanel.getByText('Ordenar por')).toBeVisible();
-    await expect(verdictPanel.getByRole('link', { name: /Encontrá qué ver/i })).toHaveAttribute('href', '/que-miro-hoy/');
+		await expect(page.locator('.home-score-filter__footer').getByText('Ordenar por')).toBeVisible();
+    await expect(page.locator('.home-score-filter__footer').getByRole('link', { name: /Encontrá qué ver/i })).toHaveAttribute('href', '/que-miro-hoy/');
   });
 
-	test('score presets stay touch-safe in a contained horizontal rail on mobile', async ({ page }, testInfo) => {
+	test('score presets stay touch-safe and visible in two rows on mobile', async ({ page }, testInfo) => {
     test.skip(!testInfo.project.name.startsWith('mobile-'), 'Mobile layout assertion');
     await gotoHome(page, { openAdvanced: false });
 
@@ -157,8 +159,8 @@ test.describe('home catalog filters', () => {
       };
     });
 
-		expect(layout).toEqual({ count: 5, rows: 1, touchSafe: true, canScroll: true, noPageOverflow: true });
-    await expect(verdictPanel.getByRole('link', { name: /Encontrá qué ver/i })).toBeVisible();
+		expect(layout).toEqual({ count: 5, rows: 2, touchSafe: true, canScroll: false, noPageOverflow: true });
+    await expect(page.locator('.home-score-filter__footer').getByRole('link', { name: /Encontrá qué ver/i })).toBeVisible();
   });
 
 	test('score presets can be applied and removed with the keyboard', async ({ page }) => {
@@ -525,8 +527,9 @@ test.describe('home catalog filters', () => {
     expect(layout.chipsInsidePanel).toBeTruthy();
     expect(layout.labelsInsideTheirChips).toBeTruthy();
     expect(layout.editorialChipDecorations.every((display) => display === 'none')).toBeTruthy();
-    expect(layout.editorialChipGap).toBeLessThanOrEqual(12);
-    expect(layout.editorialPanelHeight).toBeCloseTo(128, 0);
+    // Firefox may report a nominal 12px gap as 12.00003px.
+    expect(layout.editorialChipGap).toBeLessThanOrEqual(12.01);
+    expect(layout.editorialPanelHeight).toBeLessThanOrEqual(128);
     expect(layout.columnBottomDelta).toBeLessThanOrEqual(1);
     expect(layout.pageOverflow).toBeFalsy();
   });

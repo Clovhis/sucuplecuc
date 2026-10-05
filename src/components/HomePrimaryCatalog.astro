@@ -37,12 +37,11 @@ const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace
 
 {
 	movies.length > 0 ? (
-		<section class="home-catalog__primary" aria-label="Catálogo principal">
+		<section class="home-catalog__primary home-editorial-catalog" aria-label="Catálogo principal">
 			<section id="catalogo-filtros" class="home-results-tools fade-up" style="--item-delay: 35ms;" aria-labelledby="home-results-tools-title">
 				<div class="home-results-tools__header">
 					<div>
-						<p class="home-results-tools__kicker">Catálogo argentino</p>
-						<h2 id="home-results-tools-title">Películas publicadas</h2>
+						<h2 id="home-results-tools-title">Películas</h2>
 					</div>
 					<p
 						class="home-results-tools__counter"
@@ -61,30 +60,29 @@ const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace
 					<div class="home-genre-filter__chips" role="group" aria-label="Accesos rápidos al catálogo">
 						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="new-and-good" aria-pressed="false">
 							<span class="home-quick-filters__chip-label">Nuevas y buenas</span>
-							<img class="home-quick-filters__art" src="/images/home/cineposta-filtro-nuevas-buenas.png" alt="" width="512" height="512" aria-hidden="true" />
 						</button>
 						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="premieres" aria-pressed="false">
 							<span class="home-quick-filters__chip-label">Estrenos</span>
-							<img class="home-quick-filters__art" src="/images/home/cineposta-filtro-estrenos.png" alt="" width="512" height="512" aria-hidden="true" />
 						</button>
 						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="recommended" aria-pressed="false">
 							<span class="home-quick-filters__chip-label">Recomendadas</span>
-							<img class="home-quick-filters__art" src="/images/home/cineposta-filtro-recomendadas.png" alt="" width="512" height="512" aria-hidden="true" />
 						</button>
 					</div>
 				</section>
 				<section class="home-genre-filter home-genre-filter--verdict home-score-filter" data-home-filter-panel="score">
 					<div class="home-genre-filter__heading">
 						<p class="home-genre-filter__label">Score CinePosta</p>
-						<p class="home-genre-filter__hint">Elegí la nota mínima. Se combina con todos los demás filtros.</p>
+						<p class="home-genre-filter__hint">Nota mínima</p>
 					</div>
 					<div class="home-genre-filter__chips home-score-filter__presets" role="group" aria-label="Score mínimo de CinePosta">
 						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="" aria-pressed="true">Todos</button>
-						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="7" aria-pressed="false"><strong>7+</strong> Muy buenas</button>
-						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="8" aria-pressed="false"><strong>8+</strong> Excelentes</button>
-						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="9" aria-pressed="false"><strong>9+</strong> Obras maestras</button>
-						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="10" aria-pressed="false"><strong>10</strong> Absolute Cinema</button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="7" aria-pressed="false"><strong>7+</strong> <span>Muy buenas</span></button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="8" aria-pressed="false"><strong>8+</strong> <span>Excelentes</span></button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="9" aria-pressed="false"><strong>9+</strong> <span>Obras maestras</span></button>
+						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="10" aria-pressed="false"><strong>10</strong> <span>Absolute Cinema</span></button>
 					</div>
+				</section>
+				</div>
 					<div class="home-score-filter__footer">
 						<label class="home-filter-select home-score-filter__sort">
 							<span>Ordenar por</span>
@@ -106,8 +104,6 @@ const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace
 							</svg>
 						</a>
 					</div>
-				</section>
-				</div>
 				<details class="home-advanced-filters" data-home-advanced-filters>
 					<summary class="home-advanced-filters__summary">
 						<span class="home-advanced-filters__label" data-home-advanced-filter-label>Filtros avanzados</span>
