@@ -22,7 +22,9 @@ document.querySelectorAll<HTMLElement>('[data-weekly-recommendations-carousel]')
 
 	const scrollCards = (direction: 1 | -1): void => {
 		const firstCard = viewport.querySelector<HTMLElement>('.weekly-recommendations__item');
-		const distance = firstCard ? firstCard.getBoundingClientRect().width + 16 : viewport.clientWidth * 0.75;
+		const list = viewport.querySelector<HTMLElement>('.weekly-recommendations__list');
+		const gap = list ? parseFloat(getComputedStyle(list).columnGap) || 0 : 0;
+		const distance = firstCard ? firstCard.getBoundingClientRect().width + gap : viewport.clientWidth * 0.75;
 		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 		viewport.scrollBy({
@@ -34,6 +36,6 @@ document.querySelectorAll<HTMLElement>('[data-weekly-recommendations-carousel]')
 	previousButton?.addEventListener('click', () => scrollCards(-1));
 	nextButton?.addEventListener('click', () => scrollCards(1));
 	viewport.addEventListener('scroll', updateControls, { passive: true });
-	window.addEventListener('resize', updateControls);
+	new ResizeObserver(updateControls).observe(viewport);
 	updateControls();
 });

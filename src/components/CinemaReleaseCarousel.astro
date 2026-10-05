@@ -1,4 +1,5 @@
 ---
+import '../styles/home-carousels.css';
 import PlatformBadge from './PlatformBadge.astro';
 
 interface CinemaRelease {
@@ -50,7 +51,7 @@ function formatReleaseDate(value: string) {
 
 {
 	releases.length > 0 ? (
-		<section id={sectionId} class="cinema-release-carousel fade-up" style="--item-delay: 105ms;" aria-labelledby={titleId} data-cinema-release-carousel={sectionId}>
+		<section id={sectionId} class="cinema-release-carousel home-release-rail fade-up" style="--item-delay: 105ms;" aria-labelledby={titleId} data-cinema-release-carousel={sectionId}>
 			<div class="cinema-release-carousel__header">
 				<div class="cinema-release-carousel__heading">
 					<h2 id={titleId}>{title}</h2>
@@ -66,7 +67,7 @@ function formatReleaseDate(value: string) {
 				</div>
 			</div>
 
-			<div class="cinema-release-carousel__viewport" data-cinema-release-viewport>
+			<div class="cinema-release-carousel__viewport" data-cinema-release-viewport tabindex="0" role="region" aria-label={listLabel}>
 				<ol class="cinema-release-carousel__list" aria-label={listLabel}>
 					{releases.map((release) => (
 						<li class="cinema-release-carousel__item" data-cinema-release-slug={release.slug}>
@@ -99,6 +100,7 @@ function formatReleaseDate(value: string) {
 											/>
 											<span class="cinema-release-carousel__play" aria-hidden="true">
 												<svg viewBox="0 0 24 24"><path d="m9 6 8 6-8 6V6Z" /></svg>
+												<span>Trailer</span>
 											</span>
 										</span>
 									</button>
@@ -131,7 +133,7 @@ function formatReleaseDate(value: string) {
 										{release.platform && <PlatformBadge platform={release.platform} className="cinema-release-carousel__platform" />}
 									</div>
 								)}
-								<h3 class="cinema-release-carousel__title">{release.title}</h3>
+								<h3 class="cinema-release-carousel__title"><a href={release.movieUrl}>{release.title}</a></h3>
 								<span class={`badge cinema-release-carousel__verdict ${release.verdictClass}`}>
 									{release.verdictLabel}
 								</span>

@@ -9,16 +9,29 @@ document.querySelectorAll<HTMLElement>('[data-cinema-release-carousel]').forEach
 	const dialogDate = carousel.querySelector<HTMLElement>('[data-cinema-release-dialog-date]');
 	const youtubeLink = carousel.querySelector<HTMLAnchorElement>('[data-cinema-release-youtube]');
 
+	const updateControls = (): void => {
+		if (!viewport) return;
+		const maxScrollLeft = Math.max(0, viewport.scrollWidth - viewport.clientWidth);
+		if (previousButton) previousButton.disabled = viewport.scrollLeft <= 4;
+		if (nextButton) nextButton.disabled = viewport.scrollLeft >= maxScrollLeft - 4;
+	};
+
 	const scrollCards = (direction: 1 | -1): void => {
 		if (!viewport) return;
 
 		const firstCard = viewport.querySelector<HTMLElement>('.cinema-release-carousel__item');
-		const distance = firstCard ? firstCard.getBoundingClientRect().width + 16 : viewport.clientWidth * 0.8;
-		viewport.scrollBy({ left: direction * distance * 2, behavior: 'smooth' });
+		const list = viewport.querySelector<HTMLElement>('.cinema-release-carousel__list');
+		const gap = list ? parseFloat(getComputedStyle(list).columnGap) || 0 : 0;
+		const distance = firstCard ? firstCard.getBoundingClientRect().width + gap : viewport.clientWidth * 0.8;
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		viewport.scrollBy({ left: direction * distance * 2, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
 	};
 
 	previousButton?.addEventListener('click', () => scrollCards(-1));
 	nextButton?.addEventListener('click', () => scrollCards(1));
+	viewport?.addEventListener('scroll', updateControls, { passive: true });
+	if (viewport) new ResizeObserver(updateControls).observe(viewport);
+	updateControls();
 
 	const clearPlayer = (): void => player?.replaceChildren();
 

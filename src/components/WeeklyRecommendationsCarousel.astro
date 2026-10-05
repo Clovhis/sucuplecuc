@@ -40,38 +40,6 @@ const titleId = `${sectionId}-title`;
 						Mezclando novedades y películas que siguen garpando con los años.
 					</p>
 				</div>
-				<div class="weekly-recommendations__characters" aria-hidden="true" data-weekly-recommendations-character>
-					<span class="weekly-recommendations__character weekly-recommendations__character--vhs">
-						<img
-							src="/images/home/cineposta-personaje-recomendadas-vhs.png"
-							alt=""
-							width="768"
-							height="709"
-							loading="lazy"
-							decoding="async"
-						/>
-					</span>
-					<span class="weekly-recommendations__character weekly-recommendations__character--super8">
-						<img
-							src="/images/home/cineposta-personaje-recomendadas-super8.png"
-							alt=""
-							width="644"
-							height="768"
-							loading="lazy"
-							decoding="async"
-						/>
-					</span>
-					<span class="weekly-recommendations__character weekly-recommendations__character--glasses">
-						<img
-							src="/images/home/cineposta-personaje-recomendadas-semana.png"
-							alt=""
-							width="720"
-							height="768"
-							loading="lazy"
-							decoding="async"
-						/>
-					</span>
-				</div>
 				<div
 					class="weekly-recommendations__controls"
 					role="group"
@@ -104,7 +72,7 @@ const titleId = `${sectionId}-title`;
 				aria-label="Carrusel de películas recomendadas de la semana"
 			>
 				<ol class="weekly-recommendations__list" aria-label="Películas recomendadas de la semana">
-					{recommendations.map((recommendation) => (
+					{recommendations.map((recommendation, index) => (
 						<li class="weekly-recommendations__item">
 							<article
 								class="weekly-recommendations__card"
@@ -133,21 +101,18 @@ const titleId = `${sectionId}-title`;
 											data-poster-search-title={recommendation.title}
 											data-poster-search-year={recommendation.year}
 										/>
-										<span class="weekly-recommendations__poster-shine" aria-hidden="true"></span>
-										<span class="weekly-recommendations__era">{recommendation.eraLabel}</span>
 									</span>
 								</a>
 
 								<div class="weekly-recommendations__body">
 									<div class="weekly-recommendations__meta">
-										<span>{recommendation.year}</span>
-										<span class="weekly-recommendations__dot" aria-hidden="true"></span>
-										<span>Plataforma</span>
+										<span class="weekly-recommendations__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+										<span>{recommendation.year} · {recommendation.eraLabel}</span>
 									</div>
-									<PlatformBadge platform={recommendation.platform} className="weekly-recommendations__platform" />
 									<h3 class="weekly-recommendations__title">
 										<a href={recommendation.movieUrl}>{recommendation.title}</a>
 									</h3>
+									<PlatformBadge platform={recommendation.platform} className="weekly-recommendations__platform" />
 									<span class={`badge weekly-recommendations__verdict ${recommendation.verdictClass}`}>
 										{recommendation.verdictLabel}
 									</span>
