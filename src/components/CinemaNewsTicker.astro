@@ -1,5 +1,6 @@
 ---
 import type { CinemaNewsItem } from '../lib/cinemaNews';
+import '../styles/home-news.css';
 
 interface Props {
 	items: CinemaNewsItem[];
@@ -9,109 +10,58 @@ interface Props {
 }
 
 const { items, sourceLabel, updatedLabel, isFallback = false } = Astro.props as Props;
-const marqueeItems = items;
 ---
 
 {
-	marqueeItems.length > 0 ? (
-		<section class="news-rail fade-up" style="--item-delay: 70ms;" aria-label="Radar de cine">
-			<div class="news-rail__header">
-				<p class="news-rail__kicker">Radar de cine</p>
-				<p class="news-rail__meta">
-					{sourceLabel} · {updatedLabel}
-					{isFallback ? ' · modo respaldo' : ''}
-				</p>
-			</div>
+	items.length > 0 ? (
+		<section id="radar-de-cine" class="news-rail home-news fade-up" style="--item-delay: 70ms;" aria-labelledby="radar-de-cine-title">
+			<header class="news-rail__header">
+				<div class="home-news__heading">
+					<p class="news-rail__kicker">En otros medios</p>
+					<h2 id="radar-de-cine-title" class="home-news__title">Radar de cine</h2>
+				</div>
+				<div class="home-news__sources">
+					<p class="news-rail__meta">{sourceLabel}</p>
+					<p class="home-news__updated">{updatedLabel}{isFallback ? ' · modo respaldo' : ''}</p>
+				</div>
+			</header>
 
 			<div class="news-rail__body">
 				<div class="news-rail__ticker">
 					<div class="news-rail__marquee" data-news-marquee>
 						<div class="news-rail__track" data-news-track>
-							<ul class="news-rail__ticker-list" data-news-segment>
-								{
-									marqueeItems.map((item) => (
+							{[false, true].map((isDuplicate) => (
+								<ul class="news-rail__ticker-list" data-news-segment={!isDuplicate ? '' : undefined} aria-hidden={isDuplicate ? 'true' : undefined}>
+									{items.map((item) => (
 										<li class="news-rail__ticker-item">
 											<a
-												class:list={[
-													'news-rail__ticker-link',
-													!item.imageUrl && 'news-rail__ticker-link--no-image',
-												]}
+												class:list={['news-rail__ticker-link', !item.imageUrl && 'news-rail__ticker-link--no-image']}
 												href={item.link}
 												target="_blank"
 												rel="noopener noreferrer"
 												referrerpolicy="no-referrer"
+												tabindex={isDuplicate ? -1 : undefined}
 											>
 												<span class="news-rail__ticker-media" aria-hidden="true">
-													{
-														item.imageUrl ? (
-															<img
-																class="news-rail__ticker-image"
-																src={item.imageUrl}
-																alt=""
-																loading="lazy"
-																decoding="async"
-																referrerpolicy="strict-origin-when-cross-origin"
-															/>
-														) : null
-													}
+													<span class="home-news__image-placeholder">{item.source}</span>
+													{item.imageUrl ? (
+														<img class="news-rail__ticker-image" src={item.imageUrl} alt="" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin" />
+													) : null}
 												</span>
-												<span class="news-rail__ticker-scrim" aria-hidden="true"></span>
-												<span class="news-rail__ticker-content">
+												<div class="news-rail__ticker-content">
 													<span class="news-rail__ticker-item-meta">
+														<span class="home-news__source">{item.source}</span>
+														<span aria-hidden="true">·</span>
 														<time datetime={item.publishedAt}>{item.publishedLabel}</time>
-														<span aria-hidden="true">·</span>
-														{item.source}
 													</span>
-													<span class="news-rail__ticker-item-title">{item.title}</span>
-												</span>
+													<h3 class="news-rail__ticker-item-title">{item.title}</h3>
+													<span class="home-news__read">Leer en {item.source} <span aria-hidden="true">↗</span><span class="u-visually-hidden"> (abre en otra pestaña)</span></span>
+												</div>
 											</a>
 										</li>
-									))
-								}
-							</ul>
-							<ul class="news-rail__ticker-list" aria-hidden="true">
-								{
-									marqueeItems.map((item) => (
-										<li class="news-rail__ticker-item">
-											<a
-												class:list={[
-													'news-rail__ticker-link',
-													!item.imageUrl && 'news-rail__ticker-link--no-image',
-												]}
-												href={item.link}
-												target="_blank"
-												rel="noopener noreferrer"
-												tabindex="-1"
-												referrerpolicy="no-referrer"
-											>
-												<span class="news-rail__ticker-media" aria-hidden="true">
-													{
-														item.imageUrl ? (
-															<img
-																class="news-rail__ticker-image"
-																src={item.imageUrl}
-																alt=""
-																loading="lazy"
-																decoding="async"
-																referrerpolicy="strict-origin-when-cross-origin"
-															/>
-														) : null
-													}
-												</span>
-												<span class="news-rail__ticker-scrim" aria-hidden="true"></span>
-												<span class="news-rail__ticker-content">
-													<span class="news-rail__ticker-item-meta">
-														{item.publishedLabel}
-														<span aria-hidden="true">·</span>
-														{item.source}
-													</span>
-													<span class="news-rail__ticker-item-title">{item.title}</span>
-												</span>
-											</a>
-										</li>
-									))
-								}
-							</ul>
+										))}
+								</ul>
+							))}
 						</div>
 					</div>
 				</div>
@@ -120,5 +70,5 @@ const marqueeItems = items;
 	) : null
 }
 
-<!-- Astro 6: use a local typed script instead of an opaque file from `public/` whenever possible. -->
 <script src="../scripts/news-ticker.ts"></script>
+<script src="../scripts/news-navigation.ts"></script>
