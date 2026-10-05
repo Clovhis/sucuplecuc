@@ -1,18 +1,20 @@
 ---
 import EditorialCard from './EditorialCard.astro';
 import { getFeaturedEditorials } from '../lib/editorial';
-const entries = getFeaturedEditorials();
+const entries = getFeaturedEditorials(6);
 ---
 {entries.length > 0 && <section class="editorial-highlights" aria-labelledby="desde-cineposta">
-  <div class="editorial-highlights__heading"><h2 id="desde-cineposta">Desde CinePosta</h2><a href={`${import.meta.env.BASE_URL}editorial/`}>Todas las publicaciones →</a></div>
+  <div class="editorial-highlights__heading"><h2 id="desde-cineposta">Desde CinePosta</h2><a href={`${import.meta.env.BASE_URL}editorial/`}>Todas las publicaciones <span aria-hidden="true">→</span></a></div>
   <div class="editorial-highlights__grid">{entries.map((entry) => <EditorialCard entry={entry} />)}</div>
 </section>}
 <style>
-  .editorial-highlights { margin-block: 2.5rem; }
-  .editorial-highlights__heading { display: flex; justify-content: space-between; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
-  h2 { margin: 0; }
-  a { color: var(--accent-soft); padding-block: .75rem; }
-  .editorial-highlights__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
-  @media (max-width: 900px) { .editorial-highlights__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 600px) { .editorial-highlights__grid { grid-template-columns: minmax(0, 1fr); } }
+  .editorial-highlights { margin-block: 3rem; }
+  .editorial-highlights__heading { display: flex; justify-content: space-between; gap: .25rem 1rem; align-items: center; flex-wrap: wrap; border-bottom: 1px solid var(--line-strong); padding-bottom: .5rem; margin-bottom: 1.5rem; }
+  h2 { margin: 0; color: var(--muted); font-size: .875rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+  a { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; color: var(--accent-soft); font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  a:hover, a:focus-visible { color: var(--text); text-decoration: underline; text-underline-offset: .25rem; }
+  .editorial-highlights__grid { columns: 1; column-gap: 1.5rem; }
+  .editorial-highlights__grid > :global(.editorial-card) { break-inside: avoid; margin-bottom: 1.5rem; }
+  @media (min-width: 641px) { .editorial-highlights__grid { columns: 2; } }
+  @media (min-width: 1001px) { .editorial-highlights__grid { columns: 3; } }
 </style>

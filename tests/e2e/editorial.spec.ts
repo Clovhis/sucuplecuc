@@ -1,9 +1,15 @@
 import { test, expect, type Page } from '@playwright/test';
+import { readdirSync, readFileSync } from 'node:fs';
 import residentEvil from '../../src/data/editorials/resident-evil-noche-cero-la-veria-99-veces.json' with { type: 'json' };
 import miasma from '../../src/data/editorials/campamento-miasma-si-venis-por-jason-preparate-para-el-delirio.json' with { type: 'json' };
 import colony from '../../src/data/editorials/colony-zona-cero-me-gusto-pero-no-me-volo-la-peluca.json' with { type: 'json' };
 import cancelados from '../../src/data/editorials/cancelados-por-hollywood-estrellas-cima-exilio.json' with { type: 'json' };
 import insaciable from '../../src/data/editorials/insaciable-body-horror-en-modo-facil.json' with { type: 'json' };
+
+const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
+const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
+  JSON.parse(readFileSync(new URL(file, editorialDirectory), 'utf8')) as { slug: string; date: string; title: string },
+).sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
 
 async function openEditorialIndex(page: Page): Promise<void> {
   const link = page.getByRole('region', { name: 'Desde CinePosta' }).getByRole('link', { name: 'Todas las publicaciones' });
@@ -14,6 +20,51 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await link.click();
   await expect(page).toHaveURL(/\/editorial\/$/);
 }
+
+test('story cards navigate by keyboard, fit narrow screens and link to the complete archive in date order', async ({ page }, testInfo) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/');
+  const home = page.getByRole('region', { name: 'Desde CinePosta' });
+  const cards = home.locator('.editorial-card');
+  await expect(cards).toHaveCount(Math.min(6, publications.length));
+  const archiveLink = home.getByRole('link', { name: 'Todas las publicaciones' });
+  await expect(archiveLink).toHaveAttribute('href', '/editorial/');
+  for (const card of await cards.all()) {
+    await card.scrollIntoViewIfNeeded();
+    const image = card.locator('.editorial-card__cover');
+    await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0)).toBe(true);
+    await expect(card.getByText('Leer nota')).toBeVisible();
+  }
+  await home.screenshot({ path: testInfo.outputPath('stories-home.png') });
+  const firstLink = cards.first().getByRole('link');
+  const firstHref = await firstLink.getAttribute('href');
+  await firstLink.focus();
+  await expect(firstLink).toBeFocused();
+  expect(await firstLink.evaluate(node => getComputedStyle(node).outlineStyle)).toBe('solid');
+  await firstLink.press('Enter');
+  await expect(page).toHaveURL(firstHref!);
+
+  await page.goto('/');
+  await page.setViewportSize({ width: 320, height: 760 });
+  await home.scrollIntoViewIfNeeded();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  for (const card of await cards.all()) {
+    const box = await card.boundingBox();
+    expect(box!.x).toBeGreaterThanOrEqual(0);
+    expect(box!.x + box!.width).toBeLessThanOrEqual(320);
+  }
+  await home.screenshot({ path: testInfo.outputPath('stories-home-320.png') });
+  await openEditorialIndex(page);
+  await expect(page.locator('.editorial-card')).toHaveCount(publications.length);
+  expect(await page.locator('.editorial-card time').evaluateAll(nodes => nodes.map(node => node.getAttribute('datetime'))))
+    .toEqual(publications.map(entry => entry.date));
+  expect(await page.locator('.editorial-card > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))))
+    .toEqual(publications.map(entry => `/editorial/${entry.slug}/`));
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.locator('.editorial-index').screenshot({ path: testInfo.outputPath('stories-archive-320.png') });
+  expect(errors).toEqual([]);
+});
 
 for (const { entry, movieTitle, featured, sourcePattern } of [
   { entry: residentEvil, movieTitle: 'Resident Evil: Noche Cero', featured: false, sourcePattern: /^https:\/\/residentevil\.movie\// },
@@ -26,7 +77,7 @@ for (const { entry, movieTitle, featured, sourcePattern } of [
   test(`${entry.slug}: editorial connects home, index and movie without replacing its review`, async ({ page }) => {
     await page.goto('/');
     const home = page.getByRole('region', { name: 'Desde CinePosta' });
-    await expect(home.locator('.editorial-card')).toHaveCount(3);
+    await expect(home.locator('.editorial-card')).toHaveCount(Math.min(6, publications.length));
     if (featured) await expect(home.getByRole('heading', { name: entry.title })).toBeVisible();
     await openEditorialIndex(page);
     const indexedEntry = page.locator('.editorial-card').filter({ hasText: entry.title });

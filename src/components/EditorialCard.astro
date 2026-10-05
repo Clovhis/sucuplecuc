@@ -4,25 +4,33 @@ interface Props { entry: Editorial; }
 const { entry } = Astro.props;
 ---
 <article class="editorial-card">
-  <a href={getEditorialPath(entry.slug)}>
-    <img src={editorialAsset(entry.cover.srcSmall ?? entry.cover.src)} alt={entry.cover.alt} width={entry.cover.width} height={entry.cover.height} loading="lazy" decoding="async" />
+  <a href={getEditorialPath(entry.slug)} aria-labelledby={`editorial-card-${entry.slug}`}>
+    <img class="editorial-card__cover" src={editorialAsset(entry.cover.srcSmall ?? entry.cover.src)} srcset={entry.cover.srcSmall ? `${editorialAsset(entry.cover.srcSmall)} 640w, ${editorialAsset(entry.cover.src)} ${entry.cover.width}w` : undefined} sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1000px) calc((100vw - 56px) / 2), (max-width: 1212px) calc((100vw - 80px) / 3), 378px" alt={entry.cover.alt} width={entry.cover.width} height={entry.cover.height} loading="lazy" decoding="async" />
     <div class="editorial-card__body">
-      <span class="editorial-card__type">{entry.type}</span>
-      <h3>{entry.title}</h3>
+      <div class="editorial-card__byline">
+        <img src={`${import.meta.env.BASE_URL}brand/cineposta-favicon-mark.png`} alt="" width="24" height="24" loading="lazy" decoding="async" />
+        <span>{entry.author}</span>
+        <span class="editorial-card__type">{entry.type}</span>
+      </div>
+      <h3 id={`editorial-card-${entry.slug}`}>{entry.title}</h3>
       <p>{entry.excerpt}</p>
-      <small><time datetime={entry.date}>{formatEditorialDate(entry.date)}</time> · {entry.readingTime} min de lectura</small>
+      <div class="editorial-card__meta"><time datetime={entry.date}>{formatEditorialDate(entry.date)}</time><span>{entry.readingTime} min de lectura</span></div>
+      <span class="editorial-card__read">Leer nota <span aria-hidden="true">→</span></span>
     </div>
   </a>
 </article>
 <style>
-  .editorial-card { min-width: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); }
-  a { display: block; height: 100%; text-decoration: none; color: var(--text); }
-  a:hover h3, a:focus-visible h3 { color: var(--accent-soft); }
+  .editorial-card { min-width: 0; border-radius: 4px; overflow: hidden; background: var(--surface-strong); }
+  a { display: block; text-decoration: none; color: var(--text); }
+  a:hover h3, a:focus-visible h3, a:hover .editorial-card__read, a:focus-visible .editorial-card__read { color: var(--accent-soft); }
   a:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
-  img { width: 100%; height: auto; aspect-ratio: 2.23; object-fit: cover; display: block; }
-  .editorial-card__body { padding: 1.25rem; }
-  .editorial-card__type { text-transform: uppercase; font-family: var(--font-mono); color: var(--accent-soft); font-size: .75rem; }
-  h3 { font-size: 1.3rem; line-height: 1.3; margin: .65rem 0; text-wrap: balance; }
-  p { color: var(--muted); margin: 0 0 1rem; }
-  small { color: var(--muted); }
+  .editorial-card__cover { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+  .editorial-card__body { padding: 1rem; }
+  .editorial-card__byline { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; color: var(--muted); font-size: .8rem; font-weight: 700; }
+  .editorial-card__byline img { width: 24px; height: 24px; object-fit: contain; border-radius: 50%; }
+  .editorial-card__type { margin-inline-start: auto; text-transform: uppercase; font: .65rem var(--font-mono); color: var(--accent-soft); letter-spacing: .04em; }
+  h3 { font-family: var(--font-sans); font-size: clamp(1.25rem, 1.8vw, 1.5rem); font-weight: 500; line-height: 1.3; letter-spacing: -.015em; margin: 1rem 0 .75rem; overflow-wrap: anywhere; }
+  p { color: var(--muted); font-size: .9375rem; line-height: 1.6; margin: 0 0 1.25rem; }
+  .editorial-card__meta { display: flex; flex-wrap: wrap; gap: .25rem 1rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
+  .editorial-card__read { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.5rem; font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 </style>
