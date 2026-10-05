@@ -453,11 +453,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 		const databaseMedia = document.createElement('span');
 		databaseMedia.className = 'home-people-showcase__portrait home-people-showcase__portrait--cta';
-		databaseMedia.append(createDatabaseGraphic());
-
-		const databaseTag = document.createElement('span');
-		databaseTag.className = 'home-people-showcase__cta-tag';
-		databaseTag.textContent = 'Base de datos';
 
 		const databaseCount = document.createElement('strong');
 		databaseCount.className = 'home-people-showcase__cta-count';
@@ -467,14 +462,14 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		databaseCaption.className = 'home-people-showcase__cta-caption';
 		databaseCaption.textContent = 'perfiles conectados';
 
-		databaseMedia.append(databaseTag, databaseCount, databaseCaption);
+		databaseMedia.append(databaseCount, databaseCaption);
 
 		const databaseBody = document.createElement('span');
 		databaseBody.className = 'home-people-showcase__body home-people-showcase__body--cta';
 
 		const databaseTitle = document.createElement('span');
 		databaseTitle.className = 'home-people-showcase__name';
-		databaseTitle.textContent = 'Actrices y actores';
+		databaseTitle.textContent = 'Explorá el catálogo de personas';
 
 		const databaseMeta = document.createElement('span');
 		databaseMeta.className = 'home-people-showcase__meta';
@@ -496,21 +491,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 
 	const isPlainLeftClick = (event: MouseEvent): boolean =>
 		event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
-
-	const createDatabaseGraphic = (): HTMLElement => {
-		const graphic = document.createElement('span');
-		graphic.className = 'home-people-showcase__cta-graphic';
-		graphic.setAttribute('aria-hidden', 'true');
-		const image = document.createElement('img');
-		image.className = 'home-people-showcase__cta-graphic-image';
-		image.src = '/images/home/cineposta-personaje-patada-base-datos.webp';
-		image.alt = '';
-		image.width = 1536;
-		image.height = 1024;
-		image.decoding = 'async';
-		graphic.append(image);
-		return graphic;
-	};
 
 	const getChipLabel = (
 		chips: HTMLButtonElement[],

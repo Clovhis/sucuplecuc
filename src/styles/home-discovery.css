@@ -1,0 +1,302 @@
+/* The home discovery spread shares the catalog's palette and typography.
+   Keep the scope explicit: these legacy classes also have mobile defaults. */
+.home-discovery {
+	--discovery-ink: #f0eee8;
+	--discovery-muted: #aeb5bf;
+	--discovery-line: #343b45;
+	--discovery-accent: #e6b291;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	overflow: visible;
+}
+.home-discovery::before { display: none; }
+.home-discovery .catalog-shell__main {
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	gap: 2rem;
+}
+.home-discovery .catalog-shell__filters { gap: 2rem; height: auto; }
+.home-discovery :is(a, button):focus-visible {
+	outline: 2px solid var(--discovery-accent);
+	outline-offset: 4px;
+}
+
+/* A short editorial invitation, with one clear destination. */
+.home-discovery .postometro-teaser {
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 1.5rem;
+	min-height: 0;
+	padding: 1.5rem 0 1.75rem;
+	border: 0;
+	border-block: 1px solid var(--discovery-line);
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	overflow: visible;
+}
+.home-discovery .postometro-teaser__copy { gap: .65rem; }
+.home-discovery .postometro-teaser__eyebrow {
+	font: 500 .7rem/1.4 var(--font-sans);
+	letter-spacing: .08em;
+	color: var(--discovery-muted);
+}
+.home-discovery .postometro-teaser__title {
+	font: 500 clamp(1.8rem, 3vw, 2.4rem)/1.15 var(--font-sans);
+	letter-spacing: -.035em;
+	color: var(--discovery-ink);
+}
+.home-discovery .postometro-teaser__lead {
+	max-width: 43ch;
+	font-size: .9rem;
+	font-weight: 400;
+	color: var(--discovery-muted);
+}
+.home-discovery .postometro-teaser__actions {
+	grid-column: 2;
+	align-content: end;
+	min-height: 0;
+	gap: .25rem;
+}
+.home-discovery .postometro-teaser__time {
+	font: 400 .75rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	color: var(--discovery-muted);
+}
+.home-discovery .postometro-teaser__link {
+	justify-content: space-between;
+	gap: 1rem;
+	padding: .5rem 0;
+	min-height: 44px;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	font: 600 .85rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	color: var(--discovery-accent);
+	transform: none;
+}
+.home-discovery .postometro-teaser__link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Portraits form a contact sheet; details sit directly on the page. */
+.home-discovery .home-people-showcase {
+	gap: 1.25rem;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+}
+.home-discovery .home-people-showcase__header {
+	grid-template-columns: minmax(0, 1fr) auto;
+	align-items: end;
+	gap: .75rem 1rem;
+	padding: 0 0 .85rem;
+	border-bottom: 1px solid var(--discovery-line);
+}
+.home-discovery .home-people-showcase__heading { gap: .4rem; }
+.home-discovery .home-people-showcase__eyebrow {
+	display: block;
+	padding: 0;
+	border: 0;
+	background: none;
+	font: 500 .7rem/1.4 var(--font-sans);
+	letter-spacing: .08em;
+	color: var(--discovery-muted);
+}
+.home-discovery .home-people-showcase__title {
+	max-width: none;
+	font: 500 1.35rem/1.25 var(--font-sans);
+	letter-spacing: -.02em;
+	color: var(--discovery-ink);
+}
+.home-discovery .home-people-showcase__intro { display: grid; }
+.home-discovery .home-people-showcase__stats { gap: .75rem; }
+.home-discovery .home-people-showcase__stat {
+	gap: .3rem;
+	padding: 0;
+	border: 0;
+	background: none;
+}
+.home-discovery .home-people-showcase__stat strong { font-size: .75rem; font-weight: 500; color: var(--discovery-ink); }
+.home-discovery .home-people-showcase__stat span {
+	font: 400 .7rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	color: var(--discovery-muted);
+}
+.home-discovery__people-intro { margin: -.4rem 0 0; color: var(--discovery-muted); font-size: .85rem; line-height: 1.5; }
+.home-discovery .home-people-showcase__grid {
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 1.5rem 1rem;
+}
+.home-discovery .home-people-showcase__card {
+	align-content: start;
+	gap: .65rem;
+	transform: none;
+	opacity: 1;
+}
+.home-discovery .home-people-showcase__portrait {
+	border-radius: 4px;
+	border-color: var(--discovery-line);
+	box-shadow: none;
+	transform: none;
+}
+.home-discovery .home-people-showcase__card:is(:hover, :focus-visible) .home-people-showcase__portrait {
+	border-color: var(--discovery-accent);
+	transform: none;
+	box-shadow: none;
+}
+.home-discovery .home-people-showcase__body { gap: .25rem; }
+.home-discovery .home-people-showcase__name {
+	font-size: .82rem;
+	font-weight: 500;
+	line-height: 1.35;
+	color: var(--discovery-ink);
+	text-wrap: initial;
+}
+.home-discovery .home-people-showcase__card:hover .home-people-showcase__name { color: var(--discovery-accent); }
+.home-discovery :is(.home-people-showcase__nationality, .home-people-showcase__meta) {
+	font: 400 .72rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	color: var(--discovery-muted);
+	opacity: 1;
+}
+.home-discovery .home-people-showcase__card--cta {
+	grid-column: 1 / -1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--discovery-line);
+}
+.home-discovery .home-people-showcase__portrait--cta {
+	display: grid;
+	gap: .25rem;
+	padding: 0;
+	border: 0;
+	background: none;
+	aspect-ratio: auto;
+	overflow: visible;
+}
+.home-discovery .home-people-showcase__cta-count { font: 500 1.75rem/1 var(--font-sans); color: var(--discovery-ink); }
+.home-discovery .home-people-showcase__cta-caption { font: 400 .72rem/1.4 var(--font-sans); color: var(--discovery-muted); letter-spacing: 0; text-transform: none; }
+.home-discovery .home-people-showcase__body--cta { justify-items: end; text-align: end; }
+.home-discovery .home-people-showcase__cta-button {
+	justify-self: end;
+	min-height: 44px;
+	padding: .5rem 0;
+	border: 0;
+	background: none;
+	box-shadow: none;
+	font: 500 .8rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	color: var(--discovery-accent);
+	transform: none;
+}
+.home-discovery .home-people-showcase__card--cta:is(:hover, :focus-visible) .home-people-showcase__cta-button {
+	border: 0;
+	background: none;
+	box-shadow: none;
+	transform: none;
+	color: var(--discovery-accent);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+/* Reviews read as a column, using the complete poster rather than a crop. */
+.home-discovery .catalog-shell__upcoming {
+	align-self: start;
+	gap: 0;
+	padding: 0 0 0 2rem;
+	border: 0;
+	border-left: 1px solid var(--discovery-line);
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+}
+.home-discovery .catalog-shell__upcoming-title {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid var(--discovery-line);
+	font: 500 .875rem/1.4 var(--font-sans);
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	color: var(--discovery-muted);
+}
+.home-discovery .upcoming-release-list { grid-template-columns: 1fr; grid-auto-rows: auto; min-height: 0; gap: 0; }
+.home-discovery .upcoming-release-list__item { padding-block: 1.5rem; border-bottom: 1px solid var(--discovery-line); }
+.home-discovery .upcoming-release-list__item:last-child { border-bottom: 0; padding-bottom: 0; }
+.home-discovery .upcoming-release-list__card {
+	grid-template-columns: 5.25rem minmax(0, 1fr);
+	grid-template-rows: auto;
+	align-items: start;
+	gap: 1rem;
+	min-height: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	transform: none;
+}
+.home-discovery .upcoming-release-list__media {
+	aspect-ratio: 2 / 3;
+	border: 1px solid var(--discovery-line);
+	border-radius: 3px;
+	background: #14181f;
+}
+.home-discovery .upcoming-release-list__media::after { display: none; }
+.home-discovery .upcoming-release-list__image { object-fit: contain; transform: none; filter: none; }
+.home-discovery .upcoming-release-list__card:is(:hover, :focus-visible) .upcoming-release-list__image { transform: none; filter: none; }
+.home-discovery .upcoming-release-list__content { min-width: 0; gap: .6rem; }
+.home-discovery .upcoming-release-list__title { font: 500 1rem/1.35 var(--font-sans); color: var(--discovery-ink); text-wrap: initial; }
+.home-discovery .upcoming-release-list__card:hover .upcoming-release-list__title { color: var(--discovery-accent); }
+.home-discovery :is(.upcoming-release-list__genres, .upcoming-release-list__score, .upcoming-release-list__date) {
+	font: 400 .75rem/1.5 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	white-space: normal;
+	overflow: visible;
+	color: var(--discovery-muted);
+}
+.home-discovery .upcoming-release-list__score { color: #efd199; font-weight: 500; }
+.home-discovery .upcoming-release-list__date { font-size: .7rem; }
+.home-discovery__review-excerpt {
+	grid-column: 1 / -1;
+	margin: 0;
+	font-size: .85rem;
+	line-height: 1.6;
+	color: var(--discovery-muted);
+}
+.home-discovery__read { grid-column: 1 / -1; color: var(--discovery-accent); font-size: .75rem; line-height: 1.4; }
+.home-discovery .upcoming-release-list__card:hover .home-discovery__read { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 1080px) {
+	.home-discovery .catalog-shell__main { grid-template-columns: 1fr; }
+	.home-discovery .catalog-shell__upcoming { padding: 0; border-left: 0; }
+	.home-discovery .upcoming-release-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+	.home-discovery .upcoming-release-list__item { border-bottom: 0; padding-bottom: 0; }
+	.home-discovery .upcoming-release-list__card { grid-template-columns: 4.5rem minmax(0, 1fr); gap: .75rem; }
+}
+@media (max-width: 720px) {
+	.home-discovery .catalog-shell__main { gap: 2rem; }
+	.home-discovery .postometro-teaser { grid-template-columns: 1fr; gap: 1rem; padding-block: 1.25rem; }
+	.home-discovery .postometro-teaser__actions { grid-column: 1; }
+	.home-discovery .postometro-teaser__link { min-height: 48px; width: 100%; }
+	.home-discovery .home-people-showcase__header { grid-template-columns: 1fr; align-items: start; }
+	.home-discovery .home-people-showcase__intro { justify-items: start; }
+	.home-discovery .home-people-showcase__stats { justify-content: start; }
+	.home-discovery .home-people-showcase__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.home-discovery .home-people-showcase__name { font-size: .85rem; }
+	.home-discovery .home-people-showcase__body--cta > .home-people-showcase__name { max-width: 19ch; }
+	.home-discovery .upcoming-release-list { grid-template-columns: 1fr; gap: 0; }
+	.home-discovery .upcoming-release-list__item { padding-block: 1.25rem; border-bottom: 1px solid var(--discovery-line); }
+	.home-discovery .upcoming-release-list__card { grid-template-columns: 5.25rem minmax(0, 1fr); gap: 1rem; }
+}

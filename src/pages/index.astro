@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/home-editorial.css';
+import '../styles/home-discovery.css';
 import EditorialHighlights from '../components/EditorialHighlights.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
@@ -85,6 +86,7 @@ const latestReviewCards = getLatestReviewMovies(movies, 3).map((movie) => {
 		publishedAt: movie.reviewPublishedAt ?? movie.releaseDate,
 		year: movie.year,
 		genresLabel: genres.join(' · '),
+		reviewExcerpt: truncateText(movie.review.replace(/\s+/g, ' ').trim(), 160),
 		scoreLabel: score === null ? 'Sin valorar' : `${score}/10 · ${getCinePostaScoreLabel(score)}`,
 		posterUrl: getPosterUrl(movie.poster),
 		url: `${import.meta.env.BASE_URL}peliculas/${movie.slug}/`,
@@ -323,8 +325,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 			movies.length > 0 ? (
 				<>
 					<div class="home-catalog__desktop-extra">
-						<section class="catalog-shell fade-up" style="--item-delay: 80ms;">
-							<h2 class="u-visually-hidden">Filtros del catálogo y últimas reseñas</h2>
+						<section class="catalog-shell home-discovery fade-up" style="--item-delay: 80ms;" aria-label="Para seguir explorando cine">
 							<div class="catalog-shell__main">
 								<div class="catalog-shell__filters">
 									<PostometroTeaser id="que-vemos-hoy" />
@@ -334,7 +335,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 											<div class="home-people-showcase__header">
 												<div class="home-people-showcase__heading">
 													<p class="home-people-showcase__eyebrow">Base de datos</p>
-													<h3 class="home-people-showcase__title">Actrices y actores del catálogo</h3>
+													<h2 class="home-people-showcase__title">Actrices y actores</h2>
 												</div>
 												<div class="home-people-showcase__intro" aria-label="Cobertura actual de la base">
 													<ul class="home-people-showcase__stats">
@@ -347,31 +348,18 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 															<span>personas</span>
 														</li>
 													</ul>
-													<p class="home-people-showcase__description">
-														Perfiles con bio, edad, origen y filmografía conectada para entrar rápido a
-														cada ficha.
-													</p>
 												</div>
 											</div>
-											<div class="home-character home-character--peeking" aria-hidden="true">
-												<img
-													src="/images/home/cineposta-personaje-asoma.webp"
-													alt=""
-													width="360"
-													height="194"
-													loading="lazy"
-													decoding="async"
-												/>
-											</div>
+											<p class="home-discovery__people-intro">Biografías, películas y las personas detrás de ellas.</p>
 											<div class="home-people-showcase__grid" data-home-people-grid data-people-index-url={PEOPLE_PATH}></div>
 										</section>
 									)
 								}
 								</div>
 								<aside class="catalog-shell__upcoming" aria-labelledby="latest-reviews-title">
-									<h3 id="latest-reviews-title" class="catalog-shell__upcoming-title">
+									<h2 id="latest-reviews-title" class="catalog-shell__upcoming-title">
 										Últimas reseñas
-									</h3>
+									</h2>
 									{
 										latestReviewCards.length > 0 ? (
 											<ol class="upcoming-release-list">
@@ -389,19 +377,18 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 																		class="upcoming-release-list__image"
 																		src={movie.posterUrl}
 																		alt={`Poster de ${movie.title}`}
+																		width="320"
+																		height="480"
 																		loading="lazy"
 																		decoding="async"
 																		data-cineposta-poster
 																		data-poster-search-title={movie.title}
 																		data-poster-search-year={movie.year}
 																	/>
-																	<span class="upcoming-release-list__play" aria-hidden="true">
-																		Leer reseña
-																	</span>
 																</div>
 																<div class="upcoming-release-list__content">
-																	<p class="upcoming-release-list__title">{movie.title}</p>
-																	<p class="upcoming-release-list__genres">Género · {movie.genresLabel}</p>
+																	<h3 class="upcoming-release-list__title">{movie.title}</h3>
+																	<p class="upcoming-release-list__genres">{movie.genresLabel}</p>
 																	<p class="upcoming-release-list__score">Score · {movie.scoreLabel}</p>
 																	<time
 																		class="upcoming-release-list__date"
@@ -412,6 +399,8 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 																			: movie.year}
 																	</time>
 																</div>
+																<p class="home-discovery__review-excerpt">{movie.reviewExcerpt}</p>
+																<span class="home-discovery__read">Leer reseña <span aria-hidden="true">→</span></span>
 															</a>
 														</li>
 													))
