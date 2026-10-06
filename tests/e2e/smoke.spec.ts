@@ -155,10 +155,11 @@ test('Superbad title and local poster stay aligned', async ({ page }) => {
 
 test('movie detail reaction follows the CinePosta score', async ({ page }) => {
 	const cases = [
-		{ path: '/peliculas/akira-1988/', label: '8 · Excelente', art: /recomendada-/ },
-		{ path: '/peliculas/abyss-1989/', label: '6 · Buena', art: /buena-raspando-/ },
-		{ path: '/peliculas/1941-1979/', label: '5 · Regular', art: /zafa-/ },
-		{ path: '/peliculas/a-minecraft-movie-2025/', label: '3 · Muy mala', art: /no-recomendada-/ },
+		{ path: '/peliculas/ant-man-2015/', label: '9 · Obra maestra' },
+		{ path: '/peliculas/akira-1988/', label: '8 · Excelente' },
+		{ path: '/peliculas/abyss-1989/', label: '6 · Buena' },
+		{ path: '/peliculas/1941-1979/', label: '5 · Regular' },
+		{ path: '/peliculas/a-minecraft-movie-2025/', label: '3 · Muy mala' },
 	];
 
 	for (const reaction of cases) {
@@ -167,7 +168,7 @@ test('movie detail reaction follows the CinePosta score', async ({ page }) => {
 
 		const card = page.locator('.movie-reaction');
 		await expect(card.getByRole('heading', { name: reaction.label })).toBeVisible();
-		await expect(card.locator('img')).toHaveAttribute('src', reaction.art);
+		await expect(card.locator('img')).toHaveCount(0);
 		if (reaction.label === '6 · Buena') {
 			await expect(card).toHaveClass(/movie-reaction--pass/);
 			await expect(page.locator('.movie-detail__meta .badge')).toHaveClass(/badge--buena/);
@@ -175,7 +176,7 @@ test('movie detail reaction follows the CinePosta score', async ({ page }) => {
 	}
 });
 
-test('movie reaction follows the review and the featured cast', async ({ page }) => {
+test('movie reading puts the review and reaction before the technical sidebar', async ({ page }) => {
 	await page.goto('/peliculas/la-odisea-2026/', { waitUntil: 'domcontentloaded' });
 
 	const readingOrder = await page.locator('.movie-detail__panel').evaluate((panel) =>
@@ -186,8 +187,8 @@ test('movie reaction follows the review and the featured cast', async ({ page })
 
 	expect(readingOrder).toEqual([
 		'movie-detail__review-card',
-		'movie-detail__people-panel',
 		'movie-reaction movie-reaction--up',
+		'movie-detail__people-panel',
 	]);
 });
 

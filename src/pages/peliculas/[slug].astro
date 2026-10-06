@@ -1,4 +1,5 @@
 ---
+import '../../styles/movie-detail.css';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import {
@@ -180,7 +181,6 @@ const xShareUrl = `https://twitter.com/intent/tweet?${new URLSearchParams({
 	url: movieCanonicalUrl,
 }).toString()}`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
-const reviewPurposeNote = 'Reseña corta y al hueso para decidir si verla o dejarla pasar.';
 const editorialUpdatedLabel = movie.releaseDate
 	? new Intl.DateTimeFormat('es-AR', {
 			day: 'numeric',
@@ -356,6 +356,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 ---
 
 <BaseLayout
+	bodyClass="movie-edition"
 	title={pageTitle}
 	description={pageDescription}
 	image={posterUrl}
@@ -368,12 +369,14 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 				Volver
 			</a>
 			<HomeBrandLink className="page-action page-action--home" label="Volver al inicio de Cine Posta" />
-			<a class="page-action" href={getMovieCommunityPath(movie.slug)}>Abrir discusión</a>
+			<a class="page-action" href={getMovieCommunityPath(movie.slug)}>
+				Abrir discusión
+			</a>
 		</div>
 
 		<section class="movie-detail">
-			{
-				hasScreenshotGallery ? (
+			<div class="movie-detail__cover">
+				{hasScreenshotGallery ? (
 					<div class="movie-detail__gallery fade-up" style="--item-delay: 0ms;">
 						{screenshotUrls.map((imageUrl, index) => (
 							<div class="movie-detail__shot-wrap">
@@ -411,7 +414,14 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 					</div>
 				) : (
 					<div class="movie-detail__poster fade-up" style="--item-delay: 0ms;">
-						<img src={posterUrl} alt={`Poster de ${movie.title}`} referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={movie.title} data-poster-search-year={movie.year} />
+						<img
+							src={posterUrl}
+							alt={`Poster de ${movie.title}`}
+							referrerpolicy="no-referrer"
+							data-cineposta-poster
+							data-poster-search-title={movie.title}
+							data-poster-search-year={movie.year}
+						/>
 						{showAbsoluteCinemaSticker && (
 							<img
 								class="absolute-cinema-sticker movie-sticker movie-detail__absolute-cinema-sticker"
@@ -435,17 +445,17 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 							/>
 						)}
 					</div>
-				)
-			}
+				)}
 
-			<div class="movie-detail__panel fade-up" style="--item-delay: 100ms;">
 				<header class="movie-detail__heading">
 					<div class="movie-detail__intro">
+						<p class="movie-detail__eyebrow">CinePosta / Películas</p>
 						<h1 class="movie-detail__title">{movie.title}</h1>
 						<div class="movie-detail__meta">
 							<span>{movie.year}</span>
+							<span>{movieGenreLabels.join(' · ')}</span>
+							{editorialSummary.runtime && <span>{editorialSummary.runtime.formatted}</span>}
 							<span class={`badge ${verdictClass}`}>{getVerdictLabel(movie)}</span>
-							<PlatformBadgeGroup platforms={moviePlatforms} />
 						</div>
 						<div class="movie-detail__editorial-byline" aria-label="Datos editoriales de la reseña">
 							<span>Publicado por {SITE_NAME}</span>
@@ -458,549 +468,26 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 								</>
 							)}
 						</div>
-						<p class="movie-detail__editorial-note">{reviewPurposeNote}</p>
+						<div class="movie-detail__watch" aria-label="Dónde verla en Argentina">
+							<span>Dónde verla</span>
+							<PlatformBadgeGroup platforms={moviePlatforms} />
+						</div>
+						<nav class="movie-detail__jump-links" aria-label="Secciones de la ficha">
+							{movie.review && (
+								<a href="#resena">
+									Leer reseña <span aria-hidden="true">↓</span>
+								</a>
+							)}
+							<a href="#ficha-tecnica">Ficha técnica</a>
+							<a href="#trailer">Trailer</a>
+						</nav>
 					</div>
 				</header>
-				<section class="movie-detail__showcase" aria-label="Trailer y elenco destacado">
+			</div>
+			<div class="movie-detail__panel">
+				<section class="movie-detail__showcase" aria-label="Reseña y datos de la película">
 					<div class="movie-detail__hero-stack">
-						{movie.trailerYoutubeId ? (
-							<TrailerPlayer
-								title={movie.title}
-								year={movie.year}
-								youtubeId={movie.trailerYoutubeId}
-								thumbnailUrl={trailerThumbnailUrl}
-							/>
-						) : (
-							<p class="message-box">Todavía no tenemos trailer cargado.</p>
-						)}
-						{
-							sangrometroScore !== undefined && (
-								<section id="sangrometro" class="movie-detail__sangrometro-card" aria-label="Sangrómetro">
-									<div class="movie-detail__sangrometro-head">
-										<p class="movie-detail__sangrometro-title">Sangrómetro</p>
-									</div>
-									<Sangrometro score={sangrometroScore} />
-								</section>
-							)
-						}
-						{
-							lagrimometroScore !== undefined && (
-								<section id="lagrimometro" class="movie-detail__lagrimometro-card" aria-label="Lagrimómetro">
-									<div class="movie-detail__lagrimometro-head">
-										<p class="movie-detail__lagrimometro-title">Lagrimómetro</p>
-									</div>
-									<Lagrimometro score={lagrimometroScore} />
-								</section>
-							)
-						}
-						{
-							jajametroScore !== undefined && (
-								<section id="jajametro" class="movie-detail__jajametro-card" aria-label="Jajámetro">
-									<div class="movie-detail__jajametro-head">
-										<p class="movie-detail__jajametro-title">Jajámetro</p>
-									</div>
-									<Jajametro score={jajametroScore} />
-								</section>
-							)
-						}
-						{
-							cagazometroScore !== undefined && (
-								<section id="cagazometro" class="movie-detail__cagazometro-card" aria-label="Cagazómetro">
-									<div class="movie-detail__cagazometro-head">
-										<p class="movie-detail__cagazometro-title">Cagazómetro</p>
-									</div>
-									<Cagazometro score={cagazometroScore} />
-								</section>
-							)
-						}
-						{
-							explosiometroScore !== undefined && (
-								<section id="explosiometro" class="movie-detail__explosiometro-card" aria-label="Explosiómetro">
-									<div class="movie-detail__explosiometro-head">
-										<p class="movie-detail__explosiometro-title">Explosiómetro</p>
-									</div>
-									<Explosiometro score={explosiometroScore} />
-								</section>
-							)
-						}
-						{
-							shouldShowPostCreditsInfo && (
-								<section id="post-credits" class="movie-detail__post-credits-card" aria-label="Escenas post-créditos">
-									<div class="movie-detail__post-credits-head">
-										<p class="movie-detail__post-credits-title">Escenas post-créditos</p>
-									</div>
-									<PostCreditsInfo scenes={movie.postCreditsScenes!} />
-								</section>
-							)
-						}
-						{
-							movie.synopsis && (
-								<section class="movie-detail__synopsis-card" aria-label="De qué se trata">
-									<p class="movie-detail__synopsis-kicker">De qué va</p>
-									<p class="movie-detail__synopsis">{movie.synopsis}</p>
-								</section>
-							)
-						}
-						{
-							movie.review && (
-								<section class="movie-detail__review-card" aria-label="Reseña honesta">
-									<p class="movie-detail__review-kicker">La posta</p>
-									<p class="movie-detail__review">{movie.review}</p>
-									<a class="movie-detail__community-link" href={getMovieCommunityPath(movie.slug)}>💬 ¿La viste? Caé a Foro Cineposta y tirá tu opinión</a>
-								</section>
-							)
-						}
-					</div>
-					<div class="movie-detail__side-stack">
-						<MovieEditorialLinks movieSlug={movie.slug} />
-						<section
-							class="movie-share"
-							aria-labelledby={`share-${movie.slug}`}
-							data-movie-share
-							data-share-url={movieCanonicalUrl}
-							data-share-title={pageTitle}
-							data-share-text={shareText}
-						>
-							<div class="movie-share__top">
-								<p id={`share-${movie.slug}`} class="movie-share__title">Share</p>
-								<p class="movie-share__hint">Pasá esta ficha por mensaje o redes.</p>
-							</div>
-							<div class="movie-share__actions" aria-label={`Compartir ${movie.title}`}>
-								<button class="movie-share__button movie-share__button--primary" type="button" data-native-share hidden>
-									Compartir
-								</button>
-								<a
-									class="movie-share__button movie-share__button--whatsapp"
-									href={whatsappShareUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label={`Compartir ${movie.title} por WhatsApp`}
-								>
-									<img class="movie-share__logo movie-share__logo--whatsapp" src="/brand/social/whatsapp.svg" alt="" aria-hidden="true" loading="lazy" />
-								</a>
-								<a
-									class="movie-share__button movie-share__button--x"
-									href={xShareUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label={`Compartir ${movie.title} en X`}
-								>
-									<img class="movie-share__logo movie-share__logo--x" src="/brand/social/x.svg" alt="" aria-hidden="true" loading="lazy" />
-								</a>
-								<button class="movie-share__button movie-share__button--copy" type="button" data-copy-share-url>
-									Copiar URL
-								</button>
-							</div>
-							<p class="movie-share__status" role="status" aria-live="polite" data-share-status></p>
-						</section>
-						<dl class="movie-detail__taxonomy" aria-label="Género y subgéneros">
-							<div class="movie-detail__taxonomy-item">
-								<dt>{movieGenreLabels.length > 1 ? 'Géneros' : 'Género'}</dt>
-								<dd>{movieGenreLabels.join(' · ')}</dd>
-							</div>
-							{
-								movieSubgenres.length > 0 && (
-									<div class="movie-detail__taxonomy-item movie-detail__taxonomy-item--subgenres">
-										<dt>{movieSubgenres.length > 1 ? 'Subgéneros' : 'Subgénero'}</dt>
-										<dd class="movie-detail__taxonomy-tags">
-											{movieSubgenres.map((subgenre) => (
-												<span class="movie-detail__taxonomy-tag">{subgenre}</span>
-											))}
-										</dd>
-									</div>
-								)
-							}
-						</dl>
-						<dl class="movie-detail__taxonomy movie-detail__taxonomy--nationality" aria-label="Países productores">
-							<div class="movie-detail__taxonomy-item movie-detail__taxonomy-item--nationality">
-								<dt>Países productores</dt>
-								<dd class="movie-detail__taxonomy-nationality-list">
-									{movieCountries.map((country) => (
-										<span class="movie-detail__taxonomy-nationality" data-country-code={country.code}>
-											<img class="movie-detail__taxonomy-nationality-flag" src={`/images/flags/${country.flagCode}.svg`} alt="" width="20" height="15" loading="lazy" />
-											<span>{country.label}</span>
-										</span>
-									))}
-								</dd>
-							</div>
-						</dl>
-						{
-							(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
-								<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
-								{
-									peopleGroups.directors.length > 0 && (
-										<div class="movie-detail__people-block">
-											<h2 class="movie-detail__people-title">
-												{peopleGroups.directors.length > 1 ? 'Dirección' : 'Director'}
-											</h2>
-											<ul class="movie-detail__people-grid" role="list">
-												{peopleGroups.directors.map((person) => (
-													<li>
-														<article
-															class={`movie-detail__person-card${person.profilePath ? ' movie-detail__person-card--profile' : ''}`}
-														>
-															{
-																person.profilePath ? (
-																	<a
-																		class="movie-detail__person-avatar movie-detail__person-avatar--link"
-																		href={getPersonProfileHref(person.profilePath)}
-																		aria-label={`Ver perfil de ${person.creditedName}`}
-																	>
-																		{person.image || person.remoteImageUrl ? (
-																			<img
-																				src={person.image ?? person.remoteImageUrl}
-																				alt={`Foto de ${person.creditedName}`}
-																				loading="lazy"
-																				referrerpolicy="no-referrer"
-																			/>
-																		) : (
-																			<span aria-hidden="true">{person.initials}</span>
-																		)}
-																	</a>
-																) : (
-																	<div class="movie-detail__person-avatar">
-																		{person.image || person.remoteImageUrl ? (
-																			<img
-																				src={person.image ?? person.remoteImageUrl}
-																				alt={`Foto de ${person.creditedName}`}
-																				loading="lazy"
-																				referrerpolicy="no-referrer"
-																			/>
-																		) : (
-																			<span aria-hidden="true">{person.initials}</span>
-																		)}
-																	</div>
-																)
-															}
-															<div class="movie-detail__person-copy">
-																<h3 class="movie-detail__person-name">
-																	{
-																		person.profilePath ? (
-																			<a
-																				class="movie-detail__person-name-link"
-																				href={getPersonProfileHref(person.profilePath)}
-																			>
-																				{person.creditedName}
-																			</a>
-																		) : (
-																			person.creditedName
-																		)
-																	}
-																</h3>
-																{
-																	person.profilePath && (
-																		<p class="movie-detail__person-badge-row">
-																			<span class="movie-detail__person-flag">Tiene ficha</span>
-																		</p>
-																	)
-																}
-																<p class="movie-detail__person-origin">
-																	{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
-																</p>
-																{
-																	(getBirthSummary(person) || getDeathSummary(person)) && (
-																		<p class="movie-detail__person-meta">
-																			{getBirthSummary(person) ? (
-																				<>
-																					<span>{getBirthSummary(person)}</span>
-																					{person.deathDate || person.deathYear ? (
-																						<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																					) : shouldHideLivingAge(person) ? (
-																						<span>Edad no confirmada</span>
-																					) : getPersonAge(person) !== undefined ? (
-																						<span
-																							class="movie-detail__person-age"
-																							data-birth-date={person.birthDate}
-																							data-birth-year={person.birthYear}
-																						>
-																							{getPersonAge(person)} años
-																						</span>
-																					) : null}
-																				</>
-																			) : (
-																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																			)}
-																		</p>
-																	)
-																}
-															</div>
-														</article>
-													</li>
-												))}
-											</ul>
-										</div>
-									)
-								}
-								{
-									peopleGroups.cast.length > 0 && (
-										<div class="movie-detail__people-block">
-											<h2 class="movie-detail__people-title">{castSectionTitle}</h2>
-											<ul class="movie-detail__people-grid" role="list">
-												{peopleGroups.cast.map((person) => (
-													<li>
-														<article
-															class={`movie-detail__person-card${person.profilePath ? ' movie-detail__person-card--profile' : ''}`}
-														>
-															{
-																person.profilePath ? (
-																	<a
-																		class="movie-detail__person-avatar movie-detail__person-avatar--link"
-																		href={getPersonProfileHref(person.profilePath)}
-																		aria-label={`Ver perfil de ${person.creditedName}`}
-																	>
-																		{person.image || person.remoteImageUrl ? (
-																			<img
-																				src={person.image ?? person.remoteImageUrl}
-																				alt={`Foto de ${person.creditedName}`}
-																				loading="lazy"
-																				referrerpolicy="no-referrer"
-																			/>
-																		) : (
-																			<span aria-hidden="true">{person.initials}</span>
-																		)}
-																	</a>
-																) : (
-																	<div class="movie-detail__person-avatar">
-																		{person.image || person.remoteImageUrl ? (
-																			<img
-																				src={person.image ?? person.remoteImageUrl}
-																				alt={`Foto de ${person.creditedName}`}
-																				loading="lazy"
-																				referrerpolicy="no-referrer"
-																			/>
-																		) : (
-																			<span aria-hidden="true">{person.initials}</span>
-																		)}
-																	</div>
-																)
-															}
-															<div class="movie-detail__person-copy">
-																<h3 class="movie-detail__person-name">
-																	{
-																		person.profilePath ? (
-																			<a
-																				class="movie-detail__person-name-link"
-																				href={getPersonProfileHref(person.profilePath)}
-																			>
-																				{person.creditedName}
-																			</a>
-																		) : (
-																			person.creditedName
-																		)
-																	}
-																</h3>
-																{
-																	person.profilePath && (
-																		<p class="movie-detail__person-badge-row">
-																			<span class="movie-detail__person-flag">Tiene ficha</span>
-																		</p>
-																	)
-																}
-																<p class="movie-detail__person-origin">
-																	{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
-																</p>
-																{
-																	(getBirthSummary(person) || getDeathSummary(person)) && (
-																		<p class="movie-detail__person-meta">
-																			{getBirthSummary(person) ? (
-																				<>
-																					<span>{getBirthSummary(person)}</span>
-																					{person.deathDate || person.deathYear ? (
-																						<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																					) : shouldHideLivingAge(person) ? (
-																						<span>Edad no confirmada</span>
-																					) : getPersonAge(person) !== undefined ? (
-																						<span
-																							class="movie-detail__person-age"
-																							data-birth-date={person.birthDate}
-																							data-birth-year={person.birthYear}
-																						>
-																							{getPersonAge(person)} años
-																						</span>
-																					) : null}
-																				</>
-																			) : (
-																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
-																			)}
-																		</p>
-																	)
-																}
-															</div>
-														</article>
-													</li>
-												))}
-											</ul>
-										</div>
-									)
-								}
-								</section>
-							)
-						}
-					</div>
-				</section>
-				<MovieReaction movie={movie} />
-				{
-					groupedAwards.length > 0 && (
-						<section class="movie-detail__awards-card" aria-label="Premios y galardones">
-							<p class="movie-detail__awards-kicker">Premios y galardones</p>
-							<div class="movie-detail__awards-groups">
-								{groupedAwards.map((group) => (
-									<div class="movie-detail__awards-group">
-										<div class="movie-detail__awards-group-top">
-											<span
-												class={`movie-detail__award-brand movie-detail__award-brand--${group.awardType}`}
-												aria-hidden="true"
-											>
-												<AwardMark
-													award={group.awardType}
-													class="movie-detail__award-brand-image"
-													size={50}
-												/>
-											</span>
-											<div class="movie-detail__awards-group-copy">
-												<p class="movie-detail__awards-group-title">{group.label}</p>
-												<p class="movie-detail__awards-group-count">
-													{group.count} premio{group.count === 1 ? '' : 's'}
-												</p>
-											</div>
-										</div>
-									</div>
-								))}
-							</div>
-							<ul class="movie-detail__awards-list">
-								{awardCategories.map((award) => (
-									<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
-										<span
-											class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}
-											data-award={getAwardVisualKey(award.label, award.category)}
-										>
-											<AwardMark award={award.label} category={award.category} class="movie-detail__award-tag-icon" size={16} />
-											<span>{award.label}</span>
-										</span>
-										<span>{award.category}</span>
-										{award.recipient && (
-											<span class="movie-detail__award-recipient">· {award.recipient}</span>
-										)}
-										{award.year && <span class="movie-detail__award-year">({award.year})</span>}
-										{award.isBestPicture && (
-											<span class="movie-detail__award-highlight">Premio mayor</span>
-										)}
-									</li>
-								))}
-							</ul>
-						</section>
-					)
-				}
-				<section class="movie-detail__info-tail" aria-label="Ficha técnica y datos extra">
-					<div class="movie-detail__info-overview">
-						<dl class="movie-detail__credits">
-							<div class="movie-detail__credit-item">
-								<dt>Título original</dt>
-								<dd>{movie.originalTitle}</dd>
-							</div>
-							<div class="movie-detail__credit-item">
-								<dt>{movieGenreLabels.length > 1 ? 'Géneros' : 'Género'}</dt>
-								<dd>{movieGenreLabels.join(' · ')}</dd>
-							</div>
-							<div class="movie-detail__credit-item movie-detail__credit-item--nationality">
-								<dt>Países productores</dt>
-								<dd class="movie-detail__nationality-list">
-									{movieCountries.map((country) => (
-										<span class="movie-detail__nationality" data-country-code={country.code}>
-											<img class="movie-detail__nationality-flag" src={`/images/flags/${country.flagCode}.svg`} alt="" width="20" height="15" loading="lazy" />
-											<span>{country.label}</span>
-										</span>
-									))}
-								</dd>
-							</div>
-							{
-								movieSubgenres.length > 0 && (
-									<div class="movie-detail__credit-item">
-										<dt>{movieSubgenres.length > 1 ? 'Subgéneros' : 'Subgénero'}</dt>
-										<dd class="movie-detail__taxonomy-tags">
-											{movieSubgenres.map((subgenre) => (
-												<span class="movie-detail__taxonomy-tag">{subgenre}</span>
-											))}
-										</dd>
-									</div>
-								)
-							}
-							{
-								moviePlatforms.length > 0 && (
-									<div class="movie-detail__credit-item">
-										<dt>{moviePlatforms.length > 1 ? 'Plataformas' : 'Plataforma'}</dt>
-										<dd class="movie-detail__platform-value">
-											<PlatformBadgeGroup platforms={moviePlatforms} />
-											<span class="u-visually-hidden">{moviePlatformLabel}</span>
-										</dd>
-									</div>
-								)
-							}
-							<div class="movie-detail__credit-item">
-								<dt>Productora</dt>
-								<dd>{movie.productionCompany}</dd>
-							</div>
-						</dl>
-						{
-							relatedRecommendations.length > 0 && (
-								<section
-									class="movie-detail__editorial-card movie-detail__editorial-card--related"
-									aria-labelledby={`related-${movie.slug}`}
-									data-movie-related-recommendations
-								>
-									<header class="movie-detail__related-head">
-										<div>
-											<p class="movie-detail__editorial-kicker">Después de los créditos</p>
-											<h2 id={`related-${movie.slug}`}>Si te quedó ganas de más, seguí por acá</h2>
-										</div>
-										<span class="movie-detail__related-spark" aria-hidden="true">✦</span>
-									</header>
-									<p class="movie-detail__editorial-copy">{relatedIntro}</p>
-									<ol class="movie-detail__related-list" aria-label={`Recomendaciones para después de ${movie.title}`}>
-										{relatedRecommendations.map((recommendation, index) => (
-											<li>
-												<a class="movie-detail__related-link" href={recommendation.url}>
-													<span class="movie-detail__related-order" aria-hidden="true">
-														{String(index + 1).padStart(2, '0')}
-													</span>
-													<span class="movie-detail__related-copy">
-														<span class="movie-detail__related-title">{recommendation.title}</span>
-														{recommendation.affinity && (
-															<span class="movie-detail__related-affinity">{recommendation.affinity}</span>
-														)}
-													</span>
-													<span class="movie-detail__related-year">{recommendation.year}</span>
-													<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-														<path d="m6 3 5 5-5 5" />
-													</svg>
-												</a>
-											</li>
-										))}
-									</ol>
-								</section>
-							)
-						}
-					</div>
-					<div class="movie-detail__editorial-grid" aria-label="Datos útiles para decidir rápido">
-						{
-							editorialSummary.runtime && (
-								<section class="movie-detail__editorial-card movie-detail__editorial-card--duration">
-									<p class="movie-detail__editorial-kicker">Duración</p>
-									<p class="movie-detail__runtime-value">{editorialSummary.runtime.formatted}</p>
-								</section>
-							)
-						}
-						<MovieRating movieSlug={movie.slug} />
-						<section class="movie-detail__editorial-card movie-detail__editorial-card--audience-rating">
-							<div class="movie-detail__audience-rating-top">
-								<p class="movie-detail__editorial-kicker">Clasificación</p>
-								<span class="movie-detail__audience-rating-chip">{movie.audienceRating}</span>
-							</div>
-							<p class="movie-detail__audience-rating-value">{getAudienceRatingLabel(movie.audienceRating)}</p>
-						</section>
-					</div>
-					{
-						tenSecondTake && (
+						{tenSecondTake && (
 							<section class="movie-detail__ten-second-card" aria-labelledby={`ten-second-${movie.slug}`}>
 								<div class="movie-detail__ten-second-head">
 									<div>
@@ -1032,14 +519,500 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 									</div>
 								</div>
 							</section>
-						)
-					}
+						)}
+						{movie.synopsis && (
+							<section class="movie-detail__synopsis-card" aria-label="De qué se trata">
+								<p class="movie-detail__synopsis-kicker">De qué va</p>
+								<p class="movie-detail__synopsis">{movie.synopsis}</p>
+							</section>
+						)}
+						{movie.review && (
+							<section id="resena" class="movie-detail__review-card" aria-label="Reseña honesta">
+								<p class="movie-detail__review-kicker">La posta</p>
+								<p class="movie-detail__review">{movie.review}</p>
+								<a class="movie-detail__community-link" href={getMovieCommunityPath(movie.slug)}>
+									¿La viste? Sumate a la discusión →
+								</a>
+							</section>
+						)}
+						<MovieReaction movie={movie} />
+						<MovieEditorialLinks movieSlug={movie.slug} />
+						<section class="movie-detail__reader" aria-label="Tu opinión y compartir">
+							<MovieRating movieSlug={movie.slug} />
+							<section
+								class="movie-share"
+								aria-labelledby={`share-${movie.slug}`}
+								data-movie-share
+								data-share-url={movieCanonicalUrl}
+								data-share-title={pageTitle}
+								data-share-text={shareText}
+							>
+								<div class="movie-share__top">
+									<p id={`share-${movie.slug}`} class="movie-share__title">
+										Compartir
+									</p>
+								</div>
+								<div class="movie-share__actions" aria-label={`Compartir ${movie.title}`}>
+									<button
+										class="movie-share__button movie-share__button--primary"
+										type="button"
+										data-native-share
+										hidden
+									>
+										Compartir
+									</button>
+									<a
+										class="movie-share__button movie-share__button--whatsapp"
+										href={whatsappShareUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label={`Compartir ${movie.title} por WhatsApp`}
+									>
+										<img
+											class="movie-share__logo movie-share__logo--whatsapp"
+											src="/brand/social/whatsapp.svg"
+											alt=""
+											aria-hidden="true"
+											loading="lazy"
+										/>
+									</a>
+									<a
+										class="movie-share__button movie-share__button--x"
+										href={xShareUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label={`Compartir ${movie.title} en X`}
+									>
+										<img
+											class="movie-share__logo movie-share__logo--x"
+											src="/brand/social/x.svg"
+											alt=""
+											aria-hidden="true"
+											loading="lazy"
+										/>
+									</a>
+									<button class="movie-share__button movie-share__button--copy" type="button" data-copy-share-url>
+										Copiar URL
+									</button>
+								</div>
+								<p class="movie-share__status" role="status" aria-live="polite" data-share-status></p>
+							</section>
+						</section>
+						<div class="movie-detail__signals" aria-label="Medidores de CinePosta">
+							{sangrometroScore !== undefined && (
+								<section id="sangrometro" class="movie-detail__sangrometro-card" aria-label="Sangrómetro">
+									<div class="movie-detail__sangrometro-head">
+										<p class="movie-detail__sangrometro-title">Sangrómetro</p>
+									</div>
+									<Sangrometro score={sangrometroScore} />
+								</section>
+							)}
+							{lagrimometroScore !== undefined && (
+								<section id="lagrimometro" class="movie-detail__lagrimometro-card" aria-label="Lagrimómetro">
+									<div class="movie-detail__lagrimometro-head">
+										<p class="movie-detail__lagrimometro-title">Lagrimómetro</p>
+									</div>
+									<Lagrimometro score={lagrimometroScore} />
+								</section>
+							)}
+							{jajametroScore !== undefined && (
+								<section id="jajametro" class="movie-detail__jajametro-card" aria-label="Jajámetro">
+									<div class="movie-detail__jajametro-head">
+										<p class="movie-detail__jajametro-title">Jajámetro</p>
+									</div>
+									<Jajametro score={jajametroScore} />
+								</section>
+							)}
+							{cagazometroScore !== undefined && (
+								<section id="cagazometro" class="movie-detail__cagazometro-card" aria-label="Cagazómetro">
+									<div class="movie-detail__cagazometro-head">
+										<p class="movie-detail__cagazometro-title">Cagazómetro</p>
+									</div>
+									<Cagazometro score={cagazometroScore} />
+								</section>
+							)}
+							{explosiometroScore !== undefined && (
+								<section id="explosiometro" class="movie-detail__explosiometro-card" aria-label="Explosiómetro">
+									<div class="movie-detail__explosiometro-head">
+										<p class="movie-detail__explosiometro-title">Explosiómetro</p>
+									</div>
+									<Explosiometro score={explosiometroScore} />
+								</section>
+							)}
+							{shouldShowPostCreditsInfo && (
+								<section id="post-credits" class="movie-detail__post-credits-card" aria-label="Escenas post-créditos">
+									<div class="movie-detail__post-credits-head">
+										<p class="movie-detail__post-credits-title">Escenas post-créditos</p>
+									</div>
+									<PostCreditsInfo scenes={movie.postCreditsScenes!} />
+								</section>
+							)}
+						</div>
+					</div>
+					<aside class="movie-detail__side-stack" aria-label="Información de la película">
+						<div id="trailer" class="movie-detail__trailer">
+							<h2>Trailer</h2>
+							{movie.trailerYoutubeId ? (
+								<TrailerPlayer
+									title={movie.title}
+									year={movie.year}
+									youtubeId={movie.trailerYoutubeId}
+									thumbnailUrl={trailerThumbnailUrl}
+								/>
+							) : (
+								<p class="message-box">Todavía no tenemos trailer cargado.</p>
+							)}
+						</div>
+						<section id="ficha-tecnica" class="movie-detail__technical" aria-label="Ficha técnica">
+							<h2>Ficha técnica</h2>
+							<div class="movie-detail__editorial-grid" aria-label="Datos útiles para decidir rápido">
+								{editorialSummary.runtime && (
+									<section class="movie-detail__editorial-card movie-detail__editorial-card--duration">
+										<p class="movie-detail__editorial-kicker">Duración</p>
+										<p class="movie-detail__runtime-value">{editorialSummary.runtime.formatted}</p>
+									</section>
+								)}
+
+								<section class="movie-detail__editorial-card movie-detail__editorial-card--audience-rating">
+									<div class="movie-detail__audience-rating-top">
+										<p class="movie-detail__editorial-kicker">Clasificación</p>
+										<span class="movie-detail__audience-rating-chip">{movie.audienceRating}</span>
+									</div>
+									<p class="movie-detail__audience-rating-value">{getAudienceRatingLabel(movie.audienceRating)}</p>
+								</section>
+							</div>
+							<dl class="movie-detail__credits">
+								<div class="movie-detail__credit-item">
+									<dt>Título original</dt>
+									<dd>{movie.originalTitle}</dd>
+								</div>
+								<div class="movie-detail__credit-item">
+									<dt>{movieGenreLabels.length > 1 ? 'Géneros' : 'Género'}</dt>
+									<dd>{movieGenreLabels.join(' · ')}</dd>
+								</div>
+								<div class="movie-detail__credit-item movie-detail__credit-item--nationality movie-detail__taxonomy--nationality">
+									<dt>Países productores</dt>
+									<dd class="movie-detail__nationality-list">
+										{movieCountries.map((country) => (
+											<span class="movie-detail__nationality" data-country-code={country.code}>
+												<img
+													class="movie-detail__nationality-flag movie-detail__taxonomy-nationality-flag"
+													src={`/images/flags/${country.flagCode}.svg`}
+													alt=""
+													width="20"
+													height="15"
+													loading="lazy"
+												/>
+												<span>{country.label}</span>
+											</span>
+										))}
+									</dd>
+								</div>
+								{movieSubgenres.length > 0 && (
+									<div class="movie-detail__credit-item">
+										<dt>{movieSubgenres.length > 1 ? 'Subgéneros' : 'Subgénero'}</dt>
+										<dd class="movie-detail__taxonomy-tags">
+											{movieSubgenres.map((subgenre) => (
+												<span class="movie-detail__taxonomy-tag">{subgenre}</span>
+											))}
+										</dd>
+									</div>
+								)}
+								{moviePlatforms.length > 0 && (
+									<div class="movie-detail__credit-item">
+										<dt>{moviePlatforms.length > 1 ? 'Plataformas' : 'Plataforma'}</dt>
+										<dd class="movie-detail__platform-value">
+											<PlatformBadgeGroup platforms={moviePlatforms} />
+											<span class="u-visually-hidden">{moviePlatformLabel}</span>
+										</dd>
+									</div>
+								)}
+								<div class="movie-detail__credit-item">
+									<dt>Productora</dt>
+									<dd>{movie.productionCompany}</dd>
+								</div>
+							</dl>
+						</section>
+
+						{groupedAwards.length > 0 && (
+							<section class="movie-detail__awards-card" aria-label="Premios y galardones">
+								<p class="movie-detail__awards-kicker">Premios y galardones</p>
+								<div class="movie-detail__awards-groups">
+									{groupedAwards.map((group) => (
+										<div class="movie-detail__awards-group">
+											<div class="movie-detail__awards-group-top">
+												<span
+													class={`movie-detail__award-brand movie-detail__award-brand--${group.awardType}`}
+													aria-hidden="true"
+												>
+													<AwardMark award={group.awardType} class="movie-detail__award-brand-image" size={50} />
+												</span>
+												<div class="movie-detail__awards-group-copy">
+													<p class="movie-detail__awards-group-title">{group.label}</p>
+													<p class="movie-detail__awards-group-count">
+														{group.count} premio{group.count === 1 ? '' : 's'}
+													</p>
+												</div>
+											</div>
+										</div>
+									))}
+								</div>
+								<ul class="movie-detail__awards-list">
+									{awardCategories.map((award) => (
+										<li class={award.isBestPicture ? 'movie-detail__award-item--top' : undefined}>
+											<span
+												class={`movie-detail__award-tag movie-detail__award-tag--${award.awardType}`}
+												data-award={getAwardVisualKey(award.label, award.category)}
+											>
+												<AwardMark
+													award={award.label}
+													category={award.category}
+													class="movie-detail__award-tag-icon"
+													size={16}
+												/>
+												<span>{award.label}</span>
+											</span>
+											<span>{award.category}</span>
+											{award.recipient && <span class="movie-detail__award-recipient">· {award.recipient}</span>}
+											{award.year && <span class="movie-detail__award-year">({award.year})</span>}
+											{award.isBestPicture && <span class="movie-detail__award-highlight">Premio mayor</span>}
+										</li>
+									))}
+								</ul>
+							</section>
+						)}
+
+						{(peopleGroups.directors.length > 0 || peopleGroups.cast.length > 0) && (
+							<section class="movie-detail__people-panel" aria-label="Elenco principal y dirección">
+								{peopleGroups.directors.length > 0 && (
+									<div class="movie-detail__people-block">
+										<h2 class="movie-detail__people-title">
+											{peopleGroups.directors.length > 1 ? 'Dirección' : 'Director'}
+										</h2>
+										<ul class="movie-detail__people-grid" role="list">
+											{peopleGroups.directors.map((person) => (
+												<li>
+													<article
+														class={`movie-detail__person-card${person.profilePath ? ' movie-detail__person-card--profile' : ''}`}
+													>
+														{person.profilePath ? (
+															<a
+																class="movie-detail__person-avatar movie-detail__person-avatar--link"
+																href={getPersonProfileHref(person.profilePath)}
+																aria-label={`Ver perfil de ${person.creditedName}`}
+															>
+																{person.image || person.remoteImageUrl ? (
+																	<img
+																		src={person.image ?? person.remoteImageUrl}
+																		alt={`Foto de ${person.creditedName}`}
+																		loading="lazy"
+																		referrerpolicy="no-referrer"
+																	/>
+																) : (
+																	<span aria-hidden="true">{person.initials}</span>
+																)}
+															</a>
+														) : (
+															<div class="movie-detail__person-avatar">
+																{person.image || person.remoteImageUrl ? (
+																	<img
+																		src={person.image ?? person.remoteImageUrl}
+																		alt={`Foto de ${person.creditedName}`}
+																		loading="lazy"
+																		referrerpolicy="no-referrer"
+																	/>
+																) : (
+																	<span aria-hidden="true">{person.initials}</span>
+																)}
+															</div>
+														)}
+														<div class="movie-detail__person-copy">
+															<h3 class="movie-detail__person-name">
+																{person.profilePath ? (
+																	<a
+																		class="movie-detail__person-name-link"
+																		href={getPersonProfileHref(person.profilePath)}
+																	>
+																		{person.creditedName}
+																	</a>
+																) : (
+																	person.creditedName
+																)}
+															</h3>
+															{person.profilePath && (
+																<p class="movie-detail__person-badge-row">
+																	<span class="movie-detail__person-flag">Tiene ficha</span>
+																</p>
+															)}
+															<p class="movie-detail__person-origin">
+																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
+															</p>
+															{(getBirthSummary(person) || getDeathSummary(person)) && (
+																<p class="movie-detail__person-meta">
+																	{getBirthSummary(person) ? (
+																		<>
+																			<span>{getBirthSummary(person)}</span>
+																			{person.deathDate || person.deathYear ? (
+																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																			) : shouldHideLivingAge(person) ? (
+																				<span>Edad no confirmada</span>
+																			) : getPersonAge(person) !== undefined ? (
+																				<span
+																					class="movie-detail__person-age"
+																					data-birth-date={person.birthDate}
+																					data-birth-year={person.birthYear}
+																				>
+																					{getPersonAge(person)} años
+																				</span>
+																			) : null}
+																		</>
+																	) : (
+																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																	)}
+																</p>
+															)}
+														</div>
+													</article>
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
+								{peopleGroups.cast.length > 0 && (
+									<div class="movie-detail__people-block">
+										<h2 class="movie-detail__people-title">{castSectionTitle}</h2>
+										<ul class="movie-detail__people-grid" role="list">
+											{peopleGroups.cast.map((person) => (
+												<li>
+													<article
+														class={`movie-detail__person-card${person.profilePath ? ' movie-detail__person-card--profile' : ''}`}
+													>
+														{person.profilePath ? (
+															<a
+																class="movie-detail__person-avatar movie-detail__person-avatar--link"
+																href={getPersonProfileHref(person.profilePath)}
+																aria-label={`Ver perfil de ${person.creditedName}`}
+															>
+																{person.image || person.remoteImageUrl ? (
+																	<img
+																		src={person.image ?? person.remoteImageUrl}
+																		alt={`Foto de ${person.creditedName}`}
+																		loading="lazy"
+																		referrerpolicy="no-referrer"
+																	/>
+																) : (
+																	<span aria-hidden="true">{person.initials}</span>
+																)}
+															</a>
+														) : (
+															<div class="movie-detail__person-avatar">
+																{person.image || person.remoteImageUrl ? (
+																	<img
+																		src={person.image ?? person.remoteImageUrl}
+																		alt={`Foto de ${person.creditedName}`}
+																		loading="lazy"
+																		referrerpolicy="no-referrer"
+																	/>
+																) : (
+																	<span aria-hidden="true">{person.initials}</span>
+																)}
+															</div>
+														)}
+														<div class="movie-detail__person-copy">
+															<h3 class="movie-detail__person-name">
+																{person.profilePath ? (
+																	<a
+																		class="movie-detail__person-name-link"
+																		href={getPersonProfileHref(person.profilePath)}
+																	>
+																		{person.creditedName}
+																	</a>
+																) : (
+																	person.creditedName
+																)}
+															</h3>
+															{person.profilePath && (
+																<p class="movie-detail__person-badge-row">
+																	<span class="movie-detail__person-flag">Tiene ficha</span>
+																</p>
+															)}
+															<p class="movie-detail__person-origin">
+																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
+															</p>
+															{(getBirthSummary(person) || getDeathSummary(person)) && (
+																<p class="movie-detail__person-meta">
+																	{getBirthSummary(person) ? (
+																		<>
+																			<span>{getBirthSummary(person)}</span>
+																			{person.deathDate || person.deathYear ? (
+																				<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																			) : shouldHideLivingAge(person) ? (
+																				<span>Edad no confirmada</span>
+																			) : getPersonAge(person) !== undefined ? (
+																				<span
+																					class="movie-detail__person-age"
+																					data-birth-date={person.birthDate}
+																					data-birth-year={person.birthYear}
+																				>
+																					{getPersonAge(person)} años
+																				</span>
+																			) : null}
+																		</>
+																	) : (
+																		<span class="movie-detail__person-death">{getDeathSummary(person)}</span>
+																	)}
+																</p>
+															)}
+														</div>
+													</article>
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
+							</section>
+						)}
+					</aside>
 				</section>
+
+				{relatedRecommendations.length > 0 && (
+					<section
+						class="movie-detail__editorial-card movie-detail__editorial-card--related"
+						aria-labelledby={`related-${movie.slug}`}
+						data-movie-related-recommendations
+					>
+						<header class="movie-detail__related-head">
+							<div>
+								<p class="movie-detail__editorial-kicker">Después de los créditos</p>
+								<h2 id={`related-${movie.slug}`}>Si te quedó ganas de más, seguí por acá</h2>
+							</div>
+						</header>
+						<p class="movie-detail__editorial-copy">{relatedIntro}</p>
+						<ol class="movie-detail__related-list" aria-label={`Recomendaciones para después de ${movie.title}`}>
+							{relatedRecommendations.map((recommendation, index) => (
+								<li>
+									<a class="movie-detail__related-link" href={recommendation.url}>
+										<span class="movie-detail__related-order" aria-hidden="true">
+											{String(index + 1).padStart(2, '0')}
+										</span>
+										<span class="movie-detail__related-copy">
+											<span class="movie-detail__related-title">{recommendation.title}</span>
+											{recommendation.affinity && (
+												<span class="movie-detail__related-affinity">{recommendation.affinity}</span>
+											)}
+										</span>
+										<span class="movie-detail__related-year">{recommendation.year}</span>
+										<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+											<path d="m6 3 5 5-5 5" />
+										</svg>
+									</a>
+								</li>
+							))}
+						</ol>
+					</section>
+				)}
 			</div>
 		</section>
 	</main>
 </BaseLayout>
-
-<!-- Astro 6: keep ficha-detail browser logic in a typed local module so checks stay meaningful. -->
 <script src="../../scripts/movie-detail.ts"></script>
-

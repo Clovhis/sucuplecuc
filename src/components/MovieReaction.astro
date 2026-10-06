@@ -11,78 +11,30 @@ const { movie } = Astro.props as Props;
 const barelyGoodReaction = {
 	detail: 'Aprobó raspando: es buena, aunque llegó con lo justo.',
 	kind: 'pass',
-	images: [
-		{
-			src: '/images/reactions/buena-raspando-duo.webp',
-			alt: 'Dos personajes de Cine Posta muestran alivio por una película que aprobó con lo justo.',
-		},
-	],
 } as const;
 
 const reactionByVerdict = {
 	recomendada: {
 		detail: 'El equipo la banca: pulgar arriba y plan de película resuelto.',
 		kind: 'up',
-		images: [
-			{
-				src: '/images/reactions/recomendada-duo.webp',
-				alt: 'Dos personajes de Cine Posta celebran; uno levanta el pulgar.',
-			},
-			{
-				src: '/images/reactions/recomendada-trio.webp',
-				alt: 'Tres personajes de Cine Posta festejan una recomendación.',
-			},
-		],
 	},
 	zafa: {
 		detail: 'No está mal, pero tampoco es para salir corriendo a verla.',
 		kind: 'meh',
-		images: [
-			{
-				src: '/images/reactions/zafa-duo.webp',
-				alt: 'Dos personajes de Cine Posta hacen un gesto de más o menos.',
-			},
-			{
-				src: '/images/reactions/zafa-solo.webp',
-				alt: 'Un personaje de Cine Posta duda con gesto de más o menos.',
-			},
-		],
 	},
 	no_recomendada: {
 		detail: 'El equipo no la compra: pulgar abajo y a buscar otra.',
 		kind: 'down',
-		images: [
-			{
-				src: '/images/reactions/no-recomendada-duo.webp',
-				alt: 'Personajes de Cine Posta rechazan una película; uno se tapa la nariz y otra hace pulgar abajo.',
-			},
-			{
-				src: '/images/reactions/no-recomendada-solo.webp',
-				alt: 'Un personaje de Cine Posta rechaza una película con pulgar abajo.',
-			},
-		],
 	},
 	basura_atomica: {
 		detail: 'Acá el equipo es unánime: pulgar abajo y a otra cosa.',
 		kind: 'down',
-		images: [
-			{
-				src: '/images/reactions/no-recomendada-duo.webp',
-				alt: 'Personajes de Cine Posta rechazan una película; uno se tapa la nariz y otra hace pulgar abajo.',
-			},
-			{
-				src: '/images/reactions/no-recomendada-solo.webp',
-				alt: 'Un personaje de Cine Posta rechaza una película con pulgar abajo.',
-			},
-		],
 	},
 } as const;
 
 const score = getMovieCinePostaScore(movie);
 const reaction = score === 6 ? barelyGoodReaction : reactionByVerdict[getMovieLegacyVerdict(movie) ?? 'zafa'];
 const scoreLabel = score === null ? 'Sin valorar' : formatCinePostaScore(score);
-const imageIndex = Array.from(movie.slug).reduce((total, character) => total + character.charCodeAt(0), 0) % reaction.images.length;
-const image = reaction.images[imageIndex];
 const headingId = `team-reaction-${movie.slug}`;
 ---
 
@@ -92,5 +44,4 @@ const headingId = `team-reaction-${movie.slug}`;
 		<h2 id={headingId}>{scoreLabel}</h2>
 		<p>{reaction.detail}</p>
 	</div>
-	<img class="movie-reaction__art" src={image.src} alt={image.alt} width="1536" height="1024" loading="lazy" decoding="async" />
 </section>

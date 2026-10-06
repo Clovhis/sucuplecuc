@@ -360,7 +360,7 @@ test.describe('home catalog filters', () => {
     await expect(musical).toHaveAttribute('aria-pressed', 'false');
     await page.goto('/peliculas/chicago-2002/', { waitUntil: 'domcontentloaded' });
     await dismissDonationPrompt(page);
-    await expect(page.locator('.movie-detail__taxonomy-item').filter({ has: page.locator('dt', { hasText: /^Géneros$/ }) }).first()).toContainText('Comedia · Musical');
+    await expect(page.locator('.movie-detail__credit-item').filter({ has: page.locator('dt', { hasText: /^Géneros$/ }) }).first()).toContainText('Comedia · Musical');
   });
 
   test('Musical genre badges stay readable and aligned across card widths', async ({ page }, testInfo) => {
