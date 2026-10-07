@@ -50,7 +50,7 @@ test.describe('simulador de carrera cinematográfica', () => {
 			'href',
 			'/juegos/simulador-carrera-actor/',
 		);
-		await expect(promo.locator('img')).toHaveAttribute('src', /cineposta-simulador-carrera-actor\.png/);
+		await expect(promo.locator('img')).toHaveAttribute('src', /cineposta-simulador-rodaje-editorial\.webp/);
 
 		const readingOrder = await page.locator('main').evaluate((main) =>
 			Array.from(main.querySelectorAll('[data-movie-search-grid], [data-home-actor-game], .home-community-promo')).map((element) =>

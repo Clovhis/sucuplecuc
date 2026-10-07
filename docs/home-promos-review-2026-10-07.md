@@ -3,6 +3,10 @@
 Branch: `redesign/home-promos-agenda-2026-10-07`.
 Base: `89416bfe`.
 
+Esta nota registra el diseño inicial de la branch. La revisión posterior de
+la imagen del simulador usa una nueva escena de rodaje y está documentada en
+[home-career-image-2026-10-07.md](home-career-image-2026-10-07.md).
+
 ## Criterio visual
 
 Se revisaron los últimos cinco commits: `89416bfe`, `7703908b`,
