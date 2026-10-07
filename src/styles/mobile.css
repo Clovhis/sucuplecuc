@@ -401,30 +401,6 @@
 	.home-actor-game__link {
 		grid-template-columns: minmax(0, 1fr);
 	}
-
-	.home-community-promo {
-		grid-template-columns: minmax(0, 1fr) minmax(8rem, 12rem);
-		grid-template-rows: auto auto;
-	}
-
-	.home-community-promo__content {
-		grid-column: 1;
-		grid-row: 1;
-		min-width: 0;
-	}
-
-	.home-community-promo__illustration {
-		grid-column: 2;
-		grid-row: 1 / 3;
-		min-width: 0;
-	}
-
-	.home-community-promo a {
-		grid-column: 1;
-		grid-row: 2;
-		width: fit-content;
-		max-width: 100%;
-	}
 }
 
 @media (max-width: 68rem) and (pointer: coarse) {
@@ -461,7 +437,7 @@
 		position: sticky;
 		inset-block-start: 0.5rem;
 		z-index: 35;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 0.35rem;
 		margin: 0 0 0.85rem;
 		padding: 0.35rem;
@@ -838,8 +814,7 @@
 	.postometro-teaser,
 	.cinema-release-carousel,
 	.weekly-suggestion,
-	.home-actor-game,
-	.home-community-promo {
+	.home-actor-game {
 		scroll-margin-block-start: 5.75rem;
 	}
 
@@ -1126,8 +1101,7 @@
 
 	/* These two links are app shortcuts on touch screens, not full feature
 	 * banners. They retain a comfortable tap target while freeing vertical space. */
-	.home-actor-game,
-	.home-community-promo {
+	.home-actor-game {
 		min-height: 0;
 		border-radius: 15px;
 	}
@@ -1181,46 +1155,6 @@
 		grid-area: cta;
 		min-height: 3rem;
 		margin: 0;
-		padding: 0.45rem 0.65rem;
-		font-size: 0.58rem;
-		line-height: 1.1;
-		text-align: center;
-	}
-
-	.home-community-promo {
-		grid-template-columns: minmax(0, 1fr) auto;
-		grid-template-rows: auto;
-		align-items: center;
-		gap: 0.65rem;
-		padding: 0.65rem 0.8rem;
-	}
-
-	.home-community-promo__content {
-		grid-column: 1;
-		grid-row: 1;
-		min-width: 0;
-	}
-
-	.home-community-promo__eyebrow {
-		margin-bottom: 0.12rem;
-		font-size: 0.56rem;
-	}
-
-	.home-community-promo h2 {
-		font-size: clamp(0.95rem, 4vw, 1.08rem);
-		line-height: 1.08;
-	}
-
-	.home-community-promo__content p:not(.home-community-promo__eyebrow),
-	.home-community-promo__illustration {
-		display: none;
-	}
-
-	.home-community-promo a {
-		grid-column: 2;
-		grid-row: 1;
-		width: auto;
-		min-height: 3rem;
 		padding: 0.45rem 0.65rem;
 		font-size: 0.58rem;
 		line-height: 1.1;

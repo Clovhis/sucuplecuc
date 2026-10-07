@@ -1,5 +1,4 @@
 const banner = document.querySelector<HTMLElement>('[data-community-banner]');
-const homeBanner = document.querySelector<HTMLElement>('[data-community-home-banner]');
 
 const phrases = [
 	'Vení a tirar factos sobre esa película que te dejó pensando.',
@@ -26,31 +25,4 @@ const phrases = [
 
 if (banner) {
 	banner.textContent = phrases[Math.floor(Math.random() * phrases.length)] ?? banner.textContent;
-}
-
-const homePhrases = [
-	'¿La viste recién? Caé a contar si fue cine o puro humo.',
-	'Tirá tu recomendación antes de que el algoritmo te encierre de nuevo.',
-	'¿Finalazo o cualquier cosa? El foro está para esa discusión.',
-	'Una opinión honesta puede salvarle la noche a alguien. Dejala.',
-	'¿Esa peli está infravalorada? Vení a militarla un poquito.',
-	'Si te dejó pensando, acá hay gente para seguir la charla.',
-	'Contá qué te pareció, aunque sea para pinchar una burbuja.',
-	'¿La bancás solo vos? Mejor: vení a defenderla.',
-	'Te leemos: recomendación, bronca cinéfila o descubrimiento.',
-	'Hay lugar para el hot take, siempre que venga con argumentos.',
-	'¿Te reíste, lloraste o miraste el celu? Soltá la data.',
-	'Una peli, muchas miradas y cero obligación de caretearla.',
-	'Pasá y contá si vale darle play o seguir buscando.',
-	'¿La volverías a ver? Es la crítica más útil que existe.',
-	'Caé con tu ranking mental: acá se charla de cine en serio.',
-	'El tráiler promete; vos contanos si la película cumple.',
-	'¿Saliste con ganas de debatir? Te guardamos una butaca.',
-	'No hace falta saber todo de cine: alcanza con tener una opinión.',
-	'Vení a dejar esa frase que le recomendarías a un amigo.',
-	'Opiniones fuertes, spoilers tapados y buena onda. Mandale.',
-];
-
-if (homeBanner) {
-	homeBanner.textContent = homePhrases[Math.floor(Math.random() * homePhrases.length)] ?? homeBanner.textContent;
 }

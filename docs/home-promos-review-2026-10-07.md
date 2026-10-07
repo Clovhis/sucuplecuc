@@ -6,6 +6,8 @@ Base: `89416bfe`.
 Esta nota registra el diseño inicial de la branch. La revisión posterior de
 la imagen del simulador usa una nueva escena de rodaje y está documentada en
 [home-career-image-2026-10-07.md](home-career-image-2026-10-07.md).
+El retiro posterior del bloque de Foro Cineposta está registrado en
+[home-forum-removal-2026-10-07.md](home-forum-removal-2026-10-07.md).
 
 ## Criterio visual
 

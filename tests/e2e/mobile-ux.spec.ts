@@ -123,7 +123,6 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
       '[data-cinema-release-carousel="streaming-release-carousel"]',
       '.weekly-suggestion',
       '[data-home-actor-game]',
-      '#comunidad-home',
     ];
 
     return Object.fromEntries(
@@ -140,7 +139,7 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
   await expect(page.locator('.home-mobile-nav')).toBeVisible();
   expect(Object.values(sectionState).every(Boolean)).toBeTruthy();
 
-  for (const target of ['#catalogo-filtros', '#cinema-release-carousel', '#comunidad-home']) {
+  for (const target of ['#catalogo-filtros', '#cinema-release-carousel']) {
     await page.locator(`.home-mobile-nav a[href="${target}"]`).click();
     await expect
       .poll(() => page.evaluate((selector) => {
@@ -301,7 +300,7 @@ test('mobile layout stays contained when the browser reports a desktop viewport'
       contentFits: document.documentElement.scrollWidth <= window.innerWidth,
       catalogTop: top('[data-movie-search-grid]'),
       gameTop: top('[data-home-actor-game]'),
-      communityTop: top('.home-community-promo'),
+      agendaTop: top('[data-upcoming-2027-root]'),
       viewport: window.innerWidth,
       document: document.documentElement.scrollWidth,
     };
@@ -310,7 +309,7 @@ test('mobile layout stays contained when the browser reports a desktop viewport'
   expect(measurements.contentFits).toBeTruthy();
   expect(measurements.document).toBeLessThanOrEqual(measurements.viewport + 1);
   expect(measurements.catalogTop).toBeLessThan(measurements.gameTop);
-  expect(measurements.gameTop).toBeLessThan(measurements.communityTop);
+  expect(measurements.gameTop).toBeLessThan(measurements.agendaTop);
 });
 
 test('touch landscape keeps the mobile app shell contained', async ({ page }, testInfo) => {

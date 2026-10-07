@@ -53,21 +53,11 @@ test.describe('simulador de carrera cinematográfica', () => {
 		await expect(promo.locator('img')).toHaveAttribute('src', /cineposta-simulador-rodaje-editorial\.webp/);
 
 		const readingOrder = await page.locator('main').evaluate((main) =>
-			Array.from(main.querySelectorAll('[data-movie-search-grid], [data-home-actor-game], .home-community-promo')).map((element) =>
-				element.matches('[data-movie-search-grid]') ? 'catalog' : element.matches('[data-home-actor-game]') ? 'game' : 'community',
+			Array.from(main.querySelectorAll('[data-movie-search-grid], [data-home-actor-game]')).map((element) =>
+				element.matches('[data-movie-search-grid]') ? 'catalog' : 'game',
 			),
 		);
 		expect(readingOrder.indexOf('catalog')).toBeLessThan(readingOrder.indexOf('game'));
-		expect(readingOrder.indexOf('game')).toBeLessThan(readingOrder.indexOf('community'));
-
-		if ((page.viewportSize()?.width ?? 0) > 720) {
-			const promoHeights = await page
-				.locator('[data-home-actor-game], .home-community-promo')
-				.evaluateAll((cards) => cards.map((card) => Math.round(card.getBoundingClientRect().height)));
-			const heightRange = Math.max(...promoHeights) - Math.min(...promoHeights);
-
-			expect(heightRange).toBeLessThanOrEqual(8);
-		}
 	});
 
 	test('completa una carrera de directora con elecciones, suerte y resumen', async ({ page }) => {

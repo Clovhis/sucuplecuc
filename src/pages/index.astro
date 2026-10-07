@@ -35,7 +35,7 @@ import {
 	getWeeklyRecommendationManifest,
 	getWeeklyRecommendationPlatform,
 } from '../lib/weekly-recommendations';
-import { COMMUNITY_PATH, CONTACT_PATH, PEOPLE_PATH, QUE_MIRO_HOY_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
+import { CONTACT_PATH, PEOPLE_PATH, QUE_MIRO_HOY_PATH, SITE_DESCRIPTION, SITE_NAME, createHomeStructuredData } from '../lib/seo';
 
 const cinemaNews = await getCinemaNews();
 const movies = getMovies();
@@ -305,7 +305,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 			<a href="#catalogo-filtros">Catálogo</a>
 			<a href="#cinema-release-carousel">En cines</a>
 			<a href={QUE_MIRO_HOY_PATH}>Qué vemos hoy</a>
-			<a href="#comunidad-home">Comunidad</a>
 		</nav>
 		<HomePrimaryCatalog
 			movies={movies}
@@ -579,17 +578,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						</a>
 					</section>
 
-					<section id="comunidad-home" class="home-community-promo fade-up" style="--item-delay: 165ms;" aria-labelledby="home-community-promo-title">
-						<div class="home-community-promo__content">
-							<p class="home-community-promo__eyebrow">Comunidad</p>
-							<h2 id="home-community-promo-title">Foro Cineposta</h2>
-							<p data-community-home-banner>¿La viste? Vení a debatirla sin humo.</p>
-							<a href={COMMUNITY_PATH}>Ir a la comunidad <span aria-hidden="true">→</span></a>
-						</div>
-						<div class="home-community-promo__illustration" aria-hidden="true">
-							<img src="/images/community/foro-cineposta-banner-trio-transparent.png" alt="" width="1900" height="828" loading="lazy" decoding="async" />
-						</div>
-					</section>
 					<UpcomingReleases2027 />
 					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 180ms;" aria-label="Qué vemos hoy">
 						<PostometroTeaser compact={true} />
@@ -599,8 +587,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 		}
 	</main>
 </BaseLayout>
-
-<script src="../scripts/community-banner.ts"></script>
 
 <!-- Astro 6: page interactivity lives in a typed local module instead of an inline exception block. -->
 <script src="../scripts/upcoming-suggestions.ts"></script>

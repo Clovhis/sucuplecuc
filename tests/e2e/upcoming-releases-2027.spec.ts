@@ -17,12 +17,12 @@ test('2027 agenda is visible as text without links on every viewport', async ({ 
 	await expect(section).not.toContainText('Una selección corta de películas que ya tienen fecha o ventana prevista para llegar a los cines.');
 	await expect(section).not.toContainText('Agenda completa');
 	const placement = await page.evaluate(() => {
-		const community = document.querySelector('#comunidad-home');
+		const game = document.querySelector('[data-home-actor-game]');
 		const agenda = document.querySelector('[data-upcoming-2027-root]');
 		const footer = document.querySelector('footer.site-footer');
-		if (!community || !agenda || !footer) return false;
+		if (!game || !agenda || !footer) return false;
 		return Boolean(
-			community.compareDocumentPosition(agenda) & Node.DOCUMENT_POSITION_FOLLOWING &&
+			game.compareDocumentPosition(agenda) & Node.DOCUMENT_POSITION_FOLLOWING &&
 			agenda.compareDocumentPosition(footer) & Node.DOCUMENT_POSITION_FOLLOWING,
 		);
 	});
