@@ -109,4 +109,6 @@ y `e2e-webkit-final.log`, dentro del directorio de evidencia local.
 
 Preview del build revisado: `http://127.0.0.1:43211/`.
 
-La rama queda para revisión local, sin publicación en `main`.
+El usuario aprobó el diseño y autorizó su publicación en `main` el
+7 de octubre de 2026. La publicación se verifica con el SHA del deploy
+de GitHub Pages y un recorrido de las rutas afectadas en producción.
