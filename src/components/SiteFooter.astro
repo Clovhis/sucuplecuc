@@ -1,0 +1,160 @@
+---
+import {
+  ABOUT_PATH, CONTACT_EMAIL, COMMUNITY_PATH, CONTACT_PATH, COPYRIGHT_PATH,
+  EDITORIAL_POLICY_PATH, EDITORIAL_TEAM_PATH, METHODOLOGY_PATH, PEOPLE_PATH,
+  PRESS_EMAIL, PRIVACY_PATH, QUE_MIRO_HOY_PATH, SITE_NAME, SOURCES_AND_DATA_PATH,
+} from '../lib/seo';
+
+const assetBase = import.meta.env.BASE_URL;
+const exploreLinks = [
+  { href: assetBase, label: 'Inicio' },
+  { href: QUE_MIRO_HOY_PATH, label: 'Qué vemos hoy' },
+  { href: `${assetBase}editorial/`, label: 'Editorial' },
+  { href: PEOPLE_PATH, label: 'Personas' },
+  { href: COMMUNITY_PATH, label: 'Comunidad' },
+];
+const aboutLinks = [
+  { href: ABOUT_PATH, label: 'Sobre' },
+  { href: EDITORIAL_TEAM_PATH, label: 'Equipo' },
+  { href: METHODOLOGY_PATH, label: 'Cómo funciona' },
+  { href: EDITORIAL_POLICY_PATH, label: 'Política editorial' },
+  { href: SOURCES_AND_DATA_PATH, label: 'Fuentes' },
+  { href: CONTACT_PATH, label: 'Contacto' },
+  { href: COPYRIGHT_PATH, label: 'Copyright' },
+  { href: PRIVACY_PATH, label: 'Privacidad' },
+];
+---
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <div class="site-footer__brand">
+      <p class="site-footer__name">{SITE_NAME}</p>
+      <p class="site-footer__copy">
+        Un proyecto editorial independiente de reseñas cortas, datos de catálogo y recomendaciones para decidir qué mirar sin chamuyo.
+      </p>
+      <a class="site-footer__donate" href="https://cafecito.app/cineposta" target="_blank" rel="noopener noreferrer">
+        <img class="site-footer__donate-logo" src={`${assetBase}brand/cafecito-logo.svg`} alt="" width="16" height="16" aria-hidden="true" />
+        Apoyá con un cafecito
+      </a>
+    </div>
+    <section class="site-footer__contact" aria-labelledby="site-footer-contact-title">
+      <h2 id="site-footer-contact-title">Hablemos</h2>
+      <address class="site-footer__channels">
+        <a class="site-footer__channel" href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Consulta%20general`}>
+          <span class="site-footer__channel-label">Contacto</span>
+          <span class="site-footer__channel-email">{CONTACT_EMAIL}</span>
+        </a>
+        <a class="site-footer__channel" href={`mailto:${PRESS_EMAIL}?subject=Cine%20Posta%20-%20Prensa`}>
+          <span class="site-footer__channel-label">Prensa</span>
+          <span class="site-footer__channel-email">{PRESS_EMAIL}</span>
+        </a>
+        <a class="site-footer__channel site-footer__channel--x" href="https://x.com/cineposta" target="_blank" rel="noopener noreferrer" aria-label="Seguir a Cine Posta en X (se abre en una pestaña nueva)">
+          <span class="site-footer__channel-label">Seguinos</span>
+          <span class="site-footer__channel-social">
+            <img src={`${assetBase}brand/x-logo.svg`} alt="" width="14" height="14" aria-hidden="true" />
+            @cineposta
+          </span>
+        </a>
+      </address>
+    </section>
+    <nav class="site-footer__nav" aria-label="Navegación del sitio">
+      <div class="site-footer__explore">
+        {exploreLinks.map(link => <a class="site-footer__link" href={link.href}>{link.label}</a>)}
+      </div>
+      <details class="site-footer__about" open>
+        <summary>Sobre Cine Posta</summary>
+        <div class="site-footer__about-links">
+          {aboutLinks.map(link => <a class="site-footer__link" href={link.href}>{link.label}</a>)}
+        </div>
+      </details>
+    </nav>
+    <p class="site-footer__legal">
+      © {new Date().getFullYear()} {SITE_NAME}. Hecho desde Argentina. Las marcas, posters y materiales citados pertenecen a sus titulares.
+    </p>
+  </div>
+</footer>
+
+<script>
+  const about = document.querySelector<HTMLDetailsElement>('.site-footer__about');
+  const mobile = window.matchMedia('(max-width: 720px)');
+  const syncFooter = () => { if (about) about.open = !mobile.matches; };
+  syncFooter();
+  mobile.addEventListener('change', syncFooter);
+</script>
+
+<style>
+  .site-footer {
+    --footer-ink: #f0eee8;
+    --footer-muted: #aeb5bf;
+    --footer-line: #343b45;
+    --footer-accent: #e6b291;
+    margin-top: 2rem;
+    padding-block: 2.5rem 1.5rem;
+    border-top: 1px solid var(--footer-line);
+    background: #101318;
+    color: var(--footer-ink);
+  }
+  .site-footer__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2rem 4rem;
+    width: min(1180px, calc(100% - 2rem));
+  }
+  .site-footer__brand { display: grid; align-content: start; justify-items: start; gap: 1rem; }
+  .site-footer__name { margin: 0; font: 600 1.6rem/1.2 var(--font-sans); letter-spacing: -.03em; }
+  .site-footer__copy { max-width: 52ch; margin: 0; color: var(--footer-muted); font-size: .9rem; line-height: 1.65; }
+  .site-footer__donate {
+    display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+    min-height: 44px; padding: .65rem .9rem; border: 1px solid var(--footer-line);
+    border-radius: 4px; background: none; color: var(--footer-accent);
+    font: 500 .85rem/1.3 var(--font-sans);
+  }
+  .site-footer__donate-logo { flex: 0 0 auto; width: 16px; height: 16px; }
+  .site-footer__contact { min-width: 0; }
+  .site-footer__contact h2 { margin: 0 0 .75rem; font: 500 1.2rem/1.3 var(--font-sans); letter-spacing: -.02em; }
+  .site-footer__channels { display: grid; margin: 0; font-style: normal; }
+  .site-footer__channel {
+    display: grid; grid-template-columns: 6rem minmax(0, 1fr); align-items: center; gap: 1rem;
+    min-height: 48px; padding-block: .75rem; border-top: 1px solid var(--footer-line);
+    font-size: .85rem;
+  }
+  .site-footer__channel-label { color: var(--footer-muted); }
+  .site-footer__channel-email { min-width: 0; overflow-wrap: anywhere; }
+  .site-footer__channel-social { display: flex; align-items: center; gap: .5rem; }
+  .site-footer__channel-social img { width: 14px; height: 14px; }
+  .site-footer__nav {
+    grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start; gap: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--footer-line);
+  }
+  .site-footer__explore { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
+  .site-footer__link { display: flex; align-items: center; min-width: 0; min-height: 44px; padding-block: .5rem; font-size: .85rem; line-height: 1.4; }
+  .site-footer__about summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    min-height: 44px; padding-block: .5rem; cursor: pointer; list-style: none;
+    color: var(--footer-accent); font-size: .85rem;
+  }
+  .site-footer__about summary::-webkit-details-marker { display: none; }
+  .site-footer__about summary::after { content: '+'; font-size: 1.1rem; }
+  .site-footer__about[open] summary::after { content: '−'; }
+  .site-footer__about-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
+  .site-footer__about-links a { color: var(--footer-muted); }
+  .site-footer__legal {
+    grid-column: 1 / -1; margin: 0; padding-top: 1.25rem; border-top: 1px solid var(--footer-line);
+    color: var(--footer-muted); font-size: .75rem; line-height: 1.6;
+  }
+  .site-footer a:hover { color: var(--footer-accent); }
+  .site-footer__donate:hover { background: #1b222c; border-color: var(--footer-accent); }
+  .site-footer :is(a, summary):focus-visible { outline: 2px solid var(--footer-accent); outline-offset: 3px; }
+  @media (max-width: 720px) {
+    .site-footer { margin-top: 1.5rem; padding-block: 1.5rem; }
+    .site-footer__inner { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+    .site-footer__brand { gap: .75rem; }
+    .site-footer__name { font-size: 1.35rem; }
+    .site-footer__copy { font-size: .85rem; }
+    .site-footer__nav { grid-template-columns: minmax(0, 1fr); gap: .75rem; padding-top: .75rem; }
+    .site-footer__about { border-top: 1px solid var(--footer-line); }
+    .site-footer__channel { grid-template-columns: 4.5rem minmax(0, 1fr); gap: .75rem; }
+    .site-footer__link, .site-footer__about summary { min-height: 48px; }
+    .site-footer__legal { padding-top: 1rem; }
+  }
+</style>

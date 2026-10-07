@@ -1,11 +1,12 @@
 import { expect, test } from '@playwright/test';
 
-test('donation invitation is visible without blocking navigation', async ({ page }) => {
+test('donation invitation stays reachable without blocking navigation', async ({ page }) => {
   const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
 
   expect(response?.ok()).toBeTruthy();
 
-	const prompt = page.getByRole('complementary', { name: /Apoyá a Cine Posta/i });
+  const compact = await page.evaluate(() => matchMedia('(max-width: 720px), (orientation: landscape) and (max-height: 500px) and (pointer: coarse)').matches);
+	const prompt = compact ? page.locator('.site-footer') : page.getByRole('complementary', { name: /Apoyá a Cine Posta/i });
   await expect(prompt).toBeVisible();
   await expect(
 		prompt.getByRole('link', { name: /Apoyá con un cafecito/i }),
@@ -42,6 +43,8 @@ test('home page renders the catalog shell', async ({ page }) => {
 	await expect(page.locator('.site-header__brand img')).toHaveAttribute('src', '/brand/cineposta-logo-full.png');
 	await expect(page.locator('[data-movie-search-grid]')).toBeVisible();
 	await expect(page.getByRole('heading', { name: /Construí tu carrera en el cine/i })).toBeVisible();
+  const about = page.locator('.site-footer__about');
+  if (!(await about.evaluate((node: HTMLDetailsElement) => node.open))) await about.locator('summary').click();
 	await expect(page.getByRole('link', { name: 'Sobre', exact: true })).toBeVisible();
 	const headerXLink = page.locator('.site-header__x');
 	await expect(headerXLink).toBeVisible();
@@ -89,6 +92,8 @@ test('editorial identity is presented as a team', async ({ page }) => {
 	expect(response?.ok()).toBeTruthy();
 	await expect(page).toHaveTitle(/El equipo de Cine Posta/i);
 	await expect(page.getByRole('heading', { name: 'El equipo de Cine Posta' })).toBeVisible();
+  const about = page.locator('.site-footer__about');
+  if (!(await about.evaluate((node: HTMLDetailsElement) => node.open))) await about.locator('summary').click();
 	await expect(page.getByRole('link', { name: 'Equipo', exact: true })).toBeVisible();
 	await expect(page.locator('body')).toContainText('Una firma colectiva');
 	const teamStructuredData = await page.locator('script[type="application/ld+json"]').allTextContents();

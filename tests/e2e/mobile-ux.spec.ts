@@ -216,7 +216,7 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
   );
 
   expect(railLayouts.every((rail) => rail.scrollHeight <= rail.clientHeight + 1)).toBeTruthy();
-  expect(railLayouts.every((rail) => rail.touchAction === 'pan-x' && /x|inline/.test(rail.snapType))).toBeTruthy();
+  expect(railLayouts.every((rail) => rail.touchAction === 'auto' && /x|inline/.test(rail.snapType))).toBeTruthy();
   expect(railLayouts.every((rail) => rail.oneLine)).toBeTruthy();
 
   for (let index = 0; index < await rails.count(); index += 1) {

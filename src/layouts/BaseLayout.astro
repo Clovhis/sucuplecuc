@@ -2,23 +2,11 @@
 import '../styles/global.css';
 import '../styles/mobile.css';
 import DonationGate from '../components/DonationGate.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import {
-	ABOUT_PATH,
-	CONTACT_EMAIL,
-	COMMUNITY_PATH,
-	CONTACT_PATH,
-	COPYRIGHT_PATH,
-	EDITORIAL_POLICY_PATH,
-	EDITORIAL_TEAM_PATH,
-	METHODOLOGY_PATH,
-	PEOPLE_PATH,
-	PRESS_EMAIL,
-	PRIVACY_PATH,
-	QUE_MIRO_HOY_PATH,
 	SITE_LANGUAGE,
 	SITE_LOCALE,
 	SITE_NAME,
-	SOURCES_AND_DATA_PATH,
 } from '../lib/seo';
 import { DEFAULT_SUPABASE_URL } from '../lib/supabaseClient';
 
@@ -65,22 +53,6 @@ const contentSecurityPolicy = [
 	"manifest-src 'self'",
 	'upgrade-insecure-requests',
 ].join('; ');
-const footerLinks = [
-	{ href: import.meta.env.BASE_URL, label: 'Inicio' },
-	{ href: QUE_MIRO_HOY_PATH, label: 'Qué vemos hoy' },
-	{ href: PEOPLE_PATH, label: 'Personas' },
-	{ href: COMMUNITY_PATH, label: 'Comunidad' },
-	{ href: METHODOLOGY_PATH, label: 'Cómo funciona' },
-	{ href: ABOUT_PATH, label: 'Sobre' },
-	{ href: EDITORIAL_TEAM_PATH, label: 'Equipo' },
-	{ href: `${import.meta.env.BASE_URL}editorial/`, label: 'Editorial' },
-	{ href: EDITORIAL_POLICY_PATH, label: 'Política editorial' },
-	{ href: SOURCES_AND_DATA_PATH, label: 'Fuentes' },
-	{ href: COPYRIGHT_PATH, label: 'Copyright' },
-	{ href: CONTACT_PATH, label: 'Contacto' },
-	{ href: PRIVACY_PATH, label: 'Privacidad' },
-];
-const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -143,80 +115,6 @@ const currentYear = new Date().getFullYear();
 		<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 		<DonationGate />
 		<slot />
-		<footer class="site-footer">
-			<div class="site-footer__inner container">
-				<div class="site-footer__brand">
-					<p class="site-footer__copy">
-						<strong>{SITE_NAME}</strong> es un proyecto editorial independiente de reseñas cortas, datos de catálogo y recomendaciones para decidir qué mirar sin chamuyo.
-					</p>
-					<a
-						class="site-footer__donate"
-						href="https://cafecito.app/cineposta"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							class="site-footer__donate-logo"
-							src={`${assetBase}brand/cafecito-logo.svg`}
-							alt=""
-							aria-hidden="true"
-						/>
-						Apoyá el sitio
-					</a>
-				</div>
-				<section class="site-footer__contact" aria-labelledby="site-footer-contact-title">
-					<div class="site-footer__contact-intro">
-						<p class="site-footer__eyebrow">Canales oficiales</p>
-						<h2 id="site-footer-contact-title">Hablemos</h2>
-						<p class="site-footer__contact-copy">
-							¿Tenés una consulta sobre el sitio o querés contactarnos por prensa? Elegí el canal correspondiente.
-						</p>
-					</div>
-					<address class="site-footer__channels">
-						<a
-							class="site-footer__channel"
-							href={`mailto:${CONTACT_EMAIL}?subject=Cine%20Posta%20-%20Consulta%20general`}
-						>
-							<span class="site-footer__channel-label">Contacto</span>
-							<span class="site-footer__channel-email">{CONTACT_EMAIL}</span>
-						</a>
-						<a
-							class="site-footer__channel"
-							href={`mailto:${PRESS_EMAIL}?subject=Cine%20Posta%20-%20Prensa`}
-						>
-							<span class="site-footer__channel-label">Prensa</span>
-							<span class="site-footer__channel-email">{PRESS_EMAIL}</span>
-						</a>
-						<a
-							class="site-footer__channel site-footer__channel--x"
-							href="https://x.com/cineposta"
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="Seguir a Cine Posta en X (se abre en una pestaña nueva)"
-						>
-							<span class="site-footer__channel-icon" aria-hidden="true">
-								<img src={`${assetBase}brand/x-logo.svg`} alt="" />
-							</span>
-							<span class="site-footer__channel-content">
-								<span class="site-footer__channel-label">X</span>
-								<span class="site-footer__channel-email">@cineposta</span>
-							</span>
-						</a>
-					</address>
-				</section>
-				<nav class="site-footer__nav" aria-label="Navegación del sitio">
-					{
-						footerLinks.map((link) => (
-							<a class="site-footer__link" href={link.href}>
-								{link.label}
-							</a>
-						))
-					}
-				</nav>
-				<p class="site-footer__legal">
-					© {currentYear} {SITE_NAME}. Hecho desde Argentina. Las marcas, posters y materiales citados pertenecen a sus titulares.
-				</p>
-			</div>
-		</footer>
+		<SiteFooter />
 	</body>
 </html>
