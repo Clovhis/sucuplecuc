@@ -77,5 +77,7 @@ Playwright usa su propia salida en `test-results/bios-e2e/` para conservar
 las capturas y los registros de la revisión. La repetición focalizada usa
 `test-results/bios-e2e-score/` y `e2e-score-fix.log`.
 
-Preview local: `http://127.0.0.1:43211/personas/diego-cremonesi/`.
-La tarea se mantiene en la rama de revisión, sin publicar en `main`.
+Preview usado durante la revisión: `http://127.0.0.1:43211/personas/diego-cremonesi/`.
+La revisión inicial se cerró en esta rama, sin publicar en `main`.
+El 7 de octubre de 2026, el usuario aprobó el diseño y autorizó publicarlo en
+`main`, verificar su funcionamiento en producción y limpiar la rama y el preview.
