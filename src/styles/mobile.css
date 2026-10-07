@@ -429,7 +429,6 @@
 
 @media (max-width: 68rem) and (pointer: coarse) {
 	.home-catalog__desktop-extra,
-	.editorial-rankings,
 	.weekly-suggestion {
 		display: none;
 	}
@@ -512,8 +511,6 @@
 	.home-catalog__mobile-teaser {
 		display: none;
 	}
-
-	.editorial-rankings,
 	.weekly-suggestion {
 		display: grid;
 	}
@@ -814,20 +811,6 @@
 		min-height: 12rem;
 	}
 
-	.editorial-rankings {
-		padding: 0.9rem;
-		border-radius: 20px;
-	}
-
-	.editorial-rankings__grid {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 0.65rem;
-	}
-
-	.editorial-rankings__card ol {
-		grid-auto-rows: 6rem;
-	}
-
 	.weekly-suggestion {
 		padding: 0.9rem;
 		border-radius: 20px;
@@ -854,7 +837,6 @@
 	.home-results-tools,
 	.postometro-teaser,
 	.cinema-release-carousel,
-	.editorial-rankings,
 	.weekly-suggestion,
 	.home-actor-game,
 	.home-community-promo {
@@ -889,8 +871,7 @@
 	}
 
 	.home-platform-filter__chips,
-	.home-genre-filter__chips,
-	.editorial-rankings__grid {
+	.home-genre-filter__chips {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
@@ -1255,8 +1236,7 @@
 	}
 
 	.home-people-showcase__card:not(.home-people-showcase__card--cta):nth-child(n + 3),
-	.upcoming-release-list__item:nth-child(n + 3),
-	.editorial-rankings__card:nth-child(n + 3) {
+	.upcoming-release-list__item:nth-child(n + 3) {
 		display: none;
 	}
 

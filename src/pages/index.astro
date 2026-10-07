@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/home-editorial.css';
 import '../styles/home-discovery.css';
 import '../styles/home-trailers.css';
+import '../styles/home-promos.css';
 import EditorialHighlights from '../components/EditorialHighlights.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
@@ -12,7 +13,6 @@ import PostometroTeaser from '../components/PostometroTeaser.astro';
 import UpcomingReleases2027 from '../components/UpcomingReleases2027.astro';
 import WeeklyRecommendationsCarousel from '../components/WeeklyRecommendationsCarousel.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
-import { getEditorialRankings } from '../lib/editorialRankings';
 import {
 	getLatestReviewMovies,
 	getHomeMovieShowcase,
@@ -69,11 +69,6 @@ const currentStreamingReleases = getCurrentStreamingMovieReleases(new Date(), 12
 		watchUrl: release.videoUrl,
 	}))
 	.filter((release) => release.embedUrl);
-const editorialRankings = getEditorialRankings(movies);
-const editorialRankingPools = editorialRankings.map((ranking) => ({
-	id: ranking.id,
-	movies: ranking.candidateMovies,
-}));
 const INITIAL_HOME_MOVIE_COUNT = 12;
 const HOME_PLATFORM_SLOTS = 4;
 const initialHomeMovies = getHomeMovieShowcase(movies, INITIAL_HOME_MOVIE_COUNT, HOME_PLATFORM_SLOTS);
@@ -439,58 +434,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 					/>
 
 					{
-						editorialRankings.length > 0 && (
-							<section class="editorial-rankings fade-up" style="--item-delay: 120ms;" aria-labelledby="editorial-rankings-title">
-								<div class="editorial-rankings__header">
-									<h2 id="editorial-rankings-title">Sugerencias rápidas</h2>
-								</div>
-								<div class="editorial-rankings__grid">
-									{editorialRankings.map((ranking, rankingIndex) => (
-										<article
-											class={`editorial-rankings__card editorial-rankings__card--${ranking.id}`}
-											style={`--ranking-order: ${rankingIndex};`}
-										>
-											<ol data-editorial-ranking-list={ranking.id}>
-												{ranking.movies.map((entry) => (
-													<li>
-														<a href={entry.url}>
-															<span class="editorial-rankings__movie">
-																<span class="editorial-rankings__movie-title">{entry.title}</span>
-																<small>{entry.year} · {entry.verdictLabel}</small>
-																<span
-																	class={`editorial-rankings__meter editorial-rankings__meter--${entry.meterKind}`}
-																	aria-label={`${entry.meterLabel}: ${entry.meterScore}%`}
-																>
-																	<span class="editorial-rankings__meter-copy">
-																		<span>{entry.meterLabel}</span>
-																		<strong>{entry.meterScore}%</strong>
-																	</span>
-																	<span class="editorial-rankings__meter-track" aria-hidden="true">
-																		<span
-																			class="editorial-rankings__meter-fill"
-																			style={`--editorial-meter-level: ${entry.meterScore}%;`}
-																		></span>
-																	</span>
-																</span>
-															</span>
-														</a>
-													</li>
-												))}
-											</ol>
-										</article>
-									))}
-								</div>
-								<script
-									id="editorial-ranking-data"
-									type="application/json"
-									is:inline
-									set:html={JSON.stringify(editorialRankingPools)}
-								></script>
-							</section>
-						)
-					}
-
-					{
 						weeklyRecommendations.length > 0 && (
 							<WeeklyRecommendationsCarousel recommendations={weeklyRecommendations} />
 						)
@@ -616,7 +559,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 					<section class="home-actor-game fade-up" style="--item-delay: 150ms;" aria-labelledby="home-actor-game-title" data-home-actor-game>
 						<a class="home-actor-game__link" href={actorCareerGamePath}>
 							<div class="home-actor-game__content">
-								<p class="home-actor-game__eyebrow"><span aria-hidden="true">✦</span> Minijuego nuevo</p>
+								<p class="home-actor-game__eyebrow">Minijuego</p>
 								<h2 id="home-actor-game-title">Construí tu carrera en el cine</h2>
 								<p class="home-actor-game__copy">
 									Elegí tu oficio y pasá de un rodaje croto a la alfombra roja.
@@ -624,7 +567,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 								<span class="home-actor-game__cta">Jugar al simulador <span aria-hidden="true">→</span></span>
 							</div>
 							<div class="home-actor-game__art" aria-hidden="true">
-								<span class="home-actor-game__art-label">Del primer casting a los premios</span>
 								<img
 									src={actorCareerGameArt}
 									alt=""
@@ -642,11 +584,11 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 							<p class="home-community-promo__eyebrow">Comunidad</p>
 							<h2 id="home-community-promo-title">Foro Cineposta</h2>
 							<p data-community-home-banner>¿La viste? Vení a debatirla sin humo.</p>
+							<a href={COMMUNITY_PATH}>Ir a la comunidad <span aria-hidden="true">→</span></a>
 						</div>
 						<div class="home-community-promo__illustration" aria-hidden="true">
 							<img src="/images/community/foro-cineposta-banner-trio-transparent.png" alt="" width="1900" height="828" loading="lazy" decoding="async" />
 						</div>
-						<a href={COMMUNITY_PATH}>Ir a la comunidad</a>
 					</section>
 					<UpcomingReleases2027 />
 					<section class="home-catalog__mobile-teaser fade-up" style="--item-delay: 180ms;" aria-label="Qué vemos hoy">
@@ -661,7 +603,6 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 <script src="../scripts/community-banner.ts"></script>
 
 <!-- Astro 6: page interactivity lives in a typed local module instead of an inline exception block. -->
-<script src="../scripts/editorial-rankings.ts"></script>
 <script src="../scripts/upcoming-suggestions.ts"></script>
 <script src="../scripts/home-catalog.ts"></script>
 

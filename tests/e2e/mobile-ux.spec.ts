@@ -121,7 +121,6 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
       '.news-rail',
       '[data-cinema-release-carousel="cinema-release-carousel"]',
       '[data-cinema-release-carousel="streaming-release-carousel"]',
-      '.editorial-rankings',
       '.weekly-suggestion',
       '[data-home-actor-game]',
       '#comunidad-home',
@@ -250,14 +249,9 @@ test('mobile home compacts filters and keeps every facet reachable in the carous
     await upcomingNext.click();
     await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText(expectedCount);
   }
-  await expect(page.locator('.editorial-rankings__card:visible')).toHaveCount(2);
+  await expect(page.locator('.editorial-rankings')).toHaveCount(0);
   await expect(page.locator('.home-people-showcase__card--cta:visible')).toContainText('perfiles conectados');
   await expect(page.locator('.postometro-teaser__link').first()).toHaveJSProperty('offsetHeight', 48);
-
-  const compactPromoHeights = await page.locator('[data-home-actor-game], .home-community-promo').evaluateAll((cards) =>
-    cards.map((card) => Math.round(card.getBoundingClientRect().height)),
-  );
-  expect(compactPromoHeights.every((height) => height <= 112)).toBeTruthy();
 });
 
 test('mobile keeps a dense active-filter combination inside the viewport', async ({ page }, testInfo) => {
@@ -329,7 +323,7 @@ test('touch landscape keeps the mobile app shell contained', async ({ page }, te
     documentWidth: document.documentElement.scrollWidth,
     viewportWidth: window.innerWidth,
     navVisible: getComputedStyle(document.querySelector<HTMLElement>('.home-mobile-nav')!).display !== 'none',
-    completeFlowVisible: ['.news-rail', '.editorial-rankings', '.weekly-suggestion'].every((selector) => {
+    completeFlowVisible: ['.news-rail', '.weekly-suggestion'].every((selector) => {
       const element = document.querySelector<HTMLElement>(selector);
       return Boolean(element && getComputedStyle(element).display !== 'none');
     }),
@@ -348,6 +342,6 @@ test('desktop keeps the complete home while mobile-only reductions stay hidden',
   await expect(page.locator('.upcoming-release-list__item')).toHaveCount(3);
   await expect(page.locator('.weekly-suggestion__queue-item')).toHaveCount(5);
   await expect(page.locator('[data-upcoming-suggestion-count]')).toHaveText('1 de 5');
-  await expect(page.locator('.editorial-rankings__card')).toHaveCount(5);
+  await expect(page.locator('.editorial-rankings')).toHaveCount(0);
   await expect(page.locator('.home-mobile-nav')).toBeHidden();
 });

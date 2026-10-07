@@ -1,0 +1,171 @@
+/* Closing home sections share the magazine's typography and ruled layout.
+   Artwork stays in normal flow: no negative offsets or overlay on the copy. */
+.home-edition :is(.home-actor-game, .home-community-promo, .upcoming-releases-2027) {
+	--promo-ink: #f0eee8;
+	--promo-muted: #aeb5bf;
+	--promo-line: #343b45;
+	--promo-accent: #e6b291;
+	margin: 0;
+	padding: 1.5rem 0 0;
+	border: 0;
+	border-top: 1px solid var(--promo-line);
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	overflow: visible;
+}
+.home-edition :is(.home-actor-game, .upcoming-releases-2027)::before,
+.home-edition .home-actor-game__art::after { display: none; }
+
+.home-edition .home-actor-game__link,
+.home-edition .home-community-promo {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 450px);
+	grid-template-rows: auto;
+	align-items: center;
+	gap: 2rem;
+	min-height: 300px;
+}
+.home-edition .home-community-promo { min-height: 324px; }
+.home-edition .home-actor-game__link { padding: 0; }
+.home-edition :is(.home-actor-game__content, .home-community-promo__content) {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: .8rem;
+	width: auto;
+	min-width: 0;
+	max-width: none;
+	padding: 0;
+	grid-column: auto;
+	grid-row: auto;
+}
+.home-edition :is(.home-actor-game__eyebrow, .home-community-promo__eyebrow, .upcoming-releases-2027__eyebrow) {
+	margin: 0;
+	color: var(--promo-muted);
+	font: 500 .7rem/1.4 var(--font-sans);
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+.home-edition :is(.home-actor-game h2, .home-community-promo h2, .upcoming-releases-2027__heading) {
+	max-width: 24ch;
+	margin: 0;
+	color: var(--promo-ink);
+	font: 500 clamp(1.35rem, 2.2vw, 1.8rem)/1.2 var(--font-sans);
+	letter-spacing: -.02em;
+}
+.home-edition .home-actor-game__copy,
+.home-edition .home-community-promo p:not(.home-community-promo__eyebrow) {
+	display: block;
+	max-width: 44ch;
+	margin: 0;
+	color: var(--promo-muted);
+	font: 400 .95rem/1.6 var(--font-sans);
+	-webkit-line-clamp: unset;
+	overflow: visible;
+}
+.home-edition .home-actor-game__cta,
+.home-edition .home-community-promo a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: start;
+	gap: .75rem;
+	width: fit-content;
+	min-height: 44px;
+	margin: .25rem 0 0;
+	padding: .55rem .85rem;
+	border: 1px solid var(--promo-line);
+	border-radius: 4px;
+	background: none;
+	color: var(--promo-ink);
+	font: 400 .85rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	box-shadow: none;
+	transform: none;
+}
+.home-edition .home-actor-game__link:hover .home-actor-game__cta,
+.home-edition .home-actor-game__link:focus-visible .home-actor-game__cta,
+.home-edition .home-community-promo a:hover {
+	background: #1b222c;
+	border-color: var(--promo-accent);
+	transform: none;
+}
+.home-edition .home-actor-game__link:focus-visible,
+.home-edition .home-community-promo a:focus-visible {
+	outline: 2px solid var(--promo-accent);
+	outline-offset: 4px;
+}
+.home-edition :is(.home-actor-game__art, .home-community-promo__illustration) {
+	display: block;
+	position: relative;
+	align-self: center;
+	grid-column: auto;
+	grid-row: auto;
+	width: 100%;
+	min-height: 0;
+	overflow: visible;
+}
+.home-edition .home-actor-game__art { aspect-ratio: 3 / 2; }
+.home-edition .home-community-promo__illustration { aspect-ratio: 1900 / 828; }
+.home-edition .home-actor-game__art img,
+.home-edition .home-community-promo__illustration img {
+	display: block;
+	position: static;
+	inset: auto;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	mask-image: none;
+	-webkit-mask-image: none;
+	filter: none;
+	transform: none;
+	transition: none;
+}
+.home-edition .home-actor-game__art img { border-radius: 4px; }
+.home-edition .home-actor-game__link:hover .home-actor-game__art img,
+.home-edition .home-actor-game__link:focus-visible .home-actor-game__art img { filter: none; transform: none; }
+
+.home-edition .upcoming-releases-2027 { gap: 0; }
+.home-edition .upcoming-releases-2027__head {
+	align-items: end;
+	padding-bottom: 1.25rem;
+	border-color: var(--promo-line);
+}
+.home-edition .upcoming-releases-2027__intro { gap: .65rem; }
+.home-edition .upcoming-releases-2027__stamp {
+	min-width: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+}
+.home-edition .upcoming-releases-2027__stamp strong { color: var(--promo-ink); font: 500 1.5rem/1 var(--font-sans); border-color: var(--promo-line); }
+.home-edition .upcoming-releases-2027__stamp span { color: var(--promo-muted); font: 400 .7rem/1.4 var(--font-sans); letter-spacing: 0; text-transform: none; }
+.home-edition .upcoming-releases-2027__list { column-gap: 3rem; padding: 0; }
+.home-edition .upcoming-releases-2027__item { padding-block: 1rem; border-color: var(--promo-line); }
+.home-edition .upcoming-releases-2027__number { color: var(--promo-muted); font: 400 .75rem/1.4 var(--font-sans); font-variant-numeric: tabular-nums; }
+.home-edition .upcoming-releases-2027__item-title { color: var(--promo-ink); font: 500 .95rem/1.4 var(--font-sans); }
+.home-edition .upcoming-releases-2027__item-meta { color: var(--promo-muted); font: 400 .75rem/1.5 var(--font-sans); }
+.home-edition .upcoming-releases-2027__item-meta time { color: var(--promo-accent); }
+.home-edition .upcoming-releases-2027__note { max-width: none; padding-top: 1rem; border: 0; color: var(--promo-muted); font: 400 .75rem/1.6 var(--font-sans); }
+
+@media (max-width: 1000px) {
+	.home-edition .home-actor-game__link,
+	.home-edition .home-community-promo { grid-template-columns: minmax(0, 1fr) minmax(0, 40%); min-height: 0; gap: 1.5rem; }
+}
+@media (max-width: 720px) {
+	.home-edition .home-actor-game__link,
+	.home-edition .home-community-promo { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+	.home-edition :is(.home-actor-game, .home-community-promo, .upcoming-releases-2027) { padding-top: 1.25rem; }
+	.home-edition .home-actor-game__link { padding: 0; }
+	.home-edition :is(.home-actor-game__art, .home-community-promo__illustration) { max-width: 450px; justify-self: center; }
+	.home-edition .upcoming-releases-2027__head { grid-template-columns: minmax(0, 1fr); gap: .85rem; }
+	.home-edition .upcoming-releases-2027__heading { font-size: 1.35rem; }
+	.home-edition .upcoming-releases-2027__list { grid-template-columns: minmax(0, 1fr); }
+	.home-edition .upcoming-releases-2027__item { grid-template-columns: 1.5rem minmax(0, 1fr); }
+}
