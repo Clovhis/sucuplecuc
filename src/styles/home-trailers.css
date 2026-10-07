@@ -1,0 +1,192 @@
+/* Keep the generated agenda and autoplay iframe; match the home magazine. */
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] {
+	--trailers-ink: #f0eee8;
+	--trailers-muted: #aeb5bf;
+	--trailers-line: #343b45;
+	--trailers-accent: #e6b291;
+	display: grid;
+	min-block-size: 0;
+	gap: 1.25rem;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	overflow: visible;
+}
+.home-trailers.weekly-suggestion::before { display: none; }
+.home-trailers.weekly-suggestion .weekly-suggestion__header {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 0;
+	padding-bottom: .9rem;
+	border-bottom: 1px solid var(--trailers-line);
+}
+.home-trailers__heading { display: grid; gap: .4rem; }
+.home-trailers__kicker {
+	margin: 0;
+	color: var(--trailers-muted);
+	font: 500 .7rem/1.4 var(--font-sans);
+	letter-spacing: .08em;
+}
+.home-trailers.weekly-suggestion .weekly-suggestion__header h2 {
+	color: var(--trailers-ink);
+	font: 500 1.35rem/1.25 var(--font-sans);
+	letter-spacing: -.02em;
+}
+.home-trailers__territory { margin: 0; color: var(--trailers-muted); font: 400 .8rem/1.5 var(--font-sans); }
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__shell {
+	grid-template-columns: minmax(0, 1fr) 320px;
+	gap: 2rem;
+	align-items: start;
+}
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__media {
+	align-self: start;
+	block-size: auto;
+	gap: 1rem;
+}
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__player {
+	align-self: start;
+	block-size: auto;
+	min-height: 0;
+	aspect-ratio: 16 / 9;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: none;
+}
+.home-trailers__caption { display: grid; gap: .5rem; min-width: 0; }
+.home-trailers__caption h3 {
+	margin: 0;
+	color: var(--trailers-ink);
+	font: 500 clamp(1.25rem, 2vw, 1.65rem)/1.25 var(--font-sans);
+	letter-spacing: -.02em;
+	overflow-wrap: anywhere;
+}
+.home-trailers .weekly-suggestion__meta {
+	color: var(--trailers-accent);
+	font: 400 .8rem/1.5 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	gap: .5rem;
+}
+.home-trailers .weekly-suggestion__meta > * + *::before { background: var(--trailers-muted); width: 3px; height: 3px; }
+.home-trailers.weekly-suggestion .weekly-suggestion__synopsis {
+	display: block;
+	max-block-size: none;
+	color: var(--trailers-muted);
+	font: 400 .9rem/1.6 var(--font-sans);
+	-webkit-line-clamp: unset;
+}
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__content {
+	display: grid;
+	block-size: auto;
+	gap: 0;
+	padding-left: 1.25rem;
+	border-left: 1px solid var(--trailers-line);
+}
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .home-trailers__agenda-title {
+	display: block;
+	block-size: auto;
+	margin: 0 0 .65rem;
+	color: var(--trailers-muted);
+	font: 500 .75rem/1.5 var(--font-sans);
+	letter-spacing: .03em;
+	-webkit-line-clamp: unset;
+}
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue {
+	grid-template-columns: minmax(0, 1fr);
+	grid-template-rows: none;
+	gap: 0;
+}
+.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue-item {
+	display: block;
+	min-block-size: 0;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px solid var(--trailers-line);
+	border-radius: 0;
+	background: none;
+}
+.home-trailers.weekly-suggestion .weekly-suggestion__queue-item::before { display: none; }
+.home-trailers__choose {
+	display: grid;
+	grid-template-columns: 80px minmax(0, 1fr);
+	align-items: center;
+	gap: .8rem;
+	width: 100%;
+	min-height: 72px;
+	padding: .8rem 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	color: var(--trailers-ink);
+	text-align: left;
+	cursor: pointer;
+}
+.home-trailers__thumbnail { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 3px; overflow: hidden; background: #191f27; }
+.home-trailers__thumbnail img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.home-trailers__thumbnail svg {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 4px;
+	bottom: 4px;
+	padding: 3px;
+	border-radius: 2px;
+	fill: #fff;
+	background: #101318d9;
+}
+.home-trailers__queue-copy { display: grid; gap: .35rem; min-width: 0; }
+.home-trailers .weekly-suggestion__queue-title {
+	color: var(--trailers-ink);
+	font: 500 .85rem/1.4 var(--font-sans);
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+.home-trailers .weekly-suggestion__queue-date {
+	color: var(--trailers-muted);
+	font: 400 .75rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	white-space: normal;
+}
+.home-trailers.weekly-suggestion .weekly-suggestion__queue-item--active .weekly-suggestion__queue-title,
+.home-trailers .home-trailers__choose:hover .weekly-suggestion__queue-title { color: var(--trailers-accent); }
+.home-trailers .weekly-suggestion__queue-item--active .home-trailers__thumbnail { outline: 1px solid var(--trailers-accent); outline-offset: 2px; }
+.home-trailers.weekly-suggestion .weekly-suggestion__actions { margin: .75rem 0 0; }
+.home-trailers .weekly-suggestion__nav { min-height: 44px; gap: .75rem; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.home-trailers .weekly-suggestion__next {
+	min-height: 44px;
+	padding: .5rem .7rem;
+	border: 1px solid var(--trailers-line);
+	border-radius: 4px;
+	background: none;
+	color: var(--trailers-ink);
+	font: 400 .8rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	box-shadow: none;
+	transform: none;
+}
+.home-trailers .weekly-suggestion__next svg { padding: 0; width: 16px; height: 16px; border-radius: 0; background: none; stroke-width: 1.6; }
+.home-trailers .weekly-suggestion__next:hover { background: #1b222c; border-color: var(--trailers-accent); transform: none; }
+.home-trailers .weekly-suggestion__count { padding: 0; color: var(--trailers-muted); font: 400 .75rem/1.4 var(--font-sans); letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
+.home-trailers :is(button):focus-visible { outline: 2px solid var(--trailers-accent); outline-offset: 3px; }
+
+@media (max-width: 1000px) {
+	.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__shell { grid-template-columns: minmax(0, 1fr) 280px; gap: 1.25rem; }
+	.home-trailers__choose { grid-template-columns: 64px minmax(0, 1fr); gap: .65rem; }
+}
+@media (max-width: 760px) {
+	.home-trailers.weekly-suggestion .weekly-suggestion__header { flex-wrap: wrap; align-items: start; gap: .65rem; }
+	.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__shell { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+	.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__content { padding: 0; border-left: 0; }
+	.home-trailers__territory { font-size: .75rem; }
+	.home-trailers__choose { grid-template-columns: 80px minmax(0, 1fr); }
+}
+/* Preserve the existing four-entry compact touch agenda and five-entry desktop. */
+@media (max-width: 68rem) and (pointer: coarse) {
+	.home-trailers.weekly-suggestion[data-upcoming-suggestion-root] .weekly-suggestion__queue-item:nth-child(n + 5) { display: none; }
+}

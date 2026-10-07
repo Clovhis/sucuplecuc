@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/home-editorial.css';
 import '../styles/home-discovery.css';
+import '../styles/home-trailers.css';
 import EditorialHighlights from '../components/EditorialHighlights.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
@@ -498,12 +499,20 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 					{
 						upcomingMovieSuggestion && (
 							<section
-								class="weekly-suggestion fade-up"
+								class="weekly-suggestion home-trailers fade-up"
+								id="proximos-estrenos"
 								style="--item-delay: 135ms;"
 								aria-labelledby="upcoming-suggestion-title"
 								data-upcoming-suggestion-root
 								data-upcoming-active-index="0"
 							>
+								<header class="weekly-suggestion__header">
+									<div class="home-trailers__heading">
+										<p class="home-trailers__kicker">Trailers</p>
+										<h2 id="upcoming-suggestion-title">Próximos estrenos</h2>
+									</div>
+									<p class="home-trailers__territory">En cines de Argentina</p>
+								</header>
 								<div class="weekly-suggestion__shell">
 									<div class="weekly-suggestion__media">
 										<div class="weekly-suggestion__player">
@@ -518,26 +527,24 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 												data-upcoming-suggestion-frame
 											></iframe>
 										</div>
-									</div>
-									<div class="weekly-suggestion__content" aria-live="polite">
-										<div class="weekly-suggestion__header">
-											<div>
-												<h2 id="upcoming-suggestion-title">Próximos estrenos</h2>
-											</div>
+										<div class="home-trailers__caption" aria-live="polite" aria-atomic="true">
+											<h3 data-upcoming-suggestion-name>{upcomingMovieSuggestions[0].displayTitle}</h3>
+											<p class="weekly-suggestion__meta">
+												<time
+													datetime={upcomingMovieSuggestions[0].releaseDate}
+													data-upcoming-suggestion-date
+												>
+													{formatUpcomingReleaseDate(upcomingMovieSuggestions[0].releaseDate)}
+												</time>
+												<span data-upcoming-suggestion-platform>Cine</span>
+											</p>
+											<p class="weekly-suggestion__synopsis" data-upcoming-suggestion-synopsis>
+												{upcomingMovieSuggestions[0].displaySynopsis}
+											</p>
 										</div>
-										<h3 data-upcoming-suggestion-name>{upcomingMovieSuggestions[0].displayTitle}</h3>
-										<p class="weekly-suggestion__meta">
-											<time
-												datetime={upcomingMovieSuggestions[0].releaseDate}
-												data-upcoming-suggestion-date
-											>
-												{formatUpcomingReleaseDate(upcomingMovieSuggestions[0].releaseDate)}
-											</time>
-											<span data-upcoming-suggestion-platform>Cine</span>
-										</p>
-										<p class="weekly-suggestion__synopsis" data-upcoming-suggestion-synopsis>
-											{upcomingMovieSuggestions[0].displaySynopsis}
-										</p>
+									</div>
+									<div class="weekly-suggestion__content">
+										<h3 class="home-trailers__agenda-title">Agenda de estrenos</h3>
 										<ol class="weekly-suggestion__queue" aria-label="Agenda de próximos estrenos">
 											{
 												upcomingMovieSuggestions.map((release, index) => (
@@ -547,10 +554,23 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 														data-upcoming-suggestion-queue-index={index}
 														aria-current={index === 0 ? 'true' : undefined}
 													>
-														<span class="weekly-suggestion__queue-title">{release.title}</span>
-														<time class="weekly-suggestion__queue-date" datetime={release.releaseDate}>
-															{formatUpcomingReleaseDate(release.releaseDate)}
-														</time>
+														<button
+															type="button"
+															class="home-trailers__choose"
+															data-upcoming-suggestion-select={index}
+															aria-label={`Ver trailer de ${release.title}`}
+														>
+															<span class="home-trailers__thumbnail" aria-hidden="true">
+																<img src={release.thumbnailUrl} alt="" width="96" height="54" loading="lazy" referrerpolicy="no-referrer" />
+																<svg viewBox="0 0 24 24" focusable="false"><path d="m9 5 10 7-10 7z" /></svg>
+															</span>
+															<span class="home-trailers__queue-copy">
+																<span class="weekly-suggestion__queue-title">{release.title}</span>
+																<time class="weekly-suggestion__queue-date" datetime={release.releaseDate}>
+																	{formatUpcomingReleaseDate(release.releaseDate)}
+																</time>
+															</span>
+														</button>
 													</li>
 												))
 											}

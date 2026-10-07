@@ -65,6 +65,15 @@ if (root && dataScript) {
 
 	renderSuggestion(0);
 
+	root.querySelectorAll<HTMLButtonElement>('[data-upcoming-suggestion-select]').forEach((button) => {
+		button.addEventListener('click', () => {
+			const index = Number(button.dataset.upcomingSuggestionSelect);
+			if (!suggestions[index] || index === activeIndex) return;
+			activeIndex = index;
+			renderSuggestion(activeIndex);
+		});
+	});
+
 	nextButton?.addEventListener('click', () => {
 		if (suggestions.length < 2) return;
 

@@ -155,7 +155,7 @@ test('Superbad title and local poster stay aligned', async ({ page }) => {
 
 test('movie detail reaction follows the CinePosta score', async ({ page }) => {
 	const cases = [
-		{ path: '/peliculas/ant-man-2015/', label: '9 · Obra maestra' },
+		{ path: '/peliculas/alien-1979/', label: '9 · Obra maestra' },
 		{ path: '/peliculas/akira-1988/', label: '8 · Excelente' },
 		{ path: '/peliculas/abyss-1989/', label: '6 · Buena' },
 		{ path: '/peliculas/1941-1979/', label: '5 · Regular' },
