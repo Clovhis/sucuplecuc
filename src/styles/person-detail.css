@@ -1,0 +1,204 @@
+/* Extended profiles use the same palette, typography and rules as the home
+   and movie edition. Scope every rule to keep the directory and credits intact. */
+body.person-edition {
+	--bio-ink: #f0eee8;
+	--bio-muted: #aeb5bf;
+	--bio-line: #343b45;
+	--bio-accent: #e6b291;
+	background: #101318;
+}
+body.person-edition::before,
+body.person-edition::after { display: none; }
+body.person-edition .container { width: min(1180px, calc(100% - 2rem)); }
+body.person-edition .person-page { gap: 2.5rem; color: var(--bio-ink); padding-bottom: 3rem; }
+body.person-edition .page-actions {
+	align-items: center; gap: .5rem; margin: 1rem 0 0; padding-bottom: .75rem;
+	border-bottom: 1px solid var(--bio-line);
+}
+body.person-edition .page-action {
+	min-height: 44px; padding: .5rem 0; border: 0; border-radius: 0;
+	background: none; box-shadow: none; color: var(--bio-muted); font-size: .85rem;
+	transform: none;
+}
+body.person-edition .page-action--home { margin-right: auto; }
+body.person-edition .page-action::before,
+body.person-edition .page-action::after { display: none; }
+body.person-edition :is(.person-page__hero, .person-page__panel) {
+	padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none;
+}
+body.person-edition .person-page__hero {
+	display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 2.5rem; align-items: start;
+}
+body.person-edition .person-page__portrait-shell {
+	width: 100%; min-height: 0; aspect-ratio: 4 / 5; border: 1px solid var(--bio-line);
+	border-radius: 4px; clip-path: none; background: #1b222c;
+}
+body.person-edition .person-page__hero-main { gap: 1rem; padding: 0; }
+body.person-edition .person-page__portrait-copy { gap: .5rem; }
+body.person-edition .person-page__eyebrow {
+	color: var(--bio-accent); font: 500 .75rem/1.4 var(--font-sans);
+	letter-spacing: .06em; text-transform: uppercase;
+}
+body.person-edition .person-page__title {
+	color: var(--bio-ink); font: 600 clamp(2.2rem, 4.4vw, 3.75rem)/1.06 var(--font-sans);
+	letter-spacing: -.035em; text-wrap: balance;
+}
+body.person-edition .person-page__roles { color: var(--bio-muted); font-size: .95rem; }
+body.person-edition .person-page__headline {
+	max-width: 60ch; color: var(--bio-ink); font: 400 1.1rem/1.6 var(--font-sans);
+}
+body.person-edition .person-page__facts {
+	grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem;
+	padding-top: 1rem; border-top: 1px solid var(--bio-line);
+}
+body.person-edition .person-page__fact {
+	align-content: start; gap: .4rem; min-width: 0; padding: 0;
+	border: 0; border-radius: 0; background: none; box-shadow: none;
+}
+body.person-edition .person-page__fact-label {
+	color: var(--bio-muted); font: 500 .75rem/1.4 var(--font-sans); letter-spacing: .04em;
+}
+body.person-edition .person-page__fact strong {
+	color: var(--bio-ink); font: 400 .9rem/1.5 var(--font-sans); overflow-wrap: anywhere;
+}
+body.person-edition .person-page__jump-links {
+	display: flex; flex-wrap: wrap; gap: .25rem 1.5rem;
+	border-top: 1px solid var(--bio-line);
+}
+body.person-edition .person-page__jump-links a {
+	display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+	color: var(--bio-muted); font-size: .85rem;
+}
+body.person-edition .person-page__jump-links span { color: var(--bio-accent); }
+body.person-edition .person-page__content {
+	grid-template-columns: minmax(0, 1fr) 320px; gap: 3rem; align-items: start;
+	border-top: 1px solid var(--bio-line); padding-top: 1.5rem;
+}
+body.person-edition .person-page__content--no-bio { grid-template-columns: minmax(0, 1fr); }
+body.person-edition .person-page__reading { display: grid; gap: 2rem; min-width: 0; }
+body.person-edition .person-page__section-head { gap: .4rem; margin-bottom: 1.25rem; }
+body.person-edition .person-page__section-head h2 {
+	color: var(--bio-ink); font: 500 1.35rem/1.25 var(--font-sans); letter-spacing: -.02em;
+	overflow-wrap: anywhere;
+}
+body.person-edition .person-page__bio-copy { gap: 1.2rem; max-width: 68ch; }
+body.person-edition .person-page__bio-copy p {
+	color: var(--bio-ink); font: 400 1.05rem/1.8 var(--font-sans);
+}
+body.person-edition .person-page__side {
+	display: grid; gap: 2rem; min-width: 0; padding-left: 1.5rem; border-left: 1px solid var(--bio-line);
+}
+body.person-edition .person-page__content--no-bio .person-page__side {
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+	padding: 0; border: 0;
+}
+body.person-edition .person-page__showcase { grid-column: auto; gap: 0; }
+body.person-edition .person-page__showcase-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+body.person-edition :is(.person-page__showcase-card, .person-page__film-card) {
+	padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none;
+	transform: none; transition: color .15s ease;
+}
+body.person-edition .person-page__showcase-card {
+	grid-template-columns: 48px minmax(0, 1fr); gap: .8rem; align-items: center;
+	padding: .65rem 0; border-top: 1px solid var(--bio-line);
+}
+body.person-edition .person-page__showcase-card img {
+	display: block; width: 48px; height: 72px; aspect-ratio: 2 / 3;
+	border: 0; border-radius: 3px; object-fit: contain; background: #1b222c;
+}
+body.person-edition .person-page__showcase-card span { color: inherit; font-size: .9rem; }
+body.person-edition .person-page__showcase-card small {
+	display: block; margin-top: .35rem; color: var(--bio-muted); font-size: .75rem; line-height: 1.5;
+}
+body.person-edition .person-page__award-list { gap: 0; }
+body.person-edition .person-page__award-item {
+	grid-template-columns: 96px minmax(0, 1fr); gap: .75rem; min-height: 138px;
+	padding: .75rem 0; border: 0; border-top: 1px solid var(--bio-line);
+	border-radius: 0; background: none; box-shadow: none;
+}
+body.person-edition .person-page__award-item .person-page__award-mark-shell {
+	width: 96px; height: 96px; padding: 0; border: 0; border-radius: 0;
+	background: none; box-shadow: none;
+}
+body.person-edition .person-page__award-mark { filter: none; }
+body.person-edition .person-page__award-copy { padding: 0; }
+body.person-edition .person-page__award-label {
+	color: var(--bio-ink); font: 500 .95rem/1.4 var(--font-sans); letter-spacing: 0; text-transform: none;
+}
+body.person-edition .person-page__award-category { color: var(--bio-muted); font-size: .85rem; }
+body.person-edition .person-page__award-work { color: var(--bio-ink); font-size: .85rem; }
+body.person-edition .person-page__award-year {
+	position: static; display: block; width: fit-content; min-height: 0;
+	margin-top: .4rem; padding: 0; border: 0; border-radius: 0;
+	background: none; color: var(--bio-muted); font: 400 .75rem/1.5 var(--font-sans);
+}
+body.person-edition .person-page__source-list {
+	gap: .3rem; padding: 0; list-style: none; font-size: .85rem;
+}
+body.person-edition .person-page__source-list a {
+	display: inline-flex; align-items: center; min-height: 44px; max-width: 100%;
+	color: var(--bio-muted); overflow-wrap: anywhere; text-decoration: underline;
+}
+body.person-edition .person-page__panel--filmography {
+	padding-top: 1.5rem; border-top: 1px solid var(--bio-line);
+}
+body.person-edition .person-page__section-head--filmography {
+	display: flex; justify-content: space-between; align-items: end; gap: 1rem;
+}
+body.person-edition .person-page__section-head--filmography h2 { margin-top: .4rem; }
+body.person-edition .person-page__film-count {
+	margin: 0; color: var(--bio-muted); font-size: .8rem; line-height: 1.5;
+}
+/* auto-fill keeps empty tracks: one title has exactly the same width as six. */
+body.person-edition .person-page__filmography-grid {
+	grid-template-columns: repeat(auto-fill, 180px); gap: 1.5rem 1.25rem;
+}
+body.person-edition .person-page__film-card { align-content: start; gap: .65rem; min-width: 0; }
+body.person-edition .person-page__film-poster {
+	width: 100%; aspect-ratio: 2 / 3; overflow: hidden; border-radius: 3px; background: #1b222c;
+}
+body.person-edition .person-page__film-poster img {
+	display: block; width: 100%; height: 100%; aspect-ratio: 2 / 3;
+	object-fit: contain; border: 0; border-radius: 0;
+}
+body.person-edition .person-page__film-copy { gap: .35rem; }
+body.person-edition .person-page__film-topline { display: grid; gap: .25rem; }
+body.person-edition .person-page__film-topline h3 { color: inherit; font: 500 .95rem/1.35 var(--font-sans); }
+body.person-edition .person-page__film-topline span { color: var(--bio-muted); font: 400 .8rem/1.5 var(--font-sans); }
+body.person-edition .person-page__film-tags { gap: .2rem .6rem; }
+body.person-edition .person-page__film-tag {
+	padding: 0; border-radius: 0; background: none; color: var(--bio-muted);
+	font: 400 .75rem/1.5 var(--font-sans); letter-spacing: 0; text-transform: none;
+}
+body.person-edition .person-page a:hover { color: var(--bio-accent); }
+body.person-edition .person-page a:focus-visible { outline: 2px solid var(--bio-accent); outline-offset: 4px; }
+body.person-edition :is(#biografia, #premios, #filmografia) { scroll-margin-top: 6rem; }
+@media (max-width: 1040px) {
+	body.person-edition .person-page__hero { gap: 2rem; }
+	body.person-edition .person-page__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	body.person-edition .person-page__content { grid-template-columns: minmax(0, 1fr) 290px; gap: 2rem; }
+	body.person-edition .person-page__content--no-bio { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+	body.person-edition .person-page { gap: 1.5rem; }
+	body.person-edition .person-page__hero { grid-template-columns: 120px minmax(0, 1fr); gap: 1.25rem; }
+	body.person-edition .person-page__content { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+	body.person-edition .person-page__side { padding: 1.5rem 0 0; border-left: 0; border-top: 1px solid var(--bio-line); }
+	body.person-edition .person-page__section-head--filmography { align-items: start; flex-direction: column; gap: .5rem; }
+}
+@media (max-width: 600px) {
+	body.person-edition .person-page__hero { grid-template-columns: 96px minmax(0, 1fr); gap: 1rem; }
+	body.person-edition .person-page__hero-main { display: contents; }
+	body.person-edition .person-page__portrait-copy { align-self: center; }
+	body.person-edition .person-page__title { font-size: clamp(1.6rem, 6vw, 2.2rem); line-height: 1.12; }
+	body.person-edition :is(.person-page__headline, .person-page__facts, .person-page__jump-links) { grid-column: 1 / -1; }
+	body.person-edition .person-page__headline { font-size: 1rem; }
+	body.person-edition .person-page__roles { font-size: .85rem; }
+	body.person-edition .person-page__filmography-grid { grid-template-columns: repeat(2, minmax(0, 180px)); gap: 1.25rem 1rem; }
+	body.person-edition .person-page__bio-copy p { font-size: 1rem; line-height: 1.75; }
+}
+@media (prefers-reduced-motion: reduce) {
+	body.person-edition *, body.person-edition *::before, body.person-edition *::after {
+		animation: none; transition: none; scroll-behavior: auto;
+	}
+}

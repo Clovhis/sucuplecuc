@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import antMan from '../../src/data/movies/ant-man-2015.json' with { type: 'json' };
 
 test('movie edition has a readable layout at phone, tablet and desktop widths', async ({ page }) => {
 	for (const width of [320, 390, 768, 1024, 1440]) {
@@ -114,7 +115,7 @@ test('long titles, post-credit information and reduced motion retain their conte
 	expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 	await page.goto('/peliculas/ant-man-2015/', { waitUntil: 'load' });
 	await expect(page.getByRole('region', { name: 'Escenas post-créditos', exact: true })).toBeVisible();
-	await expect(page.locator('.movie-detail__meta .badge')).toContainText('9');
+	await expect(page.locator('.movie-detail__meta .badge')).toContainText(`${antMan.cinepostaScore} ·`);
 	await page.locator('[data-trailer-player]').scrollIntoViewIfNeeded();
 	await expect(page.locator('[data-trailer-player] iframe')).toHaveCount(0);
 });

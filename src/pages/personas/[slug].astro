@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import AwardMark from '../../components/AwardMark.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/person-detail.css';
 import { getAwardDisplayLabel, getAwardVisualKey } from '../../lib/awards';
 import {
 	getPersonEditorialStatus,
@@ -116,37 +117,29 @@ function getSourceLabel(url: string): string {
 ---
 
 <BaseLayout
-	title={pageTitle}
+	bodyClass="person-edition"	title={pageTitle}
 	description={pageDescription}
 	image={profileImage}
-	openGraphType="article"
-	structuredData={structuredData}
+	openGraphType="article"	structuredData={structuredData}
 	noindex={!isIndexable}
 >
 	<main id="main-content" class="container person-page" data-person-editorial-status={editorialStatus}>
 		<div class="page-actions">
-			<a class="page-action page-action--history" href={import.meta.env.BASE_URL} data-history-back>
-				Volver
-			</a>
+			<a class="page-action page-action--history" href={import.meta.env.BASE_URL} data-history-back>Volver</a>
 			<a class="page-action page-action--home" href={PEOPLE_PATH}>Ver todas las fichas</a>
 		</div>
 
-		<section class="person-page__hero fade-up" style="--item-delay: 0ms;">
-			<aside class="person-page__portrait-card">
-				<div class="person-page__portrait-shell">
-					<img src={profileImage} alt={`Retrato de ${profile.name}`} loading="eager" referrerpolicy="no-referrer" />
-				</div>
+		<header class="person-page__hero">
+			<div class="person-page__portrait-shell">
+				<img src={profileImage} alt={`Retrato de ${profile.name}`} width="400" height="500" loading="eager" decoding="async" referrerpolicy="no-referrer" />
+			</div>
+			<div class="person-page__hero-main">
 				<div class="person-page__portrait-copy">
-					<p class="person-page__eyebrow">Ficha posta</p>
+					<p class="person-page__eyebrow">Personas del cine</p>
 					<h1 class="person-page__title">{profile.name}</h1>
 					<p class="person-page__roles">{profile.roles.join(' · ')}</p>
 				</div>
-			</aside>
-
-			<div class="person-page__hero-main">
-				<p class="person-page__eyebrow">Para ubicarlo rápido</p>
 				<p class="person-page__headline">{profile.headline}</p>
-
 				<div class="person-page__facts" aria-label="Datos principales">
 					{birthLabel !== undefined && (
 						<div class="person-page__fact">
@@ -165,107 +158,116 @@ function getSourceLabel(url: string): string {
 						<strong>{profile.birthPlace ?? profile.nationalityPrimary ?? 'No cargado'}</strong>
 					</div>
 					<div class="person-page__fact">
-						<span class="person-page__fact-label">Catálogo</span>
+						<span class="person-page__fact-label">En Cine Posta</span>
 						<strong>{filmCountLabel}</strong>
 					</div>
 				</div>
+				<nav class="person-page__jump-links" aria-label="Secciones de la biografía">
+					{biographyParagraphs.length > 0 && <a href="#biografia">Biografía</a>}
+					{filmography.length > 0 && <a href="#filmografia">Filmografía <span>{filmography.length}</span></a>}
+					{profile.awards.length > 0 && <a href="#premios">Premios</a>}
+				</nav>
 			</div>
+		</header>
 
-			<aside class="person-page__showcase" aria-label="Títulos destacados">
-				<p class="person-page__showcase-title">Lo tenés de</p>
-				<div class="person-page__showcase-grid">
-					{showcaseEntries.map((entry) => (
-						<a class="person-page__showcase-card" href={entry.url}>
-							<img src={entry.poster} alt={`Poster de ${entry.title}`} loading="lazy" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={entry.title} data-poster-search-year={entry.year} />
-							<span>{entry.title}</span>
-						</a>
-					))}
-				</div>
-			</aside>
-		</section>
-
-		<section class="person-page__content">
-			<article class="person-page__panel fade-up" style="--item-delay: 80ms;">
-				<div class="person-page__section-head">
-					<h2>{isIndexable ? `Biografía de ${profile.name}` : 'Biografía de ' + profile.name}</h2>
-				</div>
-				{biographyParagraphs.length > 0 && (
-					<div class="person-page__bio-copy">
-						{biographyParagraphs.map((paragraph) => (
-							<p>{paragraph}</p>
-						))}
+		<div class:list={['person-page__content', { 'person-page__content--no-bio': biographyParagraphs.length === 0 }]}>
+			<div class="person-page__reading">
+			{biographyParagraphs.length > 0 && (
+				<article class="person-page__panel" id="biografia" aria-labelledby="biography-title">
+					<div class="person-page__section-head">
+						<p class="person-page__eyebrow">Trayectoria</p>
+						<h2 id="biography-title">Biografía de {profile.name}</h2>
 					</div>
-				)}
-			</article>
+					<div class="person-page__bio-copy">
+						{biographyParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+					</div>
+				</article>
+			)}
 
-			<aside class="person-page__panel person-page__panel--awards fade-up" style="--item-delay: 120ms;">
-				<div class="person-page__section-head">
-					<p class="person-page__eyebrow">Galardones</p>
-					<h2>Premios que más pesan</h2>
-				</div>
-				<ul class="person-page__award-list">
-					{profile.awards.map((award) => (
-						<li class="person-page__award-item" data-award={getAwardVisualKey(award.label, award.category)}>
-							<span class="person-page__award-mark-shell" aria-hidden="true">
-								<AwardMark award={award.label} category={award.category} class="person-page__award-mark" size={128} />
-							</span>
-							<div class="person-page__award-copy">
-								<div class="person-page__award-head">
-									<p class="person-page__award-label">{getAwardDisplayLabel(award.label, award.category)}</p>
-								</div>
-								<p class="person-page__award-category">{award.category}</p>
-								{award.work && <p class="person-page__award-work">{award.work}</p>}
-							</div>
-							{award.year && <span class="person-page__award-year">{award.year}</span>}
-						</li>
-					))}
-				</ul>
-			</aside>
-
-			<section class="person-page__panel person-page__panel--filmography fade-up" style="--item-delay: 160ms;">
-				<div class="person-page__section-head">
-					<p class="person-page__eyebrow">Filmografía</p>
-					<h2>Películas donde aparece en Cine Posta</h2>
+		{filmography.length > 0 && (
+			<section class="person-page__panel person-page__panel--filmography" id="filmografia" aria-labelledby="filmography-title">
+				<div class="person-page__section-head person-page__section-head--filmography">
+					<div>
+						<p class="person-page__eyebrow">Filmografía</p>
+						<h2 id="filmography-title">Sus películas en Cine Posta</h2>
+					</div>
+					<p class="person-page__film-count">{filmography.length} {filmography.length === 1 ? 'película' : 'películas'} · Más recientes primero</p>
 				</div>
 				<div class="person-page__filmography-grid">
 					{filmography.map((entry) => (
 						<a class="person-page__film-card" href={entry.url}>
 							<div class="person-page__film-poster">
-								<img src={entry.poster} alt={`Poster de ${entry.title}`} loading="lazy" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={entry.title} data-poster-search-year={entry.year} />
+								<img src={entry.poster} alt={`Poster de ${entry.title}`} width="320" height="480" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={entry.title} data-poster-search-year={entry.year} />
 							</div>
 							<div class="person-page__film-copy">
-								<div class="person-page__film-topline">
-									<h3>{entry.title}</h3>
-									<span>{entry.year}</span>
-								</div>
+								<div class="person-page__film-topline"><h3>{entry.title}</h3><span>{entry.year}</span></div>
 								<div class="person-page__film-tags" aria-label="Rol en la película">
-									{entry.roles.map((role) => (
-										<span class="person-page__film-tag">{getRoleLabel(role)}</span>
-									))}
+									{entry.roles.map((role) => <span class="person-page__film-tag">{getRoleLabel(role)}</span>)}
 								</div>
 							</div>
 						</a>
 					))}
 				</div>
 			</section>
+		)}
+			</div>
 
-			{
-				visibleSources.length > 0 && (
-					<section class="person-page__panel person-page__panel--sources fade-up" style="--item-delay: 180ms;">
+			<aside class="person-page__side" aria-label={`Más sobre ${profile.name}`}>
+				{showcaseEntries.length > 0 && (
+					<section class="person-page__showcase" aria-labelledby="showcase-title">
 						<div class="person-page__section-head">
-							<p class="person-page__eyebrow">Referencias</p>
-							<h2>Fuentes consultables</h2>
+							<p class="person-page__eyebrow">Para empezar</p>
+							<h2 id="showcase-title">Títulos destacados</h2>
 						</div>
-						<ul class="person-page__source-list">
-							{visibleSources.map((url) => (
-								<li><a href={url} target="_blank" rel="noopener noreferrer">{getSourceLabel(url)}</a></li>
+						<div class="person-page__showcase-grid">
+							{showcaseEntries.map((entry) => (
+								<a class="person-page__showcase-card" href={entry.url}>
+									<img src={entry.poster} alt="" width="48" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-cineposta-poster data-poster-search-title={entry.title} data-poster-search-year={entry.year} />
+									<div><span>{entry.title}</span><small>{entry.year} · {entry.roles.map(getRoleLabel).join(' · ')}</small></div>
+								</a>
+							))}
+						</div>
+					</section>
+				)}
+
+				{profile.awards.length > 0 && (
+					<section class="person-page__panel person-page__panel--awards" id="premios" aria-labelledby="awards-title">
+						<div class="person-page__section-head">
+							<p class="person-page__eyebrow">Galardones</p>
+							<h2 id="awards-title">Premios que más pesan</h2>
+						</div>
+						<ul class="person-page__award-list">
+							{profile.awards.map((award) => (
+								<li class="person-page__award-item" data-award={getAwardVisualKey(award.label, award.category)}>
+									<span class="person-page__award-mark-shell" aria-hidden="true">
+										<AwardMark award={award.label} category={award.category} class="person-page__award-mark" size={128} />
+									</span>
+									<div class="person-page__award-copy">
+										<p class="person-page__award-label">{getAwardDisplayLabel(award.label, award.category)}</p>
+										<p class="person-page__award-category">{award.category}</p>
+										{award.work && <p class="person-page__award-work">{award.work}</p>}
+										{award.year && <span class="person-page__award-year">{award.year}</span>}
+									</div>
+								</li>
 							))}
 						</ul>
 					</section>
-				)
-			}
+				)}
 
-		</section>
+				{visibleSources.length > 0 && (
+					<section class="person-page__panel person-page__panel--sources" aria-labelledby="sources-title">
+						<div class="person-page__section-head">
+							<p class="person-page__eyebrow">Referencias</p>
+							<h2 id="sources-title">Fuentes consultables</h2>
+						</div>
+						<ul class="person-page__source-list">
+							{visibleSources.map((url) => <li><a href={url} target="_blank" rel="noopener noreferrer">{getSourceLabel(url)}</a></li>)}
+						</ul>
+					</section>
+				)}
+			</aside>
+		</div>
+
 	</main>
 </BaseLayout>
 
