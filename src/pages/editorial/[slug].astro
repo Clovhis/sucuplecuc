@@ -23,7 +23,15 @@ const structuredData = [{ '@context': 'https://schema.org', '@type': 'Article', 
         if (block.type === 'bioLink') return <p class="editorial-body__bio"><a href={getPersonPath(block.slug)}>{block.label} →</a></p>;
         return <EditorialImage image={block} />;
       })}</div>
-      <footer><ul aria-label="Temas">{entry.tags.map((tag) => <li>{tag}</li>)}</ul>{movie && <aside class="movie-link"><span>La película en CinePosta</span><a href={getMoviePath(movie.slug)}>Ver ficha de {movie.title} →</a></aside>}<a class="back" href={`${import.meta.env.BASE_URL}editorial/`}>Volver a Editorial CinePosta →</a></footer>
+      <footer>
+        <ul aria-label="Temas">{entry.tags.map((tag) => <li>{tag}</li>)}</ul>
+        {entry.sources && entry.sources.length > 0 && <aside class="movie-link" aria-label="Fuentes consultadas">
+          <span>Fuentes consultadas</span>
+          {entry.sources.map((source) => <a href={source.url} rel="noopener noreferrer">{source.label} →</a>)}
+        </aside>}
+        {movie && <aside class="movie-link"><span>La película en CinePosta</span><a href={getMoviePath(movie.slug)}>Ver ficha de {movie.title} →</a></aside>}
+        <a class="back" href={`${import.meta.env.BASE_URL}editorial/`}>Volver a Editorial CinePosta →</a>
+      </footer>
     </article>
   </main>
 </BaseLayout>

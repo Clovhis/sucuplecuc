@@ -37,6 +37,10 @@ const schema = z.object({
   tags: z.array(z.string().trim().min(1)),
   featured: z.boolean(),
   spoilers: z.boolean().default(false),
+  sources: z.array(z.object({
+    label: z.string().trim().min(1),
+    url: z.url().refine((url) => url.startsWith('https://')),
+  })).optional(),
   cover: imageSchema,
   content: z.array(z.discriminatedUnion('type', [
     z.object({ type: z.literal('paragraph'), text: z.string().trim().min(1) }),

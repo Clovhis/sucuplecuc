@@ -5,6 +5,8 @@ import miasma from '../../src/data/editorials/campamento-miasma-si-venis-por-jas
 import colony from '../../src/data/editorials/colony-zona-cero-me-gusto-pero-no-me-volo-la-peluca.json' with { type: 'json' };
 import cancelados from '../../src/data/editorials/cancelados-por-hollywood-estrellas-cima-exilio.json' with { type: 'json' };
 import insaciable from '../../src/data/editorials/insaciable-body-horror-en-modo-facil.json' with { type: 'json' };
+import offni from '../../src/data/editorials/offni-cine-fest-2026-cine-fantastico-gratis-en-caba.json' with { type: 'json' };
+import estrella from '../../src/data/editorials/la-estrella-que-perdi-premios-antares-2026-mirta-busnelli.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -19,6 +21,54 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
   await link.click();
   await expect(page).toHaveURL(/\/editorial\/$/);
+}
+
+for (const entry of [offni, estrella]) {
+  test(`${entry.slug}: news sources, SEO and responsive images remain available from home and archive`, async ({ page }, testInfo) => {
+    const errors: string[] = [];
+    page.on('pageerror', error => errors.push(error.message));
+    const path = `/editorial/${entry.slug}/`;
+    const minutes = Math.ceil(entry.content.flatMap(block => block.type === 'paragraph' && block.text ? block.text.split(/\s+/u) : []).length / 220);
+    await page.goto('/');
+    const card = page.getByRole('region', { name: 'Desde CinePosta' }).locator('.editorial-card').filter({ hasText: entry.title });
+    await expect(card).toBeVisible();
+    await card.getByRole('link').click();
+    await expect(page).toHaveURL(path);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(entry.title);
+    await expect(page.locator('time')).toHaveAttribute('datetime', entry.date);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://www.cineposta.com.ar${path}`);
+    await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', entry.excerpt);
+    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', `https://www.cineposta.com.ar/${entry.cover.src}`);
+    const schema = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent())!);
+    expect(schema).toMatchObject({ '@type': 'Article', headline: entry.title, datePublished: entry.date, articleSection: 'nota', timeRequired: `PT${minutes}M` });
+    const sources = page.getByRole('complementary', { name: 'Fuentes consultadas' });
+    await expect(sources.getByRole('link')).toHaveCount(entry.sources.length);
+    for (const source of entry.sources) {
+      await expect(sources.getByRole('link', { name: source.label })).toHaveAttribute('href', source.url);
+    }
+    for (const figure of await page.locator('.editorial-body figure').all()) {
+      await figure.scrollIntoViewIfNeeded();
+      const image = figure.locator('img');
+      await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0)).toBe(true);
+      await expect(image).toHaveAttribute('srcset', /640w/);
+      await expect(figure.getByRole('link', { name: 'Fuente de la imagen' })).toHaveAttribute('href', /^https:\/\//);
+      expect(await image.evaluate((node: HTMLImageElement) => Math.abs(node.width / node.height - node.naturalWidth / node.naturalHeight))).toBeLessThan(.03);
+    }
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.screenshot({ path: testInfo.outputPath('news-viewport.png'), scale: 'css' });
+    await page.screenshot({ path: testInfo.outputPath('news-full.png'), fullPage: true, scale: 'css' });
+    await page.setViewportSize({ width: 320, height: 760 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+    await page.screenshot({ path: testInfo.outputPath('news-320-viewport.png'), scale: 'css' });
+    await page.screenshot({ path: testInfo.outputPath('news-320-full.png'), fullPage: true, scale: 'css' });
+    await page.getByRole('link', { name: 'Volver a Editorial CinePosta' }).click();
+    await expect(page).toHaveURL('/editorial/');
+    const archived = page.locator('.editorial-card').filter({ hasText: entry.title });
+    await expect(archived.getByText(`${minutes} min de lectura`)).toBeVisible();
+    await archived.getByRole('link').click();
+    await expect(page).toHaveURL(path);
+    expect(errors).toEqual([]);
+  });
 }
 
 test('story cards navigate by keyboard, fit narrow screens and link to the complete archive in date order', async ({ page }, testInfo) => {
