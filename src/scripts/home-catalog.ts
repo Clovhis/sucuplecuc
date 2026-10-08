@@ -426,11 +426,13 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 			title.className = 'home-people-showcase__name';
 			title.textContent = entry.title;
 
-			const nationality = document.createElement('span');
-			nationality.className = 'home-people-showcase__nationality';
-			nationality.textContent = entry.nationalityLabel || 'Nacionalidad no disponible';
-
-			body.append(title, nationality);
+			body.append(title);
+			if (entry.nationalityLabel.trim()) {
+				const nationality = document.createElement('span');
+				nationality.className = 'home-people-showcase__nationality';
+				nationality.textContent = entry.nationalityLabel;
+				body.append(nationality);
+			}
 			if (entry.ageLabel) {
 				const meta = document.createElement('span');
 				meta.className = 'home-people-showcase__meta';

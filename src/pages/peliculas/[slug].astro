@@ -844,9 +844,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																	<span class="movie-detail__person-flag">Tiene ficha</span>
 																</p>
 															)}
-															<p class="movie-detail__person-origin">
-																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
-															</p>
+															{person.nationalityPrimary?.trim() && (
+																<p class="movie-detail__person-origin">{person.nationalityPrimary}</p>
+															)}
 															{(getBirthSummary(person) || getDeathSummary(person)) && (
 																<p class="movie-detail__person-meta">
 																	{getBirthSummary(person) ? (
@@ -936,9 +936,9 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 																	<span class="movie-detail__person-flag">Tiene ficha</span>
 																</p>
 															)}
-															<p class="movie-detail__person-origin">
-																{person.nationalityPrimary ?? 'Nacionalidad no disponible'}
-															</p>
+															{person.nationalityPrimary?.trim() && (
+																<p class="movie-detail__person-origin">{person.nationalityPrimary}</p>
+															)}
 															{(getBirthSummary(person) || getDeathSummary(person)) && (
 																<p class="movie-detail__person-meta">
 																	{getBirthSummary(person) ? (

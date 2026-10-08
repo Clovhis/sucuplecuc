@@ -13,7 +13,7 @@ const peopleEntries = getPersonProfiles()
 		const normalizedRoles = profile.roles
 			.map((role) => normalizeSearchText(role).replace(/\s+/g, ' '))
 			.filter(Boolean);
-		const nationalityLabel = profile.nationalityPrimary?.trim() ?? 'No disponible';
+		const nationalityLabel = profile.nationalityPrimary?.trim() ?? '';
 		const nationalityFilter = normalizeSearchText(nationalityLabel).replace(/\s+/g, ' ');
 		const searchableText = normalizeSearchText(
 			[
@@ -65,7 +65,7 @@ const roleOptions = Array.from(
 const nationalityOptions = Array.from(
 	new Map(
 		peopleEntries
-			.filter((entry) => entry.nationalityLabel !== 'No disponible')
+			.filter((entry) => entry.nationalityLabel)
 			.map((entry) => [entry.nationalityFilter, entry.nationalityLabel] as const),
 	).entries(),
 )
@@ -319,10 +319,12 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 											{entry.filmCount} peli{entry.filmCount === 1 ? '' : 's'}
 										</dd>
 									</div>
-									<div class="people-index__fact">
-										<dt>Origen</dt>
-										<dd>{entry.profile.nationalityPrimary ?? 'No disponible'}</dd>
-									</div>
+									{entry.profile.nationalityPrimary?.trim() && (
+										<div class="people-index__fact">
+											<dt>Origen</dt>
+											<dd>{entry.profile.nationalityPrimary}</dd>
+										</div>
+									)}
 								</dl>
 								<span class="people-index__open-profile">Abrir ficha <span aria-hidden="true">→</span></span>
 							</a>

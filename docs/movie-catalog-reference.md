@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-02. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-08. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2253
+Total de peliculas: 2254
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -593,6 +593,7 @@ Total de peliculas: 2253
 | 2022 | Pearl | pearl-2022 | Terror | Otras plataformas | +13 |
 | 2022 | Pinocho | pinocho-2022 | Fantasia | Disney Plus | ATP |
 | 2022 | Pinocho de Guillermo del Toro | pinocho-de-guillermo-del-toro-2022 | Animacion | Netflix | +13 |
+| 2022 | Recuerdos del mal | recuerdos-del-mal-2022 | Terror | Prime Video | +13 |
 | 2022 | Red | red-2022 | Animacion | Disney Plus | ATP |
 | 2022 | Saint Omer, el pueblo contra Laurence Coly | saint-omer-el-pueblo-contra-laurence-coly-2022 | Drama | Otras plataformas | +16 |
 | 2022 | Scream | scream-2022 | Terror | Paramount Plus | +16 |

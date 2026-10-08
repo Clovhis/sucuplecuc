@@ -98,7 +98,10 @@ test('serializa la edad verificada en el buscador de la home', async ({ page }) 
 	);
 
 	expect(showcaseOrder[0]).toBe('home-people-showcase__name');
-	expect(showcaseOrder[1]).toBe('home-people-showcase__nationality');
+	const personName = await personShowcaseCard.locator('.home-people-showcase__name').textContent();
+	const sourceNationality = await page.locator(`[data-person-search-entry][data-person-title="${personName}"]`)
+		.getAttribute('data-person-nationality');
+	expect(await personShowcaseCard.locator('.home-people-showcase__nationality').count()).toBe(sourceNationality ? 1 : 0);
 	expect(showcaseOrder.length).toBeLessThanOrEqual(3);
-	expect(showcaseOrder.slice(2).every((className) => className === 'home-people-showcase__meta')).toBe(true);
+	expect(showcaseOrder.slice(1).every((className) => ['home-people-showcase__nationality', 'home-people-showcase__meta'].includes(className))).toBe(true);
 });

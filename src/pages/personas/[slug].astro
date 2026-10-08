@@ -50,6 +50,7 @@ const lifeFactValue = deathDateLabel
 		: undefined;
 const filmCountLabel = `${filmography.length} peli${filmography.length === 1 ? '' : 's'} fichada${filmography.length === 1 ? '' : 's'} en Cine Posta`;
 const biographyParagraphs = profile.editorialBiography ?? [];
+const originLabel = profile.birthPlace?.trim() || profile.nationalityPrimary?.trim();
 const visibleSources = Array.from(new Set(profile.referenceUrls ?? []));
 
 function getAge(birthDate?: string, deathDate?: string, deathYear?: number): number | undefined {
@@ -153,10 +154,12 @@ function getSourceLabel(url: string): string {
 							<strong>{lifeFactValue}</strong>
 						</div>
 					)}
-					<div class="person-page__fact">
-						<span class="person-page__fact-label">Origen</span>
-						<strong>{profile.birthPlace ?? profile.nationalityPrimary ?? 'No cargado'}</strong>
-					</div>
+					{originLabel && (
+						<div class="person-page__fact">
+							<span class="person-page__fact-label">Origen</span>
+							<strong>{originLabel}</strong>
+						</div>
+					)}
 					<div class="person-page__fact">
 						<span class="person-page__fact-label">En Cine Posta</span>
 						<strong>{filmCountLabel}</strong>

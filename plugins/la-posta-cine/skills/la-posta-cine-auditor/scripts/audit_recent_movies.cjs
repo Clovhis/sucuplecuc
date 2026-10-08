@@ -130,10 +130,10 @@ const DISALLOWED_REACTION_FIELDS = [
 	'teamReactionImage',
 ];
 function getReactionForCinePostaScore(score) {
-	if (score >= 7) return { label: 'Mirala', kind: 'up' };
-	if (score >= 5) return { label: 'Zafa', kind: 'meh' };
-	if (score >= 2) return { label: 'Mejor pasá', kind: 'down' };
-	return { label: 'Ni te gastes', kind: 'down' };
+	return {
+		label: `${score} · ${CINEPOSTA_SCORE_LABELS[score - 1]}`,
+		kind: score >= 7 ? 'up' : score === 6 ? 'pass' : score === 5 ? 'meh' : 'down',
+	};
 }
 const TRUSTED_PERSON_IMAGE_HOSTS = new Set([
 	'commons.wikimedia.org',

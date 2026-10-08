@@ -291,7 +291,7 @@ export function getPersonSearchEntries(): PersonSearchEntry[] {
 			posterUrl,
 			meta: `Perfil · ${profile.roles.join(' · ')}`,
 			ageLabel: getPersonAgeLabel(profile),
-			nationalityLabel: profile.nationalityPrimary ?? 'Nacionalidad no disponible',
+			nationalityLabel: profile.nationalityPrimary?.trim() ?? '',
 			knownFor,
 			searchableText: normalizeSearchText(
 				[
