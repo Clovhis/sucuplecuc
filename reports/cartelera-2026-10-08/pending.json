@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-08",
+  "candidates": [
+    {
+      "title": "Abeja",
+      "year": 2025,
+      "blocker": "score",
+      "detail": "No se encontró una nota numérica publicable tras audiencia pública/Watchmode y crítica explícita. Metadatos y medios restantes no se consideran aprobados.",
+      "source": "https://agendadecine.com/pelicula/abeja",
+      "screening": "Renzi La Banda 8, 10 y 11/10 a las 20:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Todo va mal",
+      "year": 2026,
+      "blocker": "score",
+      "detail": "IMDb tt45257108 respondió con desafío/HTTP 202; TMDb 1744553 y Letterboxd sin audiencia numérica; Watchmode 11231020 devuelve ratings null. No se recuperó crítica con nota explícita.",
+      "source": "https://cineclubmunicipal.org.ar/production/todo-va-mal/",
+      "screening": "Cineclub Municipal Córdoba, semana 8–14/10.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Crotos libres",
+      "year": 2025,
+      "blocker": "score, créditos y retratos",
+      "detail": "Sin puntuación verificable recuperada; Pedro aparece sólo por nombre y no se verificaron dos participantes principales con crédito de nombre y apellido y retratos.",
+      "source": "https://www.pagina12.com.ar/861314-la-filosofia-del-ocio-creador/",
+      "screening": "Gaumont 9/10 a las 20:00. Año 2025 por programa FICPBA; duración pendiente de resolver.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Rocambole en el camino",
+      "year": null,
+      "blocker": "créditos y retratos, año",
+      "detail": "Crítico Maximiliano Curcio 8/10 recuperado; sin audiencia agregada inequívoca. Rocambole figura como monónimo y Oscar Jalil es el único intérprete con crédito de nombre y apellido: no alcanza el mínimo. Retratos de directores y año original siguen pendientes.",
+      "source": "https://cinefreaks.net/2026/06/23/rocambole-en-el-camino-imaginario-colectivo/",
+      "screening": "Gaumont 10/10 a las 20:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Soy ella",
+      "year": 2026,
+      "blocker": "créditos y retratos",
+      "detail": "Hay crítica explícita 7/10, pero sólo Milena Kalo Navun tiene identidad principal de nombre y apellido; falta verificar un segundo participante principal y retratos. WIP 2025 no prueba estreno original 2025. Watchmode por título y TMDb 1742608 no devuelve coincidencia inequívoca.",
+      "source": "https://www.escribiendocine.com/noticias/2026/09/25/25468-critica-de-soy-ella-la-delicada-mirada-de-cecilia-pinotti-sobre-la-kalo",
+      "screening": "Gaumont 14/10 a las 20:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Una chica en la estación",
+      "year": 2026,
+      "blocker": "score y gates de personas",
+      "detail": "IMDb tt35920351/TMDb 1661955 sin nota numérica recuperada; Watchmode 11119861 con ratings null. Los demás gates de carga siguen abiertos.",
+      "source": "https://www.escribiendocine.com/noticias/2026/10/07/25776-festival-de-cine-inusual-de-buenos-aires-2026-peliculas-sedes-y-programacion-de-la-21-edicion/",
+      "screening": "Gaumont 8/10 a las 22:00; Cristian Bidone, no el error BiAdone de la programación.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "La película que quisieras ver",
+      "year": 2026,
+      "blocker": "score y gates de personas",
+      "detail": "Sin rating inequívoco recuperado en el barrido de audiencia/Watchmode; gates de medios/personas aún abiertos. Director acreditado Esteban Pablo Pérez Ghersi.",
+      "source": "https://www.escribiendocine.com/noticias/2026/10/07/25776-festival-de-cine-inusual-de-buenos-aires-2026-peliculas-sedes-y-programacion-de-la-21-edicion/",
+      "screening": "Gaumont 9/10 a las 22:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Camino de brujas",
+      "year": 2026,
+      "blocker": "score y gates de personas",
+      "detail": "No se recuperó rating numérico inequívoco en audiencia pública/Watchmode; no se consideran aprobados los medios ni las personas. Director Rodrigo Cardozo.",
+      "source": "https://www.escribiendocine.com/noticias/2026/10/07/25776-festival-de-cine-inusual-de-buenos-aires-2026-peliculas-sedes-y-programacion-de-la-21-edicion/",
+      "screening": "Gaumont 10/10 a las 22:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "El silencio de Marilyn",
+      "year": 2026,
+      "blocker": "score y gates de personas",
+      "detail": "Sin nota numérica inequívoca recuperada tras el barrido público y Watchmode. Director Edgardo Gabo; demás gates abiertos.",
+      "source": "https://www.escribiendocine.com/noticias/2026/10/07/25776-festival-de-cine-inusual-de-buenos-aires-2026-peliculas-sedes-y-programacion-de-la-21-edicion/",
+      "screening": "Gaumont 13/10 a las 22:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Yo soy Hermes",
+      "year": 2023,
+      "blocker": "score y gates de personas",
+      "detail": "No se recuperó rating inequívoco; Watchmode también se consultó con año original 2023 sin coincidencia. No se confunde la función de festival 2026 con el año original. Director Gonzalo Albornoz.",
+      "source": "https://www.escribiendocine.com/noticias/2026/10/07/25776-festival-de-cine-inusual-de-buenos-aires-2026-peliculas-sedes-y-programacion-de-la-21-edicion/",
+      "screening": "Gaumont 14/10 a las 22:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    },
+    {
+      "title": "Bárbara",
+      "year": 2026,
+      "blocker": "identidad",
+      "detail": "Gaumont atribuye Andrés Andreani; el programa de Cine Inusual acredita Tomás Emanuel Brunella. No se cargó el homónimo de 2011 ni se consultó su rating como si fuera este film.",
+      "source": "https://www.escribiendocine.com/noticias/2026/10/07/25776-festival-de-cine-inusual-de-buenos-aires-2026-peliculas-sedes-y-programacion-de-la-21-edicion/",
+      "screening": "Gaumont 11/10 a las 22:00.",
+      "status": "pending",
+      "audienceSequence": "RT → IMDb/TMDb/Letterboxd/Filmweb/Metacritic → Watchmode cuando identidad/año inequívocos; después crítica numérica explícita. La ausencia de acceso no se considera una nota cero."
+    }
+  ],
+  "otherCoverageLimits": [
+    "No se garantiza un censo de cada cineclub/sala del país. Diarios de un viajero y La virgen de la Tosquera fueron identificados en NAVE como programación anterior/repertorio; no completaron una nueva auditoría de alta en esta tanda.",
+    "Blue Lock: no se verificó identidad de largometraje/estreno AR actual; no se cargó una serie o Episode Nagi 2024 como nueva película de 2026.",
+    "Preventas de Dune/Doomsday/Street Fighter y eventos Queen/Lalisa se separaron del barrido de largometrajes comerciales vigentes. Lalisa no tiene dos protagonistas acreditados de nombre y apellido verificables en esta revisión."
+  ]
+}

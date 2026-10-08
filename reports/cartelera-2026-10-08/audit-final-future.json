@@ -1,0 +1,65 @@
+{
+  "baseRef": "main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/annemarie-2026.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/annemarie-2026.json",
+        "poster": "assets/posters/2026/annemarie-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 24232 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 24232,
+        "format": "webp",
+        "width": 480,
+        "height": 640
+      }
+    ],
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "warnings": 1,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "ok",
+    "message": "review audit passed for 1 file(s)"
+  },
+  "findings": [
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" uses an uncommon portrait host (\"bafici.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "poster is valid at 24232 bytes; preferred range is 40960-81920 bytes. (480x640)"
+    }
+  ]
+}

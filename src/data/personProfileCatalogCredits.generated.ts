@@ -239,6 +239,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "alicia-vikander": [
     "el-mago-de-kremlin-2026",
+    "hope-el-primer-impacto-2026",
     "el-caballero-verde-2021",
     "ex-machina-2014"
   ],
@@ -1488,6 +1489,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-terminal-2004"
   ],
   "diego-peretti": [
+    "lo-dejamos-aca-2026",
+    "la-casa-2025",
     "risa-y-la-cabina-del-viento-2025",
     "el-robo-del-siglo-2020",
     "tiempo-de-valientes-2005"
@@ -2029,6 +2032,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003"
   ],
   "graciela-borges": [
+    "annemarie-2026",
     "risa-y-la-cabina-del-viento-2025",
     "el-cuento-de-las-comadrejas-2019",
     "la-cienaga-2001",
@@ -2244,6 +2248,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "12-angry-men-1957"
   ],
   "hernan-goldfrid": [
+    "lo-dejamos-aca-2026",
     "tesis-sobre-un-homicidio-2013"
   ],
   "holly-hunter": [
@@ -2335,6 +2340,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "un-cuento-chino-2011"
   ],
   "ines-efron": [
+    "lo-dejamos-aca-2026",
     "medianeras-2011"
   ],
   "ines-estevez": [
@@ -2667,6 +2673,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "fantastic-four-2005"
   ],
   "jessica-chastain": [
+    "madre-siniestra-2026",
     "dark-phoenix-2019",
     "it-chapter-two-2019",
     "mision-rescate-2015",
@@ -3618,6 +3625,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "bridge-of-spies-2015"
   ],
   "mark-wahlberg": [
+    "a-cualquier-precio-2026",
     "uncharted-2022",
     "dolor-y-dinero-2013",
     "el-unico-superviviente-2013",
@@ -3919,6 +3927,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "wall-street-1987"
   ],
   "michael-fassbender": [
+    "hope-el-primer-impacto-2026",
     "black-bag-2025",
     "the-killer-2023",
     "dark-phoenix-2019",
@@ -4534,6 +4543,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "como-conquistar-hollywood-1995"
   ],
   "ricardo-darin": [
+    "lo-dejamos-aca-2026",
     "argentina-1985-2022",
     "la-odisea-de-los-giles-2019",
     "la-cordillera-2017",

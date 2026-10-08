@@ -1,0 +1,37 @@
+
+Running 16 tests using 1 worker
+
+(node:31988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine (4.2s)
+  ok  2 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:42:1 › current cinema releases open their trailer in a dialog on demand (1.2s)
+  ok  3 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:70:1 › current streaming releases retain their platform and open their own trailer dialog (1.7s)
+  ok  4 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:89:1 › streaming keeps recent catalog uploads even when their original release is older (595ms)
+(node:16172) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16172) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 [desktop-webkit] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine (2.0s)
+  ok  6 [desktop-webkit] › tests\e2e\cinema-release-carousel.spec.ts:42:1 › current cinema releases open their trailer in a dialog on demand (3.0s)
+  ok  7 [desktop-webkit] › tests\e2e\cinema-release-carousel.spec.ts:70:1 › current streaming releases retain their platform and open their own trailer dialog (8.2s)
+  ok  8 [desktop-webkit] › tests\e2e\cinema-release-carousel.spec.ts:89:1 › streaming keeps recent catalog uploads even when their original release is older (939ms)
+(node:3536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [mobile-chromium] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine (1.4s)
+  ok 10 [mobile-chromium] › tests\e2e\cinema-release-carousel.spec.ts:42:1 › current cinema releases open their trailer in a dialog on demand (1.6s)
+  ok 11 [mobile-chromium] › tests\e2e\cinema-release-carousel.spec.ts:70:1 › current streaming releases retain their platform and open their own trailer dialog (1.7s)
+  ok 12 [mobile-chromium] › tests\e2e\cinema-release-carousel.spec.ts:89:1 › streaming keeps recent catalog uploads even when their original release is older (564ms)
+(node:6188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 13 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine (1.9s)
+  ok 14 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:42:1 › current cinema releases open their trailer in a dialog on demand (2.5s)
+  ok 15 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:70:1 › current streaming releases retain their platform and open their own trailer dialog (7.8s)
+  ok 16 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:89:1 › streaming keeps recent catalog uploads even when their original release is older (746ms)
+
+  16 passed (42.4s)

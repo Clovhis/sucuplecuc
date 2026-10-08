@@ -36,16 +36,7 @@ test('Cartelera renders every current catalog film marked Cine', async ({ page }
 
 	expect(displayedSlugs).toEqual(getCurrentTheatricalMovieSlugs());
 	expect(displayedSlugs.length).toBeGreaterThan(12);
-	for (const slug of [
-		'resident-evil-noche-cero-2026',
-		'el-final-de-la-calle-oak-2026',
-		'hospital-britanico-2026',
-		'los-calvos-2024',
-		'avengers-endgame-2019',
-		'toy-story-5-2026',
-	]) {
-		expect(displayedSlugs).toContain(slug);
-	}
+	await expect(carousel.locator('.cinema-release-carousel__review-link')).toHaveCount(displayedSlugs.length);
 });
 
 test('current cinema releases open their trailer in a dialog on demand', async ({ page }) => {

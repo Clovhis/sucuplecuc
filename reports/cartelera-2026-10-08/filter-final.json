@@ -1,0 +1,54 @@
+[
+  {
+    "viewport": "desktop",
+    "genre": "musical",
+    "newRecords": 10,
+    "validCards": 36,
+    "excludedSearch": "Retrato de un pianista"
+  },
+  {
+    "viewport": "desktop",
+    "genre": "guerra",
+    "newRecords": 10,
+    "validCards": 36,
+    "excludedSearch": "El tren fluvial"
+  },
+  {
+    "viewport": "desktop",
+    "genre": "culto",
+    "newRecords": 10,
+    "validCards": 36,
+    "excludedSearch": "La casa"
+  },
+  {
+    "viewport": "desktop",
+    "cultSticker": "psycho-1960",
+    "loaded": true
+  },
+  {
+    "viewport": "mobile",
+    "genre": "musical",
+    "newRecords": 10,
+    "validCards": 36,
+    "excludedSearch": "Retrato de un pianista"
+  },
+  {
+    "viewport": "mobile",
+    "genre": "guerra",
+    "newRecords": 10,
+    "validCards": 36,
+    "excludedSearch": "El tren fluvial"
+  },
+  {
+    "viewport": "mobile",
+    "genre": "culto",
+    "newRecords": 10,
+    "validCards": 36,
+    "excludedSearch": "La casa"
+  },
+  {
+    "viewport": "mobile",
+    "cultSticker": "psycho-1960",
+    "loaded": true
+  }
+]
