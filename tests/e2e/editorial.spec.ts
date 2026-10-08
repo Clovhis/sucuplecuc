@@ -7,6 +7,7 @@ import cancelados from '../../src/data/editorials/cancelados-por-hollywood-estre
 import insaciable from '../../src/data/editorials/insaciable-body-horror-en-modo-facil.json' with { type: 'json' };
 import offni from '../../src/data/editorials/offni-cine-fest-2026-cine-fantastico-gratis-en-caba.json' with { type: 'json' };
 import estrella from '../../src/data/editorials/la-estrella-que-perdi-premios-antares-2026-mirta-busnelli.json' with { type: 'json' };
+import calm from '../../src/data/editorials/calm-horacio-quiroga-animacion-sitges-2026.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -23,7 +24,7 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await expect(page).toHaveURL(/\/editorial\/$/);
 }
 
-for (const entry of [offni, estrella]) {
+for (const entry of [offni, estrella, calm]) {
   test(`${entry.slug}: news sources, SEO and responsive images remain available from home and archive`, async ({ page }, testInfo) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
