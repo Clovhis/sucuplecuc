@@ -56,28 +56,12 @@ body.home-edition::after { display: none; }
 }
 
 .home-editorial-catalog .home-results-tools {
-	gap: 1.25rem;
+	gap: .75rem;
 	padding: 0;
 	border: 0;
 	border-radius: 0;
 	background: none;
 	box-shadow: none;
-}
-
-.home-editorial-catalog .home-results-tools__header {
-	align-items: center;
-	min-height: 44px;
-	padding-block: .25rem 1rem;
-	border-bottom: 1px solid var(--catalog-line);
-}
-
-.home-editorial-catalog .home-results-tools__header h2 {
-	font-family: var(--font-sans);
-	font-size: 1.6rem;
-	font-weight: 600;
-	letter-spacing: -.02em;
-	line-height: 1.2;
-	color: var(--catalog-ink);
 }
 
 .home-editorial-catalog .home-results-tools__counter {
@@ -126,6 +110,9 @@ body.home-edition::after { display: none; }
 	flex-wrap: wrap;
 	gap: .4rem .75rem;
 }
+
+.home-editorial-catalog .home-results-tools__primary-filters .home-genre-filter { gap: .5rem; }
+.home-editorial-catalog .home-results-tools__primary-filters .home-genre-filter__heading { min-height: 18px; }
 
 .home-editorial-catalog .home-genre-filter__label {
 	font: 500 .72rem/1.4 var(--font-sans);
@@ -228,7 +215,7 @@ body.home-edition::after { display: none; }
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: .75rem 1.5rem;
-	padding-top: 1rem;
+	padding-top: .75rem;
 	border-top: 1px solid var(--catalog-line);
 }
 
@@ -301,7 +288,7 @@ body.home-edition::after { display: none; }
 
 .home-editorial-catalog .home-advanced-filters__summary {
 	min-height: 44px;
-	padding: .5rem 0 1rem;
+	padding: .5rem 0;
 	border: 0;
 	border-radius: 0;
 	background: none;
@@ -382,7 +369,7 @@ body.home-edition::after { display: none; }
 }
 
 @media (max-width: 1050px) {
-	.home-editorial-catalog .home-results-tools__primary-filters { grid-template-columns: 1fr; gap: 1.25rem; }
+	.home-editorial-catalog .home-results-tools__primary-filters { grid-template-columns: 1fr; gap: .75rem; }
 }
 
 @media (max-width: 720px) {
@@ -391,15 +378,13 @@ body.home-edition::after { display: none; }
 	.home-masthead .site-header__actions { justify-content: space-between; }
 	.home-masthead .site-header__actions > a { flex: 0 1 auto; padding-inline: 0; }
 	.home-editorial-catalog { gap: 1.25rem; }
-	.home-editorial-catalog .home-results-tools { gap: 1rem; }
-	.home-editorial-catalog .home-results-tools__header { display: flex; flex-wrap: nowrap; padding-bottom: 1rem; }
-	.home-editorial-catalog .home-results-tools__header h2 { font-size: 1.35rem; }
+	.home-editorial-catalog .home-results-tools { gap: .75rem; }
 	.home-editorial-catalog .home-results-tools__counter {
-		flex-direction: column;
-		align-items: flex-end;
-		gap: .25rem;
+		flex-direction: row;
+		align-items: baseline;
+		gap: .4rem;
 		margin: 0;
-		text-align: end;
+		text-align: start;
 	}
 	.home-editorial-catalog .home-results-tools__counter strong { font-size: .85rem; }
 	.home-editorial-catalog .home-results-tools__counter span { max-width: none; text-align: end; }
@@ -409,9 +394,13 @@ body.home-edition::after { display: none; }
 	.home-editorial-catalog .home-score-filter__presets { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 	.home-editorial-catalog .home-score-filter__chip { grid-column: span 2; flex-direction: column; flex-wrap: nowrap; height: auto; min-height: 48px; font-size: .75rem; padding: .35rem; }
 	.home-editorial-catalog .home-score-filter__chip:nth-last-child(-n + 2) { grid-column: span 3; }
-	.home-editorial-catalog .home-score-filter__footer { gap: .25rem; }
-	.home-editorial-catalog .home-score-filter__sort { width: 100%; justify-content: space-between; }
-	.home-editorial-catalog .home-verdict-cta { width: 100%; padding-inline: 0; justify-content: space-between; }
+	.home-editorial-catalog .home-score-filter__footer { gap: .5rem; flex-wrap: nowrap; }
+	.home-editorial-catalog .home-score-filter__sort { width: auto; }
+	.home-editorial-catalog .home-score-filter__sort select { width: 9.5rem; min-width: 9.5rem; padding-inline: .5rem 1.5rem; }
+	.home-editorial-catalog .home-verdict-cta { width: auto; padding: .5rem 0; gap: .25rem; }
+	.home-editorial-catalog .home-verdict-cta strong { font-size: .8rem; white-space: nowrap; }
+	.home-editorial-catalog .home-verdict-cta svg { width: 1.25rem; height: 1.25rem; }
+	.home-editorial-catalog .home-verdict-cta small { display: none; }
 	.home-editorial-catalog .home-filter-select { flex-wrap: wrap; }
 	.home-editorial-catalog .movie-grid { gap: 1.5rem 1rem; }
 	.home-editorial-catalog .movie-card__body { padding-top: .75rem; }

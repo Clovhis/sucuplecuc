@@ -39,23 +39,19 @@ const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace
 	movies.length > 0 ? (
 		<section class="home-catalog__primary home-editorial-catalog" aria-label="Catálogo principal">
 			<section id="catalogo-filtros" class="home-results-tools fade-up" style="--item-delay: 35ms;" aria-labelledby="home-results-tools-title">
-				<div class="home-results-tools__header">
-					<div>
-						<h2 id="home-results-tools-title">Películas</h2>
-					</div>
-					<p
-						class="home-results-tools__counter"
-						data-home-result-counter
-						aria-label={`${movieCountLabel} películas en el catálogo`}
-					>
-						<strong data-home-result-count>{movieCountLabel}</strong>
-						<span data-home-result-count-label>películas en catálogo</span>
-					</p>
-				</div>
+				<h2 id="home-results-tools-title" class="u-visually-hidden">Catálogo de películas</h2>
 				<div class="home-results-tools__primary-filters">
-				<section class="home-genre-filter home-quick-filters" aria-labelledby="home-quick-filters-title">
-					<div class="home-genre-filter__heading">
-						<p id="home-quick-filters-title" class="home-genre-filter__label">Para elegir rápido</p>
+					<section class="home-genre-filter home-quick-filters" aria-labelledby="home-quick-filters-title">
+						<h3 id="home-quick-filters-title" class="u-visually-hidden">Accesos rápidos</h3>
+						<div class="home-genre-filter__heading">
+							<p
+								class="home-results-tools__counter"
+								data-home-result-counter
+								aria-label={`${movieCountLabel} películas en el catálogo`}
+							>
+								<strong data-home-result-count>{movieCountLabel}</strong>
+								<span data-home-result-count-label>películas en catálogo</span>
+							</p>
 					</div>
 					<div class="home-genre-filter__chips" role="group" aria-label="Accesos rápidos al catálogo">
 						<button type="button" class="home-genre-filter__chip home-quick-filters__chip" data-home-quick-filter="new-and-good" aria-pressed="false">
@@ -72,7 +68,6 @@ const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace
 				<section class="home-genre-filter home-genre-filter--verdict home-score-filter" data-home-filter-panel="score">
 					<div class="home-genre-filter__heading">
 						<p class="home-genre-filter__label">Score CinePosta</p>
-						<p class="home-genre-filter__hint">Nota mínima</p>
 					</div>
 					<div class="home-genre-filter__chips home-score-filter__presets" role="group" aria-label="Score mínimo de CinePosta">
 						<button type="button" class="home-genre-filter__chip home-score-filter__chip" data-home-score-chip data-home-score-min="" aria-pressed="true">Todos</button>
@@ -85,7 +80,7 @@ const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace
 				</div>
 					<div class="home-score-filter__footer">
 						<label class="home-filter-select home-score-filter__sort">
-							<span>Ordenar por</span>
+							<span class="u-visually-hidden">Ordenar por</span>
 							<select data-home-sort aria-label="Ordenar películas">
 								<option value="newest">Más nuevas</option>
 								<option value="oldest">Más viejas</option>

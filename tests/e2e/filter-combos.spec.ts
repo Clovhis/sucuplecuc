@@ -137,7 +137,7 @@ test.describe('home catalog filters', () => {
 		expect(layout.labels).toEqual(['Todos', '7+ Muy buenas', '8+ Excelentes', '9+ Obras maestras', '10 Absolute Cinema']);
     expect(layout.fits).toBeTruthy();
     expect(layout.fillsRail).toBeTruthy();
-		await expect(page.locator('.home-score-filter__footer').getByText('Ordenar por')).toBeVisible();
+		await expect(page.getByRole('combobox', { name: 'Ordenar películas' })).toBeVisible();
     await expect(page.locator('.home-score-filter__footer').getByRole('link', { name: /Encontrá qué ver/i })).toHaveAttribute('href', '/que-miro-hoy/');
   });
 
