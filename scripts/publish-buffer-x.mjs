@@ -203,7 +203,9 @@ function movieUrl(slug) { return `${SITE_URL}/peliculas/${encodeURIComponent(slu
 
 function firstSentence(value) {
 	const normalized = value.replace(/\s+/g, ' ').trim();
-	return normalized.match(/^(.+?[.!?…])(?:\s|$)/u)?.[1] ?? normalized;
+	const sentence = normalized.match(/^(.+?[.!?])(?:\s|$)/u)?.[1];
+	// An unfinished source or an ellipsis is not a complete editorial preview.
+	return sentence && !/…|\.{3}/u.test(sentence) ? sentence : '';
 }
 
 function normalizeTaxonomyTerm(value) {
@@ -224,11 +226,6 @@ export function movieHashtags(movie) {
 export function weightedXLength(text) {
 	const urls = text.match(/https?:\/\/[^\s]+/gu) ?? [];
 	return [...text].length - urls.reduce((total, url) => total + [...url].length, 0) + urls.length * URL_WEIGHT;
-}
-
-function shorten(text, maximumLength) {
-	if ([...text].length <= maximumLength) return text;
-	return `${[...text].slice(0, Math.max(1, maximumLength - 1)).join('').trimEnd()}…`;
 }
 
 function pickVariant(values, index) {
@@ -270,21 +267,27 @@ export function renderPostText(movie, copyStyle = defaultCopyStyle(movie)) {
 	const category = typeof movie.category === 'string' && movie.category.trim() ? movie.category.trim().toLocaleLowerCase('es-AR') : 'buen cine';
 	const style = isCopyStyle(copyStyle) ? copyStyle : defaultCopyStyle(movie);
 	const availability = pickVariant(availabilityLabels(movie), style.availability);
-	let opening = pickVariant(negativeReview ? NEGATIVE_OPENING_TEMPLATES : OPENING_TEMPLATES, style.opening)({ title: `${title} (${movie.year})`, genre: category, availability, assessment: negativeAssessment(movie) });
-	let editorialIntro = pickVariant(EDITORIAL_INTROS, style.editorial);
+	const opening = pickVariant(negativeReview ? NEGATIVE_OPENING_TEMPLATES : OPENING_TEMPLATES, style.opening)({ title: `${title} (${movie.year})`, genre: category, availability, assessment: negativeAssessment(movie) });
+	const compactOpening = negativeReview ? `${title}: ${negativeAssessment(movie)}. ${availability}.` : `${title} ${availability}.`;
+	const editorialIntro = pickVariant(EDITORIAL_INTROS, style.editorial);
 	const hashtags = movieHashtags(movie).join(' ');
 	const verdict = negativeReview && pickVariant(VERDICT_TEMPLATES, style.verdict) === VERDICT_TEMPLATES[4] ? `No la recomendamos: ${label}.` : pickVariant(VERDICT_TEMPLATES, style.verdict)(label);
 	const suffix = `\n\n${verdict}\n${pickVariant(LINK_TEMPLATES, style.link)(url)}\n${hashtags}`;
-	let excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(`${opening}\n\n${editorialIntro}`) - weightedXLength(suffix);
-	// Some real release titles are very long. Keep their post readable instead of
-	// failing the whole daily run because a decorative template consumed the excerpt.
-	if (excerptBudget < 24) {
-		opening = negativeReview ? `${title}: ${negativeAssessment(movie)}. ${availability}.` : `${title} ${availability}.`;
-		editorialIntro = '';
-		excerptBudget = MAX_X_WEIGHTED_LENGTH - weightedXLength(`${opening}\n\n`) - weightedXLength(suffix);
-	}
-	if (excerptBudget < 24) throw new Error(`El título de ${movie.slug} no deja espacio suficiente para una publicación en X.`);
-	return `${opening}\n\n${editorialIntro}${shorten(firstSentence(review), excerptBudget)}${suffix}`;
+	const sentence = firstSentence(review);
+	// Prefer a complete first sentence, simplifying decoration if necessary.
+	// If it still cannot fit, link to the review without publishing a fragment.
+	const candidates = [
+		...(sentence ? [
+			`${opening}\n\n${editorialIntro}${sentence}${suffix}`,
+			`${opening}\n\n${sentence}${suffix}`,
+			`${compactOpening}\n\n${sentence}${suffix}`,
+		] : []),
+		`${opening}${suffix}`,
+		`${compactOpening}${suffix}`,
+	];
+	const text = candidates.find((candidate) => weightedXLength(candidate) <= MAX_X_WEIGHTED_LENGTH);
+	if (!text) throw new Error(`El título de ${movie.slug} no deja espacio suficiente para una publicación en X.`);
+	return text;
 }
 
 function hash(value) {

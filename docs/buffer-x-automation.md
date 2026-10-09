@@ -4,6 +4,8 @@ El workflow `.github/workflows/publish-buffer-x.yml` toma únicamente estrenos r
 
 El script no modifica contenido editorial. Su historial operativo está en `.github/cineposta-buffer-x-history.json`; una película queda excluida apenas se programa. Antes de crear una publicación, también revisa los últimos 100 posteos de Buffer, reconoce los enlaces de Cine Posta y confirma que la franja de las 19:00 ART esté libre. Así un reintento no duplica el post ni crea un segundo post del día aunque falle el commit del historial.
 
+El texto tiene un máximo interno de 250 caracteres ponderados para dejar margen a Buffer/X. El adelanto usa únicamente la primera oración completa de la reseña: primero intenta quitar la introducción editorial y abreviar el arranque para que entre. Si aun así no cabe, o la fuente no tiene una oración cerrada, omite el adelanto y conserva disponibilidad, score, enlace y hashtags. Nunca corta una oración ni agrega puntos suspensivos para ajustarla al límite.
+
 ## Recomendaciones y críticas negativas
 
 La selección prioriza películas con `cinepostaScore` de **6 a 10** entre los estrenos elegibles que todavía no se publicaron. Dentro de ese grupo mantiene el orden por fecha de estreno. Un estreno de 1 a 5 nunca desplaza a una recomendación disponible, aunque sea más reciente.

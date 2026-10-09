@@ -34,7 +34,8 @@ assert.equal(new Set(endings.map(([, link]) => link.replace(/https:\/\/[^\s]+/u,
 assert.equal(new Set(endings.map(([verdict]) => verdict)).size, 8, 'los veredictos deben rotar');
 for (const variant of variants) {
 	assert.ok(weightedXLength(variant) <= 250);
-	assert.match(variant, /Akira arranca con una pandilla/u);
+	assert.doesNotMatch(variant, /Akira arranca con una pandilla/u, 'una oración que no cabe se omite entera');
+	assert.doesNotMatch(variant, /…/u);
 	assert.match(variant, /#CienciaFiccion/u);
 }
 
@@ -42,7 +43,48 @@ const longTitleMovie = { ...movie, slug: 'adolescencia-sexo-y-muerte-en-campamen
 const compactText = renderPostText(longTitleMovie, { opening: 10, availability: 3, editorial: 9, verdict: 7, link: 7 });
 assert.ok(weightedXLength(compactText) <= 250, 'los títulos largos deben conservar el margen de X');
 assert.match(compactText, /Adolescencia, sexo y muerte/u);
-assert.match(compactText, /Akira arranca con una pandilla/u);
+assert.doesNotMatch(compactText, /Akira arranca/u);
+assert.doesNotMatch(compactText, /…/u);
+
+const shortReview = 'Otomo convierte la ciudad en una pesadilla.';
+const shortText = renderPostText({ ...movie, review: `${shortReview} Otra oración que no debe aparecer.` }, { opening: 0, availability: 0, editorial: 1, verdict: 0, link: 0 });
+assert.ok(shortText.includes(`La posta: ${shortReview}`), 'conserva una oración completa y su introducción cuando caben');
+assert.doesNotMatch(shortText, /Otra oración/u);
+
+// Stable reproduction of the audience report, independent of catalog edits.
+const ayMiPerro = { ...movie, slug: 'ay-mi-perro-2026', title: '¡Ay, mi perro!', year: 2026, category: 'Drama', genres: ['Aventura'], review: 'La búsqueda de un perro suele prometer un refugio amable, pero Amit Rai la lleva hacia un mundo donde la vulnerabilidad de los animales y la de los chicos están demasiado cerca. El cruce de recorridos amplía el conflicto.' };
+const reportedStyle = { opening: 5, availability: 0, editorial: 4, verdict: 6, link: 5 };
+const dogText = renderPostText(ayMiPerro, reportedStyle);
+assert.match(dogText, /Atenti con ¡Ay, mi perro! \(2026\): ya está disponible en Netflix\./u);
+assert.doesNotMatch(dogText, /Va por acá:|La búsqueda|Amit Rai|…|\.{3}/u);
+assert.match(dogText, /La posta del equipo: 8 - Excelente\./u);
+assert.match(dogText, /Pasá por la ficha: https:\/\/www\.cineposta\.com\.ar\/peliculas\/ay-mi-perro-2026\//u);
+assert.match(dogText, /#Drama #Aventura/u);
+assert.equal(dogText.split('\n\n').length, 2, 'no deja una introducción ni un párrafo vacío al omitir el adelanto');
+assert.ok(weightedXLength(dogText) <= 250);
+
+for (const review of ['Una reseña sin cierre', 'Un adelanto cortado…', 'Un adelanto cortado...', 'Un adelanto cortado… que luego termina.']) {
+	const incompleteText = renderPostText({ ...movie, review }, reportedStyle);
+	assert.doesNotMatch(incompleteText, /Va por acá:|Una reseña|Un adelanto|…|\.{3}/u, 'no publica fuentes incompletas ni deja su introducción');
+}
+
+const boundaryStyle = { opening: 0, availability: 0, editorial: 9, verdict: 0, link: 0 };
+const noExcerpt = renderPostText({ ...movie, review: 'Sin cierre' }, boundaryStyle);
+// The compact opening saves " (1988)"; the excerpt adds two newlines.
+const sentenceBudget = 250 - weightedXLength(noExcerpt) + ' (1988)'.length - 2;
+const withoutIntroSentence = `${'A'.repeat(sentenceBudget - ' (1988)'.length - 1)}.`;
+const withoutIntroText = renderPostText({ ...movie, review: withoutIntroSentence }, boundaryStyle);
+assert.match(withoutIntroText, /Akira \(1988\)/u, 'mantiene el arranque original si basta con quitar la introducción');
+assert.ok(withoutIntroText.includes(withoutIntroSentence));
+assert.doesNotMatch(withoutIntroText, /Un adelanto de nuestra reseña:/u);
+const boundarySentence = `${'A'.repeat(sentenceBudget - 1)}.`;
+const boundaryText = renderPostText({ ...movie, review: boundarySentence }, boundaryStyle);
+assert.equal(weightedXLength(boundaryText), 250, 'una oración completa puede ocupar exactamente el margen');
+assert.ok(boundaryText.includes(boundarySentence));
+assert.doesNotMatch(boundaryText, /Un adelanto de nuestra reseña:/u, 'quita la introducción para conservar la oración');
+const overBoundaryText = renderPostText({ ...movie, review: `A${boundarySentence}` }, boundaryStyle);
+assert.equal(overBoundaryText, noExcerpt, 'un carácter de más omite la oración entera');
+assert.throws(() => renderPostText({ ...movie, title: 'A'.repeat(300) }), /no deja espacio suficiente/u, 'nunca recorta el título para forzar una publicación');
 
 const recommendationLanguage = /¿Qué mirar|Si buscás|¿Con ganas|Una para agendar|Para una noche|Si te pinta|Plan de peli|Para sumar a la lista|Para quienes vienen buscando|Anotá esta|¿La recomendamos\?/u;
 for (let score = 1; score <= 10; score += 1) {
