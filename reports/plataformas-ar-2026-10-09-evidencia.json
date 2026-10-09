@@ -1,0 +1,3057 @@
+{
+  "verifiedAt": "2026-10-09",
+  "country": "AR",
+  "window": {
+    "from": "2026-09-26",
+    "through": "2026-10-09"
+  },
+  "baselineCinemaCommit": "93d7fe61",
+  "newMovies": [
+    {
+      "title": "Matchbox: La película",
+      "originalTitle": "Matchbox the Movie",
+      "year": 2026,
+      "slug": "matchbox-la-pelicula-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "matchbox-la-pelicula-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/matchbox-la-pelicula-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt28498219",
+        "tmdbId": "1148365"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/matchbox",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-09",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://tv.apple.com/ar/movie/matchbox-la-pelicula/umc.cmc.31qa8j1tn2cnpyk3fx43w928d?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv",
+          "package": {
+            "clearName": "Apple TV",
+            "technicalName": "appletvplus"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-09",
+      "releasePlatform": "Apple TV",
+      "score": {
+        "source": "TMDb audience",
+        "url": "https://www.themoviedb.org/movie/1148365",
+        "raw": 6.563,
+        "scale": 10,
+        "votes": 8,
+        "date": "2026-10-09",
+        "normalized": 7,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 7,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+        "page": "https://www.themoviedb.org/movie/1148365",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/matchbox-la-pelicula-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "7xfqITrMDcI",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=7xfqITrMDcI"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/matchbox",
+        "https://www.imdb.com/title/tt28498219/fullcredits/"
+      ],
+      "credits": {
+        "director": "Sam Hargrave",
+        "cast": [
+          "John Cena",
+          "Jessica Biel",
+          "Sam Richardson"
+        ]
+      },
+      "metadata": {
+        "country": "US",
+        "runtimeMinutes": 126,
+        "audienceRating": "+13",
+        "productionCompany": "Apple Original Films, Skydance Media, Mattel Films",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/matchbox",
+          "https://www.imdb.com/title/tt28498219/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Acción",
+        "genres": [
+          "Acción",
+          "Comedia"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/matchbox"
+      },
+      "people": [
+        {
+          "creditedName": "Sam Hargrave",
+          "displayName": "Sam Hargrave",
+          "imdbId": "nm1092087",
+          "portrait": "/people/sam-hargrave-nm1092087.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/mq7KgHiyuwFOvxuEg8p0Z30pybY.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q35481192",
+            "https://www.imdb.com/name/nm1092087/",
+            "https://www.themoviedb.org/person/1120883-sam-hargrave"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "John Cena",
+          "displayName": "John Cena",
+          "imdbId": "nm1078479",
+          "portrait": "/people/john-cena-nm1078479.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cena%20by%20Gage%20Skidmore.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q44437",
+            "https://www.imdb.com/name/nm1078479/",
+            "https://www.themoviedb.org/person/56446-john-cena"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Jessica Biel",
+          "displayName": "Jessica Biel",
+          "imdbId": "nm0004754",
+          "portrait": "/people/jessica-biel-nm0004754.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica%20Biel%202012.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q163249",
+            "https://www.imdb.com/name/nm0004754/",
+            "https://www.themoviedb.org/person/10860-jessica-biel"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Sam Richardson",
+          "displayName": "Sam Richardson",
+          "imdbId": "nm3931538",
+          "portrait": "/people/sam-richardson-nm3931538.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Richardson%20-%20Jan%202019%20(46909537042)%20(cropped).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q24050468",
+            "https://www.imdb.com/name/nm3931538/",
+            "https://www.themoviedb.org/person/1429453-sam-richardson"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "La última bala",
+      "originalTitle": "One Last Shot",
+      "year": 2026,
+      "slug": "la-ultima-bala-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "la-ultima-bala-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/la-ultima-bala-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt37971717",
+        "tmdbId": "1607127"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/un-ultimo-disparo",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-08",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-ultima-bala/umc.cmc.622wznshvbrxtaev3slie37ii?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6800439435",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-08",
+      "releasePlatform": "Apple TV",
+      "score": {
+        "source": "IMDb audience via JustWatch AR",
+        "url": "https://www.justwatch.com/ar/pelicula/un-ultimo-disparo",
+        "raw": 5.1,
+        "scale": 10,
+        "votes": 1069,
+        "date": "2026-10-09",
+        "normalized": 5,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 5,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
+        "page": "https://www.themoviedb.org/movie/1607127",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/la-ultima-bala-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "8PAy3i9uU0A",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=8PAy3i9uU0A"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/un-ultimo-disparo",
+        "https://www.imdb.com/title/tt37971717/fullcredits/"
+      ],
+      "credits": {
+        "director": "James Nunn",
+        "cast": [
+          "Scott Adkins",
+          "Dolph Lundgren"
+        ]
+      },
+      "metadata": {
+        "country": "GB",
+        "runtimeMinutes": 98,
+        "audienceRating": "+16",
+        "productionCompany": "Signature Entertainment",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/un-ultimo-disparo",
+          "https://www.imdb.com/title/tt37971717/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Acción",
+        "genres": [
+          "Acción",
+          "Thriller"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/un-ultimo-disparo"
+      },
+      "people": [
+        {
+          "creditedName": "James Nunn",
+          "displayName": "James Nunn",
+          "imdbId": "nm2071556",
+          "portrait": "/people/james-nunn-nm2071556.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/fa83eZedZOTM4DqkX1BrEUowkaT.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q111209551",
+            "https://www.imdb.com/name/nm2071556/",
+            "https://www.themoviedb.org/person/1088096-james-nunn"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Scott Adkins",
+          "displayName": "Scott Adkins",
+          "imdbId": "nm0012078",
+          "portrait": "/people/scott-adkins-nm0012078.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Scott%20Adkins%20(53319300983).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q28310",
+            "https://www.imdb.com/name/nm0012078/",
+            "https://www.themoviedb.org/person/78110-scott-adkins"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Dolph Lundgren",
+          "displayName": "Dolph Lundgren",
+          "imdbId": "nm0000185",
+          "portrait": "/people/dolph-lundgren-nm0000185.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolph%20Lundgren%202018.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q181678",
+            "https://www.imdb.com/name/nm0000185/",
+            "https://www.themoviedb.org/person/16644-dolph-lundgren"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Socias por accidente",
+      "originalTitle": "Socias por accidente",
+      "year": 2026,
+      "slug": "socias-por-accidente-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "socias-por-accidente-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/socias-por-accidente-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt40187050",
+        "tmdbId": "1632181"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/socias-por-accidente",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-08",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/socias-por-accidente/umc.cmc.4yaluzdw1xc6bo555ma3wqk0r?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1894364945",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-08",
+      "releasePlatform": "Apple TV",
+      "score": {
+        "source": "IMDb audience",
+        "url": "https://www.imdb.com/title/tt40187050/",
+        "raw": 5.5,
+        "scale": 10,
+        "votes": 277,
+        "date": "2026-10-09",
+        "normalized": 6,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 6,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/j0CIVzeR7hRAPBPGR54qDZoOQpp.jpg",
+        "page": "https://www.themoviedb.org/movie/1632181",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/socias-por-accidente-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "tsjsPgnCM2U",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=tsjsPgnCM2U"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/socias-por-accidente",
+        "https://www.imdb.com/title/tt40187050/fullcredits/"
+      ],
+      "credits": {
+        "director": "Ihtzi Hurtado",
+        "cast": [
+          "Angelique Boyer",
+          "Bárbara de Regil"
+        ]
+      },
+      "metadata": {
+        "country": "MX",
+        "runtimeMinutes": 99,
+        "audienceRating": "+13",
+        "productionCompany": "Videocine",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/socias-por-accidente",
+          "https://www.imdb.com/title/tt40187050/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/socias-por-accidente"
+      },
+      "people": [
+        {
+          "creditedName": "Ihtzi Hurtado",
+          "displayName": "Ihtzi Hurtado",
+          "imdbId": "nm4681274",
+          "portrait": "/people/ihtzi-hurtado-nm4681274.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/iZ4I41zQfLr6zP2hLWQkawHUhbM.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q124708556",
+            "https://www.imdb.com/name/nm4681274/",
+            "https://www.themoviedb.org/person/3009489-ihtzi-hurtado"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Angelique Boyer",
+          "displayName": "Angelique Boyer",
+          "imdbId": "nm1675654",
+          "portrait": "/people/angelique-boyer-nm1675654.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Angelique%20Boyer%202014.png?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q1262572",
+            "https://www.imdb.com/name/nm1675654/",
+            "https://www.themoviedb.org/person/1244197-angelique-boyer"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Bárbara de Regil",
+          "displayName": "Bárbara de Regil",
+          "imdbId": "nm5246178",
+          "portrait": "/people/barbara-de-regil-nm5246178.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1rbara%20de%20Regil%20en%202026%2001.png?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q16298750",
+            "https://www.imdb.com/name/nm5246178/",
+            "https://www.themoviedb.org/person/1310902-b-rbara-de-regil",
+            "https://videocine.com.mx/peliculas/socias-por-accidente/"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Cada vez menos extraño",
+      "originalTitle": "Mniej obcy",
+      "year": 2026,
+      "slug": "cada-vez-menos-extrano-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "cada-vez-menos-extrano-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/cada-vez-menos-extrano-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt39384300",
+        "tmdbId": "1620080"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/less-of-a-stranger",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-07",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/81744789",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-07",
+      "releasePlatform": "Netflix",
+      "score": {
+        "source": "IMDb audience via JustWatch AR",
+        "url": "https://www.justwatch.com/ar/pelicula/less-of-a-stranger",
+        "raw": 5.7,
+        "scale": 10,
+        "votes": 54,
+        "date": "2026-10-09",
+        "normalized": 6,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 6,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/cXCoJk9AzGzfOSNCRDnLhfhyJHD.jpg",
+        "page": "https://www.themoviedb.org/movie/1620080",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/cada-vez-menos-extrano-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "MiddOsmFDYI",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=MiddOsmFDYI"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/less-of-a-stranger",
+        "https://www.imdb.com/title/tt39384300/fullcredits/"
+      ],
+      "credits": {
+        "director": "Kristoffer Rus",
+        "cast": [
+          "Mikołaj Bukrewicz",
+          "Kinga Preis",
+          "Patryk Pietrzak",
+          "Hubert Miłkowski"
+        ]
+      },
+      "metadata": {
+        "country": "PL",
+        "runtimeMinutes": 120,
+        "audienceRating": "+16",
+        "productionCompany": "Netflix",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/less-of-a-stranger",
+          "https://www.imdb.com/title/tt39384300/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Drama",
+        "genres": [
+          "Drama"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/less-of-a-stranger"
+      },
+      "people": [
+        {
+          "creditedName": "Kristoffer Rus",
+          "displayName": "Kristoffer Rus",
+          "imdbId": "nm2127736",
+          "portrait": "/people/kristoffer-rus-nm2127736.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/1sVFtj66qYxxckq8eQMOCcucun7.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q123562562",
+            "https://www.imdb.com/name/nm2127736/",
+            "https://www.themoviedb.org/person/2192333-kristoffer-rus"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Mikołaj Bukrewicz",
+          "displayName": "Mikołaj Bukrewicz",
+          "portrait": "/people/mikolaj-bukrewicz.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/o9mMr3XERX66HJAOL9jnRzGKwXd.jpg",
+          "identityAndCreditSources": [
+            "https://www.themoviedb.org/person/5951694-mikolaj-bukrewicz",
+            "https://www.netflix.com/ar/title/81744789"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Kinga Preis",
+          "displayName": "Kinga Preis",
+          "imdbId": "nm0695835",
+          "portrait": "/people/kinga-preis-nm0695835.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/JKRUK%2020100629%20KINGA%20PREIS%20BUSKO%20IMG%205471.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q444996",
+            "https://www.imdb.com/name/nm0695835/",
+            "https://www.themoviedb.org/person/107517-kinga-preis"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Patryk Pietrzak",
+          "displayName": "Patryk Pietrzak",
+          "portrait": "/people/patryk-pietrzak.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/nvNRIVzfTyFaVngu3vduDoYCLVx.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q136257513",
+            "https://www.themoviedb.org/person/2520080-patryk-pietrzak"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Hubert Miłkowski",
+          "displayName": "Hubert Miłkowski",
+          "imdbId": "nm9308736",
+          "portrait": "/people/hubert-mi-kowski-nm9308736.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/ujtCfa8wW9TKcOMVvVbqeaQYNNa.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q97274676",
+            "https://www.imdb.com/name/nm9308736/",
+            "https://www.themoviedb.org/person/2680803-hubert-milkowski"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "¿Quién es Martin Mull?",
+      "originalTitle": "Who Is Martin Mull?",
+      "year": 2026,
+      "slug": "quien-es-martin-mull-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "quien-es-martin-mull-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/quien-es-martin-mull-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt9859238",
+        "tmdbId": "1756138"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/who-is-martin-mull",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-07",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/81922437",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-07",
+      "releasePlatform": "Netflix",
+      "score": {
+        "source": "IMDb audience via JustWatch AR timeline",
+        "url": "https://www.justwatch.com/ar/pelicula/who-is-martin-mull",
+        "raw": 8,
+        "scale": 10,
+        "votes": 59,
+        "date": "2026-10-09",
+        "normalized": 8,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 8,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/gQjXr8XxVpskubxVACnRLHx5xIS.jpg",
+        "page": "https://www.themoviedb.org/movie/1756138",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/quien-es-martin-mull-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "rb36KAQXIqw",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=rb36KAQXIqw"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/who-is-martin-mull",
+        "https://www.imdb.com/title/tt9859238/fullcredits/"
+      ],
+      "credits": {
+        "director": "Neil Berkeley, Bob Saget",
+        "cast": [
+          "Martin Mull",
+          "Steve Martin",
+          "Tom Waits"
+        ]
+      },
+      "metadata": {
+        "country": "US",
+        "runtimeMinutes": 94,
+        "audienceRating": "+16",
+        "productionCompany": "Netflix",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/who-is-martin-mull",
+          "https://www.imdb.com/title/tt9859238/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Documental",
+        "genres": [
+          "Documental"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/who-is-martin-mull"
+      },
+      "people": [
+        {
+          "creditedName": "Neil Berkeley",
+          "displayName": "Neil Berkeley",
+          "imdbId": "nm3286105",
+          "portrait": "/people/neil-berkeley-nm3286105.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/yXc9WRoZyYUMyDhNLJi4NTKrfS7.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q113547640",
+            "https://www.imdb.com/name/nm3286105/",
+            "https://www.themoviedb.org/person/938587-neil-berkeley"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Bob Saget",
+          "displayName": "Bob Saget",
+          "imdbId": "nm0756114",
+          "portrait": "/people/bob-saget-nm0756114.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Bob%20Saget%2C%20Behind%20The%20Velvet%20Rope%20TV%20.05.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q333544",
+            "https://www.imdb.com/name/nm0756114/",
+            "https://www.themoviedb.org/person/72450-bob-saget"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Martin Mull",
+          "displayName": "Martin Mull",
+          "imdbId": "nm0611898",
+          "portrait": "/people/martin-mull-nm0611898.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Mull%202018.png?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q575795",
+            "https://www.imdb.com/name/nm0611898/",
+            "https://www.themoviedb.org/person/80742-martin-mull"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Steve Martin",
+          "displayName": "Steve Martin",
+          "imdbId": "nm0000188",
+          "portrait": "/people/steve-martin-nm0000188.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Steve%20Martin%20by%20David%20Shankbone.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q16473",
+            "https://www.imdb.com/name/nm0000188/",
+            "https://www.themoviedb.org/person/67773-steve-martin"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Tom Waits",
+          "displayName": "Tom Waits",
+          "imdbId": "nm0001823",
+          "portrait": "/people/tom-waits-nm0001823.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Waits%20(1974%E2%80%9375%20Asylum%20publicity%20photo%20-%20with%20cigarette).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q184805",
+            "https://www.imdb.com/name/nm0001823/",
+            "https://www.themoviedb.org/person/2887-tom-waits"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Las cartas de la vida",
+      "originalTitle": "Doing Life",
+      "year": 2026,
+      "slug": "las-cartas-de-la-vida-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "las-cartas-de-la-vida-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/las-cartas-de-la-vida-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt36429458",
+        "tmdbId": "1458857"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/doing-life",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-02",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/82023496",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-02",
+      "releasePlatform": "Netflix",
+      "score": {
+        "source": "IMDb audience via JustWatch AR",
+        "url": "https://www.justwatch.com/ar/pelicula/doing-life",
+        "raw": 6.4,
+        "scale": 10,
+        "votes": 938,
+        "date": "2026-10-09",
+        "normalized": 6,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 6,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/5nZVjsCk5tWyyhLGt5U2TxsR85w.jpg",
+        "page": "https://www.themoviedb.org/movie/1458857",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/las-cartas-de-la-vida-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "zrOtmDQawas",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=zrOtmDQawas"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/doing-life",
+        "https://www.imdb.com/title/tt36429458/fullcredits/"
+      ],
+      "credits": {
+        "director": "Tyler Perry",
+        "cast": [
+          "Naomi Baker",
+          "Jay Reeves",
+          "Tamberla Perry",
+          "Karen Obilom"
+        ]
+      },
+      "metadata": {
+        "country": "US",
+        "runtimeMinutes": 112,
+        "audienceRating": "+16",
+        "productionCompany": "Tyler Perry Studios",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/doing-life",
+          "https://www.imdb.com/title/tt36429458/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Drama",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/doing-life"
+      },
+      "people": [
+        {
+          "creditedName": "Tyler Perry",
+          "displayName": "Tyler Perry",
+          "imdbId": "nm1347153",
+          "portrait": "/people/tyler-perry-nm1347153.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/TylerPerry-byPhilipRomano.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q686301",
+            "https://www.imdb.com/name/nm1347153/",
+            "https://www.themoviedb.org/person/80602-tyler-perry"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Naomi Baker",
+          "displayName": "Naomi Baker",
+          "portrait": "/people/naomi-baker.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/myRSStJz4Fwl4REI3jyoeDaNTyN.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q117117885",
+            "https://www.themoviedb.org/person/3965870-naomi-baker"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Jay Reeves",
+          "displayName": "Jay Reeves",
+          "imdbId": "nm6513996",
+          "portrait": "/people/jay-reeves-nm6513996.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/s1qMftsc4xuFrQijxYXSc3U4Nnr.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q114708619",
+            "https://www.imdb.com/name/nm6513996/",
+            "https://www.themoviedb.org/person/2101957-jay-reeves"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Tamberla Perry",
+          "displayName": "Tamberla Perry",
+          "imdbId": "nm4789591",
+          "portrait": "/people/tamberla-perry-nm4789591.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/yxymG8SvUD9A63DxViW7c5yUp09.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q124535803",
+            "https://www.imdb.com/name/nm4789591/",
+            "https://www.themoviedb.org/person/1652527-tamberla-perry"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Karen Obilom",
+          "displayName": "Karen Obilom",
+          "imdbId": "nm5352046",
+          "portrait": "/people/karen-obilom-nm5352046.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/egdF0iqd4i1toSpJLcC7eQNkSim.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q124400140",
+            "https://www.imdb.com/name/nm5352046/",
+            "https://www.themoviedb.org/person/1848253-karen-obilom"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Schumacher 94: Nace una leyenda",
+      "originalTitle": "Schumacher ’94 – Die Geburt einer Legende",
+      "year": 2026,
+      "slug": "schumacher-94-nace-una-leyenda-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "schumacher-94-nace-una-leyenda-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/schumacher-94-nace-una-leyenda-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt39453404",
+        "tmdbId": "1752355"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/schumacher-94-die-geburt-einer-legende",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-02",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/81916859",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-02",
+      "releasePlatform": "Netflix",
+      "score": {
+        "source": "IMDb audience",
+        "url": "https://www.imdb.com/es/title/tt39453404/",
+        "raw": 7.2,
+        "scale": 10,
+        "votes": 520,
+        "date": "2026-10-09",
+        "normalized": 7,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 7,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/em19DrMkLSinf04NEhiRxTnVupI.jpg",
+        "page": "https://www.themoviedb.org/movie/1752355",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/schumacher-94-nace-una-leyenda-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "Ca9ueGKNUr8",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=Ca9ueGKNUr8"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/schumacher-94-die-geburt-einer-legende",
+        "https://www.imdb.com/title/tt39453404/fullcredits/"
+      ],
+      "credits": {
+        "director": "Christin Freitag",
+        "cast": [
+          "Michael Schumacher",
+          "Corinna Schumacher"
+        ]
+      },
+      "metadata": {
+        "country": "DE",
+        "runtimeMinutes": 105,
+        "audienceRating": "+13",
+        "productionCompany": "LEONINE Studios",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/schumacher-94-die-geburt-einer-legende",
+          "https://www.imdb.com/title/tt39453404/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Documental",
+        "genres": [
+          "Documental"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/schumacher-94-die-geburt-einer-legende"
+      },
+      "people": [
+        {
+          "creditedName": "Christin Freitag",
+          "displayName": "Christin Freitag",
+          "imdbId": "nm4901999",
+          "portrait": "/people/christin-freitag-nm4901999.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/lleExyD9ci9AyMW8y6PyTCrDvYv.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q60732419",
+            "https://www.imdb.com/name/nm4901999/",
+            "https://www.themoviedb.org/person/1467602-christin-freitag"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Michael Schumacher",
+          "displayName": "Michael Schumacher",
+          "imdbId": "nm1635856",
+          "portrait": "/people/michael-schumacher-nm1635856.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Schumacher%2C%20September%202005.jpg?width=800",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q9671",
+            "https://www.netflix.com/ar/title/81916859",
+            "https://www.imdb.com/name/nm1635856/"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Corinna Schumacher",
+          "displayName": "Corinna Schumacher",
+          "imdbId": "nm12950459",
+          "portrait": "/people/corinna-schumacher-nm12950459.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Verleihung%20des%20Staatspreises%20des%20Landes%20Nordrhein-Westfalen%20an%20Michael%20Schumacher-0381.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q95171",
+            "https://www.imdb.com/name/nm12950459/",
+            "https://www.themoviedb.org/person/3179450-corinna-schumacher"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Furia de los Thunderman",
+      "originalTitle": "Clash of the Thundermans",
+      "year": 2026,
+      "slug": "furia-de-los-thunderman-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "furia-de-los-thunderman-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/furia-de-los-thunderman-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt37752275",
+        "tmdbId": "1506560"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/clash-of-the-thundermans",
+      "discoveryOffers": [
+        {
+          "date": "2026-09-27",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.69aa2f0c-f54d-47be-b6e3-5f0901d6311b",
+          "package": {
+            "clearName": "Paramount+ Amazon Channel",
+            "technicalName": "amazonparamountplus"
+          }
+        }
+      ],
+      "releaseDate": "2026-09-27",
+      "releasePlatform": "Paramount Plus",
+      "score": {
+        "source": "IMDb audience via JustWatch AR",
+        "url": "https://www.justwatch.com/ar/pelicula/clash-of-the-thundermans",
+        "raw": 4.4,
+        "scale": 10,
+        "votes": 637,
+        "date": "2026-10-09",
+        "normalized": 4,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 4,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/16oqRrWVzQm6qdGfBxvziZ2UiMT.jpg",
+        "page": "https://www.themoviedb.org/movie/1506560",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/furia-de-los-thunderman-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "Tui9Jpmyb6Q",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=Tui9Jpmyb6Q"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/clash-of-the-thundermans",
+        "https://www.imdb.com/title/tt37752275/fullcredits/"
+      ],
+      "credits": {
+        "director": "Trevor Kirschner",
+        "cast": [
+          "Kira Kosarin",
+          "Jack Griffo"
+        ]
+      },
+      "metadata": {
+        "country": "US, CA",
+        "runtimeMinutes": 72,
+        "audienceRating": "ATP",
+        "productionCompany": "Nickelodeon",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/clash-of-the-thundermans",
+          "https://www.imdb.com/title/tt37752275/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia",
+          "Acción",
+          "Familiar"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/clash-of-the-thundermans"
+      },
+      "people": [
+        {
+          "creditedName": "Trevor Kirschner",
+          "displayName": "Trevor Kirschner",
+          "imdbId": "nm1241603",
+          "portrait": "/people/trevor-kirschner-nm1241603.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/t7R7wbZwc1DFqsVaRDFJBJh3hge.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q117883170",
+            "https://www.imdb.com/name/nm1241603/",
+            "https://www.themoviedb.org/person/1951095-trevor-kirschner"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Kira Kosarin",
+          "displayName": "Kira Kosarin",
+          "imdbId": "nm4114500",
+          "portrait": "/people/kira-kosarin-nm4114500.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Kira%20Kosarin%20%40%20Moroccan%20Lounge%2008%2025%202022%20(52513789961)%20(cropped).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q15772548",
+            "https://www.imdb.com/name/nm4114500/",
+            "https://www.themoviedb.org/person/1479143-kira-kosarin"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Jack Griffo",
+          "displayName": "Jack Griffo",
+          "imdbId": "nm4338976",
+          "portrait": "/people/jack-griffo-nm4338976.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Jack%20Griffo%20KCA%202025%20(cropped).png?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q13460355",
+            "https://www.imdb.com/name/nm4338976/",
+            "https://www.themoviedb.org/person/1277364-jack-griffo"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Mandaadi",
+      "originalTitle": "மண்டாடி",
+      "year": 2026,
+      "slug": "mandaadi-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "mandaadi-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/mandaadi-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt36596965",
+        "tmdbId": "1465943"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/mandaadi",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-09",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/82787383",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-09",
+      "releasePlatform": "Netflix",
+      "score": {
+        "source": "IMDb audience via JustWatch AR",
+        "url": "https://www.justwatch.com/ar/pelicula/mandaadi",
+        "raw": 8.9,
+        "scale": 10,
+        "votes": 9636,
+        "date": "2026-10-09",
+        "normalized": 9,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 8,
+        "reason": "Gran recepción inicial y propuesta deportiva específica; sin reconocimiento perdurable todavía. El filtro editorial baja 9 a 8."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/cDFW9BI1PSqrBWu8W0ZoeUQivEM.jpg",
+        "page": "https://www.themoviedb.org/movie/1465943",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/mandaadi-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "VOHaf-0DV-U",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=VOHaf-0DV-U"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/mandaadi",
+        "https://www.imdb.com/title/tt36596965/fullcredits/"
+      ],
+      "credits": {
+        "director": "Mathimaran Pugazhendhi",
+        "cast": [
+          "Soori",
+          "Mahima Nambiar",
+          "Ravindra Vijay"
+        ]
+      },
+      "metadata": {
+        "country": "IN",
+        "runtimeMinutes": 153,
+        "audienceRating": "+13",
+        "productionCompany": "RS Infotainment",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/mandaadi",
+          "https://www.imdb.com/title/tt36596965/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Acción",
+        "genres": [
+          "Acción",
+          "Drama"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/mandaadi"
+      },
+      "people": [
+        {
+          "creditedName": "Mathimaran Pugazhendhi",
+          "displayName": "Mathimaran Pugazhendhi",
+          "imdbId": "nm12931602",
+          "portrait": "/people/mathimaran-pugazhendhi-nm12931602.jpg",
+          "portraitSource": "https://live.staticflickr.com/65535/48725253573_a28ff37623_n.jpg",
+          "identityAndCreditSources": [
+            "https://www.flickr.com/photos/97397470@N07/48725253573/",
+            "https://rsinfotainment.com/",
+            "https://www.imdb.com/name/nm12931602/"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Soori",
+          "displayName": "Soori",
+          "imdbId": "nm4262344",
+          "portrait": "/people/soori-nm4262344.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Soori%20at%20Marudhu%20Press%20Meet.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q7562740",
+            "https://www.imdb.com/name/nm4262344/",
+            "https://www.themoviedb.org/person/544897-soori"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Mahima Nambiar",
+          "displayName": "Mahima Nambiar",
+          "imdbId": "nm6446946",
+          "portrait": "/people/mahima-nambiar-nm6446946.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahima%20Nambiar%20at%20Chandramukhi%202%20press%20meet%20(1).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q16832063",
+            "https://www.imdb.com/name/nm6446946/",
+            "https://www.themoviedb.org/person/1154378-mahima-nambiar"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Ravindra Vijay",
+          "displayName": "Ravindra Vijay",
+          "imdbId": "nm9988018",
+          "portrait": "/people/ravindra-vijay-nm9988018.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/2mw4VbANE3QtI9dzQXdrG74RizL.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q107261293",
+            "https://www.imdb.com/name/nm9988018/",
+            "https://www.themoviedb.org/person/2109334-ravindra-vijay"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Vigilante",
+      "originalTitle": "Vigilante",
+      "year": 2026,
+      "slug": "vigilante-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "vigilante-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/vigilante-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": null,
+        "tmdbId": "1635521"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/vigilante-2026",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-04",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8bc27fa2-2d52-4eb4-a1e9-8d2bc8e8139b",
+          "package": {
+            "clearName": "Amazon Prime Video",
+            "technicalName": "amazonprimevideo"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-04",
+      "releasePlatform": "Prime Video",
+      "score": {
+        "source": "IMDb audience",
+        "url": "https://www.imdb.com/it/title/tt39715022/",
+        "raw": 7.4,
+        "scale": 10,
+        "votes": 134,
+        "date": "2026-10-09",
+        "normalized": 7,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 7,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/7BreFvMuYYCEiqgGr7hXv7X3jmq.jpg",
+        "page": "https://www.themoviedb.org/movie/1635521",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/vigilante-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "22Mu4G3p3RE",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=22Mu4G3p3RE"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/vigilante-2026",
+        "https://www.imdb.com/title/null/fullcredits/"
+      ],
+      "credits": {
+        "director": "Christian Paolo Lat",
+        "cast": [
+          "Diego Loyzaga",
+          "Robb Guinto",
+          "Vince Rillon"
+        ]
+      },
+      "metadata": {
+        "country": "PH",
+        "runtimeMinutes": 96,
+        "audienceRating": "+18",
+        "productionCompany": "Vivamax",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/vigilante-2026",
+          "https://www.imdb.com/title/null/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Acción",
+        "genres": [
+          "Acción",
+          "Drama"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/vigilante-2026"
+      },
+      "people": [
+        {
+          "creditedName": "Christian Paolo Lat",
+          "displayName": "Christian Paolo Lat",
+          "imdbId": "nm7139682",
+          "portrait": "/people/christian-paolo-lat-nm7139682.jpg",
+          "portraitSource": "https://journalnews.com.ph/wp-content/uploads/2024/02/Director.jpg",
+          "identityAndCreditSources": [
+            "https://journalnews.com.ph/fil-canadian-director-out-to-make-his-mark-in-local-films/",
+            "https://www.imdb.com/title/tt39715022/fullcredits/",
+            "https://www.imdb.com/name/nm7139682/"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Diego Loyzaga",
+          "displayName": "Carlos Diego Loyzaga",
+          "imdbId": "nm4408148",
+          "portrait": "/people/diego-loyzaga-nm4408148.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/efDKbavs1g0zIW3JR44ObTkkKzo.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q16236868",
+            "https://www.imdb.com/name/nm4408148/",
+            "https://www.themoviedb.org/person/1484728-diego-loyzaga"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Robb Guinto",
+          "displayName": "Robb Guinto",
+          "portrait": "/people/robb-guinto.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/raZt6SwyqxdpuMvBwnnrvvNaazq.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q136343510",
+            "https://www.themoviedb.org/person/3371806-robb-guinto"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Vince Rillon",
+          "displayName": "Vince Rillon",
+          "imdbId": "nm5297183",
+          "portrait": "/people/vince-rillon-nm5297183.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/27v6NYgbADSUZmPbTh9FLziUm7L.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q116688348",
+            "https://www.imdb.com/name/nm5297183/",
+            "https://www.themoviedb.org/person/1617129-vince-rillon"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Animales (Ben Affleck)",
+      "originalTitle": "Animals",
+      "year": 2026,
+      "slug": "animales-ben-affleck-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "animales-ben-affleck-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/animales-ben-affleck-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt31049299",
+        "tmdbId": "1236045"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/animals-2026",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-09",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/81757047",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-09",
+      "releasePlatform": "Netflix",
+      "score": {
+        "source": "TMDb audience",
+        "url": "https://www.themoviedb.org/movie/1236045",
+        "raw": 6.4,
+        "scale": 10,
+        "votes": 5,
+        "date": "2026-10-09",
+        "normalized": 6,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 6,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/cyltXU1lAGhRFBuHQIMWBAPj8fI.jpg",
+        "page": "https://www.themoviedb.org/movie/1236045",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1169,
+        "local": "assets/posters/2026/animales-ben-affleck-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "mlBfQJ8oxB0",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=mlBfQJ8oxB0"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/animals-2026",
+        "https://www.imdb.com/title/tt31049299/fullcredits/"
+      ],
+      "credits": {
+        "director": "Ben Affleck",
+        "cast": [
+          "Ben Affleck",
+          "Kerry Washington",
+          "Steven Yeun",
+          "Gillian Anderson"
+        ]
+      },
+      "metadata": {
+        "country": "US",
+        "runtimeMinutes": 106,
+        "audienceRating": "+16",
+        "productionCompany": "Artists Equity, Fifth Season, Makeready",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/animals-2026",
+          "https://www.imdb.com/title/tt31049299/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Thriller",
+        "genres": [
+          "Thriller",
+          "Drama",
+          "Crimen"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/animals-2026"
+      },
+      "people": [
+        {
+          "creditedName": "Ben Affleck",
+          "displayName": "Ben Affleck",
+          "imdbId": "nm0000255",
+          "portrait": "/people/ben-affleck-nm0000255.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Affleck%20at%2083rd%20Venice%20International%20Film%20Festival-1%20(cropped%203x4).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q483118",
+            "https://www.imdb.com/name/nm0000255/",
+            "https://www.themoviedb.org/person/880-ben-affleck"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Ben Affleck",
+          "displayName": "Ben Affleck",
+          "imdbId": "nm0000255",
+          "portrait": "/people/ben-affleck-nm0000255.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Affleck%20at%2083rd%20Venice%20International%20Film%20Festival-1%20(cropped%203x4).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q483118",
+            "https://www.imdb.com/name/nm0000255/",
+            "https://www.themoviedb.org/person/880-ben-affleck"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Kerry Washington",
+          "displayName": "Kerry Washington",
+          "imdbId": "nm0913488",
+          "portrait": "/people/kerry-washington-nm0913488.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Kerry%20Washington%20in%20(2024)%20(cropped).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q232104",
+            "https://www.imdb.com/name/nm0913488/",
+            "https://www.themoviedb.org/person/11703-kerry-washington"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Steven Yeun",
+          "displayName": "Steven Yeun",
+          "imdbId": "nm3081796",
+          "portrait": "/people/steven-yeun-nm3081796.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/StevenYeun2015ComicCon.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q552176",
+            "https://www.imdb.com/name/nm3081796/",
+            "https://www.themoviedb.org/person/215055-steven-yeun"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Gillian Anderson",
+          "displayName": "Gillian Anderson",
+          "imdbId": "nm0000096",
+          "portrait": "/people/gillian-anderson-nm0000096.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Gillian%20Anderson%20Cannes%20Film%20Festival%202026%2002%20(cropped).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q485298",
+            "https://www.imdb.com/name/nm0000096/",
+            "https://www.themoviedb.org/person/12214-gillian-anderson"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Pulp: ¿Qué harías por una canción más?",
+      "originalTitle": "Pulp: What Do You Do for an Encore?",
+      "year": 2026,
+      "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/pulp-que-harias-por-una-cancion-mas-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt43596978",
+        "tmdbId": "1715598"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-07",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/pulp-que-harias-por-una-cancion-mas/umc.cmc.214i1j7qw7udiranbut032sfd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813418865",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-07",
+      "releasePlatform": "Apple TV",
+      "score": {
+        "source": "IMDb audience",
+        "url": "https://www.imdb.com/title/tt43596978",
+        "raw": 8.4,
+        "scale": 10,
+        "votes": 14,
+        "date": "2026-10-09",
+        "normalized": 8,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 8,
+        "reason": "Muestra pequeña o métrica indirecta; máximo 8. No hay fundamento de obra maestra perdurable para 9/10."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/iOdcLIc1mAlczfD1Mq6dg4IupIh.jpg",
+        "page": "https://www.themoviedb.org/movie/1715598",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/pulp-que-harias-por-una-cancion-mas-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "BPIyAvBd6a4",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=BPIyAvBd6a4"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+        "https://www.imdb.com/title/tt43596978/fullcredits/"
+      ],
+      "credits": {
+        "director": "Garth Jennings",
+        "cast": [
+          "Jarvis Cocker",
+          "Candida Doyle",
+          "Nick Banks"
+        ]
+      },
+      "metadata": {
+        "country": "GB",
+        "runtimeMinutes": 98,
+        "audienceRating": "+13",
+        "productionCompany": "MUBI, Opal Films, VICE Studios",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+          "https://www.imdb.com/title/tt43596978/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Documental",
+        "genres": [
+          "Documental"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "Documental sobre músicos; no relato de ficción estructurado mediante números musicales.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas"
+      },
+      "people": [
+        {
+          "creditedName": "Garth Jennings",
+          "displayName": "Garth Jennings",
+          "imdbId": "nm1134029",
+          "portrait": "/people/garth-jennings-nm1134029.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/2008-0419-GarthJennings.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q598683",
+            "https://www.imdb.com/name/nm1134029/",
+            "https://www.themoviedb.org/person/52842-garth-jennings"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Jarvis Cocker",
+          "displayName": "Jarvis Cocker",
+          "imdbId": "nm1006741",
+          "portrait": "/people/jarvis-cocker-nm1006741.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Jarvis%20Cocker%20(2012).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q356994",
+            "https://www.imdb.com/name/nm1006741/",
+            "https://www.themoviedb.org/person/107170-jarvis-cocker"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Candida Doyle",
+          "displayName": "Candida Doyle",
+          "imdbId": "nm2131748",
+          "portrait": "/people/candida-doyle-nm2131748.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/PulpEventim290723%20(126%20of%20130)%20(53082347544)%20(cropped).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q16195039",
+            "https://www.imdb.com/name/nm2131748/"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Nick Banks",
+          "displayName": "Nick Banks",
+          "portrait": "/people/nick-banks.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/PulpEventim290723%20(44%20of%20130)%20(53082350099)%20(cropped).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q7026739"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Drags to Riches",
+      "originalTitle": "Drags to Riches",
+      "year": 2026,
+      "slug": "drags-to-riches-2026",
+      "status": "loaded",
+      "dryRun": {
+        "slug": "drags-to-riches-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/drags-to-riches-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt43617102",
+        "tmdbId": "1718405"
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/drags-to-riches",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-08",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.05dd8237-deb8-45d2-b4fb-6ceec01d5a9e",
+          "package": {
+            "clearName": "Amazon Prime Video",
+            "technicalName": "amazonprimevideo"
+          }
+        }
+      ],
+      "releaseDate": "2026-10-08",
+      "releasePlatform": "Prime Video",
+      "score": {
+        "source": "Philbert Dy individual critic",
+        "url": "https://letterboxd.com/philbertdy/film/drags-to-riches/",
+        "raw": 3,
+        "scale": 5,
+        "votes": null,
+        "date": "2026-10-09",
+        "normalized": 6,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 6,
+        "reason": "Sin agregado numérico de audiencia tras RT/IMDb/TMDb/Letterboxd/Filmweb/Metacritic/Watchmode. Último recurso: crítico profesional identificado, 3/5 * 10 = 6, máximo 8."
+      },
+      "poster": {
+        "source": "https://media.themoviedb.org/t/p/w780/3A34qz6uVwDdI9ga0y29vv5VXmI.jpg",
+        "page": "https://www.themoviedb.org/movie/1718405",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 780,
+        "sourceHeight": 1170,
+        "local": "assets/posters/2026/drags-to-riches-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "TCi0I7fgH8s",
+        "official": true,
+        "originalLanguage": true,
+        "url": "https://www.youtube.com/watch?v=TCi0I7fgH8s"
+      },
+      "creditReferences": [
+        "https://www.justwatch.com/ar/pelicula/drags-to-riches",
+        "https://www.imdb.com/title/tt43617102/fullcredits/"
+      ],
+      "credits": {
+        "director": "Victor Villanueva",
+        "cast": [
+          "Christian Bables",
+          "Elijah Canlas"
+        ]
+      },
+      "metadata": {
+        "country": "PH",
+        "runtimeMinutes": 110,
+        "audienceRating": "+13",
+        "productionCompany": "Cornerstone Studios",
+        "referenceUrls": [
+          "https://www.justwatch.com/ar/pelicula/drags-to-riches",
+          "https://www.imdb.com/title/tt43617102/"
+        ]
+      },
+      "taxonomy": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "El argumento y las fuentes no identifican una estructura narrativa de musical.",
+        "referenceUrl": "https://www.justwatch.com/ar/pelicula/drags-to-riches"
+      },
+      "people": [
+        {
+          "creditedName": "Victor Villanueva",
+          "displayName": "Victor Villanueva",
+          "imdbId": "nm2815892",
+          "portrait": "/people/victor-villanueva-nm2815892.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/5fEdANK6vAfS7llH0ANWpTjGYEQ.jpg",
+          "identityAndCreditSources": [
+            "https://cornerstoneent.ph/artists/victor-villanueva/",
+            "https://cornerstoneent.ph/cs-studios/drags-to-riches",
+            "https://www.themoviedb.org/person/1360831-victor-villanueva",
+            "https://www.imdb.com/name/nm2815892/"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Christian Bables",
+          "displayName": "Christian Bables",
+          "imdbId": "nm8263621",
+          "portrait": "/people/christian-bables-nm8263621.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/l0USxtMbjIRoB1YZUkpOv5eh6Gl.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q41187873",
+            "https://www.imdb.com/name/nm8263621/",
+            "https://www.themoviedb.org/person/1648564-christian-bables"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Elijah Canlas",
+          "displayName": "Elijah Canlas",
+          "imdbId": "nm6652668",
+          "portrait": "/people/elijah-canlas-nm6652668.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Elijah%20Canlas%20Gameboys.jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q98203885",
+            "https://www.imdb.com/name/nm6652668/",
+            "https://www.themoviedb.org/person/1349626-elijah-canlas"
+          ],
+          "visualVerified": true
+        }
+      ]
+    },
+    {
+      "title": "Project Baby",
+      "originalTitle": "Project Baby",
+      "year": 2026,
+      "slug": "project-baby-2026",
+      "status": "loaded",
+      "dryRun": {
+        "duplicates": [],
+        "dryRun": true
+      },
+      "identity": {
+        "imdbId": "tt43279365",
+        "tmdbId": "1705390",
+        "watchmodeId": 11181506
+      },
+      "justwatch": "https://www.justwatch.com/ar/pelicula/project-baby-2026",
+      "releaseDate": "2026-10-09",
+      "releasePlatform": "Netflix",
+      "discoveryOffers": [
+        {
+          "date": "2026-10-09",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/ar/title/82695257",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        }
+      ],
+      "score": {
+        "source": "Philbert Dy individual critic",
+        "url": "https://letterboxd.com/philbertdy/film/project-baby-2026/",
+        "raw": 1.5,
+        "scale": 5,
+        "votes": null,
+        "date": "2026-10-09",
+        "normalized": 3,
+        "confidenceCeiling": 8,
+        "editorialCeiling": 8,
+        "final": 3,
+        "reason": "Sin agregado de audiencia numérico tras contingencia; crítico profesional identificado y nota numérica explícita."
+      },
+      "poster": {
+        "source": "https://pbs.twimg.com/media/HJX5uxRaAAAF1Ud.jpg?name=orig",
+        "page": "https://x.com/kowalerts/status/2059827017374470475",
+        "httpStatus": 200,
+        "contentType": "image/jpeg",
+        "sourceWidth": 1388,
+        "sourceHeight": 2048,
+        "local": "assets/posters/2026/project-baby-2026.webp",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "qg_LVWeG55M",
+        "url": "https://www.youtube.com/watch?v=qg_LVWeG55M",
+        "official": true,
+        "originalLanguage": true
+      },
+      "credits": {
+        "director": "Eric Quizon",
+        "cast": [
+          "Sue Ramirez",
+          "Rico Blanco"
+        ]
+      },
+      "metadata": {
+        "country": "PH",
+        "runtimeMinutes": 110,
+        "audienceRating": "+13",
+        "productionCompany": "Regal Entertainment"
+      },
+      "taxonomy": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia",
+          "Romance"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "musicalReason": "La profesión musical de Rico Blanco no transforma esta comedia romántica en musical. Netflix AR confirma el tipo y argumento.",
+        "referenceUrl": "https://www.netflix.com/ar/title/82695257"
+      },
+      "people": [
+        {
+          "creditedName": "Eric Quizon",
+          "displayName": "Eric Quizon",
+          "portrait": "/people/eric-quizon-nm0704479.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/3H1Ol3AceXuMt1z1EKUMFUTMK5Q.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q5387313",
+            "https://www.imdb.com/name/nm0704479/",
+            "https://www.themoviedb.org/person/585909-eric-quizon",
+            "https://www.imdb.com/title/tt43279365/fullcredits/",
+            "https://www.netflix.com/ar/title/82695257"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Sue Ramirez",
+          "displayName": "Sue Ramirez",
+          "portrait": "/people/sue-ramirez-nm4212988.jpg",
+          "portraitSource": "https://media.themoviedb.org/t/p/w500/4679Iwixe9d1yc6kDUGLrfxdrEz.jpg",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q16239750",
+            "https://www.imdb.com/name/nm4212988/",
+            "https://www.themoviedb.org/person/1496083-sue-ramirez",
+            "https://www.imdb.com/title/tt43279365/fullcredits/",
+            "https://www.netflix.com/ar/title/82695257"
+          ],
+          "visualVerified": true
+        },
+        {
+          "creditedName": "Rico Blanco",
+          "displayName": "Rico Blanco",
+          "portrait": "/people/rico-blanco.jpg",
+          "portraitSource": "https://commons.wikimedia.org/wiki/Special:FilePath/Rico%20Blanco%20(2009)%20(cropped).jpg?width=1200",
+          "identityAndCreditSources": [
+            "https://www.wikidata.org/wiki/Q7332251",
+            "https://www.themoviedb.org/person/1374319-rico-blanco",
+            "https://www.imdb.com/title/tt43279365/fullcredits/",
+            "https://www.netflix.com/ar/title/82695257"
+          ],
+          "visualVerified": true
+        }
+      ]
+    }
+  ],
+  "platformUpdates": [
+    {
+      "slug": "letras-robadas-2026",
+      "jw": "power-ballad",
+      "before": {
+        "releasePlatform": "Otras plataformas"
+      },
+      "after": {
+        "releasePlatform": "Prime Video",
+        "releasePlatforms": [
+          "Prime Video",
+          "Apple TV"
+        ]
+      },
+      "scorePreserved": 7
+    },
+    {
+      "slug": "avatar-la-leyenda-de-aang-2026",
+      "jw": "aang-the-last-airbender-2026",
+      "before": {
+        "releasePlatform": "Paramount Plus"
+      },
+      "after": {
+        "releasePlatform": "Paramount Plus",
+        "releasePlatforms": [
+          "Paramount Plus",
+          "Apple TV"
+        ]
+      },
+      "scorePreserved": 5
+    },
+    {
+      "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+      "jw": "insidious-capitulo-6",
+      "before": {
+        "releasePlatform": "Cine"
+      },
+      "after": {
+        "releasePlatform": "Cine",
+        "releasePlatforms": [
+          "Cine",
+          "Apple TV"
+        ]
+      },
+      "scorePreserved": 7
+    },
+    {
+      "slug": "spider-man-brand-new-day-2026",
+      "jw": "untitled-spider-man-sequel",
+      "before": {
+        "releasePlatform": "Cine"
+      },
+      "after": {
+        "releasePlatform": "Cine",
+        "releasePlatforms": [
+          "Cine",
+          "Apple TV"
+        ]
+      },
+      "scorePreserved": 8
+    },
+    {
+      "slug": "insaciable-2026",
+      "jw": "insaciable-2026",
+      "before": {
+        "releasePlatform": "Otras plataformas"
+      },
+      "after": {
+        "releasePlatform": "Apple TV",
+        "releasePlatforms": [
+          "Apple TV",
+          "Prime Video"
+        ]
+      },
+      "scorePreserved": 7
+    },
+    {
+      "slug": "minions-monstruos-2026",
+      "jw": "minions-y-monstruos",
+      "before": {
+        "releasePlatform": "Otras plataformas"
+      },
+      "after": {
+        "releasePlatform": "Apple TV",
+        "releasePlatforms": [
+          "Apple TV",
+          "Flow"
+        ]
+      },
+      "scorePreserved": 8
+    },
+    {
+      "slug": "papa-a-cargo-2026",
+      "jw": "the-breadwinner",
+      "before": {
+        "releasePlatform": "Apple TV"
+      },
+      "after": {
+        "releasePlatform": "Apple TV",
+        "releasePlatforms": [
+          "Apple TV",
+          "Flow"
+        ]
+      },
+      "scorePreserved": 8
+    },
+    {
+      "slug": "cable-mortal-2026",
+      "jw": "cable-mortal",
+      "before": {
+        "releasePlatform": "Apple TV"
+      },
+      "after": {
+        "releasePlatform": "Apple TV",
+        "releasePlatforms": [
+          "Apple TV",
+          "Flow"
+        ]
+      },
+      "scorePreserved": 4
+    },
+    {
+      "slug": "wham-10-days-in-china-2026",
+      "jw": "wham-10-days-in-china",
+      "before": {
+        "releasePlatform": "Otras plataformas"
+      },
+      "after": {
+        "releasePlatform": "Apple TV"
+      },
+      "scorePreserved": 7
+    },
+    {
+      "slug": "oasis-don-t-look-back-in-anger-2026",
+      "jw": "oasis-dont-look-back-in-anger",
+      "before": {
+        "releasePlatform": "Cine"
+      },
+      "after": {
+        "releasePlatform": "Disney Plus"
+      },
+      "scorePreserved": 8
+    },
+    {
+      "slug": "evil-dead-en-llamas-2026",
+      "jw": "posesion-infernal-en-llamas",
+      "before": {
+        "releasePlatform": "Otras plataformas"
+      },
+      "after": {
+        "releasePlatform": "HBO Max",
+        "releasePlatforms": [
+          "HBO Max",
+          "Apple TV"
+        ]
+      },
+      "scorePreserved": 7
+    },
+    {
+      "slug": "el-pasajero-del-diablo-2026",
+      "jw": "passenger-2026",
+      "before": {
+        "releasePlatform": "Otras plataformas"
+      },
+      "after": {
+        "releasePlatform": "Paramount Plus",
+        "releasePlatforms": [
+          "Paramount Plus",
+          "Apple TV"
+        ]
+      },
+      "scorePreserved": 5
+    },
+    {
+      "slug": "tu-corazon-sera-destrozado-2026",
+      "jw": "tu-corazon-se-rompera",
+      "before": {
+        "releasePlatform": "Otras plataformas"
+      },
+      "after": {
+        "releasePlatform": "Apple TV",
+        "releasePlatforms": [
+          "Apple TV",
+          "Prime Video"
+        ]
+      },
+      "scorePreserved": 3
+    }
+  ],
+  "currentOffers": [
+    {
+      "title": "Matchbox: La película",
+      "url": "https://www.justwatch.com/ar/pelicula/matchbox",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Apple TV",
+          "technicalName": "appletvplus",
+          "url": "https://tv.apple.com/ar/movie/matchbox-la-pelicula/umc.cmc.31qa8j1tn2cnpyk3fx43w928d?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv",
+          "availableFrom": "2026-10-09T00:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Apple TV Amazon Channel",
+          "technicalName": "amazonappletvplus",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c5dc1582-c445-4e43-b959-ef3f43ea5345",
+          "availableFrom": "2026-10-09T01:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Un último disparo",
+      "url": "https://www.justwatch.com/ar/pelicula/un-ultimo-disparo",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/la-ultima-bala/umc.cmc.622wznshvbrxtaev3slie37ii?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6800439435",
+          "availableFrom": "2026-10-08T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/la-ultima-bala/umc.cmc.622wznshvbrxtaev3slie37ii?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6800439435",
+          "availableFrom": "2026-10-08T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Socias por accidente",
+      "url": "https://www.justwatch.com/ar/pelicula/socias-por-accidente",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "VIX ",
+          "technicalName": "vixtv",
+          "url": "https://vix.com/es-es/detail/video-4862548",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "ViX Premium Amazon Channel",
+          "technicalName": "amazonvixplus",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a3dbdcfc-42a1-4ee8-8f17-0e1891e0b343",
+          "availableFrom": "2026-05-08T03:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a3dbdcfc-42a1-4ee8-8f17-0e1891e0b343",
+          "availableFrom": "2026-05-08T03:00:00Z",
+          "availableTo": "2026-11-08T02:59:59Z"
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/socias-por-accidente/umc.cmc.4yaluzdw1xc6bo555ma3wqk0r?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1894364945",
+          "availableFrom": "2026-05-08T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a3dbdcfc-42a1-4ee8-8f17-0e1891e0b343",
+          "availableFrom": "2026-10-08T03:00:00Z",
+          "availableTo": "2026-11-08T02:59:59Z"
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/socias-por-accidente/umc.cmc.4yaluzdw1xc6bo555ma3wqk0r?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1894364945",
+          "availableFrom": "2026-05-08T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "ADS",
+          "provider": "VIX ",
+          "technicalName": "vixtv",
+          "url": "https://vix.com/es-es/detail/video-4862548",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Cada vez menos extraño",
+      "url": "https://www.justwatch.com/ar/pelicula/less-of-a-stranger",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix",
+          "url": "https://www.netflix.com/title/81744789",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "¿Quién es Martin Mull?",
+      "url": "https://www.justwatch.com/ar/pelicula/who-is-martin-mull",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix",
+          "url": "https://www.netflix.com/title/81922437",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Las cartas de la vida",
+      "url": "https://www.justwatch.com/ar/pelicula/doing-life",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix",
+          "url": "https://www.netflix.com/title/82023496",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Schumacher 94: Nace una leyenda",
+      "url": "https://www.justwatch.com/ar/pelicula/schumacher-94-die-geburt-einer-legende",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix",
+          "url": "https://www.netflix.com/title/81916859",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Furia de los Thunderman",
+      "url": "https://www.justwatch.com/ar/pelicula/clash-of-the-thundermans",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Paramount Plus",
+          "technicalName": "paramountplus",
+          "url": "https://www.paramountplus.com/movies/clash-of-the-thundermans/ALVE01M0K0PNW8EK7V2GQPZAD468TY?searchReferral=&amp;utm_source=publisher",
+          "availableFrom": "2026-09-03T04:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.69aa2f0c-f54d-47be-b6e3-5f0901d6311b",
+          "availableFrom": "2026-09-03T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Mandaadi",
+      "url": "https://www.justwatch.com/ar/pelicula/mandaadi",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix",
+          "url": "https://www.netflix.com/title/82787383",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Vigilante",
+      "url": "https://www.justwatch.com/ar/pelicula/vigilante-2026",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8bc27fa2-2d52-4eb4-a1e9-8d2bc8e8139b",
+          "availableFrom": "2026-10-04T00:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Animales",
+      "url": "https://www.justwatch.com/ar/pelicula/animals-2026",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix",
+          "url": "https://www.netflix.com/title/81757047",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "What Do You Do for an Encore?",
+      "url": "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "MUBI",
+          "technicalName": "mubi",
+          "url": "https://mubi.com/films/pulp-what-do-you-do-for-an-encore",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "MUBI Amazon Channel",
+          "technicalName": "amazonmubi",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d6206ce8-fa5a-4ac9-9105-3c9a34d16779",
+          "availableFrom": "2026-09-25T03:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/pulp-que-harias-por-una-cancion-mas/umc.cmc.214i1j7qw7udiranbut032sfd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813418865",
+          "availableFrom": "2026-09-18T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Drags to Riches",
+      "url": "https://www.justwatch.com/ar/pelicula/drags-to-riches",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.05dd8237-deb8-45d2-b4fb-6ceec01d5a9e",
+          "availableFrom": "2026-10-08T16:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Letras robadas",
+      "url": "https://www.justwatch.com/ar/pelicula/power-ballad",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.683e88f4-92eb-477b-a0be-9a30bd1d1ee2",
+          "availableFrom": "2026-10-08T03:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.683e88f4-92eb-477b-a0be-9a30bd1d1ee2",
+          "availableFrom": "2026-07-30T03:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/letras-robadas/umc.cmc.1v54ux4ou0llu72zgu3pyag1h?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6784522004",
+          "availableFrom": "2026-06-05T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/letras-robadas/umc.cmc.1v54ux4ou0llu72zgu3pyag1h?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6784522004",
+          "availableFrom": "2026-06-05T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.683e88f4-92eb-477b-a0be-9a30bd1d1ee2",
+          "availableFrom": "2026-08-13T03:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Avatar: La leyenda de Aang",
+      "url": "https://www.justwatch.com/ar/pelicula/aang-the-last-airbender-2026",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Paramount Plus",
+          "technicalName": "paramountplus",
+          "url": "https://www.paramountplus.com/movies/avatar-aang-the-last-airbender/ALVE01KWEWD5Z5EKFAYNJ7KHGAACKP?searchReferral=&amp;utm_source=publisher",
+          "availableFrom": "2026-06-12T04:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5e42bcf1-8d2c-41cd-a3b6-f1e248c42049",
+          "availableFrom": "2026-07-25T04:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/avatar-aang-el-ultimo-maestro-del-aire/umc.cmc.6lc41hrre6v0erzpbeib7aafn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6783700395",
+          "availableFrom": "2026-10-09T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Insidious: Fuera del más allá",
+      "url": "https://www.justwatch.com/ar/pelicula/insidious-capitulo-6",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Atlas Cines",
+          "technicalName": "atlascines",
+          "url": "https://www.atlascines.com/Peliculas?codPelicula=542",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Cinemark",
+          "technicalName": "cinemark",
+          "url": "https://www.cinemarkhoyts.com.ar/pelicula/la-noche-del-demonio-estan-entre-nosotros",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Cinemacenter",
+          "technicalName": "cinemacenter",
+          "url": "https://www.cinemacenter.com.ar/ficha/5723-LA-NOCHE-DEL-DEMONIO-EST-N-ENTRE-NOSOTROS---2D-CAST",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Showcase Cinemas",
+          "technicalName": "showcasecinemas",
+          "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5955",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+          "availableFrom": "2026-08-20T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+          "availableFrom": "2026-08-20T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Spider-Man: Un nuevo día",
+      "url": "https://www.justwatch.com/ar/pelicula/untitled-spider-man-sequel",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Atlas Cines",
+          "technicalName": "atlascines",
+          "url": "https://www.atlascines.com/Peliculas?codPelicula=497",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Cinemark",
+          "technicalName": "cinemark",
+          "url": "https://www.cinemarkhoyts.com.ar/pelicula/spider-man-un-nuevo-dia",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Showcase Cinemas",
+          "technicalName": "showcasecinemas",
+          "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5845",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+          "availableFrom": "2026-07-29T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+          "availableFrom": "2026-07-29T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Insaciable",
+      "url": "https://www.justwatch.com/ar/pelicula/insaciable-2026",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ac1cc6c1-be78-417a-bfbb-7356190f143b",
+          "availableFrom": "2026-10-08T03:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/insaciable/umc.cmc.68jjx45zb05gqahw4cge0qnkn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6803811892",
+          "availableFrom": "2026-05-22T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ac1cc6c1-be78-417a-bfbb-7356190f143b",
+          "availableFrom": "2026-10-08T03:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/insaciable/umc.cmc.68jjx45zb05gqahw4cge0qnkn?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6803811892",
+          "availableFrom": "2026-05-22T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Minions y monstruos",
+      "url": "https://www.justwatch.com/ar/pelicula/minions-y-monstruos",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Atlas Cines",
+          "technicalName": "atlascines",
+          "url": "https://www.atlascines.com/Peliculas?codPelicula=500",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "availableFrom": "2026-07-01T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Cambio de roles",
+      "url": "https://www.justwatch.com/ar/pelicula/the-breadwinner",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/papa-a-cargo/umc.cmc.mgyxbuxipp384150ghyl7l15?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896631017",
+          "availableFrom": "2026-10-01T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/papa-a-cargo/umc.cmc.mgyxbuxipp384150ghyl7l15?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896631017",
+          "availableFrom": "2026-10-01T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Cable mortal",
+      "url": "https://www.justwatch.com/ar/pelicula/cable-mortal",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/cable-mortal/umc.cmc.4s5erlp70le9k3nxyu8ujefb9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6811198995",
+          "availableFrom": "2026-10-01T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/cable-mortal/umc.cmc.4s5erlp70le9k3nxyu8ujefb9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6811198995",
+          "availableFrom": "2026-10-01T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "WHAM! 10 Days in China",
+      "url": "https://www.justwatch.com/ar/pelicula/wham-10-days-in-china",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/wham-10-days-in-china/umc.cmc.15ext1exk681ub2f8en3lx4ix?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799289978",
+          "availableFrom": "2026-09-15T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/wham-10-days-in-china/umc.cmc.15ext1exk681ub2f8en3lx4ix?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799289978",
+          "availableFrom": "2026-09-15T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Oasis: Don't Look Back in Anger",
+      "url": "https://www.justwatch.com/ar/pelicula/oasis-dont-look-back-in-anger",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Disney Plus",
+          "technicalName": "disneyplus",
+          "url": "https://www.disneyplus.com/browse/entity-09aa241f-b771-4323-a7ac-e2dae4f3782e",
+          "availableFrom": "2026-10-09T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Cinemacenter",
+          "technicalName": "cinemacenter",
+          "url": "https://www.cinemacenter.com.ar/ficha/5765-OASIS-DONT-LOOK-BACK-IN-ANGER---2D-SUB",
+          "availableFrom": null,
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "CINEMA",
+          "provider": "Showcase Cinemas",
+          "technicalName": "showcasecinemas",
+          "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6027",
+          "availableFrom": null,
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Posesión infernal: En llamas",
+      "url": "https://www.justwatch.com/ar/pelicula/posesion-infernal-en-llamas",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "HBO Max",
+          "technicalName": "max",
+          "url": "https://play.hbomax.com/show/632222f3-5968-4176-9266-6b68ec4eee79?utm_source=universal_search",
+          "availableFrom": "2026-10-09T07:01:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/evil-dead-en-llamas/umc.cmc.5jxgo2xoyac10ub0zhixx3y4k?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6784863578",
+          "availableFrom": "2026-07-09T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/evil-dead-en-llamas/umc.cmc.5jxgo2xoyac10ub0zhixx3y4k?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6784863578",
+          "availableFrom": "2026-07-09T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Passenger",
+      "url": "https://www.justwatch.com/ar/pelicula/passenger-2026",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Paramount Plus",
+          "technicalName": "paramountplus",
+          "url": "https://www.paramountplus.com/movies/passenger/ALVE01KYA1G2C5E02846P4QYJBAM4E?searchReferral=&amp;utm_source=publisher",
+          "availableFrom": "2026-05-22T04:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5c094aef-8c8e-44df-9b8c-c649b2543135",
+          "availableFrom": "2026-10-08T03:00:00Z",
+          "availableTo": "2027-02-08T02:59:59Z"
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/el-pasajero-del-diablo/umc.cmc.4z3os8rz41ghwpyqv4ihfgx7p?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895130467",
+          "availableFrom": "2026-05-20T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/el-pasajero-del-diablo/umc.cmc.4z3os8rz41ghwpyqv4ihfgx7p?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895130467",
+          "availableFrom": "2026-05-20T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Tu corazón se romperá",
+      "url": "https://www.justwatch.com/ar/pelicula/tu-corazon-se-rompera",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f195595b-13f1-46d8-a2f3-99fd66ac95ab",
+          "availableFrom": "2026-10-08T03:00:00Z",
+          "availableTo": "2027-02-06T02:59:59Z"
+        },
+        {
+          "country": "AR",
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/tu-corazon-sera-destrozado/umc.cmc.5jx9m0uh88c99mc24h7r9kb2y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812517370",
+          "availableFrom": "2026-10-08T07:00:00Z",
+          "availableTo": null
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Amazon Video",
+          "technicalName": "amazon",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f195595b-13f1-46d8-a2f3-99fd66ac95ab",
+          "availableFrom": "2026-10-08T03:00:00Z",
+          "availableTo": "2027-02-06T02:59:59Z"
+        },
+        {
+          "country": "AR",
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes",
+          "url": "https://tv.apple.com/ar/movie/tu-corazon-sera-destrozado/umc.cmc.5jx9m0uh88c99mc24h7r9kb2y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812517370",
+          "availableFrom": "2026-10-08T07:00:00Z",
+          "availableTo": null
+        }
+      ]
+    },
+    {
+      "title": "Project Baby",
+      "url": "https://www.justwatch.com/ar/pelicula/project-baby-2026",
+      "offers": [
+        {
+          "country": "AR",
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix",
+          "url": "https://www.netflix.com/ar/title/82695257",
+          "availableFrom": "2026-10-09"
+        }
+      ]
+    }
+  ],
+  "providerProbes": [
+    {
+      "name": "cinear",
+      "url": "https://play.cine.ar/",
+      "finalUrl": "https://play.cine.ar/",
+      "status": 200,
+      "type": "text/html",
+      "bytes": 13544,
+      "title": "Cine.ar Play"
+    },
+    {
+      "name": "mercado",
+      "url": "https://play.mercadolibre.com.ar/",
+      "finalUrl": "https://play.mercadolibre.com.ar/",
+      "status": 403,
+      "type": "text/html",
+      "bytes": 2584
+    },
+    {
+      "name": "dgo",
+      "url": "https://cms74.directvgo.com/ar/home",
+      "finalUrl": "https://cms74.directvgo.com/ar/home",
+      "status": 200,
+      "type": "text/html;charset=UTF-8",
+      "bytes": 260083,
+      "title": "DGO - TV en vivo, deportes y las mejores películas y series online - DGO"
+    },
+    {
+      "name": "oasisShowcase",
+      "url": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6027",
+      "finalUrl": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6027",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 22095,
+      "title": "\r\n\tCines Showcase by Voy al Cine\r\n"
+    },
+    {
+      "name": "oasisCinemacenter",
+      "url": "https://www.cinemacenter.com.ar/ficha/5765-OASIS-DONT-LOOK-BACK-IN-ANGER---2D-SUB",
+      "finalUrl": "https://www.cinemacenter.com.ar/ficha/5765-OASIS-DONT-LOOK-BACK-IN-ANGER---2D-SUB",
+      "status": 200,
+      "type": "text/html; charset=iso-8859-1",
+      "bytes": 48773,
+      "title": "CINEMACENTER"
+    },
+    {
+      "name": "dragsReview",
+      "url": "https://letterboxd.com/philbertdy/film/drags-to-riches/",
+      "finalUrl": "https://letterboxd.com/philbertdy/film/drags-to-riches/",
+      "status": 200,
+      "type": "text/html;charset=utf-8",
+      "bytes": 102853,
+      "title": "&lrm;‘Drags to Riches’ review by Philbert Dy &bull; Letterboxd"
+    }
+  ],
+  "watchmodeReconsulta": "plataformas-2026-10-09/watchmode-reconsulta/decision.md"
+}

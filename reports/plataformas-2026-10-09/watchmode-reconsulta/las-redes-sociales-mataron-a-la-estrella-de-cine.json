@@ -1,0 +1,60 @@
+{
+  "title": "Las Redes Sociales Mataron a la Estrella de Cine",
+  "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine",
+  "startedAt": "2026-10-09T12:53:06.209Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Las Redes Sociales Mataron a la Estrella de Cine",
+    "--original-title",
+    "Social Media Killed the Movie Star",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt45635534"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt45635534&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11230411/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11230411,
+      "title": "Social Media Killed the Movie Star",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt45635534",
+      "tmdbId": null
+    },
+    "metadata": {
+      "title": "Social Media Killed the Movie Star",
+      "originalTitle": "Social Media Killed the Movie Star",
+      "englishTitle": "Social Media Killed the Movie Star",
+      "year": 2026,
+      "originalLanguage": null,
+      "runtimeMinutes": null,
+      "releaseDate": null,
+      "genres": [],
+      "imdbId": "tt45635534",
+      "tmdbId": null,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [],
+      "credits": []
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

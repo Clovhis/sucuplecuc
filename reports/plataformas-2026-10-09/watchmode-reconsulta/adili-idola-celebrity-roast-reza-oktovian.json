@@ -1,0 +1,147 @@
+{
+  "title": "Adili Idola Celebrity Roast: Reza Oktovian",
+  "slug": "adili-idola-celebrity-roast-reza-oktovian",
+  "startedAt": "2026-10-09T12:53:21.764Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Adili Idola Celebrity Roast: Reza Oktovian",
+    "--original-title",
+    "Adili Idola Celebrity Roast: Reza Oktovian",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--tmdb-id",
+    "1706128"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1706128&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11182922/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11182922,
+      "title": "Adili Idola Celebrity Roast: Reza Oktovian",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": null,
+      "tmdbId": 1706128
+    },
+    "metadata": {
+      "title": "Adili Idola Celebrity Roast: Reza Oktovian",
+      "originalTitle": "Adili Idola Celebrity Roast: Reza Oktovian",
+      "englishTitle": "Adili Idola Celebrity Roast: Reza Oktovian",
+      "year": 2026,
+      "originalLanguage": "id",
+      "runtimeMinutes": 144,
+      "releaseDate": "2026-10-01",
+      "genres": [
+        "Comedy"
+      ],
+      "imdbId": null,
+      "tmdbId": 1706128,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [
+        151345,
+        159189,
+        1142021,
+        1262935,
+        1653889,
+        1655100,
+        1664008,
+        1664971,
+        1671870,
+        345186,
+        4143647,
+        525691,
+        526590,
+        527018,
+        527020,
+        527752,
+        527754,
+        530011,
+        530152,
+        539815
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 78949295,
+          "name": "Pandji Pragiwaksono",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710886506,
+          "name": "Reza Oktovian",
+          "type": "Cast",
+          "role": "Self - Roastee",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711332455,
+          "name": "Fatih Andhika",
+          "type": "Cast",
+          "role": "Self - Roastmaster",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711657802,
+          "name": "Niko Junius",
+          "type": "Cast",
+          "role": "Self - Roaster",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 710318779,
+          "name": "Indra Frimawan",
+          "type": "Cast",
+          "role": "Self - Roaster",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 711210250,
+          "name": "Rizky Ambon",
+          "type": "Cast",
+          "role": "Self - Roaster",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 711366051,
+          "name": "Grace Martha Graciela",
+          "type": "Cast",
+          "role": "Self - Roaster",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 711366053,
+          "name": "Jessica Prashela",
+          "type": "Cast",
+          "role": "Self - Roaster",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 71949479,
+          "name": "Uus",
+          "type": "Cast",
+          "role": "Self - Roaster",
+          "order": 8
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+
+Running 20 tests using 2 workers
+
+
+
+(node:1688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+
+(node:1688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:26272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:17:2 › cinema-release-carousel: all films remain reachable and controls track both ends
+[2/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:17:2 › streaming-release-carousel: all films remain reachable and controls track both ends
+[3/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:17:2 › weekly-recommendations: all films remain reachable and controls track both ends
+[4/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:55:1 › trailer closes with Escape, clears the player, and restores keyboard focus
+[5/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:70:1 › release titles offer a direct route to the film alongside their trailers
+[6/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:78:1 › regular scrolling and keyboard focus reveal films beyond the visible strip
+[7/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:92:1 › all rails fit narrow screens and update their controls after resizing
+[8/20] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:112:1 › offscreen platform labels never expand the page at desktop and tablet widths
+[9/20] [desktop-chromium] › tests\e2e\platform-badge.spec.ts:6:1 › Otras plataformas se apila y no invade las etiquetas de la tarjeta
+[10/20] [desktop-chromium] › tests\e2e\platform-badge.spec.ts:36:1 › Otras plataformas conserva el apilado en la ficha de película
+
+(node:24860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:24860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[11/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › cinema-release-carousel: all films remain reachable and controls track both ends
+
+
+(node:3456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:3456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[12/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › streaming-release-carousel: all films remain reachable and controls track both ends
+[13/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › weekly-recommendations: all films remain reachable and controls track both ends
+[14/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:55:1 › trailer closes with Escape, clears the player, and restores keyboard focus
+[15/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:70:1 › release titles offer a direct route to the film alongside their trailers
+[16/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:78:1 › regular scrolling and keyboard focus reveal films beyond the visible strip
+[17/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:92:1 › all rails fit narrow screens and update their controls after resizing
+[18/20] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:112:1 › offscreen platform labels never expand the page at desktop and tablet widths
+[19/20] [mobile-webkit] › tests\e2e\platform-badge.spec.ts:6:1 › Otras plataformas se apila y no invade las etiquetas de la tarjeta
+[20/20] [mobile-webkit] › tests\e2e\platform-badge.spec.ts:36:1 › Otras plataformas conserva el apilado en la ficha de película
+  20 passed (32.8s)

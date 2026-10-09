@@ -1,0 +1,134 @@
+{
+  "title": "Volver a los 17",
+  "slug": "volver-a-los-17-2026",
+  "startedAt": "2026-10-09T12:53:12.366Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Volver a los 17",
+    "--original-title",
+    "Volver a los 17",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt41742811"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt41742811&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11083455/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11083455,
+      "title": "Volver a los 17",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt41742811",
+      "tmdbId": 1606912
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "Volver a los 17",
+      "englishTitle": "Volver a los 17",
+      "year": 2026,
+      "originalLanguage": "es",
+      "runtimeMinutes": null,
+      "releaseDate": "2026-01-08",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "imdbId": "tt41742811",
+      "tmdbId": 1606912,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [
+        1148277,
+        1170978,
+        1174733,
+        1227890,
+        1231335,
+        1256529,
+        1266562,
+        1370154,
+        1402164,
+        1422618,
+        1587407,
+        1594151,
+        1612068,
+        1614728,
+        1629408,
+        1641655,
+        1652013,
+        1694099,
+        1747575,
+        11091059
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 73337302,
+          "name": "Gonzalo Badilla",
+          "type": "Crew",
+          "role": "Director, Executive Producer, Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73852033,
+          "name": "Sebastián Badilla",
+          "type": "Crew",
+          "role": "Executive Producer, Producer, Writer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79454016,
+          "name": "Iñaki Fernandois",
+          "type": "Crew",
+          "role": "Director of Photography, Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73852033,
+          "name": "Sebastián Badilla",
+          "type": "Cast",
+          "role": "Paty / Pipe Ortiz",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710134236,
+          "name": "Carolina Domenech",
+          "type": "Cast",
+          "role": "Delfina Pacheco",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79163835,
+          "name": "Manuela Viale",
+          "type": "Cast",
+          "role": "Amalia Braun",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 710963957,
+          "name": "Bruno Rondini",
+          "type": "Cast",
+          "role": "Mosquito",
+          "order": 5
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

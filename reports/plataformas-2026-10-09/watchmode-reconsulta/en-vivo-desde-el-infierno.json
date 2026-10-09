@@ -1,0 +1,259 @@
+{
+  "title": "En vivo desde el infierno",
+  "slug": "en-vivo-desde-el-infierno",
+  "startedAt": "2026-10-09T12:53:15.446Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "En vivo desde el infierno",
+    "--original-title",
+    "Livestream from Hell",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--tmdb-id",
+    "1437195"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1437195&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1979177/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1979177,
+      "title": "Livestream from Hell",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt43750202",
+      "tmdbId": 1437195
+    },
+    "metadata": {
+      "title": "En vivo desde el infierno",
+      "originalTitle": "Livestream from Hell",
+      "englishTitle": "Livestream from Hell",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 77,
+      "releaseDate": "2026-09-30",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "imdbId": "tt43750202",
+      "tmdbId": 1437195,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=RvkFXSwqoyE",
+      "similarWatchmodeTitleIds": [
+        195472,
+        1505709,
+        1609893,
+        1646846,
+        1696142
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7531647,
+          "name": "Kevin Hart",
+          "type": "Crew",
+          "role": "Author, Story",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78962715,
+          "name": "Dillon Baldassero",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79303985,
+          "name": "Gavin Brivik",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79843235,
+          "name": "Dominic Easter",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79981988,
+          "name": "Biniam Bizuneh",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711590368,
+          "name": "Harold Beron III",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711676060,
+          "name": "Drew Friedman",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711676066,
+          "name": "Adam Kaplan",
+          "type": "Crew",
+          "role": "Co-Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7531647,
+          "name": "Kevin Hart",
+          "type": "Cast",
+          "role": "Kevin Hart",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711393786,
+          "name": "Kai Cenat",
+          "type": "Cast",
+          "role": "Kai Cenat",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710829024,
+          "name": "Druski",
+          "type": "Cast",
+          "role": "Druski",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 711241080,
+          "name": "Kam Patterson",
+          "type": "Cast",
+          "role": "Dasher",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 711676078,
+          "name": "Chen-Ruei'Ray' Hsu",
+          "type": "Cast",
+          "role": "Chen-Ruei 'Ray' Hsu",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 7524052,
+          "name": "Kel Mitchell",
+          "type": "Cast",
+          "role": "Kel Mitchell",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 711346889,
+          "name": "Sexyy Red",
+          "type": "Cast",
+          "role": "Sexyy Red",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 711659299,
+          "name": "Duke Dennis",
+          "type": "Cast",
+          "role": "Duke Dennis",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 711659300,
+          "name": "Roll Tide Willie",
+          "type": "Cast",
+          "role": "Roll Tide Willie",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 7546037,
+          "name": "La La Anthony",
+          "type": "Cast",
+          "role": "La La Anthony",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 79705210,
+          "name": "Winnie Harlow",
+          "type": "Cast",
+          "role": "Winnie Harlow",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 79868881,
+          "name": "Marshawn Lynch",
+          "type": "Cast",
+          "role": "Marshawn Lynch",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 7443380,
+          "name": "Jerry O'Connell",
+          "type": "Cast",
+          "role": "Jerry O'Connell",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 79002136,
+          "name": "Sean A. Rosales",
+          "type": "Cast",
+          "role": "Cameraman",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 710844070,
+          "name": "Chinyere Dobson",
+          "type": "Cast",
+          "role": "Balloon Girl #1",
+          "order": 16
+        },
+        {
+          "watchmodePersonId": 711666113,
+          "name": "Vy Dao",
+          "type": "Cast",
+          "role": "Balloon Girl #3",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 711592476,
+          "name": "Jackie Brougham",
+          "type": "Cast",
+          "role": "Balloon Girl #4",
+          "order": 19
+        },
+        {
+          "watchmodePersonId": 711666116,
+          "name": "Carly Carter",
+          "type": "Cast",
+          "role": "Stud",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 71397244,
+          "name": "James Eason",
+          "type": "Cast",
+          "role": "Saxophone Player",
+          "order": 21
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 2.8,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

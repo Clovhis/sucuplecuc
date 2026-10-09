@@ -1,0 +1,182 @@
+{
+  "title": "Noches de fútbol americano con Miller",
+  "slug": "miller-night-football",
+  "startedAt": "2026-10-09T12:53:17.807Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Noches de fútbol americano con Miller",
+    "--original-title",
+    "Miller Night Football",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--tmdb-id",
+    "1757068"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1757068&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11230620/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11230620,
+      "title": "Miller Night Football",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt46066368",
+      "tmdbId": 1757068
+    },
+    "metadata": {
+      "title": "Miller Night Football",
+      "originalTitle": "Miller Night Football",
+      "englishTitle": "Miller Night Football",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 43,
+      "releaseDate": "2026-09-29",
+      "genres": [],
+      "imdbId": "tt46066368",
+      "tmdbId": 1757068,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=0XxjkAVCvIk",
+      "similarWatchmodeTitleIds": [
+        113669,
+        172099,
+        1355945,
+        1357278,
+        1409827,
+        1449572,
+        1572354,
+        1582601,
+        3213156,
+        3225301,
+        3228172,
+        3246271,
+        3258970,
+        3264031,
+        3283854
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 72512028,
+          "name": "Keith Cossrow",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73521129,
+          "name": "Ken Rodgers",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78931822,
+          "name": "Nancy Abraham",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79052719,
+          "name": "Lisa Heller",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79343254,
+          "name": "Ross Ketover",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79417034,
+          "name": "Bentley Weiner",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79417035,
+          "name": "Abtin Motia",
+          "type": "Crew",
+          "role": "Supervising Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79760638,
+          "name": "Jeff Cameron",
+          "type": "Crew",
+          "role": "Director, Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710464304,
+          "name": "Jessica Boddy",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7218953,
+          "name": "Dennis Miller",
+          "type": "Cast",
+          "role": "Self",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78989251,
+          "name": "Al Michaels",
+          "type": "Cast",
+          "role": "Self",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79733504,
+          "name": "Dan Fouts",
+          "type": "Cast",
+          "role": "Self",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 79934275,
+          "name": "David Israel",
+          "type": "Cast",
+          "role": "Self",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 7303441,
+          "name": "Fred Gaudelli",
+          "type": "Cast",
+          "role": "Self",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 7188888,
+          "name": "Dana Carvey",
+          "type": "Cast",
+          "role": "Self",
+          "order": 7
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

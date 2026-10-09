@@ -1,0 +1,2060 @@
+[
+  {
+    "title": "Romanchakam",
+    "slug": "romanchakam",
+    "startedAt": "2026-10-09T12:53:02.734Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Romanchakam",
+      "--original-title",
+      "రోమాంచకం",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt41971399"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt41971399&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11125638/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11125638,
+        "title": "Romanchakam",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt41971399",
+        "tmdbId": 1669281
+      },
+      "metadata": {
+        "title": "Romanchakam",
+        "originalTitle": "రోమాంచకం",
+        "englishTitle": "Romanchakam",
+        "year": 2026,
+        "originalLanguage": "te",
+        "runtimeMinutes": 140,
+        "releaseDate": "2026-09-02",
+        "genres": [
+          "Romance",
+          "Comedy",
+          "Drama"
+        ],
+        "imdbId": "tt41971399",
+        "tmdbId": 1669281,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=SuHxIe7g-i4",
+        "similarWatchmodeTitleIds": [
+          168882,
+          1109250,
+          1120477,
+          1212944,
+          1237436,
+          1476860,
+          1582289,
+          1597453,
+          1607820,
+          1634607,
+          1646348,
+          1649731,
+          1676703,
+          1680905,
+          1693895,
+          1752924,
+          1844437,
+          1889550,
+          1947609,
+          11091059
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 78617898,
+            "name": "Sandeep Reddy Vanga",
+            "type": "Crew",
+            "role": "Presenter",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78994381,
+            "name": "Hari Haran",
+            "type": "Crew",
+            "role": "Sound Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78994382,
+            "name": "Sachin Sudhakaran",
+            "type": "Crew",
+            "role": "Sound Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79102410,
+            "name": "Anantha Sriram",
+            "type": "Crew",
+            "role": "Lyricist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79263774,
+            "name": "Pranay Reddy Vanga",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79355684,
+            "name": "Vasuki Vaibhav",
+            "type": "Crew",
+            "role": "Original Music Composer, Playback Singer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79374085,
+            "name": "Rambabu Gosala",
+            "type": "Crew",
+            "role": "Lyricist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79496127,
+            "name": "Uday Bhanu Avirineni",
+            "type": "Crew",
+            "role": "Publicist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79496128,
+            "name": "Anil Kumar Vanga",
+            "type": "Crew",
+            "role": "Publicist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79539964,
+            "name": "Ranadheer Reddy",
+            "type": "Crew",
+            "role": "Visual Effects Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79678412,
+            "name": "Chandrabose",
+            "type": "Crew",
+            "role": "Lyricist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710718783,
+            "name": "Vishnu Vardhan",
+            "type": "Crew",
+            "role": "Colorist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710938929,
+            "name": "Pavan Kumar Pappula",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710953557,
+            "name": "Meeraqh",
+            "type": "Crew",
+            "role": "Dialogue",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711448027,
+            "name": "Akunur Keerthana",
+            "type": "Crew",
+            "role": "Costume Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711448028,
+            "name": "Kushi Deepak Wankhede",
+            "type": "Crew",
+            "role": "Production Design",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711448030,
+            "name": "Sai Tarun Vaddamani",
+            "type": "Crew",
+            "role": "Associate Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711448033,
+            "name": "Reddi Chandra Sekhar",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711448037,
+            "name": "Nandini Thota",
+            "type": "Crew",
+            "role": "Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711448040,
+            "name": "Aravind Poloju",
+            "type": "Crew",
+            "role": "Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711656326,
+            "name": "Ramesh Butham",
+            "type": "Crew",
+            "role": "Lyricist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711656332,
+            "name": "Patil Subba Reddy",
+            "type": "Crew",
+            "role": "Production Executive",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711656340,
+            "name": "Irrinki Venkanna",
+            "type": "Crew",
+            "role": "Focus Puller",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710841520,
+            "name": "Ananthika Sanilkumar",
+            "type": "Cast",
+            "role": "Mythili",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711301383,
+            "name": "Sumanth Prabhas",
+            "type": "Cast",
+            "role": "",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71948686,
+            "name": "Upendra Limaye",
+            "type": "Cast",
+            "role": "",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 79098324,
+            "name": "Venkatesh Kakumanu",
+            "type": "Cast",
+            "role": "",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 710158950,
+            "name": "Mani Aegurla",
+            "type": "Cast",
+            "role": "",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 77078753,
+            "name": "Anudeep",
+            "type": "Cast",
+            "role": "",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 710693773,
+            "name": "Satish Saripalli",
+            "type": "Cast",
+            "role": "",
+            "order": 7
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 4.6,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Blood & Rust",
+    "slug": "blood-y-rust",
+    "startedAt": "2026-10-09T12:53:04.358Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Blood & Rust",
+      "--original-title",
+      "Blood & Rust",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt30342167"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt30342167&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11150586/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11150586,
+        "title": "Blood & Rust",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt30342167",
+        "tmdbId": 1536756
+      },
+      "metadata": {
+        "title": "",
+        "originalTitle": "Blood & Rust",
+        "englishTitle": "Blood & Rust",
+        "year": 2026,
+        "originalLanguage": "en",
+        "runtimeMinutes": 96,
+        "releaseDate": "2026-05-08",
+        "genres": [
+          "Horror",
+          "Action"
+        ],
+        "imdbId": "tt30342167",
+        "tmdbId": 1536756,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=FxgJEes0bOg",
+        "similarWatchmodeTitleIds": [
+          1130972,
+          1162319,
+          1283474,
+          1307772,
+          1321490,
+          1362283,
+          1407015,
+          1420857,
+          1448402,
+          1562330,
+          1588654,
+          1592886,
+          1595955,
+          1598570,
+          1614624,
+          1620890,
+          1630735,
+          1642517,
+          1685557,
+          1696586,
+          1769673,
+          1824704,
+          1859005,
+          1890366,
+          1921730
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 7762284,
+            "name": "Philip R. Garrett",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79615571,
+            "name": "Wolf Stahl",
+            "type": "Crew",
+            "role": "Writer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79615573,
+            "name": "Jeremy Herbert",
+            "type": "Crew",
+            "role": "Writer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79734196,
+            "name": "John Hale III",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79786734,
+            "name": "Jeremy Herbert",
+            "type": "Crew",
+            "role": "Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710571048,
+            "name": "Sammy Lahiri",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710968957,
+            "name": "Jack Roman",
+            "type": "Crew",
+            "role": "Co-Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71614591,
+            "name": "Mark Kelly",
+            "type": "Cast",
+            "role": "Belko",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79615576,
+            "name": "Morgan McLeod",
+            "type": "Cast",
+            "role": "Lamont Guest",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7829641,
+            "name": "Ross Partridge",
+            "type": "Cast",
+            "role": "The Boss",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 710612193,
+            "name": "Beau Roberts",
+            "type": "Cast",
+            "role": "Sheriff Schaeffer",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 710165695,
+            "name": "Diana Frankhauser",
+            "type": "Cast",
+            "role": "Marlene Fenton",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 79673780,
+            "name": "Jonathan Tazewell",
+            "type": "Cast",
+            "role": "Joe Guest",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 79926058,
+            "name": "Jim Azelvandre",
+            "type": "Cast",
+            "role": "Terence",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 73165426,
+            "name": "Chris Hahn",
+            "type": "Cast",
+            "role": "The Trucker",
+            "order": 9
+          },
+          {
+            "watchmodePersonId": 7762284,
+            "name": "Philip R. Garrett",
+            "type": "Cast",
+            "role": "Tunnel Tom",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 710012600,
+            "name": "Louie Kurtzman",
+            "type": "Cast",
+            "role": "Diner Dan",
+            "order": 12
+          },
+          {
+            "watchmodePersonId": 711279278,
+            "name": "Mitchi Collette",
+            "type": "Cast",
+            "role": "Grams",
+            "order": 14
+          },
+          {
+            "watchmodePersonId": 711279279,
+            "name": "Frank Meija",
+            "type": "Cast",
+            "role": "Tape Face",
+            "order": 15
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Las Redes Sociales Mataron a la Estrella de Cine",
+    "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine",
+    "startedAt": "2026-10-09T12:53:06.209Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Las Redes Sociales Mataron a la Estrella de Cine",
+      "--original-title",
+      "Social Media Killed the Movie Star",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt45635534"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt45635534&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11230411/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11230411,
+        "title": "Social Media Killed the Movie Star",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt45635534",
+        "tmdbId": null
+      },
+      "metadata": {
+        "title": "Social Media Killed the Movie Star",
+        "originalTitle": "Social Media Killed the Movie Star",
+        "englishTitle": "Social Media Killed the Movie Star",
+        "year": 2026,
+        "originalLanguage": null,
+        "runtimeMinutes": null,
+        "releaseDate": null,
+        "genres": [],
+        "imdbId": "tt45635534",
+        "tmdbId": null,
+        "trailerYoutubeUrl": null,
+        "similarWatchmodeTitleIds": [],
+        "credits": []
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "May Contain: My Life",
+    "slug": "may-contain-my-life",
+    "startedAt": "2026-10-09T12:53:07.727Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "May Contain: My Life",
+      "--original-title",
+      "May Contain: My Life",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt21146916"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt21146916&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1702851/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1702851,
+        "title": "May Contain: My Life",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt21146916",
+        "tmdbId": 1078817
+      },
+      "metadata": {
+        "title": "May Contain: My Life",
+        "originalTitle": "May Contain: My Life",
+        "englishTitle": "May Contain: My Life",
+        "year": 2026,
+        "originalLanguage": "en",
+        "runtimeMinutes": 78,
+        "releaseDate": "2026-05-22",
+        "genres": [
+          "Drama",
+          "Documentary"
+        ],
+        "imdbId": "tt21146916",
+        "tmdbId": 1078817,
+        "trailerYoutubeUrl": null,
+        "similarWatchmodeTitleIds": [
+          143247,
+          165744,
+          196132,
+          1325740,
+          1337831,
+          1383785,
+          1424876,
+          1426658,
+          1610478,
+          1613696,
+          1627728,
+          1647031,
+          1674464,
+          1689775,
+          1914059,
+          1980197,
+          11001921,
+          11107093,
+          4144459,
+          547062
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 74087353,
+            "name": "August Maturo",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 74088928,
+            "name": "Ava Kolker",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79120675,
+            "name": "Isaac Alongi",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79474806,
+            "name": "Jennifer Greenstreet",
+            "type": "Crew",
+            "role": "Director, Editor, Producer, Writer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710397833,
+            "name": "Chloee O'Hayon-Crosby",
+            "type": "Crew",
+            "role": "Costume Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710584419,
+            "name": "Cesar Reyes",
+            "type": "Crew",
+            "role": "Production Design",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710903511,
+            "name": "Chad Swenson",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71429823,
+            "name": "Jerome Bettis",
+            "type": "Cast",
+            "role": "",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79486191,
+            "name": "Hannah Brown",
+            "type": "Cast",
+            "role": "",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 74087353,
+            "name": "August Maturo",
+            "type": "Cast",
+            "role": "Zach",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 74088928,
+            "name": "Ava Kolker",
+            "type": "Cast",
+            "role": "Aubrey",
+            "order": 11
+          },
+          {
+            "watchmodePersonId": 710686561,
+            "name": "Tanner Hagen",
+            "type": "Cast",
+            "role": "Sam",
+            "order": 12
+          },
+          {
+            "watchmodePersonId": 711095690,
+            "name": "Zeina Montifar",
+            "type": "Cast",
+            "role": "Lydia",
+            "order": 13
+          },
+          {
+            "watchmodePersonId": 79661016,
+            "name": "Presley Alexander",
+            "type": "Cast",
+            "role": "Quinn",
+            "order": 14
+          },
+          {
+            "watchmodePersonId": 710633985,
+            "name": "Fabio Lo Fria",
+            "type": "Cast",
+            "role": "EMT",
+            "order": 15
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Project Baby",
+    "slug": "project-baby-2026",
+    "startedAt": "2026-10-09T12:53:09.313Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Project Baby",
+      "--original-title",
+      "Project Baby",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--tmdb-id",
+      "1705390"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1705390&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11181506/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11181506,
+        "title": "Project Baby",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": null,
+        "tmdbId": 1705390
+      },
+      "metadata": {
+        "title": "Project Baby",
+        "originalTitle": "Project Baby",
+        "englishTitle": "Project Baby",
+        "year": 2026,
+        "originalLanguage": "tl",
+        "runtimeMinutes": 110,
+        "releaseDate": "2026-06-10",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "imdbId": null,
+        "tmdbId": 1705390,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=qg_LVWeG55M",
+        "similarWatchmodeTitleIds": [
+          122626,
+          171771,
+          184869,
+          1114436,
+          1201982,
+          1231335,
+          1287598,
+          1357066,
+          1388102,
+          1564053,
+          1632890,
+          1638940,
+          1681063,
+          1694694,
+          1696644,
+          1843115,
+          1844437,
+          1884871,
+          1947609,
+          11091059
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 7270208,
+            "name": "Eric Quizon",
+            "type": "Crew",
+            "role": "Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7483859,
+            "name": "Jose Javier Reyes",
+            "type": "Crew",
+            "role": "Writer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71257311,
+            "name": "Eli Balce",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71547826,
+            "name": "Lea A. Calmerin",
+            "type": "Crew",
+            "role": "Supervising Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78959843,
+            "name": "Roselle Y. Monteverde",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79075368,
+            "name": "Vanessa U. De Leon",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79333338,
+            "name": "Pamela Faye Baldevieso",
+            "type": "Crew",
+            "role": "Line Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79416085,
+            "name": "Marielle Hizon",
+            "type": "Crew",
+            "role": "Production Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79418967,
+            "name": "Carmel Josine Jacomille",
+            "type": "Crew",
+            "role": "Additional Dialogue",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711583654,
+            "name": "John Paul Egalin Abellera",
+            "type": "Crew",
+            "role": "Additional Dialogue, Creative Consultant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711583655,
+            "name": "Justin Caunan",
+            "type": "Crew",
+            "role": "Additional Dialogue, Intern",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71792557,
+            "name": "Rico Blanco",
+            "type": "Cast",
+            "role": "Migo",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73895501,
+            "name": "Sue Ramirez",
+            "type": "Cast",
+            "role": "Sandy",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71030640,
+            "name": "Alice Dixson",
+            "type": "Cast",
+            "role": "Millie",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 78976362,
+            "name": "Alex Calleja",
+            "type": "Cast",
+            "role": "",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 72638426,
+            "name": "Matt Lozano",
+            "type": "Cast",
+            "role": "",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 79576037,
+            "name": "Arra San Agustin",
+            "type": "Cast",
+            "role": "",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 78981278,
+            "name": "Yasser Marta",
+            "type": "Cast",
+            "role": "",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 710009665,
+            "name": "Kimson Tan",
+            "type": "Cast",
+            "role": "",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 710873388,
+            "name": "Drei Arias",
+            "type": "Cast",
+            "role": "",
+            "order": 11
+          },
+          {
+            "watchmodePersonId": 711555715,
+            "name": "Than Perez",
+            "type": "Cast",
+            "role": "",
+            "order": 12
+          },
+          {
+            "watchmodePersonId": 711583649,
+            "name": "Jazzil Sarinas",
+            "type": "Cast",
+            "role": "",
+            "order": 13
+          },
+          {
+            "watchmodePersonId": 711583650,
+            "name": "Britney Anne Romero",
+            "type": "Cast",
+            "role": "",
+            "order": 14
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Lo único que te Pido",
+    "slug": "lo-unico-que-te-pido",
+    "startedAt": "2026-10-09T12:53:10.858Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Lo único que te Pido",
+      "--original-title",
+      "Lo único que te Pido",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt48242194"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt48242194&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11231988/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11231988,
+        "title": "Lo único que te Pido",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt48242194",
+        "tmdbId": null
+      },
+      "metadata": {
+        "title": "Lo único que te Pido",
+        "originalTitle": "Lo único que te Pido",
+        "englishTitle": "Lo único que te Pido",
+        "year": 2026,
+        "originalLanguage": null,
+        "runtimeMinutes": null,
+        "releaseDate": null,
+        "genres": [],
+        "imdbId": "tt48242194",
+        "tmdbId": null,
+        "trailerYoutubeUrl": null,
+        "similarWatchmodeTitleIds": [],
+        "credits": []
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Volver a los 17",
+    "slug": "volver-a-los-17-2026",
+    "startedAt": "2026-10-09T12:53:12.366Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Volver a los 17",
+      "--original-title",
+      "Volver a los 17",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt41742811"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt41742811&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11083455/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11083455,
+        "title": "Volver a los 17",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt41742811",
+        "tmdbId": 1606912
+      },
+      "metadata": {
+        "title": "",
+        "originalTitle": "Volver a los 17",
+        "englishTitle": "Volver a los 17",
+        "year": 2026,
+        "originalLanguage": "es",
+        "runtimeMinutes": null,
+        "releaseDate": "2026-01-08",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "imdbId": "tt41742811",
+        "tmdbId": 1606912,
+        "trailerYoutubeUrl": null,
+        "similarWatchmodeTitleIds": [
+          1148277,
+          1170978,
+          1174733,
+          1227890,
+          1231335,
+          1256529,
+          1266562,
+          1370154,
+          1402164,
+          1422618,
+          1587407,
+          1594151,
+          1612068,
+          1614728,
+          1629408,
+          1641655,
+          1652013,
+          1694099,
+          1747575,
+          11091059
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 73337302,
+            "name": "Gonzalo Badilla",
+            "type": "Crew",
+            "role": "Director, Executive Producer, Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73852033,
+            "name": "Sebastián Badilla",
+            "type": "Crew",
+            "role": "Executive Producer, Producer, Writer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79454016,
+            "name": "Iñaki Fernandois",
+            "type": "Crew",
+            "role": "Director of Photography, Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73852033,
+            "name": "Sebastián Badilla",
+            "type": "Cast",
+            "role": "Paty / Pipe Ortiz",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710134236,
+            "name": "Carolina Domenech",
+            "type": "Cast",
+            "role": "Delfina Pacheco",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79163835,
+            "name": "Manuela Viale",
+            "type": "Cast",
+            "role": "Amalia Braun",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 710963957,
+            "name": "Bruno Rondini",
+            "type": "Cast",
+            "role": "Mosquito",
+            "order": 5
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "El viudo: Hasta que la muerte nos separe",
+    "slug": "the-widower-til-death-do-us-part",
+    "startedAt": "2026-10-09T12:53:13.913Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "El viudo: Hasta que la muerte nos separe",
+      "--original-title",
+      "The Widower: 'Til Death Do Us Part",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt44568097"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt44568097&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11228665/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11228665,
+        "title": "The Widower: 'Til Death Do Us Part",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt44568097",
+        "tmdbId": 1758536
+      },
+      "metadata": {
+        "title": "",
+        "originalTitle": "The Widower: 'Til Death Do Us Part",
+        "englishTitle": "The Widower: 'Til Death Do Us Part",
+        "year": 2026,
+        "originalLanguage": "en",
+        "runtimeMinutes": 91,
+        "releaseDate": "2026-09-30",
+        "genres": [
+          "Documentary"
+        ],
+        "imdbId": "tt44568097",
+        "tmdbId": 1758536,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=2Xn881UkR3s",
+        "similarWatchmodeTitleIds": [
+          1369009,
+          1532024,
+          1629753,
+          1700251,
+          1780723,
+          1864032,
+          11075341,
+          3161952,
+          3169121,
+          3240223,
+          3259234,
+          3260141,
+          3269058,
+          3291842,
+          3310445,
+          3316685,
+          539959,
+          540314,
+          541840,
+          543976,
+          546214,
+          547396,
+          554542,
+          555453,
+          555809
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 7155976,
+            "name": "Chris Smith",
+            "type": "Crew",
+            "role": "Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7163469,
+            "name": "Christopher Messina",
+            "type": "Crew",
+            "role": "Cinematography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72052433,
+            "name": "Andy Berg",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72068263,
+            "name": "Anton Short",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72263071,
+            "name": "Elizabeth Fischer",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73128249,
+            "name": "Britton Foster",
+            "type": "Crew",
+            "role": "Cinematography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78974504,
+            "name": "Liz Cole",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710630177,
+            "name": "Dan Slepian",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711079205,
+            "name": "Kimberley Ferdinando",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711573745,
+            "name": "Liam Epstein",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711644168,
+            "name": "Kitty Samuels",
+            "type": "Crew",
+            "role": "Associate Producer",
+            "order": 1
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 6.8,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "En vivo desde el infierno",
+    "slug": "en-vivo-desde-el-infierno",
+    "startedAt": "2026-10-09T12:53:15.446Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "En vivo desde el infierno",
+      "--original-title",
+      "Livestream from Hell",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--tmdb-id",
+      "1437195"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1437195&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1979177/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1979177,
+        "title": "Livestream from Hell",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt43750202",
+        "tmdbId": 1437195
+      },
+      "metadata": {
+        "title": "En vivo desde el infierno",
+        "originalTitle": "Livestream from Hell",
+        "englishTitle": "Livestream from Hell",
+        "year": 2026,
+        "originalLanguage": "en",
+        "runtimeMinutes": 77,
+        "releaseDate": "2026-09-30",
+        "genres": [
+          "Horror",
+          "Comedy"
+        ],
+        "imdbId": "tt43750202",
+        "tmdbId": 1437195,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=RvkFXSwqoyE",
+        "similarWatchmodeTitleIds": [
+          195472,
+          1505709,
+          1609893,
+          1646846,
+          1696142
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 7531647,
+            "name": "Kevin Hart",
+            "type": "Crew",
+            "role": "Author, Story",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78962715,
+            "name": "Dillon Baldassero",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79303985,
+            "name": "Gavin Brivik",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79843235,
+            "name": "Dominic Easter",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79981988,
+            "name": "Biniam Bizuneh",
+            "type": "Crew",
+            "role": "Screenplay",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711590368,
+            "name": "Harold Beron III",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711676060,
+            "name": "Drew Friedman",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711676066,
+            "name": "Adam Kaplan",
+            "type": "Crew",
+            "role": "Co-Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7531647,
+            "name": "Kevin Hart",
+            "type": "Cast",
+            "role": "Kevin Hart",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711393786,
+            "name": "Kai Cenat",
+            "type": "Cast",
+            "role": "Kai Cenat",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710829024,
+            "name": "Druski",
+            "type": "Cast",
+            "role": "Druski",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 711241080,
+            "name": "Kam Patterson",
+            "type": "Cast",
+            "role": "Dasher",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 711676078,
+            "name": "Chen-Ruei'Ray' Hsu",
+            "type": "Cast",
+            "role": "Chen-Ruei 'Ray' Hsu",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 7524052,
+            "name": "Kel Mitchell",
+            "type": "Cast",
+            "role": "Kel Mitchell",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 711346889,
+            "name": "Sexyy Red",
+            "type": "Cast",
+            "role": "Sexyy Red",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 711659299,
+            "name": "Duke Dennis",
+            "type": "Cast",
+            "role": "Duke Dennis",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 711659300,
+            "name": "Roll Tide Willie",
+            "type": "Cast",
+            "role": "Roll Tide Willie",
+            "order": 9
+          },
+          {
+            "watchmodePersonId": 7546037,
+            "name": "La La Anthony",
+            "type": "Cast",
+            "role": "La La Anthony",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 79705210,
+            "name": "Winnie Harlow",
+            "type": "Cast",
+            "role": "Winnie Harlow",
+            "order": 12
+          },
+          {
+            "watchmodePersonId": 79868881,
+            "name": "Marshawn Lynch",
+            "type": "Cast",
+            "role": "Marshawn Lynch",
+            "order": 13
+          },
+          {
+            "watchmodePersonId": 7443380,
+            "name": "Jerry O'Connell",
+            "type": "Cast",
+            "role": "Jerry O'Connell",
+            "order": 14
+          },
+          {
+            "watchmodePersonId": 79002136,
+            "name": "Sean A. Rosales",
+            "type": "Cast",
+            "role": "Cameraman",
+            "order": 15
+          },
+          {
+            "watchmodePersonId": 710844070,
+            "name": "Chinyere Dobson",
+            "type": "Cast",
+            "role": "Balloon Girl #1",
+            "order": 16
+          },
+          {
+            "watchmodePersonId": 711666113,
+            "name": "Vy Dao",
+            "type": "Cast",
+            "role": "Balloon Girl #3",
+            "order": 18
+          },
+          {
+            "watchmodePersonId": 711592476,
+            "name": "Jackie Brougham",
+            "type": "Cast",
+            "role": "Balloon Girl #4",
+            "order": 19
+          },
+          {
+            "watchmodePersonId": 711666116,
+            "name": "Carly Carter",
+            "type": "Cast",
+            "role": "Stud",
+            "order": 20
+          },
+          {
+            "watchmodePersonId": 71397244,
+            "name": "James Eason",
+            "type": "Cast",
+            "role": "Saxophone Player",
+            "order": 21
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 2.8,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Crowyokan",
+    "slug": "crowyokan",
+    "startedAt": "2026-10-09T12:53:16.983Z",
+    "exit": 1,
+    "queryArgs": [
+      "--title",
+      "Crowyokan",
+      "--original-title",
+      "Crowyokan",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt48347106"
+    ],
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.",
+    "data": null
+  },
+  {
+    "title": "Noches de fútbol americano con Miller",
+    "slug": "miller-night-football",
+    "startedAt": "2026-10-09T12:53:17.807Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Noches de fútbol americano con Miller",
+      "--original-title",
+      "Miller Night Football",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--tmdb-id",
+      "1757068"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1757068&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11230620/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11230620,
+        "title": "Miller Night Football",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt46066368",
+        "tmdbId": 1757068
+      },
+      "metadata": {
+        "title": "Miller Night Football",
+        "originalTitle": "Miller Night Football",
+        "englishTitle": "Miller Night Football",
+        "year": 2026,
+        "originalLanguage": "en",
+        "runtimeMinutes": 43,
+        "releaseDate": "2026-09-29",
+        "genres": [],
+        "imdbId": "tt46066368",
+        "tmdbId": 1757068,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=0XxjkAVCvIk",
+        "similarWatchmodeTitleIds": [
+          113669,
+          172099,
+          1355945,
+          1357278,
+          1409827,
+          1449572,
+          1572354,
+          1582601,
+          3213156,
+          3225301,
+          3228172,
+          3246271,
+          3258970,
+          3264031,
+          3283854
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 72512028,
+            "name": "Keith Cossrow",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73521129,
+            "name": "Ken Rodgers",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78931822,
+            "name": "Nancy Abraham",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79052719,
+            "name": "Lisa Heller",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79343254,
+            "name": "Ross Ketover",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79417034,
+            "name": "Bentley Weiner",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79417035,
+            "name": "Abtin Motia",
+            "type": "Crew",
+            "role": "Supervising Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79760638,
+            "name": "Jeff Cameron",
+            "type": "Crew",
+            "role": "Director, Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710464304,
+            "name": "Jessica Boddy",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7218953,
+            "name": "Dennis Miller",
+            "type": "Cast",
+            "role": "Self",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78989251,
+            "name": "Al Michaels",
+            "type": "Cast",
+            "role": "Self",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79733504,
+            "name": "Dan Fouts",
+            "type": "Cast",
+            "role": "Self",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 79934275,
+            "name": "David Israel",
+            "type": "Cast",
+            "role": "Self",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 7303441,
+            "name": "Fred Gaudelli",
+            "type": "Cast",
+            "role": "Self",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 7188888,
+            "name": "Dana Carvey",
+            "type": "Cast",
+            "role": "Self",
+            "order": 7
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Jamie Foxx: Take Care of Yourself",
+    "slug": "jamie-foxx-take-care-of-yourself",
+    "startedAt": "2026-10-09T12:53:19.326Z",
+    "exit": 1,
+    "queryArgs": [
+      "--title",
+      "Jamie Foxx: Take Care of Yourself",
+      "--original-title",
+      "Jamie Foxx: Take Care of Yourself",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt45915205"
+    ],
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.",
+    "data": null
+  },
+  {
+    "title": "Mojo Brookzz: I Know You Lying",
+    "slug": "mojo-brookzz-i-know-you-lying",
+    "startedAt": "2026-10-09T12:53:20.135Z",
+    "exit": 1,
+    "queryArgs": [
+      "--title",
+      "Mojo Brookzz: I Know You Lying",
+      "--original-title",
+      "Mojo Brookzz: I Know You Lying",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt45819060"
+    ],
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.",
+    "data": null
+  },
+  {
+    "title": "Sam Morril: Incorrect",
+    "slug": "sam-morril-incorrect",
+    "startedAt": "2026-10-09T12:53:20.951Z",
+    "exit": 1,
+    "queryArgs": [
+      "--title",
+      "Sam Morril: Incorrect",
+      "--original-title",
+      "Sam Morril: Incorrect",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--imdb-id",
+      "tt45584335"
+    ],
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.",
+    "data": null
+  },
+  {
+    "title": "Adili Idola Celebrity Roast: Reza Oktovian",
+    "slug": "adili-idola-celebrity-roast-reza-oktovian",
+    "startedAt": "2026-10-09T12:53:21.764Z",
+    "exit": 0,
+    "queryArgs": [
+      "--title",
+      "Adili Idola Celebrity Roast: Reza Oktovian",
+      "--original-title",
+      "Adili Idola Celebrity Roast: Reza Oktovian",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--tmdb-id",
+      "1706128"
+    ],
+    "error": null,
+    "data": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1706128&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11182922/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11182922,
+        "title": "Adili Idola Celebrity Roast: Reza Oktovian",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": null,
+        "tmdbId": 1706128
+      },
+      "metadata": {
+        "title": "Adili Idola Celebrity Roast: Reza Oktovian",
+        "originalTitle": "Adili Idola Celebrity Roast: Reza Oktovian",
+        "englishTitle": "Adili Idola Celebrity Roast: Reza Oktovian",
+        "year": 2026,
+        "originalLanguage": "id",
+        "runtimeMinutes": 144,
+        "releaseDate": "2026-10-01",
+        "genres": [
+          "Comedy"
+        ],
+        "imdbId": null,
+        "tmdbId": 1706128,
+        "trailerYoutubeUrl": null,
+        "similarWatchmodeTitleIds": [
+          151345,
+          159189,
+          1142021,
+          1262935,
+          1653889,
+          1655100,
+          1664008,
+          1664971,
+          1671870,
+          345186,
+          4143647,
+          525691,
+          526590,
+          527018,
+          527020,
+          527752,
+          527754,
+          530011,
+          530152,
+          539815
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 78949295,
+            "name": "Pandji Pragiwaksono",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710886506,
+            "name": "Reza Oktovian",
+            "type": "Cast",
+            "role": "Self - Roastee",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711332455,
+            "name": "Fatih Andhika",
+            "type": "Cast",
+            "role": "Self - Roastmaster",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711657802,
+            "name": "Niko Junius",
+            "type": "Cast",
+            "role": "Self - Roaster",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 710318779,
+            "name": "Indra Frimawan",
+            "type": "Cast",
+            "role": "Self - Roaster",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 711210250,
+            "name": "Rizky Ambon",
+            "type": "Cast",
+            "role": "Self - Roaster",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 711366051,
+            "name": "Grace Martha Graciela",
+            "type": "Cast",
+            "role": "Self - Roaster",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 711366053,
+            "name": "Jessica Prashela",
+            "type": "Cast",
+            "role": "Self - Roaster",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 71949479,
+            "name": "Uus",
+            "type": "Cast",
+            "role": "Self - Roaster",
+            "order": 8
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Disney+ Insider: Worlds Collide Concert Tour",
+    "slug": "disney-plus-insider-worlds-collide-concert-tour",
+    "startedAt": "2026-10-09T12:53:23.282Z",
+    "exit": 1,
+    "queryArgs": [
+      "--title",
+      "Disney+ Insider: Worlds Collide Concert Tour",
+      "--original-title",
+      "Disney+ Insider: Worlds Collide Concert Tour",
+      "--year",
+      "2026",
+      "--include-ratings",
+      "--tmdb-id",
+      "1790050"
+    ],
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.",
+    "data": null
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "baseRef": "main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/project-baby-2026.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/project-baby-2026.json",
+        "poster": "assets/posters/2026/project-baby-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 39034 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 39034,
+        "format": "webp",
+        "width": 480,
+        "height": 708
+      }
+    ],
+    "summary": {
+      "total": 1,
+      "passed": 0,
+      "warnings": 1,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "ok",
+    "message": "review audit passed for 1 file(s)"
+  },
+  "findings": [
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/project-baby-2026.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/project-baby-2026.json",
+      "message": "poster is valid at 39034 bytes; preferred range is 40960-81920 bytes. (480x708)"
+    }
+  ]
+}

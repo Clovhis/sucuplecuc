@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-08. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-09. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4258
+Total de vínculos de películas del catálogo: 4260
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -84,7 +84,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Barry Levinson | `barry-levinson` | /personas/barry-levinson/ | Director / Guionista / Productor | 6 | 5 |
 | Baz Luhrmann | `baz-luhrmann` | /personas/baz-luhrmann/ | Director / Guionista / Productor | 5 | 5 |
 | Beatriz Spelzini | `beatriz-spelzini` | /personas/beatriz-spelzini/ | Actriz | 1 | 5 |
-| Ben Affleck | `ben-affleck` | /personas/ben-affleck/ | Actor | 11 | 7 |
+| Ben Affleck | `ben-affleck` | /personas/ben-affleck/ | Actor | 12 | 7 |
 | Ben Kingsley | `ben-kingsley` | /personas/ben-kingsley/ | Actor | 7 | 7 |
 | Ben Stiller | `ben-stiller` | /personas/ben-stiller/ | Actor / Director / Productor | 5 | 5 |
 | Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 7 | 7 |
@@ -705,7 +705,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Steven Seagal | `steven-seagal` | /personas/steven-seagal/ | Actor | 1 | 3 |
 | Steven Soderbergh | `steven-soderbergh` | /personas/steven-soderbergh/ | Director / Productor / Guionista | 7 | 5 |
 | Steven Spielberg | `steven-spielberg` | /personas/steven-spielberg/ | Director / Productor / Guionista | 36 | 7 |
-| Steven Yeun | `steven-yeun` | /personas/steven-yeun/ | Actor | 4 | 7 |
+| Steven Yeun | `steven-yeun` | /personas/steven-yeun/ | Actor | 5 | 7 |
 | Sunny Sandler | `sunny-sandler` | /personas/sunny-sandler/ | Actriz / Actriz de voz | 5 | 5 |
 | Susan Sarandon | `susan-sarandon` | /personas/susan-sarandon/ | Actriz | 12 | 4 |
 | Susana Pampín | `susana-pampin` | /personas/susana-pampin/ | Actriz | 2 | 5 |

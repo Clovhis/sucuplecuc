@@ -1,0 +1,166 @@
+{
+  "title": "El viudo: Hasta que la muerte nos separe",
+  "slug": "the-widower-til-death-do-us-part",
+  "startedAt": "2026-10-09T12:53:13.913Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "El viudo: Hasta que la muerte nos separe",
+    "--original-title",
+    "The Widower: 'Til Death Do Us Part",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt44568097"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt44568097&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11228665/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11228665,
+      "title": "The Widower: 'Til Death Do Us Part",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt44568097",
+      "tmdbId": 1758536
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "The Widower: 'Til Death Do Us Part",
+      "englishTitle": "The Widower: 'Til Death Do Us Part",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 91,
+      "releaseDate": "2026-09-30",
+      "genres": [
+        "Documentary"
+      ],
+      "imdbId": "tt44568097",
+      "tmdbId": 1758536,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=2Xn881UkR3s",
+      "similarWatchmodeTitleIds": [
+        1369009,
+        1532024,
+        1629753,
+        1700251,
+        1780723,
+        1864032,
+        11075341,
+        3161952,
+        3169121,
+        3240223,
+        3259234,
+        3260141,
+        3269058,
+        3291842,
+        3310445,
+        3316685,
+        539959,
+        540314,
+        541840,
+        543976,
+        546214,
+        547396,
+        554542,
+        555453,
+        555809
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7155976,
+          "name": "Chris Smith",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7163469,
+          "name": "Christopher Messina",
+          "type": "Crew",
+          "role": "Cinematography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72052433,
+          "name": "Andy Berg",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72068263,
+          "name": "Anton Short",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72263071,
+          "name": "Elizabeth Fischer",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73128249,
+          "name": "Britton Foster",
+          "type": "Crew",
+          "role": "Cinematography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78974504,
+          "name": "Liz Cole",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710630177,
+          "name": "Dan Slepian",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711079205,
+          "name": "Kimberley Ferdinando",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711573745,
+          "name": "Liam Epstein",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711644168,
+          "name": "Kitty Samuels",
+          "type": "Crew",
+          "role": "Associate Producer",
+          "order": 1
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 6.8,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

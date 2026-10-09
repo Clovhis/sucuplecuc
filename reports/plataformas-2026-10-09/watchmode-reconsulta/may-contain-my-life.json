@@ -1,0 +1,190 @@
+{
+  "title": "May Contain: My Life",
+  "slug": "may-contain-my-life",
+  "startedAt": "2026-10-09T12:53:07.727Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "May Contain: My Life",
+    "--original-title",
+    "May Contain: My Life",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt21146916"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt21146916&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1702851/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1702851,
+      "title": "May Contain: My Life",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt21146916",
+      "tmdbId": 1078817
+    },
+    "metadata": {
+      "title": "May Contain: My Life",
+      "originalTitle": "May Contain: My Life",
+      "englishTitle": "May Contain: My Life",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 78,
+      "releaseDate": "2026-05-22",
+      "genres": [
+        "Drama",
+        "Documentary"
+      ],
+      "imdbId": "tt21146916",
+      "tmdbId": 1078817,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [
+        143247,
+        165744,
+        196132,
+        1325740,
+        1337831,
+        1383785,
+        1424876,
+        1426658,
+        1610478,
+        1613696,
+        1627728,
+        1647031,
+        1674464,
+        1689775,
+        1914059,
+        1980197,
+        11001921,
+        11107093,
+        4144459,
+        547062
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 74087353,
+          "name": "August Maturo",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74088928,
+          "name": "Ava Kolker",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79120675,
+          "name": "Isaac Alongi",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79474806,
+          "name": "Jennifer Greenstreet",
+          "type": "Crew",
+          "role": "Director, Editor, Producer, Writer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710397833,
+          "name": "Chloee O'Hayon-Crosby",
+          "type": "Crew",
+          "role": "Costume Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710584419,
+          "name": "Cesar Reyes",
+          "type": "Crew",
+          "role": "Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710903511,
+          "name": "Chad Swenson",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71429823,
+          "name": "Jerome Bettis",
+          "type": "Cast",
+          "role": "",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79486191,
+          "name": "Hannah Brown",
+          "type": "Cast",
+          "role": "",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74087353,
+          "name": "August Maturo",
+          "type": "Cast",
+          "role": "Zach",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 74088928,
+          "name": "Ava Kolker",
+          "type": "Cast",
+          "role": "Aubrey",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 710686561,
+          "name": "Tanner Hagen",
+          "type": "Cast",
+          "role": "Sam",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 711095690,
+          "name": "Zeina Montifar",
+          "type": "Cast",
+          "role": "Lydia",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 79661016,
+          "name": "Presley Alexander",
+          "type": "Cast",
+          "role": "Quinn",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 710633985,
+          "name": "Fabio Lo Fria",
+          "type": "Cast",
+          "role": "EMT",
+          "order": 15
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

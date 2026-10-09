@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
-const movieTitle = 'WHAM! 10 Days in China';
-const moviePath = '/peliculas/wham-10-days-in-china-2026/';
+const movieTitle = 'Relajadas y muy peligrosas';
+const moviePath = '/peliculas/relajadas-y-muy-peligrosas-2026/';
 
 test('Otras plataformas se apila y no invade las etiquetas de la tarjeta', async ({ page }) => {
 	await page.goto('/?plataforma=otras%20plataformas', { waitUntil: 'load' });

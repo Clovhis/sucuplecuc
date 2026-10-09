@@ -1,0 +1,8 @@
+
+> la-posta-cine@0.0.1 enrich-people
+> node ./scripts/enrich-people-pool.mjs --movie project-baby-2026 --strict --missing-only
+
+Skipped project-baby-2026: no missing people.
+People updated: 0
+Missing people: 0
+Failed movies: 0

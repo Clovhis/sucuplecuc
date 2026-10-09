@@ -1,0 +1,223 @@
+{
+  "title": "Blood & Rust",
+  "slug": "blood-y-rust",
+  "startedAt": "2026-10-09T12:53:04.358Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Blood & Rust",
+    "--original-title",
+    "Blood & Rust",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt30342167"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt30342167&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11150586/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11150586,
+      "title": "Blood & Rust",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt30342167",
+      "tmdbId": 1536756
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "Blood & Rust",
+      "englishTitle": "Blood & Rust",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 96,
+      "releaseDate": "2026-05-08",
+      "genres": [
+        "Horror",
+        "Action"
+      ],
+      "imdbId": "tt30342167",
+      "tmdbId": 1536756,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=FxgJEes0bOg",
+      "similarWatchmodeTitleIds": [
+        1130972,
+        1162319,
+        1283474,
+        1307772,
+        1321490,
+        1362283,
+        1407015,
+        1420857,
+        1448402,
+        1562330,
+        1588654,
+        1592886,
+        1595955,
+        1598570,
+        1614624,
+        1620890,
+        1630735,
+        1642517,
+        1685557,
+        1696586,
+        1769673,
+        1824704,
+        1859005,
+        1890366,
+        1921730
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7762284,
+          "name": "Philip R. Garrett",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79615571,
+          "name": "Wolf Stahl",
+          "type": "Crew",
+          "role": "Writer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79615573,
+          "name": "Jeremy Herbert",
+          "type": "Crew",
+          "role": "Writer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79734196,
+          "name": "John Hale III",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79786734,
+          "name": "Jeremy Herbert",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710571048,
+          "name": "Sammy Lahiri",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710968957,
+          "name": "Jack Roman",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71614591,
+          "name": "Mark Kelly",
+          "type": "Cast",
+          "role": "Belko",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79615576,
+          "name": "Morgan McLeod",
+          "type": "Cast",
+          "role": "Lamont Guest",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7829641,
+          "name": "Ross Partridge",
+          "type": "Cast",
+          "role": "The Boss",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 710612193,
+          "name": "Beau Roberts",
+          "type": "Cast",
+          "role": "Sheriff Schaeffer",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 710165695,
+          "name": "Diana Frankhauser",
+          "type": "Cast",
+          "role": "Marlene Fenton",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 79673780,
+          "name": "Jonathan Tazewell",
+          "type": "Cast",
+          "role": "Joe Guest",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 79926058,
+          "name": "Jim Azelvandre",
+          "type": "Cast",
+          "role": "Terence",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 73165426,
+          "name": "Chris Hahn",
+          "type": "Cast",
+          "role": "The Trucker",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 7762284,
+          "name": "Philip R. Garrett",
+          "type": "Cast",
+          "role": "Tunnel Tom",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 710012600,
+          "name": "Louie Kurtzman",
+          "type": "Cast",
+          "role": "Diner Dan",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 711279278,
+          "name": "Mitchi Collette",
+          "type": "Cast",
+          "role": "Grams",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 711279279,
+          "name": "Frank Meija",
+          "type": "Cast",
+          "role": "Tape Face",
+          "order": 15
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

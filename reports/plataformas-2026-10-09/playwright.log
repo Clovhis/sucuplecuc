@@ -1,0 +1,85 @@
+
+Running 48 tests using 2 workers
+
+
+
+(node:6424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:18520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:18520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:6424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:17:2 › cinema-release-carousel: all films remain reachable and controls track both ends
+[2/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:17:2 › streaming-release-carousel: all films remain reachable and controls track both ends
+[3/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:17:2 › weekly-recommendations: all films remain reachable and controls track both ends
+[4/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:55:1 › trailer closes with Escape, clears the player, and restores keyboard focus
+[5/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:70:1 › release titles offer a direct route to the film alongside their trailers
+[6/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:78:1 › regular scrolling and keyboard focus reveal films beyond the visible strip
+[7/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:92:1 › all rails fit narrow screens and update their controls after resizing
+[8/48] [desktop-chromium] › tests\e2e\home-carousels.spec.ts:112:1 › offscreen platform labels never expand the page at desktop and tablet widths
+[9/48] [desktop-chromium] › tests\e2e\movie-nationality.spec.ts:3:1 › movie detail renders the verified production nationality with a flag
+[10/48] [desktop-chromium] › tests\e2e\movie-nationality.spec.ts:22:1 › co-productions retain each verified nationality
+[11/48] [desktop-chromium] › tests\e2e\movie-recommendations.spec.ts:3:1 › movie recommendations show concrete affinities without franchise shortcuts
+[12/48] [desktop-chromium] › tests\e2e\movie-recommendations.spec.ts:24:1 › movie recommendations remain legible without horizontal overflow on narrow screens
+[13/48] [desktop-chromium] › tests\e2e\people-image-quality.spec.ts:21:1 › the regular movie credit uses a loaded, Retina-safe local portrait
+[14/48] [desktop-chromium] › tests\e2e\people-image-quality.spec.ts:26:1 › the extended biography profile keeps its portrait sharp at its largest display size
+[15/48] [desktop-chromium] › tests\e2e\person-nationality.spec.ts:3:1 › omite nacionalidades desconocidas y conserva la de Gabriel Musco
+[16/48] [desktop-chromium] › tests\e2e\person-nationality.spec.ts:20:1 › el directorio omite el origen desconocido sin perder personas ni nacionalidades verificadas
+[17/48] [desktop-chromium] › tests\e2e\person-nationality.spec.ts:36:1 › la home omite la fila sin nacionalidad al construir tarjetas de personas
+[18/48] [desktop-chromium] › tests\e2e\platform-badge.spec.ts:6:1 › Otras plataformas se apila y no invade las etiquetas de la tarjeta
+[19/48] [desktop-chromium] › tests\e2e\platform-badge.spec.ts:36:1 › Otras plataformas conserva el apilado en la ficha de película
+[20/48] [desktop-chromium] › tests\e2e\poster-fallback.spec.ts:6:2 › fallback global de posters locales › usa el WebP local de contingencia para un recurso inválido
+[21/48] [desktop-chromium] › tests\e2e\poster-fallback.spec.ts:21:2 › fallback global de posters locales › observa posters agregados luego de cargar la página
+[22/48] [desktop-chromium] › tests\e2e\poster-fallback.spec.ts:35:2 › fallback global de posters locales › renderiza posters locales reales sin activar la contingencia
+[23/48] [desktop-chromium] › tests\e2e\ten-second-take.spec.ts:3:1 › La Posta en 10 segundos shows only explicit, film-specific editorial copy
+[24/48] [desktop-chromium] › tests\e2e\ten-second-take.spec.ts:19:1 › backfilled entries render their explicit, film-specific copy
+
+
+(node:18820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:18820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[25/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › cinema-release-carousel: all films remain reachable and controls track both ends
+
+
+(node:2832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:2832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[26/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › streaming-release-carousel: all films remain reachable and controls track both ends
+[27/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › weekly-recommendations: all films remain reachable and controls track both ends
+[28/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:55:1 › trailer closes with Escape, clears the player, and restores keyboard focus
+[29/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:70:1 › release titles offer a direct route to the film alongside their trailers
+[30/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:78:1 › regular scrolling and keyboard focus reveal films beyond the visible strip
+[31/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:92:1 › all rails fit narrow screens and update their controls after resizing
+[32/48] [mobile-webkit] › tests\e2e\home-carousels.spec.ts:112:1 › offscreen platform labels never expand the page at desktop and tablet widths
+[33/48] [mobile-webkit] › tests\e2e\movie-nationality.spec.ts:3:1 › movie detail renders the verified production nationality with a flag
+[34/48] [mobile-webkit] › tests\e2e\movie-nationality.spec.ts:22:1 › co-productions retain each verified nationality
+[35/48] [mobile-webkit] › tests\e2e\movie-recommendations.spec.ts:3:1 › movie recommendations show concrete affinities without franchise shortcuts
+[36/48] [mobile-webkit] › tests\e2e\movie-recommendations.spec.ts:24:1 › movie recommendations remain legible without horizontal overflow on narrow screens
+[37/48] [mobile-webkit] › tests\e2e\people-image-quality.spec.ts:21:1 › the regular movie credit uses a loaded, Retina-safe local portrait
+[38/48] [mobile-webkit] › tests\e2e\people-image-quality.spec.ts:26:1 › the extended biography profile keeps its portrait sharp at its largest display size
+[39/48] [mobile-webkit] › tests\e2e\person-nationality.spec.ts:3:1 › omite nacionalidades desconocidas y conserva la de Gabriel Musco
+[40/48] [mobile-webkit] › tests\e2e\person-nationality.spec.ts:20:1 › el directorio omite el origen desconocido sin perder personas ni nacionalidades verificadas
+[41/48] [mobile-webkit] › tests\e2e\person-nationality.spec.ts:36:1 › la home omite la fila sin nacionalidad al construir tarjetas de personas
+[42/48] [mobile-webkit] › tests\e2e\platform-badge.spec.ts:6:1 › Otras plataformas se apila y no invade las etiquetas de la tarjeta
+[43/48] [mobile-webkit] › tests\e2e\platform-badge.spec.ts:36:1 › Otras plataformas conserva el apilado en la ficha de película
+[44/48] [mobile-webkit] › tests\e2e\poster-fallback.spec.ts:6:2 › fallback global de posters locales › usa el WebP local de contingencia para un recurso inválido
+[45/48] [mobile-webkit] › tests\e2e\poster-fallback.spec.ts:21:2 › fallback global de posters locales › observa posters agregados luego de cargar la página
+[46/48] [mobile-webkit] › tests\e2e\poster-fallback.spec.ts:35:2 › fallback global de posters locales › renderiza posters locales reales sin activar la contingencia
+[47/48] [mobile-webkit] › tests\e2e\ten-second-take.spec.ts:3:1 › La Posta en 10 segundos shows only explicit, film-specific editorial copy
+[48/48] [mobile-webkit] › tests\e2e\ten-second-take.spec.ts:19:1 › backfilled entries render their explicit, film-specific copy
+  1 skipped
+  47 passed (42.6s)

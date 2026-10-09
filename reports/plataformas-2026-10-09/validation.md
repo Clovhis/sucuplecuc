@@ -1,0 +1,13 @@
+- Manifiesto reconciliado: **13 altas**, **13 cambios de plataformas**, **26 fichas auditadas**; catálogo final de 2.278 películas. Las 11 altas de cine del commit del 8/10 permanecen idénticas en contenido. Cero cambios de scores o de otros campos en las 13 fichas existentes.
+- Auditor primario con YouTube habilitado, antes del build final: **0 errores**. Auditor posterior del sitio generado: **0 errores**; comprobados Comunidad, reacciones y pertenencia al carrusel correspondiente.
+- Personas: las 26 fichas pasan el control de nombres, referencias y retratos locales atribuibles. `images:people:check` pasó para 5.535 imágenes. Persisten advertencias por datos opcionales de nacimiento/nacionalidad; los campos desconocidos se omiten en la interfaz.
+- Pósteres: 26 comprobados, **0 errores**. Once advertencias de tamaño inferior a 40 KiB, sin dimensiones, formato o fuente inválidos. Todos los nuevos son WebP local desde fuentes de 780x1.170 verificadas y examinadas visualmente.
+- `validate:content --all --astro-check --skip-build`: pasó. El catálogo completo conserva 1.428 advertencias históricas; no representan errores nuevos de este lote. Astro: 257 archivos, 0 errores, 0 advertencias, 0 hints.
+- `npm run build`: pasó, **7.618 páginas**. `validate:public-output`: pasó. `validate:sitemap-indexability`: pasó, **5.339 páginas canónicas**.
+- Pruebas de medidores editoriales y política de fuentes de pósteres: pasaron.
+- Playwright: **47 pruebas aprobadas, 1 omitida por diseño**, en Chromium desktop y WebKit móvil. Suites de carruseles, texto editorial, nacionalidad de personas/películas, calidad de retratos, recomendaciones, badges y fallback de póster.
+- Revisión específica de las 26 fichas en ambos navegadores: **52/52 recorridos aprobados**; HTTP 200, título, póster local decodificado, retratos locales de al menos 200x250, plataformas esperadas, ausencia de placeholders de nacionalidad y sin overflow horizontal. La prueba bloquea servicios externos; la reproducción de YouTube y el backend de votos no se prueban con esta navegación local. El trailer se valida por separado con el auditor primario.
+- Capturas de Animales y Matchbox, auditorías completas y resultado de los 52 recorridos conservados en [esta carpeta](./).
+- `git diff --check`: pasó. Sin cambios de UI, configuración o workflows; sin commit, push o deploy.
+
+Los pendientes cumplen el bloqueo de la [skill de alta](../../skills/la-posta-cine-add-movie/SKILL.md): “If the floor cannot be met, block the title.” La contingencia adicional ya se ejecutó para cada campo faltante; no se rebajan los requisitos para completar el número de títulos.

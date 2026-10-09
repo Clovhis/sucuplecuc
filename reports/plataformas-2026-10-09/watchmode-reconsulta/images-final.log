@@ -1,0 +1,6 @@
+
+> la-posta-cine@0.0.1 images:people:check
+> node ./scripts/optimize-people-images.mjs --check
+
+Retratos revisados: 5538
+Todos los retratos cumplen formato, resolución y limpieza de metadata.

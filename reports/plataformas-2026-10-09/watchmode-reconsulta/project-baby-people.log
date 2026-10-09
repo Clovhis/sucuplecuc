@@ -1,0 +1,7 @@
+
+> la-posta-cine@0.0.1 enrich-people
+> node ./scripts/enrich-people-pool.mjs --person Eric Quizon --person Sue Ramirez --person Rico Blanco --strict
+
+People updated: 3
+Missing people: 0
+Failed movies: 0

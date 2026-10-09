@@ -1,0 +1,28 @@
+{
+  "name": "jeff-cameron",
+  "url": "https://api.watchmode.com/v1/person/79760638",
+  "date": "2026-10-09T12:54:58.772Z",
+  "status": 200,
+  "data": {
+    "id": 79760638,
+    "full_name": "Jeff Cameron",
+    "first_name": "Jeff",
+    "last_name": "Cameron",
+    "tmdb_id": 2531447,
+    "imdb_id": "nm5789840",
+    "main_profession": "producer",
+    "secondary_profession": "editor",
+    "tertiary_profession": "director",
+    "date_of_birth": null,
+    "date_of_death": null,
+    "place_of_birth": null,
+    "gender": "m",
+    "known_for": [
+      11063895,
+      11229939,
+      35950
+    ],
+    "relevance_percentile": 57.9,
+    "biography": null
+  }
+}

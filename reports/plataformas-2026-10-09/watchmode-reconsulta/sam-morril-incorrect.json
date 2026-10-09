@@ -1,0 +1,19 @@
+{
+  "title": "Sam Morril: Incorrect",
+  "slug": "sam-morril-incorrect",
+  "startedAt": "2026-10-09T12:53:20.951Z",
+  "exit": 1,
+  "queryArgs": [
+    "--title",
+    "Sam Morril: Incorrect",
+    "--original-title",
+    "Sam Morril: Incorrect",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt45584335"
+  ],
+  "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.",
+  "data": null
+}

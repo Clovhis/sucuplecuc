@@ -1,0 +1,246 @@
+{
+  "title": "Project Baby",
+  "slug": "project-baby-2026",
+  "startedAt": "2026-10-09T12:53:09.313Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Project Baby",
+    "--original-title",
+    "Project Baby",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--tmdb-id",
+    "1705390"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1705390&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11181506/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11181506,
+      "title": "Project Baby",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": null,
+      "tmdbId": 1705390
+    },
+    "metadata": {
+      "title": "Project Baby",
+      "originalTitle": "Project Baby",
+      "englishTitle": "Project Baby",
+      "year": 2026,
+      "originalLanguage": "tl",
+      "runtimeMinutes": 110,
+      "releaseDate": "2026-06-10",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "imdbId": null,
+      "tmdbId": 1705390,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=qg_LVWeG55M",
+      "similarWatchmodeTitleIds": [
+        122626,
+        171771,
+        184869,
+        1114436,
+        1201982,
+        1231335,
+        1287598,
+        1357066,
+        1388102,
+        1564053,
+        1632890,
+        1638940,
+        1681063,
+        1694694,
+        1696644,
+        1843115,
+        1844437,
+        1884871,
+        1947609,
+        11091059
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7270208,
+          "name": "Eric Quizon",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7483859,
+          "name": "Jose Javier Reyes",
+          "type": "Crew",
+          "role": "Writer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71257311,
+          "name": "Eli Balce",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71547826,
+          "name": "Lea A. Calmerin",
+          "type": "Crew",
+          "role": "Supervising Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78959843,
+          "name": "Roselle Y. Monteverde",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79075368,
+          "name": "Vanessa U. De Leon",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79333338,
+          "name": "Pamela Faye Baldevieso",
+          "type": "Crew",
+          "role": "Line Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79416085,
+          "name": "Marielle Hizon",
+          "type": "Crew",
+          "role": "Production Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79418967,
+          "name": "Carmel Josine Jacomille",
+          "type": "Crew",
+          "role": "Additional Dialogue",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711583654,
+          "name": "John Paul Egalin Abellera",
+          "type": "Crew",
+          "role": "Additional Dialogue, Creative Consultant",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711583655,
+          "name": "Justin Caunan",
+          "type": "Crew",
+          "role": "Additional Dialogue, Intern",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71792557,
+          "name": "Rico Blanco",
+          "type": "Cast",
+          "role": "Migo",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73895501,
+          "name": "Sue Ramirez",
+          "type": "Cast",
+          "role": "Sandy",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71030640,
+          "name": "Alice Dixson",
+          "type": "Cast",
+          "role": "Millie",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 78976362,
+          "name": "Alex Calleja",
+          "type": "Cast",
+          "role": "",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 72638426,
+          "name": "Matt Lozano",
+          "type": "Cast",
+          "role": "",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 79576037,
+          "name": "Arra San Agustin",
+          "type": "Cast",
+          "role": "",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 78981278,
+          "name": "Yasser Marta",
+          "type": "Cast",
+          "role": "",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 710009665,
+          "name": "Kimson Tan",
+          "type": "Cast",
+          "role": "",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 710873388,
+          "name": "Drei Arias",
+          "type": "Cast",
+          "role": "",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 711555715,
+          "name": "Than Perez",
+          "type": "Cast",
+          "role": "",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 711583649,
+          "name": "Jazzil Sarinas",
+          "type": "Cast",
+          "role": "",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 711583650,
+          "name": "Britney Anne Romero",
+          "type": "Cast",
+          "role": "",
+          "order": 14
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

@@ -510,6 +510,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "fragmentada-2023"
   ],
   "ben-affleck": [
+    "animales-ben-affleck-2026",
     "el-botin-the-rip-2026",
     "the-accountant-2-2025",
     "air-2023",
@@ -5210,6 +5211,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "duel-1971"
   ],
   "steven-yeun": [
+    "animales-ben-affleck-2026",
     "avatar-la-leyenda-de-aang-2026",
     "mickey-17-2025",
     "minari-historia-de-mi-familia-2020",

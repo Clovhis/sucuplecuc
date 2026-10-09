@@ -1,0 +1,296 @@
+{
+  "title": "Romanchakam",
+  "slug": "romanchakam",
+  "startedAt": "2026-10-09T12:53:02.734Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Romanchakam",
+    "--original-title",
+    "రోమాంచకం",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt41971399"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt41971399&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11125638/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11125638,
+      "title": "Romanchakam",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt41971399",
+      "tmdbId": 1669281
+    },
+    "metadata": {
+      "title": "Romanchakam",
+      "originalTitle": "రోమాంచకం",
+      "englishTitle": "Romanchakam",
+      "year": 2026,
+      "originalLanguage": "te",
+      "runtimeMinutes": 140,
+      "releaseDate": "2026-09-02",
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "imdbId": "tt41971399",
+      "tmdbId": 1669281,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=SuHxIe7g-i4",
+      "similarWatchmodeTitleIds": [
+        168882,
+        1109250,
+        1120477,
+        1212944,
+        1237436,
+        1476860,
+        1582289,
+        1597453,
+        1607820,
+        1634607,
+        1646348,
+        1649731,
+        1676703,
+        1680905,
+        1693895,
+        1752924,
+        1844437,
+        1889550,
+        1947609,
+        11091059
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 78617898,
+          "name": "Sandeep Reddy Vanga",
+          "type": "Crew",
+          "role": "Presenter",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78994381,
+          "name": "Hari Haran",
+          "type": "Crew",
+          "role": "Sound Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78994382,
+          "name": "Sachin Sudhakaran",
+          "type": "Crew",
+          "role": "Sound Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79102410,
+          "name": "Anantha Sriram",
+          "type": "Crew",
+          "role": "Lyricist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79263774,
+          "name": "Pranay Reddy Vanga",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79355684,
+          "name": "Vasuki Vaibhav",
+          "type": "Crew",
+          "role": "Original Music Composer, Playback Singer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79374085,
+          "name": "Rambabu Gosala",
+          "type": "Crew",
+          "role": "Lyricist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79496127,
+          "name": "Uday Bhanu Avirineni",
+          "type": "Crew",
+          "role": "Publicist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79496128,
+          "name": "Anil Kumar Vanga",
+          "type": "Crew",
+          "role": "Publicist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79539964,
+          "name": "Ranadheer Reddy",
+          "type": "Crew",
+          "role": "Visual Effects Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79678412,
+          "name": "Chandrabose",
+          "type": "Crew",
+          "role": "Lyricist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710718783,
+          "name": "Vishnu Vardhan",
+          "type": "Crew",
+          "role": "Colorist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710938929,
+          "name": "Pavan Kumar Pappula",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710953557,
+          "name": "Meeraqh",
+          "type": "Crew",
+          "role": "Dialogue",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711448027,
+          "name": "Akunur Keerthana",
+          "type": "Crew",
+          "role": "Costume Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711448028,
+          "name": "Kushi Deepak Wankhede",
+          "type": "Crew",
+          "role": "Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711448030,
+          "name": "Sai Tarun Vaddamani",
+          "type": "Crew",
+          "role": "Associate Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711448033,
+          "name": "Reddi Chandra Sekhar",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711448037,
+          "name": "Nandini Thota",
+          "type": "Crew",
+          "role": "Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711448040,
+          "name": "Aravind Poloju",
+          "type": "Crew",
+          "role": "Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711656326,
+          "name": "Ramesh Butham",
+          "type": "Crew",
+          "role": "Lyricist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711656332,
+          "name": "Patil Subba Reddy",
+          "type": "Crew",
+          "role": "Production Executive",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711656340,
+          "name": "Irrinki Venkanna",
+          "type": "Crew",
+          "role": "Focus Puller",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710841520,
+          "name": "Ananthika Sanilkumar",
+          "type": "Cast",
+          "role": "Mythili",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711301383,
+          "name": "Sumanth Prabhas",
+          "type": "Cast",
+          "role": "",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71948686,
+          "name": "Upendra Limaye",
+          "type": "Cast",
+          "role": "",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 79098324,
+          "name": "Venkatesh Kakumanu",
+          "type": "Cast",
+          "role": "",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 710158950,
+          "name": "Mani Aegurla",
+          "type": "Cast",
+          "role": "",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 77078753,
+          "name": "Anudeep",
+          "type": "Cast",
+          "role": "",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 710693773,
+          "name": "Satish Saripalli",
+          "type": "Cast",
+          "role": "",
+          "order": 7
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 4.6,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}

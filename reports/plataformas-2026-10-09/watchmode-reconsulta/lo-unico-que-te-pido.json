@@ -1,0 +1,60 @@
+{
+  "title": "Lo único que te Pido",
+  "slug": "lo-unico-que-te-pido",
+  "startedAt": "2026-10-09T12:53:10.858Z",
+  "exit": 0,
+  "queryArgs": [
+    "--title",
+    "Lo único que te Pido",
+    "--original-title",
+    "Lo único que te Pido",
+    "--year",
+    "2026",
+    "--include-ratings",
+    "--imdb-id",
+    "tt48242194"
+  ],
+  "error": null,
+  "data": {
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt48242194&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11231988/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11231988,
+      "title": "Lo único que te Pido",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt48242194",
+      "tmdbId": null
+    },
+    "metadata": {
+      "title": "Lo único que te Pido",
+      "originalTitle": "Lo único que te Pido",
+      "englishTitle": "Lo único que te Pido",
+      "year": 2026,
+      "originalLanguage": null,
+      "runtimeMinutes": null,
+      "releaseDate": null,
+      "genres": [],
+      "imdbId": "tt48242194",
+      "tmdbId": null,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [],
+      "credits": []
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  }
+}
