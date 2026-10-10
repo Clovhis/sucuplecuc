@@ -184,4 +184,4 @@ Se regeneraron las referencias de películas y personas. Los resultados son:
 - npm run update-upcoming-releases: ejecutado; la fuente TMDb respondió HTTP 403 al buscar un próximo título no relacionado con este lote y el script conservó el archivo generado existente.
 - git diff --check: aprobado.
 
-No se hizo commit, push ni deploy. El lote queda en la rama de revisión.
+Publicado en `main` en el commit `9f5e69f2`. El workflow [Deploy Astro to GitHub Pages](https://github.com/Clovhis/sucuplecuc/actions/runs/38043419044) completó build y deploy. La ficha [Los puentes de Madison](https://www.cineposta.com.ar/peliculas/los-puentes-de-madison-1995/) respondió HTTP 200 y su póster WebP también respondió HTTP 200.
