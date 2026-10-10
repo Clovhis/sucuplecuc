@@ -8,11 +8,18 @@ import insaciable from '../../src/data/editorials/insaciable-body-horror-en-modo
 import offni from '../../src/data/editorials/offni-cine-fest-2026-cine-fantastico-gratis-en-caba.json' with { type: 'json' };
 import estrella from '../../src/data/editorials/la-estrella-que-perdi-premios-antares-2026-mirta-busnelli.json' with { type: 'json' };
 import calm from '../../src/data/editorials/calm-horacio-quiroga-animacion-sitges-2026.json' with { type: 'json' };
+import skydance from '../../src/data/editorials/skydance-cierra-la-compra-de-warner-octubre-2026.json' with { type: 'json' };
+import benImana from '../../src/data/editorials/ben-imana-primera-pelicula-ruandesa-en-los-oscar-2026.json' with { type: 'json' };
+import londonFestival from '../../src/data/editorials/glaxo-the-match-bfi-london-film-festival-2026.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
-  JSON.parse(readFileSync(new URL(file, editorialDirectory), 'utf8')) as { slug: string; date: string; title: string },
+  JSON.parse(readFileSync(new URL(file, editorialDirectory), 'utf8')) as { slug: string; date: string; title: string; featured: boolean },
 ).sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
+const homePublications = [...publications]
+  .sort((a, b) => Number(b.featured) - Number(a.featured) || b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug))
+  .slice(0, 6);
+const homePublicationSlugs = new Set(homePublications.map(entry => entry.slug));
 
 async function openEditorialIndex(page: Page): Promise<void> {
   const link = page.getByRole('region', { name: 'Desde CinePosta' }).getByRole('link', { name: 'Todas las publicaciones' });
@@ -24,7 +31,7 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await expect(page).toHaveURL(/\/editorial\/$/);
 }
 
-for (const entry of [offni, estrella, calm]) {
+for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival]) {
   test(`${entry.slug}: news sources, SEO and responsive images remain available from home and archive`, async ({ page }, testInfo) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
@@ -79,6 +86,8 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
   const home = page.getByRole('region', { name: 'Desde CinePosta' });
   const cards = home.locator('.editorial-card');
   await expect(cards).toHaveCount(Math.min(6, publications.length));
+  expect(await cards.locator(':scope > a').evaluateAll(nodes => nodes.map(node => (node as HTMLAnchorElement).getAttribute('href'))))
+    .toEqual(homePublications.map(entry => `/editorial/${entry.slug}/`));
   const archiveLink = home.getByRole('link', { name: 'Todas las publicaciones' });
   await expect(archiveLink).toHaveAttribute('href', '/editorial/');
   for (const card of await cards.all()) {
@@ -117,11 +126,11 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
   expect(errors).toEqual([]);
 });
 
-for (const { entry, movieTitle, featured, sourcePattern } of [
-  { entry: residentEvil, movieTitle: 'Resident Evil: Noche Cero', featured: false, sourcePattern: /^https:\/\/residentevil\.movie\// },
-  { entry: miasma, movieTitle: 'Adolescencia, sexo y muerte en Campamento Miasma', featured: true, sourcePattern: /^https:\/\/(trailers\.mubicdn\.net|www\.steinbrennermueller\.de)\// },
-  { entry: colony, movieTitle: 'Colony: Zona Cero', featured: false, sourcePattern: /^https:\/\/wellgousa\.com\// },
-  { entry: insaciable, movieTitle: 'Insaciable', featured: true, sourcePattern: /^https:\/\/www\.independentfilmco\.com\/films\/saccharine$/ },
+for (const { entry, movieTitle, sourcePattern } of [
+  { entry: residentEvil, movieTitle: 'Resident Evil: Noche Cero', sourcePattern: /^https:\/\/residentevil\.movie\// },
+  { entry: miasma, movieTitle: 'Adolescencia, sexo y muerte en Campamento Miasma', sourcePattern: /^https:\/\/(trailers\.mubicdn\.net|www\.steinbrennermueller\.de)\// },
+  { entry: colony, movieTitle: 'Colony: Zona Cero', sourcePattern: /^https:\/\/wellgousa\.com\// },
+  { entry: insaciable, movieTitle: 'Insaciable', sourcePattern: /^https:\/\/www\.independentfilmco\.com\/films\/saccharine$/ },
 ]) {
   const path = `/editorial/${entry.slug}/`;
 
@@ -129,7 +138,9 @@ for (const { entry, movieTitle, featured, sourcePattern } of [
     await page.goto('/');
     const home = page.getByRole('region', { name: 'Desde CinePosta' });
     await expect(home.locator('.editorial-card')).toHaveCount(Math.min(6, publications.length));
-    if (featured) await expect(home.getByRole('heading', { name: entry.title })).toBeVisible();
+    const homeCard = home.locator('.editorial-card').filter({ hasText: entry.title });
+    if (homePublicationSlugs.has(entry.slug)) await expect(homeCard).toBeVisible();
+    else await expect(homeCard).toHaveCount(0);
     await openEditorialIndex(page);
     const indexedEntry = page.locator('.editorial-card').filter({ hasText: entry.title });
     await expect(indexedEntry.getByText('5 min de lectura')).toBeVisible();
@@ -194,7 +205,8 @@ test(`${cancelados.slug}: note, internal biographies, SEO and images render on d
   await page.goto('/');
   const home = page.getByRole('region', { name: 'Desde CinePosta' });
   const homeCard = home.locator('.editorial-card').filter({ hasText: cancelados.title });
-  await expect(homeCard).toBeVisible();
+  if (homePublicationSlugs.has(cancelados.slug)) await expect(homeCard).toBeVisible();
+  else await expect(homeCard).toHaveCount(0);
   await openEditorialIndex(page);
   const indexCard = page.locator('.editorial-card').filter({ hasText: cancelados.title });
   await expect(indexCard.getByText(`${expectedMinutes} min de lectura`)).toBeVisible();
