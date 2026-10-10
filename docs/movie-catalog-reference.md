@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-09. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-10. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2279
+Total de peliculas: 2343
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1459,6 +1459,7 @@ Total de peliculas: 2279
 | 2004 | Spider-Man 2 | spider-man-2-2004 | Accion | Otras plataformas | ATP |
 | 2004 | The Incredibles | the-incredibles-2004 | Animacion | Disney Plus | ATP |
 | 2004 | The Punisher | the-punisher-2004 | Accion | HBO Max | +16 |
+| 2004 | Tropical Malady | tropical-malady-2004 | Drama | Otras plataformas | +13 |
 | 2004 | Troya | troya-2004 | Accion | Prime Video + HBO Max | +16 |
 | 2004 | Una hija diferente | una-hija-diferente-2004 | Comedia romantica | Prime Video | +13 |
 | 2004 | Una serie de eventos desafortunados | una-serie-de-eventos-desafortunados-2004 | Fantasia | Otras plataformas | ATP |
@@ -1607,6 +1608,7 @@ Total de peliculas: 2279
 | 2000 | La tormenta perfecta | la-tormenta-perfecta-2000 | Drama | Prime Video + HBO Max | +13 |
 | 2000 | Las locuras del emperador | las-locuras-del-emperador-2000 | Animacion | Disney Plus | ATP |
 | 2000 | Lo que la verdad esconde | lo-que-la-verdad-esconde-2000 | Terror | Disney Plus | +13 |
+| 2000 | Los espigadores y la espigadora | los-espigadores-y-la-espigadora-2000 | Documental | Otras plataformas | +13 |
 | 2000 | Memento | memento-2000 | Thriller | Otras plataformas | +13 |
 | 2000 | Mission: Impossible II | mission-impossible-ii-2000 | Accion | Otras plataformas | +13 |
 | 2000 | Náufrago | naufrago-2000 | Drama | Paramount Plus | +13 |
@@ -1623,11 +1625,13 @@ Total de peliculas: 2279
 | 2000 | Una mujer audaz | una-mujer-audaz-2000 | Drama | Apple TV | +13 |
 | 2000 | Very Important Perros | very-important-perros-2000 | Comedia | Apple TV | ATP |
 | 2000 | X-Men | x-men-2000 | Accion | Disney Plus | +13 |
+| 2000 | Yi Yi | yi-yi-2000 | Drama | Otras plataformas | +13 |
 | 2000 | Yo, yo mismo e Irene | yo-yo-mismo-e-irene-2000 | Comedia | Disney Plus | +16 |
 | 1999 | Acordes y desacuerdos | sweet-and-lowdown-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Al límite | bringing-out-the-dead-1999 | Drama | Otras plataformas | +17 |
 | 1999 | Audition | audition-1999 | Terror | Otras plataformas | +18 |
 | 1999 | Belleza americana | american-beauty-1999 | Drama | Paramount Plus + Apple TV | +13 |
+| 1999 | Buen trabajo | buen-trabajo-1999 | Drama | Otras plataformas | +13 |
 | 1999 | Cielo de octubre | cielo-de-octubre-1999 | Drama | Apple TV | ATP |
 | 1999 | Cómo ser John Malkovich | como-ser-john-malkovich-1999 | Comedia | Apple TV | +16 |
 | 1999 | El club de la pelea | fight-club-1999 | Drama | Paramount Plus + Prime Video | +13 |
@@ -1779,6 +1783,7 @@ Total de peliculas: 2279
 | 1995 | Jungla de cristal: la venganza | jungla-de-cristal-la-venganza-1995 | Acción | Disney Plus | +13 |
 | 1995 | La ciudad de los niños perdidos | la-ciudad-de-los-ninos-perdidos-1995 | Fantasia | Otras plataformas | +13 |
 | 1995 | Lancelot, el primer caballero | lancelot-el-primer-caballero-1995 | Aventura | Apple TV | +13 |
+| 1995 | Los puentes de Madison | los-puentes-de-madison-1995 | Romance | HBO Max + Apple TV | +13 |
 | 1995 | Marea roja | marea-roja-1995 | Accion | Disney Plus | +13 |
 | 1995 | Mientras dormías | mientras-dormias-1995 | Comedia | Disney Plus | ATP |
 | 1995 | Mundo acuático | mundo-acuatico-1995 | Ciencia ficcion | Apple TV | +13 |
@@ -1887,6 +1892,7 @@ Total de peliculas: 2279
 | 1990 | Buenos muchachos | goodfellas-1990 | Crimen | Prime Video + HBO Max | +13 |
 | 1990 | Calda emoción | calda-emocion-1990 | Drama | Otras plataformas | +16 |
 | 1990 | Captain America | captain-america-1990 | Accion | Disney Plus | +13 |
+| 1990 | Close-Up | close-up-1990 | Documental | Otras plataformas | ATP |
 | 1990 | Corazón salvaje | corazon-salvaje-1990 | Drama | Prime Video | +16 |
 | 1990 | Dances with Wolves | dances-with-wolves-1990 | Drama | Otras plataformas | +13 |
 | 1990 | Darkman | darkman-1990 | Accion | Apple TV | +16 |
@@ -2048,6 +2054,7 @@ Total de peliculas: 2279
 | 1983 | El ansia | el-ansia-1983 | Terror | Otras plataformas | +16 |
 | 1983 | El precio del poder | el-precio-del-poder-1983 | Crimen | Netflix + Prime Video | +18 |
 | 1983 | La zona muerta | la-zona-muerta-1983 | Terror | Otras plataformas | +17 |
+| 1983 | Sin sol | sin-sol-1983 | Documental | Otras plataformas | +13 |
 | 1983 | Star Wars: Episode VI - Return of the Jedi | star-wars-episode-vi-return-of-the-jedi-1983 | Ciencia ficcion | Disney Plus | ATP |
 | 1983 | Superman III | superman-iii-1983 | Accion | HBO Max | ATP |
 | 1983 | Terms of Endearment | terms-of-endearment-1983 | Drama | Otras plataformas | ATP |
@@ -2065,6 +2072,7 @@ Total de peliculas: 2279
 | 1982 | Grease 2 | grease-2-1982 | Comedia | Apple TV | ATP |
 | 1982 | Halloween III: El día de la bruja | halloween-iii-season-of-the-witch-1982 | Terror | Otras plataformas | +17 |
 | 1982 | La cosa | la-cosa-el-enigma-de-otro-mundo-1982 | Terror | HBO Max + Apple TV | +13 |
+| 1982 | La decisión de Sophie | la-decision-de-sophie-1982 | Drama | Apple TV | +16 |
 | 1982 | Límite: 48 horas | limite-48-horas-1982 | Accion | Apple TV | +16 |
 | 1982 | Oficial y caballero | oficial-y-caballero-1982 | Drama | Apple TV | +13 |
 | 1982 | Picardías estudiantiles | aquel-excitante-curso-1982 | Comedia | Apple TV | +16 |
@@ -2134,22 +2142,30 @@ Total de peliculas: 2279
 | 1976 | Network, un mundo implacable | network-un-mundo-implacable-1976 | Drama | Prime Video | +16 |
 | 1976 | Rocky | rocky-1976 | Drama | Otras plataformas | +13 |
 | 1976 | Taxi Driver | taxi-driver-1976 | Thriller | HBO Max | +17 |
+| 1976 | Todos los hombres del presidente | todos-los-hombres-del-presidente-1976 | Thriller | Apple TV | +13 |
 | 1975 | Barry Lyndon | barry-lyndon-1975 | Drama | Apple TV | ATP |
 | 1975 | El espectáculo de imágenes de terror de Rocky | el-espectaculo-de-imagenes-de-terror-de-rocky-1975 | Comedia | Disney Plus | +17 |
+| 1975 | El espejo | el-espejo-1975 | Drama | Otras plataformas | +13 |
 | 1975 | Grey Gardens | grey-gardens-1975 | Documental | Otras plataformas | ATP |
+| 1975 | Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles | jeanne-dielman-23-quai-du-commerce-1080-bruxelles-1975 | Drama | Otras plataformas | +13 |
 | 1975 | La última noche de Boris Grushenko | love-and-death-1975 | Comedia | Otras plataformas | +13 |
 | 1975 | Los caballeros de la mesa cuadrada y sus locos seguidores | los-caballeros-de-la-mesa-cuadrada-y-sus-locos-seguidores-1975 | Comedia | Otras plataformas | ATP |
+| 1975 | Nashville | nashville-1975 | Drama | Otras plataformas | +16 |
 | 1975 | One Flew Over the Cuckoo's Nest | one-flew-over-the-cuckoo-s-nest-1975 | Drama | HBO Max | +17 |
 | 1975 | Tarde de perros | tarde-de-perros-1975 | Crimen | Apple TV | +16 |
 | 1975 | Tiburón | jaws-1975 | Terror | Otras plataformas | +15 |
 | 1974 | Alicia ya no vive aquí | alice-doesnt-live-here-anymore-1974 | Drama | Otras plataformas | +13 |
 | 1974 | Barrio chino | chinatown-1974 | Crimen | Apple TV | +13 |
+| 1974 | Céline y Julie van en barco | celine-y-julie-van-en-barco-1974 | Fantasía | Otras plataformas | +13 |
 | 1974 | Italoamericano | italianamerican-1974 | Documental | Otras plataformas | ATP |
 | 1974 | La conversación | la-conversacion-1974 | Thriller | Apple TV | +13 |
 | 1974 | La matanza de Texas | la-matanza-de-texas-1974 | Terror | Prime Video | +16 |
 | 1974 | La Patagonia rebelde | la-patagonia-rebelde-1974 | Drama | Otras plataformas | +16 |
 | 1974 | Loca evasión | the-sugarland-express-1974 | Drama | Otras plataformas | +13 |
 | 1974 | The Godfather Part II | the-godfather-part-ii-1974 | Drama | Paramount Plus + Netflix | +17 |
+| 1974 | Todos nos llamamos Alí | todos-nos-llamamos-ali-1974 | Drama | Otras plataformas | +16 |
+| 1973 | American Graffiti | american-graffiti-1973 | Drama | Apple TV | +13 |
+| 1973 | El espíritu de la colmena | el-espiritu-de-la-colmena-1973 | Drama | Apple TV | +13 |
 | 1973 | El exorcista | the-exorcist-1973 | Terror | HBO Max + Apple TV | +13 |
 | 1973 | El hombre de mimbre | el-hombre-de-mimbre-1973 | Terror | Otras plataformas | +16 |
 | 1973 | El planeta salvaje | el-planeta-salvaje-1973 | Animacion | Prime Video | +13 |
@@ -2158,6 +2174,7 @@ Total de peliculas: 2279
 | 1973 | Robin Hood | robin-hood-1973 | Animacion | Disney Plus | ATP |
 | 1973 | Sleeper | sleeper-1973 | Ciencia ficcion | Otras plataformas | ATP |
 | 1973 | The Sting | the-sting-1973 | Crimen | Otras plataformas | ATP |
+| 1972 | Cabaret | cabaret-1972 | Musical | Otras plataformas | +16 |
 | 1972 | El tren de Bertha | boxcar-bertha-1972 | Crimen | Otras plataformas | +17 |
 | 1972 | Pink Flamingos | pink-flamingos-1972 | Comedia | Otras plataformas | +18 |
 | 1972 | Solaris | solaris-1972 | Ciencia ficcion | Otras plataformas | +13 |
@@ -2174,8 +2191,10 @@ Total de peliculas: 2279
 | 1970 | Escenas callejeras | street-scenes-1970-1970 | Documental | Otras plataformas | ATP |
 | 1970 | Hola, mamá | hola-mama-1970 | Comedia | Otras plataformas | +18 |
 | 1970 | Los aristogatos | los-aristogatos-1970 | Animacion | Disney Plus | ATP |
+| 1970 | M.A.S.H. | mash-1970 | Comedia | Disney Plus | +16 |
 | 1970 | Patton | patton-1970 | Drama | Disney Plus | ATP |
 | 1969 | Dos hombres y un destino | dos-hombres-y-un-destino-1969 | Crimen | Disney Plus | ATP |
+| 1969 | Easy Rider: Buscando mi destino | easy-rider-buscando-mi-destino-1969 | Drama | Apple TV | +16 |
 | 1969 | El incinerador de cadáveres | el-incinerador-de-cadaveres-1969 | Terror | Otras plataformas | +18 |
 | 1969 | Grupo salvaje | grupo-salvaje-1969 | Drama | Otras plataformas | +18 |
 | 1969 | Midnight Cowboy | midnight-cowboy-1969 | Drama | Otras plataformas | +17 |
@@ -2187,32 +2206,46 @@ Total de peliculas: 2279
 | 1968 | Oliver! | oliver-1968 | Drama | Otras plataformas | ATP |
 | 1968 | Yellow Submarine | yellow-submarine-1968 | Animacion | Apple TV | ATP |
 | 1967 | ¿Quién llama a mi puerta? | whos-that-knocking-at-my-door-1967 | Drama | Otras plataformas | ATP |
+| 1967 | Bonnie y Clyde | bonnie-y-clyde-1967 | Crimen | HBO Max + Apple TV | +16 |
 | 1967 | Dont Look Back | dont-look-back-1967 | Documental | Otras plataformas | ATP |
 | 1967 | El graduado | el-graduado-1967 | Drama | Apple TV | +13 |
 | 1967 | El libro de la selva | el-libro-de-la-selva-1967 | Animacion | Disney Plus | ATP |
 | 1967 | El silencio de un hombre | el-silencio-de-un-hombre-1967 | Drama | Otras plataformas | +16 |
 | 1967 | In the Heat of the Night | in-the-heat-of-the-night-1967 | Drama | Prime Video | +13 |
+| 1967 | Playtime | playtime-1967 | Comedia | Otras plataformas | ATP |
 | 1966 | ¿Qué tal, Tiger Lily? | what-s-up-tiger-lily-1966 | Comedia | Otras plataformas | +13 |
+| 1966 | ¿Quién teme a Virginia Woolf? | quien-teme-a-virginia-woolf-1966 | Drama | Apple TV | +16 |
 | 1966 | A Man for All Seasons | a-man-for-all-seasons-1966 | Historia | Otras plataformas | ATP |
+| 1966 | Andrei Rublev | andrei-rublev-1966 | Drama | Otras plataformas | +16 |
 | 1966 | Batman | batman-1966 | Comedia | Disney Plus | ATP |
 | 1966 | El bueno, el malo y el feo | el-bueno-el-feo-y-el-malo-1966 | Western | Prime Video + Apple TV | +13 |
 | 1966 | El pecado compartido | el-pecado-compartido-1966 | Drama | Otras plataformas | +16 |
 | 1966 | La batalla de Argel | la-batalla-de-argel-1966 | Drama | Apple TV | +16 |
 | 1966 | Las margaritas | las-margaritas-1966 | Comedia | Otras plataformas | +13 |
+| 1965 | Doctor Jivago | doctor-zhivago-1965 | Drama | Otras plataformas | +14 |
 | 1965 | La novicia rebelde | the-sound-of-music-1965 | Drama | Disney Plus | ATP |
+| 1965 | Pierrot, el loco | pierrot-el-loco-1965 | Drama | Otras plataformas | +16 |
 | 1964 | Dr. Insólito | telefono-rojo-volamos-hacia-moscu-1964 | Comedia | Apple TV | +13 |
 | 1964 | My Fair Lady | my-fair-lady-1964 | Comedia | Otras plataformas | ATP |
+| 1963 | El desprecio | el-desprecio-1963 | Drama | Otras plataformas | +16 |
+| 1963 | El gatopardo | el-gatopardo-1963 | Drama | Disney Plus | +13 |
 | 1963 | La gran evasión | la-gran-evasion-1963 | Accion | Apple TV | ATP |
 | 1963 | Ocho y medio | fellini-ocho-y-medio-1963 | Drama | Otras plataformas | +13 |
 | 1963 | Tom Jones | tom-jones-1963 | Comedia | HBO Max | +13 |
+| 1962 | Cléo de 5 a 7 | cleo-de-5-a-7-1962 | Drama | Otras plataformas | +13 |
+| 1962 | La Jetée | la-jetee-1962 | Ciencia ficción | Otras plataformas | +13 |
 | 1962 | Lawrence de Arabia | lawrence-of-arabia-1962 | Drama | Netflix + Apple TV | +13 |
+| 1962 | Matar a un ruiseñor | matar-a-un-ruisenor-1962 | Drama | Apple TV | ATP |
 | 1961 | 101 dálmatas | 101-dalmatas-1961 | Animacion | Disney Plus | ATP |
 | 1961 | West Side Story | west-side-story-1961 | Drama | Otras plataformas | +13 |
 | 1960 | Al final de la escapada | al-final-de-la-escapada-1960 | Drama | Apple TV | +16 |
 | 1960 | El apartamento | the-apartment-1960 | Comedia romantica | Apple TV | +13 |
+| 1960 | Espartaco | espartaco-1960 | Accion | HBO Max + Apple TV | +16 |
+| 1960 | La aventura | la-aventura-1960 | Drama | Otras plataformas | +13 |
 | 1960 | La Dolce Vita | la-dolce-vita-1960 | Drama | Otras plataformas | +16 |
 | 1960 | Psicosis | psycho-1960 | Terror | HBO Max + Apple TV | +13 |
 | 1959 | Ben-Hur | ben-hur-1959 | Drama | Otras plataformas | ATP |
+| 1959 | Imitación de la vida | imitacion-de-la-vida-1959 | Drama | Otras plataformas | +13 |
 | 1959 | La bella durmiente | la-bella-durmiente-1959 | Animacion | Disney Plus | ATP |
 | 1959 | Los cuatrocientos golpes | los-cuatrocientos-golpes-1959 | Drama | Otras plataformas | +13 |
 | 1959 | North by Northwest | north-by-northwest-1959 | Aventura | Otras plataformas | +13 |
@@ -2225,63 +2258,94 @@ Total de peliculas: 2279
 | 1957 | Senderos de gloria | senderos-de-gloria-1957 | Drama | Apple TV | +13 |
 | 1957 | The Bridge on the River Kwai | the-bridge-on-the-river-kwai-1957 | Drama | Otras plataformas | ATP |
 | 1956 | Around the World in 80 Days | around-the-world-in-80-days-1956 | Comedia | Otras plataformas | ATP |
+| 1956 | Más corazón que odio | mas-corazon-que-odio-1956 | Western | Otras plataformas | ATP |
 | 1955 | La dama y el vagabundo | la-dama-y-el-vagabundo-1955 | Animacion | Disney Plus | ATP |
 | 1955 | La noche del cazador | la-noche-del-cazador-1955 | Thriller | Apple TV | +13 |
+| 1955 | La palabra | la-palabra-1955 | Drama | Otras plataformas | +13 |
 | 1955 | Marty | marty-1955 | Drama | Prime Video | +13 |
+| 1955 | Pather Panchali (La canción del camino) | pather-panchali-1955 | Drama | Otras plataformas | ATP |
 | 1954 | La ventana indiscreta | la-ventana-indiscreta-1954 | Thriller | HBO Max | +13 |
 | 1954 | Los siete samuráis | los-siete-samurais-1954 | Accion | Otras plataformas | ATP |
 | 1954 | On the Waterfront | on-the-waterfront-1954 | Drama | Otras plataformas | +16 |
 | 1954 | Seven Samurai | seven-samurai-1954 | Drama | Otras plataformas | +13 |
+| 1953 | Cuentos de la luna pálida | cuentos-de-la-luna-palida-1953 | Drama | Otras plataformas | +13 |
 | 1953 | Cuentos de Tokio | cuentos-de-tokio-1953 | Drama | Otras plataformas | ATP |
 | 1953 | From Here to Eternity | from-here-to-eternity-1953 | Romance | Otras plataformas | +13 |
+| 1953 | Madame de... | madame-de-1953 | Drama | Otras plataformas | +13 |
 | 1953 | Peter Pan | peter-pan-1953 | Animacion | Disney Plus | ATP |
+| 1953 | Shane, el desconocido | shane-el-desconocido-1953 | Western | Otras plataformas | +13 |
+| 1952 | A la hora señalada | a-la-hora-senalada-1952 | Western | Otras plataformas | ATP |
 | 1952 | Cantando bajo la lluvia | cantando-bajo-la-lluvia-1952 | Comedia | HBO Max | ATP |
 | 1952 | The Greatest Show on Earth | the-greatest-show-on-earth-1952 | Romance | Otras plataformas | +13 |
 | 1951 | An American in Paris | an-american-in-paris-1951 | Musical | Otras plataformas | ATP |
+| 1951 | La reina africana | la-reina-africana-1951 | Aventura | Otras plataformas | ATP |
+| 1951 | Un tranvía llamado deseo | un-tranvia-llamado-deseo-1951 | Drama | Apple TV | +16 |
 | 1950 | El crepúsculo de los dioses | el-crepusculo-de-los-dioses-1950 | Drama | Apple TV | +13 |
 | 1950 | Eva al desnudo | all-about-eve-1950 | Drama | Otras plataformas | +13 |
 | 1950 | La Cenicienta | la-cenicienta-1950 | Animacion | Disney Plus | ATP |
 | 1950 | Rashomon | rashomon-1950 | Drama | Otras plataformas | +16 |
 | 1949 | All the King's Men | all-the-king-s-men-1949 | Drama | Otras plataformas | +13 |
 | 1949 | El tercer hombre | el-tercer-hombre-1949 | Crimen | Apple TV | +13 |
+| 1948 | El tesoro de Sierra Madre | el-tesoro-de-la-sierra-madre-1948 | Aventura | Apple TV | ATP |
 | 1948 | Hamlet | hamlet-1948 | Drama | Otras plataformas | +13 |
 | 1948 | Ladrón de bicicletas | ladron-de-bicicletas-1948 | Drama | Prime Video | +13 |
 | 1948 | Las zapatillas rojas | las-zapatillas-rojas-1948 | Drama | Prime Video | ATP |
 | 1947 | Gentleman's Agreement | gentleman-s-agreement-1947 | Drama | Disney Plus | +13 |
+| 1946 | ¡Qué bello es vivir! | que-bello-es-vivir-1946 | Drama | Apple TV + Prime Video | ATP |
+| 1946 | A vida o muerte | a-vida-o-muerte-1946 | Fantasía | Otras plataformas | +13 |
 | 1946 | El sueño eterno | el-sueno-eterno-1946 | Crimen | HBO Max + Apple TV | +13 |
 | 1946 | The Best Years of Our Lives | the-best-years-of-our-lives-1946 | Drama | Otras plataformas | +13 |
 | 1945 | The Lost Weekend | the-lost-weekend-1945 | Drama | HBO Max | +13 |
 | 1944 | Going My Way | going-my-way-1944 | Drama | Otras plataformas | +13 |
 | 1944 | Pacto de sangre | pacto-de-sangre-1944 | Crimen | Otras plataformas | +13 |
 | 1943 | Casablanca | casablanca-1943 | Drama | HBO Max | ATP |
+| 1943 | Meshes of the Afternoon | meshes-of-the-afternoon-1943 | Terror | Otras plataformas | +13 |
 | 1942 | Bambi | bambi-1942 | Animacion | Disney Plus | ATP |
 | 1942 | Mrs. Miniver | mrs-miniver-1942 | Drama | Otras plataformas | +13 |
+| 1942 | Yankee Doodle Dandy | yankee-doodle-dandy-1942 | Musical | Otras plataformas | ATP |
 | 1941 | Citizen Kane | citizen-kane-1941 | Drama | Otras plataformas | +13 |
 | 1941 | Dumbo | dumbo-1941 | Animacion | Disney Plus | ATP |
 | 1941 | El halcón maltés | el-halcon-maltes-1941 | Crimen | HBO Max + Apple TV | +13 |
 | 1941 | How Green Was My Valley | how-green-was-my-valley-1941 | Drama | Disney Plus | +13 |
+| 1941 | Los viajes de Sullivan | los-viajes-de-sullivan-1941 | Comedia | Otras plataformas | +13 |
+| 1940 | El gran dictador | el-gran-dictador-1940 | Comedia | Otras plataformas | ATP |
 | 1940 | Fantasia | fantasia-1940 | Animacion | Disney Plus | ATP |
+| 1940 | Historias de Filadelfia | historias-de-filadelfia-1940 | Romance | Apple TV | ATP |
 | 1940 | Pinocho | pinocho-1940 | Animacion | Disney Plus | ATP |
 | 1940 | Rebecca | rebecca-1940 | Thriller | Otras plataformas | +13 |
+| 1940 | Viñas de ira | vinas-de-ira-1940 | Drama | Otras plataformas | ATP |
+| 1939 | Caballero sin espada | caballero-sin-espada-1939 | Drama | Apple TV | ATP |
 | 1939 | Gone with the Wind | gone-with-the-wind-1939 | Drama | HBO Max | ATP |
+| 1939 | La regla del juego | la-regla-del-juego-1939 | Comedia | Otras plataformas | +13 |
 | 1939 | The Wizard of Oz | the-wizard-of-oz-1939 | Fantasia | Otras plataformas | ATP |
+| 1938 | La fiera de mi niña | la-fiera-de-mi-nina-1938 | Comedia | HBO Max + Apple TV | ATP |
 | 1938 | You Can't Take It with You | you-can-t-take-it-with-you-1938 | Romance | Otras plataformas | +13 |
 | 1937 | Blancanieves y los siete enanitos | blancanieves-y-los-siete-enanitos-1937 | Animacion | Otras plataformas | ATP |
 | 1937 | The Life of Emile Zola | the-life-of-emile-zola-1937 | Drama | Otras plataformas | +13 |
+| 1936 | En alas de la danza | en-alas-de-la-danza-1936 | Musical | Apple TV | ATP |
 | 1936 | The Great Ziegfeld | the-great-ziegfeld-1936 | Musical | Otras plataformas | +13 |
 | 1936 | Tiempos modernos | tiempos-modernos-1936 | Comedia | Otras plataformas | ATP |
 | 1935 | Mutiny on the Bounty | mutiny-on-the-bounty-1935 | Drama | Otras plataformas | +15 |
+| 1935 | Una noche en la ópera | una-noche-en-la-opera-1935 | Comedia | Otras plataformas | ATP |
 | 1934 | It Happened One Night | it-happened-one-night-1934 | Comedia | Otras plataformas | ATP |
+| 1934 | L'Atalante | latalante-1934 | Romance | Otras plataformas | +13 |
 | 1933 | Cavalcade | cavalcade-1933 | Drama | Otras plataformas | +12 |
+| 1933 | Héroes de ocasión | heroes-de-ocasion-1933 | Comedia | Otras plataformas | ATP |
+| 1933 | King Kong | king-kong-1933 | Aventura | Apple TV | ATP |
 | 1932 | Freaks | freaks-1932 | Drama | Otras plataformas | +18 |
 | 1932 | Grand Hotel | grand-hotel-1932 | Drama | Otras plataformas | ATP |
 | 1931 | Cimarron | cimarron-1931 | Western | Prime Video | +12 |
+| 1931 | Luces de la ciudad | luces-de-la-ciudad-1931 | Comedia | Otras plataformas | ATP |
 | 1931 | M, el vampiro de Düsseldorf | m-el-vampiro-de-dusseldorf-1931 | Crimen | Otras plataformas | +13 |
 | 1930 | All Quiet on the Western Front | all-quiet-on-the-western-front-1930 | Drama | Otras plataformas | +13 |
 | 1929 | Man with a Movie Camera | man-with-a-movie-camera-1929 | Documental | Otras plataformas | ATP |
 | 1929 | The Broadway Melody | the-broadway-melody-1929 | Drama | Otras plataformas | +13 |
 | 1928 | La pasión de Juana de Arco | la-pasion-de-juana-de-arco-1928 | Drama | Otras plataformas | +13 |
+| 1927 | Amanecer | amanecer-1927 | Drama | Otras plataformas | ATP |
 | 1927 | Metrópolis | metropolis-1927 | Ciencia ficcion | Otras plataformas | ATP |
 | 1927 | Wings | wings-1927 | Drama | Otras plataformas | +13 |
 | 1926 | El maquinista de la General | el-maquinista-de-la-general-1926 | Comedia | Otras plataformas | +13 |
+| 1925 | El acorazado Potemkin | el-acorazado-potemkin-1925 | Drama | Otras plataformas | +13 |
+| 1925 | La quimera del oro | la-quimera-del-oro-1925 | Comedia | Otras plataformas | ATP |
 | 1922 | Nosferatu | nosferatu-1922 | Terror | Otras plataformas | +13 |
+| 1916 | Intolerancia | intolerancia-1916 | Drama | Otras plataformas | +13 |

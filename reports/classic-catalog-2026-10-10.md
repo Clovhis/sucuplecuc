@@ -1,0 +1,187 @@
+# Clásicos del cine: altas y auditoría — 2026-10-10
+
+## Alcance
+
+Se agregan **64 películas** ausentes del catálogo. La búsqueda tomó como referencias el [Top 100 de AFI](https://www.afi.com/afis-100-years-100-movies-10th-anniversary-edition/) y la encuesta [Sight and Sound del BFI](https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time). El lote final reúne 40 títulos de la primera tanda y 24 de los 39 candidatos de la revisión BFI; los 15 que no superaron las puertas de identidad, créditos, imagen, datos o tráiler quedaron fuera de las altas:
+
+- Un condenado a muerte se escapa (1956)
+- La negra (1965)
+- El viaje de la hiena (1973)
+- Daughters of the Dust (1991)
+- Sátántangó (1994)
+- Te querré siempre (1954)
+- Killer of Sheep (1977)
+- Al azar, Baltasar (1966)
+- El intendente Sansho (1954)
+- El moderno Sherlock Holmes (1924)
+- Histoire(s) du cinéma (1988)
+- News from Home (1976)
+- Primavera tardía (1949)
+- Un día brillante de verano (1991)
+- Wanda (1970)
+
+No se agregaron premios sin verificar. Los años y títulos localizados se conservaron según el estreno argentino cuando hubo evidencia local; *Los puentes de Madison* queda como 1995 y su estreno original argentino figura el 12/10/1995 en [Cines Argentinos](https://m.cinesargentinos.com.ar/pelicula/4464-los-puentes-de-madison/). El duplicado anterior de *Yi Yi* (1999) se corrigió: la ficha nueva es *Yi Yi* (2000), según [Criterion](https://www.criterion.com/films/781-yi-yi) y [Janus Films](https://www.janusfilms.com/films/list?director=edward+yang); el póster y el trailer corresponden al año 2000. *La Jetée* dura 28 minutos según el [BFI](https://www.bfi.org.uk/film/e6855ee9-c56d-5914-9f9b-69307cef5b18/la-jetee) y *Meshes of the Afternoon* 14 según la [Library of Congress](https://www.loc.gov/programs/national-film-preservation-board/film-registry/descriptions-and-essays/); ambas fichas omiten runtimeMinutes porque el validador actual limita ese campo a largometrajes desde 40 minutos.
+
+## Puntajes CinePosta
+
+Primero se normalizó la calificación pública: RT Popcornmeter en porcentaje dividido por 10 y redondeado; IMDb en escala de 0 a 10, redondeado. Los tamaños de muestra pequeños se limitaron a 8. Luego se aplicó el filtro editorial del catálogo: 9 exige logro cinematográfico excepcional y reconocimiento perdurable; 10 queda para un grupo muy reducido. La evidencia puede bajar el score, nunca subirlo. No se agregaron campos de fuente al JSON.
+
+| Película | Evidencia pública y normalización | Score final | Razonamiento editorial |
+|---|---|---:|---|
+| A la hora señalada (1952) | RT Popcornmeter: 89%; 25,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/1046060-high_noon) | **9** | El reloj en tiempo real, el encuadre del pueblo y la tensión moral sostienen un western formalmente preciso e influyente. |
+| A vida o muerte (1946) | RT Popcornmeter: 93%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/a_matter_of_life_and_death) | **9** | La transición entre blanco y negro y Technicolor vuelve visible su paso entre dos mundos y sigue siendo una rareza expresiva del cine británico. |
+| Amanecer (1927) | RT Popcornmeter: 92%; 5,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/sunrise) | **9** | El movimiento de cámara y la narración subjetiva llevan el melodrama mudo a una expresividad visual todavía moderna. |
+| American Graffiti (1973) | RT Popcornmeter: 84%; 50,000+ Ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/american_graffiti) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Andrei Rublev (1966) | RT Popcornmeter: 93%; 10,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/andrei_rublev) | **9** | La estructura por episodios une creación artística, violencia histórica y fe en una de las exploraciones visuales más ambiciosas de Tarkovsky. |
+| Bonnie y Clyde (1967) | RT Popcornmeter: 88%; 50,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/bonnie_and_clyde) | **9** | Su montaje, violencia y construcción de los protagonistas marcaron el cambio de tono del Nuevo Hollywood. |
+| Buen trabajo (1999) | IMDb: 7.3/10; 19k ratings; normaliza 7; [fuente](https://www.imdb.com/title/tt0209933/ratings/) | **7** | La normalización externa da 7; se conserva ese valor sin elevarlo por su condición de clásico. |
+| Caballero sin espada (1939) | RT Popcornmeter: 94%; 25,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/mr_smith_goes_to_washington) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Cabaret (1972) | RT Popcornmeter: 87%; 25,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/cabaret) | **9** | Los números del Kit Kat Club y la vida política alemana quedan integrados en una puesta que usa el musical para revelar el deterioro social. |
+| Céline y Julie van en barco (1974) | RT Popcornmeter: 86%; 1,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/celine_and_julie_go_boating) | **8** | Tope 8: la muestra de audiencia ronda 1.000 votos; no alcanza para sostener el nivel excepcional. |
+| Cléo de 5 a 7 (1962) | RT Popcornmeter: 89%; 5,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/cleo_de_5_a_7) | **9** | El tiempo casi continuo y la mirada de Cléo convierten la ciudad en una forma concreta de ansiedad y cambio personal. |
+| Close-Up (1990) | RT Popcornmeter: 88%; 500+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/close_up) | **8** | Tope 8: la muestra de audiencia es de 500+ votos y la ficha de RT usa 1999 como estreno estadounidense; se conserva el año de catálogo 1990. |
+| Cuentos de la luna pálida (1953) | IMDb (JustWatch AR ficha): 8.1/10; 28k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/cuentos-de-la-luna-palida) | **9** | La puesta en escena enlaza guerra, deseo y relato sobrenatural sin separar el mundo de los vivos del de los fantasmas. |
+| Doctor Jivago (1965) | RT Popcornmeter: 88%; 25,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/1006037-doctor_zhivago) | **8** | La normalización llega a 9, pero la amplitud y el prestigio del melodrama no bastan por sí solos para el umbral excepcional. |
+| Easy Rider: Buscando mi destino (1969) | RT Popcornmeter: 82%; 50,000+ Ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/easy_rider) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| El acorazado Potemkin (1925) | IMDb: 7.9/10; 66k ratings; normaliza 8; [fuente](https://www.imdb.com/title/tt0015648/) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| El desprecio (1963) | IMDb (JustWatch AR ficha): 7.4/10; 39k; normaliza 7; [fuente](https://www.justwatch.com/ar/pelicula/el-desprecio-1963) | **7** | La normalización externa da 7; se conserva ese valor sin elevarlo por su condición de clásico. |
+| El espejo (1975) | IMDb (JustWatch AR ficha): 7.9/10; 58k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/el-espejo) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| El espíritu de la colmena (1973) | IMDb (JustWatch AR ficha): 7.7/10; 23k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/el-espiritu-de-la-colmena) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| El gatopardo (1963) | IMDb (JustWatch AR ficha): 7.9/10; 35k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/el-gatopardo) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| El gran dictador (1940) | RT Popcornmeter: 95%; 25,000+ ratings; normaliza 10; [fuente](https://www.rottentomatoes.com/m/great_dictator) | **9** | La evidencia se normaliza a 10; se fija en 9 porque el 10 queda reservado a muy pocos hitos máximos. Chaplin combina la invención física de Hynkel con una sátira política que culmina en un gesto dramático fuera del registro cómico. |
+| El tesoro de Sierra Madre (1948) | RT Popcornmeter: 93%; 25,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/treasure_of_the_sierra_madre) | **9** | El paisaje y la actuación de Walter Huston convierten la codicia en el motor psicológico de un western sin héroe idealizado. |
+| En alas de la danza (1936) | RT Popcornmeter: 86%; 5,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/1020729-swing_time) | **8** | El musical de Astaire y Rogers destaca por su ritmo y puesta; se mantiene 8 aunque RT normalice a 9, sin elevar por el canon del género. |
+| Espartaco (1960) | IMDb (JustWatch AR ficha): 7.9/10; 152k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/espartaco) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Héroes de ocasión (1933) | RT Popcornmeter: 91%; 25,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/duck_soup) | **9** | La acumulación absurda de gags y su sátira de la guerra hacen de esta comedia un punto alto del humor anárquico de los Marx. |
+| Historias de Filadelfia (1940) | RT Popcornmeter: 92%; 25,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/philadelphia_story) | **8** | La comedia de conjunto y sus actuaciones son notables; el dato externo no sustituye el filtro del grupo reducido de 9. |
+| Imitación de la vida (1959) | RT Popcornmeter: 85%; 2,500+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/imitation_of_life) | **8** | El melodrama y su lectura social son potentes, pero el indicador externo no alcanza para ingresar al nivel excepcional de 9. |
+| Intolerancia (1916) | IMDb (JustWatch AR ficha): 7.7/10; 16k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/intolerancia-1916) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles (1975) | RT Popcornmeter: 77%; 1,000+ ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/jeanne_dielman_23_quai_du_commerce_1080_bruxelles) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| King Kong (1933) | RT Popcornmeter: 86%; 50,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/1011615-king_kong) | **9** | La animación de modelos y la mezcla de aventura, terror y espectáculo fijaron recursos que siguen definiendo al cine de monstruos. |
+| La aventura (1960) | RT Popcornmeter: 88%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/lavventura) | **8** | Su modernismo fue influyente, pero el score se mantiene en 8 porque el 9 exige más que relevancia histórica y una audiencia favorable. |
+| La decisión de Sophie (1982) | RT Popcornmeter: 85%; 10,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/sophies_choice) | **8** | La interpretación central y el peso dramático no convierten automáticamente una adaptación prestigiosa en una obra del nivel excepcional de 9. |
+| La fiera de mi niña (1938) | RT Popcornmeter: 89%; 25,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/bringing_up_baby) | **9** | El ritmo verbal y físico de Hepburn y Grant lleva la screwball comedy a una coreografía de malentendidos excepcionalmente precisa. |
+| La Jetée (1962) | RT Popcornmeter: 93%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/la_jetee) | **9** | Su relato de ciencia ficción construido casi por completo con fotografías fijas es una decisión formal singular y ampliamente retomada. |
+| La palabra (1955) | RT Popcornmeter: 91%; 2,500+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/ordet) | **8** | Tope 8: el resultado normalizado llega a 9 con una muestra relativamente acotada de 2.500+ votos. |
+| La quimera del oro (1925) | RT Popcornmeter: 93%; 10,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/the_gold_rush) | **9** | Chaplin equilibra comicidad física, invención de objetos y una historia de hambre y afecto que conserva fuerza emocional. |
+| La regla del juego (1939) | RT Popcornmeter: 89%; 10,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/the_rules_of_the_game) | **9** | El movimiento entre invitados y criados expone las reglas de clase mediante una puesta coral y una sátira que influyó en el cine moderno. |
+| La reina africana (1951) | RT Popcornmeter: 86%; 25,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/the_african_queen_1951) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| L'Atalante (1934) | RT Popcornmeter: 89%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/latalante) | **9** | Las imágenes táctiles del río, la cabina y el rostro de Parlo construyen una poesía cotidiana que sobrevivió a su época. |
+| Los espigadores y la espigadora (2000) | IMDb (JustWatch AR ficha): 7.7/10; 10k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/los-espigadores-y-la-espigadora) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Los puentes de Madison (1995) | RT Popcornmeter: 87%; 25,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/bridges_of_madison_county) | **8** | La puesta sobria y las actuaciones son centrales para su permanencia; la normalización externa da 9, pero la película queda en 8 bajo el filtro excepcional. |
+| Los viajes de Sullivan (1941) | RT Popcornmeter: 89%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/sullivans_travels) | **8** | La mezcla de comedia y crítica social es original; el resultado normalizado a 9 no basta para superar el filtro editorial reservado. |
+| Luces de la ciudad (1931) | RT Popcornmeter: 95%; 25,000+ ratings; normaliza 10; [fuente](https://www.rottentomatoes.com/m/city_lights) | **9** | La evidencia se normaliza a 10; se fija en 9 porque el 10 queda reservado a muy pocos hitos máximos. La pantomima, el diseño de escenas y el final entre el vagabundo y la florista conservan la potencia emocional del cine mudo dentro del sonoro. |
+| Madame de... (1953) | IMDb: 7.8/10; 12k ratings; normaliza 8; [fuente](https://www.imdb.com/title/tt0046022/) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Más corazón que odio (1956) | RT Popcornmeter: 88%; 25,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/searchers) | **9** | La amplitud visual del western se acompaña de una ambigüedad moral sobre Ethan que desarma el mito heroico desde adentro. |
+| M.A.S.H. (1970) | RT Popcornmeter: 82%; 50,000+ Ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/mash) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Matar a un ruiseñor (1962) | RT Popcornmeter: 93%; 100,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/to_kill_a_mockingbird) | **9** | La perspectiva infantil organiza un drama judicial y familiar cuyo centro moral descansa en la actuación contenida de Gregory Peck. |
+| Meshes of the Afternoon (1943) | IMDb: 7.8/10; 17k ratings; normaliza 8; [fuente](https://www.imdb.com/title/tt0036154/) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Nashville (1975) | RT Popcornmeter: 83%; 10,000+ Ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/nashville) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Pather Panchali (La canción del camino) (1955) | RT Popcornmeter: 93%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/pather_panchali) | **9** | La observación de la vida rural, el trabajo con intérpretes y la música de Ravi Shankar abrieron una vía decisiva para el cine indio. |
+| Pierrot, el loco (1965) | RT Popcornmeter: 86%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/pierrot_le_fou) | **8** | La ruptura de color y relato es influyente; se conserva 8 porque la señal externa no reemplaza el juicio de obra maestra excepcional. |
+| Playtime (1967) | RT Popcornmeter: 89%; 5,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/playtime) | **9** | La arquitectura, el color y el sonido convierten cada plano amplio en una coreografía cómica de la vida moderna. |
+| ¡Qué bello es vivir! (1946) | RT Popcornmeter: 95%; 100,000+ ratings; normaliza 10; [fuente](https://www.rottentomatoes.com/m/its_a_wonderful_life) | **9** | La evidencia se normaliza a 10; se fija en 9 porque el 10 queda reservado a muy pocos hitos máximos. La historia local y la estructura fantástica hacen que sus decisiones narrativas tengan un peso comunitario perdurable; el máximo queda en 9. |
+| ¿Quién teme a Virginia Woolf? (1966) | RT Popcornmeter: 90%; 10,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/whos_afraid_of_virginia_woolf) | **9** | El espacio cerrado y las actuaciones de Taylor y Burton sostienen una batalla verbal de gran intensidad cinematográfica. |
+| Shane, el desconocido (1953) | RT Popcornmeter: 81%; 10,000+ Ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/shane) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Sin sol (1983) | RT Popcornmeter: 86%; 2,500+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/sans_soleil) | **8** | Tope 8: la muestra de audiencia es de 2.500+ votos y RT identifica la película como 1982; el catálogo conserva el año BFI 1983. |
+| Todos los hombres del presidente (1976) | RT Popcornmeter: 92%; 50,000+ Ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/all_the_presidents_men) | **9** | La investigación periodística se vuelve suspenso mediante montaje, sonido y espacios burocráticos, con una huella duradera en el thriller político. |
+| Todos nos llamamos Alí (1974) | IMDb: 8/10; 26k ratings; normaliza 8; [fuente](https://www.imdb.com/title/tt0071141/ratings/) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Tropical Malady (2004) | RT Popcornmeter: 76%; 1,000+ Ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/tropical_malady) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Un tranvía llamado deseo (1951) | RT Popcornmeter: 89%; 50,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/1020333-streetcar_named_desire) | **9** | La actuación de Leigh y Brando, el uso expresionista del sonido y la puesta del apartamento consolidaron una forma intensa de realismo teatral. |
+| Una noche en la ópera (1935) | IMDb (JustWatch AR ficha): 7.8/10; 36k; normaliza 8; [fuente](https://www.justwatch.com/ar/pelicula/una-noche-en-la-opera) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Viñas de ira (1940) | RT Popcornmeter: 88%; 10,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/grapes_of_wrath) | **9** | Ford convierte el desplazamiento de una familia en un relato social de escala nacional, con imágenes y actuaciones que evitan el melodrama fácil. |
+| Yankee Doodle Dandy (1942) | RT Popcornmeter: 83%; 5,000+ Ratings; normaliza 8; [fuente](https://www.rottentomatoes.com/m/yankee_doodle_dandy) | **8** | La normalización externa da 8; no se eleva sólo por su condición de clásico. |
+| Yi Yi (2000) | RT Popcornmeter: 91%; 5,000+ ratings; normaliza 9; [fuente](https://www.rottentomatoes.com/m/yi_yi) | **9** | La puesta paciente y el relato coral hacen que la vida familiar de Taipéi se lea como un retrato generacional de alcance universal. |
+
+## Disponibilidad en Argentina
+
+La revisión usó JustWatch Argentina; las 19 fichas con proveedor representable se abrieron de nuevo el 9 o 10/10. Cuando JustWatch informa suscripción y alquiler/compra, el reporte distingue ambas modalidades. MovistarTV, MUBI, Plex y Artiflix no tienen etiqueta en el catálogo; cuando no hay otro proveedor representable, se conserva sólo Otras plataformas. No se combinó Otras plataformas con otra etiqueta.
+
+| Película | Etiquetas del catálogo | Dato comprobado y fuente |
+|---|---|---|
+| A la hora señalada (1952) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=High%20Noon%201952); se conserva Otras plataformas. |
+| A vida o muerte (1946) | Otras plataformas | Stream: Artiflix; proveedor no representado (Artiflix), se deja Otras plataformas. [JustWatch AR](https://www.justwatch.com/ar/pelicula/a-vida-o-muerte); consulta del lote 2026-10-09. |
+| Amanecer (1927) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Sunrise%3A%20A%20Song%20of%20Two%20Humans%201927); se conserva Otras plataformas. |
+| American Graffiti (1973) | Apple TV | MovistarTV por streaming y Apple TV para alquiler/compra; la ficha del catálogo conserva Apple TV, único proveedor de la oferta que etiqueta. [JustWatch AR](https://www.justwatch.com/ar/pelicula/american-graffiti), última actualización declarada 2026-10-10. |
+| Andrei Rublev (1966) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Andrei%20Rublev%201966); se conserva Otras plataformas. |
+| Bonnie y Clyde (1967) | HBO Max, Apple TV | HBO Max por suscripción; Apple TV para alquiler/compra. [JustWatch AR](https://www.justwatch.com/ar/pelicula/bonnie-y-clyde-1967), última actualización declarada 2026-10-10. |
+| Buen trabajo (1999) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Beau%20Travail%201999); se conserva Otras plataformas. |
+| Caballero sin espada (1939) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/caballero-sin-espada), última actualización declarada 2026-10-10. |
+| Cabaret (1972) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/cabaret); consulta del lote 2026-10-09. |
+| Céline y Julie van en barco (1974) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=C%C3%A9line%20et%20Julie%20vont%20en%20bateau%201974); se conserva Otras plataformas. |
+| Cléo de 5 a 7 (1962) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Cl%C3%A9o%20de%205%20%C3%A0%207%201962); se conserva Otras plataformas. |
+| Close-Up (1990) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Nema-ye%20Nazdik%201990); se conserva Otras plataformas. |
+| Cuentos de la luna pálida (1953) | Otras plataformas | Stream: Plex; proveedor no representado (Plex), se deja Otras plataformas. [JustWatch AR](https://www.justwatch.com/ar/pelicula/cuentos-de-la-luna-palida); consulta del lote 2026-10-09. |
+| Doctor Jivago (1965) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Doctor%20Zhivago%201965); se conserva Otras plataformas. |
+| Easy Rider: Buscando mi destino (1969) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/easy-rider-buscando-mi-destino), última actualización declarada 2026-10-09. |
+| El acorazado Potemkin (1925) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Bronenosets%20Potyomkin%201925); se conserva Otras plataformas. |
+| El desprecio (1963) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/el-desprecio-1963); consulta del lote 2026-10-09. |
+| El espejo (1975) | Otras plataformas | Stream: Plex; proveedor no representado (Plex), se deja Otras plataformas. [JustWatch AR](https://www.justwatch.com/ar/pelicula/el-espejo); consulta del lote 2026-10-09. |
+| El espíritu de la colmena (1973) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/el-espiritu-de-la-colmena), última actualización declarada 2026-10-10. |
+| El gatopardo (1963) | Disney Plus | Disney Plus por suscripción. [JustWatch AR](https://www.justwatch.com/ar/pelicula/el-gatopardo), última actualización declarada 2026-10-09. |
+| El gran dictador (1940) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=The%20Great%20Dictator%201940); se conserva Otras plataformas. |
+| El tesoro de Sierra Madre (1948) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/el-tesoro-de-sierra-madre), última actualización declarada 2026-10-10. |
+| En alas de la danza (1936) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/en-alas-de-la-danza), última actualización declarada 2026-10-09. |
+| Espartaco (1960) | HBO Max, Apple TV | HBO Max y MovistarTV por streaming; Apple TV para alquiler/compra. El catálogo registra HBO Max y Apple TV. [JustWatch AR](https://www.justwatch.com/ar/pelicula/espartaco), última actualización declarada 2026-10-09. |
+| Héroes de ocasión (1933) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Duck%20Soup%201933); se conserva Otras plataformas. |
+| Historias de Filadelfia (1940) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/historias-de-filadelfia), última actualización declarada 2026-10-10. |
+| Imitación de la vida (1959) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Imitation%20of%20Life%201959); se conserva Otras plataformas. |
+| Intolerancia (1916) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/intolerancia-1916); consulta del lote 2026-10-09. |
+| Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles (1975) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Jeanne%20Dielman%2C%2023%20quai%20du%20Commerce%2C%201080%20Bruxelles%201975); se conserva Otras plataformas. |
+| King Kong (1933) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/king-kong-1933), última actualización declarada 2026-10-08. |
+| La aventura (1960) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=L'avventura%201960); se conserva Otras plataformas. |
+| La decisión de Sophie (1982) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/la-decision-de-sophie), última actualización declarada 2026-10-09. |
+| La fiera de mi niña (1938) | HBO Max, Apple TV | HBO Max por suscripción; Apple TV para alquiler/compra. [JustWatch AR](https://www.justwatch.com/ar/pelicula/la-fiera-de-mi-nina), última actualización declarada 2026-10-06. |
+| La Jetée (1962) | Otras plataformas | Stream: MUBI, MUBI Amazon Channel; proveedor no representado (MUBI, MUBI Amazon Channel), se deja Otras plataformas. [JustWatch AR](https://www.justwatch.com/ar/pelicula/el-muelle); consulta del lote 2026-10-09. |
+| La palabra (1955) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Ordet%201955); se conserva Otras plataformas. |
+| La quimera del oro (1925) | Otras plataformas | Stream: Artiflix; proveedor no representado (Artiflix), se deja Otras plataformas. [JustWatch AR](https://www.justwatch.com/ar/pelicula/la-quimera-del-oro); consulta del lote 2026-10-09. |
+| La regla del juego (1939) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=La%20R%C3%A8gle%20du%20jeu%201939); se conserva Otras plataformas. |
+| La reina africana (1951) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=The%20African%20Queen%201951); se conserva Otras plataformas. |
+| L'Atalante (1934) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=L'Atalante%201934); se conserva Otras plataformas. |
+| Los espigadores y la espigadora (2000) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/los-espigadores-y-la-espigadora); consulta del lote 2026-10-09. |
+| Los puentes de Madison (1995) | HBO Max, Apple TV | HBO Max por streaming y Apple TV para alquiler/compra. [JustWatch AR](https://www.justwatch.com/ar/pelicula/los-puentes-de-madison), última actualización declarada 2026-10-10. |
+| Los viajes de Sullivan (1941) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Sullivan's%20Travels%201941); se conserva Otras plataformas. |
+| Luces de la ciudad (1931) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=City%20Lights%201931); se conserva Otras plataformas. |
+| Madame de... (1953) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Madame%20de...%201953); se conserva Otras plataformas. |
+| Más corazón que odio (1956) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=The%20Searchers%201956); se conserva Otras plataformas. |
+| M.A.S.H. (1970) | Disney Plus | Disney Plus por suscripción. [JustWatch AR](https://www.justwatch.com/ar/pelicula/m-a-s-h), última actualización declarada 2026-10-09. |
+| Matar a un ruiseñor (1962) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/matar-a-un-ruisenor), última actualización declarada 2026-10-09. |
+| Meshes of the Afternoon (1943) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Meshes%20of%20the%20Afternoon%201943); se conserva Otras plataformas. |
+| Nashville (1975) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/nashville); consulta del lote 2026-10-09. |
+| Pather Panchali (La canción del camino) (1955) | Otras plataformas | Stream: Plex; proveedor no representado (Plex), se deja Otras plataformas. [JustWatch AR](https://www.justwatch.com/ar/pelicula/pather-panchali-la-cancion-del-camino); consulta del lote 2026-10-09. |
+| Pierrot, el loco (1965) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/pierrot-el-loco); consulta del lote 2026-10-09. |
+| Playtime (1967) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/playtime); consulta del lote 2026-10-09. |
+| ¡Qué bello es vivir! (1946) | Apple TV, Prime Video | MovistarTV por streaming; Amazon Video y Apple TV para alquiler/compra. El catálogo etiqueta Amazon Video como Prime Video y Apple TV. [JustWatch AR](https://www.justwatch.com/ar/pelicula/que-bello-es-vivir), última actualización declarada 2026-10-08. |
+| ¿Quién teme a Virginia Woolf? (1966) | Apple TV | MovistarTV por streaming y Apple TV para alquiler/compra; la ficha del catálogo conserva Apple TV, único proveedor de la oferta que etiqueta. [JustWatch AR](https://www.justwatch.com/ar/pelicula/quien-teme-a-virginia-woolf), última actualización declarada 2026-10-09. |
+| Shane, el desconocido (1953) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Shane%201953); se conserva Otras plataformas. |
+| Sin sol (1983) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Sans%20soleil%201983); se conserva Otras plataformas. |
+| Todos los hombres del presidente (1976) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/todos-los-hombres-del-presidente), última actualización declarada 2026-10-08. |
+| Todos nos llamamos Alí (1974) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Angst%20essen%20Seele%20auf%201974); se conserva Otras plataformas. |
+| Tropical Malady (2004) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Sud%20sanaeha%202004); se conserva Otras plataformas. |
+| Un tranvía llamado deseo (1951) | Apple TV | Apple TV para alquiler/compra; transaccional. [JustWatch AR](https://www.justwatch.com/ar/pelicula/un-tranvia-llamado-deseo), última actualización declarada 2026-10-08. |
+| Una noche en la ópera (1935) | Otras plataformas | Ficha exacta sin oferta legal compatible [JustWatch AR](https://www.justwatch.com/ar/pelicula/una-noche-en-la-opera); consulta del lote 2026-10-09. |
+| Viñas de ira (1940) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=The%20Grapes%20of%20Wrath%201940); se conserva Otras plataformas. |
+| Yankee Doodle Dandy (1942) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Yankee%20Doodle%20Dandy%201942); se conserva Otras plataformas. |
+| Yi Yi (2000) | Otras plataformas | Sin ficha exacta o sin oferta confirmada en la búsqueda argentina [JustWatch AR](https://www.justwatch.com/ar/buscar?q=Yi%20Yi%202000); se conserva Otras plataformas. |
+
+## Auditorías de contenido y medios
+
+- Créditos y retratos: auditoría explícita de las 64 fichas, **64/64 aprobadas**. Los 5.682 retratos locales pasaron npm run images:people:check después de reemplazar el retrato angosto de Michael York por una foto identificada y de normalizar el nombre de David Wark Griffith con sus alias acreditados.
+- Pósters: **64 WebP locales; 52 aprobados en rango y 12 avisos de tamaño preferido**, sin póster inválido. Los avisos son pósters correctos por debajo de 40 KiB; su identidad visual quedó inspeccionada en hojas de contacto.
+- Tráileres: el auditor estricto no reporta errores. Quedan 39 avisos porque el endpoint de búsqueda de YouTube respondió HTTP 302; los IDs elegidos se verificaron por título y película. *Sin sol* conserva 1983 —año de la fuente BFI— aunque el título del tráiler dice 1982, año de su presentación internacional.
+- Avisos de metadatos: 2 URLs de retrato no clasificadas por el auditor y 6 fechas de nacimiento no disponibles; no bloquean la atribución de identidad ni la ficha.
+- Medidores de género secundario: 16 avisos informativos por señales que no activan un medidor; no se cambió ninguna categoría por ese motivo.
+- Pósters con aviso de tamaño: *bonnie-y-clyde-1967* (39524 bytes), *caballero-sin-espada-1939* (35150 bytes), *cabaret-1972* (33920 bytes), *close-up-1990* (34298 bytes), *cuentos-de-la-luna-palida-1953* (35326 bytes), *la-decision-de-sophie-1982* (31424 bytes), *la-palabra-1955* (36422 bytes), *los-puentes-de-madison-1995* (40552 bytes), *meshes-of-the-afternoon-1943* (35310 bytes), *pather-panchali-1955* (34144 bytes), *playtime-1967* (36874 bytes), *sin-sol-1983* (35648 bytes).
+
+## Validación final
+
+Se regeneraron las referencias de películas y personas. Los resultados son:
+
+- npm run validate:content: aprobado; incluyó auditoría de las 65 fichas modificadas, controles de catálogos y compilación completa de 7.813 páginas.
+- npm run check: aprobado con 0 errores, 0 advertencias y 0 sugerencias.
+- Auditoría estricta de pósters y tráileres: 64 fichas, 0 errores; 52 pósters en rango y 12 avisos de tamaño preferido.
+- validate:public-output y validate:sitemap-indexability: aprobados; el sitemap tiene 5.469 páginas canónicas.
+- npm run update-upcoming-releases: ejecutado; la fuente TMDb respondió HTTP 403 al buscar un próximo título no relacionado con este lote y el script conservó el archivo generado existente.
+- git diff --check: aprobado.
+
+No se hizo commit, push ni deploy. El lote queda en la rama de revisión.

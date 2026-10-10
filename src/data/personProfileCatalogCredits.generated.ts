@@ -816,7 +816,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "star-wars-episode-iv-a-new-hope-1977"
   ],
   "cary-grant": [
-    "north-by-northwest-1959"
+    "north-by-northwest-1959",
+    "historias-de-filadelfia-1940",
+    "la-fiera-de-mi-nina-1938"
   ],
   "casey-affleck": [
     "the-instigators-2024",
@@ -1129,6 +1131,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "gran-torino-2008",
     "million-dollar-baby-2004",
     "rio-mistico-2003",
+    "los-puentes-de-madison-1995",
     "un-mundo-perfecto-1993",
     "unforgiven-1992",
     "el-bueno-el-feo-y-el-malo-1966"
@@ -1532,7 +1535,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "como-locos-a-por-el-oro-2008",
     "poseidos-1998",
     "seis-grados-de-separacion-1993",
-    "ordinary-people-1980"
+    "ordinary-people-1980",
+    "mash-1970"
   ],
   "drew-barrymore": [
     "blended-2014",
@@ -1554,6 +1558,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "rain-man-1988",
     "tootsie-1982",
     "kramer-vs-kramer-1979",
+    "todos-los-hombres-del-presidente-1976",
     "perros-de-paja-1971",
     "midnight-cowboy-1969",
     "el-graduado-1967"
@@ -1815,7 +1820,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "faye-dunaway": [
     "supergirl-1984",
     "network-un-mundo-implacable-1976",
-    "chinatown-1974"
+    "chinatown-1974",
+    "bonnie-y-clyde-1967"
   ],
   "federico-luppi": [
     "un-lugar-en-el-mundo-1992",
@@ -1978,7 +1984,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "star-wars-episode-iii-revenge-of-the-sith-2005",
     "star-wars-episode-ii-attack-of-the-clones-2002",
     "star-wars-episode-i-the-phantom-menace-1999",
-    "star-wars-episode-iv-a-new-hope-1977"
+    "star-wars-episode-iv-a-new-hope-1977",
+    "american-graffiti-1973"
   ],
   "george-miller": [
     "furiosa-a-mad-max-saga-2024",
@@ -2246,7 +2253,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "henry-fonda": [
     "hasta-que-llego-su-hora-1968",
-    "12-angry-men-1957"
+    "12-angry-men-1957",
+    "vinas-de-ira-1940"
   ],
   "hernan-goldfrid": [
     "lo-dejamos-aca-2026",
@@ -2304,6 +2312,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "babe-el-cerdito-valiente-1995"
   ],
   "humphrey-bogart": [
+    "la-reina-africana-1951",
+    "el-tesoro-de-la-sierra-madre-1948",
     "el-sueno-eterno-1946",
     "casablanca-1943",
     "el-halcon-maltes-1941"
@@ -2370,7 +2380,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-shining-1980",
     "camino-del-sur-1978",
     "one-flew-over-the-cuckoo-s-nest-1975",
-    "chinatown-1974"
+    "chinatown-1974",
+    "easy-rider-buscando-mi-destino-1969"
   ],
   "jack-quaid": [
     "companion-2025",
@@ -2460,6 +2471,9 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "james-stewart": [
     "vertigo-1958",
     "la-ventana-indiscreta-1954",
+    "que-bello-es-vivir-1946",
+    "historias-de-filadelfia-1940",
+    "caballero-sin-espada-1939",
     "you-can-t-take-it-with-you-1938"
   ],
   "james-wan": [
@@ -3652,7 +3666,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-score-un-golpe-maestro-2001",
     "apocalypse-now-1979",
     "the-godfather-1972",
-    "on-the-waterfront-1954"
+    "on-the-waterfront-1954",
+    "un-tranvia-llamado-deseo-1951"
   ],
   "martin-adjemian": [
     "la-cienaga-2001"
@@ -3842,10 +3857,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "una-serie-de-eventos-desafortunados-2004",
     "adaptation-el-ladron-de-orquideas-2002",
     "la-habitacion-de-marvin-1996",
+    "los-puentes-de-madison-1995",
     "la-muerte-le-sienta-bien-1992",
     "postales-desde-el-filo-1990",
     "out-of-africa-1985",
     "enamorarse-1984",
+    "la-decision-de-sophie-1982",
     "kramer-vs-kramer-1979",
     "manhattan-1979",
     "the-deer-hunter-1978"
@@ -4567,7 +4584,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "postales-desde-el-filo-1990",
     "always-1989",
     "close-encounters-of-the-third-kind-1977",
-    "jaws-1975"
+    "jaws-1975",
+    "american-graffiti-1973"
   ],
   "richard-e-grant": [
     "la-ambicion-de-los-savage-2026",
@@ -4725,6 +4743,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "out-of-africa-1985",
     "el-mejor-1984",
     "ordinary-people-1980",
+    "todos-los-hombres-del-presidente-1976",
     "the-sting-1973",
     "dos-hombres-y-un-destino-1969"
   ],
@@ -4774,7 +4793,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "desapariciones-2003",
     "a-beautiful-mind-2001",
     "el-grinch-2000",
-    "apolo-13-1995"
+    "apolo-13-1995",
+    "american-graffiti-1973"
   ],
   "ron-perlman": [
     "transformers-el-despertar-de-las-bestias-2023",
@@ -5115,6 +5135,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-naranja-mecanica-1971",
     "2001-a-space-odyssey-1968",
     "telefono-rojo-volamos-hacia-moscu-1964",
+    "espartaco-1960",
     "senderos-de-gloria-1957"
   ],
   "stanley-tucci": [
@@ -5450,7 +5471,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "tom-skerritt": [
     "contacto-1997",
     "la-zona-muerta-1983",
-    "alien-1979"
+    "alien-1979",
+    "mash-1970"
   ],
   "tomas-fonzi": [
     "kamchatka-2002"
