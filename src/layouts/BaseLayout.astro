@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/mobile.css';
-import DonationGate from '../components/DonationGate.astro';
+import SiteNavigation from '../components/SiteNavigation.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import {
 	SITE_LANGUAGE,
@@ -113,7 +113,7 @@ const contentSecurityPolicy = [
 	</head>
 	<body class={bodyClass}>
 		<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
-		<DonationGate />
+		<SiteNavigation />
 		<slot />
 		<SiteFooter />
 	</body>

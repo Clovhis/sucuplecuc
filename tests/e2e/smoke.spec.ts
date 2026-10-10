@@ -1,12 +1,13 @@
 import { expect, test } from '@playwright/test';
 
-test('donation invitation stays reachable without blocking navigation', async ({ page }) => {
+test('support stays in the footer and section navigation replaces the top invitation', async ({ page }) => {
   const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
 
   expect(response?.ok()).toBeTruthy();
 
-  const compact = await page.evaluate(() => matchMedia('(max-width: 720px), (orientation: landscape) and (max-height: 500px) and (pointer: coarse)').matches);
-	const prompt = compact ? page.locator('.site-footer') : page.getByRole('complementary', { name: /Apoyá a Cine Posta/i });
+  await expect(page.locator('.donation-invite')).toHaveCount(0);
+  await expect(page.getByRole('navigation', { name: 'Secciones de CinePosta' })).toBeVisible();
+	const prompt = page.locator('.site-footer');
   await expect(prompt).toBeVisible();
   await expect(
 		prompt.getByRole('link', { name: /Apoyá con un cafecito/i }),
@@ -39,7 +40,7 @@ test('home page renders the catalog shell', async ({ page }) => {
   expect(response?.ok()).toBeTruthy();
   await expect(page).toHaveTitle(/Cine|Posta/i);
   await expect(page.locator('body')).toBeVisible();
-	await expect(page.getByRole('heading', { name: 'Películas', exact: true })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Catálogo de películas', exact: true })).toBeVisible();
 	await expect(page.locator('.site-header__brand img')).toHaveAttribute('src', '/brand/cineposta-logo-full.png');
 	await expect(page.locator('[data-movie-search-grid]')).toBeVisible();
 	await expect(page.getByRole('heading', { name: /Construí tu carrera en el cine/i })).toBeVisible();

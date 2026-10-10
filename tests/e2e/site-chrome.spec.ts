@@ -12,10 +12,7 @@ test('shared footer keeps every destination usable across responsive widths', as
     await page.setViewportSize({ width, height: 900 });
     await expect(about).toHaveJSProperty('open', width > 720);
     if (width <= 720) {
-      await expect(page.locator('.donation-invite')).toBeHidden();
       await about.locator('summary').click();
-    } else {
-      await expect(page.locator('.donation-invite')).toBeVisible();
     }
     expect(await footer.locator('.site-footer__nav a').evaluateAll(links =>
       links.map(link => link.getAttribute('href')))).toEqual(expect.arrayContaining(footerPaths));
