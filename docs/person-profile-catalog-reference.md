@@ -1,6 +1,6 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-10. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-11. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
 Total de vínculos de películas del catálogo: 4282
@@ -257,7 +257,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Eugenia Alonso | `eugenia-alonso` | /personas/eugenia-alonso/ | Actriz | 1 | 5 |
 | Eva De Dominici | `eva-de-dominici` | /personas/eva-de-dominici/ | Actriz | 1 | 5 |
 | Eva Green | `eva-green` | /personas/eva-green/ | Actriz | 4 | 6 |
-| Eva Marie Saint | `eva-marie-saint` | /personas/eva-marie-saint/ | Actriz | 2 | 6 |
+| Eva Marie Saint | `eva-marie-saint` | /personas/eva-marie-saint/ | Actriz | 2 | 8 |
 | Evangeline Lilly | `evangeline-lilly` | /personas/evangeline-lilly/ | Actriz | 3 | 6 |
 | Ewan McGregor | `ewan-mcgregor` | /personas/ewan-mcgregor/ | Actor | 13 | 6 |
 | Ezequiel Rodríguez | `ezequiel-rodriguez` | /personas/ezequiel-rodriguez/ | Actor | 1 | 7 |

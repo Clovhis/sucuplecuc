@@ -77,6 +77,8 @@ export const researchedEditorialBiographiesWave4C = {
     referenceUrls: [
       'https://www.oscars.org/oscars/ceremonies/1955',
       'https://www.bgsu.edu/alumni/connect/alumni-awards/hall-of-fame/eva-marie-saint.html',
+      'https://apnews.com/article/eva-marie-saint-dies-7019a82dbbac40b99a976354cbb89200',
+      'https://www.latimes.com/entertainment-arts/story/2026-10-06/eva-marie-saint-dead-north-by-northwest-on-the-waterfront',
     ],
   },
   'evangeline-lilly': {
