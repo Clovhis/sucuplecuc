@@ -1,0 +1,381 @@
+/* The videoclub belongs to the home edition. Keep this stylesheet exclusive
+   to /que-miro-hoy/; the teaser and shared chrome retain their own styles. */
+body.postometro-edition {
+	--night-ink: #f0eee8;
+	--night-muted: #aeb5bf;
+	--night-line: #343b45;
+	--night-accent: #e6b291;
+	--focus-ring: #e6b291;
+	background: #101318;
+	color: var(--night-ink);
+}
+body.postometro-edition::before,
+body.postometro-edition::after,
+.postometro-edition .postometro-page::before { display: none; }
+.postometro-edition .postometro-page { gap: 2rem; padding-bottom: 3rem; }
+.postometro-edition .page-actions {
+	margin: 1rem 0 0;
+	padding-bottom: .75rem;
+	border-bottom: 1px solid var(--night-line);
+}
+.postometro-edition .page-action {
+	min-height: 44px;
+	padding: .6rem .85rem;
+	border: 1px solid var(--night-line);
+	border-radius: 4px;
+	background: none;
+	box-shadow: none;
+	color: var(--night-muted);
+	font: 500 .85rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	transform: none;
+}
+.postometro-edition .page-action--home { padding: .5rem 0; border: 0; }
+
+/* Native frames keep the paintings complete. A matte over their empty edges
+   joins the scene to the copy without fading the characters or cropping it. */
+.postometro-edition .postometro-hero {
+	grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+	gap: 0;
+	align-items: center;
+	min-height: 0;
+	padding: 0;
+	border: 1px solid #302b40;
+	border-radius: 6px;
+	background: #130d28;
+	box-shadow: none;
+	overflow: hidden;
+}
+.postometro-edition .postometro-hero::before,
+.postometro-edition .postometro-hero::after { display: none; }
+.postometro-edition .postometro-hero__copy {
+	gap: 1.25rem;
+	max-width: none;
+	padding: clamp(1.5rem, 3vw, 2.5rem);
+	background: none;
+}
+.postometro-edition :is(.postometro-hero__art, .postometro-empty__art) {
+	display: block;
+	position: relative;
+	inset: auto;
+	align-self: center;
+	justify-self: stretch;
+	width: 100%;
+	height: auto;
+	min-height: 0;
+	margin: 0;
+	mask-image: none;
+	-webkit-mask-image: none;
+}
+.postometro-edition :is(.postometro-hero__art, .postometro-empty__art) img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	transform: none;
+	filter: none;
+}
+.postometro-edition .postometro-hero__art { align-self: end; aspect-ratio: 3 / 2; }
+.postometro-edition .postometro-empty__art { aspect-ratio: 4 / 3; }
+.postometro-edition :is(.postometro-hero__art, .postometro-empty__art)::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: none;
+}
+.postometro-edition .postometro-hero__art::before {
+	background:
+		linear-gradient(90deg, #130d28, rgba(19, 13, 40, .9) 4%, rgba(19, 13, 40, .4) 17%, transparent 32%),
+		linear-gradient(180deg, #130d28, rgba(19, 13, 40, .7) 3%, transparent 12%);
+}
+.postometro-edition .postometro-empty__art::before {
+	background: linear-gradient(90deg, #130d28, transparent 6%);
+}
+.postometro-edition .postometro-hero__title {
+	max-width: 11ch;
+	color: var(--night-ink);
+	font: 600 clamp(2.5rem, 4.6vw, 4.2rem)/1.04 var(--font-sans);
+	letter-spacing: -.045em;
+	text-wrap: balance;
+}
+.postometro-edition .postometro-hero__subtitle {
+	max-width: 40ch;
+	color: #c9c4d6;
+	font: 400 1rem/1.65 var(--font-sans);
+}
+.postometro-edition :is(.postometro-hero__eyebrow, .postometro-panel__eyebrow, .postometro-results__eyebrow, .postometro-loading__eyebrow) {
+	color: var(--night-accent);
+	font: 500 .7rem/1.5 var(--font-sans);
+	letter-spacing: .08em;
+}
+.postometro-edition .postometro-hero__stats {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: .75rem;
+	width: 100%;
+	margin-top: .5rem;
+	padding-top: 1rem;
+	border-top: 1px solid #3c344d;
+}
+.postometro-edition .postometro-hero__stats span {
+	display: grid;
+	gap: .3rem;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	backdrop-filter: none;
+	color: #c9c4d6;
+	font: 400 .75rem/1.4 var(--font-sans);
+}
+.postometro-edition .postometro-hero__stats strong { display: none; }
+
+/* A sequence of choices, rather than nested boxes. */
+.postometro-edition .postometro-shell { gap: 2.75rem; }
+.postometro-edition :is(.postometro-panel, .postometro-results) {
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+}
+.postometro-edition .postometro-panel::before,
+.postometro-edition .postometro-results::before { display: none; }
+.postometro-edition .postometro-panel__intro {
+	display: grid;
+	gap: .5rem;
+	padding-bottom: 1.25rem;
+	border-color: var(--night-line);
+}
+.postometro-edition :is(.postometro-panel__intro h2, .postometro-results__header h2) {
+	color: var(--night-ink);
+	font: 500 clamp(1.4rem, 2.3vw, 1.9rem)/1.2 var(--font-sans);
+	letter-spacing: -.025em;
+}
+.postometro-edition .postometro-form { gap: 1.5rem; margin-top: 1.5rem; }
+.postometro-edition .postometro-form__section-heading { grid-template-columns: 1fr; margin: .25rem 0 0; gap: 0; }
+.postometro-edition .postometro-form__section-heading h3 { font: 500 1.15rem/1.4 var(--font-sans); }
+.postometro-edition :is(.postometro-form__section-heading > span, .postometro-empty__number) {
+	display: none;
+}
+.postometro-edition .postometro-fieldset--panel {
+	gap: .85rem;
+	padding: 0 0 1.5rem;
+	border: 0;
+	border-bottom: 1px solid var(--night-line);
+	border-radius: 0;
+	background: none;
+	transform: none;
+}
+.postometro-edition .postometro-fieldset--panel::before { display: none; }
+.postometro-edition .postometro-fieldset legend {
+	margin-bottom: .5rem;
+	color: var(--night-ink);
+	font: 500 .95rem/1.5 var(--font-sans);
+}
+.postometro-edition .postometro-form > .postometro-fieldset:first-child legend { font-size: 1.15rem; }
+.postometro-edition :is(.postometro-fieldset__hint, .postometro-form__refinements-copy p) { color: var(--night-muted); font-size: .85rem; }
+.postometro-edition .postometro-choice-grid--mood { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem 2rem; }
+.postometro-edition .postometro-choice-grid--company { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
+.postometro-edition .postometro-choice-card__body,
+.postometro-edition .postometro-choice-card--compact .postometro-choice-card__body {
+	grid-template-columns: minmax(0, 1fr);
+	gap: .4rem;
+	min-height: 88px;
+	padding: .85rem 2rem .85rem .5rem;
+	border: 0;
+	border-bottom: 1px solid var(--night-line);
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	transform: none;
+}
+.postometro-edition .postometro-choice-card__body strong { color: var(--night-ink); font: 500 1.1rem/1.25 var(--font-sans); letter-spacing: -.015em; }
+.postometro-edition .postometro-choice-card__body .postometro-choice-card__description { color: var(--night-muted); font-size: .75rem; line-height: 1.35; }
+.postometro-edition .postometro-choice-card__body::after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	inset: 1rem .5rem auto auto;
+	border: 1px solid #78818d;
+	background: none;
+	opacity: 1;
+	transform: none;
+}
+.postometro-edition .postometro-chip-option > span {
+	min-height: 48px;
+	padding: .7rem .85rem;
+	border: 0;
+	border-bottom: 1px solid var(--night-line);
+	border-radius: 0;
+	background: none;
+	color: var(--night-ink);
+	font: 400 .85rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+	box-shadow: none;
+	transform: none;
+}
+.postometro-edition .postometro-chip-option > span::after {
+	content: '';
+	flex: 0 0 12px;
+	width: 12px;
+	height: 12px;
+	margin-left: auto;
+	border: 1px solid #78818d;
+	border-radius: 50%;
+}
+.postometro-edition .postometro-choice-card:hover .postometro-choice-card__body,
+.postometro-edition .postometro-chip-option:hover > span { border-color: #858e9a; background: #181d24; box-shadow: none; transform: none; }
+.postometro-edition .postometro-choice-card input:checked + .postometro-choice-card__body,
+.postometro-edition .postometro-chip-option input:checked + span {
+	border-color: var(--night-accent);
+	background: none;
+	color: #ffe0cc;
+	box-shadow: none;
+	transform: none;
+}
+.postometro-edition .postometro-choice-card input:checked + .postometro-choice-card__body strong { color: var(--night-accent); }
+.postometro-edition .postometro-choice-card input:checked + .postometro-choice-card__body::after,
+.postometro-edition .postometro-chip-option input:checked + span::after {
+	border-color: var(--night-accent);
+	background: radial-gradient(circle, var(--night-accent) 0 3px, transparent 3.5px);
+}
+.postometro-edition .postometro-form__secondary-grid { gap: 1.5rem 2rem; }
+.postometro-edition .postometro-form__refinements {
+	grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+	gap: 2rem;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: none;
+}
+.postometro-edition .postometro-form__refinements-copy h3 { font-weight: 500; }
+.postometro-edition .postometro-select-field > span { font-size: .85rem; font-weight: 500; color: var(--night-ink); }
+.postometro-edition .postometro-select-field select { min-width: 0; width: 100%; border-color: var(--night-line); border-radius: 4px; background-color: #14181f; }
+.postometro-edition .postometro-form__actions { gap: 1rem; padding-top: .5rem; }
+.postometro-edition .postometro-search-cta { min-height: 52px; border-radius: 4px; border-color: var(--night-accent); background: var(--night-accent); color: #201811; box-shadow: none; transform: none; }
+.postometro-edition .postometro-search-cta:hover { background: #f3c6aa; box-shadow: none; transform: none; }
+.postometro-edition .postometro-search-cta strong { font: 600 .95rem/1.4 var(--font-sans); }
+
+/* Recommendation: a film spread, with a bounded poster and quieter facts. */
+.postometro-edition .postometro-results { scroll-margin-top: 1rem; }
+.postometro-edition .postometro-results__header { padding-bottom: 1.25rem; border-color: var(--night-line); column-gap: 2rem; }
+.postometro-edition .postometro-results__diagnosis { color: var(--night-ink); font-size: .95rem; }
+.postometro-edition .postometro-results__subheadline { color: var(--night-muted); }
+.postometro-edition :is(.postometro-results__diagnosis, .postometro-results__subheadline):empty { display: none; }
+.postometro-edition .postometro-empty { border-radius: 6px; }
+.postometro-edition .postometro-empty--idle {
+	grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+	align-items: center;
+	min-height: 0;
+	padding: 0;
+	border: 1px solid #302b40;
+	background: #130d28;
+	overflow: hidden;
+}
+.postometro-edition .postometro-empty__copy { min-height: 0; gap: 1rem; padding: clamp(1.5rem, 3vw, 2.5rem); background: none; }
+.postometro-edition .postometro-empty__copy h3 { font: 500 clamp(1.5rem, 2.6vw, 2.25rem)/1.15 var(--font-sans); letter-spacing: -.025em; }
+.postometro-edition .postometro-empty__copy p { font-size: .95rem; }
+.postometro-edition .postometro-pick { padding: 1.5rem 0 0; border: 0; border-radius: 0; background: none; }
+.postometro-edition .postometro-pick__body { grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); column-gap: 2.5rem; row-gap: 1.15rem; }
+.postometro-edition .postometro-pick__body h3 { font: 500 clamp(1.8rem, 3vw, 2.5rem)/1.1 var(--font-sans); letter-spacing: -.03em; }
+.postometro-edition .postometro-pick__poster-shell { border: 1px solid var(--night-line); border-radius: 4px; box-shadow: none; }
+.postometro-edition .postometro-pick__poster { object-fit: contain; }
+.postometro-edition .postometro-pick__credits { padding: 1rem 0 0; border: 0; border-top: 1px solid var(--night-line); border-radius: 0; background: none; box-shadow: none; }
+.postometro-edition .postometro-pick__credit-row dt { color: var(--night-muted); font: 400 .7rem/1.5 var(--font-sans); }
+.postometro-edition .postometro-pick__credit-row dd { color: var(--night-ink); font-size: .85rem; }
+.postometro-edition .postometro-pick__fact { padding: .85rem 0; border: 0; border-block: 1px solid var(--night-line); border-radius: 0; background: none; }
+.postometro-edition .postometro-pick__fact-label,
+.postometro-edition .postometro-pick__fact--score .postometro-pick__fact-label { color: var(--night-muted); font: 500 .7rem/1.4 var(--font-sans); letter-spacing: .04em; }
+.postometro-edition .postometro-pick__platform { padding: .4rem 0; border-radius: 0; background: none; font-size: .85rem; font-weight: 500; }
+.postometro-edition .postometro-pick__platform > img + span {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+.postometro-edition :is(.postometro-pick__score-number, .postometro-pick__score-number span, .postometro-pick__score-verdict, .postometro-pick__score-unrated) {
+	color: var(--night-ink);
+	font: 500 .9rem/1.4 var(--font-sans);
+	letter-spacing: 0;
+}
+.postometro-edition .postometro-pick__score-number span { margin: 0; }
+.postometro-edition .postometro-pick__review { color: var(--night-ink); font-size: 1rem; line-height: 1.75; max-width: 65ch; }
+.postometro-edition :is(.postometro-pill, .postometro-badge-list li, .postometro-loading__chips li) { padding: .3rem .5rem; border: 1px solid var(--night-line); border-radius: 3px; background: none; color: var(--night-muted); font: 400 .75rem/1.4 var(--font-sans); letter-spacing: 0; text-transform: none; }
+.postometro-edition .postometro-pill:not(.postometro-pill--muted) { border-color: #6e5548; color: var(--night-accent); }
+.postometro-edition .postometro-reason-list { gap: .5rem; }
+.postometro-edition .postometro-reason-list li { color: var(--night-muted); font-size: .9rem; }
+.postometro-edition .postometro-reason-list li::before { background: var(--night-accent); box-shadow: none; }
+.postometro-edition .postometro-first-note { border-radius: 4px; border-color: var(--night-line); background: #14181f; color: var(--night-muted); }
+.postometro-edition .postometro-pick__actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.postometro-edition .postometro-cta { min-height: 44px; padding: .65rem .85rem; border: 1px solid var(--night-accent); border-radius: 4px; background: #30251f; color: #ffe0cc; font: 500 .85rem/1.4 var(--font-sans); letter-spacing: 0; text-transform: none; transform: none; }
+.postometro-edition :is(.postometro-cta--ghost, .postometro-cta--quiet) { border-color: var(--night-line); background: none; color: var(--night-muted); }
+.postometro-edition .postometro-cta:hover { border-color: var(--night-accent); color: var(--night-ink); transform: none; }
+.postometro-edition .postometro-loading { min-height: 20rem; padding: 2rem; border: 1px solid var(--night-line); border-radius: 6px; background: #14181f; }
+.postometro-edition .postometro-loading h3 { max-width: 30ch; font: 500 clamp(1.4rem, 2vw, 1.9rem)/1.2 var(--font-sans); }
+.postometro-edition .postometro-loading__phrase { color: var(--night-muted); }
+.postometro-edition .postometro-loading__meter { height: 3px; border-radius: 0; }
+.postometro-edition .postometro-loading__meter span { background: var(--night-accent); border-radius: 0; box-shadow: none; }
+
+@media (max-width: 1000px) {
+	.postometro-edition .postometro-hero { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.postometro-edition .postometro-hero__copy { padding: 1.5rem; }
+	.postometro-edition .postometro-hero__title { font-size: 2.5rem; }
+	.postometro-edition .postometro-hero__stats { max-width: 28rem; }
+	.postometro-edition .postometro-form__refinements { grid-template-columns: 1fr; gap: 1rem; }
+	.postometro-edition .postometro-form__footer { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.postometro-edition .postometro-choice-grid--company { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.postometro-edition .postometro-pick__body { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); column-gap: 1.5rem; }
+}
+@media (max-width: 720px) {
+	.postometro-edition .postometro-page { gap: 1.5rem; }
+	.postometro-edition .postometro-hero { grid-template-columns: 1fr; }
+	.postometro-edition .postometro-hero__copy { max-width: none; padding: 1.25rem 1.25rem .5rem; gap: 1rem; }
+	.postometro-edition .postometro-hero__title { font-size: clamp(2.3rem, 8vw, 3rem); max-width: 14ch; }
+	.postometro-edition .postometro-hero__copy > .postometro-hero__subtitle { font-size: .95rem; }
+	.postometro-edition .postometro-hero__art { max-width: none; }
+	.postometro-edition .postometro-hero__stats span { font-size: .75rem; }
+	.postometro-edition .postometro-shell { gap: 2rem; }
+	.postometro-edition .postometro-hero__art::before { background: linear-gradient(180deg, #130d28, rgba(19, 13, 40, .6) 3%, transparent 12%); }
+	.postometro-edition .postometro-empty__art::before { background: linear-gradient(180deg, #130d28, transparent 6%); }
+	.postometro-edition .postometro-choice-grid--mood { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem 1.25rem; }
+	.postometro-edition .postometro-choice-grid--company { gap: 1.25rem; }
+	.postometro-edition .postometro-choice-card__body,
+	.postometro-edition .postometro-choice-card--compact .postometro-choice-card__body { grid-template-columns: minmax(0, 1fr); padding: .7rem 1.5rem .7rem .25rem; gap: .3rem; min-height: 88px; }
+	.postometro-edition .postometro-choice-card__body strong { font-size: 1rem; }
+	.postometro-edition .postometro-choice-card__body .postometro-choice-card__description { font-size: .75rem; }
+	.postometro-edition .postometro-choice-card__body::after { width: 12px; height: 12px; inset: .9rem .25rem auto auto; }
+	.postometro-edition .postometro-form__secondary-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+	.postometro-edition .postometro-chip-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+	.postometro-edition .postometro-chip-option > span { gap: .4rem; padding: .65rem .6rem; font-size: .8rem; }
+	.postometro-edition .postometro-form__footer { grid-template-columns: 1fr; }
+	.postometro-edition .postometro-form__actions { align-items: stretch; flex-direction: column; gap: .6rem; }
+	.postometro-edition .postometro-results__header { grid-template-columns: 1fr; }
+	.postometro-edition .postometro-results__header > * { grid-column: 1; grid-row: auto; }
+	.postometro-edition .postometro-empty--idle { grid-template-columns: 1fr; }
+	.postometro-edition .postometro-empty__copy { padding: 1.5rem; }
+	.postometro-edition .postometro-empty__copy h3 { max-width: 22ch; }
+	.postometro-edition .postometro-pick__body { grid-template-columns: 1fr; }
+	.postometro-edition .postometro-pick__body > *,
+	.postometro-edition .postometro-pick__body > *:not(.postometro-pick__media) { grid-column: 1; grid-row: auto; }
+	.postometro-edition .postometro-pick__media { width: min(100%, 15rem); max-width: none; justify-self: center; }
+	.postometro-edition .postometro-pick__actions .postometro-cta { flex: 1 1 auto; }
+	.postometro-edition .postometro-loading { padding: 1.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.postometro-edition .postometro-pick--reveal .postometro-pick__body > * {
+		opacity: 1;
+		transform: none;
+		animation: none;
+	}
+}

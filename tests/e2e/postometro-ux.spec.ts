@@ -6,7 +6,7 @@ test('Qué vemos hoy presenta los filtros en un orden claro y sin desbordes', as
 	await expect(page.getByRole('heading', { level: 1, name: '¿Qué vemos hoy?' })).toBeVisible();
 	await expect(page.locator('.postometro-hero__stats > span')).toHaveCount(3);
 	await expect(page.locator('.postometro-hero__art img')).toHaveJSProperty('complete', true);
-	await expect(page.getByRole('group', { name: /Qué buscás que te haga la peli/i })).toBeVisible();
+	await expect(page.getByRole('group', { name: /Qué tenés ganas de sentir/i })).toBeVisible();
 	await expect(page.getByRole('group', { name: /Con quién la ves/i })).toBeVisible();
 	await expect(page.getByLabel('¿De qué época?')).toBeVisible();
 	await expect(page.getByLabel('¿Dónde la querés ver?')).toBeVisible();
@@ -87,9 +87,10 @@ test('Qué vemos hoy muestra la marca de una plataforma elegida', async ({ page 
 	await expect(platform).toHaveAttribute('aria-label', 'Netflix');
 	await expect(platform.locator('img')).toHaveAttribute('src', '/brand/platforms/netflix.svg');
 	await expect(platform.locator('span')).toHaveText('Netflix');
+	await expect(platform.locator('span')).toHaveCSS('clip-path', 'inset(50%)');
 });
 
-test('El logo de Apple TV+ cabe sin superponerse al nombre', async ({ page }) => {
+test('El logo de Apple TV+ cabe y conserva su nombre accesible sin duplicarlo visualmente', async ({ page }) => {
 	await page.goto('/que-miro-hoy/', { waitUntil: 'domcontentloaded' });
 	await page.getByLabel('¿Dónde la querés ver?').selectOption({ label: 'Apple TV+' });
 	await page.getByRole('button', { name: 'Recomendame una película' }).click();
@@ -97,17 +98,15 @@ test('El logo de Apple TV+ cabe sin superponerse al nombre', async ({ page }) =>
 	const platform = page.locator('[data-postometro-primary] .postometro-pick__platform[aria-label="Apple TV+"]');
 	await expect(platform.locator('img')).toHaveAttribute('src', '/brand/platforms/apple-tv.svg');
 	await expect(platform.locator('span')).toHaveText('Apple TV+');
+	await expect(platform.locator('span')).toHaveCSS('clip-path', 'inset(50%)');
 	const layout = await platform.evaluate((element) => {
 		const logo = element.querySelector('img');
-		const label = element.querySelector('span');
 		const container = element.getBoundingClientRect();
 		const logoBox = logo?.getBoundingClientRect();
-		const labelBox = label?.getBoundingClientRect();
 		return {
 			loaded: Boolean(logo?.complete && logo.naturalWidth > 0),
-			separateRows: Boolean(logoBox && labelBox && logoBox.bottom <= labelBox.top),
-			fits: Boolean(logoBox && labelBox && logoBox.right <= container.right + 1 && labelBox.right <= container.right + 1),
+			fits: Boolean(logoBox && logoBox.left >= container.left - 1 && logoBox.right <= container.right + 1),
 		};
 	});
-	expect(layout).toEqual({ loaded: true, separateRows: true, fits: true });
+	expect(layout).toEqual({ loaded: true, fits: true });
 });

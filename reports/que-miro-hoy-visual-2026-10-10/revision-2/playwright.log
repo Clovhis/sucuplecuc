@@ -1,0 +1,214 @@
+
+Running 50 tests using 4 workers
+
+
+
+(node:13640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:30684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:30596) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:7520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:13640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:30684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:7520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:30596) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/50] [desktop-chromium] › tests\e2e\postometro-design.spec.ts:33:1 › cambiar el plan y reiniciar restauran la escena ilustrada
+[2/50] [desktop-chromium] › tests\e2e\postometro-design.spec.ts:56:1 › las opciones y la carga no usan emojis y el puntaje tiene una escala uniforme
+[3/50] [desktop-chromium] › tests\e2e\postometro-design.spec.ts:3:1 › las escenas del videoclub conservan su composición y no se superponen al texto
+[4/50] [desktop-chromium] › tests\e2e\postometro-design.spec.ts:46:1 › la película recomendada permanece visible con movimiento reducido
+[5/50] [desktop-chromium] › tests\e2e\postometro-teaser.spec.ts:4:1 › el selector del home abre Qué vemos hoy con teclado
+[6/50] [desktop-chromium] › tests\e2e\postometro-ux.spec.ts:3:1 › Qué vemos hoy presenta los filtros en un orden claro y sin desbordes
+[7/50] [desktop-chromium] › tests\e2e\postometro-ux.spec.ts:44:1 › Qué vemos hoy mantiene el flujo de recomendación completo
+[8/50] [desktop-chromium] › tests\e2e\postometro-ux.spec.ts:81:1 › Qué vemos hoy muestra la marca de una plataforma elegida
+[9/50] [desktop-chromium] › tests\e2e\postometro-ux.spec.ts:93:1 › El logo de Apple TV+ cabe y conserva su nombre accesible sin duplicarlo visualmente
+[10/50] [desktop-chromium] › tests\e2e\site-responsive.spec.ts:12:3 › shared responsive shell and readable fields: /que-miro-hoy/
+
+
+(node:18900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:18900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[11/50] [desktop-firefox] › tests\e2e\postometro-design.spec.ts:3:1 › las escenas del videoclub conservan su composición y no se superponen al texto
+
+
+(node:14252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:29764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:14252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:26572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:29764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[12/50] [desktop-firefox] › tests\e2e\postometro-design.spec.ts:33:1 › cambiar el plan y reiniciar restauran la escena ilustrada
+
+
+(node:26572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13/50] [desktop-firefox] › tests\e2e\postometro-design.spec.ts:46:1 › la película recomendada permanece visible con movimiento reducido
+[14/50] [desktop-firefox] › tests\e2e\postometro-design.spec.ts:56:1 › las opciones y la carga no usan emojis y el puntaje tiene una escala uniforme
+[15/50] [desktop-firefox] › tests\e2e\postometro-teaser.spec.ts:4:1 › el selector del home abre Qué vemos hoy con teclado
+[16/50] [desktop-firefox] › tests\e2e\postometro-ux.spec.ts:3:1 › Qué vemos hoy presenta los filtros en un orden claro y sin desbordes
+[17/50] [desktop-firefox] › tests\e2e\postometro-ux.spec.ts:44:1 › Qué vemos hoy mantiene el flujo de recomendación completo
+[18/50] [desktop-firefox] › tests\e2e\postometro-ux.spec.ts:81:1 › Qué vemos hoy muestra la marca de una plataforma elegida
+[19/50] [desktop-firefox] › tests\e2e\postometro-ux.spec.ts:93:1 › El logo de Apple TV+ cabe y conserva su nombre accesible sin duplicarlo visualmente
+[20/50] [desktop-firefox] › tests\e2e\site-responsive.spec.ts:12:3 › shared responsive shell and readable fields: /que-miro-hoy/
+
+
+(node:19968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:19968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[21/50] [desktop-webkit] › tests\e2e\postometro-design.spec.ts:3:1 › las escenas del videoclub conservan su composición y no se superponen al texto
+
+(node:6928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:6928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[22/50] [desktop-webkit] › tests\e2e\postometro-design.spec.ts:33:1 › cambiar el plan y reiniciar restauran la escena ilustrada
+
+
+(node:22676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:22676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:29328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[23/50] [desktop-webkit] › tests\e2e\postometro-design.spec.ts:46:1 › la película recomendada permanece visible con movimiento reducido
+
+
+(node:29328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[24/50] [desktop-webkit] › tests\e2e\postometro-design.spec.ts:56:1 › las opciones y la carga no usan emojis y el puntaje tiene una escala uniforme
+[25/50] [desktop-webkit] › tests\e2e\postometro-teaser.spec.ts:4:1 › el selector del home abre Qué vemos hoy con teclado
+[26/50] [desktop-webkit] › tests\e2e\postometro-ux.spec.ts:3:1 › Qué vemos hoy presenta los filtros en un orden claro y sin desbordes
+[27/50] [desktop-webkit] › tests\e2e\postometro-ux.spec.ts:44:1 › Qué vemos hoy mantiene el flujo de recomendación completo
+[28/50] [desktop-webkit] › tests\e2e\postometro-ux.spec.ts:81:1 › Qué vemos hoy muestra la marca de una plataforma elegida
+[29/50] [desktop-webkit] › tests\e2e\postometro-ux.spec.ts:93:1 › El logo de Apple TV+ cabe y conserva su nombre accesible sin duplicarlo visualmente
+[30/50] [desktop-webkit] › tests\e2e\site-responsive.spec.ts:12:3 › shared responsive shell and readable fields: /que-miro-hoy/
+
+
+(node:25992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:25992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[31/50] [mobile-chromium] › tests\e2e\postometro-design.spec.ts:3:1 › las escenas del videoclub conservan su composición y no se superponen al texto
+[32/50] [mobile-chromium] › tests\e2e\postometro-design.spec.ts:33:1 › cambiar el plan y reiniciar restauran la escena ilustrada
+
+
+(node:30824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:10724) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:30824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:10724) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[33/50] [mobile-chromium] › tests\e2e\postometro-design.spec.ts:46:1 › la película recomendada permanece visible con movimiento reducido
+[34/50] [mobile-chromium] › tests\e2e\postometro-design.spec.ts:56:1 › las opciones y la carga no usan emojis y el puntaje tiene una escala uniforme
+
+
+(node:10416) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:10416) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+[35/50] [mobile-chromium] › tests\e2e\postometro-teaser.spec.ts:4:1 › el selector del home abre Qué vemos hoy con teclado
+[36/50] [mobile-chromium] › tests\e2e\postometro-ux.spec.ts:3:1 › Qué vemos hoy presenta los filtros en un orden claro y sin desbordes
+[37/50] [mobile-chromium] › tests\e2e\postometro-ux.spec.ts:44:1 › Qué vemos hoy mantiene el flujo de recomendación completo
+[38/50] [mobile-chromium] › tests\e2e\postometro-ux.spec.ts:81:1 › Qué vemos hoy muestra la marca de una plataforma elegida
+[39/50] [mobile-chromium] › tests\e2e\postometro-ux.spec.ts:93:1 › El logo de Apple TV+ cabe y conserva su nombre accesible sin duplicarlo visualmente
+[40/50] [mobile-chromium] › tests\e2e\site-responsive.spec.ts:12:3 › shared responsive shell and readable fields: /que-miro-hoy/
+
+
+(node:4440) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:16260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:4440) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:16260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[41/50] [mobile-webkit] › tests\e2e\postometro-design.spec.ts:3:1 › las escenas del videoclub conservan su composición y no se superponen al texto
+[42/50] [mobile-webkit] › tests\e2e\postometro-design.spec.ts:33:1 › cambiar el plan y reiniciar restauran la escena ilustrada
+
+
+(node:6844) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:10160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+
+(node:6844) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[43/50] [mobile-webkit] › tests\e2e\postometro-design.spec.ts:56:1 › las opciones y la carga no usan emojis y el puntaje tiene una escala uniforme
+[44/50] [mobile-webkit] › tests\e2e\postometro-design.spec.ts:46:1 › la película recomendada permanece visible con movimiento reducido
+[45/50] [mobile-webkit] › tests\e2e\postometro-teaser.spec.ts:4:1 › el selector del home abre Qué vemos hoy con teclado
+[46/50] [mobile-webkit] › tests\e2e\postometro-ux.spec.ts:3:1 › Qué vemos hoy presenta los filtros en un orden claro y sin desbordes
+[47/50] [mobile-webkit] › tests\e2e\postometro-ux.spec.ts:44:1 › Qué vemos hoy mantiene el flujo de recomendación completo
+[48/50] [mobile-webkit] › tests\e2e\postometro-ux.spec.ts:81:1 › Qué vemos hoy muestra la marca de una plataforma elegida
+[49/50] [mobile-webkit] › tests\e2e\postometro-ux.spec.ts:93:1 › El logo de Apple TV+ cabe y conserva su nombre accesible sin duplicarlo visualmente
+[50/50] [mobile-webkit] › tests\e2e\site-responsive.spec.ts:12:3 › shared responsive shell and readable fields: /que-miro-hoy/
+  50 passed (37.6s)

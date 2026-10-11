@@ -1,0 +1,474 @@
+[
+  {
+    "engine": "chromium",
+    "name": "desktop",
+    "width": 1440,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.500016579898531,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.333343585642666,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.500016579898531,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.333343585642666,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "name": "tablet",
+    "width": 768,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "name": "mobile",
+    "width": 390,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "name": "narrow",
+    "width": 320,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5000388048117967,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5000388048117967,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "name": "desktop",
+    "width": 1440,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.500016579898531,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.333353838582677,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.500016579898531,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.333353838582677,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "name": "tablet",
+    "width": 768,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333494371708778,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333494371708778,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "name": "mobile",
+    "width": 390,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "name": "narrow",
+    "width": 320,
+    "initial": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5000388048117967,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "reset": {
+      "overflow": false,
+      "illustrations": [
+        {
+          "src": "/images/postometro/cineposta-personajes-noche.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.5000388048117967,
+          "naturalRatio": 1.5,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        },
+        {
+          "src": "/images/postometro/cineposta-personajes-recomendacion.webp",
+          "loaded": true,
+          "visible": true,
+          "ratio": 1.3333333333333333,
+          "naturalRatio": 1.3333333333333333,
+          "objectFit": "contain",
+          "contained": true,
+          "inFrame": true
+        }
+      ]
+    },
+    "first": "el-secreto-de-sus-ojos-2009",
+    "next": "el-patron-radiografia-de-un-crimen-2014",
+    "href": "/peliculas/parasite-2019/",
+    "errors": []
+  }
+]

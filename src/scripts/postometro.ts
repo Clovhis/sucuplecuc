@@ -169,14 +169,13 @@ function initPostometro(
 
 		if (mode === 'changed') {
 			headline.textContent = 'Cambiaste la selección';
-			diagnosis.textContent = 'La recomendación anterior ya no corresponde a estos ajustes.';
-			subheadline.textContent = 'Volvé a buscar para recibir una nueva opción.';
+			diagnosis.textContent = '';
+			subheadline.textContent = '';
 			body.innerHTML = `
 				<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
 					<div class="postometro-empty__copy">
 						<span class="postometro-empty__number" aria-hidden="true">3</span>
 						<h3>Listo para otra búsqueda</h3>
-						<p>Con esta selección, la nueva recomendación aparece cuando toques <strong>Recomendame una película</strong>.</p>
 					</div>
 					${renderIdleArt()}
 				</section>
@@ -185,14 +184,13 @@ function initPostometro(
 		}
 
 		headline.textContent = 'Acá va a aparecer tu película';
-		diagnosis.textContent = 'Completá las opciones y te mostramos la que mejor calza con esta noche.';
-		subheadline.textContent = 'Podés cambiar cualquier ajuste y volver a buscar.';
+		diagnosis.textContent = '';
+		subheadline.textContent = '';
 		body.innerHTML = `
 			<section class="postometro-empty postometro-empty--idle" data-postometro-empty>
 				<div class="postometro-empty__copy">
 					<span class="postometro-empty__number" aria-hidden="true">3</span>
 					<h3>La elegida está en algún estante</h3>
-					<p>Cuando termines de ajustar la noche, tocá <strong>Recomendame una película</strong> y la buscamos.</p>
 				</div>
 				${renderIdleArt()}
 			</section>
@@ -211,8 +209,8 @@ function initPostometro(
 	const renderLoading = (): void => {
 		resultsRoot.dataset.postometroState = 'loading';
 		headline.textContent = 'Buscando película';
-		diagnosis.textContent = 'Estamos cruzando tu combo para sacar una recomendación que tenga sentido.';
-		subheadline.textContent = 'Ánimo, compañía, tiempo, plataforma y época. Todo entra en la mezcla.';
+		diagnosis.textContent = '';
+		subheadline.textContent = '';
 
 		const pills = [
 			getSelectedFieldLabel(form, 'era'),
@@ -225,7 +223,6 @@ function initPostometro(
 
 		body.innerHTML = `
 			<section class="postometro-loading" data-postometro-loading>
-				<p class="postometro-loading__eyebrow">Buscando película</p>
 				<h3>Estamos revolviendo el catálogo para esta noche</h3>
 				<p class="postometro-loading__phrase" data-postometro-loading-phrase></p>
 				<ul class="postometro-loading__chips">
@@ -256,8 +253,8 @@ function initPostometro(
 		);
 
 		headline.textContent = resultSet.headline;
-		diagnosis.textContent = resultSet.diagnosis;
-		subheadline.textContent = resultSet.subheadline;
+		diagnosis.textContent = '';
+		subheadline.textContent = '';
 
 		if (trigger === 'reroll' && availableResults.length === 0) {
 			body.innerHTML = `

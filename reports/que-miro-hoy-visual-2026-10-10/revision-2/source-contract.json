@@ -1,0 +1,108 @@
+{
+  "baselineRef": "b9283f70",
+  "pageOnlyChanges": [
+    "CSS import",
+    "scoped body class",
+    "decorative emoji removal",
+    "redundant form and idle copy removed as requested"
+  ],
+  "controlsPayloadMetadataAndIllustrationsUnchanged": true,
+  "scriptLogicUnchangedBeyondAllowlistedCopyRemovals": true,
+  "engineLogicUnchangedBeyondAllowlistedReasonCopy": true,
+  "engineCopyChanges": [
+    [
+      "Tiene pulso para levantarte la noche sin sobreactuarla.",
+      "Para reírte un rato."
+    ],
+    [
+      "Va bien si hoy querés una peli con nervio y presión.",
+      "Te mantiene en suspenso."
+    ],
+    [
+      "Entrega show, ritmo y un plan sin vueltas.",
+      "Para pasarla bien y desconectar."
+    ],
+    [
+      "Tiene humanidad y deja algo cálido más allá del género.",
+      "Para engancharte con los personajes."
+    ],
+    [
+      "No termina cuando aparecen los créditos: deja ideas dando vueltas.",
+      "De esas que te dejan pensando."
+    ],
+    [
+      "Sirve si querés sustos, clima o un mal viaje lindo.",
+      "Para cagarte un poco de miedo."
+    ],
+    [
+      "Para verla solo funciona porque se banca bien su propio clima.",
+      "Para verla tranquilo, a tu ritmo."
+    ],
+    [
+      "En pareja suele rendir porque deja charla o química.",
+      "Para ver juntos y comentarla después."
+    ],
+    [
+      "Con amigos entra bien porque tiene energía para compartir.",
+      "Va bien para una noche con amigos."
+    ],
+    [
+      "No es una bomba de incomodidad: para familia va bastante segura.",
+      "Una para ver en familia."
+    ],
+    [
+      "No se pone pesada porque sí y entra bastante fácil.",
+      "Liviana, para despejarte un rato."
+    ],
+    [
+      "Tiene sustancia, pero no exige fumársela con manual.",
+      "Te engancha sin hacerse pesada."
+    ],
+    [
+      "Aprieta bastante y no juega a media máquina.",
+      "Para meterte de lleno en la historia."
+    ],
+    [
+      "Tiene más capas y pide un poco más de cabeza, justo lo que buscaste.",
+      "Para verla con atención y darle unas vueltas."
+    ],
+    [
+      "La duración hoy no te condiciona, así que ${runtimeLabel} no molesta.",
+      "Dura ${runtimeLabel}; hoy tenés tiempo."
+    ],
+    [
+      "Dura ${runtimeLabel}, así que entra bastante bien para una noche corta.",
+      "Dura ${runtimeLabel}: no te lleva toda la noche."
+    ],
+    [
+      "Con ${runtimeLabel} queda en una zona muy razonable para hoy.",
+      "Dura ${runtimeLabel}: va con el tiempo que tenés."
+    ],
+    [
+      "Dura ${runtimeLabel}, así que se banca bien una noche larga.",
+      "Dura ${runtimeLabel}: para verla sin apuro."
+    ],
+    [
+      "Encima ya está en ${entry.platformLabel}, así que no tenés que salir a buscarla por todos lados.",
+      "La encontrás en ${entry.platformLabel}."
+    ],
+    [
+      "Dentro de Cine Posta queda marcada como ${entry.verdictLabel.toLowerCase()}.",
+      "En Cine Posta: ${entry.verdictLabel.toLowerCase()}."
+    ]
+  ],
+  "stable": [
+    {
+      "path": "src/lib/postometro.ts",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/postometro/cineposta-personajes-noche.webp",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/postometro/cineposta-personajes-recomendacion.webp",
+      "unchanged": true
+    }
+  ]
+}

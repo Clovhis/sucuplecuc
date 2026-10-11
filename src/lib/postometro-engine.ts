@@ -311,26 +311,26 @@ const cinepostaBaseScore: Record<CinePostaScore, number> = {
 };
 
 const moodPrimaryReasons: Record<PostometroMoodId, string> = {
-	risas: 'Tiene pulso para levantarte la noche sin sobreactuarla.',
-	tension: 'Va bien si hoy querés una peli con nervio y presión.',
-	pochoclo: 'Entrega show, ritmo y un plan sin vueltas.',
-	corazon: 'Tiene humanidad y deja algo cálido más allá del género.',
-	cabeza: 'No termina cuando aparecen los créditos: deja ideas dando vueltas.',
-	sustos: 'Sirve si querés sustos, clima o un mal viaje lindo.',
+	risas: 'Para reírte un rato.',
+	tension: 'Te mantiene en suspenso.',
+	pochoclo: 'Para pasarla bien y desconectar.',
+	corazon: 'Para engancharte con los personajes.',
+	cabeza: 'De esas que te dejan pensando.',
+	sustos: 'Para cagarte un poco de miedo.',
 };
 
 const companyReasons: Record<PostometroCompanyId, string> = {
-	solo: 'Para verla solo funciona porque se banca bien su propio clima.',
-	pareja: 'En pareja suele rendir porque deja charla o química.',
-	amigos: 'Con amigos entra bien porque tiene energía para compartir.',
-	familia: 'No es una bomba de incomodidad: para familia va bastante segura.',
+	solo: 'Para verla tranquilo, a tu ritmo.',
+	pareja: 'Para ver juntos y comentarla después.',
+	amigos: 'Va bien para una noche con amigos.',
+	familia: 'Una para ver en familia.',
 };
 
 const intensityReasons: Record<PostometroIntensityId, string> = {
-	liviana: 'No se pone pesada porque sí y entra bastante fácil.',
-	equilibrada: 'Tiene sustancia, pero no exige fumársela con manual.',
-	intensa: 'Aprieta bastante y no juega a media máquina.',
-	densa: 'Tiene más capas y pide un poco más de cabeza, justo lo que buscaste.',
+	liviana: 'Liviana, para despejarte un rato.',
+	equilibrada: 'Te engancha sin hacerse pesada.',
+	intensa: 'Para meterte de lleno en la historia.',
+	densa: 'Para verla con atención y darle unas vueltas.',
 };
 
 const companyRotationOffset: Record<PostometroCompanyId, number> = {
@@ -902,18 +902,18 @@ function getTimeReason(runtimeLabel: string, answers: PostometroAnswers): string
 	}
 
 	if (answers.time === 'sin-reloj') {
-		return `La duración hoy no te condiciona, así que ${runtimeLabel} no molesta.`;
+		return `Dura ${runtimeLabel}; hoy tenés tiempo.`;
 	}
 
 	if (answers.time === 'flash') {
-		return `Dura ${runtimeLabel}, así que entra bastante bien para una noche corta.`;
+		return `Dura ${runtimeLabel}: no te lleva toda la noche.`;
 	}
 
 	if (answers.time === 'normal') {
-		return `Con ${runtimeLabel} queda en una zona muy razonable para hoy.`;
+		return `Dura ${runtimeLabel}: va con el tiempo que tenés.`;
 	}
 
-	return `Dura ${runtimeLabel}, así que se banca bien una noche larga.`;
+	return `Dura ${runtimeLabel}: para verla sin apuro.`;
 }
 
 function buildReasons(entry: PostometroCatalogEntry, answers: PostometroAnswers): string[] {
@@ -937,10 +937,10 @@ function buildReasons(entry: PostometroCatalogEntry, answers: PostometroAnswers)
 	}
 
 	if (answers.platform !== 'cualquiera') {
-		reasons.push(`Encima ya está en ${entry.platformLabel}, así que no tenés que salir a buscarla por todos lados.`);
+		reasons.push(`La encontrás en ${entry.platformLabel}.`);
 	}
 
-	reasons.push(`Dentro de Cine Posta queda marcada como ${entry.verdictLabel.toLowerCase()}.`);
+	reasons.push(`En Cine Posta: ${entry.verdictLabel.toLowerCase()}.`);
 
 	return uniqueValues(reasons).slice(0, 4);
 }

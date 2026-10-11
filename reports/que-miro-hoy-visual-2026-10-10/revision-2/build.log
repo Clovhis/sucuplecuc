@@ -1,0 +1,26 @@
+
+> la-posta-cine@0.0.1 build
+> astro build
+
+00:08:46 [content] Syncing content
+00:08:46 [content] Synced content
+00:08:46 [types] Generated 97ms
+00:08:46 [build] output: "static"
+00:08:46 [build] mode: "static"
+00:08:46 [build] directory: C:\WebsitePeliculas\dist\
+00:08:46 [build] Collecting build info...
+00:08:46 [build] ✓ Completed in 132ms.
+00:08:49 [build] Building static entrypoints...
+00:08:51 [vite] ✓ built in 1.64s
+00:08:57 [vite] ✓ built in 6.08s
+00:08:57 [build] Rearranging server assets...
+
+ generating static routes
+00:13:36   ├─ /robots.txt (+3ms)
+00:13:36   ├─ /sitemap.xml (+74ms)
+00:13:39   ├─ /index.html (+3.70s)
+00:13:42 ✓ Completed in 4m 45s.
+
+00:13:42 [build] ✓ Completed in 4m 53s.
+00:13:42 [build] 7816 page(s) built in 4m 56s
+00:13:42 [build] Complete!
