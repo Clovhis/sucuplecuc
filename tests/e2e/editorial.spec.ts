@@ -11,6 +11,7 @@ import calm from '../../src/data/editorials/calm-horacio-quiroga-animacion-sitge
 import skydance from '../../src/data/editorials/skydance-cierra-la-compra-de-warner-octubre-2026.json' with { type: 'json' };
 import benImana from '../../src/data/editorials/ben-imana-primera-pelicula-ruandesa-en-los-oscar-2026.json' with { type: 'json' };
 import londonFestival from '../../src/data/editorials/glaxo-the-match-bfi-london-film-festival-2026.json' with { type: 'json' };
+import animales from '../../src/data/editorials/animales-ben-affleck-me-rio-por-los-motivos-equivocados.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -39,8 +40,14 @@ for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival])
     const minutes = Math.ceil(entry.content.flatMap(block => block.type === 'paragraph' && block.text ? block.text.split(/\s+/u) : []).length / 220);
     await page.goto('/');
     const card = page.getByRole('region', { name: 'Desde CinePosta' }).locator('.editorial-card').filter({ hasText: entry.title });
-    await expect(card).toBeVisible();
-    await card.getByRole('link').click();
+    if (homePublicationSlugs.has(entry.slug)) {
+      await expect(card).toBeVisible();
+      await card.getByRole('link').click();
+    } else {
+      await expect(card).toHaveCount(0);
+      await openEditorialIndex(page);
+      await page.locator('.editorial-card').filter({ hasText: entry.title }).getByRole('link').click();
+    }
     await expect(page).toHaveURL(path);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(entry.title);
     await expect(page.locator('time')).toHaveAttribute('datetime', entry.date);
@@ -131,6 +138,7 @@ for (const { entry, movieTitle, sourcePattern } of [
   { entry: miasma, movieTitle: 'Adolescencia, sexo y muerte en Campamento Miasma', sourcePattern: /^https:\/\/(trailers\.mubicdn\.net|www\.steinbrennermueller\.de)\// },
   { entry: colony, movieTitle: 'Colony: Zona Cero', sourcePattern: /^https:\/\/wellgousa\.com\// },
   { entry: insaciable, movieTitle: 'Insaciable', sourcePattern: /^https:\/\/www\.independentfilmco\.com\/films\/saccharine$/ },
+  { entry: animales, movieTitle: 'Animales (Ben Affleck)', sourcePattern: /^https:\/\/www\.netflix\.com\/tudum\// },
 ]) {
   const path = `/editorial/${entry.slug}/`;
 
