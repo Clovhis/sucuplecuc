@@ -1,5 +1,14 @@
 import { expect, test } from '@playwright/test';
 
+test('la clasificación verificada usa la ficha canónica aunque existan alias', async ({ page }) => {
+	await page.goto('/personas/?sexo=femenino&q=Salma+Hayek');
+	const visible = page.locator('[data-person-row]:not([hidden])');
+	await expect(visible).toHaveCount(1);
+	await expect(visible).toHaveAttribute('data-name', 'Salma Hayek');
+	await expect(visible).toHaveAttribute('data-sex', 'femenino');
+	await expect(visible.locator('a')).toHaveAttribute('href', '/personas/salma-hayek/');
+});
+
 test('sexo y nacionalidad se combinan, persisten y se limpian por separado', async ({ page }) => {
 	await page.goto('/personas/');
 	await expect(page.getByLabel('Sexo', { exact: true })).toBeVisible();

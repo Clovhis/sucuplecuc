@@ -6,9 +6,11 @@ import { personProfiles } from '../src/data/personProfiles.ts';
 const file = new URL('../src/data/people.json', import.meta.url);
 const people = JSON.parse(await readFile(file, 'utf8'));
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9\s']/g, ' ').replace(/\s+/g, ' ').trim();
-const records = new Map(Object.entries(people).map(([key, person]) => [normalize(person.name || key), { key, person }]));
+// Match getPersonProfileBySlug/findPersonRecord: prefer the exact catalog key,
+// then its normalized key. A display name can be shared by alias records.
+const records = new Map(Object.entries(people).map(([key, person]) => [normalize(key), { key, person }]));
 const candidates = Object.values(personProfiles).map(profile => {
-  const record = records.get(normalize(profile.name));
+  const record = people[profile.name] ? { key: profile.name, person: people[profile.name] } : records.get(normalize(profile.name));
   const ids = [...new Set([...(record?.person.referenceUrls ?? []), ...(profile.referenceUrls ?? [])]
     .map(url => url.match(/^https:\/\/www\.wikidata\.org\/wiki\/(Q\d+)$/)?.[1]).filter(Boolean))];
   return { profile, record, id: ids.length === 1 ? ids[0] : undefined };

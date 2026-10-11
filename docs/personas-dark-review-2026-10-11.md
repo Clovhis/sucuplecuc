@@ -46,3 +46,5 @@ La revisión detectó y corrigió dos fallas: WebKit computaba el ancho del text
 Las capturas y logs están en `reports/personas-dark-2026-10-11/`. La primera salida de build se descartó porque dos validaciones locales se ejecutaron en paralelo; las verificaciones posteriores del build se hicieron en serie. Los diagnósticos intermedios quedaron archivados fuera del repositorio.
 
 La matriz final se ejecutó en procesos independientes por proyecto. La configuración de QA desactiva el video y el plugin de servidor de Playwright, porque se utiliza un preview estático ya abierto por la sesión. Así se evita un bloqueo de cierre del plugin en Windows; no se modificó la configuración de CI ni los workflows.
+
+La prueba pública detectó un registro duplicado de Salma Hayek con el mismo identificador de IMDb y referencia de Wikidata. Se trasladaron exclusivamente los tres campos nuevos al registro canónico utilizado por la ficha y se corrigió el enriquecedor para usar la misma prioridad de clave exacta que el sitio. Una prueba de regresión comprueba que Salma Hayek aparece al combinar su nombre con Sexo Femenino.
