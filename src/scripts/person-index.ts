@@ -1,3 +1,5 @@
+import { normalizeNationalityFilter, normalizeSexFilter, type PersonSexFilter } from '../lib/person-filters';
+
 const peopleList = document.querySelector<HTMLOListElement>('.people-index__ladder');
 
 if (peopleList) {
@@ -39,6 +41,7 @@ if (peopleList) {
 		sort: SortMode;
 		role: string;
 		nationality: string;
+		sex: PersonSexFilter;
 		age: AgeFilter;
 		catalog: CatalogFilter;
 		awards: AwardsFilter;
@@ -49,19 +52,21 @@ if (peopleList) {
 		name: string;
 		search: string;
 		roles: string[];
-		nationality: string;
+		nationalities: string[];
+		sex: PersonSexFilter;
 		age: number | null;
 		filmCount: number;
 		awardCount: number;
 	};
 
-	type FilterKey = keyof Pick<FilterState, 'query' | 'role' | 'nationality' | 'age' | 'catalog' | 'awards'>;
+	type FilterKey = keyof Pick<FilterState, 'query' | 'role' | 'nationality' | 'sex' | 'age' | 'catalog' | 'awards'>;
 
 	const DEFAULT_STATE: FilterState = {
 		query: '',
 		sort: 'alpha-asc',
 		role: '',
 		nationality: '',
+		sex: '',
 		age: '',
 		catalog: '',
 		awards: '',
@@ -208,7 +213,8 @@ if (peopleList) {
 			name: row.dataset.name ?? '',
 			search: row.dataset.search ?? '',
 			roles: (row.dataset.roles ?? '').split('|').filter(Boolean),
-			nationality: row.dataset.nationality ?? '',
+			nationalities: (row.dataset.nationality ?? '').split('|').filter(Boolean),
+			sex: normalizeSexFilter(row.dataset.sex ?? ''),
 			age: hasKnownAge && Number.isFinite(parsedAge) ? parsedAge : null,
 			filmCount: Number(row.dataset.filmCount ?? '0') || 0,
 			awardCount: Number(row.dataset.awardCount ?? '0') || 0,
@@ -309,7 +315,8 @@ if (peopleList) {
 			query: getValue('query').trim(),
 			sort: SORT_VALUES.has(sortValue as SortMode) ? (sortValue as SortMode) : DEFAULT_STATE.sort,
 			role: normalizeText(getValue('role')),
-			nationality: normalizeText(getValue('nationality')),
+			nationality: normalizeNationalityFilter(getValue('nationality')),
+			sex: normalizeSexFilter(getValue('sex')),
 			age: normalizeAgeFilter(getValue('age')),
 			catalog: normalizeCatalogFilter(getValue('catalog')),
 			awards: normalizeAwardsFilter(getValue('awards')),
@@ -325,12 +332,13 @@ if (peopleList) {
 		setFieldValue('sort', state.sort);
 		setFieldValue('role', state.role);
 		setFieldValue('nationality', state.nationality);
+		setFieldValue('sex', state.sex);
 		setFieldValue('age', state.age);
 		setFieldValue('catalog', state.catalog);
 		setFieldValue('awards', state.awards);
 	};
 
-	const getSelectLabel = (key: 'role' | 'nationality'): string => {
+	const getSelectLabel = (key: 'role' | 'nationality' | 'sex'): string => {
 		const field = getField(key);
 		return field instanceof HTMLSelectElement ? (field.selectedOptions[0]?.textContent?.trim() ?? '') : '';
 	};
@@ -350,6 +358,9 @@ if (peopleList) {
 
 		if (key === 'nationality') {
 			return `nacionalidad: ${getSelectLabel('nationality')}`;
+		}
+		if (key === 'sex') {
+			return `sexo: ${getSelectLabel('sex')}`;
 		}
 
 		const labels = FILTER_LABELS[key as keyof typeof FILTER_LABELS] as Record<string, string> | undefined;
@@ -377,6 +388,7 @@ if (peopleList) {
 				['query', state.query],
 				['role', state.role],
 				['nationality', state.nationality],
+				['sex', state.sex],
 				['age', state.age],
 				['catalog', state.catalog],
 				['awards', state.awards],
@@ -397,7 +409,8 @@ if (peopleList) {
 			query: (params.get('q') ?? '').trim(),
 			sort: SORT_VALUES.has(sortParam as SortMode) ? (sortParam as SortMode) : DEFAULT_STATE.sort,
 			role: normalizeText(params.get('rol') ?? ''),
-			nationality: normalizeText(params.get('nacionalidad') ?? ''),
+			nationality: normalizeNationalityFilter(params.get('nacionalidad') ?? ''),
+			sex: normalizeSexFilter(params.get('sexo') ?? ''),
 			age: normalizeAgeFilter(params.get('edad') ?? ''),
 			catalog: normalizeCatalogFilter(params.get('catalogo') ?? ''),
 			awards: normalizeAwardsFilter(params.get('premios') ?? ''),
@@ -412,6 +425,7 @@ if (peopleList) {
 		params.delete('orden');
 		params.delete('rol');
 		params.delete('nacionalidad');
+		params.delete('sexo');
 		params.delete('edad');
 		params.delete('catalogo');
 		params.delete('premios');
@@ -420,6 +434,7 @@ if (peopleList) {
 		if (state.sort !== DEFAULT_STATE.sort) params.set('orden', state.sort);
 		if (state.role) params.set('rol', state.role);
 		if (state.nationality) params.set('nacionalidad', state.nationality);
+		if (state.sex) params.set('sexo', state.sex);
 		if (state.age) params.set('edad', state.age);
 		if (state.catalog) params.set('catalogo', state.catalog);
 		if (state.awards) params.set('premios', state.awards);
@@ -461,7 +476,10 @@ if (peopleList) {
 			return false;
 		}
 
-		if (state.nationality && entry.nationality !== state.nationality) {
+		if (state.nationality && !entry.nationalities.includes(state.nationality)) {
+			return false;
+		}
+		if (state.sex && entry.sex !== state.sex) {
 			return false;
 		}
 
@@ -526,6 +544,7 @@ if (peopleList) {
 				['query', state.query],
 				['role', state.role],
 				['nationality', state.nationality],
+				['sex', state.sex],
 				['age', state.age],
 				['catalog', state.catalog],
 				['awards', state.awards],
@@ -573,7 +592,7 @@ if (peopleList) {
 	};
 
 	const updateFilterSummary = (state: FilterState): void => {
-		const count = [state.role, state.nationality, state.age, state.catalog, state.awards].filter(Boolean).length;
+		const count = [state.role, state.age, state.catalog, state.awards].filter(Boolean).length;
 		if (filterCount) {
 			filterCount.textContent = String(count);
 			filterCount.hidden = count === 0;
@@ -626,7 +645,11 @@ if (peopleList) {
 			applyState(readStateFromControls());
 		});
 
-		controls.addEventListener('change', () => {
+		controls.addEventListener('change', (event) => {
+			// Search already updates on input. Re-rendering on blur replaces the
+			// filter chip between pointerdown and click, swallowing its action.
+			const target = event.target;
+			if (target instanceof HTMLInputElement && target.dataset.peopleFilter === 'query') return;
 			applyState(readStateFromControls());
 		});
 
@@ -713,7 +736,6 @@ if (peopleList) {
 	setFilterPanel(
 		Boolean(
 			initialState.role ||
-			initialState.nationality ||
 			initialState.age ||
 			initialState.catalog ||
 			initialState.awards,

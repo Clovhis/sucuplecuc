@@ -1,0 +1,25 @@
+{
+  "passed": 56,
+  "results": [
+    {
+      "project": "desktop-chromium",
+      "passed": 14,
+      "exitCode": 0
+    },
+    {
+      "project": "desktop-webkit",
+      "passed": 14,
+      "exitCode": 0
+    },
+    {
+      "project": "mobile-chromium",
+      "passed": 14,
+      "exitCode": 0
+    },
+    {
+      "project": "mobile-webkit",
+      "passed": 14,
+      "exitCode": 0
+    }
+  ]
+}

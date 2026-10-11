@@ -6,6 +6,10 @@ export interface PersonRecord {
 	deathDate?: string;
 	deathYear?: number;
 	nationalityPrimary?: string;
+	/** Verified classification for directory filtering; missing means unclassified. */
+	sex?: 'masculino' | 'femenino';
+	sexSourceUrl?: string;
+	sexVerifiedAt?: string;
 	image?: string;
 	imdbId?: string;
 	imdbUrl?: string;

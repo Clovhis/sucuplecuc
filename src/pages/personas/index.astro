@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/person-index.css';
 import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import { normalizeSearchText } from '../../lib/movies';
 import { getPersonAge, getPersonAgeLabel, getPersonFilmography, getPersonProfiles } from '../../lib/people';
 import { PEOPLE_PATH, createSimplePageStructuredData } from '../../lib/seo';
+import { getPersonNationalities, getNationalityFilterLabel, normalizePersonFilter } from '../../lib/person-filters';
 
 const peopleEntries = getPersonProfiles()
 	.map((profile) => {
@@ -14,13 +16,16 @@ const peopleEntries = getPersonProfiles()
 			.map((role) => normalizeSearchText(role).replace(/\s+/g, ' '))
 			.filter(Boolean);
 		const nationalityLabel = profile.nationalityPrimary?.trim() ?? '';
-		const nationalityFilter = normalizeSearchText(nationalityLabel).replace(/\s+/g, ' ');
+		const nationalities = getPersonNationalities(nationalityLabel);
+		const nationalityFilter = nationalities.map(normalizePersonFilter).join('|');
 		const searchableText = normalizeSearchText(
 			[
 				profile.name,
 				profile.headline,
 				profile.roles.join(' '),
 				profile.nationalityPrimary ?? '',
+				...nationalities,
+				...nationalities.map(getNationalityFilterLabel),
 				profile.birthPlace ?? '',
 				filmography.map((entry) => entry.title).join(' '),
 			].join(' '),
@@ -34,6 +39,7 @@ const peopleEntries = getPersonProfiles()
 			awardCount,
 			normalizedRoles,
 			nationalityLabel,
+			nationalities,
 			nationalityFilter,
 			searchableText,
 			showcaseTitles: filmography
@@ -64,9 +70,7 @@ const roleOptions = Array.from(
 	.sort((left, right) => left.label.localeCompare(right.label, 'es'));
 const nationalityOptions = Array.from(
 	new Map(
-		peopleEntries
-			.filter((entry) => entry.nationalityLabel)
-			.map((entry) => [entry.nationalityFilter, entry.nationalityLabel] as const),
+		peopleEntries.flatMap((entry) => entry.nationalities.map(label => [normalizePersonFilter(label), getNationalityFilterLabel(label)] as const)),
 	).entries(),
 )
 	.map(([value, label]) => ({ value, label }))
@@ -107,7 +111,7 @@ const pageDescription = `Explorá ${peopleEntries.length} perfiles de actores, d
 const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pageDescription);
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+<BaseLayout bodyClass="people-edition" title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<main id="main-content" class="container people-index">
 		<div class="page-actions">
 			<HomeBrandLink className="page-action page-action--home" label="Volver al inicio de Cine Posta" />
@@ -165,6 +169,21 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 							/>
 						</div>
 					</div>
+					<div class="people-index__field">
+						<label class="people-index__field-label" for="people-sex">Sexo</label>
+						<select class="people-index__select" id="people-sex" name="sexo" data-people-filter="sex">
+							<option value="">Todos</option>
+							<option value="masculino">Masculino</option>
+							<option value="femenino">Femenino</option>
+						</select>
+					</div>
+					<div class="people-index__field">
+						<label class="people-index__field-label" for="people-nationality">Nacionalidad</label>
+						<select class="people-index__select" id="people-nationality" name="nacionalidad" data-people-filter="nationality">
+							<option value="">Todas</option>
+							{nationalityOptions.map((option) => <option value={option.value}>{option.label}</option>)}
+						</select>
+					</div>
 					<div class="people-index__field people-index__field--sort">
 						<label class="people-index__field-label" for="people-sort">Ordenar resultados</label>
 						<select class="people-index__select" id="people-sort" name="orden" data-people-filter="sort">
@@ -204,22 +223,6 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 						</select>
 					</div>
 
-					<div class="people-index__field">
-						<label class="people-index__field-label" for="people-nationality">Nacionalidad</label>
-						<select
-							class="people-index__select"
-							id="people-nationality"
-							name="nacionalidad"
-							data-people-filter="nationality"
-						>
-							<option value="">Todas las nacionalidades</option>
-							{
-								nationalityOptions.map((option) => (
-									<option value={option.value}>{option.label}</option>
-								))
-							}
-						</select>
-					</div>
 						<div class="people-index__field">
 							<label class="people-index__field-label" for="people-age">Edad</label>
 							<select class="people-index__select" id="people-age" name="edad" data-people-filter="age">
@@ -276,6 +279,7 @@ const structuredData = createSimplePageStructuredData(PEOPLE_PATH, pageTitle, pa
 							data-search={entry.searchableText}
 							data-roles={entry.normalizedRoles.join('|')}
 							data-nationality={entry.nationalityFilter}
+							data-sex={entry.profile.sex ?? ''}
 							data-age={typeof entry.age === 'number' ? entry.age : ''}
 							data-age-known={typeof entry.age === 'number' ? 'true' : 'false'}
 							data-film-count={entry.filmCount}

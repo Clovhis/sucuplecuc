@@ -1,0 +1,82 @@
+[
+  {
+    "engine": "chromium",
+    "view": "desktop",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  },
+  {
+    "engine": "chromium",
+    "view": "tablet",
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  },
+  {
+    "engine": "chromium",
+    "view": "mobile",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  },
+  {
+    "engine": "chromium",
+    "view": "narrow",
+    "width": 320,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  },
+  {
+    "engine": "webkit",
+    "view": "desktop",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  },
+  {
+    "engine": "webkit",
+    "view": "tablet",
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  },
+  {
+    "engine": "webkit",
+    "view": "mobile",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  },
+  {
+    "engine": "webkit",
+    "view": "narrow",
+    "width": 320,
+    "errors": [],
+    "overflow": false,
+    "profiles": 759,
+    "background": "rgb(6, 7, 10)",
+    "cardBackground": "rgb(238, 225, 202)"
+  }
+]

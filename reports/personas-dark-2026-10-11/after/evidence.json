@@ -1,0 +1,98 @@
+[
+  {
+    "engine": "chromium",
+    "view": "desktop",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 1440,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  },
+  {
+    "engine": "chromium",
+    "view": "tablet",
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 768,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  },
+  {
+    "engine": "chromium",
+    "view": "mobile",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 390,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  },
+  {
+    "engine": "chromium",
+    "view": "narrow",
+    "width": 320,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 320,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  },
+  {
+    "engine": "webkit",
+    "view": "desktop",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 1440,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  },
+  {
+    "engine": "webkit",
+    "view": "tablet",
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 768,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  },
+  {
+    "engine": "webkit",
+    "view": "mobile",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 390,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  },
+  {
+    "engine": "webkit",
+    "view": "narrow",
+    "width": 320,
+    "errors": [],
+    "overflow": false,
+    "scrollWidth": 320,
+    "overflowing": [],
+    "profiles": 759,
+    "background": "rgb(16, 19, 24)",
+    "cardBackground": "rgb(28, 33, 41)"
+  }
+]

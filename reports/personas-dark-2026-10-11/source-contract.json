@@ -1,0 +1,16 @@
+{
+  "base": "1a0e6f40",
+  "enriched": 745,
+  "priorPersonDataIdentical": true,
+  "untouchedFiles": {
+    "src/data/personProfiles.ts": "421c0dc6026264edeef5ccd4c45e3e55a1b4e0050cb721c08b9b4a5948e04d8c",
+    "src/lib/people.ts": "9174eacaebe7dacb0d295c55b6dde1e53e499145ccaef3e2ab74468a4e61159b",
+    "src/pages/personas/[slug].astro": "bcc8dcfdf302e42827fe839a81adc8ccd517cc991051a9b5fc99b3e75560e8fe",
+    "src/styles/global.css": "dc79a359b406cf3d9917706a48b1bc7ee639453b721963ad08501055e417fbb1",
+    "src/styles/mobile.css": "25085d2dde7d5ae2dbe999b35be95c52894a15826b57c61a2fb66f87cd7e6725",
+    "src/styles/postometro.css": "37bdcc427ae63c06fd480eeceda50a42567417cc7fdf2978c287394249a3eff0",
+    "src/scripts/postometro.ts": "d2c5858c1dfc778d8cdb82988f1012d572395352a9f9555c377f585fb4046824",
+    ".github/workflows/deploy.yml": "58908bda7b14993dc5a68dce28af25e0aa1475c0f7fd0ebbb06f29ada7495ee1",
+    "public/images/people/cineposta-personajes-archivo-90s.webp": "bc64df94703160efe6033556ff7eb0548b9e68ff50015cc27d2852d4a2fbea96"
+  }
+}

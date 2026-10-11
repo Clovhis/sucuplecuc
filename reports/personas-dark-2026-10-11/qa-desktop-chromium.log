@@ -1,0 +1,23 @@
+
+Running 14 tests using 1 worker
+
+(node:24460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop-chromium] › tests\e2e\person-detail-design.spec.ts:9:2 › Diego Cremonesi: bounded posters and readable profile at every width (879ms)
+  ok  2 [desktop-chromium] › tests\e2e\person-detail-design.spec.ts:9:2 › Adria Arjona: bounded posters and readable profile at every width (2.2s)
+  ok  3 [desktop-chromium] › tests\e2e\person-detail-design.spec.ts:9:2 › Brad Pitt: bounded posters and readable profile at every width (2.2s)
+  ok  4 [desktop-chromium] › tests\e2e\person-detail-design.spec.ts:9:2 › Steven Spielberg: bounded posters and readable profile at every width (2.2s)
+  ok  5 [desktop-chromium] › tests\e2e\person-detail-design.spec.ts:61:1 › a single film keeps a complete poster and omits an empty awards section (533ms)
+  ok  6 [desktop-chromium] › tests\e2e\person-detail-design.spec.ts:75:1 › section links and return to the filtered directory preserve navigation and SEO (1.8s)
+  ok  7 [desktop-chromium] › tests\e2e\person-index-design.spec.ts:3:1 › sexo y nacionalidad se combinan, persisten y se limpian por separado (3.5s)
+  ok  8 [desktop-chromium] › tests\e2e\person-index-design.spec.ts:33:1 › URLs anteriores, nacionalidad doble y datos no clasificados (3.1s)
+  ok  9 [desktop-chromium] › tests\e2e\person-index-design.spec.ts:51:1 › fichas oscuras legibles y escena completa de 320 a 1440 px (2.9s)
+  ok 10 [desktop-chromium] › tests\e2e\person-index.spec.ts:4:2 › directorio de personas › expone filtros claros y mantiene búsqueda, URL y resultados sincronizados (3.0s)
+  ok 11 [desktop-chromium] › tests\e2e\person-index.spec.ts:37:2 › directorio de personas › no incluye fichas sin edad en el filtro de menores de 40 (912ms)
+  ok 12 [desktop-chromium] › tests\e2e\person-nationality.spec.ts:3:1 › omite nacionalidades desconocidas y conserva la de Gabriel Musco (460ms)
+  ok 13 [desktop-chromium] › tests\e2e\person-nationality.spec.ts:20:1 › el directorio omite el origen desconocido sin perder personas ni nacionalidades verificadas (2.4s)
+  ok 14 [desktop-chromium] › tests\e2e\person-nationality.spec.ts:36:1 › la home omite la fila sin nacionalidad al construir tarjetas de personas (1.1s)
+
+  14 passed (28.4s)

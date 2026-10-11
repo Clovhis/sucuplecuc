@@ -1,0 +1,23 @@
+
+Running 14 tests using 1 worker
+
+(node:27296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:27296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [mobile-webkit] › tests\e2e\person-detail-design.spec.ts:9:2 › Diego Cremonesi: bounded posters and readable profile at every width (1.6s)
+  ok  2 [mobile-webkit] › tests\e2e\person-detail-design.spec.ts:9:2 › Adria Arjona: bounded posters and readable profile at every width (4.0s)
+  ok  3 [mobile-webkit] › tests\e2e\person-detail-design.spec.ts:9:2 › Brad Pitt: bounded posters and readable profile at every width (4.0s)
+  ok  4 [mobile-webkit] › tests\e2e\person-detail-design.spec.ts:9:2 › Steven Spielberg: bounded posters and readable profile at every width (4.3s)
+  ok  5 [mobile-webkit] › tests\e2e\person-detail-design.spec.ts:61:1 › a single film keeps a complete poster and omits an empty awards section (989ms)
+  ok  6 [mobile-webkit] › tests\e2e\person-detail-design.spec.ts:75:1 › section links and return to the filtered directory preserve navigation and SEO (3.5s)
+  ok  7 [mobile-webkit] › tests\e2e\person-index-design.spec.ts:3:1 › sexo y nacionalidad se combinan, persisten y se limpian por separado (8.4s)
+  ok  8 [mobile-webkit] › tests\e2e\person-index-design.spec.ts:33:1 › URLs anteriores, nacionalidad doble y datos no clasificados (7.4s)
+  ok  9 [mobile-webkit] › tests\e2e\person-index-design.spec.ts:51:1 › fichas oscuras legibles y escena completa de 320 a 1440 px (5.4s)
+  ok 10 [mobile-webkit] › tests\e2e\person-index.spec.ts:4:2 › directorio de personas › expone filtros claros y mantiene búsqueda, URL y resultados sincronizados (6.1s)
+  ok 11 [mobile-webkit] › tests\e2e\person-index.spec.ts:37:2 › directorio de personas › no incluye fichas sin edad en el filtro de menores de 40 (1.6s)
+  ok 12 [mobile-webkit] › tests\e2e\person-nationality.spec.ts:3:1 › omite nacionalidades desconocidas y conserva la de Gabriel Musco (429ms)
+  ok 13 [mobile-webkit] › tests\e2e\person-nationality.spec.ts:20:1 › el directorio omite el origen desconocido sin perder personas ni nacionalidades verificadas (3.8s)
+  ok 14 [mobile-webkit] › tests\e2e\person-nationality.spec.ts:36:1 › la home omite la fila sin nacionalidad al construir tarjetas de personas (779ms)
+
+  14 passed (53.4s)
