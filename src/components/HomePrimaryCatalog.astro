@@ -5,7 +5,7 @@ import type { PlatformFilterOption } from '../lib/platforms';
 import { QUE_MIRO_HOY_PATH } from '../lib/seo';
 import { MOVIE_CATALOG_PATH } from '../lib/movie-catalog';
 import type { Movie } from '../types/movie';
-import { createHomeMovieRecord } from '../lib/home-catalog';
+import { HOME_SEARCH_INDEX_URL } from '../lib/home-search-data';
 
 interface FilterOption {
 	id: string;
@@ -33,7 +33,6 @@ const {
 	movieCountLabel,
 } = Astro.props;
 const specificYearOptions = Array.from(new Set(movies.map((movie) => movie.year))).sort((left, right) => right - left);
-const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace(/</g, '\\u003c');
 ---
 
 {
@@ -304,7 +303,7 @@ const movieIndexJson = JSON.stringify(movies.map(createHomeMovieRecord)).replace
 				<p data-home-page-summary role="status" aria-live="polite"></p>
 				<button type="button" class="home-results-tools__reset" data-home-page-next>Siguiente</button>
 			</nav>
-			<script is:inline type="application/json" data-home-movie-index set:html={movieIndexJson}></script>
+			<script is:inline type="application/json" data-home-movie-index data-home-movie-index-url={HOME_SEARCH_INDEX_URL}>[]</script>
 			<p><a href={MOVIE_CATALOG_PATH}>Ver el catálogo completo de películas</a></p>
 		</section>
 	) : (

@@ -3,6 +3,14 @@ import { expect, test } from '@playwright/test';
 const representativeRoutes = ['pulp-fiction-1994', 'relatos-salvajes-2014', 'gintama-la-pelicula-yoshiwara-en-llamas-2026'];
 
 test.describe('fallback global de posters locales', () => {
+	test('recupera un poster que falló antes de iniciar el script diferido', async ({ page }) => {
+		await page.route('**/assets/posters/1994/pulp-fiction-1994.webp', (route) => route.fulfill({ status: 404, body: '' }));
+		await page.goto('/peliculas/pulp-fiction-1994/', { waitUntil: 'domcontentloaded' });
+		const poster = page.locator('.movie-detail__poster img[data-cineposta-poster]').first();
+		await expect(poster).toHaveAttribute('src', /\/assets\/posters\/poster-fallback\.webp$/);
+		await expect.poll(() => poster.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBe(480);
+	});
+
 	test('usa el WebP local de contingencia para un recurso inválido', async ({ page }) => {
 		const response = await page.goto('/peliculas/pulp-fiction-1994/', { waitUntil: 'domcontentloaded' });
 		expect(response?.ok()).toBeTruthy();

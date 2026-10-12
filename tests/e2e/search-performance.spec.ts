@@ -9,6 +9,7 @@ async function openHome(page: Page): Promise<void> {
 	const dismiss = page.getByRole('button', { name: /Ahora no, entrar al sitio/i });
 	if (await dismiss.isVisible()) await dismiss.click();
 	await expect(page.locator(`${grid} [data-movie-card]`)).toHaveCount(12);
+	await expect(page.locator('[data-movie-search-root]')).toHaveAttribute('data-home-catalog-ready', 'true');
 }
 
 test('search preserves matches and relevance while mounting only one small page', async ({ page }) => {
@@ -100,15 +101,11 @@ test('returning from a movie restores its result page without changing URLs', as
 
 for (const size of [5000, 10000]) {
 	test(`search scales to ${size} records with bounded cards and preprocessed strings`, async ({ page }) => {
-		await page.route('**/', async (route) => {
-			if (new URL(route.request().url()).pathname !== '/') return route.continue();
+		await page.route('**/search-index.json?*', async (route) => {
 			const response = await route.fetch();
-			let html = await response.text();
-			html = html.replace(/(<script[^>]*data-home-movie-index[^>]*>)([\s\S]*?)(<\/script>)/, (_, start, json, end) => {
-				const source = JSON.parse(json);
-				return start + JSON.stringify(Array.from({ length: size }, (_, i) => ({ ...source[i % source.length], slug: i < source.length ? source[i].slug : `scale-${i}` }))).replace(/</g, '\\u003c') + end;
-			});
-			await route.fulfill({ response, body: html });
+			const source = await response.json();
+			const records = Array.from({ length: size }, (_, i) => ({ ...source[i % source.length], slug: i < source.length ? source[i].slug : `scale-${i}` }));
+			await route.fulfill({ response, json: records });
 		});
 		await openHome(page);
 		await page.evaluate(() => {

@@ -60,7 +60,7 @@ const contentSecurityPolicy = [
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script is:inline src={`${assetBase}scripts/poster-fallback.js`} data-poster-fallback-url={posterFallbackUrl}></script>
+		<script is:inline defer src={`${assetBase}scripts/poster-fallback.js`} data-poster-fallback-url={posterFallbackUrl}></script>
 		<meta http-equiv="Content-Security-Policy" content={contentSecurityPolicy} />
 		{redirectUrl && <meta http-equiv="refresh" content={`0; url=${redirectUrl}`} />}
 		<meta

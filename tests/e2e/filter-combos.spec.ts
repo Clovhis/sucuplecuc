@@ -21,6 +21,7 @@ async function openAdvancedFilters(page: Page): Promise<void> {
 async function gotoHome(page: Page, { openAdvanced = true }: { openAdvanced?: boolean } = {}): Promise<void> {
   const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
   expect(response?.ok()).toBeTruthy();
+	await expect(page.locator('[data-movie-search-root]')).toHaveAttribute('data-home-catalog-ready', 'true');
   await dismissDonationPrompt(page);
   if (openAdvanced) await openAdvancedFilters(page);
 }

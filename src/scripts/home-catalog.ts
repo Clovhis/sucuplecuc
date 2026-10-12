@@ -93,10 +93,69 @@ const searchLoadingPhrases = [
 const searchRoot = document.querySelector('[data-movie-search-root]');
 
 if (searchRoot instanceof HTMLElement) {
-	initHomeCatalog(searchRoot);
+	void loadHomeCatalog(searchRoot);
 }
 
-function initHomeCatalog(searchRoot: HTMLElement): void {
+async function loadHomeCatalog(searchRoot: HTMLElement): Promise<void> {
+	const indexData = document.querySelector<HTMLScriptElement>('[data-home-movie-index]');
+	const input = searchRoot.querySelector<HTMLInputElement>('[data-movie-search-input]');
+	const controls = Array.from(document.querySelectorAll<HTMLButtonElement | HTMLSelectElement>(
+		'[data-home-genre-chip], [data-home-subgenre-chip], [data-home-platform-chip], [data-home-score-chip], [data-home-year-chip], [data-home-quick-filter], [data-home-specific-year], [data-home-sort]',
+	));
+	const status = document.querySelector<HTMLElement>('[data-movie-search-status]');
+	const copy = document.querySelector<HTMLElement>('[data-movie-search-status-copy]');
+	if (!indexData?.dataset.homeMovieIndexUrl || !input) return;
+	input.disabled = true;
+	controls.forEach((control) => { control.disabled = true; });
+	searchRoot.setAttribute('aria-busy', 'true');
+	if (status) status.hidden = false;
+	if (copy) copy.textContent = 'Bancá que carga el videoclub...';
+	const controller = new AbortController();
+	const timeout = window.setTimeout(() => controller.abort(), 15000);
+	try {
+		const response = await fetch(indexData.dataset.homeMovieIndexUrl, { signal: controller.signal });
+		if (!response.ok) throw new Error(`Catalog HTTP ${response.status}`);
+		const records = await response.json() as HomeMovieRecord[];
+		if (!Array.isArray(records) || !records.length || records.some((record) =>
+			!record?.slug || !record?.card || !record?.url || typeof record.searchable !== 'string' ||
+			!Array.isArray(record.genres) || !Array.isArray(record.platforms) || !Array.isArray(record.subgenres))) {
+			throw new Error('Invalid catalog data');
+		}
+		// Preserve the existing observable index contract without transferring it in HTML.
+		indexData.textContent = JSON.stringify(records);
+		const grid = document.querySelector<HTMLElement>('[data-movie-search-grid]');
+		if (grid) grid.dataset.movieTotalCount = String(records.length);
+		input.disabled = false;
+		controls.forEach((control) => { control.disabled = false; });
+		initHomeCatalog(searchRoot, records);
+		searchRoot.dataset.homeCatalogReady = 'true';
+		searchRoot.removeAttribute('aria-busy');
+	} catch {
+		input.disabled = true;
+		controls.forEach((control) => { control.disabled = true; });
+		searchRoot.removeAttribute('aria-busy');
+		searchRoot.dataset.homeCatalogReady = 'false';
+		if (status) {
+			status.hidden = false;
+			status.querySelector<HTMLElement>('.movie-search__status-spinner')?.setAttribute('hidden', '');
+			if (copy) copy.textContent = 'No pudimos cargar el buscador. Podés reintentar o abrir el catálogo completo.';
+			const retry = document.createElement('button');
+			retry.type = 'button';
+			retry.className = 'home-results-tools__reset';
+			retry.textContent = 'Reintentar';
+			retry.addEventListener('click', () => {
+				retry.remove();
+				status.querySelector<HTMLElement>('.movie-search__status-spinner')?.removeAttribute('hidden');
+				void loadHomeCatalog(searchRoot);
+			}, { once: true });
+			status.append(retry);
+		}
+	} finally {
+		window.clearTimeout(timeout);
+	}
+}
+
+function initHomeCatalog(searchRoot: HTMLElement, records: HomeMovieRecord[]): void {
 	const homeBrandLink = document.querySelector('.site-header__brand');
 	const input = searchRoot.querySelector<HTMLInputElement>('[data-movie-search-input]');
 	const clearButton = searchRoot.querySelector<HTMLButtonElement>('[data-movie-search-clear]');
@@ -108,7 +167,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 	const suggestionsCopy = searchRoot.querySelector<HTMLElement>('[data-movie-search-dropdown-copy]');
 	const suggestionsList = searchRoot.querySelector<HTMLElement>('[data-movie-search-suggestions]');
 	const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-movie-card]'));
-	const indexData = document.querySelector<HTMLScriptElement>('[data-home-movie-index]');
 	const people = Array.from(searchRoot.querySelectorAll<HTMLElement>('[data-person-search-entry]'));
 	const genreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-genre-chip]'));
 	const subgenreChips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-home-subgenre-chip]'));
@@ -146,7 +204,6 @@ function initHomeCatalog(searchRoot: HTMLElement): void {
 		value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
 	const initialCards = new Map(cards.map((card) => [card.dataset.movieSlug, card]));
 	const initialOrder = new Map(cards.map((card, index) => [card.dataset.movieSlug, index]));
-	const records = JSON.parse(indexData?.textContent ?? '[]') as HomeMovieRecord[];
 	const movieIndex: MovieIndexEntry[] = records.map((record) => {
 		const card = initialCards.get(record.slug) ?? null;
 		return {
