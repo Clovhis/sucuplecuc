@@ -1,0 +1,40 @@
+name: Radar de Cine diario (10:00 AR)
+
+on:
+  schedule:
+    # Argentina is UTC-3 throughout the year.
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinema-news-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    # Shared with the weekly publisher, so editions never race to write main.
+    concurrency:
+      group: publish-home-editions
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - name: Instalar dependencias
+        run: npm ci
+      - name: Consultar todos los medios y guardar la edicion del Radar
+        run: npm run refresh:cinema-news
+      - name: Verificar ediciones y construir el sitio
+        run: npm run validate:content -- --astro-check
+      - name: Publicar solo los datos del Radar
+        run: node scripts/publish-home-edition.mjs src/data/cinemaNews.generated.json

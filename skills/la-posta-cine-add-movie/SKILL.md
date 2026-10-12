@@ -7,6 +7,10 @@ description: Add one or more La Posta Cine movie entries safely from a plain-lan
 
 Create one movie entry or an explicitly requested batch. Work quietly; send one acknowledgement, then report only blockers, changed plans, or a final result.
 
+## Home editions are independent of movie loads
+
+Radar, weekly recommendations and upcoming trailers are frozen scheduled editions. Do not regenerate, edit, stage or revert `src/data/cinemaNews.generated.json`, `src/data/weeklyRecommendations.generated.ts` or `src/data/upcomingReleases.generated.ts` during a movie load/audit. Run the ordinary build using the committed editions. Rebase onto current `main` before publishing so newer bot-generated editions are preserved; `validate:content` rejects a diff mixing movie files with these snapshots. Only a separate explicit home-refresh task may regenerate them. In the repository, see `docs/home-automation.md` for operational details.
+
 ## Scope
 
 - Edit only `src/data/movies/**`, `src/data/people.json`, `public/people/**`, `public/assets/posters/**`, and generated catalog references. Never change UI, routes, styles, build config, workflow files, Share, Comunidad, or reaction assets for a movie load. A title-specific meter score explicitly requested by the user is the sole code exception: update only the central `src/lib/*metro.ts` override map and its regression test, never a per-movie meter field.
@@ -190,7 +194,6 @@ npm run test:poster-source-policy
 node skills/la-posta-cine-auditor/scripts/verify_posters.cjs --candidate src/data/movies/<slug>.json
 npm run catalog:movies
 npm run catalog:movies:check
-npm run update-upcoming-releases
 npm run check
 npm run test:editorial-meters
 npm run audit:movie-people -- --movie <slug>

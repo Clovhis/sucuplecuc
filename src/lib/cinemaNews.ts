@@ -1,3 +1,5 @@
+import snapshot from '../data/cinemaNews.generated.json' with { type: 'json' };
+
 export interface CinemaNewsItem {
 	title: string;
 	summary: string;
@@ -15,7 +17,7 @@ interface CinemaNewsFeed {
 	articleHosts: string[];
 }
 
-interface CinemaNewsResult {
+export interface CinemaNewsResult {
 	items: CinemaNewsItem[];
 	sourceLabel: string;
 	updatedLabel: string;
@@ -31,7 +33,9 @@ const FEEDS: CinemaNewsFeed[] = [
 	},
 	{
 		name: 'Clarín',
-		url: 'https://www.clarin.com/rss/espectaculos/cine/',
+		// The dedicated /cine/ RSS is frozen on 2025 articles. The maintained
+		// entertainment feed is filtered by the same cinema signals as other media.
+		url: 'https://www.clarin.com/rss/espectaculos/',
 		articleHosts: ['clarin.com', 'www.clarin.com'],
 	},
 	{
@@ -91,7 +95,6 @@ const HTML_ENTITIES: Record<string, string> = {
 	Uuml: 'Ü',
 };
 
-const FALLBACK_ITEMS: Omit<CinemaNewsItem, 'publishedLabel'>[] = [];
 
 const EXCLUDED_PATTERNS = [
 	/^cr[ií]tica de\b/i,
@@ -129,7 +132,7 @@ const EXCLUDED_PATTERNS = [
 ];
 
 const EXCLUDED_CATEGORIES = new Set(['videos y fotos']);
-const DEDICATED_CINEMA_SOURCES = new Set(['Clarín', 'Cines Argentinos']);
+const DEDICATED_CINEMA_SOURCES = new Set(['Cines Argentinos']);
 const REQUIRED_CINEMA_PATTERNS = [
 	/\bcine\b/i,
 	/\bpel[ií]cula(?:s)?\b/i,
@@ -161,43 +164,59 @@ const SITE_TIMEZONE = 'America/Argentina/Buenos_Aires';
 const ALLOWED_REMOTE_PROTOCOLS = new Set(['https:']);
 const MAX_REDIRECT_HOPS = 3;
 
-export async function getCinemaNews(): Promise<CinemaNewsResult> {
-	const collectedItems: CinemaNewsItem[] = [];
+export interface CinemaNewsSnapshot {
+	updatedAt: string;
+	items: CinemaNewsItem[];
+	sourceItems: Record<string, CinemaNewsItem[]>;
+	sources: { name: string; url: string; status: 'ok' | 'preserved'; count: number; error?: string }[];
+}
 
-	for (const feed of FEEDS) {
+const SOURCE_LABEL = 'La Nación, Clarín, Página/12, Ámbito, Infobae y Cines Argentinos';
+
+/** Rendering never fetches feeds: only the daily updater owns this snapshot. */
+export function getCinemaNews(): CinemaNewsResult {
+	const edition = snapshot as CinemaNewsSnapshot;
+	return {
+		items: edition.items,
+		sourceLabel: SOURCE_LABEL,
+		updatedLabel: edition.updatedAt ? formatUpdatedLabel(edition.updatedAt) : 'sin actualización',
+		isFallback: false,
+	};
+}
+
+export async function collectCinemaNews(previous: CinemaNewsSnapshot): Promise<CinemaNewsSnapshot> {
+	const results = await Promise.all(FEEDS.map(async (feed) => {
 		try {
 			const feedUrl = new URL(feed.url);
 			const xml = await fetchTrustedText(feedUrl, [normalizeHostname(feedUrl.hostname)]);
-			const items = parseFeedItems(xml, feed);
-			if (items.length > 0) {
-				collectedItems.push(...items);
-			}
+			if (!/<(?:rss|feed)\b/i.test(xml)) throw new Error('The source did not return a feed');
+			return { feed, items: parseFeedItems(xml, feed), error: '' };
 		} catch (error) {
-			console.warn(`[cinemaNews] Failed to fetch ${feed.name}:`, error);
+			const message = error instanceof Error ? error.message : String(error);
+			console.warn(`[cinemaNews] ${feed.name}: ${message}. Keeping its last successful items.`);
+			return { feed, items: previous.sourceItems[feed.name] ?? [], error: message };
 		}
-	}
-
-	const items = dedupeAndSortItems(collectedItems).slice(0, MAX_NEWS_ITEMS);
-	if (items.length > 0) {
-		const enrichedItems = await enrichItemsWithImages(items);
-		return {
-			items: enrichedItems,
-			sourceLabel: 'La Nación, Clarín, Infobae, Página/12 y Ámbito',
-			updatedLabel: formatUpdatedLabel(enrichedItems[0]?.publishedAt ?? new Date().toISOString()),
-			isFallback: false,
-		};
-	}
-
-	const fallbackItems = FALLBACK_ITEMS.map((item) => ({
-		...item,
-		publishedLabel: formatPublishedLabel(item.publishedAt),
 	}));
-
+	if (results.every(({ error }) => error)) throw new Error('All Radar sources failed; the published edition was not replaced.');
+	const sourceItems = Object.fromEntries(results.map(({ feed, items }) => [feed.name, items]));
+	// Reserve one available story per source, then fill with the latest stories.
+	// This prevents a busy feed from crowding out the four requested newspapers.
+	const allItems = dedupeAndSortItems(results.flatMap(({ items }) => items));
+	const leadItems = results.flatMap(({ items }) => items.slice(0, 1));
+	const leadLinks = new Set(leadItems.map(({ link }) => link));
+	const items = dedupeAndSortItems([
+		...leadItems,
+		...allItems.filter(({ link }) => !leadLinks.has(link)).slice(0, MAX_NEWS_ITEMS - leadItems.length),
+	]).slice(0, MAX_NEWS_ITEMS);
+	if (items.length === 0) throw new Error('No cinema news found; the published edition was not replaced.');
 	return {
-		items: fallbackItems,
-		sourceLabel: 'La Nación, Clarín, Infobae, Página/12 y Ámbito',
-		updatedLabel: 'respaldo local',
-		isFallback: true,
+		updatedAt: new Date().toISOString(),
+		items: await enrichItemsWithImages(items),
+		sourceItems,
+		sources: results.map(({ feed, items, error }) => ({
+			name: feed.name, url: feed.url, status: error ? 'preserved' : 'ok', count: items.length,
+			...(error ? { error } : {}),
+		})),
 	};
 }
 
@@ -218,7 +237,9 @@ function parseFeedItem(block: string, feed: CinemaNewsFeed): CinemaNewsItem | nu
 	const publishedAt = normalizePublishedAt(cleanText(extractTag(block, 'pubDate')));
 	const summary = summarizeDescription(description);
 	const imageUrl = extractImageUrl(block, link);
-	const haystack = `${title} ${summary}`;
+	// Filter against the full feed description before shortening the card:
+	// a later sentence may identify a TV series or a concert to exclude.
+	const haystack = `${title} ${cleanText(description)} ${category} ${link}`;
 
 	if (!title || !link || !publishedAt || summary.length < 30) {
 		return null;
@@ -414,11 +435,11 @@ function decodeHtmlEntities(input: string) {
 	return input
 		.replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => {
 			const codePoint = Number.parseInt(hex, 16);
-			return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : '';
+			return Number.isInteger(codePoint) && codePoint >= 0 && codePoint <= 0x10ffff ? String.fromCodePoint(codePoint) : '';
 		})
 		.replace(/&#(\d+);/g, (_, numeric) => {
 			const codePoint = Number.parseInt(numeric, 10);
-			return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : '';
+			return Number.isInteger(codePoint) && codePoint >= 0 && codePoint <= 0x10ffff ? String.fromCodePoint(codePoint) : '';
 		})
 		.replace(/&([a-zA-Z][a-zA-Z0-9]+);/g, (fullMatch, entity) => HTML_ENTITIES[entity] ?? fullMatch);
 }
@@ -446,6 +467,15 @@ async function fetchArticleImage(articleUrl: string, allowedHosts: string[]) {
 }
 
 async function fetchTrustedText(url: URL, allowedHosts: string[]) {
+	let lastError: unknown;
+	for (let attempt = 0; attempt < 2; attempt++) {
+		try { return await fetchTrustedTextOnce(url, allowedHosts); }
+		catch (error) { lastError = error; }
+	}
+	throw lastError;
+}
+
+async function fetchTrustedTextOnce(url: URL, allowedHosts: string[]) {
 	let nextUrl = url;
 
 	for (let hop = 0; hop <= MAX_REDIRECT_HOPS; hop += 1) {
@@ -456,6 +486,7 @@ async function fetchTrustedText(url: URL, allowedHosts: string[]) {
 		const response = await fetch(nextUrl, {
 			headers: fetchHeaders,
 			redirect: 'manual',
+			signal: AbortSignal.timeout(15_000),
 		});
 
 		if ([301, 302, 303, 307, 308].includes(response.status)) {

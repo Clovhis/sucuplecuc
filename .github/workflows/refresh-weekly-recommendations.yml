@@ -1,68 +1,93 @@
-name: Refresh weekly recommendations
+name: 'Edicion semanal: recomendadas y trailers (domingo 01:00 AR)'
 
 on:
   schedule:
-    # 08:30 Argentina (ART, UTC-3) every Sunday.
-    - cron: '30 11 * * 0'
+    # Sunday 01:00 Argentina (UTC-3), after Saturday night.
+    - cron: '0 4 * * 0'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: refresh-generated-content
+  group: weekly-home-edition
   cancel-in-progress: false
 
 jobs:
-  refresh:
+  recommendations:
+    name: Generar recomendadas de la semana
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
           ref: main
-          fetch-depth: 0
-          persist-credentials: true
-
-      - name: Setup Node
-        uses: actions/setup-node@v6
+          persist-credentials: false
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: npm
+      - run: npm ci
+      - run: npm run test:weekly-recommendations
+      - run: npm run refresh:weekly-recommendations
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-recommendations
+          path: src/data/weeklyRecommendations.generated.ts
+          if-no-files-found: error
+          retention-days: 2
 
-      - name: Install dependencies
-        run: npm ci
+  trailers:
+    name: Generar proximos estrenos y trailers argentinos
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run update-upcoming-releases
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-trailers
+          path: src/data/upcomingReleases.generated.ts
+          if-no-files-found: error
+          retention-days: 2
 
-      - name: Generate weekly recommendations
-        run: npm run refresh:weekly-recommendations
-
-      - name: Test weekly recommendation selector
-        run: npm run test:weekly-recommendations
-
-      - name: Validate generated content and build
+  publish:
+    name: Validar y publicar ambas secciones juntas
+    needs: [recommendations, trailers]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    concurrency:
+      group: publish-home-editions
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: weekly-recommendations
+          path: src/data
+      - uses: actions/download-artifact@v4
+        with:
+          name: weekly-trailers
+          path: src/data
+      - name: Verificar ediciones y construir el sitio
         run: npm run validate:content -- --astro-check
-
-      - name: Commit refreshed recommendations to main
-        run: |
-          expected_file='src/data/weeklyRecommendations.generated.ts'
-          unexpected_files=$(git diff --name-only | grep -v "^${expected_file}$" || true)
-          if [ -n "$unexpected_files" ]; then
-            echo "Unexpected files changed by the refresh:"
-            echo "$unexpected_files"
-            exit 1
-          fi
-
-          if git diff --quiet -- "$expected_file"; then
-            echo "No weekly recommendation changes to publish."
-            exit 0
-          fi
-
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "$expected_file"
-          git commit -m 'chore: refresh weekly recommendations'
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
-
+      - name: Publicar exclusivamente la edicion semanal
+        run: node scripts/publish-home-edition.mjs src/data/weeklyRecommendations.generated.ts src/data/upcomingReleases.generated.ts

@@ -1,16 +1,14 @@
-name: Deploy Astro to GitHub Pages
+name: Publicar CinePosta en GitHub Pages
 
 on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '15 3 * * *'
   workflow_dispatch:
   workflow_run:
     workflows:
-      - Refresh upcoming releases
-      - Refresh weekly recommendations
+      - Radar de Cine diario (10:00 AR)
+      - 'Edicion semanal: recomendadas y trailers (domingo 01:00 AR)'
     types:
       - completed
 
@@ -25,7 +23,7 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.head_repository.full_name == github.repository) }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:

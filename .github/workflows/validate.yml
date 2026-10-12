@@ -1,4 +1,4 @@
-name: Validate site
+name: 'Validar sitio: contenido, seguridad y navegadores'
 
 on:
   pull_request:
@@ -46,9 +46,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Audit all external posters
-        if: github.event_name == 'schedule'
-        run: node ./skills/la-posta-cine-auditor/scripts/verify_posters.cjs --all --timeout-ms 15000 --retries 2 --per-host-concurrency 2 --global-concurrency 8 --host-spacing-ms 200
+      - name: Verificar posters locales
+        run: npm run posters:check
+
+      - name: Probar automatizaciones y ediciones del home
+        run: npm run test:home-automation
 
       - name: Audit production dependencies
         run: npm audit --omit=dev --audit-level=high

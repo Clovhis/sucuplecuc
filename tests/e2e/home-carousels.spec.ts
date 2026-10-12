@@ -110,9 +110,16 @@ test('all rails fit narrow screens and update their controls after resizing', as
 });
 
 test('offscreen platform labels never expand the page at desktop and tablet widths', async ({ page }) => {
+	// Layout is independent of the third-party video stream. Trailer availability
+	// is checked by the updater; keep this browser check deterministic.
+	await page.route('https://www.youtube.com/embed/**', (route) => route.fulfill({
+		contentType: 'text/html', body: '<html><body>Trailer</body></html>',
+	}));
 	for (const width of [1440, 1280, 1024, 768]) {
 		await page.setViewportSize({ width, height: 900 });
 		await page.goto('/', { waitUntil: 'domcontentloaded' });
-		expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
+		// WebKit can apply the stylesheet after DOMContentLoaded. Wait for the
+		// first layout to settle; persistent overflow still fails this assertion.
+		await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
 	}
 });

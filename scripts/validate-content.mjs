@@ -168,6 +168,7 @@ function main() {
 	}
 
 	const base = resolveBase(args.base);
+	run('npm', ['run', 'validate:home-editions', ...(base ? ['--', '--base', base] : [])]);
 	const newlyAddedMovieFiles = getMovieFilesNotInBase(base);
 	const changedFiles = [...new Set([...getChangedFiles(base), ...newlyAddedMovieFiles])];
 	const peopleCreditChangedFiles = getMoviesWithChangedPeopleCredits(base, changedFiles);

@@ -1,18 +1,7 @@
 ---
 import '../styles/weekly-recommendations.css';
 import PlatformBadge from './PlatformBadge.astro';
-
-interface WeeklyRecommendationCard {
-	slug: string;
-	title: string;
-	year: number;
-	posterUrl: string;
-	movieUrl: string;
-	platform: string;
-	verdictLabel: string;
-	verdictClass: string;
-	eraLabel: string;
-}
+import type { WeeklyRecommendationCard } from '../lib/home-editions';
 
 interface Props {
 	recommendations: WeeklyRecommendationCard[];

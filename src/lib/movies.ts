@@ -606,53 +606,6 @@ function getReferenceDayTimestamp(referenceDate: Date): number {
 	);
 }
 
-function getIsoDateTimestamp(value: string): number {
-	return Date.parse(`${value}T00:00:00Z`);
-}
-
-function getNormalizedUpcomingReleaseTitle(title: string): string {
-	return normalizeSearchText(title).replace(/\s+/g, ' ');
-}
-
-function getYoutubeVideoIdFromUrl(value: string): string {
-	const normalizedValue = String(value ?? '').trim();
-	if (!normalizedValue) {
-		return '';
-	}
-
-	try {
-		const parsedUrl = new URL(normalizedValue);
-		if (parsedUrl.hostname.includes('youtu.be')) {
-			return normalizeYoutubeId(parsedUrl.pathname.replace(/^\/+/, ''));
-		}
-		if (parsedUrl.pathname.startsWith('/embed/')) {
-			return normalizeYoutubeId(parsedUrl.pathname.replace(/^\/embed\/+/, ''));
-		}
-		return normalizeYoutubeId(parsedUrl.searchParams.get('v') ?? '');
-	} catch {
-		return '';
-	}
-}
-
-function getUpcomingReleaseIdentityKeys(release: Pick<UpcomingMovieRelease, 'title' | 'videoUrl'>): string[] {
-	const keys = new Set<string>();
-	const youtubeId = getYoutubeVideoIdFromUrl(release.videoUrl);
-	if (youtubeId) {
-		keys.add(`youtube:${youtubeId}`);
-	}
-
-	const normalizedTitle = getNormalizedUpcomingReleaseTitle(release.title);
-	if (normalizedTitle) {
-		keys.add(`title:${normalizedTitle}`);
-	}
-
-	return Array.from(keys);
-}
-
-function getUpcomingReleaseMapKey(release: UpcomingMovieRelease): string {
-	return getUpcomingReleaseIdentityKeys(release)[0] ?? `slug:${release.slug}`;
-}
-
 function getWeeklySuggestionScore(movie: Movie): number {
 	return (movie.cinepostaScore ?? 0) * 10;
 }
@@ -800,48 +753,10 @@ export function getWeeklyMovieSuggestions(
 		}));
 }
 
-export function getUpcomingMovieReleases(referenceDate = new Date(), limit = 4): UpcomingMovieRelease[] {
-	const referenceTimestamp = Date.UTC(
-		referenceDate.getUTCFullYear(),
-		referenceDate.getUTCMonth(),
-		referenceDate.getUTCDate(),
-	);
-
-	const movies = Object.values(movieModules).map((moduleItem) => moduleItem.default);
-	validateMovies(movies);
-	const generatedUpcoming = GENERATED_UPCOMING_RELEASES.filter((release) =>
-		isFutureRelease(release.releaseDate, referenceTimestamp),
-	);
-	const generatedUpcomingKeys = new Set(generatedUpcoming.map(getUpcomingReleaseMapKey));
-
-	const catalogUpcoming = movies
-		.filter((movie) => {
-			if (!movie.releaseDate?.trim() || !movie.trailerYoutubeId?.trim()) {
-				return false;
-			}
-
-			const releaseTimestamp = getMovieSortTimestamp(movie);
-			return releaseTimestamp > referenceTimestamp;
-		})
-		.sort(
-			(left, right) =>
-				getMovieSortTimestamp(left) - getMovieSortTimestamp(right) ||
-				left.title.localeCompare(right.title, 'es'),
-		)
-		.map((movie) => ({
-			slug: movie.slug,
-			title: movie.title,
-			releaseDate: movie.releaseDate!,
-			videoUrl: getYoutubeWatchUrl(movie.trailerYoutubeId),
-			thumbnailUrl: getYoutubeThumbnailUrl(movie.trailerYoutubeId),
-			synopsis: movie.synopsis,
-			sourceUrl: getMoviePath(movie.slug),
-		}));
-
-	return [
-		...generatedUpcoming,
-		...catalogUpcoming.filter((release) => !generatedUpcomingKeys.has(getUpcomingReleaseMapKey(release))),
-	].slice(0, limit);
+export function getUpcomingMovieReleases(_referenceDate = new Date(), limit = 4): UpcomingMovieRelease[] {
+	// Dates and trailers are refreshed only by the weekly edition. No catalog
+	// fallback or build-time filtering: a movie load must not alter this section.
+	return GENERATED_UPCOMING_RELEASES.slice(0, limit);
 }
 
 /**
@@ -971,11 +886,6 @@ export function getCurrentStreamingMovieReleases(
 		.map((entry) =>
 			toRelease(entry, recentLoadSlugs.has(entry.movie.slug) ? 'Recién agregada' : undefined),
 		);
-}
-
-function isFutureRelease(releaseDate: string, referenceTimestamp: number): boolean {
-	const timestamp = getIsoDateTimestamp(releaseDate);
-	return !Number.isNaN(timestamp) && timestamp > referenceTimestamp;
 }
 
 export function getVerdictLabel(movie: Pick<Movie, 'cinepostaScore'>): string {

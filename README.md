@@ -176,7 +176,6 @@ Otros:
 
 ```bash
 npm run hooks:install
-npm run update-upcoming-releases
 npm run enrich-synopsis
 npm run enrich-editorial
 npm run enrich-people
@@ -258,7 +257,17 @@ Antes de aplicar cambios de base en producción:
 
 El sitio genera salida estática en `dist/`.
 
-Los próximos estrenos se generan en `src/data/upcomingReleases.generated.ts`: Cines Argentinos aporta la cartelera y fecha local; TMDB sólo completa trailer e imagen. El workflow diario usa modo estricto y abre un PR cuando la fuente cambia; el deploy publica únicamente el contenido ya versionado en `main`, por lo que la salida es reproducible desde el commit desplegado.
+El home usa tres ediciones versionadas e independientes de las cargas de películas. Radar se actualiza diariamente a las **10:00 de Argentina**. Un único Action semanal genera en paralelo recomendadas y trailers los **domingos a la 01:00 de Argentina**, los valida y publica juntos. El deploy lee esas ediciones sin consultar fuentes ni recalcularlas. Los cron pueden demorarse en GitHub.
+
+| Workflow | Responsabilidad | Horario AR |
+| --- | --- | --- |
+| `refresh-cinema-news.yml` | Consultar todos los medios y publicar la edición del Radar | Diario, 10:00 |
+| `refresh-weekly-recommendations.yml` | Generar recomendadas y próximos estrenos con trailers en paralelo | Domingo, 01:00 |
+| `deploy.yml` | Construir y publicar el contenido versionado en Pages | Push a main / actualizador exitoso / manual |
+| `validate.yml` | Contenido, pósters, seguridad y navegador Chromium | PR / lunes / manual |
+| `publish-buffer-x.yml` | Agendar la película diaria en X por Buffer | 18:30, publicación 19:00 |
+
+Una carga con las skills de alta/auditoría conserva `cinemaNews.generated.json`, `weeklyRecommendations.generated.ts` y `upcomingReleases.generated.ts`. No ejecutes sus generadores como parte de una carga. `validate:content` comprueba el contrato y rechaza diffs que mezclen películas y ediciones. Los trailers toman la fecha y el video de la misma ficha argentina, sin depender de una búsqueda HTML en TMDB. [Arquitectura, operación y recuperación](docs/home-automation.md).
 
 El workflow de publicación actual vive en:
 

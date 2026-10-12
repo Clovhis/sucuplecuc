@@ -6,7 +6,7 @@
 - Cine Posta está orientado a público argentino. Toda etiqueta `releasePlatform` / `releasePlatforms`, fecha de estreno, cartelera y título localizado debe describir la disponibilidad vigente en Argentina, nunca la de Estados Unidos, España u otro mercado.
 - `docs/movie-catalog-reference.md` y `docs/person-profile-catalog-reference.md` se regeneran con sus scripts.
 - `src/data/people.json` centraliza los datos de personas y `src/data/personProfiles.ts` contiene los perfiles extensos.
-- `src/data/upcomingReleases.generated.ts` es generado: actualizalo con `npm run update-upcoming-releases` y versioná el resultado.
+- Radar (`src/data/cinemaNews.generated.json`), recomendadas (`src/data/weeklyRecommendations.generated.ts`) y trailers (`src/data/upcomingReleases.generated.ts`) son ediciones generadas independientes. No las regeneres, edites ni reviertas durante una carga/auditoría de películas; el build lee lo versionado. Sólo sus workflows o un pedido explícito de actualización pueden cambiarlas.
 - No agregues secretos, credenciales administrativas ni service-role keys. Las variables esperadas están en `.env.example`.
 
 ## Flujo mínimo de cambios
@@ -29,8 +29,12 @@
 
 ## Automatización
 
-- Cada PR valida contenido, build, dependencias productivas y e2e en Chromium.
-- La cobertura completa de navegadores corre semanalmente o con `workflow_dispatch` y `full_e2e`.
-- Los próximos estrenos, sus trailers y las recomendaciones semanales se actualizan automáticamente, se validan y se versionan directamente en `main`; el deploy publica esos cambios y también refresca el Radar de cine al reconstruir el sitio.
-- `skills/` es la fuente versionada de las skills de Cine Posta. Después de modificarlas, ejecutá `node plugins/la-posta-cine/scripts/sync-from-repo.mjs` para actualizar el plugin; usá `--install` sólo cuando también corresponda actualizar la instalación local de Codex. Validá la fuente, el plugin y la instalación antes de publicar.
-
+- Los horarios son de Argentina (UTC-3). Radar corre todos los días a las 10:00 (`0 13 * * *`); consulta La Nación, Clarín, Página/12 y Ámbito, además de Infobae y Cines Argentinos.
+- Un único workflow semanal corre los domingos a la 01:00 (`0 4 * * 0`), después del sábado a la noche. Genera recomendadas y trailers en jobs paralelos; valida y publica ambos snapshots juntos. Si falla cualquiera, conserva la edición publicada.
+- `deploy.yml` sólo construye/publica el contenido versionado. Corre por push a `main`, manualmente o al finalizar exitosamente un actualizador. No consulta feeds, no regenera ediciones ni tiene un cron diario redundante.
+- `validate.yml` valida contenido, ediciones, pósters locales, seguridad y Chromium en cada PR y los lunes. La matriz completa de navegadores es manual (`full_e2e`); el audit completo de contenido se solicita con `full_content_audit`.
+- La publicación diaria en X se conserva: Actions agenda en Buffer a las 18:30 AR para publicar a las 19:00 AR; no modifica películas ni ediciones.
+- Antes de publicar una carga, rebaseá sobre `origin/main` para conservar las ediciones del bot. `validate:content` bloquea diffs que mezclen películas con cambios en esos snapshots. No uses la actualización de trailers como paso de carga.
+- GitHub puede demorar los cron. Los horarios indican el disparo solicitado; publicación y disponibilidad pública llegan después de la validación y el deploy.
+- La arquitectura, responsabilidades, recuperación y pruebas están en [`docs/home-automation.md`](docs/home-automation.md).
+- `skills/` es la fuente versionada de las skills de Cine Posta. Después de modificarlas, ejecutá `node plugins/la-posta-cine/scripts/sync-from-repo.mjs`; usá `--install` cuando también corresponda actualizar la instalación local. Validá las tres copias antes de publicar.

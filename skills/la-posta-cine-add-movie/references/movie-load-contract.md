@@ -71,6 +71,6 @@ No inferir un proveedor por el estudio, la franquicia, el país de producción, 
 
 ## Derivados y cierre
 
-- Después de altas o cambios, ejecutar `npm run catalog:movies` y `npm run update-upcoming-releases`; comprobar con `npm run catalog:movies:check` que las referencias versionadas coincidan con las fuentes.
+- Después de altas o cambios, ejecutar `npm run catalog:movies`; no regenerar las ediciones del Radar, recomendadas ni próximos estrenos durante una carga; comprobar con `npm run catalog:movies:check` que las referencias versionadas coincidan con las fuentes.
 - Antes de commit, ejecutar el auditor candidato con YouTube habilitado, `npm run validate:content -- --all --astro-check`, `npm run check`, `npm run build`, el auditor candidato con `--skip-youtube --verify-community-build --verify-reaction-build` y sus verificaciones de rutas/carousels, `npm run validate:public-output` y `npm run validate:sitemap-indexability`. Un build verde no reemplaza la evidencia AR, el audit de personas ni la validación primaria del trailer.
 - Ejecutar `git diff --check` y confirmar que la diff queda limitada a películas, people/portraits, perfiles y derivados explícitamente autorizados. Nunca arreglar un fallo de contenido tocando UI, rutas o configuración.

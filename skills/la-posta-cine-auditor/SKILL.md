@@ -7,6 +7,10 @@ description: Audit recent, revalidated, or bulk-loaded La Posta Cine movie JSON 
 
 Use the bundled audit as the primary signal. Work quietly and edit only movie data, people cache/portraits, and generated catalogs; never auto-fix site code. Verify every explicit candidate's `cinepostaScore` against current public rating evidence using the protocol below. The only code exception is an explicit user request for a title-specific editorial-meter score: keep that score in the central meter override map plus a regression test, never in movie JSON.
 
+## Home editions are independent of movie loads
+
+Radar, weekly recommendations and upcoming trailers are frozen scheduled editions. Do not regenerate, edit, stage or revert `src/data/cinemaNews.generated.json`, `src/data/weeklyRecommendations.generated.ts` or `src/data/upcomingReleases.generated.ts` during a movie load/audit. Run the ordinary build using the committed editions. Rebase onto current `main` before publishing so newer bot-generated editions are preserved; `validate:content` rejects a diff mixing movie files with these snapshots. Only a separate explicit home-refresh task may regenerate them. In the repository, see `docs/home-automation.md` for operational details.
+
 ## Compact flow
 
 1. Prefer explicit candidates. Use branch-recent discovery only when paths are unavailable:
@@ -107,7 +111,6 @@ npm run check
 npm run test:editorial-meters
 npm run catalog:movies
 npm run catalog:movies:check
-npm run update-upcoming-releases
 npm run validate:content
 npm run build
 node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <path> --skip-youtube --verify-community-build --verify-reaction-build --verify-cinema-carousel-build --verify-streaming-carousel-build
