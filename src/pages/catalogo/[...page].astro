@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MovieCard from '../../components/MovieCard.astro';
+import { getMovies } from '../../lib/movies';
+import { getMovieCatalogPages, getMovieCatalogPath, MOVIE_CATALOG_PAGE_SIZE } from '../../lib/movie-catalog';
+import { createSimplePageStructuredData, SITE_NAME } from '../../lib/seo';
+import type { Movie } from '../../types/movie';
+
+export function getStaticPaths() {
+	const movies = getMovies();
+	const pages = getMovieCatalogPages(movies);
+	return pages.map((entry) => ({
+		params: { page: entry.number === 1 ? undefined : String(entry.number) },
+		props: { movies: entry.movies, pageNumber: entry.number, totalPages: pages.length, totalMovies: movies.length },
+	}));
+}
+
+const { movies, pageNumber, totalPages, totalMovies } = Astro.props as {
+	movies: Movie[]; pageNumber: number; totalPages: number; totalMovies: number;
+};
+const pageTitle = `Catálogo de películas${pageNumber > 1 ? ` · Página ${pageNumber}` : ''} | ${SITE_NAME}`;
+const pageDescription = `Explorá las ${totalMovies.toLocaleString('es-AR')} películas de Cine Posta: reseñas, sinopsis, reparto y Score CinePosta. Página ${pageNumber} de ${totalPages}, ordenadas por estreno.`;
+const pathname = getMovieCatalogPath(pageNumber);
+const structuredData = createSimplePageStructuredData(pathname, pageTitle, pageDescription);
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<main id="main-content" class="container catalog-page">
+		<header class="catalog-page__header">
+			<p class="catalog-page__eyebrow">Archivo de Cine Posta</p>
+			<h1>Catálogo de películas</h1>
+			<p>Reseñas, sinopsis y reparto de todas las películas del sitio, de las más nuevas a las más viejas.</p>
+			<a href="/#catalogo-filtros">Buscar una película o filtrar el catálogo</a>
+		</header>
+		<p class="catalog-page__count">{(pageNumber - 1) * MOVIE_CATALOG_PAGE_SIZE + 1}–{Math.min(pageNumber * MOVIE_CATALOG_PAGE_SIZE, totalMovies)} de {totalMovies.toLocaleString('es-AR')} películas · Página {pageNumber} de {totalPages}</p>
+		<section class="movie-grid" aria-label={`Películas del catálogo, página ${pageNumber}`}>
+			{movies.map((movie, index) => <MovieCard movie={movie} index={index} />)}
+		</section>
+		<nav class="catalog-page__pagination" aria-label="Páginas del catálogo completo">
+			{pageNumber > 1 && <a href={getMovieCatalogPath(pageNumber - 1)} rel="prev">Anterior</a>}
+			{Array.from({ length: totalPages }, (_, index) => index + 1).map((number) => (
+				number === pageNumber
+					? <span aria-current="page" aria-label={`Página ${number}, actual`}>{number}</span>
+					: <a href={getMovieCatalogPath(number)} aria-label={`Página ${number}`}>{number}</a>
+			))}
+			{pageNumber < totalPages && <a href={getMovieCatalogPath(pageNumber + 1)} rel="next">Siguiente</a>}
+		</nav>
+	</main>
+</BaseLayout>
+
+<style>
+	.catalog-page { padding-block: 2rem; }
+	.catalog-page__header { max-width: 70ch; margin-bottom: 1.5rem; }
+	.catalog-page__header h1 { margin-block: .4rem .8rem; font-size: clamp(1.8rem, 4vw, 2.8rem); }
+	.catalog-page__header p { line-height: 1.6; }
+	.catalog-page__eyebrow { color: var(--accent, #e6b291); font-size: .8rem; }
+	.catalog-page__count { margin-block: 1.5rem; color: #aeb5bf; }
+	.catalog-page .movie-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+	.catalog-page__pagination { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 2rem; }
+	.catalog-page__pagination a, .catalog-page__pagination span { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: .5rem .75rem; border: 1px solid #343b45; border-radius: 4px; }
+	.catalog-page__pagination [aria-current="page"] { background: #e6b291; color: #101318; }
+	@media (max-width: 900px) { .catalog-page .movie-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+	@media (max-width: 600px) { .catalog-page .movie-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; } }
+</style>

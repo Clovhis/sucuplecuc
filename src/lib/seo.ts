@@ -29,6 +29,26 @@ export const QUE_MIRO_HOY_PATH = '/que-miro-hoy/';
 export const PEOPLE_PATH = '/personas/';
 export { COMMUNITY_PATH } from './community';
 
+export function getMovieSeoDescription(movie: Pick<Movie, 'title' | 'year' | 'director' | 'mainCast'>): string {
+	const intro = `Reseña y sinopsis de ${movie.title} (${movie.year}).`;
+	const direction = ` Dirección: ${movie.director}.`;
+	const cast = movie.mainCast.slice(0, 2).join(', ');
+	const withCast = `${intro}${direction}${cast ? ` Reparto: ${cast}.` : ''}`;
+	return withCast.length <= 240 ? withCast : `${intro}${direction}`;
+}
+
+export function getPersonSeoDescription(profile: PersonProfile, filmography: PersonFilmographyEntry[]): string {
+	// Only reuse the approved biography that is visible on the page, never legacy drafts.
+	const biography = profile.editorialStatus === 'approved' ? profile.editorialBiography?.[0]?.trim() : undefined;
+	const firstSentence = biography?.match(/^.*?[.!?](?=\s|$)/u)?.[0];
+	if (firstSentence && firstSentence.length >= 60 && firstSentence.length <= 200) return firstSentence;
+	const knownFor = profile.knownFor
+		.map((slug) => filmography.find((movie) => movie.movieSlug === slug)?.title)
+		.filter(Boolean)
+		.slice(0, 2);
+	return `${profile.name}: biografía, trayectoria y películas.${knownFor.length ? ` Su trabajo en ${knownFor.join(' y ')} y su filmografía en Cine Posta.` : ' Conocé su carrera y su filmografía en Cine Posta.'}`;
+}
+
 type StructuredDataValue = Record<string, unknown>;
 
 function asAbsoluteUrl(value: string): string {

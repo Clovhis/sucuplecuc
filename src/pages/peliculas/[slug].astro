@@ -39,7 +39,7 @@ import { getJajametroScore } from '../../lib/jajametro';
 import { getCagazometroScore } from '../../lib/cagazometro';
 import { getExplosiometroScore } from '../../lib/explosiometro';
 import { getSangrometroScore } from '../../lib/sangrometro';
-import { EDITORIAL_TEAM_NAME, EDITORIAL_TEAM_PATH, METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData } from '../../lib/seo';
+import { EDITORIAL_TEAM_NAME, EDITORIAL_TEAM_PATH, METHODOLOGY_PATH, SITE_NAME, SITE_URL, createMovieStructuredData, getMovieSeoDescription } from '../../lib/seo';
 import { getMovieCommunityPath } from '../../lib/community';
 import { getMovieCountries } from '../../lib/countries';
 import type { Movie } from '../../types/movie';
@@ -54,8 +54,8 @@ export function getStaticPaths() {
 
 const { movie } = Astro.props as { movie: Movie };
 const allMovies = getMovies();
-const pageTitle = `${movie.title} (${movie.year}) | Cine Posta`;
-const pageDescription = movie.synopsis;
+const pageTitle = `${movie.title} (${movie.year}): reseña y reparto | Cine Posta`;
+const pageDescription = getMovieSeoDescription(movie);
 const posterUrl = getPosterUrl(movie.poster);
 const verdictClass = getVerdictBadgeClass(movie);
 const showAbsoluteCinemaSticker = isAbsoluteCinemaMovie(movie);

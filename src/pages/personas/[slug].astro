@@ -11,7 +11,7 @@ import {
 	getPersonProfiles,
 	isPersonProfileIndexable,
 } from '../../lib/people';
-import { PEOPLE_PATH, createPersonStructuredData } from '../../lib/seo';
+import { PEOPLE_PATH, createPersonStructuredData, getPersonSeoDescription } from '../../lib/seo';
 
 export const getStaticPaths: GetStaticPaths = () => {
 	return getPersonProfiles().map((profile) => ({
@@ -31,10 +31,10 @@ const knownForEntries = profile.knownFor
 	.filter((entry): entry is (typeof filmography)[number] => Boolean(entry));
 const showcaseEntries = (knownForEntries.length > 0 ? knownForEntries : filmography).slice(0, 4);
 const pageTitle = isIndexable
-	? `Biografía de ${profile.name}: películas y premios | Cine Posta`
+	? `${profile.name}: biografía, películas y premios | Cine Posta`
 	: `Ficha de ${profile.name}: películas y premios | Cine Posta`;
 const pageDescription = isIndexable
-	? `${profile.name}: biografía editorial, datos verificables, premios y películas relacionadas dentro de Cine Posta.`
+	? getPersonSeoDescription(profile, filmography)
 	: `${profile.name}: datos verificables, premios y películas relacionadas dentro de Cine Posta.`;
 const profileImage =
 	profile.profileImage ?? profile.image ?? profile.remoteImageUrl ?? '/posters/poster-no-disponible.svg';

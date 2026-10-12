@@ -12,8 +12,9 @@ function printUsage() {
   node scripts/gsc.mjs sites
   node scripts/gsc.mjs sitemaps [--site <site-url>]
   node scripts/gsc.mjs submit-sitemap [--site <site-url>] [--sitemap <sitemap-url>]
-  node scripts/gsc.mjs queries [--site <site-url>] [--days <n>] [--limit <n>]
-  node scripts/gsc.mjs pages [--site <site-url>] [--days <n>] [--limit <n>]
+  node scripts/gsc.mjs queries [--site <site-url>] [--days <n>] [--limit <n>] [--json]
+  node scripts/gsc.mjs pages [--site <site-url>] [--days <n>] [--limit <n>] [--json] [--with-queries]
+  Analytics filters: --start-date YYYY-MM-DD --end-date YYYY-MM-DD --country arg --page <absolute-url>
   node scripts/gsc.mjs inspect --url <absolute-url> [--site <site-url>] [--language <code>]
   node scripts/gsc.mjs inspect-sitemap [--site <site-url>] [--sitemap <sitemap-url>] [--path-prefix <pathname>] [--limit <n>] [--concurrency <n>] [--compact]
 
@@ -104,7 +105,15 @@ async function createSearchConsoleClient({ writeAccess = false } = {}) {
 	});
 }
 
-function getDateRange(days) {
+function getDateRange(days, start, end) {
+	if (start || end) {
+		const isDate = (value) => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) &&
+			!Number.isNaN(Date.parse(value)) && new Date(value).toISOString().slice(0, 10) === value;
+		if (!isDate(start) || !isDate(end) || start > end) {
+			throw new Error('Provide valid --start-date and --end-date in chronological YYYY-MM-DD order.');
+		}
+		return { startDate: start, endDate: end };
+	}
 	const numericDays = Number(days);
 	if (!Number.isFinite(numericDays) || numericDays < 1) {
 		throw new Error(`Invalid --days value "${String(days)}".`);
@@ -192,8 +201,20 @@ async function listSitemaps(args) {
 
 async function runSearchAnalytics(args, dimensions) {
 	const siteUrl = normalizeSiteUrl(args.site || DEFAULT_SITE_URL);
-	const limit = Number(args.limit || 25);
-	const { startDate, endDate } = getDateRange(args.days || 28);
+	const limit = parsePositiveInteger(args.limit, 'limit', 25);
+	if (limit > 25000) throw new Error('--limit must not exceed 25000.');
+	const { startDate, endDate } = getDateRange(args.days || 28, args['start-date'], args['end-date']);
+	const filters = [];
+	if (args.country) {
+		if (!/^[a-z]{3}$/i.test(String(args.country))) throw new Error('--country requires a three-letter country code, e.g. arg.');
+		filters.push({ dimension: 'country', operator: 'equals', expression: String(args.country).toLowerCase() });
+	}
+	if (args.page) {
+		const pageUrl = new URL(String(args.page));
+		if (pageUrl.origin !== new URL(siteUrl).origin) throw new Error('--page must belong to the selected site.');
+		filters.push({ dimension: 'page', operator: 'equals', expression: pageUrl.toString() });
+	}
+	const queryDimensions = args['with-queries'] && dimensions.includes('page') ? [...dimensions, 'query'] : dimensions;
 	const client = await createSearchConsoleClient();
 
 	const response = await client.searchanalytics.query({
@@ -201,12 +222,19 @@ async function runSearchAnalytics(args, dimensions) {
 		requestBody: {
 			startDate,
 			endDate,
-			dimensions,
+			dimensions: queryDimensions,
 			rowLimit: limit,
+			dataState: 'final',
+			type: 'web',
+			...(filters.length ? { dimensionFilterGroups: [{ filters }] } : {}),
 		},
 	});
 
-	console.log(`${dimensions.join(' + ')} from ${startDate} to ${endDate}`);
+	if (args.json) {
+		console.log(JSON.stringify({ siteUrl, startDate, endDate, dimensions: queryDimensions, filters, dataState: 'final', ...response.data }, null, 2));
+		return;
+	}
+	console.log(`${queryDimensions.join(' + ')} from ${startDate} to ${endDate}`);
 	console.table(toTable(response.data.rows ?? []));
 }
 

@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { getEditorials, getEditorialPath } from '../lib/editorial';
 import { getMovieCommunityPath } from '../lib/community';
 import { getMoviePath, getMovies } from '../lib/movies';
+import { getMovieCatalogPages, getMovieCatalogPath } from '../lib/movie-catalog';
 import { getPersonPath, getPersonProfiles, isPersonProfileIndexable } from '../lib/people';
 import {
 	ABOUT_PATH,
@@ -38,6 +39,7 @@ export const GET: APIRoute = async () => {
 	const people = getPersonProfiles().filter(isPersonProfileIndexable);
 	const entries = [
 		{ pathname: '/' },
+		...getMovieCatalogPages(movies).map((page) => ({ pathname: getMovieCatalogPath(page.number) })),
 		{ pathname: '/editorial/' },
 		...getEditorials().map((entry) => ({ pathname: getEditorialPath(entry.slug) })),
 		{ pathname: '/juegos/simulador-carrera-actor/' },
