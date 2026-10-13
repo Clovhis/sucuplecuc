@@ -59,6 +59,12 @@ async function expectMovieTitles(page: Page, expectedTitles: string[]): Promise<
 }
 
 test.describe('home catalog filters', () => {
+  test.beforeEach(async ({ page }) => {
+    // Filters do not test YouTube; its external iframe delayed WebKit's load event.
+    await page.route('https://www.youtube.com/embed/**', (route) => route.fulfill({
+      contentType: 'text/html', body: '<html><body>Trailer fixture</body></html>',
+    }));
+  });
 	test('quick picks and score controls share a compact desktop row', async ({ page }, testInfo) => {
 		test.skip(testInfo.project.name.startsWith('mobile-'), 'Desktop hierarchy assertion');
 		await gotoHome(page, { openAdvanced: false });
@@ -313,6 +319,8 @@ test.describe('home catalog filters', () => {
   });
 
   test('Musical filters narrative musicals and preserves combined URL state', async ({ page }) => {
+    // This checks all result pages, several searches, reload and a movie route.
+    test.setTimeout(90_000);
     await gotoHome(page);
     const expectedMusicals = await page.evaluate(() => {
       const records = JSON.parse(document.querySelector('[data-home-movie-index]')?.textContent ?? '[]') as Array<{ genres: string[]; title: string }>;

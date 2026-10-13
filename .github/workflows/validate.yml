@@ -98,12 +98,25 @@ jobs:
         run: npx playwright test --project=desktop-chromium
 
   e2e-cross-browser:
-    # Keep the exhaustive browser matrix opt-in: the weekly validation still runs
-    # content checks and Chromium, while WebKit's long-running cases remain manual.
+    # Chromium already runs above. Give each remaining project its own runner:
+    # the former sequential five-browser job exceeded its 30-minute limit.
     if: github.event_name == 'workflow_dispatch' && github.event.inputs.full_e2e == 'true'
     needs: validate
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    name: E2E (${{ matrix.project }})
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: desktop-firefox
+            browser: firefox
+          - project: desktop-webkit
+            browser: webkit
+          - project: mobile-chromium
+            browser: chromium
+          - project: mobile-webkit
+            browser: webkit
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -120,12 +133,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Install project browser
+        run: npx playwright install --with-deps ${{ matrix.browser }}
 
       - name: Build site
         run: npm run build
 
-      - name: Run full cross-browser end-to-end suite
-        run: npx playwright test
+      - name: Run project end-to-end suite
+        run: npx playwright test --project=${{ matrix.project }}
+
+      - name: Save browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-${{ matrix.project }}-${{ github.run_attempt }}
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 3
 

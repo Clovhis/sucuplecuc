@@ -122,8 +122,8 @@ test.describe('simulador de carrera cinematográfica', () => {
 			}
 			await selectedChoice.click();
 			await expect(page.locator('[data-event-result]')).toContainText(/suerte está rodando/i);
-			await expect(page.locator('[data-event-result]')).not.toContainText(/suerte está rodando/i, { timeout: 3_000 });
-			await page.waitForTimeout(1_400);
+			await expect(page.locator('[data-event-result]')).not.toContainText(/suerte está rodando/i, { timeout: 5_000 });
+			await waitForTurnOrSummary(page);
 			await expect(page.locator('[data-career-log-entry]')).toHaveCount(turn + 1);
 			await expect(page.locator('[data-career-log-count]')).toHaveText(turn === 0 ? '1 decisión' : `${turn + 1} decisiones`);
 		}
@@ -236,8 +236,8 @@ test.describe('simulador de carrera cinematográfica', () => {
 			if ((await choices.count()) === 0) break;
 			await expect(choices).toHaveCount(2);
 			await choices.nth(turn % 2).click();
-			await expect(page.locator('[data-event-result]')).not.toContainText(/suerte está rodando/i, { timeout: 3_000 });
-			await page.waitForTimeout(1_400);
+			await expect(page.locator('[data-event-result]')).not.toContainText(/suerte está rodando/i, { timeout: 5_000 });
+			await waitForTurnOrSummary(page);
 			levels.push(Number((await page.locator('[data-player-level]').textContent())?.trim()));
 		}
 
