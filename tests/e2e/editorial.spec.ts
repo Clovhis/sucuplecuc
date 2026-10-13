@@ -12,6 +12,9 @@ import skydance from '../../src/data/editorials/skydance-cierra-la-compra-de-war
 import benImana from '../../src/data/editorials/ben-imana-primera-pelicula-ruandesa-en-los-oscar-2026.json' with { type: 'json' };
 import londonFestival from '../../src/data/editorials/glaxo-the-match-bfi-london-film-festival-2026.json' with { type: 'json' };
 import animales from '../../src/data/editorials/animales-ben-affleck-me-rio-por-los-motivos-equivocados.json' with { type: 'json' };
+import naHongJin from '../../src/data/editorials/na-hong-jin-sitges-2026-premio-hope.json' with { type: 'json' };
+import mistyGreen from '../../src/data/editorials/misty-green-chris-rock-rosalind-eleazar-octubre-2026.json' with { type: 'json' };
+import theDevils from '../../src/data/editorials/the-devils-ken-russell-restauracion-octubre-2026.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -32,7 +35,7 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await expect(page).toHaveURL(/\/editorial\/$/);
 }
 
-for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival]) {
+for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, naHongJin, mistyGreen, theDevils]) {
   test(`${entry.slug}: news sources, SEO and responsive images remain available from home and archive`, async ({ page }, testInfo) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
@@ -68,6 +71,15 @@ for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival])
       await expect(image).toHaveAttribute('srcset', /640w/);
       await expect(figure.getByRole('link', { name: 'Fuente de la imagen' })).toHaveAttribute('href', /^https:\/\//);
       expect(await image.evaluate((node: HTMLImageElement) => Math.abs(node.width / node.height - node.naturalWidth / node.naturalHeight))).toBeLessThan(.03);
+    }
+    if ('movieSlug' in entry && typeof entry.movieSlug === 'string') {
+      const moviePath = `/peliculas/${entry.movieSlug}/`;
+      await page.getByRole('link', { name: /^Ver ficha de / }).click();
+      await expect(page).toHaveURL(moviePath);
+      await page.getByRole('complementary', { name: 'Editorial CinePosta', exact: true })
+        .filter({ has: page.getByRole('heading', { name: entry.title, exact: true }) })
+        .getByRole('link', { name: 'Leer editorial' }).click();
+      await expect(page).toHaveURL(path);
     }
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.screenshot({ path: testInfo.outputPath('news-viewport.png'), scale: 'css' });
