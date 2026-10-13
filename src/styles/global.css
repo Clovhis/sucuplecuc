@@ -4101,9 +4101,11 @@ img {
 .home-catalog-pagination button { min-height: 44px; }
 .home-catalog-pagination button:disabled { opacity: 0.45; cursor: default; }
 
-/* The paginated grid has at most 36 cards. Lay them out fully so skipped
-   intrinsic heights can't move pagination or links underneath a click. */
-[data-movie-search-grid] .movie-card {
+/* Both catalogs have bounded pages (36 home cards, 48 archive cards).
+   Lay them out fully so skipped intrinsic heights can't move links
+   underneath a click, including when JavaScript is disabled. */
+[data-movie-search-grid] .movie-card,
+.catalog-page .movie-card {
 	content-visibility: visible;
 	contain-intrinsic-size: none;
 }

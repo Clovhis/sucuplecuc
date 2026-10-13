@@ -65,4 +65,8 @@ CI verifica pósters locales con `npm run posters:check`, sin las antiguas opcio
 
 Si falla un actualizador, revisar su log y el resumen de fuentes antes de reejecutarlo. La edición anterior permanece en `main`; nunca borrar snapshots para forzar una actualización ni cambiar un error por un éxito artificial. Después de corregir la causa, ejecutar manualmente el workflow correspondiente. Verificar el commit generado, el deploy exitoso y la sección pública. Si sólo falló Pages, repetir el deploy: no hace falta regenerar datos ni repetir X en modo publish.
 
+El archivo `/catalogo/` también tiene páginas acotadas de 48 tarjetas. Sus tarjetas conservan el layout completo, como las 36 del buscador del home: `content-visibility: auto` cambiaba las alturas estimadas al desplazarse y podía mover los enlaces de paginación durante un clic en WebKit. La prueba conserva navegación real por clic y JavaScript desactivado. La prueba móvil espera y vuelve a medir las seis secciones, evitando evaluar un estado anterior al primer layout.
+
+`tsconfig.json` excluye los reportes y trazas generados (`test-results/`, `playwright-report/` y `.tmp/`) para que una nueva validación local revise el código del proyecto sin analizar los bundles del visor de Playwright.
+
 Documentación primaria: [cron y eventos de GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule), [eventos creados por GITHUB_TOKEN](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).

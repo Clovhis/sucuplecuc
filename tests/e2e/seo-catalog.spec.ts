@@ -31,6 +31,8 @@ test('catalog navigation works without JavaScript and fits narrow screens', asyn
 	await page.goto('/catalogo/');
 	await expect(page.getByRole('heading', { name: 'Catálogo de películas', exact: true })).toBeVisible();
 	await expect(page.locator('[data-movie-card]')).toHaveCount(48);
+	await expect(page.locator('[data-movie-card]').first()).toHaveCSS('content-visibility', 'visible');
+	await expect(page.locator('[data-movie-card]').last()).toHaveCSS('content-visibility', 'visible');
 	await expect(page.locator('.catalog-page__pagination [aria-current="page"]')).toHaveText('1');
 	await page.getByRole('link', { name: 'Siguiente', exact: true }).click();
 	await expect(page).toHaveURL(/\/catalogo\/2\/$/);

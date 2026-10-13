@@ -115,7 +115,8 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/', { waitUntil: 'load' });
 
-  const sectionState = await page.evaluate(() => {
+  await expect(page.locator('.home-mobile-nav')).toBeVisible();
+  await expect.poll(() => page.evaluate(() => {
     const selectors = [
       '[data-home-people-grid]',
       '.news-rail',
@@ -134,10 +135,14 @@ test('mobile home exposes the complete app flow and keeps cinema labels on one l
         return [selector, style.display !== 'none' && style.visibility !== 'hidden' && rect.height > 0];
       }),
     );
+  })).toEqual({
+    '[data-home-people-grid]': true,
+    '.news-rail': true,
+    '[data-cinema-release-carousel="cinema-release-carousel"]': true,
+    '[data-cinema-release-carousel="streaming-release-carousel"]': true,
+    '.weekly-suggestion': true,
+    '[data-home-actor-game]': true,
   });
-
-  await expect(page.locator('.home-mobile-nav')).toBeVisible();
-  expect(Object.values(sectionState).every(Boolean)).toBeTruthy();
 
   for (const target of ['#catalogo-filtros', '#cinema-release-carousel']) {
     await page.locator(`.home-mobile-nav a[href="${target}"]`).click();
