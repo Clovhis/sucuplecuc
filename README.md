@@ -1,31 +1,38 @@
 # Cine Posta
 
-Sitio estático de reseñas cortas sobre películas, construido con Astro y alimentado por contenido versionado en JSON.
+Catálogo y revista digital de cine para público argentino, construidos con Astro y alimentados por contenido versionado en JSON y TypeScript.
 
 ## Qué incluye
 
-- catálogo estático en `src/data/movies/*.json`
-- páginas individuales de películas y personas
-- búsqueda, filtros y subgéneros en cliente
-- score editorial Cine Posta del 1 al 10, con etiquetas canónicas y filtros por umbral
-- trailers de YouTube
-- medidores editoriales automáticos según taxonomía (`Lagrimómetro`, `Jajámetro`, `Cagazómetro`, `Explosiómetro`, `Sangrómetro`)
-- rating público `1..5` con Supabase
+- catálogo, fichas y búsqueda con filtros por género, año, score y disponibilidad argentina
+- perfiles de cineastas y un archivo de editoriales originales
+- Score Cine Posta del 1 al 10, además de rating público de 1 a 5
+- Radar de Cine, recomendaciones semanales y próximos estrenos con trailers
+- Comunidad con debates, comentarios, reacciones y fichas de películas
+- medidores editoriales por taxonomía (`Lagrimómetro`, `Jajámetro`, `Cagazómetro`, `Explosiómetro`, `Sangrómetro`)
+- simulador interactivo de carrera actoral con tabla pública de puntajes
 
 ## Stack
 
 - Astro 7
 - TypeScript
 - CSS plano
-- Supabase para rating público
-- Playwright para smoke tests e2e
+- Supabase para ratings, Comunidad y puntajes del simulador
+- Playwright para pruebas end-to-end en escritorio y emulación móvil
 
 ## Estructura
 
 ```text
 .
+├─ .github/workflows/
+├─ docs/
+├─ plugins/la-posta-cine/
+├─ reports/
+├─ scripts/
+├─ skills/
 ├─ src/
 │  ├─ data/
+│  │  ├─ editorials/*.json
 │  │  ├─ movies/*.json
 │  │  ├─ people.json
 │  │  └─ personProfiles.ts
@@ -34,9 +41,6 @@ Sitio estático de reseñas cortas sobre películas, construido con Astro y alim
 │  ├─ pages/
 │  └─ scripts/
 ├─ public/
-├─ docs/
-├─ scripts/
-├─ skills/
 ├─ supabase/sql/
 └─ tests/
 ```
