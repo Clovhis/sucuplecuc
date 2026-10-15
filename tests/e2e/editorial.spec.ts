@@ -15,6 +15,8 @@ import animales from '../../src/data/editorials/animales-ben-affleck-me-rio-por-
 import naHongJin from '../../src/data/editorials/na-hong-jin-sitges-2026-premio-hope.json' with { type: 'json' };
 import mistyGreen from '../../src/data/editorials/misty-green-chris-rock-rosalind-eleazar-octubre-2026.json' with { type: 'json' };
 import theDevils from '../../src/data/editorials/the-devils-ken-russell-restauracion-octubre-2026.json' with { type: 'json' };
+import libertadDoble from '../../src/data/editorials/la-libertad-doble-lisandro-alonso-tokio-2026.json' with { type: 'json' };
+import lasNoches from '../../src/data/editorials/las-noches-ana-bovino-dok-leipzig-2026.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -35,7 +37,7 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await expect(page).toHaveURL(/\/editorial\/$/);
 }
 
-for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, naHongJin, mistyGreen, theDevils]) {
+for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, naHongJin, mistyGreen, theDevils, libertadDoble, lasNoches]) {
   test(`${entry.slug}: news sources, SEO and responsive images remain available from home and archive`, async ({ page }, testInfo) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
