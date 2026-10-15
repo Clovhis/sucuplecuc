@@ -5083,6 +5083,23 @@
 		"lastVerifiedAt": "2026-08-24",
 		"source": "wikidata-imdb-cache"
 	},
+	"Andrew Koji": {
+		"name": "Andrew Koji",
+		"birthDate": "1987",
+		"birthYear": 1987,
+		"nationalityPrimary": "Británico",
+		"image": "/people/andrew-koji-nm4010671.jpg",
+		"imdbId": "nm4010671",
+		"imdbUrl": "https://www.imdb.com/name/nm4010671/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/oU53nWLQ6wFHzERwSi1fD53LxZB.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q72219204",
+			"https://www.imdb.com/name/nm4010671/",
+			"https://www.themoviedb.org/person/1658375-andrew-koji"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Andrew Lau Wai-Keung": {
 		"name": "Andrew Lau Wai-Keung",
 		"birthDate": "1960-04-04",
@@ -5206,13 +5223,13 @@
 		"image": "/people/andrew-stanton-nm0004056.jpg",
 		"imdbId": "nm0004056",
 		"imdbUrl": "https://www.imdb.com/name/nm0004056/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20Stanton%20at%20the%202026%20Sundance%20Film%20Festival%20for%20In%20the%20Blink%20of%20an%20Eye%20(01)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20Stanton%20at%20the%202026%20Sundance%20Film%20Festival%20for%20In%20the%20Blink%20of%20an%20Eye%20(01)%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q328723",
 			"https://www.imdb.com/name/nm0004056/",
 			"https://www.themoviedb.org/person/7-andrew-stanton"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-10-15",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1965-12-03"
 	},
@@ -12113,6 +12130,23 @@
 		],
 		"lastVerifiedAt": "2026-08-25",
 		"source": "manual-wikidata-imdb-cache"
+	},
+	"Brian Duffield": {
+		"name": "Brian Duffield",
+		"birthDate": "1985-11-05",
+		"birthYear": 1985,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/brian-duffield-nm3929259.jpg",
+		"imdbId": "nm3929259",
+		"imdbUrl": "https://www.imdb.com/name/nm3929259/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/sNFeU2PGn8FULqQcqf73sBiL34i.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q63940510",
+			"https://www.imdb.com/name/nm3929259/",
+			"https://www.themoviedb.org/person/1295292-brian-duffield"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Brian Fee": {
 		"name": "Brian Fee",
@@ -19852,29 +19886,6 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1961-11-14"
 	},
-	"David Wark Griffith": {
-		"name": "David Wark Griffith",
-		"aliases": [
-			"D.W. Griffith",
-			"D. W. Griffith"
-		],
-		"birthDate": "1875-01-22",
-		"birthYear": 1875,
-		"deathDate": "1948-07-23",
-		"deathYear": 1948,
-		"nationalityPrimary": "Estadounidense",
-		"image": "/people/d-w-griffith-nm0000428.jpg",
-		"imdbId": "nm0000428",
-		"imdbUrl": "https://www.imdb.com/name/nm0000428/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Wark%20Griffith%20portrait.jpg?width=1200",
-		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q51123",
-			"https://www.imdb.com/name/nm0000428/",
-			"https://www.themoviedb.org/person/100036-d-w-griffith"
-		],
-		"lastVerifiedAt": "2026-10-10",
-		"source": "wikidata-imdb-cache"
-	},
 	"Da'Vine Joy Randolph": {
 		"name": "Da'Vine Joy Randolph",
 		"birthYear": 1986,
@@ -22894,6 +22905,29 @@
 		],
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"David Wark Griffith": {
+		"name": "David Wark Griffith",
+		"aliases": [
+			"D.W. Griffith",
+			"D. W. Griffith"
+		],
+		"birthDate": "1875-01-22",
+		"birthYear": 1875,
+		"deathDate": "1948-07-23",
+		"deathYear": 1948,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/d-w-griffith-nm0000428.jpg",
+		"imdbId": "nm0000428",
+		"imdbUrl": "https://www.imdb.com/name/nm0000428/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Wark%20Griffith%20portrait.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q51123",
+			"https://www.imdb.com/name/nm0000428/",
+			"https://www.themoviedb.org/person/100036-d-w-griffith"
+		],
+		"lastVerifiedAt": "2026-10-10",
+		"source": "wikidata-imdb-cache"
 	},
 	"David Warner": {
 		"name": "David Warner",
@@ -28761,6 +28795,23 @@
 			"https://www.themoviedb.org/person/7036-eric-stoltz"
 		],
 		"lastVerifiedAt": "2026-08-23",
+		"source": "wikidata-imdb-cache"
+	},
+	"Éric Toledano": {
+		"name": "Éric Toledano",
+		"birthDate": "1971-07-03",
+		"birthYear": 1971,
+		"nationalityPrimary": "Francés",
+		"image": "/people/eric-toledano-nm0865918.jpg",
+		"imdbId": "nm0865918",
+		"imdbUrl": "https://www.imdb.com/name/nm0865918/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Toledano%20d%C3%A9jeuner%20C%C3%A9sar%202018.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q2778106",
+			"https://www.imdb.com/name/nm0865918/",
+			"https://www.themoviedb.org/person/84425-eric-toledano"
+		],
+		"lastVerifiedAt": "2026-10-15",
 		"source": "wikidata-imdb-cache"
 	},
 	"Eric Tsang Chi-Wai": {
@@ -34956,6 +35007,23 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Gregg Araki": {
+		"name": "Gregg Araki",
+		"birthDate": "1959-12-17",
+		"birthYear": 1959,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/gregg-araki-nm0000777.jpg",
+		"imdbId": "nm0000777",
+		"imdbUrl": "https://www.imdb.com/name/nm0000777/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gregg%20Araki%20-%20Mysterious%20Skin.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q708899",
+			"https://www.imdb.com/name/nm0000777/",
+			"https://www.themoviedb.org/person/19224-gregg-araki"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "wikidata-imdb-cache"
+	},
 	"Grégoire Colin": {
 		"name": "Grégoire Colin",
 		"birthDate": "1975-07-27",
@@ -35115,7 +35183,7 @@
 			"https://www.imdb.com/name/nm2336966/",
 			"https://www.themoviedb.org/person/1260481-greta-lee"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-10-15",
 		"source": "wikidata-imdb-cache",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q19517962",
@@ -44071,13 +44139,13 @@
 		"image": "/people/jennifer-lawrence-nm2225369.jpg",
 		"imdbId": "nm2225369",
 		"imdbUrl": "https://www.imdb.com/name/nm2225369/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jennifer%20Lawrence%2C%20Cannes%20Film%20Festival%202025.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jennifer%20Lawrence%2C%20Cannes%20Film%20Festival%202025.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q189490",
 			"https://www.imdb.com/name/nm2225369/",
 			"https://www.themoviedb.org/person/72129-jennifer-lawrence"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-10-15",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1990-08-15",
 		"sex": "femenino",
@@ -49793,13 +49861,13 @@
 		"image": "/people/josh-hutcherson-nm1242688.jpg",
 		"imdbId": "nm1242688",
 		"imdbUrl": "https://www.imdb.com/name/nm1242688/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Hutcherson%20by%20Gage%20Skidmore%202.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Hutcherson%20by%20Gage%20Skidmore%202.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q217004",
 			"https://www.imdb.com/name/nm1242688/",
 			"https://www.themoviedb.org/person/27972-josh-hutcherson"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-10-15",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1992-10-12"
 	},
@@ -55197,6 +55265,22 @@
 		],
 		"lastVerifiedAt": "2026-07-31",
 		"source": "wikidata-imdb-cache"
+	},
+	"Kitao Sakurai": {
+		"name": "Kitao Sakurai",
+		"birthDate": "1983",
+		"birthYear": 1983,
+		"image": "/people/kitao-sakurai-nm0757318.jpg",
+		"imdbId": "nm0757318",
+		"imdbUrl": "https://www.imdb.com/name/nm0757318/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/9uaITTRb3OOdkV9ujcUTd9f9cp7.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q63546532",
+			"https://www.imdb.com/name/nm0757318/",
+			"https://www.themoviedb.org/person/922344-kitao-sakurai"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Kitty Green": {
 		"name": "Kitty Green",
@@ -72004,6 +72088,23 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Noah Centineo": {
+		"name": "Noah Centineo",
+		"birthDate": "1996-05-09",
+		"birthYear": 1996,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/noah-centineo-nm3170207.jpg",
+		"imdbId": "nm3170207",
+		"imdbUrl": "https://www.imdb.com/name/nm3170207/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Noah%20Centineo%20by%20Gage%20Skidmore.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q3877574",
+			"https://www.imdb.com/name/nm3170207/",
+			"https://www.themoviedb.org/person/1253353-noah-centineo"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "wikidata-imdb-cache"
+	},
 	"Noah Emmerich": {
 		"name": "Noah Emmerich",
 		"birthDate": "1965-02-27",
@@ -72932,6 +73033,23 @@
 			"https://www.imdb.com/name/nm0553648/"
 		],
 		"lastVerifiedAt": "2026-08-25",
+		"source": "wikidata-imdb-cache"
+	},
+	"Olivier Nakache": {
+		"name": "Olivier Nakache",
+		"birthDate": "1973-04-15",
+		"birthYear": 1973,
+		"nationalityPrimary": "Francés",
+		"image": "/people/olivier-nakache-nm0619923.jpg",
+		"imdbId": "nm0619923",
+		"imdbUrl": "https://www.imdb.com/name/nm0619923/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Olivier%20Nakache%20d%C3%A9jeuner%20C%C3%A9sar%202018.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q74428",
+			"https://www.imdb.com/name/nm0619923/",
+			"https://www.themoviedb.org/person/84426-olivier-nakache"
+		],
+		"lastVerifiedAt": "2026-10-15",
 		"source": "wikidata-imdb-cache"
 	},
 	"Olivier Rabourdin": {
@@ -91032,13 +91150,13 @@
 		"image": "/people/tim-allen-nm0000741.jpg",
 		"imdbId": "nm0000741",
 		"imdbUrl": "https://www.imdb.com/name/nm0000741/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim%20Allen%202012.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim%20Allen%202012.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q208408",
 			"https://www.imdb.com/name/nm0000741/",
 			"https://www.themoviedb.org/person/12898-tim-allen"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-10-15",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1953-06-13",
 		"sex": "masculino",
@@ -94081,6 +94199,23 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1930-08-23"
+	},
+	"Verena Altenberger": {
+		"name": "Verena Altenberger",
+		"birthDate": "1987-11-11",
+		"birthYear": 1987,
+		"nationalityPrimary": "Austriaco",
+		"image": "/people/verena-altenberger-nm5019500.jpg",
+		"imdbId": "nm5019500",
+		"imdbUrl": "https://www.imdb.com/name/nm5019500/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Verena%20Altenberger%20Berlinale%202017.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q25354295",
+			"https://www.imdb.com/name/nm5019500/",
+			"https://www.themoviedb.org/person/1497342-verena-altenberger"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "wikidata-imdb-cache"
 	},
 	"Verna Bloom": {
 		"name": "Verna Bloom",
@@ -98027,5 +98162,66 @@
 		],
 		"lastVerifiedAt": "2026-10-01",
 		"source": "wikidata-imdb-cache"
+	},
+	"Verena Fels": {
+		"name": "Verena Fels",
+		"image": "/people/verena-fels-nm2746566.jpg",
+		"remoteImageUrl": "https://nureintag.de/img/verenafels.jpg",
+		"referenceUrls": [
+			"https://nureintag.de/",
+			"https://felsfilm.com/",
+			"https://www.imdb.com/name/nm2746566/"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "official-portrait-verified",
+		"imdbId": "nm2746566",
+		"imdbUrl": "https://www.imdb.com/name/nm2746566/"
+	},
+	"Lilian Jane Gartner": {
+		"name": "Lilian Jane Gartner",
+		"image": "/people/lilian-jane-gartner.jpg",
+		"remoteImageUrl": "https://imgproxy.filmmakers.eu/wPVqujBSYzhoQ-gc2C-TSVq5vmzcid9MTTsoTeoixDA/rt:fill/el:1/c:8736:8736:nowe:0:0/w:500/h:500/g:no/czM6Ly9maWxtbWFr/ZXJzLWV1LXdlc3Qt/MS9wcm9kdWN0aW9u/L2ZkMTI3Y2JiLWU3/OTYtNDY2Mi1hMzgy/LTQ4OTk1MDc3MzZm/Ny5qcGc.jpg",
+		"referenceUrls": [
+			"https://austrian-actors.filmmakers.eu/en/actors/lilian-jane-gartner",
+			"https://filminstitut.at/en/movies/monster-mia"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "official-portrait-verified",
+		"aliases": [
+			"Lilian Gartner"
+		]
+	},
+	"Miguel de Zuviría": {
+		"name": "Miguel de Zuviría",
+		"image": "/people/miguel-de-zuviria.jpg",
+		"remoteImageUrl": "https://estranhosencontros.com/programacao/competicao-internacional-longas/lo-que-trajo-la-tormenta/realizador.webp",
+		"referenceUrls": [
+			"https://estranhosencontros.com/fr/programacao/competicao-internacional-longas/lo-que-trajo-la-tormenta",
+			"https://bafici.org/pelicula/lo-que-trajo-la-tormenta/"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "source-portrait-verified"
+	},
+	"Carolina Saade": {
+		"name": "Carolina Saade",
+		"image": "/people/carolina-saade.jpg",
+		"remoteImageUrl": "https://img.cinenacional.com/insecure/rs%3Afill%3A1920%3A%3A1/g%3Asm/q%3A78/plain/local%3A%2F%2F%2Fcinenacional%2Fpeople%2F190031%2Fgcdki1uuvbzglwrjl73u.jpg",
+		"referenceUrls": [
+			"https://cinenacional.com/persona/carolina-saade",
+			"https://alternativateatral.com.ar/persona111490-carolina-saade"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "source-portrait-verified"
+	},
+	"Irune Porcel": {
+		"name": "Irune Porcel",
+		"image": "/people/irune-porcel.jpg",
+		"remoteImageUrl": "https://img.cinenacional.com/insecure/rs%3Afill%3A1920%3A%3A1/g%3Asm/q%3A78/plain/local%3A%2F%2F%2Fcinenacional%2Fpeople%2F200407%2Fportrait.jpg",
+		"referenceUrls": [
+			"https://cinenacional.com/persona/irune-porcel",
+			"https://cinenacional.com/pelicula/lo-que-trajo-la-tormenta-2025"
+		],
+		"lastVerifiedAt": "2026-10-15",
+		"source": "source-portrait-verified"
 	}
 }

@@ -1,0 +1,143 @@
+[
+  {
+    "slug": "toy-story-5-2026",
+    "file": "src/data/movies/toy-story-5-2026.json",
+    "title": "Toy Story 5",
+    "before": [
+      "Disney Plus",
+      "Cine"
+    ],
+    "after": [
+      "Disney Plus"
+    ],
+    "scorePreserved": 8,
+    "type": "FLATRATE",
+    "url": "https://www.justwatch.com/ar/pelicula/toy-story-5"
+  },
+  {
+    "slug": "canelones-2026",
+    "file": "src/data/movies/canelones-2026.json",
+    "title": "Canelones",
+    "before": [
+      "Cine"
+    ],
+    "after": [
+      "Flow"
+    ],
+    "scorePreserved": 6,
+    "type": "FLATRATE",
+    "url": "https://senalnews.com/es/digital/flow-estrena-en-exclusiva-canelones-la-nueva-pelicula-de-orsai-audiovisuales/news%40senalnews.com"
+  },
+  {
+    "slug": "el-heladero-2026",
+    "file": "src/data/movies/el-heladero-2026.json",
+    "title": "El heladero",
+    "before": [
+      "Cine"
+    ],
+    "after": [
+      "Otras plataformas"
+    ],
+    "scorePreserved": 5,
+    "type": "Sin oferta AR verificada",
+    "url": "https://www.justwatch.com/ar/pelicula/ice-cream-man"
+  },
+  {
+    "slug": "hechizo-de-amor-la-magia-continua-2026",
+    "file": "src/data/movies/hechizo-de-amor-la-magia-continua-2026.json",
+    "title": "Hechizo de Amor: La magia continúa",
+    "before": [
+      "Cine"
+    ],
+    "after": [
+      "Otras plataformas"
+    ],
+    "scorePreserved": 8,
+    "type": "Sin oferta AR verificada; Showcase sin funciones",
+    "url": "https://api.voyalcine.net/films/6041/tree/showcase"
+  },
+  {
+    "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+    "file": "src/data/movies/puella-magi-madoka-magica-walpurgisnacht-rising-2026.json",
+    "title": "Puella Magi Madoka Magica: Walpurgisnacht Rising",
+    "before": [
+      "Cine"
+    ],
+    "after": [
+      "Otras plataformas"
+    ],
+    "scorePreserved": 8,
+    "type": "Sin oferta AR verificada; sin funciones vigentes comprobables",
+    "url": "https://www.justwatch.com/ar/pelicula/puella-magi-madoka-magica-walpurgisnacht-rising"
+  },
+  {
+    "slug": "una-pelicula-de-parque-chas-2025",
+    "file": "src/data/movies/una-pelicula-de-parque-chas-2025.json",
+    "title": "Una película de Parque Chas",
+    "before": [
+      "Cine"
+    ],
+    "after": [
+      "Otras plataformas"
+    ],
+    "scorePreserved": 6,
+    "type": "Funciones 4 y 11/10 finalizadas; sin oferta AR verificada",
+    "url": "https://www.tiempoar.com.ar/ta_article/una-pelicula-de-parque-chas/"
+  },
+  {
+    "slug": "cuentos-del-jardin-magico-2025",
+    "file": "src/data/movies/cuentos-del-jardin-magico-2025.json",
+    "title": "Cuentos del jardín mágico",
+    "before": [
+      "Otras plataformas"
+    ],
+    "after": [
+      "Cine"
+    ],
+    "scorePreserved": 7,
+    "type": "Cartelera AR",
+    "url": "https://m.cinesargentinos.com.ar/cartelera/"
+  },
+  {
+    "slug": "el-ultimo-gran-golpe-2026",
+    "file": "src/data/movies/el-ultimo-gran-golpe-2026.json",
+    "title": "El último gran golpe",
+    "before": [
+      "Otras plataformas"
+    ],
+    "after": [
+      "Cine"
+    ],
+    "scorePreserved": 5,
+    "type": "Cartelera AR",
+    "url": "https://m.cinesargentinos.com.ar/cartelera/"
+  },
+  {
+    "slug": "relajadas-y-muy-peligrosas-2026",
+    "file": "src/data/movies/relajadas-y-muy-peligrosas-2026.json",
+    "title": "Relajadas y muy peligrosas",
+    "before": [
+      "Otras plataformas"
+    ],
+    "after": [
+      "Cine"
+    ],
+    "scorePreserved": 7,
+    "type": "Cartelera AR",
+    "url": "https://m.cinesargentinos.com.ar/cartelera/"
+  },
+  {
+    "slug": "su-propio-infierno-2026",
+    "file": "src/data/movies/su-propio-infierno-2026.json",
+    "title": "Su propio infierno",
+    "before": [
+      "Otras plataformas"
+    ],
+    "after": [
+      "Cine"
+    ],
+    "scorePreserved": 4,
+    "type": "Cartelera AR",
+    "url": "https://m.cinesargentinos.com.ar/cartelera/"
+  }
+]

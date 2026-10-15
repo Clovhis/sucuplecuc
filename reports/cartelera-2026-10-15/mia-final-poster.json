@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-10-15T11:35:11.235Z",
+  "fallback": {
+    "path": "assets/posters/poster-fallback.webp",
+    "bytes": 31440
+  },
+  "summary": {
+    "total": 1,
+    "migrated": 1,
+    "alreadyLocal": 0,
+    "fallback": 0
+  },
+  "results": [
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\escuela-de-monstruos-2026.json",
+      "slug": "escuela-de-monstruos-2026",
+      "status": "migrated",
+      "outputPath": "assets/posters/2026/escuela-de-monstruos-2026.webp",
+      "bytes": 36478,
+      "quality": 84,
+      "sourceUrl": "https://cineamo-tmdb.b-cdn.net/t/p/w780/wgYZL3ltYDn5Bhi7XFjTOpfQIln.jpg"
+    }
+  ]
+}

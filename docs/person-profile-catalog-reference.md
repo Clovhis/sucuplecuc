@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-11. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-15. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4282
+Total de vínculos de películas del catálogo: 4287
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -365,7 +365,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jennifer Connelly | `jennifer-connelly` | /personas/jennifer-connelly/ | Actriz | 6 | 7 |
 | Jennifer Garner | `jennifer-garner` | /personas/jennifer-garner/ | Actriz | 4 | 7 |
 | Jennifer Jason Leigh | `jennifer-jason-leigh` | /personas/jennifer-jason-leigh/ | Actriz | 7 | 3 |
-| Jennifer Lawrence | `jennifer-lawrence` | /personas/jennifer-lawrence/ | Actriz | 5 | 6 |
+| Jennifer Lawrence | `jennifer-lawrence` | /personas/jennifer-lawrence/ | Actriz | 9 | 6 |
 | Jennifer Tilly | `jennifer-tilly` | /personas/jennifer-tilly/ | Actriz | 4 | 7 |
 | Jeremy Irons | `jeremy-irons` | /personas/jeremy-irons/ | Actor | 5 | 5 |
 | Jeremy Renner | `jeremy-renner` | /personas/jeremy-renner/ | Actor | 3 | 7 |
@@ -411,7 +411,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Joseph Gordon-Levitt | `joseph-gordon-levitt` | /personas/joseph-gordon-levitt/ | Actor | 6 | 7 |
 | Joseph Kosinski | `joseph-kosinski` | /personas/joseph-kosinski/ | Director | 3 | 7 |
 | Joseph Quinn | `joseph-quinn` | /personas/joseph-quinn/ | Actor | 1 | 3 |
-| Josh Brolin | `josh-brolin` | /personas/josh-brolin/ | Actor | 14 | 7 |
+| Josh Brolin | `josh-brolin` | /personas/josh-brolin/ | Actor | 15 | 7 |
 | Josh O'Connor | `josh-o-connor` | /personas/josh-o-connor/ | Actor | 2 | 6 |
 | Juan Barberini | `juan-barberini` | /personas/juan-barberini/ | Actor / Guionista | 1 | 5 |
 | Juan Cabral | `juan-cabral` | /personas/juan-cabral/ | Director / Guionista | 2 | 6 |

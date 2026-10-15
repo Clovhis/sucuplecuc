@@ -1,0 +1,456 @@
+[
+  {
+    "name": "desktop-chromium",
+    "routes": [
+      {
+        "slug": "street-fighter-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/street-fighter-2026.webp"
+        }
+      },
+      {
+        "slug": "quiero-tu-sexo-2026",
+        "poster": {
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/quiero-tu-sexo-2026.webp"
+        }
+      },
+      {
+        "slug": "la-caida-de-la-ballena-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/la-caida-de-la-ballena-2026.webp"
+        }
+      },
+      {
+        "slug": "tiempos-de-ilusion-2026",
+        "poster": {
+          "width": 480,
+          "height": 654,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/tiempos-de-ilusion-2026.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-2012",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2012/los-juegos-del-hambre-2012.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-en-llamas-2013",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2013/los-juegos-del-hambre-en-llamas-2013.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2014/los-juegos-del-hambre-sinsajo-parte-1-2014.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2015/los-juegos-del-hambre-sinsajo-parte-2-2015.webp"
+        }
+      },
+      {
+        "slug": "escuela-de-monstruos-2026",
+        "poster": {
+          "width": 480,
+          "height": 679,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/escuela-de-monstruos-2026.webp"
+        }
+      },
+      {
+        "slug": "lo-que-trajo-la-tormenta-2025",
+        "poster": {
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43210/assets/posters/2025/lo-que-trajo-la-tormenta-2025.webp"
+        }
+      },
+      {
+        "slug": "toy-story-5-2026",
+        "poster": {
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/toy-story-5-2026.webp"
+        }
+      },
+      {
+        "slug": "canelones-2026",
+        "poster": {
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/canelones-2026.webp"
+        }
+      },
+      {
+        "slug": "el-heladero-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/el-heladero-2026.webp"
+        }
+      },
+      {
+        "slug": "hechizo-de-amor-la-magia-continua-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/hechizo-de-amor-la-magia-continua-2026.webp"
+        }
+      },
+      {
+        "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+        "poster": {
+          "width": 480,
+          "height": 678,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/puella-magi-madoka-magica-walpurgisnacht-rising-2026.webp"
+        }
+      },
+      {
+        "slug": "una-pelicula-de-parque-chas-2025",
+        "poster": {
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43210/assets/posters/2025/una-pelicula-de-parque-chas-2025.webp"
+        }
+      },
+      {
+        "slug": "cuentos-del-jardin-magico-2025",
+        "poster": {
+          "width": 480,
+          "height": 654,
+          "src": "http://127.0.0.1:43210/assets/posters/2025/cuentos-del-jardin-magico-2025.webp"
+        }
+      },
+      {
+        "slug": "el-ultimo-gran-golpe-2026",
+        "poster": {
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/el-ultimo-gran-golpe-2026.webp"
+        }
+      },
+      {
+        "slug": "relajadas-y-muy-peligrosas-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/relajadas-y-muy-peligrosas-2026.webp"
+        }
+      },
+      {
+        "slug": "su-propio-infierno-2026",
+        "poster": {
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/su-propio-infierno-2026.webp"
+        }
+      }
+    ],
+    "carousel": [
+      "escuela-de-monstruos-2026",
+      "la-caida-de-la-ballena-2026",
+      "lo-que-trajo-la-tormenta-2025",
+      "los-juegos-del-hambre-2012",
+      "los-juegos-del-hambre-en-llamas-2013",
+      "los-juegos-del-hambre-sinsajo-parte-1-2014",
+      "los-juegos-del-hambre-sinsajo-parte-2-2015",
+      "quiero-tu-sexo-2026",
+      "street-fighter-2026",
+      "tiempos-de-ilusion-2026",
+      "annemarie-2026",
+      "a-cualquier-precio-2026",
+      "cars-2006",
+      "el-tren-fluvial-2026",
+      "hope-el-primer-impacto-2026",
+      "la-casa-2025",
+      "la-vida-es-asi-2025",
+      "lo-dejamos-aca-2026",
+      "madre-siniestra-2026",
+      "cuentos-del-jardin-magico-2025",
+      "digger-2026",
+      "escondida-en-mi-cabeza-2026",
+      "guardianes-del-museo-2-2026",
+      "hangar-rojo-2026",
+      "relajadas-y-muy-peligrosas-2026",
+      "retrato-de-un-pianista-2025",
+      "verity-la-sombra-de-un-engano-2026",
+      "vertigo-2-punto-muerto-2026",
+      "linkin-park-unshatter-2026",
+      "bajo-tus-pies-2025",
+      "el-corazon-de-la-bestia-2026",
+      "el-ultimo-gran-golpe-2026",
+      "encantador-2025",
+      "la-isla-olvidada-2026",
+      "su-propio-infierno-2026",
+      "desobediente-2026",
+      "resident-evil-noche-cero-2026",
+      "tres-adioses-2025",
+      "romeo-y-ofelia-2024",
+      "pepita-la-pistolera-2026",
+      "una-quinta-en-portugal-2025",
+      "coyote-vs-acme-2026",
+      "la-noche-del-demonio-estan-entre-nosotros-2026",
+      "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+      "paw-patrol-la-dino-pelicula-2026",
+      "yo-narciso-2026",
+      "la-invitacion-2026",
+      "spider-man-brand-new-day-2026",
+      "la-odisea-2026",
+      "avengers-endgame-2019"
+    ],
+    "filters": {
+      "guerra": {
+        "count": 61,
+        "newTitlesExcluded": 10
+      },
+      "musical": {
+        "count": 109,
+        "newTitlesExcluded": 10
+      }
+    }
+  },
+  {
+    "name": "mobile-webkit",
+    "routes": [
+      {
+        "slug": "street-fighter-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/street-fighter-2026.webp"
+        }
+      },
+      {
+        "slug": "quiero-tu-sexo-2026",
+        "poster": {
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/quiero-tu-sexo-2026.webp"
+        }
+      },
+      {
+        "slug": "la-caida-de-la-ballena-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/la-caida-de-la-ballena-2026.webp"
+        }
+      },
+      {
+        "slug": "tiempos-de-ilusion-2026",
+        "poster": {
+          "width": 480,
+          "height": 654,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/tiempos-de-ilusion-2026.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-2012",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2012/los-juegos-del-hambre-2012.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-en-llamas-2013",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2013/los-juegos-del-hambre-en-llamas-2013.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2014/los-juegos-del-hambre-sinsajo-parte-1-2014.webp"
+        }
+      },
+      {
+        "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2015/los-juegos-del-hambre-sinsajo-parte-2-2015.webp"
+        }
+      },
+      {
+        "slug": "escuela-de-monstruos-2026",
+        "poster": {
+          "width": 480,
+          "height": 679,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/escuela-de-monstruos-2026.webp"
+        }
+      },
+      {
+        "slug": "lo-que-trajo-la-tormenta-2025",
+        "poster": {
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43210/assets/posters/2025/lo-que-trajo-la-tormenta-2025.webp"
+        }
+      },
+      {
+        "slug": "toy-story-5-2026",
+        "poster": {
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/toy-story-5-2026.webp"
+        }
+      },
+      {
+        "slug": "canelones-2026",
+        "poster": {
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/canelones-2026.webp"
+        }
+      },
+      {
+        "slug": "el-heladero-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/el-heladero-2026.webp"
+        }
+      },
+      {
+        "slug": "hechizo-de-amor-la-magia-continua-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/hechizo-de-amor-la-magia-continua-2026.webp"
+        }
+      },
+      {
+        "slug": "puella-magi-madoka-magica-walpurgisnacht-rising-2026",
+        "poster": {
+          "width": 480,
+          "height": 678,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/puella-magi-madoka-magica-walpurgisnacht-rising-2026.webp"
+        }
+      },
+      {
+        "slug": "una-pelicula-de-parque-chas-2025",
+        "poster": {
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43210/assets/posters/2025/una-pelicula-de-parque-chas-2025.webp"
+        }
+      },
+      {
+        "slug": "cuentos-del-jardin-magico-2025",
+        "poster": {
+          "width": 480,
+          "height": 654,
+          "src": "http://127.0.0.1:43210/assets/posters/2025/cuentos-del-jardin-magico-2025.webp"
+        }
+      },
+      {
+        "slug": "el-ultimo-gran-golpe-2026",
+        "poster": {
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/el-ultimo-gran-golpe-2026.webp"
+        }
+      },
+      {
+        "slug": "relajadas-y-muy-peligrosas-2026",
+        "poster": {
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/relajadas-y-muy-peligrosas-2026.webp"
+        }
+      },
+      {
+        "slug": "su-propio-infierno-2026",
+        "poster": {
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43210/assets/posters/2026/su-propio-infierno-2026.webp"
+        }
+      }
+    ],
+    "carousel": [
+      "escuela-de-monstruos-2026",
+      "la-caida-de-la-ballena-2026",
+      "lo-que-trajo-la-tormenta-2025",
+      "los-juegos-del-hambre-2012",
+      "los-juegos-del-hambre-en-llamas-2013",
+      "los-juegos-del-hambre-sinsajo-parte-1-2014",
+      "los-juegos-del-hambre-sinsajo-parte-2-2015",
+      "quiero-tu-sexo-2026",
+      "street-fighter-2026",
+      "tiempos-de-ilusion-2026",
+      "annemarie-2026",
+      "a-cualquier-precio-2026",
+      "cars-2006",
+      "el-tren-fluvial-2026",
+      "hope-el-primer-impacto-2026",
+      "la-casa-2025",
+      "la-vida-es-asi-2025",
+      "lo-dejamos-aca-2026",
+      "madre-siniestra-2026",
+      "cuentos-del-jardin-magico-2025",
+      "digger-2026",
+      "escondida-en-mi-cabeza-2026",
+      "guardianes-del-museo-2-2026",
+      "hangar-rojo-2026",
+      "relajadas-y-muy-peligrosas-2026",
+      "retrato-de-un-pianista-2025",
+      "verity-la-sombra-de-un-engano-2026",
+      "vertigo-2-punto-muerto-2026",
+      "linkin-park-unshatter-2026",
+      "bajo-tus-pies-2025",
+      "el-corazon-de-la-bestia-2026",
+      "el-ultimo-gran-golpe-2026",
+      "encantador-2025",
+      "la-isla-olvidada-2026",
+      "su-propio-infierno-2026",
+      "desobediente-2026",
+      "resident-evil-noche-cero-2026",
+      "tres-adioses-2025",
+      "romeo-y-ofelia-2024",
+      "pepita-la-pistolera-2026",
+      "una-quinta-en-portugal-2025",
+      "coyote-vs-acme-2026",
+      "la-noche-del-demonio-estan-entre-nosotros-2026",
+      "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+      "paw-patrol-la-dino-pelicula-2026",
+      "yo-narciso-2026",
+      "la-invitacion-2026",
+      "spider-man-brand-new-day-2026",
+      "la-odisea-2026",
+      "avengers-endgame-2019"
+    ],
+    "filters": {
+      "guerra": {
+        "count": 61,
+        "newTitlesExcluded": 10
+      },
+      "musical": {
+        "count": 109,
+        "newTitlesExcluded": 10
+      }
+    }
+  }
+]

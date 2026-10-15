@@ -2641,7 +2641,11 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "jennifer-lawrence": [
     "dont-look-up-2021",
     "x-men-apocalypse-2016",
+    "los-juegos-del-hambre-sinsajo-parte-2-2015",
+    "los-juegos-del-hambre-sinsajo-parte-1-2014",
     "escandalo-americano-2013",
+    "los-juegos-del-hambre-en-llamas-2013",
+    "los-juegos-del-hambre-2012",
     "el-castor-2011",
     "x-men-first-class-2011"
   ],
@@ -3022,6 +3026,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "a-quiet-place-day-one-2024"
   ],
   "josh-brolin": [
+    "la-caida-de-la-ballena-2026",
     "la-guerra-de-los-ultimos-2026",
     "momentos-decisivos-generacion-11-s-2026",
     "weapons-2025",
