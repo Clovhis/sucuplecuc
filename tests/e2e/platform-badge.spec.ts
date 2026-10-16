@@ -1,14 +1,16 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 
-const movieTitle = 'Relajadas y muy peligrosas';
-const moviePath = '/peliculas/relajadas-y-muy-peligrosas-2026/';
-
-test('Otras plataformas se apila y no invade las etiquetas de la tarjeta', async ({ page }) => {
+// Availability changes: exercise a currently rendered card instead of pinning a title.
+async function getOtherPlatformsCard(page: Page) {
 	await page.goto('/?plataforma=otras%20plataformas', { waitUntil: 'load' });
 	await page.evaluate(() => document.fonts.ready);
-
-	const card = page.locator(`[data-movie-card][data-movie-title="${movieTitle}"]`);
+	const card = page.locator('[data-movie-card]').filter({ has: page.locator('.platform-chip--other-platforms') }).first();
 	await expect(card).toBeVisible();
+	return card;
+}
+
+test('Otras plataformas se apila y no invade las etiquetas de la tarjeta', async ({ page }) => {
+	const card = await getOtherPlatformsCard(page);
 
 	const badge = card.locator('.movie-card__platform-mark .platform-chip--other-platforms');
 	await expect(badge).toBeVisible();
@@ -34,12 +36,17 @@ test('Otras plataformas se apila y no invade las etiquetas de la tarjeta', async
 });
 
 test('Otras plataformas conserva el apilado en la ficha de película', async ({ page }) => {
-	await page.goto(moviePath, { waitUntil: 'domcontentloaded' });
+	const card = await getOtherPlatformsCard(page);
+	const movieTitle = await card.getAttribute('data-movie-title');
+	const moviePath = await card.locator('.movie-card__link').getAttribute('href');
+	expect(movieTitle).toBeTruthy();
+	expect(moviePath).toBeTruthy();
+	await page.goto(moviePath!, { waitUntil: 'domcontentloaded' });
 
 	const meta = page.locator('.movie-detail__watch');
 	const badge = meta.locator('.platform-chip--other-platforms');
 
-	await expect(page.getByRole('heading', { name: movieTitle, exact: true })).toBeVisible();
+	await expect(page.getByRole('heading', { name: movieTitle!, exact: true })).toBeVisible();
 	await expect(badge).toBeVisible();
 	await expect(badge.locator('.platform-label--stacked > span')).toHaveText(['Otras', 'plataformas']);
 
