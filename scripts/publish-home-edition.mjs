@@ -11,7 +11,12 @@ if (changed.length === 0) { console.log('This edition is already current.'); pro
 git('config', 'user.name', 'github-actions[bot]');
 git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com');
 git('add', '--', ...allowed);
-git('commit', '-m', allowed.includes('src/data/cinemaNews.generated.json') ? 'chore(home): refresh daily cinema news' : 'chore(home): refresh weekly recommendations and trailers');
+const editionNames = {
+	'src/data/cinemaNews.generated.json': 'daily cinema news',
+	'src/data/weeklyRecommendations.generated.ts': 'weekly recommendations',
+	'src/data/upcomingReleases.generated.ts': 'daily upcoming releases',
+};
+git('commit', '-m', `chore(home): refresh ${allowed.map((file) => editionNames[file]).join(' and ')}`);
 // Every publisher serializes this step. Rebase preserves movie loads and other
 // editions published while the feeds and trailers were being collected.
 git('fetch', 'origin', 'main');

@@ -14,7 +14,7 @@ Las siguientes secciones del home tienen una edición propia: **su fuente públi
 | Recomendadas | `src/data/weeklyRecommendations.generated.ts` | `npm run refresh:weekly-recommendations` | Usa `WEEKLY_RECOMMENDATION_CARDS`, con título, póster, plataforma y score congelados |
 | Próximos estrenos | `src/data/upcomingReleases.generated.ts` | `npm run update-upcoming-releases` | Usa la edición generada, sin añadir películas del catálogo ni filtrar por fecha en cada build |
 
-La fecha del próximo estreno permanece visible durante la edición aunque llegue su estreno: la lista se renueva al siguiente ciclo semanal. Esto evita que una carga normal retire o sustituya videos a mitad de semana. El autoplay, mute, selección y navegación siguen en `src/scripts/upcoming-suggestions.ts`; Actions actualiza el contenido, no reproduce videos. No se puede garantizar contenido distinto cada semana si las fuentes no ofrecen nuevos estrenos o trailers.
+Próximos estrenos renueva su edición todos los días a la 01:00 de Argentina. El generador toma sólo fechas posteriores al día de ejecución en Argentina: los estrenos de hoy dejan de ser próximos al publicarse esa edición. Las cargas y los builds siguen leyendo el snapshot, sin retirarle videos ni sustituirlos por su cuenta. El autoplay, mute, selección y navegación siguen en `src/scripts/upcoming-suggestions.ts`; Actions actualiza el contenido, no reproduce videos. La selección puede repetirse si las fuentes no ofrecen nuevos estrenos o trailers; entre medianoche y la publicación diaria puede seguir visible la edición anterior.
 
 ## Workflows conservados
 
@@ -23,14 +23,15 @@ Todos los horarios son de Argentina, UTC-3. Los cron están escritos en UTC y no
 | Archivo | Nombre visible | Disparador |
 | --- | --- | --- |
 | `refresh-cinema-news.yml` | Radar de Cine diario (10:00 AR) | `0 13 * * *`, o manual |
-| `refresh-weekly-recommendations.yml` | Edicion semanal: recomendadas y trailers (domingo 01:00 AR) | `0 4 * * 0`, o manual |
-| `deploy.yml` | Publicar CinePosta en GitHub Pages | Push a `main`, manual o `workflow_run` exitoso de cualquiera de los dos actualizadores |
+| `refresh-weekly-recommendations.yml` | Recomendadas semanales (domingo 01:00 AR) | `0 4 * * 0`, o manual |
+| `refresh-upcoming-releases.yml` | Proximos estrenos diarios (01:00 AR) | `0 4 * * *`, o manual |
+| `deploy.yml` | Publicar CinePosta en GitHub Pages | Push a `main`, manual o `workflow_run` exitoso de cualquiera de los tres actualizadores |
 | `validate.yml` | Validar sitio: contenido, seguridad y navegadores | PR, lunes `30 5 * * 1`, o manual |
 | `publish-buffer-x.yml` | Publicar pelicula diaria en X (19:00 AR via Buffer) | `30 21 * * *`, o manual; activado por `BUFFER_X_AUTOPUBLISH_ENABLED` |
 
-Se eliminó `refresh-upcoming-releases.yml`: su responsabilidad pertenece al único workflow semanal. También se eliminó el cron diario de deploy, que reconstruía y consultaba el Radar fuera del horario pedido. Los nombres de `workflow_run` coinciden exactamente con los nuevos actualizadores. Los registros históricos de Actions pueden conservar nombres y fallos antiguos aunque ya no exista el archivo.
+`refresh-upcoming-releases.yml` es independiente del semanal para que una fecha que llega un jueves no permanezca hasta el domingo como próximo estreno. El deploy sigue sin cron propio: cada actualizador exitoso lo dispara mediante `workflow_run`. Los nombres de ese disparador coinciden exactamente con los tres actualizadores. Los registros históricos de Actions pueden conservar los nombres de la edición semanal combinada.
 
-El semanal lanza dos jobs paralelos: uno genera las seis recomendaciones y el otro obtiene los próximos estrenos. Cada uno entrega un artifact; el job final descarga ambos sobre `main`, valida y publica un único commit. Si cualquiera falla, no se publica una edición incompleta. Repetir una generación en la misma semana conserva la selección si no cambió el catálogo. No se hace una segunda selección al publicar. Las pruebas del publicador simulan una carga concurrente, verifican que el rebase la conserve y rechazan cambios fuera de los snapshots.
+El semanal genera las seis recomendaciones, valida y publica exclusivamente `weeklyRecommendations.generated.ts`. El diario de próximos estrenos consulta las fichas argentinas, valida y publica exclusivamente `upcomingReleases.generated.ts`. Un fallo de trailers conserva su edición anterior y no bloquea las recomendadas; lo mismo ocurre a la inversa. Repetir una generación de recomendadas en la misma semana conserva la selección si no cambió el catálogo. No se hace una segunda selección al publicar. Las pruebas del publicador simulan una carga concurrente, verifican que el rebase la conserve y rechazan cambios fuera del snapshot autorizado, incluida otra edición.
 
 Radar consulta **La Nación, Clarín, Página/12 y Ámbito**, además de las fuentes existentes **Infobae y Cines Argentinos**. Conserva el filtro de noticias cinematográficas, deduplica y publica hasta ocho historias, reservando una por fuente con noticias elegibles para que una fuente abundante no tape al resto. Clarín usa el feed mantenido de Espectáculos con filtro cinematográfico: su RSS específico de cine había quedado detenido en notas de 2025. El snapshot registra el resultado de cada fuente. Las peticiones tienen timeout y un reintento. Una fuente temporalmente caída conserva sus últimas noticias, con estado `preserved`; no se inventan noticias ni se borra la sección. Si todas fallan o no hay noticias, el generador falla antes de sobrescribir la edición. Las imágenes faltantes se intentan obtener desde el artículo del mismo medio.
 

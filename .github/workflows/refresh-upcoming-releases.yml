@@ -1,0 +1,41 @@
+name: 'Proximos estrenos diarios (01:00 AR)'
+
+on:
+  schedule:
+    # Daily 01:00 Argentina (UTC-3). Exclude films opening today.
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: upcoming-releases-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Generar y publicar proximos estrenos argentinos
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    concurrency:
+      group: publish-home-editions
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Consultar fechas y trailers de las fichas argentinas
+        run: npm run update-upcoming-releases
+      - name: Verificar ediciones y construir el sitio
+        run: npm run validate:content -- --astro-check
+      - name: Publicar exclusivamente los proximos estrenos
+        run: node scripts/publish-home-edition.mjs src/data/upcomingReleases.generated.ts

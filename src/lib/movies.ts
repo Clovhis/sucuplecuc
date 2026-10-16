@@ -754,7 +754,7 @@ export function getWeeklyMovieSuggestions(
 }
 
 export function getUpcomingMovieReleases(_referenceDate = new Date(), limit = 4): UpcomingMovieRelease[] {
-	// Dates and trailers are refreshed only by the weekly edition. No catalog
+	// Dates and trailers are refreshed only by their daily workflow. No catalog
 	// fallback or build-time filtering: a movie load must not alter this section.
 	return GENERATED_UPCOMING_RELEASES.slice(0, limit);
 }

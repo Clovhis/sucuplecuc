@@ -8,7 +8,8 @@ on:
   workflow_run:
     workflows:
       - Radar de Cine diario (10:00 AR)
-      - 'Edicion semanal: recomendadas y trailers (domingo 01:00 AR)'
+      - 'Recomendadas semanales (domingo 01:00 AR)'
+      - 'Proximos estrenos diarios (01:00 AR)'
     types:
       - completed
 

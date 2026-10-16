@@ -30,7 +30,7 @@
 ## Automatización
 
 - Los horarios son de Argentina (UTC-3). Radar corre todos los días a las 10:00 (`0 13 * * *`); consulta La Nación, Clarín, Página/12 y Ámbito, además de Infobae y Cines Argentinos.
-- Un único workflow semanal corre los domingos a la 01:00 (`0 4 * * 0`), después del sábado a la noche. Genera recomendadas y trailers en jobs paralelos; valida y publica ambos snapshots juntos. Si falla cualquiera, conserva la edición publicada.
+- Recomendadas tiene su workflow semanal los domingos a la 01:00 (`0 4 * * 0`), después del sábado a la noche. Próximos estrenos tiene un workflow independiente todos los días a la 01:00 (`0 4 * * *`), que excluye películas con fecha de estreno igual o anterior al día de ejecución en Argentina. Cada uno valida y publica sólo su snapshot; si falla, conserva su edición publicada.
 - `deploy.yml` sólo construye/publica el contenido versionado. Corre por push a `main`, manualmente o al finalizar exitosamente un actualizador. No consulta feeds, no regenera ediciones ni tiene un cron diario redundante.
 - `validate.yml` valida contenido, ediciones, pósters locales, seguridad y Chromium en cada PR y los lunes. La matriz completa de navegadores es manual (`full_e2e`); el audit completo de contenido se solicita con `full_content_audit`.
 - La publicación diaria en X se conserva: Actions agenda en Buffer a las 18:30 AR para publicar a las 19:00 AR; no modifica películas ni ediciones.

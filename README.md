@@ -261,12 +261,13 @@ Antes de aplicar cambios de base en producción:
 
 El sitio genera salida estática en `dist/`.
 
-El home usa tres ediciones versionadas e independientes de las cargas de películas. Radar se actualiza diariamente a las **10:00 de Argentina**. Un único Action semanal genera en paralelo recomendadas y trailers los **domingos a la 01:00 de Argentina**, los valida y publica juntos. El deploy lee esas ediciones sin consultar fuentes ni recalcularlas. Los cron pueden demorarse en GitHub.
+El home usa tres ediciones versionadas e independientes de las cargas de películas. Radar se actualiza diariamente a las **10:00 de Argentina**. Recomendadas se actualiza los **domingos a la 01:00 de Argentina**. Próximos estrenos tiene su propio Action **todos los días a la 01:00 de Argentina**, que retira de la próxima edición los títulos cuya fecha de estreno ya llegó. Cada Action valida y publica sólo su sección. El deploy lee esas ediciones sin consultar fuentes ni recalcularlas. Los cron pueden demorarse en GitHub.
 
 | Workflow | Responsabilidad | Horario AR |
 | --- | --- | --- |
 | `refresh-cinema-news.yml` | Consultar todos los medios y publicar la edición del Radar | Diario, 10:00 |
-| `refresh-weekly-recommendations.yml` | Generar recomendadas y próximos estrenos con trailers en paralelo | Domingo, 01:00 |
+| `refresh-weekly-recommendations.yml` | Generar y publicar las recomendadas | Domingo, 01:00 |
+| `refresh-upcoming-releases.yml` | Revisar fechas y publicar próximos estrenos con trailers | Diario, 01:00 |
 | `deploy.yml` | Construir y publicar el contenido versionado en Pages | Push a main / actualizador exitoso / manual |
 | `validate.yml` | Contenido, pósters, seguridad y navegador Chromium | PR / lunes / manual |
 | `publish-buffer-x.yml` | Agendar la película diaria en X por Buffer | 18:30, publicación 19:00 |

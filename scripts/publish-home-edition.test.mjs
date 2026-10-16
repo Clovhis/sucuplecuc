@@ -31,9 +31,28 @@ try {
 	git(first, 'fetch', 'origin', 'main');
 	assert.equal(git(first, 'show', `origin/main:${file}`), 'new edition');
 	assert.equal(git(first, 'show', 'origin/main:src/data/movies/incoming.json'), '{"title":"Incoming movie"}', 'Rebase must preserve incoming movie loads');
-	const published = git(updater, 'rev-parse', 'HEAD');
+	let published = git(updater, 'rev-parse', 'HEAD');
 	execFileSync(process.execPath, [script, file], { cwd: updater, stdio: ['ignore', 'pipe', 'pipe'] });
 	assert.equal(git(updater, 'rev-parse', 'HEAD'), published, 'An unchanged edition must not create another commit');
+	for (const [edition, label] of [
+		['src/data/weeklyRecommendations.generated.ts', 'weekly recommendations'],
+		['src/data/upcomingReleases.generated.ts', 'daily upcoming releases'],
+	]) {
+		await writeFile(path.join(updater, edition), `${label}\n`);
+		execFileSync(process.execPath, [script, edition], { cwd: updater, stdio: ['ignore', 'pipe', 'pipe'] });
+		assert.equal(git(updater, 'log', '-1', '--format=%s'), `chore(home): refresh ${label}`);
+		assert.equal(git(updater, 'diff-tree', '--no-commit-id', '--name-only', '-r', 'HEAD'), edition, 'Each publisher must commit only its edition');
+		assert.equal(git(updater, 'show', `HEAD:${file}`), 'new edition', 'Publishing another edition must preserve Radar');
+	}
+	assert.equal(git(updater, 'show', 'HEAD:src/data/weeklyRecommendations.generated.ts'), 'weekly recommendations', 'Refreshing trailers must preserve the weekly selection');
+	published = git(updater, 'rev-parse', 'HEAD');
+	const otherEdition = 'src/data/weeklyRecommendations.generated.ts';
+	await writeFile(path.join(updater, otherEdition), 'unexpected regeneration\n');
+	const mixed = spawnSync(process.execPath, [script, 'src/data/upcomingReleases.generated.ts'], { cwd: updater, encoding: 'utf8' });
+	assert.notEqual(mixed.status, 0, 'The trailers publisher must reject changes to recommendations');
+	assert.match(mixed.stderr, /outside its scope/);
+	assert.equal(git(updater, 'rev-parse', 'HEAD'), published);
+	await writeFile(path.join(updater, otherEdition), 'weekly recommendations\n');
 	await mkdir(path.join(updater, 'src/data/movies'), { recursive: true });
 	await writeFile(path.join(updater, 'src/data/movies/unauthorized.json'), '{}\n');
 	const blocked = spawnSync(process.execPath, [script, file], { cwd: updater, encoding: 'utf8' });

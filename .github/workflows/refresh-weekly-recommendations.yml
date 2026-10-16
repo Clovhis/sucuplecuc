@@ -1,4 +1,4 @@
-name: 'Edicion semanal: recomendadas y trailers (domingo 01:00 AR)'
+name: 'Recomendadas semanales (domingo 01:00 AR)'
 
 on:
   schedule:
@@ -14,54 +14,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  recommendations:
-    name: Generar recomendadas de la semana
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: main
-          persist-credentials: false
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run test:weekly-recommendations
-      - run: npm run refresh:weekly-recommendations
-      - uses: actions/upload-artifact@v4
-        with:
-          name: weekly-recommendations
-          path: src/data/weeklyRecommendations.generated.ts
-          if-no-files-found: error
-          retention-days: 2
-
-  trailers:
-    name: Generar proximos estrenos y trailers argentinos
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: main
-          persist-credentials: false
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run update-upcoming-releases
-      - uses: actions/upload-artifact@v4
-        with:
-          name: weekly-trailers
-          path: src/data/upcomingReleases.generated.ts
-          if-no-files-found: error
-          retention-days: 2
-
-  publish:
-    name: Validar y publicar ambas secciones juntas
-    needs: [recommendations, trailers]
+  refresh:
+    name: Generar y publicar recomendadas de la semana
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -79,15 +33,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - uses: actions/download-artifact@v4
-        with:
-          name: weekly-recommendations
-          path: src/data
-      - uses: actions/download-artifact@v4
-        with:
-          name: weekly-trailers
-          path: src/data
+      - run: npm run test:weekly-recommendations
+      - run: npm run refresh:weekly-recommendations
       - name: Verificar ediciones y construir el sitio
         run: npm run validate:content -- --astro-check
-      - name: Publicar exclusivamente la edicion semanal
-        run: node scripts/publish-home-edition.mjs src/data/weeklyRecommendations.generated.ts src/data/upcomingReleases.generated.ts
+      - name: Publicar exclusivamente las recomendadas
+        run: node scripts/publish-home-edition.mjs src/data/weeklyRecommendations.generated.ts
