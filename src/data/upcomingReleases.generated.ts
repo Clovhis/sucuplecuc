@@ -8,64 +8,8 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-12T23:50:41.548Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-16T02:09:46.088Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"title": "Street Fighter",
-		"releaseDate": "2026-10-15",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10217-street-fighter/",
-		"slug": "cines-argentinos-10217",
-		"videoUrl": "https://www.youtube.com/watch?v=Z_yVJ1PHHrA",
-		"thumbnailUrl": "https://i.ytimg.com/vi/Z_yVJ1PHHrA/hqdefault.jpg"
-	},
-	{
-		"title": "La caída de la ballena",
-		"releaseDate": "2026-10-15",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10626-la-caida-de-la-ballena/",
-		"slug": "cines-argentinos-10626",
-		"videoUrl": "https://www.youtube.com/watch?v=yP7q8-kYMCg",
-		"thumbnailUrl": "https://i.ytimg.com/vi/yP7q8-kYMCg/hqdefault.jpg"
-	},
-	{
-		"title": "Quiero tu sexo",
-		"releaseDate": "2026-10-15",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10563-quiero-tu-sexo/",
-		"slug": "cines-argentinos-10563",
-		"videoUrl": "https://www.youtube.com/watch?v=hzfLe8N7qs4",
-		"thumbnailUrl": "https://i.ytimg.com/vi/hzfLe8N7qs4/hqdefault.jpg"
-	},
-	{
-		"title": "Los Juegos del Hambre",
-		"releaseDate": "2026-10-15",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/3972-los-juegos-del-hambre/",
-		"slug": "cines-argentinos-3972",
-		"videoUrl": "https://www.youtube.com/watch?v=mfmrPu43DF8",
-		"thumbnailUrl": "https://i.ytimg.com/vi/mfmrPu43DF8/hqdefault.jpg"
-	},
-	{
-		"title": "Los Juegos del Hambre: Sinsajo Parte 1",
-		"releaseDate": "2026-10-15",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/4387-los-juegos-del-hambre-sinsajo-parte-1/",
-		"slug": "cines-argentinos-4387",
-		"videoUrl": "https://www.youtube.com/watch?v=JzcYyzCZdiM",
-		"thumbnailUrl": "https://i.ytimg.com/vi/JzcYyzCZdiM/hqdefault.jpg"
-	},
-	{
-		"title": "Estación zombie",
-		"releaseDate": "2026-10-15",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/6730-estacion-zombie/",
-		"slug": "cines-argentinos-6730",
-		"videoUrl": "https://www.youtube.com/watch?v=ofcNRlqJyfU",
-		"thumbnailUrl": "https://i.ytimg.com/vi/ofcNRlqJyfU/hqdefault.jpg"
-	},
-	{
-		"title": "Tiempos de ilusión",
-		"releaseDate": "2026-10-15",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10627-tiempos-de-ilusion/",
-		"slug": "cines-argentinos-10627",
-		"videoUrl": "https://www.youtube.com/watch?v=ExsKpSMnuKg",
-		"thumbnailUrl": "https://i.ytimg.com/vi/ExsKpSMnuKg/hqdefault.jpg"
-	},
 	{
 		"title": "Clayface",
 		"releaseDate": "2026-10-22",
@@ -73,6 +17,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10474",
 		"videoUrl": "https://www.youtube.com/watch?v=MnaFt0OrDTM",
 		"thumbnailUrl": "https://i.ytimg.com/vi/MnaFt0OrDTM/hqdefault.jpg"
+	},
+	{
+		"title": "El poder de la red",
+		"releaseDate": "2026-10-22",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10628-el-poder-de-la-red/",
+		"slug": "cines-argentinos-10628",
+		"videoUrl": "https://www.youtube.com/watch?v=Z3lF1qhVORU",
+		"thumbnailUrl": "https://i.ytimg.com/vi/Z3lF1qhVORU/hqdefault.jpg"
 	},
 	{
 		"title": "Buenas vibraciones",
@@ -105,5 +57,45 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10500",
 		"videoUrl": "https://www.youtube.com/watch?v=ypgdjOuODH4",
 		"thumbnailUrl": "https://i.ytimg.com/vi/ypgdjOuODH4/hqdefault.jpg"
+	},
+	{
+		"title": "El Gato con Sombrero",
+		"releaseDate": "2026-11-05",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10168-el-gato-con-sombrero/",
+		"slug": "cines-argentinos-10168",
+		"videoUrl": "https://www.youtube.com/watch?v=uyP8q3BQ0C4",
+		"thumbnailUrl": "https://i.ytimg.com/vi/uyP8q3BQ0C4/hqdefault.jpg"
+	},
+	{
+		"title": "Godzilla Minus Zero",
+		"releaseDate": "2026-11-05",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10548-godzilla-minus-zero/",
+		"slug": "cines-argentinos-10548",
+		"videoUrl": "https://www.youtube.com/watch?v=KSPi8XLeBRg",
+		"thumbnailUrl": "https://i.ytimg.com/vi/KSPi8XLeBRg/hqdefault.jpg"
+	},
+	{
+		"title": "Cómo robar un banco",
+		"releaseDate": "2026-11-12",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10630-como-robar-un-banco/",
+		"slug": "cines-argentinos-10630",
+		"videoUrl": "https://www.youtube.com/watch?v=eUikTiezPlw",
+		"thumbnailUrl": "https://i.ytimg.com/vi/eUikTiezPlw/hqdefault.jpg"
+	},
+	{
+		"title": "Los Juegos del Hambre: Amanecer en la Cosecha",
+		"releaseDate": "2026-11-19",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10320-los-juegos-del-hambre-amanecer-en-la-cosecha/",
+		"slug": "cines-argentinos-10320",
+		"videoUrl": "https://www.youtube.com/watch?v=pZQ4KJiW6VI",
+		"thumbnailUrl": "https://i.ytimg.com/vi/pZQ4KJiW6VI/hqdefault.jpg"
+	},
+	{
+		"title": "Hechizo: Bienvenidos a Hexe",
+		"releaseDate": "2026-11-26",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10211-hechizo-bienvenidos-a-hexe/",
+		"slug": "cines-argentinos-10211",
+		"videoUrl": "https://www.youtube.com/watch?v=9NpBMpYzZaw",
+		"thumbnailUrl": "https://i.ytimg.com/vi/9NpBMpYzZaw/hqdefault.jpg"
 	}
 ];
