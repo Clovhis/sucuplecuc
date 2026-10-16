@@ -19,7 +19,7 @@
 	"poster": "assets/posters/2026/backrooms-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "0HjdiohVOik",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Apple TV",
 	"director": "Kane Parsons",
 	"mainCast": [
 		"Chiwetel Ejiofor",
@@ -29,7 +29,7 @@
 		"Lukita Maxwell"
 	],
 	"productionCompany": "A24, Atomic Monster, 21 Laps Entertainment",
-	"cinepostaScore": 5,
+	"cinepostaScore": 7,
 	"runtimeMinutes": 105,
 	"awards": {
 		"wins": []
@@ -44,22 +44,26 @@
 			"forFansOf": "El found footage, los espacios liminales y el terror que usa arquitectura cotidiana para desordenar la percepción.",
 			"notForYouIf": "Necesitás reglas claras, explicaciones completas o un monstruo visible que ocupe el centro de cada escena."
 		},
-	"becauseYouLiked": [
-		"the-blair-witch-project-1999",
-		"cabeza-borradora-1977"
-	],
-	"related": [
-		"scanners-1981",
-		"the-brood-1979",
-		"bugonia-2025",
-		"la-posesion-1981"
-	]
-},
+		"becauseYouLiked": [
+			"the-blair-witch-project-1999",
+			"cabeza-borradora-1977"
+		],
+		"related": [
+			"scanners-1981",
+			"the-brood-1979",
+			"bugonia-2025",
+			"la-posesion-1981"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
 	"review": "Backrooms tiene clarisimo que lo suyo es el mal viaje de mirar un espacio comun hasta que se vuelve imposible. Cuando se queda en el ruido fluorescente, la alfombra eterna y la camara medio perdida, consigue una incomodidad muy particular.\n\nLa contra aparece cuando intenta ponerle demasiada estructura a una idea que funciona mejor como pesadilla suelta. Aun asi, Ejiofor y Reinsve le dan peso humano y Parsons encuentra imagenes raras, pegajosas, de esas que te quedan dando vueltas aunque la pelicula no cierre todo.",
 	"subgenres": [
 		"Found Footage",
 		"Psicológico"
+	],
+	"releasePlatforms": [
+		"Apple TV",
+		"Prime Video"
 	]
 }

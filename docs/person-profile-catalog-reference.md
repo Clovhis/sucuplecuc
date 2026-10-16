@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-15. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-16. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4287
+Total de vínculos de películas del catálogo: 4294
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -12,7 +12,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Aaron Eckhart | `aaron-eckhart` | /personas/aaron-eckhart/ | Actor | 5 | 6 |
 | Aaron Taylor-Johnson | `aaron-taylor-johnson` | /personas/aaron-taylor-johnson/ | Actor | 4 | 4 |
 | Adam Driver | `adam-driver` | /personas/adam-driver/ | Actor | 6 | 7 |
-| Adam Sandler | `adam-sandler` | /personas/adam-sandler/ | Actor / Comediante / Productor | 47 | 8 |
+| Adam Sandler | `adam-sandler` | /personas/adam-sandler/ | Actor / Comediante / Productor | 48 | 8 |
 | Adolfo Aristarain | `adolfo-aristarain` | /personas/adolfo-aristarain/ | Director / Guionista | 1 | 5 |
 | Adria Arjona | `adria-arjona` | /personas/adria-arjona/ | Actriz | 2 | 7 |
 | Adrián Caetano | `adrian-caetano` | /personas/adrian-caetano/ | Director / Guionista | 1 | 7 |
@@ -40,7 +40,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Alejandro González Iñárritu | `alejandro-gonzalez-inarritu` | /personas/alejandro-gonzalez-inarritu/ | Director / Guionista / Productor | 5 | 7 |
 | Alejandro Hartmann | `alejandro-hartmann` | /personas/alejandro-hartmann/ | Director / Guionista | 1 | 5 |
 | Alejo Garcia Pintos | `alejo-garcia-pintos` | /personas/alejo-garcia-pintos/ | Actor | 2 | 5 |
-| Alexander Skarsgård | `alexander-skarsgard` | /personas/alexander-skarsgard/ | Actor | 4 | 3 |
+| Alexander Skarsgård | `alexander-skarsgard` | /personas/alexander-skarsgard/ | Actor | 5 | 3 |
 | Alfonso Cuarón | `alfonso-cuaron` | /personas/alfonso-cuaron/ | Director / Guionista / Productor | 3 | 6 |
 | Alfred Hitchcock | `alfred-hitchcock` | /personas/alfred-hitchcock/ | Director | 5 | 6 |
 | Alfredo Castro | `alfredo-castro` | /personas/alfredo-castro/ | Actor | 3 | 5 |
@@ -159,7 +159,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Christopher Plummer | `christopher-plummer` | /personas/christopher-plummer/ | Actor | 8 | 6 |
 | Christopher Reeve | `christopher-reeve` | /personas/christopher-reeve/ | Actor | 5 | 6 |
 | Christopher Walken | `christopher-walken` | /personas/christopher-walken/ | Actor | 6 | 6 |
-| Ciarán Hinds | `ciaran-hinds` | /personas/ciaran-hinds/ | Actor | 5 | 3 |
+| Ciarán Hinds | `ciaran-hinds` | /personas/ciaran-hinds/ | Actor | 6 | 3 |
 | Cillian Murphy | `cillian-murphy` | /personas/cillian-murphy/ | Actor | 5 | 6 |
 | Claire Danes | `claire-danes` | /personas/claire-danes/ | Actriz | 4 | 5 |
 | Claire Foy | `claire-foy` | /personas/claire-foy/ | Actriz | 4 | 5 |
@@ -492,7 +492,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Marcelo Piñeyro | `marcelo-pineyro` | /personas/marcelo-pineyro/ | Director / Guionista | 4 | 5 |
 | Marcelo Subiotto | `marcelo-subiotto` | /personas/marcelo-subiotto/ | Actor | 4 | 5 |
 | Marcos Carnevale | `marcos-carnevale` | /personas/marcos-carnevale/ | Director / Guionista / Productor | 2 | 5 |
-| Margaret Qualley | `margaret-qualley` | /personas/margaret-qualley/ | Actriz | 3 | 6 |
+| Margaret Qualley | `margaret-qualley` | /personas/margaret-qualley/ | Actriz | 4 | 6 |
 | Margarita Molfino | `margarita-molfino` | /personas/margarita-molfino/ | Actriz / Coreógrafa | 1 | 5 |
 | Margot Kidder | `margot-kidder` | /personas/margot-kidder/ | Actriz | 3 | 3 |
 | Margot Robbie | `margot-robbie` | /personas/margot-robbie/ | Actriz | 8 | 6 |
@@ -698,7 +698,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Sophie Thatcher | `sophie-thatcher` | /personas/sophie-thatcher/ | Actriz | 3 | 3 |
 | Spike Lee | `spike-lee` | /personas/spike-lee/ | Director / Guionista / Productor / Actor | 3 | 6 |
 | Stanley Kubrick | `stanley-kubrick` | /personas/stanley-kubrick/ | Director / Guionista / Productor | 9 | 6 |
-| Stanley Tucci | `stanley-tucci` | /personas/stanley-tucci/ | Actor | 6 | 3 |
+| Stanley Tucci | `stanley-tucci` | /personas/stanley-tucci/ | Actor | 7 | 3 |
 | Stellan Skarsgård | `stellan-skarsgard` | /personas/stellan-skarsgard/ | Actor | 4 | 5 |
 | Steve Buscemi | `steve-buscemi` | /personas/steve-buscemi/ | Actor / Director | 11 | 6 |
 | Steve Carell | `steve-carell` | /personas/steve-carell/ | Actor | 14 | 4 |
@@ -727,7 +727,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Tom Cruise | `tom-cruise` | /personas/tom-cruise/ | Actor | 23 | 7 |
 | Tom Hanks | `tom-hanks` | /personas/tom-hanks/ | Actor / Productor | 24 | 6 |
 | Tom Hardy | `tom-hardy` | /personas/tom-hardy/ | Actor | 8 | 7 |
-| Tom Hiddleston | `tom-hiddleston` | /personas/tom-hiddleston/ | Actor | 4 | 7 |
+| Tom Hiddleston | `tom-hiddleston` | /personas/tom-hiddleston/ | Actor | 5 | 7 |
 | Tom Holland | `tom-holland` | /personas/tom-holland/ | Actor | 8 | 7 |
 | Tom Skerritt | `tom-skerritt` | /personas/tom-skerritt/ | Actor | 4 | 3 |
 | Tomás Fonzi | `tomas-fonzi` | /personas/tomas-fonzi/ | Actor | 1 | 5 |
@@ -756,7 +756,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Wesley Snipes | `wesley-snipes` | /personas/wesley-snipes/ | Actor / Productor | 5 | 3 |
 | Will Ferrell | `will-ferrell` | /personas/will-ferrell/ | Actor | 5 | 3 |
 | Will Smith | `will-smith` | /personas/will-smith/ | Actor | 9 | 6 |
-| Willem Dafoe | `willem-dafoe` | /personas/willem-dafoe/ | Actor | 17 | 4 |
+| Willem Dafoe | `willem-dafoe` | /personas/willem-dafoe/ | Actor | 18 | 4 |
 | William Holden | `william-holden` | /personas/william-holden/ | Actor | 4 | 4 |
 | William Wyler | `william-wyler` | /personas/william-wyler/ | Director / Productor | 3 | 4 |
 | Winona Ryder | `winona-ryder` | /personas/winona-ryder/ | Actriz | 10 | 4 |

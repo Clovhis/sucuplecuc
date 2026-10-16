@@ -17,7 +17,7 @@
 	"poster": "assets/posters/2026/super-mario-galaxy-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "GuCejewteF8",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Apple TV",
 	"director": "Aaron Horvath, Michael Jelenic",
 	"mainCast": [
 		"Chris Pratt",
@@ -27,7 +27,7 @@
 		"Keegan-Michael Key"
 	],
 	"productionCompany": "Universal Pictures, Nintendo, Illumination Entertainment",
-	"cinepostaScore": 5,
+	"cinepostaScore": 8,
 	"runtimeMinutes": 99,
 	"awards": {
 		"wins": []
@@ -42,18 +42,22 @@
 			"forFansOf": "Te puede divertir si te gustan las adaptaciones de videojuegos, los mundos animados que cambian de regla y las aventuras familiares con un elenco de voces que disfruta el desparpajo.",
 			"notForYouIf": "Quizás no sea para vos si buscás una historia más íntima, una amenaza realista o menos referencias al juego. Su prioridad es el movimiento constante y la celebración del universo Mario."
 		},
-	"becauseYouLiked": [
-		"minions-monstruos-2026",
-		"toy-story-5-2026"
-	],
-	"related": [
-		"swapped-2026",
-		"el-gato-con-botas-2011",
-		"hoppers-2026",
-		"unidos-2020"
-	]
-},
+		"becauseYouLiked": [
+			"minions-monstruos-2026",
+			"toy-story-5-2026"
+		],
+		"related": [
+			"swapped-2026",
+			"el-gato-con-botas-2011",
+			"hoppers-2026",
+			"unidos-2020"
+		]
+	},
 	"audienceRating": "ATP",
 	"review": "Super Mario Galaxy lleva a Mario y a sus aliados a planetas diminutos y mundos cósmicos cuando una nueva amenaza pone en riesgo el Reino Champiñón. La dirección entiende que la gracia está en cambiar de escala y gravedad todo el tiempo, y la animación aprovecha bien esa imaginación sin perder el humor físico de los personajes. Chris Pratt y el resto del elenco cumplen con energía, aunque los guiños a los juegos por momentos pesan más que la historia. El ritmo es veloz y familiar. Vale por una aventura colorida que amplía el universo sin limitarse a repetir la primera película.",
-	"reviewPublishedAt": "2026-04-04"
+	"reviewPublishedAt": "2026-04-04",
+	"releasePlatforms": [
+		"Apple TV",
+		"Prime Video"
+	]
 }

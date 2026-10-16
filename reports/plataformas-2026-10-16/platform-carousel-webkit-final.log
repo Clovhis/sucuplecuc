@@ -1,0 +1,23 @@
+
+Running 10 tests using 2 workers
+
+(node:28164) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28164) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › streaming-release-carousel: all films remain reachable and controls track both ends (7.7s)
+  ok  3 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › weekly-recommendations: all films remain reachable and controls track both ends (5.8s)
+  ok  4 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:55:1 › trailer closes with Escape, clears the player, and restores keyboard focus (3.4s)
+  ok  5 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:70:1 › release titles offer a direct route to the film alongside their trailers (3.2s)
+  ok  2 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:17:2 › cinema-release-carousel: all films remain reachable and controls track both ends (22.3s)
+  ok  6 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:78:1 › regular scrolling and keyboard focus reveal films beyond the visible strip (5.5s)
+  ok  7 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:92:1 › all rails fit narrow screens and update their controls after resizing (5.4s)
+  ok  9 [mobile-webkit] › tests\e2e\platform-badge.spec.ts:12:1 › Otras plataformas se apila y no invade las etiquetas de la tarjeta (3.8s)
+  ok  8 [mobile-webkit] › tests\e2e\home-carousels.spec.ts:112:1 › offscreen platform labels never expand the page at desktop and tablet widths (6.3s)
+  ok 10 [mobile-webkit] › tests\e2e\platform-badge.spec.ts:38:1 › Otras plataformas conserva el apilado en la ficha de película (2.8s)
+
+  10 passed (35.4s)

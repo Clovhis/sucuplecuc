@@ -8,7 +8,11 @@
 	"reviewPublishedAt": "2026-08-13",
 	"audienceRating": "ATP",
 	"category": "Animacion",
-	"genres": ["Animación", "Aventura", "Familiar"],
+	"genres": [
+		"Animación",
+		"Aventura",
+		"Familiar"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
@@ -17,7 +21,11 @@
 	"trailerYoutubeId": "xgI5iYmOf5Q",
 	"releasePlatform": "Cine",
 	"director": "Cal Brunker",
-	"mainCast": ["Mckenna Grace", "Terry Crews", "Jameela Jamil"],
+	"mainCast": [
+		"Mckenna Grace",
+		"Terry Crews",
+		"Jameela Jamil"
+	],
 	"productionCompany": "Paramount Animation, Nickelodeon Movies, Spin Master Entertainment",
 	"cinepostaScore": 8,
 	"runtimeMinutes": 89,
@@ -25,28 +33,31 @@
 		"wins": []
 	},
 	"editorial": {
-	"becauseYouLiked": [
-		"toy-story-5-2026",
-		"hoppers-2026"
-	],
-	"related": [
-		"minions-monstruos-2026",
-		"lego-star-wars-the-mandalorian-2026",
-		"swapped-2026",
-		"coco-2017"
-	]
-	,
-	"tenSecondTake": {
-		"verdict": "PAW Patrol: La Dino Película cumple como aventura para chicos: Cal Brunker suma dinosaurios y rescates, aunque la fórmula sigue mandando.",
-		"whatToExpect": "Una isla tropical, Rex, un volcán en erupción y la Patrulla Canina repartida en misiones simples contra los planes de Humdinger.",
-		"pace": "Se mueve rápido entre rescates, chistes y criaturas coloridas; cada obstáculo dura lo justo para que el público infantil siga el hilo.",
-		"intensity": "Hay peligro de dibujo animado y una moraleja ambiental clara, sin suspenso que pueda incomodar demasiado a los más chicos.",
-		"practicalContext": "Dura 89 minutos y está diseñada para una salida familiar; ofrece color y movimiento, más que una historia para sorprender a grandes.",
-		"forFansOf": "Para fans de la Patrulla Canina, dinosaurios y aventuras animadas de misión sencilla, con héroes que trabajan en equipo.",
-		"notForYouIf": "Quizás no es para vos si acompañás esperando capas para adultos, humor sofisticado o una animación que se aleje de la serie."
-	}
-},
+		"becauseYouLiked": [
+			"toy-story-5-2026",
+			"hoppers-2026"
+		],
+		"related": [
+			"minions-monstruos-2026",
+			"lego-star-wars-the-mandalorian-2026",
+			"swapped-2026",
+			"coco-2017"
+		],
+		"tenSecondTake": {
+			"verdict": "PAW Patrol: La Dino Película cumple como aventura para chicos: Cal Brunker suma dinosaurios y rescates, aunque la fórmula sigue mandando.",
+			"whatToExpect": "Una isla tropical, Rex, un volcán en erupción y la Patrulla Canina repartida en misiones simples contra los planes de Humdinger.",
+			"pace": "Se mueve rápido entre rescates, chistes y criaturas coloridas; cada obstáculo dura lo justo para que el público infantil siga el hilo.",
+			"intensity": "Hay peligro de dibujo animado y una moraleja ambiental clara, sin suspenso que pueda incomodar demasiado a los más chicos.",
+			"practicalContext": "Dura 89 minutos y está diseñada para una salida familiar; ofrece color y movimiento, más que una historia para sorprender a grandes.",
+			"forFansOf": "Para fans de la Patrulla Canina, dinosaurios y aventuras animadas de misión sencilla, con héroes que trabajan en equipo.",
+			"notForYouIf": "Quizás no es para vos si acompañás esperando capas para adultos, humor sofisticado o una animación que se aleje de la serie."
+		}
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La Patrulla Canina vuelve con una aventura que entiende bien el público al que apunta: dinosaurios, rescates imposibles y un villano que explica sus planes con la sutileza de una sirena. La animación privilegia la claridad y el movimiento, y la isla ofrece suficientes colores y criaturas para que la pantalla grande tenga sentido. No busca reinventar la fórmula, pero administra el ritmo, suma un compañero simpático y deja una moraleja ambiental sin ponerse pesada. Para chicos funciona; para grandes, es una misión de acompañamiento bastante amable."
+	"review": "La Patrulla Canina vuelve con una aventura que entiende bien el público al que apunta: dinosaurios, rescates imposibles y un villano que explica sus planes con la sutileza de una sirena. La animación privilegia la claridad y el movimiento, y la isla ofrece suficientes colores y criaturas para que la pantalla grande tenga sentido. No busca reinventar la fórmula, pero administra el ritmo, suma un compañero simpático y deja una moraleja ambiental sin ponerse pesada. Para chicos funciona; para grandes, es una misión de acompañamiento bastante amable.",
+	"releasePlatforms": [
+		"Cine",
+		"Flow"
+	]
 }

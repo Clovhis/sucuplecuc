@@ -1,0 +1,591 @@
+
+> la-posta-cine@0.0.1 validate:content
+> node ./scripts/validate-content.mjs --skip-build
+
+
+> git rev-parse --verify --quiet origin/main
+
+> npm run validate:home-editions -- --base origin/main
+
+> la-posta-cine@0.0.1 validate:home-editions
+> node --experimental-strip-types ./scripts/validate-home-editions.mjs --base origin/main
+
+warning: in the working copy of 'docs/movie-catalog-reference.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/person-profile-catalog-reference.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/28-years-later-the-bone-temple-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/backrooms-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/goat-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/impacto-mortal-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/katseye-wild-hearts-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/la-muerte-de-robin-hood-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/lo-dejamos-aca-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/paw-patrol-la-dino-pelicula-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/scary-movie-6-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/movies/super-mario-galaxy-2026.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/people.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/data/personProfileCatalogCredits.generated.ts', LF will be replaced by CRLF the next time Git touches it
+Home editions: valid, frozen and independent of movie loads.
+
+> git ls-tree -r --name-only origin/main -- src/data/movies
+
+> git diff --name-only --diff-filter=AM origin/main
+
+> git show origin/main:src/data/movies/28-years-later-the-bone-temple-2026.json
+
+> git show origin/main:src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json
+
+> git show origin/main:src/data/movies/backrooms-2026.json
+
+> git show origin/main:src/data/movies/goat-2026.json
+
+> git show origin/main:src/data/movies/impacto-mortal-2026.json
+
+> git show origin/main:src/data/movies/katseye-wild-hearts-2026.json
+
+> git show origin/main:src/data/movies/la-muerte-de-robin-hood-2026.json
+
+> git show origin/main:src/data/movies/lo-dejamos-aca-2026.json
+
+> git show origin/main:src/data/movies/paw-patrol-la-dino-pelicula-2026.json
+
+> git show origin/main:src/data/movies/scary-movie-6-2026.json
+
+> git show origin/main:src/data/movies/super-mario-galaxy-2026.json
+
+> git show origin/main:src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json
+
+> git show origin/main:src/data/movies/el-amor-de-tu-vida-2026.json
+
+> git show origin/main:src/data/movies/el-momento-2026.json
+
+> git show origin/main:src/data/movies/el-pez-pucheros-2026.json
+
+> git show origin/main:src/data/movies/frutos-prohibidos-2026.json
+
+> git show origin/main:src/data/movies/garuda-dare-to-dream-2026.json
+
+> git show origin/main:src/data/movies/hijo-de-nadie-2026.json
+
+> git show origin/main:src/data/movies/iron-maiden-burning-ambition-2026.json
+
+> git show origin/main:src/data/movies/jovenes-detectives-3-2026.json
+
+> git show origin/main:src/data/movies/la-bestia-del-pantano-2026.json
+
+> git show origin/main:src/data/movies/la-cancion-de-mi-padre-2-2026.json
+
+> git show origin/main:src/data/movies/la-tormenta-2026.json
+
+> git show origin/main:src/data/movies/land-of-crime-2026.json
+
+> git show origin/main:src/data/movies/loco-mexico-magico-2026.json
+
+> git show origin/main:src/data/movies/lorne-2026.json
+
+> git show origin/main:src/data/movies/masterplan-2026.json
+
+> git show origin/main:src/data/movies/no-te-olvidare-2026.json
+
+> git show origin/main:src/data/movies/norm-la-historia-de-norm-macdonald-2026.json
+
+> git show origin/main:src/data/movies/sniper-en-tierra-de-nadie-2026.json
+
+> git show origin/main:src/data/movies/tenzing-conquistando-el-everest-2026.json
+
+> git show origin/main:src/data/movies/unas-vacaciones-en-invierno-2026.json
+Validation mode: targeted
+Base ref: origin/main
+Changed files detected: 58
+
+> npm run catalog:movies:check
+
+> la-posta-cine@0.0.1 catalog:movies:check
+> node ./scripts/update-movie-catalog-reference.mjs --check
+
+
+> npm run catalog:people:check
+
+> la-posta-cine@0.0.1 catalog:people:check
+> node ./scripts/update-person-profile-catalog-links.mjs --check
+
+
+> npm run catalog:people:reference:check
+
+> la-posta-cine@0.0.1 catalog:people:reference:check
+> node ./scripts/update-person-profile-catalog-reference.mjs --check
+
+Checking portraits for 21 new or people-credit-changed movie file(s).
+
+> node ./scripts/audit-movie-people.mjs --file src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json --file src/data/movies/el-amor-de-tu-vida-2026.json --file src/data/movies/el-momento-2026.json --file src/data/movies/el-pez-pucheros-2026.json --file src/data/movies/frutos-prohibidos-2026.json --file src/data/movies/garuda-dare-to-dream-2026.json --file src/data/movies/hijo-de-nadie-2026.json --file src/data/movies/iron-maiden-burning-ambition-2026.json --file src/data/movies/jovenes-detectives-3-2026.json --file src/data/movies/la-bestia-del-pantano-2026.json --file src/data/movies/la-cancion-de-mi-padre-2-2026.json --file src/data/movies/la-tormenta-2026.json --file src/data/movies/land-of-crime-2026.json --file src/data/movies/loco-mexico-magico-2026.json --file src/data/movies/lorne-2026.json --file src/data/movies/masterplan-2026.json --file src/data/movies/no-te-olvidare-2026.json --file src/data/movies/norm-la-historia-de-norm-macdonald-2026.json --file src/data/movies/sniper-en-tierra-de-nadie-2026.json --file src/data/movies/tenzing-conquistando-el-everest-2026.json --file src/data/movies/unas-vacaciones-en-invierno-2026.json
+Movie people audit warnings:
+- director: Sajeev Pazhoor no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Nimisha Sajayan no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Vijayalakshmi Veeramani no tiene fecha de nacimiento pública verificada
+- cast: Vijayalakshmi Veeramani no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Rachel Morrison no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Aaron Pierre no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Patrick Schwarzenegger no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Aidan Zamiri no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Charli xcx no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Hailey Benton Gates no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Ricard Cussó no tiene fecha de nacimiento pública verificada
+- director: Ricard Cussó no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Nina Oyama no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Meredith Alloway no tiene fecha de nacimiento pública verificada
+- director: Meredith Alloway no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Alexandra Shipp no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Victoria Pedretti no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Ronny Gani no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Kristo Immanuel no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Keanu Azka no tiene fecha de nacimiento pública verificada
+- cast: Keanu Azka no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Quinn Salman no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Safy Nebbou no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Romain Duris no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Cristiana Capotondi no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Vithaya Pansringarm no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Malcolm Venville no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Steve Harris no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Bruce Dickinson no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Nicko McBrain no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Tim Dünschede no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Julius Weckauf no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Nevio Wendt no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Levi Brandl no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Madison Davenport no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Tracey Bonner no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Andrew Erwin no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Brent McCorkle no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: John Michael Finley no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Milo Ventimiglia no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Sophie Skelton no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Josephine Bornebusch no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Gustaf Skarsgård no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Aliette Opheim no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Filip Berg no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Eucir de Souza no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Jackson Antunes no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Thais Lago no tiene fecha de nacimiento pública verificada
+- cast: Thais Lago no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Carlos Santos no tiene fecha de nacimiento pública verificada
+- director: Carlos Santos no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Silverio Palacios no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Daniel Sosa no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Fernando Cuautle no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Morgan Neville no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Lorne Michaels no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Steve Higgins no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Michael Che no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Thomas Vincent no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Simona Tabasco no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Victor Belmondo no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Vanessa Caswill no tiene fecha de nacimiento pública verificada
+- director: Vanessa Caswill no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Tyriq Withers no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Rudy Pankow no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Norm Macdonald no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: David Letterman no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Trevor Calverley no tiene fecha de nacimiento pública verificada
+- director: Trevor Calverley no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Chad Michael Collins no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Ryan Robbins no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Manuel Rodriguez-Saenz no tiene fecha de nacimiento pública verificada
+- cast: Manuel Rodriguez-Saenz no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Jennifer Peedom no tiene fecha de nacimiento pública verificada
+- director: Jennifer Peedom no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Genden Phuntsok no tiene fecha de nacimiento pública verificada
+- cast: Genden Phuntsok no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Polly Findlay no tiene fecha de nacimiento pública verificada
+- director: Polly Findlay no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Niamh Cusack no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+Movie people audit passed for 21 movie file(s).
+
+> npm run audit:content-quality:strict -- --full
+
+> la-posta-cine@0.0.1 audit:content-quality:strict
+> node ./scripts/content-quality-audit.mjs --strict --full
+
+{
+  "referenceDate": "2026-10-16T17:32:32.376Z",
+  "movieFiles": 2374,
+  "releasedMovies": 2374,
+  "reviewWords": {
+    "min": 70,
+    "median": 92,
+    "avg": 93,
+    "max": 174
+  },
+  "synopsisWords": {
+    "min": 28,
+    "median": 41,
+    "avg": 41,
+    "max": 60
+  },
+  "shortReviews": {
+    "thresholdWords": 70,
+    "minimumSentences": 2,
+    "note": "Una reseña editorial debe desarrollar una postura; menos de 70 palabras o menos de dos oraciones requiere reescritura manual.",
+    "count": 0,
+    "examples": [],
+    "all": []
+  },
+  "weakSynopses": {
+    "count": 0,
+    "examples": []
+  },
+  "synopsisHygiene": {
+    "count": 0,
+    "examples": [],
+    "all": []
+  },
+  "similarSynopses": {
+    "count": 0,
+    "examples": []
+  },
+  "invalidPosterPaths": {
+    "count": 0,
+    "note": "Movie posters must use the local assets/posters/<year>/<slug>.webp convention; validate bytes and files with npm run posters:check."
+  }
+}
+
+> npm run audit:editorial-low-value
+
+> la-posta-cine@0.0.1 audit:editorial-low-value
+> node ./scripts/editorial-low-value-audit.mjs
+
+{
+  "referenceDate": "2026-10-16T17:32:34.844Z",
+  "releasedMovies": 2374,
+  "generatedReviewCandidates": {
+    "count": 0,
+    "highSeverity": 0,
+    "mediumSeverity": 0,
+    "examples": []
+  },
+  "shortReviewCandidates": {
+    "count": 0,
+    "examples": []
+  },
+  "templateReviewCandidates": {
+    "count": 0,
+    "examples": []
+  },
+  "repeatedEditorialCandidates": {
+    "count": 0,
+    "examples": []
+  },
+  "primaryGenreMismatch": {
+    "count": 199,
+    "examples": [
+      {
+        "slug": "a-i-artificial-intelligence-2001",
+        "title": "A.I. Inteligencia Artificial",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\a-i-artificial-intelligence-2001.json"
+      },
+      {
+        "slug": "a-nightmare-on-elm-street-2-freddy-s-revenge-1985",
+        "title": "A Nightmare on Elm Street 2: Freddy's Revenge",
+        "category": "Terror",
+        "firstGenre": "cine de terror",
+        "filePath": "src\\data\\movies\\a-nightmare-on-elm-street-2-freddy-s-revenge-1985.json"
+      },
+      {
+        "slug": "a-nightmare-on-elm-street-3-dream-warriors-1987",
+        "title": "A Nightmare on Elm Street 3: Dream Warriors",
+        "category": "Terror",
+        "firstGenre": "cine de terror",
+        "filePath": "src\\data\\movies\\a-nightmare-on-elm-street-3-dream-warriors-1987.json"
+      },
+      {
+        "slug": "a-nightmare-on-elm-street-5-the-dream-child-1989",
+        "title": "Pesadilla en Elm Street 5: El niño de los sueños",
+        "category": "Terror",
+        "firstGenre": "Misterio & Suspense",
+        "filePath": "src\\data\\movies\\a-nightmare-on-elm-street-5-the-dream-child-1989.json"
+      },
+      {
+        "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+        "title": "Adolescencia, sexo y muerte en Campamento Miasma",
+        "category": "Terror",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json"
+      },
+      {
+        "slug": "alex-y-emma-2003",
+        "title": "Alex y Emma",
+        "category": "Comedia romantica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\alex-y-emma-2003.json"
+      },
+      {
+        "slug": "all-quiet-on-the-western-front-1930",
+        "title": "All Quiet on the Western Front",
+        "category": "Drama",
+        "firstGenre": "Guerra",
+        "filePath": "src\\data\\movies\\all-quiet-on-the-western-front-1930.json"
+      },
+      {
+        "slug": "all-quiet-on-the-western-front-2022",
+        "title": "All Quiet on the Western Front",
+        "category": "Drama",
+        "firstGenre": "Guerra",
+        "filePath": "src\\data\\movies\\all-quiet-on-the-western-front-2022.json"
+      },
+      {
+        "slug": "amelie-2001",
+        "title": "Amélie",
+        "category": "Comedia romántica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\amelie-2001.json"
+      },
+      {
+        "slug": "amor-y-otras-drogas-2010",
+        "title": "Amor y otras drogas",
+        "category": "Romance",
+        "firstGenre": "Romántica",
+        "filePath": "src\\data\\movies\\amor-y-otras-drogas-2010.json"
+      },
+      {
+        "slug": "an-american-in-paris-1951",
+        "title": "An American in Paris",
+        "category": "Musical",
+        "firstGenre": "Música",
+        "filePath": "src\\data\\movies\\an-american-in-paris-1951.json"
+      },
+      {
+        "slug": "argo-2012",
+        "title": "Argo",
+        "category": "Thriller",
+        "firstGenre": "Misterio & Suspense",
+        "filePath": "src\\data\\movies\\argo-2012.json"
+      },
+      {
+        "slug": "around-the-world-in-80-days-1956",
+        "title": "Around the World in 80 Days",
+        "category": "Comedia",
+        "firstGenre": "Fantasía",
+        "filePath": "src\\data\\movies\\around-the-world-in-80-days-1956.json"
+      },
+      {
+        "slug": "ateez-light-the-way-in-cinemas-2026",
+        "title": "ATEEZ: LIGHT THE WAY IN CINEMAS",
+        "category": "Documental",
+        "firstGenre": "Música",
+        "filePath": "src\\data\\movies\\ateez-light-the-way-in-cinemas-2026.json"
+      },
+      {
+        "slug": "back-to-black-2024",
+        "title": "Back to Black",
+        "category": "Biografica",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\back-to-black-2024.json"
+      },
+      {
+        "slug": "back-to-the-future-1985",
+        "title": "Back to the Future",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\back-to-the-future-1985.json"
+      },
+      {
+        "slug": "back-to-the-future-part-ii-1989",
+        "title": "Back to the Future Part II",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\back-to-the-future-part-ii-1989.json"
+      },
+      {
+        "slug": "back-to-the-future-part-iii-1990",
+        "title": "Back to the Future Part III",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\back-to-the-future-part-iii-1990.json"
+      },
+      {
+        "slug": "bailamos-2004",
+        "title": "¿Bailamos?",
+        "category": "Comedia romántica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\bailamos-2004.json"
+      },
+      {
+        "slug": "barreda-2026",
+        "title": "Barreda",
+        "category": "Drama",
+        "firstGenre": "Crimen",
+        "filePath": "src\\data\\movies\\barreda-2026.json"
+      },
+      {
+        "slug": "besar-es-facil-2026",
+        "title": "Besar es fácil",
+        "category": "Comedia romantica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\besar-es-facil-2026.json"
+      },
+      {
+        "slug": "bienvenidos-a-villa-capri-2017",
+        "title": "Bienvenidos a Villa Capri",
+        "category": "Drama",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\bienvenidos-a-villa-capri-2017.json"
+      },
+      {
+        "slug": "boda-sangrienta-2-2026",
+        "title": "Boda sangrienta 2",
+        "category": "Terror",
+        "firstGenre": "Thriller",
+        "filePath": "src\\data\\movies\\boda-sangrienta-2-2026.json"
+      },
+      {
+        "slug": "borderlands-el-destino-del-universo-esta-en-juego-2024",
+        "title": "Borderlands: El destino del universo está en juego",
+        "category": "Drama",
+        "firstGenre": "Acción",
+        "filePath": "src\\data\\movies\\borderlands-el-destino-del-universo-esta-en-juego-2024.json"
+      },
+      {
+        "slug": "braveheart-1995",
+        "title": "Braveheart",
+        "category": "Drama",
+        "firstGenre": "Guerra",
+        "filePath": "src\\data\\movies\\braveheart-1995.json"
+      },
+      {
+        "slug": "bridge-of-spies-2015",
+        "title": "El puente de los espías",
+        "category": "Thriller",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\bridge-of-spies-2015.json"
+      },
+      {
+        "slug": "buena-suerte-diviertete-no-mueras-2026",
+        "title": "Buena suerte, diviértete, no mueras",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción",
+        "filePath": "src\\data\\movies\\buena-suerte-diviertete-no-mueras-2026.json"
+      },
+      {
+        "slug": "buena-suerte-leo-grande-2022",
+        "title": "Buena suerte, Leo Grande",
+        "category": "Drama",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\buena-suerte-leo-grande-2022.json"
+      },
+      {
+        "slug": "buffalo-soldiers-2001",
+        "title": "Buffalo Soldiers",
+        "category": "Comedia",
+        "firstGenre": "Comedia negra",
+        "filePath": "src\\data\\movies\\buffalo-soldiers-2001.json"
+      },
+      {
+        "slug": "camila-1984",
+        "title": "Camila",
+        "category": "Romance",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\camila-1984.json"
+      },
+      {
+        "slug": "camp-rock-3-2026",
+        "title": "Camp Rock 3",
+        "category": "Musical",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\camp-rock-3-2026.json"
+      },
+      {
+        "slug": "cape-fear-1991",
+        "title": "El cabo del miedo",
+        "category": "Thriller",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\cape-fear-1991.json"
+      },
+      {
+        "slug": "child-s-play-2019",
+        "title": "Muñeco diabólico",
+        "category": "Terror",
+        "firstGenre": "Misterio & Suspense",
+        "filePath": "src\\data\\movies\\child-s-play-2019.json"
+      },
+      {
+        "slug": "close-encounters-of-the-third-kind-1977",
+        "title": "Encuentros cercanos del tercer tipo",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\close-encounters-of-the-third-kind-1977.json"
+      },
+      {
+        "slug": "con-faldas-y-a-lo-loco-1959",
+        "title": "Una Eva y dos Adanes",
+        "category": "Comedia romantica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\con-faldas-y-a-lo-loco-1959.json"
+      },
+      {
+        "slug": "corazon-de-leon-2013",
+        "title": "Corazón de león",
+        "category": "Comedia romántica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\corazon-de-leon-2013.json"
+      },
+      {
+        "slug": "coyote-vs-acme-2026",
+        "title": "Coyote vs. Acme",
+        "category": "Comedia",
+        "firstGenre": "Animación",
+        "filePath": "src\\data\\movies\\coyote-vs-acme-2026.json"
+      },
+      {
+        "slug": "dracula-de-bram-stoker-1992",
+        "title": "Drácula de Bram Stoker",
+        "category": "Terror",
+        "firstGenre": "Fantasía",
+        "filePath": "src\\data\\movies\\dracula-de-bram-stoker-1992.json"
+      },
+      {
+        "slug": "duel-1971",
+        "title": "Reto a muerte",
+        "category": "Thriller",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\duel-1971.json"
+      },
+      {
+        "slug": "dunkirk-2017",
+        "title": "Dunkirk",
+        "category": "Drama",
+        "firstGenre": "Guerra",
+        "filePath": "src\\data\\movies\\dunkirk-2017.json"
+      }
+    ]
+  },
+  "repeatedOpeningPatterns": {
+    "count": 0,
+    "examples": []
+  },
+  "repeatedReviewSentences": {
+    "count": 0,
+    "examples": []
+  }
+}
+
+> npm run audit:profile-originality
+
+> la-posta-cine@0.0.1 audit:profile-originality
+> node --experimental-strip-types ./scripts/validate-person-profile-originality.mjs
+
+Person-profile originality source validation passed.
+
+> node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref origin/main --recent --skip-youtube
+Audited 0 candidate file(s) from origin/main against src/data/movies.
+Editorial audit: No candidate movie files found to audit.
+Result: PASS
+
+> npm run audit:profiles
+
+> la-posta-cine@0.0.1 audit:profiles
+> node ./skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --all
+
+Person-profile originality source validation passed.
+Person-profile audit passed using the canonical editorial policy.

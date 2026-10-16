@@ -19,7 +19,7 @@
 	"poster": "assets/posters/2026/la-muerte-de-robin-hood-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "e2pG7Ut8R8w",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Apple TV",
 	"director": "Michael Sarnoski",
 	"mainCast": [
 		"Hugh Jackman",
@@ -29,7 +29,7 @@
 		"Noah Jupe"
 	],
 	"productionCompany": "A24, Lyrical Media, RPC",
-	"cinepostaScore": 5,
+	"cinepostaScore": 6,
 	"awards": {
 		"wins": []
 	},
@@ -43,18 +43,22 @@
 			"forFansOf": "Si te gustan mitos desarmados, dramas medievales sombríos y Hugh Jackman lejos del héroe invulnerable.",
 			"notForYouIf": "No es para vos si buscás batallas constantes, una redención sencilla o un Robin Hood sin contradicciones."
 		},
-	"becauseYouLiked": [
-		"war-horse-2011",
-		"gladiator-2000"
-	],
-	"related": [
-		"ben-hur-1959",
-		"seven-samurai-1954",
-		"mutiny-on-the-bounty-1935",
-		"wings-1927"
-	]
-},
+		"becauseYouLiked": [
+			"war-horse-2011",
+			"gladiator-2000"
+		],
+		"related": [
+			"ben-hur-1959",
+			"seven-samurai-1954",
+			"mutiny-on-the-bounty-1935",
+			"wings-1927"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Michael Sarnoski toma la leyenda de Robin Hood por el lado más áspero: no hay aventura de postal ni héroe intacto, sino un hombre envejecido que llega a la última curva con el cuerpo roto y demasiadas cuentas pendientes. Hugh Jackman le pone peso a esa culpa, mientras Jodie Comer transforma a Brígida en algo más interesante que una salvadora paciente. La película trabaja mejor cuando observa el vínculo entre ambos y deja que la compasión choque con la violencia que Robin todavía lleva encima. El tono sombrío puede sentirse solemne, y algunas escenas de acción prometen más de lo que entregan. Aun así, la inversión tiene personalidad, buenas actuaciones y una pregunta incómoda sobre cuánto tarda un mito en convertirse en otra forma de daño."
+	"review": "Michael Sarnoski toma la leyenda de Robin Hood por el lado más áspero: no hay aventura de postal ni héroe intacto, sino un hombre envejecido que llega a la última curva con el cuerpo roto y demasiadas cuentas pendientes. Hugh Jackman le pone peso a esa culpa, mientras Jodie Comer transforma a Brígida en algo más interesante que una salvadora paciente. La película trabaja mejor cuando observa el vínculo entre ambos y deja que la compasión choque con la violencia que Robin todavía lleva encima. El tono sombrío puede sentirse solemne, y algunas escenas de acción prometen más de lo que entregan. Aun así, la inversión tiene personalidad, buenas actuaciones y una pregunta incómoda sobre cuánto tarda un mito en convertirse en otra forma de daño.",
+	"releasePlatforms": [
+		"Apple TV",
+		"Flow"
+	]
 }

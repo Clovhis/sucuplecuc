@@ -24,6 +24,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "silence-2016"
   ],
   "adam-sandler": [
+    "norm-la-historia-de-norm-macdonald-2026",
     "happy-gilmore-2-2025",
     "jay-kelly-2025",
     "spaceman-2024",
@@ -215,6 +216,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-noche-de-los-lapices-1986"
   ],
   "alexander-skarsgard": [
+    "el-momento-2026",
     "pillion-2025",
     "piscina-infinita-2023",
     "el-hombre-del-norte-2022",
@@ -1082,6 +1084,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-deer-hunter-1978"
   ],
   "ciaran-hinds": [
+    "unas-vacaciones-en-invierno-2026",
     "en-tierra-de-santos-y-pecadores-2023",
     "silence-2016",
     "ghost-rider-spirit-of-vengeance-2011",
@@ -3570,6 +3573,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "corazon-de-leon-2013"
   ],
   "margaret-qualley": [
+    "el-amor-de-tu-vida-2026",
     "jugada-maestra-2026",
     "la-guerra-de-los-ultimos-2026",
     "the-substance-2024"
@@ -5145,6 +5149,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "stanley-tucci": [
     "el-diablo-viste-a-la-moda-2-2026",
+    "masterplan-2026",
     "conclave-2024",
     "las-aventuras-de-peabody-y-sherman-2014",
     "desde-mi-cielo-2009",
@@ -5458,6 +5463,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-dark-knight-rises-2012"
   ],
   "tom-hiddleston": [
+    "tenzing-conquistando-el-everest-2026",
     "la-vida-de-chuck-2025",
     "thor-ragnarok-2017",
     "thor-the-dark-world-2013",
@@ -5652,6 +5658,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "seis-grados-de-separacion-1993"
   ],
   "willem-dafoe": [
+    "tenzing-conquistando-el-everest-2026",
     "poor-things-2023",
     "siberia-2020",
     "el-faro-2019",

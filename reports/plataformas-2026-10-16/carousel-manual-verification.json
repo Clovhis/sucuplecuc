@@ -1,0 +1,982 @@
+{
+  "verifiedAt": "2026-10-16",
+  "expected": [
+    "cual-es-el-precio-de-la-dignidad-2026",
+    "garuda-dare-to-dream-2026",
+    "masterplan-2026",
+    "norm-la-historia-de-norm-macdonald-2026",
+    "tenzing-conquistando-el-everest-2026",
+    "hijo-de-nadie-2026",
+    "la-bestia-del-pantano-2026",
+    "la-tormenta-2026",
+    "el-amor-de-tu-vida-2026",
+    "el-momento-2026",
+    "el-pez-pucheros-2026",
+    "frutos-prohibidos-2026"
+  ],
+  "actualBrowsers": [
+    "desktop-chromium",
+    "mobile-webkit"
+  ],
+  "maximumItems": 12,
+  "manualResult": "PASS: las 12 selecciones y su orden coinciden con la política actual del sitio.",
+  "rawAuditorResult": "FAIL: 7 streaming-carousel-missing-entry; el auditor exige todos los elegibles y no aplica el máximo 12.",
+  "unresolvedToolMismatch": [
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "Current streaming entry \"Land of Crime\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "Current streaming entry \"Loco México Mágico\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "Current streaming entry \"No te olvidaré\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "Current streaming entry \"Lorne\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+      "message": "Current streaming entry \"Unas vacaciones en invierno\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "Current streaming entry \"La canción de mi padre 2\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "Current streaming entry \"Sniper: En tierra de nadie\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    }
+  ],
+  "unchangedExisting": [
+    {
+      "title": "Stray Kids: The dominATE Experience",
+      "source": "https://www.justwatch.com/ar/pelicula/stray-kids-the-dominate-experience",
+      "matches": [
+        {
+          "slug": "stray-kids-the-dominate-experience-2026",
+          "year": 2026,
+          "platform": [
+            "HBO Max",
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3b9f84fb-317e-43b3-bd18-68f4c029eb1a",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3b9f84fb-317e-43b3-bd18-68f4c029eb1a",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Posesión infernal: En llamas",
+      "source": "https://www.justwatch.com/ar/pelicula/posesion-infernal-en-llamas",
+      "matches": [
+        {
+          "slug": "evil-dead-en-llamas-2026",
+          "year": 2026,
+          "platform": [
+            "HBO Max",
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0db24700-aeb1-4429-bbc0-d03187e2259f",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0db24700-aeb1-4429-bbc0-d03187e2259f",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0db24700-aeb1-4429-bbc0-d03187e2259f",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "El día de la revelación",
+      "source": "https://www.justwatch.com/ar/pelicula/el-dia-de-la-revelacion",
+      "matches": [
+        {
+          "slug": "el-dia-de-la-revelacion-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV",
+            "Flow"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.56bf57bc-6f3b-4cec-9d30-6ab7b71f977b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.56bf57bc-6f3b-4cec-9d30-6ab7b71f977b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.56bf57bc-6f3b-4cec-9d30-6ab7b71f977b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.56bf57bc-6f3b-4cec-9d30-6ab7b71f977b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.56bf57bc-6f3b-4cec-9d30-6ab7b71f977b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.56bf57bc-6f3b-4cec-9d30-6ab7b71f977b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Insidious: Fuera del más allá",
+      "source": "https://www.justwatch.com/ar/pelicula/insidious-capitulo-6",
+      "matches": [
+        {
+          "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+          "year": 2026,
+          "platform": [
+            "Cine",
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Michael",
+      "source": "https://www.justwatch.com/ar/pelicula/michael-2025-0",
+      "matches": [
+        {
+          "slug": "michael-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Undertone: Frecuencia maldita",
+      "source": "https://www.justwatch.com/ar/pelicula/undertone",
+      "matches": [
+        {
+          "slug": "undertone-frecuencia-maldita-2026",
+          "year": 2026,
+          "platform": [
+            "HBO Max"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3bac0f6b-7680-4d01-af6f-32a8983568c0",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3bac0f6b-7680-4d01-af6f-32a8983568c0",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3bac0f6b-7680-4d01-af6f-32a8983568c0",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Minions y monstruos",
+      "source": "https://www.justwatch.com/ar/pelicula/minions-y-monstruos",
+      "matches": [
+        {
+          "slug": "minions-monstruos-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV",
+            "Flow"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes",
+            "shortName": "itu"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes",
+            "shortName": "itu"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes",
+            "shortName": "itu"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Cambio de roles",
+      "source": "https://www.justwatch.com/ar/pelicula/the-breadwinner",
+      "matches": [
+        {
+          "slug": "papa-a-cargo-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV",
+            "Flow"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3954a16-1616-48f0-868c-25f417d50bf5",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3954a16-1616-48f0-868c-25f417d50bf5",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3954a16-1616-48f0-868c-25f417d50bf5",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3954a16-1616-48f0-868c-25f417d50bf5",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3954a16-1616-48f0-868c-25f417d50bf5",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3954a16-1616-48f0-868c-25f417d50bf5",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Tu, yo y la Toscana",
+      "source": "https://www.justwatch.com/ar/pelicula/italiana",
+      "matches": [
+        {
+          "slug": "italiana-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c262e3a-aee9-4fe7-807c-b746b4d3315c",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c262e3a-aee9-4fe7-807c-b746b4d3315c",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c262e3a-aee9-4fe7-807c-b746b4d3315c",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c262e3a-aee9-4fe7-807c-b746b4d3315c",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c262e3a-aee9-4fe7-807c-b746b4d3315c",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c262e3a-aee9-4fe7-807c-b746b4d3315c",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Clika",
+      "source": "https://www.justwatch.com/ar/pelicula/clika",
+      "matches": [
+        {
+          "slug": "clika-2026",
+          "year": 2026,
+          "platform": [
+            "HBO Max"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.40546740-dabb-4c14-a37c-628a35a24615",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.40546740-dabb-4c14-a37c-628a35a24615",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-13",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.40546740-dabb-4c14-a37c-628a35a24615",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Moscas",
+      "source": "https://www.justwatch.com/ar/pelicula/moscas-2026",
+      "matches": [
+        {
+          "slug": "moscas-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f6be3cf7-ce5c-40d0-ad6a-d890081a5302",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f6be3cf7-ce5c-40d0-ad6a-d890081a5302",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "What Do You Do for an Encore?",
+      "source": "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+      "matches": [
+        {
+          "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ea2dae12-9bf0-4ec4-8131-b8d3f1c339cf",
+          "package": {
+            "clearName": "MUBI Amazon Channel",
+            "technicalName": "amazonmubi",
+            "shortName": "amu"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ea2dae12-9bf0-4ec4-8131-b8d3f1c339cf",
+          "package": {
+            "clearName": "MUBI Amazon Channel",
+            "technicalName": "amazonmubi",
+            "shortName": "amu"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ea2dae12-9bf0-4ec4-8131-b8d3f1c339cf",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ea2dae12-9bf0-4ec4-8131-b8d3f1c339cf",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Rosebush Pruning",
+      "source": "https://www.justwatch.com/ar/pelicula/rosebush-pruning",
+      "matches": [
+        {
+          "slug": "rosebush-pruning-2026",
+          "year": 2026,
+          "platform": [
+            "Apple TV"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5d4b5376-cd02-49c5-9602-7eda7fa9fd58",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5d4b5376-cd02-49c5-9602-7eda7fa9fd58",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5d4b5376-cd02-49c5-9602-7eda7fa9fd58",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-14",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5d4b5376-cd02-49c5-9602-7eda7fa9fd58",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    },
+    {
+      "title": "Besar es fácil",
+      "source": "https://www.justwatch.com/ar/pelicula/besar-es-facil",
+      "matches": [
+        {
+          "slug": "besar-es-facil-2026",
+          "year": 2026,
+          "platform": [
+            "Netflix"
+          ]
+        }
+      ],
+      "newOffers": [
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b6d94d3d-6438-4118-a6b0-550b7b3b67ae",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        },
+        {
+          "country": "AR",
+          "dateCreated": "2026-10-15",
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b6d94d3d-6438-4118-a6b0-550b7b3b67ae",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon",
+            "shortName": "amz"
+          }
+        }
+      ],
+      "reason": "Ficha ya existente con plataforma confirmada; se conserva su suscripción o selección previa de hasta dos proveedores. La nueva oferta Amazon transaccional no justifica duplicar la película ni declarar un primer estreno digital."
+    }
+  ]
+}

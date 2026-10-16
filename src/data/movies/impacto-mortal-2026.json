@@ -8,18 +8,26 @@
 	"reviewPublishedAt": "2026-08-27",
 	"audienceRating": "+13",
 	"category": "Thriller",
-	"genres": ["Thriller", "Terror", "Acción"],
+	"genres": [
+		"Thriller",
+		"Terror",
+		"Acción"
+	],
 	"subgenres": [],
 	"country": "US, ES",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/impacto-mortal-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "lNEuVhB0D9U",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Apple TV",
 	"director": "Renny Harlin",
-	"mainCast": ["Ben Kingsley", "Aaron Eckhart", "Angus Sampson"],
+	"mainCast": [
+		"Ben Kingsley",
+		"Aaron Eckhart",
+		"Angus Sampson"
+	],
 	"productionCompany": "Altitude Film Entertainment, Nostromo Pictures",
-	"cinepostaScore": 5,
+	"cinepostaScore": 7,
 	"runtimeMinutes": 106,
 	"awards": {
 		"wins": []
@@ -35,17 +43,21 @@
 			"notForYouIf": "No es para vos si buscás novedad formal, realismo náutico o un drama de grupo más complejo."
 		},
 		"becauseYouLiked": [
-		"send-help-2026",
-		"primate-2026"
-	],
-	"related": [
-		"infierno-blanco-2012",
-		"duel-1971",
-		"shelter-2026",
-		"el-profugo-2020"
-	]
-},
+			"send-help-2026",
+			"primate-2026"
+		],
+		"related": [
+			"infierno-blanco-2012",
+			"duel-1971",
+			"shelter-2026",
+			"el-profugo-2020"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "Impacto mortal sabe cuál es su negocio: encerrar pasajeros, agua y depredadores en un espacio cada vez más chico. Renny Harlin filma el accidente con claridad y encuentra tensión en el avance del hundimiento, aunque el guion recurre a decisiones demasiado cómodas cuando necesita apurar el peligro. Ben Kingsley y Aaron Eckhart le ponen oficio a un reparto funcional, y Angus Sampson aporta un poco de humor seco para que la película no quede atrapada en la solemnidad. No reinventa el cine catástrofe, pero entrega un rato de supervivencia bastante rendidor."
+	"review": "Impacto mortal sabe cuál es su negocio: encerrar pasajeros, agua y depredadores en un espacio cada vez más chico. Renny Harlin filma el accidente con claridad y encuentra tensión en el avance del hundimiento, aunque el guion recurre a decisiones demasiado cómodas cuando necesita apurar el peligro. Ben Kingsley y Aaron Eckhart le ponen oficio a un reparto funcional, y Angus Sampson aporta un poco de humor seco para que la película no quede atrapada en la solemnidad. No reinventa el cine catástrofe, pero entrega un rato de supervivencia bastante rendidor.",
+	"releasePlatforms": [
+		"Apple TV",
+		"Prime Video"
+	]
 }

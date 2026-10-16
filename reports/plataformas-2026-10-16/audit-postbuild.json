@@ -1,0 +1,1464 @@
+{
+  "baseRef": "main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/land-of-crime-2026.json",
+    "src/data/movies/loco-mexico-magico-2026.json",
+    "src/data/movies/no-te-olvidare-2026.json",
+    "src/data/movies/frutos-prohibidos-2026.json",
+    "src/data/movies/lorne-2026.json",
+    "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+    "src/data/movies/el-momento-2026.json",
+    "src/data/movies/iron-maiden-burning-ambition-2026.json",
+    "src/data/movies/el-pez-pucheros-2026.json",
+    "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+    "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+    "src/data/movies/jovenes-detectives-3-2026.json",
+    "src/data/movies/el-amor-de-tu-vida-2026.json",
+    "src/data/movies/la-tormenta-2026.json",
+    "src/data/movies/masterplan-2026.json",
+    "src/data/movies/la-bestia-del-pantano-2026.json",
+    "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+    "src/data/movies/norm-la-historia-de-norm-macdonald-2026.json",
+    "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+    "src/data/movies/hijo-de-nadie-2026.json",
+    "src/data/movies/garuda-dare-to-dream-2026.json",
+    "src/data/movies/super-mario-galaxy-2026.json",
+    "src/data/movies/28-years-later-the-bone-temple-2026.json",
+    "src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json",
+    "src/data/movies/goat-2026.json",
+    "src/data/movies/scary-movie-6-2026.json",
+    "src/data/movies/paw-patrol-la-dino-pelicula-2026.json",
+    "src/data/movies/backrooms-2026.json",
+    "src/data/movies/la-muerte-de-robin-hood-2026.json",
+    "src/data/movies/impacto-mortal-2026.json",
+    "src/data/movies/lo-dejamos-aca-2026.json",
+    "src/data/movies/katseye-wild-hearts-2026.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/land-of-crime-2026.json",
+        "poster": "assets/posters/2026/land-of-crime-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 30528 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 30528,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/loco-mexico-magico-2026.json",
+        "poster": "assets/posters/2026/loco-mexico-magico-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 79414 bytes.",
+        "bytes": 79414,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/no-te-olvidare-2026.json",
+        "poster": "assets/posters/2026/no-te-olvidare-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 48094 bytes.",
+        "bytes": 48094,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/frutos-prohibidos-2026.json",
+        "poster": "assets/posters/2026/frutos-prohibidos-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 49282 bytes.",
+        "bytes": 49282,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/lorne-2026.json",
+        "poster": "assets/posters/2026/lorne-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 19432 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 19432,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+        "poster": "assets/posters/2026/unas-vacaciones-en-invierno-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 48422 bytes.",
+        "bytes": 48422,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-momento-2026.json",
+        "poster": "assets/posters/2026/el-momento-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 42798 bytes.",
+        "bytes": 42798,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+        "poster": "assets/posters/2026/iron-maiden-burning-ambition-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 64352 bytes.",
+        "bytes": 64352,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-pez-pucheros-2026.json",
+        "poster": "assets/posters/2026/el-pez-pucheros-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 60954 bytes.",
+        "bytes": 60954,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+        "poster": "assets/posters/2026/la-cancion-de-mi-padre-2-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 41766 bytes.",
+        "bytes": 41766,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+        "poster": "assets/posters/2026/sniper-en-tierra-de-nadie-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 62922 bytes.",
+        "bytes": 62922,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/jovenes-detectives-3-2026.json",
+        "poster": "assets/posters/2026/jovenes-detectives-3-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 41158 bytes.",
+        "bytes": 41158,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-amor-de-tu-vida-2026.json",
+        "poster": "assets/posters/2026/el-amor-de-tu-vida-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 44798 bytes.",
+        "bytes": 44798,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-tormenta-2026.json",
+        "poster": "assets/posters/2026/la-tormenta-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x719, 56522 bytes.",
+        "bytes": 56522,
+        "format": "webp",
+        "width": 480,
+        "height": 719
+      },
+      {
+        "filePath": "src/data/movies/masterplan-2026.json",
+        "poster": "assets/posters/2026/masterplan-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 61912 bytes.",
+        "bytes": 61912,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-bestia-del-pantano-2026.json",
+        "poster": "assets/posters/2026/la-bestia-del-pantano-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 61060 bytes.",
+        "bytes": 61060,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+        "poster": "assets/posters/2026/tenzing-conquistando-el-everest-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 44608 bytes.",
+        "bytes": 44608,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/norm-la-historia-de-norm-macdonald-2026.json",
+        "poster": "assets/posters/2026/norm-la-historia-de-norm-macdonald-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 47922 bytes.",
+        "bytes": 47922,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+        "poster": "assets/posters/2026/cual-es-el-precio-de-la-dignidad-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 59542 bytes.",
+        "bytes": 59542,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/hijo-de-nadie-2026.json",
+        "poster": "assets/posters/2026/hijo-de-nadie-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 27268 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 27268,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/garuda-dare-to-dream-2026.json",
+        "poster": "assets/posters/2026/garuda-dare-to-dream-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 55024 bytes.",
+        "bytes": 55024,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/super-mario-galaxy-2026.json",
+        "poster": "assets/posters/2026/super-mario-galaxy-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 67176 bytes.",
+        "bytes": 67176,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/28-years-later-the-bone-temple-2026.json",
+        "poster": "assets/posters/2026/28-years-later-the-bone-temple-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x710, 47440 bytes.",
+        "bytes": 47440,
+        "format": "webp",
+        "width": 480,
+        "height": 710
+      },
+      {
+        "filePath": "src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json",
+        "poster": "assets/posters/2026/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 43558 bytes.",
+        "bytes": 43558,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/goat-2026.json",
+        "poster": "assets/posters/2026/goat-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 71368 bytes.",
+        "bytes": 71368,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/scary-movie-6-2026.json",
+        "poster": "assets/posters/2026/scary-movie-6-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 56876 bytes.",
+        "bytes": 56876,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/paw-patrol-la-dino-pelicula-2026.json",
+        "poster": "assets/posters/2026/paw-patrol-la-dino-pelicula-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 73390 bytes.",
+        "bytes": 73390,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/backrooms-2026.json",
+        "poster": "assets/posters/2026/backrooms-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 20990 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 20990,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/la-muerte-de-robin-hood-2026.json",
+        "poster": "assets/posters/2026/la-muerte-de-robin-hood-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 42744 bytes.",
+        "bytes": 42744,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/impacto-mortal-2026.json",
+        "poster": "assets/posters/2026/impacto-mortal-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 48232 bytes.",
+        "bytes": 48232,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/lo-dejamos-aca-2026.json",
+        "poster": "assets/posters/2026/lo-dejamos-aca-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 405x720, 44352 bytes.",
+        "bytes": 44352,
+        "format": "webp",
+        "width": 405,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/katseye-wild-hearts-2026.json",
+        "poster": "assets/posters/2026/katseye-wild-hearts-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x685, 79732 bytes.",
+        "bytes": 79732,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      }
+    ],
+    "summary": {
+      "total": 32,
+      "passed": 28,
+      "warnings": 4,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "ok",
+    "message": "review audit passed for 32 file(s)"
+  },
+  "findings": [
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "Current streaming entry \"Land of Crime\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "\"Eucir de Souza\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "\"Eucir de Souza\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "\"Jackson Antunes\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "\"Jackson Antunes\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "\"Thais Lago\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "\"Thais Lago\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "\"Thais Lago\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "Current streaming entry \"Loco México Mágico\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Carlos Santos\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Carlos Santos\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Carlos Santos\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Silverio Palacios\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Silverio Palacios\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Daniel Sosa\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Daniel Sosa\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Fernando Cuautle\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/loco-mexico-magico-2026.json",
+      "message": "\"Fernando Cuautle\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "Current streaming entry \"No te olvidaré\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "\"Vanessa Caswill\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "\"Vanessa Caswill\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "\"Vanessa Caswill\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "\"Tyriq Withers\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "\"Tyriq Withers\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "\"Rudy Pankow\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/no-te-olvidare-2026.json",
+      "message": "\"Rudy Pankow\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "\"Meredith Alloway\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "\"Meredith Alloway\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "\"Meredith Alloway\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "\"Alexandra Shipp\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "\"Alexandra Shipp\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "\"Victoria Pedretti\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/frutos-prohibidos-2026.json",
+      "message": "\"Victoria Pedretti\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "Current streaming entry \"Lorne\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Morgan Neville\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Morgan Neville\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Lorne Michaels\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Lorne Michaels\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Steve Higgins\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Steve Higgins\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Michael Che\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "\"Michael Che\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+      "message": "Current streaming entry \"Unas vacaciones en invierno\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+      "message": "\"Polly Findlay\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+      "message": "\"Polly Findlay\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+      "message": "\"Polly Findlay\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+      "message": "\"Niamh Cusack\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/unas-vacaciones-en-invierno-2026.json",
+      "message": "\"Niamh Cusack\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-momento-2026.json",
+      "message": "\"Aidan Zamiri\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-momento-2026.json",
+      "message": "\"Aidan Zamiri\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-momento-2026.json",
+      "message": "\"Charli xcx\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-momento-2026.json",
+      "message": "\"Charli xcx\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-momento-2026.json",
+      "message": "\"Hailey Benton Gates\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-momento-2026.json",
+      "message": "\"Hailey Benton Gates\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Malcolm Venville\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Malcolm Venville\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Steve Harris\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Steve Harris\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Bruce Dickinson\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Bruce Dickinson\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Nicko McBrain\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/iron-maiden-burning-ambition-2026.json",
+      "message": "\"Nicko McBrain\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/el-pez-pucheros-2026.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/el-pez-pucheros-2026.json",
+      "message": "\"Ricard Cussó\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-pez-pucheros-2026.json",
+      "message": "\"Ricard Cussó\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-pez-pucheros-2026.json",
+      "message": "\"Ricard Cussó\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-pez-pucheros-2026.json",
+      "message": "\"Nina Oyama\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-pez-pucheros-2026.json",
+      "message": "\"Nina Oyama\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "Current streaming entry \"La canción de mi padre 2\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Andrew Erwin\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Andrew Erwin\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Brent McCorkle\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Brent McCorkle\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"John Michael Finley\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"John Michael Finley\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Milo Ventimiglia\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Milo Ventimiglia\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Sophie Skelton\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-cancion-de-mi-padre-2-2026.json",
+      "message": "\"Sophie Skelton\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "Current streaming entry \"Sniper: En tierra de nadie\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Trevor Calverley\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Trevor Calverley\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Trevor Calverley\" uses an uncommon portrait host (\"www.exposurecrew.tv\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Chad Michael Collins\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Chad Michael Collins\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Ryan Robbins\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Ryan Robbins\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Manuel Rodriguez-Saenz\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Manuel Rodriguez-Saenz\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/sniper-en-tierra-de-nadie-2026.json",
+      "message": "\"Manuel Rodriguez-Saenz\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Tim Dünschede\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Tim Dünschede\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Julius Weckauf\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Julius Weckauf\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Nevio Wendt\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Nevio Wendt\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Levi Brandl\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/jovenes-detectives-3-2026.json",
+      "message": "\"Levi Brandl\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-amor-de-tu-vida-2026.json",
+      "message": "\"Rachel Morrison\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-amor-de-tu-vida-2026.json",
+      "message": "\"Rachel Morrison\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-amor-de-tu-vida-2026.json",
+      "message": "\"Aaron Pierre\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-amor-de-tu-vida-2026.json",
+      "message": "\"Aaron Pierre\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-amor-de-tu-vida-2026.json",
+      "message": "\"Patrick Schwarzenegger\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-amor-de-tu-vida-2026.json",
+      "message": "\"Patrick Schwarzenegger\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Josephine Bornebusch\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Josephine Bornebusch\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Gustaf Skarsgård\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Gustaf Skarsgård\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Aliette Opheim\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Aliette Opheim\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Filip Berg\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-tormenta-2026.json",
+      "message": "\"Filip Berg\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/masterplan-2026.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/masterplan-2026.json",
+      "message": "\"Thomas Vincent\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/masterplan-2026.json",
+      "message": "\"Thomas Vincent\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/masterplan-2026.json",
+      "message": "\"Simona Tabasco\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/masterplan-2026.json",
+      "message": "\"Simona Tabasco\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/masterplan-2026.json",
+      "message": "\"Victor Belmondo\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/masterplan-2026.json",
+      "message": "\"Victor Belmondo\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-bestia-del-pantano-2026.json",
+      "message": "\"Madison Davenport\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-bestia-del-pantano-2026.json",
+      "message": "\"Madison Davenport\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-bestia-del-pantano-2026.json",
+      "message": "\"Tracey Bonner\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/la-bestia-del-pantano-2026.json",
+      "message": "\"Tracey Bonner\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+      "message": "\"Jennifer Peedom\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+      "message": "\"Jennifer Peedom\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+      "message": "\"Jennifer Peedom\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+      "message": "\"Genden Phuntsok\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+      "message": "\"Genden Phuntsok\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/tenzing-conquistando-el-everest-2026.json",
+      "message": "\"Genden Phuntsok\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/norm-la-historia-de-norm-macdonald-2026.json",
+      "message": "\"Norm Macdonald\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/norm-la-historia-de-norm-macdonald-2026.json",
+      "message": "\"Norm Macdonald\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/norm-la-historia-de-norm-macdonald-2026.json",
+      "message": "\"David Letterman\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/norm-la-historia-de-norm-macdonald-2026.json",
+      "message": "\"David Letterman\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+      "message": "\"Sajeev Pazhoor\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+      "message": "\"Sajeev Pazhoor\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+      "message": "\"Nimisha Sajayan\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+      "message": "\"Nimisha Sajayan\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+      "message": "\"Vijayalakshmi Veeramani\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+      "message": "\"Vijayalakshmi Veeramani\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json",
+      "message": "\"Vijayalakshmi Veeramani\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Safy Nebbou\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Safy Nebbou\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Romain Duris\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Romain Duris\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Cristiana Capotondi\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Cristiana Capotondi\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Vithaya Pansringarm\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "\"Vithaya Pansringarm\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Ronny Gani\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Ronny Gani\" uses an uncommon portrait host (\"asset.kompas.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Kristo Immanuel\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Kristo Immanuel\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Keanu Azka\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Keanu Azka\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Keanu Azka\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Quinn Salman\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/garuda-dare-to-dream-2026.json",
+      "message": "\"Quinn Salman\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/goat-2026.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/scary-movie-6-2026.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/la-muerte-de-robin-hood-2026.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/impacto-mortal-2026.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/impacto-mortal-2026.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lo-dejamos-aca-2026.json",
+      "message": "\"Hernán Goldfrid\" uses an uncommon portrait host (\"cinemadominicano.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/katseye-wild-hearts-2026.json",
+      "message": "\"Nadia Hallgren\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/land-of-crime-2026.json",
+      "message": "poster is valid at 30528 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/lorne-2026.json",
+      "message": "poster is valid at 19432 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/hijo-de-nadie-2026.json",
+      "message": "poster is valid at 27268 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/backrooms-2026.json",
+      "message": "poster is valid at 20990 bytes; preferred range is 40960-81920 bytes. (480x686)"
+    }
+  ]
+}
