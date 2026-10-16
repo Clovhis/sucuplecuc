@@ -17,6 +17,7 @@ import mistyGreen from '../../src/data/editorials/misty-green-chris-rock-rosalin
 import theDevils from '../../src/data/editorials/the-devils-ken-russell-restauracion-octubre-2026.json' with { type: 'json' };
 import libertadDoble from '../../src/data/editorials/la-libertad-doble-lisandro-alonso-tokio-2026.json' with { type: 'json' };
 import lasNoches from '../../src/data/editorials/las-noches-ana-bovino-dok-leipzig-2026.json' with { type: 'json' };
+import estrenosOctubre from '../../src/data/editorials/estrenos-cines-15-octubre-2026.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -37,7 +38,7 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await expect(page).toHaveURL(/\/editorial\/$/);
 }
 
-for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, naHongJin, mistyGreen, theDevils, libertadDoble, lasNoches]) {
+for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, naHongJin, mistyGreen, theDevils, libertadDoble, lasNoches, estrenosOctubre]) {
   test(`${entry.slug}: news sources, SEO and responsive images remain available from home and archive`, async ({ page }, testInfo) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
@@ -117,7 +118,7 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
     await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0)).toBe(true);
     await expect(card.getByText('Leer nota')).toBeVisible();
   }
-  await home.screenshot({ path: testInfo.outputPath('stories-home.png') });
+  await home.screenshot({ path: testInfo.outputPath('stories-home.png'), scale: 'css' });
   const firstLink = cards.first().getByRole('link');
   const firstHref = await firstLink.getAttribute('href');
   await firstLink.focus();
@@ -135,7 +136,7 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
     expect(box!.x).toBeGreaterThanOrEqual(0);
     expect(box!.x + box!.width).toBeLessThanOrEqual(320);
   }
-  await home.screenshot({ path: testInfo.outputPath('stories-home-320.png') });
+  await home.screenshot({ path: testInfo.outputPath('stories-home-320.png'), scale: 'css' });
   await openEditorialIndex(page);
   await expect(page.locator('.editorial-card')).toHaveCount(publications.length);
   expect(await page.locator('.editorial-card time').evaluateAll(nodes => nodes.map(node => node.getAttribute('datetime'))))
@@ -143,7 +144,7 @@ test('story cards navigate by keyboard, fit narrow screens and link to the compl
   expect(await page.locator('.editorial-card > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))))
     .toEqual(publications.map(entry => `/editorial/${entry.slug}/`));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-  await page.locator('.editorial-index').screenshot({ path: testInfo.outputPath('stories-archive-320.png') });
+  await page.locator('.editorial-index').screenshot({ path: testInfo.outputPath('stories-archive-320.png'), scale: 'css' });
   expect(errors).toEqual([]);
 });
 
