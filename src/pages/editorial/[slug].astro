@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HomeBrandLink from '../../components/HomeBrandLink.astro';
 import EditorialImage from '../../components/EditorialImage.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 import { editorialAsset, formatEditorialDate, getEditorials, getEditorialPath, type Editorial } from '../../lib/editorial';
 import { getMovies, getMoviePath } from '../../lib/movies';
 import { getPersonPath } from '../../lib/people';
@@ -10,6 +11,7 @@ interface Props { entry: Editorial; }
 const { entry } = Astro.props;
 const movie = entry.movieSlug ? getMovies().find((movie) => movie.slug === entry.movieSlug) : undefined;
 const image = new URL(editorialAsset(entry.cover.src), Astro.site).href;
+const canonicalUrl = new URL(getEditorialPath(entry.slug), Astro.site).href;
 const structuredData = [{ '@context': 'https://schema.org', '@type': 'Article', headline: entry.title, description: entry.excerpt, datePublished: entry.date, author: { '@type': 'Organization', name: entry.author }, image, articleSection: entry.type, keywords: entry.tags.join(', '), timeRequired: `PT${entry.readingTime}M`, mainEntityOfPage: new URL(getEditorialPath(entry.slug), Astro.site).href }];
 ---
 <BaseLayout title={`${entry.title} | CinePosta Editorial`} description={entry.excerpt} image={image} openGraphType="article" structuredData={structuredData}>
@@ -24,6 +26,7 @@ const structuredData = [{ '@context': 'https://schema.org', '@type': 'Article', 
         return <EditorialImage image={block} />;
       })}</div>
       <footer>
+        <ShareButtons id={`share-${entry.slug}`} url={canonicalUrl} title={entry.title} text={`Leé «${entry.title}» en CinePosta`} variant="editorial" />
         <ul aria-label="Temas">{entry.tags.map((tag) => <li>{tag}</li>)}</ul>
         {entry.sources && entry.sources.length > 0 && <aside class="movie-link" aria-label="Fuentes consultadas">
           <span>Fuentes consultadas</span>

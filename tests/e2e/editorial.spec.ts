@@ -18,6 +18,7 @@ import theDevils from '../../src/data/editorials/the-devils-ken-russell-restaura
 import libertadDoble from '../../src/data/editorials/la-libertad-doble-lisandro-alonso-tokio-2026.json' with { type: 'json' };
 import lasNoches from '../../src/data/editorials/las-noches-ana-bovino-dok-leipzig-2026.json' with { type: 'json' };
 import estrenosOctubre from '../../src/data/editorials/estrenos-cines-15-octubre-2026.json' with { type: 'json' };
+import loDejamosAca from '../../src/data/editorials/lo-dejamos-aca-darin-peretti-entre-la-risa-y-el-bajon.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -154,6 +155,7 @@ for (const { entry, movieTitle, sourcePattern } of [
   { entry: colony, movieTitle: 'Colony: Zona Cero', sourcePattern: /^https:\/\/wellgousa\.com\// },
   { entry: insaciable, movieTitle: 'Insaciable', sourcePattern: /^https:\/\/www\.independentfilmco\.com\/films\/saccharine$/ },
   { entry: animales, movieTitle: 'Animales (Ben Affleck)', sourcePattern: /^https:\/\/www\.netflix\.com\/tudum\// },
+  { entry: loDejamosAca, movieTitle: 'Lo dejamos acá', sourcePattern: /^https:\/\/assetshare\.netflixstudios\.com\// },
 ]) {
   const path = `/editorial/${entry.slug}/`;
 

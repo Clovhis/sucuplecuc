@@ -1,0 +1,50 @@
+---
+interface Props {
+  id: string;
+  url: string;
+  title: string;
+  label?: string;
+  text: string;
+  variant?: 'movie' | 'editorial';
+}
+const { id, url, title, label = title, text, variant = 'movie' } = Astro.props;
+const whatsappUrl = `https://wa.me/?${new URLSearchParams({ text: `${text} ${url}` })}`;
+const xUrl = `https://twitter.com/intent/tweet?${new URLSearchParams({ text, url })}`;
+---
+<section
+  class:list={['movie-share', { 'editorial-share': variant === 'editorial' }]}
+  aria-labelledby={id}
+  data-content-share
+  data-movie-share={variant === 'movie' ? true : undefined}
+  data-share-url={url}
+  data-share-title={title}
+  data-share-text={text}
+>
+  <div class="movie-share__top">
+    <p id={id} class="movie-share__title">{variant === 'editorial' ? 'Compartir esta nota' : 'Compartir'}</p>
+  </div>
+  <div class="movie-share__actions" aria-label={`Compartir ${label}`}>
+    <button class="movie-share__button movie-share__button--primary" type="button" data-native-share hidden>Compartir</button>
+    <a class="movie-share__button movie-share__button--whatsapp" href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label={`Compartir ${label} por WhatsApp`}>
+      <img class="movie-share__logo movie-share__logo--whatsapp" src={`${import.meta.env.BASE_URL}brand/social/whatsapp.svg`} alt="" aria-hidden="true" loading="lazy" />
+    </a>
+    <a class="movie-share__button movie-share__button--x" href={xUrl} target="_blank" rel="noopener noreferrer" aria-label={`Compartir ${label} en X`}>
+      <img class="movie-share__logo movie-share__logo--x" src={`${import.meta.env.BASE_URL}brand/social/x.svg`} alt="" aria-hidden="true" loading="lazy" />
+    </a>
+    <button class="movie-share__button movie-share__button--copy" type="button" data-copy-share-url>Copiar URL</button>
+  </div>
+  <p class="movie-share__status" role="status" aria-live="polite" data-share-status></p>
+</section>
+<script>
+  import '../scripts/share';
+</script>
+<style>
+  .editorial-share { max-width: 100%; padding: 0 0 1.5rem; margin-bottom: 1.5rem; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: none; box-shadow: none; gap: .75rem; }
+  .editorial-share .movie-share__title { color: var(--muted); font: 500 .75rem/1.4 var(--font-sans); letter-spacing: .06em; }
+  .editorial-share .movie-share__actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .editorial-share .movie-share__button { width: auto; min-width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 3px; background: none; color: var(--text); box-shadow: none; transform: none; text-decoration: none; }
+  .editorial-share .movie-share__button:hover { border-color: var(--accent); }
+  .editorial-share .movie-share__button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .editorial-share .movie-share__status { margin: 0; min-height: 0; color: var(--muted); font-weight: 400; }
+  .editorial-share .movie-share__status:empty { display: none; }
+</style>

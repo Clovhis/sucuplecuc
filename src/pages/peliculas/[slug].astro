@@ -21,6 +21,7 @@ import {
 } from '../../lib/movies';
 import { getMoviePeopleGroups } from '../../lib/people';
 import MovieRating from '../../components/MovieRating.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 import MovieEditorialLinks from '../../components/MovieEditorialLinks.astro';
 import MovieReaction from '../../components/MovieReaction.astro';
 import AwardMark from '../../components/AwardMark.astro';
@@ -173,13 +174,6 @@ const awardCategories = groupedAwards.flatMap((group) =>
 const relatedIntro = `Elegidas por género, tono y mirada: no por repetir la misma franquicia.`;
 const movieCanonicalUrl = new URL(getMoviePath(movie.slug), SITE_URL).toString();
 const shareText = `Mirá la reseña de ${movie.title} (${movie.year}) en ${SITE_NAME}`;
-const whatsappShareUrl = `https://wa.me/?${new URLSearchParams({
-	text: `${shareText} ${movieCanonicalUrl}`,
-}).toString()}`;
-const xShareUrl = `https://twitter.com/intent/tweet?${new URLSearchParams({
-	text: shareText,
-	url: movieCanonicalUrl,
-}).toString()}`;
 const structuredData = createMovieStructuredData(movie, pageTitle, pageDescription);
 const editorialUpdatedLabel = movie.releaseDate
 	? new Intl.DateTimeFormat('es-AR', {
@@ -539,64 +533,7 @@ function shouldHideLivingAge(person: { birthDate?: string; birthYear?: number; d
 						<MovieEditorialLinks movieSlug={movie.slug} />
 						<section class="movie-detail__reader" aria-label="Tu opinión y compartir">
 							<MovieRating movieSlug={movie.slug} />
-							<section
-								class="movie-share"
-								aria-labelledby={`share-${movie.slug}`}
-								data-movie-share
-								data-share-url={movieCanonicalUrl}
-								data-share-title={pageTitle}
-								data-share-text={shareText}
-							>
-								<div class="movie-share__top">
-									<p id={`share-${movie.slug}`} class="movie-share__title">
-										Compartir
-									</p>
-								</div>
-								<div class="movie-share__actions" aria-label={`Compartir ${movie.title}`}>
-									<button
-										class="movie-share__button movie-share__button--primary"
-										type="button"
-										data-native-share
-										hidden
-									>
-										Compartir
-									</button>
-									<a
-										class="movie-share__button movie-share__button--whatsapp"
-										href={whatsappShareUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										aria-label={`Compartir ${movie.title} por WhatsApp`}
-									>
-										<img
-											class="movie-share__logo movie-share__logo--whatsapp"
-											src="/brand/social/whatsapp.svg"
-											alt=""
-											aria-hidden="true"
-											loading="lazy"
-										/>
-									</a>
-									<a
-										class="movie-share__button movie-share__button--x"
-										href={xShareUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										aria-label={`Compartir ${movie.title} en X`}
-									>
-										<img
-											class="movie-share__logo movie-share__logo--x"
-											src="/brand/social/x.svg"
-											alt=""
-											aria-hidden="true"
-											loading="lazy"
-										/>
-									</a>
-									<button class="movie-share__button movie-share__button--copy" type="button" data-copy-share-url>
-										Copiar URL
-									</button>
-								</div>
-								<p class="movie-share__status" role="status" aria-live="polite" data-share-status></p>
-							</section>
+							<ShareButtons id={`share-${movie.slug}`} url={movieCanonicalUrl} title={pageTitle} label={movie.title} text={shareText} />
 						</section>
 						<div class="movie-detail__signals" aria-label="Medidores de CinePosta">
 							{sangrometroScore !== undefined && (
