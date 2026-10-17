@@ -1,0 +1,1554 @@
+{
+  "dateAR": "2026-10-17",
+  "baselineCine": 50,
+  "withCordobeces": 51,
+  "removed": 8,
+  "finalCine": 43,
+  "candidates": [
+    "src/data/movies/cordobeces-la-pelicula-2026.json",
+    "src/data/movies/romeo-y-ofelia-2024.json",
+    "src/data/movies/el-ultimo-gran-golpe-2026.json",
+    "src/data/movies/encantador-2025.json",
+    "src/data/movies/linkin-park-unshatter-2026.json",
+    "src/data/movies/cuentos-del-jardin-magico-2025.json",
+    "src/data/movies/relajadas-y-muy-peligrosas-2026.json",
+    "src/data/movies/retrato-de-un-pianista-2025.json",
+    "src/data/movies/a-cualquier-precio-2026.json"
+  ],
+  "movies": [
+    {
+      "slug": "avengers-endgame-2019",
+      "title": "Avengers: Endgame",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Disney Plus"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Disney Plus"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=192&codPelicula=546",
+      "fact": "Atlas Catan: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {
+        "slug": "avengers-endgame-2019",
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Avengers%3A%20Endgame",
+        "candidates": [
+          {
+            "title": "Vengadores: Endgame",
+            "year": 2019,
+            "score": 70
+          },
+          {
+            "title": "Vengadores: Infinity War",
+            "year": 2018,
+            "score": 0
+          }
+        ]
+      },
+      "venue": "Atlas Catan",
+      "locality": "Ruta 3 Km. 29 - Rosas 14457, González Catán, Provincia de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=546"
+    },
+    {
+      "slug": "la-odisea-2026",
+      "title": "La Odisea",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=501",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=501"
+    },
+    {
+      "slug": "spider-man-brand-new-day-2026",
+      "title": "Spider-Man: Un Nuevo Día",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=197&codPelicula=497",
+      "fact": "Atlas Flores: funciones disponibles 2026-10-17, 2026-10-18.",
+      "justwatch": {},
+      "venue": "Atlas Flores",
+      "locality": "Rivera Indarte 44, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=497"
+    },
+    {
+      "slug": "la-invitacion-2026",
+      "title": "La invitación",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=526",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=526"
+    },
+    {
+      "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+      "title": "Adolescencia, sexo y muerte en Campamento Miasma",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "score": 8,
+      "source": "https://www.timeout.com/es/buenos-aires/mubi-fest-2026-cinepolis-houssay",
+      "fact": "MUBI Fest: 23/10 a las 22:50 y 25/10 a las 21:20. Coincide con Micropsia y la cartelera por sede de Cineya. Cinépolis redirige al selector internacional y MUBI bloquea lectura: contraste público fechado, sin afirmar compra de entradas verificada.",
+      "justwatch": {
+        "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+        "title": "Adolescencia, sexo y muerte en Campamento Miasma",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/adolescencia-sexo-y-muerte-en-campamento-miasma",
+        "matchedTitle": "Adolescencia, sexo y muerte en campamento Miasma",
+        "matchedYear": 2026,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "BUY"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "BUY"
+          }
+        ]
+      },
+      "venue": "Cinépolis Plaza Houssay",
+      "locality": "Av. Córdoba 2135, CABA",
+      "dates": [
+        "2026-10-23",
+        "2026-10-25"
+      ]
+    },
+    {
+      "slug": "paw-patrol-la-dino-pelicula-2026",
+      "title": "PAW Patrol: La Dino Película",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Flow"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Flow"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=528",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {
+        "slug": "paw-patrol-la-dino-pelicula-2026",
+        "title": "PAW Patrol: La Dino Película",
+        "year": 2026,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=PAW%20Patrol%3A%20The%20Dino%20Movie",
+        "candidates": [
+          {
+            "title": "La Patrulla Canina: La dino película",
+            "year": 2026,
+            "score": 78
+          },
+          {
+            "title": "Matchbox: La película",
+            "year": 2026,
+            "score": 62
+          },
+          {
+            "title": "La Patrulla Canina: En Navidad",
+            "year": 2025,
+            "score": 16
+          }
+        ]
+      },
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=528"
+    },
+    {
+      "slug": "yo-narciso-2026",
+      "title": "Yo, Narciso",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 6,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=17/10/2026",
+      "fact": "Gaumont: 2026-10-17 17:00, 2026-10-20 17:00, 2026-10-19 17:00, 2026-10-21 17:00, 2026-10-18 17:00",
+      "justwatch": {},
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+      "title": "La noche del demonio: Están entre nosotros",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "score": 7,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=20/10/2026",
+      "fact": "Gaumont: 2026-10-20 22:00",
+      "justwatch": {
+        "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+        "title": "La noche del demonio: Están entre nosotros",
+        "year": 2026,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Insidious%3A%20Out%20of%20the%20Further",
+        "candidates": [
+          {
+            "title": "Insidious: Fuera del más allá",
+            "year": 2026,
+            "score": 46
+          }
+        ]
+      },
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-20"
+      ]
+    },
+    {
+      "slug": "coyote-vs-acme-2026",
+      "title": "Coyote vs. Acme",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=547",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=547"
+    },
+    {
+      "slug": "pepita-la-pistolera-2026",
+      "title": "Pepita la pistolera",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 6,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=17/10/2026",
+      "fact": "Gaumont: 2026-10-17 18:00, 2026-10-20 18:00, 2026-10-20 20:00, 2026-10-19 18:00, 2026-10-19 20:00, 2026-10-21 18:00, 2026-10-21 20:00, 2026-10-18 18:00",
+      "justwatch": {
+        "slug": "pepita-la-pistolera-2026",
+        "title": "Pepita la pistolera",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/pepita-la-pistolera-2026",
+        "matchedTitle": "Pepita la pistolera",
+        "matchedYear": 2026,
+        "providers": []
+      },
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "una-quinta-en-portugal-2025",
+      "title": "Una quinta en Portugal",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=17/10/2026",
+      "fact": "Gaumont: 2026-10-17 14:30, 2026-10-20 14:30, 2026-10-19 14:30, 2026-10-21 14:30, 2026-10-18 14:30",
+      "justwatch": {
+        "slug": "una-quinta-en-portugal-2025",
+        "title": "Una quinta en Portugal",
+        "year": 2025,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Una%20quinta%20portuguesa",
+        "candidates": [
+          {
+            "title": "Una batalla tras otra",
+            "year": 2025,
+            "score": 50
+          },
+          {
+            "title": "La quinta de los almendros blancos",
+            "year": 2025,
+            "score": 43
+          },
+          {
+            "title": "Una noche al año",
+            "year": 2026,
+            "score": 20
+          }
+        ]
+      },
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "romeo-y-ofelia-2024",
+      "title": "Romeo y Ofelia",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 7,
+      "source": "https://ellaferrere.com.ar/2026/10/11/del-14-al-18-de-octubre/",
+      "fact": "La función vigente de El Cairo es en Rosario, fuera del territorio. Espacio INCAA Morón la programó el 2 y 9/10, pero no en la programación actual 14–18/10. Sin continuidad comprobada en CABA/PBA.",
+      "justwatch": {
+        "slug": "romeo-y-ofelia-2024",
+        "title": "Romeo y Ofelia",
+        "year": 2024,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/romeo-y-ofelia",
+        "matchedTitle": "Romeo y Ofelia",
+        "matchedYear": 2024,
+        "providers": []
+      }
+    },
+    {
+      "slug": "desobediente-2026",
+      "title": "Desobediente",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 6,
+      "source": "https://canalabierto.com.ar/2026/09/17/desobediente-el-mandato-de-romper-la-herencia-del-horror/",
+      "fact": "Directores anuncian la próxima función del 23/10 en Gaumont. La API todavía no publica ninguna función de esa semana; no hay evidencia de cancelación.",
+      "justwatch": {
+        "slug": "desobediente-2026",
+        "title": "Desobediente",
+        "year": 2026,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Desobediente",
+        "candidates": []
+      },
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-23"
+      ]
+    },
+    {
+      "slug": "resident-evil-noche-cero-2026",
+      "title": "Resident Evil: Noche Cero",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=569",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=569"
+    },
+    {
+      "slug": "tres-adioses-2025",
+      "title": "Tres adioses",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=195&codPelicula=574",
+      "fact": "Atlas Patio Bullrich: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {
+        "slug": "tres-adioses-2025",
+        "title": "Tres adioses",
+        "year": 2025,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/tres-adioses",
+        "matchedTitle": "Tres adioses",
+        "matchedYear": 2025,
+        "providers": []
+      },
+      "venue": "Atlas Patio Bullrich",
+      "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=574"
+    },
+    {
+      "slug": "bajo-tus-pies-2025",
+      "title": "Bajo tus pies",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 4,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=197&codPelicula=577",
+      "fact": "Atlas Flores: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {
+        "slug": "bajo-tus-pies-2025",
+        "title": "Bajo tus pies",
+        "year": 2025,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/bajo-tus-pies",
+        "matchedTitle": "Bajo Tus Pies",
+        "matchedYear": 2025,
+        "providers": []
+      },
+      "venue": "Atlas Flores",
+      "locality": "Rivera Indarte 44, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=577"
+    },
+    {
+      "slug": "el-corazon-de-la-bestia-2026",
+      "title": "El corazón de la bestia",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=578",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=578"
+    },
+    {
+      "slug": "el-ultimo-gran-golpe-2026",
+      "title": "El último gran golpe",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 5,
+      "source": "https://www.nuevomonumental.com/es-AR/programacion/2018",
+      "fact": "Ficha sin funciones disponibles; tampoco figura en las carteleras actuales de Cinemark, Showcase, Atlas y Cinemacenter.",
+      "justwatch": {
+        "slug": "el-ultimo-gran-golpe-2026",
+        "title": "El último gran golpe",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-ultimo-gran-golpe",
+        "matchedTitle": "El último gran golpe",
+        "matchedYear": 2026,
+        "providers": []
+      }
+    },
+    {
+      "slug": "encantador-2025",
+      "title": "Encantador",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 5,
+      "source": "https://misiones.gob.ar/obera-cuatro-peliculas-para-disfrutar-en-pantalla-grande/",
+      "fact": "La función vigente encontrada es en Oberá, Misiones (18/10), fuera del territorio. La última en Sala Norita CABA fue el 16/10. Sin continuidad comprobada en CABA/PBA.",
+      "justwatch": {
+        "slug": "encantador-2025",
+        "title": "Encantador",
+        "year": 2025,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/encantador",
+        "matchedTitle": "Encantador",
+        "matchedYear": 2025,
+        "providers": []
+      }
+    },
+    {
+      "slug": "la-isla-olvidada-2026",
+      "title": "La isla olvidada",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=580",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=580"
+    },
+    {
+      "slug": "su-propio-infierno-2026",
+      "title": "Su propio infierno",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 4,
+      "source": "https://www.timeout.com/es/buenos-aires/mubi-fest-2026-cinepolis-houssay",
+      "fact": "MUBI Fest: 23/10 a las 14:20 y 25/10 a las 14:30. Programación coincidente en Micropsia; se conserva por estas funciones porteñas, no por Santa Fe ni España.",
+      "justwatch": {
+        "slug": "su-propio-infierno-2026",
+        "title": "Su propio infierno",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/su-propio-infierno",
+        "matchedTitle": "Su propio infierno",
+        "matchedYear": 2026,
+        "providers": []
+      },
+      "venue": "Cinépolis Plaza Houssay",
+      "locality": "Av. Córdoba 2135, CABA",
+      "dates": [
+        "2026-10-23",
+        "2026-10-25"
+      ]
+    },
+    {
+      "slug": "linkin-park-unshatter-2026",
+      "title": "Linkin Park: Unshatter",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 8,
+      "source": "https://multiplex.com.ar/peliculas/linkin-park-unshatter/",
+      "fact": "Exhibidor sin funciones; evento especial del 30/9 al 4/10 agotado en el calendario. Ausente de las cuatro cadenas actuales.",
+      "justwatch": {
+        "slug": "linkin-park-unshatter-2026",
+        "title": "Linkin Park: Unshatter",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/linkin-park-unshatter",
+        "matchedTitle": "LINKIN PARK: UNSHATTER",
+        "matchedYear": 2026,
+        "providers": []
+      }
+    },
+    {
+      "slug": "cuentos-del-jardin-magico-2025",
+      "title": "Cuentos del jardín mágico",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 7,
+      "source": "https://multiplex.com.ar/peliculas/cuentos-del-jardin-magico/",
+      "fact": "Exhibidor sin funciones y ausencia de las cuatro carteleras actuales. Las funciones encontradas en Chile/Colombia no corresponden a AR.",
+      "justwatch": {
+        "slug": "cuentos-del-jardin-magico-2025",
+        "title": "Cuentos del jardín mágico",
+        "year": 2025,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Poh%C3%A1dky%20po%20babi%C4%8Dce",
+        "candidates": [
+          {
+            "title": "El muñeco de arcilla",
+            "year": 2025,
+            "score": 30
+          },
+          {
+            "title": "Una novia para mi boda",
+            "year": 2026,
+            "score": 0
+          },
+          {
+            "title": "The Swan: El reality más extremo",
+            "year": 2026,
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "slug": "digger-2026",
+      "title": "Digger",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=582",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=582"
+    },
+    {
+      "slug": "escondida-en-mi-cabeza-2026",
+      "title": "Escondida en mi cabeza",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 5,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=17/10/2026",
+      "fact": "Gaumont: 2026-10-17 16:00, 2026-10-20 16:00, 2026-10-19 16:00, 2026-10-21 16:00, 2026-10-18 16:00",
+      "justwatch": {
+        "slug": "escondida-en-mi-cabeza-2026",
+        "title": "Escondida en mi cabeza",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/escondida-en-mi-cabeza",
+        "matchedTitle": "Escondida en mi cabeza",
+        "matchedYear": 2026,
+        "providers": []
+      },
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "guardianes-del-museo-2-2026",
+      "title": "Guardianes del museo 2",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 5,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=194&codPelicula=586",
+      "fact": "Atlas Alcorta: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {
+        "slug": "guardianes-del-museo-2-2026",
+        "title": "Guardianes del museo 2",
+        "year": 2026,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Cats%20in%20the%20Museum%202",
+        "candidates": [
+          {
+            "title": "Gatos en el museo 2: Tesoros de Egipto",
+            "year": 2026,
+            "score": 41
+          },
+          {
+            "title": "The Black Phone 2",
+            "year": 2025,
+            "score": 20
+          },
+          {
+            "title": "The Batman 2",
+            "year": 2027,
+            "score": 20
+          }
+        ]
+      },
+      "venue": "Atlas Alcorta",
+      "locality": "Jerónimo Salguero 3172, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=586"
+    },
+    {
+      "slug": "hangar-rojo-2026",
+      "title": "Hangar Rojo",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://agendadecine.com/ciclos-y-festivales/octubre-en-sala-norita-cortinas-espacio-incaa-ate-nacional",
+      "fact": "Programación del ciclo en Sala Norita: 23/10 a las 19. Las funciones de Rosario no se usan para retener Cine.",
+      "justwatch": {
+        "slug": "hangar-rojo-2026",
+        "title": "Hangar Rojo",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/hangar-rojo",
+        "matchedTitle": "Hangar rojo",
+        "matchedYear": 2026,
+        "providers": []
+      },
+      "venue": "Sala Norita Cortiñas — Espacio INCAA ATE Nacional",
+      "locality": "Belgrano 2527, CABA",
+      "dates": [
+        "2026-10-23"
+      ]
+    },
+    {
+      "slug": "relajadas-y-muy-peligrosas-2026",
+      "title": "Relajadas y muy peligrosas",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 7,
+      "source": "https://rosario.lastipas.com.ar/es-AR/programacion/522",
+      "fact": "Exhibidor sin funciones disponibles y ausencia de las cuatro cadenas; La Nación también devuelve su ficha sin funciones.",
+      "justwatch": {
+        "slug": "relajadas-y-muy-peligrosas-2026",
+        "title": "Relajadas y muy peligrosas",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/spa-weekend",
+        "matchedTitle": "Relajadas y muy peligrosas",
+        "matchedYear": 2026,
+        "providers": []
+      }
+    },
+    {
+      "slug": "retrato-de-un-pianista-2025",
+      "title": "Retrato de un pianista",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 7,
+      "source": "https://portal.salalucida.org/",
+      "fact": "Última función encontrada: Lúcida 15/10; ya no integra la programación 17–24. Gaumont: especiales del 1 y 8/10, sin funciones 17–21. Sala Norita: 9/10, vencida.",
+      "justwatch": {
+        "slug": "retrato-de-un-pianista-2025",
+        "title": "Retrato de un pianista",
+        "year": 2025,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Retrato%20de%20un%20pianista",
+        "candidates": [
+          {
+            "title": "Verity. La sombra de un engaño",
+            "year": 2026,
+            "score": 27
+          }
+        ]
+      }
+    },
+    {
+      "slug": "verity-la-sombra-de-un-engano-2026",
+      "title": "Verity: La sombra de un engaño",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 6,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=583",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=583"
+    },
+    {
+      "slug": "vertigo-2-punto-muerto-2026",
+      "title": "Vértigo 2: Punto muerto",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 6,
+      "source": "https://cineya.lat/ar/pelicula/vertigo-2-punto-muerto/?desde=%2Far%2Fpelicula%2Fvertigo-2-punto-muerto%2Frio-cuarto%2F",
+      "fact": "Cartelera por sede: Abasto 17–21/10 a las 13; contraste con el listado oficial Cinemark SHOWING_NOW. La página oficial requiere cliente JS para exponer horarios.",
+      "justwatch": {},
+      "venue": "Cinemark Abasto",
+      "locality": "Av. Corrientes 3247, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "a-cualquier-precio-2026",
+      "title": "A cualquier precio",
+      "decision": "retirar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Otras plataformas"
+      ],
+      "score": 8,
+      "source": "https://multiplex.com.ar/peliculas/a-cualquier-precio/",
+      "fact": "Ficha oficial sin funciones disponibles; no aparece en las cuatro carteleras actuales. Una fecha de estreno no acredita continuidad.",
+      "justwatch": {
+        "slug": "a-cualquier-precio-2026",
+        "title": "A cualquier precio",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/a-cualquier-precio-2026",
+        "matchedTitle": "A cualquier precio",
+        "matchedYear": 2026,
+        "providers": []
+      }
+    },
+    {
+      "slug": "cars-2006",
+      "title": "Cars",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Disney Plus"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Disney Plus"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=593",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {
+        "slug": "cars-2006",
+        "title": "Cars",
+        "year": 2006,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/cars",
+        "matchedTitle": "Cars: Una aventura sobre ruedas",
+        "matchedYear": 2006,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=593"
+    },
+    {
+      "slug": "el-tren-fluvial-2026",
+      "title": "El tren fluvial",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://malba.org.ar/cine/",
+      "fact": "Programación vigente: sábados a las 20.",
+      "justwatch": {
+        "slug": "el-tren-fluvial-2026",
+        "title": "El tren fluvial",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-tren-fluvial",
+        "matchedTitle": "El Tren Fluvial",
+        "matchedYear": 2026,
+        "providers": []
+      },
+      "venue": "MALBA Cine",
+      "locality": "Av. Figueroa Alcorta 3415, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-24"
+      ]
+    },
+    {
+      "slug": "hope-el-primer-impacto-2026",
+      "title": "Hope: El primer impacto",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=594",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=594"
+    },
+    {
+      "slug": "la-casa-2025",
+      "title": "La casa",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=595",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=595"
+    },
+    {
+      "slug": "la-vida-es-asi-2025",
+      "title": "La vida es así",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=195&codPelicula=596",
+      "fact": "Atlas Patio Bullrich: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {
+        "slug": "la-vida-es-asi-2025",
+        "title": "La vida es así",
+        "year": 2025,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-vida-es-asi",
+        "matchedTitle": "La vida es asi",
+        "matchedYear": 2025,
+        "providers": []
+      },
+      "venue": "Atlas Patio Bullrich",
+      "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=596"
+    },
+    {
+      "slug": "lo-dejamos-aca-2026",
+      "title": "Lo dejamos acá",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Netflix"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Netflix"
+      ],
+      "score": 8,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=17/10/2026",
+      "fact": "Gaumont: 2026-10-17 15:15, 2026-10-17 19:45, 2026-10-20 15:15, 2026-10-20 19:45, 2026-10-19 15:15, 2026-10-19 19:45, 2026-10-21 15:15, 2026-10-21 19:45, 2026-10-18 15:15, 2026-10-18 19:45",
+      "justwatch": {
+        "slug": "lo-dejamos-aca-2026",
+        "title": "Lo dejamos acá",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/lo-dejamos-aca",
+        "matchedTitle": "Lo dejamos acá",
+        "matchedYear": 2026,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "madre-siniestra-2026",
+      "title": "Madre siniestra",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=597",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=597"
+    },
+    {
+      "slug": "annemarie-2026",
+      "title": "Annemarie",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=195&codPelicula=591",
+      "fact": "Atlas Patio Bullrich: funciones disponibles 2026-10-18, 2026-10-21.",
+      "justwatch": {
+        "slug": "annemarie-2026",
+        "title": "Annemarie",
+        "year": 2026,
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/annemarie",
+        "matchedTitle": "Annemarie",
+        "matchedYear": 2026,
+        "providers": []
+      },
+      "venue": "Atlas Patio Bullrich",
+      "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-18",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=591"
+    },
+    {
+      "slug": "cordobeces-la-pelicula-2026",
+      "title": "CordobeCes: La película",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 5,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=17/10/2026",
+      "fact": "Gaumont: 2026-10-17 14:00, 2026-10-17 22:15, 2026-10-20 14:00, 2026-10-20 22:15, 2026-10-19 14:00, 2026-10-19 22:15, 2026-10-21 14:00, 2026-10-21 22:15, 2026-10-18 14:00, 2026-10-18 22:15",
+      "justwatch": {},
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "escuela-de-monstruos-2026",
+      "title": "Escuela de Monstruos",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=604",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=604"
+    },
+    {
+      "slug": "la-caida-de-la-ballena-2026",
+      "title": "La caída de la ballena",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=605",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=605"
+    },
+    {
+      "slug": "lo-que-trajo-la-tormenta-2025",
+      "title": "Lo que trajo la tormenta",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 8,
+      "source": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=17/10/2026",
+      "fact": "Gaumont: 2026-10-17 19:00, 2026-10-20 19:00, 2026-10-19 19:00, 2026-10-21 19:00, 2026-10-18 19:00",
+      "justwatch": {
+        "slug": "lo-que-trajo-la-tormenta-2025",
+        "title": "Lo que trajo la tormenta",
+        "year": 2025,
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Lo%20que%20trajo%20la%20tormenta",
+        "candidates": [
+          {
+            "title": "La tormenta",
+            "year": 2026,
+            "score": 90
+          },
+          {
+            "title": "Pídeme lo que quieras",
+            "year": 2024,
+            "score": 32
+          },
+          {
+            "title": "Lo que quisimos ser",
+            "year": 2024,
+            "score": 32
+          }
+        ]
+      },
+      "venue": "Cine Gaumont",
+      "locality": "Av. Rivadavia 1635, CABA",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ]
+    },
+    {
+      "slug": "los-juegos-del-hambre-2012",
+      "title": "Los Juegos del Hambre",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=599",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-18.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-18"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=599"
+    },
+    {
+      "slug": "los-juegos-del-hambre-en-llamas-2013",
+      "title": "Los Juegos del Hambre: En llamas",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "score": 8,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=600",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-19.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-19"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=600"
+    },
+    {
+      "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+      "title": "Los Juegos del Hambre: Sinsajo Parte 1",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=601",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-20.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-20"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=601"
+    },
+    {
+      "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+      "title": "Los Juegos del Hambre: Sinsajo Parte 2",
+      "decision": "conservar",
+      "before": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "after": [
+        "Cine",
+        "Cine",
+        "Apple TV"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=602",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=602"
+    },
+    {
+      "slug": "quiero-tu-sexo-2026",
+      "title": "Quiero tu sexo",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 6,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=606",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=606"
+    },
+    {
+      "slug": "street-fighter-2026",
+      "title": "Street Fighter",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 6,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=598",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=598"
+    },
+    {
+      "slug": "tiempos-de-ilusion-2026",
+      "title": "Tiempos de ilusión",
+      "decision": "conservar",
+      "before": [
+        "Cine"
+      ],
+      "after": [
+        "Cine"
+      ],
+      "score": 7,
+      "source": "https://www.atlascines.com/Peliculas/GetFechasDisponibles?codComplejo=191&codPelicula=607",
+      "fact": "Atlas Caballito: funciones disponibles 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21.",
+      "justwatch": {},
+      "venue": "Atlas Caballito",
+      "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+      "dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "venueSource": "https://www.atlascines.com/Peliculas/GetComplejosParaPelicula?codPelicula=607"
+    }
+  ],
+  "theatricalScope": "CABA + Provincia de Buenos Aires completa; streaming: Argentina"
+}

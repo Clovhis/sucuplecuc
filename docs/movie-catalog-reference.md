@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-16. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-17. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2374
+Total de peliculas: 2375
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -15,7 +15,7 @@ Total de peliculas: 2374
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | HBO Max + Apple TV | +16 |
 | 2026 | 53 domingos | 53-domingos-2026 | Comedia | Netflix | +13 |
 | 2026 | 72 Hours | 72-hours-2026 | Comedia | Netflix | +17 |
-| 2026 | A cualquier precio | a-cualquier-precio-2026 | Thriller | Cine | +17 |
+| 2026 | A cualquier precio | a-cualquier-precio-2026 | Thriller | Otras plataformas | +17 |
 | 2026 | A New Dawn | a-new-dawn-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Adolescencia, sexo y muerte en Campamento Miasma | adolescencia-sexo-y-muerte-en-campamento-miasma-2026 | Terror | Cine + Apple TV | +17 |
 | 2026 | Aída y vuelta | aida-y-vuelta-2026 | Comedia | Prime Video | +13 |
@@ -49,6 +49,7 @@ Total de peliculas: 2374
 | 2026 | Código: Venganza | codigo-venganza-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
+| 2026 | CordobeCes: La película | cordobeces-la-pelicula-2026 | Comedia | Cine | ATP |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
 | 2026 | Couture: Vidas entrelazadas | couture-vidas-entrelazadas-2026 | Drama | Apple TV | +13 |
 | 2026 | Coyote vs. Acme | coyote-vs-acme-2026 | Comedia | Cine | ATP |
@@ -87,7 +88,7 @@ Total de peliculas: 2374
 | 2026 | El turno del papá | el-turno-del-papa-2026 | Comedia | Netflix | ATP |
 | 2026 | El último desafío: K2 en invierno | el-ultimo-desafio-k2-en-invierno-2026 | Documental | Apple TV | +13 |
 | 2026 | El último gigante | el-ultimo-gigante-2026 | Drama | Netflix | +12 |
-| 2026 | El último gran golpe | el-ultimo-gran-golpe-2026 | Thriller | Cine | +13 |
+| 2026 | El último gran golpe | el-ultimo-gran-golpe-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
 | 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
 | 2026 | Elize: Sombras de una mujer | elize-sombras-de-una-mujer-2026 | Drama | Netflix | +16 |
@@ -169,7 +170,7 @@ Total de peliculas: 2374
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Prime Video + Apple TV | +16 |
 | 2026 | Leviticus: Ritual de sangre | leviticus-ritual-de-sangre-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Libang Libu | libang-libu-2026 | Comedia | Netflix | +13 |
-| 2026 | Linkin Park: Unshatter | linkin-park-unshatter-2026 | Documental | Cine | ATP |
+| 2026 | Linkin Park: Unshatter | linkin-park-unshatter-2026 | Documental | Otras plataformas | ATP |
 | 2026 | Lipán | lipan-2026 | Documental | CINE.AR | ATP |
 | 2026 | Lo dejamos acá | lo-dejamos-aca-2026 | Comedia | Cine + Netflix | +13 |
 | 2026 | Loco México Mágico | loco-mexico-magico-2026 | Comedia | Prime Video + Apple TV | +15 |
@@ -235,7 +236,7 @@ Total de peliculas: 2374
 | 2026 | Pulp: ¿Qué harías por una canción más? | pulp-que-harias-por-una-cancion-mas-2026 | Documental | Apple TV | +13 |
 | 2026 | Quiero tu sexo | quiero-tu-sexo-2026 | Comedia | Cine | +17 |
 | 2026 | Red de mentiras | red-de-mentiras-2026 | Thriller | Apple TV | +16 |
-| 2026 | Relajadas y muy peligrosas | relajadas-y-muy-peligrosas-2026 | Comedia | Cine | +13 |
+| 2026 | Relajadas y muy peligrosas | relajadas-y-muy-peligrosas-2026 | Comedia | Otras plataformas | +13 |
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
 | 2026 | Resident Evil: Noche Cero | resident-evil-noche-cero-2026 | Terror | Cine | +17 |
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
@@ -323,7 +324,7 @@ Total de peliculas: 2374
 | 2025 | Chainsaw Man - The Movie: Reze Arc | chainsaw-man-the-movie-reze-arc-2025 | Anime | Crunchyroll | +16 |
 | 2025 | Christy (El combate de su vida) | christy-el-combate-de-su-vida-2025 | Drama | HBO Max | +17 |
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max | +13 |
-| 2025 | Cuentos del jardín mágico | cuentos-del-jardin-magico-2025 | Animacion | Cine | ATP |
+| 2025 | Cuentos del jardín mágico | cuentos-del-jardin-magico-2025 | Animacion | Otras plataformas | ATP |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Otras plataformas | +13 |
 | 2025 | Dolly - Juega contigo | dolly-juega-contigo-2025 | Terror | Otras plataformas | +17 |
 | 2025 | Dos pianos | dos-pianos-2025 | Romance | Otras plataformas | ATP |
@@ -336,7 +337,7 @@ Total de peliculas: 2374
 | 2025 | El gran falsificador | el-gran-falsificador-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
 | 2025 | Ella y su hijo | ella-y-su-hijo-2025 | Drama | Otras plataformas | +13 |
-| 2025 | Encantador | encantador-2025 | Terror | Cine | +17 |
+| 2025 | Encantador | encantador-2025 | Terror | Otras plataformas | +17 |
 | 2025 | Esa cosa con alas | esa-cosa-con-alas-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Escuadrón letal | escuadron-letal-2025 | Accion | Apple TV | +13 |
 | 2025 | Exit 8 | exit-8-2025 | Terror | Otras plataformas | +13 |
@@ -397,7 +398,7 @@ Total de peliculas: 2374
 | 2025 | Padre Madre Hermana Hermano | padre-madre-hermana-hermano-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Pillion | pillion-2025 | Drama | Prime Video | +18 |
 | 2025 | Playa de lobos | playa-de-lobos-2025 | Thriller | Disney Plus | +13 |
-| 2025 | Retrato de un pianista | retrato-de-un-pianista-2025 | Documental | Cine | ATP |
+| 2025 | Retrato de un pianista | retrato-de-un-pianista-2025 | Documental | Otras plataformas | ATP |
 | 2025 | Risa y la cabina del viento | risa-y-la-cabina-del-viento-2025 | Drama | Netflix | +12 |
 | 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |
 | 2025 | Sarah's Oil: El oro negro | sarahs-oil-el-oro-negro-2025 | Drama | Prime Video | +13 |
@@ -505,7 +506,7 @@ Total de peliculas: 2374
 | 2024 | Pintor at Paraluman | pintor-at-paraluman-2024 | Romance | Prime Video | +13 |
 | 2024 | Raíces | raices-2024 | Drama | Apple TV | +16 |
 | 2024 | Road House | road-house-2024 | Accion | Prime Video | +17 |
-| 2024 | Romeo y Ofelia | romeo-y-ofelia-2024 | Drama | Cine | +13 |
+| 2024 | Romeo y Ofelia | romeo-y-ofelia-2024 | Drama | Otras plataformas | +13 |
 | 2024 | Septiembre 5 | septiembre-5-2024 | Drama | Paramount Plus + Netflix | +13 |
 | 2024 | Sing Sing | sing-sing-2024 | Drama | Prime Video | +13 |
 | 2024 | Smile 2 | smile-2-2024 | Terror | Netflix | +16 |

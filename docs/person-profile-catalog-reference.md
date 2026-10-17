@@ -1,6 +1,6 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-16. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-17. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
 Total de vínculos de películas del catálogo: 4294

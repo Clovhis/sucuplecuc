@@ -9,6 +9,7 @@ Scout one title at a time, quietly. This is selection only; `la-posta-cine-add-m
 
 1. Take the session date as truth. A candidate must have already released in the inclusive window `today - 7 days` through `today`; reject coming-soon, older-library, year-only, duplicate, and weakly documented titles.
 2. Query official platform/distributor release pages and Argentine cinema sources in parallel. Build at most three candidates, keeping title, year, exact date, likely AR context, and one source URL each. Do not open long articles until a candidate survives the gate.
+   For theatrical candidates, cover CABA and the entire Province of Buenos Aires, including cities outside AMBA. Carry an eligible venue, locality and run date into the handoff; national premiere listings or screenings only in another province are insufficient. Streaming scouting remains Argentina-wide.
 3. Gate each candidate with the bundled script; it reads the catalog/source files without adding them to chat:
 
 ```bash

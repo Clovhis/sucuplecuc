@@ -4,6 +4,7 @@
 
 - Las películas viven en `src/data/movies/*.json`; no edites el catálogo derivado a mano.
 - Cine Posta está orientado a público argentino. Toda etiqueta `releasePlatform` / `releasePlatforms`, fecha de estreno, cartelera y título localizado debe describir la disponibilidad vigente en Argentina, nunca la de Estados Unidos, España u otro mercado.
+- La cartelera de salas y la etiqueta `Cine` cubren exclusivamente CABA y toda la Provincia de Buenos Aires, no sólo AMBA. Exigí una función vigente o próxima de una exhibición en curso dentro de ese territorio, con sala, localidad y fecha verificables. Una función en otra provincia o un listado nacional sin sede no alcanza. Esta delimitación no cambia el alcance argentino de las plataformas de streaming.
 - `docs/movie-catalog-reference.md` y `docs/person-profile-catalog-reference.md` se regeneran con sus scripts.
 - `src/data/people.json` centraliza los datos de personas y `src/data/personProfiles.ts` contiene los perfiles extensos.
 - Radar (`src/data/cinemaNews.generated.json`), recomendadas (`src/data/weeklyRecommendations.generated.ts`) y trailers (`src/data/upcomingReleases.generated.ts`) son ediciones generadas independientes. No las regeneres, edites ni reviertas durante una carga/auditoría de películas; el build lee lo versionado. Sólo sus workflows o un pedido explícito de actualización pueden cambiarlas.

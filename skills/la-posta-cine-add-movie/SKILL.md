@@ -181,7 +181,7 @@ npm run audit:movie-people -- --movie <slug>
 
 If enrichment cannot safely resolve an optional, obscure cast credit, remove that credit from the movie JSON before running the strict commands, leave the global people pool untouched for that person, and keep the omission in the evidence ledger. The strict commands are intentionally strict for every credit that remains published.
 
-If the final label is `Cine`, invoke `la-posta-cine-cartelera-revalidator` before the audit. For any final platform, invoke `la-posta-cine-auditor` with the candidate path and compact evidence ledger.
+If the final label is `Cine`, invoke `la-posta-cine-cartelera-revalidator` before the audit. The theatrical scope is exclusively CABA plus the entire Province of Buenos Aires, including cities outside AMBA. Record an eligible venue, locality/jurisdiction, run date and URL; a national title list or a function only in another province does not qualify. Streaming offers remain Argentina-wide. For any final platform, invoke `la-posta-cine-auditor` with the candidate path and compact evidence ledger.
 
 ## Gate
 
