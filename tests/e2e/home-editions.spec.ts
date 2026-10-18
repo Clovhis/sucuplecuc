@@ -1,14 +1,16 @@
 import { expect, test } from '@playwright/test';
-import radar from '../../src/data/cinemaNews.generated.json' with { type: 'json' };
+import { readdirSync, readFileSync } from 'node:fs';
+import { selectCinemaNews } from '../../src/lib/cinema-news-selection';
 import { WEEKLY_RECOMMENDATION_CARDS } from '../../src/data/weeklyRecommendations.generated';
 import { GENERATED_UPCOMING_RELEASES } from '../../src/data/upcomingReleases.generated';
 
-test('the published home reads the three saved editions without changing selection at runtime', async ({ page }) => {
+test('home keeps its build-time local Radar and saved editions independent of the browser clock', async ({ page }) => {
 	await page.clock.install({ time: new Date('2028-01-01T12:00:00Z') });
 	await page.route('https://www.youtube.com/embed/**', (route) => route.fulfill({ contentType: 'text/html', body: '<html><body>Trailer</body></html>' }));
 	await page.goto('/', { waitUntil: 'domcontentloaded' });
 	const newsLinks = await page.locator('[data-news-segment] a').evaluateAll((links) => links.map((link) => link.getAttribute('href')));
-	expect(newsLinks).toEqual(radar.items.map(({ link }) => link));
+	const entries = readdirSync('src/data/editorials').filter(file => file.endsWith('.json')).map(file => JSON.parse(readFileSync(`src/data/editorials/${file}`, 'utf8')));
+	expect(newsLinks).toEqual(selectCinemaNews(entries).map(({ link }) => link));
 	const cards = page.locator('[data-weekly-recommendation-card]');
 	expect(await cards.count()).toBe(WEEKLY_RECOMMENDATION_CARDS.length);
 	for (let index = 0; index < WEEKLY_RECOMMENDATION_CARDS.length; index++) {

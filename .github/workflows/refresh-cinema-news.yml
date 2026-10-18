@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: cinema-news-refresh
@@ -32,9 +32,6 @@ jobs:
           cache: npm
       - name: Instalar dependencias
         run: npm ci
-      - name: Consultar todos los medios y guardar la edicion del Radar
-        run: npm run refresh:cinema-news
-      - name: Verificar ediciones y construir el sitio
+      # Successful validation triggers deploy.yml to expire old local notes.
+      - name: Verificar notas propias y construir el sitio
         run: npm run validate:content -- --astro-check
-      - name: Publicar solo los datos del Radar
-        run: node scripts/publish-home-edition.mjs src/data/cinemaNews.generated.json

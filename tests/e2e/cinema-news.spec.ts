@@ -1,29 +1,26 @@
 import { expect, test } from '@playwright/test';
 
-// The existing feed intentionally renders no section when every upstream is
-// unavailable. That valid build must also remain valid in GitHub Actions.
+// The local Radar is hidden when no note falls within the 30-day window.
 test.beforeEach(async ({ request }) => {
 	const response = await request.get('/');
 	expect(response.ok()).toBeTruthy();
-	test.skip(!(await response.text()).includes('id="radar-de-cine"'), 'Este build no recibió noticias de los medios.');
+	test.skip(!(await response.text()).includes('id="radar-de-cine"'), 'Este build no tiene notas propias recientes.');
 });
 
-test('el Radar conserva noticias, fechas y enlaces externos sin duplicar el acceso por teclado', async ({ page }, testInfo) => {
+test('el Radar conserva noticias, fechas y enlaces propios sin duplicar el acceso por teclado', async ({ page }, testInfo) => {
 	await page.goto('/', { waitUntil: 'load' });
 	const radar = page.getByRole('region', { name: 'Radar de cine' });
 	await expect(radar.getByRole('heading', { level: 2 })).toHaveText('Radar de cine');
 	const links = radar.locator('[data-news-segment] a');
 	const count = await links.count();
 	expect(count).toBeGreaterThan(0);
-	expect(count).toBeLessThanOrEqual(8);
+	expect(count).toBeLessThanOrEqual(6);
 	await expect(radar.getByRole('link')).toHaveCount(count);
 	const originals = [];
 	for (const link of await links.all()) {
 		const href = await link.getAttribute('href');
-		expect(href).toMatch(/^https:\/\//);
-		expect(new URL(href!).hostname).toMatch(/(^|\.)(lanacion\.com\.ar|clarin\.com|infobae\.com|pagina12\.com\.ar|ambito\.com|cinesargentinos\.com\.ar)$/);
-		await expect(link).toHaveAttribute('target', '_blank');
-		await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+		expect(href).toMatch(/^\/editorial\/[a-z0-9-]+\/$/);
+		await expect(link).not.toHaveAttribute('target', '_blank');
 		const title = await link.getByRole('heading', { level: 3 }).innerText();
 		expect(title.length).toBeGreaterThan(0);
 		const date = await link.locator('time').getAttribute('datetime');

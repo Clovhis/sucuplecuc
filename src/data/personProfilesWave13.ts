@@ -1458,7 +1458,7 @@ const additionalFamousProfileSeedsC: FamousProfileSeed[] = [
 		headline: 'Ícono del cine japonés, dueño de una energía física y una presencia capaz de volver épico hasta el silencio.',
 		spotlight: 'Su cuerpo parece moverse antes que el pensamiento, pero esa violencia siempre está organizada por una inteligencia precisa.',
 		awards: [],
-		knownFor: ['los-siete-samurais-1954', 'rashomon-1950', 'seven-samurai-1954'],
+		knownFor: ['los-siete-samurais-1954', 'rashomon-1950'],
 		editorialBiography: [
 			'Toshirō Mifune llevó una fuerza casi eléctrica a las películas de Akira Kurosawa. Rashomon lo encuentra dentro de un relato donde la verdad cambia con cada mirada; Los siete samuráis convierte su energía en liderazgo, humor y amenaza.',
 			'Su actuación no depende de hablar mucho. Mifune podía contar orgullo, miedo o compasión con la postura y el ritmo de una caminata, una cualidad que volvió universal a su presencia. Su legado sigue vivo en cada héroe que corre hacia el peligro.',

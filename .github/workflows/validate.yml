@@ -52,6 +52,9 @@ jobs:
       - name: Probar automatizaciones y ediciones del home
         run: npm run test:home-automation
 
+      - name: Probar migraciones de votos y tribunas en PostgreSQL local
+        run: npm run test:movie-ratings
+
       - name: Audit production dependencies
         run: npm audit --omit=dev --audit-level=high
 

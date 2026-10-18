@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-17. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-18. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2375
+Total de peliculas: 2374
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -1404,8 +1404,7 @@ Total de peliculas: 2375
 | 2006 | La vida de los otros | la-vida-de-los-otros-2006 | Drama | Otras plataformas | +13 |
 | 2006 | Mission: Impossible III | mission-impossible-iii-2006 | Accion | Disney Plus | +13 |
 | 2006 | Niños del hombre | hijos-de-los-hombres-2006 | Ciencia ficcion | HBO Max + Apple TV | +13 |
-| 2006 | Paprika | paprika-2006 | Anime | Otras plataformas | +13 |
-| 2006 | Paprika, detective de los sueños | paprika-detective-de-los-suenos-2006 | Anime | Apple TV | +13 |
+| 2006 | Paprika, detective de los sueños | paprika-2006 | Anime | Otras plataformas | +13 |
 | 2006 | Pirates of the Caribbean: Dead Man's Chest | pirates-of-the-caribbean-dead-mans-chest-2006 | Aventura | Disney Plus | +13 |
 | 2006 | Plan oculto | plan-oculto-2006 | Crimen | Netflix + Prime Video | +16 |
 | 2006 | Rocky Balboa | rocky-balboa-2006 | Drama | Otras plataformas | ATP |
@@ -1742,6 +1741,7 @@ Total de peliculas: 2375
 | 1997 | Cube | cube-1997 | Ciencia ficcion | Apple TV | +16 |
 | 1997 | Desmontando a Harry | deconstructing-harry-1997 | Comedia | Otras plataformas | +17 |
 | 1997 | Donnie Brasco | donnie-brasco-1997 | Drama | Otras plataformas | +17 |
+| 1997 | El abogado del diablo | el-abogado-del-diablo-1997 | Terror | HBO Max | +18 |
 | 1997 | El boxeador | el-boxeador-1997 | Drama | Apple TV | +16 |
 | 1997 | El coleccionista de amantes | el-coleccionista-de-amantes-1997 | Drama | Otras plataformas | +16 |
 | 1997 | El pacificador | el-pacificador-1997 | Accion | Paramount Plus | +13 |
@@ -2297,9 +2297,8 @@ Total de peliculas: 2375
 | 1955 | Marty | marty-1955 | Drama | Prime Video | +13 |
 | 1955 | Pather Panchali (La canción del camino) | pather-panchali-1955 | Drama | Otras plataformas | ATP |
 | 1954 | La ventana indiscreta | la-ventana-indiscreta-1954 | Thriller | HBO Max | +13 |
-| 1954 | Los siete samuráis | los-siete-samurais-1954 | Accion | Otras plataformas | ATP |
+| 1954 | Los siete samuráis | los-siete-samurais-1954 | Accion | Otras plataformas | +13 |
 | 1954 | On the Waterfront | on-the-waterfront-1954 | Drama | Otras plataformas | +16 |
-| 1954 | Seven Samurai | seven-samurai-1954 | Drama | Otras plataformas | +13 |
 | 1953 | Cuentos de la luna pálida | cuentos-de-la-luna-palida-1953 | Drama | Otras plataformas | +13 |
 | 1953 | Cuentos de Tokio | cuentos-de-tokio-1953 | Drama | Otras plataformas | ATP |
 | 1953 | From Here to Eternity | from-here-to-eternity-1953 | Romance | Otras plataformas | +13 |

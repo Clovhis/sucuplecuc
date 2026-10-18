@@ -6,11 +6,12 @@
 	"year": 1954,
 	"releaseDate": "1954-04-26",
 	"reviewPublishedAt": "2026-08-15",
-	"audienceRating": "ATP",
+	"audienceRating": "+13",
 	"category": "Accion",
 	"genres": [
 		"Accion",
-		"Drama"
+		"Drama",
+		"Aventura"
 	],
 	"subgenres": [],
 	"country": "JP",
@@ -42,7 +43,6 @@
 			"notForYouIf": "No es para vos si buscás acción inmediata, héroes sin contradicciones o una aventura de espadas sin reflexión social."
 		},
 		"becauseYouLiked": [
-			"seven-samurai-1954",
 			"rashomon-1950"
 		],
 		"related": [

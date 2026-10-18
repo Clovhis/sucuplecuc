@@ -107,7 +107,6 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "akira-kurosawa": [
     "los-siete-samurais-1954",
-    "seven-samurai-1954",
     "rashomon-1950"
   ],
   "al-pacino": [
@@ -121,6 +120,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-informante-1999",
     "un-domingo-cualquiera-1999",
     "donnie-brasco-1997",
+    "el-abogado-del-diablo-1997",
     "fuego-contra-fuego-1995",
     "atrapado-por-su-pasado-1993",
     "exito-a-cualquier-precio-1992",
@@ -904,7 +904,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "kubo-y-la-busqueda-del-samurai-2016",
     "mad-max-fury-road-2015",
     "prometheus-2012",
-    "la-estafa-maestra-2003"
+    "la-estafa-maestra-2003",
+    "el-abogado-del-diablo-1997"
   ],
   "charlotte-rampling": [
     "dos-pianos-2025",
@@ -3236,6 +3237,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "matrix-reloaded-2003",
     "matrix-revolutions-2003",
     "the-matrix-1999",
+    "el-abogado-del-diablo-1997",
     "mucho-ruido-y-pocas-nueces-1993",
     "dracula-de-bram-stoker-1992"
   ],
@@ -5529,7 +5531,6 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "toshiro-mifune": [
     "los-siete-samurais-1954",
-    "seven-samurai-1954",
     "rashomon-1950"
   ],
   "uma-thurman": [

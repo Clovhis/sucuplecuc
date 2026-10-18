@@ -18,7 +18,7 @@ try {
 	git(directory, 'clone', remote, first);
 	setup(first);
 	await mkdir(path.join(first, 'src/data/movies'), { recursive: true });
-	const file = 'src/data/cinemaNews.generated.json';
+	const file = 'src/data/weeklyRecommendations.generated.ts';
 	await writeFile(path.join(first, file), 'first edition\n');
 	git(first, 'add', '.'); git(first, 'commit', '-m', 'Initial edition'); git(first, 'push', 'origin', 'main');
 	git(directory, 'clone', remote, updater);
@@ -35,16 +35,15 @@ try {
 	execFileSync(process.execPath, [script, file], { cwd: updater, stdio: ['ignore', 'pipe', 'pipe'] });
 	assert.equal(git(updater, 'rev-parse', 'HEAD'), published, 'An unchanged edition must not create another commit');
 	for (const [edition, label] of [
-		['src/data/weeklyRecommendations.generated.ts', 'weekly recommendations'],
 		['src/data/upcomingReleases.generated.ts', 'daily upcoming releases'],
 	]) {
 		await writeFile(path.join(updater, edition), `${label}\n`);
 		execFileSync(process.execPath, [script, edition], { cwd: updater, stdio: ['ignore', 'pipe', 'pipe'] });
 		assert.equal(git(updater, 'log', '-1', '--format=%s'), `chore(home): refresh ${label}`);
 		assert.equal(git(updater, 'diff-tree', '--no-commit-id', '--name-only', '-r', 'HEAD'), edition, 'Each publisher must commit only its edition');
-		assert.equal(git(updater, 'show', `HEAD:${file}`), 'new edition', 'Publishing another edition must preserve Radar');
+		assert.equal(git(updater, 'show', `HEAD:${file}`), 'new edition', 'Publishing trailers must preserve recommendations');
 	}
-	assert.equal(git(updater, 'show', 'HEAD:src/data/weeklyRecommendations.generated.ts'), 'weekly recommendations', 'Refreshing trailers must preserve the weekly selection');
+	assert.equal(git(updater, 'show', 'HEAD:src/data/weeklyRecommendations.generated.ts'), 'new edition', 'Refreshing trailers must preserve the weekly selection');
 	published = git(updater, 'rev-parse', 'HEAD');
 	const otherEdition = 'src/data/weeklyRecommendations.generated.ts';
 	await writeFile(path.join(updater, otherEdition), 'unexpected regeneration\n');

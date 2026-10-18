@@ -196,6 +196,7 @@ function main() {
 	console.log(`Changed files detected: ${changedFiles.length}`);
 
 	run('npm', ['run', 'catalog:movies:check']);
+	run('node', ['./scripts/audit-movie-duplicates.mjs']);
 	run('npm', ['run', 'catalog:people:check']);
 	run('npm', ['run', 'catalog:people:reference:check']);
 	if (moviePeopleAuditFiles.length > 0) {

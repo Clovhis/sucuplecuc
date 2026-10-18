@@ -7,7 +7,7 @@
 - La cartelera de salas y la etiqueta `Cine` cubren exclusivamente CABA y toda la Provincia de Buenos Aires, no sólo AMBA. Exigí una función vigente o próxima de una exhibición en curso dentro de ese territorio, con sala, localidad y fecha verificables. Una función en otra provincia o un listado nacional sin sede no alcanza. Esta delimitación no cambia el alcance argentino de las plataformas de streaming.
 - `docs/movie-catalog-reference.md` y `docs/person-profile-catalog-reference.md` se regeneran con sus scripts.
 - `src/data/people.json` centraliza los datos de personas y `src/data/personProfiles.ts` contiene los perfiles extensos.
-- Radar (`src/data/cinemaNews.generated.json`), recomendadas (`src/data/weeklyRecommendations.generated.ts`) y trailers (`src/data/upcomingReleases.generated.ts`) son ediciones generadas independientes. No las regeneres, edites ni reviertas durante una carga/auditoría de películas; el build lee lo versionado. Sólo sus workflows o un pedido explícito de actualización pueden cambiarlas.
+- Radar se calcula en cada build desde todas las notas de `src/data/editorials/*.json`: hasta seis publicaciones de los últimos 30 días calendario de Argentina, sin fechas futuras. Recomendadas (`src/data/weeklyRecommendations.generated.ts`) y trailers (`src/data/upcomingReleases.generated.ts`) son ediciones generadas independientes. No las regeneres, edites ni reviertas durante una carga/auditoría de películas; el build lee lo versionado. Sólo sus workflows o un pedido explícito de actualización pueden cambiarlas.
 - No agregues secretos, credenciales administrativas ni service-role keys. Las variables esperadas están en `.env.example`.
 
 ## Flujo mínimo de cambios
@@ -30,9 +30,9 @@
 
 ## Automatización
 
-- Los horarios son de Argentina (UTC-3). Radar corre todos los días a las 10:00 (`0 13 * * *`); consulta La Nación, Clarín, Página/12 y Ámbito, además de Infobae y Cines Argentinos.
+- Los horarios son de Argentina (UTC-3). Radar usa exclusivamente notas propias. Cada publicación las incorpora al construir el sitio; todos los días a las 10:00 (`0 13 * * *`) se valida y reconstruye para retirar notas vencidas, sin consultar medios ni generar commits de snapshots.
 - Recomendadas tiene su workflow semanal los domingos a la 01:00 (`0 4 * * 0`), después del sábado a la noche. Próximos estrenos tiene un workflow independiente todos los días a la 01:00 (`0 4 * * *`), que excluye películas con fecha de estreno igual o anterior al día de ejecución en Argentina. Cada uno valida y publica sólo su snapshot; si falla, conserva su edición publicada.
-- `deploy.yml` sólo construye/publica el contenido versionado. Corre por push a `main`, manualmente o al finalizar exitosamente un actualizador. No consulta feeds, no regenera ediciones ni tiene un cron diario redundante.
+- `deploy.yml` sólo construye/publica el contenido versionado. Corre por push a `main`, manualmente o al finalizar exitosamente un actualizador. No consulta feeds ni regenera ediciones; calcula el Radar local con la fecha de Argentina.
 - `validate.yml` valida contenido, ediciones, pósters locales, seguridad y Chromium en cada PR y los lunes. La matriz completa de navegadores es manual (`full_e2e`); el audit completo de contenido se solicita con `full_content_audit`.
 - La publicación diaria en X se conserva: Actions agenda en Buffer a las 18:30 AR para publicar a las 19:00 AR; no modifica películas ni ediciones.
 - Antes de publicar una carga, rebaseá sobre `origin/main` para conservar las ediciones del bot. `validate:content` bloquea diffs que mezclen películas con cambios en esos snapshots. No uses la actualización de trailers como paso de carga.

@@ -797,7 +797,7 @@ const catalogGapProfileSeeds: CatalogGapProfileSeed[] = [
 			{ label: 'Legado', value: 'Influencia mundial' },
 		],
 		awards: [{ label: 'Oscar', category: 'Premio honorífico', year: 1990 }],
-		knownFor: ['rashomon-1950', 'los-siete-samurais-1954', 'seven-samurai-1954'],
+		knownFor: ['rashomon-1950', 'los-siete-samurais-1954'],
 		sourceUrls: ['https://www.britannica.com/biography/Akira-Kurosawa'],
 	},
 ];

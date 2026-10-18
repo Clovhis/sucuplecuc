@@ -44,7 +44,7 @@ function createVisitorToken(): string {
 
 function formatAverage(value: number): string {
 	if (Number.isNaN(value)) return 'Sin promedio todavía';
-	return `${value.toFixed(1)}/5`;
+	return `${value.toFixed(1)}/10`;
 }
 
 async function setupRatingWidget(widget: HTMLElement): Promise<void> {
@@ -63,6 +63,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	const statusEl = statusNode;
 	const client = supabase;
 	if (!isSupabaseConfigured || !client) {
+		setDisabled(true);
 		averageEl.textContent = 'Rating no disponible';
 		countEl.textContent = 'Probá más tarde';
 		statusEl.textContent = 'La sección de votos no está disponible ahora.';
@@ -78,7 +79,8 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	function paintStars(activeValue: number): void {
 		for (const star of stars) {
 			const starValue = Number(star.getAttribute('data-star-value') ?? '0');
-			star.classList.toggle('is-active', starValue <= activeValue);
+			star.classList.toggle('is-active', starValue === activeValue);
+			star.setAttribute('aria-pressed', String(starValue === currentVote));
 		}
 	}
 
@@ -89,16 +91,17 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	}
 
 	async function loadStatsAndVote(): Promise<void> {
+		setDisabled(true);
 		statusEl.textContent = 'Cargando votos...';
 
 		const [statsResponse, voteResponse] = await Promise.all([
 			ratingClient
-				.from('movie_rating_stats')
+				.from('movie_rating_stats_v2')
 				.select('avg_rating,vote_count')
 				.eq('movie_slug', movieSlug)
 				.maybeSingle(),
 			ratingClient
-				.rpc('get_movie_rating', {
+				.rpc('get_movie_rating_v2', {
 					p_movie_slug: movieSlug,
 					p_visitor_token: visitorToken,
 				})
@@ -118,10 +121,11 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 
 		const voteData = voteResponse.data as { rating?: number | null } | null;
 		currentVote = Number(voteData?.rating ?? 0);
+		setDisabled(false);
 		paintStars(currentVote);
 		statusEl.textContent =
 			currentVote > 0
-				? `Tu voto: ${currentVote}/5`
+				? `Tu voto: ${currentVote}/10`
 				: voteCount === 0
 					? 'Todavía nadie la puntuó. Meté el primer voto.'
 					: 'Todavía no votaste esta peli.';
@@ -134,7 +138,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 		setDisabled(true);
 		statusEl.textContent = 'Guardando tu voto...';
 
-		const { error } = await ratingClient.rpc('submit_movie_rating', {
+		const { error } = await ratingClient.rpc('submit_movie_rating_v2', {
 			p_movie_slug: movieSlug,
 			p_visitor_token: visitorToken,
 			p_rating: nextVote,
@@ -150,9 +154,8 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 
 		currentVote = nextVote;
 		paintStars(currentVote);
-		statusEl.textContent = `Listo. Tu voto: ${currentVote}/5`;
+		statusEl.textContent = `Listo. Tu voto: ${currentVote}/10`;
 		await loadStatsAndVote();
-		setDisabled(false);
 		isSubmitting = false;
 	}
 
@@ -168,7 +171,7 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 		});
 
 		star.addEventListener('click', () => {
-			if (value >= 1 && value <= 5) {
+			if (value >= 1 && value <= 10) {
 				void submitVote(value);
 			}
 		});
@@ -177,6 +180,9 @@ async function setupRatingWidget(widget: HTMLElement): Promise<void> {
 	const starsWrap = widget.querySelector<HTMLElement>('.rating-stars');
 	starsWrap?.addEventListener('mouseleave', () => {
 		if (!isSubmitting) paintStars(currentVote);
+	});
+	starsWrap?.addEventListener('focusout', (event) => {
+		if (!starsWrap.contains(event.relatedTarget as Node | null) && !isSubmitting) paintStars(currentVote);
 	});
 
 	await loadStatsAndVote();

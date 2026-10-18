@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-17. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-18. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4294
+Total de vínculos de películas del catálogo: 4295
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -22,8 +22,8 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Adrien Brody | `adrien-brody` | /personas/adrien-brody/ | Actor | 3 | 7 |
 | Agustín Adba | `agustin-adba` | /personas/agustin-adba/ | Director / Guionista / Productor / Montajista | 1 | 5 |
 | Agustín Aristarán | `agustin-aristaran` | /personas/agustin-aristaran/ | Actor / Comediante | 2 | 3 |
-| Akira Kurosawa | `akira-kurosawa` | /personas/akira-kurosawa/ | Director / Guionista | 3 | 4 |
-| Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 18 | 7 |
+| Akira Kurosawa | `akira-kurosawa` | /personas/akira-kurosawa/ | Director / Guionista | 2 | 4 |
+| Al Pacino | `al-pacino` | /personas/al-pacino/ | Actor | 19 | 7 |
 | Alan Alda | `alan-alda` | /personas/alan-alda/ | Actor | 4 | 3 |
 | Alan Arkin | `alan-arkin` | /personas/alan-arkin/ | Actor | 8 | 6 |
 | Alan Rickman | `alan-rickman` | /personas/alan-rickman/ | Actor | 7 | 3 |
@@ -140,7 +140,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Charles Dance | `charles-dance` | /personas/charles-dance/ | Actor | 2 | 3 |
 | Charlie Day | `charlie-day` | /personas/charlie-day/ | Actor | 2 | 7 |
 | Charlie Sheen | `charlie-sheen` | /personas/charlie-sheen/ | Actor | 2 | 4 |
-| Charlize Theron | `charlize-theron` | /personas/charlize-theron/ | Actriz / Productora | 6 | 7 |
+| Charlize Theron | `charlize-theron` | /personas/charlize-theron/ | Actriz / Productora | 7 | 7 |
 | Charlotte Rampling | `charlotte-rampling` | /personas/charlotte-rampling/ | Actriz | 3 | 3 |
 | Charlton Heston | `charlton-heston` | /personas/charlton-heston/ | Actor | 2 | 7 |
 | Chino Darín | `chino-darin` | /personas/chino-darin/ | Actor | 3 | 7 |
@@ -440,7 +440,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Kathy Bates | `kathy-bates` | /personas/kathy-bates/ | Actriz | 4 | 6 |
 | Katia Szechtman | `katia-szechtman` | /personas/katia-szechtman/ | Actriz / Directora de casting / Productora | 1 | 5 |
 | Ke Huy Quan | `ke-huy-quan` | /personas/ke-huy-quan/ | Actor | 4 | 7 |
-| Keanu Reeves | `keanu-reeves` | /personas/keanu-reeves/ | Actor | 16 | 7 |
+| Keanu Reeves | `keanu-reeves` | /personas/keanu-reeves/ | Actor | 17 | 7 |
 | Keegan-Michael Key | `keegan-michael-key` | /personas/keegan-michael-key/ | Actor | 2 | 7 |
 | Keira Knightley | `keira-knightley` | /personas/keira-knightley/ | Actriz | 3 | 5 |
 | Keke Palmer | `keke-palmer` | /personas/keke-palmer/ | Actriz | 3 | 7 |
@@ -735,7 +735,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Toni Collette | `toni-collette` | /personas/toni-collette/ | Actriz | 5 | 7 |
 | Tony Leung Chiu-wai | `tony-leung-chiu-wai` | /personas/tony-leung-chiu-wai/ | Actor | 6 | 2 |
 | Tony Scott | `tony-scott` | /personas/tony-scott/ | Director / Productor | 8 | 5 |
-| Toshirō Mifune | `toshiro-mifune` | /personas/toshiro-mifune/ | Actor | 3 | 2 |
+| Toshirō Mifune | `toshiro-mifune` | /personas/toshiro-mifune/ | Actor | 2 | 2 |
 | Uma Thurman | `uma-thurman` | /personas/uma-thurman/ | Actriz | 7 | 7 |
 | Val Kilmer | `val-kilmer` | /personas/val-kilmer/ | Actor | 4 | 3 |
 | Valeria Bertuccelli | `valeria-bertuccelli` | /personas/valeria-bertuccelli/ | Actriz / Directora / Guionista | 1 | 5 |

@@ -17,7 +17,7 @@ const { items, sourceLabel, updatedLabel, isFallback = false } = Astro.props as 
 		<section id="radar-de-cine" class="news-rail home-news fade-up" style="--item-delay: 70ms;" aria-labelledby="radar-de-cine-title">
 			<header class="news-rail__header">
 				<div class="home-news__heading">
-					<p class="news-rail__kicker">En otros medios</p>
+					<p class="news-rail__kicker">En CinePosta</p>
 					<h2 id="radar-de-cine-title" class="home-news__title">Radar de cine</h2>
 				</div>
 				<div class="home-news__sources">
@@ -37,9 +37,6 @@ const { items, sourceLabel, updatedLabel, isFallback = false } = Astro.props as 
 											<a
 												class:list={['news-rail__ticker-link', !item.imageUrl && 'news-rail__ticker-link--no-image']}
 												href={item.link}
-												target="_blank"
-												rel="noopener noreferrer"
-												referrerpolicy="no-referrer"
 												tabindex={isDuplicate ? -1 : undefined}
 											>
 												<span class="news-rail__ticker-media" aria-hidden="true">
@@ -55,7 +52,7 @@ const { items, sourceLabel, updatedLabel, isFallback = false } = Astro.props as 
 														<time datetime={item.publishedAt}>{item.publishedLabel}</time>
 													</span>
 													<h3 class="news-rail__ticker-item-title">{item.title}</h3>
-													<span class="home-news__read">Leer en {item.source} <span aria-hidden="true">↗</span><span class="u-visually-hidden"> (abre en otra pestaña)</span></span>
+													<span class="home-news__read">Leer nota <span aria-hidden="true">→</span></span>
 												</div>
 											</a>
 										</li>

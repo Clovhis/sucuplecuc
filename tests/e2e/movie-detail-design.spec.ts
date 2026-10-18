@@ -77,7 +77,7 @@ test('reading links, canonical sharing and person navigation work after the rede
 	expect(errors).toEqual([]);
 });
 
-test('rating can be submitted and restored using the existing widget contract', async ({ page }) => {
+test('rating can be submitted and restored using the existing widget contract', async ({ page }, testInfo) => {
 	let vote = 0;
 	let submittedSlug = '';
 	await page.route('**/rest/v1/**', async (route) => {
@@ -98,12 +98,23 @@ test('rating can be submitted and restored using the existing widget contract', 
 	await page.goto('/peliculas/akira-1988/', { waitUntil: 'load' });
 	const rating = page.locator('[data-rating-widget]');
 	await expect(rating.locator('[data-rating-status]')).toContainText('Meté el primer voto');
-	await rating.getByRole('button', { name: '4 estrellas', exact: true }).click();
-	await expect(rating.locator('[data-rating-status]')).toHaveText('Tu voto: 4/5');
+	await rating.getByRole('button', { name: '8 de 10', exact: true }).click();
+	await expect(rating.locator('[data-rating-status]')).toHaveText('Tu voto: 8/10');
 	expect(submittedSlug).toBe('akira-1988');
-	await expect(rating.locator('.is-active')).toHaveCount(4);
+	expect(vote).toBe(8);
+	await expect(rating.locator('[data-rating-average]')).toHaveText('8.0/10');
+	await expect(rating.getByRole('button', { pressed: true })).toHaveText('8');
+	await expect(rating.locator('.is-active')).toHaveCount(1);
 	await page.reload();
-	await expect(rating.locator('[data-rating-status]')).toHaveText('Tu voto: 4/5');
+	await expect(rating.locator('[data-rating-status]')).toHaveText('Tu voto: 8/10');
+	await page.goto('/comunidad/peliculas/akira-1988/');
+	await expect(rating.locator('[data-rating-status]')).toHaveText('Tu voto: 8/10');
+	for (const value of [1, 10]) {
+		await rating.getByRole('button', { name: `${value} de 10`, exact: true }).click();
+		await expect(rating.locator('[data-rating-status]')).toHaveText(`Tu voto: ${value}/10`);
+		expect(vote).toBe(value);
+	}
+	await rating.screenshot({ path: testInfo.outputPath('rating-1-to-10.png') });
 });
 
 test('long titles, post-credit information and reduced motion retain their content', async ({ page }) => {

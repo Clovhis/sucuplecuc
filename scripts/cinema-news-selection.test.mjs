@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import { readdir, readFile } from 'node:fs/promises';
+import { selectCinemaNews } from '../src/lib/cinema-news-selection.ts';
+
+const note = (slug, date) => ({ slug, date, title: slug, excerpt: 'Texto propio', cover: { src: `assets/editorial/${slug}/cover.webp` } });
+const now = new Date('2026-10-18T12:00:00Z');
+const entries = [note('vieja', '2026-09-18'), note('limite', '2026-09-19'), note('futura', '2026-10-19'), note('hoy', '2026-10-18')];
+assert.deepEqual(selectCinemaNews(entries, now).map(x => x.title), ['hoy', 'limite']);
+assert.deepEqual(selectCinemaNews([note('hoy', '2026-10-18')], new Date('2026-10-18T02:59:59Z')), [], 'Before Argentine midnight the note is still in the future');
+assert.equal(selectCinemaNews([note('hoy', '2026-10-18')], new Date('2026-10-18T03:00:00Z')).length, 1);
+const many = Array.from({ length: 20 }, (_, index) => note(`nota-${String(index).padStart(2, '0')}`, '2026-10-18'));
+const selected = selectCinemaNews([...many, many[0]], now);
+assert.equal(selected.length, 6);
+assert.deepEqual(selected.map(x => x.title), many.slice(0, 6).map(x => x.title), 'Deterministic ties and no duplicate stories');
+assert.equal(entries[0].slug, 'vieja', 'Selection must not mutate the source');
+assert.deepEqual(selectCinemaNews(entries, new Date('2027-01-01T12:00:00Z')), [], 'Do not fill the rail with old news');
+const directory = new URL('../src/data/editorials/', import.meta.url);
+const catalog = await Promise.all((await readdir(directory)).filter(file => file.endsWith('.json')).map(async file => JSON.parse(await readFile(new URL(file, directory), 'utf8'))));
+assert.ok(selectCinemaNews(catalog, now).every(item => item.link.startsWith('/editorial/') && item.source === 'CinePosta' && item.imageUrl.startsWith('/assets/editorial/')));
+console.log(`Radar propio: corte de 30 días, máximo 6, fechas AR y ${catalog.length} notas verificadas.`);

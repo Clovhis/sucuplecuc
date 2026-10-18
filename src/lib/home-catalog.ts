@@ -7,6 +7,7 @@ import {
 	isRecentPremiere, normalizeSearchText,
 } from './movies';
 import { getNormalizedMoviePlatforms } from './platforms';
+import movieAliases from '../data/movie-aliases.json';
 
 export function createHomeMovieRecord(movie: Movie): HomeMovieRecord {
 	const verdictLabel = getVerdictLabel(movie);
@@ -21,6 +22,7 @@ export function createHomeMovieRecord(movie: Movie): HomeMovieRecord {
 		// Preserve every field that the original MovieCard search included, including synopsis.
 		searchable: normalizeSearchText([
 			movie.title, movie.originalTitle, movie.synopsis, String(movie.year), movie.category,
+			...Object.entries(movieAliases).filter(([, slug]) => slug === movie.slug).map(([alias]) => alias.replaceAll('-', ' ')),
 			movie.audienceRating, ...platforms, ...getMovieSubgenres(movie), movie.director,
 			movie.productionCompany, ...(movie.mainCast ?? []), verdictLabel, movie.slug,
 		].join(' ')),

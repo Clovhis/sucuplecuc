@@ -6,7 +6,7 @@ Catálogo y revista digital de cine para público argentino, construidos con Ast
 
 - catálogo, fichas y búsqueda con filtros por género, año, score y disponibilidad argentina
 - perfiles de cineastas y un archivo de editoriales originales
-- Score Cine Posta del 1 al 10, además de rating público de 1 a 5
+- Score Cine Posta del 1 al 10, además de votos del público del 1 al 10
 - Radar de Cine, recomendaciones semanales y próximos estrenos con trailers
 - Comunidad con debates, comentarios, reacciones y fichas de películas
 - medidores editoriales por taxonomía (`Lagrimómetro`, `Jajámetro`, `Cagazómetro`, `Explosiómetro`, `Sangrómetro`)
@@ -220,7 +220,7 @@ Para preparar la base, ejecutá:
 Ese script:
 
 - crea la tabla `movie_ratings`
-- mantiene el agregado `movie_rating_stats`
+- mantiene los agregados compatibles `movie_rating_stats` (legado) y `movie_rating_stats_v2` (1–10)
 - expone RPCs para leer y votar
 - revoca acceso directo de `anon` a la tabla base
 
@@ -233,7 +233,9 @@ Los esquemas fuente están en `supabase/sql/`:
 - `community_messages.sql`: instalación completa de la comunidad.
 - `community_message_reactions.sql`: migración incremental de spoilers, 👍/👎 y autor del último posteo.
 - `community_message_limit_300.sql`: baja el máximo de los mensajes a 300 caracteres.
-- `movie_ratings.sql`: votos de 1 a 5 estrellas compartidos entre ficha y comunidad.
+- `movie_ratings.sql`: instalación completa de votos; API v2 del 1 al 10 y API antigua compatible.
+- `movie_ratings_1_to_10.sql`: migración incremental para bases existentes; conserva votos viejos y los normaliza al leer, sin multiplicarlos en cada ejecución. Aplicar antes del frontend nuevo.
+- `merge_duplicate_movie_threads.sql`: reúne las tribunas de las fichas duplicadas conservando mensajes, respuestas y reacciones.
 - `actor_high_scores.sql`: ranking Arcade del top 10 del simulador de carrera actoral mediante RPCs validadas.
 
 ### Conexión MCP para futuras iteraciones
@@ -261,18 +263,18 @@ Antes de aplicar cambios de base en producción:
 
 El sitio genera salida estática en `dist/`.
 
-El home usa tres ediciones versionadas e independientes de las cargas de películas. Radar se actualiza diariamente a las **10:00 de Argentina**. Recomendadas se actualiza los **domingos a la 01:00 de Argentina**. Próximos estrenos tiene su propio Action **todos los días a la 01:00 de Argentina**, que retira de la próxima edición los títulos cuya fecha de estreno ya llegó. Cada Action valida y publica sólo su sección. El deploy lee esas ediciones sin consultar fuentes ni recalcularlas. Los cron pueden demorarse en GitHub.
+El Radar toma todas las notas propias y muestra hasta seis de los últimos 30 días calendario de Argentina, por fecha descendente y slug como desempate. Excluye fechas futuras y no rellena con notas viejas. Cada publicación lo renueva; la validación diaria a las **10:00 de Argentina** dispara Pages para retirar vencidas. Recomendadas se actualiza los **domingos a la 01:00 de Argentina** y próximos estrenos **todos los días a la 01:00 de Argentina**, con sus snapshots independientes. Los cron pueden demorarse en GitHub.
 
 | Workflow | Responsabilidad | Horario AR |
 | --- | --- | --- |
-| `refresh-cinema-news.yml` | Consultar todos los medios y publicar la edición del Radar | Diario, 10:00 |
+| `refresh-cinema-news.yml` | Validar y reconstruir Radar con notas propias | Diario, 10:00 |
 | `refresh-weekly-recommendations.yml` | Generar y publicar las recomendadas | Domingo, 01:00 |
 | `refresh-upcoming-releases.yml` | Revisar fechas y publicar próximos estrenos con trailers | Diario, 01:00 |
 | `deploy.yml` | Construir y publicar el contenido versionado en Pages | Push a main / actualizador exitoso / manual |
 | `validate.yml` | Contenido, pósters, seguridad y navegador Chromium | PR / lunes / manual |
 | `publish-buffer-x.yml` | Agendar la película diaria en X por Buffer | 18:30, publicación 19:00 |
 
-Una carga con las skills de alta/auditoría conserva `cinemaNews.generated.json`, `weeklyRecommendations.generated.ts` y `upcomingReleases.generated.ts`. No ejecutes sus generadores como parte de una carga. `validate:content` comprueba el contrato y rechaza diffs que mezclen películas y ediciones. Los trailers toman la fecha y el video de la misma ficha argentina, sin depender de una búsqueda HTML en TMDB. [Arquitectura, operación y recuperación](docs/home-automation.md).
+Una carga con las skills de alta/auditoría conserva `weeklyRecommendations.generated.ts` y `upcomingReleases.generated.ts`. No ejecutes sus generadores como parte de una carga. `validate:content` comprueba el contrato y rechaza diffs que mezclen películas y ediciones. Los trailers toman la fecha y el video de la misma ficha argentina, sin depender de una búsqueda HTML en TMDB. [Arquitectura, operación y recuperación](docs/home-automation.md).
 
 El workflow de publicación actual vive en:
 
