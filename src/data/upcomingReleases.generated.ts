@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-18T08:45:21.201Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-19T09:40:51.485Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Clayface",
