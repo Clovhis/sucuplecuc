@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-19T09:40:51.485Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-20T09:13:28.085Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Clayface",
@@ -49,6 +49,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10581",
 		"videoUrl": "https://www.youtube.com/watch?v=ly3QNtZrEHk",
 		"thumbnailUrl": "https://i.ytimg.com/vi/ly3QNtZrEHk/hqdefault.jpg"
+	},
+	{
+		"title": "Sensatez y sentimientos",
+		"releaseDate": "2026-10-29",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10634-sensatez-y-sentimientos/",
+		"slug": "cines-argentinos-10634",
+		"videoUrl": "https://www.youtube.com/watch?v=5i4_ceVDUqg",
+		"thumbnailUrl": "https://i.ytimg.com/vi/5i4_ceVDUqg/hqdefault.jpg"
 	},
 	{
 		"title": "El Bosque Salvaje: Wildwood",
