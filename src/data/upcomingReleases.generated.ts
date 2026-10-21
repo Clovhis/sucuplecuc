@@ -8,40 +8,8 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-20T09:13:28.085Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-21T09:10:51.679Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"title": "Clayface",
-		"releaseDate": "2026-10-22",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10474-clayface/",
-		"slug": "cines-argentinos-10474",
-		"videoUrl": "https://www.youtube.com/watch?v=MnaFt0OrDTM",
-		"thumbnailUrl": "https://i.ytimg.com/vi/MnaFt0OrDTM/hqdefault.jpg"
-	},
-	{
-		"title": "El poder de la red",
-		"releaseDate": "2026-10-22",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10628-el-poder-de-la-red/",
-		"slug": "cines-argentinos-10628",
-		"videoUrl": "https://www.youtube.com/watch?v=Z3lF1qhVORU",
-		"thumbnailUrl": "https://i.ytimg.com/vi/Z3lF1qhVORU/hqdefault.jpg"
-	},
-	{
-		"title": "Buenas vibraciones",
-		"releaseDate": "2026-10-22",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10617-buenas-vibraciones/",
-		"slug": "cines-argentinos-10617",
-		"videoUrl": "https://www.youtube.com/watch?v=mpRq3TpgbIM",
-		"thumbnailUrl": "https://i.ytimg.com/vi/mpRq3TpgbIM/hqdefault.jpg"
-	},
-	{
-		"title": "Terror en el Amazonas",
-		"releaseDate": "2026-10-22",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10583-terror-en-el-amazonas/",
-		"slug": "cines-argentinos-10583",
-		"videoUrl": "https://www.youtube.com/watch?v=GDN6JIgum0A",
-		"thumbnailUrl": "https://i.ytimg.com/vi/GDN6JIgum0A/hqdefault.jpg"
-	},
 	{
 		"title": "Everest: La otra cara",
 		"releaseDate": "2026-10-29",
@@ -105,5 +73,21 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10211",
 		"videoUrl": "https://www.youtube.com/watch?v=9NpBMpYzZaw",
 		"thumbnailUrl": "https://i.ytimg.com/vi/9NpBMpYzZaw/hqdefault.jpg"
+	},
+	{
+		"title": "Avengers: Doomsday",
+		"releaseDate": "2026-12-17",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10102-avengers-doomsday/",
+		"slug": "cines-argentinos-10102",
+		"videoUrl": "https://www.youtube.com/watch?v=jyoTi0gPgNY",
+		"thumbnailUrl": "https://i.ytimg.com/vi/jyoTi0gPgNY/hqdefault.jpg"
+	},
+	{
+		"title": "Duna: Parte Tres",
+		"releaseDate": "2026-12-17",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10441-duna-parte-tres/",
+		"slug": "cines-argentinos-10441",
+		"videoUrl": "https://www.youtube.com/watch?v=9iuVf3Ppb7U",
+		"thumbnailUrl": "https://i.ytimg.com/vi/9iuVf3Ppb7U/hqdefault.jpg"
 	}
 ];
