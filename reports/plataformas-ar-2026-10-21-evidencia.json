@@ -1,0 +1,4693 @@
+{
+  "date": "2026-10-21",
+  "window": {
+    "from": "2026-10-07",
+    "to": "2026-10-21",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "scope": "Películas de estreno original 2026, llegadas legales AR. No se incluyen episodios ni estrenos en salas como búsqueda principal."
+  },
+  "method": {
+    "discovery": "JustWatch GraphQL newTitles, AR, NEW, MOVIE, releaseYear 2026. Quince consultas diarias, paginación agotada en todas; contraste con créditos, fechas originales, fuentes oficiales y sitios de cada proveedor cuando corresponde.",
+    "endpoint": "https://apis.justwatch.com/graphql",
+    "dailyCounts": [
+      {
+        "date": "2026-10-07",
+        "count": 15,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-08",
+        "count": 15,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-09",
+        "count": 8,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-10",
+        "count": 4,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-11",
+        "count": 1,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-12",
+        "count": 10,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-13",
+        "count": 38,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-14",
+        "count": 14,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-15",
+        "count": 48,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-16",
+        "count": 28,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-17",
+        "count": 9,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-18",
+        "count": 3,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-19",
+        "count": 5,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-20",
+        "count": 34,
+        "paginationExhausted": true
+      },
+      {
+        "date": "2026-10-21",
+        "count": 6,
+        "paginationExhausted": true
+      }
+    ],
+    "uniqueIndexedCandidates": 109,
+    "classification": {
+      "existing": 60,
+      "old-original-release": 21,
+      "pending": 12,
+      "new": 11,
+      "updated": 5
+    },
+    "additionalManualCandidates": [
+      {
+        "title": "Conociendo la raíz",
+        "status": "pending",
+        "source": "https://play.cine.ar/INCAA/produccion/9932",
+        "reason": "Retratos seguros insuficientes; año original también requiere resolver la discrepancia con comunicaciones anteriores."
+      }
+    ],
+    "limitations": "Relevamiento de fuentes públicas, no certificación de la totalidad de catálogos cerrados. Mercado Play bloquea acceso automatizado; Flow y CINE.AR se consultan por fuera de JustWatch. Los agregados de películas antiguas se distinguen de los estrenos originales. No se migran slugs/años históricos fuera de este lote."
+  },
+  "providers": [
+    {
+      "provider": "Netflix",
+      "result": "Siete altas por suscripción; Primate también disponible.",
+      "source": "https://www.justwatch.com/ar/proveedor/netflix/nuevo"
+    },
+    {
+      "provider": "Prime Video",
+      "result": "Social Media Killed the Movie Star por suscripción. Tu corazón, Azul oscuro y Panda Plan 2: Amazon Video RENT/BUY; la etiqueta no implica inclusión en Prime.",
+      "source": "https://www.justwatch.com/ar/proveedor/amazon-prime-video/nuevo"
+    },
+    {
+      "provider": "HBO Max",
+      "result": "GOAT se actualiza a suscripción. Otros títulos actuales ya presentes; La virgen de la tosquera y All You Need Is Kill tienen premiere original 2025.",
+      "source": "https://www.justwatch.com/ar/proveedor/hbo-max/nuevo"
+    },
+    {
+      "provider": "Disney Plus",
+      "result": "Moana de acción real llega a suscripción el 21/10, confirmado por prensa oficial regional. Jamie Foxx y Clown Panic quedan pendientes por el piso de créditos/retratos.",
+      "source": "https://prensa.disneylatino.com/novedades/el-oc%C3%A9ano-est%C3%A1-llamando-moana-la-emocionante-pel%C3%ADcula-de-acci%C3%B3n-real-de-disney-llega-a-disney%2B-el-21-de-octubre"
+    },
+    {
+      "provider": "Apple TV",
+      "result": "May Contain y Azul oscuro se agregan como RENT/BUY; Tu corazón y Panda Plan 2 también son transaccionales. Tenzing ya estaba cargada. La etiqueta histórica Apple TV reúne suscripción y tienda; la distinción se conserva en esta evidencia.",
+      "source": "https://www.justwatch.com/ar/proveedor/apple-tv-plus/nuevo"
+    },
+    {
+      "provider": "Paramount Plus",
+      "result": "Primate confirmado por suscripción. Scream 7 y otros títulos ya presentes. No se adelanta Scary Movie 6 ante comunicaciones de fechas contradictorias y ausencia de oferta AR FLATRATE vigente.",
+      "source": "https://www.justwatch.com/ar/proveedor/paramount-plus/nuevo"
+    },
+    {
+      "provider": "Crunchyroll",
+      "result": "Sin largometraje de año original 2026 y llegada verificable dentro de la ventana. Las novedades de episodios no se convierten en películas.",
+      "source": "https://www.justwatch.com/ar/proveedor/crunchyroll/nuevo"
+    },
+    {
+      "provider": "Flow",
+      "result": "Comunicación argentina de octubre verificada: las novedades cinematográficas identificadas ya están en catálogo o son de año original anterior. La promoción temporal de Paw Patrol del 14 al 18 ya venció; no se asigna acceso gratuito vigente ni se confunden bundles con disponibilidad nativa.",
+      "source": "https://www.otroscines.com/post/todas-las-peliculas-y-series-que-llegan-a-flow-en-octubre-2026"
+    },
+    {
+      "provider": "CINE.AR",
+      "result": "Conociendo la raíz localizada en la ficha oficial 9932. Pendiente: no se recuperaron suficientes retratos seguros de dirección/participantes; no se carga una ficha incompleta.",
+      "source": "https://play.cine.ar/INCAA/produccion/9932"
+    },
+    {
+      "provider": "Mercado Play",
+      "result": "Portada oficial devuelve 403; sin inventario público fechado exhaustivo. La comunicación localizada sobre Los 33 corresponde a una película de 2015, no a estreno original 2026. No se fuerza un alta.",
+      "source": "https://www.mercadolibre.com.ar/blog/mplay-los-33-pelicula-historia-real"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "tm1679492",
+      "path": "src/data/movies/tu-corazon-se-rompera-2026.json",
+      "slug": "tu-corazon-se-rompera-2026",
+      "title": "Tu corazón se romperá",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-08",
+      "platforms": [
+        "Prime Video",
+        "Apple TV"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/tu-corazon-se-rompera",
+        "offers": [
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f195595b-13f1-46d8-a2f3-99fd66ac95ab"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/tu-corazon-sera-destrozado/umc.cmc.5jx9m0uh88c99mc24h7r9kb2y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812517370"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/tu-corazon-sera-destrozado/umc.cmc.5jx9m0uh88c99mc24h7r9kb2y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812517370"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f195595b-13f1-46d8-a2f3-99fd66ac95ab"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/tu-corazon-sera-destrozado/umc.cmc.5jx9m0uh88c99mc24h7r9kb2y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812517370"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/tu-corazon-sera-destrozado/umc.cmc.5jx9m0uh88c99mc24h7r9kb2y?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812517370"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "tu-corazon-se-rompera-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/tu-corazon-se-rompera-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/tu-corazon-se-rompera",
+        "raw": 4.9,
+        "scale": 10,
+        "votes": 1055,
+        "normalized": 5,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 5,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Romance",
+        "genres": [
+          "Romance",
+          "Drama"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "El tema musical o los conflictos no sustituyen la forma narrativa; no hay guerra central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/tu-corazon-se-rompera-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+        "sourceWidth": 1280,
+        "sourceHeight": 1920,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "p1kBz3nT5V4",
+        "url": "https://www.youtube.com/watch?v=p1kBz3nT5V4",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Mikhail Vaynberg",
+          "key": "Mikhail Vaynberg",
+          "name": "Mikhail Vaynberg",
+          "image": "/people/mikhail-vaynberg-tmdb1547457.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/m2gtdkNGGMkE6LUevQpA7xvYq6p.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1547457?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/tu-corazon-se-rompera"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Veronika Zhuravleva",
+          "key": "Veronika Zhuravleva",
+          "name": "Veronika Zhuravleva",
+          "image": "/people/veronika-zhuravleva-nm16255117.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/bvlry6DeiYkm0onAZhonlpl4J7.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/5037367",
+            "https://www.imdb.com/name/nm16255117/",
+            "https://www.start.ru/person/veronika-zhuravleva"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Daniel Vegas",
+          "key": "Daniel Vegas",
+          "name": "Cherkas Danylo",
+          "image": "/people/daniel-vegas-nm10085322.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/t9AFZX1rpTt59npITX2GY3JgySd.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q88385607",
+            "https://www.imdb.com/name/nm10085322/",
+            "https://www.themoviedb.org/person/5598110-daniel-vegas",
+            "https://www.imdb.com/fr-ca/title/tt38190257/fullcredits/",
+            "https://www.themoviedb.org/person/5598110-daniel-vegas?language=en-US",
+            "https://www.imdb.com/title/tt38190257/fullcredits/"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm1588029",
+      "path": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+      "slug": "panda-plan-2-la-tribu-magica-2026",
+      "title": "Panda Plan 2: La tribu mágica",
+      "kind": "updated",
+      "year": 2026,
+      "releaseDate": "2026-09-17",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/panda-plan-the-magical-tribe",
+        "offers": [
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c241ec3e-e394-4530-a4d0-6909392e514b"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/panda-plan-la-tribu-magica/umc.cmc.5h3eskizoszb2ozi89c2wz705?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812877346"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/panda-plan-la-tribu-magica/umc.cmc.5h3eskizoszb2ozi89c2wz705?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812877346"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c241ec3e-e394-4530-a4d0-6909392e514b"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/panda-plan-la-tribu-magica/umc.cmc.5h3eskizoszb2ozi89c2wz705?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812877346"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/panda-plan-la-tribu-magica/umc.cmc.5h3eskizoszb2ozi89c2wz705?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6812877346"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "panda-plan-the-magical-tribe-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/panda-plan-the-magical-tribe-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/panda-plan-the-magical-tribe",
+        "raw": 4.4,
+        "scale": 10,
+        "votes": 731,
+        "normalized": 4,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 4,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Aventura",
+        "genres": [
+          "Aventura",
+          "Acción",
+          "Comedia"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "Se conserva la clasificación verificada; no se cambia la categoría para activar un medidor."
+      },
+      "poster": {
+        "path": "assets/posters/2026/panda-plan-2-la-tribu-magica-2026.webp",
+        "width": 480,
+        "height": 672,
+        "source": null,
+        "sourceWidth": 2000,
+        "sourceHeight": 3000,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "FvS2FTjlzEA",
+        "url": "https://www.youtube.com/watch?v=FvS2FTjlzEA",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Derek Hui",
+          "key": "Derek Hui",
+          "name": "Derek Hui",
+          "image": "/people/derek-hui-nm3215871.jpg",
+          "remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fe%2Fpeople%2Fec7459617f3c8bd091f3343ecc3bcd26.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q60989434",
+            "https://www.imdb.com/name/nm3215871/",
+            "https://watch.plex.tv/person/derek-hui"
+          ],
+          "missingBirth": true,
+          "missingNationality": false
+        },
+        {
+          "credit": "Jackie Chan",
+          "key": "Jackie Chan",
+          "name": "Jackie Chan",
+          "image": "/people/jackie-chan-nm0000329.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackie%20Chan%20-%202025%20Locarno%20Film%20Festival.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q36970",
+            "https://www.imdb.com/name/nm0000329/"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Ma Li",
+          "key": "Ma Li",
+          "name": "Ma Li",
+          "image": "/people/ma-li-nm7613068.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/xgO9iIzH6zv6T6pMuXgrz2qC58H.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q24838942",
+            "https://www.imdb.com/name/nm7613068/",
+            "https://www.themoviedb.org/person/3668242-ma-li"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm2946124",
+      "path": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+      "slug": "pradhama-drishtiya-kuttakkar-2026",
+      "title": "Pradhama Drishtiya Kuttakkar",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-10",
+      "platforms": [
+        "Netflix"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/pradhama-drishtiya-kuttakkar",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83197640"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83197640"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "pradhama-drishtiya-kuttakkar-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/pradhama-drishtiya-kuttakkar",
+        "raw": 7.5,
+        "scale": 10,
+        "votes": 5975,
+        "normalized": 8,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Thriller",
+        "genres": [
+          "Thriller",
+          "Crimen",
+          "Drama"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "El tema musical o los conflictos no sustituyen la forma narrativa; no hay guerra central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/pradhama-drishtiya-kuttakkar-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/yJ78kbekUBZMcxla1lXABI9o2wL.jpg",
+        "sourceWidth": 2000,
+        "sourceHeight": 3000,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "hf96obsJIGU",
+        "url": "https://www.youtube.com/watch?v=hf96obsJIGU",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Shahad Nilambur",
+          "key": "Shahad Nilambur",
+          "name": "Shahad Nilambur",
+          "image": "/people/shahad-nilambur-tmdb1725223.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/2WGcqLqtPGl8DE5MAc6fTAy6XFY.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1725223-shahad-nilambur?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/pradhama-drishtiya-kuttakkar"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Parvathy Thiruvothu",
+          "key": "Parvathy Thiruvothu",
+          "name": "Parvathy Thiruvothu",
+          "image": "/people/parvathy-thiruvothu-tmdb1053894.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/8PD546DV51Rwc2YkBsQw8iUCWTk.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1053894-parvathy-thiruvothu?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/pradhama-drishtiya-kuttakkar"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Mathew Thomas",
+          "key": "Mathew Thomas",
+          "name": "Mathew Thomas",
+          "image": "/people/mathew-thomas-tmdb2236875.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/tynqqZ6LXz6TCDUWMG0xR4pNDkw.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2236875-mathew-thomas?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/pradhama-drishtiya-kuttakkar"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm2949972",
+      "path": "src/data/movies/un-primer-semestre-epico-2026.json",
+      "slug": "un-primer-semestre-epico-2026",
+      "title": "Un primer semestre épico",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-10",
+      "platforms": [
+        "Netflix"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/un-primer-semestre-epico",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/82673568"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/82673568"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "un-primer-semestre-epico-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/un-primer-semestre-epico-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/un-primer-semestre-epico",
+        "raw": 5.3,
+        "scale": 10,
+        "votes": 1985,
+        "normalized": 5,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 5,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Romance",
+        "genres": [
+          "Romance",
+          "Drama",
+          "Comedia",
+          "Musical"
+        ],
+        "subgenres": [],
+        "musical": true,
+        "war": false,
+        "reason": "Romance narrado también mediante canciones del vínculo y el desarraigo."
+      },
+      "poster": {
+        "path": "assets/posters/2026/un-primer-semestre-epico-2026.webp",
+        "width": 480,
+        "height": 719,
+        "source": "https://media.themoviedb.org/t/p/original/vqt0fIHy8dkSpUtVcrN1NaaANl8.jpg",
+        "sourceWidth": 1281,
+        "sourceHeight": 1920,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "uuPuy3HbJ08",
+        "url": "https://www.youtube.com/watch?v=uuPuy3HbJ08",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Aditya Haasan",
+          "key": "Aditya Haasan",
+          "name": "Aditya Haasan",
+          "image": "/people/aditya-haasan-tmdb4450372.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/z8p5MCemqMOemMEcvdWTtfvvzIc.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/4450372-aditya-hasan?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/un-primer-semestre-epico"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Anand Deverakonda",
+          "key": "Anand Deverakonda",
+          "name": "Anand Deverakonda",
+          "image": "/people/anand-deverakonda-tmdb1979856.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/8mT71CU9VjPOmqvypCu8HFC3YHr.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1979856-anand-deverakonda?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/un-primer-semestre-epico"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Vaishnavi Chaitanya",
+          "key": "Vaishnavi Chaitanya",
+          "name": "Vaishnavi Chaitanya",
+          "image": "/people/vaishnavi-chaitanya-tmdb2994460.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/gXN6lkoUHL0sUVJx1Se3lciyJLs.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2994460-vaishnavi-chaitanya?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/un-primer-semestre-epico"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm3004032",
+      "path": "src/data/movies/en-directo-2026.json",
+      "slug": "en-directo-2026",
+      "title": "En directo",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-11",
+      "platforms": [
+        "Netflix"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/en-directo",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/81917272"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/81917272"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "en-directo-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/en-directo-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.imdb.com/title/tt47657999/",
+        "raw": 5.8,
+        "scale": 10,
+        "votes": 638,
+        "normalized": 6,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 6,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Thriller",
+        "genres": [
+          "Thriller",
+          "Crimen",
+          "Drama"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "El tema musical o los conflictos no sustituyen la forma narrativa; no hay guerra central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/en-directo-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/xVabS4lTi6IMscr2FOucxydE6ZD.jpg",
+        "sourceWidth": 900,
+        "sourceHeight": 1350,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "VqbrAbuQC1o",
+        "url": "https://www.youtube.com/watch?v=VqbrAbuQC1o",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Dhruv Tripathi",
+          "key": "Dhruv Tripathi",
+          "name": "Dhruv Tripathi",
+          "image": "/people/dhruv-tripathi-tmdb6511882.jpg",
+          "remoteImageUrl": "https://trinityfilms.in/wp-content/uploads/2020/09/dhruv-picture.jpeg",
+          "referenceUrls": [
+            "https://trinityfilms.in/director/dhruv-tripathi/",
+            "https://www.justwatch.com/ar/pelicula/en-directo",
+            "https://www.imdb.com/name/nm9889725/"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Parineeti Chopra",
+          "key": "Parineeti Chopra",
+          "name": "Parineeti Chopra",
+          "image": "/people/parineeti-chopra-nm4495174.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Parineeti%20Chopra%20snapped%20at%20the%20launch%20of%20ORIGEM%E2%80%99s%20flagship%20store%20in%20Bandra.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1034471-parineeti-chopra?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/en-directo",
+            "https://www.wikidata.org/wiki/Q2995813",
+            "https://www.imdb.com/name/nm4495174/"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Deven Bhojani",
+          "key": "Deven Bhojani",
+          "name": "Deven Bhojani",
+          "image": "/people/deven-bhojani-nm0080409.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Deven%20Bhojani%20During%20Premier%20Of%20The%20Man%20In%20The%20Maze%20(cropped).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/110292-deven-bhojani?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/en-directo",
+            "https://www.wikidata.org/wiki/Q16197598",
+            "https://www.imdb.com/name/nm0080409/"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm2994636",
+      "path": "src/data/movies/solterisima-tambien-2026.json",
+      "slug": "solterisima-tambien-2026",
+      "title": "Solterísima también",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-16",
+      "platforms": [
+        "Netflix"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/seriously-single-too",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/81645163"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/81645163"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "solterisima-tambien-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/solterisima-tambien-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/seriously-single-too",
+        "raw": 3.4,
+        "scale": 10,
+        "votes": 76,
+        "normalized": 3,
+        "confidenceCeiling": 8,
+        "masterpieceCeiling": 8,
+        "final": 3,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia",
+          "Romance"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "El tema musical o los conflictos no sustituyen la forma narrativa; no hay guerra central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/solterisima-tambien-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/ocSY3cX4g6hxy4EkQWXPjrrdzCI.jpg",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "YnsY_9q7m6U",
+        "url": "https://www.youtube.com/watch?v=YnsY_9q7m6U",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Katleho Ramaphakela",
+          "key": "Katleho Ramaphakela",
+          "name": "Katleho Ramaphakela",
+          "image": "/people/katleho-ramaphakela-tmdb2726061.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/fZVaFsEjGZapMofluPi6HFLnSKm.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2726061-katleho-ramaphakela?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/seriously-single-too"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Rethabile Ramaphakela",
+          "key": "Rethabile Ramaphakela",
+          "name": "Rethabile Ramaphakela",
+          "image": "/people/rethabile-ramaphakela-tmdb2726060.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/tmQQav0J9k8eA1FVUxo0teOo5DK.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2726060-rethabile-ramaphakela?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/seriously-single-too"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Fulu Modibedi",
+          "key": "Fulu Modibedi",
+          "name": "Fulu Modibedi",
+          "image": "/people/fulu-modibedi-tmdb2503140.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/dE6rn2IH3xlVXQ8teUiCaFkm5aq.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2503140-fulu-modibedi?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/seriously-single-too"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Tumi Morake",
+          "key": "Tumi Morake",
+          "name": "Tumi Morake",
+          "image": "/people/tumi-morake-tmdb2207871.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/uERkSz8bhHwKFkOAeUOAnINHeqE.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2207871-tumi-morake?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/seriously-single-too"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm1514496",
+      "path": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+      "slug": "marsupilami-caos-a-bordo-2026",
+      "title": "Marsupilami: Caos a bordo",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-17",
+      "platforms": [
+        "Netflix"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/marsupilami-caos-a-bordo",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83173740"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83173740"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "marsupilami-caos-a-bordo-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/marsupilami-caos-a-bordo",
+        "raw": 6.3,
+        "scale": 10,
+        "votes": 2224,
+        "normalized": 6,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 6,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia",
+          "Aventura",
+          "Fantasía"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "El tema musical o los conflictos no sustituyen la forma narrativa; no hay guerra central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/marsupilami-caos-a-bordo-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/kMhVs1XqmzXlD0mDQ4rTJh4Kvf1.jpg",
+        "sourceWidth": 2000,
+        "sourceHeight": 3000,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "pXGuY9qcSe0",
+        "url": "https://www.youtube.com/watch?v=pXGuY9qcSe0",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Philippe Lacheau",
+          "key": "Philippe Lacheau",
+          "name": "Philippe Lacheau",
+          "image": "/people/philippe-lacheau-tmdb1186076.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/2ev0Ip2vNnC5UYe10gJNcApahZ4.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1186076-philippe-lacheau?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/marsupilami-caos-a-bordo"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Philippe Lacheau",
+          "key": "Philippe Lacheau",
+          "name": "Philippe Lacheau",
+          "image": "/people/philippe-lacheau-tmdb1186076.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/2ev0Ip2vNnC5UYe10gJNcApahZ4.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1186076-philippe-lacheau?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/marsupilami-caos-a-bordo"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Jamel Debbouze",
+          "key": "Jamel Debbouze",
+          "name": "Jamel Debbouze",
+          "image": "/people/jamel-debbouze-tmdb2408.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/aiqWSWbRJ6rrjxxVE6y2Xb3KdSp.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2408-jamel-debbouze?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/marsupilami-caos-a-bordo"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Tarek Boudali",
+          "key": "Tarek Boudali",
+          "name": "Tarek Boudali",
+          "image": "/people/tarek-boudali-tmdb1186075.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/ubhbt0kZ6TX0t0tBFWe50A4u22y.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1186075-tarek-boudali?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/marsupilami-caos-a-bordo"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm3011538",
+      "path": "src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+      "slug": "lego-friends-heartlake-el-musical-2026",
+      "title": "LEGO Friends: Heartlake el musical",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-17",
+      "platforms": [
+        "Netflix"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/lego-r-friends-heartlake-el-musical",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83183454"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83183454"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "lego-friends-heartlake-el-musical-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/lego-r-friends-heartlake-el-musical",
+        "raw": 8,
+        "scale": 10,
+        "votes": 42,
+        "normalized": 8,
+        "confidenceCeiling": 8,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Musical",
+        "genres": [
+          "Musical",
+          "Aventura",
+          "Fantasía"
+        ],
+        "subgenres": [],
+        "musical": true,
+        "war": false,
+        "reason": "Números de canto y baile sostienen la aventura de Daisy."
+      },
+      "poster": {
+        "path": "assets/posters/2026/lego-friends-heartlake-el-musical-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/6PMMEU8eHSN0TlPG6koC8EEvavx.jpg",
+        "sourceWidth": 1000,
+        "sourceHeight": 1500,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "0rT0C92Z2ks",
+        "url": "https://www.youtube.com/watch?v=0rT0C92Z2ks",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Paul Becker",
+          "key": "Paul Becker",
+          "name": "Paul Becker",
+          "image": "/people/paul-becker-nm1033939.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/tsp0epDXxdYy8Btnw9ZFJvkUz2U.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1408200-paul-becker?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/lego-r-friends-heartlake-el-musical",
+            "https://www.wikidata.org/wiki/Q7149283",
+            "https://www.imdb.com/name/nm1033939/",
+            "https://www.themoviedb.org/person/1408200-paul-becker"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Jada Langley",
+          "key": "Jada Langley",
+          "name": "Jada Langley",
+          "image": "/people/jada-langley-tmdb5797172.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/bpO0J3rDYvOIESx4YS61nUrGUEH.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/5797172-jada-langley?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/lego-r-friends-heartlake-el-musical"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Meesha Garbett",
+          "key": "Meesha Garbett",
+          "name": "Meesha Garbett",
+          "image": "/people/meesha-garbett-nm10152927.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/lpg0N0a7CF1QdD9BrEtCYLy1nVm.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2441421-meesha-garbett?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/lego-r-friends-heartlake-el-musical",
+            "https://www.wikidata.org/wiki/Q140673252",
+            "https://www.imdb.com/name/nm10152927/",
+            "https://www.themoviedb.org/person/2441421-meesha-garbett"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm1918977",
+      "path": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+      "slug": "los-mejores-anos-de-nuestra-vida-2026",
+      "title": "Hombres G: Los mejores años de nuestra vida",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-19",
+      "platforms": [
+        "Netflix"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83023630"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/83023630"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "los-mejores-anos-de-nuestra-vida-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026",
+        "raw": 7.6,
+        "scale": 10,
+        "votes": 69,
+        "normalized": 8,
+        "confidenceCeiling": 8,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Documental",
+        "genres": [
+          "Documental",
+          "Música"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "El tema musical o los conflictos no sustituyen la forma narrativa; no hay guerra central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/los-mejores-anos-de-nuestra-vida-2026.webp",
+        "width": 480,
+        "height": 686,
+        "source": "https://media.themoviedb.org/t/p/original/dSyseZXNnObOCSRmC4BQo1w1RMU.jpg",
+        "sourceWidth": 2000,
+        "sourceHeight": 2857,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "pZDPY0TaEQQ",
+        "url": "https://www.youtube.com/watch?v=pZDPY0TaEQQ",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Charlie Arnaiz",
+          "key": "Charlie Arnaiz",
+          "name": "Charlie Arnaiz",
+          "image": "/people/charlie-arnaiz-tmdb2114770.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/6F9A2lLoKvUfACLpcpg95EwvAkB.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2114770-charlie-arnaiz?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Alberto Ortega",
+          "key": "Alberto Ortega",
+          "name": "Alberto Ortega",
+          "image": "/people/alberto-ortega-tmdb2407283.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/vo3gfhoKmrBIR2v7e1jlnN1gjOn.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/2407283-alberto-ortega?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "David Summers",
+          "key": "David Summers",
+          "name": "David Summers",
+          "image": "/people/david-summers-tmdb195479.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/vQJMrCdra0XU7wWq6IixSukL7zd.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/195479-david-summers?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Rafael Gutiérrez",
+          "key": "Rafael Gutiérrez",
+          "name": "Rafael Gutiérrez",
+          "image": "/people/rafael-gutierrez-tmdb1506934.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/8bYPdl16qNSYWtlPmO4gSuSmpcE.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1506934-rafael-gutierrez?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm2988806",
+      "path": "src/data/movies/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.json",
+      "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+      "title": "Las redes sociales mataron a la estrella de cine",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-20",
+      "platforms": [
+        "Prime Video"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/las-redes-sociales-mataron-a-la-estrella-de-cine",
+        "offers": [
+          {
+            "provider": "Amazon Prime Video",
+            "type": "FLATRATE",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c95663de-0a84-4781-ae9f-c60387e2d5d1"
+          },
+          {
+            "provider": "Amazon Prime Video",
+            "type": "FLATRATE",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c95663de-0a84-4781-ae9f-c60387e2d5d1"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "IMDb audience displayed by JustWatch",
+        "source": "https://www.justwatch.com/ar/pelicula/las-redes-sociales-mataron-a-la-estrella-de-cine",
+        "raw": 5.3,
+        "scale": 10,
+        "votes": 36,
+        "normalized": 5,
+        "confidenceCeiling": 8,
+        "masterpieceCeiling": 8,
+        "final": 5,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Documental",
+        "genres": [
+          "Documental"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "El tema musical o los conflictos no sustituyen la forma narrativa; no hay guerra central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/fS780VbvIsPtDXHkRvDBBHDtTAz.jpg",
+        "sourceWidth": 800,
+        "sourceHeight": 1200,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "oghmiFOeD2c",
+        "url": "https://www.youtube.com/watch?v=oghmiFOeD2c",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Kjersti Flaa",
+          "key": "Kjersti Flaa",
+          "name": "Kjersti Flaa",
+          "image": "/people/kjersti-flaa-tmdb5332393.jpg",
+          "remoteImageUrl": "https://images.squarespace-cdn.com/content/v1/63bc33366f5a1303f0062d16/103665cf-6cec-4e02-b35d-92685b3a759f/Kjersti.jpeg",
+          "referenceUrls": [
+            "https://www.nowla.org/kjerstiflaa",
+            "https://www.justwatch.com/ar/pelicula/las-redes-sociales-mataron-a-la-estrella-de-cine",
+            "https://www.wikidata.org/wiki/Q17058555",
+            "https://www.imdb.com/name/nm8843564/"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "John Boyega",
+          "key": "John Boyega",
+          "name": "John Boyega",
+          "image": "/people/john-boyega-nm3915784.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Boyega%20by%20Gage%20Skidmore.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/236695-john-boyega?language=en-US",
+            "https://www.justwatch.com/ar/pelicula/las-redes-sociales-mataron-a-la-estrella-de-cine",
+            "https://www.wikidata.org/wiki/Q1699385",
+            "https://www.imdb.com/name/nm3915784/"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Ben Affleck",
+          "key": "Ben Affleck",
+          "name": "Ben Affleck",
+          "image": "/people/ben-affleck-nm0000255.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Affleck%20at%2083rd%20Venice%20International%20Film%20Festival-1%20(cropped%203x4).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q483118",
+            "https://www.imdb.com/name/nm0000255/",
+            "https://www.themoviedb.org/person/880-ben-affleck"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm1349352",
+      "path": "src/data/movies/moana-live-action-2026.json",
+      "slug": "moana-live-action-2026",
+      "title": "Moana (Live Action)",
+      "kind": "updated",
+      "year": 2026,
+      "releaseDate": "2026-07-09",
+      "platforms": [
+        "Disney Plus"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/vaiana-2025",
+        "offers": [
+          {
+            "provider": "Disney Plus",
+            "type": "FLATRATE",
+            "url": "https://www.disneyplus.com/browse/entity-46bee9e1-869a-4a04-a145-de2c28552866"
+          },
+          {
+            "provider": "Disney Plus",
+            "type": "FLATRATE",
+            "url": "https://www.disneyplus.com/browse/entity-46bee9e1-869a-4a04-a145-de2c28552866"
+          },
+          {
+            "provider": "Disney Plus",
+            "type": "FLATRATE",
+            "url": "https://www.disneyplus.com/browse/entity-46bee9e1-869a-4a04-a145-de2c28552866"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "moana-accion-real-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/moana-accion-real-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "type": "RT audience",
+        "source": "https://www.rottentomatoes.com/m/moana_2026",
+        "raw": 87,
+        "scale": 100,
+        "votes": "1,000+",
+        "normalized": 9,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Aventura",
+        "genres": [
+          "Aventura",
+          "Fantasía",
+          "Familiar",
+          "Musical"
+        ],
+        "musical": true,
+        "war": false,
+        "reason": "Se conserva la clasificación verificada; no se cambia la categoría para activar un medidor."
+      },
+      "poster": {
+        "path": "assets/posters/2026/moana-live-action-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": null,
+        "sourceWidth": 2000,
+        "sourceHeight": 3000,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "n7f6hlKsxxo",
+        "url": "https://www.youtube.com/watch?v=n7f6hlKsxxo",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Thomas Kail",
+          "key": "Thomas Kail",
+          "name": "Thomas Kail",
+          "image": "/people/thomas-kail-nm2371802.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/ThomasKail-byPhilipRomano.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q7791435",
+            "https://www.imdb.com/name/nm2371802/",
+            "https://www.themoviedb.org/person/1485823-thomas-kail"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Catherine Laga'aia",
+          "key": "Catherine Laga'aia",
+          "name": "Catherine Laga'aia",
+          "image": "/people/catherine-lagaaia-nm15077498.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catherine%20Laga'aia%20by%20Gage%20Skidmore.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q126600595",
+            "https://www.imdb.com/name/nm15077498/",
+            "https://www.themoviedb.org/person/4247263-catherine-laga-aia"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Dwayne Johnson",
+          "key": "Dwayne Johnson",
+          "name": "Dwayne Johnson",
+          "image": "/people/dwayne-johnson-nm0425005.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q10738",
+            "https://www.imdb.com/name/nm0425005/",
+            "https://www.themoviedb.org/person/18918-dwayne-johnson"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Rena Owen",
+          "key": "Rena Owen",
+          "name": "Rena Owen",
+          "image": "/people/rena-owen-nm0654240.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rena%20Owen.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q434301",
+            "https://www.imdb.com/name/nm0654240/",
+            "https://www.themoviedb.org/person/7241-rena-owen"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "John Tui",
+          "key": "John Tui",
+          "name": "John Tui",
+          "image": "/people/john-tui-nm1732270.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Tui%20(7064083597)%20(cropped).jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q1059037",
+            "https://www.imdb.com/name/nm1732270/",
+            "https://www.themoviedb.org/person/205406-john-tui"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Frankie Adams",
+          "key": "Frankie Adams",
+          "name": "Frankie Adams",
+          "image": "/people/frankie-adams-nm4213877.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Frankie%20Adams%20by%20Gage%20Skidmore.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q23879973",
+            "https://www.imdb.com/name/nm4213877/",
+            "https://www.themoviedb.org/person/1753341-frankie-adams"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm1677493",
+      "path": "src/data/movies/primate-2026.json",
+      "slug": "primate-2026",
+      "title": "Primate",
+      "kind": "updated",
+      "year": 2026,
+      "releaseDate": "2026-01-09",
+      "platforms": [
+        "Netflix",
+        "Paramount Plus"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/primate",
+        "offers": [
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/82676945"
+          },
+          {
+            "provider": "Netflix",
+            "type": "FLATRATE",
+            "url": "https://www.netflix.com/title/82676945"
+          },
+          {
+            "provider": "Paramount Plus",
+            "type": "FLATRATE",
+            "url": "https://www.paramountplus.com/movies/primate/p3QdAaey_iMjPhVWbOlwd8K2nSmZwb60?searchReferral=&amp;utm_source=publisher"
+          },
+          {
+            "provider": "Paramount Plus",
+            "type": "FLATRATE",
+            "url": "https://www.paramountplus.com/movies/primate/p3QdAaey_iMjPhVWbOlwd8K2nSmZwb60?searchReferral=&amp;utm_source=publisher"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df142efa-0b2e-4e05-ac23-bb782d45e756"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df142efa-0b2e-4e05-ac23-bb782d45e756"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df142efa-0b2e-4e05-ac23-bb782d45e756"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/primate/umc.cmc.5nuwqj1t8zwf7z1lu3saxapo7?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1858839814"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/primate/umc.cmc.5nuwqj1t8zwf7z1lu3saxapo7?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1858839814"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/primate/umc.cmc.5nuwqj1t8zwf7z1lu3saxapo7?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1858839814"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df142efa-0b2e-4e05-ac23-bb782d45e756"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df142efa-0b2e-4e05-ac23-bb782d45e756"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df142efa-0b2e-4e05-ac23-bb782d45e756"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/primate/umc.cmc.5nuwqj1t8zwf7z1lu3saxapo7?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1858839814"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/primate/umc.cmc.5nuwqj1t8zwf7z1lu3saxapo7?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1858839814"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/primate/umc.cmc.5nuwqj1t8zwf7z1lu3saxapo7?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1858839814"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "existingFile": "src/data/movies/primate-2026.json",
+        "decision": "Actualización de la ficha existente; no se crea una segunda película."
+      },
+      "score": {
+        "type": "RT audience",
+        "source": "https://www.rottentomatoes.com/m/primate_2025",
+        "raw": 69,
+        "scale": 100,
+        "votes": "1,000+",
+        "normalized": 7,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 7,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Terror",
+        "genres": [
+          "Terror",
+          "Thriller",
+          "Misterio"
+        ],
+        "musical": false,
+        "war": false,
+        "reason": "Se conserva la clasificación verificada; no se cambia la categoría para activar un medidor."
+      },
+      "poster": {
+        "path": "assets/posters/2026/primate-2026.webp",
+        "width": 480,
+        "height": 710,
+        "source": null,
+        "sourceWidth": null,
+        "sourceHeight": null,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "wo87F-va410",
+        "url": "https://www.youtube.com/watch?v=wo87F-va410",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Johannes Roberts",
+          "key": "Johannes Roberts",
+          "name": "Johannes Roberts",
+          "image": "/people/johannes-roberts-nm1266897.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/8hHny6atmFXcuNl2m1AP3fIOayz.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q6216955",
+            "https://www.imdb.com/name/nm1266897/",
+            "https://www.themoviedb.org/person/100734-johannes-roberts"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Johnny Sequoyah",
+          "key": "Johnny Sequoyah",
+          "name": "Johnny Sequoyah",
+          "image": "/people/johnny-sequoyah-nm4292747.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/taFfjOB4lPAx75kJo9yFylKT1ek.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q15986588",
+            "https://www.imdb.com/name/nm4292747/",
+            "https://www.themoviedb.org/person/1295282-johnny-sequoyah"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Jessica Alexander",
+          "key": "Jessica Alexander",
+          "name": "Jessica Alexander",
+          "image": "/people/jessica-alexander-nm7987534.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/5PsoZ9aN2cTXkWyhIALluBrbiWy.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q109593006",
+            "https://www.imdb.com/name/nm7987534/",
+            "https://www.themoviedb.org/person/2600509-jessica-alexander"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Troy Kotsur",
+          "key": "Troy Kotsur",
+          "name": "Troy Kotsur",
+          "image": "/people/troy-kotsur-nm1319274.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/24K3og12jGBGL9dqH5OYFdjF9wu.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q3508016",
+            "https://www.imdb.com/name/nm1319274/",
+            "https://www.themoviedb.org/person/1571661-troy-kotsur"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm1502962",
+      "path": "src/data/movies/goat-2026.json",
+      "slug": "goat-2026",
+      "title": "GOAT",
+      "kind": "updated",
+      "year": 2026,
+      "releaseDate": "2026-02-13",
+      "platforms": [
+        "HBO Max",
+        "Apple TV"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/goat-como-cabras",
+        "offers": [
+          {
+            "provider": "HBO Max",
+            "type": "FLATRATE",
+            "url": "https://play.hbomax.com/show/b17de22e-1556-451b-8feb-11c7f1db0f3a?utm_source=universal_search"
+          },
+          {
+            "provider": "HBO Max",
+            "type": "FLATRATE",
+            "url": "https://play.hbomax.com/show/b17de22e-1556-451b-8feb-11c7f1db0f3a?utm_source=universal_search"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5ba8df96-80f1-49bf-af00-f861d23eb08a"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5ba8df96-80f1-49bf-af00-f861d23eb08a"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5ba8df96-80f1-49bf-af00-f861d23eb08a"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/goat-la-cabra-que-cambio-el-juego/umc.cmc.28bpljt75wyzb07vusickkrnz?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1871603610"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/goat-la-cabra-que-cambio-el-juego/umc.cmc.28bpljt75wyzb07vusickkrnz?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1871603610"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/goat-la-cabra-que-cambio-el-juego/umc.cmc.28bpljt75wyzb07vusickkrnz?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1871603610"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "existingFile": "src/data/movies/goat-2026.json",
+        "decision": "Actualización de la ficha existente; no se crea una segunda película."
+      },
+      "score": {
+        "type": "RT audience",
+        "source": "https://www.rottentomatoes.com/m/goat_2026",
+        "raw": 92,
+        "scale": 100,
+        "votes": "2,500+",
+        "normalized": 9,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Animacion",
+        "genres": [
+          "Animación",
+          "Acción",
+          "Aventura"
+        ],
+        "musical": false,
+        "war": false,
+        "reason": "Se conserva la clasificación verificada; no se cambia la categoría para activar un medidor."
+      },
+      "poster": {
+        "path": "assets/posters/2026/goat-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": null,
+        "sourceWidth": null,
+        "sourceHeight": null,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "ggZA2oi8S5s",
+        "url": "https://www.youtube.com/watch?v=ggZA2oi8S5s",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Tyree Dillihay",
+          "key": "Tyree Dillihay",
+          "name": "Tyree Dillihay",
+          "image": "/people/tyree-dillihay-nm2826643.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/cA4rfx4HwDYmmxpJoBclTZTjcEN.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q134931999",
+            "https://www.imdb.com/name/nm2826643/",
+            "https://www.themoviedb.org/person/2122835-tyree-dillihay"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Adam Rosette",
+          "key": "Adam Rosette",
+          "name": "Adam Rosette",
+          "image": "/people/adam-rosette-nm2411105.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q134930966",
+            "https://www.imdb.com/name/nm2411105/",
+            "https://www.themoviedb.org/person/2872262-adam-rosette",
+            "https://www.sonypicturesanimation.com/our-team/filmmakers/adam-rosette"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Caleb McLaughlin",
+          "key": "Caleb McLaughlin",
+          "name": "Caleb McLaughlin",
+          "image": "/people/caleb-mclaughlin-nm5160895.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caleb%20McLaughlin%20by%20Gage%20Skidmore.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q26926382",
+            "https://www.imdb.com/name/nm5160895/",
+            "https://www.themoviedb.org/person/1474123-caleb-mclaughlin"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Gabrielle Union",
+          "key": "Gabrielle Union",
+          "name": "Gabrielle Union",
+          "image": "/people/gabrielle-union-nm0005517.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/GabrielleUnionMay10.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q231648",
+            "https://www.imdb.com/name/nm0005517/",
+            "https://www.themoviedb.org/person/17773-gabrielle-union"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Nick Kroll",
+          "key": "Nick Kroll",
+          "name": "Nick Kroll",
+          "image": "/people/nick-kroll-nm1802209.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nick%20Kroll%20at%20TIFF16%20(29601078356)%20(cropped).jpg?width=640",
+          "referenceUrls": [
+            "https://www.imdb.com/name/nm0602860/",
+            "https://www.themoviedb.org/person/208519-nick-kroll",
+            "https://www.wikidata.org/wiki/Q4241574",
+            "https://www.imdb.com/name/nm1802209/"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm1928868",
+      "path": "src/data/movies/la-invitacion-2026.json",
+      "slug": "la-invitacion-2026",
+      "title": "La invitación",
+      "kind": "updated",
+      "year": 2026,
+      "releaseDate": "2026-08-06",
+      "platforms": [
+        "Cine",
+        "Apple TV"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/the-invite",
+        "offers": [
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036"
+          }
+        ],
+        "cinema": {
+          "venue": "Cine Cosmos UBA",
+          "locality": "CABA, Av. Corrientes 2046",
+          "date": "2026-10-21",
+          "time": "17:20",
+          "source": "https://cosmos.uba.ar/",
+          "corroboration": "https://cinealternativo.com.ar/pelicula/la-invitacion-2026"
+        }
+      },
+      "duplicateCheck": {
+        "existingFile": "src/data/movies/la-invitacion-2026.json",
+        "decision": "Actualización de la ficha existente; no se crea una segunda película."
+      },
+      "score": {
+        "type": "RT audience",
+        "source": "https://www.rottentomatoes.com/m/the_invite",
+        "raw": 89,
+        "scale": 100,
+        "votes": "1,000+",
+        "normalized": 9,
+        "confidenceCeiling": null,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "reason": "No hay evidencia de reconocimiento artístico perdurable para elevar un estreno al nivel de obra maestra. La muestra pequeña impone además tope 8 cuando corresponde.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia",
+          "Drama",
+          "Romance"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "Se conserva la clasificación verificada; no se cambia la categoría para activar un medidor."
+      },
+      "poster": {
+        "path": "assets/posters/2026/la-invitacion-2026.webp",
+        "width": 480,
+        "height": 600,
+        "source": null,
+        "sourceWidth": null,
+        "sourceHeight": null,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "4whZaJuU2Ik",
+        "url": "https://www.youtube.com/watch?v=4whZaJuU2Ik",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Olivia Wilde",
+          "key": "Olivia Wilde",
+          "name": "Olivia Wilde",
+          "image": "/people/olivia-wilde-nm1312575.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Olivia%20Wilde%20in%202022.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q200355",
+            "https://www.imdb.com/name/nm1312575/",
+            "https://www.themoviedb.org/person/59315-olivia-wilde"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Seth Rogen",
+          "key": "Seth Rogen",
+          "name": "Seth Rogen",
+          "image": "/people/seth-rogen-nm0736622.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Seth%20Rogen%20-%20Good%20Fortune%20LA%20Premiere.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q220308",
+            "https://www.imdb.com/name/nm0736622/",
+            "https://www.themoviedb.org/person/19274-seth-rogen"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Olivia Wilde",
+          "key": "Olivia Wilde",
+          "name": "Olivia Wilde",
+          "image": "/people/olivia-wilde-nm1312575.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Olivia%20Wilde%20in%202022.jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q200355",
+            "https://www.imdb.com/name/nm1312575/",
+            "https://www.themoviedb.org/person/59315-olivia-wilde"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Penélope Cruz",
+          "key": "Penélope Cruz",
+          "name": "Penélope Cruz",
+          "image": "/people/penelope-cruz-nm0004851.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/n5SFgmvJSENQt8poE4qYacUnKOi.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q39666",
+            "https://www.imdb.com/name/nm0004851/",
+            "https://www.themoviedb.org/person/955-penelope-cruz"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        },
+        {
+          "credit": "Edward Norton",
+          "key": "Edward Norton",
+          "name": "Edward Norton",
+          "image": "/people/edward-norton-nm0001570.jpg",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ed%20Norton%20and%20Shauna%20Robertson%20TIFF%202025%20(cropped).jpg?width=640",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q125904",
+            "https://www.imdb.com/name/nm0001570/",
+            "https://www.themoviedb.org/person/819-edward-norton"
+          ],
+          "missingBirth": false,
+          "missingNationality": false
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm2878849",
+      "path": "src/data/movies/may-contain-my-life-2026.json",
+      "slug": "may-contain-my-life-2026",
+      "title": "May Contain: My Life",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-07",
+      "platforms": [
+        "Apple TV"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/may-contain-my-life",
+        "offers": [
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/may-contain-my-life/umc.cmc.2nprf4zdtng04ii3r8d3v6bru?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6800344598"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/may-contain-my-life/umc.cmc.2nprf4zdtng04ii3r8d3v6bru?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6800344598"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/may-contain-my-life/umc.cmc.2nprf4zdtng04ii3r8d3v6bru?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6800344598"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/may-contain-my-life/umc.cmc.2nprf4zdtng04ii3r8d3v6bru?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6800344598"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "may-contain-my-life-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/may-contain-my-life-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/may_contain_my_life",
+        "type": "single-professional-critic",
+        "critic": "Russ Simmons, KKFI-FM (Kansas City), 2026-10-02",
+        "raw": 3,
+        "scale": 5,
+        "votes": 1,
+        "normalized": 6,
+        "confidenceCeiling": 8,
+        "final": 6,
+        "audienceSearch": "RT sin porcentaje; IMDb/TMDb/JustWatch/Letterboxd sin agregado numérico; Filmweb/Metacritic sin agregado recuperable; Watchmode user_rating/critic_score null. No se promediaron reseñas visibles.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Documental",
+        "genres": [
+          "Documental"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "Testimonios y reconstrucción documental; ni números musicales narrativos ni conflicto bélico central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/may-contain-my-life-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://media.themoviedb.org/t/p/original/7jegbmW4bYvZr8SKQr8PnGcoXOT.jpg",
+        "sourceWidth": 1000,
+        "sourceHeight": 1500,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "uFWu16-_Ql0",
+        "url": "https://www.youtube.com/watch?v=uFWu16-_Ql0",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Jennifer Greenstreet",
+          "key": "Jennifer Greenstreet",
+          "name": "Jennifer Greenstreet",
+          "image": "/people/jennifer-greenstreet-verified.jpg",
+          "remoteImageUrl": "https://cdn.prod.website-files.com/61f2fc2dd48da3196364dede/65087654dba3fa7c1cef8560_JenRetouch.png",
+          "referenceUrls": [
+            "https://www.justlikeyoufilms.org/cast-crew",
+            "https://www.imdb.com/title/tt21146916/"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "August Maturo",
+          "key": "August Maturo",
+          "name": "August Maturo",
+          "image": "/people/august-maturo-verified.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/2haSmurs6WIFGu7dadXouGHW1qm.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1257867-august-maturo",
+            "https://www.imdb.com/title/tt21146916/"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Ava Kolker",
+          "key": "Ava Kolker",
+          "name": "Ava Kolker",
+          "image": "/people/ava-kolker-verified.jpg",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/original/9Zu0rhZH0TOmnlR6iZPGoNs8zdb.jpg",
+          "referenceUrls": [
+            "https://www.themoviedb.org/person/1508532-ava-kolker",
+            "https://www.imdb.com/title/tt21146916/"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    },
+    {
+      "id": "tm2866336",
+      "path": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+      "slug": "azul-oscuro-azul-celeste-2026",
+      "title": "Azul oscuro, azul celeste",
+      "kind": "new",
+      "year": 2026,
+      "releaseDate": "2026-10-15",
+      "platforms": [
+        "Prime Video",
+        "Apple TV"
+      ],
+      "availability": {
+        "checkedAt": "2026-10-21",
+        "country": "AR",
+        "source": "https://www.justwatch.com/ar/pelicula/azul-oscuro-azul-celeste",
+        "offers": [
+          {
+            "provider": "Amazon Video",
+            "type": "RENT",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3231878-21df-4fde-8901-c14f4071722a"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/azul-oscuro-azul-celeste/umc.cmc.6kmqv3plwi4ota6nq7o3qpcgr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810422877"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "RENT",
+            "url": "https://tv.apple.com/ar/movie/azul-oscuro-azul-celeste/umc.cmc.6kmqv3plwi4ota6nq7o3qpcgr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810422877"
+          },
+          {
+            "provider": "Amazon Video",
+            "type": "BUY",
+            "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e3231878-21df-4fde-8901-c14f4071722a"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/azul-oscuro-azul-celeste/umc.cmc.6kmqv3plwi4ota6nq7o3qpcgr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810422877"
+          },
+          {
+            "provider": "Apple TV Store",
+            "type": "BUY",
+            "url": "https://tv.apple.com/ar/movie/azul-oscuro-azul-celeste/umc.cmc.6kmqv3plwi4ota6nq7o3qpcgr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810422877"
+          }
+        ]
+      },
+      "duplicateCheck": {
+        "slug": "azul-oscuro-azul-celeste-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "score": {
+        "source": "https://www.justwatch.com/ar/pelicula/azul-oscuro-azul-celeste",
+        "type": "IMDb audience displayed by JustWatch",
+        "raw": 9,
+        "scale": 10,
+        "votes": 24,
+        "normalized": 9,
+        "confidenceCeiling": 8,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "reason": "Muestra muy pequeña; sin reconocimiento perdurable que habilite el nivel de obra maestra. IMDb indexado 8.9/20 conduce al mismo entero final.",
+        "checkedAt": "2026-10-21"
+      },
+      "genres": {
+        "category": "Documental",
+        "genres": [
+          "Documental",
+          "Deportes"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "reason": "Testimonios y reconstrucción documental; ni números musicales narrativos ni conflicto bélico central."
+      },
+      "poster": {
+        "path": "assets/posters/2026/azul-oscuro-azul-celeste-2026.webp",
+        "width": 480,
+        "height": 720,
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/95/0f/3d/950f3db2-c89b-ff9b-1225-5f4021b976d6/AZULOSCUROAZULCELESTE_2026_CBATIZ_20260724_M_Poster_es-419.jpg/1200x2133.webp",
+        "sourceWidth": 1200,
+        "sourceHeight": 1800,
+        "visual": "Fuente y WebP local inspeccionados. Arte original/neutro; sin banderas, marcas añadidas o ampliación de miniaturas. Pósters históricos conservados en las revalidaciones."
+      },
+      "trailer": {
+        "id": "5UUhzHYzltk",
+        "url": "https://www.youtube.com/watch?v=5UUhzHYzltk",
+        "oEmbed": "Validado por auditor sin --skip-youtube; búsqueda auxiliar devuelve 302 y se documenta como advertencia externa."
+      },
+      "retainedPeople": [
+        {
+          "credit": "Carlos Carrera",
+          "key": "Carlos Carrera",
+          "name": "Carlos Carrera",
+          "image": "/people/carlos-carrera-verified.jpg",
+          "remoteImageUrl": "https://www.holamexicoff.com/wp-content/uploads/2026/08/azul-oscuro-azul-celeste-director-luis-carlos-carrera-gonzalez.webp",
+          "referenceUrls": [
+            "https://www.holamexicoff.com/azul-oscuro-azul-celeste/",
+            "https://www.themoviedb.org/person/7348-carlos-carrera"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Carlos Bátiz",
+          "key": "Carlos Bátiz",
+          "name": "Carlos Bátiz",
+          "image": "/people/carlos-batiz-verified.jpg",
+          "remoteImageUrl": "https://www.holamexicoff.com/wp-content/uploads/2026/08/azul-oscuro-azul-celeste-director-carlos-batiz.webp",
+          "referenceUrls": [
+            "https://www.holamexicoff.com/azul-oscuro-azul-celeste/",
+            "https://creativeshow.com.mx/portfolio/item/azul-oscuro/"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Gerardo Torrado",
+          "key": "Gerardo Torrado",
+          "name": "Gerardo Torrado",
+          "image": "/people/gerardo-torrado-verified.jpg",
+          "remoteImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Gerardo_Torrado.jpg",
+          "referenceUrls": [
+            "https://en.wikipedia.org/wiki/Gerardo_Torrado",
+            "https://www.infobae.com/mexico/deportes/2026/05/19/quienes-son-todos-los-futbolistas-y-periodistas-que-participan-en-el-documental-azul-oscuro-azul-celeste/"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        },
+        {
+          "credit": "Óscar Pérez",
+          "key": "Óscar Pérez",
+          "name": "Óscar Pérez",
+          "image": "/people/oscar-perez-verified.jpg",
+          "remoteImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/%C3%93scar_P%C3%A9rez_Rojas.jpg",
+          "referenceUrls": [
+            "https://en.wikipedia.org/wiki/%C3%93scar_P%C3%A9rez_Rojas",
+            "https://www.infobae.com/mexico/deportes/2026/05/19/quienes-son-todos-los-futbolistas-y-periodistas-que-participan-en-el-documental-azul-oscuro-azul-celeste/"
+          ],
+          "missingBirth": true,
+          "missingNationality": true
+        }
+      ],
+      "awards": "No se incorporaron premios sin fuente. No se deducen premios por popularidad.",
+      "originalCopy": true
+    }
+  ],
+  "discovery": [
+    {
+      "id": "tm1265001",
+      "title": "Spider-Man: Un nuevo día",
+      "originalTitle": "Spider-Man: Brand New Day",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07",
+        "2026-10-20"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/untitled-spider-man-sequel",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/spider-man-brand-new-day-2026.json"
+      ]
+    },
+    {
+      "id": "tm901884",
+      "title": "Tres Extraños",
+      "originalTitle": "Tres Extraños",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/tres-extranos",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2020,
+      "reason": "Película de Santiago Díaz con estreno argentino en 2024; cinenacional.com la registra como producción 2020.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1244486/releases",
+      "primary": "https://cinenacional.com/pelicula/tres-extranos/"
+    },
+    {
+      "id": "tm2891812",
+      "title": "Cada vez menos extraño",
+      "originalTitle": "Mniej obcy",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/less-of-a-stranger",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/cada-vez-menos-extrano-2026.json"
+      ]
+    },
+    {
+      "id": "tm2972308",
+      "title": "¿Quién es Martin Mull?",
+      "originalTitle": "Who Is Martin Mull?",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/who-is-martin-mull",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/quien-es-martin-mull-2026.json"
+      ]
+    },
+    {
+      "id": "tm2991013",
+      "title": "Jamie Foxx: Take Care of Yourself",
+      "originalTitle": "Jamie Foxx: Take Care of Yourself",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/jamie-foxx-take-care-of-yourself",
+      "offers": [
+        "Disney Plus:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Especial solista de Jamie Foxx: no cumple el piso de dos intérpretes principales con nombre completo; no se reclasifica personal técnico como elenco."
+    },
+    {
+      "id": "tm2936657",
+      "title": "What Do You Do for an Encore?",
+      "originalTitle": "Pulp: What Do You Do for an Encore?",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07",
+        "2026-10-14",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+      "offers": [
+        "Apple TV Store:BUY",
+        "Amazon Video:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/pulp-que-harias-por-una-cancion-mas-2026.json"
+      ]
+    },
+    {
+      "id": "tm1932568",
+      "title": "Insaciable",
+      "originalTitle": "Saccharine",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07",
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/insaciable-2026",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/insaciable-2026.json"
+      ]
+    },
+    {
+      "id": "tm2878849",
+      "title": "May Contain: My Life",
+      "originalTitle": "May Contain: My Life",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-07"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/may-contain-my-life",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "new",
+      "path": "src/data/movies/may-contain-my-life-2026.json"
+    },
+    {
+      "id": "tm1679492",
+      "title": "Tu corazón se romperá",
+      "originalTitle": "Твоё сердце будет разбито",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/tu-corazon-se-rompera",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "new",
+      "path": "src/data/movies/tu-corazon-se-rompera-2026.json"
+    },
+    {
+      "id": "tm1487719",
+      "title": "Insidious: Fuera del más allá",
+      "originalTitle": "Insidious: Out of the Further",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08",
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/insidious-capitulo-6",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/la-noche-del-demonio-estan-entre-nosotros-2026.json"
+      ]
+    },
+    {
+      "id": "tm1940490",
+      "title": "Passenger",
+      "originalTitle": "Passenger",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/passenger-2026",
+      "offers": [
+        "Paramount Plus:FLATRATE",
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/el-pasajero-del-diablo-2026.json"
+      ]
+    },
+    {
+      "id": "tm1938088",
+      "title": "Un último disparo",
+      "originalTitle": "One Last Shot",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/un-ultimo-disparo",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/la-ultima-bala-2026.json"
+      ]
+    },
+    {
+      "id": "tm1655627",
+      "title": "Blue Film",
+      "originalTitle": "Blue Film",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/blue-film",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Premiere en Edimburgo 2025; la llegada digital 2026 no cambia el año original.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1398655/releases"
+    },
+    {
+      "id": "tm1959729",
+      "title": "Socias por accidente",
+      "originalTitle": "Socias por accidente",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/socias-por-accidente",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/socias-por-accidente-2026.json"
+      ]
+    },
+    {
+      "id": "tm1854448",
+      "title": "Un buen chico",
+      "originalTitle": "Heel",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/un-buen-chico",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Heel / Good Boy: premiere TIFF 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1381027/releases"
+    },
+    {
+      "id": "tm1588029",
+      "title": "Panda Plan: The Magical Tribe",
+      "originalTitle": "熊猫计划之部落奇遇记",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08",
+        "2026-10-10"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/panda-plan-the-magical-tribe",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "updated",
+      "path": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json"
+    },
+    {
+      "id": "tm1583631",
+      "title": "Letras robadas",
+      "originalTitle": "Power Ballad",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-08"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/power-ballad",
+      "offers": [
+        "Amazon Prime Video:FLATRATE",
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/letras-robadas-2026.json"
+      ]
+    },
+    {
+      "id": "tm1282106",
+      "title": "Avatar: La leyenda de Aang",
+      "originalTitle": "Avatar Aang: The Last Airbender",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-09"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/aang-the-last-airbender-2026",
+      "offers": [
+        "Paramount Plus:FLATRATE",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/avatar-la-leyenda-de-aang-2026.json"
+      ]
+    },
+    {
+      "id": "tm1604157",
+      "title": "Animales",
+      "originalTitle": "Animals",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-09"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/animals-2026",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/animales-2026.json",
+        "src/data/movies/animales-ben-affleck-2026.json"
+      ]
+    },
+    {
+      "id": "tm2878421",
+      "title": "Oasis: Don't Look Back in Anger",
+      "originalTitle": "Oasis: Don't Look Back in Anger",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-09"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/oasis-dont-look-back-in-anger",
+      "offers": [
+        "Disney Plus:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/oasis-don-t-look-back-in-anger-2026.json"
+      ]
+    },
+    {
+      "id": "tm1633773",
+      "title": "Posesión infernal: En llamas",
+      "originalTitle": "Evil Dead Burn",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-09",
+        "2026-10-13",
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/posesion-infernal-en-llamas",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/evil-dead-en-llamas-2026.json"
+      ]
+    },
+    {
+      "id": "tm2888283",
+      "title": "Project Baby",
+      "originalTitle": "Project Baby",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-09"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/project-baby-2026",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/project-baby-2026.json"
+      ]
+    },
+    {
+      "id": "tm2893295",
+      "title": "Mandaadi",
+      "originalTitle": "மண்டாடி",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-09"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/mandaadi",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/mandaadi-2026.json"
+      ]
+    },
+    {
+      "id": "tm1617135",
+      "title": "Matchbox: La película",
+      "originalTitle": "Matchbox the Movie",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-09"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/matchbox",
+      "offers": [
+        "Apple TV:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/matchbox-la-pelicula-2026.json"
+      ]
+    },
+    {
+      "id": "tm1637098",
+      "title": "Solo necesitas matar",
+      "originalTitle": "ALL YOU NEED IS KILL",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-10"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/all-you-need-is-kill",
+      "offers": [
+        "HBO Max:FLATRATE"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Premiere Annecy 2025, distinta de la expansión comercial 2026.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1432547/releases"
+    },
+    {
+      "id": "tm2946124",
+      "title": "Pradhama Drishtiya Kuttakkar",
+      "originalTitle": "പ്രഥമ ദൃഷ്ട്യാ കുറ്റക്കാർ",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-10"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/pradhama-drishtiya-kuttakkar",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json"
+    },
+    {
+      "id": "tm2949972",
+      "title": "Un primer semestre épico",
+      "originalTitle": "ఎపిక్ - ఫస్ట్ సెమెస్టర్",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-10"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/un-primer-semestre-epico",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/un-primer-semestre-epico-2026.json"
+    },
+    {
+      "id": "tm3004032",
+      "title": "En directo",
+      "originalTitle": "रिपोर्टिंग लाइव",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-11"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/en-directo",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/en-directo-2026.json"
+    },
+    {
+      "id": "tm1571746",
+      "title": "Liberen a Leonard Peltier",
+      "originalTitle": "Free Leonard Peltier",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-12"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/free-leonard-peltier",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Estreno festivalero 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1400778/releases"
+    },
+    {
+      "id": "tm2993134",
+      "title": "Land of Crime",
+      "originalTitle": "Território do Crime",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-12"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/land-of-crime",
+      "offers": [
+        "HBO Max:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/land-of-crime-2026.json"
+      ]
+    },
+    {
+      "id": "tm2998335",
+      "title": "Clown Panic: Histeria colectiva",
+      "originalTitle": "Clown Panic",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-12"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/clown-panic-histeria-colectiva",
+      "offers": [
+        "Disney Plus:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Nat Arnold, Donna Arnold y Ken Miller: no se recuperaron retratos individuales atribuibles suficientes. TMDb/IMDb/Watchmode y búsqueda de los responsables no resuelven el piso; no se usan fotos de personajes de archivo."
+    },
+    {
+      "id": "tm3012426",
+      "title": "Instadocus: IA sin frenos",
+      "originalTitle": "Instadocs: AI Gone Wild",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-12"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/instadocus-la-ia-se-descontrola",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Instadocus: IA sin frenos dura 27 minutos. No se recuperó dirección verificable y un conjunto suficiente de participantes con retrato. Se descartó usar celebridades de archivo como sustituto de los participantes centrales."
+    },
+    {
+      "id": "tm2885092",
+      "title": "Loco México Mágico",
+      "originalTitle": "Loco México Mágico",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-12"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/loco-mexico-magico",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/loco-mexico-magico-2026.json"
+      ]
+    },
+    {
+      "id": "tm2938394",
+      "title": "Sombras de octubre: Israel bajo asedio",
+      "originalTitle": "Shadows of October: Israel Under Siege",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-12"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/sombras-de-octubre-israel-bajo-asedio",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "pending",
+      "reason": "Beau Lee, Noam Ben David y Shalev Biton: sin retratos seguros suficientes tras TMDb, IMDb, Watchmode y búsqueda específica. El tema no habilita completar créditos por inferencia."
+    },
+    {
+      "id": "tm1674759",
+      "title": "Obsession",
+      "originalTitle": "Obsession",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/obsesion-2026",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Obsession: premiere TIFF 2025. La ficha histórica usa 2026; se documenta la discrepancia sin migrar su slug en esta carga.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1339713/releases"
+    },
+    {
+      "id": "tm1526979",
+      "title": "El día de la revelación",
+      "originalTitle": "Disclosure Day",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/el-dia-de-la-revelacion",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/el-dia-de-la-revelacion-2026.json"
+      ]
+    },
+    {
+      "id": "tm1961056",
+      "title": "Adolescencia, sexo y muerte en campamento Miasma",
+      "originalTitle": "Teenage Sex and Death at Camp Miasma",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-14"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/adolescencia-sexo-y-muerte-en-campamento-miasma",
+      "offers": [
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json"
+      ]
+    },
+    {
+      "id": "tm1436931",
+      "title": "Michael",
+      "originalTitle": "Michael",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/michael-2025-0",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/michael-2026.json"
+      ]
+    },
+    {
+      "id": "tm1656375",
+      "title": "Undertone: Frecuencia maldita",
+      "originalTitle": "undertone",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/undertone",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/undertone-frecuencia-maldita-2026.json"
+      ]
+    },
+    {
+      "id": "tm1629239",
+      "title": "La tarta del presidente",
+      "originalTitle": "The President's Cake",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/la-tarta-del-presidente",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "La tarta del presidente: Cannes 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1464883/releases"
+    },
+    {
+      "id": "tm1576974",
+      "title": "28 años después: El templo de los huesos",
+      "originalTitle": "28 Years Later: The Bone Temple",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/28-years-later-the-bone-temple",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/28-years-later-the-bone-temple-2026.json"
+      ]
+    },
+    {
+      "id": "tm1457585",
+      "title": "Super Mario Galaxy la película",
+      "originalTitle": "The Super Mario Galaxy Movie",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/super-mario-galaxy-la-pelicula",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/super-mario-galaxy-2026.json"
+      ]
+    },
+    {
+      "id": "tm1502962",
+      "title": "GOAT: Como cabras",
+      "originalTitle": "GOAT",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/goat-como-cabras",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "updated",
+      "path": "src/data/movies/goat-2026.json"
+    },
+    {
+      "id": "tm1624503",
+      "title": "Tow",
+      "originalTitle": "Tow",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/tow",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Tow: Tribeca 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1244517/releases"
+    },
+    {
+      "id": "tm1961088",
+      "title": "Lorne",
+      "originalTitle": "Lorne",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/lorne",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/lorne-2026.json"
+      ]
+    },
+    {
+      "id": "tm1617839",
+      "title": "Cambio de roles",
+      "originalTitle": "The Breadwinner",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/the-breadwinner",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/papa-a-cargo-2026.json"
+      ]
+    },
+    {
+      "id": "tm1627286",
+      "title": "Tu, yo y la Toscana",
+      "originalTitle": "You, Me & Tuscany",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/italiana",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/italiana-2026.json"
+      ]
+    },
+    {
+      "id": "tm1670505",
+      "title": "Hamlet (2025)",
+      "originalTitle": "Hamlet",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/hamlet-2025",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Hamlet de Aneil Karia: estreno original 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/843342/releases"
+    },
+    {
+      "id": "tm1925995",
+      "title": "Unas vacaciones en invierno",
+      "originalTitle": "Midwinter Break",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/midwinter-break",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/unas-vacaciones-en-invierno-2026.json"
+      ]
+    },
+    {
+      "id": "tm1900049",
+      "title": "El Momento",
+      "originalTitle": "The Moment",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/the-moment-2026",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/el-momento-2026.json"
+      ]
+    },
+    {
+      "id": "tm1969342",
+      "title": "Iron Maiden: Burning Ambition",
+      "originalTitle": "Iron Maiden: Burning Ambition",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/iron-maiden-burning-ambition",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/iron-maiden-burning-ambition-2026.json"
+      ]
+    },
+    {
+      "id": "tm1572652",
+      "title": "El pez pucheros",
+      "originalTitle": "The Pout-Pout Fish",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/el-pez-pucheros",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/el-pez-pucheros-2026.json"
+      ]
+    },
+    {
+      "id": "tm1613114",
+      "title": "La canción de mi padre 2",
+      "originalTitle": "I Can Only Imagine 2",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/i-can-only-imagine-2",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/la-cancion-de-mi-padre-2-2026.json"
+      ]
+    },
+    {
+      "id": "tm1966613",
+      "title": "Sniper: En tierra de nadie",
+      "originalTitle": "Sniper: No Nation",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/sniper-en-tierra-de-nadie",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/sniper-en-tierra-de-nadie-2026.json"
+      ]
+    },
+    {
+      "id": "tm1605891",
+      "title": "Clika",
+      "originalTitle": "Clika",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/clika",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/clika-2026.json"
+      ]
+    },
+    {
+      "id": "tm1543406",
+      "title": "No te olvidaré",
+      "originalTitle": "Reminders of Him",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/reminders-of-him",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/no-te-olvidare-2026.json"
+      ]
+    },
+    {
+      "id": "tm1924970",
+      "title": "Frutos prohibidos",
+      "originalTitle": "Forbidden Fruits",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/forbidden-fruits-2026",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/frutos-prohibidos-2026.json"
+      ]
+    },
+    {
+      "id": "tm1671109",
+      "title": "La mujer sin nombre",
+      "originalTitle": "Al-majhoula",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/la-mujer-sin-nombre",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Al-majhoula / The Unidentified: estreno original 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1337438/releases"
+    },
+    {
+      "id": "tm3005229",
+      "title": "Michael Che: Shot in Minnesota",
+      "originalTitle": "Michael Che: Shot in Minnesota",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/michael-che-shot-in-minnesota",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Especial solista de Michael Che; no cumple el mínimo de dos intérpretes principales, sin agregar técnicos como actores."
+    },
+    {
+      "id": "tm1436670",
+      "title": "Jóvenes Detectives 3",
+      "originalTitle": "Die drei ??? – Toteninsel",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/die-drei-toteninsel",
+      "offers": [
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/jovenes-detectives-3-2026.json"
+      ]
+    },
+    {
+      "id": "tm2899899",
+      "title": "Trail dei Papi",
+      "originalTitle": "Trail dei Papi",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-13"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/trail-dei-papi",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Trail dei Papi: sin score público numérico, créditos completos ni trailer verificable suficientes después de IMDb, Metacritic, TMDb y Watchmode sin coincidencia exacta."
+    },
+    {
+      "id": "tm2934390",
+      "title": "El amor de tu vida",
+      "originalTitle": "Love of Your Life",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-14"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/love-of-your-life",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/el-amor-de-tu-vida-2026.json"
+      ]
+    },
+    {
+      "id": "tm1472679",
+      "title": "Scary Movie: Terroríficamente incorrecta",
+      "originalTitle": "Scary Movie",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-14",
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/scary-movie-6",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/scary-movie-6-2026.json"
+      ]
+    },
+    {
+      "id": "tm1453176",
+      "title": "La Patrulla Canina: La dino película",
+      "originalTitle": "PAW Patrol: The Dino Movie",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-14",
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/paw-patrol-3",
+      "offers": [
+        "Amazon Video:RENT",
+        "Amazon Video:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/paw-patrol-la-dino-pelicula-2026.json"
+      ]
+    },
+    {
+      "id": "tm1955880",
+      "title": "Moscas",
+      "originalTitle": "Moscas",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-14"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/moscas-2026",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY",
+        "Amazon Video:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/moscas-2026.json"
+      ]
+    },
+    {
+      "id": "tm1951643",
+      "title": "Rosebush Pruning",
+      "originalTitle": "Rosebush Pruning",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-14"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/rosebush-pruning",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY",
+        "Amazon Video:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/rosebush-pruning-2026.json"
+      ]
+    },
+    {
+      "id": "tm2930066",
+      "title": "Masterplan",
+      "originalTitle": "Masterplan",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/masterplan-2026",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/masterplan-2026.json"
+      ]
+    },
+    {
+      "id": "tm2972006",
+      "title": "La tormenta",
+      "originalTitle": "Stormen",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/the-storm-2026",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/la-tormenta-2026.json"
+      ]
+    },
+    {
+      "id": "tm1593183",
+      "title": "Backrooms",
+      "originalTitle": "Backrooms",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/backrooms",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/backrooms-2026.json"
+      ]
+    },
+    {
+      "id": "tm1663302",
+      "title": "Epic: Elvis Presley en concierto",
+      "originalTitle": "EPiC: Elvis Presley in Concert",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15",
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/epic-elvis-presley-in-concert",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "EPiC: Elvis Presley in Concert: premiere 2025, expansión comercial 2026.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1445363/releases"
+    },
+    {
+      "id": "tm1510416",
+      "title": "Minions y monstruos",
+      "originalTitle": "Minions & Monsters",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15",
+        "2026-10-17"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/minions-y-monstruos",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/minions-monstruos-2026.json"
+      ]
+    },
+    {
+      "id": "tm1663575",
+      "title": "Un talento único",
+      "originalTitle": "Tuner",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/tuner",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Tuner: premiere Telluride 2025. La ficha histórica usa 2026; no se presenta como alta de estreno original 2026.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1340206/releases"
+    },
+    {
+      "id": "tm1555159",
+      "title": "Patrulla Nocturna",
+      "originalTitle": "Night Patrol",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15",
+        "2026-10-17"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/night-patrol",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Night Patrol: estreno festivalero 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1323625/releases"
+    },
+    {
+      "id": "tm1933157",
+      "title": "Stray Kids: The dominATE Experience",
+      "originalTitle": "스트레이 키즈: 더 도미네이트 익스피리언스",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/stray-kids-the-dominate-experience",
+      "offers": [
+        "HBO Max:FLATRATE",
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/stray-kids-the-dominate-experience-2026.json"
+      ]
+    },
+    {
+      "id": "tm1610271",
+      "title": "En mar abierto",
+      "originalTitle": "Deep Water",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15",
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/aguas-mortales",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/impacto-mortal-2026.json"
+      ]
+    },
+    {
+      "id": "tm2870042",
+      "title": "La Bestia del Pantano",
+      "originalTitle": "Hungry",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/la-bestia-del-pantano",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/la-bestia-del-pantano-2026.json"
+      ]
+    },
+    {
+      "id": "tm1672735",
+      "title": "Erupcja",
+      "originalTitle": "Erupcja",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/erupcja",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Erupcja: premiere 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1337592/releases"
+    },
+    {
+      "id": "tm1624377",
+      "title": "Contra las cuerdas",
+      "originalTitle": "In Cold Light",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15",
+        "2026-10-17"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/contra-las-cuerdas-2026",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "In Cold Light: estreno original 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1128377/releases"
+    },
+    {
+      "id": "tm1921165",
+      "title": "Besar es fácil",
+      "originalTitle": "Kissing Is the Easy Part",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/besar-es-facil",
+      "offers": [
+        "Netflix:FLATRATE",
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/besar-es-facil-2026.json"
+      ]
+    },
+    {
+      "id": "tm1659373",
+      "title": "911: Llamada infernal",
+      "originalTitle": "Bodycam",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/911-llamada-infernal",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Bodycam: estreno original 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1510745/releases"
+    },
+    {
+      "id": "tm3010189",
+      "title": "Sumukhi Suresh: Hoemonal",
+      "originalTitle": "Sumukhi Suresh: Hoemonal",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/sumukhi-suresh-hoemonal",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Especial solista de Sumukhi Suresh; no cumple el mínimo de dos intérpretes principales."
+    },
+    {
+      "id": "tm1603759",
+      "title": "Nos vemos mañana en la Luna",
+      "originalTitle": "À demain sur la Lune",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15",
+        "2026-10-17"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/te-veo-manana-en-la-luna",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "À demain sur la Lune: estreno original 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1433627/releases"
+    },
+    {
+      "id": "tm2866336",
+      "title": "Azul oscuro, azul celeste",
+      "originalTitle": "Azul oscuro, azul celeste",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/azul-oscuro-azul-celeste",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "new",
+      "path": "src/data/movies/azul-oscuro-azul-celeste-2026.json"
+    },
+    {
+      "id": "tm2961706",
+      "title": "Actividad paranormal en Hollywood",
+      "originalTitle": "Paranormal Hollywood Haunting",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/actividad-paranormal-en-hollywood",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Actividad paranormal en Hollywood: Carl Medland y Mumataz Yildimar identificados, sin dos intérpretes principales con retratos seguros. IMDb/Watchmode y búsquedas complementarias no completaron el piso."
+    },
+    {
+      "id": "tm2662768",
+      "title": "La Presencia del Vacío",
+      "originalTitle": "La Presencia del Vacío",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-15",
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/la-presencia-del-vacio",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "La presencia del vacío: festivales 2025, lanzamiento comercial 2026; Proimágenes registra ambas etapas.",
+      "releaseHistory": "https://www.themoviedb.org/movie/null/releases",
+      "primary": "https://www.proimagenescolombia.com/"
+    },
+    {
+      "id": "tm1641722",
+      "title": "Lo dejamos acá",
+      "originalTitle": "Lo dejamos acá",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/lo-dejamos-aca",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/lo-dejamos-aca-2026.json"
+      ]
+    },
+    {
+      "id": "tm2899082",
+      "title": "Tenzing: conquistando el Everest",
+      "originalTitle": "Tenzing",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/tenzing",
+      "offers": [
+        "Apple TV:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/tenzing-conquistando-el-everest-2026.json"
+      ]
+    },
+    {
+      "id": "tm1669016",
+      "title": "La muerte de Robin Hood",
+      "originalTitle": "The Death of Robin Hood",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/la-muerte-de-robin-hood",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:BUY",
+        "Amazon Video:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/la-muerte-de-robin-hood-2026.json"
+      ]
+    },
+    {
+      "id": "tm1573384",
+      "title": "La virgen de la tosquera",
+      "originalTitle": "La virgen de la tosquera",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/la-virgen-de-la-tosquera",
+      "offers": [
+        "HBO Max:FLATRATE"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "La virgen de la tosquera: premiere Sundance 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/862739/releases"
+    },
+    {
+      "id": "tm2972305",
+      "title": "Norm Macdonald: Una vida nada normal",
+      "originalTitle": "Norm: The Tale of Norm Macdonald",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/norm-the-tale-of-norm-macdonald",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/norm-la-historia-de-norm-macdonald-2026.json"
+      ]
+    },
+    {
+      "id": "tm1352761",
+      "title": "Scream 7",
+      "originalTitle": "Scream 7",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/scream-7",
+      "offers": [
+        "Paramount Plus:FLATRATE",
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/scream-7-2026.json"
+      ]
+    },
+    {
+      "id": "tm2929563",
+      "title": "KATSEYE: WILD HEARTS",
+      "originalTitle": "Katseye: Wild Hearts",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/katseye-wild-hearts",
+      "offers": [
+        "Disney Plus:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/katseye-wild-hearts-2026.json"
+      ]
+    },
+    {
+      "id": "tm1663979",
+      "title": "Prime Crime: A True Story",
+      "originalTitle": "Dead Man's Wire",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/prime-crime-a-true-story",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Dead Man’s Wire: estreno original 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1263012/releases"
+    },
+    {
+      "id": "tm1932656",
+      "title": "El discípulo: Una fábula de Wu-Tang",
+      "originalTitle": "The Disciple: A Wu-Tang Fable",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/the-disciple-2026",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "El discípulo: una fábula de Wu-Tang acredita RZA y Cilvaringz con monónimos; no se verificó un conjunto suficiente de intérpretes con nombre y apellido. Vanessa Kirby figura como productora, no se carga como actriz para completar el mínimo."
+    },
+    {
+      "id": "tm2875938",
+      "title": "¿Cuál es el precio de la dignidad?",
+      "originalTitle": "என்ன விலை",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/cual-es-el-precio-de-la-dignidad",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/cual-es-el-precio-de-la-dignidad-2026.json"
+      ]
+    },
+    {
+      "id": "tm2994636",
+      "title": "Solterísima también",
+      "originalTitle": "Seriously Single Too",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/seriously-single-too",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/solterisima-tambien-2026.json"
+    },
+    {
+      "id": "tm1676081",
+      "title": "Deathgasm 2: Goremageddon",
+      "originalTitle": "Deathgasm 2: Goremageddon",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/deathgasm-2-goremageddon",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "old-original-release",
+      "originalYear": 2025,
+      "reason": "Deathgasm II: Goremageddon: estreno original 2025.",
+      "releaseHistory": "https://www.themoviedb.org/movie/1177529/releases"
+    },
+    {
+      "id": "tm1909080",
+      "title": "Hijo de nadie",
+      "originalTitle": "Fils de personne",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/hijo-de-nadie",
+      "offers": [
+        "Apple TV Store:RENT",
+        "Apple TV Store:BUY"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/hijo-de-nadie-2026.json"
+      ]
+    },
+    {
+      "id": "tm2864038",
+      "title": "Garuda: Dare to Dream",
+      "originalTitle": "Garuda Di Dadaku",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-16"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/garuda-dare-to-dream",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "existing",
+      "existingFiles": [
+        "src/data/movies/garuda-dare-to-dream-2026.json"
+      ]
+    },
+    {
+      "id": "tm1514496",
+      "title": "Marsupilami: Caos a bordo",
+      "originalTitle": "Marsupilami",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-17"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/marsupilami-caos-a-bordo",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/marsupilami-caos-a-bordo-2026.json"
+    },
+    {
+      "id": "tm3011538",
+      "title": "Lego Friends: Heartlake el musical",
+      "originalTitle": "LEGO Friends: Heartlake the Musical",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-17"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/lego-r-friends-heartlake-el-musical",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/lego-friends-heartlake-el-musical-2026.json"
+    },
+    {
+      "id": "tm1677493",
+      "title": "Primate",
+      "originalTitle": "Primate",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-19"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/primate",
+      "offers": [
+        "Netflix:FLATRATE",
+        "Paramount Plus:FLATRATE",
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "updated",
+      "path": "src/data/movies/primate-2026.json"
+    },
+    {
+      "id": "tm1928868",
+      "title": "La Invitacion",
+      "originalTitle": "The Invite",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/the-invite",
+      "offers": [
+        "Amazon Video:RENT",
+        "Apple TV Store:RENT",
+        "Amazon Video:BUY",
+        "Apple TV Store:BUY"
+      ],
+      "status": "updated",
+      "path": "src/data/movies/la-invitacion-2026.json"
+    },
+    {
+      "id": "tm1918977",
+      "title": "Los mejores años de nuestra vida",
+      "originalTitle": "Los mejores años de nuestra vida",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-19"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json"
+    },
+    {
+      "id": "tm2982643",
+      "title": "Echo Point",
+      "originalTitle": "Echo Point",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-20"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/echo-point",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Echo Point: se recuperaron IMDb 2.7/10, 31 votos, y trailer oficial de Vibrolix Studios (3pHhoZtKhyQ), pero siguen sin retrato seguro el director Evan Marcewicz y el principal Evan Neal. TMDb sin imagen; Backstage bloqueado; Watchmode no aporta los retratos faltantes."
+    },
+    {
+      "id": "tm2988806",
+      "title": "Las Redes Sociales Mataron a la Estrella de Cine",
+      "originalTitle": "Social Media Killed the Movie Star",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-20"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/las-redes-sociales-mataron-a-la-estrella-de-cine",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "new",
+      "path": "src/data/movies/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.json"
+    },
+    {
+      "id": "tm3016554",
+      "title": "Theo Von: I'm Doing Fine",
+      "originalTitle": "Theo Von: I'm Doing Fine",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-20"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/theo-von-im-doing-fine",
+      "offers": [
+        "Netflix:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Especial solista de Theo Von; no cumple el mínimo de dos intérpretes principales."
+    },
+    {
+      "id": "tm1349352",
+      "title": "Vaiana",
+      "originalTitle": "Moana",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-21"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/vaiana-2025",
+      "offers": [
+        "Disney Plus:FLATRATE"
+      ],
+      "status": "updated",
+      "path": "src/data/movies/moana-live-action-2026.json"
+    },
+    {
+      "id": "tm2988199",
+      "title": "Neon Affair",
+      "originalTitle": "Neon Affair",
+      "discoveryYear": 2026,
+      "discoveryDates": [
+        "2026-10-21"
+      ],
+      "source": "https://www.justwatch.com/ar/pelicula/neon-affair",
+      "offers": [
+        "Amazon Prime Video:FLATRATE"
+      ],
+      "status": "pending",
+      "reason": "Neon Affair: trailer oficial Indie Rights CbWTPW_TDJY e IMDb del director Sean Hinds nm14609768 recuperados. Sin retrato atribuible del director tras TMDb, IMDb 403, Watchmode y búsquedas por filmografía; no confundir con el homónimo norirlandés nm0385595."
+    }
+  ],
+  "people": {
+    "newCount": 33,
+    "newNames": [
+      "Aditya Haasan",
+      "Alberto Ortega",
+      "Anand Deverakonda",
+      "August Maturo",
+      "Ava Kolker",
+      "Carlos Bátiz",
+      "Carlos Carrera",
+      "Charlie Arnaiz",
+      "David Summers",
+      "Deven Bhojani",
+      "Dhruv Tripathi",
+      "Fulu Modibedi",
+      "Gerardo Torrado",
+      "Jada Langley",
+      "Jamel Debbouze",
+      "Jennifer Greenstreet",
+      "John Boyega",
+      "Katleho Ramaphakela",
+      "Kjersti Flaa",
+      "Mathew Thomas",
+      "Meesha Garbett",
+      "Mikhail Vaynberg",
+      "Óscar Pérez",
+      "Parineeti Chopra",
+      "Parvathy Thiruvothu",
+      "Paul Becker",
+      "Philippe Lacheau",
+      "Rafael Gutiérrez",
+      "Rethabile Ramaphakela",
+      "Shahad Nilambur",
+      "Tarek Boudali",
+      "Tumi Morake",
+      "Vaishnavi Chaitanya"
+    ],
+    "updatedExisting": [
+      "Daniel Vegas",
+      "Dwayne Johnson",
+      "Jessica Alexander",
+      "Penélope Cruz",
+      "Troy Kotsur"
+    ],
+    "distinctRetainedCredits": 58,
+    "retainedCreditInstances": 60,
+    "notes": [
+      "Se corrigieron retratos históricos menores a 200x250: Daniel Vegas, Dwayne Johnson, Jessica Alexander, Troy Kotsur y Penélope Cruz. Se preservan nombres canónicos y datos previos.",
+      "El enriquecedor no resolvió Carlos Bátiz/Jennifer Greenstreet; las fuentes oficiales de productora/festival y los retratos individuales resuelven manualmente el gate.",
+      "Un falso positivo del enriquecedor confundió al futbolista Óscar Pérez con un cineasta homónimo. Se descartaron ese IMDb, TMDb, Wikidata y retrato; se repuso la foto individual de Wikimedia identificada por la biografía del futbolista y su participación comprobada en el documental. Gerardo Torrado conserva también su foto original verificada.",
+      "Fulu Modibedi conserva Fulu Mugovhani como alias respaldado; Daniel Vegas mantiene Cherkas Danylo como nombre canónico.",
+      "Siubhan Harrison no se retiene en LEGO: sin identificador/retrato recuperable en la búsqueda TMDb por reparto, IMDb y fuentes complementarias. Jada Langley y Meesha Garbett son dos intérpretes principales verificadas y fotografiadas.",
+      "En Tu corazón se romperá se eligen Polina y Bars: Veronika Zhuravleva y Daniel Vegas. Ivan Trushin no se elimina del catálogo de personas; el recorte prioriza la pareja protagonista, no una supuesta falta de foto.",
+      "En May Contain se retienen la directora y los dos intérpretes de las dramatizaciones. No se presenta al resto de testimonios o narración como un elenco completo.",
+      "No se infieren nacionalidad, género ni nacimiento de nombres, fotografías o trabajos; las ausencias opcionales se informan y deben omitirse en la UI."
+    ]
+  },
+  "editorials": [
+    {
+      "slug": "moana-llega-a-disney-plus-otra-cara-del-mismo-viaje",
+      "title": "Moana llega a Disney+: otra cara para un viaje conocido",
+      "path": "src/data/editorials/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje.json",
+      "date": "2026-10-21",
+      "words": 1004,
+      "readingMinutes": 5,
+      "spoilers": false,
+      "movieSlug": "moana-live-action-2026",
+      "sources": [
+        {
+          "label": "Disney Latinoamérica: estreno en Argentina",
+          "url": "https://prensa.disneylatino.com/novedades/el-oc%C3%A9ano-est%C3%A1-llamando-moana-la-emocionante-pel%C3%ADcula-de-acci%C3%B3n-real-de-disney-llega-a-disney%2B-el-21-de-octubre"
+        },
+        {
+          "label": "Disney: película, elenco y galería oficial",
+          "url": "https://movies.disney.com/moana-2026"
+        },
+        {
+          "label": "Disney+: ficha de la película",
+          "url": "https://www.disneyplus.com/es-us/browse/entity-46bee9e1-869a-4a04-a145-de2c28552866"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/navegar.webp",
+          "srcSmall": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/navegar-640.webp",
+          "alt": "Catherine Lagaʻaia, como Moana, sostiene una cuerda en una embarcación frente a una isla.",
+          "caption": "Catherine Lagaʻaia toma el centro del viaje en la versión de acción real. Imagen: Disney.",
+          "source": "https://movies.disney.com/moana-2026",
+          "width": 1280,
+          "height": 719,
+          "originalImageURL": "https://lumiere-a.akamaihd.net/v1/images/g_disneymovies_moana_2026_10_9fd122b9.jpeg?region=0%2C0%2C1300%2C730",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        },
+        {
+          "type": "image",
+          "src": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/motunui.webp",
+          "srcSmall": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/motunui-640.webp",
+          "alt": "Moana sonríe con una flor en el pelo, rodeada de mujeres que llevan collares y ropa de la isla.",
+          "caption": "La vida en Motunui también cambia al pasar del dibujo a los cuerpos. Imagen: Disney.",
+          "source": "https://movies.disney.com/moana-2026",
+          "width": 1280,
+          "height": 719,
+          "originalImageURL": "https://lumiere-a.akamaihd.net/v1/images/g_movies_moana2026_still_7_0875a6aa.jpeg?region=0%2C0%2C1300%2C730",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        },
+        {
+          "type": "image",
+          "src": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/maui.webp",
+          "srcSmall": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/maui-640.webp",
+          "alt": "Dwayne Johnson interpreta a Maui y sostiene un remo junto a una vela de la embarcación.",
+          "caption": "Johnson vuelve a Maui; esta vez pone el cuerpo además de la voz. Imagen: Disney.",
+          "source": "https://movies.disney.com/moana-2026",
+          "width": 1280,
+          "height": 719,
+          "originalImageURL": "https://lumiere-a.akamaihd.net/v1/images/g_movies_moana2026_still_8_9eb24c03.jpeg?region=0%2C0%2C1300%2C730",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        },
+        {
+          "type": "image",
+          "src": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/heihei.webp",
+          "srcSmall": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/heihei-640.webp",
+          "alt": "El gallo Heihei está parado sobre la madera de la embarcación, con el océano detrás.",
+          "caption": "Heihei conserva su lugar entre las cuerdas, las olas y los problemas. Imagen: Disney.",
+          "source": "https://movies.disney.com/moana-2026",
+          "width": 1280,
+          "height": 719,
+          "originalImageURL": "https://lumiere-a.akamaihd.net/v1/images/g_disneymovies_moana_2026_12_9ca4d4f7.jpeg?region=0%2C0%2C1300%2C730",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        },
+        {
+          "type": "image",
+          "src": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/oceano.webp",
+          "srcSmall": "assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/oceano-640.webp",
+          "alt": "Moana permanece de pie sobre la embarcación mientras navega bajo un cielo iluminado por el sol.",
+          "caption": "Otra escala para una travesía que muchos espectadores ya conocen. Imagen: Disney.",
+          "source": "https://movies.disney.com/moana-2026",
+          "width": 1280,
+          "height": 719,
+          "originalImageURL": "https://lumiere-a.akamaihd.net/v1/images/g_disneymovies_moana_2026_11_71b8e385.jpeg?region=0%2C0%2C1300%2C730",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        }
+      ],
+      "integration": "Loader existente: home hasta seis, archivo completo ordenado por fecha/slug, Radar calculado en build; Moana enlazada en ambos sentidos con su ficha."
+    },
+    {
+      "slug": "mar-del-plata-2026-una-grilla-para-salir-del-algoritmo",
+      "title": "Mar del Plata 2026: una grilla para salir del algoritmo",
+      "path": "src/data/editorials/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo.json",
+      "date": "2026-10-21",
+      "words": 1080,
+      "readingMinutes": 5,
+      "spoilers": false,
+      "sources": [
+        {
+          "label": "Festival: programación completa",
+          "url": "https://mardelplatafilmfest.com/41/es/toda-la-programacion/"
+        },
+        {
+          "label": "Festival: apertura y clausura",
+          "url": "https://mardelplatafilmfest.com/41/es/conoce-las-peliculas-de-apertura-y-clausura-de-la-41-edicion/"
+        },
+        {
+          "label": "Festival: Sandra, The Primate Citizen",
+          "url": "https://mardelplatafilmfest.com/41/es/programas/?film_id=125211"
+        },
+        {
+          "label": "Festival: sección Autores",
+          "url": "https://mardelplatafilmfest.com/41/es/autores-cineastas-con-voz-propia/"
+        },
+        {
+          "label": "Festival: ganadoras de grandes festivales",
+          "url": "https://mardelplatafilmfest.com/41/es/ganadoras-de-grandes-festivales-lo-mejor-del-cine-internacional-llega-a-mar-del-plata/"
+        },
+        {
+          "label": "Cultura: presentación de la edición 41",
+          "url": "https://www.argentina.gob.ar/noticias/lanzaron-la-41a-edicion-del-festival-internacional-de-cine-de-mar-del-plata"
+        },
+        {
+          "label": "Festival: entradas",
+          "url": "https://mardelplatafilmfest.com/41/es/entradas/"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/caballo-salvaje.webp",
+          "srcSmall": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/caballo-salvaje-640.webp",
+          "alt": "Dos hombres con sombrero conversan sentados frente a una ventana, con un avión al fondo.",
+          "caption": "Wild Horse Nine, de Martin McDonagh, será la película de apertura. Imagen difundida por el festival.",
+          "source": "https://mardelplatafilmfest.com/41/es/conoce-las-peliculas-de-apertura-y-clausura-de-la-41-edicion/",
+          "width": 1024,
+          "height": 417,
+          "originalImageURL": "https://mardelplatafilmfest.com/41/wp-content/uploads/2026/09/Caballo01.jpg",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        },
+        {
+          "type": "image",
+          "src": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/borges-y-yo.webp",
+          "srcSmall": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/borges-y-yo-640.webp",
+          "alt": "Pieza oficial de Borges and Me con dos hombres sentados al aire libre y la leyenda Película de clausura.",
+          "caption": "La pieza oficial de Borges and Me, elegida para cerrar la edición. Imagen: Festival de Mar del Plata.",
+          "source": "https://mardelplatafilmfest.com/41/es/conoce-las-peliculas-de-apertura-y-clausura-de-la-41-edicion/",
+          "width": 820,
+          "height": 1024,
+          "originalImageURL": "https://mardelplatafilmfest.com/41/wp-content/uploads/2026/09/BorgesCar-820x1024.jpg",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        },
+        {
+          "type": "image",
+          "src": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/sandra.webp",
+          "srcSmall": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/sandra-640.webp",
+          "alt": "Primer plano de una orangutana detrás de una malla metálica, en una imagen de Sandra, The Primate Citizen.",
+          "caption": "Sandra, The Primate Citizen integra la competencia latinoamericana. Imagen de la ficha oficial.",
+          "source": "https://mardelplatafilmfest.com/41/es/programas/?film_id=125211",
+          "width": 1280,
+          "height": 512,
+          "originalImageURL": "https://mardelplatafilmfest.com/41/wp-json/mdqfp/v1/proxy-image?url=https%3A%2F%2Fapi-festival-mdq.incaa.gob.ar%2Fapi%2Fv1%2Fresources%2Fimage%2F298441%2F5ed73bed5016db18ae86670",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        },
+        {
+          "type": "image",
+          "src": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/presentacion.webp",
+          "srcSmall": "assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/presentacion-640.webp",
+          "alt": "Cuatro hombres están de pie en un escenario con atril e instrumentos, frente al público sentado.",
+          "caption": "La presentación de la edición 41 en el Palacio Libertad. Foto: Secretaría de Cultura de la Nación.",
+          "source": "https://www.argentina.gob.ar/noticias/lanzaron-la-41a-edicion-del-festival-internacional-de-cine-de-mar-del-plata",
+          "width": 850,
+          "height": 567,
+          "originalImageURL": "https://www.argentina.gob.ar/sites/default/files/presentacion_festival_de_cine025.jpg",
+          "visual": "Inspección individual de imagen original y WebP. Alt/caption describen lo visible; sin escenas generadas, alteraciones o spoilers."
+        }
+      ],
+      "integration": "Loader existente: home hasta seis, archivo completo ordenado por fecha/slug, Radar calculado en build; Moana enlazada en ambos sentidos con su ficha."
+    }
+  ],
+  "copyPolicy": "Sinopsis, críticas, siete campos de guía y notas redactados originalmente para cada título. Las fuentes se usan para hechos, no como borradores; no se copió, tradujo ni parafraseó de cerca su prosa. Sin premios ni escenas inventadas.",
+  "scopeProtection": "Sin cambios de UI, rutas, CSS, Share, Comunidad, reacciones, automatizaciones o snapshots de Recomendadas/Próximos estrenos/Radar. Sólo contenido, medios, catálogos derivados y este reporte."
+}

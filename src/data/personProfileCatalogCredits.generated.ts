@@ -514,6 +514,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "ben-affleck": [
     "animales-ben-affleck-2026",
     "el-botin-the-rip-2026",
+    "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
     "the-accountant-2-2025",
     "air-2023",
     "el-ultimo-duelo-2021",

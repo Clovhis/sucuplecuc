@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-18. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-21. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4295
+Total de vínculos de películas del catálogo: 4296
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -84,7 +84,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Barry Levinson | `barry-levinson` | /personas/barry-levinson/ | Director / Guionista / Productor | 6 | 5 |
 | Baz Luhrmann | `baz-luhrmann` | /personas/baz-luhrmann/ | Director / Guionista / Productor | 5 | 5 |
 | Beatriz Spelzini | `beatriz-spelzini` | /personas/beatriz-spelzini/ | Actriz | 1 | 5 |
-| Ben Affleck | `ben-affleck` | /personas/ben-affleck/ | Actor | 12 | 7 |
+| Ben Affleck | `ben-affleck` | /personas/ben-affleck/ | Actor | 13 | 7 |
 | Ben Kingsley | `ben-kingsley` | /personas/ben-kingsley/ | Actor | 7 | 7 |
 | Ben Stiller | `ben-stiller` | /personas/ben-stiller/ | Actor / Director / Productor | 5 | 5 |
 | Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 7 | 7 |

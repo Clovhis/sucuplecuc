@@ -2,13 +2,17 @@
 	"slug": "la-invitacion-2026",
 	"title": "La invitación",
 	"originalTitle": "The Invite",
-	"synopsis": "Una pareja acepta una invitación a una cena en apariencia elegante y termina atrapada en una noche de tensiones, secretos y deseos cruzados. Entre el humor incómodo y el romance torcido, la reunión obliga a todos a mostrar qué están dispuestos a hacer para conservar el control.",
+	"synopsis": "Joe y Angela invitan a cenar a sus vecinos de arriba mientras su matrimonio atraviesa un momento delicado. La visita de Piña y Hawk altera las reglas de la reunión y lleva la conversación hacia asuntos cada vez más personales. Lo que empieza como una velada entre vecinos deja expuestas las tensiones de las dos parejas.",
 	"year": 2026,
 	"releaseDate": "2026-08-06",
 	"reviewPublishedAt": "2026-08-06",
 	"audienceRating": "+17",
 	"category": "Comedia",
-	"genres": ["Comedia", "Drama", "Romance"],
+	"genres": [
+		"Comedia",
+		"Drama",
+		"Romance"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
@@ -17,7 +21,12 @@
 	"trailerYoutubeId": "4whZaJuU2Ik",
 	"releasePlatform": "Cine",
 	"director": "Olivia Wilde",
-	"mainCast": ["Seth Rogen", "Olivia Wilde", "Penélope Cruz", "Edward Norton"],
+	"mainCast": [
+		"Seth Rogen",
+		"Olivia Wilde",
+		"Penélope Cruz",
+		"Edward Norton"
+	],
 	"productionCompany": "Annapurna Pictures, FilmNation Entertainment, Permut Presentations",
 	"cinepostaScore": 8,
 	"runtimeMinutes": 108,
@@ -26,26 +35,30 @@
 	},
 	"editorial": {
 		"tenSecondTake": {
-			"verdict": "La invitación usa los modales como arma: Olivia Wilde deja que Seth Rogen, Penélope Cruz y Edward Norton disfruten una cena donde hospedar también significa controlar.",
-			"whatToExpect": "Una pareja acepta una velada elegante y queda atrapada entre secretos, deseos cruzados y una lucha por decidir quién maneja la noche.",
-			"pace": "Avanza con brindis, conversaciones filosas y revelaciones dosificadas hasta que la reunión deja de parecer amable.",
-			"intensity": "La presión es social y erótica antes de volverse violenta; cada gesto de cortesía puede esconder una amenaza.",
-			"practicalContext": "Entrá por el tono de comedia incómoda y por el elenco, aceptando que el juego tarda en mostrar sus cartas.",
-			"forFansOf": "Si te gustan cenas de secretos, romances torcidos y anfitriones que convierten la hospitalidad en poder.",
-			"notForYouIf": "No es para vos si buscás un thriller directo, humor sin incomodidad o personajes que digan de entrada qué quieren."
+			"verdict": "Olivia Wilde hace de la cena de Joe y Angela un duelo de interpretaciones: Seth Rogen, Penélope Cruz y Edward Norton encuentran humor en lo que cada pareja preferiría callar.",
+			"whatToExpect": "Joe y Angela reciben a Piña y Hawk; la cena entre vecinos abre una conversación cada vez más incómoda sobre las dos parejas.",
+			"pace": "Las interrupciones y los cambios de tema hacen avanzar la velada; cada pausa modifica las alianzas alrededor de la mesa.",
+			"intensity": "La presión es verbal, íntima y sexual. Los reproches importan más que cualquier amenaza física.",
+			"practicalContext": "Los vecinos de arriba son los invitados. Tener claras las dos parejas permite seguir cómo cambian los roles de quien pregunta, quien esquiva y quien necesita intervenir.",
+			"forFansOf": "Quienes disfrutan las comedias de convivencia donde una conversación puede desarmar la imagen que una pareja tiene de sí misma.",
+			"notForYouIf": "Preferís remates rápidos y conflictos que se resuelvan enseguida: la película deja que las discusiones se enreden y cambien de dueño."
 		},
-	"becauseYouLiked": [
-		"roofman-un-buen-ladron-2025",
-		"forrest-gump-1994"
-	],
-	"related": [
-		"armas-de-mujer-1988",
-		"solo-mio-2026",
-		"el-plan-de-maggie-2016",
-		"loco-y-estupido-amor-2011"
-	]
-},
+		"becauseYouLiked": [
+			"roofman-un-buen-ladron-2025",
+			"forrest-gump-1994"
+		],
+		"related": [
+			"armas-de-mujer-1988",
+			"solo-mio-2026",
+			"el-plan-de-maggie-2016",
+			"loco-y-estupido-amor-2011"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "La invitación arma una cena de modales filosos donde cada brindis parece esconder una amenaza. Olivia Wilde aprovecha el encierro para hacer chocar a sus personajes entre la comedia incómoda, el deseo y una violencia que nunca termina de instalarse del todo. Seth Rogen y Penélope Cruz disfrutan la incomodidad, mientras Edward Norton encuentra el tono exacto para un anfitrión que quiere controlar hasta el último gesto. El juego tarda un poco en revelar sus cartas, pero cuando lo hace sostiene una sátira sobre la gente que convierte la hospitalidad en una forma de poder."
+	"review": "Olivia Wilde encuentra la incomodidad de La invitación en una reunión donde nadie consigue terminar una frase sin que el otro le cambie el sentido. Seth Rogen y la propia Wilde trabajan el desgaste de Joe y Angela desde las interrupciones y los silencios; Penélope Cruz y Edward Norton, como los vecinos invitados, alteran ese equilibrio con una soltura que vuelve más visible la rigidez de los anfitriones. El espacio del departamento permite seguir las pequeñas alianzas que se arman alrededor de la mesa. Algunas discusiones explican demasiado lo que los gestos ya mostraban, pero el elenco recupera la tensión cada vez que una cortesía deja escapar un reproche.",
+	"releasePlatforms": [
+		"Cine",
+		"Apple TV"
+	]
 }

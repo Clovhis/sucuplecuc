@@ -1,0 +1,2722 @@
+{
+  "checkedAt": "2026-10-21T14:54:11.101Z",
+  "manifest": {
+    "newMovies": 11,
+    "updatedMovies": 5,
+    "explicitAuditedMovies": 16,
+    "actualNewFiles": [
+      "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+      "src/data/movies/en-directo-2026.json",
+      "src/data/movies/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.json",
+      "src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+      "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+      "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+      "src/data/movies/may-contain-my-life-2026.json",
+      "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+      "src/data/movies/solterisima-tambien-2026.json",
+      "src/data/movies/tu-corazon-se-rompera-2026.json",
+      "src/data/movies/un-primer-semestre-epico-2026.json"
+    ],
+    "actualUpdatedFiles": [
+      "src/data/movies/goat-2026.json",
+      "src/data/movies/la-invitacion-2026.json",
+      "src/data/movies/moana-live-action-2026.json",
+      "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+      "src/data/movies/primate-2026.json"
+    ],
+    "agreement": true,
+    "totalCatalog": 2385
+  },
+  "checks": {
+    "astroCheck": {
+      "files": 302,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "validateContent": "PASS (content quality, duplicate guard, credits, profiles, build, public output, sitemap)",
+    "build": "PASS",
+    "publicOutput": "PASS",
+    "sitemap": {
+      "status": "PASS",
+      "canonicalPages": 5618
+    },
+    "catalogs": "PASS; movies, profile credits, profile reference regenerated",
+    "portraitGate": "PASS: 16 films, zero identity/name/portrait/reference errors",
+    "globalPortraits": "5799 files passed canonical optimizer check",
+    "posterPolicy": "PASS; minimum original 720x1000, banned-host checks enabled",
+    "posters": {
+      "total": 16,
+      "passed": 12,
+      "warnings": 4,
+      "errors": 0
+    },
+    "meters": "PASS",
+    "sentenceDuplicates": {
+      "compared": "Every sentence of the 11 new synopses and reviews",
+      "duplicates": []
+    },
+    "copyOutput": {
+      "status": "PASS",
+      "movies": [
+        {
+          "slug": "tu-corazon-se-rompera-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "panda-plan-2-la-tribu-magica-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "pradhama-drishtiya-kuttakkar-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "un-primer-semestre-epico-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "en-directo-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "solterisima-tambien-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "marsupilami-caos-a-bordo-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "lego-friends-heartlake-el-musical-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "los-mejores-anos-de-nuestra-vida-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "moana-live-action-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "primate-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "goat-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "la-invitacion-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "may-contain-my-life-2026",
+          "review": true,
+          "guideFields": 7
+        },
+        {
+          "slug": "azul-oscuro-azul-celeste-2026",
+          "review": true,
+          "guideFields": 7
+        }
+      ]
+    },
+    "playwright": {
+      "editorial": 104,
+      "musical": 4,
+      "warAndCarousels": 16,
+      "total": 124,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium",
+        "desktop-webkit",
+        "mobile-webkit"
+      ],
+      "status": "PASS"
+    },
+    "browser": {
+      "expectedStreaming": [
+        "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+        "los-mejores-anos-de-nuestra-vida-2026",
+        "lego-friends-heartlake-el-musical-2026",
+        "marsupilami-caos-a-bordo-2026",
+        "cual-es-el-precio-de-la-dignidad-2026",
+        "garuda-dare-to-dream-2026",
+        "masterplan-2026",
+        "norm-la-historia-de-norm-macdonald-2026",
+        "solterisima-tambien-2026",
+        "tenzing-conquistando-el-everest-2026",
+        "azul-oscuro-azul-celeste-2026",
+        "hijo-de-nadie-2026"
+      ],
+      "results": [
+        {
+          "engine": "chromium",
+          "profile": "desktop",
+          "movies": [
+            {
+              "slug": "tu-corazon-se-rompera-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/tu-corazon-se-rompera-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "panda-plan-2-la-tribu-magica-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/panda-plan-2-la-tribu-magica-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 672
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "pradhama-drishtiya-kuttakkar-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/pradhama-drishtiya-kuttakkar-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "un-primer-semestre-epico-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/un-primer-semestre-epico-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 719
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "en-directo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/en-directo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "solterisima-tambien-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/solterisima-tambien-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "marsupilami-caos-a-bordo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/marsupilami-caos-a-bordo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "lego-friends-heartlake-el-musical-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/lego-friends-heartlake-el-musical-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "los-mejores-anos-de-nuestra-vida-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/los-mejores-anos-de-nuestra-vida-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 686
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "moana-live-action-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/moana-live-action-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 6,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "primate-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/primate-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 710
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "goat-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/goat-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "la-invitacion-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/la-invitacion-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 600
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "may-contain-my-life-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/may-contain-my-life-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "azul-oscuro-azul-celeste-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/azul-oscuro-azul-celeste-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            }
+          ],
+          "editorials": [
+            {
+              "slug": "moana-llega-a-disney-plus-otra-cara-del-mismo-viaje",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/motunui.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "Moana sonríe con una flor en el pelo, rodeada de mujeres que llevan collares y ropa de la isla."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/maui.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "Dwayne Johnson interpreta a Maui y sostiene un remo junto a una vela de la embarcación."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/heihei.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "El gallo Heihei está parado sobre la madera de la embarcación, con el océano detrás."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/oceano.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "Moana permanece de pie sobre la embarcación mientras navega bajo un cielo iluminado por el sol."
+                }
+              ],
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            },
+            {
+              "slug": "mar-del-plata-2026-una-grilla-para-salir-del-algoritmo",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/borges-y-yo.webp",
+                  "width": 759,
+                  "height": 949,
+                  "complete": true,
+                  "alt": "Pieza oficial de Borges and Me con dos hombres sentados al aire libre y la leyenda Película de clausura."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/sandra.webp",
+                  "width": 760,
+                  "height": 304,
+                  "complete": true,
+                  "alt": "Primer plano de una orangutana detrás de una malla metálica, en una imagen de Sandra, The Primate Citizen."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/presentacion.webp",
+                  "width": 760,
+                  "height": 506,
+                  "complete": true,
+                  "alt": "Cuatro hombres están de pie en un escenario con atril e instrumentos, frente al público sentado."
+                }
+              ],
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            }
+          ],
+          "streaming": {
+            "count": 12,
+            "expected": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "actual": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "passes": true
+          },
+          "homeCards": [
+            {
+              "title": "      CinePosta nota  Mar del Plata 2026: una grilla para salir del algoritmo Del 5 al 15 de noviembre, la edición 41 reúne a McDonagh, Borges, Boyle y muchas películas por descubrir. Un recorrido por la programación anunciada y las ganas de dejarle lugar a lo inesperado. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/"
+            },
+            {
+              "title": "      CinePosta nota  Moana llega a Disney+: otra cara para un viaje conocido La versión de acción real llega hoy a Disney+ en Argentina. Catherine Lagaʻaia, el regreso de Dwayne Johnson y las canciones como puente entre el recuerdo de la animada y una nueva forma de mirar. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/"
+            },
+            {
+              "title": "      CinePosta editorial  Masterplan: Tucci y un espionaje que parece de juguete Gadgets con pinta de impresora 3D, efectos flojos y escenas que se ven venir. Masterplan quiere venderme el gran golpe; a mí me parece una aventura demasiado sonza. 18 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/masterplan-tucci-espionaje-de-juguete/"
+            },
+            {
+              "title": "      CinePosta nota  Qué llegó al streaming esta semana: Darín, el Everest y un robo en familia Los estrenos de películas de 2026 que llegaron a plataformas en Argentina entre el 12 y el 16 de octubre. Netflix suma Lo dejamos acá y Norm; Apple TV, Tenzing; Prime Video, Masterplan. También hay novedades para alquilar, con cada modalidad bien aclarada. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-streaming-semana-16-octubre-2026/"
+            },
+            {
+              "title": "      CinePosta opinión  Lo dejamos acá: Darín, Peretti y ese viaje entre la risa y el bajón Me gustó y la recomiendo. Darín está brillante, Peretti se va acomodando y la historia tiene una idea divertida. El problema aparece cuando la comedia frena y el drama se queda un rato de más. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/lo-dejamos-aca-darin-peretti-entre-la-risa-y-el-bajon/"
+            },
+            {
+              "title": "      CinePosta nota  Estrenos de la semana: piñas, monstruos y una ballena con pésimo timing El jueves 15 de octubre renueva los cines argentinos con Street Fighter, La caída de la ballena, Quiero tu sexo y Escuela de Monstruos. También hay comedia francesa, novedades nacionales y un regreso de Katniss para organizar el fin de semana. 15 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-cines-15-octubre-2026/"
+            }
+          ],
+          "homeOverflow": {
+            "client": 1440,
+            "scroll": 1440
+          },
+          "archiveCount": 25,
+          "posterSummary": {
+            "total": 16,
+            "loaded": 16,
+            "bad": 0
+          }
+        },
+        {
+          "engine": "chromium",
+          "profile": "mobile320",
+          "movies": [
+            {
+              "slug": "tu-corazon-se-rompera-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/tu-corazon-se-rompera-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "panda-plan-2-la-tribu-magica-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/panda-plan-2-la-tribu-magica-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 672
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "pradhama-drishtiya-kuttakkar-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/pradhama-drishtiya-kuttakkar-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "un-primer-semestre-epico-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/un-primer-semestre-epico-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 719
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "en-directo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/en-directo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "solterisima-tambien-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/solterisima-tambien-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "marsupilami-caos-a-bordo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/marsupilami-caos-a-bordo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "lego-friends-heartlake-el-musical-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/lego-friends-heartlake-el-musical-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "los-mejores-anos-de-nuestra-vida-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/los-mejores-anos-de-nuestra-vida-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 686
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "moana-live-action-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/moana-live-action-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 6,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "primate-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/primate-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 710
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "goat-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/goat-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "la-invitacion-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/la-invitacion-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 600
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "may-contain-my-life-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/may-contain-my-life-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "azul-oscuro-azul-celeste-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/azul-oscuro-azul-celeste-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            }
+          ],
+          "editorials": [
+            {
+              "slug": "moana-llega-a-disney-plus-otra-cara-del-mismo-viaje",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/motunui-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "Moana sonríe con una flor en el pelo, rodeada de mujeres que llevan collares y ropa de la isla."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/maui-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "Dwayne Johnson interpreta a Maui y sostiene un remo junto a una vela de la embarcación."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/heihei-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "El gallo Heihei está parado sobre la madera de la embarcación, con el océano detrás."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/oceano-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "Moana permanece de pie sobre la embarcación mientras navega bajo un cielo iluminado por el sol."
+                }
+              ],
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            },
+            {
+              "slug": "mar-del-plata-2026-una-grilla-para-salir-del-algoritmo",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/borges-y-yo-640.webp",
+                  "width": 279,
+                  "height": 349,
+                  "complete": true,
+                  "alt": "Pieza oficial de Borges and Me con dos hombres sentados al aire libre y la leyenda Película de clausura."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/sandra-640.webp",
+                  "width": 279,
+                  "height": 111,
+                  "complete": true,
+                  "alt": "Primer plano de una orangutana detrás de una malla metálica, en una imagen de Sandra, The Primate Citizen."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/presentacion-640.webp",
+                  "width": 279,
+                  "height": 186,
+                  "complete": true,
+                  "alt": "Cuatro hombres están de pie en un escenario con atril e instrumentos, frente al público sentado."
+                }
+              ],
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            }
+          ],
+          "streaming": {
+            "count": 12,
+            "expected": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "actual": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "passes": true
+          },
+          "homeCards": [
+            {
+              "title": "      CinePosta nota  Mar del Plata 2026: una grilla para salir del algoritmo Del 5 al 15 de noviembre, la edición 41 reúne a McDonagh, Borges, Boyle y muchas películas por descubrir. Un recorrido por la programación anunciada y las ganas de dejarle lugar a lo inesperado. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/"
+            },
+            {
+              "title": "      CinePosta nota  Moana llega a Disney+: otra cara para un viaje conocido La versión de acción real llega hoy a Disney+ en Argentina. Catherine Lagaʻaia, el regreso de Dwayne Johnson y las canciones como puente entre el recuerdo de la animada y una nueva forma de mirar. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/"
+            },
+            {
+              "title": "      CinePosta editorial  Masterplan: Tucci y un espionaje que parece de juguete Gadgets con pinta de impresora 3D, efectos flojos y escenas que se ven venir. Masterplan quiere venderme el gran golpe; a mí me parece una aventura demasiado sonza. 18 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/masterplan-tucci-espionaje-de-juguete/"
+            },
+            {
+              "title": "      CinePosta nota  Qué llegó al streaming esta semana: Darín, el Everest y un robo en familia Los estrenos de películas de 2026 que llegaron a plataformas en Argentina entre el 12 y el 16 de octubre. Netflix suma Lo dejamos acá y Norm; Apple TV, Tenzing; Prime Video, Masterplan. También hay novedades para alquilar, con cada modalidad bien aclarada. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-streaming-semana-16-octubre-2026/"
+            },
+            {
+              "title": "      CinePosta opinión  Lo dejamos acá: Darín, Peretti y ese viaje entre la risa y el bajón Me gustó y la recomiendo. Darín está brillante, Peretti se va acomodando y la historia tiene una idea divertida. El problema aparece cuando la comedia frena y el drama se queda un rato de más. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/lo-dejamos-aca-darin-peretti-entre-la-risa-y-el-bajon/"
+            },
+            {
+              "title": "      CinePosta nota  Estrenos de la semana: piñas, monstruos y una ballena con pésimo timing El jueves 15 de octubre renueva los cines argentinos con Street Fighter, La caída de la ballena, Quiero tu sexo y Escuela de Monstruos. También hay comedia francesa, novedades nacionales y un regreso de Katniss para organizar el fin de semana. 15 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-cines-15-octubre-2026/"
+            }
+          ],
+          "homeOverflow": {
+            "client": 320,
+            "scroll": 320
+          },
+          "archiveCount": 25,
+          "posterSummary": {
+            "total": 16,
+            "loaded": 16,
+            "bad": 0
+          }
+        },
+        {
+          "engine": "webkit",
+          "profile": "desktop",
+          "movies": [
+            {
+              "slug": "tu-corazon-se-rompera-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/tu-corazon-se-rompera-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "panda-plan-2-la-tribu-magica-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/panda-plan-2-la-tribu-magica-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 672
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "pradhama-drishtiya-kuttakkar-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/pradhama-drishtiya-kuttakkar-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "un-primer-semestre-epico-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/un-primer-semestre-epico-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 719
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "en-directo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/en-directo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "solterisima-tambien-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/solterisima-tambien-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "marsupilami-caos-a-bordo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/marsupilami-caos-a-bordo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "lego-friends-heartlake-el-musical-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/lego-friends-heartlake-el-musical-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "los-mejores-anos-de-nuestra-vida-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/los-mejores-anos-de-nuestra-vida-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 686
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "moana-live-action-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/moana-live-action-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 6,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "primate-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/primate-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 710
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "goat-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/goat-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "la-invitacion-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/la-invitacion-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 600
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "may-contain-my-life-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/may-contain-my-life-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            },
+            {
+              "slug": "azul-oscuro-azul-celeste-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/azul-oscuro-azul-celeste-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              }
+            }
+          ],
+          "editorials": [
+            {
+              "slug": "moana-llega-a-disney-plus-otra-cara-del-mismo-viaje",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/motunui.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "Moana sonríe con una flor en el pelo, rodeada de mujeres que llevan collares y ropa de la isla."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/maui.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "Dwayne Johnson interpreta a Maui y sostiene un remo junto a una vela de la embarcación."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/heihei.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "El gallo Heihei está parado sobre la madera de la embarcación, con el océano detrás."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/oceano.webp",
+                  "width": 760,
+                  "height": 426,
+                  "complete": true,
+                  "alt": "Moana permanece de pie sobre la embarcación mientras navega bajo un cielo iluminado por el sol."
+                }
+              ],
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            },
+            {
+              "slug": "mar-del-plata-2026-una-grilla-para-salir-del-algoritmo",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/borges-y-yo.webp",
+                  "width": 759,
+                  "height": 949,
+                  "complete": true,
+                  "alt": "Pieza oficial de Borges and Me con dos hombres sentados al aire libre y la leyenda Película de clausura."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/sandra.webp",
+                  "width": 760,
+                  "height": 304,
+                  "complete": true,
+                  "alt": "Primer plano de una orangutana detrás de una malla metálica, en una imagen de Sandra, The Primate Citizen."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/presentacion.webp",
+                  "width": 760,
+                  "height": 506,
+                  "complete": true,
+                  "alt": "Cuatro hombres están de pie en un escenario con atril e instrumentos, frente al público sentado."
+                }
+              ],
+              "overflow": {
+                "client": 1440,
+                "scroll": 1440
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            }
+          ],
+          "streaming": {
+            "count": 12,
+            "expected": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "actual": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "passes": true
+          },
+          "homeCards": [
+            {
+              "title": "      CinePosta nota  Mar del Plata 2026: una grilla para salir del algoritmo Del 5 al 15 de noviembre, la edición 41 reúne a McDonagh, Borges, Boyle y muchas películas por descubrir. Un recorrido por la programación anunciada y las ganas de dejarle lugar a lo inesperado. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/"
+            },
+            {
+              "title": "      CinePosta nota  Moana llega a Disney+: otra cara para un viaje conocido La versión de acción real llega hoy a Disney+ en Argentina. Catherine Lagaʻaia, el regreso de Dwayne Johnson y las canciones como puente entre el recuerdo de la animada y una nueva forma de mirar. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/"
+            },
+            {
+              "title": "      CinePosta editorial  Masterplan: Tucci y un espionaje que parece de juguete Gadgets con pinta de impresora 3D, efectos flojos y escenas que se ven venir. Masterplan quiere venderme el gran golpe; a mí me parece una aventura demasiado sonza. 18 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/masterplan-tucci-espionaje-de-juguete/"
+            },
+            {
+              "title": "      CinePosta nota  Qué llegó al streaming esta semana: Darín, el Everest y un robo en familia Los estrenos de películas de 2026 que llegaron a plataformas en Argentina entre el 12 y el 16 de octubre. Netflix suma Lo dejamos acá y Norm; Apple TV, Tenzing; Prime Video, Masterplan. También hay novedades para alquilar, con cada modalidad bien aclarada. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-streaming-semana-16-octubre-2026/"
+            },
+            {
+              "title": "      CinePosta opinión  Lo dejamos acá: Darín, Peretti y ese viaje entre la risa y el bajón Me gustó y la recomiendo. Darín está brillante, Peretti se va acomodando y la historia tiene una idea divertida. El problema aparece cuando la comedia frena y el drama se queda un rato de más. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/lo-dejamos-aca-darin-peretti-entre-la-risa-y-el-bajon/"
+            },
+            {
+              "title": "      CinePosta nota  Estrenos de la semana: piñas, monstruos y una ballena con pésimo timing El jueves 15 de octubre renueva los cines argentinos con Street Fighter, La caída de la ballena, Quiero tu sexo y Escuela de Monstruos. También hay comedia francesa, novedades nacionales y un regreso de Katniss para organizar el fin de semana. 15 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-cines-15-octubre-2026/"
+            }
+          ],
+          "homeOverflow": {
+            "client": 1440,
+            "scroll": 1440
+          },
+          "archiveCount": 25,
+          "posterSummary": {
+            "total": 16,
+            "loaded": 16,
+            "bad": 0
+          }
+        },
+        {
+          "engine": "webkit",
+          "profile": "mobile320",
+          "movies": [
+            {
+              "slug": "tu-corazon-se-rompera-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/tu-corazon-se-rompera-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "panda-plan-2-la-tribu-magica-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/panda-plan-2-la-tribu-magica-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 672
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "pradhama-drishtiya-kuttakkar-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/pradhama-drishtiya-kuttakkar-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "un-primer-semestre-epico-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/un-primer-semestre-epico-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 719
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "en-directo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/en-directo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "solterisima-tambien-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/solterisima-tambien-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "marsupilami-caos-a-bordo-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/marsupilami-caos-a-bordo-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "lego-friends-heartlake-el-musical-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/lego-friends-heartlake-el-musical-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "los-mejores-anos-de-nuestra-vida-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/los-mejores-anos-de-nuestra-vida-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 686
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "moana-live-action-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/moana-live-action-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 6,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "primate-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/primate-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 710
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "goat-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/goat-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "la-invitacion-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/la-invitacion-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 600
+              },
+              "portraits": 5,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "may-contain-my-life-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/may-contain-my-life-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 3,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            },
+            {
+              "slug": "azul-oscuro-azul-celeste-2026",
+              "poster": {
+                "src": "http://127.0.0.1:43211/assets/posters/2026/azul-oscuro-azul-celeste-2026.webp",
+                "complete": true,
+                "width": 480,
+                "height": 720
+              },
+              "portraits": 4,
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              }
+            }
+          ],
+          "editorials": [
+            {
+              "slug": "moana-llega-a-disney-plus-otra-cara-del-mismo-viaje",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/motunui-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "Moana sonríe con una flor en el pelo, rodeada de mujeres que llevan collares y ropa de la isla."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/maui-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "Dwayne Johnson interpreta a Maui y sostiene un remo junto a una vela de la embarcación."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/heihei-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "El gallo Heihei está parado sobre la madera de la embarcación, con el océano detrás."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/oceano-640.webp",
+                  "width": 279,
+                  "height": 157,
+                  "complete": true,
+                  "alt": "Moana permanece de pie sobre la embarcación mientras navega bajo un cielo iluminado por el sol."
+                }
+              ],
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            },
+            {
+              "slug": "mar-del-plata-2026-una-grilla-para-salir-del-algoritmo",
+              "images": [
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/borges-y-yo-640.webp",
+                  "width": 279,
+                  "height": 349,
+                  "complete": true,
+                  "alt": "Pieza oficial de Borges and Me con dos hombres sentados al aire libre y la leyenda Película de clausura."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/sandra-640.webp",
+                  "width": 279,
+                  "height": 111,
+                  "complete": true,
+                  "alt": "Primer plano de una orangutana detrás de una malla metálica, en una imagen de Sandra, The Primate Citizen."
+                },
+                {
+                  "src": "http://127.0.0.1:43211/assets/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/presentacion-640.webp",
+                  "width": 279,
+                  "height": 186,
+                  "complete": true,
+                  "alt": "Cuatro hombres están de pie en un escenario con atril e instrumentos, frente al público sentado."
+                }
+              ],
+              "overflow": {
+                "client": 320,
+                "scroll": 320
+              },
+              "navigation": true,
+              "schema": true,
+              "exactParagraphs": true
+            }
+          ],
+          "streaming": {
+            "count": 12,
+            "expected": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "actual": [
+              "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+              "los-mejores-anos-de-nuestra-vida-2026",
+              "lego-friends-heartlake-el-musical-2026",
+              "marsupilami-caos-a-bordo-2026",
+              "cual-es-el-precio-de-la-dignidad-2026",
+              "garuda-dare-to-dream-2026",
+              "masterplan-2026",
+              "norm-la-historia-de-norm-macdonald-2026",
+              "solterisima-tambien-2026",
+              "tenzing-conquistando-el-everest-2026",
+              "azul-oscuro-azul-celeste-2026",
+              "hijo-de-nadie-2026"
+            ],
+            "passes": true
+          },
+          "homeCards": [
+            {
+              "title": "      CinePosta nota  Mar del Plata 2026: una grilla para salir del algoritmo Del 5 al 15 de noviembre, la edición 41 reúne a McDonagh, Borges, Boyle y muchas películas por descubrir. Un recorrido por la programación anunciada y las ganas de dejarle lugar a lo inesperado. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo/"
+            },
+            {
+              "title": "      CinePosta nota  Moana llega a Disney+: otra cara para un viaje conocido La versión de acción real llega hoy a Disney+ en Argentina. Catherine Lagaʻaia, el regreso de Dwayne Johnson y las canciones como puente entre el recuerdo de la animada y una nueva forma de mirar. 21 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje/"
+            },
+            {
+              "title": "      CinePosta editorial  Masterplan: Tucci y un espionaje que parece de juguete Gadgets con pinta de impresora 3D, efectos flojos y escenas que se ven venir. Masterplan quiere venderme el gran golpe; a mí me parece una aventura demasiado sonza. 18 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/masterplan-tucci-espionaje-de-juguete/"
+            },
+            {
+              "title": "      CinePosta nota  Qué llegó al streaming esta semana: Darín, el Everest y un robo en familia Los estrenos de películas de 2026 que llegaron a plataformas en Argentina entre el 12 y el 16 de octubre. Netflix suma Lo dejamos acá y Norm; Apple TV, Tenzing; Prime Video, Masterplan. También hay novedades para alquilar, con cada modalidad bien aclarada. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-streaming-semana-16-octubre-2026/"
+            },
+            {
+              "title": "      CinePosta opinión  Lo dejamos acá: Darín, Peretti y ese viaje entre la risa y el bajón Me gustó y la recomiendo. Darín está brillante, Peretti se va acomodando y la historia tiene una idea divertida. El problema aparece cuando la comedia frena y el drama se queda un rato de más. 16 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/lo-dejamos-aca-darin-peretti-entre-la-risa-y-el-bajon/"
+            },
+            {
+              "title": "      CinePosta nota  Estrenos de la semana: piñas, monstruos y una ballena con pésimo timing El jueves 15 de octubre renueva los cines argentinos con Street Fighter, La caída de la ballena, Quiero tu sexo y Escuela de Monstruos. También hay comedia francesa, novedades nacionales y un regreso de Katniss para organizar el fin de semana. 15 de octubre de 20265 min de lectura Leer nota →   ",
+              "href": "/editorial/estrenos-cines-15-octubre-2026/"
+            }
+          ],
+          "homeOverflow": {
+            "client": 320,
+            "scroll": 320
+          },
+          "archiveCount": 25,
+          "posterSummary": {
+            "total": 16,
+            "loaded": 16,
+            "bad": 0
+          }
+        }
+      ],
+      "notes": "Four profiles: desktop 1440 and mobile 320 in Chromium/WebKit. Exact paragraphs, schema, sources, two-way navigation, archive/home membership, images, portraits, omitted optional placeholders and overflow checked."
+    },
+    "gitDiffCheck": "PASS",
+    "protectedSnapshots": "Unchanged",
+    "scope": "Content, media, generated catalog references and reports only"
+  },
+  "primaryAudit": {
+    "candidateCount": 16,
+    "errorCount": 0,
+    "warningCounts": {
+      "missing-person-birth": 28,
+      "missing-person-nationality": 27,
+      "untrusted-person-image-source": 6,
+      "missing-person-trace-url": 4,
+      "poster-outside-target-size": 4,
+      "youtube-search-unavailable": 9
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "code": "same-title-different-year",
+        "file": "C:\\WebsitePeliculas\\src\\data\\movies\\la-invitacion-2026.json",
+        "message": "Catalog also contains the normalized title \"la invitacion\" in year(s) 2015, 2026. Confirm this is a distinct remake or release before publication."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/tu-corazon-se-rompera-2026.json",
+        "message": "\"Mikhail Vaynberg\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/tu-corazon-se-rompera-2026.json",
+        "message": "\"Mikhail Vaynberg\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-comedy-meter-hidden",
+        "file": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+        "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-action-meter-hidden",
+        "file": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+        "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+        "message": "\"Derek Hui\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-tear-meter-hidden",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Shahad Nilambur\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Shahad Nilambur\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Parvathy Thiruvothu\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Parvathy Thiruvothu\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Mathew Thomas\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Mathew Thomas\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Aditya Haasan\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Aditya Haasan\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Anand Deverakonda\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Anand Deverakonda\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Vaishnavi Chaitanya\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Vaishnavi Chaitanya\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-tear-meter-hidden",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "\"Dhruv Tripathi\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "\"Dhruv Tripathi\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "\"Dhruv Tripathi\" uses an uncommon portrait host (\"trinityfilms.in\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Katleho Ramaphakela\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Katleho Ramaphakela\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Rethabile Ramaphakela\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Rethabile Ramaphakela\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Fulu Modibedi\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Fulu Modibedi\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Tumi Morake\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Tumi Morake\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Philippe Lacheau\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Philippe Lacheau\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Jamel Debbouze\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Jamel Debbouze\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Tarek Boudali\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Tarek Boudali\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+        "message": "\"Jada Langley\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+        "message": "\"Jada Langley\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Charlie Arnaiz\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Charlie Arnaiz\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Alberto Ortega\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Alberto Ortega\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"David Summers\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"David Summers\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Rafael Gutiérrez\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Rafael Gutiérrez\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-action-meter-hidden",
+        "file": "src/data/movies/goat-2026.json",
+        "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" uses an uncommon portrait host (\"cdn.prod.website-files.com\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"August Maturo\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"August Maturo\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Ava Kolker\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Ava Kolker\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Carrera\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Carrera\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Carrera\" uses an uncommon portrait host (\"www.holamexicoff.com\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" uses an uncommon portrait host (\"www.holamexicoff.com\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "poster is valid at 35920 bytes; preferred range is 40960-81920 bytes. (480x719)"
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/primate-2026.json",
+        "message": "poster is valid at 16096 bytes; preferred range is 40960-81920 bytes. (480x710)"
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/la-invitacion-2026.json",
+        "message": "poster is valid at 31492 bytes; preferred range is 40960-81920 bytes. (480x600)"
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "poster is valid at 36758 bytes; preferred range is 40960-81920 bytes. (480x720)"
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/moana-live-action-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/primate-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/goat-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/la-invitacion-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      },
+      {
+        "severity": "warn",
+        "code": "youtube-search-unavailable",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "YouTube search returned HTTP 302."
+      }
+    ]
+  },
+  "postBuildAudit": {
+    "candidateCount": 16,
+    "errorCount": 0,
+    "checks": [
+      "community",
+      "reaction",
+      "cinema-carousel"
+    ],
+    "findings": [
+      {
+        "severity": "info",
+        "code": "same-title-different-year",
+        "file": "C:\\WebsitePeliculas\\src\\data\\movies\\la-invitacion-2026.json",
+        "message": "Catalog also contains the normalized title \"la invitacion\" in year(s) 2015, 2026. Confirm this is a distinct remake or release before publication."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/tu-corazon-se-rompera-2026.json",
+        "message": "\"Mikhail Vaynberg\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/tu-corazon-se-rompera-2026.json",
+        "message": "\"Mikhail Vaynberg\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-comedy-meter-hidden",
+        "file": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+        "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-action-meter-hidden",
+        "file": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+        "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+        "message": "\"Derek Hui\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-tear-meter-hidden",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Shahad Nilambur\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Shahad Nilambur\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Parvathy Thiruvothu\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Parvathy Thiruvothu\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Mathew Thomas\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "\"Mathew Thomas\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Aditya Haasan\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Aditya Haasan\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Anand Deverakonda\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Anand Deverakonda\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Vaishnavi Chaitanya\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "\"Vaishnavi Chaitanya\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-tear-meter-hidden",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "\"Dhruv Tripathi\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "\"Dhruv Tripathi\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "\"Dhruv Tripathi\" uses an uncommon portrait host (\"trinityfilms.in\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Katleho Ramaphakela\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Katleho Ramaphakela\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Rethabile Ramaphakela\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Rethabile Ramaphakela\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Fulu Modibedi\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Fulu Modibedi\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Tumi Morake\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/solterisima-tambien-2026.json",
+        "message": "\"Tumi Morake\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Philippe Lacheau\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Philippe Lacheau\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Jamel Debbouze\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Jamel Debbouze\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Tarek Boudali\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/marsupilami-caos-a-bordo-2026.json",
+        "message": "\"Tarek Boudali\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+        "message": "\"Jada Langley\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/lego-friends-heartlake-el-musical-2026.json",
+        "message": "\"Jada Langley\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Charlie Arnaiz\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Charlie Arnaiz\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Alberto Ortega\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Alberto Ortega\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"David Summers\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"David Summers\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Rafael Gutiérrez\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json",
+        "message": "\"Rafael Gutiérrez\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "info",
+        "code": "secondary-action-meter-hidden",
+        "file": "src/data/movies/goat-2026.json",
+        "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" uses an uncommon portrait host (\"cdn.prod.website-files.com\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Jennifer Greenstreet\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"August Maturo\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"August Maturo\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Ava Kolker\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "\"Ava Kolker\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Carrera\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Carrera\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Carrera\" uses an uncommon portrait host (\"www.holamexicoff.com\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" uses an uncommon portrait host (\"www.holamexicoff.com\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Carlos Bátiz\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Gerardo Torrado\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-birth",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-nationality",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+      },
+      {
+        "severity": "warn",
+        "code": "untrusted-person-image-source",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+      },
+      {
+        "severity": "warn",
+        "code": "missing-person-trace-url",
+        "file": "src/data/movies/azul-oscuro-azul-celeste-2026.json",
+        "message": "\"Óscar Pérez\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "poster is valid at 35920 bytes; preferred range is 40960-81920 bytes. (480x719)"
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/primate-2026.json",
+        "message": "poster is valid at 16096 bytes; preferred range is 40960-81920 bytes. (480x710)"
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/la-invitacion-2026.json",
+        "message": "poster is valid at 31492 bytes; preferred range is 40960-81920 bytes. (480x600)"
+      },
+      {
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "poster is valid at 36758 bytes; preferred range is 40960-81920 bytes. (480x720)"
+      }
+    ]
+  },
+  "streamingAuditDiscrepancy": {
+    "originalCommand": "16 explicit candidates; --skip-youtube --verify-community-build --verify-reaction-build --verify-cinema-carousel-build --verify-streaming-carousel-build",
+    "rawErrors": [
+      {
+        "severity": "error",
+        "code": "streaming-carousel-missing-entry",
+        "file": "src/data/movies/tu-corazon-se-rompera-2026.json",
+        "message": "Current streaming entry \"Tu corazón se romperá\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+      },
+      {
+        "severity": "error",
+        "code": "streaming-carousel-missing-entry",
+        "file": "src/data/movies/panda-plan-2-la-tribu-magica-2026.json",
+        "message": "Current streaming entry \"Panda Plan 2: La tribu mágica\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+      },
+      {
+        "severity": "error",
+        "code": "streaming-carousel-missing-entry",
+        "file": "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json",
+        "message": "Current streaming entry \"Pradhama Drishtiya Kuttakkar\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+      },
+      {
+        "severity": "error",
+        "code": "streaming-carousel-missing-entry",
+        "file": "src/data/movies/un-primer-semestre-epico-2026.json",
+        "message": "Current streaming entry \"Un primer semestre épico\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+      },
+      {
+        "severity": "error",
+        "code": "streaming-carousel-missing-entry",
+        "file": "src/data/movies/en-directo-2026.json",
+        "message": "Current streaming entry \"En directo\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+      },
+      {
+        "severity": "error",
+        "code": "streaming-carousel-missing-entry",
+        "file": "src/data/movies/may-contain-my-life-2026.json",
+        "message": "Current streaming entry \"May Contain: My Life\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+      }
+    ],
+    "cause": "The auxiliary auditor requires every film within 42 days; src/lib/movies.ts caps the carousel at 12 and reserves 4 slots for recent loads. The older six candidates are legitimately outside the current 12.",
+    "resolution": "The full built rail equals the canonical getCurrentStreamingMovieReleases result in four browser profiles, 12/12. Existing streaming carousel E2E tests pass. No source code, dates or platform claims were altered to silence the auxiliary check."
+  },
+  "fixes": [
+    "Six new synopses exceeded the 320-character schema limit; shortened individually and rebuilt.",
+    "Replaced third-party trailer uploads with verified Netflix India and Movistar Plus releases.",
+    "Repaired five undersized historical portraits.",
+    "Rejected the automatic Oscar Perez filmmaker homonym; restored the documented footballer identity and image.",
+    "Corrected the old hosts/guests confusion and unsupported violent-thriller wording in The Invite; replaced metadata-only Panda Plan context and explicit Primate synopsis fragment."
+  ],
+  "sourceHashes": {
+    "src/data/movies/tu-corazon-se-rompera-2026.json": "407435f7786ec6052adf0b482abfb7b77c5e4f2598d51924ee2933a2eb2577b0",
+    "src/data/movies/panda-plan-2-la-tribu-magica-2026.json": "c6abc8d310f9a797fca0cb06e3e5644c6613934594d97b455a5f9fc116187764",
+    "src/data/movies/pradhama-drishtiya-kuttakkar-2026.json": "60d75c176f9078e85f918827e4cea5099f78858c77c699ceddf792f27268b050",
+    "src/data/movies/un-primer-semestre-epico-2026.json": "6da33e0f816f8ea0f14765d5997a54881ccbeb6e1588a3b6d4e8ecefc23b6d9b",
+    "src/data/movies/en-directo-2026.json": "fcecaff61332f8470c0a888a0e0f51dad98a0a77e7ce86e8bb5a84bc26e73b8e",
+    "src/data/movies/solterisima-tambien-2026.json": "07c83532c4b55f2633853116ad67eab3e121c7b891667770abefa252c2c5ca43",
+    "src/data/movies/marsupilami-caos-a-bordo-2026.json": "ed3b6f68eda1c0ddf4463c96faf7e773d1fa799285d677222562761f69a80683",
+    "src/data/movies/lego-friends-heartlake-el-musical-2026.json": "cab21700ba7123b3d5d9b8b9231d2df8e714bcd926b922c8ad00b9f07f5addf7",
+    "src/data/movies/los-mejores-anos-de-nuestra-vida-2026.json": "3c9e23fd64f6e2ac78d389adbca97890c771400ccd4c0d64ba97fdf061c920b5",
+    "src/data/movies/las-redes-sociales-mataron-a-la-estrella-de-cine-2026.json": "c43b83da6caf0f1c7446adbf4afe8ac9099cd3d647479c8022d34d5b013b43f7",
+    "src/data/movies/moana-live-action-2026.json": "ce9ffc5b169a5ccecf9a0982002eb274103315255318a9211bb159f0fa94ddb7",
+    "src/data/movies/primate-2026.json": "49483dc2119eb17907d7e32d4e9662e1fbcbb6a4362d54c816f17869fe606123",
+    "src/data/movies/goat-2026.json": "0992bb169f534132abfb25d29aa1e2cd55db3d03bac3dcdd843648230b31c7db",
+    "src/data/movies/la-invitacion-2026.json": "e55ca25b4d5eb6eceb1253d035ea4addf864703f7152a1f0ee826fd6ad2b2cca",
+    "src/data/movies/may-contain-my-life-2026.json": "f879ae480968eb58e64c8a41c1af91a35995b24d617d92d01e01396affef8866",
+    "src/data/movies/azul-oscuro-azul-celeste-2026.json": "cb8bfbd1f50867ddd76a2e74fdbff5eba218ccd2c24ed67e9eb145e436b46e5c",
+    "src/data/editorials/moana-llega-a-disney-plus-otra-cara-del-mismo-viaje.json": "ae9df665eb305fc7c45178867d7b68372a675fb2322fe8073b2ebcef6954ebec",
+    "src/data/editorials/mar-del-plata-2026-una-grilla-para-salir-del-algoritmo.json": "2f40a488ca10453c30f6db4caa780616f12b4b076d34ba6bc20a5f4d73a37858",
+    "src/data/people.json": "f630c2dce2410bc2a6a96d090bd13152aee0c1cd06dda7ab123a7315460b2613"
+  }
+}

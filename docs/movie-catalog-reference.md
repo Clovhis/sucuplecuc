@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-18. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-21. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2374
+Total de peliculas: 2385
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -27,6 +27,7 @@ Total de peliculas: 2374
 | 2026 | Apex | apex-2026 | Accion | Netflix | +16 |
 | 2026 | ATEEZ: LIGHT THE WAY IN CINEMAS | ateez-light-the-way-in-cinemas-2026 | Documental | Otras plataformas | ATP |
 | 2026 | Avatar: La leyenda de Aang | avatar-la-leyenda-de-aang-2026 | Animacion | Paramount Plus + Apple TV | ATP |
+| 2026 | Azul oscuro, azul celeste | azul-oscuro-azul-celeste-2026 | Documental | Prime Video + Apple TV | +13 |
 | 2026 | Baby Do Die Do | baby-do-die-do-2026 | Accion | Netflix | +16 |
 | 2026 | Backrooms | backrooms-2026 | Terror | Apple TV + Prime Video | +13 |
 | 2026 | Ballena asesina | ballena-asesina-2026 | Terror | Apple TV | +16 |
@@ -92,6 +93,7 @@ Total de peliculas: 2374
 | 2026 | El vínculo sueco | the-swedish-connection-2026 | Drama | Netflix | +13 |
 | 2026 | El yerno | el-yerno-2026 | Comedia | Netflix | +16 |
 | 2026 | Elize: Sombras de una mujer | elize-sombras-de-una-mujer-2026 | Drama | Netflix | +16 |
+| 2026 | En directo | en-directo-2026 | Thriller | Netflix | +13 |
 | 2026 | En la zona gris | en-la-zona-gris-2026 | Accion | Otras plataformas | +17 |
 | 2026 | Enfrentados: Marfil | enfrentados-marfil-2026 | Romance | Prime Video | +16 |
 | 2026 | Engendro | engendro-2026 | Terror | Otras plataformas | +17 |
@@ -109,7 +111,7 @@ Total de peliculas: 2374
 | 2026 | Garuda: Dare to Dream | garuda-dare-to-dream-2026 | Animacion | Netflix | ATP |
 | 2026 | Gente que conocemos en vacaciones | gente-que-conocemos-en-vacaciones-2026 | Romance | Netflix | +13 |
 | 2026 | Gintama, la película: Yoshiwara en llamas | gintama-la-pelicula-yoshiwara-en-llamas-2026 | Anime | Netflix | ATP |
-| 2026 | GOAT | goat-2026 | Animacion | Apple TV + Prime Video | ATP |
+| 2026 | GOAT | goat-2026 | Animacion | HBO Max + Apple TV | ATP |
 | 2026 | Golden Kamuy: Asalto a la prisión de Abashiri | golden-kamuy-the-abashiri-prison-raid-2026 | Accion | Netflix | +16 |
 | 2026 | Gracias, equipo | gracias-equipo-2026 | Comedia | Netflix | +16 |
 | 2026 | Greenland 2: Migration | greenland-2-migration-2026 | Accion | Otras plataformas | +13 |
@@ -121,6 +123,7 @@ Total de peliculas: 2374
 | 2026 | Hechizo de Amor: La magia continúa | hechizo-de-amor-la-magia-continua-2026 | Fantasia | Otras plataformas | +13 |
 | 2026 | Hijo de nadie | hijo-de-nadie-2026 | Drama | Apple TV + Flow | +13 |
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Prime Video | +17 |
+| 2026 | Hombres G: Los mejores años de nuestra vida | los-mejores-anos-de-nuestra-vida-2026 | Documental | Netflix | +16 |
 | 2026 | Hope: El primer impacto | hope-el-primer-impacto-2026 | Terror | Cine | +13 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Hospital Británico | hospital-britanico-2026 | Documental | Otras plataformas | ATP |
@@ -148,7 +151,7 @@ Total de peliculas: 2374
 | 2026 | La guerra de los últimos | la-guerra-de-los-ultimos-2026 | Ciencia ficción | Otras plataformas | +17 |
 | 2026 | La heroína del lazo | la-heroina-del-lazo-2026 | Anime | Netflix | +13 |
 | 2026 | La hipótesis del amor | la-hipotesis-del-amor-2026 | Comedia romantica | Prime Video | +16 |
-| 2026 | La invitación | la-invitacion-2026 | Comedia | Cine | +17 |
+| 2026 | La invitación | la-invitacion-2026 | Comedia | Cine + Apple TV | +17 |
 | 2026 | La isla olvidada | la-isla-olvidada-2026 | Animacion | Cine | ATP |
 | 2026 | La muerte de Robin Hood | la-muerte-de-robin-hood-2026 | Drama | Apple TV + Flow | +17 |
 | 2026 | La niña | la-nina-del-azucar-2026 | Terror | Otras plataformas | +17 |
@@ -166,6 +169,8 @@ Total de peliculas: 2374
 | 2026 | Las cartas de la vida | las-cartas-de-la-vida-2026 | Drama | Netflix | +16 |
 | 2026 | Las damas primero | las-damas-primero-2026 | Comedia | Netflix | +16 |
 | 2026 | Las ovejas detectives | las-ovejas-detectives-2026 | Comedia | Prime Video | +13 |
+| 2026 | Las redes sociales mataron a la estrella de cine | las-redes-sociales-mataron-a-la-estrella-de-cine-2026 | Documental | Prime Video | +13 |
+| 2026 | LEGO Friends: Heartlake el musical | lego-friends-heartlake-el-musical-2026 | Musical | Netflix | ATP |
 | 2026 | LEGO Star Wars: The Mandalorian | lego-star-wars-the-mandalorian-2026 | Animacion | Disney Plus | ATP |
 | 2026 | Letras robadas | letras-robadas-2026 | Comedia | Prime Video + Apple TV | +16 |
 | 2026 | Leviticus: Ritual de sangre | leviticus-ritual-de-sangre-2026 | Terror | Otras plataformas | +17 |
@@ -188,8 +193,10 @@ Total de peliculas: 2374
 | 2026 | Main Vaapas Aaunga | main-vaapas-aaunga-2026 | Drama | Netflix | +13 |
 | 2026 | Mandaadi | mandaadi-2026 | Acción | Netflix | +13 |
 | 2026 | Máquina de guerra | war-machine-2026 | Accion | Netflix | +16 |
+| 2026 | Marsupilami: Caos a bordo | marsupilami-caos-a-bordo-2026 | Comedia | Netflix | +13 |
 | 2026 | Masterplan | masterplan-2026 | Comedia | Prime Video | +13 |
 | 2026 | Matchbox: La película | matchbox-la-pelicula-2026 | Acción | Apple TV | +13 |
+| 2026 | May Contain: My Life | may-contain-my-life-2026 | Documental | Apple TV | ATP |
 | 2026 | Mayday | mayday-2026 | Accion | Apple TV | +13 |
 | 2026 | Mensajes de voz para Isabelle | mensajes-de-voz-para-isabelle-2026 | Romance | Netflix | +13 |
 | 2026 | Mercy | mercy-2026 | Accion | Otras plataformas | +13 |
@@ -198,7 +205,7 @@ Total de peliculas: 2374
 | 2026 | Michael | michael-2026 | Drama | Apple TV | +13 |
 | 2026 | Midnight Girls | midnight-girls-2026 | Drama | Netflix | +13 |
 | 2026 | Minions & Monstruos | minions-monstruos-2026 | Animacion | Apple TV + Flow | ATP |
-| 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Otras plataformas | ATP |
+| 2026 | Moana (Live Action) | moana-live-action-2026 | Aventura | Disney Plus | ATP |
 | 2026 | Modha Rathri | modha-rathri-2026 | Comedia | Netflix | +13 |
 | 2026 | Momentos decisivos: Generación 11-S | momentos-decisivos-generacion-11-s-2026 | Documental | Netflix | +16 |
 | 2026 | Mononoke III: La maldición de la serpiente | mononoke-iii-la-maldicion-de-la-serpiente-2026 | Anime | Netflix | +13 |
@@ -219,15 +226,16 @@ Total de peliculas: 2374
 | 2026 | Office Romance | office-romance-2026 | Comedia | Netflix | +16 |
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
-| 2026 | Panda Plan 2: La tribu mágica | panda-plan-2-la-tribu-magica-2026 | Aventura | Apple TV | ATP |
+| 2026 | Panda Plan 2: La tribu mágica | panda-plan-2-la-tribu-magica-2026 | Aventura | Apple TV + Prime Video | ATP |
 | 2026 | Papá a cargo | papa-a-cargo-2026 | Comedia | Apple TV + Flow | ATP |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
 | 2026 | PAW Patrol: La Dino Película | paw-patrol-la-dino-pelicula-2026 | Animacion | Cine + Flow | ATP |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
 | 2026 | Pepita la pistolera | pepita-la-pistolera-2026 | Crimen | Cine | +17 |
 | 2026 | Poldi | poldi-2026 | Documental | Netflix | +13 |
+| 2026 | Pradhama Drishtiya Kuttakkar | pradhama-drishtiya-kuttakkar-2026 | Thriller | Netflix | +16 |
 | 2026 | Pretty Lethal | pretty-lethal-2026 | Thriller | Prime Video | +18 |
-| 2026 | Primate | primate-2026 | Terror | Otras plataformas | +16 |
+| 2026 | Primate | primate-2026 | Terror | Netflix + Paramount Plus | +16 |
 | 2026 | Project Baby | project-baby-2026 | Comedia | Netflix | +13 |
 | 2026 | Protector | protector-2026 | Accion | Otras plataformas | +16 |
 | 2026 | Proyecto Salvación | project-hail-mary-2026 | Ciencia ficcion | Prime Video | +13 |
@@ -255,6 +263,7 @@ Total de peliculas: 2374
 | 2026 | Socias por accidente | socias-por-accidente-2026 | Comedia | Apple TV | +13 |
 | 2026 | Solo Mio | solo-mio-2026 | Comedia romántica | Otras plataformas | ATP |
 | 2026 | Sólo por una noche | solo-por-una-noche-2026 | Comedia romántica | Otras plataformas | +13 |
+| 2026 | Solterísima también | solterisima-tambien-2026 | Comedia | Netflix | +13 |
 | 2026 | Soulm8te | soulm8te-2026 | Terror | Disney Plus | +16 |
 | 2026 | Spider-Man: Un Nuevo Día | spider-man-brand-new-day-2026 | Accion | Cine + Apple TV | +13 |
 | 2026 | Stavros Halkias: Uncle Stav | stavros-halkias-uncle-stav-2026 | Comedia | Netflix | +16 |
@@ -286,9 +295,11 @@ Total de peliculas: 2374
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Disney Plus | ATP |
 | 2026 | Travis Barker: Más allá del miedo | travis-barker-mas-alla-del-miedo-2026 | Documental | Disney Plus | +7 |
+| 2026 | Tu corazón se romperá | tu-corazon-se-rompera-2026 | Romance | Prime Video + Apple TV | +16 |
 | 2026 | Tu corazón será destrozado | tu-corazon-sera-destrozado-2026 | Romance | Apple TV + Prime Video | +17 |
 | 2026 | Un comeback salvaje | un-comeback-salvaje-2026 | Comedia | Netflix | +13 |
 | 2026 | Un hijo propio | un-hijo-propio-2026 | Documental | Netflix | +16 |
+| 2026 | Un primer semestre épico | un-primer-semestre-epico-2026 | Romance | Netflix | +13 |
 | 2026 | Una mujer sin pasado (The Secret Woman) | una-mujer-sin-pasado-2026 | Drama | Netflix | +13 |
 | 2026 | Unabomber | unabomber-2026 | Drama | Netflix | +16 |
 | 2026 | Unas vacaciones en invierno | unas-vacaciones-en-invierno-2026 | Drama | Prime Video + Apple TV | +13 |
