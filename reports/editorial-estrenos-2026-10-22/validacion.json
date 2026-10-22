@@ -1,0 +1,89 @@
+{
+  "dateAR": "2026-10-22",
+  "branch": "feature/movie-cartelera-ba-2026-10-22",
+  "slug": "estrenos-cines-22-octubre-2026",
+  "title": "Estrenos de la semana: Clayface, Wanda y el regreso de Los otros",
+  "words": 1096,
+  "readingMinutes": 5,
+  "paragraphs": 13,
+  "images": 5,
+  "webpVariants": 10,
+  "spoilers": false,
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "previewUrl": "http://127.0.0.1:43224/editorial/estrenos-cines-22-octubre-2026/",
+  "checks": {
+    "astro": {
+      "files": 302,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0,
+      "exitCode": 0
+    },
+    "build": {
+      "pages": 8035,
+      "duration": "10m30s",
+      "exitCode": 0
+    },
+    "publicOutput": {
+      "exitCode": 0
+    },
+    "sitemap": {
+      "canonicalPages": 5635,
+      "exitCode": 0
+    },
+    "editorialPlaywright": {
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ],
+      "passed": 54,
+      "failed": 0,
+      "workers": 1,
+      "summary": "54 passed (3.1m)\r",
+      "artifact": "playwright.log"
+    },
+    "browser": [
+      {
+        "width": 1440,
+        "archiveEntries": 26,
+        "archivePosition": 1,
+        "homeEntries": 6,
+        "homePosition": 1,
+        "paragraphs": 13,
+        "date": "2026-10-22",
+        "readingTime": "PT5M",
+        "overflow": false,
+        "pageErrors": [],
+        "decodedImages": 5
+      },
+      {
+        "width": 320,
+        "archiveEntries": 26,
+        "archivePosition": 1,
+        "homeEntries": 6,
+        "homePosition": 1,
+        "paragraphs": 13,
+        "date": "2026-10-22",
+        "readingTime": "PT5M",
+        "overflow": false,
+        "pageErrors": [],
+        "decodedImages": 5
+      }
+    ],
+    "visual": {
+      "desktop1440": "passed",
+      "mobile320": "passed",
+      "article": "passed",
+      "homeCards": "passed",
+      "coverCrop": "passed"
+    },
+    "unchangedCatalogFiles": 2396,
+    "diffCheck": "passed"
+  },
+  "limitations": [],
+  "phase": "validacion_pre_publicacion"
+}

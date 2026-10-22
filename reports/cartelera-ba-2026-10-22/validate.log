@@ -1,0 +1,509 @@
+
+> la-posta-cine@0.0.1 validate:content
+> node ./scripts/validate-content.mjs
+
+> git rev-parse --verify --quiet origin/main
+
+> npm run validate:home-editions -- --base origin/main
+
+> la-posta-cine@0.0.1 validate:home-editions
+> node --experimental-strip-types ./scripts/validate-home-editions.mjs --base origin/main
+
+Home editions: valid, frozen and independent of movie loads.
+
+> git ls-tree -r --name-only origin/main -- src/data/movies
+
+> git diff --name-only --diff-filter=AM origin/main
+
+> git show origin/main:src/data/movies/bajo-tus-pies-2025.json
+
+> git show origin/main:src/data/movies/los-juegos-del-hambre-2012.json
+
+> git show origin/main:src/data/movies/los-juegos-del-hambre-en-llamas-2013.json
+
+> git show origin/main:src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json
+
+> git show origin/main:src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json
+
+> git show origin/main:src/data/movies/quiero-tu-sexo-2026.json
+
+> git show origin/main:src/data/movies/the-others-2001.json
+
+> git show origin/main:src/data/movies/vertigo-2-punto-muerto-2026.json
+
+> git show origin/main:src/data/movies/buenas-vibraciones-2026.json
+
+> git show origin/main:src/data/movies/clayface-2026.json
+
+> git show origin/main:src/data/movies/el-poder-de-la-red-2026.json
+
+> git show origin/main:src/data/movies/heidi-el-rescate-del-lince-2025.json
+
+> git show origin/main:src/data/movies/que-dios-perdona-a-todos-2026.json
+
+> git show origin/main:src/data/movies/queres-ser-mi-hijo-2026.json
+
+> git show origin/main:src/data/movies/susana-rinaldi-libre-2025.json
+
+> git show origin/main:src/data/movies/terror-en-el-amazonas-2026.json
+Validation mode: targeted
+Base ref: origin/main
+Changed files detected: 25
+
+> npm run catalog:movies:check
+
+> la-posta-cine@0.0.1 catalog:movies:check
+> node ./scripts/update-movie-catalog-reference.mjs --check
+
+> node ./scripts/audit-movie-duplicates.mjs
+Duplicate guard: 2393 movies; titles/original titles + year and 2 retired aliases checked.
+
+> npm run catalog:people:check
+
+> la-posta-cine@0.0.1 catalog:people:check
+> node ./scripts/update-person-profile-catalog-links.mjs --check
+
+> npm run catalog:people:reference:check
+
+> la-posta-cine@0.0.1 catalog:people:reference:check
+> node ./scripts/update-person-profile-catalog-reference.mjs --check
+
+Checking portraits for 8 new or people-credit-changed movie file(s).
+
+> node ./scripts/audit-movie-people.mjs --file src/data/movies/buenas-vibraciones-2026.json --file src/data/movies/clayface-2026.json --file src/data/movies/el-poder-de-la-red-2026.json --file src/data/movies/heidi-el-rescate-del-lince-2025.json --file src/data/movies/que-dios-perdona-a-todos-2026.json --file src/data/movies/queres-ser-mi-hijo-2026.json --file src/data/movies/susana-rinaldi-libre-2025.json --file src/data/movies/terror-en-el-amazonas-2026.json
+Movie people audit passed for 8 movie file(s).
+
+> npm run audit:content-quality:strict -- --full
+
+> la-posta-cine@0.0.1 audit:content-quality:strict
+> node ./scripts/content-quality-audit.mjs --strict --full
+
+{
+  "referenceDate": "2026-10-22T12:20:51.111Z",
+  "movieFiles": 2393,
+  "releasedMovies": 2393,
+  "reviewWords": {
+    "min": 70,
+    "median": 92,
+    "avg": 93,
+    "max": 174
+  },
+  "synopsisWords": {
+    "min": 28,
+    "median": 41,
+    "avg": 41,
+    "max": 60
+  },
+  "shortReviews": {
+    "thresholdWords": 70,
+    "minimumSentences": 2,
+    "note": "Una reseña editorial debe desarrollar una postura; menos de 70 palabras o menos de dos oraciones requiere reescritura manual.",
+    "count": 0,
+    "examples": [],
+    "all": []
+  },
+  "weakSynopses": {
+    "count": 0,
+    "examples": []
+  },
+  "synopsisHygiene": {
+    "count": 0,
+    "examples": [],
+    "all": []
+  },
+  "similarSynopses": {
+    "count": 0,
+    "examples": []
+  },
+  "invalidPosterPaths": {
+    "count": 0,
+    "note": "Movie posters must use the local assets/posters/<year>/<slug>.webp convention; validate bytes and files with npm run posters:check."
+  }
+}
+
+> npm run audit:editorial-low-value
+
+> la-posta-cine@0.0.1 audit:editorial-low-value
+> node ./scripts/editorial-low-value-audit.mjs
+
+{
+  "referenceDate": "2026-10-22T12:20:54.858Z",
+  "releasedMovies": 2393,
+  "generatedReviewCandidates": {
+    "count": 0,
+    "highSeverity": 0,
+    "mediumSeverity": 0,
+    "examples": []
+  },
+  "shortReviewCandidates": {
+    "count": 0,
+    "examples": []
+  },
+  "templateReviewCandidates": {
+    "count": 0,
+    "examples": []
+  },
+  "repeatedEditorialCandidates": {
+    "count": 0,
+    "examples": []
+  },
+  "primaryGenreMismatch": {
+    "count": 201,
+    "examples": [
+      {
+        "slug": "a-i-artificial-intelligence-2001",
+        "title": "A.I. Inteligencia Artificial",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\a-i-artificial-intelligence-2001.json"
+      },
+      {
+        "slug": "a-nightmare-on-elm-street-2-freddy-s-revenge-1985",
+        "title": "A Nightmare on Elm Street 2: Freddy's Revenge",
+        "category": "Terror",
+        "firstGenre": "cine de terror",
+        "filePath": "src\\data\\movies\\a-nightmare-on-elm-street-2-freddy-s-revenge-1985.json"
+      },
+      {
+        "slug": "a-nightmare-on-elm-street-3-dream-warriors-1987",
+        "title": "A Nightmare on Elm Street 3: Dream Warriors",
+        "category": "Terror",
+        "firstGenre": "cine de terror",
+        "filePath": "src\\data\\movies\\a-nightmare-on-elm-street-3-dream-warriors-1987.json"
+      },
+      {
+        "slug": "a-nightmare-on-elm-street-5-the-dream-child-1989",
+        "title": "Pesadilla en Elm Street 5: El niño de los sueños",
+        "category": "Terror",
+        "firstGenre": "Misterio & Suspense",
+        "filePath": "src\\data\\movies\\a-nightmare-on-elm-street-5-the-dream-child-1989.json"
+      },
+      {
+        "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+        "title": "Adolescencia, sexo y muerte en Campamento Miasma",
+        "category": "Terror",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json"
+      },
+      {
+        "slug": "alex-y-emma-2003",
+        "title": "Alex y Emma",
+        "category": "Comedia romantica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\alex-y-emma-2003.json"
+      },
+      {
+        "slug": "all-quiet-on-the-western-front-1930",
+        "title": "All Quiet on the Western Front",
+        "category": "Drama",
+        "firstGenre": "Guerra",
+        "filePath": "src\\data\\movies\\all-quiet-on-the-western-front-1930.json"
+      },
+      {
+        "slug": "all-quiet-on-the-western-front-2022",
+        "title": "All Quiet on the Western Front",
+        "category": "Drama",
+        "firstGenre": "Guerra",
+        "filePath": "src\\data\\movies\\all-quiet-on-the-western-front-2022.json"
+      },
+      {
+        "slug": "amelie-2001",
+        "title": "Amélie",
+        "category": "Comedia romántica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\amelie-2001.json"
+      },
+      {
+        "slug": "amor-y-otras-drogas-2010",
+        "title": "Amor y otras drogas",
+        "category": "Romance",
+        "firstGenre": "Romántica",
+        "filePath": "src\\data\\movies\\amor-y-otras-drogas-2010.json"
+      },
+      {
+        "slug": "an-american-in-paris-1951",
+        "title": "An American in Paris",
+        "category": "Musical",
+        "firstGenre": "Música",
+        "filePath": "src\\data\\movies\\an-american-in-paris-1951.json"
+      },
+      {
+        "slug": "argo-2012",
+        "title": "Argo",
+        "category": "Thriller",
+        "firstGenre": "Misterio & Suspense",
+        "filePath": "src\\data\\movies\\argo-2012.json"
+      },
+      {
+        "slug": "around-the-world-in-80-days-1956",
+        "title": "Around the World in 80 Days",
+        "category": "Comedia",
+        "firstGenre": "Fantasía",
+        "filePath": "src\\data\\movies\\around-the-world-in-80-days-1956.json"
+      },
+      {
+        "slug": "ateez-light-the-way-in-cinemas-2026",
+        "title": "ATEEZ: LIGHT THE WAY IN CINEMAS",
+        "category": "Documental",
+        "firstGenre": "Música",
+        "filePath": "src\\data\\movies\\ateez-light-the-way-in-cinemas-2026.json"
+      },
+      {
+        "slug": "back-to-black-2024",
+        "title": "Back to Black",
+        "category": "Biografica",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\back-to-black-2024.json"
+      },
+      {
+        "slug": "back-to-the-future-1985",
+        "title": "Back to the Future",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\back-to-the-future-1985.json"
+      },
+      {
+        "slug": "back-to-the-future-part-ii-1989",
+        "title": "Back to the Future Part II",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\back-to-the-future-part-ii-1989.json"
+      },
+      {
+        "slug": "back-to-the-future-part-iii-1990",
+        "title": "Back to the Future Part III",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\back-to-the-future-part-iii-1990.json"
+      },
+      {
+        "slug": "bailamos-2004",
+        "title": "¿Bailamos?",
+        "category": "Comedia romántica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\bailamos-2004.json"
+      },
+      {
+        "slug": "barreda-2026",
+        "title": "Barreda",
+        "category": "Drama",
+        "firstGenre": "Crimen",
+        "filePath": "src\\data\\movies\\barreda-2026.json"
+      },
+      {
+        "slug": "besar-es-facil-2026",
+        "title": "Besar es fácil",
+        "category": "Comedia romantica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\besar-es-facil-2026.json"
+      },
+      {
+        "slug": "bienvenidos-a-villa-capri-2017",
+        "title": "Bienvenidos a Villa Capri",
+        "category": "Drama",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\bienvenidos-a-villa-capri-2017.json"
+      },
+      {
+        "slug": "boda-sangrienta-2-2026",
+        "title": "Boda sangrienta 2",
+        "category": "Terror",
+        "firstGenre": "Thriller",
+        "filePath": "src\\data\\movies\\boda-sangrienta-2-2026.json"
+      },
+      {
+        "slug": "borderlands-el-destino-del-universo-esta-en-juego-2024",
+        "title": "Borderlands: El destino del universo está en juego",
+        "category": "Drama",
+        "firstGenre": "Acción",
+        "filePath": "src\\data\\movies\\borderlands-el-destino-del-universo-esta-en-juego-2024.json"
+      },
+      {
+        "slug": "braveheart-1995",
+        "title": "Braveheart",
+        "category": "Drama",
+        "firstGenre": "Guerra",
+        "filePath": "src\\data\\movies\\braveheart-1995.json"
+      },
+      {
+        "slug": "bridge-of-spies-2015",
+        "title": "El puente de los espías",
+        "category": "Thriller",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\bridge-of-spies-2015.json"
+      },
+      {
+        "slug": "buena-suerte-diviertete-no-mueras-2026",
+        "title": "Buena suerte, diviértete, no mueras",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Acción",
+        "filePath": "src\\data\\movies\\buena-suerte-diviertete-no-mueras-2026.json"
+      },
+      {
+        "slug": "buena-suerte-leo-grande-2022",
+        "title": "Buena suerte, Leo Grande",
+        "category": "Drama",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\buena-suerte-leo-grande-2022.json"
+      },
+      {
+        "slug": "buenas-vibraciones-2026",
+        "title": "Buenas vibraciones",
+        "category": "Comedia romantica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\buenas-vibraciones-2026.json"
+      },
+      {
+        "slug": "buffalo-soldiers-2001",
+        "title": "Buffalo Soldiers",
+        "category": "Comedia",
+        "firstGenre": "Comedia negra",
+        "filePath": "src\\data\\movies\\buffalo-soldiers-2001.json"
+      },
+      {
+        "slug": "camila-1984",
+        "title": "Camila",
+        "category": "Romance",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\camila-1984.json"
+      },
+      {
+        "slug": "camp-rock-3-2026",
+        "title": "Camp Rock 3",
+        "category": "Musical",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\camp-rock-3-2026.json"
+      },
+      {
+        "slug": "cape-fear-1991",
+        "title": "El cabo del miedo",
+        "category": "Thriller",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\cape-fear-1991.json"
+      },
+      {
+        "slug": "child-s-play-2019",
+        "title": "Muñeco diabólico",
+        "category": "Terror",
+        "firstGenre": "Misterio & Suspense",
+        "filePath": "src\\data\\movies\\child-s-play-2019.json"
+      },
+      {
+        "slug": "close-encounters-of-the-third-kind-1977",
+        "title": "Encuentros cercanos del tercer tipo",
+        "category": "Ciencia ficcion",
+        "firstGenre": "Drama",
+        "filePath": "src\\data\\movies\\close-encounters-of-the-third-kind-1977.json"
+      },
+      {
+        "slug": "con-faldas-y-a-lo-loco-1959",
+        "title": "Una Eva y dos Adanes",
+        "category": "Comedia romantica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\con-faldas-y-a-lo-loco-1959.json"
+      },
+      {
+        "slug": "corazon-de-leon-2013",
+        "title": "Corazón de león",
+        "category": "Comedia romántica",
+        "firstGenre": "Comedia",
+        "filePath": "src\\data\\movies\\corazon-de-leon-2013.json"
+      },
+      {
+        "slug": "coyote-vs-acme-2026",
+        "title": "Coyote vs. Acme",
+        "category": "Comedia",
+        "firstGenre": "Animación",
+        "filePath": "src\\data\\movies\\coyote-vs-acme-2026.json"
+      },
+      {
+        "slug": "dracula-de-bram-stoker-1992",
+        "title": "Drácula de Bram Stoker",
+        "category": "Terror",
+        "firstGenre": "Fantasía",
+        "filePath": "src\\data\\movies\\dracula-de-bram-stoker-1992.json"
+      },
+      {
+        "slug": "duel-1971",
+        "title": "Reto a muerte",
+        "category": "Thriller",
+        "firstGenre": "Acción & Aventura",
+        "filePath": "src\\data\\movies\\duel-1971.json"
+      }
+    ]
+  },
+  "repeatedOpeningPatterns": {
+    "count": 0,
+    "examples": []
+  },
+  "repeatedReviewSentences": {
+    "count": 0,
+    "examples": []
+  }
+}
+
+> npm run audit:profile-originality
+
+> la-posta-cine@0.0.1 audit:profile-originality
+> node --experimental-strip-types ./scripts/validate-person-profile-originality.mjs
+
+Person-profile originality source validation passed.
+
+> node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref origin/main --recent --skip-youtube
+Audited 0 candidate file(s) from origin/main against src/data/movies.
+Editorial audit: No candidate movie files found to audit.
+Result: PASS
+
+> npm run audit:profiles
+
+> la-posta-cine@0.0.1 audit:profiles
+> node ./skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --all
+
+Person-profile originality source validation passed.
+Person-profile audit passed using the canonical editorial policy.
+
+> npm run build
+
+> la-posta-cine@0.0.1 build
+> astro build
+
+09:21:16 [content] Syncing content
+09:21:16 [content] Synced content
+09:21:16 [types] Generated 380ms
+09:21:16 [build] output: "static"
+09:21:16 [build] mode: "static"
+09:21:16 [build] directory: C:\WebsitePeliculas\dist\
+09:21:16 [build] Collecting build info...
+09:21:16 [build] ✓ Completed in 527ms.
+09:21:31 [build] Building static entrypoints...
+09:21:37 [vite] ✓ built in 6.12s
+09:21:56 [vite] ✓ built in 19.43s
+09:21:57 [build] Rearranging server assets...
+
+ generating static routes
+09:33:27 ✓ Completed in 11m 31s.
+
+09:33:27 [build] ✓ Completed in 11m 56s.
+09:33:27 [build] 8034 page(s) built in 12m 12s
+09:33:27 [build] Complete!
+
+> npm run audit:profile-originality -- --require-dist
+
+> la-posta-cine@0.0.1 audit:profile-originality
+> node --experimental-strip-types ./scripts/validate-person-profile-originality.mjs --require-dist
+
+Person-profile originality validation passed: 759 approved, 0 non-indexable.
+
+> npm run validate:public-output
+
+> la-posta-cine@0.0.1 validate:public-output
+> node ./scripts/validate-public-output.mjs
+
+Public output validation passed: no forbidden legacy platform references found in dist.
+
+> npm run validate:sitemap-indexability
+
+> la-posta-cine@0.0.1 validate:sitemap-indexability
+> node ./scripts/validate-sitemap-indexability.mjs
+
+Sitemap indexability validation passed: 5634 canonical pages.

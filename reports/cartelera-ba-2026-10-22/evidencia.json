@@ -1,0 +1,4685 @@
+{
+  "dateAR": "2026-10-22",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "scope": "Estrenos comerciales del 22/10 y revalidación de las 43 fichas con Cine; CABA y toda PBA. Plataformas legales: Argentina.",
+  "branch": "feature/movie-cartelera-ba-2026-10-22",
+  "baselineCine": 43,
+  "newMovies": 8,
+  "removed": 7,
+  "existingReissue": 1,
+  "finalCine": 45,
+  "catalogTotal": 2393,
+  "candidates": [
+    {
+      "slug": "clayface-2026",
+      "path": "src/data/movies/clayface-2026.json",
+      "action": "add"
+    },
+    {
+      "slug": "el-poder-de-la-red-2026",
+      "path": "src/data/movies/el-poder-de-la-red-2026.json",
+      "action": "add"
+    },
+    {
+      "slug": "buenas-vibraciones-2026",
+      "path": "src/data/movies/buenas-vibraciones-2026.json",
+      "action": "add"
+    },
+    {
+      "slug": "heidi-el-rescate-del-lince-2025",
+      "path": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "action": "add"
+    },
+    {
+      "slug": "que-dios-perdona-a-todos-2026",
+      "path": "src/data/movies/que-dios-perdona-a-todos-2026.json",
+      "action": "add"
+    },
+    {
+      "slug": "terror-en-el-amazonas-2026",
+      "path": "src/data/movies/terror-en-el-amazonas-2026.json",
+      "action": "add"
+    },
+    {
+      "slug": "queres-ser-mi-hijo-2026",
+      "path": "src/data/movies/queres-ser-mi-hijo-2026.json",
+      "action": "add"
+    },
+    {
+      "slug": "susana-rinaldi-libre-2025",
+      "path": "src/data/movies/susana-rinaldi-libre-2025.json",
+      "action": "add"
+    },
+    {
+      "slug": "bajo-tus-pies-2025",
+      "path": "src/data/movies/bajo-tus-pies-2025.json",
+      "action": "remove-cine"
+    },
+    {
+      "slug": "vertigo-2-punto-muerto-2026",
+      "path": "src/data/movies/vertigo-2-punto-muerto-2026.json",
+      "action": "remove-cine"
+    },
+    {
+      "slug": "quiero-tu-sexo-2026",
+      "path": "src/data/movies/quiero-tu-sexo-2026.json",
+      "action": "remove-cine"
+    },
+    {
+      "slug": "los-juegos-del-hambre-2012",
+      "path": "src/data/movies/los-juegos-del-hambre-2012.json",
+      "action": "remove-cine"
+    },
+    {
+      "slug": "los-juegos-del-hambre-en-llamas-2013",
+      "path": "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+      "action": "remove-cine"
+    },
+    {
+      "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+      "path": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+      "action": "remove-cine"
+    },
+    {
+      "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+      "path": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+      "action": "remove-cine"
+    },
+    {
+      "slug": "the-others-2001",
+      "path": "src/data/movies/the-others-2001.json",
+      "action": "restore-cine-reissue"
+    }
+  ],
+  "entries": [
+    {
+      "slug": "clayface-2026",
+      "path": "src/data/movies/clayface-2026.json",
+      "action": "add",
+      "title": "Clayface",
+      "year": 2026,
+      "originalTitle": "Clayface",
+      "duplicateCheck": {
+        "slug": "clayface-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/clayface-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "GB, US",
+        "sources": [
+          "https://www.clayfacemovie.com/gallery/",
+          "https://www.rottentomatoes.com/m/clayface"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://www.justwatch.com/ar/pelicula/clayface",
+        "raw": 8.9,
+        "scale": 10,
+        "metric": "IMDb audience as reported by JustWatch",
+        "votes": 145,
+        "normalized": 9,
+        "confidenceCeiling": 8,
+        "masterpieceCeiling": 8,
+        "final": 8,
+        "note": "RT no muestra porcentaje de público. IMDb directo 403; la cifra pública de JustWatch es indirecta y la muestra es temprana. Watchmode audiencia 7.9/10, votos desconocidos, queda como contraste; no se usa su crítica ni se promedian fuentes. Obra reciente sin reconocimiento perdurable."
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "13:30",
+            "originalTime": "13:10",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "15:50",
+            "originalTime": "15:30",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "18:10",
+            "originalTime": "17:50",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "20:30",
+            "originalTime": "20:10",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "22:50",
+            "originalTime": "22:30",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "12:20",
+            "originalTime": "12:00",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "17:00",
+            "originalTime": "16:40",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "22:00",
+            "originalTime": "21:40",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+          }
+        ],
+        "justwatch": {
+          "url": "https://www.justwatch.com/ar/pelicula/clayface",
+          "offers": [
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=608",
+              "package": {
+                "clearName": "Atlas Cines"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/clayface",
+              "package": {
+                "clearName": "Cinemark"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6209",
+              "package": {
+                "clearName": "Showcase Cinemas"
+              }
+            }
+          ]
+        }
+      },
+      "taxonomy": {
+        "category": "Terror",
+        "genres": [
+          "Terror",
+          "Thriller",
+          "Ciencia ficción"
+        ],
+        "subgenres": [
+          "Body Horror"
+        ],
+        "musical": false,
+        "war": false,
+        "note": "La premisa no tiene números musicales como forma narrativa ni guerra como conflicto central.",
+        "sources": [
+          "https://www.clayfacemovie.com/gallery/",
+          "https://www.rottentomatoes.com/m/clayface"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2026/clayface-2026.webp",
+        "source": "https://m.media-amazon.com/images/M/MV5BMjNlMjM4NTAtYjE5YS00ZGYyLWEyMTYtNjFlMmIxZDEzYjhhXkEyXkFqcGc@._V1_.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "C2H6fOS-VgE",
+        "url": "https://www.youtube.com/watch?v=C2H6fOS-VgE",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "James Watkins",
+          "name": "James Watkins",
+          "birthDate": "1973-05-20",
+          "birthYear": 1973,
+          "nationalityPrimary": "Británico",
+          "image": "/people/james-watkins-nm1220140.jpg",
+          "imdbId": "nm1220140",
+          "imdbUrl": "https://www.imdb.com/name/nm1220140/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Director%20James%20Watkins%20on%20the%20set%20of%20McMafia.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q2057920",
+            "https://www.imdb.com/name/nm1220140/",
+            "https://www.themoviedb.org/person/63306-james-watkins"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Tom Rhys Harries",
+          "name": "Tom Rhys Harries",
+          "birthDate": "1992-10-08",
+          "birthYear": 1992,
+          "nationalityPrimary": "Británico",
+          "image": "/people/tom-rhys-harries-nm4151189.jpg",
+          "imdbId": "nm4151189",
+          "imdbUrl": "https://www.imdb.com/name/nm4151189/",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/elxvpHPqOxGcKe6U2hcArIcpyWo.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q36697214",
+            "https://www.imdb.com/name/nm4151189/",
+            "https://www.themoviedb.org/person/1327945-tom-rhys-harries"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-tmdb-cache"
+        },
+        {
+          "credit": "Naomi Ackie",
+          "name": "Naomi Ackie",
+          "birthDate": "1991-08-22",
+          "birthYear": 1991,
+          "nationalityPrimary": "Británica",
+          "image": "/people/naomi-ackie-nm7609875.jpg",
+          "imdbId": "nm7609875",
+          "imdbUrl": "https://www.imdb.com/name/nm7609875/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Naomi%20Ackie.png?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q47456743",
+            "https://www.imdb.com/name/nm7609875/",
+            "https://www.themoviedb.org/person/1537686-naomi-ackie"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        }
+      ],
+      "sources": [
+        "https://www.clayfacemovie.com/gallery/",
+        "https://www.rottentomatoes.com/m/clayface"
+      ]
+    },
+    {
+      "slug": "el-poder-de-la-red-2026",
+      "path": "src/data/movies/el-poder-de-la-red-2026.json",
+      "action": "add",
+      "title": "El poder de la red",
+      "year": 2026,
+      "originalTitle": "The Social Reckoning",
+      "duplicateCheck": {
+        "slug": "el-poder-de-la-red-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/el-poder-de-la-red-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "US",
+        "sources": [
+          "https://www.rottentomatoes.com/m/the_social_reckoning",
+          "https://www.cinemark.com.ar/pelicula/el-poder-de-la-red"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://www.rottentomatoes.com/m/the_social_reckoning",
+        "raw": 71,
+        "scale": 100,
+        "metric": "RT Popcornmeter",
+        "votes": "250+ verified",
+        "normalized": 7,
+        "final": 7
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "15:00",
+            "originalTime": "14:40",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=611&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "17:30",
+            "originalTime": "17:10",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=611&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "20:00",
+            "originalTime": "19:40",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=611&fecha=2026-10-22"
+          }
+        ],
+        "justwatch": {
+          "url": "https://www.justwatch.com/ar/pelicula/the-social-reckoning",
+          "offers": [
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=611",
+              "package": {
+                "clearName": "Atlas Cines"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/el-poder-de-la-red",
+              "package": {
+                "clearName": "Cinemark"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6220",
+              "package": {
+                "clearName": "Showcase Cinemas"
+              }
+            }
+          ]
+        }
+      },
+      "taxonomy": {
+        "category": "Drama",
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Biografía"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "note": "La premisa no tiene números musicales como forma narrativa ni guerra como conflicto central.",
+        "sources": [
+          "https://www.rottentomatoes.com/m/the_social_reckoning",
+          "https://www.cinemark.com.ar/pelicula/el-poder-de-la-red"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2026/el-poder-de-la-red-2026.webp",
+        "source": "https://m.media-amazon.com/images/M/MV5BYjdlZTgzZDUtMmVjYy00M2EyLWFlNGMtNjVhYjM2ODNmZjEzXkEyXkFqcGc@._V1_.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "JLYivj6xBOA",
+        "url": "https://www.youtube.com/watch?v=JLYivj6xBOA",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "Aaron Sorkin",
+          "name": "Aaron Sorkin",
+          "birthDate": "1961-06-09",
+          "birthYear": 1961,
+          "nationalityPrimary": "Estadounidense",
+          "image": "/people/aaron-sorkin-nm0815070.jpg",
+          "imdbId": "nm0815070",
+          "imdbUrl": "https://www.imdb.com/name/nm0815070/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aaron%20Sorkin%20(27566400913).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q299194",
+            "https://www.imdb.com/name/nm0815070/",
+            "https://www.themoviedb.org/person/13520-aaron-sorkin"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Mikey Madison",
+          "name": "Mikey Madison",
+          "birthDate": "1999-03-25",
+          "birthYear": 1999,
+          "nationalityPrimary": "Estadounidense",
+          "image": "/people/mikey-madison-nm5700898.jpg",
+          "imdbId": "nm5700898",
+          "imdbUrl": "https://www.imdb.com/name/nm5700898/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mikey%20Madison%20at%20the%202024%20TIFF%20(cropped).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q26923245",
+            "https://www.imdb.com/name/nm5700898/",
+            "https://www.themoviedb.org/person/1640439-mikey-madison"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Jeremy Allen White",
+          "name": "Jeremy Allen White",
+          "birthDate": "1991-02-17",
+          "birthYear": 1991,
+          "nationalityPrimary": "Estadounidense",
+          "image": "/people/jeremy-allen-white-nm2087739.jpg",
+          "imdbId": "nm2087739",
+          "imdbUrl": "https://www.imdb.com/name/nm2087739/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Allen%20White%20Springsteen-33%20(cropped).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q1411012",
+            "https://www.imdb.com/name/nm2087739/",
+            "https://www.themoviedb.org/person/206905-jeremy-allen-white",
+            "https://en.wikipedia.org/wiki/Jeremy_Allen_White",
+            "https://www.lemonde.fr/en/m-le-mag/article/2026/10/19/jeremy-allen-white-honesty-as-a-trademark_6758745_117.html"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Jeremy Strong",
+          "name": "Jeremy Strong",
+          "birthDate": "1978-12-25",
+          "birthYear": 1978,
+          "nationalityPrimary": "Estadounidense",
+          "image": "/people/jeremy-strong-nm0834989.jpg",
+          "imdbId": "nm0834989",
+          "imdbUrl": "https://www.imdb.com/name/nm0834989/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Strong.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q15854232",
+            "https://www.imdb.com/name/nm0834989/",
+            "https://www.themoviedb.org/person/239271-jeremy-strong"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        }
+      ],
+      "sources": [
+        "https://www.rottentomatoes.com/m/the_social_reckoning",
+        "https://www.cinemark.com.ar/pelicula/el-poder-de-la-red"
+      ]
+    },
+    {
+      "slug": "buenas-vibraciones-2026",
+      "path": "src/data/movies/buenas-vibraciones-2026.json",
+      "action": "add",
+      "title": "Buenas vibraciones",
+      "year": 2026,
+      "originalTitle": "Pour le plaisir",
+      "duplicateCheck": {
+        "slug": "buenas-vibraciones-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/buenas-vibraciones-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "FR",
+        "sources": [
+          "https://www.rottentomatoes.com/m/good_vibes_only",
+          "https://agendadecine.com/pelicula/buenas-vibraciones"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://www.imdb.com/fr/title/tt38607784/ratings/",
+        "corroboration": "https://www.justwatch.com/ar/pelicula/el-placer-es-mio-2026",
+        "raw": 5.8,
+        "scale": 10,
+        "metric": "IMDb audience; página localizada indexada y campo IMDb de JustWatch",
+        "votes": "314 en página indexada; 479 en JustWatch",
+        "normalized": 6,
+        "final": 6,
+        "note": "RT Good Vibes Only sin porcentaje de público; se continúa a IMDb, sin sustituirlo por crítica. El título AR se toma del exhibidor, no del nombre localizado por JustWatch."
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Atlas Patio Bullrich",
+            "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "18:20",
+            "originalTime": "18:00",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=610&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Patio Bullrich",
+            "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "22:20",
+            "originalTime": "22:00",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=610&fecha=2026-10-22"
+          }
+        ],
+        "justwatch": {
+          "url": "https://www.justwatch.com/ar/pelicula/el-placer-es-mio-2026",
+          "offers": [
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=610",
+              "package": {
+                "clearName": "Atlas Cines"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/buenas-vibraciones",
+              "package": {
+                "clearName": "Cinemark"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6222",
+              "package": {
+                "clearName": "Showcase Cinemas"
+              }
+            }
+          ]
+        }
+      },
+      "taxonomy": {
+        "category": "Comedia romantica",
+        "genres": [
+          "Comedia",
+          "Romance"
+        ],
+        "subgenres": [
+          "RomCom"
+        ],
+        "musical": false,
+        "war": false,
+        "note": "La premisa no tiene números musicales como forma narrativa ni guerra como conflicto central.",
+        "sources": [
+          "https://www.rottentomatoes.com/m/good_vibes_only",
+          "https://agendadecine.com/pelicula/buenas-vibraciones"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2026/buenas-vibraciones-2026.webp",
+        "source": "https://m.media-amazon.com/images/M/MV5BNGY3ZGU2ODItYzM0Mi00ZDQwLWE5NTEtZDA3NWQwZGRjM2JmXkEyXkFqcGc@._V1_.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "WYN31t_2pfU",
+        "url": "https://www.youtube.com/watch?v=WYN31t_2pfU",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "Reem Kherici",
+          "name": "Reem Kherici",
+          "birthDate": "1983-02-13",
+          "birthYear": 1983,
+          "nationalityPrimary": "Francesa",
+          "image": "/people/reem-kherici-nm3372724.jpg",
+          "imdbId": "nm3372724",
+          "imdbUrl": "https://www.imdb.com/name/nm3372724/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Reem%20Kherici%20(cropped).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q3423028",
+            "https://www.imdb.com/name/nm3372724/",
+            "https://www.themoviedb.org/person/583687-reem-kherici"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Alexandra Lamy",
+          "name": "Alexandra Lamy",
+          "birthDate": "1971-10-14",
+          "birthYear": 1971,
+          "nationalityPrimary": "Francesa",
+          "image": "/people/alexandra-lamy-nm0484005.jpg",
+          "imdbId": "nm0484005",
+          "imdbUrl": "https://www.imdb.com/name/nm0484005/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandra%20Lamy%20-%20Tournage%20%C3%A0%20Estaing%20le%2011%20juin%202025%20D.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q457268",
+            "https://www.imdb.com/name/nm0484005/",
+            "https://www.themoviedb.org/person/113617-alexandra-lamy"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "François Cluzet",
+          "name": "François Cluzet",
+          "birthDate": "1955-09-21",
+          "birthYear": 1955,
+          "nationalityPrimary": "Francés",
+          "image": "/people/francois-cluzet-nm0167388.jpg",
+          "imdbId": "nm0167388",
+          "imdbUrl": "https://www.imdb.com/name/nm0167388/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FrancoisCluzet-StudioHarcourt-1987.png?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q600051",
+            "https://www.imdb.com/name/nm0167388/",
+            "https://www.themoviedb.org/person/33161-fran-ois-cluzet"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        }
+      ],
+      "sources": [
+        "https://www.rottentomatoes.com/m/good_vibes_only",
+        "https://agendadecine.com/pelicula/buenas-vibraciones"
+      ]
+    },
+    {
+      "slug": "heidi-el-rescate-del-lince-2025",
+      "path": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "action": "add",
+      "title": "Heidi: El rescate del lince",
+      "year": 2025,
+      "originalTitle": "Heidi - Die Legende vom Luchs",
+      "duplicateCheck": {
+        "slug": "heidi-el-rescate-del-lince-2025",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/heidi-el-rescate-del-lince-2025.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "DE, ES, BE",
+        "sources": [
+          "https://www.studio100film.com/en/catalog/heidi-rescue-of-the-lynx/",
+          "https://sede.mcu.gob.es/CatalogoICAA/info/51424/0/60/262.pdf",
+          "https://www.visionkino.de/fileadmin/user_upload/filmtipps/begleitmaterial/heidi_die_legende_vom_luchs_unterrichtsmaterialien.pdf"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://www.justwatch.com/ar/pelicula/heidi-to-the-rescue",
+        "raw": 6.4,
+        "scale": 10,
+        "metric": "IMDb audience as reported by JustWatch",
+        "votes": 337,
+        "normalized": 6,
+        "confidenceCeiling": 8,
+        "final": 6,
+        "note": "RT sin porcentaje de público. IMDb directo 403; cifra indirecta, sin posibilidad de 9/10. Watchmode 6.6/10 no reemplaza la fuente seleccionada ni se promedia."
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "12:40",
+            "originalTime": "12:20",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=612&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "17:00",
+            "originalTime": "16:40",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=612&fecha=2026-10-22"
+          }
+        ],
+        "justwatch": {
+          "url": "https://www.justwatch.com/ar/pelicula/heidi-to-the-rescue",
+          "offers": [
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=612",
+              "package": {
+                "clearName": "Atlas Cines"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/heidi-el-rescate-del-lince",
+              "package": {
+                "clearName": "Cinemark"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6224",
+              "package": {
+                "clearName": "Showcase Cinemas"
+              }
+            }
+          ]
+        }
+      },
+      "taxonomy": {
+        "category": "Animacion",
+        "genres": [
+          "Animación",
+          "Aventura",
+          "Familia"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "note": "La premisa no tiene números musicales como forma narrativa ni guerra como conflicto central.",
+        "sources": [
+          "https://www.studio100film.com/en/catalog/heidi-rescue-of-the-lynx/",
+          "https://sede.mcu.gob.es/CatalogoICAA/info/51424/0/60/262.pdf",
+          "https://www.visionkino.de/fileadmin/user_upload/filmtipps/begleitmaterial/heidi_die_legende_vom_luchs_unterrichtsmaterialien.pdf"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2025/heidi-el-rescate-del-lince-2025.webp",
+        "source": "https://www.selecta-vision.com/wp-content/uploads/2025/05/Poster-Heidi-1440x2048.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "DZ9WlXl50Ek",
+        "url": "https://www.youtube.com/watch?v=DZ9WlXl50Ek",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "Tobias Schwarz",
+          "name": "Tobias Schwarz",
+          "aliases": [
+            "Toby Schwarz"
+          ],
+          "image": "/people/tobias-schwarz-nm1954503.jpg",
+          "imdbId": "nm1954503",
+          "imdbUrl": "https://www.imdb.com/name/nm1954503/",
+          "remoteImageUrl": "https://www.filmportal.de/sites/default/files/image/2025-06/schwarz-tobias_portrait-02.jpg",
+          "referenceUrls": [
+            "https://www.filmportal.de/en/person/tobias-schwarz_9be1c3ac18dd9b1ae040007f01007f6c",
+            "https://www.imdb.com/name/nm1954503/",
+            "https://www.studio100film.com/en/catalog/heidi-rescue-of-the-lynx/"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "filmportal-imdb-verified"
+        },
+        {
+          "credit": "Max Giermann",
+          "name": "Max Giermann",
+          "birthDate": "1975-10-24",
+          "birthYear": 1975,
+          "nationalityPrimary": "Alemán",
+          "image": "/people/max-giermann-nm2591117.jpg",
+          "imdbId": "nm2591117",
+          "imdbUrl": "https://www.imdb.com/name/nm2591117/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Grimme%20Preis%202013%20Max%20Giermann%202.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q1912577",
+            "https://www.imdb.com/name/nm2591117/",
+            "https://www.themoviedb.org/person/56600-max-giermann"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Richard van Weyden",
+          "name": "Richard van Weyden",
+          "birthDate": "1966-04-22",
+          "birthYear": 1966,
+          "nationalityPrimary": "Alemán",
+          "image": "/people/richard-van-weyden-nm1311821.jpg",
+          "imdbId": "nm1311821",
+          "imdbUrl": "https://www.imdb.com/name/nm1311821/",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/idnZUcSzeNXuWDaC5O5NDJrc2xX.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q21899404",
+            "https://www.imdb.com/name/nm1311821/",
+            "https://www.themoviedb.org/person/1186438-richard-van-weyden"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-tmdb-cache"
+        }
+      ],
+      "sources": [
+        "https://www.studio100film.com/en/catalog/heidi-rescue-of-the-lynx/",
+        "https://sede.mcu.gob.es/CatalogoICAA/info/51424/0/60/262.pdf",
+        "https://www.visionkino.de/fileadmin/user_upload/filmtipps/begleitmaterial/heidi_die_legende_vom_luchs_unterrichtsmaterialien.pdf"
+      ]
+    },
+    {
+      "slug": "que-dios-perdona-a-todos-2026",
+      "path": "src/data/movies/que-dios-perdona-a-todos-2026.json",
+      "action": "add",
+      "title": "Que Dios perdona a todos",
+      "year": 2026,
+      "originalTitle": "...che Dio perdona a tutti",
+      "duplicateCheck": {
+        "slug": "que-dios-perdona-a-todos-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/que-dios-perdona-a-todos-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "IT",
+        "sources": [
+          "https://movieplayer.it/film/che-dio-perdona-a-tutti_65852/",
+          "https://www.commissionefilmcei.it/film/che-dio-perdona-a-tutti/"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://www.justwatch.com/ar/pelicula/que-dios-perdona-a-todos",
+        "corroboration": "https://www.imdb.com/title/tt38681843/",
+        "raw": 6.5,
+        "scale": 10,
+        "metric": "IMDb audience as reported by JustWatch",
+        "votes": 379,
+        "normalized": 7,
+        "confidenceCeiling": 8,
+        "final": 7,
+        "note": "Búsqueda RT sin agregado de público utilizable; IMDb indexado muestra 6.6/322 en una captura anterior. Ambas cifras redondean a 7; se registra el campo actual consultado en JustWatch."
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "15:40",
+            "originalTime": "15:20",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=613&fecha=2026-10-22"
+          }
+        ],
+        "justwatch": {
+          "url": "https://www.justwatch.com/ar/pelicula/que-dios-perdona-a-todos",
+          "offers": [
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=613",
+              "package": {
+                "clearName": "Atlas Cines"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/que-dios-perdona-a-todos",
+              "package": {
+                "clearName": "Cinemark"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6223",
+              "package": {
+                "clearName": "Showcase Cinemas"
+              }
+            }
+          ]
+        }
+      },
+      "taxonomy": {
+        "category": "Comedia",
+        "genres": [
+          "Comedia",
+          "Romance",
+          "Drama"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "note": "La premisa no tiene números musicales como forma narrativa ni guerra como conflicto central.",
+        "sources": [
+          "https://movieplayer.it/film/che-dio-perdona-a-tutti_65852/",
+          "https://www.commissionefilmcei.it/film/che-dio-perdona-a-tutti/"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2026/que-dios-perdona-a-todos-2026.webp",
+        "source": "https://m.media-amazon.com/images/M/MV5BZjQ4YjY5MWUtMTk0Ny00NmNkLWI1NmMtZGE1ZTMzOGMzMmMzXkEyXkFqcGc@._V1_.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "I7RlwXTqpKI",
+        "url": "https://www.youtube.com/watch?v=I7RlwXTqpKI",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "Pierfrancesco Diliberto",
+          "name": "Pierfrancesco Diliberto",
+          "birthDate": "1972-06-04",
+          "birthYear": 1972,
+          "nationalityPrimary": "Italiano",
+          "image": "/people/pierfrancesco-diliberto-nm5068576.jpg",
+          "imdbId": "nm5068576",
+          "imdbUrl": "https://www.imdb.com/name/nm5068576/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pif%20(November%202014).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q3904894",
+            "https://www.imdb.com/name/nm5068576/",
+            "https://www.themoviedb.org/person/1274996-pif",
+            "https://movieplayer.it/film/che-dio-perdona-a-tutti_65852/"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache",
+          "aliases": [
+            "Pif"
+          ]
+        },
+        {
+          "credit": "Pierfrancesco Diliberto",
+          "name": "Pierfrancesco Diliberto",
+          "birthDate": "1972-06-04",
+          "birthYear": 1972,
+          "nationalityPrimary": "Italiano",
+          "image": "/people/pierfrancesco-diliberto-nm5068576.jpg",
+          "imdbId": "nm5068576",
+          "imdbUrl": "https://www.imdb.com/name/nm5068576/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pif%20(November%202014).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q3904894",
+            "https://www.imdb.com/name/nm5068576/",
+            "https://www.themoviedb.org/person/1274996-pif",
+            "https://movieplayer.it/film/che-dio-perdona-a-tutti_65852/"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache",
+          "aliases": [
+            "Pif"
+          ]
+        },
+        {
+          "credit": "Giusy Buscemi",
+          "name": "Giusy Buscemi",
+          "birthDate": "1993-04-13",
+          "birthYear": 1993,
+          "nationalityPrimary": "Italiana",
+          "image": "/people/giusy-buscemi-nm5275309.jpg",
+          "imdbId": "nm5275309",
+          "imdbUrl": "https://www.imdb.com/name/nm5275309/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Giusy%20Buscemi%20at%2081st%20Venice%20International%20Film%20Festival%20(cropped2).jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q568216",
+            "https://www.imdb.com/name/nm5275309/",
+            "https://www.themoviedb.org/person/1488760-giusy-buscemi"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Carlos Hipólito",
+          "name": "Carlos Hipólito",
+          "birthDate": "1956",
+          "birthYear": 1956,
+          "nationalityPrimary": "Español",
+          "image": "/people/carlos-hipolito-nm0386176.jpg",
+          "imdbId": "nm0386176",
+          "imdbUrl": "https://www.imdb.com/name/nm0386176/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlos%20Hip%C3%B3lito.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q5750591",
+            "https://www.imdb.com/name/nm0386176/",
+            "https://www.themoviedb.org/person/585725-carlos-hipolito"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        }
+      ],
+      "sources": [
+        "https://movieplayer.it/film/che-dio-perdona-a-tutti_65852/",
+        "https://www.commissionefilmcei.it/film/che-dio-perdona-a-tutti/"
+      ]
+    },
+    {
+      "slug": "terror-en-el-amazonas-2026",
+      "path": "src/data/movies/terror-en-el-amazonas-2026.json",
+      "action": "add",
+      "title": "Terror en el Amazonas",
+      "year": 2026,
+      "originalTitle": "Beware Boiúna",
+      "duplicateCheck": {
+        "slug": "terror-en-el-amazonas-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/terror-en-el-amazonas-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "CO, DE, US",
+        "sources": [
+          "https://www.rottentomatoes.com/m/beware_boiuna",
+          "https://sede.mcu.gob.es/CatalogoICAA/Peliculas/Detalle?Pelicula=213126"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://www.rottentomatoes.com/m/beware_boiuna",
+        "raw": 67,
+        "scale": 100,
+        "metric": "RT Popcornmeter",
+        "votes": "50+ verified",
+        "normalized": 7,
+        "final": 7
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "22:50",
+            "originalTime": "22:30",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=614&fecha=2026-10-22"
+          }
+        ],
+        "justwatch": {
+          "url": "https://www.justwatch.com/ar/pelicula/boiuna-la-leyenda-del-amazonas",
+          "offers": [
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=614",
+              "package": {
+                "clearName": "Atlas Cines"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/terror-en-el-amazonas",
+              "package": {
+                "clearName": "Cinemark"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6221",
+              "package": {
+                "clearName": "Showcase Cinemas"
+              }
+            }
+          ]
+        }
+      },
+      "taxonomy": {
+        "category": "Terror",
+        "genres": [
+          "Terror",
+          "Thriller",
+          "Aventura"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "note": "La premisa no tiene números musicales como forma narrativa ni guerra como conflicto central.",
+        "sources": [
+          "https://www.rottentomatoes.com/m/beware_boiuna",
+          "https://sede.mcu.gob.es/CatalogoICAA/Peliculas/Detalle?Pelicula=213126"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2026/terror-en-el-amazonas-2026.webp",
+        "source": "https://m.media-amazon.com/images/M/MV5BMDQxZDM1NGYtOTlmMS00ZDUxLWJlNDEtZjRiMGIyNzZmM2U0XkEyXkFqcGc@._V1_.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "aYWVKp0StP8",
+        "url": "https://www.youtube.com/watch?v=aYWVKp0StP8",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "Mike P. Nelson",
+          "name": "Mike P. Nelson",
+          "birthDate": "1982-12-18",
+          "birthYear": 1982,
+          "nationalityPrimary": "Estadounidense",
+          "image": "/people/mike-p-nelson-nm2298645.jpg",
+          "imdbId": "nm2298645",
+          "imdbUrl": "https://www.imdb.com/name/nm2298645/",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/wVK5bqU88avx8mYN2EBfJNzWIww.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q108659667",
+            "https://www.imdb.com/name/nm2298645/",
+            "https://www.allocine.fr/personne/fichepersonne_gen_cpersonne%3D633325.html",
+            "https://www.themoviedb.org/person/1039364-mike-p-nelson"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-tmdb-cache"
+        },
+        {
+          "credit": "Jessica Rothe",
+          "name": "Jessica Rothe",
+          "birthDate": "1987-05-28",
+          "birthYear": 1987,
+          "nationalityPrimary": "Estadounidense",
+          "image": "/people/jessica-rothe-nm1557329.jpg",
+          "imdbId": "nm1557329",
+          "imdbUrl": "https://www.imdb.com/name/nm1557329/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica%20Rothe%20by%20Gage%20Skidmore.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q31833598",
+            "https://www.imdb.com/name/nm1557329/",
+            "https://www.themoviedb.org/person/1427680-jessica-rothe"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Kiana Madeira",
+          "name": "Kiana Madeira",
+          "birthDate": "1992-11-04",
+          "birthYear": 1992,
+          "nationalityPrimary": "Canadiense",
+          "image": "/people/kiana-madeira-nm2854112.jpg",
+          "imdbId": "nm2854112",
+          "imdbUrl": "https://www.imdb.com/name/nm2854112/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiana%20Madeira%2002.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q955739",
+            "https://www.imdb.com/name/nm2854112/",
+            "https://www.themoviedb.org/person/142115-kiana-madeira"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Logan Marshall-Green",
+          "name": "Logan Marshall-Green",
+          "birthDate": "1976-11-01",
+          "birthYear": 1976,
+          "nationalityPrimary": "Estadounidense",
+          "image": "/people/logan-marshall-green-nm1334869.jpg",
+          "imdbId": "nm1334869",
+          "imdbUrl": "https://www.imdb.com/name/nm1334869/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/LoganMarshallGreen-byPhilipRomano.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q472084",
+            "https://www.imdb.com/name/nm1334869/",
+            "https://www.themoviedb.org/person/130253-logan-marshall-green"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        }
+      ],
+      "sources": [
+        "https://www.rottentomatoes.com/m/beware_boiuna",
+        "https://sede.mcu.gob.es/CatalogoICAA/Peliculas/Detalle?Pelicula=213126"
+      ]
+    },
+    {
+      "slug": "queres-ser-mi-hijo-2026",
+      "path": "src/data/movies/queres-ser-mi-hijo-2026.json",
+      "action": "add",
+      "title": "¿Querés ser mi hijo?",
+      "year": 2026,
+      "originalTitle": "¿Querés ser mi hijo?",
+      "duplicateCheck": {
+        "slug": "queres-ser-mi-hijo-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/queres-ser-mi-hijo-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "AR, UY",
+        "sources": [
+          "https://www.timeout.com/es/buenos-aires/wanda-nara-queres-ser-mi-hijo-agustin-bernasconi-hernan-guerschuny",
+          "https://cinenacional.com/pelicula/queres-ser-mi-hijo",
+          "https://www.imdb.com/title/tt46665036/"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://otroscines.com/post/critica-de-queres-ser-mi-hijo-pelicula-de-hernan-guerschuny-con-wanda-nara-y-agustin-bernasconi",
+        "corroboration": "https://www.filmaffinity.com/ar/film862335.html",
+        "raw": 2,
+        "scale": 5,
+        "metric": "Diego Batlle, crítico individual",
+        "votes": "1 crítica, no agregado",
+        "normalized": 4,
+        "confidenceCeiling": 8,
+        "final": 4,
+        "note": "RT sin ficha numérica; IMDb tt46665036 identificado por sugerencia oficial, ratings 403 sin número recuperado; TMDb 1779106 sin valor en JustWatch; Letterboxd sin agregado verificable, Filmweb sin coincidencia y Metacritic sin resultado/acceso robots. Watchmode agotado por título/TMDb y por el nuevo IMDb ID. No se usa la película mexicana tt27391124 (2023)."
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "18:20",
+            "originalTime": "18:00",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "20:30",
+            "originalTime": "20:10",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "22:40",
+            "originalTime": "22:20",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "14:00",
+            "originalTime": "13:40",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+          },
+          {
+            "venue": "Atlas Caballito",
+            "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+            "date": "2026-10-22",
+            "time": "16:10",
+            "originalTime": "15:50",
+            "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+          }
+        ],
+        "justwatch": {
+          "url": "https://www.justwatch.com/ar/pelicula/queres-ser-mi-hijo-2026",
+          "offers": [
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=609",
+              "package": {
+                "clearName": "Atlas Cines"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/queres-ser-mi-hijo",
+              "package": {
+                "clearName": "Cinemark"
+              }
+            },
+            {
+              "monetizationType": "CINEMA",
+              "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6203",
+              "package": {
+                "clearName": "Showcase Cinemas"
+              }
+            }
+          ]
+        }
+      },
+      "taxonomy": {
+        "category": "Comedia romantica",
+        "genres": [
+          "Comedia",
+          "Romance"
+        ],
+        "subgenres": [
+          "RomCom"
+        ],
+        "musical": false,
+        "war": false,
+        "note": "La premisa no tiene números musicales como forma narrativa ni guerra como conflicto central.",
+        "sources": [
+          "https://www.timeout.com/es/buenos-aires/wanda-nara-queres-ser-mi-hijo-agustin-bernasconi-hernan-guerschuny",
+          "https://cinenacional.com/pelicula/queres-ser-mi-hijo",
+          "https://www.imdb.com/title/tt46665036/"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2026/queres-ser-mi-hijo-2026.webp",
+        "source": "https://m.media-amazon.com/images/M/MV5BYzdiOTRmYzMtNGFhMy00ODJkLWFhZjgtNGRmN2VmMmZkMDE0XkEyXkFqcGc@._V1_.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "AQdSYSSypFQ",
+        "url": "https://www.youtube.com/watch?v=AQdSYSSypFQ",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "Hernán Guerschuny",
+          "name": "Hernán Guerschuny",
+          "birthDate": "1973-12-01",
+          "birthYear": 1973,
+          "nationalityPrimary": "Argentino",
+          "image": "/people/hernan-guerschuny-nm0346331.jpg",
+          "imdbId": "nm0346331",
+          "imdbUrl": "https://www.imdb.com/name/nm0346331/",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/lZXlQ4ou691JkeyvUzPvOr8uCTQ.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q111090396",
+            "https://www.imdb.com/name/nm0346331/",
+            "https://www.themoviedb.org/person/1316923-hernan-guerschuny"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-tmdb-cache"
+        },
+        {
+          "credit": "Wanda Nara",
+          "name": "Wanda Nara",
+          "birthDate": "1986-12-09",
+          "birthYear": 1986,
+          "nationalityPrimary": "Argentina",
+          "image": "/people/wanda-nara-nm4701559.jpg",
+          "imdbId": "nm4701559",
+          "imdbUrl": "https://www.imdb.com/name/nm4701559/",
+          "remoteImageUrl": "https://m.media-amazon.com/images/M/MV5BYjRlODRjZWItMWM4NC00MTNmLThjOWYtZDM5ZTE1YmUzMjM5XkEyXkFqcGc@._V1_.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q7967127",
+            "https://www.imdb.com/name/nm4701559/",
+            "https://www.themoviedb.org/person/3417338-wanda-nara"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Agustín Bernasconi",
+          "name": "Agustín Bernasconi",
+          "birthDate": "1996-10-15",
+          "birthYear": 1996,
+          "nationalityPrimary": "Argentino",
+          "image": "/people/agustin-bernasconi-nm5762153.jpg",
+          "imdbId": "nm5762153",
+          "imdbUrl": "https://www.imdb.com/name/nm5762153/",
+          "remoteImageUrl": "https://m.media-amazon.com/images/M/MV5BZjRmNGNiZTQtMDg4Ni00MDU4LWFkMmYtMTYyYzdkOTQ0M2IyXkEyXkFqcGc@._V1_.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q24037847",
+            "https://www.imdb.com/name/nm5762153/",
+            "https://www.themoviedb.org/person/1376657-agustin-bernasconi"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Jean Pierre Noher",
+          "name": "Jean Pierre Noher",
+          "birthDate": "1956-05-05",
+          "birthYear": 1956,
+          "nationalityPrimary": "Argentino",
+          "image": "/people/jean-pierre-noher-nm0634120.jpg",
+          "imdbId": "nm0634120",
+          "imdbUrl": "https://www.imdb.com/name/nm0634120/",
+          "remoteImageUrl": "https://img.alternativateatral.com/scripts/es/fotos/personas/resumen/16/000264616.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q6171367",
+            "https://www.imdb.com/name/nm0634120/",
+            "https://www.themoviedb.org/person/105738-jean-pierre-noher",
+            "https://www.alternativateatral.com/persona11152-jean-pierre-noher"
+          ],
+          "lastVerifiedAt": "2026-09-26",
+          "source": "wikidata-imdb-cache",
+          "sex": "masculino",
+          "sexSourceUrl": "https://www.wikidata.org/wiki/Q6171367",
+          "sexVerifiedAt": "2026-10-11"
+        },
+        {
+          "credit": "Charo López",
+          "name": "Charo López",
+          "birthDate": "1980-05-06",
+          "birthYear": 1980,
+          "nationalityPrimary": "Argentina",
+          "image": "/people/charo-lopez-nm10038300.jpg",
+          "imdbId": "nm10038300",
+          "imdbUrl": "https://www.imdb.com/name/nm10038300/",
+          "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/g4NOfEwhBlcj3qGEDNe0IPR6RGD.jpg",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q28518664",
+            "https://www.imdb.com/name/nm10038300/",
+            "https://www.themoviedb.org/person/258049-charo-lopez"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-tmdb-cache"
+        }
+      ],
+      "sources": [
+        "https://www.timeout.com/es/buenos-aires/wanda-nara-queres-ser-mi-hijo-agustin-bernasconi-hernan-guerschuny",
+        "https://cinenacional.com/pelicula/queres-ser-mi-hijo",
+        "https://www.imdb.com/title/tt46665036/"
+      ]
+    },
+    {
+      "slug": "susana-rinaldi-libre-2025",
+      "path": "src/data/movies/susana-rinaldi-libre-2025.json",
+      "action": "add",
+      "title": "Susana Rinaldi, libre",
+      "year": 2025,
+      "originalTitle": "Susana Rinaldi, libre",
+      "duplicateCheck": {
+        "slug": "susana-rinaldi-libre-2025",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/susana-rinaldi-libre-2025.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "country": {
+        "value": "AR, FR",
+        "sources": [
+          "https://cinenacional.com/pelicula/susana-rinaldi-libre",
+          "https://somosciclico.com/nota/susana-rinaldi-libre-el-documental-de-isabel-marcenaro-estrena-el-22-de-octubre/",
+          "https://cineteca.com.ar/wp-content/uploads/2025/03/Catalogo-26-Bafici.pdf"
+        ]
+      },
+      "score": {
+        "retrievalDateAR": "2026-10-22",
+        "url": "https://www.escribiendocine.com/noticias/2026/10/20/19460-critica-de-susana-rinaldi-libre-el-tango-como-postura-politica-y-memoria-activa",
+        "raw": 7,
+        "scale": 10,
+        "metric": "Juan Pablo Russo, crítico individual",
+        "votes": "1 crítica, no agregado",
+        "normalized": 7,
+        "confidenceCeiling": 8,
+        "final": 7,
+        "note": "Sin agregado público numérico recuperado en RT, IMDb (incluida sugerencia oficial), TMDb/Letterboxd/Filmweb/Metacritic. JustWatch no encuentra identidad exacta y Watchmode tampoco. El 7.0 está visible en la reseña profesional; no se deriva de adjetivos."
+      },
+      "platform": {
+        "label": "Cine",
+        "offerType": "CINEMA",
+        "functions": [
+          {
+            "venue": "Gaumont",
+            "locality": "Av. Rivadavia 1635, CABA",
+            "date": "2026-10-22",
+            "time": "18:45",
+            "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=22/10/2026"
+          },
+          {
+            "venue": "Gaumont",
+            "locality": "Av. Rivadavia 1635, CABA",
+            "date": "2026-10-23",
+            "time": "18:45",
+            "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+          },
+          {
+            "venue": "Gaumont",
+            "locality": "Av. Rivadavia 1635, CABA",
+            "date": "2026-10-24",
+            "time": "18:45",
+            "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=24/10/2026"
+          },
+          {
+            "venue": "Gaumont",
+            "locality": "Av. Rivadavia 1635, CABA",
+            "date": "2026-10-25",
+            "time": "18:45",
+            "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=25/10/2026"
+          },
+          {
+            "venue": "Gaumont",
+            "locality": "Av. Rivadavia 1635, CABA",
+            "date": "2026-10-26",
+            "time": "18:45",
+            "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=26/10/2026"
+          },
+          {
+            "venue": "Gaumont",
+            "locality": "Av. Rivadavia 1635, CABA",
+            "date": "2026-10-27",
+            "time": "18:45",
+            "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=27/10/2026"
+          },
+          {
+            "venue": "Gaumont",
+            "locality": "Av. Rivadavia 1635, CABA",
+            "date": "2026-10-28",
+            "time": "18:45",
+            "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=28/10/2026"
+          }
+        ],
+        "justwatch": {
+          "status": "Sin coincidencia exacta",
+          "url": "https://www.justwatch.com/ar/buscar?q=Susana%20Rinaldi%20libre"
+        }
+      },
+      "taxonomy": {
+        "category": "Documental",
+        "genres": [
+          "Documental",
+          "Música",
+          "Biografía"
+        ],
+        "subgenres": [],
+        "musical": false,
+        "war": false,
+        "note": "Tema musical/documental, sin estructura de musical narrativo.",
+        "sources": [
+          "https://cinenacional.com/pelicula/susana-rinaldi-libre",
+          "https://somosciclico.com/nota/susana-rinaldi-libre-el-documental-de-isabel-marcenaro-estrena-el-22-de-octubre/",
+          "https://cineteca.com.ar/wp-content/uploads/2025/03/Catalogo-26-Bafici.pdf"
+        ]
+      },
+      "poster": {
+        "local": "assets/posters/2025/susana-rinaldi-libre-2025.webp",
+        "source": "https://img.cinenacional.com/insecure/rs%3Afill%3A1920%3A%3A1/g%3Asm/q%3A78/plain/local%3A%2F%2F%2Fcinenacional%2Fposters%2F196783%2Fposter.jpg",
+        "visualVerified": true
+      },
+      "trailer": {
+        "id": "bzLwzjT3LM0",
+        "url": "https://www.youtube.com/watch?v=bzLwzjT3LM0",
+        "oEmbed": "passed in no-skip audit",
+        "search": "HTTP 302 auxiliary search warning where recorded"
+      },
+      "people": [
+        {
+          "credit": "Isabel Marcenaro",
+          "name": "Isabel Marcenaro",
+          "aliases": [
+            "Isabel Marcenaro Bouter"
+          ],
+          "image": "/people/isabel-marcenaro.jpg",
+          "remoteImageUrl": "https://img.cinenacional.com/insecure/rs%3Afill%3A1920%3A%3A1/g%3Asm/q%3A78/plain/local%3A%2F%2F%2Fcinenacional%2Fpeople%2F196785%2F8cdc037a-21e0-4bf8-988c-4a23a0daaed2.jpg",
+          "referenceUrls": [
+            "https://cinenacional.com/persona/isabel-marcenaro",
+            "https://cinenacional.com/pelicula/susana-rinaldi-libre",
+            "https://www.film-documentaire.fr/4DACTION/w_liste_generique/C_83730_F"
+          ],
+          "birthYear": 1959,
+          "nationalityPrimary": "Argentina",
+          "lastVerifiedAt": "2026-10-22",
+          "source": "cinenacional-verified"
+        },
+        {
+          "credit": "Susana Rinaldi",
+          "name": "Susana Rinaldi",
+          "birthDate": "1935-12-25",
+          "birthYear": 1935,
+          "nationalityPrimary": "Argentina",
+          "image": "/people/susana-rinaldi-nm0727402.jpg",
+          "imdbId": "nm0727402",
+          "imdbUrl": "https://www.imdb.com/name/nm0727402/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Susana%20Rinaldi%20en%2025%20de%20mayo-%20Fiesta%20patria%20popular%20en%20la%20plaza%20de%20todos.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q3049517",
+            "https://www.imdb.com/name/nm0727402/",
+            "https://www.themoviedb.org/person/1919427-susana-rinaldi"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        },
+        {
+          "credit": "Ligia Piro",
+          "name": "Ligia Piro",
+          "birthDate": "1970-08-01",
+          "birthYear": 1970,
+          "nationalityPrimary": "Argentina",
+          "image": "/people/ligia-piro-nm1099399.jpg",
+          "imdbId": "nm1099399",
+          "imdbUrl": "https://www.imdb.com/name/nm1099399/",
+          "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ligia%20Piro%20en%20el%20Teatro%20Cervantes.jpg?width=1200",
+          "referenceUrls": [
+            "https://www.wikidata.org/wiki/Q5976225",
+            "https://www.imdb.com/name/nm1099399/"
+          ],
+          "lastVerifiedAt": "2026-10-22",
+          "source": "wikidata-imdb-cache"
+        }
+      ],
+      "sources": [
+        "https://cinenacional.com/pelicula/susana-rinaldi-libre",
+        "https://somosciclico.com/nota/susana-rinaldi-libre-el-documental-de-isabel-marcenaro-estrena-el-22-de-octubre/",
+        "https://cineteca.com.ar/wp-content/uploads/2025/03/Catalogo-26-Bafici.pdf"
+      ]
+    }
+  ],
+  "removals": [
+    {
+      "slug": "bajo-tus-pies-2025",
+      "path": "src/data/movies/bajo-tus-pies-2025.json",
+      "action": "remove-cine",
+      "title": "Bajo tus pies",
+      "after": [
+        "Otras plataformas"
+      ],
+      "scorePreserved": 4,
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/bajo-tus-pies",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=577",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          }
+        ]
+      },
+      "evidence": "Atlas sin complejos/funciones actuales para el título, contraste con Cinemark, Showcase, Multiplex, Cinemacenter y fuentes provinciales. Listas históricas y ofertas CINEMA de JustWatch no sustituyen horarios vigentes.",
+      "nextEvent": {
+        "date": "2026-10-31",
+        "time": "21:00",
+        "venue": "Planetario UNLP, La Plata",
+        "url": "https://gritos.planetario.unlp.edu.ar/2026/index.html",
+        "decision": "Festival del 30/10 al 1/11 aún no iniciado al 22/10; no acredita continuidad de la exhibición finalizada. Revalidar al comenzar."
+      }
+    },
+    {
+      "slug": "vertigo-2-punto-muerto-2026",
+      "path": "src/data/movies/vertigo-2-punto-muerto-2026.json",
+      "action": "remove-cine",
+      "title": "Vértigo 2: Punto muerto",
+      "after": [
+        "Otras plataformas"
+      ],
+      "scorePreserved": 6,
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/vertigo-2-punto-muerto",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=589",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/vertigo-2-punto-muerto",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6112",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      },
+      "evidence": "Atlas sin complejos/funciones actuales para el título, contraste con Cinemark, Showcase, Multiplex, Cinemacenter y fuentes provinciales. Listas históricas y ofertas CINEMA de JustWatch no sustituyen horarios vigentes."
+    },
+    {
+      "slug": "quiero-tu-sexo-2026",
+      "path": "src/data/movies/quiero-tu-sexo-2026.json",
+      "action": "remove-cine",
+      "title": "Quiero tu sexo",
+      "after": [
+        "Otras plataformas"
+      ],
+      "scorePreserved": 6,
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/quiero-tu-sexo",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=606",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/quiero-tu-sexo",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5858-QUIERO-TU-SEXO---2D-SUB-SALA-GRAND-CRU",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6192",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      },
+      "evidence": "Atlas sin complejos/funciones actuales para el título, contraste con Cinemark, Showcase, Multiplex, Cinemacenter y fuentes provinciales. Listas históricas y ofertas CINEMA de JustWatch no sustituyen horarios vigentes.",
+      "conflict": {
+        "url": "https://quebutaca.com/pelicula/cmv1kxkgi01ff4c6ts6a260i7",
+        "claim": "Atlas Alcorta 22/10 20:20 desde Única Cartelera",
+        "official": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=194&codPelicula=606&fecha=2026-10-22",
+        "officialResult": [],
+        "decision": "No se conserva Cine sin función verificable en el exhibidor; se explicita la discrepancia."
+      }
+    },
+    {
+      "slug": "los-juegos-del-hambre-2012",
+      "path": "src/data/movies/los-juegos-del-hambre-2012.json",
+      "action": "remove-cine",
+      "title": "Los Juegos del Hambre",
+      "after": [
+        "Apple TV"
+      ],
+      "scorePreserved": 8,
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/los-juegos-del-hambre",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/25522447",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/25522447",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=599",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5840-LOS-JUEGOS-DEL-HAMBRE---2D-CAST-RE-ESTRENO-SALA-GRAND-CRU",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6169",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8ebbd4b3-5921-b021-2f14-b7a7246c3d89",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8ebbd4b3-5921-b021-2f14-b7a7246c3d89",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre/umc.cmc.2p1170vnfy62s4bgkeul0ls7c?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A916419059",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre/umc.cmc.2p1170vnfy62s4bgkeul0ls7c?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A916419059",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8ebbd4b3-5921-b021-2f14-b7a7246c3d89",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8ebbd4b3-5921-b021-2f14-b7a7246c3d89",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre/umc.cmc.2p1170vnfy62s4bgkeul0ls7c?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A916419059",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre/umc.cmc.2p1170vnfy62s4bgkeul0ls7c?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A916419059",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      },
+      "evidence": "Atlas sin complejos/funciones actuales para el título, contraste con Cinemark, Showcase, Multiplex, Cinemacenter y fuentes provinciales. Listas históricas y ofertas CINEMA de JustWatch no sustituyen horarios vigentes."
+    },
+    {
+      "slug": "los-juegos-del-hambre-en-llamas-2013",
+      "path": "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+      "action": "remove-cine",
+      "title": "Los Juegos del Hambre: En llamas",
+      "after": [
+        "Apple TV"
+      ],
+      "scorePreserved": 8,
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/los-juegos-del-hambre-en-llamas",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/24378738",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/24378738",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=600",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5834-LOS-JUEGOS-DEL-HAMBRE-EN-LLAMAS---2D-CAST-RE-ESTRENO",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6170",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f5a750f-526c-44d2-8884-ae484b3e9dec",
+            "package": {
+              "clearName": "Sony One Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f5a750f-526c-44d2-8884-ae484b3e9dec",
+            "package": {
+              "clearName": "Sony One Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f5a750f-526c-44d2-8884-ae484b3e9dec",
+            "package": {
+              "clearName": "Lionsgate+ Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f5a750f-526c-44d2-8884-ae484b3e9dec",
+            "package": {
+              "clearName": "Lionsgate+ Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-en-llamas/umc.cmc.4o2jxld04hsouemrfot9075zf?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A808328030",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-en-llamas/umc.cmc.4o2jxld04hsouemrfot9075zf?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A808328030",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-en-llamas/umc.cmc.4o2jxld04hsouemrfot9075zf?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A808328030",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-en-llamas/umc.cmc.4o2jxld04hsouemrfot9075zf?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A808328030",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      },
+      "evidence": "Atlas sin complejos/funciones actuales para el título, contraste con Cinemark, Showcase, Multiplex, Cinemacenter y fuentes provinciales. Listas históricas y ofertas CINEMA de JustWatch no sustituyen horarios vigentes."
+    },
+    {
+      "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+      "path": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+      "action": "remove-cine",
+      "title": "Los Juegos del Hambre: Sinsajo Parte 1",
+      "after": [
+        "Apple TV"
+      ],
+      "scorePreserved": 7,
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/los-juegos-del-hambre-sinsajo-parte-1",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/24378739",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/24378739",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=601",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/los-juegos-del-hambre-sinsajo-parte-1-2014",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5846-LOS-JUEGOS-DEL-HAMBRE-SINSAJO---PARTE-2---2D-CAST-RE-ESTRENO-SALA-GRAND-CRU",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6171",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a64e7077-9e2a-4c9d-956a-697b8d098848",
+            "package": {
+              "clearName": "Sony One Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a64e7077-9e2a-4c9d-956a-697b8d098848",
+            "package": {
+              "clearName": "Sony One Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a64e7077-9e2a-4c9d-956a-697b8d098848",
+            "package": {
+              "clearName": "Lionsgate+ Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a64e7077-9e2a-4c9d-956a-697b8d098848",
+            "package": {
+              "clearName": "Lionsgate+ Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---parte-1/umc.cmc.mpg70roi67930oo7b35cl39v?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A938538816",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---parte-1/umc.cmc.mpg70roi67930oo7b35cl39v?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A938538816",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---parte-1/umc.cmc.mpg70roi67930oo7b35cl39v?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A938538816",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---parte-1/umc.cmc.mpg70roi67930oo7b35cl39v?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A938538816",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---parte-1/umc.cmc.mpg70roi67930oo7b35cl39v?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A938538816",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---parte-1/umc.cmc.mpg70roi67930oo7b35cl39v?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A938538816",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      },
+      "evidence": "Atlas sin complejos/funciones actuales para el título, contraste con Cinemark, Showcase, Multiplex, Cinemacenter y fuentes provinciales. Listas históricas y ofertas CINEMA de JustWatch no sustituyen horarios vigentes."
+    },
+    {
+      "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+      "path": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+      "action": "remove-cine",
+      "title": "Los Juegos del Hambre: Sinsajo Parte 2",
+      "after": [
+        "Apple TV"
+      ],
+      "scorePreserved": 7,
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/los-juegos-del-hambre-sinsajo-parte-2",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/11228267",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/11228267",
+            "package": {
+              "clearName": "MovistarTV"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=602",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/los-juegos-del-hambre-sinsajo-parte-2-2015",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5838-LOS-JUEGOS-DEL-HAMBRE-SINSAJO-PARTE-2---2D-CAST-RE-ESTRENO",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6172",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.71a878a6-d736-442a-a08c-713ace32283a",
+            "package": {
+              "clearName": "Sony One Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.71a878a6-d736-442a-a08c-713ace32283a",
+            "package": {
+              "clearName": "Sony One Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a94c4aee-1a2a-4b4d-b065-3034f363161d",
+            "package": {
+              "clearName": "Lionsgate+ Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a94c4aee-1a2a-4b4d-b065-3034f363161d",
+            "package": {
+              "clearName": "Lionsgate+ Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---el-final/umc.cmc.37ja072ck7v26jgowe1soqbdy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1055440915",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---el-final/umc.cmc.37ja072ck7v26jgowe1soqbdy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1055440915",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---el-final/umc.cmc.37ja072ck7v26jgowe1soqbdy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1055440915",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---el-final/umc.cmc.37ja072ck7v26jgowe1soqbdy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1055440915",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---el-final/umc.cmc.37ja072ck7v26jgowe1soqbdy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1055440915",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-juegos-del-hambre-sinsajo---el-final/umc.cmc.37ja072ck7v26jgowe1soqbdy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1055440915",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      },
+      "evidence": "Atlas sin complejos/funciones actuales para el título, contraste con Cinemark, Showcase, Multiplex, Cinemacenter y fuentes provinciales. Listas históricas y ofertas CINEMA de JustWatch no sustituyen horarios vigentes."
+    }
+  ],
+  "pending": [
+    {
+      "title": "Militante",
+      "year": 2026,
+      "slug": "militante-2026",
+      "duplicateCheck": {
+        "slug": "militante-2026",
+        "outputPath": "C:/WebsitePeliculas/src/data/movies/militante-2026.json",
+        "duplicates": [],
+        "dryRun": true
+      },
+      "venue": "Sala Norita Cortiñas, CABA",
+      "date": "2026-10-22",
+      "time": "19:00",
+      "sources": [
+        "https://cinenacional.com/pelicula/militante",
+        "https://elnacionaldematanza.com.ar/2026/10/18/militante-el-nuevo-documental-de-federico-sosa-llega-al-espacio-incaa-de-ate-cultura/",
+        "https://agendadecine.com/pelicula/militante"
+      ],
+      "blockingField": "Sólo un participante principal documentado: Pablo Ayala. Federico Sosa es director; Aylén López, Emiliano Serra y el resto identificado son personal técnico. No se los carga como intérpretes.",
+      "contingency": "Búsquedas nominales por película/año y director en Cine Nacional, prensa de estreno/Salamanca, IMDb sugerencias, TMDb, Letterboxd, RT, Filmweb y Metacritic. Watchmode sin coincidencia. No apareció un segundo participante verificable; no se crea ficha parcial."
+    }
+  ],
+  "continuities": [
+    {
+      "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+      "title": "Adolescencia, sexo y muerte en Campamento Miasma",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Apple TV"
+      ],
+      "functions": [
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-27",
+          "time": "22:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=27/10/2026"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/adolescencia-sexo-y-muerte-en-campamento-miasma",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://mubi.com/films/teenage-sex-and-death-at-camp-miasma",
+            "package": {
+              "clearName": "MUBI"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://mubi.com/films/teenage-sex-and-death-at-camp-miasma",
+            "package": {
+              "clearName": "MUBI"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://mubi.com/films/teenage-sex-and-death-at-camp-miasma",
+            "package": {
+              "clearName": "MUBI"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ff4e3b4e-4196-49f5-846e-f51dd4a1196c",
+            "package": {
+              "clearName": "MUBI Amazon Channel"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ff4e3b4e-4196-49f5-846e-f51dd4a1196c",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ff4e3b4e-4196-49f5-846e-f51dd4a1196c",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/adolescencia-sexo-y-muerte-en-campamento-miasma/umc.cmc.qkgurxl0g39q5teqnt96a2xe?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6795283436",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/adolescencia-sexo-y-muerte-en-campamento-miasma/umc.cmc.qkgurxl0g39q5teqnt96a2xe?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6795283436",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/adolescencia-sexo-y-muerte-en-campamento-miasma/umc.cmc.qkgurxl0g39q5teqnt96a2xe?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6795283436",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "annemarie-2026",
+      "title": "Annemarie",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "MALBA",
+          "locality": "Av. Figueroa Alcorta 3415, CABA",
+          "date": "2026-10-23",
+          "time": "20:00",
+          "url": "https://malba.org.ar/evento/annemarie/",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/annemarie",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=591",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "avengers-endgame-2019",
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Disney Plus"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Flores",
+          "locality": "Rivera Indarte 44, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "15:00",
+          "originalTime": "14:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=197&codPelicula=546&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/vengadores-endgame",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.disneyplus.com/browse/entity-b39aa962-be56-4b09-a536-98617031717f",
+            "package": {
+              "clearName": "Disney Plus"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.disneyplus.com/browse/entity-b39aa962-be56-4b09-a536-98617031717f",
+            "package": {
+              "clearName": "Disney Plus"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.disneyplus.com/browse/entity-b39aa962-be56-4b09-a536-98617031717f",
+            "package": {
+              "clearName": "Disney Plus"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "buenas-vibraciones-2026",
+      "title": "Buenas vibraciones",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Patio Bullrich",
+          "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "18:20",
+          "originalTime": "18:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=610&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Patio Bullrich",
+          "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:20",
+          "originalTime": "22:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=610&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "cars-2006",
+      "title": "Cars",
+      "year": 2006,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Disney Plus"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "12:30",
+          "originalTime": "12:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=593&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "17:30",
+          "originalTime": "17:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=593&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/cars",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.disneyplus.com/browse/entity-9c1b0ec2-2e4e-4717-89fb-bdf3a45523df",
+            "package": {
+              "clearName": "Disney Plus"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.disneyplus.com/browse/entity-9c1b0ec2-2e4e-4717-89fb-bdf3a45523df",
+            "package": {
+              "clearName": "Disney Plus"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.disneyplus.com/browse/entity-9c1b0ec2-2e4e-4717-89fb-bdf3a45523df",
+            "package": {
+              "clearName": "Disney Plus"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=593",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5824-CARS---2D-CAST-RE-ESTRENO",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6159",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "clayface-2026",
+      "title": "Clayface",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "13:30",
+          "originalTime": "13:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "15:50",
+          "originalTime": "15:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "18:10",
+          "originalTime": "17:50",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "20:30",
+          "originalTime": "20:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:50",
+          "originalTime": "22:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "12:20",
+          "originalTime": "12:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "17:00",
+          "originalTime": "16:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:00",
+          "originalTime": "21:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=608&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "cordobeces-la-pelicula-2026",
+      "title": "CordobeCes: La película",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-22",
+          "time": "16:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=22/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-23",
+          "time": "16:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-24",
+          "time": "16:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=24/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-25",
+          "time": "16:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=25/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-26",
+          "time": "16:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=26/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-28",
+          "time": "16:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=28/10/2026"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/cordobeces-la-pelicula",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/cordobeses-la-pelicula",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5857-CORDOBECES-LA-PELICULA---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "coyote-vs-acme-2026",
+      "title": "Coyote vs. Acme",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "15:20",
+          "originalTime": "15:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=547&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/coyote-vs-acme",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=547",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/coyote-vs-acme",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5736-COYOTE-VS-ACME---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5984",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "desobediente-2026",
+      "title": "Desobediente",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-23",
+          "time": "20:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "digger-2026",
+      "title": "Digger",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "20:00",
+          "originalTime": "19:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=582&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:40",
+          "originalTime": "22:20",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=582&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/digger-2026",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=582",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/digger",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6101",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "el-corazon-de-la-bestia-2026",
+      "title": "El corazón de la bestia",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "20:30",
+          "originalTime": "20:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=578&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/en-el-corazon-de-la-bestia",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=578",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/el-corazon-de-la-bestia",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5785-EL-CORAZON-DE-LA-BESTIA---2D-SUB",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6083",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "el-poder-de-la-red-2026",
+      "title": "El poder de la red",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "15:00",
+          "originalTime": "14:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=611&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "17:30",
+          "originalTime": "17:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=611&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "20:00",
+          "originalTime": "19:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=611&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "el-tren-fluvial-2026",
+      "title": "El tren fluvial",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "MALBA",
+          "locality": "Av. Figueroa Alcorta 3415, CABA",
+          "date": "2026-10-24",
+          "time": "20:00",
+          "url": "https://malba.org.ar/evento/el-tren-fluvial/",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/el-tren-fluvial",
+        "offers": []
+      }
+    },
+    {
+      "slug": "escondida-en-mi-cabeza-2026",
+      "title": "Escondida en mi cabeza",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Cine Teatro Helios",
+          "locality": "Ciudad Jardín, El Palomar, Morón, PBA",
+          "date": "2026-10-22",
+          "time": "20:00",
+          "url": "https://apiv2.gaf.adro.studio/movie/45/6716a18a3cda1aad8fd1eddaaa257112"
+        },
+        {
+          "venue": "Cine Teatro Helios",
+          "locality": "Ciudad Jardín, El Palomar, Morón, PBA",
+          "date": "2026-10-28",
+          "time": "18:00",
+          "url": "https://apiv2.gaf.adro.studio/movie/45/6716a18a3cda1aad8fd1eddaaa257112"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/escondida-en-mi-cabeza",
+        "offers": []
+      }
+    },
+    {
+      "slug": "escuela-de-monstruos-2026",
+      "title": "Escuela de Monstruos",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "13:50",
+          "originalTime": "13:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=604&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/monstruosa-mia",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-escuela-de-monstruos",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6194",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "guardianes-del-museo-2-2026",
+      "title": "Guardianes del museo 2",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Cinema Los Gallegos Shopping",
+          "locality": "Mar del Plata, PBA",
+          "date": "2026-10-24",
+          "time": "14:50",
+          "url": "https://www.cinemacenter.com.ar/ficha/5812-GUARDIANES-DEL-MUSEO-2---2D-CAST",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/gatos-en-el-museo-2-tesoros-de-egipto",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=586",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5812-GUARDIANES-DEL-MUSEO-2---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6114",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "hangar-rojo-2026",
+      "title": "Hangar Rojo",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Sala Norita Cortiñas / ATE Cultura",
+          "locality": "Belgrano 2527, CABA",
+          "date": "2026-10-23",
+          "time": "19:00",
+          "url": "https://agendadecine.com/ciclos-y-festivales/octubre-en-sala-norita-cortinas-espacio-incaa-ate-nacional",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/hangar-rojo",
+        "offers": []
+      }
+    },
+    {
+      "slug": "heidi-el-rescate-del-lince-2025",
+      "title": "Heidi: El rescate del lince",
+      "year": 2025,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "12:40",
+          "originalTime": "12:20",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=612&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "17:00",
+          "originalTime": "16:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=612&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "hope-el-primer-impacto-2026",
+      "title": "Hope: El primer impacto",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Liniers",
+          "locality": "Coronel Ramon L. Falcon 7145, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "18:10",
+          "originalTime": "17:50",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=198&codPelicula=594&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/hope-2026",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=594",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/hope-el-primer-impacto",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5829-HOPE-EL-PRIMER-IMPACTO---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6157",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-caida-de-la-ballena-2026",
+      "title": "La caída de la ballena",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "14:40",
+          "originalTime": "14:20",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=605&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "18:10",
+          "originalTime": "17:50",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=605&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/whalefall",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=605",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-caida-de-la-ballena",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5853-LA-CAIDA-DE-LA-BALLENA---2D-SUB",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6191",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-casa-2025",
+      "title": "La casa",
+      "year": 2025,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "20:50",
+          "originalTime": "20:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=595&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "23:00",
+          "originalTime": "22:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=595&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/la-casa-2025",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=595",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6156",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-invitacion-2026",
+      "title": "La invitación",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Apple TV"
+      ],
+      "functions": [
+        {
+          "venue": "Cosmos UBA",
+          "locality": "Av. Corrientes 2046, CABA",
+          "date": "2026-10-22",
+          "time": "17:20",
+          "url": "https://www.foquito.ar/",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/the-invite",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=526",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-invitacion",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5927",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-invitacion/umc.cmc.3sbug5lvmkkj1z2j3myx2g7wd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6799351036",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-isla-olvidada-2026",
+      "title": "La isla olvidada",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "14:40",
+          "originalTime": "14:20",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=580&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/la-isla-olvidada",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=580",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-isla-olvidada",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5782-LA-ISLA-OLVIDADA---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6082",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+      "title": "La noche del demonio: Están entre nosotros",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Apple TV"
+      ],
+      "functions": [
+        {
+          "venue": "Cinema Ocho",
+          "locality": "La Plata, PBA",
+          "date": "2026-10-22",
+          "time": "16:10 / 22:50",
+          "url": "https://www.cinemalaplata.com/Titulos/Index/7390",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/insidious-capitulo-6",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5955",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cc4b05fc-b781-4926-9bd9-8e59a34c423b",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/la-noche-del-demonio-estan-entre-nosotros/umc.cmc.121yf5fklhjls3vtl4danbq9e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796830768",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-odisea-2026",
+      "title": "La Odisea",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "17:40",
+          "originalTime": "17:20",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=501&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/la-odisea",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=501",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-odisea",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5875",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-vida-es-asi-2025",
+      "title": "La vida es así",
+      "year": 2025,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Patio Bullrich",
+          "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "16:50",
+          "originalTime": "16:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=596&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Patio Bullrich",
+          "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "19:10",
+          "originalTime": "18:50",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=596&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/la-vida-es-asi",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=596",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6158",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "lo-dejamos-aca-2026",
+      "title": "Lo dejamos acá",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Netflix"
+      ],
+      "functions": [
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-22",
+          "time": "14:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=22/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-22",
+          "time": "17:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=22/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-22",
+          "time": "21:30",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=22/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-23",
+          "time": "14:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-23",
+          "time": "17:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-23",
+          "time": "21:30",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-24",
+          "time": "14:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=24/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-24",
+          "time": "17:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=24/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-24",
+          "time": "21:30",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=24/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-25",
+          "time": "14:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=25/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-25",
+          "time": "17:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=25/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-25",
+          "time": "21:30",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=25/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-26",
+          "time": "14:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=26/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-26",
+          "time": "22:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=26/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-27",
+          "time": "14:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=27/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-28",
+          "time": "14:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=28/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-28",
+          "time": "22:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=28/10/2026"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/lo-dejamos-aca",
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.netflix.com/title/82027563",
+            "package": {
+              "clearName": "Netflix"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.netflix.com/title/82027563",
+            "package": {
+              "clearName": "Netflix"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "lo-que-trajo-la-tormenta-2025",
+      "title": "Lo que trajo la tormenta",
+      "year": 2025,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Sala Norita Cortiñas / ATE Cultura",
+          "locality": "Belgrano 2527, CABA",
+          "date": "2026-10-30",
+          "time": "19:00",
+          "url": "https://agendadecine.com/ciclos-y-festivales/octubre-en-sala-norita-cortinas-espacio-incaa-ate-nacional",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "madre-siniestra-2026",
+      "title": "Madre siniestra",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "21:10",
+          "originalTime": "20:50",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=597&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "23:20",
+          "originalTime": "23:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=597&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/la-otra-madre",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=597",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/madre-siniestra",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5826-MADRE-SINIESTRA---2D-SUB",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6154",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "paw-patrol-la-dino-pelicula-2026",
+      "title": "PAW Patrol: La Dino Película",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Flow"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "13:00",
+          "originalTime": "12:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=528&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/paw-patrol-3",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=528",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7f2e332e-ed9a-4eb2-9bec-42038297f624",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7f2e332e-ed9a-4eb2-9bec-42038297f624",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7f2e332e-ed9a-4eb2-9bec-42038297f624",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7f2e332e-ed9a-4eb2-9bec-42038297f624",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7f2e332e-ed9a-4eb2-9bec-42038297f624",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7f2e332e-ed9a-4eb2-9bec-42038297f624",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "pepita-la-pistolera-2026",
+      "title": "Pepita la pistolera",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-22",
+          "time": "15:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=22/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-23",
+          "time": "15:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-24",
+          "time": "15:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=24/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-25",
+          "time": "15:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=25/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-26",
+          "time": "15:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=26/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-27",
+          "time": "15:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=27/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-28",
+          "time": "15:00",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=28/10/2026"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/pepita-la-pistolera-2026",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=558",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "que-dios-perdona-a-todos-2026",
+      "title": "Que Dios perdona a todos",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "15:40",
+          "originalTime": "15:20",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=613&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "queres-ser-mi-hijo-2026",
+      "title": "¿Querés ser mi hijo?",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "18:20",
+          "originalTime": "18:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "20:30",
+          "originalTime": "20:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:40",
+          "originalTime": "22:20",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "14:00",
+          "originalTime": "13:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "16:10",
+          "originalTime": "15:50",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=609&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "resident-evil-noche-cero-2026",
+      "title": "Resident Evil: Noche Cero",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "18:50",
+          "originalTime": "18:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=569&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/resident-evil-2026",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=569",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-resident-evil-noche-cero",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5773-RESIDENT-EVIL-NOCHE-CERO---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6060",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "spider-man-brand-new-day-2026",
+      "title": "Spider-Man: Un Nuevo Día",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Apple TV"
+      ],
+      "functions": [
+        {
+          "venue": "Cinema Ocho / Cinema San Martín",
+          "locality": "La Plata, PBA",
+          "date": "2026-10-22",
+          "time": "13:45 / 18:20 / 22:40",
+          "url": "https://www.cinemalaplata.com/Titulos/Index/7297",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/untitled-spider-man-sequel",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=497",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/spider-man-un-nuevo-dia",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5845",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+            "package": {
+              "clearName": "Amazon Video"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "street-fighter-2026",
+      "title": "Street Fighter",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "12:50",
+          "originalTime": "12:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=598&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "15:00",
+          "originalTime": "14:40",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=598&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "19:30",
+          "originalTime": "19:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=598&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:30",
+          "originalTime": "22:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=598&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/street-fighter",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/street-fighter",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "su-propio-infierno-2026",
+      "title": "Su propio infierno",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Cinépolis Houssay, MUBI Fest",
+          "locality": "Av. Córdoba 2135, CABA",
+          "date": "2026-10-23",
+          "time": "14:20",
+          "url": "https://www.timeout.com/es/buenos-aires/mubi-fest-2026-cinepolis-houssay",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/su-propio-infierno",
+        "offers": []
+      }
+    },
+    {
+      "slug": "susana-rinaldi-libre-2025",
+      "title": "Susana Rinaldi, libre",
+      "year": 2025,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-22",
+          "time": "18:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=22/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-23",
+          "time": "18:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=23/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-24",
+          "time": "18:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=24/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-25",
+          "time": "18:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=25/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-26",
+          "time": "18:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=26/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-27",
+          "time": "18:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=27/10/2026"
+        },
+        {
+          "venue": "Gaumont",
+          "locality": "Av. Rivadavia 1635, CABA",
+          "date": "2026-10-28",
+          "time": "18:45",
+          "url": "https://apifront.cinexo.com.ar/mobile/consultas/peliculas/PeliculasConFuncionesYHorarios?idComplejo=372001&fecha=28/10/2026"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "terror-en-el-amazonas-2026",
+      "title": "Terror en el Amazonas",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:50",
+          "originalTime": "22:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=614&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "the-others-2001",
+      "title": "Los otros",
+      "year": 2001,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine",
+        "Apple TV"
+      ],
+      "functions": [
+        {
+          "venue": "Cinema City",
+          "locality": "La Plata, PBA",
+          "date": "2026-10-22",
+          "time": "12:00 / 16:35 / 21:10",
+          "url": "https://www.cinemalaplata.com/Titulos/Index/8514",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {}
+    },
+    {
+      "slug": "tiempos-de-ilusion-2026",
+      "title": "Tiempos de ilusión",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Patio Bullrich",
+          "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "16:30",
+          "originalTime": "16:10",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=607&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Patio Bullrich",
+          "locality": "Posadas 1245, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "21:20",
+          "originalTime": "21:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=195&codPelicula=607&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/tiempos-de-ilusion",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=607",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/tiempos-de-ilusion",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6193",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "tres-adioses-2025",
+      "title": "Tres adioses",
+      "year": 2025,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Cosmos UBA",
+          "locality": "Av. Corrientes 2046, CABA",
+          "date": "2026-10-22",
+          "time": "19:10",
+          "url": "https://www.foquito.ar/",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/tres-adioses",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=574",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "una-quinta-en-portugal-2025",
+      "title": "Una quinta en Portugal",
+      "year": 2025,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Cine Lorca",
+          "locality": "Av. Corrientes 1428, CABA",
+          "date": "2026-10-22",
+          "time": "13:55 / 16:10",
+          "url": "https://agendadecine.com/pelicula/una-quinta-en-portugal",
+          "verification": "Grilla nominal fechada; ver límites de fuentes en reporte."
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/una-quinta-portuguesa",
+        "offers": []
+      }
+    },
+    {
+      "slug": "verity-la-sombra-de-un-engano-2026",
+      "title": "Verity: La sombra de un engaño",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "12:20",
+          "originalTime": "12:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=583&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "14:50",
+          "originalTime": "14:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=583&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "17:20",
+          "originalTime": "17:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=583&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "19:50",
+          "originalTime": "19:30",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=583&fecha=2026-10-22"
+        },
+        {
+          "venue": "Atlas Caballito",
+          "locality": "Av. Rivadavia 5071, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:20",
+          "originalTime": "22:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=191&codPelicula=583&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/verity",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=583",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/verity-la-sombra-de-un-engano",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5801-VERITY-LA-SOMBRA-DE-UN-ENGA-O---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6102",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "slug": "yo-narciso-2026",
+      "title": "Yo, Narciso",
+      "year": 2026,
+      "dateAR": "2026-10-22",
+      "decision": "conservar",
+      "platforms": [
+        "Cine"
+      ],
+      "functions": [
+        {
+          "venue": "Atlas Flores",
+          "locality": "Rivera Indarte 44, Cdad. Autónoma de Buenos Aires",
+          "date": "2026-10-22",
+          "time": "22:20",
+          "originalTime": "22:00",
+          "url": "https://www.atlascines.com/Peliculas/GetCacheFuncionesComplejoPeliculaFecha?complejoId=197&codPelicula=529&fecha=2026-10-22"
+        }
+      ],
+      "justwatch": {
+        "url": "https://www.justwatch.com/ar/pelicula/yo-narciso",
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=529",
+            "package": {
+              "clearName": "Atlas Cines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/yo-narciso",
+            "package": {
+              "clearName": "Cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5934",
+            "package": {
+              "clearName": "Showcase Cinemas"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "people": {
+    "added": 21,
+    "retainedNewCreditAppearances": 29,
+    "retainedNewIdentities": 28,
+    "omissions": [
+      {
+        "name": "Aizea Roca Berridi",
+        "role": "Codirección Heidi",
+        "reason": "Identidad verificada en ICAA, presskit y filmportal; sin retrato individual seguro tras búsqueda web/IMDb (nm14331470 sin imagen), filmportal y perfiles de producción. Se retiene dirección principal Tobias Schwarz del presskit; no se crea persona incompleta."
+      }
+    ],
+    "repairs": "Retratos nuevos/revalidados inspeccionados, imágenes de Naomi Ackie y Mikey Madison reemplazan miniaturas históricas. Se restaura el retrato individual aprobado de Jean Pierre Noher frente al reemplazo grupal del enriquecedor. Se reemplazan Agustín Bernasconi y Wanda Nara por retratos IMDb atribuibles. Jeremy Allen White: nacionalidad estadounidense y fecha 17/02/1991 contrastadas con biografía pública; no se conserva Francés/28 de febrero."
+  },
+  "notes": [
+    "Los otros reutiliza the-others-2001; cambia título AR y fecha de reestreno al 22/10, conserva score 8, créditos y Apple TV transaccional verificado.",
+    "No se agregan películas de conciertos cuyo estreno es posterior al 22/10 ni se modifica Próximos estrenos.",
+    "Cosmos y Lorca: horarios cruzados con agendas nominales fechadas; las páginas oficiales presentaron fallos/ausencia de grilla legible. No se afirma compra verificada. Quebutaca confunde metadata de La invitación con el film de 1982: se descarta esa metadata, se corrobora la película de Olivia Wilde en Foquito y Agenda.",
+    "MUBI Fest conserva Su propio infierno por funciones fechadas del 23/25 en Houssay, con programación pública contrastada; no por un listado nacional.",
+    "El spreadsheet de INCAA aún exponía 15–21/10 al consultar: no se usó como prueba de continuidad para la nueva semana.",
+    "Clayface: ausencia de escenas poscréditos contrastada, pero no se fuerza un campo que el auditor reserva a su lista de superhéroes; dirección/categoría de terror y la crítica se mantienen.",
+    "Otras plataformas en tres bajas expresa ausencia de proveedor confirmado; no promete que hayan llegado a streaming. Los cuatro Juegos del Hambre conservan Apple TV RENT/BUY según JustWatch AR; no se confunden canales extra de Prime o Movistar con suscripción incluida a Prime.",
+    "Las 8 sinopsis, reseñas y guías de siete campos fueron escritas desde cero por IA, sin copiar ni parafrasear de cerca prosa publicada. Sin cambios en código de sitio, UI, Share, Comunidad, reacciones o ediciones automáticas."
+  ]
+}

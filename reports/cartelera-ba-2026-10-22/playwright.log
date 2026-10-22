@@ -1,0 +1,76 @@
+
+Running 8 tests using 6 workers
+
+  ok 1 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:89:1 › streaming keeps recent catalog uploads even when their original release is older (8.7s)
+  ok 5 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:70:1 › current streaming releases retain their platform and open their own trailer dialog (9.2s)
+  ok 6 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:42:1 › current cinema releases open their trailer in a dialog on demand (11.1s)
+  ok 8 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:89:1 › streaming keeps recent catalog uploads even when their original release is older (10.4s)
+  ok 2 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:42:1 › current cinema releases open their trailer in a dialog on demand (31.4s)
+  ok 7 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:70:1 › current streaming releases retain their platform and open their own trailer dialog (16.4s)
+  x  4 [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine (39.8s)
+  x  3 [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine (40.7s)
+
+  1) [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cinema-release-carousel-Ca-2d7da-nt-catalog-film-marked-Cine-desktop-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cinema-release-carousel-Ca-2d7da-nt-catalog-film-marked-Cine-desktop-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cinema-release-carousel-Ca-2d7da-nt-catalog-film-marked-Cine-desktop-chromium\error-context.md
+
+  2) [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\cinema-release-carousel-Ca-2d7da-nt-catalog-film-marked-Cine-mobile-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\cinema-release-carousel-Ca-2d7da-nt-catalog-film-marked-Cine-mobile-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\cinema-release-carousel-Ca-2d7da-nt-catalog-film-marked-Cine-mobile-webkit\error-context.md
+
+  2 failed
+    [desktop-chromium] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine
+    [mobile-webkit] › tests\e2e\cinema-release-carousel.spec.ts:29:1 › Cartelera renders every current catalog film marked Cine
+  6 passed (44.8s)
+(node:15544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18304) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13084) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18304) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13084) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

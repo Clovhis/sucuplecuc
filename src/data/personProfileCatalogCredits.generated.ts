@@ -2573,6 +2573,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "fragmentada-2023"
   ],
   "jean-pierre-noher": [
+    "queres-ser-mi-hijo-2026",
     "la-caja-azul-2026"
   ],
   "jeff-bridges": [
@@ -2673,6 +2674,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-hurt-locker-2008"
   ],
   "jeremy-strong": [
+    "el-poder-de-la-red-2026",
     "the-apprentice-2024"
   ],
   "jesse-eisenberg": [
@@ -4056,6 +4058,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "shrek-2001"
   ],
   "mikey-madison": [
+    "el-poder-de-la-red-2026",
     "anora-2024"
   ],
   "milagros-mumenthaler": [
@@ -4216,8 +4219,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "nine-2009",
     "australia-2008",
     "la-mancha-humana-2003",
-    "moulin-rouge-2001",
     "the-others-2001",
+    "moulin-rouge-2001",
     "ojos-bien-cerrados-1999",
     "practicamente-magia-1998",
     "el-pacificador-1997",

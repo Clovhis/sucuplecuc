@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-21. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-22. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2385
+Total de peliculas: 2393
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -10,6 +10,7 @@ Total de peliculas: 2385
 | 2026 | ¡Llama a mi agente!: La película | llama-a-mi-agente-la-pelicula-2026 | Comedia | Netflix | +13 |
 | 2026 | ¿Cuál es el precio de la dignidad? | cual-es-el-precio-de-la-dignidad-2026 | Drama | Netflix | +13 |
 | 2026 | ¿Por qué me casé, entonces? | por-que-me-case-entonces-2026 | Comedia | Netflix | +16 |
+| 2026 | ¿Querés ser mi hijo? | queres-ser-mi-hijo-2026 | Comedia romantica | Cine | ATP |
 | 2026 | ¿Quién es Martin Mull? | quien-es-martin-mull-2026 | Documental | Netflix | +16 |
 | 2026 | 23 000 vidas | 23-000-vidas-2026 | Drama | Netflix | +16 |
 | 2026 | 28 Years Later: The Bone Temple | 28-years-later-the-bone-temple-2026 | Terror | HBO Max + Apple TV | +16 |
@@ -38,6 +39,7 @@ Total de peliculas: 2385
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
 | 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
+| 2026 | Buenas vibraciones | buenas-vibraciones-2026 | Comedia romantica | Cine | +18 |
 | 2026 | Cable mortal | cable-mortal-2026 | Thriller | Apple TV + Flow | +16 |
 | 2026 | Cada vez menos extraño | cada-vez-menos-extrano-2026 | Drama | Netflix | +16 |
 | 2026 | Camp Rock 3 | camp-rock-3-2026 | Musical | Disney Plus | ATP |
@@ -46,6 +48,7 @@ Total de peliculas: 2385
 | 2026 | Carrera de Bestias | carrera-de-bestias-2026 | Accion | Prime Video | +16 |
 | 2026 | Chris y Martina: El set decisivo | chris-y-martina-el-set-decisivo-2026 | Documental | Netflix | +18 |
 | 2026 | CIN3 FILI4 | cin3-fili4-2026 | Drama | Otras plataformas | ATP |
+| 2026 | Clayface | clayface-2026 | Terror | Cine | +18 |
 | 2026 | Clika | clika-2026 | Drama | HBO Max | +16 |
 | 2026 | Código: Venganza | codigo-venganza-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Otras plataformas | +16 |
@@ -85,6 +88,7 @@ Total de peliculas: 2385
 | 2026 | El pasajero del diablo | el-pasajero-del-diablo-2026 | Terror | Paramount Plus + Apple TV | +17 |
 | 2026 | El pequeño ninja: El origen | el-pequeno-ninja-el-origen-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | El pez pucheros | el-pez-pucheros-2026 | Animacion | Prime Video + Apple TV | ATP |
+| 2026 | El poder de la red | el-poder-de-la-red-2026 | Drama | Cine | ATP |
 | 2026 | El tren fluvial | el-tren-fluvial-2026 | Drama | Cine | +13 |
 | 2026 | El turno del papá | el-turno-del-papa-2026 | Comedia | Netflix | ATP |
 | 2026 | El último desafío: K2 en invierno | el-ultimo-desafio-k2-en-invierno-2026 | Documental | Apple TV | +13 |
@@ -242,7 +246,8 @@ Total de peliculas: 2385
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Disney Plus | +17 |
 | 2026 | Puella Magi Madoka Magica: Walpurgisnacht Rising | puella-magi-madoka-magica-walpurgisnacht-rising-2026 | Anime | Otras plataformas | +13 |
 | 2026 | Pulp: ¿Qué harías por una canción más? | pulp-que-harias-por-una-cancion-mas-2026 | Documental | Apple TV | +13 |
-| 2026 | Quiero tu sexo | quiero-tu-sexo-2026 | Comedia | Cine | +17 |
+| 2026 | Que Dios perdona a todos | que-dios-perdona-a-todos-2026 | Comedia | Cine | ATP |
+| 2026 | Quiero tu sexo | quiero-tu-sexo-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Red de mentiras | red-de-mentiras-2026 | Thriller | Apple TV | +16 |
 | 2026 | Relajadas y muy peligrosas | relajadas-y-muy-peligrosas-2026 | Comedia | Otras plataformas | +13 |
 | 2026 | Remarkably Bright Creatures | remarkably-bright-creatures-2026 | Drama | Netflix | +13 |
@@ -280,6 +285,7 @@ Total de peliculas: 2385
 | 2026 | Te Extraño, Te Amo | te-extrano-te-amo-2026 | Drama | HBO Max | +13 |
 | 2026 | Te van a matar | te-van-a-matar-2026 | Terror | HBO Max | +16 |
 | 2026 | Tenzing: conquistando el Everest | tenzing-conquistando-el-everest-2026 | Drama | Apple TV | +13 |
+| 2026 | Terror en el Amazonas | terror-en-el-amazonas-2026 | Terror | Cine | +18 |
 | 2026 | Tetracampeones: Brasil volvió a creer | tetracampeones-brasil-volvio-a-creer-2026 | Documental | Netflix | +13 |
 | 2026 | That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea | that-time-i-got-reincarnated-as-a-slime-tears-of-the-azure-sea-2026 | Anime | Otras plataformas | +12 |
 | 2026 | The Amazing Digital Circus: El último acto | the-amazing-digital-circus-el-ultimo-acto-2026 | Animacion | Otras plataformas | +13 |
@@ -306,7 +312,7 @@ Total de peliculas: 2385
 | 2026 | Undertone Frecuencia Maldita | undertone-frecuencia-maldita-2026 | Terror | HBO Max | +16 |
 | 2026 | Ven a volar conmigo | ven-a-volar-conmigo-2026 | Drama | Apple TV | ATP |
 | 2026 | Verity: La sombra de un engaño | verity-la-sombra-de-un-engano-2026 | Thriller | Cine | +17 |
-| 2026 | Vértigo 2: Punto muerto | vertigo-2-punto-muerto-2026 | Thriller | Cine | +13 |
+| 2026 | Vértigo 2: Punto muerto | vertigo-2-punto-muerto-2026 | Thriller | Otras plataformas | +13 |
 | 2026 | Vigilante | vigilante-2026 | Acción | Prime Video | +18 |
 | 2026 | We Bury the Dead | we-bury-the-dead-2026 | Terror | Otras plataformas | +17 |
 | 2026 | WHAM! 10 Days in China | wham-10-days-in-china-2026 | Documental | Apple TV | +13 |
@@ -325,7 +331,7 @@ Total de peliculas: 2385
 | 2025 | Autos, Mota y Rocanrol | autos-mota-y-rocanrol-2025 | Comedia | Prime Video | +15 |
 | 2025 | AVATAR: FUEGO Y CENIZAS | avatar-fuego-y-cenizas-2025 | Ciencia ficcion | Otras plataformas | +13 |
 | 2025 | Back in Action | back-in-action-2025 | Accion | Netflix | +13 |
-| 2025 | Bajo tus pies | bajo-tus-pies-2025 | Terror | Cine | +13 |
+| 2025 | Bajo tus pies | bajo-tus-pies-2025 | Terror | Otras plataformas | +13 |
 | 2025 | Ballerina | ballerina-2025 | Accion | Prime Video | +16 |
 | 2025 | Belén | belen-2025 | Drama | Prime Video | +17 |
 | 2025 | Black Bag | black-bag-2025 | Thriller | HBO Max | +13 |
@@ -364,6 +370,7 @@ Total de peliculas: 2385
 | 2025 | Happy Gilmore 2 | happy-gilmore-2-2025 | Comedia | Netflix | +13 |
 | 2025 | Havoc | havoc-2025 | Accion | Netflix | +16 |
 | 2025 | Heart Eyes | heart-eyes-2025 | Terror | Netflix | +17 |
+| 2025 | Heidi: El rescate del lince | heidi-el-rescate-del-lince-2025 | Animacion | Cine | ATP |
 | 2025 | Homo Argentum | homo-argentum-2025 | Comedia | Disney Plus | +14 |
 | 2025 | How to Train Your Dragon | how-to-train-your-dragon-2025 | Aventura | HBO Max | ATP |
 | 2025 | Incógnito | incognito-2025 | Drama | Flow | +16 |
@@ -422,6 +429,7 @@ Total de peliculas: 2385
 | 2025 | Snow White | snow-white-2025 | Fantasia | Disney Plus | ATP |
 | 2025 | Song Sung Blue - Canción para dos | song-sung-blue-cancion-para-dos-2025 | Musical | HBO Max | ATP |
 | 2025 | Superman | superman-2025 | Accion | HBO Max | +13 |
+| 2025 | Susana Rinaldi, libre | susana-rinaldi-libre-2025 | Documental | Cine | ATP |
 | 2025 | The Accountant 2 | the-accountant-2-2025 | Accion | Prime Video | +16 |
 | 2025 | The Alto Knights: Mafia y poder | the-alto-knights-mafia-y-poder-2025 | Drama | Netflix + HBO Max | +16 |
 | 2025 | The Amateur | the-amateur-2025 | Thriller | Disney Plus | +13 |
@@ -1005,7 +1013,7 @@ Total de peliculas: 2385
 | 2015 | La película de Bob Esponja: Un héroe fuera del agua | la-pelicula-de-bob-esponja-un-heroe-fuera-del-agua-2015 | Animacion | Paramount Plus + Prime Video | ATP |
 | 2015 | La reina del desierto | la-reina-del-desierto-2015 | Drama | Otras plataformas | +13 |
 | 2015 | Langosta | langosta-2015 | Ciencia ficcion | Apple TV | +13 |
-| 2015 | Los Juegos del Hambre: Sinsajo Parte 2 | los-juegos-del-hambre-sinsajo-parte-2-2015 | Ciencia ficcion | Cine + Apple TV | +13 |
+| 2015 | Los Juegos del Hambre: Sinsajo Parte 2 | los-juegos-del-hambre-sinsajo-parte-2-2015 | Ciencia ficcion | Apple TV | +13 |
 | 2015 | Mad Max: Fury Road | mad-max-fury-road-2015 | Accion | Netflix | +16 |
 | 2015 | Minions | minions-2015 | Animacion | HBO Max + Apple TV | ATP |
 | 2015 | Misión rescate | mision-rescate-2015 | Ciencia ficcion | Disney Plus | +13 |
@@ -1054,7 +1062,7 @@ Total de peliculas: 2385
 | 2014 | La gran aventura LEGO | la-gran-aventura-lego-2014 | Animacion | Prime Video + Disney Plus | ATP |
 | 2014 | Las aventuras de Peabody y Sherman | las-aventuras-de-peabody-y-sherman-2014 | Animacion | Apple TV | ATP |
 | 2014 | Los Boxtrolls | los-boxtrolls-2014 | Animacion | Apple TV | +7 |
-| 2014 | Los Juegos del Hambre: Sinsajo Parte 1 | los-juegos-del-hambre-sinsajo-parte-1-2014 | Ciencia ficcion | Cine + Apple TV | +13 |
+| 2014 | Los Juegos del Hambre: Sinsajo Parte 1 | los-juegos-del-hambre-sinsajo-parte-1-2014 | Ciencia ficcion | Apple TV | +13 |
 | 2014 | Los maratones Barkley: La carrera que devora a sus crías | the-barkley-marathons-the-race-that-eats-its-young-2014 | Documental | Prime Video + Apple TV | ATP |
 | 2014 | Los pingüinos de Madagascar | los-pinguinos-de-madagascar-2014 | Animacion | Prime Video + HBO Max | ATP |
 | 2014 | Luna de miel en familia | blended-2014 | Comedia | Apple TV + HBO Max | +13 |
@@ -1101,7 +1109,7 @@ Total de peliculas: 2385
 | 2013 | La noche de la expiación | la-noche-de-la-expiacion-2013 | Terror | HBO Max | +16 |
 | 2013 | Lluvia de hamburguesas 2 | lluvia-de-hamburguesas-2-2013 | Animacion | Prime Video + HBO Max | ATP |
 | 2013 | Los Croods | los-croods-2013 | Animacion | Prime Video + Disney Plus | ATP |
-| 2013 | Los Juegos del Hambre: En llamas | los-juegos-del-hambre-en-llamas-2013 | Ciencia ficcion | Cine + Apple TV | +13 |
+| 2013 | Los Juegos del Hambre: En llamas | los-juegos-del-hambre-en-llamas-2013 | Ciencia ficcion | Apple TV | +13 |
 | 2013 | Malavita | malavita-2013 | Comedia | Apple TV | +16 |
 | 2013 | Man of Steel | man-of-steel-2013 | Accion | Otras plataformas | +13 |
 | 2013 | Mi villano favorito 2 | mi-villano-favorito-2-2013 | Animacion | HBO Max + Apple TV | ATP |
@@ -1148,7 +1156,7 @@ Total de peliculas: 2385
 | 2012 | La vida de Flynn | la-vida-de-flynn-2012 | Drama | Apple TV | +16 |
 | 2012 | Lincoln | lincoln-2012 | Drama | Otras plataformas | +13 |
 | 2012 | Looper | looper-2012 | Ciencia ficcion | Otras plataformas | +17 |
-| 2012 | Los Juegos del Hambre | los-juegos-del-hambre-2012 | Ciencia ficcion | Cine + Apple TV | +13 |
+| 2012 | Los Juegos del Hambre | los-juegos-del-hambre-2012 | Ciencia ficcion | Apple TV | +13 |
 | 2012 | Los miserables | los-miserables-2012 | Musical | Otras plataformas | +13 |
 | 2012 | ParaNorman | paranorman-2012 | Animacion | Otras plataformas | +7 |
 | 2012 | Prometheus | prometheus-2012 | Ciencia ficcion | Netflix | +17 |
@@ -1616,6 +1624,7 @@ Total de peliculas: 2385
 | 2001 | La hora de la araña | la-hora-de-la-arana-2001 | Drama | Otras plataformas | +13 |
 | 2001 | La maldición del escorpión de jade | the-curse-of-the-jade-scorpion-2001 | Comedia | Otras plataformas | +13 |
 | 2001 | La pianista | la-pianista-2001 | Drama | Otras plataformas | +18 |
+| 2001 | Los otros | the-others-2001 | Terror | Cine + Apple TV | +13 |
 | 2001 | Millennium Actress | millennium-actress-2001 | Anime | Otras plataformas | +13 |
 | 2001 | Monsters, Inc. | monsters-inc-2001 | Animacion | Disney Plus | ATP |
 | 2001 | Moulin Rouge! | moulin-rouge-2001 | Romance | Otras plataformas | +13 |
@@ -1627,7 +1636,6 @@ Total de peliculas: 2385
 | 2001 | The Fast and the Furious | the-fast-and-the-furious-2001 | Accion | Otras plataformas | +13 |
 | 2001 | The Lord of the Rings: The Fellowship of the Ring | the-lord-of-the-rings-the-fellowship-of-the-ring-2001 | Aventura | Otras plataformas | +13 |
 | 2001 | The Majestic | the-majestic-2001 | Drama | Apple TV | ATP |
-| 2001 | The Others | the-others-2001 | Terror | Apple TV | +13 |
 | 2001 | The Score (Un golpe maestro) | the-score-un-golpe-maestro-2001 | Thriller | Prime Video + Apple TV | +13 |
 | 2001 | Vanilla Sky | vanilla-sky-2001 | Drama | Paramount Plus | +13 |
 | 2001 | Yo soy Sam | yo-soy-sam-2001 | Drama | Apple TV | +13 |

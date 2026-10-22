@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "clayface-2026",
+    "path": "src/data/movies/clayface-2026.json",
+    "action": "add"
+  },
+  {
+    "slug": "el-poder-de-la-red-2026",
+    "path": "src/data/movies/el-poder-de-la-red-2026.json",
+    "action": "add"
+  },
+  {
+    "slug": "buenas-vibraciones-2026",
+    "path": "src/data/movies/buenas-vibraciones-2026.json",
+    "action": "add"
+  },
+  {
+    "slug": "heidi-el-rescate-del-lince-2025",
+    "path": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+    "action": "add"
+  },
+  {
+    "slug": "que-dios-perdona-a-todos-2026",
+    "path": "src/data/movies/que-dios-perdona-a-todos-2026.json",
+    "action": "add"
+  },
+  {
+    "slug": "terror-en-el-amazonas-2026",
+    "path": "src/data/movies/terror-en-el-amazonas-2026.json",
+    "action": "add"
+  },
+  {
+    "slug": "queres-ser-mi-hijo-2026",
+    "path": "src/data/movies/queres-ser-mi-hijo-2026.json",
+    "action": "add"
+  },
+  {
+    "slug": "susana-rinaldi-libre-2025",
+    "path": "src/data/movies/susana-rinaldi-libre-2025.json",
+    "action": "add"
+  },
+  {
+    "slug": "bajo-tus-pies-2025",
+    "path": "src/data/movies/bajo-tus-pies-2025.json",
+    "action": "remove-cine"
+  },
+  {
+    "slug": "vertigo-2-punto-muerto-2026",
+    "path": "src/data/movies/vertigo-2-punto-muerto-2026.json",
+    "action": "remove-cine"
+  },
+  {
+    "slug": "quiero-tu-sexo-2026",
+    "path": "src/data/movies/quiero-tu-sexo-2026.json",
+    "action": "remove-cine"
+  },
+  {
+    "slug": "los-juegos-del-hambre-2012",
+    "path": "src/data/movies/los-juegos-del-hambre-2012.json",
+    "action": "remove-cine"
+  },
+  {
+    "slug": "los-juegos-del-hambre-en-llamas-2013",
+    "path": "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+    "action": "remove-cine"
+  },
+  {
+    "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+    "path": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+    "action": "remove-cine"
+  },
+  {
+    "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+    "path": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+    "action": "remove-cine"
+  },
+  {
+    "slug": "the-others-2001",
+    "path": "src/data/movies/the-others-2001.json",
+    "action": "restore-cine-reissue"
+  }
+]

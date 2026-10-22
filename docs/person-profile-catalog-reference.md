@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-21. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-22. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4296
+Total de vínculos de películas del catálogo: 4299
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -355,7 +355,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Javier Bardem | `javier-bardem` | /personas/javier-bardem/ | Actor | 6 | 7 |
 | Javier Drolas | `javier-drolas` | /personas/javier-drolas/ | Actor | 2 | 5 |
 | Jazmín Stuart | `jazmin-stuart` | /personas/jazmin-stuart/ | Actriz / Directora / Guionista | 2 | 5 |
-| Jean Pierre Noher | `jean-pierre-noher` | /personas/jean-pierre-noher/ | Actor | 1 | 6 |
+| Jean Pierre Noher | `jean-pierre-noher` | /personas/jean-pierre-noher/ | Actor | 2 | 6 |
 | Jeff Bridges | `jeff-bridges` | /personas/jeff-bridges/ | Actor | 7 | 7 |
 | Jeff Daniels | `jeff-daniels` | /personas/jeff-daniels/ | Actor | 6 | 5 |
 | Jeff Goldblum | `jeff-goldblum` | /personas/jeff-goldblum/ | Actor | 6 | 7 |
@@ -369,7 +369,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jennifer Tilly | `jennifer-tilly` | /personas/jennifer-tilly/ | Actriz | 4 | 7 |
 | Jeremy Irons | `jeremy-irons` | /personas/jeremy-irons/ | Actor | 5 | 5 |
 | Jeremy Renner | `jeremy-renner` | /personas/jeremy-renner/ | Actor | 3 | 7 |
-| Jeremy Strong | `jeremy-strong` | /personas/jeremy-strong/ | Actor | 1 | 7 |
+| Jeremy Strong | `jeremy-strong` | /personas/jeremy-strong/ | Actor | 2 | 7 |
 | Jesse Eisenberg | `jesse-eisenberg` | /personas/jesse-eisenberg/ | Actor | 9 | 6 |
 | Jesse Plemons | `jesse-plemons` | /personas/jesse-plemons/ | Actor | 3 | 6 |
 | Jessica Alba | `jessica-alba` | /personas/jessica-alba/ | Actriz | 3 | 3 |
@@ -549,7 +549,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Michelle Yeoh | `michelle-yeoh` | /personas/michelle-yeoh/ | Actriz | 3 | 4 |
 | Miguel Cohan | `miguel-cohan` | /personas/miguel-cohan/ | Director / Guionista | 2 | 5 |
 | Mike Myers | `mike-myers` | /personas/mike-myers/ | Actor / Guionista / Productor | 4 | 6 |
-| Mikey Madison | `mikey-madison` | /personas/mikey-madison/ | Actriz | 1 | 7 |
+| Mikey Madison | `mikey-madison` | /personas/mikey-madison/ | Actriz | 2 | 7 |
 | Milagros Mumenthaler | `milagros-mumenthaler` | /personas/milagros-mumenthaler/ | Directora / Guionista | 1 | 5 |
 | Miles Teller | `miles-teller` | /personas/miles-teller/ | Actor | 6 | 6 |
 | Milla Jovovich | `milla-jovovich` | /personas/milla-jovovich/ | Actriz | 3 | 4 |

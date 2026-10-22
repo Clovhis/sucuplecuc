@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-22",
+  "branch": "feature/movie-cartelera-ba-2026-10-22",
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "scope": {
+    "candidates": 16,
+    "newMovies": 8,
+    "cinemaRemovals": 7,
+    "existingReissues": 1,
+    "cinemaBefore": 43,
+    "continuities": 36,
+    "cinemaAfter": 45,
+    "catalogTotal": 2393
+  },
+  "checks": {
+    "astroCheck": {
+      "exitCode": 0,
+      "files": 302,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0,
+      "artifact": "check.log"
+    },
+    "validateContent": {
+      "exitCode": 0,
+      "builtPages": 8034,
+      "sitemapCanonicalPages": 5634,
+      "publicOutput": "passed",
+      "artifact": "validate.log",
+      "note": "Se auditó explícitamente el manifiesto de 16 JSON; no se dependió de la detección por commits, que devuelve cero con cambios sin commit."
+    },
+    "noSkipYoutubeAudit": {
+      "errors": 0,
+      "candidates": 16,
+      "posters": 16,
+      "artifact": "audit-final.json"
+    },
+    "cinemaPostbuildAudit": {
+      "errors": 0,
+      "candidates": 16,
+      "artifact": "audit-built-cinema.json"
+    },
+    "completePostbuildAudit": {
+      "exitCode": 1,
+      "errors": [
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/los-juegos-del-hambre-2012.json",
+          "message": "Current streaming entry \"Los Juegos del Hambre\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        },
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+          "message": "Current streaming entry \"Los Juegos del Hambre: En llamas\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        },
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+          "message": "Current streaming entry \"Los Juegos del Hambre: Sinsajo Parte 1\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        },
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+          "message": "Current streaming entry \"Los Juegos del Hambre: Sinsajo Parte 2\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        }
+      ],
+      "artifact": "audit-built.json",
+      "disposition": "Cuatro falsos positivos del verificador de streaming: exige que cada candidata aparezca, aunque el selector real limita el carrusel a 12 títulos. Se conserva la salida cruda. La selección real y el DOM coinciden exactamente en 12/12 en ambos navegadores. No se alteraron fechas, UI ni ediciones para forzar esas cuatro tarjetas."
+    },
+    "browser": [
+      {
+        "profile": "desktop-chromium",
+        "cinemaCards": 45,
+        "loadedPosters": 45,
+        "removedAbsent": true,
+        "routes": 16,
+        "loadedRoutePosters": 16,
+        "bad": 0,
+        "pageErrors": [],
+        "unknownBioPlaceholderAbsent": true
+      },
+      {
+        "profile": "mobile-webkit",
+        "cinemaCards": 45,
+        "loadedPosters": 45,
+        "removedAbsent": true,
+        "routes": 16,
+        "loadedRoutePosters": 16,
+        "bad": 0,
+        "pageErrors": [],
+        "unknownBioPlaceholderAbsent": true
+      }
+    ],
+    "browserArtifact": "browser-final.json",
+    "streamingSelection": {
+      "artifact": "streaming-real-selection.json",
+      "profiles": [
+        {
+          "profile": "desktop-chromium",
+          "expected": 12,
+          "actual": 12,
+          "bad": 0
+        },
+        {
+          "profile": "mobile-webkit",
+          "expected": 12,
+          "actual": 12,
+          "bad": 0
+        }
+      ]
+    },
+    "playwright": {
+      "suite": "tests/e2e/cinema-release-carousel.spec.ts",
+      "passed": 8,
+      "failed": 0,
+      "workers": 1,
+      "durationSeconds": 41.5,
+      "artifact": "playwright-serial.log",
+      "initialAttempt": {
+        "passed": 6,
+        "timeouts": 2,
+        "workers": 6,
+        "artifact": "playwright.log",
+        "resolution": "Repetida la misma suite con un worker: ocho aprobadas."
+      }
+    },
+    "peopleImages": {
+      "checked": 5820,
+      "result": "passed"
+    },
+    "posterSourcePolicy": "passed",
+    "editorialMeters": "passed",
+    "semanticDiff": {
+      "candidateManifestMatches": true,
+      "existingScoresPreserved": true,
+      "removalsOnlyChangePlatformFields": true,
+      "scheduledSnapshotsUnchanged": true
+    },
+    "diffCheck": "passed"
+  },
+  "limitations": [
+    "Militante no se cargó: sólo un participante principal documentado; la skill exige dos.",
+    "Limitaciones de acceso a fuentes primarias de Cosmos/Lorca/MUBI y discrepancia Quiero tu sexo registradas en evidencia.json y el reporte.",
+    "La auditoría completa conserva cuatro errores instrumentales resueltos mediante comprobación directa del selector y DOM; no se presenta como una ejecución sin errores."
+  ],
+  "temporaryCleanup": {
+    "status": "blocked_by_automatic_approval",
+    "reason": "Deletion rejected: blocked by policy",
+    "retainedPath": ".tmp/cartelera-2026-10-22/"
+  },
+  "phase": "validacion_pre_publicacion"
+}

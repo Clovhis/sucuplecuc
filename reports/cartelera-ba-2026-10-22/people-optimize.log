@@ -1,0 +1,5 @@
+
+> la-posta-cine@0.0.1 images:people:optimize
+> node ./scripts/optimize-people-images.mjs --write
+
+{"files":5820,"changedFiles":4,"inputBytes":527447654,"outputBytes":527146842,"savedBytes":300812,"updatedReferences":0}

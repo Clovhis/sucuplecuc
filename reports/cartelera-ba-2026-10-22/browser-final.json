@@ -1,0 +1,896 @@
+[
+  {
+    "profile": "desktop-chromium",
+    "carousel": {
+      "total": 45,
+      "loaded": 45,
+      "bad": 0,
+      "removedAbsent": true,
+      "posters": [
+        {
+          "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.webp"
+        },
+        {
+          "slug": "annemarie-2026",
+          "complete": true,
+          "width": 480,
+          "height": 640,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/annemarie-2026.webp"
+        },
+        {
+          "slug": "avengers-endgame-2019",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2019/avengers-endgame-2019.webp"
+        },
+        {
+          "slug": "buenas-vibraciones-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/buenas-vibraciones-2026.webp"
+        },
+        {
+          "slug": "cars-2006",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2006/cars-2006.webp"
+        },
+        {
+          "slug": "clayface-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/clayface-2026.webp"
+        },
+        {
+          "slug": "cordobeces-la-pelicula-2026",
+          "complete": true,
+          "width": 480,
+          "height": 687,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/cordobeces-la-pelicula-2026.webp"
+        },
+        {
+          "slug": "coyote-vs-acme-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/coyote-vs-acme-2026.webp"
+        },
+        {
+          "slug": "desobediente-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/desobediente-2026.webp"
+        },
+        {
+          "slug": "digger-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/digger-2026.webp"
+        },
+        {
+          "slug": "el-corazon-de-la-bestia-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-corazon-de-la-bestia-2026.webp"
+        },
+        {
+          "slug": "el-poder-de-la-red-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-poder-de-la-red-2026.webp"
+        },
+        {
+          "slug": "el-tren-fluvial-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-tren-fluvial-2026.webp"
+        },
+        {
+          "slug": "escondida-en-mi-cabeza-2026",
+          "complete": true,
+          "width": 480,
+          "height": 604,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/escondida-en-mi-cabeza-2026.webp"
+        },
+        {
+          "slug": "escuela-de-monstruos-2026",
+          "complete": true,
+          "width": 480,
+          "height": 679,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/escuela-de-monstruos-2026.webp"
+        },
+        {
+          "slug": "guardianes-del-museo-2-2026",
+          "complete": true,
+          "width": 480,
+          "height": 683,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/guardianes-del-museo-2-2026.webp"
+        },
+        {
+          "slug": "hangar-rojo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 687,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/hangar-rojo-2026.webp"
+        },
+        {
+          "slug": "heidi-el-rescate-del-lince-2025",
+          "complete": true,
+          "width": 480,
+          "height": 683,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/heidi-el-rescate-del-lince-2025.webp"
+        },
+        {
+          "slug": "hope-el-primer-impacto-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/hope-el-primer-impacto-2026.webp"
+        },
+        {
+          "slug": "la-caida-de-la-ballena-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-caida-de-la-ballena-2026.webp"
+        },
+        {
+          "slug": "la-casa-2025",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/la-casa-2025.webp"
+        },
+        {
+          "slug": "la-invitacion-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-invitacion-2026.webp"
+        },
+        {
+          "slug": "la-isla-olvidada-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-isla-olvidada-2026.webp"
+        },
+        {
+          "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-noche-del-demonio-estan-entre-nosotros-2026.webp"
+        },
+        {
+          "slug": "la-odisea-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-odisea-2026.webp"
+        },
+        {
+          "slug": "la-vida-es-asi-2025",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/la-vida-es-asi-2025.webp"
+        },
+        {
+          "slug": "lo-dejamos-aca-2026",
+          "complete": true,
+          "width": 405,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/lo-dejamos-aca-2026.webp"
+        },
+        {
+          "slug": "lo-que-trajo-la-tormenta-2025",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/lo-que-trajo-la-tormenta-2025.webp"
+        },
+        {
+          "slug": "madre-siniestra-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/madre-siniestra-2026.webp"
+        },
+        {
+          "slug": "paw-patrol-la-dino-pelicula-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/paw-patrol-la-dino-pelicula-2026.webp"
+        },
+        {
+          "slug": "pepita-la-pistolera-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/pepita-la-pistolera-2026.webp"
+        },
+        {
+          "slug": "que-dios-perdona-a-todos-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/que-dios-perdona-a-todos-2026.webp"
+        },
+        {
+          "slug": "queres-ser-mi-hijo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/queres-ser-mi-hijo-2026.webp"
+        },
+        {
+          "slug": "resident-evil-noche-cero-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/resident-evil-noche-cero-2026.webp"
+        },
+        {
+          "slug": "spider-man-brand-new-day-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/spider-man-brand-new-day-2026.webp"
+        },
+        {
+          "slug": "street-fighter-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/street-fighter-2026.webp"
+        },
+        {
+          "slug": "su-propio-infierno-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/su-propio-infierno-2026.webp"
+        },
+        {
+          "slug": "susana-rinaldi-libre-2025",
+          "complete": true,
+          "width": 480,
+          "height": 641,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/susana-rinaldi-libre-2025.webp"
+        },
+        {
+          "slug": "terror-en-el-amazonas-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/terror-en-el-amazonas-2026.webp"
+        },
+        {
+          "slug": "the-others-2001",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2001/the-others-2001.webp"
+        },
+        {
+          "slug": "tiempos-de-ilusion-2026",
+          "complete": true,
+          "width": 480,
+          "height": 654,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/tiempos-de-ilusion-2026.webp"
+        },
+        {
+          "slug": "tres-adioses-2025",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/tres-adioses-2025.webp"
+        },
+        {
+          "slug": "una-quinta-en-portugal-2025",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/una-quinta-en-portugal-2025.webp"
+        },
+        {
+          "slug": "verity-la-sombra-de-un-engano-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/verity-la-sombra-de-un-engano-2026.webp"
+        },
+        {
+          "slug": "yo-narciso-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/yo-narciso-2026.webp"
+        }
+      ]
+    },
+    "routes": {
+      "total": 16,
+      "loaded": 16,
+      "bad": 0,
+      "posters": [
+        {
+          "slug": "clayface-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/clayface-2026.webp"
+        },
+        {
+          "slug": "el-poder-de-la-red-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-poder-de-la-red-2026.webp"
+        },
+        {
+          "slug": "buenas-vibraciones-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/buenas-vibraciones-2026.webp"
+        },
+        {
+          "slug": "heidi-el-rescate-del-lince-2025",
+          "complete": true,
+          "width": 480,
+          "height": 683,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/heidi-el-rescate-del-lince-2025.webp"
+        },
+        {
+          "slug": "que-dios-perdona-a-todos-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/que-dios-perdona-a-todos-2026.webp"
+        },
+        {
+          "slug": "terror-en-el-amazonas-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/terror-en-el-amazonas-2026.webp"
+        },
+        {
+          "slug": "queres-ser-mi-hijo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/queres-ser-mi-hijo-2026.webp"
+        },
+        {
+          "slug": "susana-rinaldi-libre-2025",
+          "complete": true,
+          "width": 480,
+          "height": 641,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/susana-rinaldi-libre-2025.webp"
+        },
+        {
+          "slug": "bajo-tus-pies-2025",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/bajo-tus-pies-2025.webp"
+        },
+        {
+          "slug": "vertigo-2-punto-muerto-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/vertigo-2-punto-muerto-2026.webp"
+        },
+        {
+          "slug": "quiero-tu-sexo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/quiero-tu-sexo-2026.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-2012",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2012/los-juegos-del-hambre-2012.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-en-llamas-2013",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2013/los-juegos-del-hambre-en-llamas-2013.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2014/los-juegos-del-hambre-sinsajo-parte-1-2014.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2015/los-juegos-del-hambre-sinsajo-parte-2-2015.webp"
+        },
+        {
+          "slug": "the-others-2001",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2001/the-others-2001.webp"
+        }
+      ]
+    },
+    "unknownBioPlaceholderAbsent": true,
+    "pageErrors": []
+  },
+  {
+    "profile": "mobile-webkit",
+    "carousel": {
+      "total": 45,
+      "loaded": 45,
+      "bad": 0,
+      "removedAbsent": true,
+      "posters": [
+        {
+          "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.webp"
+        },
+        {
+          "slug": "annemarie-2026",
+          "complete": true,
+          "width": 480,
+          "height": 640,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/annemarie-2026.webp"
+        },
+        {
+          "slug": "avengers-endgame-2019",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2019/avengers-endgame-2019.webp"
+        },
+        {
+          "slug": "buenas-vibraciones-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/buenas-vibraciones-2026.webp"
+        },
+        {
+          "slug": "cars-2006",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2006/cars-2006.webp"
+        },
+        {
+          "slug": "clayface-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/clayface-2026.webp"
+        },
+        {
+          "slug": "cordobeces-la-pelicula-2026",
+          "complete": true,
+          "width": 480,
+          "height": 687,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/cordobeces-la-pelicula-2026.webp"
+        },
+        {
+          "slug": "coyote-vs-acme-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/coyote-vs-acme-2026.webp"
+        },
+        {
+          "slug": "desobediente-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/desobediente-2026.webp"
+        },
+        {
+          "slug": "digger-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/digger-2026.webp"
+        },
+        {
+          "slug": "el-corazon-de-la-bestia-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-corazon-de-la-bestia-2026.webp"
+        },
+        {
+          "slug": "el-poder-de-la-red-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-poder-de-la-red-2026.webp"
+        },
+        {
+          "slug": "el-tren-fluvial-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-tren-fluvial-2026.webp"
+        },
+        {
+          "slug": "escondida-en-mi-cabeza-2026",
+          "complete": true,
+          "width": 480,
+          "height": 604,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/escondida-en-mi-cabeza-2026.webp"
+        },
+        {
+          "slug": "escuela-de-monstruos-2026",
+          "complete": true,
+          "width": 480,
+          "height": 679,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/escuela-de-monstruos-2026.webp"
+        },
+        {
+          "slug": "guardianes-del-museo-2-2026",
+          "complete": true,
+          "width": 480,
+          "height": 683,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/guardianes-del-museo-2-2026.webp"
+        },
+        {
+          "slug": "hangar-rojo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 687,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/hangar-rojo-2026.webp"
+        },
+        {
+          "slug": "heidi-el-rescate-del-lince-2025",
+          "complete": true,
+          "width": 480,
+          "height": 683,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/heidi-el-rescate-del-lince-2025.webp"
+        },
+        {
+          "slug": "hope-el-primer-impacto-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/hope-el-primer-impacto-2026.webp"
+        },
+        {
+          "slug": "la-caida-de-la-ballena-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-caida-de-la-ballena-2026.webp"
+        },
+        {
+          "slug": "la-casa-2025",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/la-casa-2025.webp"
+        },
+        {
+          "slug": "la-invitacion-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-invitacion-2026.webp"
+        },
+        {
+          "slug": "la-isla-olvidada-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-isla-olvidada-2026.webp"
+        },
+        {
+          "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-noche-del-demonio-estan-entre-nosotros-2026.webp"
+        },
+        {
+          "slug": "la-odisea-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/la-odisea-2026.webp"
+        },
+        {
+          "slug": "la-vida-es-asi-2025",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/la-vida-es-asi-2025.webp"
+        },
+        {
+          "slug": "lo-dejamos-aca-2026",
+          "complete": true,
+          "width": 405,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/lo-dejamos-aca-2026.webp"
+        },
+        {
+          "slug": "lo-que-trajo-la-tormenta-2025",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/lo-que-trajo-la-tormenta-2025.webp"
+        },
+        {
+          "slug": "madre-siniestra-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/madre-siniestra-2026.webp"
+        },
+        {
+          "slug": "paw-patrol-la-dino-pelicula-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/paw-patrol-la-dino-pelicula-2026.webp"
+        },
+        {
+          "slug": "pepita-la-pistolera-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/pepita-la-pistolera-2026.webp"
+        },
+        {
+          "slug": "que-dios-perdona-a-todos-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/que-dios-perdona-a-todos-2026.webp"
+        },
+        {
+          "slug": "queres-ser-mi-hijo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/queres-ser-mi-hijo-2026.webp"
+        },
+        {
+          "slug": "resident-evil-noche-cero-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/resident-evil-noche-cero-2026.webp"
+        },
+        {
+          "slug": "spider-man-brand-new-day-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/spider-man-brand-new-day-2026.webp"
+        },
+        {
+          "slug": "street-fighter-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/street-fighter-2026.webp"
+        },
+        {
+          "slug": "su-propio-infierno-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/su-propio-infierno-2026.webp"
+        },
+        {
+          "slug": "susana-rinaldi-libre-2025",
+          "complete": true,
+          "width": 480,
+          "height": 641,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/susana-rinaldi-libre-2025.webp"
+        },
+        {
+          "slug": "terror-en-el-amazonas-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/terror-en-el-amazonas-2026.webp"
+        },
+        {
+          "slug": "the-others-2001",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2001/the-others-2001.webp"
+        },
+        {
+          "slug": "tiempos-de-ilusion-2026",
+          "complete": true,
+          "width": 480,
+          "height": 654,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/tiempos-de-ilusion-2026.webp"
+        },
+        {
+          "slug": "tres-adioses-2025",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/tres-adioses-2025.webp"
+        },
+        {
+          "slug": "una-quinta-en-portugal-2025",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/una-quinta-en-portugal-2025.webp"
+        },
+        {
+          "slug": "verity-la-sombra-de-un-engano-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/verity-la-sombra-de-un-engano-2026.webp"
+        },
+        {
+          "slug": "yo-narciso-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/yo-narciso-2026.webp"
+        }
+      ]
+    },
+    "routes": {
+      "total": 16,
+      "loaded": 16,
+      "bad": 0,
+      "posters": [
+        {
+          "slug": "clayface-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/clayface-2026.webp"
+        },
+        {
+          "slug": "el-poder-de-la-red-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/el-poder-de-la-red-2026.webp"
+        },
+        {
+          "slug": "buenas-vibraciones-2026",
+          "complete": true,
+          "width": 480,
+          "height": 600,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/buenas-vibraciones-2026.webp"
+        },
+        {
+          "slug": "heidi-el-rescate-del-lince-2025",
+          "complete": true,
+          "width": 480,
+          "height": 683,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/heidi-el-rescate-del-lince-2025.webp"
+        },
+        {
+          "slug": "que-dios-perdona-a-todos-2026",
+          "complete": true,
+          "width": 480,
+          "height": 686,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/que-dios-perdona-a-todos-2026.webp"
+        },
+        {
+          "slug": "terror-en-el-amazonas-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/terror-en-el-amazonas-2026.webp"
+        },
+        {
+          "slug": "queres-ser-mi-hijo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/queres-ser-mi-hijo-2026.webp"
+        },
+        {
+          "slug": "susana-rinaldi-libre-2025",
+          "complete": true,
+          "width": 480,
+          "height": 641,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/susana-rinaldi-libre-2025.webp"
+        },
+        {
+          "slug": "bajo-tus-pies-2025",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2025/bajo-tus-pies-2025.webp"
+        },
+        {
+          "slug": "vertigo-2-punto-muerto-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/vertigo-2-punto-muerto-2026.webp"
+        },
+        {
+          "slug": "quiero-tu-sexo-2026",
+          "complete": true,
+          "width": 480,
+          "height": 720,
+          "src": "http://127.0.0.1:43222/assets/posters/2026/quiero-tu-sexo-2026.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-2012",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2012/los-juegos-del-hambre-2012.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-en-llamas-2013",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2013/los-juegos-del-hambre-en-llamas-2013.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-sinsajo-parte-1-2014",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2014/los-juegos-del-hambre-sinsajo-parte-1-2014.webp"
+        },
+        {
+          "slug": "los-juegos-del-hambre-sinsajo-parte-2-2015",
+          "complete": true,
+          "width": 480,
+          "height": 711,
+          "src": "http://127.0.0.1:43222/assets/posters/2015/los-juegos-del-hambre-sinsajo-parte-2-2015.webp"
+        },
+        {
+          "slug": "the-others-2001",
+          "complete": true,
+          "width": 480,
+          "height": 685,
+          "src": "http://127.0.0.1:43222/assets/posters/2001/the-others-2001.webp"
+        }
+      ]
+    },
+    "unknownBioPlaceholderAbsent": true,
+    "pageErrors": []
+  }
+]

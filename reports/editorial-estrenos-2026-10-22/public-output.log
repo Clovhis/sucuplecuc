@@ -1,0 +1,5 @@
+
+> la-posta-cine@0.0.1 validate:public-output
+> node ./scripts/validate-public-output.mjs
+
+Public output validation passed: no forbidden legacy platform references found in dist.

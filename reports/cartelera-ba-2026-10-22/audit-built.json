@@ -1,0 +1,368 @@
+{
+  "baseRef": "origin/main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/clayface-2026.json",
+    "src/data/movies/el-poder-de-la-red-2026.json",
+    "src/data/movies/buenas-vibraciones-2026.json",
+    "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+    "src/data/movies/que-dios-perdona-a-todos-2026.json",
+    "src/data/movies/terror-en-el-amazonas-2026.json",
+    "src/data/movies/queres-ser-mi-hijo-2026.json",
+    "src/data/movies/susana-rinaldi-libre-2025.json",
+    "src/data/movies/bajo-tus-pies-2025.json",
+    "src/data/movies/vertigo-2-punto-muerto-2026.json",
+    "src/data/movies/quiero-tu-sexo-2026.json",
+    "src/data/movies/los-juegos-del-hambre-2012.json",
+    "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+    "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+    "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+    "src/data/movies/the-others-2001.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/clayface-2026.json",
+        "poster": "assets/posters/2026/clayface-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 56700 bytes.",
+        "bytes": 56700,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/el-poder-de-la-red-2026.json",
+        "poster": "assets/posters/2026/el-poder-de-la-red-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 42250 bytes.",
+        "bytes": 42250,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/buenas-vibraciones-2026.json",
+        "poster": "assets/posters/2026/buenas-vibraciones-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x600, 58604 bytes.",
+        "bytes": 58604,
+        "format": "webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "filePath": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+        "poster": "assets/posters/2025/heidi-el-rescate-del-lince-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x683, 71400 bytes.",
+        "bytes": 71400,
+        "format": "webp",
+        "width": 480,
+        "height": 683
+      },
+      {
+        "filePath": "src/data/movies/que-dios-perdona-a-todos-2026.json",
+        "poster": "assets/posters/2026/que-dios-perdona-a-todos-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 47378 bytes.",
+        "bytes": 47378,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/terror-en-el-amazonas-2026.json",
+        "poster": "assets/posters/2026/terror-en-el-amazonas-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 81248 bytes.",
+        "bytes": 81248,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/queres-ser-mi-hijo-2026.json",
+        "poster": "assets/posters/2026/queres-ser-mi-hijo-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 39736 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 39736,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/susana-rinaldi-libre-2025.json",
+        "poster": "assets/posters/2025/susana-rinaldi-libre-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x641, 44006 bytes.",
+        "bytes": 44006,
+        "format": "webp",
+        "width": 480,
+        "height": 641
+      },
+      {
+        "filePath": "src/data/movies/bajo-tus-pies-2025.json",
+        "poster": "assets/posters/2025/bajo-tus-pies-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 41574 bytes.",
+        "bytes": 41574,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/vertigo-2-punto-muerto-2026.json",
+        "poster": "assets/posters/2026/vertigo-2-punto-muerto-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 63440 bytes.",
+        "bytes": 63440,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/quiero-tu-sexo-2026.json",
+        "poster": "assets/posters/2026/quiero-tu-sexo-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 51432 bytes.",
+        "bytes": 51432,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/los-juegos-del-hambre-2012.json",
+        "poster": "assets/posters/2012/los-juegos-del-hambre-2012.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 55416 bytes.",
+        "bytes": 55416,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+        "poster": "assets/posters/2013/los-juegos-del-hambre-en-llamas-2013.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 63592 bytes.",
+        "bytes": 63592,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+        "poster": "assets/posters/2014/los-juegos-del-hambre-sinsajo-parte-1-2014.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 66070 bytes.",
+        "bytes": 66070,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+        "poster": "assets/posters/2015/los-juegos-del-hambre-sinsajo-parte-2-2015.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 62894 bytes.",
+        "bytes": 62894,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/the-others-2001.json",
+        "poster": "assets/posters/2001/the-others-2001.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 15652 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 15652,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      }
+    ],
+    "summary": {
+      "total": 16,
+      "passed": 14,
+      "warnings": 2,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "ok",
+    "message": "review audit passed for 16 file(s)"
+  },
+  "findings": [
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "message": "\"Tobias Schwarz\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "message": "\"Tobias Schwarz\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "message": "\"Tobias Schwarz\" uses an uncommon portrait host (\"www.filmportal.de\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/queres-ser-mi-hijo-2026.json",
+      "message": "\"Wanda Nara\" uses an uncommon portrait host (\"m.media-amazon.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/queres-ser-mi-hijo-2026.json",
+      "message": "\"Agustín Bernasconi\" uses an uncommon portrait host (\"m.media-amazon.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/queres-ser-mi-hijo-2026.json",
+      "message": "\"Jean Pierre Noher\" uses an uncommon portrait host (\"img.alternativateatral.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/susana-rinaldi-libre-2025.json",
+      "message": "\"Isabel Marcenaro\" uses an uncommon portrait host (\"img.cinenacional.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/susana-rinaldi-libre-2025.json",
+      "message": "\"Isabel Marcenaro\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/bajo-tus-pies-2025.json",
+      "message": "\"Ibai Atanes\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/bajo-tus-pies-2025.json",
+      "message": "\"Ibai Atanes\" uses an uncommon portrait host (\"trauko.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/bajo-tus-pies-2025.json",
+      "message": "\"Ibai Atanes\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/vertigo-2-punto-muerto-2026.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: vertigo-1958."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/los-juegos-del-hambre-2012.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/los-juegos-del-hambre-2012.json",
+      "message": "Current streaming entry \"Los Juegos del Hambre\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/los-juegos-del-hambre-en-llamas-2013.json",
+      "message": "Current streaming entry \"Los Juegos del Hambre: En llamas\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-1-2014.json",
+      "message": "Current streaming entry \"Los Juegos del Hambre: Sinsajo Parte 1\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/los-juegos-del-hambre-sinsajo-parte-2-2015.json",
+      "message": "Current streaming entry \"Los Juegos del Hambre: Sinsajo Parte 2\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/queres-ser-mi-hijo-2026.json",
+      "message": "poster is valid at 39736 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/the-others-2001.json",
+      "message": "poster is valid at 15652 bytes; preferred range is 40960-81920 bytes. (480x685)"
+    }
+  ]
+}
