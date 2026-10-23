@@ -1,0 +1,166 @@
+---
+import type { Movie } from '../types/movie';
+import { getLatestCatalogAdditions } from '../lib/catalog-additions';
+import { getMoviePath } from '../lib/movies';
+import { getMoviePlatforms, getPlatformPresentations } from '../lib/platforms';
+
+interface Props { movies: Movie[] }
+const items = getLatestCatalogAdditions(Astro.props.movies).map((movie) => ({
+	...movie,
+	platforms: getPlatformPresentations(getMoviePlatforms(movie)),
+}));
+---
+
+{items.length > 0 && (
+	<catalog-marquee class="catalog-marquee" role="region" aria-label="Recién agregadas al catálogo">
+		<span class="catalog-marquee__label"><span aria-hidden="true" />Recién agregadas</span>
+		<div class="catalog-marquee__viewport">
+			<div class="catalog-marquee__track">
+				{[false, true].map((duplicate) => (
+					<ul class="catalog-marquee__list" aria-hidden={duplicate ? 'true' : undefined}>
+						{items.map((movie) => (
+							<li>
+								<a href={getMoviePath(movie.slug)} tabindex={duplicate ? -1 : undefined}>
+									<span>{movie.title}</span>
+									<span class="catalog-marquee__platforms">
+										{movie.platforms.map((platform) => (
+											<span class="catalog-marquee__platform" title={platform.accessibilityLabel}>
+												{platform.asset ? (
+													<img src={`${import.meta.env.BASE_URL}${platform.asset.src.replace(/^\//, '')}`} alt="" width={platform.asset.wide ? 30 : 12} height="13" />
+												) : platform.variant === 'cine' ? (
+													<svg viewBox="0 0 20 16" aria-hidden="true"><path d="M2 3h16v3a2 2 0 0 0 0 4v3H2v-3a2 2 0 0 0 0-4Z" /><path d="M7 3v10" stroke-dasharray="2 2" /></svg>
+												) : (
+													<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" /><path d="M2 8h12M8 2c-4 4-4 8 0 12M8 2c4 4 4 8 0 12" /></svg>
+												)}
+												<span class="u-visually-hidden">{` · ${platform.accessibilityLabel}`}</span>
+											</span>
+										))}
+									</span>
+								</a>
+								<span class="catalog-marquee__separator" aria-hidden="true">·</span>
+							</li>
+						))}
+					</ul>
+				))}
+			</div>
+		</div>
+		<button class="catalog-marquee__toggle" type="button" aria-label="Pausar novedades" aria-pressed="false" hidden>
+			<svg class="catalog-marquee__pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4v8M10 4v8" /></svg>
+			<svg class="catalog-marquee__play" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 4 5 4-5 4Z" /></svg>
+		</button>
+	</catalog-marquee>
+)}
+
+<style>
+	.catalog-marquee {
+		--marquee-ink: #e6b291;
+		display: flex;
+		align-items: center;
+		min-width: 0;
+		height: 36px;
+		margin-bottom: 1rem;
+		border-block: 1px solid #30343a;
+		background: #111419;
+		color: var(--marquee-ink);
+	}
+	.catalog-marquee__label {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		flex-shrink: 0;
+		padding-right: 1rem;
+		font: 500 .66rem/1 var(--font-sans);
+		letter-spacing: .055em;
+		text-transform: uppercase;
+	}
+	.catalog-marquee__label > span { width: 4px; height: 4px; border-radius: 50%; background: currentColor; box-shadow: 0 0 5px #e6b29155; }
+	.catalog-marquee__viewport {
+		flex: 1;
+		min-width: 0;
+		height: 100%;
+		overflow-x: auto;
+		scrollbar-width: none;
+		background-image: radial-gradient(#e6b2910b .65px, transparent .65px);
+		background-size: 3px 3px;
+	}
+	.catalog-marquee__viewport::-webkit-scrollbar { display: none; }
+	.catalog-marquee__track { display: flex; width: max-content; min-width: 100%; height: 100%; }
+	.catalog-marquee__list { display: flex; align-items: center; flex-shrink: 0; list-style: none; margin: 0; padding: 0; }
+	.catalog-marquee__list[aria-hidden] { display: none; }
+	.catalog-marquee__list li { display: flex; align-items: center; flex-shrink: 0; }
+	.catalog-marquee__list a {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		padding: .6rem .5rem;
+		color: var(--marquee-ink);
+		font: 400 .72rem/1.2 var(--font-mono);
+		text-decoration: none;
+		white-space: nowrap;
+		text-shadow: 0 0 6px #e6b29120;
+	}
+	.catalog-marquee__list a:hover { color: #fff1e7; }
+	.catalog-marquee__list a:focus-visible { outline: 1px solid var(--marquee-ink); outline-offset: -3px; }
+	.catalog-marquee__platforms { display: inline-flex; align-items: center; gap: .65rem; padding-left: .25rem; }
+	.catalog-marquee__platform { display: inline-flex; align-items: center; gap: .3rem; color: #b5ada6; font: 400 .64rem/1 var(--font-sans); }
+	.catalog-marquee__platform img { display: block; flex-shrink: 0; object-fit: contain; }
+	.catalog-marquee__platform svg { width: 15px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.2; }
+	.catalog-marquee__separator { margin-inline: .75rem; color: #8e705a; }
+	.catalog-marquee__toggle { display: grid; place-items: center; flex-shrink: 0; width: 36px; height: 34px; padding: 0; border: 0; border-left: 1px solid #30343a; border-radius: 0; background: #111419; color: #b7aaa0; cursor: pointer; }
+	.catalog-marquee__toggle[hidden] { display: none; }
+	.catalog-marquee__toggle:hover { color: #fff1e7; }
+	.catalog-marquee__toggle:focus-visible { outline: 1px solid var(--marquee-ink); outline-offset: -3px; }
+	.catalog-marquee__toggle svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+	.catalog-marquee__play { display: none; }
+	.catalog-marquee[data-paused] .catalog-marquee__pause { display: none; }
+	.catalog-marquee[data-paused] .catalog-marquee__play { display: block; }
+	@media (prefers-reduced-motion: no-preference) {
+		.catalog-marquee[data-ready] .catalog-marquee__viewport { overflow-x: hidden; mask-image: linear-gradient(to right, transparent, #000 12px, #000 calc(100% - 16px), transparent); }
+		.catalog-marquee[data-ready] .catalog-marquee__track { animation: catalog-crawl var(--marquee-duration, 110s) linear infinite; }
+		.catalog-marquee[data-ready] .catalog-marquee__list[aria-hidden] { display: flex; }
+		.catalog-marquee:hover .catalog-marquee__track,
+		.catalog-marquee[data-paused] .catalog-marquee__track { animation-play-state: paused; }
+		.catalog-marquee .catalog-marquee__viewport:focus-within { overflow-x: auto; mask-image: none; }
+		.catalog-marquee .catalog-marquee__viewport:focus-within .catalog-marquee__track { animation: none; }
+		.catalog-marquee .catalog-marquee__viewport:focus-within .catalog-marquee__list[aria-hidden] { display: none; }
+		@keyframes catalog-crawl { to { transform: translateX(-50%); } }
+	}
+	@media (prefers-reduced-motion: reduce) { .catalog-marquee__toggle { display: none; } }
+	@media (max-width: 540px) {
+		.catalog-marquee__label { gap: .35rem; padding-right: .5rem; font-size: .58rem; letter-spacing: .015em; }
+		.catalog-marquee__list a { font-size: .68rem; }
+	}
+</style>
+
+<script>
+	class CatalogMarquee extends HTMLElement {
+		connectedCallback() {
+			if (this.hasAttribute('data-ready')) return;
+			const viewport = this.querySelector<HTMLElement>('.catalog-marquee__viewport')!;
+			const track = this.querySelector<HTMLElement>('.catalog-marquee__track')!;
+			const list = this.querySelector<HTMLElement>('.catalog-marquee__list')!;
+			const button = this.querySelector<HTMLButtonElement>('button')!;
+			button.hidden = false;
+			button.addEventListener('click', () => {
+				const paused = this.toggleAttribute('data-paused');
+				button.setAttribute('aria-pressed', String(paused));
+				button.setAttribute('aria-label', paused ? 'Reanudar novedades' : 'Pausar novedades');
+			});
+			viewport.addEventListener('focusin', (event) => {
+				if (!(event.target instanceof HTMLAnchorElement)) return;
+				const bounds = event.target.getBoundingClientRect();
+				const frame = viewport.getBoundingClientRect();
+				if (bounds.width > frame.width || bounds.left < frame.left) viewport.scrollLeft += bounds.left - frame.left;
+				else if (bounds.right > frame.right) viewport.scrollLeft += bounds.right - frame.right;
+			});
+			viewport.addEventListener('focusout', (event) => {
+				if (!(event.relatedTarget instanceof Node) || !viewport.contains(event.relatedTarget)) viewport.scrollLeft = 0;
+			});
+			// Constant reading speed, including after the web font loads.
+			const setSpeed = () => track.style.setProperty('--marquee-duration', `${list.scrollWidth / 32}s`);
+			void document.fonts.ready.then(setSpeed);
+			this.setAttribute('data-ready', '');
+		}
+	}
+	if (!customElements.get('catalog-marquee')) customElements.define('catalog-marquee', CatalogMarquee);
+</script>

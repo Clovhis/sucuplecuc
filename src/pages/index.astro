@@ -6,6 +6,7 @@ import '../styles/home-trailers.css';
 import '../styles/home-promos.css';
 import EditorialHighlights from '../components/EditorialHighlights.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
+import CatalogMarquee from '../components/CatalogMarquee.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import HomePrimaryCatalog from '../components/HomePrimaryCatalog.astro';
@@ -165,6 +166,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 <BaseLayout title={pageTitle} description={pageDescription} structuredData={structuredData} bodyClass="home-edition">
 	<header class="site-header home-masthead container">
 		<h1 class="u-visually-hidden">{SITE_NAME}: reseñas súper cortas y sin chamuyo de películas</h1>
+		<CatalogMarquee movies={movies} />
 		{
 			movies.length > 0 && (
 				<section

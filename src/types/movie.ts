@@ -53,6 +53,8 @@ export interface Movie {
 	isPremiere?: boolean;
 	premiereLabel?: string;
 	reviewPublishedAt?: string;
+	/** Fecha real de incorporación al catálogo (YYYY-MM-DD, Argentina); no cambia al editar la ficha. */
+	catalogAddedAt?: string;
 	audienceRating: MovieAudienceRating;
 	category: string;
 	genres?: string[];

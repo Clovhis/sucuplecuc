@@ -412,6 +412,12 @@ function validateMovies(movies: Movie[]): void {
 				throw new Error(`Movie "${slug}" has invalid reviewPublishedAt format. Use YYYY-MM-DD.`);
 			}
 		}
+		if (movie.catalogAddedAt !== undefined) {
+			const parsed = new Date(`${movie.catalogAddedAt}T00:00:00Z`);
+			if (!/^\d{4}-\d{2}-\d{2}$/.test(movie.catalogAddedAt) || !Number.isFinite(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== movie.catalogAddedAt) {
+				throw new Error(`Movie "${slug}" has invalid catalogAddedAt. Use a real YYYY-MM-DD date.`);
+			}
+		}
 		if (typeof movie.audienceRating !== 'string' || !AUDIENCE_RATING_PATTERN.test(movie.audienceRating.trim())) {
 			throw new Error(`Movie "${slug}" has invalid audienceRating.`);
 		}

@@ -3,6 +3,7 @@
 ## Alcance y fuentes de verdad
 
 - Las películas viven en `src/data/movies/*.json`; no edites el catálogo derivado a mano.
+- Toda ficha nueva debe incluir `catalogAddedAt` con la fecha real de incorporación en Argentina (`YYYY-MM-DD`); `new-movie` la asigna automáticamente. Conservala al editar una ficha: la marquesina de novedades usa esta fecha, nunca la de estreno o reseña. Las fichas históricas sin fecha comprobada quedan fuera de la marquesina.
 - Cine Posta está orientado a público argentino. Toda etiqueta `releasePlatform` / `releasePlatforms`, fecha de estreno, cartelera y título localizado debe describir la disponibilidad vigente en Argentina, nunca la de Estados Unidos, España u otro mercado.
 - La cartelera de salas y la etiqueta `Cine` cubren exclusivamente CABA y toda la Provincia de Buenos Aires, no sólo AMBA. Exigí una función vigente o próxima de una exhibición en curso dentro de ese territorio, con sala, localidad y fecha verificables. Una función en otra provincia o un listado nacional sin sede no alcanza. Esta delimitación no cambia el alcance argentino de las plataformas de streaming.
 - `docs/movie-catalog-reference.md` y `docs/person-profile-catalog-reference.md` se regeneran con sus scripts.
