@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-22T09:13:24.910Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-23T09:09:42.749Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Everest: La otra cara",
@@ -25,6 +25,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10634",
 		"videoUrl": "https://www.youtube.com/watch?v=5i4_ceVDUqg",
 		"thumbnailUrl": "https://i.ytimg.com/vi/5i4_ceVDUqg/hqdefault.jpg"
+	},
+	{
+		"title": "Pinocho sin cadenas",
+		"releaseDate": "2026-10-29",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10272-pinocho-sin-cadenas/",
+		"slug": "cines-argentinos-10272",
+		"videoUrl": "https://www.youtube.com/watch?v=3acyGGrWLgw",
+		"thumbnailUrl": "https://i.ytimg.com/vi/3acyGGrWLgw/hqdefault.jpg"
 	},
 	{
 		"title": "El Bosque Salvaje: Wildwood",
