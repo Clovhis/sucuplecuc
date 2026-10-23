@@ -359,6 +359,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-diablo-viste-a-la-moda-2-2026",
     "el-final-de-la-calle-oak-2026",
     "la-odisea-2026",
+    "mother-mary-2026",
     "verity-la-sombra-de-un-engano-2026",
     "the-idea-of-you-2024",
     "ocean-s-8-las-estafadoras-2018",
@@ -5066,6 +5067,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "un-cuento-chino-2011"
   ],
   "sebastian-schindel": [
+    "papi-ricky-la-pelicula-2026",
     "el-patron-radiografia-de-un-crimen-2014"
   ],
   "sebastian-stan": [

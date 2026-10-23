@@ -9531,6 +9531,20 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1965-03-16"
 	},
+	"Belén Soto": {
+		"name": "Belén Soto",
+		"image": "/people/belen-soto-tmdb-1965666.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/7vjRUmx8rMAj45fusdL3hB4LFjf.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1965666",
+			"https://www.themoviedb.org/movie/1752312-papi-ricky-la-pelicula"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1997-01-22",
+		"birthYear": 1997,
+		"nationalityPrimary": "Chilena"
+	},
 	"Bella Alelaf": {
 		"name": "Bella Alelaf",
 		"birthDate": "2012-09-21",
@@ -39019,6 +39033,20 @@
 		"lastVerifiedAt": "2026-07-09",
 		"source": "wikidata-imdb-tmdb-cache"
 	},
+	"Hunter Schafer": {
+		"name": "Hunter Schafer",
+		"image": "/people/hunter-schafer-tmdb-2340180.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/AilBKow2NuvPBQbvGRx69RxKUBi.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/2340180",
+			"https://www.themoviedb.org/movie/1102883-mother-mary"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1998-12-31",
+		"birthYear": 1998,
+		"nationalityPrimary": "Estadounidense"
+	},
 	"Hwang Jung-min": {
 		"name": "Hwang Jung-min",
 		"birthDate": "1970-09-01",
@@ -50014,6 +50042,20 @@
 		"lastVerifiedAt": "2026-05-21",
 		"source": "wikidata-imdb-cache"
 	},
+	"Jorge Zabaleta": {
+		"name": "Jorge Zabaleta",
+		"image": "/people/jorge-zabaleta-tmdb-1965665.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/gBNUZVMP58PvyEceCdnBN60U9nd.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1965665",
+			"https://www.themoviedb.org/movie/1752312-papi-ricky-la-pelicula"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1970-04-18",
+		"birthYear": 1970,
+		"nationalityPrimary": "Chileno"
+	},
 	"Jorge-Yamam Serrano": {
 		"name": "Jorge-yamam Serrano",
 		"referenceUrls": [
@@ -55709,10 +55751,15 @@
 		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim%20Shin-rok.jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q107109045",
-			"https://www.imdb.com/name/nm12141029/"
+			"https://www.imdb.com/name/nm12141029/",
+			"https://lsf.go.id/en/film/colony-2026/1139",
+			"https://sbsstar.net/article/N1008571687/kim-shinrok-greets-the-crowd-at-colony-press-screening"
 		],
 		"lastVerifiedAt": "2026-09-03",
-		"source": "wikidata-imdb-cache"
+		"source": "wikidata-imdb-cache",
+		"aliases": [
+			"Kim Shin-rok"
+		]
 	},
 	"Kim Soo-kyung": {
 		"name": "Kim Soo-kyung",
@@ -61409,6 +61456,20 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1987-04-01"
 	},
+	"Macon Blair": {
+		"name": "Macon Blair",
+		"image": "/people/macon-blair-tmdb-209513.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/sNhgAh7TBBYNGR2ExnINXIQ4U5x.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/209513",
+			"https://www.themoviedb.org/movie/445466"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1974-11-14",
+		"birthYear": 1974,
+		"nationalityPrimary": "Estadounidense"
+	},
 	"Maddi Black": {
 		"name": "Maddi Black",
 		"nationalityPrimary": "Británica",
@@ -63251,6 +63312,20 @@
 		"lastVerifiedAt": "2026-09-08",
 		"source": "wikidata-imdb-cache"
 	},
+	"Maria Bamford": {
+		"name": "Maria Bamford",
+		"image": "/people/maria-bamford-tmdb-60278.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/7nhgW2aGeSEL9aN3ThhM8KXwzmh.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/60278",
+			"https://www.themoviedb.org/movie/1596294-paralyzed-by-hope-the-maria-bamford-story"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1970-09-03",
+		"birthYear": 1970,
+		"nationalityPrimary": "Estadounidense"
+	},
 	"Maria Bello": {
 		"name": "Maria Bello",
 		"birthDate": "1967-04-18",
@@ -63336,6 +63411,24 @@
 		],
 		"lastVerifiedAt": "2026-07-31",
 		"source": "wikidata-imdb-cache"
+	},
+	"María Elena Swett": {
+		"name": "María Elena Swett",
+		"image": "/people/maria-elena-swett-tmdb-118371.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/qupgCtrxURGVYOxWe25VIcqnx1s.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/118371",
+			"https://www.themoviedb.org/movie/1752312-papi-ricky-la-pelicula",
+			"https://www.primevideo.com/-/es/detail/amzn1.dv.gti.9ba1d79b-16e0-4bd1-807b-6c2e07c7b8a0"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"aliases": [
+			"Mane Swett"
+		],
+		"birthDate": "1979-04-11",
+		"birthYear": 1979,
+		"nationalityPrimary": "Chilena"
 	},
 	"Maria Falconetti": {
 		"name": "Renée Jeanne Falconetti",
@@ -68676,6 +68769,18 @@
 		"lastVerifiedAt": "2026-10-10",
 		"source": "wikidata-imdb-cache"
 	},
+	"Michaela Coel": {
+		"name": "Michaela Coel",
+		"image": "/people/michaela-coel-tmdb-1368012.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/rbN1F0R8DMUh6IYwl0owyD8LukN.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1368012",
+			"https://www.themoviedb.org/movie/1102883-mother-mary"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"nationalityPrimary": "Británica"
+	},
 	"Michel Boisrond": {
 		"name": "Michel Boisrond",
 		"birthDate": "1921-10-09",
@@ -70299,6 +70404,19 @@
 		"lastVerifiedAt": "2026-08-12",
 		"source": "wikimedia-commons-cache"
 	},
+	"Mohan Babu": {
+		"name": "Mohan Babu",
+		"image": "/people/mohan-babu-tmdb-585268.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/zwqcXtnk0ju0nhuhvZXSLL2nLIy.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/585268",
+			"https://www.themoviedb.org/movie/1376856"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1952-03-19",
+		"birthYear": 1952
+	},
 	"Mohsen Makhmalbaf": {
 		"name": "Mohsen Makhmalbaf",
 		"birthDate": "1957-05-29",
@@ -71163,6 +71281,20 @@
 		"lastVerifiedAt": "2026-08-11",
 		"image": "/people/nancy-olson-8631.jpg",
 		"source": "tmdb-cache"
+	},
+	"Nani": {
+		"name": "Nani",
+		"image": "/people/nani-tmdb-225387.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/jfOH4sUWs3VXuGUlo0VLMYNRBQ4.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/225387",
+			"https://www.themoviedb.org/movie/1376856"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1984-02-24",
+		"birthYear": 1984,
+		"nationalityPrimary": "Indio"
 	},
 	"Nanoka Hara": {
 		"name": "Nanoka Hara",
@@ -73648,6 +73780,20 @@
 		"image": "/people/o-j-simpson-12951.jpg",
 		"source": "tmdb-cache"
 	},
+	"O'Shea Jackson Jr.": {
+		"name": "O'Shea Jackson Jr.",
+		"image": "/people/o-shea-jackson-jr-tmdb-1371398.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/kXJ02sXvnExbGNJ11piC6d6WMOc.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/1371398",
+			"https://www.themoviedb.org/movie/445466-idiots"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1991-02-24",
+		"birthYear": 1991,
+		"nationalityPrimary": "Estadounidense"
+	},
 	"Octavia Spencer": {
 		"name": "Octavia Spencer",
 		"birthYear": 1970,
@@ -75842,13 +75988,13 @@
 		"image": "/people/patton-oswalt-nm0652663.jpg",
 		"imdbId": "nm0652663",
 		"imdbUrl": "https://www.imdb.com/name/nm0652663/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Patton%20Oswalt%20by%20Gage%20Skidmore%203%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Patton%20Oswalt%20by%20Gage%20Skidmore%203%20(cropped).jpg?width=640",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q374065",
 			"https://www.imdb.com/name/nm0652663/",
 			"https://www.themoviedb.org/person/10872-patton-oswalt"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-10-23",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1969-01-27"
 	},
@@ -88521,6 +88667,20 @@
 		"lastVerifiedAt": "2026-08-07",
 		"source": "wikidata-imdb-plex-cache"
 	},
+	"Sonali Kulkarni": {
+		"name": "Sonali Kulkarni",
+		"image": "/people/sonali-kulkarni-tmdb-78920.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/aQeM6N2JgGFbI5VoltWhkxw6OQC.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/78920",
+			"https://www.themoviedb.org/movie/1376856"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1974-11-03",
+		"birthYear": 1974,
+		"nationalityPrimary": "India"
+	},
 	"Sonequa Martin-Green": {
 		"name": "Sonequa Martin-Green",
 		"birthDate": "1985-03-21",
@@ -88893,6 +89053,20 @@
 		],
 		"lastVerifiedAt": "2026-05-26",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Srikanth Odela": {
+		"name": "Srikanth Odela",
+		"image": "/people/srikanth-odela-tmdb-3271589.jpg",
+		"remoteImageUrl": "https://image.tmdb.org/t/p/w500/6C019f5EkYasOwksCXjr8vxkRa4.jpg",
+		"referenceUrls": [
+			"https://www.themoviedb.org/person/3271589",
+			"https://www.themoviedb.org/movie/1376856"
+		],
+		"lastVerifiedAt": "2026-10-23",
+		"source": "verified-film-credit-and-tmdb-portrait",
+		"birthDate": "1990-12-14",
+		"birthYear": 1990,
+		"nationalityPrimary": "Indio"
 	},
 	"Srinivas Avasarala": {
 		"name": "Srinivas Avasarala",

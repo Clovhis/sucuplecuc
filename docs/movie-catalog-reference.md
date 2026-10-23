@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-22. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-23. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2393
+Total de peliculas: 2398
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ Total de peliculas: 2393
 | 2026 | Clayface | clayface-2026 | Terror | Cine | +18 |
 | 2026 | Clika | clika-2026 | Drama | HBO Max | +16 |
 | 2026 | Código: Venganza | codigo-venganza-2026 | Accion | Otras plataformas | +13 |
-| 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Otras plataformas | +16 |
+| 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Apple TV + Prime Video | +16 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | CordobeCes: La película | cordobeces-la-pelicula-2026 | Comedia | Cine | ATP |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
@@ -84,6 +84,7 @@ Total de peliculas: 2393
 | 2026 | El Huésped Oculto | el-huesped-oculto-2026 | Thriller | HBO Max | +16 |
 | 2026 | El Mago de Kremlin | el-mago-de-kremlin-2026 | Thriller | Otras plataformas | ATP |
 | 2026 | El Momento | el-momento-2026 | Comedia | Prime Video + Apple TV | +17 |
+| 2026 | El paraíso | el-paraiso-2026 | Accion | Netflix | +16 |
 | 2026 | El partido | el-partido-2026 | Documental | Otras plataformas | ATP |
 | 2026 | El pasajero del diablo | el-pasajero-del-diablo-2026 | Terror | Paramount Plus + Apple TV | +17 |
 | 2026 | El pequeño ninja: El origen | el-pequeno-ninja-el-origen-2026 | Animacion | Otras plataformas | ATP |
@@ -131,6 +132,7 @@ Total de peliculas: 2393
 | 2026 | Hope: El primer impacto | hope-el-primer-impacto-2026 | Terror | Cine | +13 |
 | 2026 | Hoppers | hoppers-2026 | Animacion | Otras plataformas | ATP |
 | 2026 | Hospital Británico | hospital-britanico-2026 | Documental | Otras plataformas | ATP |
+| 2026 | Idiotas | idiotas-2026 | Comedia | Prime Video + Apple TV | +18 |
 | 2026 | Impacto mortal | impacto-mortal-2026 | Thriller | Apple TV + Prime Video | +13 |
 | 2026 | In the Hand of Dante | in-the-hand-of-dante-2026 | Thriller | Netflix | +16 |
 | 2026 | Insaciable | insaciable-2026 | Terror | Apple TV + Prime Video | +17 |
@@ -215,6 +217,7 @@ Total de peliculas: 2393
 | 2026 | Mononoke III: La maldición de la serpiente | mononoke-iii-la-maldicion-de-la-serpiente-2026 | Anime | Netflix | +13 |
 | 2026 | Mortal Kombat II | mortal-kombat-ii-2026 | Accion | Otras plataformas | +17 |
 | 2026 | Moscas | moscas-2026 | Comedia | Apple TV | +16 |
+| 2026 | Mother Mary | mother-mary-2026 | Drama | HBO Max | +13 |
 | 2026 | My Best Friend, His Girlfriend and Me | my-best-friend-his-girlfriend-and-me-2026 | Comedia | Netflix | +16 |
 | 2026 | MYSTERY ARENA | mystery-arena-2026 | Thriller | Prime Video | ATP |
 | 2026 | Nada entre los dos | nada-entre-los-dos-2026 | Romance | Otras plataformas | ATP |
@@ -232,6 +235,8 @@ Total de peliculas: 2393
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Panda Plan 2: La tribu mágica | panda-plan-2-la-tribu-magica-2026 | Aventura | Apple TV + Prime Video | ATP |
 | 2026 | Papá a cargo | papa-a-cargo-2026 | Comedia | Apple TV + Flow | ATP |
+| 2026 | Papi Ricky: La película | papi-ricky-la-pelicula-2026 | Comedia | Prime Video | +7 |
+| 2026 | Paralizada por la esperanza: La historia de Maria Bamford | paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026 | Documental | Netflix | +16 |
 | 2026 | Parque Lezama | parque-lezama-2026 | Comedia | Netflix | +16 |
 | 2026 | PAW Patrol: La Dino Película | paw-patrol-la-dino-pelicula-2026 | Animacion | Cine + Flow | ATP |
 | 2026 | Peaky Blinders: El hombre inmortal | peaky-blinders-the-immortal-man-2026 | Drama | Netflix | +16 |
@@ -245,7 +250,7 @@ Total de peliculas: 2393
 | 2026 | Proyecto Salvación | project-hail-mary-2026 | Ciencia ficcion | Prime Video | +13 |
 | 2026 | Psycho Killer | psycho-killer-2026 | Terror | Disney Plus | +17 |
 | 2026 | Puella Magi Madoka Magica: Walpurgisnacht Rising | puella-magi-madoka-magica-walpurgisnacht-rising-2026 | Anime | Otras plataformas | +13 |
-| 2026 | Pulp: ¿Qué harías por una canción más? | pulp-que-harias-por-una-cancion-mas-2026 | Documental | Apple TV | +13 |
+| 2026 | Pulp: ¿Qué harías por una canción más? | pulp-que-harias-por-una-cancion-mas-2026 | Documental | Apple TV + Prime Video | +13 |
 | 2026 | Que Dios perdona a todos | que-dios-perdona-a-todos-2026 | Comedia | Cine | ATP |
 | 2026 | Quiero tu sexo | quiero-tu-sexo-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Red de mentiras | red-de-mentiras-2026 | Thriller | Apple TV | +16 |
@@ -257,7 +262,7 @@ Total de peliculas: 2393
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
 | 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | Apple TV | +16 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
-| 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Apple TV + Prime Video | +17 |
+| 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Paramount Plus + Apple TV | +17 |
 | 2026 | Schumacher 94: Nace una leyenda | schumacher-94-nace-una-leyenda-2026 | Documental | Netflix | +13 |
 | 2026 | Scream 7 | scream-7-2026 | Terror | Paramount Plus | +16 |
 | 2026 | Secretos del deporte: El testimonio de Vince Young | secretos-del-deporte-el-testimonio-de-vince-young-2026 | Documental | Netflix | +13 |

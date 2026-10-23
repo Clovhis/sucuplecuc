@@ -1,0 +1,721 @@
+{
+  "checkedAt": "2026-10-23",
+  "candidatePaths": [
+    "src/data/movies/el-paraiso-2026.json",
+    "src/data/movies/idiotas-2026.json",
+    "src/data/movies/mother-mary-2026.json",
+    "src/data/movies/papi-ricky-la-pelicula-2026.json",
+    "src/data/movies/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.json",
+    "src/data/movies/colony-zona-cero-2026.json",
+    "src/data/movies/scary-movie-6-2026.json",
+    "src/data/movies/pulp-que-harias-por-una-cancion-mas-2026.json"
+  ],
+  "candidateCount": 8,
+  "newMovieCount": 5,
+  "existingMovieCount": 3,
+  "totalMovies": 2398,
+  "newPeople": 12,
+  "retainedPeople": 35,
+  "commands": [
+    {
+      "command": "new-movie --dry-run --json, por cada identidad final",
+      "exitCode": 0,
+      "count": 5
+    },
+    {
+      "command": "enrich-people --missing-only --strict, manifiesto de ocho",
+      "exitCode": 0,
+      "updatedPeople": 0
+    },
+    {
+      "command": "audit:movie-people, manifiesto de ocho",
+      "exitCode": 0,
+      "warnings": [
+        "- cast: Mohan Babu no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- cast: Michaela Coel no tiene fecha de nacimiento pública verificada",
+        "- director: Neil Berkeley no tiene fecha de nacimiento pública verificada",
+        "- director: Neil Berkeley no tiene nacionalidad pública verificada; nationalityPrimary queda ausente."
+      ]
+    },
+    {
+      "command": "images:people:optimize",
+      "exitCode": 0,
+      "newOrReplaced": 13
+    },
+    {
+      "command": "images:people:check",
+      "exitCode": 0,
+      "totalFiles": 5832
+    },
+    {
+      "command": "posters:localize, manifiesto de ocho",
+      "exitCode": 0
+    },
+    {
+      "command": "verify_posters.cjs, manifiesto de ocho",
+      "exitCode": 0
+    },
+    {
+      "command": "test:poster-source-policy",
+      "exitCode": 0
+    },
+    {
+      "command": "audit_recent_movies.cjs, ocho candidatos, YouTube habilitado",
+      "exitCode": 0,
+      "warnings": 24,
+      "findings": [
+        "[INFO] secondary-tear-meter-hidden :: src/data/movies/el-paraiso-2026.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.",
+        "[WARN] editorial-overlap :: src/data/movies/el-paraiso-2026.json :: editorial.becauseYouLiked and editorial.related repeat: kill-bill-vol-1-2003, kill-bill-vol-2-2004.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/el-paraiso-2026.json :: \"Srikanth Odela\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/el-paraiso-2026.json :: \"Nani\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] missing-person-nationality :: src/data/movies/el-paraiso-2026.json :: \"Mohan Babu\" has no verified public nationality; leave nationalityPrimary absent rather than infer it.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/el-paraiso-2026.json :: \"Mohan Babu\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/el-paraiso-2026.json :: \"Sonali Kulkarni\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] editorial-overlap :: src/data/movies/idiotas-2026.json :: editorial.becauseYouLiked and editorial.related repeat: tonto-y-retonto-1994, the-disaster-artist-2017.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/idiotas-2026.json :: \"Macon Blair\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/idiotas-2026.json :: \"O'Shea Jackson Jr.\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] editorial-overlap :: src/data/movies/mother-mary-2026.json :: editorial.becauseYouLiked and editorial.related repeat: tar-2022, perfect-blue-1997.",
+        "[WARN] missing-person-birth :: src/data/movies/mother-mary-2026.json :: \"Michaela Coel\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/mother-mary-2026.json :: \"Michaela Coel\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/mother-mary-2026.json :: \"Hunter Schafer\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] editorial-overlap :: src/data/movies/papi-ricky-la-pelicula-2026.json :: editorial.becauseYouLiked and editorial.related repeat: la-joya-de-la-familia-2005, la-boda-de-rachel-2008.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/papi-ricky-la-pelicula-2026.json :: \"Belén Soto\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/papi-ricky-la-pelicula-2026.json :: \"Jorge Zabaleta\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/papi-ricky-la-pelicula-2026.json :: \"María Elena Swett\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[WARN] editorial-overlap :: src/data/movies/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.json :: editorial.becauseYouLiked and editorial.related repeat: the-king-of-comedy-1982, the-disaster-artist-2017.",
+        "[WARN] missing-person-birth :: src/data/movies/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.json :: \"Neil Berkeley\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.",
+        "[WARN] missing-person-nationality :: src/data/movies/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.json :: \"Neil Berkeley\" has no verified public nationality; leave nationalityPrimary absent rather than infer it.",
+        "[WARN] untrusted-person-image-source :: src/data/movies/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.json :: \"Maria Bamford\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot.",
+        "[INFO] secondary-action-meter-hidden :: src/data/movies/colony-zona-cero-2026.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it.",
+        "[INFO] secondary-horror-meter-hidden :: src/data/movies/scary-movie-6-2026.json :: Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it.",
+        "[WARN] poster-outside-target-size :: src/data/movies/mother-mary-2026.json :: poster is valid at 26036 bytes; preferred range is 40960-81920 bytes. (480x720)",
+        "[WARN] poster-outside-target-size :: src/data/movies/pulp-que-harias-por-una-cancion-mas-2026.json :: poster is valid at 21708 bytes; preferred range is 40960-81920 bytes. (480x720)",
+        "[WARN] youtube-search-unavailable :: src/data/movies/pulp-que-harias-por-una-cancion-mas-2026.json :: YouTube search returned HTTP 302."
+      ]
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    {
+      "command": "test:editorial-meters",
+      "exitCode": 0
+    },
+    {
+      "command": "catalog:movies:check + catalog:people:check + catalog:people:reference:check",
+      "exitCode": 0
+    },
+    {
+      "command": "audit:duplicates",
+      "exitCode": 0,
+      "movies": 2398
+    },
+    {
+      "command": "validate:content -- --skip-build",
+      "exitCode": 0,
+      "note": "Antes del commit detecta cero películas por diff de HEAD; la comprobación del lote se realiza además por el manifiesto explícito de ocho."
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "totalPages": 8050,
+      "notes": "Ejecución final después de incorporar los datos biográficos y la señal Musical verificados, sin regenerar ediciones de home."
+    },
+    {
+      "command": "validate:public-output",
+      "exitCode": 0
+    },
+    {
+      "command": "validate:sitemap-indexability",
+      "exitCode": 0,
+      "canonicalPages": 5645
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "postbuild": [
+    {
+      "name": "audit-built-raw",
+      "exitCode": 1,
+      "errors": [
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/pulp-que-harias-por-una-cancion-mas-2026.json",
+          "message": "Current streaming entry \"Pulp: ¿Qué harías por una canción más?\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        }
+      ],
+      "warnings": 23
+    },
+    {
+      "name": "audit-built-base",
+      "exitCode": 0,
+      "errors": [],
+      "warnings": 23
+    },
+    {
+      "name": "public-output",
+      "exitCode": 0,
+      "errors": [],
+      "warnings": 0,
+      "result": "Public output validation passed: no forbidden legacy platform references found in dist.\n"
+    },
+    {
+      "name": "sitemap",
+      "exitCode": 0,
+      "errors": [],
+      "warnings": 0,
+      "result": "Sitemap indexability validation passed: 5645 canonical pages.\n"
+    }
+  ],
+  "streamingOverride": {
+    "rawExitCode": 1,
+    "rawError": "streaming-carousel-missing-entry para Pulp",
+    "reason": "El chequeo auxiliar exige todo título dentro de42 días e ignora la selección canónica con máximo12 y slots de altas recientes. Pulp no pertenece a los12 seleccionados. No es un error de disponibilidad ni de render.",
+    "canonicalFunction": "getCurrentStreamingMovieReleases(new Date(2026-10-23),12)",
+    "canonicalOrder": [
+      "mother-mary-2026",
+      "papi-ricky-la-pelicula-2026",
+      "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+      "el-paraiso-2026",
+      "idiotas-2026",
+      "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+      "los-mejores-anos-de-nuestra-vida-2026",
+      "lego-friends-heartlake-el-musical-2026",
+      "marsupilami-caos-a-bordo-2026",
+      "cual-es-el-precio-de-la-dignidad-2026",
+      "garuda-dare-to-dream-2026",
+      "masterplan-2026"
+    ],
+    "desktopExactMatch": true,
+    "mobileExactMatch": true,
+    "loadedPerProfile": 12,
+    "productCodeModified": false
+  },
+  "browser": [
+    {
+      "profile": "chromium-desktop",
+      "pass": true,
+      "movies": [
+        {
+          "slug": "el-paraiso-2026",
+          "poster": {
+            "src": "/assets/posters/2026/el-paraiso-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "idiotas-2026",
+          "poster": {
+            "src": "/assets/posters/2026/idiotas-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "mother-mary-2026",
+          "poster": {
+            "src": "/assets/posters/2026/mother-mary-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "poster": {
+            "src": "/assets/posters/2026/papi-ricky-la-pelicula-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "poster": {
+            "src": "/assets/posters/2026/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "colony-zona-cero-2026",
+          "poster": {
+            "src": "/assets/posters/2026/colony-zona-cero-2026.webp",
+            "width": 419,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 5,
+          "portraitsLoaded": 5
+        },
+        {
+          "slug": "scary-movie-6-2026",
+          "poster": {
+            "src": "/assets/posters/2026/scary-movie-6-2026.webp",
+            "width": 480,
+            "height": 686
+          },
+          "overflow": false,
+          "portraitsTotal": 6,
+          "portraitsLoaded": 6
+        },
+        {
+          "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+          "poster": {
+            "src": "/assets/posters/2026/pulp-que-harias-por-una-cancion-mas-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        }
+      ],
+      "rail": {
+        "expected": [
+          "mother-mary-2026",
+          "papi-ricky-la-pelicula-2026",
+          "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "el-paraiso-2026",
+          "idiotas-2026",
+          "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+          "los-mejores-anos-de-nuestra-vida-2026",
+          "lego-friends-heartlake-el-musical-2026",
+          "marsupilami-caos-a-bordo-2026",
+          "cual-es-el-precio-de-la-dignidad-2026",
+          "garuda-dare-to-dream-2026",
+          "masterplan-2026"
+        ],
+        "actual": [
+          "mother-mary-2026",
+          "papi-ricky-la-pelicula-2026",
+          "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "el-paraiso-2026",
+          "idiotas-2026",
+          "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+          "los-mejores-anos-de-nuestra-vida-2026",
+          "lego-friends-heartlake-el-musical-2026",
+          "marsupilami-caos-a-bordo-2026",
+          "cual-es-el-precio-de-la-dignidad-2026",
+          "garuda-dare-to-dream-2026",
+          "masterplan-2026"
+        ],
+        "total": 12,
+        "loaded": 12
+      },
+      "filters": [
+        {
+          "slug": "el-paraiso-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "el-paraiso-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "idiotas-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "idiotas-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "mother-mary-2026",
+          "genre": "musical",
+          "included": true,
+          "excluded": false
+        },
+        {
+          "slug": "mother-mary-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "colony-zona-cero-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "colony-zona-cero-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "scary-movie-6-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "scary-movie-6-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "el-paraiso-2026",
+          "genre": "musical,accion",
+          "orIncluded": true
+        },
+        {
+          "slug": "idiotas-2026",
+          "genre": "musical,comedia",
+          "orIncluded": true
+        },
+        {
+          "slug": "mother-mary-2026",
+          "genre": "musical,drama",
+          "orIncluded": true
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "genre": "musical,comedia",
+          "orIncluded": true
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "genre": "musical,documental",
+          "orIncluded": true
+        }
+      ]
+    },
+    {
+      "profile": "webkit-mobile",
+      "pass": true,
+      "movies": [
+        {
+          "slug": "el-paraiso-2026",
+          "poster": {
+            "src": "/assets/posters/2026/el-paraiso-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "idiotas-2026",
+          "poster": {
+            "src": "/assets/posters/2026/idiotas-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "mother-mary-2026",
+          "poster": {
+            "src": "/assets/posters/2026/mother-mary-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "poster": {
+            "src": "/assets/posters/2026/papi-ricky-la-pelicula-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "poster": {
+            "src": "/assets/posters/2026/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        },
+        {
+          "slug": "colony-zona-cero-2026",
+          "poster": {
+            "src": "/assets/posters/2026/colony-zona-cero-2026.webp",
+            "width": 419,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 5,
+          "portraitsLoaded": 5
+        },
+        {
+          "slug": "scary-movie-6-2026",
+          "poster": {
+            "src": "/assets/posters/2026/scary-movie-6-2026.webp",
+            "width": 480,
+            "height": 686
+          },
+          "overflow": false,
+          "portraitsTotal": 6,
+          "portraitsLoaded": 6
+        },
+        {
+          "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+          "poster": {
+            "src": "/assets/posters/2026/pulp-que-harias-por-una-cancion-mas-2026.webp",
+            "width": 480,
+            "height": 720
+          },
+          "overflow": false,
+          "portraitsTotal": 4,
+          "portraitsLoaded": 4
+        }
+      ],
+      "rail": {
+        "expected": [
+          "mother-mary-2026",
+          "papi-ricky-la-pelicula-2026",
+          "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "el-paraiso-2026",
+          "idiotas-2026",
+          "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+          "los-mejores-anos-de-nuestra-vida-2026",
+          "lego-friends-heartlake-el-musical-2026",
+          "marsupilami-caos-a-bordo-2026",
+          "cual-es-el-precio-de-la-dignidad-2026",
+          "garuda-dare-to-dream-2026",
+          "masterplan-2026"
+        ],
+        "actual": [
+          "mother-mary-2026",
+          "papi-ricky-la-pelicula-2026",
+          "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "el-paraiso-2026",
+          "idiotas-2026",
+          "las-redes-sociales-mataron-a-la-estrella-de-cine-2026",
+          "los-mejores-anos-de-nuestra-vida-2026",
+          "lego-friends-heartlake-el-musical-2026",
+          "marsupilami-caos-a-bordo-2026",
+          "cual-es-el-precio-de-la-dignidad-2026",
+          "garuda-dare-to-dream-2026",
+          "masterplan-2026"
+        ],
+        "total": 12,
+        "loaded": 12
+      },
+      "filters": [
+        {
+          "slug": "el-paraiso-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "el-paraiso-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "idiotas-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "idiotas-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "mother-mary-2026",
+          "genre": "musical",
+          "included": true,
+          "excluded": false
+        },
+        {
+          "slug": "mother-mary-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "colony-zona-cero-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "colony-zona-cero-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "scary-movie-6-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "scary-movie-6-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+          "genre": "musical",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+          "genre": "guerra",
+          "included": false,
+          "excluded": true
+        },
+        {
+          "slug": "el-paraiso-2026",
+          "genre": "musical,accion",
+          "orIncluded": true
+        },
+        {
+          "slug": "idiotas-2026",
+          "genre": "musical,comedia",
+          "orIncluded": true
+        },
+        {
+          "slug": "mother-mary-2026",
+          "genre": "musical,drama",
+          "orIncluded": true
+        },
+        {
+          "slug": "papi-ricky-la-pelicula-2026",
+          "genre": "musical,comedia",
+          "orIncluded": true
+        },
+        {
+          "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+          "genre": "musical,documental",
+          "orIncluded": true
+        }
+      ]
+    }
+  ],
+  "manualQuality": {
+    "posters": "8/8 artes finales inspeccionadas; cinco fuentes nuevas780x1170 a480x720, dos pesos inferiores al objetivo pero imágenes nítidas, sin inflar artificialmente archivos.",
+    "portraits": "35/35 identidades retenidas inspeccionadas y retratos decodificados en ambos navegadores; resolución auditada localmente.",
+    "mobile": "320px en WebKit, ocho rutas sin desborde horizontal.",
+    "optionalMetadata": "Mohan Babu sin fila de nacionalidad; Michaela Coel sin nacimiento por conflicto; Neil Berkeley conserva omisiones previas. Los tres se verifican sin placeholders en las tarjetas.",
+    "copy": "Sinopsis, reseñas y guías originales; no se copió, tradujo ni reutilizó prosa de las fuentes.",
+    "genres": "Mother Mary incluida en Musical por coreografía narrativa acreditada por Lowery; las otras siete excluidas. Las ocho excluidas de Guerra. Controles OR Musical+género principal positivos para las cinco altas."
+  },
+  "scope": {
+    "uiModified": false,
+    "workflowsModified": false,
+    "siteScriptsModified": false,
+    "editorialsCreated": 0,
+    "theatricalLabelsChanged": 0,
+    "independentSnapshotsChanged": 0,
+    "generatedCatalogs": true
+  },
+  "cleanup": {
+    "initialUntracked": ".tmp/ con cartelera-2026-10-22 y editorial-estrenos-2026-10-22",
+    "policy": "Conservar archivos anteriores; archivar los temporales fuera del repositorio al cerrar la publicación, sin eliminarlos."
+  }
+}

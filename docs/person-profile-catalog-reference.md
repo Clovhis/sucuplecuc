@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-22. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-23. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4299
+Total de vínculos de películas del catálogo: 4301
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -62,7 +62,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Anjelica Huston | `anjelica-huston` | /personas/anjelica-huston/ | Actriz | 3 | 4 |
 | Anna Faris | `anna-faris` | /personas/anna-faris/ | Actriz | 4 | 6 |
 | Anna Kendrick | `anna-kendrick` | /personas/anna-kendrick/ | Actriz | 6 | 6 |
-| Anne Hathaway | `anne-hathaway` | /personas/anne-hathaway/ | Actriz | 16 | 5 |
+| Anne Hathaway | `anne-hathaway` | /personas/anne-hathaway/ | Actriz | 17 | 5 |
 | Annette Bening | `annette-bening` | /personas/annette-bening/ | Actriz | 3 | 7 |
 | Anthony Hopkins | `anthony-hopkins` | /personas/anthony-hopkins/ | Actor | 16 | 3 |
 | Anthony Mackie | `anthony-mackie` | /personas/anthony-mackie/ | Actor | 6 | 6 |
@@ -684,7 +684,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Sean Connery | `sean-connery` | /personas/sean-connery/ | Actor | 4 | 5 |
 | Sean Penn | `sean-penn` | /personas/sean-penn/ | Actor | 13 | 4 |
 | Sebastián Borensztein | `sebastian-borensztein` | /personas/sebastian-borensztein/ | Director / Guionista | 3 | 5 |
-| Sebastián Schindel | `sebastian-schindel` | /personas/sebastian-schindel/ | Director / Guionista / Productor | 1 | 5 |
+| Sebastián Schindel | `sebastian-schindel` | /personas/sebastian-schindel/ | Director / Guionista / Productor | 2 | 5 |
 | Sebastian Stan | `sebastian-stan` | /personas/sebastian-stan/ | Actor | 5 | 7 |
 | Sergio Boris | `sergio-boris` | /personas/sergio-boris/ | Actor / Director / Dramaturgo | 1 | 5 |
 | Sergio Leone | `sergio-leone` | /personas/sergio-leone/ | Director / Guionista / Productor | 3 | 6 |

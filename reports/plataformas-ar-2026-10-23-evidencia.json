@@ -1,0 +1,1314 @@
+{
+  "checkedAt": "2026-10-23",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "window": {
+    "from": "2026-10-19",
+    "through": "2026-10-23"
+  },
+  "originalYear": 2026,
+  "scope": "Películas/mediometrajes/especiales de plataforma, sin cines ni nota editorial",
+  "discovery": {
+    "rawUnique": 87,
+    "representedOffers": 23,
+    "additionalFlow": 1,
+    "paginationExhausted": true,
+    "dates": [
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23"
+    ],
+    "counts": {
+      "added": 5,
+      "updated": 3,
+      "alreadyCurrent": 6,
+      "pending": 9,
+      "excludedOriginal2025": 1
+    }
+  },
+  "providers": [
+    {
+      "name": "Netflix",
+      "result": "El paraíso, Maria Bamford altas; Contra el huracán, Hot Wheels y Theo Von pendientes; Primate y Hombres G ya cargadas."
+    },
+    {
+      "name": "HBO Max",
+      "result": "Mother Mary: suscripción AR confirmada con ficha oficial localizada.",
+      "source": "https://www.hbomax.com/ar/es/movies/mother-mary/4a7dd48c-0048-4abb-a0e7-f218d40e6a90"
+    },
+    {
+      "name": "Prime Video",
+      "result": "Papi Ricky alta FLATRATE; Patagonian Chimeras, Neon Affair, Echo Point pendientes; Idiotas/Colony/Pulp son tienda RENT/BUY, no suscripción."
+    },
+    {
+      "name": "Disney Plus",
+      "result": "Moana Live Action ya cargada, no duplicar como Vaiana; especial CMA pendiente de medios."
+    },
+    {
+      "name": "Paramount Plus",
+      "result": "Scary Movie incorporada como proveedor principal FLATRATE."
+    },
+    {
+      "name": "Apple TV",
+      "result": "Idiotas alta y Colony/Pulp actualizadas, operaciones de tienda; no nuevo Apple Original esta semana. Tenzing es del 16/10.",
+      "source": "https://www.apple.com/tv-pr/news/2026/09/apple-original-films-unveils-tenzing-trailer/"
+    },
+    {
+      "name": "Crunchyroll",
+      "result": "Sin película original 2026 con llegada AR nueva identificada en las conexiones agotadas de esta semana; se excluyen episodios/series."
+    },
+    {
+      "name": "Flow",
+      "result": "Tragedia 22/10 nativa pendiente de score. Scary Movie es bundle Paramount y Mother Mary premium HBO anuncia 24/10, no son prueba de Flow nativo vigente.",
+      "source": "https://www.otroscines.com/post/todas-las-peliculas-y-series-que-llegan-a-flow-en-octubre-2026"
+    },
+    {
+      "name": "CINE.AR",
+      "result": "Portal accesible 200. C.I.T.A. es de 2019, Bajo mi piel morena 2020 y Me encontrarás en lo profundo del abismo 2023: excluidas como novedades originales 2026. No se confirmó una llegada nueva de 2026 en la ventana; Conociendo la raíz era un pendiente anterior.",
+      "source": "https://play.cine.ar/"
+    },
+    {
+      "name": "Mercado Play",
+      "result": "403 en el portal AR hoy. Sin novedad 2026 de esta ventana corroborada; limitación de acceso explícita, no se afirma catálogo exhaustivo.",
+      "source": "https://play.mercadolibre.com.ar/"
+    },
+    {
+      "name": "DGO",
+      "result": "Portal AR 200 sin inventario público fechable por película; sin novedad original 2026 de la ventana corroborada. No se infieren HBO/Paramount por el bundle.",
+      "source": "https://www.directvgo.com/ar/home"
+    },
+    {
+      "name": "Otras plataformas",
+      "result": "No es un proveedor comprobado: no se usa para ocultar una disponibilidad pendiente. Colony pasa de esa etiqueta a tiendas AR verificadas."
+    }
+  ],
+  "candidates": [
+    {
+      "path": "src/data/movies/el-paraiso-2026.json",
+      "slug": "el-paraiso-2026",
+      "title": "El paraíso",
+      "year": 2026,
+      "releaseDate": "2026-10-22",
+      "platforms": [
+        "Netflix"
+      ],
+      "country": "IN",
+      "audienceRating": "+16",
+      "runtimeMinutes": 174,
+      "director": "Srikanth Odela",
+      "mainCast": [
+        "Nani",
+        "Mohan Babu",
+        "Sonali Kulkarni"
+      ],
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/the_paradise_2026",
+        "metric": "Popcornmeter verificado",
+        "raw": 27,
+        "scale": 100,
+        "sample": "100+ Verified Ratings",
+        "normalized": 3,
+        "final": 3
+      },
+      "primaryCategory": "Accion",
+      "genres": [
+        "Acción",
+        "Drama"
+      ],
+      "musical": false,
+      "war": false,
+      "genreReason": "La premisa y el tráiler no plantean guerra central ni narración cantada/coreografiada.",
+      "posterSource": "https://image.tmdb.org/t/p/w780/smghVMoMWSIFi5dgIz4w1UIcEcY.jpg",
+      "poster": "assets/posters/2026/el-paraiso-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=Y3xewv1ZnHc",
+      "metadataSources": [
+        "https://www.themoviedb.org/movie/1376856",
+        "https://www.justwatch.com/ar/pelicula/el-paraiso-2026"
+      ]
+    },
+    {
+      "path": "src/data/movies/idiotas-2026.json",
+      "slug": "idiotas-2026",
+      "title": "Idiotas",
+      "year": 2026,
+      "releaseDate": "2026-10-22",
+      "platforms": [
+        "Prime Video",
+        "Apple TV"
+      ],
+      "country": "US",
+      "audienceRating": "+18",
+      "runtimeMinutes": 98,
+      "director": "Macon Blair",
+      "mainCast": [
+        "Dave Franco",
+        "O'Shea Jackson Jr.",
+        "Mason Thames"
+      ],
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/idiots_2026",
+        "metric": "Popcornmeter verificado",
+        "raw": 57,
+        "scale": 100,
+        "sample": "100+ Verified Ratings",
+        "normalized": 6,
+        "final": 6
+      },
+      "primaryCategory": "Comedia",
+      "genres": [
+        "Comedia",
+        "Crimen"
+      ],
+      "musical": false,
+      "war": false,
+      "genreReason": "La premisa y el tráiler no plantean guerra central ni narración cantada/coreografiada.",
+      "posterSource": "https://image.tmdb.org/t/p/w780/l1JFNC1SdgyXVr7BaD5ehaYBvOC.jpg",
+      "poster": "assets/posters/2026/idiotas-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=UoAf0LNAn30",
+      "metadataSources": [
+        "https://www.themoviedb.org/movie/445466",
+        "https://www.justwatch.com/ar/pelicula/the-shitheads"
+      ]
+    },
+    {
+      "path": "src/data/movies/mother-mary-2026.json",
+      "slug": "mother-mary-2026",
+      "title": "Mother Mary",
+      "year": 2026,
+      "releaseDate": "2026-10-23",
+      "platforms": [
+        "HBO Max"
+      ],
+      "country": "DE, FI, IE, US",
+      "audienceRating": "+13",
+      "runtimeMinutes": 111,
+      "director": "David Lowery",
+      "mainCast": [
+        "Anne Hathaway",
+        "Michaela Coel",
+        "Hunter Schafer"
+      ],
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/mother_mary",
+        "metric": "Popcornmeter verificado",
+        "raw": 60,
+        "scale": 100,
+        "sample": "250+ Verified Ratings",
+        "normalized": 6,
+        "final": 6
+      },
+      "primaryCategory": "Drama",
+      "genres": [
+        "Drama",
+        "Suspenso",
+        "Musical"
+      ],
+      "musical": true,
+      "war": false,
+      "genreReason": "En el podcast oficial de A24, Lowery describe la coreografía del granero como el monólogo de Mary, central para expresar su conflicto; Hathaway explica que allí se comunica lo que el personaje no puede decir. La danza lleva la narración, no es solamente la profesión musical de la protagonista. Se conserva Drama como categoría principal.",
+      "posterSource": "https://image.tmdb.org/t/p/w780/uVcsN3yoHh7ZcJ6ecj1FJfv7dLa.jpg",
+      "poster": "assets/posters/2026/mother-mary-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=aqYHOsuje1E",
+      "metadataSources": [
+        "https://www.themoviedb.org/movie/1102883",
+        "https://www.justwatch.com/ar/pelicula/mother-mary",
+        "https://a24films.com/notes/2026/05/weeping-bleeding-hearts-with-david-lowery-anne-hathaway"
+      ]
+    },
+    {
+      "path": "src/data/movies/papi-ricky-la-pelicula-2026.json",
+      "slug": "papi-ricky-la-pelicula-2026",
+      "title": "Papi Ricky: La película",
+      "year": 2026,
+      "releaseDate": "2026-10-23",
+      "platforms": [
+        "Prime Video"
+      ],
+      "country": "CL",
+      "audienceRating": "+7",
+      "runtimeMinutes": 99,
+      "director": "Sebastián Schindel",
+      "mainCast": [
+        "Belén Soto",
+        "Jorge Zabaleta",
+        "María Elena Swett"
+      ],
+      "score": {
+        "source": "https://www.justwatch.com/ar/pelicula/papi-ricky-la-pelicula",
+        "corroboration": "https://www.primevideo.com/-/es/detail/amzn1.dv.gti.9ba1d79b-16e0-4bd1-807b-6c2e07c7b8a0",
+        "metric": "IMDb indirecto mediante JW AR y Prime Video",
+        "raw": 7.3,
+        "scale": 10,
+        "sample": "25 votos en JW; Prime no publica muestra",
+        "normalized": 7,
+        "confidenceCeiling": 8,
+        "final": 7
+      },
+      "primaryCategory": "Comedia",
+      "genres": [
+        "Comedia",
+        "Romance"
+      ],
+      "musical": false,
+      "war": false,
+      "genreReason": "La premisa y el tráiler no plantean guerra central ni narración cantada/coreografiada.",
+      "posterSource": "https://image.tmdb.org/t/p/w780/y0EhzwaNnpMezpIDNoBcRCoAhMN.jpg",
+      "poster": "assets/posters/2026/papi-ricky-la-pelicula-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=uKGHglG2nk0",
+      "metadataSources": [
+        "https://www.themoviedb.org/movie/1752312",
+        "https://www.justwatch.com/ar/pelicula/papi-ricky-la-pelicula"
+      ]
+    },
+    {
+      "path": "src/data/movies/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.json",
+      "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026",
+      "title": "Paralizada por la esperanza: La historia de Maria Bamford",
+      "year": 2026,
+      "releaseDate": "2026-10-23",
+      "platforms": [
+        "Netflix"
+      ],
+      "country": "US",
+      "audienceRating": "+16",
+      "runtimeMinutes": 116,
+      "director": "Judd Apatow, Neil Berkeley",
+      "mainCast": [
+        "Maria Bamford",
+        "Patton Oswalt"
+      ],
+      "score": {
+        "source": "https://www.justwatch.com/ar/pelicula/paralyzed-by-hope-the-maria-bamford-story",
+        "metric": "IMDb indirecto mediante JW AR",
+        "raw": 7.9,
+        "scale": 10,
+        "sample": "45 votos",
+        "normalized": 8,
+        "confidenceCeiling": 8,
+        "final": 8,
+        "note": "RT no tiene audiencia numérica; no se usa su Tomatometer 94 ni Watchmode critic64 al existir una métrica de audiencia."
+      },
+      "primaryCategory": "Documental",
+      "genres": [
+        "Documental"
+      ],
+      "musical": false,
+      "war": false,
+      "genreReason": "Registro documental, sin narrativa de ficción sostenida por números musicales ni conflicto militar central.",
+      "posterSource": "https://image.tmdb.org/t/p/w780/waH2eiMaEW987JUTWyrj4x4d63k.jpg",
+      "poster": "assets/posters/2026/paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=36ZEt48kU7k",
+      "metadataSources": [
+        "https://www.themoviedb.org/movie/1596294",
+        "https://www.justwatch.com/ar/pelicula/paralyzed-by-hope-the-maria-bamford-story"
+      ]
+    },
+    {
+      "path": "src/data/movies/colony-zona-cero-2026.json",
+      "slug": "colony-zona-cero-2026",
+      "title": "Colony: Zona Cero",
+      "year": 2026,
+      "releaseDate": "2026-09-03",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "country": "KR",
+      "audienceRating": "+16",
+      "runtimeMinutes": 122,
+      "director": "Yeon Sang-ho",
+      "mainCast": [
+        "Jun Ji-hyun",
+        "Koo Kyo-hwan",
+        "Ji Chang-wook",
+        "Kim Shin-rok"
+      ],
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/colony",
+        "metric": "Popcornmeter verificado",
+        "raw": 93,
+        "scale": 100,
+        "sample": "250+ Verified Ratings",
+        "normalized": 9,
+        "masterpieceCeiling": 8,
+        "explicitUserCeiling": 8,
+        "final": 8,
+        "note": "No se acredita reconocimiento perdurable de obra maestra; se conserva el score anterior 8."
+      },
+      "primaryCategory": "Terror",
+      "genres": [
+        "Terror",
+        "Ciencia ficción",
+        "Acción"
+      ],
+      "musical": false,
+      "war": false,
+      "genreReason": "La premisa y el tráiler no plantean guerra central ni narración cantada/coreografiada.",
+      "poster": "assets/posters/2026/colony-zona-cero-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=DdSod74AsBY",
+      "metadataSources": [
+        "https://www.justwatch.com/ar/pelicula/colony"
+      ]
+    },
+    {
+      "path": "src/data/movies/scary-movie-6-2026.json",
+      "slug": "scary-movie-6-2026",
+      "title": "Scary Movie 6",
+      "year": 2026,
+      "releaseDate": "2026-06-04",
+      "platforms": [
+        "Paramount Plus",
+        "Apple TV"
+      ],
+      "country": "US",
+      "audienceRating": "+17",
+      "runtimeMinutes": 95,
+      "director": "Michael Tiddes",
+      "mainCast": [
+        "Anna Faris",
+        "Regina Hall",
+        "Marlon Wayans",
+        "Shawn Wayans",
+        "Chris Elliott"
+      ],
+      "score": {
+        "source": "https://www.rottentomatoes.com/m/scary_movie_2026",
+        "metric": "Popcornmeter verificado",
+        "raw": 63,
+        "scale": 100,
+        "sample": "5,000+ Verified Ratings",
+        "normalized": 6,
+        "final": 6
+      },
+      "primaryCategory": "Comedia",
+      "genres": [
+        "Comedia",
+        "Parodia",
+        "Terror"
+      ],
+      "musical": false,
+      "war": false,
+      "genreReason": "La premisa y el tráiler no plantean guerra central ni narración cantada/coreografiada.",
+      "poster": "assets/posters/2026/scary-movie-6-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=0fZ58S-7QP0",
+      "metadataSources": [
+        "https://www.justwatch.com/ar/pelicula/scary-movie-6"
+      ]
+    },
+    {
+      "path": "src/data/movies/pulp-que-harias-por-una-cancion-mas-2026.json",
+      "slug": "pulp-que-harias-por-una-cancion-mas-2026",
+      "title": "Pulp: ¿Qué harías por una canción más?",
+      "year": 2026,
+      "releaseDate": "2026-10-07",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "country": "GB",
+      "audienceRating": "+13",
+      "runtimeMinutes": 98,
+      "director": "Garth Jennings",
+      "mainCast": [
+        "Jarvis Cocker",
+        "Candida Doyle",
+        "Nick Banks"
+      ],
+      "score": {
+        "source": "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+        "metric": "IMDb indirecto mediante JW AR",
+        "raw": 7.5,
+        "scale": 10,
+        "sample": "299 votos",
+        "normalized": 8,
+        "confidenceCeiling": 8,
+        "final": 8,
+        "note": "RT sin porcentaje de audiencia; Watchmode 7.3/10 sin muestra es fallback inferior y no sustituye la observación IMDb de JW."
+      },
+      "primaryCategory": "Documental",
+      "genres": [
+        "Documental"
+      ],
+      "musical": false,
+      "war": false,
+      "genreReason": "Registro documental, sin narrativa de ficción sostenida por números musicales ni conflicto militar central.",
+      "poster": "assets/posters/2026/pulp-que-harias-por-una-cancion-mas-2026.webp",
+      "trailer": "https://www.youtube.com/watch?v=BPIyAvBd6a4",
+      "metadataSources": [
+        "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas"
+      ]
+    }
+  ],
+  "discoveries": [
+    {
+      "id": "tm1928868",
+      "title": "La Invitacion",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/the-invite",
+      "externalIds": {
+        "imdbId": "tt14173636",
+        "tmdbId": "950028"
+      },
+      "observedRating": {
+        "imdbScore": 7.4,
+        "imdbVotes": 88100,
+        "tmdbScore": 7.212
+      },
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "date": "2026-10-19",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "date": "2026-10-19",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.88dcf90e-d536-4243-8af9-ce38f369eb1b"
+        }
+      ],
+      "disposition": "already-current",
+      "slug": "la-invitacion-2026"
+    },
+    {
+      "id": "tm1677493",
+      "title": "Primate",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/primate",
+      "externalIds": {
+        "imdbId": "tt33028778",
+        "tmdbId": "1315303"
+      },
+      "observedRating": {
+        "imdbScore": 5.8,
+        "imdbVotes": 38580,
+        "tmdbScore": 6.446
+      },
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "date": "2026-10-19",
+          "url": "https://www.netflix.com/title/82676945"
+        }
+      ],
+      "disposition": "already-current",
+      "slug": "primate-2026"
+    },
+    {
+      "id": "tm1918977",
+      "title": "Los mejores años de nuestra vida",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/los-mejores-anos-de-nuestra-vida-2026",
+      "externalIds": {
+        "imdbId": "tt38990608",
+        "tmdbId": "1583875"
+      },
+      "observedRating": {
+        "imdbScore": 7.6,
+        "imdbVotes": 73,
+        "tmdbScore": 8
+      },
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "date": "2026-10-19",
+          "url": "https://www.netflix.com/title/83023630"
+        }
+      ],
+      "disposition": "already-current",
+      "slug": "los-mejores-anos-de-nuestra-vida-2026"
+    },
+    {
+      "id": "tm1265001",
+      "title": "Spider-Man: Un nuevo día",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/untitled-spider-man-sequel",
+      "externalIds": {
+        "imdbId": "tt22084616",
+        "tmdbId": "969681"
+      },
+      "observedRating": {
+        "imdbScore": 7.9,
+        "imdbVotes": 361076,
+        "tmdbScore": 8.468
+      },
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5"
+        }
+      ],
+      "disposition": "already-current",
+      "slug": "spider-man-brand-new-day-2026"
+    },
+    {
+      "id": "tm2982643",
+      "title": "Echo Point",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/echo-point",
+      "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1764193"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "date": "2026-10-20",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e98a6739-f6e8-4cb3-b9df-837db922b091"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "Sin retrato atribuible de Evan Marcewicz; las búsquedas de Evan Neal tampoco aportan una foto segura. No se sustituyen nombres ni se rellenan créditos.",
+      "sources": [
+        "https://www.themoviedb.org/person/5764143",
+        "https://www.themoviedb.org/movie/1764193",
+        "https://www.youtube.com/watch?v=3pHhoZtKhyQ"
+      ],
+      "watchmode": "Coincidencia con IMDb tt36393405 / TMDb 1764193, sin director ni rating numérico."
+    },
+    {
+      "id": "tm3019916",
+      "title": "Hot Wheels, ¡a correr! Ataque del T-Rex",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/hot-wheels-maxima-velocidad-ataque-del-t-rex",
+      "externalIds": {
+        "imdbId": "tt49317723",
+        "tmdbId": "1802674"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "date": "2026-10-20",
+          "url": "https://www.netflix.com/title/82063750"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "Sin agregado numérico del especial exacto, reparto original completo y tráiler oficial YouTube resueltos. No se usan ratings ni créditos de la serie.",
+      "sources": [
+        "https://www.imdb.com/title/tt49317723/",
+        "https://www.themoviedb.org/movie/1802674",
+        "https://www.movieguide.org/reviews/hot-wheels-lets-race-attack-of-the-t-rex.html"
+      ],
+      "watchmode": "Sin coincidencia de título. Movieguide devuelve 403; no se interpreta inaccesibilidad como ausencia de crítica."
+    },
+    {
+      "id": "tm2988806",
+      "title": "Las Redes Sociales Mataron a la Estrella de Cine",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/las-redes-sociales-mataron-a-la-estrella-de-cine",
+      "externalIds": {
+        "imdbId": "tt45635534",
+        "tmdbId": "1775802"
+      },
+      "observedRating": {
+        "imdbScore": 5.3,
+        "imdbVotes": 38,
+        "tmdbScore": 4
+      },
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "date": "2026-10-20",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c95663de-0a84-4781-ae9f-c60387e2d5d1"
+        }
+      ],
+      "disposition": "already-current",
+      "slug": "las-redes-sociales-mataron-a-la-estrella-de-cine-2026"
+    },
+    {
+      "id": "tm3016554",
+      "title": "Theo Von: I'm Doing Fine",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/theo-von-im-doing-fine",
+      "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1795934"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": 1
+      },
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "date": "2026-10-20",
+          "url": "https://www.netflix.com/title/82112610"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "Especial con un único intérprete principal. No cumple el piso obligatorio de dos intérpretes principales con nombre y apellido y retrato; no se inventa un segundo participante.",
+      "sources": [
+        "https://www.justwatch.com/ar/pelicula/theo-von-im-doing-fine"
+      ]
+    },
+    {
+      "id": "tm1349352",
+      "title": "Vaiana",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/vaiana-2025",
+      "externalIds": {
+        "imdbId": "tt27419466",
+        "tmdbId": "1108427"
+      },
+      "observedRating": {
+        "imdbScore": 5.8,
+        "imdbVotes": 19856,
+        "tmdbScore": 7.496
+      },
+      "offers": [
+        {
+          "provider": "Disney Plus",
+          "type": "FLATRATE",
+          "date": "2026-10-21",
+          "url": "https://www.disneyplus.com/browse/entity-46bee9e1-869a-4a04-a145-de2c28552866"
+        }
+      ],
+      "disposition": "already-current",
+      "slug": "moana-live-action-2026"
+    },
+    {
+      "id": "tm2988199",
+      "title": "Neon Affair",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/neon-affair",
+      "externalIds": {
+        "imdbId": "tt30797477",
+        "tmdbId": null
+      },
+      "observedRating": {
+        "imdbScore": 7.6,
+        "imdbVotes": 11,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "date": "2026-10-21",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3f206ae0-5613-4daa-8fa5-dac01d3403c4"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "Sin retrato atribuible del director Sean Hinds, IMDb nm14609768. TMDb 5177200 recuperado a partir del nuevo ID del film, sin imagen de perfil. Se descarta el homónimo norirlandés nm0385595.",
+      "sources": [
+        "https://www.themoviedb.org/movie/1694394",
+        "https://www.themoviedb.org/person/5177200-sean-hinds",
+        "https://www.imdb.com/name/nm14609768/",
+        "https://www.youtube.com/watch?v=CbWTPW_TDJY"
+      ],
+      "watchmode": "Recupera IMDb tt30797477 / TMDb 1694394, sin director. IMDb 7.6/11 visible mediante JW no elimina el bloqueo de retrato."
+    },
+    {
+      "id": "tm1977332",
+      "title": "Zona Cero",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/colony",
+      "externalIds": {
+        "imdbId": "tt34385135",
+        "tmdbId": "1375646"
+      },
+      "observedRating": {
+        "imdbScore": 6.5,
+        "imdbVotes": 20718,
+        "tmdbScore": 8.114
+      },
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a198f4dc-2fbe-4a7b-8ad3-cdcda081e541"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/zona-cero/umc.cmc.2o7rihh36draw9h7t5scg0mxk?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6818678269"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a198f4dc-2fbe-4a7b-8ad3-cdcda081e541"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/zona-cero/umc.cmc.2o7rihh36draw9h7t5scg0mxk?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6818678269"
+        }
+      ],
+      "disposition": "updated",
+      "slug": "colony-zona-cero-2026"
+    },
+    {
+      "id": "tm1472679",
+      "title": "Scary Movie: Terroríficamente incorrecta",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/scary-movie-6",
+      "externalIds": {
+        "imdbId": "tt32093575",
+        "tmdbId": "1273221"
+      },
+      "observedRating": {
+        "imdbScore": 4.8,
+        "imdbVotes": 62829,
+        "tmdbScore": 6.342
+      },
+      "offers": [
+        {
+          "provider": "Paramount Plus",
+          "type": "FLATRATE",
+          "date": "2026-10-22",
+          "url": "https://www.paramountplus.com/movies/scary-movie-2026/ALVE01M0K1HMW7E0ZSE6PJ6417ZRWW?searchReferral=&amp;utm_source=publisher"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.4eebc4fb-3a8e-4a6a-b7c5-5b0b42de19d1"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.4eebc4fb-3a8e-4a6a-b7c5-5b0b42de19d1"
+        }
+      ],
+      "disposition": "updated",
+      "slug": "scary-movie-6-2026"
+    },
+    {
+      "id": "tm1605362",
+      "title": "El Paraiso",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/el-paraiso-2026",
+      "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1376856"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": 4.4
+      },
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "date": "2026-10-22",
+          "url": "https://www.netflix.com/title/82134615"
+        }
+      ],
+      "disposition": "added",
+      "slug": "el-paraiso-2026"
+    },
+    {
+      "id": "tm311370",
+      "title": "The Shitheads",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/the-shitheads",
+      "externalIds": {
+        "imdbId": "tt6628920",
+        "tmdbId": "445466"
+      },
+      "observedRating": {
+        "imdbScore": 5.5,
+        "imdbVotes": 3856,
+        "tmdbScore": 6.1
+      },
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0388ea4b-b13b-4e92-9dd9-6aa61c0383e1"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/idiotas/umc.cmc.9904pf6i9gxf8t4trm0yr7t0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6818254805"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0388ea4b-b13b-4e92-9dd9-6aa61c0383e1"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/idiotas/umc.cmc.9904pf6i9gxf8t4trm0yr7t0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6818254805"
+        }
+      ],
+      "disposition": "added",
+      "slug": "idiotas-2026"
+    },
+    {
+      "id": "tm2873164",
+      "title": "Patagonian Chimeras",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/patagonian-chimeras",
+      "externalIds": {
+        "imdbId": "tt42186133",
+        "tmdbId": "1683357"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": 10
+      },
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.36ddc7fc-cedf-4c17-859d-4914bbeafe72"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "Único afiche vertical hallado con laureles promocionales. Se rechaza esa fuente conforme a la política de pósters; no se recorta ni se reemplaza por un fotograma.",
+      "sources": [
+        "https://www.themoviedb.org/movie/1683357/images/posters",
+        "https://image.tmdb.org/t/p/original/wm6buUZHTCzfO959cdvZFBFW0B.jpg",
+        "https://filmfreeway.com/ChimeresPatagones",
+        "https://www.guillaume-broust.com/Video/patagonian-chimeras-cerro-torre-mountaineering-lise-billon/",
+        "https://www.cimalpes.fr/films-de-montagne-chima%C2%A8res-patagones-752-4581-0-230.html"
+      ],
+      "watchmode": "Sin coincidencia de título. TMDb 10/10 de 1 voto se normalizaría a 8 por confianza y filtro de obra maestra; no se persiste al estar bloqueada."
+    },
+    {
+      "id": "tm1449056",
+      "title": "Desmadre en la granja",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/granja-de-animales",
+      "externalIds": {
+        "imdbId": "tt2467700",
+        "tmdbId": "539745"
+      },
+      "observedRating": {
+        "imdbScore": 3.1,
+        "imdbVotes": 4876,
+        "tmdbScore": 6.3
+      },
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a732f1c6-0698-4759-9bab-035aaaeddc05"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/rebelion-en-la-granja/umc.cmc.1vgykskre3ztun96e9ckvso1l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786902052"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a732f1c6-0698-4759-9bab-035aaaeddc05"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/rebelion-en-la-granja/umc.cmc.1vgykskre3ztun96e9ckvso1l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786902052"
+        }
+      ],
+      "disposition": "excluded-original-2025",
+      "slug": null
+    },
+    {
+      "id": "tm1951605",
+      "title": "Demasiado honesto para vender",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/demasiado-honesto-para-vender",
+      "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1623867"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.830cdc31-9d7f-4a10-b244-93fa913cf64d"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/demasiado-honesto-para-vender/umc.cmc.lw5qgj7hdioa9o6xs0213twj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6815837500"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.830cdc31-9d7f-4a10-b244-93fa913cf64d"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "date": "2026-10-22",
+          "url": "https://tv.apple.com/ar/movie/demasiado-honesto-para-vender/umc.cmc.lw5qgj7hdioa9o6xs0213twj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6815837500"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "Apple Argentina informa Sin Calificación y Prime Video informa NR. No se inventa ATP ni +N para superar la auditoría.",
+      "sources": [
+        "https://tv.apple.com/ar/movie/demasiado-honesto-para-vender/umc.cmc.lw5qgj7hdioa9o6xs0213twj",
+        "https://www.primevideo.com/detail?gti=amzn1.dv.gti.830cdc31-9d7f-4a10-b244-93fa913cf64d&language=es_AR",
+        "https://filmarks.com/movies/121288/"
+      ],
+      "watchmode": "Recupera IMDb tt41991760 / TMDb 1623867, sin rating. Se recuperaron Filmarks 3.5/5, 584 reseñas, y luego IMDb 7.0/10 indirecto en Prime sin muestra; ambos dan 7. El score ya no es el bloqueo."
+    },
+    {
+      "id": "tm3022266",
+      "title": "CMA Presents: I Will Always Love You | A Celebration of Dolly Parton",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/cma-presents-i-will-always-love-you-a-celebration-of-dolly-parton",
+      "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1802058"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Disney Plus",
+          "type": "FLATRATE",
+          "date": "2026-10-22",
+          "url": "https://www.disneyplus.com/browse/entity-72f867e9-a39a-40f4-9a25-c5ad81447432"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "Sin retrato seguro del director Alan Carter ni tráiler oficial YouTube. El material promocional oficial encontrado es MP4; no se inventa un ID de YouTube. Robert Deaton está acreditado como productor, no reemplaza al director.",
+      "sources": [
+        "https://www.themoviedb.org/movie/1802058",
+        "https://www.imdb.com/title/tt46078866/",
+        "https://www.cmaworld.com/dolly-special-promotools/"
+      ],
+      "watchmode": "Recupera IMDb tt46078866 / TMDb 1802058, sin director/rating. TMDb 10/10 de 1 voto se limitaría a 8; no se usa archivo incidental de Dolly para llenar el piso de intérpretes."
+    },
+    {
+      "id": "tm2936657",
+      "title": "What Do You Do for an Encore?",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/pulp-que-harias-por-una-cancion-mas",
+      "externalIds": {
+        "imdbId": "tt43596978",
+        "tmdbId": "1715598"
+      },
+      "observedRating": {
+        "imdbScore": 7.5,
+        "imdbVotes": 299,
+        "tmdbScore": 6.5
+      },
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "date": "2026-10-23",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ea2dae12-9bf0-4ec4-8131-b8d3f1c339cf"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "date": "2026-10-23",
+          "url": "https://tv.apple.com/ar/movie/pulp-que-harias-por-una-cancion-mas/umc.cmc.214i1j7qw7udiranbut032sfd?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813418865"
+        }
+      ],
+      "disposition": "updated",
+      "slug": "pulp-que-harias-por-una-cancion-mas-2026"
+    },
+    {
+      "id": "tm3002982",
+      "title": "Contra el huracán",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/contra-el-huracan",
+      "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1780005"
+      },
+      "observedRating": {
+        "imdbScore": null,
+        "imdbVotes": null,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "date": "2026-10-23",
+          "url": "https://www.netflix.com/title/81913551"
+        }
+      ],
+      "disposition": "pending",
+      "slug": null,
+      "reason": "No se pudo verificar una valoración numérica de la película exacta tras la secuencia de contingencia. Se mantiene pendiente sin inventar score.",
+      "sources": [
+        "https://www.imdb.com/title/tt37961714/",
+        "https://www.themoviedb.org/movie/1780005",
+        "https://www.rottentomatoes.com/m/surviving_hurricane_otis",
+        "https://www.filmaffinity.com/gt/film975244.html",
+        "https://letterboxd.com/film/surviving-hurricane-otis/",
+        "https://www.filmweb.pl/film/Przetrwa%C4%87%2Bhuragan%2BOtis-2026-10136082",
+        "https://www.senscritique.com/film/contre_l_ouragan/139788284",
+        "https://about.netflix.com/es/news/netflix-unveils-the-trailer-premiere-date-and-first-images-for-contra-el-huracan-starring-benny-emmanuel-and-kristyan-ferrer-premiering-october-23"
+      ],
+      "watchmode": "Recupera IMDb tt37961714 / TMDb 1780005, audiencia y crítica null. RT/IMDb/JW/TMDb sin agregado utilizable; IMDb acceso 202/403, SensCritique 403, no se confunden con score cero. Búsqueda Metacritic sin resultado identificado."
+    },
+    {
+      "id": "tm1584966",
+      "title": "Mother Mary",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/mother-mary",
+      "externalIds": {
+        "imdbId": "tt27200708",
+        "tmdbId": "1102883"
+      },
+      "observedRating": {
+        "imdbScore": 5.4,
+        "imdbVotes": 11680,
+        "tmdbScore": 5.668
+      },
+      "offers": [
+        {
+          "provider": "HBO Max",
+          "type": "FLATRATE",
+          "date": "2026-10-23",
+          "url": "https://play.hbomax.com/show/4a7dd48c-0048-4abb-a0e7-f218d40e6a90?utm_source=universal_search"
+        }
+      ],
+      "disposition": "added",
+      "slug": "mother-mary-2026"
+    },
+    {
+      "id": "tm2966270",
+      "title": "Papi Ricky: La Película",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/papi-ricky-la-pelicula",
+      "externalIds": {
+        "imdbId": "tt39518280",
+        "tmdbId": "1752312"
+      },
+      "observedRating": {
+        "imdbScore": 7.3,
+        "imdbVotes": 25,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "date": "2026-10-23",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9ba1d79b-16e0-4bd1-807b-6c2e07c7b8a0"
+        }
+      ],
+      "disposition": "added",
+      "slug": "papi-ricky-la-pelicula-2026"
+    },
+    {
+      "id": "tm1929434",
+      "title": "Paralyzed by Hope: The Maria Bamford Story",
+      "year": 2026,
+      "justWatchAR": "https://www.justwatch.com/ar/pelicula/paralyzed-by-hope-the-maria-bamford-story",
+      "externalIds": {
+        "imdbId": "tt39162810",
+        "tmdbId": "1596294"
+      },
+      "observedRating": {
+        "imdbScore": 7.9,
+        "imdbVotes": 45,
+        "tmdbScore": null
+      },
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "date": "2026-10-23",
+          "url": "https://www.netflix.com/title/82917947"
+        }
+      ],
+      "disposition": "added",
+      "slug": "paralizada-por-la-esperanza-la-historia-de-maria-bamford-2026"
+    },
+    {
+      "title": "Tragedia, un documental sobre las que hacen comedia",
+      "year": 2026,
+      "disposition": "pending",
+      "provider": "Flow",
+      "type": "FLATRATE",
+      "date": "2026-10-22",
+      "reason": "Sin agregado numérico verificable; no se confunde con una serie o con películas homónimas. Watchmode no encuentra coincidencia y la búsqueda dirigida IMDb/TMDb/RT/Letterboxd/Filmweb/Metacritic no recupera un score.",
+      "sources": [
+        "https://www.otroscines.com/post/todas-las-peliculas-y-series-que-llegan-a-flow-en-octubre-2026",
+        "https://cc25.org/eventos/tragedia-un-documental/?pskip=25118",
+        "https://www.agenciadaf.com.ar/2026/10/se-estrena-tragedia.html"
+      ]
+    }
+  ],
+  "metadataDecisions": {
+    "motherMary": {
+      "duration": "111 minutos de Apple AR; JW 98 se descarta frente a proveedor.",
+      "rating": "+13 de HBO AR, no R de ficha estadounidense.",
+      "country": "DE, FI, IE, US de JW AR y Filmdienst. Apple difiere al mencionar GB; no se mezcla ni se infiere un quinto país.",
+      "sources": [
+        "https://tv.apple.com/ar/movie/mother-mary/umc.cmc.2u09vrq4kv4qxdg83z8mzu206",
+        "https://www.hbomax.com/ar/es/movies/mother-mary/4a7dd48c-0048-4abb-a0e7-f218d40e6a90"
+      ],
+      "musical": {
+        "included": true,
+        "source": "https://a24films.com/notes/2026/05/weeping-bleeding-hearts-with-david-lowery-anne-hathaway",
+        "reason": "En el podcast oficial de A24, Lowery describe la coreografía del granero como el monólogo de Mary, central para expresar su conflicto; Hathaway explica que allí se comunica lo que el personaje no puede decir. La danza lleva la narración, no es solamente la profesión musical de la protagonista. Se conserva Drama como categoría principal."
+      }
+    },
+    "papiRicky": {
+      "duration": "99 minutos y 7+ en el proveedor digital actual Prime; JW informa93. Se usa la edición disponible en proveedor.",
+      "source": "https://www.primevideo.com/-/es/detail/amzn1.dv.gti.9ba1d79b-16e0-4bd1-807b-6c2e07c7b8a0"
+    },
+    "idiotas": {
+      "duration": "98 minutos y SAM18 en Apple Argentina.",
+      "source": "https://tv.apple.com/ar/movie/idiotas/umc.cmc.9904pf6i9gxf8t4trm0yr7t0"
+    },
+    "bamford": {
+      "title": "Título localizado de Netflix Argentina, edad16+",
+      "sources": [
+        "https://www.netflix.com/ar/title/82917947?preventIntent=true",
+        "https://mspfilm.org/wp-content/uploads/2026/04/MSPIFF45_GUIDEBOOK_WEB_PDF_v05.pdf"
+      ],
+      "billing": "Programa oficial MSPIFF45 p26: Maria Bamford y Patton Oswalt son Principal Cast; Judd Apatow y Neil Berkeley directores."
+    },
+    "animalFarm": {
+      "originalYear": 2025,
+      "reason": "Premiere Annecy9/6/2025; la llegada a tiendas de2026 no cambia el año original.",
+      "source": "https://cinesite.com/annecy2025/?lang=fr"
+    }
+  },
+  "people": {
+    "uniqueRetained": 35,
+    "creditsRetained": 35,
+    "newRecords": 12,
+    "portraitReplacements": 1,
+    "aliasRepair": "Kim Shin-rok como alias de display Kim Sin-rock, con crédito y foto de Colony corroborados. No se cambia la película.",
+    "optionalGaps": "Mohan Babu sin nacionalidad explícita en la fuente consultada; Michaela Coel sin nacimiento por contradicción 1988 en JSON-LD /1987 en biografía de la misma ficha. Neil Berkeley conserva faltantes previos. Se recuperan11 fechas y11 nacionalidades expresamente publicadas para las12 altas, sin inferir desde lugar de nacimiento.",
+    "omissions": "Se retiene una selección suficiente de protagonistas. Bamford: Patton verificado como participante principal, no se agrega crew ni archivo incidental. Paradise: Nani monónimo verificado no cuenta al piso; Mohan Babu y Sonali Kulkarni sí.",
+    "posterVisualQA": "8/8 artes finales inspeccionadas y comparadas con fuente; cinco fuentes780x1170 y WebP480x720, sin ampliación.",
+    "portraitVisualQA": "35/35 retratos inspeccionados; 12 altas y reemplazo Patton procesados con optimizador canónico.",
+    "optionalSources": [
+      {
+        "name": "Nani",
+        "url": "https://www.themoviedb.org/person/225387",
+        "birthDate": "1984-02-24",
+        "nationality": "Indio"
+      },
+      {
+        "name": "Mohan Babu",
+        "url": "https://www.themoviedb.org/person/585268-mohan-babu",
+        "birthDate": "1952-03-19",
+        "nationality": null
+      },
+      {
+        "name": "Sonali Kulkarni",
+        "url": "https://www.themoviedb.org/person/78920-sonali-kulkarni",
+        "birthDate": "1974-11-03",
+        "nationality": "India"
+      },
+      {
+        "name": "Srikanth Odela",
+        "url": "https://www.themoviedb.org/person/3271589-srikanth-odela",
+        "birthDate": "1990-12-14",
+        "nationality": "Indio"
+      },
+      {
+        "name": "O'Shea Jackson Jr.",
+        "url": "https://www.themoviedb.org/person/1371398-o-shea-jackson-jr",
+        "birthDate": "1991-02-24",
+        "nationality": "Estadounidense"
+      },
+      {
+        "name": "Macon Blair",
+        "url": "https://www.themoviedb.org/person/209513-macon-blair",
+        "birthDate": "1974-11-14",
+        "nationality": "Estadounidense"
+      },
+      {
+        "name": "Michaela Coel",
+        "url": "https://www.themoviedb.org/person/1368012-michaela-coel",
+        "birthDate": null,
+        "nationality": "Británica"
+      },
+      {
+        "name": "Hunter Schafer",
+        "url": "https://www.themoviedb.org/person/2340180-hunter-schafer",
+        "birthDate": "1998-12-31",
+        "nationality": "Estadounidense"
+      },
+      {
+        "name": "Belén Soto",
+        "url": "https://www.themoviedb.org/person/1965666-belen-soto",
+        "birthDate": "1997-01-22",
+        "nationality": "Chilena"
+      },
+      {
+        "name": "Jorge Zabaleta",
+        "url": "https://www.themoviedb.org/person/1965665-jorge-zabaleta",
+        "birthDate": "1970-04-18",
+        "nationality": "Chileno"
+      },
+      {
+        "name": "María Elena Swett",
+        "url": "https://www.themoviedb.org/person/118371-maria-elena-swett",
+        "birthDate": "1979-04-11",
+        "nationality": "Chilena"
+      },
+      {
+        "name": "Maria Bamford",
+        "url": "https://www.themoviedb.org/person/60278-maria-bamford",
+        "birthDate": "1970-09-03",
+        "nationality": "Estadounidense"
+      }
+    ]
+  },
+  "watchmode": "API configurada usada mediante CLI canónico por identidad. Respuestas null se conservan como no disponibles, nunca cero ni IMDb. No se publican claves ni respuestas sensibles."
+}
