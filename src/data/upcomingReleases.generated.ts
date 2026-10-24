@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-23T09:09:42.749Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-24T08:42:30.393Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Everest: La otra cara",
