@@ -64,9 +64,49 @@ test('se desplaza, permite pausar y reanudar y se detiene al pasar el mouse', as
 	expect(widths[0]).toBeCloseTo(widths[1], 0);
 });
 
+test('cine muestra En Cines y el clic mantiene el título en su posición hasta navegar', async ({ page }, testInfo) => {
+	test.skip(testInfo.project.name.startsWith('mobile-'), 'Regresión del clic de mouse en desktop.');
+	const marquee = page.locator('catalog-marquee');
+	const cinema = marquee.locator('.catalog-marquee__platform[title="En cines"]');
+	for (const platform of await cinema.all()) {
+		await expect(platform).toHaveText('En Cines');
+		await expect(platform.locator('svg')).toHaveCount(0);
+	}
+	expect(await cinema.count()).toBeGreaterThan(0);
+	const track = marquee.locator('.catalog-marquee__track');
+	// Exercise both halves of the seamless loop, including the decorative copy.
+	for (const phase of [.08, .55]) {
+		await page.mouse.move(0, 0);
+		await track.evaluate((el, fraction) => {
+			const animation = el.getAnimations()[0];
+			animation.currentTime = Number(animation.effect!.getComputedTiming().duration) * fraction;
+		}, phase);
+		const link = marquee.locator('a').filter({ visible: true });
+		const target = await link.evaluateAll((els) => {
+			const viewport = els[0].closest('.catalog-marquee__viewport')!.getBoundingClientRect();
+			for (const el of els) {
+				const rect = el.getBoundingClientRect();
+				if (rect.left > viewport.left + 20 && rect.right < viewport.right - 20) return {href: el.getAttribute('href')!, x: rect.left + 10, y: rect.top + rect.height / 2};
+			}
+			throw new Error('No clickable title in viewport');
+		});
+		await page.mouse.move(target.x, target.y);
+		const before = await track.evaluate((el) => el.getBoundingClientRect().left);
+		await page.mouse.down();
+		await expect(marquee).not.toHaveAttribute('data-keyboard-focus');
+		expect(await track.evaluate((el) => el.getBoundingClientRect().left)).toBeCloseTo(before, 0);
+		await expect(track).toHaveCSS('animation-name', 'catalog-crawl');
+		await page.mouse.up();
+		await expect(page).toHaveURL(target.href);
+		await page.goBack({waitUntil: 'load'});
+		await expect(page.locator('catalog-marquee')).toHaveAttribute('data-ready', '');
+	}
+});
+
 test('el teclado revela cada título completo y la búsqueda conserva su funcionamiento', async ({ page, browserName }) => {
 	const marquee = page.locator('catalog-marquee');
 	const links = marquee.getByRole('link');
+	await page.keyboard.press('Tab');
 	await links.first().focus();
 	for (let index = 0; index < await links.count(); index++) {
 		if (index > 0) {

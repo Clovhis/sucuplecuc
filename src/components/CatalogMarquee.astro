@@ -28,11 +28,11 @@ const items = getLatestCatalogAdditions(Astro.props.movies).map((movie) => ({
 												{platform.asset ? (
 													<img src={`${import.meta.env.BASE_URL}${platform.asset.src.replace(/^\//, '')}`} alt="" width={platform.asset.wide ? 30 : 12} height="13" />
 												) : platform.variant === 'cine' ? (
-													<svg viewBox="0 0 20 16" aria-hidden="true"><path d="M2 3h16v3a2 2 0 0 0 0 4v3H2v-3a2 2 0 0 0 0-4Z" /><path d="M7 3v10" stroke-dasharray="2 2" /></svg>
+													<span>En Cines</span>
 												) : (
 													<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" /><path d="M2 8h12M8 2c-4 4-4 8 0 12M8 2c4 4 4 8 0 12" /></svg>
 												)}
-												<span class="u-visually-hidden">{` · ${platform.accessibilityLabel}`}</span>
+												{platform.variant !== 'cine' && <span class="u-visually-hidden">{` · ${platform.accessibilityLabel}`}</span>}
 											</span>
 										))}
 									</span>
@@ -120,9 +120,9 @@ const items = getLatestCatalogAdditions(Astro.props.movies).map((movie) => ({
 		.catalog-marquee[data-ready] .catalog-marquee__list[aria-hidden] { display: flex; }
 		.catalog-marquee:hover .catalog-marquee__track,
 		.catalog-marquee[data-paused] .catalog-marquee__track { animation-play-state: paused; }
-		.catalog-marquee .catalog-marquee__viewport:focus-within { overflow-x: auto; mask-image: none; }
-		.catalog-marquee .catalog-marquee__viewport:focus-within .catalog-marquee__track { animation: none; }
-		.catalog-marquee .catalog-marquee__viewport:focus-within .catalog-marquee__list[aria-hidden] { display: none; }
+		.catalog-marquee[data-keyboard-focus] .catalog-marquee__viewport { overflow-x: auto; mask-image: none; }
+		.catalog-marquee[data-keyboard-focus] .catalog-marquee__track { animation: none; }
+		.catalog-marquee[data-keyboard-focus] .catalog-marquee__list[aria-hidden] { display: none; }
 		@keyframes catalog-crawl { to { transform: translateX(-50%); } }
 	}
 	@media (prefers-reduced-motion: reduce) { .catalog-marquee__toggle { display: none; } }
@@ -148,13 +148,21 @@ const items = getLatestCatalogAdditions(Astro.props.movies).map((movie) => ({
 			});
 			viewport.addEventListener('focusin', (event) => {
 				if (!(event.target instanceof HTMLAnchorElement)) return;
+				// Pointer clicks keep the animated position; only keyboard focus
+				// switches to the static, scrollable list.
+				const keyboardFocus = event.target.matches(':focus-visible');
+				this.toggleAttribute('data-keyboard-focus', keyboardFocus);
+				if (!keyboardFocus) return;
 				const bounds = event.target.getBoundingClientRect();
 				const frame = viewport.getBoundingClientRect();
 				if (bounds.width > frame.width || bounds.left < frame.left) viewport.scrollLeft += bounds.left - frame.left;
 				else if (bounds.right > frame.right) viewport.scrollLeft += bounds.right - frame.right;
 			});
 			viewport.addEventListener('focusout', (event) => {
-				if (!(event.relatedTarget instanceof Node) || !viewport.contains(event.relatedTarget)) viewport.scrollLeft = 0;
+				if (!(event.relatedTarget instanceof Node) || !viewport.contains(event.relatedTarget)) {
+					this.removeAttribute('data-keyboard-focus');
+					viewport.scrollLeft = 0;
+				}
 			});
 			// Constant reading speed, including after the web font loads.
 			const setSpeed = () => track.style.setProperty('--marquee-duration', `${list.scrollWidth / 32}s`);
