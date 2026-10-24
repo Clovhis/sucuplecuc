@@ -2,6 +2,7 @@ import { access, mkdir, readdir, readFile, rename, writeFile } from 'node:fs/pro
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
+import { verifyStreamingAvailability } from './buffer-x-availability.mjs';
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MOVIES_DIR = path.join(ROOT_DIR, 'src/data/movies');
@@ -11,7 +12,7 @@ const SITE_URL = 'https://www.cineposta.com.ar';
 // Keep a deliberate margin so a valid preview is never rejected at scheduling time.
 const MAX_X_WEIGHTED_LENGTH = 250;
 const URL_WEIGHT = 23;
-const RECENT_PREMIERE_DAYS = 90;
+const RECENT_PREMIERE_DAYS = 30;
 const COPY_VARIANT_HISTORY_SIZE = 3;
 const MIN_RECOMMENDATION_SCORE = 6;
 const MAX_TYPE_HASHTAGS = 2;
@@ -155,7 +156,7 @@ function parseArguments(argumentsList) {
 		values.set(key, inlineValue ?? argumentsList[index + 1]);
 		if (inlineValue === undefined && argumentsList[index + 1] && !argumentsList[index + 1].startsWith('--')) index += 1;
 	}
-	return { publish: values.has('publish'), historyPath: values.get('history') ? path.resolve(ROOT_DIR, values.get('history')) : DEFAULT_HISTORY_PATH, dueAt: values.get('due-at') };
+	return { publish: values.has('publish') || values.has('publish-now'), publishNow: values.has('publish-now'), historyPath: values.get('history') ? path.resolve(ROOT_DIR, values.get('history')) : DEFAULT_HISTORY_PATH, dueAt: values.get('due-at') };
 }
 
 function requiredString(value, field, movie) {
@@ -181,13 +182,15 @@ function negativeAssessment(movie) {
 
 function moviePlatforms(movie) {
 	const values = Array.isArray(movie.releasePlatforms) ? movie.releasePlatforms : [movie.releasePlatform];
-	return values.filter((value) => typeof value === 'string' && value.trim() && value !== 'Otras plataformas').map((value) => value.trim());
+	if (values.some((value) => normalizeTaxonomyTerm(value) === 'otras plataformas')) return [];
+	return values.filter((value) => typeof value === 'string' && value.trim() && !['cine', 'cinema'].includes(normalizeTaxonomyTerm(value))).map((value) => value.trim());
 }
 
 function availabilityLabels(movie) {
 	const platforms = moviePlatforms(movie);
-	if (platforms.includes('Cine')) return ['ya está en cines de Argentina', 'acaba de llegar a los cines argentinos', 'ya se puede ver en salas argentinas', 'se estrenó en los cines argentinos'];
+	if (!platforms.length) throw new Error(`La película ${movie.slug} no tiene una plataforma elegible para X.`);
 	const platformLabel = platforms.length === 1 ? platforms[0] : platforms.length === 2 ? `${platforms[0]} y ${platforms[1]}` : `${platforms.slice(0, -1).join(', ')} y ${platforms.at(-1)}`;
+	if (movie.availabilityKind === 'transactional') return [`está para alquilar o comprar en ${platformLabel}`, `ya se puede alquilar o comprar en ${platformLabel}`, `llegó al alquiler y compra en ${platformLabel}`, `está en alquiler o compra en ${platformLabel}`];
 	const catalogLabel = platforms.length === 1 ? `al catálogo de ${platformLabel}` : `a los catálogos de ${platformLabel}`;
 	return [`ya está disponible en ${platformLabel}`, `acaba de sumarse a ${platformLabel}`, `ya la encontrás en ${platformLabel}`, `llegó ${catalogLabel}`];
 }
@@ -258,6 +261,7 @@ export function chooseCopyStyle(movie, history = { posts: [] }) {
 }
 
 export function renderPostText(movie, copyStyle = defaultCopyStyle(movie)) {
+	if (isExcludedFromX(movie)) throw new Error('Star Trek está excluido de las publicaciones de CinePosta en X.');
 	const title = requiredString(movie.title, 'título', movie);
 	const review = requiredString(movie.review, 'reseña', movie);
 	if (!Number.isInteger(movie.year)) throw new Error(`La película ${movie.slug} no tiene un año válido.`);
@@ -323,9 +327,17 @@ export function nextDueAt(now = new Date()) {
 	return new Date(now.getTime() < sevenPmArgentina.getTime() ? sevenPmArgentina : sevenPmArgentina.getTime() + 86_400_000).toISOString();
 }
 
-function isRecentPremiere(movie, today = argentinaDate()) {
-	if (movie?.isPremiere !== true || !/^\d{4}-\d{2}-\d{2}$/u.test(movie.releaseDate ?? '')) return false;
+export function isExcludedFromX(movie) {
+	return [movie?.slug, movie?.title, movie?.originalTitle].some((value) => /\bstar\s*trek\b/u.test(normalizeTaxonomyTerm(value)));
+}
+
+export function isRecentPremiere(movie, today = argentinaDate()) {
+	if (isExcludedFromX(movie) || !/^\d{4}-\d{2}-\d{2}$/u.test(movie?.releaseDate ?? '')) return false;
+	// Recent catalog dates must never turn old library films into premieres.
+	const currentYear = Number(today.slice(0, 4));
+	if (!Number.isInteger(movie.year) || movie.year < currentYear - 1 || movie.year > currentYear) return false;
 	const releaseAt = new Date(`${movie.releaseDate}T00:00:00.000Z`);
+	if (!Number.isFinite(releaseAt.getTime()) || releaseAt.toISOString().slice(0, 10) !== movie.releaseDate) return false;
 	const todayAt = new Date(`${today}T00:00:00.000Z`);
 	const oldestAt = new Date(todayAt.getTime() - RECENT_PREMIERE_DAYS * 86_400_000);
 	return releaseAt <= todayAt && releaseAt >= oldestAt && moviePlatforms(movie).length > 0;
@@ -343,7 +355,7 @@ async function eligibleMovies(movies, today) {
 
 export function selectMovie(eligible, history, externallyUsedSlugs = new Set()) {
 	const usedSlugs = new Set([...history.posts.map(({ slug }) => slug), ...externallyUsedSlugs]);
-	const candidates = eligible.filter(({ movie }) => verdictLabel(movie) && !usedSlugs.has(movie.slug));
+	const candidates = eligible.filter(({ movie }) => !isExcludedFromX(movie) && verdictLabel(movie) && !usedSlugs.has(movie.slug));
 	if (candidates.length === 0) throw new Error('No quedan películas elegibles sin publicar en Buffer. Revisá el historial antes de habilitar un nuevo ciclo.');
 	const recommendations = candidates.filter(({ movie }) => postKind(movie) === 'recommendation');
 	const pool = recommendations.length > 0 ? recommendations : candidates;
@@ -385,9 +397,13 @@ async function getBufferPostGuard(apiKey, organizationId, channelId, dueAt) {
 	return { slugs, targetSlotOccupied };
 }
 
-async function createPost(apiKey, channelId, plan) {
-	const mutation = 'mutation CreatePost($input: CreatePostInput!) { createPost(input: $input) { __typename ... on PostActionSuccess { post { id dueAt status } } ... on MutationError { message } } }';
-	const input = { text: plan.text, channelId, schedulingType: 'automatic', mode: 'customScheduled', dueAt: plan.dueAt, needsApproval: false, assets: [{ image: { url: plan.posterUrl, metadata: { altText: `Poster de ${plan.movie.title} (${plan.movie.year})` } } }] };
+export function buildPostInput(channelId, plan, publishNow = false) {
+	return { text: plan.text, channelId, schedulingType: 'automatic', mode: publishNow ? 'shareNow' : 'customScheduled', ...(!publishNow ? { dueAt: plan.dueAt } : {}), needsApproval: false, assets: [{ image: { url: plan.posterUrl, metadata: { altText: `Poster de ${plan.movie.title} (${plan.movie.year})` } } }] };
+}
+
+async function createPost(apiKey, channelId, plan, publishNow) {
+	const mutation = 'mutation CreatePost($input: CreatePostInput!) { createPost(input: $input) { __typename ... on PostActionSuccess { post { id dueAt status externalLink } } ... on MutationError { message } } }';
+	const input = buildPostInput(channelId, plan, publishNow);
 	const data = await bufferRequest(apiKey, mutation, { input });
 	if (data.createPost.__typename !== 'PostActionSuccess') throw new Error(`Buffer no creó la publicación: ${data.createPost.message ?? data.createPost.__typename}`);
 	return data.createPost.post;
@@ -421,21 +437,32 @@ async function main() {
 	if (!apiKey) throw new Error('Falta BUFFER_API_KEY. Configurala como secret de GitHub Actions; nunca la agregues al repositorio.');
 	const { organizationId, channel } = await getXChannel(apiKey);
 	const guard = await getBufferPostGuard(apiKey, organizationId, channel.id, plan.dueAt);
-	if (guard.targetSlotOccupied) {
+	if (!options.publishNow && guard.targetSlotOccupied) {
 		console.log(JSON.stringify({ mode: 'skipped', reason: 'Buffer ya tiene una publicación para esta franja.', channel: channel.name, dueAt: plan.dueAt }, null, 2));
 		return;
 	}
-	const externallyUsedSlugs = guard.slugs;
-	if (externallyUsedSlugs.has(plan.movie.slug)) {
-		plan = selectMovie(await eligibleMovies(await loadMovies()), history, externallyUsedSlugs);
+	const candidates = await eligibleMovies(await loadMovies());
+	const excluded = new Set([...history.posts.map(({ slug }) => slug), ...guard.slugs]);
+	while (true) {
+		plan = selectMovie(candidates, history, excluded);
+		const availability = await verifyStreamingAvailability(plan.movie);
+		if (!availability) {
+			console.log(JSON.stringify({ mode: 'excluded', slug: plan.movie.slug, reason: 'Sin oferta legal AR vigente verificable en JustWatch.' }));
+			excluded.add(plan.movie.slug);
+			continue;
+		}
+		plan.movie = { ...plan.movie, releasePlatform: availability.platforms[0], releasePlatforms: availability.platforms, availabilityKind: availability.kind };
+		plan.availability = availability;
 		plan.dueAt = initialPlan.dueAt;
 		plan.copyStyle = chooseCopyStyle(plan.movie, history);
 		plan.text = renderPostText(plan.movie, plan.copyStyle);
+		break;
 	}
-	const post = await createPost(apiKey, channel.id, plan);
-	history.posts.push({ slug: plan.movie.slug, bufferPostId: post.id, dueAt: post.dueAt, scheduledAt: new Date().toISOString(), copyStyle: plan.copyStyle });
+	console.log(JSON.stringify({ mode: 'verified', slug: plan.movie.slug, availability: plan.availability, text: plan.text }, null, 2));
+	const post = await createPost(apiKey, channel.id, plan, options.publishNow);
+	history.posts.push({ slug: plan.movie.slug, bufferPostId: post.id, dueAt: post.dueAt, scheduledAt: new Date().toISOString(), copyStyle: plan.copyStyle, availability: plan.availability, ...(options.publishNow ? { immediate: true } : {}) });
 	await writeHistory(options.historyPath, history);
-	console.log(JSON.stringify({ mode: 'scheduled', channel: channel.name, slug: plan.movie.slug, bufferPostId: post.id, dueAt: post.dueAt, xWeightedLength: weightedXLength(plan.text) }, null, 2));
+	console.log(JSON.stringify({ mode: options.publishNow ? 'submitted-now' : 'scheduled', status: post.status, externalLink: post.externalLink, channel: channel.name, slug: plan.movie.slug, bufferPostId: post.id, dueAt: post.dueAt, xWeightedLength: weightedXLength(plan.text) }, null, 2));
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

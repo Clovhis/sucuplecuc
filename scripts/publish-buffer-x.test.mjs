@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
-import { chooseCopyStyle, movieHashtags, nextDueAt, postKind, renderPostText, selectMovie, weightedXLength } from './publish-buffer-x.mjs';
+import { buildPostInput, chooseCopyStyle, isExcludedFromX, isRecentPremiere, movieHashtags, nextDueAt, postKind, renderPostText, selectMovie, weightedXLength } from './publish-buffer-x.mjs';
+import { streamingAvailability, verifyStreamingAvailability } from './buffer-x-availability.mjs';
 
 const movie = { slug: 'akira-1988', title: 'Akira', year: 1988, category: 'Ciencia ficción', releaseDate: '2026-09-05', releasePlatform: 'Netflix', poster: 'assets/posters/1988/akira-1988.webp', cinepostaScore: 8, review: 'Akira arranca con una pandilla de adolescentes en un Neo-Tokio explosivo y usa la transformación de Tetsuo para hablar de poder, violencia y una ciudad que no termina de curarse. Katsuhiro Otomo dirige con una energía desatada.' };
 const text = renderPostText(movie);
@@ -114,7 +115,7 @@ for (const score of [3, 4, 5]) {
 }
 
 // Keep the reported regression stable if the live catalog changes its score.
-const bajoTusPies = { ...movie, slug: 'bajo-tus-pies-2025', title: 'Bajo tus pies', year: 2025, category: 'Terror', releasePlatform: 'Cine', cinepostaScore: 4, review: 'Cristian Bernard usa el edificio como una presión que se filtra en la vida cotidiana de Isabel y sus hijos.' };
+const bajoTusPies = { ...movie, slug: 'bajo-tus-pies-2025', title: 'Bajo tus pies', year: 2025, category: 'Terror', releasePlatform: 'Netflix', cinepostaScore: 4, review: 'Cristian Bernard usa el edificio como una presión que se filtra en la vida cotidiana de Isabel y sus hijos.' };
 const correctedPost = renderPostText(bajoTusPies, { opening: 8, availability: 3, editorial: 1, verdict: 5, link: 4 });
 assert.match(correctedPost.split('\n\n')[0], /Bajo tus pies.*mala/u);
 assert.doesNotMatch(correctedPost, recommendationLanguage);
@@ -144,4 +145,48 @@ assert.throws(() => selectMovie([candidate('unrated', undefined, '2026-10-02')],
 assert.throws(() => selectMovie([good], emptyHistory, new Set(['good'])), /No quedan películas elegibles/u);
 assert.equal(nextDueAt(new Date('2026-09-06T21:30:00.000Z')), '2026-09-06T22:00:00.000Z');
 assert.equal(nextDueAt(new Date('2026-09-06T22:00:00.000Z')), '2026-09-07T22:00:00.000Z');
+const recentMovie = { ...movie, slug: 'estreno-2026', title: 'Estreno', year: 2026, releaseDate: '2026-10-23' };
+assert.equal(isRecentPremiere(recentMovie, '2026-10-24'), true, 'las altas actuales no necesitan el flag histórico isPremiere');
+assert.equal(isRecentPremiere({ ...recentMovie, year: 1984, isPremiere: true }, '2026-10-24'), false, 'una fecha reciente no convierte un clásico en estreno');
+assert.equal(isRecentPremiere({ ...recentMovie, year: 2025 }, '2026-10-24'), true, 'admite películas del año anterior que llegan ahora a plataformas');
+for (const releaseDate of ['2026-10-25', '2026-09-23', '2026-09-31', 'invalid']) {
+	assert.equal(isRecentPremiere({ ...recentMovie, releaseDate }, '2026-10-24'), false);
+}
+assert.equal(isRecentPremiere({ ...recentMovie, releasePlatform: 'Cine' }, '2026-10-24'), false);
+assert.equal(isRecentPremiere({ ...recentMovie, releasePlatforms: ['CINEMA', 'Netflix'] }, '2026-10-24'), true);
+assert.doesNotMatch(renderPostText({ ...recentMovie, releasePlatforms: ['Cine', 'Netflix'] }), /cines|salas|Cine y/u);
+assert.equal(isRecentPremiere({ ...recentMovie, releasePlatforms: ['Otras plataformas', 'Netflix'] }, '2026-10-24'), false);
+for (const identity of [{ slug: 'star-trek-2026' }, { title: 'STAR TREK: Nueva película' }, { originalTitle: 'Star Trek: Something New' }]) {
+	const excluded = { ...recentMovie, ...identity };
+	assert.equal(isExcludedFromX(excluded), true);
+	assert.equal(isRecentPremiere(excluded, '2026-10-24'), false);
+	assert.throws(() => renderPostText(excluded), /Star Trek/u);
+	assert.throws(() => selectMovie([{ movie: excluded }], emptyHistory), /No quedan películas elegibles/u);
+}
+const plan = { movie: recentMovie, text: renderPostText(recentMovie), posterUrl: 'https://www.cineposta.com.ar/poster.webp', dueAt: '2026-10-24T22:00:00.000Z' };
+assert.equal(buildPostInput('channel', plan).mode, 'customScheduled');
+assert.equal(buildPostInput('channel', plan).dueAt, plan.dueAt);
+assert.equal(buildPostInput('channel', plan, true).mode, 'shareNow');
+assert.equal('dueAt' in buildPostInput('channel', plan, true), false, 'publicar ahora no envía una fecha futura');
+const node = (title, year, offers, fullPath = '/ar/pelicula/estreno') => ({ content: { title, originalReleaseYear: year, fullPath }, offers: offers.map(([clearName, monetizationType]) => ({ package: { clearName }, monetizationType })) });
+const offers = [['Netflix', 'FLATRATE'], ['Apple TV Store', 'BUY'], ['Cinemark', 'CINEMA']];
+assert.deepEqual(streamingAvailability(recentMovie, [node('Estreno', 2026, offers)], 'now').platforms, ['Netflix']);
+assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2025, offers)]), null, 'rechaza homónimos de otro año');
+assert.equal(streamingAvailability(recentMovie, [node('Otro título', 2026, offers)]), null);
+assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2026, offers, '/us/movie/estreno')]), null);
+assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2026, [['HBO Max Amazon Channel', 'FLATRATE']])]), null, 'no infiere un proveedor base desde un canal adicional');
+assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2026, [['Cinemark', 'CINEMA']])]), null);
+const store = streamingAvailability(recentMovie, [node('Estreno', 2026, [['Apple TV Store', 'RENT']])]);
+assert.equal(store.kind, 'transactional');
+assert.match(renderPostText({ ...recentMovie, releasePlatform: 'Apple TV', availabilityKind: store.kind }), /alquil|compra/u);
+let requests = 0;
+await verifyStreamingAvailability(recentMovie, async (url, options) => {
+	requests++;
+	assert.equal(url, 'https://apis.justwatch.com/graphql');
+	assert.match(JSON.parse(options.body).query, /offers\(country: AR/u);
+	return { ok: true, json: async () => ({ data: { popularTitles: { edges: [{ node: node('Estreno', 2026, offers) }] } } }) };
+});
+assert.equal(requests, 1);
+await assert.rejects(() => verifyStreamingAvailability(recentMovie, async () => ({ ok: false, status: 503 })), /no se publica/u);
+await assert.rejects(() => verifyStreamingAvailability(recentMovie, async () => ({ ok: true, json: async () => ({ errors: [{ message: 'broken' }] }) })), /no se publica/u);
 console.log('Buffer X publisher tests passed.');

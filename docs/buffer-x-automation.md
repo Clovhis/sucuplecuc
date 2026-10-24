@@ -1,6 +1,10 @@
 # Publicación diaria en X con Buffer
 
-El workflow `.github/workflows/publish-buffer-x.yml` toma únicamente estrenos recientes reales de `src/data/movies`: marcados como estreno, publicados en los últimos 90 días, con disponibilidad confirmada y sin la etiqueta conservadora `Otras plataformas`. Exige título, año, reseña, un `cinepostaScore` válido y un póster local existente en `public/assets/posters`. El formato es breve y rioplatense: disponibilidad, una línea editorial concreta, score canónico con número y nombre (`8 - Excelente`, por ejemplo), enlace directo a la ficha y hasta dos hashtags de descubrimiento según categoría, géneros y subgéneros. Las variantes ortográficas de la taxonomía se normalizan a una etiqueta estable; si falta un mapeo, usa `#Cine`.
+El workflow `.github/workflows/publish-buffer-x.yml` publica únicamente estrenos de plataformas en Argentina desde `src/data/movies`: fecha de estreno válida dentro de los últimos 30 días, año original actual o anterior y al menos una plataforma. No exige el flag histórico `isPremiere`, ausente en las altas actuales. Una fecha reciente de catálogo no convierte una película antigua en estreno. **Star Trek queda excluido permanentemente**, por slug, título y título original, incluso si se estrena una película nueva. `Cine`/`CINEMA` no son plataformas elegibles; se omiten también cuando la ficha tiene una oferta de streaming. `Otras plataformas` excluye toda la ficha.
+
+Antes de crear cada post, consulta JustWatch con país `AR`, comprueba título y año exactos y usa sólo ofertas vigentes de proveedores representados. Prioriza suscripción/gratis; si sólo hay alquiler/compra, lo aclara en el texto. No convierte canales adicionales o bundles en una suscripción al proveedor base. Una ficha sin coincidencia inequívoca u oferta legal se descarta y se prueba la siguiente; un error de red o de la fuente detiene la ejecución sin publicar. La fuente, modalidad, proveedores y fecha de comprobación quedan en el historial. La ausencia de evidencia específica en JustWatch (por ejemplo, Flow) no autoriza inferir disponibilidad. No modifica las fichas.
+
+Exige título, año, reseña, un `cinepostaScore` válido y un póster local existente en `public/assets/posters`. El formato es breve y rioplatense: disponibilidad, una línea editorial concreta, score canónico con número y nombre (`8 - Excelente`, por ejemplo), enlace directo a la ficha y hasta dos hashtags de descubrimiento según categoría, géneros y subgéneros. Las variantes ortográficas de la taxonomía se normalizan a una etiqueta estable; si falta un mapeo, usa `#Cine`.
 
 El script no modifica contenido editorial. Su historial operativo está en `.github/cineposta-buffer-x-history.json`; una película queda excluida apenas se programa. Antes de crear una publicación, también revisa los últimos 100 posteos de Buffer, reconoce los enlaces de Cine Posta y confirma que la franja de las 19:00 ART esté libre. Así un reintento no duplica el post ni crea un segundo post del día aunque falle el commit del historial.
 
@@ -21,6 +25,16 @@ npm run buffer:x
 ```
 
 Es el modo por defecto y no lee la clave ni llama a Buffer. Muestra el texto, el póster, la ficha, la hora y el peso estimado para X.
+
+La vista previa es local y provisional: la oferta argentina se confirma al publicar, de modo que el proveedor o la película pueden cambiar si la evidencia vigente no coincide con el catálogo.
+
+## Publicación inmediata
+
+El modo manual del workflow `publish-now` envía una sola película con `shareNow`, sin esperar a las 19:00 AR. Conserva los filtros, la comprobación legal AR y la protección contra repetir una película del historial o de Buffer. `publish` mantiene el horario diario. El modo inmediato no cancela ni regenera publicaciones ya programadas: revisar la cola antes de usarlo para reemplazar un post eliminado. El log distingue `submitted-now` de `sent`: confirmar la publicación final y su enlace en Buffer/X.
+
+```bash
+npm run buffer:x -- --publish-now
+```
 
 ## Habilitación única
 

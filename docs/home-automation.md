@@ -27,7 +27,7 @@ Todos los horarios son de Argentina, UTC-3. Los cron están escritos en UTC y no
 | `refresh-upcoming-releases.yml` | Proximos estrenos diarios (01:00 AR) | `0 4 * * *`, o manual |
 | `deploy.yml` | Publicar CinePosta en GitHub Pages | Push a `main`, manual o `workflow_run` exitoso de cualquiera de los tres workflows |
 | `validate.yml` | Validar sitio: contenido, seguridad y navegadores | PR, lunes `30 5 * * 1`, o manual |
-| `publish-buffer-x.yml` | Publicar pelicula diaria en X (19:00 AR via Buffer) | `30 21 * * *`, o manual; activado por `BUFFER_X_AUTOPUBLISH_ENABLED` |
+| `publish-buffer-x.yml` | Publicar estreno de plataforma en X (19:00 AR via Buffer) | `30 21 * * *`, o manual; activado por `BUFFER_X_AUTOPUBLISH_ENABLED` |
 
 `refresh-upcoming-releases.yml` es independiente del semanal para que una fecha que llega un jueves no permanezca hasta el domingo como próximo estreno. El deploy sigue sin cron propio: cada workflow exitoso lo dispara mediante `workflow_run`. Los nombres de ese disparador coinciden exactamente con los tres actualizadores. Los registros históricos de Actions pueden conservar los nombres de la edición semanal combinada.
 
@@ -42,7 +42,7 @@ Próximos estrenos toma títulos y fechas de Cines Argentinos, siempre Argentina
 Los jobs que escriben ediciones comparten `publish-home-editions` con `cancel-in-progress: false`. El publicador permite sólo los archivos propios del actualizador, realiza commit, fetch, rebase y push, conservando cargas que hayan llegado a `main` mientras consultaba las fuentes. Un conflicto falla visiblemente y no descarta trabajo. El push con `GITHUB_TOKEN` no dispara otro workflow por `push`: `workflow_run` es el enlace explícito al deploy. Este hace checkout de `main` actualizado y acepta sólo actualizadores exitosos de este mismo repositorio y rama.
 
 
-X continúa operativo con su historial, control de duplicados, modo dry-run y horarios existentes. Una edición del home no manda mensajes ni agenda posts. El workflow generado por GitHub para Dependabot no es un actualizador del home ni un YAML propio; no se elimina como supuesto duplicado.
+X publica estrenos de plataformas AR de los últimos 30 días, del año actual o anterior, con comprobación de ofertas vigentes antes de enviar. Excluye Star Trek y las ofertas de cine; no exige el flag histórico `isPremiere`. Conserva historial, control de duplicados, dry-run y horario diario; `publish-now` permite un envío manual inmediato. El contrato y la recuperación están en `docs/buffer-x-automation.md`. Una edición del home no manda mensajes ni agenda posts. El workflow generado por GitHub para Dependabot no es un actualizador del home ni un YAML propio; no se elimina como supuesto duplicado.
 
 ## Contrato de las skills y publicación
 
