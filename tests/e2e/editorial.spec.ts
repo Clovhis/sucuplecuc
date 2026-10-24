@@ -20,6 +20,7 @@ import lasNoches from '../../src/data/editorials/las-noches-ana-bovino-dok-leipz
 import estrenosOctubre from '../../src/data/editorials/estrenos-cines-15-octubre-2026.json' with { type: 'json' };
 import estrenosOctubre22 from '../../src/data/editorials/estrenos-cines-22-octubre-2026.json' with { type: 'json' };
 import loDejamosAca from '../../src/data/editorials/lo-dejamos-aca-darin-peretti-entre-la-risa-y-el-bajon.json' with { type: 'json' };
+import halloween from '../../src/data/editorials/halloween-2026-sali-a-pasarla-mal.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -40,7 +41,7 @@ async function openEditorialIndex(page: Page): Promise<void> {
   await expect(page).toHaveURL(/\/editorial\/$/);
 }
 
-for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, naHongJin, mistyGreen, theDevils, libertadDoble, lasNoches, estrenosOctubre, estrenosOctubre22]) {
+for (const entry of [offni, estrella, calm, skydance, benImana, londonFestival, naHongJin, mistyGreen, theDevils, libertadDoble, lasNoches, estrenosOctubre, estrenosOctubre22, halloween]) {
   test(`${entry.slug}: news sources, SEO and responsive images remain available from home and archive`, async ({ page }, testInfo) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
