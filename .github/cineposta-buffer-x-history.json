@@ -645,6 +645,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "papi-ricky-la-pelicula-2026",
+			"bufferPostId": "6ade8f7bbd33ce99c397cc45",
+			"dueAt": "2026-10-26T22:00:00.000Z",
+			"scheduledAt": "2026-10-25T23:23:40.666Z",
+			"copyStyle": {
+				"opening": 2424807685,
+				"availability": 433244816,
+				"editorial": 1803938676,
+				"verdict": 1101064,
+				"link": 1235411267
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/papi-ricky-la-pelicula",
+				"checkedAt": "2026-10-25T23:23:34.797Z",
+				"kind": "subscription",
+				"platforms": [
+					"Prime Video"
+				]
+			}
 		}
 	]
 }
