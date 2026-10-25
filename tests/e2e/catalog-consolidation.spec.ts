@@ -5,6 +5,30 @@ const aliases = [
 	['paprika-detective-de-los-suenos-2006', 'paprika-2006', 'Paprika'],
 ] as const;
 
+for (const [legacyPath, destination, title] of [
+	['/trailers/the-fly-1986/', '/peliculas/la-mosca-1986/', 'La mosca'],
+	['/peliculas/the-odyssey-2026/', '/peliculas/la-odisea-2026/', 'La Odisea'],
+] as const) {
+	test(`Search Console legacy URL ${legacyPath} resolves to its current movie`, async ({ page, request }) => {
+		const response = await request.get(legacyPath);
+		expect(response.status()).toBe(200);
+		const html = await response.text();
+		expect(html).toContain(`rel="canonical" href="https://www.cineposta.com.ar${destination}"`);
+		expect(html).toContain(`http-equiv="refresh" content="0;url=${destination}"`);
+		expect(html).toContain(`href="${destination}"`);
+
+		const sitemap = await (await request.get('/sitemap.xml')).text();
+		expect(sitemap).not.toContain(`<loc>https://www.cineposta.com.ar${legacyPath}</loc>`);
+		expect(sitemap).toContain(`<loc>https://www.cineposta.com.ar${destination}</loc>`);
+
+		await page.goto(legacyPath, { waitUntil: 'domcontentloaded' });
+		await expect(page).toHaveURL(destination);
+		await expect(page.getByRole('heading', { level: 1 })).toContainText(title);
+		await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://www.cineposta.com.ar${destination}`);
+		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /index, follow/);
+	});
+}
+
 test('retired movie and forum URLs point to the canonical record and stay out of the sitemap', async ({ request }) => {
 	const sitemap = await (await request.get('/sitemap.xml')).text();
 	for (const [oldSlug, canonical] of aliases) {
