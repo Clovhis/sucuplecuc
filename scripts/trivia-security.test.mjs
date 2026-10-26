@@ -16,7 +16,7 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   await db.exec("create role anon; create role authenticated; create schema auth; create function auth.uid() returns uuid language sql as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$; grant usage on schema auth to anon,authenticated; grant execute on function auth.uid() to anon,authenticated;");
   await db.exec(readFileSync(new URL('../supabase/sql/trivia_high_scores.sql',import.meta.url),'utf8'));
   await db.exec(readFileSync(new URL('../supabase/sql/trivia_sessions.sql',import.meta.url),'utf8'));
-  await db.exec(`insert into public.trivia_questions(id,payload,catalog_version,active) select 'q-'||n,jsonb_build_object('id','q-'||n,'kind',(array['Reparto','Duplas','Dirección','Año de estreno','Postcréditos','Premios'])[1+(n%6)],'prompt','Pregunta '||n,'fact','Explicación '||n,'people','[]'::jsonb,'answer',jsonb_build_object('slug','movie-'||(n%50),'title','Peli '||(n%50),'year',2000,'poster','/poster.webp'),'options',jsonb_build_array(jsonb_build_object('slug','movie-'||(n%50),'title','Peli '||(n%50),'year',2000,'poster','/poster.webp'),jsonb_build_object('slug','wrong-a','title','Otra A','year',2001,'poster','/a.webp'),jsonb_build_object('slug','wrong-b','title','Otra B','year',2002,'poster','/b.webp'))),'test',true from generate_series(1,1000)n`);
+  await db.exec(`insert into public.trivia_questions(id,payload,catalog_version,active) select 'q-'||n,jsonb_build_object('id','q-'||n,'kind',(array['La historia','La historia','Duplas','Dirección','Postcréditos','Premios'])[1+(n%6)],'family',(array['story','story','credits','credits','extra','extra'])[1+(n%6)],'prompt','Pregunta '||n,'fact','Explicación '||n,'people','[]'::jsonb,'answer',jsonb_build_object('slug','movie-'||(n%50),'title','Peli '||(n%50),'year',2000,'poster','/poster.webp'),'options',jsonb_build_array(jsonb_build_object('slug','movie-'||(n%50),'title','Peli '||(n%50),'year',2000,'poster','/poster.webp'),jsonb_build_object('slug','wrong-a','title','Otra A','year',2001,'poster','/a.webp'),jsonb_build_object('slug','wrong-b','title','Otra B','year',2002,'poster','/b.webp'))),'test',true from generate_series(1,1000)n`);
   await user(null);
   await assert.rejects(call('start_trivia_game'),/permission denied/);
   await assert.rejects(call('claim_trivia_player',['Natalia','AR',30]),/permission denied/);
@@ -37,6 +37,10 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   assert.equal(game.question.id,`${game.id}:0`);
   const serverQuestions=(await admin("select questions from public.trivia_games where id=$1",[game.id])).rows[0].questions;
   assert.equal(new Set(serverQuestions.map(q=>q.answer.slug)).size,20);
+  assert.equal(serverQuestions.filter(q=>q.family==='story').length,12);
+  assert.equal(serverQuestions.filter(q=>q.family==='credits').length,6);
+  assert.equal(serverQuestions.filter(q=>q.family==='extra').length,2);
+  for(const kind of ['Duplas','Dirección']) assert.equal(serverQuestions.filter(q=>q.kind===kind).length,3);
   await user(A);
   for(const table of ['trivia_questions','trivia_players','trivia_games','trivia_seen_questions','trivia_verified_scores']) await assert.rejects(db.query(`select * from public.${table}`),/permission denied/);
   await assert.rejects(call('trivia_game_state',[game.id]),/permission denied/);
@@ -76,7 +80,12 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   const list=await call('list_trivia_high_scores',[10]);assert.equal(list[0].player_name,'Natalia');assert.equal(list[0].score,highScore);assert.equal(list[0].correct_count,19);assert.ok(!('age'in list[0]));
   assert.equal((await call('answer_trivia_question',[game.id,19,'wrong-b'])).score,highScore);
   // A worse second game cannot overwrite this player's record or create another ranking row.
+  await admin("insert into public.trivia_seen_questions(player_id,question_id) select $1,id from public.trivia_questions where payload->>'family'='extra' on conflict(player_id,question_id) do update set seen_at=now()",[player.id]);await user(A);
   game=await call('start_trivia_game');
+  const secondDeck=(await admin('select questions from public.trivia_games where id=$1',[game.id])).rows[0].questions;
+  assert.equal(secondDeck.filter(q=>q.family==='extra').length,0,'Use new stories instead of repeating exhausted extras');
+  assert.ok(secondDeck.every(q=>!serverQuestions.some(previous=>previous.id===q.id)));
+  await user(A);
   for(let round=0;round<20;round++) {
    await admin("update public.trivia_games set deadline=clock_timestamp()-interval '1 second' where id=$1",[game.id]);await user(A);
    game=await call('answer_trivia_question',[game.id,round,null]);

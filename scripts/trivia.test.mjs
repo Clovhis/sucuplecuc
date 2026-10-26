@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { test } from 'node:test';
 import { PGlite } from '@electric-sql/pglite';
-import { buildTriviaBank, selectTriviaSession, resolveTriviaAnswer, triviaPoints, triviaGrade, triviaHintBonus, chooseTriviaHint } from '../src/lib/trivia.ts';
+import { buildTriviaBank, selectTriviaSession, resolveTriviaAnswer, triviaPoints, triviaGrade, triviaHintBonus, chooseTriviaHint, storyClue } from '../src/lib/trivia.ts';
 import { isTriviaPlayer, TRIVIA_COUNTRY_CODES } from '../src/lib/trivia-player.ts';
 import { isTriviaNicknameAllowed } from '../src/lib/trivia-nickname.ts';
 import { syncPolicy } from './sync-trivia-nickname-policy.mjs';
@@ -20,7 +20,8 @@ test('banco real: más de 1000 preguntas únicas, exactamente tres opciones y un
  assert.equal(new Set(bank.questions.map((q) => q.id)).size, bank.questions.length);
  assert.equal(new Set(bank.questions.map((q) => q.prompt)).size, bank.questions.length);
  for (const question of bank.questions) {
-  assert.ok(question.people.length > 0);
+  assert.equal(/\b(?:18|19|20)\d{2}\b/.test(question.prompt), false, question.id);
+  assert.ok(question.family === 'story' || question.people.length > 0);
   assert.ok(question.people.every((person) => question.prompt.includes(person.name)), `La foto debe pertenecer a una persona nombrada: ${question.id}`);
   assert.equal(question.options.length, 3);
   assert.equal(new Set(question.options).size, 3);
@@ -30,10 +31,9 @@ test('banco real: más de 1000 preguntas únicas, exactamente tres opciones y un
   const has = (movie, name) => movie.mainCast.some((value) => clean(value) === clean(name));
   const win = (movie) => movie.awards?.wins.some((award) => award.award === 'oscar' && /^mejor pel[ií]cula$/i.test(award.category));
   const matches = (movie) => {
-   if (question.id.endsWith(':cast-year')) return movie.year === correct.year && has(movie, cast[0]);
+   if (question.id.endsWith(':story-v2')) return storyClue(movie) === storyClue(correct);
    if (question.id.endsWith(':cast-director')) return clean(movie.director) === clean(correct.director) && has(movie, cast[0]);
    if (question.id.endsWith(':pair')) return has(movie, cast[0]) && has(movie, cast[1]);
-   if (question.id.endsWith(':director-year')) return clean(movie.director) === clean(correct.director) && movie.year === correct.year;
    if (question.id.endsWith(':credits')) return has(movie, cast[0]) && (movie.postCreditsScenes === undefined || movie.postCreditsScenes > 0);
    if (question.id.endsWith(':oscar')) return has(movie, cast[0]) && win(movie);
    throw new Error(`Unknown question ${question.id}`);
@@ -41,7 +41,43 @@ test('banco real: más de 1000 preguntas únicas, exactamente tres opciones y un
   assert.deepEqual(question.options.filter((index) => matches(bySlug.get(bank.movies[index].slug))), [question.answer], question.id);
   for (const index of question.options) assert.ok(bySlug.has(bank.movies[index].slug));
  }
+ assert.ok(bank.questions.filter(q=>q.family==='story').length >= 1000);
  console.log(`Trivia: ${bank.questions.length} preguntas, ${bank.movies.length} películas.`);
+});
+
+test('regresiones de dificultad: sin héroe regalado ni dos alternativas de la misma franquicia', () => {
+ assert.ok(!bank.questions.some(q=>q.family==='story' && /superman|clark kent|krypton/i.test(q.prompt)));
+ assert.ok(!bank.movies.some(m=>['spider-man-2002','shelter-2026'].includes(m.slug)));
+ for(const q of bank.questions) {
+  const options=q.options.map(i=>bySlug.get(bank.movies[i].slug));
+  const isAR=m=>m.isArgentinian||m.country.split(',').map(s=>s.trim()).includes('AR');
+  assert.equal(new Set(options.map(isAR)).size,1,q.id);
+  const answer=bank.movies[q.answer].slug;
+  const wrong=options.filter(m=>m.slug!==answer);
+  assert.ok(!(wrong.every(m=>/^(?:x-men|matrix-|avatar)/.test(m.slug)) && wrong[0].slug.split('-')[0]===wrong[1].slug.split('-')[0]),q.id);
+ }
+});
+
+test('codirecciones: una lista parcial o reordenada nunca genera una segunda respuesta correcta', () => {
+ const key=name=>clean(name);
+ const dirs=m=>m.director.split(/\s*,\s*|\s+y\s+|\s*&\s*/).map(key);
+ for(const q of bank.questions.filter(q=>q.kind==='Dirección')) {
+  const a=bySlug.get(bank.movies[q.answer].slug);
+  for(const option of q.options.filter(index=>index!==q.answer)) {
+   const b=bySlug.get(bank.movies[option].slug);
+   assert.ok(!(b.mainCast.map(key).includes(key(a.mainCast[0])) && dirs(a).some(name=>dirs(b).includes(name))),q.id);
+  }
+ }
+});
+
+test('consignas narrativas: sin título regalado, fechas ni fragmentos huérfanos', () => {
+ const movie={slug:'fixture',title:'Un título secreto',originalTitle:'Secret Title',synopsis:'Una familia encuentra una puerta que conduce a un mundo donde todos sus deseos tienen un precio inesperado.'};
+ assert.ok(storyClue(movie));
+ for(const synopsis of ['En 1984, una familia encuentra una puerta que conduce a un mundo donde todos sus deseos tienen un precio inesperado.', 'Un título secreto sigue a una familia que encuentra una puerta a otro mundo y debe descubrir cómo volver.', 'Un título secreto. Después de ese momento descubre una puerta que conduce a otro mundo donde sus deseos tienen un precio.']) assert.equal(storyClue({...movie,synopsis}),undefined);
+ for(const q of bank.questions.filter(q=>q.family==='story')) {
+  const movie=bySlug.get(bank.movies[q.answer].slug);
+  for(const title of [movie.title,movie.originalTitle].filter(Boolean)) if(clean(title).length>=4) assert.ok(!clean(q.prompt).includes(clean(title)),q.id);
+ }
 });
 
 test('partidas de 20 películas diferentes, variedad y preguntas nuevas entre sesiones', () => {
@@ -52,6 +88,10 @@ test('partidas de 20 películas diferentes, variedad y preguntas nuevas entre se
   assert.equal(deck.length, 20);
   assert.equal(new Set(deck.map((q) => q.answer)).size, 20);
   assert.ok(new Set(deck.map((q) => q.kind)).size >= 3);
+  assert.ok(deck.filter(q=>q.family==='story').length >= 12);
+  assert.ok(deck.filter(q=>q.family==='credits').length <= 6);
+  assert.ok(deck.filter(q=>q.kind==='Duplas').length <= 3);
+  assert.ok(deck.filter(q=>q.kind==='Dirección').length <= 3);
   assert.ok(deck.every((q) => !seen.includes(q.id)));
   seen.push(...deck.map((q) => q.id));
   recent.push(...deck.map((q) => bank.movies[q.answer].slug));

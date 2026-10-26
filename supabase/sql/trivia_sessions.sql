@@ -115,7 +115,7 @@ end;
 $$;
 create or replace function public.start_trivia_game() returns jsonb
 language plpgsql security definer set search_path='' as $$
-declare p public.trivia_players; sid uuid; selected jsonb;
+declare p public.trivia_players; sid uuid; selected jsonb := '[]'::jsonb; chosen jsonb; slot integer; target text; used text[] := '{}';
 begin
  if auth.uid() is null then raise exception 'authentication required'; end if;
  select * into p from public.trivia_players where owner_id=auth.uid() for update;
@@ -123,15 +123,30 @@ begin
  if not public.is_trivia_nickname_allowed(p.nickname) then raise exception 'nickname not allowed'; end if;
  if (select count(*) from public.trivia_games where owner_id=auth.uid() and created_at>clock_timestamp()-interval '1 minute')>=5 then raise exception 'too many games'; end if;
  if (select count(*) from public.trivia_questions where active)<1000 then raise exception 'question bank unavailable'; end if;
- -- Pick different films; prefer unseen questions and rotate clue types.
- with candidates as (
-  select distinct on(q.payload->'answer'->>'slug') q.id,q.payload,h.seen_at
-  from public.trivia_questions q left join public.trivia_seen_questions h on h.question_id=q.id and h.player_id=p.id
-  where q.active order by q.payload->'answer'->>'slug',h.seen_at nulls first,random()
- ), ranked as (
-  select *,row_number() over(partition by payload->>'kind' order by seen_at nulls first,random()) as lane from candidates
- ), picked as (select * from ranked order by lane,seen_at nulls first,random() limit 20)
- select jsonb_agg((payload-'options')||jsonb_build_object('options',(select jsonb_agg(value order by random()) from jsonb_array_elements(payload->'options'))) order by random()) into selected from picked;
+ -- Twelve distinct stories, at most six credit clues (three per kind), two extras.
+ -- Each slot prefers unseen questions; fallback keeps small future banks playable.
+ for slot in 1..20 loop
+  target:=case when slot<=12 then 'story' when slot<=18 then 'credits' else 'extra' end;
+  select q.payload into chosen
+  from public.trivia_questions q
+  left join public.trivia_seen_questions h on h.question_id=q.id and h.player_id=p.id
+  where q.active and not(q.payload->'answer'->>'slug'=any(used))
+  order by
+   case when h.seen_at is null and q.payload->>'family'=target and (target='story' or
+    (select count(*) from jsonb_array_elements(selected) x where x->>'kind'=q.payload->>'kind')<3) then 0
+    when h.seen_at is null and q.payload->>'family'='story' then 1
+    when q.payload->>'family'=target and (target='story' or
+    (select count(*) from jsonb_array_elements(selected) x where x->>'kind'=q.payload->>'kind')<3) then 2
+    when q.payload->>'family'='story' then 3 else 4 end,
+   h.seen_at nulls first,
+   (select count(*) from jsonb_array_elements(selected) x where x->>'kind'=q.payload->>'kind'),random()
+  limit 1;
+  if chosen is null then raise exception 'question bank unavailable'; end if;
+  used:=array_append(used,chosen->'answer'->>'slug');
+  selected:=selected||jsonb_build_array((chosen-'options')||jsonb_build_object('options',
+   (select jsonb_agg(value order by random()) from jsonb_array_elements(chosen->'options'))));
+ end loop;
+ select jsonb_agg(value order by random()) into selected from jsonb_array_elements(selected);
  if jsonb_array_length(selected)<>20 then raise exception 'question bank unavailable'; end if;
  update public.trivia_games set phase='abandoned' where owner_id=auth.uid() and phase in('question','review');
  insert into public.trivia_games(owner_id,player_id,player,questions) values(auth.uid(),p.id,public.get_trivia_player(),selected) returning id into sid;

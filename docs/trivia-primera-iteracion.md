@@ -1,6 +1,6 @@
 # Trivia Cine Posta
 
-Rama de revisión: `feature/trivia-cineposta`. DEV: `/juegos/trivia/`. Acceso desde el home junto al simulador. Sin publicación de la web ni cambios en `main`.
+Ruta: `/juegos/trivia/`. Acceso desde el home junto al simulador.
 
 ## Juego
 
@@ -26,7 +26,7 @@ La identidad anónima de Auth no pide email ni contraseña y tiene almacenamient
 
 `supabase/sql/trivia_sessions.sql` implementa jugadores, banco privado, partidas, historial de preguntas y mejores puntajes. Todas las tablas tienen RLS y no permiten lectura ni escritura directa de `anon` o `authenticated`. Las funciones de juego exigen autenticación y comprueban propiedad antes de cada acción. El serializer interno no es ejecutable por esos roles.
 
-Cada partida conserva una copia privada de sus 20 preguntas. Se priorizan preguntas no vistas, se rotan tipos y se evita repetir películas. El orden de las opciones se mezcla en el servidor. El cliente recibe sólo la pregunta actual y las respuestas ya cerradas; no recibe soluciones ni preguntas futuras. Los identificadores públicos son opacos: los IDs del catálogo contenían el slug de la respuesta y no se exponen mientras se responde.
+Cada partida conserva una copia privada de sus 20 preguntas. Se priorizan preguntas no vistas y se evita repetir películas. La mezcla reserva 12 lugares para historias, 6 para créditos (máximo 3 de cada tipo) y 2 para premios/postcréditos. Si una familia no tiene preguntas nuevas, se completa primero con historias no vistas; se mezcla el orden final. El orden de las opciones se mezcla en el servidor. El cliente recibe sólo la pregunta actual y las respuestas ya cerradas; no recibe soluciones ni preguntas futuras. Los identificadores públicos son opacos: los IDs del catálogo contenían el slug de la respuesta y no se exponen mientras se responde.
 
 El cliente envía sólo una opción, el número de pregunta y el ID de partida. PostgreSQL fija el plazo, comprueba la opción, corrige, calcula velocidad y bonus, descuenta pistas y publica el resultado al completar las 20. Cambiar `Date.now`, datos locales, campos del DOM o payloads de puntos no cambia el score guardado.
 
@@ -40,7 +40,7 @@ Esto cierra los vectores técnicos probados de suplantación y fabricación de r
 
 ## Banco privado y mantenimiento
 
-El banco inicial contiene 9139 preguntas derivadas de 2398 películas estrenadas: reparto/año, reparto/dirección, duplas, dirección/año, Oscar a Mejor película/reparto y postcréditos registrados. No se infieren postcréditos ausentes ni se agregan hechos ajenos a las fichas. Se exige una sola opción válida y un mínimo de 1000 preguntas.
+El banco depurado contiene 2658 preguntas derivadas de 2396 películas estrenadas: historias, reparto/dirección, duplas, Oscar a Mejor película/reparto y postcréditos registrados. No se infieren postcréditos ausentes ni se agregan hechos ajenos a las fichas. Se exige una sola opción válida y un mínimo de 1000 preguntas.
 
 `scripts/sync-trivia-bank.mjs` lee películas y personas, genera el banco e importa sus preguntas a Supabase con `SUPABASE_ACCESS_TOKEN` sólo desde un entorno administrativo. Sin `--apply` sólo informa conteos y versión. Las partidas existentes conservan sus snapshots durante una actualización del banco.
 
@@ -57,3 +57,25 @@ El endpoint estático `/juegos/trivia/banco.json` expone únicamente versión y 
 - Playwright omitido por pedido del usuario. `node scripts/review-trivia-ui.mjs` recorre el juego en un Edge aislado mediante CDP nativo: 320, 390, 600, 768, 1024 y 1440 px, más 844 × 390 horizontal. Usa dos identidades temporales marcadas y las elimina, junto a sus partidas y récords, al terminar. Revisa registro, moderación, apodo ocupado, respuesta correcta/incorrecta, pistas, offline, recuperación, tiempo vencido, las 20 respuestas, resumen, fichas y repetición con el mismo jugador. Guarda capturas y geometrías en `test-results/trivia-review/` (ignorado por Git).
 - El control incluye desbordes, zonas táctiles de al menos 44 px, campos de 16 px en teléfonos/tablets, retratos uniformes y proporción 2:3 del póster revelado. La revisión es emulación Chromium/Edge; no se presenta como una prueba sobre un dispositivo iOS físico.
 - La suite `test:trivia` queda integrada en el workflow de validación. La ruta del juego está incluida en el sitemap.
+
+## Revisión de variedad — 26/10/2026
+
+Se retiraron las consignas por año de estreno y los años de las opciones mientras se responde. El año se muestra al revelar la respuesta y en el resumen. No se modificaron años del catálogo.
+
+Las pistas de historia salen del inicio de la sinopsis propia: frases completas, hasta 240 caracteres, sin el título ni años numéricos. No se toma una segunda frase aislada si la primera no sirve. `src/lib/trivia-stories.ts` permite reemplazarla por una pregunta específica reescrita para esa película (22 iniciales, basadas en las sinopsis locales). Las alternativas deben pertenecer al mismo contexto argentino o internacional, al mismo tipo de producción y género principal, con un máximo de 18 años de distancia. En historias se exige además un país de producción compartido y afinidad de conflicto/ambientación. Se excluyen títulos coincidentes, familias de títulos y sinopsis muy similares. Esto reduce ambigüedades; no reemplaza la revisión editorial de cada premisa.
+
+Las partidas ya empezadas conservan sus preguntas; el banco actualizado se aplica al iniciar otra partida. La sincronización y la migración no modifican jugadores ni sus récords.
+
+## Criterio de dificultad — feedback de jugadores
+
+No aceptar ternas como «Superman salva el mundo: X-Men / X-Men 2 / Superman» ni «Brandoni: Esperando la carroza / Terminator / Batman». El conocimiento de una película debe resolver la pista; los distractores deben ser creíbles. No se completa el banco con alternativas absurdas para inflar su tamaño.
+
+- Las preguntas de historias que nombran un título distintivo o una franquicia/personaje que regala la respuesta se descartan. Se revisan también variantes de nombres y derivados (por ejemplo, «kryptoniano»).
+- En duplas y dirección, cada alternativa debe compartir al menos una de las personas nombradas y fallar la combinación completa. Se busca cubrir las dos mitades de la pista entre ambas alternativas cuando hay candidatos adecuados.
+- En premios y postcréditos, las tres películas deben incluir al actor mencionado. Para postcréditos, las incorrectas necesitan cero escenas registrado explícitamente.
+- No mezclar fichas argentinas con extranjeras en una misma terna; no inferir nacionalidad de las personas por su nombre. Se usan `country` e `isArgentinian` de las películas.
+- Evitar que las dos alternativas incorrectas sean variaciones de la misma saga. Una pregunta sin dos alternativas válidas se retira.
+- `src/lib/trivia-quality.ts` centraliza estas reglas y una cuarentena de fuentes inconsistentes, con evidencia. Las fichas en cuarentena no pueden aparecer ni como respuestas ni como distractores. No se alteraron los JSON del catálogo en esta tarea.
+- `npm run audit:trivia` examina **cada pregunta aceptada** y genera `test-results/trivia-question-audit.json`, con la terna completa y los candidatos rechazados. Forma parte de `test:trivia`, por lo que CI vuelve a ejecutarla. La auditoría automática verifica reglas explícitas; la dificultad y toda ambigüedad semántica siguen admitiendo revisión editorial.
+
+La comparación de dirección descompone las codirecciones y descarta cualquier distractor que comparta actor y un director de la pista, aunque su ficha guarde una lista parcial o en otro orden. Se probaron todas las preguntas de dirección con esta condición adicional.

@@ -122,18 +122,27 @@ try {
 	await inspectAll('profile'); await viewport(sizes[1]); await click('[data-player-submit]');
 	await waitFor("!document.querySelector('[data-game]').hidden&&document.querySelectorAll('[data-choice]').length===3&&!document.querySelector('[data-choice]').disabled");
 	let state = await rpc(clients[0], 'get_trivia_game');
+	assert.equal(await evaluate("document.querySelectorAll('[data-choices] small').length"), 0);
+	const deck = (await query('select questions from public.trivia_games where id=$1 and owner_id=$2',[state.id,users[0]]))[0].questions;
+	assert.ok(deck.filter(q=>q.family==='story').length>=12);
+	assert.ok(deck.filter(q=>q.family==='credits').length<=6);
+	assert.ok(deck.every(q=>!/\b(?:18|19|20)\d{2}\b/.test(q.prompt)));
+	report.questionMix = Object.fromEntries(['story','credits','extra'].map(f=>[f,deck.filter(q=>q.family===f).length]));
 	await inspectAll('question'); await viewport(sizes[1]); await click('[data-use-hint]');
 	await waitFor("document.querySelector('[data-hints-count]').textContent==='2/3'");
 	const correct = async () => (await query("select questions->round->'answer'->>'slug' as answer from public.trivia_games where id=$1 and owner_id=$2", [state.id, users[0]]))[0].answer;
 	await click(`[data-choice="${await correct()}"]`);
 	await waitFor("!document.querySelector('[data-next]').hidden&&!document.querySelector('[data-next]').disabled");
 	assert.ok(await evaluate("document.querySelector('[data-feedback]').textContent.includes('¡Esa es!')"));
+	assert.equal(await evaluate("document.querySelectorAll('[data-choices] small').length"), 3);
 	await inspectAll('correct');
-	let pairReviewed = false;
+	let pairReviewed = false, storyReviewed = state.question.kind === 'La historia';
 	for (let round = 1; round < 20; round++) {
 		await viewport(sizes[1]); await click('[data-next]');
 		await waitFor(`document.querySelector('[data-round]').textContent.includes('${String(round + 1).padStart(2, '0')} /')&&!document.querySelector('[data-choice]').disabled`);
 		state = await rpc(clients[0], 'get_trivia_game');
+		assert.equal(await evaluate("document.querySelectorAll('[data-choices] small').length"), 0);
+		if (!storyReviewed && state.question.kind === 'La historia') { await inspectAll('story-question'); storyReviewed=true; await viewport(sizes[1]); }
 		if (!pairReviewed && state.question.people.length >= 2) { for (const size of [sizes[0],sizes[1],sizes[3]]) await inspect('two-people',size); pairReviewed=true; await viewport(sizes[1]); }
 		if (round === 1) {
 			const answer = await correct(); const wrong = state.question.options.find((option) => option.slug !== answer).slug;
@@ -151,6 +160,7 @@ try {
 		await click(`[data-choice="${await correct()}"]`);
 		await waitFor(round === 19 ? "!document.querySelector('[data-summary]').hidden" : "!document.querySelector('[data-next]').hidden&&!document.querySelector('[data-next]').disabled");
 	}
+	assert.ok(storyReviewed); assert.ok(pairReviewed);
 	state = await rpc(clients[0], 'get_trivia_game');
 	assert.equal(state.answers.filter((answer) => answer.correct).length, 18); assert.equal(state.bonus, 500); assert.equal(state.phase, 'finished');
 	assert.equal(await evaluate("document.querySelectorAll('[data-results] .trivia-result').length"), 20);

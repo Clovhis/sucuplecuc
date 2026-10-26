@@ -147,7 +147,7 @@ function setupTrivia(root: HTMLElement) {
 		const result = current.answers[current.round];
 		node('choices').innerHTML = question.options.map((movie,i)=>{
 			const correct = result?.movie.slug === movie.slug; const wrong = result?.choice?.slug === movie.slug && !result.correct; const discarded = current.discarded === movie.slug;
-			return `<button type="button" class="trivia-choice ${correct?'is-correct':wrong?'is-wrong':discarded?'is-discarded':''}" data-choice="${escape(movie.slug)}" ${correct||wrong||discarded?`aria-label="${escape(movie.title)}: ${correct?'respuesta correcta':wrong?'tu respuesta, incorrecta':'opción descartada'}"`:''}><span aria-hidden="true">0${i+1}</span><span>${escape(movie.title)} <small>(${movie.year})</small></span><span aria-hidden="true">${correct?'✓':wrong?'✕':discarded?'−':'↗'}</span></button>`;
+			return `<button type="button" class="trivia-choice ${correct?'is-correct':wrong?'is-wrong':discarded?'is-discarded':''}" data-choice="${escape(movie.slug)}" ${correct||wrong||discarded?`aria-label="${escape(movie.title)}: ${correct?'respuesta correcta':wrong?'tu respuesta, incorrecta':'opción descartada'}"`:''}><span aria-hidden="true">0${i+1}</span><span>${escape(movie.title)}${result ? ` <small>(${movie.year})</small>` : ''}</span><span aria-hidden="true">${correct?'✓':wrong?'✕':discarded?'−':'↗'}</span></button>`;
 		}).join('');
 		node('hints-count').textContent = `${3-current.hintsUsed}/3`;
 		node('hint-status').textContent = current.discarded ? `Descartamos una opción. Te quedan ${3-current.hintsUsed} pistas.` : current.hintsUsed===3 ? 'Usaste las tres pistas. ¡Ahora va por tu cuenta!' : 'Descartá una opción incorrecta. Cada pista sin usar suma 250 puntos al final.';
