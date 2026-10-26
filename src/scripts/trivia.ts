@@ -1,7 +1,7 @@
 import { triviaGrade, TRIVIA_ROUNDS, TRIVIA_SECONDS } from '../lib/trivia';
 import type { TriviaMovie, TriviaPerson } from '../lib/trivia';
 import { triviaSupabase as client } from '../lib/supabaseClient';
-import { isTriviaPlayer } from '../lib/trivia-player';
+import { isTriviaPlayer, TRIVIA_COUNTRY_CODES } from '../lib/trivia-player';
 import type { TriviaPlayer } from '../lib/trivia-player';
 import { isTriviaNicknameAllowed } from '../lib/trivia-nickname';
 
@@ -201,7 +201,20 @@ function setupTrivia(root: HTMLElement) {
 	}
 	async function refreshRanking(){
 		if(rankingBusy)return;rankingBusy=true;node('ranking-status').textContent='Cargando puntajes…';
-		try{const entries=await rpc<{player_name:string;country_code:string;score:number;correct_count:number}[]>('list_trivia_high_scores',{p_limit:10});node('ranking-list').innerHTML=entries.map(entry=>`<li><span>${escape(entry.player_name)}<small>${escape(countryName(entry.country_code))} · ${entry.correct_count}/20 aciertos</small></span><strong>${format(entry.score)}<small>${triviaGrade(entry.score)}/10</small></strong></li>`).join('');node('ranking-status').textContent=entries.length?'Ranking actualizado.':'Todavía no hay puntajes. Podés ser el primero.';rankingLoaded=true;}
+		try {
+			const entries = await rpc<{player_name:string;country_code:string;age?:number;score:number;correct_count:number}[]>('list_trivia_high_scores',{p_limit:10});
+			node('ranking-list').innerHTML = entries.map((entry) => {
+				const country = TRIVIA_COUNTRY_CODES.includes(entry.country_code) ? entry.country_code : null;
+				const flag = country ? `<img class="trivia-ranking-flag" src="${escape(base)}images/flags/${country.toLowerCase()}.svg" alt="" width="24" height="16" decoding="async" />` : '';
+				const age = typeof entry.age === 'number' && Number.isInteger(entry.age) && entry.age >= 1 && entry.age <= 120 ? ` · ${entry.age} ${entry.age === 1 ? 'año' : 'años'}` : '';
+				return `<li><span class="trivia-ranking-player"><span class="trivia-ranking-name">${escape(entry.player_name)}</span><small class="trivia-ranking-meta"><span class="trivia-ranking-country">${flag}${escape(country ? countryName(country) : 'País no disponible')}</span><span>${age} · ${entry.correct_count}/20 aciertos</span></small></span><strong>${format(entry.score)}<small>${triviaGrade(entry.score)}/10</small></strong></li>`;
+			}).join('');
+			node('ranking-list').querySelectorAll<HTMLImageElement>('img').forEach((image) => {
+				image.addEventListener('error', () => { image.hidden = true; }, { once: true });
+				if (image.complete && !image.naturalWidth) image.hidden = true;
+			});
+			node('ranking-status').textContent=entries.length?'Ranking actualizado.':'Todavía no hay puntajes. Podés ser el primero.';rankingLoaded=true;
+		}
 		catch{node('ranking-status').textContent='El ranking no está disponible ahora. Reintentá en un rato.';}finally{rankingBusy=false;}
 	}
 	node<HTMLDetailsElement>('ranking').addEventListener('toggle',()=>{if(node<HTMLDetailsElement>('ranking').open&&!rankingLoaded)void refreshRanking();});

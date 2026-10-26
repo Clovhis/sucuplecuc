@@ -144,6 +144,11 @@
 .trivia-ranking-list li:first-child::before { color: var(--trivia-accent); }
 .trivia-ranking-list strong { font: .85rem var(--font-mono); color: var(--trivia-accent); text-align: right; }
 .trivia-ranking-list small { display: block; color: var(--trivia-muted); font-size: .7rem; }
+.trivia-ranking-player { min-width: 0; }
+.trivia-ranking-name { overflow-wrap: anywhere; }
+.trivia-ranking-list .trivia-ranking-meta { display: flex; flex-wrap: wrap; align-items: center; column-gap: .25rem; row-gap: .2rem; margin-top: .25rem; }
+.trivia-ranking-country { display: inline-flex; align-items: center; gap: .4rem; }
+.trivia-ranking-flag { flex: 0 0 auto; width: 24px; height: 16px; object-fit: cover; border-radius: 3px; box-shadow: 0 1px 4px rgba(0, 0, 0, .25); }
 .trivia-text-button { padding: .6rem 0; background: none; color: var(--trivia-accent); border: 0; min-height: 44px; cursor: pointer; font-size: .8rem !important; }
 .trivia-footer { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; justify-content: space-between; padding: 2rem 0 0; font-size: .8rem; color: var(--trivia-muted); }
 .trivia-footer a { color: var(--trivia-accent); }

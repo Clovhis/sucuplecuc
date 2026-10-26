@@ -1,6 +1,7 @@
 import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { TRIVIA_COUNTRY_CODES } from '../src/lib/trivia-player.ts';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const moviesDirectory = path.join(repoRoot, 'src', 'data', 'movies');
@@ -27,7 +28,7 @@ async function fetchFlag(countryCode) {
 	return Buffer.from(await response.arrayBuffer());
 }
 
-const countries = new Set();
+const countries = new Set(TRIVIA_COUNTRY_CODES);
 for (const filename of await readdir(moviesDirectory)) {
 	if (!filename.endsWith('.json')) continue;
 	const movie = JSON.parse(await readFile(path.join(moviesDirectory, filename), 'utf8'));

@@ -52,10 +52,10 @@ revoke all on sequence public.trivia_high_scores_id_seq from public, anon, authe
 
 drop function if exists public.list_trivia_high_scores(integer);
 create function public.list_trivia_high_scores(p_limit integer default 10)
-returns table (rank integer, player_name text, country_code text, score integer, correct_count integer)
+returns table (rank integer, player_name text, country_code text, score integer, correct_count integer, age integer)
 language sql security definer set search_path = '' as $$
  select row_number() over (order by s.score desc, s.created_at asc, s.id asc)::integer,
- s.player_name, s.country_code, s.score, s.correct_count
+ s.player_name, s.country_code, s.score, s.correct_count, s.age::integer
  from public.trivia_high_scores s
  where public.is_trivia_nickname_allowed(s.player_name)
  order by s.score desc, s.created_at asc, s.id asc

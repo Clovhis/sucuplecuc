@@ -147,7 +147,7 @@ test('nicknames: bloquea insultos y evasiones comunes sin rechazar nombres y pal
  for (const name of allowedNicknames) assert.equal(isTriviaNicknameAllowed(name),true,name);
 });
 
-test('Supabase SQL: perfil ligado al resultado, edad privada, cálculo, ranking y reintentos', async () => {
+test('Supabase SQL: perfil ligado al resultado, edad pública, cálculo, ranking y reintentos', async () => {
  const db = new PGlite();
  try {
   await db.exec('create role anon; create role authenticated;');
@@ -180,7 +180,7 @@ test('Supabase SQL: perfil ligado al resultado, edad privada, cálculo, ranking 
   assert.equal(list[0].player_name, 'Más rápido');
   assert.equal(list[0].correct_count, 12);
   assert.equal(list[0].country_code, 'AR');
-  assert.ok(!('age' in list[0]));
+  assert.equal(list[0].age,30);
   assert.ok(!('player_id' in list[0]));
   const perfect = answers.map(() => ({correct:true,remaining_ms:20000}));
   assert.equal((await submit('00000000-0000-4000-8000-000000000004','Sin pistas',perfect)).rows[0].score,24750);

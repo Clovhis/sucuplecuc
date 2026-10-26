@@ -9,7 +9,7 @@ Ruta: `/juegos/trivia/`. Acceso desde el home junto al simulador.
 - Retratos circulares de 72 × 72 px, nombre y rol para las personas mencionadas. Fotos locales de `people.json`, con prioridad por nombre exacto y aliases explícitos; iniciales si una imagen no carga. Se revisaron los retratos de Robert Mitchum y Charles Laughton y el alias de F. W. Murnau.
 - Tres pistas para toda la partida, máximo una por pregunta. Cada una descarta una opción incorrecta sin detener el reloj. Cada pista guardada suma 250 puntos al final.
 - Acierto: `1000 + floor(milisegundos_restantes / 100)`, hasta 1200 puntos. Error o vencimiento: cero. Bonus final: `(3 - pistas_usadas) * 250`. Máximo: 24.750. Nota: `max(1, puntos / 2475)`, con un decimal y techo 10.
-- El resumen conserva las 20 preguntas, elecciones, respuestas, películas y enlaces. El ranking muestra una entrada por jugador, con su mejor partida. Una partida peor no baja su récord.
+- El resumen conserva las 20 preguntas, elecciones, respuestas, películas y enlaces. El ranking muestra una entrada por jugador, con su mejor partida, bandera SVG local, país y edad declarada en su perfil. Una partida peor no baja su récord. Las banderas usan los mismos recursos que el simulador; `node scripts/sync-country-flags.mjs` completa todas las nacionalidades del formulario.
 - Teclas 1/2/3, controles con foco, mensajes accesibles y respeto por `prefers-reduced-motion`.
 
 ## Nicknames e identidad
@@ -32,7 +32,7 @@ El cliente envía sólo una opción, el número de pregunta y el ID de partida. 
 
 Las acciones bloquean la fila de la partida. Repetir una respuesta conserva el primer resultado; no permite probar las tres opciones. Reintentar «siguiente» no reinicia el reloj. Una pregunta vencida vale cero aunque se envíe la opción correcta. No se puede avanzar sin responder, responder otra ronda ni usar una cuarta pista. Otra pestaña comparte el estado del servidor, con una sola partida activa por identidad. Se limitan los arranques a cinco por minuto por identidad.
 
-Los récords verificados viven en `trivia_verified_scores`, con una fila por jugador. Se actualizan sólo si mejora su puntaje. La RPC antigua que aceptaba corrección y tiempo del cliente queda revocada para navegadores. La edad y los identificadores de propiedad no aparecen en el ranking público.
+Los récords verificados viven en `trivia_verified_scores`, con una fila por jugador. Se actualizan sólo si mejora su puntaje. La RPC antigua que aceptaba corrección y tiempo del cliente queda revocada para navegadores. El ranking público devuelve nickname, país del récord, edad actual declarada del participante, puesto, puntaje y aciertos; los identificadores de propiedad siguen privados. El formulario informa que la edad aparece en el ranking.
 
 El juego requiere conexión. Una respuesta perdida se recupera consultando el estado del servidor, sin recrear puntos ni plazos. El reloj visible usa `performance.now` sincronizado con la respuesta del servidor; la validación definitiva siempre ocurre en PostgreSQL.
 
@@ -45,6 +45,10 @@ El banco depurado contiene 2658 preguntas derivadas de 2396 películas estrenada
 `scripts/sync-trivia-bank.mjs` lee películas y personas, genera el banco e importa sus preguntas a Supabase con `SUPABASE_ACCESS_TOKEN` sólo desde un entorno administrativo. Sin `--apply` sólo informa conteos y versión. Las partidas existentes conservan sus snapshots durante una actualización del banco.
 
 Orden de instalación: aplicar `supabase/sql/trivia_high_scores.sql`, luego `supabase/sql/trivia_sessions.sql`, y ejecutar `node --experimental-strip-types scripts/sync-trivia-bank.mjs --apply`. Actualizar la política requiere ejecutar primero `node --experimental-strip-types scripts/sync-trivia-nickname-policy.mjs`. No se guarda ningún token administrativo en archivos o bundles.
+
+Para incorporar la edad al ranking en una instalación existente, aplicar únicamente `supabase/sql/trivia_ranking_age.sql` antes de publicar el frontend. La migración es transaccional y repetible: reemplaza la función pública, conserva los permisos de lectura anónima y no modifica jugadores, partidas ni récords. El frontend admite respuestas anteriores sin edad durante la transición.
+
+`tests/e2e/trivia-ranking.spec.ts` verifica banderas cargadas, cobertura de todos los países del formulario, edad, compatibilidad con respuestas sin edad y ausencia de superposiciones a 320 px. La revisión del 26/10/2026 pasó en los cinco perfiles Playwright: Chromium, Firefox, WebKit y móviles Chromium/WebKit, con respuestas de ranking simuladas y sin escribir resultados públicos. `test:trivia` también comprueba la migración incremental desde la firma anterior y su ejecución repetida.
 
 El endpoint estático `/juegos/trivia/banco.json` expone únicamente versión y cantidad de preguntas; ya no publica el banco con respuestas. No se carga en el home. Los catálogos, ediciones automáticas, películas y datos de personas permanecen intactos.
 

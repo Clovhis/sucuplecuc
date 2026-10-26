@@ -45,7 +45,7 @@ const countries = TRIVIA_COUNTRY_CODES.map((code) => ({ code, label: regionNames
 				<p id="trivia-nickname-error" class="trivia-nickname-error" data-nickname-error role="alert" hidden></p>
 				<label for="trivia-player-country">Nacionalidad <select id="trivia-player-country" data-player-country name="nationality" required autocomplete="country"><option value="" disabled selected>Elegí tu país</option>{countries.map((country) => <option value={country.code}>{country.label}</option>)}</select></label>
 				<label for="trivia-player-age">Edad <input id="trivia-player-age" data-player-age name="age" type="number" min="1" max="120" step="1" required inputmode="numeric" placeholder="Tus años" /></label>
-				<p id="trivia-profile-privacy" class="trivia-small">Tu nickname y nacionalidad aparecen en el ranking. La edad queda asociada a tu resultado y no se muestra públicamente. Al terminar, tu puntaje se guarda automáticamente.</p>
+				<p id="trivia-profile-privacy" class="trivia-small">Tu nickname, nacionalidad y edad aparecen en el ranking. Al terminar, tu puntaje se guarda automáticamente.</p>
 				<p class="trivia-small">Tu apodo queda reservado para vos en este navegador. Si borrás sus datos, perdés el acceso a ese jugador. El ranking conserva tu mejor partida.</p>
 				<button class="trivia-button" type="submit" data-player-submit>Ahora sí, a jugar →</button><p class="trivia-small" data-player-status role="status"></p>
 				<button class="trivia-text-button" type="button" data-player-back>← Volver</button>

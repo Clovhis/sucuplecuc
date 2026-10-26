@@ -77,7 +77,8 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   assert.equal(game.phase,'finished');assert.equal(game.answers.length,20);assert.equal(game.bonus,0);assert.equal(game.hintsUsed,3);
   assert.equal(game.score,game.answers.reduce((n,a)=>n+a.points,0));
   const highScore=game.score;
-  const list=await call('list_trivia_high_scores',[10]);assert.equal(list[0].player_name,'Natalia');assert.equal(list[0].score,highScore);assert.equal(list[0].correct_count,19);assert.ok(!('age'in list[0]));
+  const list=await call('list_trivia_high_scores',[10]);assert.equal(list[0].player_name,'Natalia');assert.equal(list[0].score,highScore);assert.equal(list[0].correct_count,19);assert.equal(list[0].age,30);
+  assert.deepEqual(Object.keys(list[0]).sort(),['rank','player_name','country_code','score','correct_count','age'].sort());
   assert.equal((await call('answer_trivia_question',[game.id,19,'wrong-b'])).score,highScore);
   // A worse second game cannot overwrite this player's record or create another ranking row.
   await admin("insert into public.trivia_seen_questions(player_id,question_id) select $1,id from public.trivia_questions where payload->>'family'='extra' on conflict(player_id,question_id) do update set seen_at=now()",[player.id]);await user(A);
@@ -104,5 +105,12 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   // Reapplying migrations leaves identities, records and active games intact.
   await db.exec(readFileSync(new URL('../supabase/sql/trivia_sessions.sql',import.meta.url),'utf8'));
   assert.equal((await db.query('select count(*)::int as n from public.trivia_verified_scores')).rows[0].n,1);
+  // Upgrade the old public return shape, then reapply safely without changing records.
+  await db.exec("drop function public.list_trivia_high_scores(integer); create function public.list_trivia_high_scores(p_limit integer default 10) returns table(rank integer,player_name text,country_code text,score integer,correct_count integer) language sql as $$select 1,'legacy','AR',0,0$$;");
+  for (let i=0;i<2;i++) await db.exec(readFileSync(new URL('../supabase/sql/trivia_ranking_age.sql',import.meta.url),'utf8'));
+  await user(null);
+  const upgraded=await call('list_trivia_high_scores',[10]);
+  assert.deepEqual(upgraded,list);
+  await assert.rejects(db.query('select age from public.trivia_players'),/permission denied/);
  } finally { await db.close(); }
 });
