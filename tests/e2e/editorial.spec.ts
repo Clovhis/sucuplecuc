@@ -21,6 +21,7 @@ import estrenosOctubre from '../../src/data/editorials/estrenos-cines-15-octubre
 import estrenosOctubre22 from '../../src/data/editorials/estrenos-cines-22-octubre-2026.json' with { type: 'json' };
 import loDejamosAca from '../../src/data/editorials/lo-dejamos-aca-darin-peretti-entre-la-risa-y-el-bajon.json' with { type: 'json' };
 import halloween from '../../src/data/editorials/halloween-2026-sali-a-pasarla-mal.json' with { type: 'json' };
+import hokum from '../../src/data/editorials/hokum-la-maldicion-de-la-bruja-ganas-de-hacer-el-check-out.json' with { type: 'json' };
 
 const editorialDirectory = new URL('../../src/data/editorials/', import.meta.url);
 const publications = readdirSync(editorialDirectory).filter(file => file.endsWith('.json')).map(file =>
@@ -158,6 +159,7 @@ for (const { entry, movieTitle, sourcePattern } of [
   { entry: insaciable, movieTitle: 'Insaciable', sourcePattern: /^https:\/\/www\.independentfilmco\.com\/films\/saccharine$/ },
   { entry: animales, movieTitle: 'Animales (Ben Affleck)', sourcePattern: /^https:\/\/www\.netflix\.com\/tudum\// },
   { entry: loDejamosAca, movieTitle: 'Lo dejamos acá', sourcePattern: /^https:\/\/assetshare\.netflixstudios\.com\// },
+  { entry: hokum, movieTitle: 'Hokum: La maldición de la bruja', sourcePattern: /^https:\/\/www\.neonrated\.com\/film\/hokum$/ },
 ]) {
   const path = `/editorial/${entry.slug}/`;
 
