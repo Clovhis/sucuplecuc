@@ -29,7 +29,7 @@ const sections = [
 const more = [
   { href: homeSection('proximos-estrenos'), label: 'Próximos estrenos', icon: icons.calendar },
   { href: homeSection('radar-de-cine'), label: 'Radar de cine', icon: icons.radar },
-  { href: `${base}juegos/simulador-carrera-actor/`, label: 'Juego de cine', icon: icons.game },
+  { href: `${base}juegos/`, label: 'Juegos de cine', icon: icons.game },
   { href: `${base}comunidad/`, label: 'Comunidad', icon: icons.chat },
 ];
 const current = (href: string) => !href.includes('#') && Astro.url.pathname.startsWith(href) ? 'true' : undefined;

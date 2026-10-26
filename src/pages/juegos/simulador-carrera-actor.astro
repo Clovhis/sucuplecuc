@@ -64,7 +64,7 @@ const structuredData = [
 		'@id': `${pageUrl}#breadcrumb`,
 		itemListElement: [
 			{ '@type': 'ListItem', position: 1, name: SITE_NAME, item: `${SITE_URL}/` },
-			{ '@type': 'ListItem', position: 2, name: 'Juegos', item: pageUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Juegos', item: new URL('/juegos/', SITE_URL).toString() },
 			{ '@type': 'ListItem', position: 3, name: 'Simulador de carrera actoral', item: pageUrl },
 		],
 	},
@@ -85,7 +85,7 @@ const structuredData = [
 				<span aria-hidden="true">·</span>
 				<span>Una carrera, mil versiones</span>
 			</div>
-			<a class="actor-simulator__return" href={assetBase}>Volver a Cine Posta <span aria-hidden="true">↗</span></a>
+			<a class="actor-simulator__return" href={`${assetBase}juegos/`}>Todos los juegos <span aria-hidden="true">↗</span></a>
 		</header>
 
 		<section class="actor-view actor-view--landing actor-landing" data-view="landing" aria-labelledby="actor-game-title">

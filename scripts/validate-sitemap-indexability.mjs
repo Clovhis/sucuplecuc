@@ -56,6 +56,7 @@ async function main() {
 	const sitemapUrls = getLocs(sitemap);
 	const failures = [];
 	const internalPageUrls = new Set();
+	const gameNavigation = new Map();
 
 	if (sitemapUrls.length === 0) failures.push('sitemap.xml has no URLs.');
 	if (/<lastmod>/i.test(sitemap)) {
@@ -70,6 +71,8 @@ async function main() {
 			if (getCanonical(html) !== url) {
 				failures.push(`Sitemap canonical mismatch for ${url}; found ${getCanonical(html) ?? 'none'}.`);
 			}
+			const isGameEntry = new URL(url).pathname === '/' || new URL(url).pathname.startsWith('/juegos/');
+			if (isGameEntry) gameNavigation.set(url, new Set());
 			for (const linkedUrl of getInternalLinks(html, url)) {
 				if (linkedUrl.searchParams.has('backTo')) {
 					failures.push(`Legacy backTo URL linked from ${url}: ${linkedUrl.toString()}`);
@@ -80,6 +83,7 @@ async function main() {
 				linkedUrl.search = '';
 				linkedUrl.hash = '';
 				internalPageUrls.add(linkedUrl.toString());
+				if (isGameEntry) gameNavigation.get(url).add(linkedUrl.toString());
 			}
 		} catch (error) {
 			failures.push(`Could not validate sitemap URL ${url}: ${error.message}`);
@@ -92,6 +96,21 @@ async function main() {
 		} catch {
 			failures.push(`Broken internal page link found in a sitemap page: ${url}`);
 		}
+	}
+
+	// Games must be discoverable through normal HTML links from home, not just listed in XML.
+	const reachableGames = new Set();
+	const pendingGames = [`${SITE_ORIGIN}/`];
+	while (pendingGames.length) {
+		const url = pendingGames.pop();
+		if (reachableGames.has(url)) continue;
+		reachableGames.add(url);
+		for (const target of gameNavigation.get(url) ?? []) if (gameNavigation.has(target)) pendingGames.push(target);
+	}
+	for (const url of sitemapUrls.filter(value => new URL(value).pathname.startsWith('/juegos/'))) {
+		if (!reachableGames.has(url)) failures.push(`Game page is unreachable from home: ${url}`);
+		if (url !== `${SITE_ORIGIN}/juegos/` && !gameNavigation.get(`${SITE_ORIGIN}/juegos/`)?.has(url)) failures.push(`Game page is missing from the games hub: ${url}`);
+		if (![...gameNavigation].some(([source, targets]) => source !== url && targets.has(url))) failures.push(`Game page has no incoming internal link: ${url}`);
 	}
 
 	if (failures.length > 0) {

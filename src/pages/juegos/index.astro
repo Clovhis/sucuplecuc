@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeBrandLink from '../../components/HomeBrandLink.astro';
+import { SITE_LANGUAGE, SITE_NAME, SITE_URL } from '../../lib/seo';
+
+const base = import.meta.env.BASE_URL;
+const pageUrl = new URL('/juegos/', SITE_URL).toString();
+const games = [
+	{ name: 'Trivia de películas', path: 'juegos/trivia/' },
+	{ name: 'Simulador de carrera actoral', path: 'juegos/simulador-carrera-actor/' },
+];
+const structuredData = [
+	{
+		'@context': 'https://schema.org', '@type': 'CollectionPage', '@id': `${pageUrl}#webpage`,
+		url: pageUrl, name: `Juegos de cine | ${SITE_NAME}`, inLanguage: SITE_LANGUAGE,
+		isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+		mainEntity: { '@type': 'ItemList', itemListElement: games.map((game, i) => ({ '@type': 'ListItem', position: i + 1, name: game.name, url: new URL(game.path, `${SITE_URL}/`).toString() })) },
+	},
+	{
+		'@context': 'https://schema.org', '@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` },
+			{ '@type': 'ListItem', position: 2, name: 'Juegos de cine', item: pageUrl },
+		],
+	},
+];
+---
+<BaseLayout title={`Juegos de cine | ${SITE_NAME}`} description="Jugá con Cine Posta: poné a prueba tu memoria en la trivia de películas o construí tu carrera actoral. Elegí tu próximo minijuego." structuredData={structuredData}>
+	<main id="main-content" class="games-hub">
+		<header class="games-hub__topbar">
+			<HomeBrandLink className="games-hub__brand" />
+			<nav aria-label="Ruta de navegación"><ol><li><a href={base}>Inicio</a></li><li aria-current="page">Juegos de cine</li></ol></nav>
+		</header>
+		<section class="games-hub__intro" aria-labelledby="games-title">
+			<p class="games-hub__eyebrow">Cine Posta / Minijuegos</p>
+			<h1 id="games-title">El cine también<br />se <em>juega.</em></h1>
+			<p>Una cosa es mirar películas. Otra es acordarse de todas.<br class="games-hub__desktop-break" /> O tomar las decisiones que te llevan a la alfombra roja.</p>
+		</section>
+		<section class="games-hub__grid" aria-label="Elegí un juego">
+			<a class="game-entry" href={`${base}${games[0].path}`} aria-labelledby="trivia-game-title">
+				<div class="game-entry__visual game-entry__visual--trivia" aria-hidden="true">
+					<span class="game-entry__timer">20<small>SEGUNDOS</small></span>
+					<div class="game-entry__answers"><span><b>A</b> La tengo en la punta de la lengua <i>↗</i></span><span class="is-correct"><b>B</b> Esa la sé de memoria <i>✓</i></span><span><b>C</b> Una más y me voy <i>↗</i></span></div>
+				</div>
+				<div class="game-entry__body">
+					<p class="games-hub__eyebrow">01 / Memoria cinéfila</p>
+					<h2 id="trivia-game-title">Trivia de películas</h2>
+					<p>Las viste, las recomendaste. Ahora hay que acordarse antes de que se termine el tiempo.</p>
+					<ul><li>20 preguntas</li><li>3 opciones</li><li>3 pistas</li></ul>
+					<span class="game-entry__cta">Jugar a la trivia <span aria-hidden="true">→</span></span>
+				</div>
+			</a>
+			<a class="game-entry" href={`${base}${games[1].path}`} aria-labelledby="career-game-title">
+				<div class="game-entry__visual game-entry__visual--career" aria-hidden="true"><img src={`${base}images/home/cineposta-simulador-rodaje-editorial.webp`} alt="" width="1536" height="1024" decoding="async" /></div>
+				<div class="game-entry__body">
+					<p class="games-hub__eyebrow">02 / Tu próxima gran película</p>
+					<h2 id="career-game-title">Simulador de carrera actoral</h2>
+					<p>Arrancá desde abajo, elegí tus papeles y hacete un lugar en el cine. El próximo paso lo decidís vos.</p>
+					<ul><li>Creá tu personaje</li><li>Elegí tu camino</li><li>Hacé carrera</li></ul>
+					<span class="game-entry__cta">Jugar al simulador <span aria-hidden="true">→</span></span>
+				</div>
+			</a>
+		</section>
+		<p class="games-hub__outro">¿Preferís que elija otra persona? <a href={`${base}que-miro-hoy/`}>Encontrá tu próxima película <span aria-hidden="true">↗</span></a></p>
+	</main>
+</BaseLayout>
+
+<style>
+	.games-hub { --hub-ink: #f0eee8; --hub-muted: #aeb5bf; --hub-line: #343b45; --hub-accent: #e6b291; width: min(1180px, calc(100% - 2rem)); margin-inline: auto; padding-bottom: 4rem; color: var(--hub-ink); }
+	.games-hub__topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.5rem; border-bottom: 1px solid var(--hub-line); }
+	:global(.games-hub__brand) { display: inline-flex; align-items: center; min-height: 44px; }
+	:global(.games-hub__brand img) { width: 140px; height: auto; }
+	.games-hub__topbar ol { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .7rem; list-style: none; margin: 0; padding: 0; font-size: .8rem; color: var(--hub-muted); }
+	.games-hub__topbar li + li::before { content: '/'; margin-right: .7rem; color: #727c89; }
+	.games-hub__topbar nav a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+	.games-hub__intro { padding-block: clamp(2.5rem, 6vw, 5rem) 2.5rem; }
+	.games-hub__eyebrow { color: var(--hub-accent); font: 500 .7rem/1.5 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; margin: 0 0 1rem; }
+	.games-hub h1 { margin: 0 0 1.5rem; font: 500 clamp(2.8rem, 6.5vw, 5.5rem)/1.02 var(--font-sans); letter-spacing: -.055em; }
+	.games-hub h1 em { font-style: normal; color: var(--hub-accent); }
+	.games-hub__intro > p:last-child { margin: 0; color: var(--hub-muted); font-size: clamp(1rem, 2vw, 1.15rem); line-height: 1.7; }
+	.games-hub__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+	.game-entry { display: flex; flex-direction: column; min-width: 0; color: inherit; border-top: 1px solid var(--hub-line); padding-top: 1rem; text-decoration: none; }
+	.game-entry__visual { height: 260px; overflow: hidden; border: 1px solid var(--hub-line); border-radius: 4px; background: #11161d; }
+	.game-entry__visual--trivia { display: flex; flex-direction: column; justify-content: center; padding: 1.25rem 2rem; }
+	.game-entry__timer { display: flex; flex: 0 0 auto; flex-direction: column; justify-content: center; align-items: center; width: 64px; height: 64px; margin: 0 0 1rem auto; border: 1px solid var(--hub-accent); border-radius: 50%; font: 500 1.7rem/1 var(--font-mono); color: var(--hub-accent); }
+	.game-entry__timer small { margin-top: .35rem; font-size: .42rem; letter-spacing: .06em; }
+	.game-entry__answers { display: grid; gap: .5rem; }
+	.game-entry__answers > span { display: grid; grid-template-columns: 1rem minmax(0, 1fr) 1rem; gap: .5rem; align-items: center; border: 1px solid var(--hub-line); border-radius: 3px; padding: .65rem .8rem; color: var(--hub-muted); font-size: .75rem; }
+	.game-entry__answers b { font: 500 .65rem var(--font-mono); }
+	.game-entry__answers i { font-style: normal; }
+	.game-entry__answers .is-correct { color: #88d7ac; background: #13251d; border-color: #4a8062; }
+	.game-entry__visual--career img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+	.game-entry__body { display: flex; flex: 1; flex-direction: column; align-items: start; padding-top: 1.5rem; }
+	.game-entry__body .games-hub__eyebrow { margin-bottom: .7rem; }
+	.game-entry h2 { margin: 0; font: 500 clamp(1.55rem, 2.5vw, 2rem)/1.2 var(--font-sans); letter-spacing: -.03em; }
+	.game-entry__body > p:not([class]) { color: var(--hub-muted); font-size: .95rem; line-height: 1.7; margin: 1rem 0; }
+	.game-entry ul { display: flex; flex-wrap: wrap; gap: .5rem 1rem; padding: 0; margin: 0 0 1.5rem; list-style: none; color: var(--hub-muted); font: 500 .65rem/1.5 var(--font-mono); }
+	.game-entry__cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 44px; margin-top: auto; padding: .65rem 1rem; border: 1px solid #655246; border-radius: 4px; color: var(--hub-accent); font-size: .9rem; transition: background .2s ease; }
+	.game-entry:hover .game-entry__cta { background: #2a221d; }
+	.game-entry:hover .game-entry__visual--career img { transform: scale(1.025); }
+	.games-hub a:focus-visible { outline: 2px solid var(--hub-accent); outline-offset: 5px; }
+	.games-hub__outro { display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: center; margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--hub-line); color: var(--hub-muted); font-size: .85rem; }
+	.games-hub__outro a { display: inline-flex; gap: .7rem; align-items: center; min-height: 44px; color: var(--hub-accent); }
+	@media (max-width: 700px) { .games-hub__grid { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; } .game-entry__visual { height: 260px; } .game-entry__visual--trivia { padding: 1rem; } .games-hub__desktop-break { display: none; } .games-hub__topbar { align-items: center; gap: .5rem; } :global(.games-hub__brand img) { width: 110px; } .games-hub__topbar ol { gap: .4rem; font-size: .7rem; } .games-hub__topbar li + li::before { margin-right: .4rem; } }
+	@media (prefers-reduced-motion: reduce) { .game-entry__visual--career img, .game-entry__cta { transition: none; } }
+</style>

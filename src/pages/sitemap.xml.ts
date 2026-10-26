@@ -42,6 +42,7 @@ export const GET: APIRoute = async () => {
 		...getMovieCatalogPages(movies).map((page) => ({ pathname: getMovieCatalogPath(page.number) })),
 		{ pathname: '/editorial/' },
 		...getEditorials().map((entry) => ({ pathname: getEditorialPath(entry.slug) })),
+		{ pathname: '/juegos/' },
 		{ pathname: '/juegos/simulador-carrera-actor/' },
 		{ pathname: '/juegos/trivia/' },
 		{ pathname: QUE_MIRO_HOY_PATH },
