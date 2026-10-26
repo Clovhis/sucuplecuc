@@ -39,3 +39,10 @@ export const communitySupabase = isSupabaseConfigured
 			},
 		})
 	: null;
+
+// Separate persistent identity for the trivia; never share ownership with movie votes.
+export const triviaSupabase = isSupabaseConfigured
+	? createClient(supabaseUrl, supabaseAnonKey, {
+		auth: { autoRefreshToken: true, persistSession: true, detectSessionInUrl: false, storageKey: 'cineposta-trivia-auth-v1' },
+	})
+	: null;

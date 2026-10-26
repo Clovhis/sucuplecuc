@@ -11,6 +11,7 @@ import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
 import HomePrimaryCatalog from '../components/HomePrimaryCatalog.astro';
 import PostometroTeaser from '../components/PostometroTeaser.astro';
+import TriviaTeaser from '../components/TriviaTeaser.astro';
 import UpcomingReleases2027 from '../components/UpcomingReleases2027.astro';
 import WeeklyRecommendationsCarousel from '../components/WeeklyRecommendationsCarousel.astro';
 import { getCinemaNews } from '../lib/cinemaNews';
@@ -528,6 +529,7 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						)
 					}
 
+					<TriviaTeaser />
 					<section class="home-actor-game fade-up" style="--item-delay: 150ms;" aria-labelledby="home-actor-game-title" data-home-actor-game>
 						<a class="home-actor-game__link" href={actorCareerGamePath}>
 							<div class="home-actor-game__content">

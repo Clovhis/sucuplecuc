@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeBrandLink from '../../components/HomeBrandLink.astro';
+import { getMovies, getPosterUrl } from '../../lib/movies';
+import { TRIVIA_COUNTRY_CODES } from '../../lib/trivia-player';
+import '../../styles/trivia.css';
+
+const base = import.meta.env.BASE_URL;
+const covers = ['the-matrix-1999', 'jurassic-park-1993', 'el-secreto-de-sus-ojos-2009'];
+const movies = getMovies();
+const posters = covers.map((slug) => movies.find((movie) => movie.slug === slug)).filter((movie) => movie !== undefined);
+const regionNames = new Intl.DisplayNames(['es'], { type: 'region' });
+const countries = TRIVIA_COUNTRY_CODES.map((code) => ({ code, label: regionNames.of(code) ?? code }))
+	.sort((a, b) => a.code === 'AR' ? -1 : b.code === 'AR' ? 1 : a.label.localeCompare(b.label, 'es'));
+---
+<BaseLayout title="Trivia de películas | Cine Posta" description="¿Cuánto cine tenés? 20 preguntas, tres opciones y 20 segundos por respuesta. Jugá, sumá puntos y descubrí tu próxima película." bodyClass="trivia-edition">
+	<main id="main-content" class="trivia" data-trivia data-base={base}>
+		<header class="trivia-topbar">
+			<HomeBrandLink className="trivia-brand" />
+			<span class="trivia-kicker">Cine Posta / Minijuegos</span>
+			<a href={base}>Volver al sitio ↗</a>
+		</header>
+		<section class="trivia-landing" data-landing aria-labelledby="trivia-title">
+			<div class="trivia-intro">
+				<p class="trivia-kicker"><span class="trivia-live-dot" aria-hidden="true"></span> La trivia de Cine Posta</p>
+				<h1 id="trivia-title">¿Cuánto cine<br /> <em>tenés?</em></h1>
+				<p class="trivia-lead">Las viste. Las recomendaste. Ahora hay que acordarse.</p>
+				<p class="trivia-muted">Veinte preguntas de películas, tres opciones y el reloj corriendo. Al final, te llevás un puntaje y unas cuantas pelis para volver a ver.</p>
+				<div class="trivia-rules"><span><strong>20</strong> preguntas</span><span><strong>3</strong> opciones</span><span><strong>20″</strong> por respuesta</span></div>
+				<button class="trivia-button" type="button" data-start>Vamos a jugar <span aria-hidden="true">→</span></button>
+				<p class="trivia-small" data-start-status role="status">Acierto: 1000 puntos. Rapidez: hasta 200 extra. Tenés 3 pistas: cada una que guardes suma 250 puntos al final.</p>
+				<p class="trivia-small" data-personal-best></p>
+			</div>
+			<div class="trivia-poster-stage" aria-hidden="true">
+				<div class="trivia-stamp">UNA MÁS<br /><strong>Y ME VOY.</strong></div>
+				<div class="trivia-poster-stack">{posters.map((movie, i) => <img src={getPosterUrl(movie.poster)} alt="" width="300" height="450" style={`--poster-i:${i}`} />)}</div>
+				<p>De «esa la sé» a «la tenía en la punta de la lengua».</p>
+			</div>
+		</section>
+
+		<section class="trivia-player-screen" data-player hidden aria-labelledby="trivia-player-title">
+			<div class="trivia-player-intro"><p class="trivia-kicker">Antes de gritar «esa la sé»</p><h2 id="trivia-player-title" tabindex="-1" data-player-title>¿Quién se sienta<br />en esta butaca?</h2><p class="trivia-muted">Armá tu perfil de jugador. Las respuestas, los puntos y la gloria van a tu nombre.</p><div class="trivia-player-ticket" aria-hidden="true"><span>CINE POSTA / TRIVIA</span><strong>ADMITE A<br />UN CINÉFILO</strong><span>20 PREGUNTAS · 20 SEGUNDOS</span></div></div>
+			<form class="trivia-player-form" data-player-form>
+				<label for="trivia-player-name">Nombre o nickname <input id="trivia-player-name" data-player-name name="nickname" type="text" minlength="2" maxlength="24" required autocomplete="nickname" placeholder="¿Cómo te llamamos?" aria-describedby="trivia-nickname-error trivia-profile-privacy" /></label>
+				<p id="trivia-nickname-error" class="trivia-nickname-error" data-nickname-error role="alert" hidden></p>
+				<label for="trivia-player-country">Nacionalidad <select id="trivia-player-country" data-player-country name="nationality" required autocomplete="country"><option value="" disabled selected>Elegí tu país</option>{countries.map((country) => <option value={country.code}>{country.label}</option>)}</select></label>
+				<label for="trivia-player-age">Edad <input id="trivia-player-age" data-player-age name="age" type="number" min="1" max="120" step="1" required inputmode="numeric" placeholder="Tus años" /></label>
+				<p id="trivia-profile-privacy" class="trivia-small">Tu nickname y nacionalidad aparecen en el ranking. La edad queda asociada a tu resultado y no se muestra públicamente. Al terminar, tu puntaje se guarda automáticamente.</p>
+				<p class="trivia-small">Tu apodo queda reservado para vos en este navegador. Si borrás sus datos, perdés el acceso a ese jugador. El ranking conserva tu mejor partida.</p>
+				<button class="trivia-button" type="submit" data-player-submit>Ahora sí, a jugar →</button><p class="trivia-small" data-player-status role="status"></p>
+				<button class="trivia-text-button" type="button" data-player-back>← Volver</button>
+			</form>
+		</section>
+
+		<section class="trivia-game" data-game hidden aria-labelledby="trivia-question">
+			<div class="trivia-game-connection" data-game-connection hidden><p class="trivia-nickname-error" data-game-error role="alert"></p><button class="trivia-text-button" type="button" data-retry-game>Reconectar con mi partida ↻</button></div>
+			<p class="trivia-player-badge" data-current-player></p>
+			<div class="trivia-game-top"><span class="trivia-kicker" data-round>Pregunta 01 / 20</span><span data-live-score>0 puntos</span></div>
+			<ol class="trivia-progress" data-progress aria-label="Progreso de las 20 preguntas"></ol>
+			<div class="trivia-play-layout">
+				<div class="trivia-question-panel" data-question-panel>
+					<div class="trivia-question-top"><span class="trivia-kicker" data-kind></span><div class="trivia-clock" data-clock role="timer" aria-label="Tiempo restante"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" /><circle class="trivia-clock-fill" cx="32" cy="32" r="28" /></svg><strong data-seconds>20</strong><span>seg</span></div></div>
+					<h2 id="trivia-question" tabindex="-1" data-question></h2>
+					<div class="trivia-clue-people" data-clue-people role="group" aria-label="Personas mencionadas en la pregunta" hidden></div>
+					<div class="trivia-choices" data-choices role="group" aria-labelledby="trivia-question"></div>
+					<div class="trivia-hints"><button class="trivia-hint-button" type="button" data-use-hint aria-describedby="trivia-hint-description"><span aria-hidden="true">✦</span> Usar pista <span data-hints-count>3/3</span></button><p id="trivia-hint-description" class="trivia-small" data-hint-status role="status">Descartá una opción incorrecta. Una pista por pregunta; el reloj sigue.</p></div>
+					<div class="trivia-feedback" data-feedback role="status" aria-live="polite"></div>
+					<button class="trivia-button" data-next type="button" hidden>Siguiente pregunta →</button>
+					<p class="trivia-small">Podés usar las teclas 1, 2 y 3. Después de responder, seguís a tu ritmo.</p>
+				</div>
+				<aside class="trivia-reveal" data-reveal aria-label="Película de la respuesta"><div class="trivia-reveal-empty"><span aria-hidden="true">?</span><p class="trivia-kicker">Detrás de la respuesta</p><h3>Una peli para tu lista.</h3><p>Contestá y acá aparece su ficha. Capaz ya tenés plan para esta noche.</p></div></aside>
+			</div>
+		</section>
+
+		<section data-summary class="trivia-summary" hidden aria-labelledby="trivia-summary-title">
+			<div class="trivia-summary-head"><div><p class="trivia-kicker">Corte. Se terminó la partida.</p><h2 id="trivia-summary-title" tabindex="-1" data-result-title></h2><p class="trivia-muted" data-result-copy></p></div><div class="trivia-final-score"><strong data-final-points></strong><span>puntos</span><small data-final-grade></small></div></div>
+			<div class="trivia-result-stats" data-result-stats></div>
+			<div class="trivia-summary-actions"><button class="trivia-button" type="button" data-replay>Otra ronda →</button><a href={`${base}#catalogo-filtros`}>Seguir buscando películas ↗</a></div>
+			<section class="trivia-score-form" aria-label="Jugador y guardado de puntaje"><div><p class="trivia-kicker">Esta partida es de</p><strong data-result-player></strong><p class="trivia-small" data-save-status role="status"></p></div><button class="trivia-button trivia-button--quiet" type="button" data-save-score>Reintentar guardado ↗</button></section>
+			<div class="trivia-filmography-head"><p class="trivia-kicker">Tu próxima película puede estar acá</p><h3>Las 20 de esta partida.</h3><p class="trivia-muted">Revisá tus respuestas y abrí cualquier ficha. Te la dejamos en otra pestaña.</p></div>
+			<div class="trivia-results" data-results></div>
+		</section>
+
+		<details class="trivia-ranking" data-ranking><summary><span>Salón de la fama</span><span class="trivia-kicker">Top 10 <span aria-hidden="true">↗</span></span></summary><p class="trivia-small">Aciertos, rapidez y pistas guardadas: hasta 24.750 puntos por partida.</p><ol data-ranking-list class="trivia-ranking-list"></ol><p class="trivia-small" data-ranking-status role="status">Abrí para ver los mejores puntajes.</p><button type="button" class="trivia-text-button" data-refresh-ranking>Actualizar ranking ↻</button></details>
+		<footer class="trivia-footer"><span>¿Te quedaste con ganas de otra cosa?</span><a href={`${base}juegos/simulador-carrera-actor/`}>Construí tu carrera en el cine →</a></footer>
+		<noscript><p>Activá JavaScript para jugar a la trivia y ver el reloj.</p></noscript>
+	</main>
+</BaseLayout>
+<script src="../../scripts/trivia.ts"></script>

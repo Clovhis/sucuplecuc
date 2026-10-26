@@ -43,6 +43,7 @@ export const GET: APIRoute = async () => {
 		{ pathname: '/editorial/' },
 		...getEditorials().map((entry) => ({ pathname: getEditorialPath(entry.slug) })),
 		{ pathname: '/juegos/simulador-carrera-actor/' },
+		{ pathname: '/juegos/trivia/' },
 		{ pathname: QUE_MIRO_HOY_PATH },
 		{ pathname: PEOPLE_PATH },
 		{ pathname: ABOUT_PATH },

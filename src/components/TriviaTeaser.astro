@@ -1,0 +1,29 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<section class="home-trivia" aria-labelledby="home-trivia-title">
+	<a href={`${base}juegos/trivia/`} class="home-trivia__link">
+		<div class="home-trivia__copy"><p class="home-trivia__kicker">Minijuegos / Nuevo</p><h2 id="home-trivia-title">¿Cuánto cine tenés?</h2><p>Veinte preguntas. Tres opciones. El reloj corriendo.<br />Demostrá lo que sabés y llevate unas pelis para tu lista.</p><span class="home-trivia__cta">Jugar a la trivia <span aria-hidden="true">→</span></span></div>
+		<div class="home-trivia__visual" aria-hidden="true"><span class="home-trivia__timer">20<small>SEGUNDOS</small></span><div class="home-trivia__answers"><span><b>A</b> Esa la sé de memoria <i>↗</i></span><span><b>B</b> La tengo en la punta de la lengua <i>↗</i></span><span class="home-trivia__correct"><b>C</b> Una más y me voy <i>✓</i></span></div></div>
+	</a>
+</section>
+<style>
+	.home-trivia { border-top: 1px solid #343b45; padding-top: 1.5rem; }
+	.home-trivia__link { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,450px); align-items: center; gap: 2rem; padding: 1rem 0 1.5rem; }
+	.home-trivia__kicker { color: #e6b291; font: 500 .7rem/1.4 var(--font-sans); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 .8rem; }
+	.home-trivia h2 { color: #f0eee8; font: 500 clamp(1.6rem, 3vw, 2.4rem)/1.15 var(--font-sans); letter-spacing: -.035em; margin: 0 0 .8rem; }
+	.home-trivia__copy > p:not([class]) { color: #aeb5bf; font: .95rem/1.7 var(--font-sans); margin: 0; }
+	.home-trivia__cta { display: inline-flex; align-items: center; gap: 1.5rem; border: 1px solid #655246; color: #e6b291; border-radius: 4px; padding: .6rem .85rem; margin-top: 1.2rem; min-height: 44px; font-size: .85rem; transition: background .2s; }
+	.home-trivia__link:hover .home-trivia__cta { background: #2a221d; }
+	.home-trivia__link:focus-visible { outline: 2px solid #e6b291; outline-offset: 5px; }
+	.home-trivia__visual { padding: 2rem 1.5rem 1.4rem; position: relative; background: #11161d; border: 1px solid #343b45; border-radius: 4px; }
+	.home-trivia__timer { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 70px; height: 70px; border: 1px solid #e6b291; border-radius: 50%; color: #e6b291; font: 400 1.7rem/1.1 var(--font-mono); margin: 0 0 1.4rem auto; }
+	.home-trivia__timer small { font-size: .43rem; letter-spacing: .07em; padding-top: .2rem; }
+	.home-trivia__answers { display: grid; gap: .6rem; }
+	.home-trivia__answers > span { display: grid; grid-template-columns: 1rem minmax(0,1fr) 1rem; gap: .7rem; padding: .8rem; border: 1px solid #343b45; border-radius: 3px; font-size: .75rem; color: #aeb5bf; }
+	.home-trivia__answers b { font: .7rem var(--font-mono); }
+	.home-trivia__answers i { font-style: normal; }
+	.home-trivia__answers .home-trivia__correct { color: #88d7ac; border-color: #4a8062; background: #13251d; }
+	@media(max-width:720px) { .home-trivia__link { grid-template-columns: minmax(0,1fr); gap: 1.5rem; } .home-trivia__visual { padding: 1rem; } .home-trivia__timer { width: 58px; height: 58px; margin-bottom: 1rem; font-size: 1.4rem; } }
+	@media(prefers-reduced-motion:reduce) { .home-trivia__cta { transition: none; } }
+</style>
