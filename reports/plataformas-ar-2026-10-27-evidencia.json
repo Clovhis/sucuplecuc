@@ -1,0 +1,2201 @@
+{
+  "checkedAt": "2026-10-27",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "window": {
+    "from": "2026-10-26",
+    "through": "2026-11-01"
+  },
+  "cutoff": "2026-10-27; upcoming announcements are not asserted as current legal availability",
+  "counts": {
+    "added": 9,
+    "updated": 3,
+    "candidates": 12,
+    "catalog": 2407
+  },
+  "discovery": {
+    "days": [
+      {
+        "date": "2026-10-26",
+        "total": 27,
+        "pages": 1
+      },
+      {
+        "date": "2026-10-27",
+        "total": 49,
+        "pages": 1
+      },
+      {
+        "date": "2026-10-28",
+        "total": 0,
+        "pages": 1
+      },
+      {
+        "date": "2026-10-29",
+        "total": 0,
+        "pages": 1
+      },
+      {
+        "date": "2026-10-30",
+        "total": 0,
+        "pages": 1
+      },
+      {
+        "date": "2026-10-31",
+        "total": 0,
+        "pages": 1
+      },
+      {
+        "date": "2026-11-01",
+        "total": 0,
+        "pages": 1
+      }
+    ],
+    "rawScope": "All movie years queried. Recent first films and new store/subscription offers separated from library additions; CINEMA excluded.",
+    "providerSpecificArrivals": [
+      {
+        "date": "2026-10-26",
+        "package": "nfx",
+        "total": 0,
+        "hasNextPage": false,
+        "recentMovies": []
+      },
+      {
+        "date": "2026-10-26",
+        "package": "itu",
+        "total": 10,
+        "hasNextPage": false,
+        "recentMovies": [
+          {
+            "id": "tm1632881",
+            "title": "Prácticamente magia 2",
+            "originalReleaseYear": 2026
+          },
+          {
+            "id": "tm1621420",
+            "title": "S4: La historia de Bob Lazar",
+            "originalReleaseYear": 2026
+          },
+          {
+            "id": "tm1663877",
+            "title": "Sun Rises on Us All",
+            "originalReleaseYear": 2025
+          },
+          {
+            "id": "tm1928124",
+            "title": "2Die4",
+            "originalReleaseYear": 2026
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "package": "amz",
+        "total": 0,
+        "hasNextPage": false,
+        "recentMovies": []
+      },
+      {
+        "date": "2026-10-27",
+        "package": "nfx",
+        "total": 1,
+        "hasNextPage": false,
+        "recentMovies": [
+          {
+            "id": "tm3000505",
+            "title": "Zainab Johnson: Toxically Optimistic",
+            "originalReleaseYear": 2026
+          }
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "package": "itu",
+        "total": 1,
+        "hasNextPage": false,
+        "recentMovies": [
+          {
+            "id": "tm1653548",
+            "title": "My Daughter Is a Zombie",
+            "originalReleaseYear": 2025
+          }
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "package": "amz",
+        "total": 28,
+        "hasNextPage": false,
+        "recentMovies": [
+          {
+            "id": "tm1670264",
+            "title": "Las 100 Noches Del Deseo",
+            "originalReleaseYear": 2025
+          },
+          {
+            "id": "tm1942917",
+            "title": "Cómo perder tu popularidad",
+            "originalReleaseYear": 2026
+          },
+          {
+            "id": "tm1440606",
+            "title": "Rescate en el golfo",
+            "originalReleaseYear": 2025
+          },
+          {
+            "id": "tm1863096",
+            "title": "Dolly Juega Conmigo",
+            "originalReleaseYear": 2026
+          },
+          {
+            "id": "tm1943221",
+            "title": "Trampa mortal",
+            "originalReleaseYear": 2026
+          },
+          {
+            "id": "tm1592809",
+            "title": "Xana y el secreto del tiempo",
+            "originalReleaseYear": 2025
+          },
+          {
+            "id": "tm1869218",
+            "title": "El Favor",
+            "originalReleaseYear": 2025
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "package": "prv",
+        "total": 7,
+        "hasNextPage": false,
+        "recentMovies": [
+          {
+            "id": "tm2876942",
+            "title": "Tony",
+            "originalReleaseYear": 2026
+          },
+          {
+            "id": "tm2862880",
+            "title": "One of the Good Ones",
+            "originalReleaseYear": 2026
+          }
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "package": "prv",
+        "total": 8,
+        "hasNextPage": false,
+        "recentMovies": [
+          {
+            "id": "tm1803695",
+            "title": "Leño de Navidad: chimenea acogedora",
+            "originalReleaseYear": 2025
+          }
+        ]
+      }
+    ],
+    "note": "Unknown package codes return an unfiltered connection; amp and mubi probes were discarded. Amazon Prime is prv; Amazon store is amz; Apple store itu; Netflix nfx."
+  },
+  "scores": [
+    {
+      "slug": "tony-2026",
+      "title": "Tony",
+      "sourceUrl": "https://www.rottentomatoes.com/m/tony_2026",
+      "retrievedAt": "2026-10-27",
+      "metric": "Rotten Tomatoes Popcornmeter",
+      "raw": 92,
+      "scale": 100,
+      "votes": "1,000+ verified",
+      "normalized": 9,
+      "confidenceCeiling": null,
+      "confidenceReason": "Direct audience aggregate",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 8,
+      "rtAudienceUnavailable": false
+    },
+    {
+      "slug": "one-of-the-good-ones-2026",
+      "title": "One of the Good Ones",
+      "sourceUrl": "https://www.justwatch.com/ar/pelicula/one-of-the-good-ones",
+      "retrievedAt": "2026-10-27",
+      "metric": "IMDb audience via live JustWatch AR GraphQL",
+      "raw": 6.3,
+      "scale": 10,
+      "votes": 87,
+      "normalized": 6,
+      "confidenceCeiling": 8,
+      "confidenceReason": "Indirect IMDb aggregate, conservative maximum 8",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 6,
+      "rtAudienceUnavailable": "No matched usable numeric Popcornmeter recovered; use audience before critics."
+    },
+    {
+      "slug": "el-sol-nace-para-todos-2025",
+      "title": "El sol nace para todos",
+      "sourceUrl": "https://www.justwatch.com/ar/pelicula/sun-rises-on-us-all",
+      "retrievedAt": "2026-10-27",
+      "metric": "IMDb audience via live JustWatch AR GraphQL",
+      "raw": 6.5,
+      "scale": 10,
+      "votes": 565,
+      "normalized": 7,
+      "confidenceCeiling": 8,
+      "confidenceReason": "Indirect IMDb aggregate, conservative maximum 8",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 7,
+      "rtAudienceUnavailable": "No matched usable numeric Popcornmeter recovered; use audience before critics."
+    },
+    {
+      "slug": "como-perder-tu-popularidad-2026",
+      "title": "Cómo perder tu popularidad",
+      "sourceUrl": "https://www.justwatch.com/ar/pelicula/como-perder-tu-popularidad",
+      "retrievedAt": "2026-10-27",
+      "metric": "IMDb audience via live JustWatch AR GraphQL",
+      "raw": 5.4,
+      "scale": 10,
+      "votes": 1353,
+      "normalized": 5,
+      "confidenceCeiling": 8,
+      "confidenceReason": "Indirect IMDb aggregate, conservative maximum 8",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 5,
+      "rtAudienceUnavailable": "No matched usable numeric Popcornmeter recovered; use audience before critics."
+    },
+    {
+      "slug": "rescate-en-el-golfo-2025",
+      "title": "Rescate en el golfo",
+      "sourceUrl": "https://www.rottentomatoes.com/m/not_without_hope",
+      "retrievedAt": "2026-10-27",
+      "metric": "Rotten Tomatoes Popcornmeter",
+      "raw": 72,
+      "scale": 100,
+      "votes": "50+ verified",
+      "normalized": 7,
+      "confidenceCeiling": null,
+      "confidenceReason": "Direct audience aggregate",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 7,
+      "rtAudienceUnavailable": false
+    },
+    {
+      "slug": "trampa-mortal-2025",
+      "title": "Trampa mortal",
+      "sourceUrl": "https://www.rottentomatoes.com/m/pitfall_2025",
+      "retrievedAt": "2026-10-27",
+      "metric": "Rotten Tomatoes Popcornmeter",
+      "raw": 69,
+      "scale": 100,
+      "votes": "100+",
+      "normalized": 7,
+      "confidenceCeiling": null,
+      "confidenceReason": "Direct audience aggregate",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 7,
+      "rtAudienceUnavailable": false
+    },
+    {
+      "slug": "mi-hija-es-un-zombi-2025",
+      "title": "Mi hija es un zombi",
+      "sourceUrl": "https://www.justwatch.com/ar/pelicula/my-daughter-is-a-zombie",
+      "retrievedAt": "2026-10-27",
+      "metric": "IMDb audience via live JustWatch AR GraphQL",
+      "raw": 6.7,
+      "scale": 10,
+      "votes": 1659,
+      "normalized": 7,
+      "confidenceCeiling": 8,
+      "confidenceReason": "Indirect IMDb aggregate, conservative maximum 8",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 7,
+      "rtAudienceUnavailable": "No matched usable numeric Popcornmeter recovered; use audience before critics."
+    },
+    {
+      "slug": "la-ladrona-del-tiempo-2025",
+      "title": "La ladrona del tiempo",
+      "sourceUrl": "https://www.justwatch.com/ar/pelicula/xana-y-el-secreto-del-tiempo",
+      "retrievedAt": "2026-10-27",
+      "metric": "IMDb audience via live JustWatch AR GraphQL",
+      "raw": 6.6,
+      "scale": 10,
+      "votes": 214,
+      "normalized": 7,
+      "confidenceCeiling": 8,
+      "confidenceReason": "Indirect IMDb aggregate, conservative maximum 8",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 7,
+      "rtAudienceUnavailable": "No matched usable numeric Popcornmeter recovered; use audience before critics."
+    },
+    {
+      "slug": "el-ritual-2025",
+      "title": "El ritual",
+      "sourceUrl": "https://www.justwatch.com/ar/pelicula/el-favor-2025",
+      "retrievedAt": "2026-10-27",
+      "metric": "IMDb audience via live JustWatch AR GraphQL",
+      "raw": 5.1,
+      "scale": 10,
+      "votes": 177,
+      "normalized": 5,
+      "confidenceCeiling": 8,
+      "confidenceReason": "Indirect IMDb aggregate, conservative maximum 8",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 5,
+      "rtAudienceUnavailable": "No matched usable numeric Popcornmeter recovered; use audience before critics."
+    },
+    {
+      "slug": "hechizo-de-amor-la-magia-continua-2026",
+      "title": "Hechizo de Amor: La magia continúa",
+      "sourceUrl": "https://www.rottentomatoes.com/m/practical_magic_2",
+      "retrievedAt": "2026-10-27",
+      "metric": "Rotten Tomatoes Popcornmeter",
+      "raw": 90,
+      "scale": 100,
+      "votes": "2,500+ verified",
+      "normalized": 9,
+      "confidenceCeiling": null,
+      "confidenceReason": "Direct audience aggregate",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 8,
+      "rtAudienceUnavailable": false
+    },
+    {
+      "slug": "las-100-noches-del-deseo-2025",
+      "title": "Las 100 noches del deseo",
+      "sourceUrl": "https://www.rottentomatoes.com/m/100_nights_of_hero",
+      "retrievedAt": "2026-10-27",
+      "metric": "Rotten Tomatoes Popcornmeter",
+      "raw": 56,
+      "scale": 100,
+      "votes": "100+",
+      "normalized": 6,
+      "confidenceCeiling": null,
+      "confidenceReason": "Direct audience aggregate",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 6,
+      "rtAudienceUnavailable": false
+    },
+    {
+      "slug": "dolly-juega-contigo-2025",
+      "title": "Dolly - Juega contigo",
+      "sourceUrl": "https://www.rottentomatoes.com/m/dolly",
+      "retrievedAt": "2026-10-27",
+      "metric": "Rotten Tomatoes Popcornmeter",
+      "raw": 46,
+      "scale": 100,
+      "votes": "50+ verified",
+      "normalized": 5,
+      "confidenceCeiling": null,
+      "confidenceReason": "Direct audience aggregate",
+      "masterpieceCeiling": 8,
+      "masterpieceReason": "Recent film without established durable landmark recognition; ceiling can only lower.",
+      "final": 5,
+      "rtAudienceUnavailable": false
+    }
+  ],
+  "titles": [
+    {
+      "path": "src/data/movies/tony-2026.json",
+      "slug": "tony-2026",
+      "title": "Tony",
+      "year": 2026,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-26",
+      "country": "CA, US",
+      "category": "Drama",
+      "genres": [
+        "Drama",
+        "Comedia",
+        "Biográfica"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Human conflict, profession or emotional debt is the narrative center.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/tony-2026",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/tony-2026",
+      "platforms": [
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.42007092-14a4-4b3f-b7f7-2137b1b49d55"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/w780/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
+      "trailer": {
+        "id": "k1MVnzd2aVc",
+        "url": "https://www.youtube.com/watch?v=k1MVnzd2aVc",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt33095251",
+          "tmdbId": "1329016"
+        }
+      },
+      "credits": {
+        "director": "Matt Johnson",
+        "mainCast": [
+          "Dominic Sessa",
+          "Antonio Banderas",
+          "Emilia Jones"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/one-of-the-good-ones-2026.json",
+      "slug": "one-of-the-good-ones-2026",
+      "title": "One of the Good Ones",
+      "year": 2026,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-26",
+      "country": "US",
+      "category": "Drama",
+      "genres": [
+        "Drama",
+        "Comedia",
+        "Crimen"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Human conflict, profession or emotional debt is the narrative center.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/one-of-the-good-ones",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/one-of-the-good-ones",
+      "platforms": [
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.35004f95-f7a4-4394-8d9c-05e33d14caae"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/original/zuAzDGV3mSRpW0sZaZkexL2phx1.jpg",
+      "trailer": {
+        "id": "KcytmzLdS-Q",
+        "url": "https://www.youtube.com/watch?v=KcytmzLdS-Q",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt24057286",
+          "tmdbId": "1659670"
+        }
+      },
+      "credits": {
+        "director": "Julie O'Hora",
+        "mainCast": [
+          "Tom Paolino",
+          "Jacob A. Ware"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/el-sol-nace-para-todos-2025.json",
+      "slug": "el-sol-nace-para-todos-2025",
+      "title": "El sol nace para todos",
+      "year": 2025,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-26",
+      "country": "CN",
+      "category": "Drama",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Human conflict, profession or emotional debt is the narrative center.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/sun-rises-on-us-all",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/sun-rises-on-us-all",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2cbffa19-32e4-4de3-9d16-74a262664738"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/el-sol-nace-para-todos/umc.cmc.6h0beogh9wx3cs34xwwoponrz?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793802173"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2cbffa19-32e4-4de3-9d16-74a262664738"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/el-sol-nace-para-todos/umc.cmc.6h0beogh9wx3cs34xwwoponrz?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793802173"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/original/aFTDyM5k8ZHNGYTnWgqmCx29tgy.jpg",
+      "trailer": {
+        "id": "5hJbqPF8IGI",
+        "url": "https://www.youtube.com/watch?v=5hJbqPF8IGI",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt32907482",
+          "tmdbId": "1329673"
+        }
+      },
+      "credits": {
+        "director": "Cai Shangjun",
+        "mainCast": [
+          "Xin Zhilei",
+          "Zhang Songwen"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/como-perder-tu-popularidad-2026.json",
+      "slug": "como-perder-tu-popularidad-2026",
+      "title": "Cómo perder tu popularidad",
+      "year": 2026,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-27",
+      "country": "CA",
+      "category": "Comedia",
+      "genres": [
+        "Comedia",
+        "Romance"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Comic romantic or domestic situations structure the film.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/como-perder-tu-popularidad",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/como-perder-tu-popularidad",
+      "platforms": [
+        "Netflix",
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Netflix",
+          "type": "FLATRATE",
+          "url": "https://www.netflix.com/title/83048785"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.33603d4a-ec13-49d8-95d8-43f2b28bb9db"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/como-perder-tu-popularidad/umc.cmc.34sjjfydx3bkcdc4xiaophi6x?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6785600786"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.33603d4a-ec13-49d8-95d8-43f2b28bb9db"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/como-perder-tu-popularidad/umc.cmc.34sjjfydx3bkcdc4xiaophi6x?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6785600786"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/original/9lmyPaz7yTabWW2yiAkw952CvRQ.jpg",
+      "trailer": {
+        "id": "dmezCQscgcQ",
+        "url": "https://www.youtube.com/watch?v=dmezCQscgcQ",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt36934619",
+          "tmdbId": "1480025"
+        }
+      },
+      "credits": {
+        "director": "Stephen S. Campanelli",
+        "mainCast": [
+          "Sara Waisglass",
+          "Chase Hudson"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/rescate-en-el-golfo-2025.json",
+      "slug": "rescate-en-el-golfo-2025",
+      "title": "Rescate en el golfo",
+      "year": 2025,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-27",
+      "country": "US",
+      "category": "Thriller",
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Supervivencia"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "A rescue and survival operation builds the suspense.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/not-without-hope",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/not-without-hope",
+      "platforms": [
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Amazon Prime Video",
+          "type": "FLATRATE",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b6d762ee-a2e2-4b1b-8112-b4eae04508f5"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b6d762ee-a2e2-4b1b-8112-b4eae04508f5"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/rescate-en-el-golfo/umc.cmc.1mioh6txcj2enlljfphyhcdyk?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1883277046"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b6d762ee-a2e2-4b1b-8112-b4eae04508f5"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/rescate-en-el-golfo/umc.cmc.1mioh6txcj2enlljfphyhcdyk?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1883277046"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/original/w5WJMJ6DWPFK0Gx0Ongh0FZBAlK.jpg",
+      "trailer": {
+        "id": "rzDAcL3rOcU",
+        "url": "https://www.youtube.com/watch?v=rzDAcL3rOcU",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt3331548",
+          "tmdbId": "339849"
+        }
+      },
+      "credits": {
+        "director": "Joe Carnahan",
+        "mainCast": [
+          "Zachary Levi",
+          "Josh Duhamel"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/trampa-mortal-2025.json",
+      "slug": "trampa-mortal-2025",
+      "title": "Trampa mortal",
+      "year": 2025,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-27",
+      "country": "CA, US",
+      "category": "Terror",
+      "genres": [
+        "Terror",
+        "Thriller",
+        "Supervivencia"
+      ],
+      "subgenres": [
+        "Slasher"
+      ],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Bodily threat, curse or slasher hunting structures the film.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/trampa-mortal-2026",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/trampa-mortal-2026",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Adrenalina Pura Amazon channel",
+          "type": "FLATRATE",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ae715768-4972-4abe-8e14-a90e272033a0"
+        },
+        {
+          "provider": "Adrenalina Pura Apple TV channel",
+          "type": "FLATRATE",
+          "url": "https://tv.apple.com/ar"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ae715768-4972-4abe-8e14-a90e272033a0"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/trampa-mortal/umc.cmc.1bxpd0p8rema3ur5mda82qk55?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6787298372"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ae715768-4972-4abe-8e14-a90e272033a0"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/trampa-mortal/umc.cmc.1bxpd0p8rema3ur5mda82qk55?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6787298372"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/original/kIwc4DgHpAQwEKBB6bPEsCRHnNB.jpg",
+      "trailer": {
+        "id": "feRd0ag5SuQ",
+        "url": "https://www.youtube.com/watch?v=feRd0ag5SuQ",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt32338122",
+          "tmdbId": "1338972"
+        }
+      },
+      "credits": {
+        "director": "James Kondelik",
+        "mainCast": [
+          "Marshall Williams",
+          "Alex Essoe"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/mi-hija-es-un-zombi-2025.json",
+      "slug": "mi-hija-es-un-zombi-2025",
+      "title": "Mi hija es un zombi",
+      "year": 2025,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-27",
+      "country": "KR",
+      "category": "Comedia",
+      "genres": [
+        "Comedia",
+        "Drama",
+        "Terror"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Comic romantic or domestic situations structure the film.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/my-daughter-is-a-zombie",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/my-daughter-is-a-zombie",
+      "platforms": [
+        "Apple TV"
+      ],
+      "offers": [
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/mi-hija-es-un-zombi/umc.cmc.2y6lj202kfii18fe8slotcflw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6819689605"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/mi-hija-es-un-zombi/umc.cmc.2y6lj202kfii18fe8slotcflw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6819689605"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/original/4wk90VHnjy9dWRZPkXMMyphftLG.jpg",
+      "trailer": {
+        "id": "3xeZzgRE1P0",
+        "url": "https://www.youtube.com/watch?v=3xeZzgRE1P0",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt36553678",
+          "tmdbId": "1306816"
+        }
+      },
+      "credits": {
+        "director": "Pil Gam-seong",
+        "mainCast": [
+          "Cho Jung-seok",
+          "Lee Jung-eun",
+          "Cho Yeo-jeong"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+      "slug": "la-ladrona-del-tiempo-2025",
+      "title": "La ladrona del tiempo",
+      "year": 2025,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-27",
+      "country": "CN",
+      "category": "Animacion",
+      "genres": [
+        "Animación",
+        "Fantasía",
+        "Romance",
+        "Aventura"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Chinese animated fantasy; theme music alone does not establish a narrative musical.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/xana-y-el-secreto-del-tiempo",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/xana-y-el-secreto-del-tiempo",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f06ebc62-edcb-4231-a2ea-83bb2a91891d"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/la-ladrona-del-tiempo/umc.cmc.6hdvaltfl0rcb5hocb56z08qf?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6783018500"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f06ebc62-edcb-4231-a2ea-83bb2a91891d"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/la-ladrona-del-tiempo/umc.cmc.6hdvaltfl0rcb5hocb56z08qf?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6783018500"
+        }
+      ],
+      "posterSource": "https://image.megamai.com/editor/images/20250521/682d3fbdca56a.jpg",
+      "trailer": {
+        "id": "RNwvOW8tRmA",
+        "url": "https://www.youtube.com/watch?v=RNwvOW8tRmA",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt35657512",
+          "tmdbId": "1155234"
+        }
+      },
+      "credits": {
+        "director": "Yu Ao, Zhou Tienan",
+        "mainCast": [
+          "Karry Wang",
+          "Huang Bo"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/el-ritual-2025.json",
+      "slug": "el-ritual-2025",
+      "title": "El ritual",
+      "year": 2025,
+      "decision": "added",
+      "catalogAddedAt": "2026-10-27",
+      "releaseDate": "2026-10-27",
+      "country": "KR",
+      "category": "Terror",
+      "genres": [
+        "Terror",
+        "Thriller",
+        "Drama"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Bodily threat, curse or slasher hunting structures the film.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/el-favor-2025",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/el-favor-2025",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ef41c737-2b1f-464e-bef4-22c3b56b129d"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/el-ritual/umc.cmc.4k3h8zvxmep6scccccyz3iofz?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6782226419"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ef41c737-2b1f-464e-bef4-22c3b56b129d"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/el-ritual/umc.cmc.4k3h8zvxmep6scccccyz3iofz?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6782226419"
+        }
+      ],
+      "posterSource": "https://image.tmdb.org/t/p/original/kbNpCIMYrjB9z5LNBrHasY081gv.jpg",
+      "trailer": {
+        "id": "WANF28Pybqo",
+        "url": "https://www.youtube.com/watch?v=WANF28Pybqo",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt36795341",
+          "tmdbId": "1447032"
+        }
+      },
+      "credits": {
+        "director": "Shin Joon",
+        "mainCast": [
+          "Kim Byong-chul",
+          "Song Ji-hyo"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/hechizo-de-amor-la-magia-continua-2026.json",
+      "slug": "hechizo-de-amor-la-magia-continua-2026",
+      "title": "Hechizo de Amor: La magia continúa",
+      "year": 2026,
+      "decision": "update-existing",
+      "releaseDate": "2026-09-10",
+      "country": "US",
+      "category": "Fantasia",
+      "genres": [
+        "Fantasía",
+        "Drama",
+        "Comedia",
+        "Romance"
+      ],
+      "subgenres": [],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Preserve sourced primary lane.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/hechizo-de-amor-2",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/hechizo-de-amor-2",
+      "platforms": [
+        "Apple TV"
+      ],
+      "offers": [
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/hechizo-de-amor-la-magia-continua/umc.cmc.2e0x5rla466dkovz6ucgie52?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6803706922"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/hechizo-de-amor-la-magia-continua/umc.cmc.2e0x5rla466dkovz6ucgie52?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6803706922"
+        }
+      ],
+      "posterSource": "Existing local verified poster, unchanged",
+      "trailer": {
+        "id": "akTuELoOoFQ",
+        "url": "https://www.youtube.com/watch?v=akTuELoOoFQ",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt32588798",
+          "tmdbId": "1302904"
+        }
+      },
+      "credits": {
+        "director": "Susanne Bier",
+        "mainCast": [
+          "Nicole Kidman",
+          "Sandra Bullock",
+          "Joey King",
+          "Lee Pace"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/las-100-noches-del-deseo-2025.json",
+      "slug": "las-100-noches-del-deseo-2025",
+      "title": "Las 100 noches del deseo",
+      "year": 2025,
+      "decision": "update-existing",
+      "releaseDate": "2026-06-11",
+      "country": "GB",
+      "category": "Fantasia",
+      "genres": [
+        "Fantasia",
+        "Romance",
+        "Drama"
+      ],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Preserve sourced primary lane.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/las-100-noches-del-deseo",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/las-100-noches-del-deseo",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "MUBI",
+          "type": "FLATRATE",
+          "url": "https://mubi.com/films/100-nights-of-hero"
+        },
+        {
+          "provider": "MUBI Amazon Channel",
+          "type": "FLATRATE",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.53ce0dc0-c841-4eb9-9915-3a9b9fe9af79"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.53ce0dc0-c841-4eb9-9915-3a9b9fe9af79"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/las-100-noches-del-deseo/umc.cmc.1ux3xl2qj26t9ltt83izpzcle?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788570828"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.53ce0dc0-c841-4eb9-9915-3a9b9fe9af79"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/las-100-noches-del-deseo/umc.cmc.1ux3xl2qj26t9ltt83izpzcle?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788570828"
+        }
+      ],
+      "posterSource": "Existing local verified poster, unchanged",
+      "trailer": {
+        "id": "Fq4uQmVnCck",
+        "url": "https://www.youtube.com/watch?v=Fq4uQmVnCck",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt33350512",
+          "tmdbId": "1354518"
+        }
+      },
+      "credits": {
+        "director": "Julia Jackman",
+        "mainCast": [
+          "Emma Corrin",
+          "Maika Monroe",
+          "Nicholas Galitzine",
+          "Charli XCX",
+          "Richard E. Grant"
+        ]
+      }
+    },
+    {
+      "path": "src/data/movies/dolly-juega-contigo-2025.json",
+      "slug": "dolly-juega-contigo-2025",
+      "title": "Dolly - Juega contigo",
+      "year": 2025,
+      "decision": "update-existing",
+      "releaseDate": "2026-05-28",
+      "country": "US",
+      "category": "Terror",
+      "genres": [
+        "Terror",
+        "Slasher",
+        "Supervivencia"
+      ],
+      "subgenres": [
+        "Slasher"
+      ],
+      "war": false,
+      "musical": false,
+      "genreRationale": "Bodily threat, curse or slasher hunting structures the film.",
+      "metadataSource": "https://www.justwatch.com/ar/pelicula/dolly",
+      "countrySource": "https://www.justwatch.com/ar/pelicula/dolly",
+      "platforms": [
+        "Apple TV",
+        "Prime Video"
+      ],
+      "offers": [
+        {
+          "provider": "Amazon Video",
+          "type": "RENT",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5e697b15-f870-40f7-884a-e13071254d6c"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "RENT",
+          "url": "https://tv.apple.com/ar/movie/dolly-juega-contigo/umc.cmc.4x11xhplhfpyjo2slpiczmkm9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6776390800"
+        },
+        {
+          "provider": "Amazon Video",
+          "type": "BUY",
+          "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5e697b15-f870-40f7-884a-e13071254d6c"
+        },
+        {
+          "provider": "Apple TV Store",
+          "type": "BUY",
+          "url": "https://tv.apple.com/ar/movie/dolly-juega-contigo/umc.cmc.4x11xhplhfpyjo2slpiczmkm9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6776390800"
+        }
+      ],
+      "posterSource": "Existing local verified poster, unchanged",
+      "trailer": {
+        "id": "ge0AfkkLKHg",
+        "url": "https://www.youtube.com/watch?v=ge0AfkkLKHg",
+        "oembed": "verified by no-skip candidate audit",
+        "officialIdentity": {
+          "imdbId": "tt32639175",
+          "tmdbId": "1309083"
+        }
+      },
+      "credits": {
+        "director": "Rod Blackhurst",
+        "mainCast": [
+          "Fabianne Therese",
+          "Seann William Scott",
+          "Ethan Suplee"
+        ]
+      }
+    }
+  ],
+  "people": {
+    "new": [
+      "Alex Essoe",
+      "Cai Shangjun",
+      "Chase Hudson",
+      "Cho Jung-seok",
+      "Huang Bo",
+      "Jacob A. Ware",
+      "James Kondelik",
+      "Josh Duhamel",
+      "Julie O'Hora",
+      "Karry Wang",
+      "Kim Byong-chul",
+      "Lee Jung-eun",
+      "Marshall Williams",
+      "Pil Gam-seong",
+      "Sara Waisglass",
+      "Shin Joon",
+      "Song Ji-hyo",
+      "Stephen S. Campanelli",
+      "Tom Paolino",
+      "Xin Zhilei",
+      "Yu Ao",
+      "Zhang Songwen",
+      "Zhou Tienan"
+    ],
+    "retainedCount": 45,
+    "retained": [
+      {
+        "credit": "Matt Johnson",
+        "name": "Matt Johnson",
+        "image": "/people/matt-johnson.jpg",
+        "remoteImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Matt_Johnson_Tony_Interview_02_cropped.png",
+        "referenceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Matt_Johnson_Tony_Interview_02_cropped.png",
+          "https://www.imdb.com/name/nm4798740/",
+          "https://a24films.com/films/tony"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "verified-source-portrait",
+        "imdbId": "nm4798740",
+        "imdbUrl": "https://www.imdb.com/name/nm4798740/"
+      },
+      {
+        "credit": "Dominic Sessa",
+        "name": "Dominic Sessa",
+        "birthYear": 2002,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/dominic-sessa-nm14073757.jpg",
+        "imdbId": "nm14073757",
+        "imdbUrl": "https://www.imdb.com/name/nm14073757/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dominic%20Sessa%20Tow-059%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q123486087",
+          "https://www.imdb.com/name/nm14073757/",
+          "https://www.themoviedb.org/person/3918497-dominic-sessa"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache",
+        "birthDate": "2002-10-25"
+      },
+      {
+        "credit": "Antonio Banderas",
+        "name": "Antonio Banderas",
+        "birthDate": "1960-08-10",
+        "birthYear": 1960,
+        "nationalityPrimary": "Español",
+        "image": "/people/antonio-banderas-nm0000104.jpg",
+        "imdbId": "nm0000104",
+        "imdbUrl": "https://www.imdb.com/name/nm0000104/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Banderas%202020.jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q41548",
+          "https://www.imdb.com/name/nm0000104/",
+          "https://www.themoviedb.org/person/3131-antonio-banderas"
+        ],
+        "lastVerifiedAt": "2026-08-28",
+        "source": "wikidata-imdb-cache",
+        "sex": "masculino",
+        "sexSourceUrl": "https://www.wikidata.org/wiki/Q41548",
+        "sexVerifiedAt": "2026-10-11"
+      },
+      {
+        "credit": "Emilia Jones",
+        "name": "Emilia Jones",
+        "birthYear": 2002,
+        "nationalityPrimary": "Británica",
+        "image": "/people/emilia-jones-nm4454223.jpg",
+        "imdbId": "nm4454223",
+        "imdbUrl": "https://www.imdb.com/name/nm4454223/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Emilia%20Jones%202022%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q16730400",
+          "https://www.imdb.com/name/nm4454223/",
+          "https://www.themoviedb.org/person/1331023-emilia-jones"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache",
+        "birthDate": "2002-02-23"
+      },
+      {
+        "credit": "Julie O'Hora",
+        "name": "Julie O'Hora",
+        "image": "/people/julie-o-hora.jpg",
+        "remoteImageUrl": "https://images.squarespace-cdn.com/content/v1/64540c777ab50b654a0afaf4/a5c6ce84-8c6f-4010-9276-04dd07fdd85f/JO+Directing+OOTGO.jpg",
+        "referenceUrls": [
+          "https://julieohora.com/bio",
+          "https://www.imdb.com/name/nm0641412/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "verified-source-portrait",
+        "imdbId": "nm0641412",
+        "imdbUrl": "https://www.imdb.com/name/nm0641412/"
+      },
+      {
+        "credit": "Tom Paolino",
+        "name": "Tom Paolino",
+        "image": "/people/tom-paolino.jpg",
+        "remoteImageUrl": "https://images.squarespace-cdn.com/content/v1/5eb3093b5372df6b0b6b2e53/629c4ed8-130a-4e0d-b2a7-6daa5d912592/New+Headshot.jpg",
+        "referenceUrls": [
+          "https://tompaolino.squarespace.com/about-page",
+          "https://www.imdb.com/name/nm0660057/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "verified-source-portrait",
+        "imdbId": "nm0660057",
+        "imdbUrl": "https://www.imdb.com/name/nm0660057/"
+      },
+      {
+        "credit": "Jacob A. Ware",
+        "name": "Jacob Ware",
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/jacob-a-ware.jpg",
+        "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/u6nCaxMAmjfzbOyzJQLntQJ3hPZ.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q130315296",
+          "https://www.themoviedb.org/person/1988310-jacob-a-ware"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-tmdb-cache",
+        "aliases": [
+          "Jacob A. Ware"
+        ]
+      },
+      {
+        "credit": "Cai Shangjun",
+        "name": "Cai Shangjun",
+        "birthDate": "1967-07-12",
+        "birthYear": 1967,
+        "nationalityPrimary": "Chino",
+        "image": "/people/cai-shangjun-nm0128754.jpg",
+        "imdbId": "nm0128754",
+        "imdbUrl": "https://www.imdb.com/name/nm0128754/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cai%20Shangjun01.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q2933176",
+          "https://www.imdb.com/name/nm0128754/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Xin Zhilei",
+        "name": "Xin Zhilei",
+        "birthDate": "1986-04-04",
+        "birthYear": 1986,
+        "nationalityPrimary": "China",
+        "image": "/people/xin-zhilei-nm7928249.jpg",
+        "imdbId": "nm7928249",
+        "imdbUrl": "https://www.imdb.com/name/nm7928249/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Xin%20Zhilei%20from%20%22The%20Unseen%20Sister%22%20at%20Red%20Carpet%20of%20the%20Tokyo%20International%20Film%20Festival%202024%20(54578121368).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q53066688",
+          "https://www.imdb.com/name/nm7928249/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Zhang Songwen",
+        "name": "Zhang Songwen",
+        "birthDate": "1976",
+        "birthYear": 1976,
+        "nationalityPrimary": "Chino",
+        "image": "/people/zhang-songwen-nm4210896.jpg",
+        "imdbId": "nm4210896",
+        "imdbUrl": "https://www.imdb.com/name/nm4210896/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zhang%20Songwen%20at%202026%20Shanghai%20International%20Film%20Festival%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q76852425",
+          "https://www.imdb.com/name/nm4210896/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Stephen S. Campanelli",
+        "name": "Stephen S. Campanelli",
+        "image": "/people/stephen-s-campanelli.jpg",
+        "remoteImageUrl": "https://images.mubicdn.net/images/cast_member/476341/cache-538372-1588039064/image-w856.jpg",
+        "referenceUrls": [
+          "https://mubi.com/en/cast/stephen-s-campanelli",
+          "https://www.imdb.com/name/nm0132120/",
+          "https://www.concordia.ca/cunews/offices/advancement/2016/01/11/reel-to-reel-with-concordia-filmmaker.html"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "verified-source-portrait",
+        "imdbId": "nm0132120",
+        "imdbUrl": "https://www.imdb.com/name/nm0132120/"
+      },
+      {
+        "credit": "Sara Waisglass",
+        "name": "Sara Waisglass",
+        "birthDate": "1998-07-03",
+        "birthYear": 1998,
+        "nationalityPrimary": "Canadiense",
+        "image": "/people/sara-waisglass-nm2741235.jpg",
+        "imdbId": "nm2741235",
+        "imdbUrl": "https://www.imdb.com/name/nm2741235/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sara%20Waisglass.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q22231356",
+          "https://www.imdb.com/name/nm2741235/",
+          "https://www.themoviedb.org/person/1305494-sara-waisglass"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Chase Hudson",
+        "name": "Chase Hudson",
+        "birthDate": "2002-05-15",
+        "birthYear": 2002,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/chase-hudson-nm11273982.jpg",
+        "imdbId": "nm11273982",
+        "imdbUrl": "https://www.imdb.com/name/nm11273982/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lil%20Huddy%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q90354235",
+          "https://www.imdb.com/name/nm11273982/",
+          "https://www.themoviedb.org/person/2863584-chase-hudson"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache",
+        "aliases": [
+          "Huddy"
+        ]
+      },
+      {
+        "credit": "Joe Carnahan",
+        "name": "Joe Carnahan",
+        "birthYear": 1969,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/joe-carnahan-nm0138620.jpg",
+        "imdbId": "nm0138620",
+        "imdbUrl": "https://www.imdb.com/name/nm0138620/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joe%20Carnahan%20(4920110734)%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q936866",
+          "https://www.imdb.com/name/nm0138620/",
+          "https://www.themoviedb.org/person/40223-joe-carnahan"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache",
+        "birthDate": "1969-05-09"
+      },
+      {
+        "credit": "Zachary Levi",
+        "name": "Zachary Levi",
+        "birthDate": "1980-09-29",
+        "birthYear": 1980,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/zachary-levi-nm1157048.jpg",
+        "imdbId": "nm1157048",
+        "imdbUrl": "https://www.imdb.com/name/nm1157048/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Zachary%20Levi%20Comic-Con%202012.jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q139638",
+          "https://www.imdb.com/name/nm1157048/",
+          "https://www.themoviedb.org/person/69899-zachary-levi"
+        ],
+        "lastVerifiedAt": "2026-06-23",
+        "source": "wikidata-imdb-cache",
+        "sex": "masculino",
+        "sexSourceUrl": "https://www.wikidata.org/wiki/Q139638",
+        "sexVerifiedAt": "2026-10-11"
+      },
+      {
+        "credit": "Josh Duhamel",
+        "name": "Josh Duhamel",
+        "birthDate": "1972-11-14",
+        "birthYear": 1972,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/josh-duhamel-nm0241049.jpg",
+        "imdbId": "nm0241049",
+        "imdbUrl": "https://www.imdb.com/name/nm0241049/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Duhamel%20SXSW%202017%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q19794",
+          "https://www.imdb.com/name/nm0241049/",
+          "https://www.themoviedb.org/person/19536-josh-duhamel"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "James Kondelik",
+        "name": "James Kondelik",
+        "image": "/people/james-kondelik-nm3303482.jpg",
+        "imdbId": "nm3303482",
+        "imdbUrl": "https://www.imdb.com/name/nm3303482/",
+        "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/gsUmIBN7b03aCTanD3BX3QCRfii.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q64562382",
+          "https://www.imdb.com/name/nm3303482/",
+          "https://www.themoviedb.org/person/1151647-james-kondelik"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-tmdb-cache"
+      },
+      {
+        "credit": "Marshall Williams",
+        "name": "Marshall Williams",
+        "birthDate": "1989-07-31",
+        "birthYear": 1989,
+        "nationalityPrimary": "Canadiense",
+        "image": "/people/marshall-williams-nm3246893.jpg",
+        "imdbId": "nm3246893",
+        "imdbUrl": "https://www.imdb.com/name/nm3246893/",
+        "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/gatny6HYsqWpGQblJIeLpOoMAKG.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q17386334",
+          "https://www.imdb.com/name/nm3246893/",
+          "https://www.themoviedb.org/person/1376711-marshall-williams"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-tmdb-cache"
+      },
+      {
+        "credit": "Alex Essoe",
+        "name": "Alex Essoe",
+        "birthDate": "1992-03-09",
+        "birthYear": 1992,
+        "nationalityPrimary": "Canadiense",
+        "image": "/people/alex-essoe-nm3012273.jpg",
+        "imdbId": "nm3012273",
+        "imdbUrl": "https://www.imdb.com/name/nm3012273/",
+        "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/rmY5nkPOdhVFYh2b72LfgSJMHf5.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q64730592",
+          "https://www.imdb.com/name/nm3012273/",
+          "https://www.themoviedb.org/person/210454-alex-essoe",
+          "https://en.wikipedia.org/wiki/Alex_Essoe"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-tmdb-cache"
+      },
+      {
+        "credit": "Pil Gam-seong",
+        "name": "Pil Gam-seong",
+        "birthDate": "1977",
+        "birthYear": 1977,
+        "nationalityPrimary": "Coreano",
+        "image": "/people/pil-gam-seong-nm3682407.jpg",
+        "imdbId": "nm3682407",
+        "imdbUrl": "https://www.imdb.com/name/nm3682407/",
+        "remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fpeople%2F8d5518f351b6027b8dfb56df591a5e30.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q107359858",
+          "https://www.imdb.com/name/nm3682407/",
+          "https://watch.plex.tv/person/pil-gam-seong"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-plex-cache"
+      },
+      {
+        "credit": "Cho Jung-seok",
+        "name": "Cho Jung-seok",
+        "birthDate": "1980-12-26",
+        "birthYear": 1980,
+        "nationalityPrimary": "Coreano",
+        "image": "/people/cho-jung-seok-nm4983186.jpg",
+        "imdbId": "nm4983186",
+        "imdbUrl": "https://www.imdb.com/name/nm4983186/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jo%20Jung-suk%20in%20June%202026.png?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q391965",
+          "https://www.imdb.com/name/nm4983186/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Lee Jung-eun",
+        "name": "Lee Jung-eun",
+        "birthDate": "1970-01-23",
+        "birthYear": 1970,
+        "nationalityPrimary": "Coreana",
+        "image": "/people/lee-jung-eun-nm7553003.jpg",
+        "imdbId": "nm7553003",
+        "imdbUrl": "https://www.imdb.com/name/nm7553003/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lee%20Jung-eun.2019.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q21710318",
+          "https://www.imdb.com/name/nm7553003/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Cho Yeo-jeong",
+        "name": "Cho Yeo-jeong",
+        "birthYear": 1981,
+        "nationalityPrimary": "Coreana",
+        "image": "/people/cho-yeo-jeong-nm1856097.jpg",
+        "imdbId": "nm1856097",
+        "imdbUrl": "https://www.imdb.com/name/nm1856097/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cho_Yeo-jeong_in_October_2024.png",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q626347",
+          "https://www.imdb.com/name/nm1856097/",
+          "https://www.koreanfilm.or.kr/eng/films/index/peopleView2.jsp?peopleCd=10066680"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache",
+        "birthDate": "1981-02-10"
+      },
+      {
+        "credit": "Yu Ao",
+        "name": "Yu Ao",
+        "image": "/people/yu-ao.jpg",
+        "remoteImageUrl": "https://imgpai.thepaper.cn/newpai/image/20250531/60b24a9f-0d9e-4017-8029-26308cf561a1.jpg",
+        "referenceUrls": [
+          "https://www.thepaper.cn/newsDetail_forward_30907887",
+          "https://www.youtube.com/watch?v=RNwvOW8tRmA"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "verified-source-portrait"
+      },
+      {
+        "credit": "Zhou Tienan",
+        "name": "Zhou Tienan",
+        "image": "/people/zhou-tienan.jpg",
+        "remoteImageUrl": "https://imgpai.thepaper.cn/newpai/image/20250531/60b24a9f-0d9e-4017-8029-26308cf561a1.jpg",
+        "referenceUrls": [
+          "https://www.thepaper.cn/newsDetail_forward_30907887",
+          "https://www.youtube.com/watch?v=RNwvOW8tRmA"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "verified-source-portrait"
+      },
+      {
+        "credit": "Karry Wang",
+        "name": "Karry Wang",
+        "birthDate": "1999-09-21",
+        "birthYear": 1999,
+        "nationalityPrimary": "Chino",
+        "image": "/people/karry-wang-nm7186105.jpg",
+        "imdbId": "nm7186105",
+        "imdbUrl": "https://www.imdb.com/name/nm7186105/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TFBOYS%20%E7%8E%8B%E4%BF%8A%E5%87%AF%20(2015)%203.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q20646548",
+          "https://www.imdb.com/name/nm7186105/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache",
+        "aliases": [
+          "Wang Junkai"
+        ]
+      },
+      {
+        "credit": "Huang Bo",
+        "name": "Huang Bo",
+        "birthDate": "1974-08-26",
+        "birthYear": 1974,
+        "nationalityPrimary": "Chino",
+        "image": "/people/huang-bo-nm2348646.jpg",
+        "imdbId": "nm2348646",
+        "imdbUrl": "https://www.imdb.com/name/nm2348646/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Huang%20Bo.JPG?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q704130",
+          "https://www.imdb.com/name/nm2348646/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Shin Joon",
+        "name": "Shin Joon",
+        "image": "/people/shin-joon.jpg",
+        "remoteImageUrl": "https://kobis.or.kr/common/mast/people/2017/05/f5ebad17c7fd413eb4e6b726f1f650cb.jpg",
+        "referenceUrls": [
+          "https://www.koreanfilm.or.kr/eng/films/index/peopleView.jsp?peopleCd=20188787",
+          "https://asianwiki.com/The_Favor_(Korean_Movie)"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "verified-source-portrait",
+        "birthYear": 1986,
+        "nationalityPrimary": "Surcoreano"
+      },
+      {
+        "credit": "Kim Byong-chul",
+        "name": "Kim Byung-chul",
+        "birthDate": "1974-07-05",
+        "birthYear": 1974,
+        "nationalityPrimary": "Coreano",
+        "image": "/people/kim-byong-chul-nm1658969.jpg",
+        "imdbId": "nm1658969",
+        "imdbUrl": "https://www.imdb.com/name/nm1658969/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim%20Byung-chul.2019.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q16080239",
+          "https://www.imdb.com/name/nm1658969/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache",
+        "aliases": [
+          "Kim Byong-chul"
+        ]
+      },
+      {
+        "credit": "Song Ji-hyo",
+        "name": "Song Ji-hyo",
+        "birthDate": "1981-08-15",
+        "birthYear": 1981,
+        "nationalityPrimary": "Coreana",
+        "image": "/people/song-ji-hyo-nm1391738.jpg",
+        "imdbId": "nm1391738",
+        "imdbUrl": "https://www.imdb.com/name/nm1391738/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Ji-hyo%20in%20December%202024.png?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q484965",
+          "https://www.imdb.com/name/nm1391738/"
+        ],
+        "lastVerifiedAt": "2026-10-27",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Susanne Bier",
+        "name": "Susanne Bier",
+        "birthDate": "1960-04-15",
+        "birthYear": 1960,
+        "nationalityPrimary": "Reino de Dinamarca",
+        "image": "/people/susanne-bier-nm0081540.jpg",
+        "imdbId": "nm0081540",
+        "imdbUrl": "https://www.imdb.com/name/nm0081540/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Susanne%20Bier%202011%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q236148",
+          "https://www.imdb.com/name/nm0081540/",
+          "https://www.themoviedb.org/person/1011-susanne-bier"
+        ],
+        "lastVerifiedAt": "2026-09-10",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Nicole Kidman",
+        "name": "Nicole Kidman",
+        "birthDate": "1967-06-20",
+        "birthYear": 1967,
+        "nationalityPrimary": "Australiana",
+        "image": "/people/nicole-kidman-nm0000173.jpg",
+        "imdbId": "nm0000173",
+        "imdbUrl": "https://www.imdb.com/name/nm0000173/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicole%20Kidman-66060%20(cropped).jpg?width=1200",
+        "referenceUrls": [
+          "https://www.imdb.com/name/nm0000173/",
+          "https://www.wikidata.org/wiki/Q37459"
+        ],
+        "lastVerifiedAt": "2026-09-10",
+        "source": "wikidata-imdb-cache",
+        "sex": "femenino",
+        "sexSourceUrl": "https://www.wikidata.org/wiki/Q37459",
+        "sexVerifiedAt": "2026-10-11"
+      },
+      {
+        "credit": "Sandra Bullock",
+        "name": "Sandra Bullock",
+        "birthDate": "1964-07-26",
+        "birthYear": 1964,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/sandra-bullock-nm0000113.jpg",
+        "imdbId": "nm0000113",
+        "imdbUrl": "https://www.imdb.com/name/nm0000113/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandra%20Bullock%20at%20The%20Egyptian%20Theatre%202024.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q40791",
+          "https://www.imdb.com/name/nm0000113/",
+          "https://www.themoviedb.org/person/18277-sandra-bullock"
+        ],
+        "lastVerifiedAt": "2026-09-10",
+        "source": "wikidata-imdb-cache",
+        "sex": "femenino",
+        "sexSourceUrl": "https://www.wikidata.org/wiki/Q40791",
+        "sexVerifiedAt": "2026-10-11"
+      },
+      {
+        "credit": "Joey King",
+        "name": "Joey King",
+        "birthDate": "1999-07-30",
+        "birthYear": 1999,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/joey-king-nm1428821.jpg",
+        "imdbId": "nm1428821",
+        "imdbUrl": "https://www.imdb.com/name/nm1428821/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joey%20King%20on%20KidsPickFlicks.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q112536",
+          "https://www.imdb.com/name/nm1428821/",
+          "https://www.themoviedb.org/person/125025-joey-king"
+        ],
+        "lastVerifiedAt": "2026-09-10",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Lee Pace",
+        "name": "Lee Pace",
+        "birthDate": "1979-03-25",
+        "birthYear": 1979,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/lee-pace-nm1195855.jpg",
+        "imdbId": "nm1195855",
+        "imdbUrl": "https://www.imdb.com/name/nm1195855/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lee%20Pace%20Paris%20Fashion%20Week%20Spring%20Summer%202020.jpg?width=1200",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q355168",
+          "https://www.imdb.com/name/nm1195855/",
+          "https://www.themoviedb.org/person/72095-lee-pace"
+        ],
+        "lastVerifiedAt": "2026-09-10",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Julia Jackman",
+        "name": "Julia Jackman",
+        "nationalityPrimary": "Canadiense",
+        "image": "/people/julia-jackman-nm6880790.jpg",
+        "imdbId": "nm6880790",
+        "imdbUrl": "https://www.imdb.com/name/nm6880790/",
+        "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/xP8ajvuDQXzRr6NJf1IrVx4zxnL.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q131362332",
+          "https://www.imdb.com/name/nm6880790/",
+          "https://www.themoviedb.org/person/3687314-julia-jackman"
+        ],
+        "lastVerifiedAt": "2026-07-02",
+        "source": "wikidata-imdb-tmdb-cache"
+      },
+      {
+        "credit": "Emma Corrin",
+        "name": "Emma Corrin",
+        "birthDate": "1995-12-13",
+        "birthYear": 1995,
+        "nationalityPrimary": "Británico",
+        "image": "/people/emma-corrin-nm10128408.jpg",
+        "imdbId": "nm10128408",
+        "imdbUrl": "https://www.imdb.com/name/nm10128408/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Emma%20Corrin%20in%202024%20by%20Gage%20Skidmore.jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q63086179",
+          "https://www.imdb.com/name/nm10128408/",
+          "https://www.themoviedb.org/person/2324569-emma-corrin"
+        ],
+        "lastVerifiedAt": "2026-06-12",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Maika Monroe",
+        "name": "Maika Monroe",
+        "birthDate": "1993-05-29",
+        "birthYear": 1993,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/maika-monroe-nm2140860.jpg",
+        "imdbId": "nm2140860",
+        "imdbUrl": "https://www.imdb.com/name/nm2140860/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maika%20Monroe%20June%202016.jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q16235655",
+          "https://www.imdb.com/name/nm2140860/",
+          "https://www.themoviedb.org/person/1094091-maika-monroe"
+        ],
+        "lastVerifiedAt": "2026-06-12",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Nicholas Galitzine",
+        "name": "Nicholas Galitzine",
+        "birthDate": "1994-09-29",
+        "birthYear": 1994,
+        "nationalityPrimary": "Británico",
+        "image": "/people/nicholas-galitzine-nm5954280.jpg",
+        "imdbId": "nm5954280",
+        "imdbUrl": "https://www.imdb.com/name/nm5954280/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicholas%20Galitzine%20on%20Dulce%20Osuna.jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q90902600",
+          "https://www.imdb.com/name/nm5954280/",
+          "https://www.themoviedb.org/person/1425934-nicholas-galitzine"
+        ],
+        "lastVerifiedAt": "2026-06-12",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Charli XCX",
+        "name": "Charli XCX",
+        "birthDate": "1992-08-02",
+        "birthYear": 1992,
+        "nationalityPrimary": "Británica",
+        "image": "/people/charli-xcx-nm6424616.jpg",
+        "imdbId": "nm6424616",
+        "imdbUrl": "https://www.imdb.com/name/nm6424616/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charli%20XCX-4059%20(cropped%20II).jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q5084390",
+          "https://www.imdb.com/name/nm6424616/",
+          "https://www.themoviedb.org/person/1529997-charli-xcx"
+        ],
+        "lastVerifiedAt": "2026-06-12",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Richard E. Grant",
+        "name": "Richard E. Grant",
+        "birthDate": "1957-05-05",
+        "birthYear": 1957,
+        "nationalityPrimary": "Británico",
+        "image": "/people/richard-e-grant-nm0001290.jpg",
+        "imdbId": "nm0001290",
+        "imdbUrl": "https://www.imdb.com/name/nm0001290/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20E.%20Grant%202018%20(edited).jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q380856",
+          "https://www.imdb.com/name/nm0001290/",
+          "https://www.themoviedb.org/person/20766-richard-e-grant"
+        ],
+        "lastVerifiedAt": "2026-06-12",
+        "source": "wikidata-imdb-cache",
+        "sex": "masculino",
+        "sexSourceUrl": "https://www.wikidata.org/wiki/Q380856",
+        "sexVerifiedAt": "2026-10-11"
+      },
+      {
+        "credit": "Rod Blackhurst",
+        "name": "Rod Blackhurst",
+        "birthDate": "1980-11-27",
+        "birthYear": 1980,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/rod-blackhurst-nm2060444.jpg",
+        "imdbId": "nm2060444",
+        "imdbUrl": "https://www.imdb.com/name/nm2060444/",
+        "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/dSDKoZPi605ROlMRAYAbcPixMyH.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q26821193",
+          "https://www.imdb.com/name/nm2060444/",
+          "https://www.themoviedb.org/person/1043983-rod-blackhurst"
+        ],
+        "lastVerifiedAt": "2026-05-28",
+        "source": "wikidata-imdb-tmdb-cache"
+      },
+      {
+        "credit": "Fabianne Therese",
+        "name": "Fabianne Therese",
+        "birthDate": "1988-08-20",
+        "birthYear": 1988,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/fabianne-therese-nm4211652.jpg",
+        "imdbId": "nm4211652",
+        "imdbUrl": "https://www.imdb.com/name/nm4211652/",
+        "remoteImageUrl": "https://media.themoviedb.org/t/p/w500/w1ES3wqpERfngz7DVujVMSpLZ04.jpg",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q5427723",
+          "https://www.imdb.com/name/nm4211652/",
+          "https://www.themoviedb.org/person/576223-fabianne-therese"
+        ],
+        "lastVerifiedAt": "2026-05-28",
+        "source": "wikidata-imdb-tmdb-cache"
+      },
+      {
+        "credit": "Seann William Scott",
+        "name": "Seann William Scott",
+        "birthDate": "1976-10-03",
+        "birthYear": 1976,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/seann-william-scott-nm0005405.jpg",
+        "imdbId": "nm0005405",
+        "imdbUrl": "https://www.imdb.com/name/nm0005405/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Seann%20William%20Scott%202012.jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q193212",
+          "https://www.imdb.com/name/nm0005405/",
+          "https://www.themoviedb.org/person/57599-seann-william-scott"
+        ],
+        "lastVerifiedAt": "2026-05-28",
+        "source": "wikidata-imdb-cache"
+      },
+      {
+        "credit": "Ethan Suplee",
+        "name": "Ethan Suplee",
+        "birthDate": "1976-05-25",
+        "birthYear": 1976,
+        "nationalityPrimary": "Estadounidense",
+        "image": "/people/ethan-suplee-nm0839486.jpg",
+        "imdbId": "nm0839486",
+        "imdbUrl": "https://www.imdb.com/name/nm0839486/",
+        "remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ethan%20Suplee%20cropped.jpg?width=640",
+        "referenceUrls": [
+          "https://www.wikidata.org/wiki/Q314610",
+          "https://www.imdb.com/name/nm0839486/",
+          "https://www.themoviedb.org/person/824-ethan-suplee"
+        ],
+        "lastVerifiedAt": "2026-05-28",
+        "source": "wikidata-imdb-cache"
+      }
+    ],
+    "identityRepairs": [
+      "Matt Johnson replaced a British musician identity with the Canadian Tony/BlackBerry director, nm4798740. Uncle Stav is directed by the same Canadian filmmaker.",
+      "Rejected a Taiwan voice actress misresolved as mainland Chinese Liu Xiaoyu.",
+      "Rejected a different actor as Stephen Campanelli; selected director portrait from MUBI, matched to Concordia and IMDb.",
+      "Rejected a namesake Zhou Tienan; used the identified directors portrait in their own film interview.",
+      "Removed bogus Ming-dynasty nationality inserted for Yu Ao by enrichment; restored sourced portrait and omitted unsupported optional biographical fields.",
+      "Alex Essoe Canadian nationality verified independently; no nationality inferred from Saudi birthplace.",
+      "Cho Yeo-jeong stale wrong TMDb reference removed; verified KOFIC identity and new event portrait."
+    ],
+    "portraitUpgrades": [
+      "Dominic Sessa",
+      "Emilia Jones",
+      "Joe Carnahan",
+      "Cho Yeo-jeong"
+    ],
+    "omissions": [
+      {
+        "film": "La ladrona del tiempo",
+        "credit": "Liu Xiaoyu",
+        "reason": "Automatic namesake portrait was incorrect; no safe exact identity portrait recovered after TMDb/Watchmode/film sales and public-source checks. Original-language billed performers Karry Wang and Huang Bo meet the full-name publication floor."
+      }
+    ],
+    "notes": "Full-name director and at least two distinct full-name principal performers verified per movie. No minors or crew added to fill a floor. Optional unknown birth/nationality omitted."
+  },
+  "pending": [
+    {
+      "title": "S4: La historia de Bob Lazar",
+      "date": "2026-10-26",
+      "provider": "Apple TV store BUY",
+      "reason": "Apple AR says Sin Calificación; JW AR age empty. No supported canonical AR age recovered. 94% RT audience -> normalized9 -> masterpiece ceiling8, but no ficha published.",
+      "sources": [
+        "https://tv.apple.com/ar/movie/s4-la-historia-de-bob-lazar/umc.cmc.l9w45gj84562ouj0fimq4ysi",
+        "https://www.rottentomatoes.com/m/s4_the_bob_lazar_story",
+        "https://www.classification.gov.au/titles/s4-bob-lazar-story"
+      ]
+    },
+    {
+      "title": "Zainab Johnson: Toxically Optimistic",
+      "date": "2026-10-27",
+      "provider": "Netflix",
+      "reason": "No numeric exact-film rating after RT, IMDb, JW/TMDb, Letterboxd/Filmweb/Metacritic searches and canonical Watchmode helper (no unambiguous match). Only one principal performer; cannot manufacture a second. Stage-show 2025 numeric reviews are not ratings of the Netflix 2026 film.",
+      "sources": [
+        "https://www.netflix.com/ar/title/82969705",
+        "https://www.rottentomatoes.com/m/zainab_johnson_toxically_optimistic",
+        "https://www.imdb.com/title/tt46670803/"
+      ]
+    }
+  ],
+  "announced": [
+    {
+      "title": "Drive – The Pretenders",
+      "date": "2026-10-28",
+      "provider": "Prime Video",
+      "url": "https://www.bavaria-fiction.de/en/node/10284"
+    },
+    {
+      "title": "Colisión",
+      "date": "2026-10-30",
+      "provider": "Netflix",
+      "url": "https://about.netflix.com/es_es/news/collision-course-the-new-film-by-daniel-sanchez-arevalo-premieres-on-netflix-on-30-october"
+    },
+    {
+      "title": "Apocalipsis Z: Nuevo mundo",
+      "date": "2026-10-30",
+      "provider": "Prime Video",
+      "url": "https://www.otroscines.com/post/estrenos-de-prime-video-en-octubre-de-la-serie-de-mike-flanagan-sobre-carrie-al-regreso-de-la-lista-terminal"
+    },
+    {
+      "title": "The Moment",
+      "date": "2026-10-30",
+      "provider": "HBO Max",
+      "slug": "el-momento-2026",
+      "url": "https://www.otroscines.com/post/todos-los-estrenos-de-hbo-max-en-octubre-de-los-domingos-y-guerra-a-la-masacre-de-flores-y-mother-mary"
+    },
+    {
+      "title": "El final de la calle Oak",
+      "date": "2026-10-31",
+      "provider": "HBO Max",
+      "slug": "el-final-de-la-calle-oak-2026",
+      "url": "https://www.otroscines.com/post/todos-los-estrenos-de-hbo-max-en-octubre-de-los-domingos-y-guerra-a-la-masacre-de-flores-y-mother-mary"
+    },
+    {
+      "title": "Gioia mia",
+      "date": "2026-10-29",
+      "provider": "Flow rent; bonified 29/10 to 4/11",
+      "url": "https://www.otroscines.com/post/todas-las-peliculas-y-series-que-llegan-a-flow-en-octubre-2026"
+    },
+    {
+      "title": "Strung",
+      "date": "2026-10-29",
+      "provider": "Flow RENT",
+      "url": "https://www.otroscines.com/post/todas-las-peliculas-y-series-que-llegan-a-flow-en-octubre-2026"
+    },
+    {
+      "title": "El regalo de cumpleaños",
+      "date": "2026-10-30",
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/ar/title/81746037"
+    },
+    {
+      "title": "SCTV: The Greatest Show You've Never Heard Of",
+      "date": "2026-10-30",
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/tudum/features/new-fall-movies-on-netflix-2026"
+    }
+  ],
+  "scopeLimits": [
+    "Mercado Play AR portal returned403; no title-specific newly dated release confirmed.",
+    "DGO AR homepage200 provides no public dated inventory; no native offer inferred from bundles.",
+    "CINE.AR homepage200; CineNacional identifies current arrivals including Habitar la sombra (original2024), Ifwalapej and older2020/2021 works. No original recent premiere with complete publishable metadata established; library arrivals not relabelled as new productions.",
+    "HBO Halloween program lists El carnicero and Los cazamuertos without unambiguous exact-version/year in the source. Kordell schedule differs between global27 and AR31; retain unresolved, do not transplant US date.",
+    "Flow claims rely on title-specific Argentine communication. HBO premium or Paramount bundles are not native Flow.",
+    "No future date is proof of present availability. No series, episode, ambient fireplace, Plex/Eventive/Filmelier-only offer or theatrical screening loaded."
+  ],
+  "originality": "All nine synopses, reviews and seven-field guides and the weekly article were drafted from scratch by AI for this task. No copied, translated or paraphrase-as-source prose, invented viewing memories, per-film custom labels, score provenance fields or site-code/UI/Share/Comunidad/reaction edits.",
+  "editorial": {
+    "slug": "estrenos-streaming-26-octubre-1-noviembre-2026",
+    "images": [
+      {
+        "id": "tm2876942",
+        "url": "https://image.tmdb.org/t/p/original/uQvz6NdyhoWE6dMurFn0BriLIv9.jpg",
+        "page": "https://www.themoviedb.org/movie/1329016/images/backdrops",
+        "width": 3840,
+        "height": 2160,
+        "verification": "Visually inspected film/year, subjects, framing and narrative use; local WebP640/1280 generated without enlargement."
+      },
+      {
+        "id": "tm1942917",
+        "url": "https://image.tmdb.org/t/p/original/p6RXoveMLzMGrmfCsRgARNRIYHZ.jpg",
+        "page": "https://www.themoviedb.org/movie/1480025/images/backdrops",
+        "width": 1920,
+        "height": 1080,
+        "verification": "Visually inspected film/year, subjects, framing and narrative use; local WebP640/1280 generated without enlargement."
+      },
+      {
+        "id": "tm1863096",
+        "url": "https://image.tmdb.org/t/p/original/9MeHubuKm7XJLx68LDEkE8yVnWZ.jpg",
+        "page": "https://www.themoviedb.org/movie/1309083/images/backdrops",
+        "width": 3840,
+        "height": 2160,
+        "verification": "Visually inspected film/year, subjects, framing and narrative use; local WebP640/1280 generated without enlargement."
+      },
+      {
+        "id": "tm1663877",
+        "url": "https://image.tmdb.org/t/p/original/kDRhvKxJ1lx7vmvfJ8D18MmItUb.jpg",
+        "page": "https://www.themoviedb.org/movie/1329673/images/backdrops",
+        "width": 3840,
+        "height": 2160,
+        "verification": "Visually inspected film/year, subjects, framing and narrative use; local WebP640/1280 generated without enlargement."
+      },
+      {
+        "id": "colision",
+        "url": "https://images.ctfassets.net/4cd45et68cgf/2SxGRDLP2fqgFjHNN65JJo/357940d314ce8ff09932050941a4995f/Captura_de_pantalla_2026-09-08_a_las_19.47.31.png",
+        "page": "https://about.netflix.com/es_es/news/collision-course-the-new-film-by-daniel-sanchez-arevalo-premieres-on-netflix-on-30-october",
+        "width": 1648,
+        "height": 904,
+        "verification": "Visually inspected film/year, subjects, framing and narrative use; local WebP640/1280 generated without enlargement."
+      }
+    ],
+    "links": 14,
+    "futureDatesExplicit": true,
+    "scope": "Current offers plus clearly announced forthcoming arrivals; not an assertion that the unfinished week is already complete."
+  },
+  "providers": [
+    {
+      "provider": "Netflix",
+      "result": "Zainab 27/10 pending; Cómo perder tu popularidad has a current older subscription, weekly arrival is Amazon store. Future Colisión/Birthday/SCTV separately announced."
+    },
+    {
+      "provider": "Prime Video",
+      "result": "Tony and One of the Good Ones 26/10 FLATRATE; Amazon store27/10 offers tracked separately."
+    },
+    {
+      "provider": "Apple TV",
+      "result": "Hechizo/Sun store26/10; S4 pending age; Mi hija store27/10; current other store offers confirmed. No new Apple Original movie verified this week."
+    },
+    {
+      "provider": "HBO Max",
+      "result": "The Moment30/10, Oak31/10 announced; current AR access not advanced. Halloween identity and Kordell date ambiguities retained unresolved."
+    },
+    {
+      "provider": "Disney Plus",
+      "result": "AR October slate and complete live movie newTitles sweep checked; no additional publishable current week film verified."
+    },
+    {
+      "provider": "Paramount Plus",
+      "result": "AR October slate and live newTitles sweep checked. Scary Movie22/10 outside week; no new film within live cutoff independently verified."
+    },
+    {
+      "provider": "Crunchyroll",
+      "result": "October release schedule and live movie sweep checked; exclude new anime episodes/series, no new current week movie verified."
+    },
+    {
+      "provider": "Flow",
+      "result": "Title-specific Argentine October communication: Gioia mia and Strung29/10 future rental; bundles not counted as native offers."
+    },
+    {
+      "provider": "CINE.AR",
+      "result": "Portal200, dated CineNacional listings distinguish older library arrivals; no complete recent original premiere identified for publication."
+    },
+    {
+      "provider": "Mercado Play",
+      "result": "Portal403; coverage limitation, no title inferred."
+    },
+    {
+      "provider": "DGO",
+      "result": "Portal200 without a dated public film inventory; coverage limitation."
+    },
+    {
+      "provider": "Otras plataformas",
+      "result": "Uncertainty fallback, not a provider or permission to label unsupported offers."
+    }
+  ]
+}

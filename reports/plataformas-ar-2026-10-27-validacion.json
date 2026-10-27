@@ -1,0 +1,478 @@
+{
+  "checkedAt": "2026-10-27",
+  "manifest": [
+    "src/data/movies/tony-2026.json",
+    "src/data/movies/one-of-the-good-ones-2026.json",
+    "src/data/movies/el-sol-nace-para-todos-2025.json",
+    "src/data/movies/como-perder-tu-popularidad-2026.json",
+    "src/data/movies/rescate-en-el-golfo-2025.json",
+    "src/data/movies/trampa-mortal-2025.json",
+    "src/data/movies/mi-hija-es-un-zombi-2025.json",
+    "src/data/movies/la-ladrona-del-tiempo-2025.json",
+    "src/data/movies/el-ritual-2025.json",
+    "src/data/movies/hechizo-de-amor-la-magia-continua-2026.json",
+    "src/data/movies/las-100-noches-del-deseo-2025.json",
+    "src/data/movies/dolly-juega-contigo-2025.json"
+  ],
+  "added": 9,
+  "updated": 3,
+  "checks": {
+    "check": "0 errors, 0 warnings, 0 hints",
+    "content": "passed, including build/public-output/sitemap",
+    "duplicateCatalog": 2407,
+    "people": {
+      "movies": 12,
+      "retainedCredits": 45,
+      "newPeople": 23,
+      "errors": 0,
+      "optionalWarnings": [
+        "- director: Matt Johnson no tiene fecha de nacimiento pública verificada",
+        "- director: Matt Johnson no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- director: Julie O'Hora no tiene fecha de nacimiento pública verificada",
+        "- director: Julie O'Hora no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- cast: Tom Paolino no tiene fecha de nacimiento pública verificada",
+        "- cast: Tom Paolino no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- cast: Jacob A. Ware no tiene fecha de nacimiento pública verificada",
+        "- director: Stephen S. Campanelli no tiene fecha de nacimiento pública verificada",
+        "- director: Stephen S. Campanelli no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- director: James Kondelik no tiene fecha de nacimiento pública verificada",
+        "- director: James Kondelik no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- director: Yu Ao no tiene fecha de nacimiento pública verificada",
+        "- director: Yu Ao no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- director: Zhou Tienan no tiene fecha de nacimiento pública verificada",
+        "- director: Zhou Tienan no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.",
+        "- director: Julia Jackman no tiene fecha de nacimiento pública verificada"
+      ]
+    },
+    "peopleImagesGlobal": "5856 compliant",
+    "posterCandidates": "12 pass, 0 warnings, 0 errors",
+    "posterGlobal": "2407 checked, 1650 pass, 757 inherited target-size warnings, 0 errors",
+    "posterSourcePolicy": "passed",
+    "editorialMeters": "passed",
+    "preBuildAudit": {
+      "candidates": 12,
+      "errors": [],
+      "warnings": [
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/tony-2026.json",
+          "message": "\"Matt Johnson\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/tony-2026.json",
+          "message": "\"Matt Johnson\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/tony-2026.json",
+          "message": "\"Matt Johnson\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Julie O'Hora\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Julie O'Hora\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Tom Paolino\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Tom Paolino\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Jacob A. Ware\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/como-perder-tu-popularidad-2026.json",
+          "message": "\"Stephen S. Campanelli\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/como-perder-tu-popularidad-2026.json",
+          "message": "\"Stephen S. Campanelli\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/como-perder-tu-popularidad-2026.json",
+          "message": "\"Stephen S. Campanelli\" uses an uncommon portrait host (\"images.mubicdn.net\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/trampa-mortal-2025.json",
+          "message": "\"James Kondelik\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/trampa-mortal-2025.json",
+          "message": "\"James Kondelik\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" uses an uncommon portrait host (\"imgpai.thepaper.cn\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-trace-url",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" uses an uncommon portrait host (\"imgpai.thepaper.cn\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-trace-url",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/el-ritual-2025.json",
+          "message": "\"Shin Joon\" uses an uncommon portrait host (\"kobis.or.kr\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-trace-url",
+          "file": "src/data/movies/el-ritual-2025.json",
+          "message": "\"Shin Joon\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/las-100-noches-del-deseo-2025.json",
+          "message": "\"Julia Jackman\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "youtube-search-unavailable",
+          "file": "src/data/movies/mi-hija-es-un-zombi-2025.json",
+          "message": "YouTube search returned HTTP 302."
+        },
+        {
+          "severity": "warn",
+          "code": "youtube-search-unavailable",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "YouTube search returned HTTP 302."
+        },
+        {
+          "severity": "warn",
+          "code": "youtube-search-unavailable",
+          "file": "src/data/movies/el-ritual-2025.json",
+          "message": "YouTube search returned HTTP 302."
+        },
+        {
+          "severity": "warn",
+          "code": "youtube-search-unavailable",
+          "file": "src/data/movies/hechizo-de-amor-la-magia-continua-2026.json",
+          "message": "YouTube search returned HTTP 302."
+        },
+        {
+          "severity": "warn",
+          "code": "youtube-search-unavailable",
+          "file": "src/data/movies/las-100-noches-del-deseo-2025.json",
+          "message": "YouTube search returned HTTP 302."
+        }
+      ]
+    },
+    "postBuildAudit": {
+      "candidates": 12,
+      "errors": [],
+      "warnings": [
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/tony-2026.json",
+          "message": "\"Matt Johnson\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/tony-2026.json",
+          "message": "\"Matt Johnson\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/tony-2026.json",
+          "message": "\"Matt Johnson\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Julie O'Hora\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Julie O'Hora\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Tom Paolino\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Tom Paolino\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/one-of-the-good-ones-2026.json",
+          "message": "\"Jacob A. Ware\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/como-perder-tu-popularidad-2026.json",
+          "message": "\"Stephen S. Campanelli\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/como-perder-tu-popularidad-2026.json",
+          "message": "\"Stephen S. Campanelli\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/como-perder-tu-popularidad-2026.json",
+          "message": "\"Stephen S. Campanelli\" uses an uncommon portrait host (\"images.mubicdn.net\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/trampa-mortal-2025.json",
+          "message": "\"James Kondelik\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/trampa-mortal-2025.json",
+          "message": "\"James Kondelik\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" uses an uncommon portrait host (\"imgpai.thepaper.cn\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-trace-url",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Yu Ao\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-nationality",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" uses an uncommon portrait host (\"imgpai.thepaper.cn\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-trace-url",
+          "file": "src/data/movies/la-ladrona-del-tiempo-2025.json",
+          "message": "\"Zhou Tienan\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+        },
+        {
+          "severity": "warn",
+          "code": "untrusted-person-image-source",
+          "file": "src/data/movies/el-ritual-2025.json",
+          "message": "\"Shin Joon\" uses an uncommon portrait host (\"kobis.or.kr\"). Verify that the cached image is a real actor/director headshot."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-trace-url",
+          "file": "src/data/movies/el-ritual-2025.json",
+          "message": "\"Shin Joon\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+        },
+        {
+          "severity": "warn",
+          "code": "missing-person-birth",
+          "file": "src/data/movies/las-100-noches-del-deseo-2025.json",
+          "message": "\"Julia Jackman\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+        }
+      ]
+    },
+    "sitemap": "5671 canonical pages",
+    "playwright": "64 passed (desktop Chromium and mobile Chromium)",
+    "browser": {
+      "base": "http://127.0.0.1:43210",
+      "profiles": [
+        {
+          "profile": "desktop",
+          "posters": {
+            "total": 12,
+            "loaded": 12,
+            "bad": []
+          },
+          "portraits": {
+            "total": 45,
+            "loaded": 45,
+            "bad": []
+          },
+          "editorialImages": [
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/tony.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/popularidad.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/dolly.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/el-sol.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/colision.webp",
+              "ok": true
+            }
+          ],
+          "fichaLinks": 14,
+          "archive": 1,
+          "home": 1,
+          "warCandidateCards": 0,
+          "errors": []
+        },
+        {
+          "profile": "mobile320",
+          "posters": {
+            "total": 12,
+            "loaded": 12,
+            "bad": []
+          },
+          "portraits": {
+            "total": 45,
+            "loaded": 45,
+            "bad": []
+          },
+          "editorialImages": [
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/tony-640.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/popularidad-640.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/dolly-640.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/el-sol-640.webp",
+              "ok": true
+            },
+            {
+              "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/colision-640.webp",
+              "ok": true
+            }
+          ],
+          "fichaLinks": 14,
+          "archive": 1,
+          "home": 1,
+          "warCandidateCards": 0,
+          "errors": []
+        }
+      ]
+    }
+  },
+  "editorial": {
+    "words": 1169,
+    "readingMinutes": 6,
+    "narrativeImages": 5,
+    "internalMovieLinks": 14
+  },
+  "scope": "No site-code/UI/routes/workflows/Share/Comunidad/reaction changes. Independent edition snapshots unchanged.",
+  "publication": "Authorized main commit/push; exact remote SHA, matching Pages workflow and production browser verification are checked after publishing."
+}

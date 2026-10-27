@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-23. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-27. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4301
+Total de vínculos de películas del catálogo: 4303
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -67,7 +67,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Anthony Hopkins | `anthony-hopkins` | /personas/anthony-hopkins/ | Actor | 16 | 3 |
 | Anthony Mackie | `anthony-mackie` | /personas/anthony-mackie/ | Actor | 6 | 6 |
 | Antonella Costa | `antonella-costa` | /personas/antonella-costa/ | Actriz | 2 | 5 |
-| Antonio Banderas | `antonio-banderas` | /personas/antonio-banderas/ | Actor | 13 | 7 |
+| Antonio Banderas | `antonio-banderas` | /personas/antonio-banderas/ | Actor | 14 | 7 |
 | Antonio Gasalla | `antonio-gasalla` | /personas/antonio-gasalla/ | Actor / Comediante / Guionista | 1 | 5 |
 | Anya Taylor-Joy | `anya-taylor-joy` | /personas/anya-taylor-joy/ | Actriz | 8 | 6 |
 | Ariana DeBose | `ariana-debose` | /personas/ariana-debose/ | Actriz | 3 | 6 |
@@ -764,7 +764,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Woody Harrelson | `woody-harrelson` | /personas/woody-harrelson/ | Actor | 8 | 4 |
 | Yorgos Lanthimos | `yorgos-lanthimos` | /personas/yorgos-lanthimos/ | Director | 5 | 5 |
 | Zac Efron | `zac-efron` | /personas/zac-efron/ | Actor | 4 | 6 |
-| Zachary Levi | `zachary-levi` | /personas/zachary-levi/ | Actor | 7 | 3 |
+| Zachary Levi | `zachary-levi` | /personas/zachary-levi/ | Actor | 8 | 3 |
 | Zazie Beetz | `zazie-beetz` | /personas/zazie-beetz/ | Actriz | 3 | 6 |
 | Zendaya | `zendaya` | /personas/zendaya/ | Actriz | 6 | 4 |
 | Zoe Saldaña | `zoe-saldana` | /personas/zoe-saldana/ | Actriz | 8 | 4 |

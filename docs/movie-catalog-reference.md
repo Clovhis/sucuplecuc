@@ -1,8 +1,8 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-23. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-10-27. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2398
+Total de peliculas: 2407
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -52,6 +52,7 @@ Total de peliculas: 2398
 | 2026 | Clika | clika-2026 | Drama | HBO Max | +16 |
 | 2026 | Código: Venganza | codigo-venganza-2026 | Accion | Otras plataformas | +13 |
 | 2026 | Colony: Zona Cero | colony-zona-cero-2026 | Terror | Apple TV + Prime Video | +16 |
+| 2026 | Cómo perder tu popularidad | como-perder-tu-popularidad-2026 | Comedia | Netflix + Prime Video | +13 |
 | 2026 | Compañeras de cuarto | companeras-de-cuarto-2026 | Comedia | Netflix | +17 |
 | 2026 | CordobeCes: La película | cordobeces-la-pelicula-2026 | Comedia | Cine | ATP |
 | 2026 | Cortafuego | cortafuego-2026 | Thriller | Netflix | +12 |
@@ -125,7 +126,7 @@ Total de peliculas: 2398
 | 2026 | Hasta el final | hasta-el-final-2026 | Drama | Netflix | +16 |
 | 2026 | Hasta que la verdad los separe | hasta-que-la-verdad-los-separe-2026 | Comedia romantica | Flow | +13 |
 | 2026 | Heartstopper para siempre | heartstopper-para-siempre-2026 | Romance | Netflix | +16 |
-| 2026 | Hechizo de Amor: La magia continúa | hechizo-de-amor-la-magia-continua-2026 | Fantasia | Otras plataformas | +13 |
+| 2026 | Hechizo de Amor: La magia continúa | hechizo-de-amor-la-magia-continua-2026 | Fantasia | Apple TV | +13 |
 | 2026 | Hijo de nadie | hijo-de-nadie-2026 | Drama | Apple TV + Flow | +13 |
 | 2026 | Hokum: La maldición de la bruja | hokum-la-maldicion-de-la-bruja-2026 | Terror | Prime Video | +17 |
 | 2026 | Hombres G: Los mejores años de nuestra vida | los-mejores-anos-de-nuestra-vida-2026 | Documental | Netflix | +16 |
@@ -231,6 +232,7 @@ Total de peliculas: 2398
 | 2026 | Oasis: Don't Look Back in Anger | oasis-don-t-look-back-in-anger-2026 | Documental | Disney Plus | ATP |
 | 2026 | Obsesión | obsesion-2026 | Terror | Otras plataformas | +17 |
 | 2026 | Office Romance | office-romance-2026 | Comedia | Netflix | +16 |
+| 2026 | One of the Good Ones | one-of-the-good-ones-2026 | Drama | Prime Video | +16 |
 | 2026 | Othello | othello-2026 | Drama | Otras plataformas | +13 |
 | 2026 | Outcome | outcome-2026 | Comedia | Apple TV | +16 |
 | 2026 | Panda Plan 2: La tribu mágica | panda-plan-2-la-tribu-magica-2026 | Aventura | Apple TV + Prime Video | ATP |
@@ -303,6 +305,7 @@ Total de peliculas: 2398
 | 2026 | The Swan: El reality más extremo | the-swan-el-reality-mas-extremo-2026 | Documental | Disney Plus | +16 |
 | 2026 | Tiempos de ilusión | tiempos-de-ilusion-2026 | Comedia | Cine | ATP |
 | 2026 | Tierra de crimen | tierra-de-crimen-2026 | Drama | Otras plataformas | +17 |
+| 2026 | Tony | tony-2026 | Drama | Prime Video | +16 |
 | 2026 | Torrente Presidente | torrente-presidente-2026 | Comedia | Otras plataformas | +17 |
 | 2026 | Toy Story 5 | toy-story-5-2026 | Animacion | Disney Plus | ATP |
 | 2026 | Travis Barker: Más allá del miedo | travis-barker-mas-alla-del-miedo-2026 | Documental | Disney Plus | +7 |
@@ -348,7 +351,7 @@ Total de peliculas: 2398
 | 2025 | Companion | companion-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Cuentos del jardín mágico | cuentos-del-jardin-magico-2025 | Animacion | Otras plataformas | ATP |
 | 2025 | Demon Slayer: Kimetsu no Yaiba - Infinity Castle | demon-slayer-kimetsu-no-yaiba-infinity-castle-2025 | Anime | Otras plataformas | +13 |
-| 2025 | Dolly - Juega contigo | dolly-juega-contigo-2025 | Terror | Otras plataformas | +17 |
+| 2025 | Dolly - Juega contigo | dolly-juega-contigo-2025 | Terror | Apple TV + Prime Video | +17 |
 | 2025 | Dos pianos | dos-pianos-2025 | Romance | Otras plataformas | ATP |
 | 2025 | Drácula: Una historia de amor | dracula-2025 | Terror | Prime Video | +16 |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max | +13 |
@@ -357,6 +360,8 @@ Total de peliculas: 2398
 | 2025 | El conjuro 4: Últimos ritos | el-conjuro-4-ultimos-ritos-2025 | Terror | HBO Max | +13 |
 | 2025 | El gran arco | el-gran-arco-2025 | Drama | Otras plataformas | ATP |
 | 2025 | El gran falsificador | el-gran-falsificador-2025 | Drama | Otras plataformas | +13 |
+| 2025 | El ritual | el-ritual-2025 | Terror | Apple TV + Prime Video | +16 |
+| 2025 | El sol nace para todos | el-sol-nace-para-todos-2025 | Drama | Apple TV + Prime Video | +16 |
 | 2025 | Elio | elio-2025 | Animacion | Disney Plus | ATP |
 | 2025 | Ella y su hijo | ella-y-su-hijo-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Encantador | encantador-2025 | Terror | Otras plataformas | +17 |
@@ -386,12 +391,13 @@ Total de peliculas: 2398
 | 2025 | Kobayashi-san Chi no Maid Dragon: Samishigariya no Ryuu | kobayashi-san-chi-no-maid-dragon-samishigariya-no-ryuu-2025 | Anime | Crunchyroll | +15 |
 | 2025 | KPop Demon Hunters | kpop-demon-hunters-2025 | Animacion | Netflix | ATP |
 | 2025 | La casa | la-casa-2025 | Thriller | Cine | +13 |
+| 2025 | La ladrona del tiempo | la-ladrona-del-tiempo-2025 | Animacion | Apple TV + Prime Video | +13 |
 | 2025 | La larga marcha | la-larga-marcha-2025 | Thriller | Prime Video | +16 |
 | 2025 | La Máquina: The Smashing Machine | la-maquina-the-smashing-machine-2025 | Drama | Prime Video | +16 |
 | 2025 | La negociación | la-negociacion-2025 | Drama | Otras plataformas | +13 |
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | La vida es así | la-vida-es-asi-2025 | Comedia | Cine | ATP |
-| 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Otras plataformas | +12 |
+| 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Apple TV + Prime Video | +12 |
 | 2025 | Las corrientes | las-corrientes-2025 | Drama | Flow | +13 |
 | 2025 | Las malditas | las-malditas-2025 | Terror | Apple TV | +13 |
 | 2025 | Lector omnisciente: La profecía | lector-omnisciente-la-profecia-2025 | Accion | Apple TV | +13 |
@@ -406,6 +412,7 @@ Total de peliculas: 2398
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
 | 2025 | Me has robado el corazón | me-has-robado-el-corazon-2025 | Comedia romántica | Otras plataformas | +16 |
+| 2025 | Mi hija es un zombi | mi-hija-es-un-zombi-2025 | Comedia | Apple TV | +13 |
 | 2025 | Mi mejor escena | mi-mejor-escena-2025 | Documental | Prime Video | +13 |
 | 2025 | Mickey 17 | mickey-17-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Mirando a través del agua | mirando-a-traves-del-agua-2025 | Drama | Apple TV | +13 |
@@ -421,6 +428,7 @@ Total de peliculas: 2398
 | 2025 | Padre Madre Hermana Hermano | padre-madre-hermana-hermano-2025 | Drama | Otras plataformas | +13 |
 | 2025 | Pillion | pillion-2025 | Drama | Prime Video | +18 |
 | 2025 | Playa de lobos | playa-de-lobos-2025 | Thriller | Disney Plus | +13 |
+| 2025 | Rescate en el golfo | rescate-en-el-golfo-2025 | Thriller | Prime Video | +13 |
 | 2025 | Retrato de un pianista | retrato-de-un-pianista-2025 | Documental | Otras plataformas | ATP |
 | 2025 | Risa y la cabina del viento | risa-y-la-cabina-del-viento-2025 | Drama | Netflix | +12 |
 | 2025 | Roofman: Un buen ladrón | roofman-un-buen-ladron-2025 | Comedia | Prime Video | +13 |
@@ -448,6 +456,7 @@ Total de peliculas: 2398
 | 2025 | Thunderbolts* | thunderbolts-2025 | Accion | Disney Plus | +13 |
 | 2025 | Tiburón blanco: La bestia del mar | tiburon-blanco-la-bestia-del-mar-2025 | Terror | HBO Max | +16 |
 | 2025 | Together: Juntos Hasta La Muerte | together-juntos-hasta-la-muerte-2025 | Terror | Prime Video | +16 |
+| 2025 | Trampa mortal | trampa-mortal-2025 | Terror | Apple TV + Prime Video | +16 |
 | 2025 | Tres adioses | tres-adioses-2025 | Drama | Cine | ATP |
 | 2025 | Tron: Ares | tron-ares-2025 | Ciencia ficcion | Disney Plus | ATP |
 | 2025 | Turbulencias | turbulencias-2025 | Thriller | Prime Video | +16 |

@@ -410,6 +410,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "garage-olimpo-1999"
   ],
   "antonio-banderas": [
+    "tony-2026",
     "indiana-jones-and-the-dial-of-destiny-2023",
     "el-gato-con-botas-el-ultimo-deseo-2022",
     "uncharted-2022",
@@ -5785,6 +5786,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "17-otra-vez-2009"
   ],
   "zachary-levi": [
+    "rescate-en-el-golfo-2025",
     "sarahs-oil-el-oro-negro-2025",
     "harold-y-el-lapiz-magico-2024",
     "pollitos-en-fuga-el-origen-2023",
