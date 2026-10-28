@@ -8,40 +8,8 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-27T09:39:47.089Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-28T10:24:12.391Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"title": "Everest: La otra cara",
-		"releaseDate": "2026-10-29",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10581-everest-la-otra-cara/",
-		"slug": "cines-argentinos-10581",
-		"videoUrl": "https://www.youtube.com/watch?v=ly3QNtZrEHk",
-		"thumbnailUrl": "https://i.ytimg.com/vi/ly3QNtZrEHk/hqdefault.jpg"
-	},
-	{
-		"title": "Sensatez y sentimientos",
-		"releaseDate": "2026-10-29",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10634-sensatez-y-sentimientos/",
-		"slug": "cines-argentinos-10634",
-		"videoUrl": "https://www.youtube.com/watch?v=5i4_ceVDUqg",
-		"thumbnailUrl": "https://i.ytimg.com/vi/5i4_ceVDUqg/hqdefault.jpg"
-	},
-	{
-		"title": "Pinocho sin cadenas",
-		"releaseDate": "2026-10-29",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10272-pinocho-sin-cadenas/",
-		"slug": "cines-argentinos-10272",
-		"videoUrl": "https://www.youtube.com/watch?v=3acyGGrWLgw",
-		"thumbnailUrl": "https://i.ytimg.com/vi/3acyGGrWLgw/hqdefault.jpg"
-	},
-	{
-		"title": "El Bosque Salvaje: Wildwood",
-		"releaseDate": "2026-10-29",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10500-el-bosque-salvaje-wildwood/",
-		"slug": "cines-argentinos-10500",
-		"videoUrl": "https://www.youtube.com/watch?v=ypgdjOuODH4",
-		"thumbnailUrl": "https://i.ytimg.com/vi/ypgdjOuODH4/hqdefault.jpg"
-	},
 	{
 		"title": "El Gato con Sombrero",
 		"releaseDate": "2026-11-05",
@@ -65,6 +33,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10630",
 		"videoUrl": "https://www.youtube.com/watch?v=eUikTiezPlw",
 		"thumbnailUrl": "https://i.ytimg.com/vi/eUikTiezPlw/hqdefault.jpg"
+	},
+	{
+		"title": "Aniquilación",
+		"releaseDate": "2026-11-12",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10642-aniquilacion/",
+		"slug": "cines-argentinos-10642",
+		"videoUrl": "https://www.youtube.com/watch?v=dRQrD6khw8c",
+		"thumbnailUrl": "https://i.ytimg.com/vi/dRQrD6khw8c/hqdefault.jpg"
 	},
 	{
 		"title": "Los Juegos del Hambre: Amanecer en la Cosecha",
@@ -97,5 +73,13 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10441",
 		"videoUrl": "https://www.youtube.com/watch?v=9iuVf3Ppb7U",
 		"thumbnailUrl": "https://i.ytimg.com/vi/9iuVf3Ppb7U/hqdefault.jpg"
+	},
+	{
+		"title": "La Era de Hielo: Mundo de lava",
+		"releaseDate": "2027-02-04",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10208-la-era-de-hielo-mundo-de-lava/",
+		"slug": "cines-argentinos-10208",
+		"videoUrl": "https://www.youtube.com/watch?v=XaSkYbItiKk",
+		"thumbnailUrl": "https://i.ytimg.com/vi/XaSkYbItiKk/hqdefault.jpg"
 	}
 ];
