@@ -2,10 +2,12 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { test } from 'node:test';
 import { PGlite } from '@electric-sql/pglite';
-import { buildTriviaBank, selectTriviaSession, resolveTriviaAnswer, triviaPoints, triviaGrade, triviaHintBonus, chooseTriviaHint, storyClue } from '../src/lib/trivia.ts';
+import { buildTriviaBank, selectTriviaSession, resolveTriviaAnswer, triviaPoints, triviaGrade, triviaHintBonus, chooseTriviaHint, storyClue, triviaQuestionPayload } from '../src/lib/trivia.ts';
 import { isTriviaPlayer, TRIVIA_COUNTRY_CODES } from '../src/lib/trivia-player.ts';
 import { isTriviaNicknameAllowed } from '../src/lib/trivia-nickname.ts';
 import { syncPolicy } from './sync-trivia-nickname-policy.mjs';
+import { triviaHasEnglishProse } from '../src/lib/trivia-quality.ts';
+import { TRIVIA_CLUES } from '../src/lib/trivia-clues.ts';
 
 const blockedNicknames = ['Hitler','Pija','Concha','Pelotudo','hitler123','H1tl3r','h!tl€r','H I T L E R','Hiiiitlller','Нitler','Ｈｉｔｌｅｒ','Hіtler','P!j@','p i j a','P.I.J.A','xXPija123','C0NCH4','Cónchá','p3l0tud0','ElPelotudo','Boludo','b0lud0','La concha de tu madre','hijo de puta','put0','puta123','ElPutoPro','Forro','Forrro','Pajero','SiegHeil','Nazi','Nazi123','ChupaPija','Ｐｉｊａ'];
 const allowedNicknames = ['Cinéfilo','Juan Pérez','Mati_1990','Hitchcock','Computadora','Pijamas','Reputación','Disputa','Amputado','Foro','ElForo','Nazir','Tarantino','Conchita','Guille','Nico','Cine🍿','Robert Mitchum','F. W. Murnau'];
@@ -32,8 +34,10 @@ test('banco real: más de 1000 preguntas únicas, exactamente tres opciones y un
   const win = (movie) => movie.awards?.wins.some((award) => award.award === 'oscar' && /^mejor pel[ií]cula$/i.test(award.category));
   const matches = (movie) => {
    if (question.id.endsWith(':story-v2')) return storyClue(movie) === storyClue(correct);
+   if (question.id.endsWith(':clue-v1')) return movie.slug === correct.slug;
    if (question.id.endsWith(':cast-director')) return clean(movie.director) === clean(correct.director) && has(movie, cast[0]);
    if (question.id.endsWith(':pair')) return has(movie, cast[0]) && has(movie, cast[1]);
+   if (question.id.endsWith(':supporting-pair')) return has(movie, cast[1]) && has(movie, cast[2]);
    if (question.id.endsWith(':credits')) return has(movie, cast[0]) && (movie.postCreditsScenes === undefined || movie.postCreditsScenes > 0);
    if (question.id.endsWith(':oscar')) return has(movie, cast[0]) && win(movie);
    throw new Error(`Unknown question ${question.id}`);
@@ -43,6 +47,33 @@ test('banco real: más de 1000 preguntas únicas, exactamente tres opciones y un
  }
  assert.ok(bank.questions.filter(q=>q.family==='story').length >= 1000);
  console.log(`Trivia: ${bank.questions.length} preguntas, ${bank.movies.length} películas.`);
+});
+
+test('consignas en español, formatos nuevos y afiches con las tres opciones accesibles', () => {
+ for (const q of bank.questions) {
+  assert.ok(!triviaHasEnglishProse(q.prompt), q.id);
+  assert.ok(!triviaHasEnglishProse(q.fact.replace(bank.movies[q.answer].title, '')), q.id);
+  if (q.presentation === 'posters') assert.ok(q.options.every(i => bank.movies[i].poster && bank.movies[i].title));
+ }
+ assert.ok(triviaHasEnglishProse('Steppenwolf and his legions attempt to take over the Earth using the combined energies of the three Mother Boxes.'));
+ assert.ok(triviaHasEnglishProse('A young woman must escape when her family and their friends disappear.'));
+ assert.ok(!triviaHasEnglishProse('Art the Clown persigue a una adolescente y a su hermano durante Halloween.'));
+ assert.ok(!triviaHasEnglishProse('Un documental sobre The New York Review of Books y sus debates.'));
+ assert.equal(storyClue({slug:'english',title:'Fixture',synopsis:'A young woman must escape when her family and their friends disappear into a mysterious abandoned house.'}), undefined);
+ for (const kind of ['Tres pistas','Objetos','Lugares','El conflicto','Elegí el afiche','Reparto']) assert.ok(bank.questions.some(q => q.kind === kind), kind);
+ for (const slug of Object.keys(TRIVIA_CLUES)) assert.ok(bySlug.has(slug), slug);
+ assert.ok(bank.questions.some(q => q.id === 'justice-league-2017:story-v2'));
+});
+
+test('el payload privado conserva afiches, personas y opciones completas al sincronizar', () => {
+ const q=bank.questions.find(q=>q.presentation==='posters');
+ const payload=triviaQuestionPayload(q,bank.movies);
+ assert.equal(payload.presentation,'posters');
+ assert.equal(payload.id,q.id);
+ assert.equal(payload.answer.slug,bank.movies[q.answer].slug);
+ assert.ok(payload.options.every(movie=>typeof movie.slug==='string' && movie.poster && movie.title));
+ const credit=bank.questions.find(q=>q.people.length);
+ assert.deepEqual(triviaQuestionPayload(credit,bank.movies).people,credit.people);
 });
 
 test('regresiones de dificultad: sin héroe regalado ni dos alternativas de la misma franquicia', () => {
@@ -107,7 +138,10 @@ test('deadline estricto, bonus de velocidad y nota de 1 a 10', () => {
  assert.equal(resolveTriviaAnswer(question, question.answer, 20000, 20001).choice, null);
  assert.equal(resolveTriviaAnswer(question, question.answer, 20000, 19999).correct, true);
  assert.equal(triviaPoints(false, 20000), 0);
- assert.equal(triviaPoints(true, 20000), 1200);
+ assert.equal(triviaPoints(true, 25000), 1200);
+ assert.equal(triviaPoints(true, 20000), 1160);
+ assert.equal(triviaPoints(true, 12500), 1100);
+ assert.equal(triviaPoints(true, 20000, 20), 1200);
  assert.equal(triviaPoints(true, 1), 1000);
  assert.ok(triviaPoints(true, 18000) > triviaPoints(true, 2000));
  assert.equal(triviaGrade(24750), '10.0');
@@ -158,7 +192,7 @@ test('Supabase SQL: perfil ligado al resultado, edad pública, cálculo, ranking
   }
   const id = '00000000-0000-4000-8000-000000000001';
   const answers = Array.from({length:20}, (_,i) => ({correct:i<12, remaining_ms:12345-i*100}));
-  const expected = answers.reduce((sum, a) => sum + triviaPoints(a.correct, a.remaining_ms), 0) + triviaHintBonus(0);
+ const expected = answers.reduce((sum, a) => sum + triviaPoints(a.correct, a.remaining_ms, 20), 0) + triviaHintBonus(0);
   const playerId = '00000000-0000-4000-8000-000000000011';
   const submit = (sessionId, name, list, country='AR', age=30, player=playerId, hints=0) => db.query('select * from public.submit_trivia_high_score($1,$2,$3,$4,$5,$6::jsonb,$7)', [sessionId,player,name,country,age,JSON.stringify(list),hints]);
   for (const name of blockedNicknames) await assert.rejects(submit(id,name,answers),/nickname not allowed/);

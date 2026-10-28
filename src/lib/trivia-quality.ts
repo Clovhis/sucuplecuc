@@ -1,5 +1,13 @@
 import type { TriviaSource } from './trivia.ts';
 
+/** A guard against English prose, not a ban on film titles or proper names. */
+export function triviaHasEnglishProse(text: string): boolean {
+	const words = triviaWords(text);
+	const english = new Set(words.filter(word => ['the', 'and', 'his', 'her', 'their', 'they', 'with', 'from', 'after', 'when', 'must', 'into', 'using', 'which', 'who', 'while', 'through', 'attempt', 'upon'].includes(word)));
+	const spanish = words.filter(word => ['el', 'la', 'los', 'las', 'de', 'del', 'que', 'una', 'un', 'en', 'su', 'sus', 'para', 'por', 'con', 'pero', 'mientras'].includes(word)).length;
+	return english.size >= 3 && english.size > spanish;
+}
+
 export const triviaWords = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().match(/[a-z0-9]+/g) ?? [];
 export const triviaDirectors = (names: string) => names.split(/\s*,\s*|\s+y\s+|\s*&\s*/i).map(name => triviaWords(name).join(''));
 export const triviaTitleFamily = (movie: TriviaSource) => {

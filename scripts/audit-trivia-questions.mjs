@@ -1,8 +1,8 @@
 // Exhaustive policy audit. The JSON includes every accepted question and every rejected candidate.
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, mkdirSync, writeFileSync } from 'node:fs';
-import { buildTriviaBank, storyClue } from '../src/lib/trivia.ts';
-import { triviaArgentina, triviaCompatible, triviaGiveaway, triviaThemes, triviaWords, triviaDirectors, triviaCoreThemes, TRIVIA_QUARANTINE } from '../src/lib/trivia-quality.ts';
+import { buildTriviaBank } from '../src/lib/trivia.ts';
+import { triviaArgentina, triviaCompatible, triviaGiveaway, triviaThemes, triviaWords, triviaDirectors, triviaCoreThemes, triviaHasEnglishProse, TRIVIA_QUARANTINE } from '../src/lib/trivia-quality.ts';
 
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Argentina/Buenos_Aires', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 const year = Number(today.slice(0, 4));
@@ -27,16 +27,18 @@ for (const q of bank.questions) {
  assert.equal(new Set(options.map(movie => normalize(movie.title))).size, 3, q.id);
  assert.ok(!/\b(?:18|19|20)\d{2}\b/.test(q.prompt), q.id);
  assert.ok(!options.some(movie => TRIVIA_QUARANTINE[movie.slug]), q.id);
+ assert.ok(!triviaHasEnglishProse(q.prompt) && !triviaHasEnglishProse(q.fact.replace(answer.title, '')), q.id);
  assert.ok(wrong.every(movie => triviaCompatible(answer, movie, story)), q.id);
  if (story) {
   assert.ok(!triviaGiveaway(answer, q.prompt, frequency), q.id);
   const themes = triviaThemes(answer);
   assert.ok(wrong.every(movie => !themes.length || themes.some(theme => triviaThemes(movie).includes(theme))), q.id);
-  const core = triviaCoreThemes(storyClue(answer));
+  const core = triviaCoreThemes(q.prompt);
   assert.ok(wrong.every(movie => !core.length || core.some(theme => triviaCoreThemes(movie.synopsis ?? '').includes(theme))), q.id);
   assert.ok(q.prompt.length <= 300, q.id);
- } else if (q.kind === 'Duplas') {
-  assert.ok(wrong.every(movie => has(movie, cast[0]) !== has(movie, cast[1])), q.id);
+ } else if (q.kind === 'Duplas' || q.kind === 'Reparto') {
+  const [first, second] = q.people.map(person => person.name);
+  assert.ok(wrong.every(movie => has(movie, first) !== has(movie, second)), q.id);
  } else if (q.kind === 'Dirección') {
   assert.ok(wrong.every(movie => has(movie, cast[0]) !== (triviaDirectors(movie.director).some(name => triviaDirectors(answer.director).includes(name)))), q.id);
  } else {

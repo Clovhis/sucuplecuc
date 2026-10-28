@@ -1,5 +1,6 @@
 /** Specific clues rewritten from each movie's local synopsis; no release dates or ending spoilers. */
 export const STORY_QUESTIONS: Record<string, string> = {
+	'justice-league-2017': 'Un invasor busca reunir tres cajas de origen extraterrestre para transformar la Tierra. Un grupo de héroes debe aprender a trabajar unido para detenerlo. ¿Qué película es?',
 	'12-angry-men-1957': 'Un jurado se resiste a condenar a un adolescente y obliga a los otros once a revisar las pruebas. ¿Qué película transcurre casi por completo en esa deliberación?',
 	'alien-1979': 'Una señal desconocida lleva a la tripulación del Nostromo a recoger algo que jamás debería haber subido a bordo. ¿En qué película pasa?',
 	'back-to-the-future-1985': 'Un DeLorean, un encuentro entre los padres que sale mal y un hijo que podría dejar de existir. ¿Qué película arranca este desastre temporal?',

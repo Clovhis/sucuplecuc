@@ -80,7 +80,7 @@
 .trivia-choice.is-correct { background: #12291f; border-color: var(--trivia-green); color: var(--trivia-green); opacity: 1; }
 .trivia-choice.is-wrong { background: #301c21; border-color: var(--trivia-red); color: var(--trivia-red); opacity: 1; animation: trivia-shake .3s; }
 .trivia-choice.is-discarded { opacity: .3; border-style: dashed; }
-.trivia-choice.is-discarded > span:nth-child(2) { text-decoration: line-through; }
+.trivia-choice.is-discarded .trivia-choice-title { text-decoration: line-through; }
 .trivia-hints { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem 1rem; margin-top: 1rem; }
 .trivia-hint-button { display: inline-flex; align-items: center; gap: .65rem; min-height: 44px; padding: .5rem .8rem; color: var(--trivia-accent); background: #211d1a; border: 1px solid #655246; border-radius: 4px; cursor: pointer; font-size: .8rem !important; }
 .trivia-hint-button > span:last-child { font: .7rem var(--font-mono); }
@@ -200,6 +200,13 @@
 	.trivia-results { grid-template-columns: minmax(0,1fr); }
 	.trivia-filmography-head { margin-top: 2.5rem; }
 }
+.trivia-question-panel.is-answering { -webkit-user-select: none; user-select: none; }
+.trivia-choices--posters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .65rem; }
+.trivia-choices--posters .trivia-choice { display: flex; flex-direction: column; align-items: center; gap: .5rem; padding: .65rem; text-align: center; min-width: 0; font-size: .8rem; }
+.trivia-choices--posters .trivia-choice > span:first-child { align-self: start; }
+.trivia-choice-poster { display: block; width: 100%; max-width: 120px; height: auto; aspect-ratio: 2/3; object-fit: contain; border-radius: 3px; pointer-events: none; }
+.trivia-choices--posters .trivia-choice-title { overflow-wrap: anywhere; flex: 1; }
+.trivia-choices--posters .trivia-choice.is-discarded img { opacity: .2; }
 @media (prefers-reduced-motion: reduce) {
 	.trivia *, .trivia *::before, .trivia *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }

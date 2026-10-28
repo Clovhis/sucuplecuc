@@ -23,10 +23,14 @@ create table if not exists public.trivia_games (
  questions jsonb not null check(jsonb_array_length(questions)=20),
  round integer not null default 0 check(round between 0 and 19),
  phase text not null default 'question' check(phase in('question','review','finished','abandoned')),
- deadline timestamptz not null default clock_timestamp()+interval '20 seconds',
+ deadline timestamptz not null default clock_timestamp()+interval '25 seconds',
  answers jsonb not null default '[]', hints jsonb not null default '{}',
  score integer not null default 0, created_at timestamptz not null default now()
 );
+-- Existing games keep their original clock and scoring; only new games get 25 seconds.
+alter table public.trivia_games add column if not exists round_seconds smallint not null default 20 check(round_seconds in(20,25));
+alter table public.trivia_games alter column round_seconds set default 25;
+alter table public.trivia_games alter column deadline set default clock_timestamp()+interval '25 seconds';
 create index if not exists idx_trivia_games_owner on public.trivia_games(owner_id,created_at desc);
 create unique index if not exists idx_trivia_games_active on public.trivia_games(owner_id) where phase in('question','review');
 create table if not exists public.trivia_verified_scores (
@@ -94,7 +98,7 @@ begin
  -- Catalog question IDs contain the solution slug; only expose an opaque round ID.
  q:=(q-'id')||jsonb_build_object('id',g.id::text||':'||g.round::text);
  return jsonb_build_object('id',g.id,'player',g.player,'round',g.round,'phase',g.phase,
-  'deadlineMs',floor(extract(epoch from g.deadline)*1000),'serverNowMs',floor(extract(epoch from clock_timestamp())*1000),
+  'deadlineMs',floor(extract(epoch from g.deadline)*1000),'serverNowMs',floor(extract(epoch from clock_timestamp())*1000),'roundSeconds',g.round_seconds,
   'question',case when g.phase='finished' then null else q end,
   'answers',g.answers,'hintsUsed',(select count(*) from jsonb_object_keys(g.hints)),
   'discarded',g.hints->>g.round::text,'score',g.score,
@@ -165,7 +169,7 @@ begin
  if g.phase in('review','finished') then return public.trivia_game_state(g.id); end if;
  if g.phase<>'question' then raise exception 'game not active'; end if;
  q:=g.questions->g.round;
- remaining:=least(20000,greatest(0,floor(extract(epoch from(g.deadline-clock_timestamp()))*1000)::integer));
+ remaining:=least(g.round_seconds*1000,greatest(0,floor(extract(epoch from(g.deadline-clock_timestamp()))*1000)::integer));
  if remaining=0 then p_choice:=null;
  elsif p_choice is null then raise exception 'question still active'; end if;
  if p_choice is not null then
@@ -173,7 +177,7 @@ begin
   if chosen is null or p_choice=g.hints->>g.round::text then raise exception 'invalid choice'; end if;
  end if;
  correct:=p_choice is not null and p_choice=q->'answer'->>'slug';
- earned:=case when correct then 1000+remaining/100 else 0 end;
+ earned:=case when correct then 1000+remaining/(g.round_seconds*5) else 0 end;
  result:=jsonb_build_object('questionId',q->>'id','prompt',q->>'prompt','fact',q->>'fact','movie',q->'answer','choice',chosen,'correct',correct,'remainingMs',remaining,'points',earned);
  update public.trivia_games set answers=answers||jsonb_build_array(result),score=score+earned,phase='review' where id=g.id;
  if g.round=19 then
@@ -218,7 +222,7 @@ begin
  if p_round<>g.round then raise exception 'stale question'; end if;
  if g.phase='finished' then return public.trivia_game_state(g.id); end if;
  if g.phase<>'review' or g.round>=19 then raise exception 'answer required'; end if;
- update public.trivia_games set round=round+1,phase='question',deadline=clock_timestamp()+interval '20 seconds' where id=g.id;
+ update public.trivia_games set round=round+1,phase='question',deadline=clock_timestamp()+make_interval(secs=>g.round_seconds) where id=g.id;
  insert into public.trivia_seen_questions(player_id,question_id) values(g.player_id,g.questions->(g.round+1)->>'id') on conflict(player_id,question_id) do update set seen_at=now();
  return public.trivia_game_state(g.id);
 end;

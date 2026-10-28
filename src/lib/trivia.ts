@@ -1,5 +1,6 @@
-import { triviaCompatible, triviaGiveaway, triviaWords, triviaThemes, triviaTitleFamily, triviaDirectors, triviaCoreThemes, TRIVIA_QUARANTINE } from './trivia-quality.ts';
+import { triviaCompatible, triviaGiveaway, triviaWords, triviaThemes, triviaTitleFamily, triviaDirectors, triviaCoreThemes, triviaHasEnglishProse, TRIVIA_QUARANTINE } from './trivia-quality.ts';
 import { STORY_QUESTIONS } from './trivia-stories.ts';
+import { TRIVIA_CLUES } from './trivia-clues.ts';
 
 /** Questions use recorded credits and the catalog's own plot summaries. */
 export interface TriviaSource {
@@ -20,11 +21,11 @@ export interface TriviaSource {
 }
 
 export const TRIVIA_ROUNDS = 20;
-export const TRIVIA_SECONDS = 20;
+export const TRIVIA_SECONDS = 25;
 export const TRIVIA_HINTS = 3;
 export const TRIVIA_HINT_BONUS = 250;
 export const TRIVIA_MAX_POINTS = 24000 + TRIVIA_HINTS * TRIVIA_HINT_BONUS;
-export const TRIVIA_KINDS = ['La historia', 'Duplas', 'Dirección', 'Postcréditos', 'Premios'] as const;
+export const TRIVIA_KINDS = ['La historia', 'Duplas', 'Reparto', 'Dirección', 'Postcréditos', 'Premios', 'Tres pistas', 'Objetos', 'Lugares', 'El conflicto', 'Elegí el afiche'] as const;
 export type TriviaKind = typeof TRIVIA_KINDS[number];
 export interface TriviaPerson { name: string; role: 'Reparto' | 'Dirección'; image?: string }
 export interface TriviaQuestion {
@@ -36,9 +37,15 @@ export interface TriviaQuestion {
 	answer: number;
 	options: number[];
 	people?: TriviaPerson[];
+	presentation?: 'posters';
 }
 export interface TriviaMovie { slug: string; title: string; year: number; poster: string }
 export interface TriviaBank { version: 1; movies: TriviaMovie[]; questions: TriviaQuestion[]; rejected: { id: string; reason: string }[] }
+
+/** Private server payload: preserve presentation metadata and replace catalog indices with film records. */
+export function triviaQuestionPayload(question: TriviaQuestion, movies: TriviaMovie[]) {
+	return { ...question, options: question.options.map(index => movies[index]), answer: movies[question.answer] };
+}
 
 const clean = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
 const person = (value: string) => value.trim().length > 4 && !/desconocid|confirmar|no (?:disponible|informad)|sin datos|n\/a|^varios$/i.test(value);
@@ -53,6 +60,7 @@ export function storyClue(movie: TriviaSource): string | undefined {
 	let clue = sentences[0];
 	if (clue?.length < 65 && sentences[1] && `${clue} ${sentences[1]}`.length <= 240) clue += ` ${sentences[1]}`;
 	if (!clue || clue.length < 65 || clue.length > 240 || /\b(?:18|19|20)\d{2}\b/.test(clue)) return;
+	if (triviaHasEnglishProse(clue)) return;
 	if (/la pel[ií]cula (?:comienza|se centra)|el (?:viaje|relato) tambi[eé]n|en esta (?:pel[ií]cula|historia)/i.test(clue)) return;
 	if ([movie.title, movie.originalTitle].some((title) => title && clean(title).length >= 4 && clean(clue).includes(clean(title)))) return;
 	return clue;
@@ -96,8 +104,9 @@ export function buildTriviaBank(input: TriviaSource[], year: number, resolvePeop
 		const id = `${movie.slug}:${key}`;
 		const reject = (reason: string) => { rejected.push({ id, reason }); };
 		if (prompts.has(prompt)) return reject('duplicate-prompt');
-		const isStory = kind === 'La historia';
-		const clueThemes = triviaCoreThemes(stories[index] ?? '');
+		const isStory = !['Duplas', 'Reparto', 'Dirección', 'Postcréditos', 'Premios'].includes(kind);
+		const clueThemes = triviaCoreThemes(prompt);
+		if (triviaHasEnglishProse(prompt) || triviaHasEnglishProse(fact.replace(movie.title, ''))) return reject('english-prose');
 		if (isStory && triviaGiveaway(movie, prompt, titleFrequency)) return reject('title-or-iconic-character-giveaway');
 		// Every distractor must fail the entire clue, including people shared by remakes/sequels.
 		let neighbors = neighborCache.get(index);
@@ -123,7 +132,7 @@ export function buildTriviaBank(input: TriviaSource[], year: number, resolvePeop
 		if (wrong.length !== 2 || clean(sources[wrong[0]].title) === clean(sources[wrong[1]].title)) return reject('fewer-than-two-credible-distractors');
 		const options = [index, ...wrong].sort((a, b) => hash(`${id}|${a}`) - hash(`${id}|${b}`));
 		const people = clues.flatMap(({ name, role }) => resolvePeople?.(name, role) ?? [{ name, role }]);
-		questions.push({ id, kind, family: kind === 'La historia' ? 'story' : kind === 'Duplas' || kind === 'Dirección' ? 'credits' : 'extra', prompt, fact, answer: index, options, people });
+		questions.push({ id, kind, family: isStory ? 'story' : ['Duplas', 'Reparto', 'Dirección'].includes(kind) ? 'credits' : 'extra', prompt, fact, answer: index, options, people, ...(kind === 'Elegí el afiche' ? { presentation: 'posters' as const } : {}) });
 		prompts.add(prompt);
 	}
 
@@ -132,10 +141,19 @@ export function buildTriviaBank(input: TriviaSource[], year: number, resolvePeop
 		const lead = cast[0];
 		const second = cast[1];
 		const story = stories[i];
-		if (story) add(i, 'story-v2', 'La historia', STORY_QUESTIONS[movie.slug] ?? `¿Qué película cuenta esta historia? ${story}`, movie.synopsis!, (j) => stories[j] === story);
+		if (story) {
+			const posters = hash(movie.slug) % 4 === 0;
+			add(i, 'story-v2', posters ? 'Elegí el afiche' : 'La historia', STORY_QUESTIONS[movie.slug] ?? `${posters ? '¿Qué afiche corresponde a esta historia?' : '¿Qué película cuenta esta historia?'} ${story}`, story.replace(/¿[^?]+\?/g, '').trim(), (j) => stories[j] === story);
+		}
+		const clue = TRIVIA_CLUES[movie.slug];
+		if (clue) add(i, 'clue-v1', clue.kind, clue.prompt, clue.prompt.replace(/¿[^?]+\?/g, '').trim(), (j) => sources[j].slug === movie.slug);
 		if (lead && person(movie.director)) add(i, 'cast-director', 'Dirección', `¿En qué película se cruzan ${lead} en el reparto y ${movie.director} en la dirección?`, `${movie.title} reúne a ${lead} en el elenco y a ${movie.director} en la dirección.`, (j) => casts[j].has(clean(lead)) && sharesDirection(j, i), [{ name: lead, role: 'Reparto' }, { name: movie.director, role: 'Dirección' }], (j) => casts[j].has(clean(lead)) || sharesDirection(j, i));
 		if (lead && second && clean(lead) !== clean(second)) {
 			add(i, 'pair', 'Duplas', `¿En qué película comparten elenco ${lead} y ${second}?`, `${lead} y ${second} aparecen en ${movie.title}.`, (j) => casts[j].has(clean(lead)) && casts[j].has(clean(second)), [{ name: lead, role: 'Reparto' }, { name: second, role: 'Reparto' }], (j) => casts[j].has(clean(lead)) || casts[j].has(clean(second)));
+		}
+		const third = cast[2];
+		if (second && third && clean(second) !== clean(third)) {
+			add(i, 'supporting-pair', 'Reparto', `Más allá del protagonista: ¿en qué película aparecen ${second} y ${third}?`, `${second} y ${third} integran el reparto de ${movie.title}.`, (j) => casts[j].has(clean(second)) && casts[j].has(clean(third)), [{ name: second, role: 'Reparto' }, { name: third, role: 'Reparto' }], (j) => casts[j].has(clean(second)) || casts[j].has(clean(third)));
 		}
 		if (lead && Number.isInteger(movie.postCreditsScenes) && movie.postCreditsScenes! > 0) {
 			add(i, 'credits', 'Postcréditos', `¿Qué película con ${lead} tiene escenas durante o después de los créditos?`, `${movie.title} tiene ${movie.postCreditsScenes} ${movie.postCreditsScenes === 1 ? 'escena registrada' : 'escenas registradas'} durante o después de los créditos.`, (j) => casts[j].has(clean(lead)) && (sources[j].postCreditsScenes === undefined || sources[j].postCreditsScenes! > 0), [{ name: lead, role: 'Reparto' }], (j) => casts[j].has(clean(lead)));
@@ -165,7 +183,7 @@ export function selectTriviaSession(bank: TriviaBank, seen: string[] = [], recen
 	const pool = shuffled(bank.questions, random).sort((a, b) => Number(seenSet.has(a.id)) - Number(seenSet.has(b.id)) || Number(recent.has(bank.movies[a.answer].slug)) - Number(recent.has(bank.movies[b.answer].slug)));
 	for (const family of [...Array(12).fill('story'), ...Array(6).fill('credits'), ...Array(2).fill('extra')]) {
 		const available = pool.filter((q) => !used.has(q.answer));
-		const eligible = available.filter((q) => q.family === family && (family === 'story' || (counts.get(q.kind) ?? 0) < 3));
+		const eligible = available.filter((q) => q.family === family && (family === 'story' || (counts.get(q.kind) ?? 0) < 3)).sort((a, b) => (counts.get(a.kind) ?? 0) - (counts.get(b.kind) ?? 0));
 		const next = eligible.find((q) => !seenSet.has(q.id)) ?? available.find((q) => q.family === 'story' && !seenSet.has(q.id)) ?? eligible[0] ?? available.find((q) => q.family === 'story') ?? available[0];
 		if (!next) break;
 		used.add(next.answer); counts.set(next.kind, (counts.get(next.kind) ?? 0) + 1);
@@ -179,8 +197,8 @@ export function resolveTriviaAnswer(question: TriviaQuestion, choice: number | n
 	return { choice: expired ? null : choice, correct: !expired && choice === question.answer, remainingMs: expired ? 0 : Math.min(TRIVIA_SECONDS * 1000, Math.max(0, deadline - now)) };
 }
 
-export function triviaPoints(correct: boolean, remainingMs: number): number {
-	return correct ? 1000 + Math.floor(Math.min(20000, Math.max(0, remainingMs)) / 100) : 0;
+export function triviaPoints(correct: boolean, remainingMs: number, seconds = TRIVIA_SECONDS): number {
+	return correct ? 1000 + Math.floor(Math.min(seconds * 1000, Math.max(0, remainingMs)) / (seconds * 5)) : 0;
 }
 
 export function triviaGrade(points: number): string {

@@ -1,6 +1,9 @@
 import { expect, test } from '@playwright/test';
 import { existsSync } from 'node:fs';
 import { TRIVIA_COUNTRY_CODES } from '../../src/lib/trivia-player';
+import { triviaLocalPreview } from './trivia-preview';
+
+test.beforeEach(async ({ page, baseURL }) => { await triviaLocalPreview(page, baseURL); });
 
 test('ranking de Trivia: banderas locales, edad y layout adaptable', async ({ page }) => {
 	// Every nationality accepted by the form has an asset, including countries outside the simulator.

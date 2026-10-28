@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { buildTriviaBank } from '../src/lib/trivia.ts';
+import { buildTriviaBank, triviaQuestionPayload } from '../src/lib/trivia.ts';
 
 const directory = new URL('../src/data/movies/',import.meta.url);
 const today = new Intl.DateTimeFormat('en-CA',{timeZone:'America/Argentina/Buenos_Aires',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -25,7 +25,7 @@ const bank = buildTriviaBank(movies,year,(names,role)=>{
 });
 if(bank.questions.filter(q=>q.family==='story').length<1000) throw new Error('El banco requiere al menos 1000 historias distintas.');
 if(bank.questions.length<1000) throw new Error('El banco privado requiere al menos 1000 preguntas.');
-const payloads=bank.questions.map((q)=>({id:q.id,payload:{id:q.id,kind:q.kind,family:q.family,prompt:q.prompt,fact:q.fact,people:q.people,options:q.options.map((index)=>bank.movies[index]),answer:bank.movies[q.answer]}}));
+const payloads=bank.questions.map((q)=>({id:q.id,payload:triviaQuestionPayload(q,bank.movies)}));
 const version=createHash('sha256').update(JSON.stringify(payloads)).digest('hex');
 if(process.argv.includes('--apply')) {
  const token=process.env.SUPABASE_ACCESS_TOKEN;

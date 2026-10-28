@@ -5,9 +5,9 @@ import { isTriviaPlayer, TRIVIA_COUNTRY_CODES } from '../lib/trivia-player';
 import type { TriviaPlayer } from '../lib/trivia-player';
 import { isTriviaNicknameAllowed } from '../lib/trivia-nickname';
 
-interface Question { id: string; kind: string; prompt: string; people: TriviaPerson[]; options: TriviaMovie[]; answer?: TriviaMovie; fact?: string }
+interface Question { id: string; kind: string; prompt: string; people: TriviaPerson[]; options: TriviaMovie[]; presentation?: 'posters'; answer?: TriviaMovie; fact?: string }
 interface Answer { questionId: string; prompt: string; fact: string; movie: TriviaMovie; choice: TriviaMovie | null; correct: boolean; remainingMs: number; points: number }
-interface Game { id: string; player: TriviaPlayer; round: number; phase: 'question' | 'review' | 'finished' | 'abandoned'; deadlineMs: number; serverNowMs: number; question: Question | null; answers: Answer[]; hintsUsed: number; discarded: string | null; score: number; bonus: number }
+interface Game { id: string; player: TriviaPlayer; round: number; roundSeconds?: number; phase: 'question' | 'review' | 'finished' | 'abandoned'; deadlineMs: number; serverNowMs: number; question: Question | null; answers: Answer[]; hintsUsed: number; discarded: string | null; score: number; bonus: number }
 const root = document.querySelector<HTMLElement>('[data-trivia]');
 if (root) setupTrivia(root);
 
@@ -37,6 +37,13 @@ function setupTrivia(root: HTMLElement) {
 	let rankingLoaded = false;
 	const nickname = node<HTMLInputElement>('player-name');
 	const stopTimer = () => { if (timer) clearInterval(timer); timer = undefined; };
+	// Friction for casual copy/paste only. Keep text in the accessibility tree and keyboard play intact.
+	const protectedQuestion = (event: Event) => game?.phase === 'question' && !node('game').hidden && event.target instanceof Element && Boolean(event.target.closest('[data-question-panel]'));
+	for (const type of ['copy', 'cut', 'contextmenu', 'dragstart', 'selectstart']) node('question-panel').addEventListener(type, (event) => { if (protectedQuestion(event)) event.preventDefault(); });
+	document.addEventListener('copy', (event) => {
+		const selection = window.getSelection();
+		if (game?.phase === 'question' && !node('game').hidden && selection?.rangeCount && !selection.isCollapsed && selection.getRangeAt(0).intersectsNode(node('question-panel'))) event.preventDefault();
+	});
 
 	async function rpc<T>(name: string, parameters: Record<string, unknown> = {}): Promise<T> {
 		if (!client) throw new Error('service unavailable');
@@ -138,6 +145,7 @@ function setupTrivia(root: HTMLElement) {
 	}
 	function renderQuestion(changed: boolean) {
 		stopTimer(); show('game'); const current = game!; const question = current.question!;
+		node('question-panel').classList.toggle('is-answering', current.phase === 'question');
 		node('current-player').textContent = label(current.player); node('round').textContent = `Pregunta ${String(current.round + 1).padStart(2,'0')} / ${TRIVIA_ROUNDS}`;
 		node('kind').textContent = question.kind; node('question').textContent = question.prompt; node('live-score').textContent = `${format(current.score)} puntos`;
 		node('progress').innerHTML = Array.from({ length: TRIVIA_ROUNDS }, (_,i) => { const result = current.answers[i]; const status = result ? result.correct ? 'Correcta' : result.choice ? 'Incorrecta' : 'Sin tiempo' : i === current.round ? 'Actual' : 'Pendiente'; return `<li class="${result ? result.correct ? 'is-correct' : 'is-wrong' : i === current.round ? 'is-current' : ''}" aria-label="Pregunta ${i+1}: ${status}"></li>`; }).join('');
@@ -145,9 +153,10 @@ function setupTrivia(root: HTMLElement) {
 		node('clue-people').innerHTML = (question.people ?? []).map((person) => `<div class="trivia-clue-person"><div class="trivia-clue-portrait"><span aria-hidden="true">${escape(person.name.split(/\s+/).slice(0,2).map((part)=>part[0]).join('').toUpperCase())}</span>${person.image ? `<img src="${escape(person.image)}" alt="" width="72" height="72" decoding="async" />` : ''}</div><div><span class="trivia-clue-role">${escape(person.role)}</span><strong>${escape(person.name)}</strong></div></div>`).join('');
 		node('clue-people').querySelectorAll<HTMLImageElement>('img').forEach((image)=>{ image.addEventListener('error',()=>{image.hidden=true;},{once:true}); if(image.complete&&!image.naturalWidth) image.hidden=true; });
 		const result = current.answers[current.round];
+		node('choices').classList.toggle('trivia-choices--posters', question.presentation === 'posters');
 		node('choices').innerHTML = question.options.map((movie,i)=>{
 			const correct = result?.movie.slug === movie.slug; const wrong = result?.choice?.slug === movie.slug && !result.correct; const discarded = current.discarded === movie.slug;
-			return `<button type="button" class="trivia-choice ${correct?'is-correct':wrong?'is-wrong':discarded?'is-discarded':''}" data-choice="${escape(movie.slug)}" ${correct||wrong||discarded?`aria-label="${escape(movie.title)}: ${correct?'respuesta correcta':wrong?'tu respuesta, incorrecta':'opción descartada'}"`:''}><span aria-hidden="true">0${i+1}</span><span>${escape(movie.title)}${result ? ` <small>(${movie.year})</small>` : ''}</span><span aria-hidden="true">${correct?'✓':wrong?'✕':discarded?'−':'↗'}</span></button>`;
+			return `<button type="button" class="trivia-choice ${correct?'is-correct':wrong?'is-wrong':discarded?'is-discarded':''}" data-choice="${escape(movie.slug)}" ${correct||wrong||discarded?`aria-label="${escape(movie.title)}: ${correct?'respuesta correcta':wrong?'tu respuesta, incorrecta':'opción descartada'}"`:''}><span aria-hidden="true">0${i+1}</span>${question.presentation === 'posters' ? `<img class="trivia-choice-poster" src="${escape(movie.poster)}" alt="" width="120" height="180" draggable="false" decoding="async" />` : ''}<span class="trivia-choice-title">${escape(movie.title)}${result ? ` <small>(${movie.year})</small>` : ''}</span><span aria-hidden="true">${correct?'✓':wrong?'✕':discarded?'−':'↗'}</span></button>`;
 		}).join('');
 		node('hints-count').textContent = `${3-current.hintsUsed}/3`;
 		node('hint-status').textContent = current.discarded ? `Descartamos una opción. Te quedan ${3-current.hintsUsed} pistas.` : current.hintsUsed===3 ? 'Usaste las tres pistas. ¡Ahora va por tu cuenta!' : 'Descartá una opción incorrecta. Cada pista sin usar suma 250 puntos al final.';
@@ -156,11 +165,11 @@ function setupTrivia(root: HTMLElement) {
 		node('reveal').innerHTML = result ? `<article class="trivia-movie-reveal"><a href="${url(result.movie.slug)}" target="_blank" rel="noopener" aria-label="Ver ficha de ${escape(result.movie.title)} (otra pestaña)"><img src="${escape(result.movie.poster)}" alt="Póster de ${escape(result.movie.title)}" width="180" height="270" /></a><div><span class="trivia-kicker">${result.movie.year} / La respuesta</span><h3>${escape(result.movie.title)}</h3><p>${escape(result.fact)}</p><a href="${url(result.movie.slug)}" target="_blank" rel="noopener">Ver ficha ↗<span class="u-visually-hidden"> (otra pestaña)</span></a></div></article>` : '<div class="trivia-reveal-empty"><span aria-hidden="true">?</span><p class="trivia-kicker">Detrás de la respuesta</p><h3>Una peli para tu lista.</h3><p>Contestá y acá aparece su ficha. Capaz ya tenés plan para esta noche.</p></div>';
 		node('next').hidden = current.phase !== 'review'; updateButtons();
 		if (current.phase === 'question') { tick(); timer = setInterval(tick,100); if(changed) focus('question'); }
-		else { node('clock').classList.remove('is-urgent'); node('clock').setAttribute('aria-label','Reloj detenido'); node('seconds').textContent=String(Math.ceil(result.remainingMs/1000)); node('clock').style.setProperty('--time',String(result.remainingMs/20000)); focus('next'); }
+		else { node('clock').classList.remove('is-urgent'); node('clock').setAttribute('aria-label','Reloj detenido'); node('seconds').textContent=String(Math.ceil(result.remainingMs/1000)); node('clock').style.setProperty('--time',String(result.remainingMs/((current.roundSeconds ?? TRIVIA_SECONDS)*1000))); focus('next'); }
 	}
 	function tick() {
 		if (!game || game.phase !== 'question') return;
-		const left=Math.max(0,deadline-performance.now()); node('seconds').textContent=String(Math.ceil(left/1000)); node('clock').style.setProperty('--time',String(left/(TRIVIA_SECONDS*1000)));
+		const left=Math.max(0,deadline-performance.now()); node('seconds').textContent=String(Math.ceil(left/1000)); node('clock').style.setProperty('--time',String(left/((game.roundSeconds ?? TRIVIA_SECONDS)*1000)));
 		node('clock').classList.toggle('is-urgent',left<=5000); node('clock').setAttribute('aria-label',`${Math.ceil(left/1000)} segundos restantes`);
 		if (!left && !busy) void action('answer_trivia_question',{p_choice:null});
 	}

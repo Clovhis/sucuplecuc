@@ -5,10 +5,10 @@ Ruta: `/juegos/trivia/`. Acceso desde el home junto al simulador.
 ## Juego
 
 - Perfil obligatorio: nickname, nacionalidad y edad entera de 1 a 120. El nickname se reserva en Supabase para una identidad de Auth, persistida en este navegador. Una identidad tiene un jugador y un apodo fijo; puede actualizar nacionalidad y edad para partidas futuras.
-- 20 preguntas con películas distintas, tres opciones por pregunta y 20 segundos. Después de responder se revela la película correcta, explicación y ficha en otra pestaña. El avance a la próxima pregunta es manual.
+- 20 preguntas con películas distintas, tres opciones por pregunta y 25 segundos. Después de responder se revela la película correcta, explicación y ficha en otra pestaña. El avance a la próxima pregunta es manual.
 - Retratos circulares de 72 × 72 px, nombre y rol para las personas mencionadas. Fotos locales de `people.json`, con prioridad por nombre exacto y aliases explícitos; iniciales si una imagen no carga. Se revisaron los retratos de Robert Mitchum y Charles Laughton y el alias de F. W. Murnau.
 - Tres pistas para toda la partida, máximo una por pregunta. Cada una descarta una opción incorrecta sin detener el reloj. Cada pista guardada suma 250 puntos al final.
-- Acierto: `1000 + floor(milisegundos_restantes / 100)`, hasta 1200 puntos. Error o vencimiento: cero. Bonus final: `(3 - pistas_usadas) * 250`. Máximo: 24.750. Nota: `max(1, puntos / 2475)`, con un decimal y techo 10.
+- Acierto: `1000 + floor(milisegundos_restantes / 125)`, hasta 1200 puntos. Error o vencimiento: cero. Bonus final: `(3 - pistas_usadas) * 250`. Máximo: 24.750. Nota: `max(1, puntos / 2475)`, con un decimal y techo 10.
 - El resumen conserva las 20 preguntas, elecciones, respuestas, películas y enlaces. El ranking muestra una entrada por jugador, con su mejor partida, bandera SVG local, país y edad declarada en su perfil. Una partida peor no baja su récord. Las banderas usan los mismos recursos que el simulador; `node scripts/sync-country-flags.mjs` completa todas las nacionalidades del formulario.
 - Teclas 1/2/3, controles con foco, mensajes accesibles y respeto por `prefers-reduced-motion`.
 
@@ -83,3 +83,15 @@ No aceptar ternas como «Superman salva el mundo: X-Men / X-Men 2 / Superman» n
 - `npm run audit:trivia` examina **cada pregunta aceptada** y genera `test-results/trivia-question-audit.json`, con la terna completa y los candidatos rechazados. Forma parte de `test:trivia`, por lo que CI vuelve a ejecutarla. La auditoría automática verifica reglas explícitas; la dificultad y toda ambigüedad semántica siguen admitiendo revisión editorial.
 
 La comparación de dirección descompone las codirecciones y descarta cualquier distractor que comparta actor y un director de la pista, aunque su ficha guarde una lista parcial o en otro orden. Se probaron todas las preguntas de dirección con esta condición adicional.
+
+## Ampliación y reloj — 28/10/2026
+
+Las partidas nuevas tienen 25 segundos por pregunta. `trivia_25_seconds.sql` agrega una duración por partida y actualiza las tres funciones de estado, corrección y avance. Las partidas anteriores conservan 20 segundos y su fórmula original; no se cambian preguntas, respuestas, plazos ni récords existentes. El bonus de rapidez se normaliza a 200 puntos para ambas duraciones, manteniendo el máximo de 24.750. La migración es transaccional y repetible; sus funciones deben coincidir con `trivia_sessions.sql`.
+
+El banco incorpora consignas originales en `trivia-clues.ts`: tres pistas, objetos, lugares y conflictos. También agrega parejas del reparto secundario y una presentación con tres afiches para parte de las historias. Los afiches usan los pósters locales existentes; las tres opciones muestran título legible incluso sin imagen, admiten teclado y pistas. La mezcla equilibra los estilos narrativos dentro de los doce lugares de historias. No se relajan los requisitos de distractores para sumar preguntas.
+
+La pista de Justice League se reescribió en español. Las explicaciones narrativas ya no publican la sinopsis completa sin filtrar. `triviaHasEnglishProse` detecta acumulaciones de palabras funcionales inglesas y las rechaza al generar y auditar; admite nombres propios y títulos originales. Es una regla preventiva y no un clasificador universal de idiomas.
+
+Mientras una pregunta está activa, su panel impide selección, arrastre, copia y menú contextual. La protección se retira al responder y no afecta formularios, resumen ni ranking. El texto sigue disponible para lectores de pantalla; no se bloquean teclas globales, traducción ni navegación. Es una fricción para copiar y pegar: no puede impedir capturas, herramientas de desarrollo o una consulta desde otro dispositivo. La protección efectiva del puntaje sigue siendo el plazo y la corrección del servidor, sin soluciones ni preguntas futuras en la respuesta pública.
+
+Para actualizar una instalación existente: aplicar `supabase/sql/trivia_25_seconds.sql`, sincronizar el banco con `node --experimental-strip-types scripts/sync-trivia-bank.mjs --apply` y publicar el frontend. Los snapshots de las partidas empezadas se conservan. `tests/e2e/trivia-game.spec.ts` recorre afiches, anchos de 320 a 1440 px, teclado, pistas, respuesta incorrecta, partida completa, resumen, copia bloqueada y reloj de partidas anteriores. Las RPC se simulan en esas pruebas para no agregar jugadores ni puntajes públicos.

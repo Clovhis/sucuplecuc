@@ -29,6 +29,8 @@ try {
  assert.equal(await rpc(b,'trivia_nickname_available',{p_name:name.toLowerCase()}),false);
  await assert.rejects(rpc(b,'claim_trivia_player',{p_name:name,p_country:'UY',p_age:20}),/nickname unavailable/);
  let game=await rpc(a,'start_trivia_game');
+ assert.equal(game.roundSeconds,25);
+ assert.ok(game.deadlineMs-game.serverNowMs>24000 && game.deadlineMs-game.serverNowMs<=25000);
  assert.equal(game.question.id,`${game.id}:0`);assert.equal(game.question.answer,undefined);assert.equal(game.question.fact,undefined);
  await assert.rejects(rpc(b,'get_trivia_game',{p_session_id:game.id}),/game not found/);
  const hidden=await a.from('trivia_questions').select('id').limit(1);assert.ok(hidden.error);
@@ -37,7 +39,19 @@ try {
  const chosen=game.question.options.find(option=>option.slug!==hint.discarded).slug;
  game=await rpc(a,'answer_trivia_question',{p_session_id:game.id,p_round:0,p_choice:chosen});assert.equal(game.phase,'review');
  const duplicate=await rpc(a,'answer_trivia_question',{p_session_id:game.id,p_round:0,p_choice:chosen});assert.equal(duplicate.score,game.score);assert.equal(duplicate.answers.length,1);
+ let next=await rpc(a,'next_trivia_question',{p_session_id:game.id,p_round:0});
+ assert.equal(next.roundSeconds,25);assert.ok(next.deadlineMs-next.serverNowMs>24000 && next.deadlineMs-next.serverNowMs<=25000);
  const fake=await a.rpc('submit_trivia_high_score',{p_session_id:game.id,p_player_id:game.player.id,p_player_name:name,p_country_code:'AR',p_age:30,p_answers:Array.from({length:20},()=>({correct:true,remaining_ms:20000})),p_hints_used:0});assert.ok(fake.error);
+ const snapshots=await query('select questions from public.trivia_games where id=$1',[game.id]);
+ const posterRound=snapshots[0].questions.findIndex((q,index)=>index>0 && q.presentation==='posters');
+ assert.ok(posterRound>0,'The real server deck must preserve poster presentation metadata.');
+ while(next.round<posterRound){
+  await rpc(a,'answer_trivia_question',{p_session_id:game.id,p_round:next.round,p_choice:next.question.options[0].slug});
+  next=await rpc(a,'next_trivia_question',{p_session_id:game.id,p_round:next.round});
+ }
+ assert.equal(next.question.presentation,'posters');assert.ok(next.question.options.every(movie=>movie.poster.startsWith('/assets/posters/')));
+ assert.equal(next.question.answer,undefined);assert.equal(next.question.fact,undefined);
+ console.log('Live poster RPC passed: private bank metadata reaches the active question with three local posters and no revealed solution.');
  console.log('Live JWT smoke passed: unique nickname, owner isolation, hidden answers, server hint, idempotent answer, fake-score endpoint denied.');
 } finally {
  if(ids.length){

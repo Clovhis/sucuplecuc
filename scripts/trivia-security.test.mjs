@@ -33,6 +33,8 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   assert.equal(await call('trivia_nickname_available',['Natalia']),true);
   await assert.rejects(call('claim_trivia_player',['OtraButaca','AR',30]),/nickname belongs/);
   let game=await call('start_trivia_game');
+  assert.equal(game.roundSeconds,25);
+  assert.ok(game.deadlineMs-game.serverNowMs>24000 && game.deadlineMs-game.serverNowMs<=25000);
   assert.equal(game.question.answer,undefined);assert.equal(game.question.fact,undefined);assert.equal(game.questions,undefined);assert.equal(game.question.options.length,3);
   assert.equal(game.question.id,`${game.id}:0`);
   const serverQuestions=(await admin("select questions from public.trivia_games where id=$1",[game.id])).rows[0].questions;
@@ -61,6 +63,7 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   const score=game.score;
   const duplicate=await call('answer_trivia_question',[game.id,0,'wrong-a']);assert.equal(duplicate.score,score);assert.equal(duplicate.answers.length,1);
   game=await call('next_trivia_question',[game.id,0]);const deadline=game.deadlineMs;
+  assert.ok(game.deadlineMs-game.serverNowMs>24000 && game.deadlineMs-game.serverNowMs<=25000);
   assert.equal((await call('next_trivia_question',[game.id,0])).deadlineMs,deadline);
   await assert.rejects(call('answer_trivia_question',[game.id,0,firstAnswer]),/stale question/);
   // Set the trusted clock deadline as administrator; a client cannot do this.
@@ -102,6 +105,34 @@ test('trivia online: identidad, apodo único, respuestas privadas, reloj, pistas
   for(let i=0;i<3;i++) await call('start_trivia_game');
   await assert.rejects(call('start_trivia_game'),/too many games/);
   await admin("select 1");
+  // Emulate a pre-upgrade database with active 20-second snapshots, then upgrade twice.
+  await db.exec('alter table public.trivia_games drop column round_seconds;');
+  const preserved=(await db.query('select id,questions,answers,score,deadline from public.trivia_games order by id')).rows;
+  const migration=readFileSync(new URL('../supabase/sql/trivia_25_seconds.sql',import.meta.url),'utf8');
+  const canonical=readFileSync(new URL('../supabase/sql/trivia_sessions.sql',import.meta.url),'utf8');
+  for(const name of ['trivia_game_state','answer_trivia_question','next_trivia_question']) {
+   const start=canonical.indexOf(`create or replace function public.${name}(`);
+   assert.ok(migration.includes(canonical.slice(start,canonical.indexOf('\n$$;',start)+4)),name);
+  }
+  for(let i=0;i<2;i++) await db.exec(migration);
+  assert.deepEqual((await db.query('select id,questions,answers,score,deadline from public.trivia_games order by id')).rows,preserved);
+  assert.ok((await db.query('select round_seconds from public.trivia_games')).rows.every(row=>row.round_seconds===20));
+  await user(C);
+  let legacy=await call('get_trivia_game');
+  assert.equal(legacy.roundSeconds,20);
+  await admin("update public.trivia_games set deadline=clock_timestamp()+interval '10 seconds' where id=$1",[legacy.id]);await user(C);
+  const oldCorrect=(await admin("select questions->round->'answer'->>'slug' as answer from public.trivia_games where id=$1",[legacy.id])).rows[0].answer;await user(C);
+  legacy=await call('answer_trivia_question',[legacy.id,0,oldCorrect]);
+  assert.equal(legacy.answers[0].points,1000+Math.floor(legacy.answers[0].remainingMs/100));
+  legacy=await call('next_trivia_question',[legacy.id,0]);
+  assert.ok(legacy.deadlineMs-legacy.serverNowMs>19000 && legacy.deadlineMs-legacy.serverNowMs<=20000);
+  await user(B);
+  const fresh=await call('start_trivia_game');
+  assert.equal(fresh.roundSeconds,25);
+  const freshCorrect=(await admin("select questions->round->'answer'->>'slug' as answer from public.trivia_games where id=$1",[fresh.id])).rows[0].answer;await user(B);
+  const freshAnswered=await call('answer_trivia_question',[fresh.id,0,freshCorrect]);
+  assert.equal(freshAnswered.answers[0].points,1000+Math.floor(freshAnswered.answers[0].remainingMs/125));
+  await admin('select 1');
   // Reapplying migrations leaves identities, records and active games intact.
   await db.exec(readFileSync(new URL('../supabase/sql/trivia_sessions.sql',import.meta.url),'utf8'));
   assert.equal((await db.query('select count(*)::int as n from public.trivia_verified_scores')).rows[0].n,1);
