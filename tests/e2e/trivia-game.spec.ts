@@ -10,8 +10,9 @@ const movies = ['pulp-fiction-1994', 'reservoir-dogs-1992', 'fargo-secuestro-vol
 });
 
 async function mockGame(page: Page, seconds = 25) {
-	await page.clock.install();
-	await page.clock.pauseAt(new Date());
+	const clockStart = new Date('2026-01-01T12:00:00Z');
+	await page.clock.install({ time: clockStart });
+	await page.clock.pauseAt(new Date(clockStart.getTime() + 60000));
 	const id = '11111111-1111-4111-8111-111111111111';
 	await page.addInitScript(({ id }) => {
 		const encode = (value: object) => btoa(JSON.stringify(value)).replaceAll('+', '-').replaceAll('/', '_').replaceAll('=', '');

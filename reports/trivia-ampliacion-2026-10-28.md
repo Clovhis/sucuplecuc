@@ -56,3 +56,5 @@ El build anterior al cierre de las últimas correcciones fue verificado; el hook
 Banco privado sincronizado y comprobado: 3192 preguntas activas, 1624 películas como respuestas, 260 consignas con afiches y cero ocurrencias de la antigua consigna inglesa. La serialización administrativa conserva el indicador de afiches y tiene una prueba de regresión propia.
 
 Smoke con JWT reales aprobado: reloj inicial y siguiente de 25 segundos, indicador de afiches recibido por la RPC, tres pósters locales, apodo único, aislamiento de propietarios, soluciones ocultas, pistas del servidor, reintento idempotente y endpoint de score falso denegado. Las identidades temporales se eliminaron sin publicar puntajes de prueba.
+
+Cierre del árbol publicado: el pre-push completó el build y aprobó los controles de contenido, salida pública y las 5672 canónicas antes de enviar main. La suite sobre el bundle compilado aprobó 20/20 casos de juego en los cinco perfiles. El reloj simulado de la prueba usa una fecha fija y una pausa posterior para evitar una carrera de milisegundos en Firefox.
