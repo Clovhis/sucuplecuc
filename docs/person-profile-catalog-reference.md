@@ -729,7 +729,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Tom Hardy | `tom-hardy` | /personas/tom-hardy/ | Actor | 8 | 7 |
 | Tom Hiddleston | `tom-hiddleston` | /personas/tom-hiddleston/ | Actor | 5 | 7 |
 | Tom Holland | `tom-holland` | /personas/tom-holland/ | Actor | 8 | 7 |
-| Tom Skerritt | `tom-skerritt` | /personas/tom-skerritt/ | Actor | 4 | 3 |
+| Tom Skerritt | `tom-skerritt` | /personas/tom-skerritt/ | Actor | 4 | 4 |
 | Tomás Fonzi | `tomas-fonzi` | /personas/tomas-fonzi/ | Actor | 1 | 5 |
 | Tommy Lee Jones | `tommy-lee-jones` | /personas/tommy-lee-jones/ | Actor | 12 | 7 |
 | Toni Collette | `toni-collette` | /personas/toni-collette/ | Actriz | 5 | 7 |
