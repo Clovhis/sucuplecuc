@@ -8,16 +8,25 @@
 	"reviewPublishedAt": "2026-08-13",
 	"audienceRating": "ATP",
 	"category": "Ciencia ficcion",
-	"genres": ["Ciencia ficción", "Aventura", "Thriller"],
+	"genres": [
+		"Ciencia ficción",
+		"Aventura",
+		"Thriller"
+	],
 	"subgenres": [],
 	"country": "US",
 	"isArgentinian": false,
 	"poster": "assets/posters/2026/el-final-de-la-calle-oak-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "u4tgctWuHc0",
-	"releasePlatform": "Apple TV",
+	"releasePlatform": "Cine",
 	"director": "David Robert Mitchell",
-	"mainCast": ["Anne Hathaway", "Ewan McGregor", "Maisy Stella", "Christian Convery"],
+	"mainCast": [
+		"Anne Hathaway",
+		"Ewan McGregor",
+		"Maisy Stella",
+		"Christian Convery"
+	],
 	"productionCompany": "Warner Bros. Pictures, Bad Robot",
 	"cinepostaScore": 8,
 	"runtimeMinutes": 99,
@@ -34,18 +43,22 @@
 			"forFansOf": "Fans de David Robert Mitchell, de las aventuras de familia y de las películas que convierten una cuadra cotidiana en el borde de otro mundo.",
 			"notForYouIf": "Buscás horror puro, ciencia ficción explicada con rigor o cambios de tono más parejos. Su encanto está en la mezcla y en la rareza."
 		},
-	"becauseYouLiked": [
-		"looper-2012",
-		"el-dia-de-la-revelacion-2026"
-	],
-	"related": [
-		"buena-suerte-diviertete-no-mueras-2026",
-		"project-hail-mary-2026",
-		"avatar-the-way-of-water-2022",
-		"star-wars-episode-vii-the-force-awakens-2015"
-	]
-},
+		"becauseYouLiked": [
+			"looper-2012",
+			"el-dia-de-la-revelacion-2026"
+		],
+		"related": [
+			"buena-suerte-diviertete-no-mueras-2026",
+			"project-hail-mary-2026",
+			"avatar-the-way-of-water-2022",
+			"star-wars-episode-vii-the-force-awakens-2015"
+		]
+	},
 	"isPremiere": true,
 	"premiereLabel": "ESTRENO",
-	"review": "El final de la calle Oak encuentra una idea de alto impacto y la usa para hablar de algo bastante más chico: una familia que sólo puede sobrevivir si deja de funcionar como piezas aisladas. David Robert Mitchell filma el desconcierto con una mezcla atractiva de aventura, amenaza y humor doméstico. La película no siempre equilibra sus cambios de tono, pero la escala del barrio arrancado de su lugar tiene imágenes memorables y un pulso de matiné extraña que se disfruta en pantalla grande."
+	"review": "El final de la calle Oak encuentra una idea de alto impacto y la usa para hablar de algo bastante más chico: una familia que sólo puede sobrevivir si deja de funcionar como piezas aisladas. David Robert Mitchell filma el desconcierto con una mezcla atractiva de aventura, amenaza y humor doméstico. La película no siempre equilibra sus cambios de tono, pero la escala del barrio arrancado de su lugar tiene imágenes memorables y un pulso de matiné extraña que se disfruta en pantalla grande.",
+	"releasePlatforms": [
+		"Cine",
+		"Apple TV"
+	]
 }

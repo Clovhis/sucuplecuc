@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-29",
+  "candidates": 27,
+  "newEntries": 11,
+  "existingChanged": 16,
+  "catalog": 2418,
+  "cinemaClaims": 70,
+  "carousel": 70,
+  "retainedPeopleCredits": 118,
+  "uniquePeople": 116,
+  "checks": {
+    "content": "passed --skip-build; complete build separately",
+    "astro": "330 files, 0 errors, 0 warnings",
+    "people": "27/27 passed; 118 retained credit instances; 116 visually verified unique people",
+    "prebuild": "27 explicit candidates, no-skip YouTube, 0 errors; external search302 warnings retained",
+    "postbuild": "27 explicit candidates, community/reaction/cinema/streaming checks, 0 errors",
+    "build": "8122 pages, complete in 5m51s",
+    "publicOutput": "passed",
+    "sitemap": "5695 canonical pages",
+    "editorialCarouselE2E": "114 passed; desktop Chromium/mobile Chromium/mobile WebKit",
+    "genreE2E": "6 passed; Musical URL/multi-selection/removal and war editorial filter, same3projects",
+    "browser": "27 total/27 loaded/0bad; exact local poster currentSrc; 320px and1440px; carousel70; figures5;13fichelinks",
+    "genreManifest": "0/27 scoped matches in Guerra61results and Musical112results; no unintended inclusions",
+    "posterSourcePolicy": "passed",
+    "editorialMeters": "passed",
+    "peopleImageOptimization": "canonical optimization and check passed",
+    "whitespace": "git diff --check passed"
+  },
+  "nonblockingWarnings": [
+    "YouTube search HTTP302; bounded no-skip check passed oEmbed identity",
+    "Optional birth gaps: Jim Morrison skier, Lucas Vivo García Lagos, McKenna Harris, Sébastien Vaniček",
+    "Known person source hosts reviewed manually; small valid posters below preferred soft byte target"
+  ],
+  "publication": "Push/deploy exact-SHA and live proof reported in final response; this receipt covers pre-publication gates."
+}

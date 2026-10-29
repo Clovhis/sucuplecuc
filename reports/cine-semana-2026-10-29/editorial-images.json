@@ -1,0 +1,96 @@
+{
+  "sources": [
+    {
+      "key": "wildwood-a",
+      "url": "https://images.justwatch.com/backdrop/354684673/s1440/wildwood.webp",
+      "source": "https://www.justwatch.com/ar/pelicula/wildwood",
+      "width": 1440,
+      "height": 750,
+      "path": ".tmp\\cine29\\media\\wildwood-a.img"
+    },
+    {
+      "key": "sense",
+      "url": "https://www.tvinsider.com/wp-content/uploads/2026/10/SaS_FP_00046a-1420x798.jpg",
+      "source": "https://www.tvinsider.com/1295865/sense-and-sensibility-2026-movie-differences-explained-jane-austen/",
+      "width": 1420,
+      "height": 798,
+      "path": ".tmp\\cine29\\media\\sense.img"
+    },
+    {
+      "key": "fatherland",
+      "url": "https://static.wixstatic.com/media/defd87_c5a43afeba574374a1ec28efea9510ef~mv2.jpg",
+      "source": "https://www.voltapictures.ie/fatherland",
+      "width": 6571,
+      "height": 4928,
+      "path": ".tmp\\cine29\\media\\fatherland.img"
+    },
+    {
+      "key": "everest-b",
+      "url": "https://images.justwatch.com/backdrop/353819175/s1440/everest-la-otra-cara.webp",
+      "source": "https://www.justwatch.com/ar/pelicula/everest-la-otra-cara",
+      "width": 1440,
+      "height": 750,
+      "path": ".tmp\\cine29\\media\\everest-b.img"
+    },
+    {
+      "key": "pertenencias",
+      "url": "https://firebasestorage.googleapis.com/v0/b/constanza-dentista.firebasestorage.app/o/media%2Fbot%2F2026%2F10%2Ffb0bea35-4096-4caf-87f9-a9e76bd4e963-landscape16x9.webp?alt=media&token=a8c8209f-0e84-4f82-ad66-21a730aec3ff",
+      "source": "https://decineyseries.com.ar/cines/pertenencias-documental-gaumont-estreno",
+      "width": 1200,
+      "height": 675,
+      "path": ".tmp\\cine29\\media\\pertenencias.img"
+    }
+  ],
+  "images": [
+    {
+      "type": "image",
+      "src": "assets/editorial/estrenos-cines-29-octubre-2026/bosque.webp",
+      "srcSmall": "assets/editorial/estrenos-cines-29-octubre-2026/bosque-640.webp",
+      "width": 1280,
+      "height": 667,
+      "alt": "Un ave sobrevuela un valle cubierto de bosque y montañas bajo un cielo rosado.",
+      "caption": "El territorio de Wildwood: una invitación a cruzar el límite.",
+      "source": "https://www.justwatch.com/ar/pelicula/wildwood"
+    },
+    {
+      "type": "image",
+      "src": "assets/editorial/estrenos-cines-29-octubre-2026/hermanas.webp",
+      "srcSmall": "assets/editorial/estrenos-cines-29-octubre-2026/hermanas-640.webp",
+      "width": 1280,
+      "height": 719,
+      "alt": "Esmé Creed-Miles y Daisy Edgar-Jones conversan junto a una ventana en una habitación.",
+      "caption": "Marianne y Elinor: dos maneras de atravesar el mismo desamparo.",
+      "source": "https://www.tvinsider.com/1295865/sense-and-sensibility-2026-movie-differences-explained-jane-austen/"
+    },
+    {
+      "type": "image",
+      "src": "assets/editorial/estrenos-cines-29-octubre-2026/regreso.webp",
+      "srcSmall": "assets/editorial/estrenos-cines-29-octubre-2026/regreso-640.webp",
+      "width": 1280,
+      "height": 960,
+      "alt": "Dos personas conversan junto a un automóvil negro en una calle, en una imagen en blanco y negro.",
+      "caption": "El regreso de los Mann a Alemania. Foto: Agata Grzybowska.",
+      "source": "https://www.voltapictures.ie/fatherland"
+    },
+    {
+      "type": "image",
+      "src": "assets/editorial/estrenos-cines-29-octubre-2026/montana.webp",
+      "srcSmall": "assets/editorial/estrenos-cines-29-octubre-2026/montana-640.webp",
+      "width": 1280,
+      "height": 667,
+      "alt": "Un montañista con equipo amarillo y esquís rojos en la mochila asciende por una pendiente nevada.",
+      "caption": "La escala de una expedición y el esfuerzo de cada paso.",
+      "source": "https://www.justwatch.com/ar/pelicula/everest-la-otra-cara"
+    },
+    {
+      "type": "image",
+      "src": "assets/editorial/estrenos-cines-29-octubre-2026/pertenencias.webp",
+      "srcSmall": "assets/editorial/estrenos-cines-29-octubre-2026/pertenencias-640.webp",
+      "width": 1200,
+      "height": 675,
+      "alt": "Un grupo de mujeres posa en una escalera exterior junto a una pared de ladrillos.",
+      "caption": "Las protagonistas de Pertenencias. Material de prensa de Motoneta Cine y La Taguara Fílmica.",
+      "source": "https://decineyseries.com.ar/cines/pertenencias-documental-gaumont-estreno"
+    }
+  ]
+}

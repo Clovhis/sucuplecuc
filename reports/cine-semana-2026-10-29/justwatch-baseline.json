@@ -1,0 +1,1705 @@
+[
+  {
+    "slug": "avengers-endgame-2019",
+    "query": "Avengers: Endgame",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "annemarie-2026",
+    "query": "Annemarie",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Annemarie",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/annemarie",
+          "posterUrl": "/poster/344139058/{profile}/annemarie.{format}",
+          "externalIds": {
+            "imdbId": "tt42208838",
+            "tmdbId": "1661450"
+          },
+          "scoring": {
+            "imdbScore": null,
+            "imdbVotes": null,
+            "tmdbScore": null
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=591",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "adolescencia-sexo-y-muerte-en-campamento-miasma-2026",
+    "query": "Teenage Sex and Death at Camp Miasma",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Adolescencia, sexo y muerte en campamento Miasma",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/adolescencia-sexo-y-muerte-en-campamento-miasma",
+          "posterUrl": "/poster/346688893/{profile}/adolescencia-sexo-y-muerte-en-campamento-miasma.{format}",
+          "externalIds": {
+            "imdbId": "tt35298123",
+            "tmdbId": "1240889"
+          },
+          "scoring": {
+            "imdbScore": 6.5,
+            "imdbVotes": 24633,
+            "tmdbScore": 6.125
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://mubi.com/films/teenage-sex-and-death-at-camp-miasma",
+            "package": {
+              "clearName": "MUBI",
+              "technicalName": "mubi"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://mubi.com/films/teenage-sex-and-death-at-camp-miasma",
+            "package": {
+              "clearName": "MUBI",
+              "technicalName": "mubi"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://mubi.com/films/teenage-sex-and-death-at-camp-miasma",
+            "package": {
+              "clearName": "MUBI",
+              "technicalName": "mubi"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ff4e3b4e-4196-49f5-846e-f51dd4a1196c",
+            "package": {
+              "clearName": "MUBI Amazon Channel",
+              "technicalName": "amazonmubi"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ff4e3b4e-4196-49f5-846e-f51dd4a1196c",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ff4e3b4e-4196-49f5-846e-f51dd4a1196c",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/adolescencia-sexo-y-muerte-en-campamento-miasma/umc.cmc.qkgurxl0g39q5teqnt96a2xe?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6795283436",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/adolescencia-sexo-y-muerte-en-campamento-miasma/umc.cmc.qkgurxl0g39q5teqnt96a2xe?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6795283436",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/adolescencia-sexo-y-muerte-en-campamento-miasma/umc.cmc.qkgurxl0g39q5teqnt96a2xe?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6795283436",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "buenas-vibraciones-2026",
+    "query": "Pour le plaisir",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "clayface-2026",
+    "query": "Clayface",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Clayface",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/clayface",
+          "posterUrl": "/poster/344578533/{profile}/clayface.{format}",
+          "externalIds": {
+            "imdbId": "tt34890576",
+            "tmdbId": "1400940"
+          },
+          "scoring": {
+            "imdbScore": 7.6,
+            "imdbVotes": 26217,
+            "tmdbScore": 7.463
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=608",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/clayface",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5859-CLAYFACE---2D-SUB-SALA-ATMOS",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6209",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 5,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "cars-2006",
+    "query": "Cars",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "desobediente-2026",
+    "query": "Desobediente",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 1,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "coyote-vs-acme-2026",
+    "query": "Coyote vs. Acme",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "cordobeces-la-pelicula-2026",
+    "query": "Cordobeces, la película",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Cordobeces, la película",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/cordobeces-la-pelicula",
+          "posterUrl": "/poster/355358139/{profile}/cordobeces-la-pelicula.{format}",
+          "externalIds": {
+            "imdbId": null,
+            "tmdbId": "1792634"
+          },
+          "scoring": {
+            "imdbScore": null,
+            "imdbVotes": null,
+            "tmdbScore": null
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/cordobeses-la-pelicula",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5857-CORDOBECES-LA-PELICULA---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "el-corazon-de-la-bestia-2026",
+    "query": "Heart of the Beast",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "el-poder-de-la-red-2026",
+    "query": "The Social Reckoning",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "digger-2026",
+    "query": "Digger",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Digger",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/digger-2026",
+          "posterUrl": "/poster/347336632/{profile}/digger-2026.{format}",
+          "externalIds": {
+            "imdbId": "tt31450459",
+            "tmdbId": "1248832"
+          },
+          "scoring": {
+            "imdbScore": 7.5,
+            "imdbVotes": 44504,
+            "tmdbScore": 7.5
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=582",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/digger",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6101",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "el-tren-fluvial-2026",
+    "query": "El tren fluvial",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "El Tren Fluvial",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/el-tren-fluvial",
+          "posterUrl": "/poster/341444913/{profile}/el-tren-fluvial.{format}",
+          "externalIds": {
+            "imdbId": null,
+            "tmdbId": "1574074"
+          },
+          "scoring": {
+            "imdbScore": null,
+            "imdbVotes": null,
+            "tmdbScore": null
+          }
+        },
+        "offers": []
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "escondida-en-mi-cabeza-2026",
+    "query": "Escondida en mi cabeza",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Escondida en mi cabeza",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/escondida-en-mi-cabeza",
+          "posterUrl": "/poster/354752453/{profile}/escondida-en-mi-cabeza.{format}",
+          "externalIds": {
+            "imdbId": "tt38973867",
+            "tmdbId": "1760646"
+          },
+          "scoring": {
+            "imdbScore": 7.8,
+            "imdbVotes": 13,
+            "tmdbScore": null
+          }
+        },
+        "offers": []
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "escuela-de-monstruos-2026",
+    "query": "Monster Mia",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "hangar-rojo-2026",
+    "query": "Hangar Rojo",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Hangar rojo",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/hangar-rojo",
+          "posterUrl": "/poster/345464688/{profile}/hangar-rojo.{format}",
+          "externalIds": {
+            "imdbId": "tt37664358",
+            "tmdbId": "1563588"
+          },
+          "scoring": {
+            "imdbScore": 7.3,
+            "imdbVotes": 356,
+            "tmdbScore": 8.094
+          }
+        },
+        "offers": []
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "guardianes-del-museo-2-2026",
+    "query": "Cats in the Museum 2",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "heidi-el-rescate-del-lince-2025",
+    "query": "Heidi - Die Legende vom Luchs",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Heidi. El rescate del lince",
+          "originalReleaseYear": 2025,
+          "fullPath": "/ar/pelicula/heidi-to-the-rescue",
+          "posterUrl": "/poster/341406274/{profile}/heidi-to-the-rescue.{format}",
+          "externalIds": {
+            "imdbId": "tt14260876",
+            "tmdbId": "944931"
+          },
+          "scoring": {
+            "imdbScore": 6.4,
+            "imdbVotes": 338,
+            "tmdbScore": 7.1
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=612",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/heidi-el-rescate-del-lince",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/6046-HEIDI-EL-RESCATE-DEL-LINCE---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6224",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "la-caida-de-la-ballena-2026",
+    "query": "Whalefall",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Whalefall",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/whalefall",
+          "posterUrl": "/poster/355274354/{profile}/whalefall.{format}",
+          "externalIds": {
+            "imdbId": "tt28535715",
+            "tmdbId": "1255833"
+          },
+          "scoring": {
+            "imdbScore": 6.6,
+            "imdbVotes": 8940,
+            "tmdbScore": 6.628
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=605",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-caida-de-la-ballena",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5853-LA-CAIDA-DE-LA-BALLENA---2D-SUB",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6191",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 0,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "hope-el-primer-impacto-2026",
+    "query": "Hope",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Hope",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/hope-2026",
+          "posterUrl": "/poster/355781152/{profile}/hope-2026.{format}",
+          "externalIds": {
+            "imdbId": "tt27369017",
+            "tmdbId": "1058424"
+          },
+          "scoring": {
+            "imdbScore": 6.6,
+            "imdbVotes": 26042,
+            "tmdbScore": 6.756
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=594",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/hope-el-primer-impacto",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5829-HOPE-EL-PRIMER-IMPACTO---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6157",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "la-casa-2025",
+    "query": "La casa",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "La casa",
+          "originalReleaseYear": 2025,
+          "fullPath": "/ar/pelicula/la-casa-2025",
+          "posterUrl": "/poster/341578986/{profile}/la-casa-2025.{format}",
+          "externalIds": {
+            "imdbId": "tt39674284",
+            "tmdbId": "1568759"
+          },
+          "scoring": {
+            "imdbScore": 7.6,
+            "imdbVotes": 70,
+            "tmdbScore": 7
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=595",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-casa",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6156",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "la-isla-olvidada-2026",
+    "query": "Forgotten Island",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "La Isla Olvidada",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/la-isla-olvidada",
+          "posterUrl": "/poster/343755280/{profile}/la-isla-olvidada.{format}",
+          "externalIds": {
+            "imdbId": "tt36583977",
+            "tmdbId": "1465063"
+          },
+          "scoring": {
+            "imdbScore": 7.7,
+            "imdbVotes": 8067,
+            "tmdbScore": 7.563
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=580",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-isla-olvidada",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5782-LA-ISLA-OLVIDADA---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6082",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "la-invitacion-2026",
+    "query": "The Invite",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "la-noche-del-demonio-estan-entre-nosotros-2026",
+    "query": "Insidious: Out of the Further",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "la-vida-es-asi-2025",
+    "query": "La vita va così",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "la-odisea-2026",
+    "query": "The Odyssey",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "La Odisea",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/la-odisea",
+          "posterUrl": "/poster/347368881/{profile}/la-odisea.{format}",
+          "externalIds": {
+            "imdbId": "tt33764258",
+            "tmdbId": "1368337"
+          },
+          "scoring": {
+            "imdbScore": 8.4,
+            "imdbVotes": 538921,
+            "tmdbScore": 8
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=501",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-odisea",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5875",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "lo-dejamos-aca-2026",
+    "query": "Lo dejamos acá",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Lo dejamos acá",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/lo-dejamos-aca",
+          "posterUrl": "/poster/350170574/{profile}/lo-dejamos-aca.{format}",
+          "externalIds": {
+            "imdbId": "tt37027309",
+            "tmdbId": "1487317"
+          },
+          "scoring": {
+            "imdbScore": 6.2,
+            "imdbVotes": 2577,
+            "tmdbScore": 7.7
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.netflix.com/title/82027563",
+            "package": {
+              "clearName": "Netflix",
+              "technicalName": "netflix"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.netflix.com/title/82027563",
+            "package": {
+              "clearName": "Netflix",
+              "technicalName": "netflix"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "lo-que-trajo-la-tormenta-2025",
+    "query": "Lo que trajo la tormenta",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "madre-siniestra-2026",
+    "query": "Other Mommy",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "paw-patrol-la-dino-pelicula-2026",
+    "query": "PAW Patrol: The Dino Movie",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "pepita-la-pistolera-2026",
+    "query": "Pepita la pistolera",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Pepita la pistolera",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/pepita-la-pistolera-2026",
+          "posterUrl": "/poster/354171172/{profile}/pepita-la-pistolera-2026.{format}",
+          "externalIds": {
+            "imdbId": "tt29943166",
+            "tmdbId": "1634739"
+          },
+          "scoring": {
+            "imdbScore": 5.8,
+            "imdbVotes": 87,
+            "tmdbScore": null
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=558",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "que-dios-perdona-a-todos-2026",
+    "query": "...che Dio perdona a tutti",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Que Dios perdona a todos",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/que-dios-perdona-a-todos",
+          "posterUrl": "/poster/342473850/{profile}/que-dios-perdona-a-todos.{format}",
+          "externalIds": {
+            "imdbId": "tt38681843",
+            "tmdbId": "1508701"
+          },
+          "scoring": {
+            "imdbScore": 6.5,
+            "imdbVotes": 400,
+            "tmdbScore": 6.2
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=613",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/que-dios-perdona-a-todos",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6223",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "queres-ser-mi-hijo-2026",
+    "query": "¿Querés ser mi hijo?",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "¿Querés ser mi hijo?",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/queres-ser-mi-hijo-2026",
+          "posterUrl": "/poster/356292071/{profile}/queres-ser-mi-hijo-2026.{format}",
+          "externalIds": {
+            "imdbId": null,
+            "tmdbId": "1779106"
+          },
+          "scoring": {
+            "imdbScore": null,
+            "imdbVotes": null,
+            "tmdbScore": null
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=609",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/queres-ser-mi-hijo",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6203",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      },
+      {
+        "content": {
+          "title": "¿Querés ser mi hijo?",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/queres-ser-mi-hijo",
+          "posterUrl": "/poster/354950186/{profile}/queres-ser-mi-hijo.{format}",
+          "externalIds": {
+            "imdbId": "tt46665036",
+            "tmdbId": null
+          },
+          "scoring": {
+            "imdbScore": 4.9,
+            "imdbVotes": 33,
+            "tmdbScore": null
+          }
+        },
+        "offers": []
+      }
+    ],
+    "rejectedUnmatched": 6,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "resident-evil-noche-cero-2026",
+    "query": "Resident Evil: Night Zero",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Resident Evil: Noche Cero",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/resident-evil-2026",
+          "posterUrl": "/poster/354681229/{profile}/resident-evil-2026.{format}",
+          "externalIds": {
+            "imdbId": "tt35538033",
+            "tmdbId": "1423191"
+          },
+          "scoring": {
+            "imdbScore": 7.5,
+            "imdbVotes": 117825,
+            "tmdbScore": 7.314
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=569",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-resident-evil-noche-cero",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5773-RESIDENT-EVIL-NOCHE-CERO---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6060",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "spider-man-brand-new-day-2026",
+    "query": "Spider-Man: Brand New Day",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Spider-Man: Un nuevo día",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/untitled-spider-man-sequel",
+          "posterUrl": "/poster/346581334/{profile}/untitled-spider-man-sequel.{format}",
+          "externalIds": {
+            "imdbId": "tt22084616",
+            "tmdbId": "969681"
+          },
+          "scoring": {
+            "imdbScore": 7.9,
+            "imdbVotes": 368908,
+            "tmdbScore": 8.5
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=497",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/spider-man-un-nuevo-dia",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5845",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/spider-man-un-nuevo-dia/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "street-fighter-2026",
+    "query": "Street Fighter",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Street Fighter",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/street-fighter",
+          "posterUrl": "/poster/355511804/{profile}/street-fighter.{format}",
+          "externalIds": {
+            "imdbId": "tt27419420",
+            "tmdbId": "1153576"
+          },
+          "scoring": {
+            "imdbScore": 6.2,
+            "imdbVotes": 18660,
+            "tmdbScore": 6.4
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/street-fighter",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "su-propio-infierno-2026",
+    "query": "Her Private Hell",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Su propio infierno",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/su-propio-infierno",
+          "posterUrl": "/poster/355271878/{profile}/su-propio-infierno.{format}",
+          "externalIds": {
+            "imdbId": "tt36629665",
+            "tmdbId": "1469342"
+          },
+          "scoring": {
+            "imdbScore": 4.5,
+            "imdbVotes": 4866,
+            "tmdbScore": 5.434
+          }
+        },
+        "offers": []
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "susana-rinaldi-libre-2025",
+    "query": "Susana Rinaldi, libre",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "terror-en-el-amazonas-2026",
+    "query": "Beware Boiúna",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 5,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "the-others-2001",
+    "query": "The Others",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Los Otros",
+          "originalReleaseYear": 2001,
+          "fullPath": "/ar/pelicula/los-otros",
+          "posterUrl": "/poster/195436164/{profile}/los-otros.{format}",
+          "externalIds": {
+            "imdbId": "tt0230600",
+            "tmdbId": "1933"
+          },
+          "scoring": {
+            "imdbScore": 7.6,
+            "imdbVotes": 434916,
+            "tmdbScore": 7.619
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/1510039",
+            "package": {
+              "clearName": "MovistarTV",
+              "technicalName": "movistarplay"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://www.play.movistar.com.ar/details/movie/1510039",
+            "package": {
+              "clearName": "MovistarTV",
+              "technicalName": "movistarplay"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/6050-LOS-OTROS---2D-SUB-RE-ESTRENO",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6225",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b9910fc6-a054-4a5e-8eb1-601b3abf71f9",
+            "package": {
+              "clearName": "Cindie Amazon Channel",
+              "technicalName": "amazoncindie"
+            }
+          },
+          {
+            "monetizationType": "FLATRATE",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b9910fc6-a054-4a5e-8eb1-601b3abf71f9",
+            "package": {
+              "clearName": "Cindie Amazon Channel",
+              "technicalName": "amazoncindie"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-otros/umc.cmc.3nfj6rfei71wzouf2ih817r0t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1719102670",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-otros/umc.cmc.3nfj6rfei71wzouf2ih817r0t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1719102670",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "RENT",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-otros/umc.cmc.3nfj6rfei71wzouf2ih817r0t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1719102670",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b9910fc6-a054-4a5e-8eb1-601b3abf71f9",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b9910fc6-a054-4a5e-8eb1-601b3abf71f9",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b9910fc6-a054-4a5e-8eb1-601b3abf71f9",
+            "package": {
+              "clearName": "Amazon Video",
+              "technicalName": "amazon"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-otros/umc.cmc.3nfj6rfei71wzouf2ih817r0t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1719102670",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-otros/umc.cmc.3nfj6rfei71wzouf2ih817r0t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1719102670",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          },
+          {
+            "monetizationType": "BUY",
+            "standardWebURL": "https://tv.apple.com/ar/movie/los-otros/umc.cmc.3nfj6rfei71wzouf2ih817r0t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1719102670",
+            "package": {
+              "clearName": "Apple TV Store",
+              "technicalName": "itunes"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "tiempos-de-ilusion-2026",
+    "query": "Juste une illusion",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Tiempos de ilusión",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/tiempos-de-ilusion",
+          "posterUrl": "/poster/355804722/{profile}/tiempos-de-ilusion.{format}",
+          "externalIds": {
+            "imdbId": "tt36842933",
+            "tmdbId": "1404684"
+          },
+          "scoring": {
+            "imdbScore": 7.3,
+            "imdbVotes": 2053,
+            "tmdbScore": 7.295
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=607",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/tiempos-de-ilusion",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6193",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "tres-adioses-2025",
+    "query": "Tre ciotole",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Tres adioses",
+          "originalReleaseYear": 2025,
+          "fullPath": "/ar/pelicula/tres-adioses",
+          "posterUrl": "/poster/341586023/{profile}/tres-adioses.{format}",
+          "externalIds": {
+            "imdbId": "tt35705184",
+            "tmdbId": "1433339"
+          },
+          "scoring": {
+            "imdbScore": 7.1,
+            "imdbVotes": 1488,
+            "tmdbScore": 7
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=574",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "una-quinta-en-portugal-2025",
+    "query": "Una quinta portuguesa",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [],
+    "rejectedUnmatched": 8,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "verity-la-sombra-de-un-engano-2026",
+    "query": "Verity",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Verity. La sombra de un engaño",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/verity",
+          "posterUrl": "/poster/355274250/{profile}/verity.{format}",
+          "externalIds": {
+            "imdbId": "tt32261958",
+            "tmdbId": "1283515"
+          },
+          "scoring": {
+            "imdbScore": 6.1,
+            "imdbVotes": 23305,
+            "tmdbScore": 6.4
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=583",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/verity-la-sombra-de-un-engano",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5801-VERITY-LA-SOMBRA-DE-UN-ENGA-O---2D-CAST",
+            "package": {
+              "clearName": "Cinemacenter",
+              "technicalName": "cinemacenter"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6102",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  },
+  {
+    "slug": "yo-narciso-2026",
+    "query": "Yo, Narciso",
+    "country": "AR",
+    "checkedAt": "2026-10-29",
+    "matched": [
+      {
+        "content": {
+          "title": "Yo, Narciso",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/yo-narciso",
+          "posterUrl": "/poster/348271669/{profile}/yo-narciso.{format}",
+          "externalIds": {
+            "imdbId": "tt38573778",
+            "tmdbId": "1698443"
+          },
+          "scoring": {
+            "imdbScore": 5.6,
+            "imdbVotes": 194,
+            "tmdbScore": 6.5
+          }
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=529",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/yo-narciso",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5934",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ],
+    "rejectedUnmatched": 7,
+    "note": "Title/year match only; no platform mutation from unmatched results. Venue evidence controls Cine."
+  }
+]

@@ -1,0 +1,2407 @@
+[
+  {
+    "key": "wildwood",
+    "slug": "wildwood-el-bosque-salvaje-2026",
+    "path": "src/data/movies/wildwood-el-bosque-salvaje-2026.json",
+    "title": "Wildwood: El bosque salvaje",
+    "originalTitle": "Wildwood",
+    "year": 2026,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 1682009,
+      "title": "Wildwood",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt2056785",
+      "tmdbId": 791523
+    },
+    "justwatch": {
+      "content": {
+        "title": "Wildwood: El bosque salvaje",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/wildwood",
+        "posterUrl": "/poster/355774934/{profile}/wildwood.{format}",
+        "externalIds": {
+          "imdbId": "tt2056785",
+          "tmdbId": "791523"
+        },
+        "scoring": {
+          "imdbScore": 8.7,
+          "imdbVotes": 9080,
+          "tmdbScore": 8.6
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/wildwood-el-bosque-salvaje",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6252",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "sense",
+    "slug": "sensatez-y-sentimiento-2026",
+    "path": "src/data/movies/sensatez-y-sentimiento-2026.json",
+    "title": "Sensatez y sentimiento",
+    "originalTitle": "Sense and Sensibility",
+    "year": 2026,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 11009661,
+      "title": "Sense and Sensibility",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt13609648",
+      "tmdbId": 1503762
+    },
+    "justwatch": {
+      "content": {
+        "title": "Sentido y sensibilidad",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/sentido-y-sensibilidad-2026",
+        "posterUrl": "/poster/347189489/{profile}/sentido-y-sensibilidad-2026.{format}",
+        "externalIds": {
+          "imdbId": "tt13609648",
+          "tmdbId": "1503762"
+        },
+        "scoring": {
+          "imdbScore": 7.3,
+          "imdbVotes": 6390,
+          "tmdbScore": 7.329
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/sensatez-y-sentimiento",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6250",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "fatherland",
+    "slug": "tierra-de-mi-padre-2026",
+    "path": "src/data/movies/tierra-de-mi-padre-2026.json",
+    "title": "Tierra de mi padre",
+    "originalTitle": "Fatherland",
+    "year": 2026,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 1952974,
+      "title": "Fatherland",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt37304295",
+      "tmdbId": 1437696
+    },
+    "justwatch": {
+      "content": {
+        "title": "Fatherland",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/fatherland-2026",
+        "posterUrl": "/poster/344243242/{profile}/fatherland-2026.{format}",
+        "externalIds": {
+          "imdbId": "tt37304295",
+          "tmdbId": "1437696"
+        },
+        "scoring": {
+          "imdbScore": 7.3,
+          "imdbVotes": 3597,
+          "tmdbScore": 7.3
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/tierra-de-mi-padre",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6255",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "everest",
+    "slug": "everest-la-otra-cara-2026",
+    "path": "src/data/movies/everest-la-otra-cara-2026.json",
+    "title": "Everest: La otra cara",
+    "originalTitle": "Everest: The Other Side",
+    "year": 2026,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 11080252,
+      "title": "Everest: The Other Side",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt38691481",
+      "tmdbId": 1603262
+    },
+    "justwatch": {
+      "content": {
+        "title": "Everest: La otra cara",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/everest-la-otra-cara",
+        "posterUrl": "/poster/353819174/{profile}/everest-la-otra-cara.{format}",
+        "externalIds": {
+          "imdbId": "tt38691481",
+          "tmdbId": "1603262"
+        },
+        "scoring": {
+          "imdbScore": 7.5,
+          "imdbVotes": 79,
+          "tmdbScore": null
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/everest-la-otra-cara",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6235",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "lockbox",
+    "slug": "la-caja-del-demonio-2026",
+    "path": "src/data/movies/la-caja-del-demonio-2026.json",
+    "title": "La caja del demonio",
+    "originalTitle": "Lockbox",
+    "year": 2026,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 11008818,
+      "title": "Lockbox",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt37369064",
+      "tmdbId": 1500890
+    },
+    "justwatch": {
+      "content": {
+        "title": "La caja del demonio",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/lockbox",
+        "posterUrl": "/poster/355425662/{profile}/lockbox.{format}",
+        "externalIds": {
+          "imdbId": "tt37369064",
+          "tmdbId": "1500890"
+        },
+        "scoring": {
+          "imdbScore": 4.8,
+          "imdbVotes": 1154,
+          "tmdbScore": 6.3
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/la-caja-del-demonio",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "pinocho",
+    "slug": "pinocho-sin-cuerdas-2026",
+    "path": "src/data/movies/pinocho-sin-cuerdas-2026.json",
+    "title": "Pinocho sin cuerdas",
+    "originalTitle": "Pinocchio: Unstrung",
+    "year": 2026,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 1782549,
+      "title": "Pinocchio: Unstrung",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt30887701",
+      "tmdbId": 1232569
+    },
+    "justwatch": {
+      "content": {
+        "title": "Pinocho: Desatado",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/pinocho-sin-cuerdas",
+        "posterUrl": "/poster/347335570/{profile}/pinocho-sin-cuerdas.{format}",
+        "externalIds": {
+          "imdbId": "tt30887701",
+          "tmdbId": "1232569"
+        },
+        "scoring": {
+          "imdbScore": 5.4,
+          "imdbVotes": 5222,
+          "tmdbScore": 6.497
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-pinocho-sin-cuerdas",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6253",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "cena",
+    "slug": "la-cena-2025",
+    "path": "src/data/movies/la-cena-2025.json",
+    "title": "La cena",
+    "originalTitle": "La cena",
+    "year": 2025,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 1947513,
+      "title": "The Dinner",
+      "year": 2025,
+      "type": "movie",
+      "imdbId": "tt35657504",
+      "tmdbId": 1433680
+    },
+    "justwatch": {
+      "content": {
+        "title": "La cena",
+        "originalReleaseYear": 2025,
+        "fullPath": "/ar/pelicula/la-cena-2025",
+        "posterUrl": "/poster/341745780/{profile}/la-cena-2025.{format}",
+        "externalIds": {
+          "imdbId": "tt35657504",
+          "tmdbId": "1433680"
+        },
+        "scoring": {
+          "imdbScore": 6.6,
+          "imdbVotes": 3143,
+          "tmdbScore": 6.9
+        }
+      },
+      "offers": []
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "historias",
+    "slug": "4-historias-increibles-2026",
+    "path": "src/data/movies/4-historias-increibles-2026.json",
+    "title": "4 historias increíbles",
+    "originalTitle": "4 historias increíbles",
+    "year": 2026,
+    "action": "add",
+    "watchmode": {
+      "watchmodeId": 11232920,
+      "title": "4 historias increíbles",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt49441161",
+      "tmdbId": 1801998
+    },
+    "justwatch": {
+      "content": {
+        "title": "4 historias increíbles",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/4-historias-increibles",
+        "posterUrl": "/poster/355693847/{profile}/4-historias-increibles.{format}",
+        "externalIds": {
+          "imdbId": "tt49441161",
+          "tmdbId": "1801998"
+        },
+        "scoring": {
+          "imdbScore": null,
+          "imdbVotes": null,
+          "tmdbScore": null
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/4-historias-increibles",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6257",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "busan",
+    "slug": "estacion-zombie-2016",
+    "path": "src/data/movies/estacion-zombie-2016.json",
+    "title": "Estación zombie",
+    "originalTitle": "Train to Busan",
+    "year": 2016,
+    "action": "add-reissue",
+    "watchmode": {
+      "watchmodeId": 1438996,
+      "title": "Train to Busan",
+      "year": 2016,
+      "type": "movie",
+      "imdbId": "tt5700672",
+      "tmdbId": 396535
+    },
+    "justwatch": {
+      "content": {
+        "title": "Train to Busan",
+        "originalReleaseYear": 2016,
+        "fullPath": "/ar/pelicula/tren-a-busan",
+        "posterUrl": "/poster/9373937/{profile}/tren-a-busan.{format}",
+        "externalIds": {
+          "imdbId": "tt5700672",
+          "tmdbId": "396535"
+        },
+        "scoring": {
+          "imdbScore": 7.6,
+          "imdbVotes": 317930,
+          "tmdbScore": 7.751
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/80117824",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.netflix.com/title/80117824",
+          "package": {
+            "clearName": "Netflix",
+            "technicalName": "netflix"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9284ec13-0608-4a9d-b87a-35f2214d4cf8",
+          "package": {
+            "clearName": "Amazon Prime Video",
+            "technicalName": "amazonprimevideo"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9284ec13-0608-4a9d-b87a-35f2214d4cf8",
+          "package": {
+            "clearName": "Amazon Prime Video",
+            "technicalName": "amazonprimevideo"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6256",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/estacion-zombie/umc.cmc.74kcjars4r3m6bliewisxh4dr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1187366497",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/estacion-zombie/umc.cmc.74kcjars4r3m6bliewisxh4dr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1187366497",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/estacion-zombie/umc.cmc.74kcjars4r3m6bliewisxh4dr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1187366497",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/estacion-zombie/umc.cmc.74kcjars4r3m6bliewisxh4dr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1187366497",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "carrie",
+    "slug": "carrie-1976",
+    "path": "src/data/movies/carrie-1976.json",
+    "title": "Carrie",
+    "originalTitle": "Carrie",
+    "year": 1976,
+    "action": "add-reissue",
+    "watchmode": {
+      "watchmodeId": 168017,
+      "title": "Carrie",
+      "year": 1976,
+      "type": "movie",
+      "imdbId": "tt0074285",
+      "tmdbId": 7340
+    },
+    "justwatch": {
+      "content": {
+        "title": "Carrie. Un extraño presentimiento",
+        "originalReleaseYear": 1976,
+        "fullPath": "/ar/pelicula/carrie-1976",
+        "posterUrl": "/poster/215009384/{profile}/carrie-1976.{format}",
+        "externalIds": {
+          "imdbId": "tt0074285",
+          "tmdbId": "7340"
+        },
+        "scoring": {
+          "imdbScore": 7.4,
+          "imdbVotes": 236775,
+          "tmdbScore": 7.3
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8f307ce3-ad92-4a89-a873-50c81766c649",
+          "package": {
+            "clearName": "Amazon Prime Video",
+            "technicalName": "amazonprimevideo"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8f307ce3-ad92-4a89-a873-50c81766c649",
+          "package": {
+            "clearName": "Amazon Prime Video",
+            "technicalName": "amazonprimevideo"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/21970947",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/21970947",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-carrie-1976",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8f307ce3-ad92-4a89-a873-50c81766c649",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8f307ce3-ad92-4a89-a873-50c81766c649",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/carrie-un-extrano-presentimiento/umc.cmc.vhhyrc7hj2kijqr4tyoz6lwl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A387099242",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/carrie-un-extrano-presentimiento/umc.cmc.vhhyrc7hj2kijqr4tyoz6lwl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A387099242",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/carrie-un-extrano-presentimiento/umc.cmc.vhhyrc7hj2kijqr4tyoz6lwl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A387099242",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/carrie-un-extrano-presentimiento/umc.cmc.vhhyrc7hj2kijqr4tyoz6lwl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A387099242",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8f307ce3-ad92-4a89-a873-50c81766c649",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8f307ce3-ad92-4a89-a873-50c81766c649",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "mama",
+    "slug": "mama-2013",
+    "path": "src/data/movies/mama-2013.json",
+    "title": "Mamá",
+    "originalTitle": "Mama",
+    "year": 2013,
+    "action": "add-reissue",
+    "watchmode": {
+      "watchmodeId": 1243832,
+      "title": "Mama",
+      "year": 2013,
+      "type": "movie",
+      "imdbId": "tt2023587",
+      "tmdbId": 132232
+    },
+    "justwatch": {
+      "content": {
+        "title": "Mamá",
+        "originalReleaseYear": 2013,
+        "fullPath": "/ar/pelicula/mama",
+        "posterUrl": "/poster/24349450/{profile}/mama.{format}",
+        "externalIds": {
+          "imdbId": "tt2023587",
+          "tmdbId": "132232"
+        },
+        "scoring": {
+          "imdbScore": 6.2,
+          "imdbVotes": 202919,
+          "tmdbScore": 6.294
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/23591824",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/23591824",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://play.hbomax.com/show/60d4f234-0923-46e9-9143-8ae12f138e07?utm_source=universal_search",
+          "package": {
+            "clearName": "HBO Max",
+            "technicalName": "max"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://play.hbomax.com/show/60d4f234-0923-46e9-9143-8ae12f138e07?utm_source=universal_search",
+          "package": {
+            "clearName": "HBO Max",
+            "technicalName": "max"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-mama-2013",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eaa9f704-e492-737c-3304-fe4eb2152b09",
+          "package": {
+            "clearName": "Universal+ Amazon Channel",
+            "technicalName": "amazonuniversalplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eaa9f704-e492-737c-3304-fe4eb2152b09",
+          "package": {
+            "clearName": "Universal+ Amazon Channel",
+            "technicalName": "amazonuniversalplus"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eaa9f704-e492-737c-3304-fe4eb2152b09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eaa9f704-e492-737c-3304-fe4eb2152b09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/mama/umc.cmc.6yjyyvwv339eqnsgigz40g63j?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A603011462",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/mama/umc.cmc.6yjyyvwv339eqnsgigz40g63j?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A603011462",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eaa9f704-e492-737c-3304-fe4eb2152b09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eaa9f704-e492-737c-3304-fe4eb2152b09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/mama/umc.cmc.6yjyyvwv339eqnsgigz40g63j?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A603011462",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/mama/umc.cmc.6yjyyvwv339eqnsgigz40g63j?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A603011462",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "bruja",
+    "slug": "la-bruja-2015",
+    "path": "src/data/movies/la-bruja-2015.json",
+    "title": "La bruja",
+    "originalTitle": "The Witch",
+    "year": 2015,
+    "action": "revalidate-reissue",
+    "justwatch": {
+      "content": {
+        "title": "La bruja",
+        "originalReleaseYear": 2015,
+        "fullPath": "/ar/pelicula/la-bruja",
+        "posterUrl": "/poster/238850846/{profile}/la-bruja.{format}",
+        "externalIds": {
+          "imdbId": "tt4263482",
+          "tmdbId": "310131"
+        },
+        "scoring": {
+          "imdbScore": 7,
+          "imdbVotes": 363094,
+          "tmdbScore": 7.008
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/18864850",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/19440186",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/19440186",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://www.play.movistar.com.ar/details/movie/18864850",
+          "package": {
+            "clearName": "MovistarTV",
+            "technicalName": "movistarplay"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c421a45b-b18b-4c54-b4ec-39abb9afe92b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c421a45b-b18b-4c54-b4ec-39abb9afe92b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-bruja/umc.cmc.avhbnh188mvevcmjqmdukeam?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1079277502",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-bruja/umc.cmc.avhbnh188mvevcmjqmdukeam?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1079277502",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c421a45b-b18b-4c54-b4ec-39abb9afe92b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c421a45b-b18b-4c54-b4ec-39abb9afe92b",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-bruja/umc.cmc.avhbnh188mvevcmjqmdukeam?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1079277502",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-bruja/umc.cmc.avhbnh188mvevcmjqmdukeam?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1079277502",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "poltergeist",
+    "slug": "poltergeist-1982",
+    "path": "src/data/movies/poltergeist-1982.json",
+    "title": "Poltergeist",
+    "originalTitle": "Poltergeist",
+    "year": 1982,
+    "action": "revalidate-reissue",
+    "justwatch": {
+      "content": {
+        "title": "Poltergeist. Fenómenos extraños",
+        "originalReleaseYear": 1982,
+        "fullPath": "/ar/pelicula/poltergeist-fenomenos-extranos",
+        "posterUrl": "/poster/222300248/{profile}/poltergeist-fenomenos-extranos.{format}",
+        "externalIds": {
+          "imdbId": "tt0084516",
+          "tmdbId": "609"
+        },
+        "scoring": {
+          "imdbScore": 7.3,
+          "imdbVotes": 198548,
+          "tmdbScore": 7.167
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://play.hbomax.com/show/888bb1f8-35aa-4d10-97ba-0b3029aaa65b?utm_source=universal_search",
+          "package": {
+            "clearName": "HBO Max",
+            "technicalName": "max"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://play.hbomax.com/show/888bb1f8-35aa-4d10-97ba-0b3029aaa65b?utm_source=universal_search",
+          "package": {
+            "clearName": "HBO Max",
+            "technicalName": "max"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://play.hbomax.com/show/888bb1f8-35aa-4d10-97ba-0b3029aaa65b?utm_source=universal_search",
+          "package": {
+            "clearName": "HBO Max",
+            "technicalName": "max"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/poltergeist/umc.cmc.4cqxif55i6c4afe1n05plxnjj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A556212332",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/poltergeist/umc.cmc.4cqxif55i6c4afe1n05plxnjj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A556212332",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/poltergeist/umc.cmc.4cqxif55i6c4afe1n05plxnjj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A556212332",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/poltergeist/umc.cmc.4cqxif55i6c4afe1n05plxnjj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A556212332",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/poltergeist/umc.cmc.4cqxif55i6c4afe1n05plxnjj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A556212332",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/poltergeist/umc.cmc.4cqxif55i6c4afe1n05plxnjj?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A556212332",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "key": "escondida",
+    "slug": "escondida-en-mi-cabeza-2026",
+    "path": "src/data/movies/escondida-en-mi-cabeza-2026.json",
+    "title": "Escondida en mi cabeza",
+    "originalTitle": "Escondida en mi cabeza",
+    "year": 2026,
+    "action": "remove-cine",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "obsesion-2026",
+    "title": "Obsesión",
+    "current": [
+      "Otras plataformas"
+    ],
+    "venue": "Atlas Caballito",
+    "locality": "Caballito",
+    "date": "2026-10-29",
+    "time": "17:50",
+    "url": "https://agendadecine.com/pelicula/obsesion",
+    "key": "obsesion-2026",
+    "originalTitle": "Obsession",
+    "year": 2026,
+    "path": "src/data/movies/obsesion-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Obsession",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/obsesion-2026",
+        "externalIds": {
+          "imdbId": "tt37287335",
+          "tmdbId": "1339713"
+        },
+        "scoring": {
+          "imdbScore": 7.8,
+          "imdbVotes": 414087,
+          "tmdbScore": 8.169
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-obsesion",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.744991dc-8b35-4ceb-b982-0bcdd8b133eb",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.744991dc-8b35-4ceb-b982-0bcdd8b133eb",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.744991dc-8b35-4ceb-b982-0bcdd8b133eb",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/obsesion/umc.cmc.5n9tcj7azek0g9igds7ybcc0s?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895899231",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/obsesion/umc.cmc.5n9tcj7azek0g9igds7ybcc0s?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895899231",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/obsesion/umc.cmc.5n9tcj7azek0g9igds7ybcc0s?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895899231",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.744991dc-8b35-4ceb-b982-0bcdd8b133eb",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.744991dc-8b35-4ceb-b982-0bcdd8b133eb",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.744991dc-8b35-4ceb-b982-0bcdd8b133eb",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/obsesion/umc.cmc.5n9tcj7azek0g9igds7ybcc0s?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895899231",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/obsesion/umc.cmc.5n9tcj7azek0g9igds7ybcc0s?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895899231",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/obsesion/umc.cmc.5n9tcj7azek0g9igds7ybcc0s?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1895899231",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "RENT",
+      "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.744991dc-8b35-4ceb-b982-0bcdd8b133eb",
+      "package": {
+        "clearName": "Amazon Video",
+        "technicalName": "amazon"
+      },
+      "label": "Prime Video"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "backrooms-2026",
+    "title": "Backrooms",
+    "current": [
+      "Apple TV",
+      "Apple TV",
+      "Prime Video"
+    ],
+    "venue": "Cine Ambassador",
+    "locality": "Mar del Plata",
+    "date": "2026-10-29",
+    "time": "22:20",
+    "url": "https://agendadecine.com/pelicula/backrooms",
+    "key": "backrooms-2026",
+    "originalTitle": "Backrooms",
+    "year": 2026,
+    "path": "src/data/movies/backrooms-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Backrooms",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/backrooms",
+        "externalIds": {
+          "imdbId": "tt26657236",
+          "tmdbId": "1083381"
+        },
+        "scoring": {
+          "imdbScore": 6.7,
+          "imdbVotes": 238832,
+          "tmdbScore": 7.011
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6985058d-1cc5-42b8-a09c-75641fbdeab1",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6985058d-1cc5-42b8-a09c-75641fbdeab1",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "RENT",
+      "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+      "package": {
+        "clearName": "Apple TV Store",
+        "technicalName": "itunes"
+      },
+      "label": "Apple TV"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "toy-story-5-2026",
+    "title": "Toy Story 5",
+    "current": [
+      "Disney Plus"
+    ],
+    "venue": "Cinemacenter Bahía Blanca",
+    "locality": "Bahía Blanca",
+    "date": "2026-10-29",
+    "time": "16:40",
+    "url": "https://agendadecine.com/pelicula/toy-story-5",
+    "key": "toy-story-5-2026",
+    "originalTitle": "Toy Story 5",
+    "year": 2026,
+    "path": "src/data/movies/toy-story-5-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Toy Story 5",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/toy-story-5",
+        "externalIds": {
+          "imdbId": "tt29355505",
+          "tmdbId": "1084244"
+        },
+        "scoring": {
+          "imdbScore": 7.3,
+          "imdbVotes": 104227,
+          "tmdbScore": 8.3
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.disneyplus.com/browse/entity-c99203fc-eeff-4531-a35e-1f558bedce4f",
+          "package": {
+            "clearName": "Disney Plus",
+            "technicalName": "disneyplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.disneyplus.com/browse/entity-c99203fc-eeff-4531-a35e-1f558bedce4f",
+          "package": {
+            "clearName": "Disney Plus",
+            "technicalName": "disneyplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.disneyplus.com/browse/entity-c99203fc-eeff-4531-a35e-1f558bedce4f",
+          "package": {
+            "clearName": "Disney Plus",
+            "technicalName": "disneyplus"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5608-TOY-STORY-5---2D-CAST",
+          "package": {
+            "clearName": "Cinemacenter",
+            "technicalName": "cinemacenter"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "FLATRATE",
+      "standardWebURL": "https://www.disneyplus.com/browse/entity-c99203fc-eeff-4531-a35e-1f558bedce4f",
+      "package": {
+        "clearName": "Disney Plus",
+        "technicalName": "disneyplus"
+      },
+      "label": "Disney Plus"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "evil-dead-en-llamas-2026",
+    "title": "Evil Dead: En llamas",
+    "current": [
+      "HBO Max",
+      "HBO Max",
+      "Apple TV"
+    ],
+    "venue": "Atlas Caballito",
+    "locality": "Caballito",
+    "date": "2026-10-29",
+    "time": "15:10",
+    "url": "https://agendadecine.com/pelicula/evil-dead-en-llamas",
+    "key": "evil-dead-en-llamas-2026",
+    "originalTitle": "Evil Dead Burn",
+    "year": 2026,
+    "path": "src/data/movies/evil-dead-en-llamas-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Posesión infernal: En llamas",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/posesion-infernal-en-llamas",
+        "externalIds": {
+          "imdbId": "tt31170389",
+          "tmdbId": "1212763"
+        },
+        "scoring": {
+          "imdbScore": 6.2,
+          "imdbVotes": 61800,
+          "tmdbScore": 7.593
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://play.hbomax.com/show/632222f3-5968-4176-9266-6b68ec4eee79?utm_source=universal_search",
+          "package": {
+            "clearName": "HBO Max",
+            "technicalName": "max"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://play.hbomax.com/show/632222f3-5968-4176-9266-6b68ec4eee79?utm_source=universal_search",
+          "package": {
+            "clearName": "HBO Max",
+            "technicalName": "max"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=511",
+          "package": {
+            "clearName": "Atlas Cines",
+            "technicalName": "atlascines"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-evil-dead-en-llamas",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0db24700-aeb1-4429-bbc0-d03187e2259f",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0db24700-aeb1-4429-bbc0-d03187e2259f",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0db24700-aeb1-4429-bbc0-d03187e2259f",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/evil-dead-en-llamas/umc.cmc.5jxgo2xoyac10ub0zhixx3y4k?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6784863578",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/evil-dead-en-llamas/umc.cmc.5jxgo2xoyac10ub0zhixx3y4k?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6784863578",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/evil-dead-en-llamas/umc.cmc.5jxgo2xoyac10ub0zhixx3y4k?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6784863578",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "FLATRATE",
+      "standardWebURL": "https://play.hbomax.com/show/632222f3-5968-4176-9266-6b68ec4eee79?utm_source=universal_search",
+      "package": {
+        "clearName": "HBO Max",
+        "technicalName": "max"
+      },
+      "label": "HBO Max"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "minions-monstruos-2026",
+    "title": "Minions & Monstruos",
+    "current": [
+      "Apple TV",
+      "Apple TV",
+      "Flow"
+    ],
+    "venue": "Cinema Paradiso",
+    "locality": "La Plata",
+    "date": "2026-10-29",
+    "time": "12:00",
+    "url": "https://agendadecine.com/pelicula/minions-monstruos",
+    "key": "minions-monstruos-2026",
+    "originalTitle": "Minions & Monsters",
+    "year": 2026,
+    "path": "src/data/movies/minions-monstruos-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Minions y monstruos",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/minions-y-monstruos",
+        "externalIds": {
+          "imdbId": "tt32890033",
+          "tmdbId": "1315772"
+        },
+        "scoring": {
+          "imdbScore": 6.3,
+          "imdbVotes": 35822,
+          "tmdbScore": 7.569
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.422fdbd9-e606-47b8-946f-8bc55dcfaa09",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "RENT",
+      "standardWebURL": "https://tv.apple.com/ar/movie/minions--monstruos/umc.cmc.32e1ob3wfgxzlephbejpyvycu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6781935910",
+      "package": {
+        "clearName": "Apple TV Store",
+        "technicalName": "itunes"
+      },
+      "label": "Apple TV"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "los-colores-del-tiempo-2026",
+    "title": "Los colores del tiempo",
+    "current": [
+      "Otras plataformas"
+    ],
+    "venue": "Atlas Patio Bullrich",
+    "locality": "Retiro",
+    "date": "2026-10-29",
+    "time": "16:00",
+    "url": "https://agendadecine.com/pelicula/los-colores-del-tiempo",
+    "key": "los-colores-del-tiempo-2026",
+    "originalTitle": "La venue de l'avenir",
+    "year": 2025,
+    "path": "src/data/movies/los-colores-del-tiempo-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Los colores del tiempo",
+        "originalReleaseYear": 2025,
+        "fullPath": "/ar/pelicula/los-colores-del-tiempo",
+        "externalIds": {
+          "imdbId": "tt31411349",
+          "tmdbId": "1235304"
+        },
+        "scoring": {
+          "imdbScore": 7.2,
+          "imdbVotes": 5203,
+          "tmdbScore": 7.3
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=504",
+          "package": {
+            "clearName": "Atlas Cines",
+            "technicalName": "atlascines"
+          }
+        }
+      ]
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "el-final-de-la-calle-oak-2026",
+    "title": "El final de la calle Oak",
+    "current": [
+      "Apple TV"
+    ],
+    "venue": "Cinema San Martín",
+    "locality": "La Plata",
+    "date": "2026-10-29",
+    "time": "20:15",
+    "url": "https://agendadecine.com/pelicula/el-final-de-la-calle-oak",
+    "key": "el-final-de-la-calle-oak-2026",
+    "originalTitle": "The End of Oak Street",
+    "year": 2026,
+    "path": "src/data/movies/el-final-de-la-calle-oak-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "El final de Oak Street",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/flowervale-street",
+        "externalIds": {
+          "imdbId": "tt27165187",
+          "tmdbId": "1101383"
+        },
+        "scoring": {
+          "imdbScore": 6.2,
+          "imdbVotes": 86290,
+          "tmdbScore": 7.08
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=5929",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "RENT",
+      "standardWebURL": "https://tv.apple.com/ar/movie/el-final-de-la-calle-oak/umc.cmc.zgc43vpna42wfgfi645em0sm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6788867495",
+      "package": {
+        "clearName": "Apple TV Store",
+        "technicalName": "itunes"
+      },
+      "label": "Apple TV"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "scream-7-2026",
+    "title": "Scream 7",
+    "current": [
+      "Paramount Plus"
+    ],
+    "venue": "Cinemark Caballito",
+    "locality": "Caballito",
+    "date": "2026-10-31",
+    "time": "17:40",
+    "url": "https://agendadecine.com/pelicula/scream-7",
+    "key": "scream-7-2026",
+    "originalTitle": "Scream 7",
+    "year": 2026,
+    "path": "src/data/movies/scream-7-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Scream 7",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/scream-7",
+        "externalIds": {
+          "imdbId": "tt27047903",
+          "tmdbId": "1159559"
+        },
+        "scoring": {
+          "imdbScore": 5.5,
+          "imdbVotes": 71421,
+          "tmdbScore": 6.216
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.paramountplus.com/movies/scream-7/ALVE01KPZPWF2QE3F8QA428PX7WGCE?searchReferral=&amp;utm_source=publisher",
+          "package": {
+            "clearName": "Paramount Plus",
+            "technicalName": "paramountplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.paramountplus.com/movies/scream-7/ALVE01KPZPWF2QE3F8QA428PX7WGCE?searchReferral=&amp;utm_source=publisher",
+          "package": {
+            "clearName": "Paramount Plus",
+            "technicalName": "paramountplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Paramount+ Amazon Channel",
+            "technicalName": "amazonparamountplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Paramount+ Amazon Channel",
+            "technicalName": "amazonparamountplus"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/ts-2026-scream-7",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/scream-7/umc.cmc.5ixcl8t6tpioajy76jxjh31ro?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1874255137",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/scream-7/umc.cmc.5ixcl8t6tpioajy76jxjh31ro?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1874255137",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/scream-7/umc.cmc.5ixcl8t6tpioajy76jxjh31ro?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1874255137",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca2b77ec-3eae-489f-b28c-3dc98d189007",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/scream-7/umc.cmc.5ixcl8t6tpioajy76jxjh31ro?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1874255137",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/scream-7/umc.cmc.5ixcl8t6tpioajy76jxjh31ro?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1874255137",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/scream-7/umc.cmc.5ixcl8t6tpioajy76jxjh31ro?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1874255137",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "FLATRATE",
+      "standardWebURL": "https://www.paramountplus.com/movies/scream-7/ALVE01KPZPWF2QE3F8QA428PX7WGCE?searchReferral=&amp;utm_source=publisher",
+      "package": {
+        "clearName": "Paramount Plus",
+        "technicalName": "paramountplus"
+      },
+      "label": "Paramount Plus"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "el-diablo-viste-a-la-moda-2-2026",
+    "title": "El diablo viste a la moda 2",
+    "current": [
+      "Otras plataformas"
+    ],
+    "venue": "Cinema Pergamino",
+    "locality": "Pergamino",
+    "date": "2026-10-30",
+    "time": "22:00",
+    "url": "https://agendadecine.com/pelicula/el-diablo-viste-a-la-moda-2",
+    "key": "el-diablo-viste-a-la-moda-2-2026",
+    "originalTitle": "The Devil Wears Prada 2",
+    "year": 2026,
+    "path": "src/data/movies/el-diablo-viste-a-la-moda-2-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "El diablo viste de Prada 2",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/the-devil-wears-prada-2",
+        "externalIds": {
+          "imdbId": "tt33612209",
+          "tmdbId": "1314481"
+        },
+        "scoring": {
+          "imdbScore": 6.3,
+          "imdbVotes": 121989,
+          "tmdbScore": 7
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.disneyplus.com/browse/entity-34bc6b99-813f-4d5d-bbe7-f3099b45879b",
+          "package": {
+            "clearName": "Disney Plus",
+            "technicalName": "disneyplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.disneyplus.com/browse/entity-34bc6b99-813f-4d5d-bbe7-f3099b45879b",
+          "package": {
+            "clearName": "Disney Plus",
+            "technicalName": "disneyplus"
+          }
+        },
+        {
+          "monetizationType": "FLATRATE",
+          "standardWebURL": "https://www.disneyplus.com/browse/entity-34bc6b99-813f-4d5d-bbe7-f3099b45879b",
+          "package": {
+            "clearName": "Disney Plus",
+            "technicalName": "disneyplus"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "FLATRATE",
+      "standardWebURL": "https://www.disneyplus.com/browse/entity-34bc6b99-813f-4d5d-bbe7-f3099b45879b",
+      "package": {
+        "clearName": "Disney Plus",
+        "technicalName": "disneyplus"
+      },
+      "label": "Disney Plus"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "la-negociacion-2025",
+    "title": "La negociación",
+    "current": [
+      "Otras plataformas"
+    ],
+    "venue": "Cine Cosmos UBA",
+    "locality": "Balvanera",
+    "date": "2026-10-29",
+    "time": "15:05",
+    "url": "https://agendadecine.com/pelicula/la-negociacion",
+    "key": "la-negociacion-2025",
+    "originalTitle": "Dead Man's Wire",
+    "year": 2025,
+    "path": "src/data/movies/la-negociacion-2025.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Prime Crime: A True Story",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/prime-crime-a-true-story",
+        "externalIds": {
+          "imdbId": "tt15181326",
+          "tmdbId": "1263012"
+        },
+        "scoring": {
+          "imdbScore": 6.4,
+          "imdbVotes": 15363,
+          "tmdbScore": 6.536
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "RENT",
+      "standardWebURL": "https://tv.apple.com/ar/movie/la-negociacion/umc.cmc.63cu8sfx2xqbso5zv3ai3l38l?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6810129162",
+      "package": {
+        "clearName": "Apple TV Store",
+        "technicalName": "itunes"
+      },
+      "label": "Apple TV"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "quiero-tu-sexo-2026",
+    "title": "Quiero tu sexo",
+    "current": [
+      "Otras plataformas"
+    ],
+    "venue": "Cine Cosmos UBA",
+    "locality": "Balvanera",
+    "date": "2026-10-29",
+    "time": "19:05",
+    "url": "https://agendadecine.com/pelicula/quiero-tu-sexo",
+    "key": "quiero-tu-sexo-2026",
+    "originalTitle": "I Want Your Sex",
+    "year": 2026,
+    "path": "src/data/movies/quiero-tu-sexo-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Quiero Tu Sexo",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/quiero-tu-sexo",
+        "externalIds": {
+          "imdbId": "tt32332915",
+          "tmdbId": "1288059"
+        },
+        "scoring": {
+          "imdbScore": 5.8,
+          "imdbVotes": 8585,
+          "tmdbScore": 5.971
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=606",
+          "package": {
+            "clearName": "Atlas Cines",
+            "technicalName": "atlascines"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/quiero-tu-sexo",
+          "package": {
+            "clearName": "Cinemark",
+            "technicalName": "cinemark"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://www.cinemacenter.com.ar/ficha/5858-QUIERO-TU-SEXO---2D-SUB-SALA-GRAND-CRU",
+          "package": {
+            "clearName": "Cinemacenter",
+            "technicalName": "cinemacenter"
+          }
+        },
+        {
+          "monetizationType": "CINEMA",
+          "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6192",
+          "package": {
+            "clearName": "Showcase Cinemas",
+            "technicalName": "showcasecinemas"
+          }
+        }
+      ]
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "michael-2026",
+    "title": "Michael",
+    "current": [
+      "Apple TV"
+    ],
+    "venue": "Cinema Pergamino",
+    "locality": "Pergamino",
+    "date": "2026-10-30",
+    "time": "18:30",
+    "url": "https://agendadecine.com/pelicula/michael",
+    "key": "michael-2026",
+    "originalTitle": "Michael",
+    "year": 2026,
+    "path": "src/data/movies/michael-2026.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Michael",
+        "originalReleaseYear": 2026,
+        "fullPath": "/ar/pelicula/michael-2025-0",
+        "externalIds": {
+          "imdbId": "tt11378946",
+          "tmdbId": "936075"
+        },
+        "scoring": {
+          "imdbScore": 7.3,
+          "imdbVotes": 195985,
+          "tmdbScore": 8.598
+        }
+      },
+      "offers": [
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/michael/umc.cmc.655k6wal020m8folvcy526dff?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891848932",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/michael/umc.cmc.655k6wal020m8folvcy526dff?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891848932",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "RENT",
+          "standardWebURL": "https://tv.apple.com/ar/movie/michael/umc.cmc.655k6wal020m8folvcy526dff?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891848932",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e550f717-08ac-4492-b350-e06b87c1ad05",
+          "package": {
+            "clearName": "Amazon Video",
+            "technicalName": "amazon"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/michael/umc.cmc.655k6wal020m8folvcy526dff?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891848932",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/michael/umc.cmc.655k6wal020m8folvcy526dff?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891848932",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        },
+        {
+          "monetizationType": "BUY",
+          "standardWebURL": "https://tv.apple.com/ar/movie/michael/umc.cmc.655k6wal020m8folvcy526dff?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891848932",
+          "package": {
+            "clearName": "Apple TV Store",
+            "technicalName": "itunes"
+          }
+        }
+      ]
+    },
+    "selectedOffer": {
+      "monetizationType": "RENT",
+      "standardWebURL": "https://tv.apple.com/ar/movie/michael/umc.cmc.655k6wal020m8folvcy526dff?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891848932",
+      "package": {
+        "clearName": "Apple TV Store",
+        "technicalName": "itunes"
+      },
+      "label": "Apple TV"
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  },
+  {
+    "slug": "encantador-2025",
+    "title": "Encantador",
+    "current": [
+      "Otras plataformas"
+    ],
+    "venue": "Cine Teatro Pila",
+    "locality": "Pila",
+    "date": "2026-10-31",
+    "time": "19:00",
+    "url": "https://agendadecine.com/pelicula/encantador",
+    "key": "encantador-2025",
+    "originalTitle": "Encantador",
+    "year": 2025,
+    "path": "src/data/movies/encantador-2025.json",
+    "action": "restore-cine",
+    "justwatch": {
+      "content": {
+        "title": "Encantador",
+        "originalReleaseYear": 2025,
+        "fullPath": "/ar/pelicula/encantador",
+        "externalIds": {
+          "imdbId": "tt27673624",
+          "tmdbId": "1193950"
+        },
+        "scoring": {
+          "imdbScore": 5.2,
+          "imdbVotes": 74,
+          "tmdbScore": 2
+        }
+      },
+      "offers": []
+    },
+    "scoreDecision": "preserved: availability-only cartelera revalidation",
+    "checkedAt": "2026-10-29",
+    "justwatchCountry": "AR"
+  }
+]

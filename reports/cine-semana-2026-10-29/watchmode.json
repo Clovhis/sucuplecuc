@@ -1,0 +1,6014 @@
+[
+  {
+    "attempt": "watchmode-bts",
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados."
+  },
+  {
+    "attempt": "watchmode-busan",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt5700672&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1438996/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1438996,
+      "title": "Train to Busan",
+      "year": 2016,
+      "type": "movie",
+      "imdbId": "tt5700672",
+      "tmdbId": 396535
+    },
+    "metadata": {
+      "title": "Train to Busan",
+      "originalTitle": "부산행",
+      "englishTitle": "Train to Busan",
+      "year": 2016,
+      "originalLanguage": "ko",
+      "runtimeMinutes": 118,
+      "releaseDate": "2016-07-20",
+      "genres": [
+        "Action",
+        "Horror",
+        "Thriller",
+        "Adventure"
+      ],
+      "imdbId": "tt5700672",
+      "tmdbId": 396535,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=0_sV9luPnMk",
+      "similarWatchmodeTitleIds": [
+        145875,
+        1151070,
+        1153618,
+        1174979,
+        1259819,
+        1292691,
+        1339600,
+        1397596,
+        1563098,
+        1582652,
+        1612010,
+        1640441,
+        1712307,
+        1787897,
+        1873959,
+        1879819,
+        3153800,
+        3178195,
+        3190247,
+        3190441,
+        3197048,
+        3203243,
+        3249974,
+        3262115,
+        3277319
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7228538,
+          "name": "Jung Do-ahn",
+          "type": "Crew",
+          "role": "Special Effects Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71852028,
+          "name": "Rim Seung-hee",
+          "type": "Crew",
+          "role": "Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71988786,
+          "name": "Jang Young-gyu",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71989114,
+          "name": "Kwon Yoo-jin",
+          "type": "Crew",
+          "role": "Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72980152,
+          "name": "Kim Woo-taek",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73837564,
+          "name": "Yeon Sang-ho",
+          "type": "Crew",
+          "role": "Director, Adaptation",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74251299,
+          "name": "Lee Dong-ha",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 75469258,
+          "name": "Park Joo-suk",
+          "type": "Crew",
+          "role": "Writer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 76373185,
+          "name": "Huh Soo-young",
+          "type": "Crew",
+          "role": "Co-Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78953539,
+          "name": "Lee Hyung-deok",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78966079,
+          "name": "Choi Tae-young",
+          "type": "Crew",
+          "role": "Sound Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79007775,
+          "name": "Yang Jin-mo",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79012210,
+          "name": "Lee Hye-ran",
+          "type": "Crew",
+          "role": "Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79017613,
+          "name": "Kim Yeon-ho",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79048669,
+          "name": "Lee Mok-won",
+          "type": "Crew",
+          "role": "Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79050847,
+          "name": "Park Cheong-woo",
+          "type": "Crew",
+          "role": "Lighting Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79050848,
+          "name": "Jung Hoon",
+          "type": "Crew",
+          "role": "Grip",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79134796,
+          "name": "Kwak Tae-yong",
+          "type": "Crew",
+          "role": "Special Effects Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79425859,
+          "name": "Kim Ji-hyun",
+          "type": "Crew",
+          "role": "Concept Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79483386,
+          "name": "Lee Hee-eun",
+          "type": "Crew",
+          "role": "Special Effects Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79483387,
+          "name": "Gang Hye-yeong",
+          "type": "Crew",
+          "role": "Sound Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79510683,
+          "name": "Kim Chan-soo",
+          "type": "Crew",
+          "role": "CG Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79512855,
+          "name": "Lee Eun-ju",
+          "type": "Crew",
+          "role": "Makeup & Hair",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79530987,
+          "name": "Kim Ka-ryoon",
+          "type": "Crew",
+          "role": "Special Effects Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79530992,
+          "name": "Hwang Hyo-kyun",
+          "type": "Crew",
+          "role": "Special Effects Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79530996,
+          "name": "Kang Bong-sung",
+          "type": "Crew",
+          "role": "Production Sound Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79530997,
+          "name": "Jung Hwang-soo",
+          "type": "Crew",
+          "role": "Visual Effects Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79530998,
+          "name": "Marie Marolle",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79531000,
+          "name": "Kevin Kang",
+          "type": "Crew",
+          "role": "Colorist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79591367,
+          "name": "Lee Ji-hoon",
+          "type": "Crew",
+          "role": "Camera Operator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79607954,
+          "name": "Im Kyung-wook",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79708377,
+          "name": "Park Kyung-soo",
+          "type": "Crew",
+          "role": "Special Effects Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79729610,
+          "name": "Kim Byung-in",
+          "type": "Crew",
+          "role": "ADR Recordist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79730076,
+          "name": "Song Min-seok",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79738241,
+          "name": "Daniel Son",
+          "type": "Crew",
+          "role": "VFX Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79785609,
+          "name": "Jin Hye-jung",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79900398,
+          "name": "Ryu Yeon",
+          "type": "Crew",
+          "role": "Digital Intermediate Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79994584,
+          "name": "Min Hong-nam",
+          "type": "Crew",
+          "role": "Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710106073,
+          "name": "Oh Jin-seok",
+          "type": "Crew",
+          "role": "Props",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710163189,
+          "name": "Heo Myeong-haeng",
+          "type": "Crew",
+          "role": "Fight Choreographer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710167622,
+          "name": "Kim Seon-wung",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710415943,
+          "name": "Lee Byeong-ju",
+          "type": "Crew",
+          "role": "VFX Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710417537,
+          "name": "Kang Young-muk",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710542975,
+          "name": "Yoo Mi-jin",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710849148,
+          "name": "Jeong Jin-geun",
+          "type": "Crew",
+          "role": "Martial Arts Choreographer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710884129,
+          "name": "Jang Hee-sun",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711594217,
+          "name": "Yun Min-gyu",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711594925,
+          "name": "Song Gyeong-seop",
+          "type": "Crew",
+          "role": "Still Photographer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711595016,
+          "name": "Kim Ho-sik",
+          "type": "Crew",
+          "role": "Special Effects Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711595033,
+          "name": "Shim Chul-min",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711612996,
+          "name": "Kim Dong-hyo",
+          "type": "Crew",
+          "role": "Lighting Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71889642,
+          "name": "Kim Su-an",
+          "type": "Cast",
+          "role": "Soo-ahn",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71987354,
+          "name": "Gong Yoo",
+          "type": "Cast",
+          "role": "Seok-woo",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71989156,
+          "name": "Jung Yu-mi",
+          "type": "Cast",
+          "role": "Sung-gyeong",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 72242452,
+          "name": "Don Lee",
+          "type": "Cast",
+          "role": "Sang-hwa",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 75978960,
+          "name": "Choi Woo-shik",
+          "type": "Cast",
+          "role": "Yeong-gook",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 72869151,
+          "name": "An So-hee",
+          "type": "Cast",
+          "role": "Jin-hee",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 7278522,
+          "name": "Kim Eui-sung",
+          "type": "Cast",
+          "role": "Yong-suk",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 78937094,
+          "name": "Ye Su-jeong",
+          "type": "Cast",
+          "role": "In-gil",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 71684872,
+          "name": "Park Myung-shin",
+          "type": "Cast",
+          "role": "Jong-gil",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 73346902,
+          "name": "Choi Gwi-hwa",
+          "type": "Cast",
+          "role": "Homeless Man",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 7857133,
+          "name": "Jeong Seok-yong",
+          "type": "Cast",
+          "role": "Captain of KTX",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 74155626,
+          "name": "Kim Chang-hwan",
+          "type": "Cast",
+          "role": "Kim Jin-mo",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 78953889,
+          "name": "Jang Hyuk-jin",
+          "type": "Cast",
+          "role": "Ki-chul",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 72283477,
+          "name": "Shim Eun-kyung",
+          "type": "Cast",
+          "role": "Stowaway",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 71549237,
+          "name": "Lee Joo-sil",
+          "type": "Cast",
+          "role": "Seok-woo's Mother",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 71393728,
+          "name": "Kim Jae-rok",
+          "type": "Cast",
+          "role": "Mr. Kim",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 79763151,
+          "name": "Cha Chung-hwa",
+          "type": "Cast",
+          "role": "Mountaineering Woman",
+          "order": 16
+        },
+        {
+          "watchmodePersonId": 710293547,
+          "name": "Kim Won-jin",
+          "type": "Cast",
+          "role": "Embarrassing Youth",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 77353434,
+          "name": "Han Ji-eun",
+          "type": "Cast",
+          "role": "Earphones Girl",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 710438492,
+          "name": "Han Sung-soo",
+          "type": "Cast",
+          "role": "Train Attendant",
+          "order": 19
+        },
+        {
+          "watchmodePersonId": 79510283,
+          "name": "Lee Joong-ok",
+          "type": "Cast",
+          "role": "Suit",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 79976011,
+          "name": "Kim Ju-hun",
+          "type": "Cast",
+          "role": "Baseball Team Manager",
+          "order": 21
+        },
+        {
+          "watchmodePersonId": 79671095,
+          "name": "Kim Keum-soon",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 22
+        },
+        {
+          "watchmodePersonId": 711392871,
+          "name": "Chyu Kwang-hyun",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 23
+        },
+        {
+          "watchmodePersonId": 72988296,
+          "name": "Jung Young-ki",
+          "type": "Cast",
+          "role": "Captain Min (voice)",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 79531065,
+          "name": "Ok Joo-ri",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 25
+        },
+        {
+          "watchmodePersonId": 710438355,
+          "name": "Woo Do-im",
+          "type": "Cast",
+          "role": "Train Attendant Min-ji",
+          "order": 26
+        },
+        {
+          "watchmodePersonId": 711379074,
+          "name": "Song Ji-hyuk",
+          "type": "Cast",
+          "role": "Baseball Team",
+          "order": 27
+        },
+        {
+          "watchmodePersonId": 711380121,
+          "name": "Kim Woon",
+          "type": "Cast",
+          "role": "Infected (uncredited)",
+          "order": 28
+        },
+        {
+          "watchmodePersonId": 711258907,
+          "name": "Jeon Ye-eun",
+          "type": "Cast",
+          "role": "Infected (uncredited)",
+          "order": 29
+        },
+        {
+          "watchmodePersonId": 79708216,
+          "name": "Baek Seung-hwan",
+          "type": "Cast",
+          "role": "Survivor (uncredited)",
+          "order": 30
+        },
+        {
+          "watchmodePersonId": 73837564,
+          "name": "Yeon Sang-ho",
+          "type": "Cast",
+          "role": "Control Room (uncredited)",
+          "order": 31
+        },
+        {
+          "watchmodePersonId": 78899280,
+          "name": "Choi Woo-sung",
+          "type": "Cast",
+          "role": "Infected (uncredited)",
+          "order": 32
+        },
+        {
+          "watchmodePersonId": 711258892,
+          "name": "Lee Tae-yoon",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 33
+        },
+        {
+          "watchmodePersonId": 711258888,
+          "name": "Kim Tae-yun",
+          "type": "Cast",
+          "role": "Student",
+          "order": 34
+        },
+        {
+          "watchmodePersonId": 710892989,
+          "name": "Baek In-kwon",
+          "type": "Cast",
+          "role": "Zombified Raid Soldier (attacking Seok-woo)",
+          "order": 35
+        },
+        {
+          "watchmodePersonId": 711240794,
+          "name": "Moon Da-in",
+          "type": "Cast",
+          "role": "Train Attendant",
+          "order": 36
+        },
+        {
+          "watchmodePersonId": 711323966,
+          "name": "Kim Gwan-soo",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 37
+        },
+        {
+          "watchmodePersonId": 79653928,
+          "name": "Kwak Hye-jin",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 38
+        },
+        {
+          "watchmodePersonId": 711362892,
+          "name": "Kim Jin-yong",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 39
+        },
+        {
+          "watchmodePersonId": 711373639,
+          "name": "Kim Kye-hyung",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 40
+        },
+        {
+          "watchmodePersonId": 711132159,
+          "name": "Kim Jeong-hwi",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 41
+        },
+        {
+          "watchmodePersonId": 711379539,
+          "name": "Yoon Ji-hee",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 42
+        },
+        {
+          "watchmodePersonId": 711405576,
+          "name": "Kim Dan-bi",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 43
+        },
+        {
+          "watchmodePersonId": 711515335,
+          "name": "Choi Hyun-joon",
+          "type": "Cast",
+          "role": "Suit",
+          "order": 44
+        },
+        {
+          "watchmodePersonId": 710775225,
+          "name": "Kim Ki-suk",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 45
+        },
+        {
+          "watchmodePersonId": 711569908,
+          "name": "Park Min-woo",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 46
+        },
+        {
+          "watchmodePersonId": 711576403,
+          "name": "Park Je-hyeok",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 47
+        },
+        {
+          "watchmodePersonId": 79220585,
+          "name": "Yoon Ji-myeong",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 48
+        },
+        {
+          "watchmodePersonId": 711581412,
+          "name": "Jeon Yeong-in",
+          "type": "Cast",
+          "role": "Survivor",
+          "order": 49
+        },
+        {
+          "watchmodePersonId": 711587664,
+          "name": "Song Tae-wan",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 50
+        },
+        {
+          "watchmodePersonId": 711589592,
+          "name": "Choi Hye-jin",
+          "type": "Cast",
+          "role": "Infected",
+          "order": 51
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 7.8,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 84,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-carrie",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt0074285&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/168017/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 168017,
+      "title": "Carrie",
+      "year": 1976,
+      "type": "movie",
+      "imdbId": "tt0074285",
+      "tmdbId": 7340
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "Carrie",
+      "englishTitle": "Carrie",
+      "year": 1976,
+      "originalLanguage": "en",
+      "runtimeMinutes": 98,
+      "releaseDate": "1976-11-03",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "imdbId": "tt0074285",
+      "tmdbId": 7340,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=j9Mg-GRS46Y",
+      "similarWatchmodeTitleIds": [
+        19750,
+        168016,
+        172646,
+        175143,
+        184066,
+        1111138,
+        1140327,
+        1147137,
+        1153618,
+        1157926,
+        1175046,
+        1187106,
+        1227749,
+        1309327,
+        1379807,
+        1386655,
+        1387420,
+        1392792,
+        1428233,
+        1661376,
+        344141,
+        376180,
+        392023,
+        3175655,
+        494859
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 76147,
+          "name": "Adele Taylor",
+          "type": "Crew",
+          "role": "Hairstylist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 791642,
+          "name": "Bert Hallberg",
+          "type": "Crew",
+          "role": "Sound mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 797717,
+          "name": "Bill Kenney",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 798814,
+          "name": "Bill Scott",
+          "type": "Crew",
+          "role": "Second Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7113997,
+          "name": "Brian De Palma",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7188316,
+          "name": "Dan Sable",
+          "type": "Crew",
+          "role": "Sound Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7198697,
+          "name": "Dave Friedman",
+          "type": "Crew",
+          "role": "Still Photographer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7224835,
+          "name": "Dick Ziker",
+          "type": "Crew",
+          "role": "Stunt Coordinator, Second Unit Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7241749,
+          "name": "Dustin Blauvelt",
+          "type": "Crew",
+          "role": "First Assistant Camera",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7314727,
+          "name": "Gary Seybert",
+          "type": "Crew",
+          "role": "Property Master",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7337799,
+          "name": "Glory Fioramonti",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7341802,
+          "name": "Greg Auer",
+          "type": "Crew",
+          "role": "Special Effects",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7355117,
+          "name": "Hannah Scheel",
+          "type": "Crew",
+          "role": "Script Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7359230,
+          "name": "Harriet B. Helberg",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7400708,
+          "name": "Jack Fisk",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7410001,
+          "name": "James Dyer",
+          "type": "Crew",
+          "role": "Best Boy Grip",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7460730,
+          "name": "Joel King",
+          "type": "Crew",
+          "role": "Camera Operator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7555441,
+          "name": "Lawrence D. Cohen",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7581149,
+          "name": "Louis A. Stroller",
+          "type": "Crew",
+          "role": "Associate Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7621625,
+          "name": "Mario Tosi",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7662259,
+          "name": "Michael Kirchberger",
+          "type": "Crew",
+          "role": "Assistant Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7741156,
+          "name": "Paul Hirsch",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7742647,
+          "name": "Paul Monash",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7768485,
+          "name": "Pino Donaggio",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7808456,
+          "name": "Robert Gould",
+          "type": "Crew",
+          "role": "Set Decoration",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7827750,
+          "name": "Rosanna Norton",
+          "type": "Crew",
+          "role": "Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7885083,
+          "name": "Stephen King",
+          "type": "Crew",
+          "role": "Novel",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7974353,
+          "name": "Wes Dawn",
+          "type": "Crew",
+          "role": "Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7984542,
+          "name": "Wynn Hammer",
+          "type": "Crew",
+          "role": "Still Photographer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78952658,
+          "name": "Agnes Lyon",
+          "type": "Crew",
+          "role": "Costumer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78969670,
+          "name": "Michael Arciaga",
+          "type": "Crew",
+          "role": "Music Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78985110,
+          "name": "Donald Heitzer",
+          "type": "Crew",
+          "role": "First Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79267159,
+          "name": "Janet Brady",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79529637,
+          "name": "Gene Griffith",
+          "type": "Crew",
+          "role": "Key Grip",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79530029,
+          "name": "Joseph Cosko Jr.",
+          "type": "Crew",
+          "role": "Second Assistant Camera",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79781342,
+          "name": "Mary Peters",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79823547,
+          "name": "Joe Pender",
+          "type": "Crew",
+          "role": "Gaffer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710205870,
+          "name": "Patricia Heade",
+          "type": "Crew",
+          "role": "Production Secretary",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710206146,
+          "name": "Lois Freeman",
+          "type": "Crew",
+          "role": "Assistant Sound Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710206272,
+          "name": "David Rust",
+          "type": "Crew",
+          "role": "Boom Operator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710206546,
+          "name": "Ken Patterson",
+          "type": "Crew",
+          "role": "Painter",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710206866,
+          "name": "Ken Miller",
+          "type": "Crew",
+          "role": "Dolly Grip",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710799987,
+          "name": "Mags Kavanaugh",
+          "type": "Crew",
+          "role": "Stunt Double",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7768754,
+          "name": "Piper Laurie",
+          "type": "Cast",
+          "role": "Margaret White",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7873385,
+          "name": "Sissy Spacek",
+          "type": "Cast",
+          "role": "Carrie",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 736017,
+          "name": "Amy Irving",
+          "type": "Cast",
+          "role": "Sue Snell",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 7979007,
+          "name": "William Katt",
+          "type": "Cast",
+          "role": "Tommy Ross",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 7475424,
+          "name": "John Travolta",
+          "type": "Cast",
+          "role": "Billy Nolan",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 7696004,
+          "name": "Nancy Allen",
+          "type": "Cast",
+          "role": "Chris Hargenson",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 794008,
+          "name": "Betty Buckley",
+          "type": "Cast",
+          "role": "Miss Collins",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 7726965,
+          "name": "P. J. Soles",
+          "type": "Cast",
+          "role": "Norma",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 7770791,
+          "name": "Priscilla Pointer",
+          "type": "Cast",
+          "role": "Mrs. Snell",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 7902352,
+          "name": "Sydney Lassick",
+          "type": "Cast",
+          "role": "Mr. Fromm",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 7880964,
+          "name": "Stefan Gierasch",
+          "type": "Cast",
+          "role": "Mr. Morton",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 7666425,
+          "name": "Michael Talbott",
+          "type": "Cast",
+          "role": "Freddy",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 7237754,
+          "name": "Doug Cox",
+          "type": "Cast",
+          "role": "The Beak",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 7360242,
+          "name": "Harry Gold",
+          "type": "Cast",
+          "role": "George",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 7714776,
+          "name": "Noelle North",
+          "type": "Cast",
+          "role": "Frieda",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 7165951,
+          "name": "Cindy Daly",
+          "type": "Cast",
+          "role": "Cora",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 7215633,
+          "name": "Deirdre Berthrong",
+          "type": "Cast",
+          "role": "Rhonda",
+          "order": 16
+        },
+        {
+          "watchmodePersonId": 758969,
+          "name": "Anson Downes",
+          "type": "Cast",
+          "role": "Ernest",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 7826885,
+          "name": "Rory Stevens",
+          "type": "Cast",
+          "role": "Kenny",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 7247357,
+          "name": "Edie McClurg",
+          "type": "Cast",
+          "role": "Helen",
+          "order": 19
+        },
+        {
+          "watchmodePersonId": 7125659,
+          "name": "Cameron De Palma",
+          "type": "Cast",
+          "role": "Boy on Bicycle",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 79120422,
+          "name": "Sharon Benson",
+          "type": "Cast",
+          "role": "Ruth Gogan (uncredited)",
+          "order": 21
+        },
+        {
+          "watchmodePersonId": 79609911,
+          "name": "Terry Bolo",
+          "type": "Cast",
+          "role": "Trudy Bourne (uncredited)",
+          "order": 22
+        },
+        {
+          "watchmodePersonId": 7427347,
+          "name": "Jean Glaudé",
+          "type": "Cast",
+          "role": "Afro Guy (uncredited)",
+          "order": 23
+        },
+        {
+          "watchmodePersonId": 79609920,
+          "name": "Katie Irving",
+          "type": "Cast",
+          "role": "Katie O'Shea / The Balladeer (uncredited)",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 79609921,
+          "name": "Cynthia Schuler Larsen",
+          "type": "Cast",
+          "role": "Alice Litten (uncredited)",
+          "order": 25
+        },
+        {
+          "watchmodePersonId": 79609933,
+          "name": "Dan Protheroe",
+          "type": "Cast",
+          "role": "Bassist - Vance or Towers (prom band) (uncredited)",
+          "order": 26
+        },
+        {
+          "watchmodePersonId": 7413223,
+          "name": "James Saad",
+          "type": "Cast",
+          "role": "Drummer & Percussionist - Vance or Towers (prom band) (uncredited)",
+          "order": 27
+        },
+        {
+          "watchmodePersonId": 7420314,
+          "name": "Janie Squire",
+          "type": "Cast",
+          "role": "Julia McDermitt (uncredited)",
+          "order": 28
+        },
+        {
+          "watchmodePersonId": 71668626,
+          "name": "Mike Towers",
+          "type": "Cast",
+          "role": "Vance or Towers (prom band) (uncredited)",
+          "order": 29
+        },
+        {
+          "watchmodePersonId": 71329581,
+          "name": "Glen Vance",
+          "type": "Cast",
+          "role": "Vance or Towers (prom band) (uncredited)",
+          "order": 30
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 7.5,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 90,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-cena",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt35657504&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1947513/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1947513,
+      "title": "The Dinner",
+      "year": 2025,
+      "type": "movie",
+      "imdbId": "tt35657504",
+      "tmdbId": 1433680
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "La cena",
+      "englishTitle": "The Dinner",
+      "year": 2025,
+      "originalLanguage": "es",
+      "runtimeMinutes": 106,
+      "releaseDate": "2025-10-17",
+      "genres": [
+        "Comedy",
+        "History",
+        "Drama"
+      ],
+      "imdbId": "tt35657504",
+      "tmdbId": 1433680,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [
+        1174255,
+        1184355,
+        1221773,
+        1325220,
+        1376541,
+        1376695,
+        1393366,
+        1410394,
+        1424297,
+        1576086,
+        1589807,
+        1592016,
+        1592386,
+        1621406,
+        1624804,
+        1641280,
+        1650460,
+        1653150,
+        1697343,
+        1769657,
+        1784445,
+        1813566,
+        1816397,
+        1942901,
+        3247692
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 710520,
+          "name": "Aitor Mantxola",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7247956,
+          "name": "Edmon Roch",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7424679,
+          "name": "Javier Petit",
+          "type": "Crew",
+          "role": "First Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7456178,
+          "name": "Joaquín Oristrell",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7490415,
+          "name": "José Luis Alonso de Santos",
+          "type": "Crew",
+          "role": "Theatre Play",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7539507,
+          "name": "Koldo Vallés",
+          "type": "Crew",
+          "role": "Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7602592,
+          "name": "Manuel Gómez Pereira",
+          "type": "Crew",
+          "role": "Director, Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7988749,
+          "name": "Yolanda García Serrano",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71133731,
+          "name": "Carlos Amoedo",
+          "type": "Crew",
+          "role": "Production Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72411500,
+          "name": "Javier Ugarte",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 76031580,
+          "name": "Alexandra Lebret",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78965250,
+          "name": "José Ramón Delgado",
+          "type": "Crew",
+          "role": "First Assistant Camera",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79039094,
+          "name": "Helena Sanchís",
+          "type": "Crew",
+          "role": "Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79171846,
+          "name": "Marichu Sanz",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79192485,
+          "name": "Sofía Straface",
+          "type": "Crew",
+          "role": "Sound",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79261743,
+          "name": "Roberto Butragueño",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79486846,
+          "name": "Anne-Sophie Versnaeyen",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79601873,
+          "name": "Vanessa Marimbert",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79618213,
+          "name": "Lina Badenes",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79623466,
+          "name": "Eduardo Lis",
+          "type": "Crew",
+          "role": "Unit Production Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79664581,
+          "name": "Cristóbal García",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710026630,
+          "name": "María Jesús Tarazona",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710185329,
+          "name": "Alba Simón",
+          "type": "Crew",
+          "role": "Second Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710725834,
+          "name": "Ricardo Cruz (Hijo)",
+          "type": "Crew",
+          "role": "Action Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710743868,
+          "name": "Ana Camacho",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710794640,
+          "name": "Samuel Icasto",
+          "type": "Crew",
+          "role": "Stunt Coordinator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710907840,
+          "name": "Jorge Casabán",
+          "type": "Crew",
+          "role": "Key Grip",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711098943,
+          "name": "Ana Mayandía",
+          "type": "Crew",
+          "role": "Third Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711108120,
+          "name": "Sira Herranz",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711164109,
+          "name": "Andrea Martelli",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711506785,
+          "name": "María Gracia Crespo",
+          "type": "Crew",
+          "role": "Stunt Coordinator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711586672,
+          "name": "Miriam Pedregal",
+          "type": "Crew",
+          "role": "Supervising Sound Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711606009,
+          "name": "Laura Castro Otero",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711683710,
+          "name": "Jose V. Iborra",
+          "type": "Crew",
+          "role": "Stunt Double",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 717713,
+          "name": "Alberto San Juan",
+          "type": "Cast",
+          "role": "Genaro",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71609183,
+          "name": "Mario Casas",
+          "type": "Cast",
+          "role": "Teniente Medina",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71078468,
+          "name": "Asier Etxeandia",
+          "type": "Cast",
+          "role": "Alonso",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 710285944,
+          "name": "Martín Páez",
+          "type": "Cast",
+          "role": "Chapero",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 7262106,
+          "name": "Elvira Mínguez",
+          "type": "Cast",
+          "role": "Juana",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 78939273,
+          "name": "Carlos Serrano",
+          "type": "Cast",
+          "role": "El Rubio",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 7132722,
+          "name": "Carmen Balagué",
+          "type": "Cast",
+          "role": "Flora",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 73292378,
+          "name": "Eva Ugarte",
+          "type": "Cast",
+          "role": "Luchi",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 763786,
+          "name": "Antonio Resines",
+          "type": "Cast",
+          "role": "Antón",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 79213886,
+          "name": "Xavi Francés",
+          "type": "Cast",
+          "role": "Francisco Franco",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 710016379,
+          "name": "Gloria March",
+          "type": "Cast",
+          "role": "Carmen Polo",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 7858732,
+          "name": "Sergio Caballero",
+          "type": "Cast",
+          "role": "Dr. Beltrán",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 710151190,
+          "name": "Laura Botta",
+          "type": "Cast",
+          "role": "Laura (Chelo)",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 7279666,
+          "name": "Eva Serrano",
+          "type": "Cast",
+          "role": "Perla del Palace (Contrabajo)",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 79974706,
+          "name": "David Díaz",
+          "type": "Cast",
+          "role": "Adolf Hitler",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 711230376,
+          "name": "Álvaro Leivas",
+          "type": "Cast",
+          "role": "Guardia del Palace",
+          "order": 33
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 6.8,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-everest",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt38691481&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11080252/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11080252,
+      "title": "Everest: The Other Side",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt38691481",
+      "tmdbId": 1603262
+    },
+    "metadata": {
+      "title": "Everest: La Otra Cara",
+      "originalTitle": "Everest: The Other Side",
+      "englishTitle": "Everest: The Other Side",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 115,
+      "releaseDate": "2026-10-29",
+      "genres": [
+        "Documentary"
+      ],
+      "imdbId": "tt38691481",
+      "tmdbId": 1603262,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=8gjOXAjeisY",
+      "similarWatchmodeTitleIds": [
+        165744,
+        1161315,
+        1246628,
+        1337831,
+        1377469,
+        1383785,
+        1623696,
+        1630296,
+        1639179,
+        1647031,
+        1650477,
+        1674464,
+        1689775,
+        1691375,
+        1730604,
+        1973151,
+        11075017,
+        544407,
+        547062,
+        553251
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7125314,
+          "name": "Callum Greene",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7280039,
+          "name": "Evan Hayes",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7419768,
+          "name": "Janet Yang",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71259558,
+          "name": "Elizabeth Chai Vasarhelyi",
+          "type": "Crew",
+          "role": "Director, Writer, Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71854166,
+          "name": "Shannon Dill",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73715651,
+          "name": "Nina Fialkow",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74440026,
+          "name": "Jimmy Chin",
+          "type": "Crew",
+          "role": "Director, Writer, Producer, Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74673128,
+          "name": "Mikey Schaefer",
+          "type": "Crew",
+          "role": "Additional Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78931711,
+          "name": "Bob Eisenhardt",
+          "type": "Crew",
+          "role": "Producer, Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78978329,
+          "name": "Clair Popkin",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79008775,
+          "name": "Aideen Kane",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79086263,
+          "name": "Carolyn Bernstein",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79167330,
+          "name": "David Fialkow",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79225328,
+          "name": "Christina Hunt",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79450035,
+          "name": "Bettina Kadoorie",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79512827,
+          "name": "Elizabeth Lauren Reiner",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79943460,
+          "name": "Anna Barnes",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710221571,
+          "name": "Sam Frohman",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710713141,
+          "name": "Caroline Ho",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710727354,
+          "name": "Moudhy Al Rashid",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710882679,
+          "name": "Tim Horsburgh",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711506420,
+          "name": "Andrew Reiner",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711506423,
+          "name": "Kenneth A. Howery",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711506425,
+          "name": "Jason Bowden",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711506427,
+          "name": "Will Griffith",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711506431,
+          "name": "Christopher Murphy",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711700545,
+          "name": "Jake Schick",
+          "type": "Crew",
+          "role": "Additional Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711705977,
+          "name": "Christopher Murphy",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79753448,
+          "name": "Hilaree Nelson",
+          "type": "Cast",
+          "role": "Self",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79753449,
+          "name": "Jim Morrison",
+          "type": "Cast",
+          "role": "Self",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74440026,
+          "name": "Jimmy Chin",
+          "type": "Cast",
+          "role": "Self",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 71259558,
+          "name": "Elizabeth Chai Vasarhelyi",
+          "type": "Cast",
+          "role": "Self",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 74673128,
+          "name": "Mikey Schaefer",
+          "type": "Cast",
+          "role": "Self",
+          "order": 4
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 60,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-fatherland",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt37304295&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1952974/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1952974,
+      "title": "Fatherland",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt37304295",
+      "tmdbId": 1437696
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "Ojczyzna",
+      "englishTitle": "Fatherland",
+      "year": 2026,
+      "originalLanguage": "pl",
+      "runtimeMinutes": 82,
+      "releaseDate": "2026-06-19",
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "imdbId": "tt37304295",
+      "tmdbId": 1437696,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=4pGI64qP0Bw",
+      "similarWatchmodeTitleIds": [
+        112067,
+        122642,
+        123829,
+        196786,
+        199491,
+        1127841,
+        1274218,
+        1296943,
+        1314386,
+        1380816,
+        1408118,
+        1591497,
+        1620952,
+        1621406,
+        1698969,
+        1703621,
+        1876775,
+        4103341,
+        4117682,
+        4150156
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7137377,
+          "name": "Carsten Richter",
+          "type": "Crew",
+          "role": "Foley Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7249948,
+          "name": "Edward Berger",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7368616,
+          "name": "Hendrik Handloegten",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7432862,
+          "name": "Jeanne Tremsal",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7511406,
+          "name": "Karen Lindsay-Stewart",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7515681,
+          "name": "Katarzyna Sobańska",
+          "type": "Crew",
+          "role": "Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7550374,
+          "name": "Lars Ginzel",
+          "type": "Crew",
+          "role": "Sound, Supervising Sound Editor, Sound Re-Recording Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7578684,
+          "name": "Lorenzo Mieli",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7597274,
+          "name": "Magdalena Szwarcbart",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7646403,
+          "name": "Matthieu Prada",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7667054,
+          "name": "Michael Weber",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7747507,
+          "name": "Paweł Pawlikowski",
+          "type": "Crew",
+          "role": "Director, Screenplay, Editor, Music Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7968061,
+          "name": "Waldemar Pokromski",
+          "type": "Crew",
+          "role": "Makeup Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71179252,
+          "name": "Colm Tóibín",
+          "type": "Crew",
+          "role": "Thanks",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71232463,
+          "name": "Dimitri Rassam",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71283001,
+          "name": "Ewa Puszczyńska",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71348832,
+          "name": "Hanse Warns",
+          "type": "Crew",
+          "role": "Foley Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71578526,
+          "name": "Luke Rivett",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71609457,
+          "name": "Mario Gianani",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71708002,
+          "name": "Nina Haun",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71907279,
+          "name": "Tarn Willers",
+          "type": "Crew",
+          "role": "Sound",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72571153,
+          "name": "Lorenzo Gangarossa",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72580200,
+          "name": "Łukasz Żal",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72963409,
+          "name": "Viola Fügen",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73601134,
+          "name": "Marcel Sławiński",
+          "type": "Crew",
+          "role": "Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78937290,
+          "name": "Aleksandra Staszko",
+          "type": "Crew",
+          "role": "Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78974981,
+          "name": "Efe Çakarel",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79252008,
+          "name": "Ognjen Dizdarevic",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79252833,
+          "name": "Luise Hofmann",
+          "type": "Crew",
+          "role": "Dialogue Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79280356,
+          "name": "Oliver Achatz",
+          "type": "Crew",
+          "role": "Sound Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79293271,
+          "name": "Monika Kaleta",
+          "type": "Crew",
+          "role": "Hair Department Head, Makeup Department Head",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79303687,
+          "name": "Michał Herman",
+          "type": "Crew",
+          "role": "Color Grading",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79326794,
+          "name": "Stanisław Cuske",
+          "type": "Crew",
+          "role": "Camera Operator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79330623,
+          "name": "Timo Argillander",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79352429,
+          "name": "Tomasz Morawski",
+          "type": "Crew",
+          "role": "Line Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79457402,
+          "name": "Andrea Scarso",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79508182,
+          "name": "Zula Poznańska",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79519291,
+          "name": "Daniel Weis",
+          "type": "Crew",
+          "role": "Foley Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79529170,
+          "name": "Marcin Masecki",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79725756,
+          "name": "Ilaria Zazzaro",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79775077,
+          "name": "Marcin Kupiecki",
+          "type": "Crew",
+          "role": "Production Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79784386,
+          "name": "Dawid Kolosowski",
+          "type": "Crew",
+          "role": "Location Scout",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710042193,
+          "name": "Wiktor Mentlewicz",
+          "type": "Crew",
+          "role": "First Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710532626,
+          "name": "Michał Korynek",
+          "type": "Crew",
+          "role": "Location Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710697974,
+          "name": "Paul Ziesche",
+          "type": "Crew",
+          "role": "Foley Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711170243,
+          "name": "Agnieszka Rębecka",
+          "type": "Crew",
+          "role": "Hair Supervisor, Makeup Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711289073,
+          "name": "Julien Delajoux",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711289075,
+          "name": "Matthias Nicodeme",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711310434,
+          "name": "Agnieszka Orlińska",
+          "type": "Crew",
+          "role": "Seamstress",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7355542,
+          "name": "Hanns Zischler",
+          "type": "Cast",
+          "role": "Thomas Mann",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71833653,
+          "name": "Sandra Hüller",
+          "type": "Cast",
+          "role": "Erika Mann",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 774727,
+          "name": "August Diehl",
+          "type": "Cast",
+          "role": "Klaus Mann",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 753570,
+          "name": "Anna Madeley",
+          "type": "Cast",
+          "role": "Betty Knox",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 7221352,
+          "name": "Devid Striesow",
+          "type": "Cast",
+          "role": "Johannes R. Becher",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 7206736,
+          "name": "David Menkin",
+          "type": "Cast",
+          "role": "Arthur Quint",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 72440592,
+          "name": "Joachim Meyerhoff",
+          "type": "Cast",
+          "role": "Gustaf Gründgens",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 78929333,
+          "name": "Enno Trebs",
+          "type": "Cast",
+          "role": "Wieland Wagner",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 72917338,
+          "name": "Theo Trebs",
+          "type": "Cast",
+          "role": "Wolfgang Wagner",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 7968037,
+          "name": "Waldemar Kobus",
+          "type": "Cast",
+          "role": "Mayor of Frankfurt",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 71199199,
+          "name": "Daniel Wagner",
+          "type": "Cast",
+          "role": "Sergei Ivanovich Tulpanov",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 7306970,
+          "name": "Fritzi Haberlandt",
+          "type": "Cast",
+          "role": "Waitress",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 7679545,
+          "name": "Milan Peschel",
+          "type": "Cast",
+          "role": "Armin Schaufelberger",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 72441854,
+          "name": "Joanna Kulig",
+          "type": "Cast",
+          "role": "Jazz Band Singer",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 72215772,
+          "name": "David L. Price",
+          "type": "Cast",
+          "role": "Walter J. Smith",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 790791,
+          "name": "Bernd Moss",
+          "type": "Cast",
+          "role": "Brinkbaumer",
+          "order": 16
+        },
+        {
+          "watchmodePersonId": 711289094,
+          "name": "Lisa Natalie Arnold",
+          "type": "Cast",
+          "role": "Receptionist in Frankfurt",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 79287584,
+          "name": "Andrzej Kłak",
+          "type": "Cast",
+          "role": "Barman",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 7169838,
+          "name": "Claudia Geisler-Bading",
+          "type": "Cast",
+          "role": "Admirer of Gründgens",
+          "order": 19
+        },
+        {
+          "watchmodePersonId": 79188512,
+          "name": "Vitalii Salii",
+          "type": "Cast",
+          "role": "Red Army sergeant",
+          "order": 23
+        },
+        {
+          "watchmodePersonId": 711289100,
+          "name": "Dindar Ablemet",
+          "type": "Cast",
+          "role": "Kyrgyz soldier",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 711657790,
+          "name": "Kriemhild Hamann",
+          "type": "Cast",
+          "role": "Receptionist in Weimar",
+          "order": 25
+        },
+        {
+          "watchmodePersonId": 79458304,
+          "name": "Patryk Kabała",
+          "type": "Cast",
+          "role": "Young Man",
+          "order": 27
+        },
+        {
+          "watchmodePersonId": 711289109,
+          "name": "Tomasz Pala",
+          "type": "Cast",
+          "role": "Organist",
+          "order": 28
+        },
+        {
+          "watchmodePersonId": 7149278,
+          "name": "Charlotte Schwab",
+          "type": "Cast",
+          "role": "Katia",
+          "order": 31
+        },
+        {
+          "watchmodePersonId": 7762052,
+          "name": "Philip Lenkowsky",
+          "type": "Cast",
+          "role": "Man in hotel and church",
+          "order": 32
+        },
+        {
+          "watchmodePersonId": 79529170,
+          "name": "Marcin Masecki",
+          "type": "Cast",
+          "role": "",
+          "order": 37
+        },
+        {
+          "watchmodePersonId": 711289117,
+          "name": "Ksawery Wójciński",
+          "type": "Cast",
+          "role": "",
+          "order": 40
+        },
+        {
+          "watchmodePersonId": 711289119,
+          "name": "Krzysztof Szmańda",
+          "type": "Cast",
+          "role": "",
+          "order": 41
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 7.2,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 85,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-historias",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=name&search_value=4+historias+incre%C3%ADbles&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11232920/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11232920,
+      "title": "4 historias increíbles",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt49441161",
+      "tmdbId": 1801998
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "4 historias increíbles",
+      "englishTitle": "4 historias increíbles",
+      "year": 2026,
+      "originalLanguage": "es",
+      "runtimeMinutes": 81,
+      "releaseDate": "2026-10-29",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "imdbId": "tt49441161",
+      "tmdbId": 1801998,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [
+        171771,
+        199449,
+        1158749,
+        1231335,
+        1310527,
+        1375308,
+        1387931,
+        1462692,
+        1587407,
+        1629408,
+        1630656,
+        1632890,
+        1689074,
+        1694099,
+        1738546,
+        1767579,
+        1843115,
+        1947609,
+        11091059,
+        4108690
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7267238,
+          "name": "Enrique Rottenberg",
+          "type": "Crew",
+          "role": "Director, Writer, Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7767892,
+          "name": "José María 'Pigu' Gómez",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71040686,
+          "name": "Ana Cambre",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79019307,
+          "name": "Ulises Hernández",
+          "type": "Crew",
+          "role": "Music",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710360048,
+          "name": "Celeste Palma",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711708166,
+          "name": "Jakie Pariseir",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7131641,
+          "name": "Carlos Portaluppi",
+          "type": "Cast",
+          "role": "",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78981823,
+          "name": "Héctor Díaz",
+          "type": "Cast",
+          "role": "",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7822321,
+          "name": "Roly Serrano",
+          "type": "Cast",
+          "role": "",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 711708166,
+          "name": "Jakie Pariseir",
+          "type": "Cast",
+          "role": "",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 79163837,
+          "name": "Maida Andrenacci",
+          "type": "Cast",
+          "role": "",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 7577274,
+          "name": "Lola Berthet",
+          "type": "Cast",
+          "role": "",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 74413099,
+          "name": "Javier Niklison",
+          "type": "Cast",
+          "role": "",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 79387530,
+          "name": "Tuchi Rottenberg",
+          "type": "Cast",
+          "role": "",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 711708142,
+          "name": "Omar Núñez Iglesias",
+          "type": "Cast",
+          "role": "",
+          "order": 8
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-intersex-2025",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=name&search_value=Intersex%3A+El+c%C3%ADrculo+violeta&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1997705/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1997705,
+      "title": "Intersex: El círculo violeta",
+      "year": 2025,
+      "type": "movie",
+      "imdbId": null,
+      "tmdbId": 1486415
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "Intersex: El círculo violeta",
+      "englishTitle": "Intersex: El círculo violeta",
+      "year": 2025,
+      "originalLanguage": "es",
+      "runtimeMinutes": 93,
+      "releaseDate": "2025-05-24",
+      "genres": [
+        "Documentary"
+      ],
+      "imdbId": null,
+      "tmdbId": 1486415,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [
+        134565,
+        1105039,
+        1111152,
+        1126865,
+        1141511,
+        1148165,
+        1182074,
+        1269990,
+        1369009,
+        1383785,
+        1424876,
+        1589084,
+        1670094,
+        1691236,
+        1696660,
+        1710692,
+        1741450,
+        1914751,
+        11208283,
+        547062
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 79714100,
+          "name": "Teresa Martino",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-intersex",
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados."
+  },
+  {
+    "attempt": "watchmode-lockbox",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt37369064&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11008818/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11008818,
+      "title": "Lockbox",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt37369064",
+      "tmdbId": 1500890
+    },
+    "metadata": {
+      "title": "La Caja Del Demonio",
+      "originalTitle": "Lockbox",
+      "englishTitle": "Lockbox",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 105,
+      "releaseDate": "2026-07-02",
+      "genres": [
+        "Horror"
+      ],
+      "imdbId": "tt37369064",
+      "tmdbId": 1500890,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=-_-4fiQ3gwM",
+      "similarWatchmodeTitleIds": [
+        11411,
+        13850,
+        137879,
+        162003,
+        1120878,
+        1274798,
+        1356242,
+        1393903,
+        1401491,
+        1437506,
+        1476992,
+        1588980,
+        1603022,
+        1613891,
+        1625310,
+        1677727,
+        1712319,
+        1721390,
+        1751828,
+        1779549,
+        1822902,
+        1863113,
+        1914737,
+        11004588,
+        11021970
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7116583,
+          "name": "Bridget Durnford",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7192479,
+          "name": "Daniel Stamm",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7460553,
+          "name": "Joel Echallier",
+          "type": "Crew",
+          "role": "Special Effects Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7488016,
+          "name": "Josh Plaw",
+          "type": "Crew",
+          "role": "Set Decoration",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7522273,
+          "name": "Kearie Peak",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7863721,
+          "name": "Shawn Williamson",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71152028,
+          "name": "Charmaine Clark",
+          "type": "Crew",
+          "role": "Hair Department Head",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72205496,
+          "name": "Daren Luc Sasges",
+          "type": "Crew",
+          "role": "Production Designer, Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72635593,
+          "name": "Matthew Rogers",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79263956,
+          "name": "Grace Alvarez",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79426887,
+          "name": "Shauna Magrath",
+          "type": "Crew",
+          "role": "Key Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79491057,
+          "name": "Jüs Percy",
+          "type": "Crew",
+          "role": "Second Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710024733,
+          "name": "Vladimir Markovich",
+          "type": "Crew",
+          "role": "Costume Designer, Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710316576,
+          "name": "David Magee",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7129046,
+          "name": "Carla Gugino",
+          "type": "Cast",
+          "role": "Ellen Hershbergen",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71569764,
+          "name": "Lou Taylor Pucci",
+          "type": "Cast",
+          "role": "Winthrop Benson",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7516878,
+          "name": "Katharine Isabelle",
+          "type": "Cast",
+          "role": "Vahna Minter",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 711538011,
+          "name": "Roman Kinsella",
+          "type": "Cast",
+          "role": "Young Winthrop",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 710124251,
+          "name": "Donald Sales",
+          "type": "Cast",
+          "role": "Det. Rousch",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 71410368,
+          "name": "Jason McKinnon",
+          "type": "Cast",
+          "role": "Prosecutor Breslow",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 78928183,
+          "name": "Darcey Johnson",
+          "type": "Cast",
+          "role": "Father John Dorr",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 71549680,
+          "name": "Lee Tichon",
+          "type": "Cast",
+          "role": "Kevin",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 711410493,
+          "name": "Jecca Beauchamp",
+          "type": "Cast",
+          "role": "Young Vahna",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 711388208,
+          "name": "Aedan Edwards",
+          "type": "Cast",
+          "role": "The Boy",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 72410358,
+          "name": "Jason William Day",
+          "type": "Cast",
+          "role": "Guard",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 710693319,
+          "name": "Kenny Wood-Schatz",
+          "type": "Cast",
+          "role": "Unicop",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 7433265,
+          "name": "Jed Rees",
+          "type": "Cast",
+          "role": "James Light",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 79682926,
+          "name": "Madeleine Kelders",
+          "type": "Cast",
+          "role": "Doctor Warren",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 710157249,
+          "name": "Olivia Ducayen",
+          "type": "Cast",
+          "role": "Denise Minotka",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 7843305,
+          "name": "Samantha Ferris",
+          "type": "Cast",
+          "role": "Nina Karlo",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 71646115,
+          "name": "Mercedes de la Zerda",
+          "type": "Cast",
+          "role": "Grace Beck",
+          "order": 16
+        },
+        {
+          "watchmodePersonId": 7532264,
+          "name": "Kevin McNulty",
+          "type": "Cast",
+          "role": "Father Caldwell",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 79913596,
+          "name": "Susan Hanson",
+          "type": "Cast",
+          "role": "Judge",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 710065859,
+          "name": "Cecilly Day",
+          "type": "Cast",
+          "role": "Counsellor",
+          "order": 19
+        },
+        {
+          "watchmodePersonId": 7197264,
+          "name": "Darren Moore",
+          "type": "Cast",
+          "role": "Homeless Man",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 7118677,
+          "name": "Bruce Clayton",
+          "type": "Cast",
+          "role": "Port-a-John Man",
+          "order": 21
+        },
+        {
+          "watchmodePersonId": 711080691,
+          "name": "Wendy Gorling",
+          "type": "Cast",
+          "role": "Demon / Mother",
+          "order": 22
+        },
+        {
+          "watchmodePersonId": 79324828,
+          "name": "Troy James",
+          "type": "Cast",
+          "role": "Twisty Demon",
+          "order": 23
+        },
+        {
+          "watchmodePersonId": 79717443,
+          "name": "Ely Jackson",
+          "type": "Cast",
+          "role": "Female Demon (voice)",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 7114048,
+          "name": "Brian Dobson",
+          "type": "Cast",
+          "role": "Demon (voice)",
+          "order": 25
+        },
+        {
+          "watchmodePersonId": 711486131,
+          "name": "Bodhi Dobson",
+          "type": "Cast",
+          "role": "Boy (voice)",
+          "order": 26
+        },
+        {
+          "watchmodePersonId": 711486133,
+          "name": "Linda Wojtowick",
+          "type": "Cast",
+          "role": "Donna (voice)",
+          "order": 27
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 5,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-mama",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt2023587&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1243832/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1243832,
+      "title": "Mama",
+      "year": 2013,
+      "type": "movie",
+      "imdbId": "tt2023587",
+      "tmdbId": 132232
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "Mama",
+      "englishTitle": "Mama",
+      "year": 2013,
+      "originalLanguage": "en",
+      "runtimeMinutes": 100,
+      "releaseDate": "2013-01-17",
+      "genres": [
+        "Horror"
+      ],
+      "imdbId": "tt2023587",
+      "tmdbId": 132232,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=I7_CLVoGkgA",
+      "similarWatchmodeTitleIds": [
+        146110,
+        190178,
+        190226,
+        1153379,
+        1158580,
+        1182472,
+        1184164,
+        1184167,
+        1187767,
+        1230001,
+        1290557,
+        1360799,
+        1377845,
+        1391280,
+        1401491,
+        1428531,
+        1465525,
+        1472159,
+        1514868,
+        1542053,
+        1595813,
+        1638863,
+        1646383,
+        1791181,
+        3184877
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 727135,
+          "name": "Alfredo Díaz",
+          "type": "Crew",
+          "role": "Sound Effects Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 729834,
+          "name": "Alison Reid",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 730511,
+          "name": "Allan Fung",
+          "type": "Crew",
+          "role": "Supervising Sound Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 737986,
+          "name": "Anastasia Masaro",
+          "type": "Crew",
+          "role": "Production Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 763804,
+          "name": "Antonio Riestra",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7309476,
+          "name": "Gabriel Gutiérrez",
+          "type": "Crew",
+          "role": "Sound Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7346948,
+          "name": "Guillermo del Toro",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7397729,
+          "name": "J. Miles Dale",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7424262,
+          "name": "Javier Aller",
+          "type": "Crew",
+          "role": "Production Assistant",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7589035,
+          "name": "Luis Sequeira",
+          "type": "Crew",
+          "role": "Costume Design",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7605086,
+          "name": "Marc Orts",
+          "type": "Crew",
+          "role": "Sound Re-Recording Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7669657,
+          "name": "Michele Conroy",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7733730,
+          "name": "Patricia Cuccia",
+          "type": "Crew",
+          "role": "Set Decoration",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7815867,
+          "name": "Robin D. Cook",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7899854,
+          "name": "Suzanne Aplin",
+          "type": "Crew",
+          "role": "Costume Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71086810,
+          "name": "Barbara Muschietti",
+          "type": "Crew",
+          "role": "Screenplay, Producer, Story",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71194812,
+          "name": "Dana Howes",
+          "type": "Crew",
+          "role": "Transportation Coordinator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71290292,
+          "name": "Fernando Velázquez",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78934825,
+          "name": "Elis Y. Lam",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78940958,
+          "name": "Andy Muschietti",
+          "type": "Crew",
+          "role": "Screenplay, Director, Story",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78952145,
+          "name": "Jeffrey Cassidy",
+          "type": "Crew",
+          "role": "Video Assist Operator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78969107,
+          "name": "Mike Borrett",
+          "type": "Crew",
+          "role": "Visual Effects Production Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79026682,
+          "name": "Doug Reid",
+          "type": "Crew",
+          "role": "Best Boy Electric",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79110448,
+          "name": "Andrij Molodecky",
+          "type": "Crew",
+          "role": "Set Dresser",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79157533,
+          "name": "John 'Butch' Rose",
+          "type": "Crew",
+          "role": "Set Dresser",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79225913,
+          "name": "Greg Chapman",
+          "type": "Crew",
+          "role": "Sound Re-Recording Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79435886,
+          "name": "Kari Measham",
+          "type": "Crew",
+          "role": "Set Decoration Buyer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79514781,
+          "name": "Tamara Stone",
+          "type": "Crew",
+          "role": "Compositing Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710068887,
+          "name": "Neil Cross",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7711447,
+          "name": "Nikolaj Coster-Waldau",
+          "type": "Cast",
+          "role": "Lucas Desange",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71432771,
+          "name": "Jessica Chastain",
+          "type": "Cast",
+          "role": "Annabel",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72641778,
+          "name": "Megan Charpentier",
+          "type": "Cast",
+          "role": "Victoria Desange",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 74381606,
+          "name": "Isabelle Nélisse",
+          "type": "Cast",
+          "role": "Lilly Desange",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 7191243,
+          "name": "Daniel Kash",
+          "type": "Cast",
+          "role": "Dr. Dreyfuss",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 72644462,
+          "name": "Melina Matthews",
+          "type": "Cast",
+          "role": "Mama (voice)",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 74685063,
+          "name": "Morgan McGarry",
+          "type": "Cast",
+          "role": "Young Victoria",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 72410926,
+          "name": "Javier Botet",
+          "type": "Cast",
+          "role": "Mama (body)",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 7418460,
+          "name": "Jane Moffat",
+          "type": "Cast",
+          "role": "Jean Podolski / Mama (Voice)",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 7203273,
+          "name": "David Fox",
+          "type": "Cast",
+          "role": "Burnsie",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 7229559,
+          "name": "Dominic Cuzzocrea",
+          "type": "Cast",
+          "role": "Ron",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 7499193,
+          "name": "Julia Chantrey",
+          "type": "Cast",
+          "role": "Nina",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 7782744,
+          "name": "Ray Kahnert",
+          "type": "Cast",
+          "role": "Judge",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 7163410,
+          "name": "Christopher Marren",
+          "type": "Cast",
+          "role": "Cop",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 7645057,
+          "name": "Matthew Edison",
+          "type": "Cast",
+          "role": "Young Cop",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 79074090,
+          "name": "Diane Gordon",
+          "type": "Cast",
+          "role": "Louise",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 79722412,
+          "name": "Sydney Cross",
+          "type": "Cast",
+          "role": "Orphaned Girl",
+          "order": 16
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 6.1,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 60,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-pertenencias",
+    "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados."
+  },
+  {
+    "attempt": "watchmode-pinocho",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt30887701&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1782549/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1782549,
+      "title": "Pinocchio: Unstrung",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt30887701",
+      "tmdbId": 1232569
+    },
+    "metadata": {
+      "title": "Pinocho: Desatado",
+      "originalTitle": "Pinocchio: Unstrung",
+      "englishTitle": "Pinocchio: Unstrung",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 82,
+      "releaseDate": "2026-07-22",
+      "genres": [
+        "Horror",
+        "Fantasy",
+        "Mystery"
+      ],
+      "imdbId": "tt30887701",
+      "tmdbId": 1232569,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=Xt3zQ8v2pzk",
+      "similarWatchmodeTitleIds": [
+        140384,
+        178215,
+        1109693,
+        1164935,
+        1180729,
+        1310838,
+        1347760,
+        1360302,
+        1382404,
+        1383292,
+        1407368,
+        1422570,
+        1511130,
+        1585762,
+        1586432,
+        1624707,
+        1628385,
+        1637486,
+        1642270,
+        1692313,
+        1693603,
+        1697048,
+        1718638,
+        1821332,
+        3170727
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 7129618,
+          "name": "Carlo Collodi",
+          "type": "Crew",
+          "role": "Novel",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7231951,
+          "name": "Don Mancini",
+          "type": "Crew",
+          "role": "Thanks",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7294038,
+          "name": "Francis Ford Coppola",
+          "type": "Crew",
+          "role": "Thanks",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7929067,
+          "name": "Todd Masters",
+          "type": "Crew",
+          "role": "Makeup Effects",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72705290,
+          "name": "Nicole Holland",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72888899,
+          "name": "Stuart Alson",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74843185,
+          "name": "Scott Chambers",
+          "type": "Crew",
+          "role": "Producer, Location Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79160250,
+          "name": "Dan Allen",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79363401,
+          "name": "Andrew Scott Bell",
+          "type": "Crew",
+          "role": "Compositor, Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79366412,
+          "name": "Vince Knight",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79537871,
+          "name": "Andy van Veen",
+          "type": "Crew",
+          "role": "Chef",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79675386,
+          "name": "David Coppa",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710186039,
+          "name": "Carlos Rincon",
+          "type": "Crew",
+          "role": "Associate Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710348215,
+          "name": "Rhys Frake-Waterfield",
+          "type": "Crew",
+          "role": "Producer, Director, Writer, Executive Producer, Editor, Location Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710393761,
+          "name": "Seb Cox",
+          "type": "Crew",
+          "role": "Animation",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710768556,
+          "name": "Jenny Miller",
+          "type": "Crew",
+          "role": "Set Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711233086,
+          "name": "Max Arlott",
+          "type": "Crew",
+          "role": "Second Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711290594,
+          "name": "Cameron Bell",
+          "type": "Crew",
+          "role": "Cinematography, Camera Operator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711310466,
+          "name": "Lewis Santer",
+          "type": "Crew",
+          "role": "Visual Effects",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711631488,
+          "name": "Paula Anne Booker-Harrison",
+          "type": "Crew",
+          "role": "Prosthetics",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711684032,
+          "name": "Daniel Medina",
+          "type": "Crew",
+          "role": "Art Designer, Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711684046,
+          "name": "Rhys Warrington",
+          "type": "Crew",
+          "role": "Sound",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711290594,
+          "name": "Cameron Bell",
+          "type": "Cast",
+          "role": "James",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711631470,
+          "name": "Jude Evan Lloyd",
+          "type": "Cast",
+          "role": "Pinocchio (voice)",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7794317,
+          "name": "Richard Brake",
+          "type": "Cast",
+          "role": "Geppetto",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 711113799,
+          "name": "Jessica Balmer",
+          "type": "Cast",
+          "role": "Mia",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 711552961,
+          "name": "Jack Art Gray",
+          "type": "Cast",
+          "role": "Dudley",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 7807720,
+          "name": "Robert Englund",
+          "type": "Cast",
+          "role": "Cricket (voice)",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 71266727,
+          "name": "Emma Tate",
+          "type": "Cast",
+          "role": "Woodmother (voice)",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 711484583,
+          "name": "Luca Marandola",
+          "type": "Cast",
+          "role": "Logan",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 711442467,
+          "name": "Karolina Ugrenyuk",
+          "type": "Cast",
+          "role": "Amanda",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 710220424,
+          "name": "Mya Brown",
+          "type": "Cast",
+          "role": "Georgia",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 74843185,
+          "name": "Scott Chambers",
+          "type": "Cast",
+          "role": "Christopher Robin",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 710541039,
+          "name": "Kelly Rian Sanson",
+          "type": "Cast",
+          "role": "Miss Daniels",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 710064148,
+          "name": "Jay Robertson",
+          "type": "Cast",
+          "role": "Drunk Driver",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 710219621,
+          "name": "Andrew Rolfe",
+          "type": "Cast",
+          "role": "Doctor",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 711310579,
+          "name": "Peter DeSouza-Feighoney",
+          "type": "Cast",
+          "role": "Michael Darling",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 711564425,
+          "name": "Elliott Spilling",
+          "type": "Cast",
+          "role": "Zach",
+          "order": 19
+        },
+        {
+          "watchmodePersonId": 711493685,
+          "name": "Ardy Yusuf",
+          "type": "Cast",
+          "role": "Joey",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 710652641,
+          "name": "Alex Butler",
+          "type": "Cast",
+          "role": "Patient",
+          "order": 21
+        },
+        {
+          "watchmodePersonId": 72599135,
+          "name": "Marcus Massey",
+          "type": "Cast",
+          "role": "Documentary Narrator (voice)",
+          "order": 22
+        },
+        {
+          "watchmodePersonId": 711359597,
+          "name": "Holly Robertson",
+          "type": "Cast",
+          "role": "School Girl",
+          "order": 23
+        },
+        {
+          "watchmodePersonId": 711359601,
+          "name": "Liliana Polkowska",
+          "type": "Cast",
+          "role": "School Girl with Teddy Bear",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 711491737,
+          "name": "Rohan Kit Johnson",
+          "type": "Cast",
+          "role": "School Boy",
+          "order": 25
+        },
+        {
+          "watchmodePersonId": 711494365,
+          "name": "William Turnbull",
+          "type": "Cast",
+          "role": "Brian",
+          "order": 26
+        },
+        {
+          "watchmodePersonId": 711494371,
+          "name": "Thomas Blower",
+          "type": "Cast",
+          "role": "School Boy",
+          "order": 28
+        },
+        {
+          "watchmodePersonId": 711494374,
+          "name": "Mila Bohan",
+          "type": "Cast",
+          "role": "School Girl",
+          "order": 29
+        },
+        {
+          "watchmodePersonId": 711275458,
+          "name": "Khaleesi Briar-Rose",
+          "type": "Cast",
+          "role": "School Kid",
+          "order": 31
+        },
+        {
+          "watchmodePersonId": 711494380,
+          "name": "Robin Burns",
+          "type": "Cast",
+          "role": "School Boy",
+          "order": 32
+        },
+        {
+          "watchmodePersonId": 711494384,
+          "name": "Adrian Burton",
+          "type": "Cast",
+          "role": "Teacher",
+          "order": 33
+        },
+        {
+          "watchmodePersonId": 711494390,
+          "name": "Leila Elford",
+          "type": "Cast",
+          "role": "School Kid",
+          "order": 35
+        },
+        {
+          "watchmodePersonId": 79343891,
+          "name": "Wesley Lloyd",
+          "type": "Cast",
+          "role": "Hospital Staff",
+          "order": 36
+        },
+        {
+          "watchmodePersonId": 711494394,
+          "name": "Oliver Mulvihill",
+          "type": "Cast",
+          "role": "School Boy",
+          "order": 37
+        },
+        {
+          "watchmodePersonId": 711494406,
+          "name": "Aaliyah Francis Usher-James",
+          "type": "Cast",
+          "role": "School Girl Extra",
+          "order": 45
+        },
+        {
+          "watchmodePersonId": 711494412,
+          "name": "Thomas Shaffer",
+          "type": "Cast",
+          "role": "Patron (uncredited)",
+          "order": 47
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 5.6,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 55,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-rammstein",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=name&search_value=Rammstein+-+Live+in+Mexico+City&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11230178/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11230178,
+      "title": "Rammstein - Live in Mexico City",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt46000907",
+      "tmdbId": 1753205
+    },
+    "metadata": {
+      "title": "",
+      "originalTitle": "Rammstein – Live in Mexico City",
+      "englishTitle": "Rammstein - Live in Mexico City",
+      "year": 2026,
+      "originalLanguage": "de",
+      "runtimeMinutes": 110,
+      "releaseDate": "2026-11-04",
+      "genres": [
+        "Documentary",
+        "Music"
+      ],
+      "imdbId": "tt46000907",
+      "tmdbId": 1753205,
+      "trailerYoutubeUrl": null,
+      "similarWatchmodeTitleIds": [
+        113565,
+        1136692,
+        1147804,
+        1149645,
+        1186048,
+        1227608,
+        1282263,
+        1324978,
+        1344533,
+        1400250,
+        1402282,
+        1421168,
+        1595344,
+        1613696,
+        1679886,
+        1741450,
+        1887267,
+        1914755,
+        11107093,
+        4144459
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 72735551,
+          "name": "Paul Dugdale",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7923524,
+          "name": "Till Lindemann",
+          "type": "Cast",
+          "role": "Self",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79021746,
+          "name": "Richard Kruspe",
+          "type": "Cast",
+          "role": "Self",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7161675,
+          "name": "Christoph Schneider",
+          "type": "Cast",
+          "role": "Self",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 79021747,
+          "name": "Paul Landers",
+          "type": "Cast",
+          "role": "Self",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 7721565,
+          "name": "Oliver Riedel",
+          "type": "Cast",
+          "role": "Self",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 7289664,
+          "name": "Christian Lorenz",
+          "type": "Cast",
+          "role": "Self",
+          "order": 5
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": null,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": null,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-sense",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt13609648&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/11009661/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 11009661,
+      "title": "Sense and Sensibility",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt13609648",
+      "tmdbId": 1503762
+    },
+    "metadata": {
+      "title": "Sentido y sensibilidad",
+      "originalTitle": "Sense and Sensibility",
+      "englishTitle": "Sense and Sensibility",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 132,
+      "releaseDate": "2026-09-23",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "imdbId": "tt13609648",
+      "tmdbId": 1503762,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=mcrwcvad84U",
+      "similarWatchmodeTitleIds": [
+        130128,
+        145749,
+        1126597,
+        1130072,
+        1171466,
+        1189955,
+        1231641,
+        1250035,
+        1300275,
+        1307737,
+        1339373,
+        1374488,
+        1376470,
+        1379242,
+        1383424,
+        1410818,
+        1471558,
+        1472827,
+        1472829,
+        461241
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 740025,
+          "name": "Andrea King",
+          "type": "Crew",
+          "role": "Foley Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 768433,
+          "name": "Arnaud Potier",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7187830,
+          "name": "Dan Lowe",
+          "type": "Crew",
+          "role": "Gaffer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7206254,
+          "name": "David Mackie",
+          "type": "Crew",
+          "role": "Sound Effects Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7268898,
+          "name": "Eric Fellner",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7412039,
+          "name": "James Mather",
+          "type": "Crew",
+          "role": "Supervising Sound Editor, Sound Re-Recording Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7417622,
+          "name": "Jane Austen",
+          "type": "Crew",
+          "role": "Novel",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7418015,
+          "name": "Jane Frazer",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7418223,
+          "name": "Jane Jackson",
+          "type": "Crew",
+          "role": "Script Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7712354,
+          "name": "Nina Armstrong",
+          "type": "Crew",
+          "role": "Stunt Coordinator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7923758,
+          "name": "Tim Bevan",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71139021,
+          "name": "Caroline Barclay",
+          "type": "Crew",
+          "role": "Supervising Art Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71441405,
+          "name": "Jo Wallett",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71709163,
+          "name": "Niv Adiri",
+          "type": "Crew",
+          "role": "Sound Re-Recording Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71890322,
+          "name": "Sue Harding",
+          "type": "Crew",
+          "role": "Foley Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72523583,
+          "name": "Kharmel Cochrane",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72687611,
+          "name": "Nadia Stacey",
+          "type": "Crew",
+          "role": "Hair Designer, Makeup Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 73187938,
+          "name": "Connie Farr",
+          "type": "Crew",
+          "role": "Music Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74706587,
+          "name": "Nick Roeten",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78950158,
+          "name": "Adam Mendez",
+          "type": "Crew",
+          "role": "Foley Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78954010,
+          "name": "Roger Goula",
+          "type": "Crew",
+          "role": "Music, Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78993904,
+          "name": "Francesca Balestra Di Mottola",
+          "type": "Crew",
+          "role": "Production Design, Production Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79007780,
+          "name": "Georgia Oakley",
+          "type": "Crew",
+          "role": "Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79141597,
+          "name": "Jack Jagodka",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79219369,
+          "name": "Yves-Marie Omnes",
+          "type": "Crew",
+          "role": "Production Sound Mixer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79285959,
+          "name": "Alex Gascoigne",
+          "type": "Crew",
+          "role": "Additional Colorist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79366127,
+          "name": "Celia De La Hey",
+          "type": "Crew",
+          "role": "Set Decoration",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79367812,
+          "name": "Lucy Cork",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79423835,
+          "name": "Grace Snell",
+          "type": "Crew",
+          "role": "Costume Design, Costume Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79450126,
+          "name": "Izabella Curry",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79451787,
+          "name": "Marlon Beyer Rieger",
+          "type": "Crew",
+          "role": "Second Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79459768,
+          "name": "Chelsea Mather",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79481092,
+          "name": "Chad Orororo",
+          "type": "Crew",
+          "role": "Sound Effects Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79486995,
+          "name": "Zoe Flower",
+          "type": "Crew",
+          "role": "Unit Publicist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79492017,
+          "name": "Oliver Ferris",
+          "type": "Crew",
+          "role": "Foley Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79517375,
+          "name": "Florian Robin",
+          "type": "Crew",
+          "role": "Stunt Coordinator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79524974,
+          "name": "Andrew Maddison",
+          "type": "Crew",
+          "role": "VFX Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79569446,
+          "name": "Liyana Mansor",
+          "type": "Crew",
+          "role": "Assistant Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79599108,
+          "name": "Damien Vandercruyssen",
+          "type": "Crew",
+          "role": "Colorist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79650655,
+          "name": "Katy Bullock",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79675222,
+          "name": "Tony Boffey",
+          "type": "Crew",
+          "role": "Standby Art Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79725091,
+          "name": "Natasha Mullan",
+          "type": "Crew",
+          "role": "Additional Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79842967,
+          "name": "Claire Quinn",
+          "type": "Crew",
+          "role": "Film Processor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79896846,
+          "name": "Donald E G Bentley",
+          "type": "Crew",
+          "role": "First Assistant Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79925584,
+          "name": "Diana Reid",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79970866,
+          "name": "Angela Moneke",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710080213,
+          "name": "Matthew Bell",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710338600,
+          "name": "Rob Davidson",
+          "type": "Crew",
+          "role": "Foley Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710398924,
+          "name": "Mark Epstein",
+          "type": "Crew",
+          "role": "VFX Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710443248,
+          "name": "Holly Blakey",
+          "type": "Crew",
+          "role": "Choreographer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710467452,
+          "name": "Kelly Allum",
+          "type": "Crew",
+          "role": "First Assistant Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710556289,
+          "name": "Katie Linard",
+          "type": "Crew",
+          "role": "Additional Colorist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710569409,
+          "name": "Nikita Mitchell",
+          "type": "Crew",
+          "role": "Stunt Double, Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710709114,
+          "name": "Elliot Riella",
+          "type": "Crew",
+          "role": "Online Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711012870,
+          "name": "Rose Powell",
+          "type": "Crew",
+          "role": "Casting Associate",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711178429,
+          "name": "India Flint",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711477098,
+          "name": "Thea Paulett",
+          "type": "Crew",
+          "role": "Executive Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711515561,
+          "name": "Kate Hodgson",
+          "type": "Crew",
+          "role": "Chaperone",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711535419,
+          "name": "Stevie Parker",
+          "type": "Crew",
+          "role": "Stunts",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711580928,
+          "name": "Diana Reid",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711580932,
+          "name": "Jacob Green",
+          "type": "Crew",
+          "role": "Visual Effects Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711582900,
+          "name": "Tallulah Baker",
+          "type": "Crew",
+          "role": "Visual Effects Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711634138,
+          "name": "Alice Burridge",
+          "type": "Crew",
+          "role": "Associate Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711634141,
+          "name": "Richard Sharples",
+          "type": "Crew",
+          "role": "Special Effects Technician",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711634142,
+          "name": "Ellen D'Andrade Brown",
+          "type": "Crew",
+          "role": "Hair Supervisor, Makeup Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711634143,
+          "name": "Grayson Galway",
+          "type": "Crew",
+          "role": "Key Hair Stylist, Key Makeup Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711655656,
+          "name": "Rosanna Normanton",
+          "type": "Crew",
+          "role": "Other",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72281190,
+          "name": "Esmé Creed-Miles",
+          "type": "Cast",
+          "role": "Marianne Dashwood",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79178083,
+          "name": "Daisy Edgar-Jones",
+          "type": "Cast",
+          "role": "Elinor Dashwood",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72130056,
+          "name": "Caitríona Balfe",
+          "type": "Cast",
+          "role": "Mrs. Dashwood",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 711159637,
+          "name": "Bodhi Rae Breathnach",
+          "type": "Cast",
+          "role": "Margaret Dashwood",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 7297430,
+          "name": "Frank Dillane",
+          "type": "Cast",
+          "role": "John Willoughby",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 74361853,
+          "name": "Herbert Nordrum",
+          "type": "Cast",
+          "role": "Colonel Brandon",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 71318005,
+          "name": "George MacKay",
+          "type": "Cast",
+          "role": "Edward Ferrars",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 7289440,
+          "name": "Fiona Shaw",
+          "type": "Cast",
+          "role": "Mrs. Jennings",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 74878106,
+          "name": "Stacy Martin",
+          "type": "Cast",
+          "role": "Fanny Dashwood",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 71930541,
+          "name": "Tom Brooke",
+          "type": "Cast",
+          "role": "John Dashwood",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 75947234,
+          "name": "Turlough Convery",
+          "type": "Cast",
+          "role": "Sir John Middleton",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 73162705,
+          "name": "Chloe Pirrie",
+          "type": "Cast",
+          "role": "Lady Middleton",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 710467638,
+          "name": "Forrest Bothwell",
+          "type": "Cast",
+          "role": "Robert Ferrars",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 711677466,
+          "name": "Ceara Coveney",
+          "type": "Cast",
+          "role": "Lucy Steele",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 78969307,
+          "name": "Eliot Sumner",
+          "type": "Cast",
+          "role": "Mr. Palmer",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 711424293,
+          "name": "Bethany Slater",
+          "type": "Cast",
+          "role": "Mrs. Palmer",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 79494382,
+          "name": "Ross Cullum",
+          "type": "Cast",
+          "role": "Portman Square Butler",
+          "order": 16
+        },
+        {
+          "watchmodePersonId": 710951856,
+          "name": "Sophie McGibbon",
+          "type": "Cast",
+          "role": "Miss Grey",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 79356663,
+          "name": "Matt Green",
+          "type": "Cast",
+          "role": "Cleveland Doctor",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 711657082,
+          "name": "Charlie Varlet",
+          "type": "Cast",
+          "role": "Nelly",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 711299747,
+          "name": "Paulie Bovingdon",
+          "type": "Cast",
+          "role": "Harry",
+          "order": 21
+        },
+        {
+          "watchmodePersonId": 711509346,
+          "name": "Thea Beyleveld",
+          "type": "Cast",
+          "role": "Norland Housekeeper",
+          "order": 22
+        },
+        {
+          "watchmodePersonId": 711657093,
+          "name": "Kai Harvey",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 711657096,
+          "name": "Andrew Lennox Scott",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 25
+        },
+        {
+          "watchmodePersonId": 79770342,
+          "name": "Keira Johnson",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 26
+        },
+        {
+          "watchmodePersonId": 710355777,
+          "name": "Becky Namgauds",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 27
+        },
+        {
+          "watchmodePersonId": 711657101,
+          "name": "Lauren Jenkins",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 28
+        },
+        {
+          "watchmodePersonId": 711300371,
+          "name": "Lucia Chocarro",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 30
+        },
+        {
+          "watchmodePersonId": 711657107,
+          "name": "Cato Enrique Kendall-Muniesa",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 31
+        },
+        {
+          "watchmodePersonId": 711657110,
+          "name": "Daniel Bennett",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 33
+        },
+        {
+          "watchmodePersonId": 711657112,
+          "name": "Mateusz Piekarski",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 34
+        },
+        {
+          "watchmodePersonId": 711657116,
+          "name": "Dylan Jones",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 35
+        },
+        {
+          "watchmodePersonId": 711657118,
+          "name": "Miles Kearley",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 36
+        },
+        {
+          "watchmodePersonId": 711657120,
+          "name": "Eliott Meunier",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 37
+        },
+        {
+          "watchmodePersonId": 711657121,
+          "name": "Nadine Elise",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 38
+        },
+        {
+          "watchmodePersonId": 79647100,
+          "name": "Paris Fitzpatrick",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 40
+        },
+        {
+          "watchmodePersonId": 711523161,
+          "name": "Evelyn Hart",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 41
+        },
+        {
+          "watchmodePersonId": 711657126,
+          "name": "Petronella Wiehahn",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 42
+        },
+        {
+          "watchmodePersonId": 710922689,
+          "name": "Evie Webzell",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 43
+        },
+        {
+          "watchmodePersonId": 711657127,
+          "name": "Ronan Cardoza",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 44
+        },
+        {
+          "watchmodePersonId": 79493555,
+          "name": "Grace Jabbari",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 45
+        },
+        {
+          "watchmodePersonId": 711657128,
+          "name": "Fi Caspia",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 46
+        },
+        {
+          "watchmodePersonId": 711657130,
+          "name": "Jack Thomson",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 47
+        },
+        {
+          "watchmodePersonId": 711657131,
+          "name": "Jacqueline Copper",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 49
+        },
+        {
+          "watchmodePersonId": 711657137,
+          "name": "Thomas Sutton",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 50
+        },
+        {
+          "watchmodePersonId": 711657140,
+          "name": "Jimmy Adams",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 51
+        },
+        {
+          "watchmodePersonId": 710811653,
+          "name": "John J.J. James",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 53
+        },
+        {
+          "watchmodePersonId": 711657146,
+          "name": "Timothy Firmin",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 54
+        },
+        {
+          "watchmodePersonId": 711657147,
+          "name": "Joshua Attwood",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 55
+        },
+        {
+          "watchmodePersonId": 711657148,
+          "name": "Vinicius Salles",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 56
+        },
+        {
+          "watchmodePersonId": 711241977,
+          "name": "Kacper Lajewski",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 57
+        },
+        {
+          "watchmodePersonId": 711657151,
+          "name": "Violet Savage",
+          "type": "Cast",
+          "role": "Dancer",
+          "order": 58
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 7.5,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 74,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-wildwood",
+    "provider": "Watchmode",
+    "queries": {
+      "searchUrl": "https://api.watchmode.com/v1/search/?search_field=imdb_id&search_value=tt2056785&types=movie",
+      "detailsUrl": "https://api.watchmode.com/v1/title/1682009/details/?append_to_response=cast-crew&language=es"
+    },
+    "match": {
+      "watchmodeId": 1682009,
+      "title": "Wildwood",
+      "year": 2026,
+      "type": "movie",
+      "imdbId": "tt2056785",
+      "tmdbId": 791523
+    },
+    "metadata": {
+      "title": "Wildwood: El Bosque Salvaje",
+      "originalTitle": "Wildwood",
+      "englishTitle": "Wildwood",
+      "year": 2026,
+      "originalLanguage": "en",
+      "runtimeMinutes": 132,
+      "releaseDate": "2026-10-19",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "imdbId": "tt2056785",
+      "tmdbId": 791523,
+      "trailerYoutubeUrl": "https://www.youtube.com/watch?v=POneS8h1jyU",
+      "similarWatchmodeTitleIds": [
+        1110314,
+        1112096,
+        1123635,
+        1129901,
+        1164612,
+        1169836,
+        1189781,
+        1225642,
+        1288259,
+        1346023,
+        1462871,
+        1471721,
+        1478858,
+        1549871,
+        1576276,
+        1593604,
+        1630289,
+        1636719,
+        1672761,
+        1901214
+      ],
+      "credits": [
+        {
+          "watchmodePersonId": 731643,
+          "name": "Allison Jones",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7125141,
+          "name": "Caleb Deschanel",
+          "type": "Crew",
+          "role": "Director of Photography",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7196302,
+          "name": "Dario Marianelli",
+          "type": "Crew",
+          "role": "Original Music Composer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7302880,
+          "name": "Fred Armisen",
+          "type": "Crew",
+          "role": "Thanks",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7665572,
+          "name": "Michael Schlingmann",
+          "type": "Crew",
+          "role": "Thanks",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7685452,
+          "name": "Mocean Melvin",
+          "type": "Crew",
+          "role": "Thanks",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7703570,
+          "name": "Nelson Lowry",
+          "type": "Crew",
+          "role": "Production Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 7887391,
+          "name": "Steve Emerson",
+          "type": "Crew",
+          "role": "Visual Effects Supervisor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71072044,
+          "name": "Arianne Sutner",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71168286,
+          "name": "Christopher Murrie",
+          "type": "Crew",
+          "role": "Editor",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71220408,
+          "name": "Deborah Cook",
+          "type": "Crew",
+          "role": "Costume Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71867729,
+          "name": "Sirius Buisson",
+          "type": "Crew",
+          "role": "VFX Lighting Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71870223,
+          "name": "Solomon Burbridge",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71941920,
+          "name": "Travis Knight",
+          "type": "Crew",
+          "role": "Director, Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72158166,
+          "name": "Chris Butler",
+          "type": "Crew",
+          "role": "Screenplay",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72180557,
+          "name": "Colin Meloy",
+          "type": "Crew",
+          "role": "Novel, Songs",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72267002,
+          "name": "Emanuela Cozzi",
+          "type": "Crew",
+          "role": "Head of Story",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 72830589,
+          "name": "Samuel Wilson",
+          "type": "Crew",
+          "role": "Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78952002,
+          "name": "Amaury Coljon",
+          "type": "Crew",
+          "role": "Senior Animator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 78952363,
+          "name": "Kent Melton",
+          "type": "Crew",
+          "role": "Thanks",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79039513,
+          "name": "Valentin Lucas",
+          "type": "Crew",
+          "role": "Storyboard Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79103190,
+          "name": "Jane Brodie",
+          "type": "Crew",
+          "role": "Graphic Designer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79153906,
+          "name": "Ben Harris",
+          "type": "Crew",
+          "role": "Casting",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79396259,
+          "name": "Spriha Banik",
+          "type": "Crew",
+          "role": "Visual Effects Production Manager",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79413106,
+          "name": "Christina Mackin",
+          "type": "Crew",
+          "role": "Co-Producer",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79413174,
+          "name": "Jesse Gregg",
+          "type": "Crew",
+          "role": "Set Dresser",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79522117,
+          "name": "Joe Beckley",
+          "type": "Crew",
+          "role": "Visual Effects Art Director, Concept Artist",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 79833059,
+          "name": "Merve Caydere Dobai",
+          "type": "Crew",
+          "role": "Set Designer, Assistant Art Director",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710438333,
+          "name": "Cassie Lopez",
+          "type": "Crew",
+          "role": "Art Direction",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 710778408,
+          "name": "Tilly Fidler",
+          "type": "Crew",
+          "role": "Animation",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 711687535,
+          "name": "Evan Rogers",
+          "type": "Crew",
+          "role": "Orchestrator",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 71131262,
+          "name": "Carey Mulligan",
+          "type": "Cast",
+          "role": "Alexandra (voice)",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 76755869,
+          "name": "Peyton Elizabeth Lee",
+          "type": "Cast",
+          "role": "Prue McKeel (voice)",
+          "order": 1
+        },
+        {
+          "watchmodePersonId": 74390840,
+          "name": "Jacob Tremblay",
+          "type": "Cast",
+          "role": "Curtis Mehlberg (voice)",
+          "order": 2
+        },
+        {
+          "watchmodePersonId": 7598036,
+          "name": "Mahershala Ali",
+          "type": "Cast",
+          "role": "Brenden (voice)",
+          "order": 3
+        },
+        {
+          "watchmodePersonId": 747871,
+          "name": "Angela Bassett",
+          "type": "Cast",
+          "role": "The General (voice)",
+          "order": 4
+        },
+        {
+          "watchmodePersonId": 74089545,
+          "name": "Awkwafina",
+          "type": "Cast",
+          "role": "Septima (voice)",
+          "order": 5
+        },
+        {
+          "watchmodePersonId": 71394992,
+          "name": "Jake Johnson",
+          "type": "Cast",
+          "role": "Mr. McKeel (voice)",
+          "order": 6
+        },
+        {
+          "watchmodePersonId": 7148239,
+          "name": "Charlie Day",
+          "type": "Cast",
+          "role": "Dmitri (voice)",
+          "order": 7
+        },
+        {
+          "watchmodePersonId": 73040217,
+          "name": "Amandla Stenberg",
+          "type": "Cast",
+          "role": "Niamh (voice)",
+          "order": 8
+        },
+        {
+          "watchmodePersonId": 71423307,
+          "name": "Jemaine Clement",
+          "type": "Cast",
+          "role": "Roger Swindon (voice)",
+          "order": 9
+        },
+        {
+          "watchmodePersonId": 73644891,
+          "name": "Maya Erskine",
+          "type": "Cast",
+          "role": "Mrs. McKeel / Darla Thennis (voice)",
+          "order": 10
+        },
+        {
+          "watchmodePersonId": 7909019,
+          "name": "Tantoo Cardinal",
+          "type": "Cast",
+          "role": "Iphigenia (voice)",
+          "order": 11
+        },
+        {
+          "watchmodePersonId": 7933287,
+          "name": "Tom Waits",
+          "type": "Cast",
+          "role": "Maxim (voice)",
+          "order": 12
+        },
+        {
+          "watchmodePersonId": 7795305,
+          "name": "Richard E. Grant",
+          "type": "Cast",
+          "role": "Owl Rex (voice)",
+          "order": 13
+        },
+        {
+          "watchmodePersonId": 7102675,
+          "name": "Blythe Danner",
+          "type": "Cast",
+          "role": "The Seer (voice)",
+          "order": 14
+        },
+        {
+          "watchmodePersonId": 7999558,
+          "name": "Ólafur Darri Ólafsson",
+          "type": "Cast",
+          "role": "Seamus (voice)",
+          "order": 15
+        },
+        {
+          "watchmodePersonId": 72792693,
+          "name": "Rob Delaney",
+          "type": "Cast",
+          "role": "Samuel (voice)",
+          "order": 16
+        },
+        {
+          "watchmodePersonId": 71593682,
+          "name": "Marc Evan Jackson",
+          "type": "Cast",
+          "role": "Lars Svik (voice)",
+          "order": 17
+        },
+        {
+          "watchmodePersonId": 7559480,
+          "name": "Len Cariou",
+          "type": "Cast",
+          "role": "Richard (voice)",
+          "order": 18
+        },
+        {
+          "watchmodePersonId": 711316141,
+          "name": "Arthur Knight",
+          "type": "Cast",
+          "role": "Mac McKeel (voice)",
+          "order": 19
+        },
+        {
+          "watchmodePersonId": 79073093,
+          "name": "Jamie Sara Lewis",
+          "type": "Cast",
+          "role": "Maid (voice)",
+          "order": 20
+        },
+        {
+          "watchmodePersonId": 711719396,
+          "name": "Ridley Knight",
+          "type": "Cast",
+          "role": "Angus the Archer (voice)",
+          "order": 21
+        },
+        {
+          "watchmodePersonId": 7433023,
+          "name": "Jeannie Elias",
+          "type": "Cast",
+          "role": "Busybody (voice)",
+          "order": 22
+        },
+        {
+          "watchmodePersonId": 7174896,
+          "name": "Colleen O'Shaughnessey",
+          "type": "Cast",
+          "role": "Ember (voice)",
+          "order": 23
+        },
+        {
+          "watchmodePersonId": 71048624,
+          "name": "Andrew Morgado",
+          "type": "Cast",
+          "role": "Coyote Soldier /Crowd (Adult) (voice)",
+          "order": 24
+        },
+        {
+          "watchmodePersonId": 72736243,
+          "name": "Paul Guyet",
+          "type": "Cast",
+          "role": "Coyote Soldier (voice)",
+          "order": 25
+        },
+        {
+          "watchmodePersonId": 79028433,
+          "name": "Imari Williams",
+          "type": "Cast",
+          "role": "Coyote Soldier /Crowd (Adult) (voice)",
+          "order": 26
+        },
+        {
+          "watchmodePersonId": 7173287,
+          "name": "Clé Bennett",
+          "type": "Cast",
+          "role": "Warden Coyote (voice)",
+          "order": 27
+        },
+        {
+          "watchmodePersonId": 7736203,
+          "name": "Patrick Labyorteaux",
+          "type": "Cast",
+          "role": "Labyorteaux Wild Pig Cabbie (voice)",
+          "order": 28
+        },
+        {
+          "watchmodePersonId": 711719403,
+          "name": "William Knight",
+          "type": "Cast",
+          "role": "Wounded Bandit (voice)",
+          "order": 29
+        },
+        {
+          "watchmodePersonId": 7643207,
+          "name": "Matt Adler",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 30
+        },
+        {
+          "watchmodePersonId": 7884045,
+          "name": "Stephen Apostolina",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 31
+        },
+        {
+          "watchmodePersonId": 72818737,
+          "name": "Ryan Bartley",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 32
+        },
+        {
+          "watchmodePersonId": 7466716,
+          "name": "John Eric Bentley",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 33
+        },
+        {
+          "watchmodePersonId": 7780736,
+          "name": "Ranjani Brow",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 34
+        },
+        {
+          "watchmodePersonId": 7977244,
+          "name": "William Calvert",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 35
+        },
+        {
+          "watchmodePersonId": 7643453,
+          "name": "Matt Corboy",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 36
+        },
+        {
+          "watchmodePersonId": 7202078,
+          "name": "David Cowgill",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 37
+        },
+        {
+          "watchmodePersonId": 711719408,
+          "name": "Michael De Toffoli",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 38
+        },
+        {
+          "watchmodePersonId": 711719412,
+          "name": "Christa De Falco",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 39
+        },
+        {
+          "watchmodePersonId": 79149448,
+          "name": "Lynn Evans",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 40
+        },
+        {
+          "watchmodePersonId": 72152620,
+          "name": "Chase Fein",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 41
+        },
+        {
+          "watchmodePersonId": 7403201,
+          "name": "Jackie Gonneau",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 42
+        },
+        {
+          "watchmodePersonId": 71409624,
+          "name": "Jason Griffith",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 43
+        },
+        {
+          "watchmodePersonId": 7116608,
+          "name": "Bridget Hoffman",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 44
+        },
+        {
+          "watchmodePersonId": 711719423,
+          "name": "Allison Jean Huffman",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 46
+        },
+        {
+          "watchmodePersonId": 7801905,
+          "name": "Rif Hutton",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 47
+        },
+        {
+          "watchmodePersonId": 71077861,
+          "name": "Ashley Lambert",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 48
+        },
+        {
+          "watchmodePersonId": 722464,
+          "name": "Alex Mandelberg",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 50
+        },
+        {
+          "watchmodePersonId": 7913370,
+          "name": "Terence Mathews",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 51
+        },
+        {
+          "watchmodePersonId": 7853193,
+          "name": "Scott Menville",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 52
+        },
+        {
+          "watchmodePersonId": 7206805,
+          "name": "David Michie",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 53
+        },
+        {
+          "watchmodePersonId": 7797587,
+          "name": "Richard Miro",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 54
+        },
+        {
+          "watchmodePersonId": 79522144,
+          "name": "Finley Mulligan",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 55
+        },
+        {
+          "watchmodePersonId": 710942630,
+          "name": "Julian Narino",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 56
+        },
+        {
+          "watchmodePersonId": 7221358,
+          "name": "Devika Parikh",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 57
+        },
+        {
+          "watchmodePersonId": 7496020,
+          "name": "Juan Pope",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 58
+        },
+        {
+          "watchmodePersonId": 71092781,
+          "name": "Ben Pronsky",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 59
+        },
+        {
+          "watchmodePersonId": 79455772,
+          "name": "Warren Sroka",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 61
+        },
+        {
+          "watchmodePersonId": 71513868,
+          "name": "Kelly Stables",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 62
+        },
+        {
+          "watchmodePersonId": 7750528,
+          "name": "Pepper Sweeney",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 63
+        },
+        {
+          "watchmodePersonId": 7860937,
+          "name": "Shane Sweet",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 64
+        },
+        {
+          "watchmodePersonId": 79675201,
+          "name": "Jaquita Ta'le",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 65
+        },
+        {
+          "watchmodePersonId": 7854164,
+          "name": "Scott Whyte",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 66
+        },
+        {
+          "watchmodePersonId": 711719512,
+          "name": "Matt Wolf",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 67
+        },
+        {
+          "watchmodePersonId": 71857896,
+          "name": "Shelby Young",
+          "type": "Cast",
+          "role": "Crowd (Adult) (voice)",
+          "order": 68
+        },
+        {
+          "watchmodePersonId": 711181229,
+          "name": "Sander Argabrite",
+          "type": "Cast",
+          "role": "Crowd (Youth) (voice)",
+          "order": 69
+        },
+        {
+          "watchmodePersonId": 711719516,
+          "name": "Esme Ellis",
+          "type": "Cast",
+          "role": "Crowd (Youth) (voice)",
+          "order": 70
+        },
+        {
+          "watchmodePersonId": 711719517,
+          "name": "Liam Karlsson",
+          "type": "Cast",
+          "role": "Crowd (Youth) (voice)",
+          "order": 71
+        },
+        {
+          "watchmodePersonId": 710828528,
+          "name": "Kellan Tetlow",
+          "type": "Cast",
+          "role": "Crowd (Youth) (voice)",
+          "order": 73
+        },
+        {
+          "watchmodePersonId": 711719518,
+          "name": "Sienna Wolf",
+          "type": "Cast",
+          "role": "Crowd (Youth) (voice)",
+          "order": 74
+        }
+      ]
+    },
+    "ratings": {
+      "source": "Watchmode",
+      "audience": {
+        "value": 8.9,
+        "scale": 10,
+        "voteCount": null
+      },
+      "critics": {
+        "value": 93,
+        "scale": 100
+      }
+    }
+  },
+  {
+    "attempt": "watchmode-abuelo",
+    "provider": "Watchmode",
+    "query": {
+      "title": "Abuelo Gaucho",
+      "year": 2025,
+      "includeRatings": true
+    },
+    "error": "No unequivocal title/year movie match (helper stderr, 2026-10-29)."
+  }
+]

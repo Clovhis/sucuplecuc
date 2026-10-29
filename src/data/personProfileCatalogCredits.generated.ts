@@ -307,7 +307,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "andy-muschietti": [
     "the-flash-2023",
     "it-chapter-two-2019",
-    "it-2017"
+    "it-2017",
+    "mama-2013"
   ],
   "andy-serkis": [
     "venom-let-there-be-carnage-2021",
@@ -696,6 +697,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "los-intocables-de-eliot-ness-1987",
     "el-precio-del-poder-1983",
     "impacto-1981",
+    "carrie-1976",
     "hola-mama-1970"
   ],
   "brian-tyree-henry": [
@@ -1204,6 +1206,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-ciudadano-ilustre-2016"
   ],
   "daisy-edgar-jones": [
+    "sensatez-y-sentimiento-2026",
     "twisters-2024"
   ],
   "dakota-fanning": [
@@ -2705,7 +2708,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "dark-phoenix-2019",
     "it-chapter-two-2019",
     "mision-rescate-2015",
-    "interstellar-2014"
+    "interstellar-2014",
+    "mama-2013"
   ],
   "jessica-harper": [
     "stardust-memories-1980",
@@ -4735,6 +4739,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-bruja-2015"
   ],
   "robert-englund": [
+    "pinocho-sin-cuerdas-2026",
     "freddy-vs-jason-2003",
     "wes-craven-s-new-nightmare-1994",
     "freddy-s-dead-the-final-nightmare-1991",
@@ -4999,6 +5004,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "sandra-huller": [
     "digger-2026",
     "project-hail-mary-2026",
+    "tierra-de-mi-padre-2026",
     "anatomia-de-una-caida-2023",
     "the-zone-of-interest-2023"
   ],

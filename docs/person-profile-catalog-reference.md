@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-27. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-29. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4303
+Total de vínculos de películas del catálogo: 4309
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -54,7 +54,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Andrea Del Boca | `andrea-del-boca` | /personas/andrea-del-boca/ | Actriz | 1 | 4 |
 | Andrew Garfield | `andrew-garfield` | /personas/andrew-garfield/ | Actor | 7 | 7 |
 | Andy Garcia | `andy-garcia` | /personas/andy-garcia/ | Actor | 5 | 3 |
-| Andy Muschietti | `andy-muschietti` | /personas/andy-muschietti/ | Director / Guionista | 3 | 4 |
+| Andy Muschietti | `andy-muschietti` | /personas/andy-muschietti/ | Director / Guionista | 4 | 4 |
 | Andy Serkis | `andy-serkis` | /personas/andy-serkis/ | Actor | 7 | 6 |
 | Ang Lee | `ang-lee` | /personas/ang-lee/ | Director / Productor | 4 | 5 |
 | Angela Lansbury | `angela-lansbury` | /personas/angela-lansbury/ | Actriz | 3 | 6 |
@@ -106,7 +106,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Brendan Fraser | `brendan-fraser` | /personas/brendan-fraser/ | Actor | 5 | 7 |
 | Brendan Gleeson | `brendan-gleeson` | /personas/brendan-gleeson/ | Actor | 7 | 7 |
 | Brian Buley | `brian-buley` | /personas/brian-buley/ | Actor | 1 | 3 |
-| Brian De Palma | `brian-de-palma` | /personas/brian-de-palma/ | Director / Guionista / Productor | 6 | 5 |
+| Brian De Palma | `brian-de-palma` | /personas/brian-de-palma/ | Director / Guionista / Productor | 7 | 5 |
 | Brian Tyree Henry | `brian-tyree-henry` | /personas/brian-tyree-henry/ | Actor | 5 | 7 |
 | Brie Larson | `brie-larson` | /personas/brie-larson/ | Actriz | 3 | 7 |
 | Bruce Campbell | `bruce-campbell` | /personas/bruce-campbell/ | Actor | 3 | 3 |
@@ -179,7 +179,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Cumelén Sanz | `cumelen-sanz` | /personas/cumelen-sanz/ | Actriz / Productora | 1 | 5 |
 | Cynthia Erivo | `cynthia-erivo` | /personas/cynthia-erivo/ | Actriz | 3 | 7 |
 | Dady Brieva | `dady-brieva` | /personas/dady-brieva/ | Actor / Comediante | 1 | 5 |
-| Daisy Edgar-Jones | `daisy-edgar-jones` | /personas/daisy-edgar-jones/ | Actriz | 1 | 7 |
+| Daisy Edgar-Jones | `daisy-edgar-jones` | /personas/daisy-edgar-jones/ | Actriz | 2 | 7 |
 | Dakota Fanning | `dakota-fanning` | /personas/dakota-fanning/ | Actriz | 5 | 4 |
 | Damián Szifron | `damian-szifron` | /personas/damian-szifron/ | Director | 2 | 7 |
 | Damien Chazelle | `damien-chazelle` | /personas/damien-chazelle/ | Director | 3 | 6 |
@@ -373,7 +373,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jesse Eisenberg | `jesse-eisenberg` | /personas/jesse-eisenberg/ | Actor | 9 | 6 |
 | Jesse Plemons | `jesse-plemons` | /personas/jesse-plemons/ | Actor | 3 | 6 |
 | Jessica Alba | `jessica-alba` | /personas/jessica-alba/ | Actriz | 3 | 3 |
-| Jessica Chastain | `jessica-chastain` | /personas/jessica-chastain/ | Actriz | 5 | 6 |
+| Jessica Chastain | `jessica-chastain` | /personas/jessica-chastain/ | Actriz | 6 | 6 |
 | Jessica Harper | `jessica-harper` | /personas/jessica-harper/ | Actriz | 3 | 3 |
 | Jessica Lange | `jessica-lange` | /personas/jessica-lange/ | Actriz | 7 | 4 |
 | Jessie Buckley | `jessie-buckley` | /personas/jessie-buckley/ | Actriz | 3 | 7 |
@@ -644,7 +644,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Robert Downey Jr. | `robert-downey-jr` | /personas/robert-downey-jr/ | Actor | 12 | 7 |
 | Robert Duvall | `robert-duvall` | /personas/robert-duvall/ | Actor / Productor | 9 | 5 |
 | Robert Eggers | `robert-eggers` | /personas/robert-eggers/ | Director | 4 | 7 |
-| Robert Englund | `robert-englund` | /personas/robert-englund/ | Actor | 8 | 6 |
+| Robert Englund | `robert-englund` | /personas/robert-englund/ | Actor | 9 | 6 |
 | Robert Pattinson | `robert-pattinson` | /personas/robert-pattinson/ | Actor | 8 | 6 |
 | Robert Redford | `robert-redford` | /personas/robert-redford/ | Director | 8 | 5 |
 | Robert Zemeckis | `robert-zemeckis` | /personas/robert-zemeckis/ | Director | 12 | 6 |
@@ -674,7 +674,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 1 | 7 |
 | Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 15 | 7 |
 | Sandra Bullock | `sandra-bullock` | /personas/sandra-bullock/ | Actriz | 11 | 4 |
-| Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 4 | 7 |
+| Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 5 | 7 |
 | Santiago Mitre | `santiago-mitre` | /personas/santiago-mitre/ | Director | 2 | 7 |
 | Santiago Segura | `santiago-segura` | /personas/santiago-segura/ | Director / Actor / Guionista / Productor | 2 | 7 |
 | Sarah Paulson | `sarah-paulson` | /personas/sarah-paulson/ | Actriz | 4 | 6 |
