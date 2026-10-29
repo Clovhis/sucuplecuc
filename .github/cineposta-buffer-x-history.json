@@ -711,6 +711,28 @@
 					"Prime Video"
 				]
 			}
+		},
+		{
+			"slug": "tony-2026",
+			"bufferPostId": "6ae29be9cc91be5434bd86ea",
+			"dueAt": "2026-10-29T22:00:00.000Z",
+			"scheduledAt": "2026-10-29T01:05:45.907Z",
+			"copyStyle": {
+				"opening": 3698578209,
+				"availability": 3661540004,
+				"editorial": 2301595358,
+				"verdict": 2817853258,
+				"link": 653323633
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/tony-2026",
+				"checkedAt": "2026-10-29T01:05:45.409Z",
+				"kind": "subscription",
+				"platforms": [
+					"Prime Video"
+				]
+			}
 		}
 	]
 }
