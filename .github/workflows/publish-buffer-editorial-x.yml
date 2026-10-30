@@ -1,0 +1,58 @@
+name: Publicar guía semanal en X via Buffer
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: Slug de la guía semanal publicada
+        required: true
+        type: string
+      mode:
+        description: Vista previa o publicación inmediata autorizada
+        required: true
+        default: dry-run
+        type: choice
+        options:
+          - dry-run
+          - publish-now
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cineposta-buffer-x
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Verificar el publicador
+        run: node --test scripts/publish-buffer-editorial-x.test.mjs
+      - name: Publicar o previsualizar
+        env:
+          EDITORIAL_SLUG: ${{ inputs.slug }}
+          PUBLISH_MODE: ${{ inputs.mode }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_ORGANIZATION_ID: ${{ vars.BUFFER_ORGANIZATION_ID }}
+          BUFFER_X_CHANNEL_ID: ${{ vars.BUFFER_X_CHANNEL_ID }}
+        run: |
+          if [ "$PUBLISH_MODE" = 'publish-now' ]; then
+            node scripts/publish-buffer-editorial-x.mjs "$EDITORIAL_SLUG" --publish-now
+          else
+            node scripts/publish-buffer-editorial-x.mjs "$EDITORIAL_SLUG"
+          fi
+      - name: Guardar comprobante de Buffer
+        if: ${{ inputs.mode == 'publish-now' && always() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: buffer-editorial-receipt
+          path: buffer-editorial-receipt.json
+          if-no-files-found: error

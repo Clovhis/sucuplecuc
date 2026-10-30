@@ -1,5 +1,19 @@
 import { expect, test, type Page } from '@playwright/test';
 
+test('two platform badges wrap inside technical credits on a narrow screen', async ({ page }) => {
+	await page.setViewportSize({ width: 320, height: 760 });
+	await page.goto('/peliculas/rebirth-home-sweet-home-2025/');
+	const value = page.locator('.movie-detail__technical .movie-detail__platform-value');
+	const badges = value.locator('.platform-badge-group__item');
+	await expect(badges).toHaveCount(2);
+	for (const badge of await badges.all()) {
+		await expect(badge).toBeVisible();
+		const bounds = await badge.boundingBox();
+		expect(bounds!.x).toBeGreaterThanOrEqual(0);
+		expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(320);
+	}
+});
+
 // Availability changes: exercise a currently rendered card instead of pinning a title.
 async function getOtherPlatformsCard(page: Page) {
 	await page.goto('/?plataforma=otras%20plataformas', { waitUntil: 'load' });

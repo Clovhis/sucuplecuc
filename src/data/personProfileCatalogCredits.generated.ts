@@ -4193,6 +4193,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-hombre-del-tiempo-2005"
   ],
   "nicolas-cage": [
+    "the-carpenter-s-son-2025",
     "longlegs-2024",
     "el-hombre-de-los-suenos-2023",
     "los-croods-una-nueva-era-2020",

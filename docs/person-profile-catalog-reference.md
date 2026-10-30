@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-10-29. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-10-30. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 759
-Total de vínculos de películas del catálogo: 4309
+Total de vínculos de películas del catálogo: 4310
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -572,7 +572,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Neve Campbell | `neve-campbell` | /personas/neve-campbell/ | Actriz | 6 | 7 |
 | Nicanor Loreti | `nicanor-loreti` | /personas/nicanor-loreti/ | Director / Guionista | 1 | 5 |
 | Nicholas Hoult | `nicholas-hoult` | /personas/nicholas-hoult/ | Actor | 6 | 6 |
-| Nicolas Cage | `nicolas-cage` | /personas/nicolas-cage/ | Actor | 16 | 6 |
+| Nicolas Cage | `nicolas-cage` | /personas/nicolas-cage/ | Actor | 17 | 6 |
 | Nicolás Galvagno | `nicolas-galvagno` | /personas/nicolas-galvagno/ | Director / Guionista / Actor / Productor | 1 | 5 |
 | Nicolás Onetti | `nicolas-onetti` | /personas/nicolas-onetti/ | Director / Guionista / Productor | 1 | 5 |
 | Nicole Kidman | `nicole-kidman` | /personas/nicole-kidman/ | Actriz | 16 | 3 |

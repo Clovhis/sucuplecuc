@@ -22,6 +22,8 @@ for (const rail of rails) {
 		const previous = section.locator(rail.previous);
 		const next = section.locator(rail.next);
 		await section.scrollIntoViewIfNeeded();
+		// Chromium's mobile layout viewport must not expand to fit offscreen cards.
+		await expect.poll(() => page.evaluate(() => window.innerWidth)).toBe(page.viewportSize()!.width);
 		await expect(previous).toBeDisabled();
 		await expect(next).toBeEnabled();
 		await next.click();

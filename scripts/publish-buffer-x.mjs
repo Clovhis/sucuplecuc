@@ -362,14 +362,14 @@ export function selectMovie(eligible, history, externallyUsedSlugs = new Set()) 
 	return pool.sort((left, right) => right.movie.releaseDate.localeCompare(left.movie.releaseDate) || hash(left.movie.slug) - hash(right.movie.slug) || left.movie.slug.localeCompare(right.movie.slug))[0];
 }
 
-async function bufferRequest(apiKey, query, variables = {}) {
+export async function bufferRequest(apiKey, query, variables = {}) {
 	const response = await fetch('https://api.buffer.com', { method: 'POST', headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ query, variables }) });
 	const body = await response.json().catch(() => ({}));
 	if (!response.ok || body.errors?.length) throw new Error(`Buffer respondió ${response.status}: ${(body.errors ?? [{ message: 'respuesta inválida' }]).map(({ message }) => message).join('; ')}`);
 	return body.data;
 }
 
-async function getXChannel(apiKey) {
+export async function getXChannel(apiKey) {
 	const expectedChannelId = process.env.BUFFER_X_CHANNEL_ID?.trim();
 	const configuredOrganizationId = process.env.BUFFER_ORGANIZATION_ID?.trim();
 	if (configuredOrganizationId && expectedChannelId) return { organizationId: configuredOrganizationId, channel: { id: expectedChannelId, name: '@cineposta' } };

@@ -90,6 +90,12 @@ body.movie-edition :is(.movie-detail__taxonomy-item dd, .movie-detail__credit-it
 body.movie-edition .movie-detail__taxonomy-tag { padding: 0; border: 0; border-radius: 0; background: none; color: var(--ficha-muted); font-size: .8rem; }
 body.movie-edition .movie-detail__credits { display: grid; grid-template-columns: minmax(0, 1fr); gap: .85rem; padding-top: 1rem; border-top: 1px solid var(--ficha-line); }
 body.movie-edition .movie-detail__platform-value { position: relative; }
+body.movie-edition .movie-detail__credit-item { min-width: 0; }
+body.movie-edition .movie-detail__platform-value .platform-badge-group {
+ flex-wrap: wrap;
+ min-width: 0;
+ max-width: 100%;
+}
 body.movie-edition .movie-detail__people-panel { gap: 1.5rem; }
 body.movie-edition .movie-detail__people-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
 body.movie-edition .movie-detail__person-card { grid-template-columns: 50px minmax(0, 1fr); min-height: 0; gap: .85rem; padding: .8rem 0; border: 0; border-bottom: 1px solid var(--ficha-line); border-radius: 0; background: none; box-shadow: none; }

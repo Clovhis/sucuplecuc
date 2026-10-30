@@ -44,6 +44,12 @@ body {
 	padding: 0;
 }
 
+/* Keep mobile's layout viewport at device width when a horizontal rail scrolls
+   into view. Each rail retains its own horizontal scrolling area. */
+html {
+	overflow-x: clip;
+}
+
 body {
 	min-height: 100vh;
 	font-family: var(--font-sans);

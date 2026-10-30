@@ -1,0 +1,509 @@
+{
+  "checkedOn": "2026-10-30",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "catalogCount": 2440,
+  "added": 22,
+  "updated": 3,
+  "editorialCount": 1,
+  "checks": {
+    "astroCheck": {
+      "files": 332,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "validateContent": {
+      "exit": 0,
+      "build": false,
+      "note": "The complete content pipeline also passed with the prior build; the final UI build and output validations were then repeated."
+    },
+    "build": {
+      "pages": 8191,
+      "exit": 0
+    },
+    "publicOutput": "passed",
+    "sitemap": {
+      "canonicalPages": 5742,
+      "result": "passed"
+    },
+    "duplicateGuard": "passed",
+    "peopleGate": {
+      "newFilms": 22,
+      "updatedFilms": 3,
+      "result": "passed"
+    },
+    "peopleImages": {
+      "checked": 5929,
+      "result": "passed"
+    },
+    "posters": {
+      "total": 25,
+      "errors": 0,
+      "warnings": 12,
+      "note": "12 files are below the preferred byte-size range. They are decoded local WebP, within max dimensions/bytes and visually checked; no placeholder or forced byte padding."
+    },
+    "posterSourcePolicy": "passed",
+    "bufferExistingPublisherTests": "passed",
+    "bufferEditorialPublisherTests": {
+      "passed": 3,
+      "weightedXLength": 248
+    },
+    "playwright": {
+      "passed": 135,
+      "failed": 0,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium",
+        "mobile-webkit"
+      ],
+      "suites": [
+        "editorial.spec.ts",
+        "home-carousels.spec.ts",
+        "platform-badge.spec.ts"
+      ]
+    },
+    "gitDiffCheck": "passed",
+    "generatedSnapshots": "unchanged"
+  },
+  "audits": {
+    "prebuildYoutubeEnabled": {
+      "errors": [],
+      "warnings": {
+        "editorial-overlap": 22,
+        "missing-person-birth": 53,
+        "missing-person-nationality": 58,
+        "untrusted-person-image-source": 10,
+        "poster-outside-target-size": 12,
+        "youtube-search-unavailable": 18
+      }
+    },
+    "postbuild": {
+      "candidates": 25,
+      "errors": [],
+      "warnings": {
+        "missing-person-birth": 53,
+        "missing-person-nationality": 58,
+        "untrusted-person-image-source": 10,
+        "poster-outside-target-size": 12
+      }
+    },
+    "broadCarouselGate": {
+      "findings": [
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/velocidad-y-deseo-2026.json",
+          "message": "Current streaming entry \"Velocidad y deseo\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        },
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/postumo-2026.json",
+          "message": "Current streaming entry \"Póstumo\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        },
+        {
+          "severity": "error",
+          "code": "streaming-carousel-missing-entry",
+          "file": "src/data/movies/oscar-el-regreso-del-mamut-2025.json",
+          "message": "Current streaming entry \"Oscar: El regreso del mamut\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+        }
+      ],
+      "resolution": "The auxiliary gate demands every current-window candidate. The canonical component caps at 12; an independent browser comparison reproduced all 12 canonical selections with no duplicates, cinema or future dates. No dates or limits were altered to silence this mismatch."
+    }
+  },
+  "browserReview": {
+    "origin": "http://127.0.0.1:43210",
+    "carousel": [
+      {
+        "title": "Apocalipsis Z: Nuevo mundo",
+        "links": [
+          "/peliculas/apocalipsis-z-nuevo-mundo-2026/",
+          "/peliculas/apocalipsis-z-nuevo-mundo-2026/"
+        ],
+        "poster": "/assets/posters/2026/apocalipsis-z-nuevo-mundo-2026.webp"
+      },
+      {
+        "title": "Baththa",
+        "links": [
+          "/peliculas/baththa-2026/",
+          "/peliculas/baththa-2026/"
+        ],
+        "poster": "/assets/posters/2026/baththa-2026.webp"
+      },
+      {
+        "title": "Colisión",
+        "links": [
+          "/peliculas/colision-2026/",
+          "/peliculas/colision-2026/"
+        ],
+        "poster": "/assets/posters/2026/colision-2026.webp"
+      },
+      {
+        "title": "Devorador de almas",
+        "links": [
+          "/peliculas/devorador-de-almas-2026/",
+          "/peliculas/devorador-de-almas-2026/"
+        ],
+        "poster": "/assets/posters/2026/devorador-de-almas-2026.webp"
+      },
+      {
+        "title": "El Momento",
+        "links": [
+          "/peliculas/el-momento-2026/",
+          "/peliculas/el-momento-2026/"
+        ],
+        "poster": "/assets/posters/2026/el-momento-2026.webp"
+      },
+      {
+        "title": "Esto no es un simulacro",
+        "links": [
+          "/peliculas/esto-no-es-un-simulacro-2025/",
+          "/peliculas/esto-no-es-un-simulacro-2025/"
+        ],
+        "poster": "/assets/posters/2025/esto-no-es-un-simulacro-2025.webp"
+      },
+      {
+        "title": "No te olvidaré",
+        "links": [
+          "/peliculas/no-te-olvidare-2026/",
+          "/peliculas/no-te-olvidare-2026/"
+        ],
+        "poster": "/assets/posters/2026/no-te-olvidare-2026.webp"
+      },
+      {
+        "title": "Rebirth: Home Sweet Home",
+        "links": [
+          "/peliculas/rebirth-home-sweet-home-2025/",
+          "/peliculas/rebirth-home-sweet-home-2025/"
+        ],
+        "poster": "/assets/posters/2025/rebirth-home-sweet-home-2025.webp"
+      },
+      {
+        "title": "Relay: El intermediario",
+        "links": [
+          "/peliculas/relay-el-intermediario-2024/",
+          "/peliculas/relay-el-intermediario-2024/"
+        ],
+        "poster": "/assets/posters/2024/relay-el-intermediario-2024.webp"
+      },
+      {
+        "title": "Rosario",
+        "links": [
+          "/peliculas/rosario-2025/",
+          "/peliculas/rosario-2025/"
+        ],
+        "poster": "/assets/posters/2025/rosario-2025.webp"
+      },
+      {
+        "title": "The Carpenter's Son",
+        "links": [
+          "/peliculas/the-carpenter-s-son-2025/",
+          "/peliculas/the-carpenter-s-son-2025/"
+        ],
+        "poster": "/assets/posters/2025/the-carpenter-s-son-2025.webp"
+      },
+      {
+        "title": "Warkop DKI: Viralin Doooong..!!",
+        "links": [
+          "/peliculas/warkop-dki-viralin-doooong-2026/",
+          "/peliculas/warkop-dki-viralin-doooong-2026/"
+        ],
+        "poster": "/assets/posters/2026/warkop-dki-viralin-doooong-2026.webp"
+      }
+    ],
+    "carouselMatchesCanonicalSelection": true,
+    "carouselNoCinemaOrFuture": true,
+    "editorialImages": [
+      {
+        "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/tony.webp",
+        "width": 760,
+        "height": 427,
+        "alt": "Antonio Banderas y Dominic Sessa, con chaquetas de cocina, miran juntos hacia una mesada en Tony."
+      },
+      {
+        "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/popularidad.webp",
+        "width": 760,
+        "height": 427,
+        "alt": "Dos estudiantes conversan frente a frente en el pasillo de una escuela en Cómo perder tu popularidad."
+      },
+      {
+        "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/dolly.webp",
+        "width": 760,
+        "height": 427,
+        "alt": "Una figura con máscara de muñeca abraza a una joven vestida de blanco en una habitación de Dolly."
+      },
+      {
+        "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/el-sol.webp",
+        "width": 760,
+        "height": 427,
+        "alt": "Los rostros de una mujer y un hombre se acercan en una imagen de El sol nace para todos."
+      },
+      {
+        "src": "http://127.0.0.1:43210/assets/editorial/estrenos-streaming-26-octubre-1-noviembre-2026/colision.webp",
+        "width": 760,
+        "height": 416,
+        "alt": "Collage promocional de Colisión con un asalto, un auto incendiado y distintos personajes de la película."
+      },
+      {
+        "src": "http://127.0.0.1:43210/brand/social/whatsapp.svg",
+        "width": 150,
+        "height": 150,
+        "alt": ""
+      },
+      {
+        "src": "http://127.0.0.1:43210/brand/social/x.svg",
+        "width": 147,
+        "height": 150,
+        "alt": ""
+      }
+    ],
+    "editorialFichaLinks": 38,
+    "weeklyArchiveEntries": 1,
+    "fichas": [
+      {
+        "slug": "velocidad-y-deseo-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/velocidad-y-deseo-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "postumo-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/postumo-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "ali-g-kien-ez-yo-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/ali-g-kien-ez-yo-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "nosotros-pero-un-poco-mejor-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/nosotros-pero-un-poco-mejor-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "no-alimentes-a-los-ninos-2024",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2024/no-alimentes-a-los-ninos-2024.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "colmillos-del-bayou-2025",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2025/colmillos-del-bayou-2025.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "sakamoto-days-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/sakamoto-days-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "strung-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/strung-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "breve-romance-de-ensueno-2024",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2024/breve-romance-de-ensueno-2024.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "leaving-neverland-2-2025",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2025/leaving-neverland-2-2025.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "enterrado-vivo-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/enterrado-vivo-2026.webp",
+          "width": 479,
+          "height": 720
+        }
+      },
+      {
+        "slug": "oscar-el-regreso-del-mamut-2025",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2025/oscar-el-regreso-del-mamut-2025.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "baththa-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/baththa-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "apocalipsis-z-nuevo-mundo-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/apocalipsis-z-nuevo-mundo-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "esto-no-es-un-simulacro-2025",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2025/esto-no-es-un-simulacro-2025.webp",
+          "width": 480,
+          "height": 640
+        }
+      },
+      {
+        "slug": "relay-el-intermediario-2024",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2024/relay-el-intermediario-2024.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "colision-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/colision-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "rebirth-home-sweet-home-2025",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2025/rebirth-home-sweet-home-2025.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "rosario-2025",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2025/rosario-2025.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "the-carpenter-s-son-2025",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2025/the-carpenter-s-son-2025.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "devorador-de-almas-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/devorador-de-almas-2026.webp",
+          "width": 480,
+          "height": 711
+        }
+      },
+      {
+        "slug": "warkop-dki-viralin-doooong-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/warkop-dki-viralin-doooong-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "el-momento-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/el-momento-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "no-te-olvidare-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/no-te-olvidare-2026.webp",
+          "width": 480,
+          "height": 720
+        }
+      },
+      {
+        "slug": "codigo-venganza-2026",
+        "status": 200,
+        "poster": {
+          "src": "http://127.0.0.1:43210/assets/posters/2026/codigo-venganza-2026.webp",
+          "width": 480,
+          "height": 709
+        }
+      }
+    ],
+    "pageErrors": []
+  },
+  "fixes": {
+    "mobileRails": "Root overflow-x:clip prevents mobile Chromium layout viewport expanding from 393 to 1572 when scrolling rails into view. Existing control tests reproduced the failure before this fix; all three rails pass afterwards.",
+    "platformBadges": "Allow platform chips to wrap in technical credits, keeping both badges within 320px. A regression test checks the individual bounds."
+  },
+  "preservedForeignFile": {
+    "original": ".playwright-mcp/console-2026-10-29T20-50-41-997Z.log",
+    "archived": "C:/Users/yosoy/AppData/Local/CinePosta-preserved/2026-10-30/console-2026-10-29T20-50-41-997Z.log",
+    "bytes": 482,
+    "sha256": "1C4988045BD04208527F9DF2D270CD549B36E49FA7412FCCC3672C2F35F05EFA"
+  },
+  "publication": {
+    "authorizedDirectMain": true,
+    "deployWorkflow": "deploy.yml",
+    "bufferWorkflow": "publish-buffer-editorial-x.yml",
+    "bufferMode": "publish-now",
+    "receiptArtifact": "buffer-editorial-receipt",
+    "productionVerification": "Performed after push; the deployment and social receipt are available in Actions."
+  }
+}
