@@ -733,6 +733,28 @@
 					"Prime Video"
 				]
 			}
+		},
+		{
+			"slug": "one-of-the-good-ones-2026",
+			"bufferPostId": "6ae3eed06385db216a19ea17",
+			"dueAt": "2026-10-30T22:00:00.000Z",
+			"scheduledAt": "2026-10-30T01:11:44.817Z",
+			"copyStyle": {
+				"opening": 2492379410,
+				"availability": 1930260469,
+				"editorial": 4157619119,
+				"verdict": 2234482107,
+				"link": 1142082978
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/one-of-the-good-ones",
+				"checkedAt": "2026-10-30T01:11:44.229Z",
+				"kind": "subscription",
+				"platforms": [
+					"Prime Video"
+				]
+			}
 		}
 	]
 }
