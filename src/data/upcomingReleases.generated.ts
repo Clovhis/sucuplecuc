@@ -8,15 +8,23 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-29T10:44:39.495Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-30T10:44:18.051Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "El Gato con Sombrero",
 		"releaseDate": "2026-11-05",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10168-el-gato-con-sombrero/",
 		"slug": "cines-argentinos-10168",
-		"videoUrl": "https://www.youtube.com/watch?v=uyP8q3BQ0C4",
-		"thumbnailUrl": "https://i.ytimg.com/vi/uyP8q3BQ0C4/hqdefault.jpg"
+		"videoUrl": "https://www.youtube.com/watch?v=jcAbu9R07WI",
+		"thumbnailUrl": "https://i.ytimg.com/vi/jcAbu9R07WI/hqdefault.jpg"
+	},
+	{
+		"title": "Entrega al límite",
+		"releaseDate": "2026-11-05",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10589-entrega-al-limite/",
+		"slug": "cines-argentinos-10589",
+		"videoUrl": "https://www.youtube.com/watch?v=YJTR-wQ9MvM",
+		"thumbnailUrl": "https://i.ytimg.com/vi/YJTR-wQ9MvM/hqdefault.jpg"
 	},
 	{
 		"title": "Godzilla Minus Zero",
@@ -51,12 +59,28 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"thumbnailUrl": "https://i.ytimg.com/vi/pZQ4KJiW6VI/hqdefault.jpg"
 	},
 	{
+		"title": "Yo soy Rocky",
+		"releaseDate": "2026-11-19",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10647-yo-soy-rocky/",
+		"slug": "cines-argentinos-10647",
+		"videoUrl": "https://www.youtube.com/watch?v=KKquTgKlXJY",
+		"thumbnailUrl": "https://i.ytimg.com/vi/KKquTgKlXJY/hqdefault.jpg"
+	},
+	{
 		"title": "Hechizo: Bienvenidos a Hexe",
 		"releaseDate": "2026-11-26",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10211-hechizo-bienvenidos-a-hexe/",
 		"slug": "cines-argentinos-10211",
 		"videoUrl": "https://www.youtube.com/watch?v=9NpBMpYzZaw",
 		"thumbnailUrl": "https://i.ytimg.com/vi/9NpBMpYzZaw/hqdefault.jpg"
+	},
+	{
+		"title": "Bichos del mar",
+		"releaseDate": "2026-11-26",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10646-bichos-del-mar/",
+		"slug": "cines-argentinos-10646",
+		"videoUrl": "https://www.youtube.com/watch?v=87zwuaPwk88",
+		"thumbnailUrl": "https://i.ytimg.com/vi/87zwuaPwk88/hqdefault.jpg"
 	},
 	{
 		"title": "Avengers: Doomsday",
@@ -71,15 +95,7 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"releaseDate": "2026-12-17",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10441-duna-parte-tres/",
 		"slug": "cines-argentinos-10441",
-		"videoUrl": "https://www.youtube.com/watch?v=9iuVf3Ppb7U",
-		"thumbnailUrl": "https://i.ytimg.com/vi/9iuVf3Ppb7U/hqdefault.jpg"
-	},
-	{
-		"title": "La Era de Hielo: Mundo de lava",
-		"releaseDate": "2027-02-04",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10208-la-era-de-hielo-mundo-de-lava/",
-		"slug": "cines-argentinos-10208",
-		"videoUrl": "https://www.youtube.com/watch?v=XaSkYbItiKk",
-		"thumbnailUrl": "https://i.ytimg.com/vi/XaSkYbItiKk/hqdefault.jpg"
+		"videoUrl": "https://www.youtube.com/watch?v=FHNCmFQSjkI",
+		"thumbnailUrl": "https://i.ytimg.com/vi/FHNCmFQSjkI/hqdefault.jpg"
 	}
 ];
