@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-30T10:44:18.051Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-10-31T10:14:22.137Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "El Gato con Sombrero",
@@ -33,6 +33,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10548",
 		"videoUrl": "https://www.youtube.com/watch?v=KSPi8XLeBRg",
 		"thumbnailUrl": "https://i.ytimg.com/vi/KSPi8XLeBRg/hqdefault.jpg"
+	},
+	{
+		"title": "Babystar",
+		"releaseDate": "2026-11-05",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10648-babystar/",
+		"slug": "cines-argentinos-10648",
+		"videoUrl": "https://www.youtube.com/watch?v=7a68yCGo3y4",
+		"thumbnailUrl": "https://i.ytimg.com/vi/7a68yCGo3y4/hqdefault.jpg"
 	},
 	{
 		"title": "Cómo robar un banco",
@@ -89,13 +97,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10102",
 		"videoUrl": "https://www.youtube.com/watch?v=jyoTi0gPgNY",
 		"thumbnailUrl": "https://i.ytimg.com/vi/jyoTi0gPgNY/hqdefault.jpg"
-	},
-	{
-		"title": "Duna: Parte Tres",
-		"releaseDate": "2026-12-17",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10441-duna-parte-tres/",
-		"slug": "cines-argentinos-10441",
-		"videoUrl": "https://www.youtube.com/watch?v=FHNCmFQSjkI",
-		"thumbnailUrl": "https://i.ytimg.com/vi/FHNCmFQSjkI/hqdefault.jpg"
 	}
 ];
