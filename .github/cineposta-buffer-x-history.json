@@ -755,6 +755,28 @@
 					"Prime Video"
 				]
 			}
+		},
+		{
+			"slug": "baththa-2026",
+			"bufferPostId": "6ae53c5ca1145743497af16f",
+			"dueAt": "2026-10-31T22:00:00.000Z",
+			"scheduledAt": "2026-10-31T00:54:52.424Z",
+			"copyStyle": {
+				"opening": 109877455,
+				"availability": 757375678,
+				"editorial": 2307873788,
+				"verdict": 3027761188,
+				"link": 218544163
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/baththa",
+				"checkedAt": "2026-10-31T00:54:51.980Z",
+				"kind": "subscription",
+				"platforms": [
+					"Netflix"
+				]
+			}
 		}
 	]
 }
