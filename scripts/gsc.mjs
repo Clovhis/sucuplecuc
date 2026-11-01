@@ -17,6 +17,7 @@ function printUsage() {
   Analytics filters: --start-date YYYY-MM-DD --end-date YYYY-MM-DD --country arg --page <absolute-url>
   node scripts/gsc.mjs inspect --url <absolute-url> [--site <site-url>] [--language <code>]
   node scripts/gsc.mjs inspect-sitemap [--site <site-url>] [--sitemap <sitemap-url>] [--path-prefix <pathname>] [--limit <n>] [--concurrency <n>] [--compact]
+  Inspection output includes all results; --compact omits full results and preserves API errors.
 
 Auth env:
   GSC_SITE_URL
@@ -193,10 +194,12 @@ async function listSitemaps(args) {
 			warnings: entry.warnings ?? 0,
 			errors: entry.errors ?? 0,
 			contents: (entry.contents ?? [])
-				.map((content) => `${content.type}: submitted=${content.submitted ?? 0}, indexed=${content.indexed ?? 0}`)
+				// Google deprecated contents[].indexed; it is not an indexation count.
+				.map((content) => `${content.type}: submitted=${content.submitted ?? 'N/D'}`)
 				.join('; '),
 		})),
 	);
+	console.log('Indexed URLs: unavailable in the Sitemaps API (deprecated field). Use URL Inspection for individual URLs.');
 }
 
 async function runSearchAnalytics(args, dimensions) {
@@ -295,6 +298,7 @@ async function inspectSitemap(args) {
 	const limit = parsePositiveInteger(args.limit, 'limit', Number.POSITIVE_INFINITY);
 	const concurrency = Math.min(parsePositiveInteger(args.concurrency, 'concurrency', 4), 16);
 	const sitemapResponse = await fetch(sitemapUrl, {
+		signal: AbortSignal.timeout(30_000),
 		headers: {
 			Accept: 'application/xml,text/xml;q=0.9,*/*;q=0.1',
 			'User-Agent': 'CinePosta-GSC-Audit/1.0',
@@ -337,7 +341,7 @@ async function inspectSitemap(args) {
 						siteUrl,
 						languageCode: args.language || 'es-AR',
 					},
-				});
+				}, { timeout: 30_000 });
 				results[index] = {
 					url: inspectionUrl,
 					...(response.data.inspectionResult?.indexStatusResult ?? {}),
@@ -401,6 +405,7 @@ async function inspectSitemap(args) {
 				url: issue.url,
 				coverageState: issue.coverageState,
 				lastCrawlTime: issue.lastCrawlTime,
+				...(issue.apiError ? { apiError: issue.apiError } : {}),
 			}))
 		: issues;
 
@@ -419,6 +424,7 @@ async function inspectSitemap(args) {
 					issues: issues.length,
 				},
 				issues: outputIssues,
+				...(!args.compact ? { results } : {}),
 			},
 			null,
 			2,
