@@ -777,6 +777,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "no-te-olvidare-2026",
+			"bufferPostId": "6ae6845eab019b90873186e9",
+			"dueAt": "2026-11-01T22:00:00.000Z",
+			"scheduledAt": "2026-11-01T00:14:22.711Z",
+			"copyStyle": {
+				"opening": 4242757224,
+				"availability": 633343227,
+				"editorial": 3182984485,
+				"verdict": 617156097,
+				"link": 3239447496
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/reminders-of-him",
+				"checkedAt": "2026-11-01T00:14:22.125Z",
+				"kind": "subscription",
+				"platforms": [
+					"HBO Max"
+				]
+			}
 		}
 	]
 }
