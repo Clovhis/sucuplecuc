@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-01T11:13:26.913Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-02T12:03:19.015Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "El Gato con Sombrero",
