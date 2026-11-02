@@ -799,6 +799,28 @@
 					"HBO Max"
 				]
 			}
+		},
+		{
+			"slug": "warkop-dki-viralin-doooong-2026",
+			"bufferPostId": "6ae7df7d2da2578c188fe466",
+			"dueAt": "2026-11-02T22:00:00.000Z",
+			"scheduledAt": "2026-11-02T00:55:25.729Z",
+			"copyStyle": {
+				"opening": 61524551,
+				"availability": 1525782118,
+				"editorial": 88537230,
+				"verdict": 3604192286,
+				"link": 601472041
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/warkop-dki-viralin-doooong",
+				"checkedAt": "2026-11-02T00:55:25.323Z",
+				"kind": "subscription",
+				"platforms": [
+					"Netflix"
+				]
+			}
 		}
 	]
 }
