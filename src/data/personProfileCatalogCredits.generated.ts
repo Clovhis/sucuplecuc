@@ -23,6 +23,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "star-wars-episode-viii-the-last-jedi-2017",
     "silence-2016"
   ],
+  "adam-mckay": [
+    "dont-look-up-2021",
+    "el-vicepresidente-mas-alla-del-poder-2018",
+    "la-gran-apuesta-2015",
+    "los-otros-dos-2010"
+  ],
   "adam-sandler": [
     "norm-la-historia-de-norm-macdonald-2026",
     "happy-gilmore-2-2025",
@@ -288,6 +294,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "andrea-del-boca": [
     "funes-un-gran-amor-1993"
   ],
+  "andrei-tarkovsky": [
+    "stalker-1979",
+    "el-espejo-1975",
+    "solaris-1972",
+    "andrei-rublev-1966"
+  ],
   "andrew-garfield": [
     "el-arbol-magico-2026",
     "silence-2016",
@@ -309,6 +321,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "it-chapter-two-2019",
     "it-2017",
     "mama-2013"
+  ],
+  "andy-samberg": [
+    "palm-springs-2020",
+    "hotel-transylvania-3-summer-vacation-2018",
+    "hotel-transylvania-2-2015",
+    "thats-my-boy-2012",
+    "hotel-transylvania-2012"
   ],
   "andy-serkis": [
     "venom-let-there-be-carnage-2021",
@@ -405,6 +424,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "los-agentes-del-destino-2011",
     "the-hurt-locker-2008",
     "la-otra-cara-de-nelson-2006"
+  ],
+  "antoine-fuqua": [
+    "michael-2026",
+    "culpable-2021",
+    "shooter-el-tirador-2007",
+    "dia-de-entrenamiento-2001"
   ],
   "antonella-costa": [
     "romeo-y-ofelia-2024",
@@ -691,6 +716,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "brian-buley": [
     "sin-ley-2025"
   ],
+  "brian-cox": [
+    "match-point-2005",
+    "la-supremacia-de-bourne-2004",
+    "troya-2004",
+    "identidad-desconocida-2002",
+    "el-boxeador-1997"
+  ],
   "brian-de-palma": [
     "mission-impossible-1996",
     "atrapado-por-su-pasado-1993",
@@ -779,6 +811,14 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "gandhi-1982",
     "comenzar-de-nuevo-1979"
   ],
+  "carey-mulligan": [
+    "wildwood-el-bosque-salvaje-2026",
+    "spaceman-2024",
+    "maestro-2023",
+    "ella-dijo-2022",
+    "el-gran-gatsby-2013",
+    "drive-2011"
+  ],
   "carl-weathers": [
     "happy-gilmore-1996",
     "depredador-1987",
@@ -800,6 +840,14 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "extermineitors-ii-la-venganza-del-dragon-1990",
     "baneros-ii-la-playa-loca-1989",
     "los-extermineitors-1989"
+  ],
+  "carlos-saldanha": [
+    "harold-y-el-lapiz-magico-2024",
+    "ferdinand-2017",
+    "rio-2-2014",
+    "rio-2011",
+    "la-era-de-hielo-3-el-origen-de-los-dinosaurios-2009",
+    "la-era-de-hielo-2-2006"
   ],
   "carlos-weber": [
     "carancho-2010"
@@ -878,6 +926,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "una-serie-de-eventos-desafortunados-2004",
     "el-extrano-mundo-de-jack-1993",
     "beetlejuice-1988"
+  ],
+  "catherine-zeta-jones": [
+    "la-nueva-gran-estafa-2004",
+    "the-terminal-2004",
+    "crueldad-intolerable-2003",
+    "sinbad-la-leyenda-de-los-siete-mares-2003",
+    "chicago-2002"
   ],
   "cecilia-dopazo": [
     "caballos-salvajes-1995",
@@ -1002,6 +1057,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "her-2013",
     "el-juego-de-la-fortuna-2011",
     "guerra-de-novias-2009"
+  ],
+  "chris-rock": [
+    "spiral-from-the-book-of-saw-2021",
+    "the-week-of-2018",
+    "grown-ups-2-2013",
+    "grown-ups-2010",
+    "the-longest-yard-2005"
   ],
   "christian-bale": [
     "the-bride-2026",
@@ -1350,6 +1412,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "scream-3-2000",
     "scream-2-1997",
     "scream-1996"
+  ],
+  "david-ayer": [
+    "el-corazon-de-la-bestia-2026",
+    "the-beekeeper-2024",
+    "suicide-squad-2016",
+    "corazones-de-hierro-2014",
+    "sin-tregua-2012"
   ],
   "david-cronenberg": [
     "existenz-1999",
@@ -1768,6 +1837,14 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "las-corrientes-2025",
     "los-delincuentes-2023"
   ],
+  "ethan-coen": [
+    "valor-de-ley-2010",
+    "quemese-despues-de-leerse-2008",
+    "no-country-for-old-men-2007",
+    "crueldad-intolerable-2003",
+    "el-gran-lebowski-1998",
+    "fargo-secuestro-voluntario-1996"
+  ],
   "ethan-hawke": [
     "culpable-2021",
     "el-reverendo-2017",
@@ -1794,6 +1871,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "eva-marie-saint": [
     "north-by-northwest-1959",
     "on-the-waterfront-1954"
+  ],
+  "eva-mendes": [
+    "los-otros-dos-2010",
+    "cleaner-2007",
+    "ghost-rider-2007",
+    "la-noche-es-nuestra-2007",
+    "2-fast-2-furious-2003"
   ],
   "evangeline-lilly": [
     "ant-man-and-the-wasp-quantumania-2023",
@@ -1888,6 +1972,19 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-conversacion-1974",
     "the-godfather-part-ii-1974",
     "the-godfather-1972"
+  ],
+  "francis-lawrence": [
+    "la-larga-marcha-2025",
+    "los-juegos-del-hambre-sinsajo-parte-2-2015",
+    "los-juegos-del-hambre-sinsajo-parte-1-2014",
+    "los-juegos-del-hambre-en-llamas-2013",
+    "constantine-2005"
+  ],
+  "frank-capra": [
+    "que-bello-es-vivir-1946",
+    "caballero-sin-espada-1939",
+    "you-can-t-take-it-with-you-1938",
+    "it-happened-one-night-1934"
   ],
   "freida-pinto": [
     "rise-of-the-planet-of-the-apes-2011",
@@ -2367,6 +2464,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "ines-estevez": [
     "el-ultimo-gigante-2026"
   ],
+  "j-k-simmons": [
+    "el-corazon-de-la-bestia-2026",
+    "palm-springs-2020",
+    "la-la-land-2016",
+    "whiplash-2014",
+    "juno-embarazada-por-accidente-2007"
+  ],
   "jack-black": [
     "super-mario-galaxy-2026",
     "a-minecraft-movie-2025",
@@ -2560,6 +2664,16 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "the-fate-of-the-furious-2017",
     "la-estafa-maestra-2003",
     "snatch-cerdos-y-diamantes-2000"
+  ],
+  "jaume-collet-serra": [
+    "the-woman-in-the-yard-2025",
+    "carry-on-2024",
+    "black-adam-2022",
+    "jungle-cruise-2021",
+    "el-pasajero-2018",
+    "una-noche-para-sobrevivir-2015",
+    "non-stop-sin-escalas-2014",
+    "sin-identidad-2011"
   ],
   "javier-bardem": [
     "f1-the-movie-2025",
@@ -2829,6 +2943,18 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "erase-una-vez-en-america-1984",
     "raging-bull-1980"
   ],
+  "joel-coen": [
+    "macbeth-2021",
+    "valor-de-ley-2010",
+    "quemese-despues-de-leerse-2008",
+    "crueldad-intolerable-2003",
+    "donde-estas-hermano-2000",
+    "el-gran-lebowski-1998",
+    "fargo-secuestro-voluntario-1996",
+    "barton-fink-1991",
+    "muerte-entre-las-flores-1990",
+    "arizona-baby-1987"
+  ],
   "joel-schumacher": [
     "numero-23-la-revelacion-2007",
     "camino-de-guerra-2000",
@@ -2854,6 +2980,15 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "la-cosa-el-enigma-de-otro-mundo-1982",
     "1997-rescate-en-nueva-york-1981",
     "halloween-1978"
+  ],
+  "john-cena": [
+    "coyote-vs-acme-2026",
+    "matchbox-la-pelicula-2026",
+    "fast-x-2023",
+    "ninja-turtles-caos-mutante-2023",
+    "the-suicide-squad-2021",
+    "bumblebee-2018",
+    "ferdinand-2017"
   ],
   "john-cusack": [
     "2012-2009",
@@ -2980,6 +3115,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "king-richard-2021",
     "corazones-de-hierro-2014"
   ],
+  "jon-favreau": [
+    "disney-creadores-de-mundos-2026",
+    "the-mandalorian-and-grogu-2026",
+    "spider-man-homecoming-2017",
+    "iron-man-2-2010",
+    "iron-man-2008"
+  ],
   "jon-m-chu": [
     "wicked-for-good-2025",
     "wicked-2024"
@@ -3054,6 +3196,14 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "planet-terror-2007",
     "no-country-for-old-men-2007",
     "los-goonies-1985"
+  ],
+  "josh-hutcherson": [
+    "five-nights-at-freddys-2-2025",
+    "the-beekeeper-2024",
+    "los-juegos-del-hambre-sinsajo-parte-2-2015",
+    "los-juegos-del-hambre-sinsajo-parte-1-2014",
+    "los-juegos-del-hambre-en-llamas-2013",
+    "los-juegos-del-hambre-2012"
   ],
   "josh-o-connor": [
     "el-dia-de-la-revelacion-2026",
@@ -3171,6 +3321,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "roofman-un-buen-ladron-2025",
     "venom-the-last-dance-2024",
     "wonder-wheel-2017"
+  ],
+  "justin-lin": [
+    "f9-the-fast-saga-2021",
+    "fast-and-furious-6-2013",
+    "fast-five-2011",
+    "fast-and-furious-2009",
+    "the-fast-and-the-furious-tokyo-drift-2006"
   ],
   "karl-urban": [
     "mortal-kombat-ii-2026",
@@ -3298,6 +3455,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "los-bufalos-de-durham-1988",
     "los-intocables-de-eliot-ness-1987",
     "silverado-1985"
+  ],
+  "kevin-hart": [
+    "72-hours-2026",
+    "borderlands-el-destino-del-universo-esta-en-juego-2024",
+    "dc-liga-de-supermascotas-2022",
+    "la-vida-secreta-de-tus-mascotas-2-2019",
+    "la-vida-secreta-de-tus-mascotas-2016"
   ],
   "kevin-spacey": [
     "el-padre-de-los-inventos-2010",
@@ -3470,6 +3634,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "lorena-vega": [
     "lu-pau-2026"
+  ],
+  "luc-besson": [
+    "dracula-2026",
+    "dracula-2025",
+    "malavita-2013",
+    "el-quinto-elemento-1997"
   ],
   "luca-guadagnino": [
     "challengers-2024"
@@ -3761,6 +3931,14 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "abyss-1989",
     "the-color-of-money-1986",
     "el-precio-del-poder-1983"
+  ],
+  "mary-steenburgen": [
+    "dink-2026",
+    "plan-en-las-vegas-2013",
+    "la-extrana-que-hay-en-ti-2007",
+    "filadelfia-1993",
+    "back-to-the-future-part-iii-1990",
+    "camino-del-sur-1978"
   ],
   "matias-gueilburt": [
     "fito-paez-el-mundo-cabe-en-una-cancion-2026"
@@ -4063,6 +4241,14 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "shrek-2-2004",
     "shrek-2001"
   ],
+  "mike-nichols": [
+    "la-guerra-de-charlie-wilson-2007",
+    "una-segunda-oportunidad-1991",
+    "postales-desde-el-filo-1990",
+    "armas-de-mujer-1988",
+    "el-graduado-1967",
+    "quien-teme-a-virginia-woolf-1966"
+  ],
   "mikey-madison": [
     "el-poder-de-la-red-2026",
     "anora-2024"
@@ -4280,6 +4466,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "capitan-koblic-2016",
     "el-ciudadano-ilustre-2016"
   ],
+  "owen-wilson": [
+    "cars-3-2017",
+    "vicio-propio-2014",
+    "cars-2-2011",
+    "cars-2006",
+    "life-aquatic-2004"
+  ],
   "pablo-cedron": [
     "el-aura-2005"
   ],
@@ -4387,6 +4580,12 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "punch-drunk-love-2002",
     "magnolia-1999",
     "boogie-nights-1997"
+  ],
+  "paul-verhoeven": [
+    "showgirls-1995",
+    "instinto-basico-1992",
+    "desafio-total-1990",
+    "robocop-el-defensor-del-futuro-1987"
   ],
   "paul-walker": [
     "furious-7-2015",
@@ -4625,6 +4824,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "oficial-y-caballero-1982",
     "dias-del-cielo-1978"
   ],
+  "richard-jenkins": [
+    "the-shape-of-water-2017",
+    "jack-reacher-bajo-la-mira-2012",
+    "quemese-despues-de-leerse-2008",
+    "las-locuras-de-dick-y-jane-2005",
+    "yo-yo-mismo-e-irene-2000"
+  ],
   "ridley-scott": [
     "la-guerra-de-los-ultimos-2026",
     "gladiator-ii-2024",
@@ -4769,6 +4975,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "todos-los-hombres-del-presidente-1976",
     "the-sting-1973",
     "dos-hombres-y-un-destino-1969"
+  ],
+  "robert-rodriguez": [
+    "machete-2010",
+    "planet-terror-2007",
+    "the-faculty-1998",
+    "from-dusk-till-dawn-1996",
+    "four-rooms-1995"
   ],
   "robert-zemeckis": [
     "here-2024",
@@ -5096,6 +5309,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "sergio-pangaro": [
     "penelope-2018"
   ],
+  "seth-rogen": [
+    "la-invitacion-2026",
+    "the-disaster-artist-2017",
+    "funny-people-2009",
+    "horton-y-el-mundo-de-los-quien-2008",
+    "supersalidos-2007"
+  ],
   "sharon-stone": [
     "catwoman-2004",
     "antz-hormiguitaz-1998",
@@ -5400,6 +5620,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "sweeney-todd-the-demon-barber-of-fleet-street-2007",
     "una-serie-de-eventos-desafortunados-2004",
     "rock-star-2001"
+  ],
+  "tobey-maguire": [
+    "el-gran-gatsby-2013",
+    "hermanos-2009",
+    "spider-man-3-2007",
+    "el-buen-aleman-2006",
+    "spider-man-2-2004"
   ],
   "tobin-bell": [
     "saw-x-2023",
@@ -5801,6 +6028,13 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-mauritano-2021",
     "shazam-2019",
     "enredados-2010"
+  ],
+  "zack-snyder": [
+    "zack-snyder-s-justice-league-2021",
+    "justice-league-2017",
+    "batman-v-superman-dawn-of-justice-2016",
+    "man-of-steel-2013",
+    "watchmen-2009"
   ],
   "zazie-beetz": [
     "buena-suerte-diviertete-no-mueras-2026",

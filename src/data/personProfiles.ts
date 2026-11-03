@@ -51,6 +51,7 @@ import { argentineCatalogPerformersAndDirectorsProfilesWave21E } from './personP
 import { argentineCatalogActorsAndDirectorsProfilesWave21F } from './personProfilesWave21F.ts';
 import { argentineCatalogActorsAndDirectorsProfilesWave21G } from './personProfilesWave21G.ts';
 import { argentineCatalogActorsAndDirectorsProfilesWave21H } from './personProfilesWave21H.ts';
+import { recognizedActorAndDirectorProfilesWave22 } from './personProfilesWave22.ts';
 import { personProfileCatalogCredits } from './personProfileCatalogCredits.generated.ts';
 
 const researchedEditorialBiographyBySlug: Record<string, Pick<PersonProfileRecord, 'editorialBiography' | 'referenceUrls'>> = {
@@ -13953,6 +13954,7 @@ const personProfilesWithEditorialOverrides = applyPersonProfileEditorialOverride
 	...argentineCatalogActorsAndDirectorsProfilesWave21F,
 	...argentineCatalogActorsAndDirectorsProfilesWave21G,
 	...argentineCatalogActorsAndDirectorsProfilesWave21H,
+	...recognizedActorAndDirectorProfilesWave22,
 });
 
 export const personProfiles: Record<string, PersonProfileRecord> = Object.fromEntries(
