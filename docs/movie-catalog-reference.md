@@ -1,6 +1,6 @@
 # Catalogo de peliculas del sitio
 
-Generado automaticamente el 2026-10-30. Fuente: src/data/movies/*.json
+Generado automaticamente el 2026-11-03. Fuente: src/data/movies/*.json
 
 Total de peliculas: 2440
 
@@ -41,7 +41,7 @@ Total de peliculas: 2440
 | 2026 | Batman: Knightfall - Part 1: Knightfall | batman-knightfall-part-1-knightfall-2026 | Animacion | Apple TV | +13 |
 | 2026 | Besar es fácil | besar-es-facil-2026 | Comedia romantica | Netflix | +13 |
 | 2026 | BLEACH : Thousand-Year Blood War – The Calamity | bleach-thousand-year-blood-war-the-calamity-2026 | Anime | Otras plataformas | ATP |
-| 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Otras plataformas | +16 |
+| 2026 | Boda sangrienta 2 | boda-sangrienta-2-2026 | Terror | Disney Plus | +16 |
 | 2026 | Buena suerte, diviértete, no mueras | buena-suerte-diviertete-no-mueras-2026 | Ciencia ficcion | Otras plataformas | +17 |
 | 2026 | Buenas vibraciones | buenas-vibraciones-2026 | Comedia romantica | Cine | +18 |
 | 2026 | Cable mortal | cable-mortal-2026 | Thriller | Apple TV + Flow | +16 |
@@ -2204,7 +2204,7 @@ Total de peliculas: 2440
 | 1980 | The Shining | the-shining-1980 | Terror | HBO Max | +18 |
 | 1980 | Toro salvaje | raging-bull-1980 | Drama | Otras plataformas | ATP |
 | 1980 | Viernes 13 | friday-the-13th-1980 | Terror | HBO Max | +18 |
-| 1979 | 1941 | 1941-1979 | Comedia | Otras plataformas | +13 |
+| 1979 | 1941 | 1941-1979 | Comedia | Netflix | +13 |
 | 1979 | Alien: El octavo pasajero | alien-1979 | Terror | Disney Plus + HBO Max | +13 |
 | 1979 | Apocalipsis ahora | apocalypse-now-1979 | Drama | Prime Video | +13 |
 | 1979 | Comenzar de nuevo | comenzar-de-nuevo-1979 | Comedia | Apple TV | +17 |
