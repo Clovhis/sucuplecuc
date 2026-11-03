@@ -821,6 +821,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "colision-2026",
+			"bufferPostId": "6ae94dd794b13c6dd78f9d78",
+			"dueAt": "2026-11-03T22:00:00.000Z",
+			"scheduledAt": "2026-11-03T02:58:32.153Z",
+			"copyStyle": {
+				"opening": 520337116,
+				"availability": 1660146783,
+				"editorial": 533450969,
+				"verdict": 118008477,
+				"link": 1261350028
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/cruzados",
+				"checkedAt": "2026-11-03T02:58:31.683Z",
+				"kind": "subscription",
+				"platforms": [
+					"Netflix"
+				]
+			}
 		}
 	]
 }
