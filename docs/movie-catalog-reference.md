@@ -2,7 +2,7 @@
 
 Generado automaticamente el 2026-11-03. Fuente: src/data/movies/*.json
 
-Total de peliculas: 2440
+Total de peliculas: 2444
 
 | Año | Titulo | Slug | Categoria | Plataforma | Clasificación |
 | --- | --- | --- | --- | --- | --- |
@@ -273,7 +273,7 @@ Total de peliculas: 2440
 | 2026 | Return to Silent Hill | return-to-silent-hill-2026 | Terror | Otras plataformas | +13 |
 | 2026 | Ricos sin dinero | ricos-sin-dinero-2026 | Comedia | Netflix | +13 |
 | 2026 | Río de sangre | rio-de-sangre-2026 | Accion | Disney Plus | +16 |
-| 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | Apple TV | +16 |
+| 2026 | Rosebush Pruning | rosebush-pruning-2026 | Drama | MUBI | +16 |
 | 2026 | Sakamoto Days | sakamoto-days-2026 | Accion | Prime Video | +13 |
 | 2026 | Sangre asesina | sangre-asesina-2026 | Accion | Netflix | +18 |
 | 2026 | Scary Movie 6 | scary-movie-6-2026 | Comedia | Paramount Plus + Apple TV | +17 |
@@ -375,7 +375,7 @@ Total de peliculas: 2440
 | 2025 | Drácula: Una historia de amor | dracula-2025 | Terror | Prime Video | +16 |
 | 2025 | Drop | drop-2025 | Thriller | HBO Max | +13 |
 | 2025 | Echo Valley | echo-valley-2025 | Drama | Apple TV | +16 |
-| 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | Otras plataformas | +16 |
+| 2025 | El agente secreto | el-agente-secreto-2025 | Thriller | MUBI | +16 |
 | 2025 | El conjuro 4: Últimos ritos | el-conjuro-4-ultimos-ritos-2025 | Terror | HBO Max | +13 |
 | 2025 | El gran arco | el-gran-arco-2025 | Drama | Otras plataformas | ATP |
 | 2025 | El gran falsificador | el-gran-falsificador-2025 | Drama | Otras plataformas | +13 |
@@ -412,10 +412,12 @@ Total de peliculas: 2440
 | 2025 | KPop Demon Hunters | kpop-demon-hunters-2025 | Animacion | Netflix | ATP |
 | 2025 | La casa | la-casa-2025 | Thriller | Cine | +13 |
 | 2025 | La cena | la-cena-2025 | Comedia | Cine | +13 |
+| 2025 | La hermanastra fea | la-hermanastra-fea-2025 | Terror | MUBI | +16 |
 | 2025 | La ladrona del tiempo | la-ladrona-del-tiempo-2025 | Animacion | Apple TV + Prime Video | +13 |
 | 2025 | La larga marcha | la-larga-marcha-2025 | Thriller | Prime Video | +16 |
 | 2025 | La Máquina: The Smashing Machine | la-maquina-the-smashing-machine-2025 | Drama | Prime Video | +16 |
 | 2025 | La negociación | la-negociacion-2025 | Drama | Cine + Apple TV | +13 |
+| 2025 | La única opción | la-unica-opcion-2025 | Comedia | MUBI | +13 |
 | 2025 | La vida de Chuck | la-vida-de-chuck-2025 | Drama | Prime Video | +13 |
 | 2025 | La vida es así | la-vida-es-asi-2025 | Comedia | Cine | ATP |
 | 2025 | Las 100 noches del deseo | las-100-noches-del-deseo-2025 | Fantasia | Apple TV + Prime Video | +12 |
@@ -434,6 +436,7 @@ Total de peliculas: 2440
 | 2025 | Los tipos malos 2 | los-tipos-malos-2-2025 | Animacion | HBO Max | ATP |
 | 2025 | M3GAN 2.0 | m3gan-2-0-2025 | Ciencia ficcion | HBO Max | +13 |
 | 2025 | Marty Supreme | marty-supreme-2025 | Drama | Prime Video | +13 |
+| 2025 | Mátate, amor | matate-amor-2025 | Drama | MUBI | +16 |
 | 2025 | Me has robado el corazón | me-has-robado-el-corazon-2025 | Comedia romántica | Otras plataformas | +16 |
 | 2025 | Mi hija es un zombi | mi-hija-es-un-zombi-2025 | Comedia | Apple TV | +13 |
 | 2025 | Mi mejor escena | mi-mejor-escena-2025 | Documental | Prime Video | +13 |
@@ -491,7 +494,7 @@ Total de peliculas: 2440
 | 2025 | Una quinta en Portugal | una-quinta-en-portugal-2025 | Drama | Cine | ATP |
 | 2025 | UnMarry | unmarry-2025 | Drama | Netflix | +13 |
 | 2025 | Until Dawn | until-dawn-2025 | Terror | HBO Max | +17 |
-| 2025 | Valor sentimental | valor-sentimental-2025 | Drama | Otras plataformas | +13 |
+| 2025 | Valor sentimental | valor-sentimental-2025 | Drama | MUBI | +13 |
 | 2025 | Volcán: Fuego Bajo Tierra | volcan-fuego-bajo-tierra-2025 | Thriller | Apple TV | +13 |
 | 2025 | Weapons | weapons-2025 | Terror | HBO Max | +16 |
 | 2025 | Wicked: For Good | wicked-for-good-2025 | Fantasia | Otras plataformas | ATP |
@@ -547,7 +550,7 @@ Total de peliculas: 2440
 | 2024 | La luz que imaginamos | la-luz-que-imaginamos-2024 | Drama | Otras plataformas | +13 |
 | 2024 | La música de John Williams | music-by-john-williams-2024 | Documental | Disney Plus | ATP |
 | 2024 | La Semilla del fruto sagrado | la-semilla-del-fruto-sagrado-2024 | Drama | Apple TV | +16 |
-| 2024 | La sustancia | the-substance-2024 | Terror | HBO Max + Apple TV | +13 |
+| 2024 | La sustancia | the-substance-2024 | Terror | MUBI + Netflix | +13 |
 | 2024 | La trampa | la-trampa-2024 | Thriller | HBO Max | +16 |
 | 2024 | Las corredoras | las-corredoras-2024 | Comedia negra | Flow | +13 |
 | 2024 | Longlegs | longlegs-2024 | Terror | Prime Video | +16 |
@@ -608,7 +611,7 @@ Total de peliculas: 2440
 | 2023 | Creed III | creed-iii-2023 | Drama | Otras plataformas | +13 |
 | 2023 | Cuando acecha la maldad | cuando-acecha-la-maldad-2023 | Terror | Netflix | +16 |
 | 2023 | Desconocidos | desconocidos-2023 | Drama | Disney Plus | +16 |
-| 2023 | Días perfectos | dias-perfectos-2023 | Drama | Netflix + Apple TV | ATP |
+| 2023 | Días perfectos | dias-perfectos-2023 | Drama | MUBI + Netflix | ATP |
 | 2023 | Different Strokes | different-strokes-2023 | Drama | Prime Video | +16 |
 | 2023 | El asesino | the-killer-2023 | Thriller | Netflix | +13 |
 | 2023 | El asesino del ritual | el-asesino-del-ritual-2023 | Drama | Prime Video | +16 |
@@ -624,6 +627,7 @@ Total de peliculas: 2440
 | 2023 | Golda | golda-2023 | Drama | Prime Video | +13 |
 | 2023 | Golpe de suerte | coup-de-chance-2023 | Thriller | Otras plataformas | +16 |
 | 2023 | Guardians of the Galaxy Vol. 3 | guardians-of-the-galaxy-vol-3-2023 | Accion | Disney Plus | +13 |
+| 2023 | Hojas de otoño | las-hojas-muertas-2023 | Romance | MUBI | +13 |
 | 2023 | Indiana Jones and the Dial of Destiny | indiana-jones-and-the-dial-of-destiny-2023 | Accion | Disney Plus | +13 |
 | 2023 | John Wick: Chapter 4 | john-wick-chapter-4-2023 | Accion | Mercado Play | +16 |
 | 2023 | Killers of the Flower Moon | killers-of-the-flower-moon-2023 | Thriller | Apple TV | +16 |
@@ -667,7 +671,7 @@ Total de peliculas: 2440
 | 2023 | Vidas pasadas | vidas-pasadas-2023 | Romance | Netflix | +13 |
 | 2023 | Wish | wish-2023 | Animacion | Disney Plus | ATP |
 | 2023 | Wonka | wonka-2023 | Fantasia | HBO Max | ATP |
-| 2022 | Aftersun | aftersun-2022 | Drama | Otras plataformas | +13 |
+| 2022 | Aftersun | aftersun-2022 | Drama | MUBI | +13 |
 | 2022 | All Quiet on the Western Front | all-quiet-on-the-western-front-2022 | Drama | Netflix | +16 |
 | 2022 | Ambulance: Plan de huida | ambulance-plan-de-huida-2022 | Acción | Otras plataformas | +17 |
 | 2022 | Ámsterdam | amsterdam-2022 | Comedia | Otras plataformas | +13 |

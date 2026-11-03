@@ -1,0 +1,194 @@
+{
+  "baseRef": "main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/rosebush-pruning-2026.json",
+    "src/data/movies/the-substance-2024.json",
+    "src/data/movies/dias-perfectos-2023.json",
+    "src/data/movies/aftersun-2022.json",
+    "src/data/movies/el-agente-secreto-2025.json",
+    "src/data/movies/valor-sentimental-2025.json",
+    "src/data/movies/la-unica-opcion-2025.json",
+    "src/data/movies/matate-amor-2025.json",
+    "src/data/movies/la-hermanastra-fea-2025.json",
+    "src/data/movies/las-hojas-muertas-2023.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/rosebush-pruning-2026.json",
+        "poster": "assets/posters/2026/rosebush-pruning-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x685, 64488 bytes.",
+        "bytes": 64488,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      },
+      {
+        "filePath": "src/data/movies/the-substance-2024.json",
+        "poster": "assets/posters/2024/the-substance-2024.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 22842 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 22842,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/dias-perfectos-2023.json",
+        "poster": "assets/posters/2023/dias-perfectos-2023.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 474x720, 74070 bytes.",
+        "bytes": 74070,
+        "format": "webp",
+        "width": 474,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/aftersun-2022.json",
+        "poster": "assets/posters/2022/aftersun-2022.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 31352 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 31352,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-agente-secreto-2025.json",
+        "poster": "assets/posters/2025/el-agente-secreto-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x707, 54138 bytes.",
+        "bytes": 54138,
+        "format": "webp",
+        "width": 480,
+        "height": 707
+      },
+      {
+        "filePath": "src/data/movies/valor-sentimental-2025.json",
+        "poster": "assets/posters/2025/valor-sentimental-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 67828 bytes.",
+        "bytes": 67828,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-unica-opcion-2025.json",
+        "poster": "assets/posters/2025/la-unica-opcion-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 80664 bytes.",
+        "bytes": 80664,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/matate-amor-2025.json",
+        "poster": "assets/posters/2025/matate-amor-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 51616 bytes.",
+        "bytes": 51616,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-hermanastra-fea-2025.json",
+        "poster": "assets/posters/2025/la-hermanastra-fea-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 61480 bytes.",
+        "bytes": 61480,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/las-hojas-muertas-2023.json",
+        "poster": "assets/posters/2023/las-hojas-muertas-2023.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 27174 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 27174,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      }
+    ],
+    "summary": {
+      "total": 10,
+      "passed": 7,
+      "warnings": 3,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "ok",
+    "message": "review audit passed for 10 file(s)"
+  },
+  "findings": [
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/the-substance-2024.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/aftersun-2022.json",
+      "message": "\"Sally Messham\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/el-agente-secreto-2025.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/la-hermanastra-fea-2025.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/the-substance-2024.json",
+      "message": "poster is valid at 22842 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/aftersun-2022.json",
+      "message": "poster is valid at 31352 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/las-hojas-muertas-2023.json",
+      "message": "poster is valid at 27174 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    }
+  ]
+}

@@ -28,7 +28,7 @@ Keep `Cine` only when current venue-level evidence confirms a run inside CABA or
 
 2. For each title no longer in cartelera, consult JustWatch AR once. Use the official Argentine provider page only to resolve ambiguity. Prefer `FLATRATE`; a clearly legal AR rental/purchase is acceptable but must be reported as transactional.
 
-3. Resolve to one allowed label: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `CINE.AR`, `Cine`, or `Otras plataformas`. A second verified AR offer may go in `releasePlatforms` (two labels total). `Otras plataformas` is exclusive. On ambiguous evidence, prefer it over a stale `Cine` claim.
+3. Resolve to one allowed label: `Netflix`, `HBO Max`, `Paramount Plus`, `Apple TV`, `Prime Video`, `Disney Plus`, `Crunchyroll`, `Mercado Play`, `MUBI`, `CINE.AR`, `Cine`, or `Otras plataformas`. A second verified AR offer may go in `releasePlatforms` (two labels total). `Otras plataformas` is exclusive. On ambiguous evidence, prefer it over a stale `Cine` claim. For MUBI, require a current title-specific AR offer; distribution rights alone do not establish streaming availability. If Watchmode is used as a complement, confirm source 181, region AR and type sub for the exact film/year; do not treat MUBI Amazon Channel as a direct MUBI subscription.
 
 4. Modify only changed entries. Preserve `cinepostaScore` exactly unless the user separately authorized an editorial rerating; never add `verdict`, `verdictLabel`, `absoluteCinema`, or a custom score label during a platform revalidation. Then regenerate and audit the affected paths:
 

@@ -89,6 +89,14 @@ Notas de taxonomía:
 - `subgenres` guarda chips editoriales finos y canónicos como `Gore`, `Found Footage`, `Slasher`, `RomCom`, `Body Horror`, `Psicológico`, `Sobrenatural`, `Heist`, `Road Movie`, `Coming of Age`, `Mockumentary` y `Exploitation`.
 - En películas de superhéroes Marvel/DC, `postCreditsScenes` es obligatorio: guarda el total verificado de escenas durante o después de créditos; `0` significa que no hay ninguna. No se permiten valores pendientes o sin confirmar.
 
+## Plataformas y disponibilidad argentina
+
+Los filtros, logos y nombres accesibles se definen en `src/lib/platforms.ts`; las fichas usan `releasePlatform` y, cuando corresponde, `releasePlatforms` con hasta dos ofertas verificadas en Argentina. Los proveedores destacados incluyen Netflix, Disney+, HBO Max, Paramount+, Prime Video, Mercado Play, Apple TV, Crunchyroll, Flow, **MUBI** y CINE.AR. `Cine` cubre CABA y Provincia de Buenos Aires; `Otras plataformas` es una etiqueta exclusiva para disponibilidad sin confirmar.
+
+MUBI usa la etiqueta canónica `MUBI`, el filtro `/?plataforma=mubi` y el logo local `public/brand/platforms/mubi.svg`. La verificación con Watchmode exige una oferta del título exacto con `source_id: 181`, `region: AR` y `type: sub`, como complemento de JustWatch AR y la confirmación oficial cuando corresponda. Una ficha global, los derechos de distribución o un canal adicional de Amazon no prueban una suscripción directa a MUBI. La consulta se hace durante la carga/auditoría; el sitio no expone claves ni consulta la API desde el navegador.
+
+Las reglas completas están en las skills de [alta](skills/la-posta-cine-add-movie/SKILL.md), [auditoría](skills/la-posta-cine-auditor/SKILL.md) y [revalidación de cartelera](skills/la-posta-cine-cartelera-revalidator/SKILL.md). La incorporación inicial de MUBI tiene su [reporte de evidencia y validación](reports/mubi-argentina-2026-11-03/README.md).
+
 ## Score editorial de Cine Posta
 
 `cinepostaScore` es la única fuente de verdad para la valoración editorial, los rankings, el orden “Mejor valoradas”, los filtros y las automatizaciones. Si una película todavía no fue valorada, no se inventa una nota. Las etiquetas visibles se derivan del número y no se guardan por separado:

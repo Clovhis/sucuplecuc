@@ -3,7 +3,7 @@
 Generado automaticamente el 2026-11-03. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4480
+Total de vínculos de películas del catálogo: 4482
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -381,7 +381,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jennifer Connelly | `jennifer-connelly` | /personas/jennifer-connelly/ | Actriz | 6 | 7 |
 | Jennifer Garner | `jennifer-garner` | /personas/jennifer-garner/ | Actriz | 4 | 7 |
 | Jennifer Jason Leigh | `jennifer-jason-leigh` | /personas/jennifer-jason-leigh/ | Actriz | 7 | 3 |
-| Jennifer Lawrence | `jennifer-lawrence` | /personas/jennifer-lawrence/ | Actriz | 9 | 6 |
+| Jennifer Lawrence | `jennifer-lawrence` | /personas/jennifer-lawrence/ | Actriz | 10 | 6 |
 | Jennifer Tilly | `jennifer-tilly` | /personas/jennifer-tilly/ | Actriz | 4 | 7 |
 | Jeremy Irons | `jeremy-irons` | /personas/jeremy-irons/ | Actor | 5 | 5 |
 | Jeremy Renner | `jeremy-renner` | /personas/jeremy-renner/ | Actor | 3 | 7 |
@@ -673,7 +673,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Robert Duvall | `robert-duvall` | /personas/robert-duvall/ | Actor / Productor | 9 | 5 |
 | Robert Eggers | `robert-eggers` | /personas/robert-eggers/ | Director | 4 | 7 |
 | Robert Englund | `robert-englund` | /personas/robert-englund/ | Actor | 9 | 6 |
-| Robert Pattinson | `robert-pattinson` | /personas/robert-pattinson/ | Actor | 8 | 6 |
+| Robert Pattinson | `robert-pattinson` | /personas/robert-pattinson/ | Actor | 9 | 6 |
 | Robert Redford | `robert-redford` | /personas/robert-redford/ | Director | 8 | 5 |
 | Robert Rodriguez | `robert-rodriguez` | /personas/robert-rodriguez/ | Director / Guionista / Productor | 5 | 5 |
 | Robert Zemeckis | `robert-zemeckis` | /personas/robert-zemeckis/ | Director | 12 | 6 |

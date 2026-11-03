@@ -175,6 +175,8 @@ assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2025, offers)])
 assert.equal(streamingAvailability(recentMovie, [node('Otro título', 2026, offers)]), null);
 assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2026, offers, '/us/movie/estreno')]), null);
 assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2026, [['HBO Max Amazon Channel', 'FLATRATE']])]), null, 'no infiere un proveedor base desde un canal adicional');
+assert.deepEqual(streamingAvailability(recentMovie, [node('Estreno', 2026, [['MUBI', 'FLATRATE']])]).platforms, ['MUBI']);
+assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2026, [['MUBI Amazon Channel', 'FLATRATE']])]), null, 'MUBI directo requiere una oferta propia');
 assert.equal(streamingAvailability(recentMovie, [node('Estreno', 2026, [['Cinemark', 'CINEMA']])]), null);
 const store = streamingAvailability(recentMovie, [node('Estreno', 2026, [['Apple TV Store', 'RENT']])]);
 assert.equal(store.kind, 'transactional');

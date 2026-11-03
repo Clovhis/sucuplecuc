@@ -543,13 +543,13 @@ test.describe('home catalog filters', () => {
     expect(layout.pageOverflow).toBeFalsy();
   });
 
-  test('platform grid replaces DGO with Flow and keeps desktop 4x3 plus mobile containment', async ({ page }, testInfo) => {
+  test('platform grid includes MUBI and Flow with four desktop columns and mobile containment', async ({ page }, testInfo) => {
     await gotoHome(page);
 
     const platformPanel = page.locator('[data-home-filter-panel="platform"]');
     const flowChip = page.getByRole('button', { name: /Filtrar por Flow/i });
 
-    await expect(platformPanel.locator('[data-home-platform-chip]')).toHaveCount(12);
+    await expect(platformPanel.locator('[data-home-platform-chip]')).toHaveCount(13);
     await expect(flowChip).toHaveCount(1);
     const flowLogo = flowChip.locator('img');
     await expect(flowLogo).toHaveAttribute('src', '/brand/platforms/flow.svg');
@@ -588,8 +588,8 @@ test.describe('home catalog filters', () => {
         };
       });
 
-      expect(layout.rows).toBe(3);
-      expect(layout.rowCounts).toEqual([4, 4, 4]);
+      expect(layout.rows).toBe(4);
+      expect(layout.rowCounts).toEqual([4, 4, 4, 1]);
     }
 
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();

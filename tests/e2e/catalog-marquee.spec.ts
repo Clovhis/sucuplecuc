@@ -1,5 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync, readdirSync } from 'node:fs';
+import { getLatestCatalogAdditions } from '../../src/lib/catalog-additions';
+import { getMoviePlatforms } from '../../src/lib/platforms';
 
 test.beforeEach(async ({ page }) => {
 	await page.goto('/', { waitUntil: 'load' });
@@ -64,7 +66,7 @@ test('se desplaza, permite pausar y reanudar y se detiene al pasar el mouse', as
 	expect(widths[0]).toBeCloseTo(widths[1], 0);
 });
 
-test('cine muestra En Cines y el clic mantiene el título en su posición hasta navegar', async ({ page }, testInfo) => {
+test('cine conserva su etiqueta cuando integra las novedades y el clic mantiene el título en posición', async ({ page }, testInfo) => {
 	test.skip(testInfo.project.name.startsWith('mobile-'), 'Regresión del clic de mouse en desktop.');
 	const marquee = page.locator('catalog-marquee');
 	const cinema = marquee.locator('.catalog-marquee__platform[title="En cines"]');
@@ -72,7 +74,10 @@ test('cine muestra En Cines y el clic mantiene el título en su posición hasta 
 		await expect(platform).toHaveText('En Cines');
 		await expect(platform.locator('svg')).toHaveCount(0);
 	}
-	expect(await cinema.count()).toBeGreaterThan(0);
+	const movies = readdirSync('src/data/movies').map((name) => JSON.parse(readFileSync(`src/data/movies/${name}`, 'utf8')));
+	const cinemaCount = getLatestCatalogAdditions(movies).filter((movie) => getMoviePlatforms(movie).includes('Cine')).length;
+	// New catalog additions can all be streaming titles; check both loop copies.
+	await expect(cinema).toHaveCount(cinemaCount * 2);
 	const track = marquee.locator('.catalog-marquee__track');
 	// Exercise both halves of the seamless loop, including the decorative copy.
 	for (const phase of [.08, .55]) {

@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-03",
+  "branch": "feature/mubi-argentina",
+  "catalogMovies": 2444,
+  "candidateCount": 10,
+  "additions": 4,
+  "updates": 6,
+  "checks": {
+    "npm run check": "pass: 0 errors, 0 warnings, 0 hints",
+    "npm run validate:content": "pass, includes build, originality, content quality, duplicates, portraits, catalogs, public output and sitemap",
+    "npm run build": "pass through validate:content; 5786 canonical pages",
+    "explicit movie-people audit": "10/10 pass",
+    "explicit no-skip YouTube/content audit": "10/10 pass, external search warnings retained",
+    "explicit post-build audit": "10/10 pass",
+    "npm run images:people:check": "5937 portraits pass",
+    "npm run test:poster-source-policy": "pass",
+    "npm run test:editorial-meters": "pass",
+    "npm run test:buffer:x": "pass",
+    "npm run test:catalog-additions": "pass",
+    "skill quick validation": "2 skills x 3 copies pass; hashes identical",
+    "git diff --check": "pass"
+  },
+  "browser": {
+    "projects": [
+      "desktop-chromium",
+      "mobile-webkit"
+    ],
+    "files": [
+      "filter-combos.spec.ts",
+      "platform-badge.spec.ts",
+      "mubi-platform.spec.ts",
+      "catalog-marquee.spec.ts",
+      "home-carousels.spec.ts"
+    ],
+    "initial": {
+      "passed": 90,
+      "skipped": 5,
+      "failed": 1
+    },
+    "correction": "Marquee test assumed at least one current cinema intake. Now compares against real selected catalog additions, while retaining both animation-half click checks.",
+    "rerun": {
+      "file": "catalog-marquee.spec.ts",
+      "passed": 9,
+      "skipped": 1,
+      "failed": 0
+    },
+    "resolvedDistinctCases": {
+      "passed": 91,
+      "skipped": 5,
+      "failed": 0
+    },
+    "postersPerProject": {
+      "total": 10,
+      "loaded": 10,
+      "bad": 0
+    },
+    "note": "Initial runner emitted all 96 test results but did not finish closing; it was interrupted after results and screenshots were saved. The affected suite reran with video capture disabled and exited successfully."
+  },
+  "release": {
+    "commit": false,
+    "push": false,
+    "merge": false,
+    "deploy": false,
+    "dev": "http://127.0.0.1:4321/?plataforma=mubi"
+  },
+  "temporaryResearch": {
+    "path": ".tmp/mubi",
+    "retained": true,
+    "reason": "Automatic approval review rejected recursive cleanup as blocked by policy."
+  }
+}

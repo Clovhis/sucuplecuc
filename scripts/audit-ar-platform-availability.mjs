@@ -83,6 +83,7 @@ function titleScore(movie, candidate) {
 }
 
 function providerForPackage(pkg) {
+	if (normalize(pkg?.clearName) === 'mubi') return 'MUBI';
 	const name = `${pkg?.clearName ?? ''} ${pkg?.technicalName ?? ''} ${pkg?.shortName ?? ''}`;
 	return PROVIDER_MAP.find(([pattern]) => pattern.test(name))?.[1] ?? null;
 }

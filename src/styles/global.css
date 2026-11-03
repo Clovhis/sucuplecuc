@@ -2351,6 +2351,11 @@ img {
 	--platform-chip-logo-max-height: 1.4rem;
 }
 
+.home-platform-filter__badge.platform-chip--mubi {
+	--platform-chip-logo-width: 4.5rem;
+	--platform-chip-logo-max-height: 1.4rem;
+}
+
 .home-platform-filter__badge.platform-chip--flow .platform-chip__logo {
 	max-height: 1.4rem;
 }
@@ -4731,6 +4736,16 @@ img {
 	color: #ff8a28;
 	background: linear-gradient(180deg, rgba(255, 138, 40, 0.16), rgba(20, 73, 132, 0.1));
 	border-color: rgba(255, 138, 40, 0.34);
+}
+
+.platform-chip--mubi {
+	--platform-chip-logo-width: 3.6rem;
+	--platform-chip-logo-max-height: 1.1rem;
+	--platform-tile-logo-width: 4.2rem;
+	--platform-tile-logo-max-height: 1.4rem;
+	color: #f4f7ff;
+	background: rgba(255, 255, 255, 0.06);
+	border-color: rgba(255, 255, 255, 0.18);
 }
 
 .review-clamp {

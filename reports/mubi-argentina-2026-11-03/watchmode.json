@@ -1,0 +1,810 @@
+{
+  "checkedAt": "2026-11-03",
+  "region": {
+    "country": "AR",
+    "name": "Argentina",
+    "flag": "https://cdn.watchmode.com/misc_images/icons/flagAR.png",
+    "data_tier": 1,
+    "plan_enabled": true,
+    "endpoint": "https://api.watchmode.com/v1/regions/"
+  },
+  "provider": {
+    "id": 181,
+    "name": "MUBI",
+    "host_source_id": null,
+    "host_source": null,
+    "type": "sub",
+    "logo_100px": "https://cdn.watchmode.com/provider_logos/mubi_100px.png",
+    "ios_appstore_url": "http://itunes.apple.com/app/mubi/id626148774",
+    "android_playstore_url": "https://play.google.com/store/apps/details?id=com.mubi",
+    "android_scheme": null,
+    "ios_scheme": "mubi",
+    "regions": [
+      "AE",
+      "AR",
+      "AT",
+      "AU",
+      "BE",
+      "BG",
+      "BR",
+      "CA",
+      "CH",
+      "CL",
+      "CO",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GB",
+      "GR",
+      "HK",
+      "HR",
+      "HU",
+      "ID",
+      "IE",
+      "IL",
+      "IN",
+      "IS",
+      "IT",
+      "JP",
+      "KR",
+      "LT",
+      "MX",
+      "MY",
+      "NL",
+      "NO",
+      "NZ",
+      "PA",
+      "PE",
+      "PH",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "RU",
+      "SE",
+      "SG",
+      "TH",
+      "TR",
+      "UA",
+      "US",
+      "VN",
+      "ZA"
+    ],
+    "endpoint": "https://api.watchmode.com/v1/sources/?regions=AR"
+  },
+  "list": {
+    "endpoint": "https://api.watchmode.com/v1/list-titles/?source_ids=181&regions=AR&types=movie&limit=250&sort_by=popularity_desc",
+    "total_results": 152
+  },
+  "titles": [
+    {
+      "slug": "rosebush-pruning-2026",
+      "watchmodeId": 1713748,
+      "imdbId": "tt27844906",
+      "tmdbId": 1130948,
+      "year": 2026,
+      "type": "movie",
+      "runtime": 95,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 5.3,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1713748/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/rosebush-pruning"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/rosebush-pruning/umc.cmc.4te2pcb6etmy5lsmvia78emeb?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A6784438565"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/rosebush-pruning/umc.cmc.4te2pcb6etmy5lsmvia78emeb?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A6784438565"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/rosebush-pruning/umc.cmc.4te2pcb6etmy5lsmvia78emeb?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A6784438565"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/rosebush-pruning/umc.cmc.4te2pcb6etmy5lsmvia78emeb?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A6784438565"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/rosebush-pruning/umc.cmc.4te2pcb6etmy5lsmvia78emeb?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A6784438565"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/rosebush-pruning/umc.cmc.4te2pcb6etmy5lsmvia78emeb?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A6784438565"
+        }
+      ]
+    },
+    {
+      "slug": "the-substance-2024",
+      "watchmodeId": 1674882,
+      "imdbId": "tt17526714",
+      "tmdbId": 933260,
+      "year": 2024,
+      "type": "movie",
+      "runtime": 141,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 7.3,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1674882/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/the-substance"
+        },
+        {
+          "source_id": 203,
+          "name": "Netflix",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://www.netflix.com/title/81705777"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-sustancia/umc.cmc.3fc032hv09dz1k89a1fa47396?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1769170064"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-sustancia/umc.cmc.3fc032hv09dz1k89a1fa47396?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1769170064"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-sustancia/umc.cmc.3fc032hv09dz1k89a1fa47396?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1769170064"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5419eb34-a8d2-47ac-96bd-aaa343602c43"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-sustancia/umc.cmc.3fc032hv09dz1k89a1fa47396?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1769170064"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-sustancia/umc.cmc.3fc032hv09dz1k89a1fa47396?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1769170064"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-sustancia/umc.cmc.3fc032hv09dz1k89a1fa47396?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1769170064"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.5419eb34-a8d2-47ac-96bd-aaa343602c43"
+        }
+      ]
+    },
+    {
+      "slug": "dias-perfectos-2023",
+      "watchmodeId": 1710418,
+      "imdbId": "tt27503384",
+      "tmdbId": 976893,
+      "year": 2023,
+      "type": "movie",
+      "runtime": 124,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 8.1,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1710418/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/perfect-days"
+        },
+        {
+          "source_id": 203,
+          "name": "Netflix",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://www.netflix.com/title/81716892"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/dias-perfectos/umc.cmc.4144icbf4p6lsxokikch0zfzq?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1740899203"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/dias-perfectos/umc.cmc.4144icbf4p6lsxokikch0zfzq?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1740899203"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/dias-perfectos/umc.cmc.4144icbf4p6lsxokikch0zfzq?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1740899203"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/dias-perfectos/umc.cmc.4144icbf4p6lsxokikch0zfzq?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1740899203"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/dias-perfectos/umc.cmc.4144icbf4p6lsxokikch0zfzq?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1740899203"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/dias-perfectos/umc.cmc.4144icbf4p6lsxokikch0zfzq?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1740899203"
+        }
+      ]
+    },
+    {
+      "slug": "aftersun-2022",
+      "watchmodeId": 1683101,
+      "imdbId": "tt19770238",
+      "tmdbId": 965150,
+      "year": 2022,
+      "type": "movie",
+      "runtime": 101,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 7.8,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1683101/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/aftersun"
+        }
+      ]
+    },
+    {
+      "slug": "el-agente-secreto-2025",
+      "watchmodeId": 1774260,
+      "imdbId": "tt27847051",
+      "tmdbId": 1220564,
+      "year": 2025,
+      "type": "movie",
+      "runtime": 161,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 7.4,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1774260/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/the-secret-agent-2025"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/el-agente-secreto/umc.cmc.21554rd2m8oygfzk07s8l2flh?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1873535078"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/el-agente-secreto/umc.cmc.21554rd2m8oygfzk07s8l2flh?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1873535078"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/el-agente-secreto/umc.cmc.21554rd2m8oygfzk07s8l2flh?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1873535078"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.abe65672-09ba-43af-ae61-52a1b6bff5df"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.abe65672-09ba-43af-ae61-52a1b6bff5df"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/el-agente-secreto/umc.cmc.21554rd2m8oygfzk07s8l2flh?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1873535078"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/el-agente-secreto/umc.cmc.21554rd2m8oygfzk07s8l2flh?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1873535078"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/el-agente-secreto/umc.cmc.21554rd2m8oygfzk07s8l2flh?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1873535078"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.abe65672-09ba-43af-ae61-52a1b6bff5df"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.abe65672-09ba-43af-ae61-52a1b6bff5df"
+        }
+      ]
+    },
+    {
+      "slug": "valor-sentimental-2025",
+      "watchmodeId": 1897910,
+      "imdbId": "tt27714581",
+      "tmdbId": 1124566,
+      "year": 2025,
+      "type": "movie",
+      "runtime": 133,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 7.9,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1897910/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/sentimental-value"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/valor-sentimental/umc.cmc.qh7lq4wx36i46l4fwxycwkvz?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1856883930"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/valor-sentimental/umc.cmc.qh7lq4wx36i46l4fwxycwkvz?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1856883930"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/valor-sentimental/umc.cmc.qh7lq4wx36i46l4fwxycwkvz?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1856883930"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9ab0b19d-46a9-4ffc-9596-7210731be3eb"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9ab0b19d-46a9-4ffc-9596-7210731be3eb"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/valor-sentimental/umc.cmc.qh7lq4wx36i46l4fwxycwkvz?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1856883930"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/valor-sentimental/umc.cmc.qh7lq4wx36i46l4fwxycwkvz?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1856883930"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/valor-sentimental/umc.cmc.qh7lq4wx36i46l4fwxycwkvz?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1856883930"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9ab0b19d-46a9-4ffc-9596-7210731be3eb"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9ab0b19d-46a9-4ffc-9596-7210731be3eb"
+        }
+      ]
+    },
+    {
+      "slug": "la-unica-opcion-2025",
+      "watchmodeId": 1590985,
+      "imdbId": "tt1527793",
+      "tmdbId": 639988,
+      "year": 2025,
+      "type": "movie",
+      "runtime": 139,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 7.7,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1590985/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/no-other-choice"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-unica-opcion/umc.cmc.22au505ssjnwwpeu1hnzidic2?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1867451746"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-unica-opcion/umc.cmc.22au505ssjnwwpeu1hnzidic2?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1867451746"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-unica-opcion/umc.cmc.22au505ssjnwwpeu1hnzidic2?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1867451746"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.96c6bd33-df25-40f8-90c0-629f1a3329cd"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.96c6bd33-df25-40f8-90c0-629f1a3329cd"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-unica-opcion/umc.cmc.22au505ssjnwwpeu1hnzidic2?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1867451746"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-unica-opcion/umc.cmc.22au505ssjnwwpeu1hnzidic2?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1867451746"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-unica-opcion/umc.cmc.22au505ssjnwwpeu1hnzidic2?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1867451746"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.96c6bd33-df25-40f8-90c0-629f1a3329cd"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.96c6bd33-df25-40f8-90c0-629f1a3329cd"
+        }
+      ]
+    },
+    {
+      "slug": "matate-amor-2025",
+      "watchmodeId": 1696964,
+      "imdbId": "tt9362736",
+      "tmdbId": 1033148,
+      "year": 2025,
+      "type": "movie",
+      "runtime": 119,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 5.8,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1696964/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/die-my-love"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/matate-amor/umc.cmc.23tarr4aiuuvv9pkw86tiknhu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1849667590"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/matate-amor/umc.cmc.23tarr4aiuuvv9pkw86tiknhu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1849667590"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/matate-amor/umc.cmc.23tarr4aiuuvv9pkw86tiknhu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1849667590"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/matate-amor/umc.cmc.23tarr4aiuuvv9pkw86tiknhu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1849667590"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/matate-amor/umc.cmc.23tarr4aiuuvv9pkw86tiknhu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1849667590"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/matate-amor/umc.cmc.23tarr4aiuuvv9pkw86tiknhu?at=1000l3V2&ct=app_tv&itscg=30200&itsct=&playableId=tvs.sbd.9001%3A1849667590"
+        }
+      ]
+    },
+    {
+      "slug": "la-hermanastra-fea-2025",
+      "watchmodeId": 1818735,
+      "imdbId": "tt29344903",
+      "tmdbId": 1284120,
+      "year": 2025,
+      "type": "movie",
+      "runtime": 109,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 7.2,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1818735/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/the-ugly-stepsister"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-hermanastra-fea/umc.cmc.50fscf23y60crueh2j1v3n5na?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1845441469"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-hermanastra-fea/umc.cmc.50fscf23y60crueh2j1v3n5na?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1845441469"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3f4b8d6e-372a-4573-b7f6-7e95791bc474"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-hermanastra-fea/umc.cmc.50fscf23y60crueh2j1v3n5na?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1845441469"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/la-hermanastra-fea/umc.cmc.50fscf23y60crueh2j1v3n5na?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1845441469"
+        },
+        {
+          "source_id": 24,
+          "name": "Amazon",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3f4b8d6e-372a-4573-b7f6-7e95791bc474"
+        }
+      ]
+    },
+    {
+      "slug": "las-hojas-muertas-2023",
+      "watchmodeId": 1685597,
+      "imdbId": "tt21027780",
+      "tmdbId": 986280,
+      "year": 2023,
+      "type": "movie",
+      "runtime": 81,
+      "audience": {
+        "source": "Watchmode",
+        "raw": 7,
+        "votes": null,
+        "usedForCinepostaScore": false
+      },
+      "sourcesEndpoint": "https://api.watchmode.com/v1/title/1685597/sources/?regions=AR",
+      "offers": [
+        {
+          "source_id": 181,
+          "name": "MUBI",
+          "type": "sub",
+          "region": "AR",
+          "web_url": "https://mubi.com/films/fallen-leaves-2023"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/hojas-de-otono/umc.cmc.bcj90ocbylgr9501teozjeox?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1727140809"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "rent",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/hojas-de-otono/umc.cmc.bcj90ocbylgr9501teozjeox?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1727140809"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/hojas-de-otono/umc.cmc.bcj90ocbylgr9501teozjeox?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1727140809"
+        },
+        {
+          "source_id": 349,
+          "name": "AppleTV",
+          "type": "buy",
+          "region": "AR",
+          "web_url": "https://tv.apple.com/ar/movie/hojas-de-otono/umc.cmc.bcj90ocbylgr9501teozjeox?at=1000l3V2&ct=app_tv&itscg=30200&playableId=tvs.sbd.9001%3A1727140809"
+        }
+      ]
+    }
+  ]
+}

@@ -14,6 +14,7 @@ export type PlatformVariant =
 	| 'crunchyroll'
 	| 'dgo'
 	| 'flow'
+	| 'mubi'
 	| 'other-platforms';
 
 export interface PlatformAsset {
@@ -55,6 +56,7 @@ const PLATFORM_DISPLAY_LABELS: Partial<Record<PlatformVariant, string>> = {
 	crunchyroll: 'Crunchyroll',
 	dgo: 'DGO',
 	flow: 'Flow',
+	mubi: 'MUBI',
 	'other-platforms': 'Otras plataformas',
 };
 
@@ -75,6 +77,7 @@ const PLATFORM_VARIANTS_BY_LABEL: Record<string, PlatformVariant> = {
 	dgo: 'dgo',
 	'directv go': 'dgo',
 	flow: 'flow',
+	mubi: 'mubi',
 	'flow argentina': 'flow',
 	'personal flow': 'flow',
 	'otras plataformas': 'other-platforms',
@@ -97,6 +100,7 @@ const PLATFORM_FILTER_ORDER = [
 	'apple tv',
 	'crunchyroll',
 	'flow',
+	'mubi',
 	'cine',
 	'cine.ar',
 	UNCONFIRMED_PLATFORM_FILTER_LABEL,
@@ -146,6 +150,10 @@ export const PLATFORM_ASSETS: Partial<Record<Exclude<PlatformVariant, 'default' 
 	flow: {
 		// Official current Flow mark served by Personal Argentina.
 		src: '/brand/platforms/flow.svg',
+		wide: true,
+	},
+	mubi: {
+		src: '/brand/platforms/mubi.svg',
 		wide: true,
 	},
 	dgo: {

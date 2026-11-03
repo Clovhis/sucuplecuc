@@ -2764,6 +2764,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "aquel-excitante-curso-1982"
   ],
   "jennifer-lawrence": [
+    "matate-amor-2025",
     "dont-look-up-2021",
     "x-men-apocalypse-2016",
     "los-juegos-del-hambre-sinsajo-parte-2-2015",
@@ -4959,6 +4960,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   "robert-pattinson": [
     "the-drama-2026",
     "la-odisea-2026",
+    "matate-amor-2025",
     "mickey-17-2025",
     "the-batman-2022",
     "tenet-2020",

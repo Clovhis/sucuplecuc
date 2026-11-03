@@ -25,6 +25,7 @@ const ALLOWED_PLATFORMS = new Set([
 	'Crunchyroll',
 	'DGO',
 	'Flow',
+	'MUBI',
 	'Otras plataformas',
 ]);
 const CINEPOSTA_SCORE_LABELS = ['Basura total', 'Pésima', 'Muy mala', 'Mala', 'Regular', 'Buena', 'Muy buena', 'Excelente', 'Obra maestra', 'Absolute Cinema'];

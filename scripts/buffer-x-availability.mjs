@@ -14,6 +14,7 @@ const PROVIDERS = new Map([
 	['paramount plus', 'Paramount Plus'], ['apple tv', 'Apple TV'], ['apple tv store', 'Apple TV'],
 	['crunchyroll', 'Crunchyroll'], ['mercado play', 'Mercado Play'], ['cine ar', 'CINE.AR'],
 	['flow', 'Flow'], ['dgo', 'DGO'],
+	['mubi', 'MUBI'],
 ]);
 
 function normalize(value) {

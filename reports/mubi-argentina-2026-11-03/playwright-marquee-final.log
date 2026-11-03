@@ -1,0 +1,16 @@
+
+Running 10 tests using 2 workers
+
+  ok  2 [desktop-chromium] › tests\e2e\catalog-marquee.spec.ts:14:1 › muestra incorporaciones reales sobre el buscador con enlaces únicos accesibles (2.7s)
+  ok  1 [desktop-chromium] › tests\e2e\catalog-marquee.spec.ts:40:1 › se desplaza, permite pausar y reanudar y se detiene al pasar el mouse (2.9s)
+  ok  4 [desktop-chromium] › tests\e2e\catalog-marquee.spec.ts:111:1 › el teclado revela cada título completo y la búsqueda conserva su funcionamiento (1.7s)
+  ok  5 [desktop-chromium] › tests\e2e\catalog-marquee.spec.ts:137:1 › movimiento reducido conserva la lista estática y permite recorrerla (1.5s)
+  ok  3 [desktop-chromium] › tests\e2e\catalog-marquee.spec.ts:69:1 › cine conserva su etiqueta cuando integra las novedades y el clic mantiene el título en posición (3.9s)
+  ok  6 [mobile-webkit] › tests\e2e\catalog-marquee.spec.ts:14:1 › muestra incorporaciones reales sobre el buscador con enlaces únicos accesibles (3.3s)
+  ok  7 [mobile-webkit] › tests\e2e\catalog-marquee.spec.ts:40:1 › se desplaza, permite pausar y reanudar y se detiene al pasar el mouse (3.5s)
+  -   8 [mobile-webkit] › tests\e2e\catalog-marquee.spec.ts:69:1 › cine conserva su etiqueta cuando integra las novedades y el clic mantiene el título en posición
+  ok 10 [mobile-webkit] › tests\e2e\catalog-marquee.spec.ts:137:1 › movimiento reducido conserva la lista estática y permite recorrerla (1.9s)
+  ok  9 [mobile-webkit] › tests\e2e\catalog-marquee.spec.ts:111:1 › el teclado revela cada título completo y la búsqueda conserva su funcionamiento (2.8s)
+
+  1 skipped
+  9 passed (14.7s)
