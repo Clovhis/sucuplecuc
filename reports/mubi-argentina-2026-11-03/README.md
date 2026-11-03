@@ -115,6 +115,8 @@ El [primer pase](playwright-initial.log) ejecutó los 96 casos: 90 aprobados, ci
 
 Los avisos externos de búsqueda YouTube 302, el nacimiento opcional de Sally Messham y el tamaño preferido de los tres pósters se mantienen visibles en el JSON de auditoría. No hay un error de identidad, oEmbed o recurso local pendiente.
 
+La primera publicación autorizada (`0207b149`, [Actions 41703140566](https://github.com/Clovhis/sucuplecuc/actions/runs/41703140566)) quedó cancelada antes del deploy: GitHub informó `The job has exceeded the maximum execution time of 15m0s`. El checkout consumió casi seis minutos y el build agotó el tiempo restante. La corrida anterior al cambio de MUBI también había agotado ese límite. Se amplía únicamente el timeout del job `build` a 25 minutos y se documenta en `docs/home-automation.md`, conservando contenido, validaciones, disparadores y permisos.
+
 En el cierre de la revisión inicial, DEV atendía en `http://127.0.0.1:4321/?plataforma=mubi`, con respuesta HTTP 200 verificada. Los valores `release` de `validation.json` describen esa etapa previa a la autorización de publicación.
 
 En la revisión inicial, la limpieza recursiva de `.tmp/mubi` fue rechazada por la revisión automática. Para la publicación se conserva la evidencia final seleccionada en este directorio y se retira del checkout el material temporal mediante un archivo local externo al repositorio.

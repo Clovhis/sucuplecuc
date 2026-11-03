@@ -54,6 +54,8 @@ X publica estrenos de plataformas AR de los últimos 30 días, del año actual o
 
 ## Validaciones y recuperación
 
+El job `build` de Pages dispone de 25 minutos para checkout, dependencias, pósters, construcción y carga del artefacto. El límite anterior de 15 minutos canceló la publicación aun cuando la construcción local era válida: el checkout y las más de ocho mil rutas estáticas pueden consumir juntos ese margen. El job de deploy conserva su límite independiente de 20 minutos y sus tres intentos existentes.
+
 ```bash
 npm run test:home-automation
 npm run validate:home-editions
