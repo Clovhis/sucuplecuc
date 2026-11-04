@@ -843,6 +843,28 @@
 					"Netflix"
 				]
 			}
+		},
+		{
+			"slug": "apocalipsis-z-nuevo-mundo-2026",
+			"bufferPostId": "6aea8ac616e63068f18848a4",
+			"dueAt": "2026-11-04T22:00:00.000Z",
+			"scheduledAt": "2026-11-04T01:30:47.061Z",
+			"copyStyle": {
+				"opening": 21289753,
+				"availability": 403224516,
+				"editorial": 3262721272,
+				"verdict": 2048808980,
+				"link": 925811703
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/apocalipsis-z-nuevo-mundo",
+				"checkedAt": "2026-11-04T01:30:46.371Z",
+				"kind": "subscription",
+				"platforms": [
+					"Prime Video"
+				]
+			}
 		}
 	]
 }
