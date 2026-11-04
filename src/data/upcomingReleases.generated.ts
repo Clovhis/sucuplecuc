@@ -8,40 +8,8 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-03T11:41:11.026Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-04T11:54:34.911Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
-	{
-		"title": "El Gato con Sombrero",
-		"releaseDate": "2026-11-05",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10168-el-gato-con-sombrero/",
-		"slug": "cines-argentinos-10168",
-		"videoUrl": "https://www.youtube.com/watch?v=jcAbu9R07WI",
-		"thumbnailUrl": "https://i.ytimg.com/vi/jcAbu9R07WI/hqdefault.jpg"
-	},
-	{
-		"title": "Entrega al límite",
-		"releaseDate": "2026-11-05",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10589-entrega-al-limite/",
-		"slug": "cines-argentinos-10589",
-		"videoUrl": "https://www.youtube.com/watch?v=YJTR-wQ9MvM",
-		"thumbnailUrl": "https://i.ytimg.com/vi/YJTR-wQ9MvM/hqdefault.jpg"
-	},
-	{
-		"title": "Godzilla Minus Zero",
-		"releaseDate": "2026-11-05",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10548-godzilla-minus-zero/",
-		"slug": "cines-argentinos-10548",
-		"videoUrl": "https://www.youtube.com/watch?v=KSPi8XLeBRg",
-		"thumbnailUrl": "https://i.ytimg.com/vi/KSPi8XLeBRg/hqdefault.jpg"
-	},
-	{
-		"title": "Babystar",
-		"releaseDate": "2026-11-05",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10648-babystar/",
-		"slug": "cines-argentinos-10648",
-		"videoUrl": "https://www.youtube.com/watch?v=7a68yCGo3y4",
-		"thumbnailUrl": "https://i.ytimg.com/vi/7a68yCGo3y4/hqdefault.jpg"
-	},
 	{
 		"title": "Cómo robar un banco",
 		"releaseDate": "2026-11-12",
@@ -97,5 +65,21 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10102",
 		"videoUrl": "https://www.youtube.com/watch?v=jyoTi0gPgNY",
 		"thumbnailUrl": "https://i.ytimg.com/vi/jyoTi0gPgNY/hqdefault.jpg"
+	},
+	{
+		"title": "Duna: Parte Tres",
+		"releaseDate": "2026-12-17",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10441-duna-parte-tres/",
+		"slug": "cines-argentinos-10441",
+		"videoUrl": "https://www.youtube.com/watch?v=FHNCmFQSjkI",
+		"thumbnailUrl": "https://i.ytimg.com/vi/FHNCmFQSjkI/hqdefault.jpg"
+	},
+	{
+		"title": "La Era de Hielo: Mundo de lava",
+		"releaseDate": "2027-02-04",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10208-la-era-de-hielo-mundo-de-lava/",
+		"slug": "cines-argentinos-10208",
+		"videoUrl": "https://www.youtube.com/watch?v=XaSkYbItiKk",
+		"thumbnailUrl": "https://i.ytimg.com/vi/XaSkYbItiKk/hqdefault.jpg"
 	}
 ];
