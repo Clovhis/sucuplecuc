@@ -865,6 +865,28 @@
 					"Prime Video"
 				]
 			}
+		},
+		{
+			"slug": "el-momento-2026",
+			"bufferPostId": "6aebdc9dbc551efdea36d35b",
+			"dueAt": "2026-11-05T22:00:00.000Z",
+			"scheduledAt": "2026-11-05T01:32:13.577Z",
+			"copyStyle": {
+				"opening": 1394359088,
+				"availability": 3475389951,
+				"editorial": 2238217271,
+				"verdict": 1232260415,
+				"link": 2756934226
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/the-moment-2026",
+				"checkedAt": "2026-11-05T01:32:13.101Z",
+				"kind": "subscription",
+				"platforms": [
+					"HBO Max"
+				]
+			}
 		}
 	]
 }
