@@ -1,9 +1,9 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-03. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-05. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4482
+Total de vínculos de películas del catálogo: 4486
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
@@ -73,7 +73,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Antonella Costa | `antonella-costa` | /personas/antonella-costa/ | Actriz | 2 | 5 |
 | Antonio Banderas | `antonio-banderas` | /personas/antonio-banderas/ | Actor | 14 | 7 |
 | Antonio Gasalla | `antonio-gasalla` | /personas/antonio-gasalla/ | Actor / Comediante / Guionista | 1 | 5 |
-| Anya Taylor-Joy | `anya-taylor-joy` | /personas/anya-taylor-joy/ | Actriz | 8 | 6 |
+| Anya Taylor-Joy | `anya-taylor-joy` | /personas/anya-taylor-joy/ | Actriz | 9 | 6 |
 | Ariana DeBose | `ariana-debose` | /personas/ariana-debose/ | Actriz | 3 | 6 |
 | Ariana Grande | `ariana-grande` | /personas/ariana-grande/ | Actriz | 2 | 7 |
 | Ariel Rotter | `ariel-rotter` | /personas/ariel-rotter/ | Director / Guionista / Productor | 1 | 5 |
@@ -93,7 +93,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Ben Stiller | `ben-stiller` | /personas/ben-stiller/ | Actor / Director / Productor | 5 | 5 |
 | Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 7 | 7 |
 | Benjamín Naishtat | `benjamin-naishtat` | /personas/benjamin-naishtat/ | Director / Guionista | 2 | 4 |
-| Bill Hader | `bill-hader` | /personas/bill-hader/ | Actor / Guionista | 7 | 5 |
+| Bill Hader | `bill-hader` | /personas/bill-hader/ | Actor / Guionista | 8 | 5 |
 | Bill Murray | `bill-murray` | /personas/bill-murray/ | Actor | 7 | 4 |
 | Bill Nighy | `bill-nighy` | /personas/bill-nighy/ | Actor | 4 | 6 |
 | Bill Skarsgård | `bill-skarsgard` | /personas/bill-skarsgard/ | Actor | 4 | 6 |
@@ -155,7 +155,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Chiwetel Ejiofor | `chiwetel-ejiofor` | /personas/chiwetel-ejiofor/ | Actor | 12 | 5 |
 | Chloé Zhao | `chloe-zhao` | /personas/chloe-zhao/ | Director | 3 | 7 |
 | Chris Columbus | `chris-columbus` | /personas/chris-columbus/ | Director / Guionista / Productor | 6 | 4 |
-| Chris Evans | `chris-evans` | /personas/chris-evans/ | Actor | 11 | 6 |
+| Chris Evans | `chris-evans` | /personas/chris-evans/ | Actor | 12 | 6 |
 | Chris Hemsworth | `chris-hemsworth` | /personas/chris-hemsworth/ | Actor | 10 | 6 |
 | Chris Pine | `chris-pine` | /personas/chris-pine/ | Actor | 5 | 7 |
 | Chris Pratt | `chris-pratt` | /personas/chris-pratt/ | Actor | 16 | 6 |
@@ -608,7 +608,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Oscar Ferreiro | `oscar-ferreiro` | /personas/oscar-ferreiro/ | Actor | 1 | 5 |
 | Oscar Isaac | `oscar-isaac` | /personas/oscar-isaac/ | Actor | 7 | 6 |
 | Oscar Martínez | `oscar-martinez` | /personas/oscar-martinez/ | Actor | 5 | 6 |
-| Owen Wilson | `owen-wilson` | /personas/owen-wilson/ | Actor / Guionista | 5 | 5 |
+| Owen Wilson | `owen-wilson` | /personas/owen-wilson/ | Actor / Guionista | 6 | 5 |
 | Pablo Cedrón | `pablo-cedron` | /personas/pablo-cedron/ | Actor / Director / Guionista | 1 | 5 |
 | Pablo Echarri | `pablo-echarri` | /personas/pablo-echarri/ | Actor / Productor | 1 | 5 |
 | Pablo Giorgelli | `pablo-giorgelli` | /personas/pablo-giorgelli/ | Director / Guionista | 1 | 5 |

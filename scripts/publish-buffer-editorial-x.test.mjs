@@ -20,3 +20,13 @@ test('un post existente de la misma guía bloquea la duplicación', () => {
 	assert.equal(alreadyPublished([{ text: `Mirá acá ${url}` }], url), true);
 	assert.equal(alreadyPublished([{ text: 'Otro estreno' }], url), false);
 });
+
+test('la guía de salas usa cine, dos enlaces y una imagen local sin anunciar streaming', () => {
+	const plan = editorialPostPlan({ ...editorial, slug: 'estrenos-cines-5-noviembre-2026' });
+	assert.ok(weightedXLength(plan.text) <= 250);
+	assert.match(plan.text, /estrenos de cine/u);
+	assert.match(plan.text, /#Estrenos #Cine #BuenosAires #CinePosta/u);
+	assert.doesNotMatch(plan.text, /streaming|plataformas/iu);
+	assert.ok(plan.text.includes(plan.url));
+	assert.ok(plan.text.includes('Más cine: https://www.cineposta.com.ar/'));
+});

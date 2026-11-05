@@ -13,6 +13,8 @@ Radar, weekly recommendations and upcoming trailers are frozen scheduled edition
 
 ## Compact flow
 
+For theatrical loads, revalidations and carousel audits, accept only large commercial chains in CABA or Buenos Aires Province: Cinemark/Hoyts (including IMAX), Showcase, Cinépolis, Atlas, Cinemacenter and Multiplex, or a documented comparable large chain. Require chain, venue, locality and current/upcoming run date together. Provincial microcinemas and independent, municipal, INCAA, museum or cineclub screenings do not justify `Cine`; their continuing screenings must not be described as a nationwide theatrical departure. IMAX alone is a format, not venue evidence.
+
 1. Prefer explicit candidates. Use branch-recent discovery only when paths are unavailable:
 
 ```bash

@@ -1,0 +1,4259 @@
+[
+  {
+    "title": "Godzilla Minus Zero",
+    "originalTitle": "Godzilla Minus Zero",
+    "year": 2026,
+    "agendaSlug": "godzilla-minus-zero",
+    "duplicate": {
+      "slug": "godzilla-minus-zero-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/godzilla-minus-zero-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=name&search_value=Godzilla+Minus+Zero&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1877491/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1877491,
+        "title": "Godzilla Minus Zero",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt34384661",
+        "tmdbId": 1381071
+      },
+      "metadata": {
+        "title": "Godzilla Minus Zero",
+        "originalTitle": "ゴジラ-0.0",
+        "englishTitle": "Godzilla Minus Zero",
+        "year": 2026,
+        "originalLanguage": "ja",
+        "runtimeMinutes": 135,
+        "releaseDate": "2026-11-03",
+        "genres": [
+          "Science Fiction",
+          "Horror",
+          "Action"
+        ],
+        "imdbId": "tt34384661",
+        "tmdbId": 1381071,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=kw0YhiqOPFg",
+        "similarWatchmodeTitleIds": [
+          136801,
+          136802,
+          199841,
+          1143771,
+          1143777,
+          1150081,
+          1150083,
+          1150086,
+          1150091,
+          1150093,
+          1150094,
+          1150103,
+          1150336,
+          1292619,
+          1315815,
+          1324856,
+          1344395,
+          1426694,
+          1683228,
+          1697113
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 7545344,
+            "name": "Kōzō Shibazaki",
+            "type": "Crew",
+            "role": "Camera Operator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7698268,
+            "name": "Nariyuki Ueda",
+            "type": "Crew",
+            "role": "Gaffer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7837204,
+            "name": "Ryuji Miyajima",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7906549,
+            "name": "Takashi Yamazaki",
+            "type": "Crew",
+            "role": "Writer, Director, Visual Effects, Screenplay",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71064461,
+            "name": "Anri Jojo",
+            "type": "Crew",
+            "role": "Production Design",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71527160,
+            "name": "Kiyoko Shibuya",
+            "type": "Crew",
+            "role": "VFX Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71690063,
+            "name": "Naoki Sato",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71913720,
+            "name": "Tetsuji Tatsuta",
+            "type": "Crew",
+            "role": "Decorator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79122313,
+            "name": "Keichiiro Moriya",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79208013,
+            "name": "Michiyo Miyauchi",
+            "type": "Crew",
+            "role": "Makeup & Hair",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79285637,
+            "name": "Kazuaki Kishida",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79530932,
+            "name": "Kohei Adachi",
+            "type": "Crew",
+            "role": "Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79532763,
+            "name": "Go Abe",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79712842,
+            "name": "Natsuko Inoue",
+            "type": "Crew",
+            "role": "Sound Effects",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710339096,
+            "name": "Masahiro Ishiyama",
+            "type": "Crew",
+            "role": "Colorist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710455020,
+            "name": "Hisafumi Takeuchi",
+            "type": "Crew",
+            "role": "Sound Recordist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711263221,
+            "name": "羽場しおり",
+            "type": "Crew",
+            "role": "Set Decoration, Decorator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711678606,
+            "name": "Atsushi ŌTSUKI",
+            "type": "Crew",
+            "role": "Production Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711678639,
+            "name": "Takayuki Ueki",
+            "type": "Crew",
+            "role": "VFX Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711678645,
+            "name": "Eisin Okubo",
+            "type": "Crew",
+            "role": "VFX Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711743923,
+            "name": "Wataru Hirai",
+            "type": "Crew",
+            "role": "Production Design",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711743955,
+            "name": "Aiko Mizushima",
+            "type": "Crew",
+            "role": "Costumer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71824030,
+            "name": "Ryunosuke Kamiki",
+            "type": "Cast",
+            "role": "Koichi Shikishima",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 74675877,
+            "name": "Minami Hamabe",
+            "type": "Cast",
+            "role": "Noriko Oishi",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73993066,
+            "name": "Yuki Yamada",
+            "type": "Cast",
+            "role": "Shiro Mizushima",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 71534146,
+            "name": "Kuranosuke Sasaki",
+            "type": "Cast",
+            "role": "Seiji Akitsu",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 7503777,
+            "name": "Jun Kunimura",
+            "type": "Cast",
+            "role": "",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 79659877,
+            "name": "Miou Tanaka",
+            "type": "Cast",
+            "role": "Captain Tatsuo Hotta",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 72825304,
+            "name": "Sakura Ando",
+            "type": "Cast",
+            "role": "Sumiko Ota",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 7641069,
+            "name": "Masami Nagasawa",
+            "type": "Cast",
+            "role": "Aoyama",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 7681430,
+            "name": "Min Tanaka",
+            "type": "Cast",
+            "role": "Kanji Murakami",
+            "order": 8
+          },
+          {
+            "watchmodePersonId": 7373890,
+            "name": "Hidetaka Yoshioka",
+            "type": "Cast",
+            "role": "Kenji Noda",
+            "order": 9
+          },
+          {
+            "watchmodePersonId": 71683234,
+            "name": "Munetaka Aoki",
+            "type": "Cast",
+            "role": "Sosaku Tachibana",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 711367574,
+            "name": "Sae Nagatani",
+            "type": "Cast",
+            "role": "Akiko",
+            "order": 11
+          },
+          {
+            "watchmodePersonId": 7373645,
+            "name": "Hideaki Anno",
+            "type": "Cast",
+            "role": "Man on train",
+            "order": 13
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 7.8,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/godzilla-minus-zero",
+      "movie": {
+        "id": "10874",
+        "slug": "godzilla-minus-zero",
+        "originalTitle": "Godzilla Minus Zero",
+        "year": 2026,
+        "durationMinutes": 135,
+        "tmdbId": "1381071",
+        "directors": [
+          "Takashi Yamazaki"
+        ],
+        "cast": [
+          "Ryunosuke Kamiki",
+          "Minami Hamabe",
+          "Yuki Yamada",
+          "Kuranosuke Sasaki",
+          "Jun Kunimura",
+          "Miou Tanaka",
+          "Sakura Ando",
+          "Masami Nagasawa",
+          "Min Tanaka",
+          "Hidetaka Yoshioka"
+        ],
+        "release": {
+          "id": "pp-10873",
+          "movieId": "10874",
+          "countryCode": "AR",
+          "localTitle": "Godzilla Minus Zero",
+          "distributor": [
+            {
+              "distributorId": "5",
+              "distributorName": "BF Paris",
+              "from": "2026-11-05",
+              "to": null
+            }
+          ],
+          "rating": "+13",
+          "releaseDate": "2026-11-05",
+          "status": "released",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/a635969f05754d12b0cb70b2feb6a34f.jpg",
+          "trailerUrl": "https://youtu.be/KSPi8XLeBRg?si=zlZ_OcJBc8Kw5_Eg",
+          "slug": "godzilla-minus-zero"
+        },
+        "eligibleChainCount": 67
+      }
+    }
+  },
+  {
+    "title": "Entrega al límite",
+    "originalTitle": "Runner",
+    "year": 2026,
+    "agendaSlug": "entrega-al-limite",
+    "duplicate": {
+      "slug": "entrega-al-limite-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/entrega-al-limite-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/entrega-al-limite",
+      "movie": {
+        "id": "10763",
+        "slug": "entrega-al-limite",
+        "originalTitle": "Runner",
+        "year": 2026,
+        "durationMinutes": 97,
+        "tmdbId": "1377237",
+        "directors": [
+          "Scott Waugh"
+        ],
+        "cast": [
+          "Alan Ritchson",
+          "Owen Wilson",
+          "Rodrigo Santoro",
+          "Leila George",
+          "Adriana Barraza",
+          "Peta Sergeant",
+          "Scarlett Crabtree",
+          "Geraldine Hakewill",
+          "Goran D. Kleut",
+          "Adam Fraser"
+        ],
+        "release": {
+          "id": "pp-10731",
+          "movieId": "10763",
+          "countryCode": "AR",
+          "localTitle": "Entrega al límite",
+          "distributor": [
+            {
+              "distributorId": "4",
+              "distributorName": "Diamond Films",
+              "from": "2026-11-05",
+              "to": null
+            }
+          ],
+          "rating": "R-13",
+          "releaseDate": "2026-11-05",
+          "status": "released",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/c85a7bc77ca54f41ab5cbc054004cb37.jpg",
+          "trailerUrl": "https://youtu.be/YJTR-wQ9MvM?si=fhYmcipu9W7ytHOe",
+          "slug": "entrega-al-limite"
+        },
+        "eligibleChainCount": 42
+      }
+    },
+    "watchmodeRecovery": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1377237&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1875027/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1875027,
+        "title": "Runner",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt31349844",
+        "tmdbId": 1377237
+      },
+      "metadata": {
+        "title": "Entrega al límite",
+        "originalTitle": "Runner",
+        "englishTitle": "Runner",
+        "year": 2026,
+        "originalLanguage": "en",
+        "runtimeMinutes": 97,
+        "releaseDate": "2026-09-07",
+        "genres": [
+          "Action",
+          "Comedy"
+        ],
+        "imdbId": "tt31349844",
+        "tmdbId": 1377237,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=m8JUmBgHejI",
+        "similarWatchmodeTitleIds": [
+          146398,
+          169729,
+          189096,
+          191695,
+          1142273,
+          1146503,
+          1167187,
+          1248476,
+          1249733,
+          1271612,
+          1282745,
+          1342552,
+          1359563,
+          1384418,
+          1416900,
+          1438356,
+          1481078,
+          1583920,
+          1617357,
+          1620816,
+          1620941,
+          1671326,
+          1718191,
+          383009,
+          3135049
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 7342845,
+            "name": "Greg P. Russell",
+            "type": "Crew",
+            "role": "Sound Re-Recording Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7435192,
+            "name": "Jeff Rice",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7578744,
+            "name": "Lorenzo Senatore",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7644482,
+            "name": "Matt Villa",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7854115,
+            "name": "Scott Waugh",
+            "type": "Crew",
+            "role": "Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7928836,
+            "name": "Todd Garner",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71017087,
+            "name": "Alan Ritchson",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71269042,
+            "name": "Enzo Iacono",
+            "type": "Crew",
+            "role": "Production Design",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71694166,
+            "name": "Nathan Lloyd",
+            "type": "Crew",
+            "role": "Casting",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72613204,
+            "name": "Mark Fasano",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72970693,
+            "name": "Wayne Marc Godfrey",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73156792,
+            "name": "Charlie Nguyen Kim",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78937421,
+            "name": "Jeffrey Greenstein",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78989638,
+            "name": "Nicki Cortese",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78990787,
+            "name": "Tyler Zacharia",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79008119,
+            "name": "Thomas Sullivan",
+            "type": "Crew",
+            "role": "Casting",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79975532,
+            "name": "Scott Mulready",
+            "type": "Crew",
+            "role": "Production Sound Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710193161,
+            "name": "Deborah Glover",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711058658,
+            "name": "Thayer Juergens",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711436506,
+            "name": "Christopher Hammond",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711539461,
+            "name": "Tommy White",
+            "type": "Crew",
+            "role": "Writer, Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711539462,
+            "name": "Miles Hubley",
+            "type": "Crew",
+            "role": "Writer, Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7726420,
+            "name": "Owen Wilson",
+            "type": "Cast",
+            "role": "Ben Bishop",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71017087,
+            "name": "Alan Ritchson",
+            "type": "Cast",
+            "role": "Hank Malone",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7818825,
+            "name": "Rodrigo Santoro",
+            "type": "Cast",
+            "role": "Damian Zaldivar",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 75560008,
+            "name": "Leila George",
+            "type": "Cast",
+            "role": "Kate Baker",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 71503195,
+            "name": "Kate Box",
+            "type": "Cast",
+            "role": "Dr. Ainsley",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 77540,
+            "name": "Adriana Barraza",
+            "type": "Cast",
+            "role": "Donna",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 79046238,
+            "name": "Peta Sergeant",
+            "type": "Cast",
+            "role": "Nurse Julie",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 7141413,
+            "name": "Cecilia Toussaint",
+            "type": "Cast",
+            "role": "Donna Zaldivar",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 73327535,
+            "name": "Geraldine Hakewill",
+            "type": "Cast",
+            "role": "Monica",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 72331938,
+            "name": "Goran D. Kleut",
+            "type": "Cast",
+            "role": "Luke",
+            "order": 8
+          },
+          {
+            "watchmodePersonId": 71342063,
+            "name": "Gyton Grantley",
+            "type": "Cast",
+            "role": "Iggy",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 710267477,
+            "name": "Anthony Cogin",
+            "type": "Cast",
+            "role": "Senator Roger Cameron",
+            "order": 12
+          },
+          {
+            "watchmodePersonId": 710000004,
+            "name": "Thomas Larkin",
+            "type": "Cast",
+            "role": "Tech CEO",
+            "order": 13
+          },
+          {
+            "watchmodePersonId": 72099757,
+            "name": "Beth Waugh",
+            "type": "Cast",
+            "role": "Stewardess Audrey",
+            "order": 14
+          },
+          {
+            "watchmodePersonId": 711625597,
+            "name": "Salomé Chandler",
+            "type": "Cast",
+            "role": "Pre Op Nurse",
+            "order": 15
+          },
+          {
+            "watchmodePersonId": 7403650,
+            "name": "Jackson Raine",
+            "type": "Cast",
+            "role": "Donna's Doctor",
+            "order": 16
+          },
+          {
+            "watchmodePersonId": 75921860,
+            "name": "Thomas Cocquerel",
+            "type": "Cast",
+            "role": "Josh",
+            "order": 17
+          },
+          {
+            "watchmodePersonId": 711552630,
+            "name": "Ashan Kumar",
+            "type": "Cast",
+            "role": "Gas Station Attendant",
+            "order": 18
+          },
+          {
+            "watchmodePersonId": 711608855,
+            "name": "Amelia Parsonson",
+            "type": "Cast",
+            "role": "Ambulance Medic",
+            "order": 19
+          },
+          {
+            "watchmodePersonId": 79333553,
+            "name": "Joel Pierce",
+            "type": "Cast",
+            "role": "Ambulance Driver",
+            "order": 20
+          },
+          {
+            "watchmodePersonId": 711608887,
+            "name": "Miguel Bernardo Pérez Solís",
+            "type": "Cast",
+            "role": "SUV Bruiser",
+            "order": 22
+          },
+          {
+            "watchmodePersonId": 72473595,
+            "name": "Josh Thomson",
+            "type": "Cast",
+            "role": "Detective Mänoa",
+            "order": 23
+          },
+          {
+            "watchmodePersonId": 78938550,
+            "name": "Kate Jenkinson",
+            "type": "Cast",
+            "role": "Bird Lady",
+            "order": 24
+          },
+          {
+            "watchmodePersonId": 710938794,
+            "name": "Jacob Hohua",
+            "type": "Cast",
+            "role": "Greedy",
+            "order": 25
+          },
+          {
+            "watchmodePersonId": 711608895,
+            "name": "Daniel Stone",
+            "type": "Cast",
+            "role": "The Hand",
+            "order": 26
+          },
+          {
+            "watchmodePersonId": 711608896,
+            "name": "Skye Kaden",
+            "type": "Cast",
+            "role": "Event Staff",
+            "order": 29
+          },
+          {
+            "watchmodePersonId": 711608898,
+            "name": "Callie Brutnell",
+            "type": "Cast",
+            "role": "Market Lady (uncredited)",
+            "order": 30
+          },
+          {
+            "watchmodePersonId": 7290878,
+            "name": "Florian Delain",
+            "type": "Cast",
+            "role": "Orderly (uncredited)",
+            "order": 32
+          },
+          {
+            "watchmodePersonId": 711548123,
+            "name": "Adam Fraser",
+            "type": "Cast",
+            "role": "Passerby/Runner (uncredited)",
+            "order": 33
+          },
+          {
+            "watchmodePersonId": 711608902,
+            "name": "Lucy Mansfield",
+            "type": "Cast",
+            "role": "Market Patron (uncredited)",
+            "order": 34
+          },
+          {
+            "watchmodePersonId": 711608903,
+            "name": "Zak Patel",
+            "type": "Cast",
+            "role": "Runner (uncredited)",
+            "order": 36
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 6.4,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": 67,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Sacrificio: Los elegidos",
+    "originalTitle": "Sacrifice",
+    "year": 2025,
+    "agendaSlug": "sacrificio-los-elegidos",
+    "duplicate": {
+      "slug": "sacrificio-los-elegidos-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/sacrificio-los-elegidos-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/sacrificio-los-elegidos",
+      "movie": {
+        "id": "11230",
+        "slug": "sacrificio-los-elegidos",
+        "originalTitle": "Sacrifice",
+        "year": 2025,
+        "durationMinutes": 103,
+        "tmdbId": "1284186",
+        "directors": [
+          "Romain Gavras"
+        ],
+        "cast": [
+          "Chris Evans",
+          "Anya Taylor-Joy",
+          "Vincent Cassel",
+          "Salma Hayek Pinault",
+          "John Malkovich",
+          "Charli xcx",
+          "Yung Lean",
+          "Sam Richardson",
+          "Jade Croot",
+          "Ambika Mod"
+        ],
+        "release": {
+          "id": "pp-11576",
+          "movieId": "11230",
+          "countryCode": "AR",
+          "localTitle": "Sacrificio: Los Elegidos",
+          "distributor": [
+            {
+              "distributorId": "15",
+              "distributorName": "Impacto",
+              "from": "2026-11-05",
+              "to": null
+            }
+          ],
+          "rating": "R-13",
+          "releaseDate": "2026-11-05",
+          "status": "released",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/dceaa83478fa4b48a13c2f2ddb328c2f.jpg",
+          "trailerUrl": "https://youtu.be/iO1F1H624hI?si=ptStK31C9TLwFkhi",
+          "slug": "sacrificio-los-elegidos"
+        },
+        "eligibleChainCount": 28
+      }
+    },
+    "watchmodeRecovery": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1284186&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1818771/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1818771,
+        "title": "Sacrifice",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt32268992",
+        "tmdbId": 1284186
+      },
+      "metadata": {
+        "title": "Sacrificio: Los elegidos",
+        "originalTitle": "Sacrifice",
+        "englishTitle": "Sacrifice",
+        "year": 2025,
+        "originalLanguage": "en",
+        "runtimeMinutes": 100,
+        "releaseDate": "2026-04-09",
+        "genres": [
+          "Adventure",
+          "Comedy",
+          "Action"
+        ],
+        "imdbId": "tt32268992",
+        "tmdbId": 1284186,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=bzGU0b5XAKc",
+        "similarWatchmodeTitleIds": [
+          1131242,
+          1174388,
+          1190503,
+          1290627,
+          1373527,
+          1378663,
+          1390068,
+          1397210,
+          1404391,
+          1420758,
+          1503012,
+          1514233,
+          1538263,
+          1580025,
+          1595022,
+          1595955,
+          1620946,
+          1621198,
+          1649880,
+          1687754,
+          1688482,
+          1738244,
+          1805685,
+          1849441,
+          11049995
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 797493,
+            "name": "Bill Higley",
+            "type": "Crew",
+            "role": "ADR Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7111358,
+            "name": "Branko Repalust",
+            "type": "Crew",
+            "role": "Special Effects Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7153912,
+            "name": "Chris Evans",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7407866,
+            "name": "Jake Roberts",
+            "type": "Crew",
+            "role": "Additional Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7480138,
+            "name": "Jonathan Gray",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7645783,
+            "name": "Matthew Rhodes",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7760751,
+            "name": "Phil Hunt",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7822395,
+            "name": "Romain Gavras",
+            "type": "Crew",
+            "role": "Director, Writer, Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71094561,
+            "name": "Benjamin Weill",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71179398,
+            "name": "Compton Ross",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71209628,
+            "name": "David Danesi",
+            "type": "Crew",
+            "role": "Visual Effects Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71282784,
+            "name": "Evi Zafiropoulou",
+            "type": "Crew",
+            "role": "Makeup Department Head",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71305031,
+            "name": "Frédéric Dessains",
+            "type": "Crew",
+            "role": "Stunts",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71385501,
+            "name": "Ivor Talbot",
+            "type": "Crew",
+            "role": "Production Sound Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71631153,
+            "name": "Matias Boucard",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71718141,
+            "name": "Ollie Madden",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71778381,
+            "name": "Rebecca Gore",
+            "type": "Crew",
+            "role": "Costume Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71788822,
+            "name": "Richard Mansell",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71921507,
+            "name": "Thorsten Schumacher",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71929878,
+            "name": "Todor Lazarov",
+            "type": "Crew",
+            "role": "Stunt Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72077533,
+            "name": "Asen Bozilov",
+            "type": "Crew",
+            "role": "Set Decoration",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72236055,
+            "name": "Dimitris Avgeros",
+            "type": "Crew",
+            "role": "Property Master",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72345993,
+            "name": "Hannah Edwards",
+            "type": "Crew",
+            "role": "Costume Design",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72484563,
+            "name": "Julie Darfeuil",
+            "type": "Crew",
+            "role": "Script Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72502468,
+            "name": "Kate Glover",
+            "type": "Crew",
+            "role": "Co-Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72523583,
+            "name": "Kharmel Cochrane",
+            "type": "Crew",
+            "role": "Casting, Casting Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72792603,
+            "name": "Rob Chiu",
+            "type": "Crew",
+            "role": "Second Unit Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 73633900,
+            "name": "Matis Rei",
+            "type": "Crew",
+            "role": "Sound Effects Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 74249346,
+            "name": "Dominique Moisan",
+            "type": "Crew",
+            "role": "Art Direction",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 74297888,
+            "name": "Farhana Bhula",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 75077328,
+            "name": "Anya Taylor-Joy",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78929574,
+            "name": "Giorgos Karnavas",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78954354,
+            "name": "Frances Hounsom",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78958615,
+            "name": "Robert Walak",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78960925,
+            "name": "Nicolas Lacroix",
+            "type": "Crew",
+            "role": "Visual Effects Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78974745,
+            "name": "Kristijan Repalust",
+            "type": "Crew",
+            "role": "Special Effects Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78981214,
+            "name": "Simon Diggins",
+            "type": "Crew",
+            "role": "ADR Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78997000,
+            "name": "Arnaud Roth",
+            "type": "Crew",
+            "role": "Production Design",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79012965,
+            "name": "Aymeric Colas",
+            "type": "Crew",
+            "role": "Steadicam Operator, \"A\" Camera Operator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79025905,
+            "name": "Michele Woods",
+            "type": "Crew",
+            "role": "ADR Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79062773,
+            "name": "Petra Turonova",
+            "type": "Crew",
+            "role": "Costume Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79096528,
+            "name": "Christian Tomikowski",
+            "type": "Crew",
+            "role": "Digital Compositor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79096535,
+            "name": "Lara Perrotte",
+            "type": "Crew",
+            "role": "Second Unit Director of Photography, Second Unit Cinematographer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79189149,
+            "name": "Klaudia Śmieja-Rostworowska",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79205774,
+            "name": "Jérôme Gaspard",
+            "type": "Crew",
+            "role": "Stunt Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79206856,
+            "name": "Moritz Reich",
+            "type": "Crew",
+            "role": "Orchestrator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79215771,
+            "name": "Mike Tehrani",
+            "type": "Crew",
+            "role": "ADR Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79226035,
+            "name": "Lisa Mustafa",
+            "type": "Crew",
+            "role": "Hair Designer, Makeup Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79228719,
+            "name": "Spiros Angelopoulos",
+            "type": "Crew",
+            "role": "Electrician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79260062,
+            "name": "Stephane Malenfant",
+            "type": "Crew",
+            "role": "Sound Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79265593,
+            "name": "Alexandre Trenev",
+            "type": "Crew",
+            "role": "Rigging Gaffer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79307958,
+            "name": "Sébastien Grasso",
+            "type": "Crew",
+            "role": "Key Grip",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79332877,
+            "name": "Joe Carhart",
+            "type": "Crew",
+            "role": "Visual Effects Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79398713,
+            "name": "Peter Kostov",
+            "type": "Crew",
+            "role": "Gaffer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79401355,
+            "name": "François Vigon",
+            "type": "Crew",
+            "role": "Focus Puller",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79435374,
+            "name": "Boris Vasilev",
+            "type": "Crew",
+            "role": "Electrician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79448889,
+            "name": "Viktor Hristov",
+            "type": "Crew",
+            "role": "Stunts",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79476946,
+            "name": "Michał Wilczewski",
+            "type": "Crew",
+            "role": "Foley Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79493570,
+            "name": "Tom Jenkins",
+            "type": "Crew",
+            "role": "Sound Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79499282,
+            "name": "Jacek Wiśniewski",
+            "type": "Crew",
+            "role": "Foley Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79576585,
+            "name": "Julien Dara",
+            "type": "Crew",
+            "role": "Additional Second Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79643475,
+            "name": "Konstantinos Iordanou",
+            "type": "Crew",
+            "role": "Line Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79644359,
+            "name": "Thibaut Granier",
+            "type": "Crew",
+            "role": "Visual Effects Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79691762,
+            "name": "Matthieu Autin",
+            "type": "Crew",
+            "role": "Sound Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79756589,
+            "name": "Ro Khanna",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79795728,
+            "name": "Natalia Lubowiecka",
+            "type": "Crew",
+            "role": "Foley Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79809551,
+            "name": "Katerina Kaskanioti",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79834003,
+            "name": "Afroditi Panagiotakou",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79861526,
+            "name": "Eddie Thorne",
+            "type": "Crew",
+            "role": "First Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79871370,
+            "name": "Susana Mota",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79887942,
+            "name": "Mariona Trías",
+            "type": "Crew",
+            "role": "Makeup Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79901792,
+            "name": "Christina Lardikou",
+            "type": "Crew",
+            "role": "Costume Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79908914,
+            "name": "Chiara Gelardin",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79933529,
+            "name": "Elli Kriara",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79949976,
+            "name": "Sotiris Kraniotis",
+            "type": "Crew",
+            "role": "Stunt Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79955423,
+            "name": "Will Arbery",
+            "type": "Crew",
+            "role": "Writer, Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79982330,
+            "name": "Danai Elefsinioti",
+            "type": "Crew",
+            "role": "Art Direction",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79998767,
+            "name": "Konstantin Bodurov",
+            "type": "Crew",
+            "role": "Best Boy Electric",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710007297,
+            "name": "Matija Petrovic",
+            "type": "Crew",
+            "role": "Special Effects Technician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710093341,
+            "name": "Jacob Perlin",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710116159,
+            "name": "Marcin Czernik",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710121564,
+            "name": "Kiril Velichkov",
+            "type": "Crew",
+            "role": "Electrician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710133059,
+            "name": "James Andrew Haven",
+            "type": "Crew",
+            "role": "Second Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710140224,
+            "name": "Katerina Giannakopoulou",
+            "type": "Crew",
+            "role": "First Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710204991,
+            "name": "Rafail Tsakalos",
+            "type": "Crew",
+            "role": "Focus Puller",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710228384,
+            "name": "Kostas Meridis",
+            "type": "Crew",
+            "role": "Dolly Grip",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710259567,
+            "name": "Kostas Barlis",
+            "type": "Crew",
+            "role": "Property Master",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710263587,
+            "name": "Efthymios Rafail Gourgouris",
+            "type": "Crew",
+            "role": "Weapons Master",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710267823,
+            "name": "Mathieu Caplanne",
+            "type": "Crew",
+            "role": "Colorist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710315026,
+            "name": "Stefanos Zervoulakos",
+            "type": "Crew",
+            "role": "Second Assistant \"A\" Camera",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710367013,
+            "name": "Victoria Georgieva",
+            "type": "Crew",
+            "role": "Stunts",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710367975,
+            "name": "Sotiris Ioannidis",
+            "type": "Crew",
+            "role": "Grip",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710378672,
+            "name": "Myron Mance",
+            "type": "Crew",
+            "role": "Aerial Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710426782,
+            "name": "Kevin McLaughlin",
+            "type": "Crew",
+            "role": "ADR Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710448795,
+            "name": "Marouane Joubba",
+            "type": "Crew",
+            "role": "Assistant Costume Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710468959,
+            "name": "Ahmed Chouikhi",
+            "type": "Crew",
+            "role": "Stunts",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710562139,
+            "name": "Nicolas Pauget",
+            "type": "Crew",
+            "role": "Stunt Double",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710592807,
+            "name": "Stavros Tsiaousis",
+            "type": "Crew",
+            "role": "Production Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710603245,
+            "name": "Kristiya Tombusheva",
+            "type": "Crew",
+            "role": "Second Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710619026,
+            "name": "Dimitris Theodoropoulos",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710654060,
+            "name": "Aigli Drakou",
+            "type": "Crew",
+            "role": "Focus Puller",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710709948,
+            "name": "Georgia Apalodima",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710796160,
+            "name": "Elena Mateva",
+            "type": "Crew",
+            "role": "Third Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710864937,
+            "name": "Suzi Battersby",
+            "type": "Crew",
+            "role": "Prosthetic Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710866441,
+            "name": "Antonis Goritsas",
+            "type": "Crew",
+            "role": "Grip",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710902350,
+            "name": "Nikos Athanasiou",
+            "type": "Crew",
+            "role": "Location Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710945861,
+            "name": "Reine Issa",
+            "type": "Crew",
+            "role": "Associate Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710991590,
+            "name": "Emma Braun",
+            "type": "Crew",
+            "role": "Set Photographer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710998591,
+            "name": "Athina Drakoularakou",
+            "type": "Crew",
+            "role": "Key Costumer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711004350,
+            "name": "Stella Soulele",
+            "type": "Crew",
+            "role": "Hair Department Head",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711030864,
+            "name": "Vakis Grillis",
+            "type": "Crew",
+            "role": "Rigging Grip",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711107385,
+            "name": "Surkin",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711205743,
+            "name": "Niki Ovakoglou",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711206023,
+            "name": "Luca Vaillant",
+            "type": "Crew",
+            "role": "CG Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711217857,
+            "name": "Keeley Ridgwell",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711319623,
+            "name": "Aleksandra Jakubowicz",
+            "type": "Crew",
+            "role": "Foley Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711353491,
+            "name": "Voula Chourtsidou",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711374238,
+            "name": "Yiyi Huang",
+            "type": "Crew",
+            "role": "Associate Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711456429,
+            "name": "Ioanna Stais",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711541980,
+            "name": "John Koutsoulas",
+            "type": "Crew",
+            "role": "Drone Operator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711544531,
+            "name": "Electra Katsimicha",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711544550,
+            "name": "Nikos Diakoumeas",
+            "type": "Crew",
+            "role": "Second Assistant \"B\" Camera",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711544591,
+            "name": "Andreas Achladis",
+            "type": "Crew",
+            "role": "Stunts",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711565733,
+            "name": "Lily Zografiaki",
+            "type": "Crew",
+            "role": "Set Costumer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711587964,
+            "name": "Monika Ratajczak",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711587997,
+            "name": "Fani Papazotou",
+            "type": "Crew",
+            "role": "Hairstylist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588000,
+            "name": "Vaso Saritzioti",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588003,
+            "name": "Jo Kapralou",
+            "type": "Crew",
+            "role": "Crowd Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588024,
+            "name": "Vuckovic Darko",
+            "type": "Crew",
+            "role": "Special Effects Technician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588026,
+            "name": "Vlado Junusic",
+            "type": "Crew",
+            "role": "Special Effects Technician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588027,
+            "name": "Alan Koletic",
+            "type": "Crew",
+            "role": "Special Effects Technician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588033,
+            "name": "Marc-Thomas Cavé",
+            "type": "Crew",
+            "role": "Visual Effects Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588035,
+            "name": "Marie Dufourd",
+            "type": "Crew",
+            "role": "Compositing Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588045,
+            "name": "Sotirios Tosounidis",
+            "type": "Crew",
+            "role": "Stunts",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588066,
+            "name": "Xanthi Gkesouli",
+            "type": "Crew",
+            "role": "Second Assistant \"D\" Camera",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588076,
+            "name": "Nikos Karageorgos",
+            "type": "Crew",
+            "role": "Gaffer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588078,
+            "name": "Vasilis Koutsoulas",
+            "type": "Crew",
+            "role": "Drone Operator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588091,
+            "name": "Alisiya Simeonova",
+            "type": "Crew",
+            "role": "Second Assistant Camera",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588094,
+            "name": "Alexandros Taleporos",
+            "type": "Crew",
+            "role": "Third Assistant \"B\" Camera",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588095,
+            "name": "Thanasis Theodoropoulos",
+            "type": "Crew",
+            "role": "Rigging Gaffer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588103,
+            "name": "Carolina Samoili",
+            "type": "Crew",
+            "role": "Location Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588105,
+            "name": "Aris Maleas",
+            "type": "Crew",
+            "role": "Location Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588110,
+            "name": "Andriana Gymnopoulou",
+            "type": "Crew",
+            "role": "Location Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711588117,
+            "name": "Katerina Kazou",
+            "type": "Crew",
+            "role": "Key Set Costumer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711613042,
+            "name": "John Raffaele III",
+            "type": "Crew",
+            "role": "ADR Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711669594,
+            "name": "Michael Sklut",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711680190,
+            "name": "Katarzyna Jastrzębska",
+            "type": "Crew",
+            "role": "Foley Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711680191,
+            "name": "Bartosz Mazur",
+            "type": "Crew",
+            "role": "Foley Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711680192,
+            "name": "Beata Klimaszewska",
+            "type": "Crew",
+            "role": "Foley Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711680193,
+            "name": "Kamil Kwiatkowski",
+            "type": "Crew",
+            "role": "Foley Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7153912,
+            "name": "Chris Evans",
+            "type": "Cast",
+            "role": "Mike Tyler",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 75077328,
+            "name": "Anya Taylor-Joy",
+            "type": "Cast",
+            "role": "Joan",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7960323,
+            "name": "Vincent Cassel",
+            "type": "Cast",
+            "role": "Ben Bracken",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 7841240,
+            "name": "Salma Hayek Pinault",
+            "type": "Cast",
+            "role": "Gloria Bracken",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 7470732,
+            "name": "John Malkovich",
+            "type": "Cast",
+            "role": "Gunnar",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 75160251,
+            "name": "Charli xcx",
+            "type": "Cast",
+            "role": "Mother Nature",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 73832162,
+            "name": "Sam Richardson",
+            "type": "Cast",
+            "role": "Oliver",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 79730752,
+            "name": "Zarene Dallas",
+            "type": "Cast",
+            "role": "Freyja",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 79790532,
+            "name": "Yung Lean",
+            "type": "Cast",
+            "role": "Arthur",
+            "order": 8
+          },
+          {
+            "watchmodePersonId": 75394080,
+            "name": "Jade Croot",
+            "type": "Cast",
+            "role": "Louise",
+            "order": 9
+          },
+          {
+            "watchmodePersonId": 79767410,
+            "name": "Miriam Silverman",
+            "type": "Cast",
+            "role": "Anna",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 78997662,
+            "name": "Jeremy O. Harris",
+            "type": "Cast",
+            "role": "DK",
+            "order": 11
+          },
+          {
+            "watchmodePersonId": 710852998,
+            "name": "Tarek Haddaji",
+            "type": "Cast",
+            "role": "Undercover Guard",
+            "order": 12
+          },
+          {
+            "watchmodePersonId": 79449899,
+            "name": "Dali Benssalah",
+            "type": "Cast",
+            "role": "Tech Bro 1",
+            "order": 13
+          },
+          {
+            "watchmodePersonId": 710389689,
+            "name": "Sami Slimane",
+            "type": "Cast",
+            "role": "Tech Bro 2",
+            "order": 14
+          },
+          {
+            "watchmodePersonId": 7726071,
+            "name": "Ouassini Embarek",
+            "type": "Cast",
+            "role": "Tech Bro 3",
+            "order": 15
+          },
+          {
+            "watchmodePersonId": 711701499,
+            "name": "Nefeli Kalantzi",
+            "type": "Cast",
+            "role": "Gala Flautist",
+            "order": 16
+          },
+          {
+            "watchmodePersonId": 79238306,
+            "name": "Anton Trendafilov",
+            "type": "Cast",
+            "role": "Mike's Dad",
+            "order": 17
+          },
+          {
+            "watchmodePersonId": 79864704,
+            "name": "Sofia Priovolou",
+            "type": "Cast",
+            "role": "Gala Guest",
+            "order": 18
+          },
+          {
+            "watchmodePersonId": 711701500,
+            "name": "Spyros Ntantanidis",
+            "type": "Cast",
+            "role": "Nobel Peace Prize Winner",
+            "order": 19
+          },
+          {
+            "watchmodePersonId": 710627530,
+            "name": "Ambika Mod",
+            "type": "Cast",
+            "role": "Katie",
+            "order": 20
+          },
+          {
+            "watchmodePersonId": 711701501,
+            "name": "Marios Poimenidis",
+            "type": "Cast",
+            "role": "\"General\" Dancer",
+            "order": 21
+          },
+          {
+            "watchmodePersonId": 7326185,
+            "name": "Gerasimos Skiadaresis",
+            "type": "Cast",
+            "role": "Kostas",
+            "order": 22
+          },
+          {
+            "watchmodePersonId": 711701503,
+            "name": "Loukianos Lyritsas",
+            "type": "Cast",
+            "role": "Local TV Reporter",
+            "order": 23
+          },
+          {
+            "watchmodePersonId": 711701504,
+            "name": "Phoebe Greenwood",
+            "type": "Cast",
+            "role": "International TV Reporter",
+            "order": 25
+          },
+          {
+            "watchmodePersonId": 711046954,
+            "name": "Bebe Massey",
+            "type": "Cast",
+            "role": "Young Joan",
+            "order": 26
+          },
+          {
+            "watchmodePersonId": 711701512,
+            "name": "Velimir Netsov",
+            "type": "Cast",
+            "role": "Young Arthur",
+            "order": 27
+          },
+          {
+            "watchmodePersonId": 711584541,
+            "name": "Diamantis Anastasiadis",
+            "type": "Cast",
+            "role": "Gala Pianist",
+            "order": 28
+          },
+          {
+            "watchmodePersonId": 71529184,
+            "name": "Konstadinos Siradakis",
+            "type": "Cast",
+            "role": "Another Cop",
+            "order": 29
+          },
+          {
+            "watchmodePersonId": 710865690,
+            "name": "Despoina Hariati",
+            "type": "Cast",
+            "role": "(uncredited)",
+            "order": 32
+          },
+          {
+            "watchmodePersonId": 711702430,
+            "name": "Eleni Liala",
+            "type": "Cast",
+            "role": "Special Hero Gala",
+            "order": 33
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 5.2,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": 53,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "El gato con sombrero",
+    "originalTitle": "The Cat in the Hat",
+    "year": 2026,
+    "agendaSlug": "el-gato-con-sombrero",
+    "duplicate": {
+      "slug": "el-gato-con-sombrero-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/el-gato-con-sombrero-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/el-gato-con-sombrero",
+      "movie": {
+        "id": "10864",
+        "slug": "el-gato-con-sombrero",
+        "originalTitle": "The Cat in the Hat",
+        "year": 2026,
+        "durationMinutes": 91,
+        "tmdbId": "1117898",
+        "directors": [
+          "Erica Rivinoja",
+          "Alessandro Carloni"
+        ],
+        "cast": [
+          "Bill Hader",
+          "Xochitl Gomez",
+          "Tiago Martinez",
+          "Matt Berry",
+          "Quinta Brunson",
+          "Bowen Yang",
+          "America Ferrera",
+          "Paula Pell",
+          "Tituss Burgess",
+          "Giancarlo Esposito"
+        ],
+        "release": {
+          "id": "pp-10864",
+          "movieId": "10864",
+          "countryCode": "AR",
+          "localTitle": "El gato con sombrero",
+          "distributor": [
+            {
+              "distributorId": "2",
+              "distributorName": "Warner",
+              "from": "2026-11-05",
+              "to": null
+            }
+          ],
+          "rating": "G",
+          "releaseDate": "2026-11-05",
+          "status": "released",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/39dc0ff185fc43868fdfad2ef6868af8.jpg",
+          "trailerUrl": "https://youtu.be/uyP8q3BQ0C4?si=s6oHym9WbSfTzflJ",
+          "slug": "el-gato-con-sombrero"
+        },
+        "eligibleChainCount": 66
+      }
+    },
+    "watchmodeRecovery": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1117898&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1881180/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1881180,
+        "title": "The Cat in the Hat",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt2321555",
+        "tmdbId": 1117898
+      },
+      "metadata": {
+        "title": "El gato con sombrero",
+        "originalTitle": "The Cat in the Hat",
+        "englishTitle": "The Cat in the Hat",
+        "year": 2026,
+        "originalLanguage": "en",
+        "runtimeMinutes": 108,
+        "releaseDate": "2026-11-04",
+        "genres": [
+          "Adventure",
+          "Animation",
+          "Comedy",
+          "Family",
+          "Fantasy"
+        ],
+        "imdbId": "tt2321555",
+        "tmdbId": 1117898,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=HT5JAp5z0-o",
+        "similarWatchmodeTitleIds": [
+          1168596,
+          1311257,
+          1362914,
+          1507909,
+          1525142,
+          1565036,
+          1568402,
+          1575459,
+          1583803,
+          1603117,
+          1617942,
+          1620820,
+          1623968,
+          1667023,
+          1671329,
+          1816109,
+          1885279,
+          1892154,
+          1901595,
+          482159
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 797359,
+            "name": "Bill Hader",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7136241,
+            "name": "Caroline Goddard",
+            "type": "Crew",
+            "role": "Story",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7162178,
+            "name": "Christopher Barnett",
+            "type": "Crew",
+            "role": "Sound Re-Recording Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7239817,
+            "name": "Dr. Seuss",
+            "type": "Crew",
+            "role": "Novel",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7374091,
+            "name": "Hilary Duff",
+            "type": "Crew",
+            "role": "Songs",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7914667,
+            "name": "Terri Douglas",
+            "type": "Crew",
+            "role": "ADR Voice Casting",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71272961,
+            "name": "Erica Rivinoja",
+            "type": "Crew",
+            "role": "Screenplay, Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71568717,
+            "name": "Lorne Balfe",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71885648,
+            "name": "Steve Zissis",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72170890,
+            "name": "Christopher Scott",
+            "type": "Crew",
+            "role": "Choreographer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72925391,
+            "name": "Tim Minchin",
+            "type": "Crew",
+            "role": "Songs",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78934689,
+            "name": "Alessandro Carloni",
+            "type": "Crew",
+            "role": "Screenplay, Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78936114,
+            "name": "Kristy Carlson",
+            "type": "Crew",
+            "role": "Casting",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79116808,
+            "name": "Javier Benavente",
+            "type": "Crew",
+            "role": "Production Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79398941,
+            "name": "Daniela Mazzucato",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79559896,
+            "name": "Michael Fitzpatrick",
+            "type": "Crew",
+            "role": "Songs",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710878545,
+            "name": "Susan Brandt",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711660892,
+            "name": "Elissa Gonzales",
+            "type": "Crew",
+            "role": "Character Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 797359,
+            "name": "Bill Hader",
+            "type": "Cast",
+            "role": "The Cat in the Hat (voice)",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79134942,
+            "name": "Xochitl Gomez",
+            "type": "Cast",
+            "role": "Gabby (voice)",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710731023,
+            "name": "Tiago Martinez",
+            "type": "Cast",
+            "role": "Sebastian (voice)",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 71631646,
+            "name": "Matt Berry",
+            "type": "Cast",
+            "role": "Waffles the Fish (voice)",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 79415538,
+            "name": "Quinta Brunson",
+            "type": "Cast",
+            "role": "Sherrie (voice)",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 79272315,
+            "name": "Bowen Yang",
+            "type": "Cast",
+            "role": "Gary (voice)",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 734862,
+            "name": "America Ferrera",
+            "type": "Cast",
+            "role": "Carmen (voice)",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 7745672,
+            "name": "Paula Pell",
+            "type": "Cast",
+            "role": "Patty (voice)",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 73931484,
+            "name": "Tituss Burgess",
+            "type": "Cast",
+            "role": "The Psychic Narwhal (voice)",
+            "order": 8
+          },
+          {
+            "watchmodePersonId": 7328996,
+            "name": "Giancarlo Esposito",
+            "type": "Cast",
+            "role": "Mr. Hoogeboom (voice)",
+            "order": 9
+          },
+          {
+            "watchmodePersonId": 72920647,
+            "name": "Thomas Middleditch",
+            "type": "Cast",
+            "role": "Thing One (voice)",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 711030365,
+            "name": "Robin Åkerstrand",
+            "type": "Cast",
+            "role": "Sven (voice)",
+            "order": 11
+          },
+          {
+            "watchmodePersonId": 7777509,
+            "name": "Ralph Garman",
+            "type": "Cast",
+            "role": "(voice)",
+            "order": 12
+          },
+          {
+            "watchmodePersonId": 710157671,
+            "name": "Daniel Middleton",
+            "type": "Cast",
+            "role": "(voice)",
+            "order": 13
+          },
+          {
+            "watchmodePersonId": 7830256,
+            "name": "Roxana Ortega",
+            "type": "Cast",
+            "role": "(voice)",
+            "order": 14
+          },
+          {
+            "watchmodePersonId": 73416040,
+            "name": "Jay Pharoah",
+            "type": "Cast",
+            "role": "(voice)",
+            "order": 15
+          },
+          {
+            "watchmodePersonId": 7982087,
+            "name": "Wilmer Valderrama",
+            "type": "Cast",
+            "role": "(voice)",
+            "order": 16
+          },
+          {
+            "watchmodePersonId": 734865,
+            "name": "America Young",
+            "type": "Cast",
+            "role": "(voice)",
+            "order": 17
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Babystar",
+    "originalTitle": "Babystar",
+    "year": 2025,
+    "agendaSlug": "babystar",
+    "duplicate": {
+      "slug": "babystar-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/babystar-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=name&search_value=Babystar&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1861372/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1861372,
+        "title": "Babystar",
+        "year": 2025,
+        "type": "movie",
+        "imdbId": "tt34998116",
+        "tmdbId": 1356474
+      },
+      "metadata": {
+        "title": "",
+        "originalTitle": "Babystar",
+        "englishTitle": "Babystar",
+        "year": 2025,
+        "originalLanguage": "de",
+        "runtimeMinutes": 98,
+        "releaseDate": "2026-04-17",
+        "genres": [
+          "Drama"
+        ],
+        "imdbId": "tt34998116",
+        "tmdbId": 1356474,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=9wWop3l52KA",
+        "similarWatchmodeTitleIds": [
+          110397,
+          120122,
+          184037,
+          1130510,
+          1172611,
+          1350249,
+          1393888,
+          1394081,
+          1424550,
+          1465552,
+          1599479,
+          1634295,
+          1649223,
+          1677319,
+          1700067,
+          1816835,
+          431840,
+          476765,
+          499319,
+          4102797
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 79305971,
+            "name": "Timo Klabunde",
+            "type": "Crew",
+            "role": "Sound Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79757910,
+            "name": "Johann Meis",
+            "type": "Crew",
+            "role": "Dialogue Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79860349,
+            "name": "Frederic Hellmann",
+            "type": "Crew",
+            "role": "Sound Re-Recording Mixer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79909870,
+            "name": "Lotta Schmelzer",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710237983,
+            "name": "Joscha Bongard",
+            "type": "Crew",
+            "role": "Writer, Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710238181,
+            "name": "Jakob Sinsel",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710306213,
+            "name": "Jonas Vogler",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710358390,
+            "name": "Wolfgang Purkhauser",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710518242,
+            "name": "Emma Holzapfel",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710847310,
+            "name": "Lisa Purtscher",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711653331,
+            "name": "Hannah Buhr",
+            "type": "Crew",
+            "role": "Unit Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79259277,
+            "name": "Bea Brocks",
+            "type": "Cast",
+            "role": "Stella Sommer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710848875,
+            "name": "Maja Bons",
+            "type": "Cast",
+            "role": "Luca",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79656387,
+            "name": "Liliom Lewald",
+            "type": "Cast",
+            "role": "Chris Sommer",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 79158389,
+            "name": "Maximilian Mundt",
+            "type": "Cast",
+            "role": "Simon",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 74956292,
+            "name": "Verena Altenberger",
+            "type": "Cast",
+            "role": "AI CEO",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 7646277,
+            "name": "Matthias Matschke",
+            "type": "Cast",
+            "role": "Jurek",
+            "order": 10
+          },
+          {
+            "watchmodePersonId": 74606127,
+            "name": "Maria Matschke",
+            "type": "Cast",
+            "role": "Marie",
+            "order": 11
+          },
+          {
+            "watchmodePersonId": 7157985,
+            "name": "Christian Koch",
+            "type": "Cast",
+            "role": "Lars",
+            "order": 14
+          },
+          {
+            "watchmodePersonId": 710773045,
+            "name": "Leonard Burkhardt",
+            "type": "Cast",
+            "role": "Lead Entwickler",
+            "order": 15
+          },
+          {
+            "watchmodePersonId": 79845194,
+            "name": "Esra Uğurlu",
+            "type": "Cast",
+            "role": "Betreuerin",
+            "order": 17
+          },
+          {
+            "watchmodePersonId": 710932515,
+            "name": "Alexander Schuster",
+            "type": "Cast",
+            "role": "Jakob",
+            "order": 19
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 5.9,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/babystar",
+      "movie": {
+        "id": "10773",
+        "slug": "babystar",
+        "originalTitle": "Babystar",
+        "year": 2026,
+        "durationMinutes": 98,
+        "tmdbId": "1356474",
+        "directors": [
+          "Joscha Bongard"
+        ],
+        "cast": [
+          "Maja Bons",
+          "Bea Brocks",
+          "Liliom Lewald",
+          "Joy Ewulu",
+          "Maximilian Mundt",
+          "Verena Altenberger",
+          "Tiana Vanitha R.",
+          "Katharina Ley",
+          "Anton Egbers",
+          "Josephin Kuhn"
+        ],
+        "release": {
+          "id": "pp-10740",
+          "movieId": "10773",
+          "countryCode": "AR",
+          "localTitle": "Babystar",
+          "distributor": [
+            {
+              "distributorId": "17",
+              "distributorName": "CDI Films",
+              "from": "2026-11-05",
+              "to": null
+            }
+          ],
+          "rating": "R-13",
+          "releaseDate": "2026-11-05",
+          "status": "released",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/0f809a75fb0243ed89dc6e35799cff98.jpg",
+          "trailerUrl": "https://youtu.be/7a68yCGo3y4?si=04QhJRxpjWYAvTv5",
+          "slug": "babystar"
+        },
+        "eligibleChainCount": 10
+      }
+    }
+  },
+  {
+    "title": "Museo de la subversión",
+    "originalTitle": "Museo de la subversión",
+    "year": 2026,
+    "agendaSlug": "museo-de-la-subversion",
+    "duplicate": {
+      "slug": "museo-de-la-subversion-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/museo-de-la-subversion-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/museo-de-la-subversion",
+      "movie": {
+        "id": "11311",
+        "slug": "museo-de-la-subversion",
+        "originalTitle": "Museo de la subversión",
+        "year": 2025,
+        "durationMinutes": 70,
+        "tmdbId": "1583319",
+        "directors": [
+          "Francisco D'Eufemia"
+        ],
+        "cast": [
+          "Belén Blanco",
+          "Pablo Llonto",
+          "Mariana Sirimarco",
+          "Rafael Calviño",
+          "Alejo Ponce de León",
+          "Yanina Toledo",
+          "Julia Risler"
+        ],
+        "release": {
+          "id": "pp-11739",
+          "movieId": "11311",
+          "countryCode": "AR",
+          "localTitle": "Museo de la subversión",
+          "distributor": [
+            {
+              "distributorId": "14",
+              "distributorName": "Independiente",
+              "from": "2026-11-05",
+              "to": null
+            }
+          ],
+          "rating": "G",
+          "releaseDate": "2026-11-05",
+          "status": "released",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/187f71ffd27a4d5398cda3fbf3cce233.png",
+          "trailerUrl": null,
+          "slug": "museo-de-la-subversion"
+        },
+        "eligibleChainCount": 0
+      }
+    },
+    "watchmodeRecovery": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    }
+  },
+  {
+    "title": "El baño del Papa",
+    "originalTitle": "El baño del Papa",
+    "year": 2007,
+    "agendaSlug": "el-bano-del-papa",
+    "duplicate": {
+      "slug": "el-bano-del-papa-2007",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/el-bano-del-papa-2007.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/el-bano-del-papa",
+      "movie": {
+        "id": "3502",
+        "slug": "el-bano-del-papa",
+        "originalTitle": "El baño del Papa",
+        "year": 2009,
+        "durationMinutes": 99,
+        "tmdbId": "8267",
+        "directors": [
+          "César Charlone",
+          "Enrique Fernández"
+        ],
+        "cast": [
+          "César Troncoso",
+          "Virginia Méndez",
+          "Virginia Ruiz",
+          "Mario Silva",
+          "Jose Arce",
+          "Henry De Leon",
+          "Rosario Dos Santos",
+          "Nelson Lence",
+          "Hugo Blandamuro"
+        ],
+        "release": {
+          "id": "pp-3433",
+          "movieId": "3502",
+          "countryCode": "AR",
+          "localTitle": "El baño del Papa",
+          "distributor": [
+            {
+              "distributorId": "132",
+              "distributorName": "BellaSombra",
+              "from": "2026-11-05",
+              "to": null
+            },
+            {
+              "distributorId": "20",
+              "distributorName": "PPlano",
+              "from": "2009-01-01",
+              "to": "2026-11-04"
+            }
+          ],
+          "rating": "SAM +13",
+          "releaseDate": "2026-11-05",
+          "status": "released",
+          "isRerelease": true,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/748754513d5040b2ad3867fb693d7092.jpg",
+          "trailerUrl": null,
+          "slug": "el-bano-del-papa"
+        },
+        "eligibleChainCount": 0
+      }
+    },
+    "watchmodeRecovery": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=8267&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/1412971/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 1412971,
+        "title": "The Pope's Toilet",
+        "year": 2007,
+        "type": "movie",
+        "imdbId": "tt0482901",
+        "tmdbId": 8267
+      },
+      "metadata": {
+        "title": "",
+        "originalTitle": "El baño del Papa",
+        "englishTitle": "The Pope's Toilet",
+        "year": 2007,
+        "originalLanguage": "es",
+        "runtimeMinutes": 90,
+        "releaseDate": "2007-05-21",
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "imdbId": "tt0482901",
+        "tmdbId": 8267,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=ukrNTgX2cjc",
+        "similarWatchmodeTitleIds": [
+          122922,
+          130740,
+          1142424,
+          1173278,
+          1174504,
+          1184842,
+          1215199,
+          1233593,
+          1235119,
+          1238749,
+          1250055,
+          1254328,
+          1259162,
+          1298072,
+          1308545,
+          1316710,
+          1360581,
+          1361798,
+          1376695,
+          1388504,
+          1406943,
+          1426454,
+          1455592,
+          1464253,
+          1468908
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 718332,
+            "name": "Aldo Romero",
+            "type": "Crew",
+            "role": "First Assistant Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 739450,
+            "name": "Andrea Barata Ribeiro",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7183581,
+            "name": "César Charlone",
+            "type": "Crew",
+            "role": "Director, Screenplay, Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7266872,
+            "name": "Enrique Fernández",
+            "type": "Crew",
+            "role": "Screenplay, Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7287850,
+            "name": "Fernando Meirelles",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7857566,
+            "name": "Serge Catoire",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71020398,
+            "name": "Alejandra Rosasco",
+            "type": "Crew",
+            "role": "Costume Designer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71090971,
+            "name": "Bel Berlinck",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71123958,
+            "name": "Bruno Aldecosea",
+            "type": "Crew",
+            "role": "Casting",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71174110,
+            "name": "Claudia Büschel",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71278098,
+            "name": "Estela Vallegra",
+            "type": "Crew",
+            "role": "Makeup Artist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71307634,
+            "name": "Gabriel Casacuberta",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71340476,
+            "name": "Gustavo Giani",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71638152,
+            "name": "Mauricio Osaki",
+            "type": "Crew",
+            "role": "Assistant Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71805148,
+            "name": "Robson Sartori",
+            "type": "Crew",
+            "role": "Visual Effects Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72063600,
+            "name": "Anne-Sophie Bion",
+            "type": "Crew",
+            "role": "Digital Conform Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 72576613,
+            "name": "Luciano Supervielle",
+            "type": "Crew",
+            "role": "Original Music Composer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78937359,
+            "name": "Sandino Saravia Vinay",
+            "type": "Crew",
+            "role": "Producer, Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79052208,
+            "name": "André Waller",
+            "type": "Crew",
+            "role": "Visual Effects Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79070741,
+            "name": "Marcelo Ferreira PeeJay",
+            "type": "Crew",
+            "role": "Digital Effects Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79073865,
+            "name": "Alex Ferreira Barreiro",
+            "type": "Crew",
+            "role": "Assistant Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79078990,
+            "name": "Daniel Yafalián",
+            "type": "Crew",
+            "role": "Assistant Sound Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79079482,
+            "name": "Marcelo Siqueira",
+            "type": "Crew",
+            "role": "Visual Effects Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79133060,
+            "name": "Mirtha Molina",
+            "type": "Crew",
+            "role": "Production Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79141656,
+            "name": "Vanessa Mariano",
+            "type": "Crew",
+            "role": "Visual Effects",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79141860,
+            "name": "Fábio Fatorelli",
+            "type": "Crew",
+            "role": "Assistant Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79142066,
+            "name": "Karina Vanes",
+            "type": "Crew",
+            "role": "Post Production Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79148623,
+            "name": "Leandro Scorsafava",
+            "type": "Crew",
+            "role": "Archival Footage Research",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79282195,
+            "name": "Mariana Zdravca",
+            "type": "Crew",
+            "role": "Post Production Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79282199,
+            "name": "Claudio Colangello",
+            "type": "Crew",
+            "role": "Additional Editing",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79294107,
+            "name": "Gustavo Ribeiro",
+            "type": "Crew",
+            "role": "Post Production Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79315400,
+            "name": "Daniel Márquez",
+            "type": "Crew",
+            "role": "Sound Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79319193,
+            "name": "Sarah Golding",
+            "type": "Crew",
+            "role": "Thanks",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79325104,
+            "name": "Adriana Levin",
+            "type": "Crew",
+            "role": "Wardrobe Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79465858,
+            "name": "Marcos Zoppi",
+            "type": "Crew",
+            "role": "Foley Recordist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79502476,
+            "name": "Analía Pollio",
+            "type": "Crew",
+            "role": "First Assistant Camera",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79502534,
+            "name": "Rogério Marinho",
+            "type": "Crew",
+            "role": "Visual Effects",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79699906,
+            "name": "Samanta do Amaral",
+            "type": "Crew",
+            "role": "Telecine Colorist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710082303,
+            "name": "Sergio de León",
+            "type": "Crew",
+            "role": "Unit Production Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710084621,
+            "name": "Sergio Pasqualino Jr.",
+            "type": "Crew",
+            "role": "Colorist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710097967,
+            "name": "María Zanocchi",
+            "type": "Crew",
+            "role": "Art Department Coordinator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710121919,
+            "name": "Álvaro Cuevas",
+            "type": "Crew",
+            "role": "Electrician",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710144275,
+            "name": "Pedro Barcia",
+            "type": "Crew",
+            "role": "Second Second Assistant Director, Casting Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710287504,
+            "name": "Andrés Alaniz",
+            "type": "Crew",
+            "role": "General Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710393108,
+            "name": "Rodrigo Borda",
+            "type": "Crew",
+            "role": "Assistant Art Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710396453,
+            "name": "Inés Olmedo",
+            "type": "Crew",
+            "role": "Production Design, Art Direction",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710396582,
+            "name": "Pablo Benedetto",
+            "type": "Crew",
+            "role": "Boom Operator",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710413621,
+            "name": "Ana Domínguez",
+            "type": "Crew",
+            "role": "Wardrobe Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710426053,
+            "name": "Elena Roux",
+            "type": "Crew",
+            "role": "Executive Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710426369,
+            "name": "Diego Ferrando Mazzotti",
+            "type": "Crew",
+            "role": "Assistant Production Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710426381,
+            "name": "Santiago Turell",
+            "type": "Crew",
+            "role": "Second Assistant Director, Casting Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710426817,
+            "name": "Mariana Pereira Scayola",
+            "type": "Crew",
+            "role": "Assistant Art Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710434149,
+            "name": "Mariana Pereyra",
+            "type": "Crew",
+            "role": "Assistant Art Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710906268,
+            "name": "Carlo Vecchi",
+            "type": "Crew",
+            "role": "Post Production Supervisor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711097689,
+            "name": "Nicolás Scaduto",
+            "type": "Crew",
+            "role": "Foley Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711162948,
+            "name": "Leticia Almeida",
+            "type": "Crew",
+            "role": "Art Department Trainee",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71188480,
+            "name": "César Troncoso",
+            "type": "Cast",
+            "role": "Beto",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71964068,
+            "name": "Virginia Méndez",
+            "type": "Cast",
+            "role": "Carmen",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71964133,
+            "name": "Virginia Ruiz",
+            "type": "Cast",
+            "role": "Silvia",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 71610025,
+            "name": "Mario Silva",
+            "type": "Cast",
+            "role": "Valvulina",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 72468697,
+            "name": "Jose Arce",
+            "type": "Cast",
+            "role": "Nacente",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 72358048,
+            "name": "Henry De Leon",
+            "type": "Cast",
+            "role": "Tica",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 72811609,
+            "name": "Rosario Dos Santos",
+            "type": "Cast",
+            "role": "Teresa",
+            "order": 6
+          },
+          {
+            "watchmodePersonId": 71697351,
+            "name": "Nelson Lence",
+            "type": "Cast",
+            "role": "Meleyo",
+            "order": 7
+          },
+          {
+            "watchmodePersonId": 71368470,
+            "name": "Hugo Blandamuro",
+            "type": "Cast",
+            "role": "Tartamudo",
+            "order": 8
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": 7.1,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": 83,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "El fantasma",
+    "originalTitle": "El fantasma",
+    "year": 2026,
+    "agendaSlug": "el-fantasma",
+    "duplicate": {
+      "slug": "el-fantasma-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/el-fantasma-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/el-fantasma",
+      "movie": {
+        "id": "11323",
+        "slug": "el-fantasma",
+        "originalTitle": "El fantasma",
+        "year": 2026,
+        "durationMinutes": 96,
+        "tmdbId": "1735961",
+        "directors": [
+          "David Lamelas",
+          "Ignacio Masllorens"
+        ],
+        "cast": [
+          "David Lamelas",
+          "Constanza Feldman",
+          "Victoria Baldomir",
+          "Carmen Iriondo",
+          "Manuel Atwell",
+          "Luis Felipe Noé",
+          "Marta Minujín",
+          "Leopoldo Maler"
+        ],
+        "release": {
+          "id": "pp-11759",
+          "movieId": "11323",
+          "countryCode": "AR",
+          "localTitle": "El fantasma",
+          "distributor": [
+            {
+              "distributorId": "14",
+              "distributorName": "Independiente",
+              "from": "2026-11-07",
+              "to": null
+            }
+          ],
+          "rating": "G",
+          "releaseDate": "2026-11-07",
+          "status": "confirmed",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/6237d1237d2b4312a9c6866898b96a20.png",
+          "trailerUrl": "https://youtu.be/6KFRytZ42Yk?si=3oNNLKJaBUBE36p6",
+          "slug": "el-fantasma"
+        },
+        "eligibleChainCount": 0
+      }
+    },
+    "watchmodeRecovery": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1735961&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11229731/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11229731,
+        "title": "The Phantom",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt43703842",
+        "tmdbId": 1735961
+      },
+      "metadata": {
+        "title": "The Phantom",
+        "originalTitle": "El Fantasma",
+        "englishTitle": "The Phantom",
+        "year": 2026,
+        "originalLanguage": "es",
+        "runtimeMinutes": 96,
+        "releaseDate": "2026-09-10",
+        "genres": [],
+        "imdbId": "tt43703842",
+        "tmdbId": 1735961,
+        "trailerYoutubeUrl": "https://www.youtube.com/watch?v=QIoJMP9iTQQ",
+        "similarWatchmodeTitleIds": [
+          134565,
+          155622,
+          1139206,
+          1253884,
+          1347125,
+          1387801,
+          1430535,
+          1469199,
+          1601497,
+          1606431,
+          1607608,
+          1668177,
+          1691375,
+          1783038,
+          1835490,
+          1839093,
+          1864671,
+          1880502,
+          11086350,
+          2752672
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 7969516,
+            "name": "Walter Jakob",
+            "type": "Crew",
+            "role": "Writer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71542629,
+            "name": "Laura Citarella",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78947597,
+            "name": "Ignacio Masllorens",
+            "type": "Crew",
+            "role": "Director, Director of Photography, Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78969534,
+            "name": "Gabriel Chwojnik",
+            "type": "Crew",
+            "role": "Music",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78996210,
+            "name": "David Lamelas",
+            "type": "Crew",
+            "role": "Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79268348,
+            "name": "Sofía Di Paola",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79650694,
+            "name": "Lola Di Tella",
+            "type": "Crew",
+            "role": "Production Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79743005,
+            "name": "Verónica Balduzzi",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79846815,
+            "name": "Agustín Mendilaharzu",
+            "type": "Crew",
+            "role": "Writer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79867989,
+            "name": "Leonardo Cardemil",
+            "type": "Crew",
+            "role": "Sound",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711484951,
+            "name": "Ustym Petrovych",
+            "type": "Crew",
+            "role": "Music",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78996210,
+            "name": "David Lamelas",
+            "type": "Cast",
+            "role": "Himself",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710712327,
+            "name": "Constanza Feldman",
+            "type": "Cast",
+            "role": "Rocío",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78976442,
+            "name": "Victoria Baldomir",
+            "type": "Cast",
+            "role": "Rosario",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 79725519,
+            "name": "Carmen Iriondo",
+            "type": "Cast",
+            "role": "Reneé",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 79073275,
+            "name": "Luis Felipe Noé",
+            "type": "Cast",
+            "role": "",
+            "order": 5
+          },
+          {
+            "watchmodePersonId": 710282207,
+            "name": "Marta Minujín",
+            "type": "Cast",
+            "role": "",
+            "order": 6
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Biografía de Jorge Luis Borges",
+    "originalTitle": "Biografía de Jorge Luis Borges",
+    "year": 2026,
+    "agendaSlug": "biografia-de-jorge-luis-borges",
+    "duplicate": {
+      "slug": "biografia-de-jorge-luis-borges-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/biografia-de-jorge-luis-borges-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/biografia-de-jorge-luis-borges",
+      "movie": {
+        "id": "11355",
+        "slug": "biografia-de-jorge-luis-borges",
+        "originalTitle": "Biografía de Jorge Luis Borges",
+        "year": 2026,
+        "durationMinutes": 323,
+        "tmdbId": "1736494",
+        "directors": [
+          "Mariano Llinás"
+        ],
+        "cast": [
+          "Jorge Luis Borges",
+          "Ernesto Montequín",
+          "Nicolás Helft",
+          "Laura Paredes",
+          "Milva Leonardi",
+          "Pablo Dacal"
+        ],
+        "release": {
+          "id": "pp-11831",
+          "movieId": "11355",
+          "countryCode": "AR",
+          "localTitle": "Biografía de Jorge Luis Borges",
+          "distributor": [
+            {
+              "distributorId": "14",
+              "distributorName": "Independiente",
+              "from": "2026-11-08",
+              "to": null
+            }
+          ],
+          "rating": "G",
+          "releaseDate": "2026-11-08",
+          "status": "confirmed",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/31319aa218984ad1b2b4fec5bd16e721.jpg",
+          "trailerUrl": "https://youtu.be/N7GmYFUpAhk?si=iFxu_QJu8pj76GNU",
+          "slug": "biografia-de-jorge-luis-borges"
+        },
+        "eligibleChainCount": 0
+      }
+    },
+    "watchmodeRecovery": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1736494&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11226370/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11226370,
+        "title": "Life of Jorge Luis Borges",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt43704443",
+        "tmdbId": 1736494
+      },
+      "metadata": {
+        "title": "",
+        "originalTitle": "Biografía de Jorge Luis Borges",
+        "englishTitle": "Life of Jorge Luis Borges",
+        "year": 2026,
+        "originalLanguage": "es",
+        "runtimeMinutes": 330,
+        "releaseDate": "2026-09-06",
+        "genres": [
+          "Documentary"
+        ],
+        "imdbId": "tt43704443",
+        "tmdbId": 1736494,
+        "trailerYoutubeUrl": null,
+        "similarWatchmodeTitleIds": [
+          134565,
+          1105039,
+          1126865,
+          1173713,
+          1233653,
+          1246055,
+          1246628,
+          1250000,
+          1343908,
+          1492560,
+          1594214,
+          1672293,
+          1689775,
+          1691236,
+          1700027,
+          1710692,
+          1980479,
+          42063,
+          42199
+        ],
+        "credits": [
+          {
+            "watchmodePersonId": 71542629,
+            "name": "Laura Citarella",
+            "type": "Crew",
+            "role": "Producer",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 71605108,
+            "name": "Mariano Llinás",
+            "type": "Crew",
+            "role": "Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78969534,
+            "name": "Gabriel Chwojnik",
+            "type": "Crew",
+            "role": "Music",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 78981824,
+            "name": "Federico Esquerro",
+            "type": "Crew",
+            "role": "Sound Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79136442,
+            "name": "Ezequiel Pierri",
+            "type": "Crew",
+            "role": "Production Manager",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79376424,
+            "name": "Inés Duacastella",
+            "type": "Crew",
+            "role": "Colorist",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79650694,
+            "name": "Lola Di Tella",
+            "type": "Crew",
+            "role": "Production Assistant",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79846815,
+            "name": "Agustín Mendilaharzu",
+            "type": "Crew",
+            "role": "Director of Photography",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 79984212,
+            "name": "Valeria Fernandez",
+            "type": "Crew",
+            "role": "Sound Director",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 710605629,
+            "name": "Ignacio Codino",
+            "type": "Crew",
+            "role": "Editor",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 7482794,
+            "name": "Jorge Luis Borges",
+            "type": "Cast",
+            "role": "Self (archive footage)",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711489713,
+            "name": "Ernesto Montequín",
+            "type": "Cast",
+            "role": "Montequín",
+            "order": 1
+          },
+          {
+            "watchmodePersonId": 711489716,
+            "name": "Nicolás Helft",
+            "type": "Cast",
+            "role": "Helft",
+            "order": 2
+          },
+          {
+            "watchmodePersonId": 73551559,
+            "name": "Laura Paredes",
+            "type": "Cast",
+            "role": "",
+            "order": 3
+          },
+          {
+            "watchmodePersonId": 710962701,
+            "name": "Milva Leonardi",
+            "type": "Cast",
+            "role": "",
+            "order": 4
+          },
+          {
+            "watchmodePersonId": 79770437,
+            "name": "Pablo Dacal",
+            "type": "Cast",
+            "role": "",
+            "order": 5
+          }
+        ]
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    }
+  },
+  {
+    "title": "Stray Kids World Tour RUN IT Live Viewing",
+    "originalTitle": "Stray Kids World Tour RUN IT Live Viewing",
+    "year": 2026,
+    "agendaSlug": "stray-kids-world-tour-run-it-live-viewing",
+    "duplicate": {
+      "slug": "stray-kids-world-tour-run-it-live-viewing-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/stray-kids-world-tour-run-it-live-viewing-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "provider": "Watchmode",
+      "queries": {
+        "searchUrl": "https://api.watchmode.com/v1/search/?search_field=name&search_value=Stray+Kids+World+Tour+RUN+IT+Live+Viewing&types=movie",
+        "detailsUrl": "https://api.watchmode.com/v1/title/11232290/details/?append_to_response=cast-crew&language=es"
+      },
+      "match": {
+        "watchmodeId": 11232290,
+        "title": "Stray Kids World Tour 'Run It' Live Viewing",
+        "year": 2026,
+        "type": "movie",
+        "imdbId": "tt48391060",
+        "tmdbId": 1795555
+      },
+      "metadata": {
+        "title": "Stray Kids World Tour 'Run It' Live Viewing",
+        "originalTitle": "Stray Kids World Tour 'RUN IT' LIVE VIEWING",
+        "englishTitle": "Stray Kids World Tour 'Run It' Live Viewing",
+        "year": 2026,
+        "originalLanguage": "ko",
+        "runtimeMinutes": null,
+        "releaseDate": "2026-11-07",
+        "genres": [
+          "Music"
+        ],
+        "imdbId": "tt48391060",
+        "tmdbId": 1795555,
+        "trailerYoutubeUrl": null,
+        "similarWatchmodeTitleIds": [
+          183424,
+          1147804,
+          1152259,
+          1226329,
+          1286272,
+          1286396,
+          1324978,
+          1402282,
+          1491617,
+          1613696,
+          1638940,
+          1701872,
+          1867002,
+          1887267,
+          1892276,
+          1940274,
+          11050207,
+          11107093,
+          456192,
+          4144459
+        ],
+        "credits": []
+      },
+      "ratings": {
+        "source": "Watchmode",
+        "audience": {
+          "value": null,
+          "scale": 10,
+          "voteCount": null
+        },
+        "critics": {
+          "value": null,
+          "scale": 100
+        }
+      }
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/stray-kids-world-tour-run-it-live-viewing",
+      "movie": {
+        "id": "11331",
+        "slug": "stray-kids-world-tour-run-it-live-viewing",
+        "originalTitle": "Stray Kids World Tour <RUN IT> LIVE VIEWING",
+        "year": 2026,
+        "durationMinutes": 195,
+        "tmdbId": "1795555",
+        "directors": [],
+        "cast": [
+          "Bang Chan",
+          "Seo Changbin",
+          "Hwang Hyun-jin"
+        ],
+        "release": {
+          "id": "pp-11795",
+          "movieId": "11331",
+          "countryCode": "AR",
+          "localTitle": "Stray Kids World Tour <RUN IT> LIVE VIEWING",
+          "distributor": [
+            {
+              "distributorId": "7",
+              "distributorName": "Cinemark",
+              "from": "2026-11-07",
+              "to": null
+            }
+          ],
+          "rating": "",
+          "releaseDate": "2026-11-07",
+          "status": "confirmed",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/97c87cb4d4884ae39c40547132d8a56c.jpg",
+          "trailerUrl": "https://youtu.be/KJN2UqNlQtw?si=UaqcfgZ5PIhnOISn",
+          "slug": "stray-kids-world-tour-run-it-live-viewing"
+        },
+        "eligibleChainCount": 33
+      }
+    }
+  },
+  {
+    "title": "EXO PLANET #6 EXhOrizon dot in cinemas",
+    "originalTitle": "EXO PLANET #6 EXhOrizon dot in cinemas",
+    "year": 2026,
+    "agendaSlug": "exo-planet-6-exhorizon-dot-in-cinemas",
+    "duplicate": {
+      "slug": "exo-planet-6-exhorizon-dot-in-cinemas-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/exo-planet-6-exhorizon-dot-in-cinemas-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "watchmode": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    },
+    "agenda": {
+      "url": "https://agendadecine.com/pelicula/exo-planet-6-exhorizon-dot-in-cinemas",
+      "movie": {
+        "id": "11348",
+        "slug": "exo-planet-6-exhorizon-dot-in-cinemas",
+        "originalTitle": "EXO PLANET #6 – EXhOrizon [dot] in cinemas",
+        "year": 2026,
+        "durationMinutes": 210,
+        "tmdbId": "1802770",
+        "directors": [],
+        "cast": [],
+        "release": {
+          "id": "pp-11817",
+          "movieId": "11348",
+          "countryCode": "AR",
+          "localTitle": "EXO PLANET #6 – EXhOrizon [dot] in cinemas",
+          "distributor": [
+            {
+              "distributorId": "7",
+              "distributorName": "Cinemark",
+              "from": "2026-11-08",
+              "to": null
+            }
+          ],
+          "rating": "",
+          "releaseDate": "2026-11-08",
+          "status": "confirmed",
+          "isRerelease": false,
+          "posterUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/be567fc5e39d432db4ac912e45627487.jpg",
+          "trailerUrl": null,
+          "slug": "exo-planet-6-exhorizon-dot-in-cinemas"
+        },
+        "eligibleChainCount": 9
+      }
+    },
+    "watchmodeRecovery": {
+      "error": "Watchmode no devolvió una coincidencia inequívoca de película para el título y año indicados.\n"
+    }
+  }
+]

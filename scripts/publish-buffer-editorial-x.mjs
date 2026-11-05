@@ -7,12 +7,15 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const site = 'https://www.cineposta.com.ar';
 
 export function editorialPostPlan(editorial) {
-	if (!/^estrenos-streaming-[a-z0-9-]+$/u.test(editorial?.slug ?? '')) throw new Error('Se requiere una guía semanal de streaming.');
+	if (!/^estrenos-(?:streaming|cines)-[a-z0-9-]+$/u.test(editorial?.slug ?? '')) throw new Error('Se requiere una guía semanal de streaming o cine.');
 	if (!editorial.title || !editorial.cover?.src || !editorial.cover.alt) throw new Error('La nota necesita título y portada con descripción.');
 	const imagePath = editorial.cover.src;
 	if (!/^assets\/editorial\/[a-z0-9-]+\/[a-z0-9-]+\.webp$/u.test(imagePath)) throw new Error('La imagen debe pertenecer al sitio.');
 	const url = `${site}/editorial/${editorial.slug}/`;
-	const text = `¡Actualizamos CinePosta con los estrenos de streaming de la semana! 🍿\nQué llegó a plataformas en Argentina, trailers y fichas para elegir sin dar mil vueltas.\n${url}\nMás cine: ${site}/\n#Estrenos #Streaming #CinePosta`;
+	const cinema = editorial.slug.startsWith('estrenos-cines-');
+	const text = cinema
+		? `¡Actualizamos los estrenos de cine de la semana! 🍿\nGuía, trailers y fichas para elegir la próxima salida. ¡Nos vemos en la sala!\n${url}\nMás cine: ${site}/\n#Estrenos #Cine #BuenosAires #CinePosta`
+		: `¡Actualizamos CinePosta con los estrenos de streaming de la semana! 🍿\nQué llegó a plataformas en Argentina, trailers y fichas para elegir sin dar mil vueltas.\n${url}\nMás cine: ${site}/\n#Estrenos #Streaming #CinePosta`;
 	if (weightedXLength(text) > 250) throw new Error('El texto supera el margen de X.');
 	return { text, url, imageUrl: `${site}/${imagePath}`, alt: editorial.cover.alt };
 }
@@ -23,7 +26,7 @@ export function alreadyPublished(posts, url) {
 
 async function main() {
 	const slug = process.argv[2];
-	if (!/^estrenos-streaming-[a-z0-9-]+$/u.test(slug ?? '')) throw new Error('Indicá el slug de la guía semanal.');
+	if (!/^estrenos-(?:streaming|cines)-[a-z0-9-]+$/u.test(slug ?? '')) throw new Error('Indicá el slug de la guía semanal.');
 	const editorial = JSON.parse(await readFile(path.join(root, 'src/data/editorials', `${slug}.json`), 'utf8'));
 	const plan = editorialPostPlan(editorial);
 	await readFile(path.join(root, 'public', editorial.cover.src));

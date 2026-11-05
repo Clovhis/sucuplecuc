@@ -1,0 +1,171 @@
+{
+  "provider": "Watchmode",
+  "queries": {
+    "searchUrl": "https://api.watchmode.com/v1/search/?search_field=tmdb_movie_id&search_value=1583319&types=movie",
+    "detailsUrl": "https://api.watchmode.com/v1/title/11065872/details/?append_to_response=cast-crew&language=es"
+  },
+  "match": {
+    "watchmodeId": 11065872,
+    "title": "Museo de la subversión",
+    "year": 2025,
+    "type": "movie",
+    "imdbId": null,
+    "tmdbId": 1583319
+  },
+  "metadata": {
+    "title": "",
+    "originalTitle": "Museo de la subversión",
+    "englishTitle": "Museo de la subversión",
+    "year": 2025,
+    "originalLanguage": "es",
+    "runtimeMinutes": 70,
+    "releaseDate": "2025-11-26",
+    "genres": [
+      "Documentary"
+    ],
+    "imdbId": null,
+    "tmdbId": 1583319,
+    "trailerYoutubeUrl": null,
+    "similarWatchmodeTitleIds": [
+      11804,
+      134565,
+      152428,
+      1121139,
+      1126865,
+      1141511,
+      1246628,
+      1250000,
+      1337831,
+      1492560,
+      1579212,
+      1640287,
+      1689775,
+      1914751,
+      1980197,
+      1980479,
+      11208283,
+      42063,
+      42199,
+      42297
+    ],
+    "credits": [
+      {
+        "watchmodePersonId": 73446777,
+        "name": "Joaquín Neira",
+        "type": "Crew",
+        "role": "Director of Photography",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79041711,
+        "name": "Pablo Bernst",
+        "type": "Crew",
+        "role": "Director of Photography",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79127806,
+        "name": "Marilina Giménez",
+        "type": "Crew",
+        "role": "Sound Recordist",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79174792,
+        "name": "Julia Straface",
+        "type": "Crew",
+        "role": "Writer, Editor",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79252630,
+        "name": "Jorge Gutiérrez Jiménez",
+        "type": "Crew",
+        "role": "Sound Mixer",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79258894,
+        "name": "Nadia Martínez",
+        "type": "Crew",
+        "role": "Executive Producer",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79432368,
+        "name": "Francisco D'Eufemia",
+        "type": "Crew",
+        "role": "Director, Writer, Editor",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79461205,
+        "name": "Alejandro Armaleo",
+        "type": "Crew",
+        "role": "Color Grading",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79662620,
+        "name": "Fernando Krapp",
+        "type": "Crew",
+        "role": "Writer",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79764293,
+        "name": "Nicolas Rodriguez Fuchs",
+        "type": "Crew",
+        "role": "Graphic Designer",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 710185570,
+        "name": "Natalia Toussaint",
+        "type": "Crew",
+        "role": "Sound",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 710432159,
+        "name": "Samanta Bianucci",
+        "type": "Crew",
+        "role": "Production Manager",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 710456632,
+        "name": "Jackson Souvenirs",
+        "type": "Crew",
+        "role": "Music",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 78940544,
+        "name": "Belén Blanco",
+        "type": "Cast",
+        "role": "",
+        "order": 1
+      },
+      {
+        "watchmodePersonId": 79093015,
+        "name": "Pablo Llonto",
+        "type": "Cast",
+        "role": "",
+        "order": 1
+      }
+    ]
+  },
+  "ratings": {
+    "source": "Watchmode",
+    "audience": {
+      "value": null,
+      "scale": 10,
+      "voteCount": null
+    },
+    "critics": {
+      "value": null,
+      "scale": 100
+    }
+  }
+}

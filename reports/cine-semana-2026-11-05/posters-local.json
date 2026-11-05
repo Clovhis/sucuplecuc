@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-11-05T11:52:35.830Z",
+  "fallback": {
+    "path": "assets/posters/poster-fallback.webp",
+    "bytes": 31440
+  },
+  "summary": {
+    "total": 5,
+    "migrated": 3,
+    "alreadyLocal": 0,
+    "fallback": 2
+  },
+  "results": [
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\godzilla-minus-zero-2026.json",
+      "slug": "godzilla-minus-zero-2026",
+      "status": "migrated",
+      "outputPath": "assets/posters/2026/godzilla-minus-zero-2026.webp",
+      "bytes": 71688,
+      "quality": 80,
+      "sourceUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/a635969f05754d12b0cb70b2feb6a34f.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\entrega-al-limite-2026.json",
+      "slug": "entrega-al-limite-2026",
+      "status": "migrated",
+      "outputPath": "assets/posters/2026/entrega-al-limite-2026.webp",
+      "bytes": 71196,
+      "quality": 76,
+      "sourceUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/c85a7bc77ca54f41ab5cbc054004cb37.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\sacrificio-los-elegidos-2025.json",
+      "slug": "sacrificio-los-elegidos-2025",
+      "status": "fallback",
+      "outputPath": "assets/posters/poster-fallback.webp",
+      "sourceUrl": "https://images.justwatch.com/poster/348622124/s1660/los-elegidos-2026.jpg",
+      "error": "HTTP 400"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\el-gato-con-sombrero-2026.json",
+      "slug": "el-gato-con-sombrero-2026",
+      "status": "migrated",
+      "outputPath": "assets/posters/2026/el-gato-con-sombrero-2026.webp",
+      "bytes": 62050,
+      "quality": 84,
+      "sourceUrl": "https://ultracinestorage.blob.core.windows.net/media/posters/peliculaspais/39dc0ff185fc43868fdfad2ef6868af8.jpg"
+    },
+    {
+      "filePath": "C:\\WebsitePeliculas\\src\\data\\movies\\babystar-2025.json",
+      "slug": "babystar-2025",
+      "status": "fallback",
+      "outputPath": "assets/posters/poster-fallback.webp",
+      "sourceUrl": "https://images.justwatch.com/poster/347462093/s1660/babystar.jpg",
+      "error": "HTTP 400"
+    }
+  ]
+}

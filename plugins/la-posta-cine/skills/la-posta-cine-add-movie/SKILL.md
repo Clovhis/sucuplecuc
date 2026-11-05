@@ -13,6 +13,8 @@ Radar, weekly recommendations and upcoming trailers are frozen scheduled edition
 
 ## Scope
 
+- Cinema intake and weekly theatrical guides use large commercial chains in CABA and Buenos Aires Province: Cinemark/Hoyts (including IMAX), Showcase, Cinépolis, Atlas, Cinemacenter and Multiplex, or a verified comparable large chain. Exclude provincial microcinemas and independent, municipal, INCAA, museum and cineclub screenings as qualifying evidence. IMAX is a format, so identify the exhibitor and venue. Apply the same chain-and-geography gate when revalidating `Cine` and the home carousel; provincial cities remain eligible when served by a large chain. See `la-posta-cine-cartelera-revalidator`.
+
 - Edit only `src/data/movies/**`, `src/data/people.json`, `public/people/**`, `public/assets/posters/**`, and generated catalog references. Never change UI, routes, styles, build config, workflow files, Share, Comunidad, or reaction assets for a movie load. A title-specific meter score explicitly requested by the user is the sole code exception: update only the central `src/lib/*metro.ts` override map and its regression test, never a per-movie meter field.
 - Create a `feature/movie-<slug>` branch from an up-to-date `main`; never commit directly to `main`. Do not stash or overwrite unrelated changes.
 - A correct slug automatically enables Share, Comunidad, ratings, recommendation blocks, and the score-derived reaction. Do not create per-movie fields or external records for any of them.

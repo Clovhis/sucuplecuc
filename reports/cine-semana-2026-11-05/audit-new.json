@@ -1,0 +1,153 @@
+{
+  "baseRef": "main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/godzilla-minus-zero-2026.json",
+    "src/data/movies/entrega-al-limite-2026.json",
+    "src/data/movies/sacrificio-los-elegidos-2025.json",
+    "src/data/movies/el-gato-con-sombrero-2026.json",
+    "src/data/movies/babystar-2025.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/godzilla-minus-zero-2026.json",
+        "poster": "assets/posters/2026/godzilla-minus-zero-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 71688 bytes.",
+        "bytes": 71688,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/entrega-al-limite-2026.json",
+        "poster": "assets/posters/2026/entrega-al-limite-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x600, 71196 bytes.",
+        "bytes": 71196,
+        "format": "webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "filePath": "src/data/movies/sacrificio-los-elegidos-2025.json",
+        "poster": "assets/posters/2025/sacrificio-los-elegidos-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 53498 bytes.",
+        "bytes": 53498,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-gato-con-sombrero-2026.json",
+        "poster": "assets/posters/2026/el-gato-con-sombrero-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 62050 bytes.",
+        "bytes": 62050,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/babystar-2025.json",
+        "poster": "assets/posters/2025/babystar-2025.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 34568 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 34568,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      }
+    ],
+    "summary": {
+      "total": 5,
+      "passed": 4,
+      "warnings": 1,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "ok",
+    "message": "review audit passed for 5 file(s)"
+  },
+  "findings": [
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/godzilla-minus-zero-2026.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/godzilla-minus-zero-2026.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/entrega-al-limite-2026.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/entrega-al-limite-2026.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: ambulance-plan-de-huida-2022."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/sacrificio-los-elegidos-2025.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/sacrificio-los-elegidos-2025.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: el-menu-2022."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/el-gato-con-sombrero-2026.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/el-gato-con-sombrero-2026.json",
+      "message": "\"Erica Rivinoja\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/babystar-2025.json",
+      "message": "\"Joscha Bongard\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/babystar-2025.json",
+      "message": "\"Liliom Lewald\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/babystar-2025.json",
+      "message": "poster is valid at 34568 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    }
+  ]
+}

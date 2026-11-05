@@ -9,6 +9,8 @@ La columna `src/data/editorials/resident-evil-noche-cero-la-veria-99-veces.json`
 
 ## Voz y criterio
 
+Las guías semanales de estrenos en salas cubren las cadenas grandes de CABA y Provincia de Buenos Aires: Cinemark/Hoyts (incluido IMAX), Showcase, Cinépolis, Atlas, Cinemacenter y Multiplex, o cadenas comparables verificadas. No amplíes la selección con microcines provinciales ni salas independientes, municipales, INCAA, museos o cineclubes. Una ciudad provincial sí entra cuando tiene una función en una cadena grande. Enlazá sólo fichas existentes y distinguí los eventos sin valoración suficiente; no inventes una ficha o score para completar la agenda.
+
 Convertí las ideas del usuario en una columna original con una idea central, un arranque que enganche, desarrollo fluido y un cierre que deje una reflexión. Usá primera persona cuando expreses su opinión. Lenguaje simple, natural y coloquial rioplatense; expresiones argentinas sólo cuando salgan solas. Evitá lenguaje académico, poses de crítico profesional, frases genéricas de IA y enumerar las ideas recibidas. Pocos o ningún subtítulo: debe sentirse como una columna, no como una review por secciones.
 
 Transmití la experiencia que el usuario contó sin inventarle recuerdos, reacciones físicas, anécdotas de sala, escenas ni opiniones nuevas. No conviertas una preferencia personal en consenso crítico. Verificá datos externos; las fuentes no son texto para copiar. No hace falta reconstruir la trama. Evitá spoilers fuertes por defecto; si se solicitan, marcá `spoilers: true`.

@@ -456,6 +456,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "anya-taylor-joy": [
     "super-mario-galaxy-2026",
+    "sacrificio-los-elegidos-2025",
     "the-gorge-2025",
     "furiosa-a-mad-max-saga-2024",
     "the-super-mario-bros-movie-2023",
@@ -584,6 +585,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "rojo-2018"
   ],
   "bill-hader": [
+    "el-gato-con-sombrero-2026",
     "it-chapter-two-2019",
     "el-plan-de-maggie-2016",
     "the-bfg-2016",
@@ -1009,6 +1011,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "home-alone-1990"
   ],
   "chris-evans": [
+    "sacrificio-los-elegidos-2025",
     "el-hombre-gris-2022",
     "lightyear-2022",
     "avengers-endgame-2019",
@@ -4468,6 +4471,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-ciudadano-ilustre-2016"
   ],
   "owen-wilson": [
+    "entrega-al-limite-2026",
     "cars-3-2017",
     "vicio-propio-2014",
     "cars-2-2011",

@@ -1,0 +1,121 @@
+[
+  {
+    "query": "Sacrificio",
+    "checkedAt": "2026-11-05",
+    "candidates": [
+      {
+        "content": {
+          "title": "Sacrificio",
+          "originalTitle": "Sacrifice",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/los-elegidos-2026",
+          "posterUrl": "/poster/348622124/{profile}/los-elegidos-2026.{format}",
+          "externalIds": {
+            "imdbId": "tt32268992",
+            "tmdbId": "1284186"
+          },
+          "scoring": {
+            "imdbScore": 5,
+            "imdbVotes": 6559,
+            "tmdbScore": 5.4
+          },
+          "productionCountries": [
+            "CY",
+            "FR",
+            "GB",
+            "GR"
+          ]
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=630",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/sacrificio-los-elegidos",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6278",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "Babystar",
+    "checkedAt": "2026-11-05",
+    "candidates": [
+      {
+        "content": {
+          "title": "Babystar",
+          "originalTitle": "Babystar",
+          "originalReleaseYear": 2026,
+          "fullPath": "/ar/pelicula/babystar",
+          "posterUrl": "/poster/347462093/{profile}/babystar.{format}",
+          "externalIds": {
+            "imdbId": "tt34998116",
+            "tmdbId": "1356474"
+          },
+          "scoring": {
+            "imdbScore": 6.1,
+            "imdbVotes": 190,
+            "tmdbScore": 7.4
+          },
+          "productionCountries": [
+            "DE"
+          ]
+        },
+        "offers": [
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.atlascines.com/Peliculas?codPelicula=627",
+            "package": {
+              "clearName": "Atlas Cines",
+              "technicalName": "atlascines"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://www.cinemarkhoyts.com.ar/pelicula/babystar",
+            "package": {
+              "clearName": "Cinemark",
+              "technicalName": "cinemark"
+            }
+          },
+          {
+            "monetizationType": "CINEMA",
+            "standardWebURL": "https://entradas.todoshowcase.com/showcase/pelicula?filmid=6277",
+            "package": {
+              "clearName": "Showcase Cinemas",
+              "technicalName": "showcasecinemas"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "The Pope's Toilet",
+    "checkedAt": "2026-11-05",
+    "candidates": []
+  },
+  {
+    "query": "Museo de la subversión",
+    "checkedAt": "2026-11-05",
+    "candidates": []
+  }
+]

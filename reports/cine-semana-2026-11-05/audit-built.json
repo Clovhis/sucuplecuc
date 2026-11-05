@@ -1,0 +1,1200 @@
+{
+  "baseRef": "main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/4-historias-increibles-2026.json",
+    "src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json",
+    "src/data/movies/annemarie-2026.json",
+    "src/data/movies/avengers-endgame-2019.json",
+    "src/data/movies/backrooms-2026.json",
+    "src/data/movies/buenas-vibraciones-2026.json",
+    "src/data/movies/carrie-1976.json",
+    "src/data/movies/cars-2006.json",
+    "src/data/movies/cordobeces-la-pelicula-2026.json",
+    "src/data/movies/coyote-vs-acme-2026.json",
+    "src/data/movies/desobediente-2026.json",
+    "src/data/movies/el-diablo-viste-a-la-moda-2-2026.json",
+    "src/data/movies/el-final-de-la-calle-oak-2026.json",
+    "src/data/movies/el-tren-fluvial-2026.json",
+    "src/data/movies/encantador-2025.json",
+    "src/data/movies/estacion-zombie-2016.json",
+    "src/data/movies/everest-la-otra-cara-2026.json",
+    "src/data/movies/evil-dead-en-llamas-2026.json",
+    "src/data/movies/guardianes-del-museo-2-2026.json",
+    "src/data/movies/hangar-rojo-2026.json",
+    "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+    "src/data/movies/hope-el-primer-impacto-2026.json",
+    "src/data/movies/la-bruja-2015.json",
+    "src/data/movies/la-invitacion-2026.json",
+    "src/data/movies/la-negociacion-2025.json",
+    "src/data/movies/la-noche-del-demonio-estan-entre-nosotros-2026.json",
+    "src/data/movies/lo-dejamos-aca-2026.json",
+    "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+    "src/data/movies/mama-2013.json",
+    "src/data/movies/michael-2026.json",
+    "src/data/movies/minions-monstruos-2026.json",
+    "src/data/movies/paw-patrol-la-dino-pelicula-2026.json",
+    "src/data/movies/pepita-la-pistolera-2026.json",
+    "src/data/movies/poltergeist-1982.json",
+    "src/data/movies/quiero-tu-sexo-2026.json",
+    "src/data/movies/resident-evil-noche-cero-2026.json",
+    "src/data/movies/scream-7-2026.json",
+    "src/data/movies/spider-man-brand-new-day-2026.json",
+    "src/data/movies/su-propio-infierno-2026.json",
+    "src/data/movies/susana-rinaldi-libre-2025.json",
+    "src/data/movies/terror-en-el-amazonas-2026.json",
+    "src/data/movies/the-others-2001.json",
+    "src/data/movies/tres-adioses-2025.json",
+    "src/data/movies/una-quinta-en-portugal-2025.json",
+    "src/data/movies/yo-narciso-2026.json",
+    "src/data/movies/godzilla-minus-zero-2026.json",
+    "src/data/movies/entrega-al-limite-2026.json",
+    "src/data/movies/sacrificio-los-elegidos-2025.json",
+    "src/data/movies/el-gato-con-sombrero-2026.json",
+    "src/data/movies/babystar-2025.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/4-historias-increibles-2026.json",
+        "poster": "assets/posters/2026/4-historias-increibles-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x718, 54810 bytes.",
+        "bytes": 54810,
+        "format": "webp",
+        "width": 480,
+        "height": 718
+      },
+      {
+        "filePath": "src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json",
+        "poster": "assets/posters/2026/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 43558 bytes.",
+        "bytes": 43558,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/annemarie-2026.json",
+        "poster": "assets/posters/2026/annemarie-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 24232 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 24232,
+        "format": "webp",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "filePath": "src/data/movies/avengers-endgame-2019.json",
+        "poster": "assets/posters/2019/avengers-endgame-2019.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x685, 80108 bytes.",
+        "bytes": 80108,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      },
+      {
+        "filePath": "src/data/movies/backrooms-2026.json",
+        "poster": "assets/posters/2026/backrooms-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 25762 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 25762,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/buenas-vibraciones-2026.json",
+        "poster": "assets/posters/2026/buenas-vibraciones-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x600, 58604 bytes.",
+        "bytes": 58604,
+        "format": "webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "filePath": "src/data/movies/carrie-1976.json",
+        "poster": "assets/posters/1976/carrie-1976.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 73608 bytes.",
+        "bytes": 73608,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/cars-2006.json",
+        "poster": "assets/posters/2006/cars-2006.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x685, 80678 bytes.",
+        "bytes": 80678,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      },
+      {
+        "filePath": "src/data/movies/cordobeces-la-pelicula-2026.json",
+        "poster": "assets/posters/2026/cordobeces-la-pelicula-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x687, 78352 bytes.",
+        "bytes": 78352,
+        "format": "webp",
+        "width": 480,
+        "height": 687
+      },
+      {
+        "filePath": "src/data/movies/coyote-vs-acme-2026.json",
+        "poster": "assets/posters/2026/coyote-vs-acme-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 56534 bytes.",
+        "bytes": 56534,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/desobediente-2026.json",
+        "poster": "assets/posters/2026/desobediente-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 46178 bytes.",
+        "bytes": 46178,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-diablo-viste-a-la-moda-2-2026.json",
+        "poster": "assets/posters/2026/el-diablo-viste-a-la-moda-2-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x685, 51174 bytes.",
+        "bytes": 51174,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      },
+      {
+        "filePath": "src/data/movies/el-final-de-la-calle-oak-2026.json",
+        "poster": "assets/posters/2026/el-final-de-la-calle-oak-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 23224 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 23224,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-tren-fluvial-2026.json",
+        "poster": "assets/posters/2026/el-tren-fluvial-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 60256 bytes.",
+        "bytes": 60256,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/encantador-2025.json",
+        "poster": "assets/posters/2025/encantador-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x672, 59516 bytes.",
+        "bytes": 59516,
+        "format": "webp",
+        "width": 480,
+        "height": 672
+      },
+      {
+        "filePath": "src/data/movies/estacion-zombie-2016.json",
+        "poster": "assets/posters/2016/estacion-zombie-2016.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 76602 bytes.",
+        "bytes": 76602,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/everest-la-otra-cara-2026.json",
+        "poster": "assets/posters/2026/everest-la-otra-cara-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 59630 bytes.",
+        "bytes": 59630,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/evil-dead-en-llamas-2026.json",
+        "poster": "assets/posters/2026/evil-dead-en-llamas-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 64128 bytes.",
+        "bytes": 64128,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/guardianes-del-museo-2-2026.json",
+        "poster": "assets/posters/2026/guardianes-del-museo-2-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x683, 73224 bytes.",
+        "bytes": 73224,
+        "format": "webp",
+        "width": 480,
+        "height": 683
+      },
+      {
+        "filePath": "src/data/movies/hangar-rojo-2026.json",
+        "poster": "assets/posters/2026/hangar-rojo-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 26756 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 26756,
+        "format": "webp",
+        "width": 480,
+        "height": 687
+      },
+      {
+        "filePath": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+        "poster": "assets/posters/2025/heidi-el-rescate-del-lince-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x683, 71400 bytes.",
+        "bytes": 71400,
+        "format": "webp",
+        "width": 480,
+        "height": 683
+      },
+      {
+        "filePath": "src/data/movies/hope-el-primer-impacto-2026.json",
+        "poster": "assets/posters/2026/hope-el-primer-impacto-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 64350 bytes.",
+        "bytes": 64350,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/la-bruja-2015.json",
+        "poster": "assets/posters/2015/la-bruja-2015.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 28836 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 28836,
+        "format": "webp",
+        "width": 480,
+        "height": 712
+      },
+      {
+        "filePath": "src/data/movies/la-invitacion-2026.json",
+        "poster": "assets/posters/2026/la-invitacion-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 31492 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 31492,
+        "format": "webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "filePath": "src/data/movies/la-negociacion-2025.json",
+        "poster": "assets/posters/2025/la-negociacion-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 461x720, 41180 bytes.",
+        "bytes": 41180,
+        "format": "webp",
+        "width": 461,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-noche-del-demonio-estan-entre-nosotros-2026.json",
+        "poster": "assets/posters/2026/la-noche-del-demonio-estan-entre-nosotros-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 28146 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 28146,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/lo-dejamos-aca-2026.json",
+        "poster": "assets/posters/2026/lo-dejamos-aca-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 405x720, 44352 bytes.",
+        "bytes": 44352,
+        "format": "webp",
+        "width": 405,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+        "poster": "assets/posters/2025/lo-que-trajo-la-tormenta-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x685, 53968 bytes.",
+        "bytes": 53968,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      },
+      {
+        "filePath": "src/data/movies/mama-2013.json",
+        "poster": "assets/posters/2013/mama-2013.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 455x720, 41596 bytes.",
+        "bytes": 41596,
+        "format": "webp",
+        "width": 455,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/michael-2026.json",
+        "poster": "assets/posters/2026/michael-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 51576 bytes.",
+        "bytes": 51576,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/minions-monstruos-2026.json",
+        "poster": "assets/posters/2026/minions-monstruos-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x709, 50164 bytes.",
+        "bytes": 50164,
+        "format": "webp",
+        "width": 480,
+        "height": 709
+      },
+      {
+        "filePath": "src/data/movies/paw-patrol-la-dino-pelicula-2026.json",
+        "poster": "assets/posters/2026/paw-patrol-la-dino-pelicula-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 73390 bytes.",
+        "bytes": 73390,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/pepita-la-pistolera-2026.json",
+        "poster": "assets/posters/2026/pepita-la-pistolera-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 54014 bytes.",
+        "bytes": 54014,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/poltergeist-1982.json",
+        "poster": "assets/posters/1982/poltergeist-1982.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 19914 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 19914,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      },
+      {
+        "filePath": "src/data/movies/quiero-tu-sexo-2026.json",
+        "poster": "assets/posters/2026/quiero-tu-sexo-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 51432 bytes.",
+        "bytes": 51432,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/resident-evil-noche-cero-2026.json",
+        "poster": "assets/posters/2026/resident-evil-noche-cero-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 54412 bytes.",
+        "bytes": 54412,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/scream-7-2026.json",
+        "poster": "assets/posters/2026/scream-7-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x710, 43812 bytes.",
+        "bytes": 43812,
+        "format": "webp",
+        "width": 480,
+        "height": 710
+      },
+      {
+        "filePath": "src/data/movies/spider-man-brand-new-day-2026.json",
+        "poster": "assets/posters/2026/spider-man-brand-new-day-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 58002 bytes.",
+        "bytes": 58002,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/su-propio-infierno-2026.json",
+        "poster": "assets/posters/2026/su-propio-infierno-2026.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 25274 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 25274,
+        "format": "webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "filePath": "src/data/movies/susana-rinaldi-libre-2025.json",
+        "poster": "assets/posters/2025/susana-rinaldi-libre-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x641, 44006 bytes.",
+        "bytes": 44006,
+        "format": "webp",
+        "width": 480,
+        "height": 641
+      },
+      {
+        "filePath": "src/data/movies/terror-en-el-amazonas-2026.json",
+        "poster": "assets/posters/2026/terror-en-el-amazonas-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 81248 bytes.",
+        "bytes": 81248,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/the-others-2001.json",
+        "poster": "assets/posters/2001/the-others-2001.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 15652 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 15652,
+        "format": "webp",
+        "width": 480,
+        "height": 685
+      },
+      {
+        "filePath": "src/data/movies/tres-adioses-2025.json",
+        "poster": "assets/posters/2025/tres-adioses-2025.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 36742 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 36742,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/una-quinta-en-portugal-2025.json",
+        "poster": "assets/posters/2025/una-quinta-en-portugal-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 61726 bytes.",
+        "bytes": 61726,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/yo-narciso-2026.json",
+        "poster": "assets/posters/2026/yo-narciso-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 42626 bytes.",
+        "bytes": 42626,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/godzilla-minus-zero-2026.json",
+        "poster": "assets/posters/2026/godzilla-minus-zero-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 71688 bytes.",
+        "bytes": 71688,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/entrega-al-limite-2026.json",
+        "poster": "assets/posters/2026/entrega-al-limite-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x600, 71196 bytes.",
+        "bytes": 71196,
+        "format": "webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "filePath": "src/data/movies/sacrificio-los-elegidos-2025.json",
+        "poster": "assets/posters/2025/sacrificio-los-elegidos-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 53498 bytes.",
+        "bytes": 53498,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-gato-con-sombrero-2026.json",
+        "poster": "assets/posters/2026/el-gato-con-sombrero-2026.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 62050 bytes.",
+        "bytes": 62050,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/babystar-2025.json",
+        "poster": "assets/posters/2025/babystar-2025.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 34568 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 34568,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      }
+    ],
+    "summary": {
+      "total": 50,
+      "passed": 38,
+      "warnings": 12,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "ok",
+    "message": "review audit passed for 50 file(s)"
+  },
+  "findings": [
+    {
+      "severity": "info",
+      "code": "same-title-different-year",
+      "file": "C:\\WebsitePeliculas\\src\\data\\movies\\la-invitacion-2026.json",
+      "message": "Catalog also contains the normalized title \"la invitacion\" in year(s) 2015, 2026. Confirm this is a distinct remake or release before publication."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/adolescencia-sexo-y-muerte-en-campamento-miasma-2026.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" uses an uncommon portrait host (\"bafici.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "\"Mariana Sanguinetti\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Lucía Palacio\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Lucía Palacio\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Lucía Palacio\" uses an uncommon portrait host (\"img.cinenacional.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Lucía Palacio\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Kaitlin Nelson\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Kaitlin Nelson\" uses an uncommon portrait host (\"img.cinenacional.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Kaitlin Nelson\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Eddie Frari\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Eddie Frari\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Eddie Frari\" uses an uncommon portrait host (\"img.cinenacional.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/cordobeces-la-pelicula-2026.json",
+      "message": "\"Eddie Frari\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/desobediente-2026.json",
+      "message": "\"Federico Coringrato\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/desobediente-2026.json",
+      "message": "\"Federico Coringrato\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/desobediente-2026.json",
+      "message": "\"Federico Coringrato\" uses an uncommon portrait host (\"vinculosvecinales.com.ar\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/desobediente-2026.json",
+      "message": "\"Federico Coringrato\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/desobediente-2026.json",
+      "message": "\"Analía Kalinec\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/el-tren-fluvial-2026.json",
+      "message": "\"Rita Pauls\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/el-tren-fluvial-2026.json",
+      "message": "\"Rita Pauls\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/el-tren-fluvial-2026.json",
+      "message": "\"Rita Pauls\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/estacion-zombie-2016.json",
+      "message": "Current streaming entry \"Estación zombie\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/everest-la-otra-cara-2026.json",
+      "message": "\"Jim Morrison\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/everest-la-otra-cara-2026.json",
+      "message": "\"Jim Morrison\" uses an uncommon portrait host (\"www.mountainfilm.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/everest-la-otra-cara-2026.json",
+      "message": "\"Jim Morrison\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-gore-meter-hidden",
+      "file": "src/data/movies/evil-dead-en-llamas-2026.json",
+      "message": "Gore appears only in secondary taxonomy; Sangrómetro will stay hidden because only primary category \"Gore\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/evil-dead-en-llamas-2026.json",
+      "message": "\"Sébastien Vaniček\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/guardianes-del-museo-2-2026.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: la-vida-secreta-de-tus-mascotas-2016."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/guardianes-del-museo-2-2026.json",
+      "message": "\"Vasiliy Rovenskiy\" uses an uncommon portrait host (\"www.acmodasi.com.ua\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/hangar-rojo-2026.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/hangar-rojo-2026.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: la-vida-de-los-otros-2006."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/hangar-rojo-2026.json",
+      "message": "\"Juan Pablo Sallato\" uses an uncommon portrait host (\"dmovies.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/hangar-rojo-2026.json",
+      "message": "\"Nicolás Zárate\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "message": "\"Tobias Schwarz\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "message": "\"Tobias Schwarz\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/heidi-el-rescate-del-lince-2025.json",
+      "message": "\"Tobias Schwarz\" uses an uncommon portrait host (\"www.filmportal.de\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/hope-el-primer-impacto-2026.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/la-bruja-2015.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/la-bruja-2015.json",
+      "message": "Current streaming entry \"La bruja\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/la-noche-del-demonio-estan-entre-nosotros-2026.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/la-noche-del-demonio-estan-entre-nosotros-2026.json",
+      "message": "\"Laura Gordon\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lo-dejamos-aca-2026.json",
+      "message": "\"Hernán Goldfrid\" uses an uncommon portrait host (\"cinemadominicano.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Miguel de Zuviría\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Miguel de Zuviría\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Miguel de Zuviría\" uses an uncommon portrait host (\"estranhosencontros.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Miguel de Zuviría\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Carolina Saade\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Carolina Saade\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Carolina Saade\" uses an uncommon portrait host (\"img.cinenacional.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Carolina Saade\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Irune Porcel\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Irune Porcel\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Irune Porcel\" uses an uncommon portrait host (\"img.cinenacional.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/lo-que-trajo-la-tormenta-2025.json",
+      "message": "\"Irune Porcel\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/mama-2013.json",
+      "message": "Current streaming entry \"Mamá\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/minions-monstruos-2026.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/pepita-la-pistolera-2026.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "error",
+      "code": "streaming-carousel-missing-entry",
+      "file": "src/data/movies/poltergeist-1982.json",
+      "message": "Current streaming entry \"Poltergeist\" must render in the built homepage trailer carousel. Check releaseDate, confirmed releasePlatform, poster and trailerYoutubeId."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/resident-evil-noche-cero-2026.json",
+      "message": "\"Paul Walter Hauser\" uses an uncommon portrait host (\"image.tmdb.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/su-propio-infierno-2026.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/susana-rinaldi-libre-2025.json",
+      "message": "\"Isabel Marcenaro\" uses an uncommon portrait host (\"img.cinenacional.com\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/susana-rinaldi-libre-2025.json",
+      "message": "\"Isabel Marcenaro\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/godzilla-minus-zero-2026.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/godzilla-minus-zero-2026.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/entrega-al-limite-2026.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/entrega-al-limite-2026.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: ambulance-plan-de-huida-2022."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/sacrificio-los-elegidos-2025.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/sacrificio-los-elegidos-2025.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: el-menu-2022."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/el-gato-con-sombrero-2026.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/el-gato-con-sombrero-2026.json",
+      "message": "\"Erica Rivinoja\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/babystar-2025.json",
+      "message": "\"Joscha Bongard\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/babystar-2025.json",
+      "message": "\"Liliom Lewald\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/annemarie-2026.json",
+      "message": "poster is valid at 24232 bytes; preferred range is 40960-81920 bytes. (480x640)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/backrooms-2026.json",
+      "message": "poster is valid at 25762 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/el-final-de-la-calle-oak-2026.json",
+      "message": "poster is valid at 23224 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/hangar-rojo-2026.json",
+      "message": "poster is valid at 26756 bytes; preferred range is 40960-81920 bytes. (480x687)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/la-bruja-2015.json",
+      "message": "poster is valid at 28836 bytes; preferred range is 40960-81920 bytes. (480x712)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/la-invitacion-2026.json",
+      "message": "poster is valid at 31492 bytes; preferred range is 40960-81920 bytes. (480x600)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/la-noche-del-demonio-estan-entre-nosotros-2026.json",
+      "message": "poster is valid at 28146 bytes; preferred range is 40960-81920 bytes. (480x686)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/poltergeist-1982.json",
+      "message": "poster is valid at 19914 bytes; preferred range is 40960-81920 bytes. (480x685)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/su-propio-infierno-2026.json",
+      "message": "poster is valid at 25274 bytes; preferred range is 40960-81920 bytes. (480x600)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/the-others-2001.json",
+      "message": "poster is valid at 15652 bytes; preferred range is 40960-81920 bytes. (480x685)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/tres-adioses-2025.json",
+      "message": "poster is valid at 36742 bytes; preferred range is 40960-81920 bytes. (480x686)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/babystar-2025.json",
+      "message": "poster is valid at 34568 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    }
+  ]
+}
