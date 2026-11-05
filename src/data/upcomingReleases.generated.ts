@@ -8,7 +8,7 @@ export interface GeneratedUpcomingRelease {
 	synopsis?: string;
 	sourceUrl: string;
 }
-export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-04T11:54:34.911Z";
+export const GENERATED_UPCOMING_RELEASES_UPDATED_AT = "2026-11-05T11:57:09.766Z";
 export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 	{
 		"title": "Cómo robar un banco",
@@ -17,6 +17,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10630",
 		"videoUrl": "https://www.youtube.com/watch?v=eUikTiezPlw",
 		"thumbnailUrl": "https://i.ytimg.com/vi/eUikTiezPlw/hqdefault.jpg"
+	},
+	{
+		"title": "Ebenezer: Los fantasmas de Navidad",
+		"releaseDate": "2026-11-12",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10657-ebenezer-los-fantasmas-de-navidad/",
+		"slug": "cines-argentinos-10657",
+		"videoUrl": "https://www.youtube.com/watch?v=TKz2QyzSnFY",
+		"thumbnailUrl": "https://i.ytimg.com/vi/TKz2QyzSnFY/hqdefault.jpg"
 	},
 	{
 		"title": "Aniquilación",
@@ -31,8 +39,8 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"releaseDate": "2026-11-19",
 		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10320-los-juegos-del-hambre-amanecer-en-la-cosecha/",
 		"slug": "cines-argentinos-10320",
-		"videoUrl": "https://www.youtube.com/watch?v=pZQ4KJiW6VI",
-		"thumbnailUrl": "https://i.ytimg.com/vi/pZQ4KJiW6VI/hqdefault.jpg"
+		"videoUrl": "https://www.youtube.com/watch?v=Cvre7nHRnMk",
+		"thumbnailUrl": "https://i.ytimg.com/vi/Cvre7nHRnMk/hqdefault.jpg"
 	},
 	{
 		"title": "Yo soy Rocky",
@@ -49,6 +57,14 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10211",
 		"videoUrl": "https://www.youtube.com/watch?v=9NpBMpYzZaw",
 		"thumbnailUrl": "https://i.ytimg.com/vi/9NpBMpYzZaw/hqdefault.jpg"
+	},
+	{
+		"title": "La nueva Focker",
+		"releaseDate": "2026-11-26",
+		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10652-la-nueva-focker/",
+		"slug": "cines-argentinos-10652",
+		"videoUrl": "https://www.youtube.com/watch?v=O-EGxOo3hUw",
+		"thumbnailUrl": "https://i.ytimg.com/vi/O-EGxOo3hUw/hqdefault.jpg"
 	},
 	{
 		"title": "Bichos del mar",
@@ -73,13 +89,5 @@ export const GENERATED_UPCOMING_RELEASES: GeneratedUpcomingRelease[] = [
 		"slug": "cines-argentinos-10441",
 		"videoUrl": "https://www.youtube.com/watch?v=FHNCmFQSjkI",
 		"thumbnailUrl": "https://i.ytimg.com/vi/FHNCmFQSjkI/hqdefault.jpg"
-	},
-	{
-		"title": "La Era de Hielo: Mundo de lava",
-		"releaseDate": "2027-02-04",
-		"sourceUrl": "https://www.cinesargentinos.com.ar/pelicula/10208-la-era-de-hielo-mundo-de-lava/",
-		"slug": "cines-argentinos-10208",
-		"videoUrl": "https://www.youtube.com/watch?v=XaSkYbItiKk",
-		"thumbnailUrl": "https://i.ytimg.com/vi/XaSkYbItiKk/hqdefault.jpg"
 	}
 ];
