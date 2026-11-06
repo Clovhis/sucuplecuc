@@ -1,0 +1,241 @@
+{
+  "base": "http://127.0.0.1:43211",
+  "checkedAt": "2026-11-06T12:32:52.060Z",
+  "viewports": [
+    {
+      "width": 1440,
+      "editorialImages": true,
+      "fichaLinks": 33,
+      "overflow": false,
+      "homeAndArchive": true,
+      "streamingSlugs": [
+        "911-llamada-infernal-2026",
+        "dreams-suenos-2025",
+        "el-amigo-2024",
+        "making-marie-antoinette-2026",
+        "backrooms-2026",
+        "el-mago-de-kremlin-2026",
+        "el-pez-pucheros-2026",
+        "savage-mountain-2026",
+        "todo-sobre-ti-2025",
+        "un-amor-posible-2026",
+        "el-afinador-2026",
+        "astronauta-2025"
+      ],
+      "railArrows": true,
+      "trailerDialog": true
+    },
+    {
+      "width": 320,
+      "editorialImages": true,
+      "fichaLinks": 33,
+      "overflow": false,
+      "homeAndArchive": true,
+      "streamingSlugs": [
+        "911-llamada-infernal-2026",
+        "dreams-suenos-2025",
+        "el-amigo-2024",
+        "making-marie-antoinette-2026",
+        "backrooms-2026",
+        "el-mago-de-kremlin-2026",
+        "el-pez-pucheros-2026",
+        "savage-mountain-2026",
+        "todo-sobre-ti-2025",
+        "un-amor-posible-2026",
+        "el-afinador-2026",
+        "astronauta-2025"
+      ],
+      "railArrows": true,
+      "trailerDialog": true
+    }
+  ],
+  "movies": [
+    {
+      "slug": "mi-mejor-amiga-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/mi-mejor-amiga-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "el-secreto-del-orfebre-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/el-secreto-del-orfebre-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "en-la-ruta-del-crimen-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/en-la-ruta-del-crimen-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "la-mangosta-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/la-mangosta-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "la-razon-de-estar-contigo-una-navidad-perfecta-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/la-razon-de-estar-contigo-una-navidad-perfecta-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "blood-and-rust-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/blood-and-rust-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "el-precio-de-la-violencia-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/el-precio-de-la-violencia-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "the-christmas-writer-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/the-christmas-writer-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "super-troopers-3-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/super-troopers-3-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "girls-like-girls-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/girls-like-girls-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "juego-de-traiciones-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/juego-de-traiciones-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "la-ia-optimismo-o-apocalipsis-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/la-ia-optimismo-o-apocalipsis-2026.webp",
+      "people": 4
+    },
+    {
+      "slug": "primavera-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/primavera-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "sangre-de-mi-sangre-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/sangre-de-mi-sangre-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "un-amor-posible-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/un-amor-posible-2026.webp",
+      "people": 4
+    },
+    {
+      "slug": "el-amigo-2024",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2024/el-amigo-2024.webp",
+      "people": 4
+    },
+    {
+      "slug": "dreams-suenos-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/dreams-suenos-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "911-llamada-infernal-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/911-llamada-infernal-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "making-marie-antoinette-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/making-marie-antoinette-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "shelter-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/shelter-2026.webp",
+      "people": 4
+    },
+    {
+      "slug": "el-dia-d-bajo-presion-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/el-dia-d-bajo-presion-2026.webp",
+      "people": 6
+    },
+    {
+      "slug": "backrooms-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/backrooms-2026.webp",
+      "people": 6
+    },
+    {
+      "slug": "el-afinador-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/el-afinador-2026.webp",
+      "people": 6
+    },
+    {
+      "slug": "el-mago-de-kremlin-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/el-mago-de-kremlin-2026.webp",
+      "people": 6
+    },
+    {
+      "slug": "el-pez-pucheros-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/el-pez-pucheros-2026.webp",
+      "people": 4
+    },
+    {
+      "slug": "marea-oscura-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/marea-oscura-2026.webp",
+      "people": 3
+    },
+    {
+      "slug": "midnight-sun-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/midnight-sun-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "astronauta-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/astronauta-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "la-sombra-del-juez-2024",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2024/la-sombra-del-juez-2024.webp",
+      "people": 3
+    },
+    {
+      "slug": "todo-sobre-ti-2025",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2025/todo-sobre-ti-2025.webp",
+      "people": 3
+    },
+    {
+      "slug": "savage-mountain-2026",
+      "http": 200,
+      "poster": "http://127.0.0.1:43211/assets/posters/2026/savage-mountain-2026.webp",
+      "people": 3
+    }
+  ],
+  "errors": []
+}

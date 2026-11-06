@@ -4,6 +4,7 @@
 export const personProfileCatalogCredits: Record<string, string[]> = {
   "aaron-eckhart": [
     "impacto-mortal-2026",
+    "en-la-ruta-del-crimen-2025",
     "sully-2016",
     "the-dark-knight-2008",
     "desapariciones-2003",
@@ -246,8 +247,8 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-club-2015"
   ],
   "alicia-vikander": [
-    "el-mago-de-kremlin-2026",
     "hope-el-primer-impacto-2026",
+    "el-mago-de-kremlin-2026",
     "el-caballero-verde-2021",
     "ex-machina-2014"
   ],
@@ -595,6 +596,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "supersalidos-2007"
   ],
   "bill-murray": [
+    "el-amigo-2024",
     "los-muertos-no-mueren-2019",
     "operacion-monumento-2014",
     "fantastico-sr-fox-2009",
@@ -1490,6 +1492,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "prisioneros-2013"
   ],
   "dennis-quaid": [
+    "la-razon-de-estar-contigo-una-navidad-perfecta-2026",
     "war-machine-2026",
     "the-substance-2024",
     "mundo-extrano-2022",
@@ -1866,6 +1869,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "homo-argentum-2025"
   ],
   "eva-green": [
+    "juego-de-traiciones-2026",
     "dumbo-2019",
     "miss-peregrines-home-for-peculiar-children-2016",
     "dark-shadows-2012",
@@ -2823,6 +2827,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
   ],
   "jessica-chastain": [
     "madre-siniestra-2026",
+    "dreams-suenos-2025",
     "dark-phoenix-2019",
     "it-chapter-two-2019",
     "mision-rescate-2015",
@@ -3599,6 +3604,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "nueve-reinas-2000"
   ],
   "liam-neeson": [
+    "la-mangosta-2026",
     "y-donde-esta-el-policia-2025",
     "en-tierra-de-santos-y-pecadores-2023",
     "la-memoria-de-un-asesino-2022",
@@ -3798,6 +3804,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "nine-2009"
   ],
   "marisa-tomei": [
+    "la-mangosta-2026",
     "12-horas-para-sobrevivir-el-inicio-2018",
     "loco-y-estupido-amor-2011",
     "anger-management-2003",
@@ -4334,6 +4341,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "el-profugo-2020"
   ],
   "naomi-watts": [
+    "el-amigo-2024",
     "j-edgar-2011",
     "el-umbral-2005",
     "21-gramos-2003",
@@ -5192,6 +5200,7 @@ export const personProfileCatalogCredits: Record<string, string[]> = {
     "boda-sangrienta-2-2026"
   ],
   "samuel-l-jackson": [
+    "juego-de-traiciones-2026",
     "afterburn-zona-cero-2025",
     "spiral-from-the-book-of-saw-2021",
     "captain-marvel-2019",

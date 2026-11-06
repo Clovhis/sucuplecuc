@@ -1,0 +1,2500 @@
+{
+  "props": {
+    "pageProps": {
+      "initFilm": {
+        "id": 476712,
+        "slug": "making-marie-antoinette",
+        "title": "Making Marie Antoinette",
+        "title_locale": "es-419",
+        "title_upcase": "MAKING MARIE ANTOINETTE",
+        "original_title": "Making Marie Antoinette",
+        "year": 2026,
+        "duration": 86,
+        "stills": {
+          "small": "https://assets.mubicdn.net/images/film/476712/image-w256.jpg?1793211005",
+          "medium": "https://assets.mubicdn.net/images/film/476712/image-w448.jpg?1793211005",
+          "standard": "https://assets.mubicdn.net/images/film/476712/image-w856.jpg?1793211005",
+          "retina": "https://assets.mubicdn.net/images/film/476712/image-w1280.jpg?1793211005",
+          "small_overlaid": "https://assets.mubicdn.net/images/film/476712/image-w512_overlaid.jpg?1793211005",
+          "large_overlaid": "https://assets.mubicdn.net/images/film/476712/image-w1504_overlaid.jpg?1793211005",
+          "standard_push": "https://assets.mubicdn.net/images/film/476712/image-w856_two_one.jpg?1793211005"
+        },
+        "still_focal_point": {
+          "x": 0.77,
+          "y": 0.41
+        },
+        "hd": true,
+        "average_colour_hex": "71605A",
+        "trailer_url": "https://trailers.mubicdn.net/476712/optimised/1080p-t-making-marie-antoinette_es_419_1793899747.mp4",
+        "trailer_id": 149066,
+        "popularity": 40,
+        "web_url": "https://mubi.com/films/making-marie-antoinette",
+        "genres": [
+          "Documental"
+        ],
+        "average_rating": 4.4,
+        "average_rating_out_of_ten": 8.8,
+        "number_of_ratings": 94,
+        "mubi_release": true,
+        "should_use_safe_still": false,
+        "still_url": "https://images.mubicdn.net/images/film/476712/cache-1144546-1793211005/image-w1280.jpg",
+        "critic_review_rating": 4.363636363636363,
+        "content_rating": {
+          "label": "caution",
+          "rating_code": "PRECAUCIÓN",
+          "description": "Contiene material que puede no ser adecuado para niños o adolescentes.",
+          "icon_url": null,
+          "label_hex_color": "e05d04"
+        },
+        "episode": null,
+        "short_synopsis": "Eleanor Coppola dirige su cámara hacia su hija, Sofia, en el rodaje de Marie Antoinette. Atenta a cada detalle entre bambalinas y en el set, registra la proeza de Sofia al dirigir, con solo 34 años, una película emblemática y reflexiona sobre lo que significa para una madre ver trabajar a su hija.",
+        "short_synopsis_html": "<p>Eleanor Coppola dirige su cámara hacia su hija, Sofia, en el rodaje de <em>Marie Antoinette</em>. Atenta a cada detalle entre bambalinas y en el set, registra la proeza de Sofia al dirigir, con solo 34 años, una película emblemática y reflexiona sobre lo que significa para una madre ver trabajar a su hija.</p>",
+        "historic_countries": [
+          "Estados Unidos"
+        ],
+        "portrait_image": null,
+        "title_treatment_url": "https://images.mubicdn.net/images/artworks/1031041/cache-1031041-1791468622/images-original.png",
+        "experiment_stills": null,
+        "experiment_stills_multi": null,
+        "default_editorial": "En este amoroso documental, Eleanor Coppola, directora de Corazones en tinieblas, devela la magia de un rodaje al detenerse en la destreza de su realización. Con reflexiones sobre los logros de ambas, Making Marie Antoinette acompaña la película biográfica de su hija y rebosa amor de madre.",
+        "default_editorial_html": "<p>En este amoroso documental, Eleanor Coppola, directora de <em>Corazones en tinieblas</em>, devela la magia de un rodaje al detenerse en la destreza de su realización. Con reflexiones sobre los logros de ambas, <em>Making Marie Antoinette</em> acompaña la película biográfica de su hija y rebosa amor de madre.</p>",
+        "cast_members_count": 14,
+        "industry_events_count": 5,
+        "comments_count": 2,
+        "mubi_go_highlighted": false,
+        "trailer_duration": 31,
+        "trailer_created_at": "2026-11-05T17:32:24Z",
+        "optimised_trailers": [
+          {
+            "url": "https://trailers.mubicdn.net/476712/optimised/240p-t-making-marie-antoinette_es_419_1793899747.mp4",
+            "profile": "240p"
+          },
+          {
+            "url": "https://trailers.mubicdn.net/476712/optimised/720p-t-making-marie-antoinette_es_419_1793899747.mp4",
+            "profile": "720p"
+          },
+          {
+            "url": "https://trailers.mubicdn.net/476712/optimised/1080p-t-making-marie-antoinette_es_419_1793899747.mp4",
+            "profile": "1080p"
+          }
+        ],
+        "directors": [
+          {
+            "name": "Eleanor Coppola",
+            "name_upcase": "ELEANOR COPPOLA",
+            "slug": "eleanor-coppola"
+          }
+        ],
+        "consumable": {
+          "film_id": 476712,
+          "available_at": "2026-11-06T03:00:00Z",
+          "availability": "live",
+          "availability_ends_at": "2041-10-23T03:00:00Z",
+          "expires_at": "2041-10-23T15:00:00Z",
+          "film_date_message": null,
+          "early_access_film_date_message": null,
+          "offered": [
+            {
+              "type": "catalogue",
+              "download_availability": null
+            }
+          ],
+          "exclusive": true,
+          "permit_download": true,
+          "playback_languages": {
+            "audio_options": [
+              "Inglés"
+            ],
+            "subtitle_options": [
+              "Español (Latinoamérica)",
+              "Inglés (SDH)",
+              "Alemán",
+              "Español (Europa)",
+              "Francés",
+              "Italiano",
+              "Neerlandés",
+              "Portugués",
+              "Turco"
+            ],
+            "media_options": {
+              "duration": 5174,
+              "hd": true
+            },
+            "media_features": [
+              "HD",
+              "5.1"
+            ],
+            "extended_audio_options": [
+              "Inglés (5.1)"
+            ],
+            "original_audio_language": "Inglés"
+          }
+        },
+        "press_quote": null,
+        "star_rating": null,
+        "award": null,
+        "series": null,
+        "content_warnings": [
+          {
+            "id": 5,
+            "name": "iluminación estroboscópica",
+            "key": "strobe_lighting"
+          },
+          {
+            "id": 17,
+            "name": "imágenes detalladas de heridas",
+            "key": "injury_detail"
+          }
+        ],
+        "artworks": [
+          {
+            "format": "cover_artwork_horizontal",
+            "locale": "es-419",
+            "image_url": "https://images.mubicdn.net/images/artworks/1031001/cache-1031001-1793196491/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "cover_artwork_vertical",
+            "locale": "es-419",
+            "image_url": "https://images.mubicdn.net/images/artworks/1031010/cache-1031010-1793197132/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "cover_artwork_box",
+            "locale": "es-419",
+            "image_url": "https://images.mubicdn.net/images/artworks/1031019/cache-1031019-1793197501/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "content_logo_monochromatic",
+            "locale": "es-419",
+            "image_url": "https://images.mubicdn.net/images/artworks/1031041/cache-1031041-1791468622/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "tile_artwork",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/1036023/cache-1036023-1793211047/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "cover_artwork_box_episode",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/1036024/cache-1036024-1793211051/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "centered_background",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/1036025/cache-1036025-1793211056/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "centered_background_small",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/1036026/cache-1036026-1793211059/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "tvos_cover_artwork",
+            "locale": "es-419",
+            "image_url": "https://images.mubicdn.net/images/artworks/1036032/cache-1036032-1793211064/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "format": "cover_artwork_box_series",
+            "locale": "es-419",
+            "image_url": "https://images.mubicdn.net/images/artworks/1036040/cache-1036040-1793211094/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0
+            }
+          }
+        ],
+        "highlighted_industry_event_entry": null
+      },
+      "previewClipToShow": null,
+      "showGiftModal": false,
+      "isGifted": false,
+      "isShare": false,
+      "showRateAndReviewModal": false,
+      "_sentryTraceData": "c3a544d49e914d7f9ff58210a7b957d0-8e102de0a3614b3e-0",
+      "_sentryBaggage": "sentry-environment=production,sentry-release=2026.11.06.1018-e814b7e,sentry-public_key=3b8c3e6654eafb37822681af4549d1bd,sentry-trace_id=c3a544d49e914d7f9ff58210a7b957d0,sentry-org_id=535082,sentry-sampled=false,sentry-sample_rand=0.7158156047041269,sentry-sample_rate=0"
+    },
+    "user": null,
+    "isRedirecting": false,
+    "httpContext": {
+      "accept-language": "es",
+      "Client-Country": "AR"
+    },
+    "initialState": {
+      "appState": {
+        "showOnboardingModal": false,
+        "showRateFilmModal": false,
+        "hideTopNav": false,
+        "manageFilmListModal": {
+          "show": false,
+          "filmId": null,
+          "seriesId": null,
+          "snowplowElement": null
+        },
+        "ratingModal": {
+          "show": false,
+          "filmId": null,
+          "snowplowElement": null
+        },
+        "onboardingContext": {},
+        "onboardingConfig": {
+          "country": "AR"
+        },
+        "onboardingFullPageContext": {},
+        "deviceInfo": {
+          "userAgentPresent": null,
+          "isAndroid": null,
+          "isIOS": null,
+          "isSafari": null,
+          "isMobile": null,
+          "browser": null,
+          "browserVersion": "",
+          "operatingSystem": null,
+          "operatingSystemVersion": "",
+          "isMobileSafari": null
+        },
+        "httpContext": {
+          "accept-language": "es",
+          "Client-Country": "AR"
+        },
+        "userHasInteractedWithPage": false,
+        "snowplowInitialised": false,
+        "promoBannerCookies": {},
+        "promoPromoted": null,
+        "viewingTrackingIntervalSeconds": 480,
+        "trialsEnabled": true,
+        "contentWarningPreferenceEnabled": true,
+        "filterBrowseFilmsByNowShowing": false,
+        "pageState": {
+          "splash": {
+            "videos": {
+              "h264": {
+                "mobile_url": "https://assets.mubicdn.net/splash-videos/42/1790975541_video_h264_mobile.mp4",
+                "tablet_url": "https://assets.mubicdn.net/splash-videos/42/1790975541_video_h264_tablet.mp4",
+                "desktop_url": "https://assets.mubicdn.net/splash-videos/42/1790975541_video_h264_desktop.mp4"
+              },
+              "h265": {
+                "mobile_url": "https://assets.mubicdn.net/splash-videos/42/1790975541_video_h265_mobile.mp4",
+                "tablet_url": "https://assets.mubicdn.net/splash-videos/42/1790975541_video_h265_tablet.mp4",
+                "desktop_url": "https://assets.mubicdn.net/splash-videos/42/1790975541_video_h265_desktop.mp4"
+              }
+            },
+            "stills": {
+              "mobile_url": "https://assets.mubicdn.net/splash-videos/42/1790953028_still_mobile.jpg",
+              "tablet_url": "https://assets.mubicdn.net/splash-videos/42/1790953028_still_tablet.jpg",
+              "desktop_url": "https://assets.mubicdn.net/splash-videos/42/1790953028_still_desktop.jpg"
+            }
+          },
+          "vanityPath": {
+            "pageType": null
+          },
+          "programNotes": {
+            "id": null
+          }
+        },
+        "googleTagsInit": false,
+        "mubiGoEnabledCountry": false,
+        "premiereWaitlistConfig": null,
+        "cookieYesBannerInitialised": false,
+        "blipCollectorUrl": null,
+        "isPlayerInitialLoading": false
+      },
+      "user": {
+        "userIsInitialisedOnClient": false,
+        "geoLocation": "AR",
+        "countryFullTimeZone": "America/Argentina/Buenos_Aires",
+        "acceptedLanguages": "*",
+        "currentLanguage": "es",
+        "useUsEnglish": false,
+        "isAuthenticated": false,
+        "isAdmin": false,
+        "activeSubscriber": false,
+        "user": null,
+        "usersFilmRatings": {},
+        "usersSeriesRatings": {},
+        "watchList": {},
+        "seriesWatchList": {},
+        "subscriptionPlans": {
+          "month": {
+            "name": "1 mes",
+            "display_name": "mensual",
+            "includes_mubi_go": false,
+            "price": "ARS $9.999",
+            "price_in_cents": 999900,
+            "price_currency": "ARS",
+            "effective_monthly_price": "ARS $9.999",
+            "savings_percent": null,
+            "renewal_period": "month",
+            "days": 30,
+            "trial_days": 7,
+            "selection_key": "month",
+            "plan_features": {}
+          },
+          "year": {
+            "name": "12 mes",
+            "display_name": "anual ",
+            "includes_mubi_go": false,
+            "price": "ARS $82.800",
+            "price_in_cents": 8280000,
+            "price_currency": "ARS",
+            "effective_monthly_price": "ARS $6.900",
+            "savings_percent": "31%",
+            "renewal_period": "year",
+            "days": 360,
+            "trial_days": 7,
+            "selection_key": "year",
+            "plan_features": {}
+          },
+          "month_student": {
+            "name": "1 mes",
+            "display_name": "mensual",
+            "includes_mubi_go": false,
+            "price": "ARS $6.499",
+            "price_in_cents": 649900,
+            "price_currency": "ARS",
+            "effective_monthly_price": "ARS $6.499",
+            "savings_percent": null,
+            "renewal_period": "month",
+            "days": 30,
+            "trial_days": 30,
+            "selection_key": "month_student",
+            "plan_features": {}
+          }
+        },
+        "subscriptionPlansForUser": {},
+        "experiments": [],
+        "dismissedBanners": {},
+        "magazineSubStatus": "",
+        "magazineIssueEntitlements": [],
+        "paymentMethod": null,
+        "localCookieYesCookieConsent": null,
+        "subscriptionCancellation": null,
+        "closeToUSCity": false
+      },
+      "filmTile": {
+        "previewClipPlayer": {
+          "videoElementId": null,
+          "previewClipSrcUrl": null,
+          "status": null,
+          "isMuted": true,
+          "hasSubs": false,
+          "previewClipId": null,
+          "filmId": null,
+          "duration": 0,
+          "overrideConfig": null
+        }
+      },
+      "showingSections": {
+        "showingLayoutItems": null,
+        "showingSections": {}
+      },
+      "list": {
+        "usersLists": [],
+        "lists": {},
+        "listSlugToId": {},
+        "pagesOfListFilmsByList": {},
+        "pagesOfFollowersByList": {}
+      },
+      "followings": {
+        "followings": {},
+        "followeeIdToFollowingIdLookup": {}
+      },
+      "favorite": {
+        "favoritesByListId": {},
+        "favoritesByRatingId": {}
+      },
+      "film": {
+        "films": {
+          "476712": {
+            "id": 476712,
+            "slug": "making-marie-antoinette",
+            "title": "Making Marie Antoinette",
+            "title_locale": "es-419",
+            "title_upcase": "MAKING MARIE ANTOINETTE",
+            "original_title": "Making Marie Antoinette",
+            "year": 2026,
+            "duration": 86,
+            "stills": {
+              "small": "https://assets.mubicdn.net/images/film/476712/image-w256.jpg?1793211005",
+              "medium": "https://assets.mubicdn.net/images/film/476712/image-w448.jpg?1793211005",
+              "standard": "https://assets.mubicdn.net/images/film/476712/image-w856.jpg?1793211005",
+              "retina": "https://assets.mubicdn.net/images/film/476712/image-w1280.jpg?1793211005",
+              "small_overlaid": "https://assets.mubicdn.net/images/film/476712/image-w512_overlaid.jpg?1793211005",
+              "large_overlaid": "https://assets.mubicdn.net/images/film/476712/image-w1504_overlaid.jpg?1793211005",
+              "standard_push": "https://assets.mubicdn.net/images/film/476712/image-w856_two_one.jpg?1793211005"
+            },
+            "still_focal_point": {
+              "x": 0.77,
+              "y": 0.41
+            },
+            "hd": true,
+            "average_colour_hex": "71605A",
+            "trailer_url": "https://trailers.mubicdn.net/476712/optimised/1080p-t-making-marie-antoinette_es_419_1793899747.mp4",
+            "trailer_id": 149066,
+            "popularity": 40,
+            "web_url": "https://mubi.com/films/making-marie-antoinette",
+            "genres": [
+              "Documental"
+            ],
+            "average_rating": 4.4,
+            "average_rating_out_of_ten": 8.8,
+            "number_of_ratings": 94,
+            "mubi_release": true,
+            "should_use_safe_still": false,
+            "still_url": "https://images.mubicdn.net/images/film/476712/cache-1144546-1793211005/image-w1280.jpg",
+            "critic_review_rating": 4.363636363636363,
+            "content_rating": {
+              "label": "caution",
+              "rating_code": "PRECAUCIÓN",
+              "description": "Contiene material que puede no ser adecuado para niños o adolescentes.",
+              "icon_url": null,
+              "label_hex_color": "e05d04"
+            },
+            "episode": null,
+            "short_synopsis": "Eleanor Coppola dirige su cámara hacia su hija, Sofia, en el rodaje de Marie Antoinette. Atenta a cada detalle entre bambalinas y en el set, registra la proeza de Sofia al dirigir, con solo 34 años, una película emblemática y reflexiona sobre lo que significa para una madre ver trabajar a su hija.",
+            "short_synopsis_html": "<p>Eleanor Coppola dirige su cámara hacia su hija, Sofia, en el rodaje de <em>Marie Antoinette</em>. Atenta a cada detalle entre bambalinas y en el set, registra la proeza de Sofia al dirigir, con solo 34 años, una película emblemática y reflexiona sobre lo que significa para una madre ver trabajar a su hija.</p>",
+            "historic_countries": [
+              "Estados Unidos"
+            ],
+            "portrait_image": null,
+            "title_treatment_url": "https://images.mubicdn.net/images/artworks/1031041/cache-1031041-1791468622/images-original.png",
+            "experiment_stills": null,
+            "experiment_stills_multi": null,
+            "default_editorial": "En este amoroso documental, Eleanor Coppola, directora de Corazones en tinieblas, devela la magia de un rodaje al detenerse en la destreza de su realización. Con reflexiones sobre los logros de ambas, Making Marie Antoinette acompaña la película biográfica de su hija y rebosa amor de madre.",
+            "default_editorial_html": "<p>En este amoroso documental, Eleanor Coppola, directora de <em>Corazones en tinieblas</em>, devela la magia de un rodaje al detenerse en la destreza de su realización. Con reflexiones sobre los logros de ambas, <em>Making Marie Antoinette</em> acompaña la película biográfica de su hija y rebosa amor de madre.</p>",
+            "cast_members_count": 14,
+            "industry_events_count": 5,
+            "comments_count": 2,
+            "mubi_go_highlighted": false,
+            "trailer_duration": 31,
+            "trailer_created_at": "2026-11-05T17:32:24Z",
+            "optimised_trailers": [
+              {
+                "url": "https://trailers.mubicdn.net/476712/optimised/240p-t-making-marie-antoinette_es_419_1793899747.mp4",
+                "profile": "240p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/476712/optimised/720p-t-making-marie-antoinette_es_419_1793899747.mp4",
+                "profile": "720p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/476712/optimised/1080p-t-making-marie-antoinette_es_419_1793899747.mp4",
+                "profile": "1080p"
+              }
+            ],
+            "directors": [
+              {
+                "name": "Eleanor Coppola",
+                "name_upcase": "ELEANOR COPPOLA",
+                "slug": "eleanor-coppola"
+              }
+            ],
+            "consumable": {
+              "film_id": 476712,
+              "available_at": "2026-11-06T03:00:00Z",
+              "availability": "live",
+              "availability_ends_at": "2041-10-23T03:00:00Z",
+              "expires_at": "2041-10-23T15:00:00Z",
+              "film_date_message": null,
+              "early_access_film_date_message": null,
+              "offered": [
+                {
+                  "type": "catalogue",
+                  "download_availability": null
+                }
+              ],
+              "exclusive": true,
+              "permit_download": true,
+              "playback_languages": {
+                "audio_options": [
+                  "Inglés"
+                ],
+                "subtitle_options": [
+                  "Español (Latinoamérica)",
+                  "Inglés (SDH)",
+                  "Alemán",
+                  "Español (Europa)",
+                  "Francés",
+                  "Italiano",
+                  "Neerlandés",
+                  "Portugués",
+                  "Turco"
+                ],
+                "media_options": {
+                  "duration": 5174,
+                  "hd": true
+                },
+                "media_features": [
+                  "HD",
+                  "5.1"
+                ],
+                "extended_audio_options": [
+                  "Inglés (5.1)"
+                ],
+                "original_audio_language": "Inglés"
+              }
+            },
+            "press_quote": null,
+            "star_rating": null,
+            "award": null,
+            "series": null,
+            "content_warnings": [
+              {
+                "id": 5,
+                "name": "iluminación estroboscópica",
+                "key": "strobe_lighting"
+              },
+              {
+                "id": 17,
+                "name": "imágenes detalladas de heridas",
+                "key": "injury_detail"
+              }
+            ],
+            "artworks": [
+              {
+                "format": "cover_artwork_horizontal",
+                "locale": "es-419",
+                "image_url": "https://images.mubicdn.net/images/artworks/1031001/cache-1031001-1793196491/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "cover_artwork_vertical",
+                "locale": "es-419",
+                "image_url": "https://images.mubicdn.net/images/artworks/1031010/cache-1031010-1793197132/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "cover_artwork_box",
+                "locale": "es-419",
+                "image_url": "https://images.mubicdn.net/images/artworks/1031019/cache-1031019-1793197501/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "content_logo_monochromatic",
+                "locale": "es-419",
+                "image_url": "https://images.mubicdn.net/images/artworks/1031041/cache-1031041-1791468622/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "tile_artwork",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/1036023/cache-1036023-1793211047/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "cover_artwork_box_episode",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/1036024/cache-1036024-1793211051/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "centered_background",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/1036025/cache-1036025-1793211056/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "centered_background_small",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/1036026/cache-1036026-1793211059/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "tvos_cover_artwork",
+                "locale": "es-419",
+                "image_url": "https://images.mubicdn.net/images/artworks/1036032/cache-1036032-1793211064/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              {
+                "format": "cover_artwork_box_series",
+                "locale": "es-419",
+                "image_url": "https://images.mubicdn.net/images/artworks/1036040/cache-1036040-1793211094/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              }
+            ],
+            "highlighted_industry_event_entry": null
+          }
+        },
+        "slugToIdLookup": {
+          "making-marie-antoinette": 476712
+        }
+      },
+      "playbackLanguages": {
+        "playbackLanguagesByFilmId": {}
+      },
+      "notebookCover": {
+        "notebookCover": null
+      },
+      "notebookPost": {
+        "notebookPosts": {},
+        "homepagePostsPages": {
+          "pages": {},
+          "currentPage": 0
+        },
+        "allPostsPages": {
+          "pages": {},
+          "currentPage": 0
+        },
+        "authorPostsPages": {},
+        "tagPostsPages": {}
+      },
+      "notification": {
+        "notifications": null
+      },
+      "collection": {
+        "collectionFilmGroups": {},
+        "slugToIdLookup": {}
+      },
+      "criticReviews": {
+        "criticReviewsById": {},
+        "criticReviewHighlightIdsByFilmId": {},
+        "criticReviewTotalsByFilmId": {}
+      },
+      "castMembers": {
+        "castMembers": {},
+        "slugToIdLookup": {}
+      },
+      "comments": {
+        "notebookPost": {},
+        "list": {}
+      },
+      "viewings": {
+        "usersFilmViewingsByFilmId": {}
+      },
+      "banners": {
+        "brazeBanner": {
+          "detail": null,
+          "isPreview": false,
+          "card": null,
+          "updatedAt": null
+        },
+        "userStateBanners": null,
+        "userFeedbackBanner": {
+          "message": null,
+          "isError": null
+        }
+      },
+      "paymentGateway": {
+        "creditCard": {
+          "paymentGatewayName": null,
+          "stripePublicKey": null,
+          "dlocalPublicKey": null,
+          "showCreditCardFields": {
+            "billingZipCode": null,
+            "cardholderName": null,
+            "documentInput": null
+          }
+        },
+        "paypal": {
+          "enabled": null,
+          "paypalBraintreeToken": null
+        }
+      },
+      "experiments": {
+        "experiments": []
+      },
+      "retrospective": {
+        "isMobileAppWebView": null,
+        "insetTop": null,
+        "insetBottom": null,
+        "platform": null
+      }
+    },
+    "__lang": "es",
+    "__namespaces": {
+      "common": {
+        "common": {
+          "banners": {
+            "annual_survey": "¡Participa en nuestra encuesta anual y gana un año entero de MUBI!",
+            "annual_survey_final": "¡Última oportunidad! ¡Participa en nuestra encuesta anual y gana en grande!",
+            "braze_email_subscription": {
+              "subscription_failed": "No pudimos suscribirte a nuestro boletín. Inténtalo de nuevo, ¡nos encantaría mantenerte informado!",
+              "subscription_success": "¡Gracias! Ya te suscribiste a nuestro boletín"
+            },
+            "cdm_browser_warning": "Por favor actualiza tu navegador antes del 6 de diciembre para seguir viendo MUBI.",
+            "cdm_expiry": {
+              "link_text": "página de soporte técnico",
+              "old_browser_version_message": "Por favor actualiza tu navegador para seguir viendo MUBI. Visita nuestra {{link_text}} para obtener ayuda.",
+              "windows_7_or_8_message": "Actualiza a Windows 10 para seguir viendo MUBI. Visita nuestra {{link_text}} para obtener ayuda."
+            },
+            "earthquake": "AYUDA A LAS VÍCTIMAS DEL TERREMOTO {{here}}.",
+            "earthquake_here": "AQUÍ",
+            "failed_payment": {
+              "banner_text": "Hubo un problema con tu pago más reciente.",
+              "cta": "Por favor {{update_payment_details_text}}.",
+              "update_payment_details_text": "actualiza tus datos de pago"
+            },
+            "gifting_2024_xmas": {
+              "link": "REGALA  MUBI",
+              "text": "REGALA LAS MEJORES PELÍCULAS DEL MUNDO. {{link}}"
+            },
+            "mag_upsell": "Reserva tu ejemplar del número 4 de Notebook",
+            "notebook_issue_six": "Quedan pocas copias: reserva ahora tu revista Notebook n°6",
+            "the_substance": {
+              "mubi_release_date": "En MUBI {{date}}",
+              "quote": "{{open_quote_symbol}}Hay que verla para creerla{{close_quote_symbol}}",
+              "title": "La Sustancia"
+            },
+            "three_for_one_upsell": "Ahorra {{savings_percent}}. Pasa a nuestro plan anual.",
+            "us_terms_banner": {
+              "accept": "Aceptar",
+              "contact_us": "Ponte en contacto con {{support_email}} para cualquier consulta.",
+              "heading": "Nuevos términos y política de privacidad",
+              "privacy_policy": "Política de privacidad",
+              "terms": "Términos",
+              "terms_accept_copy": "Actualizamos nuestros {{terms}} y {{privacy_policy}}. Por favor, acepta para seguir viendo.",
+              "terms_accept_copy_non_subscriber": "Actualizamos nuestros {{terms}} y {{privacy_policy}}. Por favor, acepta para continuar usando tu cuenta de MUBI."
+            }
+          },
+          "brand_names": {
+            "mubi": "MUBI",
+            "mubi_classic": "MUBI Classic",
+            "mubi_go": "MUBI GO"
+          },
+          "buttons": {
+            "back": "Volver",
+            "cancel": "Cancelar",
+            "continue": "Continuar",
+            "copied_link": "¡Enlace copiado!",
+            "copy_link": "Copiar enlace",
+            "explore_collection": "Explorar Colección",
+            "follow": "Seguir",
+            "following": "Siguiendo",
+            "free": "Gratis",
+            "get_started": "Empezar",
+            "go_back": "Volver",
+            "load_more": "Cargar más",
+            "more": "Más",
+            "read_more": "Leer más",
+            "rewatch_trailer": "Volver a ver tráiler",
+            "save": "Guardar",
+            "see_all": "Ver todo",
+            "share": "Compartir",
+            "show_all": "Ver todo",
+            "submit": "Enviar",
+            "unfollow": "Dejar de seguir",
+            "update": "Actualizar",
+            "watch": "VER",
+            "watch_film": "Ver película",
+            "watch_now": "Ver ahora",
+            "watch_trailer": "Tráiler",
+            "watch_trailer_collection": "Tráiler de colección"
+          },
+          "cities": {
+            "atlanta": "Atlanta",
+            "berlin": "Berlín",
+            "boston": "Boston",
+            "chicago": "Chicago",
+            "cologne": "Colonia",
+            "dallas": "Dallas",
+            "denver": "Denver",
+            "frankfurt": "Fráncfort",
+            "hamburg": "Hamburgo",
+            "los_angeles": "Los Ángeles",
+            "munich": "Múnich",
+            "new_york_city": "Ciudad de Nueva York",
+            "portland": "Portland",
+            "san_diego": "San Diego",
+            "san_francisco": "San Francisco",
+            "seattle": "Seattle",
+            "washington_dc": "Washington, DC"
+          },
+          "collection": "colección",
+          "collection_tile": {
+            "film_count": {
+              "one": "{{count}} película",
+              "other": "{{count}} películas"
+            },
+            "series_count": {
+              "one": "{{count}} serie",
+              "other": "{{count}} series"
+            },
+            "view_collection": "Ver colección"
+          },
+          "cookie_consent": {
+            "allow": "Aceptar",
+            "banner_text": "Usamos cookies para poder ofrecerte la mejor experiencia en nuestro sitio web. <a href=\"/privacy_policy\">Haz clic aquí</a> para ver más información.",
+            "reject": "Rechazar"
+          },
+          "divider": {
+            "or": "o"
+          },
+          "email_address": "Dirección de email",
+          "episode_number": "Episodio {{number}}",
+          "errors": {
+            "404_heading": "No hay nada que ver aquí",
+            "404_message": "Lo sentimos, la página que buscas no existe.",
+            "404_sorry": "Lo sentimos, no encontramos la página que buscas.",
+            "404_title": "404 No encontrado",
+            "500_heading": "Algo falla",
+            "500_message": "Huy, ha habido un problema. Hemos avisado a nuestro equipo de soporte.",
+            "500_sorry": "Lo sentimos, esta página no funciona en este momento. {{linebreak}}Veremos cuál es el problema lo antes posible.",
+            "500_title": "500 Error Interno del Servidor",
+            "authentication_required": "Inicia sesión para continuar",
+            "cta": "Ir a cartelera",
+            "generic": "¡Huy! Algo va mal. Inténtalo de nuevo.",
+            "ineligible_student_notice": "Ya tienes una suscripción de estudiante. Feliz visionado.",
+            "ineligible_student_notice_non_student": "Lo sentimos, no eres elegible para la membresía de estudiante.",
+            "invalid_email": "Lo sentimos, esta no es una dirección de correo electrónico válida",
+            "need_help": "¿Necesitas ayuda? Ve a {{support_page_link}}",
+            "private_profile": "Este perfil es privado.",
+            "support_page": "Página de soporte técnico",
+            "title_generic": "Error"
+          },
+          "faq": {
+            "faq": "Preguntas frecuentes",
+            "faq_link": "¿Alguna pregunta? {{visit_link}}",
+            "visit_link": "Visita nuestras {{faq}}"
+          },
+          "film_labels": {
+            "and_x_more": "y {{count}} más",
+            "a_film_by": "una película  de",
+            "coming_in_days": "Disponible dentro de {{count}} día",
+            "coming_in_days_other": "Disponible dentro de {{count}} días",
+            "coming_on_date": "Disponible {{date}}",
+            "exclusive": "Exclusiva",
+            "expiring_at_midnight_in_multi_tz_country": "Expira a medianoche {{tz_code}}",
+            "expiring_at_midnight_in_single_tz_country": "Expira a medianoche",
+            "leaving_in_days": "Solo le queda {{count}} día",
+            "leaving_in_days_other": "Le quedan {{count}} días",
+            "mubi_release": "Un Estreno de MUBI",
+            "series": "Serie",
+            "special_discovery": "Descubrimiento Especial",
+            "watch_early_with_premiere": "Míralo antes\ncon Premiere"
+          },
+          "film_meta": {
+            "audio_languages": "Idiomas de audio: {{languages}}",
+            "dolby_atmos": "Dolby Atmos",
+            "duration": "{{count}} minuto",
+            "duration_other": "{{count}} minutos",
+            "five_one_audio": "Sonido envolvente 5.1",
+            "four_k": "Ultra HD 4K",
+            "high_definition": "Alta definición",
+            "subtitles": "Subtítulos: {{languages}}"
+          },
+          "find_fb_friends": {
+            "done_close": "Hecho",
+            "done_following_all": "¡Hecho!",
+            "error_try_again": "Error, inténtalo de nuevo.",
+            "find_friends": "Buscar amigos",
+            "follow_all": "Seguir todo",
+            "friend_on_mubi": "{{count}} persona que conoces está en MUBI",
+            "friend_on_mubi_other": "{{count}} personas que conoces están en mubi",
+            "invite_friends": "Invitar a amigos",
+            "see_if_friends_on_mubi": "Mira a ver si alguno de tus contactos de Facebook está en MUBI",
+            "you_are_first": "Ninguno de tus contactos está en MUBI. ¡Es hora de alegrarles el día!"
+          },
+          "flash_sale_banner": {
+            "body_text": "Nuestra mayor oferta del año está aquí. Obtén 1 año de MUBI por solo {{price}}. Oferta por tiempo limitado.",
+            "body_text_ar": "Nuestra mayor oferta del año está aquí. Obtené 1 año de MUBI por solo {{price}}. Oferta por tiempo limitado.",
+            "body_text_in": "Nuestra mayor oferta del año está aquí. Obtén 1 año de MUBI GO por solo {{price}}. Oferta por tiempo limitado.",
+            "body_text_uk": "Nuestra mayor oferta del año está aquí. Obtén 1 año de MUBI por solo {{price}}. Oferta por tiempo limitado."
+          },
+          "footer": {
+            "cookie_prefs": "Preferencias para cookies",
+            "follow_us_on": "Síguenos en",
+            "memberships": "Suscripciones",
+            "privacy": "Política de privacidad",
+            "scan_to_get_the_app": "Escanea para obtener la aplicación",
+            "terms": "Terminos",
+            "your_privacy_choices": "Tus opciones de privacidad"
+          },
+          "gift_flow_banner": {
+            "button_cta": "Regala MUBI.",
+            "button_cta_now": "Regala MUBI ahora.",
+            "description": "Haz que el año de alguien sea especial. Regala gran cine desde {{three_month_price}}."
+          },
+          "gift_flow_promo_banner": "El placer del cine es compartirlo. Regala MUBI.",
+          "header_nav": {
+            "collection_total_episodes": "1 episodio",
+            "collection_total_episodes_other": "{{count}} episodios",
+            "collection_total_episodes_singular": "1 episodio",
+            "collection_total_films": "1 película",
+            "collection_total_films_other": "{{count}} películas",
+            "collection_total_films_singular": "1 película",
+            "login": "Iniciar sesión",
+            "menu": "Menú",
+            "notebook": "Notebook",
+            "now_showing": "En Cartelera",
+            "profile": "Perfil",
+            "profile_pic_alt": "Tu foto de perfil",
+            "search_placeholder": "Buscar",
+            "suggested_films": "Sugerencias",
+            "total_results_for_search": "{{count}} resultado para:",
+            "total_results_for_search_other": "{{count}} resultados para:",
+            "your_profile": "Tu perfil"
+          },
+          "image_uploader": {
+            "success_notice": "Tu {{image_name}} se ha publicado correctamente"
+          },
+          "language_selector": {
+            "title": "Seleccionar Idioma"
+          },
+          "list_languages": {
+            "more": "{{count}} más"
+          },
+          "list_tile": {
+            "by_name": "de {{name}}",
+            "films": "Películas",
+            "followers": "Seguidores",
+            "following_list": "Lista de seguimiento",
+            "follow_list": "Lista de seguimiento",
+            "unfollow_list": "Dejar de seguir"
+          },
+          "locale_notice": {
+            "locale": "español",
+            "notice": "Esta página también está disponible en",
+            "notice_full": "Esta página también está disponible en {{language}}",
+            "view_locale": "Ver en {{language}}"
+          },
+          "marketing_email_modal": {
+            "body": "Suscríbete a nuestro boletín para recibir las últimas noticias de nuestras películas cuidadosamente seleccionadas, nuestras recomendaciones de películas, así como grandes historias sobre el mundo del cine.",
+            "confirm": "Confirmar",
+            "consent": "Acepto recibir emails con noticias, promociones e información.",
+            "dont_show_again": "No mostrar de nuevo"
+          },
+          "notebook_banner": "Sólo por tiempo limitado: Reserva ahora tu ejemplar de la edición N° 2 de la revista NOTEBOOK.",
+          "notifications": {
+            "header": "Notificaciones",
+            "none": "No hay nuevas notificaciones."
+          },
+          "now_showing_no_results": "Lo sentimos, no encontramos una película o serie en cartelera que coincida con tu búsqueda.",
+          "now_showing_switch_selector": {
+            "all_films": "Todas las películas",
+            "now_showing": "En cartelera"
+          },
+          "pitch_banner": {
+            "get_started": "Empezar",
+            "hand_picked": "Ve cine realmente grandioso en streaming.",
+            "mubi_pitch_short": "Películas hermosas e interesantes",
+            "onboarding_offer": {
+              "discount_months": "Descubre lo mejor del cine. Ahorra {{discount}} durante {{month}} meses.",
+              "discount_year": "Descubre lo mejor del cine. Ahorra {{discount}} durante un año.",
+              "fixed_months": "Descubre lo mejor del cine. Obtén {{month}} meses por {{price}}.",
+              "fixed_one_month": "Descubre el mejor cine. Obtén 1 mes por solo {{price}}.",
+              "fixed_year": "Descubre lo mejor del cine. Obtén 1 año por solamente {{price}}."
+            },
+            "see_whats_playing": "Entérate de lo que hay en cartelera",
+            "start_watching_now": "¿Quieres empezar a verla ahora?",
+            "want_to_watch_now": "¿Quieres ver esta película ahora?"
+          },
+          "report_button": {
+            "cancel_report": "Cancelar reporte",
+            "confirm": "Nuestros moderadores revisarán este contenido. ¿Seguro que quieres denunciarlo como inapropiado?",
+            "report": "Denunciar este contenido",
+            "reported": "Denuncia enviada",
+            "report_cancelled": "Denuncia cancelada"
+          },
+          "search_results": {
+            "cast_members": "Reparto y equipo",
+            "collections": "Colecciones",
+            "films": "Películas y Series",
+            "see_all": "Ver todo"
+          },
+          "select_input": {
+            "sort_by": "Organizar por",
+            "sort_popular": "Más populares",
+            "sort_recent": "Más recientes",
+            "sort_title": "Título (A-Z)",
+            "time_all": "Todos los periodos",
+            "time_month": "Este mes",
+            "time_week": "Esta semana",
+            "time_year": "Este año"
+          },
+          "seo": {
+            "generic_description": "Disfruta del mejor cine estés donde estés. Desde nuevos directores hasta cineastas laureados. Películas de todo el mundo que te transformarán. Puedes verlas ahora en streaming y descargarlas para verlas sin conexión. Comienza hoy mismo tu prueba gratis de 7 días."
+          },
+          "showing": "ahora en cartelera",
+          "step": "PASO {{count}} DE {{total}}",
+          "subheader_nav": {
+            "about": "Acerca de MUBI",
+            "browse": "Explorar",
+            "contribute": "Colaborar",
+            "earn_1_month_free": "Gana un mes gratis",
+            "film_database": "Base de datos cinematográfica",
+            "gift": "Regalar MUBI",
+            "help": "Ayuda",
+            "invite": "Invitar a amigos",
+            "jobs": "Empleo",
+            "logout": "Cerrar sesión",
+            "mubi_editions": "Ediciones MUBI",
+            "notebook_magazine": "Revista Notebook",
+            "premium_membership": "Suscripción Premiere",
+            "settings": "Configuración",
+            "students": "Estudiantes",
+            "terms": "Términos y Privacidad",
+            "view_log": "Mis visionados",
+            "watchlist": "Mi lista",
+            "ways_to_watch": "Formas de Ver"
+          },
+          "subscribe_ctas": {
+            "24_hours_free": "24 horas gratis",
+            "enter_email": "Ingresa tu correo electrónico para comenzar",
+            "first_7_days_free": "Primeros 7 días gratis",
+            "first_7_days_free_renewing_monthly": "Primeros 7 días gratis, luego {{amount}}/mensual.",
+            "four_months_for_four": "Consigue 4 meses por {{amount}}",
+            "legal_turkey_cancel_anytime": "Cancela cuando quieras.",
+            "legal_turkey_free_for_seven": "Empieza a pagar después de 7 días. Cancela en cualquier momento.",
+            "onboarding_offer": {
+              "button_cta_logged_in": "Canjear para ver",
+              "button_cta_logged_out": "Obtener oferta",
+              "for_number_of_months": "Durante {{number_of_months}} meses.",
+              "for_promo_period": "Durante {{promo_period}}",
+              "global_promo_may_25": {
+                "a_month": "al mes.",
+                "menu_cta": "Aprovecha {{amount}} al mes",
+                "payment_intro_heading": "Se te cobrará {{discounted_price}} al mes durante {{promo_period}}.",
+                "price_a_month": "{{amount}} al mes."
+              },
+              "legal_cancel_anytime": "Cancela cuando quieras.",
+              "legal_footer_discount": "Paga {{discount_amount}} al mes durante {{number_of_days}} días y luego {{amount}} al mes.",
+              "legal_footer_discount_per_year": "Paga {{discount_amount}} durante un año, luego {{amount}} al año.",
+              "legal_footer_fixed_discount": "{{amount}} al mes después de {{number_of_days}} días.",
+              "legal_footer_fixed_discount_per_year": "{{amount}} anual después de {{number_of_days}} días.",
+              "legal_terms": "Al hacer clic en '{{button_text}}' indicas que leíste y estuviste de acuerdo con {{terms_link}} y {{privacy_link}}",
+              "per_month": "Al mes.",
+              "save_discount_percentage": "Ahorra {{discount_percentage}}",
+              "save_discount_percentage_per_year": "Ahorra {{discount_percentage}} durante un año",
+              "tax_argentina": "Impuestos no incluidos."
+            },
+            "start_watching": "Empezar a ver",
+            "start_watching_for_only": "Comienza a ver por tan solo {{amount}}/month",
+            "start_your_one_year_for_amount_button": "Consigue 1 año por {{amount}}",
+            "start_your_one_year_for_amount_get_started": "Empezar",
+            "start_your_three_months_for_one": "Consigue 3 meses por {{amount}}",
+            "subscribe": "Suscribirse",
+            "thirty_days_free": "Prueba 30 Días Gratis",
+            "try_7_days_free": "Prueba 7 Días Gratis",
+            "try_7_days_free_renewing_monthly": "Prueba 7 días gratis, luego {{amount}}/mensuales",
+            "try_7_days_free_renewing_monthly_turkey": "Primeros 7 días gratis, luego {{amount}}/month",
+            "try_N_days_free": "Prueba {{days}} días gratis",
+            "upgrade": "Cambiar de plan"
+          },
+          "time": {
+            "just_now": "Ahora mismo"
+          },
+          "viewing_history": {
+            "no_films_text": "Vaya, aún no has visto ninguna película.",
+            "private_page": "Esta página es privada y solo para ti."
+          }
+        }
+      },
+      "onboarding": {
+        "onboarding": {
+          "confirmation": {
+            "all_done": "¡Todo listo!",
+            "done": "Listo.",
+            "email": "Email",
+            "local_currency_issue": "Debido a un problema con tu moneda local, se te ha cobrado nuestro precio en dólares de {{fee}}.",
+            "local_currency_issue_trial": "Debido a un problema con tu moneda local, se te cobrará nuestro precio en dólares de {{fee}}/mes cuando termine tu periodo de prueba.",
+            "local_currency_issue_trial_date": "Debido a un problema con tu moneda local, se te cobrará nuestro precio en dólares de {{fee}}/mes cuando termine tu periodo de prueba el {{trial_end_date}}.",
+            "membership": "Ahora veamos\ngrandes películas",
+            "membership_trial": "Disfruta tu \nmes gratis\nen MUBI",
+            "name": "Nombre",
+            "name_field_info": "¿Cómo quieres que te llamemos?",
+            "rental_success": "Es todo tuyo durante las próximas 48 horas. Disfruta.",
+            "renting": "Gracias por alquilar la película",
+            "start_watching": "Empezar a ver",
+            "start_watching_now": "Empezar a ver películas",
+            "submit_tv_activation": "Hecho",
+            "success": "¡Muy bien!",
+            "success_done": "Todo listo. Muchas gracias.",
+            "success_download": "Descarga la aplicación para usar MUBI GO.",
+            "title_tv_activation": "¡Tu dispositivo está\nahora conectado!",
+            "trial_info": "Tu periodo de prueba terminará el {{trial_end_date}}",
+            "trial_info_turkey": "Tu período gratuito terminará el {{trial_end_date}}",
+            "watch_free_films": "Diviértete viendo gratis películas maravillosas.",
+            "watch_on_desktop": "Ahora puedes ver esta película en tu ordenador, ya sea portátil o de sobremesa.",
+            "welcome": "¡Qué bien que estás aquí!"
+          },
+          "discount_70_off_pitch": {
+            "body": "Seleccionado a mano siempre.\n{{discount_amount}} al mes. Durante 6 meses.\nSin anuncios.",
+            "body_secondary": "{{amount}} al mes después de 6 meses. Cancela en cualquier momento.",
+            "button_cta": "Obtener oferta",
+            "heading": "Ahorra {{save_percentage}} y ve el mejor cine."
+          },
+          "discount_pitch": {
+            "body": "{{discount_amount}} mensual.",
+            "body_for_months": "Durante {{number_of_months}} meses.",
+            "body_for_promo_period": "Durante {{promo_period}}",
+            "body_per_year": "{{discount_amount}} anual.",
+            "body_secondary": "{{amount}} mensual después de {{number_of_months}} meses. Cancela en cualquier momento.",
+            "body_secondary_per_year": "{{amount}} anual después de {{number_of_months}} meses. Cancela en cualquier momento.",
+            "body_secondary_per_year_promo_period": "{{amount}} al año después de {{promo_period}}. Cancela en cualquier momento.",
+            "body_secondary_promo_period": "{{amount}} al mes después de {{promo_period}}. Cancela en cualquier momento.",
+            "button_cta": "Obtener oferta",
+            "hand_picked": "Seleccionado a mano, siempre.",
+            "heading": "Ahorra {{save_percentage}} y ve el mejor cine.",
+            "no_ads": "Sin anuncios."
+          },
+          "download": {
+            "benefits": "Una nueva película cada día.\nSiempre 30 películas entre las que elegir.\nDescarga nuestra aplicación para verlas sin conexión.\nSin anuncios.",
+            "continue_on_web": "Continúa en la web",
+            "pricing_with_trial": "{{amount}} al mes después del periodo de prueba. Puedes cancelar en cualquier momento.",
+            "title": "Disfruta viendo cine\ndel bueno",
+            "title_week": "Una semana gratis\nde MUBI",
+            "title_week_turkey": "MUBI gratis durante los primeros 7 días"
+          },
+          "enter_password": {
+            "login_instruction": "Introduce tu contraseña",
+            "please_choose": "Elige una contraseña para acceder a MUBI.",
+            "signup_instruction": "Elige contraseña",
+            "submit": "Hecho",
+            "title": "Crea una contraseña",
+            "your_password": "Tu contraseña"
+          },
+          "facebook_recovery": {
+            "back": "Volver al inicio de sesión",
+            "header": "Recuperación de inicio de sesión con Facebook",
+            "instruction": "Si has iniciado sesión en MUBI previamente con Facebook, introduce aquí tu dirección de email con la que entras en Facebook y te mandaremos un enlace para crear una contraseña.",
+            "placeholder": "Email",
+            "submit": "Enviar"
+          },
+          "facebook_recovery_success": {
+            "body": "Gracias.\nHemos enviado instrucciones para establecer tu contraseña a:\n{{identifier}}",
+            "header": "Recuperación de inicio de sesión con Facebook",
+            "next": "Volver al inicio de sesión"
+          },
+          "fixed_discount_pitch": {
+            "button": "Obtén {{promo_period}} meses por {{amount}}\n",
+            "button_get_deal": "Obtén la oferta",
+            "secondary": "Cuidadosamente seleccionadas, siempre.\nSin anuncios.",
+            "secondary_with_mubi_go": "Incluye una entrada para ver cine seleccionado a mano \ncada semana, con MUBI GO.",
+            "ternary": "{{amount}} al mes después de {{promo_period}}. Cancela en cualquier momento.",
+            "ternary_year": "Se renueva automáticamente a {{amount}}/cada 360 días. Cancela en cualquier momento.",
+            "title": "{{promo_period}} de películas cuidadosamente seleccionadas. Ahora por tan solo {{amount}}.",
+            "title_limited_time": "{{promo_period}} de películas.\nPor tan solo {{amount}}.\n",
+            "title_year": "Un año entero de películas.\nAhora por tan solo {{amount}}."
+          },
+          "forgot_password": {
+            "back": "Volver al inicio de sesión",
+            "copy": "Escribe tu email. Te enviaremos un correo con un enlace para restablecer tu contraseña.",
+            "copy_identifier": "Ingresa abajo el email con el que te registraste. Te enviaremos un enlace para restablecer tu contraseña.",
+            "email": "Email",
+            "header": "¿Has olvidado tu contraseña?",
+            "identifier": "Email",
+            "submit": "Enviar"
+          },
+          "forgot_password_success": {
+            "body": "Las instrucciones para restablecer la contraseña se han enviado a {{identifier}}",
+            "next": "Volver al inicio de sesión"
+          },
+          "four_month_pitch": {
+            "button": "Conseguir 4 meses por {{amount}}",
+            "secondary": "Seleccionadas a mano siempre.\nSin anuncios.",
+            "secondary_with_mubi_go": "Incluye una entrada para ver cine seleccionado a mano \ncada semana con MUBI GO.",
+            "ternary": "{{amount}} mensuales después de cuatro meses. Cancela en cualquier momento.",
+            "title": "4 meses de películas cuidadosamente seleccionadas. Ahora por solo {{amount}}.",
+            "title_limited_time": "4 meses de películas.\nPor tan solo {{amount}}."
+          },
+          "gift_film": {
+            "film_available_first_line": "Empieza por ver la película que tu amigo/a pensó que te iba a encantar:",
+            "film_available_first_line_sender": "Empieza viendo la película que {{sender_name}} pensó que te iba a encantar:",
+            "film_available_second_line": "{{film}}, de {{director}}",
+            "film_unavailable_first_line": "Lamentablemente {{film}} no está disponible en este momento.",
+            "film_unavailable_second_line": "Pero puedes explorar otros cientos de películas hermosas que están esperando a que las descubras en MUBI.",
+            "free_for_forty_eight_hs": "Gratis durante 48 horas.",
+            "intro_first_line": "Te esperan 48 horas del mejor cine.",
+            "intro_second_line": "Completamente gratis. Y todo gracias a tu amigo/a.",
+            "intro_second_line_sender": "Todo gratis. Y todo gracias a {{sender_name}}.",
+            "see_showing": "Ve lo que hay en cartelera",
+            "watch_for_free_gift": "Mira tu regalo gratuito: {{title}}",
+            "welcome": "bienvenido",
+            "welcome_back": "te damos la bienvenida nuevamente"
+          },
+          "go": {
+            "completion_fee_warning": "Después de tus primeros {{number_of_days}} días, se aplicará un cargo único de {{completion_fee}} el día {{upgrade_date}} para que puedas seguir disfrutando de MUBI GO hasta el inicio de tu próximo ciclo de facturación.",
+            "confirm_upgrade": "Confirmar actualización",
+            "enjoy_x_days": "Disfruta de MUBI GO durante {{number_of_days}} días sin coste adicional.",
+            "legal_monthly": "Tu membresía de MUBI GO se renovará automáticamente cada mes.",
+            "legal_yearly": "Tu membresía MUBI GO se renovará automáticamente cada año.",
+            "membership_type_monthly": "membresía mensual de MUBI GO",
+            "membership_type_yearly": "membresía anual de MUBI GO",
+            "new_price_warning_monthly": "Tu nuevo precio {{membership_type}} será entonces de {{price}} al mes.",
+            "new_price_warning_yearly": "Tu nuevo precio {{membership_type}} será entonces de {{price}} al año.",
+            "promo_plan_warning": "La actualización a MUBI GO finalizará de inmediato tu período promocional actual.",
+            "student_info": "Al actualizar a {{membership_type}}, se te cobrará {{price}} por mes. Para seguir disfrutando de MUBI GO durante el resto de tu ciclo de facturación actual, se aplicará de inmediato un cargo único de {{completion_fee}}.",
+            "student_warning": "La actualización a MUBI GO finalizará de inmediato tu membresía de estudiante.",
+            "terms_and_conditions": "Puedes cancelar en cualquier momento. Ver {{terms_link}}."
+          },
+          "ineligible_promo": {
+            "body": "Desgraciadamente, no cumples los requisitos de esta promoción.",
+            "body_referral": "Se ha producido un error. Escribe a {{email}} .",
+            "submit": "Volver a MUBI"
+          },
+          "invalid_device": {
+            "body": "Inicia sesión en un ordenador portátil o de sobremesa para ver películas alquiladas."
+          },
+          "loading": {
+            "body": "Cargando..."
+          },
+          "login": {
+            "comms_opt_out": "Quiero recibir emails con información sobre actualizaciones de contenido, así como ofertas y promociones especiales. Más información: {{comms_policy_link}}",
+            "comms_policy": "Aviso de comunicación por email",
+            "email": "Email",
+            "forgot_password": "¿Has olvidado tu contraseña?",
+            "header": "Inicia sesión",
+            "identifier": "Email",
+            "or": "o",
+            "password": "Contraseña",
+            "remember_me": "¿Recordarme?",
+            "sign_up_cta": "Regístrate",
+            "sign_up_prefix": "¿No tienes cuenta?",
+            "submit": "Iniciar Sesión",
+            "trouble_logging_in": "¿Tienes problemas para iniciar sesión?"
+          },
+          "mubi_memberships": {
+            "mubi_classic": "MUBI Classic",
+            "mubi_go": "MUBI GO",
+            "mubi_premiere": "MUBI Premiere",
+            "mubi_student": "Estudiante"
+          },
+          "notebook_mag": {
+            "almost_done": "Ya casi estamos.\nUna copia del número 0 de Notebook es tuya.\nSolo necesitamos una dirección de envío.",
+            "become_member": "Para recibir el número 0, solo tienes que unirte a MUBI.",
+            "done": "HECHO",
+            "failed_to_order_mag": "Hubo un fallo en tu pago con {{bold_section}}.\nIntroduce un nuevo método de pago.",
+            "failed_to_order_mag_bold_section": "tu tarjeta que termina en {{card_number}}",
+            "fill_in_delivery": "Añade tu dirección de envío",
+            "order_now": "Haz tu pedido anticipado ahora mismo por {{price}}",
+            "pitch_header": "EL NÚMERO 0 ES SOLO PARA MIEMBROS DE MUBI.",
+            "pitch_secondary": "Una película nueva cada día.\nDescárgalas en tu dispositivo iOS o Android para verlas sin conexión.\nSin anuncios.\nCancela cuando quieras.",
+            "preorder_new_card_intro": "Para hacer el pedido anticipado de tu copia del número 0 de Notebook,\nintroduce tu información de pago.\nSe cobrarán {{price}} en tu tarjeta.",
+            "preorder_wallet_intro": "Haz el pedido anticipado del número 0 de Notebook.\nSe cobrarán {{price}} en tu tarjeta.",
+            "ready_to_preorder": "Gracias. Te damos la bienvenida a MUBI.\nYa puedes hacer tu pedido anticipado del número 0 de Notebook.",
+            "thanks": "GRACIAS",
+            "when_it_comes": "Tenemos planeado sacar un número a mediados de noviembre.\nTe mandaremos las últimas noticias por email cuando se acerque el momento."
+          },
+          "notebook_sub": {
+            "all_done": {
+              "done": "¡Todo listo!",
+              "ok_thanks": "¡MUY BIEN, GRACIAS!",
+              "send_update": "Te avisaremos cuando tu copia esté lista para enviar."
+            },
+            "already_has_mag": {
+              "good_news": "Buenas noticias",
+              "has_already": "Ya tienes una suscripción a NOTEBOOK.",
+              "included_in_plan": "Tu plan ya incluye una suscripción a Notebook."
+            },
+            "delivery_form": {
+              "address_one": "Dirección",
+              "address_three": "Dirección, línea 3 (opcional)",
+              "address_two": "Dirección, línea 2 (opcional)",
+              "autocomplete": "Comienza a escribir tu dirección...",
+              "city": "Ciudad",
+              "company": "Compañía/Instituto",
+              "country": "País",
+              "delivery_issue": "Solo se utilizará en caso de que haya algún problema con el envío.",
+              "first_name": "Nombre",
+              "last_name": "Apellido",
+              "neighbourhood_brazil": "Vecindario",
+              "optional": "opcional",
+              "phone": "Número de teléfono",
+              "postcode": "Código postal",
+              "save_cta": "GUARDAR",
+              "state": "Estado/Provincia/Municipio"
+            },
+            "errors": {
+              "invalid_phone": "Introduce un número de teléfono válido",
+              "required": "Campo obligatorio",
+              "roman_chars": "Utiliza caracteres latinos",
+              "too_long": "Demasiados caracteres"
+            },
+            "go_back": "Volver",
+            "intro": {
+              "existing_user_mag": "Te estás suscribiendo a la revista NOTEBOOK.\nRecibirás dos números al año. Por solo {{price}}.\nGastos de envío incluidos, estés donde estés.",
+              "existing_user_mag_msg": "Te estás suscribiendo a la revista NOTEBOOK.\nRecibirás dos números por solo {{price}}.\nEnvío incluido, estés donde estés.",
+              "new_user_mag": "Te estás suscribiendo a la revista NOTEBOOK.",
+              "new_user_mag_with_sub": "Te estás suscribiendo a la revista NOTEBOOK.\nTambién estás iniciando tu membresía mensual en MUBI,\ncon un mes gratis del mejor cine."
+            },
+            "legal": {
+              "existing_user_mag": "Tu suscripción a la revista NOTEBOOK se renovará anualmente de forma automática. {{argentina_terms}}Puedes cancelar en cualquier momento. Ver {{terms_link}}.",
+              "mubi_terms_link": "Términos y Condiciones de MUBI",
+              "new_user_mag": "Tu suscripción a la revista NOTEBOOK se renovará de manera automática con un coste anual de {{price}}.\n{{argentina_terms}}Puedes cancelar en cualquier momento. Ver {{terms_link}}.",
+              "new_user_mag_with_sub": "Tu suscripción a la revista NOTEBOOK se renovará automáticamente con un coste anual de {{price}}. Tu membresía de MUBI comenzará después de tus primeros {{num_days}} días, con un coste mensual de {{subscription_price}}. Ver {{notebook_terms_link}} y {{terms_link}}.\n{{argentina_terms}}Puedes cancelar cualquiera en cualquier momento.",
+              "notebook_terms_link": "Términos y Condiciones de Notebook",
+              "see_terms_link": "Ver {{terms_link}}",
+              "terms_link": "Términos y Condiciones"
+            },
+            "payment": "Pago",
+            "payment_title": "Suscripción Notebook",
+            "pitch_slide": {
+              "add_hand_picked": "¿Quieres añadir cine cuidadosamente seleccionado para ver en streaming y gratis?",
+              "cost_afterwards": "{{price}}/mes después de {{num_days}} días",
+              "get_free_month": "Llévate un mes de MUBI gratis",
+              "subscribe_to": "Suscríbete a \nla revista Notebook",
+              "what_you_get": "Recibirás dos números al año.\nPor tan solo {{price}}.\nEste precio incluye costes de envío estés donde estés.\nPuedes cancelar en cualquier momento."
+            },
+            "thanks": {
+              "add_address": "Incluye tu dirección de envío",
+              "check_address": "Dedica un momento a verificar que la dirección de envío que tenemos es correcta.",
+              "check_address_cta": "VERIFICAR DIRECCIÓN DE ENVÍO",
+              "edit_address": "Puedes modificar tu dirección en cualquier momento en la configuración",
+              "end_of_date": "fin de {{date}}",
+              "now_subscribing": "Ya tienes una suscripción a la revista NOTEBOOK.\nRecibirás tu primer número el {{end_of_date}}.",
+              "now_subscribing_end_of": "Ya estás suscrito a la revista NOTEBOOK.\nTu primer número será enviado al final de {{month_year}}.",
+              "now_subscribing_in": "Ya estás suscrito a la revista NOTEBOOK.\nTu primer número será enviado en {{month_year}}.",
+              "thank_you": "GRACIAS",
+              "the_date": "Mayo, 2022"
+            }
+          },
+          "one_month_pitch": {
+            "button": "Obtén 1 mes por {{amount}}",
+            "secondary": "Seleccionadas a mano siempre.\nSin anuncios.",
+            "secondary_with_mubi_go": "Incluye una entrada para ver cine seleccionado a mano\ncada semana con MUBI GO.",
+            "ternary": "{{amount}} mensuales después del primer mes. Cancela en cualquier momento.",
+            "title": "1 mes de películas seleccionadas a mano. Ahora por solo {{amount}}.",
+            "title_limited_time": "1 mes de películas.\nSolo {{amount}}."
+          },
+          "one_year_pitch": {
+            "button": "Aprovechar la oferta",
+            "secondary": "Seleccionadas a mano siempre.\nSin anuncios.",
+            "secondary_with_mubi_go": "Incluye una entrada para ver cine seleccionado a mano \ncada semana con MUBI GO.",
+            "ternary": "Se renueva automáticamente a {{amount}}/cada 360 días. Cancela en cualquier momento.",
+            "title": "Un año entero de películas.\nAhora por solo {{amount}}.",
+            "title_limited_time": "3 meses por tan solo {{amount}}.\nPor un tiempo limitado."
+          },
+          "otp": {
+            "change_details": "Modificar información",
+            "instruction": "Ingrésalo a continuación para continuar.",
+            "instruction_confirm": "Introdúcelo a continuación para confirmar tu dirección de email.",
+            "instruction_login": "Introdúcelo a continuación para iniciar sesión.",
+            "instruction_signup": "Introdúcelo a continuación para registrarte.",
+            "intro": "Hemos enviado un código a {{identifier}}.",
+            "placeholder": "Introducir código",
+            "resend": "Reenviar código",
+            "resend_success": "Hemos enviado un nuevo código SMS. Mira el teléfono para ver si te ha llegado.",
+            "resend_success_email": "Hemos enviado un nuevo código. Mira tu correo para ver si te ha llegado.",
+            "title": "Verificación",
+            "verification_instruction_heading": "Antes de poder hacer cambios en tu cuenta,\ndebemos verificar que seas tú.",
+            "verification_instruction_subheading": "A continuación, introduce el código único que te enviamos a\n{{identifier}};",
+            "verification_title": "¿Eres tú?"
+          },
+          "page_titles": {
+            "choose_password": "Elige contraseña",
+            "forgot_password": "Olvidé mi contraseña",
+            "login": "Iniciar sesión",
+            "login_with_code": "Iniciar sesión con un código",
+            "password": "Contraseña",
+            "password_reset_success": "Contraseña reestablecida exitosamente",
+            "payment": "Pago",
+            "signup": "Registrarte",
+            "signup_code": "REGISTRARSE CON UN CÓDIGO",
+            "welcome": "Te damos la bienvenida"
+          },
+          "parental_control": {
+            "see_showing": "Ve lo que hay en cartelera",
+            "updated": "Actualizado",
+            "updated_body": "Cuenta actualizada exitosamente."
+          },
+          "pay": {
+            "account": "tu cuenta",
+            "add_another": "Añadir otro método de pago",
+            "arl_compliance": {
+              "change_plan": "Modificar imagen",
+              "intro": {
+                "change_plan": {
+                  "with_immediate_charge": "Tu membresía {{membership}} {{renewal_frequency}} por {{price}} durante {{renewal_period}}, comenzará ahora mismo.",
+                  "with_no_immediate_charge": "Tu membresía {{membership}} {{renewal_frequency}} por {{price}} durante {{renewal_period}}, comenzará el {{start_date}}.",
+                  "with_pro_rated_charge": "Tu membresía {{membership}} {{renewal_frequency}} por {{price}} durante {{renewal_period}} comenzará ahora mismo. Se te cobrará {{prorated_price}} por el resto de tu ciclo de facturación actual."
+                },
+                "discount_promo": {
+                  "month": "Estás ahorrando {{percentage}} y se te cobrará {{discounted_price}} al mes durante tu primer periodo de {{promo_period}}.",
+                  "year": "Estás ahorrando {{percentage}} y se te cobrará {{discounted_price}} durante tu primer año."
+                },
+                "fixed_discount_promo": "Se te cobrará {{discounted_price}} durante tu primer periodo de {{promo_period}}.",
+                "magazine": {
+                  "only_magazine_sub": "Te estás suscribiendo a la revista {{notebook}}.",
+                  "with_membership_sub": "Te estás suscribiendo a la revista {{notebook}} e iniciando tu membresía {{membership}} {{renewal_frequency}} de MUBI, con los primeros 30 días gratis en MUBI."
+                },
+                "mx_introductory_offer": {
+                  "billing_details": "Después de tus primeros {{number_of_free_days}} días, se aplicará un cargo único de {{pro_rated_price}} para que puedas seguir disfrutando de MUBI GO hasta el inicio de tu próximo ciclo de facturación.",
+                  "enjoy_x_days": "Disfruta de MUBI GO durante {{number_of_days}} días sin costo adicional."
+                },
+                "no_trial_or_offer": "Empieza a ver con la membresía {{membership}} {{renewal_frequency}} por {{price}} al {{renewal_period}}.",
+                "trial": "Empieza a ver con los primeros {{trial_days_free}}.",
+                "trial_days_free": "{{free_period_in_days}} días gratis"
+              },
+              "learn_more": "Más información",
+              "legal": {
+                "change_plan": {
+                  "with_immediate_charge": "Acepto que mi membresía se renovará automáticamente y que se me cobrará {{price}} cada {{renewal_period_in_days}} días (o una nueva tarifa, con previo aviso) a menos que cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación.",
+                  "with_no_immediate_charge": "Acepto que mi membresía se renovará automáticamente y que se me cobrará {{price}} cada {{renewal_period_in_days}} días (o una nueva tarifa, con previo aviso) a menos que cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación.",
+                  "with_pro_rated_charge": "Estoy de acuerdo en que se me cobrará {{discounted_price}} ahora mismo. A partir de {{renewal_date}} mi membresía se renovará automáticamente a la tarifa estándar de {{renewal_price}} (o una nueva tarifa, con previo aviso) cada {{renewal_period_in_days}} días a menos que se cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación."
+                },
+                "discount_promo": {
+                  "month": "Acepto que mi membresía se renovará automáticamente a la tarifa con descuento de {{discounted_price}} cada {{renewal_period_in_days}} días hasta {{promo_end_date}}, y luego a la tarifa estándar de {{renewal_price}} (o una nueva tarifa, con previo aviso) a menos que se cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación.",
+                  "year": "Estoy de acuerdo en que se me cobrará {{discounted_price}} ahora mismo. A partir de {{promo_end_date}} mi membresía se renovará automáticamente a la tarifa estándar de {{renewal_price}} (o una nueva tarifa, con previo aviso) cada {{renewal_period_in_days}} días a menos que se cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación."
+                },
+                "fixed_discount_promo": "Estoy de acuerdo en que se me cobrará {{discounted_price}} ahora mismo. A partir de {{promo_end_date}} mi membresía se renovará automáticamente a la tarifa estándar de {{renewal_price}} (o una nueva tarifa, con previo aviso) cada {{renewal_period_in_days}} días a menos que se cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación.",
+                "magazine": {
+                  "only_magazine_sub": "Acepto que mi membresía se renovará automáticamente y que se me cobrará {{notebook_sub_price}} por 2 números, cuando mi próximo número no pagado esté listo para enviarse. Recibiré un correo electrónico para notificarme 30 días antes para que pueda cancelar por lo menos 24 horas antes de la fecha de renovación para evitar cargos adicionales. {{argentina_terms}} {{learn_more_link}} sobre la cancelación.",
+                  "with_membership_sub": "Acepto que mi membresía de NOTEBOOK se renovará automáticamente y que se me cobrará {{notebook_sub_price}} por 2 números, cuando mi próximo número no pagado esté listo para enviarse. Recibiré un correo electrónico para notificarme 30 días antes. Mi membresía de MUBI se renovará automáticamente el día {{renewal_date}} después de mis primeros {{free_period_in_days}} días gratis. Se me cobrará {{price}} (o una nueva tarifa, con previo aviso) cada {{renewal_period_in_days}} días. Necesito cancelar por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación."
+                },
+                "mx_introductory_offer": {
+                  "billing_details": "Acepto que después de mis primeros {{free_period_in_days}} días gratis de acceso a MUBI GO, se me cobrará {{pro_rated_price}} el día {{upgrade_date}}. A partir del {{renewal_date}} mi membresía se renovará automáticamente a la tarifa estándar de {{renewal_price}} (o una nueva tarifa, con previo aviso) cada {{renewal_period_in_days}} días a menos que se cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación."
+                },
+                "no_trial_or_offer": "Acepto que mi membresía se renueve automáticamente y que se me cobre {{price}} cada {{renewal_period_in_days}} días (o una nueva tarifa, con previo aviso) a menos que cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación.",
+                "price_plus_taxes": "{{price}} más impuestos aplicables",
+                "trial": "Acepto que después de mis primeros {{trial_first_days_free}}, mi membresía se renovará automáticamente el día {{renewal_date}}. Se me cobrará {{price}} (o una nueva tarifa, con aviso) cada {{renewal_period_in_days}} días a menos que cancele por lo menos 24 horas antes de la renovación. {{argentina_terms}} {{learn_more_link}} sobre la cancelación.",
+                "trial_first_days_free": "primeros {{free_period_in_days}} días gratis",
+                "trial_student": "Acepto que después de mis primeros {{trial_first_days_free}}, mi membresía se renovará automáticamente el día {{renewal_date}}. Se me cobrará {{price}} (o una nueva tarifa, con aviso) cada {{renewal_period_in_days}} días a menos que cancele por lo menos 24 horas antes de la renovación. A partir de la fecha de mi graduación, mi membresía se renovará automáticamente a la tarifa mensual estándar en ese momento. {{argentina_terms}} {{learn_more_link}} sobre la cancelación."
+              },
+              "redeem_offer": "Obtener oferta",
+              "start_mubi_membership": "Iniciar la membresía de MUBI"
+            },
+            "cardholder_name": "Nombre del titular",
+            "card_expiring": "Expira el {{date}}",
+            "cvv": "CVV",
+            "done": "¡Todo listo!",
+            "done_confirm": "Confirmar",
+            "done_free_days": "Inicia tu membresía",
+            "done_promo": "Empezar a ver",
+            "done_trial": "Empezar prueba gratis",
+            "done_trial_turkey": "Inicia tu membresía",
+            "done_tvod": "Alquilar por {{price}}",
+            "errors": {
+              "authentication_required": "Autentifica tu tarjeta cuando el sistema te lo pida",
+              "card_details": "Algo no va bien. Comprueba tus datos y vuelve a intentarlo.",
+              "card_not_supported": "Tu tarjeta no es aceptada",
+              "card_number": "Comprueba los datos de tu tarjeta",
+              "currency_not_supported": "No podemos aceptar el tipo de moneda de tu tarjeta",
+              "cvv": "Comprueba tu código CVV",
+              "document_required": "Por favor, ingresa el número de tu documento",
+              "expiration": "Comprueba la fecha de expiración",
+              "insufficient_funds": "Verifica que tu tarjeta tiene suficientes fondos para completar la compra.",
+              "name_required": "Por favor ingresa el nombre que aparece en tu tarjeta",
+              "paypal": "Vaya, el pago a través de PayPal no ha funcionado. Vuelve a intentarlo.",
+              "postcode_required": "Verifica tu código postal",
+              "processing": "Ha habido un problema al procesar tu método de pago. Ponte en contacto con tu banco o usa otro método de pago."
+            },
+            "expiration": "Fecha de Expiración",
+            "header_free_month": "30 Días Gratis de {{plan_name}}",
+            "header_free_n_days": "{{n_days}} días gratis de {{plan_name}}",
+            "header_free_week": "7 Días Gratis de {{plan_name}}",
+            "header_free_week_turkey": "Información de pago",
+            "header_notebook_issue": "Haz el pedido anticipado del Número 0 de Notebook",
+            "header_promo": "Empezar suscripción a MUBI",
+            "header_promo_with_mubi_go": "Iniciar membresía de Mubi Go",
+            "header_subscription": "Suscripción",
+            "header_trial": "Un mes gratis de MUBI",
+            "intro": {
+              "cancel_anytime": "Cancela cuando quieras",
+              "change_plan": {
+                "charged_later": "No se te cobrará hasta el {{date}}.",
+                "continue_go": "Puedes seguir utilizando {{mubi_go}} hasta tu próxima fecha de renovación.",
+                "pro_rated": "Se te cobrará {{price}} por el resto de este {{renewal_period}}.",
+                "pro_rated_billing_period": "Se te cobrará {{price}} durante el resto de tu período de facturación actual.",
+                "start_later": "Tu {{membership}} {{renewal_frequency}} por {{price}} al \n{{renewal_period}} comenzará el {{start_date}}.",
+                "start_now": "Tu {{membership}} {{renewal_frequency}} por {{price}} al {{renewal_period}} \ncomenzará ahora mismo."
+              },
+              "discount": {
+                "month": "Estás ahorrando el {{discount_percent}} en tu membresía, así que tan solo pagarás {{discounted_total_price}} al mes.",
+                "year": "Estás ahorrando {{discount_percent}} y te cobraremos solo {{discounted_total_price}} por un año de MUBI"
+              },
+              "fixed_discount": "Pagarás {{discounted_price}} por los primeros {{period_months}} meses.",
+              "fixed_discount_one_month": "Pagarás {{discounted_price}} por tu primer mes.",
+              "fixed_discount_promo_for_active_subscribers": "Se te cobrará el precio con descuento de {{discounted_price}} al momento de tu próxima renovación en {{renewal_date_in_days}} días.",
+              "fixed_discount_promo_period": "Pagarás {{discounted_price}} por tu primer {{promo_period}}.",
+              "free_trial": "Para comenzar tu periodo de prueba gratis de {{free_trial_period_days}} días, indica la forma de pago.",
+              "free_trial_turkey": "Para comenzar tus primeros {{free_trial_period_days}} días gratis, ingresa tu información de pago.",
+              "membership": "Suscripción {{plan_name}}",
+              "membership_basic": "Membresía MUBI",
+              "membership_classic": "Membresía MUBI Classic",
+              "membership_premium": "Membresía MUBI GO",
+              "membership_student": "Membresía para estudiantes",
+              "payment_details": "Introduce tu forma de pago.",
+              "selected_membership": "Has seleccionado la {{membership}} {{renewal_frequency}} por {{price}} al \n{{renewal_period}}.",
+              "selected_membership_right_away": "Se va a hacer un cargo a tu tarjeta ahora mismo, con lo que se iniciará tu suscripción.",
+              "selected_membership_unfortunately": "Desafortunadamente, no cumples los requisitos del periodo de prueba.",
+              "selected_membership_unfortunately_turkey": "Desafortunadamente, no eres elegible para obtener días gratis.",
+              "selected_plan": "Has seleccionado el plan {{name}} por {{amount}} al mes.",
+              "selected_plan_billing": "Se cobrará en un pago de {{amount}}.",
+              "selected_plan_with_trial": "Para comenzar tu prueba gratis, introduce tu forma de pago."
+            },
+            "legal": {
+              "agree_membership_terms": "Aceptar los términos de la membresía",
+              "consent_terms_conditions": {
+                "body": "Al hacer clic en '{{cta_text}}'{{paypal_cta_text}}, doy mi consentimiento a los {{mubi_terms_link}}{{notebook_terms}}.",
+                "mubi_terms_link": "Términos de MUBI",
+                "notebook_terms": "y {{notebook_terms_link}}.",
+                "notebook_terms_link": "Términos de Notebook",
+                "paypal_cta_text": "o 'Pagar con PayPal'"
+              },
+              "discount": {
+                "month": "Después de 12 meses, se hará un cargo estándar mensual de {{standard_price}}. {{argentina_terms}}",
+                "month_half_year_period": "Después de 6 meses, se hará un cargo estándar mensual de {{standard_price}}.\n{{argentina_terms}}",
+                "month_promo_period": "Después de {{promo_period}}, se te cobrará la tarifa mensual estándar de {{standard_price}}. {{argentina_terms}}Puedes cancelar en cualquier momento.",
+                "year": "Una vez termine tu año de prueba, solo pagarás el precio anual reducido estándar de {{standard_price}}. {{argentina_terms}}Puedes cancelar en cualquier momento."
+              },
+              "fixed_discount": {
+                "month": "Cuando termine tu membresía promocional de {{period_months}} meses, pagarás el precio mensual estándar de {{standard_monthly_price}}. {{argentina_terms}}",
+                "month_one": "Cuando termine tu membresía promocional de 1 mes, pagarás el precio mensual estándar de {{standard_monthly_price}}. {{argentina_terms}}",
+                "month_promo_period": "Una vez finalizada la suscripción promocional de {{promo_period}}, se te cobrará la tarifa mensual estándar de {{standard_monthly_price}}. {{argentina_terms}}Puedes cancelar en cualquier momento.",
+                "year": "Cuando termine tu membresía promocional de {{period_months}} meses, pagarás el precio anual estándar de {{standard_monthly_price}}. {{argentina_terms}}",
+                "year_promo_period": "Una vez finalizada la suscripción promocional de {{promo_period}}, se te cobrará la tarifa anual estándar de {{standard_monthly_price}}. {{argentina_terms}}Puedes cancelar en cualquier momento."
+              },
+              "free_trial": "Cuando finalice tu periodo de prueba gratis, se te cobrarán automáticamente {{price_per_period}} para seguir disfrutando de MUBI. {{argentina_terms}}Cancela en cualquier momento.",
+              "free_trial_turkey": "Una vez transcurridos tus primeros {{free_trial_period_days}} días gratis, se te cobrará automáticamente {{price_per_period}} para seguir disfrutando de MUBI. {{argentina_terms}}Cancela en cualquier momento.",
+              "free_trial_with_membership": "Al finalizar tu prueba gratis, tu membresía {{plan_name}} iniciará automáticamente \ncon un costo de {{price}} por {{period}}. {{argentina_terms}}Puedes cancelar en cualquier momento.",
+              "free_trial_with_membership_turkey": "Cuando terminen tus primeros {{free_trial_period_days}} días gratis, se te cobrará automáticamente {{price}}/{{period}} para continuar con tu membresía {{plan_name}}. {{argentina_terms}} Puedes cancelar en cualquier momento.",
+              "rental": "Tu alquiler durará 48 horas.",
+              "see_terms": "Ver {{terms_link}}",
+              "short": "Haciendo clic a continuación, aceptas nuestros {{terms_link}}.",
+              "standard": "Se te cobrará {{price}} de inmediato y tu membresía {{plan_name}} se renovará automáticamente a menos que elijas cancelarla. {{argentina_terms}}",
+              "standard_with_membership": "Se te cobrará {{price}} de inmediato y tu membresía {{plan_name}} se renovará automáticamente cada {{period}}.\n{{argentina_terms}}Puedes cancelar en cualquier momento.",
+              "terms": "Términos y Condiciones"
+            },
+            "month_year": "MM/AA",
+            "number": "Número de tarjeta",
+            "or_paypal": "o paga con",
+            "pay_with_card": "Pagar con tu tarjeta que termina en {{card_number}}",
+            "pay_with_carrier": "Pagar con {{carrier}}",
+            "pay_with_paypal": "Pagar con tu cuenta de PayPal",
+            "postcode": "Código postal",
+            "price_per_period": {
+              "month": "{{price}}/mes",
+              "year": "{{price}}/año"
+            },
+            "privacy": "Política de Privacidad",
+            "renting": "Alquilar",
+            "title_change_plan": "Confirmar",
+            "tvod_member_discount": "Descuento de miembro del {{discount}} aplicado",
+            "use_card": "Usar tu tarjeta que termina en {{card_number}}",
+            "use_carrier": "Usar {{carrier}}",
+            "use_paypal": "Usa tu cuenta de PayPal",
+            "zipcode": "Código postal"
+          },
+          "payment_wallet": {
+            "inbound_back_copy": "Modificar método de pago"
+          },
+          "pitch": {
+            "body": "Un mes gratis\nde cine del bueno",
+            "body_free_week": "Una semana gratis \nde MUBI",
+            "body_free_week_turkey": "Los primeros 7 días de MUBI son gratis.",
+            "limited_time_only": "por tiempo limitado",
+            "login_cta": "Inicia sesión",
+            "login_prefix": "¿Ya tienes cuenta?",
+            "sale_ends": "La oferta expira el {{date}}.",
+            "secondary": "Disfruta de las mejores películas en streaming. \nSiempre seleccionadas a mano. \nSin anuncios.\nCancela cuando quieras.",
+            "start_free_trial": "Empezar prueba gratis",
+            "start_free_trial_turkey": "Iniciar",
+            "start_your_free_month": "Comienza tu mes gratis",
+            "start_your_free_week": "Comienza tu semana gratis",
+            "subscribe": "Elige una membresía"
+          },
+          "promo_code": {
+            "body": "Introduce tu código para canjear la oferta y empezar a ver películas.",
+            "code_required_error": "Introduce el código",
+            "code_too_long_error": "Vaya, es demasiado largo.",
+            "error_contact_us": "Ponte en contacto con nosotros",
+            "error_having_problems": "¿Sigues teniendo problemas?",
+            "header": "Te damos la bienvenida a MUBI",
+            "input_placeholder": "Introducir código",
+            "invalid_code_error": "Lo sentimos, pero ese código ya no es válido. Vuelve a intentarlo.",
+            "submit": "Canjear"
+          },
+          "select_membership": {
+            "available_cities": "MUBI GO se encuentra disponible actualmente en las siguientes ciudades:",
+            "benefits": {
+              "cancel": "Cancela cuando quieras.",
+              "cinema_ticket": "Una entrada cada semana para ver cine cuidadosamente seleccionado.",
+              "cinema_ticket_short": "Una entrada de cine, \ncada semana.",
+              "download": "Descarga películas con iOS o Android.",
+              "download_with_line_break": "Descarga películas\ncon iOS o Android.",
+              "incredible_cinema": "Cine grandioso para ver en streaming en cualquier momento.",
+              "new_film_every_day": "Una nueva película cada\ndía en MUBI.",
+              "no_ads": "Sin anuncios.",
+              "trial_days": "{{number_of_days}} días de prueba gratis"
+            },
+            "billing": "Cobrado en un pago",
+            "only_available_in": "Disponible \nen {{select_cities}}",
+            "period": {
+              "month": "Precio mensual",
+              "year": "Precio anual"
+            },
+            "same_plan_error": "Ya tienes este plan. Selecciona un plan diferente para continuar.",
+            "save": "Ahorra hasta un {{percent}}",
+            "save_with_yearly": "{{save_percentage}} con una suscripción anual.",
+            "savings": "Ahorra un {{percent}}",
+            "select_cities": "ciudades seleccionadas",
+            "show_monthly": "Mostrar precio mensual",
+            "show_yearly": "Mostrar precio anual",
+            "title": "Elige tu plan"
+          },
+          "select_payment_platform": {
+            "inbound_back_copy": "Modificar método de pago"
+          },
+          "select_plan": {
+            "cannot_change_subscription_plan": "Lo sentimos, tienes un cargo pendiente por la renovación de tu suscripción. Por favor, inténtalo de nuevo en 24 horas.",
+            "current_plan": "Plan actual",
+            "header": "Elige y paga",
+            "header_next": "Ver",
+            "header_plans": "Planes",
+            "inbound_back_copy": "Modificar imagen",
+            "intro": "¿Qué plan te conviene más?",
+            "monthly_benefit": "Incluye prueba gratis de 7 días. Puedes cancelar en cualquier momento.",
+            "next": "Siguiente",
+            "per_month": "al mes",
+            "per_month_with_price": "{{price}} un mes",
+            "plan_pitch": "Elige un plan para empezar a ver películas.",
+            "plan_pitch_trial": "Cuando termine tu periodo de prueba, ¿qué plan prefieres?",
+            "savings": "Ahorra un {{percent}}",
+            "year_billing_details": "En un pago de {{price}}"
+          },
+          "shared": {
+            "back": "Volver",
+            "continue_cta": "Siguiente",
+            "general_form_error": "Se ha producido un error. Vuelve a intentarlo.",
+            "ineligible_student_notice": "Ya tienes una suscripción de estudiante. Feliz visionado.",
+            "numbers": {
+              "1": "uno",
+              "2": "dos",
+              "3": "tres",
+              "4": "cuatro",
+              "5": "cinco",
+              "6": "seis",
+              "7": "siete",
+              "8": "ocho",
+              "9": "nueve",
+              "10": "diez",
+              "11": "once",
+              "12": "doce"
+            },
+            "or": "o",
+            "payment_frequency": {
+              "month": "mensual",
+              "year": "anual"
+            },
+            "persist_cookie_consent_error": "Lo sentimos, ha habido un problema al guardar tus preferencias de cookies. Actualiza e inténtalo de nuevo.",
+            "promo_period": {
+              "plural_days": "{{amount}} dias",
+              "plural_months": "{{amount}} meses",
+              "singular_month": "{{amount}} mes",
+              "singular_year": "{{amount}} año"
+            },
+            "renewal_period": {
+              "month": "mes",
+              "year": "año"
+            },
+            "savings_cta": "Los primeros 7 días son gratis",
+            "stripe_webhook_error": "Hay un retraso en el procesamiento de tu pago.\nPor favor, revisa más tarde tu página {{subscription_page_link}}.",
+            "subscribe_cta": "Suscríbete",
+            "subscription_page_link": "suscripción",
+            "trial_cta": "Prueba 7 días gratis"
+          },
+          "signup": {
+            "begin_free_day": "Para comenzar con tus 24 horas de cine gratis, solo necesitas una cuenta MUBI.",
+            "data_consent": "He leído y estoy de acuerdo con su {{privacy_link}} y {{data_policy_link}}.",
+            "data_policy": "Aviso de consentimiento sobre transferencia de información personal",
+            "email": "Email",
+            "errors": {
+              "email_invalid": "Lo sentimos, este email no es válido",
+              "email_required": "El email es obligatorio",
+              "identifier_invalid": "Lo sentimos, este email no es válido",
+              "identifier_required": "Necesitas ingresar tu email",
+              "name_too_long": "Vaya, es demasiado largo.",
+              "password_required": "La contraseña es obligatoria",
+              "password_too_short": "Debe tener al menos cuatro caracteres",
+              "phone_invalid": "Lo sentimos, este número de teléfono no es válido",
+              "phone_required": "El número de teléfono es obligatorio",
+              "username_required": "El nombre de usuario es obligatorio"
+            },
+            "free_film": "Para ver esta película gratis, solo necesitas una cuenta de MUBI.",
+            "header": "Un mes gratis de MUBI",
+            "header_create_account": "Crear una cuenta",
+            "header_free_week": "Una semana gratis de MUBI",
+            "header_free_week_turkey": "Información de pago",
+            "header_promo": "Crear una cuenta",
+            "header_referral": "30 días gratis de MUBI",
+            "header_referral_turkey": "PRIMEROS 30 DÍAS GRATIS",
+            "header_tvod": "Regístrate",
+            "identifier": "Email",
+            "legal": "Al hacer clic para registrarte, estás indicando que has leído y estás de acuerdo con los {{terms_link}} y {{privacy_link}}",
+            "legal_join_page": "Al hacer clic en \"ver ahora\" estás indicando que leíste y estuviste de acuerdo con {{terms_link}} y {{privacy_link}}",
+            "legal_short": "Al hacer clic para registrarte, estás indicando que has leído y estás de acuerdo con los {{terms_link}}.",
+            "legal_signup": "Al hacer clic en '{{button_text}}' te estarás registrando en MUBI. Ve {{terms_link}} y {{privacy_link}}.",
+            "legal_skip_password": "Al hacer clic en '{{button_text}}' indicas que leíste y estuviste de acuerdo con los {{terms_link}} y la {{privacy_link}}",
+            "or": "o",
+            "password": "Contraseña",
+            "privacy_link": "Privacidad",
+            "privacy_policy": "Política de Privacidad",
+            "send_gift": "Para enviar tu regalo, debes crear una cuenta en MUBI",
+            "submit": "Regístrate",
+            "terms_of_service": "Términos de Servicio"
+          },
+          "slide_yearly_india": {
+            "body": "Una película nueva para ver en streaming cada día.\nY una entrada para el cine cada semana con MUBI GO.\nPuedes cancelar en cualquier momento.",
+            "cta": "Ver todos los planes disponibles",
+            "cta_body": "Solo {{oldAmount}} {{newAmount}} al año.\nPor un tiempo limitado.",
+            "title": "Te presentamos mubi go.\nPor tan solo {{amount}} al año."
+          },
+          "student_signup": {
+            "email": "Email de la universidad",
+            "email_placeholder": "Por ejemplo, ‪user@nfts.co.uk",
+            "errors": {
+              "graduation_date_invalid": "Lo sentimos, esta fecha de graduación no es válida",
+              "graduation_date_required": "Es necesaria tu fecha de graduación"
+            },
+            "graduation": "Fecha de Graduación",
+            "graduation_date_warning_de": "Esta fecha no puede cambiarse ni ampliarse posteriormente.",
+            "help": "¿Tienes problemas? Escríbenos a {{email}}.",
+            "intro_login": "Tu nombre de usuario de MUBI será {{identifier}}.‪",
+            "intro_trial": "Para comenzar tus 30 días gratis, solo tienes que crear una cuenta de MUBI.",
+            "intro_trial_n_days": "Para iniciar tus {{n_days}} días gratis, tan solo crea una cuenta de MUBI.",
+            "intro_user_no_trial": "Rellena tus datos a continuación para comenzar tu\nsuscripción de estudiante.",
+            "intro_user_trial": "Rellena tus datos a continuación para comenzar tu\nsuscripción de estudiante con 30 días gratis.",
+            "intro_user_trial_n_days": "Por favor ingresa tu información abajo para iniciar\ntu membresía estudiantil con {{n_days}} días gratis.",
+            "name": "Nombre",
+            "name_placeholder": "Nombre y apellidos",
+            "select_month": "Seleccionar Mes",
+            "select_year": "Seleccionar Año",
+            "student_email_confirmation": "Confirmación del email del estudiante",
+            "submit": "Enviar",
+            "title": "Crear Cuenta de Estudiante",
+            "title_user": "Suscripción de estudiante"
+          },
+          "tax_argentina": "Impuestos no incluidos.",
+          "three_month_pitch": {
+            "button": "Conseguir 3 meses por {{amount}}",
+            "secondary": "Seleccionadas a mano siempre.\nSin anuncios.",
+            "secondary_with_mubi_go": "Incluye una entrada para ver cine seleccionado a mano \ncada semana con MUBI GO.",
+            "ternary": "{{amount}} al mes después de los primeros 3 meses. Cancela cuando quieras.",
+            "title": "3 meses de películas cuidadosamente seleccionadas. Ahora por tan solo {{amount}}.",
+            "title_limited_time": "3 meses de películas.\nPor tan solo {{amount}}."
+          },
+          "tv_activation": {
+            "intro_free_trial": "Los usuarios nuevos obtienen {{promo_period}} gratis.",
+            "intro_promo": "Los usuarios nuevos obtienen {{promo_text}}"
+          },
+          "tv_activation_code": {
+            "body": "Introduce tu código para activar tu cuenta y empezar a ver películas.",
+            "invalid_code_error": "Lo sentimos, pero ese código no es válido. Inténtalo de nuevo.",
+            "submit": "Activar"
+          },
+          "two_month_pitch": {
+            "button": "Obtén 2 meses por {{amount}}",
+            "secondary": "Una película nueva cada día.\nSiempre seleccionada a mano.",
+            "secondary_with_mubi_go": "Una película nueva todos los días en MUBI.\nPara ver en streaming o descargar en dispositivos móviles.\nY una entrada de cine semanal con MUBI GO.",
+            "ternary": "{{amount}} mensuales después de dos meses. Cancela en cualquier momento.",
+            "title": "2 meses de películas seleccionadas a mano. Ahora por tan solo {{amount}}.",
+            "title_limited_time": "2 meses por tan solo {{amount}}."
+          }
+        }
+      },
+      "film_actions": {
+        "film_actions": {
+          "actions": {
+            "add": "Añadir a lista",
+            "rate": "Calificar y escribir reseña",
+            "remove": "Eliminar",
+            "remove_from_collection": "Eliminar de {{collection_name}}",
+            "signup_to_watch": "Inicia sesión para verla",
+            "watchlist_add": "Añadir a mi lista",
+            "watchlist_in": "En tu lista de lo que quieres ver",
+            "watchlist_remove": "Eliminar de mi lista"
+          },
+          "add_popover": {
+            "add_to": "Añadir a...",
+            "create_list": "Crear lista...",
+            "error_title": "Error",
+            "want_to_watch": "Mi lista"
+          },
+          "rate_modal": {
+            "add_rating": "{{rate_verb}} la película para guardar tu reseña.",
+            "confirm_delete": "¿Seguro que quieres eliminar esta calificación/reseña?",
+            "rate_label": "Calificar",
+            "rate_verb": "calificar",
+            "remaining": "{{count}} carácter restante",
+            "remaining_other": "quedan {{count}} caracteres",
+            "review": "¿Añadir una reseña?",
+            "submit": "Guardar"
+          },
+          "watchlist": {
+            "tooltip_added": "Añadida a lo que quieres ver",
+            "tooltip_removed": "Eliminada de lo que quieres ver"
+          }
+        }
+      },
+      "promo": {
+        "promo": {
+          "banner": {
+            "black_friday": {
+              "link": "Obtén un año entero de MUBI por solo {{amount}}.",
+              "message": "Nuestra mejor oferta.\n{{link_text}}\nSolo este fin de semana. Tic, tac..."
+            },
+            "christmas_gifting": {
+              "gift_mubi": "Regala MUBI",
+              "message_gb": "Esta Navidad, regala un mundo de cine. {{gift_mubi_link}}.",
+              "message_row": "Películas cuidadosamente seleccionadas por personas para los que más quieres. {{gift_mubi_link}}."
+            },
+            "india_plan_hack": {
+              "link": "Más información.",
+              "message": "Ya está aquí MUBI GO. Puedes conseguirlo por solo ₹2 499 al año por tiempo limitado."
+            },
+            "three_for_one": {
+              "link": "Aprovecha la oferta.",
+              "message": "Empieza el año con 3 meses completos de películas maravillosas, por solo {{amount}}. ¡Corre, la oferta se acaba el viernes!"
+            },
+            "two_button_promo": {
+              "biggest_sale": "Ya está aquí nuestra mayor OFERTA del año.",
+              "for_a_whole_year": "Solo {{price}} por todo un año.",
+              "get_the_deal": "Aprovecha la oferta."
+            }
+          },
+          "benefits": {
+            "anytime_anywhere": "En cualquier momento y lugar",
+            "anytime_anywhere_body": "MUBI te acompaña allá donde vayas. Puedes ver cualquier película en streaming o bajártela, en casa y en cualquier dispositivo.",
+            "watch_great_cinema": "Descubre lo mejor del cine",
+            "watch_great_cinema_body": "En MUBI ofrecemos una selección de películas hermosas e interesantes que renovamos constantemente."
+          },
+          "body": {
+            "discount": {
+              "month": "Nos hemos asociado con {{partner_name}} para darte un {{discount_percent}} de descuento en tu suscripción mensual durante todo un año.",
+              "year": "Nos hemos asociado con {{partner_name}} para darte un descuento del {{discount_percent}} en tu suscripción anual."
+            },
+            "fixed_discount": "Nos hemos asociado con {{partner_name}} para darte una suscripción de {{discount_period}} días por tan solo {{discounted_price}}.",
+            "trial": "Nos hemos asociado con {{partner_name}} para darte una {{trial_info}}.",
+            "trial_info": "Prueba gratuita de {{trial_period}} días",
+            "vip": "Canjea tu código VIP y comienza a ver películas gratis."
+          },
+          "brand_campaign_2024": {
+            "body": "Como parte del Programa de Beneficios WeTransfer Pro Partner, ahora puedes ver gratis en MUBI, durante 90 días, cine con una curaduría hermosa.",
+            "button_copy": "Empezar a ver",
+            "page_description": "Ve lo mejor del cine en streaming, en cualquier momento, en cualquier parte.",
+            "page_title": "MUBI - VE EL MEJOR CINE",
+            "stack_magazines": "Como suscriptor de {{stack_magazines}}, puedes ver cine con una curaduría hermosa en MUBI. Gratis durante 60 días.",
+            "title": "VE EL MEJOR CINE"
+          },
+          "countdown": {
+            "day": "Día",
+            "day_one": "Día",
+            "day_other": "Días",
+            "hour": "Hora",
+            "hour_one": "Hora",
+            "hour_other": "Horas",
+            "minute": "Minuto",
+            "minute_one": "Minuto",
+            "minute_other": "Minutos"
+          },
+          "cta": {
+            "promo_code_placeholder": "Introducir código",
+            "promo_code_submit": "Canjear",
+            "see_showing": "Ve lo que hay en cartelera",
+            "start_free_trial": "Comienza tu prueba gratis",
+            "start_membership": "Inicia tu suscripción",
+            "watch_now": "Ver cine"
+          },
+          "disabled": {
+            "body": "Esta promoción ya no está disponible.\nPero no te preocupes, puedes probar MUBI gratis durante 30 días.",
+            "body_no_trial": "Esta promoción ya no está disponible.",
+            "cta": "Solo tienes que hacer clic aquí",
+            "cta_no_trial": "Ve nuestros planes de membresía",
+            "title": "Demasiado tarde"
+          },
+          "enter_code_page": {
+            "cta": "Canjear",
+            "info": "Canjea tu código y comienza a ver películas hoy mismo.",
+            "title": "EL BUEN CINE TE ESPERA"
+          },
+          "featured_films": {
+            "title": "Películas destacadas"
+          },
+          "header": {
+            "stream": "Disfruta de películas geniales en streaming"
+          },
+          "learn_more": "Más información",
+          "now_showing": {
+            "subtitle": "Regístrate ahora para empezar a ver nuestras películas cuidadosamente seleccionadas",
+            "title": "Empieza a ver cine"
+          },
+          "priscilla": {
+            "april_fifth": "5 DE ABRIL",
+            "a_film_by": "UNA PELÍCULA DE {{sofia_coppola}}",
+            "march_first": "1 DE MARZO",
+            "save_the_date": "RESERVA LA FECHA",
+            "streaming": "DISPONIBLE {{march_first}}",
+            "streaming_april": "DISPONIBLE {{april_fifth}}"
+          },
+          "share": {
+            "discount": {
+              "month": "{{discount_percent}} de descuento en tu suscripción mensual a MUBI durante todo un año.",
+              "year": "{{discount_percent}} de descuento en una suscripción anual a MUBI."
+            },
+            "free_days": "{{period}} días gratis en MUBI.",
+            "presented_by": "Presentado por {{partner_name}}."
+          },
+          "title": "Un regalo muy especial de {{partner_name}}",
+          "unavailable_in_country": {
+            "body": "Esta promoción no está disponible en tu localidad.\nPero no te preocupes, aun así puedes probar MUBI gratis durante 30 días.",
+            "cta": "Tan solo tienes que hacer clic aquí",
+            "title": "PROMOCIÓN NO DISPONIBLE"
+          },
+          "world_cup_26": {
+            "cta": "Ver gratis",
+            "description": "MUBI gratis el día del juego, para celebrar este gran partido.",
+            "description_brackets": "(Otro día gratis si tu país pierde, para ayudarte a olvidarlo.)",
+            "heading": "JUGUEMOS",
+            "terms": "No hace falta ningún pago. La suscripción no se renueva automáticamente.",
+            "time_info": "El acceso termina a medianoche."
+          }
+        }
+      },
+      "film_details": {
+        "film_details": {
+          "added_to_watchlist": "{{film_title}} se ha añadido a lo que quieres ver",
+          "cast_members": {
+            "cast_and_crew": "REPARTO Y EQUIPO",
+            "show_all_link_title_attr": "Mostrar todos los miembros del reparto y equipo técnico"
+          },
+          "critic_reviews": {
+            "critics_reviews": "Reseñas de la crítica",
+            "go_back_to_film_page": "Volver a la página de la película",
+            "meta_description": "Reseñas de la crítica de la película «{{film_title}}»",
+            "meta_title": "{{film_title}}, reseñas de la crítica en MUBI",
+            "read_full": "Leer el artículo completo",
+            "title": "Reseñas de la crítica"
+          },
+          "directed_by": "Dirigida Por",
+          "distributor_notice": "No disponible para ver en MUBI. Distribuida por {{distributor_line}}",
+          "distributor_notice_related_film": "No disponible para ver en MUBI. Distribuida por {{distributor_line}}. En su lugar, échale un vistazo a {{related_film}}, de {{related_directors}}, actualmente disponible en streaming en MUBI.",
+          "film_groups_header": "Aparece en",
+          "film_groups_header_series": "Todas las temporadas",
+          "free_to_watch": "Todo el mundo\npuede ver esta película increíble.\nGratis.",
+          "gift": {
+            "add_another_friend": "Añadir a otra amistad",
+            "done": "HECHO",
+            "email": "Email",
+            "form_error": "Indica quién recibirá este regalo",
+            "form_error_enter_sender_name": "Por favor, escribe tu nombre",
+            "from": "De",
+            "gift_claim": "{{recipients}} recibirá muy pronto un correo de nuestra parte para que pida su regalo con lo mejor del cine.",
+            "gift_claim_joining_and": "y",
+            "gift_sent": "Tu regalo ha sido enviado",
+            "gift_thanks": "Gracias.",
+            "go_back_to_film_page": "Volver a la cartelera",
+            "great_cinema": "Le acabas de enviar una gran película a alguien",
+            "name": "Nombre",
+            "offer": "Enviar {{film_title}} a una amistad para que la vea gratis.",
+            "redemption_modal": {
+              "all_for_free": "Todo gratis. Y todo gracias a {{sender_name}}.",
+              "explore": "Pero puedes explorar otros cientos de películas hermosas que están esperando a que las descubras en MUBI.",
+              "film_by_director": "{{film_title}}, de {{director_name}}.",
+              "film_not_available": "Por desgracia, {{film_title}} ya no está disponible.",
+              "forty_eight_hours_awaits": "Te esperan 48 horas de un cine grandioso",
+              "free_for_forty_eight_hours": "Gratis durante 48 horas.",
+              "header": "Bienvenido",
+              "start_by_watching": "Empieza viendo la película que {{sender_name}} pensó que te iba a encantar:",
+              "start_watching": "Empezar a ver",
+              "start_watching_now": "Empezar a ver películas"
+            },
+            "send": "ENVIAR",
+            "send_film": "ENVIAR PELÍCULA",
+            "send_legal": "Al hacer clic en '{{button_text}}' estás indicando que tienes el consentimiento de tu amigo para compartir con nosotros su correo electrónico.",
+            "to": "Para",
+            "your_name": "Tu nombre"
+          },
+          "go_banner": "Disfruta gratis de esta película en cines con {{mubi_go}}",
+          "go_banner_go_subscriber": "Ver en cines con {{mubi_go}}",
+          "go_banner_go_subscriber_us": "Ver en el cine con {{mubi_go}}",
+          "go_banner_learn_more": "Más información",
+          "go_banner_regular": "Una selección {{mubi_go}}. {{br_on_mobile}} Ve al cine cada semana a ver una película cuidadosamente seleccionada.",
+          "go_banner_tell_me_more": "Quiero saber más",
+          "go_banner_theaters": "Ve esta película gratis en el cine con {{mubi_go}}",
+          "go_banner_us": "Una selección {{mubi_go}}. {{br_on_mobile}} Ve al cine cada semana a ver una película cuidadosamente seleccionada.",
+          "industry_event_entries": {
+            "header": "Premios y Festivales",
+            "meta_description": "Premios y festivales de la película '{{film_title}}'",
+            "show_all_link_title_attr": "Ver todos los premios y festivales"
+          },
+          "in_partnership_with": "En colaboración con",
+          "in_these_lists": "En estas listas",
+          "list_languages": {
+            "more": "{{count}} más"
+          },
+          "more_episodes": "Más episodios",
+          "notebook_posts": {
+            "header": "Artículos de Notebook"
+          },
+          "not_showing": "Esta película no está en cartelera ahora mismo en MUBI, pero hay muchas otras excelentes películas que sí. Explora lo que está {{showing}}",
+          "no_ratings_text": "Añade la primera reseña de esta película",
+          "our_take": "Por qué verla",
+          "page_title_watchable": "Ver {{film_title}} en MUBI",
+          "program_notes": {
+            "essay": "Ensayo",
+            "read_essay": "Leer más",
+            "video_essay": "Videoensayo",
+            "watch_essay": "Ver ensayo"
+          },
+          "ratings": "Clasificación",
+          "ratings_header": "¿Qué dicen los demás?",
+          "ratings_page": {
+            "film_ratings_meta_description": "Calificación promedio: {{average_rating}}/10 de entre {{number_of_ratings}} calificaciones",
+            "film_ratings_title": "Calificaciones y reseñas de {{film_title}} en MUBI",
+            "film_ratings_title_with_page_number": "Calificaciones y reseñas de {{film_title}} en MUBI: página {{page_number}}",
+            "filters": {
+              "all": "Todas las reseñas",
+              "followees": "De gente que sigo",
+              "non_followees": "De gente que no sigo"
+            },
+            "header": "Calificaciones y reseñas",
+            "no_filtered_reviews": "{{no_reviews}}, explorar todas las reseñas",
+            "no_followers": "No hay reseñas de gente que estés siguiendo",
+            "no_not_followers": "No hay reseñas de gente que no estés siguiendo",
+            "sorts": {
+              "id": "Más reciente",
+              "overall": "Calificación",
+              "popularity": "Más popular"
+            },
+            "sort_by": "Organizar por:",
+            "title": "Lista de calificaciones de películas en MUBI"
+          },
+          "rating_page": {
+            "likers_header": "A quienes les gusta"
+          },
+          "related_cast_page": {
+            "all_titles": "Todos los títulos",
+            "no_results": "No encontramos ningún miembro del reparto que sea así exactamente. Prueba a cambiar tu búsqueda.",
+            "page_description": "Una de las mayores listas de directores y actores de MUBI. Los actores de esta lista están clasificados de acuerdo a las calificaciones otorgadas por los usuarios de MUBI.",
+            "page_title": "{{filmTitle}} - Reparto y equipo en MUBI",
+            "sort_options": {
+              "popular": "Más populares",
+              "relevant": "Relevante"
+            },
+            "sub_header": "Reparto y equipo"
+          },
+          "related_films": "Relacionadas",
+          "related_films_showing": "MÁS CONTENIDO SIMILAR",
+          "related_film_now_showing": {
+            "related": "{{this_film}} no está disponible en este momento, pero puedes echarle un vistazo a {{related_film}}, de {{related_directors}}, que está en la cartelera de MUBI ahora mismo.",
+            "same_director": "{{this_film}} no está en cartelera en estos momentos, pero sí está {{related_film}}, dirigida también por {{directors}}."
+          },
+          "share_copy": "Me encanta esta película: '{{title}}'",
+          "subscribe_page": {
+            "watch_movies": {
+              "any_screen": "En cualquier pantalla o dispositivo, en cualquier lugar.",
+              "beautiful": "Ve películas preciosas, seleccionadas a mano.",
+              "mobile_tv": "Disponibles en celulares y televisiones",
+              "stream_or_download": "Ve nuestras películas en streaming o descárgalas, en cualquier momento."
+            },
+            "what_showing": {
+              "first_line": "DESDE PELÍCULAS CLÁSICAS DE CULTO, HASTA OBRAS MAESTRAS MODERNAS.",
+              "pitch": "El mejor cine de todas partes. Seleccionado por cinéfilos. A mano.\nDesde los mejores directores de todos los tiempos, hasta los mejores directores nuevos.\nDe voces y visionarios de todo el planeta.",
+              "second_line": "DESDE LOS MEJORES DIRECTORES DE LA HISTORIA, HASTA LOS MEJORES DIRECTORES NUEVOS.",
+              "third_line": "PELÍCULAS DE TODOS LOS LUGARES DEL MUNDO."
+            }
+          },
+          "synopsis": "Sinopsis",
+          "watch_film": "Ve {{film_title}}",
+          "winner": "GANADOR"
+        }
+      },
+      "film_player": {
+        "film_player": {
+          "audio": "Audio",
+          "audio_subtitles": "Audio/Subtítulos",
+          "contains": "Contiene",
+          "content_warning_settings": {
+            "settings": "Configuración",
+            "settings_action": "Desactivar advertencias de contenido"
+          },
+          "credits_overlay": {
+            "gift_for_free": "Regálale esta película a una amistad gratis.",
+            "rate": "Calificar",
+            "rate_gift": "Calificar y regalar",
+            "up_next_cta": "Siguiente episodio"
+          },
+          "error_message": {
+            "check_browser_extension": "Verificando que no tengas instaladas en tu navegador extensiones que puedan bloquear nuestro reproductor.",
+            "check_internet": "Verificando tu conexión a internet.",
+            "error_code": "Código de error:",
+            "notified": "Se ha enviado una notificación al equipo de soporte técnico de MUBI.",
+            "sorry": "Lo sentimos, algo no va bien.",
+            "try": "Intenta esto:",
+            "unavailable": "{{film}} no está disponible",
+            "upgrade_your_browser": "Actualizando tu navegador a uno compatible. Para obtener ayuda visita nuestra {{link}}.",
+            "upgrade_your_browser_link": "Página de soporte técnico"
+          },
+          "error_message_cdm_revoked": {
+            "information": "Al parecer tu navegador o sistema operativo actuales no permiten la reproducción segura de video. Actualiza a una versión más reciente para seguir viendo.\n\nPara mayor información, consulta nuestro {{information_link}}",
+            "information_link": "página de soporte técnico",
+            "title": "Error de reproducción: Actualización requerida"
+          },
+          "failed_to_init_player": "Error al iniciar el reproductor",
+          "fullscreen_enter": "Ir a pantalla completa",
+          "fullscreen_exit": "Salir de pantalla completa",
+          "none": "Ninguno",
+          "page_title": "|{{film_title}} ({{film_year}}) | MUBI",
+          "parental_control": {
+            "forgot_pin": "¿Olvidaste tu código PIN?",
+            "incorrect_pin": "Código PIN incorrecto.",
+            "parental_control_link": "configuración de control parental",
+            "title": "Ingresa tu código PIN parental para comenzar a visualizar",
+            "try_again": "Por favor, inténtalo de nuevo.",
+            "visit_settings": "Visita {{parental_control_link}}"
+          },
+          "preroll": {
+            "skip_button": "Omitir"
+          },
+          "preview": "Previsualizar",
+          "preview_upcase": "PREVISUALIZAR",
+          "resume": "Reanudar",
+          "something_wrong": "¿Hay algún problema? Cuéntanos.",
+          "start_film": "INICIAR PELÍCULA",
+          "streaming_report": {
+            "audio_desc": "Por ejemplo, demasiado bajo, se corta o no está sincronizado con la película.",
+            "audio_name": "Audio",
+            "having_issue": "¿Hay algún problema?",
+            "investigate": "Lo investigaremos y nos pondremos en contacto contigo si es necesario.",
+            "message_error": "Danos información sobre el problema",
+            "placeholder": "Danos la información más detallada posible, como pueden ser ejemplos, códigos de tiempo, etc.",
+            "select_all_apply": "Selecciona todo lo que sea relevante",
+            "speed_test": "Prueba nuestro {{speed_test_link}}",
+            "speed_test_link": "prueba de velocidad",
+            "streaming_desc": "Por ejemplo, demasiado tiempo para cargar o la película no se reproduce.",
+            "streaming_name": "Streaming o conexión",
+            "subtitle_desc": "Por ejemplo, no están sincronizados con la película o directamente no hay.",
+            "subtitle_name": "Subtítulos",
+            "subtitle_options": {
+              "display": "Errores en los subtítulos",
+              "missing": "Secciones de diálogo sin subtítulos",
+              "other": "Otro problema",
+              "spelling": "Traducciones de mala calidad o faltas de ortografía",
+              "sync": "Los subtítulos no se sincronizan correctamente con el audio"
+            },
+            "subtitle_sub_settings": "configuración",
+            "subtitle_sub_size": "Puedes cambiar el tamaño de los subtítulos en {{sub_settings}}",
+            "thank_you": "Gracias",
+            "video_desc": "Por ejemplo, pantalla en blanco, mala imagen o simplemente no se ve bien.",
+            "video_name": "Video"
+          },
+          "subtitles": "Subtítulos",
+          "trailer_upcase": "TRÁILER",
+          "update_chrome_due_to_cdm": "Estás utilizando una versión anterior de Chrome. Actualiza tu navegador para obtener las últimas mejoras de seguridad y rendimiento."
+        }
+      },
+      "go": {
+        "go": {
+          "123_alt_text": "Captura de pantalla de la app MUBI GO",
+          "all_the_movies": "todas las películas que puedas ver en mubi",
+          "all_the_movies_us": "todas las películas que puedas ver en streaming",
+          "available_in_select_cities": "MUBI GO está disponible en {{select_cities}}",
+          "banner": {
+            "available_soon": "MUBI GO no está disponible ahora mismo, pero lo estará pronto. Por ahora, puedes disfrutar de nuestra colección de películas cuidadosamente seleccionadas {{available_soon_link}}.",
+            "available_soon_link": "disponible para ver en streaming en cualquier momento",
+            "country": {
+              "de": "MUBI GO Alemania",
+              "ie": "MUBI GO Irlanda",
+              "in": "MUBI GO India",
+              "uk": "MUBI GO Reino Unido",
+              "us": "MUBI GO EE. UU."
+            },
+            "is_available": "Estás viendo salas de {{location}}. Haz clic aquí para ver que está pasando en los cines que tienes más cerca.",
+            "not_available": "Estás viendo salas de {{location}}. Este servicio no está disponible actualmente en donde estás."
+          },
+          "benefit_covid": "Consigue una entrada para ver cine cuidadosamente seleccionado cada semana. {{linebreak}}Y además podrás ver una nueva película todos los días.",
+          "benefit_gb": "Obtén semanalmente una entrada para ver películas cuidadosamente seleccionadas. {{linebreak}}Y ve el mejor cine en streaming en cualquier momento. {{linebreak}}Por tan solo {{price}} al mes.",
+          "benefit_india": "Ahora puedes verla en PVR Cinemas: {{linebreak}}una nueva entrada para ver cine cuidadosamente seleccionado cada semana {{linebreak}}además de películas preciosas que podrás ver en cualquier momento.",
+          "benefit_price": "Solo {{price}} al mes.",
+          "benefit_price_us": "Solo {{price}} al mes, por un tiempo limitado.",
+          "benefit_ticket": "Una entrada para una película cuidadosamente seleccionada todas las semanas.",
+          "benefit_us": "Obtén semanalmente una entrada para ver películas cuidadosamente seleccionadas. {{linebreak}} Y ve el mejor cine en streaming en cualquier momento.",
+          "cancel_anytime": "Cancela cuando quieras.",
+          "cinema_ticket_every_week": "un boleto de cine por semana",
+          "cinema_ticket_every_week_us": "una entrada para ir al cine cada semana",
+          "cities": {
+            "atlanta": "Atlanta",
+            "berlin": "Berlín",
+            "boston": "Boston",
+            "chicago": "Chicago",
+            "cologne": "Colonia",
+            "dallas": "Dallas",
+            "denver": "Denver",
+            "frankfurt": "Fráncfort",
+            "hamburg": "Hamburgo",
+            "los_angeles": "Los Ángeles",
+            "munich": "Múnich",
+            "new_york_city": "Ciudad de Nueva York",
+            "portland": "Portland",
+            "san_diego": "San Diego",
+            "san_francisco": "San Francisco",
+            "seattle": "Seattle",
+            "washington_dc": "Washington, DC"
+          },
+          "coming_soon_on_date": "Llega muy pronto,\n{{date}}",
+          "coming_soon_us": {
+            "included_subscription": "Incluida con tu suscripción por un tiempo limitado.",
+            "see_more_movies": "Disfruta viendo más películas {{linebreak}} con MUBI GO",
+            "showing": "Descubre qué hay en cartelera",
+            "stream_now_movies_later": "Comienza a ver películas online ahora. Y después ve al cine."
+          },
+          "discounted_price_monthly": "solo {{price}} {{discounted_price}} tu primer mes.",
+          "download": "Descargar",
+          "download_app_to_redeem": "Descarga la aplicación MUBI GO para consultar los cines asociados y canjear tu entrada.",
+          "download_our_app_on": "Descarga nuestra aplicación en",
+          "download_to_claim": "Descarga la aplicación MUBI GO \npara solicitar tu entrada gratuita",
+          "external_subscription": "Te suscribiste a MUBI a través de {{payment_platform}}",
+          "faq": {
+            "faq_link": "¿Aún tienes preguntas? {{visit_link}}",
+            "visit_link": "Visita nuestra sección de preguntas frecuentes."
+          },
+          "film_of_the_week": "Película de la semana",
+          "free_with_mubi_go": "Gratis con MUBI GO",
+          "get_offer": "Obtener oferta",
+          "get_show_times": "obtén horarios de proyección en la aplicación mubi go",
+          "get_show_times_short": "obtener horarios",
+          "go_coming_soon": {
+            "coming_soon": "Próximamente",
+            "line1": "Ve a ver una nueva película cuidadosamente seleccionada",
+            "line2": "En un cine de verdad",
+            "line3": "Cada semana"
+          },
+          "go_see_a_movie": "¡go! ve al cine",
+          "hand_picked_cinema_ticket": "Una entrada cada semana para ver cine cuidadosamente seleccionado.",
+          "hand_picked_cinema_ticket_us": "Una entrada para ver cine cuidadosamente seleccionado cada semana.",
+          "if_in_uk": "Si te encuentras en el Reino Unido y has recibido este mensaje por error, envíanos un email a {{email}}",
+          "in_cinemas_this_week": "en cines esta semana",
+          "in_theaters_this_week": "en cines esta semana",
+          "lets_go": "Vamos",
+          "live_in_select_cities": "Disponible ahora en algunas ciudades seleccionadas. {{linebreak}} Pronto en todo el país.",
+          "monthly_price": "Solo {{price}} al mes.",
+          "nationwide_soon": "Pronto en todo el país.",
+          "next_weeks_film": "La película de la próxima semana",
+          "now_playing": "Algunas películas seleccionadas anteriormente que pueden estar proyectándose cerca de ti.",
+          "now_playing_in_our_cinemas": "Funciones disponibles en nuestros cines asociados.\nConsulta disponibilidad en tu área usando nuestra app.",
+          "past_films": "Si la película de esta semana no se encuentra disponible en el cine asociado más cercano a tu localidad, habrá otra película seleccionada a mano que sí lo esté.",
+          "please_upgrade": "Actualiza tu suscripción en la aplicación MUBI GO.",
+          "renews_automatically": "Se renueva automáticamente.",
+          "select_cities": "ciudades seleccionadas",
+          "sign_up": "registrarte",
+          "step1": "Seleccionamos una gran\npelícula cada semana",
+          "step1_us": "Seleccionamos una gran película {{linebreak}} nueva cada semana",
+          "step2": "Tú escoges el cine \ny la hora de la función",
+          "step2_us": "Escoge un cine {{linebreak}} y una hora",
+          "step3": "Coge tu código y disfruta la película",
+          "step3_us": "Coge tu código {{linebreak}} y disfruta",
+          "step_one": "Nosotros elegimos una {{em}} cada semana",
+          "step_one_em": "gran\npelícula",
+          "step_three": "Genera tu código y\n{{em}}",
+          "step_three_em": "ve al cine",
+          "step_two": "Tú {{em}}\ny un horario de proyección",
+          "step_two_em": "escoge un cine",
+          "unavailable": "MUBI GO no está disponible actualmente en tu ubicación.",
+          "unavailable_india_anon": "Lo sentimos, no es posible registrarse en MUBI GO en este momento.\n\nPero échale un vistazo a nuestro maravilloso catálogo para ver en streaming en {{link}}.",
+          "unavailable_india_basic": "Lo sentimos, no es posible actualizar a una membresía de MUBI GO en este momento.\n\nPero no te preocupes, hay mucho que ver en streaming en {{link}}.",
+          "upgrade_prompt": {
+            "benefit1": "Pásate a MUBI GO y consigue {{linebreak}}cada semana una entrada para ver cine cuidadosamente seleccionado.",
+            "benefit2": "Y acceso total a MUBI. {{linebreak}}Todo por {{price}} al {{period}}.",
+            "month_period": "mes",
+            "upgrade": "Cambiar de plan",
+            "year_period": "año"
+          },
+          "watch_other": "Para ver otras películas cuidadosamente seleccionadas, ve a {{link}}",
+          "yearly_price": "Solo {{price}} al año."
+        }
+      },
+      "showing": {
+        "showing": {
+          "collections": "colecciones",
+          "faq": {
+            "answer_five": "MUBI es flexible. Puedes cancelar o administrar tu suscripción en cualquier momento con unos pocos clics. Sin comisiones por cancelación. Inicia o cierra tu cuenta cuando quieras. Mantén el acceso hasta el final de tu periodo de facturación.",
+            "answer_four": "Los miembros nuevos pueden empezar con su primera prueba gratuita de 7 días para descubrir MUBI. Una vez finalizada la prueba, la suscripción se renueva automáticamente, pero puedes cancelarla en cualquier momento durante el periodo de prueba para evitar que te cobren.\nPara los planes mensuales y anuales actuales, visita: <a href=\"/memberships\">mubi.com/memberships</a>.",
+            "answer_go": "MUBI GO es nuestra membresía premium. Incluye acceso completo a todas las películas y colecciones de MUBI, además de un estreno nuevo semanal, cuidadosamente seleccionado, para ver en cines participantes en países seleccionados.",
+            "answer_one": "MUBI es un servicio de streaming y una empresa de cine cuidadosamente seleccionado que se dedica al mejor cine. Apoyamos películas visionarias, de directores icónicos y voces emergentes, que nuestros curadores seleccionan cuidadosamente para compartirlas con públicos en el mundo entero.",
+            "answer_three": "Puedes usar MUBI en hasta 5 dispositivos registrados, con 2 pantallas disponibles al mismo tiempo. También puedes descargar películas y series en HD para verlas sin conexión en dispositivos móviles compatibles.",
+            "answer_two": "MUBI es un lugar para descubrir películas y series ambiciosas de cineastas visionarios, desde directores icónicos hasta autores emergentes, seleccionadas cuidadosamente por nuestros curadores. Nuestro cartel seleccionado a mano incluye estrenos MUBI galardonados, descubrimientos de festivales y colecciones seleccionadas como son nuestras funciones dobles, nuestras retrospectivas de cineastas y nuestros focos en los principales festivales de cine.",
+            "learn_more": "descubrir más acerca de MUBI",
+            "question_five": "¿Cómo cancelo / administro mi suscripción?",
+            "question_four": "¿Cómo son los planes, los precios y la prueba gratuita?",
+            "question_go": "¿Qué es MUBI GO?",
+            "question_one": "¿Qué es MUBI?",
+            "question_three": "¿Dónde puedo ver MUBI? (dispositivos y sin conexión)",
+            "question_two": "¿Qué puedo ver en MUBI?",
+            "title": "preguntas frecuentes"
+          },
+          "film_of_the_day": "Película del día",
+          "library": "biblioteca",
+          "meta_description": "Ve en streaming películas exigentes realizadas por cineastas visionarios, desde autores nuevos hasta directores icónicos. Todo seleccionado cuidadosamente por nosotros.",
+          "more_info": "Más información",
+          "part_of_film_group": "Incluida en {{film_group}}",
+          "prev_film_of_day": "Película del día",
+          "subscription_plans": {
+            "curated_streaming": "Streaming con curaduría.",
+            "learn_more": "más información",
+            "plan_frequency": "Frecuencia del plan",
+            "premium_benefits": "+ Entrada semanal al cine {{learn_more_link}}",
+            "student": "¿Eres estudiante? {{student_link}}",
+            "student_link": "Plan para estudiantes",
+            "title": "El mejor cine del mundo. Ahora mismo. {{linebreak}}Aquí mismo.",
+            "yearly_best_saving": "Mejor ahorro"
+          },
+          "title": "Películas En Cartelera en MUBI",
+          "today": "Hoy",
+          "watch_cinemas_with": "ver en cines con {{mubi_go}}",
+          "yesterday": "Ayer"
+        }
+      },
+      "memberships": {
+        "memberships": {
+          "benefits": {
+            "cancel": "Cancela cuando quieras.",
+            "cinema_ticket": "Una entrada cada semana para ver cine cuidadosamente seleccionado.",
+            "cinema_ticket_short": "Una entrada de cine \ntodas las semanas.",
+            "download": "Descarga películas con iOs o Android.",
+            "download_with_line_break": "Descarga películas\ncon iOs o Android.",
+            "incredible_cinema": "Cine grandioso para ver en streaming en cualquier momento.",
+            "new_film_every_day": "El mejor cine para ver en streaming en cualquier momento.",
+            "no_ads": "Sin anuncios.",
+            "trial": "{{number_of_days}} días de prueba gratis",
+            "turkey_7_days_free": "Primeros 7 días gratis"
+          },
+          "billed_as": "Cobrado en un pago",
+          "description": "Elige el plan de suscripción a MUBI que sea adecuado para ti. A partir de {{amount}}/month. Comienza con 7 días gratis.",
+          "header_subtitle": "Membresías mensuales y anuales disponibles.",
+          "header_subtitle_premium": "Actualiza, cambia a un plan más económico o cancela en cualquier momento.",
+          "header_title": "Suscripciones",
+          "mubi_memberships": {
+            "mubi_classic": "MUBI Classic",
+            "mubi_go": "MUBI GO",
+            "mubi_premiere": "MUBI Premiere"
+          },
+          "period": {
+            "amount_per_period": "{{amount}}/mes",
+            "month_price": "Precio mensual",
+            "year_price": "Precio anual"
+          },
+          "pricing_with_trial": "{{amount}}/mensual después de la prueba.\nCancela en cualquier momento.",
+          "save_with_yearly": "<strong>Ahorra {{save_amount}}</strong> con una suscripción anual.",
+          "saving": "Ahorra {{save_amount}}",
+          "show_monthly": "Mostrar precio mensual",
+          "show_yearly": "Mostrar precio anual",
+          "start_membership": "Comienza‪ tu suscripción",
+          "students": {
+            "cta": "Haz clic aquí",
+            "header": "¿Eres estudiante?",
+            "subheader": "Excelente."
+          },
+          "title": "Elige tu plan para descubrir el mejor cine",
+          "update_membership": "Actualiza tu membresía"
+        }
+      },
+      "cast_show": {
+        "cast_show": {
+          "available_to_watch": "Disponibles para ver",
+          "credit": {
+            "actor": "Actor/Actriz",
+            "animator": "Animador",
+            "choreographer": "Coreografía",
+            "cinematographer": "Dirección de fotografía",
+            "composer": "Composición musical",
+            "costume_designer": "Diseño de vestuario",
+            "editor": "Edición",
+            "playwright": "Dramaturgia",
+            "production_designer": "Diseño de producción",
+            "screenwriter": "Guionista",
+            "writer": "Texto original"
+          },
+          "credit_joining_and": "y",
+          "more_films": "más películas",
+          "page_description": "Las películas de {{cast_crew_name}} son {{notable_films}}",
+          "page_title": "{{cast_crew_name}}: Películas, biografía y listas en MUBI",
+          "photo_of": "Foto de {{cast_crew_name}}",
+          "titles": {
+            "one": "{{count}} título",
+            "other": "{{count}} títulos"
+          },
+          "winner": "ganador"
+        }
+      }
+    }
+  },
+  "page": "/films/[filmSlug]",
+  "query": {
+    "filmSlug": "making-marie-antoinette"
+  },
+  "buildId": "2026.11.06.1018-e814b7e",
+  "assetPrefix": "https://assets.mubicdn.net/fe/2026.11.06.1018-e814b7e",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "gip": true,
+  "appGip": true,
+  "locale": "es",
+  "locales": [
+    "default",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pt",
+    "tr",
+    "en",
+    "es-es"
+  ],
+  "defaultLocale": "default",
+  "scriptLoader": []
+}

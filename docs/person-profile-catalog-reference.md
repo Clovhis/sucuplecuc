@@ -1,15 +1,15 @@
 # Catalogo de personas con ficha exclusiva
 
-Generado automaticamente el 2026-11-05. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
+Generado automaticamente el 2026-11-06. Fuente: src/data/personProfiles.ts y src/data/personProfileCatalogCredits.generated.ts
 
 Total de personas con ficha exclusiva: 791
-Total de vínculos de películas del catálogo: 4486
+Total de vínculos de películas del catálogo: 4495
 
 Si un nombre no aparece en esta lista, todavía no tiene página propia en el sitio.
 
 | Nombre | Slug | Ruta | Roles | Pelis conectadas (`knownFor`) | Fuentes |
 | --- | --- | --- | --- | ---: | ---: |
-| Aaron Eckhart | `aaron-eckhart` | /personas/aaron-eckhart/ | Actor | 5 | 6 |
+| Aaron Eckhart | `aaron-eckhart` | /personas/aaron-eckhart/ | Actor | 6 | 6 |
 | Aaron Taylor-Johnson | `aaron-taylor-johnson` | /personas/aaron-taylor-johnson/ | Actor | 4 | 4 |
 | Adam Driver | `adam-driver` | /personas/adam-driver/ | Actor | 6 | 7 |
 | Adam McKay | `adam-mckay` | /personas/adam-mckay/ | Director / Guionista / Productor | 4 | 6 |
@@ -94,7 +94,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Benedict Cumberbatch | `benedict-cumberbatch` | /personas/benedict-cumberbatch/ | Actor | 7 | 7 |
 | Benjamín Naishtat | `benjamin-naishtat` | /personas/benjamin-naishtat/ | Director / Guionista | 2 | 4 |
 | Bill Hader | `bill-hader` | /personas/bill-hader/ | Actor / Guionista | 8 | 5 |
-| Bill Murray | `bill-murray` | /personas/bill-murray/ | Actor | 7 | 4 |
+| Bill Murray | `bill-murray` | /personas/bill-murray/ | Actor | 8 | 4 |
 | Bill Nighy | `bill-nighy` | /personas/bill-nighy/ | Actor | 4 | 6 |
 | Bill Skarsgård | `bill-skarsgard` | /personas/bill-skarsgard/ | Actor | 4 | 6 |
 | Billy Crudup | `billy-crudup` | /personas/billy-crudup/ | Actor | 6 | 6 |
@@ -221,7 +221,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Demián Rugna | `demian-rugna` | /personas/demian-rugna/ | Director / Guionista | 1 | 4 |
 | Demián Salomón | `demian-salomon` | /personas/demian-salomon/ | Actor | 2 | 4 |
 | Denis Villeneuve | `denis-villeneuve` | /personas/denis-villeneuve/ | Director | 6 | 7 |
-| Dennis Quaid | `dennis-quaid` | /personas/dennis-quaid/ | Actor | 7 | 5 |
+| Dennis Quaid | `dennis-quaid` | /personas/dennis-quaid/ | Actor | 8 | 5 |
 | Denzel Washington | `denzel-washington` | /personas/denzel-washington/ | Actor / Director | 24 | 6 |
 | Dev Patel | `dev-patel` | /personas/dev-patel/ | Actor | 3 | 7 |
 | Diane Keaton | `diane-keaton` | /personas/diane-keaton/ | Actriz | 16 | 7 |
@@ -267,7 +267,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Ethan Hawke | `ethan-hawke` | /personas/ethan-hawke/ | Actor | 9 | 4 |
 | Eugenia Alonso | `eugenia-alonso` | /personas/eugenia-alonso/ | Actriz | 1 | 5 |
 | Eva De Dominici | `eva-de-dominici` | /personas/eva-de-dominici/ | Actriz | 1 | 5 |
-| Eva Green | `eva-green` | /personas/eva-green/ | Actriz | 4 | 6 |
+| Eva Green | `eva-green` | /personas/eva-green/ | Actriz | 5 | 6 |
 | Eva Marie Saint | `eva-marie-saint` | /personas/eva-marie-saint/ | Actriz | 2 | 8 |
 | Eva Mendes | `eva-mendes` | /personas/eva-mendes/ | Actriz | 5 | 5 |
 | Evangeline Lilly | `evangeline-lilly` | /personas/evangeline-lilly/ | Actriz | 3 | 6 |
@@ -389,7 +389,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Jesse Eisenberg | `jesse-eisenberg` | /personas/jesse-eisenberg/ | Actor | 9 | 6 |
 | Jesse Plemons | `jesse-plemons` | /personas/jesse-plemons/ | Actor | 3 | 6 |
 | Jessica Alba | `jessica-alba` | /personas/jessica-alba/ | Actriz | 3 | 3 |
-| Jessica Chastain | `jessica-chastain` | /personas/jessica-chastain/ | Actriz | 6 | 6 |
+| Jessica Chastain | `jessica-chastain` | /personas/jessica-chastain/ | Actriz | 7 | 6 |
 | Jessica Harper | `jessica-harper` | /personas/jessica-harper/ | Actriz | 3 | 3 |
 | Jessica Lange | `jessica-lange` | /personas/jessica-lange/ | Actriz | 7 | 4 |
 | Jessie Buckley | `jessie-buckley` | /personas/jessie-buckley/ | Actriz | 3 | 7 |
@@ -486,7 +486,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Leonor Benedetto | `leonor-benedetto` | /personas/leonor-benedetto/ | Actriz / Directora | 1 | 5 |
 | Leslie Mann | `leslie-mann` | /personas/leslie-mann/ | Actriz | 5 | 5 |
 | Leticia Brédice | `leticia-bredice` | /personas/leticia-bredice/ | Actriz | 1 | 5 |
-| Liam Neeson | `liam-neeson` | /personas/liam-neeson/ | Actor | 25 | 6 |
+| Liam Neeson | `liam-neeson` | /personas/liam-neeson/ | Actor | 26 | 6 |
 | Linda Hamilton | `linda-hamilton` | /personas/linda-hamilton/ | Actriz | 3 | 6 |
 | Liv Tyler | `liv-tyler` | /personas/liv-tyler/ | Actriz | 4 | 5 |
 | Lorena Vega | `lorena-vega` | /personas/lorena-vega/ | Actriz / Directora / Dramaturga | 1 | 5 |
@@ -524,7 +524,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | María Merlino | `maria-merlino` | /personas/maria-merlino/ | Actriz / Cantante | 0 | 7 |
 | Mario Alarcón | `mario-alarcon` | /personas/mario-alarcon/ | Actor | 1 | 6 |
 | Marion Cotillard | `marion-cotillard` | /personas/marion-cotillard/ | Actriz | 4 | 6 |
-| Marisa Tomei | `marisa-tomei` | /personas/marisa-tomei/ | Actriz | 4 | 5 |
+| Marisa Tomei | `marisa-tomei` | /personas/marisa-tomei/ | Actriz | 5 | 5 |
 | Mark Hamill | `mark-hamill` | /personas/mark-hamill/ | Actor | 9 | 6 |
 | Mark Ruffalo | `mark-ruffalo` | /personas/mark-ruffalo/ | Actor | 11 | 6 |
 | Mark Rylance | `mark-rylance` | /personas/mark-rylance/ | Actor | 4 | 3 |
@@ -589,7 +589,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Muriel Santa Ana | `muriel-santa-ana` | /personas/muriel-santa-ana/ | Actriz | 2 | 5 |
 | Nacha Guevara | `nacha-guevara` | /personas/nacha-guevara/ | Actriz / Cantante / Directora | 1 | 5 |
 | Nahuel Pérez Biscayart | `nahuel-perez-biscayart` | /personas/nahuel-perez-biscayart/ | Actor | 2 | 7 |
-| Naomi Watts | `naomi-watts` | /personas/naomi-watts/ | Actriz | 4 | 3 |
+| Naomi Watts | `naomi-watts` | /personas/naomi-watts/ | Actriz | 5 | 3 |
 | Natalia Meta | `natalia-meta` | /personas/natalia-meta/ | Directora / Guionista / Productora | 1 | 5 |
 | Natalia Oreiro | `natalia-oreiro` | /personas/natalia-oreiro/ | Actriz | 3 | 5 |
 | Natalie Portman | `natalie-portman` | /personas/natalie-portman/ | Actriz / Productora | 11 | 7 |
@@ -701,7 +701,7 @@ Si un nombre no aparece en esta lista, todavía no tiene página propia en el si
 | Sam Rockwell | `sam-rockwell` | /personas/sam-rockwell/ | Actor | 7 | 5 |
 | Sam Worthington | `sam-worthington` | /personas/sam-worthington/ | Actor | 5 | 7 |
 | Samara Weaving | `samara-weaving` | /personas/samara-weaving/ | Actriz | 1 | 7 |
-| Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 15 | 7 |
+| Samuel L. Jackson | `samuel-l-jackson` | /personas/samuel-l-jackson/ | Actor | 16 | 7 |
 | Sandra Bullock | `sandra-bullock` | /personas/sandra-bullock/ | Actriz | 11 | 4 |
 | Sandra Hüller | `sandra-huller` | /personas/sandra-huller/ | Actriz | 5 | 7 |
 | Santiago Mitre | `santiago-mitre` | /personas/santiago-mitre/ | Director | 2 | 7 |

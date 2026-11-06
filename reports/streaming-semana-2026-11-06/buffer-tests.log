@@ -1,0 +1,17 @@
+
+> la-posta-cine@0.0.1 test:buffer:x
+> node ./scripts/publish-buffer-x.test.mjs
+
+Buffer X publisher tests passed.
+✔ la guía genera un post de X con enlaces, hashtags y portada del sitio (0.7288ms)
+✔ rechaza rutas arbitrarias y portadas externas antes de publicar (0.2694ms)
+✔ un post existente de la misma guía bloquea la duplicación (0.1168ms)
+✔ la guía de salas usa cine, dos enlaces y una imagen local sin anunciar streaming (0.1508ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 76.8844

@@ -1,0 +1,2756 @@
+[
+  {
+    "i": 1,
+    "title": "Mi mejor amiga",
+    "year": 2026,
+    "slug": "mi-mejor-amiga-2026",
+    "path": "src/data/movies/mi-mejor-amiga-2026.json",
+    "duplicateCheck": {
+      "slug": "mi-mejor-amiga-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/mi-mejor-amiga-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/mi-mejor-amiga",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-02",
+    "originalYear": 2026,
+    "country": "BR",
+    "platforms": [
+      "Netflix"
+    ],
+    "offers": [
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82046358"
+      },
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82046358"
+      }
+    ],
+    "rating": {
+      "i": 1,
+      "title": "Mi mejor amiga",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt37458193/",
+      "raw": 6.6,
+      "scale": 10,
+      "votes": "0 Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 7,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 7
+    },
+    "category": "Comedia",
+    "genres": [
+      "Comedia"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/my_best_friend_2026",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/mi-mejor-amiga",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/mi-mejor-amiga"
+  },
+  {
+    "i": 4,
+    "title": "El secreto del orfebre",
+    "year": 2025,
+    "slug": "el-secreto-del-orfebre-2025",
+    "path": "src/data/movies/el-secreto-del-orfebre-2025.json",
+    "duplicateCheck": {
+      "slug": "el-secreto-del-orfebre-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/el-secreto-del-orfebre-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/el-secreto-del-orfebre-2025",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-02",
+    "originalYear": 2025,
+    "country": "ES",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6475ff6c-f9ec-42b2-ba27-1ceaa69bb3c5"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6475ff6c-f9ec-42b2-ba27-1ceaa69bb3c5"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6475ff6c-f9ec-42b2-ba27-1ceaa69bb3c5"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6475ff6c-f9ec-42b2-ba27-1ceaa69bb3c5"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-secreto-del-orfebre/umc.cmc.3aa6cbgl5m0f8c2fo0l3ive80?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1884967583"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-secreto-del-orfebre/umc.cmc.3aa6cbgl5m0f8c2fo0l3ive80?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1884967583"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-secreto-del-orfebre/umc.cmc.3aa6cbgl5m0f8c2fo0l3ive80?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1884967583"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-secreto-del-orfebre/umc.cmc.3aa6cbgl5m0f8c2fo0l3ive80?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1884967583"
+      }
+    ],
+    "rating": {
+      "i": 4,
+      "title": "El secreto del orfebre",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt32439773/",
+      "raw": 6.3,
+      "scale": 10,
+      "votes": 958,
+      "checkedAt": "2026-11-06",
+      "normalized": 6,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 6
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Fantasía"
+    ],
+    "genreSource": "https://www.justwatch.com/ar/pelicula/el-secreto-del-orfebre-2025",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/el-secreto-del-orfebre-2025",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/el-secreto-del-orfebre-2025"
+  },
+  {
+    "i": 11,
+    "title": "En la ruta del crimen",
+    "year": 2025,
+    "slug": "en-la-ruta-del-crimen-2025",
+    "path": "src/data/movies/en-la-ruta-del-crimen-2025.json",
+    "duplicateCheck": {
+      "slug": "en-la-ruta-del-crimen-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/en-la-ruta-del-crimen-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/en-la-ruta-del-crimen",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-03",
+    "originalYear": 2025,
+    "country": "CA, US",
+    "platforms": [
+      "Paramount Plus"
+    ],
+    "offers": [
+      {
+        "provider": "Paramount Plus",
+        "type": "FLATRATE",
+        "url": "https://www.paramountplus.com/movies/thieves-highway/ALVE01M678KBYYE7HR3THNE7WN02YV?searchReferral=&amp;utm_source=publisher"
+      },
+      {
+        "provider": "Paramount Plus",
+        "type": "FLATRATE",
+        "url": "https://www.paramountplus.com/movies/thieves-highway/ALVE01M678KBYYE7HR3THNE7WN02YV?searchReferral=&amp;utm_source=publisher"
+      },
+      {
+        "provider": "Paramount+ Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d302eee3-d763-4b0b-86fc-51fa420d16aa"
+      },
+      {
+        "provider": "Paramount+ Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d302eee3-d763-4b0b-86fc-51fa420d16aa"
+      }
+    ],
+    "rating": {
+      "i": 11,
+      "title": "En la ruta del crimen",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/thieves_highway_2025",
+      "raw": 18,
+      "scale": 100,
+      "votes": "50+ Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 2,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 2
+    },
+    "category": "Accion",
+    "genres": [
+      "Acción",
+      "Thriller",
+      "Crimen"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/thieves_highway_2025",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/en-la-ruta-del-crimen",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/en-la-ruta-del-crimen"
+  },
+  {
+    "i": 19,
+    "title": "La mangosta",
+    "year": 2026,
+    "slug": "la-mangosta-2026",
+    "path": "src/data/movies/la-mangosta-2026.json",
+    "duplicateCheck": {
+      "slug": "la-mangosta-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/la-mangosta-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/la-mangosta",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-04",
+    "originalYear": 2026,
+    "country": "AU, US",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2cae12ae-111f-4b19-b270-d12f7d2c573c"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2cae12ae-111f-4b19-b270-d12f7d2c573c"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2cae12ae-111f-4b19-b270-d12f7d2c573c"
+      }
+    ],
+    "rating": {
+      "i": 19,
+      "title": "La mangosta",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/the_mongoose",
+      "raw": 61,
+      "scale": 100,
+      "votes": "100+ Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 6,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 6
+    },
+    "category": "Accion",
+    "genres": [
+      "Acción",
+      "Thriller"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/the_mongoose",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/la-mangosta",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/la-mangosta"
+  },
+  {
+    "i": 21,
+    "title": "La razón de estar contigo: Una Navidad perfecta",
+    "year": 2026,
+    "slug": "la-razon-de-estar-contigo-una-navidad-perfecta-2026",
+    "path": "src/data/movies/la-razon-de-estar-contigo-una-navidad-perfecta-2026.json",
+    "duplicateCheck": {
+      "slug": "la-razon-de-estar-contigo-una-navidad-perfecta-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/la-razon-de-estar-contigo-una-navidad-perfecta-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/a-dogs-perfect-christmas",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-04",
+    "originalYear": 2026,
+    "country": "US",
+    "platforms": [
+      "Netflix"
+    ],
+    "offers": [
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82090597"
+      },
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82090597"
+      }
+    ],
+    "rating": {
+      "i": 21,
+      "title": "La razón de estar contigo: Una Navidad perfecta",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/a_dogs_perfect_christmas",
+      "raw": 98,
+      "scale": 100,
+      "votes": "100+ Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 10,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 8
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Comedia",
+      "Familiar"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/a_dogs_perfect_christmas",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/a-dogs-perfect-christmas",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/a-dogs-perfect-christmas"
+  },
+  {
+    "i": 26,
+    "title": "Blood & Rust",
+    "year": 2026,
+    "slug": "blood-and-rust-2026",
+    "path": "src/data/movies/blood-and-rust-2026.json",
+    "duplicateCheck": {
+      "slug": "blood-and-rust-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/blood-and-rust-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/blood-y-rust",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-04",
+    "originalYear": 2026,
+    "country": "US",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca008a07-313a-49d2-9328-2864d6611b43"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ca008a07-313a-49d2-9328-2864d6611b43"
+      },
+      {
+        "provider": "Plex",
+        "type": "ADS",
+        "url": "https://watch.plex.tv/movie/blood-and-rust?autoplay=1&utm_content=65ca72470a8f3c2de645b724&utm_medium=deeplink&utm_source=justWatch-v2-catalog"
+      },
+      {
+        "provider": "Plex",
+        "type": "ADS",
+        "url": "https://watch.plex.tv/movie/blood-and-rust?autoplay=1&utm_content=65ca72470a8f3c2de645b724&utm_medium=deeplink&utm_source=justWatch-v2-catalog"
+      }
+    ],
+    "rating": {
+      "i": 26,
+      "title": "Blood & Rust",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt30342167/",
+      "raw": 4.6,
+      "scale": 10,
+      "votes": "Fewer than 50 Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 5,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 5
+    },
+    "category": "Terror",
+    "genres": [
+      "Terror",
+      "Acción"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/blood_and_rust",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/blood-y-rust",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/blood-y-rust"
+  },
+  {
+    "i": 27,
+    "title": "El precio de la violencia",
+    "year": 2025,
+    "slug": "el-precio-de-la-violencia-2025",
+    "path": "src/data/movies/el-precio-de-la-violencia-2025.json",
+    "duplicateCheck": {
+      "slug": "el-precio-de-la-violencia-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/el-precio-de-la-violencia-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/the-roughneck",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-04",
+    "originalYear": 2025,
+    "country": "US",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b4224679-c3bc-42a6-81f8-d71764bedcf9"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b4224679-c3bc-42a6-81f8-d71764bedcf9"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b4224679-c3bc-42a6-81f8-d71764bedcf9"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b4224679-c3bc-42a6-81f8-d71764bedcf9"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b4224679-c3bc-42a6-81f8-d71764bedcf9"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-precio-de-la-violencia/umc.cmc.31hcrkwi063ym1mkvixkfe8l9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1869092716"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-precio-de-la-violencia/umc.cmc.31hcrkwi063ym1mkvixkfe8l9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1869092716"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b4224679-c3bc-42a6-81f8-d71764bedcf9"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-precio-de-la-violencia/umc.cmc.31hcrkwi063ym1mkvixkfe8l9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1869092716"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-precio-de-la-violencia/umc.cmc.31hcrkwi063ym1mkvixkfe8l9?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1869092716"
+      }
+    ],
+    "rating": {
+      "i": 27,
+      "title": "El precio de la violencia",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt35303601/",
+      "raw": 5,
+      "scale": 10,
+      "votes": "Fewer than 50 Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 5,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 5
+    },
+    "category": "Thriller",
+    "genres": [
+      "Thriller",
+      "Acción",
+      "Drama"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/the_roughneck",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/the-roughneck",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/the-roughneck"
+  },
+  {
+    "i": 32,
+    "title": "The Christmas Writer",
+    "year": 2025,
+    "slug": "the-christmas-writer-2025",
+    "path": "src/data/movies/the-christmas-writer-2025.json",
+    "duplicateCheck": {
+      "slug": "the-christmas-writer-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/the-christmas-writer-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/the-christmas-writer",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-04",
+    "originalYear": 2025,
+    "country": "US",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.018a2506-85f4-419b-a18b-b4568f95d280"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.018a2506-85f4-419b-a18b-b4568f95d280"
+      },
+      {
+        "provider": "Plex",
+        "type": "ADS",
+        "url": "https://watch.plex.tv/movie/the-christmas-writer?autoplay=1&utm_content=6813a4e868c977d61100c7e2&utm_medium=deeplink&utm_source=justWatch-v2-catalog"
+      },
+      {
+        "provider": "Plex",
+        "type": "ADS",
+        "url": "https://watch.plex.tv/movie/the-christmas-writer?autoplay=1&utm_content=6813a4e868c977d61100c7e2&utm_medium=deeplink&utm_source=justWatch-v2-catalog"
+      }
+    ],
+    "rating": {
+      "i": 32,
+      "title": "The Christmas Writer",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt36590096/",
+      "raw": 5.5,
+      "scale": 10,
+      "votes": "Fewer than 50 Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 6,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 6
+    },
+    "category": "Romance",
+    "genres": [
+      "Romance",
+      "Comedia"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/the_christmas_writer",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/the-christmas-writer",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/the-christmas-writer"
+  },
+  {
+    "i": 50,
+    "title": "Super Troopers 3",
+    "year": 2026,
+    "slug": "super-troopers-3-2026",
+    "path": "src/data/movies/super-troopers-3-2026.json",
+    "duplicateCheck": {
+      "slug": "super-troopers-3-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/super-troopers-3-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/super-troopers-3",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2026,
+    "country": "US",
+    "platforms": [
+      "Disney Plus"
+    ],
+    "offers": [
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-33fbf5b4-ab5e-4e68-aceb-5abf405a122c"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-33fbf5b4-ab5e-4e68-aceb-5abf405a122c"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-33fbf5b4-ab5e-4e68-aceb-5abf405a122c"
+      }
+    ],
+    "rating": {
+      "i": 50,
+      "title": "Super Troopers 3",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/super_troopers_3",
+      "raw": 69,
+      "scale": 100,
+      "votes": "250+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 7,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 7
+    },
+    "category": "Comedia",
+    "genres": [
+      "Comedia",
+      "Crimen"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/super_troopers_3",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/super-troopers-3",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/super-troopers-3"
+  },
+  {
+    "i": 51,
+    "title": "Girls Like Girls",
+    "year": 2026,
+    "slug": "girls-like-girls-2026",
+    "path": "src/data/movies/girls-like-girls-2026.json",
+    "duplicateCheck": {
+      "slug": "girls-like-girls-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/girls-like-girls-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/girls-like-girls",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2026,
+    "country": "CA, US",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.01828110-81e3-4661-89be-1f28fc462569"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.01828110-81e3-4661-89be-1f28fc462569"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.01828110-81e3-4661-89be-1f28fc462569"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.01828110-81e3-4661-89be-1f28fc462569"
+      }
+    ],
+    "rating": {
+      "i": 51,
+      "title": "Girls Like Girls",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/girls_like_girls",
+      "raw": 87,
+      "scale": 100,
+      "votes": "250+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 9,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 8
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/girls_like_girls",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/girls-like-girls",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/girls-like-girls"
+  },
+  {
+    "i": 52,
+    "title": "Juego de traiciones",
+    "year": 2026,
+    "slug": "juego-de-traiciones-2026",
+    "path": "src/data/movies/juego-de-traiciones-2026.json",
+    "duplicateCheck": {
+      "slug": "juego-de-traiciones-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/juego-de-traiciones-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/juego-de-traiciones",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2026,
+    "country": "GB",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.372c3ef4-2cce-44c7-9253-a78f86f2b2e4"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.372c3ef4-2cce-44c7-9253-a78f86f2b2e4"
+      }
+    ],
+    "rating": {
+      "i": 52,
+      "title": "Juego de traiciones",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt36948232/",
+      "raw": 4.2,
+      "scale": 10,
+      "votes": "Fewer than 50 Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 4,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 4
+    },
+    "category": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crimen"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/just_play_dead",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/juego-de-traiciones",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/juego-de-traiciones"
+  },
+  {
+    "i": 53,
+    "title": "La IA: ¿optimismo o apocalipsis?",
+    "year": 2026,
+    "slug": "la-ia-optimismo-o-apocalipsis-2026",
+    "path": "src/data/movies/la-ia-optimismo-o-apocalipsis-2026.json",
+    "duplicateCheck": {
+      "slug": "la-ia-optimismo-o-apocalipsis-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/la-ia-optimismo-o-apocalipsis-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/the-ai-doc-or-how-i-became-an-apocaloptimist",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2026,
+    "country": "US",
+    "platforms": [
+      "Netflix"
+    ],
+    "offers": [
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82792555"
+      },
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82792555"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8763b989-7958-421b-894b-13fe8b493e04"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8763b989-7958-421b-894b-13fe8b493e04"
+      }
+    ],
+    "rating": {
+      "i": 53,
+      "title": "La IA: ¿optimismo o apocalipsis?",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/the_ai_doc_or_how_i_became_an_apocaloptimist",
+      "raw": 87,
+      "scale": 100,
+      "votes": "100+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 9,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 8
+    },
+    "category": "Documental",
+    "genres": [
+      "Documental"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/the_ai_doc_or_how_i_became_an_apocaloptimist",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/the-ai-doc-or-how-i-became-an-apocaloptimist",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/the-ai-doc-or-how-i-became-an-apocaloptimist"
+  },
+  {
+    "i": 54,
+    "title": "Primavera",
+    "year": 2025,
+    "slug": "primavera-2025",
+    "path": "src/data/movies/primavera-2025.json",
+    "duplicateCheck": {
+      "slug": "primavera-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/primavera-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/primavera-2025",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2025,
+    "country": "FR, IT",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.565fd862-4645-46dd-a5e2-2dd4434c4c09"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.565fd862-4645-46dd-a5e2-2dd4434c4c09"
+      }
+    ],
+    "rating": {
+      "i": 54,
+      "title": "Primavera",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt33586629/",
+      "raw": 7.1,
+      "scale": 10,
+      "votes": 2045,
+      "checkedAt": "2026-11-06",
+      "normalized": 7,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 7
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Histórica",
+      "Música"
+    ],
+    "genreSource": "https://www.justwatch.com/ar/pelicula/primavera-2025",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/primavera-2025",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/primavera-2025"
+  },
+  {
+    "i": 58,
+    "title": "Sangre de Mi Sangre",
+    "year": 2025,
+    "slug": "sangre-de-mi-sangre-2025",
+    "path": "src/data/movies/sangre-de-mi-sangre-2025.json",
+    "duplicateCheck": {
+      "slug": "sangre-de-mi-sangre-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/sangre-de-mi-sangre-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/like-father-like-son",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2025,
+    "country": "US",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6c057281-34dc-4884-a619-4105077be5d1"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6c057281-34dc-4884-a619-4105077be5d1"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6c057281-34dc-4884-a619-4105077be5d1"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6c057281-34dc-4884-a619-4105077be5d1"
+      }
+    ],
+    "rating": {
+      "i": 58,
+      "title": "Sangre de Mi Sangre",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt33319714/",
+      "raw": 3.9,
+      "scale": 10,
+      "votes": "Fewer than 50 Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 4,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 4
+    },
+    "category": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/like_father_like_son_2025",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/like-father-like-son",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/like-father-like-son"
+  },
+  {
+    "i": 64,
+    "title": "Un amor posible",
+    "year": 2026,
+    "slug": "un-amor-posible-2026",
+    "path": "src/data/movies/un-amor-posible-2026.json",
+    "duplicateCheck": {
+      "slug": "un-amor-posible-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/un-amor-posible-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/possible-love",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2026,
+    "country": "KR, US",
+    "platforms": [
+      "Netflix"
+    ],
+    "offers": [
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82106490"
+      },
+      {
+        "provider": "Netflix",
+        "type": "FLATRATE",
+        "url": "https://www.netflix.com/title/82106490"
+      }
+    ],
+    "rating": {
+      "i": 64,
+      "title": "Un amor posible",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/possible_love",
+      "raw": 89,
+      "scale": 100,
+      "votes": "50+ Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 9,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 8
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/possible_love",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/possible-love",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/possible-love"
+  },
+  {
+    "i": 69,
+    "title": "El Amigo",
+    "year": 2024,
+    "slug": "el-amigo-2024",
+    "path": "src/data/movies/el-amigo-2024.json",
+    "duplicateCheck": {
+      "slug": "el-amigo-2024",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/el-amigo-2024.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/the-friend-2024",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2024,
+    "country": "US",
+    "platforms": [
+      "HBO Max"
+    ],
+    "offers": [
+      {
+        "provider": "HBO Max",
+        "type": "FLATRATE",
+        "url": "https://play.hbomax.com/show/33b4ee56-efad-430e-a00e-b4b6ddb28e4f?utm_source=universal_search"
+      },
+      {
+        "provider": "HBO Max",
+        "type": "FLATRATE",
+        "url": "https://play.hbomax.com/show/33b4ee56-efad-430e-a00e-b4b6ddb28e4f?utm_source=universal_search"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.150df62e-96ee-4c2a-92ee-a2c1f088e168"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.150df62e-96ee-4c2a-92ee-a2c1f088e168"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-amigo/umc.cmc.5g50w6vur3uofvzmgbwxvx2jl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1811417194"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-amigo/umc.cmc.5g50w6vur3uofvzmgbwxvx2jl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1811417194"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-amigo/umc.cmc.5g50w6vur3uofvzmgbwxvx2jl?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1811417194"
+      }
+    ],
+    "rating": {
+      "i": 69,
+      "title": "El Amigo",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/the_friend_2024",
+      "raw": 80,
+      "scale": 100,
+      "votes": "250+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 8,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 8
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Comedia"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/the_friend_2024",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/the-friend-2024",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/the-friend-2024"
+  },
+  {
+    "i": 70,
+    "title": "Dreams: Sueños",
+    "year": 2025,
+    "slug": "dreams-suenos-2025",
+    "path": "src/data/movies/dreams-suenos-2025.json",
+    "duplicateCheck": {
+      "slug": "dreams-suenos-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/dreams-suenos-2025.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/dreams-2025",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2025,
+    "country": "GB, MX, US",
+    "platforms": [
+      "Disney Plus"
+    ],
+    "offers": [
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-9c91d7b2-6be9-4d6a-a626-ce6639fa2952"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-9c91d7b2-6be9-4d6a-a626-ce6639fa2952"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a7f31c69-79bd-4bb3-b23a-e881fc18023c"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/dreams-suenos/umc.cmc.73ymy6s4kv15otr01h29rq0pm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1856421036"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a7f31c69-79bd-4bb3-b23a-e881fc18023c"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/dreams-suenos/umc.cmc.73ymy6s4kv15otr01h29rq0pm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1856421036"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/dreams-suenos/umc.cmc.73ymy6s4kv15otr01h29rq0pm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1856421036"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/dreams-suenos/umc.cmc.73ymy6s4kv15otr01h29rq0pm?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1856421036"
+      }
+    ],
+    "rating": {
+      "i": 70,
+      "title": "Dreams: Sueños",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/dreams_2025",
+      "raw": 30,
+      "scale": 100,
+      "votes": "50+ Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 3,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 3
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Thriller"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/dreams_2025",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/dreams-2025",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/dreams-2025"
+  },
+  {
+    "i": 71,
+    "title": "911: Llamada infernal",
+    "year": 2026,
+    "slug": "911-llamada-infernal-2026",
+    "path": "src/data/movies/911-llamada-infernal-2026.json",
+    "duplicateCheck": {
+      "slug": "911-llamada-infernal-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/911-llamada-infernal-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/911-llamada-infernal",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2026,
+    "country": "CA",
+    "platforms": [
+      "Disney Plus"
+    ],
+    "offers": [
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-c4a327c9-2bda-4f45-8e12-58b9340f5302"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-c4a327c9-2bda-4f45-8e12-58b9340f5302"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.aeb43f54-da61-47d0-ab93-9d5738bb7c88"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/911-llamada-infernal/umc.cmc.5h5lmy2ztsqpk2m7curq4mej5?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891452751"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/911-llamada-infernal/umc.cmc.5h5lmy2ztsqpk2m7curq4mej5?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891452751"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.aeb43f54-da61-47d0-ab93-9d5738bb7c88"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/911-llamada-infernal/umc.cmc.5h5lmy2ztsqpk2m7curq4mej5?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891452751"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/911-llamada-infernal/umc.cmc.5h5lmy2ztsqpk2m7curq4mej5?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1891452751"
+      }
+    ],
+    "rating": {
+      "i": 71,
+      "title": "911: Llamada infernal",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/bodycam",
+      "raw": 38,
+      "scale": 100,
+      "votes": "100+ Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 4,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 4
+    },
+    "category": "Terror",
+    "genres": [
+      "Terror",
+      "Thriller"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/bodycam",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/911-llamada-infernal",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/911-llamada-infernal"
+  },
+  {
+    "i": 76,
+    "title": "Making Marie Antoinette",
+    "year": 2026,
+    "slug": "making-marie-antoinette-2026",
+    "path": "src/data/movies/making-marie-antoinette-2026.json",
+    "duplicateCheck": {
+      "slug": "making-marie-antoinette-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/making-marie-antoinette-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/making-marie-antoinette",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2026,
+    "country": "FR, IT, US",
+    "platforms": [
+      "MUBI"
+    ],
+    "offers": [
+      {
+        "provider": "MUBI",
+        "type": "FLATRATE",
+        "url": "https://mubi.com/films/making-marie-antoinette"
+      },
+      {
+        "provider": "MUBI",
+        "type": "FLATRATE",
+        "url": "https://mubi.com/films/making-marie-antoinette"
+      },
+      {
+        "provider": "MUBI Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c76d0e6-d65f-4c72-8391-256ed2939cf6"
+      },
+      {
+        "provider": "MUBI Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3c76d0e6-d65f-4c72-8391-256ed2939cf6"
+      }
+    ],
+    "rating": {
+      "i": 76,
+      "title": "Making Marie Antoinette",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt43656794/",
+      "raw": 7.4,
+      "scale": 10,
+      "votes": "0 Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 7,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "reason": "Estreno reciente sin reconocimiento perdurable probado; el tope solo reduce un candidato 9/10.",
+      "final": 7
+    },
+    "category": "Documental",
+    "genres": [
+      "Documental"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/making_marie_antoinette",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/making-marie-antoinette",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/making-marie-antoinette",
+    "availabilityPrimary": "https://mubi.com/es/ar/films/making-marie-antoinette"
+  },
+  {
+    "i": 2,
+    "title": "Shelter: El protector",
+    "year": 2026,
+    "slug": "shelter-2026",
+    "path": "src/data/movies/shelter-2026.json",
+    "decision": "updated",
+    "before": {
+      "title": "Shelter",
+      "releasePlatform": "Otras plataformas",
+      "releaseDate": "2026-01-30",
+      "cinepostaScore": 7
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/shelter-2026",
+    "offerTypes": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94",
+        "package": {
+          "clearName": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94",
+        "package": {
+          "clearName": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-02",
+    "originalYear": 2026,
+    "country": "US",
+    "platforms": [
+      "Prime Video",
+      "Apple TV"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f7df7b11-a50e-4b34-8535-4bb6d729ee94"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-guardian-ultimo-refugio/umc.cmc.3rzdwa40sl1nan40g9loyd4c3?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1887719240"
+      }
+    ],
+    "rating": {
+      "i": 2,
+      "title": "Shelter: El protector",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/shelter_2026",
+      "raw": 87,
+      "scale": 100,
+      "votes": "500+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 9,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Sin reconocimiento excepcional perdurable probado; techo editorial de estreno reciente.",
+      "final": 8
+    },
+    "category": "Thriller",
+    "genres": [
+      "Acción",
+      "Thriller"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/shelter_2026",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/shelter-2026",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/shelter-2026"
+  },
+  {
+    "i": 42,
+    "title": "El día D: Bajo presión",
+    "year": 2026,
+    "slug": "el-dia-d-bajo-presion-2026",
+    "path": "src/data/movies/el-dia-d-bajo-presion-2026.json",
+    "decision": "updated",
+    "before": {
+      "title": "El día D: Bajo presión",
+      "releasePlatform": "Otras plataformas",
+      "releaseDate": "2026-08-06",
+      "cinepostaScore": 5
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/bajo-presion-2026",
+    "offerTypes": [
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f44fd48-87c0-4de1-8b1c-51acb72cae8f",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f44fd48-87c0-4de1-8b1c-51acb72cae8f",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f44fd48-87c0-4de1-8b1c-51acb72cae8f",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      }
+    ],
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2026,
+    "country": "GB",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f44fd48-87c0-4de1-8b1c-51acb72cae8f"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f44fd48-87c0-4de1-8b1c-51acb72cae8f"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2f44fd48-87c0-4de1-8b1c-51acb72cae8f"
+      }
+    ],
+    "rating": {
+      "i": 42,
+      "title": "El día D: Bajo presión",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/pressure_2026",
+      "raw": 95,
+      "scale": 100,
+      "votes": "1,000+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 10,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Sin reconocimiento excepcional perdurable probado; techo editorial de estreno reciente.",
+      "final": 8
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Guerra",
+      "Bélica"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/pressure_2026",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/bajo-presion-2026",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/bajo-presion-2026"
+  },
+  {
+    "i": 63,
+    "title": "Backrooms",
+    "year": 2026,
+    "slug": "backrooms-2026",
+    "path": "src/data/movies/backrooms-2026.json",
+    "decision": "updated",
+    "before": {
+      "title": "Backrooms",
+      "releasePlatform": "Prime Video",
+      "releasePlatforms": [
+        "Prime Video",
+        "Apple TV"
+      ],
+      "releaseDate": "2026-05-28",
+      "cinepostaScore": 7
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/backrooms",
+    "offerTypes": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-38c9c24f-f4f0-4b47-a741-2f4611e461e3",
+        "package": {
+          "clearName": "Disney Plus",
+          "technicalName": "disneyplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-38c9c24f-f4f0-4b47-a741-2f4611e461e3",
+        "package": {
+          "clearName": "Disney Plus",
+          "technicalName": "disneyplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-38c9c24f-f4f0-4b47-a741-2f4611e461e3",
+        "package": {
+          "clearName": "Disney Plus",
+          "technicalName": "disneyplus"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6985058d-1cc5-42b8-a09c-75641fbdeab1",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6985058d-1cc5-42b8-a09c-75641fbdeab1",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2026,
+    "country": "US",
+    "platforms": [
+      "Disney Plus",
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-38c9c24f-f4f0-4b47-a741-2f4611e461e3"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-38c9c24f-f4f0-4b47-a741-2f4611e461e3"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-38c9c24f-f4f0-4b47-a741-2f4611e461e3"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6985058d-1cc5-42b8-a09c-75641fbdeab1"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6985058d-1cc5-42b8-a09c-75641fbdeab1"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/backrooms-sin-salida/umc.cmc.gceh2i2w95yi0dm29fusg3jw?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6786377189"
+      }
+    ],
+    "rating": {
+      "i": 63,
+      "title": "Backrooms",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/backrooms",
+      "raw": 74,
+      "scale": 100,
+      "votes": "10,000+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 7,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Sin reconocimiento excepcional perdurable probado; techo editorial de estreno reciente.",
+      "final": 7
+    },
+    "category": "Terror",
+    "genres": [
+      "Terror",
+      "Ciencia ficcion",
+      "Found footage",
+      "Psicologico"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/backrooms",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/backrooms",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/backrooms"
+  },
+  {
+    "i": 65,
+    "title": "Un talento único",
+    "year": 2025,
+    "slug": "el-afinador-2026",
+    "path": "src/data/movies/el-afinador-2026.json",
+    "decision": "updated",
+    "before": {
+      "title": "El Afinador",
+      "releasePlatform": "Otras plataformas",
+      "releaseDate": "2026-07-02",
+      "cinepostaScore": 8
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/tuner",
+    "offerTypes": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.paramountplus.com/movies/tuner/ALVE01M64JXJ0KESMSB5JT3V7X3Q86?searchReferral=&amp;utm_source=publisher",
+        "package": {
+          "clearName": "Paramount Plus",
+          "technicalName": "paramountplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.paramountplus.com/movies/tuner/ALVE01M64JXJ0KESMSB5JT3V7X3Q86?searchReferral=&amp;utm_source=publisher",
+        "package": {
+          "clearName": "Paramount Plus",
+          "technicalName": "paramountplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0",
+        "package": {
+          "clearName": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0",
+        "package": {
+          "clearName": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2025,
+    "country": "CA",
+    "platforms": [
+      "Paramount Plus",
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Paramount Plus",
+        "type": "FLATRATE",
+        "url": "https://www.paramountplus.com/movies/tuner/ALVE01M64JXJ0KESMSB5JT3V7X3Q86?searchReferral=&amp;utm_source=publisher"
+      },
+      {
+        "provider": "Paramount Plus",
+        "type": "FLATRATE",
+        "url": "https://www.paramountplus.com/movies/tuner/ALVE01M64JXJ0KESMSB5JT3V7X3Q86?searchReferral=&amp;utm_source=publisher"
+      },
+      {
+        "provider": "Paramount+ Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0"
+      },
+      {
+        "provider": "Paramount+ Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e6c3b3ba-bff1-4414-bddb-b579596579b0"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-afinador/umc.cmc.e7yftvmo9v5ss22sk5mh5s8t?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6796187028"
+      }
+    ],
+    "rating": {
+      "i": 65,
+      "title": "Un talento único",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/tuner",
+      "raw": 94,
+      "scale": 100,
+      "votes": "500+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 9,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Sin reconocimiento excepcional perdurable probado; techo editorial de estreno reciente.",
+      "final": 8
+    },
+    "category": "Thriller",
+    "genres": [
+      "Thriller",
+      "Suspenso",
+      "Crimen",
+      "Drama",
+      "Romance"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/tuner",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/tuner",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/tuner"
+  },
+  {
+    "i": 67,
+    "title": "El mago del Kremlin",
+    "year": 2025,
+    "slug": "el-mago-de-kremlin-2026",
+    "path": "src/data/movies/el-mago-de-kremlin-2026.json",
+    "decision": "updated",
+    "before": {
+      "title": "El Mago de Kremlin",
+      "releasePlatform": "Otras plataformas",
+      "releaseDate": "2026-04-23",
+      "cinepostaScore": 7
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/el-mago-del-kremlin",
+    "offerTypes": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-a547f722-a53d-4575-bae5-349f30598949",
+        "package": {
+          "clearName": "Disney Plus",
+          "technicalName": "disneyplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-a547f722-a53d-4575-bae5-349f30598949",
+        "package": {
+          "clearName": "Disney Plus",
+          "technicalName": "disneyplus"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-a547f722-a53d-4575-bae5-349f30598949",
+        "package": {
+          "clearName": "Disney Plus",
+          "technicalName": "disneyplus"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c019bb34-076e-48ca-b315-ccbcf0f1962b",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c019bb34-076e-48ca-b315-ccbcf0f1962b",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2025,
+    "country": "FR",
+    "platforms": [
+      "Disney Plus",
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-a547f722-a53d-4575-bae5-349f30598949"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-a547f722-a53d-4575-bae5-349f30598949"
+      },
+      {
+        "provider": "Disney Plus",
+        "type": "FLATRATE",
+        "url": "https://www.disneyplus.com/browse/entity-a547f722-a53d-4575-bae5-349f30598949"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c019bb34-076e-48ca-b315-ccbcf0f1962b"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c019bb34-076e-48ca-b315-ccbcf0f1962b"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-mago-del-kremlin/umc.cmc.48yhpuot1e457xbtlpd6cb2a0?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896314045"
+      }
+    ],
+    "rating": {
+      "i": 67,
+      "title": "El mago del Kremlin",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/the_wizard_of_the_kremlin",
+      "raw": 56,
+      "scale": 100,
+      "votes": "100+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 6,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Sin reconocimiento excepcional perdurable probado; techo editorial de estreno reciente.",
+      "final": 6
+    },
+    "category": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Historia"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/the_wizard_of_the_kremlin",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/el-mago-del-kremlin",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/el-mago-del-kremlin"
+  },
+  {
+    "i": 72,
+    "title": "El pez pucheros",
+    "year": 2026,
+    "slug": "el-pez-pucheros-2026",
+    "path": "src/data/movies/el-pez-pucheros-2026.json",
+    "decision": "updated",
+    "before": {
+      "title": "El pez pucheros",
+      "releasePlatform": "Prime Video",
+      "releasePlatforms": [
+        "Prime Video",
+        "Apple TV"
+      ],
+      "releaseDate": "2026-10-13",
+      "cinepostaScore": 7
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/el-pez-pucheros",
+    "offerTypes": [
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://play.hbomax.com/show/526ec948-b30e-49bc-a11d-00983b4a9067?utm_source=universal_search",
+        "package": {
+          "clearName": "HBO Max",
+          "technicalName": "max"
+        }
+      },
+      {
+        "monetizationType": "FLATRATE",
+        "standardWebURL": "https://play.hbomax.com/show/526ec948-b30e-49bc-a11d-00983b4a9067?utm_source=universal_search",
+        "package": {
+          "clearName": "HBO Max",
+          "technicalName": "max"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "RENT",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.522a403a-acd2-4c15-9805-db769afce49f",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.522a403a-acd2-4c15-9805-db769afce49f",
+        "package": {
+          "clearName": "Amazon Video",
+          "technicalName": "amazon"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      },
+      {
+        "monetizationType": "BUY",
+        "standardWebURL": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628",
+        "package": {
+          "clearName": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      }
+    ],
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2026,
+    "country": "AU, DE, US",
+    "platforms": [
+      "HBO Max",
+      "Apple TV"
+    ],
+    "offers": [
+      {
+        "provider": "HBO Max",
+        "type": "FLATRATE",
+        "url": "https://play.hbomax.com/show/526ec948-b30e-49bc-a11d-00983b4a9067?utm_source=universal_search"
+      },
+      {
+        "provider": "HBO Max",
+        "type": "FLATRATE",
+        "url": "https://play.hbomax.com/show/526ec948-b30e-49bc-a11d-00983b4a9067?utm_source=universal_search"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.522a403a-acd2-4c15-9805-db769afce49f"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.522a403a-acd2-4c15-9805-db769afce49f"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/el-pez-pucheros/umc.cmc.7hbhyavdo48iphwhjm0q66xzx?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A1896635628"
+      }
+    ],
+    "rating": {
+      "i": 72,
+      "title": "El pez pucheros",
+      "source": "RT Popcornmeter",
+      "url": "https://www.rottentomatoes.com/m/the_pout_pout_fish",
+      "raw": 73,
+      "scale": 100,
+      "votes": "100+ Verified Ratings",
+      "checkedAt": "2026-11-06",
+      "normalized": 7,
+      "confidenceCeiling": null,
+      "masterpieceCeiling": 8,
+      "reason": "Sin reconocimiento excepcional perdurable probado; techo editorial de estreno reciente.",
+      "final": 7
+    },
+    "category": "Animacion",
+    "genres": [
+      "Animación",
+      "Aventura",
+      "Comedia",
+      "Fantasía",
+      "Familia"
+    ],
+    "genreSource": "https://www.rottentomatoes.com/m/the_pout_pout_fish",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/el-pez-pucheros",
+    "creditsSource": "https://www.justwatch.com/ar/pelicula/el-pez-pucheros"
+  },
+  {
+    "i": 22,
+    "title": "Marea oscura",
+    "year": 2026,
+    "slug": "marea-oscura-2026",
+    "path": "src/data/movies/marea-oscura-2026.json",
+    "duplicateCheck": {
+      "slug": "marea-oscura-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/marea-oscura-2026.json",
+      "duplicates": [
+        "C:/WebsitePeliculas/src/data/movies/marea-oscura-2026.json"
+      ],
+      "dryRun": true,
+      "resumeNote": "Draft created by this same task after successful original preflight; recovery after source image exceeded downloader limit."
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/marea-oscura",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-04",
+    "originalYear": 2026,
+    "country": "NL",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1099be7f-6e51-4988-808d-c8058ab6b1af"
+      },
+      {
+        "provider": "Amazon Prime Video",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1099be7f-6e51-4988-808d-c8058ab6b1af"
+      }
+    ],
+    "rating": {
+      "i": 22,
+      "title": "Marea oscura",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt38517457/",
+      "raw": 4.8,
+      "scale": 10,
+      "votes": 636,
+      "normalized": 5,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "final": 5,
+      "checkedAt": "2026-11-06",
+      "reason": "Valoración de público. Muestra pequeña o no publicada; no existe reconocimiento perdurable que justifique 9/10."
+    },
+    "category": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crimen"
+    ],
+    "genreSource": "https://www.farmhousefilm.com/klaas_de_jong",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/marea-oscura",
+    "creditsSource": "https://www.farmhousefilm.com/klaas_de_jong"
+  },
+  {
+    "i": 56,
+    "title": "Midnight Sun",
+    "year": 2025,
+    "slug": "midnight-sun-2025",
+    "path": "src/data/movies/midnight-sun-2025.json",
+    "duplicateCheck": {
+      "slug": "midnight-sun-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/midnight-sun-2025.json",
+      "duplicates": [
+        "C:/WebsitePeliculas/src/data/movies/midnight-sun-2025.json"
+      ],
+      "dryRun": true,
+      "resumeNote": "Draft created by this same task after successful original preflight; recovery after source image exceeded downloader limit."
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/midnight-sun",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2025,
+    "country": "KR",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a8a26eb1-c9d9-4c3f-a9fb-d36f149fc1d3"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a8a26eb1-c9d9-4c3f-a9fb-d36f149fc1d3"
+      }
+    ],
+    "rating": {
+      "i": 56,
+      "title": "Midnight Sun",
+      "source": "Watchmode audience",
+      "url": "https://www.watchmode.com/movie/midnight-sun-2025/",
+      "raw": 6.1,
+      "scale": 10,
+      "votes": null,
+      "normalized": 6,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "final": 6,
+      "checkedAt": "2026-11-06",
+      "reason": "Valoración de público. Muestra pequeña o no publicada; no existe reconocimiento perdurable que justifique 9/10."
+    },
+    "category": "Romance",
+    "genres": [
+      "Romance",
+      "Drama",
+      "Música"
+    ],
+    "genreSource": "https://www.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20236522",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/midnight-sun",
+    "creditsSource": "https://www.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20236522"
+  },
+  {
+    "i": 57,
+    "title": "Astronauta",
+    "year": 2025,
+    "slug": "astronauta-2025",
+    "path": "src/data/movies/astronauta-2025.json",
+    "duplicateCheck": {
+      "slug": "astronauta-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/astronauta-2025.json",
+      "duplicates": [
+        "C:/WebsitePeliculas/src/data/movies/astronauta-2025.json"
+      ],
+      "dryRun": true,
+      "resumeNote": "Draft created by this same task after successful original preflight; recovery after source image exceeded downloader limit."
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/astronauta",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2025,
+    "country": "PE, CO, UY",
+    "platforms": [
+      "Prime Video"
+    ],
+    "offers": [
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e676007c-2e3d-4f9a-a48a-0e23828852c6"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e676007c-2e3d-4f9a-a48a-0e23828852c6"
+      }
+    ],
+    "rating": {
+      "i": 57,
+      "title": "Astronauta",
+      "source": "IMDb via JustWatch AR",
+      "url": "https://www.imdb.com/title/tt32751147/",
+      "raw": 7,
+      "scale": 10,
+      "votes": 20,
+      "normalized": 7,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "final": 7,
+      "checkedAt": "2026-11-06",
+      "reason": "Valoración de público. Muestra pequeña o no publicada; no existe reconocimiento perdurable que justifique 9/10."
+    },
+    "category": "Drama",
+    "genres": [
+      "Drama"
+    ],
+    "genreSource": "https://cinemateca.org.uy/peliculas/3397",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/astronauta",
+    "creditsSource": "https://cinemateca.org.uy/peliculas/3397"
+  },
+  {
+    "i": 59,
+    "title": "La sombra del juez",
+    "year": 2024,
+    "slug": "la-sombra-del-juez-2024",
+    "path": "src/data/movies/la-sombra-del-juez-2024.json",
+    "duplicateCheck": {
+      "slug": "la-sombra-del-juez-2024",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/la-sombra-del-juez-2024.json",
+      "duplicates": [
+        "C:/WebsitePeliculas/src/data/movies/la-sombra-del-juez-2024.json"
+      ],
+      "dryRun": true,
+      "resumeNote": "Draft created by this same task after successful original preflight; recovery after source image exceeded downloader limit."
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/la-sombra-del-juez-2025",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-05",
+    "originalYear": 2024,
+    "country": "CO",
+    "platforms": [
+      "Apple TV"
+    ],
+    "offers": [
+      {
+        "provider": "Filmzie",
+        "type": "ADS",
+        "url": "https://filmzie.com/content/the-judges-shadow-2024"
+      },
+      {
+        "provider": "Filmzie",
+        "type": "ADS",
+        "url": "https://filmzie.com/content/the-judges-shadow-2024"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9cdccb8c-b9b0-407f-ab4b-bcc3a618f95b"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9cdccb8c-b9b0-407f-ab4b-bcc3a618f95b"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/la-sombra-del-juez/umc.cmc.6ssqbs1u181p0gfla30mcdy1e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6785479426"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/la-sombra-del-juez/umc.cmc.6ssqbs1u181p0gfla30mcdy1e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6785479426"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/la-sombra-del-juez/umc.cmc.6ssqbs1u181p0gfla30mcdy1e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6785479426"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/la-sombra-del-juez/umc.cmc.6ssqbs1u181p0gfla30mcdy1e?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6785479426"
+      }
+    ],
+    "rating": {
+      "i": 59,
+      "title": "La sombra del juez",
+      "source": "IMDb audience",
+      "url": "https://www.imdb.com/title/tt28713015/",
+      "raw": 8.1,
+      "scale": 10,
+      "votes": 29,
+      "normalized": 8,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "final": 8,
+      "checkedAt": "2026-11-06",
+      "reason": "Valoración de público. Muestra pequeña o no publicada; no existe reconocimiento perdurable que justifique 9/10."
+    },
+    "category": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crimen",
+      "Drama"
+    ],
+    "genreSource": "https://www.proimagenescolombia.com/secciones/cine_colombiano/peliculas_colombianas/pelicula_plantilla.php?id_pelicula=3087",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/la-sombra-del-juez-2025",
+    "creditsSource": "https://www.proimagenescolombia.com/secciones/cine_colombiano/peliculas_colombianas/pelicula_plantilla.php?id_pelicula=3087"
+  },
+  {
+    "i": 75,
+    "title": "Todo sobre ti",
+    "year": 2025,
+    "slug": "todo-sobre-ti-2025",
+    "path": "src/data/movies/todo-sobre-ti-2025.json",
+    "duplicateCheck": {
+      "slug": "todo-sobre-ti-2025",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/todo-sobre-ti-2025.json",
+      "duplicates": [
+        "C:/WebsitePeliculas/src/data/movies/todo-sobre-ti-2025.json"
+      ],
+      "dryRun": true,
+      "resumeNote": "Draft created by this same task after successful original preflight; recovery after source image exceeded downloader limit."
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/todo-sobre-ti",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2025,
+    "country": "RU",
+    "platforms": [
+      "Prime Video",
+      "Apple TV"
+    ],
+    "offers": [
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9178291d-6cf8-43ae-a6c0-a9aa2550818b"
+      },
+      {
+        "provider": "Looke Amazon Channel",
+        "type": "FLATRATE",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9178291d-6cf8-43ae-a6c0-a9aa2550818b"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "RENT",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9178291d-6cf8-43ae-a6c0-a9aa2550818b"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/todo-sobre-ti/umc.cmc.2q60v2k9dqiqtzygwk0ymxr1f?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6787153951"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "RENT",
+        "url": "https://tv.apple.com/ar/movie/todo-sobre-ti/umc.cmc.2q60v2k9dqiqtzygwk0ymxr1f?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6787153951"
+      },
+      {
+        "provider": "Amazon Video",
+        "type": "BUY",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9178291d-6cf8-43ae-a6c0-a9aa2550818b"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/todo-sobre-ti/umc.cmc.2q60v2k9dqiqtzygwk0ymxr1f?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6787153951"
+      },
+      {
+        "provider": "Apple TV Store",
+        "type": "BUY",
+        "url": "https://tv.apple.com/ar/movie/todo-sobre-ti/umc.cmc.2q60v2k9dqiqtzygwk0ymxr1f?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6787153951"
+      }
+    ],
+    "rating": {
+      "i": 75,
+      "title": "Todo sobre ti",
+      "source": "Watchmode audience",
+      "url": "https://www.watchmode.com/movie/everything-about-you-2025/",
+      "raw": 5.6,
+      "scale": 10,
+      "votes": null,
+      "normalized": 6,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "final": 6,
+      "checkedAt": "2026-11-06",
+      "reason": "Valoración de público. Muestra pequeña o no publicada; no existe reconocimiento perdurable que justifique 9/10."
+    },
+    "category": "Comedia",
+    "genres": [
+      "Comedia",
+      "Drama",
+      "Música"
+    ],
+    "genreSource": "https://nkino.ru/news/vsyo-chto-tebya-kasaetsya-1",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/todo-sobre-ti",
+    "creditsSource": "https://nkino.ru/news/vsyo-chto-tebya-kasaetsya-1"
+  },
+  {
+    "i": 66,
+    "title": "Savage Mountain",
+    "year": 2026,
+    "slug": "savage-mountain-2026",
+    "path": "src/data/movies/savage-mountain-2026.json",
+    "duplicateCheck": {
+      "slug": "savage-mountain-2026",
+      "outputPath": "C:/WebsitePeliculas/src/data/movies/savage-mountain-2026.json",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "availability": "https://www.justwatch.com/ar/pelicula/savage-mountain",
+    "decision": "loaded",
+    "checkedAt": "2026-11-06",
+    "releaseDateAR": "2026-11-06",
+    "originalYear": 2026,
+    "country": "GB, NO",
+    "platforms": [
+      "HBO Max"
+    ],
+    "offers": [
+      {
+        "provider": "HBO Max",
+        "type": "FLATRATE",
+        "url": "https://play.hbomax.com/show/a7ea071e-150d-477c-aa67-1666aa3c6ee3?utm_source=universal_search"
+      },
+      {
+        "provider": "HBO Max",
+        "type": "FLATRATE",
+        "url": "https://play.hbomax.com/show/a7ea071e-150d-477c-aa67-1666aa3c6ee3?utm_source=universal_search"
+      }
+    ],
+    "rating": {
+      "i": 66,
+      "title": "Savage Mountain",
+      "source": "IMDb audience",
+      "url": "https://www.imdb.com/title/tt43338428/",
+      "raw": 8,
+      "scale": 10,
+      "votes": 237,
+      "normalized": 8,
+      "confidenceCeiling": 8,
+      "masterpieceCeiling": 8,
+      "final": 8,
+      "checkedAt": "2026-11-06",
+      "reason": "Público antes que crítica; RT no publica porcentaje. Muestra inicial sin reconocimiento perdurable."
+    },
+    "category": "Documental",
+    "genres": [
+      "Documental",
+      "Deportes"
+    ],
+    "genreSource": "https://fieldproductions.com/cinema/savage-mountain/",
+    "musicalDecision": "Musical ausente: las canciones no fueron verificadas como estructura narrativa cantada. Música es tema/interpretación, no una equivalencia automática.",
+    "countrySource": "https://www.justwatch.com/ar/pelicula/savage-mountain",
+    "creditsSource": "https://fieldproductions.com/cinema/savage-mountain/"
+  }
+]

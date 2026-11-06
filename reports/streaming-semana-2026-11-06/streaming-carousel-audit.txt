@@ -1,0 +1,61 @@
+Audited 12 candidate file(s) from main against src/data/movies.
+Editorial audit: review audit passed for 12 file(s)
+Result: PASS WITH WARNINGS (55 warning(s))
+[WARN] missing-person-birth :: src/data/movies/911-llamada-infernal-2026.json :: "Brandon Christensen" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/911-llamada-infernal-2026.json :: "Brandon Christensen" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/911-llamada-infernal-2026.json :: "Jaime M. Callica" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/911-llamada-infernal-2026.json :: "Jaime M. Callica" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/911-llamada-infernal-2026.json :: "Sean Rogerson" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/911-llamada-infernal-2026.json :: "Sean Rogerson" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/dreams-suenos-2025.json :: "Michel Franco" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/dreams-suenos-2025.json :: "Michel Franco" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/dreams-suenos-2025.json :: "Isaac Hernández" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/dreams-suenos-2025.json :: "Isaac Hernández" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/el-amigo-2024.json :: "David Siegel" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/el-amigo-2024.json :: "David Siegel" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/el-amigo-2024.json :: "Scott McGehee" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/el-amigo-2024.json :: "Scott McGehee" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/making-marie-antoinette-2026.json :: "Eleanor Coppola" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/making-marie-antoinette-2026.json :: "Eleanor Coppola" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/making-marie-antoinette-2026.json :: "Sofia Coppola" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/making-marie-antoinette-2026.json :: "Sofia Coppola" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-mago-de-kremlin-2026.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-comedy-meter-hidden :: src/data/movies/el-pez-pucheros-2026.json :: Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.
+[WARN] missing-person-birth :: src/data/movies/el-pez-pucheros-2026.json :: "Ricard Cussó" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/el-pez-pucheros-2026.json :: "Ricard Cussó" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/el-pez-pucheros-2026.json :: "Ricard Cussó" uses an uncommon portrait host ("image.tmdb.org"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-nationality :: src/data/movies/el-pez-pucheros-2026.json :: "Nina Oyama" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/el-pez-pucheros-2026.json :: "Nina Oyama" uses an uncommon portrait host ("image.tmdb.org"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-birth :: src/data/movies/savage-mountain-2026.json :: "Even Sigstad" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/savage-mountain-2026.json :: "Even Sigstad" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/savage-mountain-2026.json :: "Kristin Harila" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/savage-mountain-2026.json :: "Kristin Harila" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/savage-mountain-2026.json :: "Tenjen Lama Sherpa" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/savage-mountain-2026.json :: "Tenjen Lama Sherpa" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/todo-sobre-ti-2025.json :: "Aleksandr Voytinskiy" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/todo-sobre-ti-2025.json :: "Aleksandr Voytinskiy" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/todo-sobre-ti-2025.json :: "Aleksandr Voytinskiy" uses an uncommon portrait host ("static.kinoafisha.info"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-trace-url :: src/data/movies/todo-sobre-ti-2025.json :: "Aleksandr Voytinskiy" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar).
+[WARN] missing-person-birth :: src/data/movies/todo-sobre-ti-2025.json :: "Masha Koshina" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/todo-sobre-ti-2025.json :: "Masha Koshina" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/todo-sobre-ti-2025.json :: "Masha Koshina" uses an uncommon portrait host ("static.kinoafisha.info"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-trace-url :: src/data/movies/todo-sobre-ti-2025.json :: "Masha Koshina" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar).
+[WARN] missing-person-birth :: src/data/movies/todo-sobre-ti-2025.json :: "Oleg Chugunov" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/todo-sobre-ti-2025.json :: "Oleg Chugunov" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/un-amor-posible-2026.json :: "Jeon Do-yeon" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/un-amor-posible-2026.json :: "Jeon Do-yeon" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/un-amor-posible-2026.json :: "Jeon Do-yeon" uses an uncommon portrait host ("resizing.flixster.com"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-trace-url :: src/data/movies/un-amor-posible-2026.json :: "Jeon Do-yeon" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar).
+[WARN] missing-person-birth :: src/data/movies/un-amor-posible-2026.json :: "Sul Kyung-gu" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/un-amor-posible-2026.json :: "Sul Kyung-gu" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/un-amor-posible-2026.json :: "Sul Kyung-gu" uses an uncommon portrait host ("resizing.flixster.com"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-trace-url :: src/data/movies/un-amor-posible-2026.json :: "Sul Kyung-gu" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar).
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-afinador-2026.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] missing-person-birth :: src/data/movies/astronauta-2025.json :: "Paul Vega" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/astronauta-2025.json :: "Paul Vega" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/astronauta-2025.json :: "Angie Cepeda" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/astronauta-2025.json :: "Angie Cepeda" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] poster-outside-target-size :: src/data/movies/dreams-suenos-2025.json :: poster is valid at 36280 bytes; preferred range is 40960-81920 bytes. (480x700)
+[WARN] poster-outside-target-size :: src/data/movies/backrooms-2026.json :: poster is valid at 25762 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/todo-sobre-ti-2025.json :: poster is valid at 16578 bytes; preferred range is 40960-81920 bytes. (480x683)
+[WARN] poster-outside-target-size :: src/data/movies/astronauta-2025.json :: poster is valid at 39496 bytes; preferred range is 40960-81920 bytes. (480x686)

@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-11-06T12:34:47.636Z",
+  "baseMain": "243dfc2332f0cf80d930d8038ea3a831daee4383",
+  "content": {
+    "newMovies": 25,
+    "updatedMovies": 6,
+    "alreadyPresent": 9,
+    "pending": 19,
+    "outsideProviders": 20,
+    "excludedConcert": 1
+  },
+  "checks": {
+    "astroCheck": {
+      "files": 334,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "validateContent": "passed",
+    "build": {
+      "pages": 8333,
+      "passed": true
+    },
+    "publicOutput": "passed",
+    "sitemapIndexability": {
+      "canonicalPages": 5850,
+      "passed": true
+    },
+    "movieAudit": {
+      "files": 31,
+      "errors": 0,
+      "warnings": 167,
+      "youtubeEnabled": true
+    },
+    "generatedOutputAudit": {
+      "files": 31,
+      "errors": 0,
+      "warnings": 147
+    },
+    "streamingCarouselAudit": {
+      "selectedFiles": 12,
+      "errors": 0,
+      "warnings": 55
+    },
+    "peopleAudit": {
+      "files": 31,
+      "passed": true
+    },
+    "globalPeopleImages": {
+      "images": 6004,
+      "passed": true
+    },
+    "playwright": {
+      "passed": 92,
+      "failed": 0,
+      "projects": [
+        "desktop-chromium",
+        "mobile-chromium"
+      ],
+      "suites": [
+        "editorial",
+        "cinema-release-carousel",
+        "home-carousels"
+      ]
+    },
+    "specificBrowserProof": {
+      "viewports": [
+        1440,
+        320
+      ],
+      "movieRoutes": 31,
+      "fichaLinks": 33,
+      "imagesDecoded": true,
+      "overflow": false,
+      "railArrows": true,
+      "trailerDialog": true
+    },
+    "bufferPublisherTests": "passed",
+    "bufferPlan": {
+      "mode": "dry-run",
+      "weightedCharacters": 248
+    },
+    "frozenEditionsUnchanged": true,
+    "unrelatedChangesDiscarded": false
+  },
+  "warnings": "Optional person birth/nationality omitted; uncommon but verified portrait hosts; poster preferred byte range informational; YouTube search HTTP302 and year differences backed by original-release evidence. No unresolved publication errors."
+}

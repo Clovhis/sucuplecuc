@@ -1,10 +1,10 @@
 {
 	"slug": "el-mago-de-kremlin-2026",
-	"title": "El Mago de Kremlin",
+	"title": "El mago del Kremlin",
 	"originalTitle": "Le mage du Kremlin",
 	"synopsis": "Un joven cineasta ruso se convierte en un asesor inesperado de Vladimir Putin durante el caos de la Rusia postsoviética. Mientras aprende a operar cerca del poder, también queda atrapado en una maquinaria donde la verdad, la propaganda y la ambición se vuelven inseparables.",
-	"year": 2026,
-	"releaseDate": "2026-04-23",
+	"year": 2025,
+	"releaseDate": "2026-11-06",
 	"audienceRating": "ATP",
 	"category": "Thriller",
 	"genres": [
@@ -14,10 +14,10 @@
 	],
 	"country": "FR",
 	"isArgentinian": false,
-	"poster": "assets/posters/2026/el-mago-de-kremlin-2026.webp",
+	"poster": "assets/posters/2025/el-mago-de-kremlin-2026.webp",
 	"screenshots": [],
 	"trailerYoutubeId": "6h19T8uDkA0",
-	"releasePlatform": "Otras plataformas",
+	"releasePlatform": "Disney Plus",
 	"director": "Olivier Assayas",
 	"mainCast": [
 		"Jeffrey Wright",
@@ -27,7 +27,7 @@
 		"Paul Dano"
 	],
 	"productionCompany": "Curiosa Films, Gaumont y France 2 Cinéma",
-	"cinepostaScore": 7,
+	"cinepostaScore": 6,
 	"runtimeMinutes": 156,
 	"awards": {
 		"wins": []
@@ -42,17 +42,21 @@
 			"forFansOf": "Fans de Olivier Assayas, de los relatos sobre operadores de poder y de las películas donde una conversación puede mover más que una batalla.",
 			"notForYouIf": "Buscás acción, biografía lineal o explicaciones simples de la política rusa. El Mago de Kremlin apuesta por la ambigüedad y el cálculo."
 		},
-	"becauseYouLiked": [
-		"nuremberg-2025",
-		"el-agente-secreto-2025"
-	],
-	"related": [
-		"bridge-of-spies-2015",
-		"munich-2005",
-		"nunca-estaras-a-salvo-2017",
-		"la-doncella-2016"
-	]
-},
+		"becauseYouLiked": [
+			"nuremberg-2025",
+			"el-agente-secreto-2025"
+		],
+		"related": [
+			"bridge-of-spies-2015",
+			"munich-2005",
+			"nunca-estaras-a-salvo-2017",
+			"la-doncella-2016"
+		]
+	},
 	"review": "El Mago de Kremlin mira el poder como una mezcla de teatro, manipulación y cálculo frío. Olivier Assayas la lleva más por la conversación venenosa que por el espectáculo histórico, y esa decisión le sienta bien porque convierte cada acercamiento a Putin en una partida de ajedrez bastante turbia.\n\nJeffrey Wright y Tom Sturridge sostienen con oficio ese mundo de operadores que hablan suave mientras mueven cosas pesadas, y Jude Law aporta una presencia inquietante sin caer en caricatura. Por momentos la película se enamora un poco de su propia inteligencia, pero cuando se concentra en la fabricación del relato político tiene filo de sobra.",
-	"reviewPublishedAt": "2026-04-23"
+	"reviewPublishedAt": "2026-04-23",
+	"releasePlatforms": [
+		"Disney Plus",
+		"Prime Video"
+	]
 }

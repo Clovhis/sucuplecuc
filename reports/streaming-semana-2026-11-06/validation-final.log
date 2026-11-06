@@ -1,0 +1,87 @@
+> la-posta-cine@0.0.1 validate:content
+> node ./scripts/validate-content.mjs
+> git rev-parse --verify --quiet origin/main
+> npm run validate:home-editions -- --base origin/main
+> la-posta-cine@0.0.1 validate:home-editions
+> node --experimental-strip-types ./scripts/validate-home-editions.mjs --base origin/main
+> git ls-tree -r --name-only origin/main -- src/data/movies
+> git diff --name-only --diff-filter=AM origin/main
+> git show origin/main:src/data/movies/backrooms-2026.json
+> git show origin/main:src/data/movies/el-afinador-2026.json
+> git show origin/main:src/data/movies/el-dia-d-bajo-presion-2026.json
+> git show origin/main:src/data/movies/el-mago-de-kremlin-2026.json
+> git show origin/main:src/data/movies/el-pez-pucheros-2026.json
+> git show origin/main:src/data/movies/shelter-2026.json
+> git show origin/main:src/data/movies/911-llamada-infernal-2026.json
+> git show origin/main:src/data/movies/astronauta-2025.json
+> git show origin/main:src/data/movies/blood-and-rust-2026.json
+> git show origin/main:src/data/movies/dreams-suenos-2025.json
+> git show origin/main:src/data/movies/el-amigo-2024.json
+> git show origin/main:src/data/movies/el-precio-de-la-violencia-2025.json
+> git show origin/main:src/data/movies/el-secreto-del-orfebre-2025.json
+> git show origin/main:src/data/movies/en-la-ruta-del-crimen-2025.json
+> git show origin/main:src/data/movies/girls-like-girls-2026.json
+> git show origin/main:src/data/movies/juego-de-traiciones-2026.json
+> git show origin/main:src/data/movies/la-ia-optimismo-o-apocalipsis-2026.json
+> git show origin/main:src/data/movies/la-mangosta-2026.json
+> git show origin/main:src/data/movies/la-razon-de-estar-contigo-una-navidad-perfecta-2026.json
+> git show origin/main:src/data/movies/la-sombra-del-juez-2024.json
+> git show origin/main:src/data/movies/making-marie-antoinette-2026.json
+> git show origin/main:src/data/movies/marea-oscura-2026.json
+> git show origin/main:src/data/movies/mi-mejor-amiga-2026.json
+> git show origin/main:src/data/movies/midnight-sun-2025.json
+> git show origin/main:src/data/movies/primavera-2025.json
+> git show origin/main:src/data/movies/sangre-de-mi-sangre-2025.json
+> git show origin/main:src/data/movies/savage-mountain-2026.json
+> git show origin/main:src/data/movies/super-troopers-3-2026.json
+> git show origin/main:src/data/movies/the-christmas-writer-2025.json
+> git show origin/main:src/data/movies/todo-sobre-ti-2025.json
+> git show origin/main:src/data/movies/un-amor-posible-2026.json
+> npm run catalog:movies:check
+> la-posta-cine@0.0.1 catalog:movies:check
+> node ./scripts/update-movie-catalog-reference.mjs --check
+> node ./scripts/audit-movie-duplicates.mjs
+> npm run catalog:people:check
+> la-posta-cine@0.0.1 catalog:people:check
+> node ./scripts/update-person-profile-catalog-links.mjs --check
+> npm run catalog:people:reference:check
+> la-posta-cine@0.0.1 catalog:people:reference:check
+> node ./scripts/update-person-profile-catalog-reference.mjs --check
+> node ./scripts/audit-movie-people.mjs --file src/data/movies/911-llamada-infernal-2026.json --file src/data/movies/astronauta-2025.json --file src/data/movies/blood-and-rust-2026.json --file src/data/movies/dreams-suenos-2025.json --file src/data/movies/el-amigo-2024.json --file src/data/movies/el-precio-de-la-violencia-2025.json --file src/data/movies/el-secreto-del-orfebre-2025.json --file src/data/movies/en-la-ruta-del-crimen-2025.json --file src/data/movies/girls-like-girls-2026.json --file src/data/movies/juego-de-traiciones-2026.json --file src/data/movies/la-ia-optimismo-o-apocalipsis-2026.json --file src/data/movies/la-mangosta-2026.json --file src/data/movies/la-razon-de-estar-contigo-una-navidad-perfecta-2026.json --file src/data/movies/la-sombra-del-juez-2024.json --file src/data/movies/making-marie-antoinette-2026.json --file src/data/movies/marea-oscura-2026.json --file src/data/movies/mi-mejor-amiga-2026.json --file src/data/movies/midnight-sun-2025.json --file src/data/movies/primavera-2025.json --file src/data/movies/sangre-de-mi-sangre-2025.json --file src/data/movies/savage-mountain-2026.json --file src/data/movies/super-troopers-3-2026.json --file src/data/movies/the-christmas-writer-2025.json --file src/data/movies/todo-sobre-ti-2025.json --file src/data/movies/un-amor-posible-2026.json
+Movie people audit passed for 25 movie file(s).
+> npm run audit:content-quality:strict -- --full
+> la-posta-cine@0.0.1 audit:content-quality:strict
+> node ./scripts/content-quality-audit.mjs --strict --full
+> npm run audit:editorial-low-value
+> la-posta-cine@0.0.1 audit:editorial-low-value
+> node ./scripts/editorial-low-value-audit.mjs
+> npm run audit:profile-originality
+> la-posta-cine@0.0.1 audit:profile-originality
+> node --experimental-strip-types ./scripts/validate-person-profile-originality.mjs
+Person-profile originality source validation passed.
+> node ./skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --base-ref origin/main --recent --skip-youtube
+Result: PASS
+> npm run audit:profiles
+> la-posta-cine@0.0.1 audit:profiles
+> node ./skills/la-posta-cine-add-person-profile/scripts/person_profile_audit.cjs --all
+Person-profile originality source validation passed.
+Person-profile audit passed using the canonical editorial policy.
+> npm run build
+> la-posta-cine@0.0.1 build
+> astro build
+09:24:53 [build] ✓ Completed in 176ms.
+09:31:54 [build] ✓ Completed in 6m 58s.
+09:31:54 [build] 8333 page(s) built in 7m 1s
+09:31:54 [build] Complete!
+> npm run audit:profile-originality -- --require-dist
+> la-posta-cine@0.0.1 audit:profile-originality
+> node --experimental-strip-types ./scripts/validate-person-profile-originality.mjs --require-dist
+Person-profile originality validation passed: 791 approved, 0 non-indexable.
+> npm run validate:public-output
+> la-posta-cine@0.0.1 validate:public-output
+> node ./scripts/validate-public-output.mjs
+Public output validation passed: no forbidden legacy platform references found in dist.
+> npm run validate:sitemap-indexability
+> la-posta-cine@0.0.1 validate:sitemap-indexability
+> node ./scripts/validate-sitemap-indexability.mjs
+Sitemap indexability validation passed: 5850 canonical pages.

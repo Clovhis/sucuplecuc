@@ -1,0 +1,154 @@
+AUDIT 0  c/data/movies/savage-mountain-2026.json :: "Even Sigstad" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/savage-mountain-2026.json :: "Even Sigstad" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/savage-mountain-2026.json :: "Kristin Harila" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/savage-mountain-2026.json :: "Kristin Harila" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] missing-person-birth :: src/data/movies/savage-mountain-2026.json :: "Tenjen Lama Sherpa" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/savage-mountain-2026.json :: "Tenjen Lama Sherpa" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] poster-outside-target-size :: src/data/movies/dreams-suenos-2025.json :: poster is valid at 36280 bytes; preferred range is 40960-81920 bytes. (480x700)
+[WARN] poster-outside-target-size :: src/data/movies/el-dia-d-bajo-presion-2026.json :: poster is valid at 33558 bytes; preferred range is 40960-81920 bytes. (480x600)
+[WARN] poster-outside-target-size :: src/data/movies/backrooms-2026.json :: poster is valid at 25762 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/midnight-sun-2025.json :: poster is valid at 39422 bytes; preferred range is 40960-81920 bytes. (480x684)
+[WARN] poster-outside-target-size :: src/data/movies/astronauta-2025.json :: poster is valid at 39496 bytes; preferred range is 40960-81920 bytes. (480x686)
+[WARN] poster-outside-target-size :: src/data/movies/todo-sobre-ti-2025.json :: poster is valid at 16578 bytes; preferred range is 40960-81920 bytes. (480x683)
+[WARN] youtube-search-unavailable :: src/data/movies/the-christmas-writer-2025.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/super-troopers-3-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/girls-like-girls-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/la-ia-optimismo-o-apocalipsis-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/primavera-2025.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/un-amor-posible-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/el-amigo-2024.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/dreams-suenos-2025.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/911-llamada-infernal-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/making-marie-antoinette-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/backrooms-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/el-afinador-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/el-mago-de-kremlin-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/el-pez-pucheros-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/marea-oscura-2026.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/midnight-sun-2025.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/astronauta-2025.json :: YouTube search returned HTTP 302.
+[WARN] youtube-year-mismatch :: src/data/movies/la-sombra-del-juez-2024.json :: YouTube title "LA SOMBRA DEL JUEZ l TRAILER OFICIAL 2025 l Red Collision Studios" mentions a different year than 2024.
+[WARN] youtube-search-unavailable :: src/data/movies/todo-sobre-ti-2025.json :: YouTube search returned HTTP 302.
+[WARN] youtube-search-unavailable :: src/data/movies/savage-mountain-2026.json :: YouTube search returned HTTP 302.
+
+PEOPLE 0 Movie people audit warnings:
+- director: Susana Garcia no tiene fecha de nacimiento pública verificada
+- director: Susana Garcia no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Ingrid Guimarães no tiene fecha de nacimiento pública verificada
+- cast: Ingrid Guimarães no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Mônica Martelli no tiene fecha de nacimiento pública verificada
+- cast: Mônica Martelli no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Olga Osorio no tiene fecha de nacimiento pública verificada
+- director: Olga Osorio no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Jesse V. Johnson no tiene fecha de nacimiento pública verificada
+- director: Jesse V. Johnson no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Mark Vanselow no tiene fecha de nacimiento pública verificada
+- director: Mark Vanselow no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Cathryn Michon no tiene fecha de nacimiento pública verificada
+- director: Cathryn Michon no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Milo Ventimiglia no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Jeremy Herbert no tiene fecha de nacimiento pública verificada
+- director: Jeremy Herbert no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Mark Kelly no tiene fecha de nacimiento pública verificada
+- cast: Mark Kelly no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Ross Partridge no tiene fecha de nacimiento pública verificada
+- cast: Ross Partridge no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Kyle Rankin no tiene fecha de nacimiento pública verificada
+- director: Kyle Rankin no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Austin North no tiene fecha de nacimiento pública verificada
+- cast: Austin North no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Christin Baker no tiene fecha de nacimiento pública verificada
+- director: Christin Baker no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Shelby Allison Brown no tiene fecha de nacimiento pública verificada
+- cast: Shelby Allison Brown no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Callie Bussell no tiene fecha de nacimiento pública verificada
+- cast: Callie Bussell no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Jay Chandrasekhar no tiene fecha de nacimiento pública verificada
+- director: Jay Chandrasekhar no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Jay Chandrasekhar no tiene fecha de nacimiento pública verificada
+- cast: Jay Chandrasekhar no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Kevin Heffernan no tiene fecha de nacimiento pública verificada
+- cast: Kevin Heffernan no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Hayley Kiyoko no tiene fecha de nacimiento pública verificada
+- director: Hayley Kiyoko no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Myra Molloy no tiene fecha de nacimiento pública verificada
+- cast: Myra Molloy no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Maya da Costa no tiene fecha de nacimiento pública verificada
+- cast: Maya da Costa no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Charlie Tyrell no tiene fecha de nacimiento pública verificada
+- director: Charlie Tyrell no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Sam Altman no tiene fecha de nacimiento pública verificada
+- cast: Sam Altman no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Damiano Michieletto no tiene fecha de nacimiento pública verificada
+- director: Damiano Michieletto no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Tecla Insolia no tiene fecha de nacimiento pública verificada
+- cast: Tecla Insolia no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Michele Riondino no tiene fecha de nacimiento pública verificada
+- cast: Michele Riondino no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Barry Jay no tiene fecha de nacimiento pública verificada
+- director: Barry Jay no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Dylan Flashner no tiene fecha de nacimiento pública verificada
+- cast: Dylan Flashner no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Ariel Winter no tiene fecha de nacimiento pública verificada
+- cast: Ariel Winter no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Jeon Do-yeon no tiene fecha de nacimiento pública verificada
+- cast: Jeon Do-yeon no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Sul Kyung-gu no tiene fecha de nacimiento pública verificada
+- cast: Sul Kyung-gu no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: David Siegel no tiene fecha de nacimiento pública verificada
+- director: David Siegel no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Scott McGehee no tiene fecha de nacimiento pública verificada
+- director: Scott McGehee no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Michel Franco no tiene fecha de nacimiento pública verificada
+- director: Michel Franco no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Isaac Hernández no tiene fecha de nacimiento pública verificada
+- cast: Isaac Hernández no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Brandon Christensen no tiene fecha de nacimiento pública verificada
+- director: Brandon Christensen no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Jaime M. Callica no tiene fecha de nacimiento pública verificada
+- cast: Jaime M. Callica no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Sean Rogerson no tiene fecha de nacimiento pública verificada
+- cast: Sean Rogerson no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Eleanor Coppola no tiene fecha de nacimiento pública verificada
+- director: Eleanor Coppola no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Sofia Coppola no tiene fecha de nacimiento pública verificada
+- cast: Sofia Coppola no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Anthony Maras no tiene fecha de nacimiento pública verificada
+- director: Ricard Cussó no tiene fecha de nacimiento pública verificada
+- director: Ricard Cussó no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Nina Oyama no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Klaas de Jong no tiene fecha de nacimiento pública verificada
+- director: Klaas de Jong no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Vajèn van den Bosch no tiene fecha de nacimiento pública verificada
+- cast: Vajèn van den Bosch no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Juvat Westendorp no tiene fecha de nacimiento pública verificada
+- cast: Juvat Westendorp no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Cho Young-jun no tiene fecha de nacimiento pública verificada
+- director: Cho Young-jun no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Jung Zi-so no tiene fecha de nacimiento pública verificada
+- cast: Jung Zi-so no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Cha Hak-yeon no tiene fecha de nacimiento pública verificada
+- cast: Cha Hak-yeon no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Paul Vega no tiene fecha de nacimiento pública verificada
+- director: Paul Vega no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Angie Cepeda no tiene fecha de nacimiento pública verificada
+- cast: Angie Cepeda no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Libia Stella Gómez no tiene fecha de nacimiento pública verificada
+- director: Libia Stella Gómez no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Juan Pablo Barragán no tiene fecha de nacimiento pública verificada
+- cast: Juan Pablo Barragán no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Carlos Hurtado no tiene fecha de nacimiento pública verificada
+- cast: Carlos Hurtado no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Aleksandr Voytinskiy no tiene fecha de nacimiento pública verificada
+- director: Aleksandr Voytinskiy no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Masha Koshina no tiene fecha de nacimiento pública verificada
+- cast: Masha Koshina no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Oleg Chugunov no tiene fecha de nacimiento pública verificada
+- cast: Oleg Chugunov no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- director: Even Sigstad no tiene fecha de nacimiento pública verificada
+- director: Even Sigstad no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Kristin Harila no tiene fecha de nacimiento pública verificada
+- cast: Kristin Harila no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+- cast: Tenjen Lama Sherpa no tiene fecha de nacimiento pública verificada
+- cast: Tenjen Lama Sherpa no tiene nacionalidad pública verificada; nationalityPrimary queda ausente.
+ Movie people audit passed for 31 movie file(s).
