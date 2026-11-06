@@ -887,6 +887,28 @@
 					"HBO Max"
 				]
 			}
+		},
+		{
+			"slug": "sakamoto-days-2026",
+			"bufferPostId": "6aed302107f945cca933dad5",
+			"dueAt": "2026-11-06T22:00:00.000Z",
+			"scheduledAt": "2026-11-06T01:40:49.746Z",
+			"copyStyle": {
+				"opening": 1195046223,
+				"availability": 4098675614,
+				"editorial": 2991910486,
+				"verdict": 333066846,
+				"link": 134617585
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/sakamoto-days",
+				"checkedAt": "2026-11-06T01:40:49.058Z",
+				"kind": "subscription",
+				"platforms": [
+					"Prime Video"
+				]
+			}
 		}
 	]
 }
