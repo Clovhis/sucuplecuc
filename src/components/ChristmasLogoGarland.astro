@@ -1,0 +1,104 @@
+---
+// Coordinates stay outside the artwork, especially the CINE POSTA lettering.
+const colors = ['#ff554d', '#55d878', '#579dff', '#ffd45b'];
+const bulbs = [
+	[28, -6, -12], [92, -2, 9], [158, -7, -8], [224, -3, 14],
+	[290, -8, -10], [356, -2, 8], [422, -6, -13], [490, -2, 12],
+	[38, 151, 8], [110, 158, -12], [184, 153, 11], [258, 160, -8],
+	[332, 153, 12], [406, 158, -10], [480, 151, 9],
+];
+---
+
+<svg
+	class="christmas-logo-garland"
+	viewBox="0 0 520 168"
+	preserveAspectRatio="none"
+	aria-hidden="true"
+	focusable="false"
+	data-christmas-garland
+>
+	<path class="christmas-logo-garland__wire" d="M8 -12 Q50 4 92 -2 T158 -7 Q190 4 224 -3 T290 -8 Q322 4 356 -2 T422 -6 Q462 6 510 -10" />
+	<path class="christmas-logo-garland__wire" d="M8 145 Q58 164 110 158 T184 153 Q222 165 258 160 T332 153 Q370 164 406 158 T480 151 L510 143" />
+	{bulbs.map(([x, y, angle], index) => (
+		<g transform={`translate(${x} ${y}) rotate(${angle})`}>
+			<path class="christmas-logo-garland__wire" d="M0 0v5" />
+			<rect x="-4" y="3" width="8" height="5" rx="1" fill="#49604b" />
+			<g
+				class="christmas-logo-garland__light"
+				style={`color:${colors[index % colors.length]};--light-duration:${4.8 + (index * 1.7) % 3}s;--light-delay:-${(index * 2.3 + 0.7).toFixed(1)}s`}
+			>
+				<ellipse cx="0" cy="13" rx="12" ry="16" fill="currentColor" opacity=".12" />
+				<path d="M-4 8Q-7 14 0 22Q7 14 4 8Z" fill="currentColor" />
+				<path d="M-2 10Q-3 13-1 16" fill="none" stroke="#fff7d9" stroke-width="1.5" stroke-linecap="round" opacity=".8" />
+			</g>
+		</g>
+	))}
+</svg>
+
+<style>
+	.christmas-logo-garland {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		overflow: visible;
+		pointer-events: none;
+	}
+	.christmas-logo-garland:not([data-active]) { display: none; }
+	.christmas-logo-garland__wire {
+		fill: none;
+		stroke: #56735c;
+		stroke-width: 1.8;
+		stroke-linecap: round;
+	}
+	.christmas-logo-garland__light { opacity: .9; }
+	@media (prefers-reduced-motion: no-preference) {
+		.christmas-logo-garland[data-active] .christmas-logo-garland__light {
+			animation: christmas-light var(--light-duration) ease-in-out var(--light-delay) infinite;
+		}
+		.christmas-logo-garland[data-paused] .christmas-logo-garland__light { animation-play-state: paused; }
+		@keyframes christmas-light {
+			0%, 100% { opacity: .85; }
+			18%, 32% { opacity: .18; }
+			52%, 66% { opacity: 1; }
+			82% { opacity: .55; }
+		}
+	}
+</style>
+
+<script>
+	const garland = document.querySelector<SVGElement>('[data-christmas-garland]');
+	if (garland) {
+		const dateFormat = new Intl.DateTimeFormat('en-US', {
+			timeZone: 'America/Argentina/Buenos_Aires',
+			month: 'numeric',
+			day: 'numeric',
+		});
+		// Local preview only: production always follows the Argentine calendar.
+		let devPreview = false;
+		if (import.meta.env.DEV) {
+			const preview = new URLSearchParams(location.search).get('christmas');
+			devPreview = preview === '1';
+			try {
+				const key = 'cineposta:christmas-logo-preview';
+				if (preview === '1') sessionStorage.setItem(key, '1');
+				else if (preview === '0') sessionStorage.removeItem(key);
+				devPreview = sessionStorage.getItem(key) === '1';
+			} catch {
+				// The explicit URL still works when browser storage is unavailable.
+			}
+		}
+		const updateSeason = () => {
+			const parts = dateFormat.formatToParts(new Date());
+			const month = Number(parts.find((part) => part.type === 'month')?.value);
+			const day = Number(parts.find((part) => part.type === 'day')?.value);
+			const active = devPreview || month === 12 || (month === 1 && day <= 6);
+			garland.toggleAttribute('data-active', active);
+			garland.toggleAttribute('data-paused', document.hidden);
+		};
+		updateSeason();
+		// Also handles an open tab crossing either seasonal boundary.
+		window.setInterval(updateSeason, 60_000);
+		document.addEventListener('visibilitychange', updateSeason);
+	}
+</script>

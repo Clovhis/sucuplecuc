@@ -6,6 +6,7 @@ import '../styles/home-trailers.css';
 import '../styles/home-promos.css';
 import EditorialHighlights from '../components/EditorialHighlights.astro';
 import HomeBrandLink from '../components/HomeBrandLink.astro';
+import ChristmasLogoGarland from '../components/ChristmasLogoGarland.astro';
 import CatalogMarquee from '../components/CatalogMarquee.astro';
 import CinemaReleaseCarousel from '../components/CinemaReleaseCarousel.astro';
 import CinemaNewsTicker from '../components/CinemaNewsTicker.astro';
@@ -181,7 +182,9 @@ const upcomingMovieSuggestion = upcomingMovieSuggestions[0] ?? null;
 						imageClassName="site-header__brand-logo"
 						href="/"
 						label="Cine Posta: reiniciar filtros y volver al inicio"
-					/>
+					>
+						<ChristmasLogoGarland />
+					</HomeBrandLink>
 					<section class="movie-search movie-search--top">
 						<label for="movie-search-input" class="movie-search__label u-visually-hidden">
 							Buscar película

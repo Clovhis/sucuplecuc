@@ -28,6 +28,10 @@ body.home-edition::after { display: none; }
 	transform: none;
 }
 
+.home-masthead .site-header__brand {
+	position: relative;
+}
+
 .home-masthead .site-header__actions > a {
 	font: 500 .8rem/1.3 var(--font-sans);
 	text-transform: none;
