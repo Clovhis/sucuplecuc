@@ -909,6 +909,28 @@
 					"Prime Video"
 				]
 			}
+		},
+		{
+			"slug": "making-marie-antoinette-2026",
+			"bufferPostId": "6aee7819d6bbae6fa158d871",
+			"dueAt": "2026-11-07T22:00:00.000Z",
+			"scheduledAt": "2026-11-07T01:00:09.660Z",
+			"copyStyle": {
+				"opening": 4059068256,
+				"availability": 3403514595,
+				"editorial": 1329232413,
+				"verdict": 2758567049,
+				"link": 1954741936
+			},
+			"availability": {
+				"country": "AR",
+				"source": "https://www.justwatch.com/ar/pelicula/making-marie-antoinette",
+				"checkedAt": "2026-11-07T01:00:05.472Z",
+				"kind": "subscription",
+				"platforms": [
+					"MUBI"
+				]
+			}
 		}
 	]
 }
