@@ -1,0 +1,103 @@
+{
+  "title": "Volver",
+  "originalTitle": "Volver",
+  "year": 2006,
+  "slug": "volver-2006",
+  "checkedAt": "2026-11-06",
+  "duplicateCheck": {
+    "command": "npm run new-movie -- --title \"Volver\" --year 2006 --dry-run --json",
+    "duplicates": []
+  },
+  "availability": {
+    "country": "AR",
+    "source": "https://www.justwatch.com/ar/pelicula/volver",
+    "checkedAt": "2026-11-06",
+    "offers": [
+      {
+        "provider": "Filmelier Plus Amazon Channel",
+        "type": "FLATRATE",
+        "catalogLabel": null
+      }
+    ],
+    "publishedLabel": "Otras plataformas",
+    "rationale": "The sole subscription offer is an Amazon add-on provider with no distinct supported platform label; Otras plataformas is exclusive."
+  },
+  "argentinaMetadata": {
+    "source": "https://www.cinesargentinos.com.ar/pelicula/1783-volver/",
+    "releaseDate": "2006-08-10",
+    "audienceRating": "+16",
+    "runtimeMinutes": 122,
+    "localizedTitle": "Volver"
+  },
+  "productionIdentity": {
+    "source": "https://www.festival-cannes.com/en/f/volver/",
+    "countryYear": "Spain; 2006",
+    "director": "Pedro Almodóvar",
+    "castSource": "https://www.imdb.com/title/tt0441909/",
+    "selectedMainCast": [
+      "Penélope Cruz",
+      "Carmen Maura",
+      "Lola Dueñas"
+    ],
+    "productionCompany": "El Deseo",
+    "cannesAwards": [
+      "Best Screenplay, 2006",
+      "Best Actress (ex-aequo), 2006"
+    ]
+  },
+  "poster": {
+    "source": "https://www.sonypictures.com/sites/default/files/chameleon/title-movie/348627_VOLVER%20%282006%29_1400x2100_Eng_0.jpg",
+    "httpStatus": 200,
+    "contentType": "image/jpeg",
+    "sourceDimensions": "1400x2100",
+    "visualReview": "PASS; official Sony art, portrait layout, title and Penélope Cruz identify the film, no visible festival laurels or promotional badges.",
+    "local": "public/assets/posters/2006/volver-2006.webp",
+    "localDimensions": "480x720",
+    "localBytes": 59062,
+    "localVisualReview": "PASS"
+  },
+  "trailer": {
+    "source": "https://www.youtube.com/watch?v=ABSvppyQGdE",
+    "title": "Volver | Official Trailer (2006)",
+    "channel": "Sony Pictures Classics (verified)",
+    "language": "Spanish (original)",
+    "checkedAt": "2026-11-06"
+  },
+  "score": {
+    "source": "https://www.rottentomatoes.com/m/volver",
+    "value": "89%",
+    "type": "Popcornmeter audience score",
+    "sample": "50,000+ ratings",
+    "checkedAt": "2026-11-06",
+    "normalization": "round(89 / 10) = 9",
+    "confidenceCeiling": "none; recognized RT aggregate with visible large sample",
+    "editorialCeiling": "8; popularity and strong Cannes/critical recognition alone do not establish the exceptional, durable film-historical standing required for 9",
+    "cinepostaScore": 8
+  },
+  "people": {
+    "floor": "Pedro Almodóvar + Penélope Cruz + Carmen Maura + Lola Dueñas",
+    "identityAndCreditSources": [
+      "https://www.festival-cannes.com/en/f/volver/",
+      "https://www.imdb.com/title/tt0441909/"
+    ],
+    "carmenProfileReferences": [
+      "https://www.festival-cannes.com/p/carmen-maura/",
+      "https://www.imdb.com/name/nm0560962/",
+      "https://www.themoviedb.org/person/2744-carmen-maura"
+    ],
+    "carmenPortraitSource": "https://commons.wikimedia.org/wiki/File%3A%28Carmen_Maura%29_Entrega_de_la_Medalla_internacional_de_las_Artes_de_la_Comunidad_de_Madrid_a_Carmen_Maura_%2833552184358%29_%28cropped%29.jpg",
+    "portraitReview": "Four retained people have local portraits; Carmen Maura portrait was visually inspected beside Cannes/filmography identity sources.",
+    "audit": "PASS"
+  },
+  "copy": {
+    "synopsisAndReview": "Written from scratch for this title; no source synopsis or review prose reused.",
+    "tenSecondTake": "All seven required fields present and title-specific."
+  },
+  "validations": {
+    "moviePeople": "PASS",
+    "candidateAuditWithYoutube": "PASS WITH WARNINGS: catalog-sync only; expected before parent batch regenerates docs/movie-catalog-reference.md",
+    "posterVerification": "PASS; 480x720, 59062 bytes",
+    "posterSourcePolicy": "PASS",
+    "peopleOptimize": "PASS; global pass, 0 changed files during optimization"
+  }
+}

@@ -168,6 +168,23 @@
 		"image": "/people/aaron-ruell-53927.jpg",
 		"source": "tmdb-cache"
 	},
+	"Aaron Schneider": {
+		"name": "Aaron Schneider",
+		"birthDate": "1965-07-26",
+		"birthYear": 1965,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/aaron-schneider-nm0773689.jpg",
+		"imdbId": "nm0773689",
+		"imdbUrl": "https://www.imdb.com/name/nm0773689/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aaron%20Schneider%20Get%20Low%20TIFF09%20cropped.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q302645",
+			"https://www.imdb.com/name/nm0773689/",
+			"https://www.themoviedb.org/person/58292-aaron-schneider"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Aaron Sorkin": {
 		"name": "Aaron Sorkin",
 		"birthDate": "1961-06-09",
@@ -317,6 +334,23 @@
 			"https://www.themoviedb.org/person/39104-abel-ferrara"
 		],
 		"lastVerifiedAt": "2026-09-12",
+		"source": "wikidata-imdb-cache"
+	},
+	"Abigail Breslin": {
+		"name": "Abigail Breslin",
+		"birthDate": "1996-04-14",
+		"birthYear": 1996,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/abigail-breslin-nm1113550.jpg",
+		"imdbId": "nm1113550",
+		"imdbUrl": "https://www.imdb.com/name/nm1113550/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Abigail%20Breslin%20by%20Gage%20Skidmore.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q201418",
+			"https://www.imdb.com/name/nm1113550/",
+			"https://www.themoviedb.org/person/17140-abigail-breslin"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Abraham Bomba": {
@@ -1565,21 +1599,21 @@
 	},
 	"Akihiro Miwa": {
 		"name": "Akihiro Miwa",
+		"birthDate": "1935-05-15",
 		"birthYear": 1935,
+		"deathDate": "2026-06-20",
 		"deathYear": 2026,
 		"nationalityPrimary": "Japonés",
 		"image": "/people/akihiro-miwa-nm0594271.jpg",
 		"imdbId": "nm0594271",
 		"imdbUrl": "https://www.imdb.com/name/nm0594271/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Akihiro%20Miwa%20%E7%BE%8E%E8%BC%AA%20%E6%98%8E%E5%AE%8F.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Akihiro%20Miwa%20%E7%BE%8E%E8%BC%AA%20%E6%98%8E%E5%AE%8F.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q1076203",
 			"https://www.imdb.com/name/nm0594271/"
 		],
-		"lastVerifiedAt": "2026-07-25",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1935-05-15",
-		"deathDate": "2026-06-20"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Akio Otsuka": {
 		"name": "Akio Ōtsuka",
@@ -1702,7 +1736,7 @@
 			"https://www.imdb.com/name/nm0000199/",
 			"https://www.themoviedb.org/person/1158-al-pacino"
 		],
-		"lastVerifiedAt": "2026-10-18",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q41163",
@@ -1757,13 +1791,13 @@
 		"image": "/people/alan-arkin-nm0000273.jpg",
 		"imdbId": "nm0000273",
 		"imdbUrl": "https://www.imdb.com/name/nm0000273/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan%20Arkin%20-%201975.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan%20Arkin%20-%201975.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q108283",
 			"https://www.imdb.com/name/nm0000273/",
 			"https://www.themoviedb.org/person/1903-alan-arkin"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q108283",
@@ -3124,22 +3158,41 @@
 		"lastVerifiedAt": "2026-10-30",
 		"source": "verified-film-credit-and-portrait"
 	},
+	"Alexander Mackendrick": {
+		"name": "Alexander Mackendrick",
+		"birthDate": "1912-09-08",
+		"birthYear": 1912,
+		"deathDate": "1993-12-22",
+		"deathYear": 1993,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/alexander-mackendrick-nm0533241.jpg",
+		"imdbId": "nm0533241",
+		"imdbUrl": "https://www.imdb.com/name/nm0533241/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/pcALlQakPQMILqqczj4EkWgjWC9.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q716310",
+			"https://www.imdb.com/name/nm0533241/",
+			"https://www.themoviedb.org/person/14566-alexander-mackendrick"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Alexander Payne": {
 		"name": "Alexander Payne",
+		"birthDate": "1961-02-10",
 		"birthYear": 1961,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/alexander-payne-nm0668247.jpg",
 		"imdbId": "nm0668247",
 		"imdbUrl": "https://www.imdb.com/name/nm0668247/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Payne%202017.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Payne%202017.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q313566",
 			"https://www.imdb.com/name/nm0668247/",
 			"https://www.themoviedb.org/person/13235-alexander-payne"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1961-02-10"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Alexander Skarsgård": {
 		"name": "Alexander Skarsgård",
@@ -3694,13 +3747,13 @@
 		"image": "/people/alicia-silverstone-nm0000224.jpg",
 		"imdbId": "nm0000224",
 		"imdbUrl": "https://www.imdb.com/name/nm0000224/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alicia%20Silverstone%202019%20by%20Glenn%20Francis.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alicia%20Silverstone%202019%20by%20Glenn%20Francis.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q199945",
 			"https://www.imdb.com/name/nm0000224/",
 			"https://www.themoviedb.org/person/5588-alicia-silverstone"
 		],
-		"lastVerifiedAt": "2026-08-21",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Alicia Vikander": {
@@ -4257,23 +4310,40 @@
 	},
 	"Amanda Seyfried": {
 		"name": "Amanda Seyfried",
+		"birthDate": "1985-12-03",
 		"birthYear": 1985,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/amanda-seyfried-nm1086543.jpg",
 		"imdbId": "nm1086543",
 		"imdbUrl": "https://www.imdb.com/name/nm1086543/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amanda%20Seyfried%20at%20Berlinale%202024%2C%20cropped.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amanda%20Seyfried%20at%20Berlinale%202024%2C%20cropped.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q189226",
 			"https://www.imdb.com/name/nm1086543/",
 			"https://www.themoviedb.org/person/71070-amanda-seyfried"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1985-12-03",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q189226",
 		"sexVerifiedAt": "2026-10-11"
+	},
+	"Amara Miller": {
+		"name": "Amara Miller",
+		"birthDate": "2000-05-04",
+		"birthYear": 2000,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/amara-miller-nm3837786.jpg",
+		"imdbId": "nm3837786",
+		"imdbUrl": "https://www.imdb.com/name/nm3837786/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/j5zsWzZvUyeeypmyfl8qmkJpVpj.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q4352345",
+			"https://www.imdb.com/name/nm3837786/",
+			"https://www.themoviedb.org/person/933002-amara-miller"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Amber Heard": {
 		"name": "Amber Heard",
@@ -4514,13 +4584,13 @@
 		"image": "/people/amy-heckerling-nm0002132.jpg",
 		"imdbId": "nm0002132",
 		"imdbUrl": "https://www.imdb.com/name/nm0002132/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amy%20Heckerling.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amy%20Heckerling.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q442273",
 			"https://www.imdb.com/name/nm0002132/",
 			"https://www.themoviedb.org/person/57434-amy-heckerling"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Amy Johnston": {
@@ -6078,13 +6148,13 @@
 		"image": "/people/anjelica-huston-nm0001378.jpg",
 		"imdbId": "nm0001378",
 		"imdbUrl": "https://www.imdb.com/name/nm0001378/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anjelica%20Huston%20at%20Los%20Angeles%20Comic%20Con%202024.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anjelica%20Huston%20at%20Los%20Angeles%20Comic%20Con%202024.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q190998",
 			"https://www.imdb.com/name/nm0001378/",
 			"https://www.themoviedb.org/person/5657-anjelica-huston"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q190998",
@@ -9460,13 +9530,13 @@
 		"image": "/people/barry-sonnenfeld-nm0001756.jpg",
 		"imdbId": "nm0001756",
 		"imdbUrl": "https://www.imdb.com/name/nm0001756/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Barry%20Sonnenfeld%202012.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Barry%20Sonnenfeld%202012.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q317567",
 			"https://www.imdb.com/name/nm0001756/",
 			"https://www.themoviedb.org/person/5174-barry-sonnenfeld"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Bart Layton": {
@@ -11196,20 +11266,20 @@
 	},
 	"Billy Crystal": {
 		"name": "Billy Crystal",
+		"birthDate": "1948-03-14",
 		"birthYear": 1948,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/billy-crystal-nm0000345.jpg",
 		"imdbId": "nm0000345",
 		"imdbUrl": "https://www.imdb.com/name/nm0000345/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Billy%20Crystal%20by%20Gage%20Skidmore.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Billy%20Crystal%20by%20Gage%20Skidmore.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q186485",
 			"https://www.imdb.com/name/nm0000345/",
 			"https://www.themoviedb.org/person/7904-billy-crystal"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1948-03-14",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q186485",
 		"sexVerifiedAt": "2026-10-11"
@@ -11337,6 +11407,25 @@
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1964-08-25"
+	},
+	"Blake Edwards": {
+		"name": "Blake Edwards",
+		"birthDate": "1922-07-26",
+		"birthYear": 1922,
+		"deathDate": "2010-12-15",
+		"deathYear": 2010,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/blake-edwards-nm0001175.jpg",
+		"imdbId": "nm0001175",
+		"imdbUrl": "https://www.imdb.com/name/nm0001175/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blake%20Edwards%201966.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q56093",
+			"https://www.imdb.com/name/nm0001175/",
+			"https://www.themoviedb.org/person/1927-blake-edwards"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Blake Lively": {
 		"name": "Blake Lively",
@@ -12033,7 +12122,7 @@
 			"https://www.imdb.com/name/nm0000093/",
 			"https://www.themoviedb.org/person/287-brad-pitt"
 		],
-		"lastVerifiedAt": "2026-09-24",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q35332",
@@ -12089,20 +12178,20 @@
 	},
 	"Bradley Cooper": {
 		"name": "Bradley Cooper",
+		"birthDate": "1975-01-05",
 		"birthYear": 1975,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/bradley-cooper-nm0177896.jpg",
 		"imdbId": "nm0177896",
 		"imdbUrl": "https://www.imdb.com/name/nm0177896/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bradley%20Cooper.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bradley%20Cooper.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q205707",
 			"https://www.imdb.com/name/nm0177896/",
 			"https://www.themoviedb.org/person/51329-bradley-cooper"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1975-01-05",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q205707",
 		"sexVerifiedAt": "2026-10-11"
@@ -13075,6 +13164,25 @@
 		"lastVerifiedAt": "2026-09-12",
 		"source": "wikidata-imdb-cache"
 	},
+	"Brittany Murphy": {
+		"name": "Brittany Murphy",
+		"birthDate": "1977-11-10",
+		"birthYear": 1977,
+		"deathDate": "2009-12-20",
+		"deathYear": 2009,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/brittany-murphy-nm0005261.jpg",
+		"imdbId": "nm0005261",
+		"imdbUrl": "https://www.imdb.com/name/nm0005261/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brittany%20Murphy.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q168847",
+			"https://www.imdb.com/name/nm0005261/",
+			"https://www.themoviedb.org/person/328-brittany-murphy"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Brock Peters": {
 		"name": "Brock Peters",
 		"birthDate": "1927-07-02",
@@ -13713,22 +13821,22 @@
 	},
 	"Burt Lancaster": {
 		"name": "Burt Lancaster",
+		"birthDate": "1913-11-02",
 		"birthYear": 1913,
+		"deathDate": "1994-10-20",
 		"deathYear": 1994,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/burt-lancaster-nm0000044.jpg",
 		"imdbId": "nm0000044",
 		"imdbUrl": "https://www.imdb.com/name/nm0000044/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burt%20Lancaster%20-%20publicity%201947.JPG?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burt%20Lancaster%20-%20publicity%201947.JPG?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q160528",
 			"https://www.imdb.com/name/nm0000044/",
 			"https://www.themoviedb.org/person/13784-burt-lancaster"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1913-11-02",
-		"deathDate": "1994-10-20"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Burt Reynolds": {
 		"name": "Burt Reynolds",
@@ -13740,13 +13848,13 @@
 		"image": "/people/burt-reynolds-nm0000608.jpg",
 		"imdbId": "nm0000608",
 		"imdbUrl": "https://www.imdb.com/name/nm0000608/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burt%20Reynolds%20Dan%20August.JPG?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burt%20Reynolds%20Dan%20August.JPG?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q202148",
 			"https://www.imdb.com/name/nm0000608/",
 			"https://www.themoviedb.org/person/16475-burt-reynolds"
 		],
-		"lastVerifiedAt": "2026-08-23",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q202148",
@@ -13969,20 +14077,20 @@
 	},
 	"Caleb Landry Jones": {
 		"name": "Caleb Landry Jones",
+		"birthDate": "1989-12-07",
 		"birthYear": 1989,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/caleb-landry-jones-nm2655177.jpg",
 		"imdbId": "nm2655177",
 		"imdbUrl": "https://www.imdb.com/name/nm2655177/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caleb%20Landry%20Jones%20-%20Dracula.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caleb%20Landry%20Jones%20-%20Dracula.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q920607",
 			"https://www.imdb.com/name/nm2655177/",
 			"https://www.themoviedb.org/person/572541-caleb-landry-jones"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1989-12-07"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Caleb McLaughlin": {
 		"name": "Caleb McLaughlin",
@@ -14073,13 +14181,13 @@
 		"image": "/people/cameron-diaz-nm0000139.jpg",
 		"imdbId": "nm0000139",
 		"imdbUrl": "https://www.imdb.com/name/nm0000139/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cameron%20Diaz%20at%20WWD%20Style%20Awards%202026-1998.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cameron%20Diaz%20at%20WWD%20Style%20Awards%202026-1998.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q44380",
 			"https://www.imdb.com/name/nm0000139/",
 			"https://www.themoviedb.org/person/6941-cameron-diaz"
 		],
-		"lastVerifiedAt": "2026-08-28",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q44380",
@@ -14818,6 +14926,23 @@
 		"lastVerifiedAt": "2026-05-30",
 		"source": "wikidata-imdb-cache"
 	},
+	"Carmen Maura": {
+		"name": "Carmen Maura",
+		"birthDate": "1945-09-15",
+		"birthYear": 1945,
+		"nationalityPrimary": "Española",
+		"image": "/people/carmen-maura-nm0560962.jpg",
+		"imdbId": "nm0560962",
+		"imdbUrl": "https://www.imdb.com/name/nm0560962/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/(Carmen%20Maura)%20Entrega%20de%20la%20Medalla%20internacional%20de%20las%20Artes%20de%20la%20Comunidad%20de%20Madrid%20a%20Carmen%20Maura%20(33552184358)%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q234807",
+			"https://www.imdb.com/name/nm0560962/",
+			"https://www.themoviedb.org/person/2744-carmen-maura"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Carol Burnett": {
 		"name": "Carol Burnett",
 		"birthDate": "1933-04-26",
@@ -14951,22 +15076,22 @@
 	},
 	"Carrie Fisher": {
 		"name": "Carrie Fisher",
+		"birthDate": "1956-10-21",
 		"birthYear": 1956,
+		"deathDate": "2016-12-27",
 		"deathYear": 2016,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/carrie-fisher-nm0000402.jpg",
 		"imdbId": "nm0000402",
 		"imdbUrl": "https://www.imdb.com/name/nm0000402/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrie%20Fisher%202013-a%20straightened.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrie%20Fisher%202013-a%20straightened.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q108941",
 			"https://www.imdb.com/name/nm0000402/",
 			"https://www.themoviedb.org/person/4-carrie-fisher"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1956-10-21",
-		"deathDate": "2016-12-27",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q108941",
 		"sexVerifiedAt": "2026-10-11"
@@ -16698,22 +16823,22 @@
 	},
 	"Charlton Heston": {
 		"name": "Charlton Heston",
+		"birthDate": "1923-10-04",
 		"birthYear": 1923,
+		"deathDate": "2008-04-05",
 		"deathYear": 2008,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/charlton-heston-nm0000032.jpg",
 		"imdbId": "nm0000032",
 		"imdbUrl": "https://www.imdb.com/name/nm0000032/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charlton%20Heston%20-%201953.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charlton%20Heston%20-%201953.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q80739",
 			"https://www.imdb.com/name/nm0000032/",
 			"https://www.themoviedb.org/person/10017-charlton-heston"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1923-10-04",
-		"deathDate": "2008-04-05",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q80739",
 		"sexVerifiedAt": "2026-10-11"
@@ -17015,19 +17140,19 @@
 	},
 	"Chieko Baishō": {
 		"name": "Chieko Baishō",
+		"birthDate": "1941-06-29",
 		"birthYear": 1941,
 		"nationalityPrimary": "Japonesa",
 		"image": "/people/chieko-baisho-nm0047962.jpg",
 		"imdbId": "nm0047962",
 		"imdbUrl": "https://www.imdb.com/name/nm0047962/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chieko%20Baish%C5%8D%20at%20the%20Tokyo%20International%20Film%20Festival%202019%20(49013476248)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chieko%20Baish%C5%8D%20at%20the%20Tokyo%20International%20Film%20Festival%202019%20(49013476248)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q1138444",
 			"https://www.imdb.com/name/nm0047962/"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1941-06-29"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Chieko Higashiyama": {
 		"name": "Chieko Higashiyama",
@@ -17357,19 +17482,19 @@
 	},
 	"Choi Min-sik": {
 		"name": "Choi Min-sik",
+		"birthDate": "1962-04-27",
 		"birthYear": 1962,
 		"nationalityPrimary": "Coreano",
 		"image": "/people/choi-min-sik-nm0158856.jpg",
 		"imdbId": "nm0158856",
 		"imdbUrl": "https://www.imdb.com/name/nm0158856/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Choi%20Min-sik.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Choi%20Min-sik.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q484575",
 			"https://www.imdb.com/name/nm0158856/"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1962-04-27"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Choi San": {
 		"name": "Choi San",
@@ -17826,20 +17951,20 @@
 	},
 	"Chris Pine": {
 		"name": "Chris Pine",
+		"birthDate": "1980-08-26",
 		"birthYear": 1980,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/chris-pine-nm1517976.jpg",
 		"imdbId": "nm1517976",
 		"imdbUrl": "https://www.imdb.com/name/nm1517976/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chris%20Pine%20(Cropped).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chris%20Pine%20(Cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q23466",
 			"https://www.imdb.com/name/nm1517976/",
 			"https://www.themoviedb.org/person/62064-chris-pine"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1980-08-26",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q23466",
 		"sexVerifiedAt": "2026-10-11"
@@ -18194,13 +18319,13 @@
 		"image": "/people/christina-ricci-nm0000207.jpg",
 		"imdbId": "nm0000207",
 		"imdbUrl": "https://www.imdb.com/name/nm0000207/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christina%20Ricci%20at%20Los%20Angeles%20Comic%20Con%202024.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christina%20Ricci%20at%20Los%20Angeles%20Comic%20Con%202024-2.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q184103",
 			"https://www.imdb.com/name/nm0000207/",
 			"https://www.themoviedb.org/person/6886-christina-ricci"
 		],
-		"lastVerifiedAt": "2026-04-27",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Christine Baranski": {
@@ -18470,13 +18595,13 @@
 		"image": "/people/christopher-lloyd-nm0000502.jpg",
 		"imdbId": "nm0000502",
 		"imdbUrl": "https://www.imdb.com/name/nm0000502/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Lloyd%20(53135075986).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20Lloyd%20(53135075986).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q109324",
 			"https://www.imdb.com/name/nm0000502/",
 			"https://www.themoviedb.org/person/1062-christopher-lloyd"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q109324",
@@ -18790,20 +18915,20 @@
 	},
 	"Cillian Murphy": {
 		"name": "Cillian Murphy",
+		"birthDate": "1976-05-25",
 		"birthYear": 1976,
 		"nationalityPrimary": "Irlandés",
 		"image": "/people/cillian-murphy-nm0614165.jpg",
 		"imdbId": "nm0614165",
 		"imdbUrl": "https://www.imdb.com/name/nm0614165/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CillianMurphy-TIFF2025-01-Cropped%20(cropped).png?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CillianMurphy-TIFF2025-01-Cropped%20(cropped).png?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q202589",
 			"https://www.imdb.com/name/nm0614165/",
 			"https://www.themoviedb.org/person/2037-cillian-murphy"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1976-05-25",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q202589",
 		"sexVerifiedAt": "2026-10-11"
@@ -19478,7 +19603,7 @@
 			"https://www.imdb.com/name/nm0000142/",
 			"https://www.themoviedb.org/person/190-clint-eastwood"
 		],
-		"lastVerifiedAt": "2026-10-09",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q43203",
@@ -22121,20 +22246,20 @@
 	},
 	"Danny Boyle": {
 		"name": "Danny Boyle",
+		"birthDate": "1956-10-20",
 		"birthYear": 1956,
 		"nationalityPrimary": "Británico",
 		"image": "/people/danny-boyle-nm0000965.jpg",
 		"imdbId": "nm0000965",
 		"imdbUrl": "https://www.imdb.com/name/nm0000965/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Danny%20Boyle%20MFF%202019%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Danny%20Boyle%20MFF%202019%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q134867",
 			"https://www.imdb.com/name/nm0000965/",
 			"https://www.themoviedb.org/person/2034-danny-boyle"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1956-10-20",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q134867",
 		"sexVerifiedAt": "2026-10-11"
@@ -23484,22 +23609,22 @@
 	},
 	"David Niven": {
 		"name": "David Niven",
+		"birthDate": "1910-03-01",
 		"birthYear": 1910,
+		"deathDate": "1983-07-29",
 		"deathYear": 1983,
 		"nationalityPrimary": "Británico",
 		"image": "/people/david-niven-nm0000057.jpg",
 		"imdbId": "nm0000057",
 		"imdbUrl": "https://www.imdb.com/name/nm0000057/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Niven%20Allan%20Warren.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Niven%20Allan%20Warren.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q181917",
 			"https://www.imdb.com/name/nm0000057/",
 			"https://www.themoviedb.org/person/14261-david-niven"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1910-03-01",
-		"deathDate": "1983-07-29"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"David O. Russell": {
 		"name": "David O. Russell",
@@ -24580,7 +24705,7 @@
 			"https://www.imdb.com/name/nm0000454/",
 			"https://www.themoviedb.org/person/2778-dennis-hopper"
 		],
-		"lastVerifiedAt": "2026-10-10",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Dennis Quaid": {
@@ -25160,6 +25285,23 @@
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q217573",
 		"sexVerifiedAt": "2026-10-11"
+	},
+	"Dick Van Dyke": {
+		"name": "Dick Van Dyke",
+		"birthDate": "1925-12-13",
+		"birthYear": 1925,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/dick-van-dyke-nm0001813.jpg",
+		"imdbId": "nm0001813",
+		"imdbUrl": "https://www.imdb.com/name/nm0001813/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dick%20Van%20Dyke%20May%202024.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q310295",
+			"https://www.imdb.com/name/nm0001813/",
+			"https://www.themoviedb.org/person/61303-dick-van-dyke"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Dickie Jones": {
 		"name": "Dick Jones",
@@ -26897,6 +27039,23 @@
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q104791",
 		"sexVerifiedAt": "2026-10-11"
 	},
+	"Ed Sheeran": {
+		"name": "Ed Sheeran",
+		"birthDate": "1991-02-17",
+		"birthYear": 1991,
+		"nationalityPrimary": "Británico",
+		"image": "/people/ed-sheeran-nm3247828.jpg",
+		"imdbId": "nm3247828",
+		"imdbUrl": "https://www.imdb.com/name/nm3247828/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ed%20Sheeran-6886%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q47447",
+			"https://www.imdb.com/name/nm3247828/",
+			"https://www.themoviedb.org/person/998387-ed-sheeran"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Ed Skrein": {
 		"name": "Ed Skrein",
 		"birthYear": 1983,
@@ -27001,20 +27160,20 @@
 	},
 	"Eddie Redmayne": {
 		"name": "Eddie Redmayne",
+		"birthDate": "1982-01-06",
 		"birthYear": 1982,
 		"nationalityPrimary": "Británico",
 		"image": "/people/eddie-redmayne-nm1519666.jpg",
 		"imdbId": "nm1519666",
 		"imdbUrl": "https://www.imdb.com/name/nm1519666/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddie%20Redmayne%20MFF%20Portrait.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eddie%20Redmayne%20MFF%20Portrait.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q28288",
 			"https://www.imdb.com/name/nm1519666/",
 			"https://www.themoviedb.org/person/37632-eddie-redmayne"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1982-01-06",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q28288",
 		"sexVerifiedAt": "2026-10-11"
@@ -27384,13 +27543,13 @@
 		"image": "/people/edward-zwick-nm0001880.jpg",
 		"imdbId": "nm0001880",
 		"imdbUrl": "https://www.imdb.com/name/nm0001880/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Zwick%202016.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Zwick%202016.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q314142",
 			"https://www.imdb.com/name/nm0001880/",
 			"https://www.themoviedb.org/person/9181-edward-zwick"
 		],
-		"lastVerifiedAt": "2026-08-23",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Edwin Hodge": {
@@ -28625,6 +28784,20 @@
 		"lastVerifiedAt": "2026-05-24",
 		"source": "tmdb-imdb-cache"
 	},
+	"Elliott Heffernan": {
+		"name": "Elliott Heffernan",
+		"image": "/people/elliott-heffernan-nm14311695.jpg",
+		"imdbId": "nm14311695",
+		"imdbUrl": "https://www.imdb.com/name/nm14311695/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/gXn6pP5F42Z2Es5Jc2ePBj5KcIO.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q132180569",
+			"https://www.imdb.com/name/nm14311695/",
+			"https://www.themoviedb.org/person/3818255-elliott-heffernan"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Elpidia Carrillo": {
 		"name": "Elpidia Carrillo",
 		"birthDate": "1961-08-16",
@@ -29456,6 +29629,23 @@
 		"lastVerifiedAt": "2026-08-24",
 		"source": "wikidata-imdb-cache"
 	},
+	"Emory Cohen": {
+		"name": "Emory Cohen",
+		"birthDate": "1990-03-13",
+		"birthYear": 1990,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/emory-cohen-nm1710309.jpg",
+		"imdbId": "nm1710309",
+		"imdbUrl": "https://www.imdb.com/name/nm1710309/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/mtummZcNxmcJQ1JIoQUcV3Fwb3.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q13563393",
+			"https://www.imdb.com/name/nm1710309/",
+			"https://www.themoviedb.org/person/1041440-emory-cohen"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-tmdb-cache"
+	},
 	"Enric Auquer": {
 		"name": "Enric Auquer Sardà",
 		"birthYear": 1988,
@@ -29572,26 +29762,6 @@
 		"lastVerifiedAt": "2026-08-07",
 		"source": "wikidata-imdb-cache"
 	},
-	"Enrique Piñeyro": {
-		"name": "Enrique Piñeyro",
-		"birthDate": "1956-12-09",
-		"birthYear": 1956,
-		"nationalityPrimary": "Argentino",
-		"image": "/people/enrique-pineyro-nm0684127.jpg",
-		"imdbId": "nm0684127",
-		"imdbUrl": "https://www.imdb.com/name/nm0684127/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrique%20Pi%C3%B1eyro.png?width=640",
-		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q5379791",
-			"https://www.imdb.com/name/nm0684127/",
-			"https://www.themoviedb.org/person/56247-enrique-pineyro"
-		],
-		"lastVerifiedAt": "2026-08-11",
-		"source": "wikidata-imdb-cache",
-		"sex": "masculino",
-		"sexSourceUrl": "https://www.wikidata.org/wiki/Q5379791",
-		"sexVerifiedAt": "2026-10-11"
-	},
 	"Enrique Pinti": {
 		"name": "Enrique Pinti",
 		"birthDate": "1939-10-07",
@@ -29612,6 +29782,26 @@
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q5379789",
+		"sexVerifiedAt": "2026-10-11"
+	},
+	"Enrique Piñeyro": {
+		"name": "Enrique Piñeyro",
+		"birthDate": "1956-12-09",
+		"birthYear": 1956,
+		"nationalityPrimary": "Argentino",
+		"image": "/people/enrique-pineyro-nm0684127.jpg",
+		"imdbId": "nm0684127",
+		"imdbUrl": "https://www.imdb.com/name/nm0684127/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrique%20Pi%C3%B1eyro.png?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q5379791",
+			"https://www.imdb.com/name/nm0684127/",
+			"https://www.themoviedb.org/person/56247-enrique-pineyro"
+		],
+		"lastVerifiedAt": "2026-08-11",
+		"source": "wikidata-imdb-cache",
+		"sex": "masculino",
+		"sexSourceUrl": "https://www.wikidata.org/wiki/Q5379791",
 		"sexVerifiedAt": "2026-10-11"
 	},
 	"Enrique Rottenberg": {
@@ -30154,13 +30344,13 @@
 		"image": "/people/ernest-borgnine-nm0000308.jpg",
 		"imdbId": "nm0000308",
 		"imdbUrl": "https://www.imdb.com/name/nm0000308/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ernest%20Borgnine%20McHale%20McHale's%20Navy%201962.JPG?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ernest%20Borgnine%20McHale%20McHale's%20Navy%201962.JPG?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q102551",
 			"https://www.imdb.com/name/nm0000308/",
 			"https://www.themoviedb.org/person/7502-ernest-borgnine"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q102551",
@@ -31210,20 +31400,20 @@
 	},
 	"Famke Janssen": {
 		"name": "Famke Janssen",
+		"birthDate": "1964-11-05",
 		"birthYear": 1964,
 		"nationalityPrimary": "Neerlandesa",
 		"image": "/people/famke-janssen-nm0000463.jpg",
 		"imdbId": "nm0000463",
 		"imdbUrl": "https://www.imdb.com/name/nm0000463/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Famke%20Janssen%20(2016)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Famke%20Janssen%20(2016)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q190794",
 			"https://www.imdb.com/name/nm0000463/",
 			"https://www.themoviedb.org/person/10696-famke-janssen"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1964-11-05"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Fanny Gautier": {
 		"name": "Fanny Gautier",
@@ -32123,20 +32313,20 @@
 	},
 	"Florence Pugh": {
 		"name": "Florence Pugh",
+		"birthDate": "1996-01-03",
 		"birthYear": 1996,
 		"nationalityPrimary": "Británica",
 		"image": "/people/florence-pugh-nm6073955.jpg",
 		"imdbId": "nm6073955",
 		"imdbUrl": "https://www.imdb.com/name/nm6073955/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Actress%20Florence%20Pugh%20-%20Thunderbolts%20-%20L.A.%20Premiere%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence%20Pugh%20at%20the%202024%20Toronto%20International%20Film%20Festival%2013%20(cropped%202%20%E2%80%93%20color%20adjusted).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q22277803",
 			"https://www.imdb.com/name/nm6073955/",
 			"https://www.themoviedb.org/person/1373737-florence-pugh"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1996-01-03",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q22277803",
 		"sexVerifiedAt": "2026-10-11"
@@ -32800,13 +32990,13 @@
 		"image": "/people/frank-oz-nm0000568.jpg",
 		"imdbId": "nm0000568",
 		"imdbUrl": "https://www.imdb.com/name/nm0000568/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Oz%202012.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Oz%202012.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q311319",
 			"https://www.imdb.com/name/nm0000568/",
 			"https://www.themoviedb.org/person/7908-frank-oz"
 		],
-		"lastVerifiedAt": "2026-04-06",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Frank Perozo": {
@@ -32825,6 +33015,25 @@
 		],
 		"lastVerifiedAt": "2026-08-26",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Frank Sinatra": {
+		"name": "Frank Sinatra",
+		"birthDate": "1915-12-12",
+		"birthYear": 1915,
+		"deathDate": "1998-05-14",
+		"deathYear": 1998,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/frank-sinatra-nm0000069.jpg",
+		"imdbId": "nm0000069",
+		"imdbUrl": "https://www.imdb.com/name/nm0000069/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Sinatra%20'57.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q40912",
+			"https://www.imdb.com/name/nm0000069/",
+			"https://www.themoviedb.org/person/4347-frank-sinatra"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Frank Vincent": {
 		"name": "Frank Vincent",
@@ -33540,6 +33749,24 @@
 		"lastVerifiedAt": "2026-08-15",
 		"source": "wikidata-imdb-cache"
 	},
+	"Gabriele Muccino": {
+		"name": "Gabriele Muccino",
+		"birthDate": "1967-05-20",
+		"birthYear": 1967,
+		"nationalityPrimary": "Italiano",
+		"image": "/people/gabriele-muccino-vivienna.jpg",
+		"imdbId": "nm0610831",
+		"imdbUrl": "https://www.imdb.com/name/nm0610831/",
+		"remoteImageUrl": "https://www.vivienna.it/wp-content/uploads/sites/8/2020/01/20200113_0636.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q558822",
+			"https://www.imdb.com/name/nm0610831/",
+			"https://www.themoviedb.org/person/20646-gabriele-muccino",
+			"https://www.vivienna.it/2020/01/13/gabriele-muccino-regista-di-cavalleria-rusticana-e-pagliacci-a-verona/"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "vivienna-italpress-portrait"
+	},
 	"Gabrielle Lopes Benites": {
 		"name": "Gabrielle Lopes Benites",
 		"image": "/people/gabrielle-lopes-benites-43779.jpg",
@@ -33604,20 +33831,20 @@
 	},
 	"Gael Garcia Bernal": {
 		"name": "Gael García Bernal",
+		"birthDate": "1978-11-30",
 		"birthYear": 1978,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/gael-garcia-bernal-nm0305558.jpg",
 		"imdbId": "nm0305558",
 		"imdbUrl": "https://www.imdb.com/name/nm0305558/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gael%20Garcia%20Bernal%202015.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gael%20Garcia%20Bernal%202015.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q179576",
 			"https://www.imdb.com/name/nm0305558/",
 			"https://www.themoviedb.org/person/258-gael-garcia-bernal"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1978-11-30"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Gaëtan Brizzi": {
 		"name": "Gaëtan Brizzi",
@@ -33988,13 +34215,13 @@
 		"image": "/people/gary-oldman-nm0000198.jpg",
 		"imdbId": "nm0000198",
 		"imdbUrl": "https://www.imdb.com/name/nm0000198/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary%20Oldman%20by%20Gage%20Skidmore.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary%20Oldman%20by%20Gage%20Skidmore.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q83492",
 			"https://www.imdb.com/name/nm0000198/",
 			"https://www.themoviedb.org/person/64-gary-oldman"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q83492",
@@ -35806,20 +36033,20 @@
 	},
 	"Glenn Close": {
 		"name": "Glenn Close",
+		"birthDate": "1947-03-19",
 		"birthYear": 1947,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/glenn-close-nm0000335.jpg",
 		"imdbId": "nm0000335",
 		"imdbUrl": "https://www.imdb.com/name/nm0000335/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Glenn%20Close%202012%201.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Glenn%20Close%202012%201.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q372311",
 			"https://www.imdb.com/name/nm0000335/",
 			"https://www.themoviedb.org/person/515-glenn-close"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1947-03-19",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q372311",
 		"sexVerifiedAt": "2026-10-11"
@@ -36486,7 +36713,7 @@
 			"https://www.imdb.com/name/nm0000060/",
 			"https://www.themoviedb.org/person/8487-gregory-peck"
 		],
-		"lastVerifiedAt": "2026-10-09",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Gregory Walcott": {
@@ -36743,11 +36970,12 @@
 		"image": "/people/guillermo-del-toro-nm0868219.jpg",
 		"imdbId": "nm0868219",
 		"imdbUrl": "https://www.imdb.com/name/nm0868219/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Guillermo%20del%20Toro%20at%20the%202026%20Sundance%20Film%20Festival%2001%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Guillermo%20del%20Toro%20at%20the%202026%20Sundance%20Film%20Festival%2001%20(cropped).jpg?width=960",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q219124",
 			"https://www.imdb.com/name/nm0868219/",
-			"https://www.themoviedb.org/person/10828-guillermo-del-toro"
+			"https://www.themoviedb.org/person/10828-guillermo-del-toro",
+			"https://commons.wikimedia.org/wiki/File:Guillermo_del_Toro_at_the_2026_Sundance_Film_Festival_01_(cropped).jpg"
 		],
 		"lastVerifiedAt": "2026-03-14",
 		"source": "wikidata-imdb-cache",
@@ -37922,13 +38150,13 @@
 		"image": "/people/harrison-ford-nm0000148.jpg",
 		"imdbId": "nm0000148",
 		"imdbUrl": "https://www.imdb.com/name/nm0000148/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harrison%20Ford%20-%20Televerse%202025-03.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harrison%20Ford%20-%20Televerse%202025-03.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q81328",
 			"https://www.imdb.com/name/nm0000148/",
 			"https://www.themoviedb.org/person/3-harrison-ford"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q81328",
@@ -38260,12 +38488,12 @@
 		"image": "/people/hayao-miyazaki-nm0594503.jpg",
 		"imdbId": "nm0594503",
 		"imdbUrl": "https://www.imdb.com/name/nm0594503/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HayaoMiyazakiCCJuly09.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HayaoMiyazakiCCJuly09.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q55400",
 			"https://www.imdb.com/name/nm0594503/"
 		],
-		"lastVerifiedAt": "2026-08-20",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q55400",
@@ -39309,19 +39537,19 @@
 	},
 	"Hiroyuki Sanada": {
 		"name": "Hiroyuki Sanada",
+		"birthDate": "1960-10-12",
 		"birthYear": 1960,
 		"nationalityPrimary": "Japonés",
 		"image": "/people/hiroyuki-sanada-nm0760796.jpg",
 		"imdbId": "nm0760796",
 		"imdbUrl": "https://www.imdb.com/name/nm0760796/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroyuki%20Sanada%202013%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiro%20Sanada.png?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q705522",
 			"https://www.imdb.com/name/nm0760796/"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1960-10-12"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Hisham Al Rashidi": {
 		"name": "Hisham Al Rashidi",
@@ -40674,21 +40902,6 @@
 		"lastVerifiedAt": "2026-08-14",
 		"source": "wikidata-imdb-cache"
 	},
-	"Iñaki Ardanaz": {
-		"name": "Iñaki Ardanaz",
-		"birthYear": 1984,
-		"nationalityPrimary": "Española",
-		"image": "/people/inaki-ardanaz-nm1964119.jpg",
-		"imdbId": "nm1964119",
-		"imdbUrl": "https://www.imdb.com/name/nm1964119/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/I%C3%B1aki%20Ardanaz.jpg?width=640",
-		"referenceUrls": [
-			"https://www.wikidata.org/wiki/Q106573742",
-			"https://www.imdb.com/name/nm1964119/"
-		],
-		"lastVerifiedAt": "2026-08-07",
-		"source": "manual-verified"
-	},
 	"Inde Navarrette": {
 		"name": "Inde Navarrette",
 		"birthDate": "2001-03-03",
@@ -40883,6 +41096,21 @@
 		"lastVerifiedAt": "2026-08-11",
 		"image": "/people/inma-cuesta-224728.jpg",
 		"source": "tmdb-cache"
+	},
+	"Iñaki Ardanaz": {
+		"name": "Iñaki Ardanaz",
+		"birthYear": 1984,
+		"nationalityPrimary": "Española",
+		"image": "/people/inaki-ardanaz-nm1964119.jpg",
+		"imdbId": "nm1964119",
+		"imdbUrl": "https://www.imdb.com/name/nm1964119/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/I%C3%B1aki%20Ardanaz.jpg?width=640",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q106573742",
+			"https://www.imdb.com/name/nm1964119/"
+		],
+		"lastVerifiedAt": "2026-08-07",
+		"source": "manual-verified"
 	},
 	"Ioan Gruffudd": {
 		"name": "Ioan Gruffudd",
@@ -41994,6 +42222,25 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1961-07-14"
 	},
+	"Jackie Gleason": {
+		"name": "Jackie Gleason",
+		"birthDate": "1916-02-26",
+		"birthYear": 1916,
+		"deathDate": "1987-06-24",
+		"deathYear": 1987,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/jackie-gleason-nm0001276.jpg",
+		"imdbId": "nm0001276",
+		"imdbUrl": "https://www.imdb.com/name/nm0001276/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Publicity%20photo%20young%20Jackie%20Gleason.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q454200",
+			"https://www.imdb.com/name/nm0001276/",
+			"https://www.themoviedb.org/person/14882-jackie-gleason"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Jackie Sandler": {
 		"name": "Jackie Sandler",
 		"birthDate": "1974-09-24",
@@ -42336,6 +42583,23 @@
 		"lastVerifiedAt": "2026-08-21",
 		"source": "wikidata-imdb-cache"
 	},
+	"Jaden Smith": {
+		"name": "Jaden Smith",
+		"birthDate": "1998-07-08",
+		"birthYear": 1998,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/jaden-smith-nm1535523.jpg",
+		"imdbId": "nm1535523",
+		"imdbUrl": "https://www.imdb.com/name/nm1535523/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/2019%20-%20Opening%20Night%20SM1%200502%20(49014567373).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q221364",
+			"https://www.imdb.com/name/nm1535523/",
+			"https://www.themoviedb.org/person/120724-jaden-smith"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Jaeden Martell": {
 		"name": "Jaeden Martell",
 		"birthYear": 2003,
@@ -42667,6 +42931,23 @@
 		"image": "/people/james-broderick-14542.jpg",
 		"source": "tmdb-cache"
 	},
+	"James Brolin": {
+		"name": "James Brolin",
+		"birthDate": "1940-07-18",
+		"birthYear": 1940,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/james-brolin-nm0000981.jpg",
+		"imdbId": "nm0000981",
+		"imdbUrl": "https://www.imdb.com/name/nm0000981/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Brolin%202013%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q315051",
+			"https://www.imdb.com/name/nm0000981/",
+			"https://www.themoviedb.org/person/9274-james-brolin"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"James Caan": {
 		"name": "James Caan",
 		"birthDate": "1940-03-26",
@@ -42890,6 +43171,25 @@
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q306403",
 		"sexVerifiedAt": "2026-10-11"
+	},
+	"James Frawley": {
+		"name": "James Frawley",
+		"birthDate": "1936-09-29",
+		"birthYear": 1936,
+		"deathDate": "2019-01-22",
+		"deathYear": 2019,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/james-frawley-nm0292419.jpg",
+		"imdbId": "nm0292419",
+		"imdbUrl": "https://www.imdb.com/name/nm0292419/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/qMG0tZVWuS2mkLbMSM97JrEJTTm.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q3161090",
+			"https://www.imdb.com/name/nm0292419/",
+			"https://www.themoviedb.org/person/68457-james-frawley"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"James Gammon": {
 		"name": "James Gammon",
@@ -43344,7 +43644,7 @@
 			"https://www.imdb.com/name/nm0000071/",
 			"https://www.themoviedb.org/person/854-james-stewart"
 		],
-		"lastVerifiedAt": "2026-10-10",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q102462",
@@ -43583,6 +43883,23 @@
 		"lastVerifiedAt": "2026-08-12",
 		"source": "wikidata-imdb-cache"
 	},
+	"Jan de Bont": {
+		"name": "Jan de Bont",
+		"birthDate": "1943-10-22",
+		"birthYear": 1943,
+		"nationalityPrimary": "Neerlandés",
+		"image": "/people/jan-de-bont-nm0000957.jpg",
+		"imdbId": "nm0000957",
+		"imdbUrl": "https://www.imdb.com/name/nm0000957/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20de%20Bont%20(1973).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q376107",
+			"https://www.imdb.com/name/nm0000957/",
+			"https://www.themoviedb.org/person/2209-jan-de-bont"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Jan Decorte": {
 		"name": "Jan Decorte",
 		"birthDate": "1950-05-09",
@@ -43813,22 +44130,22 @@
 	},
 	"Janet Leigh": {
 		"name": "Janet Leigh",
+		"birthDate": "1927-07-06",
 		"birthYear": 1927,
+		"deathDate": "2004-10-03",
 		"deathYear": 2004,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/janet-leigh-nm0001463.jpg",
 		"imdbId": "nm0001463",
 		"imdbUrl": "https://www.imdb.com/name/nm0001463/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Janet%20Leigh%20Publicity.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Janet%20Leigh%201940s%20publicity%20photo.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q205314",
 			"https://www.imdb.com/name/nm0001463/",
 			"https://www.themoviedb.org/person/7302-janet-leigh"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1927-07-06",
-		"deathDate": "2004-10-03"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Janet Margolin": {
 		"name": "Janet Margolin",
@@ -44323,20 +44640,20 @@
 	},
 	"Jason Schwartzman": {
 		"name": "Jason Schwartzman",
+		"birthDate": "1980-06-26",
 		"birthYear": 1980,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/jason-schwartzman-nm0005403.jpg",
 		"imdbId": "nm0005403",
 		"imdbUrl": "https://www.imdb.com/name/nm0005403/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason%20Schwartzman-68017.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason%20Schwartzman-68017.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q313705",
 			"https://www.imdb.com/name/nm0005403/",
 			"https://www.themoviedb.org/person/17881-jason-schwartzman"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1980-06-26"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Jason Segel": {
 		"name": "Jason Segel",
@@ -45269,13 +45586,13 @@
 		"image": "/people/jeff-daniels-nm0001099.jpg",
 		"imdbId": "nm0001099",
 		"imdbUrl": "https://www.imdb.com/name/nm0001099/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeff%20Daniels%20at%20PaleyFest%202013.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeff%20Daniels%20at%20PaleyFest%202013.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q53680",
 			"https://www.imdb.com/name/nm0001099/",
 			"https://www.themoviedb.org/person/8447-jeff-daniels"
 		],
-		"lastVerifiedAt": "2026-04-06",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q53680",
@@ -45334,20 +45651,20 @@
 	},
 	"Jeff Goldblum": {
 		"name": "Jeff Goldblum",
+		"birthDate": "1952-10-22",
 		"birthYear": 1952,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/jeff-goldblum-nm0000156.jpg",
 		"imdbId": "nm0000156",
 		"imdbUrl": "https://www.imdb.com/name/nm0000156/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeff%20Goldblum%20by%20Gage%20Skidmore.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeff%20Goldblum%20by%20Gage%20Skidmore.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q106706",
 			"https://www.imdb.com/name/nm0000156/",
 			"https://www.themoviedb.org/person/4785-jeff-goldblum"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1952-10-22",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q106706",
 		"sexVerifiedAt": "2026-10-11"
@@ -46255,20 +46572,20 @@
 	},
 	"Jeremy Renner": {
 		"name": "Jeremy Renner",
+		"birthDate": "1971-01-07",
 		"birthYear": 1971,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/jeremy-renner-nm0719637.jpg",
 		"imdbId": "nm0719637",
 		"imdbUrl": "https://www.imdb.com/name/nm0719637/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Renner%20at%20TIFF%202025%20(cropped).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Renner%20at%20TIFF%202025%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q23365",
 			"https://www.imdb.com/name/nm0719637/",
 			"https://www.themoviedb.org/person/17604-jeremy-renner"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1971-01-07",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q23365",
 		"sexVerifiedAt": "2026-10-11"
@@ -46851,20 +47168,20 @@
 	},
 	"Jessie Buckley": {
 		"name": "Jessie Buckley",
+		"birthDate": "1989-12-28",
 		"birthYear": 1989,
 		"nationalityPrimary": "Irlandesa",
 		"image": "/people/jessie-buckley-nm2976580.jpg",
 		"imdbId": "nm2976580",
 		"imdbUrl": "https://www.imdb.com/name/nm2976580/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessie%20Buckley.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessie%20Buckley.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q6187642",
 			"https://www.imdb.com/name/nm2976580/",
 			"https://www.themoviedb.org/person/1498158-jessie-buckley"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1989-12-28",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q6187642",
 		"sexVerifiedAt": "2026-10-11"
@@ -47141,13 +47458,13 @@
 		"image": "/people/jim-henson-nm0001345.jpg",
 		"imdbId": "nm0001345",
 		"imdbUrl": "https://www.imdb.com/name/nm0001345/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim%20Henson%2C%20creator%2C%20The%20Muppets.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim%20Henson%2C%20creator%2C%20The%20Muppets.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q191037",
 			"https://www.imdb.com/name/nm0001345/",
 			"https://www.themoviedb.org/person/55983-jim-henson"
 		],
-		"lastVerifiedAt": "2026-04-06",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Jim Jarmusch": {
@@ -47484,13 +47801,13 @@
 		"image": "/people/joan-cusack-nm0000349.jpg",
 		"imdbId": "nm0000349",
 		"imdbUrl": "https://www.imdb.com/name/nm0000349/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joan%20Cusack%20(h).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joan%20Cusack%20(h).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q272946",
 			"https://www.imdb.com/name/nm0000349/",
 			"https://www.themoviedb.org/person/3234-joan-cusack"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Joan Didion": {
@@ -48481,6 +48798,23 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"John Boorman": {
+		"name": "John Boorman",
+		"birthDate": "1933-01-18",
+		"birthYear": 1933,
+		"nationalityPrimary": "Británico",
+		"image": "/people/john-boorman-nm0000958.jpg",
+		"imdbId": "nm0000958",
+		"imdbUrl": "https://www.imdb.com/name/nm0000958/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Boorman%20Cannes%202014.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q55277",
+			"https://www.imdb.com/name/nm0000958/",
+			"https://www.themoviedb.org/person/19665-john-boorman"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"John Boyega": {
 		"name": "John Boyega",
 		"birthDate": "1992-03-17",
@@ -48713,6 +49047,25 @@
 		"image": "/people/john-cleese-8930.jpg",
 		"source": "tmdb-cache"
 	},
+	"John Crowley": {
+		"name": "John Crowley",
+		"birthDate": "1942-12-01",
+		"birthYear": 1942,
+		"deathDate": "2026-08-08",
+		"deathYear": 2026,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/john-crowley-nm0189749.jpg",
+		"imdbId": "nm0189749",
+		"imdbUrl": "https://www.imdb.com/name/nm0189749/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Crowley%20South%20Street%20Seaport%20cropped.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q736447",
+			"https://www.imdb.com/name/nm0189749/",
+			"https://www.themoviedb.org/person/77269-john-crowley"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"John Cusack": {
 		"name": "John Cusack",
 		"birthDate": "1966-06-28",
@@ -48721,13 +49074,13 @@
 		"image": "/people/john-cusack-nm0000131.jpg",
 		"imdbId": "nm0000131",
 		"imdbUrl": "https://www.imdb.com/name/nm0000131/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cusack%20Comic-Con%202011.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cusack%20Comic-Con%202011.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q106175",
 			"https://www.imdb.com/name/nm0000131/",
 			"https://www.themoviedb.org/person/3036-john-cusack"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q106175",
@@ -48869,13 +49222,13 @@
 		"image": "/people/john-frankenheimer-nm0001239.jpg",
 		"imdbId": "nm0001239",
 		"imdbUrl": "https://www.imdb.com/name/nm0001239/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Frankenheimer%20on%20the%20set%20of%20%22Andersonville%22%20(cropped).JPG?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Frankenheimer%20on%20the%20set%20of%20%22Andersonville%22%20(cropped).JPG?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q262820",
 			"https://www.imdb.com/name/nm0001239/",
 			"https://www.themoviedb.org/person/13776-john-frankenheimer"
 		],
-		"lastVerifiedAt": "2026-08-24",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"John Furey": {
@@ -49545,13 +49898,13 @@
 		"image": "/people/john-malkovich-nm0000518.jpg",
 		"imdbId": "nm0000518",
 		"imdbUrl": "https://www.imdb.com/name/nm0000518/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Malkovich%2C%20Berlinale%202023%20cropped.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Malkovich%2C%20Berlinale%202023%20cropped.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q172261",
 			"https://www.imdb.com/name/nm0000518/",
 			"https://www.themoviedb.org/person/6949-john-malkovich"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q172261",
@@ -49727,6 +50080,25 @@
 			"https://www.themoviedb.org/person/15337-john-polson"
 		],
 		"lastVerifiedAt": "2026-08-25",
+		"source": "wikidata-imdb-cache"
+	},
+	"John Randolph": {
+		"name": "John Randolph",
+		"birthDate": "1915-06-01",
+		"birthYear": 1915,
+		"deathDate": "2004-02-24",
+		"deathYear": 2004,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/john-randolph-nm0709907.jpg",
+		"imdbId": "nm0709907",
+		"imdbUrl": "https://www.imdb.com/name/nm0709907/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Randolph%20Publicity%20Photo.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q532715",
+			"https://www.imdb.com/name/nm0709907/",
+			"https://www.themoviedb.org/person/18649-john-randolph"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"John Requa": {
@@ -50508,13 +50880,13 @@
 		"image": "/people/jon-voight-nm0000685.jpg",
 		"imdbId": "nm0000685",
 		"imdbUrl": "https://www.imdb.com/name/nm0000685/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jon%20Voight%202011.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jon%20Voight%202011.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q167520",
 			"https://www.imdb.com/name/nm0000685/",
 			"https://www.themoviedb.org/person/10127-jon-voight"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q167520",
@@ -50656,6 +51028,23 @@
 		],
 		"lastVerifiedAt": "2026-10-10",
 		"source": "wikidata-imdb-tmdb-cache"
+	},
+	"Jonathan Dayton": {
+		"name": "Jonathan Dayton",
+		"birthDate": "1957-07-07",
+		"birthYear": 1957,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/jonathan-dayton-nm0206760.jpg",
+		"imdbId": "nm0206760",
+		"imdbUrl": "https://www.imdb.com/name/nm0206760/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan%20Dayton%2C%20Elisabeth%20Shue%2C%20Andrea%20Riseborough%2C%20Emma%20Stone%20and%20Billie%20Jean%20King%20at%20Battle%20of%20the%20Sexes%2C%20London%20(36888195163).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q13644938",
+			"https://www.imdb.com/name/nm0206760/",
+			"https://www.themoviedb.org/person/16959-jonathan-dayton"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Jonathan Demme": {
 		"name": "Jonathan Demme",
@@ -51456,20 +51845,20 @@
 	},
 	"Joseph Gordon-Levitt": {
 		"name": "Joseph Gordon-Levitt",
+		"birthDate": "1981-02-17",
 		"birthYear": 1981,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/joseph-gordon-levitt-nm0330687.jpg",
 		"imdbId": "nm0330687",
 		"imdbUrl": "https://www.imdb.com/name/nm0330687/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Gordon%20Levitt%20Sundance%20Film%20Festival%202026%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Gordon%20Levitt%20Sundance%20Film%20Festival%202026%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q177311",
 			"https://www.imdb.com/name/nm0330687/",
 			"https://www.themoviedb.org/person/24045-joseph-gordon-levitt"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1981-02-17",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q177311",
 		"sexVerifiedAt": "2026-10-11"
@@ -51568,6 +51957,25 @@
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q39073476",
 		"sexVerifiedAt": "2026-10-11"
+	},
+	"Joseph Sargent": {
+		"name": "Joseph Sargent",
+		"birthDate": "1925-07-22",
+		"birthYear": 1925,
+		"deathDate": "2014-12-22",
+		"deathYear": 2014,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/joseph-sargent-nm0765121.jpg",
+		"imdbId": "nm0765121",
+		"imdbUrl": "https://www.imdb.com/name/nm0765121/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Director%20Joseph%20Sargent%20in%201980.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q1707954",
+			"https://www.imdb.com/name/nm0765121/",
+			"https://www.themoviedb.org/person/15663-joseph-sargent"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Joseph Schildkraut": {
 		"name": "Joseph Schildkraut",
@@ -53067,20 +53475,20 @@
 	},
 	"Julie Andrews": {
 		"name": "Julie Andrews",
+		"birthDate": "1935-10-01",
 		"birthYear": 1935,
 		"nationalityPrimary": "Británica",
 		"image": "/people/julie-andrews-nm0000267.jpg",
 		"imdbId": "nm0000267",
 		"imdbUrl": "https://www.imdb.com/name/nm0000267/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Julie%20Andrews%20Park%20Hyatt%2C%20Sydney%2C%20Australia%202013.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Julie%20Andrews%20Park%20Hyatt%2C%20Sydney%2C%20Australia%202013.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q161819",
 			"https://www.imdb.com/name/nm0000267/",
 			"https://www.themoviedb.org/person/5823-julie-andrews"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1935-10-01"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Julie Benz": {
 		"name": "Julie Benz",
@@ -55497,7 +55905,7 @@
 			"https://www.imdb.com/name/nm0000206/",
 			"https://www.themoviedb.org/person/6384-keanu-reeves"
 		],
-		"lastVerifiedAt": "2026-10-18",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q43416",
@@ -55618,37 +56026,20 @@
 	},
 	"Keira Knightley": {
 		"name": "Keira Knightley",
+		"birthDate": "1985-03-26",
 		"birthYear": 1985,
 		"nationalityPrimary": "Británica",
 		"image": "/people/keira-knightley-nm0461136.jpg",
-		"Kelly McGillis": {
-			"name": "Kelly McGillis",
-			"birthDate": "1957-07-09",
-			"birthYear": 1957,
-			"nationalityPrimary": "Estadounidense",
-			"image": "/people/kelly-mcgillis-nm0000534.jpg",
-			"imdbId": "nm0000534",
-			"imdbUrl": "https://www.imdb.com/name/nm0000534/",
-			"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/KellyMcGillisSept10TIFF.jpg?width=640",
-			"referenceUrls": [
-				"https://www.wikidata.org/wiki/Q229147",
-				"https://www.imdb.com/name/nm0000534/",
-				"https://www.themoviedb.org/person/11084-kelly-mcgillis"
-			],
-			"lastVerifiedAt": "2026-08-25",
-			"source": "wikidata-imdb-cache"
-		},
 		"imdbId": "nm0461136",
 		"imdbUrl": "https://www.imdb.com/name/nm0461136/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/KeiraKnightleyByAndreaRaffin2011%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/KeiraKnightleyByAndreaRaffin2011%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q42581",
 			"https://www.imdb.com/name/nm0461136/",
 			"https://www.themoviedb.org/person/116-keira-knightley"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1985-03-26",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q42581",
 		"sexVerifiedAt": "2026-10-11"
@@ -55960,6 +56351,23 @@
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Ken Watanabe": {
+		"name": "Ken Watanabe",
+		"birthDate": "1959-10-21",
+		"birthYear": 1959,
+		"nationalityPrimary": "Japonés",
+		"image": "/people/ken-watanabe-nm0913822.jpg",
+		"imdbId": "nm0913822",
+		"imdbUrl": "https://www.imdb.com/name/nm0913822/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ken%20Watanabe%202007%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q211553",
+			"https://www.imdb.com/name/nm0913822/",
+			"https://www.themoviedb.org/person/3899-du-bian-qian"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Ken Yamamoto": {
 		"name": "Ken Yamamoto",
 		"birthDate": "1966-08-16",
@@ -56065,6 +56473,23 @@
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q55294",
 		"sexVerifiedAt": "2026-10-11"
+	},
+	"Kenneth Lonergan": {
+		"name": "Kenneth Lonergan",
+		"birthDate": "1962-10-16",
+		"birthYear": 1962,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/kenneth-lonergan-nm0518836.jpg",
+		"imdbId": "nm0518836",
+		"imdbUrl": "https://www.imdb.com/name/nm0518836/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenneth%20Lonergan%20Viennale%202016%20opening%204%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q968840",
+			"https://www.imdb.com/name/nm0518836/",
+			"https://www.themoviedb.org/person/30711-kenneth-lonergan"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Kenneth Welsh": {
 		"name": "Kenneth Welsh",
@@ -56924,6 +57349,17 @@
 		],
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-imdb-cache"
+	},
+	"Kim Jee-woon": {
+		"name": "Kim Jee-woon",
+		"image": "/people/kim-jee-woon-kofic.jpg",
+		"remoteImageUrl": "https://kobis.or.kr/upload/up_img/cleansing/52/peo_10005852_1.277.0%5B1%5D.jpg",
+		"referenceUrls": [
+			"https://www.koreanfilm.or.kr/eng/films/index/peopleView.jsp?peopleCd=10005852",
+			"https://www.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20100301"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "koreanfilm-database"
 	},
 	"Kim Min-hee": {
 		"name": "Kim Min-hee",
@@ -57832,20 +58268,20 @@
 	},
 	"Kristen Wiig": {
 		"name": "Kristen Wiig",
+		"birthDate": "1973-08-22",
 		"birthYear": 1973,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/kristen-wiig-nm1325419.jpg",
 		"imdbId": "nm1325419",
 		"imdbUrl": "https://www.imdb.com/name/nm1325419/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristin%20Wiig%202013.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kristin%20Wiig%202013.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q231382",
 			"https://www.imdb.com/name/nm1325419/",
 			"https://www.themoviedb.org/person/41091-kristen-wiig"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1973-08-22",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q231382",
 		"sexVerifiedAt": "2026-10-11"
@@ -58192,20 +58628,20 @@
 	},
 	"Lady Gaga": {
 		"name": "Lady Gaga",
+		"birthDate": "1986-03-20",
 		"birthYear": 1986,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/lady-gaga-nm3078932.jpg",
 		"imdbId": "nm3078932",
 		"imdbUrl": "https://www.imdb.com/name/nm3078932/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lady%20Gaga%20at%20Oscars%202016.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lady%20Gaga%20at%20Oscars%202016.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q19848",
 			"https://www.imdb.com/name/nm3078932/",
 			"https://www.themoviedb.org/person/237405-lady-gaga"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1986-03-20"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Laia Costa": {
 		"name": "Laia Costa",
@@ -58798,6 +59234,26 @@
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q193048",
 		"sexVerifiedAt": "2026-10-11"
 	},
+	"Laurence Harvey": {
+		"name": "Laurence Harvey",
+		"birthDate": "1928-10-01",
+		"birthYear": 1928,
+		"deathDate": "1973-11-25",
+		"deathYear": 1973,
+		"nationalityPrimary": "Lituania",
+		"image": "/people/laurence-harvey-nm0002131.jpg",
+		"imdbId": "nm0002131",
+		"imdbUrl": "https://www.imdb.com/name/nm0002131/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Laurence_Harvey_Pool.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q374045",
+			"https://www.imdb.com/name/nm0002131/",
+			"https://www.themoviedb.org/person/14729-laurence-harvey",
+			"https://commons.wikimedia.org/wiki/File:Laurence_Harvey_Pool.jpg"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "manual-verified"
+	},
 	"Laurence Morais-Lagacé": {
 		"name": "Laurence Morais-Lagacé",
 		"birthDate": "1981-07-09",
@@ -59267,6 +59723,25 @@
 		"lastVerifiedAt": "2026-09-25",
 		"source": "wikidata-imdb-cache"
 	},
+	"Lee Marvin": {
+		"name": "Lee Marvin",
+		"birthDate": "1924-02-19",
+		"birthYear": 1924,
+		"deathDate": "1987-08-29",
+		"deathYear": 1987,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/lee-marvin-nm0001511.jpg",
+		"imdbId": "nm0001511",
+		"imdbUrl": "https://www.imdb.com/name/nm0001511/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lee%20marvin%201971.JPG?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q76895",
+			"https://www.imdb.com/name/nm0001511/",
+			"https://www.themoviedb.org/person/18391-lee-marvin"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Lee Meriwether": {
 		"name": "Lee Meriwether",
 		"birthYear": 1935,
@@ -59315,6 +59790,25 @@
 			"https://www.themoviedb.org/person/72095-lee-pace"
 		],
 		"lastVerifiedAt": "2026-09-10",
+		"source": "wikidata-imdb-cache"
+	},
+	"Lee Remick": {
+		"name": "Lee Remick",
+		"birthDate": "1935-12-14",
+		"birthYear": 1935,
+		"deathDate": "1991-07-02",
+		"deathYear": 1991,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/lee-remick-nm0001665.jpg",
+		"imdbId": "nm0001665",
+		"imdbUrl": "https://www.imdb.com/name/nm0001665/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lee%20Ann%20Remick%2C%20London%2C%201974.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q230011",
+			"https://www.imdb.com/name/nm0001665/",
+			"https://www.themoviedb.org/person/855-lee-remick"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Lee Sun-kyun": {
@@ -60530,6 +61024,23 @@
 		"source": "wikidata-imdb-cache",
 		"birthDate": "1967-12-29"
 	},
+	"Lily Collins": {
+		"name": "Lily Collins",
+		"birthDate": "1989-03-18",
+		"birthYear": 1989,
+		"nationalityPrimary": "Británica",
+		"image": "/people/lily-collins-nm2934314.jpg",
+		"imdbId": "nm2934314",
+		"imdbUrl": "https://www.imdb.com/name/nm2934314/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tolkien%20(33926801908)%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q229184",
+			"https://www.imdb.com/name/nm2934314/",
+			"https://www.themoviedb.org/person/112561-lily-collins"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Lily Gladstone": {
 		"name": "Lily Gladstone",
 		"birthYear": 1986,
@@ -61032,20 +61543,20 @@
 	},
 	"Liv Tyler": {
 		"name": "Liv Tyler",
+		"birthDate": "1977-07-01",
 		"birthYear": 1977,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/liv-tyler-nm0000239.jpg",
 		"imdbId": "nm0000239",
 		"imdbUrl": "https://www.imdb.com/name/nm0000239/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Liv%20Tyler%20(2016)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Liv%20Tyler%20(2016)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q168763",
 			"https://www.imdb.com/name/nm0000239/",
 			"https://www.themoviedb.org/person/882-liv-tyler"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1977-07-01",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q168763",
 		"sexVerifiedAt": "2026-10-11"
@@ -61230,20 +61741,20 @@
 	},
 	"Lola Dueñas": {
 		"name": "Lola Dueñas",
+		"birthDate": "1971-10-06",
 		"birthYear": 1971,
 		"nationalityPrimary": "Española",
 		"image": "/people/lola-duenas-nm0240318.jpg",
 		"imdbId": "nm0240318",
 		"imdbUrl": "https://www.imdb.com/name/nm0240318/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Goyas%202025%20-%20Lola%20Due%C3%B1as%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Goyas%202025%20-%20Lola%20Due%C3%B1as%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q283513",
 			"https://www.imdb.com/name/nm0240318/",
 			"https://www.themoviedb.org/person/2759-lola-duenas"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1971-10-06"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Lorelei Linklater": {
 		"name": "Lorelei Linklater",
@@ -62778,20 +63289,20 @@
 	},
 	"M. Night Shyamalan": {
 		"name": "M. Night Shyamalan",
+		"birthDate": "1970-08-06",
 		"birthYear": 1970,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/m-night-shyamalan-nm0796117.jpg",
 		"imdbId": "nm0796117",
 		"imdbUrl": "https://www.imdb.com/name/nm0796117/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/M.%20Night%20Shyamalan%20(28769148857)%20(cropped%202).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/M.%20Night%20Shyamalan%20(28769148857)%20(cropped%202).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q51489",
 			"https://www.imdb.com/name/nm0796117/",
 			"https://www.themoviedb.org/person/11614-m-night-shyamalan"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1970-08-06",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q51489",
 		"sexVerifiedAt": "2026-10-11"
@@ -63239,20 +63750,20 @@
 	},
 	"Maggie Gyllenhaal": {
 		"name": "Maggie Gyllenhaal",
+		"birthDate": "1977-11-16",
 		"birthYear": 1977,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/maggie-gyllenhaal-nm0350454.jpg",
 		"imdbId": "nm0350454",
 		"imdbUrl": "https://www.imdb.com/name/nm0350454/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maggie%20Gyllenhaal%202021.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maggie%20Gyllenhaal%20at%20the%2083rd%20Venice%20International%20Film%20Festival%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q202381",
 			"https://www.imdb.com/name/nm0350454/",
 			"https://www.themoviedb.org/person/1579-maggie-gyllenhaal"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1977-11-16"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Maggie Kang": {
 		"name": "Maggie Kang",
@@ -64194,20 +64705,20 @@
 	},
 	"Marc Webb": {
 		"name": "Marc Webb",
+		"birthDate": "1974-08-31",
 		"birthYear": 1974,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/marc-webb-nm1989536.jpg",
 		"imdbId": "nm1989536",
 		"imdbUrl": "https://www.imdb.com/name/nm1989536/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marc%20Webb%20by%20Gage%20Skidmore.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marc%20Webb%20by%20Gage%20Skidmore.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q357998",
 			"https://www.imdb.com/name/nm1989536/",
 			"https://www.themoviedb.org/person/87742-marc-webb"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1974-08-31"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Marcel Dalio": {
 		"name": "Marcel Dalio",
@@ -64761,22 +65272,22 @@
 	},
 	"Margot Kidder": {
 		"name": "Margot Kidder",
+		"birthDate": "1948-10-17",
 		"birthYear": 1948,
+		"deathDate": "2018-05-13",
 		"deathYear": 2018,
 		"nationalityPrimary": "Canadiense",
 		"image": "/people/margot-kidder-nm0452288.jpg",
 		"imdbId": "nm0452288",
 		"imdbUrl": "https://www.imdb.com/name/nm0452288/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Margot%20Kidder%201970%20publicity%20photo%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Margot%20Kidder%201970%20publicity%20photo%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q234471",
 			"https://www.imdb.com/name/nm0452288/",
 			"https://www.themoviedb.org/person/20011-margot-kidder"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1948-10-17",
-		"deathDate": "2018-05-13",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q234471",
 		"sexVerifiedAt": "2026-10-11"
@@ -66407,20 +66918,20 @@
 	},
 	"Martin McDonagh": {
 		"name": "Martin McDonagh",
+		"birthDate": "1970-03-26",
 		"birthYear": 1970,
 		"nationalityPrimary": "Irlandés",
 		"image": "/people/martin-mcdonagh-nm1732981.jpg",
 		"imdbId": "nm1732981",
 		"imdbUrl": "https://www.imdb.com/name/nm1732981/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20McDonagh%202012.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20McDonagh%20at%2083rd%20Venice%20International%20Film%20Festival-7%20(cropped%203x4).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q372394",
 			"https://www.imdb.com/name/nm1732981/",
 			"https://www.themoviedb.org/person/54472-martin-mcdonagh"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1970-03-26"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Martin Mull": {
 		"name": "Martin Mull",
@@ -66876,20 +67387,20 @@
 	},
 	"Mary McDonnell": {
 		"name": "Mary McDonnell",
+		"birthDate": "1952-04-28",
 		"birthYear": 1952,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/mary-mcdonnell-nm0001521.jpg",
 		"imdbId": "nm0001521",
 		"imdbUrl": "https://www.imdb.com/name/nm0001521/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%20McDonnell%20(54515793389).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%20McDonnell%20Dragon%20Con%20September%205%202026%200335.JPG?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q117500",
 			"https://www.imdb.com/name/nm0001521/",
 			"https://www.themoviedb.org/person/1581-mary-mcdonnell"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1952-04-28"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Mary Steenburgen": {
 		"name": "Mary Steenburgen",
@@ -68583,20 +69094,20 @@
 	},
 	"Mel Gibson": {
 		"name": "Mel Gibson",
+		"birthDate": "1956-01-03",
 		"birthYear": 1956,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/mel-gibson-nm0000154.jpg",
 		"imdbId": "nm0000154",
 		"imdbUrl": "https://www.imdb.com/name/nm0000154/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mel%20Gibson%20Cannes%202016%202.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mel%20Gibson%20Cannes%202016%202.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q42229",
 			"https://www.imdb.com/name/nm0000154/",
 			"https://www.themoviedb.org/person/2461-mel-gibson"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1956-01-03",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q42229",
 		"sexVerifiedAt": "2026-10-11"
@@ -70173,20 +70684,20 @@
 	},
 	"Michael Shannon": {
 		"name": "Michael Shannon",
+		"birthDate": "1974-08-07",
 		"birthYear": 1974,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/michael-shannon-nm0788335.jpg",
 		"imdbId": "nm0788335",
 		"imdbUrl": "https://www.imdb.com/name/nm0788335/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MichaelShannon-byPhilipRomano.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MichaelShannon-byPhilipRomano.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q41449",
 			"https://www.imdb.com/name/nm0788335/",
 			"https://www.themoviedb.org/person/335-michael-shannon"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1974-08-07",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q41449",
 		"sexVerifiedAt": "2026-10-11"
@@ -70743,20 +71254,20 @@
 	},
 	"Michelle Williams": {
 		"name": "Michelle Williams",
+		"birthDate": "1980-09-09",
 		"birthYear": 1980,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/michelle-williams-nm0931329.jpg",
 		"imdbId": "nm0931329",
 		"imdbUrl": "https://www.imdb.com/name/nm0931329/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelle%20Williams%20UK%20Manchester%20By%20the%20Sea%20Premiere.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelle%20Williams%20UK%20Manchester%20By%20the%20Sea%20Premiere.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q156796",
 			"https://www.imdb.com/name/nm0931329/",
 			"https://www.themoviedb.org/person/1812-michelle-williams"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1980-09-09",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q156796",
 		"sexVerifiedAt": "2026-10-11"
@@ -70913,6 +71424,23 @@
 			"https://www.themoviedb.org/person/2424427-miguel-garces"
 		],
 		"lastVerifiedAt": "2026-05-02",
+		"source": "wikidata-imdb-cache"
+	},
+	"Miguel Sapochnik": {
+		"name": "Miguel Sapochnik",
+		"birthDate": "1974-07-01",
+		"birthYear": 1974,
+		"nationalityPrimary": "Británico",
+		"image": "/people/miguel-sapochnik-nm0764601.jpg",
+		"imdbId": "nm0764601",
+		"imdbUrl": "https://www.imdb.com/name/nm0764601/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Miguel%20Sapochnik%20by%20Gage%20Skidmore.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q6844804",
+			"https://www.imdb.com/name/nm0764601/",
+			"https://www.themoviedb.org/person/114404-miguel-sapochnik"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Miho Okasaki": {
@@ -71420,6 +71948,23 @@
 			"https://milcania.com/"
 		],
 		"lastVerifiedAt": "2026-04-12",
+		"source": "wikidata-imdb-cache"
+	},
+	"Milena Smit": {
+		"name": "Milena Smit",
+		"birthDate": "1996-10-05",
+		"birthYear": 1996,
+		"nationalityPrimary": "Española",
+		"image": "/people/milena-smit-nm9875384.jpg",
+		"imdbId": "nm9875384",
+		"imdbUrl": "https://www.imdb.com/name/nm9875384/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malaga%20Film%20Festival%202025%20-%20Milena%20Smit-2%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q99527446",
+			"https://www.imdb.com/name/nm9875384/",
+			"https://www.themoviedb.org/person/2560224-milena-smit"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Miles Caton": {
@@ -72482,6 +73027,23 @@
 			"https://www.themoviedb.org/person/414041-morrissey"
 		],
 		"lastVerifiedAt": "2026-04-30",
+		"source": "wikidata-imdb-cache"
+	},
+	"Morten Tyldum": {
+		"name": "Morten Tyldum",
+		"birthDate": "1967-05-19",
+		"birthYear": 1967,
+		"nationalityPrimary": "Noruego",
+		"image": "/people/morten-tyldum-nm0878763.jpg",
+		"imdbId": "nm0878763",
+		"imdbUrl": "https://www.imdb.com/name/nm0878763/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Morten%20Tyldum%20Fade%20In%2000.58%20(cropped).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q3425142",
+			"https://www.imdb.com/name/nm0878763/",
+			"https://www.themoviedb.org/person/77965-morten-tyldum"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Mr. T": {
@@ -73776,7 +74338,7 @@
 			"https://www.imdb.com/name/nm0000885/",
 			"https://www.themoviedb.org/person/13726-ned-beatty"
 		],
-		"lastVerifiedAt": "2026-10-10",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Neil Berkeley": {
@@ -74593,7 +75155,7 @@
 			"https://www.imdb.com/name/nm0000115/",
 			"https://www.themoviedb.org/person/2963-nicolas-cage"
 		],
-		"lastVerifiedAt": "2026-09-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q42869",
@@ -75544,20 +76106,20 @@
 	},
 	"Octavia Spencer": {
 		"name": "Octavia Spencer",
+		"birthDate": "1970-05-25",
 		"birthYear": 1970,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/octavia-spencer-nm0818055.jpg",
 		"imdbId": "nm0818055",
 		"imdbUrl": "https://www.imdb.com/name/nm0818055/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%22Hidden%20Figures%22%20Screening%20at%20the%20White%20House%20(NHQ201612150008)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%22Hidden%20Figures%22%20Screening%20at%20the%20White%20House%20(NHQ201612150008)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q229254",
 			"https://www.imdb.com/name/nm0818055/",
 			"https://www.themoviedb.org/person/6944-octavia-spencer"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1970-05-25"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Octavia St. Laurent": {
 		"name": "Octavia St. Laurent",
@@ -76195,6 +76757,23 @@
 		"lastVerifiedAt": "2026-10-09",
 		"source": "wikidata-imdb-cache"
 	},
+	"Omar Sy": {
+		"name": "Omar Sy",
+		"birthDate": "1978-01-20",
+		"birthYear": 1978,
+		"nationalityPrimary": "Francés",
+		"image": "/people/omar-sy-nm1082477.jpg",
+		"imdbId": "nm1082477",
+		"imdbUrl": "https://www.imdb.com/name/nm1082477/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Omar%20Sy%20avp%20Samba%202014.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q357387",
+			"https://www.imdb.com/name/nm1082477/",
+			"https://www.themoviedb.org/person/78423-omar-sy"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Ophelia Lovibond": {
 		"name": "Ophelia Lovibond",
 		"birthDate": "1986-02-19",
@@ -76329,13 +76908,13 @@
 		"image": "/people/orson-welles-nm0000080.jpg",
 		"imdbId": "nm0000080",
 		"imdbUrl": "https://www.imdb.com/name/nm0000080/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Orson%20Welles%201937%20cr3-4.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Orson%20Welles%201937%20cr3-4.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q24829",
 			"https://www.imdb.com/name/nm0000080/",
 			"https://www.themoviedb.org/person/40-orson-welles"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Óscar Barberán": {
@@ -76527,6 +77106,25 @@
 			"https://www.wikidata.org/wiki/Q6054205"
 		],
 		"lastVerifiedAt": "2026-05-14",
+		"source": "wikidata-imdb-cache"
+	},
+	"Otto Preminger": {
+		"name": "Otto Preminger",
+		"birthDate": "1905-12-05",
+		"birthYear": 1905,
+		"deathDate": "1986-04-23",
+		"deathYear": 1986,
+		"nationalityPrimary": "Austriaco",
+		"image": "/people/otto-preminger-nm0695937.jpg",
+		"imdbId": "nm0695937",
+		"imdbUrl": "https://www.imdb.com/name/nm0695937/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Otto%20Preminger%20Allan%20Warren.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q52997",
+			"https://www.imdb.com/name/nm0695937/",
+			"https://www.themoviedb.org/person/834-otto-preminger"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Otto Sander": {
@@ -77957,20 +78555,20 @@
 	},
 	"Paul Giamatti": {
 		"name": "Paul Giamatti",
+		"birthDate": "1967-06-06",
 		"birthYear": 1967,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/paul-giamatti-nm0316079.jpg",
 		"imdbId": "nm0316079",
 		"imdbUrl": "https://www.imdb.com/name/nm0316079/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Giamatti%20MFF%202024.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Giamatti%20MFF%202024.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q208649",
 			"https://www.imdb.com/name/nm0316079/",
 			"https://www.themoviedb.org/person/13242-paul-giamatti"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1967-06-06",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q208649",
 		"sexVerifiedAt": "2026-10-11"
@@ -78198,13 +78796,13 @@
 		"image": "/people/paul-newman-nm0000056.jpg",
 		"imdbId": "nm0000056",
 		"imdbUrl": "https://www.imdb.com/name/nm0000056/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Newman%20-%201958.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Newman%20-%201958.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q41871",
 			"https://www.imdb.com/name/nm0000056/",
 			"https://www.themoviedb.org/person/3636-paul-newman"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q41871",
@@ -78271,13 +78869,13 @@
 		"image": "/people/paul-rudd-nm0748620.jpg",
 		"imdbId": "nm0748620",
 		"imdbUrl": "https://www.imdb.com/name/nm0748620/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Rudd%20and%20Kate%20Mara%20at%20the%202024%20Toronto%20International%20Film%20Festival%208%20(cropped).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Rudd%20and%20Kate%20Mara%20at%20the%202024%20Toronto%20International%20Film%20Festival%208%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q276525",
 			"https://www.imdb.com/name/nm0748620/",
 			"https://www.themoviedb.org/person/22226-paul-rudd"
 		],
-		"lastVerifiedAt": "2026-06-12",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q276525",
@@ -78700,13 +79298,13 @@
 		"image": "/people/pedro-almodovar-nm0000264.jpg",
 		"imdbId": "nm0000264",
 		"imdbUrl": "https://www.imdb.com/name/nm0000264/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pedro%20Almod%C3%B3var%201988.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pedro%20Almod%C3%B3var%201988.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q55171",
 			"https://www.imdb.com/name/nm0000264/",
 			"https://www.themoviedb.org/person/309-pedro-almodovar"
 		],
-		"lastVerifiedAt": "2026-05-28",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q55171",
@@ -78779,20 +79377,20 @@
 	},
 	"Penélope Cruz": {
 		"name": "Penélope Cruz",
+		"birthDate": "1974-04-28",
 		"birthYear": 1974,
 		"nationalityPrimary": "Española",
 		"image": "/people/penelope-cruz-nm0004851.jpg",
 		"imdbId": "nm0004851",
 		"imdbUrl": "https://www.imdb.com/name/nm0004851/",
-		"remoteImageUrl": "https://media.themoviedb.org/t/p/original/n5SFgmvJSENQt8poE4qYacUnKOi.jpg",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Goyas%202024%20-%20Pen%C3%A9lope%20Cruz-2%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q39666",
 			"https://www.imdb.com/name/nm0004851/",
 			"https://www.themoviedb.org/person/955-penelope-cruz"
 		],
-		"lastVerifiedAt": "2026-10-21",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1974-04-28",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q39666",
 		"sexVerifiedAt": "2026-10-11"
@@ -79544,13 +80142,13 @@
 		"image": "/people/peter-sellers-nm0000634.jpg",
 		"imdbId": "nm0000634",
 		"imdbUrl": "https://www.imdb.com/name/nm0000634/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Sellers%20Allan%20Warren.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Sellers%20Allan%20Warren.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q177984",
 			"https://www.imdb.com/name/nm0000634/",
 			"https://www.themoviedb.org/person/12446-peter-sellers"
 		],
-		"lastVerifiedAt": "2026-08-12",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Peter Shilton": {
@@ -79655,20 +80253,20 @@
 	},
 	"Peter Weir": {
 		"name": "Peter Weir",
+		"birthDate": "1944-08-21",
 		"birthYear": 1944,
 		"nationalityPrimary": "Australiano",
 		"image": "/people/peter-weir-nm0001837.jpg",
 		"imdbId": "nm0001837",
 		"imdbUrl": "https://www.imdb.com/name/nm0001837/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/PeterWeirApr2011%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/PeterWeirApr2011%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q55424",
 			"https://www.imdb.com/name/nm0001837/",
 			"https://www.themoviedb.org/person/2690-peter-weir"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1944-08-21"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Peter Weller": {
 		"name": "Peter Weller",
@@ -80030,20 +80628,20 @@
 	},
 	"Pierce Brosnan": {
 		"name": "Pierce Brosnan",
+		"birthDate": "1953-05-16",
 		"birthYear": 1953,
 		"nationalityPrimary": "Irlandés",
 		"image": "/people/pierce-brosnan-nm0000112.jpg",
 		"imdbId": "nm0000112",
 		"imdbUrl": "https://www.imdb.com/name/nm0000112/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/PierceBrosnan-byPhilipRomano.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/PierceBrosnan-byPhilipRomano.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q81520",
 			"https://www.imdb.com/name/nm0000112/",
 			"https://www.themoviedb.org/person/517-pierce-brosnan"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1953-05-16",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q81520",
 		"sexVerifiedAt": "2026-10-11"
@@ -80715,6 +81313,23 @@
 		"lastVerifiedAt": "2026-08-23",
 		"source": "wikidata-imdb-cache"
 	},
+	"Quinton Aaron": {
+		"name": "Quinton Aaron",
+		"birthDate": "1984-08-15",
+		"birthYear": 1984,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/quinton-aaron-nm2466842.jpg",
+		"imdbId": "nm2466842",
+		"imdbUrl": "https://www.imdb.com/name/nm2466842/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Quinton%20Aaron%202010.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q2093874",
+			"https://www.imdb.com/name/nm2466842/",
+			"https://www.themoviedb.org/person/112560-quinton-aaron"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"R. Lee Ermey": {
 		"name": "R. Lee Ermey",
 		"birthDate": "1944-03-24",
@@ -81373,6 +81988,25 @@
 		"lastVerifiedAt": "2026-04-29",
 		"source": "wikidata-imdb-cache"
 	},
+	"Raúl Juliá": {
+		"name": "Raul Julia",
+		"birthDate": "1940-03-09",
+		"birthYear": 1940,
+		"deathDate": "1995-10-24",
+		"deathYear": 1995,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/raul-julia-nm0000471.jpg",
+		"imdbId": "nm0000471",
+		"imdbUrl": "https://www.imdb.com/name/nm0000471/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Raul%20Julia%20-%20Dracula.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q317654",
+			"https://www.imdb.com/name/nm0000471/",
+			"https://www.themoviedb.org/person/27888-raul-julia"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Raúl Perrone": {
 		"name": "Raúl Perrone",
 		"birthDate": "1952-02-05",
@@ -81764,20 +82398,20 @@
 	},
 	"Rebecca Hall": {
 		"name": "Rebecca Hall",
+		"birthDate": "1982-05-03",
 		"birthYear": 1982,
 		"nationalityPrimary": "Británica",
 		"image": "/people/rebecca-hall-nm0356017.jpg",
 		"imdbId": "nm0356017",
 		"imdbUrl": "https://www.imdb.com/name/nm0356017/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/RebeccaHallTIFFSept2011.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rebecca%20Hall%20(2024)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q230534",
 			"https://www.imdb.com/name/nm0356017/",
 			"https://www.themoviedb.org/person/15556-rebecca-hall"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1982-05-03",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q230534",
 		"sexVerifiedAt": "2026-10-11"
@@ -82108,13 +82742,13 @@
 		"image": "/people/rene-russo-nm0000623.jpg",
 		"imdbId": "nm0000623",
 		"imdbUrl": "https://www.imdb.com/name/nm0000623/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rene%20Russo%201996.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rene%20Russo%201996.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q229612",
 			"https://www.imdb.com/name/nm0000623/",
 			"https://www.themoviedb.org/person/14343-rene-russo"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q229612",
@@ -82622,22 +83256,22 @@
 	},
 	"Richard Donner": {
 		"name": "Richard Donner",
+		"birthDate": "1930-04-24",
 		"birthYear": 1930,
+		"deathDate": "2021-07-05",
 		"deathYear": 2021,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/richard-donner-nm0001149.jpg",
 		"imdbId": "nm0001149",
 		"imdbUrl": "https://www.imdb.com/name/nm0001149/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Donner%20(4505771045)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Donner%20(4505771045)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q262130",
 			"https://www.imdb.com/name/nm0001149/",
 			"https://www.themoviedb.org/person/7187-richard-donner"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1930-04-24",
-		"deathDate": "2021-07-05"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Richard Dreyfuss": {
 		"name": "Richard Dreyfuss",
@@ -83625,6 +84259,25 @@
 		"lastVerifiedAt": "2026-09-04",
 		"source": "wikidata-imdb-cache"
 	},
+	"Robert Aldrich": {
+		"name": "Robert Aldrich",
+		"birthDate": "1918-08-09",
+		"birthYear": 1918,
+		"deathDate": "1983-12-05",
+		"deathYear": 1983,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/robert-aldrich-nm0000736.jpg",
+		"imdbId": "nm0000736",
+		"imdbUrl": "https://www.imdb.com/name/nm0000736/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/What%20Ever%20Happened%20to%20Baby%20Jane%3F%20(film)%201962%20-%20Production%20photo.%20Robert%20Aldrich%2C%20Bette%20Davis.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q95133",
+			"https://www.imdb.com/name/nm0000736/",
+			"https://www.themoviedb.org/person/18392-robert-aldrich"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Robert Altman": {
 		"name": "Robert Altman",
 		"birthDate": "1925-02-20",
@@ -84106,7 +84759,7 @@
 			"https://www.imdb.com/name/nm0000602/",
 			"https://www.themoviedb.org/person/4135-robert-redford"
 		],
-		"lastVerifiedAt": "2026-10-10",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q59215",
@@ -84162,7 +84815,7 @@
 			"https://www.imdb.com/name/nm0744035/",
 			"https://www.themoviedb.org/person/14875-robert-rossen"
 		],
-		"lastVerifiedAt": "2026-03-15",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Robert Rusler": {
@@ -84220,22 +84873,22 @@
 	},
 	"Robert Shaw": {
 		"name": "Robert Shaw",
+		"birthDate": "1927-08-09",
 		"birthYear": 1927,
+		"deathDate": "1978-08-28",
 		"deathYear": 1978,
 		"nationalityPrimary": "Británico",
 		"image": "/people/robert-shaw-nm0001727.jpg",
 		"imdbId": "nm0001727",
 		"imdbUrl": "https://www.imdb.com/name/nm0001727/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Shaw.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Shaw.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q313727",
 			"https://www.imdb.com/name/nm0001727/",
 			"https://www.themoviedb.org/person/8606-robert-shaw"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1927-08-09",
-		"deathDate": "1978-08-28"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Robert Smigel": {
 		"name": "Robert Smigel",
@@ -84253,6 +84906,25 @@
 		],
 		"lastVerifiedAt": "2026-08-21",
 		"source": "wikidata-imdb-cache"
+	},
+	"Robert Stevenson": {
+		"name": "Robert Stevenson",
+		"birthDate": "1905-03-31",
+		"birthYear": 1905,
+		"deathDate": "1986-04-30",
+		"deathYear": 1986,
+		"nationalityPrimary": "Británico",
+		"image": "/people/robert-stevenson-nm0829038.jpg",
+		"imdbId": "nm0829038",
+		"imdbUrl": "https://www.imdb.com/name/nm0829038/",
+		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/AfqR78fhdCGcCo52zRbUuSYwUsO.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q725060",
+			"https://www.imdb.com/name/nm0829038/",
+			"https://www.themoviedb.org/person/5834-robert-stevenson"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Robert Strange": {
 		"name": "Robert Strange",
@@ -85281,20 +85953,20 @@
 	},
 	"Rooney Mara": {
 		"name": "Rooney Mara",
+		"birthDate": "1985-04-17",
 		"birthYear": 1985,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/rooney-mara-nm1913734.jpg",
 		"imdbId": "nm1913734",
 		"imdbUrl": "https://www.imdb.com/name/nm1913734/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rooney%20Mara%20at%20Berlinale%202024.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rooney%20Mara%20at%20Berlinale%202024.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q228766",
 			"https://www.imdb.com/name/nm1913734/",
 			"https://www.themoviedb.org/person/108916-rooney-mara"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1985-04-17",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q228766",
 		"sexVerifiedAt": "2026-10-11"
@@ -86788,20 +87460,20 @@
 	},
 	"Sam Elliott": {
 		"name": "Sam Elliott",
+		"birthDate": "1944-08-09",
 		"birthYear": 1944,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/sam-elliott-nm0000385.jpg",
 		"imdbId": "nm0000385",
 		"imdbUrl": "https://www.imdb.com/name/nm0000385/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TIFF%202018%20Samuel%20Elliott%20(44592132581)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/TIFF%202018%20Samuel%20Elliott%20(44592132581)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q311314",
 			"https://www.imdb.com/name/nm0000385/",
 			"https://www.themoviedb.org/person/16431-sam-elliott"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1944-08-09"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Sam Fell": {
 		"name": "Sam Fell",
@@ -86977,13 +87649,13 @@
 		"image": "/people/sam-rockwell-nm0005377.jpg",
 		"imdbId": "nm0005377",
 		"imdbUrl": "https://www.imdb.com/name/nm0005377/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Rockwell%20(51492)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Rockwell%20(51492)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q316446",
 			"https://www.imdb.com/name/nm0005377/",
 			"https://www.themoviedb.org/person/6807-sam-rockwell"
 		],
-		"lastVerifiedAt": "2026-04-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q316446",
@@ -87334,7 +88006,7 @@
 			"https://www.imdb.com/name/nm0000113/",
 			"https://www.themoviedb.org/person/18277-sandra-bullock"
 		],
-		"lastVerifiedAt": "2026-09-10",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q40791",
@@ -87813,20 +88485,20 @@
 	},
 	"Scarlett Johansson": {
 		"name": "Scarlett Johansson",
+		"birthDate": "1984-11-22",
 		"birthYear": 1984,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/scarlett-johansson-nm0424060.jpg",
 		"imdbId": "nm0424060",
 		"imdbUrl": "https://www.imdb.com/name/nm0424060/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scarlett%20Johansson%20by%20Gage%20Skidmore%202%20(cropped)%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scarlett%20Johansson-8588.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q34436",
 			"https://www.imdb.com/name/nm0424060/",
 			"https://www.themoviedb.org/person/1245-scarlett-johansson"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1984-11-22",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q34436",
 		"sexVerifiedAt": "2026-10-11"
@@ -89901,13 +90573,13 @@
 		"image": "/people/sidney-lumet-nm0001486.jpg",
 		"imdbId": "nm0001486",
 		"imdbUrl": "https://www.imdb.com/name/nm0001486/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SidneyLumet07TIFF.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SidneyLumet07TIFF.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q51559",
 			"https://www.imdb.com/name/nm0001486/",
 			"https://www.themoviedb.org/person/39996-sidney-lumet"
 		],
-		"lastVerifiedAt": "2026-08-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Sidney Poitier": {
@@ -90244,6 +90916,23 @@
 		"lastVerifiedAt": "2026-04-29",
 		"source": "wikidata-imdb-cache"
 	},
+	"Simon Stone": {
+		"name": "Simon Stone",
+		"birthDate": "1984-08-19",
+		"birthYear": 1984,
+		"nationalityPrimary": "Australiano",
+		"image": "/people/simon-stone-nm1404307.jpg",
+		"imdbId": "nm1404307",
+		"imdbUrl": "https://www.imdb.com/name/nm1404307/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon%20Stone%20Nestroy-Theaterpreis%202015.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q7519836",
+			"https://www.imdb.com/name/nm1404307/",
+			"https://www.themoviedb.org/person/38785-simon-stone"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Simon West": {
 		"name": "Simon West",
 		"birthDate": "1961-07-17",
@@ -90258,7 +90947,7 @@
 			"https://www.imdb.com/name/nm0922346/",
 			"https://www.themoviedb.org/person/12786-simon-west"
 		],
-		"lastVerifiedAt": "2026-09-11",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Simon Yam": {
@@ -91603,13 +92292,13 @@
 		"image": "/people/stephen-graham-nm0334318.jpg",
 		"imdbId": "nm0334318",
 		"imdbUrl": "https://www.imdb.com/name/nm0334318/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen%20Graham.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen%20Graham%20Springsteen-23%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q442547",
 			"https://www.imdb.com/name/nm0334318/",
 			"https://www.themoviedb.org/person/1115-stephen-graham"
 		],
-		"lastVerifiedAt": "2026-03-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Stephen Herek": {
@@ -92331,6 +93020,25 @@
 		"remoteImageUrl": "https://media.themoviedb.org/t/p/w500/9LZpmQx9pwgFInRbbAFEkyUMGlc.jpg",
 		"lastVerifiedAt": "2026-08-25",
 		"source": "wikidata-tmdb-manual"
+	},
+	"Stuart Rosenberg": {
+		"name": "Stuart Rosenberg",
+		"birthDate": "1927-08-11",
+		"birthYear": 1927,
+		"deathDate": "2007-03-15",
+		"deathYear": 2007,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/stuart-rosenberg-nm0742341.jpg",
+		"imdbId": "nm0742341",
+		"imdbUrl": "https://www.imdb.com/name/nm0742341/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stuart%20Rosenberg%20(1975).jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q966078",
+			"https://www.imdb.com/name/nm0742341/",
+			"https://www.themoviedb.org/person/13859-stuart-rosenberg"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Subir Banerjee": {
 		"name": "Subir Banerjee",
@@ -93114,20 +93822,20 @@
 	},
 	"Taika Waititi": {
 		"name": "Taika Waititi",
+		"birthDate": "1975-08-16",
 		"birthYear": 1975,
 		"nationalityPrimary": "Neozelandés",
 		"image": "/people/taika-waititi-nm0169806.jpg",
 		"imdbId": "nm0169806",
 		"imdbUrl": "https://www.imdb.com/name/nm0169806/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Taika%20Waititi%20photo%20by%20pouria%20afkhami%20(cropped).jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Taika%20Waititi%20photo%20by%20pouria%20afkhami%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q2388576",
 			"https://www.imdb.com/name/nm0169806/",
 			"https://www.themoviedb.org/person/55934-taika-waititi"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1975-08-16",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q2388576",
 		"sexVerifiedAt": "2026-10-11"
@@ -93381,19 +94089,19 @@
 	},
 	"Takuya Kimura": {
 		"name": "Takuya Kimura",
+		"birthDate": "1972-11-13",
 		"birthYear": 1972,
 		"nationalityPrimary": "Japonés",
 		"image": "/people/takuya-kimura-nm0454120.jpg",
 		"imdbId": "nm0454120",
 		"imdbUrl": "https://www.imdb.com/name/nm0454120/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%9C%A8%E6%9D%91%E6%8B%93%E5%93%89.png?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%9C%A8%E6%9D%91%E6%8B%93%E5%93%89.png?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q362254",
 			"https://www.imdb.com/name/nm0454120/"
 		],
-		"lastVerifiedAt": "2026-03-14",
-		"source": "wikidata-imdb-cache",
-		"birthDate": "1972-11-13"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Talia Shire": {
 		"name": "Talia Shire",
@@ -93654,6 +94362,23 @@
 		],
 		"lastVerifiedAt": "2026-08-12",
 		"source": "wikimedia-commons-cache"
+	},
+	"Tate Taylor": {
+		"name": "Tate Taylor",
+		"birthDate": "1969-06-03",
+		"birthYear": 1969,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/tate-taylor-nm0853238.jpg",
+		"imdbId": "nm0853238",
+		"imdbUrl": "https://www.imdb.com/name/nm0853238/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tate-Taylor%202014.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q2639828",
+			"https://www.imdb.com/name/nm0853238/",
+			"https://www.themoviedb.org/person/55789-tate-taylor"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
 	},
 	"Tati Gabrielle": {
 		"name": "Tati Gabrielle",
@@ -95226,6 +95951,23 @@
 		"lastVerifiedAt": "2026-09-04",
 		"source": "wikidata-imdb-tmdb-cache"
 	},
+	"Tim McGraw": {
+		"name": "Tim McGraw",
+		"birthDate": "1967-05-01",
+		"birthYear": 1967,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/tim-mcgraw-nm0005210.jpg",
+		"imdbId": "nm0005210",
+		"imdbUrl": "https://www.imdb.com/name/nm0005210/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim%20McGraw%20October%2024%202015.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q356487",
+			"https://www.imdb.com/name/nm0005210/",
+			"https://www.themoviedb.org/person/74428-tim-mcgraw"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "wikidata-imdb-cache"
+	},
 	"Tim Meadows": {
 		"name": "Tim Meadows",
 		"birthDate": "1961-02-05",
@@ -95426,13 +96168,13 @@
 		"image": "/people/timothy-spall-nm0001758.jpg",
 		"imdbId": "nm0001758",
 		"imdbUrl": "https://www.imdb.com/name/nm0001758/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Timothy%20Spall%202017.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Timothy%20Spall%202017.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q287824",
 			"https://www.imdb.com/name/nm0001758/",
 			"https://www.themoviedb.org/person/9191-timothy-spall"
 		],
-		"lastVerifiedAt": "2026-04-27",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q287824",
@@ -95882,13 +96624,13 @@
 		"image": "/people/tom-cruise-nm0000129.jpg",
 		"imdbId": "nm0000129",
 		"imdbUrl": "https://www.imdb.com/name/nm0000129/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Cruise%20at%2053rd%20Saturn%20Awards%202026-01.jpg?width=960",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Cruise%20at%2053rd%20Saturn%20Awards%202026-01.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q37079",
 			"https://www.imdb.com/name/nm0000129/",
 			"https://www.themoviedb.org/person/500-tom-cruise"
 		],
-		"lastVerifiedAt": "2026-10-01",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q37079",
@@ -95960,6 +96702,23 @@
 			"https://www.themoviedb.org/person/10993-tom-felton"
 		],
 		"lastVerifiedAt": "2026-03-31",
+		"source": "wikidata-imdb-cache"
+	},
+	"Tom Ford": {
+		"name": "Tom Ford",
+		"birthDate": "1961-08-27",
+		"birthYear": 1961,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/tom-ford-nm1053530.jpg",
+		"imdbId": "nm1053530",
+		"imdbUrl": "https://www.imdb.com/name/nm1053530/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Ford%20cropped%202009.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q318149",
+			"https://www.imdb.com/name/nm1053530/",
+			"https://www.themoviedb.org/person/120615-tom-ford"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Tom Hanks": {
@@ -96543,13 +97302,13 @@
 		"image": "/people/tommy-lee-jones-nm0000169.jpg",
 		"imdbId": "nm0000169",
 		"imdbUrl": "https://www.imdb.com/name/nm0000169/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tommy%20Lee%20Jones%202017.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tommy%20Lee%20Jones%202017.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q170587",
 			"https://www.imdb.com/name/nm0000169/",
 			"https://www.themoviedb.org/person/2176-tommy-lee-jones"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q170587",
@@ -96753,20 +97512,20 @@
 	},
 	"Toni Collette": {
 		"name": "Toni Collette",
+		"birthDate": "1972-11-01",
 		"birthYear": 1972,
 		"nationalityPrimary": "Australiana",
 		"image": "/people/toni-collette-nm0001057.jpg",
 		"imdbId": "nm0001057",
 		"imdbUrl": "https://www.imdb.com/name/nm0001057/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Toni%20Collette%20at%20the%202025%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Toni%20Collette%20at%20the%202025%20Toronto%20International%20Film%20Festival%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q229291",
 			"https://www.imdb.com/name/nm0001057/",
 			"https://www.themoviedb.org/person/3051-toni-collette"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1972-11-01",
 		"sex": "femenino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q229291",
 		"sexVerifiedAt": "2026-10-11"
@@ -96809,13 +97568,13 @@
 		"image": "/people/tony-curtis-nm0000348.jpg",
 		"imdbId": "nm0000348",
 		"imdbUrl": "https://www.imdb.com/name/nm0000348/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tony%20Curtis%201958.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tony%20Curtis%201958.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q162389",
 			"https://www.imdb.com/name/nm0000348/",
 			"https://www.themoviedb.org/person/3150-tony-curtis"
 		],
-		"lastVerifiedAt": "2026-08-12",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Tony Darrow": {
@@ -96904,20 +97663,25 @@
 		"source": "wikidata-imdb-tmdb-cache"
 	},
 	"Tony Leung Chiu-wai": {
-		"name": "Tony Leung",
+		"name": "Tony Leung Chiu-wai",
 		"birthDate": "1962-06-27",
 		"birthYear": 1962,
 		"nationalityPrimary": "Hong Kong británico",
 		"image": "/people/tony-leung-chiu-wai-nm0504897.jpg",
 		"imdbId": "nm0504897",
 		"imdbUrl": "https://www.imdb.com/name/nm0504897/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tony%20Leung%20as%20the%20President%20of%20the%20International%20Competition%20Jury%20at%20Opening%20Ceremony%20of%20the%20Tokyo%20International%20Film%20Festival%202024%20(54578353950).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tony_Leung_as_the_President_of_the_International_Competition_Jury_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2024_(54578353950)_(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q319001",
-			"https://www.imdb.com/name/nm0504897/"
+			"https://www.imdb.com/name/nm0504897/",
+			"https://commons.wikimedia.org/wiki/File:Tony_Leung_as_the_President_of_the_International_Competition_Jury_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2024_(54578353950)_(cropped).jpg",
+			"https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/English/Tony-LEUNG-Chiu-wai_e.pdf"
 		],
-		"lastVerifiedAt": "2026-08-11",
-		"source": "wikidata-imdb-cache"
+		"lastVerifiedAt": "2026-11-06",
+		"source": "manual-verified",
+		"aliases": [
+			"Tony Leung"
+		]
 	},
 	"Tony Leung Ka-fai": {
 		"name": "Tony Leung Ka-fai",
@@ -97038,7 +97802,7 @@
 			"https://www.imdb.com/name/nm0001716/",
 			"https://www.themoviedb.org/person/893-tony-scott"
 		],
-		"lastVerifiedAt": "2026-08-23",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-tmdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q193648",
@@ -98076,6 +98840,24 @@
 		"lastVerifiedAt": "2026-08-11",
 		"image": "/people/valerie-dreville-584544.jpg",
 		"source": "tmdb-cache"
+	},
+	"Valerie Faris": {
+		"name": "Valerie Faris",
+		"birthDate": "1958-10-20",
+		"birthYear": 1958,
+		"nationalityPrimary": "Estadounidense",
+		"image": "/people/valerie-faris-kinoafisha.jpg",
+		"imdbId": "nm0267512",
+		"imdbUrl": "https://www.imdb.com/name/nm0267512/",
+		"remoteImageUrl": "https://static.kinoafisha.info/k/persons/1080x1920/upload/persons/443241577880.jpg",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q13644887",
+			"https://www.imdb.com/name/nm0267512/",
+			"https://www.themoviedb.org/person/16960-valerie-faris",
+			"https://www.kinoafisha.info/en/person/8370093/"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "kinoafisha-profile-portrait"
 	},
 	"Valérie Lemercier": {
 		"name": "Valérie Lemercier",
@@ -99122,13 +99904,13 @@
 		"image": "/people/ving-rhames-nm0000609.jpg",
 		"imdbId": "nm0000609",
 		"imdbUrl": "https://www.imdb.com/name/nm0000609/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ving%20Rhames%202010%20(4710601891)%20(cropped).jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ving%20Rhames%202010%20(4710601891)%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q310315",
 			"https://www.imdb.com/name/nm0000609/",
 			"https://www.themoviedb.org/person/10182-ving-rhames"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q310315",
@@ -99691,13 +100473,13 @@
 		"image": "/people/walter-matthau-nm0000527.jpg",
 		"imdbId": "nm0000527",
 		"imdbUrl": "https://www.imdb.com/name/nm0000527/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walter%20Matthau%20in%20Charade%202.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Walter%20Matthau%20in%20Charade%202.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q202172",
 			"https://www.imdb.com/name/nm0000527/",
 			"https://www.themoviedb.org/person/6837-walter-matthau"
 		],
-		"lastVerifiedAt": "2026-08-25",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Walter Pidgeon": {
@@ -99875,6 +100657,23 @@
 			"https://www.themoviedb.org/person/63234-wendi-mclendon-covey"
 		],
 		"lastVerifiedAt": "2026-08-21",
+		"source": "wikidata-imdb-cache"
+	},
+	"Wendy Crewson": {
+		"name": "Wendy Crewson",
+		"birthDate": "1956-05-09",
+		"birthYear": 1956,
+		"nationalityPrimary": "Canadiense",
+		"image": "/people/wendy-crewson-nm0187724.jpg",
+		"imdbId": "nm0187724",
+		"imdbUrl": "https://www.imdb.com/name/nm0187724/",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/WendyCrewsonTIFFSept2011.jpg?width=1200",
+		"referenceUrls": [
+			"https://www.wikidata.org/wiki/Q253891",
+			"https://www.imdb.com/name/nm0187724/",
+			"https://www.themoviedb.org/person/19957-wendy-crewson"
+		],
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Wendy Hiller": {
@@ -100195,20 +100994,20 @@
 	},
 	"Will Ferrell": {
 		"name": "Will Ferrell",
+		"birthDate": "1967-07-16",
 		"birthYear": 1967,
 		"nationalityPrimary": "Estadounidense",
 		"image": "/people/will-ferrell-nm0002071.jpg",
 		"imdbId": "nm0002071",
 		"imdbUrl": "https://www.imdb.com/name/nm0002071/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Will%20Ferrell%202012.jpg?width=120",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Will%20Ferrell%202012.jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q218503",
 			"https://www.imdb.com/name/nm0002071/",
 			"https://www.themoviedb.org/person/23659-will-ferrell"
 		],
-		"lastVerifiedAt": "2026-03-14",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache",
-		"birthDate": "1967-07-16",
 		"sex": "masculino",
 		"sexSourceUrl": "https://www.wikidata.org/wiki/Q218503",
 		"sexVerifiedAt": "2026-10-11"
@@ -100858,13 +101657,13 @@
 		"image": "/people/wolfgang-petersen-nm0000583.jpg",
 		"imdbId": "nm0000583",
 		"imdbUrl": "https://www.imdb.com/name/nm0000583/",
-		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolfgang%20Petersen%20-%20Poseidon%20Premiere.jpg?width=640",
+		"remoteImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolfgang%20Petersen%20-%20Poseidon%20Premiere%20(cropped).jpg?width=1200",
 		"referenceUrls": [
 			"https://www.wikidata.org/wiki/Q65321",
 			"https://www.imdb.com/name/nm0000583/",
 			"https://www.themoviedb.org/person/5231-wolfgang-petersen"
 		],
-		"lastVerifiedAt": "2026-08-23",
+		"lastVerifiedAt": "2026-11-06",
 		"source": "wikidata-imdb-cache"
 	},
 	"Wolfgang Reitherman": {
@@ -102471,5 +103270,22 @@
 		],
 		"lastVerifiedAt": "2026-10-01",
 		"source": "wikidata-imdb-cache"
+	},
+	"Leon Lai Ming": {
+		"name": "Leon Lai Ming",
+		"aliases": [
+			"Leon Lai"
+		],
+		"birthDate": "1966-12-11",
+		"birthYear": 1966,
+		"image": "/people/leon-lai-plex.jpg",
+		"remoteImageUrl": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fpeople%2F49203ca470fc9e7d84f852b4c0906343.jpg",
+		"referenceUrls": [
+			"https://watch.plex.tv/person/leon-lai",
+			"https://www.janusfilms.com/films/1742",
+			"https://sede.mcu.gob.es/CatalogoICAA/Peliculas/GetPdf?Pelicula=8744440"
+		],
+		"lastVerifiedAt": "2026-11-06",
+		"source": "plex-cache"
 	}
 }

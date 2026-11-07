@@ -1,0 +1,217 @@
+{
+  "country": "AR",
+  "language": "es",
+  "source": "https://apis.justwatch.com/graphql",
+  "method": "popularTitles exact title/year via original title query; offers(country: AR, platform: WEB)",
+  "checkedDate": "2026-11-06",
+  "results": [
+    {
+      "slug": "air-force-one-el-avion-del-presidente-1997",
+      "title": "Air Force One (El avión del presidente)",
+      "originalTitle": "Air Force One",
+      "year": 1997,
+      "matched": true,
+      "matchedTitle": "Air Force One (El avión del presidente)",
+      "matchedYear": 1997,
+      "url": "https://www.justwatch.com/ar/pelicula/air-force-one-el-avion-del-presidente",
+      "checkedAt": "2026-11-06T21:04:21.378Z",
+      "offers": [
+        {
+          "type": "FLATRATE",
+          "provider": "Disney Plus",
+          "technicalName": "disneyplus"
+        }
+      ]
+    },
+    {
+      "slug": "el-ultimo-samurai-2003",
+      "title": "El último samurái",
+      "originalTitle": "The Last Samurai",
+      "year": 2003,
+      "matched": true,
+      "matchedTitle": "El último samurái",
+      "matchedYear": 2003,
+      "url": "https://www.justwatch.com/ar/pelicula/el-ultimo-samurai",
+      "checkedAt": "2026-11-06T21:04:22.608Z",
+      "offers": [
+        {
+          "type": "FLATRATE",
+          "provider": "Netflix",
+          "technicalName": "netflix"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "MovistarTV",
+          "technicalName": "movistarplay"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "HBO Max",
+          "technicalName": "max"
+        },
+        {
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        },
+        {
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      ]
+    },
+    {
+      "slug": "en-la-linea-de-fuego-1993",
+      "title": "En la línea de fuego",
+      "originalTitle": "In the Line of Fire",
+      "year": 1993,
+      "matched": true,
+      "matchedTitle": "En la línea de fuego",
+      "matchedYear": 1993,
+      "url": "https://www.justwatch.com/ar/pelicula/en-la-linea-de-fuego",
+      "checkedAt": "2026-11-06T21:04:23.841Z",
+      "offers": [
+        {
+          "type": "FLATRATE",
+          "provider": "HBO Max",
+          "technicalName": "max"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "Sony One Amazon Channel",
+          "technicalName": "amazonsonyone"
+        },
+        {
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        },
+        {
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      ]
+    },
+    {
+      "slug": "la-familia-addams-1991",
+      "title": "La familia Addams",
+      "originalTitle": "The Addams Family",
+      "year": 1991,
+      "matched": true,
+      "matchedTitle": "La familia Addams",
+      "matchedYear": 1991,
+      "url": "https://www.justwatch.com/ar/pelicula/la-familia-addams",
+      "checkedAt": "2026-11-06T21:04:25.059Z",
+      "offers": [
+        {
+          "type": "FLATRATE",
+          "provider": "Paramount Plus",
+          "technicalName": "paramountplus"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "MovistarTV",
+          "technicalName": "movistarplay"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus"
+        }
+      ]
+    },
+    {
+      "slug": "la-familia-addams-la-tradicion-continua-1993",
+      "title": "La familia Addams: La tradición continúa",
+      "originalTitle": "Addams Family Values",
+      "year": 1993,
+      "matched": true,
+      "matchedTitle": "La familia Addams: La tradición continúa",
+      "matchedYear": 1993,
+      "url": "https://www.justwatch.com/ar/pelicula/la-familia-addams-la-tradicion-continua",
+      "checkedAt": "2026-11-06T21:04:26.295Z",
+      "offers": [
+        {
+          "type": "FLATRATE",
+          "provider": "Paramount Plus",
+          "technicalName": "paramountplus"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "Paramount+ Amazon Channel",
+          "technicalName": "amazonparamountplus"
+        },
+        {
+          "type": "RENT",
+          "provider": "Amazon Video",
+          "technicalName": "amazon"
+        },
+        {
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        },
+        {
+          "type": "BUY",
+          "provider": "Amazon Video",
+          "technicalName": "amazon"
+        },
+        {
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      ]
+    },
+    {
+      "slug": "spy-game-juego-de-espias-2001",
+      "title": "Spy Game (Juego de espías)",
+      "originalTitle": "Spy Game",
+      "year": 2001,
+      "matched": true,
+      "matchedTitle": "Spy Game (Juego de espías)",
+      "matchedYear": 2001,
+      "url": "https://www.justwatch.com/ar/pelicula/spy-game-juego-de-espias",
+      "checkedAt": "2026-11-06T21:04:27.507Z",
+      "offers": [
+        {
+          "type": "FLATRATE",
+          "provider": "Amazon Prime Video",
+          "technicalName": "amazonprimevideo"
+        },
+        {
+          "type": "FLATRATE",
+          "provider": "MovistarTV",
+          "technicalName": "movistarplay"
+        },
+        {
+          "type": "RENT",
+          "provider": "Amazon Video",
+          "technicalName": "amazon"
+        },
+        {
+          "type": "RENT",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        },
+        {
+          "type": "BUY",
+          "provider": "Amazon Video",
+          "technicalName": "amazon"
+        },
+        {
+          "type": "BUY",
+          "provider": "Apple TV Store",
+          "technicalName": "itunes"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-06",
+  "notes": [
+    "enrich-movie-age-ratings.mjs did not complete because TMDb search returned HTTP 403; its local JustWatch fallback was checked directly."
+  ],
+  "ratings": [
+    {
+      "slug": "anatomia-de-un-asesinato-1959",
+      "value": "+16",
+      "source": "https://cineyseries.net/pelicula/Anatomia-de-un-asesinato-21351",
+      "sourceValue": "Argentina: 16"
+    },
+    {
+      "slug": "el-buscavidas-1961",
+      "value": "+13",
+      "source": "https://www.justwatch.com/ar/pelicula/el-buscavidas",
+      "sourceValue": "JustWatch AR contentRating 13"
+    },
+    {
+      "slug": "pelham-1-2-3-1974",
+      "value": "+17",
+      "source": "https://www.justwatch.com/ar/pelicula/pelham-1-2-3",
+      "sourceValue": "JustWatch AR contentRating R; normalized by repository rule R -> +17"
+    },
+    {
+      "slug": "terror-en-amityville-1979",
+      "value": "+17",
+      "source": "https://www.justwatch.com/ar/pelicula/terror-en-amityville",
+      "sourceValue": "JustWatch AR contentRating R; normalized by repository rule R -> +17"
+    }
+  ]
+}

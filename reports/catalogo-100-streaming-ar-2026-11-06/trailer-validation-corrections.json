@@ -1,0 +1,56 @@
+{
+  "reportType": "trailer_validation_corrections",
+  "checkedAt": "2026-11-06",
+  "changes": [
+    {
+      "slug": "el-increible-castillo-vagabundo-2004",
+      "previous": {
+        "title": "HOWL'S MOVING CASTLE | Official Trailer",
+        "status": "localized-title-mismatch"
+      },
+      "currentYoutubeId": "06BP_Nc7JBM",
+      "currentTitle": "EL INCREÍBLE CASTILLO VAGABUNDO - Tráiler Oficial",
+      "channel": "Cineplex Colombia",
+      "sourceUrl": "https://www.youtube.com/watch?v=06BP_Nc7JBM",
+      "status": "official_distributor_title_matched"
+    },
+    {
+      "slug": "la-leyenda-del-tesoro-perdido-2004",
+      "previousYoutubeId": "vqUPxNT8ioA",
+      "previousStatus": "oEmbed HTTP 404",
+      "currentYoutubeId": "vqUPxNT8io4",
+      "currentTitle": "National Treasure (2004) Trailer #1 | Movieclips Classic Trailers",
+      "channel": "Rotten Tomatoes Classic Trailers",
+      "sourceUrl": "https://www.youtube.com/watch?v=vqUPxNT8io4",
+      "status": "active_authoritative_trailer_matched_by_original_title"
+    },
+    {
+      "slug": "la-caida-de-los-angeles-1995",
+      "previousYoutubeId": "uxaT19BlH0M",
+      "currentYoutubeId": "uxaT19BlH0M",
+      "currentTitle": "FALLEN ANGELS 4K | Official Trailer",
+      "channel": "Block 2 Distribution",
+      "sourceUrl": "https://www.youtube.com/watch?v=uxaT19BlH0M",
+      "status": "official_trailer_search_verified_local_title_warning"
+    },
+    {
+      "slug": "yo-vi-al-diablo-2010",
+      "previous": {
+        "title": "I Saw The Devil Trailer",
+        "status": "localized-title-mismatch"
+      },
+      "currentYoutubeId": "_QXMfAXlY18",
+      "currentTitle": "ENCONTRÉ AL DIABLO de Kim Jee-woon (Trailer español)",
+      "channel": "Media3 Estudio",
+      "sourceUrl": "https://www.youtube.com/watch?v=_QXMfAXlY18",
+      "distributorEvidence": "https://noescinetodoloquereluce.com/2011/05/trailer-espanol-de-encontre-al-diablo.html",
+      "status": "distributor_associated_spanish_trailer_verified"
+    }
+  ],
+  "noUnsupportedTrailerIds": true,
+  "candidateAudit": {
+    "command": "node skills/la-posta-cine-auditor/scripts/audit_recent_movies.cjs --candidate <three paths>",
+    "result": "PASS WITH WARNINGS (6 warnings; 0 errors)",
+    "note": "Only one YouTube title-mismatch warning remains: the official English-titled Fallen Angels trailer is returned in YouTube search for the exact film and year."
+  }
+}

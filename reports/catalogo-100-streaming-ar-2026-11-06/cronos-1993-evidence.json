@@ -1,0 +1,109 @@
+{
+  "slug": "cronos-1993",
+  "checkedAt": "2026-11-06",
+  "fieldEvidence": [
+    {
+      "fields": ["title", "originalTitle", "year", "country", "runtimeMinutes", "director", "mainCast"],
+      "url": "https://www.criterion.com/films/27534-cronos?q=autocomplete",
+      "fact": "Criterion identifies Cronos as a 1993 film from Mexico, in Spanish, 93 minutes; credits Guillermo del Toro as director and Federico Luppi and Ron Perlman in the leading roles."
+    },
+    {
+      "fields": ["synopsis", "category", "genres", "director", "mainCast"],
+      "url": "https://www.rottentomatoes.com/m/cronos",
+      "fact": "Rotten Tomatoes matches Cronos (1993), describes Jesús Gris finding a scarab that restores youth but causes a thirst for blood, and lists director Guillermo del Toro, Federico Luppi and Ron Perlman. It classifies the film as horror."
+    },
+    {
+      "fields": ["country", "productionCompany", "awards.wins"],
+      "url": "https://moreliafilmfest.com/sites/default/files/2023-01/13FiCM_CAT_Todo.1.c%202.pdf",
+      "fact": "The Morelia festival catalog lists Cronos as a 1993 Mexican film, names production companies Prime Films and Producciones Iguana, and records the 1993 Mercedes-Benz Critics' Week award at Cannes."
+    },
+    {
+      "fields": ["audienceRating", "runtimeMinutes", "genres", "country", "director", "mainCast"],
+      "url": "https://www.justwatch.com/ar/pelicula/cronos",
+      "fact": "The Argentina page matches Cronos (1993), displays age rating 16, duration 1h34, Mexico, Guillermo del Toro, and the cast including Federico Luppi and Ron Perlman. The stored +16 is the catalog's normalized label for its displayed 16."
+    },
+    {
+      "fields": ["releasePlatform"],
+      "url": "https://www.justwatch.com/ar/pelicula/cronos",
+      "fact": "The current Argentina JustWatch page says Cronos streams on MovistarTV; the same-day JustWatch GraphQL result in international-remaining-justwatch.json matched title Cronos, year 1993, and reported FLATRATE twice for provider MovistarTV (technical name movistarplay), checked 2026-11-06T22:30:26.170Z. MovistarTV is not a represented catalog label, so the movie uses the allowlisted Otras plataformas label by itself."
+    },
+    {
+      "fields": ["cinepostaScore"],
+      "url": "https://www.rottentomatoes.com/m/cronos",
+      "fact": "Rotten Tomatoes lists Cronos (1993) at 69% Popcornmeter with 10,000+ audience ratings. Normalize round(69/10)=7; no confidence reduction or 9/10 masterpiece cap applies. Final CinePosta score: 7. Retrieved 2026-11-06."
+    },
+    {
+      "fields": ["poster"],
+      "url": "https://www.themoviedb.org/movie/11655-cronos/images/posters",
+      "fact": "The selected Cronos theatrical poster is available at https://image.tmdb.org/t/p/original/3BadFDdGuuCMblH9jQwNwfcxhrF.jpg (967x1451 JPEG). Visual inspection confirmed the Cronos title, del Toro credit and scarab artwork with no added award badge or third-party watermark. Localized to public/assets/posters/1993/cronos-1993.webp."
+    },
+    {
+      "fields": ["trailerYoutubeId"],
+      "url": "https://www.youtube.com/watch?v=j_9r7Trek5I",
+      "oEmbedUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dj_9r7Trek5I&format=json",
+      "fact": "YouTube oEmbed returned the exact title 'CRONOS - 4K Restoration Trailer' and author JANUS, channel https://www.youtube.com/@janusfilmsnyc. This is an official restoration trailer, not represented as the original 1993 trailer."
+    }
+  ],
+  "people": [
+    {
+      "credit": "Guillermo del Toro",
+      "role": "director",
+      "identityUrl": "https://www.imdb.com/name/nm0868219/",
+      "additionalIdentityUrls": ["https://www.wikidata.org/wiki/Q219124", "https://www.themoviedb.org/person/10828-guillermo-del-toro"],
+      "portraitUrl": "https://commons.wikimedia.org/wiki/File:Guillermo_del_Toro_at_the_2026_Sundance_Film_Festival_01_(cropped).jpg",
+      "portraitFact": "Commons attributes the 2026 Sundance portrait to Gabriel Brooks/WikiPortraits under CC BY 4.0; source derivative was 960x1281; local canonical image public/people/guillermo-del-toro-nm0868219.jpg is 899x1200."
+    },
+    {
+      "credit": "Federico Luppi",
+      "role": "lead actor",
+      "identityUrl": "https://www.imdb.com/name/nm0527002/",
+      "additionalIdentityUrls": ["https://www.wikidata.org/wiki/Q1393963", "https://www.themoviedb.org/person/17094-federico-luppi"],
+      "portraitUrl": "https://commons.wikimedia.org/wiki/File:Federico_Luppi.JPG",
+      "portraitFact": "Existing verified local portrait public/people/federico-luppi-q1393963.jpg is 407x602."
+    },
+    {
+      "credit": "Ron Perlman",
+      "role": "lead actor",
+      "identityUrl": "https://www.imdb.com/name/nm0000579/",
+      "additionalIdentityUrls": ["https://www.wikidata.org/wiki/Q220698", "https://www.themoviedb.org/person/2372-ron-perlman"],
+      "portraitUrl": "https://commons.wikimedia.org/wiki/File:Ron_Perlman_(53604595844).jpg",
+      "portraitFact": "Existing verified local portrait public/people/ron-perlman-nm0000579.jpg is 813x1085."
+    }
+  ],
+  "editorial": {
+    "copyWrittenFromScratch": true,
+    "scoreReasoning": "The public audience normalization is 7; the exceptional-masterpiece filter is not invoked.",
+    "releaseDate": "No Argentina release date was verified, so releaseDate is intentionally omitted.",
+    "recommendationRationale": {
+      "becauseYouLiked": {
+        "la-mosca-1986": "Body transformation and horror tied to an intimate human relationship.",
+        "el-laberinto-del-fauno-2006": "Guillermo del Toro's dark fantasy and empathetic treatment of monsters."
+      },
+      "related": {
+        "the-shape-of-water-2017": "Del Toro's later supernatural romance and creature-centered fantasy.",
+        "la-cosa-el-enigma-de-otro-mundo-1982": "A celebrated horror film built around bodily mutation and distrust.",
+        "videodrome-1983": "A distinct body-horror treatment of technology reshaping the human body."
+      }
+    }
+  },
+  "omissions": [
+    "No Argentina releaseDate is included: only non-Argentine release dates were found.",
+    "No unsourced production credits, personal profiles, audience scores or platform labels were added.",
+    "Claudio Brook, Margarita Isabel and Tamara Shanath are listed in Criterion's full cast, but were left out of mainCast because they have no verified local portrait/profile in the current people catalog; the two lead actors and director pass the required identity/portrait floor."
+  ],
+  "validation": {
+    "newMovieDryRun": "Previously confirmed slug cronos-1993 and the existing starter; no second starter was created.",
+    "candidateAudit": "PASS WITH WARNINGS: review audit passed; poster is 480x720 and valid at 34696 bytes, below the preferred 40960-81920 byte range; generated movie-catalog row remains unsynchronized.",
+    "posterLocalization": "PASS: one poster localized without fallback to public/assets/posters/1993/cronos-1993.webp; visually inspected at 480x720.",
+    "posterSourcePolicy": "PASS.",
+    "posterVerification": "PASS WITH SIZE WARNING; no poster error.",
+    "moviePeopleAudit": "PASS for cronos-1993.",
+    "astroCheck": "PASS: 344 files, 0 errors, 0 warnings, 0 hints.",
+    "editorialMeters": "PASS.",
+    "peopleImageCheck": "FAILS GLOBALLY on unrelated william-shimell-nm1468516.jpg; Guillermo del Toro is 899x1200 and the Cronos people audit passes.",
+    "contentValidation": "FAILS GLOBALLY because 142 movie files are present in the task working tree while docs/movie-catalog-reference.md is not regenerated; no generated catalog update was run in this scoped pass.",
+    "build": "FAILS before route generation because unrelated el-bar-de-las-grandes-esperanzas-2021.json has invalid audienceRating.",
+    "browserRoute": "Playwright against the dev route returned HTTP 500 before rendering because unrelated no-2012.json has synopsis longer than 320 characters; browser poster assertion could not run.",
+    "diffCheck": "PASS; git diff --check returned exit code 0 (with the existing Windows LF-to-CRLF notice for people.json)."
+  }
+}

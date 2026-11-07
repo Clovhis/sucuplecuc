@@ -1,0 +1,345 @@
+{
+  "reportType": "cineposta-movie-research-ledger",
+  "reportVersion": 1,
+  "checkedAt": "2026-11-07T00:00:21.940Z",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "scope": "Research, AR streaming verification, and completed addition of the 100th movie in the CinePosta batch. This record documents the selected replacement, data decisions, rejected poster attempt, and final audits.",
+  "candidate": {
+    "workingTitle": "Fallen Angels",
+    "year": 1995,
+    "justWatchId": "tm13251",
+    "imdbId": "tt0112913",
+    "tmdbId": 11220,
+    "displayTitle": "La caída de los ángeles",
+    "slug": "la-caida-de-los-angeles-1995",
+    "movieFile": "src/data/movies/la-caida-de-los-angeles-1995.json"
+  },
+  "duplicatePreflight": {
+    "command": "npm run new-movie -- --title 'La caída de los ángeles' --year 1995 --original-title '墮落天使' --dry-run --json",
+    "result": {
+      "slug": "la-caida-de-los-angeles-1995",
+      "duplicates": [],
+      "dryRun": true
+    },
+    "note": "Exact title, original title, year, generated slug, catalog reference, and all source JSON files were checked before creation; no duplicate was found. The earlier working-title preflight was for Fallen Angels."
+  },
+  "argentinaAvailability": {
+    "status": "verified_current_by_justwatch_graphql",
+    "checkedAt": "2026-11-07T00:00:21.940Z",
+    "endpoint": "https://apis.justwatch.com/graphql",
+    "argentinaTitleUrl": "https://www.justwatch.com/ar/pelicula/angeles-caidos",
+    "query": "query SearchTitles($searchQuery: String!, $country: Country!, $language: Language!) { popularTitles(country: $country, first: 10, filter: { searchQuery: $searchQuery, objectTypes: [MOVIE] }) { edges { node { id ... on Movie { content(country: $country, language: $language) { title originalTitle originalReleaseYear fullPath } offers(country: $country, platform: WEB) { monetizationType package { id clearName technicalName shortName } } } } } } }",
+    "variables": {
+      "searchQuery": "Fallen Angels",
+      "country": "AR",
+      "language": "es"
+    },
+    "matchedIdentity": {
+      "id": "tm13251",
+      "title": "Fallen angels (Ángeles caídos)",
+      "originalTitle": "墮落天使",
+      "originalReleaseYear": 1995,
+      "fullPath": "/ar/pelicula/angeles-caidos"
+    },
+    "rawOfferCount": 5,
+    "distinctOffers": [
+      {
+        "provider": "MUBI",
+        "technicalName": "mubi",
+        "packageId": "cGF8MTE=",
+        "monetizationType": "FLATRATE",
+        "rawOccurrences": 3
+      },
+      {
+        "provider": "MUBI Amazon Channel",
+        "technicalName": "amazonmubi",
+        "packageId": "cGF8MjAx",
+        "monetizationType": "FLATRATE",
+        "rawOccurrences": 2
+      }
+    ],
+    "rentOffers": [],
+    "buyOffers": [],
+    "preferredReleasePlatform": "MUBI",
+    "releasePlatforms": [
+      "MUBI",
+      "MUBI Amazon Channel"
+    ],
+    "notes": [
+      "The exact AR GraphQL identity is JustWatch ID tm13251, original title 墮落天使, original release year 1995, path /ar/pelicula/angeles-caidos.",
+      "Direct GraphQL verification at 2026-11-07T00:00:21.940Z returned HTTP 200 and only FLATRATE offers: three raw MUBI package records and two MUBI Amazon Channel records; there were no RENT or BUY offers.",
+      "JustWatch AR page: https://www.justwatch.com/ar/pelicula/angeles-caidos. Its current page independently states that the film streams on MUBI and MUBI Amazon Channel.",
+      "A provider deep-link once redirected to Brazil; no Brazil page was used as Argentina evidence."
+    ],
+    "timezone": "America/Argentina/Buenos_Aires",
+    "httpStatus": 200
+  },
+  "proposedMovieFields": {
+    "slug": {
+      "value": "la-caida-de-los-angeles-1995",
+      "status": "created_after_exact_duplicate_preflight"
+    },
+    "title": {
+      "value": "La caída de los ángeles",
+      "status": "verified_argentine_historical_localization",
+      "note": "El Amante, revista argentina, registra el título como La caída de los ángeles en su dossier sobre Wong Kar-wai; JustWatch AR conserva Ángeles caídos como alias del título actual."
+    },
+    "originalTitle": {
+      "value": "墮落天使",
+      "status": "verified"
+    },
+    "year": {
+      "value": 1995,
+      "status": "verified_original_release_year"
+    },
+    "synopsis": {
+      "value": "En el Hong Kong nocturno, un sicario decidido a dejar su oficio y la mujer que organiza sus encargos sostienen una relación hecha de rutinas y distancia. A su alrededor, un joven mudo busca compañía entre comercios cerrados y calles que nunca terminan de apagarse.",
+      "status": "final_original_copy"
+    },
+    "releaseDate": {
+      "value": null,
+      "status": "omitted",
+      "note": "No Argentina theatrical or streaming premiere date was established; no foreign-market date was imported."
+    },
+    "reviewPublishedAt": {
+      "value": "2026-11-06",
+      "status": "assigned_local_date"
+    },
+    "catalogAddedAt": {
+      "value": "2026-11-06",
+      "status": "assigned_automatically_by_new_movie_on_actual_AR_addition_date"
+    },
+    "audienceRating": {
+      "value": "+16",
+      "status": "JustWatch_AR_platform_age_guide",
+      "note": "JustWatch AR shows age 16. This is recorded as the provider-facing age indication, not asserted as an INCAA certificate; no exact INCAA record for this title was located."
+    },
+    "category": {
+      "value": "Drama",
+      "status": "editorial_primary_lane"
+    },
+    "genres": {
+      "value": [
+        "Drama",
+        "Crimen",
+        "Romance"
+      ],
+      "status": "editorial_classification",
+      "note": "Drama is the primary lane; Crime and Romance describe the central hitman plot and the unreturned affection. The film has comic passages, but Comedy was not promoted to a supporting genre."
+    },
+    "subgenres": {
+      "value": [],
+      "status": "intentionally_empty"
+    },
+    "country": {
+      "value": "HK",
+      "status": "verified_hong_kong_production"
+    },
+    "runtimeMinutes": {
+      "value": 99,
+      "status": "verified_for_current_MUBI_AR_restoration"
+    },
+    "director": {
+      "value": "Wong Kar-wai",
+      "status": "verified_full_name_person_record_and_local_portrait"
+    },
+    "mainCast": {
+      "value": [
+        "Leon Lai Ming",
+        "Takeshi Kaneshiro"
+      ],
+      "status": "two_verified_principal_performers_with_full_names_and_local_portraits",
+      "omittedCredit": "Michelle Reis is a principal in the film and source billing is verified, but her only sourced Commons image was flagged License review needed and YouTube review needed. Omitted from this movie credit, and the unreferenced task-created person record and portrait were removed. The director plus Leon Lai Ming and Takeshi Kaneshiro meet the verified credit floor."
+    },
+    "productionCompany": {
+      "value": "Jet Tone Production",
+      "status": "verified_original_production_company"
+    },
+    "releasePlatform": {
+      "value": "MUBI",
+      "status": "verified_FLATRATE"
+    },
+    "releasePlatforms": {
+      "value": [
+        "MUBI"
+      ],
+      "status": "verified_FLATRATE",
+      "note": "JustWatch lista además MUBI Amazon Channel como FLATRATE; queda en la respuesta API bruta. El catálogo normaliza ambas ofertas a MUBI y su esquema no admite la etiqueta de canal como proveedor separado."
+    },
+    "poster": {
+      "value": "assets/posters/1995/la-caida-de-los-angeles-1995.webp",
+      "status": "localized_and_visual_review_passed",
+      "sourcePage": "https://www.themoviedb.org/movie/11220-fallen-angels/images/posters",
+      "sourceDimensions": {
+        "width": 2000,
+        "height": 3000
+      },
+      "localPath": "public/assets/posters/1995/la-caida-de-los-angeles-1995.webp",
+      "localDimensions": {
+        "width": 480,
+        "height": 720
+      },
+      "localBytes": 47558,
+      "note": "The first gallery option (675x1000) failed the repository 720x1000 source minimum. It was rejected. The selected alternate has a film title, character artwork, no review quotes, badges, flags, watermarks, overlays, or third-party mark; the localized WebP was visually inspected."
+    },
+    "trailerYoutubeId": {
+      "value": "uxaT19BlH0M",
+      "status": "verified_official_title-specific_trailer_search_confirmed",
+      "url": "https://www.youtube.com/watch?v=uxaT19BlH0M",
+      "title": "FALLEN ANGELS 4K | Official Trailer",
+      "channel": "Block 2 Distribution",
+      "auditNote": "The title is in English. The candidate audit returned a warning rather than an error because YouTube search returns this video for the exact film."
+    },
+    "cinepostaScore": {
+      "value": 8,
+      "status": "RT_audience_score_normalized_then_editorial_cap_applied",
+      "sourceRating": {
+        "value": "86%",
+        "type": "Rotten Tomatoes Popcornmeter audience score",
+        "sample": "10,000+ ratings",
+        "url": "https://www.rottentomatoes.com/m/fallen_angels_hong_kong",
+        "accessedAt": "2026-11-06"
+      },
+      "normalization": "round(86 / 10) = 9",
+      "confidenceCeiling": "No cap: RT shows a 10,000+ sample.",
+      "editorialCeiling": 8,
+      "editorialReason": "The high audience result normalizes to 9, but the consulted sources did not establish the combined exceptional-formal-achievement and durable-canon threshold for CinePosta 9; the score is capped at 8. No score 9/10 is awarded for popularity alone."
+    },
+    "awards": {
+      "wins": []
+    },
+    "editorialTenSecondTake": {
+      "verdict": "Wong Kar-wai vuelve la soledad una comedia de desencuentros que puede cortarse, sin aviso, con una ráfaga.",
+      "whatToExpect": "Leon Lai Ming encarna a un sicario en retirada; Takeshi Kaneshiro, a un joven mudo que invade negocios cerrados para encontrar algo de compañía.",
+      "pace": "El montaje acelera caminatas y cruces, pero deja pausas largas cuando los personajes se quedan sin nadie a quien hablarle.",
+      "intensity": "Hay humor seco, violencia repentina y melancolía; las escenas de acción aparecen en estallidos, no como una persecución continua.",
+      "practicalContext": "Es la película hermana de Chungking Express: comparte la ciudad y su impulso, pero deforma más el espacio con gran angular y cortes bruscos.",
+      "forFansOf": "Historias donde la cámara, las luces nocturnas y el montaje expresan lo que los personajes no consiguen decirse.",
+      "notForYouIf": "Esperás que los recorridos converjan en un policial ordenado o que la acción sea el centro de cada escena."
+    },
+    "review": {
+      "value": "Wong Kar-wai filma una ciudad que parece empujar a sus personajes hacia los bordes del cuadro. El gran angular tuerce rostros y pasillos; el montaje quebrado convierte cada cruce frustrado en una forma de intimidad a distancia. Leon Lai Ming le presta al sicario un cansancio que pesa más que su oficio, mientras Takeshi Kaneshiro hace de la búsqueda de compañía algo tan disparatado como triste. Entre chistes laterales y estallidos de violencia, la película vuelve siempre a la misma pregunta: cómo acercarse a alguien en una noche llena de gente que no termina de llegar al otro.",
+      "status": "original_Rioplatense_criticism_written_from_verified_film_facts_not_source_copy"
+    },
+    "relatedMovies": {
+      "becauseYouLiked": [
+        "chungking-express-1994",
+        "deseando-amar-2000"
+      ],
+      "related": [
+        "2046-2004",
+        "antes-del-atardecer-2004",
+        "la-hija-oscura-2021"
+      ]
+    }
+  },
+  "fieldEvidence": [
+    {
+      "field": "title, originalTitle, year, streaming identity",
+      "url": "https://www.justwatch.com/ar/pelicula/angeles-caidos",
+      "fact": "JustWatch AR page resolves to title “Fallen angels (Ángeles caídos)”, original title 墮落天使, year 1995, ID tm13251."
+    },
+    {
+      "field": "title, year, country, runtime, synopsis facts, director, principal cast",
+      "url": "https://www.janusfilms.com/films/1742",
+      "fact": "Official Janus Films page names Fallen Angels, Wong Kar Wai, Hong Kong, 1995, 99 minutes; summarizes the hitman, his business partner, and a mute delinquent."
+    },
+    {
+      "field": "title, year, country, runtime, Argentina subscription page",
+      "url": "https://mubi.com/en/ar/films/fallen-angels",
+      "fact": "Accessed 2026-11-06. MUBI's Argentina page identifies FALLEN ANGELS, Wong Kar Wai, Hong Kong, 1995, 99 minutes, displays a Watch Now flow and an ARS subscription prompt. The GraphQL offer above separately identifies MUBI as FLATRATE."
+    },
+    {
+      "field": "synopsis facts, country, year, runtime, language, aspect ratio, principal cast",
+      "url": "https://s3.amazonaws.com/criterion-production/janus_promo_packages/413-/WKW_press-notes_r9_original.pdf",
+      "fact": "Official Janus/Criterion press notes identify Fallen Angels as Hong Kong, 1995, 99 minutes, in Cantonese with English subtitles, and identify Leon Lai, Michelle Reis, and Takeshi Kaneshiro."
+    },
+    {
+      "field": "country, language, runtime, title",
+      "url": "https://sitgesfilmfestival.com/en/film/1996/fallen-angels",
+      "fact": "Sitges festival listing identifies the 1995 film, Hong Kong production, 99 minutes, and Cantonese/Mandarin."
+    },
+    {
+      "field": "year, country registry label, Spanish runtime/classifications, principal cast",
+      "url": "https://sede.mcu.gob.es/CatalogoICAA/Peliculas/GetPdf?Pelicula=8744440",
+      "fact": "The Spanish ICAA official record identifies FALLEN ANGELS, Wong Kar-Wai, production year 1995, country China, and credits Takeshi Kaneshiro, Leon Lai Ming, Michelle Reis, Charlie Young Choi Nei, and Karen Mok Man Wai. It lists 98 minutes for theatrical (Spanish classification dated 2020-12-28) and 92 minutes for video (classification dated 2005-10-06); these Spanish ratings are not Argentine classification evidence."
+    },
+    {
+      "field": "cinepostaScore",
+      "url": "https://www.rottentomatoes.com/m/fallen_angels_hong_kong",
+      "fact": "At access on 2026-11-06, RT showed 86% Popcornmeter with 10,000+ ratings and 95% Tomatometer with 22 reviews. Audience score was used first."
+    },
+    {
+      "field": "title, Argentina title history",
+      "url": "https://ahira.com.ar/wp-content/uploads/2019/12/El-Amante-160.pdf",
+      "fact": "The Argentine magazine El Amante identifies the film as Duoluo tianshi/Fallen Angels and says it premiered on video in Argentina as La caída de los ángeles."
+    },
+    {
+      "field": "year, country, runtime, synopsis facts, director and credited cast",
+      "url": "https://www.janusfilms.com/films/1742",
+      "fact": "Official Janus Films page identifies Wong Kar Wai, Hong Kong, 1995, 99 minutes, and the hitman, his business partner, and a mute delinquent; it bills Leon Lai, Michelle Reis and Takeshi Kaneshiro."
+    },
+    {
+      "field": "productionCompany, country, year, director",
+      "url": "https://www.acmi.net.au/works/87364--fallen-angels/",
+      "fact": "ACMI collection record identifies Hong Kong, 1995; director Wong Kar-wai; producer Jeff Lau Chun-Wai; and production company Jet Tone Production."
+    },
+    {
+      "field": "poster source page and identity",
+      "url": "https://www.themoviedb.org/movie/11220-fallen-angels/images/posters",
+      "fact": "TMDb gallery is for Fallen Angels (1995). Selected poster asset dlcVN0dt2Bd7zwDGSU7rQEI6B0C.jpg measured 2000x3000 and passed full-size visual review."
+    },
+    {
+      "field": "poster source image",
+      "url": "https://image.tmdb.org/t/p/original/dlcVN0dt2Bd7zwDGSU7rQEI6B0C.jpg",
+      "fact": "Selected poster source; HTTP 200 image/jpeg, 2000x3000. Localized by the repository command to public/assets/posters/1995/la-caida-de-los-angeles-1995.webp (480x720, 47,558 bytes), then visually reviewed."
+    },
+    {
+      "field": "trailerYoutubeId",
+      "url": "https://www.youtube.com/watch?v=uxaT19BlH0M",
+      "fact": "Block 2 Distribution video titled FALLEN ANGELS 4K | Official Trailer, published 2020-12-11; description names the film, director, principal cast, restoration and Jet Tone copyright."
+    },
+    {
+      "field": "audienceRating",
+      "url": "https://www.justwatch.com/ar/pelicula/angeles-caidos",
+      "fact": "JustWatch AR page currently shows “Clasificación por edades 16”; stored as +16 and explicitly treated as platform age guidance, not as an Argentine INCAA certificate."
+    },
+    {
+      "field": "Leon Lai Ming person identity and credit",
+      "url": "https://watch.plex.tv/person/leon-lai",
+      "fact": "Plex person record identifies Leon Lai Ming, birth date 1966-12-11, Hong Kong actor and Fallen Angels credit; movie mainCast uses the full name, which is also supported by BFI/Janus credits."
+    },
+    {
+      "field": "Michelle Reis omitted credit portrait gate",
+      "url": "https://commons.wikimedia.org/wiki/File:Michelle_Reis_SHISEIDO_(3).jpg",
+      "fact": "Commons file page flags License review needed and YouTube review needed. The portrait was not retained; Michelle Reis is omitted from the movie JSON and the unreferenced task-created profile/image were removed."
+    }
+  ],
+  "outstandingBeforeLoad": [],
+  "creation": {
+    "command": "npm run new-movie -- --title 'La caída de los ángeles' --year 1995 --original-title '墮落天使' --country HK",
+    "result": {
+      "slug": "la-caida-de-los-angeles-1995",
+      "outputPath": "src/data/movies/la-caida-de-los-angeles-1995.json",
+      "duplicate": false,
+      "catalogAddedAt": "2026-11-06"
+    }
+  },
+  "finalDisposition": {
+    "status": "added_and_validated",
+    "movieFile": "src/data/movies/la-caida-de-los-angeles-1995.json",
+    "title": "La caída de los ángeles",
+    "year": 1995,
+    "catalogAddedAt": "2026-11-06",
+    "validatedARStreaming": [
+      "MUBI",
+      "MUBI Amazon Channel"
+    ],
+    "noUnresolvedAvailability": true,
+    "nonBlockingEditorialNotes": [
+      "No exact Argentina releaseDate was verified, so releaseDate is omitted.",
+      "The +16 age field is the JustWatch AR page indication and is not represented as an INCAA certificate.",
+      "The credited principal Michelle Reis is omitted only because the available portrait source has unresolved license status; two other full-name principal credits with verified portraits remain."
+    ]
+  }
+}

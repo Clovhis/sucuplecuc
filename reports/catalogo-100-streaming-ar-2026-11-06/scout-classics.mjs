@@ -1,0 +1,16 @@
+import fs from 'node:fs/promises';
+const query=`query SearchTitles($searchQuery: String!, $country: Country!, $language: Language!) { popularTitles(country:$country,first:10,filter:{searchQuery:$searchQuery,objectTypes:[MOVIE]}) { edges { node { ... on Movie { content(country:$country,language:$language){title originalReleaseYear fullPath} offers(country:$country,platform:WEB){monetizationType package{id clearName technicalName}} } } } } }`;
+const candidates=[
+ ["Casablanca",1942],["Double Indemnity",1944],["It's a Wonderful Life",1946],["Bicycle Thieves",1948],["Sunset Boulevard",1950],["Rashomon",1950],["Singin' in the Rain",1952],["Seven Samurai",1954],["Rear Window",1954],["12 Angry Men",1957],["Vertigo",1958],["North by Northwest",1959],["Psycho",1960],["La Dolce Vita",1960],["Breathless",1960],["The Graduate",1967],["Night of the Living Dead",1968],["Rosemary's Baby",1968],["Once Upon a Time in the West",1968],["Butch Cassidy and the Sundance Kid",1969],["A Clockwork Orange",1971],["The French Connection",1971],["Chinatown",1974],["The Conversation",1974],["Jaws",1975],["Taxi Driver",1976],["Carrie",1976],["Network",1976],["Apocalypse Now",1979],["Stalker",1979],["The Deer Hunter",1978],["Kramer vs. Kramer",1979],["The Warriors",1979],["The Long Goodbye",1973],["The Wicker Man",1973],["Paper Moon",1973],["The Sting",1973],["The Goodbye Girl",1977],["Grease",1978],["Saturday Night Fever",1977],["The Outlaw Josey Wales",1976],["All That Jazz",1979],["The Man Who Would Be King",1975],["The Killing",1956],["The Big Sleep",1946],["The Red Shoes",1948],["The Third Man",1949],["On the Waterfront",1954],["The Apartment",1960],["Judgment at Nuremberg",1961]
+];
+const results=[];
+for(const [title,year] of candidates){
+ const response=await fetch('https://apis.justwatch.com/graphql',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({query,variables:{searchQuery:title,country:'AR',language:'es'}})});
+ if(!response.ok)throw new Error('JustWatch HTTP '+response.status+' for '+title);
+ const payload=await response.json();
+ const hits=(payload.data?.popularTitles?.edges??[]).map(e=>e.node).filter(n=>n?.content).map(n=>({node:n,title:n.content.title,year:Number(n.content.originalReleaseYear),url:'https://www.justwatch.com'+n.content.fullPath,exact:Number(n.content.originalReleaseYear)===year,offers:n.offers??[]})).sort((a,b)=>Number(b.exact)-Number(a.exact));
+ const best=hits[0];const seen=new Set();const offers=(best?.offers??[]).filter(o=>{const k=(o.package?.clearName||'')+'|'+o.monetizationType;if(seen.has(k))return false;seen.add(k);return true;}).map(o=>({type:o.monetizationType,provider:o.package?.clearName,technicalName:o.package?.technicalName}));
+ results.push({title,year,matchedTitle:best?.title??null,matchedYear:best?.year??null,url:best?.url??null,exact:best?.exact??false,offers});
+}
+await fs.writeFile('reports/catalogo-100-streaming-ar-2026-11-06/classics-scout.json',JSON.stringify({country:'AR',language:'es',verifiedAt:new Date().toISOString(),results},null,2)+'\n');
+console.log(JSON.stringify(results.filter(x=>x.exact&&x.offers.some(o=>['FLATRATE','FLATRATE_AND_BUY'].includes(o.type))).map(({title,year,matchedTitle,url,offers})=>({title,year,matchedTitle,url,sub:offers.filter(o=>['FLATRATE','FLATRATE_AND_BUY'].includes(o.type)).map(o=>o.provider)})),null,2));

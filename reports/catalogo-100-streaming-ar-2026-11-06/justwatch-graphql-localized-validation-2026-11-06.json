@@ -1,0 +1,446 @@
+{
+  "auditDate": "2026-11-06",
+  "checked": 20,
+  "summary": {
+    "verified": 0,
+    "mismatch": 1,
+    "manual-required": 0,
+    "unmatched": 19,
+    "error": 0
+  },
+  "results": [
+    {
+      "file": "3-anuncios-por-un-crimen-2017.json",
+      "title": "3 anuncios por un crimen",
+      "year": 2017,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=3%20anuncios%20por%20un%20crimen",
+        "candidates": [
+          {
+            "title": "Tres anuncios en las afueras",
+            "year": 2017,
+            "score": 46
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "500-dias-con-ella-2009.json",
+      "title": "500 días con ella",
+      "year": 2009,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=500%20d%C3%ADas%20con%20ella",
+        "candidates": [
+          {
+            "title": "(500) días juntos",
+            "year": 2009,
+            "score": 70
+          },
+          {
+            "title": "Un juego absurdo",
+            "year": 2009,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "amigos-con-beneficios-2011.json",
+      "title": "Amigos con beneficios",
+      "year": 2011,
+      "current": "HBO Max",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Amigos%20con%20beneficios",
+        "candidates": [
+          {
+            "title": "Con derecho a roce",
+            "year": 2011,
+            "score": 57
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "boda-sangrienta-2019.json",
+      "title": "Boda sangrienta",
+      "year": 2019,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Boda%20sangrienta",
+        "candidates": [
+          {
+            "title": "Noche de bodas",
+            "year": 2019,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "calabozos-dragones-honor-entre-ladrones-2023.json",
+      "title": "Calabozos & Dragones: Honor entre ladrones",
+      "year": 2023,
+      "current": "Paramount Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Calabozos%20%26%20Dragones%3A%20Honor%20entre%20ladrones",
+        "candidates": [
+          {
+            "title": "Dungeons & Dragons: Honor entre ladrones",
+            "year": 2023,
+            "score": 83
+          },
+          {
+            "title": "El contragolpe",
+            "year": 2022,
+            "score": 0
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "contra-lo-imposible-2019.json",
+      "title": "Contra lo imposible",
+      "year": 2019,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Contra%20lo%20imposible",
+        "candidates": [
+          {
+            "title": "Le Mans '66",
+            "year": 2019,
+            "score": 30
+          },
+          {
+            "title": "Misión: Imposible - Fallout",
+            "year": 2018,
+            "score": 27
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "el-esquema-fenicio-2025.json",
+      "title": "El esquema fenicio",
+      "year": 2025,
+      "current": "HBO Max",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=El%20esquema%20fenicio",
+        "candidates": [
+          {
+            "title": "La trama fenicia",
+            "year": 2025,
+            "score": 30
+          },
+          {
+            "title": "En el camino",
+            "year": 2026,
+            "score": 27
+          },
+          {
+            "title": "El Partido",
+            "year": 2026,
+            "score": 27
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "el-juicio-de-los-7-de-chicago-2020.json",
+      "title": "El juicio de los 7 de Chicago",
+      "year": 2020,
+      "current": "Netflix",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=El%20juicio%20de%20los%207%20de%20Chicago",
+        "candidates": [
+          {
+            "title": "El juicio de los siete de Chicago",
+            "year": 2020,
+            "score": 97
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "el-sueno-de-walt-disney-2013.json",
+      "title": "El sueño de Walt Disney",
+      "year": 2013,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=El%20sue%C3%B1o%20de%20Walt%20Disney",
+        "candidates": [
+          {
+            "title": "El sueño de Ellis",
+            "year": 2013,
+            "score": 78
+          },
+          {
+            "title": "Al encuentro de Mr. Banks",
+            "year": 2013,
+            "score": 46
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "historias-cruzadas-2011.json",
+      "title": "Historias cruzadas",
+      "year": 2011,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Historias%20cruzadas",
+        "candidates": [
+          {
+            "title": "Criadas y Señoras",
+            "year": 2011,
+            "score": 30
+          },
+          {
+            "title": "Historias de San Valentín",
+            "year": 2010,
+            "score": 20
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "la-chica-del-dragon-tatuado-2011.json",
+      "title": "La chica del dragón tatuado",
+      "year": 2011,
+      "current": "HBO Max",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=La%20chica%20del%20drag%C3%B3n%20tatuado",
+        "candidates": [
+          {
+            "title": "Millennium: Los hombres que no amaban a las mujeres",
+            "year": 2011,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "la-increible-vida-de-walter-mitty-2013.json",
+      "title": "La increíble vida de Walter Mitty",
+      "year": 2013,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=La%20incre%C3%ADble%20vida%20de%20Walter%20Mitty",
+        "candidates": [
+          {
+            "title": "La vida secreta de Walter Mitty",
+            "year": 2013,
+            "score": 97
+          },
+          {
+            "title": "La vida de Adèle",
+            "year": 2013,
+            "score": 70
+          },
+          {
+            "title": "La vida de Pi",
+            "year": 2012,
+            "score": 40
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "la-violencia-esta-en-nosotros-1972.json",
+      "title": "La violencia está en nosotros",
+      "year": 1972,
+      "current": "HBO Max",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=La%20violencia%20est%C3%A1%20en%20nosotros",
+        "candidates": [
+          {
+            "title": "Defensa",
+            "year": 1972,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "llegan-los-muppets-1979.json",
+      "title": "Llegan los Muppets",
+      "year": 1979,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Llegan%20los%20Muppets",
+        "candidates": [
+          {
+            "title": "La película de los Teleñecos",
+            "year": 1979,
+            "score": 46
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "mi-nombre-es-dolemite-2019.json",
+      "title": "Mi nombre es Dolemite",
+      "year": 2019,
+      "current": "Netflix",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Mi%20nombre%20es%20Dolemite",
+        "candidates": [
+          {
+            "title": "Mi nombre es Sara",
+            "year": 2020,
+            "score": 60
+          },
+          {
+            "title": "Yo soy Dolemite",
+            "year": 2019,
+            "score": 50
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "nace-una-estrella-2018.json",
+      "title": "Nace una estrella",
+      "year": 2018,
+      "current": "Prime Video",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Nace%20una%20estrella",
+        "candidates": [
+          {
+            "title": "Ha nacido una estrella",
+            "year": 2018,
+            "score": 70
+          },
+          {
+            "title": "El sol también es una estrella",
+            "year": 2019,
+            "score": 27
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "un-amor-inseparable-2017.json",
+      "title": "Un amor inseparable",
+      "year": 2017,
+      "current": "Prime Video",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Un%20amor%20inseparable",
+        "candidates": [
+          {
+            "title": "Un amor inesperado",
+            "year": 2016,
+            "score": 53
+          },
+          {
+            "title": "La gran enfermedad del amor",
+            "year": 2017,
+            "score": 46
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "un-lugar-en-silencio-parte-2-2021.json",
+      "title": "Un lugar en silencio Parte 2",
+      "year": 2021,
+      "current": "Netflix",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Un%20lugar%20en%20silencio%20Parte%202",
+        "candidates": [
+          {
+            "title": "Un lugar tranquilo 2",
+            "year": 2021,
+            "score": 62
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "volver-2006.json",
+      "title": "Volver",
+      "year": 2006,
+      "current": "Otras plataformas",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/volver",
+        "matchedTitle": "Volver",
+        "matchedYear": 2006,
+        "providers": [
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "mismatch",
+      "expected": "Apple TV"
+    },
+    {
+      "file": "yo-vi-al-diablo-2010.json",
+      "title": "Yo vi al diablo",
+      "year": 2010,
+      "current": "MUBI",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Yo%20vi%20al%20diablo",
+        "candidates": [
+          {
+            "title": "Encontré al diablo",
+            "year": 2010,
+            "score": 70
+          },
+          {
+            "title": "Hazme reír",
+            "year": 2009,
+            "score": 0
+          }
+        ]
+      },
+      "status": "unmatched"
+    }
+  ]
+}

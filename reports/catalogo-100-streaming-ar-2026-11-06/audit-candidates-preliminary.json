@@ -1,0 +1,2509 @@
+{
+  "baseRef": "main",
+  "root": "src/data/movies",
+  "candidates": [
+    "src/data/movies/2046-2004.json",
+    "src/data/movies/3-anuncios-por-un-crimen-2017.json",
+    "src/data/movies/500-dias-con-ella-2009.json",
+    "src/data/movies/academia-rushmore-1998.json",
+    "src/data/movies/air-force-one-el-avion-del-presidente-1997.json",
+    "src/data/movies/algo-pasa-con-mary-1998.json",
+    "src/data/movies/algunos-hombres-buenos-1992.json",
+    "src/data/movies/amigos-con-beneficios-2011.json",
+    "src/data/movies/amigos-intocables-2011.json",
+    "src/data/movies/amores-materialistas-2025.json",
+    "src/data/movies/anatomia-de-un-asesinato-1959.json",
+    "src/data/movies/animales-nocturnos-2016.json",
+    "src/data/movies/antes-del-atardecer-2004.json",
+    "src/data/movies/arma-letal-1987.json",
+    "src/data/movies/armageddon-1998.json",
+    "src/data/movies/atraccion-peligrosa-2010.json",
+    "src/data/movies/blitz-2024.json",
+    "src/data/movies/boda-sangrienta-2019.json",
+    "src/data/movies/brooklyn-2015.json",
+    "src/data/movies/calabozos-dragones-honor-entre-ladrones-2023.json",
+    "src/data/movies/chantaje-en-broadway-1957.json",
+    "src/data/movies/contra-lo-imposible-2019.json",
+    "src/data/movies/cronos-1993.json",
+    "src/data/movies/cuando-harry-encontro-a-sally-1989.json",
+    "src/data/movies/cuestion-de-tiempo-2013.json",
+    "src/data/movies/dia-de-la-independencia-1996.json",
+    "src/data/movies/doce-del-patibulo-1967.json",
+    "src/data/movies/el-arte-de-la-guerra-2013.json",
+    "src/data/movies/el-bar-de-las-grandes-esperanzas-2021.json",
+    "src/data/movies/el-buscavidas-1961.json",
+    "src/data/movies/el-club-de-los-poetas-muertos-1989.json",
+    "src/data/movies/el-codigo-enigma-2014.json",
+    "src/data/movies/el-coleccionista-de-huesos-1999.json",
+    "src/data/movies/el-esquema-fenicio-2025.json",
+    "src/data/movies/el-increible-castillo-vagabundo-2004.json",
+    "src/data/movies/el-juicio-de-los-7-de-chicago-2020.json",
+    "src/data/movies/el-mensajero-del-miedo-1962.json",
+    "src/data/movies/el-protegido-2000.json",
+    "src/data/movies/el-regreso-de-la-momia-2001.json",
+    "src/data/movies/el-sueno-de-walt-disney-2013.json",
+    "src/data/movies/el-ultimo-samurai-2003.json",
+    "src/data/movies/elf-2003.json",
+    "src/data/movies/en-busca-de-la-felicidad-2006.json",
+    "src/data/movies/en-la-linea-de-fuego-1993.json",
+    "src/data/movies/enemigo-publico-1998.json",
+    "src/data/movies/entre-copas-2004.json",
+    "src/data/movies/escuela-de-rock-2003.json",
+    "src/data/movies/finch-2021.json",
+    "src/data/movies/godzilla-minus-one-2023.json",
+    "src/data/movies/goldeneye-1995.json",
+    "src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json",
+    "src/data/movies/historias-cruzadas-2011.json",
+    "src/data/movies/hombres-de-negro-1997.json",
+    "src/data/movies/jojo-rabbit-2019.json",
+    "src/data/movies/jumanji-1995.json",
+    "src/data/movies/la-balada-de-buster-scruggs-2018.json",
+    "src/data/movies/la-busqueda-2004.json",
+    "src/data/movies/la-caza-del-octubre-rojo-1990.json",
+    "src/data/movies/la-chica-del-dragon-tatuado-2011.json",
+    "src/data/movies/la-excavacion-2021.json",
+    "src/data/movies/la-familia-addams-1991.json",
+    "src/data/movies/la-familia-addams-la-tradicion-continua-1993.json",
+    "src/data/movies/la-hija-oscura-2021.json",
+    "src/data/movies/la-increible-vida-de-walter-mitty-2013.json",
+    "src/data/movies/la-pantera-rosa-1963.json",
+    "src/data/movies/la-profecia-1976.json",
+    "src/data/movies/la-violencia-esta-en-nosotros-1972.json",
+    "src/data/movies/llegan-los-muppets-1979.json",
+    "src/data/movies/los-descendientes-2011.json",
+    "src/data/movies/los-ojos-de-tammy-faye-2021.json",
+    "src/data/movies/madres-paralelas-2021.json",
+    "src/data/movies/manchester-frente-al-mar-2016.json",
+    "src/data/movies/mank-2020.json",
+    "src/data/movies/mary-poppins-1964.json",
+    "src/data/movies/maxima-velocidad-1994.json",
+    "src/data/movies/mi-nombre-es-dolemite-2019.json",
+    "src/data/movies/mujercitas-2019.json",
+    "src/data/movies/nace-una-estrella-2018.json",
+    "src/data/movies/ni-idea-1995.json",
+    "src/data/movies/no-2012.json",
+    "src/data/movies/pelham-1-2-3-1974.json",
+    "src/data/movies/pequena-miss-sunshine-2006.json",
+    "src/data/movies/princesa-por-sorpresa-2001.json",
+    "src/data/movies/riesgo-en-el-aire-1997.json",
+    "src/data/movies/sed-de-mal-1958.json",
+    "src/data/movies/senales-2002.json",
+    "src/data/movies/senora-doubtfire-papa-de-por-vida-1993.json",
+    "src/data/movies/serpico-1973.json",
+    "src/data/movies/soy-leyenda-2007.json",
+    "src/data/movies/spy-game-juego-de-espias-2001.json",
+    "src/data/movies/terror-en-amityville-1979.json",
+    "src/data/movies/todo-sobre-mi-madre-1999.json",
+    "src/data/movies/un-amor-inseparable-2017.json",
+    "src/data/movies/un-lugar-en-silencio-parte-2-2021.json",
+    "src/data/movies/un-sueno-posible-2009.json",
+    "src/data/movies/volver-2006.json",
+    "src/data/movies/yesterday-2019.json",
+    "src/data/movies/yo-robot-2004.json",
+    "src/data/movies/yo-vi-al-diablo-2010.json"
+  ],
+  "posterVerification": {
+    "results": [
+      {
+        "filePath": "src/data/movies/2046-2004.json",
+        "poster": "assets/posters/2004/2046-2004.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x654, 52964 bytes.",
+        "bytes": 52964,
+        "format": "webp",
+        "width": 480,
+        "height": 654
+      },
+      {
+        "filePath": "src/data/movies/3-anuncios-por-un-crimen-2017.json",
+        "poster": "assets/posters/2017/3-anuncios-por-un-crimen-2017.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 31296 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 31296,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/500-dias-con-ella-2009.json",
+        "poster": "assets/posters/2009/500-dias-con-ella-2009.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 78478 bytes.",
+        "bytes": 78478,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/academia-rushmore-1998.json",
+        "poster": "assets/posters/1998/academia-rushmore-1998.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x714, 78690 bytes.",
+        "bytes": 78690,
+        "format": "webp",
+        "width": 480,
+        "height": 714
+      },
+      {
+        "filePath": "src/data/movies/air-force-one-el-avion-del-presidente-1997.json",
+        "poster": "assets/posters/1997/air-force-one-el-avion-del-presidente-1997.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x712, 70470 bytes.",
+        "bytes": 70470,
+        "format": "webp",
+        "width": 480,
+        "height": 712
+      },
+      {
+        "filePath": "src/data/movies/algo-pasa-con-mary-1998.json",
+        "poster": "assets/posters/1998/algo-pasa-con-mary-1998.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x712, 56568 bytes.",
+        "bytes": 56568,
+        "format": "webp",
+        "width": 480,
+        "height": 712
+      },
+      {
+        "filePath": "src/data/movies/algunos-hombres-buenos-1992.json",
+        "poster": "assets/posters/1992/algunos-hombres-buenos-1992.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 35094 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 35094,
+        "format": "webp",
+        "width": 480,
+        "height": 709
+      },
+      {
+        "filePath": "src/data/movies/amigos-con-beneficios-2011.json",
+        "poster": "assets/posters/2011/amigos-con-beneficios-2011.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x709, 52746 bytes.",
+        "bytes": 52746,
+        "format": "webp",
+        "width": 480,
+        "height": 709
+      },
+      {
+        "filePath": "src/data/movies/amigos-intocables-2011.json",
+        "poster": "assets/posters/2011/amigos-intocables-2011.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x688, 43628 bytes.",
+        "bytes": 43628,
+        "format": "webp",
+        "width": 480,
+        "height": 688
+      },
+      {
+        "filePath": "src/data/movies/amores-materialistas-2025.json",
+        "poster": "assets/posters/2025/amores-materialistas-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x600, 61298 bytes.",
+        "bytes": 61298,
+        "format": "webp",
+        "width": 480,
+        "height": 600
+      },
+      {
+        "filePath": "src/data/movies/anatomia-de-un-asesinato-1959.json",
+        "poster": "assets/posters/1959/anatomia-de-un-asesinato-1959.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 37142 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 37142,
+        "format": "webp",
+        "width": 466,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/animales-nocturnos-2016.json",
+        "poster": "assets/posters/2016/animales-nocturnos-2016.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 25312 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 25312,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/antes-del-atardecer-2004.json",
+        "poster": "assets/posters/2004/antes-del-atardecer-2004.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 35372 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 35372,
+        "format": "webp",
+        "width": 480,
+        "height": 709
+      },
+      {
+        "filePath": "src/data/movies/arma-letal-1987.json",
+        "poster": "assets/posters/1987/arma-letal-1987.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x716, 69802 bytes.",
+        "bytes": 69802,
+        "format": "webp",
+        "width": 480,
+        "height": 716
+      },
+      {
+        "filePath": "src/data/movies/armageddon-1998.json",
+        "poster": "assets/posters/1998/armageddon-1998.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 46732 bytes.",
+        "bytes": 46732,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/atraccion-peligrosa-2010.json",
+        "poster": "assets/posters/2010/atraccion-peligrosa-2010.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 70798 bytes.",
+        "bytes": 70798,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/blitz-2024.json",
+        "poster": "assets/posters/2024/blitz-2024.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 41936 bytes.",
+        "bytes": 41936,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/boda-sangrienta-2019.json",
+        "poster": "assets/posters/2019/boda-sangrienta-2019.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x716, 79732 bytes.",
+        "bytes": 79732,
+        "format": "webp",
+        "width": 480,
+        "height": 716
+      },
+      {
+        "filePath": "src/data/movies/brooklyn-2015.json",
+        "poster": "assets/posters/2015/brooklyn-2015.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 48574 bytes.",
+        "bytes": 48574,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/calabozos-dragones-honor-entre-ladrones-2023.json",
+        "poster": "assets/posters/2023/calabozos-dragones-honor-entre-ladrones-2023.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 76582 bytes.",
+        "bytes": 76582,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/chantaje-en-broadway-1957.json",
+        "poster": "assets/posters/1957/chantaje-en-broadway-1957.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 468x720, 59416 bytes.",
+        "bytes": 59416,
+        "format": "webp",
+        "width": 468,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/contra-lo-imposible-2019.json",
+        "poster": "assets/posters/2019/contra-lo-imposible-2019.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 42782 bytes.",
+        "bytes": 42782,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/cronos-1993.json",
+        "poster": "assets/posters/1993/cronos-1993.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 34696 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 34696,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/cuando-harry-encontro-a-sally-1989.json",
+        "poster": "assets/posters/1989/cuando-harry-encontro-a-sally-1989.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 47686 bytes.",
+        "bytes": 47686,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/cuestion-de-tiempo-2013.json",
+        "poster": "assets/posters/2013/cuestion-de-tiempo-2013.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 64838 bytes.",
+        "bytes": 64838,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/dia-de-la-independencia-1996.json",
+        "poster": "assets/posters/1996/dia-de-la-independencia-1996.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x712, 74802 bytes.",
+        "bytes": 74802,
+        "format": "webp",
+        "width": 480,
+        "height": 712
+      },
+      {
+        "filePath": "src/data/movies/doce-del-patibulo-1967.json",
+        "poster": "assets/posters/1967/doce-del-patibulo-1967.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 80466 bytes.",
+        "bytes": 80466,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-arte-de-la-guerra-2013.json",
+        "poster": "assets/posters/2013/el-arte-de-la-guerra-2013.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 29862 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 29862,
+        "format": "webp",
+        "width": 480,
+        "height": 710
+      },
+      {
+        "filePath": "src/data/movies/el-bar-de-las-grandes-esperanzas-2021.json",
+        "poster": "assets/posters/2021/el-bar-de-las-grandes-esperanzas-2021.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 53838 bytes.",
+        "bytes": 53838,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/el-buscavidas-1961.json",
+        "poster": "assets/posters/1961/el-buscavidas-1961.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 463x720, 43540 bytes.",
+        "bytes": 43540,
+        "format": "webp",
+        "width": 463,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-club-de-los-poetas-muertos-1989.json",
+        "poster": "assets/posters/1989/el-club-de-los-poetas-muertos-1989.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x709, 43960 bytes.",
+        "bytes": 43960,
+        "format": "webp",
+        "width": 480,
+        "height": 709
+      },
+      {
+        "filePath": "src/data/movies/el-codigo-enigma-2014.json",
+        "poster": "assets/posters/2014/el-codigo-enigma-2014.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x706, 54926 bytes.",
+        "bytes": 54926,
+        "format": "webp",
+        "width": 480,
+        "height": 706
+      },
+      {
+        "filePath": "src/data/movies/el-coleccionista-de-huesos-1999.json",
+        "poster": "assets/posters/1999/el-coleccionista-de-huesos-1999.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 32508 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 32508,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-esquema-fenicio-2025.json",
+        "poster": "assets/posters/2025/el-esquema-fenicio-2025.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 461x720, 50826 bytes.",
+        "bytes": 50826,
+        "format": "webp",
+        "width": 461,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-increible-castillo-vagabundo-2004.json",
+        "poster": "assets/posters/2004/el-increible-castillo-vagabundo-2004.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x712, 63012 bytes.",
+        "bytes": 63012,
+        "format": "webp",
+        "width": 480,
+        "height": 712
+      },
+      {
+        "filePath": "src/data/movies/el-juicio-de-los-7-de-chicago-2020.json",
+        "poster": "assets/posters/2020/el-juicio-de-los-7-de-chicago-2020.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 79154 bytes.",
+        "bytes": 79154,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/el-mensajero-del-miedo-1962.json",
+        "poster": "assets/posters/1962/el-mensajero-del-miedo-1962.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 459x720, 63466 bytes.",
+        "bytes": 63466,
+        "format": "webp",
+        "width": 459,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-protegido-2000.json",
+        "poster": "assets/posters/2000/el-protegido-2000.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 36390 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 36390,
+        "format": "webp",
+        "width": 480,
+        "height": 710
+      },
+      {
+        "filePath": "src/data/movies/el-regreso-de-la-momia-2001.json",
+        "poster": "assets/posters/2001/el-regreso-de-la-momia-2001.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 64644 bytes.",
+        "bytes": 64644,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/el-sueno-de-walt-disney-2013.json",
+        "poster": "assets/posters/2013/el-sueno-de-walt-disney-2013.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 22750 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 22750,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/el-ultimo-samurai-2003.json",
+        "poster": "assets/posters/2003/el-ultimo-samurai-2003.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 65396 bytes.",
+        "bytes": 65396,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/elf-2003.json",
+        "poster": "assets/posters/2003/elf-2003.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 32774 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 32774,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/en-busca-de-la-felicidad-2006.json",
+        "poster": "assets/posters/2006/en-busca-de-la-felicidad-2006.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 38302 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 38302,
+        "format": "webp",
+        "width": 480,
+        "height": 714
+      },
+      {
+        "filePath": "src/data/movies/en-la-linea-de-fuego-1993.json",
+        "poster": "assets/posters/1993/en-la-linea-de-fuego-1993.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x715, 51582 bytes.",
+        "bytes": 51582,
+        "format": "webp",
+        "width": 480,
+        "height": 715
+      },
+      {
+        "filePath": "src/data/movies/enemigo-publico-1998.json",
+        "poster": "assets/posters/1998/enemigo-publico-1998.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 79300 bytes.",
+        "bytes": 79300,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/entre-copas-2004.json",
+        "poster": "assets/posters/2004/entre-copas-2004.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 35610 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 35610,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/escuela-de-rock-2003.json",
+        "poster": "assets/posters/2003/escuela-de-rock-2003.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 478x720, 77446 bytes.",
+        "bytes": 77446,
+        "format": "webp",
+        "width": 478,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/finch-2021.json",
+        "poster": "assets/posters/2021/finch-2021.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 62568 bytes.",
+        "bytes": 62568,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/godzilla-minus-one-2023.json",
+        "poster": "assets/posters/2023/godzilla-minus-one-2023.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 47124 bytes.",
+        "bytes": 47124,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/goldeneye-1995.json",
+        "poster": "assets/posters/1995/goldeneye-1995.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x712, 65536 bytes.",
+        "bytes": 65536,
+        "format": "webp",
+        "width": 480,
+        "height": 712
+      },
+      {
+        "filePath": "src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json",
+        "poster": "assets/posters/2020/greyhound-en-la-mira-del-enemigo-2020.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 39460 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 39460,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/historias-cruzadas-2011.json",
+        "poster": "assets/posters/2011/historias-cruzadas-2011.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 54132 bytes.",
+        "bytes": 54132,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/hombres-de-negro-1997.json",
+        "poster": "assets/posters/1997/hombres-de-negro-1997.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 77332 bytes.",
+        "bytes": 77332,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/jojo-rabbit-2019.json",
+        "poster": "assets/posters/2019/jojo-rabbit-2019.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 78710 bytes.",
+        "bytes": 78710,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/jumanji-1995.json",
+        "poster": "assets/posters/1995/jumanji-1995.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 79780 bytes.",
+        "bytes": 79780,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-balada-de-buster-scruggs-2018.json",
+        "poster": "assets/posters/2018/la-balada-de-buster-scruggs-2018.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x674, 62076 bytes.",
+        "bytes": 62076,
+        "format": "webp",
+        "width": 480,
+        "height": 674
+      },
+      {
+        "filePath": "src/data/movies/la-busqueda-2004.json",
+        "poster": "assets/posters/2004/la-busqueda-2004.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 71698 bytes.",
+        "bytes": 71698,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/la-caza-del-octubre-rojo-1990.json",
+        "poster": "assets/posters/1990/la-caza-del-octubre-rojo-1990.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x715, 46232 bytes.",
+        "bytes": 46232,
+        "format": "webp",
+        "width": 480,
+        "height": 715
+      },
+      {
+        "filePath": "src/data/movies/la-chica-del-dragon-tatuado-2011.json",
+        "poster": "assets/posters/2011/la-chica-del-dragon-tatuado-2011.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 18916 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 18916,
+        "format": "webp",
+        "width": 479,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-excavacion-2021.json",
+        "poster": "assets/posters/2021/la-excavacion-2021.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 62260 bytes.",
+        "bytes": 62260,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/la-familia-addams-1991.json",
+        "poster": "assets/posters/1991/la-familia-addams-1991.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x714, 60034 bytes.",
+        "bytes": 60034,
+        "format": "webp",
+        "width": 480,
+        "height": 714
+      },
+      {
+        "filePath": "src/data/movies/la-familia-addams-la-tradicion-continua-1993.json",
+        "poster": "assets/posters/1993/la-familia-addams-la-tradicion-continua-1993.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x710, 64434 bytes.",
+        "bytes": 64434,
+        "format": "webp",
+        "width": 480,
+        "height": 710
+      },
+      {
+        "filePath": "src/data/movies/la-hija-oscura-2021.json",
+        "poster": "assets/posters/2021/la-hija-oscura-2021.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 37008 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 37008,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/la-increible-vida-de-walter-mitty-2013.json",
+        "poster": "assets/posters/2013/la-increible-vida-de-walter-mitty-2013.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 75088 bytes.",
+        "bytes": 75088,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-pantera-rosa-1963.json",
+        "poster": "assets/posters/1963/la-pantera-rosa-1963.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 457x720, 57710 bytes.",
+        "bytes": 57710,
+        "format": "webp",
+        "width": 457,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-profecia-1976.json",
+        "poster": "assets/posters/1976/la-profecia-1976.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 478x720, 45964 bytes.",
+        "bytes": 45964,
+        "format": "webp",
+        "width": 478,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/la-violencia-esta-en-nosotros-1972.json",
+        "poster": "assets/posters/1972/la-violencia-esta-en-nosotros-1972.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 478x720, 55128 bytes.",
+        "bytes": 55128,
+        "format": "webp",
+        "width": 478,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/llegan-los-muppets-1979.json",
+        "poster": "assets/posters/1979/llegan-los-muppets-1979.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 473x720, 75082 bytes.",
+        "bytes": 75082,
+        "format": "webp",
+        "width": 473,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/los-descendientes-2011.json",
+        "poster": "assets/posters/2011/los-descendientes-2011.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 40814 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 40814,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/los-ojos-de-tammy-faye-2021.json",
+        "poster": "assets/posters/2021/los-ojos-de-tammy-faye-2021.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x719, 78910 bytes.",
+        "bytes": 78910,
+        "format": "webp",
+        "width": 480,
+        "height": 719
+      },
+      {
+        "filePath": "src/data/movies/madres-paralelas-2021.json",
+        "poster": "assets/posters/2021/madres-paralelas-2021.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 63806 bytes.",
+        "bytes": 63806,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/manchester-frente-al-mar-2016.json",
+        "poster": "assets/posters/2016/manchester-frente-al-mar-2016.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 44206 bytes.",
+        "bytes": 44206,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/mank-2020.json",
+        "poster": "assets/posters/2020/mank-2020.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 58394 bytes.",
+        "bytes": 58394,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/mary-poppins-1964.json",
+        "poster": "assets/posters/1964/mary-poppins-1964.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 476x720, 73428 bytes.",
+        "bytes": 73428,
+        "format": "webp",
+        "width": 476,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/maxima-velocidad-1994.json",
+        "poster": "assets/posters/1994/maxima-velocidad-1994.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x714, 77800 bytes.",
+        "bytes": 77800,
+        "format": "webp",
+        "width": 480,
+        "height": 714
+      },
+      {
+        "filePath": "src/data/movies/mi-nombre-es-dolemite-2019.json",
+        "poster": "assets/posters/2019/mi-nombre-es-dolemite-2019.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 54302 bytes.",
+        "bytes": 54302,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/mujercitas-2019.json",
+        "poster": "assets/posters/2019/mujercitas-2019.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 59716 bytes.",
+        "bytes": 59716,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/nace-una-estrella-2018.json",
+        "poster": "assets/posters/2018/nace-una-estrella-2018.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 43454 bytes.",
+        "bytes": 43454,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/ni-idea-1995.json",
+        "poster": "assets/posters/1995/ni-idea-1995.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x707, 61470 bytes.",
+        "bytes": 61470,
+        "format": "webp",
+        "width": 480,
+        "height": 707
+      },
+      {
+        "filePath": "src/data/movies/no-2012.json",
+        "poster": "assets/posters/2012/no-2012.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x686, 50942 bytes.",
+        "bytes": 50942,
+        "format": "webp",
+        "width": 480,
+        "height": 686
+      },
+      {
+        "filePath": "src/data/movies/pelham-1-2-3-1974.json",
+        "poster": "assets/posters/1974/pelham-1-2-3-1974.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 476x720, 79446 bytes.",
+        "bytes": 79446,
+        "format": "webp",
+        "width": 476,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/pequena-miss-sunshine-2006.json",
+        "poster": "assets/posters/2006/pequena-miss-sunshine-2006.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 35404 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 35404,
+        "format": "webp",
+        "width": 453,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/princesa-por-sorpresa-2001.json",
+        "poster": "assets/posters/2001/princesa-por-sorpresa-2001.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x713, 77422 bytes.",
+        "bytes": 77422,
+        "format": "webp",
+        "width": 480,
+        "height": 713
+      },
+      {
+        "filePath": "src/data/movies/riesgo-en-el-aire-1997.json",
+        "poster": "assets/posters/1997/riesgo-en-el-aire-1997.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x707, 70256 bytes.",
+        "bytes": 70256,
+        "format": "webp",
+        "width": 480,
+        "height": 707
+      },
+      {
+        "filePath": "src/data/movies/sed-de-mal-1958.json",
+        "poster": "assets/posters/1958/sed-de-mal-1958.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 468x720, 77848 bytes.",
+        "bytes": 77848,
+        "format": "webp",
+        "width": 468,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/senales-2002.json",
+        "poster": "assets/posters/2002/senales-2002.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x712, 71138 bytes.",
+        "bytes": 71138,
+        "format": "webp",
+        "width": 480,
+        "height": 712
+      },
+      {
+        "filePath": "src/data/movies/senora-doubtfire-papa-de-por-vida-1993.json",
+        "poster": "assets/posters/1993/senora-doubtfire-papa-de-por-vida-1993.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x718, 52726 bytes.",
+        "bytes": 52726,
+        "format": "webp",
+        "width": 480,
+        "height": 718
+      },
+      {
+        "filePath": "src/data/movies/serpico-1973.json",
+        "poster": "assets/posters/1973/serpico-1973.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 73882 bytes.",
+        "bytes": 73882,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/soy-leyenda-2007.json",
+        "poster": "assets/posters/2007/soy-leyenda-2007.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 31538 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 31538,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/spy-game-juego-de-espias-2001.json",
+        "poster": "assets/posters/2001/spy-game-juego-de-espias-2001.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x708, 59802 bytes.",
+        "bytes": 59802,
+        "format": "webp",
+        "width": 480,
+        "height": 708
+      },
+      {
+        "filePath": "src/data/movies/terror-en-amityville-1979.json",
+        "poster": "assets/posters/1979/terror-en-amityville-1979.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 475x720, 60194 bytes.",
+        "bytes": 60194,
+        "format": "webp",
+        "width": 475,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/todo-sobre-mi-madre-1999.json",
+        "poster": "assets/posters/1999/todo-sobre-mi-madre-1999.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x688, 64176 bytes.",
+        "bytes": 64176,
+        "format": "webp",
+        "width": 480,
+        "height": 688
+      },
+      {
+        "filePath": "src/data/movies/un-amor-inseparable-2017.json",
+        "poster": "assets/posters/2017/un-amor-inseparable-2017.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 67318 bytes.",
+        "bytes": 67318,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/un-lugar-en-silencio-parte-2-2021.json",
+        "poster": "assets/posters/2021/un-lugar-en-silencio-parte-2-2021.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 46206 bytes.",
+        "bytes": 46206,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/un-sueno-posible-2009.json",
+        "poster": "assets/posters/2009/un-sueno-posible-2009.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x709, 70736 bytes.",
+        "bytes": 70736,
+        "format": "webp",
+        "width": 480,
+        "height": 709
+      },
+      {
+        "filePath": "src/data/movies/volver-2006.json",
+        "poster": "assets/posters/2006/volver-2006.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x720, 59062 bytes.",
+        "bytes": 59062,
+        "format": "webp",
+        "width": 480,
+        "height": 720
+      },
+      {
+        "filePath": "src/data/movies/yesterday-2019.json",
+        "poster": "assets/posters/2019/yesterday-2019.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 54674 bytes.",
+        "bytes": 54674,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      },
+      {
+        "filePath": "src/data/movies/yo-robot-2004.json",
+        "poster": "assets/posters/2004/yo-robot-2004.webp",
+        "ok": true,
+        "severity": "warn",
+        "code": "poster-outside-target-size",
+        "message": "poster is valid at 25478 bytes; preferred range is 40960-81920 bytes.",
+        "bytes": 25478,
+        "format": "webp",
+        "width": 480,
+        "height": 714
+      },
+      {
+        "filePath": "src/data/movies/yo-vi-al-diablo-2010.json",
+        "poster": "assets/posters/2010/yo-vi-al-diablo-2010.webp",
+        "ok": true,
+        "severity": "pass",
+        "code": "poster-ok",
+        "message": "local poster verified at 480x711, 47826 bytes.",
+        "bytes": 47826,
+        "format": "webp",
+        "width": 480,
+        "height": 711
+      }
+    ],
+    "summary": {
+      "total": 99,
+      "passed": 79,
+      "warnings": 20,
+      "errors": 0
+    }
+  },
+  "editorialAudit": {
+    "status": "error",
+    "message": "ten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\algo-pasa-con-mary-1998.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\antes-del-atardecer-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\arma-letal-1987.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\armageddon-1998.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\cuando-harry-encontro-a-sally-1989.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\dia-de-la-independencia-1996.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\el-club-de-los-poetas-muertos-1989.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\el-increible-castillo-vagabundo-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\el-protegido-2000.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\entre-copas-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\goldeneye-1995.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\hombres-de-negro-1997.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\la-busqueda-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\princesa-por-sorpresa-2001.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\senales-2002.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\senora-doubtfire-papa-de-por-vida-1993.json"
+  },
+  "findings": [
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/2046-2004.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/3-anuncios-por-un-crimen-2017.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/500-dias-con-ella-2009.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "error",
+      "code": "missing-explicit-subgenre",
+      "file": "src/data/movies/academia-rushmore-1998.json",
+      "message": "Recognized subgenre \"Coming of Age\" appears in category/genres but is missing from subgenres. Mirror it explicitly so the home subgenre filter and future loads stay consistent."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/academia-rushmore-1998.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/air-force-one-el-avion-del-presidente-1997.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/air-force-one-el-avion-del-presidente-1997.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/algo-pasa-con-mary-1998.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/algunos-hombres-buenos-1992.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/amigos-con-beneficios-2011.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "editorial-overlap",
+      "file": "src/data/movies/amigos-intocables-2011.json",
+      "message": "editorial.becauseYouLiked and editorial.related repeat: coda-2021."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/amigos-intocables-2011.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/amigos-intocables-2011.json",
+      "message": "\"Omar Sy\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/amores-materialistas-2025.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/anatomia-de-un-asesinato-1959.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/animales-nocturnos-2016.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/animales-nocturnos-2016.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/animales-nocturnos-2016.json",
+      "message": "\"Tom Ford\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/antes-del-atardecer-2004.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/arma-letal-1987.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/armageddon-1998.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/atraccion-peligrosa-2010.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/atraccion-peligrosa-2010.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/blitz-2024.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/blitz-2024.json",
+      "message": "\"Elliott Heffernan\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/boda-sangrienta-2019.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/boda-sangrienta-2019.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/brooklyn-2015.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/brooklyn-2015.json",
+      "message": "\"John Crowley\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/brooklyn-2015.json",
+      "message": "\"Emory Cohen\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/calabozos-dragones-honor-entre-ladrones-2023.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/calabozos-dragones-honor-entre-ladrones-2023.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/calabozos-dragones-honor-entre-ladrones-2023.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/chantaje-en-broadway-1957.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/contra-lo-imposible-2019.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/contra-lo-imposible-2019.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/cronos-1993.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/cronos-1993.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "error",
+      "code": "missing-explicit-subgenre",
+      "file": "src/data/movies/cuando-harry-encontro-a-sally-1989.json",
+      "message": "Recognized subgenre \"RomCom\" appears in category/genres but is missing from subgenres. Mirror it explicitly so the home subgenre filter and future loads stay consistent."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/cuando-harry-encontro-a-sally-1989.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/cuestion-de-tiempo-2013.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/cuestion-de-tiempo-2013.json",
+      "message": "\"Richard Curtis\" uses an uncommon portrait host (\"upload.wikimedia.org\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/dia-de-la-independencia-1996.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/doce-del-patibulo-1967.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/doce-del-patibulo-1967.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/el-arte-de-la-guerra-2013.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-arte-de-la-guerra-2013.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-bar-de-las-grandes-esperanzas-2021.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-buscavidas-1961.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "error",
+      "code": "missing-explicit-subgenre",
+      "file": "src/data/movies/el-club-de-los-poetas-muertos-1989.json",
+      "message": "Recognized subgenre \"Coming of Age\" appears in category/genres but is missing from subgenres. Mirror it explicitly so the home subgenre filter and future loads stay consistent."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-club-de-los-poetas-muertos-1989.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-codigo-enigma-2014.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/el-codigo-enigma-2014.json",
+      "message": "\"Morten Tyldum\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/el-coleccionista-de-huesos-1999.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-coleccionista-de-huesos-1999.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/el-esquema-fenicio-2025.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-esquema-fenicio-2025.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/el-increible-castillo-vagabundo-2004.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-increible-castillo-vagabundo-2004.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-juicio-de-los-7-de-chicago-2020.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/el-mensajero-del-miedo-1962.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-mensajero-del-miedo-1962.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/el-protegido-2000.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-protegido-2000.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/el-regreso-de-la-momia-2001.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-regreso-de-la-momia-2001.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-sueno-de-walt-disney-2013.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/el-ultimo-samurai-2003.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/el-ultimo-samurai-2003.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/elf-2003.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/en-busca-de-la-felicidad-2006.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/en-busca-de-la-felicidad-2006.json",
+      "message": "\"Gabriele Muccino\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/en-busca-de-la-felicidad-2006.json",
+      "message": "\"Jaden Smith\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/en-la-linea-de-fuego-1993.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/en-la-linea-de-fuego-1993.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/en-la-linea-de-fuego-1993.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/enemigo-publico-1998.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/enemigo-publico-1998.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/entre-copas-2004.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/escuela-de-rock-2003.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/finch-2021.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/finch-2021.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/finch-2021.json",
+      "message": "\"Miguel Sapochnik\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/godzilla-minus-one-2023.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/godzilla-minus-one-2023.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/godzilla-minus-one-2023.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "error",
+      "code": "unknown-editorial-slug",
+      "file": "src/data/movies/goldeneye-1995.json",
+      "message": "editorial.related[3] references unknown slug \"national-treasure-2004\"."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/goldeneye-1995.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json",
+      "message": "\"Aaron Schneider\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/historias-cruzadas-2011.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/historias-cruzadas-2011.json",
+      "message": "\"Tate Taylor\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/hombres-de-negro-1997.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/hombres-de-negro-1997.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/hombres-de-negro-1997.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "war-filter-review-needed",
+      "file": "src/data/movies/jojo-rabbit-2019.json",
+      "message": "This entry uses a broad Guerra/war taxonomy without \"Bélica\". Decide explicitly whether the conflict is central enough for the home filter; context-only films should remain excluded."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/jojo-rabbit-2019.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/jumanji-1995.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/la-balada-de-buster-scruggs-2018.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-balada-de-buster-scruggs-2018.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/la-busqueda-2004.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-busqueda-2004.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-caza-del-octubre-rojo-1990.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/la-chica-del-dragon-tatuado-2011.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-chica-del-dragon-tatuado-2011.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-excavacion-2021.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/la-excavacion-2021.json",
+      "message": "\"Simon Stone\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/la-excavacion-2021.json",
+      "message": "\"Lily James\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/la-excavacion-2021.json",
+      "message": "\"Lily James\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/la-familia-addams-1991.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-familia-addams-1991.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/la-familia-addams-la-tradicion-continua-1993.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-familia-addams-la-tradicion-continua-1993.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-hija-oscura-2021.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/la-increible-vida-de-walter-mitty-2013.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-increible-vida-de-walter-mitty-2013.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-pantera-rosa-1963.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-profecia-1976.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/la-violencia-esta-en-nosotros-1972.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/la-violencia-esta-en-nosotros-1972.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/llegan-los-muppets-1979.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/los-descendientes-2011.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/los-descendientes-2011.json",
+      "message": "\"Amara Miller\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/los-ojos-de-tammy-faye-2021.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/madres-paralelas-2021.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/madres-paralelas-2021.json",
+      "message": "\"Milena Smit\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/manchester-frente-al-mar-2016.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/manchester-frente-al-mar-2016.json",
+      "message": "\"Kenneth Lonergan\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/mank-2020.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/mank-2020.json",
+      "message": "\"Lily Collins\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-comedy-meter-hidden",
+      "file": "src/data/movies/mary-poppins-1964.json",
+      "message": "Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category \"Comedia\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/mary-poppins-1964.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/maxima-velocidad-1994.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/mi-nombre-es-dolemite-2019.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/mujercitas-2019.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/nace-una-estrella-2018.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/ni-idea-1995.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/no-2012.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/pelham-1-2-3-1974.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/pequena-miss-sunshine-2006.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/pequena-miss-sunshine-2006.json",
+      "message": "\"Jonathan Dayton\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/pequena-miss-sunshine-2006.json",
+      "message": "\"Valerie Faris\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/pequena-miss-sunshine-2006.json",
+      "message": "\"Abigail Breslin\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "error",
+      "code": "missing-explicit-subgenre",
+      "file": "src/data/movies/princesa-por-sorpresa-2001.json",
+      "message": "Recognized subgenre \"Coming of Age\" appears in category/genres but is missing from subgenres. Mirror it explicitly so the home subgenre filter and future loads stay consistent."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/princesa-por-sorpresa-2001.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/riesgo-en-el-aire-1997.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/sed-de-mal-1958.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/sed-de-mal-1958.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/senales-2002.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/senales-2002.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/senora-doubtfire-papa-de-por-vida-1993.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/serpico-1973.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/soy-leyenda-2007.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/soy-leyenda-2007.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/soy-leyenda-2007.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/spy-game-juego-de-espias-2001.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-tear-meter-hidden",
+      "file": "src/data/movies/terror-en-amityville-1979.json",
+      "message": "Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/terror-en-amityville-1979.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/todo-sobre-mi-madre-1999.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/un-amor-inseparable-2017.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/un-lugar-en-silencio-parte-2-2021.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/un-sueno-posible-2009.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/un-sueno-posible-2009.json",
+      "message": "\"Quinton Aaron\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/un-sueno-posible-2009.json",
+      "message": "\"Tim McGraw\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/volver-2006.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/yesterday-2019.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/yesterday-2019.json",
+      "message": "\"Lily James\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/yesterday-2019.json",
+      "message": "\"Lily James\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-entry",
+      "file": "src/data/movies/yesterday-2019.json",
+      "message": "\"Ed Sheeran\" has no safe person profile; keep the verified movie credit without creating a partial entry in src/data/people.json."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/yo-robot-2004.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/yo-robot-2004.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-horror-meter-hidden",
+      "file": "src/data/movies/yo-vi-al-diablo-2010.json",
+      "message": "Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category \"Terror\" activates it."
+    },
+    {
+      "severity": "info",
+      "code": "secondary-action-meter-hidden",
+      "file": "src/data/movies/yo-vi-al-diablo-2010.json",
+      "message": "Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category \"Accion\"/\"Acción\" activates it."
+    },
+    {
+      "severity": "warn",
+      "code": "catalog-sync",
+      "file": "src/data/movies/yo-vi-al-diablo-2010.json",
+      "message": "Movie row was not found in docs/movie-catalog-reference.md."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-birth",
+      "file": "src/data/movies/yo-vi-al-diablo-2010.json",
+      "message": "\"Kim Jee-woon\" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-nationality",
+      "file": "src/data/movies/yo-vi-al-diablo-2010.json",
+      "message": "\"Kim Jee-woon\" has no verified public nationality; leave nationalityPrimary absent rather than infer it."
+    },
+    {
+      "severity": "warn",
+      "code": "untrusted-person-image-source",
+      "file": "src/data/movies/yo-vi-al-diablo-2010.json",
+      "message": "\"Kim Jee-woon\" uses an uncommon portrait host (\"kobis.or.kr\"). Verify that the cached image is a real actor/director headshot."
+    },
+    {
+      "severity": "warn",
+      "code": "missing-person-trace-url",
+      "file": "src/data/movies/yo-vi-al-diablo-2010.json",
+      "message": "\"Kim Jee-woon\" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar)."
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/3-anuncios-por-un-crimen-2017.json",
+      "message": "poster is valid at 31296 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/algunos-hombres-buenos-1992.json",
+      "message": "poster is valid at 35094 bytes; preferred range is 40960-81920 bytes. (480x709)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/anatomia-de-un-asesinato-1959.json",
+      "message": "poster is valid at 37142 bytes; preferred range is 40960-81920 bytes. (466x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/animales-nocturnos-2016.json",
+      "message": "poster is valid at 25312 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/antes-del-atardecer-2004.json",
+      "message": "poster is valid at 35372 bytes; preferred range is 40960-81920 bytes. (480x709)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/cronos-1993.json",
+      "message": "poster is valid at 34696 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/el-arte-de-la-guerra-2013.json",
+      "message": "poster is valid at 29862 bytes; preferred range is 40960-81920 bytes. (480x710)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/el-coleccionista-de-huesos-1999.json",
+      "message": "poster is valid at 32508 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/el-protegido-2000.json",
+      "message": "poster is valid at 36390 bytes; preferred range is 40960-81920 bytes. (480x710)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/el-sueno-de-walt-disney-2013.json",
+      "message": "poster is valid at 22750 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/elf-2003.json",
+      "message": "poster is valid at 32774 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/en-busca-de-la-felicidad-2006.json",
+      "message": "poster is valid at 38302 bytes; preferred range is 40960-81920 bytes. (480x714)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/entre-copas-2004.json",
+      "message": "poster is valid at 35610 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json",
+      "message": "poster is valid at 39460 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/la-chica-del-dragon-tatuado-2011.json",
+      "message": "poster is valid at 18916 bytes; preferred range is 40960-81920 bytes. (479x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/la-hija-oscura-2021.json",
+      "message": "poster is valid at 37008 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/los-descendientes-2011.json",
+      "message": "poster is valid at 40814 bytes; preferred range is 40960-81920 bytes. (480x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/pequena-miss-sunshine-2006.json",
+      "message": "poster is valid at 35404 bytes; preferred range is 40960-81920 bytes. (453x720)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/soy-leyenda-2007.json",
+      "message": "poster is valid at 31538 bytes; preferred range is 40960-81920 bytes. (480x711)"
+    },
+    {
+      "severity": "warn",
+      "code": "poster-outside-target-size",
+      "file": "src/data/movies/yo-robot-2004.json",
+      "message": "poster is valid at 25478 bytes; preferred range is 40960-81920 bytes. (480x714)"
+    },
+    {
+      "severity": "error",
+      "code": "review-audit",
+      "file": "batch",
+      "message": "ten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\algo-pasa-con-mary-1998.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\antes-del-atardecer-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\arma-letal-1987.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\armageddon-1998.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\cuando-harry-encontro-a-sally-1989.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\dia-de-la-independencia-1996.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\el-club-de-los-poetas-muertos-1989.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\el-increible-castillo-vagabundo-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\el-protegido-2000.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\entre-copas-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\goldeneye-1995.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\hombres-de-negro-1997.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\la-busqueda-2004.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\princesa-por-sorpresa-2001.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\senales-2002.json\nten-second take lacks film-specific anchors :: 1/2 :: C:\\WebsitePeliculas\\src\\data\\movies\\senora-doubtfire-papa-de-por-vida-1993.json"
+    }
+  ]
+}

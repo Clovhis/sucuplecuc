@@ -1,0 +1,41 @@
+{
+  "reportType": "regional_title_and_metadata_correction",
+  "checkedAt": "2026-11-06",
+  "candidate": {
+    "year": 2004,
+    "originalTitle": "National Treasure",
+    "slug": "la-leyenda-del-tesoro-perdido-2004",
+    "file": "C:\\WebsitePeliculas\\src\\data\\movies\\la-leyenda-del-tesoro-perdido-2004.json"
+  },
+  "correction": {
+    "oldTitle": "La búsqueda",
+    "oldSlug": "la-busqueda-2004",
+    "newTitle": "La leyenda del tesoro perdido",
+    "newSlug": "la-leyenda-del-tesoro-perdido-2004",
+    "reason": "Argentina-specific distributor catalog confirms the local title."
+  },
+  "sources": {
+    "argentinaStreamingTitleAndAvailability": {
+      "url": "https://www.disneyplus.com/es-ar/browse/entity-032c0081-20a9-4b24-a7ad-a3703d8dcef6",
+      "evidence": "Disney+ Argentina lists La leyenda del tesoro perdido, 2004, and requires a subscription."
+    },
+    "justwatchArOffer": {
+      "url": "https://www.justwatch.com/ar/pelicula/la-busqueda-national-treasure",
+      "evidence": "Existing Argentina availability API response reported Disney Plus FLATRATE; title normalized here from the Argentina Disney+ page."
+    },
+    "argentinaTheatricalTitleDateAndRating": {
+      "url": "https://www.cinesargentinos.com.ar/pelicula/1741-la-leyenda-del-tesoro-perdido/",
+      "evidence": "Cines Argentinos lists the local title, 25 May 2005 release, and rating Apta mayores de 13 años; catalog rating normalized to +13."
+    },
+    "scheduledDateAnnouncement": {
+      "url": "https://www.elterritorio.com.ar/noticias/2005/01/06/26210-la-leyenda-del-tesoro",
+      "evidence": "A 6 January 2005 article announced a 20 January opening. The catalog retains the recorded Argentina release date shown by Cines Argentinos."
+    }
+  },
+  "trailer": {
+    "previousYoutubeId": "vqUPxNT8ioA",
+    "previousValidation": "oEmbed HTTP 404",
+    "disposition": "removed_after_research_found_no_live_title-matched_authoritative_YouTube_upload"
+  },
+  "referencesUpdatedInCandidateMovies": 2
+}

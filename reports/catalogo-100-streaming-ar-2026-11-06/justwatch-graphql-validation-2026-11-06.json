@@ -1,0 +1,2311 @@
+{
+  "auditDate": "2026-11-06",
+  "checked": 99,
+  "summary": {
+    "verified": 79,
+    "mismatch": 2,
+    "manual-required": 0,
+    "unmatched": 18,
+    "error": 0
+  },
+  "results": [
+    {
+      "file": "2046-2004.json",
+      "title": "2046",
+      "year": 2004,
+      "current": "MUBI",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/2046",
+        "matchedTitle": "2046",
+        "matchedYear": 2004,
+        "providers": [
+          {
+            "provider": "MUBI",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "3-anuncios-por-un-crimen-2017.json",
+      "title": "3 anuncios por un crimen",
+      "year": 2017,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Three%20Billboards%20Outside%20Ebbing%2C%20Missouri",
+        "candidates": [
+          {
+            "title": "Tres anuncios en las afueras",
+            "year": 2017,
+            "score": 46
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "500-dias-con-ella-2009.json",
+      "title": "500 días con ella",
+      "year": 2009,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=500%20Days%20of%20Summer",
+        "candidates": [
+          {
+            "title": "(500) días juntos",
+            "year": 2009,
+            "score": 70
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "academia-rushmore-1998.json",
+      "title": "Academia Rushmore",
+      "year": 1998,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/academia-rushmore",
+        "matchedTitle": "Academia Rushmore",
+        "matchedYear": 1998,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "air-force-one-el-avion-del-presidente-1997.json",
+      "title": "Air Force One (El avión del presidente)",
+      "year": 1997,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/air-force-one-el-avion-del-presidente",
+        "matchedTitle": "Air Force One (El avión del presidente)",
+        "matchedYear": 1997,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "algo-pasa-con-mary-1998.json",
+      "title": "Algo pasa con Mary",
+      "year": 1998,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/algo-pasa-con-mary",
+        "matchedTitle": "Algo pasa con Mary",
+        "matchedYear": 1998,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "algunos-hombres-buenos-1992.json",
+      "title": "Algunos hombres buenos",
+      "year": 1992,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/algunos-hombres-buenos",
+        "matchedTitle": "Algunos hombres buenos",
+        "matchedYear": 1992,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "amigos-con-beneficios-2011.json",
+      "title": "Amigos con beneficios",
+      "year": 2011,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/friends-with-benefits",
+        "matchedTitle": "Friends (With Benefits)",
+        "matchedYear": 2010,
+        "providers": []
+      },
+      "status": "mismatch",
+      "expected": "Otras plataformas"
+    },
+    {
+      "file": "amigos-intocables-2011.json",
+      "title": "Amigos intocables",
+      "year": 2011,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/intocable",
+        "matchedTitle": "Intocable",
+        "matchedYear": 2011,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "amores-materialistas-2025.json",
+      "title": "Amores materialistas",
+      "year": 2025,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/materialists",
+        "matchedTitle": "Materialistas",
+        "matchedYear": 2025,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "BUY"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "BUY"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "anatomia-de-un-asesinato-1959.json",
+      "title": "Anatomía de un asesinato",
+      "year": 1959,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/anatomia-de-un-asesinato",
+        "matchedTitle": "Anatomía de un asesinato",
+        "matchedYear": 1959,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "animales-nocturnos-2016.json",
+      "title": "Animales nocturnos",
+      "year": 2016,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/animales-nocturnos",
+        "matchedTitle": "Animales nocturnos",
+        "matchedYear": 2016,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "antes-del-atardecer-2004.json",
+      "title": "Antes del atardecer",
+      "year": 2004,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/antes-del-atardecer",
+        "matchedTitle": "Antes del atardecer",
+        "matchedYear": 2004,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "arma-letal-1987.json",
+      "title": "Arma letal",
+      "year": 1987,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/arma-letal",
+        "matchedTitle": "Arma letal",
+        "matchedYear": 1987,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "armageddon-1998.json",
+      "title": "Armageddon",
+      "year": 1998,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/armageddon",
+        "matchedTitle": "Armageddon",
+        "matchedYear": 1998,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "atraccion-peligrosa-2010.json",
+      "title": "Atracción peligrosa",
+      "year": 2010,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/the-town-ciudad-de-ladrones",
+        "matchedTitle": "The Town: Ciudad de ladrones",
+        "matchedYear": 2010,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "blitz-2024.json",
+      "title": "Blitz",
+      "year": 2024,
+      "current": "Apple TV",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/blitz-2024",
+        "matchedTitle": "Blitz",
+        "matchedYear": 2024,
+        "providers": [
+          {
+            "provider": "Apple TV",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "boda-sangrienta-2019.json",
+      "title": "Boda sangrienta",
+      "year": 2019,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Ready%20or%20Not",
+        "candidates": [
+          {
+            "title": "Noche de bodas",
+            "year": 2019,
+            "score": 30
+          },
+          {
+            "title": "Ready Player One: Comienza el Juego",
+            "year": 2018,
+            "score": 13
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "brooklyn-2015.json",
+      "title": "Brooklyn",
+      "year": 2015,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/brooklyn",
+        "matchedTitle": "Brooklyn",
+        "matchedYear": 2015,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "calabozos-dragones-honor-entre-ladrones-2023.json",
+      "title": "Calabozos & Dragones: Honor entre ladrones",
+      "year": 2023,
+      "current": "Paramount Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Dungeons%20%26%20Dragons%3A%20Honor%20Among%20Thieves",
+        "candidates": [
+          {
+            "title": "Dungeons & Dragons: Honor entre ladrones",
+            "year": 2023,
+            "score": 83
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "chantaje-en-broadway-1957.json",
+      "title": "Chantaje en Broadway",
+      "year": 1957,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/chantaje-en-broadway",
+        "matchedTitle": "Chantaje en Broadway",
+        "matchedYear": 1957,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "contra-lo-imposible-2019.json",
+      "title": "Contra lo imposible",
+      "year": 2019,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Ford%20v%20Ferrari",
+        "candidates": [
+          {
+            "title": "Le Mans '66",
+            "year": 2019,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "cronos-1993.json",
+      "title": "Cronos",
+      "year": 1993,
+      "current": "Otras plataformas",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/cronos",
+        "matchedTitle": "Cronos",
+        "matchedYear": 1993,
+        "providers": []
+      },
+      "status": "verified"
+    },
+    {
+      "file": "cuando-harry-encontro-a-sally-1989.json",
+      "title": "Cuando Harry encontró a Sally",
+      "year": 1989,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/cuando-harry-encontro-a-sally",
+        "matchedTitle": "Cuando Harry encontró a Sally",
+        "matchedYear": 1989,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "cuestion-de-tiempo-2013.json",
+      "title": "Cuestión de tiempo",
+      "year": 2013,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/una-cuestion-de-tiempo",
+        "matchedTitle": "Una cuestión de tiempo",
+        "matchedYear": 2013,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "dia-de-la-independencia-1996.json",
+      "title": "Día de la independencia",
+      "year": 1996,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/independence-day",
+        "matchedTitle": "Dia de la independencia",
+        "matchedYear": 1996,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "doce-del-patibulo-1967.json",
+      "title": "Doce del patíbulo",
+      "year": 1967,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/doce-del-patibulo",
+        "matchedTitle": "Doce del patíbulo",
+        "matchedYear": 1967,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-arte-de-la-guerra-2013.json",
+      "title": "El arte de la guerra",
+      "year": 2013,
+      "current": "Otras plataformas",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/the-grandmaster",
+        "matchedTitle": "El arte de la guerra",
+        "matchedYear": 2013,
+        "providers": []
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-bar-de-las-grandes-esperanzas-2021.json",
+      "title": "El bar de las grandes esperanzas",
+      "year": 2021,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/the-tender-bar",
+        "matchedTitle": "El bar de las grandes esperanzas",
+        "matchedYear": 2021,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-buscavidas-1961.json",
+      "title": "El buscavidas",
+      "year": 1961,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-buscavidas",
+        "matchedTitle": "El buscavidas",
+        "matchedYear": 1961,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-club-de-los-poetas-muertos-1989.json",
+      "title": "El club de los poetas muertos",
+      "year": 1989,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-club-de-los-poetas-muertos",
+        "matchedTitle": "El club de los poetas muertos",
+        "matchedYear": 1989,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-codigo-enigma-2014.json",
+      "title": "El código enigma",
+      "year": 2014,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/the-imitation-game-descifrando-enigma",
+        "matchedTitle": "The Imitation Game (Descifrando Enigma)",
+        "matchedYear": 2014,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-coleccionista-de-huesos-1999.json",
+      "title": "El coleccionista de huesos",
+      "year": 1999,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-coleccionista-de-huesos",
+        "matchedTitle": "El coleccionista de huesos",
+        "matchedYear": 1999,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-esquema-fenicio-2025.json",
+      "title": "El esquema fenicio",
+      "year": 2025,
+      "current": "HBO Max",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=The%20Phoenician%20Scheme",
+        "candidates": [
+          {
+            "title": "La trama fenicia",
+            "year": 2025,
+            "score": 30
+          },
+          {
+            "title": "The Love Hypothesis",
+            "year": 2026,
+            "score": 27
+          },
+          {
+            "title": "Star Wars: The Mandalorian and Grogu",
+            "year": 2026,
+            "score": 13
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "el-increible-castillo-vagabundo-2004.json",
+      "title": "El increíble castillo vagabundo",
+      "year": 2004,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-castillo-ambulante",
+        "matchedTitle": "El increíble castillo vagabundo",
+        "matchedYear": 2004,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-juicio-de-los-7-de-chicago-2020.json",
+      "title": "El juicio de los 7 de Chicago",
+      "year": 2020,
+      "current": "Netflix",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=The%20Trial%20of%20the%20Chicago%207",
+        "candidates": [
+          {
+            "title": "El juicio de los siete de Chicago",
+            "year": 2020,
+            "score": 97
+          },
+          {
+            "title": "Historia de una traición",
+            "year": 2021,
+            "score": 16
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "el-mensajero-del-miedo-1962.json",
+      "title": "El mensajero del miedo",
+      "year": 1962,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-mensajero-del-miedo-1962",
+        "matchedTitle": "El mensajero del miedo",
+        "matchedYear": 1962,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-protegido-2000.json",
+      "title": "El protegido",
+      "year": 2000,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-protegido",
+        "matchedTitle": "El protegido",
+        "matchedYear": 2000,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-regreso-de-la-momia-2001.json",
+      "title": "El regreso de la momia",
+      "year": 2001,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-regreso-de-la-momia",
+        "matchedTitle": "El regreso de la momia",
+        "matchedYear": 2001,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "el-sueno-de-walt-disney-2013.json",
+      "title": "El sueño de Walt Disney",
+      "year": 2013,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Saving%20Mr.%20Banks",
+        "candidates": [
+          {
+            "title": "Al encuentro de Mr. Banks",
+            "year": 2013,
+            "score": 62
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "el-ultimo-samurai-2003.json",
+      "title": "El último samurái",
+      "year": 2003,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/el-ultimo-samurai",
+        "matchedTitle": "El último samurái",
+        "matchedYear": 2003,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "elf-2003.json",
+      "title": "Elf",
+      "year": 2003,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/elf",
+        "matchedTitle": "Elf",
+        "matchedYear": 2003,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "en-busca-de-la-felicidad-2006.json",
+      "title": "En busca de la felicidad",
+      "year": 2006,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/en-busca-de-la-felicidad",
+        "matchedTitle": "En busca de la felicidad",
+        "matchedYear": 2006,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "en-la-linea-de-fuego-1993.json",
+      "title": "En la línea de fuego",
+      "year": 1993,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/en-la-linea-de-fuego",
+        "matchedTitle": "En la línea de fuego",
+        "matchedYear": 1993,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "enemigo-publico-1998.json",
+      "title": "Enemigo público",
+      "year": 1998,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/enemigo-publico",
+        "matchedTitle": "Enemigo público",
+        "matchedYear": 1998,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "entre-copas-2004.json",
+      "title": "Entre copas",
+      "year": 2004,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/entre-copas",
+        "matchedTitle": "Entre copas",
+        "matchedYear": 2004,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "escuela-de-rock-2003.json",
+      "title": "Escuela de rock",
+      "year": 2003,
+      "current": "Paramount Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/escuela-de-rock",
+        "matchedTitle": "Escuela de rock",
+        "matchedYear": 2003,
+        "providers": [
+          {
+            "provider": "Paramount Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "finch-2021.json",
+      "title": "Finch",
+      "year": 2021,
+      "current": "Apple TV",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/finch",
+        "matchedTitle": "Finch",
+        "matchedYear": 2021,
+        "providers": [
+          {
+            "provider": "Apple TV",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "godzilla-minus-one-2023.json",
+      "title": "Godzilla Minus One",
+      "year": 2023,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/godzilla-minus-one",
+        "matchedTitle": "Godzilla Minus One",
+        "matchedYear": 2023,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "BUY"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "goldeneye-1995.json",
+      "title": "Goldeneye",
+      "year": 1995,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/goldeneye",
+        "matchedTitle": "Goldeneye",
+        "matchedYear": 1995,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "greyhound-en-la-mira-del-enemigo-2020.json",
+      "title": "Greyhound en la mira del enemigo",
+      "year": 2020,
+      "current": "Apple TV",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/greyhound",
+        "matchedTitle": "Greyhound: Enemigos bajo el mar",
+        "matchedYear": 2020,
+        "providers": [
+          {
+            "provider": "Apple TV",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "historias-cruzadas-2011.json",
+      "title": "Historias cruzadas",
+      "year": 2011,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=The%20Help",
+        "candidates": [
+          {
+            "title": "Criadas y Señoras",
+            "year": 2011,
+            "score": 30
+          },
+          {
+            "title": "The amazing Spider-Man",
+            "year": 2012,
+            "score": 20
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "hombres-de-negro-1997.json",
+      "title": "Hombres de negro",
+      "year": 1997,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/hombres-de-negro",
+        "matchedTitle": "Hombres de negro",
+        "matchedYear": 1997,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "jojo-rabbit-2019.json",
+      "title": "Jojo Rabbit",
+      "year": 2019,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/jojo-rabbit",
+        "matchedTitle": "Jojo Rabbit",
+        "matchedYear": 2019,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "jumanji-1995.json",
+      "title": "Jumanji",
+      "year": 1995,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/jumanji",
+        "matchedTitle": "Jumanji",
+        "matchedYear": 1995,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-balada-de-buster-scruggs-2018.json",
+      "title": "La balada de Buster Scruggs",
+      "year": 2018,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-balada-de-buster-scruggs",
+        "matchedTitle": "La balada de Buster Scruggs",
+        "matchedYear": 2018,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-busqueda-2004.json",
+      "title": "La búsqueda",
+      "year": 2004,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-busqueda-national-treasure",
+        "matchedTitle": "La búsqueda",
+        "matchedYear": 2004,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-caza-del-octubre-rojo-1990.json",
+      "title": "La caza del Octubre Rojo",
+      "year": 1990,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-caza-del-octubre-rojo",
+        "matchedTitle": "La caza del Octubre Rojo",
+        "matchedYear": 1990,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-chica-del-dragon-tatuado-2011.json",
+      "title": "La chica del dragón tatuado",
+      "year": 2011,
+      "current": "HBO Max",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=The%20Girl%20with%20the%20Dragon%20Tattoo",
+        "candidates": [
+          {
+            "title": "Millennium: Los hombres que no amaban a las mujeres",
+            "year": 2011,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "la-excavacion-2021.json",
+      "title": "La excavación",
+      "year": 2021,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-excavacion",
+        "matchedTitle": "La excavación",
+        "matchedYear": 2021,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-familia-addams-1991.json",
+      "title": "La familia Addams",
+      "year": 1991,
+      "current": "Paramount Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-familia-addams",
+        "matchedTitle": "La familia Addams",
+        "matchedYear": 1991,
+        "providers": [
+          {
+            "provider": "Paramount Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-familia-addams-la-tradicion-continua-1993.json",
+      "title": "La familia Addams: La tradición continúa",
+      "year": 1993,
+      "current": "Paramount Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-familia-addams-la-tradicion-continua",
+        "matchedTitle": "La familia Addams: La tradición continúa",
+        "matchedYear": 1993,
+        "providers": [
+          {
+            "provider": "Paramount Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-hija-oscura-2021.json",
+      "title": "La hija oscura",
+      "year": 2021,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-hija-oscura",
+        "matchedTitle": "La hija oscura",
+        "matchedYear": 2021,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-increible-vida-de-walter-mitty-2013.json",
+      "title": "La increíble vida de Walter Mitty",
+      "year": 2013,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=The%20Secret%20Life%20of%20Walter%20Mitty",
+        "candidates": [
+          {
+            "title": "La vida secreta de Walter Mitty",
+            "year": 2013,
+            "score": 97
+          },
+          {
+            "title": "Chimpancés",
+            "year": 2012,
+            "score": 0
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "la-pantera-rosa-1963.json",
+      "title": "La pantera rosa",
+      "year": 1963,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-pantera-rosa-1963",
+        "matchedTitle": "La pantera rosa",
+        "matchedYear": 1963,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-profecia-1976.json",
+      "title": "La profecía",
+      "year": 1976,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/la-profecia-1976",
+        "matchedTitle": "La profecía",
+        "matchedYear": 1976,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "la-violencia-esta-en-nosotros-1972.json",
+      "title": "La violencia está en nosotros",
+      "year": 1972,
+      "current": "HBO Max",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Deliverance",
+        "candidates": [
+          {
+            "title": "Defensa",
+            "year": 1972,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "llegan-los-muppets-1979.json",
+      "title": "Llegan los Muppets",
+      "year": 1979,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=The%20Muppet%20Movie",
+        "candidates": [
+          {
+            "title": "La película de los Teleñecos",
+            "year": 1979,
+            "score": 46
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "los-descendientes-2011.json",
+      "title": "Los descendientes",
+      "year": 2011,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/los-descendientes",
+        "matchedTitle": "Los descendientes",
+        "matchedYear": 2011,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "los-ojos-de-tammy-faye-2021.json",
+      "title": "Los ojos de Tammy Faye",
+      "year": 2021,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/los-ojos-de-tammy-faye",
+        "matchedTitle": "Los ojos de Tammy Faye",
+        "matchedYear": 2021,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "madres-paralelas-2021.json",
+      "title": "Madres paralelas",
+      "year": 2021,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/madres-paralelas",
+        "matchedTitle": "Madres paralelas",
+        "matchedYear": 2021,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "manchester-frente-al-mar-2016.json",
+      "title": "Manchester frente al mar",
+      "year": 2016,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/manchester-frente-al-mar",
+        "matchedTitle": "Manchester frente al mar",
+        "matchedYear": 2016,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "BUY"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "BUY"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "mank-2020.json",
+      "title": "Mank",
+      "year": 2020,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/mank",
+        "matchedTitle": "Mank",
+        "matchedYear": 2020,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "mary-poppins-1964.json",
+      "title": "Mary Poppins",
+      "year": 1964,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/mary-poppins",
+        "matchedTitle": "Mary Poppins",
+        "matchedYear": 1964,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "maxima-velocidad-1994.json",
+      "title": "Máxima velocidad",
+      "year": 1994,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/speed-maxima-potencia",
+        "matchedTitle": "Speed: Máxima potencia",
+        "matchedYear": 1994,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "mi-nombre-es-dolemite-2019.json",
+      "title": "Mi nombre es Dolemite",
+      "year": 2019,
+      "current": "Netflix",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=Dolemite%20Is%20My%20Name",
+        "candidates": [
+          {
+            "title": "Yo soy Dolemite",
+            "year": 2019,
+            "score": 50
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "mujercitas-2019.json",
+      "title": "Mujercitas",
+      "year": 2019,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/mujercitas-2019",
+        "matchedTitle": "Mujercitas",
+        "matchedYear": 2019,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "nace-una-estrella-2018.json",
+      "title": "Nace una estrella",
+      "year": 2018,
+      "current": "Prime Video",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=A%20Star%20Is%20Born",
+        "candidates": [
+          {
+            "title": "Ha nacido una estrella",
+            "year": 2018,
+            "score": 70
+          },
+          {
+            "title": "Han Solo: Una historia de Star Wars",
+            "year": 2018,
+            "score": 41
+          },
+          {
+            "title": "The Witch: Part 1 - The Subversion",
+            "year": 2018,
+            "score": 30
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "ni-idea-1995.json",
+      "title": "Ni idea",
+      "year": 1995,
+      "current": "Paramount Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/clueless-fuera-de-onda",
+        "matchedTitle": "Clueless (Fuera de onda)",
+        "matchedYear": 1995,
+        "providers": [
+          {
+            "provider": "Paramount Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "no-2012.json",
+      "title": "No",
+      "year": 2012,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/no",
+        "matchedTitle": "No",
+        "matchedYear": 2012,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "pelham-1-2-3-1974.json",
+      "title": "Pelham 1, 2, 3",
+      "year": 1974,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/pelham-1-2-3",
+        "matchedTitle": "Pelham 1, 2, 3",
+        "matchedYear": 1974,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "pequena-miss-sunshine-2006.json",
+      "title": "Pequeña Miss Sunshine",
+      "year": 2006,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/pequena-miss-sunshine",
+        "matchedTitle": "Pequeña Miss Sunshine",
+        "matchedYear": 2006,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "princesa-por-sorpresa-2001.json",
+      "title": "Princesa por sorpresa",
+      "year": 2001,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/princesa-por-sorpresa",
+        "matchedTitle": "Princesa por sorpresa",
+        "matchedYear": 2001,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "riesgo-en-el-aire-1997.json",
+      "title": "Riesgo en el aire",
+      "year": 1997,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/con-air-convictos-en-el-aire",
+        "matchedTitle": "Con Air (Convictos en el aire)",
+        "matchedYear": 1997,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "sed-de-mal-1958.json",
+      "title": "Sed de mal",
+      "year": 1958,
+      "current": "HBO Max",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/sed-de-mal",
+        "matchedTitle": "Sed de mal",
+        "matchedYear": 1958,
+        "providers": [
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "senales-2002.json",
+      "title": "Señales",
+      "year": 2002,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/senales",
+        "matchedTitle": "Señales",
+        "matchedYear": 2002,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "senora-doubtfire-papa-de-por-vida-1993.json",
+      "title": "Señora Doubtfire: Papá de por vida",
+      "year": 1993,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/senora-doubtfire-papa-de-por-vida",
+        "matchedTitle": "Señora Doubtfire: Papá de por vida",
+        "matchedYear": 1993,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "serpico-1973.json",
+      "title": "Serpico",
+      "year": 1973,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/serpico",
+        "matchedTitle": "Serpico",
+        "matchedYear": 1973,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "soy-leyenda-2007.json",
+      "title": "Soy leyenda",
+      "year": 2007,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/soy-leyenda",
+        "matchedTitle": "Soy leyenda",
+        "matchedYear": 2007,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "spy-game-juego-de-espias-2001.json",
+      "title": "Spy Game (Juego de espías)",
+      "year": 2001,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/spy-game-juego-de-espias",
+        "matchedTitle": "Spy Game (Juego de espías)",
+        "matchedYear": 2001,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "terror-en-amityville-1979.json",
+      "title": "Terror en Amityville",
+      "year": 1979,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/terror-en-amityville",
+        "matchedTitle": "Terror en Amityville",
+        "matchedYear": 1979,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "todo-sobre-mi-madre-1999.json",
+      "title": "Todo sobre mi madre",
+      "year": 1999,
+      "current": "MUBI",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/todo-sobre-mi-madre",
+        "matchedTitle": "Todo sobre mi madre",
+        "matchedYear": 1999,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "MUBI",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "un-amor-inseparable-2017.json",
+      "title": "Un amor inseparable",
+      "year": 2017,
+      "current": "Prime Video",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=The%20Big%20Sick",
+        "candidates": [
+          {
+            "title": "La gran enfermedad del amor",
+            "year": 2017,
+            "score": 46
+          },
+          {
+            "title": "Big Brother",
+            "year": 2018,
+            "score": 27
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "un-lugar-en-silencio-parte-2-2021.json",
+      "title": "Un lugar en silencio Parte 2",
+      "year": 2021,
+      "current": "Netflix",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=A%20Quiet%20Place%20Part%20II",
+        "candidates": [
+          {
+            "title": "Un lugar tranquilo 2",
+            "year": 2021,
+            "score": 62
+          }
+        ]
+      },
+      "status": "unmatched"
+    },
+    {
+      "file": "un-sueno-posible-2009.json",
+      "title": "Un sueño posible",
+      "year": 2009,
+      "current": "Netflix",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/un-sueno-posible",
+        "matchedTitle": "Un sueño posible",
+        "matchedYear": 2009,
+        "providers": [
+          {
+            "provider": "Netflix",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "HBO Max",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "volver-2006.json",
+      "title": "Volver",
+      "year": 2006,
+      "current": "Otras plataformas",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/volver",
+        "matchedTitle": "Volver",
+        "matchedYear": 2006,
+        "providers": [
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          },
+          {
+            "provider": "Prime Video",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "mismatch",
+      "expected": "Apple TV"
+    },
+    {
+      "file": "yesterday-2019.json",
+      "title": "Yesterday",
+      "year": 2019,
+      "current": "Prime Video",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/yesterday",
+        "matchedTitle": "Yesterday",
+        "matchedYear": 2019,
+        "providers": [
+          {
+            "provider": "Prime Video",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          },
+          {
+            "provider": "Apple TV",
+            "kind": "transactional",
+            "offerType": "RENT"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "yo-robot-2004.json",
+      "title": "Yo, Robot",
+      "year": 2004,
+      "current": "Disney Plus",
+      "availability": {
+        "status": "matched",
+        "url": "https://www.justwatch.com/ar/pelicula/yo-robot",
+        "matchedTitle": "Yo, robot",
+        "matchedYear": 2004,
+        "providers": [
+          {
+            "provider": "Disney Plus",
+            "kind": "subscription",
+            "offerType": "FLATRATE"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "file": "yo-vi-al-diablo-2010.json",
+      "title": "Yo vi al diablo",
+      "year": 2010,
+      "current": "MUBI",
+      "availability": {
+        "status": "unmatched",
+        "url": "https://www.justwatch.com/ar/buscar?q=%EC%95%85%EB%A7%88%EB%A5%BC%20%EB%B3%B4%EC%95%98%EB%8B%A4",
+        "candidates": [
+          {
+            "title": "Encontré al diablo",
+            "year": 2010,
+            "score": 70
+          }
+        ]
+      },
+      "status": "unmatched"
+    }
+  ]
+}

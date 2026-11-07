@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+const query=`query SearchTitles($searchQuery: String!, $country: Country!, $language: Language!) { popularTitles(country:$country,first:10,filter:{searchQuery:$searchQuery,objectTypes:[MOVIE]}) { edges { node { ... on Movie { content(country:$country,language:$language){title originalReleaseYear fullPath} offers(country:$country,platform:WEB){monetizationType package{id clearName technicalName}} } } } } }`;
+const candidates=[['The Defiant Ones',1958],['The Big Sleep',1946],['The Killing',1956],['The Apartment',1960],['The Long Goodbye',1973],['The Getaway',1972],['The Conversation',1974],['Badlands',1973],['Barry Lyndon',1975],['Network',1976],['The Wicker Man',1973],['The Omen',1976],['The Man Who Would Be King',1975],['Paper Moon',1973],['The Sting',1973],['The Goodbye Girl',1977],['Rocky',1976],['Alien',1979],['All That Jazz',1979],['The Warriors',1979],['The China Syndrome',1979],['The Deer Hunter',1978],['Close Encounters of the Third Kind',1977],['Saturday Night Fever',1977],['Grease',1978],['The Outlaw Josey Wales',1976],['The French Connection',1971],['One Flew Over the Cuckoo\'s Nest',1975],['The Godfather Part II',1974],['The Exorcist',1973]];
+const results=[];
+for(const [title,year] of candidates){
+ const response=await fetch('https://apis.justwatch.com/graphql',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({query,variables:{searchQuery:title,country:'AR',language:'es'}})});
+ if(!response.ok)throw new Error('JustWatch HTTP '+response.status+' for '+title);
+ const payload=await response.json();
+ const hits=(payload.data?.popularTitles?.edges??[]).map(e=>e.node).filter(n=>n?.content).map(n=>({node:n,title:n.content.title,year:Number(n.content.originalReleaseYear),url:'https://www.justwatch.com'+n.content.fullPath,exact:Number(n.content.originalReleaseYear)===year,offers:n.offers??[]})).sort((a,b)=>Number(b.exact)-Number(a.exact));
+ const best=hits[0];const seen=new Set();const offers=(best?.offers??[]).filter(o=>{const k=(o.package?.clearName||'')+'|'+o.monetizationType;if(seen.has(k))return false;seen.add(k);return true;}).map(o=>({type:o.monetizationType,provider:o.package?.clearName,technicalName:o.package?.technicalName}));
+ results.push({title,year,matchedTitle:best?.title??null,matchedYear:best?.year??null,url:best?.url??null,exact:best?.exact??false,offers});
+}
+await fs.writeFile('reports/catalogo-100-streaming-ar-2026-11-06/pre1980-scout.json',JSON.stringify({country:'AR',language:'es',verifiedAt:new Date().toISOString(),results},null,2)+'\n');
+console.log(JSON.stringify(results.map(({title,year,matchedTitle,matchedYear,url,exact,offers})=>({title,year,matchedTitle,matchedYear,url,exact,sub:offers.filter(o=>['FLATRATE','FLATRATE_AND_BUY'].includes(o.type)).map(o=>o.provider)})),null,2));

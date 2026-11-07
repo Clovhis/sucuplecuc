@@ -1,0 +1,81 @@
+Audited 100 candidate file(s) from main against src/data/movies.
+Editorial audit: review audit passed for 100 file(s)
+Result: PASS WITH WARNINGS (36 warning(s))
+[INFO] secondary-tear-meter-hidden :: src/data/movies/air-force-one-el-avion-del-presidente-1997.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] editorial-overlap :: src/data/movies/amigos-intocables-2011.json :: editorial.becauseYouLiked and editorial.related repeat: coda-2021.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/animales-nocturnos-2016.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/atraccion-peligrosa-2010.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] missing-person-birth :: src/data/movies/blitz-2024.json :: "Elliott Heffernan" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/blitz-2024.json :: "Elliott Heffernan" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[INFO] secondary-comedy-meter-hidden :: src/data/movies/boda-sangrienta-2019.json :: Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.
+[INFO] secondary-comedy-meter-hidden :: src/data/movies/calabozos-dragones-honor-entre-ladrones-2023.json :: Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/calabozos-dragones-honor-entre-ladrones-2023.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/contra-lo-imposible-2019.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/cronos-1993.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] untrusted-person-image-source :: src/data/movies/cuestion-de-tiempo-2013.json :: "Richard Curtis" uses an uncommon portrait host ("upload.wikimedia.org"). Verify that the cached image is a real actor/director headshot.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/doce-del-patibulo-1967.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/el-arte-de-la-guerra-2013.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-coleccionista-de-huesos-1999.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/el-esquema-fenicio-2025.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-increible-castillo-vagabundo-2004.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-mensajero-del-miedo-1962.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-protegido-2000.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/el-regreso-de-la-momia-2001.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-ultimo-samurai-2003.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] untrusted-person-image-source :: src/data/movies/en-busca-de-la-felicidad-2006.json :: "Gabriele Muccino" uses an uncommon portrait host ("www.vivienna.it"). Verify that the cached image is a real actor/director headshot.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/en-la-linea-de-fuego-1993.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/en-la-linea-de-fuego-1993.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/enemigo-publico-1998.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/finch-2021.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/godzilla-minus-one-2023.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/godzilla-minus-one-2023.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-comedy-meter-hidden :: src/data/movies/hombres-de-negro-1997.json :: Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/hombres-de-negro-1997.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[WARN] war-filter-review-needed :: src/data/movies/jojo-rabbit-2019.json :: This entry uses a broad Guerra/war taxonomy without "Bélica". Decide explicitly whether the conflict is central enough for the home filter; context-only films should remain excluded.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/la-balada-de-buster-scruggs-2018.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] missing-person-nationality :: src/data/movies/la-caida-de-los-angeles-1995.json :: "Leon Lai Ming" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/la-chica-del-dragon-tatuado-2011.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] missing-person-birth :: src/data/movies/la-excavacion-2021.json :: "Lily James" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/la-excavacion-2021.json :: "Lily James" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[INFO] secondary-horror-meter-hidden :: src/data/movies/la-familia-addams-1991.json :: Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category "Terror" activates it.
+[INFO] secondary-horror-meter-hidden :: src/data/movies/la-familia-addams-la-tradicion-continua-1993.json :: Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category "Terror" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/la-increible-vida-de-walter-mitty-2013.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/la-leyenda-del-tesoro-perdido-2004.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/la-violencia-esta-en-nosotros-1972.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-comedy-meter-hidden :: src/data/movies/mary-poppins-1964.json :: Comedy appears only in secondary taxonomy; Jajámetro will stay hidden because only primary laugh-first category "Comedia" activates it.
+[WARN] untrusted-person-image-source :: src/data/movies/pequena-miss-sunshine-2006.json :: "Valerie Faris" uses an uncommon portrait host ("static.kinoafisha.info"). Verify that the cached image is a real actor/director headshot.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/sed-de-mal-1958.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/senales-2002.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-horror-meter-hidden :: src/data/movies/soy-leyenda-2007.json :: Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category "Terror" activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/soy-leyenda-2007.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-tear-meter-hidden :: src/data/movies/terror-en-amityville-1979.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[WARN] missing-person-birth :: src/data/movies/yesterday-2019.json :: "Lily James" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/yesterday-2019.json :: "Lily James" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/yo-robot-2004.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[INFO] secondary-horror-meter-hidden :: src/data/movies/yo-vi-al-diablo-2010.json :: Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category "Terror" activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/yo-vi-al-diablo-2010.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[WARN] missing-person-birth :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" uses an uncommon portrait host ("kobis.or.kr"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-trace-url :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar).
+[WARN] poster-outside-target-size :: src/data/movies/3-anuncios-por-un-crimen-2017.json :: poster is valid at 31296 bytes; preferred range is 40960-81920 bytes. (480x720)
+[WARN] poster-outside-target-size :: src/data/movies/algunos-hombres-buenos-1992.json :: poster is valid at 35094 bytes; preferred range is 40960-81920 bytes. (480x709)
+[WARN] poster-outside-target-size :: src/data/movies/anatomia-de-un-asesinato-1959.json :: poster is valid at 37142 bytes; preferred range is 40960-81920 bytes. (466x720)
+[WARN] poster-outside-target-size :: src/data/movies/animales-nocturnos-2016.json :: poster is valid at 25312 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/antes-del-atardecer-2004.json :: poster is valid at 35372 bytes; preferred range is 40960-81920 bytes. (480x709)
+[WARN] poster-outside-target-size :: src/data/movies/cronos-1993.json :: poster is valid at 34696 bytes; preferred range is 40960-81920 bytes. (480x720)
+[WARN] poster-outside-target-size :: src/data/movies/el-arte-de-la-guerra-2013.json :: poster is valid at 29862 bytes; preferred range is 40960-81920 bytes. (480x710)
+[WARN] poster-outside-target-size :: src/data/movies/el-coleccionista-de-huesos-1999.json :: poster is valid at 32508 bytes; preferred range is 40960-81920 bytes. (480x720)
+[WARN] poster-outside-target-size :: src/data/movies/el-protegido-2000.json :: poster is valid at 36390 bytes; preferred range is 40960-81920 bytes. (480x710)
+[WARN] poster-outside-target-size :: src/data/movies/el-sueno-de-walt-disney-2013.json :: poster is valid at 22750 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/elf-2003.json :: poster is valid at 32774 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/en-busca-de-la-felicidad-2006.json :: poster is valid at 38302 bytes; preferred range is 40960-81920 bytes. (480x714)
+[WARN] poster-outside-target-size :: src/data/movies/entre-copas-2004.json :: poster is valid at 35610 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/greyhound-en-la-mira-del-enemigo-2020.json :: poster is valid at 39460 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/la-chica-del-dragon-tatuado-2011.json :: poster is valid at 18916 bytes; preferred range is 40960-81920 bytes. (479x720)
+[WARN] poster-outside-target-size :: src/data/movies/la-hija-oscura-2021.json :: poster is valid at 37008 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/los-descendientes-2011.json :: poster is valid at 40814 bytes; preferred range is 40960-81920 bytes. (480x720)
+[WARN] poster-outside-target-size :: src/data/movies/pequena-miss-sunshine-2006.json :: poster is valid at 35404 bytes; preferred range is 40960-81920 bytes. (453x720)
+[WARN] poster-outside-target-size :: src/data/movies/soy-leyenda-2007.json :: poster is valid at 31538 bytes; preferred range is 40960-81920 bytes. (480x711)
+[WARN] poster-outside-target-size :: src/data/movies/yo-robot-2004.json :: poster is valid at 25478 bytes; preferred range is 40960-81920 bytes. (480x714)

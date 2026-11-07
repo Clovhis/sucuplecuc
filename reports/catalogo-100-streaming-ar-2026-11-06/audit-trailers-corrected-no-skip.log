@@ -1,0 +1,13 @@
+Audited 4 candidate file(s) from main against src/data/movies.
+Editorial audit: review audit passed for 4 file(s)
+Result: PASS WITH WARNINGS (6 warning(s))
+[INFO] secondary-tear-meter-hidden :: src/data/movies/el-increible-castillo-vagabundo-2004.json :: Drama/Romance/Romántica appears only in secondary taxonomy; Lagrimómetro will stay hidden because only primary category activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/la-leyenda-del-tesoro-perdido-2004.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[WARN] missing-person-nationality :: src/data/movies/la-caida-de-los-angeles-1995.json :: "Leon Lai Ming" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[INFO] secondary-horror-meter-hidden :: src/data/movies/yo-vi-al-diablo-2010.json :: Terror appears only in secondary taxonomy; Cagazómetro will stay hidden because only primary category "Terror" activates it.
+[INFO] secondary-action-meter-hidden :: src/data/movies/yo-vi-al-diablo-2010.json :: Action appears only in secondary taxonomy; Explosiómetro will stay hidden because only primary category "Accion"/"Acción" activates it.
+[WARN] missing-person-birth :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" should include a verifiable birthDate or birthYear in src/data/people.json when public sources support it.
+[WARN] missing-person-nationality :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" has no verified public nationality; leave nationalityPrimary absent rather than infer it.
+[WARN] untrusted-person-image-source :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" uses an uncommon portrait host ("kobis.or.kr"). Verify that the cached image is a real actor/director headshot.
+[WARN] missing-person-trace-url :: src/data/movies/yo-vi-al-diablo-2010.json :: "Kim Jee-woon" should keep at least one traceable profile URL (IMDb, Wikidata, TMDb, Plex, Anime-Planet or similar).
+[WARN] youtube-title-mismatch :: src/data/movies/la-caida-de-los-angeles-1995.json :: YouTube title "FALLEN ANGELS 4K | Official Trailer" does not text-match "La caída de los ángeles", but the video does appear in YouTube search results for the movie.

@@ -1,0 +1,849 @@
+{
+  "method": "Prefer Rotten Tomatoes Popcornmeter; if no title/year-matched numeric RT audience value, use a recognized public audience aggregate (IMDb here). Normalize percentage with clamp(1,10,round(value/10)); normalize 0-10 rating with clamp(1,10,round(value)). Evidence is title/year matched. A visible established sample was shown in every source; no low-sample confidence ceiling applies.",
+  "checkedAt": "2026-11-06",
+  "records": [
+    {
+      "slug": "arma-letal-1987",
+      "title": "Arma letal",
+      "originalTitle": "Lethal Weapon",
+      "year": 1987,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/lethal_weapon",
+        "sourceMatchedTitle": "Lethal Weapon",
+        "sourceMatchedYear": 1987,
+        "displayedValue": "86%",
+        "rawValue": 86,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(86/10)=9",
+        "normalizedCandidate": 9,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": {
+          "normalizedCandidate": 9,
+          "cap": 8,
+          "passed": false,
+          "rationale": "El 86% redondea a 9; su química de pareja y su influencia como comedia de acción son duraderas, pero el éxito y la consolidación de un subgénero no bastan para el umbral separado de obra maestra. Se conserva 8.",
+          "contextSources": [
+            "https://catalog.afi.com/Film/68361-LETHAL-WEAPON",
+            "https://www.afi.com/news/afi-movie-club-lethal-weapon/"
+          ]
+        },
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "cuando-harry-encontro-a-sally-1989",
+      "title": "Cuando Harry encontró a Sally",
+      "originalTitle": "When Harry Met Sally...",
+      "year": 1989,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/when_harry_met_sally",
+        "sourceMatchedTitle": "When Harry Met Sally...",
+        "sourceMatchedYear": 1989,
+        "displayedValue": "89%",
+        "rawValue": 89,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(89/10)=9",
+        "normalizedCandidate": 9,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": {
+          "normalizedCandidate": 9,
+          "cap": 8,
+          "passed": false,
+          "rationale": "El 89% redondea a 9. La película dejó una marca cultural y el registro de preservación reconoce su importancia, pero esa influencia y la eficacia del guion no establecen por sí solas una excepcionalidad cinematográfica suficiente para la categoría de obra maestra. Se conserva 8.",
+          "contextSources": [
+            "https://www.loc.gov/item/prn-22-120",
+            "https://www.loc.gov/static/programs/national-film-preservation-board/documents/Interview_Rob-Reiner.pdf"
+          ]
+        },
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "el-club-de-los-poetas-muertos-1989",
+      "title": "El club de los poetas muertos",
+      "originalTitle": "Dead Poets Society",
+      "year": 1989,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/dead_poets_society",
+        "sourceMatchedTitle": "Dead Poets Society",
+        "sourceMatchedYear": 1989,
+        "displayedValue": "92%",
+        "rawValue": 92,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(92/10)=9",
+        "normalizedCandidate": 9,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": {
+          "normalizedCandidate": 9,
+          "cap": 8,
+          "passed": false,
+          "rationale": "El 92% redondea a 9. AFI reconoce la actuación de Robin Williams y el impacto perdurable de “Carpe diem”; el drama tiene fuerza y memoria cultural, aunque esos elementos no alcanzan por sí mismos el criterio adicional de logro formal excepcional. Se conserva 8.",
+          "contextSources": [
+            "https://www.afi.com/news/dead-poets-society-afi-movie-club/",
+            "https://catalog.afi.com/Film/67915-DEAD-POETS-SOCIETY"
+          ]
+        },
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "la-caza-del-octubre-rojo-1990",
+      "title": "La caza del Octubre Rojo",
+      "originalTitle": "The Hunt for Red October",
+      "year": 1990,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/hunt_for_red_october",
+        "sourceMatchedTitle": "The Hunt for Red October",
+        "sourceMatchedYear": 1990,
+        "displayedValue": "88%",
+        "rawValue": 88,
+        "sample": "100,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(88/10)=9",
+        "normalizedCandidate": 9,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": {
+          "normalizedCandidate": 9,
+          "cap": 8,
+          "passed": false,
+          "rationale": "El 88% redondea a 9. AFI documenta su suspenso técnico y su influencia en thrillers de aventura posteriores; ese peso de género no demuestra por sí mismo la excepcionalidad artística transversal que exige 9. Se conserva 8.",
+          "contextSources": [
+            "https://watch.afi.com/movie/the-hunt-for-red-october",
+            "https://silver.afi.com/movies/detail/0100005750/"
+          ]
+        },
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "algunos-hombres-buenos-1992",
+      "title": "Algunos hombres buenos",
+      "originalTitle": "A Few Good Men",
+      "year": 1992,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/few_good_men",
+        "sourceMatchedTitle": "A Few Good Men",
+        "sourceMatchedYear": 1992,
+        "displayedValue": "89%",
+        "rawValue": 89,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(89/10)=9",
+        "normalizedCandidate": 9,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": {
+          "normalizedCandidate": 9,
+          "cap": 8,
+          "passed": false,
+          "rationale": "El 89% redondea a 9. La actuación coral y el guion de Aaron Sorkin sostienen un drama judicial muy recordado; popularidad, fraseo y fuerza interpretativa no alcanzan solos el filtro de logro cinematográfico excepcional. Se conserva 8.",
+          "contextSources": [
+            "https://catalog.afi.com/Film/59242-A-FEW-GOOD-MEN",
+            "https://silver.afi.com/movies/detail/0100005487/"
+          ]
+        },
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "senora-doubtfire-papa-de-por-vida-1993",
+      "title": "Señora Doubtfire: Papá de por vida",
+      "originalTitle": "Mrs. Doubtfire",
+      "year": 1993,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/mrs_doubtfire",
+        "sourceMatchedTitle": "Mrs. Doubtfire",
+        "sourceMatchedYear": 1993,
+        "displayedValue": "77%",
+        "rawValue": 77,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(77/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "goldeneye-1995",
+      "title": "Goldeneye",
+      "originalTitle": "GoldenEye",
+      "year": 1995,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/goldeneye",
+        "sourceMatchedTitle": "GoldenEye",
+        "sourceMatchedYear": 1995,
+        "displayedValue": "83%",
+        "rawValue": 83,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(83/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "jumanji-1995",
+      "title": "Jumanji",
+      "originalTitle": "Jumanji",
+      "year": 1995,
+      "score": {
+        "catalogScoreBefore": 6,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/1068044-jumanji",
+        "sourceMatchedTitle": "Jumanji",
+        "sourceMatchedYear": 1995,
+        "displayedValue": "63%",
+        "rawValue": 63,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(63/10)=6",
+        "normalizedCandidate": 6,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 6,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "dia-de-la-independencia-1996",
+      "title": "Día de la independencia",
+      "originalTitle": "Independence Day",
+      "year": 1996,
+      "score": {
+        "catalogScoreBefore": 7,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/1071806-independence_day",
+        "sourceMatchedTitle": "Independence Day",
+        "sourceMatchedYear": 1996,
+        "displayedValue": "75%",
+        "rawValue": 75,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(75/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": true,
+        "correction": "Catalog value 7 changed to 8 after applying the verified source normalization and editorial gate."
+      }
+    },
+    {
+      "slug": "hombres-de-negro-1997",
+      "title": "Hombres de negro",
+      "originalTitle": "Men in Black",
+      "year": 1997,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/men_in_black",
+        "sourceMatchedTitle": "Men in Black",
+        "sourceMatchedYear": 1997,
+        "displayedValue": "80%",
+        "rawValue": 80,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(80/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "academia-rushmore-1998",
+      "title": "Academia Rushmore",
+      "originalTitle": "Rushmore",
+      "year": 1998,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/rushmore",
+        "sourceMatchedTitle": "Rushmore",
+        "sourceMatchedYear": 1998,
+        "displayedValue": "91%",
+        "rawValue": 91,
+        "sample": "100,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(91/10)=9",
+        "normalizedCandidate": 9,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": {
+          "normalizedCandidate": 9,
+          "cap": 8,
+          "passed": false,
+          "rationale": "El 91% redondea a 9. BFI la identifica como película de quiebre de Anderson, con puesta en escena singular y reconocimiento de culto; ese estilo ya reconocible no se eleva automáticamente a la excepcionalidad más amplia exigida para 9. Se conserva 8.",
+          "contextSources": [
+            "https://www.bfi.org.uk/lists/10-great-films-1998",
+            "https://www.bfi.org.uk/lists/10-great-age-gap-friendship-films"
+          ]
+        },
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "algo-pasa-con-mary-1998",
+      "title": "Algo pasa con Mary",
+      "originalTitle": "There's Something About Mary",
+      "year": 1998,
+      "score": {
+        "catalogScoreBefore": 6,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/theres_something_about_mary",
+        "sourceMatchedTitle": "There's Something About Mary",
+        "sourceMatchedYear": 1998,
+        "displayedValue": "61%",
+        "rawValue": 61,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(61/10)=6",
+        "normalizedCandidate": 6,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 6,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "armageddon-1998",
+      "title": "Armageddon",
+      "originalTitle": "Armageddon",
+      "year": 1998,
+      "score": {
+        "catalogScoreBefore": 7,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/armageddon",
+        "sourceMatchedTitle": "Armageddon",
+        "sourceMatchedYear": 1998,
+        "displayedValue": "73%",
+        "rawValue": 73,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(73/10)=7",
+        "normalizedCandidate": 7,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 7,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "enemigo-publico-1998",
+      "title": "Enemigo público",
+      "originalTitle": "Enemy of the State",
+      "year": 1998,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/enemy_of_the_state",
+        "sourceMatchedTitle": "Enemy of the State",
+        "sourceMatchedYear": 1998,
+        "displayedValue": "78%",
+        "rawValue": 78,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(78/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "el-coleccionista-de-huesos-1999",
+      "title": "El coleccionista de huesos",
+      "originalTitle": "The Bone Collector",
+      "year": 1999,
+      "score": {
+        "catalogScoreBefore": 6,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/bone_collector",
+        "sourceMatchedTitle": "The Bone Collector",
+        "sourceMatchedYear": 1999,
+        "displayedValue": "63%",
+        "rawValue": 63,
+        "sample": "100,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(63/10)=6",
+        "normalizedCandidate": 6,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 6,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "el-protegido-2000",
+      "title": "El protegido",
+      "originalTitle": "Unbreakable",
+      "year": 2000,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/unbreakable",
+        "sourceMatchedTitle": "Unbreakable",
+        "sourceMatchedYear": 2000,
+        "displayedValue": "77%",
+        "rawValue": 77,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(77/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "el-regreso-de-la-momia-2001",
+      "title": "El regreso de la momia",
+      "originalTitle": "The Mummy Returns",
+      "year": 2001,
+      "score": {
+        "catalogScoreBefore": 6,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/mummy_returns",
+        "sourceMatchedTitle": "The Mummy Returns",
+        "sourceMatchedYear": 2001,
+        "displayedValue": "63%",
+        "rawValue": 63,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(63/10)=6",
+        "normalizedCandidate": 6,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 6,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "princesa-por-sorpresa-2001",
+      "title": "Princesa por sorpresa",
+      "originalTitle": "The Princess Diaries",
+      "year": 2001,
+      "score": {
+        "catalogScoreBefore": 7,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/princess_diaries",
+        "sourceMatchedTitle": "The Princess Diaries",
+        "sourceMatchedYear": 2001,
+        "displayedValue": "68%",
+        "rawValue": 68,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(68/10)=7",
+        "normalizedCandidate": 7,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 7,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "senales-2002",
+      "title": "Señales",
+      "originalTitle": "Signs",
+      "year": 2002,
+      "score": {
+        "catalogScoreBefore": 7,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/signs",
+        "sourceMatchedTitle": "Signs",
+        "sourceMatchedYear": 2002,
+        "displayedValue": "67%",
+        "rawValue": 67,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(67/10)=7",
+        "normalizedCandidate": 7,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 7,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "elf-2003",
+      "title": "Elf",
+      "originalTitle": "Elf",
+      "year": 2003,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/elf",
+        "sourceMatchedTitle": "Elf",
+        "sourceMatchedYear": 2003,
+        "displayedValue": "79%",
+        "rawValue": 79,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(79/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "escuela-de-rock-2003",
+      "title": "Escuela de rock",
+      "originalTitle": "School of Rock",
+      "year": 2003,
+      "score": {
+        "catalogScoreBefore": 6,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/school_of_rock",
+        "sourceMatchedTitle": "School of Rock",
+        "sourceMatchedYear": 2003,
+        "displayedValue": "64%",
+        "rawValue": 64,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(64/10)=6",
+        "normalizedCandidate": 6,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 6,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "antes-del-atardecer-2004",
+      "title": "Antes del atardecer",
+      "originalTitle": "Before Sunset",
+      "year": 2004,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/before_sunset",
+        "sourceMatchedTitle": "Before Sunset",
+        "sourceMatchedYear": 2004,
+        "displayedValue": "91%",
+        "rawValue": 91,
+        "sample": "50,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(91/10)=9",
+        "normalizedCandidate": 9,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": {
+          "normalizedCandidate": 9,
+          "cap": 9,
+          "passed": true,
+          "rationale": "Se concede 9 (no 10): su forma casi en tiempo real concentra la película en la conversación y el desplazamiento de dos personajes, con guion y actuaciones de Ethan Hawke y Julie Delpy junto a Linklater. La recepción perdurable está documentada por la selección #70 de RT y #50 de The Guardian entre las mejores películas del siglo XXI; la combinación de mérito formal y canon crítico supera el gate editorial.",
+          "contextSources": [
+            "https://editorial.rottentomatoes.com/guide/best-movies-21st-century/",
+            "https://www.theguardian.com/film/2019/sep/13/100-best-films-movies-of-the-21st-century"
+          ]
+        },
+        "finalCinepostaScore": 9,
+        "corrected": true,
+        "correction": "Catalog value 8 changed to 9 after applying the verified source normalization and editorial gate."
+      }
+    },
+    {
+      "slug": "el-increible-castillo-vagabundo-2004",
+      "title": "El increíble castillo vagabundo",
+      "originalTitle": "ハウルの動く城",
+      "year": 2004,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "IMDb user rating",
+        "sourceUrl": "https://www.imdb.com/title/tt0347149/ratings/",
+        "sourceMatchedTitle": "Howl's Moving Castle",
+        "sourceMatchedYear": 2004,
+        "displayedValue": "8.2/10",
+        "rawValue": 8.2,
+        "sample": "522K user ratings (IMDb indexed page)",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(8.2)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false,
+        "sourceAccessNote": "IMDb's title-specific public Ratings page was found in search and displayed 8.2/10 and 522K ratings; direct page open returned HTTP 403 during this check. Rotten Tomatoes was excluded because its page identifies the U.S. release as 2005, while the catalog year and Japanese release are 2004."
+      }
+    },
+    {
+      "slug": "entre-copas-2004",
+      "title": "Entre copas",
+      "originalTitle": "Sideways",
+      "year": 2004,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/sideways",
+        "sourceMatchedTitle": "Sideways",
+        "sourceMatchedYear": 2004,
+        "displayedValue": "79%",
+        "rawValue": 79,
+        "sample": "100,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(79/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "la-busqueda-2004",
+      "title": "La búsqueda",
+      "originalTitle": "National Treasure",
+      "year": 2004,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/national_treasure",
+        "sourceMatchedTitle": "National Treasure",
+        "sourceMatchedYear": 2004,
+        "displayedValue": "76%",
+        "rawValue": 76,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(76/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "air-force-one-el-avion-del-presidente-1997",
+      "title": "Air Force One (El avión del presidente)",
+      "originalTitle": "Air Force One",
+      "year": 1997,
+      "score": {
+        "catalogScoreBefore": 7,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/air_force_one",
+        "sourceMatchedTitle": "Air Force One",
+        "sourceMatchedYear": 1997,
+        "displayedValue": "66%",
+        "rawValue": 66,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(66/10)=7",
+        "normalizedCandidate": 7,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 7,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "el-ultimo-samurai-2003",
+      "title": "El último samurái",
+      "originalTitle": "The Last Samurai",
+      "year": 2003,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/last_samurai",
+        "sourceMatchedTitle": "The Last Samurai",
+        "sourceMatchedYear": 2003,
+        "displayedValue": "83%",
+        "rawValue": 83,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(83/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "en-la-linea-de-fuego-1993",
+      "title": "En la línea de fuego",
+      "originalTitle": "In the Line of Fire",
+      "year": 1993,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/in_the_line_of_fire",
+        "sourceMatchedTitle": "In the Line of Fire",
+        "sourceMatchedYear": 1993,
+        "displayedValue": "79%",
+        "rawValue": 79,
+        "sample": "50,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(79/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "la-familia-addams-1991",
+      "title": "La familia Addams",
+      "originalTitle": "The Addams Family",
+      "year": 1991,
+      "score": {
+        "catalogScoreBefore": 7,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/addams_family",
+        "sourceMatchedTitle": "The Addams Family",
+        "sourceMatchedYear": 1991,
+        "displayedValue": "67%",
+        "rawValue": 67,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(67/10)=7",
+        "normalizedCandidate": 7,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 7,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "la-familia-addams-la-tradicion-continua-1993",
+      "title": "La familia Addams: La tradición continúa",
+      "originalTitle": "Addams Family Values",
+      "year": 1993,
+      "score": {
+        "catalogScoreBefore": 6,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/addams_family_values",
+        "sourceMatchedTitle": "Addams Family Values",
+        "sourceMatchedYear": 1993,
+        "displayedValue": "64%",
+        "rawValue": 64,
+        "sample": "250,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(64/10)=6",
+        "normalizedCandidate": 6,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 6,
+        "corrected": false
+      }
+    },
+    {
+      "slug": "spy-game-juego-de-espias-2001",
+      "title": "Spy Game (Juego de espías)",
+      "originalTitle": "Spy Game",
+      "year": 2001,
+      "score": {
+        "catalogScoreBefore": 8,
+        "source": "Rotten Tomatoes Popcornmeter",
+        "sourceUrl": "https://www.rottentomatoes.com/m/spy_game",
+        "sourceMatchedTitle": "Spy Game",
+        "sourceMatchedYear": 2001,
+        "displayedValue": "75%",
+        "rawValue": 75,
+        "sample": "100,000+ ratings",
+        "retrievedDate": "2026-11-06",
+        "conversion": "round(75/10)=8",
+        "normalizedCandidate": 8,
+        "confidenceCeiling": "not triggered",
+        "confidenceRationale": "Recognized public audience rating with a displayed established sample; no small or unknown sample cap is needed.",
+        "editorialGate": null,
+        "finalCinepostaScore": 8,
+        "corrected": false
+      }
+    }
+  ],
+  "cohort": "25 original middle-cohort titles plus 6 later additions; excludes the separate four-title evidence in middle-four-evidence.json.",
+  "excludedTitles": [
+    "ni-idea-1995",
+    "yo-robot-2004",
+    "maxima-velocidad-1994",
+    "riesgo-en-el-aire-1997"
+  ],
+  "summary": {
+    "recordCount": 31,
+    "sourceCount": {
+      "rottenTomatoesPopcornmeter": 30,
+      "imdbUserRating": 1
+    },
+    "normalizedTo9": 7,
+    "editorialCapsAt8": 6,
+    "editorialGatePassAt9": 1,
+    "correctedScores": [
+      {
+        "slug": "dia-de-la-independencia-1996",
+        "before": 7,
+        "after": 8
+      },
+      {
+        "slug": "antes-del-atardecer-2004",
+        "before": 8,
+        "after": 9
+      }
+    ],
+    "notes": [
+      "RT page for Howl's Moving Castle uses the 2005 U.S. release year and was excluded for the catalog's 2004 Japanese release; IMDb title-specific 2004 rating used instead.",
+      "Direct open of IMDb Ratings page returned 403, but its public indexed page displayed 8.2/10 and 522K user ratings."
+    ]
+  }
+}

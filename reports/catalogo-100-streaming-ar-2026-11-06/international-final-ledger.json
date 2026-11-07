@@ -1,0 +1,150 @@
+{
+	"cohort": "international-non-english",
+	"asOf": "2026-11-06",
+	"loadedBeforeThisBatch": [
+		{"title":"No","year":2012,"slug":"no-2012","sourceLedger":"reports/streaming-semana-2026-11-06/international-cohort.json"},
+		{"title":"Godzilla Minus One","year":2023,"slug":"godzilla-minus-one-2023","sourceLedger":"reports/streaming-semana-2026-11-06/international-cohort.json"},
+		{"title":"Amigos intocables","year":2011,"slug":"amigos-intocables-2011","sourceLedger":"reports/streaming-semana-2026-11-06/international-cohort.json"},
+		{"title":"2046","year":2004,"slug":"2046-2004","sourceLedger":"src/data/movies/2046-2004.json"}
+	],
+	"addedInThisBatch": [
+		{
+			"title":"Todo sobre mi madre",
+			"originalTitle":"Todo sobre mi madre",
+			"year":1999,
+			"slug":"todo-sobre-mi-madre-1999",
+			"dryRun":{"duplicates":[]},
+			"availability":{
+				"source":"https://www.justwatch.com/ar/pelicula/todo-sobre-mi-madre",
+				"country":"AR",
+				"checked":"2026-11-06",
+				"offers":[
+					{"provider":"MUBI","type":"FLATRATE","catalogLabel":"MUBI"},
+					{"provider":"Amazon Prime Video","type":"FLATRATE","catalogLabel":"Prime Video"},
+					{"provider":"MovistarTV","type":"FLATRATE","catalogLabel":null},
+					{"provider":"MUBI Amazon Channel","type":"FLATRATE","catalogLabel":null}
+				],
+				"publishedLabels":["MUBI","Prime Video"]
+			},
+			"poster":{
+				"source":"https://hips.hearstapps.com/hmg-prod/images/todo-sobre-mi-madre-poster-pelicula-pedro-almodovar-67111ad14fccc.jpg?crop=1xw%3A1xh%3Bcenter",
+				"description":"Digital reproduction of the original El Deseo poster; visually checked, no festival/award overprint.",
+				"sourceDimensions":"1500x2151",
+				"local":"public/assets/posters/1999/todo-sobre-mi-madre-1999.webp",
+				"localDimensions":"480x688",
+				"localVisualReview":"PASS"
+			},
+			"trailer":{
+				"source":"https://www.youtube.com/watch?v=hcVEvcP1iAc",
+				"title":"Todo sobre mi madre - Trailer oficial",
+				"channel":"eldeseopc",
+				"language":"Spanish (original)",
+				"checked":"2026-11-06"
+			},
+			"argentinaMetadata":{
+				"source":"https://m.cinesargentinos.com.ar/pelicula/452-todo-sobre-mi-madre/",
+				"releaseDate":"1999-08-19",
+				"audienceRating":"+16",
+				"runtimeMinutes":101
+			},
+			"productionIdentity":{
+				"source":"https://sede.mcu.gob.es/CatalogoICAA/es-es/Peliculas/Detalle?Pelicula=66398",
+				"secondarySource":"https://www.festival-cannes.com/en/f/todo-sobre-mi-madre/",
+				"countryYear":"Spain, France; 1999",
+				"director":"Pedro Almodóvar",
+				"cast":["Cecilia Roth","Marisa Paredes","Penélope Cruz"],
+				"productionCompany":"El Deseo, Renn Productions, France 2 Cinéma"
+			},
+			"score":{
+				"source":"https://www.rottentomatoes.com/m/all_about_my_mother",
+				"value":"93%",
+				"type":"Popcornmeter audience score",
+				"sample":"50,000+ ratings",
+				"checked":"2026-11-06",
+				"normalized":9,
+				"cinepostaScore":9,
+				"editorialRationale":"Durable classic with an Oscar win and Cannes Best Director; 9 reflects the film's sustained formal achievement and impact, not its popularity alone."
+			},
+			"awards":[
+				{"name":"Academy Award for Best Foreign Language Film","year":2000,"source":"https://www.oscars.org/oscars/ceremonies/2000/S?qt-honorees=1"},
+				{"name":"Cannes Award for Best Director","year":1999,"source":"https://www.festival-cannes.com/en/f/todo-sobre-mi-madre/"}
+			],
+			"people":{
+				"floor":"Pedro Almodóvar + Cecilia Roth + Marisa Paredes + Penélope Cruz",
+				"source":"https://sede.mcu.gob.es/CatalogoICAA/es-es/Peliculas/Detalle?Pelicula=66398",
+				"portraits":"All selected profiles are already local; audit passed."
+			},
+			"audit":{
+				"candidate":"PASS WITH WARNINGS",
+				"warnings":["catalog-sync: expected until references are regenerated in the central final pass"],
+				"people":"PASS"
+			}
+		},
+		{
+			"title":"Madres paralelas",
+			"originalTitle":"Madres paralelas",
+			"year":2021,
+			"slug":"madres-paralelas-2021",
+			"dryRun":{"duplicates":[]},
+			"availability":{
+				"source":"https://www.justwatch.com/ar/pelicula/madres-paralelas",
+				"country":"AR",
+				"checked":"2026-11-06",
+				"offers":[{"provider":"Netflix","type":"FLATRATE","catalogLabel":"Netflix"}],
+				"publishedLabels":["Netflix"]
+			},
+			"poster":{
+				"source":"https://image.tmdb.org/t/p/w780/9StUzSKp0j8YF9z6nyFxjmI9ALZ.jpg",
+				"description":"Clean vertical poster variant without festival laurels or overprint; source dimensions 780x1170 and visual review passed.",
+				"sourceDimensions":"780x1170",
+				"local":"public/assets/posters/2021/madres-paralelas-2021.webp",
+				"localDimensions":"480x720",
+				"localVisualReview":"PASS"
+			},
+			"trailer":{
+				"source":"https://www.youtube.com/watch?v=ytsXj8ObvtE",
+				"title":"Madres paralelas - Tráiler oficial",
+				"channel":"Netflix Latinoamérica",
+				"language":"Spanish (original)",
+				"checked":"2026-11-06"
+			},
+			"argentinaMetadata":{
+				"source":"https://www.cinesargentinos.com.ar/pelicula/9009-madres-paralelas/",
+				"releaseDate":"2022-02-03",
+				"audienceRating":"+13 (SAM13, El Cairo) https://elcairocinepublico.gob.ar/pelicula-de-sala/madres-paralelas/2022-03-13/4/",
+				"runtimeMinutes":123
+			},
+			"productionIdentity":{
+				"source":"https://sede.mcu.gob.es/CatalogoICAA/es-es/Peliculas/GetPdf?Pelicula=151020",
+				"secondarySource":"https://fest.afi.com/2021/red-carpet-premieres-2021/parallel-mothers/",
+				"countryYear":"Spain; 2021",
+				"director":"Pedro Almodóvar",
+				"cast":["Penélope Cruz","Milena Smit","Aitana Sánchez-Gijón","Israel Elejalde"],
+				"productionCompany":"El Deseo D.A. S.L. y Remotamente Films AIE",
+				"trailerIdentitySource":"https://www.youtube.com/watch?v=ytsXj8ObvtE"
+			},
+			"score":{
+				"source":"https://www.rottentomatoes.com/m/parallel_mothers",
+				"value":"93%",
+				"type":"Popcornmeter audience score",
+				"sample":"100+ Verified Ratings",
+				"checked":"2026-11-06",
+				"normalized":9,
+				"cinepostaScore":8,
+				"editorialRationale":"CinePosta keeps 8: the RT normalization reaches 9, but the recent title has not yet demonstrated the lasting recognition required by the catalogue's exceptional-work gate."
+			},
+			"awards":[{"name":"Penélope Cruz, Volpi Cup for Best Actress, Venice 2021","year":2021,"source":"https://www.labiennale.org/en/news/awards-78th-venice-film-festival"}],
+			"people":{
+				"floor":"Pedro Almodóvar + Penélope Cruz + Aitana Sánchez-Gijón + Milena Smit",
+				"source":"https://s3.amazonaws.com/cdn.filmtrackonline.com/mongrelmedia/starcm_vault_root/media%2Fpublicwebassets%2FPARALLEL_MOTHERS_Mongrel_presskit_%7Ba100941f-0553-ec11-a9d7-0edcbcd33718%7D.pdf",
+				"portraits":"Pedro Almodóvar, Penélope Cruz and Aitana Sánchez-Gijón have local portraits; Milena Smit pending central pass. Identity-safe portrait: https://media.vogue.es/photos/615b26412e0c815988d9ca5e/2%3A3/w_2560%2Cc_limit/VOGUE_MILENA_Instagram6.jpg; attribution/context: https://www.vogue.es/living/articulos/milena-smit-segun-pedro-almodovar-madres-paralelas"
+			},
+			"audit":{
+				"candidate":"PASS WITH WARNINGS",
+				"warnings":["catalog-sync: expected until references are regenerated in the central final pass","missing-person-entry: Milena Smit is a verified film credit without a safe local person profile; central pass pending"],
+				"people":"Central person pass pending"
+			}
+		}
+	],
+	"blockedCandidates": []
+}
